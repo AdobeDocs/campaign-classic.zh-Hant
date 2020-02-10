@@ -1,0 +1,85 @@
+---
+keywords: Campaign Classic;home;popular topics
+seo-title: Adobe Campaign Classic產品檔案
+solution: Campaign Classic
+title: Adobe Campaign Classic產品檔案
+topic: Premium
+translation-type: tm+mt
+source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+
+---
+
+
+# 說明中心 {#campaign-classic-documentation}
+
+![](platform/using/assets/banner_acc_doc.jpg)
+
+## 新增功能
+
+* **[隱私權管](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>理瞭解Adobe Campaign如何協助您符合隱私權規範。
+
+* **[追蹤指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>瞭解促銷活動中的追蹤功能
+
+* **[維護指南](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>瞭解如何監控您的Campaign例項和程式
+
+* **[使用AMP的互動式內容](delivery/using/defining-interactive-content.md)**<br/>瞭解如何使用新的[AMP for Email格式傳送動態電子郵件](https://amp.dev/about/email/)
+
+* **[控制面板](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)**<br/>瞭解如何管理設定並追蹤促銷活動例項的使用
+
+[按一下這裡以取得更多更新](/help/rn/using/documentation-updates.md)
+
+## 熱門頁面
+
+<table>
+<tr>
+  <td>
+    <a href="platform/using/common-questions.md">
+      <img alt="常見問答集" src="platform/using/assets/FAQ.png"/>
+    </a>
+    <div>
+      <a href="platform/using/common-questions.md">
+    常 <strong>見問題</strong></a>
+    </div>
+    <p>
+    <em>使用Campaign Classic時尋找常見問題的解答</em>
+    <p>
+  </td>
+   <td>
+    <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+      <img alt="構建升級" src="platform/using/assets/upgrade.png" />
+    </a>
+    <div>
+      <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+    升 <strong>級至最新版本</strong></a>
+    </div>
+    <p>
+    <em>瞭解執行構建升級的關鍵步驟和最佳實踐方案</em>
+    <p>
+  </td>
+  <td>
+    <a href="delivery/using/creating-notifications.md">
+       <img alt="推播通知" src="platform/using/assets/push.png" />
+    </a>
+    <div>
+       <a href="delivery/using/creating-notifications.md">
+    傳 <strong>送推播通知</strong></a>
+    </div>
+    <p>
+    <em>在行動裝置上設計和傳送個人化推播通知</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+
+## 其他資源
+
+* [發行說明](/help/rn/using/latest-release.md)
+
+* [操作說明短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
+
+* [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+
+* [實施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html)
+
+* [技術說明](https://helpx.adobe.com/campaign/kb/article-list.html)
