@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3a4eb0cf49b81d720fa3925d48cd250e0c3fde32
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -78,7 +78,7 @@ DKIM來自DomainKeys、Yahoo! 和Cisco Identified Internet mail身份驗證原�
 
 DKIM已取 **代DomainKeys** 驗證。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則DKIM電子郵件驗證簽署由「增強MTA」完成。 在「增強的MTA」升級中，將關閉原生「促銷活動MTA」的DKIM **[!UICONTROL Domain management]** 簽署功能。
 >
@@ -149,7 +149,7 @@ Recommendations for defining an SPF record:
 在Adobe Campaign中實作簡單的回饋迴路會使用反彈訊息功能。 反饋循環郵箱用作彈回郵箱，並定義規則來檢測這些消息。 將郵件作為垃圾郵件報告的收件人的電子郵件地址添加到隔離清單中。
 
 * 建立或修改彈回郵件規則 **Feedback_loop**, **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** 其原因為 **Resubled** ，並鍵入 **Hard**。
-* 如果郵箱已專門為反饋迴路定義，請在中建立一個新的外部「彈回郵件」帳戶來定義要訪問該郵箱的參數 **[!UICONTROL Administration > Platform > External accounts]**。
+* 如果郵箱已專門為反饋迴路定義，請在中建立一個新的外部「反彈郵件」帳戶來定義要訪問該郵箱的參數 **[!UICONTROL Administration > Platform > External accounts]**。
 
 該機制立即開始運作，以處理投訴通知。 為確保此規則正常運作，您可以暫時停用帳戶，以免帳戶收集這些訊息，然後手動檢查回饋回圈信箱的內容。 在伺服器上，執行以下命令：
 
