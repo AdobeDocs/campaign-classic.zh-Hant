@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f7f59e2341d7b68b8b28869efc5bfb04cd5ba14
+source-git-commit: c7521a076418d8f162d241cd883d10b1ed543d35
 
 ---
 
@@ -25,6 +25,10 @@ source-git-commit: 5f7f59e2341d7b68b8b28869efc5bfb04cd5ba14
 本頁列出每個Adobe Campaign Classic版本的所有新功能和檔案更新。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
+
+## 2020年2月 {#february-2020}
+
+AMP for Email現在由3家電子郵件提供者（Gmail、Outlook和Mail.ru）支援，說明如何使用AMP定義互動式內容的章節已經更新。 [閱讀更多資訊](../../delivery/using/defining-interactive-content.md)
 
 ## 2020年1月 {#january-2020}
 
@@ -271,7 +275,7 @@ GDPR [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html)
 
 已更新連線臨界值疑難排解區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Troubleshooting_Connection_thresholds.html)
 
-已新增一節，說明如何設定代理連線。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
+已新增有關如何設定代理連線的章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
 
 更新授權外部命令限制一節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Restricting_authorized_external_commands)
 
