@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 
 ---
 
@@ -31,9 +31,10 @@ source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
 ## 建議與限制 {#recommendations-and-limitations}
 
 * 電子郵件封存功能是選用的。 請檢查您的授權合約。
-* 若是代管和混合式架構，請連絡您的客戶經理以啟動它。 如需內部部署安裝，請遵循以下准則——請參閱「啟 [動電子郵件封存（內部部署）](#activating-email-archiving--on-premise-) 」 [和「設定密件副本電子郵件地址（內部部署）](#configuring-the-bcc-email-address--on-premise-) 」章節。
-* 一旦設定電子郵件密件副本後，請務必在傳送範本或透過選項傳送時啟用 **[!UICONTROL Archive emails]** 功能。 For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+* 如需 **代管和混合式架構**，請聯絡您的客戶經理以啟動它。 您選擇的密件副本位址必須提供給將為您設定的Adobe團隊。
+* 如需 **內部部署安裝**，請依照下列准則啟動它——請參閱「啟用電子郵件封存（內部部署） [」和「設定密件副本電子郵件位](#activating-email-archiving--on-premise-) 址（內部部署）」章節 [](#configuring-the-bcc-email-address--on-premise-) 。
 * 您只能使用一個密件副本電子郵件地址。
+* 一旦設定電子郵件密件副本後，請務必在傳送範本或透過選項傳送時啟用 **[!UICONTROL Archive emails]** 功能。 For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
 * 只有成功傳送的電子郵件才會納入考量，但彈回數則不會納入考量。
 * 電子郵件封存系統已隨Adobe Campaign 17.2(build 8795)而變更。 如果您已使用電子郵件封存，則必須手動升級至新的電子郵件封存系統(BCC)。 如需詳細資訊，請參閱「更新 [的電子郵件封存系統(BCC)](#updated-email-archiving-system--bcc-) 」一節。
 
