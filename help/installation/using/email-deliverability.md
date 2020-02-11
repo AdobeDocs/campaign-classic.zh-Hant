@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -28,10 +28,11 @@ source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
 
 >[!NOTE]
 >
->有關Adobe Campaign平台有效傳送及接收訊息的所有技術建議，請參閱「傳遞性 **技術說明** 」。
->
->有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。\
->請參閱快速 [入門指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，其中介紹與傳遞能力相關的概念和最佳實務。
+>有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+
+有關交付能力相關概念和最佳做法的詳細資訊，請參閱本 [節](../../delivery/using/about-deliverability.md)。
+
+本節提供有關Adobe Campaign平台有效傳送及接收訊息的所有技術建 [議](../../delivery/using/technical-recommendations.md)。
 
 ## 操作原則 {#operating-principle}
 
@@ -139,7 +140,7 @@ mta **決定** 此訊息的程式（復原、放棄、隔離等）視回應程�
 
 MX規則(Mail eXchanger)是管理傳送伺服器與接收伺服器間通訊的規則。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則不 **[!UICONTROL MX management]** 再使用傳送總處理能力規則。 增強型MTA使用其專屬的MX規則，可讓您根據您過去的電子郵件信譽，以及您傳送電子郵件的網域所提供的即時回應，依網域自訂您的吞吐量。
 >
@@ -149,7 +150,7 @@ MX規則(Mail eXchanger)是管理傳送伺服器與接收伺服器間通訊的�
 
 ISP將接受每小時預先定義的連接和消息數，具體取決於物料容量和內部策略。 ISP系統可以根據IP和發送域的信譽自動修改這些變數。 Adobe Campaign透過其傳遞能力平台，管理ISP超過150項特定規則，此外還管理其他網域的一項一般規則。
 
-最大連接數不完全取決於MTA使用的公共IP地址數。
+連接的最大數量不完全取決於MTA使用的公有IP地址數。
 
 例如，如果您在MX規則中允許5個連線，而您已設定2個公用IP，則您可能認為無法同時開啟超過10個連線至此網域。 這不是事實，事實上，最大連線數指的是路徑和路徑，其中一個是我們的MTA公用IP，而另一個是客戶MTA的公用IP。
 
