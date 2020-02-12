@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e795cd352aed2f2fc51bf52342d611913265d590
+source-git-commit: 03cba38dc2c9e10396feddc38cca6a6073e932d5
 
 ---
 
@@ -41,7 +41,16 @@ source-git-commit: e795cd352aed2f2fc51bf52342d611913265d590
 
 單 [擊此處](../../rn/using/release--19-1.md#release-19-1-4-build-9032) ，查看上 **一個穩定構建** (GA)。
 
-## ![](assets/blue2.png) 版本19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/orange2.png) 版本19.2.2 - Build 9081 {#release-19-2-2-build-9081}
+
+2020年2月07日_
+
+**改進**
+
+* 修正因實施SSL認證而導致使用者連線在Windows伺服器上失敗的回歸問題。 (NEO-20629)
+* 修正「關於」功能表中顯示錯誤版本標 **簽** 。
+
+## ![](assets/orange2.png) 版本19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
