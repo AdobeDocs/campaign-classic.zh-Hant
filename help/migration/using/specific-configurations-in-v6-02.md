@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -44,9 +44,9 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 如果您已修改這些Web應用程式，並想要在v7中繼續使用它們，則必須在不同的安全區中啟用 **allowSQLInjeption** 選項，然後重新啟動postupgrade。 有關此的詳 [細資訊，請參見SQLData](../../migration/using/general-configurations.md#sqldata) 部分。
 
-## 用戶友好性：首頁和導覽 {#user-friendliness--home-page-and-navigation}
+## 用戶友好：首頁和導覽 {#user-friendliness--home-page-and-navigation}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您想要繼續使用v6.02概觀類型的Web應用程式，則必須在配置升級之前，在不同的安全區中啟用 **allowSQLInjeption** 選項。 請參閱 [Web應用程式](#web-applications)。
 
