@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -75,11 +75,15 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    資料收集是透過使用HTTP/HTTPS存取的Web服務，或透過Federated Data Access(FDA)模組進行。
 
+   >[!NOTE]
+   >
+   >請注意，在使用FDA over HTTP時，僅支援使用Postgres資料庫的執行例項。 不支援MSSQL或Oracle資料庫。
+
    如果控制實例可以直接訪問執行實例的資料庫，則建議使用第二種方法。 否則，請選擇Web服務訪問。 要指定的FDA帳戶與與在控制實例上建立的各種執行實例的資料庫的連接一致。
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   有關Federated Data Access(FDA)的詳細資訊，請參閱 [訪問外部資料庫](../../platform/using/accessing-an-external-database.md)。
+   有關Federated Data Access(FDA)的詳細資訊，請參閱 [訪問外部資料庫](../../platform/using/about-fda.md)。
 
 1. 單 **[!UICONTROL Test the connection]** 擊以確保控制實例和執行實例已連結。
 
