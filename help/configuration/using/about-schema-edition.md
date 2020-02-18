@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58b69ae83d0ff2bece26cb3ff0604cd92e3c20f4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -90,7 +90,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 xpath **** 屬性指向您要索引的架構中的欄位。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >請務必記住，索引提供的SQL查詢讀取效能提升還伴有寫入記錄時的效能點擊。 因此，應謹慎使用這些指標。
 
@@ -112,7 +112,7 @@ xpath **** 屬性指向您要索引的架構中的欄位。
 
 在此範例中，我們並未讓 **@autopk** 屬性建立名為&quot;id&quot;的預設主鍵，而是指定我們自己的&quot;householdId&quot;主鍵。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在建立新模式或在模式擴展期間，需要為整個模式保留相同的主鍵序列值(@pkSequence)。
 
@@ -171,7 +171,7 @@ XML欄位的示例也儲存在SQL欄位中，該欄位具有 **@dataPolicy** 屬
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >雖然大多數屬性都根據1-1基數連結到資料庫的物理欄位，但XML欄位或計算欄位不適用。\
 >XML欄位會儲存在表格的備注欄位(「mData」)中。\
