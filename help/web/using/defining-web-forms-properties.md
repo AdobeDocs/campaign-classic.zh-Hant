@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -139,9 +139,9 @@ Web表單可完全設定且可個人化，以符合您的需求。 參數必須�
 * **id** ，指出加密的識別碼。
 * **lang** ：更改顯示語言。
 * **來源** ：指定回應者的來源。
-* **_uuid** 可在發佈和錯誤追蹤之前啟用表單檢視。 此參數僅供內部使用（建立和調試）:當您透過此URL存取Web表格時，在追蹤（報表）中不會考慮建立的記錄。 原點被強制為 **[!UICONTROL Adobe Campaign]** 值。
+* **_uuid** 可在發佈和錯誤追蹤之前啟用表單檢視。 此參數僅供內部使用（建立和調試）:當您透過此URL存取Web表格時，追蹤（報表）中不會考慮建立的記錄。 原點被強制為 **[!UICONTROL Adobe Campaign]** 值。
 
-   它可與 **_preview** 參數和／或** _debug**搭配使用：
+   它與 **_preview** 參數和／或 **_debug一起使用**:
 
    **_preview** ，以顯示上次儲存的版本。 此參數僅能用於測試階段。
 
