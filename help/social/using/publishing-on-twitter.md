@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -100,7 +100,7 @@ source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
 >
 >在傳送 **[!UICONTROL Tweet]** 範本中，預設會啟用追蹤。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我們分不清分析推文的機器人和實際點擊的用戶之間的區別。
 
@@ -134,7 +134,7 @@ source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
 
 ![](assets/social_twitter_visitors_001.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >為了讓工作流程恢復Twitter追隨者清單，必 **[!UICONTROL Synchronize Twitter accounts]** 須在連結至帳戶之服務的「編輯」畫面中勾選方塊。 有關詳情，請參閱：委 [派Adobe Campaign的寫入存取權](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign)。
 
@@ -181,7 +181,7 @@ source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
 
    * 選擇 **[!UICONTROL Twitter subscribers]** 以傳送直接訊息給所有帳戶追隨者。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >您每天不能傳送超過250則訊息。 如果您的Twitter帳戶有超過250位追隨者，我們強烈建議您以波浪形式傳送。 這與電子郵件傳送的程式相同。 Refer to [this section](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
