@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
 * 安裝軟體包：請參閱本 [節](../../installation/using/installing-campaign-standard-packages.md)。
 * 可傳遞性：設 [定MX規則](../../installation/using/email-deliverability.md#mx-configuration)[和電子郵件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 閱讀快速入門手冊和詳細檔案，進一步瞭解可 [傳遞性工具](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)[和最佳實務](../../delivery/using/about-deliverability.md)。
 * 設定促銷活動選項：請參閱本 [節](../../installation/using/configuring-campaign-options.md)。
-* 配置外部資料庫(FDA):請參閱本 [節](../../platform/using/accessing-an-external-database.md)。
+* 配置外部資料庫(FDA):請參閱本 [節](../../platform/using/about-fda.md)。
 * 設定CRM連接器：請參閱本 [節](../../platform/using/crm-connectors.md)。
 * 若要進一步瞭解中端採購部署原則，請參閱本 [節](../../installation/using/mid-sourcing-deployment.md)。
 
