@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -82,7 +82,7 @@ source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
 
 * **[!UICONTROL Label and code of the delivery]** :在傳送分析階段，會使用畫面中此區段的相關選項來計算這些欄位的值。 該 **[!UICONTROL Calculate the execution folder during the delivery analysis]** 欄位會計算在分析階段中將包含此傳送操作的資料夾的名稱。
 * **[!UICONTROL Approval mode]** :此欄位可讓您選取傳送核准的類型。 在驗證過程中，會使用 [類型來顯示批准模式](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)。
-* **[!UICONTROL Prepare the personalization data with a workflow]** :此選項可讓您在自動工作流程中準備傳送時所包含的個人化資料。 它可以在處理大量資料時，特別是當個人化資料來自外部表格（透過FDA）時，大幅改善傳送分析效能。 請參閱「 [存取外部資料庫(FDA)](../../platform/using/accessing-an-external-database.md#optimizing-email-personalization-with-external-data) 」一節。
+* **[!UICONTROL Prepare the personalization data with a workflow]** :此選項可讓您在自動工作流程中準備傳送時所包含的個人化資料。 它可以在處理大量資料時，特別是當個人化資料來自外部表格（透過FDA）時，大幅改善傳送分析效能。 請參閱「 [存取外部資料庫(FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) 」一節。
 * **[!UICONTROL Start job in a detached process]** :此選項可讓您在個別流程中啟動傳送分析。 分析功能依預設會使用Adobe Campaign應用程式伺服器程式(web nlserver)。 選取此選項，即使在應用程式伺服器發生故障時，您也能確保分析完成。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** :此選項在分析階段將SQL查詢日誌添加到傳送日誌。
 * **[!UICONTROL Ignore personalization scripts during sending]** :此選項可讓您略過HTML內容中的JavaScript指令解譯。 它們會如同傳送的內容一樣顯示。 這些指令是隨 **&lt;%=** tag引入的。
@@ -125,7 +125,7 @@ source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
 1. 啟動消息分析。 請參閱 [分析傳送](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您現在可以傳送傳送(請參閱 [傳送傳送](../../delivery/using/steps-sending-the-delivery.md))。
 
-   傳送後，證明會出現在傳送清單中，並自動建立及編號。 如果您想要存取其內容和屬性，則可加以編輯。 For more on this, refer to this [page](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   傳送後，校樣會出現在傳送清單中，並自動建立及編號。 如果您想要存取其內容和屬性，則可加以編輯。 For more on this, refer to this [page](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
