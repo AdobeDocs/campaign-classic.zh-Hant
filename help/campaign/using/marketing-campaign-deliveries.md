@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 「使 [用工作流自動化](../../workflow/using/executing-a-workflow.md#architecture) 」指南包含工作流模組操作的詳細說明。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在相同的促銷活動中，您無法設定超過28個工作流程。 超過此限制後，介面中將無法顯示其他工作流程，並可能產生錯誤。
 
@@ -233,7 +233,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. 按一下標 **[!UICONTROL Control group]** 簽，然後選取 **[!UICONTROL Enable and edit control group configuration]**。
-1. 按一下 **[!UICONTROL Edit...]** 以配置控制組
+1. 按一下 **[!UICONTROL Edit...]** 以配置控制組。
 
 配置過程顯示在從主 [目標中提取控制組](#extracting-the-control-group-from-the-main-target)[和添加種群中](#adding-a-population)。
 
@@ -353,7 +353,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 您可以將各種檔案與促銷活動建立關聯：報表、像片、網頁、圖表等。 這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 若要將檔案連結至促銷活動，請參 [閱新增檔案](#adding-documents)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此模式保留給小型文檔。
 
