@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -17,6 +17,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
 + 發行說明 {#release-notes}
    + [最新版本](rn/using/latest-release.md)
    + 舊版 {#previous-releases}
+      + [版本19.2](rn/using/release--19-2.md)
       + [版本19.1](rn/using/release--19-1.md)
       + [版本18.10](rn/using/release--18-10.md)
       + [版本18.6](rn/using/release--18-6.md)
@@ -64,9 +65,17 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [使用資料包](platform/using/working-with-data-packages.md)
       + [管理枚舉](platform/using/managing-enumerations.md)
       + [外部帳戶](platform/using/external-accounts.md)
+   + 訪問外部資料庫(FDA){#accessing-external-database}
+      + [關於FDA](platform/using/about-fda.md)
+      + [按資料庫類型列出的特定配置](platform/using/specific-configuration-database.md)
+      + [遠程資料庫訪問權限](platform/using/remote-database-access-rights.md)
+      + [連接到資料庫](platform/using/connecting-to-database.md)
+      + [建立資料架構](platform/using/creating-data-schema.md)
+      + [定義資料映射](platform/using/defining-data-mapping.md)
+      + [其他選項](platform/using/additional-options.md)
+      + [在工作流中使用來自外部資料庫的資料](platform/using/data-external-database-workflow.md)
    + 連接器 {#connectors}
       + [關於連接器](platform/using/about-connectors.md)
-      + [訪問外部資料庫](platform/using/accessing-an-external-database.md)
       + [CRM連接器](platform/using/crm-connectors.md)
       + [Adobe Analytics資料連接器](platform/using/adobe-analytics-data-connector.md)
 + 傳送訊息 {#sending-messages}
@@ -92,7 +101,8 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [線路頻道](delivery/using/line-channel.md)
    + 傳送推播通知 {#sending-push-notifications}
       + [關於行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
-      + [設定行動應用程式頻道](delivery/using/setting-up-mobile-app-channel.md)
+      + [將Campaign SDK整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+      + [在Adobe Campaign中設定行動應用程式](delivery/using/configuring-the-mobile-application.md)
       + [建立通知](delivery/using/creating-notifications.md)
       + [疑難排解](delivery/using/troubleshooting.md)
    + 發送直接郵件 {#sending-direct-mail}
@@ -213,7 +223,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
    + 分析人口 {#analyzing-populations}
       + [關於描述性分析](reporting/using/about-descriptive-analysis.md)
       + [使用描述性分析精靈](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [使用分析報表](reporting/using/processing-a-report.md)
+      + [處理報表](reporting/using/processing-a-report.md)
       + [使用案例](reporting/using/use-cases.md)
    + 建立新報表 {#creating-new-reports}
       + [關於在促銷活動中建立報表](reporting/using/about-reports-creation-in-campaign.md)
@@ -427,7 +437,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [行銷資源(MRM)](workflow/using/marketing-resources--mrm-.md)
       + [社交行銷](workflow/using/social-marketing.md)
       + [與Adobe Experience cloud解決方案整合](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [通用資料保護規則(GDPR)](workflow/using/general-data-protection-regulation--gdpr-.md)
+      + [隱私權資料保護法規](workflow/using/general-data-protection-regulation--gdpr-.md)
       + [轉移至中部採購](workflow/using/transfer-to-mid-sourcing.md)
       + [中端採購平台](workflow/using/mid-sourcing-platform.md)
 + 管理選件 {#managing-offers}
