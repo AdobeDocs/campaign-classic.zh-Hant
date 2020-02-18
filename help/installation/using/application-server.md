@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -52,16 +52,10 @@ source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
 
 要在Linux環境中安裝JDSL，最好使用軟體包管理器。
 
-在Debian 7和8中，使用下列命令：
+在Debian 8和9中，使用下列命令：
 
 ```
-aptitude install openjdk-7-jdk
-```
-
-對於RHEL 6，請使用下列命令：
-
-```
-yum install java-1.8.0-openjdk
+aptitude install openjdk-8-jdk
 ```
 
 對於RHEL 7，請使用下列命令：
@@ -73,10 +67,6 @@ yum install java-1.8.0-openjdk
 ## OpenSSL {#openssl}
 
 在Linux中，必須安裝OpenSSL。 Adobe Campaign支援的版本 **為OpenSSL 1.0.1****和OpenSSL 0.9.8**。 接受0.9.8g至0.9.8o的子版本。
-
->[!NOTE]
->
->對於RHEL 6和CentOS 6，需要openSSL 1.0。
 
 ## 匯出報表 {#exporting-reports}
 
@@ -92,7 +82,7 @@ SpamAssassin可讓您指派分數給電子郵件，以判斷接收時使用的�
 
 SpamAssassin將電子郵件視為不想要的，完全以篩選和計分規則為基礎。 因此，您必須每天至少更新這些規則一次，才能讓SpamAssassin安裝及其與Adobe Campaign的整合功能完整運作，並確保在傳送前指派給傳送的分數相關性。 此更新由代管SpamAssassin的伺服器管理員負責。
 
-支援的最低版本為： **3.2.5** 和 **3.3.2**.
+最低支援版本為： **3.4**
 
 SpamAssassin需要HTTP網際網路存取(tcp/80)。
 
