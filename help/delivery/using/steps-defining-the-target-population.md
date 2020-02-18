@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
 * **主要的收件者**。 [閱讀更多資訊](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)。
 * **校對訊息的收件者**，以設定驗證週期。 [閱讀更多資訊](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
-此外，您也可以定義種 [子地址](../../delivery/using/about-seed-addresses.md)，以及 [控制組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。 如果傳送包含在行銷促銷活動中。
+此外，您也可以定義 [種子地址](../../delivery/using/about-seed-addresses.md)，以及 [控制組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。 如果傳送包含在行銷促銷活動中。
 
 ## 選擇傳送的主要收件者 {#selecting-the-main-target}
 
@@ -227,4 +227,4 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 >
 >種子地址在關於種 [子地址中顯示](../../delivery/using/about-seed-addresses.md)。
 
-您可以結合特定證明目標的定義和使用種子地址的選 **[!UICONTROL Specific target and Seed addresses]** 項。 然後在兩個單獨的子頁籤中定義相關配置。
+您可以結合特定證明目標的定義和使用種子地址的選項來 **[!UICONTROL Specific target and Seed addresses]** 進行。 然後在兩個單獨的子頁籤中定義相關配置。
