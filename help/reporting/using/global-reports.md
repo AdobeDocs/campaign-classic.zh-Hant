@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ![](assets/s_ncs_user_report_global_list.png)
 
->[!CAUTION]
+>[!NOTE]
 >
 >此區段僅顯示連結至傳送的報表。
 
@@ -104,7 +104,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
    >
    >此指標僅涉及行動通道的傳送。 如需詳細資訊，請參閱[本小節](../../delivery/using/sms-channel.md)。
 
-   按一下+符號可開啟值表的每 [行] 。 對於每種錯誤類型，您可以按域顯示錯誤消息的劃分。
+   按一下符號可開啟值表的每一行 `[+]` 。 對於每種錯誤類型，您可以按域顯示錯誤消息的劃分。
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
