@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
 
 1. 如果開發環境的遷移成功，則可以遷移生產環境。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >由於對資料結構所做的變更，v5平台與v7平台之間無法匯入和匯出資料封裝。
 
@@ -105,7 +105,7 @@ source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
 
 ### 驗證程式 {#verification-process}
 
-此程式與postupgrade命令中的標準整合，可讓您顯示警告和錯誤，讓移轉失敗。 **如果顯示錯誤，則未執行遷移。** 如果發生此情況，請更正所有錯誤，然後重新啟動postupgrade。
+此程式與postupgrade命令中的標準整合，可讓您顯示可能導致遷移失敗的警告和錯誤。 **如果顯示錯誤，則未執行遷移。** 如果發生此情況，請更正所有錯誤，然後重新啟動postupgrade。
 
 您可以使用以下命令自行啟動驗證進程（不進行遷移）:
 
