@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -90,7 +90,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/social_twitter_service_009.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >服 **[!UICONTROL Internal name]** 務的名稱必須與Twitter帳戶的名稱相同。 要確保沒有輸入錯誤，請應用以下步驟。
 
@@ -124,7 +124,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## 同步Twitter帳戶 {#synchronizing-twitter-accounts}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >為了讓工作流程恢復Twitter訂閱者的清單， **[!UICONTROL Twitter account synchronization]** 必須在連結至帳戶之服務的編輯區段中勾選方塊。 如需詳細資訊，請參閱 [委派Adobe Campaign的寫入存取權](#delegating-write-access-to-adobe-campaign)。
 
