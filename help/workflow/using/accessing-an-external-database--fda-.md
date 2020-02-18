@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -31,4 +31,4 @@ Adobe Campaign 提供同盟資料存取 (FDA) 選項，以處理儲存在一或�
 * 擴充
 * 資料載入
 
-FDA選項的使用取決於您的Adobe Campaign授權。 本節將詳細說明如何設定此選項以及連結至使用此選項的最佳實務和 [限制](../../platform/using/accessing-an-external-database.md)。
+FDA選項的使用取決於您的Adobe Campaign授權。 本節將詳細說明如何設定此選項以及連結至使用此選項的最佳實務和 [限制](../../platform/using/about-fda.md)。
