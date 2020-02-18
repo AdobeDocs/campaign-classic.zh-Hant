@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -182,7 +182,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   For more on this, refer to this [section](../../platform/using/accessing-an-external-database.md).
+   For more on this, refer to this [section](../../platform/using/about-fda.md).
 
 然後，我們需要添加新子集：
 
