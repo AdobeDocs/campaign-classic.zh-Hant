@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
 
 ---
 
@@ -95,7 +95,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 設定AEM資源篩選 {#configure-aem-resources-filtering}
 
-**AEMResourceTypeFilter **選項用於篩選可用於Adobe Campaign的Experience manager資源類型。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的Experience Manager內容。
+AEMResourceTypeFilter **** 選項可用來篩選Adobe Campaign中可用的Experience manager資源類型。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的Experience Manager內容。
 
 要檢查選項是 **[!UICONTROL AEMResourceTypeFilter]** 否已配置：
 
@@ -122,7 +122,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 設定 **複製** ，以從AEM製作例項複製至AEM發佈例項。
 
-   要瞭解如何配置複製，請參閱Adobe Experience manager文 [檔](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/replication.html)。
+   要瞭解如何配置複製，請參閱Adobe Experience manager文 [檔](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
 
 1. 在您的製作例 **項上安裝整合FeaturePack** ，然後複製您發佈例項上的安裝。 （僅適用於AEM 5.6.1和6.0版）。
 
@@ -130,9 +130,9 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 透過設定專屬的雲端服務，將Adobe Experience manager與Adobe Campaign **連接**。
 
-   如要瞭解如何透過雲端服務連接這兩個解決方案，請參閱Adobe Experience Manager文 [件](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   如要瞭解如何透過雲端服務連接這兩個解決方案，請參閱Adobe Experience Manager文 [件](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 配置 **Externalizer服務**。
 
-   如要瞭解如何設定，請參閱Adobe Experience Manager文 [件](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/externalizer.html)。
+   如要瞭解如何設定，請參閱Adobe Experience Manager文 [件](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)。
 
