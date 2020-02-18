@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -26,9 +26,9 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 您必須事先在Adobe target中執行下列動作：
 
-* 建立一或多個 [重新導向選件](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_a_Redirect_Offer.html)，您必須在其中指定要使用的影像URL。
+* 建立一或多個 [重新導向選件](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html)，您必須在其中指定要使用的影像URL。
 * 建立一或多個 [觀眾](https://marketing.adobe.com/resources/help/en_US/target/target/t_create-audience.html)，以定義您活動的目標。
-* 建立 [表單式體驗撰寫器活動](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_an_A_B_Test.html) ，您必須在活動中選取rawbox並指定數個體驗，視所建立的重新導向選件數量而定。 對於每個體驗，您必須選擇其中一個已建立的重新導向選件。
+* 建立 [表單式體驗撰寫器活動](https://docs.adobe.com/content/help/en/target/using/activities/abtest/create/test-create-ab.html) ，您必須在活動中選取rawbox並指定數個體驗，視所建立的重新導向選件數量而定。 對於每個體驗，您必須選擇其中一個已建立的重新導向選件。
 
    若要指定這些體驗，您可以使用Adobe Campaign的資訊來建立區段。 若要在選件的選擇規則中使用Adobe Campaign的資料，您必須在Adobe Target的rawbox中指定資料。
 
