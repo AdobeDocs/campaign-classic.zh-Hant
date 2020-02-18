@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 本節詳細說明「訂閱」、「取消訂閱」和「提交傳送」服務的使用。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >[Campaign JSAPI檔案包含](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) Adobe Campaign中有關SOAP呼叫和使用Javascript的其他資訊，以及應用程式中所有使用方法與函式的完整參考。
 
