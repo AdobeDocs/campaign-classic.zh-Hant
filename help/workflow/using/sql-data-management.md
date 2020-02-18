@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 在設定活動之前，請確定已符合下列先決條件：
 
-* 活動僅適用於遠程資料源。 因 **[!UICONTROL FDA]** 此，(Federated Data Access)套件必須安裝在您的例項上(請參 [閱本節](../../platform/using/accessing-an-external-database.md))。
+* 活動僅適用於遠程資料源。 因 **[!UICONTROL FDA]** 此，(Federated Data Access)套件必須安裝在您的例項上(請參 [閱本節](../../platform/using/about-fda.md))。
 * 出站模式必須存在於資料庫中，並連結到FDA資料庫(有關資料模式的詳細資訊，請參 [閱本節](../../configuration/using/about-schema-reference.md))。
 * 執行工作流程的運算子必須具有 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 命名權限。 For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
 
