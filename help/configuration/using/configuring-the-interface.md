@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 
 建立新表格可讓您檢視和編輯外部收件者表格的資料。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >表單的名稱必須與其所關注之架構的名稱相同。
 
