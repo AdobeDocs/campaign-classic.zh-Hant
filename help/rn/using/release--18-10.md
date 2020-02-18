@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
+source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
 
@@ -128,7 +128,7 @@ source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
      <li> <p>在iOS中追蹤無訊息通知 </p> </li> 
      <li> <p>在iOS中實作註冊呼叫的意見回應</p> </li> 
      <li> <p>改善iOS傳送準備速度</p> </li> 
-    </ul> <p>Android V2連接器現在僅允許與FCM伺服器連接，這是Google GCM折舊的一部分。</p><p>如需詳細資訊，請參閱詳 <a href="../../delivery/using/setting-up-mobile-app-channel.md#integrating-campaign-sdk-into-the-mobile-application">細檔案</a>。 本文對FCM的手動升級作了詳 <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">細說</a>明 </p> </td> 
+    </ul> <p>Android V2連接器現在僅允許與FCM伺服器連接，這是Google GCM折舊的一部分。</p><p>如需詳細資訊，請參閱詳 <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">細檔案</a>。 本文對FCM的手動升級作了詳 <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">細說</a>明 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
