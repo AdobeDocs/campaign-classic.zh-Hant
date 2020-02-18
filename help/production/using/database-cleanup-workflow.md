@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -152,13 +152,13 @@ source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
 
       其中 **$(l)** 是傳送的識別碼。
 
-   * 在傳送日誌表(**NmsBroadlogXxx**)中，以10,000條記錄的批次執行大量刪除。
-   * 在選件命題表(**NmsPostitionXxx**)中，以10,000條記錄批次執行批量刪除。
-   * 在跟蹤日誌表(**NmsTrackinglogXxx**)中，以5,000條記錄的批次執行大量刪除。
-   * 在傳送片段表(**NmsDeliveryPart**)中，以5,000條記錄的批次執行大量刪除。 此表包含要傳送之其餘訊息的個人化資訊。
-   * 在鏡像頁資料片段表(**NmsMirrorPageInfo**)中，以5,000條記錄的批次執行大量刪除。 此表包含有關用於生成鏡像頁的所有消息的個性化資訊。
-   * 在鏡像頁搜索表(**NmsMirrorPageSearch**)中，以5,000條記錄的批次執行大量刪除。 此表是搜索索引，它提供對儲存在 **NmsMirrorPageInfo表中的個人化資訊的訪** 問。
-   * 在批處理日誌表(**XtkJobLog**)中，以5,000條記錄的批次執行成批刪除。 此表包含要刪除的交貨日誌。
+   * 在傳送日誌表(**NmsBroadlogXxx**)中，以20,000條記錄的批次執行大量刪除。
+   * 在選件命題表(**NmsPostitionXxx**)中，以20,000條記錄批次執行批量刪除。
+   * 在跟蹤日誌表(**NmsTrackinglogXxx**)中，以20,000條記錄的批次執行大量刪除。
+   * 在傳送片段表(**NmsDeliveryPart**)中，以500,000條記錄的批次執行大量刪除。 此表包含要傳送之其餘訊息的個人化資訊。
+   * 在鏡像頁資料片段表(**NmsMirrorPageInfo**)中，對過期的傳送部件和已完成或已取消的部件，以20,000條記錄批次執行成批刪除。 此表包含有關用於生成鏡像頁的所有消息的個性化資訊。
+   * 在鏡像頁搜索表(**NmsMirrorPageSearch**)中，以20,000條記錄的批次執行大量刪除。 此表是搜索索引，它提供對儲存在 **NmsMirrorPageInfo表中的個人化資訊的訪** 問。
+   * 在批處理日誌表(**XtkJobLog**)中，以20,000條記錄的批次執行成批刪除。 此表包含要刪除的交貨日誌。
    * 在傳送URL追蹤表(**NmsTrackingUrl**)中，會使用下列查詢：
 
       ```
@@ -576,6 +576,26 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
    DROP TABLE wkSimu_456831_aggr
    ```
 
+### 清理審計線索 {#cleanup-of-audit-trail}
+
+使用下列查詢：
+
+```
+DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
+```
+
+其中 **$(tsDate)** ，是為 **** XtkCleanup_AuditTrailPurgeDelay選項定義的期間所在的當前伺服器日期。
+
+### 清除Nmsaddress {#cleanup-of-nmsaddress}
+
+使用下列查詢：
+
+```
+DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
+```
+
+此查詢會刪除所有與iOS和Android相關的項目。
+
 ### 統計資料更新和儲存空間最佳化 {#statistics-update}
 
 XtkCleanup_NoStats **** 選項允許您控制清除工作流的儲存優化步驟的行為。
@@ -590,13 +610,15 @@ XtkCleanup_NoStats **** 選項允許您控制清除工作流的儲存優化步�
 
 此任務會刪除與已刪除服務或行動應用程式相關的訂閱。
 
-1. 要恢復廣播方案清單，請使用以下查詢：
+要恢復廣播方案清單，請使用以下查詢：
 
-   ```
-   SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
-   ```
+```
+SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
+```
 
-1. 然後，任務將恢復連結到appSubscription連結的表 **的名稱** ，並刪除這些表。
+然後，任務將恢復連結到appSubscription連結的表 **的名稱** ，並刪除這些表。
+
+此清理工作流還將刪除自 **** NmsCleanup_AppSubscriptionRcpPurgeDelay選項中設定的時間以來未更新的idisabled = 1的所有條目。
 
 ### 清理會話資訊 {#cleansing-session-information}
 
@@ -613,13 +635,3 @@ XtkCleanup_NoStats **** 選項允許您控制清除工作流的儲存優化步�
 ### 清潔反應 {#cleansing-reactions}
 
 該任務清除了已刪除假 **設的反應(表NmsRemaMatchRcp**)。
-
-### 清理審計線索 {#cleanup-of-audit-trail}
-
-使用下列查詢：
-
-```
-DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
-```
-
-其中 **$(tsDate)** ，是為 **** XtkCleanup_AuditTrailPurgeDelay選項定義的期間所在的當前伺服器日期。
