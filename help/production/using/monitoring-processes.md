@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
 
 ---
 
@@ -417,7 +417,7 @@ wfserver@prod
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-這是測試，以檢查營運商是否可透過網頁存取Adobe Campaign伺服器；與透過用戶端主控台功能表存取的網頁相同。 我們建議將它加入您的監視工具（Tivoli、Nagios等）。
+這是測試，以檢查營運商是否可透過網頁存取Adobe Campaign伺服器；與透過用戶端主控台功能表存取的網頁相同。 您可以從監視工具（Tivoli、Nagios等）呼叫此頁面。
 
 ![](assets/ncs_monitoring_web.png)
 
