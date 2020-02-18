@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -181,7 +181,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
    * 針對Linux:與Linux [的Web伺服器整合](../../installation/using/integration-into-a-web-server-for-linux.md)
    * 針對Windows:與Windows [版Web伺服器整合](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. 啟動網站並使用URL測試重新導向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)。
+1. 啟動網站並使用URL測試重新導向：https://tracking.campaign.net/r/test。
 
    瀏覽器必須顯示以下訊息：
 
@@ -196,6 +196,10 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
 
 1. 啟動Adobe Campaign伺服器(**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux)，再執行命令 **nlserver pdump** ，以檢查是否存在所有已啟用的模組。
 
+   >[!NOTE]
+   >
+   >從20.1開始，建議改用下列命令（適用於Linux）:系 **統mctl啟動nlserver**
+
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
@@ -209,7 +213,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
 
    此命令也可讓您知道電腦上安裝的Adobe Campaign伺服器版本和組建版本號碼。
 
-1. 使用URL **測試nlserver web** module: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)
+1. 使用URL **測試nlserver web** module:https://console.campaign.net/nl/jsp/logon.jsp
 
    此URL可讓您存取用戶端設定程式的下載頁面。
 
@@ -222,7 +226,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
    * 針對Linux:適用於 [Linux的客戶端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
    * 針對Windows:適用於 [Windows的客戶端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
 
-1. 啟動Adobe Campaign用戶端主控台（從上一個下載頁面或直接在伺服器上啟動以進行Windows安裝），將伺服器連線URL設定為 [https://console.campaign.net](https://console.campaign.net) ，然後使用內部 **登入連線** 。
+1. 啟動Adobe Campaign用戶端主控台（從上一個下載頁面或直接在伺服器上啟動以進行Windows安裝），將伺服器連線URL設為https://console.campaign.net，並使用內部登 **入** 。
 
    請參閱 [建立例項並登入和](../../installation/using/creating-an-instance-and-logging-on.md)[內部識別碼](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
@@ -236,7 +240,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
 
    建立資料庫後，請註銷。
 
-1. 使用管理員登入(不使用密碼 **** )重新登入用戶端主控台，並啟動部署精靈( **[!UICONTROL Tools > Advanced]** 功能表)以完成執行個體設定。
+1. 使用管理員登入( **admin** login without a password)重新登入用戶端主控台，並啟動部署精靈( **[!UICONTROL Tools > Advanced]** 功能表)以完成執行個體的設定。
 
    有關詳細資訊，請參閱 [部署實例](../../installation/using/deploying-an-instance.md)。
 
