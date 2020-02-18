@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
 
 ![](assets/social_webapp_fb_000.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >請遵循「建立Facebook應用程式」中 [所述的設定步驟](../../social/using/creating-a-facebook-application.md)。
 
@@ -44,7 +44,7 @@ Facebook類型網頁應用程式的範例如下：
 * 如何將設定轉送至Facebook應用程式。 請參閱 [如何將設定轉送至Facebook應用程式](#how-to-forward-settings-to-a-facebook-application-)。
 * 如何獲取風扇資料。 請參閱 [如何獲取風扇資料](#how-to-acquire-fan-data-)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >這些簡單的使用案例為範例，說明Facebook類型網頁應用程式的功能。
 
@@ -97,7 +97,7 @@ Facebook類型網頁應用程式的範例如下：
 
 ## 如何將設定轉送至Facebook應用程式？ {#how-to-forward-settings-to-a-facebook-application-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >遵循建立Facebook應用程式中詳 [細的設定步驟](../../social/using/creating-a-facebook-application.md)。
 
