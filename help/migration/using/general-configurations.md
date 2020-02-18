@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -37,7 +37,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 要使用TIMESTAMP WITH TIMEZONE模式，還需要將 **-userTimestamptz:1** 選項添加到postupgrade命令行。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果 **-usetimestamptz:1** 參數與不相容的資料庫引擎一起使用，則資料庫將損壞，您必須恢復資料庫的備份並重新執行上述命令。
 
@@ -87,7 +87,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 安全區 {#security-zones}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >基於安全性原因，Adobe Campaign平台不再預設為可存取：您必須設定安全區，因此必須收集營運商IP位址。
 
@@ -107,7 +107,7 @@ Adobe Campaign v7包含安全區 **的概念**。 每個用戶都必須與區域
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >所有 **追蹤伺服器** 的內部密碼必須相同。 如需詳細資訊，請參 [閱本節](../../installation/using/campaign-server-configuration.md#internal-identifier)[和本節](../../platform/using/access-management.md#about-permissions)。
 
@@ -170,7 +170,7 @@ nlserver config -internalpassword
 /nl/jsp/logon.jsp?login=<trusted login>&action=submit&target=/view/recipientOverview
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您使用連結有受信任IP遮色片的運算子，請檢查其是否擁有最低權限，以及其是否位於 **sessionTokenOnly模式中的安全區** 。
 
@@ -178,7 +178,7 @@ nlserver config -internalpassword
 
 未知的SQL函式調用不再自然地發送到伺服器。 目前，所有SQL函式都必須新增至 **xtk:funcList** (如需詳細資訊，請參 [閱本節](../../configuration/using/adding-additional-sql-functions.md))。 遷移時，在配置級別期間添加一個選項，允許您與舊的未聲明SQL函式保持相容。 如果要繼續使用這些函式，請檢查 **XtkPassUnknownSQLFunctionsToRDBMS** 選項是否確實在節點級 **[!UICONTROL Administration > Platform > Options]** 別定義。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我們強烈建議不要使用此選項，因為它會帶來安全風險。
 
@@ -460,7 +460,7 @@ allowSQLInjection="false"
 * **[!UICONTROL Accept the new version]**:如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
 * **[!UICONTROL Keep the current version]**:表示更新遭拒。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    如果選擇此解析模式，則可能丟失新版本中的修補程式。 因此，強烈建議不要將此選項用於或僅保留給專家運算子。
 
 如果您選擇手動解決衝突，請按如下步驟進行：
@@ -506,7 +506,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 在v7中，選件內容已移動。 在v6.02中，內容位於每個表示模式(**nms:emailOfferView**)中。 在v7中，內容現在位於選件架構中。 在設定升級後，內容就不會顯示在介面中。 在設定升級後，您必須重新建立選件內容，或開發指令碼，自動將內容從表示架構移至選件架構。
 
->[!CAUTION]
+>[!IMPORTANT]
 如果某些使用已設定選件的傳送要在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，則會提供「相容模式」。 不建議使用此模式，因為Interaction v7中的所有新功能都不會讓您受益。 這是一種過渡模式，可讓您在實際6.1移轉之前完成持續的促銷活動。 有關此模式的更多資訊，請與我們聯絡。
 
 Adobe Campaign v7檔案夾中的&#x200B;**Migration**&#x200B;檔案夾提供移動指令碼(interactionTo610_full_XX.js **** )範例。 此檔案顯示客戶端指令碼的範例，每個選件（和欄位）都使用單一電子 **[!UICONTROL htmlSource]** 郵件 **[!UICONTROL textSource]** 表示法。 NmsEmailOfferView表中 **** 的內容已移到選件表。
