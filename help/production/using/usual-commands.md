@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -108,6 +108,10 @@ nlserver stop <module>@<INSTANCE>
       /etc/init.d/nlserver6 stop
       ```
 
+      >[!NOTE]
+      >
+      >從20.1開始，建議改用下列命令（適用於Linux）: **systemctl stop nlserver**
+
    * 在Windows中：
 
       ```
@@ -127,6 +131,11 @@ nlserver stop <module>@<INSTANCE>
 * 如果您具有root或管理員訪問權限：
 
    * 在Linux中：/etc/init.d/nlserver6 start
+
+      >[!NOTE]
+      >
+      >從20.1開始，建議改用下列命令（適用於Linux）:系 **統mctl啟動nlserver**
+
    * 在Windows中：net start nlserver6
 
 * 否則，在Adobe Campaign帳戶中： **nlserver watchdog -svc -noconsole**
