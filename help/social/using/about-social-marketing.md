@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
    Adobe Campaign Social Marketing也讓您透過Facebook輕鬆取得新的連絡人：聯絡使用者並詢問他們是否想要分享個人檔案資訊。 如果他們接受，Adobe Campaign會自動恢復資料，讓您進行定位促銷活動，並盡可能實作跨通道策略。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Facebook和Twitter會定期變更其螢幕和程式。 本檔案將會依此更新。
 >
