@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4437d2ea4e4044245a2b9a5a870267cd1f1c0bc9
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -30,7 +30,7 @@ v7仍支援32位元版本的資料庫和作業系統，但Adobe Campaign未來�
 
 在v6.02中，「多時區」模式僅適用於PostgreSQL資料庫引擎。 現在，不論使用何種類型的資料庫引擎，都可提供此功能。 我們強烈建議您將您的基本系統轉換為「多時區」基本系統。 有關詳細資訊，請參閱時 [區部分](../../migration/using/general-configurations.md#time-zones) 。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign v7不再支援Adobe Campaign 5.11和6.02支援的部分軟體版本。
 >
