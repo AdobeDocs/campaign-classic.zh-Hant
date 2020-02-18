@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -64,7 +64,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * 超 **[!UICONTROL Label]** 文本連結的內容將顯示在表單頁面上。
-* 該 **[!UICONTROL URL]** 地址是所需地址，例如：https://www.adobe.com [(](https://www.adobe.com) 網站)或mailto:info@adobe.com(網 [站](mailto:info@adobe.com) )傳送訊息。
+* 該 **[!UICONTROL URL]** 地址是所需地址，例如：https://www.adobe.com [(](https://www.adobe.com) 網站)或info@adobe.com(網 [站](mailto:info@adobe.com) )傳送訊息。
 * 欄位 **[!UICONTROL Window]** 可讓您在網站的情況下，選取連結的顯示模式。 您可以決定在新視窗、目前視窗或其他視窗中開啟連結。
 * 您可以新增工具提示，如下所示：
 
