@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -171,7 +171,7 @@ _operation（字串）、進階（布林）、appliableIf（字串）、autoIncr
 * **userEnum（字串）**:接收&quot;open&quot;枚舉的內部名稱。 枚舉的值可由用戶在介面中定義。
 * **visibleIf(string)**:定義XTK表達式形式的條件以顯示或隱藏屬性。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >屬性已隱藏，但仍可存取其資料。
 
@@ -1132,7 +1132,7 @@ created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、e
 
 ### 使用與使用內容 {#use-and-context-of-use-9}
 
-結構表示法可在關 [於結構引用](../../configuration/using/about-schema-reference.md)[和結構中使用](../../configuration/using/schema-structure.md)。
+結構表示法可在關於 [結構參考](../../configuration/using/about-schema-reference.md) 和 [結構中使用](../../configuration/using/schema-structure.md)。
 
 ### 屬性說明 {#attribute-description-14}
 
