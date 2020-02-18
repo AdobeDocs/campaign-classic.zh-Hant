@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
 
 # 擴展模式{#extending-a-schema}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >某些內建結構不能擴展：主要是已定義下列設定者：\
 >**dataSource=&quot;file&quot;** 和 **mappingType=&quot;xmlFile&quot;**。\
@@ -38,7 +38,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
    擴展模式沒有其自己的模式：源模式生成的模式將填充擴展模式的欄位。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >不允許修改應用程式的內置模式，而是模式擴展機制。 否則，修改的架構將不會在應用程式日後升級時更新。 這可能會導致Adobe Campaign的使用失誤。
 
@@ -66,7 +66,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
    字 **段上的tersesTo** 屬性會填入宣告該屬性的架構。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要考慮修改，您需要重新生成結構。 有關詳細資訊，請參閱「重新生 [成方案](../../configuration/using/regenerating-schemas.md) 」部分。\
 >如果修改影響資料庫結構，則需要運行更新。 有關詳細資訊，請參閱「更 [新資料庫結構](../../configuration/using/updating-the-database-structure.md) 」部分。
