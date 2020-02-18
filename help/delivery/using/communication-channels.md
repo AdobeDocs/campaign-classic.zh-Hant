@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign提供下列傳送渠道：
 1. **電子郵件通道**:電子郵件傳送功能可讓您傳送個人化電子郵件給目標人群。 請參閱關於 [電子郵件渠道](../../delivery/using/about-email-channel.md)。
 1. **直接郵件渠道**:直接郵件傳送可讓您產生擷取檔案，其中包含目標人口的資料。 請參閱關 [於直接郵件渠道](../../delivery/using/about-direct-mail-channel.md)。
 1. **行動頻道**:行動頻道上的傳送可讓您傳送個人化的SMS或LINE訊息給目標群體。 請參閱 [SMS頻道](../../delivery/using/sms-channel.md)。
-1. **行動應用程式頻道**:行動應用程式傳送可讓您傳送通知至iOs和Android系統。 請參閱「行動應 [用程式頻道](../../delivery/using/about-mobile-app-channel.md) 」一章。
+1. **行動應用程式頻道**:行動應用程式傳送可讓您傳送通知至iOS和Android系統。 請參閱「行動應 [用程式頻道](../../delivery/using/about-mobile-app-channel.md) 」一章。
 
    本頁說明其 [他渠道](../../delivery/using/other-channels.md)。
 
