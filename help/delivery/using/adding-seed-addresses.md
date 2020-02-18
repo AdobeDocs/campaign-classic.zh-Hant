@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
    要執行此操作，請按一下鏈 **[!UICONTROL Import seed templates...]** 接並選擇包含地址模板的資料夾。 有關詳細資訊，請參閱創 [建種子地址模板](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)。
 
-   如有必要，在新增這些內容後，您可以按兩下，或按一 **[!UICONTROL Detail...]** 下按鈕以調整每個位址的內容。
+   如有必要，在新增這些內容後，您可以按兩下，或按一下 **[!UICONTROL Detail...]** 按鈕以調整每個位址的內容。
 
 1. 建立條件以動態選擇要插入的控制地址。
 
