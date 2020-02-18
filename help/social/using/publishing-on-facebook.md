@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -78,7 +78,7 @@ Facebook固有下列限制。
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >小心使用此函式。 在傳送報表中，指 **[!UICONTROL Number of fans]** 標不會將這些Facebook篩選器納入考量。
 >
@@ -115,7 +115,7 @@ Facebook固有下列限制。
 
 輸入各個欄位：
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >所有URL都必須以 **「http://」** 或「 **https://」開頭**。
 
@@ -136,7 +136,7 @@ Facebook固有下列限制。
 
 1. 在字 **[!UICONTROL Image]** 段中，輸入將顯示在出版物左側的影像URL。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >這張影像必須裝載在公共網際網站上，Facebook才能上傳。
 
