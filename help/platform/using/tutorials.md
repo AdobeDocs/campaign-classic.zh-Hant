@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 透過參閱我們直觀的逐步指南，開始使用 Adobe Campaign。
 
 * [使用 Adobe Experience Manager 編輯電子郵件內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html)：了解整合 Adobe Campaign 和 Experience Manager 的基本概念。
-* [一般資料保護規定](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html)：探索 Adobe Campaign Classic 提供的哪些功能可協助您在使用我們的服務時遵循 GDPR。
+* [隱私權管理](https://helpx.adobe.com/campaign/kb/acc-privacy.html):瞭解Adobe Campaign Classic在使用我們的服務時提供哪些協助來協助您符合隱私權規範。
 * [整合電子郵件中的動態內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
 * [管理傳遞機制](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
 * [傳遞最佳做法](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
