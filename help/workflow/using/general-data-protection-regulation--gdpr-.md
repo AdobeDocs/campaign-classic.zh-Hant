@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: aa941e4f8803f65ce9d5f7567206b1fcc20a6dc6
 
 ---
 
 
-# 通用資料保護規則(GDPR){#general-data-protection-regulation-gdpr}
+# 隱私權資料保護法規{#general-data-protection-regulation-gdpr}
 
-以下詳細說明的工作流程預設會隨 **通用資料保護規則(GDPR)模組一起安裝** 。 For more on this module, refer to this [section](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html).
+依預設，下列詳細的工作流程會隨 **「隱私資料保護規則** 」模組安裝。 有關此模組的詳細資訊，請參閱本 [文](https://helpx.adobe.com/campaign/kb/acc-privacy.html)。
 
 <table> 
  <tbody> 
