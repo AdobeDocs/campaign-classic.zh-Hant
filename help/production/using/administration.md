@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -37,6 +37,10 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
 
    * **/etc/init.d/nlserver6 start**
    * **/etc/init.d/nlserver6 stop**
+
+>[!NOTE]
+>
+>從20.1開始，建議改用下列命令（適用於Linux）: **systemctl啟動nlserver** / **systemctl停止nlserver**
 
 以下是可在Linux(如 **Adobe Campaign**)中存取的常見管理命令清單：
 
@@ -76,24 +80,22 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
    **nlserver重新啟動網路**
 
    >[!NOTE]
-
-   >* 如果未指定實例，則使用「預設」實例。
-   >    
-   >    
+   > 
+   >    * 如果未指定實例，則使用「預設」實例。
    >    * 發生緊急情況時，使用 **-immediate** 選項強制立即停止進程(相當於Unix命 **令kill -9**)。
-   * 使用 **-noconsole** 選項，確保啟動的模組在控制台上不顯示任何內容。 其日誌將通過syslogd模組寫入 **磁碟** 。
-   * 使用 **-verbose選項** ，顯示有關進程操作的其他資訊。
-
-
+   >    * 使用 **-noconsole** 選項，確保啟動的模組在控制台上不顯示任何內容。 其日誌將通過syslogd模組寫入 **磁碟** 。
+   >    * 使用 **-verbose選項** ，顯示有關進程操作的其他資訊。
+      >    
+      >      
       例如：
-
-
+      >    
+      >      
       **nlserver重新啟動web -verbose**
-
-
+      >    
+      >      
       **nlserver啟動mta@myinstance -verbose**
-
-
+      >    
+      >      
       此選項會新增其他記錄檔。 我們建議您在找到所需資訊後，在不使用 **-verbose** 選項的情況下重新啟動程式，以避免過載記錄檔。
 
 
@@ -110,5 +112,6 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
    **nlserver config -reload**
 
    >[!NOTE]
-   某些配置更改不會動態考慮；Adobe Campaign必須關閉，然後重新啟動。
+   >
+   >某些配置更改不會動態考慮；Adobe Campaign必須關閉，然後重新啟動。
 
