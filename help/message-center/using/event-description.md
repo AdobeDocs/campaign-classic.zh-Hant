@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
 
 ---
 
@@ -116,7 +116,7 @@ PushEvents **方法** ，由包含事件 **`<urn:domeventcollection>`** 的參�
 
 和元素的必 **`<rtevent>`** 備屬 **`<batchevent>`** 性是@type和@email。 @type的值必須與配置執行實例時定義的項目化清單值相同。 此值可讓您定義要連結至傳送期間事件內容的範本。
 
-`<rtevent>  configuration example: </rtevent>`
+`<rtevent> configuration example:`
 
 ```
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
