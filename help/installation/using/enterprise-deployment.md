@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -178,6 +178,11 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
    * 針對Windows:Windows [的客戶端控制台可用性](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 啟動Adobe Campaign伺服器(**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux)，再執行命令 **nlserver pdump** ，以檢查是否存在所有已啟用的模組。
+
+   >[!NOTE]
+   >
+   >從20.1開始，建議改用下列命令（適用於Linux）:系 **統mctl啟動nlserver**
+
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
