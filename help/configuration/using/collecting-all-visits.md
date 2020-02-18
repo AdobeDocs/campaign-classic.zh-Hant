@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign提供的網頁追蹤模組可讓您收集收件者在訊息中按
 
 該平台已知的用戶是已被遞送鎖定並且已點擊接收消息至少一次的接收者。 永久Cookie可用來識別此收件者。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign平台不適用於在訊息中按一下之後造訪網站的上下文以外，做為網站追蹤工具。 啟用此選項後，可能會在您的伺服器所在的電腦上（重新導向、應用程式和資料庫），造成資源的高使用率。 建議您確保硬體架構可支援此載入，並避免將網頁追蹤標籤放置在最常造訪的頁面（例如首頁）中。
 
