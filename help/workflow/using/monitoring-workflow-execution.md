@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
+source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ---
 
@@ -259,26 +259,23 @@ instance.vars.isRunning = false
 
 ## 根據工作流程的狀態篩選工作流程{#filtering-workflows-status}
 
-Campaign Classic介面可讓您使用預先定義的檢視，監控執行個體上所有工作流程的執行&#x200B;**狀態**。 要訪問這些視圖，請開啟「管&#x200B;**理**/審&#x200B;**計**/工作&#x200B;**流狀態**」節點。
+Campaign Classic介面可讓您使用預先定義的檢視，監控執行個體上所有工作流程的執行&#x200B;**狀態**。 要訪問這些視圖，請開啟&#x200B;**[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**&#x200B;節點。
 
 可使用下列檢視：
 
-* **執行中**：列出所有執行中的工作流程。
-* **已暫停**：列出所有已暫停的工作流程。
-* **失敗**：列出所有失敗的工作流程。
-
-<!--Start Pending: lists all workflows that are waiting to be started by the operationMgt process.-->
+* **[!UICONTROL Running]**：列出所有執行中的工作流程。
+* **[!UICONTROL Paused]**：列出所有暫停的工作流程。
+* **[!UICONTROL Failed]**：列出所有失敗的工作流程。
+* **[!UICONTROL Start Pending]**：列出等待operationMagt進程啟動的所有工作流。 此檢視僅適用於&#x200B;**Marketing促銷活動套件**(請參閱 [安裝促銷活動標準套件](../../installation/using/installing-campaign-standard-packages.md))。
 
 ![](assets/workflow-monitoring-views.png)
 
-<!--The Start Pending view is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
-預設情況下，這些視圖可在「審計」(**Audit**)資料夾中訪問。 但是，您可以在資料夾樹中選擇的位置重新建立它們。 如此，就可讓不具管理權限的標準使用者使用。
+依預設，這些檢視可在資料夾中&#x200B;**[!UICONTROL Audit]**&#x200B;存取。 但是，您可以在資料夾樹中選擇的位置重新建立它們。 如此，就可讓不具管理權限的標準使用者使用。
 
 要執行此操作：
 
 1. 按一下右鍵要添加視圖的資料夾。
-1. 在「 **新增資料夾**/**管理」中**，選取您要新增的檢視。
+1. 在 **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]**&#x200B;中，選擇要添加的視圖。
 1. 將資料夾添加到樹中後，請確保將其配置為視圖，以便顯示所有工作流（無論其源資料夾是什麼）。有關如何配置視圖的詳細資訊，請參 [閱此部分](../../platform/using/access-management.md#adding-folders-and-creating-views)。
 
 除了這些檢視外，您還可以設定篩選資料夾，讓您根據工作流程的執行狀態來篩選工作流程清單。 操作步驟：
@@ -293,6 +290,3 @@ Campaign Classic介面可讓您使用預先定義的檢視，監控執行個體�
 
 * [建立進階篩選](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [儲存篩選](../../platform/using/creating-filters.md#saving-a-filter)
-
-<!-- need to check if pending status filter will be implemented or not in january release, note, Additionally to these views, a prefedefined filter is available in workflow-type folders. It allows you to display in the list workflows that are waiting to be started by the operationMgt process only.This filter is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
