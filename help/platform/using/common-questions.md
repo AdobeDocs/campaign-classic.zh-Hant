@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f46b499e4b81cf500baa84cf683a6e0273f802a7
+source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
 
 ---
 
@@ -74,58 +74,3 @@ Adobe會考量到電子郵件傳送的網域名稱系統(DNS)，該系統可讓�
 
 [按一下這裡以了解更多資訊](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)。
 
-身為管理員使用者，您可以透過「促銷活動控制面板」，設定完整的網域委派給Adobe。 [閱讀更多資訊](https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html)。
-
-## 10. How to get emails in the recipient&#39;s inbox? {#how-to-get-emails-in-the-recipient-s-inbox-}
-
-閱讀[設定電子郵件傳遞](https://helpx.adobe.com/campaign/kb/acc-deliverability.html)了解傳遞相關概念和最佳做法，以及最佳化電子郵件傳送的工具。
-
-## 更像這樣 {#more-faq}
-
-閱讀更多有關特定主題的常見問題。
-
-<table>
-<tr>
-<td>
-        <a href="../../platform/using/faq-key-concepts.md"><img alt="條件" src="assets/icon_start.png"/></a>
-        <div><a href="../../platform/using/faq-key-concepts.md"><strong>重要概念</strong></a></div>
-        <em>全球常見問答集</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-audiences.md"><img alt="條件" src="assets/icon_audience.png"/></a>
-        <div><a href="../../platform/using/faq-audiences.md"><strong>收件者</strong></a></div>
-        <em>受眾常見問答集</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-designing.md"><img alt="條件" src="assets/icon_content.png"/></a>
-        <div><a href="../../platform/using/faq-designing.md"><strong>設計</strong></a></div>
-        <em>訊息設計常見問答集</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-messages.md"><img alt="條件" src="assets/icon_delivery.png"/></a>
-        <div><a href="../../platform/using/faq-messages.md"><strong>傳送</strong></a></div>
-        <br/><em>訊息測試與傳送常見問答集</em>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="../../platform/using/faq-workflows.md"><img alt="條件" src="assets/icon_process.png"/></a>
-        <div><a href="../../platform/using/faq-workflows.md"><strong>工作流程</strong></a></div>
-        <em>流程自動化常見問答集</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-reporting.md"><img alt="條件" src="assets/icon_report.png"/></a>
-        <div><a href="../../platform/using/faq-reporting.md"><strong>報告</strong></a></div>
-        <em>促銷活動報表常見問答集</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-campaign-config.md"><img alt="條件" src="assets/icon_config.png"/></a>
-        <div><a href="../../platform/using/faq-campaign-config.md"><strong>配置</strong></a></div>
-        <em>例項設定常見問答集</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-developers.md"><img alt="條件" src="assets/icon_server.png"/></a>
-        <div><a href="../../platform/using/faq-developers.md"><strong>開發</strong></a></div>
-        <br/><em>開發人員常見問答集</em>
-    </td>
-    </tr></table>
