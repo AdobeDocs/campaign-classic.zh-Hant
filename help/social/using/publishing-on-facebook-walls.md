@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -59,7 +59,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 1. 登入您用來管理頁面的Facebook帳戶。
 1. 在您的瀏覽器中輸入下列位址： [https://developers.facebook.com/apps](https://developers.facebook.com/apps)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >視您擁有的帳戶類型而定，可能需要一或多個授權。
    >
@@ -87,7 +87,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 此步驟需要存取您的Adobe Campaign主控台和登入您用於頁面管理的Facebook帳戶的網際網路瀏覽器：
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign營運商必須擁有管理權限才能執行此設定。
 
@@ -107,7 +107,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >您不得在任何情況下使用不安全的URL。
 
