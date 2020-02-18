@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3946d97e786423bf831d17e486186660db403709
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -103,7 +103,7 @@ Adobe Campaign可讓您定義並管理指派給各種運算子的權限。 這�
 
 >[!NOTE]
 >
->欄位 **[!UICONTROL Session timeout]** 可讓您調整FDA作業逾時前的延遲。 有關詳細資訊，請參閱關於 [同盟資料存取](../../platform/using/accessing-an-external-database.md#about-federated-data-access)。
+>欄位 **[!UICONTROL Session timeout]** 可讓您調整FDA作業逾時前的延遲。 有關詳細資訊，請參閱關於 [同盟資料存取](../../platform/using/about-fda.md)。
 
 ### 運算子的時區 {#time-zone-of-the-operator}
 
