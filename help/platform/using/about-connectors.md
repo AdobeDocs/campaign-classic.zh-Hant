@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -26,8 +26,8 @@ Adobe Campaign提供數種連接器，可讓您與外部應用程式通訊、連
 
 這些連接器包括：
 
-* FDA Connector(**Federated Data Access**)可讓您將Campaign連接至一或多個外部資料庫，並處理儲存在其中的資訊，而不會影響您的Campaign資料。 [進一步瞭解](../../platform/using/accessing-an-external-database.md)。
-* CRM連接器可讓您使用專屬的工作流程活動，在Adobe Campaign和CRM解決方案之間交換資料。 [進一步瞭解](../../platform/using/crm-connectors.md)。
+* FDA Connector(**Federated Data Access**)可讓您將Campaign連接至一或多個外部資料庫，並處理儲存在其中的資訊，而不會影響您的Campaign資料。 [進一步瞭解](../../platform/using/about-fda.md)。
+* CRM連接器可讓您使用專屬的工作流程活動，在Adobe Campaign和您的CRM解決方案之間交換資料。 [進一步瞭解](../../platform/using/crm-connectors.md)。
 * Analytics資料連接器( **原稱為Adobe Genesis**)可讓您在Adobe Campaign和Adobe Analytics之間共用資料。 [進一步瞭解](../../platform/using/adobe-analytics-data-connector.md)。
 
 您也可以將Campaign與多個其他系統整合，例如：
