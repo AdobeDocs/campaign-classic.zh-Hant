@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5130802f3723311bcd09e21fc405d298923dd20e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -79,7 +79,7 @@ source-git-commit: 5130802f3723311bcd09e21fc405d298923dd20e
 
 命名空間可讓您依目標區域對一組結構描述進行分組。 例如， **cus** namespace用於客戶特定的&#x200B;**配置(客戶**)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >作為標準，命名空間的名稱必須簡明扼要，且必須只包含符合XML命名規則的授權字元。
 >
