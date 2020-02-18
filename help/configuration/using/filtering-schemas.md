@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * xtk：字串
 * xtk:xslt
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign例項的內 **部帳戶只能存取xtk:sessionInfo** 架構的READ和WRITE權限。
 
