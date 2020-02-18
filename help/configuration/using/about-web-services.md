@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign應用程式伺服器旨在開放並輕鬆與日益多樣化和複
 
 Adobe Campaign API用於應用程式內的JavaScript，以及應用程式外的SOAP中。 它們組成了一個通用功能庫，可以加以豐富。 如需詳細資訊，請參 [閱實作SOAP方法](../../configuration/using/implementing-soap-methods.md)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >每天授權引擎呼叫的數目視您的授權合約而定。 有關詳細資訊，請參見[此頁面](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
 >本專屬檔案提供所有API的清單，包括其完整 [說明](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。
@@ -154,7 +154,7 @@ SOAP `<soap-env:fault>` 消息本體中的元素用於傳送在Web服務處理�
 
 當驗證該元素時，標識服務調用的成 `<faultcode>` 功或失敗。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >所有Adobe Campaign網站服務都會處理錯誤。 因此強烈建議您測試每個呼叫，以處理傳回的錯誤。
 
