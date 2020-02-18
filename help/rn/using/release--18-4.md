@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
     <ul> 
      <li> <p>存取權：允許資料主體接收資料掌控者所擷取的個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
      <li> <p>刪除權：資料主體有權清除資料掌控者擷取的個人資料，可能包括Adobe Campaign中儲存的資料。</p> </li> 
-    </ul> 如需詳細資訊，請參閱詳 <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html">細檔案</a>。<br /> </td> 
+    </ul> 如需詳細資訊，請參閱詳 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">細檔案</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用中的設定檔案<br /> </td> 
@@ -119,7 +119,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
   </tr> 
   <tr> 
    <td> Android推播連接器增強功能<br /> </td> 
-   <td> <p>Android連接器已增強，可支援更高的總處理能力。 </p> <p>如需詳細資訊，請參閱詳 <a href="../../delivery/using/setting-up-mobile-app-channel.md#android-connectors">細檔案</a>。</p> </td> 
+   <td> <p>Android連接器已增強，可支援更高的總處理能力。 </p> <p>如需詳細資訊，請參閱詳 <a href="../../delivery/using/configuring-the-mobile-application.md">細檔案</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -141,13 +141,13 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
 * 使用命令行可以使用新模式導入包，允許循環從屬關係（對於大型包不建議使用）。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-8979)
 * 已改善Teradata中大量資料載入的效能，並修正無法顯示記錄檔中處理之資料正確值的問題。 (NEO-10429)
 * 從Audience manager匯入觀眾現在可處理分割檔案。 以前，只有區段的最後一個檔案是由importSharedAudience技術工作流程匯入的。 (NEO-10156)
-* 在Windows上，促銷活動伺服器預設安裝路徑已變更。 啟動64位元版本設定時，預設安裝路徑現在為： **C:Program FilesAdobe Adobe Campaign Classic v7** ，而非 **C:Program Files(x86)AdobeAdobe Campaign Classic v7**
+* 在Windows上，促銷活動伺服器預設安裝路徑已變更。 啟動64位元版本設定時，預設安裝路徑現在為： **C:\Program Files\Adobe\Adobe Campaign Classic v7** ，而 **非C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * 預設MX規則已增強，加入更多網域並最佳化總處理能力。
 * 對部署精靈SOAP呼叫(xtk:serverOptions#SaveOptions)強制執行存取限制。
 * weka.jar過時的程式庫已移除，OpenSSL程式庫已更新，以進行安全性最佳化。
 * 改善帳單技術工作流程，以保護例項效能。
 * 管理員設定或重設任何運算子密碼的能力已恢復。 若要這麼做，請在運算子上按一下滑鼠右鍵，選 **[!UICONTROL Actions]** 取> **[!UICONTROL Reset password]** 並設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。 如需詳細資訊，請參閱詳 [細檔案](../../production/using/lost-password.md)。
-* 為支援Adobe Target中的新多租賃功能，現在在設定選項和外部帳戶以與Target整合時，可將新的&quot;at_property&quot;參數新增至URL。 此參數的值可在Adobe Target中找到，且在執行對Target的呼叫時，Campaign會使用。 如需詳細資訊，請參閱詳 [細檔案](../../integrations/using/inserting-a-dynamic-image.md)。
+* 為支援Adobe Target中的新多租賃功能，現在在設定選項和外部帳戶以與Target整合時，可將新的&quot;at_property&quot;參數新增至URL。 此參數的值可在Adobe Target中找到，並將在Campaign執行對Target的呼叫時供其使用。 如需詳細資訊，請參閱詳 [細檔案](../../integrations/using/inserting-a-dynamic-image.md)。
 * 您現在可以指定在按一下Adobe Target所提供的影像時開啟的預設登陸頁面。 以前，按一下該影像會在建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱詳 [細檔案](../../integrations/using/inserting-a-dynamic-image.md)。
 * 在外 **部帳戶中新增「啟用SMPP追蹤** 」核取方塊，以強制追蹤輸出。 如需詳細資訊，請參閱詳 [細檔案](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
 
