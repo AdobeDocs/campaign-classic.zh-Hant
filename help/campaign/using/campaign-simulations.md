@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -78,11 +78,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   如有必要，您可以透過連結使用動態條 **[!UICONTROL Edit the dynamic condition...]** 件
+   如有必要，您可以透過連結使用動態 **[!UICONTROL Edit the dynamic condition...]** 條件。
 
    按一 **[!UICONTROL Save]** 下以核准此設定。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >計算模擬時，只會考慮已計算目標的傳送(狀態：Target **就緒** , **或就緒交付**)。
 
@@ -215,13 +215,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    * **[!UICONTROL Generate target overlap statistics]** 可讓您復原模擬報表中的所有重疊統計資料。 重疊是在一個模擬中定位至少兩個傳送的接收者。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >選取此選項可大幅增加模擬執行時間。
 
    * **[!UICONTROL Keep the simulation work table]** 讓你保留模擬痕跡。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >自動保存這些表需要大量儲存容量：確保資料庫足夠大。
 
