@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign可讓您選擇網頁追蹤模式，以定義追蹤記錄在應用
 
 每種模式都具有特定特性。 「永久」網頁追蹤模式包含「作業」網頁追蹤模式的特性，而「匿名」模式則包含「永久」和「作業」模式的特性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果已啟用「Leads」套件，預設會啟用「匿名」網頁追蹤模式。 在所有其他情況下，預設會啟用「作業階段」網頁追蹤模式。
 >
