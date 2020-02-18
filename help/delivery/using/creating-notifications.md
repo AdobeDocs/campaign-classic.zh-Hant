@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -59,7 +59,7 @@ source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
    >iOS **7提供** 「無訊息推播」模式。 這可讓「無訊息」通知傳送至行動應用程式。 使用者未得知通知的到達。 它會直接傳輸至應用程式。
 
 1. 在字 **[!UICONTROL Title]** 段中，輸入要顯示在通知中的標題標籤。 它只會出現在通知中心提供的通知清單中。 此欄位可讓您定義iOS通知裝載 **的** title參數值。
-1. 如果您使用HTTP/2連接器，則可新增子標題(iOS通知裝載的 **子標題** 參數值)。 請參閱「 [連接器](../../delivery/using/setting-up-mobile-app-channel.md#connectors) 」部分。
+1. 如果您使用HTTP/2連接器，則可新增子標題(iOS通知裝載的 **子標題** 參數值)。 請參閱「在 [Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md) 」一節。
 1. 然後，根據選 **[!UICONTROL Message]** 擇的通 **[!UICONTROL Value of the badge]** 知類型輸入和。
 
    ![](assets/nmac_delivery_ios_5.png)
@@ -77,13 +77,13 @@ source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
 
    >[!NOTE]
    >
-   >音效必須包含在應用程式中，並在建立服務時加以定義。 請參閱應 [用程式音效](../../delivery/using/setting-up-mobile-app-channel.md#application-sounds)。
+   >音效必須包含在應用程式中，並在建立服務時加以定義。 請參閱 [設定iOS外部帳戶](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios)。
 
 1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為：例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
 
    >[!NOTE]
    >
-   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 For more on this, refer to: [General information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 有關詳情，請參閱：在 [Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
 
 1. 在設定通知後，按一下標 **[!UICONTROL Preview]** 簽以預覽通知。
 
@@ -129,7 +129,7 @@ source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
 
    >[!NOTE]
    >
-   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 For more on this, refer to: [General information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 有關詳情，請參閱：在 [Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
 
 1. 在設定通知後，按一下標 **[!UICONTROL Preview]** 簽以預覽通知。
 
