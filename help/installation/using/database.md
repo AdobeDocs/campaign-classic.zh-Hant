@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ---
 
@@ -32,13 +32,12 @@ source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
 
 原生用戶端必須安裝在Adobe Campaign應用程式伺服器上。
 
-您可以通過ODBC驅動程式配置面板、 **SQL Native Client** （適用於Microsoft SQL Server 2005客戶端）或 **SQL Server Native Client 10.0** （適用於Microsoft SQL Server 2008和2008 R2客戶端）檢查伺服器上的本地客戶端或 **SQL Server Native Client 11.0** （適用於Microsoft SQL Server 2012客戶端）。
+可以通過ODBC驅動程式配置面板檢查伺服器上的本地客戶端，位於 **SQL Server Native Client 10.0** （對於Microsoft SQL Server 2008和2008 R2客戶端）或 **SQL Server Native Client 11.0** （對於Microsoft SQL Server 20）下客戶)。
 
 必須存在以下訪問DLL:
 
-* **用於Microsoft SQL Server 2005客戶端的sqlncli** .dll,
 * **用於Microsoft SQL Server 2008和** 2008 R2客戶端的sqlncli10.dll,
-* **用於Microsoft SQL Server 2012客戶端的sqlncli** 11.dll。
+* **用於Microsoft SQL Server 2012** 、2014、2016和2017客戶端的sqlncli11.dll。
 
    訪問DLL可在Microsoft網站上找到。
 
