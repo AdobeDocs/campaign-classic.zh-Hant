@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
 
 ---
 
@@ -28,7 +28,8 @@ source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 >[!NOTE]
 >
->有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+>有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。\
+>請參閱快速 [入門指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，其中介紹與傳遞能力相關的概念和最佳實務。
 
 有關交付能力相關概念和最佳做法的詳細資訊，請參閱本 [節](../../delivery/using/about-deliverability.md)。
 
@@ -150,9 +151,9 @@ MX規則(Mail eXchanger)是管理傳送伺服器與接收伺服器間通訊的�
 
 ISP將接受每小時預先定義的連接和消息數，具體取決於物料容量和內部策略。 ISP系統可以根據IP和發送域的信譽自動修改這些變數。 Adobe Campaign透過其傳遞能力平台，管理ISP超過150項特定規則，此外還管理其他網域的一項一般規則。
 
-連接的最大數量不完全取決於MTA使用的公有IP地址數。
+最大連接數不完全取決於MTA使用的公共IP地址數。
 
-例如，如果您在MX規則中允許5個連線，而您已設定2個公用IP，則您可能認為無法同時開啟超過10個連線至此網域。 這不是事實，事實上，最大連線數指的是路徑和路徑，其中一個是我們的MTA公用IP，而另一個是客戶MTA的公用IP。
+例如，如果您在MX規則中允許5個連線，而您已設定2個公用IP，您可能認為您無法同時開啟超過10個連線至此網域。 這不是事實，事實上，最大連線數指的是路徑和路徑，其中一個是我們的MTA公用IP，而另一個是客戶MTA的公用IP。
 
 在下列範例中，使用者已設定兩個公用IP位址，網域為yahoo.com。
 
@@ -379,19 +380,24 @@ MIME結 **構** （多用途Internet郵件擴展）參數允許您定義要發�
 
 * **地址**:這是要使用的MTA主機的IP地址。
 * **helo主機**:此標識符表示SMTP伺服器將看到的IP地址。
+
 * **publicId**:當NAT路由器後的數個Adobe Campaign mtas共用IP位址時，這項資 **訊很有** 用。 統計伺服器使用此標識符來儲存此起始點和目標伺服器之間的連接和發送統計資訊。
 * **重量**:可讓您定義地址的使用相對頻率。 預設情況下，所有地址的權重均為1。
 
-   在上例中，在正常情況下，地址將按如下方式分配：
+>[!NOTE]
+>
+>在serverConf.xml檔案中，您需要驗證一個IP是否對應於具有唯一識別碼(public_id)的單一主機。 它無法映射到多個主機，這可能導致傳送調節問題。
 
-   * &quot;1&quot;: 5 / (5+5+1) = 45%
-   * &quot;2&quot;: 5 / (5+5+1) = 45%
-   * &quot;3&quot;: 1 / (5+5+1) = 10%
-   例如，如果第一個位址無法用於指定的MX，則會傳送如下訊息：
+在上例中，在正常情況下，地址將按如下方式分配：
 
-   * &quot;2&quot;: 5 / (5+1) = 83%
-   * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
+例如，如果第一個位址無法用於指定的MX，則會傳送如下訊息：
+
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
 * **includeDomains**:可讓您為屬於特定網域的電子郵件保留此IP位址。 這是遮色片的清單，可包含一或多個萬用字元(&#39;*&#39;)。 如果未指定屬性，所有網域都可以使用此IP位址。
 
