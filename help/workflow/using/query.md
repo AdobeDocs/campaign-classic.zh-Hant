@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
 ---
 
@@ -25,10 +25,11 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ## 建立查詢 {#creating-a-query}
 
 查詢可讓您根據條件選擇目標。 您可以將區段代碼關聯至查詢結果，並將其他資料插入。
+有關查詢示例的詳細資訊，請參 [閱本節](../../workflow/using/querying-recipient-table.md)。
 
 >[!NOTE]
 >
->本節將介紹查詢 [示例](../../workflow/using/querying-recipient-table.md)。
+>使用Oracle時，查詢活動與CLOB欄位不相容。
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -46,7 +47,7 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   如有必要，查詢可以根據傳入轉場的資料，方法是選擇定位和篩選維 **[!UICONTROL Temporary schema]** 度時進行選取。
+   如有必要，查詢可以根據傳入轉場的資料，方法是選擇定位和篩選維 **[!UICONTROL Temporary schema]** 度時進行選擇。
 
    ![](assets/query_temporary_table.png)
 
@@ -79,7 +80,7 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ![](assets/wf_add_data_1st_option.png)
 
 * 選取 **[!UICONTROL Data linked to the filtering dimension]** 以選取Adobe Campaign資料庫中的資料。
-* 選擇 **[!UICONTROL External data]** 從外部資料庫添加資料。 只有在您購買了Federated Data Access選項時， **此選項才可用** 。 有關詳細資訊，請參 [閱訪問外部資料庫(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
+* 選擇 **[!UICONTROL External data]** 從外部資料庫添加資料。 只有在您購買了Federated Data Access（同盟資料存取）選項時， **此選項才可用** 。 有關詳細資訊，請參 [閱訪問外部資料庫(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
 * 選取 **[!UICONTROL An offer proposition]** 選項以新增一組欄，讓您儲存選件引擎產生的最佳提案。 只有在您購買了 **Interaction** 模組時，才可使用此選項。
 
 如果平台上未安裝可選模組，則不顯示此階段。 你會被帶到下一個階段。
@@ -112,7 +113,7 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
    * 如果系列的單一元素與此系列的篩選條件一致，請在欄位 **[!UICONTROL Single row]** 中選 **[!UICONTROL Data collected]** 取。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >此模式優化了由於集合元素上有直接聯繫而生成的SQL查詢。
       >
