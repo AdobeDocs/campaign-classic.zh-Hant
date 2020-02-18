@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -68,4 +68,4 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
 Federated Data Access - FDA **(同盟資料存取- FDA** )選項允許您訪問儲存在外部資料庫中的資料。
 
-本頁詳細說明了訪問外部資料庫中資料的方案上 [的配置](../../platform/using/accessing-an-external-database.md#creating-the-data-schema)。
+本頁詳細說明了訪問外部資料庫中資料的方案上 [的配置](../../platform/using/creating-data-schema.md)。
