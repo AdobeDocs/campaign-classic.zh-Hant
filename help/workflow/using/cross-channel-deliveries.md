@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -64,11 +64,10 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 1. 新增並設定活 **[!UICONTROL Wait]** 動，讓收件者一次不會收到太多傳送。
 1. 新增活 **[!UICONTROL Split]** 動以劃分iOS或Android行動應用程式的訂閱者。
 
-   為每個作業系統選擇服務。 有關建立服務的詳細資訊，請參閱本 [頁](../../delivery/using/setting-up-mobile-app-channel.md#creating-the-service-and-collecting-subscriptions)。
+   為每個作業系統選擇服務。 有關建立服務的詳細資訊，請參閱本 [頁](../../delivery/using/configuring-the-mobile-application.md)。
 
    ![](assets/cross_channel_delivery_4.png)
 
 1. 針對每個作業系統選擇並設定行動應用程式傳送。
 
    ![](assets/cross_channel_delivery_5.png)
-
