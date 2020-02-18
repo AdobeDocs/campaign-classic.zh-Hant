@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
    在此範例中，新增索引欄位(**fidelity**)，並以列舉欄位( **areaChema)來補充位置元素(已存在於** nms:recipient ******** schema)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >請記住，要添加 **extendedSchema** 屬性以引用擴展模式。
 
