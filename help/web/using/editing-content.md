@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -135,13 +135,14 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 >對於每種類型的連結，您可以設定開啟模式：在「目標」下拉式清單中 **選取目標** 視窗。 此值與 **`<target>`** HTML標籤相對應。
 >
 >可用目標 **清單** 如下：
-
+>
 >* 其他(IFrame)
 >* 頂端視窗(_top)
-* 父窗口(_parent)
-* 新視窗(_blank)
-* 目前視窗(_self)
-* 預設瀏覽器行為
+>* 父窗口(_parent)
+>* 新視窗(_blank)
+>* 目前視窗(_self)
+>* 預設瀏覽器行為
+>
 
 
 
@@ -170,7 +171,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 ![](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
-「將操作添加到按鈕」 [部分中詳細介紹了可用操作](#adding-an-action-to-a-button) 。
+>
+>「將操作添加到按鈕」 [部分中詳細介紹了可用操作](#adding-an-action-to-a-button) 。
 
 ### 刪除連結 {#delete-a-link}
 
@@ -180,7 +182,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * **[!UICONTROL Break the link]** 可讓您在確認後刪除連結和所有相關參數。
 
 >[!NOTE]
-如果刪除連結，內容仍會保留。
+>
+>如果刪除連結，內容仍會保留。
 
 ## 變更字型屬性 {#changing-font-attributes}
 
@@ -202,8 +205,10 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * **變更文字顏色** 圖示：可讓您變更所選區塊的文字顏色，或僅變更所選取的文字(`<span style="color: #CODE">`)
 
 >[!NOTE]
-* **刪除圖示** :刪除塊及其所有內容。
-
+>
+>* **刪除圖示** :刪除塊及其所有內容。
+   >
+   >
 * **復製圖示** :複製塊以及與塊相關的所有樣式。
 
 
@@ -223,7 +228,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 ```
 
 >[!CAUTION]
-您不得在HTML頁面的指令碼標 **記中** ，呼叫外部檔案。 這些檔案不會匯入至Adobe Campaign伺服器。
+>
+>您不得在HTML頁面的指令碼標 **記中** ，呼叫外部檔案。 這些檔案不會匯入至Adobe Campaign伺服器。
 
 ### 添加／刪除／複製映像 {#adding---deleting---duplicating-an-image}
 
@@ -240,7 +246,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 「復 **制** 」圖示會復 ![]() 制標籤及其內容。
 
 >[!CAUTION]
-複製影像時，與新影像相關的識別碼會被刪除。
+>
+>複製影像時，與新影像相關的識別碼會被刪除。
 
 ### 編輯影像屬性 {#editing-image-properties}
 
