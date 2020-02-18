@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Adobe Campaign可讓您在收件者匿名瀏覽您的網站時，將收集的網路追蹤資訊連結至收件者。 當使用者瀏覽您網站的標籤頁面時，會收集此瀏覽資訊，如此一來，當使用者點按Adobe Campaign所傳送的電子郵件時，就會識別這些資訊，並自動將資訊連結至這些網頁。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在網站上設定匿名追蹤可觸發大量追蹤記錄的收集，進而影響資料庫的運作。 小心配置。\
 >追蹤記錄檔會儲存在資料庫中，直到追蹤資料被清除為止。 使用部署嚮導配置清除頻率。 如需詳細資訊，請參閱[本小節](../../installation/using/deploying-an-instance.md#purging-data)。
