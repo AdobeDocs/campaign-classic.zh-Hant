@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a5072ba55690d4d88c12ac7ff647f163deddbf32
+source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ---
 
@@ -41,7 +41,6 @@ Adobe Campaign提供兩組預先封裝的架構選項，讓您調整部署的尺
 Power Booster和Power cluster選項可用於以下應用程式：
 
 * 行銷活動
-* 銷售線索
 * 傳送
 * 訊息中心
 
