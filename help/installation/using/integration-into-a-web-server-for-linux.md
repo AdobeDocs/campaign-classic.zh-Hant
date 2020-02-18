@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: abddb3cdfcee9e41cab2e7e662d5bfd5d53d6f7e
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -64,12 +64,6 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    ```
 
 1. 在 **/etc/apache2/mods-available中建立檔案nlsrv.load****** ，並插入以下內容：
-
-   在德比安7:
-
-   ```
-   LoadModule requesthandler22_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
-   ```
 
    在德比安8:
 
@@ -147,63 +141,47 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    userdir
    ```
 
-對連結至停用模組的函式加上註解：
-
-    &quot;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    DirectoryIndexIndexOptionsAddIconByEncodingAddIconByTypeAddIconDefaultIconReadmeNameHeaderNameIndexIndexIgnoreLanguagePriorityForceLanguagePriority
-    &quot;
-
-1. 在資料夾中建立Adobe Campaign專用的設定 `/etc/httpd/conf.d/` 檔。
-
-例如 `CampaignApache.conf`。
-
-1. 對 **於RHEL6**，請在檔案中新增下列指示：
+   對連結至停用模組的函式加上註解：
 
    ```
-   LoadModule requesthandler22_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
+   DirectoryIndex
+   IndexOptions    
+   AddIconByEncoding    
+   AddIconByType    
+   AddIcon    
+   DefaultIcon    
+   ReadmeName    
+   HeaderName    
+   IndexIgnore    
+   LanguagePriority    
+   ForceLanguagePriority
+   ```
+
+1. 在資料夾中建立Adobe Campaign專用的設定 `/etc/httpd/conf.d/` 檔。 例如 `CampaignApache.conf`
+
+1. 對 **於RHEL7**，請在檔案中新增下列指示：
+
+   ```
+   LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/tomcat-7/conf/apache_neolane.conf
    ```
 
-對 **於RHEL7**，請在檔案中新增下列指示：
+1. 針對 **RHEL7**:
 
-LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.soInclude /usr/local/neolane/nl6/tomcat-7/conf/apache_neolane.conf
+   新增包含 `/etc/systemd/system/httpd.service` 下列內容的檔案：
 
-1. 對 **於RHEL6**:
+   ```
+   .include /usr/lib/systemd/system/httpd.service
+   
+   [Service]
+   Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
+   ```
 
-在檔案中新增下列指 `/etc/sysconfig/httpd` 示：
+   更新系統使用的模組：
 
-    &quot;
-    #Neolane/Adobe Campaign
-    Configurationif [ &quot;$LD_LIBRARY_PATH&quot; != &quot;&quot; ];然後導出LD_LIBRARY_PATH=&quot;/usr/local/neolane/nl6/lib:$LD_LIBRARY_PATH&quot;;else export LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib;
-    fiexport USERPATH=/usr/local/neolane
-    &quot;
-
-針對 **RHEL7**:
-
-新增包含 `/etc/systemd/system/httpd.service` 下列內容的檔案：
-
-    &quot;
-    .include /usr/lib/systemd/system/httpd.service
-    
-    [Service]
-    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
-    &quot;
-
-更新系統使用的模組：
-
-    &quot;
-    systemctl守護程式-reload
-    &quot;
+   ```
+   systemctl daemon-reload
+   ```
 
 1. 然後，執行命令，將Adobe Campaign運算子新增至Apache運算子群組，反之亦然：
 
@@ -211,23 +189,17 @@ LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.soIncl
    usermod -a -G neolane apache
    usermod -a -G apache neolane
    ```
-要使用的組名取決於Apache的配置方式。
+
+   要使用的組名取決於Apache的配置方式。
 
 1. 執行Apache和Adobe Campaign伺服器。
 
-針對RHEL6:
+   針對RHEL7:
 
-    &quot;
-    /etc/init.d/httpd start
-    /etc/init.d/nlserver start
-    &quot;
-
-針對RHEL7:
-
-    &quot;
-    systemctl start
-    httpdsystemctl start nlserver
-    &quot;
+   ```
+   systemctl start httpd
+   systemctl start nlserver
+   ```
 
 ## 啟動Web伺服器並測試配置{#launching-the-web-server-and-testing-the-configuration}
 
@@ -277,4 +249,4 @@ GET /r/test
 Connection closed by foreign host.
 ````
 
-您也可以從網頁瀏 [`http://<computer>`](http://machine/r/test) 覽器要求URL。
+您也可以從網頁瀏 [`https://<computer>`](https://machine/r/test) 覽器要求URL。
