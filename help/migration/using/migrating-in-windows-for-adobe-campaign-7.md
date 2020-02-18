@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,11 +26,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 對於Windows，遷移步驟如下：
 
-1. 停止服務：請參 [閱服務停止](#service-stop),
-1. 備份資料庫：請參閱 [備份資料庫和當前安裝](#back-up-the-database-and-the-current-installation),
-1. 移轉平台：請參閱 [部署Adobe Campaign v7](#deploying-adobe-campaign-v7),
-1. 遷移重定向伺服器(IIS):請參閱 [遷移重定向伺服器(IIS)](#migrating-the-redirection-server--iis-),
-1. 重新啟動服務：請參閱 [重新啟動服務](#re-starting-the-services),
+1. 停止服務：請參閱「 [服務停止」](#service-stop)。
+1. 備份資料庫：請參閱 [備份資料庫和當前安裝](#back-up-the-database-and-the-current-installation)。
+1. 移轉平台：請參閱「 [部署Adobe Campaign v7」](#deploying-adobe-campaign-v7)。
+1. 遷移重定向伺服器(IIS):請參閱 [遷移重定向伺服器(IIS)](#migrating-the-redirection-server--iis-)。
+1. 重新啟動服務：請參閱 [重新啟動服務](#re-starting-the-services)。
 1. 刪除及清除舊版Adobe Campaign:請參閱刪 [除和清除Adobe Campaign舊版](#deleting-and-cleansing-adobe-campaign-previous-version)。
 
 ## 服務停止 {#service-stop}
@@ -101,7 +101,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    ren "Neolane v5" "Neolane v5.back"
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >為防患於未然，我們建議您壓縮 **Neolane v5.back** ，並將它儲存在伺服器以外的安全位置。
 
@@ -141,7 +141,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    ren "Neolane v6" "Neolane v6.back"
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >為防患於未然，我們建議您壓縮 **Neolane v6.back** ，並將它儲存在伺服器以外的安全位置。
 
@@ -181,7 +181,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    ren "Adobe Campaign v6" "Adobe Campaign v6.back"
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >為防患於未然，我們建議您壓縮 **Adobe Campaign v6.back** ，並將它儲存在伺服器以外的安全位置。
 
@@ -246,7 +246,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    copy "Adobe Campaign v6.back"/var/* "Adobe Campaign v7"/var/
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >對於上述第一個命令，請勿複製 **config-default.xml檔案** 。
 
@@ -268,7 +268,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    nlserver config -postupgrade -instance:<instance name>
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >請勿啟動Adobe Campaign服務：需要對IIS進行一些更改。
 
