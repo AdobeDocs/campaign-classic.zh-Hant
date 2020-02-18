@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
 
 ---
 
@@ -74,11 +74,11 @@ logInfo("Start date: " + task.creationDate)
 
 ### 例項變數 {#instance-variables}
 
-例項變數(**[!UICONTROL instance.vars.xxx]**)可與全域變數比較：所有活動都會共用。
+例項變數(**[!UICONTROL instance.vars.xxx]**)可與全域變數比較。 所有活動都會共用。
 
 ### 任務變數 {#task-variables}
 
-任務變數(**[!UICONTROL task.vars.xxx]**)可與局部變數比較：它們僅用於當前任務。 這些變數會由持續性活動使用，以保留資料，有時也會用來在相同活動的不同指令碼之間交換資料。
+任務變數(**[!UICONTROL task.vars.xxx]**)可與局部變數相比。 它們僅用於當前任務。 這些變數會由持續性活動使用，以保留資料，有時也會用來在相同活動的不同指令碼之間交換資料。
 
 ### 事件變數 {#event-variables}
 
