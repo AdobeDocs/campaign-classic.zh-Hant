@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -47,6 +47,6 @@ source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
 * [行銷資源(MRM)](../../workflow/using/marketing-resources--mrm-.md)
 * [社交行銷](../../workflow/using/social-marketing.md)
 * [與Adobe Experience cloud解決方案整合](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [通用資料保護規則(GDPR)](../../workflow/using/general-data-protection-regulation--gdpr-.md)
+* [隱私權資料保護法規](../../workflow/using/general-data-protection-regulation--gdpr-.md)
 * [轉移至中部採購](../../workflow/using/transfer-to-mid-sourcing.md)
 * [中端採購平台](../../workflow/using/mid-sourcing-platform.md)
