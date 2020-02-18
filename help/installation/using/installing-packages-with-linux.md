@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -30,9 +30,7 @@ Adobe Campaign針對上述各個版本都提供一個套件： **nlserver**。 �
 
 * 將檔案複製到 **/usr/local/neolane**
 * 建立Adobe Campaign linux帳戶（及相關群組），以 **/usr/local/neolane** 為首頁目錄建立
-* 建立自動指令 **碼/etc/init.d/nlserver6** ，以便在啟動時使用
-
-此軟體包是使用GCC 4編譯的，這意味著與安裝平台上並不總是可用的特定版本的庫有相關性。
+* 建立自動指令 **碼/etc/init.d/nlserver6** ，以便在啟動時使用，或建立系統單元（從20.1開始）。
 
 >[!NOTE]
 >
@@ -76,72 +74,7 @@ Adobe Campaign針對上述各個版本都提供一個套件： **nlserver**。 �
 yum install bc.x86_64
 ```
 
-**在SLES 11 SP2上安裝的示例：**
-
-* 停用 **[!UICONTROL libboost_regex]** :
-
-   ```
-   zypper remove libboost_regex1_36_0
-   ```
-
-* 安裝Oracle Java或OpenJDK(有關詳細資訊，請參閱 [Java開發工具包- JDK](../../installation/using/application-server.md#java-development-kit---jdk)):
-
-   ```
-   ./jdk-6uxx-linux-x64-rpm.bin
-   ```
-
-* 安裝OpenSSL 1.0(有關詳細資訊，請參 [閱Libraries](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)):
-
-   ```
-   yast -i libopenssl1_0_0-1.0.0c-18.42.1.x86_64.rpm
-   ```
-
-   您需要建立指向OpenSSL庫檔案的別名：
-
-   ```
-   ln -s /lib64/libssl.so.1.0.0 /lib64/libssl.so.10
-   ln -s /lib64/libcrypto.so.1.0.0 /lib64/libcrypto.so.10
-   ```
-
-* 安裝libicu 4.2(如需詳細資訊，請參閱 [Libraries](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)):
-
-   ```
-   yast -i libicu-4.2-7.3.1.x86_64.rpm
-   ```
-
-* 安裝Adobe Campaign伺服器的套件：
-
-   ```
-   yast -i nlserver6-v7-xxx-x.x86_64.rpm
-   ```
-
 ## 基於APT(Debian)的分發 {#distribution-based-on-apt--debian-}
-
-### 在德比亞32位 {#in-debian-32-bits}
-
-若要在Debian 32位元作業系統上安裝Adobe Campaign 32位元，請套用下列步驟：
-
-1. 您必須先取得兩個Adobe Campaign套件。
-
-   * **nlserver6-v7-XXXX-linux-2.6-intel.deb** for v7.
-   * **nlserver6-XXXX-linux-2.6-intel.deb** for v6.1。
-   **XXXX** 是Adobe Campaign組建編號。
-
-   >[!CAUTION]
-   >
-   >請務必在本節的命令範例中，針對您的Adobe Campaign版本使用正確的檔案名稱。
-
-1. 若要安裝它，請以 **root用戶身** 份連接並執行下列命令(其中 **XXXX** 是Adobe Campaign組建編號):
-
-   ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-intel.deb
-   ```
-
-   如果缺少相關性，請運行以下命令：
-
-   ```
-   apt-get install -f
-   ```
 
 ### 在德比安64位 {#in-debian-64-bits}
 
@@ -163,15 +96,21 @@ yum install bc.x86_64
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-**德比安7/8詳情**
-
-在Debian 7作業系統上安裝Adobe Campaign時，請考慮下列事項：
-
-* 必須事先安裝OpenSSL。
-* 安裝libicu48(Debian 7)、libicu52(Debian 8)或libicu57(Debian 9)、libprotobuf9(Debian 8)和libc-ares2，並使用下列命令：
+   如果缺少相關性，請運行以下命令：
 
    ```
-   aptitude install libicu48 (Debian 7) libicu52 (Debian 8) libicu57 (Debian 9)
+   apt-get install -f
+   ```
+
+**德比安8/9細節**
+
+在Debian 8/9作業系統上安裝Adobe Campaign時，請考慮下列事項：
+
+* 必須事先安裝OpenSSL。
+* 使用下列命令安裝libicu52(Debian 8)或libicu57(Debian 9)、libprotobuf9(Debian 8)和libc-ares2:
+
+   ```
+   aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
    ```
 
    ```
@@ -179,13 +118,13 @@ yum install bc.x86_64
    ```
 
    ```
-   aptitude install libprotobuf9 (only Debian 7/8)
+   aptitude install libprotobuf9 (only Debian 8)
    ```
 
 * 使用下列命令安裝JDK7:
 
    ```
-   aptitude install openjdk-7-jdk (Debian 7/8)
+   aptitude install openjdk-7-jdk (Debian 8)
    ```
 
    ```
@@ -309,6 +248,13 @@ export neolane_LANG=fra
 /etc/init.d/nlserver6 start
 ```
 
+從20.1開始，建議改用下列命令：
+
+```
+systemctl stop nlserver
+systemctl start nlserver
+```
+
 ### Linux中的Oracle客戶端 {#oracle-client-in-linux}
 
 將Oracle與Adobe Campaign一起使用時，您需要在Linux中配置Oracle客戶端層。
@@ -340,7 +286,7 @@ export neolane_LANG=fra
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-如果遇到問題，請確保 [Oracle安裝文檔中列出的軟體包](http://www.oracle.com/pls/db112/portal.portal_db?selected=11) 已正確安裝。
+如果遇到問題，請確保 [Oracle安裝文檔中列出的軟體包](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) 已正確安裝。
 
 ## 安裝檢查 {#installation-checks}
 
