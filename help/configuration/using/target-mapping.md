@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -105,7 +105,7 @@ source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Adobe Campaign不支援連結至相同廣播和／或追蹤記錄結構的多個收件者結構描述，稱為定位結構描述。 否則，在事後的資料協調中可能會出現異常。 如需詳細資訊，請參閱「建議 [與限制」頁](../../configuration/using/about-custom-recipient-table.md) 。
 
