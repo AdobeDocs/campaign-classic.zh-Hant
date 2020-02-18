@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
 * 按發件人域：列出傳送垃圾郵件或設定錯誤的傳送者網域（彈回數郵件位址的完整網域）。
 * 依網域：列出在垃圾郵件內容所含連結和影像的URL中找到的網域（在註冊者註冊的高階網域）。 在Adobe Campaign中，通常要考慮的網域是用於追蹤的位址。
 
-以下是最廣泛使用的RBL清單。 如需更完整的清單，請參閱 [https://www.declude.com/Articles.asp?ID=97](https://www.declude.com/Articles.asp?ID=97) 或 [https://www.dnsstuff.com/](https://www.dnsstuff.com/) （「IP工具」區段，「垃圾訊息資料庫查閱」表單）。
+以下是最廣泛使用的RBL清單。 如需更完整的清單，請參閱https://www.dnsstuff.com/ [](https://tools.dnsstuff.com/) （「垃圾郵件黑名單查閱」表單）。
 
 * **Spamhaus**
 
