@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
 
@@ -86,7 +86,7 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ## 定義其他設定 {#defining-additional-settings}
 
-此標 **[!UICONTROL Settings]** 簽可讓您為報表建立其他設定：這些設定會在呼叫期間傳遞至URL。
+此標 **[!UICONTROL Parameters]** 簽可讓您為報表建立其他設定：這些設定會在呼叫期間傳遞至URL。
 
 本頁將詳述Web表 [單屬性](../../web/using/about-web-forms.md)。
 
@@ -110,6 +110,14 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
    資料直接在實體級別恢復： **ctx/recipient/@account**。
 
    選 **[!UICONTROL Variable]** 項可讓您建立或選取變數，此變數將作為URL的參數傳遞，並可用於篩選器中。
+
+使用 **[!UICONTROL Response HTTP headers]** iframe，可讓您在將報表的頁面加入HTML頁面時，防止點按劫持。 若要避免點按劫持，您可以選擇 **[!UICONTROL X-Frame-options header]** 行為：
+
+* **[!UICONTROL None]**:報告將不提供 **[!UICONTROL X-Frame-options header]**。
+* **[!UICONTROL Same as origin]**:依預設設定新報表和重新發佈的報表。 主機名稱與報表的URL相同。
+* **[!UICONTROL Deny]**:使用iframe時，報表無法包含在HTML頁面中。
+
+![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## 新增變數 {#adding-variables}
 
