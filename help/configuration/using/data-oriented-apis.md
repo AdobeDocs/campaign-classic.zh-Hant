@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -392,7 +392,7 @@ Write方法顯示在 [Write / writeCollection(xtk:session)中](#write---writecol
 
 要避免綁定參數，必須用值&#39;true&#39;填充&quot;noSqlBind&quot;屬性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果查詢包含&quot;order-by&quot;或&quot;group-by&quot;指示，資料庫引擎將無法&quot;bind&quot;值。 您必須將@noSqlBind=&quot;true&quot;屬性放置在查詢的&quot;select&quot;和／或&quot;where&quot;說明上。
 
