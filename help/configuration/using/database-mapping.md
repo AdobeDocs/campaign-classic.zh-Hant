@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -304,7 +304,7 @@ SQL欄位約束如下：
 
 從ACC 18.10開始， **XtkNewId** 不再是現成可用結構中序列的預設值。 您現在可以建立架構，或使用專用序列擴充現有架構。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在建立新模式或在模式擴展期間，需要為整個模式保留相同的主鍵序列值(@pkSequence)。
 
@@ -346,7 +346,7 @@ SQL欄位約束如下：
 
 除了索引和索引的定義外，已將名為&quot;id&quot;的數值欄位新增至擴充架構，以包含自動產生的主索引鍵。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >建立表時，將自動插入主鍵設定為0的記錄。 此記錄用於避免對卷表無效的外部連接。 預設情況下，所有外鍵都以值0初始化，以便在未填充資料項時，始終可以在連接時返回結果。
 
@@ -373,7 +373,7 @@ SQL欄位約束如下：
 * ![](assets/join_fda_11.png) :基數1-1
 * ![](assets/join_fda_1m.png) :基數1-N
 
-有關FDA表的詳細資訊，請參閱 [訪問外部資料庫](../../platform/using/accessing-an-external-database.md)。
+有關FDA表的詳細資訊，請參閱 [訪問外部資料庫](../../platform/using/about-fda.md)。
 
 必須在包含通過主元素連結的表的外鍵的架構中聲明連結：
 
