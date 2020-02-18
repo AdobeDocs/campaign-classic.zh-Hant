@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -210,7 +210,7 @@ source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
    <td> 收件箱呈現(IR)<br /> </td> 
    <td> 可讓您預覽在可能收到訊息的不同上下文中傳送的訊息，並檢查主要桌上型電腦和應用程式的相容性。 你需要一個利特摩斯賬戶。<br /> </td> 
    <td> 行銷<br /> </td> 
-   <td> 選購，了 <a href="../../delivery/using/about-deliverability.md#inbox-rendering">解詳情</a> </td> 
+   <td> 選購，了 <a href="../../delivery/using/inbox-rendering.md">解詳情</a> </td> 
   </tr> 
   <tr> 
    <td> 中央／本地行銷（分佈式行銷）<br /> </td> 
@@ -250,9 +250,9 @@ source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
   </tr> 
   <tr> 
    <td> 隱私權資料保護法規<br /> </td> 
-   <td> 包含其他功能，可協助專案在Campaign Classic中符合GDPR規範。<br /> </td> 
+   <td> 包含其他功能，可協助您在Campaign Classic中符合隱私權規範。<br /> </td> 
    <td> 全部</td> 
-   <td> <a href="https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html">進一步瞭解</a> </td> 
+   <td> <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">進一步瞭解</a> </td> 
   </tr> 
   <tr> 
    <td> 轉移至中部採購 <br /> </td> 
