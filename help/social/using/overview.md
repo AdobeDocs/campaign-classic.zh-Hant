@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
 Social Marketing可讓您將傳送內容傳送至不同的Facebook頁面和Twitter帳戶，而非收件者個人檔案。 在Facebook上，傳送內容會以出版物的形式顯示在頁面塗鴉牆上，而且也會顯示在所有頁麵粉絲的動態消息中。 在Twitter上，傳送內容會顯示為推文，並會顯示在帳戶追隨者的首頁上。 您也可以傳送直接訊息給您收集的帳戶追隨者。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign會要求您遵守Facebook和Twitter就訊息傳送所傳達的服務條款。
 >
