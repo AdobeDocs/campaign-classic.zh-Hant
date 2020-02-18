@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ---
 
@@ -267,7 +267,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 >* 使用 **[!UICONTROL Add]** 按鈕（位於側表徵圖欄上方）可新增要編輯運算式的輸出欄。 有關編輯表達式的詳細資訊，請參 [閱Building expressions](#building-expressions)。
 >* 按一下紅色的&#39;x&#39;（刪除），以刪除&#x200B;**輸出欄**。
 >* 使用箭頭更改輸出列的順序。
->* 此 **[!UICONTROL Distribution of values]** 選項可作為查看所選欄位值分佈的方法（例如，連結至接收城鎮、接收者語言等的分佈）。
+>* 此 **[!UICONTROL Distribution of values]** 功能可用來檢視所選欄位值的分佈（例如，連結至收件者城鎮、收件者語言等的分佈）。
 
 
 ## 建立計算欄位 {#creating-calculated-fields}
