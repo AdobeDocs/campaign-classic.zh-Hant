@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 703fa6e5d5e6f1c8c512bd65ebadad724f02ded3
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -59,7 +59,7 @@ Adobe Campaign v5.11首頁已不再提供。
 
 ## MySQL {#mysql}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >使用此引擎從6.02或5.11版遷移時，v7中僅支援MySQL作為主資料庫引擎。
 
@@ -80,7 +80,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 1. 依照移轉至Adobe Campaign 7的先決條件一節中 [詳述的程式執行配置](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) 。
    >[!NOTE]
    >
-   >您必須依照移轉至Adobe Campaign 7的必要條 [件一節中顯示的移轉步驟](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) 。
+   >您必須依照移轉至Adobe Campaign 7的必要條 [件一節中所示的移轉步驟](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) 。
 1. 重新整合SQL更改。
 
 在此範例中，已建 **立NmcTrackingLogMessages** 檢視，且此檢視具有名為tslog的 **Timestamp** 欄 **位**。 在這種情況下，遷移過程將失敗，並出現以下錯誤消息：
