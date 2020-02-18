@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -28,11 +28,10 @@ source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
 
 必須事先在開發環境上測試移轉，以確保其順暢執行且無任何錯誤。 只有在完全批准遷移的開發環境後，才必須遷移生產環境。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >開始移轉之前，您必須閱讀本指 **南全文**。
 
 >[!NOTE]
 >
 >本頁詳細說明Adobe Campaign v7的新功能和 [演變](https://docs.campaign.adobe.com/doc/AC/en/RN.html)。
-
