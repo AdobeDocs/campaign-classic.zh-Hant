@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 93a19c765e8d3de0fcbc29e27202fcbd2da6d32f
+source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 
 ---
 
@@ -221,8 +221,8 @@ source-git-commit: 93a19c765e8d3de0fcbc29e27202fcbd2da6d32f
    <td> 電子郵件地址的有效字元。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td> 
-   <td> 允許指定最大時間段（以小時為單位），以限制每次執行同步工作流時恢復的廣播數。 請參 <a href="../../platform/using/accessing-an-external-database.md#cloud-messaging---fda-synchronization">閱本節</a>。<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td>
+   <td> 允許指定最大時間段（以小時為單位），以限制每次執行同步工作流時恢復的廣播數。</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span><br /> </td> 
