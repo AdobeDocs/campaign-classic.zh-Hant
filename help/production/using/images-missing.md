@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -34,6 +34,6 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 對於IIS使用者（在Windows上），在建立更新後，主控台中將會遺失數個圖示。 需要其他IIS更新步驟：
 
-1. 在建立更新後，按兩下位於 **Campaign安裝目錄中的iis_neolane_setup.vbs** 。 預設路徑為C:Program Files(x86)AdobeAdobe Campaign v7tomcat-7conf
+1. 在建立更新後，按兩下位於 **Campaign安裝目錄中的iis_neolane_setup.vbs** 。 預設路徑為C:\Program Files (x86)\Adobe\Adobe Campaign v7\tomcat-7\conf
 1. 重新啟動已通過上一步更新的IIS站點。
 
