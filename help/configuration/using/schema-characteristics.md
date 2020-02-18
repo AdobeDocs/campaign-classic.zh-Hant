@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 * 必須明確指定表和列的名稱，
 * 必須聲明索引。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >請勿刪除標準收件者表格中的欄位，即使欄位無用亦然。 這可能會在Adobe Campaign資料庫中造成行為錯誤。
 
