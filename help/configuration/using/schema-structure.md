@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -123,7 +123,7 @@ source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
 
 * 每個 **`<element>`** 和 **`<attribute>`** 都必須透過name屬性以名 **稱識別** 。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >元素的名稱應簡明扼要，最好是英文，並且只包含符合XML命名規則的授權字元。
 
@@ -152,7 +152,7 @@ source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
 * **datetimenotz**:日期+時間，不含時區資料。
 * **時間平移**:持續時間。 範例：資歷。
 * **備忘**:長文字欄位（多行）。 範例：說明、注釋等。
-* **uuid**:「uniqueidentifier」欄位，以支援GUID（僅適用於Microsoft SQL Server）。
+* **uuid**:「uniqueidentifier」欄位，以支援GUID（僅限Microsoft SQL Server支援）。
 
    >[!NOTE]
    >
