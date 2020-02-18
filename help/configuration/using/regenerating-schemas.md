@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -33,8 +33,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 >[!NOTE]
 >
 >如果您需要強制重新產生所有結構，例如為瞭解決反向連結中的某些相依性問題，您可以從Adobe Campaign應用程式伺服器啟動下列命令：
-
+>
 >**nlserver config -postupgrade -instance:`&lt;instance_name>&#39; -force**
-
+>
 >然後，您必須重新啟動Adobe Campaign應用程式伺服器，並中斷連線／重新連線至用戶端主控台。
-
