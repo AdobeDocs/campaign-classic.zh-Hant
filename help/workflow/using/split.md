@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
    此流程與 **Query**-type活動的流程相同。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >您最多可以篩選兩個外部資料庫(FDA)中的資料。
 
@@ -59,7 +59,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
    ![](assets/s_user_segmentation_partage_add.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >如果未選 **[!UICONTROL Enable overlapping of output populations]** 中該選項，則按頁籤的順序建立子集。 使用此窗口右上方部分的箭頭來移動它們。 例如，如果第一個子集恢復了初始種群的70%，則下一個子集將僅將其選擇標準應用於其餘的30%等。
 
@@ -135,7 +135,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >若要使用此函式，您必須購買Distributed Marketing模組，此為促銷活動選項。 請檢查您的授權合約。
 
@@ -200,7 +200,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
       如果資料群組不經本機核准而造成簡單限制，則不需要輸入欄 **[!UICONTROL Group or operator]** 位。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >請確定已為運算子指派適當的權限。
 
