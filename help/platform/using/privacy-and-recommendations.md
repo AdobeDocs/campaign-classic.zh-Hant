@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ---
 
@@ -24,13 +24,21 @@ source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
 
 ## 有關隱私權及許可 {#about-privacy-and-consent}
 
-Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資訊在內的超大資料。我們鼓勵Adobe Campaign的所有使用者在法規（DPA、CAN-SPAM、歐洲隱私與電子通訊指令、歐洲GDPR等）範圍內工作，以負責任和道德的方式使用個人資訊，避免傳送未經請求的電子郵件、推播通知和SMS訊息（「垃圾訊息」）。 在打造顧客終生價值及忠誠度的過程中，我們篤信許可式行銷原則，因此我們嚴格禁止使用 Adobe Campaign 傳送未經請求的訊息。
+Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資訊在內的超大資料。我們鼓勵Adobe Campaign的所有使用者在法規（DPA、CAN-SPAM、歐洲隱私與電子通訊指令、歐洲GDPR、CCPA等）範圍內工作，以負責任和道德的方式使用個人資訊，避免傳送未經請求的電子郵件、推播通知和SMS訊息（「垃圾訊息」）。 在打造顧客終生價值及忠誠度的過程中，我們篤信許可式行銷原則，因此我們嚴格禁止使用 Adobe Campaign 傳送未經請求的訊息。
 
 如需詳細資訊，請參閱 [Adobe Experience Cloud 隱私權](https://www.adobe.com/privacy/marketing-cloud.html)。
 
-Adobe Campaign 提供了工具、功能以及最佳做法，協助您在使用我們的服務時遵循 GDPR (「一般資料保護規範」)。請參閱[此文件](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html)。
-
 請前往[安全性和隱私權檢查清單](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)，以了解有關安全性和隱私權需要檢查的核心元素。
+
+## 隱私權管理 {#privacy-management}
+
+GDPR（通用資料保護規則）是歐盟(EU)的隱私法，協調資料保護要求並以現代化方式規範資料保護要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。
+
+CCPA（加州消費者隱私法）為加州居民提供個人資訊的新權利，並對在加州經營業務的特定實體負有資料保護責任。
+
+除了同意管理、資料保留設定和權限管理外，我們還以資料處理者的角色提供額外的功能，以協助您做好準備，做為資料掌控者，處理特定隱私權要求。
+
+在本文 [章中](https://helpx.adobe.com/campaign/kb/acc-privacy.html)，您將瞭解Adobe Campaign如何協助您管理不同的隱私權關鍵功能：存取權、被遺忘權、同意權、資料保留權和使用者角色。 您也會找到最佳實務，以協助您在使用我們的服務時符合隱私權規範。
 
 ## Cookie 和追蹤功能 {#cookies-and-tracking-capabilities}
 
