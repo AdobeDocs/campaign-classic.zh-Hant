@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign可讓使用者定義 **自己可存取SQL函式的函式** ，包
 
 在新增這些函式後，它們就會像其他預先定義的函式一樣出現在運算式編輯器中。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >控制台中的SQL函式調用不再自然地發送到伺服器。 因此，此處介紹的機 **製成為在計畫外** SQL函式伺服器上調用的唯一方法。
 
@@ -40,7 +40,7 @@ Adobe Campaign可讓使用者定義 **自己可存取SQL函式的函式** ，包
 
 要從控制台進行安裝，請從菜單中選擇「 **Tools/Advanced/Import** （工具／高級／導入）」包選項，然後 **[!UICONTROL Install from file]** 選擇和，並按照導入嚮導中的說明操作。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >警告：即使匯入的函式清單立即顯示在函式編輯器中，在Adobe Campaign重新啟動之前，這些函式將無法使用。
 
@@ -92,7 +92,7 @@ Adobe Campaign可讓使用者定義 **自己可存取SQL函式的函式** ，包
      name="window"          ( label="Windowing functions" )
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >請確定填寫@label屬性：這是將顯示在可用函式清單中的名稱。 如果您未輸入任何內容，則群組將沒有名稱。 不過，如果您輸入的名稱不是現有名稱，則整個群組的名稱將會變更。
 
