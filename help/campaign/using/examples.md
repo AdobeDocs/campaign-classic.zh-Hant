@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -29,8 +29,6 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 >[!NOTE]
 >
 >API會在專屬檔案中詳細列出，其存取權取決於您的合約。 請參閱 [API](../../configuration/using/about-web-services.md)。
-
->[!NOTE]
 >
 >此範例中使用的網頁應用程式並非隨附Adobe Campaign而現成的網頁應用程式。 若要在促銷活動中使用表單，您必須建立專用的Web應用程式。
 
@@ -159,7 +157,7 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
    * 即會傳送給通知中本機實體的訊息內容，
    * 核准提醒，
-   * 促銷活動的預期處理
+   * 促銷活動的預期處理。
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. 儲存您的記錄。
