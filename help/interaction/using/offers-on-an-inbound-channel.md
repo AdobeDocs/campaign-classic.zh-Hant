@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
 
 ---
 
@@ -28,11 +28,11 @@ Neobank網站想在其網站上顯示選件，以針對瀏覽該頁面的未識�
 
 若要設定此互動，我們將：
 
-1. [建立匿名環境](#creating-an-anonymous-environment)。
-1. [建立匿名選件空間](#creating-anonymous-offer-spaces)。
-1. [建立選件類別和主題](#creating-an-offer-category-and-a-theme)。
-1. [建立匿名選件](#creating-anonymous-offers)..
-1. [在網站上設定Web選件空間](#configure-the-web-offer-space-on-the-website)。
+1. [建立匿名環境](#creating-an-anonymous-environment)
+1. [建立匿名選件空間](#creating-anonymous-offer-spaces)
+1. [建立選件類別和主題](#creating-an-offer-category-and-a-theme)
+1. [建立匿名選件。](#creating-anonymous-offers)
+1. [在網站上設定Web選件空間](#configure-the-web-offer-space-on-the-website)
 
 ### 建立匿名環境 {#creating-an-anonymous-environment}
 
@@ -64,7 +64,7 @@ Neobank網站想在其網站上顯示選件，以針對瀏覽該頁面的未識�
    * 標題
    * HTML內容
    * 影像URL
-   * 目標URL。
+   * 目標URL
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. 編輯HTML轉換函式，例如：
@@ -159,7 +159,7 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 
 此案例研究基於以下情形：
 
-1. 訪客瀏覽Neobank網站而未登入。
+1. 訪客瀏覽Neobank網站時未登入。
 
    ![](assets/offer_inbound_fallback_example_050.png)
 
