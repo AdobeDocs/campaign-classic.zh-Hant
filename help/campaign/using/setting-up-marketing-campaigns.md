@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -148,14 +148,14 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 執行調度的配置模式與工作流的 **[!UICONTROL Scheduler]** 對象一致。 如需詳細資訊，請參閱[本小節](../../workflow/using/executing-a-workflow.md#architecture)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >必須小心執行執行計畫配置，以避免資料庫過載。 循環促銷活動會根據指定的排程，複製其範本的工作流程。 過度頻繁的工作流建立的實現會阻礙資料庫的操作。
 
 1. 在欄位中指定 **[!UICONTROL Create in advance for]** 值，以建立所指定期間的對應工作流程。
 1. 根據此範本建立要用於促銷活動的工作流程範本，並包含定位參數和一或多個一般傳送。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >此工作流程必須儲存為循環工作流程範本。 若要這麼做，請編輯工作流程屬性，並選取 **[!UICONTROL Recurring workflow template]** 標籤中的 **[!UICONTROL Execution]** 選項。
 
@@ -174,7 +174,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
    對於每一行，您可以添加以下附加選項：
 
-   * **[!UICONTROL To be approved]** :可讓您在工作流程中強制傳送核准請求
+   * **[!UICONTROL To be approved]** :可讓您在工作流程中強制傳送核准請求。
    * **[!UICONTROL To be started]** :可讓您在到達開始日期時啟動工作流程。
    欄位 **[!UICONTROL Create in advance for]** 可讓您建立涵蓋所輸入期間的所有工作流程。
 
@@ -211,7 +211,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 1. 輸入模板的屬性。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >指派範本給的運算元，必須擁有在所選方案中建立促銷活動的適當權限。
 
@@ -227,7 +227,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >定期促銷活動範本會根據上述定義的排程建立新促銷活動。 因此，必須小心完成，以避免超出Adobe Campaign資料庫的負載。
 
