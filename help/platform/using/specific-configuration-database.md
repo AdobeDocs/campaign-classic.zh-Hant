@@ -169,6 +169,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    /etc/init.d/nlserver6 stop
    /etc/init.d/nlserver6 start
    ```
+
 1. 在Campaign Classic中，在Campaign Classic中設定您的Snowflake外部帳戶。 從中 **[!UICONTROL Explorer]**&#x200B;展開菜 **[!UICONTROL Administration]** 單。
 
 1. 展開功 **[!UICONTROL Platform]** 能表並按一下 **[!UICONTROL External accounts]**。
