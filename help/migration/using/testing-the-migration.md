@@ -79,7 +79,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ### -showCustomEntities和-showDeletedEntities選項 {#showcustomentities-and--showdeletedentities-options}
 
-* - **showCustomEntities** 選項顯示所有非標準對象的清單：
+* \- **showCustomEntities** 選項顯示所有非標準對象的清單：
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -91,7 +91,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* - **showDeletedEntities** 選項顯示資料庫或檔案系統中缺少的所有標準對象的清單。 對於每個缺少的對象，都指定路徑。
+* \- **showDeletedEntities** 選項顯示資料庫或檔案系統中缺少的所有標準對象的清單。 對於每個缺少的對象，都指定路徑。
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
