@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
+source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 
 ---
 
@@ -25,6 +25,20 @@ source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
 本頁列出每個Adobe Campaign Classic版本的所有新功能和檔案更新。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
+
+## 2020年2月 {#february-2020}
+
+現在提供一個新章節，說明設計Adobe Campaign資料模型時的最佳實務和主要建議。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md)
+
+「電子郵件傳送能力」區段已重新命名為「技術電子郵件設定」。 [閱讀更多資訊](../../installation/using/email-deliverability.md)
+
+「交付能力」常見問答集檔案已更新，其中包含有關「符合配額」錯誤訊息的詳細資訊。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+
+AMP for Email現在由3家電子郵件提供者（Gmail、Outlook和Mail.ru）支援，說明如何使用AMP定義互動式內容的章節已經更新。 [閱讀更多資訊](../../delivery/using/defining-interactive-content.md)
+
+「電子郵件封存」區段已釐清。 [閱讀更多資訊](../../installation/using/email-archiving.md#recommendations-and-limitations)
+
+
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -67,12 +81,6 @@ Campaign **Classic內部部署與代管功能表頁面** ，已使用新的FDA�
 已新增新區段，詳細說明增強的電子郵件地址驗證規則，以在發生軟性錯誤時傳送地址給隔離。 [閱讀更多資訊](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 現在已記錄來自設定檔案的參數，指出執行個體是否使用增強的MTA。 [閱讀更多資訊](../../installation/using/the-server-configuration-file.md#mta)
-
-## 2020年2月 {#february-2020}
-
-AMP for Email現在由3家電子郵件提供者（Gmail、Outlook和Mail.ru）支援，說明如何使用AMP定義互動式內容的章節已經更新。 [閱讀更多資訊](../../delivery/using/defining-interactive-content.md)
-
-「電子郵件封存」區段已釐清。 [閱讀更多資訊](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## 2020年1月 {#january-2020}
 
@@ -319,7 +327,7 @@ Campaign Classic API現在可在專用頁 [面中使用](https://docs.campaign.a
 
 已更新連線臨界值疑難排解區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Troubleshooting_Connection_thresholds.html)
 
-已新增有關如何設定代理連線的章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
+已新增一節，說明如何設定代理連線。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
 
 更新授權外部命令限制一節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Restricting_authorized_external_commands)
 
