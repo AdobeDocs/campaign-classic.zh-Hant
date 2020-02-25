@@ -16,7 +16,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -29,7 +29,7 @@ DCE編輯窗口分為三個不同部分。 它們可讓您檢視、修改和檢�
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. 頂 **部** (top)區域是向用戶發送消息的顯示區域。 這些訊息會指出Web應用程式狀態或所建立的傳送狀態，以及與內容相關的警告和錯誤訊息。 如需詳細資訊，請參閱 [HTML內容狀態](#html-content-statuses)。
+1. 頂 **部** (top)區域是向用戶發送消息的顯示區域。 這些訊息會指出Web應用程式狀態或所建立的傳送狀態，以及與內容相關的警告和錯誤訊息。 如需詳細資訊，請參閱 [HTML內容狀態](../../web/using/content-editing-best-practices.md#html-content-statuses)。
 1. 視窗左側 **的區** 域是編輯內容的區域。 在此區域，使用者可使用快顯工具列直接與內容互動：將連結插入影像、變更字型、刪除欄位等。 For more on this refer to [Editing forms](../../web/using/editing-content.md#editing-forms).
 1. 窗口右側 **的部** 分是控制面板區域。 此區域將編輯器的不同選項分組，特別是與為塊配置頁面標題和常規選項相關的選項：新增邊框、連結資料庫欄位與輸入區域、存取網頁屬性等。 有關詳細資訊，請參閱「全 [域選項](#global-options) 」 [和「編輯內容](../../web/using/editing-content.md) 」部分。
 
