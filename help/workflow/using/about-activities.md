@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71662675e347e5f5b289afa03e2898e6ce0ecaa9
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 71662675e347e5f5b289afa03e2898e6ce0ecaa9
 
 工作流活動按類別分組。 同時有四個標籤。
 
-在促銷活動工作流程中， **[!UICONTROL Events]** 標籤會由標籤取 **[!UICONTROL Deliveries]** 代。 「操作」(Action)活動部分詳細介紹了此標籤中 [的活動](#action-activities) 。
+在促銷活動工作流程中， **[!UICONTROL Events]** 標籤會由標籤取 **[!UICONTROL Deliveries]** 代。 「操作」(Action)活動部分詳細介紹了此標籤中 [的活動](../../workflow/using/about-action-activities.md) 。
 
 ![](assets/wf-activity-tabs.png)
 
