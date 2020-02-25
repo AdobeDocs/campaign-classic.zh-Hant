@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 ---
 
@@ -35,11 +35,11 @@ FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它將自動�
 
 若要使用此功能，您必須：
 
-1. 擁有與Adobe Campaign FDA模組相容的外部資料庫。 資料庫系統和相容版本清單在相容性清單中 [有詳細說明](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 使用者也必須擁有 [Adobe Campaign](#remote-database-access-rights) 和外部資料庫的必要權限。
-1. [在Adobe Campaign伺服器上](#specific-configurations-by-database-type) ，安裝與您的資料庫對應的驅動程式。
-1. [建立並設定外部帳戶](#connecting-to-the-database) ，讓您建立Adobe Campaign與外部資料庫之間的連線。 有關可用外部帳戶的詳細資訊，請參閱本 [頁](../../platform/using/external-accounts.md)。
-1. [在Adobe Campaign中建立外部資料庫的架構](#creating-the-data-schema) 。 這允許您識別外部資料庫的資料結構。
-1. 最終， [從先前建立的架構建立新的目標對應](#defining-data-mapping) ，如果傳送的收件者來自外部資料庫的話。 這具有某些限制，特別是在個人化交貨方面。
+1. 擁有與Adobe Campaign FDA模組相容的外部資料庫。 資料庫系統和相容版本清單在相容性清單中 [有詳細說明](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 使用者也必須擁有 [Adobe Campaign](../../platform/using/remote-database-access-rights.md) 和外部資料庫的必要權限。
+1. [在Adobe Campaign伺服器上](../../platform/using/specific-configuration-database.md) ，安裝與您的資料庫對應的驅動程式。
+1. [建立並設定外部帳戶](../../platform/using/connecting-to-database.md) ，讓您建立Adobe Campaign與外部資料庫之間的連線。 有關可用外部帳戶的詳細資訊，請參閱本 [頁](../../platform/using/external-accounts.md)。
+1. [在Adobe Campaign中建立外部資料庫的架構](../../platform/using/creating-data-schema.md) 。 這允許您識別外部資料庫的資料結構。
+1. 最終， [從先前建立的架構建立新的目標對應](../../platform/using/defining-data-mapping.md) ，如果傳送的收件者來自外部資料庫的話。 這具有某些限制，特別是在個人化交貨方面。
 
 建立資料結構後，您就可以在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本小節](../../workflow/using/executing-a-workflow.md#architecture)。
 
