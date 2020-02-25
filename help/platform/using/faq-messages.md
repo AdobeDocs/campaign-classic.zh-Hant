@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Adobe強烈建議建立證明訊息，以在將您的傳送傳送至主要目標
 
 Adobe Campaign 隨附一組報表，用於監視傳遞信件並追蹤您的訊息。
 
-[按一下這裡以深入了解內建報表](../../reporting/using/reports-on-deliveries.md#delivery-reports)。
+[按一下這裡以深入了解內建報表](../../reporting/using/delivery-reports.md)。
 
 ### How does Adobe Campaign qualify and manage quarantine addresses? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
