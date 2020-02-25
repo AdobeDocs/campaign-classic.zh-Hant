@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
    >
    >**[!UICONTROL Badge]** 並輸 **[!UICONTROL Alert and badge]** 入通知可讓您修改徽章的值（行動應用程式標誌上方的數字）。 若要重新整理徽章，您只需輸入0作為值。 如果欄位空白，徽章值不會變更。
 
-1. 可 **[!UICONTROL Action button]** 讓您為出現在警報通知(裝載的&#x200B;**** action_loc_key欄位)上的動作按鈕定義標籤。 如果您的iOS應用程式管理可本地化字串(**Localablized.strings**)，請在此欄位中輸入對應的金鑰。 如果您的應用程式不管理可本地化的文字，請輸入您要在動作按鈕上看到的標籤。 如需可本地化字串的詳細資訊，請參閱 [Apple檔案](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.md#//apple_ref/doc/uid/TP40008194-CH10-SW1) 。
+1. 可 **[!UICONTROL Action button]** 讓您為出現在警報通知(裝載的&#x200B;**** action_loc_key欄位)上的動作按鈕定義標籤。 如果您的iOS應用程式管理可本地化字串(**Localablized.strings**)，請在此欄位中輸入對應的金鑰。 如果您的應用程式不管理可本地化的文字，請輸入您要在動作按鈕上看到的標籤。 如需可本地化字串的詳細資訊，請參閱 [Apple檔案](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) 。
 1. 在欄位 **[!UICONTROL Play a sound]** 中，選取收到通知時由行動終端播放的音效。
 
    >[!NOTE]
