@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -376,7 +376,7 @@ Captcha會插入頁面，並在視覺下方放置輸入欄位。 這兩個元素
 
 若要將上傳欄位插入表單頁面，請在頁面編輯器 **[!UICONTROL Advanced controls > File...]** 的工具列中選取功能表。
 
-預設情況下，上載的檔案儲存在可通過菜單訪問的資源文 **[!UICONTROL Resources > Online > Public resources]** 件中。 您可以使用指令碼來變更此行為。 此指令碼可使用 [Campaign JSAPI檔案中定義的函式](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)，包括與檔案操作相關的函式。
+預設情況下，上載的檔案儲存在可通過菜單訪問的資源文 **[!UICONTROL Resources > Online > Public resources]** 件中。 您可以使用指令碼來變更此行為。 此指令碼可使用 [Campaign JSAPI檔案中定義的函式](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)，包括與檔案操作相關的函式。
 
 您可以將這些檔案的連結儲存在本機變數或資料庫欄位中。 例如，您可以擴充收件者結構，以新增檔案資源的連結。
 
