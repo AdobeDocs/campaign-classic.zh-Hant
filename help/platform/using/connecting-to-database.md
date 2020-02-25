@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
+source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
 
 >[!CAUTION]
 >
->Adobe Campaign使用者需要外部資料庫和Adobe Campaign應用程式伺服器的特定權限，才能處理來自外部資料庫的資料。 有關詳細資訊，請參閱「遠程數 [據庫訪問權限](#remote-database-access-rights) 」部分。
+>Adobe Campaign使用者需要外部資料庫和Adobe Campaign應用程式伺服器的特定權限，才能處理來自外部資料庫的資料。 有關詳細資訊，請參閱「遠程數 [據庫訪問權限](../../platform/using/remote-database-access-rights.md) 」部分。
 >
 >為避免任何故障，存取遠端共用資料的營運商必須從個別空間工作。
 
@@ -38,7 +38,7 @@ source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
 1. 按一下按 **[!UICONTROL New]** 鈕並選取 **[!UICONTROL External database]** 類型。
 1. 定義外 **[!UICONTROL Connection]** 部資料庫的參數。
 
-   對於到 **ODBC** **[!UICONTROL Server]** type資料庫的連接，欄位必須包含ODBC資料源的名稱，而不包含伺服器名。 此外，可能需要某些附加配置，具體取決於使用的資料庫。 請參閱「按數 [據庫類型列出的特定配置](#specific-configurations-by-database-type) 」部分。
+   對於到 **ODBC** **[!UICONTROL Server]** type資料庫的連接，欄位必須包含ODBC資料源的名稱，而不包含伺服器名。 此外，可能需要某些附加配置，具體取決於使用的資料庫。 請參閱「按數 [據庫類型列出的特定配置](../../platform/using/specific-configuration-database.md) 」部分。
 
 1. 在輸入參數後，按一下按 **[!UICONTROL Test the connection]** 鈕以核准參數。
 
