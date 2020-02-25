@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -56,4 +56,4 @@ source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 * [管理電子郵件中的種子和證明](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html)：了解如何在 Adobe Campaign 中向現有電子郵件加入種子和證明。
 * [Adobe Campaign 和 Microsoft Dynamics 365 整合](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html)：了解如何透過 CRM 連接器功能，連結和同步 Adobe Campaign 和 Microsoft Dynamics。
 
-除了詳盡的短片之外，您還可以在網站上找到[訓練課程](https://training.adobe.com/training/courses.html)以及[簡報影片](https://www.adobe.com/training/video.html)。
+除了詳盡的短片之外，您還可以在網站上找到[訓練課程](https://learning.adobe.com/catalog.html)以及[簡報影片](https://www.adobe.com/training/video.html)。
