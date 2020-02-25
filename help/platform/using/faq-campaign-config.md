@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 ## 如何設定電子郵件傳遞機制? {#how-to-configure-email-deliverability-}
 
-除了閱讀[傳遞入門指南](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)外，請參閱「電子郵件傳遞設定」一節，了解如何設定您的實例以充分發揮 Campaign 的傳遞功能。
+除了閱讀[傳遞入門指南](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)外，請參閱「電子郵件傳遞設定」一節，了解如何設定您的實例以充分發揮 Campaign 的傳遞功能。
 
 [按一下這裡以了解更多資訊](../../installation/using/email-deliverability.md)。
 
