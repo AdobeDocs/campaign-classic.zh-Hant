@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 ---
 
@@ -169,7 +169,6 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    /etc/init.d/nlserver6 stop
    /etc/init.d/nlserver6 start
    ```
-
 1. 在Campaign Classic中，在Campaign Classic中設定您的Snowflake外部帳戶。 從中 **[!UICONTROL Explorer]**&#x200B;展開菜 **[!UICONTROL Administration]** 單。
 
 1. 展開功 **[!UICONTROL Platform]** 能表並按一下 **[!UICONTROL External accounts]**。
@@ -393,7 +392,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    User/Password: admin/<your password here>
    ```
 
-1. 建立Hadoop外部帳戶，如建立共用連 [接部分中詳細](#creating-a-shared-connection) 。
+1. 建立Hadoop外部帳戶，如建立共用連 [接部分中詳細](../../message-center/using/creating-a-shared-connection.md) 。
 
 ### Linux版 {#for-linux}
 
@@ -448,7 +447,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    >
    >此處 **的UseNativeQuery** 參數非常重要。 促銷活動會感知蜂窩，除非設定UseNativeQuery，否則無法正常運作。 通常，驅動程式或Hive SQL連接器將重寫查詢並篡改列順序。
 
-   驗證設定取決於Hive/Hadoop配置。 例如，對於HD Insight，請使用AuthMech=6進行使用者／密碼驗證，如 [此說](http://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)。
+   驗證設定取決於Hive/Hadoop配置。 例如，對於HD Insight，請使用AuthMech=6進行使用者／密碼驗證，如 [此說](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)。
 
 1. 匯出變數。
 
@@ -480,7 +479,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    isql vorac -v
    ```
 
-1. 建立Hadoop外部帳戶，如建立共用連 [接部分中詳細](#creating-a-shared-connection) 。
+1. 建立Hadoop外部帳戶，如建立共用連 [接部分中詳細](../../message-center/using/creating-a-shared-connection.md) 。
 
 ## 配置對Netezza的訪問 {#configure-access-to-netezza}
 
@@ -529,7 +528,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
    * **NZ_ODBC_INI_PATH**:odbc.ini檔案的位置。 Netezza還需要此第二個變數來使用odbc.ini檔案。
 
-1. 建立Netezza外部帳戶，如建立共用連 [接一節中所述](#creating-a-shared-connection) 。
+1. 建立Netezza外部帳戶，如建立共用連 [接一節中所述](../../message-center/using/creating-a-shared-connection.md) 。
 
 >[!NOTE]
 >
@@ -625,7 +624,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    * 如果您使用customer.sh檔案來宣告您的路徑：為LD_LIBRARY_PATH變數添加路徑/opt/sybase/IQ-16_0/lib64。
    * 否則，請使用Unix命令。
 
-1. 建立新的FDA外部帳戶，如「建立共用連 [線」一節所述](#creating-a-shared-connection) 。 對於Sybase IQ，伺服器名與步驟5中定義的ODBC連`<server_alias>`接()相對應。 它不一定是伺服器本身的名稱。
+1. 建立新的FDA外部帳戶，如「建立共用連 [線」一節所述](../../message-center/using/creating-a-shared-connection.md) 。 對於Sybase IQ，伺服器名與步驟5中定義的ODBC連`<server_alias>`接()相對應。 它不一定是伺服器本身的名稱。
 
 >[!NOTE]
 >
@@ -635,7 +634,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 在FDA中連線至Teradata外部資料庫需要Adobe Campaign伺服器上的某些額外設定。 有關如何配置Teradata資料庫的詳細資訊，請參閱本 [文](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html)。
 
-1. 安裝Teradata [的ODBC驅動程式](http://downloads.teradata.com/download/connectivity/odbc-driver/linux)。
+1. 安裝Teradata [的ODBC驅動程式](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)。
 
    它由三個軟體包組成，可以按以下順序安裝在Red Hat（或CentOS）/Suse上：
 
@@ -712,4 +711,4 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    * **LD_LIBRARY_PATH**:依預設，應包含SAP Hana用戶端(/usr/sap/hdbclient/libodbcHDB.so)的連結。
    * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
 
-1. 建立SAP Hana外部帳戶，如「建立共用連接」 [部分中所述](#creating-a-shared-connection) 。
+1. 建立SAP Hana外部帳戶，如「建立共用連接」 [部分中所述](../../message-center/using/creating-a-shared-connection.md) 。
