@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 >[!NOTE]
 >
->這些指標用於報 **[!UICONTROL Tracking indicators]** 告。 For more on this, refer to [Tracking indicators](#tracking-indicators).
+>這些指標用於報 **[!UICONTROL Tracking indicators]** 告。 For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 傳送會新增三個連結。 它會傳送給4位收件者：
 
