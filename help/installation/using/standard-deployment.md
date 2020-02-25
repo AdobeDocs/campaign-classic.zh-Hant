@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -63,7 +63,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
 ### 安裝應用程式伺服器 {#installing-the-application-server}
 
-請依照步驟，從Adobe Campaign應用程式伺服器安裝獨立執行個體，以建立資料庫（步驟12）。 請參閱 [安裝和配置（單機）](#installing-and-configuring--single-machine-)。
+請依照步驟，從Adobe Campaign應用程式伺服器安裝獨立執行個體，以建立資料庫（步驟12）。 請參閱 [安裝和配置（單機）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
 
 由於電腦不是追蹤伺服器，因此請勿考慮與Web伺服器的整合。
 
