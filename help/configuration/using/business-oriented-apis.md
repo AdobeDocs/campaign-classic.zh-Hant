@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI檔案包含](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) Adobe Campaign中有關SOAP呼叫和使用Javascript的其他資訊，以及應用程式中所有使用方法與函式的完整參考。
+>[Campaign JSAPI檔案包含](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) Adobe Campaign中有關SOAP呼叫和使用Javascript的其他資訊，以及應用程式中所有使用方法與函式的完整參考。
 
 ## 訂閱(nms:subscription) {#subscribe--nms-subscription-}
 
