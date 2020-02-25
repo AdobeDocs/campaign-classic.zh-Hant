@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb1f5acabbd976a92219424c14813b7783b56f38
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ ISP通常會以明顯的方式將收到的訊息報告為垃圾訊息。 這使�
 
 ## 傳送至蜜罐地址 {#honeypot-addresses}
 
-ISP和其他組織(請參閱http://www.projecthoneypot.org/)會利用不對應於實際人員，但僅是為了欺騙垃圾郵件發送者而建立的郵箱。 這些所謂的「蜜罐」地址會發佈在網路上，以便由垃圾郵件機器人收集，從而捕獲非法發送者。 使用雙重選擇加入機制，將此類地址排除在清單中。 使用協力廠商清單時，您必須確定其維護人員採用的方法。
+ISP和其他組織(請參閱https://www.projecthoneypot.org/)會利用不對應於實際人員，但僅是為了欺騙垃圾郵件發送者而建立的郵箱。 這些所謂的「蜜罐」地址會發佈在網路上，以便由垃圾郵件機器人收集，從而捕獲非法發送者。 使用雙重選擇加入機制，將此類地址排除在清單中。 使用協力廠商清單時，您必須確定其維護人員採用的方法。
 
 ## 調整訊息內容 {#message-content}
 
