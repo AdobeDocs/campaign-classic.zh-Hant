@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
 
 # 通訊通道{#communication-channels}
 
-有了Adobe Campaign，您可以傳送跨通道的宣傳活動，包括電子郵件、SMS、LINE訊息、推播通知和直接郵件，並使用各種專用的報告來評估宣傳的 [成效](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports)。 這些訊息是透過傳送進行設計和傳送，而且可針對每位收件者個人化。
+有了Adobe Campaign，您可以傳送跨通道的宣傳活動，包括電子郵件、SMS、LINE訊息、推播通知和直接郵件，並使用各種專用的報告來評估宣傳的 [成效](../../reporting/using/delivery-reports.md)。 這些訊息是透過傳送進行設計和傳送，而且可針對每位收件者個人化。
 
 核心功能包括定位、定義和個人化訊息、通訊執行及相關的營運報告。 主要功能存取點是傳送精靈。 此存取點可提供Adobe Campaign涵蓋的數種功能。
 
@@ -45,7 +45,7 @@ Adobe Campaign提供下列傳送渠道：
    >
    >使用多個渠道取決於您的套件。 請檢查您的授權合約。
 
-您可線上(透 **過電子郵件** 、其中一個行動通道和推播通知)和離線( **直接郵件通道** )進行傳送。
+您可線上(透 **過電子郵件** 、其中一個行動通道和推播通知)和離線 **(直接郵件通道** )進行傳送。
 
 視頻道而定，傳送模式可以是：
 
