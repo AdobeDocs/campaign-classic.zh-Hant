@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 
 使用郵件的主要原因之一，就是您 **的郵件清單保護**。 將種子地址插入郵件清單中，可讓第三方在使用該種子地址時引起注意，因為其中包含的種子地址將接收發送到郵件清單的遞送。
 
-此外，種子位址可讓您在傳送 **傳送個人化內容和轉譯之前** ，先預覽並測試傳送的個人化內容，方法是傳送校樣(請 [參閱使用種子位址做為證明](../../delivery/using/steps-validating-the-delivery.md#using-seed-addresses-as-proof))。
+此外，種子位址可讓您在傳送 **傳送個人化內容和轉譯之前** ，先預覽並測試傳送的個人化內容，方法是傳送校樣(請 [參閱使用種子位址做為證明](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof))。
 
 種子地址功能具有以下優點：
 
@@ -49,7 +49,7 @@ source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 >對於直接郵件傳送，解壓縮檔案格式必須符合下列限制：
 >
 >* 它不能使用選項 **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
->* 如果提取了元素集合，則這些欄位的種子地址將具有空值，除非選 **[!UICONTROL Single row (expert user)]** 擇了該選項。 如需詳細資訊，請參閱[本小節](../../platform/using/exporting-data.md#step-7---data-formatting)。
+>* 如果提取元素集合，則這些欄位的種子地址將具有空值，除非選 **[!UICONTROL Single row (expert user)]** 擇了該選項。 如需詳細資訊，請參閱[本小節](../../platform/using/exporting-data.md#step-7---data-formatting)。
 >
 
 
