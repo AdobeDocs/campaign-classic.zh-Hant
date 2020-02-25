@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 ---
 
@@ -92,11 +92,11 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 某些指標或狀態可能不正確或不是最新，這可透過下列解決方案解決：
 
 * 如果您的傳送狀態不正確，請檢查是否已完成此傳送的所有必要核准，或是執行 **[!UICONTROL operationMgt]** 和工 **[!UICONTROL deliveryMgt]** 作流程時未出現錯誤。 這也可能是因為傳送時使用了傳送執行個體上未設定的相似性。
-* 如果您的交貨指標仍為零，並且您處於中間採購配置中，請檢查技術工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果狀態不是，請啟動它 **[!UICONTROL Started]**。 然後，您可以嘗試在Adobe Campaign瀏覽器中按一下滑鼠右鍵並選取 **[!UICONTROL Actions]** >，重新計算指標 **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
-* 如果您的傳送計數器與您的傳送不符，請嘗試在Adobe Campaign檔案總管中以滑鼠右鍵按一下相關傳送，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
+* 如果您的交貨指標仍為零，並且您處於中間採購配置中，請檢查技術工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果狀態不是，請啟動它 **[!UICONTROL Started]**。 然後，您可以嘗試在Adobe Campaign瀏覽器中按一下滑鼠右鍵並選取 **[!UICONTROL Actions]** >，重新計算指標 **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
+* 如果您的傳送計數器與您的傳送不符，請嘗試在Adobe Campaign檔案總管中以滑鼠右鍵按一下相關傳送，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * 如果您的傳送計數器不是中部採購部署的最新版本，請檢查技術工作 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 流程是否正在執行。 For more on this, refer to this [page](../../installation/using/mid-sourcing-deployment.md).
 
-您也可以透過傳送控制面板，使用不同的報表來追蹤傳送。 For more on this, refer to this [section](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports).
+您也可以透過傳送控制面板，使用不同的報表來追蹤傳送。 For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
 
 ## 效能問題 {#performance-issues}
 
@@ -118,7 +118,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 * 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign傳遞 [最佳實務](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，以瞭解內容准則。
 * Adobe Campaign MTA中可能已發生調節。 這是由以下原因造成：
 
-   * 附加的消息(**[!UICONTROL quotas met]** 消息):已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](../../delivery/using/technical-recommendations.md#quota-met). 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
+   * 附加的消息(**[!UICONTROL quotas met]** 消息):已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
    * 附加的消息(**[!UICONTROL dynamic flow control]** 消息):Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，因而面臨潛在黑名單。
 
 * 系統問題可能會阻止伺服器進行交互：這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如在取得個人化資料的過程中會影響促銷活動。
