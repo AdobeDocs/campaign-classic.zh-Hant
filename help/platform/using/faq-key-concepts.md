@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Adobe Campaign 的工作流程包括跨應用程式伺服器的不同模組策�
 
 ## How can I track deliveries? {#how-can-i-track-deliveries-}
 
-在 Campaign Classic 中您可以透過專用的[傳遞報告](../../reporting/using/reports-on-deliveries.md#delivery-reports)追蹤並監控您的傳送內容。
+在 Campaign Classic 中您可以透過專用的[傳遞報告](../../reporting/using/delivery-reports.md)追蹤並監控您的傳送內容。
 
 進一步瞭解此頁面中Campaign中的追 [蹤管理](https://helpx.adobe.com/campaign/kb/acc-tracking.html)。
 
