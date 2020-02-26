@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -52,6 +52,6 @@ The **Scheduler** is a persistent task that is its transition at the times speci
 
    ![](assets/s_user_segmentation_scheduler5.png)
 
-使用調度程式活動可能導致同時運行多個工作流的執行。 例如，您可以讓排程器每小時觸發工作流程執行，但有時整個工作流程的執行需要超過一小時。 如果工作流已運行，則可能希望跳過執行。 有關如何防止同時執行工作流的詳細資訊，請參 [閱此頁](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-execution)。
+使用調度程式活動可能導致同時運行多個工作流的執行。 例如，您可以讓排程器每小時觸發工作流程執行，但有時整個工作流程的執行需要超過一小時。 如果工作流已運行，則可能希望跳過執行。 有關如何防止同時執行工作流的詳細資訊，請參 [閱此頁](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)。
 
 另請注意，如果工作流正在執行長期任務（如導入），或wfserver模組已停止一段時間，則可在數小時後激活該轉換。 在這種情況下，可能需要將調度器激活的任務的執行限制在特定時間範圍內。
