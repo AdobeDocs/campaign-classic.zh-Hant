@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -39,12 +39,12 @@ source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 * **[!UICONTROL Sharing to social networks]** :請參閱 [分享至社交網路](#sharing-to-social-networks)。
 * **[!UICONTROL Statistics on sharing activities]** :請參閱分享 [活動的統計資料](#statistics-on-sharing-activities)。
 * **[!UICONTROL Operating systems]** :請參閱 [作業系統](#operating-systems)。
-* **[!UICONTROL URLs and click streams]** :請參閱 [URL並按一下串流](#urls-and-click-streams)。
-* **[!UICONTROL Tracking indicators]** :請參閱 [追蹤指標](#tracking-indicators)。
+* **[!UICONTROL URLs and click streams]** :請參閱 [URL並按一下串流](../../reporting/using/delivery-reports.md#urls-and-click-streams)。
+* **[!UICONTROL Tracking indicators]** :請參閱 [追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)。
 * **[!UICONTROL Non-deliverables and bounces]** :請參閱 [非交付項和彈回](#non-deliverables-and-bounces)。
 * **[!UICONTROL User activities]** :請參閱使 [用者活動](#user-activities)。
 * **[!UICONTROL Subscription tracking]** :請參閱 [訂閱追蹤](#subscription-tracking)。
-* **[!UICONTROL Delivery summary]** :請參閱「 [傳送摘要](#delivery-summary)」。
+* **[!UICONTROL Delivery summary]** :請參閱「 [傳送摘要](../../reporting/using/delivery-reports.md#delivery-summary)」。
 * **[!UICONTROL Delivery statistics]** :請參閱「 [傳送統計資料](#delivery-statistics)」。
 * **[!UICONTROL Breakdown of opens]** :請參閱「 [開啟的劃分」](#breakdown-of-opens)。
 
@@ -64,7 +64,7 @@ source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 可以使用以下選項：
 
-* **[!UICONTROL Opens]** :已開啟的消息總數。 文字格式的電子郵件不會納入考量。 有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](#tracking-opens-)。
+* **[!UICONTROL Opens]** :已開啟的消息總數。 文字格式的電子郵件不會納入考量。 有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 * **[!UICONTROL Clicks]** :傳送中連結的點按總數。 未考慮取消訂閱連結和鏡像頁面的點按次數。
 * **[!UICONTROL Transactions]** :收到訊息後的交易總數。 為了考慮事務，必須將事務類型Web跟蹤標籤插入匹配的Web頁。 網路追蹤設定會顯示 [在本節中](../../configuration/using/about-web-tracking.md)。
 
@@ -302,7 +302,7 @@ For more information on viral marketing, refer to [this section](../../delivery/
 
 此報告顯示相關期間依作業系統、裝置和瀏覽器劃分的開啟次數。 對於每個類別，都會使用兩個圖表。 第一個顯示有關電腦和行動裝置上開啟次數的統計資料。 第二個顯示僅與行動裝置上開啟有關的統計資料。
 
-開啟次數與開啟的消息總數相對應。 文字格式電子郵件不會計算在內。 有關「追蹤」開啟的詳細資訊，請參閱「追 [蹤」開啟](#tracking-opens-) 區段。
+開啟次數與開啟的消息總數相對應。 文字格式電子郵件不會計算在內。 有關「追蹤」開啟的詳細資訊，請參閱「追 [蹤」開啟](../../reporting/using/indicator-calculation.md#tracking-opens-) 區段。
 
 ![](assets/dlv_useragent_report.png)
 
