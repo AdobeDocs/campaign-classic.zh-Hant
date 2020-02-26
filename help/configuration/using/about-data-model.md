@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: b7fa53a0463c5752a5fe4d11262dbf7b8ad77144
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign資料庫的概念資料模型由一組內建表格及其互動組
 
 ![](assets/data-model_documentation-tab.png)
 
-如需預設「促銷活動傳統資料」模型說明的詳細資訊，請參閱本 [檔案](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)。
+如需預設「促銷活動傳統型」資料模型說明的詳細資訊，請參閱本 [檔案](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)。
 
 在XML中描述了應用中資料的物理和邏輯結構。 它遵循Adobe Campaign專屬的語法，稱為結構。 如需Adobe Campaign結構描述的詳細資訊，請閱讀本 [節](../../configuration/using/about-schema-reference.md)。
 
