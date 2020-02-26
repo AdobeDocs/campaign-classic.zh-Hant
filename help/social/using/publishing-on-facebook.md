@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -159,7 +159,7 @@ Facebook固有下列限制。
 
 1. 在字 **[!UICONTROL Status]** 段中，輸入將顯示在頁面名稱下的文本。
 1. 在欄位 **[!UICONTROL Name]** 中輸入出版物標題。
-1. 在欄位 **[!UICONTROL Video code]** 中，輸入YouTube影片的程式碼。 例如，對於「http://www.youtube.com/watch?v=abc123456&#39;連結」，視訊程式碼會是「abc123456」。
+1. 在欄位 **[!UICONTROL Video code]** 中，輸入YouTube影片的程式碼。 例如，對於「https://www.youtube.com/watch?v=abc123456&#39;連結」，視訊程式碼會是「abc123456」。
 1. 在字 **[!UICONTROL Caption]** 段中，輸入將出現在出版物末尾的文本。
 1. 前往欄位 **[!UICONTROL Description]** 並輸入要顯示在標題下的文字。
 
