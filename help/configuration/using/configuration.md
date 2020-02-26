@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -96,7 +96,7 @@ XML文檔包含具有 **`<navtree>`** 名稱和命名空 **間屬****** 性的�
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由命令標 **簽中包含的** &#39;-&#39;值標識。
 
-標籤及其輸入參 **`<soapcall>`** 數的可選存在定義了要執行的SOAP方法的調用。 如需SOAP API的詳細資訊，請參閱 [Campaign JSAPI檔案](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。
+標籤及其輸入參 **`<soapcall>`** 數的可選存在定義了要執行的SOAP方法的調用。 如需SOAP API的詳細資訊，請參閱 [Campaign JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
 從標籤初始化時，可更新表單內 **`<enter>`** 容。 有關此標籤的詳細資訊，請參閱輸入表單的檔案。
 
@@ -269,7 +269,7 @@ XML文檔包含具有 **`<navtree>`** 名稱和命名空 **間屬****** 性的�
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由命令標 **簽中包含的** &#39;-&#39;值標識。
 
-標籤及其輸入參 **`<soapcall>`** 數的可選存在定義了要執行的SOAP方法的調用。 如需SOAP API的詳細資訊，請參閱 [Campaign JSAPI檔案](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。
+標籤及其輸入參 **`<soapcall>`** 數的可選存在定義了要執行的SOAP方法的調用。 如需SOAP API的詳細資訊，請參閱 [Campaign JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
 表單內容可透過標籤在初始化時更 **`<enter>`** 新。 有關此標籤的詳細資訊，請參閱輸入表單檔案。
 
