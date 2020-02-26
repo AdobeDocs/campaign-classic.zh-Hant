@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 首先，建立一或多個Twitter帳戶，以傳送您的推文至。
 
-若要建立Twitter帳戶，請前往 [http://twitter.com](http://twitter.com)。
+若要建立Twitter帳戶，請前往 [https://twitter.com](https://twitter.com)。
 
 ## 在Twitter上建立測試帳戶 {#creating-a-test-account-on-twitter}
 
