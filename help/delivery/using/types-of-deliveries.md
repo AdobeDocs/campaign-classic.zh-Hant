@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 例如，如果您每月執行此類活動一次，一年後最終會有12個傳送。
 
-循環傳送是透過循環傳送活動在工作流程 [中建立的](../../workflow/using/recurring-delivery.md)。 本節將介紹此活動的示例：在定 [位工作流程中建立循環傳送](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
+循環傳送是透過循環傳送活動在工作流程 [中建立的](../../workflow/using/recurring-delivery.md)。 本節將介紹此活動的示例：在定 [位工作流程中建立循環傳送](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
 
 ## 持續傳送 {#continuous-delivery}
 
