@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
 
 ---
 
@@ -35,19 +35,19 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
    依預設，可使用下列報表：
 
-   * **[!UICONTROL Delivery throughput]** :請參閱「 [傳送吞吐量」](#delivery-throughput)。
-   * **[!UICONTROL Sharing to social networks]** :請參閱 [分享至社交網路](#sharing-to-social-networks)。
-   * **[!UICONTROL Statistics on sharing activities]** :請參閱分享 [活動的統計資料](#statistics-on-sharing-activities)。
+   * **[!UICONTROL Delivery throughput]** :請參閱「 [傳送吞吐量」](../../reporting/using/global-reports.md#delivery-throughput)。
+   * **[!UICONTROL Sharing to social networks]** :請參閱 [分享至社交網路](../../reporting/using/global-reports.md#sharing-to-social-networks)。
+   * **[!UICONTROL Statistics on sharing activities]** :請參閱分享 [活動的統計資料](../../reporting/using/global-reports.md#statistics-on-sharing-activities)。
    * **[!UICONTROL Hot clicks]** :請參閱「 [熱點按](#hot-clicks)」。
    * **[!UICONTROL Tracking statistics]** :請參閱追蹤 [統計資料](#tracking-statistics)
    * **[!UICONTROL URLs and click streams]** :請參閱 [URL並按一下串流](#urls-and-click-streams)。
    * **[!UICONTROL Tracking indicators]** :請參閱 [追蹤指標](#tracking-indicators)。
-   * **[!UICONTROL Non-deliverables and bounces]** :請參閱 [非交付項和彈回](#non-deliverables-and-bounces)。
-   * **[!UICONTROL User activities]** :請參閱使 [用者活動](#user-activities)。
+   * **[!UICONTROL Non-deliverables and bounces]** :請參閱 [非交付項和彈回](../../reporting/using/global-reports.md#non-deliverables-and-bounces)。
+   * **[!UICONTROL User activities]** :請參閱使 [用者活動](../../reporting/using/global-reports.md#user-activities)。
    * **[!UICONTROL Delivery summary]** :請參閱「 [傳送摘要](#delivery-summary)」。
-   * **[!UICONTROL Subscription tracking]** :請參閱 [訂閱追蹤](#subscription-tracking)。
-   * **[!UICONTROL Delivery statistics]** :請參閱「 [傳送統計資料](#delivery-statistics)」。
-   * **[!UICONTROL Breakdown of opens]** :請參閱「 [開啟的劃分」](#breakdown-of-opens)。
+   * **[!UICONTROL Subscription tracking]** :請參閱 [訂閱追蹤](../../reporting/using/global-reports.md#subscription-tracking)。
+   * **[!UICONTROL Delivery statistics]** :請參閱「 [傳送統計資料](../../reporting/using/global-reports.md#delivery-statistics)」。
+   * **[!UICONTROL Breakdown of opens]** :請參閱「 [開啟的劃分」](../../reporting/using/global-reports.md#breakdown-of-opens)。
 
 ## 追蹤指標 {#tracking-indicators}
 
@@ -55,7 +55,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 >[!NOTE]
 >
->根據訊息開啟次數計算的值一律是估計值，因為連結至文字格式電子郵件的錯誤範圍。 指 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 標會考慮此誤差範圍。 有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](#tracking-opens-)。
+>根據訊息開啟次數計算的值一律是估計值，因為連結至文字格式電子郵件的錯誤範圍。 指 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 標會考慮此誤差範圍。 有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
@@ -78,7 +78,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
    >[!NOTE]
    >
-   >有關不同人員與目標接收者之間差異的詳細資訊，請參閱「目標 [人員／接收者」](#targeted-persons---recipients)。
+   >有關不同人員與目標接收者之間差異的詳細資訊，請參閱「目標 [人員／接收者」](../../reporting/using/indicator-calculation.md#targeted-persons---recipients)。
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -121,7 +121,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
-本節顯示每個社交網路上共用的訊息數。 如需詳細資訊，請參閱「共 [用至社交網路」](#sharing-to-social-networks)。
+本節顯示每個社交網路上共用的訊息數。 如需詳細資訊，請參閱「共 [用至社交網路」](../../reporting/using/global-reports.md#sharing-to-social-networks)。
 
 ## URL 和點按流 {#urls-and-click-streams}
 
@@ -137,7 +137,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
    >[!NOTE]
    >
-   >有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](#tracking-opens-)。
+   >有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 
 * **[!UICONTROL Distinct clicks]** :在傳送中點按至少一次（排除取消訂閱連結和鏡像頁面）的不同人數。 顯示的速率是根據成功傳送的訊息數量來計算。
 * **[!UICONTROL Cumulated clicks]** :目標收件者點按的總次數（不包括取消訂閱連結和鏡像頁面）。 根據成功轉發的消息數計算顯示的速率。
@@ -199,6 +199,6 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 此報表提供值表和排列圖，顯示傳送達到最高效率所需的時間。 使用下列指標：
 
-* **[!UICONTROL Opens]** :估計達到開啟訊息總數百分比所需時間。 文字格式的電子郵件並未納入考量。 有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](#tracking-opens-)。
+* **[!UICONTROL Opens]** :估計達到開啟訊息總數百分比所需時間。 文字格式的電子郵件並未納入考量。 有關追蹤開啟的詳細資訊，請參閱追蹤 [開啟](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 * **[!UICONTROL Clicks]** :估計達到所記錄點按總數的百分比所需時間。 不會考慮退出連結和鏡像頁面的點按次數。
 * **[!UICONTROL Transactions]** :接收消息後達到事務總數的百分比所需時間。 為了考慮事務，必須將事務類型Web跟蹤標籤插入匹配的Web頁。 網路追蹤設定會顯示 [在本節中](../../configuration/using/about-web-tracking.md)。
