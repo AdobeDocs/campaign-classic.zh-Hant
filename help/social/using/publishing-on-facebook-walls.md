@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ## 建立測試Facebook頁面 {#creating-a-test-facebook-page}
 
-我們建議建立私人Facebook頁面以傳送出版物校樣(如需詳細資訊，請參閱 [傳送校樣](#sending-the-proof))。
+我們建議建立私人Facebook頁面以傳送出版物校樣(如需詳細資訊，請參 [閱傳送校樣](../../social/using/publishing-on-facebook.md#sending-the-proof)。
 
 1. 登入您用來管理頁面的Facebook帳戶。
 1. 建立新的Facebook頁面。
