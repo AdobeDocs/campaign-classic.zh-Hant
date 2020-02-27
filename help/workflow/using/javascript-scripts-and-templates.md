@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
+source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
 
@@ -100,7 +100,7 @@ logInfo("Start date: " + task.creationDate)
 
 1. 新增及設定JavaScript程式碼活動以定義例項變數。
 
-   例如： `instance.vars.segmentpercent = 10;`
+   For example: `instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 
@@ -114,7 +114,9 @@ logInfo("Start date: " + task.creationDate)
 
 1. 在「分割」活動「進階」標籤的「初始化指令碼」區段內，定義JS條件。 JS條件會選取來自「分割」活動之第一個轉場的隨機取樣百分比，並將其更新為先前建立之例項變數所設定的值。
 
-   ```activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;```
+   ```
+   activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
+   ```
 
    ![](assets/js_ex3.png)
 
@@ -128,29 +130,29 @@ logInfo("Start date: " + task.creationDate)
 
 1. 從上述範例中，將工作流程以下列指令碼取代 **JavaScript程式碼活動的指令碼** :
 
-    ```
-    instance.vars.foo = "bar1"
-    vars.foo = "bar2"
-    task.vars.foo = "bar3"
-    ```
+   ```
+   instance.vars.foo = "bar1"
+   vars.foo = "bar2"
+   task.vars.foo = "bar3"
+   ```
 
 1. 將以下指令碼添加到 **End** 活動的初始化指令碼：
 
-    ```
-    logInfo("instance.vars.foo = " + instance.vars.foo)
-    logInfo("vars.foo = " + vars.foo)
-    logInfo("task.vars.foo = " + task.vars.foo)
-    ```
+   ```
+   logInfo("instance.vars.foo = " + instance.vars.foo)
+   logInfo("vars.foo = " + vars.foo)
+   logInfo("task.vars.foo = " + task.vars.foo)
+   ```
 
 1. 啟動工作流程，然後查看記錄檔。
 
-    ```
-    Workflow finished
-    task.vars.foo = undefined
-    vars.foo = bar2
-    instance.vars.foo = bar1
-    Starting workflow (operator 'admin')
-    ```
+   ```
+   Workflow finished
+   task.vars.foo = undefined
+   vars.foo = bar2
+   instance.vars.foo = bar1
+   Starting workflow (operator 'admin')
+   ```
 
 此範例顯示 **** JavaScript程式碼後的活動會存取例項變數和事件變數，但是無法從外部存取工作變數(&#39;undefined&#39;)。
 
