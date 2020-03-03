@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
+source-git-commit: 7082ff9c8ce18f12734831bc4f00c9a1b71376b3
 
 ---
 
@@ -25,6 +25,10 @@ source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 本頁列出每個Adobe Campaign Classic版本的所有新功能和檔案更新。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
+
+## 2020年3月 {#march-2020}
+
+資料模型最佳實務頁面已更新，其中包括 [序列](../../configuration/using/data-model-best-practices.md#sequences)、效 [能](../../configuration/using/data-model-best-practices.md#performance)[和大表格](../../configuration/using/data-model-best-practices.md#large-tables)等新區段。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md)
 
 ## 2020年2月 {#february-2020}
 
@@ -84,7 +88,7 @@ Campaign **Classic內部部署與代管功能表頁面** ，已使用新的FDA�
 
 ## 2020年1月 {#january-2020}
 
-「傳送性」區段已透過更新的內容進行移動、重新組織和增強。 [閱讀更多資訊](../../delivery/using/about-deliverability.md)
+「傳送性」區段已透過更新內容進行移動、重新組織和增強。 [閱讀更多資訊](../../delivery/using/about-deliverability.md)
 
 現在提供新章節，說明Adobe Campaign Classic資料模型基本概念以及如何存取每個表格的說明。 [閱讀更多資訊](../../configuration/using/about-data-model.md)
 
@@ -92,7 +96,7 @@ Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特�
 
 與查詢設計相關的使用案例已重新組織為個別區段。 [閱讀更多資訊](../../workflow/using/querying-recipient-table.md)
 
-現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [閱讀更多資訊](../../interaction/using/interaction-and-offer-management.md)
 
@@ -327,7 +331,7 @@ Campaign Classic API現在可在專用頁 [面中使用](https://docs.campaign.a
 
 已更新連線臨界值疑難排解區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Troubleshooting_Connection_thresholds.html)
 
-已新增一節，說明如何設定代理連線。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
+已新增有關如何設定代理連線的章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
 
 更新授權外部命令限制一節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Restricting_authorized_external_commands)
 
@@ -504,7 +508,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
