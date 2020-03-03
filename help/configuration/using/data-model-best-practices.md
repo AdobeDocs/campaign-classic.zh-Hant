@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8bfeaecc8a4832cac96f479ea1a0b11cd73c1e8
+source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
 
 ---
 
@@ -68,7 +68,7 @@ Adobe Campaign預設資料模型會呈現在本文 [件中](https://final-docs.c
 
 如果您不是落入其中任何一個，Adobe Campaign中很可能不需要此屬性。
 
-## 資料類型選擇 {#data-types}
+### 資料類型選擇 {#data-types}
 
 為確保系統的良好架構和效能，請遵循下列最佳實務，在Adobe Campaign中設定資料。
 
@@ -78,6 +78,28 @@ Adobe Campaign預設資料模型會呈現在本文 [件中](https://final-docs.c
 * XML **類型** ，是避免建立太多欄位的好方法。 但是，當它使用資料庫中的CLOB列時，它也佔用了磁碟空間。 它還可能導致複雜的SQL查詢，並可能影響效能。
 * 字串欄位的 **長度** ，應一律以欄來定義。 依預設，Adobe Campaign中的最大長度為255，但Adobe建議您在您已知道大小不會超過較短長度時，將欄位保持在較短的長度。
 * 如果您確定來源系統的大小被高估且無法達到，則Adobe Campaign中的欄位會比來源系統中的欄位短，這是可接受的。 這可能表示Adobe Campaign中的字串較短或整數較小。
+
+### 欄位選擇 {#choice-of-fields}
+
+如果欄位具有定位或個人化目的，則必須將其儲存在表格中。 換言之，如果欄位不是用來傳送個人化電子郵件，或是用作查詢中的標準，則會佔用磁碟空間，但是卻毫無用處。
+
+對於混合式和內部部署例項，FDA（Federated Data Access，允許存取外部資料的選用功能）涵蓋在促銷活動程式中新增「即時」欄位的需求。 如果你有食品藥物管理局的話，您不需要進口任何產品。 有關詳細資訊，請參 [閱關於同盟資料存取](../../platform/using/about-fda.md)。
+
+### 選擇鍵 {#choice-of-keys}
+
+除了在大多數 **表中預設定義的autopk** ，您還應考慮添加一些邏輯或業務密鑰（帳戶號、客戶機號等）。 它稍後可用於導入／協調或資料包。 如需詳細資訊，請參閱識 [別碼](#identifiers)。
+
+高效的密鑰對效能至關重要。 數值資料類型應始終作為表的鍵。
+
+對於SQLServer資料庫，如果需要效能，可考慮使用「聚簇索引」。 由於Adobe不處理此問題，您需要在SQL中建立它。
+
+### 專用表空間 {#dedicated-tablespaces}
+
+方案中的表空間屬性允許您為表指定專用表空間。
+
+安裝嚮導允許您按類型（資料、臨時和索引）儲存對象。
+
+專用表空間更適合分區、安全規則，並允許流暢、靈活的管理、更好的優化和效能。
 
 ## 識別碼 {#identifiers}
 
@@ -201,6 +223,8 @@ Adobe Campaign既不是資料倉庫，也不是報告工具。 因此，為確�
 * 將資料匯出至Adobe Campaign以外的資料倉庫。
 * 產生匯整值，以節省空間，同時符合行銷實務。 例如，您不需要Adobe Campaign中的完整客戶交易記錄，就能追蹤最後一次購買。
 
+您可以在架構中宣告&quot;deleteStatus&quot;屬性。 將記錄標籤為已刪除，然後延遲清除任務中的刪除會更有效。
+
 ## 效能 {#performance}
 
 為確保隨時提供更佳的效能，請遵循以下最佳實務。
@@ -222,9 +246,11 @@ Adobe Campaign既不是資料倉庫，也不是報告工具。 因此，為確�
 * 將所有必要欄位都放在一個表格中是好事，因為這可讓使用者更輕鬆地建立查詢。 有時，如果在表中複製某些欄位，則避免連接也會對效能有好處。
 * 某些內建功能將無法參考一對多關係，例如選件加權公式和傳送。
 
-### 大型表格 {#large-tables}
+## 大型表格 {#large-tables}
 
-以下是使用大型表和複雜連接設計資料模型時應遵循的一些最佳實踐。
+Adobe Campaign依賴協力廠商資料庫引擎。 根據提供方的不同，為較大的表優化效能可能需要特定的設計。
+
+以下是使用大型表和複雜連接設計資料模型時應遵循的一些常見最佳做法。
 
 * 使用其他自訂收件者表格時，請確定每個傳送對應都有專用的記錄表。
 * 減少欄數，尤其是識別未使用的欄數。
@@ -232,4 +258,36 @@ Adobe Campaign既不是資料倉庫，也不是報告工具。 因此，為確�
 * 對於連接鍵，請始終使用數字資料，而不是字串。
 * 盡可能減少日誌保留深度。 如果您需要更深入的歷史記錄，您可以匯整計算和／或處理自訂的日誌表，以儲存較大的歷史記錄。
 
-有關如何針對較大的卷優化資料庫設計的更詳細的最佳實踐，請參 [閱Campaign Classic資料模型最佳實踐](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)。
+### 表格大小 {#size-of-tables}
+
+表大小是記錄數和每個記錄列數的組合。 這兩種方法都會影響查詢的效能。
+
+* 小 **型表格** ，與「傳送」表格類似。
+* 中 **型表** ，與「收件者」表的大小相同。 每位客戶有一個記錄。
+* 大 **型表與** 「廣泛」日誌表類似。 每個客戶都有許多記錄。
+例如，如果您的資料庫包含1000萬個收件者，「廣泛」記錄表包含約1億到2億條訊息，而「傳送」表則包含數千條記錄。
+
+在PostgreSQL上，一行不應超過8KB以避免 [TOAST](https://wiki.postgresql.org/wiki/TOAST) 機制。 因此，請盡量減少列數和每行的大小，以保留系統（記憶體和CPU）的最佳效能。
+
+行數也會影響效能。 Adobe Campaign資料庫不是用來儲存非用於鎖定或個人化目的的歷史資料——這是營運資料庫。
+
+要防止與行數較多相關的任何效能問題，請僅在資料庫中保存必要的記錄。 任何其他記錄都應匯出至協力廠商資料倉庫，並從Adobe Campaign作業資料庫中移除。
+
+以下是關於表大小的一些最佳做法：
+
+* 使用較少的欄位和更多數值資料，設計大型表格。
+* 請勿使用大量的欄類型(例如：Int64)儲存小數字，例如布林值。
+* 從表定義中刪除未使用的列。
+* 請勿將歷史或非作用中的資料保留在Adobe Campaign資料庫中（匯出和清除）。
+
+以下是範例：
+
+![](assets/transaction-table-example.png)
+
+在此範例中：
+* 「事 *務處理* 」和「事 *務處理項* 」表很大：超過一千萬。
+* Product *和**Store表格* 較小：少於一萬。
+* 產品標籤和參考已放在「產品」( *Product* )表格中。
+* 「事 *務項* 」(Transaction Item *)表僅具有* Product（產品）表的連結，該表是數字的。
+
+<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
