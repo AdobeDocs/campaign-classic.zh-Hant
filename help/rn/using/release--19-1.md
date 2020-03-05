@@ -15,20 +15,41 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
 
 # 版本19.1{#release-19-1}
 
-## 版本19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+[建立升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [件更新](../../rn/using/documentation-updates.md) |舊 [版](../../rn/using/release--19-1.md) |已過 [時的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td><img src="assets/green3.png"/><strong>一般可用性</strong></td>
+   <td><img src="assets/blue3.png"/><strong>發行候選人</strong></td> 
+   <td><img src="assets/orange3.png"/><strong>不再提供</strong></td> 
+   <td><img src="assets/red3.png"/><strong>已過時</strong></td> 
+  </tr> 
+   <tr> 
+   <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
+   <td>經Adobe驗證的建置。 等待生產校對。<br> </td>
+   <td>更新的版本已修正錯誤。 需要更新。<br> </td>
+   <td>包含已知的回歸。 更新是必備的。<br> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+最 **後一個穩定版本** 是9032(205c981c3)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+## ![](assets/orange_2.png) 版本19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
 >此版本僅用於內部部署安裝。 對於混合部署，代管例項將持續執行9032組建版本。 請勿將行銷實例升級至9035組建版本，因為它與9032不相容。
 
-2019年10月3日
+_2019年10月3日_
 
 **改進**
 
@@ -38,13 +59,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * 修正Mid-Sourcing伺服器無法處理某些訊息的問題。 (NEO-12395)
 * 修正無法充分使用SQL資料管理活動（缺少名為右的「SQL資料管理」）的問題。
 
-## 版本19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/orange_2.png) 版本19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-2019年8月13日
-
->[!CAUTION]
->
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+_2019年8月13日_
 
 **改進**
 
@@ -57,43 +74,31 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## 版本19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-**2019年12月17日**:新組建版本(9032-9d34fb17e)，包含下列修正：
+![](assets/green_2.png) 2020 **年3月5日**:新建版本(9032-...205c981c3)，包含下列修正：
+
+* 修正使用FTP over SSL的外部帳戶的問題。 (NEO-20498)
+
+![](assets/orange_2.png) 2019 **年12月17日**:新組建版本(9032-...9d34fb17e)，包含下列修正：
 
 * 修正下列通訊管道的追蹤問題：行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。
 (NEO-19595)
 
-**2019年12月11日**:新建版本(9032-e28b428b7)，包含下列修正：
-
->[!CAUTION]
->
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+![](assets/orange_2.png) 2019 **年12月11日**:新建版本(9032-...e28b428b7)，包含下列修正：
 
 * 修正了使用MSSQL資料庫發送消息時的效能問題。 (NEO-17558)
 
-**2019年11月20日**:新建版本(9032-3468c7bb5)，包含下列修正：
-
->[!CAUTION]
->
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+![](assets/orange_2.png) 2019 **年11月20日**:新建版本(9032-...3468c7bb5)，包含下列修正：
 
 * 已修正透過IMS驗證的登入問題。 (NEO-17312)
 * 修正在多個傳送上顯示累積報表的問題。 (NEO-18165)
 * 已修正可能會封鎖或造成Web伺服器當機的問題。
 
-**2019年9月19日**:新建版本(9032-cee805c93)，包含下列修正：
-
->[!CAUTION]
->
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+![](assets/orange_2.png) 2019 **年9月19日**:新建版本(9032-...ce805c93)，其中包含下列修正：
 
 * 修正使用Salesforce的CRM連接器時的問題。 (NEO-17712)
 * 修正在傳送事務性訊息時，可能導致效能問題的索引問題。
 
-**2019年8月13日**:初始19.1.4版本，包含下列修正：
-
->[!CAUTION]
->
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+![](assets/orange_2.png) 2019 **年8月13日**:初始19.1.4版本，包含下列修正：
 
 * 修正在精靈設定期間，排程器活動產生不想要的錯誤訊息的問題。 回復NEO-11662的更新。 (NEO-17097)
 * 修正NEO-12727造成的回歸，當執行兩次測試活動時，此回歸可能導致工作流程停止。 (NEO-16835)
@@ -101,13 +106,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * 已修正DKIM金鑰不再內嵌在電子郵件中的問題，因此造成傳遞能力問題。 (NEO-16804)
 * 已修正工作流程排程的各種問題。 排程的工作流程會排程為每天執行一次，而不會考慮排程器設定。 (NEO-16619、NEO-16426)
 
-## 版本19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/orange_2.png) 版本19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
-2019年6月21日
-
->[!CAUTION]
->
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+_2019年6月21日_
 
 **安全性增強功能**
 
@@ -121,13 +122,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * 現在，我們允許在匯入工作流程期間刪除在Microsoft Dynamics中建立的虛擬記錄。
 * 改進使用內部帳戶時執行安全區套件的權限。
 
-## 版本19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/orange_2.png) 版本19.1 - Build 9026{#release-19-1-build-9026}
 
-2019年5月30日
-
->[!CAUTION]
->
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+_2019年5月30日_
 
 **新增功能？**
 
@@ -141,7 +138,7 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>為了提高管理員使用者的工作效率，請監控儲存空間、將IP位址列入白名單，以及為每個例項安裝SSH金鑰，以管理SFTP伺服器的設定。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience cloud登入</a>)。</p> <p>如需詳細資訊，請參 <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">閱詳細說明</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">檔案和操作視訊</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
+   <td> <p>為了提高管理員使用者的工作效率，請監控儲存空間、將IP位址列入白名單，以及為每個例項安裝SSH金鑰，以管理SFTP伺服器的設定。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參 <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">閱詳細說明</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">檔案和操作視訊</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
   </tr> 
     <tr> 
    <td> 稽核記錄<br /> </td> 
@@ -251,14 +248,14 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * 已修正Web伺服器當機問題。 (NEO-12904)
 * 修正交易範本中「自然」參數的問題。 (NEO-12334)
 * 修正在電子郵件文字編輯器中顯示追蹤的URL時的主控台當機問題。 (NEO-13122)
-* 修正從Audience manager匯入觀眾時，「分割檔案」活動的問題。 (NEO-11550)
+* 修正從Audience Manager匯入觀眾時，「分割檔案」活動的問題。 (NEO-11550)
 * 修正熱點按報告中發生錯誤的問題。 (NEO-11459)
 * 已修正選件轉換的問題。 (NEO-11565)
-* 修正從Audience manager匯入觀眾時，「清單更新」活動的問題。 (NEO-11226)
+* 修正從Audience Manager匯入觀眾時，「清單更新」活動的問題。 (NEO-11226)
 * 修正「排程」活動和時區設定的問題。 (NEO-11662)
 * 修正當URL格式錯誤時，追蹤工作流程失敗的問題。
 * 修正匯入行動應用程式套件後，外部帳戶的問題。
 * 修正將時區指派給運算子的問題。 (NEO-12464)
-* 修正可能導致像片記錄檔錯誤的問題。 (NEO-11539、NEO-8978)
+* 修正可能導致對應欄位記錄檔錯誤的問題。 (NEO-11539、NEO-8978)
 * 修正按一下儲存報表中「步驟記錄」圖示的問題。 (NEO-11620)
 * 修正在報表中編輯樞紐表時的問題。 (NEO-12068)
