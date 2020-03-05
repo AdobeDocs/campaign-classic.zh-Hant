@@ -55,7 +55,7 @@ _2020年2月17日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別上擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
+   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
     <p>如需詳細資訊，請參閱詳細 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">的檔案</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">和教學影片</a>。</p>
    </td> 
   </tr> 
@@ -117,7 +117,7 @@ _2020年2月17日_
 
 * 資料庫記錄管理得到了增強。
 
-* 連接池的健壯性已經得到改善，這可能防止意外連接故障的發生太多。
+* 連接池的健壯性已經得到改善，這可以防止意外連接故障的發生太多。
 
 * 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [閱讀更多資訊](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
