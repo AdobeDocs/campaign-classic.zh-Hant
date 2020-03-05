@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -31,17 +31,17 @@ source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
    <td><img src="assets/red3.png"/><strong>已過時</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的穩定版本。 <br>在生產環境中經過驗證。 </td>
-   <td>經Adobe驗證的建置。 <br>等待生產校對。 </td>
-   <td>更新的版本已修正錯誤。 <br>需要更新。 </td>
-   <td>包含已知的回歸。 <br>更新是必備的。 </td>
+   <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
+   <td>經Adobe驗證的建置。 等待生產校對。<br> </td>
+   <td>更新的版本已修正錯誤。 需要更新。<br> </td>
+   <td>包含已知的回歸。 更新是必備的。<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-單 [擊此處](../../rn/using/release--19-1.md#release-19-1-4-build-9032) ，查看上 **一個穩定構建** (GA)。
+最 **後一個穩定版本** 是9032(205c981c3)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) 版本20.1 —— 組建版本9122 {#release-20-1-build-XXXX}
+## ![](assets/blue_2.png) 版本20.1 —— 組建版本9122 {#release-20-1-build-9122}
 
 _2020年2月17日_
 
@@ -55,7 +55,7 @@ _2020年2月17日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
+   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別上擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
     <p>如需詳細資訊，請參閱詳細 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">的檔案</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">和教學影片</a>。</p>
    </td> 
   </tr> 
@@ -181,9 +181,9 @@ _2020年2月17日_
 
 * 修正如果上傳目錄是遠端共用位置，則無法將資料上傳至公用資源的問題。 (NEO-19361)
 
-* 修正從Adobe Experience cloud技術 **** 工作流程匯入觀眾時常失敗的問題。 (NEO-18463)
+* 修正從Adobe Experience Cloud技術 **** 工作流程匯入觀眾時常失敗的問題。 (NEO-18463)
 
-* 修正使用從Experience manager匯入的範本時，無法傳送傳送的問題。 (NEO-17540)
+* 修正使用從Experience Manager匯入的範本時，無法傳送傳送的問題。 (NEO-17540)
 
 * 已修正在升級至建置9032並防止例項透過SSL通訊協定連線至FTP伺服器後發生的問題。 (NEO-20498)
 
