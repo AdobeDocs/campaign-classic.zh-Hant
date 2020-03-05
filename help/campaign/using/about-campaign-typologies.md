@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
 
 ---
 
 
 # 關於促銷活動類型{#about-campaign-typologies}
 
-「促銷活動最佳化」是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。
+「促銷活動最佳化」是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這可確保傳送的訊息符合客戶和公司通訊政策的需求和期望。
 
 >[!NOTE]
 >
