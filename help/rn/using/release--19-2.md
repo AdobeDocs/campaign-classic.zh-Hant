@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -33,17 +33,17 @@ source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
    <td><img src="assets/red3.png"/><strong>已過時</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的穩定版本。 <br>在生產環境中經過驗證。 </td>
-   <td>經Adobe驗證的建置。 <br>等待生產校對。 </td>
-   <td>更新的版本已修正錯誤。 <br>需要更新。 </td>
-   <td>包含已知的回歸。 <br>更新是必備的。 </td>
+   <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
+   <td>經Adobe驗證的建置。 等待生產校對。<br> </td>
+   <td>更新的版本已修正錯誤。 需要更新。<br> </td>
+   <td>包含已知的回歸。 更新是必備的。<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-單 [擊此處](../../rn/using/release--19-1.md#release-19-1-4-build-9032) ，查看上 **一個穩定構建** (GA)。
+最 **後一個穩定版本** 是9032(205c981c3)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) 版本19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue_2.png) 版本19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _2020年2月07日_
 
@@ -52,7 +52,7 @@ _2020年2月07日_
 * 修正因實施SSL認證而導致使用者連線在Windows伺服器上失敗的回歸問題。 (NEO-20629)
 * 修正「關於」功能表中顯示錯誤版本標 **簽** 。
 
-## ![](assets/orange-2.png) 版本19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/orange_2.png) 版本19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
@@ -66,7 +66,7 @@ _2019年12月2日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA是加州新推出的隱私權法，協調並現代化將於2020年1月1日生效的資料保護要求。 CCPA適用於持有居住在加州之資料主體資料的Adobe Campaign客戶。</p>
+   <td> <p>CCPA是加州新推出的隱私權法，協調並現代化資料保護要求，將於2020年1月1日生效。 CCPA適用於持有居住在加州之資料主體資料的Adobe Campaign客戶。</p>
     <p>除了現有的隱私權功能（包括許可管理、資料保留設定和使用者角色）外，Adobe Campaign還可協助您做好CCPA的準備：</p>
     <ul>
       <li>存取權與刪除權：我們運用了為GDPR新增的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">閱讀更多資訊</a></li>
@@ -134,7 +134,7 @@ _2019年12月2日_
 * 已新 [增促銷活動](../../installation/using/configuring-campaign-options.md) 選項：
    * 使用 **WdbcKillSessionPolicy** 配置選項，可以影響所有工作流和PostgreSQL資料庫查詢上的「無條件停止 **** 」行為。
    * 使 **用NmsOperation_DeliveryPreparationWindow** 選項，可以定義在運行交貨計數中排除狀態不一致交貨的天數。
-   * 使 **用WdbcOptions_TempDbName** 選項，可以為Microsoft SQL server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。 [閱讀更多資訊](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
+   * 使 **用WdbcOptions_TempDbName** 選項，可以為Microsoft SQL Server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。 [閱讀更多資訊](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
    * PostgreSQL **的XtkCleanup_NoStats** 選項已增強，可更好地控制資料庫清理工作流中儲存優化步驟的行為。 [閱讀更多資訊](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 帳戶鎖定機制已新增至 **logon()** API。 它可防止在指定時間範圍內連續嘗試若干次登入失敗後，再進行任何登入嘗試。
 * 傳送屬 **性中新的「最大個人化執行時間** 」選項可讓您定義個人化執行時間的逾時期，以防止個人化階段執行太長。 [閱讀更多資訊](../../delivery/using/personalization-fields.md#timing-out-personalization)
@@ -159,7 +159,7 @@ iOS SDK的組建版本1.0.26現已推出。 在這個新版本中，我們新增
 * 修正在「資料載入(RDBMS)」工作流程活動中新增空連結表 **格時可能發生的控制台當機** 。 (NEO-12213)
 * 修正Mid-Sourcing伺服器無法處理某些訊息的問題。 (NEO-12395)
 * 修正搭配Teradata使用查詢色帶選項時，資料庫清除工作流程中的問題。 (NEO-12399)
-* 修正影響含有ne.jp網域之類型規則之傳送分析的問題。 (NEO-12609)
+* 修正影響含有ne.jp網域之分類規則之傳送分析的問題。 (NEO-12609)
 * 修正TLS更新的SMS相關問題，此問題暗示憑證政策限制較嚴格。 這些更新可能導致行銷和中部採購伺服器之間發生連線失敗，以備憑證過期時使用。 (NEO-17698)
 * 修正在具有Vault驗證的中 **部採購環境中，在外部帳戶上使用** 「測試連線」按鈕的問題。 (NEO-12722)
 * 修正使用FDA Hadoop連線之日期函式的查詢問題。 (NEO-12847)
