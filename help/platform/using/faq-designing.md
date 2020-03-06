@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 ---
 
@@ -44,10 +44,6 @@ source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 ## How to use Campaign DCE to create an email content? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
 [使用 Campaign 數位內容編輯器設計電子郵件內容](../../web/using/use-case--creating-an-email-delivery.md)：透過一個範例了解如何使用 Campaign DCE 設計電子郵件。
-
-## How can I add a barcode in an email? {#how-can-i-add-a-barcode-in-an-email-}
-
-探索如何在個人化電子郵件中輕鬆[新增條碼](../../delivery/using/inserting-a-barcode-in-an-email.md)。
 
 ## How can I create a subscription-based newsletter in Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
