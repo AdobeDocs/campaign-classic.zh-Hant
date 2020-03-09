@@ -285,13 +285,13 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 + Integrating with Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
    + 觀眾分享 {#audience-sharing}
-      + [使用Adobe Experience cloud分享受眾](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [使用Adobe Experience Cloud分享受眾](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向Adobe提交請求](integrations/using/submitting-request-to-adobe.md)
       + [在Adobe Campaign中設定共用觀眾整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [疑難排解](integrations/using/troubleshooting.md)
       + [匯入和匯出觀眾](integrations/using/importing-and-exporting-audiences.md)
    + 資產共用 {#asset-sharing}
-      + [使用Adobe Experience cloud共用資產](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [使用Adobe Experience Cloud共用資產](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [設定資產存取權](integrations/using/configuring-access-to-assets.md)
       + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
@@ -300,7 +300,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [建立Experience Manager電子報](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [與Adobe Target整合](integrations/using/integrating-with-adobe-target.md)
-      + [設定與Adobe target的整合](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [設定與Adobe Target的整合](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + 透過Adobe ID連線 {#connecting-via-an-adobe-id}
       + [關於Adobe ID](integrations/using/about-adobe-id.md)
@@ -436,7 +436,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [線路頻道](workflow/using/line-channel.md)
       + [行銷資源(MRM)](workflow/using/marketing-resources--mrm-.md)
       + [社交行銷](workflow/using/social-marketing.md)
-      + [與Adobe Experience cloud解決方案整合](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
+      + [與Adobe Experience Cloud解決方案整合](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
       + [隱私權資料保護法規](workflow/using/general-data-protection-regulation--gdpr-.md)
       + [轉移至中部採購](workflow/using/transfer-to-mid-sourcing.md)
       + [中端採購平台](workflow/using/mid-sourcing-platform.md)
@@ -516,7 +516,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
    + 事件處理 {#event-processing}
       + [關於事件處理](message-center/using/about-event-processing.md)
       + [事件集合](message-center/using/event-collection.md)
-      + [向模板傳送](message-center/using/routing-towards-a-template.md)
+      + [向模板路由](message-center/using/routing-towards-a-template.md)
       + [傳送執行](message-center/using/delivery-execution.md)
    + 報表 {#reports}
       + [關於交易式訊息報告](message-center/using/about-transactional-messaging-reports.md)
