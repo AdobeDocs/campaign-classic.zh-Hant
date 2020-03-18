@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
+source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Campaign系統極具彈性，可延伸至初始實作以外。 不過，�
 
 ## 資料模型架構 {#data-model-architecture}
 
-Adobe Campaign standard是功能強大的跨通道宣傳管理系統，可協助您調整線上和線下策略，以建立個人化的客戶體驗。
+Adobe Campaign Standard是功能強大的跨通道宣傳管理系統，可協助您調整線上和線下策略，以建立個人化的客戶體驗。
 
 ### 以客戶為中心的方法 {#customer-centric-approach}
 
@@ -46,15 +46,15 @@ Adobe Campaign standard是功能強大的跨通道宣傳管理系統，可協助
 
 要訪問每個表的說明，請轉至 **[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選擇資源，然後按一下選 **[!UICONTROL Documentation]** 項卡。
 
-Adobe Campaign預設資料模型會呈現在本文 [件中](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)。
+Adobe Campaign預設資料模型會呈現在本文 [件中](../../configuration/using/data-model-description.md)。
 
 >[!NOTE]
 >
->Adobe Campaign Classic可讓您建立自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準 [Recipient](../../configuration/using/default-recipient-table.md) 表格。
+>Adobe Campaign Classic可讓您建立自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準 [Recipient](../../configuration/using/about-data-model.md#default-recipient-table) 表格。
 
 ### Adobe Campaign的資料 {#data-for-campaign}
 
-哪些資料應傳送至Adobe Campaign? 確定行銷活動所需的資料至關重要。
+哪些資料應傳送至Adobe Campaign? 確定您的行銷活動所需的資料至關重要。
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ Adobe建議定義其他索引，因為它可能會改善效能。
 
 請注意，連結的反向基數預設為(N)。 通過將屬性revCardinality=&#39;single&#39;添加到連結定義中，可以定義連結(1-1)。
 
-如果使用者不應看到反向連結，您可使用連結定義revLink=&#39;_NONE_&#39;來隱藏該連結。 例如，最好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件人到最後一個事務處理的連結，並且無需從事務處理表中查看任何反向連結。
+如果使用者不應看到反向連結，您可以使用連結定義revLink=&#39;_NONE_&#39;來隱藏該連結。 例如，最好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件人到最後一個事務處理的連結，並且不需要從事務處理表中查看任何反向連結。
 
 執行外部連接(1-0..1)的連結應小心使用，因為它將影響系統效能。
 
@@ -254,7 +254,7 @@ Adobe Campaign依賴協力廠商資料庫引擎。 根據提供方的不同，�
 
 * 使用其他自訂收件者表格時，請確定每個傳送對應都有專用的記錄表。
 * 減少欄數，尤其是識別未使用的欄數。
-* 通過避免複雜的連接（如多個條件和／或多個列上的連接）來優化資料模型關係。
+* 通過避免複雜的連接（如多個條件上的連接和／或多個列上的連接）優化資料模型關係。
 * 對於連接鍵，請始終使用數字資料，而不是字串。
 * 盡可能減少日誌保留深度。 如果您需要更深入的歷史記錄，您可以匯整計算和／或處理自訂的日誌表，以儲存較大的歷史記錄。
 
