@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >MTA會優先處理交易訊息，而非其他傳送。
 
-在執行實例上，一旦富集階段完成並且傳送模板已連結到事件，傳送。 所有傳送都會分組在資料 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 夾中。
+在執行例項上，一旦濃縮階段完成且傳送範本已連結至事件，傳送。 所有傳送都會分組在資料 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 夾中。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
