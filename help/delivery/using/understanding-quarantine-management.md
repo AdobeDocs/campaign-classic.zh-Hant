@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
+source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Campaign 管理隔離地址的清單。在執行傳遞分析時，預設�
 
 >[!NOTE]
 >
->當使用者回覆SMS訊息時，其關鍵字如「STOP」，以選擇退出SMS傳送時，其個人檔案不會像電子郵件選擇退出程式一樣列入黑名單。 配置檔案電話號碼會發送到隔離區，這樣用戶就會繼續接收電子郵件消息。
+>當使用者回覆SMS訊息時，其關鍵字如「STOP」，以選擇退出SMS傳送時，其個人檔案不會像電子郵件選擇退出程式一樣列入黑名單。 配置檔案電話號碼會發送到隔離區，以便用戶繼續接收電子郵件消息。
 
 ## 標識隔離地址 {#identifying-quarantined-addresses}
 
@@ -93,7 +93,7 @@ Adobe Campaign 管理隔離地址的清單。在執行傳遞分析時，預設�
 
 ### 標識收件人的隔離地址 {#identifying-quarantined-addresses-for-a-recipient}
 
-您可以查看任何收件者的電子郵件地址狀態。 若要這麼做，請選取收件者描述檔，然後按一下標 **[!UICONTROL Deliveries]** 簽。 對於所有傳送給該收件人的郵件，您可以瞭解地址是否失敗、分析期間是否隔離等。 對於每個資料夾，您只能顯示電子郵件地址處於隔離狀態的收件人。 若要這麼做，請使用應用程 **[!UICONTROL Quarantined email address]** 式篩選。
+您可以查找任何收件者的電子郵件地址狀態。 若要這麼做，請選取收件者描述檔，然後按一下標 **[!UICONTROL Deliveries]** 簽。 對於所有傳送給該收件人的郵件，您可以瞭解地址是否失敗、分析期間是否隔離等。 對於每個資料夾，您只能顯示電子郵件地址處於隔離狀態的收件人。 若要這麼做，請使用應用程 **[!UICONTROL Quarantined email address]** 式篩選。
 
 ![](assets/tech_quarant_recipients_filter.png)
 
@@ -129,7 +129,7 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
 與硬錯誤相反，軟錯誤不會立即傳送要隔離的地址，而會增加錯誤計數器。
 
 * 當錯誤計數器達到限制閾值時，地址將被隔離。
-* 在預設設定中，臨界值會設定為5個錯誤，其中2個錯誤若相隔至少24小時，即顯著。 地址在第六個錯誤時被置於隔離中。
+* 在預設設定中，臨界值會設定為5個錯誤，其中2個錯誤若相隔至少24小時，即顯著。 地址在第五個錯誤處被置於隔離中。
 * 可以修改錯誤計數器閾值。 如需詳細資訊，請參閱「傳送暫 [時失敗後重試」](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
 
 如果上一個重大錯誤發生在10天前，則重新初始化錯誤計數器。 地址狀態隨後變更為「 **有效** 」，並且會從「資料庫清理」工作流的隔離列 **表中刪除** 。
@@ -151,7 +151,7 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
 * 傳送期間連線中斷：重試時，失敗原因為 **[!UICONTROL Unreachable]**。
 * 服務配置問題（證書無效、證書密碼無效、證書無效）:無重試，失敗原因為 **[!UICONTROL Unreachable]**。
 
-APNS伺服器會以非同步方式通知Adobe Campaign，裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 此工 **[!UICONTROL mobileAppOptOutMgt]** 作流程每6小時執行一次，以聯絡APNS意見服務以更新 **AppSubscriptionRcp** 表。 對於所有停用的Token, **Disabled** （停用）欄位會設為 **True** ，而連結至該裝置Token的訂閱會自動排除在未來傳送中。
+APNS伺服器會以非同步方式通知Adobe Campaign，裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 此工 **[!UICONTROL mobileAppOptOutMgt]** 作流程每6小時執行一次，以聯絡APNS意見服務以更新 **AppSubscriptionRcp** 表。 對於所有已停用的Token, **Disabled** （停用）欄位會設為 **True** ，而連結至該裝置Token的訂閱會自動排除在未來傳送中。
 
 **適用於iOS - HTTP/2連接器**
 
@@ -307,7 +307,7 @@ Android V2隔離機制使用與Android V1相同的程式，訂閱和排除更新
   <tr> 
    <td> FCM消息拒絕：FCM伺服器暫時不可用（例如超時）。 <br /> </td> 
    <td> 失敗<br /> </td> 
-   <td> Firebase cloud訊息服務暫時無法使用<br /> </td> 
+   <td> Firebase Cloud訊息服務暫時無法使用<br /> </td> 
    <td> Soft<br /> </td> 
    <td> 無法訪問<br /> </td> 
    <td> 是<br /> </td> 
@@ -424,7 +424,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 * 所有錯誤消息都以 **SR開頭** ，以區分SMS錯誤代碼和電子郵件錯誤代碼。
 * 錯誤消息的第二&#x200B;**部分** （在本例中為一般）引用SMSC實現的名稱，如在SMS外部帳戶的字 **[!UICONTROL SMSC implementation name]** 段中定義的名稱。 請參 [閱本頁](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
 
-   由於相同的錯誤代碼可能對每個提供程式有不同的含義，因此此欄位允許您瞭解哪個提供程式生成了錯誤代碼。 然後，您可以在相關供應商的檔案中找到錯誤。
+   由於相同的錯誤代碼可能對每個提供程式有不同的含義，因此，此欄位允許您瞭解哪個提供程式生成了錯誤代碼。 然後，您可以在相關供應商的檔案中找到錯誤。
 
 * 錯誤消息的第三部分(**本例中為** DELIVRD)與使用SMS外部帳戶中定義的狀態抽取regex從SR檢索的狀態代碼相對應。
 
@@ -432,13 +432,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 
    ![](assets/tech_quarant_error_regex.png)
 
-   **依預設，regex會擷取** stat:欄位，如 **SMPP 3.4規範的附錄B****部分所定義**。
+   依預設，regex會擷取 **stat:** 欄位，如 **SMPP 3.4規範的附錄B****部分所定義**。
 
 * 錯誤消息的第四部分(**000** ，在本示例中)與使用SMS外部帳戶中定義的錯誤代碼提取規則從SR中提取的錯誤代碼相對應。
 
    此規則運算式是在外部帳 **[!UICONTROL SMSC specificities]** 戶的索引標籤中指定。 請參 [閱本頁](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
 
-   **依預設，regex會擷取**&#x200B;錯誤：欄位，如 **SMPP 3.4規範的附錄B****部分所定義**。
+   依預設，regex會擷取 **錯誤：** 欄位，如 **SMPP 3.4規範的附錄B****部分所定義**。
 
 * 垂直號(|)後面的所有項目只會顯示在 **[!UICONTROL First text]** 表格的欄 **[!UICONTROL Delivery log qualification]** 中。 在訊息標準化後， **此內容一律由** #MESSAGE#取代。 此程式可避免因類似錯誤而出現多個項目，而且與電子郵件相同。 如需此方面的詳細資訊，請參閱「彈 [回郵件資格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)」。
 
