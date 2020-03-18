@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
+source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
 
 ---
 
@@ -645,9 +645,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 + 設定Campaign Classic {#configuring-campaign-classic}
    + 資料模型 {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
-      + [使用預設的「收件者」(Recipient)表](configuration/using/default-recipient-table.md)
-      + [擴充資料模型](configuration/using/extending-data-model.md)
-      + [使用自訂收件者表格](configuration/using/custom-recipient-table.md)
+      + [資料模型說明](configuration/using/data-model-description.md)
       + [最佳實務](configuration/using/data-model-best-practices.md)
    + 架構參考 {#schema-reference}
       + [關於架構參考](configuration/using/about-schema-reference.md)
