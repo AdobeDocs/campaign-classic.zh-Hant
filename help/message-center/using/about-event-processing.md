@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
+source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
 
 ---
 
@@ -31,7 +31,6 @@ source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
 要處理事務性消息傳遞事件，必須應用以下步驟：
 
 1. 事件收集、
-1. 在將事件擴充傳送至訊息範本之前（如果您取得適用於Campaign交易訊息模組的擴充選項）,
 1. 事件傳輸到消息模板，
 1. 利用個人化資料豐富事件，
 1. 傳送執行、
