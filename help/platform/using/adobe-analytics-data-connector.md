@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
 * Adobe Campaign的角色：
 
-   1. 將指標和促銷活動屬性傳送至連接器，接著再將它們轉送至網頁分析工具，
+   1. 傳送指標和促銷活動屬性至連接器，接著將它們轉送至網頁分析工具，
    1. 恢復和分析細分，
    1. 觸發重新行銷促銷活動。
 
@@ -63,12 +63,16 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/adobe_genesis_install_001.png)
 
-1. 從Experience cloud解決方案清單中，選取 **[!UICONTROL Analytics]**。
+1. 從Experience Cloud解決方案清單中，選取 **[!UICONTROL Analytics]**。
 
    ![](assets/adobe_genesis_install_013.png)
 
 1. 從頁籤 **[!UICONTROL Admin]** 中，選擇 **[!UICONTROL Data Connectors]**。
 
+   您必須具備下列Analytics工具權限才能存取功 **[!UICONTROL Data Connectors]** 能表。 For more on this, refer to this [page](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   * 整合（建立）
+   * 整合（更新）
+   * 整合（刪除）
    ![](assets/adobe_genesis_install_002.png)
 
 1. 從合作夥伴清單中，選擇 **[!UICONTROL Neolane - Enterprise Marketing Platform]**。
@@ -87,6 +91,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
    ![](assets/adobe_genesis_install_005.png)
 
 1. 指定測量電子郵件促銷活動影響所需的識別碼，例如內部促銷活動名稱(cid)和iNmsBroadlog（競標）表格ID。 您也應指定要收集之事件的指標。
+請確定您的 **[!UICONTROL Events]** 類型為「數值」，否則它們不會出現在下拉式選單中。
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -231,7 +236,7 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
 
 ## 追蹤Adobe Campaign中的傳送 {#tracking-deliveries-in-adobe-campaign}
 
-為了讓Adobe Experience cloud能夠在Adobe Campaign傳送後追蹤網站上的活動，您必須在傳送屬性中參考相符的連接器。 若要這麼做，請套用下列步驟：
+為了讓Adobe Experience Cloud能夠在Adobe Campaign傳送後追蹤網站上的活動，您必須在傳送屬性中參考相符的連接器。 若要這麼做，請套用下列步驟：
 
 1. 開啟要追蹤之促銷活動的傳送。
 
