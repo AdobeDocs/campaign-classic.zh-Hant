@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
 
 ## 關於事務性消息傳遞資料模型 {#about-transactional-messaging-datamodel}
 
-交易式傳訊需仰賴Campaign資料模型，並使用另外兩個不同的表格。 這些表( **NmsRtEvent** 和 **NmsBatchEvent**)包含相同的欄位，允許您管理即時事件和批次事件。
+交易式傳訊需仰賴Adobe Campaign資料模型，並使用另外兩個不同的表格。 這 [些表](../../configuration/using/data-model-description.md#message-center-module)( **NmsRtEvent** 和 **** NmsBatchEvent)包含相同的欄位，允許您管理即時事件和批處理事件。
 
 ## SOAP方法 {#soap-methods}
 
 本節詳細介紹與事務性消息模組結構描述關聯的SOAP方法。
 
-兩個 **PushEvent** 或 **PushEvents** SOAP方法會連結至兩 **個** nms:rtEvent **和** nms:BatchEventDataschemas。 決定事件是「批次」或「即時」類型的資訊系統。
+兩個 **PushEvent** 或 **PushEvents** SOAP方法會連結至兩個 **nms:rtEvent** 和 **** nms:BatchEventDataschemas。 決定事件是「批次」或「即時」類型的資訊系統。
 
 * **PushEvent** 可讓您將單一事件插入訊息中，
 * **PushEvents** 可讓您在訊息中插入一連串事件。
