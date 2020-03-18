@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: ae44e38e9d05478e8ebfacb1e063cdfd5d7ff30c
 
 ---
 
 
 # 遠程資料庫訪問權限 {#remote-database-access-rights}
 
-首先，為了讓使用者可以透過FDA對外部資料庫執行作業，後者必須在Adobe Campaign中擁有特定的指名權。
+首先，為了讓使用者可以透過FDA對外部資料庫執行作業，後者必須在Adobe Campaign中擁有特定的命名權限。
 
 1. 在Adobe Campaign **[!UICONTROL Administration > Access Management > Named Rights]** 檔案總管中選取節點。
 1. 指定您選擇的標籤以建立新的權限。
@@ -52,4 +52,4 @@ source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
 
 >[!NOTE]
 >
->資料庫管理員需要使這些權限與每個資料庫引擎的特定權限相匹配。 有關詳細資訊，請參閱 [RDBMS特定權限](https://docs.campaign.adobe.com/doc/AC6.1/en/technicalResources/technicalResources.html)。
+>資料庫管理員需要使這些權限與每個資料庫引擎的特定權限相匹配。 有關詳細資訊，請參閱 [RDBMS特定權限](https://docs.adobe.com/content/help/en/campaign-classic/using/assets/fda_rdbms_rights.pdf)。
