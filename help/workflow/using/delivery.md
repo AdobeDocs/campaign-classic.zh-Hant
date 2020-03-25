@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
 ---
 
@@ -52,7 +52,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
       在選取傳送動作後，您可以按一下圖示來顯示 **[!UICONTROL Edit link]** 內容。
 
-   * 建立指令碼以計算傳送。 要執行此操作，請選擇 **[!UICONTROL Calculated by a script]** 選項並輸入指令碼。 您可以按一下選項以開啟輸入 **[!UICONTROL Edit...]** 視窗。 下列範例會恢復傳送的識別碼：
+   * 建立指令碼以計算傳送。 要執行此操作，請選擇 **[!UICONTROL Computed by a script]** 選項並輸入指令碼。 您可以按一下選項以開啟輸入 **[!UICONTROL Edit...]** 視窗。 下列範例會恢復傳送的識別碼：
 
       ![](assets/diffusion_edit_3.png)
 
@@ -84,7 +84,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    * **[!UICONTROL Save]**:此選項可讓您建立傳送並儲存。 它不會分析或提供。
    * **[!UICONTROL Estimate the target]**:此選項可讓您計算傳送目標，以評估其潛力（第一個分析階段）。 此動作等同於選取選項， **[!UICONTROL Estimate the population to be targeted]** 並在透過「傳送 **[!UICONTROL Analyze]** 」傳送傳送至主要目標時按 **一下**。
-   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。 交貨不寄。 此動作等同於在傳送傳送至 **[!UICONTROL Deliver as soon as possible]** 具有「傳送 **[!UICONTROL Analyze]** 」的主要目標時選取選項並按 **一下**。
+   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。 交貨不寄。 此動作相當於在傳送傳送至 **[!UICONTROL Deliver as soon as possible]** 具有「傳送 **[!UICONTROL Analyze]** 」的主目標時，選取選項並按 **一下**。
    * **[!UICONTROL Send a proof]**:此選項可讓您傳送傳送的證明。 此動作等同於按一下具 **[!UICONTROL Send a proof]** 有傳送的傳送工具列中的按 **鈕**
    * **[!UICONTROL Prepare and start]**:此選項會啟動完整分析程式（目標計算和內容準備）並傳送傳送。 此動作等同於在傳送傳送 **[!UICONTROL Deliver as soon as possible]**&#x200B;至主 **[!UICONTROL Analyze]**&#x200B;要目標時， **[!UICONTROL Confirm delivery]** 按一下、和 **選項**。
    工作流 **[!UICONTROL Act on a delivery]** 程中進一步使用的活動可讓您啟動開始傳送（目標計算、內容準備、傳送）所需的所有剩餘步驟。 For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
