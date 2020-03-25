@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
+source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Campaign可讓您定義並管理指派給各種運算子的權限。 這�
 >
 >在開始定義權限之前，Adobe建議您先閱讀「安全性 [設定」檢查清單](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)。
 
-## 營運商 {#operators}
+## 運算子 {#operators}
 
 ### 關於運算子 {#about-operators}
 
@@ -287,26 +287,45 @@ Adobe Campaign使用技術營運商，預設設定了描述檔：管理員（「
 
 這些權利如下：
 
-* 管理：一般管理權限已套用至主控台上的所有資料夾。
-* 核准管理：指派審核者的權利。
-* 中央：適用於中央管理（分佈式行銷）的權利。
-* 刪除資料夾：刪除資料夾的權限。
-* 編輯資料夾：更改資料夾屬性的權利：名稱、標籤、關聯影像等。
-* 匯出：匯出資料的權利。
-* 檔案存取：透過指令碼讀取和寫入檔案的權限。
-* 匯入：通用資料匯入的權限。
-* 插入資料夾：右鍵插入資料夾。
-* 本地：適用於本地管理（分佈式行銷）的權利。
-* 合併：合併記錄的權利。
-* 準備交貨：直接建立、編輯和開始傳送分析。
-* 隱私權資料權：收集和刪除隱私權資料的權利。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
-* 程式執行：執行外部程式的權利。
-* 收件者匯入：匯入收件者的權限。
-* SQL指令碼執行：在資料庫上執行SQL指令碼的權限。
-* 開始傳送：核准先前分析之交貨的權利。
-* 使用SQL資料管理活動：使用SQL資料管理活動編寫自己的SQL指令碼，以便建立和填充工作表(請參 [閱本節](../../workflow/using/sql-data-management.md))。
-* 工作流程：使用工作流程的權利。
-* WEBAPP:使用Web應用程式的權利。
+* **[!UICONTROL ADMINISTRATION]**:擁有權限 **[!UICONTROL ADMINISTRATION]** 的運算子可完整存取執行個體。 管理員使用者可以執行／建立／編輯／刪除任何物件，例如工作流程、傳送、指令碼等。
+
+* **[!UICONTROL APPROVAL ADMINISTRATION]**:您可以在工作流程和傳送中設定多個核准步驟，以確保目前狀態已由指派的營運商或群組核准。 具有權限 **[!UICONTROL APPROVAL ADMINISTRATION]** 的使用者可以設定核准步驟，也可以指派應核准這些步驟的運算元或運算元群組。
+
+* **[!UICONTROL CENTRAL]**:適用於中央管理（分佈式行銷）的權利。
+
+* **[!UICONTROL DELETE FOLDER]**:刪除資料夾的權限。 通過此權限，用戶可以從瀏覽器視圖中刪除資料夾。
+
+* **[!UICONTROL EDIT FOLDERS]**:有權更改資料夾屬性，如內部名稱、標籤、關聯的影像、子資料夾順序等。
+
+* **[!UICONTROL EXPORT]**:使用者可使用工作流程活動，將資料從其Adobe Campaign例項匯出至伺服器或本機電腦 **[!UICONTROL EXPORT]** 上的檔案。
+
+* **[!UICONTROL FILES ACCESS]**:有權通過指令碼讀取和寫入檔案，該指令碼可以寫入工作流活 **[!UICONTROL JavaScript]** 動中，以讀取／寫入伺服器上的檔案。
+
+* **[!UICONTROL IMPORT]**:通用資料匯入的權限。 **[!UICONTROL IMPORT]** 允許您將資料導入任何其它表，而右 **[!UICONTROL RECIPIENT IMPORT]** 側僅允許導入到收件者表。
+
+* **[!UICONTROL INSERT FOLDERS]**:右鍵插入資料夾。 具有右側權 **[!UICONTROL INSERT FOLDERS]** 限的用戶可以在瀏覽器視圖中的資料夾樹中建立新資料夾。
+
+* **[!UICONTROL LOCAL]**:適用於本地管理（分佈式行銷）的權利。
+
+* **[!UICONTROL MERGE]**:將選定記錄合併為一個記錄的右側。 如果收件者是重複的，右 **[!UICONTROL MERGE]** 側會允許用戶選擇重複項並將它們合併到主要收件人中。
+
+* **[!UICONTROL PREPARE DELIVERIES]**:直接建立、編輯和儲存傳送。 擁有權限 **[!UICONTROL PREPARE DELIVERIES]** 的使用者也可以開始傳送分析程式。
+
+* **[!UICONTROL PRIVACY DATA RIGHT]**:收集和刪除隱私權資料的權利。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+
+* **[!UICONTROL PROGRAM EXECUTION]**:以各種寫程式語言執行命令的權利。
+
+* **[!UICONTROL RECIPIENT IMPORT]**:匯入收件者的權限。 擁有權限 **[!UICONTROL RECIPIENT IMPORT]** 的使用者可以將本機檔案匯入收件者表格。
+
+* **[!UICONTROL SQL SCRIPT EXECUTION]** 直接在資料庫上執行任何SQL命令的權限。
+
+* **[!UICONTROL START DELIVERIES]**:核准先前分析之交貨的權利。 在傳送分析後，傳送會在不同的核准步驟中暫停，而且需要核准才能繼續。 擁有權限 **[!UICONTROL START DELIVERIES]** 的使用者可以核准傳送。
+
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**:使用SQL資料管理活動編寫自己的SQL指令碼，以便建立和填充工作表(請參 [閱本節](../../workflow/using/sql-data-management.md))。
+
+* **[!UICONTROL WORKFLOW]**:執行工作流程的權限。 沒有這項權限，使用者就無法啟動、停止或重新啟動工作流程。
+
+* **[!UICONTROL WEBAPP]**:使用Web應用程式的權利。
 
 >[!NOTE]
 >
@@ -356,7 +375,7 @@ Adobe Campaign存取權限表可從這裡取 [得](/help/platform/using/assets/a
 
 >[!NOTE]
 >
->清除資料夾的此選項不會自動清除子資料夾的選項。 您必須為每個子資料夾明確清除它。
+>清除資料夾的此選項不會自動清除子資料夾的選項。 您必須明確清除每個子資料夾。
 
 ### 授予所有運算子的存取權 {#grant-access-to-all-operators}
 
