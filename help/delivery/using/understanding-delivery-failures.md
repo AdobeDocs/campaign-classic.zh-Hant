@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
 
 ---
 
@@ -242,11 +242,15 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 ![](assets/deliverability_qualif_status.png)
 
->[!NOTE]
->
->對於代管或混合安裝，如果您已升級至「增強MTA」，表格中的彈回 **[!UICONTROL Delivery log qualification]** 資格將不再使用。 「增強型MTA」將決定反彈類型和資格，並將該資訊傳回至「促銷活動」。
->
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+對於代管或混合安裝，如果您已升級至「增強MTA」:
+
+* 表格中的反彈資 **[!UICONTROL Delivery log qualification]** 格不再用於同步傳送失敗錯誤訊息。 「增強型MTA」會決定反彈類型和資格，並將該資訊傳回至「促銷活動」。
+
+* inMail程式仍會透過規則來限定非同步彈 **[!UICONTROL Inbound email]** 回數。 如需詳細資訊，請參閱「電 [子郵件管理規則」](#email-management-rules)。
+
+* 對於不使用 **Webhook/EFS的「增強型MTA」實例****[!UICONTROL Inbound email]** ，規則也將用於處理來自「增強型MTA」的同步彈回電子郵件，使用與非同步彈回電子郵件相同的電子郵件地址。
+
+如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
 
 ### 電子郵件管理規則 {#email-management-rules}
 
@@ -264,33 +268,53 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 * **傳入電子郵件**
 
-   當電子郵件失敗時，遠端伺服器會傳回彈回訊息至平台參數中指定的位址。 Adobe Campaign會將每個彈回郵件的內容與規則清單中的字串進行比較，然後指派其中一種錯誤類型。
+   當電子郵件失敗時，遠端伺服器會傳回彈回訊息至平台參數中指定的位址。
+
+   Adobe Campaign會將每個彈回郵件的內容與規則清單中的字串進行比較，然後指派其中一種錯誤類型。
 
    使用者可建立自己的規則。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >當匯入套件時，以及透過「重新整理以提供功能」 **工作流程更新資料時** ，會覆寫使用者建立的規則。
 
+   有關彈回郵件資格的詳細資訊，請參 [閱本節](#bounce-mail-qualification)。
+
+   >[!NOTE]
+   >
+   >對於代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Inbound email]** 則不再使用規則來同步傳送失敗錯誤訊息。 For more on this, see [this section](#bounce-mail-qualification).
+   >
+   >如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+
 * **網域管理**
 
-   網域管理規則用於規範特定網域的傳出電子郵件流程。 他們會取樣彈回訊息，並在適當時封鎖傳送。 Adobe Campaign傳訊伺服器會套用網域的特定規則，然後套用規則清單中星號所代表之一般案例規則。 Hotmail和MSN網域的規則預設可在Adobe Campaign中使用。
+   Adobe Campaign傳訊伺服器會套用網域的特定規則，然後套用規則清單中星號所代表之一般案例規則。
+
+   Hotmail和MSN網域的規則預設可在Adobe Campaign中使用。
 
    按一下 **[!UICONTROL Detail]** 圖示以存取規則設定。
 
    ![](assets/tech_quarant_domain_rules_02.png)
 
-   要配置域管理規則，只需設定閾值並選擇某些SMTP參數。 閾 **值** (Threshold)是計算為錯誤百分比的限制，超過該百分比後，所有針對特定域的消息都將被阻止。
-
-   例如，一般情況下，至少300則訊息，如果錯誤率達到90%，則會封鎖3小時的電子郵件傳送。
-
    SMTP參 **數用作** （應用於阻止規則）的篩選器。
 
    * 您可以選擇是否激活某些標準和加密密鑰來檢查域名，如 **Sender ID**、 **DomainKeys**、 **DKIM**&#x200B;和 **** S/MIME Juckint。
-   * **SMTP中繼**:用於為特定域配置中繼伺服器的IP地址和埠。
+   * **SMTP中繼**:用於為特定域配置中繼伺服器的IP地址和埠。 For more on this, see [this section](../../installation/using/configuring-campaign-server.md#smtp-relay).
+   如果您的訊息在Outlook中以不同的網 **[!UICONTROL on behalf of]** 域名稱顯示，請確定您未使用傳送者ID **(Sender ID**，這是過時的Microsoft專屬電子郵件驗證標準)來簽署電子郵件。 如果選 **[!UICONTROL Sender ID]** 項已啟用，請取消勾選對應方塊，並聯絡Adobe Campaign支援。 您的傳遞能力不會受到影響。
+
+   >[!NOTE]
+   >
+   >對於代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Domain management]** 則不再使用規則。 **DKIM(DomainKeys Indified Mail)** ，電子郵件驗證簽署由「增強的MTA」針對所有網域的所有訊息完成。 除非在「增強的MTA」 **層級另有指定**，否則不會使用「傳送者ID **」、「網域金鑰**」或「 **S/MIME** 」進行簽署。
+   >
+   >如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
 
 * **MX管理**
 
+   * MX管理規則可用來規範特定網域的傳出電子郵件流程。 他們會取樣彈回訊息，並在適當時封鎖傳送。
+
+   * Adobe Campaign傳訊伺服器會套用網域的特定規則，然後套用規則清單中星號所代表之一般案例規則。
+
+   * 要配置MX管理規則，只需設定閾值並選擇某些SMTP參數。 閾 **值** (Threshold)是計算為錯誤百分比的限制，超過該百分比後，所有針對特定域的消息都將被阻止。 例如，一般情況下，至少300則訊息，如果錯誤率達到90%，則會封鎖3小時的電子郵件傳送。
    For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
    >[!NOTE]
@@ -299,7 +323,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
    >
    >如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* 如果參數已變更，則必須重新啟動傳送伺服器(MTA)。
 >* 管理規則的修改或建立僅限專業使用者。
