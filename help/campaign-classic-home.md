@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign Classic產品檔案
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
+source-git-commit: d674d8a0cabb72a8a344019de688ad7027cb3e8d
 
 ---
 
@@ -23,8 +23,6 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 * **[維護指南](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>瞭解如何監控您的Campaign例項和程式
 
 * **[使用AMP的互動式內容](delivery/using/defining-interactive-content.md)**<br/>瞭解如何使用新的[AMP for Email格式傳送動態電子郵件](https://amp.dev/about/email/)
-
-* **[控制面板](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)**<br/>瞭解如何管理設定並追蹤促銷活動例項的使用
 
 [按一下這裡以取得更多更新](/help/rn/using/documentation-updates.md)
 
@@ -71,15 +69,13 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 </tr>
 </table>
 
-
 ## 其他資源
 
-* [發行說明](/help/rn/using/latest-release.md)
-
-* [操作說明短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
-
-* [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
-
-* [實施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html)
-
-* [技術說明](https://helpx.adobe.com/campaign/kb/article-list.html)
+<table>
+<tr>
+  <td valign="top"><strong>實用頁</strong>* [發行說明](/help/rn/using/latest-release.md)* [操作視頻](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)* [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)* [Campaign Classic快速入門](../../platform/using/about-adobe-campaign-classic.md)* [Gold Standard升級](https://helpx.adobe.com/campaign/kb/gold-standard.html)* [已過時和已移除的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)* [控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+  </td>
+  <td valign="top"><strong>開發人員的資源</strong>* [錯誤訊息清單](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)* [Campaign Classic資料模型](../../configuration/using/about-data-model.md)* [JSAPI檔案](../../configuration/using/about-web-services.md)* [實施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html)* [追蹤指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html)* [安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html)* [技術說明](https://helpx.adobe.com/campaign/kb/article-list.html)
+  </td>
+</tr>
+</table>
