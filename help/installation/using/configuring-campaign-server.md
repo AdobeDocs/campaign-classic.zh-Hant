@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
 
 ---
 
@@ -24,7 +24,11 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
 下節詳細說明可根據您的需求和環境特性執行的伺服器端組態。
 
-這些組態必須由管理員執行，且僅 **適用於內部部署** 代管模型。 對於 **代管** (Hosted)部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IP白名單或URL權限）。
+>[!IMPORTANT]
+>
+>這些組態必須由管理員執行，且僅 **適用於內部部署** 代管模型。
+>
+>對於 **代管** (Hosted)部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IP白名單或URL權限）。
 
 如需詳細資訊，請參閱下列章節：
 
@@ -109,7 +113,7 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 * **sessionTokenOnly**:連線URL中不需要安全性Token
 * **showErrors**:會轉送並顯示伺服器端的錯誤
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在區域定義中，每個具有true值的屬 **性** ，都會降低安全性。
 
@@ -153,13 +157,13 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 當參考代理並且連接通過此代理進入時（通過HTTP X-Forwarded-For標頭可見），驗證區域是代理的客戶端區域，而不是代理的客戶端區域。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果已設定代理，並且可以覆寫它（或者如果不存在），則測試的IP位址將會被偽造。
 >
 >此外，中繼現在也像Proxy一樣產生。 因此，您可以將IP地址127.0.0.1添加到安全區配置中的Proxy清單中。
 >
->例如：「 `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`」。
+>For example: &quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;.
 
 可能會發生各種情況：
 
@@ -202,7 +206,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 定義區域後，必須將每個運算子連結到其中一個運算子，才能登錄到實例，並且該運算子的IP地址必須包含在區域中引用的地址或地址範圍中。
 
-區域的技術組態會在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
+區域的技術配置是在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
 
 在此之前，您必須首先配置現成枚舉，以將標籤連結到 **[!UICONTROL Security zone]** serverConf.xml檔案中定義的區 **域的內部名稱** 。
 
@@ -281,7 +285,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 <relay address="192.0.0.3" port="25"/>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此操作模式對傳送帶來嚴重限制，因為由於中繼伺服器的固有效能（延遲、頻寬……），它可大大降低吞吐量。 此外，限定同步傳送錯誤（通過分析SMTP通信量檢測到）的能力將受到限制，如果中繼伺服器不可用，則無法發送。
 
@@ -297,7 +301,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 ### 管理具有相關性的出站SMTP通信 {#managing-outbound-smtp-traffic-with-affinities}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >相關性配置需要從一個伺服器到另一個伺服器之間保持一致。 我們建議您連絡Adobe以取得相似性設定，因為所有執行MTA的應用程式伺服器上都應複製設定變更。
 
@@ -307,7 +311,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 1. 在serverConf.xml檔案 **`<ipaffinity>`** 的區段 **中輸入相關性** 。
 
-   **一個相似性可以有數個不同的名稱：分離，使用**;字元。
+   一個相似性可以有數個不同的名稱：分離，使用 **;** 字元。
 
    例如：
 
@@ -318,7 +322,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
    要查看相關參數，請參 **閱serverConf.xml檔案** 。
 
-1. 若要在下拉式清單中啟用相似性選擇，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
+1. 若要在下拉式清單中啟用相似性選取，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
 
    ![](assets/ipaffinity_enum.png)
 
@@ -347,7 +351,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 * **混合** 或 **內部部署**:將允許的URL新增至 **serverConf.xml檔案**。 詳細資訊請參閱以下章節。
 * **代管**:新增URL以允許透過「控 **制面板」**。 如需詳細資訊，請參閱專 [用檔案](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
 
-使用 **Hybrid****和** On-premise **代管模型時，管理員需要參考** Server **** Conf.xml檔案中的新urlPermission。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+使用 **Hybrid****和** On-premise **代管模型時，管理員需要在** Server.xml檔案中參考新的urlPermission **** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 存在三種連接保護模式：
 
@@ -363,7 +367,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 </urlPermission>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應聯絡其管理員以將它列入白名單。
 >
@@ -444,7 +448,7 @@ ruby
 sh
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >這份清單並非完整無遺。
 
@@ -466,7 +470,7 @@ sh
 
 此使用者必須新增至「Adobe Campaign」運算子的使用者清單。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >您不應使用自訂sudo。 系統上需要安裝標準Sudo。
 
@@ -557,7 +561,7 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
    <wfserver autoStart="true" affinity="XXX,"/>
    ```
 
-   如果您定義數個相似性，則必須以逗號分隔，不含空格：
+   如果您定義數個相似性，則必須以逗號分隔，不含任何空格：
 
    ```
    <wfserver autoStart="true" affinity="XXX,YYY,"/>
@@ -581,7 +585,7 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 在此檔案中配置的每個進程都具有 **processRestartTime** 屬性。 您可以修改此屬性的值，以根據需要調整每個進程的重新啟動時間。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >請勿刪除此屬性。 必須每天重新啟動所有進程。
 
@@ -597,9 +601,9 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 例如： **uploadWhiteList=&quot;&quot;。*.png、。*.jpg」** ，可讓您在伺服器上上傳PNG和JPG格式。 不接受其他格式。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->在Internet explorer中，完整的檔案路徑必須由規則運算式驗證。
+>在Internet Explorer中，完整的檔案路徑必須由規則運算式驗證。
 
 ## 代理連接配置 {#proxy-connection-configuration}
 
