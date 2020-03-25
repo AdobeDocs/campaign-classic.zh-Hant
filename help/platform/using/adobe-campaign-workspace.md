@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
 
 ---
 
@@ -51,6 +51,22 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 而網路存取介面上，主要啟用檢視選項：
 
 ![](assets/operation_from_web.png)
+
+### 語言 {#languages}
+
+安裝Adobe Campaign Classic例項時會選取語言，之後無法變更。 有關如何建立實例的詳細資訊，請參閱本 [頁](../../installation/using/creating-an-instance-and-logging-on.md)。
+
+![](assets/language.png)
+
+您可以在5種不同的語言之間進行選擇：
+
+* 英文 (US)
+* 英文 (EN)
+* 法文
+* 德文
+* 日文
+
+您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## 基本的導覽功能 {#navigation-basics}
 
