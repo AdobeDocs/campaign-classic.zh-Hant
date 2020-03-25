@@ -13,12 +13,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
+source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
 
 ---
 
 
-# 文檔更新{#documentation-updates}
+# 文件更新{#documentation-updates}
 
 瞭解Adobe Campaign Classic檔案的所有最新更新。
 
@@ -32,6 +32,14 @@ source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
 
 現在提供新章節，說明Adobe Campaign預先定義的資料模型和現成可用的表格互動。 [閱讀更多資訊](../../configuration/using/data-model-description.md)
 
+已新增其他資源至檔案首頁。 [閱讀更多資訊](../../campaign-classic-home.md)
+
+已新增使用案例，說明如何將Adobe Target的動態選件整合至Adobe Campaign的電子郵件中。 [閱讀更多資訊](../../integrations/using/inserting-a-dynamic-image.md)
+
+現在提供新章節，其中詳述Adobe Campaign中的不同語言。 [閱讀更多資訊](../../platform/using/adobe-campaign-workspace.md#languages)
+
+「存取權限」管理頁面已更新，其中包含更多有關「命名權限」的資訊。 [閱讀更多資訊](../../platform/using/access-management.md#named-rights)
+
 ## 2020年2月 {#february-2020}
 
 現在提供一個新章節，說明設計Adobe Campaign資料模型時的最佳實務和主要建議。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md)
@@ -43,8 +51,6 @@ source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
 AMP for Email現在由3家電子郵件提供者（Gmail、Outlook和Mail.ru）支援，說明如何使用AMP定義互動式內容的章節已經更新。 [閱讀更多資訊](../../delivery/using/defining-interactive-content.md)
 
 「電子郵件封存」區段已釐清。 [閱讀更多資訊](../../installation/using/email-archiving.md#recommendations-and-limitations)
-
-
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
