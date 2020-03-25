@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
+source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
 
 ---
 
@@ -60,8 +60,8 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 您可以在5種不同的語言之間進行選擇：
 
+* 英文（英國）
 * 英文 (US)
-* 英文 (EN)
 * 法文
 * 德文
 * 日文
