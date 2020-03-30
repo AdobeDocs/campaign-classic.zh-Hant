@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
+source-git-commit: 5e34e49d66f5d943951cd5d9a11d45df9af544ba
 
 ---
 
@@ -300,7 +300,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
    * 您可以選擇是否激活某些標準和加密密鑰來檢查域名，如 **Sender ID**、 **DomainKeys**、 **DKIM**&#x200B;和 **** S/MIME Juckint。
    * **SMTP中繼**:用於為特定域配置中繼伺服器的IP地址和埠。 For more on this, see [this section](../../installation/using/configuring-campaign-server.md#smtp-relay).
-   如果您的訊息在Outlook中以不同的網 **[!UICONTROL on behalf of]** 域名稱顯示，請確定您未使用傳送者ID **(Sender ID**，這是過時的Microsoft專屬電子郵件驗證標準)來簽署電子郵件。 如果選 **[!UICONTROL Sender ID]** 項已啟用，請取消勾選對應方塊，並聯絡Adobe Campaign支援。 您的傳遞能力不會受到影響。
+   如果您的訊息在Outlook中的傳送者 **[!UICONTROL on behalf of]** 位址中顯示，請確定您未使用傳送者ID **(Sender ID**, Microsoft的過時專屬電子郵件驗證標準)來簽署電子郵件。 如果選 **[!UICONTROL Sender ID]** 項已啟用，請取消勾選對應方塊，並聯絡Adobe Campaign支援。 您的傳遞能力不會受到影響。
 
    >[!NOTE]
    >
