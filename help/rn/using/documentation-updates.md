@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
+source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
 
 ---
 
@@ -26,9 +26,19 @@ source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
 
+## 2020年4月 {#april-2020}
+
+FDA權限表已移至存取外部資料庫(FDA)檔案。 [閱讀更多資訊](../../platform/using/remote-database-access-rights.md)
+
+常見問答集已更新，其中包含如何清除軟快取和硬快取的秘訣。 [閱讀更多資訊](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
+
+「資料模型最佳實務」區段已改進，並附加索引相關資訊。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md#indexes)
+
+說明Adobe Campaign預先定義資料模型的章節已更新，其中包含每個現成可用表格的詳細資訊，以及相關模組的連結。 [閱讀更多資訊](../../configuration/using/data-model-description.md)
+
 ## 2020年3月 {#march-2020}
 
-資料模型最佳實務頁面已更新，其中包括 [序列](../../configuration/using/data-model-best-practices.md#sequences)、效 [能](../../configuration/using/data-model-best-practices.md#performance)[和大表格](../../configuration/using/data-model-best-practices.md#large-tables)等新區段。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md)
+「資料模型最佳實務」頁面已更新為新區段，包括 [序列](../../configuration/using/data-model-best-practices.md#sequences)、效 [能](../../configuration/using/data-model-best-practices.md#performance)[和大型表格](../../configuration/using/data-model-best-practices.md#large-tables)，等等。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md)
 
 現在提供新章節，說明Adobe Campaign預先定義的資料模型和現成可用的表格互動。 [閱讀更多資訊](../../configuration/using/data-model-description.md)
 
@@ -104,7 +114,7 @@ Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特�
 
 與查詢設計相關的使用案例已重新組織為個別區段。 [閱讀更多資訊](../../workflow/using/querying-recipient-table.md)
 
-現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [閱讀更多資訊](../../interaction/using/interaction-and-offer-management.md)
 
