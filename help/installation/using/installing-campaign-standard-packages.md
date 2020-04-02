@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
 
 ---
 
@@ -108,7 +108,7 @@ source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
    <td> 社交網路（Social行銷） <br /> </td> 
    <td> 將Adobe Campaign與Twitter和Facebook同步。<br /> </td> 
    <td> 全部</td> 
-   <td> <a href="../../social/using/starting-workflows.md">進一步瞭解</a> </td> 
+   <td> <a href="../../social/using/about-social-marketing.md">進一步瞭解</a> </td> 
   </tr> 
   <tr> 
    <td> 事務性消息控制（消息中心——控制）<br /> </td> 
@@ -171,7 +171,7 @@ source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
    <td> 選購，了 <a href="../../web/using/about-surveys.md">解詳情</a> </td> 
   </tr> 
   <tr> 
-   <td> 行銷分析<br /> </td> 
+   <td> Marketing Analytics<br /> </td> 
    <td> 可讓您分析和測量資料、計算統計資料、簡化並最佳化報表建立和計算。 此外，您還可以建立報表並建立目標人口族群。 <br /> </td> 
    <td> 行銷<br /> </td> 
    <td> 選購，了 <a href="../../reporting/using/about-cubes.md">解詳情</a> </td> 
@@ -237,14 +237,14 @@ source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
    <td> <a href="../../integrations/using/about-adobe-experience-manager.md">進一步瞭解</a> </td> 
   </tr> 
   <tr> 
-   <td> Adobe Marketing cloud共用觀眾整合<br /> </td> 
-   <td> 可讓您使用Adobe Experience cloud解決方案和核心服務來交換和分享受眾／細分。<br /> </td> 
+   <td> Adobe Marketing Cloud共用觀眾整合<br /> </td> 
+   <td> 可讓您使用Adobe Experience Cloud解決方案和核心服務來交換和分享受眾／細分。<br /> </td> 
    <td> 行銷<br /> </td> 
    <td> 需要IMS，了 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">解更多</a> </td> 
   </tr> 
   <tr> 
-   <td> 與Adobe Marketing cloud整合<br /> </td> 
-   <td> 可讓您從不同的Adobe Marketing cloud解決方案匯入和匯出觀眾／區段至Adobe Campaign。 </td> 
+   <td> 與Adobe Marketing Cloud整合<br /> </td> 
+   <td> 可讓您從不同的Adobe Marketing Cloud解決方案匯入和匯出觀眾／區段至Adobe Campaign。 </td> 
    <td> 行銷</td> 
    <td> 選購，了 <a href="../../integrations/using/configuring-ims.md#installing-the-package">解詳情</a> </td> 
   </tr> 
