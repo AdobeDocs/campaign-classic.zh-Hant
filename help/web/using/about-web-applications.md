@@ -15,16 +15,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
 
 ---
 
 
 # 關於Web應用程式{#about-web-applications}
 
-Adobe Campaign可讓您建立和發佈動態互動式網頁應用程式，其中包含資料庫的資料和符合連線使用者權限的內容。 您可以建立頁面，如外部網上的編輯表單，或通知表單，包括來自資料庫的資料，以及表、圖表、輸入表單等。 這項功能可讓您設計並張貼網頁，讓使用者可在其中查閱或輸入資訊。
+Adobe Campaign可讓您建立和發佈動態互動式網頁應用程式，其中包含資料庫的資料和符合連線使用者權限的內容。 您可以建立頁面，如外部網上的編輯表單，或通知表單，包括來自資料庫的資料，以及表、圖表、輸入表單等。 此功能可讓您設計並張貼網頁，讓使用者可在其中查閱或輸入資訊。
 
-此訂閱表單可包含預先載入Adobe Campaign資料庫中資訊的資料，如下所示：
+這可以是包含預先載入Adobe Campaign資料庫中資訊之資料的訂閱表單，如下所示：
 
 ![](assets/webapp_form_sample.png)
 
@@ -38,23 +38,23 @@ Adobe Campaign可讓您建立和發佈動態互動式網頁應用程式，其中
 
 Adobe Campaign中的網頁應用程式可讓您存取下列功能：
 
-* 建立多頁表單、
-* 使用整合的翻譯工具管理多語言調查、
-* 圖形頁面管理介面，多欄頁面版面，
-* 呈現個人化和現場位置，
-* 根據答案有條件顯示調查欄位、
-* 隨機顯示問題，
-* 條件式頁面顯示、
-* 驗證前檢查資訊，視預期的資料類型（編號、電子郵件位址、日期等）而定和必填欄位，
-* 電子郵件邀請或通知，
-* 將錯誤訊息和終端訊息個人化，
-* 影像、視訊、超文字連結、驗證碼等的使用。
-* 即時監控回應。
+* 建立多頁表單。 For more on this, refer to this [page](../../web/using/about-web-forms.md).
+* 使用整合的翻譯工具管理多語言調查。 For more on this, refer to this [page](../../web/using/translating-a-web-application.md).
+* 圖形頁面管理介面，多欄頁面版面。 For more on this, refer to this [page](../../web/using/designing-a-web-application.md).
+* 呈現個人化和現場位置。 For more on this, refer to this [page](../../web/using/editing-content.md#adding-personalization-content).
+* 根據答案有條件顯示調查欄位。 For more on this, refer to this [page](../../web/using/form-rendering.md#defining-fields-conditional-display).
+* 隨機顯示問題。 For more on this, refer to this [page](../../web/using/building-a-survey.md#adding-questions).
+* 條件式頁面顯示。 For more on this, refer to this [page](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+* 驗證前檢查資訊，視預期的資料類型（編號、電子郵件位址、日期等）而定和必填欄位。 For more on this, refer to this [page](../../web/using/form-rendering.md#defining-control-settings).
+* 電子郵件邀請或通知。 For more on this, refer to this [page](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* 錯誤和結束訊息的個人化。 For more on this, refer to this [page](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
+* 影像、視訊、超文字連結、驗證碼等的使用。 For more on this, refer to this [page](../../web/using/editing-content.md).
+* 即時監控回應。 For more on this, refer to this [page](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
 
 選用的 **Survey** 建立模組提供下列額外功能：
 
-* 資料庫的動態擴展：建立未包含在初始資料範本中的回應，
-* 產生專用報表。
+* 資料庫的動態擴展：建立未包含在初始資料範本中的回應。 For more on this, refer to this [page](../../web/using/managing-answers.md#storing-collected-answers).
+* 產生專用報表。 For more on this, refer to this [page](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 與Web應用程式相比，調查具有簡化的圖形介面，並減少編輯控制項的數量。
 
