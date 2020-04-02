@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign Classic產品檔案
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
+source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ---
 
@@ -75,7 +75,7 @@ source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
 |---|---|
 | [發行說明](/help/rn/using/latest-release.md) | [錯誤消息清單](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [操作說明短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign Classic資料模型](configuration/using/about-data-model.md) |
-| [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI檔案](configuration/using/about-web-services.md) |
+| [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Campaign Classic快速入門](platform/using/about-adobe-campaign-classic.md) | [實施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Gold Standard升級版](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [追蹤指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [已過時和移除的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html) |
