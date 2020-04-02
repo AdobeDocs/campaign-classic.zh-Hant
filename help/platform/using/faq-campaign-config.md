@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
 
 ---
 
@@ -78,3 +78,35 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 透過這些連接器，可快速且輕鬆地整合資料：Adobe Campaign 提供專用的精靈，用於從 CRM 中提供的表格進行收集和選取。並且可確保雙向同步處理，讓整個系統中的資料隨時保持最新。
 
 閱讀[設定 CRM 連接器](../../platform/using/crm-connectors.md)以了解如何將 CRM 工具與 Adobe Campaign 同步。觀看有關 [Adobe Campaign 和 Microsoft Dynamics 365 整合](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的使用案例短片。
+
+## 當問題是特定於電腦或特定於用戶時，如何執行軟快取清除？ {#perform-soft-cache-clear}
+
+如果您有新標誌正確反映的問題，能夠成功導出特定於電腦／用戶的資料，則可能需要對Windows(Windows 7、Windows XP、Windows 10)執行軟快取清除。
+
+登入後，請前往 **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**。 之後，請登出並重新登入。
+
+![](assets/faq_soft_cache.png)
+
+如果這仍然沒有用，請嘗試透過執行下列步驟來清除硬式快取。
+
+## 當問題是特定於電腦或特定於用戶時，如何執行硬快取清除？ {#perform-hard-cache-clear}
+
+如果您有新標誌正確反映的問題，能夠成功導出特定於電腦／用戶的資料，則可能需要對Windows(Windows 7、Windows XP、Windows 10)執行硬快取清除。
+
+1. 在用戶端主控台上，選擇 **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**。
+
+1. 註銷並關閉客戶端控制台(rich client)。
+
+1. 根據您的作業系統版本，前往下列位置：
+
+   * Windows 7:C:\Users\&lt;用戶名>\AppData\Roaming\Neolane\NL_5\
+   * Windows XP:C:\Documents and Settings\&lt;用戶名>\應用程式Data\Neolane\NL_5
+   在這裡，您會看到許多名為nlclient-config-&lt;英數字值>.xml的xml檔案。
+
+1. 刪除這些xml檔案和關聯的資料夾。
+
+   >[!CAUTION]
+   >
+   >請勿刪除nlclient_cnx.xml檔案。
+
+1. 登入用戶端主控台。
