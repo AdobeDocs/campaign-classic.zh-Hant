@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 828c95aaa4b1d0d9507129edb164ddf978c363c1
+source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign依賴包含連結在一起的表格的關係式資料庫。
 
 ![](assets/data-model_simplified-diagram.png)
 
-預先定義的Adobe Campaign資料模型包含下列主表格。
+預先定義的Adobe Campaign資料模型包含下列主要表格。
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -108,11 +108,15 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 ## 傳送與追蹤 {#delivery-and-tracking}
 
+這組表連結到 **Delivery** 模組，它允許監視傳送以及發送消息時最終遇到的問題。 如需詳細資訊，請參閱「監 [控傳送」](../../delivery/using/monitoring-a-delivery.md)。 如需追蹤的詳細資訊，請參閱 [追蹤訊息](../../delivery/using/about-message-tracking.md)。
+
 ![](assets/data-model_delivery.png)
 
 **NmsBroadLogMsg**:此表與 **nms:broadLogMsg模式匹配** 。 它是傳送記錄表的擴充功能。
 
 ## 促銷活動管理 {#campaign-management}
+
+這組表格會連結至 **Marketing促銷活動模組** ，可定義、最佳化、執行及分析通訊和行銷活動。 如需詳細資訊，請參閱關於 [行銷促銷活動](../../campaign/using/designing-marketing-campaigns.md)。
 
 ![](assets/data-model_campaign.png)
 
@@ -128,6 +132,8 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 ## 通訊一致性 {#communication-consistency}
 
+這組表格會連結至促銷活動最 **佳化模組** ，可讓您控制、篩選及監控傳送的傳送。 如需詳細資訊，請參閱關於 [促銷活動類型](../../campaign/using/about-campaign-typologies.md)。
+
 ![](assets/data-model_typology.png)
 
 * **NmsTypelogy規則**:此表與 **nms:typelogyRule** Schema匹配。 它包含根據類型套用至傳送的規則。
@@ -137,6 +143,8 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 * **已使用NmsVolume**:此表與 **nms:volumeUnced模式匹配** 。 它包含能力規則的所有衝減行。
 
 ## 回應管理 {#response-management}
+
+這組表連結到 **Response Manager** （響應管理器）模組，該模組允許衡量行銷活動的成功和獲利能力，或為所有通信通道提供建議。 如需此方面的詳細資訊，請參 [閱關於回應管理員](../../campaign/using/about-response-manager.md)。
 
 ![](assets/data-model_response.png)
 
@@ -196,6 +204,8 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 ## 模擬與傳送 {#simulation-and-delivery}
 
+這組表格會連結至 **Simulation** （模擬）模組，可讓您在將提案傳送給收件者之前，先測試屬於類別或環境的選件的分佈。 如需詳細資訊，請參閱關於 [選件模擬](../../interaction/using/about-offers-simulation.md)。
+
 ![](assets/data-model_simulation.png)
 
 * **NmsSimulation**:此表與 **nms:simulation架構匹配** 。 它代表一組交貨或選件在指定人口上的模擬。
@@ -203,6 +213,8 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 * **NmsOfferSimulationRel**:此表與 **nms:offerSimulationRel架構匹配** 。 它可讓您將模擬與選件連結。
 
 ## 互動模組 {#interaction-module}
+
+這組表格會連結至 **Interaction** 模組，讓其成為單一或數個適合的選件，以便在與特定連絡人互動時即時回應。 如需詳細資訊，請參閱「互 [動與選件管理」](../../interaction/using/interaction-and-offer-management.md)。
 
 * **NmsOffer**:此表與 **nms:offer架構匹配** 。 它包含每個行銷選件的定義。
 * **NmsCompotationRcp**:此表與 **nms:compositionRcp模式匹配** 。 它包含傳送給每個人的跨通道行銷建議記錄。 記錄是在準備或有效地向個人提出建議時建立的。
@@ -213,6 +225,8 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 * **NmsOfferEnv**:此表與 **nms:offerEnv匹配**。 它包含選件環境。
 
 ## 消息中心模組 {#message-center-module}
+
+以下一組表連結到 **Transactional messaging** (Message Center)模組，該模組允許管理發送給用戶並由從資訊系統觸發的事件生成的單個和唯一的通信。 有關詳細資訊，請參閱關於 [事務性消息傳遞](../../message-center/using/about-transactional-messaging.md)。
 
 ### NmsRtEvent {#NmsRtEvent}
 
@@ -226,15 +240,19 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 此表與 **nms:batchEvent模式匹配** 。 它包含事件的批次定義。
 
-## Microsites模組 {#microsites-module}
+<!--## Microsites Module {#microsites-module}
+
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
 ![](assets/data-model_microsites.png)
 
-* **NmsTrackingUrl**:此表與 **nms:trackingUrl架構相符** 。
+* **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**:此表與 **nms:purl架構匹配** 。
+* **NmsPurl**: This table matches the **nms:purl** schema.-->
 
 ## NMAC模組 {#nmac-module}
+
+這組表格會連結至行動應用 **程式頻道**，可透過應用程式將個人化通知傳送至iOS和Android終端。 如需詳細資訊，請參閱關於 [行動應用程式頻道](../../delivery/using/about-mobile-app-channel.md)。
 
 * **NmsMobileApp**:此表與 **nms:mobileApp架構相符** 。 它包含Adobe Campaign中定義的行動應用程式。
 * **NmsAppSubscription**:此表與 **nms:appSubscription架構相符** 。 它包含有關一或多個應用程式的訂閱者資訊。
@@ -244,6 +262,8 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 * **NmsBroadLogAppSubRcp**:此表與 **nms:broadLogAppSubRcp架構匹配** 。
 
 ## 社交行銷模組 {#social-marketing-module}
+
+這組表格會連結至「管理社交網 **路」模組** ，此模組可透過Facebook和Twitter與客戶和潛在客戶互動。 如需詳細資訊，請參閱關於 [社交行銷](../../social/using/about-social-marketing.md)。
 
 ![](assets/data-model_social.png)
 
