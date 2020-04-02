@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
+source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
 
 ---
 
@@ -107,7 +107,7 @@ Adobe Campaign資源有三個識別碼，而且可以新增其他識別碼。
 
 下表說明這些識別碼及其用途。
 
-| 識別碼 | 說明 | 最佳實務 |
+| 識別碼 | 說明 | 最佳作法 |
 |--- |--- |--- |
 | ID | <ul><li>ID是Adobe Campaign表格的實體主鍵。 對於現成可用的表，它是從序列中產生的32位元數</li><li>此識別碼通常對特定Adobe Campaign例項唯一。 </li><li>自動產生的ID可在架構定義中顯示。 搜尋 *autopk=&quot;true&quot;屬性* 。</li></ul> | <ul><li>自動產生的識別碼不應用於工作流程或套件定義中的參考。</li><li>不應假設ID永遠是遞增的數字。</li><li>現成可用表格中的ID是32位元數字，此類型不應變更。 此編號取自相同名稱之區段中涵蓋的「序列」。</li></ul> |
 | 名稱（或內部名稱） | <ul><li>此資訊是表中記錄的唯一標識符。 此值可以手動更新，通常使用生成的名稱。</li><li>此識別碼會在部署至不同的Adobe Campaign例項時保留其值，且不應為空白。</li></ul> | <ul><li>如果物件要從環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當物件具有namespace屬性(例如&#x200B;*架構* )時，此通用命名空間將運用於所有建立的自訂物件。 不應使用某些保留的名稱空間： *nms*、 *xtk*。</li><li>當物件沒有任何命名空間(*例如**工作流程或傳送* )時，此namespace概念會新增為內部名稱物件的首碼：namespaceMyObjectName **。</li><li>請勿使用特殊字元，例如空格&quot;&quot;、半欄&quot;:&quot;或連字型大小&quot;-&quot;。 所有這些字元都會以底線&quot;_&quot;（允許的字元）取代。 例如，&quot;abc-def&quot;和&quot;abc:def&quot;會儲存為&quot;abc_def&quot;，並互相覆寫。</li></ul> |
@@ -172,6 +172,41 @@ Adobe建議定義其他索引，因為它可能會改善效能。
 
 <!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
 
+### 範例
+
+管理索引可能變得非常複雜，因此，瞭解索引如何運作非常重要。 為了說明這種複雜性，我們以一個基本範例為例，例如透過篩選名字和姓氏來搜尋收件者。 操作步驟：
+1. 轉到列出資料庫中所有收件人的資料夾。 如需詳細資訊，請參閱管 [理描述檔](../../platform/using/managing-profiles.md)。
+1. 按一下右鍵該 **[!UICONTROL First name]** 欄位。
+1. Select **[!UICONTROL Filter on this field]**.
+
+   ![](assets/data-model-index-example.png)
+
+1. 對欄位重複此操 **[!UICONTROL Last name]** 作。
+
+這兩個對應的濾鏡會新增至畫面的頂端。
+
+![](assets/data-model-index-search.png)
+
+您現在可以根據各種篩選條 **[!UICONTROL First name]** 件，對 **[!UICONTROL Last name]** 和欄位執行搜尋篩選。
+
+現在，若要加速這些篩選器的搜尋，您可以新增索引。 但應該使用哪些索引？
+
+>[!NOTE]
+>
+>此示例適用於使用PostgreSQL資料庫的托管客戶。
+
+下表顯示了在哪些情況下，根據第一列中顯示的訪問模式使用或不使用下面所述的三個索引。
+
+| 搜尋條件 | 索引1（名字+姓氏） | 索引2（僅名字） | 索引3（僅限姓氏） | 注釋 |
+|--- |--- |--- |--- |--- |
+| 名字等於&quot;強尼&quot; | 已使用 | 已使用 | 未使用 | 由於名字在索引1的第一位置，因此仍會使用它：無需在姓氏上添加標準。 |
+| 名字等於&quot;Johnny&quot;，姓氏等於&quot;Smith&quot; | 已使用 | 未使用 | 未使用 | 由於同一查詢中同時搜索了兩個屬性，因此將只使用結合兩個屬性的索引。 |
+| 姓氏等於&quot;Smith&quot; | 未使用 | 未使用 | 已使用 | 索引中的屬性順序被考慮在內。 如果您不符合此順序，則可能不會使用索引。 |
+| 名字開頭為&quot;Joh&quot; | 已使用 | 已使用 | 未使用 | 「左搜索」將啟用索引。 |
+| 名字結尾為&quot;ny&quot; | 未使用 | 未使用 | 未使用 | 「右搜索」將禁用索引，並執行完全掃描。 某些特定的索引類型可處理此使用案例，但Adobe Campaign預設不提供。 |
+| 名字包含&quot;John&quot; | 未使用 | 未使用 | 未使用 | 這是「左」和「右」搜尋的組合。 由於後者，它將禁用索引並執行完全掃描。 |
+| 名字等於&quot;john&quot; | 未使用 | 未使用 | 未使用 | 索引區分大小寫。 要使其不區分大小寫，您應建立包含SQL函式(如「upper(firstname)」)的特定索引。 您應該對其他資料轉換(例如「unaccent(firstname)」)執行相同的動作。 |
+
 ## 連結與基數 {#links-and-cardinality}
 
 ### 連結 {#links}
@@ -202,7 +237,7 @@ Adobe建議定義其他索引，因為它可能會改善效能。
 
 請注意，連結的反向基數預設為(N)。 通過將屬性revCardinality=&#39;single&#39;添加到連結定義中，可以定義連結(1-1)。
 
-如果使用者不應看到反向連結，您可以使用連結定義revLink=&#39;_NONE_&#39;來隱藏該連結。 例如，最好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件人到最後一個事務處理的連結，並且不需要從事務處理表中查看任何反向連結。
+如果使用者不應看到反向連結，您可使用連結定義revLink=&#39;_NONE_&#39;來隱藏該連結。 例如，最好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件人到最後一個事務處理的連結，並且不需要從事務處理表中查看任何反向連結。
 
 執行外部連接(1-0..1)的連結應小心使用，因為它將影響系統效能。
 
