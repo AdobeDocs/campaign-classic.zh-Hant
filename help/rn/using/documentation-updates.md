@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
+source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
 
 ---
 
@@ -35,6 +35,10 @@ FDA權限表已移至存取外部資料庫(FDA)檔案。 [閱讀更多資訊](..
 「資料模型最佳實務」區段已改進，並附加索引相關資訊。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md#indexes)
 
 說明Adobe Campaign預先定義資料模型的章節已更新，其中包含每個現成可用表格的詳細資訊，以及相關模組的連結。 [閱讀更多資訊](../../configuration/using/data-model-description.md)
+
+「使用工作流程自動化」指南中的使用案例已重新組織為主題章節。 [閱讀更多資訊](../../workflow/using/using-the-local-approval-activity.md)
+
+「彈 [回數郵件](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 」資 [格和「電子郵件管理規則](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 」區段已增強，並提供更新資訊。
 
 ## 2020年3月 {#march-2020}
 
@@ -114,7 +118,7 @@ Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特�
 
 與查詢設計相關的使用案例已重新組織為個別區段。 [閱讀更多資訊](../../workflow/using/querying-recipient-table.md)
 
-現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [閱讀更多資訊](../../interaction/using/interaction-and-offer-management.md)
 
@@ -174,7 +178,7 @@ Multiplesing the mid-sourcing [server and](../../installation/using/mid-sourcing
 
 已新增資訊，以指定個人化欄位內容不能超過1024個字元。 [閱讀更多資訊](../../delivery/using/personalization-fields.md)
 
-控制面板文檔已整合到新的協作文檔集中。 [閱讀更多資訊](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板文檔已整合到新的協作文檔集中。 [閱讀更多資訊](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 
 已更新「傳送最佳實務」快速入門手冊。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
@@ -210,7 +214,7 @@ GDPR快速入門手冊已經過改進並充實。 它現在是包含GDPR和CCPA�
 
 **發行中包含的新功能**
 
-控制面板——閱 [讀更多](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板——閱 [讀更多](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 
 稽核記錄——詳 [細資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
 
