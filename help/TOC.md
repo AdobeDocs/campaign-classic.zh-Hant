@@ -1,18 +1,18 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic Help
+user-guide-title: Adobe Campaign Classic說明
 index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
+source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
 
 ---
 
 
 # Adobe Campaign Classic Help {#using}
 
-+ [產品文檔](campaign-classic-home.md)
++ [產品文件](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
 + 發行說明 {#release-notes}
    + [最新版本](rn/using/latest-release.md)
@@ -360,7 +360,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [核准](workflow/using/approval.md)
       + [警報](workflow/using/alert.md)
       + [任務](workflow/using/task.md)
-   + 行動活動 {#action-activities}
+   + 動作活動 {#action-activities}
       + [關於動作活動](workflow/using/about-action-activities.md)
       + [傳送](workflow/using/delivery.md)
       + [傳送控制](workflow/using/delivery-control.md)
@@ -385,17 +385,22 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [傳入電子郵件](workflow/using/inbound-emails.md)
       + [入站SMS](workflow/using/inbound-sms.md)
    + 使用案例 {#use-cases}
-      + [使用本機核准活動](workflow/using/using-the-local-approval-activity.md)
-      + [傳送報表至清單](workflow/using/sending-a-report-to-a-list.md)
-      + [監督工作流程](workflow/using/supervising-workflows.md)
-      + [協調資料更新](workflow/using/coordinating-data-updates.md)
-      + [建立摘要清單](workflow/using/creating-a-summary-list.md)
-      + [豐富資料](workflow/using/enriching-data.md)
-      + [A/B測試](workflow/using/a-b-testing.md)
-      + [使用聚合](workflow/using/using-aggregates.md)
-      + [傳送生日電子郵件](workflow/using/sending-a-birthday-email.md)
-      + [載入傳送內容](workflow/using/loading-delivery-content.md)
-      + [跨通道傳送工作流程](workflow/using/cross-channel-delivery-workflow.md)
+      + 交貨 {#deliveries}
+         + [使用本機核准活動](workflow/using/using-the-local-approval-activity.md)
+         + [A/B測試](workflow/using/a-b-testing.md)
+         + [傳送生日電子郵件](workflow/using/sending-a-birthday-email.md)
+         + [載入傳送內容](workflow/using/loading-delivery-content.md)
+         + [跨通道傳送工作流程](workflow/using/cross-channel-delivery-workflow.md)
+         + [使用自訂日期欄位擴充電子郵件](workflow/using/email-enrichment-with-custom-date-fields.md)
+      + 監控 {#monitoring}
+         + [傳送報表至清單](workflow/using/sending-a-report-to-a-list.md)
+         + [監督工作流程](workflow/using/supervising-workflows.md)
+         + [傳送個人化警報給營運商](workflow/using/sending-personalized-alerts-to-operators.md)
+      + 資料管理 {#data-management}
+         + [協調資料更新](workflow/using/coordinating-data-updates.md)
+         + [建立摘要清單](workflow/using/creating-a-summary-list.md)
+         + [豐富資料](workflow/using/enriching-data.md)
+         + [使用聚合](workflow/using/using-aggregates.md)
       + 設計查詢 {#designing-queries}
          + [查詢收件人表](workflow/using/querying-recipient-table.md)
          + [查詢傳送資訊](workflow/using/querying-delivery-information.md)
@@ -405,8 +410,6 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
          + [添加枚舉類型計算欄位](workflow/using/adding-enumeration-type-calculated-field.md)
          + [建立篩選](workflow/using/creating-a-filter.md)
          + [篩選重複的收件者](workflow/using/filtering-duplicated-recipients.md)
-      + [傳送個人化警報給營運商](workflow/using/sending-personalized-alerts-to-operators.md)
-      + [使用自訂日期欄位擴充電子郵件](workflow/using/email-enrichment-with-custom-date-fields.md)
    + 監控工作流程 {#monitoring-workflows}
       + [監控工作流程執行](workflow/using/monitoring-workflow-execution.md)
       + [監控技術工作流程](workflow/using/monitoring-technical-workflows.md)
@@ -646,7 +649,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
    + 資料模型 {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
-      + [最佳實務](configuration/using/data-model-best-practices.md)
+      + [最佳作法](configuration/using/data-model-best-practices.md)
    + 架構參考 {#schema-reference}
       + [關於架構參考](configuration/using/about-schema-reference.md)
       + [架構結構](configuration/using/schema-structure.md)
