@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
+source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
 
 ---
 
@@ -46,7 +46,7 @@ source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
 * **讀取資料**:只讀存取包含客戶資料的表格，
 * **閱讀「中繼資料」**:存取伺服器資料目錄以取得表格結構，
 * **載入**:在工作表中成批載入（處理系列和聯接時需要）,
-* **CREATE/DROP** for **TABLE/INDEX/PROCEDURE/FUNCTION**,
+* **CREATE/DROP** for **TABLE/INDEX/PROCEDURE/FUNCTION** （僅適用於Adobe Campaign產生的工作表）,
 * **EXPLAIN** （建議）:在遇到問題時監控效能，
 * **WRITE Data** （視整合藍本而定）。
 
@@ -56,11 +56,11 @@ source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
 
 |   | 雪花 | 紅移 | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **連接到遠程資料庫** | 倉庫使用與資料庫權限使用 | 建立連結到AWS帳戶的用戶 | 建立會話權限 | CONNECT權限 | CONNECT權限 | 建立綁定到具有ALL PRIVILEGES的遠程主機的用戶 |
+| **連接到遠程資料庫** | 倉庫使用、資料庫使用和方案權限使用 | 建立連結到AWS帳戶的用戶 | 建立會話權限 | CONNECT權限 | CONNECT權限 | 建立綁定到具有ALL PRIVILEGES的遠程主機的用戶 |
 | **建立表** | 建立方案權限表 | CREATE權限 | 建立表權限 | 建立表權限 | CREATE權限 | CREATE權限 |
 | **建立索引** | 不適用 | CREATE權限 | 索引或建立任何索引權限 | ALTER權限 | CREATE權限 | INDEX權限 |
 | **建立函式** | CREATE FUNCTION ON SCHEMA權限 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | CREATE FUNCTION權限 | 使用權限 | 建立常式權限 |
-| **建立過程** | 建立方案權限的過程 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | USAGE權限（過程是函式） | 建立常式權限 |
+| **建立過程** | 不適用 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | USAGE權限（過程是函式） | 建立常式權限 |
 | **刪除對象（表、索引、函式、過程）** | 擁有對象 | 擁有對象或是超級用戶 | 刪除任何&lt;對象>權限 | ALTER權限 | 表格：擁有表索引：擁有索引函式：擁有函式 | DROP權限 |
 | **監控執行** | 對所需對象的MONITOR權限 | 使用EXPLAIN命令無需權限 | INSERT和SELECT權限以及執行EXPLAIN PLAN所基於的語句的必要權限 | SHOWPLAN權限 | 使用EXPLAIN語句無需權限 | SELECT權限 |
 | **寫入資料** | INSERT和／或UPDATE權限（取決於寫操作） | 插入和更新權限 | 插入、更新或插入和更新任何表權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 |
