@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e5a2ef47108c6779a744197638e2de9d1072cfe3
+source-git-commit: 0932d0836c53b8dea715f471f9319603140c9950
 
 ---
 
@@ -242,7 +242,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 ![](assets/deliverability_qualif_status.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」:
 >
