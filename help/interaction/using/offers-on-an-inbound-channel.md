@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
+source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
 
 ---
 
@@ -147,7 +147,7 @@ Neobank網站想在其網站上顯示選件，以針對瀏覽該頁面的未識�
 
    上方的藍色URL方塊會對應例項名稱、環境的內部名稱(請參閱「建立匿名環境 [」)，以及連結至類別的主題(](#creating-an-anonymous-environment)Creating an offer category and a theme[](#creating-an-offer-category-and-a-theme))。 後者是可選的。
 
-當訪客存取網站首頁時，具有融資主題的選 **件** ，會顯示為HTML頁面上的設定。
+當訪客存取網站首頁時，具有融資主題的選件 **會** ，顯示為HTML頁面上的設定。
 
 ![](assets/offer_inbound_anonymous_example_022.png)
 
@@ -235,7 +235,7 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 首先，請建立兩個選件類別：「最 **佳選件** 」類別和「合 **作夥伴** 」類別。 每個類別都會包含兩個匿名聯絡人的選件。
 
 1. 前往您剛 **[!UICONTROL Offer catalog]** 建立的匿名環境。
-1. 新增包含 **[!UICONTROL Offer category]** 「最佳選 **件」的資料夾** ，做為標籤。
+1. 新增「最 **[!UICONTROL Offer category]** 佳選件」 **為標籤的資料夾** 。
 
    ![](assets/offer_inbound_fallback_example_027.png)
 
