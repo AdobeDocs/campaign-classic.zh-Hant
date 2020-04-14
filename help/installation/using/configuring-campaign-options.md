@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: 05831dbcf2450600a9f2f91f87c4440d7e599c9d
 
 ---
 
@@ -98,7 +98,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span><br /> </td> 
-   <td> 可讓您定義回覆訊息時使用之錯誤位址的語法。<br /> </td> 
+   <td> 可讓您定義回覆訊息時使用的錯誤位址語法。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span><br /> </td> 
@@ -178,7 +178,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span><br /> </td> 
-   <td> 鏡像頁伺服器的URL（預設情況下，應與NmsTracking_ServerUrl相同）。<br /> 在傳送定義中未指定URL時，此值是電子郵件傳送的預設值。<br /> </td> 
+   <td> 鏡像頁伺服器的URL（預設情況下，應與NmsTracking_ServerUrl相同）。<br /> 當路由定義中未指定URL時，此值是電子郵件傳送的預設值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span><br /> </td> 
@@ -440,8 +440,8 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span><br /> </td> 
    <td> 個人化JavaScript程式庫，以豐富事件。 必須包含下列兩項功能的實作：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> methingRtEvents(aiEventId);:豐富並儲存資料庫中的事件(其 <span class="uicontrol">中aiEventId</span> 對應於處理的即時事件表)。</p> </li> 
-     <li> <p> <span class="uicontrol"></span> menchingBatchEvents(aiEventId);:豐富和保存資料庫中的事件(其中 <span class="uicontrol">aiEventId</span> 與處理的批處理事件的ID表相對應)。</p> </li> 
+     <li> <p> <span class="uicontrol">methingRtEvents(aiEventId);</span> :豐富並儲存資料庫中的事件(其 <span class="uicontrol">中aiEventId</span> 對應於處理的即時事件表)。</p> </li> 
+     <li> <p> <span class="uicontrol">menchingBatchEvents(aiEventId);</span> :豐富和保存資料庫中的事件(其中 <span class="uicontrol">aiEventId</span> 與處理的批處理事件的ID表相對應)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -452,8 +452,8 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
    <td> <span class="uicontrol">MC_RoutingCustomJs</span><br /> </td> 
    <td> 將JavaScript程式庫個人化，以處理路由事件。 必須包含下列兩項功能的實作：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> dispatchRtEvent(iEventId);:傳回所選用以處理即時事件(其中 <span class="uicontrol">iEventId</span> 對應於所處理之即時事件的ID)的交易訊息的內部名稱。</p> </li> 
-     <li> <p> <span class="uicontrol"></span> dispatchBatchEvent(iEventId);:傳回選定處理批處理事件的事務性消息的內部名稱(其中 <span class="uicontrol">iEventId</span> 與處理的批處理事件的ID相對應)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> :傳回所選用以處理即時事件(其中 <span class="uicontrol">iEventId</span> 對應於所處理之即時事件的ID)的交易訊息的內部名稱。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> :傳回選定處理批處理事件的事務性消息的內部名稱(其中 <span class="uicontrol">iEventId</span> 與處理的批處理事件的ID相對應)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -635,7 +635,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span><br /> </td> 
-   <td> 允許您為Microsoft SQL server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)">閱讀更多資訊</a><br /> </td> 
+   <td> 允許您為Microsoft SQL Server上的工作表配置單獨的資料庫，以優化備份和複製。 該選項與臨時資料庫的名稱相對應：如果指定，工作表將寫入此資料庫。 範例：'tempdb.dbo'。 （請注意，名稱必須以點結尾）。</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">閱讀更多資訊</a><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span><br /> </td> 
@@ -670,7 +670,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span><br /> </td> 
    <td> 在移轉期間，樹狀結構會根據新版本標準自動重新組織。<br /> 此選項可讓您停用導覽樹的自動移轉。 如果您使用它，在移轉後，您必須刪除過時的資料夾，新增資料夾並執行所有必要的檢查。<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> 資料類型：整數</p> </li> 
+     <li> <p> <span class="uicontrol">資料類型：</span> 整數</p> </li> 
      <li> <p> <span class="uicontrol">值（文字）</span> :1 </p> </li> 
     </ul> 只有在現成可用的導覽樹已經過太多變更時，才應使用此選項。<br /> 有關此的詳細資訊，請參 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">閱本節</a>。<br /> </td> 
   </tr> 
@@ -680,7 +680,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span><br /> </td> 
-   <td> <br /> Postupgrade中發生的錯誤相關資訊，請遵循下列語法： <strong>{build number}:{mode:pre/post/...}:{發生錯誤的'lessThan'/'greaterOrEquelThan' + sub-step}</strong> </td> 
+   <td> Postupgrade中發生的錯誤相關資訊，請遵循下列語法：<br /><strong>{build number}:{mode:pre/post/...}:{發生錯誤的'lessThan'/'greaterOrEquelThan' + sub-step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span><br /> </td> 
@@ -705,7 +705,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span><br /> </td> 
-   <td> 可讓您設定Experience cloud觸發器。 資料類型為「長文字」，且必須為JSON格式。 請參 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">閱如何搭配Adobe Campaign Classic使用Experience cloud觸發器</a>。<br /> </td> 
+   <td> 可讓您設定Experience Cloud觸發器。 資料類型為「長文字」，且必須為JSON格式。 請參 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">閱如何搭配Adobe Campaign Classic使用Experience Cloud觸發器</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span><br /> </td> 
@@ -721,15 +721,15 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span><br /> </td> 
-   <td> Adobe target組織名稱。 此值與Adobe Target用戶端的名稱相對應。<br /> 請參 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">閱本節</a>。<br /> </td> 
+   <td> Adobe Target組織名稱。 此值與Adobe Target用戶端的名稱相對應。<br /> 請參 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">閱本節</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span><br /> </td> 
-   <td> 用於與Adobe Audience manager整合的選項。<br /> </td> 
+   <td> 用於與Adobe Audience Manager整合的選項。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span><br /> </td> 
-   <td> 用於與Adobe Audience manager整合的選項。<br /> </td> 
+   <td> 用於與Adobe Audience Manager整合的選項。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span><br /> </td> 
