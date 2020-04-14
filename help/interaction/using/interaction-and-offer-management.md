@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1afd6ad61db2062ee804c8a2add56a21578ef19
+source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
 
 ---
 
@@ -30,4 +30,14 @@ source-git-commit: c1afd6ad61db2062ee804c8a2add56a21578ef19
 
 互動功能可讓您建立和管理選件目錄，並設定與選件連結的資格規則和應用程式主題。 視所選頻道而定，由於各種轉換功能，提供的內容可以個人化。 最後，您可使用模擬模組來計算選件簡報的影響。
 
-若要熟悉「促銷活動互動」中使用的互動功能和術語，請觀看此影片： [Adobe Campaign互動概觀](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com)。
+![](assets/Offermgt2.png)
+
+若要熟悉「促銷活動互動」中使用的互動功能和術語，請觀看此影片： [Adobe Campaign互動概觀](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
+
+## 相關主題
+
+| 有用的頁面 | 其他資源 |
+|---|---|
+| [互動實作步驟](../../interaction/using/implementation-steps.md) | [測試選件散發](../../interaction/using/about-offers-simulation.md) |
+| [即時／設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增選件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [建立選件空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |
