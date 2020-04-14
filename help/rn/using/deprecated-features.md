@@ -12,7 +12,7 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 10419ee0fb466bddd05ab67087ccdbfdda1e48c8
+source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
 
 ---
 
@@ -52,8 +52,8 @@ Adobe會持續評估產品功能，以找出應以更現代的替代方式來取
    <tr> 
    <td>Javascript SDK安全性<br></td>
    <td>decryptString<br></td>
-   <td><p>出於安全原因，對於新安裝，decryptString API預設不再可用。</p> 
-   <p>在18.6版（及更新版本）的設定檔中，此API不再啟動，而且已由decryptPassword函式取代。</p><br> </td>
+   <td><p>出於安全原因， <em>對於新安裝，decryptString</em> API預設不再可用。</p> 
+   <p>在18.6版（及更新版本）的設定檔中，此API不再啟動，而且已由decryptPassword函式 <em>取代</em> 。</p><br> </td>
   </tr> 
  </tbody> 
 </table>
@@ -125,7 +125,7 @@ Adobe會持續評估產品功能，以找出應以更現代的替代方式來取
    <tr> 
    <td>促銷活動API檔案- jsapi.chm檔案<br></td>
    <td>Campaign Classic API現在可在專用頁面中使用。 如果您使用jsapi.chm檔案，現在應參考新 <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">的線上版本</a>。</td>
-   <td>&lt;19.1</td>
+   <td>19.1</td>
   </tr> 
   <tr> 
    <td>宣傳協調——預測式行銷</td>
