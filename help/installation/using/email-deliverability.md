@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -144,15 +144,15 @@ MX規則(Mail eXchanger)是管理傳送伺服器與接收伺服器間通訊的�
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則不 **[!UICONTROL MX management]** 再使用傳送總處理能力規則。 增強型MTA使用其專屬的MX規則，可讓您根據您過去的電子郵件信譽，以及您傳送電子郵件的網域所提供的即時回應，依網域自訂您的吞吐量。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 這些規則會在每天早上6點（伺服器時間）自動重新載入，以定期提供用戶端例項。
 
 ISP將接受每小時預先定義的連接和消息數，具體取決於物料容量和內部策略。 ISP系統可以根據IP和發送域的信譽自動修改這些變數。 Adobe Campaign透過其傳遞能力平台，管理ISP超過150項特定規則，此外還管理其他網域的一項一般規則。
 
-最大連接數不完全取決於MTA使用的公共IP地址數。
+連接的最大數量不完全取決於MTA使用的公有IP地址數。
 
-例如，如果您在MX規則中允許5個連線，而您已設定2個公用IP，您可能認為您無法同時開啟超過10個連線至此網域。 這不是事實，事實上，最大連線數指的是路徑和路徑，其中一個是我們的MTA公用IP，而另一個是客戶MTA的公用IP。
+例如，如果您在MX規則中允許5個連線，而您已設定2個公用IP，您可能認為您無法同時開啟超過10個連線至此網域。 這不是事實，事實上，最大連線數指的是路徑和路徑，其中一個是我們的MTA公用IP，另一個是客戶MTA的公用IP。
 
 在下列範例中，使用者已設定兩個公用IP位址，網域為yahoo.com。
 
