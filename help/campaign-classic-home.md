@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign Classic產品檔案
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 12c38d8ccf198b59ce93ee4155940612637b2856
+source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 12c38d8ccf198b59ce93ee4155940612637b2856
 
 ## 新增功能
 
-* **[取得支援](https://helpx.adobe.com/campaign/kb/ac-support.html)**</br>&#x200B;存取常見問答集、最佳實務、說明資源，並與促銷活動專家和客戶服務團隊聯絡
+* **[取得支援](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>&#x200B;存取常見問答集、最佳實務、說明資源，並與促銷活動專家和客戶服務團隊聯絡
 
 * **[隱私權規範](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>&#x200B;瞭解Adobe Campaign如何協助您符合隱私權規範
 
