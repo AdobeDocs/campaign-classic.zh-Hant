@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
 
 ---
 
@@ -40,7 +40,7 @@ FDA權限表已移至存取外部資料庫(FDA)檔案。 [閱讀更多資訊](..
 
 「彈 [回數郵件](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 」資 [格和「電子郵件管理規則](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 」區段已增強，並提供更新資訊。
 
-Adobe Campaign Enhanced MTA文章已更新。 現在只適用於Campaign Classic。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
+Adobe Campaign Enhanced MTA文章已更新。 現在只適用於Campaign Classic。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## 2020年3月 {#march-2020}
 
@@ -120,7 +120,7 @@ Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特�
 
 與查詢設計相關的使用案例已重新組織為個別區段。 [閱讀更多資訊](../../workflow/using/querying-recipient-table.md)
 
-現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [閱讀更多資訊](../../interaction/using/interaction-and-offer-management.md)
 
@@ -295,7 +295,7 @@ Android應用程式從Google雲端傳訊(GCM)移轉至Firebase雲端傳訊(FCM)�
 
 Marketing Cloud觸發器技術已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-已在選件核准區段中新增附註，以指定「已核准內容」提及表示內容核准程式已完成，不論所有選件皆已啟用／核准。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
+已在選件核准區段中新增附註，以指定「已核准內容」的提及次數表示內容核准程式已經完成，不論所有選件皆已啟用／核准。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
 
 「安裝指南」中新增了一個章節，列出「管理／平台／選項」節點中的選項。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
@@ -532,7 +532,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
