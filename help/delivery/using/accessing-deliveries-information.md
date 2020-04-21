@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -90,4 +90,4 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >若是代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Delivery throughput]** 該頁面將不再顯示您電子郵件收件者的總處理能力。 它將顯示從促銷活動到增強MTA的訊息中繼的吞吐量速度。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
