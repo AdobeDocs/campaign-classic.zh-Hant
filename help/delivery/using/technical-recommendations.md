@@ -1,6 +1,6 @@
 ---
 title: 使用Adobe Campaign Classic改善傳遞能力的技術建議
-description: 探索使用Adobe Campaign Classic提高傳遞率的技巧、設定和工具。
+description: 探索使用Adobe Campaign Classic提升傳遞率的技術、設定和工具。
 page-status-flag: never-activated
 uuid: 71be1087-e5ff-4a7a-85ca-36803839e72f
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -74,7 +74,7 @@ SPF是一種技術，在某種程度上，它使您能夠確保電子郵件中�
 
 DKIM(DomainKeys Indified Mail)驗證是SPF的繼承者，使用公開金鑰加密技術，允許接收電子郵件伺服器驗證消息實際上是由其聲稱發送者或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 為確保DKIM的安全級別，建議使用1024b的最佳做法加密大小。 大部分的存取提供者不會將低DKIM金鑰視為有效。
 
-DKIM來自DomainKeys、Yahoo! 和Cisco Identified Internet mail身份驗證原則，用於檢查發件人域的真實性並保證消息的完整性。
+DKIM來自DomainKeys、Yahoo! 和Cisco Identified Internet Mail身份驗證原則，用於檢查發件人域的真實性並保證消息的完整性。
 
 DKIM已取 **代DomainKeys** 驗證。
 
@@ -82,7 +82,7 @@ DKIM已取 **代DomainKeys** 驗證。
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則DKIM電子郵件驗證簽署由「增強MTA」完成。 在「增強的MTA」升級中，將關閉原生「促銷活動MTA」的DKIM **[!UICONTROL Domain management]** 簽署功能。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 使用DKIM需要一些必要條件：
 
@@ -137,7 +137,7 @@ Recommendations for defining an SPF record:
 
 ## 反饋迴路 {#feedback-loop}
 
-反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP會以類似方式將郵件發送到此郵箱，即接收者報告為垃圾郵件的郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 ISP會根據這些抱怨將IP位址列入黑名單。 根據ISP的不同，投訴率約為1%會導致IP位址被列入黑名單。
+反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP將以類似於彈回郵件的方式發送到此郵箱，接收者將這些郵件報告為垃圾郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 ISP會根據這些抱怨將IP位址列入黑名單。 根據ISP的不同，投訴率約為1%會導致IP位址被列入黑名單。
 
 目前正在制定一個標準，以定義反饋迴路消息的格式：濫用 [反饋報告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
@@ -148,7 +148,7 @@ Recommendations for defining an SPF record:
 
 在Adobe Campaign中實作簡單的回饋迴路會使用反彈訊息功能。 反饋循環郵箱用作彈回郵箱，並定義規則來檢測這些消息。 將郵件作為垃圾郵件報告的收件人的電子郵件地址添加到隔離清單中。
 
-* 建立或修改彈回郵件規則 **Feedback_loop**, **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** 其原因為 **Resubled** ，並鍵入 **Hard**。
+* 建立或修改彈回郵件規則 **Feedback_loop**, **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** 其原因為 **Resubled** ，並輸入 **Hard**。
 * 如果郵箱已專門為反饋迴路定義，請在中建立一個新的外部「反彈郵件」帳戶來定義要訪問該郵箱的參數 **[!UICONTROL Administration > Platform > External accounts]**。
 
 該機制立即開始運作，以處理投訴通知。 為確保此規則正常運作，您可以暫時停用帳戶，以免帳戶收集這些訊息，然後手動檢查回饋回圈信箱的內容。 在伺服器上，執行以下命令：
@@ -186,7 +186,7 @@ Adobe Campaign的Deliverability服務可管理您對下列ISP的回饋迴路服�
 >
 >此功能可從Build 6831取得。
 
-要使用「清單取消訂閱」(List-Unsubscribe)，必須輸入如下所示的命令行：
+要使用「清單取消訂閱」，必須輸入如下所示的命令行：
 
 ```
 List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe
@@ -202,7 +202,7 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
 ```
 
-Gmail、Outlook.com和Microsoft outlook都支援此方法，而且其介面中會直接提供取消訂閱按鈕。 這種技巧降低投訴率。
+Gmail、Outlook.com和Microsoft Outlook都支援此方法，而且其介面中會直接提供取消訂閱按鈕。 這種技巧降低投訴率。
 
 ![](assets/s_tn_del_msn_unsubscribe_list.png)
 
@@ -251,11 +251,11 @@ SMTP（簡單郵件傳輸協定）是電子郵件傳輸的Internet標準。
 
 Adobe為每位客戶提供專屬的IP策略，以提升IP，以建立聲譽並最佳化傳送效能。
 
-## IP認證 {#ip-certification}
+## IP 認證 {#ip-certification}
 
 IP認證是一份白名單和傳送實務計畫，可協助確保收到電子郵件時不會受到反垃圾郵件篩選器或其他電子郵件封鎖系統的封鎖。
 
-目前有兩家供應商提供IP認證：Return path和認證寄件者聯盟。
+目前有兩家供應商提供IP認證：Return Path和認證寄件者聯盟。
 
 認證寄件者會加入全球郵箱供應商和電子郵件安全公司使用的電子郵件白名單。 這些商業白名單基於允許發送者完全略過反垃圾郵件過濾器的系統，或者在他們進入系統時被分配增量點。
 
