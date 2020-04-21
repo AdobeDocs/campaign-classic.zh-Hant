@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0932d0836c53b8dea715f471f9319603140c9950
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -252,10 +252,10 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 * inMail程式仍會透過規則來限定非同步彈 **[!UICONTROL Inbound email]** 回數。 如需詳細資訊，請參閱「電 [子郵件管理規則」](#email-management-rules)。
    >
    >
-* 對於不使用 **Webhook/EFS的「增強型MTA」實例****[!UICONTROL Inbound email]** ，規則也將用來處理來自「增強型MTA」的同步彈回電子郵件，使用與非同步彈回電子郵件相同的電子郵件地址。
+* 對於不使用 **Webhook/EFS的「增強型MTA」實例****[!UICONTROL Inbound email]** ，規則也將用於處理來自「增強型MTA」的同步彈回電子郵件，使用與非同步彈回電子郵件相同的電子郵件地址。
 >
 >
-如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 ### 電子郵件管理規則 {#email-management-rules}
 
@@ -291,7 +291,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 >
 >對於托管或混合安裝，如果您已升級到「增強MTA」，並且實例具有 **Webhook/EFS****[!UICONTROL Inbound email]** ，則不再使用規則來同步發送故障錯誤消息。 For more on this, see [this section](#bounce-mail-qualification).
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### 網域管理 {#domain-management}
 
@@ -308,7 +308,7 @@ Adobe Campaign訊息伺服器會將單一網域 **管理規則套用** 至所有
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Domain management]** 則不再使用規則。 **DKIM(DomainKeys Indified Mail)** ，電子郵件驗證簽署由「增強的MTA」針對所有網域的所有訊息完成。 除非在「增強的MTA」 **層級另有指定**，否則不會使用「傳送者ID **」、「網域金鑰**」或「 **S/MIME** 」進行簽署。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### MX管理 {#mx-management}
 
@@ -324,4 +324,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則不 **[!UICONTROL MX management]** 再使用傳送總處理能力規則。 增強型MTA使用其專屬的MX規則，可讓您根據您過去的電子郵件信譽，以及您傳送電子郵件的網域所提供的即時回應，依網域自訂您的吞吐量。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
