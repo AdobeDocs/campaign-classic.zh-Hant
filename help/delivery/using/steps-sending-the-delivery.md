@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -184,7 +184,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則「促銷活動」不再使用傳送中的重試設定。 軟反彈重試次數及其間的時間長度，由增強的MTA根據訊息電子郵件網域傳回的反彈回應類型和嚴重性來決定。
 >
->所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) 。
+>所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) 。
 
 
 ## 定義有效期 {#defining-validity-period}
@@ -203,6 +203,6 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 >[!NOTE]
 >
->若是代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Delivery duration]** 則只有在設為 **3.5** 天或以下時，才會使用促銷活動傳送中的設定。 如果您定義的值高於3.5天，則不會考慮該值。
+>若是代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Delivery duration]** 則只有在設為 **3.5** 天或更短時，才會使用促銷活動傳送中的設定。 如果您定義的值高於3.5天，則不會考慮該值。
 >
->所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) 。
+>所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) 。
