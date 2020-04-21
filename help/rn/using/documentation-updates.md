@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -39,6 +39,8 @@ FDA權限表已移至存取外部資料庫(FDA)檔案。 [閱讀更多資訊](..
 「使用工作流程自動化」指南中的使用案例已重新組織為主題章節。 [閱讀更多資訊](../../workflow/using/using-the-local-approval-activity.md)
 
 「彈 [回數郵件](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 」資 [格和「電子郵件管理規則](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 」區段已增強，並提供更新資訊。
+
+Adobe Campaign Enhanced MTA文章已更新。 現在只適用於Campaign Classic。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
 
 ## 2020年3月 {#march-2020}
 
@@ -114,11 +116,11 @@ Campaign **Classic內部部署與代管功能表頁面** ，已使用新的FDA�
 
 現在提供新章節，說明Adobe Campaign Classic資料模型基本概念以及如何存取每個表格的說明。 [閱讀更多資訊](../../configuration/using/about-data-model.md)
 
-Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特定印刷樣式套件的詳細資訊，這些例項不會新增必要的「增強MTA」標題至每則訊息。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html#impacts)
+Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特定印刷樣式套件的詳細資訊，這些例項不會新增必要的「增強MTA」標題至每則訊息。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 與查詢設計相關的使用案例已重新組織為個別區段。 [閱讀更多資訊](../../workflow/using/querying-recipient-table.md)
 
-現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [閱讀更多資訊](../../interaction/using/interaction-and-offer-management.md)
 
@@ -152,7 +154,7 @@ FDA矩陣頁面已移至此 [處](/help/rn/using/assets/fda_rdbms_rights.pdf)。
 
 **此版本隨附的其他檔案更新**
 
-Adobe Campaign Enhanced MTA檔案現已推出。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)
+Adobe Campaign Enhanced MTA檔案現已推出。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 已新增一節，說明如何疑難排解促銷活動中「盡快開始」狀態的工作流程。 閱[讀更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -293,7 +295,7 @@ Android應用程式從Google雲端傳訊(GCM)移轉至Firebase雲端傳訊(FCM)�
 
 Marketing Cloud觸發器技術已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-已在選件核准區段中新增附註，以指定「已核准內容」的提及次數表示內容核准程式已經完成，不論所有選件皆已啟用／核准。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
+已在選件核准區段中新增附註，以指定「已核准內容」提及表示內容核准程式已完成，不論所有選件皆已啟用／核准。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
 
 「安裝指南」中新增了一個章節，列出「管理／平台／選項」節點中的選項。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
