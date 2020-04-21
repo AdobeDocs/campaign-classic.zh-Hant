@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -169,7 +169,7 @@ Adobe Campaign的整體設定是在位於安裝目錄 **conf****** 目錄的serv
   </tr> 
   <tr> 
    <td> extraSandboxDirectories<br /> </td> 
-   <td> 額外的沙盒目錄：要加入沙盒中的其他路徑（分離彗差）。<br /> </td> 
+   <td> 額外的沙盒目錄：要加入沙盒中的其他路徑（分隔昏迷）。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> '/home/customers/,/sftp/' <br /> </td> 
   </tr> 
@@ -463,7 +463,7 @@ Adobe Campaign的整體設定是在位於安裝目錄 **conf****** 目錄的serv
 
 ### preproseCommand {#preprocesscommand}
 
-以下是dataStore > prefosterCommand節 **點的不同參數** 。 這些是用於預處理「載入檔案」工作流活動的授權命令。
+以下是dataStore > preprocessCommand節 **點的不同參數** 。 這些是用於預處理「載入檔案」工作流活動的授權命令。
 
 <table> 
  <thead> 
@@ -572,7 +572,7 @@ For additional information, refer to this [section](../../installation/using/con
  </thead> 
  <tbody> 
   <tr> 
-   <td> blacklistFile<br /> </td> 
+   <td> blackstFile<br /> </td> 
    <td> 包含要黑名單命令的檔案路徑。 <br /> </td> 
    <td> 字串<br /> </td> 
   </tr> 
@@ -1123,7 +1123,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> smtpEnableTLS<br /> </td> 
-   <td> 啟動SMTPS支援：當遠端伺服器支援時，以安全模式(STARTTLS/SMTPS)啟動傳送電子郵件。<br /> </td> 
+   <td> 啟動SMTPS支援：當遠端伺服器支援時，以安全模式(STARTTLS/SMTPS)啟動電子郵件傳送。<br /> </td> 
    <td> 布林值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1556,7 +1556,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> 如果設為"true"，您的例項會使用「增強 <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">MTA」</a>。<br /> </td> 
+   <td> 如果設為"true"，您的例項會使用增強 <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">的MTA</a>。<br /> </td> 
    <td> 布林值<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1597,7 +1597,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
  <tbody> 
   <tr> 
    <td> maxPeriodSec<br /> </td> 
-   <td> 回收後：句點，以秒為單位表示，之後檔案將自動從快取中刪除以回收儲存。<br /> </td> 
+   <td> 回收後：句點，以秒錶示，之後檔案將自動從快取中刪除以回收儲存。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
@@ -1706,7 +1706,7 @@ For additional information, refer to this [section](../../installation/using/con
 
 在「 **mta >子節點** 」中，設定下列參數。 這是子伺服器的配置。
 
-如需詳細資訊，請參閱電 [子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization)。
+如需詳細資訊，請參閱「電子郵 [件傳送最佳化」](../../installation/using/email-deliverability.md#email-sending-optimization)。
 
 <table> 
  <thead> 
@@ -1952,7 +1952,7 @@ For additional information, refer to this [section](../../installation/using/con
 
 ## 流水線 {#pipelined}
 
-以下是流水線節點的不 **同參數** 。 這是Pipeline services事件處理模組的配置。
+以下是流水線節點的不 **同參數** 。 這是Pipeline Services事件處理模組的配置。
 
 <table> 
  <thead> 
@@ -2014,7 +2014,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> forcedPipelineEndpoint<br /> </td> 
-   <td> 監聽URL:強制Pipeline services的監聽URL。 <br /> </td> 
+   <td> 監聽URL:強制Pipeline Services的監聽URL。 <br /> </td> 
    <td> 字串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3192,7 +3192,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> IMS組織識別碼：Adobe Marketing cloud中的唯一組織識別碼，尤其用於VisitorID服務和IMS SSO。 <br /> </td> 
+   <td> IMS組織識別碼：Adobe Marketing Cloud中的唯一組織識別碼，尤其用於VisitorID服務和IMS SSO。 <br /> </td> 
    <td> 字串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
