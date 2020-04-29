@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -25,10 +25,10 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/blue3.png"/><strong>發行候選人</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>不再提供</strong></td> 
-   <td><img src="assets/red3.png"/><strong>已過時</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>發行候選人</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再提供</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>已過時</strong></td> 
   </tr> 
    <tr> 
    <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
@@ -39,19 +39,19 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
  </tbody> 
 </table>
 
-最 **後一個穩定版本** 是9032(205c981c3)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue_2.png) 版本20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) 版本20.1.2 - Build 9123 {#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
-## ![](assets/orange_2.png) 版本20.1 —— 組建版本9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 組建版本9122 {#release-20-1-build-9122}
 
 _2020年2月17日_
 
-**新增功能？**
+**新增功能?**
 
 <table> 
  <thead> 
@@ -61,7 +61,7 @@ _2020年2月17日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別上擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
+   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
     <p>如需詳細資訊，請參閱詳細 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">的檔案</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">和教學影片</a>。</p>
    </td> 
   </tr> 
@@ -123,7 +123,7 @@ _2020年2月17日_
 
 * 資料庫記錄管理得到了增強。
 
-* 連接池的健壯性已經得到改善，這可以防止意外連接故障的發生太多。
+* 連接池的健壯性已經得到改善，這可能防止意外連接故障的發生太多。
 
 * 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [閱讀更多資訊](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
