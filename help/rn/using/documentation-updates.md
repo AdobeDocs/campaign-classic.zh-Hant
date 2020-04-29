@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
+source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 
 ---
 
@@ -134,7 +134,7 @@ Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特�
 
 「WdbcOptions_TempDbName」選項已新增至促銷活動選項清單。 [閱讀更多資訊](../../installation/using/configuring-campaign-options.md)
 
-FDA矩陣頁面已移至此 [處](/help/rn/using/assets/fda_rdbms_rights.pdf)。
+FDA矩陣頁面已移至此 [處](../../platform/using/remote-database-access-rights.md)。
 
 「存取權限矩陣」頁面已移至 [此處](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
 
