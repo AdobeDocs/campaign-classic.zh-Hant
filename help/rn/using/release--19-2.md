@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -27,10 +27,10 @@ source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/blue3.png"/><strong>發行候選人</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>不再提供</strong></td> 
-   <td><img src="assets/red3.png"/><strong>已過時</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>發行候選人</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再提供</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>已過時</strong></td> 
   </tr> 
    <tr> 
    <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
  </tbody> 
 </table>
 
-最 **後一個穩定版本** 是9032(205c981c3)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) 版本19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/orange_2.png) 版本19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _2020年2月07日_
 
@@ -52,11 +52,11 @@ _2020年2月07日_
 * 修正因實施SSL認證而導致使用者連線在Windows伺服器上失敗的回歸問題。 (NEO-20629)
 * 修正「關於」功能表中顯示錯誤版本標 **簽** 。
 
-## ![](assets/orange_2.png) 版本19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/orange_2.png) 版本19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
-**新增功能？**
+**新增功能?**
 
 <table> 
  <thead> 
