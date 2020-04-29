@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -27,10 +27,10 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/blue3.png"/><strong>發行候選人</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>不再提供</strong></td> 
-   <td><img src="assets/red3.png"/><strong>已過時</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>發行候選人</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再提供</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>已過時</strong></td> 
   </tr> 
    <tr> 
    <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
  </tbody> 
 </table>
 
-最 **後一個穩定版本** 是9032(205c981c3)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) 版本19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ _2019年10月3日_
 * 修正Mid-Sourcing伺服器無法處理某些訊息的問題。 (NEO-12395)
 * 修正無法充分使用SQL資料管理活動（缺少名為右的「SQL資料管理」）的問題。
 
-## ![](assets/orange_2.png) 版本19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _2019年8月13日_
 
@@ -74,31 +74,35 @@ _2019年8月13日_
 
 ## 版本19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 2020 **年3月5日**:新建版本(9032-...205c981c3)，包含下列修正：
+![](assets/do-not-localize/green_2.png) 2020 **年4月29日**:新建版本(9032@3a9dc9c)，其中包含下列修正：
+
+* 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，可聯絡客戶服務。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱「安全性與隱私權」核 [對清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+* 修正影像無法顯示在「行」傳送上的問題。 (NEO-23207)
+
+![](assets/do-not-localize/orange_2.png) 2020 **年3月5日**:新建版本(9032@19f73c5)，其中包含下列修正：
 
 * 修正使用FTP over SSL的外部帳戶的問題。 (NEO-20498)
 
-![](assets/orange_2.png) 2019 **年12月17日**:新組建版本(9032-...9d34fb17e)，包含下列修正：
+![](assets/do-not-localize/orange_2.png) 2019 **年12月17日**:新建版本(9032@d6b8062)，其中包含下列修正：
 
-* 修正下列通訊管道的追蹤問題：行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。
-(NEO-19595)
+* 修正下列通訊管道的追蹤問題：行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。 (NEO-19595)
 
-![](assets/orange_2.png) 2019 **年12月11日**:新建版本(9032-...e28b428b7)，包含下列修正：
+![](assets/do-not-localize/orange_2.png) 2019 **年12月11日**:新建版本(9032@bc4a935)，其中包含下列修正：
 
 * 修正了使用MSSQL資料庫發送消息時的效能問題。 (NEO-17558)
 
-![](assets/orange_2.png) 2019 **年11月20日**:新建版本(9032-...3468c7bb5)，包含下列修正：
+![](assets/do-not-localize/orange_2.png) 2019 **年11月20日**:新建版本(9032@3468c7b)，其中包含下列修正：
 
 * 已修正透過IMS驗證的登入問題。 (NEO-17312)
 * 修正在多個傳送上顯示累積報表的問題。 (NEO-18165)
 * 已修正可能會封鎖或造成Web伺服器當機的問題。
 
-![](assets/orange_2.png) 2019 **年9月19日**:新建版本(9032-...ce805c93)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) 2019 **年9月19日**:新建版本(9032@cee805c)，其中包含下列修正：
 
 * 修正使用Salesforce的CRM連接器時的問題。 (NEO-17712)
 * 修正在傳送事務性訊息時，可能導致效能問題的索引問題。
 
-![](assets/orange_2.png) 2019 **年8月13日**:初始19.1.4版本，包含下列修正：
+![](assets/do-not-localize/orange_2.png) 2019 **年8月13日**:初始19.1.4版本，包含下列修正：
 
 * 修正在精靈設定期間，排程器活動產生不想要的錯誤訊息的問題。 回復NEO-11662的更新。 (NEO-17097)
 * 修正NEO-12727造成的回歸，當執行兩次測試活動時，此回歸可能導致工作流程停止。 (NEO-16835)
@@ -106,7 +110,7 @@ _2019年8月13日_
 * 已修正DKIM金鑰不再內嵌在電子郵件中的問題，因此造成傳遞能力問題。 (NEO-16804)
 * 已修正工作流程排程的各種問題。 排程的工作流程會排程為每天執行一次，而不會考慮排程器設定。 (NEO-16619、NEO-16426)
 
-## ![](assets/orange_2.png) 版本19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _2019年6月21日_
 
@@ -122,7 +126,7 @@ _2019年6月21日_
 * 現在，我們允許在匯入工作流程期間刪除在Microsoft Dynamics中建立的虛擬記錄。
 * 改進使用內部帳戶時執行安全區套件的權限。
 
-## ![](assets/orange_2.png) 版本19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1 - Build 9026{#release-19-1-build-9026}
 
 _2019年5月30日_
 
@@ -138,7 +142,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>為了提高管理員使用者的工作效率，請監控儲存空間、將IP位址列入白名單，以及為每個例項安裝SSH金鑰，以管理SFTP伺服器的設定。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參 <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">閱詳細說明</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">檔案和操作視訊</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
+   <td> <p>為了提高管理員使用者的工作效率，請監控儲存空間、將IP位址列入白名單，以及為每個例項安裝SSH金鑰，以管理SFTP伺服器的設定。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參 <a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">閱詳細說明</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">檔案和操作視訊</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
   </tr> 
     <tr> 
    <td> 稽核記錄<br /> </td> 
