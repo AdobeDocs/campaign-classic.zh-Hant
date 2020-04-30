@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
+source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 ---
 
@@ -148,14 +148,13 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
 
 >[!NOTE]
 >
->雪花連接器可用於代管和內部部署。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>[!DNL Snowflake] connector適用於代管和內部部署。 For more on this, refer to [this article](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ![](assets/snowflake_3.png)
 
 ### CentOS上的雪花 {#snowflake-centos}
 
-1. 下載Snowflake的ODBC驅動程式。 雪花車的駕車者可在這裡 [找到](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm)。
-
+1. 下載的ODBC驅動程式 [!DNL Snowflake]。 [按一下這裡](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) ，開始下載。
 1. 然後，您需要使用以下命令在CentOs上安裝ODBC驅動程式：
 
    ```
@@ -170,48 +169,38 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    /etc/init.d/nlserver6 start
    ```
 
-1. 在Campaign Classic中，在Campaign Classic中設定您的Snowflake外部帳戶。 從中 **[!UICONTROL Explorer]**&#x200B;展開菜 **[!UICONTROL Administration]** 單。
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
-1. 展開功 **[!UICONTROL Platform]** 能表並按一下 **[!UICONTROL External accounts]**。
+1. 選擇內建外部 **[!UICONTROL Snowflake]** 帳戶。
 
-1. 選擇現成可用的外部 **[!UICONTROL Snowflake]** 帳戶。
+1. 設定外 **[!UICONTROL Snowflake]** 部帳戶，您必須指定：
 
-1. 要配置外部 **[!UICONTROL Snowflake]** 帳戶：
+   * **[!UICONTROL Server]**:伺服器的URL [!DNL Snowflake]
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**:用戶名稱
 
-      雪花伺服器的URL。
+   * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Account]**
-
-      用戶名。
-
-   * **[!UICONTROL Password]**
-
-      使用者帳戶密碼。
-
-   * **[!UICONTROL Database]**
-
-      資料庫的名稱。
+   * **[!UICONTROL Database]**:資料庫的名稱
    ![](assets/snowflake.png)
 
-1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy function]** 下按鈕以建立函式。
+1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
 
    ![](assets/snowflake_2.png)
 
 連接器支援以下選項：
 
-| 選項 | 值 | 說明 |
-|---|---|---|
-| 工作架構 |  | 用於工作表的資料庫模式 |
-| 倉庫 |  | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 |  | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>[有關詳細資訊，請參見此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | 0, 1-7 | 依預設設為0。 （WEEK_START會話參數）有 <br>關此的詳細資訊，請參閱本 [頁](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | TRUE/FALSE | 預設設定為TRUE。 此選項可用於禁用Snowflake快取結果（USE_CACHED_RESULTS會話參數） <br>有關此資訊，請參閱本 [頁](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 選項 | 說明 |
+|---|---|
+| 工作架構 | 用於工作表的資料庫模式 |
+| 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
+| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
+| WeekStart | WEEK_START會話參數。 依預設設為0。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
+| UseCachedResult | USE_CACHED_RESULTS會話參數。 預設設定為TRUE。 此選項可用於禁用雪花快取結果。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
 
 ### 德比安雪花 {#snowflake-debian}
 
-1. 下載Snowflake的ODBC驅動程式。 雪花車的駕車者可在這裡 [找到](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html)。
+1. 下載的ODBC驅動程式 [!DNL Snowflake]。 [按一下這裡](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) ，開始下載。
 
 1. 然後，您需要使用以下命令在Debian上安裝ODBC驅動程式：
 
@@ -227,97 +216,77 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    systemctl start nlserver.service
    ```
 
-1. 在Campaign Classic中，在Campaign Classic中設定您的Snowflake外部帳戶。 從中 **[!UICONTROL Explorer]**&#x200B;展開菜 **[!UICONTROL Administration]** 單。
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
-1. 展開功 **[!UICONTROL Platform]** 能表並按一下 **[!UICONTROL External accounts]**。
+1. 選擇內建外部 **[!UICONTROL Snowflake]** 帳戶。
 
-1. 選擇現成可用的外部 **[!UICONTROL Snowflake]** 帳戶。
+1. 若要設定外 **[!UICONTROL Snowflake]** 部帳戶，您必須指定：
 
-1. 要配置外部 **[!UICONTROL Snowflake]** 帳戶：
+   * **[!UICONTROL Server]**:伺服器的URL [!DNL Snowflake]
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**:用戶名稱
 
-      雪花伺服器的URL。
+   * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Account]**
-
-      用戶名。
-
-   * **[!UICONTROL Password]**
-
-      使用者帳戶密碼。
-
-   * **[!UICONTROL Database]**
-
-      資料庫的名稱
+   * **[!UICONTROL Database]**:資料庫的名稱
    ![](assets/snowflake.png)
 
-1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy function]** 下按鈕以建立函式。
+1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
 
    ![](assets/snowflake_2.png)
 
 連接器支援以下選項：
 
-| 選項 | 值 | 說明 |
-|---|---|---|
-| 工作架構 |   | 用於工作表的資料庫模式 |
-| 倉庫 |   | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 |   | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>[有關詳細資訊，請參見此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | 0, 1-7 | 依預設設為0。 （WEEK_START會話參數）有 <br>關此的詳細資訊，請參閱本 [頁](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | TRUE/FALSE | 預設設定為TRUE。 此選項可用於禁用Snowflake快取結果（USE_CACHED_RESULTS會話參數） <br>有關此資訊，請參閱本 [頁](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 選項 | 說明 |
+|---|---|
+| 工作架構 | 用於工作表的資料庫模式 |
+| 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
+| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
+| WeekStart | WEEK_START會話參數。 依預設設為0。  <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)。 |
+| UseCachedResult | USE_CACHED_RESULTS會話參數。 預設設定為TRUE。 此選項可用於禁用雪花快取結果。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
 
 ### 窗戶上的雪花 {#snowflake-windows}
 
-1. 下載Windows [版ODBC驅動程式](https://docs.snowflake.net/manuals/user-guide/odbc-download.html)。 請注意，您需要管理員級權限才能安裝驅動程式。 For more on this, refer to this [page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
+1. 下載Windows [版ODBC驅動程式](https://docs.snowflake.net/manuals/user-guide/odbc-download.html)。 請注意，您需要管理員級權限才能安裝驅動程式。 For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
 
-1. 配置ODBC驅動程式。 For more on this, refer to this [page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
+1. 配置ODBC驅動程式。 For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. 在安裝並配置ODBC驅動程式後，您需要在Campaign Classic中配置Snowflake外部帳戶。 從中 **[!UICONTROL Explorer]**&#x200B;展開菜 **[!UICONTROL Administration]** 單。
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
-1. 展開功 **[!UICONTROL Platform]** 能表並按一下 **[!UICONTROL External accounts]**。
+1. 選擇內建外部 **[!UICONTROL Snowflake]** 帳戶。
 
-1. 選擇現成可用的外部 **[!UICONTROL Snowflake]** 帳戶。
+1. 若要設定外 **[!UICONTROL Snowflake]** 部帳戶，您必須指定：
 
-1. 要配置外部 **[!UICONTROL Snowflake]** 帳戶：
+   * **[!UICONTROL Server]**:伺服器的URL [!DNL Snowflake]
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**:用戶名稱
 
-      雪花伺服器的URL。
+   * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Account]**
-
-      用戶名。
-
-   * **[!UICONTROL Password]**
-
-      使用者帳戶密碼。
-
-   * **[!UICONTROL Database]**
-
-      資料庫的名稱
+   * **[!UICONTROL Database]**:資料庫的名稱
    ![](assets/snowflake.png)
 
-1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy function]** 下按鈕以建立函式。
+1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
 
    ![](assets/snowflake_2.png)
 
 連接器支援以下選項：
 
-| 選項 | 值 | 說明 |
+| 選項 | 說明 |
 |---|---|---|
-| 工作架構 |   | 用於工作表的資料庫模式 |
-| 倉庫 |   | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 |   | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>[有關詳細資訊，請參見此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | 0, 1-7 | 依預設設為0。 （WEEK_START會話參數）有 <br>關此的詳細資訊，請參閱本 [頁](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | TRUE/FALSE | 預設設定為TRUE。 此選項可用於禁用Snowflake快取結果（USE_CACHED_RESULTS會話參數） <br>有關此資訊，請參閱本 [頁](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 工作架構 | 用於工作表的資料庫模式 |
+| 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
+| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
+| WeekStart | WEEK_START會話參數。 依預設設為0。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)。 |
+| UseCachedResult | 預設設定為TRUE。 此選項可用於禁用Snowflake快取結果（USE_CACHED_RESULTS會話參數） <br>有關此選項，請參 [閱此頁](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
 
 ## 配置對Hadoop 3.0的訪問 {#configure-access-to-hadoop-3}
 
 在FDA中連線至Hadoop外部資料庫需要Adobe Campaign伺服器上的下列組態。 請注意，此配置適用於Windows和Linux。
 
-1. 根據您的OS版本下載Hadoop的ODBC驅動程式。 可在此頁上找到驅動 [程式](https://www.cloudera.com/downloads.html)。
+1. 根據您的OS版本下載Hadoop的ODBC驅動程式。 此頁上可找到驅 [動程式](https://www.cloudera.com/downloads.html)。
 
-1. 然後，您需要安裝ODBC驅動程式並為Hive連接建立DSN。 可在此找到說 [明](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
+1. 然後，您需要安裝ODBC驅動程式並為Hive連接建立DSN。 本頁提供說 [明](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
 1. 在下載並安裝ODBC驅動程式後，您需要重新啟動Campaign Classic。 要執行此操作，請運行以下命令：
 
@@ -326,37 +295,23 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    systemctl start nlserver.service
    ```
 
-1. 在Campaign Classic中，在Campaign Classic中設定您的Hadoop外部帳戶。 從中 **[!UICONTROL Explorer]**&#x200B;展開菜 **[!UICONTROL Administration]** 單。
-
-1. 展開功 **[!UICONTROL Platform]** 能表並按一下 **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您接著可以設定Snowflake外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
 1. 按一 **[!UICONTROL Create]** 下並選 **[!UICONTROL External database]** 取為帳戶類型。
 
-1. 要配置外部 **[!UICONTROL  Hadoop]** 帳戶：
+1. 若要設定 **[!UICONTROL  Hadoop]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
 
-      ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Server]**:DNS的名稱
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**:用戶名稱
 
-      DNS的名稱。
+   * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Account]**
+   * **[!UICONTROL Database]**:DSN中未指定的資料庫名稱。 如果在DSN中指定，則可保留為空
 
-      用戶名。
-
-   * **[!UICONTROL Password]**
-
-      使用者帳戶密碼。
-
-   * **[!UICONTROL Database]**
-
-      DSN中未指定的資料庫名稱。 如果在DSN中指定，則可將其留空。
-
-   * **[!UICONTROL Time zone]**
-
-      伺服器時區
+   * **[!UICONTROL Time zone]**:伺服器時區
    ![](assets/hadoop3.png)
 
 連接器支援以下ODBC選項：
@@ -377,8 +332,6 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
 
 ## 配置對Hadoop 2.1的訪問 {#configure-access-to-hadoop}
 
-有關如何在FDA中配置Hadoop外部資料庫的詳細資訊，請參閱本 [文](https://helpx.adobe.com/campaign/kb/access-hadoop-2.html)。
-
 ### 適用於Windows {#for-windows}
 
 1. 安裝Windows版 [ODBC和Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) 驅動程式。
@@ -393,7 +346,7 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    User/Password: admin/<your password here>
    ```
 
-1. 建立Hadoop外部帳戶，如建立共用連 [接部分中詳細](../../message-center/using/creating-a-shared-connection.md) 。
+1. 建立Hadoop外部帳戶，如本頁 [部分所述](../../platform/using/external-accounts.md#hadoop-external-account) 。
 
 ### Linux版 {#for-linux}
 
@@ -480,7 +433,7 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    isql vorac -v
    ```
 
-1. 建立Hadoop外部帳戶，如建立共用連 [接部分中詳細](../../message-center/using/creating-a-shared-connection.md) 。
+1. 建立Hadoop外部帳戶，如本頁 [部分所述](../../platform/using/external-accounts.md#hadoop-external-account) 。
 
 ## 配置對Netezza的訪問 {#configure-access-to-netezza}
 
@@ -529,7 +482,21 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
    * **NZ_ODBC_INI_PATH**:odbc.ini檔案的位置。 Netezza還需要此第二個變數來使用odbc.ini檔案。
 
-1. 建立Netezza外部帳戶，如建立共用連 [接一節中所述](../../message-center/using/creating-a-shared-connection.md) 。
+1. 在Campaign Classic中，您接著可以設定Netezza外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+
+1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
+
+1. 若要設定外 **[!UICONTROL Netezza]** 部帳戶，您必須指定：
+
+   * **[!UICONTROL Type]**:內泰扎
+
+   * **[!UICONTROL Server]**:Netezza伺服器的URL
+
+   * **[!UICONTROL Account]**:用戶名稱
+
+   * **[!UICONTROL Password]**:使用者帳戶密碼
+
+   * **[!UICONTROL Database]**:資料庫的名稱
 
 >[!NOTE]
 >
@@ -625,7 +592,21 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    * 如果您使用customer.sh檔案來宣告您的路徑：為LD_LIBRARY_PATH變數添加路徑/opt/sybase/IQ-16_0/lib64。
    * 否則，請使用Unix命令。
 
-1. 建立新的FDA外部帳戶，如「建立共用連 [線」一節所述](../../message-center/using/creating-a-shared-connection.md) 。 對於Sybase IQ，伺服器名與步驟5中定義的ODBC連`<server_alias>`接()相對應。 它不一定是伺服器本身的名稱。
+1. 在Campaign Classic中，您可以配置Sybase IQ外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+
+1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
+
+1. 若要設定外 **[!UICONTROL Sybase IQ]** 部帳戶，您必須指定：
+
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
+
+   * **[!UICONTROL Server]**:與步驟5中定義的ODBC`<server_alias>`連接()相對應。 不一定是伺服器本身的名稱。
+
+   * **[!UICONTROL Account]**:用戶名稱
+
+   * **[!UICONTROL Password]**:使用者帳戶密碼
+
+   * **[!UICONTROL Database]**:資料庫的名稱
 
 >[!NOTE]
 >
@@ -674,6 +655,22 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
    * **NLSPATH**:opermsgs.cat檔案的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
 
+1. 在Campaign Classic中，您接著可以設定您的Teradata外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+
+1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
+
+1. 若要設定外 **[!UICONTROL Teradata]** 部帳戶，您必須指定：
+
+   * **[!UICONTROL Type]**:Teradata
+
+   * **[!UICONTROL Server]**:Teradata伺服器的URL
+
+   * **[!UICONTROL Account]**:用戶名稱
+
+   * **[!UICONTROL Password]**:使用者帳戶密碼
+
+   * **[!UICONTROL Database]**:資料庫的名稱
+
 ## 配置對SAP HANA的訪問 {#configure-access-to-sap-hana}
 
 在FDA中連線至SAP HANA外部資料庫需要Adobe Campaign伺服器上的某些額外設定：
@@ -712,4 +709,16 @@ source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
    * **LD_LIBRARY_PATH**:依預設，應包含SAP Hana用戶端(/usr/sap/hdbclient/libodbcHDB.so)的連結。
    * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
 
-1. 建立SAP Hana外部帳戶，如「建立共用連接」 [部分中所述](../../message-center/using/creating-a-shared-connection.md) 。
+1. 在Campaign Classic中，您可以設定SAP Hana外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+
+1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
+
+1. 若要設定外 **[!UICONTROL SAP Hana]** 部帳戶，您必須指定：
+
+   * **[!UICONTROL Type]**:SAP Hana
+
+   * **[!UICONTROL Server]**:SAP Hana伺服器的URL
+
+   * **[!UICONTROL Account]**:用戶名稱
+
+   * **[!UICONTROL Password]**:使用者帳戶密碼
