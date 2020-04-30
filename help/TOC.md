@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
+source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 ---
 
@@ -286,34 +286,34 @@ source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 + Integrating with Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
    + 觀眾分享 {#audience-sharing}
-      + [使用Adobe Experience Cloud分享受眾](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [與[!DNL Adobe Experience Cloud]共用觀眾](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向Adobe提交請求](integrations/using/submitting-request-to-adobe.md)
-      + [在Adobe Campaign中設定共用觀眾整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [在[!DNL Adobe Campaign]中設定共用觀眾整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [疑難排解](integrations/using/troubleshooting.md)
       + [匯入和匯出觀眾](integrations/using/importing-and-exporting-audiences.md)
    + 資產共用 {#asset-sharing}
-      + [使用Adobe Experience Cloud共用資產](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [設定資產存取權](integrations/using/configuring-access-to-assets.md)
+      + [與[!DNL Adobe Experience Cloud]共用資產](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [配置對[!DNL資產]的訪問](integrations/using/configuring-access-to-assets.md)
       + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [關於Adobe Experience Manager](integrations/using/about-adobe-experience-manager.md)
+      + [關於[!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [設定整合](integrations/using/configuring-the-integration.md)
-      + [建立Experience Manager電子報](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [建立[!DNL Experience Manager]電子報](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [與Adobe Target整合](integrations/using/integrating-with-adobe-target.md)
-      + [設定與Adobe Target的整合](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [與[!DNL Adobe Target]整合](integrations/using/integrating-with-adobe-target.md)
+      + [設定與[!DNL Adobe Target]的整合](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + 透過Adobe ID連線 {#connecting-via-an-adobe-id}
-      + [關於Adobe ID](integrations/using/about-adobe-id.md)
-      + [設定IMS](integrations/using/configuring-ims.md)
-      + [實作IMS](integrations/using/implementing-ims.md)
+      + [關於[!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [配置[!DNL IMS]](integrations/using/configuring-ims.md)
+      + [實作[!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS疑難排解](integrations/using/ims-troubleshooting.md)
    + ACS連接器 {#acs-connector}
-      + [ACS連接器原理和資料週期](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS連接器]原理和資料週期](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步設定檔](integrations/using/synchronizing-profiles.md)
       + [同步對象](integrations/using/synchronizing-audiences.md)
       + [同步化網頁應用程式](integrations/using/synchronizing-web-applications.md)
-      + [診斷ACS連接器](integrations/using/troubleshooting-the-acs-connector.md)
+      + [診斷[!DNL ACS連接器]](integrations/using/troubleshooting-the-acs-connector.md)
 + 使用工作流程自動化 {#automating-with-workflows}
    + 簡介 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
