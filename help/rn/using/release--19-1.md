@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
+source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
 
 ---
 
@@ -78,6 +78,17 @@ _2019年8月13日_
 
 * 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，可聯絡客戶服務。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱「安全性與隱私權」核 [對清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 * 修正影像無法顯示在「行」傳送上的問題。 (NEO-23207)
+* 修正「檔案傳輸 **** 」活動導致SFTP金鑰驗證無法在Debian 9上運作的問題。 (NEO-23183)
+* 已修正在高頻率傳送時，可能會影響推播通知的問題。 (NEO-20516)
+* 修正選件回應管理中可能導致Web伺服器當機的問題。 (NEO-19482)
+* 修正LibreOffice管理中無法匯出報表的錯誤。 (NEO-20982)
+* 修正使用調查活動升級許多工作流程時發生錯誤的問題。
+* 已改善LibreOffice管理，以避免使用。odt檔案進行電子郵件預覽時發生失敗。
+* 已改善Apache連線的管理，以避免Web服務上的延遲。
+* 已改善版本標籤（7位數）在「關於」功能表 **中的顯** 示。
+* 修正清單管理中的回歸，使選件無法發佈。
+* 修正導致清除工作流程當機的回歸。
+* 修正清除工作流程記錄檔中的次要回歸。
 
 ![](assets/do-not-localize/orange_2.png) 2020 **年3月5日**:新建版本(9032@19f73c5)，其中包含下列修正：
 
