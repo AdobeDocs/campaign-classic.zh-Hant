@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
+source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
 
 ---
 
@@ -30,11 +30,11 @@ source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
 * [FTP外部帳戶](#ftp-external-account)
 * [外部資料庫外部帳戶](#external-database-external-account)
 * [Web Analytics外部帳戶](#web-analytics-external-account)
-* [Facebook connect外部帳戶](#facebook-connect-external-account)
+* [Facebook Connect外部帳戶](#facebook-connect-external-account)
 * [執行實例外部帳戶](#execution-instance-external-account)
-* [Adobe Experience cloud外部帳戶](#adobe-experience-cloud-external-account)
+* [Adobe Experience Cloud外部帳戶](#adobe-experience-cloud-external-account)
 * [SFTP外部帳戶](#sftp-external-account)
-* [Adobe Experience manager外部帳戶](#adobe-experience-manager-external-account)
+* [Adobe Experience Manager外部帳戶](#adobe-experience-manager-external-account)
 * [Amazon Simple Storage Service(S3)外部帳戶](#amazon-simple-storage-service--s3--external-account)
 * [Azure外部帳戶](#azure-external-account)
 * [Hadoop外部帳戶](#hadoop-external-account)
@@ -229,7 +229,7 @@ Teradata外 **** 部帳戶可讓您將Campaign例項連線至Teradata外部資�
 
 ![](assets/ext_account_20.png)
 
-當多個Adobe Campaign使用者連線至相同的FDA Teradata外部帳戶時，標籤可讓您在作業階段上設定查詢頻帶，即一組金鑰／值配對。 **[!UICONTROL Query banding]**
+當多個Adobe Campaign使用者連線至相同的FDA Teradata外部帳戶時，標籤可讓您在作業階段中設定查詢頻帶，即一組金鑰／值配對。 **[!UICONTROL Query banding]**
 
 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign都會傳送中繼資料，其中包含與此使用者相關的索引鍵清單。 然後Teradata管理員就可以將這些資料用於稽核或管理存取權限。
 
@@ -249,7 +249,7 @@ Teradata外 **** 部帳戶可讓您將Campaign例項連線至Teradata外部資�
 
 對於此外部帳戶，必須豐富追蹤URL的計算公式，並且必須核准兩個解決方案之間的連線。 For more on this, refer to this [page](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
 
-## Facebook connect外部帳戶 {#facebook-connect-external-account}
+## Facebook Connect外部帳戶 {#facebook-connect-external-account}
 
 外部 **[!UICONTROL Facebook Connect]** 帳戶可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更輕鬆。
 
@@ -293,7 +293,7 @@ Teradata外 **** 部帳戶可讓您將Campaign例項連線至Teradata外部資�
 
 For more information on this configuration, refer to this [page](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
-## Adobe Experience cloud外部帳戶 {#adobe-experience-cloud-external-account}
+## Adobe Experience Cloud外部帳戶 {#adobe-experience-cloud-external-account}
 
 若要使用Adobe ID連線至Adobe Campaign主控台，您必須設定外 **[!UICONTROL Adobe Experience Cloud (MAC)]** 部帳戶。
 
@@ -329,11 +329,11 @@ For more information on this configuration, refer to this [page](../../message-c
 
 * **[!UICONTROL Server]**
 
-   Adobe Experience cloud實例的URL。
+   Adobe Experience Cloud實例的URL。
 
 * **[!UICONTROL Tenant]**
 
-   您的Adobe Experience cloud租用戶名稱。
+   您的Adobe Experience Cloud租用戶名稱。
 
 For more information on this configuration, refer to this [page](../../integrations/using/configuring-ims.md).
 
@@ -359,7 +359,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存�
 
    用於連接到SFTP伺服器的口令。
 
-## Adobe Experience manager外部帳戶 {#adobe-experience-manager-external-account}
+## Adobe Experience Manager外部帳戶 {#adobe-experience-manager-external-account}
 
 外 **[!UICONTROL AEM (AEM instance)]** 部帳戶可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容以及表單。
 
@@ -511,7 +511,6 @@ Microsoft Dynamics連接器搭配Adobe Campaign運作的設定視您的部署類
 
 * **[!UICONTROL Custom Key identifier]**
 
-
 * **[!UICONTROL Key ID]**
 
 * **[!UICONTROL Client identifier]**
@@ -564,11 +563,11 @@ For more information on this configuration, refer to this [page](../../platform/
 
 * **[!UICONTROL Client identifier]**
 
-   若要知道在何處找到您的客戶識別碼，請參閱本 [頁](https://help.salesforce.com/articleView?id=000205876&type=1)。
+   若要知道在何處找到您的客戶識別碼，請參閱本 [頁](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
 
 * **[!UICONTROL Security token]**
 
-   若要瞭解在何處找到您的安全Token，請參閱本 [頁](https://help.salesforce.com/articleView?id=000205876&type=1)。
+   若要瞭解在何處找到您的安全Token，請參閱本 [頁](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
 
 * **[!UICONTROL API version]**
 
