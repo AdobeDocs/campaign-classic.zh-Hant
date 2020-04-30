@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
+source-git-commit: 9d22af2a2e25cb0dd83759096139996372f60c33
 
 ---
 
@@ -32,7 +32,6 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它將自動檢測目標表的結構並使用SQL源中的資料。
 
-
 若要使用此功能，您必須：
 
 1. 擁有與Adobe Campaign FDA模組相容的外部資料庫。 資料庫系統和相容版本清單在相容性清單中 [有詳細說明](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 使用者也必須擁有 [Adobe Campaign](../../platform/using/remote-database-access-rights.md) 和外部資料庫的必要權限。
@@ -41,7 +40,7 @@ FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它將自動�
 1. [在Adobe Campaign中建立外部資料庫的架構](../../platform/using/creating-data-schema.md) 。 這允許您識別外部資料庫的資料結構。
 1. 最終， [從先前建立的架構建立新的目標對應](../../platform/using/defining-data-mapping.md) ，如果傳送的收件者來自外部資料庫的話。 這具有某些限制，特別是在個人化交貨方面。
 
-建立資料結構後，您就可以在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本小節](../../workflow/using/executing-a-workflow.md#architecture)。
+建立資料結構後，您就可以在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本小節](../../workflow/using/accessing-an-external-database--fda-.md)。
 
 ## 最佳實務與建議 {#best-practices-and-recommendations}
 
