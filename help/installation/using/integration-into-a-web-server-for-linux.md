@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）在應用程式伺
    http://<computer>:8080
    ```
 
-不過，出於安全性和管理原因，我們建議使用專用的Web伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦在網際網路上公開，而且您想要在網路外開啟主控台的存取權。
+不過，出於安全性和管理原因，我們建議使用專用的Web伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦在網際網路上公開，而且您想要在網路外開啟主控台的存取。
 
 Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
@@ -45,9 +45,9 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 >
 >如果您不使用追蹤功能，則可執行Apache或IIS的標準安裝，並重新導向至促銷活動。 不需要追蹤Web伺服器擴充模組。
 
-## 使用Debian配置Apache web伺服器 {#configuring-the-apache-web-server-with-debian}
+## 使用Debian配置Apache Web伺服器 {#configuring-the-apache-web-server-with-debian}
 
-如果您已在基於APT的分發下安裝Apache，則此程式適用。
+如果您已在基於APT的分發中安裝Apache，則此程式適用。
 
 應用以下步驟：
 
@@ -112,7 +112,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    invoke-rc.d apache2 restart
    ```
 
-## 在RHEL中配置Apache web伺服器 {#configuring-apache-web-server-in-rhel}
+## 在RHEL中配置Apache Web伺服器 {#configuring-apache-web-server-in-rhel}
 
 如果您已在基於RPM（RHEL、CentOS和Suse）的軟體包下安裝並保護Apache，則此過程適用。
 
@@ -157,7 +157,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    ForceLanguagePriority
    ```
 
-1. 在資料夾中建立Adobe Campaign專用的設定 `/etc/httpd/conf.d/` 檔。 例如 `CampaignApache.conf`
+1. 在資料夾中建立Adobe Campaign專用的設定 `/etc/httpd/conf.d/` 檔。 For example `CampaignApache.conf`
 
 1. 對 **於RHEL7**，請在檔案中新增下列指示：
 
@@ -234,19 +234,19 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 Trying 127.0.0.1...
 Connected to localhost.localdomain.
 Escape character is '^]'.
-````
+```
 
 然後輸入：
 
 ```
 GET /r/test
-````
+```
 
 將顯示以下資訊：
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
 Connection closed by foreign host.
-````
+```
 
 您也可以從網頁瀏 [`https://<computer>`](https://machine/r/test) 覽器要求URL。
