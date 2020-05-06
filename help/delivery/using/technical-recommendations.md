@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+workflow-type: tm+mt
+source-wordcount: '2433'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Adobe Campaign會檢查是否提供反向DNS來識別IP位址，且這會正確�
 
 反向DNS的網域選擇在處理某些ISP時會產生影響。 尤其是AOL，它只接受與反向DNS位址位於相同網域的回饋回圈(請參 [閱回饋回圈](#feedback-loop))。
 
-有工具可用於驗證域的配置： [https://mxtoolbox.com/SuperTool.aspx](https://mxtoolbox.com/SuperTool.aspx)。
+有工具可用於驗證域的配置： [https://mxtoolbox.com/SuperTool.aspx](https://mxtoolbox.com/SuperTool.aspx).
 
 ### MX規則 {#mx-rules}
 
@@ -56,17 +59,17 @@ SPF（發件人策略框架）是一種電子郵件驗證標準，允許域的�
 
 SPF是一種技術，在某種程度上，它使您能夠確保電子郵件中使用的域名不偽造。 當從域收到消息時，查詢域的DNS伺服器。 回應是簡短記錄（SPF記錄），詳細列出哪些伺服器有權從此網域傳送電子郵件。 如果我們假定只有域的所有者有更改此記錄的方法，我們可以認為此技術不允許偽造發送者地址，至少不允許偽造&quot;@&quot;右側的部分。
 
-在最終 [RFC 4408規範中](https://www.rfc-editor.org/info/rfc4408)，消息的兩個元素用於確定被視為發送方的域：由SMTP &quot;HELO&quot;（或&quot;EHLO&quot;）命令指定的域和由&quot;Return-Path&quot;（或&quot;MAIL FROM&quot;）標題地址指定的域，也是彈回地址。 不同的考慮使得只考慮其中一個值成為可能；我們建議確保兩個來源都指定相同的網域。
+在最終 [RFC 4408規範中](https://www.rfc-editor.org/info/rfc4408)，消息的兩個元素用於確定被視為發送方的域： 由SMTP &quot;HELO&quot;（或&quot;EHLO&quot;）命令指定的域和由&quot;Return-Path&quot;（或&quot;MAIL FROM&quot;）標題地址指定的域，也是彈回地址。 不同的考慮使得只考慮其中一個值成為可能； 我們建議確保兩個來源都指定相同的網域。
 
 檢查SPF可評估發件人域的有效性：
 
-* **無**:無法評估，
-* **中立**:查詢的域不啟用評估，
-* **通過**:域被認為是真的，
-* **失敗**:域是偽造的，消息應該被拒絕，
-* **SoftFail**:域可能是偽造的，但消息不應僅基於此結果而拒絕，
-* **TempError**:暫時錯誤會停止評估。 消息可以被拒絕，
-* **PermError**:域的SPF記錄無效。
+* **無**: 無法評估，
+* **中立**: 查詢的域不啟用評估，
+* **通過**: 域被認為是真的，
+* **失敗**: 域是偽造的，消息應該被拒絕，
+* **SoftFail**: 域可能是偽造的，但消息不應僅基於此結果而拒絕，
+* **TempError**: 暫時錯誤會停止評估。 消息可以被拒絕，
+* **PermError**: 域的SPF記錄無效。
 
 值得注意的是，在DNS伺服器級別記錄可能需要48小時才能考慮在內。 此延遲取決於接收伺服器的DNS快取刷新頻率。
 
@@ -78,24 +81,22 @@ DKIM來自DomainKeys、Yahoo! 和Cisco Identified Internet Mail身份驗證原�
 
 DKIM已取 **代DomainKeys** 驗證。
 
->[!IMPORTANT]
->
->對於代管或混合安裝，如果您已升級至「增強MTA」，則DKIM電子郵件驗證簽署由「增強MTA」完成。 在「增強的MTA」升級中，將關閉原生「促銷活動MTA」的DKIM **[!UICONTROL Domain management]** 簽署功能。
->
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
-
 使用DKIM需要一些必要條件：
 
-* **安全性**:加密是DKIM的關鍵元素，並確保自2013年春季起1024b的DKIM安全級別是建議的最佳做法加密大小。 大部分的存取提供者不會將低DKIM金鑰視為有效。
-* **聲譽**:信譽是以IP和／或網域為基礎，但較不透明的DKIM選擇器也是需要考慮的關鍵元素。 選擇選擇器很重要：避免保留任何人都能使用的「違約」，因此名聲非常微弱。 您必須實作不同的選擇器，以便 **進行保留與贏取通訊** ，以及驗證。
-* **Adobe Campaign選項聲明**:在Adobe促銷活動中，DKIM私密金鑰是以DKIM選擇器和網域為基礎。 目前無法使用不同的選擇器為相同的網域／子網域建立多個私密金鑰。 無法定義平台或電子郵件中驗證必須使用哪個選擇器網域／子網域。 平台可選擇選擇其中一個私鑰，這表示驗證有很高的失敗機率。
+* **安全性**: 加密是DKIM的關鍵元素，並確保自2013年春季起1024b的DKIM安全級別是建議的最佳做法加密大小。 大部分的存取提供者不會將低DKIM金鑰視為有效。
+* **聲譽**: 信譽是以IP和／或網域為基礎，但較不透明的DKIM選擇器也是需要考慮的關鍵元素。 選擇選擇器很重要： 避免保留任何人都能使用的「違約」，因此名聲非常微弱。 您必須實作不同的選擇器，以便 **進行保留與贏取通訊** ，以及驗證。
+* **Adobe Campaign選項聲明**: 在Adobe促銷活動中，DKIM私密金鑰是以DKIM選擇器和網域為基礎。 目前無法使用不同的選擇器為相同的網域／子網域建立多個私密金鑰。 無法定義平台或電子郵件中驗證必須使用哪個選擇器網域／子網域。 平台可選擇選擇其中一個私鑰，這表示驗證有很高的失敗機率。
 
 >[!NOTE]
 >
->* 如果您已為Adobe Campaign例項設定DomainKeys，您只需要在網域處理規 **則中選** 取dkim。 否則，請遵循與DomainKeys相同的配置步驟（私用／公用金鑰）。
+>* 如果您已為Adobe Campaign例項設定DomainKeys，您只需要在網域管理 **規則中**[選取dkim](../../delivery/using/understanding-delivery-failures.md#domain-management)。 否則，請遵循與DomainKeys相同的配置步驟（私用／公用金鑰）。
 >* DKIM是DomainKeys的改進版本，因此無需為相同的域同時啟用DomainKeys和DKIM。
->* 下列網域目前驗證DKIM:AOL,Gmail。
+>* 下列網域目前驗證DKIM: AOL,Gmail。
 
+
+>[!IMPORTANT]
+>
+>對於代管或混合安裝，如果您已升級至 [Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)，則DKIM電子郵件驗證簽署會由Enhanced MTA針對所有網域的所有訊息進行。
 
 ### DMARC {#dmarc}
 
@@ -139,7 +140,7 @@ Recommendations for defining an SPF record:
 
 反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP將以類似於彈回郵件的方式發送到此郵箱，接收者將這些郵件報告為垃圾郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 ISP會根據這些抱怨將IP位址列入黑名單。 根據ISP的不同，投訴率約為1%會導致IP位址被列入黑名單。
 
-目前正在制定一個標準，以定義反饋迴路消息的格式：濫用 [反饋報告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
+目前正在制定一個標準，以定義反饋迴路消息的格式： 濫用 [反饋報告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
 實作例項的回饋回圈需要：
 
@@ -162,7 +163,7 @@ nlserver inMail -instance:instance -verbose.
 
 * 複製在任意數量的郵箱上收到的消息，
 * 讓每個郵箱都通過一個實例進行選擇，
-* 設定例項，使其只處理與其相關的訊息：例項資訊會包含在Adobe Campaign所傳送訊息的訊息ID標題中，因此也位於回饋回圈訊息中。 只需在實 **例配置檔案中指定checkInstanceName** 參數即可（預設情況下，不驗證實例，這可能導致某些地址被錯誤隔離）:
+* 設定例項，使其只處理與其相關的訊息： 例項資訊會包含在Adobe Campaign所傳送訊息的訊息ID標題中，因此也位於回饋回圈訊息中。 只需在實 **例配置檔案中指定checkInstanceName** 參數即可（預設情況下，不驗證實例，這可能導致某些地址被錯誤隔離）:
 
    ```
    <serverConf>
@@ -170,7 +171,7 @@ nlserver inMail -instance:instance -verbose.
    </serverConf>
    ```
 
-Adobe Campaign的Deliverability服務可管理您對下列ISP的回饋迴路服務訂閱：AOL、BlueTie、Comcast、Cox、EarthLink、FastMail、Gmail、Hotmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Telenor、Terra、UniteOnline、USEine、USA4、USA、USINE、USA、X、XALL, Yahoo, Yandex, Zoho。
+Adobe Campaign的Deliverability服務可管理您對下列ISP的回饋迴路服務訂閱： AOL、BlueTie、Comcast、Cox、EarthLink、FastMail、Gmail、Hotmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Telenor、Terra、UniteOnline、USEine、USA4、USA、USINE、USA、X、XALL, Yahoo, Yandex, Zoho。
 
 ## 清單取消訂閱 {#list-unsubscribe}
 
@@ -225,9 +226,9 @@ Gmail、Outlook.com和Microsoft Outlook都支援此方法，而且其介面中�
 
 >[!NOTE]
 >
->我們建議建立類型規則：清單取消訂閱功能會自動新增至每封電子郵件。
+>我們建議建立類型規則： 清單取消訂閱功能會自動新增至每封電子郵件。
 
-1. 清單取消訂閱：&lt;mailto:unsubscribe@domain.com>
+1. 清單取消訂閱： &lt;mailto:unsubscribe@domain.com>
 
    按一下 **取消訂閱** 連結，會開啟使用者的預設電子郵件用戶端。 此類型學規則必須新增至用於建立電子郵件的類型學中。
 
@@ -255,7 +256,7 @@ Adobe為每位客戶提供專屬的IP策略，以提升IP，以建立聲譽並�
 
 IP認證是一份白名單和傳送實務計畫，可協助確保收到電子郵件時不會受到反垃圾郵件篩選器或其他電子郵件封鎖系統的封鎖。
 
-目前有兩家供應商提供IP認證：Return Path和認證寄件者聯盟。
+目前有兩家供應商提供IP認證： Return Path和認證寄件者聯盟。
 
 認證寄件者會加入全球郵箱供應商和電子郵件安全公司使用的電子郵件白名單。 這些商業白名單基於允許發送者完全略過反垃圾郵件過濾器的系統，或者在他們進入系統時被分配增量點。
 
