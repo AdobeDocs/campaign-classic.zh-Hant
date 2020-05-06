@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
+source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 53%
 
 ---
 
@@ -45,9 +48,9 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 ## 如何設定電子郵件傳遞機制? {#how-to-configure-email-deliverability-}
 
-除了閱讀[傳遞入門指南](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)外，請參閱「電子郵件傳遞設定」一節，了解如何設定您的實例以充分發揮 Campaign 的傳遞功能。
+除了「傳遞性 [設定」區段](../../delivery/using/about-deliverability.md#configuration) ，請閱讀傳遞性技術建議，以瞭解如何設定實例，以充份發揮Campaign傳遞功能。
 
-[按一下這裡以了解更多資訊](../../installation/using/email-deliverability.md)。
+[按一下這裡以了解更多資訊](../../delivery/using/technical-recommendations.md)。
 
 ## How can I implement content approval? {#how-can-i-implement-content-approval-}
 
@@ -99,13 +102,13 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 1. 根據您的作業系統版本，前往下列位置：
 
-   * Windows 7:C:\Users\&lt;用戶名>\AppData\Roaming\Neolane\NL_5\
-   * Windows XP:C:\Documents and Settings\&lt;用戶名>\應用程式Data\Neolane\NL_5
+   * Windows 7: C:\Users\&lt;用戶名>\AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt;用戶名>\應用程式Data\Neolane\NL_5
    在這裡，您會看到許多名為nlclient-config-&lt;英數字值>.xml的xml檔案。
 
 1. 刪除這些xml檔案和關聯的資料夾。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >請勿刪除nlclient_cnx.xml檔案。
 
