@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2602'
+ht-degree: 1%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 傳送 **控制面板** ，是監控傳送以及傳送訊息時最終遇到的問題的關鍵。
 
-**相關主題**
+**相關主題：**
 
 * [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
 * [瞭解隔離管理](../../delivery/using/understanding-quarantine-management.md)
-* [提供最佳實務](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
-* [快速入門：管理傳遞能力](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)
+* [提供最佳實務](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+* [管理傳送能力](../../delivery/using/about-deliverability.md)
 
 ## 傳送控制面板 {#delivery-dashboard}
 
@@ -41,9 +44,9 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 ### 傳送摘要 {#delivery-summary}
 
-此標 **[!UICONTROL Summary]** 簽包含傳送的特性：傳送狀態、使用的頻道、傳送者的資訊、主旨、執行的相關資訊。 有關詳細資訊，請參 [閱已發送的消息數](#number-of-messages-sent)。
+此標 **[!UICONTROL Summary]** 簽包含傳送的特性： 傳送狀態、使用的頻道、傳送者的資訊、主旨、執行的相關資訊。 有關詳細資訊，請參 [閱已發送的消息數](#number-of-messages-sent)。
 
-此連 **[!UICONTROL reports]** 結可讓您檢視一組與傳送動作相關的報表：一般傳送報表、詳細報表、傳送報表、失敗訊息的分發、開啟率、點按次數和交易等。 此標籤的內容可依您的需求進行設定。 有關更多資訊，請參見[本節](../../reporting/using/delivery-reports.md)。
+此連 **[!UICONTROL reports]** 結可讓您檢視一組與傳送動作相關的報表： 一般傳送報表、詳細報表、傳送報表、失敗訊息的分發、開啟率、點按次數和交易等。 此標籤的內容可依您的需求進行設定。 有關更多資訊，請參見[本節](../../reporting/using/delivery-reports.md)。
 
 ### 傳送記錄檔和記錄 {#delivery-logs-and-history}
 
@@ -94,7 +97,7 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 * 如果您的傳送狀態不正確，請檢查是否已完成此傳送的所有必要核准，或是執行 **[!UICONTROL operationMgt]** 和工 **[!UICONTROL deliveryMgt]** 作流程時未出現錯誤。 這也可能是因為傳送時使用了傳送執行個體上未設定的相似性。
 * 如果您的交貨指標仍為零，並且您處於中間採購配置中，請檢查技術工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果狀態不是，請啟動它 **[!UICONTROL Started]**。 然後，您可以嘗試在Adobe Campaign瀏覽器中按一下滑鼠右鍵並選取 **[!UICONTROL Actions]** >，重新計算指標 **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * 如果您的傳送計數器與您的傳送不符，請嘗試在Adobe Campaign檔案總管中以滑鼠右鍵按一下相關傳送，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
-* 如果您的傳送計數器不是中部採購部署的最新版本，請檢查技術工作 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 流程是否正在執行。 For more on this, refer to this [page](../../installation/using/mid-sourcing-deployment.md).
+* 如果您的交貨計數器不是中部採購部署的最新版本，請檢查技術工 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 作流程是否正在執行。 For more on this, refer to this [page](../../installation/using/mid-sourcing-deployment.md).
 
 您也可以透過傳送控制面板，使用不同的報表來追蹤傳送。 For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
 
@@ -104,9 +107,9 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 如果傳送效能不佳，您可以檢查：
 
-* **傳送的大小**:大型傳送可能需要更長的時間才能完成。 MTA子系設定為處理預設批次大小，這適用於大部分的例項，但傳送速度持續緩慢時，需要加以檢查。
-* **傳送的目標**:傳送效能禁止受到軟反彈錯誤的影響，這些錯誤會根據重試設定進行處理。 錯誤數越多，則需要重試的次數越多。
-* **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。 您也可以檢查IP信譽和傳遞性問題。 如需詳細資訊，請參閱Adobe Campaign [Deliverability最佳實務指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，以 [及本頁](../../delivery/using/about-deliverability.md)。
+* **傳送的大小**: 大型傳送可能需要更長的時間才能完成。 MTA子系設定為處理預設批次大小，這適用於大部分的例項，但傳送速度持續緩慢時，需要加以檢查。
+* **傳送的目標**: 傳送效能禁止受到軟反彈錯誤的影響，這些錯誤會根據重試設定進行處理。 錯誤數越多，則需要重試的次數越多。
+* **整體平台負載**: 當傳送數個大型傳送時，整體平台可能會受到影響。 您也可以檢查IP信譽和傳遞性問題。 如需詳細資訊，請參閱Adobe Campaign [Deliverability最佳實務指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，以 [及本頁](../../delivery/using/about-deliverability.md)。
 
 平台與資料庫維護也會影響傳送傳送的效能。 有關詳細資訊，請參見[此頁面](../../production/using/database-performances.md)。
 
@@ -118,10 +121,10 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 * 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign傳遞 [最佳實務](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，以瞭解內容准則。
 * Adobe Campaign MTA中可能已發生調節。 這是由以下原因造成：
 
-   * 附加的消息(**[!UICONTROL quotas met]** 消息):已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
-   * 附加的消息(**[!UICONTROL dynamic flow control]** 消息):Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，因而面臨潛在黑名單。
+   * 附加的消息(**[!UICONTROL quotas met]** 消息): 已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
+   * 附加的消息(**[!UICONTROL dynamic flow control]** 消息): Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，因而面臨潛在黑名單。
 
-* 系統問題可能會阻止伺服器進行交互：這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如在取得個人化資料的過程中會影響促銷活動。
+* 系統問題可能會阻止伺服器進行交互： 這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如，在取得個人化資料的過程中，這些問題可能會影響促銷活動。
 
 ### 最佳效能實務 {#best-practices-performance}
 
@@ -241,11 +244,11 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 傳送記錄檔是瞭解傳送失敗原因的關鍵。 您可從傳送記錄中偵測到以下可能錯誤：
 
-* 如果收件者訊息失敗，並出現「無法存取」錯誤，指出：編 **譯指令碼&#39;content htmlContent&#39;行X時出錯：未`[table]`定義。 JavaScript:評估指令碼&#39;content htmlContent**&#39;時出錯，此問題的原因幾乎總是HTML中的個人化，嘗試呼叫未在上游定位或傳送的目標對應中定義或映射的表或欄位。
+* 如果收件者訊息失敗，並出現「無法存取」錯誤，指出： **編譯指令碼&#39;content htmlContent&#39;行X時出錯：`[table]`未定義。 JavaScript: 評估指令碼&#39;content htmlContent**&#39;時出錯，此問題的原因幾乎總是HTML中的個人化，嘗試呼叫未在上游定位或傳送的目標對應中定義或映射的表或欄位。
 
    為了修正此問題，必須審查工作流程和傳送內容，以明確決定個人化嘗試呼叫相關表格的方式，以及表格是否可以映射。 在此處，移除HTML中對此表格的呼叫或修正對應至傳送，都是解析的路徑。
 
-* 在中部採購部署模型中，傳送記錄檔中會顯示下列訊息：在 **中間採購伺服器上調用方法&#39;AppendDeliveryPart&#39;時出錯：&#39;與伺服器的通信錯誤：請檢查此項設定是否正確。 代碼HTTP 408 &#39;服務暫時不可用&#39;**。
+* 在中部採購部署模型中，傳送記錄檔中會顯示下列訊息： **在中間採購伺服器上調用方法&#39;AppendDeliveryPart&#39;時出錯： &#39;與伺服器的通信錯誤： 請檢查此項設定是否正確。 代碼HTTP 408 &#39;服務暫時不可用&#39;**。
 
    原因與效能問題有關。 這表示行銷實例在將資料傳送至中端來源伺服器之前，會花費太多時間建立資料。
 
@@ -259,7 +262,7 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
    若要解決此問題，請檢查使用的個人化資料，然後檢查針對任何欄位有多個項目的收件者的目標。 您也可以在傳送活 **[!UICONTROL Deduplication]** 動之前，在定位工作流程中使用活動，以檢查一次只有一個個人化欄位。 For more information on deduplication, refer to [this page](../../workflow/using/deduplication.md).
 
-* 某些傳送可能失敗，並出現「無法連線」錯誤，指出：&quot;入站電子郵件彈回數（規則&#39;Auto_replies&#39;已符合此彈回數）。 這表示傳送成功，但Adobe Campaign卻收到來自收件者的自動回覆（例如「不在辦公室」回覆），符合「Auto_ryples」傳入電子郵件規則。 Adobe Campaign會忽略自動回覆電子郵件，而且不會將收件者的位址傳送至隔離。
+* 某些傳送可能失敗，並出現「無法連線」錯誤，指出： &quot;入站電子郵件彈回數（規則&#39;Auto_replies&#39;已符合此彈回數）。 這表示傳送成功，但Adobe Campaign卻收到來自收件者的自動回覆（例如「不在辦公室」回覆），符合「Auto_ryples」傳入電子郵件規則。 Adobe Campaign會忽略自動回覆電子郵件，而且不會將收件者的位址傳送至隔離。
 
 **相關主題：**
 
@@ -274,8 +277,8 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 依預設，傳送清單會包含所選節點中建立之傳送的名稱和狀態。 它還顯示成功發送、處理和發送的消息數。
 
 * 數目與分 **[!UICONTROL Messages to send]** 析後和傳送前的目標收件者數目相對應。
-* 列中的消息數與服 **[!UICONTROL success]** 務器發送的、接收者接收的消息數相對應。
-* 消息數 **[!UICONTROL processed]** 與收到的消息數以及出錯消息數相對應。
+* 列中的消息數與服 **[!UICONTROL Success]** 務器發送的、接收者接收的消息數相對應。
+* 消息數 **[!UICONTROL Processed]** 與收到的消息數以及出錯消息數相對應。
 
 傳送控制面板可讓您追蹤傳送的訊息數目。
 
