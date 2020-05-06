@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
+workflow-type: tm+mt
+source-wordcount: '1411'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,13 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) 版本20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) 版本20.1.3 - Build 9124 {#release-20-1-3-build-9124}
+
+_2020年5月6日_
+
+* 修正「檔案傳輸 **** 」活動導致SFTP金鑰驗證無法在Debian 9上運作的問題。 (NEO-23183)
+
+## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 - Build 9123 {#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
@@ -61,7 +70,7 @@ _2020年2月17日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
+   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別上擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
     <p>如需詳細資訊，請參閱詳細 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">的檔案</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">和教學影片</a>。</p>
    </td> 
   </tr> 
@@ -107,7 +116,7 @@ _2020年2月17日_
 
 * 現在，當在中間採購伺服器上找不到相符的相似性時，傳送分析會停止，並顯示對應的錯誤訊息。
 
-* 現在支援Postgres的資料庫容錯移轉：當資料庫伺服器當機並重新啟動時，Campaign現在會自動重新連線至它。
+* 現在支援Postgres的資料庫容錯移轉： 當資料庫伺服器當機並重新啟動時，Campaign現在會自動重新連線至它。
 
 * 「開 **始擱置中** 」檢視已新增至「管理>稽核>工作流程狀態」節點。 這可讓您監控執行個體上等待營運管理程式啟動的所有 **工作流程** 。 此檢視隨附於行銷促銷活動套件。 [閱讀更多資訊](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
@@ -123,7 +132,7 @@ _2020年2月17日_
 
 * 資料庫記錄管理得到了增強。
 
-* 連接池的健壯性已經得到改善，這可能防止意外連接故障的發生太多。
+* 連接池的健壯性已經得到改善，這可以防止意外連接故障的發生太多。
 
 * 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [閱讀更多資訊](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
