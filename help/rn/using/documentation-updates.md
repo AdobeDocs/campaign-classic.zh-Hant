@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
+source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+workflow-type: tm+mt
+source-wordcount: '6488'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,15 @@ source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 本頁列出每個Adobe Campaign Classic版本的所有新功能和檔案更新。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
+
+## 2020年5月 {#may-2020}
+
+「監控交付能力」部分已移動並重新組織。 [閱讀更多資訊](../../delivery/using/monitoring-deliverability.md)
+
+「傳遞性」疑難排解區段已移動並更新。 [閱讀更多資訊](../../delivery/using/deliverability-faq.md)
+
+「啟動新平台」區段已增強。 [閱讀更多資訊](../../delivery/using/starting-new-platform.md)
+
 
 ## 2020年4月 {#april-2020}
 
@@ -120,7 +132,7 @@ Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特�
 
 與查詢設計相關的使用案例已重新組織為個別區段。 [閱讀更多資訊](../../workflow/using/querying-recipient-table.md)
 
-現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [閱讀更多資訊](../../interaction/using/interaction-and-offer-management.md)
 
@@ -156,7 +168,7 @@ FDA矩陣頁面已移至此 [處](../../platform/using/remote-database-access-ri
 
 Adobe Campaign Enhanced MTA檔案現已推出。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-已新增一節，說明如何疑難排解促銷活動中「盡快開始」狀態的工作流程。 閱[讀更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
+已新增一節，說明如何疑難排解促銷活動中「盡快開始」狀態的工作流程。 [閱讀更多資訊](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 新的「NmsOperation_DeliveryPreparationWindow」和「WdbcKillSessionPolicy」選項已新增至「促銷活動」選項清單。 [閱讀更多資訊](../../installation/using/configuring-campaign-options.md)
 
@@ -264,7 +276,7 @@ Transactional Messaging文檔已更新，其中包含有關模板發佈的說明
 
 新增了有關工作流程規劃最佳實務的新章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Workflow_best_practices.html#Execution_and_performance)
 
-在促銷活動選項清單中新增兩個選項：XtkSecurity_Restrict_EditXML和NmsOperation_OperationMgtDebug。
+在促銷活動選項清單中新增兩個選項： XtkSecurity_Restrict_EditXML和NmsOperation_OperationMgtDebug。
 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
 已新增有關Campaign Classic中可用之不同外部帳戶的資訊，以及如何設定這些帳戶。
@@ -279,7 +291,7 @@ Transactional Messaging文檔已更新，其中包含有關模板發佈的說明
 已更新「共用觀眾」整合的檔案。
 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
-下列技術已更新： [SMS連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) , [以及序列自動產生](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+下列技術已更新： [SMS連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) ，以 [及序列自動產生](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 「技術工作流程」區段已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
@@ -309,9 +321,9 @@ Marketing Cloud觸發器技術已更新。 [閱讀更多資訊](https://helpx.ad
 
 * 如果您已使用舊版電子郵件封存（在Adobe Campaign 17.2之前——組建版本8795），我們已更新升級至新電子郵件封存系統(BCC)的步驟。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
 
-「使用工作流自動化」指南中已新增使用案例：傳送個人化警報給營運商。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
+「使用工作流自動化」指南中已新增使用案例： 傳送個人化警報給營運商。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
 
-「移轉至新版本」區段已更新。 本檔案現在只詳細說明從任何舊版移轉至Adobe Campaign Classic v7的步驟，因為無法再移轉至Adobe Campaign v6.11。閱 [讀更多](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+「移轉至新版本」區段已更新。 本檔案現在只詳細說明從任何舊版移轉至Adobe Campaign Classic v7的步驟，因為無法再移轉至Adobe Campaign v6.11。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
 「傳送暫時失敗後重試」區段已釐清。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
 
@@ -367,7 +379,7 @@ Campaign Classic API現在可在專用頁 [面中使用](https://docs.campaign.a
 
 已將有關如何使用種子地址的部分移至「發送消息」指南概述章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
-新增工作流程使用案例：管理伴隨工作流程執行的更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
+新增工作流程使用案例： 管理伴隨工作流程執行的更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
 「收件匣轉換」區段已更新，其中包含更多有關Litmus的資訊，以及更詳細的程式。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
 
@@ -532,7 +544,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
@@ -562,7 +574,7 @@ SAP HANA連接器——詳 [細內容](https://docs.campaign.adobe.com/doc/AC/en
 
 通過HiveSQL的Hadoop Connector —— 詳 [細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Accessing_an_external_database.html#Hadoop)
 
-線路頻道：訊息增強功能- [閱讀更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_LINE_channel.html)
+線路頻道： 訊息增強功能- [閱讀更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_LINE_channel.html)
 
 **此版本隨附的其他檔案更新**
 
@@ -600,7 +612,7 @@ IP變暖的新技術已經增加。 [閱讀更多資訊](https://docs.campaign.a
 
 ## 2017年5月{#release-doc-30-05-2017}
 
-有新的快速入門手冊可供使用：它提供一些最佳實務，可用於透過Adobe Campaign傳遞，從建立和鎖定到傳送和監控。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+有新的快速入門手冊可供使用： 它提供一些最佳實務，可用於透過Adobe Campaign傳遞，從建立和鎖定到傳送和監控。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
 安全性快速入門手冊已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
 
@@ -614,15 +626,15 @@ IP變暖的新技術已經增加。 [閱讀更多資訊](https://docs.campaign.a
 
 ## 2017年3月{#release-doc-31-03-2017}
 
-可傳遞性：開始 [使用指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，已更新。 可傳送性檔案現在包含更詳細 [的概述](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) ，以及實作 [程式和主要步驟的說明](../../delivery/using/deliverability-key-points.md)。
+可傳遞性： 開始 [使用指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，已更新。 可傳送性檔案現在包含更詳細 [的概述](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) ，以及實作 [程式和主要步驟的說明](../../delivery/using/deliverability-key-points.md)。
 
 「使用波傳送」區段已移動並增強，其中包含詳細的範例、建議和使用案例。    [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Sending_using_multiple_waves)
 
 「隔離管理」部分已添加了一個表，說明SMS消息的特定錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)
 
-工作流程：已新增多頻道工作流程範例。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
+工作流程： 已新增多頻道工作流程範例。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
 
-Marketing Cloud觸發器：已新增有關如何設定及搭配Adobe Campaign使用的技術。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketing Cloud觸發器： 已新增有關如何設定及搭配Adobe Campaign使用的技術。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
 工作流程手冊已重新整理和擴充。 輕鬆瞭解如何建立並執行工作流程 [、如何](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Building_a_workflow.html) 建立並管理您的 [](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html#Data_Management)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Updating_the_database)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow)Target Deliverations、資料匯入ImportData、資料使用方式以及資料使用方式的Adobe ReduptageThergDeliversDeliverationsDightPremizations。
 
