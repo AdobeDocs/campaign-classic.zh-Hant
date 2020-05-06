@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
 
 ## 概觀 {#overview}
 
-SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 Adobe Campaign可搭配本軟體，為電子郵件指派分數，並判斷在傳送啟動前訊息是否可能被視為不需要。 為此，必須在Adobe Campaign的應用程式伺服器上安裝並設定SpamAssassin，並需要特定數目的額外Perl模組才能運作。
+SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配本軟體，Adobe Campaign可以指派分數給電子郵件，並判斷在傳送啟動之前，訊息是否可能被視為不需要。 為此，必須在Adobe Campaign的應用程式伺服器上安裝並設定SpamAssassin，並需要特定數量的額外Perl模組才能運作。
 
 本章所述的SpamAssassin的部署和整合基於預設軟體安裝，過濾和計分規則也基於預設軟體安裝，這些規則是SpamAssassin提供的，無需進行任何更改或優化。 分數歸因和訊息限定完全以SpamAssassin選項的設定和篩選規則為基礎。 網路管理員負責根據公司的需要調整網路管理員。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >SpamAssassin將電子郵件視為不想要的，完全以篩選和計分規則為基礎。
 >
@@ -46,7 +49,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 Adobe C
 
 ## 在Windows電腦上安裝 {#installing-on-a-windows-machine}
 
-若要在Windows上安裝並設定SpamAssassin，以便與Adobe Campaign整合，請套用下列步驟：
+若要在Windows上安裝並設定SpamAssassin以啟用與Adobe Campaign的整合，請套用下列步驟：
 
 1. 安裝SpamAssassin
 1. 將SpamAssassin整合至Adobe Campaign
@@ -60,7 +63,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 Adobe C
 
    >[!NOTE]
    >
-   >只要路徑由下列任何規則運算式字元組成，您就可以選擇隨處解壓縮檔案： **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**。 安裝路徑不得包含任何空格字元。
+   >只要路徑由下列任何規則運算式字元組成，您就可以選擇隨處解壓縮檔案： **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. 安裝路徑不得包含任何空格字元。
 
 1. 前往已解壓縮檔案的檔案，然後按兩下 **run_me.bat** 檔案以啟動安裝指令碼。
 
@@ -70,11 +73,11 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 Adobe C
 
    輸 **入run_me.bat** ，然後按 **Enter** 以啟動安裝和更新程式。 該操作返回以下值之一，以指示更新結果。
 
-   * **0**:已執行更新。
-   * **1**:沒有新的更新可用。
-   * **2**:沒有新的更新可用。
-   * **3**:更新在先前驗證期間失敗。
-   * **4** 或以上：發生錯誤。
+   * **0**: 已執行更新。
+   * **1**: 沒有新的更新可用。
+   * **2**: 沒有新的更新可用。
+   * **3**: 更新在先前驗證期間失敗。
+   * **4** 或以上： 發生錯誤。
 
 1. 若要檢查SpamAssassin是否成功安裝，請使用GTUBE測試（未經請求的大量電子郵件的一般測試），請執行下列程式：
 
