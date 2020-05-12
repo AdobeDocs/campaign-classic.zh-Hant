@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
 workflow-type: tm+mt
-source-wordcount: '2077'
+source-wordcount: '2078'
 ht-degree: 10%
 
 ---
@@ -334,7 +334,7 @@ ht-degree: 10%
       + [查詢](workflow/using/query.md)
       + [增量查詢](workflow/using/incremental-query.md)
       + [讀取清單](workflow/using/read-list.md)
-      + [聯合](workflow/using/union.md)
+      + [聯集](workflow/using/union.md)
       + [交集](workflow/using/intersection.md)
       + [排除](workflow/using/exclusion.md)
       + [分割](workflow/using/split.md)
@@ -431,7 +431,7 @@ ht-degree: 10%
    + 技術工作流程 {#technical-workflows}
       + [關於技術工作流程](workflow/using/about-technical-workflows.md)
       + [交貨](workflow/using/deliveries.md)
-      + [行銷活動](workflow/using/campaign.md)
+      + [Campaign](workflow/using/campaign.md)
       + [網頁分析](workflow/using/web-analytics.md)
       + [分散式行銷](workflow/using/distributed-marketing.md)
       + [傳遞能力監控](workflow/using/email-deliverability.md)
@@ -501,7 +501,7 @@ ht-degree: 10%
       + [對外渠道的選件](interaction/using/offers-on-an-outbound-channel.md)
 + Transactional Messaging {#transactional-messaging}
    + 簡介 {#introduction}
-      + [關於交易式訊息傳遞](message-center/using/about-transactional-messaging.md)
+      + [關於交易式訊息傳送](message-center/using/about-transactional-messaging.md)
       + [事務性消息傳遞體系結構](message-center/using/transactional-messaging-architecture.md)
       + [事件說明](message-center/using/event-description.md)
    + 實例配置 {#instance-configuration}
@@ -532,9 +532,7 @@ ht-degree: 10%
       + [消息中心服務級別](message-center/using/message-center-service-level.md)
       + [消息中心處理時間](message-center/using/message-center-processing-time.md)
    + 使用案例 {#use-case}
-      + [目的](message-center/using/purpose.md)
-      + [重要附註](message-center/using/important-notes.md)
-      + [實作](message-center/using/implementation.md)
+      + [傳送含附件的交易式電子郵件](message-center/using/transactional-email-with-attachments.md)
 + 與社交媒體整合 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
    + 配置 {#configuration}
@@ -651,7 +649,7 @@ ht-degree: 10%
       + [丟失密碼](production/using/lost-password.md)
       + [JSP行為](production/using/jsp-behavior.md)
 + 設定Campaign Classic {#configuring-campaign-classic}
-   + 資料模型 {#data-model}
+   + Data model {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
       + [最佳作法](configuration/using/data-model-best-practices.md)
