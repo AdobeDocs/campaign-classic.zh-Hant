@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a30c4a2d31c3f674ac4a7bb4827a6951b36014ab
+source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,14 @@ Deliverability套件可讓您存取：
 
 * 報 **[!UICONTROL Delivery throughput]** 表提供特定時段內整個平台的總處理能力。 For more on this, see [this section](../../reporting/using/global-reports.md#delivery-throughput).
 * 報 **[!UICONTROL Technical deliverability monitoring]** 表包含許多平台的傳遞能力品質指標。 For more on this, see [this section](#technical-deliverability-monitoring).
-* 傳送 [控制面板](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) ，讓您存取「傳送」 [摘要、「傳送記](../../delivery/using/monitoring-a-delivery.md#delivery-summary)錄」和 [「追蹤記](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)[](../../delivery/using/monitoring-a-delivery.md#tracking-logs)錄」。 它們會顯示傳送的詳細資料、已排除的目標、原因，以及開啟和點按等追蹤資訊。 <!--For more on this, see [Monitoring a delivery](../../delivery/using/monitoring-a-delivery.md).-->
-* 您也可以檢查成功傳送、處理及傳送的訊息數。 For more on this, see [this section](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent)
-   <!--[SpamAssassin](../../installation/using/configuring-spamassassin.md)?-->
+* 每個傳送都會針對不同的網際網路服務供應商(ISP)產生廣播統計報告。 它會顯示一些可能影響傳遞能力的資料品質和信譽度量，包括下列數字：
+   * **[!UICONTROL Hard bounces]** 指出資料品質。 此數字應小於2%。
+   * **[!UICONTROL Soft bounces]** 表明信譽。 對於任何給定的ISP，此數字都不應高於10%。
+   如需詳細資訊，請參閱「傳送統 [計資料](../../reporting/using/global-reports.md#delivery-statistics) 」區段。
+* 更一般而言，傳送 [控制面板](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) 可讓您存取：
+   * 交 [付摘要](../../delivery/using/monitoring-a-delivery.md#delivery-summary)，顯示發送的詳細資訊和發送 [、處理和發送的消息數](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) ;
+   * 傳 [送記錄和歷史記錄](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)，顯示哪些目標已被排除及原因；
+   * 追蹤 [記錄檔](../../delivery/using/monitoring-a-delivery.md#tracking-logs)，其中顯示追蹤資訊，例如開啟和點按。
 
 ## 監控准則 {#monitoring-guidelines}
 
