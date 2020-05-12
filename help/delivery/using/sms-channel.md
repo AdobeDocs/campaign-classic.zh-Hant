@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6e587747be546860c0a485b44aee79d396f25cec
+source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+workflow-type: tm+mt
+source-wordcount: '3227'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +41,7 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
 1. 指定連接器和消息類型的外部帳戶。
 
-   可用連接器包括：NetSize、通用SMPP（支援二進位模式的SMPP 3.4版）、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2和擴展通用SMPP。
+   可用連接器包括： NetSize、通用SMPP（支援二進位模式的SMPP 3.4版）、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2和擴展通用SMPP。
 
 1. 參考此外部帳戶的傳送範本。
 
@@ -52,7 +55,7 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
    ![](assets/s_user_external_account_01.png)
 
 * 檢查是否 **[!UICONTROL Mobile]** 已為欄位選擇選 **[!UICONTROL Channel]** 項。
-* 在頁籤 **[!UICONTROL Mobile]** 中，從下拉清單中選擇一個連接器：NetSize、通用SMPP、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2或擴展通用SMPP。 有關擴展通用SMPP連接器的詳細資訊，請參閱 [建立SMPP外部帳戶部分](#creating-an-smpp-external-account) 。
+* 在頁籤 **[!UICONTROL Mobile]** 中，從下拉清單中選擇一個連接器： NetSize、通用SMPP、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2或擴展通用SMPP。 有關擴展通用SMPP連接器的詳細資訊，請參閱 [建立SMPP外部帳戶部分](#creating-an-smpp-external-account) 。
 
    ![](assets/s_user_external_account_connect_01.png)
 
@@ -133,9 +136,9 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 音譯包括當GSM標準未考慮到SMS的一個字元時，用另一個字元取代該字元。
 
 * 如果音譯是 **[!UICONTROL authorized]**&#x200B;音譯的，則在傳送訊息時，未考慮的每個字元都會由GSM字元取代。 例如，字母&quot;ë&quot;被&quot;e&quot;取代。 因此，訊息會稍微變更，但字元限制將維持不變。
-* 當音譯時， **[!UICONTROL not authorized]**&#x200B;每個包含未納入考量的字元的訊息，都會以二進位格式(Unicode)傳送：因此，所有字元都將按原樣發送。 不過，使用Unicode的SMS訊息最多只能有70個字元（若是以多個部分傳送的訊息，則每個SMS有67個字元）。 如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
+* 當音譯時， **[!UICONTROL not authorized]**&#x200B;每個包含未納入考量的字元的訊息，都會以二進位格式(Unicode)傳送： 因此，所有字元都將按原樣發送。 不過，使用Unicode的SMS訊息最多只能有70個字元（若是以多個部分傳送的訊息，則每個SMS有67個字元）。 如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。
 
@@ -312,13 +315,13 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
  </tbody> 
 </table>
 
-SP:空間
+SP: 空間
 
-ESC:Escape
+ESC: Escape
 
-LF:行動態消息
+LF: 行動態消息
 
-CR:歸位
+CR: 歸位
 
 **進階字元（計算兩次）**
 
@@ -328,13 +331,13 @@ CR:歸位
 
 傳送SMS訊息時，Adobe Campaign可以使用一或多種文字編碼。 每個編碼都有其專屬的字元集，並決定符合SMS訊息的字元數。
 
-在設定新的SMPP行動傳送外部帳戶時，您可以在標 **[!UICONTROL Mapping of encodings]** 簽中定 **[!UICONTROL Mobile]** 義：此欄 **[!UICONTROL data_coding]** 位可讓Adobe Campaign傳達SMSC使用的編碼。
+在設定新的SMPP行動傳送外部帳戶時，您可以在標 **[!UICONTROL Mapping of encodings]** 簽中定 **[!UICONTROL Mobile]** 義： 此欄 **[!UICONTROL data_coding]** 位可讓Adobe Campaign傳達SMSC使用的編碼。
 
 >[!NOTE]
 >
->標準化 **data_coding值與實際使用的編碼** 之間的映射。 然而，某些SMSC有其自己的具體對應：在這種情況下，您的 **** Adobe Campaign管理員需要宣告此對應。 請洽詢您的供應商以瞭解更多資訊。
+>標準化 **data_coding值與實際使用的編碼** 之間的映射。 然而，某些SMSC有其自己的具體對應： 在這種情況下，您的 **** Adobe Campaign管理員需要宣告此對應。 請洽詢您的供應商以瞭解更多資訊。
 
-您可以宣 **告data_codings** ，並強制進行編碼（如有必要）:若要這麼做，請在表格中指定單一編碼。
+您可以宣 **告data_codings** ，並強制進行編碼（如有必要）: 若要這麼做，請在表格中指定單一編碼。
 
 * 當未定義編碼的映射時，連接器會採取一般行為：
 
@@ -343,9 +346,9 @@ CR:歸位
 
 * 當您定義要使用的編碼以及連結的欄位值時，Adobe **[!UICONTROL data_coding]** Campaign會嘗試使用清單中的第一個編碼，如果第一個編碼被證明是不可能的，則會嘗試使用下列。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->聲明的順序非常重要：建議您將清單以成本的遞增 **順序** ，以利於編碼，讓您在每則SMS訊息中盡可能多地顯示字元。
+>聲明的順序非常重要： 建議您將清單以成本的遞增 **順序** ，以利於編碼，讓您在每則SMS訊息中盡可能多地顯示字元。
 >
 >僅聲明您要使用的編碼。 如果SMSC提供的某些編碼不符合您的使用目的，請勿在清單中宣告。
 
@@ -361,7 +364,7 @@ CR:歸位
 
 對於每個關鍵字，請指定一個簡短代碼，此代碼通常用於發送傳送，並用作發送者名稱，然後輸入要發送給訂閱者的消息。
 
-您也可以將動作連結至自動回應：或 **[!UICONTROL Send to quarantine]** 者 **[!UICONTROL Remove from quarantine]**。 例如，如果收件者傳送關鍵字&quot;STOP&quot;，他們會自動收到取消訂閱的確認，並傳送至隔離。
+您也可以將動作連結至自動回應： **[!UICONTROL Send to quarantine]** 或 **[!UICONTROL Remove from quarantine]**&#x200B;者。 例如，如果收件者傳送關鍵字&quot;STOP&quot;，他們會自動收到取消訂閱的確認，並傳送至隔離。
 
 ![](assets/extended_smpp_reply.png)
 
@@ -373,7 +376,7 @@ CR:歸位
 * 若要傳送相同的回覆（無論關鍵字為何），請將欄留 **[!UICONTROL Keyword]** 空。
 * 若要執行動作而不傳送回應，請將欄留 **[!UICONTROL Response]** 空。 例如，這可讓您從隔離使用「STOP」以外訊息回覆的使用者移除。
 
-如果您使用具有相同提供者帳戶的擴充通用SMPP連接器，有多個外部帳戶，可能會發生下列問題：當傳送回覆至簡短程式碼時，可能會在您的任何外部帳戶連線上收到回覆。 因此，所發送的自動回覆不能是預期訊息。
+如果您使用具有相同提供者帳戶的擴充通用SMPP連接器，有多個外部帳戶，可能會發生下列問題： 當傳送回覆至簡短程式碼時，可能會在您的任何外部帳戶連線上收到回覆。 因此，所發送的自動回覆不能是預期訊息。
 若要避免此情況，請根據您使用的提供者，套用下列其中一個解決方案：
 * 為每個外部帳戶建立一個提供程式帳戶。
 * 使用> **[!UICONTROL System type]** 標籤中的欄 **[!UICONTROL Mobile]** 位 **[!UICONTROL Connection settings]** 來區分每個簡短代碼。 請向您的供應商洽詢每個帳戶的不同值。
@@ -485,31 +488,31 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點�
 
 可以使用以下選項：
 
-* **傳送者位址** （僅適用於NetSize連接器和SMPP連接器）:可讓您使用字母數字字元字串（以十一個字元為限），個人化傳送者的名稱。 該欄位不能只由數字組成。 您可以定義條件，例如根據收件者的區域代碼顯示不同的名稱：
+* **傳送者位址** （僅適用於NetSize連接器和SMPP連接器）: 可讓您使用字母數字字元字串（以十一個字元為限），個人化傳送者的名稱。 該欄位不能只由數字組成。 您可以定義條件，例如根據收件者的區域代碼顯示不同的名稱：
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >檢查您所在國家／地區有關編輯傳送者名稱的法律。 您也應洽詢您的營運商，看他們是否提供此功能。
 
-* **傳輸模式**:通過SMS進行消息傳輸。
-* **優先順序**:指派給訊息的重要程度。 **[!UICONTROL Normal]** 優先順序預設為選取。 請洽詢您的服務供應商有關優先傳送之簡訊的 **[!UICONTROL High]** 成本。
-* **應用程式類型**:選擇您要指派給SMS傳送的應用程式。 預 **[!UICONTROL Direct Marketing]** 設會選取此選項，是最常用的選項。
+* **傳輸模式**: 通過SMS進行消息傳輸。
+* **優先順序**: 指派給訊息的重要程度。 **[!UICONTROL Normal]** 優先順序預設為選取。 請洽詢您的服務供應商有關優先傳送之簡訊的 **[!UICONTROL High]** 成本。
+* **應用程式類型**: 選擇您要指派給SMS傳送的應用程式。 預 **[!UICONTROL Direct Marketing]** 設會選取此選項，是最常用的選項。
 
 **NetSize連接器的特定參數**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **針對單一訊息使用數種簡訊**:這可讓您透過數條簡訊傳送超過160個字元的訊息。
+* **針對單一訊息使用數種簡訊**: 這可讓您透過數條簡訊傳送超過160個字元的訊息。
 
 **SMPP連接器的特定參數**
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **每則訊息的SMS最大數量**:此選項可讓您設定用來傳送訊息的SMS數目。 如果數字設為0，您可以使用SMS來傳送訊息。 例如，如果SMS的數目設為1或2，而訊息超過此臨界值，則不會傳送。
+* **每則訊息的SMS最大數量**: 此選項可讓您設定用來傳送訊息的SMS數目。 如果數字設為0，您可以使用SMS來傳送訊息。 例如，如果SMS的數目設為1或2，而訊息超過此臨界值，則不會傳送。
 
 ## 監控和追蹤SMS傳送 {#monitoring-and-tracking-sms-deliveries}
 
@@ -523,7 +526,7 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點�
 
 nlserver **sms** 模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤傳送進度，並處理狀態報表和收件者取消訂閱請求。
 
-* **狀態報告**:檢視傳送記錄，以檢查訊息的狀態。
+* **狀態報告**: 檢視傳送記錄，以檢查訊息的狀態。
 
    >[!NOTE]
    >
@@ -533,7 +536,7 @@ nlserver **sms** 模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤
    > * SMS帳戶只能連結至單一外部帳戶，以確保狀態報表歸屬於正確的帳戶
 
 
-* **取消訂閱**:希望停止接收SMS傳送的收件者可傳回包含STOP字詞的訊息。 如果您的提供者根據合約條款允許留言，您可以透過 **Inbound SMS** workflow活動擷取訊息，然後建立查詢，為相關收件者啟用 **No recontact this recipient** option。
+* **取消訂閱**: 希望停止接收SMS傳送的收件者可傳回包含STOP字詞的訊息。 如果您的提供者根據合約條款允許留言，您可以透過 **Inbound SMS** workflow活動擷取訊息，然後建立查詢，為相關收件者啟用 **No recontact this recipient** option。
 
    請參閱「工 [作流程](../../workflow/using/executing-a-workflow.md#architecture) 」指南。
 
@@ -541,27 +544,27 @@ nlserver **sms** 模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤
 
 InSMS架構包含與傳入SMS相關的資訊。 這些欄位的說明可透過desc屬性取得。
 
-* **訊息**:收到的簡訊內容。
-* **來源**:訊息來源的行動電話號碼。
-* **providerId**:SMSC（消息中心）返回的消息的標識符。
-* **已建立**:日期傳入訊息已插入Adobe Campaign。
-* **extAccount**:Adobe Campaign外部帳戶。
+* **訊息**: 收到的簡訊內容。
+* **來源**: 訊息來源的行動電話號碼。
+* **providerId**: SMSC（消息中心）返回的消息的標識符。
+* **已建立**: 日期傳入訊息已插入Adobe Campaign。
+* **extAccount**: Adobe Campaign外部帳戶。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >以下欄位是NetSize專用的。
    >
-   >如果使用中的運算子不是NetSize，則這些欄位會被視為空白。
+   >如果使用中的運算子不是NetSize，則這些欄位會視為空白。
 
-* **別名**:傳入消息的別名。
-* **分隔符**:別名和消息正文之間的分隔符。
-* **messageDate**:運算子提供的訊息日期。
-* **receivalDate**:SMSC（消息中心）收到來自操作員的日期消息。
-* **deliveryDate**:由SMSC（消息中心）發送的日期消息。
-* **largeAccount**:連結至傳入SMS的客戶帳戶代碼。
-* **countryCode**:營運商國家／地區代碼。
-* **operatorCode**:營運商網路程式碼。
-* **linkedSmsId**:連結至傳出SMS的Adobe Campaign識別碼(broadlogId)，此SMS即為回應。
+* **別名**: 傳入消息的別名。
+* **分隔符**: 別名和消息正文之間的分隔符。
+* **messageDate**: 運算子提供的訊息日期。
+* **receivalDate**: SMSC（消息中心）收到來自操作員的日期消息。
+* **deliveryDate**: 由SMSC（消息中心）發送的日期消息。
+* **largeAccount**: 連結至傳入SMS的客戶帳戶代碼。
+* **countryCode**: 營運商國家／地區代碼。
+* **operatorCode**: 營運商網路程式碼。
+* **linkedSmsId**: 連結至傳出SMS的Adobe Campaign識別碼(broadlogId)，此SMS即為回應。
 
 ## 管理自動回覆（美國法規） {#managing-automatic-replies--american-regulation-}
 
@@ -571,7 +574,7 @@ InSMS架構包含與傳入SMS相關的資訊。 這些欄位的說明可透過de
 
 此類型訊息的傳送者名稱是用來傳送傳送訊息的簡短代碼。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >以下詳細過程僅對SMPP連接器有效，擴展的通用SMPP連接器除外。 有關詳細資訊，請參閱「創 [建SMPP外部帳戶](#creating-an-smpp-external-account) 」部分。
 >
@@ -597,7 +600,7 @@ InSMS架構包含與傳入SMS相關的資訊。 這些欄位的說明可透過de
 
 1. 對於標 **記的** name屬性 **`<shortcode>`** ，請指定將顯示在消息發送者名稱位置的短代碼。
 
-   在每個 **`<reply>`** 標籤中，輸入帶有關鍵字 **的關鍵字屬性，以及帶** 有要為此關鍵字發送的消息的text **** attribute。
+   在每個 **`<reply>`** 標籤中，輸入帶有關鍵字 **的關鍵字屬性，以及帶** 有您要為此關鍵字發送的消息的text **** attribute。
 
    >[!NOTE]
    >
@@ -618,7 +621,7 @@ InSMS架構包含與傳入SMS相關的資訊。 這些欄位的說明可透過de
 
 1. 將此檔案複製 **到** Adobe Campaign中與Web伺服器位置相同的conf目錄。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >這類自動訊息不會保留歷史記錄。 因此，它們不會出現在傳送控 [制面板中](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)。
 >
