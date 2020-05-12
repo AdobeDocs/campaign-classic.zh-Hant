@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 1. 針對訊息的每個URL，選取是否啟用追蹤。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >當連結的URL被用作標籤時，建議停用追蹤以避免因網路釣魚而遭拒的風險。
    >
@@ -60,11 +63,11 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
    對於每個個別URL，您可以將追蹤模式設定為下列其中一個值：
 
-   * **[!UICONTROL Enabled]** :在此URL上啟動追蹤。
-   * **[!UICONTROL Not tracked]** :停用此URL上的追蹤。
-   * **[!UICONTROL Always enabled]** :一律啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息內容中，其追蹤就會自動啟動。
-   * **[!UICONTROL Never tracked]** :切勿啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息中，其追蹤就會自動停用。
-   * **[!UICONTROL Opt-out]** :將此URL視為選擇退出或取消訂閱URL。
-   * **[!UICONTROL Mirror page]** :認為此URL是鏡像頁面URL。
+   * **[!UICONTROL Enabled]** : 在此URL上啟動追蹤。
+   * **[!UICONTROL Not tracked]** : 停用此URL上的追蹤。
+   * **[!UICONTROL Always enabled]** : 一律啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息內容中，其追蹤就會自動啟動。
+   * **[!UICONTROL Never tracked]** : 切勿啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息中，其追蹤就會自動停用。
+   * **[!UICONTROL Opt-out]** : 將此URL視為選擇退出或取消訂閱URL。
+   * **[!UICONTROL Mirror page]** : 認為此URL是鏡像頁面URL。
 
 1. 此外，您也可以在欄的下拉式清單中，為每個追蹤的URL選取類 **[!UICONTROL Category]** 別。 這些類別可顯示報表，例如 **[!UICONTROL URLs and click streams]** (請 [參閱本節](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams))。 類別在特定枚舉中定義： **[!UICONTROL urlCategory]** (請參 [閱管理枚舉](../../platform/using/managing-enumerations.md))。
