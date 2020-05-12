@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 1%
 
 ---
 
 
 # 建立共用連接{#creating-a-shared-connection}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* 在 [Message Center技術工作流程中](../../message-center/using/technical-workflows.md) ，在控制或執行例項上對架構所做的架構擴充，必須複製到Adobe Campaign事務性訊息模組所使用的其他例項上。
 >* 控制實例和執行實例必須安裝在不同的電腦上。 他們無法共用相同的促銷活動例項。
@@ -120,7 +123,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 您可以與各種控制實例共用執行群集。 此類型的體系結構需要以下配置。
 
-例如，如果您的公司管理兩個品牌，每個品牌都有其自己的控制例項：控 **制1** 和 **控制2**。 還使用兩個執行例項。 您需要為每個控制實例輸入不同的消息中心運算子：Control **1實例的** mc運算子和Control 2實例的 **mc2** 運 ******** 算子。
+例如，如果您的公司管理兩個品牌，每個品牌都有其自己的控制例項： **控制1** 和 **控制2**。 還使用兩個執行例項。 您需要為每個控制實例輸入不同的消息中心運算子： Control **1實例的** mc運算子和Control 2實例的 **mc2** 運 ******** 算子。
 
 在所有執行例項的樹狀結構中，為每個運算元建立一個資料夾(**資料夾1** 和 **資料夾2**)，並限制每個運算元對資料夾的資料存取。
 
@@ -142,7 +145,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 要使用多個控制實例，必須對ALL執行實例執行此配置。
 
-1. 在節點中為每個運算子建立一個 **[!UICONTROL Administration > Production > Message Center]** 資料夾：文 **件夾1** 和 **資料夾2**。 有關建立資料夾和視圖的詳細資訊，請參閱 [平台](../../platform/using/access-management.md#folders-and-views)。
+1. 在節點中為每個運算子建立一個 **[!UICONTROL Administration > Production > Message Center]** 資料夾： **資料夾1** 和 **資料夾2**。 有關建立資料夾和視圖的詳細資訊，請參閱 [平台](../../platform/using/access-management.md#folders-and-views)。
 
    ![](assets/messagecenter_multi_control_3.png)
 
