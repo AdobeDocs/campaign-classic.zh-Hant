@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '764'
+ht-degree: 1%
 
 ---
 
@@ -34,18 +37,18 @@ source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 Adobe Campaign提供下列傳送渠道：
 
-1. **電子郵件通道**:電子郵件傳送功能可讓您傳送個人化電子郵件給目標人群。 請參閱關於 [電子郵件渠道](../../delivery/using/about-email-channel.md)。
-1. **直接郵件渠道**:直接郵件傳送可讓您產生擷取檔案，其中包含目標人口的資料。 請參閱關 [於直接郵件渠道](../../delivery/using/about-direct-mail-channel.md)。
-1. **行動頻道**:行動頻道上的傳送可讓您傳送個人化的SMS或LINE訊息給目標群體。 請參閱 [SMS頻道](../../delivery/using/sms-channel.md)。
-1. **行動應用程式頻道**:行動應用程式傳送可讓您傳送通知至iOS和Android系統。 請參閱「行動應 [用程式頻道](../../delivery/using/about-mobile-app-channel.md) 」一章。
+1. **電子郵件通道**: 電子郵件傳送功能可讓您傳送個人化電子郵件給目標人群。 請參閱關於 [電子郵件渠道](../../delivery/using/about-email-channel.md)。
+1. **直接郵件渠道**: 直接郵件傳送可讓您產生擷取檔案，其中包含目標人口的資料。 請參閱關 [於直接郵件渠道](../../delivery/using/about-direct-mail-channel.md)。
+1. **行動頻道**: 行動頻道上的傳送可讓您傳送個人化的SMS或LINE訊息給目標群體。 請參閱 [SMS頻道](../../delivery/using/sms-channel.md)。
+1. **行動應用程式頻道**: 行動應用程式傳送可讓您傳送通知至iOS和Android系統。 請參閱「行動應 [用程式頻道](../../delivery/using/about-mobile-app-channel.md) 」一章。
 
-   本頁說明其 [他渠道](../../delivery/using/other-channels.md)。
+   本頁說明其他 [渠道](../../delivery/using/other-channels.md)。
 
    >[!NOTE]
    >
    >使用多個渠道取決於您的套件。 請檢查您的授權合約。
 
-您可線上(透 **過電子郵件** 、其中一個行動通道和推播通知)和離線 **(直接郵件通道** )進行傳送。
+您可線上(透 **過電子郵件** 、其中一個行動通道和推播通知)和離線( **直接郵件通道** )進行傳送。
 
 視頻道而定，傳送模式可以是：
 
@@ -60,9 +63,9 @@ Adobe Campaign提供下列傳送渠道：
 
 您可以傳送不同類型的電子郵件：
 
-* 單一傳送電子郵件：您只需傳送一次至已定義目標的電子郵件。 通常用於促銷特定內容，只準備一次並傳送一次（電子報、促銷電子郵件等）。
-* 循環寄送電子郵件：在促銷活動中，定期傳送相同的電子郵件，並定期匯總每個傳送及其報表。 相同的電子郵件會根據傳送當日的合格目標傳送，但通常會傳送至不同的目標。 一個常見的例子是生日電子郵件。 For more on this, refer to [Recurring deliveries](../../workflow/using/recurring-delivery.md).
-* 交易電子郵件：根據客戶行為觸發的單一電子郵件。 請參閱「交 [易式訊息](../../message-center/using/about-transactional-messaging.md)」。
+* 單一傳送電子郵件： 您只需傳送一次至已定義目標的電子郵件。 通常用於促銷特定內容，只準備一次並傳送一次（電子報、促銷電子郵件等）。
+* 循環寄送電子郵件： 在促銷活動中，定期傳送相同的電子郵件，並定期匯總每個傳送及其報表。 相同的電子郵件會根據傳送當日的合格目標傳送，但通常會傳送至不同的目標。 一個常見的例子是生日電子郵件。 For more on this, refer to [Recurring deliveries](../../workflow/using/recurring-delivery.md).
+* 交易電子郵件： 根據客戶行為觸發的單一電子郵件。 請參閱「交 [易式訊息](../../message-center/using/about-transactional-messaging.md)」。
 
 若要瞭解傳送用途和建議，請參閱「促銷活動傳 [送」最佳實務](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)。
 
@@ -89,4 +92,4 @@ Adobe Campaign可讓您透過專用應用程式，在iOS和Android [行動裝置
 
 [直效郵件](../../delivery/using/about-direct-mail-channel.md) (Direct Mail)是一種離線通道，可讓您個人化並產生直接郵件供應商所需的檔案。 它可讓您在客戶歷程中混合使用線上和線下通道。
 
-線上通道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等）並直接從Adobe Campaign傳送給您的觀眾。 離線通道則不同。 當您準備直接郵寄時，Adobe Campaign會產生一個檔案，其中包含所有目標設定檔和選取的聯絡資訊（例如郵遞區號）。 然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
+線上通道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等） 並直接從Adobe Campaign傳送給您的觀眾。 離線通道則不同。 當您準備直接郵寄時，Adobe Campaign會產生一個檔案，其中包含所有目標設定檔和選取的聯絡資訊（例如郵遞區號）。 然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
