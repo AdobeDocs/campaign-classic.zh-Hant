@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
 ## 新增傳送渠道 {#adding-a-delivery-channel}
 
-新增傳送渠道（行動通道、行動應用通道等）必須在安裝Transactional消息包之前執行。 如果您已在電子郵件頻道上啟動交易式訊息專案，然後在專案期間決定新增新頻道，您必須遵循下列步驟：
+新增傳送渠道（行動通道、行動應用通道等） 必須在安裝Transactional消息包之前執行。 如果您已在電子郵件頻道上啟動交易式訊息專案，然後在專案期間決定新增新頻道，您必須遵循下列步驟：
 
 1. 使用套件匯入精靈( ******[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** )，安裝您需要的頻道，例如行動頻道。
 1. 執行檔案匯入( **[!UICONTROL Tools > Advanced > Import package... > File]** )，並選取 ****`[Your language]`**** datakitnmspackagemessageCenter.xml檔案。
@@ -75,40 +78,40 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
    ![](assets/messagecenter_install_channel.png)
 
-## 事務性消息和入站交互 {#transactional-messages-and-inbound-interaction}
+<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
-當與「傳入互動」模組結合時，交易式訊息可讓您將專屬於收件者的行銷選件插入訊息中。
+When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
 >[!NOTE]
 >
->Interaction模組在 [Interaction中詳細說明](../../interaction/using/interaction-and-offer-management.md)。
+>The Interaction module is detailed in [Interaction](../../interaction/using/interaction-and-offer-management.md).
 
-要將事務性消息傳遞與Interaction一起使用，您需要應用以下配置：
+To use transactional messaging with Interaction, you need to apply the following configurations:
 
-* 將 **Interaction** package安裝至控制例項並設定選件目錄。
+* Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-   >[!CAUTION]
-   >
-   >請勿將選件複製至執行例項。
+  >[!CAUTION]
+  >
+  >Do not replicate the offers onto the execution instances.
 
-* 事件必須包含連結至收件者的識別碼，以便個人化選件。 @externalId **** 屬性必須包含此識別碼的值。 **Interaction** is configured by default to identify the recipient of the primary key:
+* The event must include an identifier linked to the recipients, for personalizing offers. The **@externalId** attribute must contain the value of this identifier. **Interaction** is configured by default to identify the recipient of the primary key:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
+  ```
 
-   您可以設 **定Interaction** ，以便在您選擇的欄位中進行識別，例如在電子郵件位址上：
+  You can configure **Interaction** so that identification takes place in the field of your choice, for example on the email address:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
+  ```
 
-以電子郵件促銷活動的方式建立傳送範本：
+Create your delivery templates the way you would for an email campaign:
 
-* 將選件新增至您的交易訊息範本。
-* 檢查預覽、傳送校樣並發佈範本。
+* Add the offer to your transactional message template.
+* Check the preview, send a proof and publish the template.
 
-您也必須啟用選件空間上的統一模式。 如需詳細資訊，請參閱[本小節](../../interaction/using/creating-offer-spaces.md)。
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
 ## 交易式訊息和推播通知 {#transactional-messaging-and-push-notifications}
 
@@ -127,7 +130,7 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
 * 行動裝置ID(Android **的registrationId** ,iOS的 **deviceToken** )。 此ID代表通知要傳送至的「位址」。
 * 行動應用程式的連結或整合金鑰(**uuid**)，可讓您復原應用程式的特定連線資訊。
-* 將傳送通知的渠道(**whishedChannel**):iOS為41,Android為42
+* 將傳送通知的渠道(**whishedChannel**): iOS為41,Android為42
 * 所有對個人化有用的資料
 
 以下是包含此資訊之事件的範例：
@@ -173,21 +176,21 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
    ![](assets/line_config_mc.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 視需要為您的外部帳戶命名。
+   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL External database]** 。
    * **[!UICONTROL Enabled]** 框。
    從類 **[!UICONTROL Connection]** 別：
 
-   * **[!UICONTROL Type]** :選擇資料庫伺服器，例如PostgresSQL。
-   * **[!UICONTROL Server]** :輸入資料庫伺服器URL。
-   * **[!UICONTROL Account]** :輸入您的資料庫帳戶。
+   * **[!UICONTROL Type]** : 選擇資料庫伺服器，例如PostgresSQL。
+   * **[!UICONTROL Server]** : 輸入資料庫伺服器URL。
+   * **[!UICONTROL Account]** : 輸入您的資料庫帳戶。
 
       >[!NOTE]
       >
-      >資料庫用戶需要對下清單具有讀取權限，以便FDA連接：XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBatchEvent、NmsBroadLogMsg、NmsTrackingUrl、NmsDelivery、NmsWebTrackingLogXtkFolder。
+      >資料庫用戶需要對下清單具有讀取權限，以便FDA連接： XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBatchEvent、NmsBroadLogMsg、NmsTrackingUrl、NmsDelivery、NmsWebTrackingLogXtkFolder。
 
-   * **[!UICONTROL Password]** :輸入資料庫帳戶的密碼。
-   * **[!UICONTROL Database]** :輸入執行實例的資料庫名。
+   * **[!UICONTROL Password]** : 輸入資料庫帳戶的密碼。
+   * **[!UICONTROL Database]** : 輸入執行實例的資料庫名。
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** 框。
 
 
@@ -195,34 +198,34 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
    ![](assets/line_config_mc_1.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 視需要為您的外部帳戶命名。
+   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL External database]** 。
    * 必須勾選「啟用」方塊。
    從類 **[!UICONTROL Connection]** 別：
 
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL HTTP relay to remote Database]** 。
-   * **[!UICONTROL Server]** :輸入您促銷活動的執行例項伺服器URL。
-   * **[!UICONTROL Account]** :輸入用於訪問執行實例的帳戶。
-   * **[!UICONTROL Password]** :輸入用於訪問執行實例的帳戶的密碼。
-   * **[!UICONTROL Data Source]** :輸入下列語法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
+   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL HTTP relay to remote Database]** 。
+   * **[!UICONTROL Server]** : 輸入您促銷活動的執行例項伺服器URL。
+   * **[!UICONTROL Account]** : 輸入用於訪問執行實例的帳戶。
+   * **[!UICONTROL Password]** : 輸入用於訪問執行實例的帳戶的密碼。
+   * **[!UICONTROL Data Source]** : 輸入下列語法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
 
 
 1. 使用下 **[!UICONTROL Execution instance]** 列設定在您的行銷 **例項中建立外部帳戶** ，以建立資料同步工作流程：
 
    ![](assets/line_config_mc_2.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL Execution instance]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 視需要為您的外部帳戶命名。
+   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL Execution instance]** 。
    * 必須勾選「啟用」方塊。
    從類 **[!UICONTROL Connection]** 別：
 
-   * **[!UICONTROL URL]** :輸入執行例項的URL。
-   * **[!UICONTROL Account]** :輸入用於訪問執行實例的帳戶。
-   * **[!UICONTROL Password]** :輸入用於訪問執行實例的帳戶的密碼。
+   * **[!UICONTROL URL]** : 輸入執行例項的URL。
+   * **[!UICONTROL Account]** : 輸入用於訪問執行實例的帳戶。
+   * **[!UICONTROL Password]** : 輸入用於訪問執行實例的帳戶的密碼。
    從類 **[!UICONTROL Account connection method]** 別：
 
-   * **[!UICONTROL Method]** :選擇 **[!UICONTROL Federated Data Access (FDA)]** 。
-   * **[!UICONTROL FDA account]** :從下拉式清單中選擇您的FDA帳戶。
+   * **[!UICONTROL Method]** : 選擇 **[!UICONTROL Federated Data Access (FDA)]** 。
+   * **[!UICONTROL FDA account]** : 從下拉式清單中選擇您的FDA帳戶。
    * Click the **[!UICONTROL Create the archiving workflow]** button.
    * 按一下該 **[!UICONTROL Create data synchronization workflow]** 按鈕可建立LINE資料同步工作流。
 
