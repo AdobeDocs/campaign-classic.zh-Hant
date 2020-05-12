@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
 
 # 關於傳送能力{#about-deliverability}
+
+**傳遞能力** ，包括測量促銷活動在到達收件者收件匣時是否成功，而不會反彈或標示為垃圾訊息。
 
 Adobe Campaign提供了若干工具來追蹤平台的傳遞效能。 本節也說明在管理和最佳化傳遞能力時，您應牢記的主要原則。
 
