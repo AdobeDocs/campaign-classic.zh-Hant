@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '2434'
+ht-degree: 1%
 
 ---
 
@@ -44,9 +47,9 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 消息失敗時有三種錯誤類型。 每個錯誤類型都決定是否將地址發送給隔離。 有關詳細資訊，請參 [閱發送地址到隔離的條件](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
-* **硬**:「硬」錯誤表示地址無效。 這包含明確指出地址無效的錯誤訊息，例如：&quot;未知用戶&quot;。
-* **軟**:這可能是暫時錯誤，或無法分類的錯誤，例如：「無效域」或「郵箱已滿」。
-* **已忽略**:這是已知為暫時的錯誤，例如「不在辦公室」，或是技術錯誤，例如，如果傳送者類型是「postmaster」。
+* **硬**: 「硬」錯誤表示地址無效。 這包含明確指出地址無效的錯誤訊息，例如： &quot;未知用戶&quot;。
+* **軟**: 這可能是暫時錯誤，或無法分類的錯誤，例如： 「無效域」或「郵箱已滿」。
+* **已忽略**: 這是已知為暫時的錯誤，例如「不在辦公室」，或是技術錯誤，例如，如果傳送者類型是「postmaster」。
 
 傳送失敗的可能原因有：
 
@@ -128,7 +131,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
    <td> 郵箱已滿 </td> 
    <td> Soft </td> 
    <td> 5 </td> 
-   <td> 此用戶的郵箱已滿，無法接受更多消息。 此描述檔將再次定位，直到錯誤計數達到5。 之後，記錄將設定為「隔離」狀態，不會再重試。<br /> 此類錯誤由清理進程管理，地址在30天後設定為有效狀態。<br /> 警告：要自動從隔離地址清單中刪除地址，必須啟動資料庫清理技術工作流。<br /> </td> 
+   <td> 此用戶的郵箱已滿，無法接受更多消息。 此描述檔將再次定位，直到錯誤計數達到5。 之後，記錄將設定為「隔離」狀態，不會再重試。<br /> 此類錯誤由清理進程管理，地址在30天後設定為有效狀態。<br /> 警告： 要自動從隔離地址清單中刪除地址，必須啟動資料庫清理技術工作流。<br /> </td> 
   </tr> 
   <tr> 
    <td> 未連接 </td> 
@@ -140,7 +143,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
    <td> 未定義 </td> 
    <td> 未定義 </td> 
    <td> 0 </td> 
-   <td> 該地址處於限定狀態，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤：它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。 然後，他們可以通過樹結構中的「管理 <span class="uicontrol">/促銷活動管理</span> /非交付 <span class="uicontrol"></span><span class="uicontrol"></span> 件管理」節點，執行消息分析並限定此錯誤。<br /> </td> 
+   <td> 該地址處於限定狀態，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤： 它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。 然後，他們可以通過樹結構中的「管理 <span class="uicontrol">/促銷活動管理</span> /非交付 <span class="uicontrol"></span><span class="uicontrol"></span> 件管理」節點，執行消息分析並限定此錯誤。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不符合選件資格 </td> 
@@ -197,8 +200,8 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 消息在發送後可能立即失敗（同步錯誤），或稍後失敗（非同步錯誤）。
 
-* 同步錯誤：由Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不允許傳送至描述檔的伺服器。 Adobe Campaign可讓每個錯誤符合資格，以判斷是否應隔離相關電子郵件地址。 請參 [閱Bounce郵件資格](#bounce-mail-qualification)。
-* 非同步錯誤：接收伺服器稍後會重新發送彈回郵件或SR。 此郵件已載入到應用程式用於標籤錯誤消息的技術郵箱中。 傳送後一週內，可能會發生非同步錯誤。
+* 同步錯誤： 由Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不允許傳送至描述檔的伺服器。 Adobe Campaign可讓每個錯誤符合資格，以判斷是否應隔離相關電子郵件地址。 請參 [閱Bounce郵件資格](#bounce-mail-qualification)。
+* 非同步錯誤： 接收伺服器稍後會重新發送彈回郵件或SR。 此郵件已載入到應用程式用於標籤錯誤消息的技術郵箱中。 傳送後一週內，可能會發生非同步錯誤。
 
    >[!NOTE]
    >
@@ -226,7 +229,7 @@ Adobe Campaign平台可讓您透過彈回郵件功能管理電子郵件傳送失
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電子郵件地址、電話號碼等）並在欄中顯示篩選 **[!UICONTROL Text]** 結果。 變數會取代為 **`#xxx#`**，但地址會取代為 **`*`**。
+Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電子郵件地址、電話號碼等） 並在欄中顯示篩選 **[!UICONTROL Text]** 結果。 變數會取代為 **`#xxx#`**，但地址會取代為 **`*`**。
 
 此程式可讓所有相同類型的故障匯集在一起，並避免在「傳送記錄」資格表中出現類似錯誤時出現多個項目。
 
@@ -236,9 +239,9 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 彈回郵件可以具有下列資格狀態：
 
-* **[!UICONTROL To qualify]** :彈回數郵件無法合格。 必須將資格指派給「傳遞能力」團隊，以確保有效率的平台傳遞能力。 只要郵件不符合條件，反彈郵件就不會用來豐富電子郵件管理規則清單。
-* **[!UICONTROL Keep]** :彈回郵件已經合格， **** Refresh將會使用它來傳送性工作流程，以便與現有的電子郵件管理規則比較，並豐富清單。
-* **[!UICONTROL Ignore]** :「促銷活動MTA」會忽略反彈郵件，這表示此反彈不會造成隔離收件者的位址。 Refresh不會用於傳遞性工 **作流程** ，也不會傳送給用戶端例項。
+* **[!UICONTROL To qualify]** : 彈回數郵件無法合格。 必須將資格指派給「傳遞能力」團隊，以確保有效率的平台傳遞能力。 只要郵件不符合條件，反彈郵件就不會用來豐富電子郵件管理規則清單。
+* **[!UICONTROL Keep]** : 彈回郵件已經合格， **** Refresh將會使用它來傳送性工作流程，以便與現有的電子郵件管理規則比較，並豐富清單。
+* **[!UICONTROL Ignore]** : 「促銷活動MTA」會忽略反彈郵件，這表示此反彈不會造成隔離收件者的位址。 Refresh不會用於傳遞性工 **作流程** ，也不會傳送給用戶端例項。
 
 ![](assets/deliverability_qualif_status.png)
 
@@ -255,7 +258,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 * 對於不使用 **Webhook/EFS的「增強型MTA」實例****[!UICONTROL Inbound email]** ，規則也將用於處理來自「增強型MTA」的同步彈回電子郵件，使用與非同步彈回電子郵件相同的電子郵件地址。
 >
 >
-如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 ### 電子郵件管理規則 {#email-management-rules}
 
@@ -291,7 +294,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 >
 >對於托管或混合安裝，如果您已升級到「增強MTA」，並且實例具有 **Webhook/EFS****[!UICONTROL Inbound email]** ，則不再使用規則來同步發送故障錯誤消息。 For more on this, see [this section](#bounce-mail-qualification).
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### 網域管理 {#domain-management}
 
@@ -308,7 +311,7 @@ Adobe Campaign訊息伺服器會將單一網域 **管理規則套用** 至所有
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Domain management]** 則不再使用規則。 **DKIM(DomainKeys Indified Mail)** ，電子郵件驗證簽署由「增強的MTA」針對所有網域的所有訊息完成。 除非在「增強的MTA」 **層級另有指定**，否則不會使用「傳送者ID **」、「網域金鑰**」或「 **S/MIME** 」進行簽署。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### MX管理 {#mx-management}
 
@@ -324,4 +327,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則不 **[!UICONTROL MX management]** 再使用傳送總處理能力規則。 增強型MTA使用其專屬的MX規則，可讓您根據您過去的電子郵件信譽，以及您傳送電子郵件的網域所提供的即時回應，依網域自訂您的吞吐量。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
