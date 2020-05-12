@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3055'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +61,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連接
 
 * **[!UICONTROL Customer identifier used in billing]** : 這可以是例項的名稱和版本號碼。
 * **[!UICONTROL Common name of the customer]** : 輸入公司名稱的字元字串。 此資訊可用於取消訂閱連結。
-* **[!UICONTROL Namespace]** : 以小寫輸入簡短識別碼。 目的是在升級時區分您的特定配置和出廠配置。 預設的命名空間 **是cus** —— 適用於客戶。
+* **[!UICONTROL Namespace]** : 以小寫輸入簡短識別碼。 目的是在升級時區分您的特定配置和出廠配置。 預設的命名空 **間為** cus - for customer.
 
 ### 技術選項 {#technical-options}
 
@@ -160,7 +163,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連接
 * **[!UICONTROL Address for errors]** : 填寫此欄位，只將inMail程式無法符合的錯誤訊息傳送至第三方地址。
 * **[!UICONTROL SMTP server]** : 伺服器用來傳送未處理的彈回電子郵件。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >若要轉寄未處理的彈回電子郵件，Adobe建議只填入欄 **[!UICONTROL Address for errors]** 位。 不過，請務必定期檢查所使用的地址，因為這可能給郵件伺服器帶來沈重負載。 如需詳細資訊，請洽詢您的帳戶管理員。
 
@@ -310,7 +313,7 @@ URL搜尋連結的參 **數不得在標準安裝** 中修改。 如需所有其�
 
 ## 從網際網路存取 {#access-from-the-internet}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >基於隱私權原因，我們建議對所有外部資源使用HTTPS。
 
@@ -334,7 +337,7 @@ Adobe Campaign可讓您區隔這三個URL，將負載分散到多個平台。
 
 ## 管理公共資源 {#managing-public-resources}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >基於隱私權原因，我們建議對所有外部資源使用HTTPS。
 
