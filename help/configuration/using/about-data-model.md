@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 87966db35779f0e6a4b09a1a3ba1c30d4d002518
+source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+workflow-type: tm+mt
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ Adobe Campaign資料庫的概念資料模型由一組內建表格及其互動組
 
 ![](assets/data-model_documentation-tab.png)
 
-如需預設「促銷活動傳統型」資料模型說明的詳細資訊，請參閱此 [節](../../configuration/using/data-model-description.md)。
+如需預設「促銷活動傳統型」資料模型說明的詳細資訊，請參 [閱本節](../../configuration/using/data-model-description.md)。
 
-在XML中描述了應用中資料的物理和邏輯結構。 它遵循Adobe Campaign專屬的語法，稱為結構。 如需Adobe Campaign結構描述的詳細資訊，請閱讀本 [節](../../configuration/using/about-schema-reference.md)。
+在XML中描述了應用中資料的物理和邏輯結構。 它遵循Adobe Campaign專屬的語法，稱為結構。 如需Adobe Campaign結構描述的詳細資訊，請閱讀 [本節](../../configuration/using/about-schema-reference.md)。
 
 ## 概觀 {#data-model-overview}
 
@@ -38,13 +41,13 @@ Adobe Campaign依賴包含連結在一起的表格的關係式資料庫。 Adobe
 
 >[!NOTE]
 >
->如需有關促銷活動資料模型架構和相關最佳實務的詳細資訊，請參閱本 [節](../../configuration/using/data-model-best-practices.md#data-model-architecture)。
+>有關促銷活動資料模型架構和相關最佳實務的詳細資訊，請參 [閱本節](../../configuration/using/data-model-best-practices.md#data-model-architecture)。
 
 ### 收件者表格 {#recipient-table}
 
 資料模型依賴於主表，該主表預設為「接收者」表(**NmsRecipient**)。 此表格可儲存所有行銷設定檔。
 
-如需「收件者」表格的詳細資訊，請參閱 [本節](#default-recipient-table)。
+如需「收件者」表格的詳細資訊，請參 [閱本節](#default-recipient-table)。
 
 ### 傳送表格 {#delivery-table}
 
@@ -85,7 +88,7 @@ Adobe Campaign中立即可用的「收件者」表格為您建立資料模型提
 
 從Adobe Campaign開始，您需要評估預設資料模型，以檢查哪個表格最適合儲存行銷資料。
 
-如果相關，您可以使用預設的「收件者」表格和現成可用的欄位，如本節所述 [內容](#default-recipient-table)。
+如果相關，您可以使用預設的「收件者」表格和現成可用的欄位，如本節 [所述](#default-recipient-table)。
 
 如有需要，您可以使用兩種機制來擴充它：
 
@@ -108,7 +111,7 @@ Adobe Campaign中立即可用的「收件者」表格為您建立資料模型提
 >
 >在這種情況下，您需要建立新的目 [標映射](../../configuration/using/target-mapping.md)。
 
-使用自訂收件者表格時，所需的原則和步驟在本節中有詳細 [說明](../../configuration/using/about-custom-recipient-table.md)。
+使用自訂收件者表格時，所需的原則和步驟在本節中詳 [細說明](../../configuration/using/about-custom-recipient-table.md)。
 
 使用自訂「收件者」表格的優點如下：
 
@@ -130,4 +133,4 @@ Adobe Campaign中立即可用的「收件者」表格為您建立資料模型提
 
 >[!IMPORTANT]
 >
->使用自訂收件者表格會保留給進階使用者，並受到一些限制。 有關此內容的詳細資訊，請參閱本節。
+>使用自訂收件者表格會保留給進階使用者，並受到一些限制。 For more on this, see [this section](../../configuration/using/about-custom-recipient-table.md).
