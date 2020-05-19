@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
+source-git-commit: 26ba86073e4f1569bf05a7d8aa864ca87baed3ea
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
 
 ## SQL代碼 {#sql-code}
 
-*活動&#x200B;*[!UICONTROL SQL code*]* ，執行SQL指令碼。 該指令碼是JST模板。
+活動 **[!UICONTROL SQL code]** 執行SQL指令碼。 該指令碼是JST模板。
 
 ![](assets/sql_code.png)
 
@@ -50,14 +53,14 @@ source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
 
    ![](assets/javascript_code.png)
 
-   * **[!UICONTROL Script]**:編輯器的中心區域包含要執行的指令碼。
-   * **[!UICONTROL Processing errors]**:請參閱「 [處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)」。
+   * **[!UICONTROL Script]**: 編輯器的中心區域包含要執行的指令碼。
+   * **[!UICONTROL Processing errors]**: 請參閱「 [處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)」。
 
 * **[!UICONTROL Advanced JavaScript code]**
 
    ![](assets/advanced_javascript_code.png)
 
-   * **[!UICONTROL First call]**:編輯器的第一個區域包含要在第一次調用期間執行的指令碼。
-   * **[!UICONTROL Next calls]**:編輯器的第二個區域包含在下次調用期間執行的指令碼。
-   * **[!UICONTROL Transitions]**:您可以定義數個活動輸出轉場。
-   * **[!UICONTROL Schedule]**:此標 **[!UICONTROL Schedule]** 簽可讓您排程何時觸發活動。
+   * **[!UICONTROL First call]**: 編輯器的第一個區域包含要在第一次調用期間執行的指令碼。
+   * **[!UICONTROL Next calls]**: 編輯器的第二個區域包含在下次調用期間執行的指令碼。
+   * **[!UICONTROL Transitions]**: 您可以定義數個活動輸出轉場。
+   * **[!UICONTROL Schedule]**: 此標 **[!UICONTROL Schedule]** 簽可讓您排程何時觸發活動。
