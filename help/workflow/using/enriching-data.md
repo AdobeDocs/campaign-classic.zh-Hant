@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,8 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 ## 關於豐富資料 {#about-enriching-data}
 
 此使用案例詳細資訊可能會在定位 **[!UICONTROL Enrichment]** 工作流程中使用活動。 有關使用活動的詳 **[!UICONTROL Enrichment]** 細資訊，請參閱： [濃縮](../../workflow/using/enrichment.md)。
+
+本節也提供如何以自訂日期豐富電子郵件傳送的使 [用案例](../../workflow/using/email-enrichment-with-custom-date-fields.md)。
 
 行銷資料庫中的連絡人會收到邀請，以透過網路應用程式參與競賽。 比賽結果見表 **[!UICONTROL Competition results]** 格。 此表連結到聯繫人表(**[!UICONTROL Recipients]**)。 表格 **[!UICONTROL Competition results]** 包含下列欄位：
 
@@ -51,7 +56,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 1. 類型 **[!UICONTROL Split]** 活動可讓我們根據分數建立收件者子集。
 1. 對於每個子集，都 **[!UICONTROL Delivery]** 會添加類型活動。
 
-## 步驟1:定位 {#step-1--targeting}
+## 步驟1: 定位 {#step-1--targeting}
 
 第一個查詢可讓我們定位在過去六個月內新增至資料庫的收件者。
 
@@ -63,7 +68,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 然後 **[!UICONTROL Intersection]** 會新增一個類型活動，以鎖定在過去六個月內新增至資料庫的收件者，以及參加上次競爭的收件者。
 
-## 步驟2:濃縮 {#step-2--enrichment}
+## 步驟2: 濃縮 {#step-2--enrichment}
 
 在此範例中，我們要根據表格中儲存的欄位， **[!UICONTROL Score]** 個人化傳送 **[!UICONTROL Competition results]** 內容。 此表與收件者表具有1-n類型關係。 此活 **[!UICONTROL Enrichment]** 動可讓我們將連結至篩選維度的表格資料新增至工作流程的工作表。
 
@@ -107,7 +112,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ![](assets/uc1_enrich_14.png)
 
-## 步驟3:分割和傳送 {#step-3--split-and-delivery}
+## 步驟3: 分割和傳送 {#step-3--split-and-delivery}
 
 若要根據收件者的分數來排序，會在 **[!UICONTROL Split]** 富集後新增活動。
 
