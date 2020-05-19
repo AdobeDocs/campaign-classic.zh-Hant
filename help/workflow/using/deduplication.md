@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 重複資料消除從入站活動的結果中刪除重複項。 可在電子郵件地址、電話號碼或其他欄位上執行重複資料刪除。
 
-## 最佳實務 {#best-practices}
+## 最佳作法 {#best-practices}
 
 在重複資料消除期間，入站流將單獨處理。 例如，如果在查詢1的結果和查詢2的結果中都找到收件者A，則不會對它們進行重複資料消除。
 
@@ -45,11 +48,14 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 目標選擇
 
-   選擇此活動的目標類型（預設情況下，重複資料消除涉及收件人）和要使用的標準，即相同值允許您識別重複項的欄位：電子郵件地址、行動電話或電話號碼、傳真號碼或直接郵件地址。
+   選擇此活動的目標類型（預設情況下，重複資料消除涉及收件人）和要使用的標準，即相同值允許您識別重複項的欄位： 電子郵件地址、行動電話或電話號碼、傳真號碼或直接郵件地址。
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
-   在下一步中，選 **[!UICONTROL Other]** 項可讓您選取要使用的准則或准則：
+   >[!NOTE]
+   >
+   >如果您使用外部資料作為輸入（例如來自外部檔案），請務必選取選 **[!UICONTROL Temporary schema]** 項。
+在下一步中，選 **[!UICONTROL Other]** 項可讓您選取要使用的准則或准則：
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -61,16 +67,16 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    可使用下列方法：
 
-   * **[!UICONTROL Choose for me]**:隨機選擇要從重複項中保留的記錄。
-   * **[!UICONTROL Following a list of values]**:可讓您定義一或多個欄位的值優先順序。 要定義值，請選擇一個欄位或建立表達式，然後將值添加到相應的表中。 若要定義新欄位，請按一 **[!UICONTROL Add]** 下值清單上方的按鈕。
+   * **[!UICONTROL Choose for me]**: 隨機選擇要從重複項中保留的記錄。
+   * **[!UICONTROL Following a list of values]**: 可讓您定義一或多個欄位的值優先順序。 要定義值，請選擇一個欄位或建立表達式，然後將值添加到相應的表中。 若要定義新欄位，請按一 **[!UICONTROL Add]** 下值清單上方的按鈕。
 
       ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Non-empty value]**:這可讓您保留所選運算式值不為空的記錄作為優先順序。
+   * **[!UICONTROL Non-empty value]**: 這可讓您保留所選運算式值不為空的記錄作為優先順序。
 
       ![](assets/s_user_segmentation_dedup_param6.png)
 
-   * **[!UICONTROL Using an expression]**:可讓您使用指定運算式的最低（或最高）值來保存記錄。
+   * **[!UICONTROL Using an expression]**: 可讓您使用指定運算式的最低（或最高）值來保存記錄。
 
       ![](assets/s_user_segmentation_dedup_param7.png)
    按一下 **[!UICONTROL Finish]** 以批准所選的重複資料消除方法。
@@ -85,7 +91,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 範例：在傳送前識別重複項目 {#example--identify-the-duplicates-before-a-delivery}
+## 範例： 在傳送前識別重複項目 {#example--identify-the-duplicates-before-a-delivery}
 
 在以下示例中，重複資料消除涉及三個查詢的聯合。
 
