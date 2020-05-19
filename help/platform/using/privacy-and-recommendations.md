@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 74%
 
 ---
 
@@ -32,13 +35,15 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 ## 隱私權管理 {#privacy-management}
 
+Adobe Campaign提供一套工具，可協助您遵守隱私權法規（GDPR、CCPA等）。
+
 GDPR（通用資料保護規則）是歐盟(EU)的隱私法，協調資料保護要求並以現代化方式規範資料保護要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。
 
 CCPA（加州消費者隱私法）為加州居民提供個人資訊的新權利，並對在加州經營業務的特定實體負有資料保護責任。
 
 除了同意管理、資料保留設定和權限管理外，我們還以資料處理者的角色提供額外的功能，以協助您做好準備，做為資料掌控者，處理特定隱私權要求。
 
-在本文 [章中](https://helpx.adobe.com/campaign/kb/acc-privacy.html)，您將瞭解Adobe Campaign如何協助您管理不同的隱私權關鍵功能：存取權、被遺忘權、同意權、資料保留權和使用者角色。 您也會找到最佳實務，以協助您在使用我們的服務時符合隱私權規範。
+在本 [文中](https://helpx.adobe.com/campaign/kb/acc-privacy.html)，您將瞭解Adobe Campaign如何協助您管理不同的隱私權關鍵功能： 存取權、被遺忘權、同意權、資料保留權和使用者角色。 您也會找到最佳實務，以協助您在使用我們的解決方案時符合隱私權規範。
 
 ## Cookie 和追蹤功能 {#cookies-and-tracking-capabilities}
 
