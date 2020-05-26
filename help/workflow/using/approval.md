@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## 任務分配 {#task-assignment}
 
-依預設，會將核准指派給一組運算子。 此群組代表角色，例如「電子報內容群組」或「電子報定位群組」。 群組中的每個運算元都可回答，但只會考慮第一個回覆（若發生多次核准則除外）。
+依預設，會將核准指派給一組運算子。 此群組代表角色，例如 「電子報內容群組」或「電子報定位群組」。 群組中的每個運算元都可回答，但只會考慮第一個回覆（若發生多次核准則除外）。
 
 如有必要，您可以將核准工作指派給單一運算元或由篩選器定義的運算元集。
 
@@ -42,7 +45,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
    ![](assets/s_advuser_validation_box_filter.png)
 
-在單次核准的情況下，激活與操作者選擇相對應的轉換並完成任務：其他運算子無法回覆。
+在單次核准的情況下，激活與操作者選擇相對應的轉換並完成任務： 其他運算子無法回覆。
 
 在發生多個許可的情況下，啟用對應於每個運算子選擇的轉換。 當群組的所有運算子都已回覆，或任務已過期時，就會完成工作。
 
@@ -52,7 +55,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 修改活動的標題或消息主體不會影響當前任務，但是，另一方面，修改可能的選擇直接影響當前任務，這些任務將自動繼承新的選擇清單。
 
-**可從節點訪問** 「批准類型」任 **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 務：營運商可透過此檢視直接存取核准表單。
+**可從節點訪問** 「批准類型」任 **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 務： 營運商可透過此檢視直接存取核准表單。
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -62,7 +65,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ![](assets/edit_validation.png)
 
-此 **[!UICONTROL Title]** 欄位包含訊息的標題：這是所傳送電子郵件的主旨。 標題和訊息內文都是JavaScript範本，因此可包含根據工作流程內容計算的值。
+此 **[!UICONTROL Title]** 欄位包含訊息的標題： 這是所傳送電子郵件的主旨。 標題和訊息內文都是JavaScript範本，因此可包含根據工作流程內容計算的值。
 
 編輯器的下半部分可讓您定義可能的答案清單。 每個答案都對應一個轉場。 名稱是內部識別碼，標籤是將顯示在選項清單中的文字。
 
@@ -70,7 +73,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 您可以修改此範本以個人化訊息版面，但最好複製。 不得修改定位機制（外部檔案、定位對應），因為通知必須正確運作。
 
-「定義審批」中顯示了 [審批實例](../../workflow/using/executing-a-workflow.md#defining-approvals)。
+「定義審批」中顯示了 [審批實例](../../workflow/using/defining-approvals.md)。
 
 ## 輸出參數 {#output-parameters}
 
