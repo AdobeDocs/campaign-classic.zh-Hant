@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+workflow-type: tm+mt
+source-wordcount: '2481'
+ht-degree: 2%
 
 ---
 
@@ -32,14 +35,14 @@ The principle of **data packages** is to export a data configuration and integra
 
 ### 包類型 {#types-of-packages}
 
-可導出包有三種類型：使用者套件、平台套件和管理套件。
+可導出包有三種類型： 使用者套件、平台套件和管理套件。
 
-* **用戶包**:它允許您選擇要導出的圖元清單。 此類軟體包可管理相依性並驗證錯誤。
-* **平台套件**:它包含所有新增的技術資源（非標準）:結構描述、JavaScript程式碼等。
+* **用戶包**: 它允許您選擇要導出的圖元清單。 此類軟體包可管理相依性並驗證錯誤。
+* **平台套件**: 它包含所有新增的技術資源（非標準）: 結構描述、JavaScript程式碼等。
 
    ![](assets/ncs_datapackage_package_platform.png)
 
-* **管理套件**:它包含所有新增的範本和商業物件（非標準）:範本、資料庫等。
+* **管理套件**: 它包含所有新增的範本和商業物件（非標準）: 範本、資料庫等。
 
    ![](assets/ncs_datapackage_package_admin.png)
 
@@ -114,7 +117,7 @@ XML檔案必須以元素開始和結 **`<package>`** 束。 隨後 **`<entities>
 
    >[!CAUTION]
    >
-   >如果您匯出 **[!UICONTROL Offer category]**、 **[!UICONTROL Offer environment]**&#x200B;或 **[!UICONTROL Program]** 類型資料夾，請勿選取 **[!UICONTROL Plan]** xtk:folder **** ，因為您可能會遺失一些資料。 選擇與資料夾對應的實體： **nms:offerCategory** for offer 、 **nms:offerEnv** for offer環境、 **nms:program** for programs和 **** nms:plan for plans
+   >如果您匯出 **[!UICONTROL Offer category]**、 **[!UICONTROL Offer environment]**&#x200B;或 **[!UICONTROL Program]** 類型資料夾，請勿選取 **[!UICONTROL Plan]** xtk:folder **** ，因為您可能會遺失一些資料。 選擇與資料夾對應的實體： **nms:offerCategory** for offer category **,** nms:offerEnv **for offer environments,** nms:program **for programs,** nms:plan for plans.
 
    清單管理可讓您新增或刪除要從設定匯出的實體。 按一下 **[!UICONTROL Add]** 以選擇新圖元。
 
@@ -161,7 +164,7 @@ XML檔案必須以元素開始和結 **`<package>`** 束。 隨後 **`<entities>
 
 #### 匯出促銷活動 {#exporting-a-campaign}
 
-以下是如何匯出促銷活動的範例。 要匯出的行銷促銷活動包含一個工作(標籤：「MyTask」)和工作流程(標籤：「MyWorkflow」檔案夾(節點：管理／生產／技術工作流程／促銷活動流程/ myWorkflow)。
+以下是如何匯出促銷活動的範例。 要匯出的行銷促銷活動包含一個工作(標籤： 「MyTask」)和工作流程(標籤： 「MyWorkflow」檔案夾(節點： 管理／生產／技術工作流程／促銷活動流程/ MyWorkflow)。
 
 任務和工作流會匯出到與促銷活動相同的套件中，因為符合的結構描述是由具有「自有」類型完整性的連結所連結。
 
@@ -219,9 +222,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 最後， **@pkgStatus** 屬性使您能夠定義這些元素或屬性的導出規則。 根據屬性的值，元素或屬性將在導出的包中找到。 此屬性的三個可能值是：
 
-* **永不**:不匯出欄位／連結
-* **一律**:這個領域的出口
-* **preCreate**:授權建立連結的實體
+* **永不**: 不匯出欄位／連結
+* **一律**: 這個領域的出口
+* **preCreate**: 授權建立連結的實體
 
 >[!NOTE]
 >
@@ -272,7 +275,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. 實體將添加到包定義中，它將與包一起導出(請參閱從包定 [義導出包](#exporting-packages-from-a-package-definition))。
+1. 實體將添加到包定義中，它將與包一起導出(請參 [閱從包定義導出包](#exporting-packages-from-a-package-definition))。
 
    ![](assets/packagedefinition_entityadded.png)
 
@@ -282,9 +285,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ![](assets/packagedefinition_generationparameters.png)
 
-* **[!UICONTROL Include the definition]**:包括當前在包定義中使用的定義。
-* **[!UICONTROL Include an installation script]**:可讓您新增javascript指令碼，以便在套件匯入時執行。 選取此選項時， **[!UICONTROL Script]** 會在套件定義畫面中新增標籤。
-* **[!UICONTROL Include default values]**:向包中添加所有實體屬性的值。
+* **[!UICONTROL Include the definition]**: 包括當前在包定義中使用的定義。
+* **[!UICONTROL Include an installation script]**: 可讓您新增javascript指令碼，以便在套件匯入時執行。 選取此選項時， **[!UICONTROL Script]** 會在套件定義畫面中新增標籤。
+* **[!UICONTROL Include default values]**: 向包中添加所有實體屬性的值。
 
    為避免冗長的匯出，預設不會選取此選項。 這表示具有預設值(「空字串」、「0」和「false」（如果未在模式中定義）的實體屬性不會添加到包中，因此不會導出。
 
@@ -335,3 +338,128 @@ template="xtk:folder" pkgAdmin="@id != 0">
 請參閱您的授權合約以檢查您可以安裝哪些套件。
 
 有關標準軟體包的詳細資訊，請參 [閱本頁](../../installation/using/installing-campaign-standard-packages.md)。
+
+## 資料套件最佳實務 {#data-package-best-practices}
+
+本節介紹如何在整個項目生命週期中以一致的方式組織資料包。
+
+<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
+
+包可以包含不同種類的配置和元素，無論是否經過篩選。 如果您遺漏某些元素或未以正確順序匯入元素／封裝，平台組態可能會中斷。
+
+此外，由於同一平台上有許多不同的功能，使得封裝規格資料夾的複雜度很快。
+
+雖然不是強制性的，但本節提供解決方案，協助您在Adobe Campaign中組織及使用套件以進行大型專案。
+
+<!--This solution has been used with a project involving more than 10 consultants.-->
+
+主要限制如下：
+* 組織套件並追蹤變更的項目及變更時間
+* 如果更新了配置，將破壞未直接與更新連結的內容的風險降至最低
+
+>[!NOTE]
+>
+>如需設定工作流程以自動匯出封裝的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html)。
+
+### 建議 {#data-package-recommendations}
+
+請一律在相同的平台版本中匯入。 您必須檢查是否在兩個具有相同組建版本的實例之間部署軟體包。 切勿強制匯入，並一律先更新平台（如果組建版本不同）。
+
+>[!IMPORTANT]
+>
+>Adobe不支援在不同版本之間匯入。
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+
+注重模式和資料庫結構。 導入具有模式的包後必須生成模式。
+
+### 解決方案 {#data-package-solution}
+
+#### 包類型 {#package-types}
+
+首先，定義不同類型的包。 僅使用4種類型：
+
+**實體**
+* Adobe Campaign中的所有「xtk」和「nms」特定元素，例如結構、表單、資料夾、傳送範本等。
+* 您可以將實體視為「管理員」和「平台」元素。
+* 在促銷活動例項上傳套件時，套件中不應包含多個實體。
+
+<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+
+如果您需要在新實例上部署配置，則可以導入所有實體包。
+
+**功能**&#x200B;此類型的套件：
+* 滿足客戶需求／規格。
+* 包含一或多項功能。
+* 應包含所有相依性，以便能夠在沒有任何其他軟體包的情況下運行該功能。
+
+**促銷活**&#x200B;動此套件不是強制性的。 有時候，建立所有促銷活動的特定類型會很有用，即使促銷活動可以看作功能亦然。
+
+**更新**&#x200B;設定好後，功能即可匯出至其他環境。 例如，可將套件從開發環境匯出至測試環境。 在本試驗中發現了缺陷。 首先，它需要在開發環境上修正。 接著，應將修補程式套用至測試平台。
+
+第一個解決方案是再次匯出整個功能。 但是，為了避免任何風險（更新不想要的元素），只包含修正的套件更安全。
+
+這就是為什麼我們建議建立「更新」套件，只包含一種功能實體類型。
+
+更新不僅可以是修正，也可以是實體／功能／促銷活動套件的新元素。 若要避免部署整個套件，您可以匯出更新套件。
+
+### 命名慣例 {#data-package-naming}
+
+既然已定義了類型，我們應指定命名慣例。 Adobe Campaign不允許針對套件規格建立子檔案夾，這表示數字是維持有條理的最佳解決方案。 數字前置詞包名。 您可以使用下列慣例：
+
+* 實體： 從1到99
+* 功能： 從100到199
+* 促銷活動： 從200到299
+* 更新： 從5000到5999
+
+### 套件 {#data-packages}
+
+>[!NOTE]
+>
+>最好設定規則來定義正確的封裝數。
+
+#### 實體封裝順序 {#entity-packages-order}
+
+為幫助導入，實體包應按順序進行導入。 例如：
+* 001 —— 方案
+* 002 —— 表單
+* 003 —— 影像
+* 等等。
+
+>[!NOTE]
+>
+>表單只應在模式更新後匯入。
+
+#### 套件200 {#package-200}
+
+套件編號&quot;200&quot;不應用於特定促銷活動： 此數字將用於更新與所有促銷活動相關的內容。
+
+#### 更新套件 {#update-package}
+
+最後一點涉及更新包編號。 它是您的套件編號（實體、功能或促銷活動），首碼為&quot;5&quot;。 例如：
+* 5001更新一個架構
+* 5200以更新所有促銷活動
+* 5101以更新101功能
+
+更新套件應僅包含一個特定實體，以方便可重複使用。 若要分割它們，請新增一個數字（從1開始）。 這些包沒有特定的訂購規則。 為了更好地瞭解，請假設我們有101項功能，一個社交應用程式：
+* 它包含webApp和外部帳戶。
+   * 包標籤為： 101 —— 社交應用程式(socialApplication)。
+* webApp有缺陷。
+   * wepApp已更正。
+   * 需要建立具有以下名稱的修正軟體包： 5101 - 1 —— 社交應用程式webApp(socialApplication_webApp)。
+* 必須為社交功能新增外部帳戶。
+   * 建立外部帳戶。
+   * 新套件為： 5101 - 2 —— 社交應用程式外部帳戶(socialApplication_extAccount)。
+   * 同時，101套件會更新為新增至外部帳戶，但不會部署。
+      ![](assets/ncs_datapackage_best-practices-1.png)
+
+#### 套件檔案 {#package-documentation}
+
+更新套件時，您應一律在描述欄位中加上註解，以詳細說明任何修改和原因（例如，「新增架構」或「修正缺陷」）。
+
+![](assets/ncs_datapackage_best-practices-2.png)
+
+您也應將留言日期設為。 請務必將更新套件的意見回報至「父項」（不含5首碼的套件）。
+
+>[!IMPORTANT]
+>
+>說明欄位最多只能包含2.000個字元。
