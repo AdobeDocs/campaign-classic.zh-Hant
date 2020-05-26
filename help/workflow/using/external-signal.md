@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ![](assets/edit_signal.png)
 
-到期日的設定在到期日中詳 [細說明](../../workflow/using/executing-a-workflow.md#expirations)。
+到期日的設定在到期日中詳 [細說明](../../workflow/using/defining-approvals.md)。
 
 「延 **遲** 」欄位可讓您以選擇的單位指定到期延遲。 請參 [閱等待](../../workflow/using/wait.md)。
 
