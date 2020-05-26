@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 2%
 
 ---
 
@@ -30,11 +33,11 @@ source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
 >
 >個人化欄位內容不能超過1024個字元。
 
-## 資料來源 {#data-sources}
+## Data sources {#data-sources}
 
 個人化欄位可以根據選取的傳送模式，來自兩種資料來源：
 
-* Adobe Campaign資料庫是資料來源。 這是最常見的情況，例如「收件者個人化欄位」。 這些都是在收件者表格中定義的所有欄位，不論是標準欄位(通常：姓氏、名字、地址、城鎮、出生日期等)或使用者定義欄位。
+* Adobe Campaign資料庫是資料來源。 這是最常見的情況，例如「收件者個人化欄位」。 這些都是在收件者表格中定義的所有欄位，不論是標準欄位(通常： 姓氏、名字、地址、城鎮、出生日期等) 或使用者定義欄位。
 * 外部檔案是資料源。 這些是檔案欄中定義的所有欄位，在傳送期間使用外部檔案中的資料顯示為輸入。
 
 >[!NOTE]
@@ -76,11 +79,11 @@ source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
 
    >[!NOTE]
    >
-   >當傳送是工作流程的一部分時，您可以使用臨時工作流程表格中的資料。 此資料會分組在功能表 **[!UICONTROL Target extension]** 中。 如需詳細資訊，請參閱[本小節](../../workflow/using/executing-a-workflow.md#target-data)。
+   >當傳送是工作流程的一部分時，您可以使用臨時工作流程表格中的資料。 此資料會分組在功能表 **[!UICONTROL Target extension]** 中。 如需詳細資訊，請參閱[本小節](../../workflow/using/data-life-cycle.md#target-data)。
 
 ## 最佳化個人化 {#optimizing-personalization}
 
-您可以使用專屬選項來最佳化個人化： **[!UICONTROL Prepare the personalization data with a workflow]**，可在傳送屬 **[!UICONTROL Analysis]** 性的標籤中使用。
+您可以使用專屬選項來最佳化個人化： **[!UICONTROL Prepare the personalization data with a workflow]**，可在傳送屬 **[!UICONTROL Analysis]** 性的標籤中取用。
 
 在傳送分析期間，此選項會自動建立並執行將所有連結至目標的資料儲存在暫存表格中的工作流程，包括FDA中連結之表格的資料。
 
