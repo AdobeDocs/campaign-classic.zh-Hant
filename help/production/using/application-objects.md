@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1937c1ddcbde092a22f4fe8c50d3d72b02cfeed
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 1%
 
 ---
 
 
 # 應用程式物件{#application-objects}
 
-內建物件應受到監控，防止其增長過多非常重要。
+內建物件應受到監控，防止其增長過多很重要。
 
 ## ID順序 {#sequence-of-ids}
 
@@ -58,8 +61,8 @@ Adobe Campaign會使用必須據以使用的ID序列： **xtkNewId**。 如果�
 
 ## 交易資料和記錄檔 {#transactional-data-and-logs}
 
-將資 [料匯入](../../workflow/using/executing-a-workflow.md#work-table) Adobe Campaign的每個工作流程都會使資料庫的大小增加。
+將資 [料匯入](../../workflow/using/data-life-cycle.md#work-table) Adobe Campaign的每個工作流程都會增加資料庫的大小。
 
-檢查清除或清除工作流是否正在運行並有效清除記錄。 必須清除所有事務性資料和日誌。 清除任務僅清除標準表：追蹤和廣泛的記錄檔。 特定表必須由特定工作流清除。 Refer to [this section](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+檢查清除或清除工作流是否正在運行並有效清除記錄。 必須清除所有事務性資料和日誌。 清除任務僅清除標準表： 追蹤和廣泛的記錄檔。 特定表必須由特定工作流清除。 Refer to [this section](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
 檢查記錄的最舊建立日期，以查看事務資料的老化。
