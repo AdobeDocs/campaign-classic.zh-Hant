@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## 更新資料庫 {#updating-the-database}
 
-所有收集的資料都可用於更新資料庫或傳送。 例如，您可以豐富訊息內容個人化的可能性（包括訊息中的合約數目、指定去年的平均購物車等）或詳細定位人口（傳送訊息給合約合約持有人、鎖定線上服務的1,000名最佳訂閱者等）。 此資料也可以匯出或封存在清單中。
+所有收集的資料都可用於更新資料庫或傳送。 例如，您可以豐富訊息內容個人化的可能性（包括訊息中的合約數目、指定去年的平均購物車等） 或詳細定位人口（傳送訊息給合約合約持有人、鎖定線上服務的1,000名最佳訂閱者等）。 此資料也可以匯出或封存在清單中。
 
 ### 清單和直接更新 {#lists-and-direct-updates}
 
@@ -60,13 +63,13 @@ Adobe Campaign資料庫和現有清單的資料可使用兩個專用活動進行
 
 ![](assets/s_advuser_add_data_postal_mail.png)
 
-除了一般的個人化欄位外，您還可以將工作流程階段的個人化欄位新增至傳送內容。 工作流活動中定義的附加資料可以在發送嚮導中保留並使其可訪問，如以下示例所示，用於在直接郵件發送框架中定義輸出檔案的名稱：
+除了一般的個人化欄位外，您還可以將工作流程階段的個人化欄位新增至傳送內容。 工作流活動中定義的其他資料可以在傳送嚮導中保留並訪問，如下例所示，用於在直接郵件傳送框架中定義輸出檔案的名稱：
 
 ![](assets/s_advuser_using_additional_data.png)
 
-工作流表中包含的資料由其名稱標識：它一律由targetData連 **結組成** 。 For more on this, refer to [Target data](../../workflow/using/executing-a-workflow.md#target-data).
+工作流表中包含的資料由其名稱標識： 它一律由targetData連 **結組成** 。 For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data).
 
-在電子郵件傳送的架構中，個人化欄位也可以使用目標擴充功能在目標工作流程階段中執行的資料，如下例所示：
+在電子郵件傳送的架構中，個人化欄位也可以使用定位工作流程階段中執行之定位擴充功能的資料，如下列範例所示：
 
 ![](assets/s_advuser_add_data_email.png)
 
@@ -82,8 +85,8 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過活動定義�
 
 若要這麼做：
 
-* 如果您的Adobe Campaign安裝是由Adobe代管：向Support(支 [持](https://support.neolane.net) )發送請求，要求在伺服器上安裝必要的實用程式。
-* 如果您的Adobe Campaign安裝是在現場進行：安裝您要使用的實用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
+* 如果您的Adobe Campaign安裝是由Adobe代管： 向Support(支 [持](https://support.neolane.net) )發送請求，要求在伺服器上安裝必要的實用程式。
+* 如果您的Adobe Campaign安裝是在現場進行： 安裝您要使用的實用程式(例如： GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
 
 然後，您可以使用命令或程式碼，例如：
 
