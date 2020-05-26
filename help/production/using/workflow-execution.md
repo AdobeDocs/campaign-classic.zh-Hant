@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 69b562979f3b32a4d30dfed0695cf3cf6c0fd26a
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,8 @@ source-git-commit: 69b562979f3b32a4d30dfed0695cf3cf6c0fd26a
 如需工作流程的詳細資訊，請參閱下列章節：
 
 * [關於工作流程](../../workflow/using/about-workflows.md)
-* [執行工作流程](../../workflow/using/executing-a-workflow.md)
+* [啟動工作流](../../workflow/using/starting-a-workflow.md)
+* [工作流程生命週期](../../workflow/using/workflow-life-cycle.md)
 * [使用工作流程時的最佳實務](../../workflow/using/workflow-best-practices.md)
 
 ## 在促銷活動中盡快開始 {#start-as-soon-as-possible-in-campaigns}
@@ -75,7 +79,7 @@ source-git-commit: 69b562979f3b32a4d30dfed0695cf3cf6c0fd26a
 
    若要解決此問題，請停止不想要的工作流程並刪除失敗的傳送。 如果達到閾值，則允許運行新進程。
 
-   若要檢查執行個體的工作流程數目，建議您使用預先定義的檢視，預設可在 **[!UICONTROL Administration]** /資料夾 **[!UICONTROL Audit]** 中存取。 For more information, refer to [this page](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   若要檢查執行個體的工作流程數目，建議使用預先定義的檢視，預設可在 **[!UICONTROL Administration]** /資料夾 **[!UICONTROL Audit]** 中存取。 For more information, refer to [this page](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
    >[警告]
    >
