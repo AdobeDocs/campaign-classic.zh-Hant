@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 2%
@@ -538,7 +538,7 @@ nlserver **sms** 模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤
 
 * **取消訂閱**: 希望停止接收SMS傳送的收件者可傳回包含STOP字詞的訊息。 如果您的提供者根據合約條款允許留言，您可以透過 **Inbound SMS** workflow活動擷取訊息，然後建立查詢，為相關收件者啟用 **No recontact this recipient** option。
 
-   請參閱「工 [作流程](../../workflow/using/executing-a-workflow.md#architecture) 」指南。
+   請參閱「工 [作流程](../../workflow/using/architecture.md) 」指南。
 
 ## InSMS架構 {#insms-schema}
 
