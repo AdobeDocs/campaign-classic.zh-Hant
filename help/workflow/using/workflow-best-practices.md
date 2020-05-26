@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
 
 ### 記錄檔 {#logs}
 
-JavaScript方法是 **[!UICONTROL logInfo()]** 除錯工作流程的絕佳解決方案。 它很有用，但必須謹慎使用，尤其是對於經常運行的活動：它可以使日誌過載，並顯著增加日誌表的大小。 但你可能還需要更多 **[!UICONTROL logInfo()]**。
+JavaScript方法是 **[!UICONTROL logInfo()]** 除錯工作流程的絕佳解決方案。 它很有用，但必須謹慎使用，尤其是對於經常運行的活動： 它可以使日誌過載，並顯著增加日誌表的大小。 但你可能還需要更多 **[!UICONTROL logInfo()]**。
 
 另外還提供兩種解決方案，以協助您：
 
@@ -48,8 +51,8 @@ JavaScript方法是 **[!UICONTROL logInfo()]** 除錯工作流程的絕佳解決
 
    此選項在工 **[!UICONTROL Execution]** 作流屬性的頁籤中可用，它將記錄工具從不同活動中生成的所有SQL查詢。 這是瞭解平台實際執行的最佳方式。 不過，這個選項只應在開發期間暫時使用，而不應在生產時啟動。
 
-不再需要記錄檔時，請加以清除。 工作流歷史記錄不會自動清除：預設情況下會保留所有消息。 您可以透過功能表或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中的「動作」按鈕，來清除歷史記錄。 選擇清除歷史記錄。
-要瞭解如何清除日誌，請參閱本文 [檔](../../workflow/using/executing-a-workflow.md#actions-toolbar)。
+不再需要記錄檔時，請加以清除。 工作流歷史記錄不會自動清除： 預設情況下會保留所有消息。 您可以透過功能表或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中的「動作」按鈕，來清除歷史記錄。 選擇清除歷史記錄。
+要瞭解如何清除日誌，請參閱本文 [檔](../../workflow/using/starting-a-workflow.md)。
 
 ### 工作流程規劃 {#workflow-planning}
 
@@ -91,9 +94,9 @@ Adobe建議您在專屬資料夾中建立工作流程。
 
 ### 工作流程命名 {#workflow-naming}
 
-由於若未以預期方式執行，可讓工作流程更容易找到並疑難排解，Adobe建議您為工作流程指定適當的名稱和標籤：填寫工作流程的說明欄位，匯總要執行的程式，讓運算子輕鬆瞭解。
+由於若未以預期方式執行，可讓工作流程更容易找到並疑難排解，Adobe建議您為工作流程指定適當的名稱和標籤： 填寫工作流程的說明欄位，匯總要執行的程式，讓運算子輕鬆瞭解。
 
-如果工作流是涉及多個工作流的流程的一部分，則在輸入標籤時可以明確；使用數字是排序工作流程的絕佳方式（依標籤）。
+如果工作流是涉及多個工作流的流程的一部分，則在輸入標籤時可以明確； 使用數字是排序工作流程的絕佳方式（依標籤）。
 
 例如：
 
@@ -115,13 +118,13 @@ Adobe建議您在專屬資料夾中建立工作流程。
 
 此選項對促銷活動工作流程以外的工作流程沒有任何功能影響。
 
-具有較高嚴重性的促銷活動工作流程（作為促銷活動／作業的一部分建立的工作流程）會以優先順序執行，以防促銷活動有許多應同時執行的程式。 根據NmsOperation_LimitConcurrency選項，在促銷活動中，預設只能同時執行10個進程。 例如，如果促銷活動包含25個工作流程，則嚴重性較高的工作流程會在10個進程的第一個池中執行。
+具有較高嚴重性的促銷活動工作流程（作為促銷活動／作業的一部分建立的工作流程）會以優先順序執行，以防促銷活動有許多應同時執行的程式。 根據NmsOperation_LimitConcurrency選項，在促銷活動中，預設只能同時執行10個進程。 例如，如果促銷活動包含25個工作流程，則嚴重性較高的工作流程將會在10個流程的第一個池中執行。
 
 ### 工作流程監控 {#workflow-monitoring}
 
 您所有在生產環境上執行的排程工作流程都應受到監控，以便在發生錯誤時收到警告。
 
-在工作流屬性中，選擇預設或自定義組 **[!UICONTROL Workflow supervisors]** 中的主管組。 請確定至少有一個運算子屬於此群組，並設定電子郵件。
+在工作流屬性中，選擇預設組或自 **[!UICONTROL Workflow supervisors]** 定義組。 請確定至少有一個運算子屬於此群組，並設定電子郵件。
 
 開始建立工作流之前，請記得定義工作流主管。 如果發生錯誤，將會以電子郵件通知他們。 For more on this, refer to [Managing errors](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
@@ -148,13 +151,13 @@ Workflow HeatMap可讓Adobe Campaign平台管理員監控執行個體的負載�
 
    ![](assets/wf-scheduler.png)
 
-* 針對每 **[!UICONTROL End]** 個工作流程使用活動。 這可讓Adobe Campaign釋放用於工作流程中計算的暫存空間。 有關詳情，請參閱：開 [始和結束](../../workflow/using/start-and-end.md)。
+* 針對每 **[!UICONTROL End]** 個工作流程使用活動。 這可讓Adobe Campaign釋放用於工作流程中計算的暫存空間。 有關詳情，請參閱： [開始和結束](../../workflow/using/start-and-end.md)。
 
 ### 活動中的Javascript {#javascript-within-an-activity}
 
 初始化工作流程活動時，您可能想要新增JavaScript。 您可以在活動的活動標籤 **[!UICONTROL Advanced]** 中執行此操作。
 
-為了更輕鬆地找出工作流程，建議您在活動標籤的開始和結束處使用雙破折號，如下所示：—我的標籤—。
+為了更輕鬆地找出工作流程，建議您在活動標籤的開始和結束處使用雙破折號，如下所示： —我的標籤—。
 
 ### 信號 {#signal}
 
