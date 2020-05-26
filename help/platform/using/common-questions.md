@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 30%
 
 ---
 
@@ -51,7 +54,7 @@ Adobe Campaign 提供一組可監視電子郵件傳遞的儀表板和工具。
 
 ## 5. Can I monitor workflow execution? {#can-i-monitor-workflow-execution}
 
-透過[本頁面](../../workflow/using/executing-a-workflow.md)了解如何監視 Campaign 工作流程執行情況。
+透過[本頁面](../../workflow/using/starting-a-workflow.md)了解如何監視 Campaign 工作流程執行情況。
 
 ## 6. How can I connect to Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
 
