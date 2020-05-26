@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 此外，例項的管理員可使用 **Audit trail** ，來檢查活動和對工作流程所做的最後修改（工作流程的狀態）。 For more on this, refer to the [dedicated section](../../production/using/audit-trail.md).
 
-本頁提供其他監控不同促銷活動程式的 [方式](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)。
+本頁提供其他監控不同促銷活動程式 [的方法](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)。
 
 ## 顯示進度 {#displaying-progress}
 
@@ -58,7 +61,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
    >
    >按一下圖的背景以取消選擇所有元素。
 
-* 僅查看連結到給定任務的消息。 要執行此操作，請選 **[!UICONTROL Tasks]** 擇頁籤，然後在圖中選擇活動以限制清單。 連按兩下工作即可顯示資訊；窗口中的最後一個頁籤包含日誌。
+* 僅查看連結到給定任務的消息。 要執行此操作，請選 **[!UICONTROL Tasks]** 擇頁籤，然後在圖中選擇活動以限制清單。 連按兩下工作即可顯示資訊； 窗口中的最後一個頁籤包含日誌。
 
    ![](assets/new-workflow-display-tasks-activity.png)
 
@@ -78,7 +81,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
    ![](assets/s_user_segmentation_journal.png)
 
-   所有促銷活動訊息皆顯示：促銷活動以及警告或錯誤。
+   所有促銷活動訊息皆顯示： 促銷活動以及警告或錯誤。
 
 * 活動記錄
 
@@ -88,7 +91,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
       ![](assets/s_user_segmentation_show_logs.png)
 
-      圖的下部分顯示兩個頁籤：日誌和任務。
+      圖的下部分顯示兩個頁籤： 日誌和任務。
 
       在圖中選擇的活動用作日誌和任務清單上的篩選器。
 
@@ -102,7 +105,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ## 清除日誌 {#purging-the-logs}
 
-工作流歷史記錄不會自動清除：預設情況下會保留所有消息。 您可以透過選單或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中 **[!UICONTROL Actions]** 的按鈕，來清除歷史記錄。 Select **[!UICONTROL Purge history]**. 功能表中可用的選 **[!UICONTROL Actions]** 項會在「動作」工具列區 [段中詳細說明](../../workflow/using/executing-a-workflow.md#actions-toolbar) 。
+工作流歷史記錄不會自動清除： 預設情況下會保留所有消息。 您可以透過選單或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中 **[!UICONTROL Actions]** 的按鈕，來清除歷史記錄。 Select **[!UICONTROL Purge history]**. 功能表中可用的選 **[!UICONTROL Actions]** 項會在「動作」工具列區 [段中詳細說明](../../workflow/using/starting-a-workflow.md) 。
 
 ![](assets/purge_historique.png)
 
@@ -120,7 +123,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-在Adobe Campaign explorer中，工作流程清單預設會 **[!UICONTROL Failed]** 顯示一欄。
+在Adobe Campaign Explorer中，工作流程清單預設會 **[!UICONTROL Failed]** 顯示一欄。
 
 ![](assets/wf-explorer_errors_col.png)
 
@@ -128,7 +131,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ![](assets/wf-properties_select-supervisors.png)
 
-通知內容是在預設範本 **[!UICONTROL Workflow manager notification]** 中設定：此模板在工作流屬性 **[!UICONTROL Execution]** 的頁籤中選擇。 通知會顯示錯誤工作流程的名稱及相關任務。
+通知內容是在預設範本 **[!UICONTROL Workflow manager notification]** 中設定： 此模板在工作流屬性 **[!UICONTROL Execution]** 的頁籤中選擇。 通知會顯示錯誤工作流程的名稱及相關任務。
 
 通知範例：
 
@@ -158,7 +161,7 @@ source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 此選項不處理與活動配置相關的錯誤，即無效值。 與故障配置相關的錯誤將不會啟用此轉換（目錄不存在等）。
 
-如果暫停了工作流（手動或在發生錯誤後自動），則按 **[!UICONTROL Start]** 鈕會在停止工作流的位置重新啟動該工作流執行。 錯誤活動（或暫停的活動）將會重新執行。 不會重新執行先前的活動。
+如果暫停了工作流（手動或在發生錯誤後自動），則按 **[!UICONTROL Start]** 鈕會在停止工作流時重新啟動執行。 錯誤活動（或暫停的活動）將會重新執行。 不會重新執行先前的活動。
 
 要重新執行所有工作流活動，請使用該 **[!UICONTROL Restart]** 按鈕。
 
@@ -235,7 +238,7 @@ instance.vars.isRunning = false
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-本節將介紹一個使用案例：協 [調資料更新](../../workflow/using/coordinating-data-updates.md)。
+本節將介紹一個使用案例： [協調資料更新](../../workflow/using/coordinating-data-updates.md)。
 
 ## 資料庫維護 {#database-maintenance}
 
@@ -257,7 +260,7 @@ instance.vars.isRunning = false
 
 工作流程主管會收到通知。 同時也會通知建立者和修改工作流程的最後使用者。 管理員不會收到通知。
 
-## 根據工作流程的狀態篩選工作流程{#filtering-workflows-status}
+## 根據工作流程的狀態篩選工作流程 {#filtering-workflows-status}
 
 Campaign Classic介面可讓您使用預先定義的檢視，監控執行個體上所有工作流程的執行&#x200B;**狀態**。 要訪問這些視圖，請開啟&#x200B;**[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**&#x200B;節點。
 
