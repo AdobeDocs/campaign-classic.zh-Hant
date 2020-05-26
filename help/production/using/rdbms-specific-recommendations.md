@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 0%
 
 ---
 
@@ -95,23 +98,23 @@ vacuum full nmsdelivery;
 
 >[!NOTE]
 >
->* Adobe建議從較小的表格開始：如此，如果大型表上的進程失敗（故障風險最高），則至少已完成部分維護。
+>* Adobe建議從較小的表格開始： 如此，如果大型表上的進程失敗（故障風險最高），則至少已完成部分維護。
 >* Adobe會重新命令新增資料模型專屬的表格，這些表格可能會受到重大更新的影響。 如果每日資料複製流 **量較大** ，則NmsRecipient可能會出現這種情況。
 >* 真 **空和重** 新索引命令將鎖定表 **** ，在執行維護時會暫停某些進程。
 >* 對於超大表（通常高於5 Gb）, **完全真空** 可能會變得相當低效，而且需要很長時間。 Adobe不建議將它用於 **YyyNmsBroadLogXxx表** 。
->* 此維護作業可透過Adobe Campaign工作流程，使用活 **[!UICONTROL SQL]** 動來實施(如需詳細資訊，請參 [閱本節](../../workflow/using/executing-a-workflow.md#architecture))。 請確定您排程的維護時間較短，不會與備份視窗發生衝突。
+>* 此維護作業可透過Adobe Campaign工作流程，使用活 **[!UICONTROL SQL]** 動來實施(如需詳細資訊，請參 [閱本節](../../workflow/using/architecture.md))。 請確定您排程的維護時間較短，不會與備份視窗發生衝突。
 >
 
 
 
 ### 重建資料庫 {#rebuilding-a-database}
 
-PostgreSQL不提供執行聯機表重建的簡單方法，因為真空 **完全鎖定表** ，因此無法正常生產。 這表示未使用表時必須執行維護。 您可以：
+PostgreSQL不提供執行聯機表重建的簡單方法，因為真空 **完全鎖定表** ，因此無法進行常規生產。 這表示未使用表時必須執行維護。 您可以：
 
 * 在Adobe Campaign平台停止時執行維護，
 * 停止可能寫入重建表格的各種Adobe Campaign子服務(**nlserver stop wfserver instance_name** ，以停止工作流程程式)。
 
-以下是使用特定函式生成所需DDL的表碎片整理示例。 以下SQL可讓您建立兩個新函式：GenRebuildTablePart1 **和** GenRebuildTablePart2 ****，它們可用於生成重新建立表所需的DDL。
+以下是使用特定函式生成所需DDL的表碎片整理示例。 以下SQL可讓您建立兩個新函式： **GenRebuildTablePart1** 和 **GenRebuildTablePart2**，可用於生成必要的DDL以重新建立表。
 
 * 第一個函式可讓您建立工作表（** _tmp**此處），此為原始表格的副本。
 * 然後，第二個函式刪除原始表並更名工作表及其索引。
@@ -399,7 +402,7 @@ function sqlGetMemo(strSql)
 
       >[!NOTE]
       >
-      >根據您的配置，您可以選擇以前選擇的表或資料庫中的所有表。
+      >根據您的配置，您可以選擇先前選擇的表或資料庫中的所有表。
 
    * 如果索引碎片率高於40%，建議重建。
 
@@ -415,8 +418,8 @@ function sqlGetMemo(strSql)
    此時將顯示維護計畫的概要及其各步驟的狀態。
 
 1. 維護計畫完成後，按一下 **[!UICONTROL Close]** 。
-1. 在Microsoft SQL server瀏覽器中，按兩下該檔案 **[!UICONTROL Management > Maintenance Plans]** 夾。
-1. 選擇Adobe Campaign維護計畫：工作流程中會詳細說明各種步驟。
+1. 在Microsoft SQL Server瀏覽器中，按兩下該檔案 **[!UICONTROL Management > Maintenance Plans]** 夾。
+1. 選擇Adobe Campaign維護計畫： 工作流程中會詳細說明各種步驟。
 
    請注意，已在資料夾中建立了 **[!UICONTROL SQL Server Agent > Jobs]** 對象。 此物件可讓您啟動維護計畫。 在我們的示例中，只有一個對象，因為所有維護任務都是同一計畫的一部分。
 
@@ -430,10 +433,10 @@ function sqlGetMemo(strSql)
 >
 >此配置是可選的。
 
-使 **用WdbcOptions_TempDbName** 選項，可以為Microsoft SQL server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。
+使 **用WdbcOptions_TempDbName** 選項，可以為Microsoft SQL Server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。
 
-如果希望在另一個資料庫上建立工作表（例如，在工作流執行期間建立的表），則可使用此選項。
+如果希望在另一個資料庫上建立工作表（例如，在工作流執行期間建立的表），可以使用此選項。
 
-將選項設定為&quot;tempdb.dbo.&quot;時，將在Microsoft SQL server的預設臨時資料庫上建立工作表。 資料庫管理員需要允許對tempdb資料庫的寫訪問。
+將選項設定為&quot;tempdb.dbo.&quot;時，將在Microsoft SQL Server的預設臨時資料庫上建立工作表。 資料庫管理員需要允許對tempdb資料庫的寫訪問。
 
-如果設定了此選項，它將用於在Adobe Campaign（主資料庫和外部帳戶）中設定的所有Microsoft SQL server資料庫。 請注意，如果兩個外部帳戶共用同一個伺服器，則可能會發生衝突（因為tempdb將是唯一的）。 同樣地，如果兩個Campaign實例使用相同的MSSQL伺服器，則使用相同的tempdb時可能會發生衝突。
+如果設定了此選項，它將用於在Adobe Campaign（主資料庫和外部帳戶）中設定的所有Microsoft SQL Server資料庫。 請注意，如果兩個外部帳戶共用同一個伺服器，則可能會發生衝突（因為tempdb將是唯一的）。 同樣地，如果兩個Campaign實例使用相同的MSSQL伺服器，則使用相同的tempdb時可能會發生衝突。
