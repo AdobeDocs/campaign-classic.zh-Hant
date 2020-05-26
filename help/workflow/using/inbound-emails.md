@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 9e5a499d723d3e4126f533b6c7dd63073aff3d09
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
@@ -82,5 +85,5 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    ![](assets/email_rec_edit_3.png)
 
-   設定與排程活動的設定相同。 請參閱 [到期](../../workflow/using/executing-a-workflow.md#expirations)。
+   設定與排程活動的設定相同。 請參閱 [到期](../../workflow/using/defining-approvals.md)。
 
