@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
-source-wordcount: '6464'
+source-wordcount: '6477'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 0%
 已增強啟動新平台區段時的傳遞性准則。 [閱讀更多資訊](../../delivery/using/starting-new-platform.md)
 
 已移動並更新「傳送含附件的交易式電子郵件」區段。 [閱讀更多資訊](../../message-center/using/transactional-email-with-attachments.md)
+
+「資料套件最佳實務」區段已移動並更新。 [閱讀更多資訊](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## 2020年4月 {#april-2020}
 
