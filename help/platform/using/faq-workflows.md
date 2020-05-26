@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 
 ## Can I monitor workflow execution? {#can-i-monitor-workflow-execution-}
 
-透過[本頁面](../../workflow/using/executing-a-workflow.md)了解如何監視 Campaign 工作流程執行情況。
+透過[本頁面](../../workflow/using/starting-a-workflow.md)了解如何監視 Campaign 工作流程執行情況。
 
 ## How can I update Campaign data with a workflow? {#how-can-i-update-campaign-data-with-a-workflow-}
 
