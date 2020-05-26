@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -26,15 +29,15 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 若要建立行銷促銷活動：
 
-1. 建立促銷活動：探索促銷活動及其特性：標籤、類型、開始和結束日期、預算、相關資源、經理和參與者。
+1. 建立促銷活動： 探索促銷活動及其特性： 標籤、類型、開始和結束日期、預算、相關資源、經理和參與者。
 
    請參閱 [建立促銷活動](#creating-a-campaign)。
 
-1. 定義目標人口：建立具有定位查詢的工作流程。
+1. 定義目標人口： 建立具有定位查詢的工作流程。
 
    請參 [閱選擇目標人口](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 建立傳送：選取頻道並定義要傳送的內容。
+1. 建立傳送： 選取頻道並定義要傳送的內容。
 
    請參閱 [建立傳送](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
@@ -63,7 +66,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
    ![](assets/create_plan_1.png)
 
 1. 重新命名計畫。
-1. **按一下右鍵新建立的計畫，然後選擇「**&#x200B;屬性……」。.
+1. 按一下右鍵新建立的計畫，然後選擇「 **屬性……」。**.
 
    ![](assets/create_plan_2.png)
 
@@ -146,7 +149,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
-執行調度的配置模式與工作流的 **[!UICONTROL Scheduler]** 對象一致。 如需詳細資訊，請參閱[本小節](../../workflow/using/executing-a-workflow.md#architecture)。
+執行調度的配置模式與工作流的 **[!UICONTROL Scheduler]** 對象一致。 如需詳細資訊，請參閱[本小節](../../workflow/using/architecture.md)。
 
 >[!IMPORTANT]
 >
@@ -174,8 +177,8 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
    對於每一行，您可以添加以下附加選項：
 
-   * **[!UICONTROL To be approved]** :可讓您在工作流程中強制傳送核准請求。
-   * **[!UICONTROL To be started]** :可讓您在到達開始日期時啟動工作流程。
+   * **[!UICONTROL To be approved]** : 可讓您在工作流程中強制傳送核准請求。
+   * **[!UICONTROL To be started]** : 可讓您在到達開始日期時啟動工作流程。
    欄位 **[!UICONTROL Create in advance for]** 可讓您建立涵蓋所輸入期間的所有工作流程。
 
    執行工作流程時， **[!UICONTROL Jobs on campaigns]** 會根據促銷活動排程中定義的發生次數，建立專用的工作流程。 因此，會為每個執行日期建立工作流。
@@ -223,7 +226,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
    >
    >此工作流是工作流模板。 無法從促銷活動範本執行。
 
-1. 完成循環促銷活動範本的執行排程：按一 **[!UICONTROL Add]** 下按鈕並定義開始和結束日期，或透過連結填寫執行排程。
+1. 完成循環促銷活動範本的執行排程： 按一 **[!UICONTROL Add]** 下按鈕並定義開始和結束日期，或透過連結填寫執行排程。
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
