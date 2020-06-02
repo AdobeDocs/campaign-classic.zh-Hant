@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2798'
 ht-degree: 0%
 
 ---
@@ -180,17 +180,21 @@ HTML格式的電子郵件傳送可包含影像。 從傳送精靈中，您可以
 
 ![](assets/s_ncs_user_image_from_library.png)
 
-為了讓收件者能夠檢視其所收到訊息中包含的影像，這些訊息必須可在可從外部存取的伺服器上使用。
+>[!IMPORTANT]
+>
+>為了讓收件者能夠檢視其所收到訊息中包含的影像，這些訊息必須可在可從外部存取的伺服器上使用。
 
-若要透過傳送精靈管理影像，您必須按一下工具 **[!UICONTROL Tracking & Images]** 列中的圖示。
+若要透過傳送精靈管理影像：
 
-![](assets/s_ncs_user_email_del_img_param.png)
+1. 按一下工 **[!UICONTROL Tracking & Images]** 具列中的圖示。
+   ![](assets/s_ncs_user_email_del_img_param.png)
 
-在選 **[!UICONTROL Upload images]** 項卡中 **[!UICONTROL Images]** 選擇。 然後，您可以選擇是否要將影像加入電子郵件訊息中。
+1. 在選 **[!UICONTROL Upload images]** 項卡中 **[!UICONTROL Images]** 選擇。
+1. 然後，您可以選擇是否要將影像加入電子郵件訊息中。
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* 您可以手動上傳影像，而不需等待傳送分析階段。 若要這麼做，請按一下 **[!UICONTROL Upload images now]** 連結。
+* 您可以手動上傳影像，而不需等待傳送分析階段。 若要這麼做，請按一下 **[!UICONTROL Upload the images straightaway...]** 連結。
 * 您可以指定另一個路徑，以存取追蹤伺服器上的影像。 若要這麼做，請在欄位中輸 **[!UICONTROL Image URL]** 入。 此值將覆蓋在安裝嚮導參數中定義的值。
 
 當您在傳送精靈中開啟包含影像的HTML內容時，會顯示訊息，提供您根據傳送參數立即上傳影像的選項。
@@ -201,7 +205,7 @@ HTML格式的電子郵件傳送可包含影像。 從傳送精靈中，您可以
 >
 >在手動上傳或傳送訊息期間會修改影像存取路徑。
 
-**範例： 傳送含影像的訊息{#example--sending-a-message-with-images}**
+### 範例： 傳送含影像的訊息 {#example--sending-a-message-with-images}
 
 以下是包含4張影像的傳送範例：
 
