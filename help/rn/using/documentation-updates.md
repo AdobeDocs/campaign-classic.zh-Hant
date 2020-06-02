@@ -13,74 +13,74 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
+source-git-commit: e2ba309643a10a2bfdb031b3ee0acd90c3d02fc0
 workflow-type: tm+mt
 source-wordcount: '6477'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
 # 文件更新{#documentation-updates}
 
-此頁面會列出每月的所有新功能和檔案更新，以及促銷活動版本。
+本頁列出每個月的所有新功能和檔案更新，以及促銷活動版本。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
 
 
 ## 2020年5月 {#may-2020}
 
-「監控可交付性」部分已移動和改進。 [閱讀更多資訊](../../delivery/using/monitoring-deliverability.md)
+「監控可交付性」部分已移動和改進。 [詳細內容](../../delivery/using/monitoring-deliverability.md)
 
-「傳遞性」疑難排解區段已移動並改進。 [閱讀更多資訊](../../delivery/using/deliverability-faq.md)
+「傳遞性」疑難排解區段已移動並改進。 [詳細內容](../../delivery/using/deliverability-faq.md)
 
-已增強啟動新平台區段時的傳遞性准則。 [閱讀更多資訊](../../delivery/using/starting-new-platform.md)
+已增強啟動新平台區段時的傳遞性准則。 [詳細內容](../../delivery/using/starting-new-platform.md)
 
-已移動並更新「傳送含附件的交易式電子郵件」區段。 [閱讀更多資訊](../../message-center/using/transactional-email-with-attachments.md)
+已移動並更新「傳送含附件的交易式電子郵件」區段。 [詳細內容](../../message-center/using/transactional-email-with-attachments.md)
 
-「資料套件最佳實務」區段已移動並更新。 [閱讀更多資訊](../../platform/using/working-with-data-packages.md#data-package-best-practices)
+「資料套件最佳實務」區段已移動並更新。 [詳細內容](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## 2020年4月 {#april-2020}
 
-FDA權限表已移至存取外部資料庫(FDA)檔案。 [閱讀更多資訊](../../platform/using/remote-database-access-rights.md)
+FDA權限表已移至存取外部資料庫(FDA)檔案。 [詳細內容](../../platform/using/remote-database-access-rights.md)
 
-常見問答集已更新，其中包含如何清除軟快取和硬快取的秘訣。 [閱讀更多資訊](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
+常見問答集已更新，其中包含如何清除軟快取和硬快取的秘訣。 [詳細內容](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
-資料模型最佳實務已改進，並附加索引資訊。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md#indexes)
+資料模型最佳實務已改進，並附加索引資訊。 [詳細內容](../../configuration/using/data-model-best-practices.md#indexes)
 
-說明Adobe Campaign內建資料模型的章節已更新，其中包含每個表格的詳細資訊。 [閱讀更多資訊](../../configuration/using/data-model-description.md)
+說明Adobe Campaign內建資料模型的章節已更新，其中包含每個表格的詳細資訊。 [詳細內容](../../configuration/using/data-model-description.md)
 
-工作流程使用案例已更新並重新組織為主題章節。 [閱讀更多資訊](../../workflow/using/using-the-local-approval-activity.md)
+工作流程使用案例已更新並重新組織為主題章節。 [詳細內容](../../workflow/using/using-the-local-approval-activity.md)
 
 「彈 [回數郵件](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 」資 [格和「電子郵件管理規則](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 」區段已增強，並提供更新資訊。
 
-Adobe Campaign Enhanced MTA文章已更新。 現在只適用於Campaign Classic。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Adobe Campaign Enhanced MTA文章已更新。 現在只適用於Campaign Classic。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## 2020年3月 {#march-2020}
+## 2020 年 3月{#march-2020}
 
-資料模型最佳實務已更新，其中包 [括序列](../../configuration/using/data-model-best-practices.md#sequences)、效 [能](../../configuration/using/data-model-best-practices.md#performance)[和大型表](../../configuration/using/data-model-best-practices.md#large-tables)。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md)
+資料模型最佳實務已更新，其中包 [括序列](../../configuration/using/data-model-best-practices.md#sequences)、效 [能](../../configuration/using/data-model-best-practices.md#performance)[和大型表](../../configuration/using/data-model-best-practices.md#large-tables)。 [詳細內容](../../configuration/using/data-model-best-practices.md)
 
-現在提供新章節，說明Adobe Campaign內建資料模型和表格間的互動。 [閱讀更多資訊](../../configuration/using/data-model-description.md)
+現在提供新章節，說明Adobe Campaign內建資料模型和表格間的互動。 [詳細內容](../../configuration/using/data-model-description.md)
 
-檔案首頁已新增其他關鍵連結。 [閱讀更多資訊](../../campaign-classic-home.md)
+檔案首頁已新增其他關鍵連結。 [詳細內容](../../campaign-classic-home.md)
 
-已新增使用案例，說明如何將Adobe Target的動態選件整合至Adobe Campaign的電子郵件中。 [閱讀更多資訊](../../integrations/using/inserting-a-dynamic-image.md)
+已新增使用案例，說明如何將Adobe Target的動態選件整合至Adobe Campaign的電子郵件中。 [詳細內容](../../integrations/using/inserting-a-dynamic-image.md)
 
-現在提供新章節，其中詳述Adobe Campaign中的不同語言。 [閱讀更多資訊](../../platform/using/adobe-campaign-workspace.md#languages)
+現在提供新章節，其中詳述Adobe Campaign中的不同語言。 [詳細內容](../../platform/using/adobe-campaign-workspace.md#languages)
 
-存取管理准則已更新，其中包含更多有關指名權限的資訊。 [閱讀更多資訊](../../platform/using/access-management.md#named-rights)
+存取管理准則已更新，其中包含更多有關指名權限的資訊。 [詳細內容](../../platform/using/access-management.md#named-rights)
 
-## 2020年2月 {#february-2020}
+## 2020 年 2 月{#february-2020}
 
-現在提供一個新章節，說明設計Adobe Campaign資料模型時的最佳實務和主要建議。 [閱讀更多資訊](../../configuration/using/data-model-best-practices.md)
+現在提供一個新章節，說明設計Adobe Campaign資料模型時的最佳實務和主要建議。 [詳細內容](../../configuration/using/data-model-best-practices.md)
 
-有關「技術」電子郵件配置的新部分。 [閱讀更多資訊](../../installation/using/email-deliverability.md)
+有關「技術」電子郵件配置的新部分。 [詳細內容](../../installation/using/email-deliverability.md)
 
-「交付能力」常見問答集已更新，其中包含有關「符合配額」錯誤訊息的詳細資訊。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+「交付能力」常見問答集已更新，其中包含有關「符合配額」錯誤訊息的詳細資訊。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
 
-新的電子郵件供應商現在支援AMP for Email: 相關檔案已更新。 [閱讀更多資訊](../../delivery/using/defining-interactive-content.md)
+新的電子郵件供應商現在支援AMP for Email: 相關檔案已更新。 [詳細內容](../../delivery/using/defining-interactive-content.md)
 
-「電子郵件封存」區段已改進。 [閱讀更多資訊](../../installation/using/email-archiving.md#recommendations-and-limitations)
+「電子郵件封存」區段已改進。 [詳細內容](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -94,65 +94,65 @@ Hadoop FDA連接器增強功能——詳 [細內容](../../platform/using/specif
 
 安 [裝、生](../../installation/using/before-reading.md)產和配 [](../../production/using/foreword.md)[](../../configuration/using/additional-parameters.md) 置指南已更新為Nlserver服務啟動使用的新系統單元。 您仍然可以使用/etc/init.d/nlserver6，但Adobe建議您現在使用systemctl命令與nlserver服務互動。
 
-安裝指南已更新並與最新版本的相容性清單同步。 已新增支援的系統。 已移除已過時和不支援系統的例項。 [閱讀更多資訊](../../installation/using/before-reading.md)
+安裝指南已更新並與最新版本的相容性清單同步。 已新增支援的系統。 已移除已過時和不支援系統的例項。 [詳細內容](../../installation/using/before-reading.md)
 
-Compatibility matrix已更新為Hadoop 3.0和Snowflake FDA連接器。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Compatibility matrix已更新為Hadoop 3.0和Snowflake FDA連接器。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-在安裝指南中新增了有關IP相似性的最佳實務。 [閱讀更多資訊](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+在安裝指南中新增了有關IP相似性的最佳實務。 [詳細內容](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-資料庫清理工作流部分已更新。 提供的批次圖表現在會反映程式碼實作。 [閱讀更多資訊](../../production/using/database-cleanup-workflow.md)
+資料庫清理工作流部分已更新。 提供的批次圖表現在會反映程式碼實作。 [詳細內容](../../production/using/database-cleanup-workflow.md)
 
-交易式傳訊指南已新增FDA over HTTP的限制。 [閱讀更多資訊](../../production/using/database-cleanup-workflow.md)
+交易式傳訊指南已新增FDA over HTTP的限制。 [詳細內容](../../production/using/database-cleanup-workflow.md)
 
-新選項中已新增資訊，可讓您定義與工作流程活動的逾 **[!UICONTROL JavaScript code]** 時 **[!UICONTROL Advanced JavaScript code]** 期間。 [閱讀更多資訊](../../workflow/using/sql-code-and-javascript-code.md)
+新選項中已新增資訊，可讓您定義與工作流程活動的逾 **[!UICONTROL JavaScript code]** 時 **[!UICONTROL Advanced JavaScript code]** 期間。 [詳細內容](../../workflow/using/sql-code-and-javascript-code.md)
 
-已在「 > > 」節點中 **[!UICONTROL Start Pending]** 的新視圖中添 **[!UICONTROL Administration]** 加 **[!UICONTROL Audit]** 了信 **[!UICONTROL Workflows Status]** 息。 [閱讀更多資訊](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+已在「 > > 」節點中 **[!UICONTROL Start Pending]** 的新視圖中添 **[!UICONTROL Administration]** 加 **[!UICONTROL Audit]** 了信 **[!UICONTROL Workflows Status]** 息。 [詳細內容](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 傳送 [推播通知指南](../../delivery/using/about-mobile-app-channel.md) (Sending push notifications guide)已移動、重新整理並改良為已釐清的資訊。
 
 此處記錄了URL報表設定的新 [參數](../../reporting/using/properties-of-the-report.md#defining-additional-settings)。
 
-Campaign **Classic內部部署與代管功能表頁面** ，已使用新的FDA連接器更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+Campaign **Classic內部部署與代管功能表頁面** ，已使用新的FDA連接器更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 
-「促 **銷活動傳統功能** 」矩陣頁面已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+「促 **銷活動傳統功能** 」矩陣頁面已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 此處已 **[!UICONTROL Cleanup of Nmsaddress]** 記錄新的工 [作流程](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)。
 
-在工作流程中使用查詢活動時已新增限制。 [閱讀更多資訊](../../workflow/using/query.md)。
+在工作流程中使用查詢活動時已新增限制。 [詳細內容](../../workflow/using/query.md)。
 
-已新增新區段，詳細說明增強的電子郵件地址驗證規則，以在發生軟性錯誤時傳送地址給隔離。 [閱讀更多資訊](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+已新增新區段，詳細說明增強的電子郵件地址驗證規則，以在發生軟性錯誤時傳送地址給隔離。 [詳細內容](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
-現在已記錄來自設定檔案的參數，指出執行個體是否使用增強的MTA。 [閱讀更多資訊](../../installation/using/the-server-configuration-file.md#mta)
+現在已記錄來自設定檔案的參數，指出執行個體是否使用增強的MTA。 [詳細內容](../../installation/using/the-server-configuration-file.md#mta)
 
-## 2020年1月 {#january-2020}
+## 2020 年 1 月{#january-2020}
 
-「傳送性」區段已透過更新的內容進行移動、重新組織和增強。 [閱讀更多資訊](../../delivery/using/about-deliverability.md)
+「傳送性」區段已透過更新的內容進行移動、重新組織和增強。 [詳細內容](../../delivery/using/about-deliverability.md)
 
-現在提供新章節，說明Adobe Campaign Classic資料模型基本概念以及如何存取每個表格的說明。 [閱讀更多資訊](../../configuration/using/about-data-model.md)
+現在提供新章節，說明Adobe Campaign Classic資料模型基本概念以及如何存取每個表格的說明。 [詳細內容](../../configuration/using/about-data-model.md)
 
-Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特定印刷樣式套件的詳細資訊，這些例項不會新增必要的「增強MTA」標題至每則訊息。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
+Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特定印刷樣式套件的詳細資訊，這些例項不會新增必要的「增強MTA」標題至每則訊息。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
-與查詢設計相關的使用案例已重新組織為個別區段。 [閱讀更多資訊](../../workflow/using/querying-recipient-table.md)
+與查詢設計相關的使用案例已重新組織為個別區段。 [詳細內容](../../workflow/using/querying-recipient-table.md)
 
-現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [閱讀更多資訊](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [詳細內容](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
-「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [閱讀更多資訊](../../interaction/using/interaction-and-offer-management.md)
+「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [詳細內容](../../interaction/using/interaction-and-offer-management.md)
 
-有關如何最佳化執行在例項上執行之查詢的最佳範例文章已整合在檔案中。 [閱讀更多資訊](../../workflow/using/query.md#optimizing-queries)
+有關如何最佳化執行在例項上執行之查詢的最佳範例文章已整合在檔案中。 [詳細內容](../../workflow/using/query.md#optimizing-queries)
 
-報告指南已更新並重新整理。 [閱讀更多資訊](../../reporting/using/about-adobe-campaign-reporting-tools.md)
+報告指南已更新並重新整理。 [詳細內容](../../reporting/using/about-adobe-campaign-reporting-tools.md)
 
-新增了如何在工作流程中使用例項變數的範例。 [閱讀更多資訊](../../workflow/using/javascript-scripts-and-templates.md)
+新增了如何在工作流程中使用例項變數的範例。 [詳細內容](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019年12月 {#december-2019}
+## 2019 年 12 月{#december-2019}
 
-「WdbcOptions_TempDbName」選項已新增至促銷活動選項清單。 [閱讀更多資訊](../../installation/using/configuring-campaign-options.md)
+「WdbcOptions_TempDbName」選項已新增至促銷活動選項清單。 [詳細內容](../../installation/using/configuring-campaign-options.md)
 
 FDA矩陣頁面已移至此 [處](../../platform/using/remote-database-access-rights.md)。
 
 「存取權限矩陣」頁面已移至 [此處](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
 
-說明如何使用AMP定義互動式內容的章節已移除。 [閱讀更多資訊](../../delivery/using/defining-interactive-content.md)
+說明如何使用AMP定義互動式內容的章節已移除。 [詳細內容](../../delivery/using/defining-interactive-content.md)
 
 ## 19.2 - 02/12/2019{#release-19-2}
 
@@ -168,61 +168,61 @@ FDA矩陣頁面已移至此 [處](../../platform/using/remote-database-access-ri
 
 **此版本隨附的其他檔案更新**
 
-Adobe Campaign Enhanced MTA檔案現已推出。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Adobe Campaign Enhanced MTA檔案現已推出。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-已新增一節，說明如何疑難排解促銷活動中「盡快開始」狀態的工作流程。 [閱讀更多資訊](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
+已新增一節，說明如何疑難排解促銷活動中「盡快開始」狀態的工作流程。 [Read more](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
-新的「NmsOperation_DeliveryPreparationWindow」和「WdbcKillSessionPolicy」選項已新增至「促銷活動」選項清單。 [閱讀更多資訊](../../installation/using/configuring-campaign-options.md)
+新的「NmsOperation_DeliveryPreparationWindow」和「WdbcKillSessionPolicy」選項已新增至「促銷活動」選項清單。 [詳細內容](../../installation/using/configuring-campaign-options.md)
 
-現在提供描述Adobe Campaign Classic資料模型基礎的新檔案。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+現在提供描述Adobe Campaign Classic資料模型基礎的新檔案。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
 傳送屬 **性中新的「最大個人化執行時間** 」選項會記錄在本 [節中](../../delivery/using/personalization-fields.md#timing-out-personalization)。
 
-已更新使用 **HttpServletRequest** with logon()和query()的API呼叫範例。 [閱讀更多資訊](../../configuration/using/web-service-calls.md)。
+已更新使用 **HttpServletRequest** with logon()和query()的API呼叫範例。 [詳細內容](../../configuration/using/web-service-calls.md)。
 
-在模式定 **義中添加了sqlDefault** 屬性的建議。 [閱讀更多資訊](../../configuration/using/elements-and-attributes.md#attribute-description)。
+在模式定 **義中添加了sqlDefault** 屬性的建議。 [詳細內容](../../configuration/using/elements-and-attributes.md#attribute-description)。
 
-Adobe Campaign與Adobe即時客戶資料平台的整合現在已在「與Adobe Experience Cloud整合」 **指南中提及** 。 [閱讀更多資訊](../../integrations/using/about-campaign-integrations.md)。
+Adobe Campaign與Adobe即時客戶資料平台的整合現在已在「與Adobe Experience Cloud整合」 **指南中提及** 。 [詳細內容](../../integrations/using/about-campaign-integrations.md)。
 
 ## 2019年11月 {#november-2019}
 
 Multiplesing the mid-sourcing [server and](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server) Supporting forse control instances [](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances) sections adde to the these deployments are not supported for fully hosted and hybrid clients.
 
-已新增新區段，說明如何強制傳送電子郵件時使用字元編碼。 [閱讀更多資訊](../../delivery/using/sending-messages.md#character-encoding)
+已新增新區段，說明如何強制傳送電子郵件時使用字元編碼。 [詳細內容](../../delivery/using/sending-messages.md#character-encoding)
 
-「存取管理」區段已更新為「隱 **私資料」權限**。 [閱讀更多資訊](../../platform/using/access-management.md#named-rights)
+「存取管理」區段已更新為「隱 **私資料」權限**。 [詳細內容](../../platform/using/access-management.md#named-rights)
 
-已新增資訊，以指定個人化欄位內容不能超過1024個字元。 [閱讀更多資訊](../../delivery/using/personalization-fields.md)
+已新增資訊，以指定個人化欄位內容不能超過1024個字元。 [詳細內容](../../delivery/using/personalization-fields.md)
 
-控制面板文檔已整合到新的協作文檔集中。 [閱讀更多資訊](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
+控制面板文檔已整合到新的協作文檔集中。 [詳細內容](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 
-已更新「傳送最佳實務」快速入門手冊。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+已更新「傳送最佳實務」快速入門手冊。 [詳細內容](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
 ## 2019年10月 {#october-2019}
 
-「促銷活動標準」和「促銷活動經典」的錯誤訊息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+「促銷活動標準」和「促銷活動經典」的錯誤訊息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-GDPR快速入門手冊已經過改進並充實。 它現在是包含GDPR和CCPA的隱私權管理檔案。 [閱讀更多資訊](https://helpx.adobe.com/content/help/en/campaign/kb/campaign-privacy.html)
+GDPR快速入門手冊已經過改進並充實。 它現在是包含GDPR和CCPA的隱私權管理檔案。 [詳細內容](https://helpx.adobe.com/content/help/en/campaign/kb/campaign-privacy.html)
 
-已新增一個疑難排解頁面，以便在Campaign Classic中追蹤。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html)。
+已新增一個疑難排解頁面，以便在Campaign Classic中追蹤。 [詳細內容](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html)。
 
 已新增Adobe Analytics Data Connector的最佳實務新頁面。 [閱讀更多有關Adobe Analytics Data Connector的資訊](../../platform/using/adobe-analytics-data-connector.md)
 
-「傳送最佳實務」快速入門手冊已移動並更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+「傳送最佳實務」快速入門手冊已移動並更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
-已在SMS頻道檔案中新增建議，以避免在使用多個外部帳戶時使用具有相同提供者帳戶的延伸通用SMPP連接器時發生問題。 [閱讀更多資訊](../../delivery/using/sms-channel.md#automatic-reply)
+已在SMS頻道檔案中新增建議，以避免在使用多個外部帳戶時使用具有相同提供者帳戶的延伸通用SMPP連接器時發生問題。 [詳細內容](../../delivery/using/sms-channel.md#automatic-reply)
 
-在「排程器」活動文檔中添加了有關如何防止同時執行工作流的資訊。 [閱讀更多資訊](../../workflow/using/scheduler.md)
+在「排程器」活動文檔中添加了有關如何防止同時執行工作流的資訊。 [詳細內容](../../workflow/using/scheduler.md)
 
-已將配置內部部署安裝收件箱轉換的步驟添加到文檔中。 [閱讀更多資訊](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
+已將配置內部部署安裝收件箱轉換的步驟添加到文檔中。 [詳細內容](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
 ## 2019年9月 {#september-2019}
 
-已新增新頁面，以提供維護Campaign Classic的一般准則。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+已新增新頁面，以提供維護Campaign Classic的一般准則。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
 
-與工作流程監控相關的資訊已集中在新的專屬區段中。 [閱讀更多資訊](../../workflow/using/monitoring-workflow-execution.md)。
+與工作流程監控相關的資訊已集中在新的專屬區段中。 [詳細內容](../../workflow/using/monitoring-workflow-execution.md)。
 
-已新增有關Adobe Campaign Classic中追蹤一般准則的新頁面。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-tracking.html)。
+已新增有關Adobe Campaign Classic中追蹤一般准則的新頁面。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-tracking.html)。
 
 已更新改善工作流程和傳送效能的最佳實務。 [閱讀更多有關工作流程](../../workflow/using/workflow-best-practices.md) ，以 [及更多有關傳送的資訊](../../delivery/using/monitoring-a-delivery.md#best-practices-performance)。
 
@@ -236,106 +236,106 @@ GDPR快速入門手冊已經過改進並充實。 它現在是包含GDPR和CCPA�
 
 **此版本隨附的其他檔案更新**
 
-已建立新的「建置」升級常見問答集。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html)
+已建立新的「建置」升級常見問答集。 [詳細內容](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html)
 
 已 [更新Compatibility](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) matrix。 支援的資料庫系統清單已更新，以及Android/iOS版本和相關SDK。 已 [歸檔19.0相容性表](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html) 。
 
-「已過時和已移除的Campaign Classic功能」頁面已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+「已過時和已移除的Campaign Classic功能」頁面已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
-伺服器配置檔案的說明已添加到《安裝指南》中。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_The_server_configuration_file.html)
+伺服器配置檔案的說明已添加到《安裝指南》中。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_The_server_configuration_file.html)
 
-已新增一節，說明代管和混合機型的安裝與設定步驟。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_Introduction.html)
+已新增一節，說明代管和混合機型的安裝與設定步驟。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_Introduction.html)
 
-已新增一節，說明Campaign伺服器解除安裝步驟。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Uninstalling_Campaign.html)
+已新增一節，說明Campaign伺服器解除安裝步驟。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Uninstalling_Campaign.html)
 
 安全 [性](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)、 [傳遞能力](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)[和隱私權](https://helpx.adobe.com/campaign/kb/acc-privacy.html) ，快速入門手冊已更新。
 
-已更新前處理工作流程選項的說明，以反映產品變更。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
+已更新前處理工作流程選項的說明，以反映產品變更。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
 
-Marketing Cloud觸發器技術已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketing Cloud觸發器技術已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-已新增有關交易傳訊的SOAP驗證方法的詳細資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Event_description.html)
+已新增有關交易傳訊的SOAP驗證方法的詳細資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Event_description.html)
 
-Apache配置步驟已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Integration_into_a_Web_server.html#Configuring_Apache_web_server_in_RHEL)
+Apache配置步驟已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Integration_into_a_Web_server.html#Configuring_Apache_web_server_in_RHEL)
 
-已新增新頁面，包括Campaign Standard和Classic的端點清單。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/campaign-endpoints.html)
+已新增新頁面，包括Campaign Standard和Classic的端點清單。 [詳細內容](https://helpx.adobe.com/campaign/kb/campaign-endpoints.html)
 
-資料套件最佳實務文章已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/data-package-best-practices.html)
+資料套件最佳實務文章已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/data-package-best-practices.html)
 
-「管理選件」檔案已更新，並新增了列出最佳實務的新章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITA_Interaction_Overview_Interaction_best_practices.html)
+「管理選件」檔案已更新，並新增了列出最佳實務的新章節。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITA_Interaction_Overview_Interaction_best_practices.html)
 
-已建立新的知識庫文章，說明如何在Adobe Campaign Classic中使用選件目錄。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/offer-best-practices.html)
+已建立新的知識庫文章，說明如何在Adobe Campaign Classic中使用選件目錄。 [詳細內容](https://helpx.adobe.com/campaign/kb/offer-best-practices.html)
 
-「子工作流程」活動區段已增強，並提供使用範例。 [閱讀更多資訊](../../workflow/using/sub-workflow.md)
+「子工作流程」活動區段已增強，並提供使用範例。 [詳細內容](../../workflow/using/sub-workflow.md)
 
 Campaign [](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html) Classic內部部署與托管功能表知識庫文章已更新，其中包含與封存電子郵件相關的資訊。
 
-Transactional Messaging文檔已更新，其中包含有關模板發佈的說明。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
+Transactional Messaging文檔已更新，其中包含有關模板發佈的說明。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
-「未處理的彈回郵件」區段已更新，其中包含「轉送位址」和「錯誤位址」欄位的詳細資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Deploying_an_instance.html#Unprocessed_bounce_mails)
+「未處理的彈回郵件」區段已更新，其中包含「轉送位址」和「錯誤位址」欄位的詳細資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Deploying_an_instance.html#Unprocessed_bounce_mails)
 
-新增了有關工作流程規劃最佳實務的新章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Workflow_best_practices.html#Execution_and_performance)
+新增了有關工作流程規劃最佳實務的新章節。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Workflow_best_practices.html#Execution_and_performance)
 
 在促銷活動選項清單中新增兩個選項： XtkSecurity_Restrict_EditXML和NmsOperation_OperationMgtDebug。
-[閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+[詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
 已新增有關Campaign Classic中可用之不同外部帳戶的資訊，以及如何設定這些帳戶。
-[閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html)
+[詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html)
 
 更新「Analytics資料連接器」區段以反映介面變更。
-[閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
+[詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
 
 已新增有關帳單報表的資訊。
-[閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#Billing_report)
+[詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#Billing_report)
 
 已更新「共用觀眾」整合的檔案。
-[閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
+[詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
 下列技術已更新： [SMS連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) ，以 [及序列自動產生](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
-「技術工作流程」區段已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
+「技術工作流程」區段已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
-「促銷活動網域名稱設定」程式已經過改良和更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)
+「促銷活動網域名稱設定」程式已經過改良和更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)
 
-Android應用程式從Google雲端傳訊(GCM)移轉至Firebase雲端傳訊(FCM)的程式已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html)
+Android應用程式從Google雲端傳訊(GCM)移轉至Firebase雲端傳訊(FCM)的程式已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html)
 
-促銷活動硬體調整指南已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html)
+促銷活動硬體調整指南已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html)
 
-已在Teradata外部帳戶的「查詢分段」中新增資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#External_database_external_account)
+已在Teradata外部帳戶的「查詢分段」中新增資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#External_database_external_account)
 
-## 2019年1月{#release-doc-16-01-2019}
+## 2019 年 1 月{#release-doc-16-01-2019}
 
-Marketing Cloud觸發器技術已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketing Cloud觸發器技術已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-已在選件核准區段中新增附註，以指定「已核准內容」的提及次數表示內容核准程式已經完成，不論所有選件皆已啟用／核准。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
+已在選件核准區段中新增附註，以指定「已核准內容」的提及次數表示內容核准程式已經完成，不論所有選件皆已啟用／核准。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
 
-「安裝指南」中新增了一個章節，列出「管理／平台／選項」節點中的選項。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+「安裝指南」中新增了一個章節，列出「管理／平台／選項」節點中的選項。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
-已新增有關使用種子地址保護郵件清單的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+已新增有關使用種子地址保護郵件清單的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
-建立和傳送傳送時的主要步驟已重新分組為新區段，並會視需要參考各種管道。 [閱讀更多資訊](../../delivery/using/steps-about-delivery-creation-steps.md)
+建立和傳送傳送時的主要步驟已重新分組為新區段，並會視需要參考各種管道。 [詳細內容](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 「電 [子郵件封存](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html) 」區段已移動、重新整理並改良，其資訊已明確：
 
-* 已新增有關每次連線電子郵件和密件副本傳送IP參數的最佳實務。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Best_practices)
+* 已新增有關每次連線電子郵件和密件副本傳送IP參數的最佳實務。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Best_practices)
 
-* 如果您已使用舊版電子郵件封存（在Adobe Campaign 17.2之前——組建版本8795），我們已更新升級至新電子郵件封存系統(BCC)的步驟。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
+* 如果您已使用舊版電子郵件封存（在Adobe Campaign 17.2之前——組建版本8795），我們已更新升級至新電子郵件封存系統(BCC)的步驟。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
 
-「使用工作流自動化」指南中已新增使用案例： 傳送個人化警報給營運商。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
+「使用工作流自動化」指南中已新增使用案例： 傳送個人化警報給營運商。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
 
 「移轉至新版本」區段已更新。 本檔案現在只詳細說明從任何舊版移轉至Adobe Campaign Classic v7的步驟，因為無法再移轉至Adobe Campaign v6.11。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
-「傳送暫時失敗後重試」區段已釐清。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
+「傳送暫時失敗後重試」區段已釐清。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
 
-「數位內容編輯器」區段的連結已新增至「定義電子郵件內容」區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Defining_the_email_content.html#Message_content)
+「數位內容編輯器」區段的連結已新增至「定義電子郵件內容」區段。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Defining_the_email_content.html#Message_content)
 
-「事務性消息傳遞體系結構」部分已更新，並出現警告，指定不能將控制項和執行實例安裝在同一台電腦上。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Transactional_messaging_architecture.html)
+「事務性消息傳遞體系結構」部分已更新，並出現警告，指定不能將控制項和執行實例安裝在同一台電腦上。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Transactional_messaging_architecture.html)
 
-「工作流程監控」區段已更新，其中包含8700到8977(18.10)之間之建置的附註，包括如何為這些建置安裝Workflow HeatMap套件的技術連結。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#About_the_Workflow_HeatMap)
+「工作流程監控」區段已更新，其中包含8700到8977(18.10)之間之建置的附註，包括如何為這些建置安裝Workflow HeatMap套件的技術連結。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#About_the_Workflow_HeatMap)
 
-已新增如何使用工作流程中的「擴充」活動，傳送包含自訂資料欄位的電子郵件的使用案例。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
+已新增如何使用工作流程中的「擴充」活動，傳送包含自訂資料欄位的電子郵件的使用案例。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
 
 功能影片已移至此 [處](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)。
 
@@ -355,9 +355,9 @@ SQL資料管理活動——詳 [細內容](https://docs.campaign.adobe.com/doc/A
 
 Campaign Classic API現在可在專用頁 [面中使用](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。 如果您使用jsapi.chm檔案，現在應參考新的線上版本。
 
-已更新相容性矩陣。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+已更新相容性矩陣。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-「已過時和已移除的Campaign Classic功能」頁面已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+「已過時和已移除的Campaign Classic功能」頁面已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 在發行 [說明](https://docs.campaign.adobe.com/doc/AC/en/RN.html)[和舊版發行說明中](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)，已針對已回調的建置新增警告。 還添加了17.9、18.4和18.6的累積版本。
 
@@ -365,123 +365,123 @@ Campaign Classic API現在可在專用頁 [面中使用](https://docs.campaign.a
 
 「隱 [私權](https://helpx.adobe.com/campaign/kb/acc-privacy.html) 」快速入門手冊已更新，其中包含如何從外部呼叫API，以及如何使用queryDef來查詢狀態並下載GDPR檔案的資訊。
 
-已新增交易式訊息使用案例，以即時新增電子郵件附件至出站派單。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MCE_Use_case_Purpose.html)
+已新增交易式訊息使用案例，以即時新增電子郵件附件至出站派單。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/MCE_Use_case_Purpose.html)
 
-已更新連線臨界值疑難排解區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Troubleshooting_Connection_thresholds.html)
+已更新連線臨界值疑難排解區段。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PRO_Troubleshooting_Connection_thresholds.html)
 
-已新增一節，說明如何設定代理連線。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
+已新增一節，說明如何設定代理連線。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Proxy_connection_configuration)
 
-更新授權外部命令限制一節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Restricting_authorized_external_commands)
+更新授權外部命令限制一節。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Restricting_authorized_external_commands)
 
-已新增與SFTP使用相關的疑難排解區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Importing_and_exporting_data_SFTP_server_usage.html)
+已新增與SFTP使用相關的疑難排解區段。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Importing_and_exporting_data_SFTP_server_usage.html)
 
-「傳送訊息」指南的概述區段已重新整理。 已新增有關傳送建立全域程式和不同傳送類型的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_About_deliveries_and_channels_Communication_channels.html)
+「傳送訊息」指南的概述區段已重新整理。 已新增有關傳送建立全域程式和不同傳送類型的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_About_deliveries_and_channels_Communication_channels.html)
 
-錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-已將有關如何使用種子地址的部分移至「發送消息」指南概述章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+已將有關如何使用種子地址的部分移至「發送消息」指南概述章節。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
-新增工作流程使用案例： 管理伴隨工作流程執行的更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
+新增工作流程使用案例： 管理伴隨工作流程執行的更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
-「收件匣轉換」區段已更新，其中包含更多有關Litmus的資訊，以及更詳細的程式。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
+「收件匣轉換」區段已更新，其中包含更多有關Litmus的資訊，以及更詳細的程式。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
 
-「SpamAssassin」區段已改善。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_SpamAssassin.html)
+「SpamAssassin」區段已改善。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_SpamAssassin.html)
 
-「使用壓力規則管理行銷疲勞」區段已新增使用案例。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/CMP_Campaign_Optimization_Pressure_rules.html#Sending_only_the_highest-weighted_messages)
+「使用壓力規則管理行銷疲勞」區段已新增使用案例。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/CMP_Campaign_Optimization_Pressure_rules.html#Sending_only_the_highest-weighted_messages)
 
-現在提供新的使用案例，說明如何建立跨通道傳送工作流程。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Cross-channel_delivery_workflow.html)
+現在提供新的使用案例，說明如何建立跨通道傳送工作流程。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Cross-channel_delivery_workflow.html)
 
-在「封存電子郵件」區段中新增了一些建議。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_deliverability.html#Activating_emails_BCC_archiving)
+在「封存電子郵件」區段中新增了一些建議。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_deliverability.html#Activating_emails_BCC_archiving)
 
-已新增建議，說明Adobe Campaign最佳使用的最低螢幕解析度。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Screen_resolution)
+已新增建議，說明Adobe Campaign最佳使用的最低螢幕解析度。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Screen_resolution)
 
-Experience Manager整合指南已更新，此整合的設定已新增一些說明。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITG_Adobe_Experience_Manager_About_Adobe_Experience_Manager.html)
+Experience Manager整合指南已更新，此整合的設定已新增一些說明。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITG_Adobe_Experience_Manager_About_Adobe_Experience_Manager.html)
 
-已新增群組類型清單和清單類型清單之間差異的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Profile_management_Creating_and_managing_lists.html#About_lists_in_Adobe_Campaign)
+已新增群組類型清單和清單類型清單之間差異的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Profile_management_Creating_and_managing_lists.html#About_lists_in_Adobe_Campaign)
 
-更新程式碼，以透過電子郵件傳送報表擷取作為附件。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_a_report_to_a_list.html#Step_3-_Creating_the_workflow)
+更新程式碼，以透過電子郵件傳送報表擷取作為附件。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_a_report_to_a_list.html#Step_3-_Creating_the_workflow)
 
-已新增如何建立查詢的範例，以篩選在過去7天內未開啟電子郵件的收件者。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Designing_queries.html#Recipients_who_did_not_open_any_delivery)
+已新增如何建立查詢的範例，以篩選在過去7天內未開啟電子郵件的收件者。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Designing_queries.html#Recipients_who_did_not_open_any_delivery)
 
-已更新「使用Adobe Experience Cloud整合指南分享觀眾」。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Sharing_audiences_with_Adobe_Experience_Cloud.html)
+已更新「使用Adobe Experience Cloud整合指南分享觀眾」。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Sharing_audiences_with_Adobe_Experience_Cloud.html)
 
-「常見問題」說明頁面現在包含有關Campaign可用語言、網頁表單翻譯和多語言電子郵件的資訊。 [閱讀更多資訊](../../platform/using/common-questions.md)
+「常見問題」說明頁面現在包含有關Campaign可用語言、網頁表單翻譯和多語言電子郵件的資訊。 [詳細內容](../../platform/using/common-questions.md)
 
-美國英文與英國英文例項之間的差異現在會列在專屬區段中。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Formats_and_units)
+美國英文與英國英文例項之間的差異現在會列在專屬區段中。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Formats_and_units)
 
 「常 [見問題](../../platform/using/common-questions.md) 」說明頁面現在會連結至錯誤訊息頁面。
 
-已新增「開啟」追蹤模式的相關資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Tracking_messages_Personalizing_URL_tracking.html)
+已新增「開啟」追蹤模式的相關資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Tracking_messages_Personalizing_URL_tracking.html)
 
-新增有關網頁應用程式和網頁表單最低解析度的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WEB_Web_forms_About_web_forms.html)
+新增有關網頁應用程式和網頁表單最低解析度的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WEB_Web_forms_About_web_forms.html)
 
-Campaign和Adobe Experience Cloud解決方案整合指南已更新並重新組織。 [閱讀更多資訊](../../integrations/using/about-campaign-integrations.md)
+Campaign和Adobe Experience Cloud解決方案整合指南已更新並重新組織。 [詳細內容](../../integrations/using/about-campaign-integrations.md)
 
-已新增有關網頁表單中文字變數使用的章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WEB_Web_forms_Static_elements_in_a_web_form.html#Using_text_variables)
+已新增有關網頁表單中文字變數使用的章節。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WEB_Web_forms_Static_elements_in_a_web_form.html#Using_text_variables)
 
-訊息中的URL追蹤模式現在已詳細說明。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Tracking_messages_How_to_configure_tracked_links.html)
+訊息中的URL追蹤模式現在已詳細說明。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Tracking_messages_How_to_configure_tracked_links.html)
 
-例項建立區段已重新組織。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Creating_an_instance_and_logging_on.html)
+例項建立區段已重新組織。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Creating_an_instance_and_logging_on.html)
 
-在日文行動裝置上傳送電子郵件，現在會記錄在新章節中。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Defining_the_email_content.html#Sending_emails_on_Japanese_mobiles)
+在日文行動裝置上傳送電子郵件，現在會記錄在新章節中。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Defining_the_email_content.html#Sending_emails_on_Japanese_mobiles)
 
-「最佳化個人化」區段已更新，並提供更多資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalization_fields.html#Optimizing_personalization)
+「最佳化個人化」區段已更新，並提供更多資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalization_fields.html#Optimizing_personalization)
 
 ## 18.6 - 09/07/2018{#release-18-6}
 
 **發行中包含的新功能**
 
-已更新相容性矩陣。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+已更新相容性矩陣。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-JSAPI檔案已更新。 [閱讀更多資訊](https://support.neolane.net/webApp/extranetLogin)
+JSAPI檔案已更新。 [詳細內容](https://support.neolane.net/webApp/extranetLogin)
 
-「已過時和已移除的功能」頁面已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+「已過時和已移除的功能」頁面已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 **此版本隨附的其他檔案更新**
 
-Campaign Classic使用手冊已重新命名，以簡化導覽、改善使用體驗、存取資訊和自助服務。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/browseAC.html)
+Campaign Classic使用手冊已重新命名，以簡化導覽、改善使用體驗、存取資訊和自助服務。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/browseAC.html)
 
-運算式編輯器中可用的函式清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_Defining_filter_conditions.html#List_of_functions)
+運算式編輯器中可用的函式清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_Defining_filter_conditions.html#List_of_functions)
 
-安全性快速入門手冊已更新，其中包含如何保護包含PI之頁面的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
+安全性快速入門手冊已更新，其中包含如何保護包含PI之頁面的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
 
-錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-IMS整合檔案中已新增疑難排解區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITG_Connecting_via_an_Adobe_ID_IMS_troubleshooting.html)
+IMS整合檔案中已新增疑難排解區段。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITG_Connecting_via_an_Adobe_ID_IMS_troubleshooting.html)
 
-已更新「建置升級快速入門」指南。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)
+已更新「建置升級快速入門」指南。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)
 
-IP相似性設定區段已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Mid-sourcing_server.html#Multiplexing_the_mid-sourcing_server)
+IP相似性設定區段已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Mid-sourcing_server.html#Multiplexing_the_mid-sourcing_server)
 
-已添加「效能和吞吐量」故障排除部分。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PRO_Troubleshooting_Performance_and_throughput_issues.html)
+已添加「效能和吞吐量」故障排除部分。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PRO_Troubleshooting_Performance_and_throughput_issues.html)
 
-內建個人化區塊清單已更新為範例。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalization_blocks.html#Out-of-the-box_personalization_blocks)
+內建個人化區塊清單已更新為範例。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalization_blocks.html#Out-of-the-box_personalization_blocks)
 
-已更新傳送失敗原因清單。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Delivery_failure_types_and_reasons)
+已更新傳送失敗原因清單。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Delivery_failure_types_and_reasons)
 
-新增了「套件定義管理」的章節。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_Working_with_data_packages.html#Managing_package_definitions)
+新增了「套件定義管理」的章節。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_Working_with_data_packages.html#Managing_package_definitions)
 
-「促銷活動」與Adobe Analytics -「資料」連接器區段的整合已經過改良並重新組織。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
+「促銷活動」與Adobe Analytics -「資料」連接器區段的整合已經過改良並重新組織。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
 
-已新增「教學課程」區段，其中包含逐步指南和教學影片的連結。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
+已新增「教學課程」區段，其中包含逐步指南和教學影片的連結。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-SMS連接器通訊協定與設定的新技術已經建立。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)
+SMS連接器通訊協定與設定的新技術已經建立。 [詳細內容](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)
 
-已更新「傳送最佳實務快速入門」指南。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+已更新「傳送最佳實務快速入門」指南。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
-已更新Microsoft Dynamics 365帳戶設定及Web API部署。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_CRM_Connectors.html#Example_for_Microsoft_Dynamics)
+已更新Microsoft Dynamics 365帳戶設定及Web API部署。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_CRM_Connectors.html#Example_for_Microsoft_Dynamics)
 
-在Windows平台上安裝Adobe Campaign Classic的程式已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Windows__Installing_the_server.html)
+在Windows平台上安裝Adobe Campaign Classic的程式已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Windows__Installing_the_server.html)
 
-Adobe Experience Cloud和Campaign Classic之間的受眾分享時間範圍已詳細說明。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Importing_and_exporting_audiences.html)
+Adobe Experience Cloud和Campaign Classic之間的受眾分享時間範圍已詳細說明。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Importing_and_exporting_audiences.html)
 
-已更新Campaign Classic清單的知識庫文章完整版。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/article-list.html)
+已更新Campaign Classic清單的知識庫文章完整版。 [詳細內容](https://helpx.adobe.com/campaign/kb/article-list.html)
 
-有關效能改進和最佳實務的新技術已上線。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/best-practices-for-performance-improvement.html)
+有關效能改進和最佳實務的新技術已上線。 [詳細內容](https://helpx.adobe.com/campaign/kb/best-practices-for-performance-improvement.html)
 
-A/B測試範例已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
+A/B測試範例已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
 
-Campaign Classic常見問題／常見問答集頁面已更新。 [閱讀更多資訊](../../platform/using/common-questions.md)
+Campaign Classic常見問題／常見問答集頁面已更新。 [詳細內容](../../platform/using/common-questions.md)
 
 ## 18.4 - 24/04/2018{#release-18-4}
 
@@ -495,76 +495,76 @@ Android推播連接器增強功能——詳 [細資訊](https://docs.campaign.ad
 
 **此版本隨附的其他檔案更新**
 
-版本注意事項已經過改良，提供更佳的使用者體驗，現在包含所有與客戶要求相關的修補程式。  [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/RN.html)
+版本注意事項已經過改良，提供更佳的使用者體驗，現在包含所有與客戶要求相關的修補程式。  [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/RN.html)
 
-新增了一個頁面，其中包含有關Campaign Classic的最常見問題。 [閱讀更多資訊](../../platform/using/common-questions.md)
+新增了一個頁面，其中包含有關Campaign Classic的最常見問題。 [詳細內容](../../platform/using/common-questions.md)
 
-錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Marketing Cloud觸發器技術已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketing Cloud觸發器技術已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-有關如何在舊版Campaign Classic上安裝和部署隱私權(GDPR)套件的技術已經加入。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)
+有關如何在舊版Campaign Classic上安裝和部署隱私權(GDPR)套件的技術已經加入。 [詳細內容](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)
 
-對新型序列自動生成機制進行了研究。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)
+對新型序列自動生成機制進行了研究。 [詳細內容](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)
 
-已更新JSAPI檔案。 [閱讀更多資訊](https://support.neolane.net/webApp/extranetLogin)
+已更新JSAPI檔案。 [詳細內容](https://support.neolane.net/webApp/extranetLogin)
 
-已更新相容性矩陣。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+已更新相容性矩陣。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-現在有新頁面列出已過時的功能和版本。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+現在有新頁面列出已過時的功能和版本。 [詳細內容](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
-已添加一些有關RDBMS的已知限制和最佳做法。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html)
+已添加一些有關RDBMS的已知限制和最佳做法。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html)
 
-瞭解有關SFTP使用的最佳實務。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Importing_and_exporting_data_SFTP_server_usage.html)
+瞭解有關SFTP使用的最佳實務。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Importing_and_exporting_data_SFTP_server_usage.html)
 
-技術工作流程清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
+技術工作流程清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
-知識庫文章清單（先前稱為「技術人員」）現在可從這裡取得。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/article-list.html)
+知識庫文章清單（先前稱為「技術人員」）現在可從這裡取得。 [詳細內容](https://helpx.adobe.com/campaign/kb/article-list.html)
 
 已 [更新How-to影片](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) 。
 
-LINE文檔在LINE包折舊後已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_LINE_channel.html)
+LINE文檔在LINE包折舊後已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_LINE_channel.html)
 
-更新報告指標計算檔案。 [閱讀更多資訊](../../reporting/using/indicator-calculation.md)
+更新報告指標計算檔案。 [詳細內容](../../reporting/using/indicator-calculation.md)
 
-已添加有關與Oracle對齊的時區檔案的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MIG_Configuration_General_configurations.html#Oracle)
+已添加有關與Oracle對齊的時區檔案的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/MIG_Configuration_General_configurations.html#Oracle)
 
-新增「監控傳送」區段，其中包含有關傳送失敗和隔離管理的更新資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+新增「監控傳送」區段，其中包含有關傳送失敗和隔離管理的更新資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 使用現成可用的個人化區塊的新資訊重新組織「個人化區塊」區段。
-[閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalization_blocks.html)
+[詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalization_blocks.html)
 
-使用檔案設定的新資訊重新整理「封存電子郵件」 ```config-<instance name>.xml``` 區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Activating_email_archiving__on_premise_)
+使用檔案設定的新資訊重新整理「封存電子郵件」 ```config-<instance name>.xml``` 區段。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Activating_email_archiving__on_premise_)
 
-更新訊息中心（控制項）技術工作流程的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_Message_Center__Control_.html)
+更新訊息中心（控制項）技術工作流程的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_Message_Center__Control_.html)
 
-已添加有關設定SMTP中繼時吞吐量限制的資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Personalizing_delivery_parameters)
+已添加有關設定SMTP中繼時吞吐量限制的資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Personalizing_delivery_parameters)
 
 ## 17.12 - 14/12/2017{#release-doc-14-12-2017}
 
 Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support/campaign/classic.html) ，以改善可用性。
 
-已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
+已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
-錯誤消息清單已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Marketing Cloud觸發器技術已更新。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketing Cloud觸發器技術已更新。 [詳細內容](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-Campaign Classic移轉指南已新增至系列。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+Campaign Classic移轉指南已新增至系列。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
-已更新促銷活動相容性矩陣。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+已更新促銷活動相容性矩陣。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-如果適用，設定和安裝指示現在會提及它們套用的代管模型。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html)
+如果適用，設定和安裝指示現在會提及它們套用的代管模型。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html)
 
-新的知識庫文章，強調內部部署、混合部署和受管理服務之間的配置和功能差異。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+新的知識庫文章，強調內部部署、混合部署和受管理服務之間的配置和功能差異。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 
-已新增如何安裝標準套件的指示。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Installing_packages.html)
+已新增如何安裝標準套件的指示。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Installing_packages.html)
 
-已新增有關如何設定與Audience Manager或People核心服務整合的詳細資訊。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
+已新增有關如何設定與Audience Manager或People核心服務整合的詳細資訊。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
-已更新安裝檔案，提到使用PostreSQL時，促銷活動安裝現在需要pgcrypto。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Prerequisites.html#Database_access_layers)
+已更新安裝檔案，提到使用PostreSQL時，促銷活動安裝現在需要pgcrypto。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Prerequisites.html#Database_access_layers)
 
 ## 17.9 - 25/09/2017{#release-17-9}
 
@@ -580,72 +580,72 @@ SAP HANA連接器——詳 [細內容](https://docs.campaign.adobe.com/doc/AC/en
 
 **此版本隨附的其他檔案更新**
 
-新增查詢範例。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Designing_queries.html#Filtering_duplicated_recipients)
+新增查詢範例。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Designing_queries.html#Filtering_duplicated_recipients)
 
-已更新傳送最佳實務指南。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+已更新傳送最佳實務指南。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
-A/B測試範例已更新，但遺失指示。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
+A/B測試範例已更新，但遺失指示。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
 
-操作說明影片已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html)
+操作說明影片已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html)
 
-更新電子郵件封存區段。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html)
+更新電子郵件封存區段。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html)
 
-釐清工作流程中的排程器使用情形。 [閱讀更多資訊](../../workflow/using/scheduler.md)
+釐清工作流程中的排程器使用情形。 [詳細內容](../../workflow/using/scheduler.md)
 
-新增暫停的工作流程最佳實務。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
+新增暫停的工作流程最佳實務。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
 
 在匯入檔案時預先處理檔案的新程式，在匯出工作流程中的資料時進行後處理。 請 [在這裡](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
 
-SMS訊息檔案的隔離機制已更新，以反映Extended一般SMPP連接器錯誤管理的特定性。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)。
+SMS訊息檔案的隔離機制已更新，以反映Extended一般SMPP連接器錯誤管理的特定性。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)。
 
-「行動應用程式頻道」檔案已增強，並提供在Android上傳送豐富式通知的詳細程式。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_push_notifications_Setting_up_mobile_app_channel.html#Rich_notifications)。
+「行動應用程式頻道」檔案已增強，並提供在Android上傳送豐富式通知的詳細程式。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_push_notifications_Setting_up_mobile_app_channel.html#Rich_notifications)。
 
-「收件箱」呈現文檔已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html)。
+「收件箱」呈現文檔已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html)。
 
-「設定網頁追蹤」檔案已增強，並提供更新的範例和附註。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/CFG_Setting_up_web_tracking_Additional_parameters.html#Redirection_server_configuration)。
+「設定網頁追蹤」檔案已增強，並提供更新的範例和附註。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/CFG_Setting_up_web_tracking_Additional_parameters.html#Redirection_server_configuration)。
 
-SMS頻道檔案已更新，在套用至延伸通用SMPP連接器的「自動回覆」區段中增加了一些說明。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_SMS_channel.html#Creating_an_SMPP_external_account)。
+SMS頻道檔案已更新，在套用至延伸通用SMPP連接器的「自動回覆」區段中增加了一些說明。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_SMS_channel.html#Creating_an_SMPP_external_account)。
 
-Social行銷檔案已更新。 [閱讀更多資訊](../../social/using/about-social-marketing.md)。
+Social行銷檔案已更新。 [詳細內容](../../social/using/about-social-marketing.md)。
 
-IP變暖的新技術已經增加。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_Deliverability_IP_Warming_overview.pdf)。
+IP變暖的新技術已經增加。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_Deliverability_IP_Warming_overview.pdf)。
 
-已新增建置升級入門。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)。
+已新增建置升級入門。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)。
 
 ## 2017年5月{#release-doc-30-05-2017}
 
-有新的快速入門手冊可供使用： 它提供一些最佳實務，可用於透過Adobe Campaign傳遞，從建立和鎖定到傳送和監控。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+有新的快速入門手冊可供使用： 它提供一些最佳實務，可用於透過Adobe Campaign傳遞，從建立和鎖定到傳送和監控。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
-安全性快速入門手冊已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
+安全性快速入門手冊已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
 
 「封 [存電子郵件」檔案](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html) 「已更新為 [「電子郵件密件副本」區段](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Configuring_the_BCC_email_address__on_premise_) ，以及啟動 [功能的詳細步驟](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Archiving_emails)。
 
-已新增和更新部分影片。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html)
+已新增和更新部分影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html)
 
-瞭解如何將傳送內容傳送給從外部檔案載入的收件者，而不需更新資料庫。 [閱讀更多資訊](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)
+瞭解如何將傳送內容傳送給從外部檔案載入的收件者，而不需更新資料庫。 [詳細內容](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)
 
-已更新雙重選擇加入範例。 [閱讀更多資訊](../../web/using/use-cases--web-forms.md)
+已更新雙重選擇加入範例。 [詳細內容](../../web/using/use-cases--web-forms.md)
 
-## 2017年3月{#release-doc-31-03-2017}
+## 2017 年 3月{#release-doc-31-03-2017}
 
 可傳遞性： 開始 [使用指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，已更新。 可傳送性檔案現在包含更詳細 [的概述](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) ，以及實作 [程式和主要步驟的說明](../../delivery/using/deliverability-key-points.md)。
 
-「使用波傳送」區段已移動並增強，其中包含詳細的範例、建議和使用案例。    [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Sending_using_multiple_waves)
+「使用波傳送」區段已移動並增強，其中包含詳細的範例、建議和使用案例。    [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Sending_using_multiple_waves)
 
-「隔離管理」部分已添加了一個表，說明SMS消息的特定錯誤。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)
+「隔離管理」部分已添加了一個表，說明SMS消息的特定錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)
 
-工作流程： 已新增多頻道工作流程範例。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
+工作流程： 已新增多頻道工作流程範例。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
 
-Marketing Cloud觸發器： 已新增有關如何設定及搭配Adobe Campaign使用的技術。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketing Cloud觸發器： 已新增有關如何設定及搭配Adobe Campaign使用的技術。 [詳細內容](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
 工作流程手冊已重新整理和擴充。 輕鬆瞭解如何建立並執行工作流程 [、如何](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Building_a_workflow.html) 建立並管理您的 [](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html#Data_Management)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Updating_the_database)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow)Target Deliverations、資料匯入ImportData、資料使用方式以及資料使用方式的Adobe ReduptageThergDeliversDeliverationsDightPremizations。
 
 現在提供匯 [入最佳實務](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow) 後建立的 [匯入工作流程範例](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html#Import_best_practices) 。
-此新版本的安裝指南已更新。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/INS_Architecture_and_hosting_models_General_architecture.html)
+此新版本的安裝指南已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/INS_Architecture_and_hosting_models_General_architecture.html)
 
-已更新相容性矩陣。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+已更新相容性矩陣。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-收件者會在電子郵件傳送中加入抵用券時獲得附加值。 [閱讀更多資訊](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalized_coupons.html)
+收件者會在電子郵件傳送中加入抵用券時獲得附加值。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalized_coupons.html)
 
 ## Adobe Campaign v7 - 16/03/2017{#release-17-2}
 
