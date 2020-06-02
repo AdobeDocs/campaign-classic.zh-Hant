@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a976144d70b113d1358b0514a3e805d79e11484a
+source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 0%
@@ -60,6 +60,13 @@ ht-degree: 0%
    <td> 要對收件箱渲染使用測試地址的結構清單。 （元素名稱以逗號分隔）例如： custom_nms_recipient。<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
+   <td><p> 可讓您在指定特定運算元或運算元群組以在傳送屬性中開始傳送時，允許負責傳送的運算元確認傳送。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入"0"。</p><p> 然後，傳送確認程式會依預設運作： 只有為傳送屬性（或管理員）中指定的運算元或運算元群組才能確認並執行傳送。 請參 <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">閱本節</a>。</p> </td> 
+   <tr> 
+   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
+   <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms:recipient)對話。<br /> 選項值必須與與匹配外部收件人表的方案名稱相對應。<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
    <td> 收件者的最少數量，以便將付款視為計費報表中的主要付款。<br /> </td> 
   </tr> 
@@ -94,10 +101,6 @@ ht-degree: 0%
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
    <td> 輸入"1"作為值可讓您自動忽略雙倍。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms:recipient)對話。<br /> 選項值必須與與匹配外部收件人表的方案名稱相對應。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span> <br /> </td> 
@@ -164,6 +167,10 @@ ht-degree: 0%
    <td> 授權轉寄電子郵件地址清單（來自傳入郵件處理模組）。 這些位址必須以逗號（或*）分隔，才能允許全部使用。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
+   <td> 用於'lineImage' servlet的AES金鑰，用以編碼URL（LINE頻道）。<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
    <td> 在頻道「電子郵件」上（用作預設值）: 接收方被隔離之前，在發送過程中SOFT錯誤被接受的最大錯誤數。<br /> </td> 
   </tr> 
@@ -180,9 +187,21 @@ ht-degree: 0%
    <td> 在頻道「行動」上： 自上次參考的SOFT錯誤以來花費的最短時間，然後再考慮新的SOFT錯誤。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> 鏡像頁伺服器的URL（預設情況下，應與NmsTracking_ServerUrl相同）。<br /> 當路由定義中未指定URL時，此值是電子郵件傳送的預設值。<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
+   <td> 允許指定最大時間段（以小時為單位），以限制每次執行同步工作流時恢復的廣播數。</a>.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
+   <td> MidSourcing會話中可以並行運行的最大調用數（預設為3）。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
+   <td> 自訂延遲（以分鐘為單位），之後傳送會視為「延遲」，預設為30分鐘。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
+   <td><p>在計算正在運行的交貨數 <span class="uicontrol"><a href="../../workflow/using/campaign.md">量時，OperationMagt</a></span> 技術工作流將使用此選項。</p>它允許您定義超過天數，以便將狀態不一致的交貨從運行交貨的計數中排除。</p><p>依預設，值會設為"7"，這表示將排除7天前不一致的傳送。</p></td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
    <td> 發件人地址的第1行。<br /> </td> 
@@ -203,10 +222,10 @@ ht-degree: 0%
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
    <td> 發件人地址的第7行。<br /> </td> 
   </tr>
-    <tr> 
-   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>在計算正在運行的交貨數 <span class="uicontrol"><a href="../../workflow/using/campaign.md">量時，OperationMagt</a></span> 技術工作流將使用此選項。</p>它允許您定義超過天數，以便將狀態不一致的交貨從運行交貨的計數中排除。</p><p>依預設，值會設為"7"，這表示將排除7天前不一致的傳送。</p></td> 
-  </tr>
+  <tr> 
+   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
+   <td> 鏡像頁伺服器的URL（預設情況下，應與NmsTracking_ServerUrl相同）。<br /> 當路由定義中未指定URL時，此值是電子郵件傳送的預設值。<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
    <td> 已發送SMS消息的參數： 發送到SMS網關以指示消息優先順序的資訊。<br /> </td> 
@@ -220,51 +239,33 @@ ht-degree: 0%
    <td> 執行SMS訊息重試的期間。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
-   <td> 電子郵件地址的有效字元。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> 允許指定最大時間段（以小時為單位），以限制每次執行同步工作流時恢復的廣播數。</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> MidSourcing會話中可以並行運行的最大調用數（預設為3）。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 可讓您在指定特定運算元或運算元群組以在傳送屬性中開始傳送時，允許負責傳送的運算元確認傳送。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入"0"。</p><p> 然後，傳送確認程式會依預設運作： 只有為傳送屬性（或管理員）中指定的運算元或運算元群組才能確認並執行傳送。 請參 <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">閱本節</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> 自訂延遲（以分鐘為單位），之後傳送會視為「延遲」，預設為30分鐘。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
-   <td> 啟用／停用對Code128特殊字元的支援。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> 用於'lineImage' servlet的AES金鑰，用以編碼URL（LINE頻道）。<br /> </td> 
+   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
+   <td> NmsUserAgent統計資訊的上 <span class="uicontrol">次合併日</span> 期。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
    <td> 包含網頁區段及其狀態的選項名稱。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> NmsUserAgent統計資訊的上 <span class="uicontrol">次合併日</span> 期。<br /> </td> 
+   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> 啟用／停用Code128特殊字元的支援。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
+   <td> 電子郵件地址的有效字元。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
    <td> 將此選項加入"0"值，以停用傳送版本的XML程式碼(按一下滑鼠右鍵/ <span class="uicontrol">編輯XML來源</span> ，或 <span class="uicontrol"></span> CTRL + F4捷徑)。<br /> </td> 
-  </tr> 
-  <!--<tr> 
+  </tr>  
+ </tbody> 
+</table>
+
+<!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
-  </tr> 
- </tbody> 
-</table>-->
+  </tr>
+-->
 
 ## 資源 {#resources}
 
@@ -306,7 +307,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> 可讓您定義儲存傳送中所用影像的伺服器，讓瀏覽器取得這些影像。<br /> 對於建置版本&lt;= 5098，我們使用上傳至實例的影像URL。<br /> 對於建置版本&gt; 5098，我們會改用傳送的公用URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 選項的URL。<br /> </td> 
+   <td> 可讓您定義儲存傳送中所用影像的伺服器，讓瀏覽器取得這些影像。<br /> 對於建置版本&lt;= 5098，我們使用上傳至執行個體之影像的URL。<br /> 對於建置版本&gt; 5098，我們會改用傳送的公用URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 選項的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -638,7 +639,7 @@ ht-degree: 0%
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 允許您為Microsoft SQL Server上的工作表配置單獨的資料庫，以優化備份和複製。 該選項與臨時資料庫的名稱相對應： 如果指定，工作表將寫入此資料庫。 範例： 'tempdb.dbo'。 （請注意，名稱必須以點結尾）。</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">閱讀更多資訊</a> <br /> </td> 
+   <td> 允許您為Microsoft SQL Server上的工作表配置單獨的資料庫，以優化備份和複製。 該選項與臨時資料庫的名稱相對應： 如果指定，工作表將寫入此資料庫。 範例： 'tempdb.dbo'。 （請注意，名稱必須以點結尾）。</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">詳細內容</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
