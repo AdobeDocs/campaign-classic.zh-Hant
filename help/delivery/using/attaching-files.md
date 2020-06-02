@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
+source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
 您可以附加一或多個檔案至電子郵件傳送。 可能有兩種情況：
 
 * 選取檔案，並依原樣附加至傳送。
-* 為每個收件者個人化附件的內容。 在這種情況下，您需要建立計算 **附件**:附件的名稱在每條消息的發送時計算，具體取決於收件人。 如果您有「可變數位列印」選項，也可以在傳送時將內容個人化並轉 **換為PDF格式** 。
+* 為每個收件者個人化附件的內容。 在這種情況下，您需要建立計算 **附件**: 附件的名稱在每條消息的發送時計算，具體取決於收件人。 如果您有「可變數位列印」選項，也可以在傳送時將內容個人化並轉 **換為PDF格式** 。
 
 >[!NOTE]
 >
@@ -42,15 +45,16 @@ source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
 >您可以附加數個檔案至傳送。 附件可以是任何格式，包括壓縮格式。
 
 1. 按一下 **[!UICONTROL Attachments]** 連結。
-1. 按一 **[!UICONTROL Add]** 下按鈕，然 **[!UICONTROL File...]** 後按一下以選取要附加至傳送的檔案。
+1. Click the **[!UICONTROL Add]** button.
+1. 按一 **[!UICONTROL File...]** 下以選取要附加至傳送的檔案。
 
-![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![](assets/s_ncs_user_wizard_email_attachement.png)
 
 您也可以直接將檔案拖放至傳送欄位，或 **[!UICONTROL Attachments]** 使用傳送精靈工具 **[!UICONTROL Attach]** 列中的圖示，
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-1. 在選取檔案後，檔案會立即上傳至伺服器，以便在傳送時使用。 它列在欄位 **[!UICONTROL Attachments]** 中。
+在選取檔案後，檔案會立即上傳至伺服器，以便在傳送時使用。 它列在欄位 **[!UICONTROL Attachments]** 中。
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -77,7 +81,7 @@ source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
 
 ### 附加本地檔案 {#attach-a-local-file}
 
-如果附件是本地檔案，請選擇以下選項： **[!UICONTROL File name is specified when creating the delivery template]**。 檔案會在本機選取並上傳至伺服器。 請遵循下列步驟：
+如果附件是本地檔案，請選擇以下選項： **[!UICONTROL File name is specified when creating the delivery template]**. 檔案會在本機選取並上傳至伺服器。 請遵循下列步驟：
 
 1. 在欄位中選取要上傳的 **[!UICONTROL Local file]** 檔案。
 1. 視需要指定標籤。 在消息傳遞系統中查看時，標籤會替換檔案名。 如果未指定任何內容，則預設情況下會使用檔案名。
@@ -92,7 +96,7 @@ source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
 
 ### 附加個人化訊息 {#attach-a-personalized-message}
 
-選項可 **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** 讓您選取包含個人化欄位（例如預期收件者的姓氏和名字）的罰款。
+選項可 **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** 讓您選取包含個人化欄位的檔案，例如預期收件者的姓氏和名字。
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
