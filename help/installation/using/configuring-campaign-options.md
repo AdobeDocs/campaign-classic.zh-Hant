@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
+source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3903'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,18 @@ ht-degree: 0%
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span> <br /> </td> 
    <td> 可讓您定義傳送訊息時所使用之「寄件者」位址的語法。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
+   <td> 可讓您定義逾時限制（以秒為單位），以便在擷取從個人化URL下載並附加至電子郵件的影像時，從伺服器取得回應。 如果超出此值，則無法傳送訊息。 The default value is 60 seconds.<br /> </td> 
+  </tr> 
+ <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
+   <td> 可讓您定義從個人化URL下載並附加至電子郵件的影像所允許的最大大小（以位元組為單位）。 預設值為100,000位元組。 傳送校樣並下載影像以處理電子郵件時，如果影像大小超過此值，或發生下載問題，傳送記錄檔中會顯示錯誤，而校樣傳送將會失敗。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
+   <td> 可讓您在電子郵件或交易式電子郵件範本中設定附件數上限。 如果超過此值，則傳送分析記錄檔或發佈交易式電子郵件範本時會顯示警告。 預設值為1個附件。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
