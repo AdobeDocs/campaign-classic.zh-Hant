@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 篩選規則可讓您根據在查詢中定義的准則定義要排除的訊息。 這些規則會連結至定位維度。
 
-篩選規則可連結至其他類型的規則（控制項、壓力等）排版，或分組為專用的篩選 **類型** 。 如需詳細資訊，請參閱「建立 [及使用篩選類型學」](#creating-and-using-a-filtering-typology)。
+篩選規則可連結至其他類型的規則（控制項、壓力等） 排版，或分組為專用的篩選 **類型** 。 如需詳細資訊，請參閱「建立 [及使用篩選類型學」](#creating-and-using-a-filtering-typology)。
 
 ## 建立篩選規則 {#creating-a-filtering-rule}
 
@@ -64,15 +67,15 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 >[!NOTE]
 >
->在工作流程和活動中，可以使用類型和篩選規 **[!UICONTROL Delivery outline]** 則。 如需詳細資訊，請參閱[本小節](../../workflow/using/delivery-outline.md)。
+>在工作流程和活動中，可以使用類型和篩選規 **[!UICONTROL Delivery outline]** 則。 如需詳細資訊，請參閱[本章節](../../workflow/using/delivery-outline.md)。
 
 ## 建立和使用篩選排版法 {#creating-and-using-a-filtering-typology}
 
-您可以建立 **[!UICONTROL Filtering]** 類型：它們只包含篩選規則。
+您可以建立 **[!UICONTROL Filtering]** 類型： 它們只包含篩選規則。
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-選取目標時，這些特定類型可以連結至傳送：在傳送精靈中，按一下連 **[!UICONTROL To]** 結，然後按一下標 **[!UICONTROL Exclusions]** 簽。
+選取目標時，這些特定類型可以連結至傳送： 在傳送精靈中，按一下連 **[!UICONTROL To]** 結，然後按一下標 **[!UICONTROL Exclusions]** 簽。
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
@@ -84,15 +87,14 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 >[!NOTE]
 >
->* 選擇窗口中只提供類型和過濾規則。
->* 這些設定可在傳送範本中定義，以便自動套用至使用範本建立的所有新傳送。
+>選擇窗口中只提供類型和過濾規則。
 >
-
+>這些設定可在傳送範本中定義，以便自動套用至使用範本建立的所有新傳送。
 
 
 ## 預設可傳遞性排除規則 {#default-deliverability-exclusion-rules}
 
-預設提供兩個篩選規則： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) **[!UICONTROL Exclude domains]** 和( **[!UICONTROL domainExclusions]** )。 在電子郵件分析期間，這些規則會比較收件者電子郵件地址與傳送能力例項中管理之加密全域隱藏清單中所包含之禁止地址或網域名稱。 如果有相符項目，則不會傳送訊息給該收件者。
+預設提供兩個篩選規則： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** )和 **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** )。 在電子郵件分析期間，這些規則會比較收件者電子郵件地址與傳送能力例項中管理之加密全域隱藏清單中所包含之禁止地址或網域名稱。 如果有相符項目，則不會傳送訊息給該收件者。
 
 這是為了避免因惡意活動而列入黑名單，尤其是使用Spamtrap。 例如，如果使用Spamtrap來透過您的其中一個Web表單進行訂閱，系統會自動傳送確認電子郵件給該Spamtrap，這會自動將您的位址列入黑名單。
 
