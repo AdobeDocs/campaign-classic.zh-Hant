@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2217'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +56,7 @@ Adobe Campaign隨附一組預先定義的外部帳戶。 若要設定與外部�
 
    ![](assets/ext_account_1.png)
 
-1. Click the **[!UICONTROL New]** button.
+1. 按一下&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
 
    ![](assets/ext_account_2.png)
 
@@ -64,7 +67,7 @@ Adobe Campaign隨附一組預先定義的外部帳戶。 若要設定與外部�
 
    所需資訊通常由您所連接的伺服器提供商提供。
 
-1. 按一下 **[!UICONTROL Save]**.
+1. 按一下「**[!UICONTROL Save]**」。
 
 外部帳戶會建立並新增至外部帳戶清單。 它現在可用於工作流活動和傳送屬性中的資料／檔案傳輸或路由配置。
 
@@ -107,7 +110,7 @@ Bouncemails **外部帳戶** ，指定用來連線至電子郵件服務的外部
 可以配置以下通道：
 
 * [電子郵件](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [行動(SMS)](../../delivery/using/sms-channel.md#activating-an-external-account)。
+* [行動(SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
 * [電話](../../delivery/using/other-channels.md)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [代理商](../../delivery/using/other-channels.md)
@@ -154,6 +157,7 @@ Adobe Campaign提供數種連接器，可讓您與外部應用程式通訊並連
 
 可以配置以下連接類型：
 
+* Azure突觸。 For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
 * 甲骨文。 For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
 * 內泰扎。 For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
 * SAP HANA。 For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
@@ -239,7 +243,7 @@ Teradata外 **** 部帳戶可讓您將Campaign例項連線至Teradata外部資�
 
 該 **[!UICONTROL Users]** 欄位允許您為每個用戶指定查詢節區。 您可以根據需要添加任意數量的鍵／值對，例如priority=1;workload=high。 如果用戶未分配查詢節區，則 **[!UICONTROL Default]** 將應用該欄位。
 
-有關的詳細信 **[!UICONTROL Query banding]**&#x200B;息，請參閱 [Teradata文檔](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw)。
+For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 ## Web Analytics外部帳戶 {#web-analytics-external-account}
 
