@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 通常，將目標儲存在清單中會標示工作流程的結束。 因此，預設情況下， **[!UICONTROL List update]** 活動不具有出站轉換。 勾選 **[!UICONTROL Generate an outbound transition]** 新增選項。
 
-## 範例：清單更新 {#example--list-update}
+## 範例： 清單更新 {#example--list-update}
 
 在以下範例中，清單更新活動會遵循查詢，以法國30歲以上的男性為目標。 清單最初會從查詢結果建立。 然後，每當從工作流程啟動時，就會更新它。 例如，它可定期用於促銷活動的定位促銷優惠。
 
@@ -72,6 +75,4 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ## 輸出參數 {#output-parameters}
 
-* groupId
-
-群組識別碼。
+* groupId: 群組識別碼。
