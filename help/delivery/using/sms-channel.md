@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3152'
 ht-degree: 2%
 
 ---
@@ -41,38 +41,13 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
 1. 指定連接器和消息類型的外部帳戶。
 
-   可用連接器包括： NetSize、通用SMPP（支援二進位模式的SMPP 3.4版）、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2和擴展通用SMPP。
+   請注意，從20.2版開始，將不建議使用下列連接器： NetSize、通用SMPP（支援二進位模式的SMPP 3.4版）、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2和iOS。 淘汰的功能仍然可用，但將不會進一步增強，也不支援。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
 
 1. 參考此外部帳戶的傳送範本。
 
-### 啟用外部帳戶 {#activating-an-external-account}
-
-外部帳戶清單可在Adobe Campaign檔案總管 **[!UICONTROL Platform]** 樹狀 **[!UICONTROL External accounts]** 結構的>節點中找到。
-
-* 例如，前往名為的預設帳戶 **[!UICONTROL NetSize mobile delivery]**。
-* 在頁籤 **[!UICONTROL General]** 中，選中該 **[!UICONTROL Enabled]** 框。
-
-   ![](assets/s_user_external_account_01.png)
-
-* 檢查是否 **[!UICONTROL Mobile]** 已為欄位選擇選 **[!UICONTROL Channel]** 項。
-* 在頁籤 **[!UICONTROL Mobile]** 中，從下拉清單中選擇一個連接器： NetSize、通用SMPP、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2或擴展通用SMPP。 有關擴展通用SMPP連接器的詳細資訊，請參閱 [建立SMPP外部帳戶部分](#creating-an-smpp-external-account) 。
-
-   ![](assets/s_user_external_account_connect_01.png)
-
-* 根據供應商提供的資訊配置連接器。 在以下範例中，運算子是NetSize。
-
-   ![](assets/s_user_external_account_param.png)
-
-* 在標籤 **[!UICONTROL Connector]** 中，預設會保 **[!UICONTROL Call Web Service]** 留啟動模式。
-
-   ![](assets/s_user_external_account_param_02.png)
-
-* 如果顯 **[!UICONTROL Connector]** 示頁籤，請指定連接器的訪問URL。 如果提供者是NetSize, **則該地址必須以netsize.jsp** 結尾。 對於所有其他連接器，URL地址以 **smpp34.jsp結束**。
-
 ### 建立SMPP外部帳戶 {#creating-an-smpp-external-account}
 
-如果您想使用SMPP通訊協定，也可以建立新的外部帳戶。
-
+若要將SMS傳送至行動電話，您首先需要建立SMPP外部帳戶。
 有關SMS通訊協定和設定的詳細資訊，請參閱此 [技術說明](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)。
 
 要執行此操作，請遵循下列步驟：
@@ -87,7 +62,11 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
    ![](assets/extended_smpp_connector.png)
 
-   此選 **[!UICONTROL Enable verbose SMPP traces in the log file]** 項允許您將所有SMPP流量轉儲到日誌檔案中。 必須啟用此選項，才能排除連接器故障，並與提供者所看到的流量進行比較。
+   >[!CAUTION]
+   >
+   > 從20.2版開始，舊版連接器將不再支援。 建議使用連 **[!UICONTROL Extended generic SMPP]** 接器。 有關如何遷移到建議連接器的詳細資訊，請參閱本 [頁](https://helpx.adobe.com/campaign/kb/sms-connector.html)。
+
+1. 此選 **[!UICONTROL Enable verbose SMPP traces in the log file]** 項允許您將所有SMPP流量轉儲到日誌檔案中。 必須啟用此選項，才能排除連接器故障，並與提供者所看到的流量進行比較。
 
 1. 請連絡您的SMS服務供應商，該服務供應商將向您說明如何從標籤填寫不同的外部帳戶 **[!UICONTROL Connection settings]** 欄位。
 
@@ -109,7 +88,7 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
    ![](assets/extended_smpp_transliteration.png)
 
-   如需詳細資訊，請參閱[本小節](#about-character-transliteration)。
+   如需詳細資訊，請參閱[本章節](#about-character-transliteration)。
 
 1. 在該選 **[!UICONTROL Throughput and delays]** 項卡中，可以指定每秒MT的出站消息（「MT」,「已終止移動」）的最大吞吐量。 如果您在對應欄位中輸入&quot;0&quot;，則吞吐量將無限制。
 
@@ -117,7 +96,7 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
 1. 在標籤 **[!UICONTROL Mapping of encodings]** 中，您可以定義編碼。
 
-   如需詳細資訊，請參閱[本小節](#about-text-encodings)。
+   如需詳細資訊，請參閱[本章節](#about-text-encodings)。
 
 1. 在標籤 **[!UICONTROL SMSC specificities]** 中，預設 **[!UICONTROL Send full phone number]** 會停用選項。 如果要遵守SMPP協定並僅將數字傳輸到SMS提供器(SMSC)的伺服器，請不要啟用它。
 
@@ -127,7 +106,7 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
 1. 如果您要設定連 **[!UICONTROL Extended generic SMPP]** 接器，可以設定自動回覆。
 
-   如需詳細資訊，請參閱[本小節](#automatic-reply)。
+   如需詳細資訊，請參閱[本章節](#automatic-reply)。
 
 ### 關於字元音譯 {#about-character-transliteration}
 
@@ -378,6 +357,7 @@ CR: 歸位
 
 如果您使用具有相同提供者帳戶的擴充通用SMPP連接器，有多個外部帳戶，可能會發生下列問題： 當傳送回覆至簡短程式碼時，可能會在您的任何外部帳戶連線上收到回覆。 因此，所發送的自動回覆不能是預期訊息。
 若要避免此情況，請根據您使用的提供者，套用下列其中一個解決方案：
+
 * 為每個外部帳戶建立一個提供程式帳戶。
 * 使用> **[!UICONTROL System type]** 標籤中的欄 **[!UICONTROL Mobile]** 位 **[!UICONTROL Connection settings]** 來區分每個簡短代碼。 請向您的供應商洽詢每個帳戶的不同值。
 
@@ -393,19 +373,19 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點�
 
 為了保留原生傳送範本，建議您先複製範本，然後加以設定。
 
-在以下示例中，我們建立了一個模板，以通過先前啟用的NetSize帳戶發送消息。 操作步驟：
+在以下範例中，我們建立範本，以透過先前啟用的SMPP帳戶傳送訊息。 操作步驟：
 
 1. 轉至節 **[!UICONTROL Delivery templates]** 點。
 1. 在範本上按一 **[!UICONTROL Send to mobiles]** 下滑鼠右鍵，然後選取 **[!UICONTROL Duplicate]**。
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. 變更範本的標籤。
+1. 變更範本的標籤，例如 **傳送至行動裝置(SMPP)**。
 
    ![](assets/s_user_mobile_template_change_02.png)
 
-1. 按一下 **[!UICONTROL Properties]**.
-1. 在標 **[!UICONTROL General]** 簽中，選擇與您配置的外部帳戶對應的路由模式，例如 **[!UICONTROL NetSize mobile delivery]**。
+1. 按一下「**[!UICONTROL Properties]**」。
+1. 在標籤 **[!UICONTROL General]** 中，選擇與您在前面步驟中建立的外部帳戶相對應的路由模式。
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -426,11 +406,11 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點�
 >本節將介紹有關建立交付的全 [局概念](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 1. 建立新的傳送，例如從「傳送」控制面板建立。
-1. 選取您先前建立 **[!UICONTROL Send to mobiles (NetSize)]** 的傳送範本。 如需詳細資訊，請參閱「變更 [傳送範本」一節](#changing-the-delivery-template) 。
+1. 選取您先前建 **立的傳送範本「傳送至行動裝置(SMPP)** 」。 如需詳細資訊，請參閱「變更 [傳送範本」一節](#changing-the-delivery-template) 。
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳送。 如需詳細資訊，請參閱[本小節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用標籤、程式碼和說明來識別您的傳送。 如需詳細資訊，請參閱[本章節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 1. 按一下 **[!UICONTROL Continue]** 確認此資訊並顯示消息配置窗口。
 
 ## 定義SMS內容 {#defining-the-sms-content}
@@ -488,7 +468,7 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點�
 
 可以使用以下選項：
 
-* **傳送者位址** （僅適用於NetSize連接器和SMPP連接器）: 可讓您使用字母數字字元字串（以十一個字元為限），個人化傳送者的名稱。 該欄位不能只由數字組成。 您可以定義條件，例如根據收件者的區域代碼顯示不同的名稱：
+* **發件人地址**: 可讓您使用字母數字字元字串（以11個字元為限），個人化傳送者的名稱。 該欄位不能只由數字組成。 您可以定義條件，例如根據收件者的區域代碼顯示不同的名稱：
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -554,7 +534,7 @@ InSMS架構包含與傳入SMS相關的資訊。 這些欄位的說明可透過de
    >
    >以下欄位是NetSize專用的。
    >
-   >如果使用中的運算子不是NetSize，則這些欄位會視為空白。
+   >如果使用中的運算子不是NetSize，則這些欄位會被視為空白。
 
 * **別名**: 傳入消息的別名。
 * **分隔符**: 別名和消息正文之間的分隔符。
