@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 
 ## 在Windows電腦上安裝 {#installing-on-a-windows-machine}
 
-若要在Windows上安裝並設定SpamAssassin以啟用與Adobe Campaign的整合，請套用下列步驟：
+若要在Windows上安裝並設定SpamAssassin，以便與Adobe Campaign整合，請套用下列步驟：
 
 1. 安裝SpamAssassin
 1. 將SpamAssassin整合至Adobe Campaign
@@ -58,7 +58,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 
 1. 使用您的用戶憑 [據連接到](http://support.neolane.net) Extranet門戶。
 1. 前往下載 **中心** ，然後瀏覽頁面以尋找「工 **具** 」區段。
-1. 下載 **Spam Assassin（Windows安裝）(1.0)檔案** 。
+1. 下載 **Neolane Spam Assassin（Windows安裝）(2.0)** (neolane_spamassassin.2.0.zip)。
 1. 將此檔案複製至Adobe Campaign伺服器，然後解壓縮。
 
    >[!NOTE]
