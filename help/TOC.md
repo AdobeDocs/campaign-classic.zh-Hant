@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 9%
+source-wordcount: '2100'
+ht-degree: 10%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 9%
 + 發行說明 {#release-notes}
    + [最新版本](rn/using/latest-release.md)
    + 舊版 {#previous-releases}
+      + [版本20.1](rn/using/release--20-1.md)
       + [版本19.2](rn/using/release--19-2.md)
       + [版本19.1](rn/using/release--19-1.md)
       + [版本18.10](rn/using/release--18-10.md)
@@ -32,7 +33,7 @@ ht-degree: 9%
       + [隱私權和建議](platform/using/privacy-and-recommendations.md)
       + [啟動 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign 工作區](platform/using/adobe-campaign-workspace.md)
-      + 常見問答集 {#faq}
+      + 常見問答集{#faq}
          + [常見問題](platform/using/common-questions.md)
          + [重要概念](platform/using/faq-key-concepts.md)
          + [觀眾](platform/using/faq-audiences.md)
@@ -127,6 +128,7 @@ ht-degree: 9%
       + [條件式內容](delivery/using/conditional-content.md)
       + [個人化優惠券](delivery/using/personalized-coupons.md)
       + [產生個人化PDF檔案](delivery/using/generating-personalized-pdf-documents.md)
+      + [自訂表情符號清單](delivery/using/customizing-emoticon-list.md)
    + 使用種子地址 {#using-seed-addresses}
       + [關於種子地址](delivery/using/about-seed-addresses.md)
       + [建立種子地址](delivery/using/creating-seed-addresses.md)
@@ -526,6 +528,7 @@ ht-degree: 9%
       + [交易式訊息預覽](message-center/using/transactional-message-preview.md)
       + [傳送證明](message-center/using/sending-a-proof.md)
       + [範本發佈](message-center/using/template-publication.md)
+      + [範本取消發佈](message-center/using/template-unpublication.md)
    + 事件處理 {#event-processing}
       + [關於事件處理](message-center/using/about-event-processing.md)
       + [事件集合](message-center/using/event-collection.md)
@@ -593,7 +596,7 @@ ht-degree: 9%
       + [部署實例](installation/using/deploying-an-instance.md)
       + [安裝Campaign Classic標準套件](installation/using/installing-campaign-standard-packages.md)
    + 其他配置 {#additional-configurations}
-      + [設定促銷活動伺服器](installation/using/configuring-campaign-server.md)
+      + [設定 Campaign 伺服器](installation/using/configuring-campaign-server.md)
       + [通過LDAP連接](installation/using/connecting-through-ldap.md)
       + [技術電子郵件設定](installation/using/email-deliverability.md)
       + [電子郵件封存](installation/using/email-archiving.md)
@@ -603,6 +606,7 @@ ht-degree: 9%
       + [互動——資料緩衝](installation/using/interaction---data-buffer.md)
    + 附錄 {#appendices}
       + [伺服器配置檔案](installation/using/the-server-configuration-file.md)
+      + [促銷活動網路端點](installation/using/campaign-network-endpoints.md)
       + [命令行](installation/using/command-lines.md)
       + [建立新例項](installation/using/creating-new-instances.md)
       + [Campaign Classic選項清單](installation/using/configuring-campaign-options.md)
@@ -625,7 +629,7 @@ ht-degree: 9%
       + [復原](production/using/restoration.md)
       + [複製環境](production/using/duplicating-environments.md)
       + [資料庫清除工作流程](production/using/database-cleanup-workflow.md)
-   + 更新Adobe Campaign {#updating-adobe-campaign}
+   + 更新 Adobe Campaign {#updating-adobe-campaign}
       + [簡介](production/using/introduction.md)
       + [升級](production/using/upgrading.md)
       + [切換為Unicode](production/using/switching-to-unicode.md)
@@ -657,7 +661,7 @@ ht-degree: 9%
    + Data model {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
-      + [最佳作法](configuration/using/data-model-best-practices.md)
+      + [最佳實務](configuration/using/data-model-best-practices.md)
    + 架構參考 {#schema-reference}
       + [關於架構參考](configuration/using/about-schema-reference.md)
       + [架構結構](configuration/using/schema-structure.md)
