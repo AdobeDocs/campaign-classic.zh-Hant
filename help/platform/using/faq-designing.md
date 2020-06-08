@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 74%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 傳遞設定和參數可以儲存在傳遞範本中以便重複使用。
 
-按一下這裡以了解更多資訊。
+[按一下這裡以了解更多資訊](../../delivery/using/about-templates.md)。
 
 ## 在 Campaign 中可以輕鬆地匯入現有的 HTML 並製作電子郵件嗎? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
