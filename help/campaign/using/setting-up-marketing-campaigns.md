@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -145,11 +145,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-您可以使用計畫建立嚮導自動填寫所有執行日期。 若要這麼做，請按一下 **[!UICONTROL Complete the execution schedule...]** 表格上方的連結。
-
-![](assets/s_ncs_user_op_template_recur_planning_wz.png)
-
-執行調度的配置模式與工作流的 **[!UICONTROL Scheduler]** 對象一致。 如需詳細資訊，請參閱[本小節](../../workflow/using/architecture.md)。
+執行調度的配置模式與工作流的 **[!UICONTROL Scheduler]** 對象一致。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。
 
 >[!IMPORTANT]
 >
