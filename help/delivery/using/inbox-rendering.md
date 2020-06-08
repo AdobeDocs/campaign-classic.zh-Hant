@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
+workflow-type: tm+mt
+source-wordcount: '801'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
 
 為此，Adobe Campaign運用 [Litmus](https://litmus.com/email-testing) web電子郵件測試解決方案來擷取轉譯，並在專用報表中提供。 這樣，您就可以在接收郵件的不同上下文中預覽發送的郵件，並檢查主要台式機和應用程式的相容性。
 
-Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電子郵件內容建立者在超過70種電子郵件轉譯器（例如Gmail收件匣或Apple mail用戶端）中預覽其訊息內容。
+Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電子郵件內容建立者在超過70種電子郵件轉譯器（例如Gmail收件匣或Apple Mail用戶端）中預覽其訊息內容。
 
 Adobe Campaign中可轉換 **Inbox的行動裝置、訊息傳送和網路郵件用戶端列在** Litmus網站 [(按一下「](https://litmus.com/email-testing) 檢視所有電子郵件用戶端 ****」)。
 
@@ -36,7 +39,7 @@ Adobe Campaign中可轉換 **Inbox的行動裝置、訊息傳送和網路郵件�
 >
 >在傳送中測試個人化時，不需要產生收件匣。 您可以使用Adobe Campaign工具（例如校樣）來檢查個 **[!UICONTROL Preview]** 人 [化](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-## 啟用收件箱呈現{#activating-inbox-rendering}
+## 啟用收件箱呈現 {#activating-inbox-rendering}
 
 對於代管和混合式用戶端，Adobe技術支援和顧問會在您的例項上設定「收件匣」轉譯。 如需詳細資訊，請洽詢您的Adobe銷售代表。
 
@@ -45,11 +48,11 @@ Adobe Campaign中可轉換 **Inbox的行動裝置、訊息傳送和網路郵件�
 1. 透過> **[!UICONTROL Inbox rendering (IR)]** >功能表 **[!UICONTROL Tools]** 安裝 **[!UICONTROL Advanced]** 套件 **[!UICONTROL Import package]** 。 如需詳細資訊，請參閱安 [裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
 1. 透過> **[!UICONTROL Administration]** >節點設定HTTP類型的外部 **[!UICONTROL Platform]****[!UICONTROL External Accounts]** 帳戶。 如需詳細資訊，請參 [閱建立外部帳戶](../../platform/using/external-accounts.md#creating-an-external-account)。
 1. 按如下方式設定外部帳戶參數：
-   * **[!UICONTROL Label]**:傳遞性伺服器資訊
-   * **[!UICONTROL Internal name]**:deliverabilityInstance
-   * **[!UICONTROL Type]**:HTTP
-   * **[!UICONTROL Server]**:https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**:無
+   * **[!UICONTROL Label]**: 傳遞性伺服器資訊
+   * **[!UICONTROL Internal name]**: deliverabilityInstance
+   * **[!UICONTROL Type]**: HTTP
+   * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
+   * **[!UICONTROL Encryption]**: 無
    * 勾選 **[!UICONTROL Enabled]** 選項。
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
@@ -86,7 +89,7 @@ Adobe Campaign中可轉換 **Inbox的行動裝置、訊息傳送和網路郵件�
 >
 >Token帳戶是每個個別轉譯，而非整個「收件匣」轉譯報表，這表示：
 >
->* 每次產生「收件匣」轉譯報表時，會扣除每個訊息傳送用戶端一個代號：一個Outlook 2000轉譯的Token、一個Outlook 2010轉譯的Token、一個Apple Mail 9轉譯的Token，等等。
+>* 每次產生「收件匣」轉譯報表時，會扣除每個訊息傳送用戶端一個代號： 一個Outlook 2000轉譯的Token、一個Outlook 2010轉譯的Token、一個Apple Mail 9轉譯的Token，等等。
 >* 對於相同的傳送，如果您再次產生「收件匣」轉譯，則可用的Token數量會依產生的轉譯數量再次減少。
 >
 
@@ -97,12 +100,6 @@ Adobe Campaign中可轉換 **Inbox的行動裝置、訊息傳送和網路郵件�
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
 通常，「收件匣」轉換功能會用來測試新設計之電子郵件的HTML架構。 每個轉譯最多需要70個Token（視一般測試的環境數量而定）。 不過，在某些情況下，您可能需要多個收件匣轉換報表來完整測試傳送。 因此，可能需要更多的Token才能完成數項檢查。
-
->[!NOTE]
->
->如果您是Litmus客戶，則可以使用您自己的Litmus帳戶來布建和使用Adobe Campaign中的收件匣轉換。 如需詳細資訊，請洽詢您的Adobe銷售代表。
->
->請注意，變更您的Litmus認證可能會在Adobe Campaign中造成驗證問題。
 
 ## 訪問收件箱呈現報告 {#accessing-the-inbox-rendering-report}
 
@@ -129,7 +126,7 @@ Adobe Campaign中可轉換 **Inbox的行動裝置、訊息傳送和網路郵件�
 
 ## 收件匣轉換報表 {#inbox-rendering-report}
 
-此報告會在收件者看到收件箱時顯示它們。 轉譯會因收件者開啟電子郵件傳送的方式而有所不同：在瀏覽器、行動裝置上，或透過電子郵件應用程式。
+此報告會在收件者看到收件箱時顯示它們。 轉譯會因收件者開啟電子郵件傳送的方式而有所不同： 在瀏覽器、行動裝置上，或透過電子郵件應用程式。
 
 所 **[!UICONTROL General summary]** 述消息以清單和通過圖形顏色編碼表示來呈現接收的消息、不想要的（垃圾郵件）、未接收的或待處理的接收的數量。
 
