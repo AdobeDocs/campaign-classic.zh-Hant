@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -79,21 +79,21 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >當傳送是工作流程的一部分時，您可以使用臨時工作流程表格中的資料。 此資料會分組在功能表 **[!UICONTROL Target extension]** 中。 如需詳細資訊，請參閱[本小節](../../workflow/using/data-life-cycle.md#target-data)。
+   >當傳送是工作流程的一部分時，您可以使用臨時工作流程表格中的資料。 此資料會分組在功能表 **[!UICONTROL Target extension]** 中。 如需詳細資訊，請參閱[本章節](../../workflow/using/data-life-cycle.md#target-data)。
 
 ## 最佳化個人化 {#optimizing-personalization}
 
-您可以使用專屬選項來最佳化個人化： **[!UICONTROL Prepare the personalization data with a workflow]**，可在傳送屬 **[!UICONTROL Analysis]** 性的標籤中取用。
+您可以使用專屬選項來最佳化個人化： **[!UICONTROL Prepare the personalization data with a workflow]**，可在傳送屬 **[!UICONTROL Analysis]** 性的標籤中取用。 如需分析傳送的詳細資訊，請參 [閱本節](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 在傳送分析期間，此選項會自動建立並執行將所有連結至目標的資料儲存在暫存表格中的工作流程，包括FDA中連結之表格的資料。
 
-勾選此選項，可大幅提升執行個人化的效能。
+在處理大量資料時，檢查此選項可大幅改善傳送分析效能，尤其是當個人化資料來自透過FDA的外部表格時。 有關詳細資訊，請參 [閱訪問外部資料庫(FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data)。
 
 例如，如果您在傳送訊息給大量收件者時，在訊息內容中使用許多個人化欄位和／或個人化區塊，遇到效能問題，這個選項可加速個人化的處理，進而加速訊息的傳送。
 
 若要使用此選項，請遵循下列步驟：
 
-1. 建立促銷活動。 如需詳細資訊，請參閱[本小節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 建立促銷活動。 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在促銷 **[!UICONTROL Targeting and workflows]** 活動的標籤中，新增「查 **詢** 」活動至工作流程。 For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. 新增活 **[!UICONTROL Email delivery]** 動至工作流程並開啟它。 For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. 轉到的 **[!UICONTROL Analysis]** 頁籤並 **[!UICONTROL Delivery properties]** 選擇選 **[!UICONTROL Prepare the personalization data with a workflow]** 項。
