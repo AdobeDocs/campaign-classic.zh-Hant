@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ ht-degree: 0%
 * 如果附件與事務關聯（如上述示例方案中所述），則附件可能包含在客戶流程期間生成的動態資料。
 * 附加PDF檔案可最佳化安全性，因為您可以加密檔案並透過HTTPS傳送。
 
+>[!NOTE]
+>
+>為避免效能問題，如果您將即時從個人化URL下載的影像加入附件，預設每個影像大小不應超過100,000位元組。 此建議的臨界值可從「促銷活 [動傳統」選項清單中設定](../../installation/using/configuring-campaign-options.md#delivery)。
+
 ## 建議 {#important-notes}
 
 在實施此藍本之前，請仔細閱讀以下准則：
@@ -53,6 +57,10 @@ ht-degree: 0%
 * 由於Adobe以外無法直接存取「交易訊息」例項或伺服器，因此沒有標準方式將這些檔案推送至這些伺服器（無FTP存取）。
 * 使用事務性消息傳遞實例上的磁碟空間來儲存任何類型的檔案（甚至是附件）在合約中是不正確的。
 * 您需要使用另一個聯機磁碟系統來托管這些檔案。 您需要此系統的FTP存取權，而且您必須能夠寫入和刪除檔案。
+
+>[!NOTE]
+>
+>為避免效能問題，建議每個電子郵件不要包含多個附件。 建議的臨界值可從「促銷活 [動傳統」選項清單中設定](../../installation/using/configuring-campaign-options.md#delivery)。
 
 ## 實作 {#implementation}
 
