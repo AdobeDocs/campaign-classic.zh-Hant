@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -246,7 +246,7 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. 開啟傳送屬性。
-1. 前往標籤 **[!UICONTROL Web Analytics]** 並選取先前建立的外部帳戶。 請參閱 [步驟2: 在促銷活動中建立外部帳戶](#step-2--create-the-external-account-in-campaign))。
+1. 前往標籤 **[!UICONTROL Web Analytics]** 並選取先前建立的外部帳戶。 請參閱 [步驟2: 在Campaign中建立外部帳戶](#step-2--create-the-external-account-in-campaign)。
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
