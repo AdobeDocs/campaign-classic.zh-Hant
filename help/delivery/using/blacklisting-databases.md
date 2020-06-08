@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 這些資料庫稱為RBL（即時黑洞清單），並透過DNS機制進行查詢。 RBL有三種類型：
 
-* 依IP位址：列出發送垃圾郵件或可能中繼垃圾郵件的IP地址。
-* 按發件人域：列出傳送垃圾郵件或設定錯誤的傳送者網域（彈回數郵件位址的完整網域）。
-* 依網域：列出在垃圾郵件內容所含連結和影像的URL中找到的網域（在註冊者註冊的高階網域）。 在Adobe Campaign中，通常要考慮的網域是用於追蹤的位址。
+* 依IP位址： 列出發送垃圾郵件或可能中繼垃圾郵件的IP地址。
+* 按發件人域： 列出傳送垃圾郵件或設定錯誤的傳送者網域（彈回數郵件位址的完整網域）。
+* 依網域： 列出在垃圾郵件內容所含連結和影像的URL中找到的網域（在註冊者註冊的高階網域）。 在Adobe Campaign中，通常要考慮的網域是用於追蹤的位址。
 
 以下是最廣泛使用的RBL清單。 如需更完整的清單，請參閱https://www.dnsstuff.com/ [](https://tools.dnsstuff.com/) （「垃圾郵件黑名單查閱」表單）。
 
@@ -52,7 +55,7 @@ source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 * **SURBL**
 
-   請參閱 [https://www.surbl.org/](https://www.surbl.org/)
+   請參閱 [http://www.surbl.org/](http://www.surbl.org/)
 
    SURBL可識別定期出現在垃圾訊息中的網站。 如果您的網域出現在此清單中，可能會大幅影響您的傳遞能力。 您應立即通知傳遞性服務和Adobe Campaign支援。
 
