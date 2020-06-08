@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
 >
 >您只能安裝與授權合約中提及的選項相對應的套件。
 >
->安裝軟體包後，便無法卸載它。 安裝新套件可能會影響您的所有平台：在最終部署之前，必須經過測試和驗證。
+>安裝軟體包後，便無法卸載它。 安裝新套件可能會影響您的所有平台： 在最終部署之前，必須經過測試和驗證。
 
 要安裝標準軟體包：
 
@@ -42,7 +45,7 @@ source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
    >如果套件呈灰色，則無法安裝它。 這表示已安裝或與您的實例不相容。 例如，您無法在行銷例 **項上安裝Mid-sourcing平台** (Mid-sourcing platform)套件。 您可在下表中找到此資訊。
 1. 按一下 **[!UICONTROL Next]**，然 **[!UICONTROL Start]** 後啟動軟體包安裝。
 
-   安裝軟體包後，進度欄顯示 **100%** ，您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**。
+   安裝軟體包後，進度欄顯示 **100%** ，您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** 安裝窗口。
 
@@ -50,7 +53,7 @@ source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
 
 ### 現成包清單 {#list-of-standard-packages}
 
-下表列出所有標準套件及其說明、可安裝的例項類型（行銷、中端等）及其他資訊。
+下表列出所有標準套件及其說明、可安裝的例項類型（行銷、中端等） 及其他資訊。
 
 <table> 
  <thead> 
@@ -145,13 +148,7 @@ source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
    <td> 使用Adobe Campaign的電話頻道傳送遞送。<br /> </td> 
    <td> 全部<br /> </td> 
    <td> 可選</td> 
-  </tr> 
-  <tr> 
-   <td> 傳真頻道<br /> </td> 
-   <td> 使用Adobe Campaign的傳真管道傳送傳送。<br /> </td> 
-   <td> 全部<br /> </td> 
-   <td> 可選</td> 
-  </tr> 
+  </tr>
   <tr> 
    <td> 行動應用程式頻道<br /> </td> 
    <td> 使用Adobe Campaign平台透過應用程式將個人化通知傳送至iOS和Android終端機。 <br /> </td> 
@@ -214,7 +211,7 @@ source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
   </tr> 
   <tr> 
    <td> 中央／本地行銷（分佈式行銷）<br /> </td> 
-   <td> 在中央實體（總部、行銷部門等）之間實施合作宣傳及當地實體（銷售點、地區代理等）。<br /> </td> 
+   <td> 在中央實體（總部、行銷部門等）之間實施合作宣傳 及當地實體（銷售點、地區代理等）。<br /> </td> 
    <td> 行銷 </td> 
    <td> 選購，了 <a href="../../campaign/using/about-distributed-marketing.md">解詳情</a> </td> 
   </tr> 
