@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2541'
+ht-degree: 3%
 
 ---
 
@@ -127,7 +130,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    若要這麼做，請按一下連 **[!UICONTROL Synchronizing enumerations...]** 結並選取符合CRM列舉的Adobe Campaign列舉。
 
-   您可以將Adobe Campaign枚舉的所有值取代為CRM的值：若要這麼做，請在 **[!UICONTROL Yes]** 欄中選 **[!UICONTROL Replace]** 取。
+   您可以將Adobe Campaign枚舉的所有值取代為CRM的值： 若要這麼做，請在 **[!UICONTROL Yes]** 欄中選 **[!UICONTROL Replace]** 取。
 
    ![](assets/crm_connectors_sfdc_enum.png)
 
@@ -149,7 +152,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. 開啟配置嚮導：Adobe Campaign會自動顯示Oracle資料模型的表格。 選擇要收集的表。
+1. 開啟配置嚮導： Adobe Campaign會自動顯示Oracle資料模型的表格。 選擇要收集的表。
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -187,7 +190,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    ![](assets/crm_connectors_msdynamics_01_4.png)
 
-1. 選擇部 **署類型**:或 **[!UICONTROL On-premise]**, **[!UICONTROL Office 365]****[!UICONTROL Web API]**&#x200B;取決於要配置的連接器。
+1. 選擇部 **署類型**: **[!UICONTROL On-premise]**、 **[!UICONTROL Office 365]** 或 **[!UICONTROL Web API]**，視您要設定的連接器而定。
 
    Adobe Campaign Classic支援Dynamics 365 REST介面與OAuth通訊協定，以進行驗證。
 
@@ -207,7 +210,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
-   選擇要恢復的表。
+1. 選擇要恢復的表。
 
    ![](assets/crm_connectors_msdynamics_03.png)
 
@@ -306,7 +309,7 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 >
 >此注釋僅適用於一般活 **[!UICONTROL CRM Connector]** 動。 對於其他CRM活動，此程式是自動的。
 >
->此選項必須手動建立並填入至 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** >下 **[!UICONTROL Options]**。 它必須是文字選項，其值必須符合下列格式：yyyy/ **MM/dd hh:mm:ss**。
+>此選項必須手動建立並填入至 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** >下 **[!UICONTROL Options]**。 它必須是文字選項，其值必須符合下列格式： **yyyy/MM/dd hh:mm:ss**。
 > 
 >您必須手動更新此選項，才能進一步匯入。
 
@@ -314,19 +317,19 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
 依預設，會使用下列欄位（依指定順序）:
 
-* 針對Microsoft Dynamics:已 **修改**,
-* 對於Oracle On Demand:上次 **更新**、 **修改日期**、 **上次登入**、
-* 若是Salesforce.com:LastModifiedDate **、** SystemModstamp ****。
+* 針對Microsoft Dynamics: **已修改**,
+* 對於Oracle On Demand: **LastUpdated**、 **ModifiedDate**、 **LastLoggedIn**、
+* 若是Salesforce.com: **LastModifiedDate**、 **SystemModstamp**。
 
 啟用選 **[!UICONTROL Automatic index]** 項會產生三個變數，這些變數可透過類型活動用於同步 **[!UICONTROL JavaScript code]** 工作流程。 這些活動包括：
 
-* **vars.crmOptionName**:代表包含上次匯入日期的選項名稱。
-* **vars.crmStartImport**:表示上次資料恢復的開始日期（包括）。
-* **vars.crmEndDate**:代表上次資料復原的結束日期（已排除）。
+* **vars.crmOptionName**: 代表包含上次匯入日期的選項名稱。
+* **vars.crmStartImport**: 表示上次資料恢復的開始日期（包括）。
+* **vars.crmEndDate**: 代表上次資料復原的結束日期（已排除）。
 
    >[!NOTE]
    >
-   >這些日期以下列格式顯示：yyyy/ **MM/dd hh:mm:ss**。
+   >這些日期以下列格式顯示： **yyyy/MM/dd hh:mm:ss**。
 
 #### 篩選資料 {#filtering-data}
 
@@ -391,7 +394,7 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
    >[!NOTE]
    >
-   >對於指定欄位，如果CRM端未定義相符項目，則無法更新值：會直接插入CRM。
+   >對於指定欄位，如果CRM端未定義相符項目，則無法更新值： 會直接插入CRM。
 
    如有必要，請透過欄的下拉式清單變更資料格 **[!UICONTROL Conversion]** 式。 可能的轉換類型會以資料格式 [詳細說明](#data-format)。
 
@@ -413,9 +416,9 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
 其他可能的轉換包括：
 
-* **[!UICONTROL Date only]**:此模式會刪除「日期+時間」類型欄位。
-* **[!UICONTROL Without time offset]**:此模式取消在預設模式下應用的時區管理。
-* **[!UICONTROL Copy/Paste]**:此模式使用原始資料，例如字串（無轉換）。
+* **[!UICONTROL Date only]**: 此模式會刪除「日期+時間」類型欄位。
+* **[!UICONTROL Without time offset]**: 此模式取消在預設模式下應用的時區管理。
+* **[!UICONTROL Copy/Paste]**: 此模式使用原始資料，例如字串（無轉換）。
 
 #### 錯誤處理 {#error-processing}
 
@@ -439,8 +442,8 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
 輸 **[!UICONTROL Reject]** 出轉換可讓您存取包含與錯誤訊息和程式碼相關的特定欄的輸出架構。 這些欄包括：
 
-* 對於Oracle On Demand: **errorLogFilename** （Oracle端的日誌檔案名）、 **errorCode** （錯誤代碼）、 **errorSymbol** （錯誤符號，與錯誤代碼不同）、 **** errorMessageDescription（錯誤上下文的說明）。
-* 若是Salesforce.com: **errorSymbol** (error symbol **，不同於錯誤代碼),** errorMessage（錯誤上下文的說明）。
+* 對於Oracle On Demand: **errorLogFilename** （Oracle端的日誌檔案名）、 **errorCode** （錯誤代碼）、 **errorSymbol** （錯誤符號，與錯誤代碼不同）、 **errorMessage** （錯誤上下文的說明）。
+* 若是Salesforce.com: **errorSymbol** (error symbol **, different of the error code),** errorMessage(description of the error context)。
 
 ### 導入在CRM中刪除的對象 {#importing-objects-deleted-in-the-crm}
 
