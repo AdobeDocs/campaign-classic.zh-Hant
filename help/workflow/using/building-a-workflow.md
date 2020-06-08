@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1631'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 * 存取並建立技術工作流程，請參閱技 [術工作流程](#technical-workflows)
 * 使用範本建立工作流程，請參閱工 [作流程範本](#workflow-templates)
 
-## 建立新工作流程 {#creating-a-new-workflow}
+## Creating a new workflow {#creating-a-new-workflow}
 
 從訪問 **[!UICONTROL Explorer]**&#x200B;工作流資料夾。 依預設，您可以使 **[!UICONTROL Profiles and Targets]** 用> **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**。
 
@@ -91,8 +91,6 @@ ht-degree: 0%
 >[!CAUTION]
 >
 >您可以複製和貼上相同工作流程中的活動。 不過，我們不建議跨不同的工作流程複製貼上活動。 某些附加至活動（例如「傳送」和「排程器」）的設定，在執行目標工作流程時可能會導致衝突和錯誤。 我們建議您改為複製 **工作流程** 。 如需詳細資訊，請參閱「復 [制工作流程」](#duplicating-workflows)。
-
-### 其他版面選項 {#additional-layout-options}
 
 您可以使用下列元素變更圖表的顯示和版面配置：
 
