@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+source-git-commit: e488e1771fe4d07132844900f41f5f4f09fa9438
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 2%
 
 ---
 
@@ -96,10 +99,6 @@ Adobe Experience Cloud說明入口網站會詳細說明組織管 [理和連結Ad
   <tr> 
    <td> <strong>Adobe Analytics —— 資料連接器</strong><br /> </td> 
    <td> <strong>資料連接器</strong> （先前稱為Adobe Genesis）可讓Adobe Campaign和Adobe Analytics透過與電子郵件促銷活動後使用者行為相關的區段進行互動。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動指標和屬性傳送至Adobe Analytics —— 資料連接器。<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">進一步瞭解</a> 「促銷活動——資料連接器」整合。</p><br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>Adobe Campaign Standard</strong> （Prime優惠）<br /> </td> 
-   <td> 可讓您將資料複製至 <strong>Campaign Standard</strong>，將兩個應用程式的最佳組合在一起。 Campaign Classic v7提供進階工具來管理主要行銷資料庫。 從Campaign Classic v7複製資料可讓Campaign Standard在使用者友好的環境中運用豐富的資料。<br /><p> <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">進一步瞭解</a> Adobe Campaign Classic - Adobe Campaign Standard整合。</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
