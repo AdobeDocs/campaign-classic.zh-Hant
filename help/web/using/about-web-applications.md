@@ -15,20 +15,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
+source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 1%
 
 ---
 
 
 # 關於Web應用程式{#about-web-applications}
 
-Adobe Campaign可讓您建立和發佈動態互動式網頁應用程式，其中包含資料庫的資料和符合連線使用者權限的內容。 您可以建立頁面，如外部網上的編輯表單，或通知表單，包括來自資料庫的資料，以及表、圖表、輸入表單等。 此功能可讓您設計並張貼網頁，讓使用者可在其中查閱或輸入資訊。
+Adobe Campaign可讓您建立和發佈動態互動式網頁應用程式，其中包含資料庫的資料和符合連線使用者權限的內容。
+
+您可以建立頁面，如外部網上的編輯表單，或通知表單，包括來自資料庫的資料，以及表、圖表、輸入表單等。 此功能可讓您設計並張貼網頁，讓使用者可在其中查閱或輸入資訊。
 
 這可以是包含預先載入Adobe Campaign資料庫中資訊之資料的訂閱表單，如下所示：
 
 ![](assets/webapp_form_sample.png)
 
 本章概述如何管理Web應用程式。
+
+>[!NOTE]
+>
+>請參閱「安 [全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html) 」，瞭解如何最佳化Web應用程式的安全性。
 
 >[!CAUTION]
 >
@@ -45,7 +54,7 @@ Adobe Campaign中的網頁應用程式可讓您存取下列功能：
 * 根據答案有條件顯示調查欄位。 For more on this, refer to this [page](../../web/using/form-rendering.md#defining-fields-conditional-display).
 * 隨機顯示問題。 For more on this, refer to this [page](../../web/using/building-a-survey.md#adding-questions).
 * 條件式頁面顯示。 For more on this, refer to this [page](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
-* 驗證前檢查資訊，視預期的資料類型（編號、電子郵件位址、日期等）而定和必填欄位。 For more on this, refer to this [page](../../web/using/form-rendering.md#defining-control-settings).
+* 驗證前檢查資訊，視預期的資料類型（編號、電子郵件位址、日期等）而定 和必填欄位。 For more on this, refer to this [page](../../web/using/form-rendering.md#defining-control-settings).
 * 電子郵件邀請或通知。 For more on this, refer to this [page](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
 * 錯誤和結束訊息的個人化。 For more on this, refer to this [page](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
 * 影像、視訊、超文字連結、驗證碼等的使用。 For more on this, refer to this [page](../../web/using/editing-content.md).
@@ -53,7 +62,7 @@ Adobe Campaign中的網頁應用程式可讓您存取下列功能：
 
 選用的 **Survey** 建立模組提供下列額外功能：
 
-* 資料庫的動態擴展：建立未包含在初始資料範本中的回應。 For more on this, refer to this [page](../../web/using/managing-answers.md#storing-collected-answers).
+* 資料庫的動態擴展： 建立未包含在初始資料範本中的回應。 For more on this, refer to this [page](../../web/using/managing-answers.md#storing-collected-answers).
 * 產生專用報表。 For more on this, refer to this [page](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 與Web應用程式相比，調查具有簡化的圖形介面，並減少編輯控制項的數量。
@@ -70,7 +79,7 @@ Adobe Campaign中的網頁應用程式可讓您存取下列功能：
 
 1. 建立內容（欄位、清單、表格、圖形等）。
 
-   您也可以檢視詳細說明表單可用欄位的章節：這些欄位也適用於Web應用程式。 本頁提供此 [資訊](../../web/using/adding-fields-to-a-web-form.md)。
+   您也可以檢視詳細說明表單可用欄位的章節： 這些欄位也適用於Web應用程式。 本頁提供此 [資訊](../../web/using/adding-fields-to-a-web-form.md)。
 
 1. 根據需要，您可以添加預載、測試和保存步驟，並配置訪問控制系統（主要在外聯網出版物的框架內）。
 1. 發佈網路應用程式，以便在外部網路或Adobe Campaign中提供。
@@ -81,8 +90,8 @@ Web應用程式是透過與標籤 **[!UICONTROL Web Applications]** 中的連結
 
 Web應用程式會儲存在Adobe **[!UICONTROL Resources > Online > Web Applications]** Campaign樹狀結構的節點中。 配置在以下資料夾中劃分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**:包含Web表單簡報（應用程式和調查）的轉換範本。 範本可讓您產生表單。 它也使用CSS樣式表。 此樣式表可以在模板級別過載。 有關詳細資訊，請參見[此頁面](../../web/using/form-rendering.md#selecting-the-form-rendering-template)。
-* **[!UICONTROL Resources > Templates > Web application templates]**:包含表單範本。 若要建立表單或Web應用程式，您必須從範本開始。
+* **[!UICONTROL Administration > Configuration > Form renderings]**: 包含Web表單簡報（應用程式和調查）的轉換範本。 範本可讓您產生表單。 它也使用CSS樣式表。 此樣式表可以在模板級別過載。 有關詳細資訊，請參見[此頁面](../../web/using/form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Resources > Templates > Web application templates]**: 包含表單範本。 若要建立表單或Web應用程式，您必須從範本開始。
 
 ## 網頁應用程式範本 {#web-application-templates}
 
