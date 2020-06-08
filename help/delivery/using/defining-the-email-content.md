@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >個人化欄位的使用會顯示在「關於個 [人化」中](../../delivery/using/about-personalization.md)。
+
+您也可以透過快顯視窗，將表情符號插入 **[!UICONTROL Insert emoticon]** 主題行。
 
 ## 訊息內容 {#message-content}
 
@@ -114,6 +116,19 @@ ht-degree: 0%
    至於HTML格式，請按一 **[!UICONTROL Preview]** 下頁面底部的標籤，以檢視以個人化方式呈現訊息。
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
+
+### 在電子郵件中插入表情符號 {#inserting-emoticons}
+
+您可以將表情符號插入您的電子郵件內容。
+
+1. 按一下 **[!UICONTROL Insert emoticon]** 圖示。
+1. 從彈出式視窗中選取表情符號。
+
+   ![](assets/emoticon_4.png)
+
+1. 完成時 **[!UICONTROL Close]** 按一下按鈕。
+
+若要自訂表情符號清單，請參閱此 [頁面](../../delivery/using/customizing-emoticon-list.md)。
 
 ## 選擇消息格式 {#selecting-message-formats}
 
@@ -191,11 +206,10 @@ HTML格式的電子郵件傳送可包含影像。 從傳送精靈中，您可以
 
 1. 在選 **[!UICONTROL Upload images]** 項卡中 **[!UICONTROL Images]** 選擇。
 1. 然後，您可以選擇是否要將影像加入電子郵件訊息中。
-
-![](assets/s_ncs_user_email_del_img_upload.png)
+   ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * 您可以手動上傳影像，而不需等待傳送分析階段。 若要這麼做，請按一下 **[!UICONTROL Upload the images straightaway...]** 連結。
-* 您可以指定另一個路徑，以存取追蹤伺服器上的影像。 若要這麼做，請在欄位中輸 **[!UICONTROL Image URL]** 入。 此值將覆蓋在安裝嚮導參數中定義的值。
+* 您可以指定另一個路徑，以存取追蹤伺服器上的影像。 若要這麼做，請在欄位中輸 **[!UICONTROL Images URL]** 入。 此值將覆蓋在安裝嚮導參數中定義的值。
 
 當您在傳送精靈中開啟包含影像的HTML內容時，會顯示訊息，提供您根據傳送參數立即上傳影像的選項。
 
@@ -205,7 +219,11 @@ HTML格式的電子郵件傳送可包含影像。 從傳送精靈中，您可以
 >
 >在手動上傳或傳送訊息期間會修改影像存取路徑。
 
-### 範例： 傳送含影像的訊息 {#example--sending-a-message-with-images}
+### 傳送含影像的訊息 {#sending-a-message-with-images}
+
+>[!NOTE]
+>
+>為避免效能問題，如果您將即時從個人化URL下載的影像加入 [附件](../../delivery/using/attaching-files.md)，則預設每個影像大小不應超過100,000位元組。 此建議的臨界值可從「促銷活 [動傳統」選項清單中設定](../../installation/using/configuring-campaign-options.md#delivery)。
 
 以下是包含4張影像的傳送範例：
 
