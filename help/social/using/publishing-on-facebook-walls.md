@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 0%
 
 ---
 
@@ -31,10 +34,10 @@ source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ## 必要條件 {#prerequisites}
 
-首先，建立Facebook帳戶和數個頁面：這些將用於發送發佈。
+首先，建立Facebook帳戶和數個頁面： 這些將用於發送發佈。
 
 * 若要建立Facebook帳戶，請使用https://www.facebook.com [連結](https://www.facebook.com) 。
-* 若要建立Facebook頁面，請使用https://www.facebook.com/pages/create.php [連結](https://www.facebook.com/pages/create.php) 。
+* 若要建立Facebook頁面，請使用https://www.facebook.com/pages/create [連結](https://www.facebook.com/pages/create) 。
 
    我們建議使用相同的Facebook帳戶來管理您的所有頁面。 如此，您只需要一個Facebook應用程式和一個外部帳戶，即可在帳戶的所有頁面上寫入。
 
@@ -47,8 +50,8 @@ source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 1. 登入您用來管理頁面的Facebook帳戶。
 1. 建立新的Facebook頁面。
 1. 按一下 **[!UICONTROL Settings]** 右上角的按鈕。
-1. 在標籤 **[!UICONTROL General]** 中，修改頁面的可見性參數：複選框 **[!UICONTROL Page unpublished]** 時。
-1. Click the **[!UICONTROL Save Changes]** button.
+1. 在標籤 **[!UICONTROL General]** 中，修改頁面的可見性參數： 複選框 **[!UICONTROL Page unpublished]** 時。
+1. 按一下&#x200B;**[!UICONTROL Save Changes]**&#x200B;按鈕。
 
 ![](assets/social_facebook_test_page.png)
 
@@ -57,7 +60,7 @@ source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 為了讓Adobe Campaign能夠在您頁面的塗鴉牆上發佈，您需要建立Facebook應用程式。 若要這麼做，請套用下列步驟：
 
 1. 登入您用來管理頁面的Facebook帳戶。
-1. 在您的瀏覽器中輸入下列位址： [https://developers.facebook.com/apps](https://developers.facebook.com/apps)。
+1. 在您的瀏覽器中輸入下列位址： [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
    >[!IMPORTANT]
    >
@@ -91,7 +94,7 @@ source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 >
 >Adobe Campaign營運商必須擁有管理權限才能執行此設定。
 
-* **Facebook**:選擇先前建立的應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選擇該 **[!UICONTROL Settings > Basic]** 頁籤。
+* **Facebook**: 選擇先前建立的應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選擇該 **[!UICONTROL Settings > Basic]** 頁籤。
 
    ![](assets/social_facebook_external_account_002.png)
 
@@ -99,7 +102,7 @@ source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
    >
    >如果未 **[!UICONTROL Facebook Web Games]** 出現區段，請按一 **[!UICONTROL Add Platform]** 下頁面底部的按鈕，然後選取 **[!UICONTROL Facebook Web Games]**。
 
-* **Adobe Campaign**:轉至樹 **[!UICONTROL Administration > Platform > External Accounts]** 的節點，選擇外部帳 **[!UICONTROL Facebook routing]** 戶並按一下選 **[!UICONTROL Connector]** 項卡。
+* **Adobe Campaign**: 轉至樹 **[!UICONTROL Administration > Platform > External Accounts]** 的節點，選擇外部帳 **[!UICONTROL Facebook routing]** 戶並按一下選 **[!UICONTROL Connector]** 項卡。
 
    ![](assets/social_facebook_external_account_001.png)
 
