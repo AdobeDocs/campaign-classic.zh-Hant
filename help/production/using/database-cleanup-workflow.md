@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+workflow-type: tm+mt
+source-wordcount: '2908'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ## 配置 {#configuration}
 
-資料庫清理配置在兩個級別上：在工作流調度程式和部署嚮導中。
+資料庫清理配置在兩個級別上： 在工作流調度程式和部署嚮導中。
 
 ### 排程器 {#the-scheduler}
 
@@ -53,17 +56,17 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ### 部署精靈 {#deployment-wizard}
 
-透過 **[!UICONTROL Deployment wizard]** 功能表存取的 **[!UICONTROL Tools > Advanced]** 資料，可讓您設定資料儲存的時間長度。 值以天數表示。 如果這些值未變更，工作流程會使用預設值。
+透過 **[!UICONTROL Deployment wizard]** 功能表存取的 **[!UICONTROL Tools > Advanced]** 資料，可讓您設定資料的儲存時間。 值以天數表示。 如果這些值未變更，工作流程會使用預設值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
 窗口的字 **[!UICONTROL Purge of data]** 段與以下選項一致。 工作流執行的某些任務將使用這些 **[!UICONTROL Database cleanup]** 任務：
 
-* 整合追蹤： **NmsCleanup_TrackingStatPurgeDelay** (請參 [閱追蹤記錄清理](#cleanup-of-tracking-logs))
+* 整合追蹤： **NmsCleanup_TrackingStatPurgeDelay** (請參閱 [追蹤記錄的清除](#cleanup-of-tracking-logs))
 * 傳送記錄檔： **NmsCleanup_BroadLogPurgeDelay** (請參 [閱Cleanup of delivery logs](#cleanup-of-delivery-logs))
-* 追蹤記錄檔： **NmsCleanup_TrackingLogPurgeDelay** (請參 [閱追蹤記錄清理](#cleanup-of-tracking-logs))
-* 已刪除傳送： **NmsCleanup_RecycledDeliveryPurgeDelay** (請參 [閱要刪除或回收的交貨的清理](#cleanup-of-deliveries-to-be-deleted-or-recycled))
-* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** (請參 [閱Cleanup of rejects by imports](#cleanup-of-rejects-generated-by-imports-))
+* 追蹤記錄檔： **NmsCleanup_TrackingLogPurgeDelay** (請參閱 [追蹤記錄的清除](#cleanup-of-tracking-logs))
+* 已刪除傳送： **NmsCleanup_RecycleandDeliveryPurgeDelay** (請參 [閱「清除要刪除或回收的交貨](#cleanup-of-deliveries-to-be-deleted-or-recycled)」)
+* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** (請參閱 [Cleanup of rejects by imports](#cleanup-of-rejects-generated-by-imports-))
 * 訪客資料： **NmsCleanup_VisitorPurgeDelay** (請參 [閱Cleanup of visitors](#cleanup-of-visitors))
 * 提供的建議： **NmsCleanup_CompositionPurgeDelay** (請參 [閱Cleanup of propositions](#cleanup-of-propositions))
 
@@ -71,8 +74,8 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
    >
    >該 **[!UICONTROL Offer propositions]** 欄位僅在安裝 **Interaction** 模組時可用。
 
-* 事件： **NmsCleanup_EventPurgeDelay** (請參 [閱清除過期事件](#cleansing-expired-events))
-* 已封存事件： **NmsCleanup_EventHistoPurgeDelay** (請參閱 [清除過期事件](#cleansing-expired-events))
+* 事件： **NmsCleanup_EventPurgeDelay** (請參閱清 [除過期事件](#cleansing-expired-events))
+* 已封存事件： **NmsCleanup_EventHistoPurgeDelay** (請參 [閱清除過期事件](#cleansing-expired-events))
 
    >[!NOTE]
    >
@@ -93,7 +96,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 >[!NOTE]
 >
->以下介紹資料庫清理工作流執行的任務的部分保留給資料庫管理員或熟悉SQL語言的用戶。
+>下面介紹資料庫清理工作流執行的任務的部分保留給資料庫管理員或熟悉SQL語言的用戶。
 
 ### 要刪除清理的清單 {#lists-to-delete-cleanup}
 
@@ -131,10 +134,10 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 此任務將清除要刪除或回收的所有交貨。
 
-1. 工作 **[!UICONTROL Database cleanup]** 流選擇所有 **deleteStatus欄位具有值或刪除日期早於部署嚮導(****[!UICONTROL Yes]****[!UICONTROL Recycled]****[!UICONTROL Deleted deliveries]****** NmsCleanup_RecycleandDeliveryPurgeDelayDelayDelayDelayDelay)欄位中定義的期間的交貨。 For more on this, refer to [Deployment wizard](#deployment-wizard). 此期間會與目前伺服器日期相關計算。
+1. 工作 **[!UICONTROL Database cleanup]** 流選擇所有 **deleteStatus欄位具有值或刪除日期早於部署嚮導(****[!UICONTROL Yes]****[!UICONTROL Recycled]****[!UICONTROL Deleted deliveries]****** NmsCleanup_RecycleandDeliveryPurgeDelayDelayDelayDelayDelayCleanup)欄位中定義的期間的交貨。 For more on this, refer to [Deployment wizard](#deployment-wizard). 此期間會與目前伺服器日期相關計算。
 1. 對於每個中間採購伺服器，任務將選擇要刪除的交貨清單。
 1. 工作流 **[!UICONTROL Database cleanup]** 程會刪除傳送記錄檔、附件、鏡像頁面資訊和所有其他相關資料。
-1. 在為了永久而刪除傳送之前，工作流會清除下清單格中的連結資訊：
+1. 在為了永久而刪除傳送之前，工作流會清除下表中的連結資訊：
 
    * 在傳送排除表(**NmsDlvExclusion**)中，使用下列查詢：
 
@@ -251,7 +254,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 此工作會刪除傳送所使用的網頁資源（鏡像頁面）。
 
-1. 首先，系統將使用以下查詢恢復要清除的交貨清單：
+1. 首先，系統會使用以下查詢恢復要清除的交貨清單：
 
    ```
    SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
@@ -324,11 +327,11 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ### 清除工作流程例項 {#cleanup-of-workflow-instances}
 
-此任務使用其標識符(**lWorkflowId**)和歷史記錄(**lHistory**)清除每個工作流實例。 它通過再次運行工作台清理任務刪除非活動表。
+此任務使用其標識符(**lWorkflowId**)和歷史記錄(**lHistory**)清除每個工作流實例。 它通過再次運行工作台清理任務刪除非活動表。 清除還會刪除已刪除工作流的所有孤立工作表（wkf%和wkfhisto%）。
 
 >[!NOTE]
 >
->歷史記錄的清除頻率是在「歷史記錄中的天數」( **History in days** )欄位中為每個工作流指定的（預設值為30天）。 您可以在工作流屬性的「執 **行** 」頁籤中找到此欄位。 如需詳細資訊，請參閱[本小節](../../workflow/using/workflow-properties.md#execution)。
+>歷史記錄的清除頻率是在「歷史記錄中的天數」( **History in days** )欄位中為每個工作流指定的（預設值為30天）。 您可以在工作流屬性的「執 **行** 」頁籤中找到此欄位。 如需詳細資訊，請參閱[本章節](../../workflow/using/workflow-properties.md#execution)。
 
 1. 要恢復要刪除的工作流清單，請使用以下查詢：
 
@@ -404,7 +407,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 此任務使用成批刪除從訪客表中刪除過時記錄。 過時記錄是指上次修改時間早於部署嚮導中定義的保存期的記錄(請參 [閱部署嚮導](#deployment-wizard))。 使用下列查詢：
 
 ```
-DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < $(tsDate) LIMIT 5000)
+DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
 其 **中$(tsDate)** 是目前的伺服器日期，我們會從中減去為 **NmsCleanup_VisitorPurgeDelay選項定義的期間** 。
@@ -484,8 +487,8 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 此任務會清除 **NmsEmailErrorStat** 表。 主程式(coalesceErrors ****)定義兩個日期：
 
-* **開始日期**:與 **NmsLastErrorStatCoalesce選項匹配的下一個進程的日期** ，或表中的最新日期。
-* **結束日期**:目前伺服器日期。
+* **開始日期**: 與 **NmsLastErrorStatCoalesce選項匹配的下一個進程的日期** ，或表中的最新日期。
+* **結束日期**: 目前伺服器日期。
 
 如果開始日期大於或等於結束日期，則不會進行任何程式。 在這種情況下，會出 **現coalesceUpToDate** 消息。
 
@@ -600,11 +603,11 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 XtkCleanup_NoStats **** 選項允許您控制清除工作流的儲存優化步驟的行為。
 
-如果 **XtkCleanup_NoStats** 選項不存在或其值為0，則將在PostgreSQL上以冗餘模式（真空VERBOSE ANALYZE）執行儲存優化，並更新所有其他資料庫的統計資訊。 要確保執行此命令，請檢查PostgreSQL日誌。 DAVMANUM將輸出以下格式的行： `INFO: vacuuming "public.nmsactivecontact"` ANALYZE將輸出以下格式的行： `INFO: analyzing "public.nmsactivecontact"`。
+如果 **XtkCleanup_NoStats** 選項不存在或其值為0，則將在PostgreSQL上以冗餘模式（真空VERBOSE ANALYZE）執行儲存優化，並更新所有其他資料庫的統計資訊。 要確保執行此命令，請檢查PostgreSQL日誌。 DAVMANUM將輸出以下格式的行： `INFO: vacuuming "public.nmsactivecontact"` ANALYZE將輸出以下格式的行： `INFO: analyzing "public.nmsactivecontact"`.
 
-如果選項的值為1，則不會在任何資料庫上執行統計資訊更新。 工作流日誌中將顯示以下日誌行： `Option 'XtkCleanup_NoStats' is set to '1'`。
+如果選項的值為1，則不會在任何資料庫上執行統計資訊更新。 工作流日誌中將顯示以下日誌行： `Option 'XtkCleanup_NoStats' is set to '1'`.
 
-如果選項的值為2，則它將在PostgreSQL上以詳細模式(ANALYZE VERBOSE)執行儲存分析，並更新所有其他資料庫的統計資訊。 要確保執行此命令，請檢查PostgreSQL日誌。 ANALYZE將輸出以下格式的行： `INFO: analyzing "public.nmsactivecontact"`。
+如果選項的值為2，則它將在PostgreSQL上以詳細模式(ANALYZE VERBOSE)執行儲存分析，並更新所有其他資料庫的統計資訊。 要確保執行此命令，請檢查PostgreSQL日誌。 ANALYZE將輸出以下格式的行： `INFO: analyzing "public.nmsactivecontact"`.
 
 ### 訂閱清除(NMAC) {#subscription-cleanup--nmac-}
 
