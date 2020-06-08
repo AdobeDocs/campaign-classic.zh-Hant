@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -26,20 +29,19 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 您可以在單一工作流程中呼叫多個子工作流程。 子工作流程會同步執行。
 
->[!NOTE]
->
->要正確運行子工作流，您必須只有一個「到達」類型跳轉（編號最低），而只有一個「開始」類型跳轉（編號最高）。 例如，如果您的「開始」類型跳轉的優先順序為1、2和3，則只應有一個「開始」類型跳轉，優先順序為3。
+在以下範例中，「主」工作流程使用跳轉呼叫子工作流程。 有關跳轉類型圖形對象的詳細資訊，請參 [閱本節](../../workflow/using/jump--start-point-and-end-point-.md)。
 
 1. 建立工作流程，以當成其他工作流程中的子工作流程。
-1. 在工 **[!UICONTROL Jump (end point)]** 作流程的開頭插入優先順序為1的活動。 如果您有多個「到達」類型跳轉，Adobe Campaign會使用「到達」跳轉的編號最低。
-
-   在工 **[!UICONTROL Jump (start point)]** 作流程結束時插入優先順序為2的活動。 如果您有多個「開始」類型跳轉，Adobe Campaign會使用「開始」跳轉，其數字最高。
+1. 在工 **[!UICONTROL Jump (end point)]** 作流程的開頭插入優先順序為1的活動。 如果您有多個「端點」類型跳轉，Adobe Campaign會使用「端點」跳轉，其數字最低。
+1. 在工 **[!UICONTROL Jump (start point)]** 作流程結束時插入優先順序為2的活動。 如果您有多個「起始點」類型跳轉，Adobe Campaign會使用「起始點」跳轉，其數字最高。
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >如果子工作流活動引用了具有多個活動的工作流 **[!UICONTROL Jump]** ，則子工作流在「到貨」類型跳轉與「開始」類型跳轉之間執行，「到貨」類型跳轉與「起始」類型跳轉與最大數目。
+   >如果子工作流活動引用了具有多個活動的工作流 **[!UICONTROL Jump]** ，則子工作流在「端點」類型跳轉（具有最低數字）和「起點」類型跳轉（具有最高數字）之間執行。
+   >
+   >要正確運行子工作流，您只能有一個「端點」類型跳轉（編號最低），而只能有一個「起始點」類型跳轉（編號最高）。
 
 1. 完成並儲存此「子工作流程」。
 1. 建立「主」工作流程。
@@ -49,7 +51,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
    ![](assets/subworkflow_selection.png)
 
 1. 您也可以新增設定指令碼來變更參考的工作流程。
-1. 按一下 **[!UICONTROL Ok]**. 它會自動建立對外轉場，其中包含所選工作流程 **[!UICONTROL Jump (start point)]** 中活動的標籤。
+1. 按一下「**[!UICONTROL Ok]**」。它會自動建立對外轉場，其中包含所選工作流程 **[!UICONTROL Jump (start point)]** 中活動的標籤。
 
    ![](assets/subworkflow_outbound.png)
 
@@ -78,6 +80,4 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 這三個值集標識查詢所定位的人口。 **[!UICONTROL tableName]** 是記錄目標標識符的表的名稱， **[!UICONTROL schema]** 是人口的模式（通常是nms:recipient）, **[!UICONTROL recCount]** 是表中的元素數。
 
-* targetSchema
-
-此值是工作表的模式。 此參數對於包含和的所有轉場都 **[!UICONTROL tableName]** 有效 **[!UICONTROL schema]**。
+* targetSchema: 此值是工作表的模式。 此參數對於包含和的所有轉場都 **[!UICONTROL tableName]** 有效 **[!UICONTROL schema]**。
