@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 1%
 
 ---
 
@@ -59,18 +62,18 @@ source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
    >iOS **7提供** 「無訊息推播」模式。 這可讓「無訊息」通知傳送至行動應用程式。 使用者未得知通知的到達。 它會直接傳輸至應用程式。
 
 1. 在字 **[!UICONTROL Title]** 段中，輸入要顯示在通知中的標題標籤。 它只會出現在通知中心提供的通知清單中。 此欄位可讓您定義iOS通知裝載 **的** title參數值。
+
 1. 如果您使用HTTP/2連接器，則可新增子標題(iOS通知裝載的 **子標題** 參數值)。 請參閱「在 [Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md) 」一節。
+
 1. 然後，根據選 **[!UICONTROL Message]** 擇的通 **[!UICONTROL Value of the badge]** 知類型輸入和。
 
    ![](assets/nmac_delivery_ios_5.png)
 
    >[!NOTE]
    >
-   >您可以在通知內容中加入emoji。 若要這麼做，請前往emoji表情符號清單網站([範例](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728))，複製表情符號並直接貼到內容編輯器中。 在Windows 7中，某些emoji可能無法在編輯器中正確顯示（方形符號），但在最終通知中應正確傳送。 顯示emoji的能力取決於裝置上使用的作業系統。 我們建議您傳送校樣，以確認傳送內容在傳送前是否正確顯示。
-
-   >[!NOTE]
-   >
    >**[!UICONTROL Badge]** 並輸 **[!UICONTROL Alert and badge]** 入通知可讓您修改徽章的值（行動應用程式標誌上方的數字）。 若要重新整理徽章，您只需輸入0作為值。 如果欄位空白，徽章值不會變更。
+
+1. 按一下圖 **[!UICONTROL Insert emoticon]** 示，將表情符號插入您的推播通知。 若要自訂表情符號清單，請參閱自 [訂表情符號清單](../../delivery/using/defining-interactive-content.md)
 
 1. 可 **[!UICONTROL Action button]** 讓您為出現在警報通知(裝載的&#x200B;**** action_loc_key欄位)上的動作按鈕定義標籤。 如果您的iOS應用程式管理可本地化字串(**Localablized.strings**)，請在此欄位中輸入對應的金鑰。 如果您的應用程式不管理可本地化的文字，請輸入您要在動作按鈕上看到的標籤。 如需可本地化字串的詳細資訊，請參閱 [Apple檔案](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) 。
 1. 在欄位 **[!UICONTROL Play a sound]** 中，選取收到通知時由行動終端播放的音效。
@@ -79,11 +82,11 @@ source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
    >
    >音效必須包含在應用程式中，並在建立服務時加以定義。 請參閱 [設定iOS外部帳戶](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios)。
 
-1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為：例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
+1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為： 例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
 
    >[!NOTE]
    >
-   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 有關詳情，請參閱：在 [Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
+   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 有關詳情，請參閱： [在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
 
 1. 在設定通知後，按一下標 **[!UICONTROL Preview]** 簽以預覽通知。
 
@@ -121,15 +124,13 @@ source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
    ![](assets/nmac_delivery_android_4.png)
 
-   >[!NOTE]
-   >
-   >您可以在通知內容中加入emoji。 若要這麼做，請前往emoji表情符號清單網站([範例](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728))，複製表情符號並直接貼到內容編輯器中。 在Windows 7中，某些emoji可能無法在編輯器中正確顯示（方形符號），但應在最終電子郵件中正確傳送。 顯示emoji的能力取決於裝置上使用的作業系統。 我們建議您傳送校樣，以確認傳送內容在傳送前是否正確顯示。
+1. 按一下圖 **[!UICONTROL Insert emoticon]** 示，將表情符號插入您的推播通知。 若要自訂表情符號清單，請參閱自 [訂表情符號清單](../../delivery/using/defining-interactive-content.md)
 
-1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為：例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
+1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為： 例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
 
    >[!NOTE]
    >
-   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 有關詳情，請參閱：在 [Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
+   >應用程式變數必須定義在行動應用程式的程式碼中，並在建立服務時輸入。 有關詳情，請參閱： [在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
 
 1. 在設定通知後，按一下標 **[!UICONTROL Preview]** 簽以預覽通知。
 
