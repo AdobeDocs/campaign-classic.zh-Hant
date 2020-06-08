@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 1%
 
 ---
 
@@ -52,9 +55,9 @@ source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
 
    可以使用以下選項：
 
-   * **[!UICONTROL Use a default storage directory]**:檔案在處理前一律會先移動。 如果勾選此選項，檔案會移入預設儲存目錄(Adobe Campaign安 **裝檔案夾的** vars目錄)。 要指定儲存目錄，請取消選中該框，並在欄位中輸入其路 **[!UICONTROL Storage directory]** 徑
-   * **[!UICONTROL Number of files]**:輸入儲存目錄中要保存的最大檔案數。
-   * **[!UICONTROL Maximum size (in Mb)]**:輸入儲存目錄的最大容量（以兆位元組為單位）。
+   * **[!UICONTROL Use a default storage directory]**: 檔案在處理前一律會先移動。 如果勾選此選項，檔案會移入預設儲存目錄(Adobe Campaign安 **裝資料夾的vars** 目錄)。 要指定儲存目錄，請取消選中該框，並在欄位中輸入其路 **[!UICONTROL Storage directory]** 徑
+   * **[!UICONTROL Number of files]**: 輸入儲存目錄中要保存的最大檔案數。
+   * **[!UICONTROL Maximum size (in Mb)]**: 輸入儲存目錄的最大容量（以兆位元組為單位）。
    在遵守定義的清除規則之前，每個檔案將保留24小時。 清除會在活動開始前進行，因此不會考慮進行中的工作流檔案。
 
    檔案會視其年齡（最舊到最新）而刪除。 在驗證兩個清除規則之前，將清除最舊的檔案。 因此，如果定義了100個檔案限制，這意味著儲存目錄將始終包含工作流開始之前的100個最新檔案，以及正在進行中的工作流中正在處理的檔案。
@@ -71,7 +74,4 @@ source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
 
 ## 輸出參數 {#output-parameters}
 
-* 檔案名
-
-   已下載檔案的完整名稱。
-
+* 檔案名： 已下載檔案的完整名稱。
