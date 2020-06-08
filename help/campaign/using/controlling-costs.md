@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '2470'
+ht-degree: 0%
 
 ---
 
@@ -123,7 +126,7 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 ![](assets/s_user_edit_budget_node_impact_task.png)
 
-當支出生成發票並支付發票時，系統會在欄位中輸入其金 **[!UICONTROL Invoiced]** 額。
+當支出產生髮票並支付發票時，系統會在欄位中輸入其金 **[!UICONTROL Invoiced]** 額。
 
 ### 費用類別 {#expense-categories}
 
@@ -197,13 +200,13 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 1. 計算成本
 
-   計算的成本取決於相關元素（促銷活動、傳送、任務等）及其狀態（正在編輯、進行中、完成）。 無論如何，如果指定了實際成本，計算成本將使用此金額。
+   計算的成本取決於相關元素（促銷活動、傳送、任務等） 及其狀態（正在編輯、進行中、完成）。 無論如何，如果指定了實際成本，計算成本將使用此金額。
 
    如果未提供實際成本，則適用下列規則：
 
    * 對於正在編輯的促銷活動，計算成本是促銷活動的估計臨時成本，如果未定義此成本，則計算成本將是促銷活動傳送和任務的所有臨時成本的總和。 如果促銷活動完成，促銷活動的計算成本將是所有計算成本的總和。
    * 對於尚未分析的交付，計算成本為估計臨時成本。 如果已執行分析，則計算的成本將是從服務中計算的所有成本的總和，這些成本將提供成本結構和目標接收者的數量。
-   * 對於進行中的任務，計算成本使用估計臨時成本。 如果任務完成，計算的成本將是從服務提供商成本結構計算的所有成本和完成天數的總和。
+   * 對於進行中的任務，計算成本使用估計臨時成本。 如果任務完成，計算的成本將是從服務提供商成本結構計算的所有成本的總和以及完成的天數。
    * 對於行銷計畫，對於方案，計算的成本是為促銷活動計算的成本總和。 若未指定該等成本，則計算成本將使用估計臨時成本。
    >[!NOTE]
    >
@@ -229,73 +232,69 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 #### 步驟1 —— 建立預算 {#step-1---creating-the-budget}
 
-透過節點建立新預 **[!UICONTROL Campaign management > Budgets]** 算。
+1. 透過節點建立新預 **[!UICONTROL Campaign management > Budgets]** 算。
 
-在該款的欄位中定義10,000 **[!UICONTROL Allocated]** 歐元的預 **[!UICONTROL Amounts]** 算。 在窗口的下部添加兩個費用類別：
+1. 在該款的欄位中定義10,000 **[!UICONTROL Allocated]** 歐元的預 **[!UICONTROL Amounts]** 算。 在窗口的下部添加兩個費用類別：
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### 步驟2 —— 配置服務提供商並定義成本結構 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-從節點建立具有其成本結構的服務提供商和服務模 **[!UICONTROL Administration > Campaigns]** 板。
+1. 從節點建立具有其成本結構的服務提供商和服務模 **[!UICONTROL Administration > Campaigns]** 板。 有關詳細資訊，請參 [閱建立服務提供商及其成本類別](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
 
-有關詳細資訊，請參 [閱建立服務提供商及其成本類別](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
-
-* 對於直接郵寄，請建立 **[!UICONTROL Envelopes]** 成本類別（類型114x229和162x229） **[!UICONTROL Postage]****[!UICONTROL Print]** 和（類型A3和A4）。 然後建立以下成本結構：
+   對於直接郵寄，請建立 **[!UICONTROL Envelopes]** 成本類別（類型114x229和162x229） **[!UICONTROL Postage]****[!UICONTROL Print]** 和（類型A3和A4）。 然後建立以下成本結構：
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
-   添加固定成本（在成本類別中），其計算是固定的，其金額為空（在相應的成本結構中），並且將為每個交貨單獨指定。
+1. 添加固定成本（在成本類別中），其計算是固定的，其金額為空（在相應的成本結構中），並且將為每個交貨單獨指定。
 
    ![](assets/s_user_cost_mgmt_sample_5.png)
 
-* 對於任務，請建立以下兩個成本類別：
+   對於任務，請建立以下兩個成本類別：
 
-   1. **[!UICONTROL Room reservation]** （小房間和大房間）, **固定** ，費用結構為300和500歐元：
+   * **[!UICONTROL Room reservation]** （小房間和大房間）, **固定** ，費用結構為300和500歐元：
+   ![](assets/s_user_cost_mgmt_sample_6.png)
 
-      ![](assets/s_user_cost_mgmt_sample_6.png)
-
-   1. **[!UICONTROL Creation]** (**內容範本** )，每日 **成本結** 構為300歐元：
-
-      ![](assets/s_user_cost_mgmt_sample_7.png)
+   * **[!UICONTROL Creation]** (**內容範本** )，每日 **成本結** 構為300歐元：
+   ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### 步驟3 —— 在促銷活動中計算預算費用 {#step-3---charging-the-budget-in-the-campaign}
 
-建立促銷活動並選取在步驟1中建立的預算。
+1. 建立促銷活動並選取在步驟1中建立的預算。
 
->[!NOTE]
->
->預設情況下，為方案選擇的預算將應用於方案中的所有促銷活動。
+   >[!NOTE]
+   >
+   >預設情況下，為方案選擇的預算將應用於方案中的所有促銷活動。
 
-![](assets/s_user_cost_mgmt_sample_4.png)
+   ![](assets/s_user_cost_mgmt_sample_4.png)
 
-指定估計的臨時成本，並細分：
+1. 指定估計的臨時成本，並細分：
 
-![](assets/s_user_cost_mgmt_sample_9.png)
+   ![](assets/s_user_cost_mgmt_sample_9.png)
 
-按一 **[!UICONTROL Ok]** 下並 **[!UICONTROL Save]** 確認此資訊。 然後，促銷活動的計算成本會更新為估計的臨時成本。
+1. 按一 **[!UICONTROL Ok]** 下並 **[!UICONTROL Save]** 確認此資訊。 然後，促銷活動的計算成本會更新為估計的臨時成本。
 
 #### 步驟4 —— 建立直接郵件發送 {#step-4---creating-the-direct-mail-delivery}
 
-為促銷活動建立工作流程，並定位查詢活動以選取目標（警告，必須指定收件者的郵遞區號）。
+1. 為促銷活動建立工作流程，並定位查詢活動以選取目標（警告，必須指定收件者的郵遞區號）。
 
-建立直接郵件發送，並選擇在步驟2中建立的服務提供商：成本類別會自動顯示。
+1. 建立直接郵件發送，並選擇在步驟2中建立的服務提供商： 成本類別會自動顯示。
 
-改寫封套的成本並添加固定成本。 另外，還要選擇與這些成本有關的類別。
+1. 改寫封套的成本並添加固定成本。 另外，還要選擇與這些成本有關的類別。
 
-![](assets/s_user_cost_mgmt_sample_3.png)
+   ![](assets/s_user_cost_mgmt_sample_3.png)
 
->[!NOTE]
->
->如果未使用任何成本類別，則不會產生任何費用。
+   >[!NOTE]
+   >
+   >如果未使用任何成本類別，則不會產生任何費用。
 
-啟動您剛建立的工作流程，以啟動分析並計算成本。
+1. 啟動您剛建立的工作流程，以啟動分析並計算成本。
 
-![](assets/s_user_cost_mgmt_sample_10.png)
+   ![](assets/s_user_cost_mgmt_sample_10.png)
 
-如果此促銷活動已啟用預算核准，請從控制面板核准預算。 您可以檢查成本類別的批准。
+1. 如果此促銷活動已啟用預算核准，請從控制面板核准預算。 您可以檢查成本類別的批准。
 
-![](assets/s_user_cost_mgmt_sample_10b.png)
+   ![](assets/s_user_cost_mgmt_sample_10b.png)
 
 與傳送相關的費用行會新增至促銷 **[!UICONTROL Edit > Budget]** 活動的標籤中。 編輯它以查看計算的詳細資訊。
 
@@ -311,27 +310,27 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 在此促銷活動中，我們將添加兩個以前建立成本結構的任務(請參閱步驟2 —— 配置服務提供商和定義成本結構 [](#step-2---configuring-the-service-provider-and-defining-the-cost-structures))。 若要這麼做，請在促銷活動控制面板中按一下 **[!UICONTROL Add a task]** 按鈕。 命名任務並按一下 **[!UICONTROL Save]**。
 
-然後，任務將添加到任務清單中。 您必須編輯它才能進行設定。
+1. 然後，任務將添加到任務清單中。 您必須編輯它才能進行設定。
 
-在標籤 **[!UICONTROL Properties]** 中，選擇服務和相應的成本類別：
+1. 在標籤 **[!UICONTROL Properties]** 中，選擇服務和相應的成本類別：
 
-![](assets/s_user_cost_mgmt_sample_14.png)
+   ![](assets/s_user_cost_mgmt_sample_14.png)
 
-接著，按一下 **[!UICONTROL Expenses and revenue]** 工作的圖示，並指定預估的臨時成本。
+1. 接著，按一下 **[!UICONTROL Expenses and revenue]** 工作的圖示，並指定預估的臨時成本。
 
-![](assets/s_user_cost_mgmt_sample_15.png)
+   ![](assets/s_user_cost_mgmt_sample_15.png)
 
-在保存任務後，將指定計算成本，並輸入估計臨時成本的值。
+   在保存任務後，將指定計算成本，並輸入估計臨時成本的值。
 
-當任務完成(狀態 **[!UICONTROL Finished]** )時，計算的成本將自動更新為在其成本結構中輸入的大房間成本。 此成本也會出現在劃分的此類別中。
+   當任務完成(狀態 **[!UICONTROL Finished]** )時，計算的成本將自動更新為在其成本結構中輸入的大房間成本。 此成本也會出現在劃分的此類別中。
 
-其次，按照相同的程式建立第二個任務；排程超過5天，且與先前建立的成本結構有關。
+1. 其次，按照相同的程式建立第二個任務； 排程超過5天，且與先前建立的成本結構有關。
 
-![](assets/s_user_cost_mgmt_sample_16.png)
+   ![](assets/s_user_cost_mgmt_sample_16.png)
 
-完成任務後，計算成本將使用相關成本結構中的值指定，即在我們的示例中為1500歐元（5天x 300歐元）:
+   完成任務後，計算成本將使用相關成本結構中的值指定，即在我們的示例中為1500歐元（5天x 300歐元）:
 
-![](assets/s_user_cost_mgmt_sample_17.png)
+   ![](assets/s_user_cost_mgmt_sample_17.png)
 
 #### 步驟6 —— 更新促銷活動預算狀態 {#step-6---update-the-campaign-budget-status}
 
@@ -379,4 +378,4 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 標 **[!UICONTROL Details]** 簽可讓您顯示發票的內容。
 
-按一 **[!UICONTROL Add]** 下以建立新發票。
+Click **[!UICONTROL Add]** to create a new invoice.
