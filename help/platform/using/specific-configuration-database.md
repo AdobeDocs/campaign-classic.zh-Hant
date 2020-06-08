@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
+source-git-commit: cc9ea59a9925930d4a4b260ce73a6bd4b615db5a
+workflow-type: tm+mt
+source-wordcount: '2857'
+ht-degree: 0%
 
 ---
 
@@ -30,119 +33,197 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 >
 >相容版本會列在「促銷活動相 [容性矩陣」中](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#FederatedDataAccessFDA)。
 
-<!--
-## Configure access to Azure Synapse {#configure-access-to-azure-synapse}
+## 配置對Azure突觸的訪問 {#configure-access-to-azure-synapse}
 
-### Azure Synapse on CentOS {#azure-centos}
+### Azure突觸外部帳戶 {#azure-external}
 
-1. Download mysql57-community-release.noarch.rpm. You can find it in this [page](https://dev.mysql.com/downloads/repo/yum).
+外部 [!DNL Azure] 帳戶可讓您將Campaign例項連接至Azure Synapse外部資料庫。
+要建立外部 [!DNL Azure Synapse] 帳戶外部帳戶，請：
 
-1. Install the client library:
+1. 在Campaign Classic中，設定您的 [!DNL Azure Synapse] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
-    ```
-    $ yum install mysql57-community-release-el7-9.noarch.rpm
-    $ yum install mysql-community-libs
-    ```
+1. 按一下「**[!UICONTROL Create]**」。
 
-1. You now need to configure the external account. In Campaign Classic, unfold the **[!UICONTROL Platform]** menu and click **[!UICONTROL External accounts]**.
+1. 設定外 [!DNL Azure Synapse] 部帳戶，您必須指定：
 
-1. Select the out-of-the box **[!UICONTROL Azure Synapse]** external account.
+   * **[!UICONTROL Type]**: Azure突觸分析
 
-1. To configure the **[!UICONTROL Azure Synapse]** external account:
+   * **[!UICONTROL Server]**: Azure Synapse伺服器的URL
 
-    * **[!UICONTROL Server]**
-  
-      URL of the Azure Synapse server.
+   * **[!UICONTROL Account]**: 用戶名稱
 
-    * **[!UICONTROL Account]**
+   * **[!UICONTROL Password]**: 使用者帳戶密碼
 
-      Name of the user.
+   * **[!UICONTROL Database]**: 資料庫的名稱
+   ![](assets/azure_1.png)
 
-    * **[!UICONTROL Password]**
+### CentOS上的Azure突觸 {#azure-centos}
 
-      User account password.
+**必要條件：**
 
-    * **[!UICONTROL Database]**
+* 安裝ODBC驅動程式時需要根權限。
+* Microsoft提供的Red Hat Enterprise ODBC驅動程式也可與CentOS一起使用以連接到SQL Server。
+* 13.0版將適用於Red Hat 6和7。
 
-      Name of your database
+在CentOS上配置Azure突觸：
 
-    >[!NOTE]
-    >
-    >Make sure the **[!UICONTROL Time zone]** and **[!UICONTROL Unicode data]** are set according to your database.
+1. 首先，安裝ODBC驅動程式。 您可在本頁找到 [它](https://www.microsoft.com/en-us/download/details.aspx?id=50420)。
 
-### Azure Synapse on Debian {#azure-debian}
+   >[!NOTE]
+   >
+   >這是ODBC驅動程式第13版的獨有內容。
 
-1. Download mysql-apt-config.deb. You can find it in this [page](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en).
+   ```
+   sudo su
+   curl https://packages.microsoft.com/config/rhel/6/prod.repo > /etc/yum.repos.d/mssql-release.repo
+   exit
+   # Uninstall if already installed Unix ODBC driver
+   sudo yum remove unixODBC-utf16 unixODBC-utf16-devel #to avoid conflicts
+   
+   sudo ACCEPT_EULA=Y yum install msodbcsql
+   
+   sudo ACCEPT_EULA=Y yum install mssql-tools
+   echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
+   echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+   source ~/.bashrc
+   
+   # the Microsoft driver expects unixODBC to be here /usr/lib64/libodbc.so.1, so add soft links to the '.so.2' files
+   cd /usr/lib64
+   sudo ln -s libodbccr.so.2   libodbccr.so.1
+   sudo ln -s libodbcinst.so.2 libodbcinst.so.1
+   sudo ln -s libodbc.so.2     libodbc.so.1
+   
+   # Set the path for unixODBC
+   export ODBCINI=/usr/local/etc/odbc.ini
+   export ODBCSYSINI=/usr/local/etc
+   source ~/.bashrc
+   
+   #Add a DSN information to /etc/odbc.ini
+   sudo vi /etc/odbc.ini
+   
+   #Add the following:
+   [Azure Synapse Analytics]
+   Driver      = ODBC Driver 13 for SQL Server
+   Description = Azure Synapse Analytics DSN
+   Trace       = No
+   Server      = [insert your server here]
+   ```
 
-1. Install the client library:
+1. 如果需要，可以通過運行以下命令來安裝unixODBC開發標頭：
 
-    ```
-    $ dpkg -i mysql-apt-config_*_all.deb # choose mysql-5.7 in the configuration menu
-    $ apt update
-    $ apt install libmysqlclient20
-    ```
+   ```
+   sudo yum install unixODBC-devel
+   ```
 
-1. You now need to configure the external account. In Campaign Classic, unfold the **[!UICONTROL Platform]** menu and click **[!UICONTROL External accounts]**.
+1. 安裝驅動程式後，您可以測試並驗證ODBC驅動程式，並根據需要查詢資料庫。 運行以下命令：
 
-1. Select the out-of-the box **[!UICONTROL Azure Synapse]** external account.
+   ```
+   /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
+   ```
 
-1. To configure the **[!UICONTROL Azure Synapse]** external account:
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Azure Synapse] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱此 [節](../../platform/using/specific-configuration-database.md#azure-external)。
 
-    * **[!UICONTROL Server]**
-  
-      URL of the Azure Synapse server.
+1. 由於Azure Synapse Analytics通過TCP 1433埠進行通信，因此您需要在防火牆上開啟此埠。 使用下列命令：
 
-    * **[!UICONTROL Account]**
+   ```
+   firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
+   # you can ping your hostname and the ping command will translate the hostname to IP address which you can use here
+   ```
 
-      Name of the user.
+   >[!NOTE]
+   >
+   >若要允許來自Azure Synapse Analytics的通訊，您可能需要將公共IP加入白名單。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
-    * **[!UICONTROL Password]**
+1. 如果是iptables，請運行以下命令：
 
-      User account password.
+   ```
+   iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
+   ```
 
-    * **[!UICONTROL Database]**
+### Windows上的Azure突觸 {#azure-windows}
 
-      Name of your database
+>[!NOTE]
+>
+>這是ODBC驅動程式第13版的獨有內容，但Adobe Campaign Classic也可以使用SQL Server Native Client驅動程式11.0和10.0。
 
-    >[!NOTE]
-    >
-    >Make sure the **[!UICONTROL Time zone]** and **[!UICONTROL Unicode data]** are set according to your database.
+要在Windows上配置Azure突觸：
 
-### Azure Synapse on Windows {#azure-windows}
+1. 首先，安裝Microsoft ODBC驅動程式。 您可在本頁找到 [它](https://www.microsoft.com/en-us/download/details.aspx?id=50420)。
 
-1. Download the C connector. You can find it in this [page](https://dev.mysql.com/downloads/connector/c).
+1. 選擇要安裝的以下檔案：
 
-1. Make sure the directory that contains libmysqlclient.dll is added to the PATH environment variable that nlserver will use.
+   ```
+   your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
+   ```
 
-1. You now need to configure the external account. In Campaign Classic, unfold the **[!UICONTROL Platform]** menu and click **[!UICONTROL External accounts]**.
+1. 在安裝ODBC驅動程式後，您可以根據需要對其進行測試。 For more on this, refer to this [page](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
 
-1. You now need to configure the external account. In Campaign Classic, unfold the **[!UICONTROL Platform]** menu and click **[!UICONTROL External accounts]**.
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Azure Synapse] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱此 [節](../../platform/using/specific-configuration-database.md#azure-external)。
 
-1. Select the out-of-the box **[!UICONTROL Azure Synapse]** external account.
+1. 由於Azure Synapse Analytics通過TCP 1433埠進行通信，因此您需要在Windows Defender Firewall上開啟此埠。 For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-1. To configure the **[!UICONTROL Azure Synapse]** external account:
+### Debian上的Azure突觸 {#azure-debian}
 
-    * **[!UICONTROL Server]**
-  
-      URL of the Azure Synapse server.
+**必要條件：**
 
-    * **[!UICONTROL Account]**
+* 安裝ODBC驅動程式時需要根權限。
+* 需要Curl才能安裝msodbcsql軟體包。 如果尚未安裝，請運行以下命令：
 
-      Name of the user.
+   ```
+   sudo apt-get install curl
+   ```
 
-    * **[!UICONTROL Password]**
+要在Debian上配置Azure突觸：
 
-      User account password.
+1. 首先，安裝SQL Server的Microsoft ODBC驅動程式。 使用以下命令來安裝SQL Server的ODBC驅動程式13.1:
 
-    * **[!UICONTROL Database]**
+   ```
+   sudo su
+   curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+   curl https://packages.microsoft.com/config/debian/8/prod.list > /etc/apt/sources.list.d/mssql-release.list
+   exit
+   sudo apt-get update
+   sudo ACCEPT_EULA=Y apt-get install msodbcsql
+   ```
 
-      Name of your database
+1. 如果您在呼叫 **sudo apt-get update時遇到以下錯誤：** 「The method driver /usr/lib/apt/methods/https could not be found」（方法驅動程式/usr/lib/apt/methods/https找不到） ****，您應該運行該命令：
 
-    >[!NOTE]
-    >
-    >Make sure the **[!UICONTROL Time zone]** and **[!UICONTROL Unicode data]** are set according to your database.
+   ```
+   sudo apt-get install apt-transport-https ca-certificates
+   ```
 
--->
+1. 您現在需要使用下列命令安裝mssql-tools。 需要Mssq-tools才能使用批量復製程式（或BCP）實用程式並運行查詢。
+
+   ```
+   sudo ACCEPT_EULA=Y apt-get install mssql-tools
+   echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
+   echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+1. 如果需要，可以通過運行以下命令來安裝unixODBC開發標頭：
+
+   ```
+   sudo yum install unixODBC-devel
+   ```
+
+1. 安裝驅動程式後，您可以測試並驗證ODBC驅動程式，並根據需要查詢資料庫。 運行以下命令：
+
+   ```
+   /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
+   ```
+
+1. 在Campaign Classic中，您現在可以設定您的 [!DNL Azure Synapse] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱此 [節](../../platform/using/specific-configuration-database.md#azure-external)。
+
+1. 若要在Debian上配置iptables以確保與Azure Synapse Analytics的連接，請使用下列命令為您的主機名啟用出站TCP 1433埠：
+
+   ```
+   iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
+   ```
+
+   >[!NOTE]
+   >
+   >若要允許來自Azure Synapse Analytics的通訊，您可能需要將公共IP加入白名單。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 ## 配置對雪花的訪問 {#configure-access-to-snowflake}
 
@@ -151,6 +232,39 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 >[!DNL Snowflake] connector適用於代管和內部部署。 For more on this, refer to [this article](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ![](assets/snowflake_3.png)
+
+### 雪花外部帳戶 {#snowflake-external}
+
+外部 [!DNL Snowflake] 帳戶可讓您將促銷活動實例連接至Snowflake外部資料庫。
+
+1. 在Campaign Classic中，設定您的 [!DNL Snowflake] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+
+1. 選擇內建外部 **[!UICONTROL Snowflake]** 帳戶。
+
+1. 設定外 **[!UICONTROL Snowflake]** 部帳戶，您必須指定：
+
+   * **[!UICONTROL Server]**: 伺服器的URL [!DNL Snowflake]
+
+   * **[!UICONTROL Account]**: 用戶名稱
+
+   * **[!UICONTROL Password]**: 使用者帳戶密碼
+
+   * **[!UICONTROL Database]**: 資料庫的名稱
+   ![](assets/snowflake.png)
+
+1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
+
+   ![](assets/snowflake_2.png)
+
+連接器支援以下選項：
+
+| 選項 | 說明 |
+|---|---|
+| 工作架構 | 用於工作表的資料庫模式 |
+| 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
+| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
+| WeekStart | WEEK_START會話參數。 依預設設為0。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
+| UseCachedResult | USE_CACHED_RESULTS會話參數。 預設設定為TRUE。 此選項可用於禁用雪花快取結果。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
 
 ### CentOS上的雪花 {#snowflake-centos}
 
@@ -169,34 +283,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
    /etc/init.d/nlserver6 start
    ```
 
-1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
-
-1. 選擇內建外部 **[!UICONTROL Snowflake]** 帳戶。
-
-1. 設定外 **[!UICONTROL Snowflake]** 部帳戶，您必須指定：
-
-   * **[!UICONTROL Server]**:伺服器的URL [!DNL Snowflake]
-
-   * **[!UICONTROL Account]**:用戶名稱
-
-   * **[!UICONTROL Password]**:使用者帳戶密碼
-
-   * **[!UICONTROL Database]**:資料庫的名稱
-   ![](assets/snowflake.png)
-
-1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
-
-   ![](assets/snowflake_2.png)
-
-連接器支援以下選項：
-
-| 選項 | 說明 |
-|---|---|
-| 工作架構 | 用於工作表的資料庫模式 |
-| 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | WEEK_START會話參數。 依預設設為0。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS會話參數。 預設設定為TRUE。 此選項可用於禁用雪花快取結果。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱此 [節](../../platform/using/specific-configuration-database.md#snowflake-external)。
 
 ### 德比安雪花 {#snowflake-debian}
 
@@ -216,34 +303,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
    systemctl start nlserver.service
    ```
 
-1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
-
-1. 選擇內建外部 **[!UICONTROL Snowflake]** 帳戶。
-
-1. 若要設定外 **[!UICONTROL Snowflake]** 部帳戶，您必須指定：
-
-   * **[!UICONTROL Server]**:伺服器的URL [!DNL Snowflake]
-
-   * **[!UICONTROL Account]**:用戶名稱
-
-   * **[!UICONTROL Password]**:使用者帳戶密碼
-
-   * **[!UICONTROL Database]**:資料庫的名稱
-   ![](assets/snowflake.png)
-
-1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
-
-   ![](assets/snowflake_2.png)
-
-連接器支援以下選項：
-
-| 選項 | 說明 |
-|---|---|
-| 工作架構 | 用於工作表的資料庫模式 |
-| 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | WEEK_START會話參數。 依預設設為0。  <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS會話參數。 預設設定為TRUE。 此選項可用於禁用雪花快取結果。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱此 [節](../../platform/using/specific-configuration-database.md#snowflake-external)。
 
 ### 窗戶上的雪花 {#snowflake-windows}
 
@@ -251,34 +311,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 配置ODBC驅動程式。 For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
-
-1. 選擇內建外部 **[!UICONTROL Snowflake]** 帳戶。
-
-1. 若要設定外 **[!UICONTROL Snowflake]** 部帳戶，您必須指定：
-
-   * **[!UICONTROL Server]**:伺服器的URL [!DNL Snowflake]
-
-   * **[!UICONTROL Account]**:用戶名稱
-
-   * **[!UICONTROL Password]**:使用者帳戶密碼
-
-   * **[!UICONTROL Database]**:資料庫的名稱
-   ![](assets/snowflake.png)
-
-1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
-
-   ![](assets/snowflake_2.png)
-
-連接器支援以下選項：
-
-| 選項 | 說明 |
-|---|---|---|
-| 工作架構 | 用於工作表的資料庫模式 |
-| 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | WEEK_START會話參數。 依預設設為0。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | 預設設定為TRUE。 此選項可用於禁用Snowflake快取結果（USE_CACHED_RESULTS會話參數） <br>有關此選項，請參 [閱此頁](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+1. 在Campaign Classic中，您接著可以設定您的 [!DNL Snowflake] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱此 [節](../../platform/using/specific-configuration-database.md#snowflake-external)。
 
 ## 配置對Hadoop 3.0的訪問 {#configure-access-to-hadoop-3}
 
@@ -301,17 +334,17 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 若要設定 **[!UICONTROL  Hadoop]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**: ODBC(Sybase ASE、Sybase IQ)
 
-   * **[!UICONTROL Server]**:DNS的名稱
+   * **[!UICONTROL Server]**: DNS的名稱
 
-   * **[!UICONTROL Account]**:用戶名稱
+   * **[!UICONTROL Account]**: 用戶名稱
 
-   * **[!UICONTROL Password]**:使用者帳戶密碼
+   * **[!UICONTROL Password]**: 使用者帳戶密碼
 
-   * **[!UICONTROL Database]**:DSN中未指定的資料庫名稱。 如果在DSN中指定，則可保留為空
+   * **[!UICONTROL Database]**: DSN中未指定的資料庫名稱。 如果在DSN中指定，則可保留為空
 
-   * **[!UICONTROL Time zone]**:伺服器時區
+   * **[!UICONTROL Time zone]**: 伺服器時區
    ![](assets/hadoop3.png)
 
 連接器支援以下ODBC選項：
@@ -356,7 +389,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
    apt-get install unixodbc
    ```
 
-1. 從HortonWorks下載並安裝Apache Hive的ODBC驅動程式： [https://www.hortonworks.com/downloads/](https://www.hortonworks.com/downloads/)。
+1. 從HortonWorks下載並安裝Apache Hive的ODBC驅動程式： [https://www.hortonworks.com/downloads/](https://www.hortonworks.com/downloads/).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
@@ -441,10 +474,10 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 根據您使用的作業系統，安裝Netezza的ODBC驅動程式：
 
-   * **nz-linuxclient-v7.2.0.0.tar.gz** for Linux。 選擇與作業系統（linux或linux64）對應的資料夾，然後啟動unpack命令。 您可以保留在預設情況下建議的儲存庫中執行的安裝：&quot;/usr/local/nz&quot;。
-   * **nz-winclient-v7.2.0.0.zip** for Windows。 解壓縮檔案並啟動與您的作業系統對應的可執行指令碼：nzodbcsetup.exe或nzodbcsetup64.exe。 按照嚮導說明完成驅動程式的安裝。
+   * **nz-linuxclient-v7.2.0.0.tar.gz** for Linux。 選擇與作業系統（linux或linux64）對應的資料夾，然後啟動unpack命令。 您可以保留在預設情況下建議的儲存庫中執行的安裝： &quot;/usr/local/nz&quot;。
+   * **nz-winclient-v7.2.0.0.zip** for Windows。 解壓縮檔案並啟動與您的作業系統對應的可執行指令碼： nzodbcsetup.exe或nzodbcsetup64.exe。 按照嚮導說明完成驅動程式的安裝。
 
-1. 配置ODBC驅動程式。 配置可在標準檔案中執行： **/etc/odbc.ini** （用於一般參數）和 **/etc/odbcinst.ini（用於聲明驅動程式）** 。
+1. 配置ODBC驅動程式。 配置可在標準檔案中執行： **/etc/odbc.ini** ，用於一般參數， **/etc/odbcinst.ini** ，用於聲明驅動程式。
 
    * **/etc/odbc.ini**
 
@@ -478,9 +511,9 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 指定Adobe Campaign伺服器的環境變數：
 
-   * **LD_LIBRARY_PATH**:/usr/local/nz/lib和/usr/local/nz/lib64。 &quot;/usr/local/nz&quot;與安裝驅動程式時預設提供的安裝儲存庫相對應。 您需要在此處指定已為安裝選擇的儲存庫。
-   * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
-   * **NZ_ODBC_INI_PATH**:odbc.ini檔案的位置。 Netezza還需要此第二個變數來使用odbc.ini檔案。
+   * **LD_LIBRARY_PATH**: /usr/local/nz/lib和/usr/local/nz/lib64。 &quot;/usr/local/nz&quot;與安裝驅動程式時預設提供的安裝儲存庫相對應。 您需要在此處指定已為安裝選擇的儲存庫。
+   * **ODBCINI**: odbc.ini檔案的位置(例如/etc/odbc.ini)。
+   * **NZ_ODBC_INI_PATH**: odbc.ini檔案的位置。 Netezza還需要此第二個變數來使用odbc.ini檔案。
 
 1. 在Campaign Classic中，您接著可以設定Netezza外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
@@ -488,15 +521,15 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 若要設定外 **[!UICONTROL Netezza]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:內泰扎
+   * **[!UICONTROL Type]**: 內泰扎
 
-   * **[!UICONTROL Server]**:Netezza伺服器的URL
+   * **[!UICONTROL Server]**: Netezza伺服器的URL
 
-   * **[!UICONTROL Account]**:用戶名稱
+   * **[!UICONTROL Account]**: 用戶名稱
 
-   * **[!UICONTROL Password]**:使用者帳戶密碼
+   * **[!UICONTROL Password]**: 使用者帳戶密碼
 
-   * **[!UICONTROL Database]**:資料庫的名稱
+   * **[!UICONTROL Database]**: 資料庫的名稱
 
 >[!NOTE]
 >
@@ -513,7 +546,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 1. 安裝與Oracle版本對應的Oracle完整客戶端。
 1. 將您的TNS定義新增至安裝。 要執行此操作，請在/etc/oracle儲存庫 **的tnsnames.ora** 檔案中指定它們。 如果此儲存庫不存在，請建立它。
 
-   然後建立新的TNS_ADMIN環境變數：導出TNS_ADMIN=/etc/oracle並重新啟動電腦。
+   然後建立新的TNS_ADMIN環境變數： 導出TNS_ADMIN=/etc/oracle並重新啟動電腦。
 
 1. 將Oracle整合到您的Adobe Campaign伺服器(nlserver)。 若要這麼做，請檢查 **customer.sh** 檔案是否位於Adobe Campaign伺服器樹狀結構的「nl6」資料夾中，且其中包含Oracle程式庫的連結。
 
@@ -560,7 +593,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 1. 確保unixodbc包位於伺服器上。
 1. 安裝 **iq_odbc**。 安裝結束時可能會發生錯誤。 此錯誤可以忽略。
 1. 安 **裝iq_client_common**。 安裝結束時可能會發生Java錯誤。 此錯誤可以忽略。
-1. 配置ODBC驅動程式。 配置可在標準檔案中執行：/etc/odbc.ini，用於常規參數，/etc/odbcinst.ini，用於聲明驅動程式：
+1. 配置ODBC驅動程式。 配置可在標準檔案中執行： /etc/odbc.ini，用於常規參數，/etc/odbcinst.ini，用於聲明驅動程式：
 
    * **/etc/odbc.ini** (以您自己的方式取 `<server_alias>` 代字元等值):
 
@@ -589,7 +622,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 在LD_LIBRARY_PATH變數中添加新libodbc16.so庫的路徑。 若要這麼做：
 
-   * 如果您使用customer.sh檔案來宣告您的路徑：為LD_LIBRARY_PATH變數添加路徑/opt/sybase/IQ-16_0/lib64。
+   * 如果您使用customer.sh檔案來宣告您的路徑： 為LD_LIBRARY_PATH變數添加路徑/opt/sybase/IQ-16_0/lib64。
    * 否則，請使用Unix命令。
 
 1. 在Campaign Classic中，您可以配置Sybase IQ外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
@@ -598,15 +631,15 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 若要設定外 **[!UICONTROL Sybase IQ]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**: ODBC(Sybase ASE、Sybase IQ)
 
-   * **[!UICONTROL Server]**:與步驟5中定義的ODBC`<server_alias>`連接()相對應。 不一定是伺服器本身的名稱。
+   * **[!UICONTROL Server]**: 與步驟5中定義的ODBC`<server_alias>`連接()相對應。 不一定是伺服器本身的名稱。
 
-   * **[!UICONTROL Account]**:用戶名稱
+   * **[!UICONTROL Account]**: 用戶名稱
 
-   * **[!UICONTROL Password]**:使用者帳戶密碼
+   * **[!UICONTROL Password]**: 使用者帳戶密碼
 
-   * **[!UICONTROL Database]**:資料庫的名稱
+   * **[!UICONTROL Database]**: 資料庫的名稱
 
 >[!NOTE]
 >
@@ -651,9 +684,9 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 指定Adobe Campaign伺服器的環境變數：
 
-   * **LD_LIBRARY_PATH**:/opt/teradata/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
-   * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
-   * **NLSPATH**:opermsgs.cat檔案的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
+   * **LD_LIBRARY_PATH**: /opt/teradata/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
+   * **ODBCINI**: odbc.ini檔案的位置(例如/etc/odbc.ini)。
+   * **NLSPATH**: opermsgs.cat檔案的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
 
 1. 在Campaign Classic中，您接著可以設定您的Teradata外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
@@ -661,15 +694,15 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 若要設定外 **[!UICONTROL Teradata]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:Teradata
+   * **[!UICONTROL Type]**: Teradata
 
-   * **[!UICONTROL Server]**:Teradata伺服器的URL
+   * **[!UICONTROL Server]**: Teradata伺服器的URL
 
-   * **[!UICONTROL Account]**:用戶名稱
+   * **[!UICONTROL Account]**: 用戶名稱
 
-   * **[!UICONTROL Password]**:使用者帳戶密碼
+   * **[!UICONTROL Password]**: 使用者帳戶密碼
 
-   * **[!UICONTROL Database]**:資料庫的名稱
+   * **[!UICONTROL Database]**: 資料庫的名稱
 
 ## 配置對SAP HANA的訪問 {#configure-access-to-sap-hana}
 
@@ -680,7 +713,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
    * **hdb_client_linux.tgz** for Linux。 解壓縮後，啟動hdbinst命令並按照說明完成驅動程式安裝。
    * **hdb_client_windows.zip** for Windows。 解壓縮檔案並啟動可執行檔： **hdbinst.exe**。 按照嚮導說明完成驅動程式的安裝。
 
-1. 配置ODBC驅動程式。 配置可在標準檔案中執行：/etc/odbc.ini代表一般參數，/etc/odbcinst.ini代表聲明驅動程式。
+1. 配置ODBC驅動程式。 配置可在標準檔案中執行： /etc/odbc.ini代表一般參數，/etc/odbcinst.ini代表聲明驅動程式。
 
    * **/etc/odbc.ini**
 
@@ -706,8 +739,8 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 指定Adobe Campaign伺服器的環境變數：
 
-   * **LD_LIBRARY_PATH**:依預設，應包含SAP Hana用戶端(/usr/sap/hdbclient/libodbcHDB.so)的連結。
-   * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
+   * **LD_LIBRARY_PATH**: 依預設，應包含SAP Hana用戶端(/usr/sap/hdbclient/libodbcHDB.so)的連結。
+   * **ODBCINI**: odbc.ini檔案的位置(例如/etc/odbc.ini)。
 
 1. 在Campaign Classic中，您可以設定SAP Hana外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
@@ -715,10 +748,10 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 1. 若要設定外 **[!UICONTROL SAP Hana]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:SAP Hana
+   * **[!UICONTROL Type]**: SAP Hana
 
-   * **[!UICONTROL Server]**:SAP Hana伺服器的URL
+   * **[!UICONTROL Server]**: SAP Hana伺服器的URL
 
-   * **[!UICONTROL Account]**:用戶名稱
+   * **[!UICONTROL Account]**: 用戶名稱
 
-   * **[!UICONTROL Password]**:使用者帳戶密碼
+   * **[!UICONTROL Password]**: 使用者帳戶密碼
