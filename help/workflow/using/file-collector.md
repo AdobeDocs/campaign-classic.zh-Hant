@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    * **[!UICONTROL Directory]**
 
-      包含要下載的檔案的目錄。 必須事先在伺服器上建立此目錄：如果不存在，則會引發錯誤。
+      包含要下載的檔案的目錄。 必須事先在伺服器上建立此目錄： 如果不存在，則會引發錯誤。
 
    * **[!UICONTROL Filter]**
 
@@ -74,7 +77,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 1. **歷史化**
 
-   請參閱此處 **[!UICONTROL File historization]** 的步驟：網 [頁下載](../../workflow/using/web-download.md)。
+   請參閱此處 **[!UICONTROL File historization]** 的步驟： [網頁下載](../../workflow/using/web-download.md)。
 
 無法確定檔案處理順序。 要按順序處理一組檔案，請使用 **[!UICONTROL Stop as soon as a file has been processed]** 該選項並建立循環。 在這種情況下，檔案將按字母順序進行處理。 此選 **[!UICONTROL Process file nonexistence]** 項可讓您完成小版本。
 
@@ -82,6 +85,4 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ## 輸出參數 {#output-parameters}
 
-* 檔案名
-
-完整的檔案名稱。 這是檔案名被移到歷史目錄後的檔案名。 因此，路徑不同，但如果目錄中已存在同名的另一個檔案，則名稱也不同。 保留擴展。
+* 檔案名： 完整的檔案名稱。 這是檔案名被移到歷史目錄後的檔案名。 因此，路徑不同，但如果目錄中已存在同名的另一個檔案，則名稱也不同。 保留擴展。
