@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 12%
 
 ---
 
@@ -24,19 +27,23 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Web應用程式類型在建立過程中被選擇。
 
-前往「促銷 **活動** 」標籤並選取 **[!UICONTROL Web Applications]** 功能表。 Click the **[!UICONTROL Create]** button. 選擇要使用的Web應用程式模板：
+前往「促銷 **活動** 」標籤，並選取 **[!UICONTROL Web Applications]** 功能表。 按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。選擇要使用的Web應用程式模板：
 
 ![](assets/webapp_create_from_campaign.png)
+
+>[!NOTE]
+>
+>AlWays可保護可能包含個人資訊的頁面。 請參閱「安 [全與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此範本會決定Web應用程式的類型。 您可以建立：
 
 1. Web表單（+描述檔修改）
 
-   Web表單可讓您提供網頁，其中包含輸入或選擇欄位：使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
+   Web表單可讓您提供網頁，其中包含輸入或選擇欄位： 使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
 
 1. 網頁應用程式
 
-   Adobe Campaign可讓您建立網路應用程式，以便在網路平台或外部網路上公開，例如。 這可讓您編輯Adobe Campaign中的資料和記錄資訊。 在這種情況下，您可以限制其對已驗證使用者的存取（透過存取控制），並根據各種准則來設定資料預載。 如需詳細資訊，請參閱[本小節](../../web/using/about-web-applications.md)。
+   Adobe Campaign可讓您建立網路應用程式，以便在網路平台或外部網路上公開，例如。 這可讓您編輯Adobe Campaign中的資料和記錄資訊。 在這種情況下，您可以限制其對已驗證使用者的存取（透過存取控制），並根據各種准則來設定資料預載。 如需詳細資訊，請參閱[本章節](../../web/using/about-web-applications.md)。
 
 1. 登錄頁面
 
@@ -44,7 +51,7 @@ Web應用程式類型在建立過程中被選擇。
 
 1. 調查
 
-   Adobe Campaign可讓您透過「調查管 **理員」選項** ，設計和管理線上調查，並處理其結果：動態欄位建立、分數管理、轉存答案和專屬報表。 如需詳細資訊，請參閱[本小節](../../web/using/about-surveys.md)。
+   Adobe Campaign可讓您透過「調查管 **理員」選項** ，設計和管理線上調查，並處理其結果： 動態欄位建立、分數管理、轉存答案和專屬報表。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
 
    >[!CAUTION]
    >
@@ -52,10 +59,10 @@ Web應用程式類型在建立過程中被選擇。
 
 1. Facebook應用程式
 
-   由於有了「社 **交行銷」選項** ,Adobe Campaign可讓您在Facebook應用程式中發佈個人化內容。 如需詳細資訊，請參閱[本小節](../../social/using/about-social-marketing.md)。
+   由於有了「社 **交行銷」選項** ,Adobe Campaign可讓您在Facebook應用程式中發佈個人化內容。 如需詳細資訊，請參閱[本章節](../../social/using/about-social-marketing.md)。
 
    >[!CAUTION]
    >
    >**Social Marketing** 是選用的Adobe Campaign模組。 請檢查您的授權合約。
 
-頁面配置模式和可用配置對於幾種Web應用程式類型都是相同的。 如需詳細資訊，請參閱[本小節](../../web/using/about-web-forms.md)。
+頁面配置模式和可用配置對於幾種Web應用程式類型都是相同的。 如需詳細資訊，請參閱[本章節](../../web/using/about-web-forms.md)。
