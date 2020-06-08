@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e2ba309643a10a2bfdb031b3ee0acd90c3d02fc0
+source-git-commit: 39b8f4af256c23744a2b6e5978964e4b3207aafb
 workflow-type: tm+mt
-source-wordcount: '6477'
-ht-degree: 7%
+source-wordcount: '6666'
+ht-degree: 8%
 
 ---
 
@@ -26,6 +26,38 @@ ht-degree: 7%
 本頁列出每個月的所有新功能和檔案更新，以及促銷活動版本。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
+
+## 20.2 - 08/06/2020{#release-20-2}
+
+**發行中包含的新功能**
+
+支援表情符號——閱 [讀更多](../../delivery/using/customizing-emoticon-list.md)
+
+Azure Synapse FDA連接器——詳 [細內容](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+
+泰國和巴西隱私法——詳 [細內容](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+
+**此版本隨附的其他檔案更新**
+
+本節將介紹啟用取消發佈事務性消息模板的[新選項](../../message-center/using/template-unpublication.md)。
+
+新選項可讓您在傳送包含從個人化URL下載的影像和附件的電子郵件時設定限制，已新增至「促銷活動傳統」選項清單。 [詳細內容](../../installation/using/configuring-campaign-options.md#delivery)
+
+本節將 **介紹新的「在資料庫中準備交付部件** 」選項 [。](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis)
+
+「驗證傳送」區段已釐清並更新。 [詳細內容](../../delivery/using/steps-validating-the-delivery.md)
+
+與新追蹤連結簽名機制相關的參數已新增至「伺服器」 [設定檔案區段](../../installation/using/the-server-configuration-file.md) 。
+
+已更新相容性矩陣。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+
+清除工作流程區段已更新。 [進一步瞭解](../../production/using/database-cleanup-workflow.md)
+
+促銷活動網路端點已移至此 [區段](../../installation/using/campaign-network-endpoints.md)。
+
+Spam Assassin安裝區段已更新為新的安裝檔案名稱。 [進一步瞭解](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+
+有關複製環境的章節已更新。 [進一步瞭解](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 
 ## 2020年5月 {#may-2020}
@@ -40,7 +72,7 @@ ht-degree: 7%
 
 「資料套件最佳實務」區段已移動並更新。 [詳細內容](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
-## 2020年4月 {#april-2020}
+## 2020 年 4 月{#april-2020}
 
 FDA權限表已移至存取外部資料庫(FDA)檔案。 [詳細內容](../../platform/using/remote-database-access-rights.md)
 
@@ -216,7 +248,7 @@ GDPR快速入門手冊已經過改進並充實。 它現在是包含GDPR和CCPA�
 
 已將配置內部部署安裝收件箱轉換的步驟添加到文檔中。 [詳細內容](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-## 2019年9月 {#september-2019}
+## 2019 年 9 月{#september-2019}
 
 已新增新頁面，以提供維護Campaign Classic的一般准則。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
 
@@ -546,7 +578,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
