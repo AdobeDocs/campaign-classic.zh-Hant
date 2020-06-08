@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2925'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的配置適用於不同類型的傳送（直接郵件、電子郵件、行動頻道、傳真或電話）。
+建議的配置適用於不同類型的交付： 直效郵件、電子郵件、行動通道。
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * 主要目標。 有關詳細資訊，請參 [閱在工作流中構建主目標](#building-the-main-target-in-a-workflow)[和選擇目標人口](#selecting-the-target-population)。
 * 控制組。 有關詳細資訊，請參閱定 [義控制組](#defining-a-control-group)。
-* 種子地址。 如需詳細資訊，請參閱[本小節](../../delivery/using/about-seed-addresses.md)。
+* 種子地址。 如需詳細資訊，請參閱[本章節](../../delivery/using/about-seed-addresses.md)。
 
 其中有些資訊會繼承自範本。
 
@@ -210,7 +210,7 @@ ht-degree: 0%
 您可以在促銷活動層級定義控制群組，在此情況下，控制群組將套用至相關促銷活動的每個傳送。
 
 1. 編輯相關促銷活動，然後按一下標 **[!UICONTROL Edit]** 簽。
-1. 按一下 **[!UICONTROL Advanced campaign settings]**.
+1. 按一下「**[!UICONTROL Advanced campaign settings]**」。
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
@@ -314,7 +314,7 @@ ht-degree: 0%
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* 按一下 **[!UICONTROL Send a proof]** 按鈕以建立校樣。
+* Click the **[!UICONTROL Send a proof]** button to create the proofs.
 
    證明目標必須事先確定。
 
