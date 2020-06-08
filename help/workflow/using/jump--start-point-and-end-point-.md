@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 4994aff9f2db36a519a9c7af2864393713eb65e3
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,9 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 **[!UICONTROL Jump]** -type圖形物件可用來改善複雜圖形的可讀性，尤其是具有交叉轉場的圖形物件。
 
-跳轉是沒有箭頭的轉場：它們會從一個活動移至另一個活動，如下例所示。
+跳轉是沒有箭頭的轉場。
+
+它們會從一個活動移至另一個活動，如下列範例所示：
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
