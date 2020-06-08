@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '3737'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +63,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ![](assets/s_ncs_user_task_edit_from_view.png)
 
-## 建立新任務 {#creating-a-new-task}
+## Creating a new task {#creating-a-new-task}
 
 若要建立工作，請按一下「促銷 **[!UICONTROL Tasks]** 活動」範圍中的連結，然後選取 **[!UICONTROL Create]**。
 
@@ -72,7 +75,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ![](assets/s_ncs_user_task_create_simple.png)
 
-您也可以透過促銷活動的控制面板來建立工作：在這種情況下，它會自動連結至從中建立的促銷活動。
+您也可以透過促銷活動的控制面板來建立工作： 在這種情況下，它會自動連結至從中建立的促銷活動。
 
 ![](assets/s_ncs_user_task_create_new_from_op.png)
 
@@ -82,13 +85,13 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 若要設定，您必須指出：
 
-* 經理和參與者：請參閱「 [經理」和「參與者」](#manager-and-participants)。
-* 建立計畫：請參閱執 [行計畫](#execution-schedule)。
-* 承諾成本：請參閱 [費用和收入](#expenses-and-revenues)。
+* 經理和參與者： 請參閱「 [經理」和「參與者」](#manager-and-participants)。
+* 建立計畫： 請參閱執 [行計畫](#execution-schedule)。
+* 承諾成本： 請參閱 [費用和收入](#expenses-and-revenues)。
 
 廣告審核者(請參閱「審核者」 [)和參考檔案(請參閱「參考](#reviewers)的檔案」 [](#documents-referenced))也可以。
 
-任務生命週期是在生命週期中 [表示的](#life-cycle)。
+任務生命週期在生命週期中 [呈現](#life-cycle)。
 
 ### 經理與參與者 {#manager-and-participants}
 
@@ -108,7 +111,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ![](assets/s_ncs_user_task_add_resources.png)
 
-按一 **[!UICONTROL Ok]** 下並輸入使用率：這表示在任務執行期間分配給運算子的負載。 此比率僅為指示，以百分比表示。
+按一 **[!UICONTROL Ok]** 下並輸入使用率： 這表示在任務執行期間分配給運算子的負載。 此比率僅為指示，以百分比表示。
 
 例如，對於將執行計畫設定為10天的任務，在10天內，此任務的一半工作時間內將移動其使用率為50%的操作員。
 
@@ -164,7 +167,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ![](assets/s_ncs_user_task_percentage_done_enter.png)
 
-根 **[!UICONTROL Progress status]** 據相關操作員執行的任務自動更新任務的百分比。 可手動輸入。
+根 **[!UICONTROL Progress status]** 據相關操作員執行的任務自動更新任務（以百分比表示）。 可手動輸入。
 
 此資訊可在任務控制面板中檢視。
 
@@ -216,7 +219,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ### 延遲任務 {#late-tasks}
 
-如果任務已到達其結束日期，但其狀態未更改為，則任務將延遲 **[!UICONTROL Finished]**。 根據預設，當任務延遲時，不會警告任何運算子。 您可以設定通知電子郵件的傳送方式：即使所有運算子不參與任務，也會收到通知。
+如果任務已到達其結束日期，但其狀態未更改為，則任務將延遲 **[!UICONTROL Finished]**。 根據預設，當任務延遲時，不會警告任何運算子。 您可以設定通知電子郵件的傳送方式： 即使所有運算子不參與任務，也會收到通知。
 
 移至方 **[!UICONTROL Resources]** 塊並將運算子新增至欄 **[!UICONTROL Assignation]** 位。 要通知多個人，請選擇一組操作員。
 
@@ -245,8 +248,8 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 要建立直接連結至程式的任務，請執行以下操作：
 
-1. 開啟程式計畫：在首頁上，轉到 **[!UICONTROL Campaigns > Browse > Other choices > Programs]**。 整個方案排程會在視窗的右側區段中開啟。
-1. 在排程中，按一下所需的程式：窗戶上會顯示該程式。
+1. 開啟程式計畫： 在首頁上，轉到 **[!UICONTROL Campaigns > Browse > Other choices > Programs]**。 整個方案排程會在視窗的右側區段中開啟。
+1. 在排程中，按一下所需的程式： 窗戶上會顯示該程式。
 1. 在此窗口中，按一下 **[!UICONTROL Open]**。 程式排程隨即開啟。
 1. 按一下 **[!UICONTROL Add]** 右側排程上方的按鈕，然後按一下 **[!UICONTROL Add a task]**。
 
@@ -254,7 +257,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ### 營運商可用性 {#operator-availability}
 
-在任務儀表板中，操作員名稱旁邊的表徵圖表示他們已在任務涵蓋的期間內處理另一個任務或事件。 (操作員負責或參與的任務：他將出現在 **[!UICONTROL Assigned to]** 欄位或任務框 **[!UICONTROL Resources]** 中)。
+在任務儀表板中，操作員名稱旁邊的表徵圖表示他們已在任務涵蓋的期間內處理另一個任務或事件。 (操作員負責或參與的任務： 他將出現在 **[!UICONTROL Assigned to]** 欄位或任務框 **[!UICONTROL Resources]** 中)。
 
 ![](assets/mrm_task_alert_operator_busy.png)
 
@@ -274,10 +277,10 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 可排程下列工作：
 
-* **[!UICONTROL Control task]**，請參閱「控 [制任務](#control-tasks)」
-* **[!UICONTROL Marketing resource creation task]**，請參閱 [分組任務](#grouping-task),
-* **[!UICONTROL Grouping task]**，請參閱 [分組任務](#grouping-task),
-* **[!UICONTROL Notification task]**，請參閱 [通知任務](#notification-task)。
+* [控制任務](#control-tasks),
+* [分組任務](#grouping-task),
+* [分組任務](#grouping-task),
+* [通知任務](#notification-task)。
 
 >[!NOTE]
 >
@@ -286,7 +289,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ### 控制工作 {#control-tasks}
 
-A會 **[!UICONTROL Control task]** 連結至傳送核准：核准目標、內容、擷取檔案、預算或證明。
+A會 **[!UICONTROL Control task]** 連結至傳送核准： 核准目標、內容、擷取檔案、預算或證明。
 
 ![](assets/s_ncs_user_task_new_control.png)
 
@@ -311,13 +314,13 @@ A會 **[!UICONTROL Control task]** 連結至傳送核准：核准目標、內容
 行銷資源建立工作會與連結至其的資源互動。 這表示：
 
 * 資源建立時間表及其連結的成本通過任務進行管理。
-* 營運商可以像一般（下載或上傳、鎖定和解除鎖定）一樣處理資源：這不會影響任務。
-* 資源審批和發佈可通過任務執行：如果啟 **[!UICONTROL Publish the marketing resource]** 用了該選項，則在任務完成後，資源將被自動批准和發佈。 如果未啟用此選項，則任務和資源不進行交互：對一個不會影響另一個。
+* 營運商可以像一般（下載或上傳、鎖定和解除鎖定）一樣處理資源： 這不會影響任務。
+* 資源審批和發佈可通過任務執行： 如果啟 **[!UICONTROL Publish the marketing resource]** 用了該選項，則在任務完成後，資源將被自動批准和發佈。 如果未啟用此選項，則任務和資源不進行交互： 對一個不會影響另一個。
 
-   您可以使用一系列連結的工作來定義完整的核准週期。 僅選中 **[!UICONTROL Publish the marketing resource]** 最後一個任務的選項：所有任務都需要完成，才能發佈資源。 此外，建立子行銷資源任務時，將在子任務中自動選擇該資源。
+   您可以使用一系列連結的工作來定義完整的核准週期。 僅選中 **[!UICONTROL Publish the marketing resource]** 最後一個任務的選項： 所有任務都需要完成，才能發佈資源。 此外，建立子行銷資源任務時，將在子任務中自動選擇該資源。
 
-   * **透過資源**:如果提交資源進行審批或審批，這些操作將不影響任務。
-   * **通過任務**:如果 **[!UICONTROL Publish the marketing resource]** 在任務中選中了該選項，則在任務完成後，資源將被批准並自動發佈（請參閱上面）。 如果未勾選此選項，則任務和資源將不進行交互：對一個不會影響另一個。
+   * **透過資源**: 如果提交資源進行審批或審批，這些操作將不影響任務。
+   * **通過任務**: 如果 **[!UICONTROL Publish the marketing resource]** 在任務中選中了該選項，則在任務完成後，資源將被批准並自動發佈（請參閱上面）。 如果未勾選此選項，則任務和資源將不進行交互： 對一個不會影響另一個。
 
 #### 設定行銷資源建立工作 {#configuring-a-marketing-resource-creation-task}
 
@@ -327,10 +330,10 @@ A會 **[!UICONTROL Control task]** 連結至傳送核准：核准目標、內容
 
 在欄位 **[!UICONTROL Marketing resource]** 中，定義要通過此任務管理的資源。 您可以：
 
-* 選擇現有資源：下拉式清單會提供狀態為的所有資源 **[!UICONTROL Being edited]**。
-* 建立資源：按一下 **[!UICONTROL Select the link]** 圖示，然後按一下圖 **[!UICONTROL Create]** 示。
+* 選擇現有資源： 下拉式清單會提供狀態為的所有資源 **[!UICONTROL Being edited]**。
+* 建立資源： 按一下 **[!UICONTROL Select the link]** 圖示，然後按一下圖 **[!UICONTROL Create]** 示。
 
-此選 **[!UICONTROL Publish the marketing resource]** 項可讓您自動化資源發佈：一旦任務完成 **[!UICONTROL Finished]**&#x200B;後，即使資源既未提交批准，也未獲批准，資源的狀態也會自動切換到 **[!UICONTROL Published]**，包括完成任務的審核者不是資源中定義的內容審核者。
+此選 **[!UICONTROL Publish the marketing resource]** 項可讓您自動化資源發佈： 一旦任務完成 **[!UICONTROL Finished]**&#x200B;後，即使資源既未提交批准，也未獲批准，資源的狀態也會自動切換到 **[!UICONTROL Published]**，包括完成任務的審核者不是資源中定義的內容審核者。
 
 此 **[!UICONTROL Publish the resource]** 按鈕可供使用，資源發佈審閱者會收到通知電子郵件，通知他已準備好發佈。 在頁籤 **[!UICONTROL Edit > Tracking]** 中，任務審閱者的審閱和發佈將變為可見。 如果已定義資源後處理工作流，則立即執行。
 
@@ -376,10 +379,10 @@ A會 **[!UICONTROL Control task]** 連結至傳送核准：核准目標、內容
 
 在建立過程中，必須在任務中輸入以下元素：
 
-* **[!UICONTROL Assigned to]** :接收電子郵件的營運商或營運商群組。 如果您在傳送電子郵件後重新指派工作，則不會將電子郵件傳送給新的運算元（若要這麼做，您必須重新初始化工作並變更其開始日期）。
-* **任務開始日期**:通知電子郵件的傳送日期。 此日期必須在記錄任務時在將來發生。
-* **任務結束日期**:任務狀態更改為的日期 **[!UICONTROL Finished]**。 根據預設，結束日期與開始日期相同。 不過，為任務指定持續時間可讓您象徵操作員在計畫中必須執行的時間長度（如果需要）。
-* **[!UICONTROL Description]** :此處輸入的文本將出現在通知電子郵件的正文中。
+* **[!UICONTROL Assigned to]** : 接收電子郵件的營運商或營運商群組。 如果您在傳送電子郵件後重新指派工作，則不會將電子郵件傳送給新的運算元（若要這麼做，您必須重新初始化工作並變更其開始日期）。
+* **任務開始日期**: 通知電子郵件的傳送日期。 此日期必須在記錄任務時在將來發生。
+* **任務結束日期**: 任務狀態更改為的日期 **[!UICONTROL Finished]**。 根據預設，結束日期與開始日期相同。 不過，為任務指定持續時間可讓您象徵操作員在計畫中必須執行的時間長度（如果需要）。
+* **[!UICONTROL Description]** : 此處輸入的文本將出現在通知電子郵件的正文中。
 
    ![](assets/mrm_task_notif_dashboard_msg.png)
 
@@ -415,13 +418,13 @@ A會 **[!UICONTROL Control task]** 連結至傳送核准：核准目標、內容
 
 對於分組任務，Adobe Campaign會自動將父任務的結束日期指派給子任務作為開始日期。 例如，如果 **Create invitation** task於10月15日下午3:30結束， **Send invitation email** child task將於10月15日下午3:30開始。
 
-此外，如果您推遲父項任務的結束，其某些子項任務可能會受到影響：這些是狀態為且開始日期早 **[!UICONTROL Scheduled]** 於父任務新結束日期的子任務。 任務的持續時間保持不變。 如果子任務的開始日期晚於父任務的新結束日期，則子任務不受影響。
+此外，如果您推遲父項任務的結束，其某些子項任務可能會受到影響： 這些是狀態為且開始日期早 **[!UICONTROL Scheduled]** 於父任務新結束日期的子任務。 任務的持續時間保持不變。 如果子任務的開始日期晚於父任務的新結束日期，則子任務不受影響。
 
 **範例**
 
-預定於10月9日下午5點結束的父任務有兩個子任務，任務A和任務B。任務A定於10月10日下午2點開始，任務B定於10月12日上午8點開始。
+預定於10月9日下午5點結束的父任務有兩個子任務，任務A和任務B。 任務A定於10月10日下午2點開始，任務B定於10月12日上午8點開始。
 
-讓我們推遲父任務：現在10月11日下午1點結束。 只有任務A被推遲，將於10月11日下午1點開始。
+讓我們推遲父任務： 現在10月11日下午1點結束。 只有任務A被推遲，將於10月11日下午1點開始。
 
 ![](assets/mrm_task_parent_postpones_child.png)
 
@@ -429,7 +432,7 @@ A會 **[!UICONTROL Control task]** 連結至傳送核准：核准目標、內容
 
 任務狀態可以在任務圖中查看。 根據操作員操作自動更新任務的執行狀態。
 
-任務可以是： **[!UICONTROL Scheduled]**、 **[!UICONTROL In progress]**、 **[!UICONTROL Finished]****[!UICONTROL Canceled]**&#x200B;或 **[!UICONTROL Pending approval]****[!UICONTROL Rejected]**。
+任務可以是： **[!UICONTROL Scheduled]**、 **[!UICONTROL In progress]**、 **[!UICONTROL Finished]**、 **[!UICONTROL Canceled]**&#x200B;或 **[!UICONTROL Pending approval]****[!UICONTROL Rejected]**。
 
 * 建立任務時，其開始日期 **[!UICONTROL Scheduled]** 是否為將來。 它會保留此狀態，直到達到其開始日期為止。
 * 啟動後，任務即為 **[!UICONTROL In progress]**。 當負責任務的人員關閉任務時，它將更改為 **[!UICONTROL Finished]**。
@@ -447,7 +450,7 @@ A會 **[!UICONTROL Control task]** 連結至傳送核准：核准目標、內容
 
 ### 任務的進度狀態 {#progress-status-of-a-task}
 
-除了執行狀態外，任務還可以與進度狀態關聯： **[!UICONTROL Late]**、 **[!UICONTROL To approve]****[!UICONTROL To do today]** 或 **[!UICONTROL To do this week]**。 系統會根據任務計畫自動輸入此資訊。
+除了執行狀態外，任務還可以與進度狀態關聯： **[!UICONTROL Late]**、 **[!UICONTROL To approve]**&#x200B;或 **[!UICONTROL To do today]****[!UICONTROL To do this week]**。 系統會根據任務計畫自動輸入此資訊。
 
 您可以按進程或進度狀態篩選任務清單。
 
