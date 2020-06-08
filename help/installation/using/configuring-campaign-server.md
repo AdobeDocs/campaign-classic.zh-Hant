@@ -1,7 +1,7 @@
 ---
-title: 設定促銷活動伺服器
-seo-title: 設定促銷活動伺服器
-description: 設定促銷活動伺服器
+title: 設定 Campaign 伺服器
+seo-title: 設定 Campaign 伺服器
+description: 設定 Campaign 伺服器
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
+source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+workflow-type: tm+mt
+source-wordcount: '3589'
+ht-degree: 3%
 
 ---
 
 
-# 設定促銷活動伺服器{#configuring-campaign-server}
+# 設定 Campaign 伺服器{#configuring-campaign-server}
 
 下節詳細說明可根據您的需求和環境特性執行的伺服器端組態。
 
@@ -32,15 +35,15 @@ source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
 
 如需詳細資訊，請參閱下列章節：
 
-* [控制面板檔案](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+* [控制面板文件](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 * [代管模型](../../installation/using/hosting-models.md)
 * [Campaign Classic內部部署與代管功能矩陣](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 * [混合型和代管型配置步驟](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
 
 Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf資料夾中。 配置分佈在兩個檔案上：
 
-* **serverConf.xml**:所有實例的常規配置。 此檔案結合了Adobe Campaign伺服器的技術參數：這些會由所有例項共用。 以下詳細說明了其中一些參數。 本節列出的不同節點和 [參數](../../installation/using/the-server-configuration-file.md)。
-* **config-`<instance>`.xml** (其中 **instance** 是實例的名稱):實例的特定配置。 如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
+* **serverConf.xml**: 所有實例的常規配置。 此檔案結合了Adobe Campaign伺服器的技術參數： 這些會由所有例項共用。 以下詳細說明了其中一些參數。 本節列出的不同節點和 [參數](../../installation/using/the-server-configuration-file.md)。
+* **config-`<instance>`.xml** (其中 **instance** 是實例的名稱): 實例的特定配置。 如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
 
 ## 定義安全區 {#defining-security-zones}
 
@@ -74,7 +77,7 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 >**每個運算子都必須連結至區域**。 如果運算子的IP位址屬於區域所定義的範圍，運算子可登入執行個體。\
 >操作員的IP地址可以定義在多個區域中。 在這種情況下，運算子會收到 **每個區** 域的可用權限集。
 
-現成可用的serverConf.xml **檔案包含** 3個區域：公 **共、VPN和LAN**。
+現成可用的serverConf.xml **檔案包含** 3個區域： **公共、VPN和LAN**。
 
 >[!NOTE]
 >
@@ -106,12 +109,12 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 
 定義區域的所有權利如下：
 
-* **allowDebug**:可讓webApp在「debug」模式中執行
-* **allowEmptyPassword**:授權不使用密碼的實例的連接
-* **allowHTTP**:不需使用HTTPS通訊協定即可建立工作階段
-* **allowUserPassword**:作業Token可以有下列格式「`<login>/<password>`」
-* **sessionTokenOnly**:連線URL中不需要安全性Token
-* **showErrors**:會轉送並顯示伺服器端的錯誤
+* **allowDebug**: 可讓webApp在「debug」模式中執行
+* **allowEmptyPassword**: 授權不使用密碼的實例的連接
+* **allowHTTP**: 不需使用HTTPS通訊協定即可建立工作階段
+* **allowUserPassword**: 作業Token可以有下列格式「`<login>/<password>`」
+* **sessionTokenOnly**: 連線URL中不需要安全性Token
+* **showErrors**: 會轉送並顯示伺服器端的錯誤
 
 >[!IMPORTANT]
 >
@@ -167,15 +170,15 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 可能會發生各種情況：
 
-* 安全區中直接引用子網路，且未配置代理：子網路的使用者可以直接連線至Adobe Campaign伺服器。
+* 安全區中直接引用子網路，且未配置代理： 子網路的使用者可以直接連線至Adobe Campaign伺服器。
 
    ![](assets/8101_proxy1.png)
 
-* 為安全區域中的子網路指定代理：來自此子網路的使用者可透過此代理存取Adobe Campaign伺服器。
+* 為安全區域中的子網路指定代理： 來自此子網路的使用者可透過此代理存取Adobe Campaign伺服器。
 
    ![](assets/8101_proxy2.png)
 
-* 代理包含在安全區子網路中：透過此Proxy存取的使用者（不論其來源為何）都可存取Adobe Campaign伺服器。
+* 代理包含在安全區子網路中： 透過此Proxy存取的使用者（不論其來源為何）都可存取Adobe Campaign伺服器。
 
    ![](assets/8101_proxy3.png)
 
@@ -202,7 +205,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 </securityZone>
 ```
 
-### 將安全區連結到操作員 {#linking-a-security-zone-to-an-operator}
+### 將安全區域連結到運算子 {#linking-a-security-zone-to-an-operator}
 
 定義區域後，必須將每個運算子連結到其中一個運算子，才能登錄到實例，並且該運算子的IP地址必須包含在區域中引用的地址或地址範圍中。
 
@@ -311,7 +314,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 1. 在serverConf.xml檔案 **`<ipaffinity>`** 的區段 **中輸入相關性** 。
 
-   一個相似性可以有數個不同的名稱：分離，使用 **;** 字元。
+   一個相似性可以有數個不同的名稱： 分離，使用 **;** 字元。
 
    例如：
 
@@ -338,26 +341,26 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
    >
    >您也可以參考 [Delivery伺服器組態](../../installation/using/email-deliverability.md#delivery-server-configuration)。
 
-## URL權限 {#url-permissions}
+## URL 權限{#url-permissions}
 
-可由JavaScript代碼（工作流程等）呼叫的預設URL清單的Campaign Classic例項有限。 這些URL可讓您的例項正常運作。
+可由您的 Campaign Classic 執行個體的 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。這些是可讓您的執行個體正常運作的 URL。
 
-依預設，例項不允許連線至外部URL。 不過，您可以將一些外部URL新增至授權URL的清單，讓您的例項可以連線至這些URL。 這可讓您將促銷活動例項連接至外部系統，例如SFTP伺服器或網站，以啟用檔案和／或資料傳輸。
+依預設，執行個體不得連線到外部 URL。不過，您可以將一些外部URL新增至授權URL的清單，讓您的例項可以連線至這些URL。 這可讓您將 Campaign 執行個體連結到外部系統，例如 SFTP 伺服器或網站，以啟用檔案和/或資料傳輸。
 
-新增URL後，該URL會在例項的設定檔案(serverConf.xml)中參考。
+新增 URL 後，執行個體的設定檔案 (serverConf.xml) 便會參照該 URL。
 
 它們可讓您管理URL權限的方式視您的代管模型而定：
 
-* **混合** 或 **內部部署**:將允許的URL新增至 **serverConf.xml檔案**。 詳細資訊請參閱以下章節。
-* **代管**:新增URL以允許透過「控 **制面板」**。 如需詳細資訊，請參閱專 [用檔案](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
+* **混合** 或 **內部部署**: 將允許的URL新增至 **serverConf.xml檔案**。 詳細資訊請參閱以下章節。
+* **代管**: 新增URL以允許透過「控 **制面板」**。 如需詳細資訊，請參閱[專屬文件](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
 
 使用 **Hybrid****和** On-premise **代管模型時，管理員需要在** Server.xml檔案中參考新的urlPermission **** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 存在三種連接保護模式：
 
-* **阻止**:不屬於白名單的所有URL都會被封鎖，並顯示錯誤訊息。 這是postupgrade之後的預設模式。
-* **權限**:允許所有不屬於白名單的URL。
-* **警告**:所有非白色的URL皆允許使用，但JS解譯器會發出警告，讓管理員可以收集這些URL。 此模式添加JST-310027警告消息。
+* **阻止**: 不屬於白名單的所有URL都會被封鎖，並顯示錯誤訊息。 這是postupgrade之後的預設模式。
+* **權限**: 允許所有不屬於白名單的URL。
+* **警告**: 所有非白色的URL皆允許使用，但JS解譯器會發出警告，讓管理員可以收集這些URL。 此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -377,7 +380,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 預設情況下，所有動態頁都自動與啟動Web模 **塊的電腦的本地** Tomcat伺服器相關。 此配置在 **`<url>`** ServerConf.xml檔案的查 **詢中繼配置部分中輸** 入。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
-在遠程伺服器上中繼動態頁 **面** ;如果未在電腦上激活Web模組。 為此，必須將 **localhost** 替換為JSP和JSSP、Web應用程式、報告和字串的遠程電腦的名稱。
+在遠程伺服器上中繼動態頁 **面** ; 如果未在電腦上激活Web模組。 為此，必須將 **localhost** 替換為JSP和JSSP、Web應用程式、報告和字串的遠程電腦的名稱。
 
 有關各種可用參數的詳細資訊，請參 **閱serverConf.xml配置檔案** 。
 
@@ -389,10 +392,10 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 Adobe Campaign使用下列JSP頁面：
 
-* /nl/jsp/**soapruter.jsp**:用戶端主控台與網站服務連線(SOAP API)、
-* /nl/jsp/**m.jsp**:鏡像頁面，
-* /nl/jsp/**logon.jsp**:基於Web訪問報告和客戶端控制台的部署，
-* /nl/jsp/**s.jsp** :使用病毒式行銷（贊助和社交網路）。
+* /nl/jsp/**soapruter.jsp**: 用戶端主控台與網站服務連線(SOAP API)、
+* /nl/jsp/**m.jsp**: 鏡像頁面，
+* /nl/jsp/**logon.jsp**: 基於Web訪問報告和客戶端控制台的部署，
+* /nl/jsp/**s.jsp** : 使用病毒式行銷（贊助和社交網路）。
 
 「行動應用程式頻道」使用的JSSP如下：
 
@@ -454,7 +457,7 @@ sh
 
 在服務 **器配置檔案** 的執行節點中，需要引用blackstFile屬性中以前建立 **的檔案** 。
 
-**僅適用於Linux**:在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。 此用戶在配置檔案的 **exec** 節點中設定。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+**僅適用於Linux**: 在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。 此用戶在配置檔案的 **exec** 節點中設定。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 >[!NOTE]
 >
@@ -482,8 +485,8 @@ sh
 1. 在節 **`<relay>`** 點中，轉至中繼的HTTP標頭清單。
 1. 新增具 **`<responseheader>`** 有下列屬性的元素：
 
-   * **名稱**:標題名稱
-   * **值**:值名稱。
+   * **名稱**: 標題名稱
+   * **值**: 值名稱。
    例如：
 
    ```
@@ -492,7 +495,7 @@ sh
 
 ## 冗餘追蹤 {#redundant-tracking}
 
-當使用多部伺服器進行重新導向時，它們必須能夠透過SOAP呼叫彼此通訊，才能共用要重新導向之URL的資訊。 在發送啟動時，可能並非所有重定向伺服器都可用；因此，他們可能沒有相同程度的資訊。
+當使用多部伺服器進行重新導向時，它們必須能夠透過SOAP呼叫彼此通訊，才能共用要重新導向之URL的資訊。 在發送啟動時，可能並非所有重定向伺服器都可用； 因此，他們可能沒有相同程度的資訊。
 
 >[!NOTE]
 >
@@ -507,7 +510,7 @@ sh
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為true時啟用連接；這可讓您在所有重新導向伺服器上取得相同的組態。
+enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為true時啟用連接； 這可讓您在所有重新導向伺服器上取得相同的組態。
 
 要獲取電腦的主機名，請運行以下命令： **hostname -s**。
 
@@ -517,7 +520,7 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 它們會儲存在 **Adobe Campaign安裝目錄的** /var/res/instance目錄中。
 
-相符的URL為： **http://server/res/instance** ，其 **中instance** 是追蹤例項的名稱。
+相符的URL為： **http://server/res/instance** ，其 **中** instance是追蹤例項的名稱。
 
 通過向 **conf-`<instance>`** .xml檔案添加節點以配置伺服器上的儲存，可以指定另一個目錄。 這表示新增下列行：
 
@@ -607,9 +610,11 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 ## 代理連接配置 {#proxy-connection-configuration}
 
-如果您需要透過Proxy將Campaign伺服器連線至外部（例如使用檔案傳輸工作流程活動），則需要透過命令來設定serverConf的proxyConfig區段。 可能有下列代理連接：HTTP、HTTPS、FTP、SFTP。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+如果您需要透過Proxy將Campaign伺服器連線至外部（例如使用檔案傳輸工作流程活動），則需要透過命令來設定serverConf的proxyConfig區段。 可能有下列代理連接： HTTP、HTTPS、FTP、SFTP。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 >[!NOTE]
+>
+>從20.2開始，HTTP和HTTPS通訊協定參數不再可用。 下列資訊仍會提及這些參數，因為這些參數仍可用於先前的組建版本，包括9032。
 >
 >不支援SOCKS代理。
 
