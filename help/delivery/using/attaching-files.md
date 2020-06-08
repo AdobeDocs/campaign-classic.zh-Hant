@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,13 @@ ht-degree: 0%
 
 ## 關於電子郵件附件 {#about-email-attachments}
 
-您可以附加一或多個檔案至電子郵件傳送。 可能有兩種情況：
+您可以附加一或多個檔案至電子郵件傳送。
+
+>[!NOTE]
+>
+>為避免效能問題，建議每個電子郵件不要包含多個附件。 建議的臨界值可從「促銷活 [動傳統」選項清單中設定](../../installation/using/configuring-campaign-options.md#delivery)。
+
+可能有兩種情況：
 
 * 選取檔案，並依原樣附加至傳送。
 * 為每個收件者個人化附件的內容。 在這種情況下，您需要建立計算 **附件**: 附件的名稱在每條消息的發送時計算，具體取決於收件人。 如果您有「可變數位列印」選項，也可以在傳送時將內容個人化並轉 **換為PDF格式** 。
@@ -45,7 +51,7 @@ ht-degree: 0%
 >您可以附加數個檔案至傳送。 附件可以是任何格式，包括壓縮格式。
 
 1. 按一下 **[!UICONTROL Attachments]** 連結。
-1. Click the **[!UICONTROL Add]** button.
+1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 1. 按一 **[!UICONTROL File...]** 下以選取要附加至傳送的檔案。
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -92,7 +98,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-   然後，該檔案便可在伺服器上使用，以便附加到從此模板建立的不同傳送。
+然後，該檔案便可在伺服器上使用，以便附加到從此模板建立的不同傳送。
 
 ### 附加個人化訊息 {#attach-a-personalized-message}
 
@@ -120,6 +126,10 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
+>[!NOTE]
+>
+>為避免效能問題，如果您將即時從個人化URL下載的影像加入附件，預設每個影像大小不應超過100,000位元組。 此建議的臨界值可從「促銷活 [動傳統」選項清單中設定](../../installation/using/configuring-campaign-options.md#delivery)。
+
 ### 附加計算檔案 {#attach-a-calculated-file}
 
 您可以在準備交貨期間計算附件名稱。 若要這麼做，請選取選項 **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**。
@@ -131,7 +141,7 @@ ht-degree: 0%
 1. 指定您要套用至附件的標籤。
 1. 在定義窗口中指定檔案的訪問路徑及其確切名稱。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >該檔案必須存在於伺服器上。
 
@@ -156,7 +166,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >該檔案必須存在於伺服器上。
 
