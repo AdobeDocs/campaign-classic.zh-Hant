@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 0%
 
 ---
 
@@ -64,11 +67,11 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 可用的Web介面有四種類型：
 
-* **[!UICONTROL By brief]** :本機實體必須提供描述促銷活動設定的說明。 訂單核准後，中央實體會整體設定並執行促銷活動。
+* **[!UICONTROL By brief]** : 本機實體必須提供描述促銷活動設定的說明。 訂單核准後，中央實體會整體設定並執行促銷活動。
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** :本機實體可存取Web表單，可依使用的範本，編輯內容、目標、最大大小，以及使用個人化欄位建立和擷取日期。 本機實體可評估目標，並從此Web表單預覽內容。
+* **[!UICONTROL By form]** : 本機實體可存取Web表單，可依使用的範本，編輯內容、目標、最大大小，以及使用個人化欄位建立和擷取日期。 本機實體可評估目標，並從此Web表單預覽內容。
 
    ![](assets/mkt_distr_8.png)
 
@@ -80,8 +83,8 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** :本機實體可存取其外部網路（非Adobe Campaign）中的促銷活動參數。 這些參數與本機促銷活動(依 **表單)的參數相同**。
-* **[!UICONTROL Pre-set]** :本機實體使用預設表單來訂購促銷活動，而不進行本地化。
+* **[!UICONTROL By external form]** : 本機實體可存取其外部網路（非Adobe Campaign）中的促銷活動參數。 這些參數與本機促銷活動(依 **表單)的參數相同**。
+* **[!UICONTROL Pre-set]** : 本機實體使用預設表單來訂購促銷活動，而不進行本地化。
 
    ![](assets/mkt_distr_5.png)
 
@@ -112,7 +115,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 ### 檔案 {#documents}
 
-您可以允許本機實體運算子連結檔案（文字檔案、試算表、影像、促銷活動說明等）至本機促銷活動。 此連 **[!UICONTROL Advanced parameters for campaign entry...]** 結可讓您限制檔案數量。 若要這麼做，只需在欄位中輸入允許的最大 **[!UICONTROL Number of documents]** 數目。
+您可以允許本機實體運算子連結檔案（文字檔案、試算表、影像、促銷活動說明等） 至本機促銷活動。 此連 **[!UICONTROL Advanced parameters for campaign entry...]** 結可讓您限制檔案數量。 若要這麼做，只需在欄位中輸入允許的最大 **[!UICONTROL Number of documents]** 數目。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -171,7 +174,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 應用以下步驟：
 
 1. 在「促銷 **[!UICONTROL Navigation]** 活動」頁面的 **區段中** ，按一下連結 **[!UICONTROL Campaign packages]** 。
-1. Click the **[!UICONTROL Create]** button.
+1. 按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 
    ![](assets/mkg_dist_add_an_entry.png)
 
@@ -195,7 +198,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 ![](assets/s_advuser_mkg_dist_local_notif.png)
 
-### 受眾 {#audience}
+### 閱聽眾 {#audience}
 
 對於本機促銷活動，中央實體可以勾選，以指定所涉及的本機實體 **[!UICONTROL Limit the package to a set of local entities]**。
 
@@ -251,9 +254,9 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
-   完成可用參數並核准訂單。
+1. 完成可用參數並核准訂單。
 
-   系統會傳送通知給當地實體所屬的組織實體經理，以核准此訂單。
+1. 系統會傳送通知給當地實體所屬的組織實體經理，以核准此訂單。
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
@@ -275,7 +278,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
    有關詳情，請參閱「核准 [程式](#approval-process) 」一節。
 
-1. 接著會通知本機運算子促銷活動可用：促銷活動可用性可在促銷活動範圍內的促銷活動套件清 **單中** 。 然後可使用促銷活動。 For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
+1. 接著會通知本機運算子促銷活動可用： 促銷活動可用性可在促銷活動範圍內的促銷活動套件清 **單中** 。 然後可使用促銷活動。 For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
    選 **[!UICONTROL Start targeting with order approval]** 項可讓本機實體在訂單核准後立即執行促銷活動。
 
@@ -329,7 +332,7 @@ For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-
 
 ![](assets/mkg_dist_do_not_valid.png)
 
-如果審核者拒絕訂單，則相關通知會自動發送給相關的本地實體：它顯示由操作員輸入的拒絕批准的注釋。
+如果審核者拒絕訂單，則相關通知會自動發送給相關的本地實體： 它顯示由操作員輸入的拒絕批准的注釋。
 
 資訊會顯示在促銷活動套件的清單頁面或促銷活動順序頁面上。 如果本機實體有權存取Adobe Campaign主控台，就會收到此拒絕通知。
 
@@ -343,7 +346,7 @@ For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-
 
 每次需要核準時，審閱者都會收到電子郵件通知。
 
-對於每個本機實體，會選取審核者以進行促銷活動訂單核准和促銷活動核准。 有關選擇本地審核者的詳細資訊，請參閱「組 [織實體」](../../campaign/using/about-distributed-marketing.md#organizational-entities)。
+對於每個本機實體，會選取審核者以進行促銷活動訂單核准和促銷活動核准。 有關選擇本地審核者的詳細資訊，請參閱 [組織實體](../../campaign/using/about-distributed-marketing.md#organizational-entities)。
 
 >[!NOTE]
 >
