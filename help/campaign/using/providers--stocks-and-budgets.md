@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1906'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +72,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 >
 >有關詳情，請參閱：定 [義成本結構](#defining-the-cost-structure)。
 
-成本類別是指包含一組符合遞送類型（電子郵件、直效郵件等）資格的成本的實體。或是任務。 成本類別被分組到與服務提供商相關的服務模板中。 每個服務提供商都可以參考一個或多個服務模板。
+成本類別是指包含一組符合遞送類型（電子郵件、直效郵件等）資格的成本的實體。 或是任務。 成本類別被分組到與服務提供商相關的服務模板中。 每個服務提供商都可以參考一個或多個服務模板。
 
 要建立服務模板並定義其內容，請應用以下步驟：
 
@@ -81,7 +84,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * 輸入此成本類別的標籤，然後選擇相關的流程類型：透過、 **[!UICONTROL Direct mail]**、 **[!UICONTROL E-mail]**、、 **[!UICONTROL Mobile]****[!UICONTROL Telephone]**&#x200B;或傳送 **[!UICONTROL Fax]****[!UICONTROL Task]**。
+   * 輸入此成本類別的標籤，然後選擇相關的流程類型： 透過、 **[!UICONTROL Direct mail]**、 **[!UICONTROL E-mail]**、 **[!UICONTROL Mobile]**&#x200B;或 **[!UICONTROL Telephone]** 傳送 **[!UICONTROL Task]**。
    * 按一下按 **[!UICONTROL Add]** 鈕可定義與此類別關聯的成本類型。
    * 如有必要，請將庫存行與每種成本類型關聯，以便使用的數量將自動與現有庫存關聯。
 
@@ -108,9 +111,9 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
 * 要建立成本結構，請從下拉清單中選擇消息類型和相關的成本類別，以及將應用計算規則的成本類型。 這些下拉式清單的內容來自透過標籤輸入的 **[!UICONTROL Cost categories]** 資訊。
 
-   您必須為成本結構指定標籤。 依預設，它具有下列傳送大綱：成 **本類別——成本類型**。
+   您必須為成本結構指定標籤。 依預設，它具有下列傳送大綱： **成本類別——成本類型**。
 
-   不過，您可以重新命名它：直接在欄位中輸入所需 **[!UICONTROL Label]** 值。
+   不過，您可以重新命名它： 直接在欄位中輸入所需 **[!UICONTROL Label]** 值。
 
 * 成本計算公式定義在窗口的下部。
 
@@ -166,7 +169,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
 服務會透過傳送或工作與促銷活動關聯。 服務供應商會連結至傳送範本，以在透過此範本建立的傳送中提供其服務。
 
-當選擇服務時，與傳送類型（直接郵件、電子郵件等）對應的成本類別會自動在中央表格中指示，以及已定義的處理選項。
+當選擇服務時，與傳送類型（直接郵件、電子郵件等）對應的成本類別 會自動在中央表格中指示，以及已定義的處理選項。
 
 >[!NOTE]
 >
@@ -176,7 +179,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
    ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
-* 在行動頻道、傳真或電話上傳送時，會套用相同的選擇模式。
+* 對於在行動頻道或電話上傳送，則採用相同的選擇模式。
 * 對於電子郵件傳送，會從傳送屬性的標 **[!UICONTROL Advanced]** 簽中選取服務，如下列範例所示：
 
    ![](assets/s_ncs_user_supplier_email_delivery_select.png)
