@@ -69,7 +69,7 @@ ht-degree: 0%
 * 對於 **PostgreSQL** 或 **** DB2引擎，必須指定在應用程式伺服器上定義的DNS名稱（或IP地址）才能訪問資料庫伺服器。
 * 對於 **Microsoft SQL Server** Engine，必須定義：
 
-   1. 應用伺服器上定義的用於訪問資料庫伺服器的DNS名稱（或IP地址）: **DNS** 或 **DNS\`<instance>`**（例項模式）,
+   1. 應用伺服器上定義的用於訪問資料庫伺服器的DNS名稱（或IP地址）: **DNS** 或 **DNS\ `<instance>`**（例項模式）,
    1. 用於訪問Microsoft SQL Server的驗證方法： **[!UICONTROL SQL Server authentication]** 或 **[!UICONTROL Windows NT authentication]**&#x200B;者。
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
