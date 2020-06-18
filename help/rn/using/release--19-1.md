@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
+source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+workflow-type: tm+mt
+source-wordcount: '2693'
+ht-degree: 1%
 
 ---
 
@@ -74,7 +77,7 @@ _2019年8月13日_
 
 ## 版本19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 2020 **年4月29日**:新建版本(9032@3a9dc9c)，其中包含下列修正：
+![](assets/do-not-localize/green_2.png) **2020年4月29日**: 新建版本(9032@3a9dc9c)，其中包含下列修正：
 
 * 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，可聯絡客戶服務。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱「安全性與隱私權」核 [對清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 * 修正影像無法顯示在「行」傳送上的問題。 (NEO-23207)
@@ -90,30 +93,30 @@ _2019年8月13日_
 * 修正導致清除工作流程當機的回歸。
 * 修正清除工作流程記錄檔中的次要回歸。
 
-![](assets/do-not-localize/orange_2.png) 2020 **年3月5日**:新建版本(9032@19f73c5)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **2020年3月5日**: 新建版本(9032@19f73c5)，其中包含下列修正：
 
 * 修正使用FTP over SSL的外部帳戶的問題。 (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) 2019 **年12月17日**:新建版本(9032@d6b8062)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **2019年12月17日**: 新建版本(9032@d6b8062)，其中包含下列修正：
 
-* 修正下列通訊管道的追蹤問題：行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。 (NEO-19595)
+* 修正下列通訊管道的追蹤問題： 行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。 (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) 2019 **年12月11日**:新建版本(9032@bc4a935)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **2019年12月11日**: 新建版本(9032@bc4a935)，其中包含下列修正：
 
 * 修正了使用MSSQL資料庫發送消息時的效能問題。 (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) 2019 **年11月20日**:新建版本(9032@3468c7b)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **2019年11月20日**: 新建版本(9032@3468c7b)，其中包含下列修正：
 
 * 已修正透過IMS驗證的登入問題。 (NEO-17312)
 * 修正在多個傳送上顯示累積報表的問題。 (NEO-18165)
 * 已修正可能會封鎖或造成Web伺服器當機的問題。
 
-![](assets/do-not-localize/orange_2.png) 2019 **年9月19日**:新建版本(9032@cee805c)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **2019年9月19日**: 新建版本(9032@cee805c)，其中包含下列修正：
 
 * 修正使用Salesforce的CRM連接器時的問題。 (NEO-17712)
 * 修正在傳送事務性訊息時，可能導致效能問題的索引問題。
 
-![](assets/do-not-localize/orange_2.png) 2019 **年8月13日**:初始19.1.4版本，包含下列修正：
+![](assets/do-not-localize/orange_2.png) **2019年8月13日**: 初始19.1.4版本，包含下列修正：
 
 * 修正在精靈設定期間，排程器活動產生不想要的錯誤訊息的問題。 回復NEO-11662的更新。 (NEO-17097)
 * 修正NEO-12727造成的回歸，當執行兩次測試活動時，此回歸可能導致工作流程停止。 (NEO-16835)
@@ -153,7 +156,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>為了提高管理員使用者的工作效率，請監控儲存空間、將IP位址列入白名單，以及為每個例項安裝SSH金鑰，以管理SFTP伺服器的設定。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參 <a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">閱詳細說明</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">檔案和操作視訊</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
+   <td> <p>為了提高管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增IP位址以允許清單，並為每個執行個體安裝SSH金鑰。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參 <a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">閱詳細說明</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">檔案和操作視訊</a>。 </p><p>注意： 升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
   </tr> 
     <tr> 
    <td> 稽核記錄<br /> </td> 
@@ -195,28 +198,28 @@ _2019年5月30日_
 
 **護欄、穩健性與可擴充性改進**
 
-* 使用期限- XtkNewId序列使用最佳化：最耗用的表格已從xtkNewId序列移至專用序列。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
-* HTTP v2的FDA:fda over HTTP通訊協定廣泛用於混合部署，尤其是廣泛的Log擷取與傳送準備。 已增強穩健性，以避免在擷取或推送資料時發生網路問題和可能的錯誤。 這要求連接兩端的內建都是最新的，否則仍會使用舊協定。
-* 追蹤工作流程：增強了跟蹤工作流的魯棒性。 與追蹤記錄插入／更新和URL追蹤自訂相關的數個問題已修正。 此外，追蹤工作流程現在會偵測可能導致錯誤並停止工作流程的追蹤記錄問題。 現在會捨棄這些問題，而不加以處理。
-* 清除工作流程：已改善清除工作流程，以避免可能的錯誤和停止。 這樣可以優化資料庫大小和效能。
-* 將映像嵌入事務性消息：我們新增了對交易訊息中內嵌影像的完整支援，以避免可能當機或遺失影像。
-* 資料庫大小- XtkJobLog:已將清除機制添加到此表中。 這對資料庫大小有積極影響。
-* 密件副本歸檔：BCC封存的預設參數已變更，以提高封存速度。 [閱讀更多資訊](../../installation/using/email-archiving.md#parameters)
-* 資料庫結構更新：資料庫結構更新嚮導生成的SQL請求已得到改進，以加快執行速度。
-* 操作員操作的護欄：為防止營運商執行可能影響平台完整性的動作，已實施數項防護措施。 無法再透過介面刪除內建結構描述。 此外，非管理員使用者無法再編輯工作流程來源XML。
-* 已提供兩個新選項： **XtkSecurity_Restrict_EditXML** （可讓您停用傳送的XML程式碼版本）和 **NmsOperation_OperationMgtDebug** （可讓您監控操作管理技術工作流程執行）。 [閱讀更多資訊](../../installation/using/configuring-campaign-options.md)
+* 使用期限- XtkNewId序列使用最佳化： 最耗用的表格已從xtkNewId序列移至專用序列。 [詳細內容](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* HTTP v2的FDA: fda over HTTP通訊協定廣泛用於混合部署，尤其是廣泛的Log擷取與傳送準備。 已增強穩健性，以避免在擷取或推送資料時發生網路問題和可能的錯誤。 這要求連接兩端的內建都是最新的，否則仍會使用舊協定。
+* 追蹤工作流程： 增強了跟蹤工作流的魯棒性。 與追蹤記錄插入／更新和URL追蹤自訂相關的數個問題已修正。 此外，追蹤工作流程現在會偵測可能導致錯誤並停止工作流程的追蹤記錄問題。 現在會捨棄這些問題，而不加以處理。
+* 清除工作流程： 已改善清除工作流程，以避免可能的錯誤和停止。 這樣可以優化資料庫大小和效能。
+* 將映像嵌入事務性消息： 我們新增了對交易訊息中內嵌影像的完整支援，以避免可能當機或遺失影像。
+* 資料庫大小- XtkJobLog: 已將清除機制添加到此表中。 這對資料庫大小有積極影響。
+* 密件副本歸檔： BCC封存的預設參數已變更，以提高封存速度。 [詳細內容](../../installation/using/email-archiving.md#parameters)
+* 資料庫結構更新： 資料庫結構更新嚮導生成的SQL請求已得到改進，以加快執行速度。
+* 操作員操作的護欄： 為防止營運商執行可能影響平台完整性的動作，已實施數項防護措施。 無法再透過介面刪除內建結構描述。 此外，非管理員使用者無法再編輯工作流程來源XML。
+* 已提供兩個新選項： **XtkSecurity_Restrict_EditXML** （可讓您停用傳送的XML程式碼版本）和 **NmsOperation_OperationMgtDebug** （可讓您監控操作管理技術工作流程的執行）。 [詳細內容](../../installation/using/configuring-campaign-options.md)
 
 **其他變更**
 
-* 推播通知：我們現在支援iOS推播的「執行緒ID」選項。
+* 推播通知： 我們現在支援iOS推播的「執行緒ID」選項。
 * 已改善可能導致錯誤等級問題的長名稱索引管理。
-* 現在，在分析反編譯傳送期間，如果發佈模式在部署精靈中設 **[!UICONTROL None]** 定為，則會記錄錯誤並停止分析：&quot;發佈模式設定為&#39;無&#39;:無法嵌入影像。 功能手機無法顯示影像。」 (NEO-12208)
+* 現在，在分析反編譯傳送期間，如果發佈模式在部署精靈中設 **[!UICONTROL None]** 定為，則會記錄錯誤並停止分析： &quot;發佈模式設定為&#39;無&#39;: 無法嵌入影像。 功能手機無法顯示影像。」 (NEO-12208)
 * 交易訊息的廣播管理已經改善。 當廣播從執行例項同步到控制例項時，@lastModified欄位會更新至系統的目前日期。 MC_Update_BlLastModified選項已添加到控制實例。 True表示目前日期將用於控制例項（預設行為）。 False表示我們使用執行例項廣告的@lastModified日期。 (NEO-12579)
 * 已在抵用券臨時表格中新增索引，以最佳化傳送。 (NEO-12437)
 * 在Analytics整合中，現在允許擷取含%字元的AAM區段資料。 (NEO-12025)
 * 已移除「工作流程熱圖」中的10,000個記錄限制，以修正遺失的資料問題。 (NEO-12329)
 * 不支援Open Office，現在已完全從應用程式移除。 如果您仍在使用它，請移至Libre Office，因為從19.1開始，它將無法運作。
-* 您現在可以使用sysfilter屬性限制對工作流中更新資料活動的「寫入」訪問。 [閱讀更多資訊](../../configuration/using/filtering-schemas.md)
+* 您現在可以使用sysfilter屬性限制對工作流中更新資料活動的「寫入」訪問。 [詳細內容](../../configuration/using/filtering-schemas.md)
 
 **修補程式**
 
