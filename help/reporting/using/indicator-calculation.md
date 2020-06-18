@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '2980'
+ht-degree: 1%
 
 ---
 
@@ -27,10 +30,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -66,10 +69,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -138,7 +141,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 **依網域劃分**
 
-報告的第二部分詳細說明按Internet網域（而非錯誤類型）劃分失敗訊息的詳細資訊。 在本例中，連結至 **Error** indicator(@value)的公式為：Count（@status=2和@domain=&quot;域名的值&quot;），即對此域狀態失敗的所有消息的計數。
+報告的第二部分詳細說明按Internet網域（而非錯誤類型）劃分失敗訊息的詳細資訊。 在本例中，連結至 **Error** indicator(@value)的公式為： Count（@status=2和@domain=&quot;域名的值&quot;），即對此域狀態失敗的所有消息的計數。
 
 ## 瀏覽器 {#browsers-1}
 
@@ -149,10 +152,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -182,10 +185,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -217,10 +220,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -286,10 +289,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -319,10 +322,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -330,7 +333,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
    <td> 開啟次數 <br /> </td> 
    <td> @open<br /> </td> 
    <td> 網頁追蹤表格中的追蹤行總數。<br /> </td> 
-   <td> 計數<br /> </td> 
+   <td> Count<br /> </td> 
   </tr> 
   <tr> 
    <td> 劃分<br /> </td> 
@@ -354,10 +357,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -365,7 +368,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
    <td> 新連絡人<br /> </td> 
    <td> @newContacts<br /> </td> 
    <td> 連結至收件者的訪客數目計數。<br /> </td> 
-   <td> 公式：count(@id)<br /> Filter:@recipient-id != 0<br /> </td> 
+   <td> 公式： count(@id)<br /> Filter: @recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> 開啟的郵件<br /> </td> 
@@ -391,10 +394,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -424,10 +427,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -459,10 +462,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -506,10 +509,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -564,7 +567,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
   <tr> 
    <td> 投訴<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> 狀態等於「失敗」且原因等於「黑名單地址」的訊息計數。<br /> </td> 
+   <td> 狀態等於「失敗」且原因等於「新增至區塊清單的位址」的訊息計數。<br /> </td> 
    <td> Count（@status=2和msg/@failureReason=8）<br /> </td> 
   </tr> 
   <tr> 
@@ -703,10 +706,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -726,7 +729,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
    <td> 累積的點按次數<br /> </td> 
    <td> @totalClicks<br /> </td> 
    <td> 目標收件者點按總次數與成功傳送訊息次數的比率。<br /> </td> 
-   <td> percent([indicator/@totalRecipientClick], [indicators/@success])<br /> </td> 
+   <td> percent([indicator/@totalRecipientClick], [indicator/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> 點按次數<br /> </td> 
@@ -750,10 +753,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -766,7 +769,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
   <tr> 
    <td> 規則拒絕的訊息<br /> </td> 
    <td> @reject<br /> </td> 
-   <td> 在分析期間根據分類規則忽略的地址數：未指定的地址、隔離的地址、黑名單等。<br /> </td> 
+   <td> 在分析期間根據分類規則忽略的地址數： 未指定的地址、隔離的地址、添加到塊清單中的地址等。<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
@@ -809,10 +812,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -844,10 +847,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -903,10 +906,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>標籤</strong><br /> </th> 
-   <th> <strong>欄位名稱</strong><br /> </th> 
-   <th> <strong>指標說明</strong><br /> </th> 
-   <th> <strong>指標計算公式</strong><br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
+   <th> <strong>欄位名稱</strong> <br /> </th> 
+   <th> <strong>指標說明</strong> <br /> </th> 
+   <th> <strong>指標計算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
