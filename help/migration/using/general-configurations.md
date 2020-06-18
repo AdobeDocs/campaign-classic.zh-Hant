@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '2822'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 1. 請確定兩個伺服器上的時區檔案都相同。
 
-如需詳細資訊，請造訪： [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004)。
+如需詳細資訊，請造訪： [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
 客戶端和伺服器之間的時區未對準也會導致一些滯後。 這就是為什麼建議在客戶端和伺服器端使用相同版本的Oracle庫，兩個時區必須相同。
 
@@ -89,7 +92,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 >[!IMPORTANT]
 >
->基於安全性原因，Adobe Campaign平台不再預設為可存取：您必須設定安全區，因此必須收集營運商IP位址。
+>基於安全性原因，Adobe Campaign平台不再預設為可存取： 您必須設定安全區，因此必須收集營運商IP位址。
 
 Adobe Campaign v7包含安全區 **的概念**。 每個用戶都必須與區域關聯才能登錄到實例，並且用戶的IP地址必須包含在安全區域中定義的地址或地址範圍中。 您可在Adobe Campaign伺服器設定檔案中設定安全區。 必須在控制台(**[!UICONTROL Administration > Access management > Operators]**)中定義用戶關聯到的安全區。
 
@@ -156,7 +159,7 @@ nlserver config -internalpassword
 
 ### Sessiontoken參數 {#sessiontoken-parameter}
 
-在v5中， **sessiontoken** 參數適用於用戶端（概述類型畫面、連結編輯器等的清單）和伺服器端（網路應用程式、報表、jsp、jssp等）。 在v7中，它只適用於伺服器端。 如果您想要回到v5的完整功能，您必須使用此參數修改連結，並透過連線頁面傳遞：
+在v5中， **sessiontoken** 參數適用於用戶端（概述類型畫面、連結編輯器等的清單） 和伺服器端（網路應用程式、報表、jsp、jssp等）。 在v7中，它只適用於伺服器端。 如果您想要回到v5的完整功能，您必須使用此參數修改連結，並透過連線頁面傳遞：
 
 連結範例：
 
@@ -192,7 +195,7 @@ nlserver config -internalpassword
 
 ```
 <url IPMask="" deny="" hostMask="" httpAllowed="true" relayHost="true" relayPath="true"
-           status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
+           status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
 ```
 
 ## 語法 {#syntax}
@@ -253,19 +256,19 @@ Adobe Campaign v7整合了更新的JavaScript解譯器。 但是，此更新可�
 
 為了加強例項安全性，Adobe Campaign v7已引入新語法，以取代以SQLData為基礎的語法。 如果您將此語法與這些程式碼元素搭配使用，則必須加以修改。 主要內容是：
 
-* 依子查詢篩選：新語法是以元素為 `<subQuery>` 基礎，以定義子查詢
-* 匯總：新語法為&quot;aggregate function(collection)&quot;
-* 依連結篩選：新語法為 `[schemaName:alias:xPath]`
+* 依子查詢篩選： 新語法是以元素為 `<subQuery>` 基礎，以定義子查詢
+* 匯總： 新語法為&quot;aggregate function(collection)&quot;
+* 依連結篩選： 新語法為 `[schemaName:alias:xPath]`
 
 查詢定義(xtk:queryDef)架構已修改：
 
-* 可用 `<subQuery>` 於替換SQLData中包含的SELECT的新元素
+* 有新元 `<subQuery>` 素可用來替換SQLData中包含的SELECT
 * 為@setOperator屬性引入兩個新值&quot;IN&quot;和&quot;NOT IN&quot;
-* 新元 `<where>` 素，是元素的子 `<node>` 項：這可讓您在SELECT中進行「子選擇」
+* 新元 `<where>` 素，是元素的子 `<node>` 項： 這可讓您在SELECT中進行「子選擇」
 
-使用&quot;@expr&quot;屬性時，可能存在SQLData。 可搜尋下列詞語：&quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
+使用&quot;@expr&quot;屬性時，可能存在SQLData。 可搜尋下列詞語： &quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
 
-Adobe Campaign v7例項預設會受到保護。 安全性來自檔案中安全區的定 **[!UICONTROL serverConf.xml]** 義：allowSQLInjoffent **** 屬性管理SQL語法安全性。
+Adobe Campaign v7例項預設會受到保護。 安全性來自檔案中安全區的定 **[!UICONTROL serverConf.xml]** 義： allowSQLInjoffent **** 屬性管理SQL語法安全性。
 
 如果在配置級執行期間發生SQLData錯誤，則必須修改此屬性以暫時允許使用基於SQLData的語法，從而允許重寫代碼。 為此，必須在serverConf.xml檔案中變更 **下列選項** :
 
@@ -443,7 +446,7 @@ allowSQLInjection="false"
 
    如果警告涉及資源衝突，則需要操作員注意才能解決。
 
-* postupgrade **.log`<server version number>`檔案的postupgrade_`>`** _time包含同步結果。 預設情況下，它位於以下目錄：安 **裝目錄/var/`<instance>`postupgrade**。 錯誤和警告由錯誤和警 **告屬** 性 **指示** 。
+* postupgrade **.log`<server version number>`檔案的postupgrade_`>`** _time包含同步結果。 預設情況下，它位於以下目錄： **安裝目錄/var/`<instance>`postupgrade**。 錯誤和警告由錯誤和警 **告屬** 性 **指示** 。
 
 ### 解決衝突 {#resolve-a-conflict}
 
@@ -456,9 +459,9 @@ allowSQLInjection="false"
 
 解決衝突有三種可能的方法：
 
-* **[!UICONTROL Declared as resolved]**:需要營運商事先介入。
-* **[!UICONTROL Accept the new version]**:如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
-* **[!UICONTROL Keep the current version]**:表示更新遭拒。
+* **[!UICONTROL Declared as resolved]**: 需要營運商事先介入。
+* **[!UICONTROL Accept the new version]**: 如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
+* **[!UICONTROL Keep the current version]**: 表示更新遭拒。
 
    >[!IMPORTANT]
    如果選擇此解析模式，則可能丟失新版本中的修補程式。 因此，強烈建議不要將此選項用於或僅保留給專家運算子。
@@ -474,7 +477,7 @@ allowSQLInjection="false"
    ![](assets/s_ncs_production_conflict003.png)
 
 1. 前往您已解決的衝突。 按一下圖 **[!UICONTROL Actions]** 示並選取 **[!UICONTROL Declare as resolved]**。
-1. 儲存變更：衝突現已解決。
+1. 儲存變更： 衝突現已解決。
 
 ## Tomcat {#tomcat}
 
@@ -509,7 +512,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 >[!IMPORTANT]
 如果某些使用已設定選件的傳送要在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，則會提供「相容模式」。 不建議使用此模式，因為Interaction v7中的所有新功能都不會讓您受益。 這是一種過渡模式，可讓您在實際6.1移轉之前完成持續的促銷活動。 有關此模式的更多資訊，請與我們聯絡。
 
-Adobe Campaign v7檔案夾中的&#x200B;**Migration**&#x200B;檔案夾提供移動指令碼(interactionTo610_full_XX.js **** )範例。 此檔案顯示客戶端指令碼的範例，每個選件（和欄位）都使用單一電子 **[!UICONTROL htmlSource]** 郵件 **[!UICONTROL textSource]** 表示法。 NmsEmailOfferView表中 **** 的內容已移到選件表。
+Adobe Campaign v7檔案夾中的&#x200B;**Migration**&#x200B;檔案夾提供移動指令碼(interactionTo610_full_XX.js **** )範例。 此檔案顯示客戶端指令碼的範例，每個選件（和欄位）使用單一電子 **[!UICONTROL htmlSource]** 郵件 **[!UICONTROL textSource]** 表示法。 NmsEmailOfferView表中 **** 的內容已移到選件表。
 
 >[!NOTE]
 使用此指令碼不允許您從「內容管理」和「轉換函式」選項中獲益。 為了從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
@@ -617,7 +620,7 @@ logInfo("Done");
 
 ### 標準報表 {#standard-reports}
 
-所有標準報表目前都使用轉換引擎v6.x。如果您已將JavaScript新增至這些報表，某些元素可能不再有效。 事實上，舊版JavaScript與v6.x轉換引擎不相容。 因此，您必須檢查JavaScript程式碼，並稍後加以調整。 您應測試每個報表，尤其是匯出功能。
+所有標準報表目前都使用轉換引擎v6.x。 如果您已將JavaScript新增至這些報表，某些元素可能不再有效。 事實上，舊版JavaScript與v6.x轉換引擎不相容。 因此，您必須檢查JavaScript程式碼，並稍後加以調整。 您應測試每個報表，尤其是匯出功能。
 
 ### 個人化報表 {#personalized-reports}
 
