@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -28,8 +31,8 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 只有一個外 **部帳戶** ，其設定如下：
 
-* **內部名稱**:Adobe_Marketing_Cloud
-* **類型**:Adobe Marketing Cloud
+* **內部名稱**: Adobe_Marketing_Cloud
+* **類型**: Adobe Marketing Cloud
 
 刪除具有相同設定的任何重複外部帳戶。
 
@@ -37,13 +40,13 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 如果外部帳戶有「產 **品內容** 」欄位，請檢查其值是否設為： **dma_campaign_classic**
 
-請確定您的產品內容與Campaign和Experience cloud相同。
+請確定您的產品內容與Campaign和Experience Cloud相同。
 
-例如，如果未顯 **示「產品內容** 」，則預設產品內容應為 **dma_campaign** （在Campaign和Experience cloud中）。 如果出 **現「產品內容** 」欄位，則預設產品內容應為 **dma_campaign_classic** （在Campaign和Experience cloud中）。
+例如，如果未顯 **示「產品內容** 」，則預設產品內容應為 **dma_campaign** （在Campaign和Experience Cloud中）。 如果出 **現「產品內容** 」欄位，則預設產品內容應為 **dma_campaign_classic** （在Campaign和Experience Cloud中）。
 
 **[!UICONTROL IMS Server URL]**
 
-在Campaign **Adobe Marketing cloud外部帳戶中，檢查** 是 **[!UICONTROL IMS Server URL]** adobeid-na1.services.adobe.com或 [ims-na1.adobelogin.com](https://adobeid-na1.services.adobe.com/)[](http://ims-na1.adobelogin.com/)。 請確定舞台和生產執行個體都指向相同的IMS生產端點。
+在Campaign **Adobe Marketing Cloud外部帳戶中，檢查** 是 **[!UICONTROL IMS Server URL]** adobeid-na1.services.adobe.com或 [ims-na1.adobelogin.com](https://adobeid-na1.services.adobe.com/)[](http://ims-na1.adobelogin.com/)。 請確定舞台和生產執行個體都指向相同的IMS生產端點。
 
 **關聯遮色片**
 
@@ -62,7 +65,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 **回呼URL**
 
-回 **呼URL** 應列入白名單，並以&quot;https://&quot;開頭。 檢查回 **呼URL** 是否連結至對應的例項。 例如，生產例項應重新導向至生產URL。
+回 **呼URL** 應新增至允許清單，並以「https://」開頭。 檢查回 **呼URL** 是否連結至對應的例項。 例如，生產例項應重新導向至生產URL。
 
 **用戶端ID與密碼**
 
