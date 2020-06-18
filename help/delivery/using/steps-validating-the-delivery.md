@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b0bcdfca1767aab5c54f06a5af5fb9097d2ec6f
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1676'
 ht-degree: 3%
 
 ---
@@ -181,7 +181,7 @@ ht-degree: 3%
 可以使用以下選項：
 
 * 第一個選項可讓您將校對加倍。
-* 以下兩個選項都可讓您將黑名單收件人和地址保留在隔離中。 請參閱自訂排除設定中主要目標的這些選 [項說明](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)。 與遞送的目標（預設會排除這些位址）不同，它們預設會保留在證明的目標。
+* 以下兩個選項都允許您將位於塊清單和地址中的收件人保留在隔離中。 請參閱自訂排除設定中主要目標的這些選 [項說明](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)。 與遞送的目標（預設會排除這些位址）不同，它們預設會保留在證明的目標。
 * 選 **[!UICONTROL Keep the delivery code for the proof]** 項可讓您提供與傳送相關之傳送所定義之傳送代碼相同的傳送代碼。 此程式碼是在傳送精靈的第一個步驟中指定。
 * 依預設，證明的主旨是前置詞「證明#」，其中#是證明的編號。 您可以在欄位中變更此首 **[!UICONTROL Label prefix]** 碼。
 
