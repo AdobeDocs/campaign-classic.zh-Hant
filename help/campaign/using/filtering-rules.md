@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 3%
 
 預設提供兩個篩選規則： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** )和 **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** )。 在電子郵件分析期間，這些規則會比較收件者電子郵件地址與傳送能力例項中管理之加密全域隱藏清單中所包含之禁止地址或網域名稱。 如果有相符項目，則不會傳送訊息給該收件者。
 
-這是為了避免因惡意活動而列入黑名單，尤其是使用Spamtrap。 例如，如果使用Spamtrap來透過您的其中一個Web表單進行訂閱，系統會自動傳送確認電子郵件給該Spamtrap，這會自動將您的位址列入黑名單。
+這是為了避免由於惡意活動（尤其是使用Spamtrap）而添加到阻止清單。 例如，如果使用Spamtrap來透過您的其中一個Web表單訂閱，系統會自動傳送確認電子郵件給該Spamtrap，如此會自動將您的位址新增至封鎖清單。
 
 >[!NOTE]
 >
