@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
@@ -31,12 +34,12 @@ SpamAssassin運用多種垃圾郵件偵測技術，包括：
 * 基於DNS和基於模糊校驗和的垃圾郵件檢測
 * 貝葉斯濾波
 * 外部程式
-* 黑名單
+* 塊清單
 * 線上資料庫
 
 >[!NOTE]
 >
->SpamAssassin必須安裝並設定在Adobe Campaign應用程式伺服器上。 如需詳細資訊，請參閱[本小節](../../installation/using/configuring-spamassassin.md)。
+>SpamAssassin必須安裝並設定在Adobe Campaign應用程式伺服器上。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-spamassassin.md)。
 >
 >控管元素是否為垃圾訊息的規則會透過SpamAssassin管理，且可由具有權限的管理員編輯。
 
@@ -61,7 +64,7 @@ SpamAssassin運用多種垃圾郵件偵測技術，包括：
 
 1. 按一下 **[!UICONTROL More...]** 警告旁的連結。
 1. 選擇選 **[!UICONTROL Anti-spam checking]** 項卡。
-1. 請至區段 **[!UICONTROL Points / Rule / Description]** 以檢視此風險的原因。
+1. 請至本節 **[!UICONTROL Points / Rule / Description]** 以檢視此風險的原因。
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
