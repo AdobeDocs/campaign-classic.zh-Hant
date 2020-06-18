@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a1192bc804e752d13af869da66ba0505c077ed19
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 開始傳送電子郵件是一個敏感的步驟，因為平台沒有任何使用記錄，而且當傳送的IP從未用於此目的時，就沒有信譽。
 
-* ISP自然會懷疑從未用於傳送電子郵件的IP位址，而且會突然開始傳送大量電子郵件流量。 事實上，垃圾郵件發送者通常使用「未知」的IP位址（從未列入黑名單的位址），在偵測到訊息之前，傳送最多的訊息。
+* ISP自然會懷疑從未用於傳送電子郵件的IP位址，而且會突然開始傳送大量電子郵件流量。 事實上，垃圾郵件發送者通常使用「未知」的IP位址（從未新增至區塊清單的位址），在偵測前傳送最多的訊息。
 
 * 在生產階段開始時，您無法期望在產出方面達到操作速度。 此外，您不應嘗試以此速率發送消息，因為這可能導致ISP阻塞發送地址，並嚴重危害啟動階段的其他階段。
 
