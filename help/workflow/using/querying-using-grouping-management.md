@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在視窗中 **[!UICONTROL Sorting]** ，以遞減順序排序電子郵件網域。 要執行此操作，請 **[!UICONTROL Yes]** 檢入列 **[!UICONTROL Descending sort]** 。 按一下 **[!UICONTROL Next]**.
+1. 在視窗中 **[!UICONTROL Sorting]** ，以遞減順序排序電子郵件網域。 要執行此操作，請 **[!UICONTROL Yes]** 檢入列 **[!UICONTROL Descending sort]** 。 按一下「**[!UICONTROL Next]**」。
 
    ![](assets/query_editor_nveau_70.png)
 
@@ -57,15 +60,15 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    此資料分組窗口僅在選中該 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框時顯示。
 
-   ![](assets/query_editor_blacklist_04.png)
+   ![](assets/query_editor_blocklist_04.png)
 
 1. 在視窗 **[!UICONTROL Grouping condition]** 中，指出主要金鑰計數大於30，因為我們只希望傳回超過30次的電子郵件網域作為結果。
 
-   選中該框時，將 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 顯示此窗口：這是篩選分組結果(HAVING)的地方。
+   選中該框時，將 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 顯示此窗口： 這是篩選分組結果(HAVING)的地方。
 
-   ![](assets/query_editor_blacklist_05.png)
+   ![](assets/query_editor_blocklist_05.png)
 
-1. 在視窗中 **[!UICONTROL Data formatting]** ，按一下 **[!UICONTROL Next]**:這裡不需要格式設定。
-1. 在資料預覽視窗中，按一下 **[!UICONTROL Launch data preview]**:在此，會傳回3個以上30次為目標的不同電子郵件網域。
+1. 在視窗中 **[!UICONTROL Data formatting]** ，按一下 **[!UICONTROL Next]**: 這裡不需要格式設定。
+1. 在資料預覽視窗中，按一下 **[!UICONTROL Launch data preview]**: 在此，會傳回3個以上30次為目標的不同電子郵件網域。
 
-   ![](assets/query_editor_blacklist_06.png)
+   ![](assets/query_editor_blocklist_06.png)
