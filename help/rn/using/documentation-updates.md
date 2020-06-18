@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39b8f4af256c23744a2b6e5978964e4b3207aafb
+source-git-commit: c1b0980d540992538f7961afd7c218888dee4a39
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6708'
 ht-degree: 8%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 8%
 本頁列出每個月的所有新功能和檔案更新，以及促銷活動版本。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
+
+## 2020年6月 {#june-2020}
+
+「白名單」和「黑名單」詞語都已從Adobe Campaign檔案中移除。 產品UI、選項名稱和內部代碼中可能仍會出現這些詞語，但在即將發行的促銷活動版本中，這些詞語會以「blocklist」和「allowlist」取代。
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -578,7 +582,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
