@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3608'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 >
 >這些組態必須由管理員執行，且僅 **適用於內部部署** 代管模型。
 >
->對於 **代管** (Hosted)部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IP白名單或URL權限）。
+>對於 **代管** (Hosted)部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IP允許清單管理或URL權限）。
 
 如需詳細資訊，請參閱下列章節：
 
@@ -209,7 +209,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 定義區域後，必須將每個運算子連結到其中一個運算子，才能登錄到實例，並且該運算子的IP地址必須包含在區域中引用的地址或地址範圍中。
 
-區域的技術配置是在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
+區域的技術組態會在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
 
 在此之前，您必須首先配置現成枚舉，以將標籤連結到 **[!UICONTROL Security zone]** serverConf.xml檔案中定義的區 **域的內部名稱** 。
 
@@ -358,9 +358,9 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 存在三種連接保護模式：
 
-* **阻止**: 不屬於白名單的所有URL都會被封鎖，並顯示錯誤訊息。 這是postupgrade之後的預設模式。
-* **權限**: 允許所有不屬於白名單的URL。
-* **警告**: 所有非白色的URL皆允許使用，但JS解譯器會發出警告，讓管理員可以收集這些URL。 此模式添加JST-310027警告消息。
+* **阻止**: 不屬於允許清單的所有URL都被阻止，並出現錯誤消息。 這是postupgrade之後的預設模式。
+* **權限**: 允許所有不屬於允許清單的URL。
+* **警告**: 不屬於允許清單的所有URL皆允許，但JS解譯器會發出警告，讓管理員可以收集這些URL。 此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,9 +372,9 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 >[!IMPORTANT]
 >
->根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應聯絡其管理員以將它列入白名單。
+>根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應連絡其管理員以將其新增至允許清單。
 >
->來自移轉的現有客戶可使用警 **告模式** 一段時間。 同時，他們需要在授權URL之前分析出站流量。 定義授權URL清單後，應連絡其管理員，將URL加入白名單並啟 **用封鎖模式**。
+>來自移轉的現有客戶可使用警 **告模式** 一段時間。 同時，他們需要在授權URL之前分析出站流量。 定義授權URL的清單後，他們應連絡其管理員，將URL新增至允許清單並啟 **用封鎖模式**。
 
 ## 動態頁面安全性與中繼 {#dynamic-page-security-and-relays}
 
@@ -455,7 +455,7 @@ sh
 >
 >這份清單並非完整無遺。
 
-在服務 **器配置檔案** 的執行節點中，需要引用blackstFile屬性中以前建立 **的檔案** 。
+在服務 **器配置檔案** 的exec節點中，需要引用blocklistFile屬性中先前建立的 **檔案** 。
 
 **僅適用於Linux**: 在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。 此用戶在配置檔案的 **exec** 節點中設定。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
@@ -467,7 +467,7 @@ sh
 
 ```
 <serverConf>
- <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
+ <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
 </serverConf>
 ```
 
@@ -594,7 +594,7 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 ## 限制可上載檔案 {#limiting-uploadable-files}
 
-新的屬性 **uploadWhiteList** ，可讓您限制可在Adobe Campaign伺服器上上傳的檔案類型。
+新的屬性 **uploadAllowList** ，可讓您限制可在Adobe Campaign伺服器上上傳的檔案類型。
 
 此屬性可在serverConf.xml文 **件的dataStore****元素中使用** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
@@ -602,7 +602,7 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 要限制可能的格式，必須用有效的java規則運算式替換屬性值。 您可以用逗號分隔數個值，以輸入數個值。
 
-例如： **uploadWhiteList=&quot;&quot;。*.png、。*.jpg」** ，可讓您在伺服器上上傳PNG和JPG格式。 不接受其他格式。
+例如： **uploadAllowList=&quot;&quot;。*.png、。*.jpg」** ，可讓您在伺服器上上傳PNG和JPG格式。 不接受其他格式。
 
 >[!IMPORTANT]
 >
