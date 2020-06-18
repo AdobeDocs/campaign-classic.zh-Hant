@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -50,44 +50,43 @@ ht-degree: 0%
 
 如果問題持續存在，請聯絡商業或傳遞性服務、Adobe Campaign Client Care或Adobe Campaign支援。
 
-## 黑名單與隔離 {#blacklisting-versus-quarantine}
+## 塊清單與隔離 {#block-list-versus-quarantine}
 
-* **列入黑名單的電子郵件地址與隔離的電子郵件地址之間有何差異？**
+* **阻止清單上的電子郵件地址與隔離的電子郵件地址之間有何區別？**
 
-   * 狀態是 **[!UICONTROL Blacklisted]** 回饋迴路的結果（當某人將訊息報告為垃圾訊息時）。
+   * 狀態是 **[!UICONTROL On block list]** 回饋迴路的結果（當某人將訊息報告為垃圾訊息時）。
 
    * 狀態 **[!UICONTROL Quarantined]** 是軟反彈或硬反彈的結果。
-   For more on this, see [this section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
+   For more on this, see [this section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
 
 * **不同的隔離錯誤原因意味著什麼？**
 
-   以下是10個可能的原因： 未定義、用戶未知、無效域、黑名單地址、拒絕、錯誤忽略、無法訪問、帳戶禁用、郵箱已滿、未連接。
+   以下是10個可能的原因： 未定義、用戶未知、無效域、塊清單上的地址、拒絕、錯誤忽略、無法訪問、帳戶禁用、郵箱已滿、未連接。
 
    有關詳細資訊，請參閱了 [解隔離管理](../../delivery/using/understanding-quarantine-management.md)。
 
-## 未列入黑名單 {#unblacklisting}
+## 從塊清單中刪除 {#remove-from-block-list}
 
-* **我的一個收件者被錯誤列入黑名單。 我要如何將他們解除黑名單，以便我能再次傳送訊息？**
+* **我的其中一個收件者被錯誤地加入區塊清單。 如何從塊清單中刪除它們，以便我可以再次開始發送郵件？**
 
    * 前往 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
    * 在對應記錄的詳細資訊中，將欄位的值 **[!UICONTROL Status]** 設定為 **[!UICONTROL Valid]**。
    * 保存記錄。
 
-* **我要如何得知我的IP是否已列入黑名單？ 如何取消IP的黑名單？**
+* **我要如何得知我的其中一個IP是否在區塊清單中？ 如何從塊清單中刪除IP?**
 
-   若要檢查您的IP位址是否列入黑名單，您可以使用各種網站來驗證：
-   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
-   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
-   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
-   通常，IP地址檢查的結果將返回一個清單，其中包含黑名單的詳細資訊以及將IP地址列入黑名單的網站的名稱。
+   若要檢查您的IP位址是否在區塊清單中，您可以使用各種網站來驗證它，例如：
+   * [MX工具箱](https://mxtoolbox.com/)
+   * [我的IP地址是什麼](https://whatismyipaddress.com)
+   通常，IP地址檢查的結果將返回一個清單，其中包含塊清單的詳細資訊以及阻止IP地址的網站的名稱。
 
-   按一下對應的連結，即可存取網站詳細資訊。 然後，您可以要求將您的網站從列入IP位址黑名單的網站中除名。
+   按一下對應的連結，即可存取網站詳細資訊。 然後，您可以要求將您的網站從將IP位址新增至其區塊清單的網站中除名。
 
    >[!NOTE]
    >
    >除名程式可能因網站而異。 有些網站會要求您建立帳戶，而有些網站則只需您提供IP位址。
 
-## 最佳作法 {#best-practices}
+## 最佳實務{#best-practices}
 
 以下是一些最佳實務，可協助您找出並解決傳遞性問題。
 
