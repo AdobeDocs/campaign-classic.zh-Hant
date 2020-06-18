@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '1617'
+ht-degree: 0%
 
 ---
 
@@ -97,7 +100,7 @@ source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
    您可以新增：
 
-   * 根據來自目標人口的資料或匯總（上個月的待定購買數、收據的平均金額等）計算的欄位。 例如，請轉至「選 [擇資料」](../../workflow/using/targeting-data.md#selecting-data)。
+   * 根據來自目標人口的資料或匯總（上個月的待定購買數、收據的平均金額等）計算的欄位。 例如，請轉至「選 [取資料」](../../workflow/using/targeting-data.md#selecting-data)。
    * 使用輸出列清單右 **[!UICONTROL Add]** 側的按鈕建立的新欄位。
 
       您也可以新增資訊集合，例如合約清單、最後5個交貨等。 系列會與欄位相符，欄位可針對相同的描述檔（1-N關係）有多個值。 如需詳細資訊，請參閱「編 [輯其他資料」](../../workflow/using/targeting-data.md#editing-additional-data)。
@@ -123,13 +126,13 @@ source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
    * 如果收集的欄包含匯總，例如宣告的失敗次數、網站的平均支出等。 您可以使用 **[!UICONTROL Aggregates]** 值。
    ![](assets/query_add_collection_param.png)
 
-1. 指定系列的子選取範圍。 例如：僅限過去15天內購買。
+1. 指定系列的子選取範圍。 例如： 僅限過去15天內購買。
 
    ![](assets/query_add_columns_collection_filter.png)
 
 1. 如果您已選取 **[!UICONTROL Limit the line count]** 選項，請定義篩選收集資料的順序。 一旦收集的行數超過您指定要保留的行數，篩選順序就可讓您指定要保留的行。
 
-## 範例：以簡單收件者屬性為目標 {#example--targeting-on-simple-recipient-attributes}
+## 範例： 以簡單收件者屬性為目標 {#example--targeting-on-simple-recipient-attributes}
 
 在以下示例中，查詢試圖確定18至30歲在法國生活的男子。 此查詢將用於工作流程中，例如使其成為獨家選件。
 
@@ -185,7 +188,7 @@ source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
    確保該 `where` 子句與欄位的類型相同。
 
-   一個常見的錯誤是：其 `iBlacklist='3'` 中 `iBlacklist` 是數值欄位，並 `3` 表示文字值。
+   一個常見的錯誤是： `iBlocklist='3'` 其中 `iBlocklist` 是數值欄位，且 `3` 表示文字值。
 
    請確定您知道查詢的執行計畫。 避免完整表掃描，尤其是每分鐘執行的即時查詢或近乎即時的查詢。
 
