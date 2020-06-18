@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2436'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ Recommendations for defining an SPF record:
 
 ## 反饋迴路 {#feedback-loop}
 
-反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP將以類似於彈回郵件的方式發送到此郵箱，接收者將這些郵件報告為垃圾郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 ISP會根據這些抱怨將IP位址列入黑名單。 根據ISP的不同，投訴率約為1%會導致IP位址被列入黑名單。
+反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP將以類似於彈回郵件的方式發送到此郵箱，接收者將這些郵件報告為垃圾郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 基於這些抱怨， ISP將在其塊清單中添加一個IP地址。 根據ISP的不同，投訴率約為1%將導致IP地址被阻塞。
 
 目前正在制定一個標準，以定義反饋迴路消息的格式： 濫用 [反饋報告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
@@ -254,11 +254,11 @@ Adobe為每位客戶提供專屬的IP策略，以提升IP，以建立聲譽並�
 
 ## IP 認證 {#ip-certification}
 
-IP認證是一份白名單和傳送實務計畫，可協助確保收到電子郵件時不會受到反垃圾郵件篩選器或其他電子郵件封鎖系統的封鎖。
+IP認證是傳送最佳實務方案，可協助確保收到電子郵件時不會遭到反垃圾郵件篩選器或其他電子郵件封鎖系統的封鎖。
 
 目前有兩家供應商提供IP認證： Return Path和認證寄件者聯盟。
 
-認證寄件者會加入全球郵箱供應商和電子郵件安全公司使用的電子郵件白名單。 這些商業白名單基於允許發送者完全略過反垃圾郵件過濾器的系統，或者在他們進入系統時被分配增量點。
+認證的寄件者會加入電子郵件允許清單，全球郵箱供應商和電子郵件安全公司都會使用這些清單。 這些商業允許清單基於一個系統，該系統使發送者能夠完全繞過反垃圾郵件過濾器，或者在他們進入系統時被分配增量點。
 
 Return [Path Certification方案提供多項優點](https://www.validity.com/products/returnpath/certification/) ，包括：
 
@@ -275,6 +275,6 @@ Certified Senders Alliance [](https://certified-senders.org/certification-proces
 * 全面遵守法律標準以防範法律及財務風險
 * 通過來自CSA投訴辦公室的早期警告和每日垃圾郵件陷阱報告保護聲譽
 
-ISP可免費使用這些服務，而ISP的數量可能因白名單而異。
+ISP可免費使用這些服務，而ISP的數量可能因允許清單而異。
 
 但是，由於越來越多的ISP會根據每個收件匣擁有者的行為建立反垃圾郵件過濾器，而不是分析郵件內容本身，因此使用IP認證無法保證收件匣的放置甚至傳送。
