@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 1%
@@ -117,12 +117,12 @@ ht-degree: 1%
 
 按一下按 **[!UICONTROL Send]** 鈕後，您的傳送似乎比往常花了更長的時間。 這可能是由不同的元素所造成：
 
-* 有些電子郵件提供者可能已將您的IP位址列入黑名單。 在這種情況下，請檢查您的廣播，並參 [閱此快速入門](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 。
-* 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign傳遞 [最佳實務](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，以瞭解內容准則。
+* 有些電子郵件提供者可能已將您的IP位址新增至區塊清單。 在此情況下，請檢查您的廣播並參 [閱本節](../../delivery/using/about-deliverability.md)。
+* 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign傳送 [最佳實務](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，以瞭解內容准則。
 * Adobe Campaign MTA中可能已發生調節。 這是由以下原因造成：
 
    * 附加的消息(**[!UICONTROL quotas met]** 消息): 已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
-   * 附加的消息(**[!UICONTROL dynamic flow control]** 消息): Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，因而面臨潛在黑名單。
+   * 附加的消息(**[!UICONTROL dynamic flow control]** 消息): Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，進而面臨潛在的區塊清單。
 
 * 系統問題可能會阻止伺服器進行交互： 這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如，在取得個人化資料的過程中，這些問題可能會影響促銷活動。
 
@@ -166,7 +166,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由於收件者的地址發生錯誤，因此未將傳送內容傳送給收件者。 它被列入黑名單、隔離、未提供或複製。 <br /> </td> 
+   <td> 由於收件者的地址發生錯誤，因此未將傳送內容傳送給收件者。 它已添加到阻止清單、隔離、未提供或重複。 <br /> </td> 
   </tr> 
   <tr> 
    <td> 已傳送<br /> </td> 
