@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
 source-wordcount: '3903'
 ht-degree: 0%
@@ -95,7 +95,7 @@ ht-degree: 0%
    <td> 規則運算式，以標準化傳送訊息。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
    <td> 輸入"1"作為值，可讓您排除不想再與之聯絡的收件者。<br /> </td> 
   </tr> 
   <tr> 
@@ -175,7 +175,7 @@ ht-degree: 0%
    <td> 用於計算臨時傳送消息加權的公式。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsInmail_Whitelist電子郵件</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
    <td> 授權轉寄電子郵件地址清單（來自傳入郵件處理模組）。 這些位址必須以逗號（或*）分隔，才能允許全部使用。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
   </tr> 
   <tr> 
@@ -319,7 +319,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> 可讓您定義儲存傳送中所用影像的伺服器，讓瀏覽器取得這些影像。<br /> 對於建置版本&lt;= 5098，我們使用上傳至執行個體之影像的URL。<br /> 對於建置版本&gt; 5098，我們會改用傳送的公用URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 選項的URL。<br /> </td> 
+   <td> 可讓您定義儲存傳送中所用影像的伺服器，讓瀏覽器取得這些影像。<br /> 對於建置版本&lt;= 5098，我們使用上傳至實例的影像URL。<br /> 對於建置版本&gt; 5098，我們會改用傳送的公用URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 選項的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
