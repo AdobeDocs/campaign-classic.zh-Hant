@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 79%
 
 ---
 
@@ -47,7 +50,7 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 * 時常登入 SFTP 以直接檢查其內容。
 * 請記住，SFTP 硬碟的管理主要是您的責任。
 * 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
-* 您嘗試啟動 SFTP 連接的公共 IP 必須在 Campaign 執行個體上列入允許清單。可以通過[支援票證](https://support.neolane.net)請求將 IP 地址列入允許清單。
+* 您嘗試從中啟動SFTP連線的公用IP必須新增至促銷活動例項的允許清單。 將IP位址新增至允許清單可透過支援票證 [要求](https://support.neolane.net)。
 
 >[!CAUTION]
 >
@@ -89,7 +92,7 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
    如果埠未打開，請確保打開側面的傳出連線，然後重試。如果仍遇到連接問題，請與 Adobe 支援團隊分享該命令的輸出。
 
-1. 檢查您嘗試啟動 SFTP 連線的公共 IP 是否為您提供給 Adobe 支援團隊的允許清單 IP 地址。
+1. 檢查您嘗試從中啟動SFTP連線的公用IP是否是您提供給Adobe支援的允許清單。
 1. 如果您使用密碼驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用基於密鑰的驗證(請參 [閱SFTP伺服器最佳實務](#sftp-server-best-practices))。
 1. 如果您使用的是基於金鑰的身份驗證，請檢查您使用的金鑰是否與為執行個體配置提供給 Adobe 支援團隊的金鑰相同。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
