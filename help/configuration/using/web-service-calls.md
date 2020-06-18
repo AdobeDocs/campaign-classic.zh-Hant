@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 0%
 
 ---
 
@@ -53,13 +56,13 @@ Web服務在資料模式的語法中描述，並且可從元素中 **`<methods>`
 
 這裡我們有一個名為 **GenerateForm的方法定義示例**。
 
-服務的說明從元素開 `<method>` 始。 從元素中完成方法的參數列 `<parameters>` 表。 每個參數都由名稱、類型（布林值、字串、DOMElement等）指定和說明。 具有&quot;out&quot;值的&quot;inout&quot;屬性可讓您指定&quot;result&quot;參數位於SOAP呼叫輸出。
+服務的說明從元素開 `<method>` 始。 從元素中完成方法的參數列 `<parameters>` 表。 每個參數都由名稱、類型（布林值、字串、DOMElement等）指定 和說明。 具有&quot;out&quot;值的&quot;inout&quot;屬性可讓您指定&quot;result&quot;參數位於SOAP呼叫輸出。
 
-存在&quot;static&quot;屬性（值為&quot;true&quot;）將此方法描述為static，這表示必須聲明方法的所有參數。
+存在&quot;static&quot;屬性（值為&quot;true&quot;）將此方法描述為static，這意味著必須聲明該方法的所有參數。
 
 「const」方法隱式地將XML文檔以其相關模式的格式作為輸入。
 
-Adobe Campaign結構描述 `<method>` 的元素完整說明，請參閱「結構描述參考」一章， <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    元素。
+Adobe Campaign結構描述 `<method>` 的元素完整說明，請參閱「結構描述參考」一章，  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    元素。
 
 &quot;xtk:queryDef&quot;架構中的&quot;const&quot;類型&quot;ExecuteQuery&quot;方法範例：
 
@@ -74,7 +77,7 @@ Adobe Campaign結構描述 `<method>` 的元素完整說明，請參閱「結構
 
 此方法的輸入參數是XML文檔，格式為&quot;xtk:queryDef&quot;模式。
 
-## Web服務說明：WSDL {#web-service-description--wsdl}
+## Web服務說明： WSDL {#web-service-description--wsdl}
 
 每個服務都有一個WSDL（Web服務說明庫）檔案。 此XML檔案使用元語言來描述服務，並指定可用的方法、參數和伺服器，以便與其聯繫以執行服務。
 
@@ -86,8 +89,8 @@ Adobe Campaign結構描述 `<method>` 的元素完整說明，請參閱「結構
 
 使用：
 
-* **`<server>`**:Adobe Campaign應用程式伺服器(nlserver web)
-* **`<schema>`**:方案標識鍵(namespace:schema_name)
+* **`<server>`**: Adobe Campaign應用程式伺服器(nlserver web)
+* **`<schema>`**: 方案標識鍵(namespace:schema_name)
 
 ### 模式&#39;xtk:queryDef&#39;的&#39;ExecuteQuery&#39;方法範例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
@@ -214,7 +217,7 @@ Adobe Campaign透過引入安全區(請參閱本節中的「定義安全區 **�
    * 作業Token會變成永久Token，但瀏覽器關閉後不會銷毀它
    * 它會置於HTTP-ONLY Cookie（必須為運算子啟用Cookie）
 
-### 安全令牌特性 {#security-token-characteristics}
+### 安全性Token特性 {#security-token-characteristics}
 
 安全令牌具有以下特徵：
 
@@ -281,7 +284,7 @@ Adobe Campaign透過引入安全區(請參閱本節中的「定義安全區 **�
 
 >[!NOTE]
 >
->下列 **HttpServletRequest** Calls中使用的URL，必須在serverConf.xml檔案的url權限區 **** 段中加入白名單。 伺服器本身的URL也是如此。
+>下列 **HttpServletRequest** Calls中使用的URL必須位於serverConf.xml檔案的url權限區段中 **** 的允許清單上。 伺服器本身的URL也是如此。
 
 登錄執行():
 
