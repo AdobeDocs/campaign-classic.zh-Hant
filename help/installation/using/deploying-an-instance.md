@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3055'
+source-wordcount: '3066'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連接
 
 * **[!UICONTROL Delivery duration of messages]** : 此後，傳送將停止（預設為5天）,
 * **[!UICONTROL Online resources validity duration]** : 收件者描述檔中的資訊保留的時間，以產生鏡像頁面，
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : 選取此選項時，將不會連絡黑名單收件者，
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : 選取此選項時，不會連絡區塊清單上的收件者，
 * **[!UICONTROL Automatically ignore doubles]** : 選取此選項時，不會傳送至重複的位址。
 
 ### 重試參數 {#retry-parameters}
@@ -459,7 +459,7 @@ Adobe Campaign可讓您區隔這三個URL，將負載分散到多個平台。
 
 * 正常： 現有行為（無同步）
 
-* 黑名單： 如果URL傳回404錯誤，則會列入黑名單。 黑名單的持續時間（以秒為單位）由預設值 **為** 60s的逾時屬性定義。
+* 區塊清單： 如果URL傳回404錯誤，則會將它新增至區塊清單。 區塊清單中URL的持續時間（以秒為單位）由預設值為60 **s的逾時** (timeout)屬性定義。
 
 同步的現成配置是：
 
@@ -478,11 +478,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
 <relay debugRelay="false" forbiddenCharsInAuthority="?#.@/:" forbiddenCharsInPath="?#/"
            modDir="index.html" startRelay="false" startRelayInModule="true" timeout="60">
    <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/view/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/strings/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/interaction/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/barcode/*"/>
