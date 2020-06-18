@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7859'
 ht-degree: 3%
 
 ---
@@ -207,7 +207,7 @@ Adobe Campaign的整體設定是在位於安裝目錄 **conf****** 目錄的serv
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadWhitelist<br /> </td> 
+   <td> uploadAllowlist<br /> </td> 
    <td> 要下載的已授權檔案由','分隔。 字串必須是有效的規則Java運算式。 請參 <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">閱限制可上載檔案</a>。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> '.+' <br /> </td> 
@@ -575,8 +575,8 @@ For additional information, refer to this [section](../../installation/using/con
  </thead> 
  <tbody> 
   <tr> 
-   <td> blackstFile<br /> </td> 
-   <td> 包含要黑名單命令的檔案路徑。 <br /> </td> 
+   <td> blocklistFile<br /> </td> 
+   <td> 包含要添加到允許清單的命令的檔案的路徑。 <br /> </td> 
    <td> 字串<br /> </td> 
   </tr> 
   <tr> 
@@ -2739,7 +2739,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> webTrackingParamSize<br /> </td> 
-   <td> 共用記憶體中儲存的字元數上限，以取得額外的Web追蹤參數。<br /> </td> 
+   <td> 共用記憶體中儲存的字元數上限，以取得額外的網頁追蹤參數。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 64<br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ For additional information, refer to this [section](../../installation/using/dep
   </tr> 
   <tr> 
    <td> 狀態<br /> </td> 
-   <td> 公共資源的同步狀態（枚舉）。 可能的值包括「正常」（正常執行）、「黑名單」（發生錯誤404時的URL黑名單）和「備用」（如果存在，則在備用伺服器上上載檔案）。<br /> </td> 
+   <td> 公共資源的同步狀態（枚舉）。 可能的值為'normal'（正常執行）、 'blocklist'（在出現錯誤404時添加到塊清單的URL）和'spare'（如果存在，則在備用伺服器上上載檔案）。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3137,19 +3137,19 @@ For additional information, refer to this [section](../../installation/using/dep
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
