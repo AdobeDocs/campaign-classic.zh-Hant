@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '1304'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +59,7 @@ source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 >
 >實施項目的團隊有責任確保安全設定允許訪問通過dataLogPath參數定義的 **資料夾** 。
 
-完整路徑如下： **`<datalogpath>  YYYY-MM-DDHHh`**。 日期和時間會根據MTA伺服器的時鐘(UTC)來設定。 例如：
+完整路徑如下： **`<datalogpath>  YYYY-MM-DDHHh`**. 日期和時間會根據MTA伺服器的時鐘(UTC)來設定。 例如：
 
 ```
 C:\emails\2018-12-02\13h
@@ -84,24 +87,24 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
-* **compressionFormat**:壓縮。eml檔案時使用的格式。 可能的值包括：
+* **compressionFormat**: 壓縮。eml檔案時使用的格式。 可能的值包括：
 
-   **0**:無壓縮（預設值）
+   **0**: 無壓縮（預設值）
 
-   **1**:壓縮（.zip格式）
+   **1**: 壓縮（.zip格式）
 
-* **compressBatchSize**:已新增至封存（.zip檔案）的。eml檔案數。
-* **archivingType**:歸檔策略。 可能的值包括：
+* **compressBatchSize**: 已新增至封存（.zip檔案）的。eml檔案數。
+* **archivingType**: 歸檔策略。 可能的值包括：
 
-   **0**:已傳送電子郵件的原始副本會以。eml格式儲存至 **dataLogPath資料夾** （預設值）。 檔案的歸檔副 **`<deliveryid>-<broadlogid>-sent.eml`** 本將保存到 **dataLogPath/archives資料夾** 。 傳送的電子郵件檔案路徑變 **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**&#x200B;為。
+   **0**: 已傳送電子郵件的原始副本會以。eml格式儲存至 **dataLogPath資料夾** （預設值）。 檔案的歸檔副 **`<deliveryid>-<broadlogid>-sent.eml`** 本將保存到 **dataLogPath/archives資料夾** 。 傳送的電子郵件檔案路徑變 **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**&#x200B;為。
 
-   **1**:已發送電子郵件的原始副本以。eml格式保存到 **dataLogPath** 資料夾，並通過SMTP發送到密件副本電子郵件地址。 將電子郵件副本發送到BCC地址後，歸檔檔案名將變 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 為，並將檔案移動到 **** dataLogPath/archives資料夾。 然後，會傳送已傳送和密件副本封存的電子郵件檔案路徑 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**。
+   **1**: 已發送電子郵件的原始副本以。eml格式保存到 **dataLogPath** 資料夾，並通過SMTP發送到密件副本電子郵件地址。 將電子郵件副本發送到BCC地址後，歸檔檔案名將變 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 為，並將檔案移動到 **** dataLogPath/archives資料夾。 然後，會傳送已傳送和密件副本封存的電子郵件檔案路徑 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**。
 
-* **expirationDelay**:保存要存檔的。eml檔案的天數。 延遲後，它們會自動移至 **** dataLogPath/archives資料夾以進行壓縮。 依預設，.eml檔案會在兩天後到期。
-* **purgeArchivesDelay**:dataLogPath/資料夾中保存封存 **的天數`<archives>`**。 在此期間後，會永久刪除這些項目。 清除從MTA啟動開始。 依預設，每七天執行一次。
-* **pollDelay**:正在檢查新傳入的電子郵件的頻率（以秒為單位），以找出 **dataLogPath資料夾** 。 例如，如果此參數設為60，表示每分鐘，歸檔過程都會通過 **`<date and time>`**dataLogPath/資料夾內的。eml檔案，視需要應用清除，並將電子郵件副本發送到BCC地址和／或在需要時壓縮歸檔檔案。
-* **acquireLimit**:根據pollDelay參數，再次套用封存程式前一次處理的。eml檔案 **數** 。 例如，如果您將 **acquireLimit** 參數設為100，而 **pollDelay** 參數設為60，則每分鐘會處理100個。eml檔案。
-* **smtpNbConnection**:到密件副本電子郵件地址的SMTP連接數。
+* **expirationDelay**: 保存要存檔的。eml檔案的天數。 延遲後，它們會自動移至 **** dataLogPath/archives資料夾以進行壓縮。 依預設，.eml檔案會在兩天後到期。
+* **purgeArchivesDelay**: dataLogPath/資料夾中保存封存 **的天數`<archives>`**。 在此期間後，會永久刪除這些項目。 清除從MTA啟動開始。 依預設，每七天執行一次。
+* **pollDelay**: 正在檢查新傳入的電子郵件的頻率（以秒為單位），以找出 **dataLogPath資料夾** 。 例如，如果此參數設為60，表示每分鐘，歸檔過程都會通過 **`<date and time>`**dataLogPath/資料夾內的。eml檔案，視需要應用清除，並將電子郵件副本發送到BCC地址和／或在需要時壓縮歸檔檔案。
+* **acquireLimit**: 根據pollDelay參數，再次套用封存程式前一次處理的。eml檔案 **數** 。 例如，如果您將 **acquireLimit** 參數設為100，而 **pollDelay** 參數設為60，則每分鐘會處理100個。eml檔案。
+* **smtpNbConnection**: 到密件副本電子郵件地址的SMTP連接數。
 
 請務必根據電子郵件傳送的吞吐量來調整這些參數。 例如，在MTA每小時傳送30,000封電子郵件的組態中，您可將 **pollDelay** 參數設為600, **acquireLimit** 參數設為5000, **smtpNbConnection** 參數設為2。 這意味著，使用2個SMTP連接，每10分鐘將發送5,000封電子郵件到密件副本地址。
 
@@ -117,10 +120,10 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
 ```
 
-* **smtpBccAddress**:歸檔目標目標目標目標
-* **smtpEnableTLS**:使用安全的SMTP連接（TLS/SSL協定）
-* **smtpRelayAddress**:中繼地址
-* **smtpRelayPort**:中繼埠
+* **smtpBccAddress**: 歸檔目標目標目標目標
+* **smtpEnableTLS**: 使用安全的SMTP連接（TLS/SSL協定）
+* **smtpRelayAddress**: 中繼地址
+* **smtpRelayPort**: 中繼埠
 
 >[!NOTE]
 >
@@ -142,14 +145,14 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 設定電子郵件密件副本後，請務必在傳送范 **[!UICONTROL Archive emails]** 本或傳送中選取選項。 For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
 
-## 最佳實務 {#best-practices}
+## 最佳實務{#best-practices}
 
-* **密件副本地址郵箱**:請確定它有足夠的接收能力來封存MTA傳送的所有電子郵件。
-* **MTA共同化**:密件副本封存功能可在MTA層級運作。 它可讓您複製MTA傳送的每封電子郵件。 由於MTA可以跨多個例項（例如開發、測試或prod）或甚至跨多個用戶端（在中部採購環境中）共同化，因此設定此功能會影響安全性：
+* **密件副本地址郵箱**: 請確定它有足夠的接收能力來封存MTA傳送的所有電子郵件。
+* **MTA共同化**: 密件副本封存功能可在MTA層級運作。 它可讓您複製MTA傳送的每封電子郵件。 由於MTA可以跨多個例項（例如開發、測試或prod）或甚至跨多個用戶端（在中部採購環境中）共同化，因此設定此功能會影響安全性：
 
    * 如果您與多個用戶端共用MTA，且其中一個用戶端已啟用此選項，此用戶端將會存取其他共用相同MTA之用戶端的所有電子郵件。 為避免這種情況，請針對每個用戶端使用不同的MTA。
    * 如果您針對單一用戶端在多個執行個體（開發、測試、prod）上使用相同的MTA，則dataLogPath選項會複製從這三個執行個體傳送的訊息。
 
-* **每個連線的電子郵件**:密件副本電子郵件封存的運作方式是開啟連線並嘗試透過該連線傳送所有電子郵件。 Adobe建議與您的內部技術聯絡人確認特定連線上接受的電子郵件數。 增加此數量對BCC吞吐量有很大影響。
-* **密件副本發送IP**:目前，密件副本電子郵件不會透過一般的MTA Proxy傳送。 而是從MTA伺服器開啟直接連線至目標電子郵件伺服器。 這表示，根據您的電子郵件伺服器組態，您可能需要將網路上的其他IP列入白名單。
+* **每個連線的電子郵件**: 密件副本電子郵件封存的運作方式是開啟連線並嘗試透過該連線傳送所有電子郵件。 Adobe建議與您的內部技術聯絡人確認特定連線上接受的電子郵件數。 增加此數量對BCC吞吐量有很大影響。
+* **密件副本發送IP**: 目前，密件副本電子郵件不會透過一般的MTA Proxy傳送。 而是從MTA伺服器開啟直接連線至目標電子郵件伺服器。 這表示您可能需要根據電子郵件伺服器配置，將其他IP添加到網路上的允許清單。
 
