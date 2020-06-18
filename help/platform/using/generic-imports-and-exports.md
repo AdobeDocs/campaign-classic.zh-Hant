@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 55%
 
 ---
 
@@ -33,7 +36,7 @@ Adobe Campaign 還提供了一個匯入模組，可讓您使用外部檔案為�
 您可以：
 
 * 建立匯入或匯出範本並對其進行配置 (參見下文)。
-* 建立匯入或匯出：請參閱匯 [出資料](../../platform/using/exporting-data.md) 或匯 [入資料](../../platform/using/importing-data.md)。
+* 建立匯入或匯出： 請參閱匯 [出資料](../../platform/using/exporting-data.md) 或匯 [入資料](../../platform/using/importing-data.md)。
 * 啟動導入或導出並監視其執行。 請參閱執 [行追蹤](#execution-tracking)。
 
 >[!CAUTION]
@@ -54,7 +57,7 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 >[!NOTE]
 >
->The native template **[!UICONTROL Import blacklist]** is already configured to import a list of blacklisted e-mail addresses.
+>原生范 **[!UICONTROL Import block list]** 本已設定為匯入已新增至區塊清單的電子郵件地址清單。
 > 
 >此 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 範本可讓您從頭開始設定匯入或匯出。
 
