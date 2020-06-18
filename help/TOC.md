@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2101'
 ht-degree: 10%
 
 ---
@@ -161,7 +161,7 @@ ht-degree: 10%
       + [收件箱呈現](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [重新參與最佳實務](delivery/using/re-engagement-best-practices.md)
-      + [黑名單資料庫](delivery/using/blacklisting-databases.md)
+      + [塊清單資料庫](delivery/using/block-list-databases.md)
       + [疑難排解](delivery/using/deliverability-faq.md)
    + 內容管理模組 {#content-management}
       + [關於內容管理](delivery/using/about-content-management.md)
