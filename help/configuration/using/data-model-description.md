@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 0%
@@ -55,9 +55,9 @@ Adobe Campaign依賴包含連結在一起的表格的關係式資料庫。
 * iEmailFormat: 電子郵件的偏好格式（1代表文字，2代表HTML，若未定義則為0）。
 * sAddress1、sAddress2、sAddress3、sAddress4、sZipCode、sCity用於建立郵遞區號（與1997年5月的XPZ 10-011 AFNOR標準一致）。
 * sPhone、sMobilePhone、sFax分別包含手機、行動電話和傳真號碼。
-* iBlackList是用於描述檔的預設退出標幟（1表示「未訂閱」，否則為0）。
+* iBlockList是用於描述檔的預設退出標幟（1表示「未訂閱」，否則為0）。
 
-iFolderId欄位是將收件者連結至其執行資料夾的外鍵。 如需詳細資訊，請參 [閱XtkFolder](#XtkFolder)。
+iFolderId欄位是將收件者連結至其執行資料夾的外鍵。 For more on this, see [XtkFolder](#XtkFolder).
 
 sCountryCode欄位是與收件者相關聯之國家／地區的3166-1 Alpha 2 ISO程式碼（2個字元）。 此欄位實際上是國家參考表(NmsCountry)上的外鍵，該表包含國家標籤和其他國家代碼資料。 如果未填入國家，則會儲存值&#39;XX&#39;（並用來取代零ID記錄）。
 
@@ -67,7 +67,7 @@ sCountryCode欄位是與收件者相關聯之國家／地區的3166-1 Alpha 2 IS
 
 此表與 **nms:group架構匹配** 。
 
-它可讓您建立收 **件者的靜態群組**。 收件者和群組之間有多對多的關係。 例如，一個收件者可以屬於數個群組，而一個群組可以包含數個收件者。 您可以透過匯入或傳送定位，手動建立群組。 群組通常用作傳送目標。 在表示sName組內部名稱的欄位上有一個唯一索引。 群組會連結至資料夾（金鑰為iFolderId）。 如需詳細資訊，請參 [閱XtkFolder](#XtkFolder))。
+它可讓您建立收 **件者的靜態群組**。 收件者和群組之間有多對多的關係。 例如，一個收件者可以屬於數個群組，而一個群組可以包含數個收件者。 您可以透過匯入或傳送定位，手動建立群組。 群組通常用作傳送目標。 在表示sName組內部名稱的欄位上有一個唯一索引。 群組會連結至資料夾（金鑰為iFolderId）。 For more on this, see [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -81,7 +81,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 服務是與群組（靜態收件者群組）類似的實體，但它們會循環更多資訊，並可透過表單輕鬆管理訂閱和取消訂閱。
 
-在表示sName服務內部名稱的欄位上有一個唯一索引。 服務會連結至資料夾（金鑰為iFolderId）。 如需詳細資訊，請參 [閱XtkFolder](#XtkFolder))。 最後， iType欄位會指定此服務的傳送管道（0代表電子郵件，1代表簡訊，2代表電話，3代表直效郵件，4代表傳真）。
+在表示sName服務內部名稱的欄位上有一個唯一索引。 服務會連結至資料夾（金鑰為iFolderId）。 For more on this, see [XtkFolder](#XtkFolder)). 最後， iType欄位會指定此服務的傳送管道（0代表電子郵件，1代表簡訊，2代表電話，3代表直效郵件，4代表傳真）。
 
 ### NmsSubscription {#NmsSubscription}
 
@@ -101,7 +101,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 此表中的每個記錄都代 **表傳送操作** 或傳 **送模板**。 它包含執行傳送的所有必要參數（目標、內容等）。 分析階段會建立傳送（廣播）記錄檔(NmsBroadLog)和相關的追蹤URL(NmsTrackingUrl)（請參閱下方，以取得這兩個表格的詳細資訊）。
 
-在表示sInternalName傳送或藍本內部名稱的欄位上有一個唯一索引。 傳送會連結至執行資料夾(外鍵是iFolderProcessId。 如需詳細資訊，請參 [閱XtkFolder](#XtkFolder))。
+在表示sInternalName傳送或藍本內部名稱的欄位上有一個唯一索引。 傳送會連結至執行資料夾(外鍵是iFolderProcessId。 For more on this, see [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
