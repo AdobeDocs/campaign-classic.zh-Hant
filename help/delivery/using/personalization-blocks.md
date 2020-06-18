@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 0%
 
 ---
 
@@ -98,18 +101,18 @@ HTML原始碼會插入傳送內容中。 例如，個人化 **[!UICONTROL Greeti
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Greetings]** :插入帶收件者名稱的問候語。 範例：「你好，John Doe,」
-* **[!UICONTROL Insert logo]** :插入配置實例時已定義的現成標誌。
-* **[!UICONTROL Powered by Adobe Campaign]** :插入「Powered by Adobe Campaign」標誌。
-* **[!UICONTROL Mirror page URL]** :插入鏡像頁面URL，使「傳送設計人員」可檢查連結。
+* **[!UICONTROL Greetings]** : 插入帶收件者名稱的問候語。 範例： 「你好，John Doe,」
+* **[!UICONTROL Insert logo]** : 插入配置實例時已定義的現成標誌。
+* **[!UICONTROL Powered by Adobe Campaign]** : 插入「Powered by Adobe Campaign」標誌。
+* **[!UICONTROL Mirror page URL]** : 插入鏡像頁面URL，使「傳送設計人員」可檢查連結。
 
    >[!NOTE]
    >
    >有關鏡像頁生成的詳細資訊，請參 [閱生成鏡像頁](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
 
-* **[!UICONTROL Link to mirror page]** :插入指向鏡像頁的連結：&quot;如果您無法正確檢視此訊息，請按一下這裡&quot;。
-* **[!UICONTROL Unsubscription link]** :插入一個連結，允許取消訂閱所有傳送（黑名單）。
-* **[!UICONTROL Formatting function for proper nouns]** :產生 **[!UICONTROL toSmartCase]** Javascript函式，此函式會將每個字詞的第一個字母變更為大寫。 此區塊必須插入傳送的原始碼中，並放入標 **`<script>...</script>`** 記中。
+* **[!UICONTROL Link to mirror page]** : 插入指向鏡像頁的連結： &quot;如果您無法正確檢視此訊息，請按一下這裡&quot;。
+* **[!UICONTROL Unsubscription link]** : 插入可取消訂閱所有傳送的連結（區塊清單）。
+* **[!UICONTROL Formatting function for proper nouns]** : 產生 **[!UICONTROL toSmartCase]** Javascript函式，此函式會將每個字詞的第一個字母變更為大寫。 此區塊必須插入傳送的原始碼中，並放入標 **`<script>...</script>`** 記中。
 
    在以下範例中，此函式用於將元素&quot;My header&quot;取代為&quot;My new header&quot;，並在每個字詞加上大寫字母：
 
@@ -122,18 +125,18 @@ HTML原始碼會插入傳送內容中。 例如，個人化 **[!UICONTROL Greeti
 
    ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
 
-* **[!UICONTROL Registration page URL]** :插入訂閱URL(請參閱 [關於服務和訂閱](../../delivery/using/about-services-and-subscriptions.md))。
-* **[!UICONTROL Registration link]** :插入訂閱連結。 定義。
-* **[!UICONTROL Registration link (with referrer)]** :插入訂閱連結，啟用以識別訪客和傳送。 設定例項時已定義連結。
+* **[!UICONTROL Registration page URL]** : 插入訂閱URL(請參閱 [關於服務和訂閱](../../delivery/using/about-services-and-subscriptions.md))。
+* **[!UICONTROL Registration link]** : 插入訂閱連結。 定義。
+* **[!UICONTROL Registration link (with referrer)]** : 插入訂閱連結，啟用以識別訪客和傳送。 設定例項時已定義連結。
 
    >[!NOTE]
    >
    >此區塊僅可用於定位訪客的傳送。
 
-* **[!UICONTROL Registration confirmation]** :插入啟用確認訂閱的連結。
-* **[!UICONTROL Social network sharing links]** :插入按鈕，讓收件者能夠與電子郵件用戶端、Facebook、Twitter、Google +和LinkedIn共用鏡像頁面內容的連結(請參 [閱病毒式行銷：轉達給朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
-* **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** :產生程式碼，以預先定義的HTML樣式格式化電子郵件。 這些區塊必須插入傳送的原始碼、區段 **[!UICONTROL ...]** 中的標 **`<style>...</style>`** 記。
-* **[!UICONTROL Offer acceptance URL in unitary mode]** :插入URL，以將「互動」選件設 **[!UICONTROL Accepted]** 定為( [請參閱](../../interaction/using/offer-analysis-report.md))。
+* **[!UICONTROL Registration confirmation]** : 插入啟用確認訂閱的連結。
+* **[!UICONTROL Social network sharing links]** : 插入按鈕，讓收件者能夠與電子郵件用戶端、Facebook、Twitter、Google +和LinkedIn共用鏡像頁面內容的連結(請參 [閱病毒式行銷： 轉達給朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
+* **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** : 產生程式碼，以預先定義的HTML樣式格式化電子郵件。 這些區塊必須插入傳送的原始碼、區段 **[!UICONTROL ...]** 中的標 **`<style>...</style>`** 記。
+* **[!UICONTROL Offer acceptance URL in unitary mode]** : 插入URL，以將「互動」選件設 **[!UICONTROL Accepted]** 定為( [請參閱](../../interaction/using/offer-analysis-report.md))。
 
 ## 定義自訂個人化區塊 {#defining-custom-personalization-blocks}
 
@@ -155,4 +158,4 @@ HTML原始碼會插入傳送內容中。 例如，個人化 **[!UICONTROL Greeti
 
       ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * 輸入內容（在HTML、文字、JavaScript等中），然後按一下 **[!UICONTROL Save]** 。
+   * 輸入內容（在HTML、文字、JavaScript等中） ，然後按一下 **[!UICONTROL Save]** 。
