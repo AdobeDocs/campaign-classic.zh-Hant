@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 排除 **類型活動**，根據從中提取一個或多個其他目標的主目標建立目標。
 
-要配置此活動，請輸入其標籤並選擇主收件者集：來自主集的人口族群可讓您建構結果。 將排除由主集和至少一個條目活動共用的配置檔案。
+要配置此活動，請輸入其標籤並選擇主收件者集： 來自主集的人口族群可讓您建構結果。 將排除由主集和至少一個條目活動共用的配置檔案。
 
 ![](assets/s_user_segmentation_exclu.png)
 
@@ -47,8 +50,6 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 1. 執行工作流程。 在本例中，結果由18至30歲的受助者組成，但居住在巴黎的受助者被排除在外，並被送到補充品中。
 
    ![](assets/exclusion_example.png)
-
-黑名單導入示例使用 **Exclusion**-type活動，該活動可在「讀取」列 [表中找到](../../workflow/using/read-list.md)。
 
 ## 輸入參數 {#input-parameters}
 
