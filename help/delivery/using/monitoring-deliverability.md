@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Deliverability套件可讓您存取：
 * 檢查每個傳送吞吐量，以確定其與傳送內容的有效性一致(例如： &#39;flash銷售&#39;應在幾分鐘內完成，而非數天內完成)。
 * 使用波 [時](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)，請確認每個波在觸發下一波之前有足夠的時間完成。
 * 檢查錯誤數和新隔離的 [數量](../../delivery/using/understanding-quarantine-management.md) ，與其他遞送一致。
-* 請仔細 [查閱傳送記錄](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) ，以檢查反白顯示的錯誤類型（灰色或黑名單、DNS問題、反垃圾郵件規則等）。
+* 請仔細 [查閱傳送記錄](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) ，以檢查反白標示的錯誤類型（區塊清單、DNS問題、反垃圾訊息規則等）。
 
 ## Signal Spam {#signal-spam}
 
@@ -70,7 +70,7 @@ Signal Spam是法國服務，為法國ISP(Orange、SFR)提供匿名回饋迴路�
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) 是Adobe可傳送性內部工具的輔助監控解決方案，提供IP、網域黑名單和信譽指標。
+[250ok](https://250ok.com/) 是Adobe可傳送性內部工具的輔助監控解決方案，提供IP和網域區塊清單以及信譽指標。
 
 提供的資訊是即時的，可提供主動幫助。
 
@@ -94,7 +94,7 @@ Signal Spam是法國服務，為法國ISP(Orange、SFR)提供匿名回饋迴路�
 
 * **[!UICONTROL DomainKeys]** : 由Yahoo開發、旨在認證電子郵件傳送者身分的服務。
 
-* **[!UICONTROL IP and RBL domain]** （即時黑洞清單）: 區塊清單組織標籤為發送信譽不佳的IP地址和域的清單。 這些清單由專屬組織維護，例如Spamhaus、Spamcop、SURBL/URIBL等。 Adobe Campaign目前會處理對RBL進行檢查，這些RBL對傳遞能力有重大影響。 這些RBL反映傳送的信譽，ISP可能會在接收您的電子郵件前參考這些信譽。
+* **[!UICONTROL IP and RBL domain]** （即時黑洞清單）: IP位址和網域的清單，區塊清單組織已標籤為傳送信譽不佳。 這些清單由專屬組織維護，例如Spamhaus、Spamcop、SURBL/URIBL等。 Adobe Campaign目前會處理對RBL進行檢查，這些RBL對傳遞能力有重大影響。 這些RBL反映傳送的信譽，ISP可能會在接收您的電子郵件前參考這些信譽。
 
 * **[!UICONTROL SNDS]** （智慧網路資料服務）: Windows [Live Hotmail反垃圾郵件服務](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)。 Hotmail是唯一提供此類資訊的ISP。 基準分數是綠色篩選結果，投訴率低於0.1%，而且零垃圾訊息陷阱。
 
