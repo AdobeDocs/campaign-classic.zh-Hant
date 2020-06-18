@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 * 內容管理
 * 訂閱管理，請參 [閱訂閱(nms:subscription)](#subscribe--nms-subscription-)[和取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
-* 資料流程：進出口。
+* 資料流程： 進出口。
 
 本節詳細說明「訂閱」、「取消訂閱」和「提交傳送」服務的使用。
 
@@ -58,7 +61,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 * 包含收件者資訊的XML檔案（來自&quot;nms:recipient&quot;架構）,
 * 布林值，若收件者尚未建立，則用於建立。
 
-「nms:subscription」架構中「subscribe」方法的說明：
+「nms:subscription」模式中「subscribe」方法的說明：
 
 ```
 <method name="Subscribe" static="true">
@@ -76,7 +79,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ### 範例 {#examples}
 
-電子郵件地址上具有收件人協調密鑰的訂閱：輸入的XML文檔必須引用此欄位中的電子郵件地址和鍵的定義。
+電子郵件地址上具有收件人協調密鑰的訂閱： 輸入的XML文檔必須引用此欄位中的電子郵件地址和鍵的定義。
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
@@ -147,7 +150,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 >[!NOTE]
 >
->如果未將服務名指定為參數，則收件者會自動列入黑名單(@blackList=&quot;1&quot;)。
+>如果未將服務名指定為參數，則收件者會自動顯示在塊清單(@blockList=&quot;1&quot;)上。
 
 此呼叫不會傳回任何資料，但錯誤除外。
 
