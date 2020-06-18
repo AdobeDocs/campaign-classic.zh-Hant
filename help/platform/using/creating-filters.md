@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+workflow-type: tm+mt
+source-wordcount: '1980'
+ht-degree: 0%
 
 ---
 
@@ -111,7 +114,7 @@ Adobe Campaign提供下列篩選類型：
 
    預設篩選欄位會顯示在清單上方。
 
-1. 從下拉式清單中選取篩選選項，或輸入要套用的篩選條件(選取或輸入准則的方法取決於欄位類型：文字、列舉等)。
+1. 從下拉式清單中選取篩選選項，或輸入要套用的篩選條件(選取或輸入准則的方法取決於欄位類型： 文字、列舉等)。
 
    ![](assets/s_ncs_user_sort_fields.png)
 
@@ -179,10 +182,10 @@ Adobe Campaign提供下列篩選類型：
 
 ### 使用函式建立進階篩選 {#creating-an-advanced-filter-with-functions}
 
-進階篩選器可使用函式；具有 **函式的篩選器是透過運算式編輯器建立** ，可讓您使用資料庫資料和進階函式來建立公式。 若要使用函式建立篩選，請重複進階篩選建立步驟1、2和3，然後依下列步驟進行：
+進階篩選器可使用函式； **具有函式的篩選器** ，是透過運算式編輯器建立的，可讓您使用資料庫資料和進階函式來建立公式。 若要使用函式建立篩選，請重複進階篩選建立步驟1、2和3，然後依下列步驟進行：
 
 1. 在欄位選擇視窗中，按一下 **[!UICONTROL Advanced selection]**。
-1. 選擇要使用的公式類型：匯整、現有使用者篩選或運算式。
+1. 選擇要使用的公式類型： 匯整、現有使用者篩選或運算式。
 
    ![](assets/s_ncs_user_filter_formula_select.png)
 
@@ -197,7 +200,7 @@ Adobe Campaign提供下列篩選類型：
 
       ![](assets/s_ncs_user_create_exp_exple01.png)
 
-      它可讓您選擇資料庫表格中的欄位，並附加進階函式至這些欄位：選擇要在中使用的函式 **[!UICONTROL List of functions]**。 可用的函式在函式列 [表中詳細說明](../../platform/using/defining-filter-conditions.md#list-of-functions)。 接著，選取函式所關注的欄位或欄位，然後按一 **[!UICONTROL OK]** 下以核准運算式。
+      它可讓您選擇資料庫表格中的欄位，並附加進階函式至這些欄位： 選擇要在中使用的函式 **[!UICONTROL List of functions]**。 可用的函式在函式列 [表中詳細說明](../../platform/using/defining-filter-conditions.md#list-of-functions)。 接著，選取函式所關注的欄位或欄位，然後按一 **[!UICONTROL OK]** 下以核准運算式。
 
       >[!NOTE]
       >
@@ -205,9 +208,9 @@ Adobe Campaign提供下列篩選類型：
 
 ## 儲存篩選 {#saving-a-filter}
 
-篩選器是每個運算元專屬的，每當運算元清除其用戶端主控台的快取時，都會重新初始化篩選器。
+篩選器是每個運算元專屬的，每當運算元清除其用戶端主控台的快取時，就會重新初始化篩選器。
 
-您可以儲存進階 **篩選** ，以建立應用程式篩選：您可以在任何清單中按滑鼠右鍵，或透過清單上方的按 **[!UICONTROL Filters]** 鈕重新使用。
+您可以儲存進階 **篩選** ，以建立應用程式篩選： 您可以在任何清單中按滑鼠右鍵，或透過清單上方的按 **[!UICONTROL Filters]** 鈕重新使用。
 
 您也可以在目標選擇階段中，透過傳送精靈直接存取這些篩選器(如需建立傳送的詳 [細資訊](../../delivery/using/creating-an-email-delivery.md) ，請參閱本節)。 若要建立應用程式篩選，您可以：
 
@@ -276,8 +279,8 @@ Adobe Campaign提供下列篩選類型：
    <td> 選取在過去Y個月中點按傳送至少X次的收件者。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 黑名單電子郵件地址<br /> </td> 
-   <td> 選擇電子郵件地址已列入黑名單的收件人。<br /> </td> 
+ <td> 區塊清單上的電子郵件地址<br /> </td> 
+    <td> 選擇其電子郵件地址位於塊清單中的收件人。<br/> </td>
   </tr> 
   <tr> 
    <td> 隔離的電子郵件地址<br /> </td> 
@@ -368,12 +371,12 @@ Adobe Campaign提供下列篩選類型：
 
 按一下 **[!UICONTROL Settings]** 標籤以存取下列選項：
 
-* **[!UICONTROL Default filter for the associated document type]**:此選項可讓您在排序相關清單的編輯器中預設建議此篩選器。
+* **[!UICONTROL Default filter for the associated document type]**: 此選項可讓您在排序相關清單的編輯器中預設建議此篩選器。
 
    例如，篩選 **[!UICONTROL By name or login]** 器會套用至運算子。 此選項已選取，因此篩選器一律會提供在所有運算子清單上。
 
-* **[!UICONTROL Filter shared with other operators]**:此選項可讓您將篩選器提供給目前資料庫上所有其他運算子使用。
-* **[!UICONTROL Use parameter entry form]**:此選項可讓您定義選取此篩選時，要顯示在清單上方的篩選欄位。 這些欄位可讓您定義篩選設定。 此表單必須透過按鈕以XML格式 **[!UICONTROL Form]** 輸入。 例如，預先設定的篩 **[!UICONTROL Recipients who have opened]**&#x200B;選器（可從收件者清單取得）會顯示篩選欄位，讓您選取篩選器的目標傳送。
+* **[!UICONTROL Filter shared with other operators]**: 此選項可讓您將篩選器提供給目前資料庫上所有其他運算子使用。
+* **[!UICONTROL Use parameter entry form]**: 此選項可讓您定義選取此篩選時，要顯示在清單上方的篩選欄位。 這些欄位可讓您定義篩選設定。 此表單必須透過按鈕以XML格式 **[!UICONTROL Form]** 輸入。 例如，預先設定的篩 **[!UICONTROL Recipients who have opened]**&#x200B;選器（可從收件者清單取得）會顯示篩選欄位，讓您選取篩選器的目標傳送。
 
    按 **[!UICONTROL Preview]** 鈕會顯示選取篩選的結果。
 
