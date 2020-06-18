@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
-1. 儲存類型學：是否已新增至現有的類型清單。
+1. 儲存類型學： 是否已新增至現有的類型清單。
 1. 開啟您要套用規則的傳送。
 1. 開啟傳送屬性並存取標 **[!UICONTROL Typology]** 簽。
 1. 在下拉式清單中選取類型學。
@@ -59,7 +62,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 >[!NOTE]
 >
->對於篩選規則，您可以選擇篩選條件的應用條件：它們可以依賴傳送或傳送大綱。 如需詳細資訊，請參閱「 [Conditioning a filtering rule」（調整篩選規則）](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule)。
+>對於篩選規則，您可以選擇篩選條件的應用條件： 它們可以依賴傳送或傳送大綱。 如需詳細資訊，請參閱「 [Conditioning a filtering rule」（調整篩選規則）](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule)。
 
 ## 調整計算頻率 {#adjusting-calculation-frequency}
 
@@ -69,7 +72,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 為此，標籤的欄 **[!UICONTROL Frequency]** 位可讓您 **[!UICONTROL General]** 定義儲存定位的最大期間。 預設情況下，值 **0** 表示計算在下次執行每日重新仲裁之前仍有效。
 
-要保存超過此期間的結果，請在欄位中輸入大於12的 **[!UICONTROL Frequency]** 值：一旦此期間過期，就會重新套用所有規則。
+要保存超過此期間的結果，請在欄位中輸入大於12的 **[!UICONTROL Frequency]** 值： 一旦此期間過期，就會重新套用所有規則。
 
 選 **[!UICONTROL Re-apply the rule at the start of personalization]** 項可讓您在個人化階段自動套用規則，包括欄位中指明的期間 **[!UICONTROL Frequency]** 是否仍然有效。
 
@@ -84,7 +87,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 1. 控制規則（如果規則是在定位開始時套用）。
 1. 篩選規則:
 
-   * 地址限定的原生應用程式規則：定義地址／未驗證地址／黑名單地址／隔離地址／地址質量。
+   * 地址限定的原生應用程式規則： 塊清單上的已定義地址／未驗證地址／地址／隔離地址／地址質量。
    * 篩選由使用者定義的規則。
    * 位址或識別碼的去重複化規則（視需要套用）。
 
@@ -118,7 +121,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
    如果您需要知道目標的卷才能應用控制規則，請選擇此階段。
 
-   例如，控制規 **[!UICONTROL Check proof size]** 則會套用至每個定位階段之後：如果有太多的證明收件者，此規則可防止訊息個人化。
+   例如，控制規 **[!UICONTROL Check proof size]** 則會套用至每個定位階段之後： 如果有太多的證明收件者，此規則可防止訊息個人化。
 
 * **[!UICONTROL At the start of personalization]**
 
@@ -139,7 +142,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >[!NOTE]
 >
 >相似性管理不適用於 **[!UICONTROL Filtering]** 類型。\
->相關性是在Adobe Campaign伺服器的例項設定檔案中定義。 如需詳細資訊，請參閱[本小節](../../installation/using/about-initial-configuration.md)。
+>相關性是在Adobe Campaign伺服器的例項設定檔案中定義。 如需詳細資訊，請參閱[本章節](../../installation/using/about-initial-configuration.md)。
 
 ### 促銷活動最佳化與分散式行銷 {#campaign-optimization-and-distributed-marketing}
 
@@ -149,6 +152,6 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 >[!NOTE]
 >
->在類型和類型規則中，如果您的授 **[!UICONTROL Distributed Marketing]** 權包含下列選項，則會新增標籤：請檢查您的授權合約。\
+>在類型和類型規則中，如果您的授 **[!UICONTROL Distributed Marketing]** 權包含下列選項，則會新增標籤： 請檢查您的授權合約。\
 >有關分佈式行銷的詳細資訊，請參閱關於 [分佈式行銷](../../campaign/using/about-distributed-marketing.md)。
 
