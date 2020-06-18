@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：網路表單」
-seo-title: 「使用案例：網路表單」
-description: 「使用案例：網路表單」
+title: 「使用案例： 網路表單」
+seo-title: 「使用案例： 網路表單」
+description: 「使用案例： 網路表單」
 seo-description: null
 page-status-flag: never-activated
 uuid: b2c3f171-325e-4913-a188-a791bad0df2e
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
 
-# 使用案例：網路表單{#use-cases-web-forms}
+# 使用案例： 網路表單{#use-cases-web-forms}
 
 ## 建立包含雙重選擇加入的訂閱表單 {#create-a-subscription--form-with-double-opt-in}
 
@@ -51,13 +54,13 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. 由於此遞送的收件者尚未確認其核准，因此他們仍被列入資料庫的黑名單。 若要接收此通訊，您必鬚根據此範本授權傳送，以鎖定黑名單收件者。
+1. 由於此遞送的收件者尚未確認其批准，因此他們仍在資料庫區塊清單中。 若要接收此通訊，您必鬚根據此範本授權傳送給區塊清單上的目標收件者。
 
    若要這麼做，請按一下標 **[!UICONTROL Exclusions]** 簽。
 
-1. 按一下連 **[!UICONTROL Edit...]** 結並取消勾選 **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** 選項。
+1. 按一下連 **[!UICONTROL Edit...]** 結並取消勾選 **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** 選項。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)
+   <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
    >[!CAUTION]
    >
@@ -109,10 +112,10 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一項活 **[!UICONTROL Script]** 動將將收件者列入黑名單，直到他們確認訂閱了電子報。 其內容必須如下：
+   第一個活 **[!UICONTROL Script]** 動會將收件者新增至區塊清單，直到他們確認訂閱電子報為止。 其內容必須如下：
 
    ```
-   ctx.recipient.@blackList=1
+   ctx.recipient.@blockList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +123,7 @@ Web表單工作流程將包含下列活動：
    第二個活 **[!UICONTROL Script]** 動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將允許您將收件人從臨時資料夾轉移到另一個資料夾，並在收件人確認訂閱後立即與現有配置檔案進行協調。
 
    ```
-   ctx.recipient.@blackList=0
+   ctx.recipient.@blockList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,11 +175,11 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   使用者會新增至資料夾中的Adobe Campaign資料庫， **[!UICONTROL Temp]** 其個人檔案會列入黑名單，直到他們以電子郵件確認訂閱為止。
+   使用者會新增至資料夾中的Adobe Campaign資料庫， **[!UICONTROL Temp]** 其個人檔案會新增至區塊清單，直到他們以電子郵件確認訂閱為止。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
-1. 系統會傳送確認訊息，其中包含核准訂閱的連結。
+1. 系統會傳送確認訊息給他們，其中包含核准訂閱的連結。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
 
@@ -186,7 +189,7 @@ Web表單工作流程將包含下列活動：
 
    在Adobe Campaign中，使用者設定檔已更新：
 
-   * 他們不再被列入黑名單，
+   * 他們不再在區塊清單上，
    * 他們訂閱了資訊服務。
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
