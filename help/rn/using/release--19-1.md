@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2808'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,19 @@ _2019年8月13日_
 
 ## 版本19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **2020年4月29日**: 新建版本(9032@3a9dc9c)，其中包含下列修正：
+![](assets/do-not-localize/green_2.png) **2020年6月22日**: 新建版本(9032@800be2e)，其中包含下列修正：
+
+* iOS HTTP2連接器已改善（協力廠商更新和錯誤管理）。 (NEO-25904、NEO-25903、NEO-25799)
+
+下列修正與追蹤連結安全機制相關：
+
+* 修正追蹤「通知點按」無法運作的問題（iOS和Android推播通知）。 (NEO-25965)
+* 修正使用某些舊版Outlook時，無法開啟／按一下追蹤URL的問題。  (NEO-25688)
+* 修正在個人化參數（具有井字型大小的錨記）中使用片段追蹤URL無法運作的問題。 (NEO-25774)
+* 已修正反網路釣魚服務的問題。 (NEO-25283)
+* 修正使用特定自訂追蹤公式時的追蹤問題。 (NEO-25277)
+
+![](assets/do-not-localize/orange_2.png) **2020年4月29日**: 新建版本(9032@3a9dc9c)，其中包含下列修正：
 
 * 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，可聯絡客戶服務。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱「安全性與隱私權」核 [對清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 * 修正影像無法顯示在「行」傳送上的問題。 (NEO-23207)
