@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
 workflow-type: tm+mt
-source-wordcount: '2472'
+source-wordcount: '2584'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Adobe Campaign 管理隔離地址的清單。在執行傳遞分析時，預設�
 
 * 報 **[!UICONTROL Non-deliverables and bounces]** 表會顯示隔離中的地址、遇到的錯誤類型等資訊，以及按域劃分的故障細分。
 
-您可以查詢平台的所有傳送(首頁>報&#x200B;**表**)或特定傳送的資訊。 您也可以建立自訂報表，並選取要顯示的資訊。
+您可以查詢平台的所有傳送(**[!UICONTROL Home page > Reports]**)或特定傳送的資訊。 您也可以建立自訂報表，並選取要顯示的資訊。
 
 ### 標識收件人的隔離地址 {#identifying-quarantined-addresses-for-a-recipient}
 
@@ -102,16 +102,30 @@ Adobe Campaign 管理隔離地址的清單。在執行傳遞分析時，預設�
 
 ### 刪除隔離地址 {#removing-a-quarantined-address}
 
-如果需要從隔離中刪除地址，請將其狀態手動更改為 **[!UICONTROL Valid]**。
+如果需要，可以手動從隔離清單中刪除地址。 此外，工作流還會自動從隔離清單中刪除與特定條件匹配的地 **[!UICONTROL Database cleanup]** 址。
 
-![](assets/tech_quarant_error_status.png)
+要手動從隔離清單中刪除地址，請執行以下操作：
 
-如果您將狀態變更為 **[!UICONTROL On allow list]**，則每次都會系統鎖定位址，即使發生錯誤亦然。
+* 您可以將其狀態從節 **[!UICONTROL Valid]** 點更改為 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 狀態。
 
->[!CAUTION]
-即使更改了地址的狀態，塊清單上的地址不受隔離系統的關注，也不是目標。
+   ![](assets/tech_quarant_error_status.png)
 
-您也可以變更錯誤數和錯誤之間的期間。 若要這麼做，請變更部署精靈的設定（電子郵件頻道／進階設定）。 有關部署嚮導的詳細資訊，請參 [閱本節](../../installation/using/deploying-an-instance.md)。
+* 您也可以將其狀態變更為 **[!UICONTROL On allow list]**。 在這種情況下，地址仍在隔離清單中，但是，即使遇到錯誤，該地址仍將被系統地定位。
+
+<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+
+在以下情況下，這些地址將自動從隔離清單中刪除：
+
+* 在成功傳 **[!UICONTROL With errors]** 送後，狀態的地址將從隔離清單中刪除。
+* 如果上次 **[!UICONTROL With errors]** 軟反彈發生在10天前，則狀態地址將從隔離清單中刪除。 有關軟錯誤管理的詳細資訊，請參 [閱此部分](#soft-error-management)。
+* 在30天 **[!UICONTROL With errors]** 後，狀態為因錯 **[!UICONTROL Mailbox full]** 誤而跳回的地址將從隔離清單中刪除。
+
+然後，他們的狀態會變更為 **[!UICONTROL Valid]**。
+
+>[!IMPORTANT]
+即使收到電子郵件， **[!UICONTROL Quarantine]** 具有 **[!UICONTROL On block list]** 或狀態地址的收件者也不會被移除。
+
+您可以修改錯誤數和兩個錯誤之間的句點。 若要這麼做，請變更部署精靈(**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)中的對應設定。 有關部署嚮導的詳細資訊，請參 [閱本節](../../installation/using/deploying-an-instance.md)。
 
 ## 將地址發送到隔離的條件 {#conditions-for-sending-an-address-to-quarantine}
 
@@ -121,7 +135,7 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
 * **硬錯誤**: 對應的電子郵件地址會立即傳送至隔離區。
 * **軟錯誤**: 軟錯誤不會立即發送要隔離的地址，但會增加錯誤計數器。 如需詳細資訊，請參閱「軟 [體錯誤管理」](#soft-error-management)。
 
-如果使用者將電子郵件歸為垃圾訊息(**回饋迴路**)，則會自動將訊息重新導向至Adobe管理的技術郵箱。 然後，用戶的電子郵件地址會自動發送到隔離區。
+如果使用者將電子郵件歸為垃圾訊息([回饋迴路](../../delivery/using/technical-recommendations.md#feedback-loop))，則會自動將訊息重新導向至Adobe管理的技術郵箱。 然後，用戶的電子郵件地址會自動發送到隔離區。
 
 在隔離地址清單中，該字 **[!UICONTROL Error reason]** 段指明了將選定地址置於隔離中的原因。 Adobe Campaign中的隔離區區分大小寫。 請務必以小寫匯入電子郵件地址，以便日後不會重新定位。
 
