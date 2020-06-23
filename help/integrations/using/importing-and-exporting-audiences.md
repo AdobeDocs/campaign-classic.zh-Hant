@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 0%
 
 ---
 
@@ -31,10 +34,10 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
    ![](assets/aam_import_audience.png)
 
-1. 在開啟的視窗中，按一 **[!UICONTROL Select a shared audience]** 下以前往其他Adobe Experience cloud解決方案中可用的共用觀眾／區段清單。
+1. 在開啟的視窗中，按一 **[!UICONTROL Select a shared audience]** 下以前往其他Adobe Experience Cloud解決方案中可用的共用觀眾／區段清單。
 1. 選取對象並確認。 觀眾的資訊會自動完成。
 
-   請注意，若要匯入共用的觀眾，您應在管理控制台中指派 **[!UICONTROL Audience library]** 產品，並成為Audience manager的管理員。 如需詳細資訊，請參閱「管理控制台」 [檔案](https://helpx.adobe.com/enterprise/managing/user-guide.html)。
+   請注意，若要匯入共用的觀眾，您應在管理控制台中指派 **[!UICONTROL Audience library]** 產品，並成為Audience Manager的管理員。 如需詳細資訊，請參閱「管理控制台」 [檔案](https://helpx.adobe.com/enterprise/managing/user-guide.html)。
 
    ![](assets/aam_import_audience_3.png)
 
@@ -46,13 +49,13 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 觀眾會透過技術工作流程匯入。 匯入的清單包含可使用AMC資料來源進行調節的元素。 Adobe Campaign未識別的元素不會匯入。
 
-從People核心服務或Audience manager直接匯入區段時，匯入程式需要24-36小時才能同步。 在這段期間後，您就可以在Adobe Campaign中尋找並使用您的新觀眾。
+從People核心服務或Audience Manager直接匯入區段時，匯入程式需要24-36小時才能同步。 在這段期間後，您就可以在Adobe Campaign中尋找並使用您的新觀眾。
 
 >[!NOTE]
 >
->如果您要將觀眾從Adobe Analytics匯入Adobe Campaign，這些觀眾必須先在People Core Service或Audience manager中共用。 此程式需要12-24小時，這必須新增至與Campaign同步的24-36小時。
+>如果您要將觀眾從Adobe Analytics匯入Adobe Campaign，這些觀眾必須先在People Core Service或Audience Manager中共用。 此程式需要12-24小時，這必須新增至與Campaign同步的24-36小時。
 >
->在此特定情況下，觀眾分享的時間最長可達60小時。 如需People Core服務和Audience Manager中Adobe Analytics觀眾分享的詳細資訊，請參閱本文 [件](https://marketing.adobe.com/resources/help/en_US/mcloud/t_publish_audience_segment.html)。
+>在此特定情況下，觀眾分享的時間最長可達60小時。 如需People Core服務和Audience Manager中Adobe Analytics觀眾分享的詳細資訊，請參閱本文 [件](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html)。
 
 每次同步觀眾資料時，都會完全取代觀眾資料。 只能匯入區段。 不支援精細資料，包括索引鍵值配對、特徵和規則。
 
@@ -82,7 +85,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 然後會匯出觀眾。 儲存觀眾活動有兩個對外轉場。 主要轉場包含成功匯出的收件者。 其他轉場包含無法與訪客ID或宣告的ID對應的收件者。
 
-Adobe Campaign和People核心服務之間的同步化需要24-36小時。 在這段期間後，您將可在People核心服務中尋找新的受眾，並在其他Adobe Experience cloud解決方案中重複使用。 如需在Adobe People核心服務中使用Adobe Campaign共用觀眾的詳細資訊，請參閱本文 [件](https://marketing.adobe.com/resources/help/en_US/mcloud/t_audience_create.html)。
+Adobe Campaign和People核心服務之間的同步化需要24-36小時。 在這段期間後，您將可在People核心服務中尋找新的受眾，並在其他Adobe Experience Cloud解決方案中重複使用。 如需在Adobe People核心服務中使用Adobe Campaign共用觀眾的詳細資訊，請參閱本文 [件](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html)。
 
 >[!NOTE]
 >
