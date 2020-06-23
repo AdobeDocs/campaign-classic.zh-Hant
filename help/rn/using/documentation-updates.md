@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1b0980d540992538f7961afd7c218888dee4a39
+source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
 workflow-type: tm+mt
-source-wordcount: '6708'
+source-wordcount: '6726'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 8%
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
 
 ## 2020年6月 {#june-2020}
+
+已新增使用案例，說明如何使用「控制 [面板](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) 」和「促 [銷活動](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 」工作流程來加密和解密資料。
 
 「白名單」和「黑名單」詞語都已從Adobe Campaign檔案中移除。 產品UI、選項名稱和內部代碼中可能仍會出現這些詞語，但在即將發行的促銷活動版本中，這些詞語會以「blocklist」和「allowlist」取代。
 
@@ -582,7 +584,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
