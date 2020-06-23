@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 66%
 
 ---
 
@@ -54,10 +57,10 @@ The **[!UICONTROL Profiles and targets]** link lets you display recipients store
 
 它也可讓您存取：
 
-* 清單；請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md),
+* 清單； 請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md),
 * 訂閱服務，請參閱[本頁面](../../delivery/using/managing-subscriptions.md)
 * 網路應用程式，請參閱[本頁面](../../web/using/about-web-applications.md)
-* 進出口（就業）;請參閱 [一般匯入和匯出](../../platform/using/generic-imports-and-exports.md),
+* 進出口（就業）; 請參閱 [一般匯入和匯出](../../platform/using/generic-imports-and-exports.md),
 * 鎖定工作流程，請參閱[本頁面](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 使用收件者頁面，您可以對用戶檔案執行常見的作業，如編輯、更新、新增、刪除、排序。
@@ -68,9 +71,9 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 * sort and filter the profiles of the database; see [Filtering options](../../platform/using/filtering-options.md),
 * move, copy or delete profiles from the database; see [Managing profiles](../../platform/using/managing-profiles.md),
-* 更新設定檔；請參閱 [更新資料](../../platform/using/updating-data.md),
-* 匯出收件者；請參 [閱導出和導入配置檔案](../../platform/using/exporting-and-importing-profiles.md),
-* 建立收件者群組；請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md)。
+* 更新設定檔； 請參閱 [更新資料](../../platform/using/updating-data.md),
+* 匯出收件者； 請參 [閱導出和導入配置檔案](../../platform/using/exporting-and-importing-profiles.md),
+* 建立收件者群組； 請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md)。
 
 若要存取進階功能和設定，您必須按一下 **[!UICONTROL Explorer]** 圖示。
 
@@ -92,12 +95,12 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 計費帳單僅會考慮&#x200B;**有效** 的用戶檔案。如果在過去 12 個月透過任何通路鎖定過用戶檔案或與其進行過通訊，那麼則該用戶檔案被視為有效。
 
+在傳遞準備期間 (類型規則，隔離) 被排除的用戶檔案不包含在內。被多個傳遞項目鎖定的用戶檔案將只計算一次。
+
 >[!NOTE]
 >
 >Facebook 和 Twitter 通路不包含在內。
 
-You can have an overview of the **[!UICONTROL Number of active profiles]** from the **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu.
+您可從「促銷活動標準」功 **[!UICONTROL Number of active profiles]** 能表取得 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 概觀。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每個期間均為 12 個月。
 
-The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/delivery.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每個期間均為 12 個月。
-
-在傳遞準備期間 (類型規則，隔離) 被排除的用戶檔案不包含在內。被多個傳遞項目鎖定的用戶檔案將只計算一次。
+如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 有關詳細資訊，請參閱「控 [制面板」文檔](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
