@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d5d8474099776f770e88fcaf3bf15256da1be2
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
@@ -60,12 +63,12 @@ source-git-commit: f4d5d8474099776f770e88fcaf3bf15256da1be2
 
 ### 定義影像參數 {#defining-image-parameters}
 
-* URL **[!UICONTROL Default image]**:當未滿足任何條件時將顯示的影像。 您也可以從資產庫中選取影像。
-* The **[!UICONTROL Target location]**:輸入動態選件的位置名稱。 您必須在Target活動中選取此位置。
-* The **[!UICONTROL Landing Page]**:如果您想要將預設影像重新導向至預設登陸頁面。 此URL僅適用於在最終電子郵件中顯示預設影像且為選用的情況。
-* The **[!UICONTROL Additional decision parameters]**:指定在Adobe Target區段中定義的欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須已在rawbox中指定。 在我們的範例中，我們新增了「國家」欄位。
+* URL **[!UICONTROL Default image]**: 當未滿足任何條件時將顯示的影像。 您也可以從資產庫中選取影像。
+* The **[!UICONTROL Target location]**: 輸入動態選件的位置名稱。 您必須在Target活動中選取此位置。
+* The **[!UICONTROL Landing Page]**: 如果您想要將預設影像重新導向至預設登陸頁面。 此URL僅適用於在最終電子郵件中顯示預設影像且為選用的情況。
+* The **[!UICONTROL Additional decision parameters]**: 指定在Adobe Target區段中定義的欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須已在rawbox中指定。 在我們的範例中，我們新增了「國家」欄位。
 
-如果您在Adobe Target的設定中使用「企業版」權限，請在此欄位中新增對應的屬性。 在此頁面中進一步瞭解Target Enterprise [權限](https://marketing.adobe.com/resources/help/en_US/target/target/properties-overview.html)。
+如果您在Adobe Target的設定中使用「企業版」權限，請在此欄位中新增對應的屬性。 在此頁面中進一步瞭解Target Enterprise [權限](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html)。
 
 ![](assets/target_13.png)
 
