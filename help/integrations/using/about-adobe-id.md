@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+source-git-commit: 567cae1b91efbcd04a041630eeeb446450e002f7
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 28%
 
 ---
 
@@ -31,7 +34,7 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此�
 
 Adobe的身分識別管理系統可協助管理員建立並管理使用者對應用程式和服務的存取。 如需不同Adobe ID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >IMS實作嚴格保留給Adobe技術管理員。 IMS實現是一個複雜的過程，實現時間長。
 
