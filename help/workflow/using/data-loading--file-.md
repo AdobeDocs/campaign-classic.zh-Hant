@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 要載入的檔案可通過轉換指定，或在執行此活動期間計算。 例如，它可以是客戶機的10種最愛產品的清單，這些產品的採購在外部資料庫中進行管理。
 
-此活動的配置窗口的上半部分可讓您定義檔案格式。 若要這麼做，請使用與要匯入的檔案格式相同的範例檔案。 此檔案可儲存在本機或伺服器上。
+此活動的配置窗口的上部部分可讓您定義檔案格式。 若要這麼做，請使用與要匯入的檔案格式相同的範例檔案。 此檔案可儲存在本機或伺服器上。
 
 >[!CAUTION]
 >
@@ -38,6 +38,10 @@ ht-degree: 0%
 ![](assets/s_advuser_wf_etl_file.png)
 
 例如，您可以定義在檔案匯入期間要執行的預先處理，以免在伺服器上解壓縮檔案（並因此儲存解壓縮檔案的空間），但在檔案處理中加入解壓縮。 選取選 **[!UICONTROL Pre-process the file]** 項，並從3個選項中選擇： **[!UICONTROL None]**、 **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。
+
+![](assets/preprocessing-dataloading.png)
+
+如需更多相關資訊，請參閱本節： [在處理前解壓縮或解密檔案](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)。
 
 ## 定義檔案格式 {#defining-the-file-format}
 
