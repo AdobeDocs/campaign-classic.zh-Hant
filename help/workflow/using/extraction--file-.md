@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
+source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
 
@@ -28,14 +31,14 @@ source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
 
 若要設定資料擷取，請套用下列步驟：
 
-1. 指定輸出檔案的名稱：此名稱可包含變數，可透過欄位右側的個人化按鈕插入。
+1. 指定輸出檔案的名稱： 此名稱可包含變數，可透過欄位右側的個人化按鈕插入。
 1. 按一 **[!UICONTROL Edit the file format...]** 下以選取要擷取的資料。
 
    ![](assets/s_advuser_extract_file_param.png)
 
    此選 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 項會新增額外步驟，以篩選匯總的最終結果，例如對特定採購單類型、訂購超過10次的客戶等。
 
-1. 如有必要，您可以將新欄新增至輸出檔案，例如計算或處理結果。 若要這麼做，請按一下圖 **[!UICONTROL Add]** 示
+1. 如有必要，您可以將新欄新增至輸出檔案，例如計算或處理結果。 若要這麼做，請按一下 **[!UICONTROL Add]** 圖示。
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -51,13 +54,19 @@ source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
+您可以定義在資料擷取期間要執行的後置程式，讓您壓縮或加密檔案。 若要這麼做，必須在活動的標籤中新 **[!UICONTROL Script]** 增所需的命令。
+
+如需更多相關資訊，請參閱本節： [壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+
+![](assets/postprocessing_dataextraction.png)
+
 ## 集合函式清單 {#list-of-aggregate-functions}
 
 以下是可用集合函式的清單：
 
 * **[!UICONTROL Count]** 計算要聚合的欄位的所有非空值，包括重複值（聚合欄位）,
 
-   **[!UICONTROL Distinct]** 要計算要聚合的欄位的不同值和非空值的總數（在計算前排除重複值）,
+   **[!UICONTROL Distinct]** 要計算要聚合的欄位的不同值和非空值的總數（在計算之前排除重複值）,
 
 * **[!UICONTROL Sum]** 計算數值域的值總和，
 * **[!UICONTROL Minimum value]** 計算欄位的最小值（數字或其他）,
