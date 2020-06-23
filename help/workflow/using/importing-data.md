@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
+source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+workflow-type: tm+mt
+source-wordcount: '2420'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 ## 如何收集資料 {#how-to-collect-data}
 
-### 使用清單中的資料：讀取清單 {#using-data-from-a-list--read-list}
+### 使用清單中的資料： 讀取清單 {#using-data-from-a-list--read-list}
 
 在工作流中發送的資料可以來自清單，其中資料已事先準備並結構化。
 
@@ -46,28 +49,87 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-### 在處理前解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
+## 在處理前解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign可讓您匯入壓縮或加密的檔案。 在活動中讀取它們之 **[!UICONTROL Data loading (file)]** 前，您可以定義要解壓縮或解密檔案的預處理。
+### 關於預處理階段 {#about-pre-processing-stages}
+
+Adobe Campaign可讓您匯入壓縮或加密的檔案。 在資料載入（檔案）活 [動中讀取這些檔案之前](../../workflow/using/data-loading--file-.md) ，您可以定義要解壓縮或解密檔案的預先處理。
 
 若要這麼做：
 
-* 如果您的Adobe Campaign安裝是由Adobe代管：向Support(支 [持](https://support.neolane.net) )發送請求，要求在伺服器上安裝必要的實用程式。
-* 如果您的Adobe Campaign安裝是在現場進行：安裝您要使用的實用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
+1. 使用「 [控制面板](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) 」產生公開／私密金鑰對。
+
+   >[!NOTE]
+   >
+   >控制面板適用於AWS托管的所有客戶（現場托管其行銷實例的客戶除外）。
+
+1. 如果您的Adobe Campaign安裝是由Adobe代管，請聯絡Adobe客戶服務，以便在伺服器上安裝必要的公用程式。
+1. 如果您的Adobe Campaign安裝是內部部署，請安裝您要使用的公用程式(例如： GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
+
+然後，您就可以在工作流程中使用所需的預處理命令：
 
 1. 在工作流程中新 **[!UICONTROL File transfer]** 增及設定活動。
 1. 新增活 **[!UICONTROL Data loading (file)]** 動並定義檔案格式。
 1. 勾選 **[!UICONTROL Pre-process the file]** 選項。
-1. 指定要套用的預處理命令。 例如，要使用PGP解密檔案：
-
-   ```
-   <path-to_pgp_if-not_global_or_server/>pgp.exe --decrypt --input nl6/var/vp/import/filename.pgp --passphrase "your password" --recipient recipient @email.com --verbose --output nl6/var/vp/import/filename
-   ```
-
+1. 指定要套用的預處理命令。
 1. 新增其他活動以管理來自檔案的資料。
 1. 儲存並執行您的工作流程。
 
-匯出檔案時，您也可以壓縮或加密檔案。 請參 [閱壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+在下面的使用案例中提供了示例。
+
+**相關主題：**
+
+* [資料載入（檔案）活動](../../workflow/using/data-loading--file-.md)。
+* [壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+
+### 使用案例： 匯入使用控制面板產生的金鑰加密的資料 {#use-case-gpg-decrypt}
+
+在此使用案例中，我們將建立工作流程，以便使用「控制面板」中產生的金鑰，匯入在外部系統中加密的資料。
+
+執行此使用案例的步驟如下：
+
+1. 使用「控制面板」產生金鑰對（公開／私用）。 「控制面板」文檔中提供 [了詳細步驟](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
+
+   * 公開金鑰將會與外部系統共用，外部系統會使用它來加密要傳送至Campaign的資料。
+   * Campaign Classic將使用私密金鑰來解密傳入的加密資料。
+   ![](assets/gpg_generate.png)
+
+1. 在外部系統中，使用從「控制面板」下載的公開金鑰來加密要匯入Campaign Classic的資料。
+
+   ![](assets/gpg_external.png)
+
+1. 在Campaign Classic中，建立工作流程以匯入加密資料，並使用透過控制面板安裝的私密金鑰加以解密。 為此，我們將建立以下工作流程：
+
+   ![](assets/gpg_workflow.png)
+
+   * **[!UICONTROL File transfer]** 活動： 將檔案從外部來源傳輸至Campaign Classic。 在此範例中，我們要從SFTP伺服器傳輸檔案。
+   * **[!UICONTROL Data loading (file)]** 活動： 將檔案中的資料載入到資料庫中，然後使用「控制面板」中生成的專用密鑰對其進行解密。
+
+1. 開啟活 **[!UICONTROL File transfer]** 動，然後指定您要從中匯入加密。gpg檔案的外部帳戶。
+
+   ![](assets/gpg_transfer.png)
+
+   有關如何配置活動的全局概念，請參閱本 [節](../../workflow/using/file-transfer.md)。
+
+1. 開啟活 **[!UICONTROL Data loading (file)]** 動，然後根據您的需求進行設定。 有關如何配置活動的全局概念，請參閱本 [節](../../workflow/using/data-loading--file-.md)。
+
+   將預處理階段添加到活動中，以便解密傳入資料。 要執行此操作，請選擇 **[!UICONTROL Pre-process the file]** 選項，然後在以下欄位中複製並貼上此解密 **[!UICONTROL Command]** 命令：
+
+   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+
+   ![](assets/gpg_load.png)
+
+   >[!CAUTION]
+   >
+   >在此示例中，我們使用「控制面板」預設使用的密碼短語，即「密碼短語」。
+   >
+   >如果您過去透過客戶服務要求在實例上安裝了GPG金鑰，密碼短語可能已變更，而且依預設會與密碼短語不同。
+
+1. 按一下 **[!UICONTROL OK]** 確認活動配置。
+
+1. 您現在可以執行工作流程。 執行完該操作後，您可以簽入工作流日誌，確認已執行解密，且已導入檔案中的資料。
+
+   ![](assets/gpg_run.png)
 
 ## 匯入資料時的最佳實務 {#best-practices-when-importing-data}
 
@@ -75,13 +137,13 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在活動中讀取它�
 
 ### 使用匯入範本 {#using-import-templates}
 
-大部分的匯入工作流程應包含下列活動： **[!UICONTROL Data loading (file)]**, **[!UICONTROL Enrichment]****[!UICONTROL Split]**, **[!UICONTROL Deduplication]**, **[!UICONTROL Update data]**。
+大部分的匯入工作流程應包含下列活動： **[!UICONTROL Data loading (file)]**, **[!UICONTROL Enrichment]**, **[!UICONTROL Split]**, **[!UICONTROL Deduplication]**, **[!UICONTROL Update data]**
 
 使用匯入範本可讓您非常方便地準備類似的匯入，並確保資料庫中的資料一致性。 瞭解如何在「工作流程範本」區段中建 [立工作流程範本](../../workflow/using/building-a-workflow.md#workflow-templates) 。
 
 在許多專案中，匯入建置時不 **[!UICONTROL Deduplication]** 會執行任何活動，因為專案中使用的檔案不會重複。 有時會從匯入不同的檔案中顯示重複項目。 因此，消除重複就很困難。 因此，重複資料消除步驟是所有導入工作流中的良好預防措施。
 
-切勿假設傳入的資料是一致且正確的，或IT部門或Adobe Campaign主管負責處理。 在專案期間，請牢記資料清理。 在匯入資料時，可消除重複資料、進行協調並維持一致性。
+切勿假設傳入的資料是一致且正確的，或IT部門或Adobe Campaign主管負責處理。 在專案期間，請牢記資料清理。 在匯入資料時，可以消除重複資料、進行協調並維持一致性。
 
 「設定循環匯入」區段中提供 [了匯入範本範例](#setting-up-a-recurring-import) 。
 
@@ -91,12 +153,12 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在活動中讀取它�
 
 例如：
 
-* 分隔符號：制表符或分號
+* 分隔符號： 制表符或分號
 * 首行含標題
 * 無字串分隔字元
-* 日期格式：YYYY/MM/DD HH:mm:SS
+* 日期格式： YYYY/MM/DD HH:mm:SS
 
-Adobe Campaign無法使用標準檔案匯入活動匯入XML檔案。 您可以使用JavaScript匯入XML檔案，但只能使用小卷：每個檔案的記錄不到10K。
+Adobe Campaign無法使用標準檔案匯入活動匯入XML檔案。 您可以使用JavaScript匯入XML檔案，但只能使用小卷： 每個檔案的記錄不到10K。
 
 ### 使用壓縮和加密 {#using-compression-and-encryption}
 
@@ -156,16 +218,16 @@ zcat nl6/var/vp/import/filename.gz
 1. 從中建立新的工作流模板 **[!UICONTROL Resources > Templates > Workflow templates]**。
 1. 新增下列活動：
 
-   * **[!UICONTROL Data loading (file)]**:定義包含要導入資料的檔案的預期結構。
-   * **[!UICONTROL Enrichment]**:協調導入的資料與資料庫資料。
-   * **[!UICONTROL Split]**:根據記錄是否可以調節，建立篩選器以不同方式處理記錄。
-   * **[!UICONTROL Deduplication]**:在將傳入檔案插入資料庫之前，先從該檔案中消除重複資料。
-   * **[!UICONTROL Update data]**:使用導入的配置檔案更新資料庫。
+   * **[!UICONTROL Data loading (file)]**: 定義包含要導入資料的檔案的預期結構。
+   * **[!UICONTROL Enrichment]**: 協調導入的資料與資料庫資料。
+   * **[!UICONTROL Split]**: 根據記錄是否可以調節，建立篩選器以不同方式處理記錄。
+   * **[!UICONTROL Deduplication]**: 在將傳入檔案插入資料庫之前，先從該檔案中消除重複資料。
+   * **[!UICONTROL Update data]**: 使用導入的配置檔案更新資料庫。
    ![](assets/import_template_example0.png)
 
 1. 設定活 **[!UICONTROL Data Loading (file)]** 動：
 
-   * 上傳範例檔案以定義預期的結構。 範例檔案應僅包含幾行，但是導入時需要的所有列。 檢查並編輯檔案格式，以確保每列的類型設定正確：文字、日期、整數等。 例如：
+   * 上傳範例檔案以定義預期的結構。 範例檔案應僅包含幾行，但是導入時需要的所有列。 檢查並編輯檔案格式，以確保每列的類型設定正確： 文字、日期、整數等。 例如：
 
       ```
       lastname;firstname;birthdate;email;crmID
@@ -180,7 +242,7 @@ zcat nl6/var/vp/import/filename.gz
 
 1. 設定活 **[!UICONTROL Enrichment]** 動。 此活動的目的是識別傳入的資料。
 
-   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
+   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位可用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
    * 在頁籤 **[!UICONTROL Reconciliation]** 中，將選項保留為未 **[!UICONTROL Identify the document from the working data]** 選中狀態。
    ![](assets/import_template_example2.png)
 
@@ -192,13 +254,13 @@ zcat nl6/var/vp/import/filename.gz
 
    * 在活 **[!UICONTROL General]** 動的標籤中，選 **[!UICONTROL Use the additional data only]** 取為篩選設定，並確定 **[!UICONTROL Targeting dimension]** 自動設定為 **[!UICONTROL Enrichment]**。
 
-      選中 **[!UICONTROL Generate complement]** 該選項可查看是否無法在資料庫中插入任何記錄。 如果需要，您可以對補充資料套用進一步的處理：檔案匯出、清單更新等。
+      選中 **[!UICONTROL Generate complement]** 該選項可查看是否無法在資料庫中插入任何記錄。 如果需要，您可以對補充資料套用進一步的處理： 檔案匯出、清單更新等。
 
    * 在標籤的第一個子集 **[!UICONTROL Subsets]** 中，在入站人口中添加過濾條件，以僅選擇收件者主鍵不等於0的記錄。 這樣，在該子集中選擇與資料庫收件人協調的檔案資料。
 
       ![](assets/import_template_example3.png)
 
-   * 添加第二個子集，選擇具有足夠資料要插入到資料庫中的未協調記錄。 例如：電子郵件地址、名字和姓氏。
+   * 添加第二個子集，選擇具有足夠資料要插入到資料庫中的未協調記錄。 例如： 電子郵件地址、名字和姓氏。
 
       子集按其建立順序進行處理，這意味著當處理此第二子集時，已存在於資料庫中的所有記錄都已在第一子集中選擇。
 
