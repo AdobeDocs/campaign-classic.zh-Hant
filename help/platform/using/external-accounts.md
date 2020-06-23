@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2218'
 ht-degree: 0%
 
 ---
@@ -325,7 +325,7 @@ For more information on this configuration, refer to this [page](../../message-c
 
 * **[!UICONTROL IMS organization ID]**
 
-   IMS組織的ID。 若要尋找您的組織ID，請參 [閱此頁](https://marketing.adobe.com/resources/help/en_US/mcloud/faq.html) (我&#x200B;**可在何處找到我的IMS組織ID?**)。
+   IMS組織的ID。 若要尋找您的組織ID，請參 [閱此頁](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (我&#x200B;**可在何處找到我的IMS組織ID?**)。
 
 * **[!UICONTROL Association mask]**
 
