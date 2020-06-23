@@ -5,10 +5,10 @@ solution: Campaign Classic
 title: Adobe Campaign Classic產品檔案
 topic: Premium
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 25%
+source-wordcount: '275'
+ht-degree: 30%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 25%
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## 新增功能
+
+* 「白名單」和「黑名單」詞語都已從Adobe Campaign檔案中移除。 [詳細內容](/help/rn/using/documentation-updates.md)
 
 * **[取得支援](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>&#x200B;存取常見問答、最佳實務、說明資源，以及要求協助
 
