@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e488e1771fe4d07132844900f41f5f4f09fa9438
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 2%
+source-wordcount: '778'
+ht-degree: 1%
 
 ---
 
@@ -42,15 +42,15 @@ Adobe Experience Cloud是一套全方位的同級最佳整合解決方案，以�
 
 根據您的環境，數種解決方案可以連結至Adobe Experience Cloud。 它們以「組織」的形式連結。 組 **織** 是可讓管理員設定群組和使用者，以及控制Experience Cloud中單一登入的實體。 組織的運作方式類似登入公司，涵蓋所有Experience Cloud產品和解決方案。 通常，組織就是您的公司名稱。 但是，公司可以有許多組織。
 
-Adobe Experience Cloud說明入口網站會詳細說明組織管 [理和連結Adobe Experience Cloud帳戶](https://marketing.adobe.com/resources/help/zh_TW/mcloud/organizations.html)。
+Adobe Experience Cloud說明入口網站會詳細說明組織管 [理和連結Adobe Experience Cloud帳戶](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)。
 
 >[!CAUTION]
 >
->新安裝Adobe Campaign或將現有安裝與Adobe Experience Cloud整合時， [Experience Cloud ID服務即會啟用](https://marketing.adobe.com/resources/help/en_US/mcvid/) 。 此服務會取代Adobe Campaign首先用於追蹤功能的永久Cookie。
+>新安裝Adobe Campaign或將現有安裝與Adobe Experience Cloud整合時， [Experience Cloud ID服務即會啟用](https://docs.adobe.com/content/help/en/id-service/using/home.html) 。 此服務會取代Adobe Campaign首先用於追蹤功能的永久Cookie。
 >
 >接著，系統會將唯一訪客ID指派給產生追蹤記錄的收件者。 此ID將保存在表 **[!UICONTROL Requester UUID (@sourceID)]** 的字 **[!UICONTROL nms:trackingLogRcp]** 段中。 因此，在訪客ID服務實作前已存在的收件者追蹤資料將不再可用。
 >
->然後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該 [ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cname.html)。
+>然後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該 [ID](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html)。
 
 ## Experience Cloud 整合 {#experience-cloud-integrations}
 
