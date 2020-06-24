@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3e8802aae0d10befcf9eef1ccf720f82c460038
+source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1765'
 ht-degree: 1%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 1%
 </table>
 
 最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+![](assets/do-not-localize/cp-icon.png) **新的控制面板6月發行** ，包含作用中描述檔監控、子網域傳送能力稽核和GPG金鑰管理。 [進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
