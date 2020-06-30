@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
+source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
 workflow-type: tm+mt
-source-wordcount: '2808'
+source-wordcount: '2848'
 ht-degree: 1%
 
 ---
@@ -92,6 +92,11 @@ _2019年8月13日_
 ![](assets/do-not-localize/orange_2.png) **2020年4月29日**: 新建版本(9032@3a9dc9c)，其中包含下列修正：
 
 * 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，可聯絡客戶服務。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱「安全性與隱私權」核 [對清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+
+>[!CAUTION]
+>
+>如果您在使用追蹤連結的推播通知或使用錨點標籤的傳送時遇到問題，建議您停用追蹤連結的新簽名機制。 本頁詳細介紹了該過 [程](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+
 * 修正影像無法顯示在「行」傳送上的問題。 (NEO-23207)
 * 修正「檔案傳輸 **** 」活動導致SFTP金鑰驗證無法在Debian 9上運作的問題。 (NEO-23183)
 * 已修正在高頻率傳送時，可能會影響推播通知的問題。 (NEO-20516)
@@ -214,7 +219,7 @@ _2019年5月30日_
 * HTTP v2的FDA: fda over HTTP通訊協定廣泛用於混合部署，尤其是廣泛的Log擷取與傳送準備。 已增強穩健性，以避免在擷取或推送資料時發生網路問題和可能的錯誤。 這要求連接兩端的內建都是最新的，否則仍會使用舊協定。
 * 追蹤工作流程： 增強了跟蹤工作流的魯棒性。 與追蹤記錄插入／更新和URL追蹤自訂相關的數個問題已修正。 此外，追蹤工作流程現在會偵測可能導致錯誤並停止工作流程的追蹤記錄問題。 現在會捨棄這些問題，而不加以處理。
 * 清除工作流程： 已改善清除工作流程，以避免可能的錯誤和停止。 這樣可以優化資料庫大小和效能。
-* 將映像嵌入事務性消息： 我們新增了對交易訊息中內嵌影像的完整支援，以避免可能當機或遺失影像。
+* 將映像嵌入事務性消息： 我們新增了對交易訊息中內嵌影像的完整支援，以避免可能的當機或遺失影像。
 * 資料庫大小- XtkJobLog: 已將清除機制添加到此表中。 這對資料庫大小有積極影響。
 * 密件副本歸檔： BCC封存的預設參數已變更，以提高封存速度。 [詳細內容](../../installation/using/email-archiving.md#parameters)
 * 資料庫結構更新： 資料庫結構更新嚮導生成的SQL請求已得到改進，以加快執行速度。
