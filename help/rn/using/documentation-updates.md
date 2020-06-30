@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
+source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
 workflow-type: tm+mt
-source-wordcount: '6726'
+source-wordcount: '6767'
 ht-degree: 8%
 
 ---
@@ -29,9 +29,13 @@ ht-degree: 8%
 
 ## 2020年6月 {#june-2020}
 
+已更新「刪除隔離地址」部分。 這包括澄清哪些情況下，地址會自動從隔離清單中刪除。 [詳細內容](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+
 已新增使用案例，說明如何使用「控制 [面板](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) 」和「促 [銷活動](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 」工作流程來加密和解密資料。
 
 「白名單」和「黑名單」詞語都已從Adobe Campaign檔案中移除。 產品UI、選項名稱和內部代碼中可能仍會出現這些詞語，但在即將發行的促銷活動版本中，這些詞語會以「blocklist」和「allowlist」取代。
+
+Experience Cloud觸發器和Adobe Campaign Classic整合頁面已移至此 [處](../../integrations/using/about-triggers.md)。
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -88,7 +92,7 @@ FDA權限表已移至存取外部資料庫(FDA)檔案。 [詳細內容](../../pl
 
 說明Adobe Campaign內建資料模型的章節已更新，其中包含每個表格的詳細資訊。 [詳細內容](../../configuration/using/data-model-description.md)
 
-工作流程使用案例已更新並重新組織為主題章節。 [詳細內容](../../workflow/using/using-the-local-approval-activity.md)
+工作流程使用案例已更新並重新組織為主題章節。 [詳細內容](../../workflow/using/about-workflow-use-cases.md)
 
 「彈 [回數郵件](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 」資 [格和「電子郵件管理規則](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 」區段已增強，並提供更新資訊。
 
@@ -584,7 +588,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
