@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2126'
 ht-degree: 10%
 
 ---
@@ -320,6 +320,13 @@ ht-degree: 10%
       + [同步對象](integrations/using/synchronizing-audiences.md)
       + [同步化網頁應用程式](integrations/using/synchronizing-web-applications.md)
       + [診斷[!DNL ACS連接器]](integrations/using/troubleshooting-the-acs-connector.md)
+   + Experience Cloud Triggers {#experience-triggers}
+      + [關於[!DNL Adobe Experience Cloud觸發器]](integrations/using/about-triggers.md)
+      + [配置管線](integrations/using/configuring-pipeline.md)
+      + [管線選項NmsPipeline_Config](integrations/using/nmspipeline-config.md)
+      + [觸發事件](integrations/using/events.md)
+      + [管道監控](integrations/using/pipeline-monitoring.md)
+      + [管道疑難排解](integrations/using/pipeline-troubleshooting.md)
 + 使用工作流程自動化 {#automating-with-workflows}
    + 簡介 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
@@ -397,6 +404,7 @@ ht-degree: 10%
       + [傳入電子郵件](workflow/using/inbound-emails.md)
       + [入站SMS](workflow/using/inbound-sms.md)
    + 使用案例 {#use-cases}
+      + [關於工作流程使用案例](workflow/using/about-workflow-use-cases.md)
       + 交貨 {#deliveries}
          + [使用本機核准活動](workflow/using/using-the-local-approval-activity.md)
          + [A/B測試](workflow/using/a-b-testing.md)
