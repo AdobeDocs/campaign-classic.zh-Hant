@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 0%
 工具列可讓您啟動並追蹤工作流程的執行。
 
 功能表和右鍵功能表 **[!UICONTROL Actions]** 中可用選項的清單在下方詳述。
+
+>[!IMPORTANT]
+>
+>請記住，當運算子對工作流執行動作（啟動、停止、暫停等）時，動作不會立即執行，而是放在佇列中，以便由工作流模組 [處理](../../workflow/using/architecture.md)。
 
 ## 動作工具列 {#actions-toolbar}
 
