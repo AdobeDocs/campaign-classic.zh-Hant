@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 73%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 透過參閱我們直觀的逐步指南，開始使用 Adobe Campaign。
 
 * [使用 Adobe Experience Manager 編輯電子郵件內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html)：了解整合 Adobe Campaign 和 Experience Manager 的基本概念。
-* [隱私權管理](https://helpx.adobe.com/campaign/kb/acc-privacy.html):瞭解Adobe Campaign Classic在使用我們的服務時提供哪些協助來協助您符合隱私權規範。
+* [隱私權管理](https://helpx.adobe.com/campaign/kb/acc-privacy.html): 瞭解Adobe Campaign Classic在使用我們的服務時提供哪些協助來協助您符合隱私權規範。
 * [整合電子郵件中的動態內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
 * [管理傳遞機制](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
 * [傳遞最佳做法](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
@@ -40,7 +43,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 * [透過雙重主動加入創建訂閱表單](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)：學習如何傳送訂閱確認請求，以創建雙重主動加入，確保收件者有意願下訂閱。
 * [建立電子郵件傳遞](../../web/using/use-case--creating-an-email-delivery.md)：了解如何使用 Digital Content Editor 建立電子郵件傳遞。
 * [建立概要](../../web/using/use-cases--creating-overviews.md)：建立概要型的網路應用程式，以顯示資料庫中的所有網路應用程式。
-* [工作流程使用案例](../../workflow/using/using-the-local-approval-activity.md)：透過這些使用案例探索使用工作流程的不同方法。
+* [工作流程使用案例](../../workflow/using/about-workflow-use-cases.md)：透過這些使用案例探索使用工作流程的不同方法。
 
 ## 操作說明短片 {#how-to-videos}
 
