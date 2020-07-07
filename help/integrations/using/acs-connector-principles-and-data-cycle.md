@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ACS Connector將Adobe Campaign v7和Adobe Campaign Standard連接在一起。 �
 
 有了ACS連接器，數位行銷人員會繼續使用Campaign Standard來設計、定位和執行促銷活動，而Campaign v7則是專為資料導向的使用者（例如資料庫行銷人員）量身打造。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >ACS Connector僅能做為Adobe Campaign Prime產品的一部分。 如需如何授權Adobe Campaign Prime的詳細資訊，請連絡您的客戶經理。
 >
@@ -83,7 +83,7 @@ ACS連接器會定期從Campaign Standard複製下列項目至Campaign v7:
 
 複製傳送ID和電子郵件記錄檔可讓您從Campaign v7存取v7收件者的傳送記錄和追蹤資料。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >只有電子郵件廣播和追蹤記錄檔會從Campaign Standard複製到Campaign v7。
 
@@ -120,7 +120,7 @@ ACS連接器可同步Campaign v7和Campaign Standard之間的隔離。
 
 ACS連接器有兩種實施類型。 兩者一律由Adobe Campaign Consulting團隊執行。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >本節僅針對專家使用者，提供他們實施程式及其主要步驟的全域檢視。
 >
@@ -140,7 +140,7 @@ ACS連接器有兩種實施類型。 兩者一律由Adobe Campaign Consulting團
 
 在安裝軟體包後，可在下面提供兩個技術工作流程 **[!UICONTROL Administration > ACS Connector > Process]**。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >切勿嘗試修改這些工作流程。 它們不應出錯或暫停。 如果發生此情況，請連絡您的Adobe Campaign顧問。
 
@@ -290,7 +290,7 @@ ACS連接器有兩種實施類型。 兩者一律由Adobe Campaign Consulting團
 
 本節說明進階實作的一些可能性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此資訊僅能用作一般准則。 請洽詢您的Adobe Campaign顧問以取得實作。
 
