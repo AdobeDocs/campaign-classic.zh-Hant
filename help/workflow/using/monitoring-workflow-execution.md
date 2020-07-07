@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2001'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 此外，例項的管理員可使用 **Audit trail** ，來檢查活動和對工作流程所做的最後修改（工作流程的狀態）。 For more on this, refer to the [dedicated section](../../production/using/audit-trail.md).
 
-本頁提供其他監控不同促銷活動程式 [的方法](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)。
+本頁提供其他監控不同促銷活動程式 [的方法](../../production/using/monitoring-guidelines.md)。
 
 ## 顯示進度 {#displaying-progress}
 
