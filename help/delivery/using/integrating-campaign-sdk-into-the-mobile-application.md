@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
+source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+workflow-type: tm+mt
+source-wordcount: '957'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
 ## 載入促銷活動SDK {#loading-campaign-sdk}
 
-* **在Android中**:neolane_sdk-release.aar **** 檔案必須連結至專案。
+* **在Android中**: neolane_sdk-release.aar **** 檔案必須連結至專案。
 
    下列權限授與Adobe Campaign伺服器的存取權：
 
@@ -54,7 +57,7 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
    從SDK 1.0.26版，將不再使用此權限。
 
-* **在iOS中**:libNeolaneSDK.a **** 和Neolane_SDK.h **** 檔案必須連結至專案。 從SDK 1.0.24版啟動 **ENABLE_BITCODE** 選項。
+* **在iOS中**: libNeolaneSDK.a **** 和Neolane_SDK.h **** 檔案必須連結至專案。 從SDK 1.0.24版啟動 **ENABLE_BITCODE** 選項。
 
    >[!NOTE]
    >
@@ -64,14 +67,14 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
 若要將Campaign SDK整合至行動應用程式，功能管理員必須向開發人員提供下列資訊：
 
-* **整合金鑰**:以啟用Adobe Campaign平台來識別行動應用程式。
+* **整合金鑰**: 以啟用Adobe Campaign平台來識別行動應用程式。
 
    >[!NOTE]
    >
    >此整合金鑰是在Adobe Campaign主控台的行動應用程式專用 **[!UICONTROL Information]** 服務標籤中輸入的。 請參閱 [在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
 
-* **追蹤URL**:符合Adobe Campaign追蹤伺服器位址的連結。
-* **行銷URL**:以啟用訂閱的集合。
+* **追蹤URL**: 符合Adobe Campaign追蹤伺服器位址的連結。
+* **行銷URL**: 以啟用訂閱的集合。
 
 * **在Android中**:
 
@@ -202,14 +205,19 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
        if( url == null )     url = "https://www.tripadvisor.fr";
        int iconId = R.drawable.notif_neotrip;
    
-       // notify Neolane that a notification just arrived
-       NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
-       nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
-         public void onNeolaneException(NeolaneException arg0, Object arg1) {}
-         public void onIOException(IOException arg0, Object arg1) {}
-         public void onComplete(String arg0, Object arg1){}
-       });
-       if (yourApplication.isActivityVisible())
+     // notify Neolane that a notification just arrived
+     SharedPreferences settings = context.getSharedPreferences(NeoTripActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
+     Neolane.getInstance().setIntegrationKey(settings.getString(NeoTripActivity.APPUUID_NAME, NeoTripActivity.DFT_APPUUID));
+     Neolane.getInstance().setMarketingHost(settings.getString(NeoTripActivity.SOAPRT_NAME, NeoTripActivity.DFT_SOAPRT));
+     Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
+   
+     NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
+     nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+       public void onNeolaneException(NeolaneException arg0, Object arg1) {}
+       public void onIOException(IOException arg0, Object arg1) {}
+       public void onComplete(String arg0, Object arg1){}
+     });
+     if (yourApplication.isActivityVisible())
        {
          Log.i("INFO", "The application has the focus" );
          ...
@@ -247,24 +255,28 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
    ```
    public class NotificationActivity extends Activity {
-    public static final String NOTIFICATION_URL_KEYNAME = "NotificationUrl";
-    .....
-    public void onCreate(Bundle savedBundle) {
-     super.onCreate(savedBundle);
-     setContentView(R.layout.notification_viewer);  
-     .....  
-     Bundle extra = getIntent().getExtras();  
-     .....  
-     //get the messageId and the deliveryId to do the tracking  
-     String deliveryId = extra.getString("_dId");
-     String messageId = extra.getString("_mId");
-     if (deliveryId != null && messageId != null) {
-      NeolaneAsyncRunner neolaneAs = new NeolaneAsyncRunner(Neolane.getInstance());
-      neolaneAs.notifyOpening(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
-       public void onNeolaneException(NeolaneException arg0, Object arg1) {}
-       public void onIOException(IOException arg0, Object arg1) {}
-       public void onComplete(String arg0, Object arg1) {}
-       });
+   public void onCreate(Bundle savedBundle) {
+     [...]
+     Bundle extra = getIntent().getExtras();
+     if (extra != null) {
+       // reinit the acc sdk
+       SharedPreferences settings = getSharedPreferences(NeoTripActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
+       Neolane.getInstance().setIntegrationKey(settings.getString(NeoTripActivity.APPUUID_NAME, NeoTripActivity.DFT_APPUUID));
+       Neolane.getInstance().setMarketingHost(settings.getString(NeoTripActivity.SOAPRT_NAME, NeoTripActivity.DFT_SOAPRT));               
+       Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
+   
+       // Get the messageId and the deliveryId to do the tracking
+       String deliveryId = extra.getString("_dId");
+       String messageId = extra.getString("_mId");
+       if (deliveryId != null && messageId != null) {
+         try {
+           Neolane.getInstance().notifyOpening(Integer.valueOf(messageId), Integer.valueOf(deliveryId));
+         } catch (NeolaneException e) {
+           // ...
+         } catch (IOException e) {
+           // ...
+         }
+       }
      }
     }
    }
