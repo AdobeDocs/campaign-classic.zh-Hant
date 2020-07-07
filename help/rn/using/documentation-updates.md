@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
+source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
 workflow-type: tm+mt
-source-wordcount: '6767'
+source-wordcount: '6795'
 ht-degree: 8%
 
 ---
@@ -26,6 +26,12 @@ ht-degree: 8%
 本頁列出每個月的所有新功能和檔案更新，以及促銷活動版本。
 
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
+
+## 2020 年 7 月{#july-2020}
+
+新增了與Campaign Classic監控相關的准則。 [詳細內容](../../production/using/monitoring-guidelines.md)
+
+「隱私權與同意」一節已增強，提供更詳細的資訊和有用的連結。 [詳細內容](../../platform/using/privacy-and-recommendations.md)。
 
 ## 2020年6月 {#june-2020}
 
@@ -68,7 +74,6 @@ Azure Synapse FDA連接器——詳 [細內容](../../platform/using/specific-co
 Spam Assassin安裝區段已更新為新的安裝檔案名稱。 [進一步瞭解](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
 有關複製環境的章節已更新。 [進一步瞭解](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
-
 
 ## 2020年5月 {#may-2020}
 
@@ -176,7 +181,7 @@ Adobe Campaign Enhanced MTA文章已更新，其中包含在例項上安裝特�
 
 與查詢設計相關的使用案例已重新組織為個別區段。 [詳細內容](../../workflow/using/querying-recipient-table.md)
 
-現在提供有關管理選件和使用Adobe Campaign Classic互動模組的秘訣與訣竅的新章節。 [詳細內容](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+現在提供Adobe Campaign Classic中有關管理選件和使用互動模組的秘訣與訣竅的新章節。 [詳細內容](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 「互動」檔案已包含多個影片的連結，可協助您進一步瞭解如何管理選件。 [詳細內容](../../interaction/using/interaction-and-offer-management.md)
 
@@ -260,7 +265,7 @@ GDPR快速入門手冊已經過改進並充實。 它現在是包含GDPR和CCPA�
 
 ## 2019 年 9 月{#september-2019}
 
-已新增新頁面，以提供維護Campaign Classic的一般准則。 [詳細內容](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+已新增新頁面，以提供維護Campaign Classic的一般准則。 [詳細內容](../../production/using/monitoring-guidelines.md)
 
 與工作流程監控相關的資訊已集中在新的專屬區段中。 [詳細內容](../../workflow/using/monitoring-workflow-execution.md)。
 
@@ -588,7 +593,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
