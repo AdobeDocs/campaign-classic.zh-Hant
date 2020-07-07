@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: Adobe Campaign Classic產品檔案
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
+source-git-commit: ad0f9bdd2571a8780da464dc3ac8feb7b5aed998
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 25%
 
 ---
@@ -87,4 +87,4 @@ ht-degree: 25%
 | [開始使用 Campaign](platform/using/about-adobe-campaign-classic.md) | [實施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Gold Standard升級版](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [追蹤指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [不建議使用的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [促銷活動控制面板](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html) | [監控最佳實踐](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
+| [促銷活動控制面板](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html) | [監控准則](production/using/monitoring-guidelines.md) |
