@@ -15,12 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 74%
 
 ---
 
 
 # 啟動 Adobe Campaign{#launching-adobe-campaign}
+
+促銷活動用戶端主控台是rich client，可讓您連線至您的促銷活動應用程式伺服器。 在本頁瞭解如何下載及設定用戶 [端主控台](../../installation/using/installing-the-client-console.md)。
 
 ## 開始使用 Adobe Campaign {#starting-adobe-campaign}
 
@@ -60,14 +65,13 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 然後您必須定義連線設定。操作步驟：
 
-* 輸入一個 **[!UICONTROL Label]** 以為資料庫連線命名。
-* 在 **[!UICONTROL URL]** 欄位中，新增應用程式伺服器的位址。如果您不知道連線 URL，請連絡管理員。
-* Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. 有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
-* Click **[!UICONTROL OK]** to validate.
+1. 輸入一個 **[!UICONTROL Label]** 以為資料庫連線命名。
 
->[!NOTE]
->
->The **[!UICONTROL Add]** button lets you create **[!UICONTROL folders]** to organize all your connections. 只需將每個連線拖放到資料夾中即可。
+1. 在 **[!UICONTROL URL]** 欄位中，新增應用程式伺服器的位址。如果您不知道連線 URL，請連絡管理員。
+
+1. Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. 有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
+
+1. Click **[!UICONTROL OK]** to validate.
 
 ## 操作者和許可 {#operators-and-permissions}
 
