@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
+source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2460'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
 
-The principle of **data packages** is to export a data configuration and integrate it into another Adobe Campaign system. 有關如何維護一組一致的資料包的詳細資訊，請參閱此 [技術](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_How_to_maintain_a_consistent_set_of_data_packages.pdf)。
+The principle of **data packages** is to export a data configuration and integrate it into another Adobe Campaign system. 瞭解如何在本節中維護一致的資料套 [件](#data-package-best-practices)。
 
 ### 包類型 {#types-of-packages}
 
@@ -87,7 +87,7 @@ XML檔案必須以元素開始和結 **`<package>`** 束。 隨後 **`<entities>
 </recipient>
 ```
 
-值 **`operation`** 為&quot;none&quot;的屬性定義協調連結。
+具有 **`operation`** 值&quot;none&quot;的屬性定義協調連結。
 
 可以從任何文本編輯器手動構建資料包。 只要確保XML檔案的結構符合「xtk:navtree」資料架構。 Adobe Campaign主控台有資料套件匯出與匯入模組。
 
@@ -343,19 +343,15 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 本節介紹如何在整個項目生命週期中以一致的方式組織資料包。
 
-<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
-
 包可以包含不同種類的配置和元素，無論是否經過篩選。 如果您遺漏某些元素或未以正確順序匯入元素／封裝，平台組態可能會中斷。
 
 此外，由於同一平台上有許多不同的功能，使得封裝規格資料夾的複雜度很快。
 
 雖然不是強制性的，但本節提供解決方案，協助您在Adobe Campaign中組織及使用套件以進行大型專案。
 
-<!--This solution has been used with a project involving more than 10 consultants.-->
-
 主要限制如下：
 * 組織套件並追蹤變更的項目及變更時間
-* 如果更新了配置，將破壞未直接與更新連結的內容的風險降至最低
+* 如果更新了配置，請盡量避免損壞未直接與更新連結的項
 
 >[!NOTE]
 >
