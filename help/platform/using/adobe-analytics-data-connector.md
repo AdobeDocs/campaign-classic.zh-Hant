@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 關於資料連接器整合 {#about-data-connector-integration}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Analytics Data Connector與交易式訊息（訊息中心）不相容。
 
@@ -145,7 +145,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/webanalytics_tracking_003.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >此配置模式保留給專家用戶： 此公式中的任何錯誤都可能導致電子郵件傳送停止。
 
