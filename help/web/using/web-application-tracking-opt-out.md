@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Adobe Campaign可讓您停止追蹤透過Cookie或網站信標選擇退出行為
 
 Adobe Campaign會隨附範例橫幅，您必須依需求調整。 此橫幅版本會顯示為位於內容模型檔案夾中的個人化區塊。 請參見[此頁面](../../delivery/using/personalization-blocks.md)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >若要建立您自己的橫幅，您必須個人化現成可用的橫幅。
 
