@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 技術工作流程需要受到監控，而且必須在失敗時採取行動。
 
-本頁提供其他監控不同促銷活動程式的 [方式](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)。
+本頁提供其他監控不同促銷活動程式 [的方法](../../production/using/monitoring-guidelines.md)。
 
 ## 例項監控控制面板 {#instance-monitoring-dashboard}
 
@@ -68,7 +71,7 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 ## 工作流程監督 {#workflow-supervision}
 
-群 **[!UICONTROL Workflow supervisors]** 組中應包含需要隨時得知失敗情況的運算子，以及哪些運算子可以及時採取行動。
+群 **[!UICONTROL Workflow supervisors]** 組中應包含需要隨時得知失敗情況的運算子，以及哪些運算子可及時採取行動。
 
 ![](assets/monitoring_technical_workflows3.png)
 
