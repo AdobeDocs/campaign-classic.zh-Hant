@@ -15,13 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 0%
 
 ---
 
 
 # 其他選項 {#additional-options}
-
 
 <!--
 
@@ -91,6 +93,29 @@ Thus, in the previous example, the cleanup workflow of the remote instance will 
 
 勾選此選項，可大幅提升執行個人化的效能。
 
+## 在工作流中使用來自外部資料庫的資料 {#using-data-from-an-external-database-in-a-workflow}
+
+在數個Adobe Campaign工作流程活動中，您可以使用儲存在外部資料庫中的資料。
+
+### 篩選外部資料 {#filtering-on-external-data}
+
+查詢活動允許您添加外部資料，並在定義的篩選器配置中使用它。
+
+For more on this, refer to the [Query](../../workflow/using/targeting-data.md#selecting-data) section.
+
+### 建立子集 {#creating-sub-sets}
+
+分割活動允許您建立子集。 您可以使用外部資料來定義要使用的篩選條件。
+
+For more on this, refer to the [Split](../../workflow/using/split.md) section.
+
+### 載入外部資料庫 {#loading-external-database}
+
+可在資料載入(RDBMS)中使用外部資料。 此活動會顯示在「資料 [載入」區](../../workflow/using/data-loading--rdbms-.md) 。
+
+### 新增資訊和連結 {#adding-information-and-links}
+
+富集活動允許您將其他資料添加到工作流的工作表以及到外部表的連結。 因此，它可利用外部資料庫的資料。 此活動將顯示在「 [Enrichment](../../workflow/using/enrichment.md) 」（擴充）部分。
 <!--
 
 ## Cloud Messaging - FDA synchronization {#cloud-messaging---fda-synchronization}
