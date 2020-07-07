@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2122'
 ht-degree: 10%
 
 ---
@@ -73,12 +73,13 @@ ht-degree: 10%
    + 訪問外部資料庫(FDA){#accessing-external-database}
       + [關於FDA](platform/using/about-fda.md)
       + [按資料庫類型列出的特定配置](platform/using/specific-configuration-database.md)
+      + [舊式連接器](platform/using/legacy-connectors.md)
       + [遠程資料庫訪問權限](platform/using/remote-database-access-rights.md)
       + [連接到資料庫](platform/using/connecting-to-database.md)
       + [建立資料架構](platform/using/creating-data-schema.md)
       + [定義資料映射](platform/using/defining-data-mapping.md)
       + [其他選項](platform/using/additional-options.md)
-      + [在工作流中使用來自外部資料庫的資料](platform/using/data-external-database-workflow.md)
+      + [附錄](platform/using/appendices-fda.md)
    + 連接器 {#connectors}
       + [關於連接器](platform/using/about-connectors.md)
       + [CRM連接器](platform/using/crm-connectors.md)
@@ -623,6 +624,7 @@ ht-degree: 10%
    + 簡介 {#introduction}
       + [前言](production/using/foreword.md)
       + [通用架構](production/using/general-architecture.md)
+      + [監控准則](production/using/monitoring-guidelines.md)
    + 生產程式 {#production-procedures}
       + [配置原則](production/using/configuration-principle.md)
       + [操作原則](production/using/operating-principle.md)
