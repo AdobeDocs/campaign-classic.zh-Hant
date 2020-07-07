@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 3%
@@ -47,7 +47,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    請參 [閱本節](#example-for-salesforce-com) ，瞭解如何設定與Salesforce.com的連線。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >將Adobe Campaign與Salesforce.com連接時，限制如下：
    >
@@ -62,7 +62,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    請參 [閱本節](#example-for-oracle-on-demand) ，瞭解如何設定與Oracle On Demand的連接。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >將Adobe Campaign與Oracle On Demand連接時，限制如下：
    >
@@ -80,7 +80,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    在此影片中瞭解Adobe Campaign和Microsoft Dynamics整合使 [用案例](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >將Adobe Campaign與Microsoft Dynamics連接時，限制如下：
    >
@@ -277,7 +277,7 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
    如有必要，請透過欄的下拉式清單變更資料格 **[!UICONTROL Conversion]** 式。 可能的轉換類型會以資料格式 [詳細說明](#data-format)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >CRM中記錄的識別碼是CRM和Adobe Campaign中連結物件的必備項。 當核准方塊時，會自動新增。
    >
@@ -289,7 +289,7 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
    ![](assets/crm_task_import_filter.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >與資料篩選模式連結的限制在篩選資料中 [有詳細說明](#filtering-data)。
 
@@ -382,7 +382,7 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 1. 選擇操 **[!UICONTROL Export to CRM]** 作。
 1. 轉至下拉 **[!UICONTROL Remote object]** 式清單，並選取程式所關注的物件。 此物件與連接器設定期間在Adobe Campaign中建立的其中一個表格一致。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >「 **CRM連接器」活動的匯出功能** ，可插入或更新CRM端的欄位。 若要啟用CRM中的欄位更新，您必須指定遠端表格的主要索引鍵。 如果索引鍵遺失，則會插入資料（而非更新）。
 
@@ -457,7 +457,7 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
    ![](assets/crm_import_deleted_obj.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >元素刪除期間必須與CRM的特定限制相符。 例如，對於Salesforce.com,30天前刪除的元素無法復原。
 
