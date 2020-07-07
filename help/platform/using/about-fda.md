@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d22af2a2e25cb0dd83759096139996372f60c33
+source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,20 @@ FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它將自動�
 1. [在Adobe Campaign中建立外部資料庫的架構](../../platform/using/creating-data-schema.md) 。 這允許您識別外部資料庫的資料結構。
 1. 最終， [從先前建立的架構建立新的目標對應](../../platform/using/defining-data-mapping.md) ，如果傳送的收件者來自外部資料庫的話。 這具有某些限制，特別是在個人化交貨方面。
 
-建立資料結構後，您就可以在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本小節](../../workflow/using/accessing-an-external-database--fda-.md)。
+建立資料結構後，您就可以在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本章節](../../workflow/using/accessing-an-external-database--fda-.md)。
+
+## 可用的外部資料庫 {#external-database}
+
+您可在下列與Adobe Campaign FDA模組相容的每個外部資料庫清單中找到：
+
+* Microsoft Azure Synapse Analytics。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#azure-external).
+* 雪花。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+* Hadoop。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3).
+* 甲骨文。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
+* 內泰扎。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
+* Sybase IQ。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq).
+* Teradata。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
+* SAP HANA。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md).
 
 ## 最佳實務與建議 {#best-practices-and-recommendations}
 
