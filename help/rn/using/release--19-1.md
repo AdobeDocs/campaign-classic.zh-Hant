@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
+source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2917'
 ht-degree: 1%
 
 ---
@@ -77,11 +77,27 @@ _2019年8月13日_
 
 ## 版本19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **2020年6月22日**: 新建版本(9032@800be2e)，其中包含下列修正：
+![](assets/do-not-localize/green_2.png) **Gold Standard 10版**
+
+_2020年7月7日_
+
+此新建版本(9032@efd8a94)包含下列修正：
+
+* 修正追蹤連結無法運作的問題。 (NEO-26411)
+
+>[!CAUTION]
+>
+>我們建議您使用此版本中提供的客戶端控制台升級。 Refer to this [page](../../installation/using/installing-the-client-console.md)
+
+![](assets/do-not-localize/orange_2.png) **Gold Standard 9版**
+
+_2020年6月22日_
+
+此新建版本(9032@800be2e)包含下列修正：
 
 * iOS HTTP2連接器已改善（協力廠商更新和錯誤管理）。 (NEO-25904、NEO-25903、NEO-25799)
 
-下列修正與追蹤連結安全機制相關：
+下列修正與追蹤連結安全性機制相關(請參閱「安全性與隱 [私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
 
 * 修正追蹤「通知點按」無法運作的問題（iOS和Android推播通知）。 (NEO-25965)
 * 修正使用某些舊版Outlook時，無法開啟／按一下追蹤URL的問題。  (NEO-25688)
@@ -89,7 +105,11 @@ _2019年8月13日_
 * 已修正反網路釣魚服務的問題。 (NEO-25283)
 * 修正使用特定自訂追蹤公式時的追蹤問題。 (NEO-25277)
 
-![](assets/do-not-localize/orange_2.png) **2020年4月29日**: 新建版本(9032@3a9dc9c)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 8版**
+
+_2020年4月29日_
+
+此新建版本(9032@3a9dc9c)包含下列修正：
 
 * 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，可聯絡客戶服務。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱「安全性與隱私權」核 [對清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 
@@ -110,30 +130,54 @@ _2019年8月13日_
 * 修正導致清除工作流程當機的回歸。
 * 修正清除工作流程記錄檔中的次要回歸。
 
-![](assets/do-not-localize/orange_2.png) **2020年3月5日**: 新建版本(9032@19f73c5)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 6版本**
+
+_2019年3月9日_
+
+此新建版本(9032@19f73c5)包含下列修正：
 
 * 修正使用FTP over SSL的外部帳戶的問題。 (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) **2019年12月17日**: 新建版本(9032@d6b8062)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 5版本**
+
+_2019年12月17日_
+
+此新建版本(9032@d6b8062)包含下列修正：
 
 * 修正下列通訊管道的追蹤問題： 行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。 (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) **2019年12月11日**: 新建版本(9032@bc4a935)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 4版本**
+
+_2019年12月11日_
+
+此新建版本(9032@bc4a935)包含下列修正：
 
 * 修正了使用MSSQL資料庫發送消息時的效能問題。 (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) **2019年11月20日**: 新建版本(9032@3468c7b)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 3版**
+
+_2019年11月20日_
+
+此新建版本(9032@3468c7b)包含下列修正：
 
 * 已修正透過IMS驗證的登入問題。 (NEO-17312)
 * 修正在多個傳送上顯示累積報表的問題。 (NEO-18165)
 * 已修正可能會封鎖或造成Web伺服器當機的問題。
 
-![](assets/do-not-localize/orange_2.png) **2019年9月19日**: 新建版本(9032@cee805c)，其中包含下列修正：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 2版**
+
+_2019年9月19日_
+
+此新建版本(9032@cee805c)包含下列修正：
 
 * 修正使用Salesforce的CRM連接器時的問題。 (NEO-17712)
 * 修正在傳送事務性訊息時，可能導致效能問題的索引問題。
 
-![](assets/do-not-localize/orange_2.png) **2019年8月13日**: 初始19.1.4版本，包含下列修正：
+![](assets/do-not-localize/orange_2.png) **版本19.1.4 - Build 9032**
+
+_2019年8月13日_
+
+初始19.1.4版本，包含下列修正：
 
 * 修正在精靈設定期間，排程器活動產生不想要的錯誤訊息的問題。 回復NEO-11662的更新。 (NEO-17097)
 * 修正NEO-12727造成的回歸，當執行兩次測試活動時，此回歸可能導致工作流程停止。 (NEO-16835)
