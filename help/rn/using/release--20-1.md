@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ce00d34ecbdfa6a13593772ffa1850768ad6e45
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1407'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最 **後一個穩定版本** 是Gold Standard 10。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 - Build 9124 {#release-20-1-3-build-9124}
 
