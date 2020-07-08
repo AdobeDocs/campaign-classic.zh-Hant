@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2934'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最 **後一個穩定版本** 是Gold Standard 10。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) 版本19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -83,7 +83,7 @@ _2020年7月7日_
 
 此新建版本(9032@efd8a94)包含下列修正：
 
-* 修正追蹤連結無法運作的問題。 (NEO-26411)
+* 修正當中端來源伺服器是建置9032(Gold Standard 7)，而行銷伺服器是舊版（9032之前）時，追蹤無法運作的問題。 (NEO-26411)
 
 >[!CAUTION]
 >
