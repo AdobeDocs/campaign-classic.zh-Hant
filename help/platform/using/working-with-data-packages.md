@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2462'
 ht-degree: 2%
 
 ---
@@ -315,7 +315,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 套件匯入精靈可透過Adobe Campaign用戶端主控台 **[!UICONTROL Tools > Advanced > Package import...]** 的主功能表存取。
 
-您可以從先前執行的匯出匯入套件，例如從其他Adobe Campaign實例或標準套件匯入套件，視授權條款而定。
+您可以從先前執行的匯出匯入套件，例如從其他Adobe Campaign例項或內建套件匯入 [套件](../../installation/using/installing-campaign-standard-packages.md)，視授權條款而定。
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -331,13 +331,13 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### 安裝標準軟體包 {#installing-a-standard-package}
+### 安裝內置軟體包 {#installing-a-standard-package}
 
-設定Adobe Campaign時，會安裝標準套件。 視您的權限和部署模型而定，如果您取得新選項或附加元件，或升級至新選件，則可匯入新的標準套件。
+標準套件是內建套件，在設定Adobe Campaign時安裝。 視您的權限和部署模型而定，如果您取得新選項或附加元件，或升級至新選件，則可匯入新的標準套件。
 
 請參閱您的授權合約以檢查您可以安裝哪些套件。
 
-有關標準軟體包的詳細資訊，請參 [閱本頁](../../installation/using/installing-campaign-standard-packages.md)。
+有關內置軟體包的詳細資訊，請參 [閱本頁](../../installation/using/installing-campaign-standard-packages.md)。
 
 ## 資料套件最佳實務 {#data-package-best-practices}
 
