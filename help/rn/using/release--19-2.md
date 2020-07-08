@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+workflow-type: tm+mt
+source-wordcount: '1372'
+ht-degree: 2%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
  </tbody> 
 </table>
 
-最 **後一個穩定版** 本是9032(3a9dc9c)。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最 **後一個穩定版本** 是Gold Standard 10。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) 版本19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
@@ -69,8 +72,8 @@ _2019年12月2日_
    <td> <p>CCPA是加州新推出的隱私權法，協調並現代化資料保護要求，將於2020年1月1日生效。 CCPA適用於持有居住在加州之資料主體資料的Adobe Campaign客戶。</p>
     <p>除了現有的隱私權功能（包括許可管理、資料保留設定和使用者角色）外，Adobe Campaign還可協助您做好CCPA的準備：</p>
     <ul>
-      <li>存取權與刪除權：我們運用了為GDPR新增的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">閱讀更多資訊</a></li>
-      <li>您可以追蹤消費者是否已選擇退出個人資訊的銷售。 為此，您需要擴展「配置式」表並添加「 <strong>退出CCPA」欄位</strong> 。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">閱讀更多資訊</a></li></td> 
+      <li>存取權與刪除權： 我們運用了為GDPR新增的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">詳細內容</a></li>
+      <li>您可以追蹤消費者是否已選擇退出個人資訊的銷售。 為此，您需要擴展「配置式」表並添加「 <strong>退出CCPA」欄位</strong> 。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">詳細內容</a></li></td> 
   </tr> 
  </tbody> 
 </table>
@@ -84,7 +87,7 @@ _2019年12月2日_
  <tbody> 
   <tr> 
    <td> <p>您現在可以使用預先定義的檢視來監視執行個體上所有工作流程的執行狀態。</p>
-   <p>如需詳細資訊，請參閱詳 <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">細檔案</a>。</p></td> 
+   <p>如需詳細資訊，請參閱<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">詳細文件</a>。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -114,7 +117,7 @@ _2019年12月2日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>安全SMS現在通過擴展通用SMPP連接器受支援。 這允許與提供程式的加密連接。</p> <p><strong>警告</strong> ：此功能要求所有伺服器上都有最新的憑證。 無效、已撤銷或已過期的憑證會產生影響整體SMS傳送功能的錯誤。</p><p>如需詳細資訊，請參閱詳 <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">細檔案</a>。 </p> </td> 
+<td> <p>安全SMS現在通過擴展通用SMPP連接器受支援。 這允許與提供程式的加密連接。</p> <p><strong>警告</strong> ：此功能要求所有伺服器上都有最新的憑證。 無效、已撤銷或已過期的憑證會產生影響整體SMS傳送功能的錯誤。</p><p>如需詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">詳細文件</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -127,20 +130,20 @@ _2019年12月2日_
 **改進**
 
 * 推播通知的記憶體耗用最佳化。
-* 為達到效能和儲存空間最佳化， **已增強logins.log** 檔案的處理。 檔案現在會分割為多個檔案，每天一個，最多可保留365個檔案。 [閱讀更多資訊](../../production/using/log-files.md)
-* Microsoft Dynamics CRM外部帳戶現在可使用密碼憑證（密碼+使用者名稱）或憑證（私密金鑰）來設定。 [閱讀更多資訊](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* 為達到效能和儲存空間最佳化， **已增強logins.log** 檔案的處理。 檔案現在會分割為多個檔案，每天一個，最多可保留365個檔案。 [詳細內容](../../production/using/log-files.md)
+* Microsoft Dynamics CRM外部帳戶現在可使用密碼憑證（密碼+使用者名稱）或憑證（私密金鑰）來設定。 [詳細內容](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Hadoop FDA連接器已新增一些增強功能，以提升可靠性
 * 在允許上傳伺服器上的公共資源之前，已添加了一個特定的保護欄來檢查磁碟空間。
 * 已新 [增促銷活動](../../installation/using/configuring-campaign-options.md) 選項：
    * 使用 **WdbcKillSessionPolicy** 配置選項，可以影響所有工作流和PostgreSQL資料庫查詢上的「無條件停止 **** 」行為。
    * 使 **用NmsOperation_DeliveryPreparationWindow** 選項，可以定義在運行交貨計數中排除狀態不一致交貨的天數。
-   * 使 **用WdbcOptions_TempDbName** 選項，可以為Microsoft SQL Server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。 [閱讀更多資訊](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * PostgreSQL **的XtkCleanup_NoStats** 選項已增強，可更好地控制資料庫清理工作流中儲存優化步驟的行為。 [閱讀更多資訊](../../production/using/database-cleanup-workflow.md#statistics-update)
+   * 使 **用WdbcOptions_TempDbName** 選項，可以為Microsoft SQL Server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。 [詳細內容](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
+   * PostgreSQL **的XtkCleanup_NoStats** 選項已增強，可更好地控制資料庫清理工作流中儲存優化步驟的行為。 [詳細內容](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 帳戶鎖定機制已新增至 **logon()** API。 它可防止在指定時間範圍內連續嘗試若干次登入失敗後，再進行任何登入嘗試。
-* 傳送屬 **性中新的「最大個人化執行時間** 」選項可讓您定義個人化執行時間的逾時期，以防止個人化階段執行太長。 [閱讀更多資訊](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* 已 **新增ftp通訊協定** 選項，可讓您使用SFTP連線的Proxy設定。 [閱讀更多資訊](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* 傳送屬 **性中新的「最大個人化執行時間** 」選項可讓您定義個人化執行時間的逾時期，以防止個人化階段執行太長。 [詳細內容](../../delivery/using/personalization-fields.md#timing-out-personalization)
+* 已 **新增ftp通訊協定** 選項，可讓您使用SFTP連線的Proxy設定。 [詳細內容](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
 * 針對內部部署環境，新支援對SFTP外部伺服器的Proxy存取。
-* 已新增特定保護欄，以防止安裝與促銷活動例項不相容的套件。 [閱讀更多資訊](../../installation/using/installing-campaign-standard-packages.md)
+* 已新增特定保護欄，以防止安裝與促銷活動例項不相容的套件。 [詳細內容](../../installation/using/installing-campaign-standard-packages.md)
 
 _不建議使用的系統_
 
@@ -148,7 +151,7 @@ Campaign Classic實作現在不 [再使用](https://helpx.adobe.com/campaign/kb/
 * Apache 2.2
 * Centos 6
 
-請確定您使用最新「促銷活動相容性」表所列任何系統的支援版本。 [閱讀更多資訊](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+請確定您使用最新「促銷活動相容性」表所列任何系統的支援版本。 [詳細內容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 _Campaign Mobile SDK_
 
