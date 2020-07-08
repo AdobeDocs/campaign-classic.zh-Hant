@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1128'
 ht-degree: 2%
 
 ---
@@ -132,12 +132,6 @@ ht-degree: 2%
    <td> 使用Adobe Campaign的行動／簡訊頻道傳送傳送。 選填。<a href="../../delivery/using/sms-channel.md">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
-  <tr> 
-   <td> 電話頻道<br /> </td> 
-   <td> 使用Adobe Campaign的電話頻道傳送遞送。<br /> </td> 
-   <td> 全部<br /> </td> 
-   <td> 可選</td> 
-  </tr>
   <tr> 
    <td> 行動應用程式頻道<br /> </td> 
    <td> 使用Adobe Campaign平台透過應用程式將個人化通知傳送至iOS和Android終端機。 選填。<a href="../../delivery/using/about-mobile-app-channel.md">進一步瞭解</a> <br /> </td> 
