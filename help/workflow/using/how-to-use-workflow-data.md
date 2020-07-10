@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,8 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過活動定義�
 ### 使用案例： 使用控制面板上安裝的密鑰加密和導出資料 {#use-case-gpg-encrypt}
 
 在此使用案例中，我們將建立工作流程，以便使用「控制面板」上安裝的金鑰來加密和匯出資料。
+
+本節也提供教學課程影片，說明如何使用GPG金鑰來加密 [資料](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html)。
 
 執行此使用案例的步驟如下：
 
