@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -86,12 +86,15 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在資料載入（檔�
 
 在此使用案例中，我們將建立工作流程，以便使用「控制面板」中產生的金鑰，匯入在外部系統中加密的資料。
 
+本節也提供教學課程影片，說明如何使用GPG金鑰解密 [資料](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)。
+
 執行此使用案例的步驟如下：
 
 1. 使用「控制面板」產生金鑰對（公開／私用）。 「控制面板」文檔中提供 [了詳細步驟](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
 
    * 公開金鑰將會與外部系統共用，外部系統會使用它來加密要傳送至Campaign的資料。
    * Campaign Classic將使用私密金鑰來解密傳入的加密資料。
+
    ![](assets/gpg_generate.png)
 
 1. 在外部系統中，使用從「控制面板」下載的公開金鑰來加密要匯入Campaign Classic的資料。
@@ -223,6 +226,7 @@ zcat nl6/var/vp/import/filename.gz
    * **[!UICONTROL Split]**: 根據記錄是否可以調節，建立篩選器以不同方式處理記錄。
    * **[!UICONTROL Deduplication]**: 在將傳入檔案插入資料庫之前，先從該檔案中消除重複資料。
    * **[!UICONTROL Update data]**: 使用導入的配置檔案更新資料庫。
+
    ![](assets/import_template_example0.png)
 
 1. 設定活 **[!UICONTROL Data Loading (file)]** 動：
@@ -242,8 +246,9 @@ zcat nl6/var/vp/import/filename.gz
 
 1. 設定活 **[!UICONTROL Enrichment]** 動。 此活動的目的是識別傳入的資料。
 
-   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位可用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
+   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
    * 在頁籤 **[!UICONTROL Reconciliation]** 中，將選項保留為未 **[!UICONTROL Identify the document from the working data]** 選中狀態。
+
    ![](assets/import_template_example2.png)
 
 1. 設定活 **[!UICONTROL Split]** 動，以擷取一個轉場中已協調的收件者，以及在第二個轉場中無法協調但擁有足夠資料的收件者。
@@ -284,6 +289,7 @@ zcat nl6/var/vp/import/filename.gz
 
    * 在此範例中，電子郵件欄位可用來尋找獨特的描述檔。 您可以使用任何您確定已填入的欄位，以及唯一組合的一部分。
    * 在螢幕 **[!UICONTROL Deduplication method]** 中，選 **[!UICONTROL Advanced parameters]** 擇並選中 **[!UICONTROL Disable automatic filtering of 0 ID records]** 選項，以確保主鍵為0的記錄（該記錄應為此轉換的所有記錄）未被排除。
+
    ![](assets/import_template_example7.png)
 
 1. 設定先前 **[!UICONTROL Update data]** 設定之活動之 **[!UICONTROL Deduplication]** 後的活動。
