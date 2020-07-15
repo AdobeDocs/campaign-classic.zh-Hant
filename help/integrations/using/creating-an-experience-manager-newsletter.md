@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
 
 # 建立Experience Manager電子報{#creating-an-experience-manager-newsletter}
 
-此整合可用來建立Adobe Experience manager中的電子報，然後在Adobe Campaign中用作電子郵件促銷活動的一部分。
+此整合可用來建立Adobe Experience Manager中的電子報，然後在Adobe Campaign中用作電子郵件促銷活動的一部分。
 
 如需如何使用此整合的更詳細範例，請參閱 [此逐步指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html)。
 
@@ -32,7 +35,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
    ![](assets/aem_uc_1.png)
 
-1. Select **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Master Area > Email campaigns]**.
+1. Select **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Main Area > Email campaigns]**.
 1. 按一下 **[!UICONTROL Create]** 頁面右上方的按鈕，然後選取 **[!UICONTROL Page]**。
 
    ![](assets/aem_uc_2.png)
@@ -77,7 +80,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
    ![](assets/aem_uc_10.png)
 
 1. 將新增 **[!UICONTROL Label]** 至傳送，然後按一下 **[!UICONTROL Continue]**。
-1. Click the **[!UICONTROL Synchronize]** button.
+1. 按一下&#x200B;**[!UICONTROL Synchronize]**&#x200B;按鈕。
 
    如果此按鈕未顯示在您的介面中，請按一下按 **[!UICONTROL Properties]** 鈕並選取標 **[!UICONTROL Advanced]** 簽。 欄 **[!UICONTROL Content editing mode]** 位中的欄位應設 **[!UICONTROL AEM]** 為您的AEM例項 **[!UICONTROL AEM account]** 。
 
