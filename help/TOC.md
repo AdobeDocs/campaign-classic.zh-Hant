@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2076'
 ht-degree: 10%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 10%
 + Getting Started {#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [關於 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [隱私權和建議](platform/using/privacy-and-recommendations.md)
+      + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [啟動 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign 工作區](platform/using/adobe-campaign-workspace.md)
       + 常見問答集{#faq}
@@ -72,7 +72,7 @@ ht-degree: 10%
       + [外部帳戶](platform/using/external-accounts.md)
    + 訪問外部資料庫(FDA){#accessing-external-database}
       + [關於FDA](platform/using/about-fda.md)
-      + [按資料庫類型列出的特定配置](platform/using/specific-configuration-database.md)
+      + [配置FDA連接器](platform/using/specific-configuration-database.md)
       + [舊式連接器](platform/using/legacy-connectors.md)
       + [遠程資料庫訪問權限](platform/using/remote-database-access-rights.md)
       + [連接到資料庫](platform/using/connecting-to-database.md)
@@ -293,36 +293,36 @@ ht-degree: 10%
 + Integrating with Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
    + 觀眾分享 {#audience-sharing}
-      + [與[!DNL Adobe Experience Cloud]共用觀眾](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [與 [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向Adobe提交請求](integrations/using/submitting-request-to-adobe.md)
-      + [在[!DNL Adobe Campaign]中設定共用觀眾整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [在 [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [疑難排解](integrations/using/troubleshooting.md)
       + [匯入和匯出觀眾](integrations/using/importing-and-exporting-audiences.md)
    + 資產共用 {#asset-sharing}
-      + [與[!DNL Adobe Experience Cloud]共用資產](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [配置對[!DNL資產]的訪問](integrations/using/configuring-access-to-assets.md)
+      + [與 [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [設定對 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [關於[!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [關於 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [設定整合](integrations/using/configuring-the-integration.md)
-      + [建立[!DNL Experience Manager]電子報](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [建立電子 [!DNL Experience Manager] 報](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [與[!DNL Adobe Target]整合](integrations/using/integrating-with-adobe-target.md)
-      + [設定與[!DNL Adobe Target]的整合](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [與 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [設定與 [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + 透過Adobe ID連線 {#connecting-via-an-adobe-id}
-      + [關於[!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [配置[!DNL IMS]](integrations/using/configuring-ims.md)
-      + [實作[!DNL IMS]](integrations/using/implementing-ims.md)
+      + [關於 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [設定 [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [實作 [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS疑難排解](integrations/using/ims-troubleshooting.md)
    + ACS連接器 {#acs-connector}
-      + [[!DNL ACS連接器]原理和資料週期](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] 原則與資料週期](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步設定檔](integrations/using/synchronizing-profiles.md)
       + [同步對象](integrations/using/synchronizing-audiences.md)
       + [同步化網頁應用程式](integrations/using/synchronizing-web-applications.md)
-      + [診斷[!DNL ACS連接器]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud Triggers {#experience-triggers}
-      + [關於[!DNL Adobe Experience Cloud觸發器]](integrations/using/about-triggers.md)
+      + [關於 [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [配置管線](integrations/using/configuring-pipeline.md)
       + [管線選項NmsPipeline_Config](integrations/using/nmspipeline-config.md)
       + [觸發事件](integrations/using/events.md)
