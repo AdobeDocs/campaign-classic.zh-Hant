@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f1f1cd9c5ebb77fbb01cadad6c587ed2fe64dcc
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1833'
 ht-degree: 1%
 
 ---
 
 
-# 按資料庫類型列出的特定配置 {#specific-configurations-by-database-type}
+# 配置FDA連接器 {#specific-configurations-by-database-type}
 
 根據您想要能夠從Adobe Campaign存取的外部資料庫，您需要執行特定的組態。 這些配置實際上涉及在Adobe Campaign伺服器上安裝驅動程式並聲明屬於每個RDBMS的環境變數。
 
@@ -59,6 +59,7 @@ ht-degree: 1%
    * **[!UICONTROL Password]**: 使用者帳戶密碼
 
    * **[!UICONTROL Database]**: 資料庫的名稱
+
    ![](assets/azure_1.png)
 
 ### CentOS上的Azure突觸 {#azure-centos}
@@ -258,6 +259,7 @@ ht-degree: 1%
    * **[!UICONTROL Password]**: 使用者帳戶密碼
 
    * **[!UICONTROL Database]**: 資料庫的名稱
+
    ![](assets/snowflake.png)
 
 1. 按一下標 **[!UICONTROL Parameters]** 簽，然後按一 **[!UICONTROL Deploy functions]** 下按鈕以建立函式。
@@ -346,6 +348,7 @@ ht-degree: 1%
    * **[!UICONTROL Database]**: DSN中未指定的資料庫名稱。 如果在DSN中指定，則可保留為空
 
    * **[!UICONTROL Time zone]**: 伺服器時區
+
    ![](assets/hadoop3.png)
 
 連接器支援以下ODBC選項：
@@ -404,6 +407,7 @@ ht-degree: 1%
    * **[!UICONTROL Password]**: 使用者帳戶密碼
 
    * **[!UICONTROL Time zone]**: 伺服器時區
+
    ![](assets/oracle_config.png)
 
 ### Linux上的Oracle {#for-linux-1}
