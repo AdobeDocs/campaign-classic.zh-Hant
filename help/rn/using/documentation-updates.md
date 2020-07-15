@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6898'
 ht-degree: 8%
 
 ---
@@ -33,13 +33,21 @@ ht-degree: 8%
 
 「隱私權與同意」一節已增強，提供更詳細的資訊和有用的連結。 [詳細內容](../../platform/using/privacy-and-recommendations.md)。
 
-## 2020年6月 {#june-2020}
+「促銷活動傳統型」中的「隱私權管理」頁面已更新，其中包含「規則」欄位的資訊，現在使用允許設定自動隱私權要求程式的API時，此欄位已可供使用。 [詳細內容](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+
+「隱私權管理概述」頁面已更新，加入泰國個人資料保護法(PDPA)和巴西Lei Geral de Proteção de Dados(LGPD)的相關資訊。 [詳細內容](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+
+已在子工作流程記錄檔和行為中新增資訊，以防發生錯誤。 [詳細內容](../../workflow/using/sub-workflow.md)
+
+已在「活動」區段中新增最佳 **[!UICONTROL Scheduler]** 實務。 [詳細內容](../../workflow/using/scheduler.md)
+
+## 2020 年 6 月 {#june-2020}
 
 已更新「刪除隔離地址」部分。 這包括澄清哪些情況下，地址會自動從隔離清單中刪除。 [詳細內容](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 已新增使用案例，說明如何使用「控制 [面板](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) 」和「促 [銷活動](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 」工作流程來加密和解密資料。
 
-「白名單」和「黑名單」詞語都已從Adobe Campaign檔案中移除。 產品UI、選項名稱和內部代碼中可能仍會出現這些詞語，但在即將發行的促銷活動版本中，這些詞語會以「blocklist」和「allowlist」取代。
+已從 Adobe Campaign 文件移除「白名單」和「黑名單」等詞語。產品 UI、選項名稱和內部代碼中可能仍會出現這些詞語，但在即將發行的 Campaign 版本中，這些詞語將由「封鎖清單」和「允許清單」取代。
 
 Experience Cloud觸發器和Adobe Campaign Classic整合頁面已移至此 [處](../../integrations/using/about-triggers.md)。
 
@@ -75,7 +83,7 @@ Spam Assassin安裝區段已更新為新的安裝檔案名稱。 [進一步瞭�
 
 有關複製環境的章節已更新。 [進一步瞭解](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-## 2020年5月 {#may-2020}
+## 2020 年 5 月 {#may-2020}
 
 「監控可交付性」部分已移動和改進。 [詳細內容](../../delivery/using/monitoring-deliverability.md)
 
@@ -593,7 +601,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
@@ -659,7 +667,7 @@ IP變暖的新技術已經增加。 [詳細內容](https://docs.campaign.adobe.c
 
 已新增建置升級入門。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)。
 
-## 2017年5月{#release-doc-30-05-2017}
+## 2017 年 5 月{#release-doc-30-05-2017}
 
 有新的快速入門手冊可供使用： 它提供一些最佳實務，可用於透過Adobe Campaign傳遞，從建立和鎖定到傳送和監控。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
