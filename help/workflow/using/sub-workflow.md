@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 您可以在單一工作流程中呼叫多個子工作流程。 子工作流程會同步執行。
 
-在以下範例中，「主」工作流程使用跳轉呼叫子工作流程。 有關跳轉類型圖形對象的詳細資訊，請參 [閱本節](../../workflow/using/jump--start-point-and-end-point-.md)。
+在以下範例中，主要工作流程是使用跳轉呼叫子工作流程。 有關跳轉類型圖形對象的詳細資訊，請參 [閱本節](../../workflow/using/jump--start-point-and-end-point-.md)。
 
 1. 建立工作流程，以當成其他工作流程中的子工作流程。
 1. 在工 **[!UICONTROL Jump (end point)]** 作流程的開頭插入優先順序為1的活動。 如果您有多個「端點」類型跳轉，Adobe Campaign會使用「端點」跳轉，其數字最低。
@@ -44,7 +44,7 @@ ht-degree: 0%
    >要正確運行子工作流，您只能有一個「端點」類型跳轉（編號最低），而只能有一個「起始點」類型跳轉（編號最高）。
 
 1. 完成並儲存此「子工作流程」。
-1. 建立「主」工作流程。
+1. 建立主要工作流程。
 1. 插入活 **[!UICONTROL Sub-workflow]** 動並將其開啟。
 1. 從下拉式清單中選取您要使用 **[!UICONTROL Workflow template]** 的工作流程。
 
@@ -57,13 +57,17 @@ ht-degree: 0%
 
 1. 執行工作流程。
 
-在執行後，稱為子工作流的工作流仍處於狀 **[!UICONTROL Being edited]** 態，這表示：
+在執行後，稱為子工作流的工作流將保持狀 **[!UICONTROL Being edited]** 態，這表示：
 
 * 您無法以滑鼠右鍵按一下轉場來顯示目標。
 * 無法顯示中間人口的計數。
-* 記錄檔會在「主」工作流程中匯總，而且只會標示為「子工作流程」。
+* 子工作流日誌顯示在主工作流中。
 
-事實上，此工作流程只是範本。 當從「主」工作流程呼叫時，會建立以此範本為基礎的新子工作流程。
+   ![](assets/subworkflow_logs.png)
+
+>[!NOTE]
+>
+>如果子工作流中發生任何錯誤，主工作流將暫停並建立子工作流的副本。
 
 ## 輸入參數（可選） {#input-parameters--optional-}
 
