@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 您的Adobe Campaign Classic版本不支援管道。
 
-1. 檢查配置檔案中是否存在流水線元素。 否則表示不支援。
+1. 檢查配置 [!DNL pipelined] 檔案中是否存在元素。 否則表示不支援。
 1. 升級至版本6.11 build 8705或更高版本。
 
 **Pipelined失敗，出現&quot;aurait duj commencer par &#39;[&#39; ou &#39;{&#39;(iRc=16384)&quot;**
@@ -53,7 +53,7 @@ IMSOrgid配置無效。
 1. 檢查authPrivateKey: 開頭為@，結尾為=，長度約為4000個字元。
 1. 尋找原始金鑰並檢查其是否為： 以RSA格式，長4096位，開頭為—BEGIN RSA PRIVATE KEY —。
    <br> 如有必要，請重新建立索引鍵並在Adobe Analytics中註冊。 請參閱本 [節](../../integrations/using/configuring-pipeline.md#oauth-client-creation)。
-1. 檢查索引鍵是否編碼在與流水線相同的例項中。 <br>如有必要，請使用範例JavaScript或工作流程重做編碼。
+1. 檢查索引鍵是否已編碼在與相同的例項中 [!DNL pipelined]。 <br>如有必要，請使用範例JavaScript或工作流程重做編碼。
 
 **流水線失敗，「在驗證期間無法讀取代號」**
 
@@ -65,12 +65,12 @@ IMSOrgid配置無效。
 
 **未擷取任何觸發器**
 
-當流水線處理正在運行且未檢索任何觸發器時：
+當進程 [!DNL pipelined] 運行且未檢索任何觸發器時：
 
 1. 請確定觸發器在Analytics中處於作用中，且正在產生事件。
-1. 請確定流水線進程正在運行。
-1. 在流水線日誌中查找錯誤。
-1. 在流水線狀態頁面中查找錯誤。 觸發器丟棄，觸發器故障應為零。
+1. 請確定該進 [!DNL pipelined] 程正在運行。
+1. 在日誌中查找錯 [!DNL pipelined] 誤。
+1. 在狀態頁面中尋找 [!DNL pipelined] 錯誤。 觸發器丟棄，觸發器故障應為零。
 1. 檢查在選項中是否配置了觸發器 **[!UICONTROL NmsPipeline_Config]** 名稱。 如果有疑問，請使用通配符選項。
 1. 檢查Analytics是否有作用中的觸發器，且正在產生事件。 在Analytics中進行設定後，可能會延遲數小時，才會啟動。
 
@@ -89,9 +89,9 @@ IMSOrgid配置無效。
 
 一般而言，觸發器可能需要15-90分鐘才能啟動行銷促銷活動。 這視資料收集的實作、在管線上載入、定義觸發器的自訂設定，以及Adobe Campaign中的工作流程而定。
 
-1. 檢查流水線進程是否已運行。
+1. 檢查進 [!DNL pipelined] 程是否正在運行。
 1. 在pipelined.log中查找可能導致重試的錯誤。 修正錯誤（如果適用）。
-1. 檢查隊列大小的流水線狀態頁。 如果佇列大小較大，請改善JS的效能。
+1. 檢查隊 [!DNL pipelined] 列大小的狀態頁。 如果佇列大小較大，請改善JS的效能。
 1. 由於延遲似乎隨卷增加，所以使用較少的訊息在Analytics上設定觸發器。
 附件
 
