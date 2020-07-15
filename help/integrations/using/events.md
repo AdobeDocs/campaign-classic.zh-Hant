@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 管線使用JavaScript函式來處理每個訊息。 此函式是用戶定義的。
 
-它是在「JSConnector」 **[!UICONTROL NmsPipeline_Config]** 屬性下的選項中配置的。 每次收到事件時都會呼叫此javascript。 它由流水線程式運行。
+它是在「JSConnector」 **[!UICONTROL NmsPipeline_Config]** 屬性下的選項中配置的。 每次收到事件時都會呼叫此javascript。 它由流程運 [!DNL pipelined] 行。
 
 範例JS檔案為cus:triggers.js。
 
 ### JavaScript函式 {#function-js}
 
-管線Javascript必須以特定函式開頭。
+Javascript [!DNL pipelined] 必須以特定函式開頭。
 
 每個事件都會呼叫此函式一次：
 
@@ -51,7 +51,7 @@ function processPipelineMessage(xmlTrigger) {}
 <undefined/>
 ```
 
-編輯JS後重新啟動流水線。
+編輯 [!DNL pipelined] JS後重新啟動。
 
 ### 觸發資料格式 {#trigger-format}
 
@@ -110,7 +110,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 事件處理順序 {#order-events}
 
-事件會依偏移順序一次處理一次。 流水線的每個線程處理不同的分區。
+事件會依偏移順序一次處理一次。 每個線程處理 [!DNL pipelined] 不同的分區。
 
 上次檢索的事件的「偏移」儲存在資料庫中。 因此，如果進程停止，則從最後一條消息重新啟動。 此資料儲存在內建模式xtk:pipelineOffset中。
 
@@ -122,8 +122,8 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 記錄和錯誤處理 {#logging-error-handling}
 
-日誌(如logInfo())被定向到流水線日誌。 將logError()等錯誤寫入流水線日誌，並導致事件被放入重試隊列。 檢查流水線日誌。
-錯誤消息在流水線選項中設定的持續時間內多次重試。
+日誌(如logInfo())被定向到日 [!DNL pipelined] 志。 將logError()等錯誤寫入日 [!DNL pipelined] 志，並導致事件放入重試隊列。 檢查流水線日誌。
+在選項中設定的持續時間內，會多次重試出錯的 [!DNL pipelined] 消息。
 
 為了調試和監控，將完整的觸發器資料寫入觸發器表中。 它位於XML格式的「資料」欄位中。 或者，包含觸發器資料的logInfo()也有相同的用途。
 
