@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # 管道監控 {#pipeline-monitoring}
 
-流水線狀態web服務提供關於流水線處理的狀態的資訊。
+狀 [!DNL pipelined] 態web服務提供進程狀態的信 [!DNL pipelined] 息。
 
 它可以使用瀏覽器手動存取，也可以自動與監控應用程式一起存取。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
    * 下一偏移齊平： 等到下一批完成時。
    * processed-since-last-flush: 上一批處理的觸發器數。
 * 路由
-   * 觸發器： 已檢索的觸發器清單。 在流水線選項中配置。
+   * 觸發器： 已檢索的觸發器清單。 在選項中 [!DNL pipelined] 配置。
 * 統計
    * average-pointer-flush-time-ms: 一批觸發器的平均處理時間。
    * average-trigger-processing-time-ms: 解析觸發器資料的平均時間。
