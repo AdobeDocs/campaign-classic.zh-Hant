@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9957dabca4c63d504a3d06cf527a97b79fee46d5
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # 管線選項NmsPipeline_Config {#nmspipeline_config}
 
-一旦驗證運作後，流水線就可以擷取事件並加以處理。 它只會處理在Adobe Campaign中設定的觸發程式，而忽略其他觸發程式。 觸發器必須是從Analytics產生，並事先推送至管道。
+一旦驗證運作，就 [!DNL pipelined] 可以擷取事件並加以處理。 它只會處理在Adobe Campaign中設定的觸發程式，而忽略其他觸發程式。 觸發器必須是從Analytics產生，並事先推送至管道。
 也可以使用通配符配置該選項，以捕獲所有觸發器（無論名稱）。
 
 觸發器的設定是在「 > >」下的選 **[!UICONTROL Administration]** 項 **[!UICONTROL Platform]** 中完成 **[!UICONTROL Options]**。 選項名稱為 **[!UICONTROL NmsPipeline_Config]**。 資料類型是JSON格式的「長文字」。
@@ -90,6 +90,6 @@ ht-degree: 0%
 
 * &quot;name&quot;是觸發器ID。 萬用字元&quot;*&quot;會擷取所有觸發器。
 * &quot;Consumer&quot;是唯一識別nlserver例項的任何唯一字串。 它通常可以是實例名稱本身。 對於多個環境(dev/stage/prod)，請確保每個環境都具有唯一性，以便每個實例都獲得消息的副本。
-* 流水線還支援「別名」主題。
+* [!DNL Pipelined] 也支援「別名」主題。
 
-進行更改後重新啟動流水線。
+進行更 [!DNL pipelined] 改後重新啟動。
