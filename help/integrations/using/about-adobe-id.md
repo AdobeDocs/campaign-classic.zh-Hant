@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 567cae1b91efbcd04a041630eeeb446450e002f7
+source-git-commit: 2140468e52d78a91fc4128e9187d927f08e2f0ee
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 28%
+source-wordcount: '149'
+ht-degree: 29%
 
 ---
 
@@ -32,11 +32,11 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此�
 * 更安全的密碼管理原則。
 * 使用聯合 ID 帳戶 (外部 ID 提供者)。
 
-Adobe的身分識別管理系統可協助管理員建立並管理使用者對應用程式和服務的存取。 如需不同Adobe ID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
+Adobe IMS(Identity Management System)可協助管理員建立和管理使用者對應用程式和服務的存取。 如需不同Adobe ID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
->IMS實作嚴格保留給Adobe技術管理員。 IMS實現是一個複雜的過程，實現時間長。
+>Adobe IMS實作嚴格保留給Adobe技術管理員。 請洽詢您的Adobe主管以開始實施程式。
 
 ## 相關主題
 
@@ -45,4 +45,3 @@ Adobe的身分識別管理系統可協助管理員建立並管理使用者對應
 | [設定IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常見問答集](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
 | [實作IMS](../../integrations/using/implementing-ims.md) | [存取管理](../../platform/using/access-management.md) |
 | [IMS疑難排解](../../integrations/using/ims-troubleshooting.md) | [安裝促銷活動套件](../../installation/using/installing-campaign-standard-packages.md) |
-
