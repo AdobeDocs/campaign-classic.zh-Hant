@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 該 **[!UICONTROL Operation type]** 欄位允許您選擇要對資料庫中的資料執行的進程：
 
-* **[!UICONTROL Insert or update]**:新增資料或更新資料（如果已新增）。
-* **[!UICONTROL Insert]**:只新增資料。
-* **[!UICONTROL Update]**:僅更新資料。
-* **[!UICONTROL Update and merge collections]**:更新資料並選擇「主」記錄，然後連結連結至此主記錄中重複項目的元素。 然後可刪除重複項，而不需建立孤立附加的元素。
-* **[!UICONTROL Delete]**:刪除資料。
+* **[!UICONTROL Insert or update]**: 新增資料或更新資料（如果已新增）。
+* **[!UICONTROL Insert]**: 只新增資料。
+* **[!UICONTROL Update]**: 僅更新資料。
+* **[!UICONTROL Update and merge collections]**: 更新資料並選擇主要記錄，然後連結連結至此主要記錄中之重複項目的元素。 然後可刪除重複項，而不需建立孤立附加的元素。
+* **[!UICONTROL Delete]**: 刪除資料。
 
 ![](assets/s_advuser_update_data_1.png)
 
@@ -121,9 +124,9 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 如果定義的規則適用，輔助記錄的資料將與主記錄關聯。 根據選擇的更新類型，可以刪除次記錄。
 
-## 範例：擴充後更新資料 {#example--update-data-following-an-enrichment}
+## 範例： 擴充後更新資料 {#example--update-data-following-an-enrichment}
 
-步 [驟2:將豐富資料寫入使用案例的「購買」表格區段](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) ，以詳細資訊建立重新應用程式清單，提供擴充活動後資料更新的範例。
+步 [驟2: 將豐富資料寫入使用案例的「購買」表格區段](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) ，以詳細資訊建立重新應用程式清單，提供擴充活動後資料更新的範例。
 
 ## 輸入參數 {#input-parameters}
 
