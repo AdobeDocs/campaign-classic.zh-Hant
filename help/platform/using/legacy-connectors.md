@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fddd0b61c71c90849a1f64776eea43c57d9debe2
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
 
 
 # 舊式連接器 {#legacy-connectors}
+
+Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更新替代項目來取代 [它們](../../platform/using/specific-configuration-database.md)。
 
 ## 配置對Hadoop 2.1的訪問 {#configure-access-to-hadoop}
 
