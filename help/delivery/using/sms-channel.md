@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
+source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3151'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
    >[!CAUTION]
    >
-   > 從20.2版開始，舊版連接器將不再支援。 建議使用連 **[!UICONTROL Extended generic SMPP]** 接器。 有關如何遷移到建議連接器的詳細資訊，請參閱本 [頁](https://helpx.adobe.com/campaign/kb/sms-connector.html)。
+   > 從20.2版開始，舊版連接器已過時且不受支援。 建議使用連 **[!UICONTROL Extended generic SMPP]** 接器。 有關如何遷移到建議連接器的詳細資訊，請參閱本 [頁](https://helpx.adobe.com/campaign/kb/sms-connector.html)。
 
 1. 此選 **[!UICONTROL Enable verbose SMPP traces in the log file]** 項允許您將所有SMPP流量轉儲到日誌檔案中。 必須啟用此選項，才能排除連接器故障，並與提供者所看到的流量進行比較。
 
@@ -367,7 +367,7 @@ CR: 歸位
 
 ### 變更傳送範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點中 **[!UICONTROL Resources > Templates > Delivery templates]** 使用。 有關詳細資訊，請參閱關於 [模板部分](../../delivery/using/about-templates.md) 。
+Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點中 **[!UICONTROL Resources > Templates > Delivery templates]** 使用。 For more on this, refer to the [About templates](../../delivery/using/about-templates.md) section.
 
 若要透過SMS頻道傳送，您必須建立參考頻道連接器的範本。
 
@@ -443,7 +443,7 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點�
    >
    >啟動分析時，會檢查訊息的長度，並在發生溢位時顯示警告。
 
-1. 如果您使用NetSize連接器或SMPP連接器，則可以個人化傳送者的名稱。 有關詳細資訊，請參閱「高 [級參數](#advanced-parameters) 」部分。
+1. 如果您使用NetSize連接器或SMPP連接器，則可以個人化傳送者的名稱。 For more on this, refer to the [Advanced parameters](#advanced-parameters) section.
 
 ## 選擇目標人口 {#selecting-the-target-population}
 
