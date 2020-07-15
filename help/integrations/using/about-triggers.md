@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,11 @@ Pipeline是Experience Cloud中代管的訊息系統，使用 [Apache Kafka](http
 
 ### Pipeline的運作方式為何？ {#how-pipeline-work}
 
-「管道化」程式一律會在Adobe Campaign行銷伺服器上執行。 它會連線至管線、擷取事件並立即處理。
+此程 [!DNL pipelined] 序一律會在Adobe Campaign行銷伺服器上執行。 它會連線至管線、擷取事件並立即處理。
 
 ![](assets/triggers_2.png)
 
-流水線處理會使用驗證服務登入Experience Cloud，並傳送私密金鑰。 驗證服務傳回Token。 擷取事件時，會使用Token來驗證。 [!DNL Triggers] 從REST Web服務中使用簡單的GET請求來檢索。 回應為JSON格式。 請求的參數包括觸發器的名稱和指示上次檢索的消息的指針。 流水線處理會自動處理。
+該 [!DNL pipelined] 程式使用驗證服務登入Experience Cloud並傳送私密金鑰。 驗證服務傳回Token。 擷取事件時，會使用Token來驗證。 [!DNL Triggers] 從REST Web服務中使用簡單的GET請求來檢索。 回應為JSON格式。 請求的參數包括觸發器的名稱和指示上次檢索的消息的指針。 流程 [!DNL pipelined] 會自動處理它。
 
 ## 使用Adobe Experience Cloud觸發器與Adobe Campaign Classic整合
 
