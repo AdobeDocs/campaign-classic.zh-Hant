@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ EwIDAQAB
 
 ### Adobe Campaign Classic中的應用程式名稱註冊 {#application-name-registration}
 
-建立的oAuth用戶端的應用程式ID必須在Adobe Campaign中設定。 您可以在流水線式元素中編輯例項設定檔案，尤其是appName屬性來完成此作業。
+建立的oAuth用戶端的應用程式ID必須在Adobe Campaign中設定。 您可以在元素中編輯例項設定檔案，尤其是 [!DNL pipelined] appName屬性，來執行此動作。
 
 例如：
 
@@ -139,11 +139,11 @@ EwIDAQAB
 
 ### 密鑰加密 {#key-encription}
 
-要供流水線使用，必須加密私鑰。 加密是使用cryptString Javascript函式完成的，且必須與流水線作業在相同的例項上執行。
+要供使用，必 [!DNL pipelined]須加密私密金鑰。 加密是使用cryptString Javascript函式完成的，且必須在與相同的例項上執行 [!DNL pipelined]。
 
 本頁提供使用JavaScript的私密金鑰加密范 [例](../../integrations/using/pipeline-troubleshooting.md)。
 
-加密的私密金鑰必須在Adobe Campaign中註冊。 您可以在流水線元素中編輯實例配置檔案，尤其是authPrivateKey屬性。
+加密的私密金鑰必須在Adobe Campaign中註冊。 您可以編輯元素中的例項設定檔案，尤其是authPrivateKey [!DNL pipelined] 屬性來執行此動作。
 
 例如：
 
@@ -153,7 +153,7 @@ EwIDAQAB
 
 ### 流水線處理自動啟動 {#pipelined-auto-start}
 
-必須自動啟動流水線處理。
+必須 [!DNL pipelined] 自動啟動進程。
 若要這麼做，請將設定檔案中的元素設為autostart=&quot;true&quot;:
 
 ```
@@ -174,7 +174,7 @@ nlserver start pipelined@instance
 nlserver restart pipelined@instance
 ```
 
-如果出現錯誤，請在標準輸出（如果您手動啟動）或流水線日誌檔案中查找錯誤。 有關解決問題的詳細資訊，請參閱本文檔的「疑難解答」部分。
+如果出現錯誤，請在標準輸出（如果您手動啟動）或記錄檔中尋找 [!DNL pipelined] 錯誤。 有關解決問題的詳細資訊，請參閱本文檔的「疑難解答」部分。
 
 ### 流水線配置選項 {#pipelined-configuration-options}
 
@@ -187,7 +187,7 @@ nlserver restart pipelined@instance
 | discoverPipelineEndpoint | URL，用以探索要用於此租用戶的Pipeline Services端點。 預設值： https://producer-pipeline-pnw.adobe.net |
 | dumpStatePeriodSec | 在var/INSTANCE/pipelined.json中，進程內部狀態的2個轉儲之間的時段內部狀態也可以在http://INSTANCE/pipelined/status（埠7781）中按需訪問。 |
 | forcedPipelineEndpoint | 禁用PipelineServicesEndpoint的發現並強制其 |
-| monitorServerPort | 流水線進程偵聽此埠，以在http://INSTANCE/pipelined/status（埠7781）提供進程內部狀態。 |
+| monitorServerPort | 進 [!DNL pipelined] 程偵聽此埠，以在http://INSTANCE/pipelined/status（埠7781）提供進程內部狀態。 |
 | pointerFlushMessageCount | 處理此數量的消息時，偏移將保存在資料庫中。 預設值為1000 |
 | pointerFlushPeriodSec | 在此期間後，偏移將保存在資料庫中。 預設值為5（秒） |
 | processingJSThreads | 使用自訂JS連接器處理訊息的專用執行緒數。 預設值為4 |
