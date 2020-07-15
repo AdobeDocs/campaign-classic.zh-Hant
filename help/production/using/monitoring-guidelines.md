@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7d944973e10c4df166325049b947e359853a2353
+source-git-commit: fdc305ff5bf27aa5cc0a4a9e89ac8ed9d5bead57
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 2%
 
 ---
 
@@ -27,24 +27,26 @@ ht-degree: 1%
 
 標 **[!UICONTROL Monitoring]** 簽可從Campaign Classic首頁存取，是協助您監控執行個體的主要入口點。
 
-它提供執行個體發生情況的控制面板：  其狀態（組建版本、已安裝的封裝等）、系統指標、記錄檔、目前執行的工作流程、上次傳送的傳送狀態等。
+它提供執行個體發生情況的控制面板： 其狀態（組建版本、已安裝的封裝等）、系統指標、記錄檔、目前執行的工作流程、上次傳送的傳送狀態等。
 
-您可在這裡取得詳細 [資訊](../../production/using/monitoring-processes.md)。
+您可於[此處](../../production/using/monitoring-processes.md)取得詳細資訊。
 
 ![](assets/monitoring_tab.png)
 
 ## 監控Campaign Classic程式 {#monitoring-campaign-classic-processes}
 
-您還可使用其他方式監控不同的促銷活動程式。 如需詳細資訊，請參閱以下各節。
-
 <table>
-<tr><td><img src="assets/do-not-localize/instance_icon.svg" width="60px"><p><a href="#monitoring-instance">監控您的實例</a></p></td>
-<td><img src="assets/do-not-localize/workflow_icon.svg" width="60px"><p><a href="#moniroting-workflows">監控工作流程</a></p></td>
-<td><img src="assets/do-not-localize/database_icon.svg" width="60px"><p><a href="#monitoring-database">監視資料庫</a></p></td>
-<td><img src="assets/do-not-localize/delivery_icon.svg" width="60px"><p><a href="#monitoring-deliveries">監控傳送</a></p></td></tr>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">監控您的實例</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">監控工作流程</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">監視資料庫</a></p></td>
+<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">監控傳送</a></p></td></tr>
 </table>
 
+您還可使用其他方式監控不同的促銷活動程式。 它們提供數種監控例項的方式，以確保您的系統正常運作，並最終疑難排解在設定工作流程、傳送傳送等時可能發生的問題。
+
 ### 監控實例 {#monitoring-instance}
+
+<img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **自動監控工具**
 
@@ -63,6 +65,8 @@ ht-degree: 1%
 >請注意，「控制面板」僅供管理員使用者存取，可供所有使用Adobe Managed Services的客戶使用。
 
 ### 監控工作流程 {#monitoring-workflows}
+
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
 **Workflow HeatMap**
 
@@ -88,6 +92,8 @@ Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流�
 
 ### 監控傳送 {#monitoring-deliveries}
 
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
+
 **SMTP報告**
 
 SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [按一下這裡](../../production/using/monitoring-processes.md) ，以取得詳細資訊。
@@ -103,6 +109,8 @@ SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [按一下這裡](../..
 * [臨時檔案問題](../../production/using/temporary-files.md) -僅 *限內部部署代管模型*
 
 ### 監視資料庫 {#monitoring-database}
+
+<img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **資料庫清除工作流程**
 
