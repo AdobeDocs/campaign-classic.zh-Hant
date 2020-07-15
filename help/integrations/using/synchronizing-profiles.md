@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 0%
@@ -63,7 +63,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
 ## 編輯收件者 {#editing-a-recipient}
 
-以下變更單一資料點的步驟提供一個簡單範例，說明當使用資料複製時，Campaign v7如何成為Campaign Standard的主資料庫。 修改或刪除Campaign v7中複製的資料對Campaign Standard中的對應資料有相同的影響。
+以下變更單一資料點的步驟提供一個簡單範例，說明當使用資料複製時，Campaign v7如何成為Campaign Standard的主要資料庫。 修改或刪除Campaign v7中複製的資料對Campaign Standard中的對應資料有相同的影響。
 
 1. 從「建立新收件者」 [中選擇新建立的收件者](#creating-a-new-recipient) ，並編輯收件者的名稱。 例如，為收 **[!UICONTROL Salutation]** 件者選擇（例如，Mr或Mrs）。 如需詳細資訊，請參 [閱編輯描述檔](../../platform/using/editing-a-profile.md)。
 
