@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1330'
 ht-degree: 1%
 
 ---
@@ -23,40 +23,19 @@ ht-degree: 1%
 
 # 版本20.1{#release-20-1}
 
-[建立升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [件更新](../../rn/using/documentation-updates.md) |舊 [版](../../rn/using/release--19-2.md) |已過 [時的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>發行候選人</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再提供</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>已過時</strong></td> 
-  </tr> 
-   <tr> 
-   <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
-   <td>經Adobe驗證的建置。 等待生產校對。<br> </td>
-   <td>更新的版本已修正錯誤。 需要更新。<br> </td>
-   <td>包含已知的回歸。 更新是必備的。<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-最 **後一個穩定版本** 是Gold Standard 10。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 - Build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修正「檔案傳輸 **** 」活動導致SFTP金鑰驗證無法在Debian 9上運作的問題。 (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 組建版本9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 組建版本9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
@@ -70,7 +49,7 @@ _2020年2月17日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
+   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別上擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
     <p>如需詳細資訊，請參閱詳細 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">的檔案</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">和教學影片</a>。</p>
    </td> 
   </tr> 
@@ -132,7 +111,7 @@ _2020年2月17日_
 
 * 資料庫記錄管理得到了增強。
 
-* 連接池的健壯性已經得到改善，這可以防止意外連接故障的發生太多。
+* 連接池的健壯性已經得到改善，這可能防止意外連接故障的發生太多。
 
 * 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [詳細內容](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
