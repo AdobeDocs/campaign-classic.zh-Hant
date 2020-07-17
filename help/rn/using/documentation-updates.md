@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
 workflow-type: tm+mt
-source-wordcount: '6898'
+source-wordcount: '6939'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 8%
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
 
 ## 2020 年 7 月{#july-2020}
+
+「發 [行說明](../../rn/using/latest-release.md) 」已重新整理： 已新 [增概述頁面](../../rn/using/latest-release.md) ，其中包含有關建置狀態、升級程式、建議和重要連結的資訊。 此外，還新增 [了Gold Standard版本專用頁](../../rn/using/gold-standard.md) ，並整合 [了Compatibility Matrix](../../rn/using/compatibility-matrix.md) 。
 
 新增了與Campaign Classic監控相關的准則。 [詳細內容](../../production/using/monitoring-guidelines.md)
 
