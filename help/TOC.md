@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2089'
 ht-degree: 10%
 
 ---
@@ -17,8 +17,10 @@ ht-degree: 10%
 
 + [產品文件](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
-+ 發行說明 {#release-notes}
++ 發行說明{#release-notes}
+   + [升級快速入門](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
+   + [Gold Standard版本](rn/using/gold-standard.md)
    + 舊版 {#previous-releases}
       + [版本20.1](rn/using/release--20-1.md)
       + [版本19.2](rn/using/release--19-2.md)
@@ -26,7 +28,9 @@ ht-degree: 10%
       + [版本18.10](rn/using/release--18-10.md)
       + [版本18.6](rn/using/release--18-6.md)
       + [版本18.4](rn/using/release--18-4.md)
-   + [不建議使用的功能](rn/using/deprecated-features.md)
+   + 不建議使用的功能與相容性 {#deprecated-compatibility}
+      + [不建議使用的功能](rn/using/deprecated-features.md)
+      + [相容性矩陣](rn/using/compatibility-matrix.md)
 + Getting Started {#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [關於 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
