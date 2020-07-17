@@ -13,36 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
 
 
 # 最新版本{#latest-release}
-
-[建立升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [件更新](../../rn/using/documentation-updates.md) |舊 [版](../../rn/using/release--20-1.md) |已過 [時的功能](../../rn/using/deprecated-features.md)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>發行候選人</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再提供</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>已過時</strong></td> 
-  </tr> 
-   <tr> 
-   <td>提供最新的穩定版本。 在生產環境中經過驗證。<br> </td>
-   <td>經Adobe驗證的建置。 等待生產校對。<br> </td>
-   <td>更新的版本已修正錯誤。 需要更新。<br> </td>
-   <td>包含已知的回歸。 更新是必備的。<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-最 **後一個穩定版本** 是Gold Standard 10。 按一 [下](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板6月發行** ，包含作用中描述檔監控、子網域傳送能力稽核和GPG金鑰管理。 [進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
