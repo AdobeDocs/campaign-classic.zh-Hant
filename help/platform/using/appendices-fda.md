@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 789799f79608c26126d70e896bd1b7a6df33e4fa
+source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Adobe Campaign Classic 17.9之前的版本僅支援Teradata Latin-1資料庫。
 
 從Adobe Campaign Classic 17.9開始，我們現在依預設支援Unicode中的Teradata資料庫。
 
-擁有Latin-1 Teradata資料庫的客戶必須在外部帳戶的選項中新增參數APICharSize=1，才能移轉至最新的Campaign Classic版本。
+具有Latin-1 Teradata資料庫的客戶必須在外部帳戶的選項中新增參數APICharSize=1，才能移轉至最新的Campaign Classic版本。
 
 ### 資料庫配置 {#database-configuration}
 
@@ -128,8 +128,9 @@ Adobe Campaign不會針對它將在資料庫中建立的物件設定保護模式
    
    -- Test: should return 410042
    SELECT CAST(Char2HexInt(UDF_UTF16to8(_UNICODE'004100000042'XC)) AS VARCHAR(100));
-   
-### Linux的Campaign伺服器組態 {#campaign-server-linux}
+   ```
+
+### Linux的促銷活動伺服器設定 {#campaign-server-linux}
 
 安裝驅動程式時需要以下操作：
 
