@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 353f5df040087175c9f211308704f1af1844ef2c
+source-git-commit: 789799f79608c26126d70e896bd1b7a6df33e4fa
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Adobe Campaign Classic 17.9之前的版本僅支援Teradata Latin-1資料庫。
 
 從Adobe Campaign Classic 17.9開始，我們現在依預設支援Unicode中的Teradata資料庫。
 
-具有Latin-1 Teradata資料庫的客戶必須在外部帳戶的選項中新增參數APICharSize=1，才能移轉至最新的Campaign Classic版本。
+擁有Latin-1 Teradata資料庫的客戶必須在外部帳戶的選項中新增參數APICharSize=1，才能移轉至最新的Campaign Classic版本。
 
 ### 資料庫配置 {#database-configuration}
 
@@ -247,7 +247,7 @@ $ apt update
 $ apt install libmysqlclient20
 ```
 
-#### Windows [#windows-mysql}
+#### Windows {#windows-mysql}
 
 從此頁面下載C連 [接器](https://dev.mysql.com/downloads/connector/c)。 我們建議下載5.7版。
 
