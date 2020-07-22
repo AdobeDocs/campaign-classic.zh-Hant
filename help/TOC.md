@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2094'
 ht-degree: 10%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 10%
       + [建立直接郵件傳送](delivery/using/creating-a-direct-mail-delivery.md)
       + [定義直接郵件內容](delivery/using/defining-the-direct-mail-content.md)
       + [驗證](delivery/using/validating.md)
-      + [其他頻道](delivery/using/other-channels.md)
    + 使用傳送範本 {#using-delivery-templates}
       + [關於範本](delivery/using/about-templates.md)
       + [建立傳送範本](delivery/using/creating-a-delivery-template.md)
@@ -426,6 +425,7 @@ ht-degree: 10%
          + [建立摘要清單](workflow/using/creating-a-summary-list.md)
          + [豐富資料](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
+         + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
       + 設計查詢 {#designing-queries}
          + [查詢收件人表](workflow/using/querying-recipient-table.md)
          + [查詢傳送資訊](workflow/using/querying-delivery-information.md)
