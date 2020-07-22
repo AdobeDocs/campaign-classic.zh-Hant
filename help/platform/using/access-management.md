@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
+source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
 workflow-type: tm+mt
-source-wordcount: '2912'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
@@ -258,6 +258,7 @@ Adobe Campaign使用技術營運商，預設設定了描述檔： 管理員（�
 
    * 插入資料夾： 將資料夾插入Adobe Campaign樹狀結構的權利（前提是您對相關分支具有編輯權限）,
    * 工作流程： 使用工作流程。
+
    >[!NOTE]
    >
    >此群組不會讓運算子開始傳送。
@@ -346,7 +347,9 @@ Adobe Campaign使用技術營運商，預設設定了描述檔： 管理員（�
 
 預設群組和命名權限可讓運算子存取導覽階層中的特定資料夾，並授與讀取、寫入和刪除權限。
 
-Adobe Campaign存取權限表可從這裡取 [得](/help/platform/using/assets/accessrights.pdf)。
+Adobe Campaign存取權限表可從這裡取 [得](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
+
+[![影像](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
 
 ## 資料夾存取管理 {#folder-access-management}
 
@@ -373,7 +376,7 @@ Adobe Campaign存取權限表可從這裡取 [得](/help/platform/using/assets/a
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
 * **授權群組或營運商**。 若要這麼做，請按一 **[!UICONTROL Add]** 下按鈕，並選取您要為此資料夾指派授權的群組或運算子。
-* **禁止群組或營運商**。 要執行此操作，請單 **[!UICONTROL Delete]** 擊並選擇要從中刪除此資料夾授權的組或運算子。
+* **禁止群組或營運商**。 要執行此操作，請單 **[!UICONTROL Delete]** 擊並選擇要從中移除此資料夾授權的組或運算子。
 * **選擇指派給群組或運算子的權限**。 若要這麼做，請按一下相關的群組或運算子，然後選取您要授與的存取權，並取消選取其他的存取權。
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
