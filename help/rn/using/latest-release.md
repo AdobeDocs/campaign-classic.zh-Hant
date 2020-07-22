@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
+source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1987'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,29 @@ ht-degree: 1%
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板6月發行** ，包含作用中描述檔監控、子網域傳送能力稽核和GPG金鑰管理。 [進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 - Build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 - Build 9180 {#release-20-2-2-build-9180}
+
+_2020年7月22日_
+
+* 修正在停用簽名功能或使用具有最近Mid的舊行銷例項時，追蹤無法運作的問題。 (NEO-26411)
+* 修正造成個人化網域中未簽署的連結在允許時遭到封鎖的問題。 (NEO-25210)
+* 修正使用某些舊版Outlook時，無法開啟／按一下追蹤URL的問題。 (NEO-25688)
+* 修正導致在電子郵件傳送中錯誤定義鏡像頁面URL的問題。 (NEO-26084)
+* 修正反網路釣魚服務中編碼URL管理的問題。 (NEO-25283)
+* 修正在個人化參數（具有井字型大小的錨記）中使用片段追蹤URL無法運作的問題。 (NEO-25774)
+* 修正使用特定自訂追蹤公式時的追蹤問題。 (NEO-25277)修正追蹤「通知點按」無法運作的問題（iOS和Android推播通知）。 (NEO-25965)
+* 修正影響工作流程中計算欄位的回歸。 (NEO-25194)
+* 修正無法即時建立網頁追蹤URL的回歸。 (NEO-20999)
+* 修正現成可用的傳送報表在匯出為PDF時會出現截斷的問題。 (NEO-25757)
+* 修正部署精靈中的當機問題。
+* 修正「選件」通知工作流程在設定檔後無法正常運作的問題。
+* iOS HTTP2連接器已改善（協力廠商更新和錯誤管理）。 (NEO-25904、NEO-25903)
+* catalina.properties中的jarToSkip清單已更新，以刪除對不再使用的jar檔案的引用（iOS通知）。
+* 修正了在postupgrade後封鎖傳送準備的問題。
+* 在切換至新的序 [列ID機制後](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)，所有更新收件者表格的Web應用程式都會在設定檔期間重新發佈。
+* 已修正傳送內容中的潛在XSS弱點。 (NEO-17987、NEO-26073)
+
+## ![](assets/do-not-localize/orange_2.png) 版本20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
 _2020年6月8日_
 
