@@ -12,9 +12,9 @@ discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: 6d9e2b54da9de37ed8f4f873a1049b35493112d4
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,46 @@ ht-degree: 0%
 
 它們可協助您探索不同的情境，讓您使用工作流程並回應您的需求。
 
-使用案例分為三個主題：
+## 交貨 {#deliveries}
 
-<table>
-<tr>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="../../workflow/using/using-the-local-approval-activity.md">交貨</a></p></td><td><img src="assets/do-not-localize/icon_monitoring.svg" width="60px"><p><a href="../../workflow/using/sending-a-report-to-a-list.md">監控</a></p></td><td><img src="assets/do-not-localize/icon_manage.svg" width="60px"><p><a href="../../workflow/using/coordinating-data-updates.md">資料管理</a></p></td>
-<td><img src="assets/do-not-localize/icon_filter.svg" width="60px"><p><a href="../../workflow/using/querying-recipient-table.md">設計查詢</a></p></td></tr>
-</table>
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
+
+* [使用本機核准活動](../../workflow/using/using-the-local-approval-activity.md)
+* [A/B測試](../../workflow/using/a-b-testing.md)
+* [傳送生日電子郵件](../../workflow/using/sending-a-birthday-email.md)
+* [載入傳送內容](../../workflow/using/loading-delivery-content.md)
+* [跨通道傳送工作流程](../../workflow/using/cross-channel-delivery-workflow.md)
+* [使用自訂日期欄位擴充電子郵件](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+
+## 監控 {#monitoring}
+
+<img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
+
+* [傳送報表至清單](../../workflow/using/sending-a-report-to-a-list.md)
+* [監督工作流程](../../workflow/using/supervising-workflows.md)
+* [傳送個人化警報給營運商](../../workflow/using/sending-personalized-alerts-to-operators.md)
+
+## 資料管理 {#management}
+
+<img src="assets/do-not-localize/icon_manage.svg" width="60px">
+
+* [協調資料更新](../../workflow/using/coordinating-data-updates.md)
+* [建立摘要清單](../../workflow/using/creating-a-summary-list.md)
+* [豐富資料](../../workflow/using/enriching-data.md)
+* [使用聚合](../../workflow/using/using-aggregates.md)
+* [匯入使用控制面板產生的金鑰加密的資料](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [使用控制面板上安裝的密鑰加密和導出資料](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
+
+## 設計查詢 {#designing-queries}
+
+<img src="assets/do-not-localize/icon_filter.svg" width="60px">
+
+* [查詢收件人表](../../workflow/using/querying-recipient-table.md)
+* [查詢傳送資訊](../../workflow/using/querying-delivery-information.md)
+* [執行聚合計算](../../workflow/using/performing-aggregate-computing.md)
+* [使用分組管理進行查詢](../../workflow/using/querying-using-grouping-management.md)
+* [使用多對多關係進行查詢](../../workflow/using/querying-using-many-to-many-relationship.md)
+* [添加枚舉類型計算欄位](../../workflow/using/adding-enumeration-type-calculated-field.md)
+* [建立篩選](../../workflow/using/creating-a-filter.md)
+* [篩選重複的收件者](../../workflow/using/filtering-duplicated-recipients.md)
