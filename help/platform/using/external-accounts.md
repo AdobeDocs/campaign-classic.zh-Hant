@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
@@ -111,9 +111,9 @@ Bouncemails **外部帳戶** ，指定用來連線至電子郵件服務的外部
 
 * [電子郵件](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [行動(SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
-* [電話](../../delivery/using/other-channels.md)
+* [電話](../../delivery/using/communication-channels.md#other-channels)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
-* [代理商](../../delivery/using/other-channels.md)
+* [代理商](../../delivery/using/communication-channels.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [iOS頻道](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
