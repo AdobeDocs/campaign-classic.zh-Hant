@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
+source-git-commit: 752318fa4e5b330965bef0906aa0991673e8bd68
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 0%
@@ -347,9 +347,9 @@ Adobe Campaign使用技術營運商，預設設定了描述檔： 管理員（�
 
 預設群組和命名權限可讓運算子存取導覽階層中的特定資料夾，並授與讀取、寫入和刪除權限。
 
-Adobe Campaign存取權限表可從這裡取 [得](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
+Adobe Campaign存取權限表可從這裡取 [得](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)。
 
-[![影像](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
+[![影像](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## 資料夾存取管理 {#folder-access-management}
 
