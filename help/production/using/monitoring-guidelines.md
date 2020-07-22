@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e2b97e10936a492c761f42eb062ede1cba7621ed
+source-git-commit: 41c515008a12fa066cedc9d7125195e2c4776f40
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 2%
@@ -38,8 +38,8 @@ ht-degree: 2%
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">監控您的實例</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">監控工作流程</a></p></td>
-<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">監視資料庫</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">監控傳送</a></p></td></tr>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">監控傳送</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">監視資料庫</a></p></td></tr>
 </table>
 
 您還可使用其他方式監控不同的促銷活動程式。 它們提供數種監控例項的方式，以確保您的系統正常運作，並最終疑難排解在設定工作流程、傳送傳送等時可能發生的問題。
@@ -124,24 +124,24 @@ SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [按一下這裡](../..
 
 *僅限內部部署和混合式代管模型*
 
-We recommend that you perform database maintenance on a regular basis to avoid overconsumption of disk space, thus affecting database access. [按一下這裡](../../production/using/recommendations.md) ，以取得詳細資訊。
+建議您定期執行資料庫維護，以避免磁碟空間過度消耗，從而影響資料庫訪問。 [按一下這裡](../../production/using/recommendations.md) ，以取得詳細資訊。
 
 **備份和還原**
 
 *僅限內部部署和混合式代管模型*
 
-Backing up is essential in order to avoid losing data in the event of a problem (whether physical or system-related) on a machine. [按一下這裡](../../production/using/backup.md) ，以取得詳細資訊。 本節將介紹恢復 [過程](../../production/using/restoration.md)。
+備份是避免在電腦發生問題（無論是物理問題還是與系統相關）時丟失資料的關鍵。 [按一下這裡](../../production/using/backup.md) ，以取得詳細資訊。 本節將介紹恢復 [過程](../../production/using/restoration.md)。
 
 ## Campaign Classic技術原則 {#campaign-classic-technical-principles}
 
-Technical resources are available in Campaign Classic documentation. We recommend you get familiar with these topics before performing any technical operation on your instance.
+Campaign Classic說明檔案中提供技術資源。 建議您在對實例執行任何技術操作之前先熟悉這些主題。
 
-**Hosting models and capabilities**
+**代管模型與功能**
 
 * [Campaign Classic代管模型](../../installation/using/hosting-models.md)
 * [代管模型功能](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 
-**Server configuration**
+**伺服器組態**
 
 *僅限內部部署與混合式代管模型*
 
@@ -152,9 +152,9 @@ Technical resources are available in Campaign Classic documentation. We recommen
 
 **一般原則**
 
-* [Campaign Classic architecture](../../production/using/general-architecture.md)
-* [Campaign Classic modules](../../production/using/operating-principle.md)
+* [Campaign Classic架構](../../production/using/general-architecture.md)
+* [Campaign Classic模組](../../production/using/operating-principle.md)
 * [Campaign Classic選項](../../installation/using/configuring-campaign-options.md)
-* [How to set up modules&#39; automatic startup](../../production/using/administration.md)
+* [如何設定模組的自動啟動](../../production/using/administration.md)
 * [促銷活動設定原則](../../production/using/configuration-principle.md)
-* [Troubleshooting procedures](../../production/using/performance-and-throughput-issues.md)
+* [疑難排解程式](../../production/using/performance-and-throughput-issues.md)
