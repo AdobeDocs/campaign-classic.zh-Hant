@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '904'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Adobe Campaign提供下列傳送渠道：
 1. **行動頻道**: 行動頻道上的傳送可讓您傳送個人化的SMS或LINE訊息給目標群體。 請參閱 [SMS頻道](../../delivery/using/sms-channel.md)。
 1. **行動應用程式頻道**: 行動應用程式傳送可讓您傳送通知至iOS和Android系統。 請參閱「行動應 [用程式頻道](../../delivery/using/about-mobile-app-channel.md) 」一章。
 
-   本頁說明其他 [渠道](../../delivery/using/other-channels.md)。
+   本頁說明其他 [渠道](../../delivery/using/communication-channels.md#other-channels)。
 
    >[!NOTE]
    >
@@ -93,3 +93,13 @@ Adobe Campaign可讓您透過專用應用程式，在iOS和Android [行動裝置
 [直效郵件](../../delivery/using/about-direct-mail-channel.md) (Direct Mail)是一種離線通道，可讓您個人化並產生直接郵件供應商所需的檔案。 它可讓您在客戶歷程中混合使用線上和線下通道。
 
 線上通道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等） 並直接從Adobe Campaign傳送給您的觀眾。 離線通道則不同。 當您準備直接郵寄時，Adobe Campaign會產生一個檔案，其中包含所有目標設定檔和選取的聯絡資訊（例如郵遞區號）。 然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
+
+## 其他頻道 {#other-channels}
+
+Adobe Campaign提供代理商或電話傳送範本，可用來建立外部傳送。 使用這些渠道意味著您可以設定專用的方法來處理輸出檔案。 配置步驟與直接郵件通 [道的步驟相同](../../delivery/using/about-direct-mail-channel.md)。
+
+此外，「其他」類型的交付使用不執行流程的特定技術模板： 這可讓他們管理在Adobe Campaign平台以外執行的行銷動作。
+
+此通道沒有特定的機制。 它是一般渠道，具有其自己的外部帳戶路由選項、傳送範本類型和促銷活動工作流程活動，就像Adobe Campaign中其他可用的通訊渠道一樣。
+
+此渠道僅用於描述性用途，例如，定義要追蹤在Adobe Campaign以外工具中執行之促銷活動目標的傳送。
