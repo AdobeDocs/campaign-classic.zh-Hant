@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
+source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6963'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 8%
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
 
 ## 2020 年 7 月{#july-2020}
+
+有關如何使用增量查詢自動更新清單的使用案例已添加到工作流使用案例中。 [詳細內容](../../workflow/using/about-workflow-use-cases.md)
 
 「發 [行說明](../../rn/using/latest-release.md) 」已重新整理： 已新 [增概述頁面](../../rn/using/latest-release.md) ，其中包含有關建置狀態、升級程式、建議和重要連結的資訊。 此外，還新增 [了Gold Standard版本專用頁](../../rn/using/gold-standard.md) ，並整合 [了Compatibility Matrix](../../rn/using/compatibility-matrix.md) 。
 
@@ -603,7 +605,7 @@ Adobe [Campaign Classic檔案集已重新整理](https://helpx.adobe.com/support
 
 已新增「教學課程」區段，以方便存取核心的Campaign功能說明教材、操作說明、範例和影片。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-已新增一個章節，協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
+已新增新區段，以協助您監控傳送狀態，但也可能發生錯誤，並瞭解如何修正錯誤。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
 錯誤消息清單已更新。 [詳細內容](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
