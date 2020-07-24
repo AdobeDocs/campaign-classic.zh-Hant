@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d4a170f22108b38ebe8a451feea6210fe5aa482f
+source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Adobe Campaign會定期更新。 平均每年發行兩、三個次要版本，�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** -提供最新的穩定版本。 在生產環境中經過驗證。
 
-最 **後一個穩定版本** 是Gold Standard 10。 按一 [下](../../rn/using/gold-standard.md)
+最 **後一個穩定的版本** 是Gold Standard 6。 按一 [下](../../rn/using/gold-standard.md)
 
 ![](assets/do-not-localize/limited.png) **有限可用性** -目前正在進行生產驗證。 僅限隨選部署。
 
