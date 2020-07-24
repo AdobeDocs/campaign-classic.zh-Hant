@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
+source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Gold Standard版本{#gold-standard}
 
-身為Gold Standard使用者，您可以透過最新穩定版本自動受益於Gold Standard升級，而不需採取任何動作。
+身為Gold Standard的使用者，您可透過最新穩定版本自動從Gold Standard升級中獲益，而不需採取任何動作。
 
 內部部署和Hybrid客戶也可從Gold Standard版本中獲益。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 有關Gold Standard升級的詳細資訊，請參閱本 [文](https://helpx.adobe.com/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/blue_2.png) Gold Standard 10版{#gs-10}
+## ![](assets/do-not-localize/limited.png) Gold Standard 10版{#gs-10}
 
 _2020年7月7日_
 
