@@ -15,19 +15,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
 
 # 運算元描述檔{#operator-profiles}
 
-使用「互動」的運算子有兩種類型：選件經理和交付經理。 他們每個人都有特定的權限，只能讓他們存取樹狀結構和平台的某些部分。
+使用「互動」的運算子有兩種類型： 選件經理和遞送經理。 他們每個人都有特定的權限，只能讓他們存取樹狀結構和平台的某些部分。
 
-* **[!UICONTROL Offer manager]** :建立和維護選件
-* **[!UICONTROL Delivery manager]** :核准和使用選件
+* **[!UICONTROL Offer manager]** : 建立和維護選件。 請注意，如果選件用於工作流程中，運算子必須位於或 **[!UICONTROL Administrator]** [! **** UICONTROL選件管理員)運算子群組中，才能執行工作流程。
+* **[!UICONTROL Delivery manager]** : 核准和使用選件
 
-建立「互動」特定運算子的步驟與建立平台上所有其他運算子的步驟相同。 如需詳細資訊，請參閱[本小節](../../platform/using/access-management.md#creating-an-operator)。在建立操作員期間配置權限。
+建立「互動」特定運算子的步驟與建立平台上所有其他運算子的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md#creating-an-operator)。在建立操作員期間配置權限。
 
 ## 選件管理員 {#offer-manager}
 
