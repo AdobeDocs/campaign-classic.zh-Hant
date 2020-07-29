@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2961'
 ht-degree: 0%
 
 ---
@@ -241,55 +241,63 @@ Adobe Campaign使用技術營運商，預設設定了描述檔： 管理員（�
 
 預設運算元群組為：
 
-1. 傳送營運商
+1. **[!UICONTROL Administrator]**
+
+   此群組中的運算子擁有執行個體的完整存取權。 管理員是可存取介面中最具技術性部分的使用者。 他們負責 **[!UICONTROL Administration]** 角色，並確保平台已全部建立。
+
+   此群組包含下列指名的權限：
+
+   * **[!UICONTROL ADMINISTRATION]**: 執行／建立／編輯／刪除任何物件（例如工作流程、傳送、指令碼等）的權利。
+
+1. **[!UICONTROL Delivery operators]**
 
    此群組的運算子負責管理傳送： 它們可存取建立和準備傳送所需的主要資源（促銷活動類型、傳送對應、預設範本、個人化區塊等）。
 
    此群組包含下列命名權限：
 
-   * 準備交貨： 直接建立、編輯和開始傳送分析，
-   * 開始傳送： 核准先前分析的傳送。
+   * **[!UICONTROL PREPARE DELIVERIES]**: 直接建立、編輯和開始傳送分析，
+   * **[!UICONTROL START DELIVERIES]**: 核准先前分析的傳送。
 
-1. 促銷活動管理員
+1. **[!UICONTROL Campaign managers]**
 
-   此群組中的運算子可以管理行銷促銷活動： 它可讓您存取連結至促銷活動的物件（計畫、方案、工作流程、預算等）。
+   此群組中的運算子可以管理行銷促銷活動： 它可讓您存取連結至促銷活動的物件（計畫、方案、工作流程、預算等） 在的架構中( **[!UICONTROL Campaign]** 選用的Adobe Campaign模組)。
 
    此群組包含下列命名權限：
 
-   * 插入資料夾： 將資料夾插入Adobe Campaign樹狀結構的權利（前提是您對相關分支具有編輯權限）,
-   * 工作流程： 使用工作流程。
+   * **[!UICONTROL INSERT FOLDERS]**: 將資料夾插入Adobe Campaign樹狀結構的權利（前提是您對相關分支具有編輯權限）,
+   * **[!UICONTROL WORKFLOW]**: 使用工作流程。
 
    >[!NOTE]
    >
    >此群組不會讓運算子開始傳送。
 
-1. 內容提供者
+1. **[!UICONTROL Content contributors]**
 
-   此群組中的運算子可在內容管理（選用的Adobe Campaign模組）架構內 **存取「內容** 」資料夾。 此群組不授予任何額外權利。
+   此群組中的運算子可在（選用的Adobe Campaign模組）的架構中 **[!UICONTROL Content management]** 存取「內容」資料夾。 此群組不授予任何額外權利。
 
-1. 存取報表
+1. **[!UICONTROL Access to reports]**
 
    此群組會保留給外部運算子，以透過Web存取存取來存取傳送報表。
 
-1. 工作流程執行
+1. **[!UICONTROL Workflow execution]**
 
    此群組可讓您指派營運商管理與促銷活動無關之工作流程的權利。
 
-1. 工作流程主管
+1. **[!UICONTROL Workflow supervisors]**
 
    此群組中的運算子會收到電子郵件通知，以防發生促銷活動工作流程的警報。
 
 1. 本地／中央管理
 
-   這些群組可讓您使 **用「分散式行銷** 」（選用的Adobe Campaign模組）。
+   這些群組可讓您使 **[!UICONTROL Distributed marketing]** 用（選用的Adobe Campaign模組）。
 
-1. 選件經理
+1. **[!UICONTROL Offer managers]**
 
    此群組中的運算子可建立及維護選件。 For more information on this, refer to this [page](../../interaction/using/operator-profiles.md).
 此群組包含下列命名權限：
 
-   * 插入資料夾： 將資料夾插入Adobe Campaign樹狀結構的權利（前提是您對相關分支具有編輯權限）,
-   * 編輯資料夾： 有權更改資料夾屬性，如內部名稱、標籤、關聯的影像、子資料夾順序等。
+   * **[!UICONTROL INSERT FOLDERS]**: 將資料夾插入Adobe Campaign樹狀結構的權利（前提是您對相關分支具有編輯權限）,
+   * **[!UICONTROL EDIT FOLDERS]**: 有權更改資料夾屬性，如內部名稱、標籤、關聯的影像、子資料夾順序等。
 
 ## 命名權限 {#named-rights}
 
@@ -376,7 +384,7 @@ Adobe Campaign存取權限表可從這裡取 [得](/help/platform/using/assets/a
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
 * **授權群組或營運商**。 若要這麼做，請按一 **[!UICONTROL Add]** 下按鈕，並選取您要為此資料夾指派授權的群組或運算子。
-* **禁止群組或營運商**。 要執行此操作，請單 **[!UICONTROL Delete]** 擊並選擇要從中移除此資料夾授權的組或運算子。
+* **禁止群組或營運商**。 要執行此操作，請單 **[!UICONTROL Delete]** 擊並選擇要從中刪除此資料夾授權的組或運算子。
 * **選擇指派給群組或運算子的權限**。 若要這麼做，請按一下相關的群組或運算子，然後選取您要授與的存取權，並取消選取其他的存取權。
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
