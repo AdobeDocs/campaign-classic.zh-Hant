@@ -13,15 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2473'
 ht-degree: 0%
 
 ---
 
 
 # 匯入資料{#importing-data}
+
+>[!CAUTION]
+>
+>使用此功能時，請記住SFTP儲存空間、資料庫儲存空間和作用中的設定檔限制，請依照您的AdobeCampaign合約規定。
 
 ## 如何收集資料 {#how-to-collect-data}
 
@@ -246,7 +250,7 @@ zcat nl6/var/vp/import/filename.gz
 
 1. 設定活 **[!UICONTROL Enrichment]** 動。 此活動的目的是識別傳入的資料。
 
-   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
+   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位可用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
    * 在頁籤 **[!UICONTROL Reconciliation]** 中，將選項保留為未 **[!UICONTROL Identify the document from the working data]** 選中狀態。
 
    ![](assets/import_template_example2.png)
