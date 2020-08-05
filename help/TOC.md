@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
+source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
-source-wordcount: '2094'
-ht-degree: 10%
+source-wordcount: '2097'
+ht-degree: 11%
 
 ---
 
@@ -44,15 +44,15 @@ ht-degree: 10%
          + [設計訊息](platform/using/faq-designing.md)
          + [傳送訊息](platform/using/faq-messages.md)
          + [工作流程](platform/using/faq-workflows.md)
-         + [配置](platform/using/faq-campaign-config.md)
-         + [報表](platform/using/faq-reporting.md)
+         + [設定](platform/using/faq-campaign-config.md)
+         + [報告](platform/using/faq-reporting.md)
          + [開發](platform/using/faq-developers.md)
       + [教學課程](platform/using/tutorials.md)
    + 用戶檔案管理 {#profile-management}
       + [關於設定檔](platform/using/about-profiles.md)
       + [編輯用戶檔案](platform/using/editing-a-profile.md)
       + [新增用戶檔案](platform/using/adding-profiles.md)
-      + [管理個人資料](platform/using/managing-profiles.md)
+      + [管理設定檔](platform/using/managing-profiles.md)
       + [更新資料](platform/using/updating-data.md)
       + [匯出和匯入用戶檔案](platform/using/exporting-and-importing-profiles.md)
       + [建立和管理清單](platform/using/creating-and-managing-lists.md)
@@ -89,8 +89,9 @@ ht-degree: 10%
       + [CRM連接器](platform/using/crm-connectors.md)
       + [Adobe Analytics資料連接器](platform/using/adobe-analytics-data-connector.md)
 + 傳送訊息 {#sending-messages}
-   + 關於傳送和渠道 {#about-deliveries-and-channels}
+   + 開始使用訊息 {#about-deliveries-and-channels}
       + [通訊通道](delivery/using/communication-channels.md)
+      + [提供最佳實務](delivery/using/delivery-best-practices.md)
       + [存取傳送資訊](delivery/using/accessing-deliveries-information.md)
       + [傳送類型](delivery/using/types-of-deliveries.md)
    + 建立傳送時的主要步驟 {#key-steps-when-creating-a-delivery}
@@ -213,7 +214,7 @@ ht-degree: 10%
       + [範例](campaign/using/examples.md)
    + 回應管理員 {#response-manager}
       + [關於回應管理器](campaign/using/about-response-manager.md)
-      + [配置](campaign/using/configuration.md)
+      + [設定](campaign/using/configuration.md)
       + [假設範本](campaign/using/hypothesis-templates.md)
       + [建立假設](campaign/using/creating-hypotheses.md)
       + [假設追蹤](campaign/using/hypothesis-tracking.md)
@@ -379,7 +380,7 @@ ht-degree: 10%
       + [時間限制](workflow/using/time-constraint.md)
       + [子工作流程](workflow/using/sub-workflow.md)
       + [跳轉（起點和終點）](workflow/using/jump--start-point-and-end-point-.md)
-      + [外部信號](workflow/using/external-signal.md)
+      + [外部訊號](workflow/using/external-signal.md)
       + [核准](workflow/using/approval.md)
       + [警報](workflow/using/alert.md)
       + [任務](workflow/using/task.md)
@@ -423,7 +424,7 @@ ht-degree: 10%
       + 資料管理 {#data-management}
          + [協調資料更新](workflow/using/coordinating-data-updates.md)
          + [建立摘要清單](workflow/using/creating-a-summary-list.md)
-         + [豐富資料](workflow/using/enriching-data.md)
+         + [擴充資料](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
          + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
       + 設計查詢 {#designing-queries}
@@ -441,7 +442,7 @@ ht-degree: 10%
       + [Workflow HeatMap](workflow/using/heatmap.md)
    + 進階管理 {#advanced-management}
       + [工作流程屬性](workflow/using/workflow-properties.md)
-      + [高級參數](workflow/using/advanced-parameters.md)
+      + [進階參數](workflow/using/advanced-parameters.md)
       + [JavaScript指令碼和範本](workflow/using/javascript-scripts-and-templates.md)
       + [訪問外部資料庫(FDA)](workflow/using/accessing-an-external-database--fda-.md)
       + [管理權限](workflow/using/managing-rights.md)
@@ -507,7 +508,7 @@ ht-degree: 10%
    + 追蹤選件 {#tracking-offers}
       + [優惠提案記錄](interaction/using/offer-proposition-history.md)
       + [選件分析報表](interaction/using/offer-analysis-report.md)
-   + 高級參數 {#advanced-parameters}
+   + 進階參數 {#advanced-parameters}
       + [使用進階參數](interaction/using/using-advanced-parameters.md)
       + [其他資料](interaction/using/additional-data.md)
       + [擴充功能範例](interaction/using/extension-example.md)
@@ -539,7 +540,7 @@ ht-degree: 10%
       + [管理事務性消息中的種子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [個人化資料](message-center/using/personalization-data.md)
       + [交易式訊息預覽](message-center/using/transactional-message-preview.md)
-      + [傳送證明](message-center/using/sending-a-proof.md)
+      + [傳送校樣](message-center/using/sending-a-proof.md)
       + [範本發佈](message-center/using/template-publication.md)
       + [範本取消發佈](message-center/using/template-unpublication.md)
    + 事件處理 {#event-processing}
@@ -547,7 +548,7 @@ ht-degree: 10%
       + [事件集合](message-center/using/event-collection.md)
       + [向模板路由](message-center/using/routing-towards-a-template.md)
       + [傳送執行](message-center/using/delivery-execution.md)
-   + 報表 {#reports}
+   + 報告 {#reports}
       + [關於交易式訊息報告](message-center/using/about-transactional-messaging-reports.md)
       + [消息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
       + [消息中心服務級別](message-center/using/message-center-service-level.md)
@@ -556,7 +557,7 @@ ht-degree: 10%
       + [傳送含附件的交易式電子郵件](message-center/using/transactional-email-with-attachments.md)
 + 與社交媒體整合 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
-   + 配置 {#configuration}
+   + 設定 {#configuration}
       + [開始工作流程](social/using/starting-workflows.md)
       + [在Facebook塗鴉牆上發佈](social/using/publishing-on-facebook-walls.md)
       + [建立Facebook應用程式](social/using/creating-a-facebook-application.md)
@@ -632,8 +633,8 @@ ht-degree: 10%
    + 生產程式 {#production-procedures}
       + [配置原則](production/using/configuration-principle.md)
       + [操作原則](production/using/operating-principle.md)
-      + [管理](production/using/administration.md)
-      + [配置](production/using/configuration.md)
+      + [管理員](production/using/administration.md)
+      + [設定](production/using/configuration.md)
       + [日誌檔案](production/using/log-files.md)
       + [監控流程](production/using/monitoring-processes.md)
       + [常用命令](production/using/usual-commands.md)
@@ -672,7 +673,7 @@ ht-degree: 10%
       + [丟失密碼](production/using/lost-password.md)
       + [JSP行為](production/using/jsp-behavior.md)
 + 設定Campaign Classic {#configuring-campaign-classic}
-   + Data model {#data-model}
+   + 資料模型 {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
       + [最佳實務](configuration/using/data-model-best-practices.md)
@@ -707,7 +708,7 @@ ht-degree: 10%
       + [添加其他SQL函式](configuration/using/adding-additional-sql-functions.md)
    + 導覽階層 {#navigation-hierarchy}
       + [關於導覽階層](configuration/using/about-navigation-hierarchy.md)
-      + [配置](configuration/using/configuration.md)
+      + [設定](configuration/using/configuration.md)
       + [版本](configuration/using/edition.md)
    + 使用自訂收件者表格 {#use-a-custom-recipient-table}
       + [關於自訂收件者表格](configuration/using/about-custom-recipient-table.md)
@@ -742,7 +743,7 @@ ht-degree: 10%
       + [移轉至Adobe Campaign 7的先決條件](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
       + [在Windows中移轉Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [在Linux中移轉Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + 配置 {#configuration}
+   + 設定 {#configuration}
       + [一般配置](migration/using/general-configurations.md)
       + [v5.11中的特定組態](migration/using/specific-configurations-in-v5-11.md)
       + [v6.02中的特定配置](migration/using/specific-configurations-in-v6-02.md)
