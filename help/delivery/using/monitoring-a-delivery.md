@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 1%
+source-wordcount: '2597'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 * [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
 * [瞭解隔離管理](../../delivery/using/understanding-quarantine-management.md)
-* [提供最佳實務](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+* [提供最佳實務](../../delivery/using/delivery-best-practices.md)
 * [管理傳送能力](../../delivery/using/about-deliverability.md)
 
 ## 傳送控制面板 {#delivery-dashboard}
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 此標 **[!UICONTROL Summary]** 簽包含傳送的特性： 傳送狀態、使用的頻道、傳送者的資訊、主旨、執行的相關資訊。 有關詳細資訊，請參 [閱已發送的消息數](#number-of-messages-sent)。
 
-此連 **[!UICONTROL reports]** 結可讓您檢視一組與傳送動作相關的報表： 一般傳送報表、詳細報表、傳送報表、失敗訊息的分發、開啟率、點按次數和交易等。 此標籤的內容可依您的需求進行設定。 有關更多資訊，請參見[本節](../../reporting/using/delivery-reports.md)。
+此連 **[!UICONTROL reports]** 結可讓您檢視一組與傳送動作相關的報表： 一般傳送報表、詳細報表、傳送報表、失敗訊息的分發、開啟率、點按次數和交易等。 此標籤的內容可依您的需求進行設定。 如需詳細資訊，請參閱[本區段](../../reporting/using/delivery-reports.md)。
 
 ### 傳送記錄檔和記錄 {#delivery-logs-and-history}
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 追蹤設定是在傳送精靈的適當階段執行。 請參 [閱如何設定追蹤的連結](../../delivery/using/how-to-configure-tracked-links.md)。
 
-**[!UICONTROL Tracking]** 資料會在傳送報表中解譯。 請參 [閱本節](../../reporting/using/delivery-reports.md)。
+**[!UICONTROL Tracking]** 資料會在傳送報表中解譯。 請參閱[本區段](../../reporting/using/delivery-reports.md)。
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -95,11 +95,11 @@ ht-degree: 1%
 某些指標或狀態可能不正確或不是最新，這可透過下列解決方案解決：
 
 * 如果您的傳送狀態不正確，請檢查是否已完成此傳送的所有必要核准，或是執行 **[!UICONTROL operationMgt]** 和工 **[!UICONTROL deliveryMgt]** 作流程時未出現錯誤。 這也可能是因為傳送時使用了傳送執行個體上未設定的相似性。
-* 如果您的交貨指標仍為零，並且您處於中間採購配置中，請檢查技術工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果狀態不是，請啟動它 **[!UICONTROL Started]**。 然後，您可以嘗試在Adobe Campaign瀏覽器中按一下滑鼠右鍵並選取 **[!UICONTROL Actions]** >，重新計算指標 **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
+* 如果您的交貨指標仍為零，且您處於中間採購配置中，請檢查技術工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果狀態不是，請啟動它 **[!UICONTROL Started]**。 然後，您可以嘗試在Adobe Campaign瀏覽器中按一下滑鼠右鍵並選取 **[!UICONTROL Actions]** >，重新計算指標 **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * 如果您的傳送計數器與您的傳送不符，請嘗試在Adobe Campaign檔案總管中以滑鼠右鍵按一下相關傳送，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
-* 如果您的交貨計數器不是中部採購部署的最新版本，請檢查技術工 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 作流程是否正在執行。 For more on this, refer to this [page](../../installation/using/mid-sourcing-deployment.md).
+* 如果您的交貨計數器不是中部採購部署的最新版本，請檢查技術工 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 作流程是否正在執行。 如需關於此項目的詳細資訊，請參閱此[頁面](../../installation/using/mid-sourcing-deployment.md)。
 
-您也可以透過傳送控制面板，使用不同的報表來追蹤傳送。 For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
+您也可以透過傳送控制面板，使用不同的報表來追蹤傳送。 如需詳細資訊，請參閱本[區段](../../reporting/using/delivery-reports.md)。
 
 ## 效能問題 {#performance-issues}
 
@@ -209,7 +209,7 @@ ht-degree: 1%
 
 在確認您的傳送後，您會看到傳送狀態為 **[!UICONTROL Pending]**。 此狀態表示執行進程正在等待某些資源的可用性。
 
-狀 **[!UICONTROL Pending]** 態可以先表示您的傳送已排程，且待定至指定日期。 如需詳細資訊，請參閱「傳送 [排程」](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) 。
+狀 **[!UICONTROL Pending]** 態可以先表示您的傳送已排程，且待定至指定日期。 For more on this, refer to the [Delivery scheduling](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) section.
 
 如果您的傳送未傳送且其狀態仍 **[!UICONTROL Pending]**&#x200B;然維持，則可能是：
 
@@ -254,7 +254,7 @@ ht-degree: 1%
 
    為解決此問題，我們建議對資料庫執行真空並重新索引。 For more information on database maintenance, refer to [this section](../../production/using/recommendations.md).
 
-   您也應以排程的活動重新啟動所有工作流程，並且所有工作流程都處於失敗狀態。 Refer to [this section](../../workflow/using/scheduler.md).
+   您也應以排程的活動重新啟動所有工作流程，並且所有工作流程都處於失敗狀態。 請參閱[本區段](../../workflow/using/scheduler.md)。
 
 * 當傳送失敗時，傳送記錄中可能會出現下列錯誤： **DLV-XXXX準備的消息數(123)大於要發送的消息數(111)。 請聯絡支援。**
 
@@ -270,7 +270,7 @@ ht-degree: 1%
 * [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
 * [傳送失敗類型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
 
-## 已發送的消息數 {#number-of-messages-sent}
+## Number of messages sent {#number-of-messages-sent}
 
 您可以透過樹狀結構的節點，從傳送清單 **[!UICONTROL Campaign Management > Deliveries]** 存取傳送。
 
