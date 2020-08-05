@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 3%
+source-wordcount: '1673'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 1. **分析傳送**: 此步驟可讓您準備要傳送的訊息。 請參閱 [分析傳送](#analyzing-the-delivery)。
 
-   分析期間應用的規則會在「驗證」流程中 [與類型一起顯示](#validation-process-with-typologies) 。 可用的驗證模式在「更改批准模 [式」部分中有詳細說明](#changing-the-approval-mode) 。
+   分析期間套用的規則將在本節 [中介紹](#validation-process-with-typologies) 。 可用的驗證模式在「更改批准模 [式」部分中有詳細說明](#changing-the-approval-mode) 。
 
 1. **傳送校樣**: 此步驟可讓您核准內容、URL、個人化欄位等。 請參 [閱傳送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定義特定證明目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 ### 啟動分析 {#launching-the-analysis}
 
 1. 若要啟動傳送分析，請按一下 **[!UICONTROL Send]**。
-1. Select **[!UICONTROL Deliver as soon as possible]**.
+1. 選取 **[!UICONTROL Deliver as soon as possible]**。
 
    ![](assets/s_ncs_user_email_del_send.png)
 
@@ -76,6 +76,7 @@ ht-degree: 3%
    * 藍色圖示表示資訊性訊息。
    * 黃色表徵圖表示非嚴重處理錯誤。
    * 紅色圖示表示無法傳送傳送的重大錯誤。
+
    ![](assets/s_ncs_user_email_del_analyze_error.png)
 
 1. 按一 **[!UICONTROL Close]** 下以更正錯誤（如果有）。
@@ -100,7 +101,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Label and code of the delivery]** : 本節中的選項用於計算傳送分析階段中這些欄位的值。 該 **[!UICONTROL Compute the execution folder during the delivery analysis]** 欄位會計算在分析階段中將包含此傳送操作的資料夾的名稱。
 * **[!UICONTROL Approval mode]** : 此欄位可讓您定義分析完成後的人工或自動傳送。 驗證模式顯示在「更改 [批准模式」部分](#changing-the-approval-mode) 。
-* **[!UICONTROL Prepare the delivery parts in the database]** : 此選項可讓您改善傳送分析效能。 For more on this, see [this section](#improving-delivery-analysis).
+* **[!UICONTROL Prepare the delivery parts in the database]** : 此選項可讓您改善傳送分析效能。 如需詳細資訊，請參閱[本區段](#improving-delivery-analysis)。
 * **[!UICONTROL Prepare the personalization data with a workflow]** : 此選項可讓您在自動工作流程中準備傳送時包含的個人化資料，如此可大幅提升執行個人化的效能。 如需詳細資訊，請參閱最佳 [化個人化](../../delivery/using/personalization-fields.md#optimizing-personalization)。
 * **[!UICONTROL Start job in a detached process]** : 此選項可讓您在個別程式中啟動傳送分析。 分析功能依預設會使用Adobe Campaign應用程式伺服器程式(web nlserver)。 選取此選項，即使在應用程式伺服器發生故障時，您也能確保分析完成。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : 此選項在分析階段將SQL查詢日誌添加到傳送日誌。
@@ -134,7 +135,7 @@ ht-degree: 3%
 >
 >為確保較大的傳送分析不會拖慢工作流程的進度，您可以透過滴答作業來排程執行 **[!UICONTROL Schedule execution for a time of low activity]**。
 
-## 傳送證明 {#sending-a-proof}
+## 傳送校樣 {#sending-a-proof}
 
 若要檢測訊息設定中可能出現的錯誤，Adobe 強烈建議您設定傳遞驗證階段。要經常性地透過傳送驗證訊息測試收件者，確保核准內容。每次進行變更時都必須傳送驗證訊息，以核准內容。
 
@@ -142,6 +143,7 @@ ht-degree: 3%
 >
 >* 變更核准模式中會詳 [細說明可用的驗證模式](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)。
 >* 定義特定校對目標時，將說 [明校對目標的配置](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+
 >
 
 
@@ -156,7 +158,7 @@ ht-degree: 3%
 1. 啟動消息分析。 請參閱 [分析傳送](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您現在可以傳送傳送(請參閱 [傳送傳送](../../delivery/using/steps-sending-the-delivery.md))。
 
-   傳送後，證明會出現在傳送清單中，並自動建立及編號。 如果您想要存取其內容和屬性，則可加以編輯。 For more on this, refer to this [page](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   傳送後，證明會出現在傳送清單中，並自動建立及編號。 如果您想要存取其內容和屬性，則可加以編輯。 如需關於此項目的詳細資訊，請參閱此[頁面](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)。
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -187,7 +189,7 @@ ht-degree: 3%
 
 ## 具有類型的驗證流程 {#validation-process-with-typologies}
 
-在傳送任何訊息之前，您應先分析促銷活動以核准其內容和設定。 分析階段期間套用的檢查規則是以類型學 **定義**。 依預設，對於電子郵件，分析涵蓋下列幾點：
+在傳送任何訊息之前，您應先分析促銷活動以核准其內容和設定。 The checking rules applied during the analysis phase are defined in a **typology**. 依預設，對於電子郵件，分析涵蓋下列幾點：
 
 * 批准對象
 * 核准URL和影像
@@ -215,7 +217,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** 類型類型在銷售壓力管理的框架內使用。 如需詳細資訊，請參閱[本章節](../../campaign/using/about-marketing-resource-management.md)。
+>**[!UICONTROL Arbitration]** 類型類型在銷售壓力管理的框架內使用。 如需詳細資訊，請參閱[本區段](../../campaign/using/about-marketing-resource-management.md)。
 
 ## 變更核准模式 {#changing-the-approval-mode}
 
