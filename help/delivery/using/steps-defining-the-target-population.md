@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -29,25 +29,23 @@ ht-degree: 0%
 
 您可以針對每個傳送定義數種目標人口族群。 以下章節提供如何選擇的詳細資訊：
 
-* **主要的收件者**。 [詳細內容](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)。
-* **校對訊息的收件者**，以設定驗證週期。 [詳細內容](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+* 主要的收件者。 [詳細內容](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* 校對訊息的收件者，以設定驗證週期。 [詳細內容](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-此外，您也可以定義 [種子地址](../../delivery/using/about-seed-addresses.md)，以及 [控制組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。 如果傳送包含在行銷促銷活動中。
+此外，如果傳送內容已包含在行銷促銷活動中，您也可以定義 [種子位址](../../delivery/using/about-seed-addresses.md)，以及 [控制群組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
 
 ## 選擇傳送的主要收件者 {#selecting-the-main-target}
 
-在大多數情況下，主要目標會從促銷活動資料庫（預設模式）中擷取。
+在大多數情況下，主要目標會從Adobe Campaign資料庫（預設模式）擷取。 不過，收件者也可以儲存在外部檔案中。 在本節中進 [一步瞭解](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
 
-收件者也可以儲存在外部檔案中。 此類型傳送的設定會顯示在選取外部收 [件者中](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
+要選擇交貨的收件者，請執行以下步驟：
 
-要選擇要建立的交貨的收件者，請執行以下步驟：
-
-1. 按一下 **[!UICONTROL To]** 連結。
-1. 如果收件者儲存在資料庫中，請選取第一個選項。
+1. 在傳送編輯器中，選擇 **[!UICONTROL To]**。
+1. 如果收件者儲存在資料庫中，請選擇第一個選項。
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. 在下拉式清單中選 **[!UICONTROL Target mapping]** 取目標對應。 Adobe Campaign預設目標對應為 **[!UICONTROL Recipients]**。
+1. 在下拉式清單中選 **[!UICONTROL Target mapping]** 取目標對應。 Adobe Campaign預設目標對應是 **[!UICONTROL Recipients]**&#x200B;以nms: **recipient** 架構為基礎。
 
    其他目標映射可用，有些可以與您的特定配置相關。 有關目標映射的詳細資訊，請參 [閱選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)。
 
@@ -124,7 +122,7 @@ ht-degree: 0%
 
 ### 設定排除設定 {#customizing-exclusion-settings}
 
-地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會自動在收件者描述檔中更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
+地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會在收件者描述檔中自動更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
 
 您可以選擇排除已達到特定數量連續錯誤或品質分級低於此窗口中指定臨界值的地址。 您也可以選擇是否授權尚未傳回任何資料的非合格地址。
 
