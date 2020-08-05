@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f599bc5483779ae62dd4d5eb1936cbc2760639b5
+source-git-commit: 4548eda6f87566398ddf19131b777012cbf8917b
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4361'
 ht-degree: 4%
 
 ---
 
 
 # 提供最佳實務 {#delivery-best-practices}
+
+瞭解與Adobe Campaign的傳送設計和傳送相關的最佳實務。
 
 ## 最佳化傳送 {#optimize-delivery}
 
@@ -102,7 +104,7 @@ ht-degree: 4%
 
 **提示**:  為避免Campaign Standard中的設定錯誤，建議您複製原生範本並變更其屬性，而非建立新範本。
 
-**配置地址**
+### 配置地址
 
 * 傳送者的地址是強制性的，以允許傳送電子郵件。
 
@@ -126,7 +128,7 @@ ht-degree: 4%
 
 1. 在欄位 **[!UICONTROL Reply address text]** 中，預設會使用傳送者的位址來回覆。 不過，Adobe建議使用現有的實際地址，例如您品牌的客戶服務。 在這種情況下，如果收件者傳送回覆，客戶服務將能夠處理。
 
-**設定控制群組**
+### 設定控制群組
 
 傳送傳送後，您可以比較已排除的收件者與已接收傳送的收件者的行為。 然後，您可以衡量促銷活動的效率。 請進一步瞭解本節中 [的控制群組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
 
@@ -134,7 +136,7 @@ ht-degree: 4%
 
 ![](assets/d_best_practices_control_group.png)
 
-**使用類型套用篩選或控制規則**
+### 使用類型套用篩選或控制規則
 
 類型學包含分析階段期間在傳送任何訊息之前套用的檢查規則。
 
@@ -342,7 +344,7 @@ Adobe建議預覽您的訊息，以檢查其個人化，以及收件者如何看
 
 在傳送訊息之前，請確定參數和設定與傳送一致。
 
-### 驗證是關鍵 {#validation-is-key}
+### 驗證為何是關鍵 {#validation-is-key}
 
 在傳送傳送內容之前，您必須確保收件者會收到您真正想要傳送的訊息。 為此，您需要驗證訊息內容和傳送參數。
 
@@ -461,7 +463,7 @@ Adobe建議預覽您的訊息，以檢查其個人化，以及收件者如何看
 
 * 請勿嘗試排程大型傳送。 請注意，在系統上均勻分配負載可能需要5到10分鐘。
 
-## 傳送疑難排解 {#delivery-troubleshooting}
+### 傳送疑難排解 {#delivery-troubleshooting}
 
 當傳送發生問題時，可執行特定動作：
 
