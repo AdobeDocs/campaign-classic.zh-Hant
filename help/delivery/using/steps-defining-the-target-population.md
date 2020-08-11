@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -59,16 +59,16 @@ ht-degree: 0%
 
    預設提供下列目標類型：
 
-   * **[!UICONTROL Filtering conditions]** : 此選項可讓您定義查詢並顯示結果。 本節將介紹定義查詢 [的方法](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
-   * **[!UICONTROL Subscribers of an information service]** : 此選項可讓您選取電子報，而收件者必須訂閱才能由建立的傳送鎖定。
+   * **[!UICONTROL Filtering conditions]** :此選項可讓您定義查詢並顯示結果。 本節將介紹定義查詢 [的方法](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+   * **[!UICONTROL Subscribers of an information service]** :此選項可讓您選取電子報，而收件者必須訂閱才能由建立的傳送鎖定。
 
       ![](assets/s_ncs_user_wizard_email02c.png)
 
-   * **[!UICONTROL Recipients of a delivery]** : 此選項可讓您將現有傳送的收件者定義為定位標準。 然後，您必須在清單中選取傳送：
+   * **[!UICONTROL Recipients of a delivery]** :此選項可讓您將現有傳送的收件者定義為定位標準。 然後，您必須在清單中選取傳送：
 
       ![](assets/s_ncs_user_wizard_email02d.png)
 
-   * **[!UICONTROL Delivery recipients belonging to a folder]** : 此選項可讓您選取傳送資料夾，並定位該資料夾中傳送的收件者。
+   * **[!UICONTROL Delivery recipients belonging to a folder]** :此選項可讓您選取傳送資料夾，並定位該資料夾中傳送的收件者。
 
       ![](assets/s_ncs_user_wizard_email02e.png)
 
@@ -80,10 +80,10 @@ ht-degree: 0%
       >
       >此選 **[!UICONTROL Include sub-folders]** 項也可讓您定位位於所選節點下方樹狀結構中資料夾中的傳送。
 
-   * **[!UICONTROL Recipients included in a folder]** : 此選項可讓您定位樹的特定資料夾中包含的配置檔案。
-   * **[!UICONTROL A recipient]** : 此選項可讓您從資料庫的描述檔中選取特定的收件者。
-   * **[!UICONTROL A list of recipients]** : 此選項可讓您定位收件者清單。 本節將列出 [清單](../../platform/using/creating-and-managing-lists.md)。
-   * **[!UICONTROL User filters]** : 此選項可讓您存取預先設定的篩選條件，以用作資料庫中描述檔的篩選條件。 本節將顯示預配置 [的篩選器](../../platform/using/creating-filters.md#saving-a-filter)。
+   * **[!UICONTROL Recipients included in a folder]** :此選項可讓您定位樹的特定資料夾中包含的配置檔案。
+   * **[!UICONTROL A recipient]** :此選項可讓您從資料庫的描述檔中選取特定的收件者。
+   * **[!UICONTROL A list of recipients]** :此選項可讓您定位收件者清單。 本節將列出 [清單](../../platform/using/creating-and-managing-lists.md)。
+   * **[!UICONTROL User filters]** :此選項可讓您存取預先設定的篩選條件，以用作資料庫中描述檔的篩選條件。 本節將顯示預配置 [的篩選器](../../platform/using/creating-filters.md#saving-a-filter)。
    * 此選項 **[!UICONTROL Exclude recipients corresponding to this segment]** 可讓您定位不符合已定義之目標標準的收件者。 若要使用此選項，請選取適當的方塊，然後套用先前定義的定位，以排除產生的描述檔。
 
       ![](assets/s_ncs_user_wizard_email02g.png)
@@ -118,11 +118,11 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->定義電子郵件傳送的訊息內容時，請勿包含鏡像頁面的連結； 無法在此傳送模式中產生。
+>定義電子郵件傳送的訊息內容時，請勿包含鏡像頁面的連結；無法在此傳送模式中產生。
 
 ### 設定排除設定 {#customizing-exclusion-settings}
 
-地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會在收件者描述檔中自動更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
+地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會自動在收件者描述檔中更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
 
 您可以選擇排除已達到特定數量連續錯誤或品質分級低於此窗口中指定臨界值的地址。 您也可以選擇是否授權尚未傳回任何資料的非合格地址。
 
@@ -142,14 +142,14 @@ ht-degree: 0%
 
 可以使用以下選項：
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**. 此選項預設為作用中： 它可讓您在傳送期間消除重複的電子郵件地址。 所套用的策略會因Adobe Campaign的使用方式及資料庫中的資料類型而異。
+* **[!UICONTROL Exclude duplicate addresses during delivery]**. 此選項預設為作用中：它可讓您在傳送期間消除重複的電子郵件地址。 所套用的策略會因Adobe Campaign的使用方式及資料庫中的資料類型而異。
 
    可為每個傳送範本設定選項的預設值。
 
    例如：
 
-   * 傳送電子報或電子檔案。 在某些情況下，如果資料沒有原生重複項，則不排除重複項。 使用相同電子郵件地址的一對訂閱者可能會收到兩個特定的個人化電子郵件訊息： 一個按名稱發送給每個人。 在這種情況下，可以取消選擇此選項。
-   * 行銷促銷活動的傳送： 重複排除是避免傳送太多訊息給相同收件者的必要條件。 在這種情況下，可以選取此選項。
+   * 傳送電子報或電子檔案。 在某些情況下，如果資料沒有原生重複項，則不排除重複項。 使用相同電子郵件地址的一對訂閱者可能會收到兩個特定的個人化電子郵件訊息：一個按名稱發送給每個人。 在這種情況下，可以取消選擇此選項。
+   * 行銷促銷活動的傳送：重複排除是避免傳送太多訊息給相同收件者的必要條件。 在這種情況下，可以選取此選項。
 
       如果您取消選取此選項，您可以存取其他選項： **[!UICONTROL Keep duplicate records (same identifier)]**. 它可讓您授權多個傳送給符合數個定位條件的收件者。
 
@@ -208,7 +208,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 1. 按一下圖 **[!UICONTROL Add]** 標可定義替代。
 1. 輸入要使用的收件者地址，或從清單中選擇該地址。
-1. 選擇要在校對中使用的配置檔案： 將值儲 **[!UICONTROL Random]** 存在欄 **[!UICONTROL Profile to use]** 中，以使用校對中任何目標描述檔的資料。
+1. 選擇要在校對中使用的配置檔案：將值儲 **[!UICONTROL Random]** 存在欄 **[!UICONTROL Profile to use]** 中，以使用校對中任何目標描述檔的資料。
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_choose.png)
 
@@ -220,7 +220,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 ## 使用種子位址作為證明 {#using-seed-addresses-as-proof}
 
-您可以 **[!UICONTROL Seed addresses]** 用作校樣的目標： 此選項可讓您使用或匯入現有種子位址的清單。
+您可以 **[!UICONTROL Seed addresses]** 用作校樣的目標：此選項可讓您使用或匯入現有種子位址的清單。
 
 ![](assets/s_ncs_user_wizard_email_bat_control_address.png)
 
@@ -229,3 +229,15 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 >種子地址在關於種 [子地址中顯示](../../delivery/using/about-seed-addresses.md)。
 
 您可以結合特定證明目標的定義和使用種子地址的選項來 **[!UICONTROL Specific target and Seed addresses]** 進行。 然後在兩個單獨的子頁籤中定義相關配置。
+
+## 如何管理電子郵件中的種子和校樣
+
+在此影片中，您將學習如何在現有電子郵件中新增種子和校樣，以及如何傳送。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+另請參閱：
+* [選擇校對目標](#selecting-the-proof-target)
+
+* [關於種子接頭](../../delivery/using/about-seed-addresses.md)
+
+* [使用案例：選擇條件中的種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
