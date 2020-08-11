@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
+source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2110'
 ht-degree: 11%
 
 ---
@@ -89,13 +89,17 @@ ht-degree: 11%
       + [CRM連接器](platform/using/crm-connectors.md)
       + [Adobe Analytics資料連接器](platform/using/adobe-analytics-data-connector.md)
 + 傳送訊息 {#sending-messages}
-   + 開始使用訊息 {#about-deliveries-and-channels}
-      + [通訊通道](delivery/using/communication-channels.md)
-      + [提供最佳實務](delivery/using/delivery-best-practices.md)
-      + [存取傳送資訊](delivery/using/accessing-deliveries-information.md)
-      + [傳送類型](delivery/using/types-of-deliveries.md)
+   + [開始使用訊息](delivery/using/communication-channels.md)
+   + 提供最佳實務 {#delivery-bestpractices}
+      + [瞭解良好實務](delivery/using/delivery-best-practices.md)
+      + [最佳化傳送](delivery/using/optimize-delivery.md)
+      + [使用範本](delivery/using/use-templates.md)
+      + [建立個人化內容](delivery/using/design-and-personalize.md)
+      + [定義正確的受眾](delivery/using/define-the-right-audience.md)
+      + [傳送前先檢查](delivery/using/check-before-sending.md)
+      + [追蹤和監控](delivery/using/track-and-monitor.md)
    + 建立傳送時的主要步驟 {#key-steps-when-creating-a-delivery}
-      + [關於傳送建立 ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [開始傳送](delivery/using/steps-about-delivery-creation-steps.md)
       + [建立和識別傳送](delivery/using/steps-create-and-identify-the-delivery.md)
       + [定義目標人口](delivery/using/steps-defining-the-target-population.md)
       + [驗證傳送](delivery/using/steps-validating-the-delivery.md)
@@ -139,8 +143,8 @@ ht-degree: 11%
       + [建立種子地址](delivery/using/creating-seed-addresses.md)
       + [添加種子地址](delivery/using/adding-seed-addresses.md)
       + [使用外部收件者表](delivery/using/using-an-external-recipient-table.md)
-      + [使用案例： 選擇條件中的種子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
-      + [使用案例： 配置欄位替代](delivery/using/use-case--configuring-the-field-substitution.md)
+      + [使用案例：選擇條件中的種子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+      + [使用案例：配置欄位替代](delivery/using/use-case--configuring-the-field-substitution.md)
    + 訂閱與轉介 {#subscriptions-and-referrals}
       + [關於服務與訂閱](delivery/using/about-services-and-subscriptions.md)
       + [管理訂閱](delivery/using/managing-subscriptions.md)
@@ -171,7 +175,7 @@ ht-degree: 11%
    + 內容管理模組 {#content-management}
       + [關於內容管理](delivery/using/about-content-management.md)
       + [內容管理員資源與原則](delivery/using/content-manager-resources-and-principles.md)
-      + [使用案例： 建立內容管理](delivery/using/use-case--creating-content-management.md)
+      + [使用案例：建立內容管理](delivery/using/use-case--creating-content-management.md)
       + [資料結構](delivery/using/data-schemas.md)
       + [輸入表單](delivery/using/input-forms.md)
       + [格式](delivery/using/formatting.md)
@@ -255,13 +259,13 @@ ht-degree: 11%
       + [建立指標](reporting/using/creating-indicators.md)
       + [使用立方體來探索資料](reporting/using/using-cubes-to-explore-data.md)
       + [概念和方法](reporting/using/concepts-and-methodology.md)
-      + [使用案例： 顯示線上調查答案的報告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+      + [使用案例：顯示線上調查答案的報告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 設計網頁內容 {#designing-content}
    + 網頁應用程式 {#web-applications}
       + [關於Web應用程式](web/using/about-web-applications.md)
       + [建立新的Web應用程式](web/using/creating-a-new-web-application.md)
       + [設計Web應用程式](web/using/designing-a-web-application.md)
-      + [使用案例： 建立覆蓋](web/using/use-cases--creating-overviews.md)
+      + [使用案例：建立覆蓋](web/using/use-cases--creating-overviews.md)
       + [轉換Web應用程式](web/using/translating-a-web-application.md)
       + [追蹤Web應用程式](web/using/tracking-a-web-application.md)
       + [選擇退出的網路應用程式追蹤](web/using/web-application-tracking-opt-out.md)
@@ -272,7 +276,7 @@ ht-degree: 11%
       + [編輯內容](web/using/editing-content.md)
       + [內容編輯最佳實務](web/using/content-editing-best-practices.md)
       + [建立著陸頁面](web/using/creating-a-landing-page.md)
-      + [使用案例： 建立電子郵件傳送](web/using/use-case--creating-an-email-delivery.md)
+      + [使用案例：建立電子郵件傳送](web/using/use-case--creating-an-email-delivery.md)
    + Web表格 {#web-forms}
       + [關於Web表單](web/using/about-web-forms.md)
       + [使用Web表單範本](web/using/using-a-web-form-template.md)
@@ -285,7 +289,7 @@ ht-degree: 11%
       + [發佈Web表格](web/using/publishing-a-web-form.md)
       + [定義Web表單屬性](web/using/defining-web-forms-properties.md)
       + [轉譯Web表格](web/using/translating-a-web-form.md)
-      + [使用案例： 網路表單](web/using/use-cases--web-forms.md)
+      + [使用案例：網路表單](web/using/use-cases--web-forms.md)
    + 線上調查 {#online-surveys}
       + [關於調查](web/using/about-surveys.md)
       + [調查快速入門](web/using/getting-started-with-surveys.md)
@@ -293,7 +297,7 @@ ht-degree: 11%
       + [管理答案](web/using/managing-answers.md)
       + [發佈、追蹤及使用收集的資料](web/using/publish--track-and-use-collected-data.md)
       + [設定調查](web/using/configuring-surveys.md)
-      + [使用案例： 建立參考朋友表單](web/using/use-case--creating-a-refer-a-friend-form.md)
+      + [使用案例：建立參考朋友表單](web/using/use-case--creating-a-refer-a-friend-form.md)
 + Integrating with Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
    + 觀眾分享 {#audience-sharing}
@@ -723,7 +727,7 @@ ht-degree: 11%
    + 設定網頁追蹤 {#setting-up-web-tracking}
       + [關於網頁追蹤](configuration/using/about-web-tracking.md)
       + [網路追蹤模式](configuration/using/web-tracking-mode.md)
-      + [網頁追蹤標籤： 定義](configuration/using/web-tracking-tag--definition.md)
+      + [網頁追蹤標籤：定義](configuration/using/web-tracking-tag--definition.md)
       + [設定階段](configuration/using/setup-stages.md)
       + [其他參數](configuration/using/additional-parameters.md)
       + [建立網頁追蹤標籤](configuration/using/creating-web-tracking-tags.md)
