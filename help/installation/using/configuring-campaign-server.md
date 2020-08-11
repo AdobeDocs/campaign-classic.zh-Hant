@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3593'
 ht-degree: 3%
 
 ---
@@ -38,12 +38,12 @@ ht-degree: 3%
 * [控制面板文件](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 * [代管模型](../../installation/using/hosting-models.md)
 * [Campaign Classic內部部署與代管功能矩陣](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
-* [混合型和代管型配置步驟](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
+* [混合型和托管型配置步驟](../../installation/using/about-hybrid-and-hosted-models.md) )
 
 Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf資料夾中。 配置分佈在兩個檔案上：
 
-* **serverConf.xml**: 所有實例的常規配置。 此檔案結合了Adobe Campaign伺服器的技術參數： 這些會由所有例項共用。 以下詳細說明了其中一些參數。 本節列出的不同節點和 [參數](../../installation/using/the-server-configuration-file.md)。
-* **config-`<instance>`.xml** (其中 **instance** 是實例的名稱): 實例的特定配置。 如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
+* **serverConf.xml**:所有實例的常規配置。 此檔案結合了Adobe Campaign伺服器的技術參數：這些會由所有例項共用。 以下詳細說明了其中一些參數。 本節列出的不同節點和 [參數](../../installation/using/the-server-configuration-file.md)。
+* **config-`<instance>`.xml** (其中 **instance** 是實例的名稱):實例的特定配置。 如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
 
 ## 定義安全區 {#defining-security-zones}
 
@@ -109,12 +109,12 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 
 定義區域的所有權利如下：
 
-* **allowDebug**: 可讓webApp在「debug」模式中執行
-* **allowEmptyPassword**: 授權不使用密碼的實例的連接
-* **allowHTTP**: 不需使用HTTPS通訊協定即可建立工作階段
-* **allowUserPassword**: 作業Token可以有下列格式「`<login>/<password>`」
-* **sessionTokenOnly**: 連線URL中不需要安全性Token
-* **showErrors**: 會轉送並顯示伺服器端的錯誤
+* **allowDebug**:可讓webApp在「debug」模式中執行
+* **allowEmptyPassword**:授權不使用密碼的實例的連接
+* **allowHTTP**:不需使用HTTPS通訊協定即可建立工作階段
+* **allowUserPassword**:作業Token可以有下列格式「`<login>/<password>`」
+* **sessionTokenOnly**:連線URL中不需要安全性Token
+* **showErrors**:會轉送並顯示伺服器端的錯誤
 
 >[!IMPORTANT]
 >
@@ -170,15 +170,15 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 可能會發生各種情況：
 
-* 安全區中直接引用子網路，且未配置代理： 子網路的使用者可以直接連線至Adobe Campaign伺服器。
+* 安全區中直接引用子網路，且未配置代理：子網路的使用者可以直接連線至Adobe Campaign伺服器。
 
    ![](assets/8101_proxy1.png)
 
-* 為安全區域中的子網路指定代理： 來自此子網路的使用者可透過此代理存取Adobe Campaign伺服器。
+* 為安全區域中的子網路指定代理：來自此子網路的使用者可透過此代理存取Adobe Campaign伺服器。
 
    ![](assets/8101_proxy2.png)
 
-* 代理包含在安全區子網路中： 透過此Proxy存取的使用者（不論其來源為何）都可存取Adobe Campaign伺服器。
+* 代理包含在安全區子網路中：透過此Proxy存取的使用者（不論其來源為何）都可存取Adobe Campaign伺服器。
 
    ![](assets/8101_proxy3.png)
 
@@ -209,7 +209,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 定義區域後，必須將每個運算子連結到其中一個運算子，才能登錄到實例，並且該運算子的IP地址必須包含在區域中引用的地址或地址範圍中。
 
-區域的技術組態會在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
+區域的技術配置是在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
 
 在此之前，您必須首先配置現成枚舉，以將標籤連結到 **[!UICONTROL Security zone]** serverConf.xml檔案中定義的區 **域的內部名稱** 。
 
@@ -314,9 +314,9 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 1. 在serverConf.xml檔案 **`<ipaffinity>`** 的區段 **中輸入相關性** 。
 
-   一個相似性可以有數個不同的名稱： 分離，使用 **;** 字元。
+   一個相似性可以有數個不同的名稱：分離，使用 **;** 字元。
 
-   例如：
+   範例:
 
    ```
     IPAffinity name="mid.Server;WWserver;local.Server">
@@ -351,16 +351,16 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 它們可讓您管理URL權限的方式視您的代管模型而定：
 
-* **混合** 或 **內部部署**: 將允許的URL新增至 **serverConf.xml檔案**。 詳細資訊請參閱以下章節。
-* **代管**: 新增URL以允許透過「控 **制面板」**。 如需詳細資訊，請參閱[專屬文件](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
+* **混合** 或 **內部部署**:將允許的URL新增至 **serverConf.xml檔案**。 詳細資訊請參閱以下章節。
+* **代管**:新增URL以允許透過「控 **制面板」**。 如需詳細資訊，請參閱[專屬文件](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
 
 使用 **Hybrid****和** On-premise **代管模型時，管理員需要在** Server.xml檔案中參考新的urlPermission **** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 存在三種連接保護模式：
 
-* **阻止**: 不屬於允許清單的所有URL都被阻止，並出現錯誤消息。 這是postupgrade之後的預設模式。
-* **權限**: 允許所有不屬於允許清單的URL。
-* **警告**: 不屬於允許清單的所有URL皆允許，但JS解譯器會發出警告，讓管理員可以收集這些URL。 此模式添加JST-310027警告消息。
+* **阻止**:不屬於允許清單的所有URL都被阻止，並出現錯誤消息。 這是postupgrade之後的預設模式。
+* **權限**:允許所有不屬於允許清單的URL。
+* **警告**:不屬於允許清單的所有URL皆允許，但JS解譯器會發出警告，讓管理員可以收集這些URL。 此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,7 +372,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 >[!IMPORTANT]
 >
->根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應連絡其管理員以將其新增至允許清單。
+>根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應連絡其管理員，將其新增至允許清單。
 >
 >來自移轉的現有客戶可使用警 **告模式** 一段時間。 同時，他們需要在授權URL之前分析出站流量。 定義授權URL的清單後，他們應連絡其管理員，將URL新增至允許清單並啟 **用封鎖模式**。
 
@@ -380,7 +380,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 預設情況下，所有動態頁都自動與啟動Web模 **塊的電腦的本地** Tomcat伺服器相關。 此配置在 **`<url>`** ServerConf.xml檔案的查 **詢中繼配置部分中輸** 入。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
-在遠程伺服器上中繼動態頁 **面** ; 如果未在電腦上激活Web模組。 為此，必須將 **localhost** 替換為JSP和JSSP、Web應用程式、報告和字串的遠程電腦的名稱。
+在遠程伺服器上中繼動態頁 **面** ;如果未在電腦上激活Web模組。 為此，必須將 **localhost** 替換為JSP和JSSP、Web應用程式、報告和字串的遠程電腦的名稱。
 
 有關各種可用參數的詳細資訊，請參 **閱serverConf.xml配置檔案** 。
 
@@ -392,17 +392,17 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 Adobe Campaign使用下列JSP頁面：
 
-* /nl/jsp/**soapruter.jsp**: 用戶端主控台與網站服務連線(SOAP API)、
-* /nl/jsp/**m.jsp**: 鏡像頁面，
-* /nl/jsp/**logon.jsp**: 基於Web訪問報告和客戶端控制台的部署，
-* /nl/jsp/**s.jsp** : 使用病毒式行銷（贊助和社交網路）。
+* /nl/jsp/**soapruter.jsp**:用戶端主控台與網站服務連線(SOAP API)、
+* /nl/jsp/**m.jsp**:鏡像頁面，
+* /nl/jsp/**logon.jsp**:基於Web訪問報告和客戶端控制台的部署，
+* /nl/jsp/**s.jsp** :使用病毒式行銷（贊助和社交網路）。
 
 「行動應用程式頻道」使用的JSSP如下：
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp
 
-**例如：**
+**範例:**
 
 可以防止客戶機從外部連接。 為此，只需限制 **soaprouter.jsp的執行** ，並僅授權執行鏡像頁、病毒式連結、Web表單和公共資源。
 
@@ -457,7 +457,7 @@ sh
 
 在服務 **器配置檔案** 的exec節點中，需要引用blocklistFile屬性中先前建立的 **檔案** 。
 
-**僅適用於Linux**: 在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。 此用戶在配置檔案的 **exec** 節點中設定。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+**僅適用於Linux**:在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。 此用戶在配置檔案的 **exec** 節點中設定。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 >[!NOTE]
 >
@@ -485,8 +485,9 @@ sh
 1. 在節 **`<relay>`** 點中，轉至中繼的HTTP標頭清單。
 1. 新增具 **`<responseheader>`** 有下列屬性的元素：
 
-   * **名稱**: 標題名稱
-   * **值**: 值名稱。
+   * **名稱**:標題名稱
+   * **值**:值名稱。
+
    例如：
 
    ```
@@ -495,7 +496,7 @@ sh
 
 ## 冗餘追蹤 {#redundant-tracking}
 
-當使用多部伺服器進行重新導向時，它們必須能夠透過SOAP呼叫彼此通訊，才能共用要重新導向之URL的資訊。 在發送啟動時，可能並非所有重定向伺服器都可用； 因此，他們可能沒有相同程度的資訊。
+當使用多部伺服器進行重新導向時，它們必須能夠透過SOAP呼叫彼此通訊，才能共用要重新導向之URL的資訊。 在發送啟動時，可能並非所有重定向伺服器都可用；因此，他們可能沒有相同程度的資訊。
 
 >[!NOTE]
 >
@@ -503,14 +504,14 @@ sh
 
 冗餘伺服器的URL必須通過serverConf.xml檔案在重定向配置 **中指定** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
-**例如：**
+**範例:**
 
 ```
 <spareserver enabledIf="$(hostname)!='front_srv1'" id="1" url="http://front_srv1:8080" />
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為true時啟用連接； 這可讓您在所有重新導向伺服器上取得相同的組態。
+enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為true時啟用連接；這可讓您在所有重新導向伺服器上取得相同的組態。
 
 要獲取電腦的主機名，請運行以下命令： **hostname -s**。
 
@@ -610,7 +611,7 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 ## 代理連接配置 {#proxy-connection-configuration}
 
-如果您需要透過Proxy將Campaign伺服器連線至外部（例如使用檔案傳輸工作流程活動），則需要透過命令來設定serverConf的proxyConfig區段。 可能有下列代理連接： HTTP、HTTPS、FTP、SFTP。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+如果您需要透過Proxy將Campaign伺服器連線至外部（例如使用檔案傳輸工作流程活動），則需要透過命令來設定serverConf的proxyConfig區段。 可能有下列代理連接：HTTP、HTTPS、FTP、SFTP。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 >[!NOTE]
 >
