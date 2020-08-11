@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1122'
+ht-degree: 0%
 
 ---
 
 
 # 升級{#upgrading}
 
-在開始升級程式之前，請確定並確認要升級至哪個Adobe Campaign版本，並參閱版 [本說明](https://docs.campaign.adobe.com/doc/AC/en/RN.html)。
+在開始升級程式之前，請確定並確認要升級至哪個Adobe Campaign版本，並參閱版 [本說明](../../rn/using/latest-release.md) 。
 
 >[!CAUTION]
 >
@@ -31,7 +34,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 >[!NOTE]
 >
->另請參閱安裝 [指南](../../installation/using/general-architecture.md) ，以及 [組建升級](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) 。
+>另請參閱安裝 [指南](../../installation/using/general-architecture.md) ，以及 [組建升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) 。
 
 ## 在Windows中 {#in-windows}
 
@@ -54,7 +57,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
       **iisreset /stop**
 
-   * Adobe Campaign服務：網 **站停止nlserver6**
+   * Adobe Campaign服務： **net stop nlserver6**
    >[!CAUTION]
    >
    >您還需要確保重定向伺服器(webmdl)已停止，以便IIS使用的 **nlsrvmod.dll** 檔案可以替換為新版本。
@@ -78,8 +81,8 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
    若要下載此檔案，請透過下載中心連結前往Adobe Campaign支 [援頁面](https://support.neolane.net/)( **https://support.neolane.net/** )。
 
 1. 選擇安裝模式：選擇 **[!UICONTROL Update or repair]**
-1. 按一下 **[!UICONTROL Next]** .
-1. 按一下 **[!UICONTROL Finish]** .
+1. 按一下 **[!UICONTROL Next]**。
+1. 按一下 **[!UICONTROL Finish]**。
 
    然後，安裝程式會複製新檔案。
 
@@ -101,7 +104,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 >
 >此操作只應在(nlserver web **)應用程式伺服器上執行一次，並且**&#x200B;僅在該伺服器上執行。
 
-然後檢查同步是否生成了錯誤或警告。 有關詳細資訊，請參閱解決 [升級衝突](#resolving-upgrade-conflicts)。
+然後檢查同步是否生成錯誤或警告。 有關詳細資訊，請參閱解決 [升級衝突](#resolving-upgrade-conflicts)。
 
 ### 重新啟動服務 {#restart-services}
 
@@ -145,7 +148,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
    其中XXX是檔案的版本。
 
-   rpm檔案對包具有依賴性，您可以在CentOS/Red hat分發上找到這些包。 如果您不想使用其中一些依賴項，則可能必須使用rpm的「nodeps」選項：
+   rpm檔案對包具有依賴性，您可以在CentOS/Red Hat分發上找到這些包。 如果您不想使用其中一些依賴項，則可能必須使用rpm的「nodeps」選項：
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -178,6 +181,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 >* 您的指令碼可能會被 **稱為httpd** ，而非 **apache**。
 >* 您必須執行此命令，直到您獲得以下回覆：
    >Apache必須執行此操作，才能應用新庫。
+
 >
 
 
@@ -209,7 +213,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
    如果警告涉及資源衝突，則需要使用者注意才能解決。
 
-* postupgrade_ **.log`<server version number>_<time of postupgrade>`** 日誌檔案包含同步結果。 預設情況下，它位於以下目錄： **`<installation directory>/var/<instance/postupgrade`**。 錯誤和警告由錯誤和警告屬性指示。
+* postupgrade_ **.log`<server version number>_<time of postupgrade>`** 日誌檔案包含同步結果。 預設情況下，它位於以下目錄： **`<installation directory>/var/<instance/postupgrade`**. 錯誤和警告由錯誤和警告屬性指示。
 
 ### 解決衝突 {#resolving-conflicts}
 
@@ -230,7 +234,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 如果您選擇手動解決衝突，請按如下步驟進行：
 
-1. 在窗口的下半部分中，搜索衝 **_突字串_** ，以查找具有衝突的實體。 隨新版本安裝的實體包含 **new** 引數，與舊版相符的實體包含 **cus** 引數。
+1. 在窗口的下半部分中，搜索衝 **_突字串_** ，以查找衝突實體。 隨新版本安裝的實體包含 **new** 引數，與舊版相符的實體包含 **cus** 引數。
 
    ![](assets/s_ncs_production_conflict002.png)
 
@@ -241,7 +245,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 1. 前往您已解決的衝突。 按一下圖 **[!UICONTROL Actions]** 示並選取 **[!UICONTROL Declare as resolved]** 。
 1. 儲存變更：衝突現已解決。
 
-### 最佳實務 {#best-practices}
+### 最佳實務{#best-practices}
 
 更新失敗可能與資料庫配置相連結。 確保技術管理員和資料庫管理員執行的配置相容。
 
