@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -24,11 +27,11 @@ source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
 
 如果您從Adobe Campaign v6升級至v7，我們建議您遵循下列准則。
 
-* 在Windows上，若要進行用戶端和伺服器升級，請先解除安裝Adobe Campaign v6，然後再安裝v7。 不要忘記事先備份日誌和配置檔案。
+* 在Windows上，若要進行用戶端和伺服器升級，請先解除安裝Adobe Campaign v6，然後再安裝v7。 不要忘記事先備份您的日誌和配置檔案。
 * 在Linux上，若要進行伺服器升級，請先移除Adobe Campaign v6套件，再安裝v7。
 
 有關遷移過程和最佳實踐的詳細資訊，請參閱：
 
-* [執行構建版本升級](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)
+* [執行版本編號升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
 * [移轉概觀](../../migration/using/about-migration.md)
 
