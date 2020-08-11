@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+workflow-type: tm+mt
+source-wordcount: '1134'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 >
 >如果現有資料庫伺服器有足夠的資源，也可以使用它。
 
-## 功能 {#features}
+## Features {#features}
 
 ### 優勢 {#advantages}
 
@@ -75,19 +78,19 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
    * 第一個是公開曝光，以追蹤並指向其公開IP上的電腦；
    * 第二個別名暴露給內部用戶，用於控制台訪問和指向同一台電腦。
 
-* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL（1521 for Oracle,5432 for PostgreSQL等）埠。 有關詳細資訊，請參閱 [網路配置](../../installation/using/network-configuration.md)。
+* 防火牆配置為開啟SMTP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL（1521 for Oracle,5432 for PostgreSQL等） 埠。 有關詳細資訊，請參閱 [網路配置](../../installation/using/network-configuration.md)。
 
 在以下示例中，實例的參數為：
 
-* 實例的名稱：示 **范**
+* 實例的名稱： **展示**
 * DNS掩碼： **console.campaign.net*** （僅用於客戶端控制台連接和報告）
-* 資料庫：促銷 **活動：demo@dbsrv**
+* 資料庫： **促銷活動：demo@dbsrv**
 
 ### 安裝和配置（單台電腦） {#installing-and-configuring--single-machine-}
 
 應用以下步驟：
 
-1. 請依照Adobe Campaign伺服器的安裝程式：Linux上 **的nlserver** 套件，或 **Windows上的setup.exe** 。
+1. 請依照Adobe Campaign伺服器的安裝程式： **Linux上的** nlserver套件，或 **Windows上的setup.exe** 。
 
    如需詳細資訊，請參 [閱Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux)中的促銷活動安裝先決條件和Windows [(Windows)中](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) 的促銷活動安裝先決條件。
 
@@ -108,8 +111,8 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
    如需詳細資訊，請參閱下列章節：
 
-   * 針對Linux:服 [務器的首次啟動](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
-   * 針對Windows:服 [務器的首次啟動](../../installation/using/installing-the-server.md#first-start-up-of-the-server)。
+   * 針對Linux: [首次啟動伺服器](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
+   * 針對Windows: [伺服器的首次啟動](../../installation/using/installing-the-server.md#first-start-up-of-the-server)。
 
 1. 使用 **命令** :
 
@@ -173,13 +176,13 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
    如需詳細資訊，請參閱下列章節：
 
-   * 針對Linux:適用於 [Linux的客戶端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
-   * 針對Windows:適用於 [Windows的客戶端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
+   * 針對Linux: [Linux的客戶端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
+   * 針對Windows: [適用於Windows的客戶端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
 
 1. 請遵循下列章節所述的Web伺服器整合程式(IIS、Apache):
 
-   * 針對Linux:與Linux [的Web伺服器整合](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * 針對Windows:與Windows [版Web伺服器整合](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * 針對Linux: [與Linux網頁伺服器整合](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * 針對Windows: [與Windows版Web伺服器整合](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. 啟動網站並使用URL測試重新導向：https://tracking.campaign.net/r/test。
 
@@ -191,14 +194,14 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
    如需詳細資訊，請參閱下列章節：
 
-   * 針對Linux:啟 [動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * 針對Windows:啟 [動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * 針對Linux: [啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * 針對Windows: [啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. 啟動Adobe Campaign伺服器(**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux)，再執行命令 **nlserver pdump** ，以檢查是否存在所有已啟用的模組。
 
    >[!NOTE]
    >
-   >從20.1開始，建議改用下列命令（適用於Linux）:系 **統mctl啟動nlserver**
+   >從20.1開始，建議改用下列命令（適用於Linux）: **systemctl啟動伺服器**
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -223,8 +226,8 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
    如需詳細資訊，請參閱下列章節：
 
-   * 針對Linux:適用於 [Linux的客戶端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
-   * 針對Windows:適用於 [Windows的客戶端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
+   * 針對Linux: [Linux的客戶端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
+   * 針對Windows: [適用於Windows的客戶端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
 
 1. 啟動Adobe Campaign用戶端主控台（從上一個下載頁面或直接在伺服器上啟動以進行Windows安裝），將伺服器連線URL設為https://console.campaign.net，並使用內部登 **入** 。
 
@@ -240,7 +243,7 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
    建立資料庫後，請註銷。
 
-1. 使用管理員登入( **admin** login without a password)重新登入用戶端主控台，並啟動部署精靈( **[!UICONTROL Tools > Advanced]** 功能表)以完成執行個體的設定。
+1. 使用管理員登入(不使用密碼 **** )重新登入用戶端主控台，並啟動部署精靈( **[!UICONTROL Tools > Advanced]** 功能表)以完成執行個體設定。
 
    有關詳細資訊，請參閱 [部署實例](../../installation/using/deploying-an-instance.md)。
 
