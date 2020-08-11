@@ -13,23 +13,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
+source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 1%
+source-wordcount: '1976'
+ht-degree: 3%
 
 ---
 
 
 # 最新版本{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板6月發行** ，包含作用中描述檔監控、子網域傳送能力稽核和GPG金鑰管理。 [進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板6月發行** ，包含作用中描述檔監控、子網域傳送能力稽核和GPG金鑰管理。 [進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 - Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) 版本20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _2020年7月22日_
 
-* 修正在停用簽名功能或使用具有最近Mid的舊行銷例項時，追蹤無法運作的問題。 (NEO-26411)
+* 修正在停用簽名功能時無法運作追蹤的問題。 (NEO-26411)
 * 修正造成個人化網域中未簽署的連結在允許時遭到封鎖的問題。 (NEO-25210)
 * 修正使用某些舊版Outlook時，無法開啟／按一下追蹤URL的問題。 (NEO-25688)
 * 修正導致在電子郵件傳送中錯誤定義鏡像頁面URL的問題。 (NEO-26084)
@@ -51,7 +51,7 @@ _2020年7月22日_
 
 _2020年6月8日_
 
-**新增功能?**
+**新增功能？**
 
 <table> 
  <thead> 
@@ -95,8 +95,8 @@ _2020年6月8日_
    <p>巴西的Lei Geral de Proteção de Dados(LGPD)將於8月16日對巴西所有收集或處理個人資料的公司生效。</p>
    <p>這些規定適用於持有這些國家／地區之資料主體資料的Adobe Campaign客戶。 除了Campaign中已提供的隱私權功能（包括許可管理、資料保留設定和使用者角色）外，我們還將利用此機會加入其他功能，以協助您做好PDPA和LGPD的準備：</p>
    <ul> 
-     <li><p>存取權與刪除權： 我們運用了GDPR和CCPA新增的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">詳細內容</a></p></li> 
-     <li> <p>使用促銷活動介面或API建立隱私權要求時，您現在會選取規 <strong>則類型</strong> : PDPA、LGPD、GDPR、CCPA。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">詳細內容</a>。</p></li>
+     <li><p>存取權限與刪除權限：我們已運用 GDPR 和 CCPA 新增的功能。<a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">詳細內容</a></p></li> 
+     <li> <p>使用促銷活動介面或API建立隱私權要求時，您現在會選取規 <strong>則類型</strong> :PDPA、LGPD、GDPR、CCPA。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">瞭解詳情</a>。</p></li>
     </ul>
    </td> 
   </tr> 
@@ -118,19 +118,19 @@ _2020年6月8日_
 **相容性增強功能**
 
 促銷活動現在支援下列系統：
-* 作業系統： 德比亞10
-* RDBMS: Oracle 18c和Oracle 19c
-* FDA: Azure突觸分析
+* 作業系統：德比亞10
+* RDBMS:Oracle 18c和Oracle 19c
+* FDA:Azure突觸分析
 
 進一步瞭解促銷活 [動相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
 
 **改進**
 
-* 交易式訊息已改善，提供更佳的使用者體驗。 您現在可以取消發佈事務性消息模板，該模板會從執行實例中刪除該模板。 [進一步瞭解](../../message-center/using/template-unpublication.md)。
+* 交易式訊息已改善，提供更佳的使用者體驗。 您現在可以取消發佈事務性消息模板，該模板會從執行實例中刪除該模板。 [進一步瞭解](../../message-center/using/template-unpublication.md).
 
 * 有新的選項可用來設定傳送包含影像或附件的電子郵件時的限制。 這些防護措施可以避免效能問題，這對於事務性消息傳遞特別有用。 [詳細內容](../../installation/using/configuring-campaign-options.md#delivery)
 
-* 新的「 **在資料庫中準備交付部件** 」選項允許直接在資料庫中執行交付準備，這可顯著加快分析。 此選項僅適用於特定配置。 [進一步瞭解](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis)。 (NEO-23886)
+* 新的「 **在資料庫中準備交付部件** 」選項允許直接在資料庫中執行交付準備，這可顯著加快分析。 此選項僅適用於特定配置。 [進一步瞭解](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * Microsoft Dynamics的 [CRM Connector活動](../../workflow/using/crm-connector.md) ，其效能已改善。 (NEO-13303、NEO-12710)
 
@@ -140,17 +140,17 @@ _2020年6月8日_
    >
    >執行升級後，此項改進需要額外的步驟。 請參閱下 **面的「技術** 演變」一節。
 
-* 清除工作流程已增強。 所有已刪除工作流程的孤立工作表現在也會由清除工作流程自動刪除。 [進一步瞭解](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances)。
+* 清除工作流程已增強。 所有已刪除工作流程的孤立工作表現在也會由清除工作流程自動刪除。 [進一步瞭解](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * 使用iOS HTTP2連接器的iOS行動應用程式憑證現在會在傳送推播通知之前進行驗證，因此可避免傳送因過期憑證而失敗。
 
-* HTTP代理連線的管理已改善。 [進一步瞭解](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+* HTTP代理連線的管理已改善。 [進一步瞭解](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **其他變更**
 
 * 舊版SMS連接器現已過時。 請參閱「已過時 [的功能」頁](../../rn/using/deprecated-features.md)。
 
-* 您無法再使用自己的Litmus帳戶來布建和使用Adobe Campaign中的收件匣轉換。 [進一步瞭解](../../delivery/using/inbox-rendering.md)。
+* 您無法再使用自己的Litmus帳戶來布建和使用Adobe Campaign中的收件匣轉換。 [進一步瞭解](../../delivery/using/inbox-rendering.md).
 
 * 為了更好地區分視圖和資料夾，視圖名稱的顏色已從深藍色更改為深藍色。 [詳細內容](../../platform/using/access-management.md#about-views)
 
@@ -162,7 +162,7 @@ _2020年6月8日_
 
 * 在記錄檔中新增錯誤訊息，以在下載的檔案大於磁碟空間時警告使用者。
 
-* Snowflake連接器現在提供下列功能： MonthsAgo, DaysAgoInt, ToDateTime, YearsAgo。
+* Snowflake連接器現在提供下列功能：MonthsAgo, DaysAgoInt, ToDateTime, YearsAgo。
 
 **技術變革**
 
