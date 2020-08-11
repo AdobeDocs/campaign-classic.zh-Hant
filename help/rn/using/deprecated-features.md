@@ -11,10 +11,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e46325ab8f68a0b71198aee9cf04f2b1eb97fdd3
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -61,14 +61,14 @@ Adobe會持續評估產品功能，以找出應以更現代的替代方式來取
    </ul>
   <p>如果您使用其中一個連接器，則需要相應地調整實施。 <a href="../../delivery/using/sms-channel.md">進一步瞭解</a></p> 
   <p>瞭解如何在此技術中移轉舊 <a href="https://helpx.adobe.com/campaign/kb/sms-connector.html">版連接器</a>。</p>
-  <p><em>目標刪除日期： 2021年</em></p>
+  <p><em>目標刪除日期：2021年</em></p>
   </td> 
  </tr>
   <tr>  
    <td>傳真頻道<br></td>
    <td><p>從20.2版開始，傳真頻道已過時。</p> 
-   <p>如果您使用此渠道，則需要據以調整實作。 <a href="../../delivery/using/communication-channels.md">進一步瞭解</a> 「促銷活動」渠道。</p>
-   <p><em>目標刪除日期： 2021年</em></p></td>
+   <p>如果您使用此渠道，則需要據以調整實作。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">進一步瞭解</a> 「促銷活動」渠道。</p>
+   <p><em>目標刪除日期：2021年</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -101,7 +101,7 @@ Adobe會持續評估產品功能，以找出應以更現代的替代方式來取
   </tr> 
   <tr> 
    <td>Web應用程式- Microsites</td>
-   <td>從Campaign 18.10版開始，Microsoftsites已不再提供。 您可以限制對Adobe Campaign設定檔案上專用網域的存取，並使用DNS別名在Campaign中使用個人化URL，借以提高安全性。 <a href="https://helpx.adobe.com/campaign/kb/domain-name-delegation.html">進一步瞭解</a></td>
+   <td>從Campaign 18.10版開始，Microsoftsites已不再提供。 您可以限制對Adobe Campaign設定檔案上專用網域的存取，並使用DNS別名在Campaign中使用個人化URL，借以提高安全性。 <a href="https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html">進一步瞭解</a></td>
   </tr> 
   <tr> 
    <td>推播通知- iOS二進位連接器</td>
@@ -131,15 +131,15 @@ Campaign Classic不再支援下列系統。 請參閱相容性 [表](https://hel
 
 從20.2版開始，Campaign Classic已不再支援下列系統。 相容性將於20.3版本中終止- 2020年9月。
 
-* 客戶端控制台： Windows 7
+* 客戶端控制台：Windows 7
 * 舊版SMS連接器（請參閱下方的「已過時功能」一節）
 
 ### Adobe Campaign 19.2版本  {#compat-19-2-release}
 
 從19.2版開始，Campaign Classic不再支援下列作業系統。 相容性將於2020年結束。
 
-* Web伺服器： Apache 2.2.
-* 作業系統： CentOS 6.
+* Web伺服器：Apache 2.2.
+* 作業系統：CentOS 6.
 
 請參閱「兼 [容性表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) 」以升級至較新版本或移至新系統。
 
@@ -147,7 +147,7 @@ Campaign Classic不再支援下列系統。 請參閱相容性 [表](https://hel
 
 >[!CAUTION]
 >
->Adobe Campaign Classic與「相容性」矩陣中所列的所有系統和工具 [相容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 當這些協力廠商系統和工具的特定版本與其各自的建立者達成生命週期結束(EOL)時，Adobe Campaign不再與這些版本相容： 它們被宣佈為不再提倡，然後在後續的產品版本中從我們的相容性矩陣中移除。 請確保您使用相容性矩陣中列出的任何系統的支援版本，以避免出現任何問題。
+>Adobe Campaign Classic與「相容性」矩陣中所列的所有系統和工具 [相容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 當這些協力廠商系統和工具的特定版本與其各自的建立者達成生命週期結束(EOL)時，Adobe Campaign不再與這些版本相容：它們被宣佈為不再提倡，然後在後續的產品版本中從我們的相容性矩陣中移除。 請確保您使用相容性矩陣中列出的任何系統的支援版本，以避免出現任何問題。
 
 ### 客戶機控制台 {#client-console-eol}
 
@@ -186,7 +186,7 @@ Adobe Campaign Classic Client Console無法再在下列系統上執行，因為�
 
 Adobe不支援下列資料庫引擎，因為其編輯器已不建議使用這些引擎。 在這些版本中執行的客戶需要升級至最新版本或改用其他版本。
 
-請參閱 [Campaign Classic相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) ，以存取相容版本的清單。
+請參閱 [Campaign Classic相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) ，以存取相容版本清單。
 
 **同盟資料存取(FDA)**
 
@@ -199,17 +199,17 @@ Adobe不支援下列資料庫引擎，因為其編輯器已不建議使用這些
 
 Campaign Classic與Federated Data Access(FDA)中的下列伺服器不相容。
 
-* DB2 UDB 9.5、9.7。 Federated Data Access(FDA)支援較新版本的DB2。 [進一步瞭解](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* DB2 UDB 9.5、9.7。Federated Data Access(FDA)支援較新版本的DB2。 [進一步瞭解](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Oracle 9i、10G R2。 Federated Data Access(FDA)支援更新版本的Oracle。 [進一步瞭解](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostgreSQL 8.3、8.4、9.0、9.1、9.2。 PostgreSQL的較新版本通過Federated Data Access(FDA)受支援。 [進一步瞭解](https://www.postgresql.org/support/versioning)
+* PostgreSQL 8.3、8.4、9.0、9.1、9.2。PostgreSQL的較新版本通過Federated Data Access(FDA)受支援。 [進一步瞭解](https://www.postgresql.org/support/versioning)
 * MSSQL 2000、2005、2008 R2。 Federated Data Access(FDA)支援較新版本的SQL Server。 [進一步瞭解](https://support.microsoft.com/en-us/lifecycle/search/1044)
-* MySQL 5.1. MySQL的更新版本通過Federated Data Access(FDA)受支援。 [進一步瞭解](https://en.wikipedia.org/wiki/InfiniDB)
+* MySQL 5.1.MySQL的更新版本通過Federated Data Access(FDA)受支援。 [進一步瞭解](https://en.wikipedia.org/wiki/InfiniDB)
 * InfiniDB已經壽終正寢。 [進一步瞭解](https://www.mysql.com/support)
-* Teradata 13, 13.1. Teradata的更新版本可透過Federated Data Access(FDA)獲得支援。 [進一步瞭解](https://www.info.teradata.com/download.cfm?ItemID=1007255)
-* Netezza 6.02, 7.0 內泰扎已經壽終正寢。 [進一步瞭解](https://en.wikipedia.org/wiki/Netezza)
-* AsterData 5.0. AsterData終於壽終正寢。 [進一步瞭解](https://en.wikipedia.org/wiki/Aster_Data_Systems)
-* Sybase IQ 15.2、15.4、15.5和Sybase ASE 15.0。 Sybase的最新版本通過Federated Data Access(FDA)受到支援。 [進一步瞭解](https://sites.google.com/site/dbatipsandtricks/time-tracker)
-* 通過HiveSQL的Hadoop: Hadoop 2.7.3、HiveSQL 1.2.1。 Adobe Campaign Classic仍將透過HiveSQL透過Federated Data Access(FDA)支援列出的Hadoop版本，但是這些版本與： HortonWorks(HDP 2.4.X、2.5.x、2.6.x)和HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)
+* Teradata 13, 13.1.Teradata的更新版本可透過Federated Data Access(FDA)獲得支援。 [進一步瞭解](https://www.info.teradata.com/download.cfm?ItemID=1007255)
+* Netezza 6.02, 7.0內泰扎已經壽終正寢。 [進一步瞭解](https://en.wikipedia.org/wiki/Netezza)
+* AsterData 5.0.AsterData終於壽終正寢。 [進一步瞭解](https://en.wikipedia.org/wiki/Aster_Data_Systems)
+* Sybase IQ 15.2、15.4、15.5和Sybase ASE 15.0。Sybase的最新版本通過Federated Data Access(FDA)受到支援。 [進一步瞭解](https://sites.google.com/site/dbatipsandtricks/time-tracker)
+* 通過HiveSQL的Hadoop:Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic仍將透過HiveSQL透過Federated Data Access(FDA)支援列出的Hadoop版本，但是這些版本與：HortonWorks(HDP 2.4.X、2.5.x、2.6.x)和HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)
 
 **RDBMS伺服器**
 
