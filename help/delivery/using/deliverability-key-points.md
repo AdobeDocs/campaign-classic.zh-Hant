@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 0%
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 傳送至有效位址 {#valid-addresses}
 
-垃圾郵件發送者通常使用基於頻繁名稱和名字清單的地址生成器； 此外，他們很少處理郵件伺服器傳回的技術通知。 無效地址的高率通常被解釋為垃圾郵件的標誌。 雙重加入機制和有效處理技術反彈訊息，可避免此情況。
+垃圾郵件發送者通常使用基於頻繁名稱和名字清單的地址生成器；此外，他們很少處理郵件伺服器傳回的技術通知。 無效地址的高率通常被解釋為垃圾郵件的標誌。 雙重加入機制和有效處理技術反彈訊息，可避免此情況。
 
 ## 減少投訴和反彈率 {#reduce-complaint-rates}
 
@@ -66,8 +66,97 @@ ISP和其他組織(請參閱 [Project Honey Pot網站](https://www.projecthoneyp
 
 ## 調整訊息內容 {#message-content}
 
-在較小程度上，某些郵件的內容會導致某些篩選器將其檢測為垃圾郵件。 使用某些單字、在主旨行和訊息內使用驚嘆號，會視為垃圾訊息的告示符號。 此外，垃圾郵件發送者已知會用影像取代文字，以防止反垃圾郵件過濾器自動分析違規文字。 因此，含有高比例影像或影像作為附件的訊息（HTML格式）最終可能會遭到封鎖。
+在較小程度上，某些郵件的內容會導致某些篩選器將其檢測為垃圾郵件。 使用某些單字、在主旨行和訊息內使用驚嘆號，會視為垃圾郵件的告示符號。 此外，垃圾郵件發送者已知會用影像取代文字，以防止反垃圾郵件過濾器自動分析違規文字。 因此，含有高比例影像或影像作為附件的訊息（HTML格式）最終可能會遭到封鎖。
 
 ## 以您的聲譽為榮 {#reputation}
 
 寄送垃圾郵件的人會進行程式化傳送，以維持其久遠的聲譽。 他們有時需要調整行銷計畫，以符合ISP強加的最佳實務，因此，在聲譽達到高峰（上升）後，他們會設定定期的遞送。
+
+## 最佳實務{#best-practices}
+
+瞭解與Adobe Campaign的傳遞能力相關的最佳實務。 使用下列連結來導覽主題並尋找指引。
+
+<table>
+<tr>
+  <td>
+    <a href="starting-new-platform.md">
+      <img alt="開始" src="assets/do-not-localize/start.svg"/>
+    </a>
+    <div>
+      <a href="starting-new-platform.md">
+    <strong>開始</strong>
+    </a>
+    </div>
+    <p>
+    <em>啟動新平台</em>
+    <p>
+  </td>
+   <td>
+    <a href="control-message-content.md">
+      <img alt="設計" src="assets/do-not-localize/design.svg"/>
+    </a>
+    <div>
+      <a href="control-message-content.md">
+    <strong>設計</strong>
+    </a>
+    </div>
+    <p>
+    <em>控制訊息內容</em>
+    <p>
+  </td>
+  <td>
+    <a href="improve-reputation.md">
+      <img alt="設計" src="assets/do-not-localize/check.svg"/>
+    </a>
+    <div>
+      <a href="improve-reputation.md">
+    <strong>傳送</strong>
+    </a>
+    </div>
+    <p>
+    <em>提升您的聲譽</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="technical-recommendations.md">
+      <img alt="最佳化" src="assets/do-not-localize/optimize.svg"/>
+    </a>
+    <div>
+      <a href="technical-recommendations.md">
+    <strong>最佳化</strong>
+    </a>
+    </div>
+    <p>
+    <em>技術建議</em>
+    <p>
+  </td>
+   <td>
+    <a href="monitoring-deliverability.md">
+      <img alt="檢查" src="assets/do-not-localize/monitor.svg"/>
+    </a>
+    <div>
+      <a href="monitoring-deliverability.md">
+    <strong>顯示器</strong>
+    </a>
+    </div>
+    <p>
+    <em>監控工具</em>
+    <p>
+  </td>
+  <td>
+    <a href="deliverability-faq.md">
+      <img alt="最佳化" src="assets/do-not-localize/troubleshoot.svg"/>
+    </a>
+    <div>
+      <a href="deliverability-faq.md">
+    <strong>疑難排解</strong>
+    </a>
+    </div>
+    <p>
+    <em>解決問題</em>
+    <p>
+  </td>
+</tr>
+</table>
