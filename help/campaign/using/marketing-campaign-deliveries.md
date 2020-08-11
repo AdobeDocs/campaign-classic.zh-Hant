@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2928'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的配置適用於不同類型的交付： 直效郵件、電子郵件、行動通道。
+建議的配置適用於不同類型的交付：直效郵件、電子郵件、行動通道。
 
 >[!NOTE]
 >
->如需建立和設定傳送的詳細資訊，請參閱「傳送 [訊息](../../delivery/using/communication-channels.md) 」一節。
+>如需建立和設定傳送的詳細資訊，請參閱「傳送 [訊息](../../delivery/using/steps-about-delivery-creation-steps.md) 」一節。
 
 ## 選擇目標人口 {#selecting-the-target-population}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * 主要目標。 有關詳細資訊，請參 [閱在工作流中構建主目標](#building-the-main-target-in-a-workflow)[和選擇目標人口](#selecting-the-target-population)。
 * 控制組。 有關詳細資訊，請參閱定 [義控制組](#defining-a-control-group)。
-* 種子地址。 如需詳細資訊，請參閱[本章節](../../delivery/using/about-seed-addresses.md)。
+* 種子地址。 如需詳細資訊，請參閱[本區段](../../delivery/using/about-seed-addresses.md)。
 
 其中有些資訊會繼承自範本。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 若要建立傳送目標，您可以為資料庫中的收件者定義篩選條件。 此收件者選擇模式顯示在「發送消 [息」部分](../../delivery/using/steps-defining-the-target-population.md) 。
 
-### 範例： 傳送給一組收件者 {#example--delivering-to-a-group-of-recipients}
+### 範例：傳送給一組收件者 {#example--delivering-to-a-group-of-recipients}
 
 您可以將人口匯入清單，然後在傳送中定位此清單。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ### 在工作流程中建立主要目標 {#building-the-main-target-in-a-workflow}
 
-傳送的主要目標也可以在定位工作流程中定義： 此圖形環境可讓您使用查詢、測試和運算子來建立目標： 聯合、重複資料消除、共用等。
+傳送的主要目標也可以在定位工作流程中定義：此圖形環境可讓您使用查詢、測試和運算子來建立目標：聯合、重複資料消除、共用等。
 
 「使 [用工作流自動化](../../workflow/using/architecture.md) 」指南包含工作流模組操作的詳細說明。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 >
 >在相同的促銷活動中，您無法設定超過28個工作流程。 超過此限制後，介面中將無法顯示其他工作流程，並可能產生錯誤。
 
-#### 建立定位工作流程 {#creating-a-targeting-workflow}
+#### Creating a targeting workflow {#creating-a-targeting-workflow}
 
 您可以透過工作流程中圖形順序的篩選條件組合來建立定位。 您可以建立人口和子人口，並根據您的需求進行定位。 若要顯示工作流程編輯器，請按一下促銷 **[!UICONTROL Targeting and workflows]** 活動控制面板中的標籤。
 
@@ -124,7 +124,7 @@ ht-degree: 0%
 
 可以根據調度（調度器）或事件（外部信號、檔案導入等）對目標進行寫程式以用於自動執行。
 
-與執行定位工作流程（啟動、停止、暫停等）相關的動作 是非 **同步進程** : 命令將保存，當伺服器可用來應用該命令時，該命令將立即生效。
+與執行定位工作流程（啟動、停止、暫停等）相關的動作 是非 **同步進程** :命令將保存，當伺服器可用來應用該命令時，該命令將立即生效。
 
 工具列圖示可讓您針對定位工作流程的執行採取相關動作。
 
@@ -201,7 +201,7 @@ ht-degree: 0%
 
 ### 定義控制組 {#defining-a-control-group}
 
-控制組是不接收交貨的人口； 它可用來透過與已收到傳送的目標人口的行為比較，來追蹤傳送後的行為和促銷活動影響。
+控制組是不接收交貨的人口；它可用來透過與已收到傳送的目標人口的行為比較，來追蹤傳送後的行為和促銷活動影響。
 
 控制組可從主目標提取和／或來自特定組或查詢。
 
@@ -210,7 +210,7 @@ ht-degree: 0%
 您可以在促銷活動層級定義控制群組，在此情況下，控制群組將套用至相關促銷活動的每個傳送。
 
 1. 編輯相關促銷活動，然後按一下標 **[!UICONTROL Edit]** 簽。
-1. 按一下「**[!UICONTROL Advanced campaign settings]**」。
+1. 按一下 **[!UICONTROL Advanced campaign settings]**。
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
@@ -219,7 +219,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-配置過程顯示在 [從主目標中提取控制組](#extracting-the-control-group-from-the-main-target)[和添加種群中](#adding-a-population)。
+配置過程在「從主目 [標提取控制組」和「添加控](#extracting-the-control-group-from-the-main-target) 制組」中顯示 [](#adding-a-population)。
 
 #### 啟用傳送的控制群組 {#activating-the-control-group-for-a-delivery}
 
@@ -238,7 +238,7 @@ ht-degree: 0%
 1. 按一下標 **[!UICONTROL Control group]** 簽，然後選取 **[!UICONTROL Enable and edit control group configuration]**。
 1. 按一下 **[!UICONTROL Edit...]** 以配置控制組。
 
-配置過程顯示在 [從主目標中提取控制組](#extracting-the-control-group-from-the-main-target)[和添加種群中](#adding-a-population)。
+配置過程在「從主目 [標提取控制組」和「添加控](#extracting-the-control-group-from-the-main-target) 制組」中顯示 [](#adding-a-population)。
 
 #### 從主目標中提取控制組 {#extracting-the-control-group-from-the-main-target}
 
@@ -248,8 +248,8 @@ ht-degree: 0%
 
 若要擷取控制群組，請啟用促銷活動或傳送的控制群組，並選取下列其中一個選項： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**&#x200B;者。
 
-* **[!UICONTROL Activate random sampling]** : 此選項會將隨機抽樣套用至目標人口中的收件者。 如果您接著將臨界值設為100，則控制群組將由100個從目標人口中隨機選取的收件者組成。 隨機抽樣取決於資料庫引擎。
-* **[!UICONTROL Keep only the first records after sorting]** : 此選項可讓您根據一或多個排序順序定義限制。 如果您選取欄 **[!UICONTROL Age]** 位作為排序標準，然後將100定義為臨界值，則控制群組將由100個最年輕的收件者組成。 例如，定義一個控制群組，其中包含購物次數較少的收件者或經常購物的收件者，並比較其行為與已聯絡的收件者的行為。
+* **[!UICONTROL Activate random sampling]** :此選項會將隨機抽樣套用至目標人口中的收件者。 如果您接著將臨界值設為100，則控制群組將由100個從目標人口中隨機選取的收件者組成。 隨機抽樣取決於資料庫引擎。
+* **[!UICONTROL Keep only the first records after sorting]** :此選項可讓您根據一或多個排序順序定義限制。 如果您選取欄 **[!UICONTROL Age]** 位作為排序標準，然後將100定義為臨界值，則控制群組將由100個最年輕的收件者組成。 例如，定義一個控制群組，其中包含購物次數較少的收件者或經常購物的收件者，並比較其行為與已聯絡的收件者的行為。
 
 按一下 **[!UICONTROL Next]** 可定義排序順序（如果需要）並選擇收件人限制模式。
 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 此設定等同於工作流程中的共用活動，可讓您將目標分割為子集。 控制組是這些子集之一。 Refer to the [this section](../../workflow/using/architecture.md) for more information.
 
-### 新增人口 {#adding-a-population}
+### 添加控制組 {#adding-a-population}
 
 您可以定義要用作控制組的新人口。 此人口族群可來自一組收件者，或您可透過特定查詢建立。
 
@@ -279,7 +279,7 @@ ht-degree: 0%
 >
 >如果指定特定運算元或運算元群組以在傳送的屬性中開始傳送，您也可以允許負責傳送的運算元確認傳送。 要執行此操作，請輸 **入1作為值來激活NMS_ActivateOwnerConfirmation****選項** 。 這些選項是從Adobe Campaign檔案總 **[!UICONTROL Administration]** 管的 **[!UICONTROL Platform]** > **[!UICONTROL Options]** >節點進行管理。
 >  
->要停用此選項，請輸 **入** 0作為值。 然後，傳送確認程式會依預設運作： 只有為傳送屬性（或管理員）中指定的運算元或運算元群組才能確認並執行傳送。
+>要停用此選項，請輸 **入** 0作為值。 然後，傳送確認程式會依預設運作：只有為傳送屬性（或管理員）中指定的運算元或運算元群組才能確認並執行傳送。
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
@@ -322,7 +322,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* 傳送狀態會變更為 **[!UICONTROL To submit]**。 按一下 **[!UICONTROL Submit proofs]** 按鈕以開始核准程式。
+* 傳送狀態會變更為 **[!UICONTROL To submit]**。 Click the **[!UICONTROL Submit proofs]** button to start the approval process.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -338,7 +338,7 @@ ht-degree: 0%
 
 ### 計算費用和庫存 {#calculation-of-costs-and-stocks}
 
-檔案擷取會啟動兩項作業： 預算計算和庫存計算。 預算條目將更新。
+檔案擷取會啟動兩項作業：預算計算和庫存計算。 預算條目將更新。
 
 * 標籤 **[!UICONTROL Budget]** 可讓您管理促銷活動的預算。 成本分錄的合計顯示在促銷活 **[!UICONTROL Calculates cost]** 動的主標籤及其所屬程式的欄位中。 金額也會反映在促銷活動預算中。
 
@@ -354,7 +354,7 @@ ht-degree: 0%
 
 ## 管理相關檔案 {#managing-associated-documents}
 
-您可以將各種檔案與促銷活動建立關聯： 報表、像片、網頁、圖表等。 這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 若要將檔案連結至促銷活動，請參 [閱新增檔案](#adding-documents)。
+您可以將各種檔案與促銷活動建立關聯：報表、像片、網頁、圖表等。 這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 若要將檔案連結至促銷活動，請參 [閱新增檔案](#adding-documents)。
 
 >[!IMPORTANT]
 >
@@ -401,9 +401,9 @@ ht-degree: 0%
 
 傳送大綱表示一組結構化元素（檔案、分支／商店、促銷優惠券等） 在公司中建立，並用於特定促銷活動。
 
-這些元素被分組在交付大綱中，特定的交付大綱將與交付相關聯； 它將被引用到發送給服務提供 **商的抽取** ，以便附加到傳送中。 例如，您可以建立參考分支及其使用的行銷手冊的傳送大綱。
+這些元素被分組在交付大綱中，特定的交付大綱將與交付相關聯；它將被引用到發送給服務提供 **商的抽取** ，以便附加到傳送中。 例如，您可以建立參考分支及其使用的行銷手冊的傳送大綱。
 
-對於促銷活動，傳送大綱可讓您根據特定條件建構要與傳送關聯的外部元素： 相關分支、已授予的促銷優惠、邀請參加當地活動等。
+對於促銷活動，傳送大綱可讓您根據特定條件建構要與傳送關聯的外部元素：相關分支、已授予的促銷優惠、邀請參加當地活動等。
 
 #### 建立大綱 {#creating-an-outline}
 
