@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 6%
+source-wordcount: '479'
+ht-degree: 8%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 6%
 >
 >視您的產品而定，可以包含促銷活動最佳化或附加元件。 請檢查您的授權合約。
 
-## 類型學規則 {#typology-rules}
+## 類型規則 {#typology-rules}
 
 有了Adobe Campaign，您可以設計並套用四種類型的排版規則：
 
@@ -64,11 +64,27 @@ ht-degree: 6%
 
    您可透過>節點存 **[!UICONTROL Administration > Campaign Management > Typology management]** 取類 **[!UICONTROL Typologies]** 型。
 
-1. 設定您的傳送方式，以使用您建立的排版。 如需詳細資訊，請參閱[本章節](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
+1. 設定您的傳送方式，以使用您建立的排版。 如需詳細資訊，請參閱[本區段](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 透過促銷活動模擬來測試和控制行為。 For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
-在準備交貨期間，當符合標準時，將排除收件者。 您可以檢查記錄檔以監控排除。 本頁提供壓力類型學規則的範例使 [用案例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
+在準備交貨期間，當符合標準時，將排除收件者。 您可以檢查日誌以監控排除。本頁提供壓力類型學規則的範例使 [用案例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
+
+## 如何使用類型學規則建立疲勞管理
+
+此影片說明如何運用排版規則，在Adobe Campaign Classic中實作疲勞管理。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+
+## 如何使用預先定義的篩選器來設定疲勞管理
+
+疲勞管理控制訊息傳送的頻率和數量，以避免收件者過度招攬。 如果您的促銷活動例項中沒有促銷活動最佳化模組，您可以設定預先定義的篩選條件，以依據收到的訊息數量來篩選目標群體。本影片說明如何使用篩選條件，在Adobe Campaign Classic中實作疲乏管理。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
 **相關主題**
 
 * [將自動業務規則套用至任何渠道的傳送](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
+
+* [關於促銷活動類型](../../campaign/using/pressure-rules.md)
+
+* [使用壓力規則管理行銷疲勞](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
