@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b7470011bbb08cc1a7041b53e8405c971f33e51c
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 3%
 
 ---
 
@@ -25,8 +28,8 @@ Adobe Campaign可讓您將個人化電子訊息大量傳遞給目標群體。
 開始傳送電子郵件之前：
 
 * 請確定收件者設定檔至少包含電子郵件地址。
-* 進一步瞭解Adobe Campaign [Delivery最佳實務](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)。
-* 閱讀有關 [傳遞性](../../delivery/using/about-deliverability.md) 和 [管理傳遞性](https://helpx.adobe.com/campaign/kb/acc-deliverability.html)。
+* 進一步瞭解Adobe Campaign [Delivery最佳實務](../../delivery/using/delivery-best-practices.md)。
+* 閱讀有關 [傳送性](../../delivery/using/about-deliverability.md) 和 [管理傳送性](https://helpx.adobe.com/campaign/kb/acc-deliverability.html)。
 
 傳送電子郵件的主要步驟如下：
 
