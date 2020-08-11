@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -80,7 +80,7 @@ ISP和其他組織(請參閱 [Project Honey Pot網站](https://www.projecthoneyp
 <tr>
   <td>
     <a href="starting-new-platform.md">
-      <img alt="開始" src="assets/do-not-localize/start.svg"/>
+      <img alt="開始" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="starting-new-platform.md">
@@ -93,7 +93,7 @@ ISP和其他組織(請參閱 [Project Honey Pot網站](https://www.projecthoneyp
   </td>
    <td>
     <a href="control-message-content.md">
-      <img alt="設計" src="assets/do-not-localize/design.svg"/>
+      <img alt="設計" src="assets/do-not-localize/design.svg" width="60px"/>
     </a>
     <div>
       <a href="control-message-content.md">
@@ -106,7 +106,7 @@ ISP和其他組織(請參閱 [Project Honey Pot網站](https://www.projecthoneyp
   </td>
   <td>
     <a href="improve-reputation.md">
-      <img alt="設計" src="assets/do-not-localize/check.svg"/>
+      <img alt="設計" src="assets/do-not-localize/check.svg" width="60px"/>
     </a>
     <div>
       <a href="improve-reputation.md">
@@ -121,7 +121,7 @@ ISP和其他組織(請參閱 [Project Honey Pot網站](https://www.projecthoneyp
 <tr>
   <td>
     <a href="technical-recommendations.md">
-      <img alt="最佳化" src="assets/do-not-localize/optimize.svg"/>
+      <img alt="最佳化" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="technical-recommendations.md">
@@ -134,7 +134,7 @@ ISP和其他組織(請參閱 [Project Honey Pot網站](https://www.projecthoneyp
   </td>
    <td>
     <a href="monitoring-deliverability.md">
-      <img alt="檢查" src="assets/do-not-localize/monitor.svg"/>
+      <img alt="檢查" src="assets/do-not-localize/monitor.svg" width="60px"/>
     </a>
     <div>
       <a href="monitoring-deliverability.md">
@@ -147,7 +147,7 @@ ISP和其他組織(請參閱 [Project Honey Pot網站](https://www.projecthoneyp
   </td>
   <td>
     <a href="deliverability-faq.md">
-      <img alt="最佳化" src="assets/do-not-localize/troubleshoot.svg"/>
+      <img alt="最佳化" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
     </a>
     <div>
       <a href="deliverability-faq.md">
