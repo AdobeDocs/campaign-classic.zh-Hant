@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 73%
+source-wordcount: '560'
+ht-degree: 71%
 
 ---
 
@@ -29,13 +29,13 @@ ht-degree: 73%
 
 透過參閱我們直觀的逐步指南，開始使用 Adobe Campaign。
 
-* [使用 Adobe Experience Manager 編輯電子郵件內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html)：了解整合 Adobe Campaign 和 Experience Manager 的基本概念。
-* [隱私權管理](https://helpx.adobe.com/campaign/kb/acc-privacy.html): 瞭解Adobe Campaign Classic在使用我們的服務時提供哪些協助來協助您符合隱私權規範。
-* [整合電子郵件中的動態內容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
-* [管理傳遞機制](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
-* [傳遞最佳做法](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
-* [執行組建升級](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)：本指南會顯示執行 Campaign Classic 組建升級的重要步驟和最佳做法。
-* [安全性設定檢查清單](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)：探索設定安全性及強化內部部署時要檢查的關鍵元素
+* [使用 Adobe Experience Manager 編輯電子郵件內容](https://helpx.adobe.com/campaign/kb/acc-aem.html)：了解整合 Adobe Campaign 和 Experience Manager 的基本概念。
+* [隱私權管理](https://helpx.adobe.com/campaign/kb/acc-privacy.html):瞭解Adobe Campaign Classic在使用我們的服務時提供哪些協助來協助您符合隱私權規範。
+* [整合電子郵件中的動態內容](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
+* [管理傳遞機制](../../delivery/using/deliverability-key-points.md)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
+* [傳遞最佳做法](../../delivery/using/delivery-best-practices.md)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
+* [執行組建]upgradehttps://helpx.adobe.com/campaign/kb/acc-build-upgrade.html:本指南提供使用Campaign Classic執行建置升級的關鍵步驟和最佳實務。
+* [安全性設定檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html)：探索設定安全性及強化內部部署時要檢查的關鍵元素
 
 透過檢查下列使用案例和範例，進一步了解 Adobe Campaign：
 
