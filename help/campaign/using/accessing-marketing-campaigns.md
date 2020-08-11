@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ Adobe Campaign可讓您建立、設定、執行及分析行銷宣傳。 所有�
 >
 >如需有關Adobe Campaign整體人機工程學、權限和描述檔管理功能的詳細資訊，請參 [閱本節](../../platform/using/adobe-campaign-workspace.md)。
 >
->本節將詳述與頻道和傳送有關的所 [有功能](../../delivery/using/communication-channels.md)。
+>本節將詳述與頻道和傳送有關的所 [有功能](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 ### 促銷活動日曆 {#campaign-calendar}
 
@@ -134,7 +137,7 @@ Campaign可讓您管理由各種行銷促銷活動組成的一組方案。 每�
 
 For more on this, refer to [Discussion forums](../../campaign/using/discussion-forums.md).
 
-#### 報表 {#reports}
+#### 報告 {#reports}
 
 連結 **[!UICONTROL Reports]** 可讓您存取促銷活動報表。
 
@@ -144,7 +147,7 @@ For more on this, refer to [Discussion forums](../../campaign/using/discussion-f
 >
 >本節將詳述報 [告](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
 
-#### 配置 {#configuration}
+#### 設定 {#configuration}
 
 促銷活動是透過促銷活動範本建立。 您可以設定可重複使用的範本，其中已選取部分選項，並儲存其他設定。 對於每個促銷活動，都提供下列功能：
 
