@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 54%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 
 清單 (list) 是傳遞作業中可以鎖定的一組靜態收件者，在匯入操作或執行工作流程時可對清單進行更新。例如，透過查詢而從資料庫中摘取出的母體可形成一個清單。
 
-[按一下這裡以了解更多資訊](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。You can also watch [this video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) about how to create a list manually, and [this other video](https://docs.campaign.adobe.com/doc/AC/en/Videos/creating_list_recipients_611.mp4) to create and automatically update a list of recipients in a workflow.
+[按一下這裡以了解更多資訊](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。You can also watch [this video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) about how to create a list manually, and [this other video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) to create and automatically update a list of recipients in a workflow.
 
 ## How can I deduplicate a population before sending a message? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
