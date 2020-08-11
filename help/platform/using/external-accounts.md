@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '2218'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
 
 # 外部帳戶{#external-accounts}
 
-外部帳戶是可讓您設定並測試對Adobe Campaign外部伺服器的存取權的設定。 這些外部帳戶可用於促銷活動工作流程，以存取和管理資料。
+外部帳戶是可讓您設定並測試對 Adobe Campaign 外部伺服器的存取權的設定。這些外部帳戶可用於行銷活動工作流程，以存取和管理資料。
 
 您可以設定下列外部帳戶類型：
 
@@ -36,8 +36,8 @@ ht-degree: 0%
 * [Facebook Connect外部帳戶](#facebook-connect-external-account)
 * [執行實例外部帳戶](#execution-instance-external-account)
 * [Adobe Experience Cloud外部帳戶](#adobe-experience-cloud-external-account)
-* [SFTP外部帳戶](#sftp-external-account)
-* [Adobe Experience Manager外部帳戶](#adobe-experience-manager-external-account)
+* [SFTP 外部帳戶](#sftp-external-account)
+* [Adobe Experience Manager 外部帳戶](#adobe-experience-manager-external-account)
 * [Amazon Simple Storage Service(S3)外部帳戶](#amazon-simple-storage-service--s3--external-account)
 * [Azure外部帳戶](#azure-external-account)
 * [Hadoop外部帳戶](#hadoop-external-account)
@@ -47,16 +47,16 @@ ht-degree: 0%
 
 ## 建立外部帳戶 {#creating-an-external-account}
 
-Adobe Campaign隨附一組預先定義的外部帳戶。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器）的連線，您可以建立自己的外部帳戶。
+Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部系統（例如用於檔案傳輸的 FTP 伺服器）的連線，您可以建立自己的外部帳戶。
 
-技術流程（例如技術工作流程或宣傳工作流程）會使用外部帳戶。 在工作流程中或與任何其他應用程式（Adobe Target、Experience Manager等）進行資料交換時，您需要選取外部帳戶。
+技術流程（例如技術工作流程或宣傳工作流程）會使用外部帳戶。在工作流程中或與任何其他應用程式（Adobe Target、Experience Manager 等）進行資料交換時，您需要選取外部帳戶。
 
 1. 從中 **[!UICONTROL Explorer]**&#x200B;展開菜 **[!UICONTROL Administration]** 單。
 1. 展開功 **[!UICONTROL Platform]** 能表並按一下 **[!UICONTROL External accounts]**。
 
    ![](assets/ext_account_1.png)
 
-1. 按一下&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
+1. 按一下 **[!UICONTROL New]** 按鈕。
 
    ![](assets/ext_account_2.png)
 
@@ -65,11 +65,11 @@ Adobe Campaign隨附一組預先定義的外部帳戶。 若要設定與外部�
 1. 選擇您要建 **[!UICONTROL Type]** 立的外部帳戶。
 1. 根據所選的外部帳戶類型指定憑證，以設定帳戶的存取權。
 
-   所需資訊通常由您所連接的伺服器提供商提供。
+   所需資訊通常由您所連接的伺服器提供者提供。
 
-1. 按一下「**[!UICONTROL Save]**」。
+1. 按一下 **[!UICONTROL Save]**。
 
-外部帳戶會建立並新增至外部帳戶清單。 它現在可用於工作流活動和傳送屬性中的資料／檔案傳輸或路由配置。
+外部帳戶會建立並新增至外部帳戶清單。 它現在可用於工作流活動和傳送屬性中的資料/檔案傳輸或路由配置。
 
 ## 彈回郵件外部帳戶 {#bounce-mails-external-account}
 
@@ -110,10 +110,10 @@ Bouncemails **外部帳戶** ，指定用來連線至電子郵件服務的外部
 可以配置以下通道：
 
 * [電子郵件](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [行動(SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
-* [電話](../../delivery/using/communication-channels.md#other-channels)
+* [行動裝置（簡訊）](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [電話](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
-* [代理商](../../delivery/using/communication-channels.md#other-channels)
+* [代理商](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [iOS頻道](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
@@ -121,7 +121,7 @@ Bouncemails **外部帳戶** ，指定用來連線至電子郵件服務的外部
 
 ## FTP外部帳戶 {#ftp-external-account}
 
-FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 For more on this, refer to this [page](../../workflow/using/file-transfer.md).
+FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
 
 若要這麼做，請在此外部帳戶中指定用來建立與FTP伺服器連線的位址和認證
 
@@ -251,7 +251,7 @@ For more information on **[!UICONTROL Query banding]**, refer to the [Teradata d
 
 ![](assets/ext_account_10.png)
 
-對於此外部帳戶，必須豐富追蹤URL的計算公式，並且必須核准兩個解決方案之間的連線。 For more on this, refer to this [page](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
+對於此外部帳戶，必須豐富追蹤URL的計算公式，並且必須核准兩個解決方案之間的連線。 如需關於此項目的詳細資訊，請參閱此[頁面](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign)。
 
 ## Facebook Connect外部帳戶 {#facebook-connect-external-account}
 
@@ -297,7 +297,7 @@ For more information on **[!UICONTROL Query banding]**, refer to the [Teradata d
 
 For more information on this configuration, refer to this [page](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
-## Adobe Experience Cloud外部帳戶 {#adobe-experience-cloud-external-account}
+## Adobe Experience Cloud external account {#adobe-experience-cloud-external-account}
 
 若要使用Adobe ID連線至Adobe Campaign主控台，您必須設定外 **[!UICONTROL Adobe Experience Cloud (MAC)]** 部帳戶。
 
@@ -341,9 +341,9 @@ For more information on this configuration, refer to this [page](../../message-c
 
 For more information on this configuration, refer to this [page](../../integrations/using/configuring-ims.md).
 
-## SFTP外部帳戶 {#sftp-external-account}
+## SFTP 外部帳戶 {#sftp-external-account}
 
-SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 For more on this, refer to this [page](../../workflow/using/file-transfer.md).
+SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
 
 ![](assets/ext_account_4.png)
 
@@ -363,7 +363,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存�
 
    用於連接到SFTP伺服器的口令。
 
-## Adobe Experience Manager外部帳戶 {#adobe-experience-manager-external-account}
+## Adobe Experience Manager 外部帳戶 {#adobe-experience-manager-external-account}
 
 外 **[!UICONTROL AEM (AEM instance)]** 部帳戶可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容以及表單。
 
@@ -381,11 +381,11 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存�
 
    用來連線至Adobe Experience Manager製作例項的密碼。
 
-For more on this, refer to this [section](../../integrations/using/about-adobe-experience-manager.md).
+如需詳細資訊，請參閱本[區段](../../integrations/using/about-adobe-experience-manager.md)。
 
 ## Amazon Simple Storage Service(S3)外部帳戶 {#amazon-simple-storage-service--s3--external-account}
 
-Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe Campaign。 可在工作流活動中設定。 For more on this, refer to this [page](../../workflow/using/file-transfer.md).
+Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe Campaign。 可在工作流活動中設定。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
 
 ![](assets/ext_account_3.png)
 
@@ -435,7 +435,7 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 ## Hadoop外部帳戶 {#hadoop-external-account}
 
-外 **[!UICONTROL Hadoop]** 部帳戶可啟用與共用外部資料庫的連線，只要此連線是作用中的，您就可透過Adobe Campaign存取資料庫。 有關如何配置對Hadoop訪問的詳細資訊，請參 [閱](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop)。
+外 **[!UICONTROL Hadoop]** 部帳戶可啟用與共用外部資料庫的連線，只要此連線是作用中的，您就可透過Adobe Campaign存取資料庫。 For more information on how to configure access to Hadoop, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
 
 ![](assets/ext_account_16.png)
 
