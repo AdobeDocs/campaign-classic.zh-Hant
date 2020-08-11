@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +64,7 @@ Right-click and select **[!UICONTROL Actions > Save as template...]**.
 
 1. 使用您的電 **子郵件主旨** ，以及目標人群，完成「電子郵件參數」類別。
 1. 新增 **HTML內容** ，以個人化範本，您可以顯示鏡像頁面連結和取消訂閱連結。
-1. 選擇「預 **覽** 」標籤。 在「測 **試個人化** 」下拉式選單中，選取「收件者 **** 」以預覽範本作為選擇的設定檔。
+1. Select the **Preview** tab. 在「測 **試個人化** 」下拉式選單中，選取「收件者 **** 」以預覽範本作為選擇的設定檔。
 
    ![](assets/delivery_template_5.png)
 
@@ -70,3 +73,21 @@ Right-click and select **[!UICONTROL Actions > Save as template...]**.
 >[!NOTE]
 >
 >為避免設定錯誤，建議您複製原生範本並變更其屬性，而不要建立新範本。
+
+## 如何設定傳送範本
+
+以下影片示範如何設定臨機傳送的範本。
+
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
+
+## 如何設定傳送範本屬性
+
+下面的影片說明如何設定傳送範本屬性，並詳細說明每個屬性。
+
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
+
+## 如何部署臨機傳送範本
+
+此影片說明如何部署臨機電子郵件傳送範本，並說明電子郵件傳送與傳送工作流程之間的差異。
+
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
