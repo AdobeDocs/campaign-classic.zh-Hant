@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 通常，將目標儲存在清單中會標示工作流程的結束。 因此，預設情況下， **[!UICONTROL List update]** 活動不具有出站轉換。 勾選 **[!UICONTROL Generate an outbound transition]** 新增選項。
 
-## 範例： 清單更新 {#example--list-update}
+## 範例：清單更新 {#example--list-update}
 
 在以下範例中，清單更新活動會遵循查詢，以法國30歲以上的男性為目標。 清單最初會從查詢結果建立。 然後，每當從工作流程啟動時，就會更新它。 例如，它可定期用於促銷活動的定位促銷優惠。
 
@@ -58,13 +58,13 @@ ht-degree: 0%
 1. 將選 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 取的選項保留為刪除不符合定位標準的收件者，並將新收件者插入清單。
 1. 同時，將選 **[!UICONTROL Create or use a list with its own table]** 項保留為選中。
 1. 保留選 **[!UICONTROL Generate an outbound transition]** 項未選中。
-1. 按一 **[!UICONTROL Ok]** 下，然後啟動工作流程。
+1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
    然後會建立或更新相符的收件者清單。
 
-如需詳細資訊，請參閱「建立收 [件者清單」影片](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) 。
+如需詳細資訊，請參閱「建立收 [件者清單」影片](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) 。
 
 ## 輸入參數 {#input-parameters}
 
@@ -75,4 +75,4 @@ ht-degree: 0%
 
 ## 輸出參數 {#output-parameters}
 
-* groupId: 群組識別碼。
+* groupId:群組識別碼。
