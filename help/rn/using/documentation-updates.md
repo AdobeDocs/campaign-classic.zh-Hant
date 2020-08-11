@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
-source-wordcount: '6943'
+source-wordcount: '7069'
 ht-degree: 13%
 
 ---
@@ -25,7 +25,37 @@ ht-degree: 13%
 
 本頁列出每個月的所有新功能和檔案更新，以及促銷活動版本。
 
+
 您也可以參閱 [Adobe Campaign Classic發行說明](../../rn/using/latest-release.md) ，以取得更多更新。
+
+## 2020 年 8 月{#aug-2020}
+
+在專屬的章節中，瞭解與傳送設計及與Campaign一起傳送有關的最佳實務。 [詳細內容](../../delivery/using/delivery-best-practices.md)
+
+「傳遞能力」最佳實務登陸頁面已改善，以方便存取子區段。 [詳細內容](../../delivery/using/deliverability-key-points.md)
+
+現在，有關下列主題的教學影片已可供使用：
+
+* [如何使用類型學規則和預先定義的篩選器來設定疲勞管理](../../campaign/using/about-campaign-typologies.md)
+
+* [如何在促銷活動中建立電子郵件](../../campaign/using/designing-marketing-campaigns.md)
+
+* [如何建立包含條件式內容的多語言電子報](../../delivery/using/conditional-content.md)
+
+* [如何設定和部署傳送範本](../../delivery/using/creating-a-delivery-template.md)
+
+* [如何啟動和使用AMP處理電子郵件](../../delivery/using/defining-interactive-content.md)
+
+* [如何使用動態內容區塊個人化電子郵件](../../delivery/using/personalization-blocks.md)
+
+* [如何使用個人化欄位個人化電子郵件](../../delivery/using/personalization-fields.md)
+
+* [如何管理電子郵件中的種子和校樣](../../delivery/using/steps-defining-the-target-population.md)
+
+* [如何設定循環傳送](../../workflow/using/recurring-delivery.md)
+
+* [如何設定連續傳送](../../workflow/using/continuous-delivery.md)
+
 
 ## 2020 年 7 月{#july-2020}
 
