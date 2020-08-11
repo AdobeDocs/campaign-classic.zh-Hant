@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1146'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
    ![](assets/create_campaign_template_3.png)
 
-1. **在「定位**&#x200B;和工作流程&#x200B;**」標籤中，按**&#x200B;一下「新增工作流程……」.
+1. 在「定位 **和工作流程** 」標籤中，按 **一下「新增工作流程……」**.
 
    ![](assets/create_campaign_template_4.png)
 
@@ -74,7 +77,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 促銷活動範本的建立與設定會顯示在促銷活動 [範本中](#campaign-templates)。
 
-如需建立促銷活動的詳細資訊，請參 [閱建立促銷活動和電子郵件](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) 。
+如需建立促銷活動的詳細資訊，請參 [閱建立促銷活動和電子郵件](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/creating-a-campaign-and-an-email.html) 。
 
 ## 可用模組的配置 {#configuration-of-the-available-modules}
 
@@ -84,7 +87,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-如果未選取功能，則與程式相關的元素（功能表、圖示、選項、標籤、子標籤等）不會顯示在範本的介面中，也不會顯示在以此範本為基礎的促銷活動中。 促銷活動詳細資料左側的標籤通常與範本中選取的程式一致。 例如，如果未選 **取「費用」和** 「目標」，則基於此范 **[!UICONTROL Budget]** 本的促銷活動中不會顯示對應的標籤。
+如果未選取功能，則與程式相關的元素（功能表、圖示、選項、標籤、子標籤等） 不會顯示在範本的介面中，也不會顯示在以此範本為基礎的促銷活動中。 促銷活動詳細資料左側的標籤通常與範本中選取的程式一致。 例如，如果未選 **取「費用」和** 「目標」，則基於此范 **[!UICONTROL Budget]** 本的促銷活動中不會顯示對應的標籤。
 
 此外，設定視窗的捷徑會新增至促銷活動控制面板。 啟用功能時，直接連結會從促銷活動控制面板提供存取權。
 
@@ -177,7 +180,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
    >
    >有關枚舉的詳細資訊，請參 [閱開始](../../platform/using/managing-enumerations.md) 。
 
-* 選擇促 **銷活動類型**:唯一、循環或週期。 依預設，促銷活動範本會套用至獨特的促銷活動。 週期性和週期性促銷活動的詳細資訊，請參閱：週期 [性和週期性促銷活動](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns)。
+* 選擇促 **銷活動類型**:唯一、循環或週期。 依預設，促銷活動範本會套用至獨特的促銷活動。 週期性和週期性促銷活動的詳細資訊，請參閱： [週期性和定期性促銷活動](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns)。
 * 指定促銷活動的持續時間，即促銷活動將發生的天數。 根據此範本建立促銷活動時，促銷活動的開始和結束日期會自動填入。
 
    如果促銷活動是經常性的，您必須直接在範本中指定促銷活動開始和結束日期。
@@ -186,7 +189,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ### 範本執行參數 {#template-execution-parameters}
 
-此連 **[!UICONTROL Advanced campaign settings...]** 結可讓您設定範本的進階選項，以處理傳送目標（控制群組、種子位址等）以及促銷活動測量和工作流程執行的設定。
+此連 **[!UICONTROL Advanced campaign settings...]** 結可讓您設定範本的進階選項，以處理傳送目標（控制群組、種子位址等） 以及促銷活動測量和工作流程執行的設定。
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
