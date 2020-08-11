@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
@@ -34,4 +37,4 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 >[!NOTE]
 >
->本頁詳細說明Adobe Campaign v7的新功能和 [演變](https://docs.campaign.adobe.com/doc/AC/en/RN.html)。
+>本頁詳細說明Adobe Campaign v7的新功能和 [演變](../../rn/using/latest-release.md)。
