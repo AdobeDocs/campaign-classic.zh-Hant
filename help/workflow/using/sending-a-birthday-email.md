@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f3006ac7178b4fc3091859ca8a7225864da9524a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: f3006ac7178b4fc3091859ca8a7225864da9524a
 
 此（每日執行）工作流程會選取目前日期有生日的所有收件者。
 
-此使用案例也可以以視訊的形式找到。 如需詳細資訊，請參閱「建立工 [作流程」影片](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) 。
+此使用案例也可以以視訊的形式找到。 For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 若要這麼做，請建立促銷活動，然後按一下標 **[!UICONTROL Targeting and workflows]** 簽。 有關詳細資訊，請參閱「在工 [作流中構建主目標](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) 」部分。
 
@@ -209,7 +212,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 >[!CAUTION]
 >
->若要執行工作流程，必須啟動與促銷活動程式相關的技術工作流程。 如需詳細資訊，請參閱促銷活動 [程式工作流程清單](../../workflow/using/campaign.md) 。
+>若要執行工作流程，必須啟動與促銷活動程式相關的技術工作流程。 For more on this, refer to the [List of campaign process workflows](../../workflow/using/campaign.md) section.
 >
 >如果促銷活動的核准步驟已啟用，則只有在確認這些步驟後，才會傳送傳送。 有關詳細資訊，請參 [閱選擇要批准的流程](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) 。
 
