@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +63,7 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 * 從DCE處於活動狀態的電子郵件類型模板建立發送，
 * 選擇現有內容或從標準範本建立內容，
 * 編輯和設定線上內容、
-* 傳送傳送，如需詳細資訊，請參閱 [本節](../../delivery/using/communication-channels.md)。
+* 傳送傳送，如需詳細資訊，請參閱 [本節](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 >[!NOTE]
 >
