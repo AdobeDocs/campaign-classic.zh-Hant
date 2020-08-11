@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1642'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/abo
 >[!IMPORTANT]
 >
 >* 此功能是Adobe Campaign的測試版功能。
->* AMP for Email是一種新的開放原始碼格式，可讓開發人員建立動態和互動式電子郵件。 目前，有數家電子郵件提供者支援： Gmail、Outlook和Mail.ru。
+>* AMP for Email是一種新的開放原始碼格式，可讓開發人員建立動態和互動式電子郵件。 目前，有數家電子郵件提供者支援：Gmail、Outlook和Mail.ru。
 
 
 目前，您只能：
@@ -41,7 +41,9 @@ Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/abo
 
 對於混合式和托管式架構，此套件必須安裝在所有伺服器上，包括 [中端採購伺服器](../../installation/using/mid-sourcing-server.md) 和執 [行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
 
-觀看此 [影片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html) ，瞭解如何在Adobe Campaign中啟動AMP，並瞭解使用情形。
+以下影片說明如何在Adobe Campaign Classic中啟動AMP，並展示其使用情形。
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## 關於AMP for Email {#about-amp-for-email}
 
@@ -87,7 +89,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 
    >[!NOTE]
    >
-   >特定AMP模板包含您可以使用的主要容量示例： 產品清單、轉盤、雙重加入、調查和進階伺服器要求。
+   >特定AMP模板包含您可以使用的主要容量示例：產品清單、轉盤、雙重加入、調查和進階伺服器要求。
 
 1. 按一下標 **[!UICONTROL AMP content]** 簽。
 
@@ -147,7 +149,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 
 在Adobe Campaign中建立AMP內容時，您必須符合傳送動態電子郵件的條件，這是您收件者的電子郵件提供者專屬的條件。
 
-目前有三家電子郵件供應商支援測試此格式： Gmail、Outlook和Mail.ru。
+目前有三家電子郵件供應商支援測試此格式：Gmail、Outlook和Mail.ru。
 
 在Gmail帳戶上測試AMP格式傳送所需的所有步驟和規格，都詳見相應的 [Gmail](https://developers.google.com/gmail/ampemail?)、 [Outlook ](https://docs.microsoft.com/en-gb/outlook/amphtml/) 和 [](https://postmaster.mail.ru/amp) Mail.ru開發人員檔案。
 
