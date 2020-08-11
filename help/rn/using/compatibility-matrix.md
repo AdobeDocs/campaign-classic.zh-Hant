@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5e8598fd445f6e2ebd891af1e15c07eb836cd647
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 6%
 
 ---
@@ -159,7 +159,7 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <p>9.6.x</p>
 <p>10.x</p>
 <p>11.x</p>
-<p>注意： 您也可以將Amazon RDS for PostgreSQL與上述指定的版本一起使用。</p>
+<p>注意：您也可以將Amazon RDS for PostgreSQL與上述指定的版本一起使用。</p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>警告： 當Campaign伺服器在Linux上執行時，不支援Microsoft SQL Server做為主資料庫。 請參閱「 <a href="https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html#Microsoft_SQL_Server">Installation guide（安裝指南）</a>」。</p>
+<p>警告：當Campaign伺服器在Linux上執行時，不支援Microsoft SQL Server做為主資料庫。 <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -204,9 +204,9 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API —— 內部部署： 2007、2015、2016年</p>
-<p>Soap API —— 線上： 2015年、2016年</p>
-<p>Web API —— 內部部署與線上： 365、2016、2016更新1</p>
+<p>Soap API —— 內部部署：2007、2015、2016年</p>
+<p>Soap API —— 線上：2015年、2016年</p>
+<p>Web API —— 內部部署與線上：365、2016、2016更新1</p>
 </td>
 </tr>
 </tbody>
