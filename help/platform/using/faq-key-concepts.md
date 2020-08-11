@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 72%
 
 ---
 
@@ -116,7 +119,7 @@ Adobe Campaign 的工作流程包括跨應用程式伺服器的不同模組策�
 
 ## How to translate an error message? {#how-to-translate-an-error-message-}
 
-出現了以外文顯示的錯誤訊息? [本頁面](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)列出所有錯誤訊息及其翻譯。
+出現了以外文顯示的錯誤訊息? [本頁面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)列出所有錯誤訊息及其翻譯。
 
 ## Can I create a webform and collect answers in Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
