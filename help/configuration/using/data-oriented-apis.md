@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1884'
+ht-degree: 0%
 
 ---
 
@@ -38,9 +41,9 @@ XML文檔儲存在資料庫的MEMO類型欄位中。
 
 您必須熟悉Adobe Campaign資料模型，才能處理指令碼中資料庫的欄位。
 
-如需資料模型的簡報，請參閱 [Adobe Campaign資料模型說明](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)。
+如需資料模型的簡報，請參閱 [Adobe Campaign資料模型說明](../../configuration/using/data-model-description.md)。
 
-為了生成其結構，請參閱本文：如 [何產生資料模型或資料字典](https://helpx.adobe.com/campaign/kb/generate-data-model.html)。
+為了生成其結構，請參閱本文： [如何產生資料模型或資料字典](https://helpx.adobe.com/campaign/kb/generate-data-model.html)。
 
 ## 查詢和寫入器 {#query-and-writer}
 
@@ -66,7 +69,7 @@ Write命令可讓您編寫簡單或複雜的文檔，並在一個或多個基本
 
 XML結構提供了資料的邏輯視圖，並使您能夠避開SQL表的物理結構。
 
-Write方法顯示在 [Write / writeCollection(xtk:session)中](#write---writecollection--xtk-session-)。
+Write方法顯示在 [Write / WriteCollection(xtk:session)中](#write---writecollection--xtk-session-)。
 
 ## ExecuteQuery(xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -147,7 +150,7 @@ Write方法顯示在 [Write / writeCollection(xtk:session)中](#write---writecol
 * **選擇**:建立游標以返回多個記錄，如果沒有資料，則返回空文檔，
 * **計數**:傳回資料計數。
 
-使 **用XPath語法** ，根據輸入模式來定位資料。 有關XPaths的詳細資訊，請參閱 [資料結構](../../configuration/using/data-schemas.md)。
+使 **用XPath語法** ，根據輸入模式定位資料。 有關XPaths的詳細資訊，請參閱 [資料結構](../../configuration/using/data-schemas.md)。
 
 #### 使用&#39;get&#39;操作的示例 {#example-with-the--get--operation}
 
@@ -226,7 +229,7 @@ Write方法顯示在 [Write / writeCollection(xtk:session)中](#write---writecol
 
 >[!NOTE]
 >
->我們再次使用上例中的條件。 不 `<select>` 使用和子句。 </select>`
+>我們再次使用上例中的條件。 不 `<select>` 使用和子句。 </select>「
 
 #### 資料分組 {#data-grouping}
 
@@ -509,7 +512,7 @@ Write方法顯示在 [Write / writeCollection(xtk:session)中](#write---writecol
    </SOAP-ENV:Envelope>
    ```
 
-## Write / writeCollection(xtk:session) {#write---writecollection--xtk-session-}
+## Write / WriteCollection(xtk:session) {#write---writecollection--xtk-session-}
 
 這些服務用於插入、更新或刪除實體（「寫入」方法）或實體集合（「寫入收集」方法）。
 
