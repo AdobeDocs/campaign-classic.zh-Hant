@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
+source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Gold Standard版本{#gold-standard}
 
-身為Gold Standard的使用者，您可透過最新穩定版本自動從Gold Standard升級中獲益，而不需採取任何動作。
+身為Gold Standard使用者，您可以透過最新穩定版本自動受益於Gold Standard升級，而不需採取任何動作。
 
 內部部署和Hybrid客戶也可從Gold Standard版本中獲益。
 
@@ -41,7 +41,7 @@ _2020年7月7日_
 
 建置9032@efd8a94包含下列修正：
 
-修正在停用簽名功能或使用具有最近Mid的舊行銷例項時，追蹤無法運作的問題。 (NEO-26411)
+修正在停用簽名功能時無法運作追蹤的問題。 (NEO-26411)
 
 >[!CAUTION]
 >
@@ -102,7 +102,7 @@ _2019年12月17日_
 
 建置9032@d6b8062包含下列修正：
 
-* 修正下列通訊管道的追蹤問題： 行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。 (NEO-19595)
+* 修正下列通訊管道的追蹤問題：行動(SMS、MMS)、推播(iOS、Android)和社交網路(Facebook、Twitter)。 (NEO-19595)
 
 ## ![](assets/do-not-localize/orange_2.png) Gold Standard 4版本{#gs-4}
 
