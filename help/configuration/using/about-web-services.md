@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a047e4af6e31c54fa2444943a18da5913e115c09
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +34,7 @@ Adobe Campaign API用於應用程式內的JavaScript，以及應用程式外的S
 >[!IMPORTANT]
 >
 >每天授權引擎呼叫的數目視您的授權合約而定。 有關詳細資訊，請參見[此頁面](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->本專屬檔案提供所有API的清單，包括其完整 [說明](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。
+>本專屬檔案提供所有API的清單，包括其完整 [說明](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
 ## 必要條件 {#prerequisites}
 
@@ -77,7 +80,7 @@ SOAP消息的結構如下：
 
 >[!NOTE]
 >
->此服務的WSDL說明已在以下示例中完成：網 [站服務說明：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>此服務的WSDL說明已在以下示例中完成： [Web服務說明：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP查詢 {#soap-query}
 
@@ -122,7 +125,7 @@ SOAP消息的結構如下：
 
 查詢結果是從元素中輸 `<pdomoutput>` 入。
 
-## 錯誤管理 {#error-management}
+## Error management {#error-management}
 
 SOAP錯誤響應示例：
 
@@ -176,7 +179,7 @@ catch (SoapException e)
 
 ## Web服務伺服器（或EndPoint）的URL {#url-of-web-service-server--or-endpoint-}
 
-若要提交Web服務，必須聯絡實作相應服務方法的Adobe Campaign伺服器。
+若要提交Web服務，必須聯絡實作對應服務方法的Adobe Campaign伺服器。
 
 伺服器URL如下：
 
