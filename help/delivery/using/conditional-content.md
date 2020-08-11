@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
    操作步驟：
 
-   * 選取運算式的第一個元素 **`<field>`**(依預設，在插入 **if** expression時會反白顯示此元素)，然後按一下個人化圖示，以測試欄位取代它。
+   * 選取運算式的第一個元素 **`<field>`**,(依預設，在插入 **if** expression時，會反白顯示此元素)，然後按一下個人化圖示，以測試欄位取代它。
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
@@ -110,3 +113,9 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
    >[!NOTE]
    >
    >由於電子郵件內容中未定義任何替代版本，請務必在傳送電子郵件前先篩選目標人口族群。
+
+## 如何建立包含條件式內容的多語言電子報
+
+透過多語言電子報的範例，瞭解如何將條件式內容新增至傳送內容。
+
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
