@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
@@ -50,3 +53,17 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 這組三個值可識別由即時傳送產生的目標。 **[!UICONTROL tableName]** 是儲存目標標識符的表的名稱， **[!UICONTROL schema]** 是人口的模式（通常是nms:recipient）, **[!UICONTROL recCount]** 是表中的元素數。
 
 與補體相關的過渡具有相同的參數。
+
+## 如何設定連續傳送
+
+本節說明如何設定連續傳送。
+
+持續 **傳送** ，可讓您將新收件者新增至現有的傳送，而且不必在每次新增收件者時建立新的傳送。 您可以直接在促銷活動工作流程中更新創作內容，並會在傳送範本「資源」檔案夾中更新範本。
+
+持續傳送將建立SINGLE傳送和傳送記錄檔(broadLog)和追蹤記錄檔，以參考每次執行時會新增一個傳送。
+
+![持續傳送](assets/delivery_continuous.jpg)
+
+此視訊說明如何設定具有遞增查詢的連續傳送。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
