@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
+source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 0%
+source-wordcount: '439'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Campaign會定期更新。 平均每年發行兩、三個次要版本，�
 
 身為代管客戶（托管服務或混合服務），您需要與客戶服務團隊聯繫，以升級您的環境。
 
-身為Gold Standard的使用者，您將透過最新穩定版本自動從Gold Standard升級中獲益，而不需採取任何動作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+身為Gold Standard的使用者，您將透過最新穩定版本自動從Gold Standard升級中獲益，而不需採取任何動作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
 身為內部部署使用者，您可以執行升級。 為此，您需要下載最 [新的穩定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，並升級所有環境。 進一步瞭解升 [級程式](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)，並參閱建置 [升級常見問答集](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html)。
 
@@ -66,7 +66,7 @@ Adobe Campaign會定期更新。 平均每年發行兩、三個次要版本，�
 ## 支援和其他有用連結{#support}
 
 * [說明與支援](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
-* [「控制面板」發行版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)
+* [「控制面板」發行版本](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)
 * [檔案更新](../../rn/using/documentation-updates.md)
 * [舊版](../../rn/using/release--20-1.md)
 * [不建議使用的功能](../../rn/using/deprecated-features.md)
