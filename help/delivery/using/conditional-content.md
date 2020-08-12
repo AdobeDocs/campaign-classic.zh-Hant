@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,9 @@ ht-degree: 0%
 # 條件式內容{#conditional-content}
 
 例如，透過設定條件式內容欄位，您可以根據收件者的個人檔案建立動態個人化。 當滿足特定條件時，替代文字塊和／或影像。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#conditionnal-content-video)
+
 
 ## 在電子郵件中使用條件 {#using-conditions-in-an-email}
 
@@ -114,7 +117,7 @@ ht-degree: 0%
    >
    >由於電子郵件內容中未定義任何替代版本，請務必在傳送電子郵件前先篩選目標人口族群。
 
-## 如何建立包含條件式內容的多語言電子報
+## 如何建立包含條件式內容的多語言電子報 {#conditionnal-content-video}
 
 透過多語言電子報的範例，瞭解如何將條件式內容新增至傳送內容。
 
