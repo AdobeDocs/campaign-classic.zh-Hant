@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '873'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,9 @@ ht-degree: 3%
 
 例如，具有 **** &lt;%= recipient.LastName %>語法的個人化欄位會告訴Adobe Campaign將收件者名稱插入資料庫（收件者表格）。
 
->[!NOTE]
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#personalization-fields-video)
+
+>[!CAUTION]
 >
 >個人化欄位內容不能超過1024個字元。
 
@@ -124,7 +126,7 @@ Adobe Campaign介面中不會顯示此工作流程。 它只是一種技術手�
 
 如果您將此選項設為0，個人化階段將不會有時間限制。
 
-## 如何使用個人化欄位個人化電子郵件
+## 如何使用個人化欄位個人化電子郵件 {#personalization-field-video}
 
 瞭解如何將個人化欄位新增至主旨行，以及電子郵件傳送的內容。
 
