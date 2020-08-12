@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,7 @@ ht-degree: 0%
 
 Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/about/email/) ，讓您在特定條件下傳送動態電子郵件。
 
->[!IMPORTANT]
->
->* 此功能是Adobe Campaign的測試版功能。
->* AMP for Email是一種新的開放原始碼格式，可讓開發人員建立動態和互動式電子郵件。 目前，有數家電子郵件提供者支援：Gmail、Outlook和Mail.ru。
-
-
-目前，您只能：
+在此版本中，您可以：
 * 測試將AMP電子郵件傳送至正確設定的特定位址。
 * 在向對應的提供者註冊後，將AMP電子郵件傳送至Gmail、Outlook或Mail.ru地址。
 
@@ -39,11 +33,9 @@ Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/abo
 
 此功能可透過Adobe Campaign中的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
 
-對於混合式和托管式架構，此套件必須安裝在所有伺服器上，包括 [中端採購伺服器](../../installation/using/mid-sourcing-server.md) 和執 [行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
+>[!NOTE]
+>>對於混合式和托管式架構，此套件必須安裝在所有伺服器上，包括中 [間採購伺服器](../../installation/using/mid-sourcing-server.md) 和執 [行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
 
-以下影片說明如何在Adobe Campaign Classic中啟動AMP，並展示其使用情形。
-
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## 關於AMP for Email {#about-amp-for-email}
 
@@ -53,6 +45,8 @@ AMP for Email **** new format可讓訊息中加入AMP元件，以利用豐富且
 * 使用AMP撰寫的電子郵件可包含互動式元素，例如影像轉盤。
 * 訊息中的內容會保持最新狀態。
 * 收件者可以採取類似回應表單的動作，而不需離開收件匣。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#amp-email-video)
 
 AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，訊息的AMP版本會以新的MIME部分嵌入電子郵件中，以確保所有電子郵件用戶端的相容性。
 
@@ -218,3 +212,9 @@ AMP for Email是測試版功能，您目前可以嘗試透過兩個步驟傳送A
 >您可以建立郵件處理規則，以防止特定網域收到AMP電子郵件。 請參閱 [管理電子郵件格式](../../installation/using/email-deliverability.md#managing-email-formats)。
 >
 >依預設， **[!UICONTROL AMP inclusion]** 選項會設為 **[!UICONTROL No]**。
+
+## 如何啟動和使用AMP處理電子郵件 {#amp-email-video}
+
+以下影片說明如何在Adobe Campaign Classic中啟動AMP，並展示其使用情形。
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
