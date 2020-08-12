@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 0%
@@ -235,6 +235,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 在此影片中，您將學習如何在現有電子郵件中新增種子和校樣，以及如何傳送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+
 另請參閱：
 * [選擇校對目標](#selecting-the-proof-target)
 
