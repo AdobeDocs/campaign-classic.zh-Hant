@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 8%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 8%
 # 關於促銷活動類型{#about-campaign-typologies}
 
 「促銷活動最佳化」是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這可確保傳送的訊息符合客戶和公司通訊政策的需求和期望。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#typologies-video)
 
 >[!NOTE]
 >
@@ -69,7 +71,7 @@ ht-degree: 8%
 
 在準備交貨期間，當符合標準時，將排除收件者。 您可以檢查日誌以監控排除。本頁提供壓力類型學規則的範例使 [用案例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
 
-## 如何使用類型學規則建立疲勞管理
+## 如何使用類型學規則建立疲勞管理 {#typologies-video}
 
 此影片說明如何運用排版規則，在Adobe Campaign Classic中實作疲勞管理。
 
