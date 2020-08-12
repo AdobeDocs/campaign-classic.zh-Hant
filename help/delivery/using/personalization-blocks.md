@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,15 @@ ht-degree: 0%
 
 個人化區塊是動態、個人化的，並包含您可插入遞送的特定演算。 例如，您可以新增標誌、問候訊息或鏡像頁面的連結。 請參 [閱插入個人化區塊](#inserting-personalization-blocks)。
 
->[!NOTE]
->
->個人化區塊也可從 **[!UICONTROL Digital Content Editor (DCE)]** 。 有關詳細資訊，請參見[此頁面](../../web/using/editing-content.md#inserting-a-personalization-block)。
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#personalization-blocks-video)
 
 個人化區塊可透過Adobe Campaign **[!UICONTROL Resources > Campaign Management > Personalization blocks]** 檔案總管的節點存取。 預設有數個區塊(請參 [閱現成可用的個人化區塊](#out-of-the-box-personalization-blocks))。
 
 您可以定義新區塊，以便最佳化傳遞個人化。 如需詳細資訊，請參閱「定義自 [訂個人化區塊」](#defining-custom-personalization-blocks)。
+
+>[!NOTE]
+>
+>個人化區塊也可從 **[!UICONTROL Digital Content Editor (DCE)]** 。 有關詳細資訊，請參見[此頁面](../../web/using/editing-content.md#inserting-a-personalization-block)。
 
 ## 插入個人化區塊 {#inserting-personalization-blocks}
 
@@ -56,7 +58,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_personalized_block04.png)
 
-您可以將個人化區塊的原始碼包含在傳送內容中。 若要這麼做，請在選 **[!UICONTROL Include the HTML source code of the block]** 取時選取。
+您可以將個人化區塊的原始碼包含在傳送內容中。 若要這麼做，請在選取 **[!UICONTROL Include the HTML source code of the block]** 它時選取。
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
@@ -97,7 +99,7 @@ HTML原始碼會插入傳送內容中。 例如，個人化 **[!UICONTROL Greeti
 
 >[!NOTE]
 >
->個人化區塊的清單取決於實例上已安裝的模組和選項。
+>個人化區塊的清單取決於您實例上已安裝的模組和選項。
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
@@ -160,7 +162,7 @@ HTML原始碼會插入傳送內容中。 例如，個人化 **[!UICONTROL Greeti
 
    * 輸入內容（在HTML、文字、JavaScript等中） 個人化區塊中，然後按一下 **[!UICONTROL Save]**。
 
-## 如何使用動態內容區塊個人化電子郵件
+## 如何使用動態內容區塊個人化電子郵件 {#personalization-blocks-video}
 
 瞭解如何建立動態內容區塊，以及如何使用這些區塊來個人化您的電子郵件傳送內容。
 
