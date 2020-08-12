@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2956'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 # 行銷促銷活動傳送 {#marketing-campaign-deliveries}
 
 傳送可透過促銷活動控制面板、促銷活動工作流程或直接透過傳送概述來建立。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#create-email-video)
 
 ## 建立傳送 {#creating-deliveries}
 
@@ -78,6 +80,13 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >在相同的促銷活動中，您無法設定超過28個工作流程。 超過此限制後，介面中將無法顯示其他工作流程，並可能產生錯誤。
+
+### 如何在促銷活動中建立電子郵件 {#create-email-video}
+
+此影片說明如何在Adobe Campaign Classic中建立促銷活動和電子郵件。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
 
 #### Creating a targeting workflow {#creating-a-targeting-workflow}
 
