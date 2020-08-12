@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1578'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 ### 設定排除設定 {#customizing-exclusion-settings}
 
-地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會自動在收件者描述檔中更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
+地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會在收件者描述檔中自動更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
 
 您可以選擇排除已達到特定數量連續錯誤或品質分級低於此窗口中指定臨界值的地址。 您也可以選擇是否授權尚未傳回任何資料的非合格地址。
 
@@ -173,6 +173,9 @@ ht-degree: 0%
 ## 選擇校對訊息的收件者 {#selecting-the-proof-target}
 
 此證明是特殊訊息，可讓您在傳送傳送至主要目標之前先測試傳送。 證明收件者負責核准訊息的表單和內容。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#seeds-and-proofs-video)
+
 
 要選擇校樣的目標，請執行以下步驟：
 
@@ -230,7 +233,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以結合特定證明目標的定義和使用種子地址的選項來 **[!UICONTROL Specific target and Seed addresses]** 進行。 然後在兩個單獨的子頁籤中定義相關配置。
 
-## 如何管理電子郵件中的種子和校樣
+## 如何管理電子郵件中的種子和校樣 {#seeds-and-proofs-video}
 
 在此影片中，您將學習如何在現有電子郵件中新增種子和校樣，以及如何傳送。
 
