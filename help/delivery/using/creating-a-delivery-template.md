@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 
 # Creating a delivery template{#creating-a-delivery-template}
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#delivery-template-video)
 
 ## 將現有傳送轉換為範本 {#converting-an-existing-delivery-to-a-template}
 
@@ -74,7 +76,7 @@ Right-click and select **[!UICONTROL Actions > Save as template...]**.
 >
 >為避免設定錯誤，建議您複製原生範本並變更其屬性，而不要建立新範本。
 
-## 如何設定傳送範本
+## 如何設定傳送範本 {#delivery-template-video}
 
 以下影片示範如何設定臨機傳送的範本。
 
