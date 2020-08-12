@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '416'
 ht-degree: 4%
 
 ---
@@ -70,10 +70,3 @@ Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳
 
    有關詳情，請參閱關聯 [和建構透過傳送大綱連結的資源](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
-## 如何在促銷活動中建立電子郵件
-
-此影片說明如何在Adobe Campaign Classic中建立促銷活動和電子郵件。
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
