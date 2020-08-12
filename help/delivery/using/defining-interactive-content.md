@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/abo
 此功能可透過Adobe Campaign中的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
 
 >[!NOTE]
->>對於混合式和托管式架構，此套件必須安裝在所有伺服器上，包括中 [間採購伺服器](../../installation/using/mid-sourcing-server.md) 和執 [行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
+> 對於混合式和托管式架構，此套件必須安裝在所有伺服器上，包括 [中端採購伺服器](../../installation/using/mid-sourcing-server.md) 和執 [行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
 
 
 ## 關於AMP for Email {#about-amp-for-email}
@@ -46,11 +46,11 @@ AMP for Email **** new format可讓訊息中加入AMP元件，以利用豐富且
 * 訊息中的內容會保持最新狀態。
 * 收件者可以採取類似回應表單的動作，而不需離開收件匣。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#amp-email-video)
-
 AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，訊息的AMP版本會以新的MIME部分嵌入電子郵件中，以確保所有電子郵件用戶端的相容性。
 
 如需有關AMP for Email格式、規格和需求的詳細資訊，請參閱 [AMP開發人員檔案](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email)。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#amp-email-video)
 
 ## 搭配Adobe Campaign使用AMP for Email的關鍵步驟 {#key-steps-to-use-amp}
 
@@ -169,7 +169,7 @@ AMP for Email是測試版功能，您目前可以嘗試透過兩個步驟傳送A
 >
 >目前只有Gmail、Outlook和Mail.ru支援測試AMP格式。
 
-對於Gmail和Outlook，您必須先將您使用的寄件者位址新增至您所定位之Gmail和Outlook帳戶的允許清單。
+若是Gmail和Outlook，您必須先將您使用的傳送者位址新增至您目標Gmail和Outlook帳戶的允許清單。
 
 操作步驟：
 1. 請確定已勾選啟用動態電子郵件的選項，以找出相關的電子郵件提供者。
