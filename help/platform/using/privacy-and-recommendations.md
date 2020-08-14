@@ -18,12 +18,12 @@ translation-type: tm+mt
 source-git-commit: a3b5378c2e67b9982fa425f32e14e0b1c66e1bf3
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 
-# 隱私權與同意{#privacy-and-recommendations}
+# Privacy and Consent{#privacy-and-recommendations}
 
 ## 一般性建議 {#general-recommendations}
 
@@ -33,7 +33,7 @@ Adobe Campaign是一套功能強大的工具，可用來收集和處理大量資
 
 * 避免傳送未經請求的電子郵件、推播通知和SMS訊息（「垃圾訊息」）。 Adobe堅信許可行銷的原則能夠培養客戶的終身價值和忠誠度，因此嚴禁使用Adobe Campaign傳送未經請求的訊息。
 
-請前往[安全性和隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html)，以了解有關安全性和隱私權需要檢查的核心元素。
+請前往[安全性和隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)，以了解有關安全性和隱私權需要檢查的核心元素。
 
 ### 隱私權法規 {#privacy-regulations}
 
@@ -50,7 +50,7 @@ Adobe Campaign是一套功能強大的工具，可用來收集和處理大量資
 >
 >如需有關GDPR、CCPA、PDPA和LGPD如何套用至Adobe Campaign的詳細資訊，請參 [閱本頁](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
 
-### Adobe Experience Cloud隱私權 {#experience-cloud-privacy}
+### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
 Adobe Campaign是Adobe Experience Cloud解決方案的一部分。 在Campaign中處理隱私權的方式遵循Experience Cloud的一般原則，例如：
 
@@ -73,6 +73,7 @@ Adobe Campaign是Adobe Experience Cloud解決方案的一部分。 在Campaign�
 
    * 您與Adobe Experience Cloud相關的隱私權實務
    * 使用者如何針對Adobe Experience Cloud收集或使用其資訊設定偏好設定
+
    >[!NOTE]
    >
    >至於所有Adobe產品，Campaign使用者可以選擇退出，透過應用程式和網站收集有關他們的資訊。 如需詳細資訊，請參閱 [Adobe Experience Cloud使用資訊常見問答](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html)。
@@ -100,28 +101,28 @@ Adobe Campaign可讓您收集資料，包括個人和敏感資訊。 因此，�
 
 * 讓收件者一律同意接收通訊。 為此，請盡快接受退出要求，並透過雙重加入程式驗證同意。 如需詳細資訊，請參 [閱「建立雙重選擇加入的訂閱表單」](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
 * 請勿匯入詐騙清單，並使用種子位址來檢查您的用戶端檔案是否未被騙用。 有關詳細資訊，請參 [閱關於種子地址](../../delivery/using/about-seed-addresses.md)。
-* 透過許可和權限管理，您可以追蹤收件者的偏好設定，並管理組織內誰可以存取哪些資料。 For more on this, see [this section](#consent).
-* 協助和管理收件者的隱私權要求。 For more on this, see [this section](#privacy-requests).
+* 透過許可和權限管理，您可以追蹤收件者的偏好設定，並管理組織內誰可以存取哪些資料。 如需詳細資訊，請參閱[本區段](#consent)。
+* 協助和管理收件者的隱私權要求。 如需詳細資訊，請參閱[本區段](#privacy-requests)。
 
 ## 隱私權管理 {#privacy-management}
 
-隱私權管理是指所有可協助您遵守隱私權法規（GDPR、CCPA等）的程式和工具。 取得本頁隱私權管理的概 [述](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html)。
+隱私權管理是指所有可協助您遵守隱私權法規（GDPR、CCPA等）的程式和工具。 取得本頁隱私權管理的概 [述](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html)。
 
 Adobe Campaign提供您專屬於隱私權管理的各種功能：
-* 許可管理、資料保留和用戶角色。 請參 [閱本節](#consent)。
-* 隱私權要求（存取權與被遺忘權）。 請參 [閱本節](#privacy-requests)。
-* 選擇退出銷售個人資訊（CCPA專屬）。 請參 [閱本節](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa)。
+* 許可管理、資料保留和用戶角色。 請參閱[本區段](#consent)。
+* 隱私權要求（存取權與被遺忘權）。 請參閱[本區段](#privacy-requests)。
+* 選擇退出銷售個人資訊（CCPA專屬）。 請參閱[本區段](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html#ccpa)。
 
 本節將提供Campaign中的主要隱私權功能及相關角色的 [範例](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow)。
 
 
 ### 同意、保留和角色 {#consent}
 
-Adobe Campaign原本提供對隱私權至關重要的功能：
+Adobe Campaign原本提供對隱私權至關重要的重要功能：
 
-* **許可管理**: 透過訂閱管理程式，您可以管理收件者的偏好設定，並追蹤哪些收件者已選擇加入何種訂閱類型。 如需詳細資訊，請參閱關於 [訂閱](../../delivery/using/about-services-and-subscriptions.md)。
-* **資料保留**: 所有內置的標準日誌表都具有預設的保留期，通常將其資料儲存限制在6個月或更短。 您可以使用工作流程設定額外的保留期。 如需詳細資訊，請洽詢Adobe顧問或技術管理員。
-* **權限管理**: Adobe Campaign可讓您透過不同的預先建立或自訂角色，管理指派給各種Campaign運算子的權限。 這可讓您管理公司內可存取、修改或匯出不同類型資料的人員。 有關詳細資訊，請參 [閱關於訪問管理](../../platform/using/access-management.md)。
+* **許可管理**:透過訂閱管理程式，您可以管理收件者的偏好設定，並追蹤哪些收件者已選擇加入何種訂閱類型。 如需詳細資訊，請參閱關於 [訂閱](../../delivery/using/about-services-and-subscriptions.md)。
+* **資料保留**:所有內置的標準日誌表都具有預設的保留期，通常將其資料儲存限制在6個月或更短。 您可以使用工作流程設定額外的保留期。 如需詳細資訊，請洽詢Adobe顧問或技術管理員。
+* **權限管理**:Adobe Campaign可讓您透過不同的預先建立或自訂角色，管理指派給各種Campaign運算子的權限。 這可讓您管理公司內可存取、修改或匯出不同類型資料的人員。 有關詳細資訊，請參 [閱關於訪問管理](../../platform/using/access-management.md)。
 
 如需這些功能以及如何在Adobe Campaign中管理這些功能的詳細資訊，請參 [閱本頁](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)。
 
@@ -145,7 +146,7 @@ Adobe Campaign提供其他功能，協助您做為資料掌控者，針對特定
 
 Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
 
-此頁 **會顯示** 「存取 **」和「刪** 除」請求 [](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess)。 建立這些請求的實作步驟在本節中 [詳述](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)。 <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+此頁 **會顯示** 「存取 **」和「刪** 除」請求 [](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess)。 建立這些請求的實作步驟在本節中 [詳述](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)。 <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
 
 ## 追蹤功能 {#tracking-capabilities}
 
@@ -163,13 +164,13 @@ Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug,
 
 ### 訊息追蹤 {#message-tracking}
 
-Adobe Campaign可讓您追蹤傳送的電子郵件和傳送收件人的行為： 開啟、點按連結、取消訂閱等。 如需詳細資訊，請參閱關於 [訊息追蹤](../../delivery/using/about-message-tracking.md)。
+Adobe Campaign可讓您追蹤傳送的電子郵件和傳送收件人的行為：開啟、點按連結、取消訂閱等。 如需詳細資訊，請參閱關於 [訊息追蹤](../../delivery/using/about-message-tracking.md)。
 
 若要這麼做，請將追 [蹤的連結新增至訊息](../../delivery/using/how-to-configure-tracked-links.md)[](../../delivery/using/monitoring-a-delivery.md#tracking-logs) ，以便在傳送控制面板的「追蹤」標籤中測量傳送和收件者行為的影響。 追蹤資料會在「追蹤指 [標」報表中解譯](../../reporting/using/delivery-reports.md#tracking-indicators) 。
 
 ### 網路追蹤 {#web-tracking}
 
-Adobe Campaign也可讓您監控收件者瀏覽您網站的方式： 插入追蹤標籤，以收集資訊並測量網頁應用程式頁面上的瀏覽。 如需詳細資訊，請參閱 [追蹤Web應用程式](../../web/using/tracking-a-web-application.md)。
+Adobe Campaign也可讓您監控收件者瀏覽您網站的方式：插入追蹤標籤，以收集資訊並測量網頁應用程式頁面上的瀏覽。 如需詳細資訊，請參閱 [追蹤Web應用程式](../../web/using/tracking-a-web-application.md)。
 
 本節將介紹Web跟蹤的 [配置](../../configuration/using/about-web-tracking.md)。
 
