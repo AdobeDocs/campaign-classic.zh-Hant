@@ -1,7 +1,7 @@
 ---
-title: 測試並傳送常見問答集
+title: 測試並傳送常見問題集
 seo-title: 驗證、傳送及追蹤訊息
-description: Campaign Classic常見問答集
+description: Campaign Classic 常見問題集
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,31 +13,34 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+workflow-type: ht
+source-wordcount: '755'
+ht-degree: 100%
 
 ---
 
 
-# 驗證、傳送及追蹤訊息 {#validate-send-track}
+# 驗證、傳送及追蹤訊息{#validate-send-track}
 
-## 測試與驗證 {#test-and-validate-before-sending}
+## 測試與驗證{#test-and-validate-before-sending}
 
 了解在傳送訊息之前，如何先在 Adobe Campaign 中執行測試和驗證流程。
 
-### What is the delivery analysis? {#what-is-the-delivery-analysis-}
+### 什麼是傳遞分析？{#what-is-the-delivery-analysis-}
 
 傳遞分析是計算目標母體以及準備傳遞內容的階段。完成傳遞分析後便可傳遞內容。查閱記錄以確定所有事項都正確無誤。
 
 [按一下這裡以了解更多資訊](../../delivery/using/steps-validating-the-delivery.md)。
 
-### Why should I create proofs? {#why-should-i-create-proofs-}
+### 為何要建立測試？{#why-should-i-create-proofs-}
 
-Adobe強烈建議建立證明訊息，以在將您的傳送傳送至主要目標之前，先在核准群組上測試傳送。 那麼您就可以驗證訊息內容、個人化及傳遞參數。
+Adobe 強烈建議您先建立測試訊息，並在正式發送前先行在核准組測試傳送內容。那麼您就可以驗證訊息內容、個人化及傳遞參數。
 
 [按一下這裡以了解更多資訊](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。您也可以觀看[此短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html)。
 
-### How to use seed addresses in Adobe Campaign? {#how-to-use-seed-addresses-in-adobe-campaign-}
+### 如何在 Adobe Campaign 使用種子地址？{#how-to-use-seed-addresses-in-adobe-campaign-}
 
 種子地址用於鎖定不符合所定義的目標準則的收件者。這些收件者會新增至目標中：可直接於傳遞或行銷活動中匯入或建立這些收件者。如果是直效行銷郵件傳遞，則會在摘取期間新增收件者，並在輸出文件中進行混合。
 
@@ -48,13 +51,13 @@ Adobe強烈建議建立證明訊息，以在將您的傳送傳送至主要目標
 
 [按一下這裡以深入了解種子地址](../../delivery/using/about-seed-addresses.md)。
 
-### How can I set up an approval process before sending messages? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
+### 如何設定傳送訊息前的核准過程？{#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
 若要檢測訊息設定中可能出現的錯誤，Adobe 強烈建議您設定傳遞驗證階段。要經常性地透過傳送驗證訊息測試收件者，確保核准內容。每次進行變更時都必須傳送驗證訊息，以核准內容。
 
 [按一下這裡以了解更多資訊](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-### What is a typology rule? {#what-is-a-typology-rule-}
+### 什麼是類型規則？{#what-is-a-typology-rule-}
 
 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。
 
@@ -64,33 +67,33 @@ Adobe強烈建議建立證明訊息，以在將您的傳送傳送至主要目標
 
 了解如何使用 Adobe Campaign 於各個通路中傳送訊息。
 
-### How can I send emails in waves? {#how-can-i-send-emails-in-waves-}
+### 如何分批次傳送電子郵件？{#how-can-i-send-emails-in-waves-}
 
 在將內容傳送給較大母體之前，您可以[設定批次](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)以將訊息劃分為幾個批次，以平衡其負載。
 
-### Which are the key steps to create an email in Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
+### 在 Campaign 建立電子郵件有哪些重要步驟？{#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
-建立並驗證電子郵件之後，您就可以進行傳送。您可以決定立即將電子郵件傳送至主要目標，或排程稍後的傳送。 如有需要，您也可以先行估計目標母體。
+建立並驗證電子郵件之後，您就可以進行傳送。您可以決定立即向主要目標傳送電子郵件，還是在以後排程傳遞。如有需要，您也可以先行估計目標母體。
 
 [按一下這裡以了解更多資訊](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-### How to schedule a delivery? {#how-to-schedule-a-delivery-}
+### 如何排程傳遞？{#how-to-schedule-a-delivery-}
 
 為了排程傳遞，管理銷售壓力以及避免過度行銷，您可以推延郵件的傳遞。
 
 [按一下這裡以了解更多資訊](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)。
 
-### Can I add an attachment to emails? {#can-i-add-an-attachment-to-emails-}
+### 我可以將附件新增至電子郵件嗎？{#can-i-add-an-attachment-to-emails-}
 
-有了Campaign Classic，您可以在電子郵件中新增個人化附件。
+使用 Campaign Classic，您可以在電子郵件加入個人化的附件。
 
-[按一下這裡以進一步瞭解電子郵件附件](../../delivery/using/attaching-files.md)。
+[按一下這裡以深入暸解電子郵件附件](../../delivery/using/attaching-files.md)。
 
 ## 追蹤訊息並評估其帶來的影響 {#track-your-messages-and-measure-their-impact}
 
 傳送訊息之後，透過 Adobe Campaign 了解如何追蹤和度量產生的影響。
 
-### How can I configure tracked links in an email delivery? {#how-can-i-configure-tracked-links-in-an-email-delivery-}
+### 如何在電子郵件傳遞中設定追蹤連結？{#how-can-i-configure-tracked-links-in-an-email-delivery-}
 
 對於每次傳遞，您都可以追蹤訊息是否收到，以及郵件內容中的連結是否被點擊。這樣，您可以在目標傳遞行動實施後，追蹤收件者的行為。
 
@@ -98,17 +101,17 @@ Adobe強烈建議建立證明訊息，以在將您的傳送傳送至主要目標
 
 [按一下這裡以深入了解](../../delivery/using/about-message-tracking.md)如何透過 Campaign Classic 追蹤訊息。
 
-### Where can I access delivery and tracking logs? {#where-can-i-access-delivery-and-tracking-logs-}
+### 我可以在哪裡存取傳遞內容和追蹤記錄？{#where-can-i-access-delivery-and-tracking-logs-}
 
 [透過本頁面](../../delivery/using/monitoring-a-delivery.md)了解如何追蹤您發送的郵件，了解收件者的行為。
 
-### Where can I get delivery reports? {#where-can-i-get-delivery-reports-}
+### 我在哪裡可以取得傳遞報告？{#where-can-i-get-delivery-reports-}
 
 Adobe Campaign 隨附一組報表，用於監視傳遞信件並追蹤您的訊息。
 
 [按一下這裡以深入了解內建報表](../../reporting/using/delivery-reports.md)。
 
-### How does Adobe Campaign qualify and manage quarantine addresses? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
+### Adobe Campaign 如何選定和管理隔離地址？{#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
 Adobe Campaign 管理隔離地址的清單。在執行傳遞分析時，預設情況下將不會向被隔離的收件者的電郵地址傳送內容。例如信箱容量已滿或地址不存在時，您可以隔離電子郵件地址。
 
