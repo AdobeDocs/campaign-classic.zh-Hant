@@ -1,7 +1,7 @@
 ---
-title: 載入傳送內容
-seo-title: 載入傳送內容
-description: 載入傳送內容
+title: 載入傳遞內容
+seo-title: 載入傳遞內容
+description: 載入傳遞內容
 seo-description: null
 page-status-flag: never-activated
 uuid: f2004fb0-9beb-463f-9903-10f291b3663e
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 4%
 
 ---
 
 
-# 載入傳送內容{#loading-delivery-content}
+# 載入傳遞內容{#loading-delivery-content}
 
 如果您的傳送內容位於Amazon S3、FTP或SFTP伺服器上的HTML檔案中，您就可輕鬆將此內容載入Adobe Campaign傳送。
 
@@ -37,6 +40,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    * 用來連線至S3或(S)FTP伺服器的外部帳戶。
    * S3或(S)FTP伺服器上檔案的路徑。
+
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
 1. 新增活 **[!UICONTROL Delivery]** 動，並將其連接至活動的出站轉 **[!UICONTROL File transfer]** 換。 按如下方式配置：
@@ -45,6 +49,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
    * 收件者：在此範例中，會將目標視為在傳送本身中指定。
    * 內容：即使內容已匯入上一個活動，請選取 **[!UICONTROL Specified in the delivery]**。 由於內容直接從位於遠程伺服器上的檔案導入，因此在工作流處理時它沒有標識符，不能標識為來自入站事件。
    * 要執行的動作：選 **[!UICONTROL Save]** 擇以儲存傳送，並在執行工作流程後 **[!UICONTROL Campaign management]** , **[!UICONTROL Deliveries]** 即可從>存取。
+
    ![](assets/delivery_loadcontent_activityexample.png)
 
 1. 在活動 **[!UICONTROL Script]** 的標籤中， **[!UICONTROL Delivery]** 新增下列命令，以載入傳送中匯入檔案的內容：
@@ -60,4 +65,3 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 >[!NOTE]
 >
 >有關SFTP伺服器使用的最佳實務和疑難排 [解，請參閱本頁](../../platform/using/sftp-server-usage.md)。
-
