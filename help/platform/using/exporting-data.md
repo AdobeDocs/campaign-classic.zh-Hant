@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: b690e6c7141ba88c8ce72f631ec24fc068ade8f5
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
    原生範本為 **[!UICONTROL New text export]**。 不得修改此範本，但您可以復制它以配置新範本。By default, export templates are saved in the **[!UICONTROL Resources > Templates > Job templates]** node.
 
 1. Enter a name for export in the **[!UICONTROL Label]** field. 您可以添加描述。
-1. 選擇匯出類型。匯出有兩種可能類型：只 **[!UICONTROL Simple export]** 要從一種或多種源文檔 **[!UICONTROL Multiple export]** 中導出一個檔案，並在單次執行中導出多個檔案。
+1. 選擇匯出類型。匯出有兩種可能類型： **[!UICONTROL Simple export]** 只導出一個檔案，並在單 **[!UICONTROL Multiple export]** 次執行中從一個或多個類型的源文檔導出多個檔案。
 
 ### 第 2 步 - 要匯出的檔案類型 {#step-2---type-of-file-to-export}
 
@@ -50,7 +53,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* 依預設，會選 **[!UICONTROL Download the file generated on the server after the export]** 取選項。 In the **[!UICONTROL Local file]** field, fill in the name and path of the file to be created, or browse your local disk by clicking the folder to the right of the field. 您可以取消選擇此選項以輸入伺服器輸出檔案的存取路徑和名稱。
+* By default, the **[!UICONTROL Download the file generated on the server after the export]** option is selected. In the **[!UICONTROL Local file]** field, fill in the name and path of the file to be created, or browse your local disk by clicking the folder to the right of the field. 您可以取消選擇此選項以輸入伺服器輸出檔案的存取路徑和名稱。
 
    >[!NOTE]
    >
@@ -73,7 +76,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
 * For **[!UICONTROL Text]** format, select the delimiters to separate the columns (tabs, commas, semi-colons, or custom) and the strings (single or double quotes, or none).
 * 對於 **[!UICONTROL text]** 和 **[!UICONTROL CSV]**，您可以選取選項 **[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和數字格式。To do this, click the **[!UICONTROL Edit]** button for the field concerned and use the editor.
-* 對於包含列舉值的欄位，您可以選取 **[!UICONTROL Export labels instead of internal values of enumerations]**。 For example, the title can be stored in the form **1=Mr.**, **2=Miss**,** 3=Mrs.**. 如果選擇此選項，將匯出&#x200B;**先生**、**小姐**&#x200B;和&#x200B;**太太**。
+* 對於包含列舉值的欄位，您可以選取 **[!UICONTROL Export labels instead of internal values of enumerations]**。 For example, the title can be stored in the form **1=Mr.**, **2=Miss**, **3=Mrs.**. 如果選擇此選項，將匯出&#x200B;**先生**、**小姐**&#x200B;和&#x200B;**太太**。
 
 ### 第 4 步 - 資料選擇 {#step-4---data-selection}
 
@@ -109,6 +112,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
    * 切換到小寫
    * 切換到大寫
    * 第一個字母大寫
+
    ![](assets/s_ncs_user_export_wizard06.png)
 
 * Click **[!UICONTROL Add a calculated field]** if you want to create a new calculated field (for example, a column containing last name + first name). For more on this, refer to [Calculated fields](../../platform/using/importing-data.md#calculated-fields).
