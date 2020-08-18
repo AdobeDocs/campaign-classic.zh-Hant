@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：建立概述」
-seo-title: 「使用案例：建立概述」
-description: 「使用案例：建立概述」
+title: '"使用案例：建立概述"'
+seo-title: '"使用案例：建立概述"'
+description: '"使用案例：建立概述"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 404ae82b-2766-4802-8673-aaaa26868f46
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: b01252d57ec4ca5c5c87e69566079c48d7363e38
+workflow-type: tm+mt
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
 
-# 使用案例：建立覆蓋{#use-cases-creating-overviews}
+# 使用案例：建立概述{#use-cases-creating-overviews}
 
 在下例中，我們將建立概述類型的Web應用程式，以顯示資料庫中的所有Web應用程式。 設定下列元素：
 
@@ -32,7 +35,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## 建立單頁Web應用程式 {#creating-a-single-page-web-application}
+## Creating a single-page Web application {#creating-a-single-page-web-application}
 
 1. 建立單一Web應 **[!UICONTROL Page]** 用程式，並停用傳出轉場和轉場至下一頁。
 
@@ -94,7 +97,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    在我們的範例中，標籤是 **New**。
 
-1. 在URL欄位中插入下列URL: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**。
+1. 在URL欄位中插入下列URL: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**.
 
    >[!NOTE]
    >
@@ -103,7 +106,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    >**nms:newWebApp** 與新的Web應用程式建立嚮導一致。
 
 1. 選擇以在相同視窗中顯示URL。
-1. 在影像欄位中新增Web應用程式圖示： **/nms/img/webApp.png**。
+1. 在影像欄位中新增Web應用程式圖示： **/nms/img/webApp.png**.
 
    此圖示將出現在按鈕 **[!UICONTROL New]** 上。
 
@@ -201,10 +204,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 將游標置於清單元素上，並透過標籤建立篩選 **[!UICONTROL Data > Filter]** 器：
 
-   * **** 運算式：「建立者」連結的外鍵
-   * **** 運算元：等於
-   * **** 值：變數（變數）
-   * **** 在下列情況下，請考慮：&#39;$(var2/@id)&#39;!=&quot;
+   * **運算式：** 「建立者」連結的外鍵
+   * **運算元：** 等於
+   * **值：** 變數（變數）
+   * **在下列情況下，請考慮：** &#39;$(var2/@id)&#39;!=&quot;
+
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
@@ -215,12 +219,12 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 將游標置於容器上，並透過選 **[!UICONTROL Link]** 單插入 **[!UICONTROL Static elements]** 一個。
 1. 修改標籤。
-1. Select **[!UICONTROL Refresh data in a list]**.
+1. 選取 **[!UICONTROL Refresh data in a list]**。
 1. 新增先前建立的清單。
 
    ![](assets/s_ncs_configuration_webapp_refreshlink.png)
 
-1. 在欄位中新增重新整理 **[!UICONTROL Image]** 圖示：**/xtk/img/refresh.png **。
+1. 在欄位中新增重新整理 **[!UICONTROL Image]** 圖示： **/xtk/img/refresh.png**.
 1. 使用排序順序箭頭，重新組織Web應用程式的各種元素，如下所示。
 
    ![](assets/s_ncs_configuration_webapp_orderelements.png)
