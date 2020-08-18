@@ -15,20 +15,35 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 25%
 
 ---
 
 
-# 匯出和匯入用戶檔案{#exporting-and-importing-profiles}
+# Importing and exporting profiles{#exporting-and-importing-profiles}
 
-收件者用戶檔案可匯入至 Adobe Campaign 資料庫或匯出並儲存在資料庫外部的檔案中。
+您可以使 [用工作流程](#use-workflows) ，將收件者描述檔匯入或匯出至Adobe Campaign資料庫，或設定一 [般匯入或匯出工作](#create-jobs)。
 
-To configure and execute data imports and exports, go to the **[!UICONTROL Profiles and targets]** universe and click the **[!UICONTROL Jobs]** link.
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#import-profiles-video)
+
+## 使用工作流程{#use-workflows}
+
+Exports and imports are configured in dedicated templates executed through workflows via the **[!UICONTROL Import]** and **[!UICONTROL Export]** activities. 它們可以根據時間表自動重複，例如多個資訊系統之間的自動化資料交換。[進一步瞭解](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+
+如有必要，您可以透過下述功能，建立偶爾匯入或匯 **[!UICONTROL Generic imports and exports]** 出的工作。
+
+## 建立工作{#create-jobs}
+
+若要設定並執行資料匯入與匯出工作，請前往標 **[!UICONTROL Profiles and targets]** 簽並按一下連 **[!UICONTROL Jobs]** 結。 [進一步瞭解](../../platform/using/generic-imports-and-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
->[!NOTE]
->
->資料匯入和匯出會顯示在「一 [般匯入和匯出」](../../platform/using/generic-imports-and-exports.md) ，以 [及此視訊中](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)。
 
+## How to import profiles{#import-profiles-video}
+
+此影片說明如何在Adobe Campaign中匯入設定檔，以便偶爾匯入。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
