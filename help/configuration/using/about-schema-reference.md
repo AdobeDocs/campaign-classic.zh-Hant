@@ -13,18 +13,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: d4ebaaf90d88cbec9a4d24d79eaf7c46890d933a
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 7%
 
 ---
 
 
-# 關於架構參考{#about-schema-reference}
+# 關於綱要參考{#about-schema-reference}
 
 本章說明如何設定擴充架構，以擴充Adobe Campaign資料庫的概念資料模型。
 
-如需深入瞭解Campaign內建表格及其互動，請參閱 [Campaign Classic資料模型](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)。
+如需深入瞭解Campaign內建表格及其互動，請參閱 [Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
-在XML中描述了應用中資料的物理和邏輯結構。 它遵循Adobe Campaign的特定語法，稱為 **架構**。
+並以 XML 描述了應用程式中資料的實體和邏輯結構。It obeys a grammar specific to Adobe Campaign, called a **schema**.
 
 方案是與資料庫表關聯的XML文檔。 它定義了資料結構，並描述了表的SQL定義：
 
@@ -49,7 +52,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ## 結構的語法 {#syntax-of-schemas}
 
-方案的根元素為 **`<srcschema>`**。 它包含** **`<element>`** 和 **`<attribute>`** 子元素。
+方案的根元素為 **`<srcschema>`**。 它包含 **`<element>`** 和 **`<attribute>`** 子元素。
 
 第一 **`<element>`** 個子元素與圖元的根重合。
 
