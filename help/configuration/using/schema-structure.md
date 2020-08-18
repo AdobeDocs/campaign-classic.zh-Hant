@@ -1,7 +1,7 @@
 ---
-title: 架構結構
-seo-title: 架構結構
-description: 架構結構
+title: 綱要結構
+seo-title: 綱要結構
+description: 綱要結構
 seo-description: null
 page-status-flag: never-activated
 uuid: 9be70907-6154-4890-91e8-fd0fac30ab05
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 8e4fc977daf9039ee8587bf505d7406fd863e68b
+workflow-type: tm+mt
+source-wordcount: '1566'
+ht-degree: 1%
 
 ---
 
 
-# 架構結構{#schema-structure}
+# 綱要結構{#schema-structure}
 
 一種基本結 `<srcschema>` 構如下：
 
@@ -129,7 +132,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 * 只有 **`<element>`** 元素可以包含 **`<attribute>`** XML **`<element>`** 結構中的元素和元素。
 * 元 **`<attribute>`** 素在中必須有唯一名稱 **`<element>`**。
-* 建議在多行資料字串中使用**`<elements>`**。
+* 建議在多 **`<elements>`** 行資料字串中使用。
 
 ## 資料類型 {#data-types}
 
@@ -152,7 +155,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 * **datetimenotz**:日期+時間，不含時區資料。
 * **時間平移**:持續時間。 範例：資歷。
 * **備忘**:長文字欄位（多行）。 範例：說明、注釋等。
-* **uuid**:「uniqueidentifier」欄位，以支援GUID（僅限Microsoft SQL Server支援）。
+* **uuid**:「uniqueidentifier」欄位，以支援GUID（僅適用於Microsoft SQL Server）。
 
    >[!NOTE]
    >
@@ -188,7 +191,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
    <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 字串<br /> </td> 
+   <td> String<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2（NVARCHAR2，如果unicode）<br /> </td> 
    <td> VARCHAR（如果為Unicode，則為VARCHAR字元集UNICODE）<br /> </td> 
@@ -252,11 +255,11 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> 時間<br /> </td> 
-   <td> 時間<br /> </td> 
+   <td> Time<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> 浮點<br /> </td> 
-   <td> 時間<br /> </td> 
-   <td> 時間<br /> </td> 
+   <td> TIME<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> 浮點<br /> </td> 
   </tr> 
   <tr> 
@@ -284,8 +287,8 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
    <td> 浮點<br /> </td> 
   </tr> 
   <tr> 
-   <td> 備忘錄<br /> </td> 
-   <td> 文字<br /> </td> 
+   <td> Memo<br /> </td> 
+   <td> TEXT<br /> </td> 
    <td> CLOB（如果是Unicode，則為NCLOB）<br /> </td> 
    <td> CLOB（如果為Unicode，則為CLOB字元集UNICODE）<br /> </td> 
    <td> CLOB(6M)<br /> </td> 
@@ -425,7 +428,7 @@ enum屬 **性** ，是指在主要元素外的架構中填入的列舉類的定�
 
    ![](assets/d_ncs_configuration_schema_dbenum.png)
 
-### Example {#example}
+### 範例 {#example}
 
 以下是我們的範例架構，其中填入了屬性：
 
@@ -448,7 +451,7 @@ enum屬 **性** ，是指在主要元素外的架構中填入的列舉類的定�
 </srcSchema>
 ```
 
-## 系列 {#collections}
+## 集合 {#collections}
 
 系列是具有相同名稱和相同階層層級的元素清單。
 
@@ -482,8 +485,8 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 * **@email**:選擇電子郵件，
 * **location/@city**:在元素下選擇「city」屬 **`<location>`** 性
 * **../@email**:從當前元素的父元素中選擇電子郵件地址
-* **群組`[1]/@label`**:選擇作為第一個收集元素子項的「標籤」**`<group>`**屬性
-* **群組`[@label='test1']`**:選擇元素的子項「label」屬性，**`<group>`**並包含值「test1」
+* **群組`[1]/@label`**:選擇作為第一個收集元素子項的「標籤」 **`<group>`** 屬性
+* **群組`[@label='test1']`**:選擇元素的子項「label」屬性， **`<group>`** 並包含值「test1」
 
 >[!NOTE]
 >
@@ -491,6 +494,7 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 >
 >* **location/@city** is not valid;please use **`[location/@city]`**
 >* **`[@email]`** 和 **@email** is equivalent
+
 >
 
 
@@ -529,7 +533,7 @@ Compute **字串** ，是透過資料 **`<compute-string>`** 架構主要元素�
 </srcSchema>
 ```
 
-收件者的計算字串結果：Doe **John(john.doe@aol.com)**
+收件者的計算字串結果： **Doe John(john.doe@aol.com)**
 
 >[!NOTE]
 >
