@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 5598682078a8fd3c8d9ecdca083f3a310c48f5f0
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 0%
+source-wordcount: '1120'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->另請參閱安裝 [指南](../../installation/using/general-architecture.md) ，以及 [組建升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) 。
+>另請參閱安裝 [指南](../../installation/using/general-architecture.md) ，以及 [組建升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 。
 
 ## 在Windows中 {#in-windows}
 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 在安裝(**nlserver web**)Adobe Campaign應用程式伺服器的機器上，下載並複製檔案
 
-**setup-client-6。** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 在**應[用程式的路徑]**datakitlengjsp
 
@@ -271,7 +271,7 @@ ht-degree: 0%
 
 在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的機器上，擷取下列套件：
 
-**setup-client-6。** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 並複製，另存 **為/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
