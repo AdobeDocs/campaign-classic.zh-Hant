@@ -1,7 +1,7 @@
 ---
-title: 出版物範本
-seo-title: 出版物範本
-description: 出版物範本
+title: 發佈範本
+seo-title: 發佈範本
+description: 發佈範本
 seo-description: null
 page-status-flag: never-activated
 uuid: 1976f70c-b2d8-44ca-8fc3-6451fb67d18b
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
 
-# 出版物範本{#publication-templates}
+# 發佈範本{#publication-templates}
 
 ## 關於出版物範本 {#about-publication-templates}
 
@@ -34,13 +37,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 出版物範本由其名稱和命名空間來識別。
 
-樣式表的標識鍵是由命名空間和名稱以冒號分隔的字串組成；例如： **自訂：電子報**。
+樣式表的標識鍵是由命名空間和名稱以冒號分隔的字串組成；例如： **cus:newsletter**.
 
 >[!NOTE]
 >
 >在實踐中，建議對架構、表單和發佈模板使用相同的鍵。
 
-## 建立和配置模板 {#creating-and-configuring-the-template}
+## Creating and configuring the template {#creating-and-configuring-the-template}
 
 依預設，出版物範本會儲存在節 **[!UICONTROL Administration > Configuration > Publication templates]** 點中。 若要建立新範本，請按一 **[!UICONTROL New]** 下範本清單上方的按鈕。
 
@@ -68,7 +71,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 出版物 {#publication}
 
-發佈包括以檔案形式生成輸出文檔（如果選擇的類型為） **[!UICONTROL File]**。
+發佈包括以檔案的形式生成輸出文檔（如果選擇的類型為） **[!UICONTROL File]**。
 
 ![](assets/d_ncs_content_model2.png)
 
@@ -78,7 +81,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * 此選 **[!UICONTROL Multi-file generation]** 項可激活特殊的文檔發佈模式。 此選項包括在輸出文檔的每個頁面的開頭填充分區標籤。 產生內容會針對每個填入的分區標籤產生檔案。 此模式用於從內容區塊產生迷你網站。 for more on this, refer to [Multi-file generation](#multi-file-generation).
 * 該 **[!UICONTROL Location]** 欄位包含輸出檔案的名稱。 名稱可由變陣列成，以產生自動檔案名稱。
 
-   變數會填入下列格式：**`$(<xpath>)`，其中 `<xpath>` 是發佈模板資料架構的欄位的路徑。
+   變數會填入下列格式： **`$(<xpath>)`**，其中 **`<xpath>`** 是發佈模板資料模式的欄位的路徑。
 
    檔案的名稱可由日期類型欄位組成。 若要正確格式化此欄位，請使 **用$date-format** 函式，使用欄位路徑和輸出格式作為參數。
 
@@ -116,7 +119,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** 其中 **`<name_of_file>`** 是要產生之頁面的檔案名稱。
 
-**範例：**使用「cus:book」架構產生多個檔案。
+**範例：** 使用「cus:book」架構產生多個檔案。
 
 其原則是產生一個列出章節的首頁面，並可在外部頁面中顯示章節的詳細資訊。
 
