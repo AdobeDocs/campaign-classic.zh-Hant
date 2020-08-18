@@ -1,7 +1,7 @@
 ---
-title: 建立和配置資料庫
-seo-title: 建立和配置資料庫
-description: 建立和配置資料庫
+title: 建立和設定資料庫
+seo-title: 建立和設定資料庫
+description: 建立和設定資料庫
 seo-description: null
 page-status-flag: never-activated
 uuid: e5143d55-61fa-416a-80db-c29a0caf9a3e
@@ -15,20 +15,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 1%
 
 ---
 
 
-# 建立和配置資料庫{#creating-and-configuring-the-database}
+# 建立和設定資料庫{#creating-and-configuring-the-database}
 
 當您建立資料庫時，Adobe Campaign提供兩種不同的選項：
 
-1. 建立或循環使用資料庫： 如果要建立新資料庫或重新使用現有資料庫，請選擇此選項。 請參閱 [案例1: 建立／回收資料庫](#case-1--creating-recycling-a-database)。
-1. 使用現有資料庫： 如果管理員已建立空資料庫且您想使用它，請選擇此選項； 或擴展現有資料庫的結構。 請參閱 [案例2: 使用現有資料庫](#case-2--using-an-existing-database)。
+1. 建立或循環使用資料庫：如果要建立新資料庫或重新使用現有資料庫，請選擇此選項。 請參閱 [案例1:建立／回收資料庫](#case-1--creating-recycling-a-database)。
+1. 使用現有資料庫：如果管理員已建立空資料庫且您想使用它，請選擇此選項；或擴展現有資料庫的結構。 請參閱 [案例2:使用現有資料庫](#case-2--using-an-existing-database)。
 
 下面將詳述配置步驟。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 >
 >只有內 **部識** 別碼才能執行這些操作。 For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## 案例1: 建立／回收資料庫 {#case-1--creating-recycling-a-database}
+## 案例1:建立／回收資料庫 {#case-1--creating-recycling-a-database}
 
 建立資料庫或回收現有資料庫的步驟如下。 某些配置取決於使用的資料庫引擎：
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-支援的資料庫在「相容性」一節 [中顯示](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+支援的資料庫在「相容性」一節 [中顯示](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
 
 確定伺服器並選擇要執行的操作類型。 在這個例子中， **[!UICONTROL Create or recycle a database]**.
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 * 對於 **PostgreSQL** 或 **** DB2引擎，必須指定在應用程式伺服器上定義的DNS名稱（或IP地址）才能訪問資料庫伺服器。
 * 對於 **Microsoft SQL Server** Engine，必須定義：
 
-   1. 應用伺服器上定義的用於訪問資料庫伺服器的DNS名稱（或IP地址）: **DNS** 或 **DNS\ `<instance>`**（例項模式）,
+   1. 應用伺服器上定義的用於訪問資料庫伺服器的DNS名稱（或IP地址）: **DNS** 或 **DNS\`<instance>`** （例項模式）,
    1. 用於訪問Microsoft SQL Server的驗證方法： **[!UICONTROL SQL Server authentication]** 或 **[!UICONTROL Windows NT authentication]**&#x200B;者。
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -132,12 +132,12 @@ ht-degree: 0%
 
 * 對於Oracle、Microsoft SQL Server或PostgreSQL資料庫，管理員還可以定義建立資料庫對 **像時要使用的儲存參數** 。
 
-   這些參數會接收到確切的表空間名稱(警告： 區分大小寫)。 它們分別儲存在節 **[!UICONTROL Administration > Platform > Options]** 點中的以下選項：
+   這些參數會接收到確切的表空間名稱(警告：區分大小寫)。 它們會分別儲存在 **[!UICONTROL Administration > Platform > Options]** 節點的下列選項中(請參 [](../../installation/using/configuring-campaign-options.md#database)閱):
 
-   * **WdbcOptions_TableSpaceUser**: 基於方案的用戶表
-   * **WdbcOptions_TableSpaceIndex**: 基於方案的用戶表索引
-   * **WdbcOptions_TableSpaceWork**: 無架構的工作表
-   * **WdbcOptions_TableSpaceWorkIndex**: 沒有模式的工作表索引
+   * **WdbcOptions_TableSpaceUser**:基於方案的用戶表
+   * **WdbcOptions_TableSpaceIndex**:基於方案的用戶表索引
+   * **WdbcOptions_TableSpaceWork**:無架構的工作表
+   * **WdbcOptions_TableSpaceWorkIndex**:沒有模式的工作表索引
 
 * 對於Oracle資料庫，Adobe Campaign用戶必須具有對Oracle庫的訪問權，通常作為Oinstall組的 **成員** 。
 * 此選 **[!UICONTROL Set or change the administrator password]** 項可讓您輸入連結至具有管理員權限之Adobe Campaign運算子的密碼。
@@ -162,11 +162,11 @@ ht-degree: 0%
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## 案例2: 使用現有資料庫 {#case-2--using-an-existing-database}
+## 案例2:使用現有資料庫 {#case-2--using-an-existing-database}
 
 資料庫以及用戶必須由資料庫管理員建立，並且訪問權限必須正確配置。
 
-例如，對於Oracle資料庫，最低要求的權限為： 授予連接、資源和無限表空間。
+例如，對於Oracle資料庫，最低要求的權限為：授予連接、資源和無限表空間。
 
 要使用現有資料庫，配置步驟如下：
 
