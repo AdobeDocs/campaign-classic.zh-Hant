@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '999'
 ht-degree: 58%
 
 ---
@@ -95,9 +95,9 @@ ht-degree: 58%
 1. 如果您使用的是基於金鑰的身份驗證，請檢查您使用的金鑰是否與為執行個體配置提供給 Adobe 支援團隊的金鑰相同。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
 
-## 「無法解析主機名」錯誤，cURL中的上傳錯誤
+## 「無法解析主機名」錯誤
 
-本節提供有關獲取「無法解析主機名」時要執行的檢查和操作的資訊。 從Campaign Classic連線至FTP伺服器後發生錯誤。
+本節提供從Campaign Classic連線至FTP伺服器後，取得「無法解析主機名稱」錯誤時要執行之檢查和動作的資訊。
 
 工作流日誌顯示以下日誌：
 
