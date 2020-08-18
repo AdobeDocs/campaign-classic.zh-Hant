@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 73%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 清單 (list) 是一組靜態的用戶檔案，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。例如，透過查詢而從資料庫中摘取出的母體可形成一個清單。
 
-然後，可以遵守許可式行銷的職業道德，設定針對這些清單的傳遞 (透過電子郵件、SMS 或其他通路)。
+
 
 Lists are created and managed via the **[!UICONTROL Lists]** link in the **[!UICONTROL Profiles and targets]** tab.
 
@@ -85,7 +88,7 @@ To create a new **[!UICONTROL Group]** type list, apply the following steps:
 可以將一組用戶檔案的用戶檔案篩選並連結至清單。然後傳遞作業便可傳送到此清單，以鎖定用戶檔案。若要創建用戶檔案群組：
 
 1. 選取用戶檔案並按一下滑鼠右鍵。
-1. Select **[!UICONTROL Actions > Associate selection with a list...]**.
+1. 選取 **[!UICONTROL Actions > Associate selection with a list...]**。
 
    ![](assets/s_ncs_user_add_selection_to_group.png)
 
@@ -93,7 +96,7 @@ To create a new **[!UICONTROL Group]** type list, apply the following steps:
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
-1. Click the **[!UICONTROL Start]** button.
+1. 按一下 **[!UICONTROL Start]** 按鈕。
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
@@ -125,7 +128,7 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 
 ## 刪除用戶檔案清單 {#deleting-a-list-of-profiles}
 
-您可以刪除 Adobe Campaign 樹狀結構清單的群組清單中的一或多個清單。若要執行此操作，請透過 Adobe Campaign 首頁中的 **[!UICONTROL Advanced > Explorer]** 連結編輯樹狀結構清單。選取相關的群組，然後按一下滑鼠右鍵。Select **[!UICONTROL Delete]**. 此時將顯示警告訊息，要求您確認是否刪除。
+您可以刪除 Adobe Campaign 樹狀結構清單的群組清單中的一或多個清單。若要執行此操作，請透過 Adobe Campaign 首頁中的 **[!UICONTROL Advanced > Explorer]** 連結編輯樹狀結構清單。選取相關的群組，然後按一下滑鼠右鍵。選取 **[!UICONTROL Delete]**。此時將顯示警告訊息，要求您確認是否刪除。
 
 >[!NOTE]
 >
