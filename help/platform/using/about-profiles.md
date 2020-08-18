@@ -15,15 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 66%
+source-wordcount: '915'
+ht-degree: 64%
 
 ---
 
 
 # 關於設定檔{#about-profiles}
+
+用戶檔案 (客戶、潛在客戶、新聞訂閱者等) 將匯集於 Adobe Campaign 資料庫中。要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。有了Adobe Campaign，您可以將行銷記錄、購買資訊、偏好設定、CRM資料和任何相關PI資料整合在整合的檢視中，以進行分析並採取行動。
+
+在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、SMS 等) 的預設用戶檔案。有了資料庫中儲存的收件者資料，您能夠對接收任何給定內容的收件者進行篩選，並在交付內容中新增個人化資料。資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
+
+![](assets/do-not-localize/how-to-video.png) [瞭解視訊中描述檔的概念](#create-profiles-video)
 
 ## 用戶檔案類型 {#profile-types}
 
@@ -57,10 +63,10 @@ The **[!UICONTROL Profiles and targets]** link lets you display recipients store
 
 它也可讓您存取：
 
-* 清單； 請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md),
+* 清單；請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md),
 * 訂閱服務，請參閱[本頁面](../../delivery/using/managing-subscriptions.md)
 * 網路應用程式，請參閱[本頁面](../../web/using/about-web-applications.md)
-* 進出口（就業）; 請參閱 [一般匯入和匯出](../../platform/using/generic-imports-and-exports.md),
+* 進出口（就業）;請參閱 [一般匯入和匯出](../../platform/using/generic-imports-and-exports.md),
 * 鎖定工作流程，請參閱[本頁面](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 使用收件者頁面，您可以對用戶檔案執行常見的作業，如編輯、更新、新增、刪除、排序。
@@ -71,9 +77,9 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 * sort and filter the profiles of the database; see [Filtering options](../../platform/using/filtering-options.md),
 * move, copy or delete profiles from the database; see [Managing profiles](../../platform/using/managing-profiles.md),
-* 更新設定檔； 請參閱 [更新資料](../../platform/using/updating-data.md),
-* 匯出收件者； 請參 [閱導出和導入配置檔案](../../platform/using/exporting-and-importing-profiles.md),
-* 建立收件者群組； 請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md)。
+* 更新設定檔；請參閱 [更新資料](../../platform/using/updating-data.md),
+* 匯出收件者；請參 [閱導出和導入配置檔案](../../platform/using/exporting-and-importing-profiles.md),
+* 建立收件者群組；請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md)。
 
 若要存取進階功能和設定，您必須按一下 **[!UICONTROL Explorer]** 圖示。
 
@@ -103,4 +109,24 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 您可從「促銷活動標準」功 **[!UICONTROL Number of active profiles]** 能表取得 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 概觀。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每個期間均為 12 個月。
 
-如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 有關詳細資訊，請參閱「控 [制面板」文檔](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
+如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+
+## 如何建立和管理個人檔案 {#create-profiles-video}
+
+瞭解如何存取描述檔資料、排序和篩選描述檔，以及手動建立和管理描述檔。
+
+此影片也說明Adobe Campaign Classic與一般資料保護法規的相容性。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+**另請參閱**
+
+* [Campaign中的隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
+
+* [定義目標人口](../../delivery/using/define-the-right-audience.md)
+
+* [在工作流程中建立查詢和區段資料](../../workflow/using/targeting-data.md)
+
+* [選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)
+
+* [定義受眾——最佳實務](../../delivery/using/define-the-right-audience.md)
