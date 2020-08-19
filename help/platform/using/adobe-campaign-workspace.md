@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
+source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+workflow-type: tm+mt
+source-wordcount: '2165'
+ht-degree: 89%
 
 ---
 
@@ -54,7 +57,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ### 語言 {#languages}
 
-安裝Adobe Campaign Classic例項時會選取語言，之後無法變更。 有關如何建立實例的詳細資訊，請參閱本 [頁](../../installation/using/creating-an-instance-and-logging-on.md)。
+安裝Adobe Campaign Classic例項時會選取語言，之後無法變更。 For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 ![](assets/language.png)
 
@@ -66,7 +69,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 * 德文
 * 日文
 
-您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
 ## 基本的導覽功能 {#navigation-basics}
 
@@ -98,7 +101,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 使用每個核心功能區段，您可以瀏覽可用的元素。若要瀏覽可用元素，請使用 **[!UICONTROL Browsing]** 區段中的捷徑。使用 **[!UICONTROL Other choices]** 連結，您可存取其他所有頁面，不受環境影響。
 
-您可以建立新元素（傳送、Web應用程式、工作流程等）使用畫面左 **[!UICONTROL Create]** 側區段中的捷徑。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
+您可以建立新元素（傳送、Web應用程式、工作流程等） 使用畫面左 **[!UICONTROL Create]** 側區段中的捷徑。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
 
 例如，在傳遞頁面上，使用 **[!UICONTROL Create]** 按鈕來建立新的傳遞。
 
@@ -183,7 +186,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 您可以從記錄的詳細資料中快速新增欄至清單。 操作步驟：
 
 1. 從詳細資料畫面中，以滑鼠右鍵按一下 要在欄中顯示的欄位。
-1. Select **[!UICONTROL Add in the list]**.
+1. 選取 **[!UICONTROL Add in the list]**。
 
    該欄會新增至現有欄的右邊。
 
@@ -207,8 +210,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
    >
    >使用 **Search** 欄位在可用欄位中執行搜尋。如需詳細資訊，請參 [閱排序清單](#sorting-a-list)。
    >
-   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。
-   [設定清單](#configuring-lists).
+   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[設定清單](#configuring-lists).
    >
    >您也可以排序和篩選資料。請參閱 [篩選選項](../../platform/using/filtering-options.md)。
 
@@ -272,7 +274,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 若要儲存此清單設定，使其可重複使用，請遵循下列步驟：
 
 1. 以滑鼠右鍵按一下包含顯示資料的資料夾。
-1. Select **[!UICONTROL Properties]**.
+1. 選取 **[!UICONTROL Properties]**。
 1. Click **[!UICONTROL Advanced settings]** and then specify a name in the **[!UICONTROL Configuration]** field.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
