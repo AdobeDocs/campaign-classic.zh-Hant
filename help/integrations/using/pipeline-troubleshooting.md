@@ -1,7 +1,7 @@
 ---
-title: 設定整合
-seo-title: 設定整合
-description: 設定整合
+title: 設定 整合
+seo-title: 設定 整合
+description: 設定 整合
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 管道疑難排解 {#pipeline-troubleshooting}
+# 管線疑難排解 {#pipeline-troubleshooting}
 
 **流水線失敗，錯誤為「沒有任務與掩碼流水線」**
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 1. 檢查配置 [!DNL pipelined] 檔案中是否存在元素。 否則表示不支援。
 1. 升級至版本6.11 build 8705或更高版本。
 
-**Pipelined失敗，出現&quot;aurait duj commencer par &#39;[&#39; ou &#39;{&#39;(iRc=16384)&quot;**
+**Pipelined fails with &quot;aurait duj commencer par`[`ou(`{`iRc=16384)&quot;**
 
 未 **設定NmsPipeline_Config** 選項。 實際上是JSON剖析錯誤。
 在選項 **NmsPipeline_Config中設定JSON設定**。 請參閱本頁的「路由選項」。
@@ -50,9 +50,9 @@ IMSOrgid配置無效。
 實例配置檔案的@authPrivateKey參數不正確。
 
 1. 檢查authPrivateKey是否已設定。
-1. 檢查authPrivateKey: 開頭為@，結尾為=，長度約為4000個字元。
-1. 尋找原始金鑰並檢查其是否為： 以RSA格式，長4096位，開頭為—BEGIN RSA PRIVATE KEY —。
-   <br> 如有必要，請重新建立索引鍵並在Adobe Analytics中註冊。 請參閱本 [節](../../integrations/using/configuring-pipeline.md#oauth-client-creation)。
+1. 檢查authPrivateKey:開頭為@，結尾為=，長度約為4000個字元。
+1. 尋找原始金鑰並檢查其是否為：以RSA格式，長4096位，開頭為—BEGIN RSA PRIVATE KEY —。
+   <br> 如有必要，請重新建立索引鍵並在Adobe Analytics中註冊。 Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
 1. 檢查索引鍵是否已編碼在與相同的例項中 [!DNL pipelined]。 <br>如有必要，請使用範例JavaScript或工作流程重做編碼。
 
 **流水線失敗，「在驗證期間無法讀取代號」**
