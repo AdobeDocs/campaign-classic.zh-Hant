@@ -1,7 +1,7 @@
 ---
-title: 運算元描述檔
-seo-title: 運算元描述檔
-description: 運算元描述檔
+title: 運算元設定檔
+seo-title: 運算元設定檔
+description: 運算元設定檔
 seo-description: null
 page-status-flag: never-activated
 uuid: cd718d20-79cb-40ed-b2ae-23186387e2db
@@ -15,20 +15,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '388'
+ht-degree: 5%
 
 ---
 
 
-# 運算元描述檔{#operator-profiles}
+# 運算元設定檔{#operator-profiles}
 
-使用「互動」的運算子有兩種類型： 選件經理和遞送經理。 他們每個人都有特定的權限，只能讓他們存取樹狀結構和平台的某些部分。
+使用「互動」的運算子有兩種類型：選件經理和交付經理。 他們每個人都有特定的權限，只能讓他們存取樹狀結構和平台的某些部分。
 
-* **[!UICONTROL Offer manager]** : 建立和維護選件。 請注意，如果選件用於工作流程中，運算子必須位於或 **[!UICONTROL Administrator]** [! **** UICONTROL選件管理員)運算子群組中，才能執行工作流程。
-* **[!UICONTROL Delivery manager]** : 核准和使用選件
+* **[!UICONTROL Offer manager]** :建立和維護選件。 請注意，如果選件用於工作流程中，運算元必須位於或運算元群組中， **[!UICONTROL Administrator]** 才 **[!UICONTROL Offer managers]** 能執行工作流程。
+* **[!UICONTROL Delivery manager]** :核准和使用選件
 
 建立「互動」特定運算子的步驟與建立平台上所有其他運算子的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md#creating-an-operator)。在建立操作員期間配置權限。
 
@@ -95,7 +95,7 @@ ht-degree: 2%
    <td> 閱讀<br /> </td> 
   </tr> 
   <tr> 
-   <td> 管理<br /> </td> 
+   <td> 管理員<br /> </td> 
    <td> 讀／寫<br /> </td> 
    <td> 閱讀<br /> </td> 
   </tr> 
@@ -115,7 +115,7 @@ ht-degree: 2%
    <td> 閱讀<br /> </td> 
   </tr> 
   <tr> 
-   <td> 類型學規則<br /> </td> 
+   <td> 類型規則<br /> </td> 
    <td> 讀／寫<br /> </td> 
    <td> 閱讀<br /> </td> 
   </tr> 
@@ -155,7 +155,7 @@ ht-degree: 2%
    <td> 閱讀<br /> </td> 
   </tr> 
   <tr> 
-   <td> 管理<br /> </td> 
+   <td> 管理員<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -175,7 +175,7 @@ ht-degree: 2%
    <td> 閱讀<br /> </td> 
   </tr> 
   <tr> 
-   <td> 類型學規則<br /> </td> 
+   <td> 類型規則<br /> </td> 
    <td> </td> 
    <td> 閱讀<br /> </td> 
   </tr> 
