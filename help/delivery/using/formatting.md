@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+workflow-type: tm+mt
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +77,7 @@ JavaScript範本的名稱和名稱空間與結構描述和表單一樣可識別�
 **範例**:
 
 * **內容。@name**:檢索主要元素的&quot;name&quot;屬性的值
-* **內容。@`['name']`**:與內容相**&#x200B;同。@name **語法
+* **內容。@`['name']`**:與內容相 **同。@name** 語法
 * **content.chapter.length**:返回收集元素上的元 `<chapter` 素數
 * **content.chapter`[0]`。@name**:檢索第一個元素的名 `<chapter>` 稱
 * **chapter.name()**:返回元素的名 `<chapter>` 稱
@@ -84,11 +87,11 @@ JavaScript範本的名稱和名稱空間與結構描述和表單一樣可識別�
 >
 >由於&#39;-&#39;字元是以JavaScript語言保留，因此必須透過語法來復原包含此字元的任何屬性或元素的 `['<field>']` 值。
 >
->例如： `content.@['offer-id']`。
+>For example: `content.@['offer-id']`.
 
 程式設計語言（變數、回圈、條件測試、函式等）的全部功能。 )可用於構建輸出文檔。 SOAP API可供存取，讓輸出檔案更豐富。
 
-範例：
+範例:
 
 * 條件測試：
 
@@ -415,7 +418,7 @@ HTML格式樣式表的示例基於模式&quot;cus:book&quot;:
 
 * 屬性的值在引號之間，
 * 元素必須有開啟標籤和關閉標籤，
-* 將&#39;&lt;&#39;或&#39;&amp;&#39;字元 **取代為&#39;** &lt;&#39; **or&#39;&amp;&#39;實** 體，
+* 將&#39;&lt;&#39;或&#39;&amp;&#39;字元取代 **&#39;&lt;&#39;****or&#39;&amp;&#39;實體** ,
 * 每個XSL元素都必須使用 **xsl** namespace。
 
 樣式表必須以XSL根元素標籤開頭， **`<xsl:stylesheet>`** 並以標籤結 **`</xsl:stylesheet>`** 尾。 XSL命名空間必須定義在開啟標籤中，如下所示：
@@ -463,7 +466,7 @@ HTML格式樣式表的示例基於模式&quot;cus:book&quot;:
 
 包含 **`<xsl:text>`** disable-output-exceline=&quot;yes&quot; **** 選項的指令可讓您插入JavaScript標籤以用於個人化欄位或條件測試。
 
-範例：
+範例:
 
 * 顯示&quot;html&quot;類型欄位的內容：
 
@@ -477,7 +480,7 @@ HTML格式樣式表的示例基於模式&quot;cus:book&quot;:
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* 新增條件測 **試&lt;% if(recipient.language == &#39;en&#39;){ %>**:
+* 新增條件測 **試&lt;% if(recipient.language == &#39;en&#39;)`{`%>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -579,7 +582,7 @@ Adobe Campaign提供JavaScript範本和XSL樣式表的日期格式化函式，�
 
 若要以所需格式顯示日期，Adobe Campaign會提供 **formatDate** 函式，以輸入日期內容，並提供以下語法指定輸出格式的字串： **%4Y/%2M/%2D %2H%2N%2S**
 
-範例：
+範例:
 
 * 以2018/31/10格 **式顯示日期** :
 
@@ -610,7 +613,7 @@ Adobe Campaign提供JavaScript範本和XSL樣式表的日期格式化函式，�
 
 XSLT語法中沒有標準的日期管理功能。 若要以所需格式顯示日期，Adobe Campaign會提供外部函 **數日期格式**。 此函式會作為其輸入，輸入日期的內容，並使用下列語法指定輸出格式的字串： **%4Y/%2M/%2D %2H%2N%2S**
 
-範例：
+範例:
 
 * 要以2018/ **01/10格式顯示日期** :
 
