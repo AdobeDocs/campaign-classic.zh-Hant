@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 | 資料庫版本 | 驅動程式版本 | 需要的促銷活動版本最低 | 注意 |
 |:-:|:-:|:-:|:-:|
-| 15 | 15 | Campaign Classic 17.9 | 在Linux下： 具有時間戳記的查詢可能失敗（在build 8937中針對18.4修正，在8977中針對18.10修正）在除錯模式中，可能會發生與驅動程式中記憶體使用不良相關的警告。 |
+| 15 | 15 | Campaign Classic 17.9 | 在Linux下：具有時間戳記的查詢可能失敗（在build 8937中針對18.4修正，在8977中針對18.10修正）在除錯模式中，可能會發生與驅動程式中記憶體使用不良相關的警告。 |
 | 15 | 16 | Campaign Classic 17.9 | 建議在Linux下為Teradata 15資料庫設定。 |
 | 16 | 16 | Campaign Classic 18.10 | 未完全處理具有替代對的Unicode字元。 在資料中使用替代字元應能運作。 若未進行此變更，在查詢的篩選條件中使用替代項將無法運作。 |
 | 16 | 15 | 不支援 |   |
@@ -50,7 +50,7 @@ Adobe Campaign Classic 17.9之前的版本僅支援Teradata Latin-1資料庫。
 
 #### 用戶配置 {#user-configuration}
 
-需要下列權利： 建立／刪除／執行自定義過程、建立／刪除／插入／選擇表。 如果您想在Adobe Campaign例項上使用md5和sha2函式，您也必須建立使用者模式函式。
+需要下列權利：建立／刪除／執行自定義過程、建立／刪除／插入／選擇表。 如果您想在Adobe Campaign例項上使用md5和sha2函式，您也必須建立使用者模式函式。
 
 請務必設定正確的時區。 它應符合在Adobe Campaign例項中建立的外部帳戶中所設定的內容。
 
@@ -184,13 +184,13 @@ Adobe Campaign不會針對它將在資料庫中建立的物件設定保護模式
 
 #### 驅動程式配置 {#driver-configuration}
 
-有關驅動程式配置的詳細資訊，請參閱本 [節](../../platform/using/legacy-connectors.md#configure-access-to-teradata)。
+To learn more on driver configuration, refer to this [section](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
 #### 環境變數 {#environment-varaiables}
 
 若要進一步瞭解Adobe Campaign伺服器的環境變數，請參閱本 [節](../../platform/using/legacy-connectors.md#configure-access-to-teradata)。
 
-### Windows #campaign-server-windows}的促銷活動伺服器設定
+### Windows的促銷活動伺服器設定 {#campaign-server-windows}
 
 您首先需要下載適用於Windows的Teradata工具和公用程式。 您可從此頁面下 [載](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
 
@@ -200,7 +200,7 @@ Adobe Campaign不會針對它將在資料庫中建立的物件設定保護模式
 
 ### 外部帳戶疑難排解 {#external-account-troubleshooting}
 
-如果在測試連接 **TIM-030008日期&#39;2&#39;時出現以下錯誤： 缺少字元(iRc=-53)** ，請確保ODBC驅動程式已正確安裝，並且已為Campaign伺服器設定了LD_LIBRARY_PATH(Linux)/PATH(Windows)。
+如果在測試連接 **TIM-030008日期&#39;2&#39;時出現以下錯誤：缺少字元(iRc=-53)** ，請確保ODBC驅動程式已正確安裝，並且已為Campaign伺服器設定了LD_LIBRARY_PATH(Linux)/PATH(Windows)。
 
 錯誤 **ODB-240000 ODBC錯誤：[未找到Microsoft][ODBC Driver Manager]資料源名稱，且未指定預設驅動程式。** 在Windows中執行。 Adobe Campaign預期teradata會在odbcinst.ini中命名為&#39;{teradata}&#39;。
 如果您有18.10 Adobe Campaign伺服器版本，可在外部帳戶的選項中新增ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot;。 版本號可以更改，通過運行odbcad32.exe並訪問「Drivers（驅動程式）」頁籤可以找到確切的名稱。
@@ -212,7 +212,7 @@ Adobe Campaign不會針對它將在資料庫中建立的物件設定保護模式
 
 Teradata使用非標準的時區名稱，您可以在 [Teradata網站上找到清單](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)。 Adobe Campaign會嘗試將外部設定中的時區轉換為Teradata所瞭解的時區。 如果找不到對應，則會找到會話的壁櫥GMT+X（或GMT-X）時區，日誌中會出現警告。
 
-轉換完成時，會讀取名為teradata_timezones.txt的檔案，該檔案應位於下列datakit目錄： /usr/local/neolane/nl6/datakit under linux. 如果您編輯此檔案，請務必連絡Adobe Campaign團隊，以變更原始碼，否則下次促銷活動更新時，此檔案將會覆寫。
+轉換完成時，會讀取名為teradata_timezones.txt的檔案，該檔案應位於下列datakit目錄：/usr/local/neolane/nl6/datakit under linux. 如果您編輯此檔案，請務必連絡Adobe Campaign團隊，以變更原始碼，否則下次促銷活動更新時，此檔案將會覆寫。
 
 使用-verbose開關運行nlserver時，將指示用於連接的時區，例如：
 
@@ -236,7 +236,7 @@ MODIFY USER $login$ AS TIME ZONE = 'Europe Central';
 
 ### 驅動程式安裝 {#driver-installation-mysql}
 
-#### 德比安 {#debian-mysql}
+#### Debian {#debian-mysql}
 
 從此頁下載mysql-apt-config.deb [](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en)。
 
