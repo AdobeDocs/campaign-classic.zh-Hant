@@ -1,6 +1,6 @@
 ---
-title: 版本20.1
-description: 版本20.1
+title: 版本 20.1
+description: 版本 20.1
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,33 +13,33 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 1%
+source-wordcount: '1331'
+ht-degree: 6%
 
 ---
 
 
-# 版本20.1{#release-20-1}
+# 版本 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 - Build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) 版本 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
-* 修正「檔案傳輸 **** 」活動導致SFTP金鑰驗證無法在Debian 9上運作的問題。 (NEO-23183)
+* 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 - Build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) 版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 組建版本9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) 版本 20.1 - Build 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
-**新增功能?**
+**新增了哪些功能？**
 
 <table> 
  <thead> 
@@ -50,7 +50,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
-    <p>如需詳細資訊，請參閱詳細 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">的檔案</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">和教學影片</a>。</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -65,7 +65,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Hadoop FDA Connector已經過改良，可支援Hadoop 3.0和Cloudera。</p>
-    <p>如需詳細資訊，請參閱<a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">詳細文件</a>。</p>
+    <p>如需詳細資訊，請參閱<a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">相關的文件</a>，以瞭解詳情。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -85,25 +85,25 @@ _2020年2月17日_
 
 * 修正登入。log檔案無法透過IMS記錄成功登入嘗試的問題。 (NEO-11004)
 
-**改進**
+**功能改善**
 
 * iOS 13現在支援HTTP2連接器。
 
-* 改進了推播通知功能（nms:address和nms:appSubscriptionRcp）所使用的表的隔離管理和清除。 對於iOS（僅限HTTP2連接器），停用的Token現在的處理方式與Android相同。 現在，在NmsAppSubscriptionRcp表中設定了禁用標誌。 [詳細內容](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* 改進了推播通知功能（nms:address和nms:appSubscriptionRcp）所使用的表的隔離管理和清除。 對於iOS（僅限HTTP2連接器），停用的Token現在的處理方式與Android相同。 現在，在NmsAppSubscriptionRcp表中設定了禁用標誌。 [顯示全文](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* 在 **JavaScript程式碼和進階JavaScript程式碼工作流程活動中新增了一個選項****** ，以定義逾時期間。 這可防止javascript執行階段執行太長。 如果逾時期間過去，工作流程便會停止。 預設逾時為1小時。 [詳細內容](../../workflow/using/sql-code-and-javascript-code.md)
+* 在 **JavaScript程式碼和進階JavaScript程式碼工作流程活動中新增了一個選項****** ，以定義逾時期間。 這可防止javascript執行階段執行太長。 如果逾時期間過去，工作流程便會停止。 預設逾時為1小時。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md)
 
 * 現在，當在中間採購伺服器上找不到相符的相似性時，傳送分析會停止，並顯示對應的錯誤訊息。
 
-* 現在支援Postgres的資料庫容錯移轉： 當資料庫伺服器當機並重新啟動時，Campaign現在會自動重新連線至它。
+* 現在支援Postgres的資料庫容錯移轉：當資料庫伺服器當機並重新啟動時，Campaign現在會自動重新連線至它。
 
-* 「開 **始擱置中** 」檢視已新增至「管理>稽核>工作流程狀態」節點。 這可讓您監控執行個體上等待營運管理程式啟動的所有 **工作流程** 。 此檢視隨附於行銷促銷活動套件。 [詳細內容](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* 「開 **始擱置中** 」檢視已新增至「管理>稽核>工作流程狀態」節點。 這可讓您監控執行個體上等待營運管理程式啟動的所有 **工作流程** 。 此檢視隨附於行銷促銷活動套件。 [顯示全文](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **其他變更**
 
 * 在Linux上，nlserver服務啟動現在使用系統單元，而不是/etc/init.d/nlserver6指令碼。 在安裝20.1軟體包時，會自動執行到新啟動方案的遷移。 /etc/init.d/nlserver6仍然提供，但是用於與nlserver服務（啟動、重新啟動、停止等）交互，建議您直接使用systemctl命令。
 
-* 最耗用的自訂表格已從 **xtkNewId序列移至專用序列** 。 [詳細內容](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗用的自訂表格已從 **xtkNewId序列移至專用序列** 。 [顯示全文](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * 已改善查詢效能，這些效能可能會受到不必要的資料庫連線所影響。
 
@@ -111,9 +111,9 @@ _2020年2月17日_
 
 * 資料庫記錄管理得到了增強。
 
-* 連接池的健壯性已經得到改善，這可以防止意外連接故障的發生太多。
+* 連接池的健壯性已經得到改善，這可能防止意外連接故障的發生太多。
 
-* 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [詳細內容](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [顯示全文](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 * 對於Debian,Campaign現在會在系統PCRE程式庫可用時使用。
 
@@ -183,7 +183,7 @@ _2020年2月17日_
 
 * 修正使用FDA架構作為定位維度，在工作流程中刪除、插入或更新 **Update data** activity大量資料時發生的問題。 (NEO-13280)
 
-* 修正在標籤外使用&#39;if&#39;陳述式時，無法傳送電子郵件的 `body` 問題。
+* 修正在標籤外使用&#39;if&#39;陳述式時，無法傳送電子郵件的 `body` 問題。 (NEO-18628)
 
 * 修正嘗試從已傳送訊息的傳送記錄顯示鏡像頁面時所發生的問題。 (NEO-17976)
 
