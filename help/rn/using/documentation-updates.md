@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
+source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
 workflow-type: tm+mt
-source-wordcount: '7096'
-ht-degree: 95%
+source-wordcount: '7164'
+ht-degree: 94%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 95%
 
 * [如何啟動和使用AMP處理電子郵件](../../delivery/using/defining-interactive-content.md)
 
-* [如何使用動態內容區塊個人化電子郵件](../../delivery/using/personalization-blocks.md)
+* [使用動態內容區塊個人化電子郵件](../../delivery/using/personalization-blocks.md)
 
 * [如何使用個人化欄位個人化電子郵件](../../delivery/using/personalization-fields.md)
 
@@ -56,6 +56,15 @@ ht-degree: 95%
 * [如何設定連續傳送](../../workflow/using/continuous-delivery.md)
 
 已新增資訊至連線至FTP伺服器後，當收到「無法解析主機名稱」錯誤時，要執行的檢查和動作。 [顯示全文](../../platform/using/sftp-server-usage.md)
+
+工作流程使用案例清單中已參考了新 [的使用案例](../../workflow/using/about-workflow-use-cases.md):
+
+* 自動化內容建立、編輯和發佈
+* 在傳送傳送前設定收件者核准程式
+* 呼叫查詢中的例項變數
+* 對人口套用分割百分比
+
+本 **[!UICONTROL AND-join]** 活動章節已豐富其使用資訊，以及使用變數的附註。 [顯示全文](../../workflow/using/and-join.md)
 
 ## 2020 年 7 月{#july-2020}
 
