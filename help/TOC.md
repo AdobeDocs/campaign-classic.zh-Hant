@@ -6,9 +6,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 0810608c67e6da4d9afa3a366df664594b0b6840
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2109'
 ht-degree: 95%
 
 ---
@@ -321,7 +321,7 @@ ht-degree: 95%
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + 透過Adobe ID 連線 {#connecting-via-an-adobe-id}
       + [關於 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [設定 [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [配置 [!DNL IMS]](integrations/using/configuring-ims.md)
       + [實作 [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS 疑難排解](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
@@ -432,7 +432,7 @@ ht-degree: 95%
          + [豐富資料](workflow/using/enriching-data.md)
          + [使用彙總](workflow/using/using-aggregates.md)
          + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
-      + 設計查詢{#designing-queries}
+      + 定位 {#designing-queries}
          + [查詢收件人資料表](workflow/using/querying-recipient-table.md)
          + [查詢傳遞資訊](workflow/using/querying-delivery-information.md)
          + [執行彙總計算](workflow/using/performing-aggregate-computing.md)
