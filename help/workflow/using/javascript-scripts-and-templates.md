@@ -1,7 +1,7 @@
 ---
-title: JavaScript指令碼和範本
-seo-title: JavaScript指令碼和範本
-description: JavaScript指令碼和範本
+title: JavaScript 指令碼和範本
+seo-title: JavaScript 指令碼和範本
+description: JavaScript 指令碼和範本
 seo-description: null
 page-status-flag: never-activated
 uuid: d341a892-dc71-4413-acb8-9cba372b38cf
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
+source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 1%
 
 ---
 
 
-# JavaScript指令碼和範本{#javascript-scripts-and-templates}
+# JavaScript 指令碼和範本{#javascript-scripts-and-templates}
 
 指令碼使計算值、在進程中的不同任務之間交換資料以及使用SOAP調用執行特定操作成為可能。
 
@@ -84,13 +87,19 @@ logInfo("Start date: " + task.creationDate)
 
 事件變數(**[!UICONTROL vars.xxx]**)可讓工作流程程式的基本任務之間交換資料。 這些變數由啟動進行中任務的任務傳遞。 可以修改它們並定義新的。 然後，會將它們傳遞至下列活動。
 
-對於 **AND-join** type活動，會合併變數，但如果同一個變數定義了兩次，則會發生衝突，且值仍未確定。
+>[!CAUTION]
+>
+>對於 [AND-join](../../workflow/using/and-join.md) type活動，會合併變數，但如果同一個變數定義了兩次，則會發生衝突，且值仍未確定。
 
-這些是最常使用的變數，應優先使用於例項變數。
+事件是最常使用的變數，應優先使用它們來取代例項變數。
 
 某些事件變數會由各種活動修改或讀取。 這些都是字串類型變數。 例如，匯出會以剛 **[!UICONTROL vars.filename]** 匯出的檔案的完整名稱來設定變數。 所有這些讀取或修改的變數都記錄在活 [動的](../../workflow/using/about-activities.md)About活動中， **活動的Input參數****** 和Output參數中。
 
-### 範例 {#example}
+### 使用案例 {#example}
+
+>[!NOTE]
+>
+>本節提供其他工作區使 [用案例](../../workflow/using/about-workflow-use-cases.md)。
 
 **範例1**
 
@@ -108,7 +117,7 @@ logInfo("Start date: " + task.creationDate)
 
 1. 新增「分割」活動，並設定它以執行傳入人口的隨機取樣。 取樣百分比可以是您選擇的任何項目。 在本例中，它設為50%。
 
-   這個百分比會動態更新，這要歸功於先前定義的例項變數。
+   這個百分比會因先前定義的例項變數而動態更新。
 
    ![](assets/js_ex2.png)
 
