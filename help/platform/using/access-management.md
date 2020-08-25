@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
 workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign可讓您定義並管理指派給各種運算子的權限。 這�
 
 >[!NOTE]
 >
->在開始定義權限之前，Adobe建議您先閱讀「安全性 [設定」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html)。
+>在開始定義權限之前，Adobe建議您先閱讀「安全性 [設定」檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
 
 ## 運算子 {#operators}
 
@@ -211,7 +211,7 @@ Adobe Campaign使用技術營運商，預設設定了描述檔：管理員（「
 
 >[!NOTE]
 >
->如需安全性方針的詳細資訊，請參閱 [Adobe Campaign安全性設定檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html)。
+>如需安全性方針的詳細資訊，請參閱 [Adobe Campaign安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
 
 ## 運算元群組 {#operator-groups}
 
@@ -331,7 +331,7 @@ Adobe Campaign使用技術營運商，預設設定了描述檔：管理員（「
 
 * **[!UICONTROL PREPARE DELIVERIES]**:直接建立、編輯和儲存傳送。 擁有權限 **[!UICONTROL PREPARE DELIVERIES]** 的使用者也可以開始傳送分析程式。
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**:收集和刪除隱私權資料的權利。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/campaign/kb/acc-privacy.html)。
+* **[!UICONTROL PRIVACY DATA RIGHT]**:收集和刪除隱私權資料的權利。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)。
 
 * **[!UICONTROL PROGRAM EXECUTION]**:以各種寫程式語言執行命令的權利。
 
@@ -357,7 +357,7 @@ Adobe Campaign使用技術營運商，預設設定了描述檔：管理員（「
 
 Adobe Campaign存取權限表可從這裡取 [得](/help/platform/using/assets/access-rights-matrix.pdf)。
 
-[![影像](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![影像](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## 資料夾存取管理 {#folder-access-management}
 
@@ -419,7 +419,7 @@ Adobe Campaign存取權限表可從這裡取 [得](/help/platform/using/assets/a
 
 此外，您還可以建立檢視，以限制資料存取，並組織樹狀結構的內容以符合您的需求。 然後，您可以指派檢視的權限。
 
-視圖是一個資料夾，它顯示物理上儲存在同一類型的一個或多個其他資料夾中的記錄。 例如，如果您建立的「促銷活動」資料夾是檢視，則預設會顯示資料庫中顯示的所有促銷活動，無論其來源為何。 然後可以篩選此資料。
+視圖是一個資料夾，它顯示物理儲存在一個或多個相同類型的其他資料夾中的記錄。 例如，如果您建立的「促銷活動」資料夾是檢視，則預設會顯示資料庫中顯示的所有促銷活動，無論其來源為何。 然後可以篩選此資料。
 
 將資料夾轉換為視圖時，與資料庫中存在的資料夾類型相對應的所有資料都會顯示在視圖中，而與保存資料夾無關。 然後，您可以篩選它，以限制顯示的資料清單。
 
