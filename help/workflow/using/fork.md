@@ -1,8 +1,6 @@
 ---
 title: 分支
-seo-title: 分支
 description: 分支
-seo-description: null
 page-status-flag: never-activated
 uuid: 90db1991-cff9-4dbd-a478-7aae1d845836
 contentOwner: sauviat
@@ -15,16 +13,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 4%
 
 ---
 
 
 # 分支{#fork}
 
-叉子可讓您同時啟動多個活動。
+叉子可讓您同時啟動其所有對外活動。
 
-連按兩下圖形物件以定義出站轉場數、建立新轉場或變更所選轉場的標籤。
+例如，您可以在內容建立和傳送傳送自動化的上下文中使用活動，以便同時啟動目標計算和內容建立。 本節提供專用的使 [用案例](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)。
+
+若要設定活動，請將其開啟，然後定義所要之出站轉場的數目和標籤。
 
 ![](assets/s_user_segmentation_fork.png)
-
