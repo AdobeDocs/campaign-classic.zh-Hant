@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 0%
+source-wordcount: '1624'
+ht-degree: 3%
 
 ---
 
@@ -33,8 +33,9 @@ Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/abo
 
 此功能可透過Adobe Campaign中的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
 
->[!NOTE]
-> 對於混合式和托管式架構，此套件必須安裝在所有伺服器上，包括 [中端採購伺服器](../../installation/using/mid-sourcing-server.md) 和執 [行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
+    >[!NOTE]
+    >
+    >對於混合型和托管型體系結構，軟體包必須安裝在所有伺服器上，包括[mid-sourcing server](../../installation/using/mid-sourcing-server.md)和[execution instance](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
 
 
 ## 關於AMP for Email {#about-amp-for-email}
@@ -169,7 +170,7 @@ AMP for Email是測試版功能，您目前可以嘗試透過兩個步驟傳送A
 >
 >目前只有Gmail、Outlook和Mail.ru支援測試AMP格式。
 
-若是Gmail和Outlook，您必須先將您使用的傳送者位址新增至您目標Gmail和Outlook帳戶的允許清單。
+對於Gmail和Outlook，您必須先將您使用的寄件者位址新增至您所定位之Gmail和Outlook帳戶的允許清單。
 
 操作步驟：
 1. 請確定已勾選啟用動態電子郵件的選項，以找出相關的電子郵件提供者。
@@ -215,6 +216,6 @@ AMP for Email是測試版功能，您目前可以嘗試透過兩個步驟傳送A
 
 ## 如何啟動和使用AMP處理電子郵件 {#amp-email-video}
 
-以下影片說明如何在Adobe Campaign Classic中啟動AMP，並展示其使用情形。
+以下影片說明如何在Adobe Campaign Classic 啟動 AMP，並展示其使用情形。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
