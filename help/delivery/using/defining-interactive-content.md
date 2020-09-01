@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
+source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1616'
 ht-degree: 3%
 
 ---
@@ -33,10 +33,9 @@ Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/abo
 
 此功能可透過Adobe Campaign中的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
 
-    >[!NOTE]
-    >
-    >對於混合型和托管型體系結構，軟體包必須安裝在所有伺服器上，包括[mid-sourcing server](../../installation/using/mid-sourcing-server.md)和[execution instance](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
-
+>[!NOTE]
+>
+> 對於混合式和托管式架構，此套件必須安裝在所有伺服器上，包括 [中端採購伺服器](../../installation/using/mid-sourcing-server.md) 和執 [行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 請洽詢您的客戶經理。
 
 ## 關於AMP for Email {#about-amp-for-email}
 
