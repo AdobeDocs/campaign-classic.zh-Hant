@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
+source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 86%
+source-wordcount: '1975'
+ht-degree: 85%
 
 ---
 
@@ -92,7 +92,7 @@ _2020 年 6 月 8 日_
  <tbody> 
   <tr> 
    <td> <p>泰國的個人資料保護法 (PDPA) 是新的隱私權法令，該法協調泰國的資料保護要求並以現代化方式加以規範。 </p>
-   <p>巴西的 Lei Geral de Proteção de Dados (LGPD) 將於 8 月 16 日生效，所有於巴西收集或處理個人資料的公司皆適用。</p>
+   <p>巴西的Lei Geral de Proteção de Dados(LGPD)將於2021年初生效，適用於巴西所有收集或處理個人資料的公司。</p>
    <p>這些法令及規範適用於所持有資料的主體居住於這些國家的 Adobe Campaign 客戶。除了 Campaign 已提供的隱私權功能 (包括許可管理、資料保留設定及使用者角色) 外，我們還將利用此機會加入其他功能，以協助您做好迎接 PDPA 及 LGPD 的準備：</p>
    <ul> 
      <li><p>近用權與刪除全：我們利用了專為 GDPR 和 CCPA 所新增的功能。<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">顯示全文</a></p></li> 
