@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 98c880e1218f179b8b804d52690135a2f28520a0
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ## 設定自動更新 {#setting-up-an-automatic-update}
 
-可透過工作流程設定自動更新。如需詳細資訊，請參閱[本小節](../../workflow/using/update-data.md)。
+可透過工作流程設定自動更新。如需詳細資訊，請參閱[本章節](../../workflow/using/update-data.md)。
 
 ## 執行大量更新 {#performing-a-mass-update}
 
@@ -104,7 +107,7 @@ Select **[!UICONTROL Merge selected lines...]** to launch the merging of two rec
 在大多數情況下，收件者可以透過專用登陸頁面訂閱新聞稿，如[本節](../../delivery/using/managing-subscriptions.md)所述。不過，已篩選之收件者的用戶檔案可以手動設定訂閱服務 (電子報或病毒服務)。操作步驟：
 
 1. 選取您想要訂閱服務的收件者，然後按一下滑鼠右鍵。
-1. Select **[!UICONTROL Actions > Subscribe selection to a service]**.
+1. 選取 **[!UICONTROL Actions > Subscribe selection to a service]**。
 
    ![](assets/s_ncs_user_selection_subscribe_service.png)
 
