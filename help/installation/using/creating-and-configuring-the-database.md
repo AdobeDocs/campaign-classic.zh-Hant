@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: aeedcfb489e0dc0cd62e4472dc86102fa40cf6b4
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -69,7 +69,7 @@ ht-degree: 1%
 * 對於 **PostgreSQL** 或 **** DB2引擎，必須指定在應用程式伺服器上定義的DNS名稱（或IP地址）才能訪問資料庫伺服器。
 * 對於 **Microsoft SQL Server** Engine，必須定義：
 
-   1. 應用伺服器上定義的用於訪問資料庫伺服器的DNS名稱（或IP地址）: **DNS** 或 **DNS\ `<instance>`** （例項模式）,
+   1. 應用伺服器上定義的用於訪問資料庫伺服器的DNS名稱（或IP地址）: **DNS** 或 **DNS`\<instance>`** （例項模式）,
    1. 用於訪問Microsoft SQL Server的驗證方法： **[!UICONTROL SQL Server authentication]** 或 **[!UICONTROL Windows NT authentication]**&#x200B;者。
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -166,7 +166,7 @@ ht-degree: 1%
 
 資料庫以及用戶必須由資料庫管理員建立，並且訪問權限必須正確配置。
 
-例如，對於Oracle資料庫，最低要求的權限為：授予連接、資源和無限表空間。
+例如，對於Oracle資料庫，最低所需權限為：授予連接、資源和無限表空間。
 
 要使用現有資料庫，配置步驟如下：
 
@@ -192,7 +192,7 @@ ht-degree: 1%
 * 對於 **PostgreSQL** 或 **** DB2引擎，必須指定在應用程式伺服器上定義的DNS名稱（或IP地址）才能訪問資料庫伺服器。
 * 對於 **Microsoft SQL Server** Engine，必須定義：
 
-   1. 應用程式伺服器上定義的DNS名稱（或IP地址），以訪問資料庫伺服器，
+   1. 應用程式伺服器上定義的用於訪問資料庫伺服器的DNS名稱（或IP地址）,
    1. 用於訪問Microsoft SQL Server的安全方法： **[!UICONTROL SQL Server authentication]** 或 **[!UICONTROL Windows NT authentication]**&#x200B;者。
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
@@ -210,7 +210,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >請確定架構名稱和用戶名都匹配。 建議建立資料庫的方式是透過促銷活動主控台用戶端。
+   >請確定架構名稱和使用者名稱都相符。 建議建立資料庫的方式是透過促銷活動主控台用戶端。
    >對於Oracle資料庫，無需輸入帳戶名稱。
 
 * 指示資料庫是否應為Unicode。
