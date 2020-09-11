@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
+source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 85%
+source-wordcount: '2119'
+ht-degree: 80%
 
 ---
 
@@ -25,7 +25,20 @@ ht-degree: 85%
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6月 版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/blue_2.png) 版本 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
+
+_2020年9月11日_
+
+* 修正由於傳送部件上單一錯誤功能導致記憶體過載，導致傳送準備被封鎖的回歸。 (NEO-27346)
+* 修正在重新發佈Web應用程式之前，關閉Apache和Web伺服器的錯誤升級問題。 (NEO-27155)
+* 修正HTML範本管理上的回歸，導致追蹤URL因標籤誤譯而變得可見。 (NEO-25909)
+* 修正資料庫清除工作流程因非托管資料來源而可能失敗的問題。 (NEO-23160、NEO-23364)
+* 清除工作流程現在會依100批次清除過期清單，而非逐一清除。
+* 修正無法修改外部帳戶內部名稱的回歸。 (NEO-27323)
+* 修正錯誤升級期間的回歸，導致nlserver（錯誤記錄）啟動錯誤。
+* 已改善共用記憶體的更新管理。 20.2中所需的其他步驟不再需要。
+
+## ![](assets/do-not-localize/orange_2.png) 版本 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _2020年7月22日_
 
