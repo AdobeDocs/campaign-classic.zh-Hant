@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
+source-git-commit: 562f9f5411284cdf763821b0179ae795fa4bc48a
 workflow-type: tm+mt
-source-wordcount: '7164'
+source-wordcount: '7184'
 ht-degree: 94%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 94%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
+
+## 2020 年 9 月{#september-2020}
+
+* 已新增附註，以指定「作用中」描述檔計數僅適用於「行銷」例項。 [顯示全文](../../platform/using/about-profiles.md#active-profiles)
 
 ## 2020 年 8 月{#aug-2020}
 
