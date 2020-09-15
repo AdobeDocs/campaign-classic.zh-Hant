@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 本頁列出Gold Standard版本。
 
-有關Gold Standard升級的詳細資訊，請參閱本 [文](https://helpx.adobe.com/campaign/kb/gold-standard.html)。
+有關Gold Standard升級的詳細資訊，請參閱本 [文](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/limited.png) Gold Standard 10版{#gs-10}
+## ![](assets/do-not-localize/limited_2.png) Gold Standard 10版{#gs-10}
 
 _2020年7月7日_
 
@@ -69,14 +69,14 @@ _2020年4月29日_
 
 建置9032@3a9dc9c包含下列修正：
 
-* 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，可聯絡客戶服務。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱「安全性與隱私權」核 [對清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+* 已改善電子郵件中追蹤連結的安全性。 預設會為所有客戶啟用此功能。 另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 
 >[!CAUTION]
 >
 >如果您在使用追蹤連結的推播通知或使用錨點標籤的傳送時遇到問題，建議您停用追蹤連結的新簽名機制。 本頁詳細介紹了該過 [程](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * 修正影像無法顯示在「行」傳送上的問題。 (NEO-23207)
-* 修正「檔案傳輸 **** 」活動導致SFTP金鑰驗證無法在Debian 9上運作的問題。 (NEO-23183)
+* 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 * 已修正在高頻率傳送時，可能會影響推播通知的問題。 (NEO-20516)
 * 修正選件回應管理中可能導致Web伺服器當機的問題。 (NEO-19482)
 * 修正LibreOffice管理中無法匯出報表的錯誤。 (NEO-20982)
@@ -85,8 +85,8 @@ _2020年4月29日_
 * 已改善Apache連線的管理，以避免Web服務上的延遲。
 * 已改善版本標籤（7位數）在「關於」功能表 **中的顯** 示。
 * 修正清單管理中的回歸，使選件無法發佈。
-* 修正導致清除工作流程當機的回歸。
-* 修正清除工作流程記錄檔中的次要回歸。
+* 修正了造成清理工作流程當機的迴歸。
+* 修正了清理工作流程記錄檔的次要迴歸。
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 6版本{#gs-6}
 
@@ -94,7 +94,7 @@ _2020年3月9日_
 
 建置9032@19f73c5包含下列修正：
 
-* 修正使用FTP over SSL的外部帳戶的問題。 (NEO-20498)
+* 修正使用 FTP over SSL 的外部帳戶的問題。(NEO-20498)
 
 ## ![](assets/do-not-localize/orange_2.png) Gold Standard 5版本{#gs-5}
 
@@ -131,7 +131,7 @@ _2019年9月19日_
 * 修正使用Salesforce的CRM連接器時的問題。 (NEO-17712)
 * 修正在傳送事務性訊息時，可能導致效能問題的索引問題。
 
-## ![](assets/do-not-localize/red_2.png) 版本19.1.4 - Build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/red_2.png) 版本 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
 _2019年8月13日_
 
