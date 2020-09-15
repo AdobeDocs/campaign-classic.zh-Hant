@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '944'
+ht-degree: 62%
 
 ---
 
@@ -97,6 +97,12 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 有效用戶檔案指的是可計費開立帳單的用戶檔案。
 
+>[!NOTE]
+>
+>如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>
+>請注意，「作用中」描述檔計數僅適 **用於Marketing例項** 。 它不適用於執行實例，即MID（中間採購）和RT（消息中心／即時消息）實例。
+
 **Profile** 是指一筆代表終端客戶或潛在客戶之資訊的紀錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。
 
 計費帳單僅會考慮&#x200B;**有效** 的用戶檔案。如果在過去 12 個月透過任何通路鎖定過用戶檔案或與其進行過通訊，那麼則該用戶檔案被視為有效。
@@ -108,8 +114,6 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 >Facebook 和 Twitter 通路不包含在內。
 
 您可從「促銷活動標準」功 **[!UICONTROL Number of active profiles]** 能表取得 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 概觀。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每個期間均為 12 個月。
-
-如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## 如何建立和管理個人檔案 {#create-profiles-video}
 
