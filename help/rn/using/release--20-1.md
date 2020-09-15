@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1344'
 ht-degree: 6%
 
 ---
@@ -107,11 +107,11 @@ _2020年2月17日_
 
 * 已改善查詢效能，這些效能可能會受到不必要的資料庫連線所影響。
 
-* 已改善資料庫更新精靈的效能。
+* 改進資料庫更新嚮導的效能，使SQL陳述式數減少，以優化響應時間。
 
 * 資料庫記錄管理得到了增強。
 
-* 連接池的健壯性已經得到改善，這可能防止意外連接故障的發生太多。
+* 連接池的健壯性已經得到改善，這可以防止意外連接故障的發生太多。
 
 * 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [顯示全文](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
@@ -183,7 +183,7 @@ _2020年2月17日_
 
 * 修正使用FDA架構作為定位維度，在工作流程中刪除、插入或更新 **Update data** activity大量資料時發生的問題。 (NEO-13280)
 
-* 修正在標籤外使用&#39;if&#39;陳述式時，無法傳送電子郵件的 `body` 問題。 (NEO-18628)
+* 修正當HTML內容標籤外部有Javascript程式碼時，無法傳送電子郵件的問題。 (NEO-18628)
 
 * 修正嘗試從已傳送訊息的傳送記錄顯示鏡像頁面時所發生的問題。 (NEO-17976)
 
