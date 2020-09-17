@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
+source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 76%
@@ -48,7 +48,8 @@ _2020年7月22日_
 * 修正導致在電子郵件傳送中錯誤定義鏡像頁面URL（因為ASCII字元控制不當）的問題。 (NEO-26084)
 * 修正反網路釣魚服務中編碼URL管理的問題。 (NEO-25283)
 * 修正在個人化參數（具有井字型大小的錨記）中使用片段追蹤URL無法運作的問題。 (NEO-25774)
-* 修正使用特定自訂追蹤公式時的追蹤問題。 (NEO-25277)修正追蹤「通知點按」無法運作的問題（iOS和Android推播通知）。 (NEO-25965)
+* 修正使用特定自訂追蹤公式時的追蹤問題。 (NEO-25277)
+* 修正追蹤「通知點按」無法運作的問題（iOS和Android推播通知）。 (NEO-25965)
 * 修正影響工作流程中計算欄位的回歸，導致工作流程失敗。 (NEO-25194)
 * 修正無法即時建立網頁追蹤URL的回歸。 (NEO-20999)
 * 已修正現成可用的傳送報表回歸問題，在匯出為PDF時，這些報表會出現截斷。 (NEO-25757)
