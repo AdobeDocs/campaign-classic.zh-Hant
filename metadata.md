@@ -8,10 +8,11 @@ getting-started-url: https://forums.adobe.com/community/experience-cloud/marketi
 tutorials-title: 教學課程
 tutorials-url: https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/campaign-classic.zh-Hant
+solution: Campaign
 index: true
-translation-type: ht
-source-git-commit: 676857c2ab66874265d622ce34940d83c52986cf
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 100%
 
