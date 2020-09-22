@@ -1,13 +1,11 @@
 ---
 keywords: Campaign Classic;home;popular topics
-seo-title: Adobe Campaign Classic 產品文件
-solution: Campaign Classic
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ad0f9bdd2571a8780da464dc3ac8feb7b5aed998
+source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '255'
 ht-degree: 99%
 
 ---
