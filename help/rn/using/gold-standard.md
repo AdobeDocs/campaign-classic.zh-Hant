@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 14%
@@ -35,7 +35,7 @@ ht-degree: 14%
 
 有關Gold Standard升級的詳細資訊，請參閱本 [文](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/limited_2.png) Gold Standard 10版{#gs-10}
+## ![](assets/do-not-localize/green_2.png) Gold Standard 10版{#gs-10}
 
 _2020年7月7日_
 
@@ -88,7 +88,7 @@ _2020年4月29日_
 * 修正了造成清理工作流程當機的迴歸。
 * 修正了清理工作流程記錄檔的次要迴歸。
 
-## ![](assets/do-not-localize/green_2.png) Gold Standard 6版本{#gs-6}
+## ![](assets/do-not-localize/orange_2.png) Gold Standard 6版本{#gs-6}
 
 _2020年3月9日_
 
