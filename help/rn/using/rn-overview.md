@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 6%
@@ -35,7 +35,7 @@ Adobe Campaign會定期更新。 平均每年發行兩、三個次要版本，�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** -提供最新的穩定版本。 在生產環境中經過驗證。
 
-最 **後一個穩定的版本** 是Gold Standard 6。 按一下[這裡](../../rn/using/gold-standard.md)
+最 **後一個穩定版本** 是Gold Standard 10。 按一下[這裡](../../rn/using/gold-standard.md#gs-10)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** -目前正在進行生產驗證。 僅限隨選部署。
 
@@ -49,7 +49,7 @@ Adobe Campaign會定期更新。 平均每年發行兩、三個次要版本，�
 
 身為代管客戶（托管服務或混合服務），您需要與客戶服務團隊聯繫，以升級您的環境。
 
-身為Gold Standard的使用者，您將透過最新穩定版本自動從Gold Standard升級中獲益，而不需採取任何動作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+身為Gold Standard的使用者，您將透過最新穩定版本自動從Gold Standard升級中獲益，而不需採取任何動作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-10)
 
 身為內部部署使用者，您可以執行升級。 為此，您需要下載最 [新的穩定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，並升級所有環境。 進一步瞭解升 [級程式](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)，並參閱建置 [升級常見問答集](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)。
 
