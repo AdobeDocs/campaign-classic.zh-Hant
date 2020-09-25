@@ -13,14 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
 
-# 中端採購伺服器{#mid-sourcing-server}
+# 中間來源伺服器{#mid-sourcing-server}
 
-本節詳細說明中間採購伺服器的安裝和配置，以及使第三方能夠在中間採購模式下發送消息的 **實例的部署** 。
+本節詳細說明中間採購伺服器的安裝和配置，以及使第三方能夠在中間採購模式下發送消息的實 **例的部署** 。
 
 「中間採購」架構是在中間採購部 [署中呈現的](../../installation/using/mid-sourcing-deployment.md)。
 
@@ -73,7 +76,7 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
 ### 安裝和配置中間採購伺服器 {#installing-and-configuring-the-mid-sourcing-server}
 
-在客戶端控制台中，使用中 **間採購中** (在 **** /Administration/External accounts/資料夾中)找到電子郵件路由。 將伺服器 **、帳戶、密碼和** Mirror page URL **URL設定的URL********** ，填入托管mid-sourcing伺服器的伺服器提供商提供的資訊。 測試連接。
+在客戶端控制台中，使用中 **間採購中** (在 **** /Administration/External accounts/資料夾中)找到電子郵件路由。 將伺服器 **、帳戶、密碼和****Mirror page URL** URL設定的URL ******** ，填入托管mid-sourcing伺服器的伺服器提供商提供的資訊。 測試連接。
 
 >[!NOTE]
 >
@@ -122,7 +125,7 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用以下命令重新啟動Web模組：無 **伺服器重新啟動Web**。
+1. 使用以下命令重新啟動Web模組： **nlserver重新啟動web**。
 
 必須更改serverConf.xml檔案中的mid-sourcing伺服器設定。 必須在現有行的「IP位址相關性管理」區段中新增下列行：
 
@@ -170,7 +173,7 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 1. 按一下以確認您的設定 **[!UICONTROL Test the connection]**。
 1. 宣告中間採購伺服器上參考的追蹤例項：
 
-   按一下連結 **[!UICONTROL Use this platform as a platform to access the tracking servers]**,
+   按一下連結 **[!UICONTROL Use this platform as a proxy to access the tracking servers]**,
 
    指定追蹤例項的名稱，然後確認與追蹤伺服器的連線。
 
