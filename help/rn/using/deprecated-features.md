@@ -11,7 +11,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 96%
@@ -132,7 +132,7 @@ Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](../../rn/
 從20.2版開始，Campaign Classic不再支援下列系統。 相容性將於20.3版本中終止- 2020年10月。
 
 * 客戶端主控台：Windows 7
-* 舊版SMS連接器(請參閱「已過時 [的功能」)](#deprecated-features)
+* 舊版SMS連接器——請參閱「已過時 [的功能」](#deprecated-features)
 * DB2 UDB 10.5 for Federated Data Access(FDA)
 
 ### Adobe Campaign 19.2 版本  {#compat-19-2-release}
