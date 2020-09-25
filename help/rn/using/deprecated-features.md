@@ -11,17 +11,17 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 100%
+source-wordcount: '1444'
+ht-degree: 96%
 
 ---
 
 
 # 已棄用及已移除的功能 {#deprecated-and-removed-features}
 
-Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代的舊功能，以提升整體客戶價值，並時時考慮回溯相容性。由於 Adobe Campaign Classic 可以搭配第三方工具使用，產品相容性將定期更新，以僅實施所支援的版本。不再與 Adobe Campaign Classic 相容的版本列於下方及[「相容性矩陣」](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)中。
+Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代的舊功能，以提升整體客戶價值，並時時考慮回溯相容性。由於 Adobe Campaign Classic 可以搭配第三方工具使用，產品相容性將定期更新，以僅實施所支援的版本。不再與 Adobe Campaign Classic 相容的版本列於下方及[「相容性矩陣」](../../rn/using/compatibility-matrix.md)中。
 
 為通知即將移除/遭取代的 Campaign Classic 功能，我們採用下列規則：
 
@@ -49,7 +49,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
    <tr>
   <td>SMS 連接器<br></td>
-  <td><p> 下列 SMS 連接器自 20.2 版開始將不再使用。<p>
+  <td><p> 從Campaign 20.2版開始，下列SMS連接器已過時。<p>
    <ul>
    <li>NetSize</li>
    <li>Generic SMPP (支援二進位模式的 SMPP 3.4 版)</li>
@@ -66,7 +66,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
  </tr>
   <tr>  
    <td>傳真管道<br></td>
-   <td><p>傳真管道自 20.2 版開始不再使用。</p> 
+   <td><p>從Campaign 20.2版開始，傳真頻道已過時。</p> 
    <p>如果您使用此管道，則需要據此調整實作。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">進一步瞭解</a>Campaign 管道。</p>
    <p><em>目標移除日期：2021 年</em></p></td>
   </tr>
@@ -125,14 +125,15 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
 
 ## 已棄用的相容性{#deprecated-compatibility}
 
-Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)，以升級到較新版本，或在相容性結束之前移至新系統。
+Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md)，以升級到較新版本，或在相容性結束之前移至新系統。
 
 ### Adobe Campaign 20.2版本 {#compat-20-2-release}
 
-從 20.2版 開始，Campaign Classic 將不再使用下列系統。相容性將於 20.3 版本終止 - 2020年9月。
+從20.2版開始，Campaign Classic不再支援下列系統。 相容性將於20.3版本中終止- 2020年10月。
 
 * 客戶端主控台：Windows 7
-* 舊版 SMS 連接器 (請參閱下方的「已棄用的功能」一節)
+* 舊版SMS連接器(請參閱「已過時 [的功能」)](#deprecated-features)
+* DB2 UDB 10.5 for Federated Data Access(FDA)
 
 ### Adobe Campaign 19.2 版本  {#compat-19-2-release}
 
@@ -141,17 +142,17 @@ Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](https://h
 * Web 伺服器：Apache 2.2。
 * 作業系統：CentOS 6。
 
-請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」，以升級到較新版本，或轉移至新系統。
+請參閱「[相容性矩陣](../../rn/using/compatibility-matrix.md)」，以升級到較新版本，或轉移至新系統。
 
 ## 相容性終止 {#end-of-compatibility}
 
 >[!CAUTION]
 >
->Adobe Campaign Classic 與[「相容性矩陣」](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)所列的所有系統和工具相容。這些第三方系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與這些版本相容：我們將不再使用這些系統和功能，後續的產品版本亦會將這些系統和功能從我們的相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
+>Adobe Campaign Classic 與[「相容性矩陣」](../../rn/using/compatibility-matrix.md)所列的所有系統和工具相容。這些第三方系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與這些版本相容：我們將不再使用這些系統和功能，後續的產品版本亦會將這些系統和功能從我們的相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
 
 ### 客戶端主控台 {#client-console-eol}
 
-Adobe Campaign Classic 用戶端主控台無法再在下列系統執行，因為編輯者已不使用這些系統。客戶若其中一個版本執行 Campaign 用戶端主控台，必須在目標移除日期前升級至最新版本。請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
+Adobe Campaign Classic 用戶端主控台無法再在下列系統執行，因為編輯者已不使用這些系統。客戶若其中一個版本執行 Campaign 用戶端主控台，必須在目標移除日期前升級至最新版本。請參閱「[相容性矩陣](../../rn/using/compatibility-matrix.md)」。
 
 * Windows Server 2003、2008、2008 R2
 * Windows XP、Vista
@@ -186,7 +187,7 @@ Adobe Campaign Classic 用戶端主控台無法再在下列系統執行，因為
 
 Adobe 不支援下列資料庫引擎，因為其編輯者已不建議使用這些引擎。客戶若執行這些版本，需要升級至最新版本或改用其他引擎。
 
-請參閱 [Campaign Classic 相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)，以取得相版本清單。
+請參閱 [Campaign 相容性矩陣](../../rn/using/compatibility-matrix.md)，以取得相版本清單。
 
 **同盟資料存取 (FDA)**
 
