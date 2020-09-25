@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71aeeda3edafc64dbe696ce6f344b8b0ccdc43d1
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 0%
 # 範本取消發佈{#template-unpublication}
 
 在執行例項上發佈訊息範本後，就可以解除發佈。
+
+>[!NOTE]
+>
+>從Campaign 20.2版開始，即可使用此功能。
 
 事實上，已發佈的範本仍可以呼叫。 因此，如果您不再使用訊息範本，建議取消發佈訊息範本。 這是為了避免錯誤地發送不想要的事務性消息。 例如，您發佈了僅用於聖誕促銷活動的訊息範本。 您可能想在聖誕節結束後將其解除發佈，並於明年再次發佈。
 
@@ -35,11 +39,11 @@ ht-degree: 0%
 
 1. 在控制實例中，轉至樹 **[!UICONTROL Message Center > Transactional message templates]** 的資料夾。
 1. 選取您要取消發佈的範本。
-1. 按一下「**[!UICONTROL Unpublish]**」。
+1. 按一下 **[!UICONTROL Unpublish]**。
 
    <!--1. Fill in the **[!UICONTROL Log of the process]** field.-->
 
-1. 按一下「**[!UICONTROL Start]**」。
+1. 按一下 **[!UICONTROL Start]**。
 
 ![](assets/message-center-unpublish.png)
 
