@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -21,9 +21,9 @@ ht-degree: 16%
 ---
 
 
-# 開始使用工作流程{#about-workflows}
+# 開始使用工作流程{#gs-workflows}
 
-## 關於工作流程
+## 關於工作流程{#about-workflows}
 
 Adobe Campaign包含工作流程模組，可讓您協調應用程式伺服器不同模組的所有流程和工作。 使用這個全方位的圖像式環境，您可以設計各式流程，包括細分、行銷活動執行、檔案處理、人力參與等。工作流程引擎將執行並追蹤這些流程。
 
@@ -73,7 +73,7 @@ Adobe Campaign使用工作流程：
 
    進一步瞭解本節中的工作流程資料 [和表格](../../workflow/using/how-to-use-workflow-data.md)。
 
-## 主要原則與最佳實務
+## 主要原則與最佳實務{#principles-workflows}
 
 請參閱這些章節，以尋找使用工作流程自動化流程的指引和最佳實務：
 
