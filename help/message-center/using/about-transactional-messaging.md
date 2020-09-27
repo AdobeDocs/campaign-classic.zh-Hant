@@ -1,8 +1,6 @@
 ---
 title: 關於交易式訊息傳送
-seo-title: 關於交易式訊息傳送
-description: 關於交易式訊息傳送
-seo-description: null
+description: '根據從資訊系統生成的事件發送觸發消息。 '
 page-status-flag: never-activated
 uuid: c854daac-8756-44f3-a4e2-be31177ab9d1
 contentOwner: sauviat
@@ -15,17 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 7%
+source-wordcount: '164'
+ht-degree: 3%
 
 ---
 
 
 # 關於交易式訊息傳送{#about-transactional-messaging}
 
-交易式訊息（訊息中心）是專為管理觸發訊息而設計的促銷活動模組。 這些訊息是由資訊系統觸發的事件產生，可以： 例如，發票、訂單確認、發運確認、密碼更改、產品不可用通知、帳戶聲明或網站帳戶建立。
+交易式訊息（訊息中心）是專為管理觸發訊息而設計的促銷活動模組。 這些訊息是由資訊系統觸發的事件產生，可以：例如，發票、訂單確認、發運確認、密碼更改、產品不可用通知、帳戶聲明或網站帳戶建立。
 
 >[!IMPORTANT]
 >
