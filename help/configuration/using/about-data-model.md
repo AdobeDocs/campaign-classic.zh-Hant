@@ -1,6 +1,6 @@
 ---
 title: 關於Adobe Campaign Classic資料模型
-description: 本檔案說明Adobe Campaign Classic資料模型的基本概念。
+description: 瞭解如何擴充Campaign資料模型、編輯結構、使用API等。
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,19 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 5%
 
 ---
 
 
-# 關於促銷活動資料模型{#about-data-model}
+# About the Campaign data model{#about-data-model}
 
 本節說明Adobe Campaign Classic資料模型的基本概念，以便更好地瞭解Campaign內建表格及其互動。
 
-Adobe Campaign資料庫的概念資料模型由一組內建表格及其互動組成。
+Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，
 
 要訪問每個表的說明，請轉至 **[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選擇資源，然後按一下選 **[!UICONTROL Documentation]** 項卡。
 
@@ -33,7 +33,7 @@ Adobe Campaign資料庫的概念資料模型由一組內建表格及其互動組
 
 如需預設「促銷活動傳統型」資料模型說明的詳細資訊，請參 [閱本節](../../configuration/using/data-model-description.md)。
 
-在XML中描述了應用中資料的物理和邏輯結構。 它遵循Adobe Campaign專屬的語法，稱為結構。 如需Adobe Campaign結構描述的詳細資訊，請閱讀 [本節](../../configuration/using/about-schema-reference.md)。
+並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## 概觀 {#data-model-overview}
 
@@ -101,7 +101,7 @@ Adobe Campaign中立即可用的「收件者」表格為您建立資料模型提
 >
 >擴充資料模型會保留給進階使用者。
 
-## 使用自訂收件者表格 {#custom-recipient-table}
+## Using a custom recipient table {#custom-recipient-table}
 
 在設計您的Adobe Campaign資料模型時，您可以使用現成可用的「收件者」 [表格](#default-recipient-table)，或決定建立非標準的收件者表格來儲存行銷設定檔。
 
@@ -133,4 +133,4 @@ Adobe Campaign中立即可用的「收件者」表格為您建立資料模型提
 
 >[!IMPORTANT]
 >
->使用自訂收件者表格會保留給進階使用者，並受到一些限制。 For more on this, see [this section](../../configuration/using/about-custom-recipient-table.md).
+>使用自訂收件者表格會保留給進階使用者，並受到一些限制。 如需詳細資訊，請參閱[本區段](../../configuration/using/about-custom-recipient-table.md)。
