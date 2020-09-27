@@ -1,8 +1,6 @@
 ---
 title: 通用架構
-seo-title: 通用架構
-description: 通用架構
-seo-description: null
+description: 瞭解如何安裝和設定Campaign Classic。
 page-status-flag: never-activated
 uuid: 686bc660-2403-4bab-a4ea-9b872adf8fa0
 contentOwner: sauviat
@@ -15,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -49,15 +47,15 @@ Adobe Campaign是以服務導向架構(SOA)為基礎，並包含數個功能模�
 
 >[!CAUTION]
 >
->若未明確說明，則Adobe Campaign平台所有元件的安裝、更新和維護由代管元件的電腦管理員負責。 這包括實作Adobe Campaign應用程式的先決條件，以及遵守元件間的 [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) 。
+>若未明確說明，則Adobe Campaign平台所有元件的安裝、更新和維護由代管元件的電腦管理員負責。 這包括實作Adobe Campaign應用程式的先決條件，以及遵守元件間的 [相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html) 。
 
 ## 表現層 {#presentation-layer}
 
-應用程式的存取方式視使用者需求而定： Rich client、Thin client或API整合。
+應用程式的存取方式視使用者需求而定：Rich client、Thin client或API整合。
 
-* **Rich client**: 應用程式的主要使用者介面是rich client，換言之，是原生應用程式(Windows)，僅與Adobe Campaign應用程式伺服器通訊，僅與標準網際網路通訊協定（SOAP、HTTP等）。 此主控台提供絕佳的使用便利性，讓您提高生產力，並且使用極少的頻寬（透過使用本機快取），而且易於部署。 此控制台可從網際網路瀏覽器部署、可自動更新，而且不需要任何特定網路組態，因為它只會產生HTTP(S)流量。
-* **瘦客戶端**: 應用程式的某些部分可使用HTML使用者介面，透過簡單的Web瀏覽器存取，包括報告模組、傳送核准階段、Distributed Marketing模組（中央／本機）的功能、例項監控等。 此模式可將Adobe Campaign功能納入內部網路或外部網路。
-* **透過API進行整合**: 在某些情況下，可使用透過SOAP通訊協定公開的Web Services API，從外部應用程式呼叫系統。
+* **Rich client**:應用程式的主要使用者介面是rich client，換言之，是原生應用程式(Windows)，僅與Adobe Campaign應用程式伺服器通訊，僅與標準網際網路通訊協定（SOAP、HTTP等）。 此主控台提供絕佳的使用便利性，讓您提高生產力，並且使用極少的頻寬（透過使用本機快取），而且易於部署。 此控制台可從網際網路瀏覽器部署、可自動更新，而且不需要任何特定網路組態，因為它只會產生HTTP(S)流量。
+* **瘦客戶端**:應用程式的某些部分可使用HTML使用者介面，透過簡單的Web瀏覽器存取，包括報告模組、傳送核准階段、Distributed Marketing模組（中央／本機）的功能、例項監控等。 此模式可將Adobe Campaign功能納入內部網路或外部網路。
+* **透過API進行整合**:在某些情況下，可使用透過SOAP通訊協定公開的Web Services API，從外部應用程式呼叫系統。
 
 ## 邏輯應用層 {#logical-application-layer}
 
@@ -77,9 +75,9 @@ Adobe Campaign依賴一組可搭配運作的伺服器端程式。
 
 此外，它還可處理定期執行的技術工作流程，包括：
 
-* 追蹤： 恢復和合併跟蹤日誌。 它可讓您從重新導向伺服器擷取記錄檔，並建立報表模組所使用的匯總指示符。
-* 清除： 資料庫清除。 用於清除舊記錄並避免資料庫呈指數級增長。
-* 帳單： 自動傳送平台的活動報表（資料庫大小、行銷動作數等）。
+* 追蹤：恢復和合併跟蹤日誌。 它可讓您從重新導向伺服器擷取記錄檔，並建立報表模組所使用的匯總指示符。
+* 清除：資料庫清除。 用於清除舊記錄並避免資料庫呈指數級增長。
+* 帳單：自動傳送平台的活動報表（資料庫大小、行銷動作數等）。
 
 **傳送伺服器** (nlserver mta)
 
@@ -91,7 +89,7 @@ Adobe Campaign具備原生的電子郵件廣播功能。 此進程充當SMTP郵�
 
 對於電子郵件，Adobe Campaign會自動處理開啟和點按追蹤（在網站層級進行交易追蹤的可能性更大）。 為此，會重寫包含在電子郵件訊息中的URL，以指向此模組，此模組會先註冊網際網路使用者的傳遞，再將其重新導向至所需的URL。
 
-為保證最高可用性，此過程完全獨立於資料庫： 其他伺服器程式僅使用SOAP呼叫(HTTP、HTTP(S)和XML)與其通訊。 技術上，此功能是在HTTP伺服器的擴充模組（IIS中的ISAPI擴充功能，或DSO Apache模組等）中實作 而且僅適用於Windows。
+為保證最高可用性，此過程完全獨立於資料庫：其他伺服器程式僅使用SOAP呼叫(HTTP、HTTP(S)和XML)與其通訊。 技術上，此功能是在HTTP伺服器的擴充模組（IIS中的ISAPI擴充功能，或DSO Apache模組等）中實作 而且僅適用於Windows。
 
 還提供其他技術程式：
 
@@ -131,8 +129,8 @@ Adobe Campaign具備原生的電子郵件廣播功能。 此進程充當SMTP郵�
 
 ## 持久層 {#persistence-layer}
 
-資料庫是做為永續性層，並包含幾乎所有由Adobe Campaign管理的資訊。 這包括功能資料（設定檔、訂閱、內容等）、技術資料（傳送工作和記錄檔、追蹤記錄檔等） 和工作資料（購買、銷售機會）。
+資料庫是做為永續性層，並包含幾乎所有由Adobe Campaign管理的資訊。 這包括功能資料（描述檔、訂閱、內容等）、技術資料（傳送工作和記錄檔、追蹤記錄檔等） 和工作資料（購買、銷售機會）。
 
-資料庫的可靠性至關重要，因為大部份的Adobe Campaign元件都需要存取資料庫才能執行其工作（重新導向模組除外）。
+資料庫的可靠性至關重要，因為大部份的Adobe Campaign元件都需要存取資料庫，才能執行其工作（重新導向模組除外）。
 
 該平台預先定義了以營銷為中心的資料集市，或者可以使用任何主要的關係資料庫管理系統(RDBMS)輕鬆地置於現有資料集市和模式之上。 資料集市中的所有資料都可由Adobe Campaign平台透過從Adobe Campaign到資料庫的SQL呼叫存取。 Adobe Campaign也提供完整的摘取轉換與載入(ETL)工具，以執行資料匯入與匯出至系統或匯出系統。
