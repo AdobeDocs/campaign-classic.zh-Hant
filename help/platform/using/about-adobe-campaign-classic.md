@@ -1,7 +1,7 @@
 ---
 title: 關於 Adobe Campaign Classic
 seo-title: 關於 Adobe Campaign Classic
-description: 關於 Adobe Campaign Classic
+description: 探索主要功能、使用者介面和全域方針。
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 98%
 
 ---
 
 
-# 關於 Adobe Campaign Classic{#about-adobe-campaign-classic}
+# Get Started with Campaign Classic{#about-adobe-campaign-classic}
 
 為了實現高水準的客戶參與度並打造精彩的體驗，企業必須在所有接觸點建立一致的客戶旅程。現在，行銷人員可以有效地設計、規劃、執行、管理以及最佳化跨通路行銷活動，為行銷投資帶來更高的投資報酬，並且提高客戶的忠誠度。
 
