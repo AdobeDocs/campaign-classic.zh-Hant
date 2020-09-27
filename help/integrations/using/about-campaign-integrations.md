@@ -1,6 +1,6 @@
 ---
 title: 關於 Campaign 整合
-description: 瞭解目前Adobe Campaign版本與[Adobe Experience Cloud解決方案]之間的功能整合
+description: 使用其他Adobe解決方案，並將其不同的功能與Campaign結合。
 page-status-flag: never-activated
 uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 1%
+source-wordcount: '772'
+ht-degree: 3%
 
 ---
 
@@ -93,8 +93,8 @@ Adobe Experience Cloud說明入口網站會詳細說明組織管 [理和連結Ad
    <td> 可讓您將 <strong></strong> AEM Assets程式庫中的資產插入在Adobe Campaign中建立的電子郵件和登陸頁面。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">進一步瞭解</a> Adobe Campaign - AEM Assets整合。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Experience Cloud觸發器</strong><br /> </td> 
-   <td> Triggers核心服 <strong></strong> 務與Adobe Campaign的整合可讓您傳送個人化電子郵件給客戶，以回應Adobe Analytics在您的網站上追蹤的特定行為。<br /> <p><a href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html">進一步瞭解</a> Adobe Campaign - Experience Cloud觸發器整合。</p><br /> </td> 
+   <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
+   <td> Integration between <strong>Triggers core service</strong> and Adobe Campaign allows you to send personalized emails to your customers as a reaction to specific behaviors that are tracked on your website by Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/tw/campaign/kb/triggers-and-campaign.html">進一步瞭解</a> Adobe Campaign - Experience Cloud觸發器整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics —— 資料連接器</strong><br /> </td> 
