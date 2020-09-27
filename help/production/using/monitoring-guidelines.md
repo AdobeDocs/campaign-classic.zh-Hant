@@ -1,6 +1,6 @@
 ---
 title: 監控准則
-description: 本節提供監控Campaign Classic的一般准則。
+description: 瞭解監控促銷活動例項和程式的准則和最佳實務。
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '712'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 ![](assets/monitoring_tab.png)
 
-## 監控Campaign Classic程式 {#monitoring-campaign-classic-processes}
+## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">監控您的實例</a></p></td>
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 有幾種自動方法可供使用。 來協助您監控您的實例。 例如，您可以設定偵測到異常的電子郵件報表、擷取XML格式的指標清單等。 [按一下這裡](../../production/using/monitoring-processes.md#automatic-monitoring) ，以取得詳細資訊。
 
-**稽核記錄**
+**稽核軌跡**
 
 稽核記錄可讓您直觀地顯示實例中與選項、工作流程和結構描述相關的變更的完整記錄。 [按一下這裡](../../production/using/audit-trail.md) ，以取得詳細資訊。
 
@@ -68,13 +68,13 @@ ht-degree: 3%
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**Workflow HeatMap**
+**工作流程熱度圖**
 
 Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流程。 它可讓您輕鬆監控執行個體的負載，並據此規劃工作流程。 [按一下這裡](../../workflow/using/heatmap.md) ，以取得詳細資訊。
 
-**稽核記錄**
+**稽核軌跡**
 
-「稽核記錄」可讓您視覺化工作流程中所做的所有修改及其目前狀態。 [按一下這裡](../../production/using/audit-trail.md)。
+「稽核記錄」可讓您視覺化工作流程中所做的所有修改及其目前狀態。 [按一下這裡](../../production/using/audit-trail.md).
 
 **工作流程疑難排解**
 
@@ -90,7 +90,7 @@ Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流�
 * [使用工作流程時的最佳實務](../../workflow/using/workflow-best-practices.md)
 * [監控工作流程執行](../../workflow/using/monitoring-workflow-execution.md)
 
-### 監控傳送 {#monitoring-deliveries}
+### 監控傳遞{#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -139,7 +139,7 @@ Campaign Classic說明檔案中提供技術資源。 建議您在對實例執行
 **代管模型與功能**
 
 * [Campaign Classic代管模型](../../installation/using/hosting-models.md)
-* [代管模型功能](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [代管模型功能](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)
 
 **伺服器組態**
 
