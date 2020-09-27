@@ -1,8 +1,6 @@
 ---
 title: 關於社交行銷
-seo-title: 關於社交行銷
-description: 關於社交行銷
-seo-description: null
+description: 瞭解如何使用Campaign透過Facebook和Twitter與客戶互動。
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -15,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 4%
 
 ---
 
