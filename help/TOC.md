@@ -9,10 +9,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 95%
+source-wordcount: '2119'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 95%
       + [相容性矩陣](rn/using/compatibility-matrix.md)
 + 快速入門{#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
-      + [關於 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+      + [開始使用Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [啟動 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign 工作區](platform/using/adobe-campaign-workspace.md)
@@ -266,7 +266,7 @@ ht-degree: 95%
       + [使用案例：顯示線上意見調查之答案的報表](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 設計網頁內容{#designing-content}
    + 網頁應用程式{#web-applications}
-      + [關於 Web 應用程式](web/using/about-web-applications.md)
+      + [開始使用Web應用程式](web/using/about-web-applications.md)
       + [建立新的 Web 應用程式](web/using/creating-a-new-web-application.md)
       + [設計 Web 應用程式](web/using/designing-a-web-application.md)
       + [使用案例：建立概述](web/using/use-cases--creating-overviews.md)
@@ -342,7 +342,7 @@ ht-degree: 95%
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
 + 使用工作流程自動化 {#automating-with-workflows}
    + 簡介 {#introduction}
-      + [關於工作流程](workflow/using/about-workflows.md)
+      + [開始使用工作流程](workflow/using/about-workflows.md)
       + [關於活動](workflow/using/about-activities.md)
    + 一般操作 {#general-operation}
       + [建立工作流程](workflow/using/building-a-workflow.md)
@@ -478,7 +478,7 @@ ht-degree: 95%
       + [轉移至中間來源](workflow/using/transfer-to-mid-sourcing.md)
       + [中間來源平台](workflow/using/mid-sourcing-platform.md)
 + 管理優惠方案 {#managing-offers}
-   + 互動概觀 {#interaction-overview}
+   + 開始使用互動功能 {#interaction-overview}
       + [互動與優惠管理](interaction/using/interaction-and-offer-management.md)
       + [字彙](interaction/using/glossary.md)
       + [互動最佳實務](interaction/using/interaction-best-practices.md)
@@ -530,7 +530,7 @@ ht-degree: 95%
       + [對出頻道上的優惠方案](interaction/using/offers-on-an-outbound-channel.md)
 + 交易式傳訊 {#transactional-messaging}
    + 簡介 {#introduction}
-      + [關於交易式傳訊](message-center/using/about-transactional-messaging.md)
+      + [交易式訊息快速入門](message-center/using/about-transactional-messaging.md)
       + [交易式傳訊架構](message-center/using/transactional-messaging-architecture.md)
       + [事件說明](message-center/using/event-description.md)
    + 執行個體設定 {#instance-configuration}
