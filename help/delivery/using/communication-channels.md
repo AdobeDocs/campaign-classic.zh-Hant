@@ -1,7 +1,7 @@
 ---
 title: 通訊通道
 seo-title: 通訊通道
-description: 通訊通道
+description: 建立傳送，以在不同通道上傳送個人化訊息。
 seo-description: null
 page-status-flag: never-activated
 uuid: 42975431-64c9-4ecb-98ed-b1f9b13c157e
@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1183'
 ht-degree: 11%
 
 ---
@@ -94,7 +94,7 @@ Adobe Campaign allows you to send personalized and segmented [push notifications
 
 線上通道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等）並直接從 Adobe Campaign 傳送給您的對象。離線通道則不同。當您準備直接郵件傳送時，Adobe Campaign 會產生一個檔案，其中包含所有目標設定檔和選取的聯絡資訊（例如，郵遞區號）。然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
 
-## 其他頻道 {#other-channels}
+## 其他通道 {#other-channels}
 
 Adobe Campaign提供代理商或電話傳送範本，可用來建立外部傳送。 使用這些渠道意味著您可以設定專用的方法來處理輸出檔案。 配置步驟與直接郵件通 [道的步驟相同](../../delivery/using/about-direct-mail-channel.md)。
 
@@ -104,7 +104,7 @@ Adobe Campaign提供代理商或電話傳送範本，可用來建立外部傳送
 
 此渠道僅用於描述性用途，例如，定義要追蹤在Adobe Campaign以外工具中執行之促銷活動目標的傳送。
 
-## 傳送類型{#types-of-deliveries}
+## 傳遞類型{#types-of-deliveries}
 
 促銷活動中有三種類型的傳送物件：
 
@@ -116,7 +116,7 @@ Adobe Campaign提供代理商或電話傳送範本，可用來建立外部傳送
 
 工作流程也會根據您要使用的管道類型，提供特定的傳送活動。 For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
 
-### 循環傳送 {#recurring-delivery}
+### 重複傳送 {#recurring-delivery}
 
 循 **環傳送** ，可讓您在每次執行活動時建立新傳送。 如此可避免您必須針對循環工作建立新的傳送。
 
@@ -124,7 +124,7 @@ Adobe Campaign提供代理商或電話傳送範本，可用來建立外部傳送
 
 循環傳送是透過循環傳送活動在工作流程 [中建立的](../../workflow/using/recurring-delivery.md)。 本節將介紹此活動的示例： [在定位工作流程中建立循環傳送](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
 
-### 持續傳送 {#continuous-delivery}
+### 持續傳遞 {#continuous-delivery}
 
 持續 **傳送** ，可讓您將新收件者新增至現有的傳送，如此就不必在每次執行時建立新的傳送。
 
