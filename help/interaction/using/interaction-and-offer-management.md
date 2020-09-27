@@ -1,8 +1,6 @@
 ---
 title: 互動與優惠管理
-seo-title: 互動與優惠管理
-description: 互動與優惠管理
-seo-description: null
+description: 根據資格規則，將最佳選件傳送給您的聯絡人。
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -15,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 6%
 
 ---
 
@@ -39,5 +40,5 @@ source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
 | 有用的頁面 | 其他資源 |
 |---|---|
 | [互動實作步驟](../../interaction/using/implementation-steps.md) | [測試選件散發](../../interaction/using/about-offers-simulation.md) |
-| [即時／設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增選件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [建立選件空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [即時/設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增選件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |
