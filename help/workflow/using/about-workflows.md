@@ -1,8 +1,6 @@
 ---
 title: 關於工作流程
-seo-title: 關於工作流程
-description: 關於工作流程
-seo-description: null
+description: 使用工作流程自動化流程、管理資料和受眾、傳送訊息等。
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -15,12 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 16%
 
 ---
 
 
-# 關於工作流程{#about-workflows}
+# 開始使用工作流程{#about-workflows}
+
+## 關於工作流程
 
 Adobe Campaign包含工作流程模組，可讓您協調應用程式伺服器不同模組的所有流程和工作。 使用這個全方位的圖像式環境，您可以設計各式流程，包括細分、行銷活動執行、檔案處理、人力參與等。工作流程引擎將執行並追蹤這些流程。
 
@@ -38,7 +41,7 @@ Adobe Campaign使用工作流程：
 
 工作流可以表示流程定義（工作流模型，它表示應發生的事件）和此流程的實例（工作流實例，它表示實際發生的事件）。
 
-工作流程範本說明要執行的各種工作，以及它們如何連結在一起。 任務模板稱為活動，由表徵圖表示。 它們通過轉換而連接在一起。
+工作流程範本說明要執行的各種工作，以及它們如何連結在一起。 任務模板稱為活動，用表徵圖表示。 它們通過轉換而連接在一起。
 
 ![](assets/example1.png)
 
@@ -70,3 +73,14 @@ Adobe Campaign使用工作流程：
 
    進一步瞭解本節中的工作流程資料 [和表格](../../workflow/using/how-to-use-workflow-data.md)。
 
+## 主要原則與最佳實務
+
+請參閱這些章節，以尋找使用工作流程自動化流程的指引和最佳實務：
+
+* 進一步瞭解本頁中的工作 [流程活動](../../workflow/using/how-to-use-workflow-data.md)。
+* 瞭解如何在本節中建立工 [作流程](../../workflow/using/building-a-workflow.md)。
+* 瞭解如何使用工作流程，在此區段中匯入Campaign [中的資料](../../workflow/using/importing-data.md)。
+* 本頁詳細說明了工作流 [程最佳實務](../../workflow/using/workflow-best-practices.md)。
+* 在本節中尋找有關工作流程執 [行的指引](../../workflow/using/starting-a-workflow.md)。
+* 瞭解如何在本頁中監控 [工作流程](../../workflow/using/monitoring-workflow-execution)。
+* 瞭解如何授予使用者使用本頁工作流程的 [存取權](../../workflow/using/managing-rights.md)。
