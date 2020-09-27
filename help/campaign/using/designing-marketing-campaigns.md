@@ -1,7 +1,7 @@
 ---
-title: 設計行銷宣傳
-seo-title: 設計行銷宣傳
-description: 設計行銷宣傳
+title: 設計行銷活動
+seo-title: 設計行銷活動
+description: 定義、最佳化、執行和分析行銷宣傳。
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,19 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 6%
 
 ---
 
 
-# 設計行銷宣傳{#designing-marketing-campaigns}
+# 設計行銷活動{#designing-marketing-campaigns}
 
 Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳。 Adobe Campaign的運作方式類似於行銷策略的統一訂單與執行中心。 如需詳細資訊，請參閱存 [取促銷活動](../../campaign/using/accessing-campaigns.md)[和設定行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
 
-此外，行銷資 **源管理(MRM)** (Marketing Resource Management,MRM)模組可讓您以協作模式控制行銷動作，提供對相關任務、預算和行銷資源的完整管理和即時追蹤。 「行銷資源管理」可讓您最佳化並規範內部和外部程式、資源與行銷宣傳以及第三方關係（代理商、印表機等）的管理。 如需詳細資訊，請參閱[本區段](../../campaign/using/about-marketing-resource-management.md)。
+此外，行銷資 **源管理(MRM)** (Marketing Resource Management,MRM)模組可讓您以協作模式控制行銷動作，提供對相關任務、預算和行銷資源的完整管理和即時追蹤。 「行銷資源管理」可讓您最佳化並規範內部和外部程式、資源與行銷宣傳以及第三方關係（代理商、印表機等）的管理。 如需詳細資訊，請參閱[本章節](../../campaign/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
@@ -58,13 +58,13 @@ Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳
 
    促銷活動工作流程包含的活動與所有工作流程相同，但是特定於促銷活動。 它可讓您建立並設定所有可用渠道的傳送。
 
-   如需詳細資訊，請參閱[本區段](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
+   如需詳細資訊，請參閱[本章節](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
 
 * **目標**
 
    在促銷活動、方案或計畫中，您可以列出目標清單。 這些是要達到的量化值。 在促銷活動、方案或計畫結束時，MRM模組可讓您比較專用報表中的目標和結果。
 
-* **傳送大綱**
+* **傳遞大綱**
 
    傳送大綱是傳送的結構化描述。 每個傳送都可參照傳送大綱，其中包含例如相關選件、要附加的檔案或商店連結。 選件可根據所選的傳送大綱在傳送中參考。
 
