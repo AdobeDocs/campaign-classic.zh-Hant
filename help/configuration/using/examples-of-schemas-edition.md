@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 042349ae62012984a040b578d97706bae1c9917d
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
@@ -304,3 +307,46 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
+## 使用案例：將欄位連結到現有引用表 {#uc-link}
+
+此使用案例示範如何使用現有的參考表作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代項目。
+
+您也可以將現有的參考表用作方案中的枚舉。 這可透過建立表格與參考表格之間的連結，以及新增屬性 **displayAsField=&quot;true&quot;來達成**。
+
+在此示例中，參考表包含銀行名稱和標識符的清單：
+
+```
+<srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
+xtkschema="xtk:srcSchema">
+    <element img="cus:bank16x16.png" label="Banks" name="bank">
+        <compute-string expr="@name"/>
+        <key name="id">
+            <keyfield xpath="@id"/>
+        </key>
+        <attribute label="Bank Id" name="id" type="short"/>
+        <attribute label="Name" length="64" name="name" type="string"/>
+     </element> 
+</srcSchema>
+```
+
+在使用此參考表格的任何表格中，定義連結並新增 **displayAsField=&quot;true&quot;屬性** 。
+
+```
+<element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
+```
+
+使用者介面不會顯示連結，而會顯示欄位。 當用戶選擇該欄位時，他可以從參考表中選擇值，或使用自動完成功能。
+
+![](assets/schema-edition-ex.png)
+
+* 要使其自動完成，必須在參考表中定義計算字串。
+
+* 在連結定 **義中新增noDbIndex=&quot;true&quot;** 屬性，以防止Adobe Campaign在連結來源表格中儲存的值上建立索引。
+
+## 相關主題
+
+* [使用枚舉](../../platform/using/managing-enumerations.md)
+
+* [促銷活動結構描述快速入門](../../configuration/using/about-schema-edition.md)
+
+* [更新資料庫結構](../../configuration/using/updating-the-database-structure.md)
