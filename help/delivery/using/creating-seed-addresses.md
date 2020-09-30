@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +36,7 @@ Adobe Campaign也可讓您建立種子位址範本，這些範本會匯入傳送
 要建立種子地址，請執行以下步驟：
 
 1. 按一下 **[!UICONTROL New]** 種子地址清單上方的按鈕。
-1. 在標籤的匹配欄位中輸入連結至地址的 **[!UICONTROL Recipient]** 資料。 可用欄位與傳送接收者配置檔案中的標準欄位相對應（nms:recipient表）:姓名、名字、電子郵件等。
+1. 在標籤的匹配欄位中輸入連結至地址的 **[!UICONTROL Recipient]** 資料。 可用欄位對應於傳送接收者配置檔案中的標準欄位（nms:recipient表）:姓名、名字、電子郵件等。
 
    >[!NOTE]
    >
@@ -43,8 +46,13 @@ Adobe Campaign也可讓您建立種子位址範本，這些範本會匯入傳送
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. 在標 **[!UICONTROL Seed fields]** 簽中，輸入在分析階段（在表中）期間將插入傳送日誌中 **[!UICONTROL nms:broadLog]** 的值。
+1. 在標 **[!UICONTROL Seed fields]** 簽中，輸入在分析階段（在表中）期間將插入傳送日誌中的 **[!UICONTROL nms:broadLog]** 值。
+
 1. 在標籤中， **[!UICONTROL Additional data]** 輸入用於在「資料管理」工作流程中建立且您要指派特定值給之傳送的個人化資料。
+
+   >[!NOTE]
+   >
+   >請確定已定義其他目標資料，其別名以活動中的「@」開 **[!UICONTROL Enrichment]** 頭。 否則，您將無法在傳送活動中正確使用種子地址。
 
 ## 建立種子地址模板 {#creating-seed-address-templates}
 
