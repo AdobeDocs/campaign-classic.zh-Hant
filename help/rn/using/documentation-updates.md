@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1b76fb1694545f4be02a63e4c670b81db632c5ee
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3704'
 ht-degree: 87%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 87%
 已新增附註，以指定「作用中」描述檔計數僅適用於「行銷」例項。 [顯示全文](../../platform/using/about-profiles.md#active-profiles)
 
 已新增關於架構版本的新範例，以將欄位連結至現有的參考表。 [顯示全文](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+
+已新增附註，說明如何在傳送中搭配種子地址使用其他資料。 [顯示全文](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## 2020 年 8 月{#aug-2020}
 
