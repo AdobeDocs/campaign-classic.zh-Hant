@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 8bcbcd23-9251-412a-ae72-11f15db74112
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign可讓您管理同一例項所涉及之不同國家／地區之間
 
 ## 執行計畫 {#execution-scheduling}
 
-您可以使用調度程式調度任務的執行(請參 [閱Scheduler](../../workflow/using/scheduler.md))。 您也可以使用活動中提供此功能的排程選項。 這些活動提供一個 **[!UICONTROL Schedule]** 頁籤： **[!UICONTROL File collector]**、 **[!UICONTROL File transfer]****[!UICONTROL Web download]**、 **[!UICONTROL Email reception]** 和 **[!UICONTROL SMS]**&#x200B;等。
+您可以使用調度程式調度任務的執行(請參 [閱Scheduler](../../workflow/using/scheduler.md))。 您也可以使用活動中提供此功能的排程選項。 這些活動提供一個 **[!UICONTROL Schedule]** 頁籤： **[!UICONTROL File collector]**、 **[!UICONTROL File transfer]**、 **[!UICONTROL Web download]****[!UICONTROL Email reception]** 和 **[!UICONTROL SMS]**&#x200B;等。
 
 對於所有計畫任務（即具有計畫選項的所有活動），您可以選擇要應用的時區。 時區是透過相關活動 **[!UICONTROL Advanced]** 的標籤選取：
 
