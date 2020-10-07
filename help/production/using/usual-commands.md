@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,7 @@ source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 >
 >* 無論如何，您都可以新增 **-noconsole引數** ，以刪除在模組啟動後顯示的注釋。
 >* 相反地，您可以新增引數 **-verbose** ，以顯示更多資訊。
+
 >
 
 
@@ -134,11 +135,11 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >從20.1開始，建議改用下列命令（適用於Linux）:系 **統mctl啟動nlserver**
+      >從20.1開始，建議改用下列命令（適用於Linux）: **systemctl啟動伺服器**
 
    * 在Windows中：net start nlserver6
 
-* 否則，在Adobe Campaign帳戶中： **nlserver watchdog -svc -noconsole**
+* 否則，在Adobe Campaign帳戶中： **nlserverwatch -svc -noconsole**
 
 ## config命令 {#the-config-command}
 
@@ -160,13 +161,14 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 >[!CAUTION]
 >
->若要使用內部識 **別碼登入** ，您必須事先定義密碼。 如需詳細資訊，請參閱[本小節](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+>若要使用內部識 **別碼登入** ，您必須事先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
 >[!NOTE]
 >
 >* 一般而言，您不需手動修改設定檔案，而可使用config命 **令** 。
 >* 若要取得參數清單，請使 **用-?** 參數： **nlserver config -?**
 >* 對於Oracle資料庫，不能指定帳戶。 語法如下：
+
 >
 >  
 nlserver config -setdblogin:Oracle:test6@dbserver
