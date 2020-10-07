@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: d0dd9c74-aad5-452e-a11d-c231dacd2aec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Intersection ****-type活動會從接收的目標的交叉點建立目標。
 
 有關配置和使用交叉點活動的詳細資訊，請參 [閱提取聯合資料（交叉點）](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-)。
 
-如果 **[!UICONTROL Generate complement]** 要處理剩餘人口，請選中該選項。 補語將包含所有傳入活動結果的並減去交叉點。 然後，活動中將添加一個額外的出站轉移，如下所示：
+Check the **[!UICONTROL Generate complement]** option if you wish to process the remaining population. 補語將包含所有傳入活動結果的並減去交叉點。 然後，活動中將添加一個額外的出站轉移，如下所示：
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
@@ -43,7 +43,7 @@ Intersection ****-type活動會從接收的目標的交叉點建立目標。
    在本例中，這些詢問分別針對男性、生活在巴黎的收件者和18至30歲的收件者。
 
 1. 設定交叉點。 要執行此操作，請選擇協調方 **[!UICONTROL Keys only]** 法，因為由查詢產生的總體包含一致的資料。
-1. 如果您已為查詢輸入其他資料，您可以選取相關方塊，選擇只保留由收件者共用的資料。
+1. 如果您已為查詢輸入其他資料，您可以勾選相關方塊，選擇只保留由收件者共用的資料。
 1. 如果希望使用其餘的資料（關於查詢，但不涉及其交集），請選中該 **[!UICONTROL Generate complement]** 框。
 1. 在交叉點結果之後添加清單更新活動。 您也可以將清單更新新增至您想要使用的輔助項目。
 1. 執行工作流程。 在這裡，兩個收件者同時套用至所有三個輸入的查詢。 補碼由5個收件者組成，他們只適用於3個查詢中的一或兩個。
