@@ -9,16 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
 
-# 關於行動應用程式頻道{#about-mobile-app-channel}
+# 關於行動應用程式通道{#about-mobile-app-channel}
 
 >[!CAUTION]
 >
@@ -53,11 +53,11 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 >[!CAUTION]
 >
->* 您必須確保傳送至行動應用程式的通知符合Apple（Apple推播通知服務）和Google（Firebase cloud訊息）所指定的必要條件。
+>* 您必須確保傳送至行動應用程式的通知符合Apple（Apple推播通知服務）和Google（Firebase Cloud訊息）所指定的必要條件。
 >* 警告：在某些國家／地區，法律要求您告知使用者您收集到的資料類型行動應用程式及其處理目的。 你必須檢查法律。
 
 
-(mobileAppOptOutMagt **[!UICONTROL NMAC opt-out management]** )工作流程會更新行動裝置上取消訂閱的通知。 有關此工作流的詳細資訊，請參閱「工作 [流」指南](../../workflow/using/mobile-app-channel.md)。
+(mobileAppOptOutMagt **[!UICONTROL NMAC opt-out management]** )工作流程會更新行動裝置上取消訂閱的通知。 For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
 
 Adobe Campaign與二進位和HTTP/2 APNS都相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中 [設定行動應用程式」一節](../../delivery/using/configuring-the-mobile-application.md) 。
 
@@ -66,14 +66,14 @@ Adobe Campaign與二進位和HTTP/2 APNS都相容。 如需設定步驟的詳細
 下列結構說明如何讓行動應用程式與Adobe Campaign交換資料的步驟。 此過程涉及三個實體：
 
 * 行動應用程式
-* 通知服務：Apple適用的APNS（Apple推播通知服務）和Android適用的FCM（Firebase cloud訊息）
+* 通知服務：Apple適用的APNS（Apple推播通知服務）和Android適用的FCM（Firebase Cloud訊息）
 * Adobe Campaign
 
 通知程式的三個主要步驟是：在Adobe Campaign中註冊應用程式（訂閱收集）、傳送和追蹤。
 
 ### 步驟1:訂閱系列 {#step-1--subscription-collection}
 
-行動應用程式是由使用者從App Store或Google play下載。 此應用程式包含連線設定（iOS憑證和Android專案金鑰）和整合金鑰。 首次開啟應用程式時（視設定而定），系統會要求使用者輸入註冊資訊(@userKey:電子郵件或帳號)。 同時，應用程式會詢問通知服務以收集通知ID（推播ID）。 所有這些資訊（連線設定、整合金鑰、通知識別碼、userKey）都會傳送至Adobe Campaign。
+行動應用程式是由使用者從App Store或Google Play下載。 此應用程式包含連線設定（iOS憑證和Android專案金鑰）和整合金鑰。 首次開啟應用程式時（視設定而定），系統會要求使用者輸入註冊資訊(@userKey:電子郵件或帳號)。 同時，應用程式會詢問通知服務以收集通知ID（推播ID）。 所有這些資訊（連線設定、整合金鑰、通知識別碼、userKey）都會傳送至Adobe Campaign。
 
 ![](assets/nmac_register_view.png)
 
