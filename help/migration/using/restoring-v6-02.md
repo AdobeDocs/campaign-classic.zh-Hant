@@ -1,7 +1,7 @@
 ---
-title: 恢復v6.02
-seo-title: 恢復v6.02
-description: 恢復v6.02
+title: 回復 v6.02
+seo-title: 回復 v6.02
+description: 回復 v6.02
 seo-description: null
 page-status-flag: never-activated
 uuid: df21209b-4825-42fa-a303-f383f872abb5
@@ -11,18 +11,18 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 discoiquuid: 4f65ba19-e9f0-4425-b640-f27c61394859
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 9%
 
 ---
 
 
-# 恢復v6.02{#restoring-v}
+# 回復 v6.02{#restoring-v}
 
-以下是從v7恢復v6.02的步驟。
+以下是從v7恢復v6.02的過程。
 
 1. 恢復資料庫的備份並恢復它。
 1. 恢復 **Neolane v6.back** (**Linux中為nl6.back** )資料夾，將其更名為 **Neolane v6(Linux中為****** nl6)，並將其恢復到其原始位置。
