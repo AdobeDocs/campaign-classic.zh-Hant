@@ -1,7 +1,7 @@
 ---
-title: 建立Facebook應用程式
-seo-title: 建立Facebook應用程式
-description: 建立Facebook應用程式
+title: 建立 Facebook 應用程式
+seo-title: 建立 Facebook 應用程式
+description: 建立 Facebook 應用程式
 seo-description: null
 page-status-flag: never-activated
 uuid: f02129b9-6f64-41ee-8b56-d85211a58f69
@@ -11,16 +11,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: c1d880bb-256e-451c-8c52-198711907f8e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 1%
 
 ---
 
 
-# 建立Facebook應用程式{#creating-a-facebook-application}
+# 建立 Facebook 應用程式{#creating-a-facebook-application}
 
 由於有了網路應用程式，Social Marketing可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更容易。 如需Facebook類型網頁應用程式的更多範例，請參閱 [Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
 
@@ -32,11 +32,11 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 套用下列設定步驟：
 
-1. 建立一或多個Facebook應用程式。 有關詳情，請參閱：建 [立Facebook應用程式](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)。
-1. 輸入要 **[!UICONTROL terms of service]** 在 **[!UICONTROL Privacy policy]** Facebook權限請求畫面上顯示的和連結。 有關詳情，請參閱：輸 [入服務條款和隱私權政策連結](#entering-the-terms-of-service-and-privacy-policy-links)。
-1. 針對每個Facebook應用程式，建立 **[!UICONTROL Facebook Connect]** 類型外部帳戶。 有關詳情，請參閱：設 [定外部帳戶](#configuring-external-accounts)。
-1. 針對每個Facebook應用程式，在Adobe Campaign中建立Facebook類型的網路應用程式。 有關詳情，請參閱：建 [立Facebook類型的Web應用程式](#creating-a-facebook-type-web-application)。
-1. 設定您的Facebook應用程式，讓這些應用程式在您的Facebook頁面上顯示為標籤。 有關詳情，請參閱：設 [定Facebook標籤](#configuring-facebook-tabs)。
+1. 建立一或多個Facebook應用程式。 有關詳情，請參閱： [建立Facebook應用程式](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)。
+1. 輸入要 **[!UICONTROL terms of service]** 在 **[!UICONTROL Privacy policy]** Facebook權限請求畫面上顯示的和連結。 有關詳情，請參閱： [輸入服務條款和隱私權政策連結](#entering-the-terms-of-service-and-privacy-policy-links)。
+1. 針對每個Facebook應用程式，建立 **[!UICONTROL Facebook Connect]** 類型外部帳戶。 有關詳情，請參閱： [設定外部帳戶](#configuring-external-accounts)。
+1. 針對每個Facebook應用程式，在Adobe Campaign中建立Facebook類型的網路應用程式。 有關詳情，請參閱： [建立Facebook類型的Web應用程式](#creating-a-facebook-type-web-application)。
+1. 設定您的Facebook應用程式，讓這些應用程式在您的Facebook頁面上顯示為標籤。 有關詳情，請參閱： [設定Facebook標籤](#configuring-facebook-tabs)。
 
 ## 設定外部帳戶 {#configuring-external-accounts}
 
@@ -60,7 +60,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
    ![](assets/social_webapp_fb_006.png)
 
-1. 為應用程式選擇代管模式：或 **[!UICONTROL hosted by a partner]** 者 **[!UICONTROL hosted by this instance]**。
+1. 為應用程式選擇代管模式： **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**&#x200B;者。
 
    ![](assets/social_webapp_fb_012.png)
 
@@ -93,7 +93,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
    ![](assets/social_facebook_external_account_008.png)
 
 1. 在Facebook上，按一 **[!UICONTROL Save Changes]** 下頁面底部的按鈕。
-1. 在Adobe Campaign主控台中，按一 **[!UICONTROL Subscribe]** 下按鈕，讓Adobe Campaign在粉絲每次透過此應用程式簽入時即時復原資料。 有關詳情，請參閱：Facebook [應用程式範例](../../social/using/examples-of-facebook-apps.md)。
+1. 在Adobe Campaign主控台中，按一 **[!UICONTROL Subscribe]** 下按鈕，讓Adobe Campaign在粉絲每次透過此應用程式簽入時即時復原資料。 有關詳情，請參閱： [Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
 
    ![](assets/social_webapp_fb_013.png)
 
@@ -112,7 +112,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ## 建立Facebook類型網頁應用程式 {#creating-a-facebook-type-web-application}
 
-Adobe Campaign facebook應用程式可讓您在Facebook應用程式中顯示個人化內容。 對於每個Facebook應用程式，您都需要在Adobe Campaign中建立網頁應用程式。 若要建立Facebook網路應用程式，請依照下列步驟進行：
+Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個人化內容。 對於每個Facebook應用程式，您都需要在Adobe Campaign中建立網頁應用程式。 若要建立Facebook網路應用程式，請依照下列步驟進行：
 
 1. 前往宇宙 **[!UICONTROL Social networks]** ，按一下連結 **[!UICONTROL Applications]** ，然後按一下 **[!UICONTROL Create]** 按鈕。
 
@@ -132,11 +132,11 @@ Adobe Campaign facebook應用程式可讓您在Facebook應用程式中顯示個�
    >* **[!UICONTROL "Page Tab" competition]**:Facebook應用程式已完全整合至品牌頁面標籤。
 
 
-1. 在欄位 **[!UICONTROL Application]** 中，輸入連結至Facebook應用程式的外部帳戶。 有關詳情，請參閱：設 [定外部帳戶](#configuring-external-accounts)。
+1. 在欄位 **[!UICONTROL Application]** 中，輸入連結至Facebook應用程式的外部帳戶。 有關詳情，請參閱： [設定外部帳戶](#configuring-external-accounts)。
 
    ![](assets/social_webapp_005.png)
 
-1. 選取標 **[!UICONTROL Edit]** 簽，然後編輯Web應用程式。 有關詳情，請參閱：Facebook [應用程式範例](../../social/using/examples-of-facebook-apps.md)。
+1. 選取標 **[!UICONTROL Edit]** 簽，然後編輯Web應用程式。 有關詳情，請參閱： [Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
 
    ![](assets/social_webapp_003.png)
 
