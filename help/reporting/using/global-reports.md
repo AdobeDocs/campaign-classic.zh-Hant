@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+source-git-commit: 3b6cfe05b851843f5d886fcccbe114ff7f0b6611
+workflow-type: tm+mt
+source-wordcount: '2185'
+ht-degree: 2%
 
 ---
 
@@ -54,7 +57,7 @@ source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-您可以變更時標來設定顯示的值：1小時檢視、3小時檢視、24小時檢視等。 按一 **[!UICONTROL Refresh]** 下以確認您的選擇。
+您可以變更時標來設定顯示的值：1小時檢視、3小時檢視、24小時檢視等。 按一下 **[!UICONTROL Refresh]** 以確認您的選取。
 
 ## 使用者活動 {#user-activities}
 
@@ -102,7 +105,7 @@ source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
    >[!NOTE]
    >
-   >此指標僅涉及行動通道的傳送。 如需詳細資訊，請參閱[本小節](../../delivery/using/sms-channel.md)。
+   >此指標僅涉及行動通道的傳送。 如需詳細資訊，請參閱[本章節](../../delivery/using/sms-channel.md)。
 
    按一下符號可開啟值表的每一行 `[+]` 。 對於每種錯誤類型，您可以按域顯示錯誤消息的劃分。
 
@@ -124,7 +127,7 @@ source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 >[!NOTE]
 >
->此報告中顯示的域名是在多維資料集級別定義的。 要更改這些值，請編輯立 **[!UICONTROL Delivery logs (broadlogrcp)]** 方。 如需詳細資訊，請參閱[本小節](../../reporting/using/about-cubes.md)。類 **[!UICONTROL Others]** 別包括不屬於特定類的域名。
+>此報告中顯示的域名是在多維資料集級別定義的。 要更改這些值，請編輯立 **[!UICONTROL Delivery logs (broadlogrcp)]** 方。 如需詳細資訊，請參閱[本章節](../../reporting/using/about-cubes.md)。類 **[!UICONTROL Others]** 別包括不屬於特定類的域名。
 
 ## 瀏覽器 {#browsers}
 
@@ -165,9 +168,9 @@ source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ### 分享至社交網路 {#sharing-to-social-networks}
 
-病毒式行銷可讓遞送收件者與其聯絡網路分享資訊：他們可以新增連結至個人資料（Facebook、Twitter等）或者給朋友發個資訊。 傳送中會追蹤每個共用資訊和每個共用資訊的存取權。 For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
+病毒式行銷可讓遞送收件者與其聯絡網路分享資訊：他們可以新增連結至個人資料（Facebook、Twitter等） 或者給朋友發個資訊。 傳送中會追蹤每個共用資訊和每個共用資訊的存取權。 For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
 
-此報表顯示每個社交網路（Facebook、Twitter等）的共用和已開啟訊息的劃分資訊和／或每封電子郵件。
+此報表顯示每個社交網路（Facebook、Twitter等）的共用和已開啟訊息的劃分資訊 和／或每封電子郵件。
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -200,7 +203,7 @@ source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ## 分享活動統計 {#statistics-on-sharing-activities}
 
-此報表顯示分享到社交網路（Facebook、Twitter、電子郵件等）的演變及時。
+此報表顯示分享到社交網路（Facebook、Twitter、電子郵件等）的演變 及時。
 
 For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
 
@@ -308,4 +311,4 @@ For more information on viral marketing, refer to [this section](../../delivery/
 
 >[!NOTE]
 >
->瀏覽器和作業系統名稱是瀏覽器使用者代理所傳送已開啟釘子的資訊的一部分。 Adobe Campaign會使用其裝置資訊來推斷裝置類型。
+>瀏覽器和作業系統名稱是瀏覽器使用者代理所傳送並開啟訊息的部分資訊。 Adobe Campaign會使用其裝置資訊來推斷裝置類型。
