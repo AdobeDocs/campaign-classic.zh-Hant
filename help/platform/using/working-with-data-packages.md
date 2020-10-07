@@ -1,7 +1,7 @@
 ---
-title: 使用資料包
-seo-title: 使用資料包
-description: 使用資料包
+title: 使用資料套件
+seo-title: 使用資料套件
+description: 使用資料套件
 seo-description: null
 page-status-flag: never-activated
 uuid: 867b2702-dbc4-4b71-a385-a2c7fd09d25e
@@ -11,19 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2462'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
-# 使用資料包{#working-with-data-packages}
+# 使用資料套件{#working-with-data-packages}
 
 ## 關於資料包 {#about-data-packages}
 
@@ -35,14 +32,14 @@ The principle of **data packages** is to export a data configuration and integra
 
 ### 包類型 {#types-of-packages}
 
-可導出包有三種類型： 使用者套件、平台套件和管理套件。
+可導出包有三種類型：使用者套件、平台套件和管理套件。
 
-* **用戶包**: 它允許您選擇要導出的圖元清單。 此類軟體包可管理相依性並驗證錯誤。
-* **平台套件**: 它包含所有新增的技術資源（非標準）: 結構描述、JavaScript程式碼等。
+* **用戶包**:它允許您選擇要導出的圖元清單。 此類軟體包可管理相依性並驗證錯誤。
+* **平台套件**:它包含所有新增的技術資源（非標準）:結構描述、JavaScript程式碼等。
 
    ![](assets/ncs_datapackage_package_platform.png)
 
-* **管理套件**: 它包含所有新增的範本和商業物件（非標準）: 範本、資料庫等。
+* **管理套件**:它包含所有新增的範本和商業物件（非標準）:範本、資料庫等。
 
    ![](assets/ncs_datapackage_package_admin.png)
 
@@ -91,7 +88,7 @@ XML檔案必須以元素開始和結 **`<package>`** 束。 隨後 **`<entities>
 
 可以從任何文本編輯器手動構建資料包。 只要確保XML檔案的結構符合「xtk:navtree」資料架構。 Adobe Campaign主控台有資料套件匯出與匯入模組。
 
-## 導出包 {#exporting-packages}
+## 匯出套件 {#exporting-packages}
 
 ### 關於套件匯出 {#about-package-export}
 
@@ -164,7 +161,7 @@ XML檔案必須以元素開始和結 **`<package>`** 束。 隨後 **`<entities>
 
 #### 匯出促銷活動 {#exporting-a-campaign}
 
-以下是如何匯出促銷活動的範例。 要匯出的行銷促銷活動包含一個工作(標籤： 「MyTask」)和工作流程(標籤： 「MyWorkflow」檔案夾(節點： 管理／生產／技術工作流程／促銷活動流程/ MyWorkflow)。
+以下是如何匯出促銷活動的範例。 要匯出的行銷促銷活動包含一個工作(標籤：「MyTask」)和工作流程(標籤：「MyWorkflow」檔案夾(節點：管理／生產／技術工作流程／促銷活動流程/ MyWorkflow)。
 
 任務和工作流會匯出到與促銷活動相同的套件中，因為符合的結構描述是由具有「自有」類型完整性的連結所連結。
 
@@ -222,9 +219,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 最後， **@pkgStatus** 屬性使您能夠定義這些元素或屬性的導出規則。 根據屬性的值，元素或屬性將在導出的包中找到。 此屬性的三個可能值是：
 
-* **永不**: 不匯出欄位／連結
-* **一律**: 這個領域的出口
-* **preCreate**: 授權建立連結的實體
+* **永不**:不匯出欄位／連結
+* **一律**:強力出口
+* **preCreate**:授權建立連結的實體
 
 >[!NOTE]
 >
@@ -243,7 +240,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * [配置包定義生成](#configuring-package-definitions-generation)
 * [從包定義導出包](#exporting-packages-from-a-package-definition)
 
-### 建立包定義 {#creating-a-package-definition}
+### Creating a package definition {#creating-a-package-definition}
 
 可從菜單訪問包定 **[!UICONTROL Administration > Configuration > Package management > Package definitions]** 義。
 
@@ -275,7 +272,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. 實體將添加到包定義中，它將與包一起導出(請參 [閱從包定義導出包](#exporting-packages-from-a-package-definition))。
+1. 實體將添加到包定義中，它將與包一起導出(請參閱從包定 [義導出包](#exporting-packages-from-a-package-definition))。
 
    ![](assets/packagedefinition_entityadded.png)
 
@@ -285,9 +282,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ![](assets/packagedefinition_generationparameters.png)
 
-* **[!UICONTROL Include the definition]**: 包括當前在包定義中使用的定義。
-* **[!UICONTROL Include an installation script]**: 可讓您新增javascript指令碼，以便在套件匯入時執行。 選取此選項時， **[!UICONTROL Script]** 會在套件定義畫面中新增標籤。
-* **[!UICONTROL Include default values]**: 向包中添加所有實體屬性的值。
+* **[!UICONTROL Include the definition]**:包括當前在包定義中使用的定義。
+* **[!UICONTROL Include an installation script]**:可讓您新增javascript指令碼，以便在套件匯入時執行。 選取此選項時， **[!UICONTROL Script]** 會在套件定義畫面中新增標籤。
+* **[!UICONTROL Include default values]**:向包中添加所有實體屬性的值。
 
    為避免冗長的匯出，預設不會選取此選項。 這表示具有預設值(「空字串」、「0」和「false」（如果未在模式中定義）的實體屬性不會添加到包中，因此不會導出。
 
@@ -337,7 +334,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 請參閱您的授權合約以檢查您可以安裝哪些套件。
 
-有關內置軟體包的詳細資訊，請參 [閱本頁](../../installation/using/installing-campaign-standard-packages.md)。
+For more information on built-in packages, refer to [this page](../../installation/using/installing-campaign-standard-packages.md).
 
 ## 資料套件最佳實務 {#data-package-best-practices}
 
@@ -390,7 +387,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * 包含一或多項功能。
 * 應包含所有相依性，以便能夠在沒有任何其他軟體包的情況下運行該功能。
 
-**促銷活動**
+**Campaign**
 
 此套件不是必備的。 有時候，建立所有促銷活動的特定類型會很有用，即使促銷活動可以看作功能亦然。
 
@@ -408,10 +405,10 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 既然已定義了類型，我們應指定命名慣例。 Adobe Campaign不允許針對套件規格建立子檔案夾，這表示數字是維持有條理的最佳解決方案。 數字前置詞包名。 您可以使用下列慣例：
 
-* 實體： 從1到99
-* 功能： 從100到199
-* 促銷活動： 從200到299
-* 更新： 從5000到5999
+* 實體：從1到99
+* 功能：從100到199
+* 促銷活動：從200到299
+* 更新：從5000到5999
 
 ### 套件 {#data-packages}
 
@@ -433,7 +430,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 #### 套件200 {#package-200}
 
-套件編號&quot;200&quot;不應用於特定促銷活動： 此數字將用於更新與所有促銷活動相關的內容。
+套件編號&quot;200&quot;不應用於特定促銷活動：此數字將用於更新與所有促銷活動相關的內容。
 
 #### 更新套件 {#update-package}
 
@@ -444,13 +441,13 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 更新套件應僅包含一個特定實體，以方便可重複使用。 若要分割它們，請新增一個數字（從1開始）。 這些包沒有特定的訂購規則。 為了更好地瞭解，請假設我們有101項功能，一個社交應用程式：
 * 它包含webApp和外部帳戶。
-   * 包標籤為： 101 —— 社交應用程式(socialApplication)。
+   * 包標籤為：101 —— 社交應用程式(socialApplication)。
 * webApp有缺陷。
    * wepApp已更正。
-   * 需要建立具有以下名稱的修正軟體包： 5101 - 1 —— 社交應用程式webApp(socialApplication_webApp)。
+   * 需要建立具有以下名稱的修正軟體包：5101 - 1 —— 社交應用程式webApp(socialApplication_webApp)。
 * 必須為社交功能新增外部帳戶。
    * 建立外部帳戶。
-   * 新套件為： 5101 - 2 —— 社交應用程式外部帳戶(socialApplication_extAccount)。
+   * 新套件為：5101 - 2 —— 社交應用程式外部帳戶(socialApplication_extAccount)。
    * 同時，101套件會更新為新增至外部帳戶，但不會部署。
       ![](assets/ncs_datapackage_best-practices-1.png)
 
