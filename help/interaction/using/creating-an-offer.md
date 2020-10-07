@@ -1,7 +1,7 @@
 ---
-title: 建立選件
-seo-title: 建立選件
-description: 建立選件
+title: 建立優惠方案
+seo-title: 建立優惠方案
+description: 建立優惠方案
 seo-description: null
 page-status-flag: never-activated
 uuid: 9e8b0351-e2a5-4043-be86-e275d2f849ea
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 2%
 
 ---
 
 
-# 建立選件{#creating-an-offer}
+# 建立優惠方案{#creating-an-offer}
 
 ## 建立選件 {#creating-the-offer}
 
@@ -30,7 +30,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
    ![](assets/offer_create_001.png)
 
-1. Click the **[!UICONTROL Create]** button.
+1. 按一下 **[!UICONTROL Create]** 按鈕。
 
    ![](assets/offer_create_005.png)
 
@@ -84,7 +84,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 若要在選件中建立權重，請套用下列步驟：
 
-1. 按一下 **[!UICONTROL Add]**.
+1. 按一下 **[!UICONTROL Add]**。
 
    ![](assets/offer_weight_create_001.png)
 
@@ -108,7 +108,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
    ![](assets/offer_weight_create_004.png)
 
-1. 按一 **[!UICONTROL OK]** 下以儲存重量。
+1. Click **[!UICONTROL OK]** to save the weight.
 
    ![](assets/offer_weight_create_005.png)
 
