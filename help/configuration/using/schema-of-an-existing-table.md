@@ -1,7 +1,7 @@
 ---
-title: 現有表的架構
-seo-title: 現有表的架構
-description: 現有表的架構
+title: 現有資料表的綱要
+seo-title: 現有資料表的綱要
+description: 現有資料表的綱要
 seo-description: null
 page-status-flag: never-activated
 uuid: cb766259-8ed7-40a1-8df7-75a8a3f9986d
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 11%
 
 ---
 
 
-# 現有表的架構{#schema-of-an-existing-table}
+# 現有資料表的綱要{#schema-of-an-existing-table}
 
 ## 概觀 {#overview}
 
@@ -37,7 +37,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 要建立相應的方案，請應用以下階段：
 
 1. 編輯Adobe **[!UICONTROL Administration>Configuration>Data schemas]** Campaign樹狀結構的節點，然後按一下 **[!UICONTROL New]** 。
-1. 選取選 **[!UICONTROL Access data from an existing table or an SQL view]** 項，然後按一下 **[!UICONTROL Next]** 。
+1. Select the **[!UICONTROL Access data from an existing table or an SQL view]** option and click **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -64,7 +64,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 </srcSchema>
 ```
 
-## 訪問外部資料庫 {#accessing-an-external-database}
+## 存取外部資料庫 {#accessing-an-external-database}
 
 Federated Data Access - FDA **(同盟資料存取- FDA** )選項允許您訪問儲存在外部資料庫中的資料。
 
