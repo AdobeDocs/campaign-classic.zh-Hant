@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -21,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# 關於傳送能力{#about-deliverability}
+# 關於傳遞能力{#about-deliverability}
 
 **傳遞能力** ，包括測量促銷活動在到達收件者收件匣時是否成功，而不會反彈或標示為垃圾訊息。
 
 Adobe Campaign提供了若干工具來追蹤平台的傳遞效能。 本節也說明在管理和最佳化傳遞能力時，您應牢記的主要原則。
 
-## 配置 {#configuration}
+## 設定 {#configuration}
 
 此功能可透過Adobe Campaign中的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
 * 對於代管和混合式客戶， **Adobe技術支援和顧問會在您的例項上設定** 「傳遞能力監控」。 如需詳細資訊，請洽詢您的Adobe銷售代表。
@@ -46,10 +43,10 @@ Adobe Campaign提供了若干工具來追蹤平台的傳遞效能。 本節也�
 
 ![](assets/deliverability_overview_1.png)
 
-行銷人員為了達成平均(80%)的可交付性，將大量轉化——以及美元——留在談判桌上。
+行銷人員為了達成平均(80%)的可交付性，將大量轉化——以及美元——拋在了案頭上。
 
 電子郵件的傳遞能力究竟是什麼？ 行銷人員如何提高傳遞率，以擴大漏鬥嘴，並從電子郵件宣傳中榨取更多成果？
 
-電子郵件傳遞能力是指一組特性，這些特性決定了郵件通過個人電子郵件地址在短時間內到達其目的地的能力，並且在內容和格式方面具有預期的質量。 這些特徵可分為四大類： 資料品質、訊息和內容、傳送基礎架構和聲譽。 它們共同構成了成功的電子郵件傳遞能力計畫的基礎。 本概述概述概述電子郵件傳送成功的四個基本要素，並提供觸及收件匣並從電子郵件行銷方案中提高營收的最佳實務。
+電子郵件傳遞能力是指一組特性，這些特性決定了郵件通過個人電子郵件地址在短時間內到達其目的地的能力，並且在內容和格式方面具有預期的質量。 這些特徵可分為四大類：資料品質、訊息和內容、傳送基礎架構和聲譽。 它們共同構成了成功的電子郵件傳遞能力計畫的基礎。 本概述概述概述電子郵件傳送成功的四個基本要素，並提供觸及收件匣並從電子郵件行銷方案中提高營收的最佳實務。
 
 <!--![](assets/deliverability_overview_2.png)-->
