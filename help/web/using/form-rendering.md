@@ -1,7 +1,7 @@
 ---
-title: 表單轉換
-seo-title: 表單轉換
-description: 表單轉換
+title: 表單轉譯
+seo-title: 表單轉譯
+description: 表單轉譯
 seo-description: null
 page-status-flag: never-activated
 uuid: 714ce201-5535-4fde-b388-1605ac54edcb
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 2%
 
 ---
 
 
-# 表單轉換{#form-rendering}
+# 表單轉譯{#form-rendering}
 
 ## 選取表單轉換範本 {#selecting-the-form-rendering-template}
 
@@ -41,13 +41,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 您可以：
 
 * 變更用作標誌的影像並調整其大小，
-* 此外，指定當使用者選取此轉譯範本時，存取預覽影像的路徑。
+* 此外，指定當使用者選取此轉換範本時，存取預覽影像的路徑。
 
 此標 **[!UICONTROL Headers/Footers]** 簽可讓您使用此範本，變更每個表單頁面頁首和頁尾中顯示的資訊。
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-和區段的每 **[!UICONTROL Page headers]** 行 **[!UICONTROL Page footers]** 都對應於HTML頁面中的一行。 按一 **[!UICONTROL Add]** 下以建立新的行。
+和區段的每 **[!UICONTROL Page headers]** 行 **[!UICONTROL Page footers]** 都對應於HTML頁面中的一行。 Click **[!UICONTROL Add]** to create a new line.
 
 選取現有的行，然後按一下按 **[!UICONTROL Detail]** 鈕以個人化它。
 
@@ -70,7 +70,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 您可以過載表單中每個元素的樣式表（輸入欄位、影像、選項按鈕等）。
 
-若要這麼做，請使用標 **[!UICONTROL Advanced]** 簽。
+To do this, use the **[!UICONTROL Advanced]** tab.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
@@ -83,7 +83,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * **[!UICONTROL Width]** 區域：這可以表示為百分比或EMS、點或像素（預設值）,
 * 最大 **[!UICONTROL Length]**&#x200B;值：允許的字元數上限（適用於文字、數字和密碼類型控制）,
 * **[!UICONTROL Lines]**:類型區域的行 **[!UICONTROL Multi-line text]** 數、
-* **[!UICONTROL Style inline]**:可讓您使用其他設定，讓CSS樣式表過載。 **這些是分開的**;字元，如下例所示：
+* **[!UICONTROL Style inline]**:可讓您使用其他設定，讓CSS樣式表過載。 這些是分開的 **;** 字元，如下例所示：
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
@@ -153,7 +153,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 * 主樹包含表單上下文的參數。 預設參數為「識別碼」（與收件者的加密識別碼相符）、「語言」和「來源」。
 
-   For more on this, refer to this [page](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
 
 * 子 **[!UICONTROL Recipients]** 樹包含插入到表單中並儲存在資料庫中的輸入欄位。
 
@@ -161,9 +161,9 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 * 子 **[!UICONTROL Variables]** 樹包含此表單的可用變數。 有關詳情，請參閱將 [資料儲存在本機變數中](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)。
 
-有關此功能的詳細資訊，請參閱此處提供的使用案例：根 [據所選值顯示不同的選項](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)。
+有關此功能的詳細資訊，請參閱此處提供的使用案例： [根據所選值顯示不同的選項](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)。
 
-您也可以使用物件來限制表單頁面的 **[!UICONTROL Test]** 顯示。 For more on this, refer to this [page](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+您也可以使用物件來限制表單頁面的 **[!UICONTROL Test]** 顯示。 如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
 
 ## 從現有表單匯入元素 {#importing-elements-from-an-existing-form}
 
