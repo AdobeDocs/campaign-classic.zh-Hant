@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 13b72aa1-de40-4548-835b-97e765e04e95
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +58,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    * **[!UICONTROL New, created from a publication template]**
 
-      從出版物範本建立新內容。 此新內容將儲存在欄位中指定的檔 **[!UICONTROL String]** 案中。 該 **[!UICONTROL Template]** 欄位指定要用於建立內容的發佈模板。
+      從出版物範本建立新內容。 此新內容將儲存在欄位中指定的檔 **[!UICONTROL String]** 案中。 該 **[!UICONTROL Template]** 欄位指定用於建立內容的發佈模板。
 
       ![](assets/content_mgmt_new.png)
 
