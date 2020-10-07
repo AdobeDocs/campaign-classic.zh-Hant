@@ -1,7 +1,7 @@
 ---
-title: 正在恢復v5.11
-seo-title: 正在恢復v5.11
-description: 正在恢復v5.11
+title: 回復 v5.11
+seo-title: 回復 v5.11
+description: 回復 v5.11
 seo-description: null
 page-status-flag: never-activated
 uuid: 4480c97c-5845-483c-a17b-644f05783b4e
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 discoiquuid: ef778333-8e50-402b-9a69-78ac94497c67
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 9%
 
 ---
 
 
-# 正在恢復v5.11{#restoring-v}
+# 回復 v5.11{#restoring-v}
 
 以下是從v7恢復v5.11的步驟。
 
