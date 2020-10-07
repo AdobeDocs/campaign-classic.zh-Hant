@@ -1,7 +1,7 @@
 ---
-title: 配置
-seo-title: 配置
-description: 配置
+title: 設定
+seo-title: 設定
+description: 設定
 seo-description: null
 page-status-flag: never-activated
 uuid: 4316d4b2-0964-4e25-9e4f-f2378f044c85
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 12f13b8d-afc3-4b55-a31b-080d31f84fc9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 2%
 
 ---
 
 
-# 配置{#configuration}
+# 設定{#configuration}
 
 ## 更改syslogd監聽埠 {#changing-the-syslogd-listening-port}
 
@@ -38,7 +38,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### 在Windows中 {#in-windows}
 
-您需要使用 **localhost值建立TRACE_ADDR** . **environment變數** : **`<listening port="" />`**。
+您需要使用 **localhost值建立TRACE_ADDR** . **environment變數** : **`<listening port="" />`**.
 
 >[!CAUTION]
 >
