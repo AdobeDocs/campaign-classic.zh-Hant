@@ -1,7 +1,7 @@
 ---
-title: 追蹤促銷活動
-seo-title: 追蹤促銷活動
-description: 追蹤促銷活動
+title: 追蹤行銷活動
+seo-title: 追蹤行銷活動
+description: 追蹤行銷活動
 seo-description: null
 page-status-flag: never-activated
 uuid: 66919c81-b22c-4138-a654-ea53154ba718
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: e1f8958d-f036-4635-be6e-ebdbea6ac116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
 
-# 追蹤促銷活動{#tracking-a-campaign}
+# 追蹤行銷活動{#tracking-a-campaign}
 
 中央實體運算子可以追蹤促銷活動套件清單中的促銷活動訂單。
 
@@ -81,7 +81,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. 參考促銷活動已取消，而所有作用中的程式（工作流程、傳送）都已停止，
+1. 參考促銷活動已取消，而所有作用中的程式（工作流程、傳送）都會停止，
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 
