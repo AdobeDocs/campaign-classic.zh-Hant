@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：建立參考朋友表單」
-seo-title: 「使用案例：建立參考朋友表單」
-description: 「使用案例：建立參考朋友表單」
+title: '"使用案例：建立「推薦朋友」表單"'
+seo-title: '"使用案例：建立「推薦朋友」表單"'
+description: '"使用案例：建立「推薦朋友」表單"'
 seo-description: null
 page-status-flag: never-activated
 uuid: ad8b9076-c551-420d-bb23-0b3c645ee943
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: bbb1154f-2818-489c-9860-0e860596cbf7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
 
-# 使用案例：建立參考朋友表單{#use-case-creating-a-refer-a-friend-form}
+# 使用案例：建立「推薦朋友」表單{#use-case-creating-a-refer-a-friend-form}
 
 在此範例中，我們想為資料庫中的收件者提供競賽。 Web表單將包含輸入答案的章節，另一個章節則透過輸入朋友的電子郵件地址來參照朋友。
 
@@ -88,7 +88,7 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
    * 此範本包含競賽表單的連結，以及裁判訂閱電子報的訂閱連結。
 
-      通過個人化塊插入訂閱連結。 依預設，它可讓您將描述檔訂閱至電子報 **服務** 。 此個人化區塊可依您的需求而變更，例如，將收件者訂閱至不同的服務。
+      通過個人化塊插入訂閱連結。 依預設，它可讓您將描述檔訂閱至電子報 **服務** 。 此個人化區塊可依您的需求而變更，例如，將收件者訂閱至其他服務。
 
    * 內部名稱（此處為&#39;referrer&#39;）將用於訊息傳送指令檔，如下所示。
    >[!NOTE]
