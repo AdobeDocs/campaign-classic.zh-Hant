@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1191'
+ht-degree: 1%
 
 ---
 
@@ -77,7 +77,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
    為每個具有「檔案」類型發佈的轉換模板生成輸出檔案。 系統會針對每個產生的檔案啟用傳出轉場，並使用以下參數：儲存在&quot;contentId&quot;變數中的內容識別碼，以及&quot;filename&quot;變數中的檔案名稱。
 
-### 轉換 {#transition}
+### 轉變 {#transition}
 
 「生 **成輸出轉換** 」選項可讓您新增輸出轉換至活動， **[!UICONTROL Content management]** 以將新活動連結至工作流程執行。 勾選此選項後，輸入轉場的標籤。
 
@@ -259,7 +259,7 @@ GetAnd **Transform方法必須在** 標籤的元素下 **`<enter>`****`<input>`*
 
 **範例**:為了說明此範例，我們從&quot;cus:book&quot;架構開始。
 
-新增半自動更新編輯控制輸入表單：
+添加了半自動更新編輯控制輸入表單：
 
 ![](assets/d_ncs_content_exemple9.png)
 
