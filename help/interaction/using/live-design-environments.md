@@ -1,7 +1,7 @@
 ---
-title: 即時／設計環境
-seo-title: 即時／設計環境
-description: 即時／設計環境
+title: 即時/設計環境
+seo-title: 即時/設計環境
+description: 即時/設計環境
 seo-description: null
 page-status-flag: never-activated
 uuid: 38ee2f6a-e446-4ac6-b962-40b648eeaf66
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 3cea2be4-4da4-4ebd-a241-1bbaa5abb16e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 3%
 
 ---
 
 
-# 即時／設計環境{#live-design-environments}
+# 即時/設計環境{#live-design-environments}
 
 ## 操作原則 {#operating-principle}
 
@@ -45,7 +45,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## 建立選件環境 {#creating-an-offer-environment}
 
-依預設，互動隨附預先設定的環境，以定位收件者表格（已識別的選件）。 如果您想要定位另一個表格（匿名選件的訪客表格或特定收件者表格），則需套用下列組態：
+依預設，互動隨附預先設定的環境，以定位收件者表格（已識別的選件）。 如果您想要定位另一個表格（匿名選件的訪客表格或特定收件者表格），則需要套用下列組態：
 
 1. 將游標置於 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** >節 **[!UICONTROL Delivery mappings]** 點。 以滑鼠右鍵按一下您要使用的傳送對應(**[!UICONTROL Visitors]** 如果您想使用匿名選件)，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**。
 
