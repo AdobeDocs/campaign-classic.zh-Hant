@@ -11,21 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
 # 如何使用工作流程資料{#how-to-use-workflow-data}
 
-## 更新資料庫 {#updating-the-database}
+## Updating the database {#updating-the-database}
 
 所有收集的資料都可用於更新資料庫或傳送。 例如，您可以豐富訊息內容個人化的可能性（包括訊息中的合約數目、指定去年的平均購物車等） 或詳細定位人口（傳送訊息給合約合約持有人、鎖定線上服務的1,000名最佳訂閱者等）。 此資料也可以匯出或封存在清單中。
 
@@ -63,13 +60,13 @@ Adobe Campaign資料庫和現有清單的資料可使用兩個專用活動進行
 
 ![](assets/s_advuser_add_data_postal_mail.png)
 
-除了一般的個人化欄位外，您還可以將工作流程階段的個人化欄位新增至傳送內容。 工作流活動中定義的其他資料可以在傳送嚮導中保留並訪問，如下例所示，用於在直接郵件傳送框架中定義輸出檔案的名稱：
+除了一般的個人化欄位外，您還可以將工作流程階段的個人化欄位新增至傳送內容。 工作流活動中定義的附加資料可以在發送嚮導中保留並使其可訪問，如以下示例所示，用於在直接郵件發送框架中定義輸出檔案的名稱：
 
 ![](assets/s_advuser_using_additional_data.png)
 
-工作流表中包含的資料由其名稱標識： 它一律由targetData連 **結組成** 。 For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data).
+工作流表中包含的資料由其名稱標識：它一律由targetData連 **結組成** 。 For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data).
 
-在電子郵件傳送的架構中，個人化欄位也可以使用目標擴充功能在目標工作流程階段中執行的資料，如下例所示：
+在電子郵件傳送的架構中，個人化欄位也可以使用定位工作流程階段中執行之定位擴充功能的資料，如下列範例所示：
 
 ![](assets/s_advuser_add_data_email.png)
 
@@ -92,7 +89,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過活動定義�
    >控制面板適用於AWS托管的所有客戶（現場托管其行銷實例的客戶除外）。
 
 1. 如果您的Adobe Campaign安裝是由Adobe代管，請聯絡Adobe客戶服務，以便在伺服器上安裝必要的公用程式。
-1. 如果您的Adobe Campaign安裝是內部部署，請安裝您要使用的公用程式(例如： GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
+1. 如果您的Adobe Campaign安裝是內部部署，請安裝您要使用的公用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
 
 然後，您可以在活動標籤或活 **[!UICONTROL Script]** 動中使用命令或代 **[!UICONTROL JavaScript code]** 碼。 在下面的使用案例中提供了示例。
 
@@ -101,7 +98,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過活動定義�
 * [在處理前解壓縮或解密檔案](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)
 * [資料擷取（檔案）活動](../../workflow/using/extraction--file-.md)。
 
-### 使用案例： 使用控制面板上安裝的密鑰加密和導出資料 {#use-case-gpg-encrypt}
+### 使用案例：使用控制面板上安裝的密鑰加密和導出資料 {#use-case-gpg-encrypt}
 
 在此使用案例中，我們將建立工作流程，以便使用「控制面板」上安裝的金鑰來加密和匯出資料。
 
@@ -115,10 +112,10 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過活動定義�
 
    ![](assets/gpg-workflow-encrypt.png)
 
-   * **[!UICONTROL Query]** 活動： 在此示例中，我們要執行查詢來定位要導出的資料庫中的資料。
-   * **[!UICONTROL Data extraction (file)]** 活動： 將資料擷取至檔案。
-   * **[!UICONTROL JavaScript code]** 活動： 加密要提取的資料。
-   * **[!UICONTROL File transfer]** 活動： 將資料傳送至外部來源（在此範例中為SFTP伺服器）。
+   * **[!UICONTROL Query]** 活動：在此示例中，我們要執行查詢來定位要導出的資料庫中的資料。
+   * **[!UICONTROL Data extraction (file)]** 活動：將資料擷取至檔案。
+   * **[!UICONTROL JavaScript code]** 活動：加密要提取的資料。
+   * **[!UICONTROL File transfer]** 活動：將資料傳送至外部來源（在此範例中為SFTP伺服器）。
 
 1. 配置活 **[!UICONTROL Query]** 動以定位來自資料庫的所需資料。 如需詳細資訊，請參閱[本章節](../../workflow/using/query.md)。
 
