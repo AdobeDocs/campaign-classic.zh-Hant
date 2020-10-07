@@ -1,7 +1,7 @@
 ---
-title: 消息中心服務級別
-seo-title: 消息中心服務級別
-description: 消息中心服務級別
+title: 訊息中心服務層級
+seo-title: 訊息中心服務層級
+description: 訊息中心服務層級
 seo-description: null
 page-status-flag: never-activated
 uuid: 8e363706-292b-40db-97bc-d41b41910556
@@ -11,18 +11,18 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 discoiquuid: e46a4e87-6c02-4b9c-bf6d-bb4e785e78fa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 6%
 
 ---
 
 
-# 消息中心服務級別{#message-center-service-level}
+# 訊息中心服務層級{#message-center-service-level}
 
-此報告會顯示與交易訊息相關的傳送統計資料以及錯誤劃分。 您可以按一下錯誤類型以顯示其詳細資訊。 此報告針對技術管理員，也可透過控制例項中 **[!UICONTROL Monitoring]** 的宇宙存取。
+此報告會顯示與交易訊息相關的傳送統計資料以及錯誤劃分。 您可以按一下錯誤類型以顯示其詳細資訊。 此報告針對技術管理員，也可透過控制例項中的 **[!UICONTROL Monitoring]** 宇宙存取。
 
 ![](assets/mc_reports_1.png)
 
