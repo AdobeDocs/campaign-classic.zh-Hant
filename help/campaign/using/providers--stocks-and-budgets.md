@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 0%
@@ -70,7 +67,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
 >[!NOTE]
 >
->有關詳情，請參閱：定 [義成本結構](#defining-the-cost-structure)。
+>For more on this, refer to [Defining the cost structure](#defining-the-cost-structure).
 
 成本類別是指包含一組符合遞送類型（電子郵件、直效郵件等）資格的成本的實體。 或是任務。 成本類別被分組到與服務提供商相關的服務模板中。 每個服務提供商都可以參考一個或多個服務模板。
 
@@ -84,7 +81,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * 輸入此成本類別的標籤，然後選擇相關的流程類型： 透過、 **[!UICONTROL Direct mail]**、 **[!UICONTROL E-mail]**、 **[!UICONTROL Mobile]**&#x200B;或 **[!UICONTROL Telephone]** 傳送 **[!UICONTROL Task]**。
+   * 輸入此成本類別的標籤，然後選擇相關的流程類型：透過、 **[!UICONTROL Direct mail]**、 **[!UICONTROL E-mail]**、 **[!UICONTROL Mobile]**&#x200B;或 **[!UICONTROL Telephone]** 傳送 **[!UICONTROL Task]**。
    * 按一下按 **[!UICONTROL Add]** 鈕可定義與此類別關聯的成本類型。
    * 如有必要，請將庫存行與每種成本類型關聯，以便使用的數量將自動與現有庫存關聯。
 
@@ -101,7 +98,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### 定義成本結構 {#defining-the-cost-structure}
+### Defining the cost structure {#defining-the-cost-structure}
 
 對於每種成本類型，成本結構指定要應用的計算規則。
 
@@ -113,7 +110,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
    您必須為成本結構指定標籤。 依預設，它具有下列傳送大綱： **成本類別——成本類型**。
 
-   不過，您可以重新命名它： 直接在欄位中輸入所需 **[!UICONTROL Label]** 值。
+   不過，您可以重新命名它：直接在欄位中輸入所需 **[!UICONTROL Label]** 值。
 
 * 成本計算公式定義在窗口的下部。
 
@@ -289,7 +286,7 @@ Adobe Campaign可在庫存不足或達到最低臨界值時，提醒營運商群
 
 ### 原則 {#principle}
 
-系統會管理傳送和促銷活動的成本。 根據進度，這些成本會分配至預算。
+系統會管理傳送和促銷活動的成本。 根據進度，該等成本會分配至預算。
 
 促銷活動的傳送成本會在促銷活動層級進行整合，而方案的所有促銷活動的成本會傳送至與其關聯的方案。 專屬報表可讓您追蹤整個平台或每個計畫及每個方案的預算。
 
