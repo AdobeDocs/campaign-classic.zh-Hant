@@ -1,7 +1,7 @@
 ---
-title: 使用工作流建立配置檔案清單
-seo-title: 使用工作流建立配置檔案清單
-description: 使用工作流建立配置檔案清單
+title: 使用工作流建立設定檔清單
+seo-title: 使用工作流建立設定檔清單
+description: 使用工作流建立設定檔清單
 seo-description: null
 page-status-flag: never-activated
 uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 19%
 
 ---
 
 
-# 使用工作流建立配置檔案清單{#creating-a-profile-list-with-a-workflow}
+# 使用工作流建立設定檔清單{#creating-a-profile-list-with-a-workflow}
 
 若要根據新 **[!UICONTROL List]** 的收件者表格建立類型清單，您必須建立定位工作流程，以產生清單。 如需促銷活動清單的詳細資訊，請參閱 [本節](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)。
 
@@ -30,7 +30,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. 連按兩下「 **查詢** 」活動，然後按一下 **[!UICONTROL Edit the query]** ，以根據新收件者表格的架構選擇定位維度(在我們的範例中：個 **人**)。 Click **[!UICONTROL Finish]** to confirm.
+1. 連按兩下「 **查詢** 」活動，然後按一下 **[!UICONTROL Edit the query]** ，以根據新收件者表格的架構選擇定位維度(在我們的範例中： **個人**)。 Click **[!UICONTROL Finish]** to confirm.
 
    ![](assets/mapping_create_list_workflow03.png)
 
