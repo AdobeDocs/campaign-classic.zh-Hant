@@ -1,7 +1,7 @@
 ---
-title: 篩選結構
-seo-title: 篩選結構
-description: 篩選結構
+title: 篩選綱要
+seo-title: 篩選綱要
+description: 篩選綱要
 seo-description: null
 page-status-flag: never-activated
 uuid: 04a90785-3084-42fd-85af-77bc28687579
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 64d4c5b8-db0b-4287-8d30-4bf09878a401
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
 
-# 篩選結構{#filtering-schemas}
+# 篩選綱要{#filtering-schemas}
 
 ## 系統篩選器 {#system-filters}
 
@@ -105,7 +105,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 >[!IMPORTANT]
 >
->Adobe Campaign例項的內 **部帳戶只能存取xtk:sessionInfo** 架構的READ和WRITE權限。
+>Adobe Campaign例項的內 **部帳戶僅能存取xtk:sessionInfo** 架構的讀取和寫入權限。
 
 ## 修改內建結構描述的系統篩選器 {#modifying-system-filters-of-built-in-schemas}
 
