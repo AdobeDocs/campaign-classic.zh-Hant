@@ -1,7 +1,7 @@
 ---
-title: 測試遷移
-seo-title: 測試遷移
-description: 測試遷移
+title: 測試移轉
+seo-title: 測試移轉
+description: 測試移轉
 seo-description: null
 page-status-flag: never-activated
 uuid: 3ee6a10b-dea2-41c6-9aef-ee3ac922b459
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 30e3082f-a367-4c3b-bff2-208ccf97acd4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
 
-# 測試遷移{#testing-the-migration}
+# 測試移轉{#testing-the-migration}
 
 ## 一般程式 {#general-procedure}
 
@@ -75,11 +75,11 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 >[!NOTE]
 >
->**您必須使用`<instanceame>`**-instance:的雙曲餘切值。 我們不建議使用**-allinstances選項&#x200B;**。
+>您必須使用 **-instance:`<instanceame>`** 的雙曲餘切值。 我們不建議使用 **-allinstances選項** 。
 
 ### -showCustomEntities和-showDeletedEntities選項 {#showcustomentities-and--showdeletedentities-options}
 
-* \- **showCustomEntities** 選項顯示所有非標準對象的清單：
+* - **showCustomEntities** 選項顯示所有非標準對象的清單：
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -91,7 +91,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* \- **showDeletedEntities** 選項顯示資料庫或檔案系統中缺少的所有標準對象的清單。 對於每個缺少的對象，都指定路徑。
+* - **showDeletedEntities** 選項顯示資料庫或檔案系統中缺少的所有標準對象的清單。 對於每個缺少的對象，都指定路徑。
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
@@ -105,7 +105,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ### 驗證程式 {#verification-process}
 
-此程式與postupgrade命令中的標準整合，可讓您顯示可能導致遷移失敗的警告和錯誤。 **如果顯示錯誤，則未執行遷移。** 如果發生此情況，請更正所有錯誤，然後重新啟動postupgrade。
+此程式與postupgrade命令中的標準整合，可讓您顯示警告和錯誤，讓移轉失敗。 **如果顯示錯誤，則未執行遷移。** 如果發生此情況，請更正所有錯誤，然後重新啟動postupgrade。
 
 您可以使用以下命令自行啟動驗證進程（不進行遷移）:
 
