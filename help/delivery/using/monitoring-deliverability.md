@@ -9,19 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 監控傳送能力{#monitoring-deliverability}
+# 監控傳遞能力{#monitoring-deliverability}
 
 以下是Adobe Campaign提供的不同監控工具的詳細資訊，以及傳送性監控的其他相關准則。
 
@@ -37,12 +34,13 @@ Deliverability套件可讓您存取：
 
 您也可以使用下列工具：
 
-* 報 **[!UICONTROL Delivery throughput]** 表提供特定時段內整個平台的總處理能力。 For more on this, see [this section](../../reporting/using/global-reports.md#delivery-throughput).
-* 報 **[!UICONTROL Technical deliverability monitoring]** 表包含許多平台的傳遞能力品質指標。 For more on this, see [this section](#technical-deliverability-monitoring).
+* 報 **[!UICONTROL Delivery throughput]** 表提供特定時段內整個平台的總處理能力。 如需詳細資訊，請參閱[本區段](../../reporting/using/global-reports.md#delivery-throughput)。
+* 報 **[!UICONTROL Technical deliverability monitoring]** 表包含許多平台的傳遞能力品質指標。 如需詳細資訊，請參閱[本區段](#technical-deliverability-monitoring)。
 * 每個傳送都會針對不同的網際網路服務供應商(ISP)產生廣播統計報告。 它會顯示一些可能影響傳遞能力的資料品質和信譽度量，包括下列數字：
    * **[!UICONTROL Hard bounces]** 指出資料品質。 此數字應小於2%。
-   * **[!UICONTROL Soft bounces]** 表明信譽。 對於任何給定的ISP，此數字都不應高於10%。
-   如需詳細資訊，請參閱「傳送統 [計資料](../../reporting/using/global-reports.md#delivery-statistics) 」區段。
+   * **[!UICONTROL Soft bounces]** 表明信譽。 對於任何給定的ISP，該數字都不應高於10%。
+
+   For more on this, see the [Delivery statistics](../../reporting/using/global-reports.md#delivery-statistics) section.
 * 更一般而言，傳送 [控制面板](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) 可讓您存取：
    * 交 [付摘要](../../delivery/using/monitoring-a-delivery.md#delivery-summary)，顯示發送的詳細資訊和發送 [、處理和發送的消息數](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) ;
    * 傳 [送記錄和歷史記錄](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)，顯示哪些目標已被排除及原因；
@@ -54,8 +52,8 @@ Deliverability套件可讓您存取：
 
 * 定期檢查 [整個平台的傳送總處理能力](../../reporting/using/global-reports.md#delivery-throughput) ，以確認其是否與原始設定一致。
 * 檢查傳 [送範本](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) 中是否已正確設定重試次數（30分鐘重試，超過20次重試）。
-* 定期確認彈 [回郵箱](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) ，且帳戶不會過期。
-* 檢查每個傳送吞吐量，以確定其與傳送內容的有效性一致(例如： &#39;flash銷售&#39;應在幾分鐘內完成，而非數天內完成)。
+* 定期確認彈 [回數](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) 郵箱是否可存取，且帳戶不會過期。
+* 檢查每個傳送吞吐量，以確定其與傳送內容的有效性一致(例如：&#39;flash銷售&#39;應在幾分鐘內完成，而非數天內完成)。
 * 使用波 [時](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)，請確認每個波在觸發下一波之前有足夠的時間完成。
 * 檢查錯誤數和新隔離的 [數量](../../delivery/using/understanding-quarantine-management.md) ，與其他遞送一致。
 * 請仔細 [查閱傳送記錄](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) ，以檢查反白標示的錯誤類型（區塊清單、DNS問題、反垃圾訊息規則等）。
@@ -88,15 +86,15 @@ Signal Spam是法國服務，為法國ISP(Orange、SFR)提供匿名回饋迴路�
 
 報表中使用下列指標：
 
-* **[!UICONTROL Reverse DNS]** : Adobe Campaign會檢查是否提供反向DNS來識別IP位址，且這會正確指向IP。
+* **[!UICONTROL Reverse DNS]** :Adobe Campaign會檢查是否提供反向DNS以取得IP位址，且這會正確指向IP。
 
-* **[!UICONTROL SPF]** （發件人策略框架）: 一種驗證機制，可讓ISP和郵箱提供者檢查電子郵件傳送者是否在傳送網域獲得授權。
+* **[!UICONTROL SPF]** （發件人策略框架）:一種驗證機制，可讓ISP和郵箱提供者檢查電子郵件傳送者是否在傳送網域獲得授權。
 
-* **[!UICONTROL DomainKeys]** : 由Yahoo開發、旨在認證電子郵件傳送者身分的服務。
+* **[!UICONTROL DomainKeys]** :由Yahoo開發、旨在認證電子郵件傳送者身分的服務。
 
-* **[!UICONTROL IP and RBL domain]** （即時黑洞清單）: IP位址和網域的清單，區塊清單組織已標籤為傳送信譽不佳。 這些清單由專屬組織維護，例如Spamhaus、Spamcop、SURBL/URIBL等。 Adobe Campaign目前會處理對RBL進行檢查，這些RBL對傳遞能力有重大影響。 這些RBL反映傳送的信譽，ISP可能會在接收您的電子郵件前參考這些信譽。
+* **[!UICONTROL IP and RBL domain]** （即時黑洞清單）:IP位址和網域的清單，區塊清單組織已標籤為傳送信譽不佳。 這些清單由專屬組織維護，例如Spamhaus、Spamcop、SURBL/URIBL等。 Adobe Campaign目前會處理對RBL進行檢查，這些RBL對傳遞能力有重大影響。 這些RBL反映傳送的信譽，ISP可能會在接收您的電子郵件前參考這些信譽。
 
-* **[!UICONTROL SNDS]** （智慧網路資料服務）: Windows [Live Hotmail反垃圾郵件服務](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)。 Hotmail是唯一提供此類資訊的ISP。 基準分數是綠色篩選結果，投訴率低於0.1%，而且零垃圾訊息陷阱。
+* **[!UICONTROL SNDS]** （智慧網路資料服務）:Windows [Live Hotmail反垃圾郵件服務](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)。 Hotmail是唯一提供此類資訊的ISP。 基準分數是綠色篩選結果，投訴率低於0.1%，而且零垃圾訊息陷阱。
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
