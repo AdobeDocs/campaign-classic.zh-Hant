@@ -1,7 +1,7 @@
 ---
-title: 遷移方法
-seo-title: 遷移方法
-description: 遷移方法
+title: 移轉方法
+seo-title: 移轉方法
+description: 移轉方法
 seo-description: null
 page-status-flag: never-activated
 uuid: 6b954d5b-cfa3-43c6-ac3d-da9185e9e9d1
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 discoiquuid: 3ac779a7-1f91-4c1c-a439-10d01697326a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 4%
 
 ---
 
 
-# 遷移方法{#migration-method}
+# 移轉方法{#migration-method}
 
 ## 現代化您的環境 {#modernizing-your-environment}
 
@@ -34,7 +34,7 @@ v7仍支援32位元版本的資料庫和作業系統，但Adobe Campaign未來�
 >
 >Adobe Campaign v7不再支援Adobe Campaign 5.11和6.02支援的部分軟體版本。
 >
->如需Adobe Campaign支援版本的詳細資訊，請參閱相容性 [表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+>如需Adobe Campaign支援版本的詳細資訊，請參閱相容性 [表](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
 
 ## 關鍵移轉步驟 {#key-migration-steps}
 
