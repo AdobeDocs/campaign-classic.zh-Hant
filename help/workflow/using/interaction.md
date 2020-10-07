@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 1683477a-9233-4a25-b0d0-0c81051eb440
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -37,7 +34,7 @@ ht-degree: 0%
   <tr> 
    <td> <span class="uicontrol">完全聚合計算（propositionrcp立方）</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> 此工作流程會更新 <strong>Offer提案立方的</strong> 「完 <strong>整匯總」</strong> 。 預設會在每天早上6點觸發。 此匯總會擷取下列維度： 渠道、傳送、行銷優惠和日期。<br /> 然後 <strong>會使用</strong> 「選件」提案立方來根據選件產生報表。 您可以在本節中進一步了 <a href="../../reporting/using/about-cubes.md">解立方</a>。<br /> </td> 
+   <td> 此工作流程會更新 <strong>Offer提案立方的</strong> 「完 <strong>整匯總」</strong> 。 預設會在每天早上6點觸發。 此匯總會擷取下列維度：渠道、傳送、行銷優惠和日期。<br /> 然後 <strong>會使用</strong> 「選件」提案立方來根據選件產生報表。 您可以在本節中進一步了 <a href="../../reporting/using/about-cubes.md">解立方</a>。<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">MessageCenter完整聚合計算</span> <br /> </td> 
