@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 discoiquuid: 695cf33f-1cc7-4ae8-8ef6-05aa65219411
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
    您也可以線上上環境中手動發佈類別。
 
-   核准選件的程式會在「核准並啟 [用選件」區段中詳細說明](../../interaction/using/approving-and-activating-an-offer.md) 。
+   核准選件的程式會在核准和啟 [用選件一節中詳細說明](../../interaction/using/approving-and-activating-an-offer.md) 。
 
 * 您可在即時環境中找到來自設計環境的已核准選件，以及設計環境中設定的各種選件空間、篩選器、類別和規則。 在呼叫選件引擎期間，引擎一律會使用來自即時環境的選件。
 
