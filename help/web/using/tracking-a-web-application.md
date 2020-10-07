@@ -1,7 +1,7 @@
 ---
-title: 追蹤Web應用程式
-seo-title: 追蹤Web應用程式
-description: 追蹤Web應用程式
+title: 追蹤 Web 應用程式
+seo-title: 追蹤 Web 應用程式
+description: 追蹤 Web 應用程式
 seo-description: null
 page-status-flag: never-activated
 uuid: c087b40c-fd14-440f-8f38-33f5f68120a9
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 3%
 
 ---
 
 
-# 追蹤Web應用程式{#tracking-a-web-application}
+# 追蹤 Web 應用程式{#tracking-a-web-application}
 
 Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏覽。 此功能可用於所有Web應用程式類型（表單、線上調查、使用DCE建立的Web頁等）。
 
@@ -42,6 +42,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏
    * **轉換率**:顯示導航路徑所有步驟的人數。
    * **反彈率**:僅顯示第一步的人數
    * **轉換通道**:每個步驟之間的丟失率。
+
    此外，扇區類 **型圖** 表還根據人口來源顯示人口。
 
 ## 識別流量來源 {#identifying-the-traffic-source}
@@ -63,7 +64,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏
 >
 >請記住，只有在部署精靈中啟動了對應的選項時，才能進行匿名追蹤。
 >
->有關詳細資訊，請參閱《安 [裝指南》](../../installation/using/deploying-an-instance.md)。
+>For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
 
 ## 使用數位內容編輯器(DCE)設計的Web應用程式 {#web-applications-designed-with-digital-content-editor--dce-}
 
