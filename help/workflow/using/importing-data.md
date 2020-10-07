@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->匯入資料時，請記住SFTP儲存、資料庫儲存和作用中的設定檔限制，如您的AdobeCampaign合約所定。
+>匯入資料時，請記住SFTP儲存、資料庫儲存和作用中的設定檔限制，如您的Adobe Campaign合約所定。
 
 ## 如何收集資料 {#how-to-collect-data}
 
@@ -100,7 +97,7 @@ zcat nl6/var/vp/import/filename.gz
 
 使用Web services匯入並不有效率。 最好盡可能使用檔案。
 
-呼叫外部Web服務以即時豐富描述檔也會造成效能問題和記憶體流失，因為它可線上層級運作。
+呼叫外部Web服務以即時豐富描述檔也會造成效能問題和記憶體流失，因為它可在行層級運作。
 
 如果您需要匯入資料，最好是使用工作流程批次執行，而非使用Web應用程式或Web服務即時執行。
 
@@ -165,7 +162,7 @@ zcat nl6/var/vp/import/filename.gz
 
 1. 設定活 **[!UICONTROL Enrichment]** 動。 此活動的目的是識別傳入的資料。
 
-   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位可用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
+   * 在標籤 **[!UICONTROL Enrichment]** 中，選 **[!UICONTROL Add data]** 取並定義匯入資料與收件者定位維度之間的連結。 在此範例中， **CRM ID** custom欄位用來建立連結條件。 只要您需要欄位或欄位組合，就能識別唯一記錄。
    * 在頁籤 **[!UICONTROL Reconciliation]** 中，將選項保留為未 **[!UICONTROL Identify the document from the working data]** 選中狀態。
 
    ![](assets/import_template_example2.png)
@@ -270,7 +267,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在資料載入（檔�
 1. 使用「控制面板」產生金鑰對（公開／私用）。 「控制面板」文檔中提供 [了詳細步驟](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
 
    * 公開金鑰將會與外部系統共用，外部系統會使用它來加密要傳送至Campaign的資料。
-   * Campaign Classic將使用私密金鑰來解密傳入的加密資料。
+   * Campaign Classic將使用私密金鑰解密傳入的加密資料。
 
    ![](assets/gpg_generate.png)
 
