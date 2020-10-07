@@ -1,7 +1,7 @@
 ---
-title: JavaScript中的SOAP方法
-seo-title: JavaScript中的SOAP方法
-description: JavaScript中的SOAP方法
+title: JavaScript 中的 SOAP 方法
+seo-title: JavaScript 中的 SOAP 方法
+description: JavaScript 中的 SOAP 方法
 seo-description: null
 page-status-flag: never-activated
 uuid: 8fd1aabc-e51a-433d-835f-6b5a717c7aeb
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 815d3eb9-ac45-441f-9a5f-0cd505fcf88a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 12%
 
 ---
 
 
-# JavaScript中的SOAP方法{#soap-methods-in-javascript}
+# JavaScript 中的 SOAP 方法{#soap-methods-in-javascript}
 
 這是在Adobe Campaign伺服器上執行的JavaScript。
 
