@@ -1,7 +1,7 @@
 ---
-title: 建立選件類別
-seo-title: 建立選件類別
-description: 建立選件類別
+title: 建立優惠方案類別
+seo-title: 建立優惠方案類別
+description: 建立優惠方案類別
 seo-description: null
 page-status-flag: never-activated
 uuid: 5ac0ae5e-1731-4699-b4ef-f3867ad0ab58
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
 
-# 建立選件類別{#creating-offer-categories}
+# 建立優惠方案類別{#creating-offer-categories}
 
 選件類別的建立只能在環境中 **[!UICONTROL Design]** 進行。 當所建立／修改的選 **[!UICONTROL Live]** 件獲得核準時，這些選件會自動部署在環境中（亦即已提供）。 依預設，環境 **[!UICONTROL Design]** 包含接收所有選件的類別。 可建立子類別，以新增階層至目錄選件。
 
@@ -28,7 +28,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 若要建立其他類別，請套用下列步驟：
 
-1. 前往資料 **[!UICONTROL Offer catalog]** 夾。
+1. Go to the **[!UICONTROL Offer catalog]** folder.
 
    ![](assets/offer_cat_create_001.png)
 
@@ -50,7 +50,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
       ![](assets/offer_cat_create_004.png)
 
-   * 使用欄位，輸入可用於從此類別選擇選件的關鍵字 **[!UICONTROL Themes]** 詞。
+   * 使用欄位，輸入可用於選擇此類別中選件的關鍵字 **[!UICONTROL Themes]** 詞。
 
       ![](assets/offer_cat_create_005.png)
 
