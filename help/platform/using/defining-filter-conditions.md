@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: 8e575da0-c51a-4106-a826-3e1771e63649
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '3232'
+ht-degree: 37%
 
 ---
 
@@ -35,88 +35,88 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   <tr> 
    <th> 運算元<br /> </th> 
    <th> 目的<br /> </th> 
-   <th> Example<br /> </th> 
+   <th> 範例 <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <span class="uicontrol">等於</span><br /> </td> 
+   <td> <span class="uicontrol">Equal to</span> <br /> </td> 
    <td> 傳回與第二個「值」欄中輸入的資料相同的結果。<br /> </td> 
    <td> <strong>姓氏(@lastName)等於'Jones'</strong>，將只傳回姓氏為Jones的收件者。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">大於</span><br /> </td> 
+   <td> <span class="uicontrol">Greater than</span> <br /> </td> 
    <td> 傳回大於輸入值的值。<br /> </td> 
    <td> <strong>年齡(@age)大於50</strong>，將傳回所有大於'50'的值，即「51」、「52」等。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">小於</span><br /> </td> 
+   <td> <span class="uicontrol">Less than</span> <br /> </td> 
    <td> 傳回小於輸入值的值。<br /> </td> 
    <td> <strong>在'DaysAgo(100)'之前建立日期(@created)</strong>，將會傳回所有在100天前建立的收件者。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">大於或等於</span><br /> </td> 
+   <td> <span class="uicontrol">Greater than or equal to</span> <br /> </td> 
    <td> 傳回等於或大於輸入值的所有值。<br /> </td> 
    <td> <strong>年齡(@age)大於或等於'30'</strong>，將傳回所有30歲以上的收件者。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">小於或等於</span><br /> </td> 
+   <td> <span class="uicontrol">Less than or equal to</span> <br /> </td> 
    <td> 傳回等於或低於輸入值的所有值。<br /> </td> 
    <td> <strong>年齡(@age)小於或等於'60'</strong>，將傳回所有60歲或以下的收件者。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">不等於</span><br /> </td> 
+   <td> <span class="uicontrol">不等於</span> <br /> </td> 
    <td> 傳回與輸入值不相同的所有值。<br /> </td> 
    <td> <strong>語言(@language)等於'English'</strong>。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">開始於</span><br /> </td> 
+   <td> <span class="uicontrol">開始於</span> <br /> </td> 
    <td> 傳回以輸入值開始的結果。<br /> </td> 
    <td> <strong>帳戶#(@account)以'32010'開頭。</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">不從開始</span><br /> </td> 
+   <td> <span class="uicontrol">不以</span> <br /> </td> 
    <td> 傳回結果，不以輸入的值開頭<br /> </td> 
    <td> <strong>帳戶#(@account)不以'20'開頭</strong>。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">包含</span><br /> </td> 
+   <td> <span class="uicontrol">Contains</span> <br /> </td> 
    <td> 傳回至少包含輸入值的結果。<br /> </td> 
    <td> <strong>電子郵件網域(@domain)包含'mail'</strong>，將傳回所有包含'mail'的網域名稱。 因此，'gmail.com'網域也會傳回。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">不包含</span><br /> </td> 
+   <td> <span class="uicontrol">不包含</span> <br /> </td> 
    <td> 傳回不含輸入值的結果。<br /> </td> 
    <td> <strong>電子郵件網域(@domain)不包含'vo'</strong>。 在此情況下，不會傳回包含'vo'的網域名稱。 'voila.fr'網域名稱不會出現在結果中。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">贊</span><br /> </td> 
-   <td> <span class="uicontrol">Like</span> 與Contains運算子非 <span class="uicontrol">常類似</span> 。 它可讓您在值中 <span class="uicontrol">插入</span> %萬用字元。<br /> </td> 
+   <td> <span class="uicontrol">Like</span> <br /> </td> 
+   <td> <span class="uicontrol">Like</span> 與　<span class="uicontrol">Contains</span>　運算子非常類似。它可讓您在值中 <span class="uicontrol">插入</span> %萬用字元。<br /> </td> 
    <td> <strong>姓氏(@lastName)，如「Jon%s」</strong>。 在此，萬用字元會用作「小丑」來尋找"Jones"，如果運算子忘記'n'和's'之間遺失的字母。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">不贊</span><br /> </td> 
-   <td> 類似 <span class="uicontrol">Like</span> 。 可讓您不復原輸入的值。 在這裡，輸入的值也必須包含 <span class="uicontrol">%</span> （萬用字元）。<br /> </td> 
+   <td> <span class="uicontrol">Not like</span> <br /> </td> 
+   <td> 類似 <span class="uicontrol">Like</span>。可讓您不復原輸入的值。 在這裡，輸入的值也必須包含 <span class="uicontrol">%</span> 萬用字元。<br /> </td> 
    <td> <strong>姓氏(@lastName)與'Smi%h'不同</strong>。 在此，不會傳回姓氏為'Smi%h'的收件者。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">空白</span><br /> </td> 
+   <td> <span class="uicontrol">Is empty</span> <br /> </td> 
    <td> 在此情況下，我們尋找的結果與第二個「值」欄中的空值相符。<br /> </td> 
    <td> <strong>Mobile(@mobilePhone)為空</strong> ，會傳回所有沒有行動電話號碼的收件者。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">不為空</span><br /> </td> 
+   <td> <span class="uicontrol">不為空</span> <br /> </td> 
    <td> 與「空白」運算子 <span class="uicontrol">相反</span> 。 不需要在第二個「值」列中輸入資料。<br /> </td> 
    <td> <strong>電子郵件(@email)不為空</strong>。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">包含於</span><br /> </td> 
+   <td> <span class="uicontrol">包含在</span> <br /> </td> 
    <td> 傳回包含在指定值中的結果。 這些值必須以逗號分隔。<br /> </td> 
    <td> <strong>出生日期(@birthDate)包含在'12/10/1979,12/10/1984'中</strong>，將會傳回在這些日期之間出生的收件者。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">不包含在</span><br /> </td> 
-   <td> 類似運算 <span class="uicontrol">元中的</span> I。 在此，我們要根據輸入的值排除收件者。<br /> </td> 
+   <td> <span class="uicontrol">不包含在</span> <br /> </td> 
+   <td> 類似於運算 <span class="uicontrol">子中包含</span> Is。 在此，我們要根據輸入的值排除收件者。<br /> </td> 
    <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'中</strong>。 與上例不同，在這些日期內出生的收件者將不會傳回。<br /> </td> 
   </tr> 
  </tbody> 
@@ -147,7 +147,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
    ![](assets/query_condition_modif_03.png)
 
-此範例顯示可讓您顯示的篩選：會說西班牙文或OR的收件者是具有行動號碼的女性，或沒有帳號且公司名稱以字母&quot;N&quot;開頭的收件者。
+此範例顯示可讓您顯示的篩選：會說西班牙文或OR的收件者是具有行動號碼的女性，或是沒有帳號且公司名稱以字母&quot;N&quot;開頭的收件者。
 
 ![](assets/query_editor_nveau_31.png)
 
@@ -162,7 +162,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 * 垂直箭頭可讓您移動條件，從而更改其執行順序。
 
-此示例說明如何使用箭頭刪除括弧層。 從下列篩選條件開始： **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**。
+此示例說明如何使用箭頭刪除括弧層。 從下列篩選條件開始： **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
 
 將游標置於篩選條 **[!UICONTROL Gender (@gender) equal to Male]** 件上，然後按一下箭 **[!UICONTROL Remove a parenthesis level]** 頭。
 
@@ -199,7 +199,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 <table> 
  <thead> 
   <tr> 
-   <th> 表徵圖<br /> </th> 
+   <th> 圖示<br /> </th> 
    <th> 說明<br /> </th> 
    <th> 範例<br /> </th> 
   </tr> 
@@ -243,9 +243,9 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 <table> 
  <thead> 
   <tr> 
-   <th> 表徵圖<br /> </th> 
+   <th> 圖示<br /> </th> 
    <th> 說明<br /> </th> 
-   <th> Example<br /> </th> 
+   <th> 範例 <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -272,7 +272,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ## 建立計算欄位 {#creating-calculated-fields}
 
-如有必要，請在資料格式化期間新增欄。 計算欄位會新增欄至資料預覽區段。 按一下 **[!UICONTROL Add a calculated field]**.
+如有必要，請在資料格式化期間新增欄。 計算欄位會新增欄至資料預覽區段。 按一下 **[!UICONTROL Add a calculated field]**。
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -321,9 +321,9 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 1. 在視 **[!UICONTROL Add]** 窗中按一 **[!UICONTROL Data to extract]** 下。 在窗口 **[!UICONTROL Formula type]** 中，選擇要輸入表達式的公式類型。
 
-   可用的公式有幾種類型： **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**。
+   可用的公式有幾種類型： **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**
 
-   選擇 **[!UICONTROL Process on an aggregate function]**&#x200B;和 **[!UICONTROL Count]**。 按一下 **[!UICONTROL Next]**.
+   Select **[!UICONTROL Process on an aggregate function]**, and **[!UICONTROL Count]**. Click **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -354,7 +354,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ## 函式清單 {#list-of-functions}
 
-如果選 **[!UICONTROL Expression]** 擇了類型公式，則將進入「編輯表達式」窗口。 各種函式類別可關聯至可用欄位： **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]****[!UICONTROL Geomarketing]**&#x200B;和 **[!UICONTROL Windowing function]****[!UICONTROL Others]**!
+如果選 **[!UICONTROL Expression]** 擇了類型公式，則將進入「編輯表達式」窗口。 各種函式類別可關聯至可用欄位： **[!UICONTROL Aggregates]**、 **[!UICONTROL String]**、 **[!UICONTROL Date]**、 **[!UICONTROL Numerical]**、 **[!UICONTROL Currency]**、 **[!UICONTROL Geomarketing]**&#x200B;和 **[!UICONTROL Windowing function]****[!UICONTROL Others]**。
 
 運算式編輯器的外觀如下：
 
@@ -362,7 +362,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 它可讓您選擇資料庫表格中的欄位，並新增進階函式。 下列功能可供使用：
 
-**聚合**
+**彙總**
 
 <table> 
  <tbody> 
@@ -378,27 +378,27 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>計數</strong><br /> </td> 
-   <td> 計算列的非空值<br /> </td> 
+   <td> Counts the non-null values of a column<br /> </td> 
    <td> Count(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
-   <td> <strong>全部計數</strong><br /> </td> 
+   <td> <strong>CountAll</strong><br /> </td> 
    <td> 計算傳回的值（所有欄位）<br /> </td> 
    <td> CountAll()<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Countdistinct</strong><br /> </td> 
-   <td> 計算列的不同非空值<br /> </td> 
+   <td> Counts the distinct non-null values of a column<br /> </td> 
    <td> Countdistinct(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>最大值</strong><br /> </td> 
-   <td> 傳回數字、字串或日期類型欄的最大值<br /> </td> 
+   <td> Returns the maximum value of a number, string, or date type column<br /> </td> 
    <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>最小</strong><br /> </td> 
-   <td> 傳回數字、字串或日期類型欄的最小值<br /> </td> 
+   <td> Returns the minimum value of a number, string or date type column<br /> </td> 
    <td> Min(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -414,7 +414,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
  </tbody> 
 </table>
 
-**字串**
+**String**
 
 <table> 
  <tbody> 
@@ -425,32 +425,32 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>AllNonNull2</strong><br /> </td> 
-   <td> 指示所有參數是否為非空值且非空<br /> </td> 
+   <td> 指示所有參數是否為非空值且非空白<br /> </td> 
    <td> AllNonNull2(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>AllNonNull3</strong><br /> </td> 
-   <td> 指示所有參數是否為非空值且非空<br /> </td> 
+   <td> 指示所有參數是否為非空值且非空白<br /> </td> 
    <td> AllNonNull3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
-   <td> 傳回字串中第一個字元的ASCII值。<br /> </td> 
+   <td> 傳回字串中第一個字元的　ASCII　值.<br /> </td> 
    <td> Ascii(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
-   <td> 傳回與'n' ASCII代碼對應的字元<br /> </td> 
+   <td> 傳回與　'n' ASCII　代碼對應的字元<br /> </td> 
    <td> 字元(&lt;number&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
-   <td> 傳回字串1中字串2的位置。<br /> </td> 
+   <td> 傳回字串　1　中字串　2　的位置.<br /> </td> 
    <td> Charindex(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
-   <td> 傳回字串的第n行（從1到n）<br /> </td> 
+   <td> 傳回字串的第　n　行（從　1　到　n）<br /> </td> 
    <td> GetLine(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -479,17 +479,17 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> LPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>左側</strong><br /> </td> 
-   <td> 傳回字串的前n個字元<br /> </td> 
+   <td> <strong>Left</strong><br /> </td> 
+   <td> 傳回字串的前　n　個字元<br /> </td> 
    <td> Left(&lt;string&gt;, &lt;number&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>長度</strong><br /> </td> 
+   <td> <strong>Length</strong><br /> </td> 
    <td> 傳回字串的長度<br /> </td> 
    <td> Length(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>下方</strong><br /> </td> 
+   <td> <strong>Lower</strong><br /> </td> 
    <td> 傳回小寫字串<br /> </td> 
    <td> Lower(&lt;string&gt;)<br /></td> 
   </tr> 
@@ -500,11 +500,11 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
-   <td> 返回字串MD5鍵的十六進位表示<br /> </td> 
+   <td> 返回字串　MD5　鍵的十六進位表示<br /> </td> 
    <td> Md5Digest(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>備忘內容</strong><br /> </td> 
+   <td> <strong>MemoContains</strong><br /> </td> 
    <td> 指定備忘錄是否包含作為參數傳遞的字串<br /> </td> 
    <td> MemoContains(&lt;memo&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
@@ -514,8 +514,8 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> RPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>右</strong><br /> </td> 
-   <td> 傳回字串的最後n個字元<br /> </td> 
+   <td> <strong>Right</strong><br /> </td> 
+   <td> 傳回字串的最後　n　個字元<br /> </td> 
    <td> Right(&lt;string&gt;)<br /> </td> 
   </tr> 
   <tr> 
@@ -524,14 +524,14 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> Rtrim(&lt;string&gt;)<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>智慧型</strong><br /> </td> 
+   <td> <strong>Smart</strong><br /> </td> 
    <td> 傳回字串，每個字詞的首字母以大寫表示<br /> </td> 
    <td> Smart(&lt;string&gt;)<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>子字串</strong><br /> </td> 
-   <td> 提取以字串的字元n1和長度n2開頭的子字串<br /> </td> 
-   <td> 子字串(&lt;string&gt;, &lt;offset&gt;, &lt;length&gt;)<br /> </td>  
+   <td> <strong>Substring</strong><br /> </td> 
+   <td> Extracts the substring starting at character n1 of the string and of length n2<br /> </td> 
+   <td> Substring(&lt;string&gt;, &lt;offset&gt;, &lt;length&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToString</strong><br /> </td> 
@@ -539,7 +539,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> ToString(&lt;number&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>上方</strong><br /> </td> 
+   <td> <strong>Upper</strong><br /> </td> 
    <td> 以大寫傳回字串<br /> </td> 
    <td> Upper(&lt;string&gt;)<br /> </td>  
   </tr> 
@@ -550,12 +550,12 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>VirtualLinkStr</strong><br /> </td> 
-   <td> 傳回連結的外鍵（文字）索引鍵，如果其他兩個參數相等，則傳回該連結的外鍵(text)索引鍵<br /> </td> 
+   <td> 傳回連結的外鍵（文字）索引鍵，如果其他兩個參數相等，則傳回該連結的外鍵　(text)　<br /> </td> 
    <td> VirtualLinkStr(&lt;string&gt;, &lt;number&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> 傳回字串大小<br /> </td> 
+   <td> Returns the string size<br /> </td> 
    <td> dataLength(&lt;string&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -601,28 +601,28 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> AddYears(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>僅限日期</strong><br /> </td> 
-   <td> 僅傳回日期（時間為00:00）*<br /> </td> 
+   <td> <strong>DateOnly</strong><br /> </td> 
+   <td> Returns the date only (with time at 00:00)*<br /> </td> 
    <td> DateOnly(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>日</strong><br /> </td> 
+   <td> <strong>Day</strong><br /> </td> 
    <td> 傳回代表日期的數字<br /> </td> 
    <td> Day(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> 傳回日期中某年的日數<br /> </td> 
+   <td> Returns the number of the day in the year of the date<br /> </td> 
    <td> DayOfYear(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> 傳回與目前日期對應的日期減去n天<br /> </td> 
+   <td> Returns the date corresponding to the current date minus n days<br /> </td> 
    <td> DaysAgo(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> 傳回與目前日期相對應的日期（整數yyymmdd）減去n天<br /> </td> 
+   <td> Returns the date (integer yyyymmdd) corresponding to the current date minus n days<br /> </td> 
    <td> DaysAgoInt(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -637,21 +637,21 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>GetDate</strong><br /> </td> 
-   <td> 返回伺服器的當前系統日期<br /> </td> 
+   <td> 返回伺服器的目前系統日期<br /> </td> 
    <td> GetDate()<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>小時</strong><br /> </td> 
+   <td> <strong>Hour</strong><br /> </td> 
    <td> 傳回日期的小時數<br /> </td> 
-   <td> 小時（&lt;日期&gt;）<br /> </td>  
+   <td> Hour(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>時數比較</strong><br /> </td> 
+   <td> <strong>HoursDiff</strong><br /> </td> 
    <td> 傳回兩個日期之間的小時數<br /> </td> 
    <td> HoursDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>分鐘</strong><br /> </td> 
+   <td> <strong>Minute</strong><br /> </td> 
    <td> 傳回日期的分鐘數<br /> </td> 
    <td> Minute(&lt;date&gt;)<br /> </td>  
   </tr> 
@@ -661,9 +661,9 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> MinutesDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>月</strong><br /> </td> 
+   <td> <strong>Month</strong><br /> </td> 
    <td> 傳回代表日期月份的數字<br /> </td> 
-   <td> 月（&lt;日期&gt;）<br /> </td>  
+   <td> Month(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MonthsAgo</strong><br /> </td> 
@@ -676,12 +676,12 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> MonthsDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>月舊</strong><br /> </td> 
+   <td> <strong>MonthsOld</strong><br /> </td> 
    <td> 傳回日期的月份<br /> </td> 
    <td> MonthsOld(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>第二</strong><br /> </td> 
+   <td> <strong>Second</strong><br /> </td> 
    <td> 傳回日期的秒數<br /> </td> 
    <td> Second(&lt;date&gt;)<br /> </td>  
   </tr> 
@@ -706,23 +706,23 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> SubMinutes(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>子月份</strong><br /> </td> 
+   <td> <strong>SubMonths</strong><br /> </td> 
    <td> 從日期減去幾個月<br /> </td> 
    <td> SubMonths(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>子秒數</strong><br /> </td> 
+   <td> <strong>SubSeconds</strong><br /> </td> 
    <td> 從日期減去秒數<br /> </td> 
    <td> SubSeconds(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>子年</strong><br /> </td> 
+   <td> <strong>SubYears</strong><br /> </td> 
    <td> 從日期減去數年<br /> </td> 
    <td> SubYears(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>截止日期</strong><br /> </td> 
-   <td> 將日期+時間轉換為日期<br /> </td> 
+   <td> <strong>ToDate</strong><br /> </td> 
+   <td> 將日期　+　時間轉換為日期<br /> </td> 
    <td> ToDate(&lt;date + time&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -733,12 +733,12 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   <tr> 
    <td> <strong>TruncDate</strong><br /> </td> 
    <td> 將日期+時間四捨五入至最接近的秒數<br /> </td> 
-   <td> TruncDate（@lastModified, &lt;秒數&gt;）<br /> </td> 
+   <td> TruncDate(@lastModified, &lt;number of seconds&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>TruncDateTZ</strong><br /> </td> 
    <td> 將日期+時間四捨五入為以秒為單位的指定精確度<br /> </td> 
-   <td> TruncDateTZ（&lt;date&gt;, &lt;秒數&gt;, &lt;時區&gt;）<br /> </td> 
+   <td> TruncDateTZ(&lt;date&gt;, &lt;number of seconds&gt;, &lt;time zone&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>TruncQuarter</strong><br /> </td> 
@@ -757,12 +757,12 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>TruncYear</strong><br /> </td> 
-   <td> 將日期+時間捨入至年度的1月1日<br /> </td> 
+   <td> 將日期+時間捨入至年度的　1　月　1　日<br /> </td> 
    <td> TruncYear(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
-   <td> 傳回代表日期當周中某天的數字<br /> </td> 
+   <td> 傳回代表日期當週中某天的數字<br /> </td> 
    <td> WeekDay(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -771,7 +771,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> Year(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>年與月</strong><br /> </td> 
+   <td> <strong>YearAnd Month</strong><br /> </td> 
    <td> 傳回代表日期的年份和月份的數字<br /> </td> 
    <td> YearAndMonth(&lt;date&gt;)<br /> </td>  
   </tr> 
@@ -812,42 +812,42 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> Ceil(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>地板</strong><br /> </td> 
-   <td> 傳回大於或等於數字的最大整數<br /> </td> 
+   <td> <strong>Floor</strong><br /> </td> 
+   <td> Returns the greatest integer greater than or equal to a number<br /> </td> 
    <td> Floor(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>最棒的</strong><br /> </td> 
+   <td> <strong>Greatest</strong><br /> </td> 
    <td> 傳回兩個數字中的較大值<br /> </td> 
-   <td> 最大（&lt;數字1&gt;, &lt;數字2&gt;）<br /> </td>  
+   <td> Greatest(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>最少</strong><br /> </td> 
+   <td> <strong>Least</strong><br /> </td> 
    <td> 傳回兩個數字中的較小者<br /> </td> 
-   <td> 最少（&lt;數字1&gt;, &lt;數字2&gt;）<br /> </td>  
+   <td> Least(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>修改</strong><br /> </td> 
-   <td> 傳回n1除以n2的整數除的余數<br /> </td> 
+   <td> <strong>Mod</strong><br /> </td> 
+   <td> Returns the remainder of the integer division of n1 by n2<br /> </td> 
    <td> Mod(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>百分比</strong><br /> </td> 
+   <td> <strong>Percent</strong><br /> </td> 
    <td> 傳回兩個數字的比率，以百分比表示<br /> </td> 
-   <td> 百分比（&lt;數字1&gt;, &lt;數字2&gt;）<br /> </td>  
+   <td> Percent(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>隨機</strong><br /> </td> 
+   <td> <strong>Random</strong><br /> </td> 
    <td> 傳回隨機值<br /> </td> 
    <td> Random()<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>四捨五入</strong><br /> </td> 
+   <td> <strong>Round</strong><br /> </td> 
    <td> 將數字四捨五入為n個小數<br /> </td> 
-   <td> 捨入（&lt;number&gt;, &lt;小數位數&gt;）<br /> </td>  
+   <td> Round(&lt;number&gt;, &lt;number of decimals&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>簽署</strong><br /> </td> 
+   <td> <strong>Sign</strong><br /> </td> 
    <td> 傳回數字元號<br /> </td> 
    <td> Sign(&lt;number&gt;)<br /> </td>  
   </tr> 
@@ -858,17 +858,17 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>ToInt64</strong><br /> </td> 
-   <td> 將浮點數轉換為64位整數<br /> </td> 
+   <td> 將浮點數轉換為　64　位整數<br /> </td> 
    <td> ToInt64(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>至整數</strong><br /> </td> 
+   <td> <strong>ToInteger</strong><br /> </td> 
    <td> 將浮點數轉換為整數<br /> </td> 
    <td> ToInteger(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Trunc</strong><br /> </td> 
-   <td> 截斷n1到n2小數<br /> </td> 
+   <td> 截斷　n1　到　n2　小數<br /> </td> 
    <td> Trunc(&lt;n1&gt;, &lt;n2&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -896,7 +896,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
  </tbody> 
 </table>
 
-**地理行銷**
+**Geomarketing**
 
 <table> 
  <tbody> 
@@ -907,13 +907,13 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>距離</strong><br /> </td> 
-   <td> 傳回兩個點之間的距離（以度表示），這兩個點由其經度和緯度定義。<br /> </td> 
-   <td> 距離（&lt;經度A&gt;、&lt;經度A&gt;、&lt;經度B&gt;、&lt;經度B&gt;）<br /> </td>  
+   <td> Returns the distance between two points defined by their longitude and latitude, expressed in degrees.<br /> </td> 
+   <td> 距離（&lt;Longitude A&gt;, &lt;Latitude A&gt;, &lt;Longitude B&gt;, &lt;Latitude B&gt;）<br /> </td>  
   </tr> 
  </tbody> 
 </table>
 
-**其他**
+**Others**
 
 <table> 
  <tbody> 
@@ -929,27 +929,27 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>ClearBit</strong><br /> </td> 
-   <td> 刪除值中的標幟<br /> </td> 
+   <td> 刪除值中的旗標<br /> </td> 
    <td> ClearBit(&lt;identifier&gt;, &lt;flag&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>合併</strong><br /> </td> 
-   <td> 如果值1為零或null，則返回值2，否則返回值1<br /> </td> 
+   <td> 如果值　1　為　零或　null，則傳回值　2，否則傳回值　1<br /> </td> 
    <td> Coalesce(&lt;value 1&gt;, &lt;value 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>解碼</strong><br /> </td> 
+   <td> <strong>Decode</strong><br /> </td> 
    <td> 如果值1 =值2，則返回值3。 如果不返回值4。<br /> </td> 
    <td> Decode(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;, &lt;value 4&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Else</strong><br /> </td> 
-   <td> 傳回值1（只能用作case函式的參數）<br /> </td> 
+   <td> 傳回值　1（只能用作　case　函式的參數）<br /> </td> 
    <td> Else(&lt;value 1&gt;, &lt;value 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
-   <td> 從電子郵件地址提取域<br /> </td> 
+   <td> Extracts the domain from an e-mail address<br /> </td> 
    <td> GetEmailDomain(&lt;value&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -958,23 +958,23 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> GetMirrorURL(&lt;value&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>If</strong><br /> </td> 
+   <td> <strong>Iif</strong><br /> </td> 
    <td> 如果運算式為true，則傳回值1。 否則返回值2<br /> </td> 
    <td> Iif(&lt;condition&gt;, &lt;value 1&gt;, &lt;value 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>IsBitSet</strong><br /> </td> 
-   <td> 指出標幟是否在值中<br /> </td> 
+   <td> 指出旗標是否在值中<br /> </td> 
    <td> IsBitSet(&lt;identifier&gt;, &lt;flag&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> 如果字串1為空，則返回值2，否則返回值3<br /> </td> 
+   <td> Returns value 2 if string 1 is empty, otherwise returns value 3<br /> </td> 
    <td> IsEmptyString(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>無空</strong><br /> </td> 
-   <td> 如果引數為NULL，則返回空字串<br /> </td> 
+   <td> <strong>NoNull</strong><br /> </td> 
+   <td> 如果引數為　NULL，則返回空字串<br /> </td> 
    <td> NoNull(&lt;value&gt;)<br /> </td>   
   </tr> 
   <tr> 
@@ -984,17 +984,17 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
   </tr> 
   <tr> 
    <td> <strong>SetBit</strong><br /> </td> 
-   <td> 強制值中的標幟<br /> </td> 
+   <td> 強制值中的旗標<br /> </td> 
    <td> SetBit(&lt;identifier&gt;, &lt;flag&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToBoolean</strong><br /> </td> 
-   <td> 將數字轉換為布爾值<br /> </td> 
+   <td> 將數字轉換為布林值<br /> </td> 
    <td> ToBoolean(&lt;number&gt;)<br /> </td>   
   </tr> 
   <tr> 
-   <td> <strong>何時</strong><br /> </td> 
-   <td> 如果運算式為true，則傳回值1。 如果不是，它會傳回值2（只能用作case函式的參數）<br /> </td> 
+   <td> <strong>When</strong><br /> </td> 
+   <td> 如果運算式為true，則傳回值1。 If not, it returns value 2 (may only be used as a parameter of the case function)<br /> </td> 
    <td> When(&lt;condition&gt;, &lt;value 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -1015,7 +1015,7 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> Desc(&lt;value 1&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>訂購者</strong><br /> </td> 
+   <td> <strong>OrderBy</strong><br /> </td> 
    <td> 對分區內的結果進行排序<br /> </td> 
    <td> OrderBy(&lt;value 1&gt;)<br /> </td>  
   </tr> 
@@ -1025,8 +1025,8 @@ source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
    <td> PartitionBy(&lt;value 1&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>行號</strong><br /> </td> 
-   <td> 根據表分區和排序順序生成行號。<br /> </td> 
+   <td> <strong>RowNum</strong><br /> </td> 
+   <td> Generates a line number based on the table partition and on a sorting sequence.<br /> </td> 
    <td> RowNum(PartitionBy(&lt;value 1&gt;), OrderBy(&lt;value 1&gt;))<br /> </td> 
   </tr> 
  </tbody> 
