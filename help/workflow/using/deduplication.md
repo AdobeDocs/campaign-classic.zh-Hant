@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 重複資料消除從入站活動的結果中刪除重複項。 可在電子郵件地址、電話號碼或其他欄位上執行重複資料刪除。
 
-## 最佳作法 {#best-practices}
+## 最佳實務{#best-practices}
 
 在重複資料消除期間，入站流將單獨處理。 例如，如果在查詢1的結果和查詢2的結果中都找到收件者A，則不會對它們進行重複資料消除。
 
@@ -38,7 +35,7 @@ ht-degree: 0%
 
 ![](assets/dedup_bonnepratique.png)
 
-## 配置 {#configuration}
+## 設定 {#configuration}
 
 要配置重複資料消除，請輸入其標籤、方法和重複資料消除標準，以及與結果相關的選項。
 
@@ -48,14 +45,15 @@ ht-degree: 0%
 
 1. 目標選擇
 
-   選擇此活動的目標類型（預設情況下，重複資料消除涉及收件人）和要使用的標準，即相同值允許您識別重複項的欄位： 電子郵件地址、行動電話或電話號碼、傳真號碼或直接郵件地址。
+   選擇此活動的目標類型（預設情況下，重複資料消除涉及收件人）和要使用的標準，即相同值允許您識別重複項的欄位：電子郵件地址、行動電話或電話號碼、傳真號碼或直接郵件地址。
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
    >[!NOTE]
    >
    >如果您使用外部資料作為輸入（例如來自外部檔案），請務必選取選 **[!UICONTROL Temporary schema]** 項。
-在下一步中，選 **[!UICONTROL Other]** 項可讓您選取要使用的准則或准則：
+   >
+   >在下一步中，選 **[!UICONTROL Other]** 項可讓您選取要使用的准則或准則：
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -67,16 +65,16 @@ ht-degree: 0%
 
    可使用下列方法：
 
-   * **[!UICONTROL Choose for me]**: 隨機選擇要從重複項中保留的記錄。
-   * **[!UICONTROL Following a list of values]**: 可讓您定義一或多個欄位的值優先順序。 要定義值，請選擇一個欄位或建立表達式，然後將值添加到相應的表中。 若要定義新欄位，請按一 **[!UICONTROL Add]** 下值清單上方的按鈕。
+   * **[!UICONTROL Choose for me]**：隨機選取要保留在重複項目外的記錄。
+   * **[!UICONTROL Following a list of values]**：可讓您定義一或多個欄位的值優先順序。若要定義值，請選取欄位或建立運算式，然後將值新增至適當的資料表中。若要定義新欄位，請按一下值清單上方的 **[!UICONTROL Add]** 按鈕。
 
       ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Non-empty value]**: 這可讓您保留所選運算式值不為空的記錄作為優先順序。
+   * **[!UICONTROL Non-empty value]**：您可以保留所選運算式的值不為空白的記錄作為優先順序。
 
       ![](assets/s_user_segmentation_dedup_param6.png)
 
-   * **[!UICONTROL Using an expression]**: 可讓您使用指定運算式的最低（或最高）值來保存記錄。
+   * **[!UICONTROL Using an expression]**:可讓您使用指定運算式的最低（或最高）值來保存記錄。
 
       ![](assets/s_user_segmentation_dedup_param7.png)
    按一下 **[!UICONTROL Finish]** 以批准所選的重複資料消除方法。
@@ -87,11 +85,11 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   如果您 **[!UICONTROL Generate complement]** 想利用剩餘人口，請勾選選項。 補碼由所有復本組成。 然後，活動中會新增額外的轉場，如下所示：
+   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. 補碼由所有復本組成。 然後，活動中會新增額外的轉場，如下所示：
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 範例： 在傳送前識別重複項目 {#example--identify-the-duplicates-before-a-delivery}
+## 範例：在傳送前識別重複項目 {#example--identify-the-duplicates-before-a-delivery}
 
 在以下示例中，重複資料消除涉及三個查詢的聯合。
 
@@ -115,7 +113,7 @@ ht-degree: 0%
 1. 選擇只保留一個項目，當為多個收件者識別相同的電子郵件地址時。
 1. 選擇重 **[!UICONTROL Choose for me]** 復資料消除模式，以便隨機選擇在發現重複資料時保存的記錄，然後按一下 **[!UICONTROL Finish]**。
 
-當執行工作流程時，所有識別為重複項目的收件者都會從結果中排除（因此也會排除傳送），並新增至重複項清單。 此清單可能會再次使用，而不需要重新識別重複項目。
+執行工作流程時，所有識別為重複項目的收件者都會從結果中排除（因此也會排除傳送），並新增至重複項清單。 此清單可能會再次使用，而不需要重新識別重複項目。
 
 ## 輸入參數 {#input-parameters}
 
