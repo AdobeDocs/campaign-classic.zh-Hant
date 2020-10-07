@@ -1,7 +1,7 @@
 ---
-title: 存取促銷活動
-seo-title: 存取促銷活動
-description: 存取促銷活動
+title: 存取行銷活動
+seo-title: 存取行銷活動
+description: 存取行銷活動
 seo-description: null
 page-status-flag: never-activated
 uuid: 277f49fa-8056-42dc-876f-15ad0edc2716
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 39d8ddcd-7fae-44fa-8a49-c3ad999e7903
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 4%
 
 ---
 
 
-# 存取促銷活動{#accessing-campaigns}
+# 存取行銷活動{#accessing-campaigns}
 
 在訂購促銷活動後，訂單即獲核准，而且已到達可用日期，就可以執行它。
 
