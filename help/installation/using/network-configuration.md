@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 639d2f42-e397-4694-942c-b2b8ad94ce9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 3%
 
 ---
 
@@ -231,7 +231,7 @@ source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
 
 ## 與Adobe Experience Manager整合 {#integration-with-adobe-experience-manager}
 
-如果安裝是「內部部署」，則Adobe Campaign與Adobe Experience manager之間的整合需要開啟數個埠。 如需設定此整合的詳細資訊，請參閱詳細 [的檔案](../../integrations/using/about-adobe-experience-manager.md)。
+如果安裝是「內部部署」，則Adobe Campaign與Adobe Experience Manager之間的整合需要開啟數個埠。 如需設定此整合的詳細資訊，請參閱詳細 [的檔案](../../integrations/using/about-adobe-experience-manager.md)。
 
 <table> 
  <tbody> 
