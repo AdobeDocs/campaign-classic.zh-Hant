@@ -11,16 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a26ec7ed1c8463270ac9f97079f49e00d5b258e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 3%
 
 ---
 
 
-# 建立資料架構 {#creating-the-data-schema}
+# 建立資料結構描述 {#creating-the-data-schema}
 
 要在外部資料庫上建立模式：
 
