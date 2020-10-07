@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
+source-git-commit: 28f56534a57e675e42a417acfbf9b1a3053250a8
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 74%
+source-wordcount: '485'
+ht-degree: 58%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 74%
 
 ![](assets/s_ncs_user_connections_management.png)
 
-在窗口 **[!UICONTROL Connections]** 中，按一下 **[!UICONTROL Add > Connection]**。
+In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
 
 ![](assets/s_ncs_user_add_connexion.png)
 
@@ -93,11 +93,23 @@ This functionality is detailed in the [Access management](../../platform/using/a
 
 The **[!UICONTROL Help > About...]** menu lets you access the following information:
 
-* **版本**&#x200B;號，
-* **組建**&#x200B;編號，
-* 聯絡 Adobe Campaign 支援人員的連結。
+* **版本號** 。
+* **組建編號**
+* 連結以聯絡Adobe客戶服務
+* Adobe隱私權政策、使用條款與Cookie政策的連結
 
-   >[!CAUTION]
-   >
-   >無論何時向 Adobe 支援團隊尋求協助，您都需要提供 Campaign 用戶端主控台和應用程式伺服器的版本號和組建編號。
+![](assets/about-acc.png)
 
+無論何時向 Adobe 支援團隊尋求協助，您都需要提供 Campaign 用戶端主控台和應用程式伺服器的版本號和組建編號。
+
+如果您是在 [Campaign Gold Standard版本上執行](../../rn/using/gold-standard.md)，您也需要共用方塊中顯示的SHA/1字 **[!UICONTROL About]** 元。 例如，對於Gold **Standard 10版本**，組建編號會顯 **示組建9032@efd8a94**，如下所示：
+
+![](assets/about-acc-gs.png)
+
+在本文中進一步了 [解金本位](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
+
+**相關主題**：
+
+* [促銷活動支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [軟體散發](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Experience Cloud支援與專家諮詢](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
