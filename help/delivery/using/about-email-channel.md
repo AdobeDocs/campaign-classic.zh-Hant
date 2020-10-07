@@ -9,19 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 3%
+ht-degree: 12%
 
 ---
 
 
-# 關於電子郵件渠道{#about-email-channel}
+# 關於電子郵件通道{#about-email-channel}
 
 Adobe Campaign可讓您將個人化電子訊息大量傳遞給目標群體。
 
@@ -33,7 +30,7 @@ Adobe Campaign可讓您將個人化電子訊息大量傳遞給目標群體。
 
 傳送電子郵件的主要步驟如下：
 
-* [建立電子郵件傳送](../../delivery/using/creating-an-email-delivery.md)
+* [建立電子郵件傳遞](../../delivery/using/creating-an-email-delivery.md)
 * [定義目標人口](../../delivery/using/steps-defining-the-target-population.md)
 * [定義電子郵件內容](../../delivery/using/defining-the-email-content.md)
 * [傳送電子郵件](../../delivery/using/sending-messages.md)
