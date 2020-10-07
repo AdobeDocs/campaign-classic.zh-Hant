@@ -1,7 +1,7 @@
 ---
-title: 建立例項並登入
-seo-title: 建立例項並登入
-description: 建立例項並登入
+title: 建立執行個體並登入
+seo-title: 建立執行個體並登入
+description: 建立執行個體並登入
 seo-description: null
 page-status-flag: never-activated
 uuid: cb1620b3-f6e8-41dc-9142-ac0da65b6f8d
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: c7395094-c635-45ab-8455-a050f7d16b64
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 4%
 
 ---
 
 
-# 建立例項並登入{#creating-an-instance-and-logging-on}
+# 建立執行個體並登入{#creating-an-instance-and-logging-on}
 
 若要建立新的例項和Adobe Campaign資料庫，請套用下列程式：
 
@@ -50,11 +50,11 @@ source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
 
    >[!CAUTION]
    >
-   >對於連線URL，僅使用下列字元： `[a-z]`、 `[A-Z]``[0-9]` 和破折號(-)或完全停止。
+   >對於連線URL，僅使用下列字元： `[a-z]`、 `[A-Z]`、 `[0-9]` 和破折號(-)或完全停止。
 
 1. 按一 **[!UICONTROL Ok]** 下以確認設定：您現在可以從例項建立程式開始。
 1. 在視 **[!UICONTROL Connection settings]** 窗中輸入 **內部登入** 及其密碼，以連線至Adobe Campaign應用程式伺服器。 連接後，您將訪問實例建立嚮導以聲明新實例
-1. 在欄位 **[!UICONTROL Name]** 中，輸入實 **例名稱**。 由於此名稱用於生成配置檔案 **config-`<instance>`.xml** ，並用於命令行參數中來標識實例，因此請確保選擇一個不帶特殊字元的短名稱。 例如：電 **子行銷**。
+1. 在欄位 **[!UICONTROL Name]** 中，輸入實 **例名稱**。 由於此名稱用於生成配置檔案 **config-`<instance>`.xml** ，並用於命令行參數中來標識實例，因此請確保選擇一個不帶特殊字元的短名稱。 例如： **電子行銷**。
 
    ![](assets/s_ncs_install_create_instance.png)
 
@@ -72,7 +72,7 @@ source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
 
    伺服器必須由此名稱來識別，尤其是在電子郵件中上傳影像時。
 
-   此外，伺服器必須能夠通過此名稱連接自己，如果可能，還必須通過環回地址(127.0.0.1)連接自己，尤其要允許以PDF格式導出報告。
+   此外，伺服器必須能夠通過此名稱和環回地址(127.0.0.1)連接到自己，尤其是允許以PDF格式導出報告。
 
 1. 在下拉 **[!UICONTROL Language]** 式清單中，選取例 **項語言**:英文（美國）、英文（英國）、法文或日文。
 
