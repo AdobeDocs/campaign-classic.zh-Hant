@@ -1,7 +1,7 @@
 ---
-title: 管理設定檔
-seo-title: 管理設定檔
-description: 管理設定檔
+title: 管理個人資料
+seo-title: 管理個人資料
+description: 管理個人資料
 seo-description: null
 page-status-flag: never-activated
 uuid: f045dd5e-e069-4293-8c44-49d71071b041
@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: ef7aa3a0-249f-46eb-9300-5b97bce31c8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 97%
 
 ---
 
