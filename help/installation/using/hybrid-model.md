@@ -1,7 +1,7 @@
 ---
-title: 混合模型
-seo-title: 混合模型
-description: 混合模型
+title: 混合模式
+seo-title: 混合模式
+description: 混合模式
 seo-description: null
 page-status-flag: never-activated
 uuid: d10cf1b9-f572-427f-8cfb-78965f76ce76
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: f5244ab8-2421-4d76-bcf6-3574e68ea4e9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# 混合模型{#hybrid-model}
+# 混合模式{#hybrid-model}
 
 以下是適用於混合代管模型的安裝和設定步驟：
 
