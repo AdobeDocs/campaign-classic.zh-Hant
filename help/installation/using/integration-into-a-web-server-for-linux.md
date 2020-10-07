@@ -1,7 +1,7 @@
 ---
-title: 與Linux網頁伺服器整合
-seo-title: 與Linux網頁伺服器整合
-description: 與Linux網頁伺服器整合
+title: 與 Linux 網頁伺服器整合
+seo-title: 與 Linux 網頁伺服器整合
+description: 與 Linux 網頁伺服器整合
 seo-description: null
 page-status-flag: never-activated
 uuid: 7b18d176-4458-46a8-8da4-3621f90c6b13
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 752ba848-aee9-4bb0-b2c5-490f3124f74e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 7%
 
 ---
 
 
-# 與Linux網頁伺服器整合{#integration-into-a-web-server-for-linux}
+# 與 Linux 網頁伺服器整合{#integration-into-a-web-server-for-linux}
 
 Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）在應用程式伺服器中當做入口點。
 
@@ -35,7 +35,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）在應用程式伺
    http://<computer>:8080
    ```
 
-不過，出於安全性和管理原因，我們建議使用專用的Web伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦在網際網路上公開，而且您想要在網路外開啟主控台的存取。
+不過，出於安全性和管理原因，我們建議使用專用的Web伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦在網際網路上公開，而且您想要在網路外開啟主控台的存取權。
 
 Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
