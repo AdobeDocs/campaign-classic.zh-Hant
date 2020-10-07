@@ -1,7 +1,7 @@
 ---
-title: 轉譯Web表格
-seo-title: 轉譯Web表格
-description: 轉譯Web表格
+title: 轉譯網路表單
+seo-title: 轉譯網路表單
+description: 轉譯網路表單
 seo-description: null
 page-status-flag: never-activated
 uuid: 3de2b021-ce1e-4597-8099-7fbef3279170
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 145c26cc-c868-4b7b-904d-6af577fbcb83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 1%
 
 ---
 
 
-# 轉譯Web表格{#translating-a-web-form}
+# 轉譯網路表單{#translating-a-web-form}
 
 將Web應用程式當地語系化為多種語言是可能的。
 
@@ -446,7 +446,7 @@ Web表單以Web應用程式屬性頁籤中指定的默 **[!UICONTROL Localizatio
 
 ### 轉換系統字串 {#translating-the-system-strings}
 
-系統字串是所有Web應用程式使用的現成可用字串。 例如： **[!UICONTROL Next]** 、 **[!UICONTROL Previous]****[!UICONTROL Approve]** 、按鈕、 **[!UICONTROL Loading]** 訊息等。 根據預設，有些語言包含含有這些字串翻譯的字典。 語言清單在「變更表單顯 [示語言」中詳述](#changing-forms-display-language)。
+系統字串是所有Web應用程式使用的現成可用字串。 例如： **[!UICONTROL Next]** 、 **[!UICONTROL Previous]**、按 **[!UICONTROL Approve]** 鈕 **[!UICONTROL Loading]** 、訊息等。 根據預設，有些語言包含含有這些字串翻譯的字典。 語言清單在「變更表單顯 [示語言」中詳述](#changing-forms-display-language)。
 
 如果您將Web應用程式翻譯成系統字典未翻譯的語言，會出現警告訊息，告知您有些翻譯遺失。
 
