@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ed44ccd8053d79024e8fb2d05ee27e1e663b8cb2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -63,11 +60,11 @@ ht-degree: 8%
 
    對於每個個別URL，您可以將追蹤模式設定為下列其中一個值：
 
-   * **[!UICONTROL Enabled]** : 在此URL上啟動追蹤。
-   * **[!UICONTROL Not tracked]** : 停用此URL上的追蹤。
-   * **[!UICONTROL Always enabled]** : 一律啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息內容中，其追蹤就會自動啟動。
-   * **[!UICONTROL Never tracked]** : 切勿啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息中，其追蹤就會自動停用。
-   * **[!UICONTROL Opt-out]** : 將此URL視為選擇退出或取消訂閱URL。
-   * **[!UICONTROL Mirror page]** : 認為此URL是鏡像頁面URL。
+   * **[!UICONTROL Enabled]** :在此URL上啟動追蹤。
+   * **[!UICONTROL Not tracked]** :停用此URL上的追蹤。
+   * **[!UICONTROL Always enabled]** :一律啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息內容中，其追蹤就會自動啟動。
+   * **[!UICONTROL Never tracked]** :切勿啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息中，其追蹤就會自動停用。
+   * **[!UICONTROL Opt-out]** :將此URL視為選擇退出或取消訂閱URL。
+   * **[!UICONTROL Mirror page]** :認為此URL是鏡像頁面URL。
 
 1. 此外，您也可以在欄的下拉式清單中，為每個追蹤的URL選取類 **[!UICONTROL Category]** 別。 這些類別可顯示報表，例如 **[!UICONTROL URLs and click streams]** (請 [參閱本節](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams))。 類別在特定枚舉中定義： **[!UICONTROL urlCategory]** (請參 [閱管理枚舉](../../platform/using/managing-enumerations.md))。
