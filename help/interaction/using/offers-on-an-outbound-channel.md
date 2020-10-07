@@ -1,7 +1,7 @@
 ---
-title: 對外渠道的選件
-seo-title: 對外渠道的選件
-description: 對外渠道的選件
+title: 對出頻道上的優惠方案
+seo-title: 對出頻道上的優惠方案
+description: 對出頻道上的優惠方案
 seo-description: null
 page-status-flag: never-activated
 uuid: a8a7ce5f-0d18-47f2-b258-34b9471de769
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 3bd113c3-da67-4f4f-aa40-f4c7860a8569
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 4%
 
 ---
 
 
-# 對外渠道的選件{#offers-on-an-outbound-channel}
+# 對出頻道上的優惠方案{#offers-on-an-outbound-channel}
 
 ## 電子郵件選件傳送 {#email-offer-delivery}
 
@@ -120,7 +120,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 顯示選 **[!UICONTROL Breakdown of offers by rank]** 件引擎所選取的選件清單。
+1. 顯示以 **[!UICONTROL Breakdown of offers by rank]** 檢視選件引擎所選取的選件清單。
 
    ![](assets/offer_simulation_example_012.png)
 
