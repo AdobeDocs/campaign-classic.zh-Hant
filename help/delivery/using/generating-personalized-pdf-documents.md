@@ -1,7 +1,7 @@
 ---
-title: 產生個人化PDF檔案
-seo-title: 產生個人化PDF檔案
-description: 產生個人化PDF檔案
+title: 產生個人化 PDF 文件
+seo-title: 產生個人化 PDF 文件
+description: 產生個人化 PDF 文件
 seo-description: null
 page-status-flag: never-activated
 uuid: d4c27523-bff3-457a-ba60-e2747a2b3166
@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 8dfc5e7c-c762-46ba-bbda-a7251354cb47
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 3%
 
 ---
 
 
-# 產生個人化PDF檔案{#generating-personalized-pdf-documents}
+# 產生個人化 PDF 文件{#generating-personalized-pdf-documents}
 
 ## 關於可變PDF檔案 {#about-variable-pdf-documents}
 
-Adobe Campaign可讓您從LibreOffice或Microsoft word檔案產生可變的PDF檔案（適用於電子郵件附件、直接郵件傳送）。
+Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案產生可變的PDF檔案（適用於電子郵件附件、直接郵件傳送）。
 
 支援下列擴充功能：&quot;。docx&quot;、&quot;。doc&quot;和&quot;。odt&quot;。
 
@@ -44,7 +44,7 @@ Adobe Campaign可讓您從LibreOffice或Microsoft word檔案產生可變的PDF�
 
 * 建立包含三行且視需要多欄的表格，然後設定其版面配置（邊框等）。
 * 將游標置於表格上，然後按一下功 **[!UICONTROL Table > Table properties]** 能表。 前往標籤 **[!UICONTROL Table]** 並輸入以 **NlJsTable開頭的名稱**。
-* 在第一行的第一個儲存格中，定義一個循環（例如，&quot;for&quot;），可對要顯示在表格中的值啟用小版本。
+* 在第一行的第一個儲存格中，定義一個循環（例如，&quot;for&quot;），可讓您在表格中顯示的值上進行迭代。
 * 在表格第二行的每個儲存格中，插入傳回要顯示的值的指令碼。
 * 關閉表的第三行和最後一行中的環。
 
