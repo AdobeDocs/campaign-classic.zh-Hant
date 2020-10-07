@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 9f4e8d10-7387-4716-aa85-a6b012ad14ef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e0ab9a3545b5c688975c32075c41e3987da5cf37
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 
 
 # 關於內容管理{#about-content-management}
 
-Adobe Campaign Content manager模組是特定的Campaign Classic標 [準套件](../../installation/using/installing-campaign-standard-packages.md) ，您可安裝它以建立經常性電子報或網站。 它可協助您建立、驗證和發佈訊息。
+Adobe Campaign Content Manager模組是特定的Campaign Classic標 [準套件](../../installation/using/installing-campaign-standard-packages.md) ，您可安裝它以建立經常性電子報或網站。 它可協助您建立、驗證和發佈訊息。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Adobe Campaign Content manager模組是特定的Campaign Classic標 [準套件](
 
 * 通過輸入介面進行結構化消息編輯，
 * 分離資料內容及其呈現方式（以XML格式產生）,
-* 以多種格式（html、txt、XML等）產生檔案基於樣式表，以確保符合圖形包裝，
+* 以多種格式（html、txt、XML等）產生檔案 基於樣式表，以確保符合圖形包裝，
 * 恢復和自動聚合外部內容流，
 * 與工作流程協作，以進行資料驗證和檢查。
 
