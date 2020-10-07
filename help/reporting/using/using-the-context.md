@@ -1,7 +1,7 @@
 ---
-title: 使用上下文
-seo-title: 使用上下文
-description: 使用上下文
+title: 使用內容
+seo-title: 使用內容
+description: 使用內容
 seo-description: null
 page-status-flag: never-activated
 uuid: ac8c7068-d640-4934-b7f5-bc91b98eab4c
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 72fe6df0-0271-48f9-bd6d-bb1ff25fbdf3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 3%
 
 ---
 
 
-# 使用上下文{#using-the-context}
+# 使用內容{#using-the-context}
 
 當您想要以或的形式表示資 **[!UICONTROL tables]** 料 **[!UICONTROL charts]**&#x200B;時，可從兩個來源取得：新查詢(請參 [閱定義資料的直接篩選](#defining-a-direct-filter-on-data))或報表內容(請參閱使 [用內容資料](#using-context-data))。
 
@@ -84,7 +84,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/s_ncs_advuser_report_datasource_2.png)
 
-然後在報表中指出資料來源，在此案例中： **[!UICONTROL Data from the context]**。
+然後在報表中指出資料來源，在此案例中： **[!UICONTROL Data from the context]**.
 
 資料位置會自動推斷。 如有必要，您可以強制使用資料路徑。
 
