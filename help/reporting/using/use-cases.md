@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 691eea2c-bffc-4520-91c8-43798eece916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ### 選取分析類型 {#selecting-a-type-of-analysis}
 
-在助理的第一個步驟中，您可以選擇要使用的描述性分析模板。 依預設，Adobe Campaign提供兩個範本： **[!UICONTROL Qualitative distribution]** 和 **[!UICONTROL Quantitative distribution]**。 有關詳細資訊，請參閱「 [配置定性分佈模板](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) 」部分。 「關於說明性分析」(About descriptive [analysis)部分顯示了各種渲染](../../reporting/using/about-descriptive-analysis.md) 。
+在助理的第一個步驟中，您可以選擇要使用的描述性分析模板。 依預設，Adobe Campaign提供兩個範本： **[!UICONTROL Qualitative distribution]** 和 **[!UICONTROL Quantitative distribution]**。 For more on this refer to the [Configuring the qualitative distribution template](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) section. 「關於說明性分析」(About descriptive [analysis)部分顯示了各種渲染](../../reporting/using/about-descriptive-analysis.md) 。
 
 在此範例中，選取范 **[!UICONTROL Qualitative distribution]** 本並選擇包含圖表和表格（陣列）的顯示。 為報表指定名稱（「說明性分析」），然後按一下 **[!UICONTROL Next]**。
 
@@ -114,7 +114,7 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
    ![](assets/s_ncs_user_report_wizard_04.png)
 
-   將滑鼠指標暫留在橫條上，即可查看該國的確切客戶或潛在客戶人數。
+   將滑鼠指標暫留在酒吧上，即可查看該國的確切客戶或潛在客戶人數。
 
 1. 根據圖例啟用或禁用其中一個國家的顯示。
 
@@ -189,7 +189,7 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. 此時，您可以選取選項並使 **[!UICONTROL Existing analyses and reports]** 用先前建立的報表(請參閱「重新使用現有報表 [和分析](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)」)，或建立新的描述性分析。 若要這麼做，請依預設 **[!UICONTROL New descriptive analysis from a template]** 保留選取的選項。
+1. 此時，您可以選取選項並使 **[!UICONTROL Existing analyses and reports]** 用先前建立的報表(請參閱「重新使用現有報表和 [分析](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)」)，或建立新的描述性分析。 若要這麼做，請依預設 **[!UICONTROL New descriptive analysis from a template]** 保留選取的選項。
 
    其餘的配置與所有描述性分析的配置相同。
 
