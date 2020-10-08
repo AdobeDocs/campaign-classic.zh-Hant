@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1203'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,11 +24,11 @@ ht-degree: 0%
 
 ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign v7收到的資料可用於Campaign Standard中以建立傳送。 您可以執行下列操作，瞭解配置檔案的同步方式。
 
-* **新增收件者**: 在Campaign v7中建立新的收件者，並確認對應的設定檔已複製至Campaign Standard。 請參 [閱建立新收件者](#creating-a-new-recipient)。
-* **更新收件者**: 在Campaign v7中編輯新收件者，並在Campaign Standard中檢視對應的設定檔，以確認更新已複製。 請參閱 [編輯收件者](#editing-a-recipient)。
-* **在Campaign Standard中建立工作流程**: 在Campaign Standard中建立工作流程，其中包含從Campaign v7複製的對象或個人檔案的查詢。 請參 [閱建立工作流程](#creating-a-workflow)。
-* **在Campaign Standard中建立傳送**: 依照工作流程完成傳送。 請參閱 [建立傳送](#creating-a-delivery)。
-* **驗證取消訂閱連結**: 使用Campaign v7 Web應用程式可確定收件者選擇取消訂閱服務會傳送至Campaign v7資料庫。 停止接收服務的選項會複製到Campaign Standard。 請參 [閱變更取消訂閱連結](#changing-the-unsubscription-link)。
+* **新增收件者**:在Campaign v7中建立新的收件者，並確認對應的設定檔已複製至Campaign Standard。 請參 [閱建立新收件者](#creating-a-new-recipient)。
+* **更新收件者**:在Campaign v7中編輯新收件者，並在Campaign Standard中檢視對應的設定檔，以確認更新已複製。 請參閱 [編輯收件者](#editing-a-recipient)。
+* **在Campaign Standard中建立工作流程**:在Campaign Standard中建立工作流程，其中包含從Campaign v7複製的對象或個人檔案的查詢。 See [Creating a workflow](#creating-a-workflow).
+* **在Campaign Standard中建立傳送**:依照工作流程完成傳送。 請參閱 [建立傳送](#creating-a-delivery)。
+* **驗證取消訂閱連結**:使用Campaign v7 Web應用程式可確定收件者選擇取消訂閱服務會傳送至Campaign v7資料庫。 停止接收服務的選項會複製到Campaign Standard。 請參 [閱變更取消訂閱連結](#changing-the-unsubscription-link)。
 
 ## 必要條件 {#prerequisites}
 
@@ -55,7 +52,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. 確認新的收件者已新增至「促銷活動標準」。 在檢閱描述檔時，請確定您在Campaign v7中輸入的資料也可在Campaign Standard中使用。 若要瞭解在Campaign Standard中尋找描述檔的位置，請參閱導 [覽基礎](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 確認新的收件者已新增至「促銷活動標準」。 在檢閱描述檔時，請確定您在Campaign v7中輸入的資料也可在Campaign Standard中使用。 若要瞭解在Campaign Standard中尋找描述檔的位置，請參閱導 [覽基礎](https://docs.adobe.com/content/help/zh-Hant/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -69,7 +66,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. 確認收件者的名稱已在Campaign Standard中更新。 若要瞭解在Campaign Standard中尋找描述檔的位置，請參閱導 [覽基礎](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 確認收件者的名稱已在Campaign Standard中更新。 若要瞭解在Campaign Standard中尋找描述檔的位置，請參閱導 [覽基礎](https://docs.adobe.com/content/help/zh-Hant/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -83,9 +80,9 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
 1. 前往「促銷活動標準」，然後按一下 **[!UICONTROL Marketing Activities]**。
 1. 按一 **[!UICONTROL Create]** 下右上角的。
-1. 按一下「**[!UICONTROL Workflow]**」。
+1. 按一下 **[!UICONTROL Workflow]**。
 1. 按一 **[!UICONTROL New workflow]** 下並 **[!UICONTROL Next]**。
-1. 在欄位中輸入工作流的名稱， **[!UICONTROL Label]** 並根據需要輸入其他資訊。 按一下「**[!UICONTROL Next]**」。
+1. 在欄位中輸入工作流的名稱， **[!UICONTROL Label]** 並根據需要輸入其他資訊。 按一下 **[!UICONTROL Next]**。
 1. 從 **[!UICONTROL Targeting]** 左側拖曳目標至 **[!UICONTROL Query]** 工作區。
 
    ![](assets/acs_connect_profile_sync_05.png)
@@ -119,7 +116,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
    ![](assets/acs_connect_profile_sync_08.png)
 
-1. 在欄位中輸入交貨的名稱， **[!UICONTROL Label]** 並根據需要輸入其他資訊。 按一下「**[!UICONTROL Next]**」。
+1. 在欄位中輸入交貨的名稱， **[!UICONTROL Label]** 並根據需要輸入其他資訊。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/acs_connect_profile_sync_09.png)
 
@@ -128,7 +125,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
    ![](assets/acs_connect_profile_sync_10.png)
 
-1. 選擇包含該連結的內容，以取消訂閱服務。 按一下「**[!UICONTROL Confirm]**」。
+1. 選擇包含該連結的內容，以取消訂閱服務。 按一下 **[!UICONTROL Confirm]**。
 
    ![](assets/acs_connect_profile_sync_11.png)
 
@@ -141,7 +138,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
    ![](assets/acs_connect_profile_sync_13.png)
 
 1. 用游標突出顯示文本，然後按一下鏈表徵圖。
-1. 按一下「**[!UICONTROL Link to a landing page]**」。
+1. 按一下 **[!UICONTROL Link to a landing page]**。
 
    ![](assets/acs_connect_profile_sync_14.png)
 
@@ -153,7 +150,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
    ![](assets/acs_connect_profile_sync_16.png)
 
-1. 按一下「**[!UICONTROL Create]**」。
+1. 按一下 **[!UICONTROL Create]**。
 1. 按一下傳送名稱以返回工作流程。
 
    ![](assets/acs_connect_profile_sync_17.png)
@@ -182,7 +179,7 @@ ACS連接器將Campaign v7中的資料複製到Campaign Standard。 從Campaign 
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. 前往「促銷活動標準」並開啟收件者的設定檔詳細資訊。 確認核取方塊出現在旁邊 **[!UICONTROL No longer contact (by any channel)]**。 若要瞭解在Campaign Standard中尋找描述檔的位置，請參閱導 [覽基礎](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 前往「促銷活動標準」並開啟收件者的設定檔詳細資訊。 確認核取方塊出現在旁邊 **[!UICONTROL No longer contact (by any channel)]**。 若要瞭解在Campaign Standard中尋找描述檔的位置，請參閱導 [覽基礎](https://docs.adobe.com/content/help/zh-Hant/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_23.png)
 
