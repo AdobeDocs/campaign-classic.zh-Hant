@@ -1,7 +1,7 @@
 ---
-title: 電源升壓器和電源群集
-seo-title: 電源升壓器和電源群集
-description: 電源升壓器和電源群集
+title: Power Booster 與 Power Cluster
+seo-title: Power Booster 與 Power Cluster
+description: Power Booster 與 Power Cluster
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d23ed42-a368-4bd6-afaf-48452e253d19
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 715d2b69-5b47-4890-8b7d-1dc0a0d4ead8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 7%
 
 ---
 
 
-# 電源升壓器和電源群集{#power-booster-and-power-cluster}
+# Power Booster 與 Power Cluster{#power-booster-and-power-cluster}
 
 ## 概觀 {#overview}
 
@@ -32,15 +32,15 @@ Adobe Campaign提供兩組預先封裝的架構選項，讓您調整部署的尺
 
 * **電源群集**
 
-   此選項提供2到N個叢集執行例項的支援，這些執行例項與主要Adobe Campaign應用程式例項相對於特定應用程式的解耦。 叢集可由遠端、分散式部署中及第三方代管。 除了流程隔離的優點外，Adobe Campaign Power cluster選項還允許使用商品硬體進行冗餘和擴展策略，以簡化SLA或效能的演變。
+   此選項提供2到N個叢集執行例項的支援，這些執行例項與主要Adobe Campaign應用程式例項相對於特定應用程式的解耦。 叢集可由遠端、分散式部署中及第三方代管。 除了流程隔離的優點外，Adobe Campaign Power Cluster選項還允許使用商品硬體進行冗餘和擴展策略，以簡化SLA或效能的演變。
 
 ![](assets/architectural_options_diagram.png)
 
 ## 符合資格的應用程式 {#eligible-applications}
 
-Power Booster和Power cluster選項可用於以下應用程式：
+Power Booster和Power Cluster選項可用於以下應用程式：
 
-* 行銷活動
+* Campaign
 * 傳送
 * 訊息中心
 
