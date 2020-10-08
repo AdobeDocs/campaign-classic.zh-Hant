@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 10%
 
 ---
 
@@ -52,10 +52,10 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
    可使用下列事件狀態：
 
-   * **[!UICONTROL Pending]** :事件在隊列中。 尚未為其指派消息模板。
+   * **[!UICONTROL Pending]** :事件在隊列中。 尚未為其指派訊息範本。
    * **[!UICONTROL Pending delivery]** :事件在佇列中，已指派訊息範本給該事件，且傳送正在處理該事件。
    * **[!UICONTROL Sent]** :此狀態會從傳送記錄複製。 這表示傳送已傳送。
-   * **[!UICONTROL Ignored by the delivery]** :此狀態會從傳送記錄複製。 這表示傳送被忽略。
-   * **[!UICONTROL Delivery failed]** :此狀態會從傳送記錄複製。 這意味著交付失敗。
-   * **[!UICONTROL Event not taken into account]** :事件無法連結至訊息範本。 不會處理事件。
+   * **[!UICONTROL Ignored by the delivery]** :此狀態會從傳送記錄複製。 這表示會由傳送忽略。
+   * **[!UICONTROL Delivery failed]** :此狀態會從傳送記錄複製。 這表示傳送失敗。
+   * **[!UICONTROL Event not taken into account]** :事件無法連結至訊息範本。 將不會處理事件。
 
