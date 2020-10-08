@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 discoiquuid: f6e4d22b-4ad3-4a1e-8a6f-3bdfc1da0535
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -63,10 +60,10 @@ ht-degree: 0%
 
 ### 定義影像參數 {#defining-image-parameters}
 
-* URL **[!UICONTROL Default image]**: 當未滿足任何條件時將顯示的影像。 您也可以從資產庫中選取影像。
-* The **[!UICONTROL Target location]**: 輸入動態選件的位置名稱。 您必須在Target活動中選取此位置。
-* The **[!UICONTROL Landing Page]**: 如果您想要將預設影像重新導向至預設登陸頁面。 此URL僅適用於在最終電子郵件中顯示預設影像且為選用的情況。
-* The **[!UICONTROL Additional decision parameters]**: 指定在Adobe Target區段中定義的欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須已在rawbox中指定。 在我們的範例中，我們新增了「國家」欄位。
+* URL **[!UICONTROL Default image]**:當未滿足任何條件時將顯示的影像。 您也可以從資產庫中選取影像。
+* The **[!UICONTROL Target location]**:輸入動態選件的位置名稱。 您必須在Target活動中選取此位置。
+* The **[!UICONTROL Landing Page]**:如果您想要將預設影像重新導向至預設登陸頁面。 此URL僅適用於在最終電子郵件中顯示預設影像且為選用的情況。
+* The **[!UICONTROL Additional decision parameters]**:指定在Adobe Target區段中定義的欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須已在rawbox中指定。 在我們的範例中，我們新增了「國家」欄位。
 
 如果您在Adobe Target的設定中使用「企業版」權限，請在此欄位中新增對應的屬性。 在此頁面中進一步瞭解Target Enterprise [權限](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html)。
 
@@ -80,7 +77,7 @@ ht-degree: 0%
 
 1. 若要在Target Standard中建立新的重新導向選件，請從標籤中 **[!UICONTROL Content]** 按一下 **[!UICONTROL Code offers]**。
 
-1. 按一 **[!UICONTROL Create]** 下 **[!UICONTROL Redirect Offer]**。
+1. 按一下 **[!UICONTROL Create]**，之後 **[!UICONTROL Redirect Offer]**。
 
    ![](assets/target_9.png)
 
@@ -88,9 +85,9 @@ ht-degree: 0%
 
    ![](assets/target_6.png)
 
-1. 請依照相同的程式，處理剩餘的重新導向選件。 For more on this, refer to this [page](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html).
+1. 請依照相同的程式，處理剩餘的重新導向選件。 如需關於此項目的詳細資訊，請參閱此[頁面](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html)。
 
-## 建立閱聽眾 {#audiences-target}
+## 建立對象 {#audiences-target}
 
 在Target中，您需要建立兩個對象，造訪您選件的訪客將會針對要傳送的不同內容分類。 針對每個對象，新增規則以定義誰將能夠看見選件。
 
@@ -160,7 +157,7 @@ ht-degree: 0%
 
 ## 在Campaign Classic中預覽和傳送電子郵件 {#preview-send-email}
 
-在Adobe Campaign中，您現在可以預覽電子郵件，並對不同的收件者測試其轉換效果。 您會注意到，影像會根據建立的不同體驗而改變。 若要進一步瞭解建立電子郵件的資訊，請參 [閱本頁](../../delivery/using/defining-the-email-content.md)。
+在Adobe Campaign中，您現在可以預覽電子郵件，並對不同的收件者測試其轉換效果。 您會注意到，影像會根據建立的不同體驗而改變。 To learn more on email creation, refer to this [page](../../delivery/using/defining-the-email-content.md).
 
 您現在已準備好傳送電子郵件，包括Target提供的動態選件。
 
