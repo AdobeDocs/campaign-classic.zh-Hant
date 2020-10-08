@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: ae57ef5f-e5db-4a91-a65a-d1f5f5b905ef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 6%
 
 ---
 
@@ -44,7 +44,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-這些報表是透過描述性分析精靈建立的，此精靈可依據不同步驟，讓您選擇要建立的報表類型以及資料和版面。 報表會顯示在最後一個步驟中。 如有必要，報表可以發佈並與其他運算子共用、列印、匯出為Excel、PDF或OpenDocument格式。
+這些報表是透過描述性分析精靈建立的，此精靈可依據各種步驟，讓您選擇要建立的報表類型以及資料和版面。 報表會顯示在最後一個步驟中。 如有必要，報表可以發佈並與其他運算子共用、列印、匯出為Excel、PDF或OpenDocument格式。
 
 描述性分析精靈的功能不如Adobe Campaign報表強大，但它們確實提供資料庫內容或資料選擇的快速概述。
 
