@@ -1,7 +1,7 @@
 ---
-title: 持續傳送
-seo-title: 持續傳送
-description: 持續傳送
+title: 持續傳遞
+seo-title: 持續傳遞
+description: 持續傳遞
 seo-description: null
 page-status-flag: never-activated
 uuid: af8b4582-299e-47f9-9819-987b35db94ab
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 持續傳送{#continuous-delivery}
+# 持續傳遞{#continuous-delivery}
 
 「連 **續傳送類型** 」動作可讓您將新收件者新增至現有的傳送。 此傳送類型可避免您每次都必須建立新傳送：此模式通常更有效率，尤其是對於需要時發送的低容量警報或通知。 在傳送範本層級，您可以指定指令碼來計算相關傳送的標籤（和促銷活動資料夾）。 如果指令檔計算尚未存在的傳送，則會即時建立。
 
