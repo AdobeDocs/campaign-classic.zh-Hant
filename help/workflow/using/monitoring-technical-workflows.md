@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -51,27 +48,27 @@ ht-degree: 0%
 
 針對 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 檢查工作流程 **[!UICONTROL Database Cleanup]** 是否每天都能順利執行並完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. 檢查工作流程 **[!UICONTROL Database Cleanup]** 是否每天都能順利執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/delivery.md)。
 1. 查看日誌，確認經過的時間隨時間的變化是相對恆定的，並且不會干擾其他工作流。
 1. 如需詳細資訊，請勾選此 [頁面](../../production/using/database-cleanup-workflow.md)。
 
 針對 **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-檢查「追蹤」工作流程是否如計畫般執行（預設為每小時），以及日記帳是否不會反覆標示經常發生的錯誤。 For more on this, refer to this [section](../../workflow/using/delivery.md).
+檢查「追蹤」工作流程是否如計畫般執行（預設為每小時），以及日記帳是否不會反覆標示經常發生的錯誤。 如需詳細資訊，請參閱本[區段](../../workflow/using/delivery.md)。
 
 針對 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. 檢查工作流程 **[!UICONTROL Deliverability update]** 是否每天都能順利執行並完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. 檢查工作流程 **[!UICONTROL Deliverability update]** 是否每天都能順利執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/delivery.md)。
 1. 在日誌中確認規則正在定期更新。
 
 針對 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. 查看資料夾下方的所有工作 **[!UICONTROL Campaign process]** 流程。 For more on this, refer to this [page](../../workflow/using/campaign.md).
+1. 查看資料夾下方的所有工作 **[!UICONTROL Campaign process]** 流程。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/campaign.md)。
 1. 檢查工作流程是否如計畫般執行，以及日記帳是否不會反覆顯示錯誤。
 
 ## 工作流程監督 {#workflow-supervision}
 
-群 **[!UICONTROL Workflow supervisors]** 組中應包含需要隨時得知失敗情況的運算子，以及哪些運算子可及時採取行動。
+群 **[!UICONTROL Workflow supervisors]** 組中應包含需要隨時得知失敗情況的運算子，以及哪些運算子可以及時採取行動。
 
 ![](assets/monitoring_technical_workflows3.png)
 
