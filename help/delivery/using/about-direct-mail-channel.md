@@ -1,7 +1,7 @@
 ---
-title: 關於直接郵件渠道
-seo-title: 關於直接郵件渠道
-description: 關於直接郵件渠道
+title: 關於直接郵件通道
+seo-title: 關於直接郵件通道
+description: 關於直接郵件通道
 seo-description: null
 page-status-flag: never-activated
 uuid: c7fe4d33-a056-49cd-977e-b56753360c8b
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: 33fe5a57-55db-4cd7-b1fd-0dc3691909ab
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 70f51ba3937d0f20d9a488c61b52b7ec4396fa5e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 11%
 
 ---
 
 
-# 關於直接郵件渠道{#about-direct-mail-channel}
+# 關於直接郵件通道{#about-direct-mail-channel}
 
 Adobe Campaign可讓您製作檔案，以便大量傳遞個人化信件。 收件者描述檔至少必須包含其姓名和郵遞區號。
 
