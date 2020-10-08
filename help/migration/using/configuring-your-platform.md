@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 2%
 
 ---
 
@@ -50,17 +50,17 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
    基於安全性原因，Adobe Campaign平台不再預設為可存取：您必須配置安全區，這要求在遷移前收集用戶IP地址。
 
-   如需詳細資訊，請參閱「安 [全性](../../migration/using/general-configurations.md#security) 」一節。
+   For more information, refer to the [Security](../../migration/using/general-configurations.md#security) section.
 
 * 語法
 
-   JavaScript中的某些語法可能在5.11和6.02版中接受，而v7版中則不再接受，因為使用了新的解釋器。 如需詳細資訊，請參閱 [JavaScript](../../migration/using/general-configurations.md#javascript) 區段。
+   JavaScript中的某些語法可能在5.11和6.02版中接受，而v7版中則不再接受，因為使用了新的解釋器。 For more information, refer to the [JavaScript](../../migration/using/general-configurations.md#javascript) section.
 
-   同樣地，Adobe Campaign v7中也引入了新語法，以取代以SQLData為基礎的語法。 如果您使用此語法的程式碼元素，則必須加以調整。 有關詳細資訊，請參閱 [SQLData部分](../../migration/using/general-configurations.md#sqldata) 。
+   同樣地，Adobe Campaign v7中也引入了新語法，以取代以SQLData為基礎的語法。 如果您使用此語法的程式碼元素，則必須加以調整。 For more information, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * 密碼
 
-   您必須設定「管 **理** 」和「 **內部** 」密碼。 如需詳細資訊，請參閱「使用 [者密碼](../../migration/using/before-starting-migration.md#user-passwords) 」一節。
+   您必須設定「管 **理** 」和「 **內部** 」密碼。 For more information, refer to the [User passwords](../../migration/using/before-starting-migration.md#user-passwords) section.
 
 * 樹狀結構
 
@@ -68,7 +68,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
 * 互動
 
-   如果您使 **用Interaction**，則必須刪除v7中不再存在的所有6.02架構參考。 如需詳細資訊，請參閱「互動 [」一節](../../migration/using/general-configurations.md#interaction) 。
+   如果您使 **用Interaction**，則必須刪除v7中不再存在的所有6.02架構參考。 For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
 ## 移轉後 {#after-the-migration}
 
@@ -104,7 +104,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
 * Web應用程式
 
-   在配置升級後，如果您在連接到已識別的Web應用程式時有任何問題，則必須在serverConf.xml **檔案中啟用** allowUserPassword **** 和sessionTokenOnly **** 選項。 請記得先停用這兩個選項。 如需詳細資訊，請參閱「已識 [別的Web應用程式](../../migration/using/general-configurations.md#identified-web-applications) 」一節。
+   在配置升級後，如果您在連接到已識別的Web應用程式時有任何問題，則必須在serverConf.xml **檔案中啟用allowUser** Password **和sessionTokenOnly****** 選項。 請記得先停用這兩個選項。 如需詳細資訊，請參閱「已識 [別的Web應用程式](../../migration/using/general-configurations.md#identified-web-applications) 」一節。
 
    視Web應用程式類型及其組態而定，您必須執行其他操作，以確保它們正常運作。
 
@@ -118,7 +118,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
 * 結構描述
 
-   在Red hat中，編輯某些結構時可能會遇到錯誤。 For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
+   在Red Hat中，編輯某些結構時可能會遇到錯誤。 For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
 
 * 工作流程
 
