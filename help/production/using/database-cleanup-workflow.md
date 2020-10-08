@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2908'
 ht-degree: 0%
@@ -31,9 +28,9 @@ ht-degree: 0%
 
 ![](assets/ncs_cleanup_workflow.png)
 
-## 配置 {#configuration}
+## 設定 {#configuration}
 
-資料庫清理配置在兩個級別上： 在工作流調度程式和部署嚮導中。
+資料庫清理配置在兩個級別上：在工作流調度程式和部署嚮導中。
 
 ### 排程器 {#the-scheduler}
 
@@ -56,7 +53,7 @@ ht-degree: 0%
 
 ### 部署精靈 {#deployment-wizard}
 
-透過 **[!UICONTROL Deployment wizard]** 功能表存取的 **[!UICONTROL Tools > Advanced]** 資料，可讓您設定資料的儲存時間。 值以天數表示。 如果這些值未變更，工作流程會使用預設值。
+透過 **[!UICONTROL Deployment wizard]** 功能表存取的 **[!UICONTROL Tools > Advanced]** 資料，可讓您設定資料儲存的時間長度。 值以天數表示。 如果這些值未變更，工作流程會使用預設值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -134,10 +131,10 @@ ht-degree: 0%
 
 此任務將清除要刪除或回收的所有交貨。
 
-1. 工作 **[!UICONTROL Database cleanup]** 流選擇所有 **deleteStatus欄位具有值或刪除日期早於部署嚮導(****[!UICONTROL Yes]****[!UICONTROL Recycled]****[!UICONTROL Deleted deliveries]****** NmsCleanup_RecycleandDeliveryPurgeDelayDelayDelayDelayDelayCleanup)欄位中定義的期間的交貨。 For more on this, refer to [Deployment wizard](#deployment-wizard). 此期間會與目前伺服器日期相關計算。
+1. 工作 **[!UICONTROL Database cleanup]** 流選擇所有 **deleteStatus欄位具有值或刪除日期早於部署嚮導(****[!UICONTROL Yes]****[!UICONTROL Recycled]****[!UICONTROL Deleted deliveries]****** NmsCleanup_RecycleandDeliveryPurgeDelayDelayDelayDelayDelay)欄位中定義的期間的交貨。 For more on this, refer to [Deployment wizard](#deployment-wizard). 此期間會與目前伺服器日期相關計算。
 1. 對於每個中間採購伺服器，任務將選擇要刪除的交貨清單。
 1. 工作流 **[!UICONTROL Database cleanup]** 程會刪除傳送記錄檔、附件、鏡像頁面資訊和所有其他相關資料。
-1. 在為了永久而刪除傳送之前，工作流會清除下表中的連結資訊：
+1. 在為了永久而刪除傳送之前，工作流會清除下清單格中的連結資訊：
 
    * 在傳送排除表(**NmsDlvExclusion**)中，使用下列查詢：
 
@@ -254,7 +251,7 @@ ht-degree: 0%
 
 此工作會刪除傳送所使用的網頁資源（鏡像頁面）。
 
-1. 首先，系統會使用以下查詢恢復要清除的交貨清單：
+1. 首先，系統將使用以下查詢恢復要清除的交貨清單：
 
    ```
    SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
@@ -487,8 +484,8 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 此任務會清除 **NmsEmailErrorStat** 表。 主程式(coalesceErrors ****)定義兩個日期：
 
-* **開始日期**: 與 **NmsLastErrorStatCoalesce選項匹配的下一個進程的日期** ，或表中的最新日期。
-* **結束日期**: 目前伺服器日期。
+* **開始日期**:與 **NmsLastErrorStatCoalesce選項匹配的下一個進程的日期** ，或表中的最新日期。
+* **結束日期**:目前伺服器日期。
 
 如果開始日期大於或等於結束日期，則不會進行任何程式。 在這種情況下，會出 **現coalesceUpToDate** 消息。
 
