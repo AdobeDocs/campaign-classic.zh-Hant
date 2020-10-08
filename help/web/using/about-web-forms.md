@@ -1,7 +1,7 @@
 ---
-title: 關於Web表單
-seo-title: 關於Web表單
-description: 關於Web表單
+title: 關於網路表單
+seo-title: 關於網路表單
+description: 關於網路表單
 seo-description: null
 page-status-flag: never-activated
 uuid: 1d129af4-008b-4f6a-9094-b2edd6c1eee1
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 3b8e4691-fcbc-48ef-b529-11c9a9a9d788
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 5%
 
 ---
 
 
-# 關於Web表單{#about-web-forms}
+# 關於網路表單{#about-web-forms}
 
 Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立包含輸入和選擇欄位的頁面，並可能包含資料在資料庫中。 這可讓您設計並張貼網頁，讓使用者可存取這些網頁以檢視或輸入資訊。
 
@@ -58,7 +58,7 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 
 要定義Web表單的配置和內容，請應用以下步驟：
 
-* 首先，請建立必要的頁面並進行檢查：輸入欄位、下拉式清單、HTML內容等。
+* 開始時，請建立必要的頁面並檢查：輸入欄位、下拉式清單、HTML內容等。
 
    此步驟在下面詳述。
 
@@ -72,19 +72,20 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 
 ## 關於網頁表單設計 {#about-web-forms-designing}
 
-表單的頁面是透過特定編輯器建立的，可讓您定義和設定輸入區域（文字）、選擇欄位（清單、核取方塊等）和靜態元素（影像、HTLM內容等）。 您可將它們分組至容器，並依您的需求變更其版面配置(如需詳細資訊，請參閱「建 [立容器](../../web/using/defining-web-forms-layout.md#creating-containers)」)。
+表單的頁面是透過特定編輯器建立的，可讓您定義和設定輸入區域（文字）、選擇欄位（清單、核取方塊等） 和靜態元素（影像、HTLM內容等）。 您可將它們分組至容器，並依您的需求變更其版面配置(如需詳細資訊，請參閱「建 [立容器](../../web/using/defining-web-forms-layout.md#creating-containers)」)。
 
 以下章節詳細說明如何定義表單畫面的內容和版面：
 
-* [新增欄位至Web表格](../../web/using/adding-fields-to-a-web-form.md),
+* [新增欄位至網路表單](../../web/using/adding-fields-to-a-web-form.md),
 * [插入HTML內容](../../web/using/static-elements-in-a-web-form.md#inserting-html-content),
-* [Web表單中的靜態元素](../../web/using/static-elements-in-a-web-form.md),
-* [定義Web表單版面](../../web/using/defining-web-forms-layout.md)。
+* [網路表單中的靜態元素](../../web/using/static-elements-in-a-web-form.md),
+* [定義網路表單版面](../../web/using/defining-web-forms-layout.md).
 
 >[!NOTE]
 >
 >* 在頁面設計期間，您可以在標籤中檢視最終演 **[!UICONTROL Preview]** 算。 若要檢視變更，請先儲存表單。 任何錯誤都會顯示在標 **[!UICONTROL Log]** 簽中。
 >* 若要確保頁面顯示和資訊儲存以適當順序進行，請在Web表單中啟用除錯模式。 若要這麼做，請前往子標 **[!UICONTROL Preview]** 簽並核取方 **[!UICONTROL Enable debug mode]** 塊：所有收集的資訊和可能的執行錯誤都會顯示在每個頁面的底部。
+
 >
 
 
@@ -99,7 +100,7 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-按一 **[!UICONTROL Ok]** 下以核准選擇。
+Click **[!UICONTROL Ok]** to approve the selection.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)
 
