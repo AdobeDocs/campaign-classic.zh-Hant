@@ -1,7 +1,7 @@
 ---
-title: 載入(SOAP)
-seo-title: 載入(SOAP)
-description: 載入(SOAP)
+title: 載入 (SOAP)
+seo-title: 載入 (SOAP)
+description: 載入 (SOAP)
 seo-description: null
 page-status-flag: never-activated
 uuid: 80597892-e363-48f6-8633-faad161064a4
@@ -11,20 +11,20 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 94178104-f8ba-4c17-8ff9-928c5d2df1b7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
 
-# 載入(SOAP){#loading-soap}
+# 載入 (SOAP){#loading-soap}
 
 >[!CAUTION]
 >
->只有在 **安裝了** FDA(Federated Data Access)模組時，才可使用Loading(SOAP)活動 **** 。 請檢查您的授權合約。
+>只有在 **安裝了** FDA(Federated Data Access)模組時，才可使用「載入(SOAP) **** 」活動。 請檢查您的授權合約。
 
 當無 **法在外部資料庫中透過FDA直接收集資料時，除了資料載入(****** RDBMS)活動外，還會使用「載入(SOAP)」活動。
 
