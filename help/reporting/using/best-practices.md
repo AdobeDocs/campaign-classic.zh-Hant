@@ -1,7 +1,7 @@
 ---
-title: 報告的最佳實務
-seo-title: 報告的最佳實務
-description: 報告的最佳實務
+title: 報告最佳實務
+seo-title: 報告最佳實務
+description: 報告最佳實務
 seo-description: null
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 1%
 
 ---
 
 
-# 報告的最佳實務{#best-practices-reporting}
+# 報告最佳實務{#best-practices-reporting}
 
 ## 分析需求{#analyzing-needs}
 
@@ -56,6 +56,7 @@ source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
    * 擁有僅存取行銷促銷活動之權限的營運商，
    * 一個用於臨時使用的運算子，
    * Web存取中的所有運算子等。
+
    這些考量也需要考慮與存取權及安全性相關的問題。
 
 1. 定義內容
@@ -76,7 +77,7 @@ source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
 
 * 報表的計算時間不得超過5分鐘。
 
-   同樣地，在設計階段，若資料量較小，如果報表計算超過60秒，則需要變更計算方法。
+   同樣地，在設計階段，如果資料量較小，如果報表計算超過60秒，則需要變更計算方法。
 
 * 使用行銷分析時，操控的資料不得超過1000萬行。
 
