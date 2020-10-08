@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3602'
 ht-degree: 0%
@@ -205,7 +202,7 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** :當授權進程數達到90%閾值時，將顯示此指示器。
 
-* **[!UICONTROL Zombie Processes]** :已停止但仍具有進程標識符(PID)且在進程表中仍可見的進程的相關資訊。
+* **[!UICONTROL Zombie Processes]** :與已停止但仍具有進程標識符(PID)且在進程表中仍可見的進程相關的資訊。
 
    **[!UICONTROL Current value]** :當前活動的僵屍進程數。
 
@@ -549,7 +546,7 @@ XML配置檔案包含以下元素：
 
 >[!NOTE]
 >
->可以通過向 **netconf.xml檔案添加尾碼來指定各種配置，例如** netconf-dev.xml **、** netconf-prod.xml ****&#x200B;等。 然後，通過添加 **$JAVA_HOME/bin/java netreport dev** 或 **@%JAVA_HOME%bintreport prodFor示例，指定用於在** netreport.bat或 ******** netreport.sh檔案中執行netreport的配置。
+>可以通過向 **netconf.xml檔案添加尾碼來指定各種配置，例如** netconf-dev.xml **、** netconf-prod.xml ****&#x200B;等。 然後，通過添加 **$JAVA_HOME/bin/java netreport dev** 或 **@%JAVA_HOME%bintreport prodFor example，指定用於在** netreport.bat或 ******** netreport.sh檔案中執行netreport的配置。
 
 >[!CAUTION]
 >
@@ -563,7 +560,7 @@ XML配置檔案包含以下元素：
 * **mailFrom**:報表傳送者的電子郵件地址(例如：monitoring@domain.net)。
 * **recipientList**:監視收件者的電子郵件地址清單。 地址必須以逗號分隔（無空格）。
 * 「**夜**」模式（可選）可避免在指定時段間傳送電子郵件。 相反，會整合資料，並在結束時間（預設為7:00）後傳送有關夜間活動的電子郵件。
-* buildRange **** sub-element(optional)可讓您指定最小和最大建置編號。 對於內部版本號不在此範圍內的所有電腦，都將生成錯誤
+* buildRange **** sub-element(optional)可讓您指定最小和最大建置編號。 對於未達到此範圍的所有電腦，都將生成錯誤
 
    ```
    <buildRange minimum="0000" maximum="9999"/>
