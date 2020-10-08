@@ -1,5 +1,5 @@
 ---
-title: 建築
+title: 架構
 description: 工作流程由特定模組處理，可在多部伺服器上啟動，以共用處理負載。
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3a932bc440853151704f1ba1e188fa0af9d4c5cb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 建築 {#architecture}
+# 架構 {#architecture}
 
 工作流由特定模組處理。 此模組可在多台伺服器上啟動，以共用處理負載。
 
