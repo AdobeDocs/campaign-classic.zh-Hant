@@ -1,7 +1,7 @@
 ---
-title: 使用Linux安裝軟體包
-seo-title: 使用Linux安裝軟體包
-description: 使用Linux安裝軟體包
+title: 使用 Linux 安裝軟體套件
+seo-title: 使用 Linux 安裝軟體套件
+description: 使用 Linux 安裝軟體套件
 seo-description: null
 page-status-flag: never-activated
 uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 1%
 
 ---
 
 
-# 使用Linux安裝軟體包{#installing-packages-with-linux}
+# 使用 Linux 安裝軟體套件{#installing-packages-with-linux}
 
 若是Linux 32位元平台，請安裝Adobe Campaign 32位元。 若是Linux 64位元平台，請安裝Adobe Campaign 64位元。
 
@@ -29,7 +29,7 @@ Adobe Campaign針對上述各個版本都提供一個套件： **nlserver**。 �
 使用安裝命令，您可以：
 
 * 將檔案複製到 **/usr/local/neolane**
-* 建立Adobe Campaign linux帳戶（及相關群組），以 **/usr/local/neolane** 為首頁目錄建立
+* 建立Adobe Campaign Linux帳戶（及相關群組），以 **/usr/local/neolane** 為首頁目錄建立
 * 建立自動指令 **碼/etc/init.d/nlserver6** ，以便在啟動時使用，或建立系統單元（從20.1開始）。
 
 >[!NOTE]
@@ -38,7 +38,7 @@ Adobe Campaign針對上述各個版本都提供一個套件： **nlserver**。 �
 >
 >連結 **到Neolane用戶** 的Home目錄 **，也會在中自動建立****[!UICONTROL /usr/local/neolane]**。 請確定磁碟上有足夠的空 **[!UICONTROL /usr/local]** 間（數GB）。
 
-您可以運行 **ping`hostname`**命令，確保伺服器可以自行訪問。
+您可以運行 **ping`hostname`** 命令，確保伺服器可以自行訪問。
 
 ## 基於RPM包的分發 {#distribution-based-on-rpm--packages}
 
@@ -50,6 +50,7 @@ Adobe Campaign針對上述各個版本都提供一個套件： **nlserver**。 �
 
    * **v7的nlserver6-v7-XXXX-0.x86_64.rpm** 。
    * **v6.1的nlserver6-XXXX-0.x86_64.rpm** 。
+
    >[!CAUTION]
    >
    >請務必在本節的命令範例中，針對您的Adobe Campaign版本使用正確的檔案名稱。
@@ -60,7 +61,7 @@ Adobe Campaign針對上述各個版本都提供一個套件： **nlserver**。 �
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   rpm檔案對包具有依賴性，您可以在CentOS/Red hat分發上找到這些包。 如果您不想使用其中某些相關性（例如，如果想使用Oracle JDK而不是OpenJDK），則可能必須使用rpm的「nodeps」選項：
+   rpm檔案對包具有依賴性，您可以在CentOS/Red Hat分發上找到這些包。 如果您不想使用其中某些相關性（例如，如果想使用Oracle JDK而不是OpenJDK），則可能必須使用rpm的「nodeps」選項：
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -84,6 +85,7 @@ yum install bc.x86_64
 
    * **v7適用的nlserver6-v7-XXXX-linux-2.6-amd64.deb** 。
    * **v6.1適用的nlserver6-XXXX-linux-2.6-amd64.deb** 。
+
    **XXXX** 是Adobe Campaign組建編號。
 
    >[!CAUTION]
@@ -135,7 +137,7 @@ yum install bc.x86_64
 
 部分參數可透過 **customer.sh檔案個人化** 。
 
-如果您是第一次執行安裝， **customer.sh** 檔案可能尚未在伺服器上存在。 建立它並確定它具有執行權限。 如果不是這樣，請輸入以下命令：
+如果您是第一次執行安裝， **customer.sh** 檔案可能尚未在伺服器上存在。 建立它，並確定它具有執行權限。 如果不是這樣，請輸入以下命令：
 
 ```
 chmod +x /usr/local/neolane/nl6/customer.sh
@@ -201,7 +203,7 @@ export neolane_LANG=fra
 
    若要在現有版本的LibreOffice上執行Adobe Campaign，需要其他設定：您需要指定到安裝目錄的訪問路徑。 例如：
 
-   * 德比安
+   * Debian
 
       提供了OOO_INSTALL_DIR、OOO_BASIS_INSTALL_DIR、OOO_URE_INSTALL_DIR的預設值。 如果您的LibreOffice安裝 **版面不同** ，您可以在customer.sh中覆寫它們：
 
