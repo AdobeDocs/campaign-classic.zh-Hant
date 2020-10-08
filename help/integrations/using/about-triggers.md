@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -40,7 +37,7 @@ ht-degree: 1%
 >
 >只有Adobe Cloud解決方案才能從Adobe的Pipeline服務產生和使用事件。 Adobe外部系統則無法。
 
-Pipeline是Experience Cloud中代管的訊息系統，使用 [Apache Kafka](http://kafka.apache.org/)。 這是在解決方案之間輕鬆傳遞資料的方式。 此外，管線是消息隊列，而不是資料庫。 製片商推播正在籌備中的活動，消費者會傾聽活動的流程，並對活動做他們想做的事。 事件會持續幾天，但不會再發生。 其目的是全天候接聽並立即處理事件。
+Pipeline是Experience Cloud中代管的訊息系統，使用 [Apache Kafka](http://kafka.apache.org/)。 這是在解決方案之間輕鬆傳遞資料的方式。 此外，管線是消息隊列，而不是資料庫。 製片商推播正在醖釀中的活動，消費者會傾聽活動的流程，並對活動做他們想做的事。 事件會持續幾天，但不會再發生。 其目的是全天候接聽並立即處理事件。
 
 ![](assets/triggers_1.png)
 
