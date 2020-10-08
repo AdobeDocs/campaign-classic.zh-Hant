@@ -1,7 +1,7 @@
 ---
-title: 適用於Windows的客戶端控制台可用性
-seo-title: 適用於Windows的客戶端控制台可用性
-description: 適用於Windows的客戶端控制台可用性
+title: 適用於 Windows 的用戶端主控台可用性
+seo-title: 適用於 Windows 的用戶端主控台可用性
+description: 適用於 Windows 的用戶端主控台可用性
 seo-description: null
 page-status-flag: never-activated
 uuid: d1cbb34e-87e0-481b-a78b-3616047eb5cb
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: 4fa2e8c1-33d1-4d14-941b-ca528b8ceabb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
 
-# 適用於Windows的客戶端控制台可用性{#client-console-availability-for-windows}
+# 適用於 Windows 的用戶端主控台可用性{#client-console-availability-for-windows}
 
 Adobe Campaign使用者若要能夠登入您所建立和設定的例項，就必須使用用戶端主控台。
 
