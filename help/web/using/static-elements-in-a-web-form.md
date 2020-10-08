@@ -1,7 +1,7 @@
 ---
-title: Web表單中的靜態元素
-seo-title: Web表單中的靜態元素
-description: Web表單中的靜態元素
+title: 網路表單中的靜態元素
+seo-title: 網路表單中的靜態元素
+description: 網路表單中的靜態元素
 seo-description: null
 page-status-flag: never-activated
 uuid: 628e2252-16a2-4c8a-a178-60a9441d3198
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: ca3377c6-a120-4cd0-aaf4-80248f4f5918
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 4%
 
 ---
 
 
-# Web表單中的靜態元素{#static-elements-in-a-web-form}
+# 網路表單中的靜態元素{#static-elements-in-a-web-form}
 
 在表單頁面中，您可以加入使用者沒有互動的元素；這些是靜態元素，例如影像、HTML內容、水準列或超文字連結。 這些元素是透過工具列的第一個按鈕，按一下功能表來建 **[!UICONTROL Add static element]** 立。
 
@@ -55,7 +55,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 >
 >在HTML編輯器中輸入的字串只有在子標籤中定義時才 **[!UICONTROL Texts]** 會轉換。 否則將不會收集這些資料。 如需詳細資訊，請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)。
 
-### 插入連結 {#inserting-a-link}
+### Inserting a link {#inserting-a-link}
 
 填寫編輯視窗中的欄位，如下列範例所示：
 
@@ -64,7 +64,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * 超 **[!UICONTROL Label]** 文本連結的內容將顯示在表單頁面上。
-* 該 **[!UICONTROL URL]** 地址是所需地址，例如：https://www.adobe.com [(](https://www.adobe.com) 網站)或info@adobe.com(網 [站](mailto:info@adobe.com) )傳送訊息。
+* 該 **[!UICONTROL URL]** 地址是所需地址，例如： [https://www.adobe.com](https://www.adobe.com) ，或info@adobe.com [](mailto:info@adobe.com) ，以傳送訊息。
 * 欄位 **[!UICONTROL Window]** 可讓您在網站的情況下，選取連結的顯示模式。 您可以決定在新視窗、目前視窗或其他視窗中開啟連結。
 * 您可以新增工具提示，如下所示：
 
@@ -100,7 +100,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 * 顯示另一頁
 
-   選 **[!UICONTROL Enable a transition]** 項可讓您顯示與欄位中選取之傳出轉場相關聯的特定 **[!UICONTROL Transition]** 頁面。
+   該選 **[!UICONTROL Enable a transition]** 項可讓您顯示與在欄位中選取的傳出轉場相關聯的特定 **[!UICONTROL Transition]** 頁面。
 
    ![](assets/s_ncs_admin_survey_link_viral.png)
 
@@ -142,8 +142,8 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 針對此使用案例，我們建立了由下列元素組成的Web應用程式：
 
 * 包含表單的頁面
-* 活 **[!UICONTROL Record]** 動
-* 活 **[!UICONTROL End]** 動
+* **[!UICONTROL Record]** 活動
+* an **[!UICONTROL End]** activity
 
 ![](assets/social_webapp_031.png)
 
@@ -179,7 +179,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 >[!NOTE]
 >
->出於安全原因，在公式中輸入的值 **`<%=`** 將替換為轉義字元。 若要避免此情況，而且只有在必要時，請使用下列語法： **`<%=`**。
+>出於安全原因，在公式中輸入的值 **`<%=`** 將替換為轉義字元。 若要避免此情況，而且只有在必要時，請使用下列語法： **`<%=`**.
 
 在我們的範例中，收件者的名字和姓氏會儲存在資料庫的欄位中，而其汽車品牌則會儲存在變數中。 第2頁個人化訊息的語法如下：
 
@@ -196,9 +196,9 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 ### 使用文字變數 {#using-text-variables}
 
-此標 **[!UICONTROL Text]** 簽可讓您建立變數欄位，這些欄位可在HTML中使用&lt;%=和%>字元，並使用以下語法： **$（識別碼）**。
+此標 **[!UICONTROL Text]** 簽可讓您建立變數欄位，這些欄位可用於HTML中&lt;%=和%>字元之間的變數欄位，其語法如下： **$(IDENTIFIER)**。
 
-使用此方法可輕鬆將字串本土化。 請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)
+使用此方法可輕鬆將字串本地化。 See [Translating a web form](../../web/using/translating-a-web-form.md)
 
 例如，您可以建立 **Contact** 欄位，讓您在HTML內容中顯示「上次連絡日期：」字串。 要執行此操作，請遵循下列步驟：
 
@@ -223,7 +223,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 此操作模式可讓您對Web表單的文本進行分解，並使用整合翻譯工具管理翻譯。 如需詳細資訊，請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)。
 
-## 插入影像 {#inserting-images}
+## Inserting images {#inserting-images}
 
 若要將影像包含在表單中，必須將其儲存在可從外部存取的伺服器上。
 
