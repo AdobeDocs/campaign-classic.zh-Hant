@@ -1,7 +1,7 @@
 ---
-title: 控製成本
-seo-title: 控製成本
-description: 控製成本
+title: 控制成本
+seo-title: 控制成本
+description: 控制成本
 seo-description: null
 page-status-flag: never-activated
 uuid: 4209ebad-966f-44a6-a33c-bbb398c6f5c2
@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 控製成本{#controlling-costs}
+# 控制成本{#controlling-costs}
 
 ## 關於成本控制 {#about-cost-control}
 
@@ -130,7 +127,7 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 ### 費用類別 {#expense-categories}
 
-這些金額可以分發到數種費用類別，以便更好地閱讀資料，並更詳細地報告行銷投資。 費用類別是在預算建立期間通過樹的 **[!UICONTROL Budgets]** 節點定義的。
+這些金額可以分發到數種費用類別，以便更容易辨識資料，並更詳細地報告行銷投資。 費用類別是在預算建立期間通過樹的 **[!UICONTROL Budgets]** 節點定義的。
 
 若要新增類別，請按一 **[!UICONTROL Add]** 下視窗下方區段中的按鈕。
 
@@ -192,7 +189,7 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
    估計臨時費用是宣傳活動過程費用的估計。 只要正在編輯，輸入的金額就不會合併。 它必須具 **[!UICONTROL Specified]** 有狀態，才能在計算中考慮輸入的金額。
 
-   此金額是人工輸入的，可以細分為幾個費用類別。 若要降低成本，請按一下連 **[!UICONTROL Breakdown...]** 結，然後按 **[!UICONTROL Add]** 一下按鈕以定義新金額。
+   此金額是人工輸入的，可以細分為幾個費用類別。 若要降低成本，請按一下連 **[!UICONTROL Breakdown...]** 結，然後按一 **[!UICONTROL Add]** 下按鈕以定義新金額。
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -206,8 +203,9 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
    * 對於正在編輯的促銷活動，計算成本是促銷活動的估計臨時成本，如果未定義此成本，則計算成本將是促銷活動傳送和任務的所有臨時成本的總和。 如果促銷活動完成，促銷活動的計算成本將是所有計算成本的總和。
    * 對於尚未分析的交付，計算成本為估計臨時成本。 如果已執行分析，則計算的成本將是從服務中計算的所有成本的總和，這些成本將提供成本結構和目標接收者的數量。
-   * 對於進行中的任務，計算成本使用估計臨時成本。 如果任務完成，計算的成本將是從服務提供商成本結構計算的所有成本的總和以及完成的天數。
+   * 對於進行中的任務，計算成本使用估計臨時成本。 如果任務完成，計算的成本將是從服務提供商成本結構計算的所有成本和完成天數的總和。
    * 對於行銷計畫，對於方案，計算的成本是為促銷活動計算的成本總和。 若未指定該等成本，則計算成本將使用估計臨時成本。
+
    >[!NOTE]
    >
    >該 **[!UICONTROL Breakdown]** 連結可讓您查看計算的詳細資訊和最後一個成本計算日期。
@@ -222,7 +220,7 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 您可以透過預算核准，對提交至促銷活動的金額執行檢查。 您可以在促銷活動中建立其他查核點樣式的工作，以設定其他核准。 請參 [閱任務類型](../../campaign/using/creating-and-managing-tasks.md#types-of-task)。
 
-### Example {#example}
+### 範例 {#example}
 
 我們將建立促銷活動，其中包含：
 
@@ -253,9 +251,11 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
    對於任務，請建立以下兩個成本類別：
 
    * **[!UICONTROL Room reservation]** （小房間和大房間）, **固定** ，費用結構為300和500歐元：
+
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Creation]** (**內容範本** )，每日 **成本結** 構為300歐元：
+
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### 步驟3 —— 在促銷活動中計算預算費用 {#step-3---charging-the-budget-in-the-campaign}
@@ -278,7 +278,7 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
 1. 為促銷活動建立工作流程，並定位查詢活動以選取目標（警告，必須指定收件者的郵遞區號）。
 
-1. 建立直接郵件發送，並選擇在步驟2中建立的服務提供商： 成本類別會自動顯示。
+1. 建立直接郵件發送，並選擇在步驟2中建立的服務提供商：成本類別會自動顯示。
 
 1. 改寫封套的成本並添加固定成本。 另外，還要選擇與這些成本有關的類別。
 
@@ -324,7 +324,7 @@ Adobe Campaign可讓您控制已排程、已承諾和已開票的行銷成本，
 
    當任務完成(狀態 **[!UICONTROL Finished]** )時，計算的成本將自動更新為在其成本結構中輸入的大房間成本。 此成本也會出現在劃分的此類別中。
 
-1. 其次，按照相同的程式建立第二個任務； 排程超過5天，且與先前建立的成本結構有關。
+1. 其次，按照相同的程式建立第二個任務；排程超過5天，且與先前建立的成本結構有關。
 
    ![](assets/s_user_cost_mgmt_sample_16.png)
 
