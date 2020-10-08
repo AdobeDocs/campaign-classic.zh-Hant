@@ -1,7 +1,7 @@
 ---
-title: 促銷活動網路端點
-seo-title: 促銷活動網路端點
-description: 促銷活動網路端點
+title: Campaign 網路端點
+seo-title: Campaign 網路端點
+description: Campaign 網路端點
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ce45473d27a3ed42ef91d4f2d8698f9e2b9cbb2e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 
 
-# Campaign network endpoints {#campaign-standard-network-endpoints}
+# Campaign 網路端點 {#campaign-standard-network-endpoints}
 
 以下是Campaign Classic中使用的不同端點。
 
