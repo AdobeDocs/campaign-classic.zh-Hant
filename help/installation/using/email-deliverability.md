@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -31,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有些組態只能由Adobe針對Adobe代管的部署執行，例如存取伺服器和執行個體組態檔。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+>有些組態只能由Adobe針對Adobe代管的部署執行，例如存取伺服器和執行個體組態檔。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 有關交付能力相關概念和最佳做法的詳細資訊，請參閱本 [節](../../delivery/using/about-deliverability.md)。
 
@@ -41,9 +38,9 @@ ht-degree: 0%
 
 您可以控制一或多個Adobe Campaign例項的輸出，以限制依網域而傳送的電子郵件數。 例如，您可將 **** yahoo.com位址的輸出限制為每小時20,000條，同時為所有其他網域設定每小時100,000條訊息。
 
-必須針對傳送伺服器(**mta**)使用的每個IP位址控制訊息輸出。 若 **數部** mta（依數部電腦劃分）屬於不同的Adobe Campaign例項，則可共用相同的IP位址以傳送電子郵件： 需要設定一個進程來協調這些IP地址的使用。
+必須針對傳送伺服器(**mta**)使用的每個IP位址控制訊息輸出。 數 **部分** （依數部電腦劃分，屬於各種Adobe Campaign例項）可共用相同的IP位址以傳送電子郵件：需要設定一個進程來協調這些IP地址的使用。
 
-這是stat模 **塊的功** 能： 它將所有要發送到郵件伺服器的連接請求和消息轉發到一組IP地址。 統計伺服器會追蹤傳送，並可根據設定的配額啟用或停用傳送。
+這是stat模 **塊的功** 能：它將所有要發送到郵件伺服器的連接請求和消息轉發到一組IP地址。 統計伺服器會追蹤傳送，並可根據設定的配額啟用或停用傳送。
 
 ![](assets/s_ncs_install_mta.png)
 
@@ -91,7 +88,7 @@ mta **模組** 將消息分發到其 **匹配子模** 塊。 每個 **模板** �
 
 在傳送訊息之前，模組會從伺服器要求「Token」。 這些代號通常至少是10個代號集，可減少伺服器的查詢數。
 
-伺服器會儲存與連線和傳送相關的所有統計資料。 如果重新啟動，資訊會暫時丟失： 每個客戶端保存其發送統計資訊的本地副本，並定期（每2分鐘）將其返回到伺服器。 然後，伺服器可以重新聚合資料。
+伺服器會儲存與連線和傳送相關的所有統計資料。 如果重新啟動，資訊會暫時丟失：每個客戶端保存其發送統計資訊的本地副本，並定期（每2分鐘）將其返回到伺服器。 然後，伺服器可以重新聚合資料。
 
 以下各節將說明「電子郵件流量Shaper」元件 **對訊息的處理** 。
 
@@ -99,9 +96,9 @@ mta **模組** 將消息分發到其 **匹配子模** 塊。 每個 **模板** �
 
 傳送訊息時，可能會有3個結果：
 
-1. **成功**: 訊息已成功傳送。 訊息會更新。
-1. **消息失敗**: 已聯繫的伺服器拒絕所選收件人的消息。 此結果與返回代碼550到599匹配，但可以定義例外。
-1. **會話失敗** （向上5.11）: 如果 **mta** 收到此訊息的回覆，訊息會被放棄(請參閱 [訊息放棄](#message-abandonment))。 訊息會傳送至其他路徑，或設為待定（如果沒有其他路徑可用）(請參 [閱「待定訊息](#message-pending)」)。
+1. **成功**:訊息已成功傳送。 訊息會更新。
+1. **消息失敗**:已聯繫的伺服器拒絕所選收件人的消息。 此結果與返回代碼550到599匹配，但可以定義例外。
+1. **會話失敗** （向上5.11）:如果 **mta** 收到此訊息的回覆，訊息會被放棄(請參閱 [訊息放棄](#message-abandonment))。 訊息會傳送至其他路徑，或設為待定（如果沒有其他路徑可用）(請參 [閱「待定訊息](#message-pending)」)。
 
    >[!NOTE]
    >
@@ -121,13 +118,13 @@ mta **決定** 此訊息的程式（復原、放棄、隔離等） 視回應程�
 
 ## 統計伺服器配置 {#statistics-server-configuration}
 
-統計伺服器可由多個實例使用： 它必須獨立於使用它的實例進行配置。
+統計伺服器可由多個實例使用：它必須獨立於使用它的實例進行配置。
 
 首先，定義將代管設定的Adobe Campaign資料庫。
 
 ### 啟動配置 {#start-configuration}
 
-預設情況下， **每個實例** 都會啟動stat模組。 當實例在同一台電腦上共用時，或當實例共用相同的IP地址時，將使用單個統計伺服器： 其他人必須被禁用。
+預設情況下， **每個實例** 都會啟動stat模組。 當實例在同一台電腦上共用時，或當實例共用相同的IP地址時，將使用單個統計伺服器：其他人必須被禁用。
 
 ### 伺服器埠的定義 {#definition-of-the-server-port}
 
@@ -147,7 +144,7 @@ MX規則(Mail eXchanger)是管理傳送伺服器與接收伺服器間通訊的�
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則不 **[!UICONTROL MX management]** 再使用傳送總處理能力規則。 增強型MTA使用其專屬的MX規則，可讓您根據您過去的電子郵件信譽，以及您傳送電子郵件的網域所提供的即時回應，依網域自訂您的吞吐量。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 這些規則會在每天早上6點（伺服器時間）自動重新載入，以定期提供用戶端例項。
 
@@ -155,7 +152,7 @@ ISP將接受每小時預先定義的連接和消息數，具體取決於物料�
 
 連接的最大數量不完全取決於MTA使用的公有IP地址數。
 
-例如，如果您在MX規則中允許5個連線，而您已設定2個公用IP，您可能認為您無法同時開啟超過10個連線至此網域。 這不是事實，事實上，最大連線數指的是路徑和路徑，其中一個是我們的MTA公用IP，另一個是客戶MTA的公用IP。
+例如，如果您在MX規則中允許5個連線，而您已設定2個公用IP，則您可能認為無法同時開啟超過10個連線至此網域。 這不是事實，事實上，最大連線數指的是路徑和路徑，其中一個是我們的MTA公用IP，另一個是客戶MTA的公用IP。
 
 在下列範例中，使用者已設定兩個公用IP位址，網域為yahoo.com。
 
@@ -223,7 +220,7 @@ MX要遵循的規則在樹節點的 **[!UICONTROL MX management]** 文檔中 **[
 如果 **[!UICONTROL MX management]** 文檔中節點中不存在，則可以手動建立文檔。 操作步驟：
 
 1. 建立新的郵件規則集。
-1. 選擇模 **[!UICONTROL MX management]** 式。
+1. Choose the **[!UICONTROL MX management]** mode.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
@@ -241,21 +238,23 @@ MX要遵循的規則在樹節點的 **[!UICONTROL MX management]** 文檔中 **[
 
 文 **[!UICONTROL MX management]** 件會列出連結至MX規則的所有網域。
 
-這些規則依序套用： 套用其MX遮色片與目標MX相容的第一個規則。
+這些規則依序套用：套用其MX遮色片與目標MX相容的第一個規則。
 
 每個規則可用的參數如下：
 
-* **[!UICONTROL MX mask]**: 套用規則的網域。 每個規則都會定義MX的位址遮色片。 因此，任何名稱符合此遮色片名稱的MX都符合資格。 遮色片可包含&quot;*&quot;和&quot;?&quot; 一般字元。
+* **[!UICONTROL MX mask]**:套用規則的網域。 每個規則都會定義MX的位址遮色片。 因此，任何名稱符合此遮色片名稱的MX都符合資格。 遮色片可包含&quot;*&quot;和&quot;?&quot; 一般字元。
 
    例如，以下地址：
 
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
+
    與下列遮色片相容：
 
    * *.yahoo.com
    * ?.mx.yahoo.com
+
    例如，若是電子郵件位址foobar@gmail.com，網域為gmail.com,MX記錄為：
 
    ```
@@ -268,10 +267,11 @@ MX要遵循的規則在樹節點的 **[!UICONTROL MX management]** 文檔中 **[
 
    在這種情況下，將 `*.google.com` 使用MX規則。 如您所見，MX規則遮色片不一定符合郵件中的網域。 適用於gmail.com電子郵件位址的MX規則將是具有遮色片的規則 `*.google.com`。
 
-* **[!UICONTROL Range of identifiers]**: 此選項可讓您指出套用規則的識別碼範圍(publicID)。 您可以指定：
+* **[!UICONTROL Range of identifiers]**:此選項可讓您指出套用規則的識別碼範圍(publicID)。 您可以指定：
 
-   * 數字： 該規則只適用於此publicId,
-   * 數字範圍(**number1-number2**): 該規則將適用於這兩個數字之間的所有publicId。
+   * 數字：該規則只適用於此publicId,
+   * 數字範圍(**number1-number2**):該規則將適用於這兩個數字之間的所有publicId。
+
    >[!NOTE]
    >
    >如果欄位為空白，規則會套用至所有識別碼。
@@ -280,28 +280,28 @@ MX要遵循的規則在樹節點的 **[!UICONTROL MX management]** 文檔中 **[
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-* **[!UICONTROL Shared]**: 定義此MX規則的屬性範圍。 勾選後，所有參數都會共用至實例上所有可用的IP。 若未勾選，則會針對每個IP定義MX規則。 最大消息數乘以可用IP數。
-* **[!UICONTROL Maximum number of connections]**: 與發送者網域同時連線的最大數目。
-* **[!UICONTROL Maximum number of messages]**: 可在連接上發送的最大消息數。 當訊息超過此數目時，連線即關閉，並開啟新連線。
-* **[!UICONTROL Messages per hour]**: 在一小時內可以發送到發件人域的消息數上限。
-* **[!UICONTROL Connection time out]**: 連接到域的時間閾值。
+* **[!UICONTROL Shared]**:定義此MX規則的屬性範圍。 勾選後，所有參數都會共用至實例上所有可用的IP。 若未勾選，則會針對每個IP定義MX規則。 最大消息數乘以可用IP數。
+* **[!UICONTROL Maximum number of connections]**:與發送者網域同時連線的最大數目。
+* **[!UICONTROL Maximum number of messages]**:可在連接上發送的最大消息數。 當訊息超過此數目時，連線即關閉，並開啟新連線。
+* **[!UICONTROL Messages per hour]**:在一小時內可以發送到發件人域的消息數上限。
+* **[!UICONTROL Connection time out]**:連接到域的時間閾值。
 
    >[!NOTE]
    >
    >Windows可在此臨 **界值** （視您的Windows版本而定）之前發出逾時。
 
-* **[!UICONTROL Timeout Data]**: 發送消息內容（SMTP協定的DATA部分）後的最大等待時間。
-* **[!UICONTROL Timeout]**: 與SMTP伺服器進行其他交換的最長等待時間。
-* **[!UICONTROL TLS]**: TLS通訊協定可讓您加密電子郵件傳送，可選擇性啟用。 對於每個MX遮色片，都提供下列選項：
+* **[!UICONTROL Timeout Data]**:發送消息內容（SMTP協定的DATA部分）後的最大等待時間。
+* **[!UICONTROL Timeout]**:與SMTP伺服器進行其他交換的最長等待時間。
+* **[!UICONTROL TLS]**:TLS通訊協定可讓您加密電子郵件傳送，可選擇性啟用。 對於每個MX遮色片，都提供下列選項：
 
-   * **[!UICONTROL Default configuration]**: 這是在應用的serverConf.xml配置檔案中指定的常規配置。
+   * **[!UICONTROL Default configuration]**:這是在應用的serverConf.xml配置檔案中指定的常規配置。
 
       >[!IMPORTANT]
       >
       >不建議修改預設配置。
 
-   * **[!UICONTROL Disabled]** : 系統地發送這些消息而不加密。
-   * **[!UICONTROL Opportunistic]** : 如果接收伺服器(SMTP)可以生成TLS協定，則消息傳送將被加密。
+   * **[!UICONTROL Disabled]** :系統地發送這些消息而不加密。
+   * **[!UICONTROL Opportunistic]** :如果接收伺服器(SMTP)可以生成TLS協定，則消息傳送將被加密。
 
 配置示例：
 
@@ -319,12 +319,12 @@ MX要遵循的規則在樹節點的 **[!UICONTROL MX management]** 文檔中 **[
 
 MIME結 **構** （多用途Internet郵件擴展）參數允許您定義要發送到不同郵件客戶端的郵件結構。 有三種可用選項：
 
-* **多部分**: 訊息會以文字或HTML格式傳送。 如果不接受HTML格式，訊息仍可以以文字格式顯示。
+* **多部分**:訊息會以文字或HTML格式傳送。 如果不接受HTML格式，訊息仍可以以文字格式顯示。
 
    依預設，多部分結構是多 **部分／替代**，但當將影像新增至訊息時，它會自 **動變成多部分／相關** 。 某些提供者預 **期會採用多部分／相關** ，即使未附加影像， **[!UICONTROL Force multipart/related]** 選項也會採用此格式。
 
-* **HTML**: 僅傳送HTML訊息。 如果不接受HTML格式，則不會顯示訊息。
-* **文字**: 系統會傳送僅文字格式的訊息。 文本格式消息的優點是其大小非常小。
+* **HTML**:僅傳送HTML訊息。 如果不接受HTML格式，則不會顯示訊息。
+* **文字**:系統會傳送僅文字格式的訊息。 文本格式消息的優點是其大小非常小。
 
 如果啟 **[!UICONTROL Image inclusion]** 用此選項，這些選項會直接顯示在電子郵件的正文中。 然後，影像就會上傳，而URL連結會被其內容取代。
 
@@ -368,7 +368,7 @@ MIME結 **構** （多用途Internet郵件擴展）參數允許您定義要發�
 
 對於每 **個IPAffinity** 元素，您需要聲明可用於該電腦的IP地址。
 
-例如：
+範例:
 
 ```
 <IPAffinity localDomain="<domain>" name="default">
@@ -380,11 +380,11 @@ MIME結 **構** （多用途Internet郵件擴展）參數允許您定義要發�
 
 參數如下：
 
-* **地址**: 這是要使用的MTA主機的IP地址。
-* **helo主機**: 此標識符表示SMTP伺服器將看到的IP地址。
+* **地址**:這是要使用的MTA主機的IP地址。
+* **helo主機**:此標識符表示SMTP伺服器將看到的IP地址。
 
-* **publicId**: 當NAT路由器後的數個Adobe Campaign mtas共用IP位址時，這項資 **訊很有** 用。 統計伺服器使用此標識符來儲存此起始點和目標伺服器之間的連接和發送統計資訊。
-* **重量**: 可讓您定義地址的使用相對頻率。 預設情況下，所有地址的權重均為1。
+* **publicId**:當NAT路由器後的數個Adobe Campaign mtas共用IP位址時，這項資 **訊很有** 用。 統計伺服器使用此標識符來儲存此起始點和目標伺服器之間的連接和發送統計資訊。
+* **重量**:可讓您定義地址的使用相對頻率。 預設情況下，所有地址的權重均為1。
 
 >[!NOTE]
 >
@@ -401,11 +401,11 @@ MIME結 **構** （多用途Internet郵件擴展）參數允許您定義要發�
     * &quot;2&quot;: 5 / (5+1) = 83%
     * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: 可讓您為屬於特定網域的電子郵件保留此IP位址。 這是遮色片的清單，可包含一或多個萬用字元(&#39;*&#39;)。 如果未指定屬性，所有網域都可以使用此IP位址。
+* **includeDomains**:可讓您為屬於特定網域的電子郵件保留此IP位址。 這是遮色片的清單，可包含一或多個萬用字元(&#39;*&#39;)。 如果未指定屬性，所有網域都可以使用此IP位址。
 
    範例： **includeDomains=&quot;wanadoo.com,orange.com,yahoo.*&quot;**
 
-* **excludeDomains**: 排除此IP位址的網域清單。 此篩選會套用在includeDomains篩 **選器之後** 。
+* **excludeDomains**:排除此IP位址的網域清單。 此篩選會套用在includeDomains篩 **選器之後** 。
 
    ![](assets/s_ncs_install_mta_ips.png)
 
@@ -421,7 +421,7 @@ maxWaitingMessages **參數** ，表示matchild預先準備的最大 **訊息數
 
 達到 **maxWorkingSetMb** (256)臨界值後，傳送伺服器就會停止傳送訊息。 效能會大幅降低，直到 **再次啟動** 匹配欄位。 要避免此問題，您可以增加 **maxWorkingSetMb** 參數的臨界值，或降低 **maxWaitingMessages參數的臨界值** 。
 
-maxWorkingSetMb **** 參數是以經驗方式計算的，方法是將最大消息數乘以平均消息大小，再乘以2.5。 例如，如果訊息的平均大小為50 kB，而 **maxWaitingMessages** 參數等於1,000，則使用的記憶體平均大小為125 MB。
+maxWorkingSetMb **** 參數是以經驗方式計算的，方法是將最大消息數乘以平均消息大小，再乘以2.5。例如，如果訊息的平均大小為50 kB，而 **maxWaitingMessages** 參數等於1,000，則使用的記憶體平均大小為125 MB。
 
 ### 調整像片數 {#adjust-the-number-of-mtachild}
 
