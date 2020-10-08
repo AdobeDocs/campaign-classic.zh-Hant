@@ -1,5 +1,5 @@
 ---
-title: 啟動工作流
+title: 啟動工作流程
 description: 瞭解如何開始工作流程並探索工作流程動作工具列和按一下滑鼠右鍵的功能表。
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
@@ -9,23 +9,20 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 啟動工作流 {#starting-a-workflow}
+# 啟動工作流程 {#starting-a-workflow}
 
 工作流程一律以手動方式啟動。 但是，啟動時，它可以根據通過調度程式指定的資訊(請參見 [Scheduler](../../workflow/using/scheduler.md))或活動調度來保持非活動狀態。
 
-與定位工作流程執行（啟動、停止、暫停等）相關的動作 是非 **同步進程** : 訂單會記錄下來，當伺服器可供套用時，訂單就會生效。
+與定位工作流程執行（啟動、停止、暫停等）相關的動作 是非 **同步進程** :訂單會記錄下來，當伺服器可供套用時，訂單就會生效。
 
 工具列可讓您啟動並追蹤工作流程的執行。
 
@@ -43,13 +40,13 @@ ht-degree: 0%
 
 * **[!UICONTROL Start]**
 
-   此動作可讓您開始執行工作流程： 已完成、正在編 **輯**&#x200B;或暫 **停的工作流將狀** 態更改為 ********&#x200B;已啟動 然後，工作流引擎將處理此工作流的執行。 如果暫停了工作流，則會繼續，否則工作流會從頭開始，並激活初始活動。
+   此動作可讓您開始執行工作流程：已完成、正在編 **輯**&#x200B;或暫 **停的工作流將狀** 態更改為 ********&#x200B;已啟動 然後，工作流引擎將處理此工作流的執行。 如果暫停了工作流，則會繼續，否則工作流會從頭開始，並激活初始活動。
 
-   啟動是非同步程式： 請求會儲存，並由工作流程伺服器盡快處理。
+   啟動是非同步程式：請求會儲存，並由工作流程伺服器盡快處理。
 
 * **[!UICONTROL Pause]**
 
-   此動作會將工作流程的狀態設為「暫 **停」**。 在工作流恢復之前，不會激活任何活動； 但不會暫停進行中的操作。
+   此動作會將工作流程的狀態設為「暫 **停」**。 在工作流恢復之前，不會激活任何活動；但不會暫停進行中的操作。
 
 * **[!UICONTROL Stop]**
 
@@ -59,9 +56,9 @@ ht-degree: 0%
 
 * **[!UICONTROL Restart]**
 
-   此動作會停止，然後重新啟動工作流程。 在大多數情況下，它可以更快地重新啟動。 當停止需要一定時間時，自動重新啟動也很有用： 這是因為當工作流停止時，「停止」命令不可用。
+   此動作會停止，然後重新啟動工作流程。 在大多數情況下，它可以更快地重新啟動。 當停止需要一定時間時，自動重新啟動也很有用：這是因為當工作流停止時，「停止」命令不可用。
 
-   這些 **[!UICONTROL Start / Pause / Stop / Restart]** 動作也可透過工具列中的執行圖示使用。 For more on this, refer to this [section](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   這些 **[!UICONTROL Start / Pause / Stop / Restart]** 動作也可透過工具列中的執行圖示使用。 如需詳細資訊，請參閱本[區段](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)。
 
 * **[!UICONTROL Purge history]**
 
@@ -87,7 +84,7 @@ ht-degree: 0%
 
    此動作會根據選取的工作流程建立新的工作流程範本。 您需要指定要儲存檔案夾的資料夾(在欄位 **[!UICONTROL Folder]** 中)。
 
-   這些 **[!UICONTROL Mass update of selected lines]** 和 **[!UICONTROL Merge selected lines]** 選項是所有功能表中可用的通用平台 **[!UICONTROL Actions]** 選項。 For more on this, refer to this [section](../../platform/using/updating-data.md).
+   和 **[!UICONTROL Mass update of selected lines]** 選 **[!UICONTROL Merge selected lines]** 項是所有功能表中的通用平台 **[!UICONTROL Actions]** 選項。 如需詳細資訊，請參閱本[區段](../../platform/using/updating-data.md)。
 
 ## 右鍵功能表 {#right-click-menu}
 
@@ -97,7 +94,7 @@ ht-degree: 0%
 
 右鍵功能表提供下列選項：
 
-**[!UICONTROL Open]**: 此選項可讓您存取活動屬性。
+**[!UICONTROL Open]**:此選項可讓您存取活動屬性。
 
 **[!UICONTROL Display logs:]** 此選項可讓您查看所選活動的任務執行日誌。 請參閱顯 [示日誌](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)。
 
