@@ -12,11 +12,11 @@ content-type: reference
 topic-tags: editing-html-content
 dc-title: </strong> and
 discoiquuid: 20c64d31-c2ed-4bc9-9f0e-46f2e0c08c88
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
@@ -92,5 +92,5 @@ DCE編輯窗口分為三個不同部分。 它們可讓您檢視、修改和檢�
 
 >[!CAUTION]
 >
->某些工具列功能可讓您設定HTML內容的格式。 不過，如果頁面包含CSS樣式表，則樣 **式表中的說明** ，可能會優先於工具列中指 **定的說明** 。
+>特定工具列功能可讓您設定 HTML 內容的格式。However, if the page contains a CSS style sheet, the **instructions** from the style sheet may prove to take **priority** over the instructions specified with the toolbar.
 
