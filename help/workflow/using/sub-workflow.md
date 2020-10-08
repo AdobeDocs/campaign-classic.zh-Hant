@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +48,7 @@ ht-degree: 0%
    ![](assets/subworkflow_selection.png)
 
 1. 您也可以新增設定指令碼來變更參考的工作流程。
-1. 按一下「**[!UICONTROL Ok]**」。它會自動建立對外轉場，其中包含所選工作流程 **[!UICONTROL Jump (start point)]** 中活動的標籤。
+1. 按一下 **[!UICONTROL Ok]**。它會自動建立對外轉場，其中包含所選工作流程 **[!UICONTROL Jump (start point)]** 中活動的標籤。
 
    ![](assets/subworkflow_outbound.png)
 
@@ -84,4 +81,4 @@ ht-degree: 0%
 
 這三個值集標識查詢所定位的人口。 **[!UICONTROL tableName]** 是記錄目標標識符的表的名稱， **[!UICONTROL schema]** 是人口的模式（通常是nms:recipient）, **[!UICONTROL recCount]** 是表中的元素數。
 
-* targetSchema: 此值是工作表的模式。 此參數對於包含和的所有轉場都 **[!UICONTROL tableName]** 有效 **[!UICONTROL schema]**。
+* targetSchema:此值是工作表的模式。 此參數對於包含和的所有轉場都 **[!UICONTROL tableName]** 有效 **[!UICONTROL schema]**。
