@@ -1,7 +1,7 @@
 ---
-title: 管理事務性消息中的種子地址
-seo-title: 管理事務性消息中的種子地址
-description: 管理事務性消息中的種子地址
+title: 管理交易式消息中的種子地址
+seo-title: 管理交易式消息中的種子地址
+description: 管理交易式消息中的種子地址
 seo-description: null
 page-status-flag: never-activated
 uuid: 51c4e79d-53bb-4d46-9c7d-e90066f5317d
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 11%
 
 ---
 
 
-# 管理事務性消息中的種子地址{#managing-seed-addresses-in-transactional-messages}
+# 管理交易式消息中的種子地址{#managing-seed-addresses-in-transactional-messages}
 
 種子位址可讓您在傳送電子郵件或簡訊之前，先顯示訊息的預覽、傳送證明，並測試訊息個人化。 種子地址與傳送相連結，不能用於其他傳送。
 
@@ -38,7 +38,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. 輸入外部標識符：此可選欄位可讓您輸入商業金鑰（唯一ID、名稱+電子郵件等）網站上所有應用程式的通用識別碼，用來識別您的個人檔案。 如果此欄位也存在於Adobe Campaign行銷資料庫中，則您可以調節事件與資料庫中的描述檔。
+1. 輸入外部標識符：此可選欄位可讓您輸入商業金鑰（唯一ID、名稱+電子郵件等） 網站上所有應用程式的通用識別碼，用來識別您的個人檔案。 如果此欄位也存在於Adobe Campaign行銷資料庫中，則您可以調節事件與資料庫中的描述檔。
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
