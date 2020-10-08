@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 18ba04d9-7bab-4eea-8dbb-6c2c138c5293
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    要選擇資料夾或當前篩選器中的所有收件人，請使用CTRL+A快速鍵。 這表示即使未顯示的收件者也會被選取。
 
-   有關收件者的說明性分析的示例，請參閱：定 [性資料分析](../../reporting/using/use-cases.md#qualitative-data-analysis)。
+   有關收件者的說明性分析的示例，請參閱： [定性資料分析](../../reporting/using/use-cases.md#qualitative-data-analysis)。
 
 * 在工作流程的上 **下文中**，將游標置於指向收件者表的過渡上，按一下右鍵並選擇 **[!UICONTROL Analyze target]**。 有關詳細資訊，請參閱分析工作流中 [的過渡目標中的示例](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow)。
 * 對於 **清單**，請選擇一個或多個清單，並應用與收件人相同的流程。
@@ -62,7 +62,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   此處提供交貨的說明性分析示例：分 [析人口](../../reporting/using/use-cases.md#analyzing-a-population) ，並在此處：分 [析收件者追蹤記錄](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
+   此處提供交貨的說明性分析示例： [分析人口](../../reporting/using/use-cases.md#analyzing-a-population) ，並在此處： [分析收件者追蹤記錄](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
 
 ## 設定定性分佈範本 {#configuring-the-qualitative-distribution-template}
 
@@ -141,13 +141,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
-提供的選項取決於所選圖表的類型。 For more information, refer to [this page](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+提供的選項取決於所選圖表的類型。 如需詳細資訊，請參閱[本頁面](../../reporting/using/creating-a-chart.md#chart-types-and-variants)。
 
 ### 統計計算 {#statistics-calculation}
 
 說明性分析精靈可讓您計算數種資料的統計資料類型。 預設情況下，僅配置一個簡單計數。
 
-按一 **[!UICONTROL Add]** 下以建立新的統計資料。
+Click **[!UICONTROL Add]** to create a new statistic.
 
 ![](assets/reporting_descriptive_create_stat.png)
 
@@ -165,7 +165,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/s_ncs_user_report_wizard_026.png)
 
-* **[!UICONTROL Calculated field]** 以建立個人化的運算子（僅適用於表格）。 欄位 **[!UICONTROL User function]** 可讓您輸入要套用至資料的計算。
+* **[!UICONTROL Calculated field]** 建立個人化運算子（僅適用於表格）。 欄位 **[!UICONTROL User function]** 可讓您輸入要套用至資料的計算。
 
    範例：根據國家／地區和原產地計算每位客戶的平均購買金額
 
@@ -217,7 +217,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/s_ncs_user_report_wizard_017.png)
 
-依預設，Adobe Campaign會提供一系列統計資料，供您針對選取的資料進行計算。 您可以變更此清單、新增至清單或視需要刪除統計資料。
+依預設，Adobe Campaign會提供一系列統計資料，供您針對選取的資料計算。 您可以變更此清單、新增至清單或視需要刪除統計資料。
 
 可進行下列操作：
 
