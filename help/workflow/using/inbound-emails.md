@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 4c0530b1-0292-45bc-8730-668bc5b8550b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9e5a499d723d3e4126f533b6c7dd63073aff3d09
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -71,6 +68,7 @@ ht-degree: 0%
    * 2 —— 將消息保留在伺服器上並激活出站過渡。
    * 3 —— 從伺服器刪除消息。
    * 4 —— 將消息保留在伺服器上。
+
    可從全域變數存取訊息的 **[!UICONTROL mailMessage]** 內容。
 
 1. **[!UICONTROL Schedule]**
