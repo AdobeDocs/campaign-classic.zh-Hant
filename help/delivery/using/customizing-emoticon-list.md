@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3beb62d0264cfcb03486c291ce79cc7ff582e9c7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -43,14 +40,15 @@ ht-degree: 0%
 
    ![](assets/emoticon_1.png)
 
-1. 按一下「**[!UICONTROL Add]**」。
+1. 按一下 **[!UICONTROL Add]**。
 
 1. 填寫欄位：
 
-   * **[!UICONTROL U+]**: 新表情符號的程式碼。 您可在此頁面中找到表情符號的清 [單](https://unicode.org/emoji/charts/full-emoji-list.html)。
+   * **[!UICONTROL U+]**:新表情符號的程式碼。 您可在此頁面中找到表情符號的清 [單](https://unicode.org/emoji/charts/full-emoji-list.html)。
 為避免相容性問題，我們建議您選擇瀏覽器和每個作業系統都支援的表情。
 
-   * **[!UICONTROL Label]**: 新表情符號。
+   * **[!UICONTROL Label]**:新表情符號。
+
    ![](assets/emoticon_5.png)
 
 1. 完成 **[!UICONTROL Ok]** 配 **[!UICONTROL Save]** 置後，按一下。
@@ -60,13 +58,13 @@ ht-degree: 0%
 
 1. 在下拉式 **[!UICONTROL Display order]** 清單中選擇顯示新表情符號的順序。 請注意，選取已指派的顯示順序後，現有表情符號會自動移至商店。
 
-   <br>在此範例中，我們選擇了顯示順序編號61，這表示如果某個項目已經有此順序，它將自動移至商店，而我們的新項目將取代它在列舉清單中。
+   <br>在此範例中，我們選擇了顯示順序編號61，這表示如果某個項目已經有此順序，它會自動移至商店，而我們的新項目將會取代在列舉清單中。
 
    ![](assets/emoticon_2.png)
 
 1. 您的新表情符號現在已新 **[!UICONTROL Insert emoticon list]** 增至現成可用的列舉。 您可隨時變 **[!UICONTROL Display order]** 更它，或將它移至商店（如果您不需要）。
 
-1. 若要考量您的變更，請中斷連線，然後重新連線至Adobe Campaign Classic。 如果您的新表情符號仍未顯示在快顯 **[!UICONTROL Insert emoticon]** 視窗中，您可能需要清除快取。 For more on this, refer to this [section](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
+1. 若要考量您的變更，請中斷連線，然後重新連線至Adobe Campaign Classic。 如果您的新表情符號仍未顯示在快顯 **[!UICONTROL Insert emoticon]** 視窗中，您可能需要清除快取。 如需詳細資訊，請參閱本[區段](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)。
 
 1. 您的新表情符號現在可在您的遞送中，如先前 **[!UICONTROL Insert emoticon]** 步驟所設定，位於第61位的快顯視窗中。 如需如何在傳送中使用表情符號的詳細資訊，請參閱本 [頁](../../delivery/using/defining-the-email-content.md#inserting-emoticons)。
 
