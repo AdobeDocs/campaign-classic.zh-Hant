@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c800c20fff89b97f6fa38b3c659ca765765e157
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 9%
 
 ---
 
@@ -24,8 +24,8 @@ source-git-commit: 7c800c20fff89b97f6fa38b3c659ca765765e157
 
 驗證和傳送傳送時的詳細程式會列於以下各節：
 
-* [驗證傳送](../../delivery/using/steps-validating-the-delivery.md)
-* [傳送傳送](../../delivery/using/steps-sending-the-delivery.md)
+* [驗證傳遞](../../delivery/using/steps-validating-the-delivery.md)
+* [傳送傳遞](../../delivery/using/steps-sending-the-delivery.md)
 
 以下各節將詳細說明傳送電子郵件的特定參數。
 
@@ -37,7 +37,7 @@ Adobe Campaign可讓您透過密件副本將電子郵件儲存在外部系統上
 
 >[!NOTE]
 >
->此功能為選擇性。 請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
+>此功能是選取性的。請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
 
 在建立新的傳送或傳送範本時，即使已購買選項，依預設不會啟用電子郵件密件副本。 您必須在每個要使用的傳送或範本中手動啟用它。
 
@@ -46,8 +46,8 @@ Adobe Campaign可讓您透過密件副本將電子郵件儲存在外部系統上
 1. 前往 **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** 或 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**。
 1. 選擇您選擇的傳送方式或複製現成可用的 **電子郵件傳送** ，然後選取複製的範本。
 1. Click the **Properties** button.
-1. 選擇選 **[!UICONTROL Delivery]** 項卡。
-1. 勾選「封 **存電子郵件** 」方塊，以保留所有已傳送訊息的復本，以供此傳送或依據此範本傳送。
+1. 選取 **[!UICONTROL Delivery]** 索引標籤。
+1. 勾選「封 **存電子郵件** 」方塊，以保留所有已傳送訊息的副本，以供此傳送或依據此範本傳送。
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
@@ -103,12 +103,12 @@ Adobe Campaign可讓您透過密件副本將電子郵件儲存在外部系統上
 
 可以將SMTP標頭添加到您的交貨中。 若要這麼做，請使用傳送中標 **[!UICONTROL SMTP]** 簽的相關區段。
 
-在此窗口中輸入的指令碼必須引用以下格式的每行一個標題： **名稱：值**。
+The script entered in this window must reference one header per line in the following form: **name:value**.
 
-如有必要，值會自動編碼。
+如有必要，會自動對值編碼。
 
 >[!CAUTION]
 >
->為高級用戶保留添加用於插入其他SMTP標頭的指令碼。
+>會為進階使用者保留新增指令碼，以便插入其他 SMTP 標題。
 >
 >此指令碼的語法必須符合以下內容類型的要求：沒有未使用的空間，沒有空行等。
