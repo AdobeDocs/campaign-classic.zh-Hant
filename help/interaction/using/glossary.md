@@ -1,7 +1,7 @@
 ---
-title: 辭彙表
-seo-title: 辭彙表
-description: 辭彙表
+title: 字彙
+seo-title: 字彙
+description: 字彙
 seo-description: null
 page-status-flag: never-activated
 uuid: 7c96d243-99d8-4402-9e2a-75beb8b2fbee
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 0%
 
 ---
 
 
-# 辭彙表{#glossary}
+# 字彙{#glossary}
 
 以下是主要「互動」元素的定義。
 
