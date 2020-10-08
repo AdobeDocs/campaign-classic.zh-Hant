@@ -1,6 +1,6 @@
 ---
-title: 編輯HTML內容
-seo-title: 編輯HTML內容
+title: 編輯 HTML 內容
+seo-title: 編輯 HTML 內容
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: 5222110f-1b37-433c-b012-7ea3de88c520
 contentOwner: sauviat
 discoiquuid: 43a69047-c1a0-42fa-99ee-a0e5913153fd
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '11'
+ht-degree: 100%
 
 ---
 
 
-# 編輯HTML內容{#editing-html-content}
+# 編輯 HTML 內容{#editing-html-content}
 
