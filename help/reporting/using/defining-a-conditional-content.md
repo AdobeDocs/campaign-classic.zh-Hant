@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 0ca5e0f6-cc81-4da9-aecf-a095cc1a19f9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 9%
 
 ---
 
@@ -57,6 +57,6 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 1. 選取 **[!UICONTROL Enable default transition]** 要新增轉場的項目，以防其中一個設定的條件不符合。
 
-   如需詳細資訊，請參閱[本小節](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
+   如需詳細資訊，請參閱[本章節](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
 
 可 **[!UICONTROL Test]** 以在圖表的開頭放置活動，以根據上下文或運算子配置檔案來調整顯示。
