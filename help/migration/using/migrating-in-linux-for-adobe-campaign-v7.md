@@ -1,7 +1,7 @@
 ---
-title: 在Linux中移轉Adobe Campaign v7
-seo-title: 在Linux中移轉Adobe Campaign v7
-description: 在Linux中移轉Adobe Campaign v7
+title: 在 Linux 中移轉 Adobe Campaign v7
+seo-title: 在 Linux 中移轉 Adobe Campaign v7
+description: 在 Linux 中移轉 Adobe Campaign v7
 seo-description: null
 page-status-flag: never-activated
 uuid: 47870ea4-b07b-4db7-8094-7a8b6f4b6936
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: 8f6519e8-5c8d-4974-b193-a9f1cf78b3a3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1897'
+ht-degree: 1%
 
 ---
 
 
-# 在Linux中移轉Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
+# 在 Linux 中移轉 Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
 
 ## 一般程式 {#general-procedure}
 
@@ -280,7 +280,7 @@ Linux中的遷移步驟如下：
    >
    >從v5.11移轉時，Adobe Campaign預設會安裝在 **/usr/local/neolane/nl6/** directory中。
    >
-   >安裝軟體包後，將顯示以下消息： **&#39;WdbcTimeZone&#39;選項遺失**。 這是正常的。
+   >安裝軟體包後，將顯示以下消息： **缺少「WdbcTimeZone」選項**。 這是正常的。
 
 1. 若要讓用戶端主控台安裝程式可供使用，請將它複製至Adobe Campaign安裝目錄：
 
@@ -301,7 +301,7 @@ Linux中的遷移步驟如下：
 
    >[!NOTE]
    >
-   >當您以Neolane身分登入 **時**，會顯示下列訊息：nl5/env.sh **:沒有此類檔案或目錄**。 這是正常的。
+   >當您以Neolane身分登入 **時**，會顯示下列訊息： **nl5/env.sh:沒有此類檔案或目錄**。 這是正常的。
 
    在檔案結尾處，將nl5/env.sh取代 **為****nl6/env.sh**。
 
@@ -319,7 +319,7 @@ Linux中的遷移步驟如下：
 
    >[!NOTE]
    >
-   >這些命令可讓您建立Adobe Campaign v6內部檔案系統： **conf** 目錄(使用 **config-default.xml** 和 **serverConf.xml檔案，****** var目錄)。
+   >這些命令可讓您建立Adobe Campaign v6內部檔案系統： **conf** 目錄(含 **config-default.xml** 和 **serverConf.xml** 檔案), **var** 目錄。
 
 1. 轉到 **nl5.back備份資料夾** ，並複製（覆寫）每個實例的配置檔案和子資料夾。 以Neolane身 **份登入** ，然後執行下列命令：
 
@@ -525,7 +525,7 @@ Linux中的遷移步驟如下：
 >
 >本節僅適用於從Adobe Campaign 5.11版移轉時。
 
-目前，Apache必須停止。 請參閱：服 [務停止](#service-stop)。
+目前，Apache必須停止。 請參閱： [服務停止](#service-stop)。
 
 1. 以root身分登 **入**。
 1. 更改Apache環境變數，使其連結到 **nl6目錄** 。
@@ -611,7 +611,7 @@ Linux中的遷移步驟如下：
 在下列每部伺服器上啟動Apache和Adobe Campaign服務：
 
 1. 追蹤和重新導向伺服器。
-1. 中部採購伺服器。
+1. 中間來源伺服器.
 1. 行銷伺服器。
 
 在執行下一步之前，請對新安裝執行完整測試，確保沒有回歸，而且所有功能都能依照「一般設定」區段中的所有建議 [運作](../../migration/using/general-configurations.md) 。
@@ -642,7 +642,7 @@ Linux中的遷移步驟如下：
 在下列每部伺服器上啟動Apache和Adobe Campaign服務：
 
 1. 追蹤和重新導向伺服器。
-1. 中部採購伺服器。
+1. 中間來源伺服器.
 1. 行銷伺服器。
 
 完整測試新安裝，檢查它是否未回復，並遵循「一般設定」區段中的所有建議，確保一切正 [常運作](../../migration/using/general-configurations.md) 。
@@ -652,12 +652,12 @@ Linux中的遷移步驟如下：
 在下列每部伺服器上啟動Apache和Adobe Campaign服務：
 
 1. 追蹤和重新導向伺服器。
-1. 中部採購伺服器。
+1. 中間來源伺服器.
 1. 行銷伺服器。
 
 完整測試新安裝，檢查它是否未回復，並遵循「一般設定」區段中的所有建議，確保一切正 [常運作](../../migration/using/general-configurations.md) 。
 
-## 刪除和清除Adobe Campaign v5 {#deleting-and-cleansing-adobe-campaign-v5}
+## 刪除和淨化Adobe Campaign v5 {#deleting-and-cleansing-adobe-campaign-v5}
 
 >[!NOTE]
 >
