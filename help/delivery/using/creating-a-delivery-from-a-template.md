@@ -1,7 +1,7 @@
 ---
-title: 從範本建立傳送
-seo-title: 從範本建立傳送
-description: 從範本建立傳送
+title: 從範本建立傳遞
+seo-title: 從範本建立傳遞
+description: 從範本建立傳遞
 seo-description: null
 page-status-flag: never-activated
 uuid: d0506c9b-dc3f-4956-af5c-21a3f23307c3
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 8b50d14a-8cc6-4546-8069-47fe24f15b61
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 13%
 
 ---
 
 
-# 從範本建立傳送{#creating-a-delivery-from-a-template}
+# 從範本建立傳遞{#creating-a-delivery-from-a-template}
 
 ## 將範本連結至傳送 {#linking-the-template-to-a-delivery}
 
@@ -38,7 +38,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## 執行範本 {#executing-the-template}
 
-您可以直接從範本清單啟動範本執行，而不需先建立傳送。 若要這麼做，請選取要執行的範本，然後按一下滑鼠右鍵。 Select **[!UICONTROL Actions>Execute the delivery template...]**.
+您可以直接從範本清單啟動範本執行，而不需先建立傳送。 若要這麼做，請選取要執行的範本，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Actions>Execute the delivery template...]**。
 
 您也可以使用 **[!UICONTROL File>Actions>Execute the delivery template...]**。
 
