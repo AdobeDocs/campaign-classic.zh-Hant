@@ -1,7 +1,7 @@
 ---
-title: 模式特性
-seo-title: 模式特性
-description: 模式特性
+title: 綱要特性
+seo-title: 綱要特性
+description: 綱要特性
 seo-description: null
 page-status-flag: never-activated
 uuid: ca8eb7af-ef22-403a-8f04-ece5dc903174
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 441e80e1-0559-41fd-83e8-afdf94279e75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 2%
 
 ---
 
 
-# 模式特性{#schema-characteristics}
+# 綱要特性{#schema-characteristics}
 
 引用現有表的模式的特徵如下：
 
