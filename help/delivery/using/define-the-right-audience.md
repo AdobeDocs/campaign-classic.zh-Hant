@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 1%
@@ -35,13 +32,13 @@ ht-degree: 1%
 
 ## 目標映射 {#target-mappings}
 
-在Campaign Classic中，預設會將傳送範本定位為收 **件者**。 Adobe Campaign會為您的傳送提供其他目標對應，您可以根據需要進行變更。
+在Campaign Classic中，預設會將傳送範本定位為「收 **件者**」。 Adobe Campaign會為您的傳送提供其他目標對應，您可以根據需要進行變更。
 
 例如，您可以將描述檔透過社交網路收集到的訪客或訂閱資訊服務的訪客傳送至訪客。
 
 這些映射將在 [本節中顯示](../../delivery/using/selecting-a-target-mapping.md)。
 
-您也可以建立和使用自訂的目標對應。 如需詳細資訊，請參閱[本區段](../../configuration/using/target-mapping.md)。
+您也可以建立和使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
 
 ## 外部收件者 {#external-recipients}
 
