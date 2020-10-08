@@ -1,7 +1,7 @@
 ---
-title: 建立共用連接
-seo-title: 建立共用連接
-description: 建立共用連接
+title: 建立共用連線
+seo-title: 建立共用連線
+description: 建立共用連線
 seo-description: null
 page-status-flag: never-activated
 uuid: 30d6d23b-72c6-4454-8d6b-a10102f89262
@@ -11,24 +11,22 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# 建立共用連接{#creating-a-shared-connection}
+# 建立共用連線{#creating-a-shared-connection}
 
 >[!IMPORTANT]
 >
 >* 在 [Message Center技術工作流程中](../../message-center/using/technical-workflows.md) ，在控制或執行例項上對架構所做的架構擴充，必須複製到Adobe Campaign事務性訊息模組所使用的其他例項上。
 >* 控制實例和執行實例必須安裝在不同的電腦上。 他們無法共用相同的促銷活動例項。
+
 >
 
 
@@ -43,7 +41,7 @@ ht-degree: 1%
 
 要建立執行實例類型外部帳戶，請應用以下步驟：
 
-1. 前往資料 **[!UICONTROL Administration > Platform > External accounts]** 夾。
+1. Go to the **[!UICONTROL Administration > Platform > External accounts]** folder.
 1. 選取Adobe Campaign隨附的執行例項類型之一的預設外部帳戶，按一下滑鼠右鍵並選擇 **[!UICONTROL Duplicate]** 。
 
    ![](assets/messagecenter_create_extaccount_001.png)
@@ -100,7 +98,7 @@ ht-degree: 1%
 
 為了使控制實例能夠連接到執行實例而不需要提供口令，只需在消息中心訪問權限部分中輸入控制實例的 **** IP地址即可。 但是，空密碼預設為禁止。
 
-要使用空口令，請轉至執行實例並定義一個安全區，該安全區限制為發送事件的資訊系統的IP地址。 此安全區必須允許空密碼並接受類 `<identifier> / <password>` 型連接。 如需詳細資訊，請參閱[本小節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+要使用空口令，請轉至執行實例並定義一個安全區，該安全區限制為發送事件的資訊系統的IP地址。 此安全區必須允許空密碼並接受類 `<identifier> / <password>` 型連接。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
 >[!NOTE]
 >
@@ -123,7 +121,7 @@ ht-degree: 1%
 
 您可以與各種控制實例共用執行群集。 此類型的體系結構需要以下配置。
 
-例如，如果您的公司管理兩個品牌，每個品牌都有其自己的控制例項： **控制1** 和 **控制2**。 還使用兩個執行例項。 您需要為每個控制實例輸入不同的消息中心運算子： Control **1實例的** mc運算子和Control 2實例的 **mc2** 運 ******** 算子。
+例如，如果您的公司管理兩個品牌，每個品牌都有其自己的控制例項： **控制1** 和 **控制2**。 還使用兩個執行例項。 您需要為每個控制實例輸入不同的消息中心運算子：Control **1實例的** mc運算子和Control 2實例的 **mc2** 運 ******** 算子。
 
 在所有執行例項的樹狀結構中，為每個運算元建立一個資料夾(**資料夾1** 和 **資料夾2**)，並限制每個運算元對資料夾的資料存取。
 
@@ -155,7 +153,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >**mc1** 和 **mc2** 運算子必須擁有 **[!UICONTROL Message Center execution]** 權限，且無法存取Adobe Campaign用戶端主控台。 操作員必須始終與安全區域連結。 如需詳細資訊，請參閱[本小節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+   >**mc1** 和 **mc2** 運算子必須擁有 **[!UICONTROL Message Center execution]** 權限，且無法存取Adobe Campaign用戶端主控台。 操作員必須始終與安全區域連結。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
 1. 對於每個運算子，請 **[!UICONTROL Restrict to information found in sub-folders of]** 選中該框，並選擇相關資料夾(**mc1** 運算子的資料夾1 **和Mc2運算子的** Folder 2 ******** )。
 
