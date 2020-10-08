@@ -1,7 +1,7 @@
 ---
-title: 擴展模式
-seo-title: 擴展模式
-description: 擴展模式
+title: 擴展綱要
+seo-title: 擴展綱要
+description: 擴展綱要
 seo-description: null
 page-status-flag: never-activated
 uuid: 1767b9de-1d72-4ece-aeec-87f83862d81c
@@ -11,22 +11,22 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 1c9af980-4e6b-44dc-af61-dd284863ec7d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 7%
 
 ---
 
 
-# 擴展模式{#extending-a-schema}
+# 擴展綱要{#extending-a-schema}
 
 >[!IMPORTANT]
 >
 >某些內建結構不能擴展：主要是已定義下列設定者：\
 >**dataSource=&quot;file&quot;** 和 **mappingType=&quot;xmlFile&quot;**。\
->不得擴展以下結構： **xx**:BackupNew **,** x: **xtok**,entityxOriginal, xorignal, formXsrc:Xschema: **originalXtk,XrogingXtk,XcomScrack:NoblPublishingTingTinTinTinTin,TinL,L,TinL,Tin************************************************,nms:userAgentRulesXtk:builderXtk,Xtk：連接tk:Xtk:InitDb:XlistXlist:tkXfuncXtk:tkFusion:tk:Xtk:XtkLinitXtk:Xtk連接。jst**, **xxtree:navtree**, **xx:queryDef:** xresource **, xxXresource,XxMenu:XadXThodXadoming:TakXchema:tkTkTkTkXtkXtk:tkxtk**********************。
+>不得擴展以下結構： **x:BackupNew**, **xtk:entityBackupOriginal**, **xorignal,Xoriginal:form**,Xchema:TkXtk,NackPublishingSc:Throg,PublishingShongTTk: **************************************************::userRules,AgentXtk:tk:Xtk連接XtkBlider,XtkBliderXtk連接XtkXbLixbListXkfunc,XtkXtkFusion:tkXtk,Xtk:Xk。jst**, **xxtree:navtree**, **xx:queryDef:** xresource **, xxXresource,XxMenu:XadXThodXadoming:TakXchema:tkTkTkTkXtkXtk:tkxtk**********************。
 >這份清單並非完整無遺。
 
 擴展現有模式有兩種方法：
@@ -68,6 +68,6 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 >[!IMPORTANT]
 >
->要考慮修改，您需要重新生成結構。 有關詳細資訊，請參閱「重新生 [成方案](../../configuration/using/regenerating-schemas.md) 」部分。\
->如果修改影響資料庫結構，則需要運行更新。 有關詳細資訊，請參閱「更 [新資料庫結構](../../configuration/using/updating-the-database-structure.md) 」部分。
+>要考慮修改，您需要重新生成結構。 For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
+>如果修改影響資料庫結構，則需要運行更新。 有關詳細資訊，請參閱[更新資料庫結構](../../configuration/using/updating-the-database-structure.md)區段。
 
