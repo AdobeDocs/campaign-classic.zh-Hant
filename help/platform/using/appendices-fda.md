@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -44,7 +41,7 @@ Adobe Campaign Classic 17.9之前的版本僅支援Teradata Latin-1資料庫。
 
 從Adobe Campaign Classic 17.9開始，我們現在依預設支援Unicode中的Teradata資料庫。
 
-具有Latin-1 Teradata資料庫的客戶必須在外部帳戶的選項中新增參數APICharSize=1，才能移轉至最新的Campaign Classic版本。
+擁有Latin-1 Teradata資料庫的客戶必須在外部帳戶的選項中新增參數APICharSize=1，才能移轉至最新的Campaign Classic版本。
 
 ### 資料庫配置 {#database-configuration}
 
@@ -264,4 +261,4 @@ $ yum install mysql57-community-release-el7-9.noarch.rpm$ yum install mysql-comm
 
 ### 外部帳戶設定 {#external-account-mysql}
 
-外部帳戶配置不需要任何特定步驟。 確保根據資料庫設定時區和「使用Unicode」資料。
+外部帳戶設定不需要任何特定步驟。 確保根據資料庫設定時區和「使用Unicode」資料。
