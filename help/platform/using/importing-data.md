@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '4142'
+ht-degree: 64%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign 允許您以文字、CSV、TAB 或 XML 格式從一個或多個�
 >[!NOTE]
 >
 >You can import data without mapping it with the database data using the **[!UICONTROL Import a list]** function.
-> 
+>
 >The data can then be used exclusively in workflows via the **[!UICONTROL Read list]** object. 有關詳細資訊，請參見[此頁面](../../workflow/using/read-list.md)。
 >
 >有關詳細資訊，請觀看[匯入設定檔](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)視訊。
@@ -44,7 +44,7 @@ Adobe Campaign 允許您以文字、CSV、TAB 或 XML 格式從一個或多個�
 >
 >如果使用 IIS Web 伺服器，則可能需要配置以授權上載大檔案 (> 28 MB)。
 >
->有關更多資訊，請參見[本節](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit)。
+>如需詳細資訊，請參閱[本區段](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit)。
 
 ### 第 1 步 - 選擇匯入範本 {#step-1---choosing-the-import-template}
 
@@ -60,7 +60,7 @@ Adobe Campaign 允許您以文字、CSV、TAB 或 XML 格式從一個或多個�
    原生範本為 **[!UICONTROL New text import]**。 不得修改此範本，但您可以根據您的要求復制它以配置新範本。預設情況下，導入模板將保存在節點 **[!UICONTROL Profiles and targets > Templates > Job templates]** 中。
 
 1. Enter a name for this import in the **[!UICONTROL Label]** field. 您可以添加描述。
-1. 在相應欄位中選擇匯入類型。匯入有兩種可能類型：只 **[!UICONTROL Simple import]** 要匯入一個檔案，並 **[!UICONTROL Multiple import]** 在單次執行中匯入多個檔案。
+1. 在相應欄位中選擇匯入類型。匯入有兩種可能類型： **[!UICONTROL Simple import]** 只導入一個檔案，並在單 **[!UICONTROL Multiple import]** 次執行中導入多個檔案。
 
    For a multiple import, select **[!UICONTROL Multiple import]** from the **[!UICONTROL Import type]** drop-down list in the first screen of the import wizard.
 
@@ -110,7 +110,7 @@ The **[!UICONTROL Advanced parameters]** link lets you access the following opti
 
 源檔可以是文字格式 (txt、csv、tab、固定行) 或 xml。
 
-依預設， **[!UICONTROL Upload file on the server]** 會選取。 Click the folder to the right of the **[!UICONTROL Local file]** field to browse the local disk and select the file to import. 您可以取消選擇此選項以輸入存取路徑以及要在伺服器上匯入的檔案名稱。
+By default, **[!UICONTROL Upload file on the server]** is selected. Click the folder to the right of the **[!UICONTROL Local file]** field to browse the local disk and select the file to import. 您可以取消選擇此選項以輸入存取路徑以及要在伺服器上匯入的檔案名稱。
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
@@ -308,7 +308,7 @@ You can generate a file containing these records via the **[!UICONTROL Export re
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      要建立新資料夾，請選擇要從中添加資料夾的節點，然後按滑鼠右鍵。Select **[!UICONTROL Create a new 'Recipients' folder]**.
+      要建立新資料夾，請選擇要從中添加資料夾的節點，然後按滑鼠右鍵。選取 **[!UICONTROL Create a new 'Recipients' folder]**。
 
       ![](assets/s_ncs_user_import_wizard05_3.png)
 
@@ -426,7 +426,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
    * 從Adobe Campaign首頁，按一下連 **[!UICONTROL Profiles and targets]** 結，然後 **[!UICONTROL Jobs]**。 Above the list of jobs, click **[!UICONTROL New import]**.
    * 依預設 **[!UICONTROL New text import]** 保留範本選取。
    * 更改標籤和描述。
-   * Select **[!UICONTROL Simple import]**.
+   * 選取 **[!UICONTROL Simple import]**。
    * 保留預設作業資料夾。
    * Click **[!UICONTROL Advanced parameters]** and select the **[!UICONTROL Tracking mode]** option to view the details of your import during execution.
 
@@ -457,7 +457,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 啟動匯入
 
-   * 按一下 **[!UICONTROL Start]**.
+   * 按一下 **[!UICONTROL Start]**。
 
       在編輯器的中心區欄位，您可以檢查匯入操作是否成功並查看已處理的記錄數。
 
@@ -503,7 +503,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 啟動匯入
 
-   * 按一下 **[!UICONTROL Start]**.
+   * 按一下 **[!UICONTROL Start]**。
 
       在追蹤視窗中，您可以檢查匯入是否成功並查看已處理的記錄數。
 
@@ -556,7 +556,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 啟動匯入
 
-   按一下 **[!UICONTROL Start]**.
+   按一下 **[!UICONTROL Start]**。
 
    查看收件者表以檢查匯入已修改記錄。
 
@@ -604,7 +604,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 啟動匯入
 
-   * 按一下 **[!UICONTROL Start]**.
+   * 按一下 **[!UICONTROL Start]**。
    * 查看收件者表以檢查操作已修改記錄。
 
       ![](assets/s_ncs_user_import_example06_06.png)
