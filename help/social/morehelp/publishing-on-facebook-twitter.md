@@ -1,6 +1,6 @@
 ---
-title: 在Facebook/Twitter上發佈
-seo-title: 在Facebook/Twitter上發佈
+title: 在 Facebook/Twitter 上發佈
+seo-title: 在 Facebook/Twitter 上發佈
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: f2a6c805-ffc9-418c-8b2e-58b5ec153fd3
 contentOwner: sauviat
 discoiquuid: 3d0c0cf2-ab64-48db-936e-20642bfce501
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '14'
+ht-degree: 100%
 
 ---
 
 
-# 在Facebook/Twitter上發佈{#publishing-on-facebook-twitter}
+# 在 Facebook/Twitter 上發佈{#publishing-on-facebook-twitter}
 
