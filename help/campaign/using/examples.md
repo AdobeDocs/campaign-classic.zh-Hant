@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 7b0aef75-345d-45be-b7d0-a9f6944ee678
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1298'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +82,7 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
 ### 簡介 {#introduction}
 
-你是一家大型服裝品牌的營銷經理，該品牌在美國各地擁有一家線上商店和幾家精品店。 現在春天到來了，你決定推出一個特惠方案，讓你的最佳客戶能享有您目錄中所有服飾50%的折扣。
+你是一家大型服裝品牌的營銷經理，該品牌在美國各地擁有一家線上商店和幾家精品店。 現在春天到來了，你決定推出一個特惠方案，讓最佳客戶將您目錄中所有服飾的50%折扣。
 
 此優惠針對的是您美國商店的最佳客戶，即自年初以來已花費超過300美元的客戶。
 
@@ -131,22 +131,23 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
 1. 在標籤 **[!UICONTROL General]** 中，您必須指定：
 
-   * the **[!UICONTROL Targeting dimension]**&#x200B;在此， **資料分發** 會對收件者 **執行**。
-   * the **[!UICONTROL Distribution type]**&#x200B;您可以選擇「固 **定大小** 」或「 **大小」作為百分比**。
-   * the **[!UICONTROL Assignment type]**&#x200B;選擇「本 **地實體** 」選項。
-   * the **[!UICONTROL Distribution type]**&#x200B;在此，「收件者」 **[!UICONTROL Origin (@origin)]** 表格中顯示的欄位可讓您識別聯繫人與本機實體之間的關係。
+   * the **[!UICONTROL Targeting dimension]**. 在此， **資料分發** 會對收件者 **執行**。
+   * the **[!UICONTROL Distribution type]**. 您可以選擇「固 **定大小** 」或「 **大小」作為百分比**。
+   * the **[!UICONTROL Assignment type]**. 選擇「本 **地實體** 」選項。
+   * the **[!UICONTROL Distribution type]**. 在此，「收件者」 **[!UICONTROL Origin (@origin)]** 表格中顯示的欄位可讓您識別聯繫人與本機實體之間的關係。
    * 欄 **[!UICONTROL Approval storage]** 位。 選擇「收 **件者的本地批准** 」選項。
 
-1. 在標籤 **[!UICONTROL Breakdown]** 中，指定：
+1. In the **[!UICONTROL Breakdown]** tab, specify:
 
    * 的 **[!UICONTROL Distribution field value]**&#x200B;值，此值對應於參與即將進行之促銷活動的當地實體。
    * 本機實體 **[!UICONTROL label]**。
    * ( **[!UICONTROL Size]** 固定或百分比)。 0的 **預設值** ，包括選取連結至本機實體的所有收件者。
+
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
 1. 儲存您的新資料分發。
 
-#### 建立協作促銷活動 {#creating-a-collaborative-campaign}
+#### 建立協作行銷活動 {#creating-a-collaborative-campaign}
 
 1. 從節 **[!UICONTROL Campaign management > Campaign]** 點建立新 **[!UICONTROL collaborative campaign (by target approval)]**。
 1. 在標籤 **[!UICONTROL Targeting and workflows]** 中，建立促銷活動的工作流程。 這必須包含 **Split** 活動，活動 **[!UICONTROL Record count limitation]** 在其中定 **[!UICONTROL Data distribution]** 義。
@@ -158,6 +159,7 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
    * 即會傳送給通知中本機實體的訊息內容，
    * 核准提醒，
    * 促銷活動的預期處理。
+
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. 儲存您的記錄。
@@ -170,6 +172,7 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
    * 在「 **手動** 」模式中，如果本地實體接受中央實體的邀請，就會參與促銷活動。 如果他們想要，而且必須向經理核准，才能確認其參與促銷活動，他們可以刪除預先選取的聯絡人。
    * 在「 **自動** 」模式中，除非本地實體從中註銷，否則必須參與促銷活動。 他們可以刪除聯絡人，而不需要核准。
+
    ![](assets/mkg_dist_use_case_target_valid.png)
 
 1. 在標籤 **[!UICONTROL Description]** 中，您可以新增促銷活動的說明，以及任何要傳送至本機實體的檔案。
