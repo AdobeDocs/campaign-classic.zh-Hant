@@ -1,7 +1,7 @@
 ---
-title: 轉換Web應用程式
-seo-title: 轉換Web應用程式
-description: 轉換Web應用程式
+title: 轉譯 Web 應用程式
+seo-title: 轉譯 Web 應用程式
+description: 轉譯 Web 應用程式
 seo-description: null
 page-status-flag: never-activated
 uuid: 7b24a872-d3d1-4473-a6f9-96ba2a0eee8b
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 328e5b2f-8596-4eda-8ac5-57cb29bfb691
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 6%
 
 ---
 
 
-# 轉換Web應用程式{#translating-a-web-application}
+# 轉譯 Web 應用程式{#translating-a-web-application}
 
 您可以翻譯使用Adobe Campaign數位內容編輯器(DCE)建立的網頁應用程式頁面。
 
@@ -48,7 +48,7 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
    有三種具體情況：
 
    * 當選取的區塊包含數個字串／區塊時，會標幟為單一字串以進行轉換。 字串接著會包含此區塊內各元素的HTML程式碼。
-   * 當您要標籤包含數個字串的區塊，且至少已標籤其中一個字串時，會顯示警告。 然後，您可以從隔離字串移除標幟，並新增整個區塊。
+   * 當您要標籤包含數個字串的區塊，而且至少已標籤其中一個字串時，會顯示警告。 然後，您可以從隔離字串移除標幟，並新增整個區塊。
 
       ![](assets/dce_translation_4.png)
 
@@ -57,7 +57,7 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
       ![](assets/dce_translation_2.png)
 
 1. 完成字串的標幟後，請返回Web應用程式並選取標 **[!UICONTROL Translations]** 簽。
-1. Select **[!UICONTROL Collect the strings to translate]**. DCE中標籤的字串將添加到Web應用程式的字串中。
+1. 選取 **[!UICONTROL Collect the strings to translate]**。DCE中標籤的字串將添加到Web應用程式的字串中。
 
    >[!NOTE]
    >
