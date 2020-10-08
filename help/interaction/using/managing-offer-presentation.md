@@ -1,7 +1,7 @@
 ---
-title: 管理選件簡報
-seo-title: 管理選件簡報
-description: 管理選件簡報
+title: 管理優惠方案簡報
+seo-title: 管理優惠方案簡報
+description: 管理優惠方案簡報
 seo-description: null
 page-status-flag: never-activated
 uuid: cf4614b9-a322-4170-aa6d-4f138f8ca2d2
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: f6e44634-3a13-480e-ab44-f3c744054a96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 1%
 
 ---
 
 
-# 管理選件簡報{#managing-offer-presentation}
+# 管理優惠方案簡報{#managing-offer-presentation}
 
 ## 簡報規則概觀 {#presentation-rules-overview}
 
@@ -99,7 +99,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/offer_typology_011.png)
 
-## 定義主張和收件人 {#defining-propositions-and-recipients}
+## 定義主張和收件者 {#defining-propositions-and-recipients}
 
 本節 **[!UICONTROL Propositions to count]** 可讓您指定收件者和主張，如果選件在主張歷史記錄中出現特定次數，則會排除 **[!UICONTROL General]** 標籤中定義的選件。
 
@@ -109,7 +109,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/offer_typology_014.png)
 
-這些准則代表表現規則最常用的應用程式。 若要使用其他條件，您可以使用連結建立 **[!UICONTROL Limit propositions...]** 查詢。 有關此的詳細資訊，請參 [閱「建立命題查詢](#creating-a-query-on-propositions) 」部分。
+這些准則代表表現規則最常用的應用程式。 若要使用其他條件，您可以使用連結建立 **[!UICONTROL Limit propositions...]** 查詢。 For more on this, refer to the [Creating a query on propositions](#creating-a-query-on-propositions) section.
 
 * **在頻道上篩選**
 
