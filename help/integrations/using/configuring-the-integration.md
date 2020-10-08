@@ -1,7 +1,7 @@
 ---
-title: 設定整合
-seo-title: 設定整合
-description: 設定整合
+title: 設定 整合
+seo-title: 設定 整合
+description: 設定 整合
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,18 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 4%
 
 ---
 
 
-# Configuring the integration{#configuring-the-integration}
+# 設定 整合{#configuring-the-integration}
 
-## 在Adobe Campaign中設定 {#configuring-in-adobe-campaign}
+## Configuring in Adobe Campaign {#configuring-in-adobe-campaign}
 
 若要搭配使用這兩個解決方案，您必須將它們設定為彼此連線。
 
@@ -39,11 +39,11 @@ source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
 您首先需要安裝此套 **[!UICONTROL AEM integration]** 件。
 
 1. 從您的Adobe Campaign例項中，從上方 **[!UICONTROL Tools]** 工具列中選取。
-1. Select **[!UICONTROL Tools > Advanced > Import package...]**.
+1. 選取 **[!UICONTROL Tools > Advanced > Import package...]**。
 
    ![](assets/aem_config_1.png)
 
-1. Select **[!UICONTROL Install a standard package]**.
+1. 選取 **[!UICONTROL Install a standard package]**。
 1. 勾選 **[!UICONTROL AEM integration]** 然後按一下 **[!UICONTROL Next]** 按鈕。
 
    ![](assets/aem_config_2.png)
@@ -58,32 +58,33 @@ source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
 
 >[!CAUTION]
 >
->我們強烈建議建立專用於AEM的安全區，以避免任何安全性問題。 有關詳細資訊，請參閱《安裝指 [南》](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+>我們強烈建議建立專用於AEM的安全區，以避免任何安全性問題。 For more on this, refer to the Installation [guide](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 如果您的Campaign實例是由Adobe代管，請聯絡Adobe支援團隊。 如果您使用內部部署Campaign，請遵循下列步驟：
 
 1. 開啟 **serverConf.xml配置檔案** 。
 1. 訪問選 **定安全區的allowUserPassword** 屬性，並將其設定為 **true**。
 
-   這可讓Adobe Experience manager透過登入／密碼連線Adobe Campaign。
+   這可讓Adobe Experience Manager透過登入／密碼連線Adobe Campaign。
 
 ### 設定外部帳戶 {#configure-the-external-account}
 
-此套 **[!UICONTROL AEM integration]** 件已建立Adobe Experience cloud的外部帳戶。 您現在需要設定它，以連線您的Adobe Experience Manager實例。
+此套 **[!UICONTROL AEM integration]** 件已建立Adobe Experience Cloud的外部帳戶。 您現在需要設定它，以連線您的Adobe Experience Manager實例。
 
 若要混淆AEM外部帳戶，請遵循下列步驟：
 
-1. Click the **[!UICONTROL Explorer]** button.
+1. 按一下 **[!UICONTROL Explorer]** 按鈕。
 
    ![](assets/aem_config_3.png)
 
-1. Select **[!UICONTROL Administration > Platform > External accounts]**.
-1. 從清單 **[!UICONTROL External account]** 中，選擇 **[!UICONTROL AEM instance]**。
+1. 選取 **[!UICONTROL Administration > Platform > External accounts]**。
+1. From the **[!UICONTROL External account]** list, select **[!UICONTROL AEM instance]**.
 1. 輸入AEM製作例項的參數：
 
    * **[!UICONTROL Server]**
    * **[!UICONTROL Account]**
    * **[!UICONTROL Password]**
+
    >[!NOTE]
    >
    >請確定您的 **[!UICONTROL Server]** 位址未以尾隨斜線結尾。
@@ -91,17 +92,17 @@ source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
    ![](assets/aem_config_4.png)
 
 1. 選中該 **[!UICONTROL Enabled]** 框。
-1. Click the **[!UICONTROL Save]** button.
+1. 按一下 **[!UICONTROL Save]** 按鈕。
 
 ### 設定AEM資源篩選 {#configure-aem-resources-filtering}
 
-AEMResourceTypeFilter **** 選項可用來篩選Adobe Campaign中可用的Experience manager資源類型。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的Experience Manager內容。
+AEMResourceTypeFilter **** 選項可用來篩選Adobe Campaign中可用的Experience Manager資源類型。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的Experience Manager內容。
 
 要檢查選項是 **[!UICONTROL AEMResourceTypeFilter]** 否已配置：
 
-1. Click the **[!UICONTROL Explorer]** button.
-1. Select **[!UICONTROL Administration > Platform > Options]**.
-1. 從清單 **[!UICONTROL Options]** 中，選擇 **[!UICONTROL AEMResourceTypeFilter]**。
+1. 按一下 **[!UICONTROL Explorer]** 按鈕。
+1. 選取 **[!UICONTROL Administration > Platform > Options]**。
+1. From the **[!UICONTROL Options]** list, select **[!UICONTROL AEMResourceTypeFilter]**.
 1. 在字 **[!UICONTROL Value (text)]** 段中，路徑應如下：
 
    ```
@@ -116,19 +117,19 @@ AEMResourceTypeFilter **** 選項可用來篩選Adobe Campaign中可用的Experi
 
    ![](assets/aem_config_5.png)
 
-## 在Adobe Experience manager中設定 {#configuring-in-adobe-experience-manager}
+## 在Adobe Experience Manager中設定 {#configuring-in-adobe-experience-manager}
 
 請依照下列步驟，在Adobe Experience Manager中啟動設定：
 
 1. 設定 **複製** ，以從AEM製作例項複製至AEM發佈例項。
 
-   要瞭解如何配置複製，請參閱Adobe Experience manager文 [檔](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
+   要瞭解如何配置複製，請參閱Adobe Experience Manager文 [檔](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
 
 1. 在您的製作例 **項上安裝整合FeaturePack** ，然後複製您發佈例項上的安裝。 （僅適用於AEM 5.6.1和6.0版）。
 
    如要瞭解如何安裝FeaturePack，請參閱Adobe Experience Manager文 [件](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)。
 
-1. 透過設定專屬的雲端服務，將Adobe Experience manager與Adobe Campaign **連接**。
+1. 透過設定專屬的雲端服務，將Adobe Experience Manager與Adobe Campaign **連接**。
 
    如要瞭解如何透過雲端服務連接這兩個解決方案，請參閱Adobe Experience Manager文 [件](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
