@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 43afd347-6600-409a-8f67-a4f3e9776d51
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 47%
 
 ---
 
@@ -31,4 +31,4 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 >[!CAUTION]
 >
->下列變數是可用於個人化但不得修改的內部變數：交 **付消息**, **資料源**，資料 **源，目標**&#x200B;提供者， ********************&#x200B;目標提供者，抵用券價值，抵用券價值，抵用券報價，
+>下列變數是可用於個人化但不得修改的內部變數： **交付**，消息 **, dataSource**, **TargetProvider, targetProvider**, CouponValue, CouponValue, ******************** CompontationDataComponation。
