@@ -1,7 +1,7 @@
 ---
-title: 驗證傳送
-seo-title: 驗證傳送
-description: 驗證傳送
+title: 驗證傳遞
+seo-title: 驗證傳遞
+description: 驗證傳遞
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,29 +11,26 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
-# 驗證傳送 {#validating-the-delivery}
+# 驗證傳遞 {#validating-the-delivery}
 
 建立並設定傳送後，您必須先驗證傳送，才能將它傳送至主要目標。
 
 操作步驟：
 
-1. **分析傳送**: 此步驟可讓您準備要傳送的訊息。 請參閱 [分析傳送](#analyzing-the-delivery)。
+1. **分析傳送**:此步驟可讓您準備要傳送的訊息。 請參閱 [分析傳送](#analyzing-the-delivery)。
 
-   分析期間套用的規則將在本節 [中介紹](#validation-process-with-typologies) 。 可用的驗證模式在「更改批准模 [式」部分中有詳細說明](#changing-the-approval-mode) 。
+   分析期間應用的規則將在本節 [中介紹](#validation-process-with-typologies) 。 可用的驗證模式在「更改批准模 [式」部分中有詳細說明](#changing-the-approval-mode) 。
 
-1. **傳送校樣**: 此步驟可讓您核准內容、URL、個人化欄位等。 請參 [閱傳送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定義特定證明目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+1. **傳送校樣**:此步驟可讓您核准內容、URL、個人化欄位等。 請參 [閱傳送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定義特定證明目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
 >[!IMPORTANT]
 >
@@ -99,13 +96,13 @@ ht-degree: 4%
 
 此標籤可存取下列選項：
 
-* **[!UICONTROL Label and code of the delivery]** : 本節中的選項用於計算傳送分析階段中這些欄位的值。 該 **[!UICONTROL Compute the execution folder during the delivery analysis]** 欄位會計算在分析階段中將包含此傳送操作的資料夾的名稱。
-* **[!UICONTROL Approval mode]** : 此欄位可讓您定義分析完成後的人工或自動傳送。 驗證模式顯示在「更改 [批准模式」部分](#changing-the-approval-mode) 。
-* **[!UICONTROL Prepare the delivery parts in the database]** : 此選項可讓您改善傳送分析效能。 如需詳細資訊，請參閱[本區段](#improving-delivery-analysis)。
-* **[!UICONTROL Prepare the personalization data with a workflow]** : 此選項可讓您在自動工作流程中準備傳送時包含的個人化資料，如此可大幅提升執行個人化的效能。 如需詳細資訊，請參閱最佳 [化個人化](../../delivery/using/personalization-fields.md#optimizing-personalization)。
-* **[!UICONTROL Start job in a detached process]** : 此選項可讓您在個別程式中啟動傳送分析。 分析功能依預設會使用Adobe Campaign應用程式伺服器程式(web nlserver)。 選取此選項，即使在應用程式伺服器發生故障時，您也能確保分析完成。
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : 此選項在分析階段將SQL查詢日誌添加到傳送日誌。
-* **[!UICONTROL Ignore personalization scripts during sending]** : 此選項可讓您略過HTML內容中的JavaScript指令解譯。 它們會如同傳送的內容一樣顯示。 這些指令是隨 **&lt;%=** tag引入的。
+* **[!UICONTROL Label and code of the delivery]** :本節中的選項用於計算傳送分析階段中這些欄位的值。 該 **[!UICONTROL Compute the execution folder during the delivery analysis]** 欄位會計算在分析階段中將包含此傳送操作的資料夾的名稱。
+* **[!UICONTROL Approval mode]** :此欄位可讓您定義分析完成後的人工或自動傳送。 驗證模式顯示在「更改 [批准模式」部分](#changing-the-approval-mode) 。
+* **[!UICONTROL Prepare the delivery parts in the database]** :此選項可讓您改善傳送分析效能。 如需詳細資訊，請參閱[本區段](#improving-delivery-analysis)。
+* **[!UICONTROL Prepare the personalization data with a workflow]** :此選項可讓您在自動工作流程中準備傳送時包含的個人化資料，如此可大幅提升執行個人化的效能。 如需詳細資訊，請參閱最佳 [化個人化](../../delivery/using/personalization-fields.md#optimizing-personalization)。
+* **[!UICONTROL Start job in a detached process]** :此選項可讓您在個別程式中啟動傳送分析。 分析功能依預設會使用Adobe Campaign應用程式伺服器程式(web nlserver)。 選取此選項，即使在應用程式伺服器發生故障時，您也能確保分析完成。
+* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** :此選項在分析階段將SQL查詢日誌添加到傳送日誌。
+* **[!UICONTROL Ignore personalization scripts during sending]** :此選項可讓您略過HTML內容中的JavaScript指令解譯。 它們會如同傳送的內容一樣顯示。 這些指令是隨 **&lt;%=** tag引入的。
 
 ### 改善傳送分析效能 {#improving-delivery-analysis}
 
@@ -116,7 +113,7 @@ ht-degree: 4%
 目前，此選項僅在符合下列條件時才可用：
 * 傳送內容必須是電子郵件。 目前不支援其他頻道。
 * 您不得使用中間來源補充或外部工藝路線，只能使用批量交貨工藝路線類型。 您可以檢查在的標籤中使 **[!UICONTROL General]** 用的工藝路線 **[!UICONTROL Delivery properties]**。
-* 您無法定位來自外部檔案的人口。 若是單一傳送，請按一 **[!UICONTROL To]** 下連結並 **[!UICONTROL Email parameters]** 檢查選 **[!UICONTROL Defined in the database]** 取的選項。 對於工作流中使用的傳送，請檢查收件者是否在 **[!UICONTROL Specified by the inbound event(s)]** 標籤 **[!UICONTROL Delivery]** 中。
+* 您無法定位來自外部檔案的人口。 若是單一傳送，請按一 **[!UICONTROL To]** 下連結並 **[!UICONTROL Email parameters]** 檢查選 **[!UICONTROL Defined in the database]** 取的選項。 對於工作流中使用的傳送，請檢查收件者是否在 **[!UICONTROL Specified by the inbound event(s)]** 標籤中 **[!UICONTROL Delivery]** 。
 * 您必須使用PostgreSQL資料庫。
 
 ### 設定分析優先順序 {#analysis-priority-}
@@ -217,11 +214,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** 類型類型在銷售壓力管理的框架內使用。 如需詳細資訊，請參閱[本區段](../../campaign/using/about-marketing-resource-management.md)。
+>**[!UICONTROL Arbitration]** 類型類型在銷售壓力管理的框架內使用。 如需詳細資訊，請參閱[本章節](../../campaign/using/about-marketing-resource-management.md)。
 
 ## 變更核准模式 {#changing-the-approval-mode}
 
-傳送 **[!UICONTROL Analysis]** 屬性的標籤可讓您選取驗證模式。 如果分析期間產生警告（例如，如果某些字元在傳送的主旨中突出顯示等），您可以設定傳送來定義是否仍應執行。 預設情況下，用戶必須在分析階段結束時確認消息的發送： 這是手動 **驗證** 。
+傳送 **[!UICONTROL Analysis]** 屬性的標籤可讓您選取驗證模式。 如果分析期間產生警告（例如，如果某些字元在傳送的主旨中突出顯示等），您可以設定傳送來定義是否仍應執行。 預設情況下，用戶必須在分析階段結束時確認消息的發送：這是手動 **驗證** 。
 
 從適當欄位的下拉式清單中選取另一個核准模式。
 
@@ -229,6 +226,6 @@ ht-degree: 4%
 
 可使用下列核准模式：
 
-* **[!UICONTROL Manual]**: 在分析階段結束時，使用者必須確認傳送才能開始傳送。 若要這麼做，請按一下 **[!UICONTROL Start]** 按鈕以啟動傳送。
-* **[!UICONTROL Semi-automatic]**: 如果分析階段未產生警告訊息，則自動開始傳送。
-* **[!UICONTROL Automatic]**: 無論其結果如何，在分析階段結束時自動開始發送。
+* **[!UICONTROL Manual]**:在分析階段結束時，使用者必須確認傳送才能開始傳送。 若要這麼做，請按一下 **[!UICONTROL Start]** 按鈕以啟動傳送。
+* **[!UICONTROL Semi-automatic]**:如果分析階段未產生警告訊息，則自動開始傳送。
+* **[!UICONTROL Automatic]**:無論其結果如何，在分析階段結束時自動開始發送。
