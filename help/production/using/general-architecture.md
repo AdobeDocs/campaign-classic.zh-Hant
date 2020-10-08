@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: introduction
 discoiquuid: f4879774-afe5-4556-ab60-9297cabbca2c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe Campaign由多個模組組成，可劃分成多部電腦。 這種操作�
 
 >[!NOTE]
 >
->有關各種體系結構的詳細資訊，請參 [閱本節](../../installation/using/general-architecture.md)。
+>For more on the various architectures, refer to [this section](../../installation/using/general-architecture.md).
 
 ## 開啟埠清單 {#list-of-open-ports}
 
