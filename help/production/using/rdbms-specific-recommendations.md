@@ -1,7 +1,7 @@
 ---
-title: RDBMS特定建議
-seo-title: RDBMS特定建議
-description: RDBMS特定建議
+title: RDBMS 特定建議
+seo-title: RDBMS 特定建議
+description: RDBMS 特定建議
 seo-description: null
 page-status-flag: never-activated
 uuid: 637c1b5a-0484-4734-a012-eb4ba8036263
@@ -11,19 +11,16 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# RDBMS特定建議{#rdbms-specific-recommendations}
+# RDBMS 特定建議{#rdbms-specific-recommendations}
 
 為協助您設定維護計畫，本節列出一些適合Adobe Campaign支援的各種RDBMS引擎的建議／最佳實務。 不過，這些只是建議。 您必須依照內部程式和限制，將它們調整為符合您的需求。 您的資料庫管理員負責構建和執行這些計畫。
 
@@ -98,18 +95,19 @@ vacuum full nmsdelivery;
 
 >[!NOTE]
 >
->* Adobe建議從較小的表格開始： 如此，如果大型表上的進程失敗（故障風險最高），則至少已完成部分維護。
+>* Adobe建議從較小的表格開始：如此，如果大型表上的進程失敗（故障風險最高），則至少已完成部分維護。
 >* Adobe會重新命令新增資料模型專屬的表格，這些表格可能會受到重大更新的影響。 如果每日資料複製流 **量較大** ，則NmsRecipient可能會出現這種情況。
 >* 真 **空和重** 新索引命令將鎖定表 **** ，在執行維護時會暫停某些進程。
 >* 對於超大表（通常高於5 Gb）, **完全真空** 可能會變得相當低效，而且需要很長時間。 Adobe不建議將它用於 **YyyNmsBroadLogXxx表** 。
 >* 此維護作業可透過Adobe Campaign工作流程，使用活 **[!UICONTROL SQL]** 動來實施(如需詳細資訊，請參 [閱本節](../../workflow/using/architecture.md))。 請確定您排程的維護時間較短，不會與備份視窗發生衝突。
+
 >
 
 
 
 ### 重建資料庫 {#rebuilding-a-database}
 
-PostgreSQL不提供執行聯機表重建的簡單方法，因為真空 **完全鎖定表** ，因此無法進行常規生產。 這表示未使用表時必須執行維護。 您可以：
+PostgreSQL不提供執行聯機表重建的簡單方法，因為真空 **完全鎖定表** ，因此無法進行常規生產。 這表示在未使用表時必須執行維護。 您可以：
 
 * 在Adobe Campaign平台停止時執行維護，
 * 停止可能寫入重建表格的各種Adobe Campaign子服務(**nlserver stop wfserver instance_name** ，以停止工作流程程式)。
@@ -402,7 +400,7 @@ function sqlGetMemo(strSql)
 
       >[!NOTE]
       >
-      >根據您的配置，您可以選擇先前選擇的表或資料庫中的所有表。
+      >根據您的配置，您可以選擇以前選擇的表或資料庫中的所有表。
 
    * 如果索引碎片率高於40%，建議重建。
 
@@ -419,7 +417,7 @@ function sqlGetMemo(strSql)
 
 1. 維護計畫完成後，按一下 **[!UICONTROL Close]** 。
 1. 在Microsoft SQL Server瀏覽器中，按兩下該檔案 **[!UICONTROL Management > Maintenance Plans]** 夾。
-1. 選擇Adobe Campaign維護計畫： 工作流程中會詳細說明各種步驟。
+1. 選擇Adobe Campaign維護計畫：工作流程中會詳細說明各種步驟。
 
    請注意，已在資料夾中建立了 **[!UICONTROL SQL Server Agent > Jobs]** 對象。 此物件可讓您啟動維護計畫。 在我們的示例中，只有一個對象，因為所有維護任務都是同一計畫的一部分。
 
