@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 >
 >為避免任何故障，存取遠端共用資料的營運商必須從個別空間工作。
 
-## 建立共用連接 {#creating-a-shared-connection}
+## 建立共用連線 {#creating-a-shared-connection}
 
 若要啟用共用外部資料庫的連線，只要此連線啟用，您就可透過Adobe Campaign存取資料庫。
 
@@ -72,7 +72,7 @@ source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
    ![](assets/wf_add_data_local_external_data_param.png)
 
-   Click the **[!UICONTROL Next]** button.
+   按一下 **[!UICONTROL Next]** 按鈕。
 
 1. 選擇儲存資料的表。
 
