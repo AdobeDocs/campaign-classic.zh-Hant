@@ -1,7 +1,7 @@
 ---
-title: 向模板傳送
-seo-title: 向模板傳送
-description: 向模板傳送
+title: 路由至模板
+seo-title: 路由至模板
+description: 路由至模板
 seo-description: null
 page-status-flag: never-activated
 uuid: 1f8252c4-7f96-4759-9544-39b8f854961f
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '125'
+ht-degree: 12%
 
 ---
 
 
-# 向模板傳送{#routing-towards-a-template}
+# 路由至模板{#routing-towards-a-template}
 
 一旦消息模板發佈到執行實例上，將自動生成兩個要連結到即時或批處理事件的模板。 路由選擇步驟包括將事件連結到相應的消息模板。 連結是根據事件本身屬性和範本屬性中指定的事件類型。
 
