@@ -1,7 +1,7 @@
 ---
-title: 資料庫映射
-seo-title: 資料庫映射
-description: 資料庫映射
+title: 資料庫對應
+seo-title: 資料庫對應
+description: 資料庫對應
 seo-description: null
 page-status-flag: never-activated
 uuid: a51df3eb-cae6-4e8d-8386-d62defc1b610
@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 資料庫映射{#database-mapping}
+# 資料庫對應{#database-mapping}
 
 我們示例模式的SQL映射提供了以下XML文檔：
 
@@ -56,7 +53,7 @@ SQL名稱會根據元素名稱和類型自動確定。
 
 SQL命名規則如下：
 
-* 表格： 架構名稱空間和名稱的級聯
+* 表格：架構名稱空間和名稱的級聯
 
    在我們的示例中，表的名稱是通過 **sqltable屬性中模式的主元素輸** 入：
 
@@ -64,7 +61,7 @@ SQL命名規則如下：
    <element name="recipient" sqltable="CusRecipient">
    ```
 
-* 欄位： 元素的名稱，前面加上根據類型定義的首碼（&#39;i&#39;代表整數，&#39;d&#39;代表雙重，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等）
+* 欄位：元素的名稱，前面加上根據類型定義的首碼（&#39;i&#39;代表整數，&#39;d&#39;代表雙重，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等）
 
    欄位名是通過每個鍵入的 **sqlname** 屬性輸入的， **`<attribute>`** 並 **`<element>`**:
 
@@ -97,7 +94,7 @@ SQL欄位約束如下：
 
 若要在XML中填入欄位，您必須將 **xml** 屬性的值&quot;true&quot;新增至相關元素。
 
-**範例**: 以下是兩個XML欄位使用範例。
+**範例**:以下是兩個XML欄位使用範例。
 
 * 多行注釋欄位：
 
@@ -105,7 +102,7 @@ SQL欄位約束如下：
    <element name="comment" xml="true" type="memo" label="Comment"/>
    ```
 
-* HTML格式資料的說明：
+* HTML格式的資料說明：
 
    ```
    <element name="description" xml="true" type="html" label="Description"/>
@@ -313,7 +310,7 @@ SQL欄位約束如下：
 
 >[!NOTE]
 >
->Adobe Campaign架構中參考的序列(例如&#x200B;**NmsTrackingLogId** )必須與SQL函式關聯，該函式會傳回參數中以逗號分隔的ID數。 此函式必須稱 ******為GetNewXXXIds**，其中 **XXX** 是序列的名稱(例如&#x200B;**GetNewNmsTrackingLogIds** )。 查看隨 **應用程式提供在** datakit/nms/eng/sql/目錄中的 **postgres-nms.sql** 、 **mssql-nms.sql** 或 **oracle-nms.sql** 檔案，以恢復為每個資料庫引擎建立「NmsTrackingLogId」序列的示例。
+>Adobe Campaign架構中參考的序列(例如&#x200B;**NmsTrackingLogId** )必須與SQL函式關聯，該函式會傳回參數中以逗號分隔的ID數。 此函式必須稱 ******為GetNewXXXIds**，其中 **XXX** 是序列的名稱(例如&#x200B;**GetNewNmsTrackingLogIds** )。 查看隨 **應用程式提供在** datakit/nms/eng/sql/目錄中的 **postgres-nms.sql** 、 **mssql-nms.sql** 或 **oracle-nms sql** 檔案，以恢復為每個資料庫引擎建立「NmsTrackingLogId」序列的示例。
 
 若要宣告唯一索引鍵，請在資 **料結構的主要元素上填入autopk** 屬性（值為&quot;true&quot;）。
 
@@ -353,28 +350,28 @@ SQL欄位約束如下：
 >
 >建立表時，將自動插入主鍵設定為0的記錄。 此記錄用於避免對卷表無效的外部連接。 預設情況下，所有外鍵都以值0初始化，以便在未填充資料項時，始終可以在連接時返回結果。
 
-## 連結： 表之間的關係 {#links--relation-between-tables}
+## 連結：表之間的關係 {#links--relation-between-tables}
 
 連結描述了一個表和另一個表之間的關聯。
 
 各種關聯類型（稱為「基數」）如下：
 
-* 基數1-1: 源表的一個實例最多可以具有目標表的一個相應實例。
-* 基數1-N: 源表的一個出現次數可以具有多個目標表的相應出現次數，但目標表的一個出現次數最多可以具有源表的一個對應出現次數。
-* 基數N-N: 源表的一個實例可以具有多個目標表的相應實例，反之亦然。
+* 基數1-1:源表的一個實例最多可以具有目標表的一個相應實例。
+* 基數1-N:源表的一個出現次數可以具有多個目標表的相應出現次數，但目標表的一個出現次數最多可以具有源表的一個對應出現次數。
+* 基數N-N:源表的一個實例可以具有多個目標表的相應實例，反之亦然。
 
 在介面中，您可透過其圖示，輕鬆區分不同類型的關係。
 
 對於與促銷活動表／資料庫的連接關係：
 
-* ![](assets/join_with_campaign11.png) : 基數1-1。 例如，在收件者與目前訂單之間。 接收者一次只能與當前訂單表的一個事件相關。
-* ![](assets/externaljoin11.png) : 基數1-1，外部連接。 例如，在收件者與其國家之間。 收件者只能與表國家／地區的一個事件相關聯。 不會儲存國家／地區表格的內容。
-* ![](assets/join_with_campaign1n.png) : 基數1-N。 例如，在收件者和訂閱表格之間。 收件者可以與預訂表上的幾個實例相關。
+* ![](assets/join_with_campaign11.png) :基數1-1。 例如，在收件者與目前訂單之間。 接收者一次只能與當前訂單表的一個事件相關。
+* ![](assets/externaljoin11.png) :基數1-1，外部連接。 例如，在收件者與其國家之間。 收件者只能與表國家／地區的一個事件相關聯。 不會儲存國家／地區表格的內容。
+* ![](assets/join_with_campaign1n.png) :基數1-N。例如，在收件者和訂閱表格之間。 收件者可以與預訂表上的幾個實例相關。
 
 對於使用同盟資料庫訪問的連接關係：
 
-* ![](assets/join_fda_11.png) : 基數1-1
-* ![](assets/join_fda_1m.png) : 基數1-N
+* ![](assets/join_fda_11.png) :基數1-1
+* ![](assets/join_fda_1m.png) :基數1-N
 
 有關FDA表的詳細資訊，請參閱 [訪問外部資料庫](../../platform/using/about-fda.md)。
 
@@ -392,21 +389,21 @@ SQL欄位約束如下：
 
 * 連結的定義是在具有下列屬 **性的連結****`<element>`** 類型上輸入：
 
-   * **名稱**: 源表中連結的名稱，
-   * **目標**: 目標方案的名稱、
-   * **標籤**: 連結標籤，
-   * **revLink** （可選）: 目標架構的反向連結名稱（預設會自動推斷）,
-   * **完整性** （可選）: 源表的出現與目標表的出現的參照完整性。 可能的值如下：
+   * **名稱**:源表中連結的名稱，
+   * **目標**:目標方案的名稱、
+   * **標籤**:連結標籤，
+   * **revLink** （可選）:目標架構的反向連結名稱（預設會自動推斷）,
+   * **完整性** （可選）:源表的出現與目標表的出現的參照完整性。 可能的值如下：
 
-      * **define**: 如果源實例不再被目標實例引用，則可刪除該源實例，
-      * **正常**: 刪除源實例將初始化指向目標實例（預設模式）的連結的鍵，此類型的完整性將初始化所有外鍵，
-      * **擁有**: 刪除源事件會導致刪除目標事件，
-      * **下載**: 與 **own** （刪除時）相同，或複製發生次數（複製時）,
-      * **中性**: 什麼都不做。
-   * **revIntegrity** （可選）: 目標架構上的完整性（預設情況下為「正常」，為可選）,
-   * **revCardinality** （可選）: 值&quot;single&quot;會填入1-1（預設為1-N）的基數。
-   * **externalJoin** （可選）: 強制外連接
-   * **revExternalJoin** （可選）: 將外連接強制在反向連接上
+      * **define**:如果源實例不再被目標實例引用，則可刪除該源實例，
+      * **正常**:刪除源實例將初始化指向目標實例（預設模式）的連結的鍵，此類型的完整性將初始化所有外鍵，
+      * **擁有**:刪除源事件會導致刪除目標事件，
+      * **下載**:與own **（刪除時）相同** ，或複製發生次數（複製時）,
+      * **中性**:什麼都不做。
+   * **revIntegrity** （可選）:目標架構上的完整性（預設情況下為「正常」，為可選）,
+   * **revCardinality** （可選）:值&quot;single&quot;會填入1-1（預設為1-N）的基數。
+   * **externalJoin** （可選）:強制外連接
+   * **revExternalJoin** （可選）:將外連接強制在反向連接上
 
 
 * 連結將源表中的一個或多個欄位引用到目標表。 組成連接（元素）的字 `<join>` 段無需填充，因為預設情況下，它們會使用目標模式的內部鍵自動推斷。
@@ -450,7 +447,7 @@ SQL欄位約束如下：
 
 連結定義由組成連接的欄位補充，即目標模式中具有其XPath(&quot;@id&quot;)的主鍵，以及模式中具有其XPath(&quot;@company-id&quot;)的外鍵。
 
-外鍵會自動添加到使用與目標表中的關聯欄位相同特徵的元素中，並使用以下命名約定： 目標架構的名稱，後面接著關聯欄位的名稱（我們範例中的「company-id」）。
+外鍵會自動添加到使用與目標表中的關聯欄位相同特徵的元素中，並使用以下命名約定：目標架構的名稱，後面接著關聯欄位的名稱（我們範例中的「company-id」）。
 
 目標的擴展模式(&quot;cus:company&quot;):
 
@@ -475,11 +472,11 @@ SQL欄位約束如下：
 
 已新增「cus:recipient」表格的反向連結，並包含下列參數：
 
-* **名稱**: 自動從源模式的名稱推斷（可強制使用源模式上連結定義中的&quot;revLink&quot;屬性）
-* **revLink**: 反向連結的名稱
-* **目標**: 連結結構（「cus:recipient」結構）的索引鍵
-* **未綁定**: 連結會宣告為1-N基數的收集元素（依預設）
-* **完整性**: 預設情況下，&quot;define&quot;（可強制使用源架構上連結定義中的&quot;revIntegrity&quot;屬性）。
+* **名稱**:自動從源模式的名稱推斷（可強制使用源模式上連結定義中的&quot;revLink&quot;屬性）
+* **revLink**:反向連結的名稱
+* **目標**:連結結構（「cus:recipient」結構）的索引鍵
+* **未綁定**:連結會宣告為1-N基數的收集元素（依預設）
+* **完整性**:預設情況下，&quot;define&quot;（可強制使用源架構上連結定義中的&quot;revIntegrity&quot;屬性）。
 
 ### Example 2 {#example-2}
 
