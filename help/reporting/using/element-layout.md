@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 8fdda764-3e42-4972-a9c9-63567588931e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
 
 # 元素版面{#element-layout}
 
-除了此處詳述的各種圖表外：圖 [表類型和變數](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以調整顯示並新增元素至報表頁面。
+除了此處詳述的各種圖表外： [圖表類型和變體](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以調整顯示並新增元素至報表頁面。
 
 您可以使用容器：這些功能可讓您連結頁面的數個元素，並在欄和／或儲存格中設定其版面配置。 本節將詳細說明如何使用 [這些工具](../../web/using/defining-web-forms-layout.md#creating-containers)。
 
