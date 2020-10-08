@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: f8ae9497-9ca2-4c0c-8dc8-c0563839b036
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2386'
+ht-degree: 0%
 
 ---
 
@@ -190,7 +190,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
 >[!NOTE]
 >
->A **style=&quot;down|up**（預設情況下）**&quot;** feature強制將制表符標籤垂直定位在控制項下或上方。 此功能為選擇性。
+>A **style=&quot;down|up**（預設情況下）**&quot;** feature強制將制表符標籤垂直定位在控制項下或上方。 此功能是選取性的。
 >![](assets/d_ncs_integration_form_exemple7.png)
 >`<container style="down" type="notebook">  ... </container>`
 
@@ -647,7 +647,7 @@ SOAP方法可從頁面結尾的填 **`<leave>`** 入標籤啟動執行。
 </soapCall>
 ```
 
-服務的名稱及其實現方案是通過標籤的 **名稱****和服務屬****`<soapcall>`** 性輸入的。
+服務的名稱及其實現方案是通過標籤的 **名稱****和服務屬****`<soapcall>`** 性輸入。
 
 在標籤下的元素上 **`<param>`** 說明輸入參 **`<soapcall>`** 數。
 
