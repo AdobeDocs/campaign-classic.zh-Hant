@@ -1,7 +1,7 @@
 ---
-title: 關於架構版本
-seo-title: 關於架構版本
-description: 關於架構版本
+title: 關於綱要版本
+seo-title: 關於綱要版本
+description: 關於綱要版本
 seo-description: null
 page-status-flag: never-activated
 uuid: edb4d47d-b507-4d86-9873-ebd5f6acefc6
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: d5b08e4e-060c-4185-9dac-af270918e2b9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 7%
 
 ---
 
 
-# 關於架構版本{#about-schema-edition}
+# 關於綱要版本{#about-schema-edition}
 
 Adobe Campaign採用資料結構描述：
 
@@ -28,13 +28,13 @@ Adobe Campaign採用資料結構描述：
 * 定義 Campaign 應用程式中不同資料物件之間的連結。
 * 定義及描述每個物件中包含的個別欄位。
 
-如需深入瞭解Campaign內建表格及其互動，請參閱 [Campaign Classic資料模型](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)。
+如需深入瞭解Campaign內建表格及其互動，請參閱 [Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
 ## 擴充或建立結構 {#extending-or-creating-schemas}
 
-若要將欄位或索引或其他元素新增至促銷活動中的其中一個核心資料結構，例如收件者表(nms:recipient)，您必須擴充該結構。 有關詳細資訊，請參閱「擴 [展模式](../../configuration/using/extending-a-schema.md) 」部分。
+若要將欄位或索引或其他元素新增至促銷活動中的其中一個核心資料結構，例如收件者表(nms:recipient)，您必須擴充該結構。 For more on this, refer to the [Extending a schema](../../configuration/using/extending-a-schema.md) section.
 
-若要新增Adobe Campaign中不現成可用的全新資料類型（例如合約表格），您可以直接建立自訂結構。 有關詳細資訊，請參閱「數 [據結構](../../configuration/using/data-schemas.md) 」。
+若要新增Adobe Campaign中不現成可用的全新資料類型（例如合約表格），您可以直接建立自訂結構。 For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -44,7 +44,7 @@ Adobe Campaign採用資料結構描述：
 
 枚舉首先在模式的主要元素之前定義。 它們可讓您在清單中顯示值，以限制使用者對指定欄位的選擇。
 
-例如：
+範例:
 
 ```
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
@@ -63,7 +63,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您也可以使用使用者管理的枚舉(通常在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** 下)來指定指定欄位的值。 這些是有效的全局枚舉，如果您的枚舉可能在您正在使用的特定模式之外使用，則是更好的選擇。
+>您也可以使用使用者管理的枚舉(通常在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** 下)來指定指定欄位的值。 這些是有效的全局枚舉，如果您的枚舉可能在您正在使用的特定模式之外使用，則是一個更好的選擇。
 
 要瞭解有關枚舉的詳細資訊，請參 [閱枚舉](../../configuration/using/schema-structure.md#enumerations)[`<enumeration>` 和元素](../../configuration/using/elements-and-attributes.md#enumeration--element) 。
 
@@ -73,7 +73,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 這些欄位可以是唯一的，也可以參照一或多個欄位。
 
-範例：
+範例:
 
 ```
 <dbindex name="email" unique="true">
@@ -102,7 +102,7 @@ xpath **** 屬性指向您要索引的架構中的欄位。
 
 主鍵也可以使用內部屬性 **定義** 。
 
-例如：
+範例:
 
 ```
 <key name="householdId" internal="true">
@@ -114,13 +114,13 @@ xpath **** 屬性指向您要索引的架構中的欄位。
 
 >[!IMPORTANT]
 >
->在建立新模式或在模式擴展期間，需要為整個模式保留相同的主鍵序列值(@pkSequence)。
+>建立新模式或在模式擴展期間，需要為整個模式保留相同的主鍵序列值(@pkSequence)。
 
 要瞭解有關鍵的更多資訊，請參閱「鍵 [管理」部分](../../configuration/using/database-mapping.md#management-of-keys) 。
 
 ## 屬性（欄位） {#attributes--fields-}
 
-屬性可讓您定義組成資料物件的欄位。 您可以使用 **[!UICONTROL Insert]** 架構版工具列中的按鈕，將空屬性範本拖放到游標所在的XML中。 有關詳細資訊，請參閱「數 [據結構](../../configuration/using/data-schemas.md) 」。
+屬性可讓您定義組成資料物件的欄位。 您可以使用 **[!UICONTROL Insert]** 架構版工具列中的按鈕，將空屬性範本拖放到游標所在的XML中。 For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_2.png)
 
@@ -209,7 +209,7 @@ XML欄位的示例也儲存在SQL欄位中，該欄位具有 **@dataPolicy** 屬
 
 這裡，&quot;xpath-dst&quot;對應於目標模式中的主鍵，&quot;xpath-src&quot;對應於源模式中的外鍵。
 
-## 稽核記錄 {#audit-trail}
+## 稽核軌跡 {#audit-trail}
 
 您可能想要在結構底部加入一個有用的元素，即追蹤元素（稽核記錄）。
 
@@ -225,9 +225,9 @@ XML欄位的示例也儲存在SQL欄位中，該欄位具有 **@dataPolicy** 屬
 
 ![](assets/schemaextension_getting_started_3.png)
 
-有關詳細資訊，請參閱「更 [新資料庫結構](../../configuration/using/updating-the-database-structure.md) 」部分。
+有關詳細資訊，請參閱[更新資料庫結構](../../configuration/using/updating-the-database-structure.md)區段。
 
 >[!NOTE]
 >
->如果修改不影響資料庫結構，則只需重新生成結構。 要執行此操作，請選擇要更新的架構，按一下右鍵並選擇 **[!UICONTROL Actions > Regenerate selected schemas...]** 。 有關詳細資訊，請參閱「重新生 [成方案](../../configuration/using/regenerating-schemas.md) 」部分。
+>如果修改不影響資料庫結構，則只需重新生成結構。 要執行此操作，請選擇要更新的架構，按一下右鍵並選擇 **[!UICONTROL Actions > Regenerate selected schemas...]** 。 For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
