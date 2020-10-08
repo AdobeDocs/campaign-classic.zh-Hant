@@ -9,21 +9,18 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 促銷活動資料模型說明{#data-model-description}
+# Campaign data model description{#data-model-description}
 
-Adobe Campaign隨附預先定義的資料模型。 本節提供Adobe Campaign資料模型內建表格及其互動的詳細資訊。
+Adobe Campaign 隨附預先定義的資料模型。本節提供Adobe Campaign資料模型內建表格及其互動的詳細資訊。
 
 要訪問每個表的說明，請轉至 **[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選擇資源，然後按一下選 **[!UICONTROL Documentation]** 項卡。
 
@@ -31,7 +28,7 @@ Adobe Campaign隨附預先定義的資料模型。 本節提供Adobe Campaign資
 
 >[!NOTE]
 >
->在XML中描述了應用中資料的物理和邏輯結構。 它遵循Adobe Campaign專屬的語法，稱為結構。 如需Adobe Campaign結構描述的詳細資訊，請閱讀 [本節](../../configuration/using/about-schema-reference.md)。
+>並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## 主表的說明 {#description-main-tables}
 
@@ -51,8 +48,8 @@ Adobe Campaign依賴包含連結在一起的表格的關係式資料庫。
 
 此為傳送收件者的預 **設表格**。 因此，它包含透過各種管道傳送所需的資訊：
 
-* 電子郵件： 電子郵件地址。
-* iEmailFormat: 電子郵件的偏好格式（1代表文字，2代表HTML，若未定義則為0）。
+* 電子郵件：電子郵件地址。
+* iEmailFormat:電子郵件的偏好格式（1代表文字，2代表HTML，若未定義則為0）。
 * sAddress1、sAddress2、sAddress3、sAddress4、sZipCode、sCity用於建立郵遞區號（與1997年5月的XPZ 10-011 AFNOR標準一致）。
 * sPhone、sMobilePhone、sFax分別包含手機、行動電話和傳真號碼。
 * iBlockList是用於描述檔的預設退出標幟（1表示「未訂閱」，否則為0）。
@@ -107,7 +104,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 它包含 **樹狀結構中所有可見的資料夾** ，這些資料夾位於 **控制台的「導航** 」頁籤中。
 
-已鍵入資料夾： sModel欄位的值指定可包含在資料夾中的資料類型。 此欄位也可讓用戶端主控台以對應的表單正確顯示資料。 此欄位的可能值在navTree中定義。
+已鍵入資料夾：sModel欄位的值指定可包含在資料夾中的資料類型。 此欄位也可讓用戶端主控台以對應的表單正確顯示資料。 此欄位的可能值在navTree中定義。
 
 樹由iParentId和iChildCount欄位管理。 sFullName欄位提供樹中資料夾的完整路徑。 最後，欄位上有一個唯一索引，代表sName檔案夾的內部名稱。
 
@@ -117,7 +114,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 ![](assets/data-model_delivery.png)
 
-**NmsBroadLogMsg**: 此表與 **nms:broadLogMsg模式匹配** 。 它是傳送記錄表的擴充功能。
+**NmsBroadLogMsg**:此表與 **nms:broadLogMsg模式匹配** 。 它是傳送記錄表的擴充功能。
 
 ## 促銷活動管理 {#campaign-management}
 
@@ -125,15 +122,15 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 ![](assets/data-model_campaign.png)
 
-* **NmsOperation**: 此表與 **nms:operation架構匹配** 。 它包含行銷促銷活動的資料。
-* **NmsDeliveryOutline**: 此表與 **nms:deliveryOutline架構匹配** 。 它包含傳送的延伸屬性（傳送大綱）。
-* **NmsDlvOutlineItem**: 此表與 **nms:dlvOutlineItem模式匹配** 。 它包含傳送大綱的文章。
-* **NmsDeliveryCustomization**: 此表與 **nms:deliveryCustomization架構匹配** 。 它包含遞送的個人化欄位。
-* **NmsBudget**: 此表與 **nms:budget架構匹配** 。 它包含促銷活動、計畫、方案、任務和／或傳送的預算資料。
-* **NmsDocument**: 此表與 **nms:document架構匹配** 。 它以檔案（影像、Excel或Word檔案等）的形式包含促銷活動的行銷檔案
-* **XtkWorkflow**: 此表與 **xtk:workflow架構相符** 。 它包含促銷活動定位。
-* **NmsTask**: 此表與 **nms:task架構匹配** 。 它包含行銷工作的定義。
-* **NmsAsset**: 此表與 **nms:asset架構匹配** 。 它包含行銷資源的定義。
+* **NmsOperation**:此表與 **nms:operation架構匹配** 。 它包含行銷促銷活動的資料。
+* **NmsDeliveryOutline**:此表與 **nms:deliveryOutline架構匹配** 。 它包含傳送的延伸屬性（傳送大綱）。
+* **NmsDlvOutlineItem**:此表與 **nms:dlvOutlineItem模式匹配** 。 它包含傳送大綱的文章。
+* **NmsDeliveryCustomization**:此表與 **nms:deliveryCustomization架構匹配** 。 它包含遞送的個人化欄位。
+* **NmsBudget**:此表與 **nms:budget架構匹配** 。 它包含促銷活動、計畫、方案、任務和／或傳送的預算資料。
+* **NmsDocument**:此表與 **nms:document架構匹配** 。 它以檔案（影像、Excel或Word檔案等）的形式包含促銷活動的行銷檔案
+* **XtkWorkflow**:此表與 **xtk:workflow架構相符** 。 它包含促銷活動定位。
+* **NmsTask**:此表與 **nms:task架構匹配** 。 它包含行銷工作的定義。
+* **NmsAsset**:此表與 **nms:asset架構匹配** 。 它包含行銷資源的定義。
 
 ## 通訊一致性 {#communication-consistency}
 
@@ -141,11 +138,11 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 ![](assets/data-model_typology.png)
 
-* **NmsTypelogy規則**: 此表與 **nms:typelogyRule** Schema匹配。 它包含根據類型套用至傳送的規則。
-* **NmsTypelogy**: 此表與 **nms：類型學架構匹配** 。 它包含要套用至符合類型學之傳送的規則集。
-* **NmsTypelogyRuleRel**: 此表與 **nms:typelogyRuleRel模式匹配** 。 它包含了類型及其規則之間的關係。
-* **NmsVolumeLine**: 此表與 **nms:volumeLine模式匹配** 。 它包含容量規則的可用行集。
-* **已使用NmsVolume**: 此表與 **nms:volumeUnced模式匹配** 。 它包含能力規則的所有衝減行。
+* **NmsTypelogy規則**:此表與 **nms:typelogyRule** Schema匹配。 它包含根據類型套用至傳送的規則。
+* **NmsTypelogy**:此表與 **nms：類型學架構匹配** 。 它包含要套用至符合類型法之傳送的規則集。
+* **NmsTypelogyRuleRel**:此表與 **nms:typelogyRuleRel模式匹配** 。 它包含了類型及其規則之間的關係。
+* **NmsVolumeLine**:此表與 **nms:volumeLine模式匹配** 。 它包含容量規則的可用行集。
+* **已使用NmsVolume**:此表與 **nms:volumeUnced模式匹配** 。 它包含能力規則的所有衝減行。
 
 ## 回應管理 {#response-management}
 
@@ -167,7 +164,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 * 查詢模式，它允許您定義假設條件的啟動表。
 * 個人的連結，可讓您根據查詢結構來識別個人。
 * 交易日期。 此欄位並非必填欄位，但建議您使用此欄位來限制計算周長。
-* 事務處理金額： 這是自動計算收入指標的可選欄位。
+* 事務處理金額：這是自動計算收入指標的可選欄位。
 
 **假設周長（儲存在XML中的資訊）**
 
@@ -213,21 +210,21 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 ![](assets/data-model_simulation.png)
 
-* **NmsSimulation**: 此表與 **nms:simulation架構匹配** 。 它代表一組交貨或選件在指定人口上的模擬。
-* **NmsDlvSimulationRel**: 此表與 **nms:dlvSimulationRel模式匹配** 。 它包含模擬中考慮的交貨清單。 模擬範圍會儲存在XML中。
-* **NmsOfferSimulationRel**: 此表與 **nms:offerSimulationRel架構匹配** 。 它可讓您將模擬與選件連結。
+* **NmsSimulation**:此表與 **nms:simulation架構匹配** 。 它代表一組交貨或選件在指定人口上的模擬。
+* **NmsDlvSimulationRel**:此表與 **nms:dlvSimulationRel模式匹配** 。 它包含模擬中考慮的交貨清單。 模擬範圍會儲存在XML中。
+* **NmsOfferSimulationRel**:此表與 **nms:offerSimulationRel架構匹配** 。 它可讓您將模擬與選件連結。
 
 ## 互動模組 {#interaction-module}
 
 這組表格會連結至 **Interaction** 模組，讓其成為單一或數個適合的選件，以便在與特定連絡人互動時即時回應。 如需詳細資訊，請參閱「互 [動與選件管理」](../../interaction/using/interaction-and-offer-management.md)。
 
-* **NmsOffer**: 此表與 **nms:offer架構匹配** 。 它包含每個行銷選件的定義。
-* **NmsCompotationRcp**: 此表與 **nms:compositionRcp模式匹配** 。 它包含傳送給每個人的跨通道行銷建議記錄。 記錄是在準備或有效地向個人提出建議時建立的。
-* **NmsOfferSpace**: 此表與 **nms:offerSpace架構匹配** 。 它包含了提出建議的位置的定義。
-* **NmsOfferContext**: 此表與 **nms:offerContext架構相符** 。 它包括關於命題適用性的附加准則以及權計算公式的定義。
-* **NmsOfferView**: 此表與 **nms:offerView匹配**。 它包含選件表示法。
-* **NmsOfferCategory**: 此表與 **nms:offerCategory匹配**。 它包含選件類別。
-* **NmsOfferEnv**: 此表與 **nms:offerEnv匹配**。 它包含選件環境。
+* **NmsOffer**:此表與 **nms:offer架構匹配** 。 它包含每個行銷選件的定義。
+* **NmsCompotationRcp**:此表與 **nms:compositionRcp模式匹配** 。 它包含傳送給每個人的跨通道行銷建議記錄。 記錄是在準備或有效地向個人提出建議時建立的。
+* **NmsOfferSpace**:此表與 **nms:offerSpace架構匹配** 。 它包含了提出建議的位置的定義。
+* **NmsOfferContext**:此表與 **nms:offerContext架構相符** 。 它包括關於命題適用性的附加准則以及權計算公式的定義。
+* **NmsOfferView**:此表與 **nms:offerView匹配**。 它包含選件表示法。
+* **NmsOfferCategory**:此表與 **nms:offerCategory匹配**。 它包含選件類別。
+* **NmsOfferEnv**:此表與 **nms:offerEnv匹配**。 它包含選件環境。
 
 ## 消息中心模組 {#message-center-module}
 
@@ -259,12 +256,12 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 這組表格會連結至行動應用 **程式頻道**，可透過應用程式將個人化通知傳送至iOS和Android終端。 如需詳細資訊，請參閱關於 [行動應用程式頻道](../../delivery/using/about-mobile-app-channel.md)。
 
-* **NmsMobileApp**: 此表與 **nms:mobileApp架構相符** 。 它包含Adobe Campaign中定義的行動應用程式。
-* **NmsAppSubscription**: 此表與 **nms:appSubscription架構相符** 。 它包含有關一或多個應用程式的訂閱者資訊。
-* **NmsAppSubscriptionRcp**: 此表與 **nms:appSubscriptionRcp架構相符** 。 它可讓您將訂閱應用程式的訪客連結至收件者表格。
-* **NmsExcludeLogAppSubRcp**: 此表與 **nms:excludeLogAppSubRcp架構相符** 。
-* **NmsTrackingLogAppSubRcp**: 此表與 **nms:trackingLogAppSubRcp架構相符** 。
-* **NmsBroadLogAppSubRcp**: 此表與 **nms:broadLogAppSubRcp架構匹配** 。
+* **NmsMobileApp**:此表與 **nms:mobileApp架構相符** 。 它包含Adobe Campaign中定義的行動應用程式。
+* **NmsAppSubscription**:此表與 **nms:appSubscription架構相符** 。 它包含有關一或多個應用程式的訂閱者資訊。
+* **NmsAppSubscriptionRcp**:此表與 **nms:appSubscriptionRcp架構相符** 。 它可讓您將訂閱應用程式的訪客連結至收件者表格。
+* **NmsExcludeLogAppSubRcp**:此表與 **nms:excludeLogAppSubRcp架構相符** 。
+* **NmsTrackingLogAppSubRcp**:此表與 **nms:trackingLogAppSubRcp架構相符** 。
+* **NmsBroadLogAppSubRcp**:此表與 **nms:broadLogAppSubRcp架構匹配** 。
 
 ## 社交行銷模組 {#social-marketing-module}
 
@@ -272,8 +269,8 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 ![](assets/data-model_social.png)
 
-* **NmsVisitor**: 此表與 **nms:visitor架構相符** 。 它包含訪客的相關資訊。
-* **NmsVisitorSub**: 此表與 **nms:visitorSub架構相符** 。 它可讓您將訪客連結至他們所訂閱的服務（Twitter或Facebook）。
-* **NmsFriendShipRel**: 此表與 **nms:friendshipRel架構匹配** 。 它可讓您在Facebook服務的內容中連結訪客與其朋友。
-* **NmsVisitorInterestRel**: 此表格符合 **nms:visitorInterestRel** 架構。 它可讓您連結訪客及其興趣。
-* **NmsInterest**: 此表與 **nms:interest模式匹配** 。 它包含每位訪客的興趣清單。
+* **NmsVisitor**:此表與 **nms:visitor架構相符** 。 它包含訪客的相關資訊。
+* **NmsVisitorSub**:此表與 **nms:visitorSub架構相符** 。 它可讓您將訪客連結至他們所訂閱的服務（Twitter或Facebook）。
+* **NmsFriendShipRel**:此表與 **nms:friendshipRel架構匹配** 。 它可讓您在Facebook服務的內容中連結訪客與其朋友。
+* **NmsVisitorInterestRel**:此表格符合 **nms:visitorInterestRel** 架構。 它可讓您連結訪客及其興趣。
+* **NmsInterest**:此表與 **nms:interest模式匹配** 。 它包含每位訪客的興趣清單。
