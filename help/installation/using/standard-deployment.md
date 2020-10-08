@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: d714b759-cc08-4656-876c-9820d5c56216
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
 這種配置可以處理大量接收者（500,000到1,000,000），因為資料庫伺服器（以及可用頻寬）是主要的限制因素。
 
-## 功能 {#features}
+## Features {#features}
 
 ### 優勢 {#advantages}
 
@@ -59,7 +59,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
    * 首次公開用於追蹤並指向虛擬IP位址(VIP)上的負載平衡器，然後散布至兩個正面伺服器，
    * 第二個則暴露給內部使用者，供他們透過主控台存取，並指向相同的應用程式伺服器。
 
-* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL（1521 for Oracle,5432 for PostgreSQL等）埠。 有關詳細資訊，請參閱「資料庫 [訪問」一節](../../installation/using/network-configuration.md#database-access)。
+* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL（1521 for Oracle,5432 for PostgreSQL等） 埠。 有關詳細資訊，請參閱「資料庫 [訪問」一節](../../installation/using/network-configuration.md#database-access)。
 
 ### 安裝應用程式伺服器 {#installing-the-application-server}
 
@@ -69,10 +69,10 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
 在以下示例中，實例的參數為：
 
-* 實例的名稱：示 **范**
+* 實例的名稱： **展示**
 * DNS掩碼： **console.campaign.net*** （僅用於客戶端控制台連接和報告）
 * 語言：英文
-* 資料庫：促銷 **活動：demo@dbsrv**
+* 資料庫： **促銷活動：demo@dbsrv**
 
 ### 安裝兩台前端伺服器 {#installing-the-two-frontal-servers}
 
@@ -86,8 +86,8 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
 1. 請遵循下列章節所述的Web伺服器整合程式(IIS、Apache):
 
-   * 針對Linux:與Linux [的Web伺服器整合](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * 針對Windows:與Windows [版Web伺服器整合](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. 建立 **示範** 。 有兩種方法可以做到：
 
@@ -147,7 +147,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
       For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
-1. 啟動網站並測試從URL的重新導向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)。
+1. 啟動網站並測試從URL的重新導向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
    瀏覽器應顯示下列訊息（視負載平衡器所重新導向的URL而定）:
 
@@ -163,8 +163,8 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
    如需詳細資訊，請參閱下列章節：
 
-   * 針對Linux:啟 [動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * 針對Windows:啟 [動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * 針對Linux: [啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * 針對Windows: [啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. 啟動Adobe Campaign伺服器。
 1. 在Adobe Campaign主控台中，使用管理員登入 **連線** ，毋需密碼，然後啟動部署精靈。
