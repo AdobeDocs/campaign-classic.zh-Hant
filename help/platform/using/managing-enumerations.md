@@ -1,7 +1,7 @@
 ---
-title: 管理枚舉
-seo-title: 管理枚舉
-description: 管理枚舉
+title: 管理分項清單
+seo-title: 管理分項清單
+description: 管理分項清單
 seo-description: null
 page-status-flag: never-activated
 uuid: 23ad4cae-237f-48e5-b111-cfe88cf0b864
@@ -11,16 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 7674c856-2b64-4a85-9ffa-3e14a142028e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
 
-# 管理枚舉{#managing-enumerations}
+# 管理分項清單{#managing-enumerations}
 
 ## 關於枚舉 {#about-enumerations}
 
@@ -95,7 +95,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-因此，當使用者在「公司」欄位（在Adobe Campaign主控台或表單中）中輸入值 **NEILSEN** 時，值 **NIELSEN Ltd**。值替換由別名清除工 **作流程執** 行。 請參閱 [執行資料清理](#running-data-cleansing)。
+因此，當使用者在「公司」欄位（在Adobe Campaign主控台或表單中）中輸入值 **NEILSEN** 時，值 **NIELSEN Ltd**。 值替換由別名清除工 **作流程執** 行。 請參閱 [執行資料清理](#running-data-cleansing)。
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
