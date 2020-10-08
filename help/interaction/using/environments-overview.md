@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: c7b4103d-99b2-4e64-a457-ee0e3326b172
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 8%
 
 ---
 
@@ -30,4 +30,4 @@ source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
 >
 >以下配置需由技術管理員 **執行**。
 
-觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) ，以瞭解Campaign互動的架構，並瞭解選件引擎的運作方式。
+觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，以瞭解Campaign互動的架構，並瞭解選件引擎的運作方式。
