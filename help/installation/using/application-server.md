@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 此應用程式已獲得Oracle和 **OpenJDK開發的Java開發套件(JDK)的批准**。
 
-支援的版本在「相容性」 [表中詳述](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+支援的版本在「相容性」 [表中詳述](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 >
 >在僅執行傳送代理(**nlserver mta** process)或工作流伺服器(**nlserver wfserver process** )的機器上，不需要安裝JDK。
 
-要下載Java JDK，請連接到： [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html)。
+要下載Java JDK，請連接到： [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 **警告：您必須下載JDK，而不是JRE。**
 
@@ -70,7 +70,7 @@ yum install java-1.8.0-openjdk
 
 ## 匯出報表 {#exporting-reports}
 
-Adobe Campaign可讓您以Microsoft excel和Adobe PDF格式匯出平台報表。 對於Microsoft excel格式，Adobe Campaign使用 **LibreOffice**。 對於Adobe PDF格式，Adobe Campaign會使用 **PhantomJS轉換程式** 。 PhantomJs包含在出廠包中，且LibreOffice必須安裝在Adobe Campaign應用程式伺服器在(**nlserver web** process)上執行的機器上。
+Adobe Campaign可讓您以Microsoft Excel和Adobe PDF格式匯出平台報表。 對於Microsoft Excel格式，Adobe Campaign使用 **LibreOffice**。 對於Adobe PDF格式，Adobe Campaign會使用 **PhantomJS轉換程式** 。 PhantomJs包含在出廠包中，且LibreOffice必須安裝在Adobe Campaign應用程式伺服器在(**nlserver web** process)上執行的機器上。
 
 >[!NOTE]
 >
