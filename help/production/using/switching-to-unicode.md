@@ -1,7 +1,7 @@
 ---
-title: 切換為Unicode
-seo-title: 切換為Unicode
-description: 切換為Unicode
+title: 切換為 Unicode
+seo-title: 切換為 Unicode
+description: 切換為 Unicode
 seo-description: null
 page-status-flag: never-activated
 uuid: 5f15b285-7377-453a-aa98-ca4cf14a4c80
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 0f5399a8-860d-4a1b-86a9-9011b973346b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 9%
 
 ---
 
 
-# 切換為Unicode{#switching-to-unicode}
+# 切換為 Unicode{#switching-to-unicode}
 
 對於Linux/ **PostgreSQL中的現有** prod實例，切換到unicode的步驟如下：
 
