@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '7859'
 ht-degree: 5%
@@ -172,7 +169,7 @@ Adobe Campaign的整體設定是在位於安裝目錄 **conf****** 目錄的serv
   </tr> 
   <tr> 
    <td> extraSandboxDirectories<br /> </td> 
-   <td> 額外的沙盒目錄：要加入沙盒中的其他路徑（分隔昏迷）。<br /> </td> 
+   <td> 額外的沙盒目錄：要加入沙盒中的其他路徑（分離彗差）。<br /> </td> 
    <td> String<br /> </td> 
    <td> '/home/customers/,/sftp/' <br /> </td> 
   </tr> 
@@ -621,7 +618,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> 超時<br /> </td> 
-   <td> 轉換逾時：最大轉換時間（以秒為單位）。 超過此臨界值時，轉換程式會停止，並產生錯誤。<br /> </td> 
+   <td> 轉換逾時：最大轉換時間（以秒為單位）。 超過此臨界值後，轉換程式會停止，並產生錯誤。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 120<br /> </td> 
   </tr> 
@@ -1371,7 +1368,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
-   <td> 符合資格的選件數量上限，直接在主張後排序，以便儲存以供統計資料使用。<br /> </td> 
+   <td> 符合資格的選件數量上限，直接在主張之後排序，以便儲存為統計資料。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1715,7 +1712,7 @@ For additional information, refer to this [section](../../installation/using/con
 
 在「 **mta >子節點** 」中，設定下列參數。 這是子伺服器的配置。
 
-如需詳細資訊，請參閱「電子郵 [件傳送最佳化」](../../installation/using/email-deliverability.md#email-sending-optimization)。
+如需詳細資訊，請參閱電 [子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization)。
 
 <table> 
  <thead> 
@@ -1759,7 +1756,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
-   <td> 待審消息：等待在記憶體中傳送的最大消息數。 <br /> </td> 
+   <td> 待審消息：等待傳送的記憶體中消息的最大數量。 <br /> </td> 
    <td> 長<br /> </td> 
    <td> 2000<br /> </td> 
   </tr> 
@@ -2857,7 +2854,7 @@ For additional information, refer to this [section](../../installation/using/con
 
 ### jsp {#jsp}
 
-以下是Web > **jsp節點的不同參數** 。 這是JSP所使用參數的配置。
+以下是「網頁> jsp」節 **點的不同參數** 。 這是JSP所使用參數的配置。
 
 <table> 
  <thead> 
