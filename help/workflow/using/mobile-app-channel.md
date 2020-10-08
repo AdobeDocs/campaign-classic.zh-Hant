@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: f75cef72-a841-4b58-b135-7aed770bc4e3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '67'
+ht-degree: 22%
 
 ---
 
@@ -32,8 +32,8 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NMAC退出管理</span><br /> </td> 
-   <td> <span class="uicontrol">mobileAppOptOutMagt</span><br /> </td> 
+   <td> <span class="uicontrol">NMAC退出管理</span> <br /> </td> 
+   <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
    <td> 此工作流程會更新行動裝置上取消訂閱的通知。 每6小時從凌晨1點到午夜觸發一次。 For more details, refer to this <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">section</a>.<br /> </td> 
   </tr> 
  </tbody> 
