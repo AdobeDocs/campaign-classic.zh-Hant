@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -87,13 +84,13 @@ Thus, in the previous example, the cleanup workflow of the remote instance will 
 
 ## 使用外部資料最佳化電子郵件個人化 {#optimizing-email-personalization-with-external-data}
 
-從build 8740開始，此選 **[!UICONTROL Prepare the personalization data with a workflow]** 項現在可在傳送屬 **[!UICONTROL Analysis]** 性的標籤中取用。
+從build 8740開始，傳 **[!UICONTROL Prepare the personalization data with a workflow]** 送屬性的標籤中 **[!UICONTROL Analysis]** 現在提供這個選項。
 
 在傳送分析期間，此選項會自動建立並執行將所有連結至目標的資料儲存在暫存表格中的工作流程，包括FDA中連結之表格的資料。
 
 勾選此選項，可大幅提升執行個人化的效能。
 
-## 在工作流中使用來自外部資料庫的資料 {#using-data-from-an-external-database-in-a-workflow}
+## 在工作流程中使用來自外部資料庫的資料 {#using-data-from-an-external-database-in-a-workflow}
 
 在數個Adobe Campaign工作流程活動中，您可以使用儲存在外部資料庫中的資料。
 
