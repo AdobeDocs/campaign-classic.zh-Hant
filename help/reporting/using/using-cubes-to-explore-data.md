@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: e1ab1e82-8194-40a8-8df3-e7cfbaa3e777
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 行銷分析可讓您更輕鬆地建立報表，並透過立方體從資料庫識別和選取資料。 這可讓您：
 
-* 根據立方建立報表。 此過程在以下位置詳細說明：探 [索報表中的資料](#exploring-the-data-in-a-report)。
+* 根據立方建立報表。 此過程在以下位置詳細說明： [探索報表中的資料](#exploring-the-data-in-a-report)。
 * 收集資料庫中的資料，並將其分組至清單中，例如識別並建立目標和傳送。 有關詳細資訊，請參閱 [構建目標人口](#building-a-target-population)。
 * 將透視表插入報表中，引用報表中的現有立方。 有關詳細資訊，請參 [閱將透視表插入報表](#inserting-a-pivot-table-into-a-report)。
 
@@ -38,7 +38,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 要建立基於立方的報表，請按一下 **[!UICONTROL Create]** 宇宙中的按 **[!UICONTROL Reports]** 鈕，然後選擇要使用的立方。
 
-此過程在以下位置詳細說明：根 [據立方建立報表](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)。
+此過程在以下位置詳細說明： [根據立方建立報表](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)。
 
 ### 步驟2 —— 選擇行和列 {#step-2---selecting-lines-and-columns}
 
@@ -85,7 +85,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 預設情況下，只顯示一個度量。 要添加或配置度量：
 
-1. Click the **[!UICONTROL Measures]** button.
+1. 按一下 **[!UICONTROL Measures]** 按鈕。
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
@@ -101,7 +101,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   然後，您可以選擇是否顯示度量標籤。 有關詳細資訊，請參閱 [配置顯示](../../reporting/using/concepts-and-methodology.md#configuring-the-display)。
+   然後，您可以選擇是否顯示度量標籤。 有關詳細資訊，請參 [閱配置顯示](../../reporting/using/concepts-and-methodology.md#configuring-the-display)。
 
 1. 有可能使用現有的措施來建立新的措施。 若要這麼做，請按一 **[!UICONTROL Create a measure]** 下並設定它。
 
@@ -116,6 +116,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    * 比例：這種測量類型使您能夠計算為給定尺寸測量的記錄數。 您可以根據維度或子維度計算比例。
    * 變化：此度量可讓您計算層級值的變化。
    * 標準差：此類型的測量可讓您計算每組儲存格內與平均值的偏差。 例如，您可以比較所有現有區段的購買量。
+
    建立的度量將添加到報告中。
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
