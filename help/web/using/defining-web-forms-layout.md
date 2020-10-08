@@ -1,7 +1,7 @@
 ---
-title: 定義Web表單版面
-seo-title: 定義Web表單版面
-description: 定義Web表單版面
+title: 定義網路表單版面
+seo-title: 定義網路表單版面
+description: 定義網路表單版面
 seo-description: null
 page-status-flag: never-activated
 uuid: ae8659d0-3608-44dd-93ec-33c418a66ad0
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 67d1d39b-3a5f-4ed6-8fcf-570891043b10
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
 
-# 定義Web表單版面{#defining-web-forms-layout}
+# 定義網路表單版面{#defining-web-forms-layout}
 
 ## 建立容器 {#creating-containers}
 
