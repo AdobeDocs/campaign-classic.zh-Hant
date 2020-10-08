@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 豐富資料{#enriching-data}
+# 擴充資料{#enriching-data}
 
 ## 關於豐富資料 {#about-enriching-data}
 
@@ -56,7 +53,7 @@ ht-degree: 0%
 1. 類型 **[!UICONTROL Split]** 活動可讓我們根據分數建立收件者子集。
 1. 對於每個子集，都 **[!UICONTROL Delivery]** 會添加類型活動。
 
-## 步驟1: 定位 {#step-1--targeting}
+## 步驟1:定位 {#step-1--targeting}
 
 第一個查詢可讓我們定位在過去六個月內新增至資料庫的收件者。
 
@@ -68,7 +65,7 @@ ht-degree: 0%
 
 然後 **[!UICONTROL Intersection]** 會新增一個類型活動，以鎖定在過去六個月內新增至資料庫的收件者，以及參加上次競爭的收件者。
 
-## 步驟2: 濃縮 {#step-2--enrichment}
+## 步驟2:濃縮 {#step-2--enrichment}
 
 在此範例中，我們要根據表格中儲存的欄位， **[!UICONTROL Score]** 個人化傳送 **[!UICONTROL Competition results]** 內容。 此表與收件者表具有1-n類型關係。 此活 **[!UICONTROL Enrichment]** 動可讓我們將連結至篩選維度的表格資料新增至工作流程的工作表。
 
@@ -80,19 +77,19 @@ ht-degree: 0%
 
    ![](assets/uc1_enrich_7.png)
 
-1. 輸入ID和標籤，然後在欄位 **[!UICONTROL Limit the line count]** 中選取選 **[!UICONTROL Data collected]** 項。 在字 **[!UICONTROL Lines to retrieve]** 段中，選擇&#39;1&#39;作為值。 對於每個收件者，擴充活動會將表格中的單 **[!UICONTROL Competition results]** 一行新增至工作流程的工作表。 按一下 **[!UICONTROL Next]**.
+1. 輸入ID和標籤，然後在欄位 **[!UICONTROL Limit the line count]** 中選取選 **[!UICONTROL Data collected]** 項。 在字 **[!UICONTROL Lines to retrieve]** 段中，選擇&#39;1&#39;作為值。 對於每個收件者，擴充活動會將表格中的單 **[!UICONTROL Competition results]** 一行新增至工作流程的工作表。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_8.png)
 
-1. 在此範例中，我們想要復原收件者的最高分數，但僅針對上一個競賽。 若要這麼做，請在欄位中新增篩選 **[!UICONTROL Competition name]** 器，以排除所有與先前比賽相關的行。 按一下 **[!UICONTROL Next]**.
+1. 在此範例中，我們想要復原收件者的最高分數，但僅針對上一個競賽。 若要這麼做，請在欄位中新增篩選 **[!UICONTROL Competition name]** 器，以排除所有與先前比賽相關的行。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_9.png)
 
-1. 移至畫面 **[!UICONTROL Sort]** 並按一下按 **[!UICONTROL Add]** 鈕，選取欄 **[!UICONTROL Score]** 位並核取欄中的方塊， **[!UICONTROL descending]** 以遞減順序排序 **[!UICONTROL Score]** 欄位項目。 對於每個收件者，擴充活動會新增一行，以符合上次遊戲的最高分數。 按一下 **[!UICONTROL Next]**.
+1. 移至畫面 **[!UICONTROL Sort]** 並按一下按 **[!UICONTROL Add]** 鈕，選取欄 **[!UICONTROL Score]** 位並核取欄中的方塊， **[!UICONTROL descending]** 以遞減順序排序 **[!UICONTROL Score]** 欄位項目。 對於每個收件者，擴充活動會新增一行，以符合上次遊戲的最高分數。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_10.png)
 
-1. 在視窗 **[!UICONTROL Data to add]** 中，按兩下欄 **[!UICONTROL Score]** 位。 對於每個收件者，擴充活動只會新增欄 **[!UICONTROL Score]** 位。 按一下 **[!UICONTROL Finish]**.
+1. 在視窗 **[!UICONTROL Data to add]** 中，按兩下欄 **[!UICONTROL Score]** 位。 對於每個收件者，擴充活動只會新增欄 **[!UICONTROL Score]** 位。 按一下 **[!UICONTROL Finish]**。
 
    ![](assets/uc1_enrich_11.png)
 
@@ -112,7 +109,7 @@ ht-degree: 0%
 
 ![](assets/uc1_enrich_14.png)
 
-## 步驟3: 分割和傳送 {#step-3--split-and-delivery}
+## 步驟3:分割和傳送 {#step-3--split-and-delivery}
 
 若要根據收件者的分數來排序，會在 **[!UICONTROL Split]** 富集後新增活動。
 
