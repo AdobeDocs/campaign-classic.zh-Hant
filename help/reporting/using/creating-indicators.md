@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: a5fc6c78-b4fb-41fd-a072-7be4ece3c554
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 1%
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 若要這麼做，請套用下列步驟：
 
-1. Click the **[!UICONTROL Add]** button.
+1. 按一下 **[!UICONTROL Add]** 按鈕。
 1. 選擇要應用的度量類型和公式。 在這裡，我們想統計一下接受治療的婦女人數。
 
    我們的度量是基於事實模式並使用運算 **[!UICONTROL Count]** 子。
@@ -136,7 +136,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. 可以切換尺寸軸、刪除它們、添加新測量等。 可能的操作詳細如下：使 [用立方來探索資料](../../reporting/using/using-cubes-to-explore-data.md)。
+1. 可以切換尺寸軸、刪除它們、添加新測量等。 可能的操作詳細如下： [使用立方體來探索資料](../../reporting/using/using-cubes-to-explore-data.md)。
 
    若要這麼做，請使用適當的圖示。
 
