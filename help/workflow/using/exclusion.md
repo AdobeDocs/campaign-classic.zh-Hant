@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -27,7 +24,7 @@ ht-degree: 1%
 
 排除 **類型活動**，根據從中提取一個或多個其他目標的主目標建立目標。
 
-要配置此活動，請輸入其標籤並選擇主收件者集： 來自主集的人口族群可讓您建構結果。 將排除由主集和至少一個條目活動共用的配置檔案。
+要配置此活動，請輸入其標籤並選擇主收件者集：來自主集的人口族群可讓您建構結果。 將排除由主集和至少一個條目活動共用的配置檔案。
 
 ![](assets/s_user_segmentation_exclu.png)
 
@@ -35,7 +32,7 @@ ht-degree: 1%
 >
 >如需設定和使用排除活動的詳細資訊，請參 [閱排除人口（排除）](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-)。
 
-如果您 **[!UICONTROL Generate complement]** 想利用剩餘人口，請勾選選項。 補充內容將包括主要的外來人口減去即將外來的人口。 然後，活動中將添加一個附加的輸出轉換，如下所示：
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. 補充內容將包括主要的外來人口減去即將外來的人口。 然後，活動中將添加一個附加的輸出轉換，如下所示：
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
