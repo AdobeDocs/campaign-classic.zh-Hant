@@ -1,7 +1,7 @@
 ---
-title: 建立消息模板
-seo-title: 建立消息模板
-description: 建立消息模板
+title: 建立訊息範本
+seo-title: 建立訊息範本
+description: 建立訊息範本
 seo-description: null
 page-status-flag: never-activated
 uuid: 8155275c-729b-40ca-abae-e6b75889cc1a
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 2c2a7196-9183-46b1-b1e2-4a07a53e93b4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 12%
 
 ---
 
 
-# 建立消息模板{#creating-the-message-template}
+# 建立訊息範本{#creating-the-message-template}
 
 1. 前往Adobe Campaign **[!UICONTROL Message Center >Transactional message templates]** 樹狀結構中的資料夾。
 1. 在事務性消息模板清單中，按一下右鍵並 **[!UICONTROL New]** 在下拉菜單中選擇，或按一下事務性消息模 **[!UICONTROL New]** 板清單上方的按鈕。
