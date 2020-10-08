@@ -1,7 +1,7 @@
 ---
-title: 關於立方
-seo-title: 關於立方
-description: 關於立方
+title: 關於立方體
+seo-title: 關於立方體
+description: 關於立方體
 seo-description: null
 page-status-flag: never-activated
 uuid: 429bd5e9-288a-4c71-9b01-c4c5690f5abe
@@ -11,24 +11,24 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 10%
 
 ---
 
 
-# 關於立方{#about-cubes}
+# 關於立方體{#about-cubes}
 
 透過 **Marketing Analytics模組可探索資料庫中的資** 料。 它可讓您分析和測量資料、計算統計資料、簡化並最佳化報表建立和計算。 除此之外，行銷分析還可讓您建立報表並建立目標人口族群。 在識別這些項目後，這些項目會儲存在可用於Adobe Campaign（定位、分段等）的清單中。
 
 立方可用來產生特定的內建報表，包括傳送報表（傳送追蹤、點按、開啟等）。 基於立方的報告只能用作500萬條資料線以下資料卷的標準。
 
-您可以擴充資料庫探索和分析能力，同時讓最終使用者更容易設定報表和表格：他們只需在建立其報表或表以處理計算、度量和統計資訊時選擇一個現有（完全配置）立方。
+您可以擴充資料庫的探索和分析能力，同時讓最終使用者更容易設定報表和表格：他們只需在建立其報表或表格時，選取現有的 (完全設定好的) 立方體，以處理計算、測量和統計數據。
 
-建立並設定好立方後，立方便會用於報表查詢方塊和Web應用程式。 它們可在樞紐表內使用和處理。
+建立並設定立方體後，便可以用於報表查詢方塊和 Web 應用程式；立方體並可以在樞紐分析表內使用及操作。
 
 >[!CAUTION]
 >
@@ -41,6 +41,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    * 將資料匯總並儲存在工作表中，以根據用戶需求預先計算指標，
    * 減少用於報告和查詢的各種計算中涉及的資料量，從而顯著優化指標計算時間，
    * 簡化資料的存取，讓使用者根據不同的維度來控制資料（無論是否預先匯總）。
+
    For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
 
 1. 在以下視圖中建立透視表：
@@ -49,6 +50,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    * 選取要顯示的資料及其顯示模式，
    * 個人化使用的措施和指標，
    * 為不具技術背景的使用者提供互動式分析工具。
+
    有關詳細資訊，請參閱使 [用立方體來探索資料](../../reporting/using/using-cubes-to-explore-data.md)。
 
 1. 使用立方中計算和聚集的資料構建查詢。
