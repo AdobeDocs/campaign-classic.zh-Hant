@@ -1,7 +1,7 @@
 ---
-title: 通過LDAP連接
-seo-title: 通過LDAP連接
-description: 通過LDAP連接
+title: 透過 LDAP 連線
+seo-title: 透過 LDAP 連線
+description: 透過 LDAP 連線
 seo-description: null
 page-status-flag: never-activated
 uuid: 13a426bc-7c34-49e5-ac8e-26d830845f28
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1563db7c-ccb6-46b3-9299-67ec0aedaca0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 1%
 
 ---
 
 
-# 通過LDAP連接{#connecting-through-ldap}
+# 透過 LDAP 連線{#connecting-through-ldap}
 
 ## 設定促銷活動和LDAP {#configuring-campaign-and-ldap}
 
@@ -61,7 +61,7 @@ LDAP配置在部署嚮導中執行。 在第 **[!UICONTROL LDAP integration]** �
 
       無加密（僅用於測試階段）。
 
-* 選擇用戶驗證模式： **[!UICONTROL Automatically compute the unique user identifier]** (請參 [閱步驟Distinguished Name calculation](#distinguished-name-calculation))或 **[!UICONTROL Search the unique user identifier in the directory]** (請參閱 [步驟Searching for identifiers](#searching-for-identifiers))。
+* 選擇用戶驗證模式： **[!UICONTROL Automatically compute the unique user identifier]** (請參閱步驟 [唯一判別名計算](#distinguished-name-calculation))或( **[!UICONTROL Search the unique user identifier in the directory]** 請參閱步驟搜 [尋識別碼](#searching-for-identifiers))。
 
 ## 相容性 {#compatibility}
 
@@ -178,7 +178,7 @@ LDAP配置在部署嚮導中執行。 在第 **[!UICONTROL LDAP integration]** �
 
 本節提供一些簡單的使用案例，幫助您根據需要實現最合適的配置。
 
-1. 已在LDAP目錄中建立使用者，但未在Adobe Campaign中建立。
+1. 使用者已在LDAP目錄中建立，但未在Adobe Campaign中建立。
 
    Adobe Campaign可以設定，讓使用者透過其LDAP驗證存取平台。 Adobe Campaign必須能夠控制LDAP目錄中ID/密碼組合的有效性，以便在Adobe Campaign中即時建立運算元。 若要這麼做，請勾選 **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** 選項。 在這種情況下，還需要配置組同步：需 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 要選取選項。
 
