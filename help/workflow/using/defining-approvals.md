@@ -1,5 +1,5 @@
 ---
-title: 定義審批
+title: 定義核准
 description: 運算子可使用核准來決定工作流程，或確認其持續執行。
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -21,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 定義審批 {#defining-approvals}
+# 定義核准 {#defining-approvals}
 
 運算子可使用核准來決定工作流程，或確認其持續執行。
 
@@ -37,19 +34,19 @@ ht-degree: 0%
 
 您可在本節中找到核准 [範例](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
-運算子可以以兩種方式回應： 驗證是否使用電子郵件訊息中連結的網頁，或透過主控台。
+運算子可以以兩種方式回應：驗證是否使用電子郵件訊息中連結的網頁，或透過主控台。
 
 >[!NOTE]
 >
 >儲存回應後，就無法加以修改。
 
-## 傳送電子郵件 {#sending-emails}
+## 傳送電子郵件{#sending-emails}
 
 可以接收包含到可回應的網頁的連結的批准消息。 要讓目標營運商收到核准電子郵件，營運商的電子郵件地址必須完整。 如果不是這樣，運算子必須使用主控台來回應
 
 操作員管理在本節中有詳 [細說明](../../platform/using/access-management.md)。
 
-核准電子郵件會持續傳送。 預設的傳送範本為 **[!UICONTROL notifyAssignee]**: 它會儲存在資料 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 夾中。 您可自訂此藍本，也建議您製作復本並變更每個活動的範本。
+核准電子郵件會持續傳送。 預設的傳送範本為 **[!UICONTROL notifyAssignee]**:它會儲存在資料 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 夾中。 您可自訂此藍本，也建議您製作復本並變更每個活動的範本。
 
 透過此範本建立的傳送會儲存在資料 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** 夾中。
 
@@ -87,14 +84,14 @@ ht-degree: 0%
 >
 >在按時間順序處理到期日時，不需要指定其順序。
 
-當延 **[!UICONTROL Do not terminate the task]** 遲超出時，此選項會使批准保持活動狀態。 此模式可讓您在啟用核準時管理提醒： 營運商仍可回應。 此選項預設為停用，這表示任務在到期時即視為完成，而運算子可能不再回應。
+當延 **[!UICONTROL Do not terminate the task]** 遲超出時，此選項會使批准保持活動狀態。 此模式可讓您在啟用核準時管理提醒：營運商仍可回應。 此選項預設為停用，這表示任務在到期時即視為完成，而運算子可能不再回應。
 
 您可以建立四種到期類型：
 
-* **任務開始後延遲**: 有效期的計算方式是將指定的時間長度新增至核准啟動的日期。
-* **在指定日期後延遲**: 到期日的計算方式是將時間長度新增至您指定的日期。
-* **在指定日期之前延遲**: 有效期的計算方式是從您指定的日期減去時間長度。
-* **按指令碼計算的過期時間**: 有效期是使用JavaScript計算。
+* **任務開始後延遲**:有效期的計算方式是將指定的時間長度新增至核准啟動的日期。
+* **在指定日期後延遲**:到期日的計算方式是將時間長度新增至您指定的日期。
+* **在指定日期之前延遲**:有效期的計算方式是從您指定的日期減去時間長度。
+* **按指令碼計算的過期時間**:有效期是使用JavaScript計算。
 
    下列範例會計算傳送開始之日24小時前的到期日(由 **vars.deliveryId識別**):
 
