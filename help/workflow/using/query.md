@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # 查詢{#query}
 
-## 建立查詢 {#creating-a-query}
+## Creating a query {#creating-a-query}
 
 查詢可讓您根據條件選擇目標。 您可以將區段代碼關聯至查詢結果，並將其他資料插入。
 有關查詢示例的詳細資訊，請參 [閱本節](../../workflow/using/querying-recipient-table.md)。
@@ -50,7 +47,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   如有必要，查詢可以根據傳入轉場的資料，方法是選擇定位和篩選維 **[!UICONTROL Temporary schema]** 度時進行選擇。
+   如有必要，查詢可以根據傳入轉場的資料，方法是選擇定位和篩選維 **[!UICONTROL Temporary schema]** 度時進行選取。
 
    ![](assets/query_temporary_table.png)
 
@@ -124,15 +121,16 @@ ht-degree: 0%
 
    * 如果選擇恢復幾行(**[!UICONTROL Limit the line count]**)，可以指定要收集的行數。
    * 如果收集的欄包含匯總，例如宣告的失敗次數、網站的平均支出等。 您可以使用 **[!UICONTROL Aggregates]** 值。
+
    ![](assets/query_add_collection_param.png)
 
-1. 指定系列的子選取範圍。 例如： 僅限過去15天內購買。
+1. 指定系列的子選取範圍。 例如：僅限過去15天內購買。
 
    ![](assets/query_add_columns_collection_filter.png)
 
 1. 如果您已選取 **[!UICONTROL Limit the line count]** 選項，請定義篩選收集資料的順序。 一旦收集的行數超過您指定要保留的行數，篩選順序就可讓您指定要保留的行。
 
-## 範例： 以簡單收件者屬性為目標 {#example--targeting-on-simple-recipient-attributes}
+## 範例：以簡單收件者屬性為目標 {#example--targeting-on-simple-recipient-attributes}
 
 在以下示例中，查詢試圖確定18至30歲在法國生活的男子。 此查詢將用於工作流程中，例如使其成為獨家選件。
 
@@ -148,6 +146,7 @@ ht-degree: 0%
    * 30歲以下的收件者。
    * 18歲以上的收件者。
    * 住在法國的收件者。
+
    ![](assets/query_example.png)
 
    您可以查看與條件組合匹配的SQL:
@@ -192,7 +191,7 @@ ht-degree: 0%
 
    請確定您知道查詢的執行計畫。 避免完整表掃描，尤其是每分鐘執行的即時查詢或近乎即時的查詢。
 
-有關詳細資訊，請參[閱資料模型最佳實踐](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)[和資料庫映射節](../../configuration/using/database-mapping.md) 。
+有關詳細資訊，請參[閱資料模型最佳實踐](https://helpx.adobe.com/tw/campaign/kb/acc-data-model-best-practices.html)[和資料庫映射節](../../configuration/using/database-mapping.md) 。
 
 ### 函式 {#functions}
 
@@ -221,16 +220,17 @@ SQL中的篩選維等效於內部連接：
 
 For more on filtering dimensions, refer to [this section](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
 
-### 建築 {#architecture}
+### 架構 {#architecture}
 
 * 建立與生產平台類似的卷、參數和架構開發平台。
 * 在開發與生產環境中使用相同的值。 請盡量使用相同的：
 
-   * 作業系統、
+   * 作業系統,
    * 版本、
    * 資料、
    * 應用程式、
    * 卷。
+
    >[!NOTE]
    >
    >在開發環境中運作的功能可能無法在資料可能不同的生產環境中運作。 嘗試找出主要差異，以預測風險並準備解決方案。
