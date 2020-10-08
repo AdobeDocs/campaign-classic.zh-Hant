@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 3%
@@ -35,7 +32,7 @@ ht-degree: 3%
 
 本節將介紹驗證傳送 [的步驟](../../delivery/using/steps-validating-the-delivery.md)。
 
-## 收件箱呈現 {#inbox-and-email-rendering}
+## 收件匣轉譯 {#inbox-and-email-rendering}
 
 收件匣轉換功能可讓您在主要電子郵件用戶端上預覽訊息、掃描內容和信譽，以及瞭解收件者閱讀訊息的方式。
 
@@ -71,7 +68,7 @@ ht-degree: 3%
 
 ### 進行驗證程式
 
-您可以定義包含Adobe Campaign運算子和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保對促銷活動的各種程式進行完整監控：鎖定、內容、預算、擷取和傳送證明。 視其權限而定，使用者會收到通知、收到校樣，並可驗證或拒絕訊息。 在本節 [中進一步瞭解](../../campaign/using/marketing-campaign-approval.md#approval-process)。
+您可以定義包含Adobe Campaign運算子和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保對促銷活動的各種程式進行完整監控：定位、內容、預算、擷取和傳送證明。 視其權限而定，使用者會收到通知、收到校樣，並可驗證或拒絕訊息。 在本節 [中進一步瞭解](../../campaign/using/marketing-campaign-approval.md#approval-process)。
 
 ### 使用波
 
@@ -99,7 +96,7 @@ ht-degree: 3%
 
 * 對於每個IPAffinity元素，請聲明可使用的IP位址。 [進一步瞭解](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您選 [擇的](../../campaign/using/about-campaign-typologies.md) 「類型」中 **[!UICONTROL Managing affinities with IP addresses]** ，使用欄位將傳送連結至管理上述相似性的傳送伺服器(MTA)。 [進一步瞭解](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* 在您選 [擇的](../../campaign/using/about-campaign-typologies.md) 「類型」中 **[!UICONTROL Managing affinities with IP addresses]** ，使用欄位將傳送連結至管理上述相似性的傳送伺服器(MTA)。 [進一步瞭解](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 傳送電子郵件後，請檢查標題以確認傳送的IP位址。 您的電子郵件管理員應協助您取得標題資訊。
 
