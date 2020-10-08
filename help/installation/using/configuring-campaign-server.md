@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3593'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -36,8 +33,8 @@ ht-degree: 3%
 如需詳細資訊，請參閱下列章節：
 
 * [控制面板文件](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
-* [代管模型](../../installation/using/hosting-models.md)
-* [Campaign Classic內部部署與代管功能矩陣](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [託管模式](../../installation/using/hosting-models.md)
+* [Campaign Classic內部部署與代管功能矩陣](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)
 * [混合型和托管型配置步驟](../../installation/using/about-hybrid-and-hosted-models.md) )
 
 Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf資料夾中。 配置分佈在兩個檔案上：
@@ -209,7 +206,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 定義區域後，必須將每個運算子連結到其中一個運算子，才能登錄到實例，並且該運算子的IP地址必須包含在區域中引用的地址或地址範圍中。
 
-區域的技術配置是在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
+區域的技術組態會在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
 
 在此之前，您必須首先配置現成枚舉，以將標籤連結到 **[!UICONTROL Security zone]** serverConf.xml檔案中定義的區 **域的內部名稱** 。
 
@@ -325,7 +322,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
    要查看相關參數，請參 **閱serverConf.xml檔案** 。
 
-1. 若要在下拉式清單中啟用相似性選取，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
+1. 若要在下拉式清單中啟用相似性選擇，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
 
    ![](assets/ipaffinity_enum.png)
 
@@ -354,7 +351,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 * **混合** 或 **內部部署**:將允許的URL新增至 **serverConf.xml檔案**。 詳細資訊請參閱以下章節。
 * **代管**:新增URL以允許透過「控 **制面板」**。 如需詳細資訊，請參閱[專屬文件](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
 
-使用 **Hybrid****和** On-premise **代管模型時，管理員需要在** Server.xml檔案中參考新的urlPermission **** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+使用 **Hybrid****和** On-premise **代管模型時，管理員需要參考** Server **** Conf.xml檔案中的新urlPermission。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
 存在三種連接保護模式：
 
@@ -558,7 +555,7 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
    下拉式清單包含先前使用的相關性。 它會隨著時間而以不同的輸入值完成。
 
-1. 開啟 **nl6/conf/config-`<instance>.xml`**file。
+1. 開啟 **nl6/conf/config-`<instance>.xml`** file。
 1. 按如下方式修改與模組 **[!UICONTROL wfserver]** 匹配的行：
 
    ```
