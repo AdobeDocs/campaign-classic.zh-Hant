@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    ![](assets/query_editor_nveau_34.png)
 
-1. 在窗口 **[!UICONTROL Data filtering]** 中，選擇 **[!UICONTROL Filtering conditions]**。
+1. In the **[!UICONTROL Data filtering]** window, select **[!UICONTROL Filtering conditions]**.
 1. 在視窗 **[!UICONTROL Target element]** 中，擷取過去7天沒有追蹤記錄的描述檔的篩選條件包含兩個步驟。 您需要選取的元素是多對多連結。
 
    * 首先，為第一 **[!UICONTROL Recipient delivery logs (broadlog)]** 欄選取收集元素(橘色節 **[!UICONTROL Value]** 點)。
@@ -83,7 +83,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    ![](assets/query_editor_nveau_40.png)
 
-   按一下 **[!UICONTROL OK]**. 窗口 **[!UICONTROL Data formatting]** 已配置。
+   按一下 **[!UICONTROL OK]**。窗口 **[!UICONTROL Data formatting]** 已配置。
 
    如需有關新增計算欄位的詳細資訊，請參閱本節。
 
