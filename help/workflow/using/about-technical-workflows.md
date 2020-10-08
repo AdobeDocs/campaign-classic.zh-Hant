@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 38%
 
 ---
 
 
 # 關於技術工作流程{#about-technical-workflows}
 
-本節中詳述的工作流程會與不同的Adobe Campaign內建套件一起安裝。 這些套件和相關的技術工作流程取決於您的授權合約。 預設情況下，它們位於以下節點的子資料夾中： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
+本節中詳述的工作流程會與不同的Adobe Campaign內建套件一起安裝。 這些套件和相關的技術工作流程取決於您的授權合約。 預設情況下，它們位於以下節點的子資料夾中： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**
 
 >[!NOTE]
 >
@@ -32,21 +32,21 @@ source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 本節包含有關涉及下列套件之技術工作流程的資訊：
 
-* [交貨](../../workflow/using/deliveries.md)
-* [行銷活動](../../workflow/using/campaign.md)
-* [網頁分析](../../workflow/using/web-analytics.md)
+* [傳遞](../../workflow/using/deliveries.md)
+* [Campaign](../../workflow/using/campaign.md)
+* [網站分析](../../workflow/using/web-analytics.md)
 * [分散式行銷](../../workflow/using/distributed-marketing.md)
 * [傳送能力監控（電子郵件傳送能力）](../../workflow/using/email-deliverability.md)
 * [收件箱呈現(IR)](../../workflow/using/inbox-rendering.md)
 * [互動](../../workflow/using/interaction.md)
-* [選件引擎的控制](../../workflow/using/control-of-offer-engine.md)
-* [消息中心（控制項）](../../workflow/using/message-center--control-.md)
-* [消息中心（執行）](../../workflow/using/message-center--execution-.md)
+* [優惠方案引擎的控制](../../workflow/using/control-of-offer-engine.md)
+* [訊息中心 (控制項)](../../workflow/using/message-center--control-.md)
+* [訊息中心 (控制項)](../../workflow/using/message-center--execution-.md)
 * [行動應用程式頻道](../../workflow/using/mobile-app-channel.md)
-* [線路頻道](../../workflow/using/line-channel.md)
-* [行銷資源(MRM)](../../workflow/using/marketing-resources--mrm-.md)
+* [LINE 頻道](../../workflow/using/line-channel.md)
+* [行銷資源 (MRM)](../../workflow/using/marketing-resources--mrm-.md)
 * [社交行銷](../../workflow/using/social-marketing.md)
-* [與Adobe Experience cloud解決方案整合](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
+* [與 Adobe Experience Cloud 解決方案整合](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
 * [隱私權資料保護法規](../../workflow/using/general-data-protection-regulation--gdpr-.md)
-* [轉移至中部採購](../../workflow/using/transfer-to-mid-sourcing.md)
-* [中端採購平台](../../workflow/using/mid-sourcing-platform.md)
+* [轉移至中間來源](../../workflow/using/transfer-to-mid-sourcing.md)
+* [中間來源平台](../../workflow/using/mid-sourcing-platform.md)
