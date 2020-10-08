@@ -11,11 +11,8 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 1%
@@ -141,7 +138,7 @@ ht-degree: 1%
 
 **依網域劃分**
 
-報告的第二部分詳細說明按Internet網域（而非錯誤類型）劃分失敗訊息的詳細資訊。 在本例中，連結至 **Error** indicator(@value)的公式為： Count（@status=2和@domain=&quot;域名的值&quot;），即對此域狀態失敗的所有消息的計數。
+報告的第二部分詳細說明按Internet網域（而非錯誤類型）劃分失敗訊息的詳細資訊。 在本例中，連結至 **Error** indicator(@value)的公式為：Count（@status=2和@domain=&quot;域名的值&quot;），即對此域狀態失敗的所有消息的計數。
 
 ## 瀏覽器 {#browsers-1}
 
@@ -166,7 +163,7 @@ ht-degree: 1%
    <td> Sum(@visitors)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 頁面檢視<br /> </td> 
+   <td> Page views<br /> </td> 
    <td> @totalPages<br /> </td> 
    <td> 使用此瀏覽器傳送連結（所有傳送）的點按總數。<br /> </td> 
    <td> Sum(@pages) <br /> </td> 
@@ -228,7 +225,7 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 要傳送的訊息數<br /> </td> 
+   <td> Number of messages to deliver<br /> </td> 
    <td> @totalTarget<br /> </td> 
    <td> 傳送分析期間處理的訊息總數。<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
@@ -368,7 +365,7 @@ ht-degree: 1%
    <td> 新連絡人<br /> </td> 
    <td> @newContacts<br /> </td> 
    <td> 連結至收件者的訪客數目計數。<br /> </td> 
-   <td> 公式： count(@id)<br /> Filter: @recipient-id != 0<br /> </td> 
+   <td> 公式：count(@id)<br /> Filter:@recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> 開啟的郵件<br /> </td> 
@@ -729,7 +726,7 @@ ht-degree: 1%
    <td> 累積的點按次數<br /> </td> 
    <td> @totalClicks<br /> </td> 
    <td> 目標收件者點按總次數與成功傳送訊息次數的比率。<br /> </td> 
-   <td> percent([indicator/@totalRecipientClick], [indicator/@success])<br /> </td> 
+   <td> percent([indicator/@totalRecipientClick], [indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> 點按次數<br /> </td> 
@@ -769,7 +766,7 @@ ht-degree: 1%
   <tr> 
    <td> 規則拒絕的訊息<br /> </td> 
    <td> @reject<br /> </td> 
-   <td> 在分析期間根據分類規則忽略的地址數： 未指定的地址、隔離的地址、添加到塊清單中的地址等。<br /> </td> 
+   <td> 在分析期間根據分類規則忽略的地址數：未指定的地址、隔離的地址、添加到塊清單中的地址等。<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
