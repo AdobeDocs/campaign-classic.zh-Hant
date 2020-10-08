@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 2%
@@ -191,7 +188,7 @@ ht-degree: 2%
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. 如果您在呼叫 **sudo apt-get update時遇到以下錯誤：** 「The method driver /usr/lib/apt/methods/https could not be found」（方法驅動程式/usr/lib/apt/methods/https找不到） ****，您應該運行該命令：
+1. 如果您在呼叫 **sudo apt-get update時遇到以下錯誤：** 「The method driver /usr/lib/apt/methods/https could not be found」（方法驅動程式/usr/lib/apt/methods/https找不到） ****，則應運行該命令：
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
@@ -272,9 +269,9 @@ ht-degree: 2%
 |---|---|
 | 工作架構 | 用於工作表的資料庫模式 |
 | 倉庫 | 要使用的預設倉庫名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | WEEK_START會話參數。 依預設設為0。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS會話參數。 預設設定為TRUE。 此選項可用於禁用雪花快取結果。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 時區名稱 | 預設為空，這表示使用Campaign Classic應用程式伺服器的系統時區。 此選項可用於強制TIMEZONE會話參數。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
+| WeekStart | WEEK_START會話參數。 依預設設為0。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
+| UseCachedResult | USE_CACHED_RESULTS會話參數。 預設設定為TRUE。 此選項可用於禁用雪花快取結果。 <br>有關詳細資訊，請參見[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
 
 ### CentOS上的雪花 {#snowflake-centos}
 
