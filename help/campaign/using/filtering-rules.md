@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 3%
@@ -29,7 +26,7 @@ ht-degree: 3%
 
 篩選規則可連結至其他類型的規則（控制項、壓力等） 排版，或分組為專用的篩選 **類型** 。 如需詳細資訊，請參閱「建立 [及使用篩選類型學」](#creating-and-using-a-filtering-typology)。
 
-## 建立篩選規則 {#creating-a-filtering-rule}
+## Creating a filtering rule {#creating-a-filtering-rule}
 
 例如，您可以篩選電子報訂閱者，以防止將通訊傳送給未成年的收件者。
 
@@ -71,11 +68,11 @@ ht-degree: 3%
 
 ## 建立和使用篩選排版法 {#creating-and-using-a-filtering-typology}
 
-您可以建立 **[!UICONTROL Filtering]** 類型： 它們只包含篩選規則。
+您可以建立 **[!UICONTROL Filtering]** 類型：它們只包含篩選規則。
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-選取目標時，這些特定類型可以連結至傳送： 在傳送精靈中，按一下連 **[!UICONTROL To]** 結，然後按一下標 **[!UICONTROL Exclusions]** 簽。
+選取目標時，這些特定類型可以連結至傳送：在傳送精靈中，按一下連 **[!UICONTROL To]** 結，然後按一下標 **[!UICONTROL Exclusions]** 簽。
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
