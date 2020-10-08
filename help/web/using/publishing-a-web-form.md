@@ -1,7 +1,7 @@
 ---
-title: 發佈Web表格
-seo-title: 發佈Web表格
-description: 發佈Web表格
+title: 發佈網路表單
+seo-title: 發佈網路表單
+description: 發佈網路表單
 seo-description: null
 page-status-flag: never-activated
 uuid: 37222829-1d56-438c-a4ca-878925debcb5
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: f4322902-c72d-4443-9c30-09add4c615a3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 2%
 
 ---
 
 
-# 發佈Web表格{#publishing-a-web-form}
+# 發佈網路表單{#publishing-a-web-form}
 
 ## 預先載入表單資料 {#pre-loading-the-form-data}
 
@@ -164,5 +164,5 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 >[!NOTE]
 >
->如需完整追蹤提供的回應，請匯出回應並檢視或建立專屬報表，請使用選用的「調查」 **模組** 。 如需詳細資訊，請參閱[本小節](../../web/using/about-surveys.md)。
+>如需完整追蹤提供的回應，請匯出回應並檢視或建立專屬報表，請使用選用的「調查」 **模組** 。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
 
