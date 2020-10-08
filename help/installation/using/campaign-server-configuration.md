@@ -1,7 +1,7 @@
 ---
-title: 促銷活動伺服器設定
-seo-title: 促銷活動伺服器設定
-description: 促銷活動伺服器設定
+title: Campaign 伺服器設定
+seo-title: Campaign 伺服器設定
+description: Campaign 伺服器設定
 seo-description: null
 page-status-flag: never-activated
 uuid: a1fadad2-e888-4dd8-bc1f-04df16ba7d46
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 3%
 
 ---
 
 
-# 促銷活動伺服器設定{#campaign-server-configuration}
+# Campaign 伺服器設定{#campaign-server-configuration}
 
 以下各節詳細說明必備的伺服器組態，以確保Adobe Campaign在大部分設定中都能有效運作。
 
@@ -28,7 +28,7 @@ source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
 
 >[!NOTE]
 >
->伺服器端組態只能由Adobe針對Adobe代管的部署執行。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+>伺服器端組態只能由Adobe針對Adobe代管的部署執行。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 ## 內部識別碼 {#internal-identifier}
 
@@ -69,7 +69,7 @@ Confirmation: XXXX
    D:\log\AdobeCampaign
    ```
 
-* 在Linux中，請至 **customer.sh檔案** ，並指出：匯 **出XTK_VAR_DIR=/app/log/AdobeCampaign**。
+* 在Linux中，請至 **customer.sh檔案** ，並指出： **匯出XTK_VAR_DIR=/app/log/AdobeCampaign**。
 
    For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
@@ -96,7 +96,7 @@ Confirmation: XXXX
 
    在此示例中，使用Linux中的 **vi命令** 編輯檔案。 您可以使用任何 **.txt** 或 **.xml編輯器來編輯** 。
 
-* **單實例**:每個實例(模組： **mta、wfserver****、** Mail **in** Mail **Sms** 和Stat ****)。
+* **單實例**:每個實例(模組： **mta** wfserver **,** inMail **,** sms和stat **,** Stat ****)。
 
    可使用實例的配置檔案配置啟用：
 
