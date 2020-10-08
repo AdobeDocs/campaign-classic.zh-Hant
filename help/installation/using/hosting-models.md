@@ -1,7 +1,7 @@
 ---
-title: 代管模型
-seo-title: 代管模型
-description: 代管模型
+title: 託管模式
+seo-title: 託管模式
+description: 託管模式
 seo-description: null
 page-status-flag: never-activated
 uuid: a9e035d9-326b-4e14-8f05-a22fe38d172b
@@ -11,22 +11,22 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 3175b9ab-e305-4f19-8267-d6172fa07a2a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 3%
 
 ---
 
 
-# 代管模型{#hosting-models}
+# 託管模式{#hosting-models}
 
 Adobe Campaign提供三種代管模型的選擇，提供選擇最佳模型的靈活彈性和自由，或是符合業務需求的模型。
 
 >[!NOTE]
 >
->主要安裝和設定步驟僅能由Adobe針對Adobe代管的部署執行。 例如，要配置伺服器和實例配置檔案。 若要進一步瞭解部署模式之間的主要差異，請參閱 [本文章](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。 如果您有代管或混合型號，請參閱本 [節](../../installation/using/about-hybrid-and-hosted-models.md)。
+>主要安裝和設定步驟僅能由Adobe針對Adobe代管的部署執行。 例如，要配置伺服器和實例配置檔案。 若要進一步瞭解部署模式之間的主要差異，請參閱 [本文章](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。 如果您有代管或混合型號，請參閱本 [節](../../installation/using/about-hybrid-and-hosted-models.md)。
 
 * **托管服務（托管）**
 
