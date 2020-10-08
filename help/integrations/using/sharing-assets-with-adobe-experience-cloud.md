@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 discoiquuid: d10624ea-d961-4162-879b-1754f897d763
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 使用Adobe Experience Cloud共用資產{#sharing-assets-with-adobe-experience-cloud}
+# Sharing assets with Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
 Experience Cloud資產提供單一、集中的儲存庫，存放可供您跨解決方案共用的行銷資產。 資產是數位檔案、影像、視訊或音訊檔案。
 
