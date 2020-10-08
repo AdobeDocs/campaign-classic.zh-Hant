@@ -1,7 +1,7 @@
 ---
-title: 在Twitter上設定發佈
-seo-title: 在Twitter上設定發佈
-description: 在Twitter上設定發佈
+title: 在 Twitter 上設定發佈
+seo-title: 在 Twitter 上設定發佈
+description: 在 Twitter 上設定發佈
 seo-description: null
 page-status-flag: never-activated
 uuid: 88867881-fb59-4f0d-862e-537d498e9aef
@@ -11,16 +11,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 9d74ed9c-0055-4556-a205-6e5fea11816b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 3%
 
 ---
 
 
-# 在Twitter上設定發佈{#configuring-publishing-on-twitter}
+# 在 Twitter 上設定發佈{#configuring-publishing-on-twitter}
 
 為了讓Adobe Campaign能夠傳送推文至您的Twitter帳戶，您必須為這些帳戶委派Adobe Campaign的寫入存取權。 若要這麼做，請套用下列設定步驟：
 
@@ -53,7 +53,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 為了讓Adobe Campaign能夠傳送推文至您的Twitter帳戶，您必須為每個Twitter帳戶建立一個Twitter應用程式。 若要這麼做，請套用下列步驟：
 
 1. 登入您的Twitter帳戶。
-1. 在您的網際網路瀏覽器中輸入下列位址： [https://apps.twitter.com/](https://apps.twitter.com/)。
+1. 在您的網際網路瀏覽器中輸入下列位址： [https://apps.twitter.com/](https://apps.twitter.com/).
 1. 然後按一 **[!UICONTROL Create New App]** 下右邊的按鈕。
 
    ![](assets/social_create_twitter_app_001.png)
@@ -84,7 +84,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
    >[!NOTE]
    >
-   >預 **[!UICONTROL Synchronize subscriptions]** 設會啟用選項。 勾選此方塊後，Twitter帳戶同步工作流程(請參閱「同步 [Twitter帳戶](#synchronizing-twitter-accounts)」)會恢復Twitter追隨者的清單，以便您能夠傳送他們的直接訊息(請參閱傳送直接訊息給訂閱者 [](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers))。 如果您不想要恢復追隨者清單，請取消勾選此方塊。
+   >The **[!UICONTROL Synchronize subscriptions]** option is enabled by default. 勾選此方塊後，Twitter帳戶同步工作流程(請參閱「同步 [Twitter帳戶](#synchronizing-twitter-accounts)」)會恢復Twitter追隨者的清單，以便您能夠傳送他們的直接訊息(請參閱傳送直接訊息給訂閱者 [](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers))。 如果您不想要恢復追隨者清單，請取消勾選此方塊。
 
 1. 輸入服務的標籤和內部名稱。
 
@@ -94,9 +94,9 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
    >
    >服 **[!UICONTROL Internal name]** 務的名稱必須與Twitter帳戶的名稱相同。 要確保沒有輸入錯誤，請應用以下步驟。
 
-   * Click the **[!UICONTROL Save]** button.
+   * 按一下 **[!UICONTROL Save]** 按鈕。
    * 在服務的概述中，按一下您剛建立的Twitter類型服務。
-   * 選擇選 **[!UICONTROL Twitter page]** 項卡。 應顯示Twitter帳戶。
+   * 選取 **[!UICONTROL Twitter page]** 索引標籤。應顯示Twitter帳戶。
 
       ![](assets/social_twitter_service_010.png)
 
@@ -134,4 +134,4 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 >
 >您可以隨時執行預期的任務處理來啟動工作流程。 您也可以編輯排程器以變更工作流程觸發頻率。 For more on the scheduler, refer to [this section](../../workflow/using/scheduler.md).
 
-您現在可以傳送推文至您的Twitter帳戶，並將訊息直接傳送給您的追隨者。 有關詳情，請參閱：在 [Twitter上發佈](../../social/using/publishing-on-twitter.md)。
+您現在可以傳送推文至您的Twitter帳戶，並將訊息直接傳送給您的追隨者。 有關詳情，請參閱： [在Twitter上發佈](../../social/using/publishing-on-twitter.md)。
