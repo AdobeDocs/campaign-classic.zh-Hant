@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
 
 # 監控行銷宣傳 {#monitoring-marketing-campaigns}
 
-## 追蹤促銷活動 {#tracking-a-campaign}
+## 追蹤行銷活動 {#tracking-a-campaign}
 
 對於每個促銷活動， **[!UICONTROL Tracking]** 標籤可讓您檢視所有工作及其狀態。 您可透過此子標籤存取下列資訊：
 
@@ -60,4 +60,4 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 您可以按一下可透過Adobe Campaign首頁存取的 **[!UICONTROL Deliveries]**&#x200B;傳送狀態，以查詢傳送狀態。 請參閱 [傳送追蹤](#delivery-tracking)。
 
-促銷活動中執行之程式的相關資訊會收集在促 **[!UICONTROL Edit > Audit]** 銷活動的標籤中。 您可以在此處檢視促銷活動中的傳送清單。 請參閱 [追蹤促銷活動](#tracking-a-campaign)。
+促銷活動中執行之程式的相關資訊會收集在促 **[!UICONTROL Edit > Audit]** 銷活動的標籤中。 您可以在此處檢視促銷活動中的傳送清單。 See [Tracking a campaign](#tracking-a-campaign).
