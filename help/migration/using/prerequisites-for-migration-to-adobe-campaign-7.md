@@ -1,7 +1,7 @@
 ---
-title: 移轉至Adobe Campaign 7的先決條件
-seo-title: 移轉至Adobe Campaign 7的先決條件
-description: 移轉至Adobe Campaign 7的先決條件
+title: 移轉至 Adobe Campaign 7 的必要條件
+seo-title: 移轉至 Adobe Campaign 7 的必要條件
+description: 移轉至 Adobe Campaign 7 的必要條件
 seo-description: null
 page-status-flag: never-activated
 uuid: 9f4e4cdf-5338-4597-9d9d-5a3bd13033c7
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: a3bbd8cc-97c6-4b08-adbf-76ab77b97262
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 27%
 
 ---
 
 
-# 移轉至Adobe Campaign 7的先決條件{#prerequisites-for-migration-to-adobe-campaign}
+# 移轉至 Adobe Campaign 7 的必要條件{#prerequisites-for-migration-to-adobe-campaign}
 
 在執行任何移轉之前，請先參 [閱「開始移轉](../../migration/using/before-starting-migration.md) 」 [和「設定平台」章節](../../migration/using/configuring-your-platform.md) 。
 
