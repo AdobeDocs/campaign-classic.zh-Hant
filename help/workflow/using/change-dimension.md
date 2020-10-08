@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 61583062-2349-4ab3-a3bf-310d21894f34
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
       >
       >有關建立和管理附加列的資訊，請參閱添 [加資料](../../workflow/using/query.md#adding-data)。
 
-   * 選取先前的定位維度（軸切換前），並在收件 **[!UICONTROL Zip Code]** 者的子樹狀結構中 **[!UICONTROL Location]** 選取，然後按一下 **[!UICONTROL Edit expression]**。
+   * 選取先前的定位維度（軸切換前），並在收件 **[!UICONTROL Zip Code]** 者的子樹狀結構 **[!UICONTROL Location]** 中選取，然後按一下 **[!UICONTROL Edit expression]**。
 
       ![](assets/wf_change-dimension_sample_02.png)
 
