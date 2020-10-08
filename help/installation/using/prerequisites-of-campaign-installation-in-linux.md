@@ -1,7 +1,7 @@
 ---
-title: 在Linux中安裝促銷活動的先決條件
-seo-title: 在Linux中安裝促銷活動的先決條件
-description: 在Linux中安裝促銷活動的先決條件
+title: 在 Linux 安裝 Campaign 的必要條件
+seo-title: 在 Linux 安裝 Campaign 的必要條件
+description: 在 Linux 安裝 Campaign 的必要條件
 seo-description: null
 page-status-flag: never-activated
 uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
@@ -11,26 +11,26 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 4%
 
 ---
 
 
-# 在Linux中安裝促銷活動的先決條件{#prerequisites-of-campaign-installation-in-linux}
+# 在 Linux 安裝 Campaign 的必要條件{#prerequisites-of-campaign-installation-in-linux}
 
 ## 軟體先決條件 {#software-prerequisites}
 
 本節詳細說明安裝Adobe Campaign前所需的初步設定步驟。
 
-安裝Adobe Campaign所需的技術和軟體組態詳見「相容性」 [表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+安裝Adobe Campaign所需的技術和軟體組態詳見「相容性」 [表](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
 
 提醒您，必須安裝並正確設定下列元件：
 
-* Apache，請參閱 [Compatibility matrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html),
+* Apache，請參閱 [Compatibility matrix](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html),
 * Java JDK和OpenJDK，請參閱 [Java開發套件- JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * 程式庫，請參閱 [程式庫](#libraries),
 * 資料庫訪問層，請參閱數 [據庫訪問層](#database-access-layers),
@@ -47,7 +47,7 @@ source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 * 庫C必須能夠支援TLS（線程本地儲存）模式。 除了已禁用Xen支援的某些內核外，此模式在大多數情況下都處於活動狀態。
 
-   若要檢查此項，您可以使 **用uname -a|例如grep xen** 命令。
+   若要檢查此項，您可以使 **用uname -a |例如grep xen** 命令。
 
    如果命令未傳回任何內容（空行），表示配置正確。
 
@@ -62,6 +62,7 @@ source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
    * RHEL 7, CentOS 7:libicu50
    * 德比安8:libicu52
    * 德比安九：libicu57
+
    若要使用Adobe Campaign，您必須安裝libc-ares程式庫。 在RHEL/CentOS上，運行以下命令：
 
    ```
@@ -128,7 +129,7 @@ yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu
 aptitude install fonts-ipafont
 ```
 
-在Red hat中，添加命令：
+在Red Hat中，添加命令：
 
 ```
 yum install ipa-gothic-fonts ipa-mincho-fonts
@@ -170,7 +171,7 @@ CentOS需要下列組態：
 
 您所使用之資料庫引擎的存取層必須安裝在伺服器上，並可透過Adobe Campaign帳戶存取。 版本和安裝模式可能會因所使用的資料庫引擎而異。
 
-支援的試用版在「相容性」表中 [有詳細說明](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+支援的試用版在「相容性」表中 [有詳細說明](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
 
 另請檢查常規 [資料庫](../../installation/using/database.md) 部分。
 
@@ -182,9 +183,9 @@ Adobe Campaign支援7.2版的所有PostgreSQL用戶端程式庫版本：(**libpq
 
 ### Oracle {#oracle}
 
-擷取64位元Debian的程式庫版本，例如： **libclntsh.so**、 **libclntsh.so.11.1****和** libclntsh.so.10.1。
+擷取64位元Debian的程式庫版本，例如： **libclntsh.so**、 **libclntsh.so.11.1** 和 **libclntsh.so.10.1**。
 
-您可以從Oracle技術網路獲取Linux RPM包。
+您可以從Oracle技術網路獲得Linux RPM包。
 
 >[!NOTE]
 >
@@ -194,7 +195,7 @@ Adobe Campaign支援7.2版的所有PostgreSQL用戶端程式庫版本：(**libpq
 
 在Oracle客戶端或伺服器更新、版本更改或實例的首次安裝後，可能會出現問題。
 
-如果您在客戶端控制台上發現日誌、工作流上次處理、下次處理等中存在意外的時間延遲（一個或多個小時），則Oracle客戶端庫和Oracle server之間可能存在問題。 為避免此類問題
+如果您在客戶端控制台上發現日誌、工作流上次處理、下次處理等中存在意外的時間延遲（一個或多個小時），則Oracle客戶端庫和Oracle Server之間可能存在問題。 為避免此類問題
 
 1. 請務必使用完整 **的用戶端**。
 
@@ -212,7 +213,7 @@ Adobe Campaign支援7.2版的所有PostgreSQL用戶端程式庫版本：(**libpq
 
 支援的程式庫版 **本為libdb2.so**。
 
-## 實施步驟 {#implementation-steps}
+## 實作步驟 {#implementation-steps}
 
 Adobe Campaign的Linux安裝必須依下列順序進行：伺服器安裝後跟實例配置。
 
