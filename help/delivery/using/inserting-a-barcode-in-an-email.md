@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 679b9ae2-362c-483d-acb8-47bc01928541
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 可以使用使用客戶標準定義的值動態生成條形碼作為點陣圖。 個人化條碼可以包含在電子郵件宣傳中。 收件者可列印訊息並將它顯示給發行公司以進行掃描（例如，當結帳時）。
 
-若要將條形碼插入電子郵件中，請將游標置於要顯示該條形碼的內容中，然後按一下個人化按鈕。 Select **[!UICONTROL Include > Barcode...]**.
+若要將條形碼插入電子郵件中，請將游標置於要顯示該條形碼的內容中，然後按一下個人化按鈕。 選取 **[!UICONTROL Include > Barcode...]**。
 
 ![](assets/barcode_insert_14.png)
 
@@ -50,7 +50,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
       ![](assets/barcode_insert_06.png)
 
-      QR code範例：
+      QR Code範例：
 
       ![](assets/barcode_insert_12.png)
 
@@ -71,7 +71,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
    >
    >欄位右側的個人化按鈕 **[!UICONTROL Value]** 可讓您除了新增值本身以外，還新增資料。 這豐富了條形碼，前提是條形碼標準接受它。
    >
-   >例如，如果您使用GS1-128類型的條形碼，並且除了要輸入值之外還要輸入收件人的帳戶號，請按一下個性化按鈕並選擇 **[!UICONTROL Recipient > Account number]**。 如果正確輸入了選定收件人的帳戶號碼，條形碼會將其納入考慮範圍。
+   >例如，如果您使用GS1-128類型的條形碼，並且除了要輸入值之外還要輸入收件人的帳戶號，請按一下個性化按鈕並選擇 **[!UICONTROL Recipient > Account number]**。 如果正確輸入了所選收件人的帳戶號碼，條形碼會將其納入考慮範圍。
 
 在設定好這些元素後，您就可以完成電子郵件並傳送。 若要避免錯誤，請務必在按一下標籤執行傳送前，先確定您的內容已正確 **[!UICONTROL Preview]** 顯示。
 
