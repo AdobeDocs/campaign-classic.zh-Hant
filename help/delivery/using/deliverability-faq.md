@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -33,11 +30,11 @@ ht-degree: 0%
 
 在Adobe Campaign中，會針對每小時可傳送的電子郵件數設定。 此配置必須引起警惕，因為實例中定義的數字與與與ISP進行的連接數有關，而與實際發送的電子郵件數無關。
 
-這表示連線可使用MX規則，但無法成功傳送電子郵件。 在這種情況下，使用IP或信譽不佳的網域的組態必須先嘗試數個連線，才能傳送電子郵件。 每次嘗試都會使用每小時評分的訊息。 因此，行銷促銷活動的績效將會受到重大影響。
+這表示連線可使用MX規則，但不會成功傳送電子郵件。 在這種情況下，使用IP或信譽不佳的網域的組態必須先嘗試數個連線，才能傳送電子郵件。 每次嘗試都會使用每小時評分的訊息。 因此，行銷促銷活動的績效將會受到重大影響。
 
 因此，&quot;配額滿足&quot;不僅是配置問題，還與信譽掛鈎。 分析 [SMTP日誌中的錯誤消息非常重要](../../production/using/monitoring-processes.md#smtp-errors-per-domain)。
 
-如需MX設定的詳細資訊，請參 [閱本節](../../installation/using/email-deliverability.md#mx-configuration)。
+For more on MX configuration, see [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## ISP的相同錯誤資訊 {#same-error-for-an-isp}
 
@@ -45,7 +42,7 @@ ht-degree: 0%
 
 如果您總是收到相同的ISP錯誤訊息，則ISP可能會偵測到您的電子郵件或IP有故障。 執行下列建議：
 * 檢查您是否收到連結至不存在之電子郵件地址的大部分失敗(使&#x200B;**用者未知** 失敗)。
-* 更新訂閱表單以偵測輸入的網域名稱中的任何錯誤(例如： gmaul.com或yaho.com)。
+* 更新訂閱表單以偵測輸入的網域名稱中的任何錯誤(例如：gmaul.com或yaho.com)。
 * 如果您發現錯誤，指出您的訊息已宣告為垃圾訊息，或您的訊息經常遭到封鎖，請嘗試將過去12個月中未開啟或點按其中一則訊息的收件者排除在目標位置。
 
 如果問題持續存在，請聯絡商業或傳遞性服務、Adobe Campaign Client Care或Adobe Campaign支援。
@@ -57,13 +54,13 @@ ht-degree: 0%
    * 狀態是 **[!UICONTROL On block list]** 回饋迴路的結果（當某人將訊息報告為垃圾訊息時）。
 
    * 狀態 **[!UICONTROL Quarantined]** 是軟反彈或硬反彈的結果。
-   For more on this, see [this section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
+   如需詳細資訊，請參閱[本區段](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list)。
 
 * **不同的隔離錯誤原因意味著什麼？**
 
-   以下是10個可能的原因： 未定義、用戶未知、無效域、塊清單上的地址、拒絕、錯誤忽略、無法訪問、帳戶禁用、郵箱已滿、未連接。
+   以下是10個可能的原因：未定義、用戶未知、無效域、塊清單上的地址、拒絕、錯誤忽略、無法訪問、帳戶禁用、郵箱已滿、未連接。
 
-   有關詳細資訊，請參閱了 [解隔離管理](../../delivery/using/understanding-quarantine-management.md)。
+   For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
 ## 從塊清單中刪除 {#remove-from-block-list}
 
@@ -78,6 +75,7 @@ ht-degree: 0%
    若要檢查您的IP位址是否在區塊清單中，您可以使用各種網站來驗證它，例如：
    * [MX工具箱](https://mxtoolbox.com/)
    * [我的IP地址是什麼](https://whatismyipaddress.com)
+
    通常，IP地址檢查的結果將返回一個清單，其中包含塊清單的詳細資訊以及阻止IP地址的網站的名稱。
 
    按一下對應的連結，即可存取網站詳細資訊。 然後，您可以要求將您的網站從將IP位址新增至其區塊清單的網站中除名。
@@ -94,8 +92,8 @@ ht-degree: 0%
 
 以下元素可能會引起您的注意：
 
-* 郵寄或促銷活動量度： 取消訂閱、濫用投訴及／或反彈率高於往常。
-* 訂閱者活動： 開啟、點按和／或交易都低於一般。
+* 郵寄或促銷活動量度：取消訂閱、濫用投訴及／或反彈率高於往常。
+* 訂閱者活動：開啟、點按和／或交易都低於一般。
 * 種子帳戶會顯示已篩選或未傳送的郵件。
 
 ### 假設電位的原因 {#potential-causes}
