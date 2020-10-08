@@ -1,7 +1,7 @@
 ---
-title: 關於選件模擬
-seo-title: 關於選件模擬
-description: 關於選件模擬
+title: 關於優惠方案模擬
+seo-title: 關於優惠方案模擬
+description: 關於優惠方案模擬
 seo-description: null
 page-status-flag: never-activated
 uuid: 3c6783a0-6bab-4c41-8101-1d926c1ac6ac
@@ -11,22 +11,22 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: 0af021af-2686-4a37-97d9-6d13a851b5dd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 4%
 
 ---
 
 
-# 關於選件模擬{#about-offers-simulation}
+# 關於優惠方案模擬{#about-offers-simulation}
 
 模 **擬模組** ，可讓您在將提案傳送給收件者之前，先測試屬於類別或環境的選件的分佈。
 
 模擬會考慮先前套用至選件的上下文和資格規則(請參閱選件目錄概述 [)，以及其呈現規則(請參閱](../../interaction/using/offer-catalog-overview.md)管理選件簡報 [](../../interaction/using/managing-offer-presentation.md))。 這可讓您測試和調整選件提案的各種版本，而不需實際使用選件或在請求／請求目標時，因為模擬對目標收件者沒有影響。
 
-若要瞭解如何模擬選件，請閱讀以下步驟。 You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
+若要瞭解如何模擬選件，請閱讀以下步驟。 You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## 建立模擬的主要步驟 {#main-steps-for-creating-a-simulation}
 
