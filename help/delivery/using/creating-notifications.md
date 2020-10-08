@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c830d40cef836533c5104901d03a07e7cf96d3d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -82,7 +79,7 @@ ht-degree: 1%
    >
    >音效必須包含在應用程式中，並在建立服務時加以定義。 請參閱 [設定iOS外部帳戶](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios)。
 
-1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為： 例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
+1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為：例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
 
    >[!NOTE]
    >
@@ -100,7 +97,7 @@ ht-degree: 1%
 
 若要傳送證明並傳送最終傳送，請使用與電子郵件傳送相同的程式。
 
-傳送訊息後，您可以監控及追蹤傳送內容。 如需更多相關資訊，請參閱以下章節：
+傳送訊息後，您可以監控及追蹤傳送內容。 如需詳細資訊，請參閱下列區段。
 
 * [推播通知隔離](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [監控傳送](../../delivery/using/monitoring-a-delivery.md)
@@ -126,7 +123,7 @@ ht-degree: 1%
 
 1. 按一下圖 **[!UICONTROL Insert emoticon]** 示，將表情符號插入您的推播通知。 若要自訂表情符號清單，請參閱自 [訂表情符號清單](../../delivery/using/defining-interactive-content.md)
 
-1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為： 例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
+1. 在欄位 **[!UICONTROL Application variables]** 中，輸入每個變數的值。 應用程式變數可讓您定義通知行為：例如，您可以設定特定應用程式畫面，以便在使用者啟動通知時顯示。
 
    >[!NOTE]
    >
@@ -140,10 +137,10 @@ ht-degree: 1%
 
 驗證和傳送傳送時的詳細程式會列於以下各節：
 
-* [驗證傳送](../../delivery/using/steps-validating-the-delivery.md)
-* [傳送傳送](../../delivery/using/steps-sending-the-delivery.md)
+* [驗證傳遞](../../delivery/using/steps-validating-the-delivery.md)
+* [傳送傳遞](../../delivery/using/steps-sending-the-delivery.md)
 
-傳送訊息後，您可以監控及追蹤傳送內容。 如需更多相關資訊，請參閱以下章節：
+傳送訊息後，您可以監控及追蹤傳送內容。 如需詳細資訊，請參閱下列區段。
 
 * [推播通知隔離](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [監控傳送](../../delivery/using/monitoring-a-delivery.md)
