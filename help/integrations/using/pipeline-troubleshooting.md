@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -30,7 +27,7 @@ ht-degree: 1%
 您的Adobe Campaign Classic版本不支援管道。
 
 1. 檢查配置 [!DNL pipelined] 檔案中是否存在元素。 否則表示不支援。
-1. 升級至版本6.11 build 8705或更高版本。
+1. 升級至6.11版Build 8705或更新版本。
 
 **Pipelined fails with &quot;aurait duj commencer par`[`ou(`{`iRc=16384)&quot;**
 
@@ -71,7 +68,7 @@ IMSOrgid配置無效。
 1. 請確定該進 [!DNL pipelined] 程正在運行。
 1. 在日誌中查找錯 [!DNL pipelined] 誤。
 1. 在狀態頁面中尋找 [!DNL pipelined] 錯誤。 觸發器丟棄，觸發器故障應為零。
-1. 檢查在選項中是否配置了觸發器 **[!UICONTROL NmsPipeline_Config]** 名稱。 如果有疑問，請使用通配符選項。
+1. 檢查觸發器名稱是否已在選項中配 **[!UICONTROL NmsPipeline_Config]** 置。 如果有疑問，請使用通配符選項。
 1. 檢查Analytics是否有作用中的觸發器，且正在產生事件。 在Analytics中進行設定後，可能會延遲數小時，才會啟動。
 
 **事件未連結至客戶**
