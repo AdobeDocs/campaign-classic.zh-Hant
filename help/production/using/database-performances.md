@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 8%
 
 ---
 
@@ -24,18 +24,18 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 
 大多數效能問題都與資料庫維護相關。 以下是四個主要線索，可協助您找出效能緩慢的原因：
 
-* 配置、
-* Adobe Campaign平台的安裝與設定、
-* 資料庫維護、
+* 設定,
+* 安裝和設定Adobe Campaign平台、
+* 資料庫維護,
 * 即時診斷。
 
-## 配置 {#configuration}
+## 設定 {#configuration}
 
 檢查初始的Adobe Campaign平台設定是否仍然有效，並視需要重新評估客戶的傳遞能力或資料庫大小需求。 我們也建議執行完整硬體檢查（CPU、RAM、IO系統）。
 
 >[!NOTE]
 >
->如需深入資訊， [請參閱Adobe Campaign硬體調整指南](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html) 。
+>如需深入資訊， [請參閱Adobe Campaign硬體調整指南](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html) 。
 
 ## 平台配置 {#platform-configuration}
 
@@ -45,7 +45,7 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 
 **資料庫清理任務**
 
-請確保資料庫清理任務已運行。 若要這麼做，請檢視記錄檔，以查看其中是否包含任何錯誤。 如需詳細資訊，請參閱[本小節](../../production/using/database-cleanup-workflow.md)。
+請確保資料庫清理任務已運行。 若要這麼做，請檢視記錄檔，以查看其中是否包含任何錯誤。 如需詳細資訊，請參閱[本章節](../../production/using/database-cleanup-workflow.md)。
 
 **維護計畫**
 
@@ -55,7 +55,7 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 * 先前執行的維護計畫，
 * 查看指令碼日誌。
 
-如需詳細資訊，請參閱[本小節](../../production/using/recommendations.md)。
+如需詳細資訊，請參閱[本章節](../../production/using/recommendations.md)。
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 
 >[!CAUTION]
 >
->如果操作時間長，佔用空間大，則表示需要深入維護（索引重建等）。 如需詳細資訊，請參閱[本小節](../../production/using/recommendations.md)。
+>如果操作時間長，佔用空間大，則表示需要深入維護（索引重建等）。 如需詳細資訊，請參閱[本章節](../../production/using/recommendations.md)。
 
 **Adobe Campaign流程監控**
 
@@ -80,7 +80,7 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 * 例項生產頁面。 For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
 * netreport指令碼。 如需詳細資訊，請參閱「透過Adobe Campaign [指令碼自動監控」](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
 
-## 細節 {#specifics}
+## Specifics {#specifics}
 
 可能需要執行即時診斷以找出問題的原因。 首先檢查進程和平台日誌檔案，然後在重新建立問題時監視資料庫活動。 請特別注意：
 
