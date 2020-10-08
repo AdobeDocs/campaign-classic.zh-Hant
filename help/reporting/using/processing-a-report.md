@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 667746cb-b553-4a71-8523-6b2695047ab6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +58,7 @@ source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
-要更改報告的模式，請按一下該 **[!UICONTROL Select the link]** 表並從資料庫中選擇另一個表。
+要更改報表的模式，請按一下並 **[!UICONTROL Select the link]** 從資料庫中選擇另一個表。
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
@@ -116,7 +116,7 @@ source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
 * 此選 **[!UICONTROL Accumulate values]** 項可讓您將一個系列的值加總到另一個系列。
 * 您可以決定是否顯示圖表圖例：若要隱藏，請取消勾選適當的選項。 依預設，圖例會顯示在圖表的右上角。
 
-   圖例也可以顯示在圖表上方，以節省顯示空間。 若要這麼做，請選取 **[!UICONTROL Include in the chart]**
+   圖例也可以顯示在圖表上方，以節省顯示空間。 To do this, select the option **[!UICONTROL Include in the chart]**
 
    在下拉式清單中選取垂直和 **[!UICONTROL Caption position]** 水準對齊方式。
 
@@ -138,7 +138,7 @@ source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
 
 若要建立描述性分析報表，描述性分析精靈必須透過工作流程轉換或功能表來 **[!UICONTROL Tools > Descriptive analysis]** 執行。
 
-1. 選擇 **[!UICONTROL Existing analyses and reports]** 並按一下 **[!UICONTROL Next]**。
+1. 選取 **[!UICONTROL Existing analyses and reports]** 並按一下 **[!UICONTROL Next]**。
 1. 這可讓您存取可用報表的清單。 選擇您要產生的報表。
 
    ![](assets/s_ncs_user_report_wizard_01.png)
