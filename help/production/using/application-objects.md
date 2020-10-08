@@ -11,21 +11,18 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 24d4875b-81fa-4bf3-8cf0-e6998bec4949
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
 # 應用程式物件{#application-objects}
 
-內建物件應受到監控，防止其增長過多很重要。
+內建物件應受到監控，防止其增長過多非常重要。
 
 ## ID順序 {#sequence-of-ids}
 
@@ -45,9 +42,9 @@ Adobe Campaign會使用必須據以使用的ID序列： **xtkNewId**。 如果�
 
 此方法也會反白顯示建立過多物件的使用者。
 
-## 交貨 {#deliveries}
+## 傳遞 {#deliveries}
 
-在任何時間，例項上應少於1000個傳送。 大量傳送會佔用資料庫空間並造成問題。 必鬚根據業務需求檢查每天建立10個以上交貨的實例。 請考慮使用持續傳送來建立較少的傳送。 如需詳細資訊，請參閱[本小節](../../workflow/using/continuous-delivery.md)。
+在任何時間，例項上應少於1000個傳送。 大量傳送會佔用資料庫空間並造成問題。 必鬚根據業務需求檢查每天建立10個以上交貨的實例。 請考慮使用持續傳送來建立較少的傳送。 如需詳細資訊，請參閱[本章節](../../workflow/using/continuous-delivery.md)。
 
 應從實例中清除兩年以上的交貨。
 
@@ -61,8 +58,8 @@ Adobe Campaign會使用必須據以使用的ID序列： **xtkNewId**。 如果�
 
 ## 交易資料和記錄檔 {#transactional-data-and-logs}
 
-將資 [料匯入](../../workflow/using/data-life-cycle.md#work-table) Adobe Campaign的每個工作流程都會增加資料庫的大小。
+將資 [料匯入](../../workflow/using/data-life-cycle.md#work-table) Adobe Campaign的每個工作流程都會使資料庫的大小增加。
 
-檢查清除或清除工作流是否正在運行並有效清除記錄。 必須清除所有事務性資料和日誌。 清除任務僅清除標準表： 追蹤和廣泛的記錄檔。 特定表必須由特定工作流清除。 Refer to [this section](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+檢查清除或清除工作流是否正在運行並有效清除記錄。 必須清除所有事務性資料和日誌。 清除任務僅清除標準表：追蹤和廣泛的記錄檔。 特定表必須由特定工作流清除。 請參閱[本區段](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs)。
 
 檢查記錄的最舊建立日期，以查看事務資料的老化。
