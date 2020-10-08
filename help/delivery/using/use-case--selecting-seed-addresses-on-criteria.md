@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：選擇條件上的種子地址
-seo-title: 「使用案例：選擇條件上的種子地址
-description: 「使用案例：選擇條件上的種子地址
+title: '"使用案例：依條件選取種子地址"'
+seo-title: '"使用案例：依條件選取種子地址"'
+description: '"使用案例：依條件選取種子地址"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 6af39893-6ef3-4204-8b53-0c16e35bac8f
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 4%
 
 ---
 
 
-# 使用案例：選擇條件中的種子地址{#use-case-selecting-seed-addresses-on-criteria}
+# 使用案例：依條件選取種子地址{#use-case-selecting-seed-addresses-on-criteria}
 
 在傳送或促銷活動的架構中，連結可 **[!UICONTROL Edit the dynamic condition...]** 讓您根據特定選擇標準選擇種子位址。
 
@@ -60,7 +60,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. 按一下 **[!UICONTROL Save]**.
+1. 按一下 **[!UICONTROL Save]**。
 1. 在架構編輯視窗中，複製下面的行，並貼到螢幕擷取中指示的區域。
 
    ```
@@ -85,8 +85,8 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    在這種情況下，您將指定在種子地址表中建立了名為 **[!UICONTROL Department]** new enumeration，並且它基於標準枚舉模板(在種子地址表中的名稱 **[!UICONTROL @company]** Company **** 下標籤)。
 
-1. 按一下 **[!UICONTROL Save]**.
-1. 在功能表 **[!UICONTROL Tools > Advanced]** 中，選取選 **[!UICONTROL Update database structure]** 項。
+1. 按一下 **[!UICONTROL Save]**。
+1. In the **[!UICONTROL Tools > Advanced]** menu, select the **[!UICONTROL Update database structure]** option.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
@@ -94,7 +94,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. 請依照精靈進行，直到您進入頁面執行更新。 Click the **[!UICONTROL Start]** button.
+1. 請依照精靈進行，直到您進入頁面執行更新。 按一下 **[!UICONTROL Start]** 按鈕。
 
    ![](assets/dlv_seeds_usecase_14.png)
 
@@ -183,20 +183,20 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
    >
    >先前建立的架構擴充功能來自收件 **者** 。 上述螢幕上顯示的值來自收件者結構 **圖** 。
 
-1. 按一下 **[!UICONTROL Ok]**.
+1. 按一下 **[!UICONTROL Ok]**。
 
    查詢將顯示在窗口 **[!UICONTROL Select target]** 中。
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. 按一 **[!UICONTROL Ok]** 下以核准查詢。
+1. Click **[!UICONTROL Ok]** to approve the query.
 1. 分析您的傳送，然後按一下標 **[!UICONTROL Delivery]** 簽以存取傳送記錄檔。
 
    採購部門的種子地址顯示為待交貨，與接收者或其他種子地址相同。
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. 按一下 **[!UICONTROL Send]** 按鈕以開始傳送。
+1. Click the **[!UICONTROL Send]** button to start the delivery.
 
    採購部門的成員構成了種子地址的一部分，這些種子地址將接收其電子郵件收件箱中的發送。
 
