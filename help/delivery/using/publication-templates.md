@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 279b0ae6-2578-4f1f-af59-13a1a9c80b32
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -71,7 +68,7 @@ ht-degree: 1%
 
 ### 出版物 {#publication}
 
-發佈包括以檔案的形式生成輸出文檔（如果選擇的類型為） **[!UICONTROL File]**。
+發佈包括以檔案形式生成輸出文檔（如果選擇的類型為） **[!UICONTROL File]**。
 
 ![](assets/d_ncs_content_model2.png)
 
