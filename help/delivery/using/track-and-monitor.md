@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -25,17 +22,17 @@ ht-degree: 0%
 
 您按了「傳送」按鈕？ 讓我們看看會發生什麼。 傳送後，Adobe Campaign可讓您追蹤已傳送的訊息，並瞭解收件者對傳送的反應。 這可協助您改善未來的傳送方式，並最佳化您的下一個促銷活動。
 
-## 監控傳送 {#monitoring-deliveries}
+## 監控傳遞{#monitoring-deliveries}
 
 若要控制您的促銷活動，您必須確保訊息確實已傳送給收件者。
 
 從「促銷活動傳送」控制面板，您可以檢查已處理的訊息和傳送稽核記錄。
-您也可以控制傳送記錄檔中訊息的狀態。 [進一步瞭解](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+您也可以控制傳送記錄檔中訊息的狀態。 [進一步瞭解](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)。
 
 如果傳送未傳送，且狀態仍為「待定」，該怎麼辦 **呢**?
 
 * 執行進程正在等待某些資源的可用性。 MTA可能尚未啟動。
-檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [進一步瞭解](../../production/using/administration.md).
+檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [進一步瞭解](../../production/using/administration.md)。
 
 * 傳送可能使用傳送例項上未設定的相似性。
 提示：檢查流量管理（IP相似性）的設定。 有關詳細資訊，請參閱控制傳出SMTP通信。
