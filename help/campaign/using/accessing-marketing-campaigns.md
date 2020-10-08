@@ -1,7 +1,7 @@
 ---
-title: 存取行銷宣傳
-seo-title: 存取行銷宣傳
-description: 存取行銷宣傳
+title: 存取行銷活動
+seo-title: 存取行銷活動
+description: 存取行銷活動
 seo-description: null
 page-status-flag: never-activated
 uuid: a482be37-61bb-4588-9dfb-f9c3ee5a1930
@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 discoiquuid: 8e7eb53c-bbe2-4bd4-8581-c2a63a3dc84e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 存取行銷宣傳{#accessing-marketing-campaigns}
+# 存取行銷活動{#accessing-marketing-campaigns}
 
 Adobe Campaign可讓您建立、設定、執行及分析行銷宣傳。 所有行銷活動都可從統一的控制中心進行管理。
 
@@ -137,7 +134,7 @@ Campaign可讓您管理由各種行銷促銷活動組成的一組方案。 每�
 
 For more on this, refer to [Discussion forums](../../campaign/using/discussion-forums.md).
 
-#### 報告 {#reports}
+#### 報表 {#reports}
 
 連結 **[!UICONTROL Reports]** 可讓您存取促銷活動報表。
 
