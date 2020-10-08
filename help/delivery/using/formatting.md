@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: d678db05-cc44-4086-98a5-e5296e8e5de8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1449'
 ht-degree: 0%
@@ -418,7 +415,7 @@ HTML格式樣式表的示例基於模式&quot;cus:book&quot;:
 
 * 屬性的值在引號之間，
 * 元素必須有開啟標籤和關閉標籤，
-* 將&#39;&lt;&#39;或&#39;&amp;&#39;字元取代 **&#39;&lt;&#39;****or&#39;&amp;&#39;實體** ,
+* 將&#39;&lt;&#39;或&#39;&amp;&#39;字元 **取代為&#39;** &lt;&#39; **or&#39;&amp;&#39;實** 體，
 * 每個XSL元素都必須使用 **xsl** namespace。
 
 樣式表必須以XSL根元素標籤開頭， **`<xsl:stylesheet>`** 並以標籤結 **`</xsl:stylesheet>`** 尾。 XSL命名空間必須定義在開啟標籤中，如下所示：
