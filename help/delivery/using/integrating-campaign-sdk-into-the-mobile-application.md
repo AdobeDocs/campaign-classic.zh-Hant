@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 將Campaign SDK整合至行動應用程式 {#integrating-campaign-sdk-into-the-mobile-application}
+# 將 Campaign SDK 整合至行動應用程式 {#integrating-campaign-sdk-into-the-mobile-application}
 
 iOS和Android適用的促銷活動SDK是行動應用程式頻道模組的元件之一。
 
@@ -37,7 +34,7 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
 ## 載入促銷活動SDK {#loading-campaign-sdk}
 
-* **在Android中**: neolane_sdk-release.aar **** 檔案必須連結至專案。
+* **在Android中**:neolane_sdk-release.aar **** 檔案必須連結至專案。
 
    下列權限授與Adobe Campaign伺服器的存取權：
 
@@ -57,7 +54,7 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
    從SDK 1.0.26版，將不再使用此權限。
 
-* **在iOS中**: libNeolaneSDK.a **** 和Neolane_SDK.h **** 檔案必須連結至專案。 從SDK 1.0.24版啟動 **ENABLE_BITCODE** 選項。
+* **在iOS中**:libNeolaneSDK.a **** 和Neolane_SDK.h **** 檔案必須連結至專案。 從SDK 1.0.24版啟動 **ENABLE_BITCODE** 選項。
 
    >[!NOTE]
    >
@@ -67,14 +64,14 @@ SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
 若要將Campaign SDK整合至行動應用程式，功能管理員必須向開發人員提供下列資訊：
 
-* **整合金鑰**: 以啟用Adobe Campaign平台來識別行動應用程式。
+* **整合金鑰**:以啟用Adobe Campaign平台來識別行動應用程式。
 
    >[!NOTE]
    >
    >此整合金鑰是在Adobe Campaign主控台的行動應用程式專用 **[!UICONTROL Information]** 服務標籤中輸入的。 請參閱 [在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
 
-* **追蹤URL**: 符合Adobe Campaign追蹤伺服器位址的連結。
-* **行銷URL**: 以啟用訂閱的集合。
+* **追蹤URL**:符合Adobe Campaign追蹤伺服器位址的連結。
+* **行銷URL**:以啟用訂閱的集合。
 
 * **在Android中**:
 
