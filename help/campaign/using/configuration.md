@@ -1,7 +1,7 @@
 ---
-title: 配置
-seo-title: 配置
-description: 配置
+title: 設定
+seo-title: 設定
+description: 設定
 seo-description: null
 page-status-flag: never-activated
 uuid: 59503b54-ad49-4b00-8ffb-52e6f6c62070
@@ -11,22 +11,22 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: ed4afa5e-c184-4c8e-a086-41d87b863190
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 1%
 
 ---
 
 
-# 配置{#configuration}
+# 設定{#configuration}
 
 本節內容適用於負責設定回應管理的人員。 它假定您對於擴展方案、定義工作流和SQL寫程式有一定的知識。
 
 這可讓您瞭解如何將標準資料模型與Adobe Campaign外部交易表與個人表格的特定性調整。 此人員表格可與Adobe Campaign中可用人員表格或不同表格相符
 
-測量假設由操作流程工作流啟動( **[!UICONTROL operationMgt]** )。 每個假設代表一個單獨的進程，以非同步方式與執行狀態（正在編輯、待定、完成、失敗等）執行並由調度器控制，調度器管理優先順序約束、同時處理的數量限制、低活動頁面和頻率自動執行。
+測量假設由操作流程工作流啟動( **[!UICONTROL operationMgt]** )。 每個假設代表一個單獨的進程，以非同步方式與執行狀態（正在編輯、待定、完成、失敗等）執行 並由調度器控制，調度器管理優先順序約束、同時處理的數量限制、低活動頁面和頻率自動執行。
 
 ## 配置結構 {#configuring-schemas}
 
