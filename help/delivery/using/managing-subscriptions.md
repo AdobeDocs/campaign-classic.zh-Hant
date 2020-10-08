@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 2%
@@ -34,7 +31,7 @@ ht-degree: 2%
 * 訂閱和取消訂閱確認機制（含確認的簡單機制、雙重加入等）,
 * 追蹤訂閱者歷史記錄。
 
-作為標準功能，這些服務包括特定統計報告： 訂閱者追蹤、忠誠度等級、取消訂閱趨勢等。
+作為標準功能，這些服務包括特定統計報告：訂閱者追蹤、忠誠度等級、取消訂閱趨勢等。
 
 對於電子郵件，強制取消訂閱連結會自動產生，而整個選擇加入／選擇退出程式會完全自動化，並提供歷史追蹤以確保完全符合現行法規。
 
@@ -60,7 +57,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_add.png)
 
-* 在欄位中輸入服務名稱， **[!UICONTROL Label]** 然後選擇傳送渠道： 電子郵件、行動裝置、Facebook、Twitter或行動應用程式。
+* 在欄位中輸入服務名稱， **[!UICONTROL Label]** 然後選擇傳送渠道：電子郵件、行動裝置、Facebook、Twitter或行動應用程式。
 
    >[!NOTE]
    >
@@ -70,7 +67,7 @@ ht-degree: 2%
 * 您可以傳送 **訂閱或取消** 訂閱的確認訊息。 若要這麼做，請選取要用來從和欄位建立對應傳送的傳送范 **[!UICONTROL Subscription]** 本 **[!UICONTROL Unsubscription]** 。 這些範本必須配置有類型目 **[!UICONTROL Subscription]** 標映射，而不需定義目標。 請參閱關 [於電子郵件渠道](../../delivery/using/about-email-channel.md)。
 * 依預設，訂閱是無限制的。 您可以取消選 **[!UICONTROL Unlimited]** 擇選項，以定義服務的有效期。 持續時間可以以天(**[!UICONTROL d]** )或月(**[!UICONTROL m]** )指定。
 
-在儲存服務後，它就會新增至「服務與訂閱」清單： 按一下其名稱以編輯它。 有幾個標籤可供使用。 此標 **[!UICONTROL Subscriptions]** 簽可讓您查看資訊服務（標籤）或訂閱／取消訂閱歷&#x200B;**[!UICONTROL Active subscriptions]** 史記錄（標籤）的訂閱者&#x200B;**[!UICONTROL History]** 清單。 您也可以從此標籤中新增和刪除訂閱者。 請參 [閱新增和刪除訂閱者](#adding-and-deleting-subscribers)。
+在儲存服務後，它就會新增至「服務與訂閱」清單：按一下其名稱以編輯它。 有幾個標籤可供使用。 此標 **[!UICONTROL Subscriptions]** 簽可讓您查看資訊服務（標籤）或訂閱／取消訂閱歷&#x200B;**[!UICONTROL Active subscriptions]** 史記錄（標籤）的訂閱者&#x200B;**[!UICONTROL History]** 清單。 您也可以從此標籤中新增和刪除訂閱者。 請參 [閱新增和刪除訂閱者](#adding-and-deleting-subscribers)。
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
@@ -80,7 +77,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_modify.png)
 
-在控制面板上，按一下標 **[!UICONTROL Reports]** 簽以追蹤訂閱： 訂閱層級的變更、訂閱者總數等。 您可以從此標籤封存報表並查看歷史記錄。
+在控制面板上，按一下標 **[!UICONTROL Reports]** 簽以追蹤訂閱：訂閱層級的變更、訂閱者總數等。 您可以從此標籤封存報表並查看歷史記錄。
 
 ## 添加和刪除訂閱者 {#adding-and-deleting-subscribers}
 
@@ -104,7 +101,7 @@ ht-degree: 2%
 >
 >目標映射必須 **[!UICONTROL Subscriptions]**&#x200B;是。
 
-選擇 **[!UICONTROL Subscribers of an information service]** 並按一下 **[!UICONTROL Next]**。
+選取 **[!UICONTROL Subscribers of an information service]** 並按一下 **[!UICONTROL Next]**。
 
 ![](assets/s_ncs_user_wizard_target_is_a_service02.png)
 
@@ -131,7 +128,7 @@ ht-degree: 2%
 
 要註冊資訊服務的收件者，您可以：
 
-* 手動添加服務： 要執行此操作，請從其配 **[!UICONTROL Subscriptions]** 置檔案的頁籤中單 **[!UICONTROL Add]** 擊並選擇相關資訊服務。
+* 手動添加服務：要執行此操作，請從其配 **[!UICONTROL Subscriptions]** 置檔案的頁籤中單 **[!UICONTROL Add]** 擊並選擇相關資訊服務。
 
    有關詳細資訊，請參閱本節中有關配置檔案編輯 [的部分](../../platform/using/editing-a-profile.md)。
 
