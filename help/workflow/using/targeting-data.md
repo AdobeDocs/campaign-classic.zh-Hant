@@ -11,24 +11,24 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1900'
+ht-degree: 3%
 
 ---
 
 
 # 目標定位資料{#targeting-data}
 
-## 建立查詢 {#creating-queries}
+## 建立查詢{#creating-queries}
 
 ### 選擇資料 {#selecting-data}
 
 活動 **[!UICONTROL Query]** 可讓您選取基本資料以建立目標人口。 有關詳細資訊，請參閱 [建立查詢](../../workflow/using/query.md#creating-a-query)。
 
-您也可以使用下列活動來查詢和調整資料庫中的資料：增量 [查詢](../../workflow/using/incremental-query.md), [讀清單](../../workflow/using/read-list.md)。
+您也可以使用下列活動來查詢和調整資料庫中的資料： [增量查詢](../../workflow/using/incremental-query.md), [讀清單](../../workflow/using/read-list.md)。
 
 可以收集要在整個工作流生命週期中轉發和處理的附加資料。 如需詳細資訊，請參閱「新增 [資料](../../workflow/using/query.md#adding-data) 」 [和「編輯其他資料」](#editing-additional-data)。
 
@@ -72,7 +72,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ### 與其他資料協調 {#reconciliation-with-additional-data}
 
-在資料協調階段(**[!UICONTROL Union]**、 **[!UICONTROL Intersection]**&#x200B;等)中。 活動)，您可以從其他欄中選擇用於資料協調的欄。 要執行此操作，請在選擇的列上配置協調並指定主集。 然後，選擇窗口下方列中的列，如以下示例所示：
+在資料協調階段(**[!UICONTROL Union]**、 **[!UICONTROL Intersection]**&#x200B;等等) 活動)，您可以從其他欄中選擇用於資料協調的欄。 要執行此操作，請在選擇的列上配置協調並指定主集。 然後，選擇窗口下方列中的列，如以下示例所示：
 
 ![](assets/select-column-and-join.png)
 
@@ -153,7 +153,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 若要設定，您必須先選取條件：
 
 1. 在您的工作流程中，拖放活 **[!UICONTROL Split]** 動。
-1. 在標籤 **[!UICONTROL General]** 中，選取所要的選項： **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** 或 **[!UICONTROL Use external data]**。
+1. 在標籤 **[!UICONTROL General]** 中，選取所要的選項： **[!UICONTROL Use data from the target and additional data]**、 **[!UICONTROL Use the additional data only]** 或 **[!UICONTROL Use external data]**。
 1. 如果選 **[!UICONTROL Use data from the target and additional data]** 取此選項，定位維度可讓您使用傳入轉場所傳送的所有資料。
 
    ![](assets/split-general-tab-options.png)
@@ -182,7 +182,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   For more on this, refer to this [section](../../platform/using/about-fda.md).
+   如需詳細資訊，請參閱本[區段](../../platform/using/about-fda.md)。
 
 然後，我們需要添加新子集：
 
@@ -206,7 +206,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ![](assets/wf_split_multi_outputs.png)
 
-您可以將所有這些子集分組到單個輸出過渡中。 在這種情況下，例如，到各個子集的連結將顯示在段代碼中。 若要這麼做，請選取 **[!UICONTROL Generate all subsets in the same table]** 選項。
+您可以將所有這些子集分組到單個輸出過渡中。 在這種情況下，例如，到各個子集的連結將顯示在段代碼中。 To do this, select the **[!UICONTROL Generate all subsets in the same table]** option.
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -232,7 +232,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
    如需詳細資訊，請參 [閱「傳送](../../workflow/using/delivery.md)」、「 [傳送控制](../../workflow/using/delivery-control.md) 」和「 [持續傳送」](../../workflow/using/continuous-delivery.md)。
 
-## 資料管理 {#data-management}
+## Data Management {#data-management}
 
 在Adobe Campaign中，資料管理結合一系列活動，透過提供更有效率且更有彈性的工具來解決複雜的定位問題。 這可讓您使用與合約、訂閱、交付反應等相關的資訊，對與聯絡人的所有通訊實施一致的管理。 「資料管理」可讓您在分段作業期間追蹤資料生命週期，尤其是：
 
@@ -242,9 +242,9 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 為了實作這些作業，Adobe Campaign提供：
 
-* 資料收集活動：文 [件傳輸](../../workflow/using/file-transfer.md)、 [資料載入（檔案）](../../workflow/using/data-loading--file-.md)、 [資料載入(RDBMS)](../../workflow/using/data-loading--rdbms-.md)、更 [](../../workflow/using/update-data.md)新資料。 收集資料的第一步會準備資料，以便在其他活動中加以處理。 需要監控多個參數，以確保工作流正確執行並提供預期結果。 例如，在匯入資料時，此資料的主鍵(Pkey)必須對每個記錄都是唯一的。
-* 使用資料管理選項豐富定位活動：查 [詢](../../workflow/using/query.md)、聯合 [、](../../workflow/using/union.md)交叉 [、](../../workflow/using/intersection.md)[](../../workflow/using/split.md)分割。 這可讓您設定來自數個不同定位維度之資料之間的聯合或交叉點，只要資料協調是可能的。
-* 資料轉換活動：增 [強](../../workflow/using/enrichment.md), [變更維度](../../workflow/using/change-dimension.md)。
+* 資料收集活動： [檔案傳輸](../../workflow/using/file-transfer.md)、 [資料載入（檔案）](../../workflow/using/data-loading--file-.md)、 [資料載入(RDBMS)](../../workflow/using/data-loading--rdbms-.md)、 [更新資料](../../workflow/using/update-data.md)。 收集資料的第一步會準備資料，以便在其他活動中加以處理。 需要監控多個參數，以確保工作流正確執行並提供預期結果。 例如，在匯入資料時，此資料的主鍵(Pkey)必須對每個記錄都是唯一的。
+* 資料管理選項豐富了定位活動： [查詢](../../workflow/using/query.md)、 [聯合](../../workflow/using/union.md)、 [交叉](../../workflow/using/intersection.md)、 [分割](../../workflow/using/split.md)。 這可讓您設定來自數個不同定位維度之資料之間的聯合或交叉點，只要資料協調是可能的。
+* 資料轉換活動： [擴充](../../workflow/using/enrichment.md), [變更維度](../../workflow/using/change-dimension.md)。
 
 >[!CAUTION]
 >
