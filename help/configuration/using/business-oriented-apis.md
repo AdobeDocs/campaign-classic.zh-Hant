@@ -1,7 +1,7 @@
 ---
-title: 商業導向API
-seo-title: 商業導向API
-description: 商業導向API
+title: 商業導向 API
+seo-title: 商業導向 API
+description: 商業導向 API
 seo-description: null
 page-status-flag: never-activated
 uuid: ddb6e5cf-dfe0-4dc9-ac5b-fab21827b874
@@ -11,29 +11,26 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# 商業導向API{#business-oriented-apis}
+# 商業導向 API{#business-oriented-apis}
 
 商業API是每種物件類型專屬的。 它們對以下方面有影響：
 
-* 傳送：
+* 傳遞:
 
    * 建立傳送動作，請參 [閱SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
    * 傳送促銷活動（開始、暫停、停止、傳送校樣）,
    * 恢復交付日誌。
 
-* 工作流程：
+* 工作流程:
 
    * 啟動工作流程，
    * 驗證流程等。
@@ -42,7 +39,7 @@ ht-degree: 0%
 
 * 內容管理
 * 訂閱管理，請參 [閱訂閱(nms:subscription)](#subscribe--nms-subscription-)[和取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
-* 資料流程： 進出口。
+* 資料流程：進出口。
 
 本節詳細說明「訂閱」、「取消訂閱」和「提交傳送」服務的使用。
 
@@ -79,7 +76,7 @@ ht-degree: 0%
 
 ### 範例 {#examples}
 
-電子郵件地址上具有收件人協調密鑰的訂閱： 輸入的XML文檔必須引用此欄位中的電子郵件地址和鍵的定義。
+電子郵件地址上具有收件人協調密鑰的訂閱：輸入的XML文檔必須引用此欄位中的電子郵件地址和鍵的定義。
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
