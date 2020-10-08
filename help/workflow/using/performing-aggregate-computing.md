@@ -1,5 +1,5 @@
 ---
-title: 執行聚合計算
+title: 執行彙總計算
 description: 瞭解如何在查詢中執行聚合計算
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '225'
+ht-degree: 2%
 
 ---
 
 
-# 執行聚合計算 {#performing-aggregate-computing}
+# 執行彙總計算 {#performing-aggregate-computing}
 
 在此範例中，我們想根據性別來計算住在倫敦的收件者人數。
 
@@ -52,6 +52,6 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 1. 在視窗中 **[!UICONTROL Data formatting]** ，按一下 **[!UICONTROL Next]**:此範例不需要格式設定。
 1. 在預覽視窗中，按一下 **[!UICONTROL Launch data preview]**。
 
-   每個排序依性別有三個不同的值：女 **性** 2人，男性 **1人，** 性別不 **** 明時0人。 在本例中，該清單包含10名婦女、16名男子和2名性別不詳的人。
+   每個排序依性別有三個不同的值： **女性** 2人，男 **性1人，** 性別 **不明** 0人。 在本例中，該清單包含10名婦女、16名男子和2名性別不詳的人。
 
    ![](assets/query_editor_agregat_04.png)
