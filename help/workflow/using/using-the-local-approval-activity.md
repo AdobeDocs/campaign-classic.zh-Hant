@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: c143d8c3-c3ce-470c-8812-4b19cdb8afbf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1274'
+ht-degree: 2%
 
 ---
 
@@ -64,13 +64,13 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. 選擇選 **[!UICONTROL General]** 項卡。
+1. 選取 **[!UICONTROL General]** 索引標籤。
 
    ![](assets/local_validation_data_distribution_2.png)
 
 1. 輸入 **[!UICONTROL Label]** 和 **[!UICONTROL Distribution context]**。 在此範例中，我們已選取定 **[!UICONTROL Recipient]** 位架構和欄位 **[!UICONTROL Email domain]** 做為分發欄位。 收件者清單將依網域劃分。
 1. 在欄位 **[!UICONTROL Distribution type]** 中，選取目標限制值在索引標籤中的表達 **[!UICONTROL Distribution]** 方式。 我們已經選好了 **[!UICONTROL Percentage]**。
-1. 在欄位 **[!UICONTROL Approval storage]** 中，輸入與正在使用的目標方案匹配的批准的儲存方案。 下面我們將使用預設儲存模式： **[!UICONTROL Local approval of recipients]**。
+1. 在欄位 **[!UICONTROL Approval storage]** 中，輸入與正在使用的目標方案匹配的批准的儲存方案。 下面我們將使用預設儲存模式： **[!UICONTROL Local approval of recipients]**.
 1. 然後按一下 **[!UICONTROL Advanced parameters]** 連結。
 
    ![](assets/local_validation_data_distribution_3.png)
@@ -100,7 +100,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 新增下列活動：
 
-* 兩次 **[!UICONTROL Query]** 活動，
+* Two **[!UICONTROL Query]** activities,
 * 一項 **[!UICONTROL Intersection]** 活動，
 * 一項 **[!UICONTROL Split]** 活動，
 * 一項 **[!UICONTROL Local approval]** 活動，
@@ -121,11 +121,11 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/local_validation_split_1.png)
 
-1. 選取選 **[!UICONTROL Keep only the first records after sorting]** 項並按一下 **[!UICONTROL Next]**。
+1. Select the **[!UICONTROL Keep only the first records after sorting]** option and click **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
-1. 在節 **[!UICONTROL Sort columns]** 中，添加要應用排序的欄位。 這裡，我們選了這 **[!UICONTROL Email]** 個。 按一下 **[!UICONTROL Next]**.
+1. 在節 **[!UICONTROL Sort columns]** 中，添加要應用排序的欄位。 這裡，我們選了這 **[!UICONTROL Email]** 個。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/local_validation_split_2.png)
 
@@ -147,12 +147,12 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 需要輸入下列欄位：
 
-1. 在節 **[!UICONTROL Action to execute]** 中，選擇選 **[!UICONTROL Target approval notification]** 項。
-1. 在節 **[!UICONTROL Distribution context]** 中，選擇選 **[!UICONTROL Specified in the transition]** 項。
+1. In the **[!UICONTROL Action to execute]** section, select the **[!UICONTROL Target approval notification]** option.
+1. In the **[!UICONTROL Distribution context]** section, select the **[!UICONTROL Specified in the transition]** option.
 
    如果您不想限制目標人口，請在此處選擇選 **[!UICONTROL Explicit]** 項，然後輸入先前在欄位中建立的分配范 **[!UICONTROL Data distribution]** 本。
 
-1. 在區 **[!UICONTROL Notification]** 段中，選取傳送範本和用於通知電子郵件的主題。 在此，我們選擇了預設模板： **[!UICONTROL Local approval notification]**。
+1. 在區 **[!UICONTROL Notification]** 段中，選取傳送範本和用於通知電子郵件的主題。 在此，我們選擇了預設模板： **[!UICONTROL Local approval notification]**.
 1. 在此 **[!UICONTROL Approval schedule]** 節中，我們保留了預設核准期限（3天）並新增提醒。 交貨將於批准開始後3天內結束。 在核准期限到達後，尚未核准的收件者就不會透過定位來考量。
 
 活動向本地主管發送 **[!UICONTROL Local approval]** 的通知電子郵件如下：
@@ -161,7 +161,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ### 等待 {#wait}
 
-等待活動可讓您延遲第二個本機核准活動的開始，該活動將傳送傳送意見回應通知。 在欄位 **[!UICONTROL Duration]** 中，我們已輸入 **[!UICONTROL 5d]** 值（5天）。 收件者在傳送傳送後5天所執行的動作，會納入回饋通知中。
+等待活動可讓您延遲第二個本機核准活動的開始，該活動會傳送傳送意見回應通知。 在欄位 **[!UICONTROL Duration]** 中，我們已輸入 **[!UICONTROL 5d]** 值（5天）。 收件者在傳送傳送後5天所執行的動作，會納入回饋通知中。
 
 ![](assets/local_validation_workflow_3.png)
 
@@ -209,7 +209,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ![](assets/local_validation_admin_4.png)
 
-選取核准記錄，然後按一下 **[!UICONTROL Detail]** 按鈕以顯示詳細資訊。 本機 **[!UICONTROL General]** 批准記錄檔的標籤可讓您檢視一般記錄檔資訊。 您也可以變更核准狀態。
+選取核准記錄，然後按一下按 **[!UICONTROL Detail]** 鈕以顯示詳細資訊。 本機 **[!UICONTROL General]** 批准記錄檔的標籤可讓您檢視一般記錄檔資訊。 您也可以變更核准狀態。
 
 ![](assets/local_validation_admin_5.png)
 
