@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 870ab0f2-1bd7-42e7-8d83-a08a520b6587
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
 
    這些位於追蹤（通常稱為「正面」）伺服器上，並包含所有先前的促銷活動重新導向。 舊版促銷活動仍會使用它們。
 
-* 日誌檔案： **nl6/var/`<instancename>`/log**
+* 日誌檔案： **nl6/var/`<instancename>`log**
 
    這些可用於跟蹤問題。
 
