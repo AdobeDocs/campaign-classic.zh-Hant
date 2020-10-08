@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：配置欄位替代"
-seo-title: 「使用案例：配置欄位替代"
-description: 「使用案例：配置欄位替代"
+title: '"使用案例：設定欄位替代"'
+seo-title: '"使用案例：設定欄位替代"'
+description: '"使用案例：設定欄位替代"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 7f083dc6-e6d7-4eea-ac66-87674716515c
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: a104fcab-75e6-4d73-bc3d-88570de6df7f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 003bac4c5d89290b9d3653d6ddfab7284b68642d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 6%
 
 ---
 
 
-# 使用案例：配置欄位替代{#use-case-configuring-the-field-substitution}
+# 使用案例：設定欄位替代{#use-case-configuring-the-field-substitution}
 
 隨機欄位替代可讓您將收件者清單中的值歸因於使用者在傳送中使用此值時的種子地址空白(例如：名稱、城市等)。
 
@@ -74,7 +74,7 @@ source-git-commit: 003bac4c5d89290b9d3653d6ddfab7284b68642d
 
    ![](assets/dlv_seeds_usecase_26.png)
 
-   用戶向傳送添加種子地址。
+   用戶將種子地址添加到傳送中。
 
    ![](assets/dlv_seeds_usecase_27.png)
 
@@ -90,7 +90,7 @@ source-git-commit: 003bac4c5d89290b9d3653d6ddfab7284b68642d
 
    場的隨機替換是在發 **送時進行的**。
 
-1. Click the **[!UICONTROL Send]** button.
+1. 按一下 **[!UICONTROL Send]** 按鈕。
 1. 分析您的傳送，然後 **確認傳送**。
 
    種子地址將接收其收件箱中的發送。
