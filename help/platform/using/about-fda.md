@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 1%
+ht-degree: 16%
 
 ---
 
@@ -29,7 +26,7 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 >[!CAUTION]
 >
->除雪花連接器外，只有現場安裝或混合安裝才能通過FDA訪問外部資料庫。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>除雪花連接器外，只有現場安裝或混合安裝才能通過FDA訪問外部資料庫。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 ## 操作原則 {#operating-principle}
 
@@ -37,7 +34,7 @@ FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它將自動�
 
 若要使用此功能，您必須：
 
-1. 擁有與Adobe Campaign FDA模組相容的外部資料庫。 資料庫系統和相容版本清單在相容性清單中 [有詳細說明](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 使用者也必須擁有 [Adobe Campaign](../../platform/using/remote-database-access-rights.md) 和外部資料庫的必要權限。
+1. 擁有與Adobe Campaign FDA模組相容的外部資料庫。 資料庫系統和相容版本清單在相容性清單中 [有詳細說明](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。 使用者也必須擁有 [Adobe Campaign](../../platform/using/remote-database-access-rights.md) 和外部資料庫的必要權限。
 1. [在Adobe Campaign伺服器上](../../platform/using/specific-configuration-database.md) ，安裝與您的資料庫對應的驅動程式。
 1. [建立並設定外部帳戶](../../platform/using/connecting-to-database.md) ，讓您建立Adobe Campaign與外部資料庫之間的連線。 有關可用外部帳戶的詳細資訊，請參閱本 [頁](../../platform/using/external-accounts.md)。
 1. [在Adobe Campaign中建立外部資料庫的架構](../../platform/using/creating-data-schema.md) 。 這允許您識別外部資料庫的資料結構。
@@ -49,14 +46,14 @@ FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它將自動�
 
 您可在下列與Adobe Campaign FDA模組相容的每個外部資料庫清單中找到：
 
-* Microsoft Azure Synapse Analytics。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#azure-external).
-* 雪花。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
-* Hadoop。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3).
-* 甲骨文。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
-* 內泰扎。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
-* Sybase IQ。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq).
-* Teradata。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
-* SAP HANA。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md).
+* Microsoft Azure Synapse Analytics。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md#azure-external)。
+* 雪花。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)。
+* Hadoop。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)。
+* 甲骨文。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md#configure-access-to-oracle)。
+* 內泰扎。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md#configure-access-to-netezza)。
+* Sybase IQ。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq)。
+* Teradata。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)。
+* SAP HANA。 如需詳細資訊，請參閱本[區段](../../platform/using/specific-configuration-database.md)。
 
 ## 最佳實務與建議 {#best-practices-and-recommendations}
 
