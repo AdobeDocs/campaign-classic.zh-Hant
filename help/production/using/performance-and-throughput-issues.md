@@ -1,7 +1,7 @@
 ---
-title: 效能和吞吐量問題
-seo-title: 效能和吞吐量問題
-description: 效能和吞吐量問題
+title: 效能和輸送量的相關問題
+seo-title: 效能和輸送量的相關問題
+description: 效能和輸送量的相關問題
 seo-description: null
 page-status-flag: never-activated
 uuid: 28c35453-9a15-44a3-9961-f4c604c209c2
@@ -11,19 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: ec66e3e3-b09a-44a4-914d-e3b38c7643f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# 效能和吞吐量問題{#performance-and-throughput-issues}
+# 效能和輸送量的相關問題{#performance-and-throughput-issues}
 
 >[!NOTE]
 >
@@ -31,7 +28,7 @@ ht-degree: 0%
 
 ## 硬體和基礎架構 {#hardware-and-infrastructure}
 
-本文詳細說明內部部署Campaign Classic硬體需求的一般指 [引](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html)。
+本文詳細說明內部部署Campaign Classic硬體需求的一般指 [引](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)。
 
 諮詢團隊可為代管客戶提供工具，讓您輕鬆檢視資料庫中各種表格使用了多少空間，以及SFTP網站上使用多少空間。 此外，它還提供工具，讓您能夠清除不必要的資料。 如果您需要實作此工具，請聯絡諮詢或支援團隊。 以下是使用此工具檢查的幾項重要事項：
 
