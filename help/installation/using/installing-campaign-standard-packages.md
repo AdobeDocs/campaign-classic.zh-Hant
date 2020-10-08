@@ -1,7 +1,7 @@
 ---
-title: 安裝Campaign Classic標準套件
-seo-title: 安裝Campaign Classic標準套件
-description: 安裝Campaign Classic標準套件
+title: 安裝 Campaign Classic 標準套件
+seo-title: 安裝 Campaign Classic 標準套件
+description: 安裝 Campaign Classic 標準套件
 seo-description: null
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 
-# 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
+# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
 
 ## 關於內建套件 {#campaign-standard-packages}
 
@@ -33,14 +30,14 @@ ht-degree: 2%
 >
 >您只能安裝與授權合約中提及的選項相對應的套件。
 >
->安裝新套件可能會影響您的所有平台： 在最終部署之前，必須經過測試和驗證。
+>安裝新套件可能會影響您的所有平台：在最終部署之前，必須經過測試和驗證。
 >
 >安裝軟體包後，便無法卸載它。
 
 要安裝內置軟體包，請執行以下操作：
 
 1. 從Adobe Campaign用戶端主控台 **[!UICONTROL Tools > Advanced > Package import...]** 存取套件匯入精靈。
-1. Select **[!UICONTROL Install a standard package]**.
+1. 選取 **[!UICONTROL Install a standard package]**。
 1. 在包清單中，檢查要安裝的包。
    >[!NOTE]
    >
@@ -77,7 +74,7 @@ ht-degree: 2%
    <td> 行銷</td>
   </tr> 
   <tr> 
-   <td> 行銷資源(MRM)<br /> </td> 
+   <td> Marketing resources (MRM)<br /> </td> 
    <td> 透過管理和追蹤工作、預算和行銷資源，以協作模式控制行銷動作。 <a href="../../campaign/using/about-marketing-resource-management.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
@@ -118,7 +115,7 @@ ht-degree: 2%
    <td> 執行<br /> </td>
   </tr> 
   <tr> 
-   <td> 線路頻道<br /> </td> 
+   <td> LINE 通道<br /> </td> 
    <td> 使用LINE渠道與Adobe Campaign傳送傳送。 選填。交易式訊息（訊息中心套件）強制性。 <a href="../../delivery/using/line-channel.md">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
@@ -163,7 +160,7 @@ ht-degree: 2%
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
-   <td> 促銷活動最佳化<br /> </td> 
+   <td> 行銷活動最佳化<br /> </td> 
    <td> 控制、篩選和監控傳送的傳送，讓傳送的訊息最符合客戶的需求和期望，並符合公司通訊政策。 選填。<a href="../../campaign/using/about-campaign-typologies.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
@@ -188,7 +185,7 @@ ht-degree: 2%
    <td> 行銷 </td> 
   </tr> 
   <tr> 
-   <td> CRM連接器<br /> </td> 
+   <td> CRM connectors<br /> </td> 
    <td> 提供多種CRM連接器，以連結您的Adobe Campaign平台與協力廠商系統。  <a href="../../platform/using/crm-connectors.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
@@ -214,21 +211,21 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 隱私權資料保護法規<br /> </td> 
-   <td> 包含其他功能，可協助您在Campaign Classic中符合隱私權規範。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">進一步瞭解</a> <br /> </td> 
+   <td> 包含其他功能，可協助您在Campaign Classic中符合隱私權規範。 <a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">進一步瞭解</a> <br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
-   <td> 轉移至中部採購 <br /> </td> 
+   <td> Transfer to Mid-Sourcing <br /> </td> 
    <td> 詳細說明中間採購伺服器的安裝與設定，以及實例的部署，讓第三方在中間採購模式中傳送訊息。 選填。<a href="../../installation/using/mid-sourcing-server.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 
-   <td> 中端採購平台<br /> </td> 
+   <td> 中間來源平台<br /> </td> 
    <td> 此配置是代管(ASP)配置和內部化之間的最佳中間解決方案。 對外執行元件是在Adobe Campaign所代管的「中部採購」伺服器上執行。 選填。<a href="../../installation/using/mid-sourcing-server.md">進一步瞭解</a> <br /> </td> 
    <td> 中部採購 </td> 
   </tr> 
   <tr> 
-   <td> ACS連接器<br /> </td> 
+   <td> ACS Connector<br /> </td> 
    <td> 橋接Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的整合功能，可自動將資料複製至Campaign Standard，將兩種應用程式的優點結合在一起。 選填。<a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷 </td> 
   </tr> 
@@ -237,7 +234,7 @@ ht-degree: 2%
 
 ### 消息中心包 {#message-center-package}
 
-您必須安裝傳送渠道（電子郵件、行動通道、行動應用程式通道等） 在安裝事務性消息傳遞（消息中心軟體包）之前。 如果您已啟動電子郵件專用的「訊息中心」專案，且日後需要新增渠道，您必須遵循下列步驟：
+您必須安裝傳送渠道（電子郵件、行動通道、行動應用程式通道等） 安裝事務性消息傳遞（消息中心軟體包）之前。 如果您已啟動電子郵件專用的「訊息中心」專案，且日後需要新增渠道，您必須遵循下列步驟：
 
 1. 使用套件匯入精靈( ******[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新頻道，例如行動頻道。
 1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，然後選取：
