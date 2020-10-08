@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: a1a39eaa-6d6f-42c5-a36b-bd1cb3a77dcb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 13%
 
 ---
 
@@ -26,8 +26,8 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
-作為標準，欄位會先顯示（「活動」、「已啟動」等）按字母順序排列。 接著會出現結構元素（郵遞區號、位置），最後是連結（電子郵件資訊、資料夾等）。
+作為標準，欄位會先顯示（「活動」、「已啟動」等） 按字母順序排列。 接著會出現結構元素（郵遞區號、位置），最後是連結（電子郵件資訊、資料夾等）。
 
 主鍵由紅色鍵標識，外鍵由黃色鍵標識。
 
-根據連結是否屬於表，以圖形方式區分連結。 首先顯示從表開始的表（即表中有外鍵）（電子郵件資訊、資料夾、國家）。 「反向」系列連結（訂閱、訂購等）的下界。
+根據連結是否屬於表，以圖形方式區分連結。 首先顯示從表開始的表（即表中有外鍵）（電子郵件資訊、資料夾、國家）。 「反向」系列連結（訂閱、訂購等） 的下界。
