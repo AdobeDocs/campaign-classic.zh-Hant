@@ -1,7 +1,7 @@
 ---
-title: 傳送控制
-seo-title: 傳送控制
-description: 傳送控制
+title: 傳遞控制
+seo-title: 傳遞控制
+description: 傳遞控制
 seo-description: null
 page-status-flag: never-activated
 uuid: f9cef2d9-a6a5-45bd-8c7a-fabc11879628
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 0b5ee05c-4b96-425a-ab0f-60b930de21bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 8%
 
 ---
 
 
-# 傳送控制{#delivery-control}
+# 傳遞控制{#delivery-control}
 
 「傳 **送控制**-類型」動作可讓您啟動、暫停或停止傳送。
 
