@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c804745ae58a9bded885ac5aef32f019f43e82be
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 7%
@@ -121,7 +118,7 @@ ht-degree: 7%
 
 * 電子郵件中 **授權字元** 的使用：電子郵件地址的有效字元清單已在「XtkEmail_Characters」選項中定義。 瞭解如何存取本節中 [的促銷活動選項](../../installation/using/configuring-campaign-options.md)。 若要正確處理特殊字元，Adobe Campaign必須以Unicode安裝。
 
-* 電子郵件 **驗證配置**:請確定電子郵件標題包含DKIM簽名。 DKIM（域密鑰標識的郵件）驗證允許接收電子郵件伺服器驗證消息確實是由其聲稱發送者或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 如需詳細資訊，請參閱[本區段](../../delivery/using/technical-recommendations.md#dkim)。
+* 電子郵件驗 **證的配置**:請確定電子郵件標題包含DKIM簽名。 DKIM（域密鑰標識的郵件）驗證允許接收電子郵件伺服器驗證消息確實是由其聲稱發送者或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 如需詳細資訊，請參閱[本章節](../../delivery/using/technical-recommendations.md#dkim)。
 
 ### 互動式電子郵件設計
 
