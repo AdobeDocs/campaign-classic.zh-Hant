@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: aa192d975a08246ba684940fff3d33853d7d9345
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 4%
@@ -33,7 +30,7 @@ ht-degree: 4%
 
 **相關主題：**
 
-* [使用案例： 使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
+* [使用案例：使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
 * [建立查詢](../../workflow/using/query.md#creating-a-query)
 
 >[!CAUTION]
@@ -42,14 +39,14 @@ ht-degree: 4%
 
 操作步驟：
 
-1. 在標籤 **[!UICONTROL Scheduling & History]** 中，選擇選 **[!UICONTROL Schedule execution]** 項。 建立任務後，該任務將保持活動狀態，並且僅在計畫為執行查詢指定的時間觸發。 但是，如果選項被禁用，則查詢會立即執行， **並一次執行**。
-1. 按一下&#x200B;**[!UICONTROL Change]**&#x200B;按鈕。
+1. In the **[!UICONTROL Scheduling & History]** tab, select the **[!UICONTROL Schedule execution]** option. 建立任務後，該任務將保持活動狀態，並且僅在計畫為執行查詢指定的時間觸發。 但是，如果選項被禁用，則查詢會立即執行， **並一次執行**。
+1. 按一下 **[!UICONTROL Change]** 按鈕。
 
    在視窗 **[!UICONTROL Schedule editing wizard]** 中，您可以設定頻率、事件週期和事件有效期間的類型。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. 按一 **[!UICONTROL Finish]** 下以儲存排程。
+1. Click **[!UICONTROL Finish]** to save the schedule.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
