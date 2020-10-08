@@ -1,7 +1,7 @@
 ---
-title: 關於促銷活動內建報表
-seo-title: 關於促銷活動內建報表
-description: 關於促銷活動內建報表
+title: 關於 Campaign 內建的報表
+seo-title: 關於 Campaign 內建的報表
+description: 關於 Campaign 內建的報表
 seo-description: null
 page-status-flag: never-activated
 uuid: 28c32281-51b8-419d-9f18-c7073788df13
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: 8e4028f8-055a-435c-b226-3d8e0a352f92
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 5%
 
 ---
 
 
-# 關於促銷活動內建報表{#about-campaign-built-in-reports}
+# 關於 Campaign 內建的報表{#about-campaign-built-in-reports}
 
 本章提供Adobe Campaign內建報表、其內容及其內容的清單。 以下資訊可讓您避免建立平台中已可使用的報表。
 
