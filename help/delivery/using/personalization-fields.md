@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 
 # 個人化欄位{#personalization-fields}
 
-個人化欄位用於傳遞訊息內容的第一層級個人化。 您在主要內容中插入的欄位會顯示從選取資料來源插入資料的位置。
+個人化欄位係用於傳遞訊息內容的第一層級個人化。您在主要內容插入的欄位，將顯示從選取的資料來源插入資料的位置。
 
 例如，具有 **** &lt;%= recipient.LastName %>語法的個人化欄位會告訴Adobe Campaign將收件者名稱插入資料庫（收件者表格）。
 
@@ -39,12 +36,12 @@ ht-degree: 3%
 
 個人化欄位可以根據選取的傳送模式，來自兩種資料來源：
 
-* Adobe Campaign資料庫是資料來源。 這是最常見的情況，例如「收件者個人化欄位」。 這些都是在收件者表格中定義的所有欄位，不論是標準欄位(通常：姓氏、名字、地址、城鎮、出生日期等) 或使用者定義欄位。
+* Adobe Campaign資料庫是資料來源。 這是最常見的情況，例如「收件者個人化欄位」。 這些是在收件者表格中定義的所有欄位，不論是標準欄位(通常：姓氏、名字、地址、城鎮、出生日期等) 或使用者定義欄位。
 * 外部檔案是資料源。 這些是檔案欄中定義的所有欄位，在傳送期間使用外部檔案中的資料顯示為輸入。
 
 >[!NOTE]
 >
->Adobe Campaign個人化標籤一律具有下 **列格式&lt;%=table.field%>**。
+>Adobe Campaign個人化標籤一律有下列 **格式&lt;%=table.field%>**。
 
 ## 插入個人化欄位 {#inserting-a-personalization-field}
 
@@ -52,7 +49,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_add_custom_field.png)
 
-在選取資料來源（收件者欄位或檔案欄位）後，此插入會採用命令的形式，由Adobe Campaign解釋，並由指定收件者的欄位值取代。 然後，您就可以在標籤中檢視實體 **[!UICONTROL Preview]** 取代。
+在選取資料來源（收件者欄位或檔案欄位）後，此插入會採用命令的形式，由Adobe Campaign解釋，並由指定收件者的欄位值所取代。 然後，您就可以在標籤中檢視實體 **[!UICONTROL Preview]** 取代。
 
 ## 個人化欄位範例 {#personalization-fields-example}
 
@@ -81,7 +78,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >當傳送是工作流程的一部分時，您可以使用臨時工作流程表格中的資料。 此資料會分組在功能表 **[!UICONTROL Target extension]** 中。 如需詳細資訊，請參閱[本區段](../../workflow/using/data-life-cycle.md#target-data)。
+   >當傳送是工作流程的一部分時，您可以使用臨時工作流程表格中的資料。 此資料會分組在功能表 **[!UICONTROL Target extension]** 中。 如需詳細資訊，請參閱[本章節](../../workflow/using/data-life-cycle.md#target-data)。
 
 ## 最佳化個人化 {#optimizing-personalization}
 
@@ -95,7 +92,7 @@ ht-degree: 3%
 
 若要使用此選項，請遵循下列步驟：
 
-1. 建立促銷活動. 如需詳細資訊，請參閱[本區段](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 建立促銷活動. 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在促銷 **[!UICONTROL Targeting and workflows]** 活動的標籤中，新增「查 **詢** 」活動至工作流程。 For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. 新增活 **[!UICONTROL Email delivery]** 動至工作流程並開啟它。 For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. 轉到的 **[!UICONTROL Analysis]** 頁籤並 **[!UICONTROL Delivery properties]** 選擇選 **[!UICONTROL Prepare the personalization data with a workflow]** 項。
