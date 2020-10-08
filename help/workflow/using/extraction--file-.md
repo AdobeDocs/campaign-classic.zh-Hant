@@ -1,5 +1,5 @@
 ---
-title: 資料擷取（檔案）
+title: 資料擷取 (檔案)
 description: 進一步瞭解資料擷取（檔案）工作流程活動。
 page-status-flag: never-activated
 uuid: c1e3fde3-183c-4602-9cef-760e4648fcf7
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 資料擷取（檔案）{#extraction-file}
+# 資料擷取 (檔案){#extraction-file}
 
 您可以使用活動從外部檔案中的工作流表中提取 **[!UICONTROL Data extraction (file)]** 資料。
 
@@ -31,7 +28,7 @@ ht-degree: 0%
 
 若要設定資料擷取，請套用下列步驟：
 
-1. 指定輸出檔案的名稱： 此名稱可包含變數，可透過欄位右側的個人化按鈕插入。
+1. 指定輸出檔案的名稱：此名稱可包含變數，可透過欄位右側的個人化按鈕插入。
 1. 按一 **[!UICONTROL Edit the file format...]** 下以選取要擷取的資料。
 
    ![](assets/s_advuser_extract_file_param.png)
@@ -60,13 +57,13 @@ ht-degree: 0%
 
 ![](assets/postprocessing_dataextraction.png)
 
-## 集合函式清單 {#list-of-aggregate-functions}
+## List of aggregate functions {#list-of-aggregate-functions}
 
 以下是可用集合函式的清單：
 
 * **[!UICONTROL Count]** 計算要聚合的欄位的所有非空值，包括重複值（聚合欄位）,
 
-   **[!UICONTROL Distinct]** 要計算要聚合的欄位的不同值和非空值的總數（在計算之前排除重複值）,
+   **[!UICONTROL Distinct]** 要計算要聚合的欄位的不同值和非空值的總數（在計算之前排除重複值），請執行以下操作：
 
 * **[!UICONTROL Sum]** 計算數值域的值總和，
 * **[!UICONTROL Minimum value]** 計算欄位的最小值（數字或其他）,
