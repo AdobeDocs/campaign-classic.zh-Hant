@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 2d2c6ae9-4dba-4b82-a25e-eda65a49572d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign可讓您在收件者匿名瀏覽您的網站時，將收集的網
 >[!IMPORTANT]
 >
 >在網站上設定匿名追蹤可觸發大量追蹤記錄的收集，進而影響資料庫的運作。 小心配置。\
->追蹤記錄檔會儲存在資料庫中，直到追蹤資料被清除為止。 使用部署嚮導配置清除頻率。 如需詳細資訊，請參閱[本小節](../../installation/using/deploying-an-instance.md#purging-data)。
+>追蹤記錄檔會儲存在資料庫中，直到追蹤資料被清除為止。 使用部署嚮導配置清除頻率。 如需詳細資訊，請參閱[本章節](../../installation/using/deploying-an-instance.md#purging-data)。
 
 若要在您的例項上啟用匿名Web追蹤，必須設定下列元素：
 
