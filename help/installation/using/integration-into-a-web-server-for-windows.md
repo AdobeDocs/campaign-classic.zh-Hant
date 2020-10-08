@@ -1,7 +1,7 @@
 ---
-title: 與Windows版Web伺服器整合
-seo-title: 與Windows版Web伺服器整合
-description: 與Windows版Web伺服器整合
+title: 與 Windows 版 Web 伺服器整合
+seo-title: 與 Windows 版 Web 伺服器整合
+description: 與 Windows 版 Web 伺服器整合
 seo-description: null
 page-status-flag: never-activated
 uuid: a5042221-44fe-46a6-9322-288b108396e2
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: a4f2ae0e-e631-4ab6-934e-8298e4ce6f2c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: abddb3cdfcee9e41cab2e7e662d5bfd5d53d6f7e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 3%
 
 ---
 
 
-# 與Windows版Web伺服器整合{#integration-into-a-web-server-for-windows}
+# 與 Windows 版 Web 伺服器整合{#integration-into-a-web-server-for-windows}
 
 Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）在應用程式伺服器中當做入口點。
 
@@ -41,9 +41,9 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 >
 >如果您不使用追蹤功能，則可執行Apache或IIS的標準安裝，並重新導向至促銷活動。 不需要追蹤Web伺服器擴充模組。
 
-## 配置IIS web伺服器 {#configuring-the-iis-web-server}
+## 配置IIS Web伺服器 {#configuring-the-iis-web-server}
 
-IIS web伺服器的配置過程大多是圖形化的。 它涉及使用網站（已建立或待建立）來存取Adobe Campaign伺服器的資源：Java(.jsp)檔案、樣式表(.css、.xsl)、影像(.png)、用於重新導向的ISAPI DLL等。
+IIS Web伺服器的配置過程大多是圖形化的。 它涉及使用網站（已建立或待建立）來存取Adobe Campaign伺服器的資源：Java(.jsp)檔案、樣式表(.css、.xsl)、影像(.png)、用於重新導向的ISAPI DLL等。
 
 IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
@@ -153,7 +153,7 @@ webmdl@default (1644) - 18.2 Mo
 
 ### 變更上傳檔案大小限制 {#changing-the-upload-file-size-limit}
 
-配置IIS web伺服器時，將自動為上載到伺服器的設定檔案設定大約28 MB的限制。
+配置IIS Web伺服器時，將自動為上載到伺服器的設定檔案設定大約28 MB的限制。
 
 這可能會對Adobe Campaign產生影響，尤其是如果您想要上傳超過此限制的檔案。
 
