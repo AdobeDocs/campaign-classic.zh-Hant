@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 4655ad65-7eba-44d5-b3f9-f4b8f44d9d5c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1494'
+ht-degree: 1%
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
 
 ## 資料系結 {#data-binning}
 
-Binning可讓您根據准則將值分組，以簡化資料顯示。 根據您可用的資訊，您可以定義年齡群組、將電子郵件網域群組在一起、限制使用值列舉、明確限制資料顯示並將所有其他資料群組在專用行或欄中，等等。
+結合可讓您根據條件將值分組，以簡化資料顯示。 根據您可用的資訊，您可以定義年齡群組、將電子郵件網域群組在一起、限制使用值列舉、明確限制資料顯示並將所有其他資料群組在專用行或欄中，等等。
 
 總的來說，有三種類型的捆綁：
 
-1. 使用手動定義的值範圍。 例如，年齡、平均購物車、已開啟的交貨數等。) 有關詳細資訊，請參閱定 [義每個倉](#defining-each-bin)。
+1. 使用手動定義的值範圍。 例如，年齡、平均購物車、已開啟的交貨數等。) For more on this, refer to [Defining each bin](#defining-each-bin).
 1. 動態，視列舉的值而定：只顯示列舉中包含的值，所有其他值都會分組在「其他」中。 如需詳細資訊，請參閱動態 [管理Bin](#dynamically-managing-bins)。
 1. 使用值範圍，將所有其他值分組在一起。 例如，18到25歲，26到59歲，以及其他人。 如需詳細資訊，請參閱「建立 [值範圍」](#creating-value-ranges)。
 
@@ -38,7 +38,7 @@ Binning可讓您根據准則將值分組，以簡化資料顯示。 根據您可
 
 您可以手動建立Bin或將其連結到現有枚舉。
 
-Adobe Campaign也提供自動裝訂的助理：值可以劃分為N個組，或根據資料庫中最頻繁的值進行分組。
+Adobe Campaign也提供自動裝訂的助理：值可分成N個組，或根據資料庫中最常用的值分組。
 
 ### 定義每個倉 {#defining-each-bin}
 
@@ -56,7 +56,7 @@ Adobe Campaign也提供自動裝訂的助理：值可以劃分為N個組，或�
 
 您可以使用SQL掩碼將多個值合併到篩選器中。 要執行此操作，請 **[!UICONTROL Yes]** 在列中 **[!UICONTROL Use an SQL mask]** 選中並輸入要應用於列的SQL篩 **[!UICONTROL Value or expression]** 選器。
 
-在下列範例中，所有以 **yahoo** （yahoo.fr、yahoo.com、yahoo.be等）或 **ymail** （ymail.com、ymail.eu等）開頭的電子郵件網域將分組到標 **簽YAHOO!**，以及 **rocketmail.com網域的位址** 。
+在下列範例中，所有以 **yahoo** （yahoo.fr、yahoo.com、yahoo.be等）或 **ymail** （ymail.com、ymail.eu等）開頭的電子郵件網域 將分組到標 **簽YAHOO!**，以及 **rocketmail.com網域的位址** 。
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -99,7 +99,7 @@ Adobe Campaign也提供自動裝訂的助理：值可以劃分為N個組，或�
 
    在下列範例中，Adobe Campaign會自動建立4個相同大小的值槽，以顯示資料庫中的值。
 
-在這種情況下，會忽略事實架構中選取的篩選器。
+在這種情況下，會忽略事實模式中選取的篩選器。
 
 ### 枚舉 {#enumerations}
 
@@ -113,7 +113,7 @@ Adobe Campaign也提供網域列舉功能，讓您顯示資料庫中所有連絡
 
 ![](assets/nmx_enum_domain.png)
 
-要使用此枚舉建立報表，請使用維建立立 **[!UICONTROL Email domain]** 方。 然後選 **[!UICONTROL Enable binning]** 擇選項 **[!UICONTROL Dynamically link the values to an enumeration]**。 然後選擇 **Domains** 枚舉，如上所示。 沒有指定別名的所有值都將重新分組到「其 **他** 」標籤下。
+要使用此枚舉建立報表，請使用維建立立 **[!UICONTROL Email domain]** 方。 Choose the **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. 然後選擇 **Domains** 枚舉，如上所示。 沒有指定別名的所有值都將重新分組到「其 **他** 」標籤下。
 
 ![](assets/nmx_add_dimension.png)
 
@@ -131,7 +131,7 @@ Adobe Campaign也提供網域列舉功能，讓您顯示資料庫中所有連絡
 
 可以在聚合中計算最大的資料卷。
 
-在處理大量資料時，聚合非常有用。 系統會根據專用工作流程方塊中定義的設定自動更新資料，將最近收集的資料整合到指標中
+在處理大量資料時，聚合很有用。 系統會根據專用工作流程方塊中定義的設定自動更新資料，將最近收集的資料整合到指標中
 
 集合在每個立方的相關頁籤中定義。
 
@@ -177,7 +177,7 @@ Adobe Campaign也提供網域列舉功能，讓您顯示資料庫中所有連絡
 
 1. 如果需要，並根據運算子選擇操作所關心的表達式。
 
-   此按 **[!UICONTROL Advanced selection]** 鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本小節](../../platform/using/about-queries-in-campaign.md)。
+   此按 **[!UICONTROL Advanced selection]** 鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本章節](../../platform/using/about-queries-in-campaign.md)。
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
