@@ -1,7 +1,7 @@
 ---
-title: 關於促銷活動類型
-seo-title: 關於促銷活動類型
-description: 關於促銷活動類型
+title: 關於行銷活動態樣
+seo-title: 關於行銷活動態樣
+description: 關於行銷活動態樣
 seo-description: null
 page-status-flag: never-activated
 uuid: ec89fb14-7e2f-4e9f-b7ab-3c2caf93a697
@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
 
-# 關於促銷活動類型{#about-campaign-typologies}
+# 關於行銷活動態樣{#about-campaign-typologies}
 
 「促銷活動最佳化」是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這可確保傳送的訊息符合客戶和公司通訊政策的需求和期望。
 
@@ -66,7 +63,7 @@ ht-degree: 8%
 
    您可透過>節點存 **[!UICONTROL Administration > Campaign Management > Typology management]** 取類 **[!UICONTROL Typologies]** 型。
 
-1. 設定您的傳送方式，以使用您建立的排版。 如需詳細資訊，請參閱[本區段](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
+1. 設定您的傳送方式，以使用您建立的排版。 如需詳細資訊，請參閱[本章節](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 透過促銷活動模擬來測試和控制行為。 For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
 在準備交貨期間，當符合標準時，將排除收件者。 您可以檢查日誌以監控排除。本頁提供壓力類型學規則的範例使 [用案例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
@@ -87,6 +84,6 @@ ht-degree: 8%
 
 * [將自動業務規則套用至任何渠道的傳送](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
-* [關於促銷活動類型](../../campaign/using/pressure-rules.md)
+* [關於行銷活動態樣](../../campaign/using/pressure-rules.md)
 
 * [使用壓力規則管理行銷疲勞](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
