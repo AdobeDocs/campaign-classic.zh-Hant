@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -83,7 +83,7 @@ document.nl_waitBeforeRender = true;
 <javaScript maxMB="512" stackSizeKB="8"/>
 ```
 
-要應用對配置所做的更改，需 **要重新啟動nlserver** 服務。
+要應用對配置所做的更改， **需要重新啟動nlserver** 服務。
 
 要瞭解有關serverConf.xml **檔案的更多資訊** ，請參 [閱本節](../../production/using/configuration-principle.md)。
 
@@ -93,7 +93,7 @@ document.nl_waitBeforeRender = true;
 
 您可以列印報表：要執行此操作，請按一下打印機表徵圖：這將開啟對話框。
 
-為獲得更好的結果，請編輯Internet explorer打印選項並選擇 **[!UICONTROL Print background colors and images]**。
+為獲得更好的結果，請編輯Internet Explorer打印選項並選擇 **[!UICONTROL Print background colors and images]**。
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
