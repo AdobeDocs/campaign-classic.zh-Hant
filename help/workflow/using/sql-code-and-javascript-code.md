@@ -1,7 +1,7 @@
 ---
-title: SQL程式碼和JavaScript程式碼
-seo-title: SQL程式碼和JavaScript程式碼
-description: SQL程式碼和JavaScript程式碼
+title: SQL 程式碼和 JavaScript 程式碼
+seo-title: SQL 程式碼和 JavaScript 程式碼
+description: SQL 程式碼和 JavaScript 程式碼
 seo-description: null
 page-status-flag: never-activated
 uuid: 20a39bbf-c6b0-4697-97b4-c07609cfb048
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 1afa75c2-7377-4d03-9105-11bcc9e3206c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 26ba86073e4f1569bf05a7d8aa864ca87baed3ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 
-# SQL程式碼和JavaScript程式碼{#sql-code-and-javascript-code}
+# SQL 程式碼和 JavaScript 程式碼{#sql-code-and-javascript-code}
 
 ## SQL代碼 {#sql-code}
 
@@ -53,14 +50,14 @@ ht-degree: 0%
 
    ![](assets/javascript_code.png)
 
-   * **[!UICONTROL Script]**: 編輯器的中心區域包含要執行的指令碼。
-   * **[!UICONTROL Processing errors]**: 請參閱「 [處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)」。
+   * **[!UICONTROL Script]**:編輯器的中心區域包含要執行的指令碼。
+   * **[!UICONTROL Processing errors]**:請參閱「 [處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)」。
 
 * **[!UICONTROL Advanced JavaScript code]**
 
    ![](assets/advanced_javascript_code.png)
 
-   * **[!UICONTROL First call]**: 編輯器的第一個區域包含要在第一次調用期間執行的指令碼。
-   * **[!UICONTROL Next calls]**: 編輯器的第二個區域包含在下次調用期間執行的指令碼。
-   * **[!UICONTROL Transitions]**: 您可以定義數個活動輸出轉場。
-   * **[!UICONTROL Schedule]**: 此標 **[!UICONTROL Schedule]** 簽可讓您排程何時觸發活動。
+   * **[!UICONTROL First call]**:編輯器的第一個區域包含要在第一次調用期間執行的指令碼。
+   * **[!UICONTROL Next calls]**:編輯器的第二個區域包含在下次調用期間執行的指令碼。
+   * **[!UICONTROL Transitions]**:您可以定義數個活動輸出轉場。
+   * **[!UICONTROL Schedule]**:此標 **[!UICONTROL Schedule]** 簽可讓您排程何時觸發活動。
