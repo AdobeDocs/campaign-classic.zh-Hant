@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 行銷促銷活動傳送 {#marketing-campaign-deliveries}
+# Marketing campaign deliveries {#marketing-campaign-deliveries}
 
 傳送可透過促銷活動控制面板、促銷活動工作流程或直接透過傳送概述來建立。
 
@@ -47,7 +44,7 @@ ht-degree: 0%
 
 * 主要目標。 有關詳細資訊，請參 [閱在工作流中構建主目標](#building-the-main-target-in-a-workflow)[和選擇目標人口](#selecting-the-target-population)。
 * 控制組。 有關詳細資訊，請參閱定 [義控制組](#defining-a-control-group)。
-* 種子地址。 如需詳細資訊，請參閱[本區段](../../delivery/using/about-seed-addresses.md)。
+* 種子地址。 如需詳細資訊，請參閱[本章節](../../delivery/using/about-seed-addresses.md)。
 
 其中有些資訊會繼承自範本。
 
@@ -83,12 +80,12 @@ ht-degree: 0%
 
 ### 如何在促銷活動中建立電子郵件 {#create-email-video}
 
-此影片說明如何在Adobe Campaign Classic中建立促銷活動和電子郵件。
+此影片說明如何在Adobe Campaign Classic 建立行銷活動和電子郵件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 
-#### Creating a targeting workflow {#creating-a-targeting-workflow}
+#### 建立定位工作流程 {#creating-a-targeting-workflow}
 
 您可以透過工作流程中圖形順序的篩選條件組合來建立定位。 您可以建立人口和子人口，並根據您的需求進行定位。 若要顯示工作流程編輯器，請按一下促銷 **[!UICONTROL Targeting and workflows]** 活動控制面板中的標籤。
 
@@ -208,7 +205,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-### 定義控制組 {#defining-a-control-group}
+### Defining a control group {#defining-a-control-group}
 
 控制組是不接收交貨的人口；它可用來透過與已收到傳送的目標人口的行為比較，來追蹤傳送後的行為和促銷活動影響。
 
@@ -258,7 +255,7 @@ ht-degree: 0%
 若要擷取控制群組，請啟用促銷活動或傳送的控制群組，並選取下列其中一個選項： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**&#x200B;者。
 
 * **[!UICONTROL Activate random sampling]** :此選項會將隨機抽樣套用至目標人口中的收件者。 如果您接著將臨界值設為100，則控制群組將由100個從目標人口中隨機選取的收件者組成。 隨機抽樣取決於資料庫引擎。
-* **[!UICONTROL Keep only the first records after sorting]** :此選項可讓您根據一或多個排序順序定義限制。 如果您選取欄 **[!UICONTROL Age]** 位作為排序標準，然後將100定義為臨界值，則控制群組將由100個最年輕的收件者組成。 例如，定義一個控制群組，其中包含購物次數較少的收件者或經常購物的收件者，並比較其行為與已聯絡的收件者的行為。
+* **[!UICONTROL Keep only the first records after sorting]**：此選項可讓您根據一或多個排序順序定義限制。如果您選取欄 **[!UICONTROL Age]** 位作為排序標準，然後將100定義為臨界值，則控制群組將由100個最年輕的收件者組成。 例如，定義一個控制群組，其中包含購物次數較少的收件者或經常購物的收件者，並比較其行為與已聯絡的收件者的行為。
 
 按一下 **[!UICONTROL Next]** 可定義排序順序（如果需要）並選擇收件人限制模式。
 
@@ -266,7 +263,7 @@ ht-degree: 0%
 
 此設定等同於工作流程中的共用活動，可讓您將目標分割為子集。 控制組是這些子集之一。 Refer to the [this section](../../workflow/using/architecture.md) for more information.
 
-### 添加控制組 {#adding-a-population}
+### 新增控制組 {#adding-a-population}
 
 您可以定義要用作控制組的新人口。 此人口族群可來自一組收件者，或您可透過特定查詢建立。
 
@@ -373,7 +370,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您使用MRM，您也可以管理行銷資源庫，供數位參與者共同作業。 請參閱 [管理行銷資源](../../campaign/using/managing-marketing-resources.md)。
+>如果您使用MRM，您也可以管理行銷資源庫，供數位參與者共同作業。 See [Managing marketing resources](../../campaign/using/managing-marketing-resources.md).
 
 ### 添加文檔 {#adding-documents}
 
