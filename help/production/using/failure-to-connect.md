@@ -1,7 +1,7 @@
 ---
-title: 無法連接
-seo-title: 無法連接
-description: 無法連接
+title: 無法連線
+seo-title: 無法連線
+description: 無法連線
 seo-description: null
 page-status-flag: never-activated
 uuid: 5e4cf47d-9699-4b4c-9c45-064fdc17110a
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 493067fb-68f1-48b9-afaa-3127a847db83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 3%
 
 ---
 
 
-# 無法連接{#failure-to-connect}
+# 無法連線{#failure-to-connect}
 
 其原因可能是多重的，並取決於各種情況。
 
@@ -46,7 +46,7 @@ source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
 
    * Web伺服器是否響應？
 
-      使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL: **http(s)://`<urlserver>`**. 如果未響應，則Web伺服器將停止在電腦上。 請洽詢您主機公司的系統管理員以重新啟動服務。
+      使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL: **http(s)://`<urlserver>`**。 如果未響應，則Web伺服器將停止在電腦上。 請洽詢您主機公司的系統管理員以重新啟動服務。
 
    * Adobe Campaign是否已正確整合？
 
@@ -60,7 +60,7 @@ source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
 
 1. **在Adobe Campaign端進行檢查**
 
-   * Adobe Campaign web模組是否已啟動？
+   * Adobe Campaign Web模組是否已啟動？
 
       連線至下列URL: **http(s)://`<URLSERVER>`/nl/jsp/logon.jsp**
 
@@ -72,7 +72,7 @@ source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
 
       * 如果您取得空白頁面：
 
-         Adobe Campaign web模組是否已啟動？ 您應獲得：
+         Adobe Campaign Web模組是否已啟動？ 您應獲得：
 
          ```
          nlserver pdump
