@@ -1,7 +1,7 @@
 ---
-title: 建立選件空間
-seo-title: 建立選件空間
-description: 建立選件空間
+title: 建立優惠方案空間
+seo-title: 建立優惠方案空間
+description: 建立優惠方案空間
 seo-description: null
 page-status-flag: never-activated
 uuid: 2ad38697-db14-4dc0-abb8-9b71d57e0e35
@@ -11,20 +11,20 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 0fae2149-0980-466d-ac9e-8afec2e278be
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '984'
+ht-degree: 2%
 
 ---
 
 
-# 建立選件空間{#creating-offer-spaces}
+# 建立優惠方案空間{#creating-offer-spaces}
 
 選件空間建立只能由具有選件空間子資 **料夾存取權** 的技術管理員執行。 選件空間只能在設計環境中建立，並在選件核准期間自動複製至即時環境。
 
-目錄選件的內容會設定在選件空間中。 依預設，內容可包含下列欄位： **[!UICONTROL Title]**、 **[!UICONTROL Destination URL]****[!UICONTROL Image URL]**、 **[!UICONTROL HTML content]** 和 **[!UICONTROL Text content]**。 欄位順序是在選件空間中設定。
+目錄選件的內容會設定在選件空間中。 依預設，內容可包含下列欄位： **[!UICONTROL Title]**、 **[!UICONTROL Destination URL]**、 **[!UICONTROL Image URL]****[!UICONTROL HTML content]** 和 **[!UICONTROL Text content]**。 欄位順序是在選件空間中設定。
 
 進階參數可讓您指定連絡人識別金鑰（例如，該金鑰可由各種元素、名稱和電子郵件欄位組成）。 如需詳細資訊，請參閱「呈 [現已識別的選件](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) 」一節。
 
@@ -51,7 +51,7 @@ HTML或XML轉換是透過轉換函式建立。 呈現函式中定義的欄位順
 
    ![](assets/offer_space_create_003.png)
 
-1. 轉至節 **[!UICONTROL Content]** 點，然後按以下順序選擇欄位： **[!UICONTROL Title]**&#x200B;然 **[!UICONTROL Image URL]**&#x200B;後 **[!UICONTROL HTML content]**，然後 **[!UICONTROL Destination URL]**。
+1. 轉至節 **[!UICONTROL Content]** 點，然後按以下順序選擇欄位： **[!UICONTROL Title]**，然 **[!UICONTROL Image URL]**&#x200B;後， **[!UICONTROL HTML content]**&#x200B;然後 **[!UICONTROL Destination URL]**。
 
    ![](assets/offer_space_create_004.png)
 
