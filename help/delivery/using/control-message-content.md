@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
 
 如果在傳送開始後偵測到有關取消訂閱的問題，則仍可以手動（例如使用大量更新功能）對點按選擇退出連結的收件者執行取消訂閱，即使他們無法確認其選擇。
 
-一般而言，請勿嘗試透過要求收件者填寫電子郵件地址或姓名等欄位，來妨礙想要退出的收件者。 表單應僅包含一個驗證按鈕，且僅應對加密的識別碼執行協調。 要求額外確認是不可靠的：使用者可能有兩個電子郵件地址被重新導向至相同方塊(例如：firstname.lastname@club.com和firstname.lastname@internet-club.com)。 如果收件者只能記住第一個位址，並希望透過傳送給另一個位址的訊息取消訂閱，表單將會拒絕訂閱，因為加密的識別碼與輸入的電子郵件地址不符。
+一般而言，請勿嘗試透過要求收件者填寫電子郵件地址或姓名等欄位，來妨礙想要退出的收件者。 表單應僅包含一個驗證按鈕，且僅應對加密的識別碼執行協調。 要求額外確認是不可靠的：使用者可能有兩個電子郵件地址被重新導向至相同方塊(例如：firstname.lastname@club.com和firstname.lastname@internet-club.com)。 如果收件者只能記住第一個地址，並希望透過傳送給另一個地址的訊息取消訂閱，表單將拒絕訂閱，因為加密的識別碼和輸入的電子郵件地址不符。
 
 ## SpamAssassin {#spamassassin}
 
