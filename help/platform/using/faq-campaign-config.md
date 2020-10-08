@@ -10,12 +10,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 100%
 
@@ -104,6 +101,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
    * Windows 7：C:\Users\&lt; Username >\AppData\Roaming\Neolane\NL_5\
    * Windows XP：C:\Documents and Settings\&lt; Username >\Application Data\Neolane\NL_5
+
    在這裡，您會看到許多名稱為 nlclient-config-&lt; alphanumerical value >.xml 的 xml 檔案。
 
 1. 刪除這些 xml 檔案和關聯的資料夾。
