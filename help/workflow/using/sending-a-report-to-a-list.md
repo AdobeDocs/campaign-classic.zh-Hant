@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 3%
 
 ---
 
@@ -28,9 +28,9 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 此使用案例的主要實施步驟為：
 
-* 建立接收遞送的收件者清單(請參閱：步 [驟1:建立收件者清單](#step-1--creating-the-recipient-list))。
-* 建立傳送範本，讓您在每次執行工作流程時產生新的傳送(請參閱：步 [驟2:建立傳送範本](#step-2--creating-the-delivery-template))。
-* 建立工作流程，讓您以PDF格式產生報表並傳送至收件者清單(請參閱：步 [驟3:建立工作流程](#step-3--creating-the-workflow))。
+* 建立接收遞送的收件者清單(請參閱： [步驟1:建立收件者清單](#step-1--creating-the-recipient-list))。
+* 建立傳送範本，讓您在每次執行工作流程時產生新的傳送(請參閱： [步驟2:建立傳送範本](#step-2--creating-the-delivery-template))。
+* 建立工作流程，讓您以PDF格式產生報表並傳送至收件者清單(請參閱： [步驟3:建立工作流程](#step-3--creating-the-workflow))。
 
 ## 步驟1:建立收件者清單 {#step-1--creating-the-recipient-list}
 
@@ -38,7 +38,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/use_case_report_1.png)
 
-有關建立清單的詳細資訊，請參 [閱](../../platform/using/creating-and-managing-lists.md)。
+For more on creating lists, refer to this [section](../../platform/using/creating-and-managing-lists.md).
 
 ## 步驟2:建立傳送範本 {#step-2--creating-the-delivery-template}
 
@@ -60,7 +60,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
       ![](assets/use_case_report_4.png)
 
-   * 前往欄位 **[!UICONTROL Type]** 並選取第四個選項： **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**。
+   * 前往欄位 **[!UICONTROL Type]** 並選取第四個選項： **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
       ![](assets/use_case_report_5.png)
 
@@ -72,7 +72,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
       >[!CAUTION]
       >
-      >該檔案必須存在於伺服器上。 其路徑和名稱必須與在工作流的類型活動 **[!UICONTROL JavaScript code]** 中輸入的路徑和名稱相同(請參閱：步 [驟3:建立工作流程](#step-3--creating-the-workflow))。
+      >該檔案必須存在於伺服器上。 其路徑和名稱必須與在工作流的類型活動 **[!UICONTROL JavaScript code]** 中輸入的路徑和名稱相同(請參閱： [步驟3:建立工作流程](#step-3--creating-the-workflow))。
 
    * 選擇該選 **[!UICONTROL Advanced]** 項卡並選中 **[!UICONTROL Script the name of the file name displayed in the mails sent]**。 前往編輯區域，然後輸入您要在最終傳送中提供附件的名稱。
 
@@ -122,7 +122,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
       >[!CAUTION]
       >
-      >檔案必須儲存在伺服器上。 必須在編輯窗口的頁籤中為計算附件輸入 **[!UICONTROL General]** 相同的路徑和相同的名稱(請參閱：步 [驟2:建立傳送範本](#step-2--creating-the-delivery-template))。
+      >檔案必須儲存在伺服器上。 必須在編輯窗口的頁籤中為計算附件輸入 **[!UICONTROL General]** 相同的路徑和相同的名稱(請參閱： [步驟2:建立傳送範本](#step-2--creating-the-delivery-template))。
 
    * **var exportFormat**:輸入檔案的匯出格式(「PDF」)。
    * **var _ctx** (context):在此案例中，我們會在其全域內 **[!UICONTROL Tracking indicators]** 容中使用報表。
@@ -133,5 +133,6 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    * 對於和 **[!UICONTROL Recipients]** 字 **[!UICONTROL Content]** 段，選擇 **[!UICONTROL Specified in the delivery]**。
    * **[!UICONTROL Action to execute]**:選擇「 **[!UICONTROL Prepare and start]** Select（選擇）」。
    * 取消檢查 **[!UICONTROL Generate an outbound transition]** 和 **[!UICONTROL Process errors]**。
+
    ![](assets/use_case_report_11.png)
 
