@@ -1,7 +1,7 @@
 ---
-title: 限制PII檢視
-seo-title: 限制PII檢視
-description: 限制PII檢視
+title: 限制 PII 檢視
+seo-title: 限制 PII 檢視
+description: 限制 PII 檢視
 seo-description: null
 page-status-flag: never-activated
 uuid: 4dddc7f5-dac3-47b3-b3cb-92b47eb595fa
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 550439c1-978c-414e-be5b-a9e1a202c4cd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
 
-# 限制PII檢視{#restricting-pii-view}
+# 限制 PII 檢視{#restricting-pii-view}
 
 ## 概觀 {#overview}
 
@@ -28,7 +28,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ## 實作 {#implementation}
 
-可套用至任何元素或屬性的新屬性已新增至結構描述，可補充現有屬性 **[!UICONTROL visibleIf]** 。 此屬性為： **[!UICONTROL accessibleIf]** 。 當包含與當前用戶上下文相關的XTK表達式時，例如，它 **[!UICONTROL HasNamedRight]** 可 **[!UICONTROL $(login)]** 以利用或。
+可套用至任何元素或屬性的新屬性已新增至結構描述，可補充現有屬性 **[!UICONTROL visibleIf]** 。 此屬性為： **[!UICONTROL accessibleIf]** . 當包含與當前用戶上下文相關的XTK表達式時，例如，它 **[!UICONTROL HasNamedRight]** 可 **[!UICONTROL $(login)]** 以利用或。
 
 您可以找到以下顯示此用法的收件者結構擴展示例：
 
