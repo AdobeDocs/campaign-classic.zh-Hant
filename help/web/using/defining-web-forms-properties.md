@@ -1,7 +1,7 @@
 ---
-title: 定義Web表單屬性
-seo-title: 定義Web表單屬性
-description: 定義Web表單屬性
+title: 定義網路表單屬性
+seo-title: 定義網路表單屬性
+description: 定義網路表單屬性
 seo-description: null
 page-status-flag: never-activated
 uuid: 2fb0952a-5f73-48f5-b344-e3247cefca62
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 36953eb5-3296-4796-9352-945121bbdc69
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 1%
 
 ---
 
 
-# 定義Web表單屬性{#defining-web-forms-properties}
+# 定義網路表單屬性{#defining-web-forms-properties}
 
 Web表單可完全設定且可個人化，以符合您的需求。 參數必須在屬性窗口中輸入。
 
@@ -60,7 +60,7 @@ Web表單可完全設定且可個人化，以符合您的需求。 參數必須�
 
 此標 **[!UICONTROL Localization]** 簽可讓您選取Web表單的設計和顯示語言。
 
-請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)。
+See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## 表單瀏覽與轉換 {#form-browsing-and-rendering}
 
@@ -86,7 +86,7 @@ Web表單可完全設定且可個人化，以符合您的需求。 參數必須�
 
 主題將保存在樹 **[!UICONTROL Administration>Configuration>Form rendering]** 的節點中。 請參 [閱選擇表單轉換範本](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
 
-屬性窗口的下半部會顯示示例渲染。 圖 **[!UICONTROL Edit link]** 示可讓您檢視所選主題的設定。
+屬性窗口的下半部將顯示示例渲染。 圖 **[!UICONTROL Edit link]** 示可讓您檢視所選主題的設定。
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
@@ -94,7 +94,7 @@ Web表單可完全設定且可個人化，以符合您的需求。 參數必須�
 
 此標 **[!UICONTROL Page]** 簽可讓您定義表單頁首和頁尾的內容。 請參閱 [定義頁首和頁尾](../../web/using/form-rendering.md#defining-headers-and-footers)。
 
-它也可讓您管理翻譯。 請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)。
+它也可讓您管理翻譯。 See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## 表單的協助功能 {#accessibility-of-the-form}
 
@@ -120,7 +120,7 @@ Web表單可完全設定且可個人化，以符合您的需求。 參數必須�
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-登入和密碼是Adobe Campaign營運商使用的登入和密碼。 如需詳細資訊，請參閱[本小節](../../platform/using/access-management.md)。
+登入和密碼是Adobe Campaign營運商使用的登入和密碼。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md)。
 
 選 **[!UICONTROL Use a specific account]** 項可讓您限制存取表單之運算子的讀取或寫入權限。 使用下拉式方塊來選取負責授與這些權限的運算元或運算元群組。
 
@@ -139,7 +139,7 @@ Web表單可完全設定且可個人化，以符合您的需求。 參數必須�
 * **id** ，指出加密的識別碼。
 * **lang** ：更改顯示語言。
 * **來源** ：指定回應者的來源。
-* **_uuid** 可在發佈和錯誤追蹤之前啟用表單檢視。 此參數僅供內部使用（建立和調試）:當您透過此URL存取Web表格時，追蹤（報表）中不會考慮建立的記錄。 原點被強制為 **[!UICONTROL Adobe Campaign]** 值。
+* **_uuid** 可在發佈和錯誤追蹤之前啟用表單檢視。 此參數僅供內部使用（建立和調試）:當您透過此URL存取Web表格時，在追蹤（報表）中不會考慮建立的記錄。 原點被強制為 **[!UICONTROL Adobe Campaign]** 值。
 
    它與 **_preview** 參數和／或 **_debug一起使用**:
 
