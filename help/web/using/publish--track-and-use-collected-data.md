@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 434a4bda-0907-42a7-8a75-2db658bba046
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 4%
 
 ---
 
@@ -90,11 +90,11 @@ For more on URL parameters, refer to [this page](../../web/using/defining-web-fo
 
    若要匯出報表資料，請按一下 **[!UICONTROL Export]** 按鈕並選擇匯出格式。
 
-   如需匯出報表資料的詳細資訊，請參 [閱本節](../../reporting/using/about-reports-creation-in-campaign.md)。
+   For more on exporting report data, refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. 匯出答案
 
-   若要匯出答案，請按一 **[!UICONTROL Responses]** 下調查的標籤，然後按一下滑鼠右鍵。 Select **[!UICONTROL Export...]**.
+   若要匯出答案，請按一 **[!UICONTROL Responses]** 下調查的標籤，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Export...]**。
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -107,6 +107,7 @@ For more on URL parameters, refer to [this page](../../web/using/defining-web-fo
    * 將列添加到輸出檔案並恢復有關收件人的資訊（儲存在資料庫中）,
    * 格式化匯出的資料，
    * 為檔案中的資訊選擇編碼格式。
+
    如果您要匯出的調查包含數個 **[!UICONTROL Multi-line text]** 或欄 **[!UICONTROL HTML text]** 位，則必須以格式 **[!UICONTROL XML]** 匯出。 若要這麼做，請在欄位的下拉式清單中選取此格 **[!UICONTROL Output format]** 式，如下所示：
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
@@ -119,7 +120,7 @@ For more on URL parameters, refer to [this page](../../web/using/defining-web-fo
 
 ## 使用收集的資料 {#using-the-collected-data}
 
-透過線上調查收集的資訊可在定位工作流程的架構中復原。 若要這麼做，請使用方 **[!UICONTROL Survey responses]** 塊。
+透過線上調查收集的資訊可在定位工作流程的架構中復原。 To do this, use the **[!UICONTROL Survey responses]** box.
 
 在下列範例中，我們希望為至少有兩個孩子並線上上調查中獲得最高分數的五個收件者提供網頁優惠。 此調查的答案為：
 
@@ -155,7 +156,7 @@ For more on URL parameters, refer to [this page](../../web/using/defining-web-fo
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* 選擇選 **[!UICONTROL Keep only the first records after sorting]** 項並選擇排序列。 勾選 **[!UICONTROL Descending sort]** 選項。
+* 選擇選 **[!UICONTROL Keep only the first records after sorting]** 項並選擇排序列。 核取 **[!UICONTROL Descending sort]** 選項。
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
