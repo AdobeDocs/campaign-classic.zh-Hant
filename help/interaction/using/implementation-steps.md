@@ -1,7 +1,7 @@
 ---
-title: 實施步驟
-seo-title: 實施步驟
-description: 實施步驟
+title: 實作步驟
+seo-title: 實作步驟
+description: 實作步驟
 seo-description: null
 page-status-flag: never-activated
 uuid: 11582071-00a2-4245-af3e-bc81174ce223
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 discoiquuid: 7f79c0d8-77b0-4cc6-a888-7dbd32d2f3b6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 3%
 
 ---
 
 
-# 實施步驟{#implementation-steps}
+# 實作步驟{#implementation-steps}
 
 ## 設定互動 {#configuring-interaction}
 
@@ -45,7 +45,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    >
    >在傳入Web頻道上建立空間時，您也必須在要顯示選件的網站上進行設定。
 
-## 管理選件目錄 {#managing-the-offer-catalog-}
+## Managing the offer catalog {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
@@ -61,6 +61,6 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >
 >下列步驟應由「傳送管理員」設 **定檔執行** 。 他們只能在即時環境中編輯選件。
 
-1. 建立促銷活動。
+1. 建立行銷活動.
 1. 參考促銷活動或促銷活動傳送中的選件。 有關詳情，請參閱關於 [出站渠道](../../interaction/using/about-outbound-channels.md)。
 
