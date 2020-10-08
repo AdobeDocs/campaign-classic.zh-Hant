@@ -1,7 +1,7 @@
 ---
-title: 要維護的表
-seo-title: 要維護的表
-description: 要維護的表
+title: 要維護的資料表
+seo-title: 要維護的資料表
+description: 要維護的資料表
 seo-description: null
 page-status-flag: never-activated
 uuid: 1085e929-65cc-48fa-9c31-0508a14b4704
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 6ec4e566-7116-4d7f-835d-cb0f3c3a6a7a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
 
-# 要維護的表{#tables-to-maintain}
+# 要維護的資料表{#tables-to-maintain}
 
 要維護的表格清單取決於您的Adobe Campaign版本、使用方式和資料模型設定。
 
@@ -44,7 +44,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
   <tr> 
    <td> NmsDelivery<br /> </td> 
    <td> 小<br /> </td> 
-   <td> 更新<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> 每個傳送動作有一個記錄。 單一記錄可多次更新以反映傳遞進度，因此此表格上的索引往往會快速分割。 <br /> </td> 
   </tr> 
   <tr> 
@@ -57,7 +57,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
    <td> NmsMirrorPageInfo<br /> </td> 
    <td> 大型<br /> </td> 
    <td> 插入、刪除<br /> </td> 
-   <td> 此表包含生成個性化鏡像頁面所需的資訊。 它包含一個備忘錄(CLOB)欄位，因此通常很大。 卷與保留的鏡像頁的歷史記錄直接成比例。 <br /> </td> 
+   <td> 此表包含生成個性化鏡像頁面所需的資訊。 它包含備注(CLOB)欄位，因此會很大。 卷與保留的鏡像頁的歷史記錄直接成比例。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
@@ -74,7 +74,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
   <tr> 
    <td> XtkWorkflow<br /> </td> 
    <td> 小<br /> </td> 
-   <td> 更新<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> 每個工作流程例項有一個記錄，因此記錄很少。 不過，會定期更新表格，以反映狀態和進度。<br /> </td> 
   </tr> 
   <tr> 
@@ -110,7 +110,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
   <tr> 
    <td> NmsBroadlogMsg <br /> </td> 
    <td> 小<br /> </td> 
-   <td> 更新<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> 此表包含用於確定SMTP錯誤的資訊。 它相當小，但會大幅更新，因此此表上的索引往往會快速分解。 <br /> </td> 
   </tr> 
   <tr> 
