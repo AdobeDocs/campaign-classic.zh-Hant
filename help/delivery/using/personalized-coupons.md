@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: f324afa5-304c-470e-a592-290f76a11ccb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 1%
 
 ---
 
 
 # 個人化優惠券{#personalized-coupons}
 
-將抵用券加入傳送，可讓收件者享有更優惠的產品與服務價值。 您可以使用「促銷活動抵用券」模組來建立一組抵用券，您預期這些抵用券會新增至即將推出的行銷選件。 當您準備好要建立傳送時，請指派適用的抵用券。 由於抵用券在選擇期間有效，所指派的抵用券會唯一連結至其傳送訊息。 此外，促銷活動會確認在傳送訊息之前，有足夠的抵用券可容納訊息數量。
+將抵用券加入傳送，可讓收件者享有更優惠的產品與服務價值。 您可以使用「促銷活動抵用券」模組來建立一組抵用券，您預期這些抵用券會新增至即將推出的行銷選件。 當您準備好要建立傳送時，請指派適用的抵用券。 由於抵用券在選擇期間有效，所指派的抵用券會唯一連結至其傳送訊息。 此外，促銷活動會確認傳送前訊息數量有足夠的抵用券。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/deliv_coup_01.png)
 
-1. Click the **[!UICONTROL New]** button.
+1. 按一下 **[!UICONTROL New]** 按鈕。
 1. 在欄位中輸入抵用券的名 **[!UICONTROL Label]** 稱。 已自動在中輸入唯一代碼 **[!UICONTROL Coupon code]**。 您可以保留代碼或輸入新代碼。
 
    ![](assets/deliv_coup_02.png)
@@ -53,11 +53,12 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    **[!UICONTROL Anonymous coupons]** :匿名抵用券對所有收件者都相同。 確認已在「抵用券類型」功能表中選 **取「匿名者** 」，然後按 **一下「儲存** 」以產生抵用券。
 
-   **[!UICONTROL Individual coupons]** :使用附加的抵用券代碼可以進一步個人化單個抵用券。 例如，在運動器材商店建立銷售的個別抵用券。 然而，受獎者名單很長，他們對單項運動的熱情也不同。 您可以根據運動（例如足球、足球、棒球等）為個別抵用券新增程式碼名稱並將每個程式碼傳送給適用的收件者。
+   **[!UICONTROL Individual coupons]** :使用附加的抵用券代碼可以進一步個人化單個抵用券。 例如，在運動器材商店建立銷售的個別抵用券。 然而，受獎者名單很長，他們對單項運動的熱情也不同。 您可以根據運動（例如足球、足球、棒球等）為個別抵用券新增程式碼名稱 並將每個程式碼傳送給適用的收件者。
 
    1. 選擇「個人」時，新的標籤「抵用券」會出現在左下角。 轉到頁籤 **[!UICONTROL Coupons]** 並按一下 **[!UICONTROL Add]**。
    1. 在彈出式視窗提示時，輸入個別抵用券的唯一代碼。
    1. 按一 **[!UICONTROL Save]** 下以產生抵用券。
+
    如需「抵用券」標籤的詳細資訊，請參閱「設 [定個別抵用券」](#configuring-individual-coupons)。
 
    >[!NOTE]
@@ -82,13 +83,13 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 在以下範例中，傳送是從首頁建立。 如需如何建立傳送的詳細指示，請參閱 [本節](../../delivery/using/about-email-channel.md)。 您也可以在工作流程中將抵用券新增至傳送。
 
 1. 前往並 **[!UICONTROL Campaigns]** 選擇 **[!UICONTROL Deliveries]**。
-1. 按一下 **[!UICONTROL Create]**.
+1. 按一下 **[!UICONTROL Create]**。
 
    ![](assets/deliv_coup_04.png)
 
 1. 在中輸入名稱 **[!UICONTROL Label]** 並按一下 **[!UICONTROL Continue]**。
 1. 按一 **[!UICONTROL To]** 下以新增收件者。
-1. 按一 **[!UICONTROL Add]** 下以選擇傳送的收件者。 在您選取收件者後，按一下 **[!UICONTROL Ok]** 即可返回傳送。
+1. 按一 **[!UICONTROL Add]** 下以選擇傳送的收件者。 在您選取收件者後，按一 **[!UICONTROL Ok]** 下以返回傳送。
 
    ![](assets/deliv_coup_05.png)
 
@@ -134,7 +135,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/deliv_coup_15.png)
 
-1. 按一下 **[!UICONTROL Analyze]**. 如果分析記錄確認所有收件者都有足夠的抵用券，請按一 **[!UICONTROL Confirm delivery]** 下以傳送。
+1. 按一下 **[!UICONTROL Analyze]**。如果分析記錄確認所有收件者都有足夠的抵用券，請按一 **[!UICONTROL Confirm delivery]** 下以傳送。
 
    ![](assets/deliv_coup_16.png)
 
@@ -160,8 +161,8 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 如果抵用券數少於訊息數，則傳送分析會停止。 在這種情況下，您可以匯入更多抵用券或限制訊息數。 如果要限制訊息數量，請依照下列指示進行。
 
 1. 前往電子郵件傳送視窗。
-1. 按一下 **[!UICONTROL To]**.
-1. 在 **[!UICONTROL Select target]**&#x200B;中，轉到頁籤 **[!UICONTROL Exclusions]** 。
+1. 按一下 **[!UICONTROL To]**。
+1. In **[!UICONTROL Select target]**, go to the **[!UICONTROL Exclusions]** tab.
 
    ![](assets/deliv_coup_18.png)
 
