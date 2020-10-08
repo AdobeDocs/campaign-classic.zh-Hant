@@ -1,7 +1,7 @@
 ---
-title: Linux中的堆棧跟蹤
-seo-title: Linux中的堆棧跟蹤
-description: Linux中的堆棧跟蹤
+title: Linux 中的堆疊追蹤
+seo-title: Linux 中的堆疊追蹤
+description: Linux 中的堆疊追蹤
 seo-description: null
 page-status-flag: never-activated
 uuid: d839df47-902f-4b92-bc78-536fc4fb6c98
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 60f306ea-4593-4e56-896e-8933277ee26a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 14%
 
 ---
 
 
-# Linux中的堆棧跟蹤{#stack-trace-in-linux}
+# Linux 中的堆疊追蹤{#stack-trace-in-linux}
 
 堆 **棧跟蹤** ，表示核心類型檔案 **中包含的跟** 蹤。 此檔案在發生電腦錯誤時生成。 它可識別錯誤的來源。
 
@@ -28,6 +28,7 @@ source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
 >
 >* 核 **心檔** ，稱為 **core.`<num>`**.
 >* **gdb —— 必須在電腦上安裝GNU Debugger** 。
+
 >
 
 
