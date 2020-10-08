@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: f66f1ff5-3601-4eb8-b05d-6f99164890ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 2%
 
 ---
 
@@ -38,9 +38,9 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 此欄位包含活動的內部名稱。
 
-## Image {#image}
+## 影像 {#image}
 
-此欄位可讓您變更連結至活動的影像。 有關詳情，請參閱：管 [理活動影像](../../workflow/using/managing-activity-images.md)。
+此欄位可讓您變更連結至活動的影像。 有關詳情，請參閱： [管理活動影像](../../workflow/using/managing-activity-images.md)。
 
 ## 執行 {#execution}
 
@@ -69,7 +69,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ## 時區 {#time-zone}
 
-此欄位可讓您選取活動的時區。 如需詳細資訊：管 [理時區](../../workflow/using/managing-time-zones.md)。
+此欄位可讓您選取活動的時區。 如需詳細資訊： [管理時區](../../workflow/using/managing-time-zones.md)。
 
 ## 發生錯誤時 {#in-case-of-errors}
 
