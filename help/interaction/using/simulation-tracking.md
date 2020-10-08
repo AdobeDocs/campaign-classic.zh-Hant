@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: a557026c-3b6a-4302-a042-0015449eaca5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 樞紐表格可快速檢視每個排名的選件劃分。 如同Adobe Campaign中的所有報表，您可以匯出、列印、封存或在網頁瀏覽器中顯示。
 
-如需詳細資訊，請參閱[本小節](../../reporting/using/actions-on-reports.md)。
+如需詳細資訊，請參閱[本章節](../../reporting/using/actions-on-reports.md)。
 
 ![](assets/offer_simulation_013.png)
 
