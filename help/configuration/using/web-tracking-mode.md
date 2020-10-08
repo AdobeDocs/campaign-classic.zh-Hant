@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: efeef54b-925d-4654-8601-52a73539b41f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 Adobe Campaign可讓您選擇網頁追蹤模式，以定義追蹤記錄在應用程式中的處理方式。
 
-有三種可用的Web追蹤模式：「 **作業追蹤」**、**「永久追蹤」** 和「 **匿名追蹤」**。
+有三種可用的Web追蹤模式： **「作業追蹤」**、**「永久追蹤」** 和「匿 **名追蹤」**。
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -47,7 +47,7 @@ Adobe Campaign可讓您選擇網頁追蹤模式，以定義追蹤記錄在應用
 </dbindex>
 ```
 
-**永久** 和匿 **名Web追蹤模式** ，包括兩個選項：強 **制傳送** , **最後傳送**。
+**永久** 和匿 **名Web追蹤模式** ，包括兩個選項： **強制傳送** , **最後傳送**。
 
 「強 **制傳送** 」選項可讓您在追蹤期間指定傳送(@jobid)的識別碼。
 
@@ -70,7 +70,7 @@ Adobe Campaign可讓您選擇網頁追蹤模式，以定義追蹤記錄在應用
 
 **永久Web追蹤模式的特性：**
 
-此網頁追蹤模式可讓您根據永久uuid230 cookie的存在來建立追蹤記錄。 如果訪客關閉其工作階段，Adobe Campaign會使用永久Cookie，從先前的追蹤記錄中復原其相關資訊。 如果目前作業的uuid230與uuid230的值已儲存在追蹤表格中，Adobe Campaign會重新插入追蹤記錄檔。
+此網頁追蹤模式可讓您根據永久uuid230 Cookie的存在來建立追蹤記錄。 如果訪客關閉其工作階段，Adobe Campaign會使用永久Cookie，從先前的追蹤記錄中復原其相關資訊。 如果目前作業的uuid230與uuid230的值已儲存在追蹤表格中，Adobe Campaign會重新插入追蹤記錄檔。
 
 這表示訪客必須先前在Adobe Campaign中識別（透過傳送），才能啟用uuid230值的協調。
 
