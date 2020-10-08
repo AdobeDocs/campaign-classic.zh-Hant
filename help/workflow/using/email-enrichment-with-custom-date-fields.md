@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9cb3be65-6652-47fa-b8a4-e088530aab4a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
 在此範例中，我們想傳送包含自訂資料欄位的電子郵件給將於本月過生日的收件者。 電子郵件將包含一週前後有效的抵用券。
 
-我們需要從清單中鎖定本月參加活動慶祝生日的收 **[!UICONTROL Split]** 件者。 然後，使用活 **[!UICONTROL Enrichment]** 動，自訂資料欄位將作為客戶特別優惠電子郵件的有效日期。
+我們需要從清單中鎖定收件者，讓他們在本月參加活動慶祝生 **[!UICONTROL Split]** 日。 然後，使用活 **[!UICONTROL Enrichment]** 動，自訂資料欄位將作為客戶特別優惠電子郵件的有效日期。
 
 ![](assets/uc_enrichment.png)
 
@@ -36,7 +36,7 @@ source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
    ![](assets/uc_enrichment_1.png)
 
 1. 新增活 **[!UICONTROL Split]** 動，以區分本月將慶祝生日的收件者與其他收件者。
-1. 要拆分清單，請在類別中 **[!UICONTROL Filtering of selected records]** 選擇 **[!UICONTROL Add a filtering condition on the inbound population]**。 然後，按一下 **[!UICONTROL Edit]**。
+1. 要拆分清單，請在類別中 **[!UICONTROL Filtering of selected records]** 選擇 **[!UICONTROL Add a filtering condition on the inbound population]**。 Then, click **[!UICONTROL Edit]**.
 
    ![](assets/uc_enrichment_2.png)
 
@@ -52,7 +52,7 @@ source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
    ![](assets/uc_enrichment_4.png)
 
-1. 按一下 **[!UICONTROL Finish]**. 然後，在活動 **[!UICONTROL General]** 的標籤 **[!UICONTROL Split]** 中，按一下類 **[!UICONTROL Generate complement]** 別中的 **[!UICONTROL Results]** 。
+1. 按一下 **[!UICONTROL Finish]**。然後，在活動 **[!UICONTROL General]** 的標籤 **[!UICONTROL Split]** 中，按一下類 **[!UICONTROL Generate complement]** 別中的 **[!UICONTROL Results]** 。
 
    結果 **[!UICONTROL Complement]** 是，您可以新增傳送活動或更新清單。 在這裡，我們新增了活 **[!UICONTROL End]** 動。
 
@@ -64,12 +64,12 @@ source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
    ![](assets/uc_enrichment_7.png)
 
-1. 開啟您的 **[!UICONTROL Enrichment]** 活動。 在類別 **[!UICONTROL Complementary information]** 中，按一下 **[!UICONTROL Add data]**。
+1. 開啟您的 **[!UICONTROL Enrichment]** 活動。 In the **[!UICONTROL Complementary information]** category, click **[!UICONTROL Add data]**.
 
    ![](assets/uc_enrichment_8.png)
 
 1. 然後 **[!UICONTROL Data linked to the filtering dimension]** 選擇 **[!UICONTROL Data of the filtering dimension]**。
-1. Click the **[!UICONTROL Add]** button.
+1. 按一下 **[!UICONTROL Add]** 按鈕。
 
    ![](assets/uc_enrichment_9.png)
 
@@ -77,17 +77,17 @@ source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
    ![](assets/uc_enrichment_10.png)
 
-1. 首先，我們需要將出生日期前的一週定位為有效 **性開始日期** ，並執行下列動作 **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`。
+1. 首先，我們需要將出生日期前的一週定位為有效 **性開始日期** ，並執行下列動作 **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`.
 
    ![](assets/uc_enrichment_11.png)
 
-1. 然後，要建立自定義日期欄位 **Validity結束日期** （將定位在出生日期後的一週），您需要添加 **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`。
+1. 然後，要建立自定義日期欄位 **Validity結束日期** （將定位在出生日期後的一週），您需要添加 **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
 
    您可以新增標籤至運算式。
 
    ![](assets/uc_enrichment_12.png)
 
-1. 按一下 **[!UICONTROL Ok]**. 你的濃縮活動已經準備好了。
+1. 按一下 **[!UICONTROL Ok]**。你的濃縮活動已經準備好了。
 
 活動 **[!UICONTROL Enrichment]** 完成後，您可以新增傳送。 在這種情況下，我們新增了電子郵件傳送，以傳送特別優惠給收件者，其有效日期會寄送給本月過生日的客戶。
 
@@ -114,7 +114,7 @@ source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. 按一下 ![](assets/uc_enrichment_16.png) . 然後 **[!UICONTROL Target extension]** 選取先前建立的自訂有效日期與活 **[!UICONTROL Enrichment]** 動，以將副檔名新增至formatDate運算式。
+1. 按一下 ![](assets/uc_enrichment_16.png)。然後 **[!UICONTROL Target extension]** 選取先前建立的自訂有效日期與活 **[!UICONTROL Enrichment]** 動，以將副檔名新增至formatDate運算式。
 
    ![](assets/uc_enrichment_19.png)
 
