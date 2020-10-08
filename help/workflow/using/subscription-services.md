@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 940bec7e-e3f0-4251-b7fe-72bf188743a7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 1. 按一下 **[!UICONTROL Subscription]** 或 **[!UICONTROL Unsubscription]** 者，如果希望向選定資訊服務訂閱或取消訂閱指定的人口。
 1. 選擇 **[!UICONTROL Send a confirmation message]** 以通知收件者已訂閱或取消訂閱服務。
 
-   該消息的內容在與資訊服務相關的傳送模板中指定。 For more on this, refer to this [section](../../delivery/using/managing-subscriptions.md).
+   該消息的內容在與資訊服務相關的傳送模板中指定。 如需詳細資訊，請參閱本[區段](../../delivery/using/managing-subscriptions.md)。
 
 ## 範例：將收件者清單訂閱至電子報 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
