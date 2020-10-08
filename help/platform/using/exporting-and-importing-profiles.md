@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 0325ab0f-394e-404b-9f4a-db3cc18d2493
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '136'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
@@ -42,7 +39,7 @@ Exports and imports are configured in dedicated templates executed through workf
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## How to import profiles{#import-profiles-video}
+## 如何匯入設定檔？{#import-profiles-video}
 
 此影片說明如何在Adobe Campaign中匯入設定檔，以便偶爾匯入。
 
