@@ -11,33 +11,30 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 設定行銷促銷活動{#setting-up-marketing-campaigns}
+# Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 促銷活動包括動作（傳送）和程式（匯入或擷取檔案），以及資源（行銷檔案、傳送大綱）。 它們用於行銷促銷活動。 促銷活動是方案的一部分，而方案則包含在促銷活動計畫中。
 
 若要建立行銷促銷活動：
 
-1. 建立促銷活動： 探索促銷活動及其特性： 標籤、類型、開始和結束日期、預算、相關資源、經理和參與者。
+1. 建立促銷活動：探索促銷活動及其特性：標籤、類型、開始和結束日期、預算、相關資源、經理和參與者。
 
    請參閱 [建立促銷活動](#creating-a-campaign)。
 
-1. 定義目標人口： 建立具有定位查詢的工作流程。
+1. 定義目標人口：建立具有定位查詢的工作流程。
 
    請參 [閱選擇目標人口](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 建立傳送： 選取頻道並定義要傳送的內容。
+1. 建立傳送：選取頻道並定義要傳送的內容。
 
    請參閱 [建立傳送](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
@@ -75,7 +72,7 @@ ht-degree: 0%
 1. 按一下右鍵新建立的計畫，然後選擇 **建立新的「程式」資料夾**。
 1. 重複上述步驟，更名新程式資料夾及其內部名稱。
 
-## 建立促銷活動 {#creating-a-campaign}
+## 建立行銷活動 {#creating-a-campaign}
 
 ### 新增促銷活動 {#adding-a-campaign}
 
@@ -121,7 +118,7 @@ ht-degree: 0%
 
 定期促銷活動是根據其範本的執行排程自動建立的促銷活動。
 
-### 建立循環促銷活動 {#creating-a-recurring-campaign}
+### Creating a recurring campaign {#creating-a-recurring-campaign}
 
 循環促銷活動是從定義要執行的工作流程範本和執行排程的特定範本建立。
 
@@ -173,8 +170,9 @@ ht-degree: 0%
 
    對於每一行，您可以添加以下附加選項：
 
-   * **[!UICONTROL To be approved]** : 可讓您在工作流程中強制傳送核准請求。
-   * **[!UICONTROL To be started]** : 可讓您在到達開始日期時啟動工作流程。
+   * **[!UICONTROL To be approved]** :可讓您在工作流程中強制傳送核准請求。
+   * **[!UICONTROL To be started]** :可讓您在到達開始日期時啟動工作流程。
+
    欄位 **[!UICONTROL Create in advance for]** 可讓您建立涵蓋所輸入期間的所有工作流程。
 
    執行工作流程時， **[!UICONTROL Jobs on campaigns]** 會根據促銷活動排程中定義的發生次數，建立專用的工作流程。 因此，會為每個執行日期建立工作流。
@@ -198,7 +196,7 @@ ht-degree: 0%
    >與工作流關聯的計畫行的起始日期可從工作流的變數中使用，其語法如下：\
    >`$date(instance/vars/@startPlanningDate)`
 
-### 建立定期促銷活動 {#creating-a-periodic-campaign}
+### Creating a periodic campaign {#creating-a-periodic-campaign}
 
 週期性促銷活動是根據特定範本的促銷活動，可讓您根據執行排程建立促銷活動例項。 促銷活動例項會根據定期促銷活動範本自動建立，視範本排程中定義的頻率而定。
 
@@ -222,7 +220,7 @@ ht-degree: 0%
    >
    >此工作流是工作流模板。 無法從促銷活動範本執行。
 
-1. 完成循環促銷活動範本的執行排程： 按一 **[!UICONTROL Add]** 下按鈕並定義開始和結束日期，或透過連結填寫執行排程。
+1. 完成循環促銷活動範本的執行排程：按一 **[!UICONTROL Add]** 下按鈕並定義開始和結束日期，或透過連結填寫執行排程。
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
