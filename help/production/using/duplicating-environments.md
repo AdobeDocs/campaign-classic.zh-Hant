@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,9 +30,9 @@ ht-degree: 0%
 >
 >如果您沒有對伺服器和資料庫（托管環境）的訪問權限，則將無法執行下面所述的過程。 請聯絡Adobe。
 
-使用Adobe Campaign需要安裝和設定一或多個環境： 開發、測試、預製、生產等。
+使用Adobe Campaign需要安裝和設定一或多個環境：開發、測試、預製、生產等。
 
-每個環境都包含一個Adobe Campaign實例，每個Adobe Campaign實例都連結到一個或多個資料庫。 應用伺服器可以執行一個或多個進程： 幾乎所有這些都可以直接訪問實例資料庫。
+每個環境都包含一個Adobe Campaign實例，每個Adobe Campaign實例都連結到一個或多個資料庫。 應用伺服器可以執行一個或多個進程：幾乎所有這些都可以直接訪問實例資料庫。
 
 本節詳細說明要應用於複製Adobe Campaign環境（即將源環境還原到目標環境）的過程，從而產生兩個相同的工作環境。
 
@@ -49,7 +46,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >在Adobe Campaign中，燒灼會結 **合動作** ，讓您停止所有程式與外部互動： 記錄檔、追蹤、傳送、促銷活動工作流程等。\
+   >在Adobe Campaign中，燒灼會結 **合動作** ，讓您停止所有程式與外部互動：記錄檔、追蹤、傳送、促銷活動工作流程等。\
    >必須執行此步驟，以避免多次傳送訊息（一次是從名義環境傳送，一次是從複製的環境傳送）。
 
    >[!CAUTION]
@@ -69,14 +66,15 @@ ht-degree: 0%
 
 ### 轉移程式 {#transfer-procedure}
 
-本節將幫助您瞭解通過案例研究將源環境傳輸到目標環境所需的步驟： 我們的目標是將生產環境(**prod** instance)還原到開發環境(**dev** instance)，以便在盡可能接近「即時」平台的環境中工作。
+本節將幫助您瞭解通過案例研究將源環境傳輸到目標環境所需的步驟：我們的目標是將生產環境(**prod** instance)還原到開發環境(**dev** instance)，以便在盡可能接近「即時」平台的環境中工作。
 
-必須謹慎執行下列步驟： 複製源環境資料庫時，某些進程可能仍在進行中。 燒灼（下面的步驟3）可防止訊息傳送兩次，並維持資料的一致性。
+必須謹慎執行下列步驟：複製源環境資料庫時，某些進程可能仍在進行中。 燒灼（下面的步驟3）可防止訊息傳送兩次，並維持資料的一致性。
 
 >[!CAUTION]
 >
 >* 以下過程在PostgreSQL語言中有效。 如果SQL語言不同（例如Oracle），則必須調整SQL查詢。
 >* 以下命令適用於 **prod** **instance和PostgreSQL下** dev instance的上下文。
+
 >
 
 
@@ -95,7 +93,7 @@ pg_dump mydatabase > mydatabase.sql
 
 ### 步驟2 —— 導出目標環境配置(dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-每個環境的大多數配置元素都不同： 外部帳戶（中部採購、路由等）、技術選項（平台名稱、資料庫ID、電子郵件地址和預設URL等）。
+每個環境的大多數配置元素都不同：外部帳戶（中部採購、路由等）、技術選項（平台名稱、資料庫ID、電子郵件地址和預設URL等）。
 
 在目標資料庫上保存源資料庫之前，您需要導出目標環境（開發）配置。 若要這麼做，請匯出這兩個表格的內容： **xtkoption** 和 **nmsextaccount**。
 
@@ -103,7 +101,7 @@ pg_dump mydatabase > mydatabase.sql
 
 要執行此操作，請對以下兩個元素執行包導出：
 
-* 將 **xtk:option** 表匯出至&#39;options_dev.xml&#39;檔案，而沒有下列內部名稱的記錄： 「WdbcTimeZone」、「NmsServer_LastPostUpgrade」和「NmsBroadcast_RegexRules」。
+* 將 **xtk:option** 表匯出至&#39;options_dev.xml&#39;檔案，而沒有下列內部名稱的記錄：「WdbcTimeZone」、「NmsServer_LastPostUpgrade」和「NmsBroadcast_RegexRules」。
 * 在&#39;extaccount_dev.xml&#39;檔案中，針對ID不是0(@id &lt;> 0)的所有記錄，匯出 **nms:extAccount** 表。
 
 檢查導出的選項／帳戶數是否等於每個檔案中要導出的行數。
@@ -112,7 +110,7 @@ pg_dump mydatabase > mydatabase.sql
 >
 >要在包導出中導出的行數為1000行。 如果選項或外部帳戶數超過1000個，則必須執行數個導出。
 > 
->有關更多資訊，請參見[本節](../../platform/using/working-with-data-packages.md#exporting-packages)。
+>如需詳細資訊，請參閱[本區段](../../platform/using/working-with-data-packages.md#exporting-packages)。
 
 >[!NOTE]
 >
@@ -152,8 +150,8 @@ nlserver pdump
 
 若要這麼做，請使用下列程式：
 
-* 在Windows中： 開啟 **Task manager** ，並檢查是否沒有 **nlserver.exe** 進程。
-* 在Linux中： 運行 **ps aux | grep nlserver** 命令，並檢查沒有 **nlserver** 進程。
+* 在Windows中：開啟 **Task manager** ，並檢查是否沒有 **nlserver.exe** 進程。
+* 在Linux中：運行 **ps aux | grep nlserver** 命令，並檢查沒有 **nlserver** 進程。
 
 ### 步驟4 —— 恢復目標環境中的資料庫(dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -175,7 +173,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 ### 步驟6 —— 檢查燒灼 {#step-6---check-cauterization}
 
-1. 檢查唯一的傳送部件是ID設為0的部件：
+1. 檢查唯一的傳送部件是其ID設為0的部件：
 
    ```
    SELECT * FROM neolane.nmsdeliverypart;
@@ -200,7 +198,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 >[!NOTE]
 >
->在開發環境中重新啟動Adobe Campaign **之前** ，您可以套用其他安全程式： 僅啟 **動web** 模組。
+>在開發環境中重新啟動Adobe Campaign **之前** ，您可以套用其他安全程式：僅啟 **動web** 模組。
 >  
 >若要這麼做，請編輯執行個體的設定檔案(**config-dev.xml**)，然後在每個模組（mta、stat等）的autoStart=&quot;true&quot;選項前加入&quot;_&quot;字元。
 
@@ -224,7 +222,7 @@ nlserver pdump
 >
 >此步驟僅應啟動Web程式。 如果不是這樣，請在繼續之前停止其他正在運行的進程
 
-首先，在匯入前先檢查數行檔案的值(例如： 選項表的&#39;NmsTracking_Pointer&#39;和外部帳戶表的交付帳戶或中部來源帳戶)
+首先，在匯入前先檢查數行檔案的值(例如：選項表的&#39;NmsTracking_Pointer&#39;和外部帳戶表的交付帳戶或中部來源帳戶)
 
 要從目標環境資料庫(dev)導入配置：
 
