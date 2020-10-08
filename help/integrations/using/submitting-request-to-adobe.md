@@ -1,7 +1,7 @@
 ---
-title: 向Adobe提交請求
-seo-title: 向Adobe提交請求
-description: 向Adobe提交請求
+title: 向 Adobe 提交請求
+seo-title: 向 Adobe 提交請求
+description: 向 Adobe 提交請求
 seo-description: null
 page-status-flag: never-activated
 uuid: 8caa1dd6-864d-4101-8b72-c9bd28b8173f
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a33132f64f160b20c98afd08cb9d0fe4cdf62b1a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# 向Adobe提交請求{#submitting-request-to-adobe}
+# 向 Adobe 提交請求{#submitting-request-to-adobe}
 
 >[!NOTE]
 >
@@ -47,15 +44,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <strong>環境:</strong><br /> </td> 
-   <td> 範例： 製作 </td> 
+   <td> 範例：製作 </td> 
   </tr> 
   <tr> 
    <td> <strong>AAM或人員服務</strong><br /> </td> 
-   <td> 範例： Adobe Audience Manager。 請務必向布建團隊提及您是否擁有Audience Manager授權。</td> 
+   <td> 範例：Adobe Audience Manager。 請務必向布建團隊提及您是否擁有Audience Manager授權。</td> 
   </tr> 
   <tr> 
    <td> <strong>宣告的ID或訪客ID</strong><br /> </td> 
-   <td> 範例： 宣告的ID </td> 
+   <td> 範例：宣告的ID </td> 
   </tr> 
   <tr> 
    <td> <strong>其他資訊</strong><br /> </td> 
