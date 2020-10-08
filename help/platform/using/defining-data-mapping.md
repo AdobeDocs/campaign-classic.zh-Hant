@@ -11,16 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
 
-# 定義資料映射 {#defining-data-mapping}
+# 定義資料對應 {#defining-data-mapping}
 
 Adobe Campaign可讓您定義外部表格中資料的對應。
 
