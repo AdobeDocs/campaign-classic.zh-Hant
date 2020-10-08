@@ -1,7 +1,7 @@
 ---
-title: 交貨報告
-seo-title: 交貨報告
-description: 交貨報告
+title: 傳遞報表
+seo-title: 傳遞報表
+description: 傳遞報表
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 6%
 
 ---
 
 
-# 人員／人員與收件者 {#person-people-and-recipients}
+# 人員與收件者 {#person-people-and-recipients}
 
 此範例可協助您瞭解Adobe Campaign中的人員／人員與收件者之間的差異。 我們會傳送傳送給多人，以強調人與收件者之間的差異，同時詳細說明下列指標的計算方法：
 
@@ -96,7 +96,7 @@ Florian的動作（按一下即可開啟，按9下即可完成）會顯示在下
 
 **收件者**:開啟和點按會指派給相同的收件者(Florian)。 由於此收件者與前一個(Marie)不同，Adobe Campaign會新增一個收件者至計數。
 
-人員：由於此收件者的瀏覽器接受Cookie，因此我們可看到相同的識別碼(UUID)已指派給所有點按記錄： **`fe37a503 [...]`**。 Adobe Campaign會正確地將這些點按識別為屬於同一人。 新人員會加入計數。
+人員：由於此收件者的瀏覽器接受Cookie，因此我們可看到相同的識別碼(UUID)已指派給所有點按記錄： **`fe37a503 [...]`**. Adobe Campaign會正確地將這些點按識別為屬於同一人。 新人員會加入計數。
 
 **中間計算：**
 
@@ -115,7 +115,7 @@ Florian的動作（按一下即可開啟，按9下即可完成）會顯示在下
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**人物**:關於點按，我們可看到相同的識別碼(UUID)已指派給所有記錄： **`9ab648f9 [...]`**。 此識別碼尚未計算。 因此，會在計數中新增一個人。
+**人物**:關於點按，我們可看到相同的識別碼(UUID)已指派給所有記錄： **`9ab648f9 [...]`**. 此識別碼尚未計算。 因此，會在計數中新增一個人。
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
