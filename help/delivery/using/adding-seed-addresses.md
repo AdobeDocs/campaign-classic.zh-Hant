@@ -1,7 +1,7 @@
 ---
-title: 添加種子地址
-seo-title: 添加種子地址
-description: 添加種子地址
+title: 新增種子地址
+seo-title: 新增種子地址
+description: 新增種子地址
 seo-description: null
 page-status-flag: never-activated
 uuid: e94ddd46-bed6-4505-91b7-7e17abb0e9c8
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: 0b9b53bf-4dd2-416c-894e-393aded489f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 5%
 
 ---
 
 
-# 添加種子地址{#adding-seed-addresses}
+# 新增種子地址{#adding-seed-addresses}
 
 ## 遞送中的種子地址 {#seed-addresses-in-a-delivery}
 
@@ -32,7 +32,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 1. 輸入單個種子地址。
 
-   若要這麼做，請按一 **[!UICONTROL Add]** 下按鈕並定義位址欄位的內容。 對每個地址重複。 如需詳細資訊，請參閱[本小節](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address)。
+   若要這麼做，請按一 **[!UICONTROL Add]** 下按鈕並定義位址欄位的內容。 對每個地址重複。 如需詳細資訊，請參閱[本章節](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address)。
 
 1. 匯入地址範本並加以調整，以符合您的需求。
 
@@ -44,7 +44,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
    要執行此操作，請按一下鏈 **[!UICONTROL Edit the dynamic condition...]** 接，然後輸入種子地址選擇參數。 例如，您可以包含特定資料夾中包含的所有種子位址，或您組織中屬於特定部門的種子位址。
 
-   本節將介紹此示例：使 [用案例：選擇條件上的種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)。
+   本節將介紹此示例： [使用案例：選擇條件上的種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)。
 
 >[!NOTE]
 >
