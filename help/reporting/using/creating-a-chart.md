@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 70e4e63d-354d-4912-b75a-dba38e1c0b03
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
@@ -118,7 +118,7 @@ Adobe Campaign提供各種類型的圖形表示法。 詳細說明如下。
 
 ![](assets/reporting_graph_type_histo.png)
 
-如有必要，您可以反轉值顯示順序。 若要這麼做，請選取 **[!UICONTROL Reverse stacking]** 選項。
+如有必要，您可以反轉值顯示順序。 To do this, select the **[!UICONTROL Reverse stacking]** option.
 
 ### 轉換：漏斗 {#conversion--funnel}
 
@@ -168,4 +168,4 @@ Adobe Campaign提供各種類型的圖形表示法。 詳細說明如下。
 
 ![](assets/reporting_add_statistics.png)
 
-如需詳細資訊，請參閱[本小節](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation)。
+如需詳細資訊，請參閱[本章節](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation)。
