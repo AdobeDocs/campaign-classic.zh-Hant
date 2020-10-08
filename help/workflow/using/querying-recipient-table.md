@@ -1,5 +1,5 @@
 ---
-title: 查詢收件人表
+title: 查詢收件人資料表
 description: 瞭解如何查詢收件者表格
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
-# 查詢收件人表 {#querying-recipient-table}
+# 查詢收件人資料表 {#querying-recipient-table}
 
 在此範例中，我們想要復原電子郵件網域為「orange.co.uk」且不住在倫敦的收件者的姓名和電子郵件。
 
@@ -40,12 +40,12 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
 若要建立此範例，請套用下列步驟：
 
-1. 按一下 **[!UICONTROL Tools > Generic query editor...]** 並選擇「 **Recipients** (**nms:recipient**)」表。 然後按一 **[!UICONTROL Next]**&#x200B;下。
-1. 選擇： **[!UICONTROL Last name]**、 **[!UICONTROL First name]****[!UICONTROL Email]**、 **[!UICONTROL City]** 和 **[!UICONTROL Account number]**。 這些欄位會新增至 **[!UICONTROL Output columns]**。 然後按一 **[!UICONTROL Next]**&#x200B;下。
+1. 按一下 **[!UICONTROL Tools > Generic query editor...]** 並選擇「 **Recipients** (**nms:recipient**)」表。 然後按一下 **[!UICONTROL Next]**。
+1. 選擇： **[!UICONTROL Last name]**、 **[!UICONTROL First name]**、 **[!UICONTROL Email]****[!UICONTROL City]** 和 **[!UICONTROL Account number]**。 這些欄位會新增至 **[!UICONTROL Output columns]**。 然後按一下 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_03.png)
 
-1. 排序欄，以正確順序顯示欄。 在這裡，我們要以遞減順序對帳戶編號排序，並以字母順序對名稱排序。 然後按一 **[!UICONTROL Next]**&#x200B;下。
+1. 排序欄，以正確順序顯示欄。 在這裡，我們要以遞減順序對帳戶編號排序，並以字母順序對名稱排序。 然後按一下 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_04.png)
 
@@ -58,7 +58,7 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
 1. 如有需要，按一 **[!UICONTROL Distribution of values]** 下按鈕以根據潛在客戶的電子郵件網域檢視散發。 資料庫中每個電子郵件網域都有一個百分比。 除「orange.co.uk」以外的網域會顯示，直到套用篩選器為止。
 
-   查詢的摘要顯示在窗口底部：電 **子郵件網域等於&#39;orange.co.uk&#39;**。
+   查詢的摘要顯示在窗口底部： **電子郵件網域等於&#39;orange.co.uk&#39;**。
 
 1. 按一 **[!UICONTROL Preview]** 下以瞭解查詢結果：只會顯示「orange.co.uk」電子郵件網域。
 
@@ -76,7 +76,7 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
    ![](assets/query_editor_nveau_15.png)
 
-1. 在窗口 **[!UICONTROL Data preview]** 中，按一下 **[!UICONTROL Start the preview of the data]**。 此函式計算查詢的結果。
+1. In the **[!UICONTROL Data preview]** window, click **[!UICONTROL Start the preview of the data]**. 此函式計算查詢的結果。
 
    該選 **[!UICONTROL Column results]** 項卡在列中顯示查詢結果。
 
