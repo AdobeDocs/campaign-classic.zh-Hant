@@ -1,7 +1,7 @@
 ---
-title: 選件分析報表
-seo-title: 選件分析報表
-description: 選件分析報表
+title: 優惠方案分析報表
+seo-title: 優惠方案分析報表
+description: 優惠方案分析報表
 seo-description: null
 page-status-flag: never-activated
 uuid: 5593b570-adc0-41a7-a83c-f8e6e4be6247
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 discoiquuid: 6aae6a10-b03e-41f1-a6e9-29100800bae1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 14%
 
 ---
 
 
-# 選件分析報表{#offer-analysis-report}
+# 優惠方案分析報表{#offer-analysis-report}
 
 報 **[!UICONTROL Offer analysis]** 告概述了接受或拒絕的主張數。
 
