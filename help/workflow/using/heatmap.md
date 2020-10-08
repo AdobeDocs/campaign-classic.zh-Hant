@@ -1,7 +1,7 @@
 ---
-title: Workflow HeatMap
-seo-title: Workflow HeatMap
-description: Workflow HeatMap
+title: 工作流程熱度圖
+seo-title: 工作流程熱度圖
+description: 工作流程熱度圖
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -11,21 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Workflow HeatMap {#workflow-heatmap}
+# 工作流程熱度圖 {#workflow-heatmap}
 
-Adobe Campaign Workflow HeatMap包含目前執行之所有工作流程的色彩編碼圖形表示法。 它僅適用於實例管理員。
+Adobe Campaign 工作流程熱度圖包含目前執行的所有工作流程，並以色彩編碼的圖形來加以呈現。  它僅適用於實例管理員。
 
 本頁提供其他監控不同促銷活動程式 [的方法](../../production/using/monitoring-guidelines.md)。
 
@@ -35,12 +32,12 @@ Workflow HeatMap提供並行工作流程數目的快速概覽，讓Adobe Campaig
 
 更精確地說，它可協助平台管理員：
 
-* 檢視並瞭解並行工作流程
+* 檢視並瞭解並行的工作流程
 * 依期間篩選工作流程，以查看哪些工作流程可能遇到問題
 * 依期間篩選活動，以查看哪些活動可能遇到問題
-* 輕鬆尋找個別工作流程和所有相關活動（包括其持續時間）
-* 依工作流程類型搜尋(技[術工作流程](../../workflow/using/building-a-workflow.md#technical-workflows) 或促 [銷活動工作流程](../../workflow/using/building-a-workflow.md#campaign-workflows))
-* 尋找要分析的特定工作流程
+* 輕易尋找個別的工作流程及所有的相關活動 (包括其持續時間)
+* 依工作流程類型搜尋 ([技術工作流程](../../workflow/using/building-a-workflow.md#technical-workflows)或[行銷活動工作流程](../../workflow/using/building-a-workflow.md#campaign-workflows))
+* 尋找特定工作流程並加以分析
 
 >[!NOTE]
 >
@@ -61,9 +58,9 @@ Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版�
 
 有三個選項可供使用：
 
-* **[!UICONTROL Accept]** : 接受本合約後，您即授權Adobe Campaign收集您的資料，並將其傳輸至美國，以便在異常偵測時提供協助。
-* **[!UICONTROL Refuse]** : 拒絕合約後，您的資料將不會傳輸，但您仍可使用「工作流程熱圖」。
-* **[!UICONTROL Do not show this message again]** : 按一 **[!UICONTROL Do not show this message again]** 下，當存取「工作流程熱圖」時，快顯視窗將停止顯示，但仍可從按鈕 **[!UICONTROL Term of use]** 使用。
+* **[!UICONTROL Accept]** :接受本合約後，您即授權Adobe Campaign收集您的資料，並將其傳輸至美國，以便在異常偵測時提供協助。
+* **[!UICONTROL Refuse]** :拒絕合約後，您的資料將不會傳輸，但您仍可使用「工作流程熱圖」。
+* **[!UICONTROL Do not show this message again]** :按一 **[!UICONTROL Do not show this message again]** 下，當存取「工作流程熱圖」時，快顯視窗將停止顯示，但仍可從按鈕 **[!UICONTROL Term of use]** 使用。
 
 這個選項並非最終選項，您隨時都可以按一下按鈕加以 **[!UICONTROL Term of use]** 變更。
 
@@ -86,7 +83,7 @@ Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版�
    >只有未被工作流刪除的工作流 **[!UICONTROL Database cleanup]** 才可見。 有關資料庫清理工作流的詳細資訊，請參 [閱本節](../../production/using/database-cleanup-workflow.md)。\
    >預設情況下，Workflow HeatMap時區是為當前管理員用戶定義的時區。 例如，如果您與您所使用的行銷使用者不在相同的區域，您可能會想要變更它。
 
-1. 按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕。
+1. 按一下 **[!UICONTROL Filters]** 按鈕。
 
    ![](assets/wkf_monitoring_filters.png)
 
@@ -104,8 +101,8 @@ Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版�
 
 1. 您也可以篩選 **[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]** : 只 [會顯示現成可用的技術工作流程](../../workflow/using/building-a-workflow.md#technical-workflows) ，以 [及資料管理工作流程](../../workflow/using/targeting-data.md#data-management) 。
-   * **[!UICONTROL Marketing]** : 只會顯示連結至行銷促銷活動的工 [作流程](../../workflow/using/building-a-workflow.md#campaign-workflows)，稱為促銷活動工作流程。
+   * **[!UICONTROL Technical]** :只 [會顯示現成可用的技術工作流程](../../workflow/using/building-a-workflow.md#technical-workflows) ，以 [及資料管理工作流程](../../workflow/using/targeting-data.md#data-management) 。
+   * **[!UICONTROL Marketing]** :只會顯示連結至行銷促銷活動的工 [作流程](../../workflow/using/building-a-workflow.md#campaign-workflows)，稱為促銷活動工作流程。
 
 1. 要按名稱搜索特定工作流，您也可以使用該 **[!UICONTROL Workflow name filter]** 欄位。
 
@@ -126,7 +123,7 @@ Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版�
 
 每列代表一天的一小時，而每個儲存格代表該小時的5分鐘。
 
-此格線會顯示每個5分鐘期間同時執行的所有工作流程。
+此格線會針對每個5分鐘時段顯示同時執行的所有工作流程。
 
 在以下範例中，在上午8點到上午8點05分之間，有三個工作流程正在執行（不論其個別持續時間）:
 
@@ -141,7 +138,7 @@ Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版�
 1. 按一下工作流程ID或名稱，即可直接開啟工作流程。
 1. 要返回視圖， **[!UICONTROL Campaign Workflow HeatMap]** 請按一下該 **[!UICONTROL Home]** 按鈕。
 
-## 使用案例： 使用HeatMap採取行動 {#use-cases--using-the-heatmap-to-take-actions}
+## 使用案例：使用HeatMap採取行動 {#use-cases--using-the-heatmap-to-take-actions}
 
 促銷活動工作流程熱圖可在兩個主要案例中派上用場。
 
@@ -176,7 +173,7 @@ Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版�
    * 建議行銷使用者分割最長的工作流程，以縮短處理時間。
    * 對特定工作流程和特定活動（例如JavaScript、匯入、匯出等）進行更深入的分析，以隔離問題並更輕鬆地解決問題。
 
-## 範例： 使用HeatMap改善工作流程規劃 {#example--using-the-heatmap-to-improve-workflow-planning}
+## 範例：使用HeatMap改善工作流程規劃 {#example--using-the-heatmap-to-improve-workflow-planning}
 
 下列範例說明如何提高規劃的效率，以及使用Adobe Campaign Workflow HeatMap時如何改善效能。
 
