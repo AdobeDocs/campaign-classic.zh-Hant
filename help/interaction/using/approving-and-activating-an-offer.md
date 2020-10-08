@@ -1,7 +1,7 @@
 ---
-title: 核准和啟用選件
-seo-title: 核准和啟用選件
-description: 核准和啟用選件
+title: 核准和啟用優惠方案
+seo-title: 核准和啟用優惠方案
+description: 核准和啟用優惠方案
 seo-description: null
 page-status-flag: never-activated
 uuid: 1be96bb4-ef17-4b4d-b872-05e1c6b1412d
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 3%
 
 ---
 
 
-# 核准和啟用選件{#approving-and-activating-an-offer}
+# 核准和啟用優惠方案{#approving-and-activating-an-offer}
 
 選件內容完成後，您需要核准，才能將它複製至即時環境並傳遞。 核准涉及選件內容及其資格。
 
@@ -98,7 +98,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 >[!NOTE]
 >
->您也可以在選件的標籤 **[!UICONTROL Audit]** 中使用追蹤功能，並提供審核者意見的詳細資訊。
+>您也可以在選件的標籤 **[!UICONTROL Audit]** 中取得追蹤，並提供審核者意見的詳細資訊。
 
 ## 重新開始核准 {#restart-the-approval}
 
@@ -112,7 +112,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ## 發佈選件 {#publishing-the-offer}
 
-一旦某個選件的內容和資格都獲得核准後，該選件就會由工作流程發佈，此工作流程會自動執行每個已完成核准週期的選件。 工作 **[!UICONTROL Offer notification]** 流程也會每小時執行一次，以同步（如有必要）選件目錄中包含的空間和類別，從設計環境到即時環境。
+一旦某個選件的內容和資格都獲得核准後，該選件就會由工作流程發佈，此工作流程會自動執行每個已完成核准週期的選件。 工作 **[!UICONTROL Offer notification]** 流程也會每小時執行一次，以同步（如有必要）從設計環境到即時環境的選件目錄中所包含的空間和類別。
 
 設計環境中可用選件的控制面板包含發佈相關資訊，包括即時環境中相符選件的名稱。
 
