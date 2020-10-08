@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 discoiquuid: 96c0ffae-b7b8-4346-bf20-963aa233438f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 8%
+ht-degree: 18%
 
 ---
 
@@ -33,7 +30,7 @@ ht-degree: 8%
 
 ![](assets/wf-activity-tabs.png)
 
-閱讀更多：
+顯示全文:
 
 * [關於定位活動](../../workflow/using/about-targeting-activities.md)
 * [匯入資料](../../workflow/using/importing-data.md)
