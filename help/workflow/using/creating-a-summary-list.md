@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6b0acb6b-0808-4972-b2a2-15fab29b3861
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 2%
 
 ---
 
@@ -108,7 +108,7 @@ Phone;500;London 5
 現在建立連結，我們將從「商店」架構新增欄至工作流程的工作表：「郵遞區號參考」欄位。
 
 1. 開啟濃縮活動。
-1. 按一下 **[!UICONTROL Edit additional data]**.
+1. 按一下 **[!UICONTROL Edit additional data]**。
 1. 將「郵遞區號參考」欄位新增至 **[!UICONTROL Output columns]**。
 
 ![](assets/uc2_enrich_enrich5.png)
@@ -127,7 +127,7 @@ Phone;500;London 5
 1. 選取定位維度，在此例中為「購買」結構。
 1. 為工作流表中的資料選擇一個「源表達式」（本例中為「storeName」欄位）。
 1. 在「購買」表格中為資料選取「目標運算式」（此例中為「儲存重新命名」欄位）。
-1. 勾選 **[!UICONTROL Keep unreconciled data coming from the work table]** 選項。
+1. 核取 **[!UICONTROL Keep unreconciled data coming from the work table]** 選項。
 
 ![](assets/uc2_enrich_reconciliation.png)
 
@@ -152,7 +152,7 @@ Phone;500;London 5
 1. 按一下「新增 **[!UICONTROL Data]**」。
 1. 按一下選 **[!UICONTROL Data linked to the targeting dimension]** 項。
 1. 按一下窗 **[!UICONTROL Data linked to the filtering dimension]** 口中的選 **[!UICONTROL Select fields to add]** 項。
-1. 選擇節 **[!UICONTROL Purchases]** 點，然後按一下 **[!UICONTROL Next]**。
+1. Select the **[!UICONTROL Purchases]** node then click **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
@@ -160,7 +160,7 @@ Phone;500;London 5
 
    ![](assets/uc2_enrich_enrich10.png)
 
-1. 按一下 **[!UICONTROL Next]**.
+1. 按一下 **[!UICONTROL Next]**。
 1. 新增下列運算式，以計算每個連絡人的購買總計：&quot;Sum(@prodprice)&quot;。
 
    ![](assets/uc2_enrich_enrich6.png)
