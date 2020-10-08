@@ -11,18 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 discoiquuid: 3d01cc7e-5685-4101-bf4b-ef5f6e52b3c9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 8%
 
 ---
 
 
 # 插入共用資產{#inserting-a-shared-asset}
 
-從Adobe Experience cloud共用的資產可用於您的電子郵件和登陸頁面，如下所示：
+從Adobe Experience Cloud共用的資產可用於您的電子郵件和登陸頁面，如下所示：
 
 1. 建立新電子郵件或新登陸頁面。
 
@@ -46,7 +46,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 1. 在開啟的選取視窗中，選取影像，然後確認。
 
-   可用的影像會來自您的Adobe Experience cloud資料庫或AEM Assets資料庫，這取決於您的Adobe Campaign例項設定方式。 請參閱「設 [定資產存取權](../../integrations/using/configuring-access-to-assets.md) 」一節。
+   可用的影像會來自您的Adobe Experience Cloud資料庫或AEM Assets資料庫，這取決於您的Adobe Campaign例項設定方式。 請參閱「設 [定資產存取權](../../integrations/using/configuring-access-to-assets.md) 」一節。
 
    ![](assets/dam_shared_image_selection.png)
 
