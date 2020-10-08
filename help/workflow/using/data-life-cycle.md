@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -45,9 +42,9 @@ ht-degree: 0%
 
    此功能表可讓您存取描述性分析精靈，讓您產生轉場資料的統計資料和報表。
 
-   For more on this, refer to this [section](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+   如需詳細資訊，請參閱本[區段](../../reporting/using/using-the-descriptive-analysis-wizard.md)。
 
-當執行工作流時，會清除目標資料。 只有最後一個工作表可以訪問。 您可以配置工作流，以便所有工作表保持可訪問性： 選中工 **[!UICONTROL Keep the result of interim populations between two executions]** 作流屬性中的選項。
+當執行工作流時，會清除目標資料。 只有最後一個工作表可以訪問。 您可以配置工作流，以便所有工作表保持可訪問性：選中工 **[!UICONTROL Keep the result of interim populations between two executions]** 作流屬性中的選項。
 
 不過，我們建議您避免在大量資料時啟用此選項。
 
@@ -65,7 +62,7 @@ ht-degree: 0%
 
 **[!UICONTROL Target extension]** (targetData)類型的個人化元素無法用於定位工作流程。 傳送目標必須在工作流程中建立，並在傳送的傳入轉換中指定。
 
-如果您想要建立傳送校樣，則需要根據模式建立校樣目 **[!UICONTROL Address substitution]** 標，以便輸入個人化資料。 For more on this, refer to this [section](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+如果您想要建立傳送校樣，則需要根據模式建立校樣目 **[!UICONTROL Address substitution]** 標，以便輸入個人化資料。 如需詳細資訊，請參閱本[區段](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)。
 
 在下例中，我們將收集客戶相關資訊的清單，以便用於個人化電子郵件。
 
@@ -97,7 +94,7 @@ ht-degree: 0%
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. 然後設定 **[!UICONTROL Delivery]**: 它是根據模板建立的，而收件者則由入站轉換指定。
+1. 然後設定 **[!UICONTROL Delivery]**:它是根據模板建立的，而收件者則由入站轉換指定。
 
    ![](assets/wf-targetdata-sample-4.png)
 
