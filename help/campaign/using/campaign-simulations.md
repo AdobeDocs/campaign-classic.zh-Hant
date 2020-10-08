@@ -1,7 +1,7 @@
 ---
-title: 促銷活動模擬
-seo-title: 促銷活動模擬
-description: 促銷活動模擬
+title: 行銷活動模擬
+seo-title: 行銷活動模擬
+description: 行銷活動模擬
 seo-description: null
 page-status-flag: never-activated
 uuid: d5a090ef-57e5-46b2-b9ad-6d4d964c8e20
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: e8e7a720-c93d-491d-8768-270e47e9c898
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 2%
 
 ---
 
 
-# 促銷活動模擬{#campaign-simulations}
+# 行銷活動模擬{#campaign-simulations}
 
 ## 關於模擬 {#about-simulations}
 
@@ -72,7 +72,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   按一 **[!UICONTROL Finish]** 下以核准選擇。
+   Click **[!UICONTROL Finish]** to approve the selection.
 
    您可以人工合併屬於計畫、方案或促銷活動的選定交貨和交貨。
 
@@ -84,7 +84,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
    >[!NOTE]
    >
-   >計算模擬時，只會考慮已計算目標的傳送(狀態：Target **就緒** , **或就緒交付**)。
+   >計算模擬時，只會考慮已計算目標的傳送(狀態： **目標就緒** ，或 **就緒提供**)。
 
 1. 在標籤 **[!UICONTROL Calculations]** 中，選擇分析維，例如收件人方案。
 
@@ -159,12 +159,12 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 預設會提供下列報表：
 
 * **[!UICONTROL Detail of simulation exclusions]** :此報告提供所有相關傳送之排除原因的詳細圖表。
-* **[!UICONTROL Simulation summary]** :此報表顯示不同傳送期間，從模擬中排除的人口。
+* **[!UICONTROL Simulation summary]** :此報表顯示不同傳送期間，從模擬中排除的人口族群。
 * **[!UICONTROL Summary of exclusions linked to the simulation]** :此報表顯示模擬造成的排除圖表，以及套用的排除類型規則，以及每個規則的排除率圖表。
 
 >[!NOTE]
 >
->您可以建立新報表，並將其新增至提供的報表。 如需詳細資訊，請參閱[本小節](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
+>您可以建立新報表，並將其新增至提供的報表。 如需詳細資訊，請參閱[本章節](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
 
 若要存取報表，請透過其控 **[!UICONTROL Reports]** 制面板按一下目標模擬的連結。
 
@@ -178,7 +178,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 若要比較結果，您必須使用報表。 事實上，Adobe Campaign可讓您儲存報表歷史記錄，以便稍後再檢視。 在模擬的整個生命週期中都會儲存此歷史記錄。
 
-**例如：**
+**範例:**
 
 1. 建立套用類型學 **A的傳送** 模擬。
 1. 在標籤 **[!UICONTROL Reports]** 中，編輯其中一個可用報表，例如 **[!UICONTROL Detail of simulation exclusions]** 編輯。
@@ -202,7 +202,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 >我們建議在模擬範本中定義計算軸，而不是針對每個模擬分別定義。\
 >模擬範本會儲存在Adobe **[!UICONTROL Resources > Templates > Simulation templates]** Campaign樹狀結構的節點中。
 
-**例如：**
+**範例:**
 
 在以下範例中，我們想根據收件者的狀態（「客戶」、「潛在客戶」或無）來建立其他報表軸。
 
