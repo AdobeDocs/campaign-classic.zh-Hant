@@ -1,7 +1,7 @@
 ---
-title: 入站SMS
-seo-title: 入站SMS
-description: 入站SMS
+title: 傳入 SMS
+seo-title: 傳入 SMS
+description: 傳入 SMS
 seo-description: null
 page-status-flag: never-activated
 uuid: 895e54df-e795-48ac-ac94-96dab454c550
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: fa9ae600-91fc-4aea-ae02-8ab9064947ac
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 8%
 
 ---
 
 
-# 入站SMS{#inbound-sms}
+# 傳入 SMS{#inbound-sms}
 
 「 **入站SMS** 」活動可讓您從外部帳戶下載並處理文字訊息。
 
