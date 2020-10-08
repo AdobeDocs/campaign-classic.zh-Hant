@@ -1,7 +1,7 @@
 ---
-title: 消息中心處理時間
-seo-title: 消息中心處理時間
-description: 消息中心處理時間
+title: 訊息中心處理時間
+seo-title: 訊息中心處理時間
+description: 訊息中心處理時間
 seo-description: null
 page-status-flag: never-activated
 uuid: 06aca2c2-33c0-4839-bee4-fd838c49ce76
@@ -11,18 +11,18 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 discoiquuid: d1f591d2-95e8-4d99-bc60-955c96b532eb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 7%
 
 ---
 
 
-# 消息中心處理時間{#message-center-processing-time}
+# 訊息中心處理時間{#message-center-processing-time}
 
-此報告會顯示與即時佇列相關的主要指標。 此報告針對技術管理員，也可透過控制例項中 **[!UICONTROL Monitoring]** 的宇宙存取。
+此報告會顯示與即時佇列相關的主要指標。 此報告針對技術管理員，也可透過控制例項中的 **[!UICONTROL Monitoring]** 宇宙存取。
 
 ![](assets/mc_reports_2.png)
 
