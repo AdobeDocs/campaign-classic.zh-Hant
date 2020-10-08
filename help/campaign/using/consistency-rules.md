@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 9bcb5dc1-8cb4-4781-a8cd-8d072ff28b1a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 3%
 
 ---
 
@@ -51,14 +51,14 @@ Adobe Campaign透過促銷活動類型中包含的一組規則，確保溝通一
    >
    >可用性行僅供參考。 如果在達到容量限制時需要排除消息，請參 [閱本節](#exclude-messages-when-capacity-limit-reached)。
 
-1. 將此規則與類型學關聯，然後將類型學引用到交付中以應用此能力規則。 如需詳細資訊，請參閱[本小節](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
+1. 將此規則與類型學關聯，然後將類型學引用到交付中以應用此能力規則。 如需詳細資訊，請參閱[本章節](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 您可以監控來自規則和標籤的 **[!UICONTROL Consumptions]** 消費 **[!UICONTROL Capacity]** 情況。
 
    在傳送中使用規則時， **[!UICONTROL Consumed]** 和 **[!UICONTROL Remaining]** 欄會提供載入資訊，如下所示：
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
-   如需詳細資訊，請參閱[本小節](#monitoring-consumption)。
+   如需詳細資訊，請參閱[本章節](#monitoring-consumption)。
 
 ## 定義最大載荷 {#defining-the-maximum-load}
 
