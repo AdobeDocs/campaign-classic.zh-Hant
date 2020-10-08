@@ -1,7 +1,7 @@
 ---
-title: 建立新例項
-seo-title: 建立新例項
-description: 建立新例項
+title: 建立新執行個體
+seo-title: 建立新執行個體
+description: 建立新執行個體
 seo-description: null
 page-status-flag: never-activated
 uuid: b048705e-f356-4f26-baf5-10415b01fb64
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: ba9c8e4c-441b-4422-a465-758771025ee8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 14%
 
 ---
 
 
-# 建立新例項{#creating-new-instances}
+# 建立新執行個體{#creating-new-instances}
 
 在安裝Adobe Campaign並建立例項後，您就可以從主控台新增例項。 此建立模式可讓您建立追蹤例項，而不需存取主控台。
 
