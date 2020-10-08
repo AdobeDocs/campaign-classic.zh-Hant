@@ -1,7 +1,7 @@
 ---
-title: 關於出站渠道
-seo-title: 關於出站渠道
-description: 關於出站渠道
+title: 關於傳出頻道
+seo-title: 關於傳出頻道
+description: 關於傳出頻道
 seo-description: null
 page-status-flag: never-activated
 uuid: 802d4ff8-c172-494a-9086-6e35c57e5cf5
@@ -11,22 +11,22 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: a22a25bf-e920-4766-a864-00d32b4c8029
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 6%
 
 ---
 
 
-# 關於出站渠道{#about-outbound-channels}
+# 關於傳出頻道{#about-outbound-channels}
 
-選件可以使用傳入或傳出頻道，以各種空間顯示。 本章詳細說明出站渠道。
+選件可使用傳入或傳出頻道，以各種空間顯示。 本章詳細說明出站渠道。
 
 >[!NOTE]
 >
->您也可以觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) ，其中詳細說明如何在對外渠道傳送選件。
+>您也可以觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，其中詳細說明如何在對外渠道傳送選件。
 
 要讓選件引擎選取該選件，它必須經過核准，並可在即時環境中使用。 如需詳細資訊，請參閱核 [準和啟用選件](../../interaction/using/approving-and-activating-an-offer.md)。
 
