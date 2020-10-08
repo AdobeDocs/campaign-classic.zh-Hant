@@ -1,7 +1,7 @@
 ---
-title: 選件引擎
-seo-title: 選件引擎
-description: 選件引擎
+title: 優惠方案引擎
+seo-title: 優惠方案引擎
+description: 優惠方案引擎
 seo-description: null
 page-status-flag: never-activated
 uuid: a8f6056a-80e6-4f9f-81f5-563c98d11d28
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 08987595-e80c-4197-ad1e-9aa7cfc7c3eb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 5%
 
 ---
 
 
-# 選件引擎{#offer-engine}
+# 優惠方案引擎{#offer-engine}
 
 此活 **[!UICONTROL Offer engine]** 動可讓您在傳送前定義對選件引擎的呼叫。
 
