@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 093dbe8a-494f-4fe7-8614-3bf58486e34c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 23629289ac5da3f9bef01f50c452f7c761a6fa44
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 1%
 
 The **Scheduler** is a persistent task that is its transition at the times specified by its schedule.
 
-活 **[!UICONTROL Scheduler]** 動應視為已排程的開始。 圖表中的活動定位規則與活動的定位規則相 **[!UICONTROL Start]** 同。 此活動不得具有入站轉換。
+**[!UICONTROL Scheduler]** 活動應視為已排程的開始。圖表中的活動定位規則與活動 **[!UICONTROL Start]** 的定位規則相同。此活動不得具有入站轉變。
 
 ## 最佳實務{#best-practices}
 
@@ -39,7 +36,7 @@ The **Scheduler** is a persistent task that is its transition at the times speci
 
    如果工作流已運行，則可能希望跳過執行。 有關如何防止同時執行工作流的詳細資訊，請參 [閱此頁](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)。
 
-* 請注意，如果工作流正在執行長期任務（如導入），或wfserver模組已停止一段時間，則可以在數小時後激活該轉換。 在這種情況下，可能需要將調度器激活的任務的執行限制在特定時間範圍內。
+* 請注意，如果工作流正在執行長期任務（如導入），或wfserver模組已停止一段時間，則可在數小時後激活該轉換。 在這種情況下，可能需要將調度器激活的任務的執行限制在特定時間範圍內。
 
 ## 配置調度程式活動 {#configuring-scheduler-activity}
 
