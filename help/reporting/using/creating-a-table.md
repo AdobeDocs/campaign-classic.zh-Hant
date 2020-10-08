@@ -1,7 +1,7 @@
 ---
-title: 建立表
-seo-title: 建立表
-description: 建立表
+title: 建立資料表
+seo-title: 建立資料表
+description: 建立資料表
 seo-description: null
 page-status-flag: never-activated
 uuid: c5bca799-a5d6-4d98-8fc5-25d7f71be5f7
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2498'
+ht-degree: 1%
 
 ---
 
 
-# 建立表{#creating-a-table}
+# 建立資料表{#creating-a-table}
 
 您可以新增表格至報表以顯示資料。 這可以是基於立方度量建立的透視表、具有組的清單或包含值劃分的表。
 
@@ -44,9 +44,9 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
-### 實施步驟 {#implementation-steps}
+### 實作步驟 {#implementation-steps}
 
-此處提供完整的實作範例：使 [用案例：建立含群組清單的報表](#use-case--create-a-report-with-a-group-list)。
+此處提供完整的實作範例： [使用案例：建立含群組清單的報表](#use-case--create-a-report-with-a-group-list)。
 
 請注意以下步驟，以建立「含群組的清單」類型表格：
 
@@ -115,9 +115,9 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 * 輸入儲存格的標籤，例如標題一。
 
-   要執行此操作，請使用與將欄位插入資料庫相同的過程，但不要選擇表達式。 在欄位中輸入標 **[!UICONTROL Label]** 簽。 將按原樣顯示。
+   要執行此操作，請使用與將欄位插入資料庫相同的過程，但不要選擇表達式。 Enter the label in the **[!UICONTROL Label]** field. 將按原樣顯示。
 
-* 計算匯總（平均值、總和等）並在儲存格中顯示。
+* 計算匯總（平均值、總和等） 並在儲存格中顯示。
 
    若要這麼做，請使用功能表 **[!UICONTROL Aggregates]** 項目並選取所要的促銷活動。
 
@@ -198,7 +198,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-「 **Extra** 」標籤可讓您將視覺化項目連結至資料，例如彩色標籤或值列。 當表格在圖表中顯示為圖例時，會使用彩色標籤。 如需詳細資訊，請參閱實作範例：步 [驟5 —— 建立第二頁](#step-5---create-the-second-page)
+「 **Extra** 」標籤可讓您將視覺化項目連結至資料，例如彩色標籤或值列。 當表格在圖表中顯示為圖例時，會使用彩色標籤。 如需詳細資訊，請參閱實作範例： [步驟5 —— 建立第二頁](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
@@ -239,6 +239,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
    * 已處理交貨的指標，
    * 促銷活動連結的外鍵，
    * 錯誤率指示器。
+
    ![](assets/s_advuser_report_listgroup_002.png)
 
    將別名連結到每個欄位：建議您這麼做，以方便從將新增至報表第一頁的表格中選取資料。
@@ -275,7 +276,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. 按一下 **[!UICONTROL Table data XPath...]** 連結並選取傳送連結，例如 `[query/delivery]`。
+1. 按一下 **[!UICONTROL Table data XPath...]** 連結並選取傳送連結，例如 `[query/delivery]`.
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
@@ -378,6 +379,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
       ![](assets/reporting_quick_start_query-2_count.png)
 
    * 收集收件者電子郵件網域和群組資訊，並在此欄位中：若要這麼做，請在網 **[!UICONTROL Group]** 域名欄中選取選項。
+
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    將下列別名連結到欄位：
@@ -400,7 +402,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ### 步驟5 —— 建立第二頁 {#step-5---create-the-second-page}
 
-1. 編輯頁面並輸入其標籤：電 **子郵件網域**。
+1. 編輯頁面並輸入其標籤： **電子郵件網域**。
 1. 取消選中 **[!UICONTROL Enable output transitions]** 選項：這是報表的最後一頁，後面不會有其他活動。
 
    ![](assets/s_advuser_report_listgroup_028.png)
@@ -421,11 +423,12 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    * 在詳細資料行的第二個儲存格中，新增運算 **[!UICONTROL Email domain(Recipient)]** 式。
    * 在詳細資料行的第三個儲存格中，新增運算 **[!UICONTROL count(primary key)]** 式。
+
    ![](assets/s_advuser_report_listgroup_019.png)
 
 1. 使用右鍵功能表新增圓形圖至頁面，並指派「電子郵 **件網域** 」標籤給頁面。 如需詳細資訊，請參閱 [圖表類型和變數](../../reporting/using/creating-a-chart.md#chart-types-and-variants)。
 1. 按一下連 **[!UICONTROL Variants]** 結並取消選取 **[!UICONTROL Display label]** 和選項 **[!UICONTROL Display caption]** 。
-1. 檢查是否未配置值排序。 如需詳細資訊，請參閱[本小節](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
+1. 檢查是否未配置值排序。 如需詳細資訊，請參閱[本章節](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
@@ -437,7 +440,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. 在區段 **[!UICONTROL Chart type]** 中，選取變 **[!UICONTROL Email domain]** 數。
+1. In the **[!UICONTROL Chart type]** section, select the **[!UICONTROL Email domain]** variable.
 1. 然後，添加要執行的計算：選擇總和作為運算子。
 
    ![](assets/s_advuser_report_listgroup_0202.png)
