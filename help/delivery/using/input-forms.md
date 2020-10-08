@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: abf097eb-ade5-479e-9e20-8bd6bc9d96aa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 
 元素由其名稱指定，屬性由名稱前面帶有字元&quot;@&quot;指定。
 
-範例：
+範例:
 
 * **@date**:選擇名稱為&quot;date&quot;的屬性
 * **chapter/@title**:在元素下選取「title」屬 `<chapter>` 性
@@ -82,7 +82,7 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 
 控制項彼此相對的排列類似於HTML表格中使用的排列，可將控制項分成多列、交錯元素或指定可用空間的佔用。 但請記住，格式設定僅授權比例分配；不能為對象指定固定尺寸。
 
-如需詳細資訊，請參閱[本小節](../../configuration/using/form-structure.md#formatting)。
+如需詳細資訊，請參閱[本章節](../../configuration/using/form-structure.md#formatting)。
 
 ## 清單類型控制項 {#list-type-controls}
 
