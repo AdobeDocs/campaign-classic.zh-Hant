@@ -1,7 +1,7 @@
 ---
-title: 資料結構
-seo-title: 資料結構
-description: 資料結構
+title: 資料綱要
+seo-title: 資料綱要
+description: 資料綱要
 seo-description: null
 page-status-flag: never-activated
 uuid: 3327a38c-e44d-4581-a67b-bb60c1604a5f
@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: aeaa9475-3715-40a4-8864-29d126883272
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
 
-# 資料結構{#data-schemas}
+# 資料綱要{#data-schemas}
 
 以下是有關在Adobe Campaign中使用資料結構描述的一些一般原則。
 
 如需在Adobe Campaign中建立和設定資料結構描述的詳細資訊，請參 [閱此節](../../configuration/using/about-schema-edition.md)。
 
-## 架構結構 {#schema-structure}
+## 綱要結構 {#schema-structure}
 
 資料結構的XML檔案必須包含 **`<srcschema>`** 根元素，其中 **包含** namespace **** 屬性，以填入結構名稱及其命名空間。
 
@@ -54,7 +54,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 >[!CAUTION]
 >
->在建立新模式或在模式擴展期間，需要為整個模式保留相同的主鍵序列值(@pkSequence)。
+>建立新模式或在模式擴展期間，需要為整個模式保留相同的主鍵序列值(@pkSequence)。
 
 ## 資料類型 {#data-types}
 
@@ -172,7 +172,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 </srcSchema>
 ```
 
-## 編輯結構 {#editing-schemas}
+## 編輯綱要 {#editing-schemas}
 
 編輯欄位可讓您輸入來源架構的XML內容：
 
