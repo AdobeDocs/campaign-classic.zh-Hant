@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 3fd7a1ef-b0e2-4a7e-9e36-044d997db785
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8e37be4f764feadb49c70a9d598f8f3b8f864380
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 1%
 
 ---
 
 
 # 匿名互動{#anonymous-interactions}
 
-觀看此 [影片](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) ，以取得如何將選件傳送至已識別和匿名目標的概觀。
+觀看此 [影片](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，以取得如何將選件傳送至已識別和匿名目標的概觀。
 
 ## 針對匿名互動鎖定和儲存環境 {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
@@ -50,7 +50,7 @@ source-git-commit: 8e37be4f764feadb49c70a9d598f8f3b8f864380
 
 匿名訪客在連線時可能會提交至Cookie識別程式。 此隱含識別是以訪客的瀏覽器歷史記錄為基礎。
 
-在此步驟中，會比較由Cookie所復原的資料與資料庫中的資料。 在某些情況下，訪客會被識別（接著隱含地被識別），而在其他情況下，訪客不被識別（因此匿名）。
+在此步驟中，會比較Cookie所復原的資料與資料庫中的資料。 在某些情況下，訪客會被識別（接著隱含地被識別），在其他情況下，訪客不被識別（因此匿名）。
 
 若要執行此分析，請針對選件空間勾選 **[!UICONTROL Implicitly identify the individual based on their browser history]** 選項。
 
