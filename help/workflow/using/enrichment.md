@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b7ff47e1-ef12-4f04-afff-1a6c01d7701f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -37,8 +34,8 @@ ht-degree: 0%
 
 此選 **[!UICONTROL Data linked to the filtering dimension]** 項可讓您存取：
 
-* 篩選維度的資料： 對工作表資料的訪問
-* 連結至篩選維度的資料： 對連結至工作表的資料的訪問
+* 篩選維度的資料：對工作表資料的訪問
+* 連結至篩選維度的資料：對連結至工作表的資料的訪問
 
 ![](assets/wf_enrich_linkoptions.png)
 
@@ -48,29 +45,29 @@ ht-degree: 0%
 
 連結有四種類型：
 
-* **[!UICONTROL Define a collection]**: 可讓您定義表格之間具有1-N基數的連結。
-* **[!UICONTROL Define a link whose target is still available]**: 可讓您定義表格間具有1-1基數的連結。 連接條件必須由目標表中的單個記錄定義。
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: 可讓您定義表格間具有0-1基數的連結。 連接條件必須由0或1（最大值）定義 記錄在目標表格中。
+* **[!UICONTROL Define a collection]**:可讓您定義表格之間具有1-N基數的連結。
+* **[!UICONTROL Define a link whose target is still available]**:可讓您定義表格間具有1-1基數的連結。 連接條件必須由目標表中的單個記錄定義。
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**:可讓您定義表格間具有0-1基數的連結。 連接條件必須由0或1（最大值）定義 記錄在目標表格中。
 
    此選項在標籤中 **[!UICONTROL Simple Join]** 設定，可透過活動 **[!UICONTROL Edit additional data]** 連結存 **[!UICONTROL Enrichment]** 取。
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**: 此類型的連結定義對唯一記錄的協調。 Adobe Campaign會在目標表格中新增外鍵，以儲存對唯一記錄的參考，以建立指向目標表格的連結。
+* **[!UICONTROL Define a link by searching for a reference among several options]**:此類型的連結定義對唯一記錄的協調。 Adobe Campaign會在目標表格中新增外鍵，以儲存對唯一記錄的參考，以建立指向目標表格的連結。
 
    此選項在標籤中 **[!UICONTROL Reconciliation and deduplication]** 設定，可透過活動 **[!UICONTROL Edit additional data]** 連結存 **[!UICONTROL Enrichment]** 取。
 
 以下各節還提供詳細說明Enrichment活動在其上下文中操作的使用案例：
 
-* [使用自訂日期欄位擴充電子郵件](../../workflow/using/email-enrichment-with-custom-date-fields.md)。
+* [使用自訂日期欄位擴充電子郵件](../../workflow/using/email-enrichment-with-custom-date-fields.md).
 * [豐富資料](../../workflow/using/enriching-data.md)
 * [建立摘要清單](../../workflow/using/creating-a-summary-list.md)
 
 ## 添加資訊 {#adding-information}
 
-使用活 **[!UICONTROL Enrichment]** 動將列添加到工作表： 此活動可用作查詢活動的補充。
+使用活 **[!UICONTROL Enrichment]** 動將列添加到工作表：此活動可用作查詢活動的補充。
 
 其他列的配置在添加資料中 [有詳細說明](../../workflow/using/query.md#adding-data)。
 
-此欄 **[!UICONTROL Primary set]** 位可讓您選取傳入的轉場： 豐富了本活動工作台的資料。
+此欄 **[!UICONTROL Primary set]** 位可讓您選取傳入的轉場：豐富了本活動工作台的資料。
 
 按一下 **[!UICONTROL Add data]** 連結，並選取要新增的資料類型。 提供的資料類型清單取決於平台上安裝的模組和選項。 在最小的設定中，您隨時可以新增連結至篩選維度和連結的資料。
 
@@ -110,7 +107,7 @@ ht-degree: 0%
 
 ## 建立連結 {#creating-a-link}
 
-您可以使用擴充活動來建立工作資料與Adobe Campaign資料庫之間的連結： 這將是傳入資料之間工作流程的本機連結。
+您可以使用擴充活動來建立工作資料與Adobe Campaign資料庫之間的連結：這將是傳入資料之間工作流程的本機連結。
 
 例如，如果您載入包含收件者帳戶號碼、國家／地區和電子郵件的檔案資料，則必須建立國家／地區表格連結，才能在其個人檔案中更新此資訊。
 
@@ -133,7 +130,7 @@ ht-degree: 0%
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. 選取選 **[!UICONTROL Link definition]** 項，然後按一下 **[!UICONTROL Next]** 按鈕。 指定要建立的連結類型。 在此示例中，我們希望將檔案收件人的國家與資料庫專用表中可用國家清單中的國家協調起來。 選擇選 **[!UICONTROL Define a link by searching for a reference among several options]** 項。 在欄位中選取國家／地區 **[!UICONTROL Target schema]** 表格。
+1. 選取選 **[!UICONTROL Link definition]** 項，然後按一下 **[!UICONTROL Next]** 按鈕。 指定要建立的連結類型。 在此示例中，我們希望將檔案收件人的國家與資料庫專用表中可用國家清單中的國家協調起來。 選取 **[!UICONTROL Define a link by searching for a reference among several options]** 選項。在欄位中選取國家／地區 **[!UICONTROL Target schema]** 表格。
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -149,7 +146,7 @@ ht-degree: 0%
 
 可使用擴充活動來設定資料協調，包括資料載入資料庫後。 在這種情況下，標 **[!UICONTROL Reconciliation]** 簽可讓您定義Adobe Campaign資料庫中的資料與工作表中資料之間的連結。
 
-選擇 **[!UICONTROL Identify the targeting document based on work data]** 選項，指定要建立連結的方案，並定義連接條件： 若要這麼做，請選取工作資料(**[!UICONTROL Source expression]**)和定位維度(**[!UICONTROL Destination expression]**)中要調節的欄位。
+選擇 **[!UICONTROL Identify the targeting document based on work data]** 選項，指定要建立連結的方案，並定義連接條件：若要這麼做，請選取工作資料(**[!UICONTROL Source expression]**)和定位維度(**[!UICONTROL Destination expression]**)中要調節的欄位。
 
 您可以使用一或多個協調標準。
 
@@ -161,7 +158,7 @@ ht-degree: 0%
 
 擴充活動可讓您新增選件或連結至傳送收件者的選件。
 
-有關富集活動的詳細資訊，請參閱本 [節](../../workflow/using/enrichment.md)。
+For more information on the enrichment activity, refer to this [section](../../workflow/using/enrichment.md).
 
 例如，您可以在傳送前豐富收件者查詢的資料。
 
@@ -170,7 +167,7 @@ ht-degree: 0%
 設定查詢後(請參閱本 [節](../../workflow/using/query.md)):
 
 1. 新增並開啟擴充活動。
-1. 在頁籤 **[!UICONTROL Enrichment]** 中，選擇 **[!UICONTROL Add data]**。
+1. 在 **[!UICONTROL Enrichment]** 索引標籤中，選取 **[!UICONTROL Add data]**。
 1. 在要 **[!UICONTROL An offer proposition]** 添加的資料類型中選擇。
 
    ![](assets/int_enrichment_offer2.png)
@@ -178,11 +175,11 @@ ht-degree: 0%
 1. 指定要新增之提案的識別碼和標籤。
 1. 指定選件選擇。 這有兩個可能的選項：
 
-   * **[!UICONTROL Search for the best offer in a category]**: 勾選此選項並指定選件引擎呼叫參數（選件空間、類別或主題、連絡日期、要保留的選件數）。 引擎會根據這些參數自動計算要新增的選件。 我們建議您完成 **[!UICONTROL Category]** 或欄 **[!UICONTROL Theme]** 位，而不是同時完成兩者。
+   * **[!UICONTROL Search for the best offer in a category]**:勾選此選項並指定選件引擎呼叫參數（選件空間、類別或主題、連絡日期、要保留的選件數）。 引擎會根據這些參數自動計算要新增的選件。 我們建議您完成 **[!UICONTROL Category]** 或欄 **[!UICONTROL Theme]** 位，而不是同時完成兩者。
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A predefined offer]**: 勾選此選項並指定選件空間、特定選件和連絡日期，以直接設定您要新增的選件，毋需呼叫選件引擎。
+   * **[!UICONTROL A predefined offer]**:勾選此選項並指定選件空間、特定選件和連絡日期，以直接設定您要新增的選件，毋需呼叫選件引擎。
 
       ![](assets/int_enrichment_offer4.png)
 
@@ -222,7 +219,7 @@ ht-degree: 0%
 
 但是，您可以按如下方式儲存此資訊：
 
-1. 在查詢之後和傳送活動之前放置的擴充活動中，建立對選件引擎的呼叫。 請參閱本 [節](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine)。
+1. 在查詢之後和傳送活動之前放置的擴充活動中，建立對選件引擎的呼叫。 Refer to this [section](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. 在活動的主窗口中，選擇 **[!UICONTROL Edit additional data...]**。
 
    ![](assets/ita_enrichment_rankweight_1.png)
