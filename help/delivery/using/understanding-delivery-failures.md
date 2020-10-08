@@ -11,31 +11,28 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9c26ef0b520c6486d86e73cb93612cc7ab9556d0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2450'
-ht-degree: 1%
+ht-degree: 16%
 
 ---
 
 
 # 瞭解傳送故障{#understanding-delivery-failures}
 
-## 關於傳送失敗 {#about-delivery-failures}
+## 瞭解傳送故障{#about-delivery-failures}
 
-當訊息（電子郵件、SMS、推播通知）無法傳送至描述檔時，遠端伺服器會自動傳送錯誤訊息，該錯誤訊息會由Adobe Campaign平台擷取，並符合資格決定是否應隔離電子郵件地址或電話號碼。 請參閱 [彈回郵件管理](#bounce-mail-management)。
+當訊息（電子郵件、SMS、推播通知）無法傳送至描述檔時，遠端伺服器會自動傳送錯誤訊息，該錯誤訊息會由Adobe Campaign平台擷取，並符合資格決定是否應隔離電子郵件地址或電話號碼。 See [Bounce mail management](#bounce-mail-management).
 
 >[!NOTE]
 >
->電子郵件錯誤訊息（或「彈回數」）由inMail程式限定。 MTA流程會限定SMS錯誤訊息（或「狀態報告」的「SR」）。
+>電子郵件錯誤訊息（或「彈回數」）由inMail程式限定。 SMS 錯誤訊息（或 &quot;SR&quot; 作為 &quot;Status Report&quot;）會由 MTA 程序限定。
 
 傳送訊息後，傳送記錄檔可讓您檢視每個描述檔的傳送狀態以及相關的失敗類型和原因。
 
-如果地址被隔離，或者配置檔案位於塊清單中，也可以在準備傳送期間排除郵件。 已排除的訊息會列在傳送控制面板中。
+如果地址被隔離，或者配置檔案位於塊清單中，在準備傳送時也可以排除郵件。 已排除的訊息會列在傳送控制面板中。
 
 **相關主題：**
 
@@ -47,9 +44,9 @@ ht-degree: 1%
 
 消息失敗時有三種錯誤類型。 每個錯誤類型都決定是否將地址發送給隔離。 有關詳細資訊，請參 [閱發送地址到隔離的條件](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
-* **硬**: 「硬」錯誤表示地址無效。 這包含明確指出地址無效的錯誤訊息，例如： &quot;未知用戶&quot;。
-* **軟**: 這可能是暫時錯誤，或無法分類的錯誤，例如： 「無效域」或「郵箱已滿」。
-* **已忽略**: 這是已知為暫時的錯誤，例如「不在辦公室」，或是技術錯誤，例如，如果傳送者類型是「postmaster」。
+* **硬式**：「硬式」錯誤表示地址無效。這包含明確指出地址無效的錯誤訊息，例如：&quot;未知使用者&quot;。
+* **軟式**：這可能是暫時錯誤，或無法分類的錯誤，例如：「無效域」或「信箱已滿」。
+* **已忽略**：這是已知為暫時的錯誤，例如「不在辦公室」，或是技術錯誤，例如，如果傳送者類型是 &quot;postmaster&quot;。
 
 傳送失敗的可能原因有：
 
@@ -65,7 +62,7 @@ ht-degree: 1%
    <td> 帳戶已停用 </td> 
    <td> 柔／硬 </td> 
    <td> 4 </td> 
-   <td> 連結至該位址的帳戶不再有效。 當Internet訪問提供程式(IAP)檢測到長時間的不活動時，它可以關閉用戶帳戶。 然後，將無法傳送至使用者的位址。 如果帳戶因為6個月的閒置而暫時停用，而且仍可啟動，則會指派「有錯誤」狀態，並重新嘗試帳戶，直到錯誤計數器達到5為止。 如果錯誤信號表明帳戶已永久停用，則它將直接設定為「隔離」。<br /> </td> 
+   <td> 連結至該位址的帳戶不再有效。 當Internet訪問提供程式(IAP)檢測到長時間的不活動時，它可以關閉用戶帳戶。 然後，將無法傳送至使用者的位址。 如果帳戶因為6個月的閒置而暫時停用，而且仍可啟動，則會指派「有錯誤」狀態，並重新嘗試帳戶，直到錯誤計數器達到5為止。 If the error signals that the account is permanently deactivated, it will directly be set to Quarantine.<br /> </td> 
   </tr> 
   <tr> 
    <td> 隔離中的地址 </td> 
@@ -125,31 +122,31 @@ ht-degree: 1%
    <td> 無效的域 </td> 
    <td> Soft </td> 
    <td> 2 </td> 
-   <td> 電子郵件地址的網域不正確或已不存在。 此描述檔將再次定位，直到錯誤計數達到5。 之後，記錄將設定為「隔離」狀態，不會再重試。<br /> </td> 
+   <td> 電子郵件地址的網域不正確或已不存在。 此設定檔將再次定位，直到錯誤計數達到5。之後，記錄將設定為「隔離」狀態，不會再重試。<br /> </td> 
   </tr> 
   <tr> 
    <td> 郵箱已滿 </td> 
    <td> Soft </td> 
    <td> 5 </td> 
-   <td> 此用戶的郵箱已滿，無法接受更多消息。 此描述檔將再次定位，直到錯誤計數達到5。 之後，記錄將設定為「隔離」狀態，不會再重試。<br /> 此類錯誤由清理進程管理，地址在30天後設定為有效狀態。<br /> 警告： 要自動從隔離地址清單中刪除地址，必須啟動資料庫清理技術工作流。<br /> </td> 
+   <td> 此用戶的郵箱已滿，無法接受更多消息。 此設定檔將再次定位，直到錯誤計數達到5。之後，記錄將設定為「隔離」狀態，不會再重試。<br /> 此類錯誤由清理進程管理，地址在30天後設定為有效狀態。<br /> 警告：要自動從隔離地址清單中刪除地址，必須啟動資料庫清理技術工作流。<br /> </td> 
   </tr> 
   <tr> 
    <td> 未連接 </td> 
    <td> 已忽略 </td> 
    <td> 6 </td> 
-   <td> 當發送消息時，收件者的行動電話關閉或未連接到網路。<br /> </td> 
+   <td> The recipient's mobile phone is switched off or not connected to the network when the message is sent.<br /> </td> 
   </tr> 
   <tr> 
    <td> 未定義 </td> 
    <td> 未定義 </td> 
    <td> 0 </td> 
-   <td> 該地址處於限定狀態，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤： 它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。 然後，他們可以通過樹結構中的「管理 <span class="uicontrol">/促銷活動管理</span> /非交付 <span class="uicontrol"></span><span class="uicontrol"></span> 件管理」節點，執行消息分析並限定此錯誤。<br /> </td> 
+   <td> 該地址處於限定狀態，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤：它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。然後，他們可以通過樹結構中的「管理 <span class="uicontrol">/促銷活動管理</span> /非交付 <span class="uicontrol"></span><span class="uicontrol"></span> 件管理」節點，執行消息分析並限定此錯誤。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不符合選件資格 </td> 
    <td> 已忽略 </td> 
    <td> 16 </td> 
-   <td> 收件者不符合遞送中選件的資格。<br /> </td> 
+   <td> 收件者不符合傳送中選件的資格。<br /> </td> 
   </tr> 
   <tr> 
    <td> 拒絕 </td> 
@@ -179,7 +176,7 @@ ht-degree: 1%
    <td> 用戶未知 </td> 
    <td> 硬 </td> 
    <td> 1 </td> 
-   <td> 地址不存在。 此描述檔不會再嘗試傳送。<br /> </td> 
+   <td> 地址不存在。 此設定檔不會再嘗試傳送。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,14 +191,14 @@ ht-degree: 1%
 
 若要修改傳送的持續時間，請移至傳送或傳送範本的進階參數，並在對應欄位中指定所需的持續時間。 本節將介紹高級交 [付屬性](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
 
-預設配置允許在1小時間隔內重試5次，之後在4天內每天重試1次。 您可以全域變更重試次數（請洽詢您的Adobe技術管理員），或針對每個傳送或傳送範本變更重試次數(請參 [閱本節](../../delivery/using/steps-sending-the-delivery.md#configuring-retries))。
+預設配置允許在1小時間隔內重試5次，之後在4天內每天重試1次。 可以全域變更重試次數（請洽詢您的Adobe技術管理員），或針對每個傳送或傳送範本變更重試次數(請參 [閱本節](../../delivery/using/steps-sending-the-delivery.md#configuring-retries))。
 
 ## 同步與非同步錯誤 {#synchronous-and-asynchronous-errors}
 
 消息在發送後可能立即失敗（同步錯誤），或稍後失敗（非同步錯誤）。
 
-* 同步錯誤： 由Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不允許傳送至描述檔的伺服器。 Adobe Campaign可讓每個錯誤符合資格，以判斷是否應隔離相關電子郵件地址。 請參 [閱Bounce郵件資格](#bounce-mail-qualification)。
-* 非同步錯誤： 接收伺服器稍後會重新發送彈回郵件或SR。 此郵件已載入到應用程式用於標籤錯誤消息的技術郵箱中。 傳送後一週內，可能會發生非同步錯誤。
+* 同步錯誤：由Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不允許傳送至描述檔的伺服器。 Adobe Campaign可讓每個錯誤符合資格，以判斷是否應隔離相關電子郵件地址。 請參閱[退信資格](#bounce-mail-qualification)。
+* 非同步錯誤：接收伺服器稍後會重新發送退回郵件或 SR。此郵件已載入到應用程式用於標籤錯誤消息的技術郵箱中。 傳送後一週內，可能會發生非同步錯誤。
 
    >[!NOTE]
    >
@@ -217,7 +214,7 @@ ht-degree: 1%
 
 Adobe Campaign平台可讓您透過彈回郵件功能管理電子郵件傳送失敗。 當電子郵件無法傳送給收件者時，遠端訊息伺服器會自動將錯誤訊息（彈回郵件）傳回至專為此目的而設計的技術收件匣。 錯誤訊息由Adobe Campaign平台收集，並由inMail流程加以限定，以豐富電子郵件管理規則清單
 
-### 彈回郵件資格 {#bounce-mail-qualification}
+### 退回郵件資格 {#bounce-mail-qualification}
 
 當傳送電子郵件失敗時，Adobe Campaign傳送伺服器會從傳訊伺服器或遠端DNS伺服器收到錯誤訊息。 錯誤清單由遠程伺服器返回的消息中包含的字串組成。 故障類型和原因會分配給每個錯誤消息。
 
@@ -239,9 +236,9 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 彈回郵件可以具有下列資格狀態：
 
-* **[!UICONTROL To qualify]** : 彈回數郵件無法合格。 必須將資格指派給「傳遞能力」團隊，以確保有效率的平台傳遞能力。 只要郵件不符合條件，反彈郵件就不會用來豐富電子郵件管理規則清單。
-* **[!UICONTROL Keep]** : 彈回郵件已經合格， **** Refresh將會使用它來傳送性工作流程，以便與現有的電子郵件管理規則比較，並豐富清單。
-* **[!UICONTROL Ignore]** : 「促銷活動MTA」會忽略反彈郵件，這表示此反彈不會造成隔離收件者的位址。 Refresh不會用於傳遞性工 **作流程** ，也不會傳送給用戶端例項。
+* **[!UICONTROL To qualify]** :彈回數郵件無法合格。 必須將資格指派給「傳遞能力」團隊，以確保有效率的平台傳遞能力。 只要郵件不符合條件，反彈郵件就不會用來豐富電子郵件管理規則清單。
+* **[!UICONTROL Keep]** :彈回郵件已經合格， **** Refresh將會使用它來傳送性工作流程，以便與現有的電子郵件管理規則比較，並豐富清單。
+* **[!UICONTROL Ignore]** :「促銷活動MTA」會忽略反彈郵件，這表示此反彈不會造成隔離收件者的位址。 Refresh不會用於傳遞性工 **作流程** ，也不會傳送給用戶端例項。
 
 ![](assets/deliverability_qualif_status.png)
 
@@ -252,13 +249,13 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 >* 表格中的反彈資 **[!UICONTROL Delivery log qualification]** 格不再用於同步傳送失敗錯誤訊息。 「增強型MTA」會決定反彈類型和資格，並將該資訊傳回至「促銷活動」。
    >
    >
-* inMail程式仍會透過規則來限定非同步彈 **[!UICONTROL Inbound email]** 回數。 如需詳細資訊，請參閱「電 [子郵件管理規則」](#email-management-rules)。
+* inMail 程序仍會透過 **[!UICONTROL Inbound email]** 規則來限定非同步退信。For more on this, see [Email management rules](#email-management-rules).
    >
    >
-* 對於不使用 **Webhook/EFS的「增強型MTA」實例****[!UICONTROL Inbound email]** ，規則也將用於處理來自「增強型MTA」的同步彈回電子郵件，使用與非同步彈回電子郵件相同的電子郵件地址。
+* 對於不使用 **Webhook/EFS的「增強型MTA」實例****[!UICONTROL Inbound email]** ，規則也將用來處理來自「增強型MTA」的同步彈回電子郵件，使用與非同步彈回電子郵件相同的電子郵件地址。
 >
 >
-如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 ### 電子郵件管理規則 {#email-management-rules}
 
@@ -280,7 +277,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 #### 傳入電子郵件 {#inbound-email}
 
-這些規則包含可由遠端伺服器傳回的字元字串清單，可讓您限定錯誤(**Hard**、 **Soft** 或 **Ignored**)。
+這些規則包含可由遠端伺服器傳回的字元字串清單，可讓您限定錯誤（**Hard**、**Soft** 或 **Ignored**）。
 
 當電子郵件失敗時，遠端伺服器會傳回彈回訊息至平台參數中指定的位址。 Adobe Campaign會將每個彈回郵件的內容與規則清單中的字串進行比較，然後將其指派為三種錯誤 [類型之一](#delivery-failure-types-and-reasons)。
 
@@ -288,13 +285,13 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 >
 >使用者可建立自己的規則。 當匯入套件時，以及透過「重新整理以提供功能」 **工作流程更新資料時** ，會覆寫使用者建立的規則。
 
-有關彈回郵件資格的詳細資訊，請參 [閱本節](#bounce-mail-qualification)。
+For more on bounce mail qualification, see [this section](#bounce-mail-qualification).
 
 >[!IMPORTANT]
 >
->對於托管或混合安裝，如果您已升級到「增強MTA」，並且實例具有 **Webhook/EFS****[!UICONTROL Inbound email]** ，則不再使用規則來同步發送故障錯誤消息。 For more on this, see [this section](#bounce-mail-qualification).
+>對於托管或混合安裝，如果您已升級到「增強MTA」，並且實例具有 **Webhook/EFS****[!UICONTROL Inbound email]** ，則不再使用規則來同步發送故障錯誤消息。 如需詳細資訊，請參閱[本區段](#bounce-mail-qualification)。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### 網域管理 {#domain-management}
 
@@ -303,15 +300,15 @@ Adobe Campaign訊息伺服器會將單一網域 **管理規則套用** 至所有
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
 * 您可以選擇是否激活某些標準和加密密鑰來檢查域名，如 **Sender ID**、 **DomainKeys**、 **DKIM**&#x200B;和 **** S/MIME Juckint。
-* 通過 **SMTP中繼參數** ，可以為特定域配置中繼伺服器的IP地址和埠。 For more on this, see [this section](../../installation/using/configuring-campaign-server.md#smtp-relay).
+* 通過 **SMTP中繼參數** ，可以為特定域配置中繼伺服器的IP地址和埠。 如需詳細資訊，請參閱[本區段](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
 如果您的訊息在Outlook中的傳送者 **[!UICONTROL on behalf of]** 位址中顯示，請確定您未使用傳送者ID **(Sender ID**, Microsoft的過時專屬電子郵件驗證標準)來簽署電子郵件。 如果選 **[!UICONTROL Sender ID]** 項已啟用，請取消勾選對應方塊，並聯絡Adobe Campaign支援。 您的傳遞能力不會受到影響。
 
 >[!IMPORTANT]
 >
->對於代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Domain management]** 則不再使用規則。 **DKIM(DomainKeys Indified Mail)** ，電子郵件驗證簽署由「增強的MTA」針對所有網域的所有訊息完成。 除非在「增強的MTA」 **層級另有指定**，否則不會使用「傳送者ID **」、「網域金鑰**」或「 **S/MIME** 」進行簽署。
+>對於代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Domain management]** 則不再使用規則。 **DKIM (DomainKeys Indified Mail)** 電子郵件驗證簽署是由 Enhanced MTA 針對所有網域的所有郵件完成。除非在 Enhanced MTA 層級中另外指定，否則不會使用 **Sender ID**、**DomainKeys** 或 **S/MIME** 簽署。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### MX管理 {#mx-management}
 
@@ -327,4 +324,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則不 **[!UICONTROL MX management]** 再使用傳送總處理能力規則。 增強型MTA使用其專屬的MX規則，可讓您根據您過去的電子郵件信譽，以及您傳送電子郵件的網域所提供的即時回應，依網域自訂您的吞吐量。
 >
->如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>如需Adobe Campaign增強型MTA的詳細資訊，請參閱本 [檔案](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)。
