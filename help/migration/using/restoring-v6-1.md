@@ -1,7 +1,7 @@
 ---
-title: 恢復v6.1
-seo-title: 恢復v6.1
-description: 恢復v6.1
+title: 回復 v6.1
+seo-title: 回復 v6.1
+description: 回復 v6.1
 seo-description: null
 page-status-flag: never-activated
 uuid: 3fb71b6f-4d70-4814-a885-4d414a542eca
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 discoiquuid: e510482c-a56d-4254-90f8-19bd5c545e30
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 9%
 
 ---
 
 
-# 恢復v6.1{#restoring-v}
+# 回復 v6.1{#restoring-v}
 
 以下是從v7恢復v6.1的過程。
 
