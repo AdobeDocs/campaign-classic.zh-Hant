@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 71969b30-cc01-4358-9597-f17939720684
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    如果您的安裝包含數個工作流程伺服器，請使用此欄位來選擇要執行工作流程的機器。 如果此欄位中定義的值不存在於任何伺服器上，工作流程將維持擱置狀態。
 
-   請參閱本 [節](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
+   Refer to this [section](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 
@@ -64,7 +64,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    此選項只能用於除錯，絕不能用於生產。 啟用後，工作流將優先，所有其他工作流將停止，直到此工作流完成。
 
-### 錯誤管理 {#error-management}
+### Error management {#error-management}
 
 * **[!UICONTROL Troubleshooting]**
 
