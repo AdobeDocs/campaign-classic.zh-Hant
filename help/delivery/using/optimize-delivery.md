@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 6%
@@ -47,7 +44,7 @@ ht-degree: 6%
 
 **提示**: 使用與您品牌網站對應的透明寄件者位址。 例如，這家旅行社管理著華倫天奴連鎖酒店。 它擁有其網站的valentino.com網域。 為推廣巴黎的華倫天奴酒店，它使用paris.valentino.com子網域。 因此，相關的發件人地址可以是hotel@paris.valentino.com。
 
-## 可傳遞性管理 {#deliverability-management}
+## 傳遞能力管理{#deliverability-management}
 
 若要在不反彈或標示為垃圾訊息的情況下進入收件者的收件匣，您必須改善訊息的傳遞率。
 
@@ -55,7 +52,7 @@ ht-degree: 6%
 
    * 它是指決定電子郵件是否能被收件者伺服器接受的因素。 ISP（網際網路服務供應商）會過濾掉其識別為垃圾訊息的電子郵件，或封鎖影像下載。 如果他們判斷某個網域傳送的電子郵件過多，他們會設定接受該寄件者寄送之電子郵件的數量限制。
 
-   * 在檢查您的電子郵件是否具有傳遞能力時，您想要專注於四個主要類別：資料品質、訊息和內容、傳送基礎架構和聲譽。 有關本主題的深入探討，請參 [閱本節](../../delivery/using/about-deliverability.md)。
+   * 在檢查您的電子郵件是否具有傳遞能力時，您希望將重點放在四個主要類別：資料品質、訊息和內容、傳送基礎架構和聲譽。 有關本主題的深入探討，請參 [閱本節](../../delivery/using/about-deliverability.md)。
 
 * 套用本檔案中詳 [細的建議](../../delivery/using/deliverability-key-points.md)。
 
@@ -73,7 +70,7 @@ ht-degree: 6%
 
 * 在傳送分析期間，預設會排除隔離地址的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，當收件箱已滿或地址不存在時，可以隔離電子郵件地址。 [進一步瞭解](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign會根據傳回的錯誤類型管理錯誤位址。 如需詳細資訊，請參閱[本區段](../../delivery/using/understanding-quarantine-management.md)。
+* Adobe Campaign會根據傳回的錯誤類型管理錯誤位址。 如需詳細資訊，請參閱[本章節](../../delivery/using/understanding-quarantine-management.md)。
 
 
 * 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者添加到塊清單中。
