@@ -1,7 +1,7 @@
 ---
-title: IMS疑難排解
-seo-title: IMS疑難排解
-description: IMS疑難排解
+title: IMS 疑難排解
+seo-title: IMS 疑難排解
+description: IMS 疑難排解
 seo-description: null
 page-status-flag: never-activated
 uuid: 5db95afc-8cbf-4ec3-b58f-504486fe4a40
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# IMS疑難排解{#ims-troubleshooting}
+# IMS 疑難排解{#ims-troubleshooting}
 
 下列疑難排解秘訣可 **協助內部部署** ，客戶解決使用IMS整合時最常發生的問題。 若為 **代管** ，請聯絡Adobe。
 
@@ -31,8 +28,8 @@ ht-degree: 0%
 
 只有一個外 **部帳戶** ，其設定如下：
 
-* **內部名稱**: Adobe_Marketing_Cloud
-* **類型**: Adobe Marketing Cloud
+* **內部名稱**:Adobe_Marketing_Cloud
+* **類型**:Adobe Marketing Cloud
 
 刪除具有相同設定的任何重複外部帳戶。
 
