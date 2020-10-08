@@ -1,7 +1,7 @@
 ---
-title: 對數精度
-seo-title: 對數精度
-description: 對數精度
+title: 記錄精確度
+seo-title: 記錄精確度
+description: 記錄精確度
 seo-description: null
 page-status-flag: never-activated
 uuid: 8396bc4f-2954-40bb-b511-61802e60e123
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
 
-# 對數精度{#log-precision}
+# 記錄精確度{#log-precision}
 
 您可以將此程式套用至所有Adobe Campaign模組，以提高記錄精確度。
 
@@ -53,8 +53,8 @@ Adobe Campaign可以使用兩個記錄層級：
    >[!NOTE]
    >
    >如果您使用 **tracefilter:***，則會激活所有日誌類型：ncm, rdr, nms, jst，計時， wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
-   最有用的日誌類型有： **wdbc** （顯示所有SQL查詢）、 **soap** （顯示所有SOAP調用）、 **ldap** （驗證後顯示所有LDAP查詢）、 **** xtkqueryJosk（顯示所有查詢def的清單）。\
-   您可以個別使用(**例如tracefilter:soap** 、wdbc)。 您也可以全部啟動，並選擇排除某些其他人： **tracefilter:*,!soap**
+   最有用的日誌類型有： **wdbc** （顯示所有SQL查詢）、 **soap** （顯示所有SOAP調用）、 **ldap** （驗證後顯示所有LDAP查詢）、 **xtkquery** （顯示所有查詢的清單）。\
+   您可以個別使用(**例如tracefilter:soap** 、wdbc)。 您也可以全部啟動，並選擇排除某些其他人： **-tracefilter:*,!soap**
 
    檢查錯誤是否實際發生，然後以正常方式重新啟動進程：
 
