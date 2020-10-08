@@ -1,7 +1,7 @@
 ---
-title: 設定SpamAssassin
-seo-title: 設定SpamAssassin
-description: 設定SpamAssassin
+title: 設定 SpamAssassin
+seo-title: 設定 SpamAssassin
+description: 設定 SpamAssassin
 seo-description: null
 page-status-flag: never-activated
 uuid: 327548c0-d621-4417-9fc9-b0bf30251dc0
@@ -11,23 +11,20 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 設定SpamAssassin{#configuring-spamassassin}
+# 設定 SpamAssassin{#configuring-spamassassin}
 
 >[!NOTE]
 >
->有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+>有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 ## 概觀 {#overview}
 
@@ -43,7 +40,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 >
 >此更新由代管SpamAssassin的伺服器管理員負責。
 
-在Adobe Campaign中使用SpamAssassin可指出使用SpamAssassin的郵件伺服器在收到Adobe Campaign傳送的電子郵件時的可能行為。 不過，網際網路供應商或線上郵件伺服器的郵件伺服器仍可能認為Adobe Campaign傳送的訊息不受歡迎。
+在Adobe Campaign中使用SpamAssassin可指出使用SpamAssassin的郵件伺服器在收到Adobe Campaign傳送的電子郵件時的可能行為。 不過，網際網路供應商或線上郵件伺服器的郵件伺服器仍可能認為Adobe Campaign所傳送的訊息不受歡迎。
 
 在Perl中部署SpamAssassin及其模組需要Adobe Campaign應用程式伺服器具備透過HTTP連線（TCP/80流程）進行網際網路存取的功能。
 
@@ -73,11 +70,11 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 
    輸 **入run_me.bat** ，然後按 **Enter** 以啟動安裝和更新程式。 該操作返回以下值之一，以指示更新結果。
 
-   * **0**: 已執行更新。
-   * **1**: 沒有新的更新可用。
-   * **2**: 沒有新的更新可用。
-   * **3**: 更新在先前驗證期間失敗。
-   * **4** 或以上： 發生錯誤。
+   * **0**:已執行更新。
+   * **1**:沒有新的更新可用。
+   * **2**:沒有新的更新可用。
+   * **3**:更新在先前驗證期間失敗。
+   * **4** 或以上：發生錯誤。
 
 1. 若要檢查SpamAssassin是否成功安裝，請使用GTUBE測試（未經請求的大量電子郵件的一般測試），請執行下列程式：
 
