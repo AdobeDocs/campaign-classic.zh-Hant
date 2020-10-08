@@ -1,7 +1,7 @@
 ---
-title: 交貨報告
-seo-title: 交貨報告
-description: 交貨報告
+title: 傳遞報表
+seo-title: 傳遞報表
+description: 傳遞報表
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 6%
 
 ---
 
 
-# 關於傳送的報表{#reports-on-deliveries}
+# 關於傳遞報表{#reports-on-deliveries}
 
 Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路瀏覽器存取。
 
@@ -52,6 +52,6 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 
 >[!NOTE]
 >
->有些報表具有圖表（曲線、橫條、漏斗等）。 將游標移至圖表上，以顯示其值。
+>有些報表具有圖表（曲線、橫條、漏斗等）。 將游標移到圖表上以顯示其值。
 
 For more information on these options, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
