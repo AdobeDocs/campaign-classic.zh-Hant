@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 9fd7122e-22c7-4f9a-a2a4-5de3daaa3c2e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
@@ -84,9 +84,10 @@ source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
    * **[!UICONTROL Save]**:此選項可讓您建立傳送並儲存。 它不會分析或提供。
    * **[!UICONTROL Estimate the target]**:此選項可讓您計算傳送目標，以評估其潛力（第一個分析階段）。 此動作等同於選取選項， **[!UICONTROL Estimate the population to be targeted]** 並在透過「傳送 **[!UICONTROL Analyze]** 」傳送傳送至主要目標時按 **一下**。
-   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。 交貨不寄。 此動作相當於在傳送傳送至 **[!UICONTROL Deliver as soon as possible]** 具有「傳送 **[!UICONTROL Analyze]** 」的主目標時，選取選項並按 **一下**。
+   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。 交貨不寄。 此動作等同於在傳送傳送至 **[!UICONTROL Deliver as soon as possible]** 具有「傳送 **[!UICONTROL Analyze]** 」的主要目標時選取選項並按 **一下**。
    * **[!UICONTROL Send a proof]**:此選項可讓您傳送傳送的證明。 此動作等同於按一下具 **[!UICONTROL Send a proof]** 有傳送的傳送工具列中的按 **鈕**
    * **[!UICONTROL Prepare and start]**:此選項會啟動完整分析程式（目標計算和內容準備）並傳送傳送。 此動作等同於在傳送傳送 **[!UICONTROL Deliver as soon as possible]**&#x200B;至主 **[!UICONTROL Analyze]**&#x200B;要目標時， **[!UICONTROL Confirm delivery]** 按一下、和 **選項**。
+
    工作流 **[!UICONTROL Act on a delivery]** 程中進一步使用的活動可讓您啟動開始傳送（目標計算、內容準備、傳送）所需的所有剩餘步驟。 For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
 
    也提供下列選項：
@@ -115,8 +116,8 @@ source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 開啟「 **傳送** 」活動，並定義下列屬性：
 
 * 在區段 **[!UICONTROL Delivery]** 中，選 **[!UICONTROL New, created from a template]** 取並選取傳送範本。
-* 在節 **[!UICONTROL Recipients]** 中，選擇 **[!UICONTROL Specified in the delivery]**。
-* 在區段 **[!UICONTROL Action to execute]** 中，保留選 **[!UICONTROL Prepare]** 項。
+* In the **[!UICONTROL Recipients]** section, select **[!UICONTROL Specified in the delivery]**.
+* In the **[!UICONTROL Action to execute]** section, keep the **[!UICONTROL Prepare]** option.
 
 ![](assets/new-workflow-param-delivery.png)
 
@@ -131,7 +132,7 @@ source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   這是一條消息，其中包含以JavaScript編寫的表達式：表 **[!UICONTROL vars.recCount]** 示由前一任務的傳送定位的接收者數。 有關JavaScript運算式的詳細資訊，請參閱 [JavaScript指令碼和範本](../../workflow/using/javascript-scripts-and-templates.md)。
+   這是一條消息，其中包含以JavaScript編寫的表達式： **[!UICONTROL vars.recCount]** 代表由前一任務的傳送定位的收件者數。 有關JavaScript運算式的詳細資訊，請參閱 [JavaScript指令碼和範本](../../workflow/using/javascript-scripts-and-templates.md)。
 
    ![](assets/new-workflow-param-validation.png)
 
@@ -171,5 +172,5 @@ source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
 >[!NOTE]
 >
->選取該選項時，沒有 **[!UICONTROL Do not recover target]** 輸出參數。
+>選取選項時，沒有 **[!UICONTROL Do not recover target]** 輸出參數。
 
