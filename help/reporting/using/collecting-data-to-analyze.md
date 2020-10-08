@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 594a333d-1fc3-49a0-b3f6-7ea8fa4321e9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
 
 要使用連結到資料庫方案的資料，請在查詢編輯器中選擇相應的選項，並配置要應用的查詢。
 
-下列範例可讓您在資料庫的設定檔中，收集每個國家／地區的收件者數目。 然後，這些報表可以以表格的形式顯示在報表中。
+下列範例可讓您在資料庫的設定檔中，收集每個國家／地區的收件者數目。 然後，這些報表可以以表格的形式顯示。
 
 ![](assets/reporting_query_from_schema.png)
 
