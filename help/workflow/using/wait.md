@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 41bcfe67-b5d6-4ee6-9f8a-6a7a208e2036
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 2%
 
 ---
 
@@ -30,11 +30,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 在欄位 **[!UICONTROL Duration]** 中，值可以用您選擇的單位表示：（根據營運商的地區設定）:
 
-* 如果未指定區域設定： **s** , **m，分** 鐘， **** h **,** d,y, **** d,y,y。 在核準時，值會自動轉換為最可讀的單位。
+* 如果未指定區域設定： **s** , **m** ，分鐘， **h** ，小時， **d,** d **** ,y,d,y。 在核準時，值會自動轉換為最可讀的單位。
 
    預設單位為日(**d**)。
 
-* 但是，例如，若地區設定設為「Français」: **秒** , **mn** 分鐘， **** 小時 **,********** mj,數月，為數年。 在核準時，值會自動轉換為最易讀的單位，如上 **90s** 已轉換 **為1mn 30s**。
+* 但是，例如，若地區設定設為「Français」: **s** , **mn** , **min,** h，數小時 **,** j，數月 ******** , m, m，數年。 在核準時，值會自動轉換為最易讀的單位，如上 **90s** 已轉換 **為1mn 30s**。
 
    預設單位為日(**d**)。
 
