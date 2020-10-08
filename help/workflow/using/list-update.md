@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -56,8 +53,8 @@ ht-degree: 0%
 1. 選擇要保存清單的資料夾。
 1. 輸入清單的標籤。 您可以插入動態欄位，自動從清單中產生名稱。 在此範例中，清單與查詢的名稱相同，可輕鬆識別其內容。
 1. 將選 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 取的選項保留為刪除不符合定位標準的收件者，並將新收件者插入清單。
-1. 同時，將選 **[!UICONTROL Create or use a list with its own table]** 項保留為選中。
-1. 保留選 **[!UICONTROL Generate an outbound transition]** 項未選中。
+1. Also leave the **[!UICONTROL Create or use a list with its own table]** option checked.
+1. Leave the **[!UICONTROL Generate an outbound transition]** option unchecked.
 1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
