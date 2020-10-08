@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2479'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ## 核准程式 {#approval-process}
 
-傳送的每個步驟都需經過核准，以確保完整監控和控制促銷活動的各種程式：鎖定、內容、預算、擷取和傳送證明。
+傳送的每個步驟都需經過核准，以確保完整監控和控制促銷活動的各種程式：定位、內容、預算、擷取和傳送證明。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 >[!NOTE]
 >
->只有傳送擁有者才能開始傳送。 為了讓其他運算元（或運算元群組）能夠開始傳送，您必須在欄位中新增為審核 **[!UICONTROL Delivery start:]** 者。\
+>只有傳送擁有者才能開始傳送。 為了讓其他運算元（或運算元群組）能夠開始傳送，您必須在欄位中新增為審閱 **[!UICONTROL Delivery start:]** 者。\
 >另請參閱「選 [取審核者」](#selecting-reviewers)。
 
 ### 操作原則 {#operating-principle-}
@@ -107,7 +107,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ![](assets/s_user_validation_save_target_validation.png)
 
-按一下 **[!UICONTROL Validate]**.
+按一下 **[!UICONTROL Validate]**。
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 #### 通知內容 {#notification-content}
 
-通知內容在特定範本中定義： **[!UICONTROL Notification of validations for the marketing campaign]**。 此範本會儲存在Adobe Campaign **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 樹狀結構的資料夾中。
+通知內容在特定範本中定義： **[!UICONTROL Notification of validations for the marketing campaign]**. 此範本會儲存在Adobe Campaign **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 樹狀結構的資料夾中。
 
 ## 核准傳送 {#checking-and-approving-deliveries}
 
@@ -271,6 +271,7 @@ Adobe Campaign可讓您以協作模式，設定行銷活動主要階段的核准
 >* 如果定義了審核者清單，則在一個審核者接受該清單後，將立即批准該作業。 然後控制面板中將不再提供相關的核准連結。 在啟用通知發送時，如果另一個審核者按一下通知消息中的批准連結，則會通知他們另一個操作員已經批准了作業。
 >* 您可以在審核者編輯視窗的下方區段，定義促銷活動的核准排程。 依預設，審核者自提交日期起有三天時間可核准程式。 您可以設定提醒，提醒會在核准截止日期之前自動傳送給相關的營運商。
 >* 您可以新增本節的提醒。
+
 >
 
 
@@ -363,7 +364,7 @@ Adobe Campaign可讓您以協作模式，設定行銷活動主要階段的核准
 
       ![](assets/s_ncs_user_validation_submit_content_available2.png)
 
-      營運商可在將內容提交給促銷活動負責人之前新增意見。
+      營運商可先新增意見，再將內容提交給促銷活動負責人。
 
       ![](assets/s_ncs_user_validation_submit_content_available3.png)
 
