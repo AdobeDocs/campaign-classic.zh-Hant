@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 3710768e-ab7f-40a4-9c48-830695adc990
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '3255'
+ht-degree: 4%
 
 ---
 
@@ -44,11 +44,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 否則，收件者將會是 **[!UICONTROL Excluded by arbitration]**。 如需詳細資訊，請參閱仲 [裁後排除](#exclusion-after-arbitration)。
 
-## 建立壓力規則 {#creating-a-pressure-rule}
+## Creating a pressure rule {#creating-a-pressure-rule}
 
 若要使用Adobe Campaign在促銷活動之間設定仲裁，請先建立促銷活動類型並定義連結的類型規則(**壓力規則** )。
 
-若要建立和設定排 **[!UICONTROL Pressure]** 版規則，請套用下列步驟：
+若要建立與設定 **[!UICONTROL Pressure]** 類型規則，請套用下列步驟：
 
 1. 在促銷活動類型規則清單中，按一下清 **[!UICONTROL New]** 單上方的圖示。
 
@@ -68,13 +68,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    >[!NOTE]
    >
-   >只有在選取選項時，才會考慮排 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 程的傳送。 有關詳細資訊，請參閱 [設定句點](#setting-the-period)。
+   >只有在選取選項時，才會考慮排 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 程的傳送。 For more on this, refer to [Setting the period](#setting-the-period).
 
 1. 定義計算最大消息數的方法。
 
    該閾值表示在相關期間可發送給接收者的消息的最大數量。
 
-   依預設，臨界值為常數，您必須指出規則授權的訊息數目上限。
+   依照預設，臨界值為常數，您必須指出該規則授權的訊息數量上限。
 
    ![](assets/campaign_opt_create_a_rule_03b.png)
 
@@ -88,7 +88,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    每個傳送都有權重，即表示其優先順序的值：這可讓促銷活動之間進行仲裁。 權重是使用在類型學規則和／或其屬性中定義的公式計算的。 For more on this, refer to [Message weight](#message-weight).
 
-1. 預設情況下，所有消息都將考慮到閾值計算。 此標 **[!UICONTROL Restriction]** 簽可讓您篩選與排版規則相關的訊息：
+1. 預設情況下，所有訊息都將考慮到臨界值計算。此標 **[!UICONTROL Restriction]** 簽可讓您篩選與排版規則相關的訊息：
 
    * 此標籤的上方區段可讓您限制相關收件者。
    * 此標籤的下方區段可讓您篩選要計算的訊息。
@@ -102,7 +102,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 最大消息數 {#maximum-number-of-messages}
 
-每個壓力規則定義一個閾值，即在給定時間段內可以發送給一個接收者的消息的最大數量。 一旦達到此臨界值，在考慮到該期間結束之前，將不再進行交貨。 此程式可讓您在訊息超過設定的臨界值時，自動將收件者排除在傳送範圍之外，以避免過度招攬。
+每個壓力規則定義一個閾值，即在給定時間段內可以發送給一個接收者的消息的最大數量。 一旦達到此臨界值時，在考慮到該期間結束之前，將不再進行傳送。此程式可讓您在訊息超過設定的臨界值時，自動將收件者排除在傳送範圍之外，以避免過度招攬。
 
 臨界值可以是常數，也可以是由含變數的公式計算。 這表示在指定期間，臨界值可能會因收件者而異，甚至因相同的收件者而異。
 
@@ -112,7 +112,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 >
 >輸入 **0** 作為閾值可防止在考慮的期間內向目標人口傳送所有交貨。
 
-**例如：**
+**範例:**
 
 您可以根據收件者所屬的區段，為已授權訊息的數目建立索引。 這表示屬於網頁區段的收件者接收的訊息可能比其他收件者多。 類型 **[!UICONTROL Iif (@origin='Web', 5, 3)]** 公式可授權傳送5個訊息給收件者，其他區段則授權傳送3個訊息。 配置如下：
 
@@ -124,16 +124,16 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 消息權重 {#message-weight}
 
-每個傳送都有權重，代表其優先順序。 預設情況下，交貨的重量設定為5。 壓力規則可讓您定義要套用的傳送重量。
+每個傳送都有權重，代表其優先順序。 預設情況下，交貨的重量設定為5。 壓力規則可讓您定義要套用的交貨的重量。
 
 權重可以透過公式設定或計算，以符合收件者。 例如，您可以根據收件者興趣來定義交貨的權重。
 
 >[!CAUTION]
 >
 >在類型學規則中定義的權重可以在標籤中針對每個傳送分別過 **[!UICONTROL Properties]** 載。 按一下 **[!UICONTROL Typology]** 標籤以選取促銷活動類型，並指定要套用的權重。\
->但是，A類型規則中宣告的權重不會用於計算B類型規則：此重量僅涉及使用A規則的交貨。
+>但是，A類型規則中宣告的權重不會用於計算B類型規則：此權重僅涉及使用A規則的交貨。
 
-**例如：**
+**範例:**
 
 在下列範例中，我們想將電子報對音樂的權重與收件者的傾向分數連結。 操作步驟：
 
@@ -144,7 +144,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 將此規則應用於具有以下主題的消息：電子報、特別優惠等。 這些遞送的權重，以及其優先順序，將取決於每個收件者的傾向分數。
 
-## 設定期間 {#setting-the-period}
+## Setting the period {#setting-the-period}
 
 壓力規則在 **n**-day滾動期間定義。
 
@@ -165,7 +165,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 或
 >
 >* 在 **欄位中輸入** 7d **[!UICONTROL Period considered]** ，並檢查 **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
-   >選項：在計算時，會考慮到在交貨日期前7天以及在交貨日期之後計畫的交貨，而交貨則最多在交貨日期之後7天。
+   >選項：在計算時，會考慮到在交貨日期前7天以及在交貨日期後計畫的交貨（最長7天）。
 >
 >
 期間開始日期取決於資料庫的配置方式。
@@ -179,7 +179,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 > 
 >當期間高於0（例如1）時，計算臨界值可能會考慮前一天的傳送。 因此，如果前一天與上一個日曆周對應，而選取的期間類型是「依每個日曆周分組」，則計算臨界值將會計入所有上一週。
 
-**例如：**
+**範例:**
 
 我們想要建立壓力規則，限制每2週期間招標3則訊息，並將群組設為日曆月份。
 
@@ -229,22 +229,22 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 若要識別客戶和潛在客戶，請使 **[!UICONTROL Status]** 用此欄位，其中包含0代表潛在客戶，1代表客戶。
 
-若要建立規則，請套用下列步驟：
+若要建立規則，請套用以下步驟：
 
-1. 建立新的 **壓力** 類型排版規則。
-1. 編輯標 **[!UICONTROL Pressure]** 簽：在該 **[!UICONTROL Maximum number of messages]** 節中，我們要建立公式以根據每個收件人計算閾值。 在欄位 **[!UICONTROL Depends on the recipient]** 中選取值 **[!UICONTROL Threshold type]** ，然後按一 **[!UICONTROL Edit expression]** 下欄位右側的 **[!UICONTROL Formula]** 值。
+1. Create a new **Pressure** type typology rule.
+1. Edit the **[!UICONTROL Pressure]** tab: in the **[!UICONTROL Maximum number of messages]** section, we want to create a formula to calculate the threshold depending on each recipient. 在欄位 **[!UICONTROL Depends on the recipient]** 中選取值 **[!UICONTROL Threshold type]** ，然後按一 **[!UICONTROL Edit expression]** 下欄位右側的 **[!UICONTROL Formula]** 值。
 
    按一下按 **[!UICONTROL Advanced parameters]** 鈕可定義計算公式。
 
    ![](assets/campaign_opt_pressure_sample_1_1.png)
 
-1. 選取選 **[!UICONTROL Edit the formula using an expression]** 項並按一下 **[!UICONTROL Next]**。
+1. Select the **[!UICONTROL Edit the formula using an expression]** option and click **[!UICONTROL Next]**.
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. 在函式清單中，按兩下節點中 **的Iif****[!UICONTROL Others]** 函式。
+1. In the list of functions, double-click the **Iif** function in the **[!UICONTROL Others]** node.
 
-   然後在區段中選 **擇收件** 者的 **[!UICONTROL Available fields]** 狀態。
+   Then select the recipients&#39; **Status** in the **[!UICONTROL Available fields]** section.
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -252,9 +252,9 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/campaign_opt_pressure_sample_1_4.png)
 
-   此公式可讓您在狀態為0時指派值2，而所有其他狀態的值4。
+   此公式可讓您在狀態等於 0 時指派值為 2，而所有其他狀態的值為 4。
 
-   按一 **[!UICONTROL Finish]** 下以核准公式。
+   按一下 **[!UICONTROL Finish]** 以核准公式。
 
 1. 指出套用規則的期間：在此情況下為7天，以計算每週的訊息數。
 
@@ -271,13 +271,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 儲存類型學：是否已新增至現有的類型清單。
 
-若要在傳送中使用此類型，請在傳送屬性中選取它，在標籤中 **[!UICONTROL Typology]** 如下所示：
+若要在傳送中使用此類型，請在傳送屬性中選取，在標籤中 **[!UICONTROL Typology]** 選取，如下所示：
 
 ![](assets/campaign_opt_pressure_sample_1_7.png)
 
 >[!NOTE]
 >
->可在傳送範本中定義類型，以便自動套用至使用此範本建立的所有傳送。
+>可以在傳遞範本中定義類型，以便自動套用至使用此範本建立的所有傳送。
 
 在傳送分析期間，傳送收件者會視已傳送給他們的傳送數量而排除在傳送之外（如果適用）。 若要檢視此資訊，您可以：
 
@@ -303,7 +303,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 套用下列設定步驟：
 
-1. 建立新的 **壓力** 類型排版規則。
+1. Create a new **Pressure** type typology rule.
 1. 編輯標 **[!UICONTROL Pressure]** 簽。 我們想要建立以每個個別收件者為基礎的臨界值公式：按一 **[!UICONTROL Edit expression]** 下欄位右側的圖 **[!UICONTROL Weight formula]** 示。
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
@@ -317,7 +317,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
    ![](assets/campaign_opt_pressure_sample_2_3.png)
 
 1. 按一 **[!UICONTROL Finish]** 下以儲存此規則。
-1. 將規則連結至促銷活動類型學，並在傳送中參照此類型學以核准它。
+1. 將規則連結至促銷活動類型學，並在傳送中參照此類型學以核准。
 
 ### 僅發送加權最高的消息 {#sending-only-the-highest-weighted-messages}
 
@@ -328,25 +328,25 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 首先，設定壓力規則。
 
 1. 建立壓力規則。 有關詳細資訊，請參閱 [建立壓力規則](#creating-a-pressure-rule)。
-1. 在標籤 **[!UICONTROL General]** 中，選擇選 **[!UICONTROL Re-apply the rule at the start of personalization]** 項。
+1. In the **[!UICONTROL General]** tab, select the **[!UICONTROL Re-apply the rule at the start of personalization]** option.
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
    此選項會覆寫欄位中定義的值， **[!UICONTROL Frequency]** 並在個人化階段期間自動套用規則。 有關詳細資訊，請參閱調 [整計算頻率](../../campaign/using/applying-rules.md#adjusting-calculation-frequency)。
 
-1. 在標 **[!UICONTROL Pressure]** 簽中，選 **[!UICONTROL 7d]** 擇 **[!UICONTROL Period considered]** 作為和 **[!UICONTROL Grouping per day]** 作為 **[!UICONTROL Period type]**。
+1. In the **[!UICONTROL Pressure]** tab, select **[!UICONTROL 7d]** as the **[!UICONTROL Period considered]** and **[!UICONTROL Grouping per day]** as the **[!UICONTROL Period type]**.
 1. 選取選 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 項以包含已排程的傳送。
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   在計算時，會考慮到在交貨日期前7天以及預定在交貨日期後7天的交貨。 有關詳細資訊，請參閱 [設定句點](#setting-the-period)。
+   在計算時，會考慮到在交貨日期前7天以及預定在交貨日期後7天的交貨。 For more on this, refer to [Setting the period](#setting-the-period).
 
 1. 在索引標 **[!UICONTROL Typologies]** 簽中，將規則連結至促銷活動類型。
 1. 儲存您的變更。
 
 現在，針對您要套用壓力規則的每個傳送建立並設定工作流程。
 
-1. 建立促銷活動。 如需詳細資訊，請參閱[本小節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 建立促銷活動. 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在促銷 **[!UICONTROL Targeting and workflows]** 活動的標籤中，新增「查 **詢** 」活動至工作流程。 For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. 新增活 **[!UICONTROL Email delivery]** 動至工作流程並開啟它。 For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. 轉到的標 **[!UICONTROL Approvals]** 簽並禁 **[!UICONTROL Delivery properties]** 用所有批准。
