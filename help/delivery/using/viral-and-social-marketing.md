@@ -1,7 +1,7 @@
 ---
-title: 病毒式營銷和社交營銷
-seo-title: 病毒式營銷和社交營銷
-description: 病毒式營銷和社交營銷
+title: 病毒式行銷及社交行銷
+seo-title: 病毒式行銷及社交行銷
+description: 病毒式行銷及社交行銷
 seo-description: null
 page-status-flag: never-activated
 uuid: dca3db7e-cc8d-42ca-b1b8-45e9fb739c97
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 66f2b229-92d9-4db1-97a4-2d9eb2270446
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 2%
 
 ---
 
 
-# 病毒式營銷和社交營銷{#viral-and-social-marketing}
+# 病毒式行銷及社交行銷{#viral-and-social-marketing}
 
 ## 關於病毒式行銷 {#about-viral-marketing}
 
@@ -79,7 +79,7 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
    >
    >此訊息的內容可以個人化，以符合您的需求。 它基於儲存在節 **[!UICONTROL Transfer of original message]** 點中的模板創 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 建。
    >
-   >您也可以變更已提供給反向連結的訊息轉寄表單。若要這麼做，您必須變更儲存在節點中的 **Viralform** web應用程 **[!UICONTROL Resources > Online > Web applications]** 式。
+   >您也可以變更已提供給反向連結的訊息轉寄表單。若要這麼做，您必須變更儲存在節點中的 **Viralform** Web應用程 **[!UICONTROL Resources > Online > Web applications]** 式。
 
 1. 在轉發的消息中，連結使裁判能夠將他們的概況保存在資料庫中。 為此，提供了入門表單。
 
@@ -87,7 +87,7 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 
    >[!NOTE]
    >
-   >此配置可以調整。 為此，您需要修改儲存在節 **點中的Recipient** web應用 **[!UICONTROL Resources > Online > Web applications]** 程式。
+   >此配置可以調整。 為此，您需要修改儲存在節 **點中的Recipient** Web應用 **[!UICONTROL Resources > Online > Web applications]** 程式。
    >
    >For more information on Web applications, refer to [this section](../../web/using/about-web-applications.md).
 
