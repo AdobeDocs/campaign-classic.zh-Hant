@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1930'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +82,7 @@ source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
    * **[!UICONTROL Keep only the first records after sorting]**:此選項可讓您根據一或多個排序順序定義限制。 如果選擇字 **[!UICONTROL Age]** 段作為排序標準，100作為限制，則僅保留最小的100個收件者。
    * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**:此選項會結合前兩個選項。 它可讓您根據一或多個排序順序定義限制，然後在某些記錄與定義的標準具有相同值時，對第一個記錄套用隨機選擇。
 
-      例如，如果您選取欄位作為排序標準，然後定義100個限制，但資料庫中2000個最年輕的收件者都是18個，則100個收件者會從2000個中隨機選取。 **[!UICONTROL Age]**
+      例如，如果您選取欄位作為排序標準，然後定義100個限制，但資料庫中2000個最年輕的收件者都是18個，則100個收件者會從2000個收件者中隨機選取。 **[!UICONTROL Age]**
    ![](assets/s_user_segmentation_partage_wz1.png)
 
 1. 如果要定義排序標準，則可通過附加步驟定義列和排序順序。
@@ -154,7 +154,7 @@ source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
    * **[!UICONTROL Label]**:標籤。
    * **[!UICONTROL Targeting dimension]**:例如，輸入要套用資料分發的目標 **[!UICONTROL Recipient]** 維度。 此架構必須始終與定位工作流程中使用的資料相容。
    * **[!UICONTROL Distribution field]**:透過定位維度選取欄位。 例如，如果您選取欄 **[!UICONTROL Email domain]** 位，收件者清單會依網域劃分。
-   * **[!UICONTROL Distribution type]**:在頁籤中選擇目標限制值的劃分方 **[!UICONTROL Distribution]** 式：或 **[!UICONTROL Percentage]** 者 **[!UICONTROL Set]**。
+   * **[!UICONTROL Distribution type]**:在頁籤中選擇目標限制值的劃分方 **[!UICONTROL Distribution]** 式： **[!UICONTROL Percentage]** 或 **[!UICONTROL Set]**&#x200B;者。
    * **[!UICONTROL Assignment type]**:選擇資料分發分配類型。 您可以按組或運算子選擇分配，或按本地實體選擇分配。 「分佈式行銷」中會使用由本機實 **體指派的作業**。 For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
    * **[!UICONTROL Approval storage]**:如果您在定位 **[!UICONTROL Local approval]** 工作流程中使用活動(請參 [閱本機核准](../../workflow/using/local-approval.md))，請輸入將儲存核准結果的方案。 每個目標方案必須指定一個儲存方案。 如果使用定位 **[!UICONTROL Recipients]** 結構，請輸入預設的存 **[!UICONTROL Local approval of recipients]** 儲結構。
 
@@ -212,7 +212,7 @@ source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ![](assets/s_user_segmentation_partage_general.png)
 
-如果您 **[!UICONTROL Generate complement]** 想利用剩餘人口，請勾選選項。 補數是傳入目標減去子集的並。 然後，活動中將添加一個額外的出站轉移，如下所示：
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. 補數是傳入目標減去子集的並。 然後，活動中將添加一個額外的出站轉移，如下所示：
 
 ![](assets/s_user_segmentation_partage_compl.png)
 
