@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +38,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Directory]**
 
-      包含要下載的檔案的目錄。 必須事先在伺服器上建立此目錄： 如果不存在，則會引發錯誤。
+      包含要下載的檔案的目錄。 必須事先在伺服器上建立此目錄：如果不存在，則會引發錯誤。
 
    * **[!UICONTROL Filter]**
 
@@ -85,4 +82,4 @@ ht-degree: 0%
 
 ## 輸出參數 {#output-parameters}
 
-* 檔案名： 完整的檔案名稱。 這是檔案名被移到歷史目錄後的檔案名。 因此，路徑不同，但如果目錄中已存在同名的另一個檔案，則名稱也不同。 保留擴展。
+* 檔案名：完整的檔案名稱。 這是檔案名被移到歷史目錄後的檔案名。 因此，路徑不同，但如果目錄中已存在同名的另一個檔案，則名稱也不同。 保留擴展。
