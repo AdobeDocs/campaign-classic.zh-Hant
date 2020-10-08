@@ -9,25 +9,22 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 使用案例： 傳送含附件的交易式電子郵件{#transactional-email-with-attachments}
+# 使用案例：傳送含附件的交易式電子郵件{#transactional-email-with-attachments}
 
 此使用案例的目的是即時將電子郵件附件添加到出站派單。
 
 ## 關鍵步驟 {#key-steps}
 
-在此案例中，您將學習如何傳送包含個別及／或個人化附件的交易式電子郵件。 附件不會預先上載到Transactional Messaging伺服器上： 而是即時產生。
+在此案例中，您將學習如何傳送包含個別及／或個人化附件的交易式電子郵件。 附件不會預先上載到Transactional Messaging伺服器上：而是即時產生。
 
 當您擷取客戶互動或詳細資訊時，您可能需要在程式結束時將此資訊傳回給客戶，例如附在電子郵件的PDF檔案。
 
@@ -70,7 +67,7 @@ ht-degree: 0%
 
 要即時將電子郵件附件添加到事務性郵件，請執行以下步驟：
 
-1. 從設計附件開始。 For more on this, see [this section](../../delivery/using/attaching-files.md#attach-a-personalized-file).
+1. 從設計附件開始。 如需詳細資訊，請參閱[本區段](../../delivery/using/attaching-files.md#attach-a-personalized-file)。
 
    這可讓您將檔案附加至電子郵件，即使這些檔案並非由執行例項代管。
 
