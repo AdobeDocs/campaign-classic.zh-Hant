@@ -1,7 +1,7 @@
 ---
-title: 關於傳入渠道
-seo-title: 關於傳入渠道
-description: 關於傳入渠道
+title: 關於傳入頻道
+seo-title: 關於傳入頻道
+description: 關於傳入頻道
 seo-description: null
 page-status-flag: never-activated
 uuid: 4224282b-f05f-400e-82f9-9ee9d7a8b443
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 9469495c-9e46-4fd8-826d-1b7227326ce1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 5%
 
 ---
 
 
-# 關於傳入渠道{#about-inbound-channels}
+# 關於傳入頻道{#about-inbound-channels}
 
 選件可使用傳入或傳出頻道在各種選件空間上呈現。 本章詳細說明了傳入渠道的一些特定功能。
 
@@ -38,4 +38,4 @@ source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
 >
 >若是傳入互動，您必須特別設定選件引擎，以呈現並更新一或多個選件。
 >
->您也必須在選件空間上啟用統一模式。 如需詳細資訊，請參閱「建立選件 [空間」一節](../../interaction/using/creating-offer-spaces.md) 。
+>您也必須在選件空間上啟用統一模式。 For more on this, refer to the [Creating offer spaces](../../interaction/using/creating-offer-spaces.md) section.
