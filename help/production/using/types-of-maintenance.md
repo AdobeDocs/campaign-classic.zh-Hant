@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe Campaign提供內建的工作流程，可讓您排程特定資料庫維護
    <td> 複製、重新命名和刪除<br /> </td> 
    <td> 這樣會建立表及其索引的副本，然後刪除現有的表並更名該副本以替代它。<br /> </td> 
    <td> 此方法比第一種方法更快，因為它生成的IO更少（沒有作為檔案的拷貝並從此檔案讀取）。<br /> </td> 
-   <td> 需要兩倍的空間量。<br /> 必須停止在進程期間寫入表的所有活動進程。 但是，讀取過程不會受到影響，因為表在重建後的最後時刻被交換。 <br /> </td> 
+   <td> 需要兩倍的空間量。<br /> 必須停止在進程期間向表寫入的所有活動進程。 但是，讀取過程不會受到影響，因為表在重建後的最後時刻被交換。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>
