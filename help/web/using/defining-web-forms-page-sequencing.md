@@ -1,7 +1,7 @@
 ---
-title: 定義Web表單頁面順序
-seo-title: 定義Web表單頁面順序
-description: 定義Web表單頁面順序
+title: 定義網路表單頁面排序
+seo-title: 定義網路表單頁面排序
+description: 定義網路表單頁面排序
 seo-description: null
 page-status-flag: never-activated
 uuid: 297fad62-d806-4bd8-9b8c-313c20344ab0
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 85bf3244-6896-43e7-96b8-84c45c282fec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 2%
 
 ---
 
 
-# 定義Web表單頁面順序{#defining-web-forms-page-sequencing}
+# 定義網路表單頁面排序{#defining-web-forms-page-sequencing}
 
 表單可包含一或多個頁面。 它是透過圖表建立的，可讓您對頁面進行排序、測試、指令碼執行和頁面跳轉錄制階段。 圖結構模式與工作流模式相同。
 
@@ -62,7 +62,7 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. 在表單屬性中，新增儲存在本&#x200B;**機變數**(下一&#x200B;**步**)的參數。 局部變數在將資料儲 [存於局部變數中有詳細說明](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)。
+1. 在表單屬性中，新增儲存在本&#x200B;**機變數**(下一&#x200B;**步**)的參數。 本機變數在將資料儲 [存在本機變數中有詳細說明](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)。
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
