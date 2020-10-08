@@ -1,7 +1,7 @@
 ---
-title: 添加其他SQL函式
-seo-title: 添加其他SQL函式
-description: 添加其他SQL函式
+title: 新增其他 SQL 函式
+seo-title: 新增其他 SQL 函式
+description: 新增其他 SQL 函式
 seo-description: null
 page-status-flag: never-activated
 uuid: d66b5ca2-ac7d-4654-9f0e-9bfe56490c19
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 728a95f8-46fe-49a8-a645-a0dd6eeb6615
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 1%
 
 ---
 
 
-# 添加其他SQL函式{#adding-additional-sql-functions}
+# 新增其他 SQL 函式{#adding-additional-sql-functions}
 
 ## 簡介 {#introduction}
 
@@ -102,7 +102,7 @@ Adobe Campaign可讓使用者定義 **自己可存取SQL函式的函式** ，包
 
 ## 函式描述符&lt;function>&lt;/function> {#function-descriptor--function-}
 
-這裡介紹的案例是一個一般案例，我們希望提供功能 **實現**。
+這裡介紹的案例是我們希望提供功能實現的一 **般案例**。
 
 以下是&quot;相對成熟度&quot;函式的範例，使用年齡來指出該人被認為成熟的年份。
 
@@ -133,6 +133,7 @@ Adobe Campaign可讓使用者定義 **自己可存取SQL函式的函式** ，包
 
    * provider **屬性** 是必需的，它指定為其提供實施的資料庫系統。 如示例所示，當表達式語法或基礎函式不同時，可以根據資料庫提供替代實現。
    * @body **** 屬性包含函式實現。 請注意：此實作必須是以資料庫語言（而非程式碼區塊）表示的運算式。 根據資料庫，表達式可以是僅返回單個值的子查詢(&quot;（從表中選擇列……）&quot;)。 例如，Oracle中就是這種情況（查詢必須用括弧寫入）。
+
    >[!NOTE]
    >
    >如果定義的函式可能只查詢一或兩個資料庫，則我們始終只能提供與這些資料庫對應的定義。
