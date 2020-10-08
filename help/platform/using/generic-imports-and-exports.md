@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 55%
@@ -36,7 +33,7 @@ Adobe Campaign 還提供了一個匯入模組，可讓您使用外部檔案為�
 您可以：
 
 * 建立匯入或匯出範本並對其進行配置 (參見下文)。
-* 建立匯入或匯出： 請參閱匯 [出資料](../../platform/using/exporting-data.md) 或匯 [入資料](../../platform/using/importing-data.md)。
+* 建立匯入或匯出：請參閱匯 [出資料](../../platform/using/exporting-data.md) 或匯 [入資料](../../platform/using/importing-data.md)。
 * 啟動導入或導出並監視其執行。 請參閱執 [行追蹤](#execution-tracking)。
 
 >[!CAUTION]
