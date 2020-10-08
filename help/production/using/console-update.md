@@ -1,7 +1,7 @@
 ---
-title: 控制台更新
-seo-title: 控制台更新
-description: 控制台更新
+title: 主控台更新
+seo-title: 主控台更新
+description: 主控台更新
 seo-description: null
 page-status-flag: never-activated
 uuid: d2193d4f-b98c-47b1-88f1-7e5ccf4c453c
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 9281808b-1c2f-4095-9051-f181f089f205
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '57'
+ht-degree: 14%
 
 ---
 
 
-# 控制台更新{#console-update}
+# 主控台更新{#console-update}
 
 如果您選取了 **[!UICONTROL Do not request console update]** 選項，而且想要重新啟用更新請求，請套用下列程式：
 
