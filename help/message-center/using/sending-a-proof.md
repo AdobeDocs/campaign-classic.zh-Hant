@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 8%
 
 ---
 
 
-# 傳送證明{#sending-a-proof}
+# 傳送校樣{#sending-a-proof}
 
 您可以傳送證明至先前建立的種子位址，以測試訊息傳送。
 
