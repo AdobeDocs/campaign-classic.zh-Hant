@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1236'
+ht-degree: 1%
 
 ---
 
@@ -44,11 +44,11 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ## 新增邊框和背景 {#adding-a-border-and-background}
 
-您可以將邊框 **新增至** 選取的區塊。 邊框使用三個選項定義：樣式、大小和顏色。
+You can add a **border** to a selected block. 邊框使用三個選項定義：樣式、大小和顏色。
 
 ![](assets/dce_popup_border.png)
 
-您也可以從色 **彩圖表中** ，選取顏色來定義背景顏色。
+You can also define a **background color** by selecting a color from the color chart.
 
 ![](assets/dce_popup_background.png)
 
@@ -64,13 +64,13 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 >
 >預設欄位是Web應用程式儲存架構中的欄位。
 
-欄位 **輸入區** ，可讓您選取要與表單欄位連結的資料庫欄位。
+The **field** input zone lets you select a database field to link with the form field.
 
 預設情況下，提供的欄位是 **nms:recipient表中的欄位** 。
 
 ![](assets/dce_field_selection.png)
 
-「必 **要欄位** 」選項可讓您僅在使用者已填入欄位時授權頁面的核准。 如果未填入必要欄位，則會出現錯誤訊息。
+The **Required field** option lets you only authorize the page&#39;s approval if the user has filled in the field. 如果未填入必要欄位，則會出現錯誤訊息。
 
 對於選項按鈕和複選框，需 **要進行其他配置**。
 
@@ -142,6 +142,7 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 >* 新視窗(_blank)
 >* 目前視窗(_self)
 >* 預設瀏覽器行為
+
 >
 
 
@@ -152,7 +153,7 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ![](assets/dce_toolbar_imgblock_externallink.png)
 
-在 **URL欄位中輸入相關的連結** 位址。 URL欄位應輸入為： **https://www.myURL.com**。
+在 **URL欄位中輸入相關的連結** 位址。 URL欄位應輸入為： **https://www.myURL.com**.
 
 ### 連結至Web應用程式 {#link-to-a-web-application}
 
@@ -176,7 +177,7 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ### 刪除連結 {#delete-a-link}
 
-插入連結後，工具列會提供兩個新圖示：編 **輯連結** , **** 並中斷可讓您與建立之連結互動的連結。
+插入連結後，工具列會提供兩個新圖示： **編輯連結** ，並 **** 中斷可讓您與建立的連結互動的連結。
 
 * **[!UICONTROL Edit link]** 可讓您顯示包含連結所有參數的視窗。
 * **[!UICONTROL Break the link]** 可讓您在確認後刪除連結和所有相關參數。
@@ -202,7 +203,7 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 * **中心** 圖示：將選取區塊的文字置中(新增style=&quot;text-align:中；」)
 * **右對齊圖示** :將文字對齊選定塊的右側(add style=&quot;text-align:權利；」)
 * **變更背景顏色** 圖示：可讓您變更所選區塊的背景顏色(新增style=&quot;background-color:rgba(170、86、255、0.87)
-* **變更文字顏色** 圖示：可讓您變更所選區塊的文字顏色，或僅變更所選取的文字(`<span style="color: #CODE">`)
+* **變更文字顏色** 圖示：可讓您變更所選區塊的文字顏色，或只變更所選取的文字(`<span style="color: #CODE">`)
 
 >[!NOTE]
 >
