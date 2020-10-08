@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: f7187d42-56e9-4681-b172-22abd43ecd29
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 9%
 
 ---
 
@@ -55,4 +55,4 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
                 </container>
 ```
 
-Adobe Campaign中的登入表單個人化保留給專家使用者。 For more on this, refer to this [section](../../configuration/using/identifying-a-form.md).
+Adobe Campaign中的登入表單個人化保留給專家使用者。 如需詳細資訊，請參閱本[區段](../../configuration/using/identifying-a-form.md)。
