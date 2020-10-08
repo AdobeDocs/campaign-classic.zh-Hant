@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 discoiquuid: 820be231-af76-44ce-8f4d-cd5eae1eb169
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 3%
 
 ---
 
