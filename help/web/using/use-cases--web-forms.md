@@ -1,7 +1,7 @@
 ---
-title: 「使用案例： 網路表單」
-seo-title: 「使用案例： 網路表單」
-description: 「使用案例： 網路表單」
+title: '"使用案例：網路表單"'
+seo-title: '"使用案例：網路表單"'
+description: '"使用案例：網路表單"'
 seo-description: null
 page-status-flag: never-activated
 uuid: b2c3f171-325e-4913-a188-a791bad0df2e
@@ -11,19 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 使用案例： 網路表單{#use-cases-web-forms}
+# 使用案例：網路表單{#use-cases-web-forms}
 
 ## 建立包含雙重選擇加入的訂閱表單 {#create-a-subscription--form-with-double-opt-in}
 
@@ -48,7 +45,7 @@ ht-degree: 0%
 
 確認消息通過臨時服務級別引用的專用傳送模板發送。
 
-1. 在中 **[!UICONTROL Explorer]** ，選擇 **[!UICONTROL Resources > Templates > Delivery templates]**。
+1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. 建立傳送訂閱確認訊息的傳送範本。
 1. 按一下 **[!UICONTROL To]** 中的按鈕， **[!UICONTROL Email parameters]** 將傳送範本與「訂閱」目標對應（而非收件者）建立關聯。
 
@@ -120,7 +117,7 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   第二個活 **[!UICONTROL Script]** 動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將允許您將收件人從臨時資料夾轉移到另一個資料夾，並在收件人確認訂閱後立即與現有配置檔案進行協調。
+   第二個活 **[!UICONTROL Script]** 動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將允許您將收件者從臨時資料夾傳輸到另一個資料夾，並在他們確認訂閱後立即與現有配置檔案協調。
 
    ```
    ctx.recipient.@blockList=0
