@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 行銷活動範本 {#campaign-templates}
+# Marketing Campaign templates {#campaign-templates}
 
 促銷活動範本集中在節 **[!UICONTROL Resources > Templates > Campaign templates]** 點中。 預設範本會以標準形式提供。 它可讓您使用所有可用的模組（檔案、工作、種子位址等）建立新的促銷活動，但提供的模組取決於您的權限和Adobe Campaign平台的設定。
 
@@ -155,7 +152,7 @@ ht-degree: 0%
 
 * **支出和目標**
 
-   選取此模組時，會將標籤 **[!UICONTROL Budget]** 新增至範本和促銷活動的詳細資料中，以便選取相關預算。
+   選取此模組時，會根據 **[!UICONTROL Budget]** 此範本將標籤新增至範本和促銷活動的詳細資料，以便選取相關預算。
 
    ![](assets/s_ncs_user_op_template_activate_7.png)
 
