@@ -1,7 +1,7 @@
 ---
-title: 建立直接郵件傳送
-seo-title: 建立直接郵件傳送
-description: 建立直接郵件傳送
+title: 建立直接郵件傳遞
+seo-title: 建立直接郵件傳遞
+description: 建立直接郵件傳遞
 seo-description: null
 page-status-flag: never-activated
 uuid: f7567144-48e8-4683-89d4-a34efb451215
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: d6eae7e3-0d57-457e-99a2-1ed7b10474e6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '89'
+ht-degree: 22%
 
 ---
 
 
-# 建立直接郵件傳送{#creating-a-direct-mail-delivery}
+# 建立直接郵件傳遞{#creating-a-direct-mail-delivery}
 
 要建立新的直接郵件發送，請執行以下步驟：
 
