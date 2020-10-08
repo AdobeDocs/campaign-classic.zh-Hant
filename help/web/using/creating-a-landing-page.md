@@ -1,7 +1,7 @@
 ---
-title: 建立著陸頁面
-seo-title: 建立著陸頁面
-description: 建立著陸頁面
+title: 建立登錄頁面
+seo-title: 建立登錄頁面
+description: 建立登錄頁面
 seo-description: null
 page-status-flag: never-activated
 uuid: fc0e9749-f44e-4aa0-bdfa-6f44ba570bea
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 5f1e5886-628f-4c9e-80c1-d82feec23e8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 3%
 
 ---
 
 
-# 建立著陸頁面{#creating-a-landing-page}
+# 建立登錄頁面{#creating-a-landing-page}
 
 ## 關於建立著陸頁面 {#about-landing-pages-creation}
 
@@ -30,7 +30,7 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 此使用案例的主要目的是使用DCE中的函式，讓「著陸頁面」表單欄位與Adobe Campaign中的內部欄位對應。
 
-## 建立著陸頁面 {#creating-the-landing-page}
+## Creating the landing page {#creating-the-landing-page}
 
 若要建立新的著陸頁面類型Web應用程式，請使用下列步驟：
 
@@ -84,7 +84,7 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
    >[!CAUTION]
    >
-   >您必須等到收到下列訊息後，才能關閉： **[!UICONTROL The external resources have been successfully published]** 。
+   >您必須等到收到下列訊息後，才能關閉： **[!UICONTROL The external resources have been successfully published]** .
 
 1. 按一下標 **[!UICONTROL Properties]** 簽。
 1. 為每個 **頁輸入** 標籤(例如：第1頁=收集，第2頁=謝謝)。
