@@ -1,7 +1,7 @@
 ---
-title: A/B測試
-seo-title: A/B測試
-description: A/B測試
+title: A/B 測試
+seo-title: A/B 測試
+description: A/B 測試
 seo-description: null
 page-status-flag: never-activated
 uuid: 8887574e-447b-48a5-afc6-95783ffa7fb3
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1350'
+ht-degree: 2%
 
 ---
 
 
-# A/B測試{#a-b-testing}
+# A/B 測試{#a-b-testing}
 
 如果您有數個電子郵件傳送內容，而您想瞭解哪個版本對目標群體的影響最大，您可以將不同版本傳送給部分收件者，然後選取成功率最高的版本，並傳送給其他收件者。
 
@@ -42,7 +42,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * [步驟7:啟動工作流](#step-7--starting-the-workflow)
 * [步驟8:分析結果](#step-8--analyzing-the-result)。
 
-## 步驟1:建立定位工作流程 {#step-1--creating-a-targeting-workflow}
+## Step 1: Creating a targeting workflow {#step-1--creating-a-targeting-workflow}
 
 您必須在促銷活動的標籤中 **[!UICONTROL Targeting and Workflows]** 建立工作流程。 它由活動、與兩個活 **[!UICONTROL Query]** 動連結的活 **[!UICONTROL Split]** 動、活動、活 **[!UICONTROL Email delivery]** 動和活 **[!UICONTROL Wait]** 動組成 **[!UICONTROL JavaScript code]****[!UICONTROL Delivery]** 。
 
@@ -50,7 +50,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. 轉至標 **[!UICONTROL Targeting and Workflows]** 簽。
+1. 移至 **[!UICONTROL Targeting and Workflows]** 索引標籤。
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
@@ -66,7 +66,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 配置查詢活動 {#configuring-the-query-activity}
 
-* 連按兩下活 **[!UICONTROL Query]** 動。
+* Double-click the **[!UICONTROL Query]** activity.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
@@ -84,7 +84,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 建立人口A:
 
-   * 連按兩下活 **[!UICONTROL Split]** 動。
+   * Double-click the **[!UICONTROL Split]** activity.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -116,11 +116,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 建立剩餘人口：
 
-   * 轉至標 **[!UICONTROL General]** 簽。
+   * 移至 **[!UICONTROL General]** 索引標籤。
 
       ![](assets/use_case_abtesting_createrecipients_011.png)
 
-   * Select **[!UICONTROL Generate complement]**.
+   * 選取 **[!UICONTROL Generate complement]**。
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
@@ -130,9 +130,9 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## 步驟3:建立兩個傳送範本 {#step-3--creating-two-delivery-templates}
 
-我們現在想要建立兩個傳送範本。 每個範本都會在連結至活 **[!UICONTROL Email delivery]** 動的活動中引 **[!UICONTROL Split]** 用。 For more on this, refer to this [section](../../delivery/using/about-templates.md).
+我們現在想要建立兩個傳送範本。 每個範本都會在連結至活 **[!UICONTROL Email delivery]** 動的活動中引 **[!UICONTROL Split]** 用。 如需詳細資訊，請參閱本[區段](../../delivery/using/about-templates.md)。
 
-1. 前往資料 **[!UICONTROL Resources > Delivery template]** 夾。
+1. Go to the **[!UICONTROL Resources > Delivery template]** folder.
 1. 複製傳 **[!UICONTROL Email]** 送範本。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
@@ -147,7 +147,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## 步驟4:在工作流程中設定傳送 {#step-4--configuring-the-deliveries-in-the-workflow}
 
-下一步是設定傳送。 它們的目的地是在前一個階段建立的三個人口：步 [驟2:配置人口樣本](#step-2--configuring-population-samples)。 前兩個傳送可讓您傳送不同的內容給人口A和B。第三批貨物的目的地是既未收到A也未收到B的人口。其內容將由指令碼計算，並會與A或B相同，視哪一個開啟率最高而定。 我們需要設定第三個交貨的等待期，以瞭解交貨A和B的結果。這就是為什麼第三個傳送包含活 **[!UICONTROL Wait]** 動。
+下一步是設定傳送。 它們的目的地是在前一個階段建立的三個人口： [步驟2:配置人口樣本](#step-2--configuring-population-samples)。 前兩個傳送可讓您傳送不同的內容給人口A和B。第三批貨物的目的地是既未收到A也未收到B的人口。其內容將由指令碼計算，並會與A或B相同，視哪一個開啟率最高而定。 我們需要設定第三個交貨的等待期，以瞭解交貨A和B的結果。這就是為什麼第三個傳送包含活 **[!UICONTROL Wait]** 動。
 
 1. 移至活動 **[!UICONTROL Split]** 並將目的地為人口A的轉場連結至工作流程中已傳送的其中一個電子郵件。
 
@@ -329,13 +329,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 上述範例可讓您根據電子郵件的開啟率來選取傳送的內容。 您可以根據其他特定遞送指標來調整：
 
-* 最佳點按吞吐量： `[indicators/@recipientClickRatio]`、
-* 最高反應率（開啟電子郵件並點擊訊息）: `[indicators/@reactivity]`、
+* 最佳點按吞吐量： `[indicators/@recipientClickRatio]`的
+* 最高反應率（開啟電子郵件並點擊訊息）: `[indicators/@reactivity]`的
 * 最低投訴率： `[indicators/@refusedRatio]` （對sortDesc屬性使用false值）,
-* 最高轉換率： `[indicators/@transactionRatio]`、
-* 收到訊息後瀏覽的頁數： `[indicators/@totalWebPage]`、
-* 最低取消訂閱率： `[indicators/@optOutRatio]`、
-* 事務處理金額： `[indicators/@amount]`。
+* 最高轉換率： `[indicators/@transactionRatio]`的
+* 收到訊息後瀏覽的頁數： `[indicators/@totalWebPage]`的
+* 最低取消訂閱率： `[indicators/@optOutRatio]`的
+* 事務處理金額： `[indicators/@amount]`.
 
 ## 步驟6:定義最終交付 {#step-6--defining-the-final-delivery}
 
