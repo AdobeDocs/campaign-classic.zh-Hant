@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 6d694f5c-1d1f-4686-b3bf-8697d919a0c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ## 簡介 {#introduction}
 
-Adobe Campaign提供「分 **布式行銷** 」應用程式，可在中央實體（總部、行銷部門等）之間實作合作行銷及當地實體（銷售點、地區代理等）。 此合作是以共用工作區為基礎，稱為 **[!UICONTROL list of campaign packages]**，集中建立的促銷活動範本和例項會提供給本機實體。
+Adobe Campaign提供「分 **布式行銷** 」應用程式，可在中央實體（總部、行銷部門等）之間實作合作行銷 及當地實體（銷售點、地區代理等）。 此合作是以共用工作區為基礎，稱為 **[!UICONTROL list of campaign packages]**，集中建立的促銷活動範本和例項會提供給本機實體。
 
 中央實體提供本機實體可能使用的促銷活動。 促銷活動是由代表本機或協作促銷活動的套件來實作。 若要使用促銷活動，本機實體必須對其進行訂購，且訂單必須獲得核准。
 
@@ -102,11 +102,11 @@ Distributed Marketing可讓本地實體擁有更多的自主權，同時最佳�
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
-### 營運商 {#operators}
+### 運算子 {#operators}
 
 您需要建立中央和本機運算子。
 
-Central運算子必須屬於運算 **[!UICONTROL Central management]** 子群組或具有指 **[!UICONTROL CENTRAL]** 名權限。
+Central運算子必須屬於運 **[!UICONTROL Central management]** 算子群組或具有指 **[!UICONTROL CENTRAL]** 名權限。
 
 本機運算子必須屬 **[!UICONTROL Local management]** 於運算子群組或具有指 **[!UICONTROL LOCAL]** 名權限。 它們還必須與本地實體連結。
 
@@ -118,7 +118,7 @@ Central運算子必須屬於運算 **[!UICONTROL Central management]** 子群組
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-每個組織實體都包含識別資訊（標籤、內部名稱、聯絡資訊等）和訂單核准程式中的群組。 這些定義在頁籤 **[!UICONTROL Notifications and approvals]** 中找到的部分 **[!UICONTROL General]** 中。
+每個組織實體都包含識別資訊（標籤、內部名稱、聯絡資訊等） 和訂單核准程式中的群組。 這些定義在頁籤 **[!UICONTROL Notifications and approvals]** 中找到的部分 **[!UICONTROL General]** 中。
 
 * 定義包通知組：此群組中的運算子會在每次新增新套件至促銷活動套件清單時，以及每次促銷活動可用時收到通知。
 * 選取負責核准訂單的審核者群組，即負責核准由當地實體所訂購之促銷活動的審核者。
