@@ -1,7 +1,7 @@
 ---
-title: 在Windows中移轉Adobe Campaign 7
-seo-title: 在Windows中移轉Adobe Campaign 7
-description: 在Windows中移轉Adobe Campaign 7
+title: 在 Windows 中移轉 Adobe Campaign 7
+seo-title: 在 Windows 中移轉 Adobe Campaign 7
+description: 在 Windows 中移轉 Adobe Campaign 7
 seo-description: null
 page-status-flag: never-activated
 uuid: 74464400-bdd4-42f8-bcbe-ace7095ae4e4
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: f459dc07-b7db-4526-b428-852b51c9c00e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1541'
+ht-degree: 1%
 
 ---
 
 
-# 在Windows中移轉Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
+# 在 Windows 中移轉 Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
 
 ## 一般程式 {#general-procedure}
 
@@ -183,7 +183,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
    >[!IMPORTANT]
    >
-   >為防患於未然，我們建議您壓縮 **Adobe Campaign v6.back** ，並將它儲存在伺服器以外的安全位置。
+   >為避免疑義，我們建議您壓縮 **Adobe Campaign v6.back** ，並將它儲存在伺服器以外的安全位置。
 
 1. 在Windows服務管理控制台中，禁用6.11應用程式伺服器服務的自動啟動。 您也可以使用下列命令：
 
@@ -208,7 +208,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
    >
    >Adobe Campaign v7預設會安裝在C:\Program Files\Adobe\Adobe Campaign v7目 **錄** 。
 
-1. 若要讓用戶端主控台安裝程式可用，請將 **setup-client-7.0.XXXX.exe** 檔案複製至Adobe Campaign安裝目錄： **C:\Program Files\Adobe\Adobe Campaign v7\datakit\nl\eng\jsp**。
+1. 若要讓用戶端主控台安裝程式可用，請將 **setup-client-7.0.XXXX.exe** 檔案複製至Adobe Campaign安裝目錄： **C:\Program Files\Adobe\Adobe Campaign v7\datakit\nl\eng\jsp**.
 
    >[!NOTE]
    >
@@ -223,7 +223,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
    >[!NOTE]
    >
-   >這些命令可讓您建立Adobe Campaign v7內部檔案系統： **conf** 目錄(使用 **config-default.xml** 和 **serverConf.xml檔案、****** var目錄等)。
+   >這些命令可讓您建立Adobe Campaign v7內部檔案系統： **conf** 目錄(含 **config-default.xml和** serverConf.xml檔案)、 **var****** 目錄等。
 
 1. 通過 **Neolane v5.back****Neolane v5.back** 或 **Adobe Campaign v6.back備份檔案複製和貼上（覆寫）每個實例的配置檔案和子資料夾(具體取決於您要從中遷移的版本——請參閱**[](#back-up-the-database-and-the-current-installation)本節。
 1. 根據要遷移的版本，執行以下命令：
@@ -296,7 +296,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
       ![](assets/_migration_iis_4.png)
 
    * 輸入網站的名稱，例如 **Adobe Campaign v7** 。
-   * 不會使用網站基本目錄的存取路徑，但必須 **[!UICONTROL Physical access path]** 輸入欄位。 輸入預設的IIS訪問路徑： **C:\inetpub\wwwroot**。
+   * 不會使用網站基本目錄的存取路徑，但必須 **[!UICONTROL Physical access path]** 輸入欄位。 輸入預設的IIS訪問路徑： **C:\inetpub\wwwroot**.
    * 按一下 **[!UICONTROL Connect as...]** 「作為」按鈕，並確定選 **[!UICONTROL Application user]** 取了選項。
    * 您可以在和欄位中保留預 **[!UICONTROL IP address]** 設 **[!UICONTROL Port]** 值。 如果要使用其他值，請確定IP地址和／或埠可用。
    * 選中該 **[!UICONTROL Start Web site immediately]** 框。
@@ -305,7 +305,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 1. 執行 **iis_neolane_setup.vbs** 指令碼，以自動設定Adobe Campaign伺服器在先前建立之虛擬目錄上所使用的資源。
 
-   * 此檔案位於\tomcat-7\conf file目錄 **`[Adobe Campaign v7]`中&#x200B;**,**`[Adobe Campaign v7]`**其中是Adobe Campaign安裝目錄的存取路徑。 用於執行指令碼的命令如下（對於管理員）:
+   * 此檔案位於\tomcat-7\conf file目錄 **`[Adobe Campaign v7]`中**, **`[Adobe Campaign v7]`** 其中是Adobe Campaign安裝目錄的存取路徑。 用於執行指令碼的命令如下（對於管理員）:
 
       ```
       cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\tomcat-7\conf
@@ -343,7 +343,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 在下列每部伺服器上啟動IIS和Adobe Campaign服務：
 
 1. 追蹤和重新導向伺服器。
-1. 中部採購伺服器。
+1. 中間來源伺服器.
 1. 行銷伺服器。
 
 在執行下一步之前，請對新安裝執行完整測試，確保沒有回歸，而且所有功能都能依照「一般設定」區段中的所有建議 [運作](../../migration/using/general-configurations.md) 。
@@ -365,7 +365,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
    ![](assets/migration_wizard_2.png)
 
-1. 使用下 **列命令刪除nlserver** 5 windows服務：
+1. 使用下 **列命令刪除nlserver** 5 Windows服務：
 
    ```
    sc delete nlserver5
@@ -373,12 +373,12 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 1. 重新啟動伺服器。
 
-### Adobe Campaign 6.02版 {#adobe-campaign-v6-02}
+### Adobe Campaign v6.02 {#adobe-campaign-v6-02}
 
 在刪除並清除Adobe Campaign 6.02版安裝之前，您必須套用下列建議：
 
 * 讓功能團隊對新安裝進行完整檢查。
-* 只有在您確定不需要回滾時，才解除安裝Adobe Campaign 6.02版。
+* 只有在您確定不需要回溯時，才能解除安裝Adobe Campaign 6.02版。
 
 1. 在IIS中，刪除 **Neolane v6網站** ，然後刪除 **Neolane v6應用程式池** 。
 1. 將 **Neolane v6.back** (Neolane v6)檔案 **夾更名為Neolane v6**。
@@ -388,7 +388,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 1. 重新啟動伺服器。
 
-### Adobe Campaign 6.1版 {#adobe-campaign-v6-1}
+### Adobe Campaign v6.1 {#adobe-campaign-v6-1}
 
 在刪除並清除Adobe Campaign v6安裝之前，您必須套用下列建議：
 
