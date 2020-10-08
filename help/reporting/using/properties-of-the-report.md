@@ -1,7 +1,7 @@
 ---
-title: 報表的屬性
-seo-title: 報表的屬性
-description: 報表的屬性
+title: 報表屬性
+seo-title: 報表屬性
+description: 報表屬性
 seo-description: null
 page-status-flag: never-activated
 uuid: 56163f53-d115-45b8-94a5-c173ac4c6533
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 3%
 
 ---
 
 
-# 報表的屬性{#properties-of-the-report}
+# 報表屬性{#properties-of-the-report}
 
 ## 概觀 {#overview}
 
@@ -69,7 +69,7 @@ source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 >[!NOTE]
 >
->有關此內容的詳細資訊，請參閱本節的相 [應章節](../../web/using/translating-a-web-form.md)。
+>如需詳細資訊，請參閱本節的適 [當章節](../../web/using/translating-a-web-form.md)。
 
 ## 個人化HTML演算 {#personalizing-html-rendering}
 
@@ -101,7 +101,7 @@ source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
 1. 如有必要，請指定是否必須設定。
-1. 選擇要建立的設定類型：或 **[!UICONTROL Filter]** 者 **[!UICONTROL Variable]**。
+1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
 
    選 **[!UICONTROL Filter entities]** 項可讓您使用資料庫的欄位做為參數。
 
@@ -133,7 +133,7 @@ source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 此標 **[!UICONTROL Scripts]** 簽可讓您參考在呼叫報表頁面時，將在用戶端和／或伺服器端執行的JavaScript代碼。
 
-為了在用戶端上正常執行，參考的指令碼必須以JavaScript編寫，而且必須與大部分的瀏覽器相容。 如需詳細資訊，請參閱[本小節](../../web/using/web-forms-answers.md)。
+為了在用戶端上正常執行，參考的指令碼必須以JavaScript編寫，而且必須與大部分的瀏覽器相容。 如需詳細資訊，請參閱[本章節](../../web/using/web-forms-answers.md)。
 
 ## 個人化錯誤頁面 {#personalizing-the-error-page}
 
