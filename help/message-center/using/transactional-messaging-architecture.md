@@ -9,19 +9,16 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 事務性消息傳遞體系結構{#transactional-messaging-architecture}
+# 交易式傳訊架構{#transactional-messaging-architecture}
 
 ## 關於執行和控制實例 {#about-execution-and-control-instances}
 
@@ -130,7 +127,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 行動裝置ID(Android **的registrationId** ,iOS的 **deviceToken** )。 此ID代表通知要傳送至的「位址」。
 * 行動應用程式的連結或整合金鑰(**uuid**)，可讓您復原應用程式的特定連線資訊。
-* 將傳送通知的渠道(**whishedChannel**): iOS為41,Android為42
+* 將傳送通知的渠道(**whishedChannel**):iOS為41,Android為42
 * 所有對個人化有用的資料
 
 以下是包含此資訊之事件的範例：
@@ -176,21 +173,22 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
    ![](assets/line_config_mc.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
+   * **[!UICONTROL Type]** :選擇 **[!UICONTROL External database]** 。
    * **[!UICONTROL Enabled]** 框。
+
    從類 **[!UICONTROL Connection]** 別：
 
-   * **[!UICONTROL Type]** : 選擇資料庫伺服器，例如PostgresSQL。
-   * **[!UICONTROL Server]** : 輸入資料庫伺服器URL。
-   * **[!UICONTROL Account]** : 輸入您的資料庫帳戶。
+   * **[!UICONTROL Type]** :選擇資料庫伺服器，例如PostgresSQL。
+   * **[!UICONTROL Server]** :輸入資料庫伺服器URL。
+   * **[!UICONTROL Account]** :輸入您的資料庫帳戶。
 
       >[!NOTE]
       >
-      >資料庫用戶需要對下清單具有讀取權限，以便FDA連接： XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBatchEvent、NmsBroadLogMsg、NmsTrackingUrl、NmsDelivery、NmsWebTrackingLogXtkFolder。
+      >資料庫用戶需要對下清單具有讀取權限，以便FDA連接：XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBatchEvent、NmsBroadLogMsg、NmsTrackingUrl、NmsDelivery、NmsWebTrackingLogXtkFolder。
 
-   * **[!UICONTROL Password]** : 輸入資料庫帳戶的密碼。
-   * **[!UICONTROL Database]** : 輸入執行實例的資料庫名。
+   * **[!UICONTROL Password]** :輸入資料庫帳戶的密碼。
+   * **[!UICONTROL Database]** :輸入執行實例的資料庫名。
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** 框。
 
 
@@ -198,37 +196,40 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
    ![](assets/line_config_mc_1.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
+   * **[!UICONTROL Type]** :選擇 **[!UICONTROL External database]** 。
    * 必須勾選「啟用」方塊。
+
    從類 **[!UICONTROL Connection]** 別：
 
-   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL HTTP relay to remote Database]** 。
-   * **[!UICONTROL Server]** : 輸入您促銷活動的執行例項伺服器URL。
-   * **[!UICONTROL Account]** : 輸入用於訪問執行實例的帳戶。
-   * **[!UICONTROL Password]** : 輸入用於訪問執行實例的帳戶的密碼。
-   * **[!UICONTROL Data Source]** : 輸入下列語法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
+   * **[!UICONTROL Type]** :選擇 **[!UICONTROL HTTP relay to remote Database]** 。
+   * **[!UICONTROL Server]** :輸入您促銷活動的執行例項伺服器URL。
+   * **[!UICONTROL Account]** :輸入用於訪問執行實例的帳戶。
+   * **[!UICONTROL Password]** :輸入用於訪問執行實例的帳戶的密碼。
+   * **[!UICONTROL Data Source]** :輸入下列語法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
 
 
 1. 使用下 **[!UICONTROL Execution instance]** 列設定在您的行銷 **例項中建立外部帳戶** ，以建立資料同步工作流程：
 
    ![](assets/line_config_mc_2.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** : 選擇 **[!UICONTROL Execution instance]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
+   * **[!UICONTROL Type]** :選擇 **[!UICONTROL Execution instance]** 。
    * 必須勾選「啟用」方塊。
+
    從類 **[!UICONTROL Connection]** 別：
 
-   * **[!UICONTROL URL]** : 輸入執行例項的URL。
-   * **[!UICONTROL Account]** : 輸入用於訪問執行實例的帳戶。
-   * **[!UICONTROL Password]** : 輸入用於訪問執行實例的帳戶的密碼。
+   * **[!UICONTROL URL]** :輸入執行例項的URL。
+   * **[!UICONTROL Account]** :輸入用於訪問執行實例的帳戶。
+   * **[!UICONTROL Password]** :輸入用於訪問執行實例的帳戶的密碼。
+
    從類 **[!UICONTROL Account connection method]** 別：
 
-   * **[!UICONTROL Method]** : 選擇 **[!UICONTROL Federated Data Access (FDA)]** 。
-   * **[!UICONTROL FDA account]** : 從下拉式清單中選擇您的FDA帳戶。
-   * 按一下&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按鈕。
+   * **[!UICONTROL Method]** :選擇 **[!UICONTROL Federated Data Access (FDA)]** 。
+   * **[!UICONTROL FDA account]** :從下拉式清單中選擇您的FDA帳戶。
+   * 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕。
    * 按一下該 **[!UICONTROL Create data synchronization workflow]** 按鈕可建立LINE資料同步工作流。
 
 
 
-1. 您現在可以開始建立事務性消息。 For more on this, refer to this [page](../../message-center/using/introduction.md).
+1. 您現在可以開始建立事務性消息。 如需關於此項目的詳細資訊，請參閱此[頁面](../../message-center/using/introduction.md)。
