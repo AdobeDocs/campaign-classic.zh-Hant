@@ -11,18 +11,18 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 6850851d-1dbe-44f0-bbff-18dbac2cad9a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 2%
 
 ---
 
 
 # 建立調查{#building-a-survey}
 
-## 建立新調查 {#creating-a-new-survey}
+## Creating a new survey {#creating-a-new-survey}
 
 本章詳細說明如何使用Adobe Campaign **設計** 「調查」類型表單，以及可用的選項和設定。 Adobe Campaign可讓您將此調查提供給使用者，並在資料庫中收集和封存答案。
 
@@ -32,7 +32,7 @@ Web表單可通過樹 **[!UICONTROL Resources > Online > Web applications]** 的
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-表單的頁面是使用特殊編輯器建立的，可讓您定義和設定（文字）輸入欄位、選擇欄位（清單、核取方塊等）和靜態元素（影像、HTML內容等）。 您可以在「容器」中收集這些字元，並依需求進行排版(請參閱 [新增問題](#adding-questions))。
+表單的頁面是使用特殊編輯器建立的，可讓您定義和設定（文字）輸入欄位、選擇欄位（清單、核取方塊等） 和靜態元素（影像、HTML內容等）。 您可以在「容器」中收集這些字元，並依需求進行排版(請參閱 [新增問題](#adding-questions))。
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Web表單可通過樹 **[!UICONTROL Resources > Online > Web applications]** 的
    >
    >儲存模式和欄位匯入在儲存收集的答 [案中有詳細說明](../../web/using/managing-answers.md#storing-collected-answers)。
 
-要添加的欄位的性質（下拉清單、文本欄位、複選框等）適應選定的儲存模式。 您可以使用標籤的欄 **[!UICONTROL Type]** 位來變更它， **[!UICONTROL General]** 但請務必與資料類型保持一致。
+要添加的欄位的性質（下拉清單、文本欄位、複選框等） 適應選定的儲存模式。 您可以使用標籤的欄 **[!UICONTROL Type]** 位來變更它， **[!UICONTROL General]** 但請務必與資料類型保持一致。
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
