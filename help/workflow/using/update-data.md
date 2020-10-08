@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,11 +28,11 @@ ht-degree: 0%
 
 該 **[!UICONTROL Operation type]** 欄位允許您選擇要對資料庫中的資料執行的進程：
 
-* **[!UICONTROL Insert or update]**: 新增資料或更新資料（如果已新增）。
-* **[!UICONTROL Insert]**: 只新增資料。
-* **[!UICONTROL Update]**: 僅更新資料。
-* **[!UICONTROL Update and merge collections]**: 更新資料並選擇主要記錄，然後連結連結至此主要記錄中之重複項目的元素。 然後可刪除重複項，而不需建立孤立附加的元素。
-* **[!UICONTROL Delete]**: 刪除資料。
+* **[!UICONTROL Insert or update]**:新增資料或更新資料（如果已新增）。
+* **[!UICONTROL Insert]**:只新增資料。
+* **[!UICONTROL Update]**:僅更新資料。
+* **[!UICONTROL Update and merge collections]**:更新資料並選擇主要記錄，然後連結連結至此主要記錄中之重複項目的元素。 然後可刪除重複項，而不需建立孤立附加的元素。
+* **[!UICONTROL Delete]**：刪除資料。
 
 ![](assets/s_advuser_update_data_1.png)
 
@@ -63,7 +60,7 @@ ht-degree: 0%
 
 ![](assets/s_advuser_update_data_3.png)
 
-選擇要更新的所有欄位，並根據需要添加條件，具體取決於要執行的更新。 若要這麼做，請使用 **[!UICONTROL Taken into account if]** 欄。 條件會逐一套用，並符合清單中的順序。 使用右邊的箭頭來變更更新順序。
+選擇要更新的所有欄位，並根據需要添加條件，具體取決於要執行的更新。 要執行此操作，請使用 **[!UICONTROL Taken into account if]** 欄。條件會逐一套用，並符合清單中的順序。 使用右邊的箭頭來變更更新順序。
 
 您可以多次使用相同的目標欄位。
 
@@ -110,7 +107,7 @@ ht-degree: 0%
 
 1. 選擇要移動至主要記錄的系列和要更新的欄位。
 
-   輸入規則，該規則適用於這些記錄一次或多個輔助記錄。 若要這麼做，您可以使用運算式產生器。 For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). 例如，指定它是所有必須保存的不同記錄中最近更新的值。
+   輸入規則，這些規則應用於這些記錄一次或多個輔助記錄。 若要這麼做，您可以使用運算式產生器。 如需詳細資訊，請參閱本[區段](../../platform/using/defining-filter-conditions.md#building-expressions)。例如，指定它是所有必須保存的不同記錄中最近更新的值。
 
    然後輸入要考慮規則的條件。
 
@@ -124,9 +121,9 @@ ht-degree: 0%
 
 如果定義的規則適用，輔助記錄的資料將與主記錄關聯。 根據選擇的更新類型，可以刪除次記錄。
 
-## 範例： 擴充後更新資料 {#example--update-data-following-an-enrichment}
+## 範例：擴充後更新資料 {#example--update-data-following-an-enrichment}
 
-步 [驟2: 將豐富資料寫入使用案例的「購買」表格區段](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) ，以詳細資訊建立重新應用程式清單，提供擴充活動後資料更新的範例。
+步 [驟2:將豐富資料寫入使用案例的「購買」表格區段](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) ，以詳細資訊建立重新應用程式清單，提供擴充活動後資料更新的範例。
 
 ## 輸入參數 {#input-parameters}
 
