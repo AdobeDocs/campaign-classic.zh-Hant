@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 6dad2c67-0ca7-4a0f-9422-27b4937d806d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '63'
+ht-degree: 31%
 
 ---
 
 
 # 資料緩衝區{#data-buffer-zone}
 
-您可以設定資料緩衝區，以取消同步化選件提案計算，以提高傳入的互動效能。 此配置將在實例自己的配置檔案(config-Instance.xml)中執行。 如需詳細資訊，請參閱[本小節](../../installation/using/interaction---data-buffer.md)。
+您可以設定資料緩衝區，以取消同步化選件提案計算，以提高傳入的互動效能。 此配置將在實例自己的配置檔案(config-Instance.xml)中執行。 如需詳細資訊，請參閱[本章節](../../installation/using/interaction---data-buffer.md)。
 
 >[!NOTE]
 >
