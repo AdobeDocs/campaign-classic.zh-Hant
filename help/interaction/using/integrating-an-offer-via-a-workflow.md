@@ -1,7 +1,7 @@
 ---
-title: 透過工作流程整合選件
-seo-title: 透過工作流程整合選件
-description: 透過工作流程整合選件
+title: 透過工作流程整合優惠方案
+seo-title: 透過工作流程整合優惠方案
+description: 透過工作流程整合優惠方案
 seo-description: null
 page-status-flag: never-activated
 uuid: 57c4d4e0-6594-46f0-b9ce-2c689fb2eaa2
@@ -11,25 +11,25 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 6e27caea-1f1a-457d-bdec-1f93a12b01cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 4%
 
 ---
 
 
-# 透過工作流程整合選件{#integrating-an-offer-via-a-workflow}
+# 透過工作流程整合優惠方案{#integrating-an-offer-via-a-workflow}
 
 在傳送活動本身之外，數個工作流程活動可讓您定義選件的呈現方式：
 
-* 傳送大綱
+* 傳遞大綱
 * 擴充
-* 選件引擎
-* 依儲存格列出的選件
+* 優惠方案引擎
+* 依儲存格列出的優惠方案
 
-## 傳送大綱 {#delivery-outline}
+## 傳遞大綱 {#delivery-outline}
 
 促銷活動工作流程中提供的傳送大綱活動，可讓您顯示目前促銷活動中傳送大綱中參考的選件。
 
@@ -74,7 +74,7 @@ source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 設定查詢後(請參閱「工作 [流程指南](../../workflow/using/query.md)」):
 
 1. 新增並開啟擴充活動。
-1. 在頁籤 **[!UICONTROL Enrichment]** 中，選擇 **[!UICONTROL Add data]**。
+1. 在 **[!UICONTROL Enrichment]** 索引標籤中，選取 **[!UICONTROL Add data]**。
 1. 在要 **[!UICONTROL An offer proposition]** 添加的資料類型中選擇。
 
    ![](assets/int_enrichment_offer2.png)
@@ -141,7 +141,7 @@ source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 
 傳送會自動儲存選件的排名和權重。 此資訊會顯示在傳送的標籤 **[!UICONTROL Offers]** 中。
 
-## 選件引擎 {#offer-engine}
+## 優惠方案引擎 {#offer-engine}
 
 此活 **[!UICONTROL Offer engine]** 動也可讓您在傳送前指定對選件引擎的呼叫。
 
@@ -162,7 +162,7 @@ source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 
 1. 然後設定與您所選渠道對應的傳送活動。 如需詳細資訊，請參閱將選 [件提案插入傳送區段](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) 。
 
-## 依儲存格列出的選件 {#offers-by-cell}
+## 依儲存格列出的優惠方案 {#offers-by-cell}
 
 此活 **[!UICONTROL Offers by cell]** 動可讓您將傳入人口（例如從查詢）分發到數個區段，並指定要針對每個區段顯示的選件。
 
