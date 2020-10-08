@@ -1,7 +1,7 @@
 ---
-title: 連接閾值
-seo-title: 連接閾值
-description: 連接閾值
+title: 連線閾值
+seo-title: 連線閾值
+description: 連線閾值
 seo-description: null
 page-status-flag: never-activated
 uuid: a4b6959a-0f5b-41a2-b4c3-d7d6613d1a18
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
 
-# 連接閾值{#connection-thresholds}
+# 連線閾值{#connection-thresholds}
 
 對於負載較重的伺服器，可能會超出連接閾值。 無論如何，找出原因都很有用。
 
