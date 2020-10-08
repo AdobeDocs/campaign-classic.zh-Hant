@@ -1,6 +1,6 @@
 ---
-title: 酉相互作用
-seo-title: 酉相互作用
+title: 單一互動
+seo-title: 單一互動
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: 13150b74-b03d-4d7a-9582-f6fa1155f4ff
 contentOwner: sauviat
 discoiquuid: 0a3b087d-932e-42b2-bf7f-38b8d4f81115
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '8'
+ht-degree: 100%
 
 ---
 
 
-# 酉相互作用{#unitary-interactions}
+# 單一互動{#unitary-interactions}
 
