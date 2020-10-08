@@ -1,7 +1,7 @@
 ---
-title: 資料導向API
-seo-title: 資料導向API
-description: 資料導向API
+title: 資料導向 API
+seo-title: 資料導向 API
+description: 資料導向 API
 seo-description: null
 page-status-flag: never-activated
 uuid: f81356b3-8eef-4b65-9510-47c9d4b4e871
@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 資料導向API{#data-oriented-apis}
+# 資料導向 API{#data-oriented-apis}
 
 資料導向API可讓您處理整個資料模型。
 
@@ -150,7 +147,7 @@ Write方法顯示在 [Write / WriteCollection(xtk:session)中](#write---writecol
 * **選擇**:建立游標以返回多個記錄，如果沒有資料，則返回空文檔，
 * **計數**:傳回資料計數。
 
-使 **用XPath語法** ，根據輸入模式定位資料。 有關XPaths的詳細資訊，請參閱 [資料結構](../../configuration/using/data-schemas.md)。
+使 **用XPath語法** ，根據輸入模式來定位資料。 有關XPaths的詳細資訊，請參閱 [資料結構](../../configuration/using/data-schemas.md)。
 
 #### 使用&#39;get&#39;操作的示例 {#example-with-the--get--operation}
 
