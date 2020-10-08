@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -54,7 +51,7 @@ ht-degree: 0%
 
    操作步驟：
 
-   * 選取運算式的第一個元素 **`<field>`**,(依預設，在插入 **if** expression時，會反白顯示此元素)，然後按一下個人化圖示，以測試欄位取代它。
+   * 選取運算式的第一個元素 **`<field>`**(依預設，在插入 **if** expression時會反白顯示此元素)，然後按一下個人化圖示，以測試欄位取代它。
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
