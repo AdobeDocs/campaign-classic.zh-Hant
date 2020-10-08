@@ -11,11 +11,8 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: edb8f495fff90f51ae00006453b6ec09d84a8f55
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2639'
 ht-degree: 6%
@@ -114,7 +111,7 @@ _2019年6月21日_
 
 _2019年5月30日_
 
-**新增了哪些功能？**
+**新增功能？**
 
 <table> 
  <thead> 
