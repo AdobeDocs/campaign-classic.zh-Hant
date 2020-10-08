@@ -1,7 +1,7 @@
 ---
-title: 匯入和匯出觀眾
-seo-title: 匯入和匯出觀眾
-description: 匯入和匯出觀眾
+title: 匯入和匯出受眾
+seo-title: 匯入和匯出受眾
+description: 匯入和匯出受眾
 seo-description: null
 page-status-flag: never-activated
 uuid: af03ce68-8a58-4909-83e9-23c385820284
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f26cc65a-76be-4b7a-bde3-d0cbe3eedaaf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Importing and exporting audiences{#importing-and-exporting-audiences}
+# 匯入和匯出受眾{#importing-and-exporting-audiences}
 
 ## 匯入對象 {#importing-an-audience}
 
@@ -37,7 +34,7 @@ ht-degree: 0%
 1. 在開啟的視窗中，按一 **[!UICONTROL Select a shared audience]** 下以前往其他Adobe Experience Cloud解決方案中可用的共用觀眾／區段清單。
 1. 選取對象並確認。 觀眾的資訊會自動完成。
 
-   請注意，若要匯入共用的觀眾，您應在管理控制台中指派 **[!UICONTROL Audience library]** 產品，並成為Audience Manager的管理員。 如需詳細資訊，請參閱「管理控制台」 [檔案](https://helpx.adobe.com/enterprise/managing/user-guide.html)。
+   請注意，若要匯入共用的觀眾，您應在管理控制台中指派 **[!UICONTROL Audience library]** 產品，並成為Audience Manager的管理員。 For more on this, refer to the [Admin console documentation](https://helpx.adobe.com/tw/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
