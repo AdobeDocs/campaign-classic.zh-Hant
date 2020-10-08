@@ -1,7 +1,7 @@
 ---
-title: 設定整合
-seo-title: 設定整合
-description: 設定整合
+title: 設定 整合
+seo-title: 設定 整合
+description: 設定 整合
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -62,7 +59,7 @@ function processPipelineMessage(xmlTrigger) {}
 * **[!UICONTROL @offset]** 是訊息的「指針」。 它指示隊列中消息的順序。
 * **[!UICONTROL @partitio]*n是佇列中訊息的容器。 偏移相對於分區。 <br>隊列中大約有15個分區。
 
-例如：
+範例:
 
 ```
 <trigger offset="1500435" partition="4" triggerId="LogoUpload_1_Visits_from_specific_Channel_or_ppp">
@@ -80,11 +77,11 @@ function processPipelineMessage(xmlTrigger) {}
 內容是在Analytics中針對每個觸發器定義的。 它是JSON格式。
 例如，在觸發器中，LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** 可包含用於與促銷活動收件者協調的購物者ID。 它是字串格式。 <br>必須協調以尋找主要金鑰的購物者ID。
+* **[!UICONTROL eVar01]** 可以包含用於與促銷活動收件者協調的購物者ID。 它是字串格式。 <br>必須協調以尋找主要金鑰的購物者ID。
 
 * **[!UICONTROL timeGMT]** 可包含Analytics端觸發器的時間。 其格式為UTC Epoc（自1970年1月1日起的秒數）。
 
-例如：
+範例:
 
 ```
 {
@@ -183,7 +180,7 @@ function processPipelineMessage(xmlTrigger)
 
 此程式碼的效能必須最佳化，因為它會以高頻率執行。 其他行銷活動可能會有負面影響。 尤其是當在Marketing伺服器上每小時處理超過100萬個觸發事件時。 或者，如果調諧不當。
 
-此Javascript的內容有限。 API的所有功能並非都可用。 例如，getOption()或getCurrentdate()無法運作。
+此Javascript的內容有限。 並非API的所有函式都可用。 例如，getOption()或getCurrentdate()無法運作。
 
 為了加快處理速度，將同時執行此指令碼的多個線程。 代碼必須是線程安全的。
 
@@ -197,7 +194,7 @@ function processPipelineMessage(xmlTrigger)
 
 事件儲存在資料庫表中。 行銷活動使用它來鎖定客戶，並使用觸發器讓電子郵件更豐富。
 雖然每個觸發器可以有不同的資料結構，但所有觸發器都可以放在單一表格中。
-triggerType欄位可識別觸發資料的來源。
+triggerType欄位可識別資料觸發的來源。
 
 下面是此表的示例方案代碼：
 
