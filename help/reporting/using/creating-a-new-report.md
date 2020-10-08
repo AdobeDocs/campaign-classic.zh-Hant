@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 1. 開啟「Adobe Campaign Explorer」並從節點中 **[!UICONTROL Administration > Configuration]** ，然後選取資料 **[!UICONTROL Reports]** 夾。
 1. 按一下 **[!UICONTROL New]** 報表清單上方的按鈕。
-1. 選擇 **[!UICONTROL Create a new report from a template]** 並按一下 **[!UICONTROL Next]**。
+1. 選取 **[!UICONTROL Create a new report from a template]** 並按一下 **[!UICONTROL Next]**。
 
    ![](assets/s_ncs_advuser_report_wizard_new_01.png)
 
@@ -35,6 +35,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
    * 可 **[!UICONTROL Extended report]** 讓您建立使用圖表設定的報表。
    * 報 **[!UICONTROL Qualitative distribution]** 表可讓您根據所有資料類型（公司名稱、電子郵件網域等）建立統計資料。
    * 報 **[!UICONTROL Quantitative distribution]** 表可讓您建立可測量或計算的資料統計資料（發票金額、收件者年齡等）。
+
    如需這些報表範本的詳細資訊，請參閱 [本節](../../reporting/using/about-descriptive-analysis.md)。
 
 1. 在對應欄位中輸入報表名稱及其說明。 指定 **[!UICONTROL schema]** 要套用報表的位置。
@@ -122,7 +123,7 @@ A **[!UICONTROL Page]** 可包含下列元素：
 * 文字或數字類型 **[!UICONTROL Input controls]**。
 * 下拉式清單、核取方塊、選項按鈕、多選項、日期或矩陣類型 **[!UICONTROL Selection controls]**。
 * 連結編輯器、常數、資料夾選擇類 **[!UICONTROL Advanced controls]**&#x200B;型。
-* 值、連結、HTML、影像等 **[!UICONTROL Static elements]**。
+* 值、連結、HTML、影像等 **[!UICONTROL Static elements]**.
 * **[!UICONTROL Containers]** 可讓您控制元件配置。
 
 本節將詳細介紹頁面及其元件的配 [置模式](../../web/using/about-web-forms.md)。
