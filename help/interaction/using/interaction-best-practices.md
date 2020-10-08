@@ -9,11 +9,11 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 85e8348f-d240-4a36-b7bd-645807dbc227
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 91f80adf0b84d45a71e07079d4e72fd7628b41c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,7 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 
 ### 在電子郵件傳送中使用多個選件空間 {#multiple-offer-spaces}
 
-在傳送中納入選件時，選件通常會在促銷活動工作流程中透過「擴充」活動（或其他類似活動）的上游選取。
+在傳送中納入選件時，選件通常會在促銷活動工作流程中透過擴充活動（或其他類似活動）的上游選取。
 
 在「擴充」活動中選取選件時，您可以選擇要使用的選件空間。 不過，無論選取的選件空間為何，傳送自訂功能表會視傳送中設定的選件空間而定。
 
@@ -79,7 +79,7 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-此函式插入代碼，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
+此函式插入代碼，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
 當您選擇提案時，屬性的 **[!UICONTROL view]** 值如下：
 * &quot;rendering/html&quot;:html轉換。 它使用HTML轉換功能。
