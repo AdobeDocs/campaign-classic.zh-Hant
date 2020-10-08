@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1526'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 >[!NOTE]
 >
->只有傳送擁有者才能開始傳送。 為了讓其他運算元（或運算元群組）能夠開始傳送，您必須在欄位中新增為審核 **[!UICONTROL Delivery start:]** 者。
+>只有傳送擁有者才能開始傳送。 為了讓其他運算元（或運算元群組）能夠開始傳送，您必須在欄位中新增為審閱 **[!UICONTROL Delivery start:]** 者。
 >
 >請參閱 [本節](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers) ，以取得詳細資訊。
 
@@ -60,7 +60,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 然後，您可以關閉傳送精靈，並從標籤追蹤傳送的執行，您可透過此傳送的詳細資 **[!UICONTROL Delivery]** 料或傳送清單存取。
 
-傳送訊息後，您可以監控及追蹤傳送內容。 如需更多相關資訊，請參閱以下章節：
+傳送訊息後，您可以監控及追蹤傳送內容。 如需詳細資訊，請參閱下列區段。
 
 * [監控傳送](../../delivery/using/monitoring-a-delivery.md)
 * [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
@@ -142,9 +142,9 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
    >
    >請確定最後一波不會超過標籤中定義的交貨期 **[!UICONTROL Validity]** 限。 否則，可能無法發送某些消息。
    >
-   >配置最後一個波時，還必須允許足夠的時間進行重試。 請參 [閱本節](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)。
+   >配置最後一個波時，還必須允許足夠的時間進行重試。 請參閱[本區段](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)。
 
-1. 若要監控您的傳送，請前往傳送記錄檔。 請參 [閱本頁](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)。
+1. 若要監控您的傳送，請前往傳送記錄檔。 請參閱[本頁](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)。
 
    您可以看到已在處理波中發送的交貨(**[!UICONTROL Sent]** 狀態)，以及將在剩餘波中發送的交貨(**[!UICONTROL Pending]** 狀態)。
 
@@ -166,7 +166,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
    使用電波，您可將訊息數量限制為每天20個訊息，即呼叫中心的日常處理能力。
 
-   若要這麼做，請選取 **[!UICONTROL Schedule multiple waves of the same size]** 選項。 在 **[!UICONTROL 20]** 欄位中輸入波 **[!UICONTROL 1d]** 的大 **[!UICONTROL Period]** 小。
+   To do this, select the **[!UICONTROL Schedule multiple waves of the same size]** option. 在 **[!UICONTROL 20]** 欄位中輸入波 **[!UICONTROL 1d]** 的大 **[!UICONTROL Period]** 小。
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
@@ -184,7 +184,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 >
 >對於代管或混合安裝，如果您已升級至「增強MTA」，則「促銷活動」不再使用傳送中的重試設定。 軟反彈重試次數及其間的時間長度，由增強的MTA根據訊息電子郵件網域傳回的反彈回應類型和嚴重性來決定。
 >
->所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) 。
+>所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html) 。
 
 
 ## 定義有效期 {#defining-validity-period}
@@ -203,6 +203,6 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 >[!NOTE]
 >
->若是代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Delivery duration]** 則只有在設為 **3.5** 天或更短時，才會使用促銷活動傳送中的設定。 如果您定義的值高於3.5天，則不會考慮該值。
+>若是代管或混合安裝，如果您已升級至「增強MTA」, **[!UICONTROL Delivery duration]** 則只有在設為 **3.5** 天或更短時，才會使用促銷活動傳送中的設定。  如果您定義的值超過　3.5　天，則不會考慮該值。
 >
->所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) 。
+>所有影響在 [Adobe Campaign Enhanced MTA檔案中詳述](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html) 。
