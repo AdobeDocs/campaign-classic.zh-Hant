@@ -1,7 +1,7 @@
 ---
-title: 消息中心（控制項）
-seo-title: 消息中心（控制項）
-description: 消息中心（控制項）
+title: 訊息中心 (控制項)
+seo-title: 訊息中心 (控制項)
+description: 訊息中心 (控制項)
 seo-description: null
 page-status-flag: never-activated
 uuid: bdb3610b-a893-4e60-a9f7-f21d90b66919
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 69e3e99f-d392-4316-926c-3c3c675415ad
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 8%
 
 ---
 
 
-# 消息中心（控制項）{#message-center-control}
+# 訊息中心 (控制項){#message-center-control}
 
 以下詳細說明的工作流程排程為每小時執行一次。 預設情況下，它與 **消息中心——控制** 模組一起安裝。 For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
 
