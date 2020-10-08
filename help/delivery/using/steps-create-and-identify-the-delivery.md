@@ -1,7 +1,7 @@
 ---
-title: 建立和識別傳送
-seo-title: 建立和識別傳送
-description: 建立和識別傳送
+title: 建立和辨識傳遞
+seo-title: 建立和辨識傳遞
+description: 建立和辨識傳遞
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 13%
 
 ---
 
 
-# 建立和識別傳送 {#create-and-identify-the-delivery}
+# 建立和辨識傳遞 {#create-and-identify-the-delivery}
 
 ## 建立傳送 {#creating-the-delivery}
 
