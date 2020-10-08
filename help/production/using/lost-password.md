@@ -1,7 +1,7 @@
 ---
-title: 丟失密碼
-seo-title: 丟失密碼
-description: 丟失密碼
+title: 遺失密碼
+seo-title: 遺失密碼
+description: 遺失密碼
 seo-description: null
 page-status-flag: never-activated
 uuid: caac68bf-abdc-45da-9697-b689ebd37002
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: d52eeadc-19c6-4d48-995a-1c1f2ca3b5ec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 5%
 
 ---
 
 
-# 丟失密碼{#lost-password}
+# 遺失密碼{#lost-password}
 
 您可以更改或恢復丟失的密碼。
 
@@ -44,7 +44,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
        <xtk internalPassword="myPassword"/>
       ```
 
-   1. 刪除引號中的字串，在此例中：myPassword( **myPassword)**
+   1. 刪除引號中的字串，在此例中： **myPassword**
 
       因此，您可以獲得以下行：
 
