@@ -1,7 +1,7 @@
 ---
-title: v5.11中的特定組態
-seo-title: v5.11中的特定組態
-description: v5.11中的特定組態
+title: v5.11 中 的特定配置
+seo-title: v5.11 中 的特定配置
+description: v5.11 中 的特定配置
 seo-description: null
 page-status-flag: never-activated
 uuid: d6920beb-a766-4aec-8a8e-d32e47b545a4
@@ -11,20 +11,20 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: fc280640-528d-44de-87d8-52f443772abd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1045'
+ht-degree: 3%
 
 ---
 
 
-# v5.11中的特定組態{#specific-configurations-in-v5-11}
+# v5.11 中 的特定配置{#specific-configurations-in-v5-11}
 
 本節詳細說明從v5.11移轉時需要的其他設定。您還應配置「常規配置」部分中詳 [細的設定](../../migration/using/general-configurations.md) 。
 
-## 網頁應用程式 {#web-applications}
+## 網頁應用程式{#web-applications}
 
 在移轉期間會自動顯示下列警告：
 
@@ -141,7 +141,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 | xtkPlatformAdmin | 平台 | - |
 | nmsLocalOrgUnit | 組織單位 | - |
 | nmsMRM | MRM | 已安裝MRM |
-| nmsOperations | 促銷活動 | 已安裝促銷活動 |
+| nmsOperations | Campaign | 已安裝促銷活動 |
 
 **過時資料夾清單**:
 
@@ -160,8 +160,8 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 | ncmImage | 影像 | 已安裝Content Manager |
 | ncmJavascript | JavaScript程式碼 | 已安裝Content Manager |
 | ncmJst | JavaScript範本 | 已安裝Content Manager |
-| ncmParameters | 配置 | 已安裝Content Manager |
-| ncmSrcSchema | 資料結構 | 已安裝Content Manager |
+| ncmParameters | 設定 | 已安裝Content Manager |
+| ncmSrcSchema | 資料綱要 | 已安裝Content Manager |
 | ncmStylesheet | XSL樣式檔 | 已安裝Content Manager |
 | nmsAdminPlan | 管理 | 已安裝促銷活動 |
 | nmsResourcePlan | 資源 | 已安裝促銷活動 |
