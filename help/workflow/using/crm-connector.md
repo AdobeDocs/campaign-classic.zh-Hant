@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: af7c0d1d-10ac-427b-8d12-b97eb91b30a1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c01a16a19516da6598b2d32a9408460c48aabf7b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 0%
 
 ---
 
@@ -91,9 +91,9 @@ LASTIMPORT_<%=instance.internalName%>_<%=activityName%>
 
 依預設，會使用下列欄位（依指定順序）:
 
-* 針對Microsoft Dynamics:已 **修改**,
-* 對於Oracle On Demand:上次 **更新**、 **修改日期**、 **上次登入**、
-* 若是Salesforce.com:LastModifiedDate **、** SystemModstamp ****。
+* 針對Microsoft Dynamics: **已修改**,
+* 對於Oracle On Demand: **LastUpdated**、 **ModifiedDate**、 **LastLoggedIn**、
+* 若是Salesforce.com: **LastModifiedDate**、 **SystemModstamp**。
 
 啟用選 **[!UICONTROL Automatic index]** 項會產生三個變數，這些變數可透過類型活動用於同步 **[!UICONTROL JavaScript code]** 工作流程。 這些活動包括：
 
@@ -101,7 +101,7 @@ LASTIMPORT_<%=instance.internalName%>_<%=activityName%>
 * **vars.crmStartImport**:表示上次資料恢復的開始日期（包括）。
 * **vars.crmEndDate**:代表上次資料復原的結束日期（已排除）。
 
-   這些日期以下列格式顯示：yyyy/ **MM/dd hh:mm:ss**。
+   這些日期以下列格式顯示： **yyyy/MM/dd hh:mm:ss**。
 
 ## 篩選資料 {#filter-on-data}
 
@@ -204,8 +204,8 @@ LASTIMPORT_<%=instance.internalName%>_<%=activityName%>
 
 出站 **[!UICONTROL Reject]** 轉換允許您訪問輸出方案，該輸出方案包含與錯誤消息和代碼相關的特定列。 這些欄包括：
 
-* 對於Oracle On Demand: **errorLogFilename** （Oracle端的日誌檔案名）、 **errorCode** （錯誤代碼）、 **errorSymbol** （錯誤符號，與錯誤代碼不同）、 **** errorMessageDescription（錯誤上下文的說明）。
-* 若是Salesforce.com: **errorSymbol** (error symbol **，不同於錯誤代碼),** errorMessage（錯誤上下文的說明）。
+* 對於Oracle On Demand: **errorLogFilename** （Oracle端的日誌檔案名）、 **errorCode** （錯誤代碼）、 **errorSymbol** （錯誤符號，與錯誤代碼不同）、 **errorMessage** （錯誤上下文的說明）。
+* 若是Salesforce.com: **errorSymbol** (error symbol **, different of the error code),** errorMessage(description of the error context)。
 
 ## 導入在CRM中刪除的對象 {#importing-objects-deleted-in-the-crm}
 
@@ -229,7 +229,7 @@ LASTIMPORT_<%=instance.internalName%>_<%=activityName%>
 
 ![](assets/crm_delete_in_crm.png)
 
-此標 **[!UICONTROL Behavior]** 簽可讓您啟用拒絕的處理。 此選項會為活動產生第二個輸出轉 **[!UICONTROL CRM connector]** 換。 For more on this, refer to this [section](../../platform/using/crm-connectors.md#error-processing).
+此標 **[!UICONTROL Behavior]** 簽可讓您啟用拒絕的處理。 此選項會為活動產生第二個輸出轉 **[!UICONTROL CRM connector]** 換。 如需詳細資訊，請參閱本[區段](../../platform/using/crm-connectors.md#error-processing)。
 
 即使停用選 **[!UICONTROL Process rejects]** 項，也會針對每個拒絕的欄產生警告。
 
