@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 11%
@@ -197,7 +194,7 @@ Snowflake外 **** 部帳戶可讓您將Campaign例項連接至Snowflake外部資
 
 ### Teradata外部帳戶 {#teradata-external-account}
 
-Teradata外 **** 部帳戶可讓您將Campaign例項連線至Teradata外部資料庫。 如需如何使用Teradata設定Campaign Classic的詳細資訊，請參閱本 [頁](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) 或本 [節](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)。
+Teradata外 **** 部帳戶可讓您將Campaign例項連線至Teradata外部資料庫。 如需如何使用Teradata設定Campaign Classic的詳細資訊，請參閱本 [頁](https://helpx.adobe.com/tw/campaign/kb/campaign_fda_teradata.html) 或本 [節](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)。
 
 ![](assets/ext_account_19.png)
 
@@ -233,7 +230,7 @@ Teradata外 **** 部帳戶可讓您將Campaign例項連線至Teradata外部資�
 
 ![](assets/ext_account_20.png)
 
-當多個Adobe Campaign使用者連線至相同的FDA Teradata外部帳戶時，標籤可讓您在作業階段中設定查詢頻帶，即一組金鑰／值配對。 **[!UICONTROL Query banding]**
+當多個Adobe Campaign使用者連線至相同的FDA Teradata外部帳戶時，標籤可讓您在作業階段上設定查詢頻帶，即一組金鑰／值配對。 **[!UICONTROL Query banding]**
 
 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign都會傳送中繼資料，其中包含與此使用者相關的索引鍵清單。 然後Teradata管理員就可以將這些資料用於稽核或管理存取權限。
 
