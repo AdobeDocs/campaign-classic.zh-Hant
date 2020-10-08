@@ -1,7 +1,7 @@
 ---
-title: 依儲存格列出的選件
-seo-title: 依儲存格列出的選件
-description: 依儲存格列出的選件
+title: 依儲存格列出的優惠方案
+seo-title: 依儲存格列出的優惠方案
+description: 依儲存格列出的優惠方案
 seo-description: null
 page-status-flag: never-activated
 uuid: 731bfdde-abd2-400e-9e22-3dbaad37c5b9
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: d90594bb-e3ba-4fb1-9e11-83d519c1ca7d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 9%
 
 ---
 
 
-# 依儲存格列出的選件{#offers-by-cell}
+# 依儲存格列出的優惠方案{#offers-by-cell}
 
 此活 **[!UICONTROL Offers by cell]** 動可讓您將傳入人口（例如從查詢）分發到數個區段，並指定要針對每個區段顯示的選件。
 
