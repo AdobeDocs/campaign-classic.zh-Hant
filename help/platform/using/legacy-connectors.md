@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -138,8 +135,8 @@ Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更�
 
 1. 根據您使用的作業系統，安裝Netezza的ODBC驅動程式：
 
-   * **nz-linuxclient-v7.2.0.0.tar.gz** for Linux。 選擇與作業系統（linux或linux64）對應的資料夾，然後啟動unpack命令。 您可以保留在預設情況下建議的儲存庫中執行的安裝： &quot;/usr/local/nz&quot;。
-   * **nz-winclient-v7.2.0.0.zip** for Windows。 解壓縮檔案並啟動與您的作業系統對應的可執行指令碼： nzodbcsetup.exe或nzodbcsetup64.exe。 按照嚮導說明完成驅動程式的安裝。
+   * **nz-linuxclient-v7.2.0.0.tar.gz** for Linux。 選擇與作業系統（linux或linux64）對應的資料夾，然後啟動unpack命令。 您可以保留在預設建議的儲存庫中執行的安裝：&quot;/usr/local/nz&quot;。
+   * **nz-winclient-v7.2.0.0.zip** for Windows。 解壓縮檔案並啟動與您的作業系統對應的可執行指令碼：nzodbcsetup.exe或nzodbcsetup64.exe。 按照嚮導說明完成驅動程式的安裝。
 
 1. 配置ODBC驅動程式。 配置可在標準檔案中執行： **/etc/odbc.ini** ，用於一般參數， **/etc/odbcinst.ini** ，用於聲明驅動程式。
 
@@ -175,25 +172,25 @@ Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更�
 
 1. 指定Adobe Campaign伺服器的環境變數：
 
-   * **LD_LIBRARY_PATH**: /usr/local/nz/lib和/usr/local/nz/lib64。 &quot;/usr/local/nz&quot;與安裝驅動程式時預設提供的安裝儲存庫相對應。 您需要在此處指定已為安裝選擇的儲存庫。
-   * **ODBCINI**: odbc.ini檔案的位置(例如/etc/odbc.ini)。
-   * **NZ_ODBC_INI_PATH**: odbc.ini檔案的位置。 Netezza還需要此第二個變數來使用odbc.ini檔案。
+   * **LD_LIBRARY_PATH**:/usr/local/nz/lib和/usr/local/nz/lib64。 &quot;/usr/local/nz&quot;與安裝驅動程式時預設提供的安裝儲存庫相對應。 您需要在此處指定已為安裝選擇的儲存庫。
+   * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
+   * **NZ_ODBC_INI_PATH**:odbc.ini檔案的位置。 Netezza還需要此第二個變數來使用odbc.ini檔案。
 
-1. 在Campaign Classic中，您接著可以設定Netezza外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您接著可以設定Netezza外部帳戶。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
 
 1. 若要設定外 **[!UICONTROL Netezza]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: 內泰扎
+   * **[!UICONTROL Type]**:內泰扎
 
-   * **[!UICONTROL Server]**: Netezza伺服器的URL
+   * **[!UICONTROL Server]**:Netezza伺服器的URL
 
-   * **[!UICONTROL Account]**: 用戶名稱
+   * **[!UICONTROL Account]**:用戶名稱
 
-   * **[!UICONTROL Password]**: 使用者帳戶密碼
+   * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Database]**: 資料庫的名稱
+   * **[!UICONTROL Database]**:資料庫的名稱
 
 >[!NOTE]
 >
@@ -208,7 +205,7 @@ Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更�
 1. 確保unixodbc包位於伺服器上。
 1. 安裝 **iq_odbc**。 安裝結束時可能會發生錯誤。 此錯誤可以忽略。
 1. 安 **裝iq_client_common**。 安裝結束時可能會發生Java錯誤。 此錯誤可以忽略。
-1. 配置ODBC驅動程式。 配置可在標準檔案中執行： /etc/odbc.ini，用於常規參數，/etc/odbcinst.ini，用於聲明驅動程式：
+1. 配置ODBC驅動程式。 配置可在標準檔案中執行：/etc/odbc.ini，用於常規參數，/etc/odbcinst.ini，用於聲明驅動程式：
 
    * **/etc/odbc.ini** (以您自己的方式取 `<server_alias>` 代字元等值):
 
@@ -237,24 +234,24 @@ Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更�
 
 1. 在LD_LIBRARY_PATH變數中添加新libodbc16.so庫的路徑。 若要這麼做：
 
-   * 如果您使用customer.sh檔案來宣告您的路徑： 為LD_LIBRARY_PATH變數添加路徑/opt/sybase/IQ-16_0/lib64。
+   * 如果您使用customer.sh檔案來宣告您的路徑：為LD_LIBRARY_PATH變數添加路徑/opt/sybase/IQ-16_0/lib64。
    * 否則，請使用Unix命令。
 
-1. 在Campaign Classic中，您可以配置Sybase IQ外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您可以配置Sybase IQ外部帳戶。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
 
 1. 若要設定外 **[!UICONTROL Sybase IQ]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
 
-   * **[!UICONTROL Server]**: 與步驟5中定義的ODBC`<server_alias>`連接()相對應。 不一定是伺服器本身的名稱。
+   * **[!UICONTROL Server]**:與步驟5中定義的ODBC`<server_alias>`連接()相對應。 不一定是伺服器本身的名稱。
 
-   * **[!UICONTROL Account]**: 用戶名稱
+   * **[!UICONTROL Account]**:用戶名稱
 
-   * **[!UICONTROL Password]**: 使用者帳戶密碼
+   * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Database]**: 資料庫的名稱
+   * **[!UICONTROL Database]**:資料庫的名稱
 
 >[!NOTE]
 >
@@ -299,25 +296,25 @@ Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更�
 
 1. 指定Adobe Campaign伺服器的環境變數：
 
-   * **LD_LIBRARY_PATH**: /opt/teradata/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
-   * **ODBCINI**: odbc.ini檔案的位置(例如/etc/odbc.ini)。
-   * **NLSPATH**: opermsgs.cat檔案的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
+   * **LD_LIBRARY_PATH**:/opt/teradata/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
+   * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
+   * **NLSPATH**:opermsgs.cat檔案的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
 
-1. 在Campaign Classic中，您接著可以設定您的Teradata外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您接著可以設定您的Teradata外部帳戶。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
 
 1. 若要設定外 **[!UICONTROL Teradata]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: Teradata
+   * **[!UICONTROL Type]**:Teradata
 
-   * **[!UICONTROL Server]**: Teradata伺服器的URL
+   * **[!UICONTROL Server]**:Teradata伺服器的URL
 
-   * **[!UICONTROL Account]**: 用戶名稱
+   * **[!UICONTROL Account]**:用戶名稱
 
-   * **[!UICONTROL Password]**: 使用者帳戶密碼
+   * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Database]**: 資料庫的名稱
+   * **[!UICONTROL Database]**:資料庫的名稱
 
 ## 配置對SAP HANA的訪問 {#configure-access-to-sap-hana}
 
@@ -328,7 +325,7 @@ Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更�
    * **hdb_client_linux.tgz** for Linux。 解壓縮後，啟動hdbinst命令並按照說明完成驅動程式安裝。
    * **hdb_client_windows.zip** for Windows。 解壓縮檔案並啟動可執行檔： **hdbinst.exe**。 按照嚮導說明完成驅動程式的安裝。
 
-1. 配置ODBC驅動程式。 配置可在標準檔案中執行： /etc/odbc.ini代表一般參數，/etc/odbcinst.ini代表聲明驅動程式。
+1. 配置ODBC驅動程式。 配置可在標準檔案中執行：/etc/odbc.ini代表一般參數，/etc/odbcinst.ini代表聲明驅動程式。
 
    * **/etc/odbc.ini**
 
@@ -354,19 +351,19 @@ Adobe仍支援舊版FDA連接器。 不過，我們建議以本頁所列的更�
 
 1. 指定Adobe Campaign伺服器的環境變數：
 
-   * **LD_LIBRARY_PATH**: 依預設，應包含SAP Hana用戶端(/usr/sap/hdbclient/libodbcHDB.so)的連結。
-   * **ODBCINI**: odbc.ini檔案的位置(例如/etc/odbc.ini)。
+   * **LD_LIBRARY_PATH**:依預設，應包含SAP Hana用戶端(/usr/sap/hdbclient/libodbcHDB.so)的連結。
+   * **ODBCINI**:odbc.ini檔案的位置(例如/etc/odbc.ini)。
 
-1. 在Campaign Classic中，您可以設定SAP Hana外部帳戶。 在中 **[!UICONTROL Explorer]**&#x200B;按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您可以設定SAP Hana外部帳戶。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
 
 1. 若要設定外 **[!UICONTROL SAP Hana]** 部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: SAP Hana
+   * **[!UICONTROL Type]**:SAP Hana
 
-   * **[!UICONTROL Server]**: SAP Hana伺服器的URL
+   * **[!UICONTROL Server]**:SAP Hana伺服器的URL
 
-   * **[!UICONTROL Account]**: 用戶名稱
+   * **[!UICONTROL Account]**:用戶名稱
 
-   * **[!UICONTROL Password]**: 使用者帳戶密碼
+   * **[!UICONTROL Password]**:使用者帳戶密碼
