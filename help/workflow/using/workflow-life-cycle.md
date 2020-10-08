@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 * **正在編輯**
 
-   這是初始設計階段： 建立新工作流程時，其狀態為「正在編輯」。 伺服器尚未處理工作流程，因此可以無風險地修改工作流程。
+   這是初始設計階段：建立新工作流程時，其狀態為「正在編輯」。 伺服器尚未處理工作流程，因此可以無風險地修改工作流程。
 
 * **已開始**
 
