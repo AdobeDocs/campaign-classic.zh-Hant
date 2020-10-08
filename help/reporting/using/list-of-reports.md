@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: 3e593527-5580-44ea-93dc-9084d862537e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 2%
 
 ---
 
 
 # 報告清單{#list-of-reports}
 
-## 交貨報告 {#reports-on-deliveries}
+## 傳遞報表 {#reports-on-deliveries}
 
 Adobe Campaign提供的內建報表可在下表中找到。
 
