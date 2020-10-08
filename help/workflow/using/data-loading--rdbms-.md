@@ -1,7 +1,7 @@
 ---
-title: 資料載入(RDBMS)
-seo-title: 資料載入(RDBMS)
-description: 資料載入(RDBMS)
+title: 資料載入 (RDBMS)
+seo-title: 資料載入 (RDBMS)
+description: 資料載入 (RDBMS)
 seo-description: null
 page-status-flag: never-activated
 uuid: d5ec30f2-398a-4b16-9232-924437da146a
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a128caac-5740-4dac-b14d-1d2fcef3cc69
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 6%
 
 ---
 
 
-# 資料載入(RDBMS){#data-loading-rdbms}
+# 資料載入 (RDBMS){#data-loading-rdbms}
 
 此活 **[!UICONTROL Data loading (RDBMS)]** 動可讓您直接存取此外部資料庫，並僅收集定位所需的資料。
 
