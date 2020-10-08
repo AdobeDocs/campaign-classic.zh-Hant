@@ -1,7 +1,7 @@
 ---
-title: 建立新的Web應用程式
-seo-title: 建立新的Web應用程式
-description: 建立新的Web應用程式
+title: 建立新的 Web 應用程式
+seo-title: 建立新的 Web 應用程式
+description: 建立新的 Web 應用程式
 seo-description: null
 page-status-flag: never-activated
 uuid: 4e783bd5-222f-4d35-8df7-1e1b83587b5a
@@ -11,23 +11,20 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 12%
+ht-degree: 21%
 
 ---
 
 
-# 建立新的Web應用程式{#creating-a-new-web-application}
+# 建立新的 Web 應用程式{#creating-a-new-web-application}
 
 Web應用程式類型在建立過程中被選擇。
 
-前往「促銷 **活動** 」標籤，並選取 **[!UICONTROL Web Applications]** 功能表。 按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。選擇要使用的Web應用程式模板：
+前往「促銷 **活動** 」標籤，並選取 **[!UICONTROL Web Applications]** 功能表。 按一下 **[!UICONTROL Create]** 按鈕。選擇要使用的Web應用程式模板：
 
 ![](assets/webapp_create_from_campaign.png)
 
@@ -39,7 +36,7 @@ Web應用程式類型在建立過程中被選擇。
 
 1. Web表單（+描述檔修改）
 
-   Web表單可讓您提供網頁，其中包含輸入或選擇欄位： 使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
+   Web表單可讓您提供網頁，其中包含輸入或選擇欄位：使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
 
 1. 網頁應用程式
 
@@ -51,7 +48,7 @@ Web應用程式類型在建立過程中被選擇。
 
 1. 調查
 
-   Adobe Campaign可讓您透過「調查管 **理員」選項** ，設計和管理線上調查，並處理其結果： 動態欄位建立、分數管理、轉存答案和專屬報表。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
+   Adobe Campaign可讓您透過「調查管 **理員」選項** ，設計和管理線上調查，並處理其結果：動態欄位建立、分數管理、轉存答案和專屬報表。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
 
    >[!CAUTION]
    >
