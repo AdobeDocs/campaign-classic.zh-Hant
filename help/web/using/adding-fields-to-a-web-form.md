@@ -1,7 +1,7 @@
 ---
-title: 新增欄位至Web表格
-seo-title: 新增欄位至Web表格
-description: 新增欄位至Web表格
+title: 新增欄位至網路表單
+seo-title: 新增欄位至網路表單
+description: 新增欄位至網路表單
 seo-description: null
 page-status-flag: never-activated
 uuid: 33c6ab85-b021-422a-a224-c9eff27e6fc0
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2452'
+ht-degree: 1%
 
 ---
 
 
-# 新增欄位至Web表格{#adding-fields-to-a-web-form}
+# 新增欄位至網路表單{#adding-fields-to-a-web-form}
 
 在Web表單中，欄位可讓使用者輸入資訊並選取選項。 Web表格可提供輸入欄位、選擇欄位、靜態和進階內容（擷取、訂閱等）。
 
@@ -81,7 +81,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 * **數字**:可讓使用者在一行中輸入數字。 for more on this, refer to [Adding numbers](#adding-numbers).
 
-   當頁面獲得核準時，會檢查欄位內容，以確定輸入的值與欄位相容。 有關詳細資訊，請參閱定 [義控制設定](../../web/using/form-rendering.md#defining-control-settings)。
+   當頁面獲得核準時，會檢查欄位內容，以確定輸入的值與欄位相容。 For more on this, refer to [Defining control settings](../../web/using/form-rendering.md#defining-control-settings).
 
 * **密碼**:可讓使用者在單行輸入文字。 在輸入文字期間，字元會由句點取代：
 
@@ -99,7 +99,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
    >
    >多行文字欄位是可包含歸位的特定欄位。 其儲存空間必須與映射到XML元素上的欄位相關聯，而不是與XML屬性相關聯。 有關方案中資料類型的詳細資訊，請參閱本節中的「方案參考」 [一章](../../configuration/using/about-schema-reference.md)。
    >   
-   >如果您使用 **Survey** 模組，可將此類型的欄位儲存在封存的欄位中，並自動調整格式。 如需詳細資訊，請參閱[本小節](../../web/using/about-surveys.md)。
+   >如果您使用 **Survey** 模組，可將此類型的欄位儲存在封存的欄位中，並自動調整格式。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
 
 * **豐富的多行文字**:可讓使用者輸入包含版面的文字，而版面將儲存為HTML格式。
 
@@ -127,7 +127,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 >
 >「響應」儲存欄位中詳 [細介紹了儲存模式](../../web/using/web-forms-answers.md#response-storage-fields)
 
-此標 **[!UICONTROL Advanced]** 簽可讓您定義欄位的顯示參數（標籤位置、對齊方式等）。 請參 [閱定義Web表單版面](../../web/using/defining-web-forms-layout.md)。
+此標 **[!UICONTROL Advanced]** 簽可讓您定義欄位的顯示參數（標籤位置、對齊方式等）。 See [Defining web forms layout](../../web/using/defining-web-forms-layout.md).
 
 ## 新增下拉式清單 {#adding-drop-down-lists}
 
@@ -187,7 +187,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ![](assets/s_ncs_admin_survey_check_box_ex.png)
 
-這些資訊將上傳至資料庫，並傳送至現有欄位（在本例中為欄位） **[!UICONTROL Comment]** :
+這些資訊將上傳至資料庫，並傳送至現有欄位(在本例中為欄位 **[!UICONTROL Comment]** ):
 
 ![](assets/s_ncs_admin_survey_check_box_ex_list.png)
 
@@ -225,7 +225,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 >[!NOTE]
 >
->Web表格不授權選取數個值。 只能針對「調查」類型表單啟 **用多** 個選擇。 如需詳細資訊，請參閱[本小節](../../web/using/about-surveys.md)。\
+>Web表格不授權選取數個值。 只能針對「調查」類型表單啟 **用多** 個選擇。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。\
 >但是，可以將類型欄位插 **[!UICONTROL Multiple choice]** 入Web應用程式；但不授權選取數個值：可使用選項按鈕來選取提供的選項。
 
 ## 添加網格 {#adding-grids}
@@ -272,7 +272,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 >[!NOTE]
 >
->依預設，表單中使用的日期會透過日曆輸入。 若是多語言表單，請檢查日曆是否提供所有使用的語言版本。 請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)。
+>依預設，表單中使用的日期會透過日曆輸入。 若是多語言表單，請檢查日曆是否提供所有使用的語言版本。 See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 但是，在某些情況下（例如輸入出生日期），使用下拉式清單可能會比較容易。
 
@@ -386,6 +386,7 @@ Captcha會插入頁面，並在視覺下方放置輸入欄位。 這兩個元素
 >* Adobe Campaign不會控制上傳的資源大小或類型：因此，強烈建議僅針對安全類型的內部網站使用上傳欄位。
 >* 如果有數台伺服器連結至該例項（負載平衡架構），您需要確定對Web表單的呼叫會送達同一伺服器。
 >* 這些實作需要Adobe Campaign諮詢團隊的協助。
+
 >
 
 
