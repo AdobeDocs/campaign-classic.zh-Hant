@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f3ff8c8e-22b0-4d61-9f26-11f5ca3bc0be
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 * **外部帳戶**
 
-   在中 **[!UICONTROL Administration > Platform > External accounts]**，請確定下列外部SFTP帳戶已正確設定。 您的顧問應已在Adobe Experience cloud中設定上述SFTP伺服器。
+   在中 **[!UICONTROL Administration > Platform > External accounts]**，請確定下列外部SFTP帳戶已正確設定。 您的顧問應已在Adobe Experience Cloud中設定上述SFTP伺服器。
 
    * **[!UICONTROL importSharedAudience]** :專用於匯入觀眾的SFTP帳戶。
    * **[!UICONTROL exportSharedAudience]** :專用於匯出觀眾的SFTP帳戶。
