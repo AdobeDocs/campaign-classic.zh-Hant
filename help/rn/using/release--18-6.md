@@ -1,7 +1,7 @@
 ---
-title: 版本18.6
-seo-title: 版本18.6
-description: 版本18.6
+title: 版本 18.6
+seo-title: 版本 18.6
+description: 版本 18.6
 seo-description: null
 page-status-flag: never-activated
 uuid: 72941f8f-0b84-4868-a768-8aa972459ef2
@@ -11,18 +11,18 @@ audience: rn
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d046304657f04312d78176c49a650690b05e4c94
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 8%
 
 ---
 
 
-# 版本18.6{#release-18-6}
+# 版本 18.6{#release-18-6}
 
-## 版本18.6.2 - Build 8949{#release-18-6-3-build-8949}
+## 版本 18.6.2 - Build 8949{#release-18-6-3-build-8949}
 
 2018年8月22日
 
@@ -42,12 +42,12 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
  <tbody> 
   <tr> 
    <td> 查詢色帶<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDA Teradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign現在都能傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，Teradata管理員便可用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱詳 <a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">細檔案</a>。</p> </td>
+   <td> <p>當多個Campaign使用者連線至相同的FDA Teradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign現在都能傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，Teradata管理員便可使用這些資料進行稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">相關的文件</a>，以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
 </table>
 
-**改進**
+**功能改善**
 
 * 電子郵件封存記錄已增強，因此檢查哪些電子郵件已透過密件副本封存成功傳送或失敗，變得更輕鬆更清楚。 (NEO-10675)
 * 修正導致在追蹤廣播中顯示負載平衡器IP而非客戶IP的問題。 (NEO-11295)
@@ -61,7 +61,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 * 已改善封裝匯入／匯出（在介面中新增記錄檔和地區）。
 * 修正當工作流程活動未完整設定時，在設定檔記錄檔中 **[!UICONTROL Survey answers]** 顯示無用錯誤的問題。
 
-**技術變革**
+**技術演變**
 
 查詢色帶
 
@@ -78,7 +78,7 @@ Teradata外部帳戶中已新增一個標籤。 此標 **[!UICONTROL Query bandi
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## 版本18.6 - Build 8947{#release-18-6-build-8947}
+## 版本 18.6 - Build 8947{#release-18-6-build-8947}
 
 2018年6月25日
 
@@ -102,7 +102,7 @@ Teradata外部帳戶中已新增一個標籤。 此標 **[!UICONTROL Query bandi
   </tr> 
   <tr> 
    <td> 支援Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign現在與Windows Server 2016相容。 請參閱「 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic相容性矩陣」</a>。<br /> </td> 
+   <td> Adobe Campaign現在與Windows Server 2016相容。 請參閱「 <a href="https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html">Campaign Classic相容性矩陣」</a>。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -111,7 +111,7 @@ Teradata外部帳戶中已新增一個標籤。 此標 **[!UICONTROL Query bandi
 
 decryptString
 
-decryptString **函式已不再** 使用。 請參閱「已過時 [和已移除的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) 」文章。
+decryptString **函式已不再** 使用。 請參閱「已過時 [和已移除的功能](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html) 」文章。
 
 對於新客戶，此函式現在僅用於解密登陸頁面中收件者的加密ID。 要解密儲存在外部帳戶中的密碼，請使用新的decryptPassword **函式** 。
 
@@ -119,7 +119,7 @@ decryptString **函式已不再** 使用。 請參閱「已過時 [和已移除�
 
 decryptPassword
 
-已 **添加decryptPassword** 函式。 它允許您解密儲存在外部帳戶中的密碼。 如需詳細資 [訊，請參閱JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) 檔案。
+已 **添加decryptPassword** 函式。 它允許您解密儲存在外部帳戶中的密碼。 如需詳細資 [訊，請參閱JSAPI](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html) 檔案。
 
 檔案API
 
