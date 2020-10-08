@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 本節詳細介紹與事務性消息模組結構描述關聯的SOAP方法。
 
-兩個 **PushEvent** 或 **PushEvents** SOAP方法會連結至兩個 **nms:rtEvent** 和 **** nms:BatchEventDataschemas。 決定事件是「批次」或「即時」類型的資訊系統。
+兩個 **PushEvent** 或 **PushEvents** SOAP方法會連結至兩 **個** nms:rtEvent **和** nms:BatchEventDataschemas。 決定事件是「批次」或「即時」類型的資訊系統。
 
 * **PushEvent** 可讓您將單一事件插入訊息中，
 * **PushEvents** 可讓您在訊息中插入一連串事件。
@@ -42,7 +42,7 @@ source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 這兩種方法都包 **`<urn:sessiontoken>`** 含用於登入事務性訊息模組的元素。 我們建議透過受信任的IP位址使用識別方法。 若要擷取工作階段Token，請執行登入SOAP呼叫，然後執行取得Token，再執行註銷。 對數個RT呼叫使用相同的Token。 本節中包含的範例是使用建議的作業Token方法。
 
-如果您使用負載平衡伺服器，則可使用使用者／密碼驗證（位於RT訊息的層級）。 例如：
+如果您使用負載平衡伺服器，則可使用使用者／密碼驗證（位於RT訊息的層級）。 範例:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -108,7 +108,7 @@ PushEvents **方法** ，由包含事件 **`<urn:domeventcollection>`** 的參�
 </urn:PushEvents>
 ```
 
-和 **`<rtevent>`** 元 **`<batchevent>`** 素具有一組屬性和強制子元素：用 **`<ctx>`** 於整合消息資料。
+和 **`<rtevent>`** 元 **`<batchevent>`** 素具有一組屬性和強制子元素： **`<ctx>`** 用於整合消息資料。
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ PushEvents **方法** ，由包含事件 **`<urn:domeventcollection>`** 的參�
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-在此範例中，提供兩個頻道：電子郵件地址和行動電話號碼。 The **wishedChannel** gots you select the channel you wisht to use when the event into a message. 「0」值對應於電子郵件渠道、「1」值對應於行動渠道等。
+在此範例中，提供兩個頻道：電子郵件地址和行動電話號碼。 The **wishedChannel** gots you select the channel you wisht to use when the event to a message. 「0」值對應於電子郵件渠道、「1」值對應於行動渠道等。
 
 如果您想要延遲事件傳送，請新增欄 **[!UICONTROL scheduled]** 位，後面接著偏好的日期。 該事件將在此日期轉換為消息。
 
