@@ -1,7 +1,7 @@
 ---
-title: 當地批准
-seo-title: 當地批准
-description: 當地批准
+title: 本地核准
+seo-title: 本地核准
+description: 本地核准
 seo-description: null
 page-status-flag: never-activated
 uuid: 4de59c8a-e229-4c8d-acab-2b116cafb70b
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a223641e-93e1-42ef-bb6b-8e1a0f8f6a65
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
 
-# 當地批准{#local-approval}
+# 本地核准{#local-approval}
 
 整合至定位工作流程後，此活 **[!UICONTROL Local approval]** 動可讓您在傳送傳送前設定收件者核准程式。
 
@@ -40,7 +40,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    ![](assets/local_validation_intro_2.png)
 
-* **增量查詢**:可讓您執行查詢並規劃其執行。 請參閱「增 [量查詢](../../workflow/using/incremental-query.md) 」部分。
+* **增量查詢**:可讓您執行查詢並規劃其執行。 Refer to the [Incremental query](../../workflow/using/incremental-query.md) section.
 
    ![](assets/local_validation_intro_3.png)
 
@@ -60,7 +60,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 * **[!UICONTROL Approval management]**
 
-   * 選擇傳送範本和用於電子郵件通知的主題。 預設範本可供使用： **[!UICONTROL Local approval notification]**。 您也可以新增將出現在核准和回饋通知中收件者清單上方的說明。
+   * 選擇傳送範本和用於電子郵件通知的主題。 A default template is available: **[!UICONTROL Local approval notification]**. 您也可以新增將出現在核准和回饋通知中收件者清單上方的說明。
    * 指定與 **[!UICONTROL Approval type]** 核准截止日期（自核准開始起的日期或截止日期）對應的日期。 在此日期，工作流程會再次啟動，而未核准的收件者不會納入定位。 傳送通知後，活動會排入佇列，讓本地主管可以核准其連絡人。
 
       >[!NOTE]
@@ -86,7 +86,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 ![](assets/local_validation_workflow_4.png)
 
 * 如果在 **[!UICONTROL Specified in the transition]** 先前的活動中輸入了交貨，請選擇該選項。 選擇 **[!UICONTROL Explicit]** 以指定本機核准活動中的傳送。
-* 選擇傳送範本和通知電子郵件的物件。 預設範本： **[!UICONTROL Local approval notification]**。
+* 選擇傳送範本和通知電子郵件的物件。 預設範本： **[!UICONTROL Local approval notification]**.
 
 ## 範例：核准工作流程傳送 {#example--approving-a-workflow-delivery}
 
