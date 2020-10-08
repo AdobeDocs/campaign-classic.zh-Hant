@@ -1,7 +1,7 @@
 ---
-title: Web表格解答
-seo-title: Web表格解答
-description: Web表格解答
+title: 網路表單回答
+seo-title: 網路表單回答
+description: 網路表單回答
 seo-description: null
 page-status-flag: never-activated
 uuid: 374df070-8969-4bf6-bd24-0b827d38593f
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: c89926b6-488e-4c72-8f67-b6af388bade3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 1%
 
 ---
 
 
-# Web表格解答{#web-forms-answers}
+# 網路表單回答{#web-forms-answers}
 
 ## 響應儲存欄位 {#response-storage-fields}
 
@@ -144,7 +144,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 >[!NOTE]
 >
->可能的操作包括： **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]****[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**。\
+>可能的操作包括： **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**\
 >操作員的預設資料夾是操作員具有寫權限的第一個資料夾。\
->Refer to [this section](../../platform/using/access-management.md).
+>請參閱[本區段](../../platform/using/access-management.md)。
 
