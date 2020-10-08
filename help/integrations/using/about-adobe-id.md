@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2140468e52d78a91fc4128e9187d927f08e2f0ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 29%
+ht-degree: 32%
 
 ---
 
 
-# 關於Adobe ID{#about-adobe-id}
+# About Adobe ID{#about-adobe-id}
 
 Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此整合具備以下優勢︰
 
