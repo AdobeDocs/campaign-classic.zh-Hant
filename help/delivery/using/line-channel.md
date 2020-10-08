@@ -1,7 +1,7 @@
 ---
-title: 線路頻道
-seo-title: 線路頻道
-description: 線路頻道
+title: LINE 通道
+seo-title: LINE 通道
+description: LINE 通道
 seo-description: null
 page-status-flag: never-activated
 uuid: 94b4e044-3f5d-42a6-b249-29f417386156
@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 3%
 
 ---
 
 
-# 線路頻道{#line-channel}
+# LINE 通道{#line-channel}
 
 LINE是免費即時訊息、語音和視訊通話的應用程式，適用於所有智慧型手機(iPhone、Android、Windows Phone、Blackberry、Nokia)和PC。 Adobe Campaign可讓您傳送LINE訊息。
 
 LINE僅適用於內部部署或托管服務安裝。
 
-LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上的LINE應用程式上傳送即時訊息。 For more on this, refer to this [page](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
+LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上的LINE應用程式上傳送即時訊息。 如需關於此項目的詳細資訊，請參閱此[頁面](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line)。
 
 ![](assets/line_message.png)
 
@@ -94,7 +94,7 @@ LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上�
 
    ![](assets/line_message_01.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳送。 如需詳細資訊，請參閱[本小節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用標籤、程式碼和說明來識別您的傳送。 如需詳細資訊，請參閱[本章節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 1. 按一 **[!UICONTROL Continue]** 下以建立傳送。
 
 ## 定義內容 {#defining-the-content}
@@ -116,7 +116,7 @@ LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上�
 
 ### 設定影像和連結傳送 {#configuring-an-image-and-link-delivery}
 
-影 **像和連結** LINE傳送是以影像形式傳送給收件者的訊息，可能包含一或多個URL。
+影像 **和連結** LINE傳送是以影像形式傳送給收件者的訊息，可能包含一或多個URL。
 
 您可以使用：
 
@@ -141,6 +141,7 @@ LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上�
    * 460px
    * 300px
    * 240px
+
    >[!NOTE]
    >
    >每個具有連結的LINE影像都必須使用1040x1040像素大小。
@@ -159,7 +160,7 @@ LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上�
 
 ### 建議 {#recommendations}
 
-* 當您第一次將LINE傳送傳送給新的收件者時，必須將有關使用條款和同意的正式LINE訊息新增至傳送。 官方訊息可從下列連結取得： [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr)。
+* 當您第一次將LINE傳送傳送給新的收件者時，必須將有關使用條款和同意的正式LINE訊息新增至傳送。 官方訊息可從下列連結取得： [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
 
 ## 選擇目標人口 {#selecting-the-target-population}
 
