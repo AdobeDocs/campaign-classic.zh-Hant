@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：建立內容管理」
-seo-title: 「使用案例：建立內容管理」
-description: 「使用案例：建立內容管理」
+title: '"使用案例：建立內容管理"'
+seo-title: '"使用案例：建立內容管理"'
+description: '"使用案例：建立內容管理"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 204a63eb-40dd-446d-a847-4e55ad23b2bd
@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: a4c62580-664d-47fe-87f5-cfe608b05e6f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 這些元素是透過專用的架構建立的，該架構會為每個內容指定下列元素：名稱、標籤、類型、大小，以及任何其他與Adobe Campaign中其處理相關的資訊。
 
-## 步驟2 —— 建立資料架構 {#step-2---creating-the-data-schema}
+## Step 2 - Creating the data schema {#step-2---creating-the-data-schema}
 
 資料架構是與內容相關聯的XML檔案。 它描述了此內容中資料的XML結構。
 
@@ -98,23 +98,23 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>內容</strong><br /> </th> 
-   <th> <strong>格式</strong><br /> </th> 
-   <th> <strong>類型</strong><br /> </th> 
-   <th> <strong>標籤</strong><br /> </th> 
+   <th> <strong>內容</strong> <br /> </th> 
+   <th> <strong>格式</strong> <br /> </th> 
+   <th> <strong>類型</strong> <br /> </th> 
+   <th> <strong>標籤</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> 標題<br /> </td> 
    <td> 屬性<br /> </td> 
-   <td> 字串<br /> </td> 
+   <td> String<br /> </td> 
    <td> 標題<br /> </td> 
   </tr> 
   <tr> 
    <td> 子標題<br /> </td> 
    <td> 屬性<br /> </td> 
-   <td> 字串<br /> </td> 
+   <td> String<br /> </td> 
    <td> 名稱<br /> </td> 
   </tr> 
   <tr> 
@@ -132,20 +132,20 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
   <tr> 
    <td> 作者的像片<br /> </td> 
    <td> 屬性<br /> </td> 
-   <td> 字串<br /> </td> 
+   <td> String<br /> </td> 
    <td> URL<br /> </td> 
   </tr> 
   <tr> 
    <td> 作者<br /> </td> 
    <td> 元素<br /> </td> 
-   <td> 備忘錄<br /> </td> 
+   <td> Memo<br /> </td> 
    <td> 作者<br /> </td> 
   </tr> 
   <tr> 
    <td> 標題標誌（儲存在Adobe Campaign公共資源中）<br /> </td> 
    <td> 屬性<br /> </td> 
    <td> 連結<br /> </td> 
-   <td> Image<br /> </td> 
+   <td> 影像<br /> </td> 
   </tr> 
  </tbody> 
 </table>
