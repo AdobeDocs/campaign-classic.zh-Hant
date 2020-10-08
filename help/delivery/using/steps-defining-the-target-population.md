@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -29,8 +26,8 @@ ht-degree: 0%
 
 您可以針對每個傳送定義數種目標人口族群。 以下章節提供如何選擇的詳細資訊：
 
-* 主要的收件者。 [詳細內容](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* 校對訊息的收件者，以設定驗證週期。 [詳細內容](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* 主要的收件者。 [顯示全文](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* 校對訊息的收件者，以設定驗證週期。 [顯示全文](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
 此外，如果傳送內容已包含在行銷促銷活動中，您也可以定義 [種子位址](../../delivery/using/about-seed-addresses.md)，以及 [控制群組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
 
@@ -91,7 +88,7 @@ ht-degree: 0%
 1. 在欄位中輸入此定位的名 **[!UICONTROL Label]** 稱。 依預設，標籤將是第一個定位准則的標籤。 對於組合，最好使用明確的名稱。
 1. 按一 **[!UICONTROL Finish]** 下以驗證已設定的定位。
 
-   定義的定位條件會匯總在主要定位設定標籤的中央區段中。 按一下准則以檢視其內容（設定和預覽）。 要刪除標準，請按一下位於標籤後面的交叉點。
+   定義的定位條件會摘要在主要定位設定標籤的中央區段中。 按一下准則以檢視其內容（設定和預覽）。 要刪除標準，請按一下位於標籤後面的交叉點。
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
@@ -211,7 +208,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 1. 按一下圖 **[!UICONTROL Add]** 標可定義替代。
 1. 輸入要使用的收件者地址，或從清單中選擇該地址。
-1. 選擇要在校對中使用的配置檔案：將值儲 **[!UICONTROL Random]** 存在欄 **[!UICONTROL Profile to use]** 中，以使用校對中任何目標描述檔的資料。
+1. 選擇要在校對中使用的配置檔案：將值 **[!UICONTROL Random]** 儲存在欄 **[!UICONTROL Profile to use]** 中，以使用校對中任何目標描述檔的資料。
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_choose.png)
 
@@ -233,7 +230,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以結合特定證明目標的定義和使用種子地址的選項來 **[!UICONTROL Specific target and Seed addresses]** 進行。 然後在兩個單獨的子頁籤中定義相關配置。
 
-## 如何管理電子郵件中的種子和校樣 {#seeds-and-proofs-video}
+## How to manage seed and proofs in an email {#seeds-and-proofs-video}
 
 在此影片中，您將學習如何在現有電子郵件中新增種子和校樣，以及如何傳送。
 
@@ -244,4 +241,4 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 * [關於種子接頭](../../delivery/using/about-seed-addresses.md)
 
-* [使用案例：選擇條件中的種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [使用案例：依條件選取種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
