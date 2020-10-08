@@ -1,7 +1,7 @@
 ---
-title: SQL資料管理
-seo-title: SQL資料管理
-description: SQL資料管理
+title: SQL 資料管理
+seo-title: SQL 資料管理
+description: SQL 資料管理
 seo-description: null
 page-status-flag: never-activated
 uuid: b6057496-2dd5-4289-96df-98378e4f0ae7
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
 
-# SQL資料管理{#sql-data-management}
+# SQL 資料管理{#sql-data-management}
 
 「 **SQL資料管理** 」活動允許您編寫自己的SQL指令碼以建立和填充工作表。
 
@@ -45,7 +45,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
    >[!CAUTION]
    >
-   >SQL指令碼編寫者有責任確保SQL指令碼正常工作，並確保其引用（欄位名稱等）符合「出站」模式。
+   >SQL指令碼編寫者有責任確保SQL指令碼正常工作，並確保其引用（欄位名稱等） 符合「出站」模式。
 
    如果要載入現有SQL代碼，請選擇該 **[!UICONTROL The SQL script is contained in an entity stored in the database]** 選項。 SQL指令碼必須建立並儲存在 **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** /菜 **[!UICONTROL SQL scripts]** 單中。
 
@@ -62,7 +62,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
       >
       >(&#39;name&#39;)值與轉場屬性 **[!UICONTROL Name]** 中的欄位對應。
 
-1. 如果SQL指令碼已包含建立出站工作表的命令，請取消選擇該 **[!UICONTROL Automatically create work table]** 選項。 否則，工作表將在工作流執行後自動建立。
+1. 如果SQL指令碼已包含建立出站工作表的命令，請取消選擇該 **[!UICONTROL Automatically create work table]** 選項。 否則，工作流一旦執行，就會自動建立工作表。
 1. 按一下 **[!UICONTROL Ok]** 確認活動配置。
 
 活動現在已設定。 它已準備好在工作流中執行。
