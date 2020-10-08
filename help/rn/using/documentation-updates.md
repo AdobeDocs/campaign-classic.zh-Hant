@@ -9,14 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3704'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -86,7 +83,7 @@ ht-degree: 87%
 
 「促銷活動傳統型」中的「隱私權管理」頁面已更新，其中包含「規則」欄位的資訊，現在使用允許設定自動隱私權要求程式的API時，此欄位已可供使用。 [顯示全文](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-「隱私權管理概述」頁面已更新，加入泰國個人資料保護法(PDPA)和巴西Lei Geral de Proteção de Dados(LGPD)的相關資訊。 [顯示全文](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 和巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 已在子工作流程記錄檔和行為中新增資訊，以防發生錯誤。 [顯示全文](../../workflow/using/sub-workflow.md)
 
