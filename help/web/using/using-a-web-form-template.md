@@ -1,7 +1,7 @@
 ---
-title: 使用Web表單範本
-seo-title: 使用Web表單範本
-description: 使用Web表單範本
+title: 使用網路表單範本
+seo-title: 使用網路表單範本
+description: 使用網路表單範本
 seo-description: null
 page-status-flag: never-activated
 uuid: c2986dca-a6c7-4ebc-9be8-c4716611f502
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d9369ba1-0397-40fe-bbaf-24252564d93c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 9%
 
 ---
 
 
-# 使用Web表單範本{#using-a-web-form-template}
+# 使用網路表單範本{#using-a-web-form-template}
 
 表單範本是可重複使用的組態，可讓您建立新的表單。 預設情況下，表單模板與節點中的Web應用程式模板一起 **[!UICONTROL Resources > Templates > Web application templates]** 儲存。
 
