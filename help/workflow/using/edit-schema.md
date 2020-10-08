@@ -1,7 +1,7 @@
 ---
-title: 編輯結構
-seo-title: 編輯結構
-description: 編輯結構
+title: 編輯綱要
+seo-title: 編輯綱要
+description: 編輯綱要
 seo-description: null
 page-status-flag: never-activated
 uuid: abd77902-98b7-4ab7-a240-dd6b3bb247bb
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 733576d2-505f-4598-89eb-a10e7331bf7e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 7%
 
 ---
 
 
-# 編輯結構{#edit-schema}
+# 編輯綱要{#edit-schema}
 
 資料可以轉換、標準化，並且如果需要，可以使用活動豐富工作流 **[!UICONTROL Edit schema]** 中。 它通常用於標準化資料結構：例如，您可以計算欄位或聚合的平均值，以更名輸出列或修改其內容。
 
