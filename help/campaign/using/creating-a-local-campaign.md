@@ -1,7 +1,7 @@
 ---
-title: 建立本機促銷活動
-seo-title: 建立本機促銷活動
-description: 建立本機促銷活動
+title: 建立本機行銷活動
+seo-title: 建立本機行銷活動
+description: 建立本機行銷活動
 seo-description: null
 page-status-flag: never-activated
 uuid: 86e78d9e-26cb-4aea-b8ce-5e52ae352b48
@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 建立本機促銷活動{#creating-a-local-campaign}
+# 建立本機行銷活動{#creating-a-local-campaign}
 
 本機促銷活動是從具有特定執行排程的清單中參考的範本 **[!UICONTROL campaign packages]** 所建立 **的例項**。 其目標是使用由中央實體設定和設定的促銷活動範本，來滿足本端通訊需求。 實施本地操作的主要步驟如下：
 
@@ -39,7 +36,7 @@ ht-degree: 0%
 1. 排序促銷活動。
 1. 執行促銷活動。
 
-## 建立本機促銷活動範本 {#creating-a-local-campaign-template}
+## Creating a local campaign template {#creating-a-local-campaign-template}
 
 若要建立促銷活動套件，您必須先透過節 **點建立促銷活動****[!UICONTROL Resources > Templates]** 範本。
 
@@ -67,11 +64,11 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 可用的Web介面有四種類型：
 
-* **[!UICONTROL By brief]** : 本機實體必須提供描述促銷活動設定的說明。 訂單核准後，中央實體會整體設定並執行促銷活動。
+* **[!UICONTROL By brief]** :本機實體必須提供描述促銷活動設定的說明。 訂單核准後，中央實體會整體設定並執行促銷活動。
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : 本機實體可存取Web表單，可依使用的範本，編輯內容、目標、最大大小，以及使用個人化欄位建立和擷取日期。 本機實體可評估目標，並從此Web表單預覽內容。
+* **[!UICONTROL By form]** :本機實體可存取Web表單，可依使用的範本，編輯內容、目標、最大大小，以及使用個人化欄位建立和擷取日期。 本機實體可評估目標，並從此Web表單預覽內容。
 
    ![](assets/mkt_distr_8.png)
 
@@ -83,8 +80,8 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : 本機實體可存取其外部網路（非Adobe Campaign）中的促銷活動參數。 這些參數與本機促銷活動(依 **表單)的參數相同**。
-* **[!UICONTROL Pre-set]** : 本機實體使用預設表單來訂購促銷活動，而不進行本地化。
+* **[!UICONTROL By external form]** :本機實體可存取其外部網路（非Adobe Campaign）中的促銷活動參數。 這些參數與本機促銷活動(依 **表單)的參數相同**。
+* **[!UICONTROL Pre-set]** :本機實體使用預設表單來訂購促銷活動，而不進行本地化。
 
    ![](assets/mkt_distr_5.png)
 
@@ -131,7 +128,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
-### 工作流程 {#workflow}
+### Workflow {#workflow}
 
 在標籤 **[!UICONTROL Targeting and workflows]** 中，建立會收集中指定之促銷活 **[!UICONTROL Default values]** 動工作流程， **[!UICONTROL Advanced campaign settings...]** 並建立傳送。
 
@@ -174,7 +171,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 應用以下步驟：
 
 1. 在「促銷 **[!UICONTROL Navigation]** 活動」頁面的 **區段中** ，按一下連結 **[!UICONTROL Campaign packages]** 。
-1. 按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
+1. 按一下 **[!UICONTROL Create]** 按鈕。
 
    ![](assets/mkg_dist_add_an_entry.png)
 
@@ -276,9 +273,9 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   有關詳情，請參閱「核准 [程式](#approval-process) 」一節。
+   For more on this, refer to the [Approval process](#approval-process) section.
 
-1. 接著會通知本機運算子促銷活動可用： 促銷活動可用性可在促銷活動範圍內的促銷活動套件清 **單中** 。 然後可使用促銷活動。 For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
+1. 接著會通知本機運算子促銷活動可用：促銷活動可用性可在促銷活動範圍內的促銷活動套件清 **單中** 。 然後可使用促銷活動。 For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
    選 **[!UICONTROL Start targeting with order approval]** 項可讓本機實體在訂單核准後立即執行促銷活動。
 
@@ -318,7 +315,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 >
 >在促銷活動可用日期之前，仍可編輯和重新設定促銷活動。 本機實體也可以按一下按鈕來拒絕促銷 **[!UICONTROL Cancel]** 活動。
 
-#### 建立促銷活動 {#creating-a-campaign}
+#### 建立行銷活動 {#creating-a-campaign}
 
 一旦核准促銷活動訂單後，可由本機實體設定並執行。
 
@@ -332,7 +329,7 @@ For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-
 
 ![](assets/mkg_dist_do_not_valid.png)
 
-如果審核者拒絕訂單，則相關通知會自動發送給相關的本地實體： 它顯示由操作員輸入的拒絕批准的注釋。
+如果審核者拒絕訂單，則相關通知會自動發送給相關的本地實體：它顯示由操作員輸入的拒絕批准的注釋。
 
 資訊會顯示在促銷活動套件的清單頁面或促銷活動順序頁面上。 如果本機實體有權存取Adobe Campaign主控台，就會收到此拒絕通知。
 
@@ -346,7 +343,7 @@ For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-
 
 每次需要核準時，審閱者都會收到電子郵件通知。
 
-對於每個本機實體，會選取審核者以進行促銷活動訂單核准和促銷活動核准。 有關選擇本地審核者的詳細資訊，請參閱 [組織實體](../../campaign/using/about-distributed-marketing.md#organizational-entities)。
+對於每個本機實體，會選取審核者以進行促銷活動訂單核准和促銷活動核准。 有關選擇本地審核者的詳細資訊，請參閱「組 [織實體」](../../campaign/using/about-distributed-marketing.md#organizational-entities)。
 
 >[!NOTE]
 >
