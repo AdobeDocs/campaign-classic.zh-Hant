@@ -1,7 +1,7 @@
 ---
-title: 透過JavaScript進行整合（用戶端）
-seo-title: 透過JavaScript進行整合（用戶端）
-description: 透過JavaScript進行整合（用戶端）
+title: 透過 JavaScript 進行整合 (用戶端)
+seo-title: 透過 JavaScript 進行整合 (用戶端)
+description: 透過 JavaScript 進行整合 (用戶端)
 seo-description: null
 page-status-flag: never-activated
 uuid: 19cafecd-cf13-458a-857e-0a45c346f4ed
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
 
-# 透過JavaScript進行整合（用戶端）{#integration-via-javascript-client-side}
+# 透過 JavaScript 進行整合 (用戶端){#integration-via-javascript-client-side}
 
 若要在網頁中呼叫互動引擎，請直接將對JavaScript程式碼的呼叫插入網頁。 此呼叫會傳回定位
 
@@ -106,7 +106,7 @@ Adobe建議使用JavaScript整合方法。
 
 ### 呈現已識別的選件 {#presenting-an-identified-offer}
 
-若要向已識別的連絡人提供選件，程式與此處詳述的程式類似：提 [供匿名優惠](#presenting-an-anonymous-offer)。 在網頁內容中，您需要新增下列指令碼，以識別呼叫引擎期間的連絡人：
+若要向已識別的連絡人提供選件，程式與此處詳述的程式類似： [提供匿名優惠](#presenting-an-anonymous-offer)。 在網頁內容中，您需要新增下列指令碼，以識別呼叫引擎期間的連絡人：
 
 ```
 <script type="text/javascript">
@@ -120,9 +120,9 @@ Adobe建議使用JavaScript整合方法。
 
    在此範例中，識別碼是複合的，因為它是以電子郵件和收件者名稱為基礎。
 
-1. 在網頁顯示期間，指令碼評估可讓您將收件者ID傳遞至選件引擎。 如果ID是複合的，則按鍵會以與進階設定中使用的相同順序顯示，並以|.
+1. 在網頁顯示期間，指令碼評估可讓您將收件者ID傳遞至選件引擎。 如果ID是複合的，則按鍵會以與進階設定中使用的相同順序顯示，並以 |.
 
-   在下列範例中，該連絡人已登入網站，在呼叫互動引擎時，由於其電子郵件和姓名而被識別。
+   在下列範例中，連絡人已登入網站，在呼叫互動引擎時，由於其電子郵件和姓名而被識別。
 
    ```
    <script type="text/javascript">
@@ -135,7 +135,7 @@ Adobe建議使用JavaScript整合方法。
 若要自動產生HTML選件表示法，您可以使用轉換函式。
 
 1. 前往選件空間，然後按一下 **[!UICONTROL Edit functions]** 連結。
-1. Select **[!UICONTROL Overload the HTML rendering function]**.
+1. 選取 **[!UICONTROL Overload the HTML rendering function]**。
 1. 前往標籤 **[!UICONTROL HTML rendering]** 並插入與選件空間中為選件內容定義之欄位相符的變數。
 
    ![](assets/interaction_htmlmode_002.png)
@@ -218,7 +218,7 @@ Adobe建議使用JavaScript整合方法。
    >
    >每個元素必須定義兩次。 CDATA(&quot;_jst&quot;)類型元素可以包含個性化欄位。
    >
-   >不要忘記更新資料庫結構。 如需詳細資訊，請參閱[本小節](../../configuration/using/updating-the-database-structure.md)。
+   >不要忘記更新資料庫結構。 如需詳細資訊，請參閱[本章節](../../configuration/using/updating-the-database-structure.md)。
 
    >[!NOTE]
    >
@@ -274,7 +274,7 @@ Adobe建議使用JavaScript整合方法。
 
    已 **[!UICONTROL Title 2]** 新增 **[!UICONTROL Price]** 和欄位，且不再 **[!UICONTROL Destination URL]** 顯示欄位。
 
-1. **建立選件**
+1. **建立優惠方案**
 
    如需建立選件的詳細資訊，請參 [閱建立選件](../../interaction/using/creating-an-offer.md)。
 
@@ -318,7 +318,7 @@ Adobe建議使用JavaScript整合方法。
 您可使用XML轉換功能來建立選件簡報。 此函式將修改在調用引擎期間返回到HTML頁面的XML節點。
 
 1. 前往選件空間，然後按一下 **[!UICONTROL Edit functions]** 連結。
-1. Select **[!UICONTROL Overload the XML rendering function]**.
+1. 選取 **[!UICONTROL Overload the XML rendering function]**。
 1. 前往標籤 **[!UICONTROL XML rendering]** 並插入所要的函式。
 
    函式可以如下所示：
