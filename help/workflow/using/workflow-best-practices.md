@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -33,7 +30,7 @@ ht-degree: 0%
 
 ### 記錄檔 {#logs}
 
-JavaScript方法是 **[!UICONTROL logInfo()]** 除錯工作流程的絕佳解決方案。 它很有用，但必須謹慎使用，尤其是對於經常運行的活動： 它可以使日誌過載，並顯著增加日誌表的大小。 但你可能還需要更多 **[!UICONTROL logInfo()]**。
+JavaScript方法是 **[!UICONTROL logInfo()]** 除錯工作流程的絕佳解決方案。 它很有用，但必須謹慎使用，尤其是對於經常運行的活動：它可以使日誌過載，並顯著增加日誌表的大小。 但你可能還需要更多 **[!UICONTROL logInfo()]**。
 
 另外還提供兩種解決方案，以協助您：
 
@@ -51,7 +48,7 @@ JavaScript方法是 **[!UICONTROL logInfo()]** 除錯工作流程的絕佳解決
 
    此選項在工 **[!UICONTROL Execution]** 作流屬性的頁籤中可用，它將記錄工具從不同活動中生成的所有SQL查詢。 這是瞭解平台實際執行的最佳方式。 不過，這個選項只應在開發期間暫時使用，而不應在生產時啟動。
 
-不再需要記錄檔時，請加以清除。 工作流歷史記錄不會自動清除： 預設情況下會保留所有消息。 您可以透過功能表或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中的「動作」按鈕，來清除歷史記錄。 選擇清除歷史記錄。
+不再需要記錄檔時，請加以清除。 工作流歷史記錄不會自動清除：預設情況下會保留所有消息。 您可以透過功能表或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中的「動作」按鈕，來清除歷史記錄。 選擇清除歷史記錄。
 要瞭解如何清除日誌，請參閱本文 [檔](../../workflow/using/starting-a-workflow.md)。
 
 ### 工作流程規劃 {#workflow-planning}
@@ -94,9 +91,9 @@ Adobe建議您在專屬資料夾中建立工作流程。
 
 ### 工作流程命名 {#workflow-naming}
 
-由於若未以預期方式執行，可讓工作流程更容易找到並疑難排解，Adobe建議您為工作流程指定適當的名稱和標籤： 填寫工作流程的說明欄位，匯總要執行的程式，讓運算子輕鬆瞭解。
+由於若未以預期方式執行，可讓工作流程更容易找到並疑難排解，Adobe建議您為工作流程指定適當的名稱和標籤：填寫工作流程的說明欄位，彙總要執行的程式，讓運算子輕鬆瞭解。
 
-如果工作流是涉及多個工作流的流程的一部分，則在輸入標籤時可以明確； 使用數字是排序工作流程的絕佳方式（依標籤）。
+如果工作流是涉及多個工作流的流程的一部分，則在輸入標籤時可以明確；使用數字是排序工作流程的絕佳方式（依標籤）。
 
 例如：
 
@@ -112,7 +109,7 @@ Adobe建議您在專屬資料夾中建立工作流程。
 
 * 正常
 * 製作
-* 關鍵
+* 重要
 
 在建立工作流時提供此資訊將有助於您瞭解配置的流程的嚴重性。
 
@@ -124,7 +121,7 @@ Adobe建議您在專屬資料夾中建立工作流程。
 
 您所有在生產環境上執行的排程工作流程都應受到監控，以便在發生錯誤時收到警告。
 
-在工作流屬性中，選擇預設組或自 **[!UICONTROL Workflow supervisors]** 定義組。 請確定至少有一個運算子屬於此群組，並設定電子郵件。
+在工作流屬性中，選擇預設或自定義組 **[!UICONTROL Workflow supervisors]** 中的主管組。 請確定至少有一個運算子屬於此群組，並設定電子郵件。
 
 開始建立工作流之前，請記得定義工作流主管。 如果發生錯誤，將會以電子郵件通知他們。 For more on this, refer to [Managing errors](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
@@ -142,12 +139,12 @@ Workflow HeatMap可讓Adobe Campaign平台管理員監控執行個體的負載�
 
 在開發工作流程時，所有活動都會有名稱，所有Adobe Campaign物件也會有名稱。 當工具產生名稱時，我們建議您在設定名稱時，以明確的名稱來重新命名該名稱。 稍後執行該操作的風險在於，它可能會使用另一個先前活動的名稱中斷使用活動的工作流。 因此，更新名字將是一項困難的工作。
 
-活動名稱可在頁籤中找 **[!UICONTROL Advanced]** 到。 請勿將其留名為 **[!UICONTROL query]**, **[!UICONTROL query1]**&#x200B;但 **[!UICONTROL query11]**&#x200B;請為其指明名稱，例如 **[!UICONTROL querySubscribedRecipients]**。 此名稱將顯示在日誌中，如果適用於SQL日誌，這將有助於在配置工作流時對其進行調試。
+活動名稱可在頁籤中找 **[!UICONTROL Advanced]** 到。 請勿將其留名為 **[!UICONTROL query]**, **[!UICONTROL query1]**&#x200B;但 **[!UICONTROL query11]**&#x200B;請為其指明名稱，例如 **[!UICONTROL querySubscribedRecipients]**。 此名稱將顯示在日誌中，如果適用於SQL日誌，則有助於在配置工作流時對其進行調試。
 
 ### 首次和最後一次活動 {#first-and-last-activities}
 
 * 始終使用活動或活動 **[!UICONTROL Start]** 來啟動您的工 **[!UICONTROL Scheduler]** 作流程。 相關時，您也可以使用活 **[!UICONTROL External signal]** 動。
-* 在建立工作流程時，每個分支僅使用 **[!UICONTROL Scheduler]** 一個活動。 如果工作流的同一分支有多個調度程式（相互連結），則要執行的任務數將呈指數倍增，這將大大超出資料庫。 此規則也適用於具有標籤的所有 **[!UICONTROL Scheduling & History]** 活動。 進一步瞭解排 [程](../../workflow/using/scheduler.md)。
+* When building your workflow, only use one **[!UICONTROL Scheduler]** activity per branch. 如果工作流程的同一分支有多個排程器（相互連結），則要執行的任務數量將呈指數倍增，這將使得資料庫大幅超載。此規則也適用於具有標籤的所有 **[!UICONTROL Scheduling & History]** 活動。 進一步瞭解排 [程](../../workflow/using/scheduler.md)。
 
    ![](assets/wf-scheduler.png)
 
@@ -157,7 +154,7 @@ Workflow HeatMap可讓Adobe Campaign平台管理員監控執行個體的負載�
 
 初始化工作流程活動時，您可能想要新增JavaScript。 您可以在活動的活動標籤 **[!UICONTROL Advanced]** 中執行此操作。
 
-為了更輕鬆地找出工作流程，建議您在活動標籤的開始和結束處使用雙破折號，如下所示： —我的標籤—。
+為了更輕鬆地找出工作流程，建議您在活動標籤的開始和結束處使用雙破折號，如下所示：—我的標籤—。
 
 ### 信號 {#signal}
 
