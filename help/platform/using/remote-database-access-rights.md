@@ -11,22 +11,22 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
 
-# 遠程資料庫訪問權限 {#remote-database-access-rights}
+# 遠程資料庫存取權限 {#remote-database-access-rights}
 
 首先，為了讓使用者可以透過FDA對外部資料庫執行作業，後者必須在Adobe Campaign中擁有特定的命名權限。
 
 1. 在Adobe Campaign **[!UICONTROL Administration > Access Management > Named Rights]** 檔案總管中選取節點。
 1. 指定您選擇的標籤以建立新的權限。
-1. 欄位 **[!UICONTROL Name]** 必須採用下列格式的 **使用者：base@server**，其中：
+1. 欄位 **[!UICONTROL Name]** 必須採用下列格式 **的使用者：base@server**，其中：
 
    * **user** 與外部資料庫中的用戶名相對應。
    * **base** 與外部資料庫的名稱相對應。
@@ -58,9 +58,9 @@ source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **連接到遠程資料庫** | 倉庫使用、資料庫使用和方案權限使用 | 建立連結到AWS帳戶的用戶 | 建立會話權限 | CONNECT權限 | CONNECT權限 | 建立綁定到具有ALL PRIVILEGES的遠程主機的用戶 |
 | **建立表** | 建立方案權限表 | CREATE權限 | 建立表權限 | 建立表權限 | CREATE權限 | CREATE權限 |
-| **建立索引** | 不適用 | CREATE權限 | 索引或建立任何索引權限 | ALTER權限 | CREATE權限 | INDEX權限 |
+| **建立索引** | N/A | CREATE權限 | 索引或建立任何索引權限 | ALTER權限 | CREATE權限 | INDEX權限 |
 | **建立函式** | CREATE FUNCTION ON SCHEMA權限 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | CREATE FUNCTION權限 | 使用權限 | 建立常式權限 |
-| **建立過程** | 不適用 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | USAGE權限（過程是函式） | 建立常式權限 |
+| **建立過程** | N/A | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | USAGE權限（過程是函式） | 建立常式權限 |
 | **刪除對象（表、索引、函式、過程）** | 擁有對象 | 擁有對象或是超級用戶 | 刪除任何&lt;對象>權限 | ALTER權限 | 表格：擁有表索引：擁有索引函式：擁有函式 | DROP權限 |
 | **監控執行** | 對所需對象的MONITOR權限 | 使用EXPLAIN命令無需權限 | INSERT和SELECT權限以及執行EXPLAIN PLAN所基於的語句的必要權限 | SHOWPLAN權限 | 使用EXPLAIN語句無需權限 | SELECT權限 |
 | **寫入資料** | INSERT和／或UPDATE權限（取決於寫操作） | 插入和更新權限 | 插入、更新或插入和更新任何表權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 |
