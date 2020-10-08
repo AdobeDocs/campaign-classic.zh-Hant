@@ -1,7 +1,7 @@
 ---
-title: 在Twitter上發佈
-seo-title: 在Twitter上發佈
-description: 在Twitter上發佈
+title: 在 Twitter 上發佈
+seo-title: 在 Twitter 上發佈
+description: 在 Twitter 上發佈
 seo-description: null
 page-status-flag: never-activated
 uuid: 405bce50-a63c-4bd3-8f03-c71809bb1cfd
@@ -11,16 +11,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 2dc278ce-477c-493d-8abb-8bbdf2e988a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '944'
+ht-degree: 5%
 
 ---
 
 
-# 在Twitter上發佈{#publishing-on-twitter}
+# 在 Twitter 上發佈{#publishing-on-twitter}
 
 ## 在您的Twitter帳戶上發佈 {#publishing-on-your-twitter-accounts}
 
@@ -39,7 +39,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ![](assets/social_twitter_delivery_001.png)
 
-### 選擇主目標 {#selecting-the-main-target}
+### Selecting the main target {#selecting-the-main-target}
 
 選取您要傳送推文至的帳戶。
 
@@ -47,11 +47,11 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
    ![](assets/social_twitter_delivery_002.png)
 
-1. Click the **[!UICONTROL Add]** button.
+1. 按一下 **[!UICONTROL Add]** 按鈕。
 
    ![](assets/social_twitter_delivery_006.png)
 
-1. Select **[!UICONTROL A Twitter account]**.
+1. 選取 **[!UICONTROL A Twitter account]**。
 
    ![](assets/social_twitter_delivery_007.png)
 
@@ -94,7 +94,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 追蹤可在傳送報表以及傳送與服 **[!UICONTROL Edit > Tracking]** 務的標籤中檢視。
 
-追蹤設定與電子郵件傳送的設定相同。 如需詳細資訊，請參閱[本小節](../../delivery/using/monitoring-a-delivery.md)。
+追蹤設定與電子郵件傳送的設定相同。 如需詳細資訊，請參閱[本章節](../../delivery/using/monitoring-a-delivery.md)。
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 我們強烈建議您在最終傳送之前傳送出版物證明，以便在私人Twitter測試頁面上取得出版物的精確轉譯。 如需建立私人Twitter帳戶的詳細資訊，請參閱「在 [Twitter上建立測試帳戶」](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 選擇校對目標的步驟在選擇校 [對目標中有詳細說明](#selecting-the-target-of-the-proof)。
 
-證明傳送與電子郵件傳送相同。 Refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+證明傳送與電子郵件傳送相同。 請參閱[本區段](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
 ### 傳送訊息 {#sending-the-message}
 
@@ -136,7 +136,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 >[!IMPORTANT]
 >
->為了讓工作流程恢復Twitter追隨者清單，必 **[!UICONTROL Synchronize Twitter accounts]** 須在連結至帳戶之服務的「編輯」畫面中勾選方塊。 有關詳情，請參閱：委 [派Adobe Campaign的寫入存取權](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign)。
+>為了讓工作流程恢復Twitter追隨者清單，必 **[!UICONTROL Synchronize Twitter accounts]** 須在連結至帳戶之服務的「編輯」畫面中勾選方塊。 有關詳情，請參閱： [委派Adobe Campaign的寫入存取權](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign)。
 
 對於每個追隨者，Adobe Campaign會恢復下列資訊：
 
@@ -155,7 +155,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 * 訊息不得超過140個字元。
 * 不支援HTML。
-* 您每天不能傳送超過250個直接訊息。 為避免超過此臨界值，您可以分幾波傳送。 波狀傳送的設定方式與電子郵件傳送相同。 如需詳細資訊，請參閱[本小節](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
+* 您每天不能傳送超過250個直接訊息。 為避免超過此臨界值，您可以分幾波傳送。 波狀傳送的設定方式與電子郵件傳送相同。 如需詳細資訊，請參閱[本章節](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
 
 ### 建立傳送 {#creating-the-delivery-}
 
@@ -163,7 +163,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ![](assets/social_twitter_delivery_010.png)
 
-### 選擇主目標 {#selecting-the-main-target-1}
+### Selecting the main target {#selecting-the-main-target-1}
 
 選取您要傳送直接訊息給的追隨者。
 
@@ -171,7 +171,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
    ![](assets/social_twitter_delivery_016.png)
 
-1. Click the **[!UICONTROL Add]** button.
+1. 按一下 **[!UICONTROL Add]** 按鈕。
 
    ![](assets/social_twitter_delivery_006.png)
 
@@ -183,7 +183,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
       >[!IMPORTANT]
       >
-      >您每天不能傳送超過250則訊息。 如果您的Twitter帳戶有超過250位追隨者，我們強烈建議您以波浪形式傳送。 這與電子郵件傳送的程式相同。 Refer to [this section](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+      >您每天不能傳送超過250則訊息。 如果您的Twitter帳戶有超過250位追隨者，我們強烈建議您以波浪形式傳送。 這與電子郵件傳送的程式相同。 請參閱[本區段](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
 
    * 選擇 **[!UICONTROL Filter conditions]** 以定義查詢並查看其結果。 此選項與電子郵件傳送相同。 Refer to [this section](../../platform/using/defining-filter-conditions.md) for more information.
 
