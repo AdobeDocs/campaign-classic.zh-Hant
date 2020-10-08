@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# ACS連接器原理和資料週期{#acs-connector-principles-and-data-cycle}
+# ACS Connector principles and data cycle{#acs-connector-principles-and-data-cycle}
 
 ## 簡介 {#introduction}
 
@@ -39,16 +36,16 @@ ACS Connector將Adobe Campaign v7和Adobe Campaign Standard連接在一起。 �
 >
 >ACS連接器僅適用於托管和混合體系結構。 它不適用於完整的內部部署安裝。
 >
->若要使用此功能，您必須使用Adobe ID(IMS)連線至Campaign。 請參 [閱透過Adobe ID連線](../../integrations/using/about-adobe-id.md)。
+>若要使用此功能，您必須使用Adobe ID(IMS)連線至Campaign。 See [Connecting via an Adobe ID](../../integrations/using/about-adobe-id.md).
 
 本文檔介紹ACS連接器功能。 以下各節提供如何複製資料的資訊以及如何使用複製配置檔案的說明。
 
-* [流程](#process): ACS連接器概述以及如何管理資料複製。
-* [實施](#implementation): 概述如何開始使用ACS連接器，以及如何複製基本和高級資料的說明。
-* [同步設定檔](../../integrations/using/synchronizing-profiles.md): 說明如何複製描述檔以及如何使用描述檔建立傳送。
-* [同步對象](../../integrations/using/synchronizing-audiences.md): 說明如何在Campaign v7中定位收件者清單，然後將清單複製至Campaign Standard做為對象。
-* [同步化Web應用程式](../../integrations/using/synchronizing-web-applications.md): 有關如何將Campaign v7網頁應用程式連結至Campaign Standard的指示。
-* [ACS連接器故障排除](../../integrations/using/troubleshooting-the-acs-connector.md): 檢視常見問題的解答。
+* [流程](#process):ACS連接器概述以及如何管理資料複製。
+* [實施](#implementation):概述如何開始使用ACS連接器，以及如何複製基本和高級資料的說明。
+* [同步設定檔](../../integrations/using/synchronizing-profiles.md):說明如何複製描述檔以及如何使用描述檔建立傳送。
+* [同步對象](../../integrations/using/synchronizing-audiences.md):說明如何在Campaign v7中定位收件者清單，然後將清單複製至Campaign Standard做為對象。
+* [同步化Web應用程式](../../integrations/using/synchronizing-web-applications.md):有關如何將Campaign v7網頁應用程式連結至Campaign Standard的指示。
+* [ACS連接器故障排除](../../integrations/using/troubleshooting-the-acs-connector.md):檢視常見問題的解答。
 
 >[!NOTE]
 >
@@ -105,11 +102,11 @@ ACS連接器可同步Campaign v7和Campaign Standard之間的隔離。
 
 複製的設定檔可供傳送使用，但在Campaign Standard中有某些限制。 請檢閱下列項目，瞭解如何最佳化管理。
 
-* **Campaign Standard的唯讀設定檔**: 複製的設定檔在Campaign Standard中為唯讀。 不過，您可以在Campaign v7中編輯收件者，而且ACS連接器會在Campaign Standard中自動更新修改。
-* **在Campaign Standard中建立的設定檔**: ACS連接器將收件者資料從Campaign v7複製到Campaign Standard，以單一方向複製。 因此，源自Campaign Standard的設定檔不會複製至Campaign v7。
-* **Campaign Standard的基本收件者資料**: ACS連接器可複製適合Campaign Standard的收件者資料。 其中包括收件者的姓名、地址、電子郵件地址、行動電話號碼、家庭電話號碼，以及其他相關聯絡資訊。 如果Campaign v7中提供的其他收件者欄位和自訂定位表格對您的工作流程至關重要，請與您的顧問聯絡。
-* **導入隔離配置檔案**: 不想與其聯絡的個人檔案清單可匯入Campaign v7或Campaign Standard，做為隔離的個人檔案。 配置檔案的狀態包括在應用程式之間的隔離同步中，它們不會用於傳送。
-* **取消訂閱Campaign Standard中的服務**: 取消訂閱傳送的選項不會從Campaign Standard同步到Campaign v7。 不過，您可以設定「促銷活動標準」傳送，將其取消訂閱連結導向至Campaign v7。 按一下取消訂閱連結的收件者的設定檔會在Campaign v7中更新，而且資料會複製到Campaign Standard。 請參 [閱變更取消訂閱連結](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link)。
+* **Campaign Standard的唯讀設定檔**:複製的設定檔在Campaign Standard中為唯讀。 不過，您可以在Campaign v7中編輯收件者，而且ACS連接器會在Campaign Standard中自動更新修改。
+* **在Campaign Standard中建立的設定檔**:ACS連接器將收件者資料從Campaign v7複製到Campaign Standard，以單一方向複製。 因此，源自Campaign Standard的設定檔不會複製至Campaign v7。
+* **Campaign Standard的基本收件者資料**:ACS連接器可複製適合Campaign Standard的收件者資料。 其中包括收件者的姓名、地址、電子郵件地址、行動電話號碼、家庭電話號碼，以及其他相關聯絡資訊。 如果Campaign v7中提供的其他收件者欄位和自訂定位表格對您的工作流程至關重要，請與您的顧問聯絡。
+* **導入隔離配置檔案**:不想與其聯絡的個人檔案清單可匯入Campaign v7或Campaign Standard，做為隔離的個人檔案。 配置檔案的狀態包括在應用程式之間的隔離同步中，它們不會用於傳送。
+* **取消訂閱Campaign Standard中的服務**:取消訂閱傳送的選項不會從Campaign Standard同步到Campaign v7。 不過，您可以設定「促銷活動標準」傳送，將其取消訂閱連結導向至Campaign v7。 按一下取消訂閱連結的收件者的設定檔會在Campaign v7中更新，而且資料會複製到Campaign Standard。 請參 [閱變更取消訂閱連結](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link)。
 * 只有電子郵件廣播和追蹤記錄檔會從Campaign Standard複製到Campaign v7。
 
 ### 帳單 {#billing}
@@ -146,20 +143,20 @@ ACS連接器有兩種實施類型。 兩者一律由Adobe Campaign Consulting團
 
 ![](assets/acs_connect_implementation_3.png)
 
-* **[!UICONTROL `[ACS] Quarantine synchronization`]** (quarantineSync): 此工作流將同步所有隔離資訊。 Campaign v7中的所有新隔離都會複製到Campaign Standard中。 所有新的隔離都會複製到Campaign v7。 這可保證所有排除規則都會在Campaign v7和Campaign Standard之間同步。
-* **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync): 此工作流程用於權限轉換。 請參閱 [權限轉換](#rights-conversion)。
+* **[!UICONTROL `[ACS] Quarantine synchronization`]** (quarantineSync):此工作流將同步所有隔離資訊。 Campaign v7中的所有新隔離都會複製到Campaign Standard中。 所有新的隔離都會複製到Campaign v7。 這可保證所有排除規則都會在Campaign v7和Campaign Standard之間同步。
+* **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync):此工作流程用於權限轉換。 請參閱 [權限轉換](#rights-conversion)。
 
 以下複製工作流程可作為「準備使用」模板使用。 這些項目需由您的Adobe Campaign顧問實作。
 
 ![](assets/acs_connect_implementation_2.png)
 
-* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): 此增量工作流程會將收件者複製至Campaign Standard。 預設情況下，它會複製所有現成可用的收件者欄位。 請參閱 [預設收件者欄位](#default-recipient-fields)。
-* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): 此增量工作流程會將所選服務複製至Campaign Standard。 請參閱同步化Web應 [用程式的使用案例](../../integrations/using/synchronizing-web-applications.md)。
-* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): 此增量工作流程會將所選的Web應用程式複製至Campaign Standard。 Campaign v7網頁應用程式將顯示為Campaign Standard中的著陸頁面。 請參閱同步化Web應 [用程式的使用案例](../../integrations/using/synchronizing-web-applications.md)。
-* **[!UICONTROL `[ACS] New replication`]** （新複製）: 此增量工作流是一個可用於複製自定義表的示例。 請參閱 [進階實作](#advanced-implementation)。
-* **[!UICONTROL `[ACS] Delivery-mesage replication`]** (newDlvMsgQualification): 此增量工作流程會將傳送訊息從Campaign Standard複製到Campaign v7。
-* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): 此增量工作流程會將傳送ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔從Campaign Standard複製到Campaign v7。 它只會考慮從Campaign Standard傳送至屬於Campaign v7 nms:recipients表一部分的描述檔的傳送。
-* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): 此增量工作流程會將傳送ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔從Campaign Standard複製到Campaign v7。 它只會考慮從Campaign Standard傳送至Campaign v7特定表格（定義nms：接收者除外）的描述檔的傳送。
+* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication):此增量工作流程會將收件者複製至Campaign Standard。 預設情況下，它會複製所有現成可用的收件者欄位。 請參閱 [預設收件者欄位](#default-recipient-fields)。
+* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication):此增量工作流程會將所選服務複製至Campaign Standard。 請參閱同步化Web應 [用程式的使用案例](../../integrations/using/synchronizing-web-applications.md)。
+* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication):此增量工作流程會將所選的Web應用程式複製至Campaign Standard。 Campaign v7網頁應用程式將顯示為Campaign Standard中的著陸頁面。 請參閱同步化Web應 [用程式的使用案例](../../integrations/using/synchronizing-web-applications.md)。
+* **[!UICONTROL `[ACS] New replication`]** （新複製）:此增量工作流是一個可用於複製自定義表的示例。 請參閱 [進階實作](#advanced-implementation)。
+* **[!UICONTROL `[ACS] Delivery-mesage replication`]** (newDlvMsgQualification):此增量工作流程會將傳送訊息從Campaign Standard複製到Campaign v7。
+* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流程會將傳送ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔從Campaign Standard複製到Campaign v7。 它只會考慮從Campaign Standard傳送至屬於Campaign v7 nms:recipients表一部分的描述檔的傳送。
+* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流程會將傳送ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔從Campaign Standard複製到Campaign v7。 它只會考慮從Campaign Standard傳送至Campaign v7特定表格（定義nms：接收者除外）的描述檔的傳送。
 
 ### 預設收件者欄位 {#default-recipient-fields}
 
@@ -284,7 +281,7 @@ ACS連接器有兩種實施類型。 兩者一律由Adobe Campaign Consulting團
 
    ![](assets/acs_connect_implementation_5.png)
 
-1. 然後，複製工作流將使用此資訊，並將相應的組織／地理單位添加到每個要複製的對象中。
+1. 然後，複製工作流將使用此資訊，並將相應的組織／地理單位添加到要複製的每個對象中。
 
 ### 進階實作 {#advanced-implementation}
 
