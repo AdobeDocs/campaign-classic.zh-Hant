@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -54,7 +51,7 @@ ht-degree: 6%
 >對於直接郵件傳送，解壓縮檔案格式必須符合下列限制：
 >
 >* 它不能使用選項 **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
->* 如果提取了元素集合，則這些欄位的種子地址將具有空值，除非選 **[!UICONTROL Single row (expert user)]** 擇了該選項。 如需詳細資訊，請參閱[本區段](../../platform/using/exporting-data.md#step-7---data-formatting)。
+>* 如果提取元素集合，則這些欄位的種子地址將具有空值，除非選 **[!UICONTROL Single row (expert user)]** 擇了該選項。 如需詳細資訊，請參閱[本章節](../../platform/using/exporting-data.md#step-7---data-formatting)。
 
 >
 
