@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -181,8 +178,8 @@ ht-degree: 0%
 
 1. 請遵循下列章節所述的Web伺服器整合程式(IIS、Apache):
 
-   * 針對Linux: [與Linux網頁伺服器整合](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * 針對Windows: [與Windows版Web伺服器整合](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. 啟動網站並使用URL測試重新導向：https://tracking.campaign.net/r/test。
 
