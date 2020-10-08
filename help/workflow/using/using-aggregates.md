@@ -1,7 +1,7 @@
 ---
-title: 使用聚合
-seo-title: 使用聚合
-description: 使用聚合
+title: 使用彙總
+seo-title: 使用彙總
+description: 使用彙總
 seo-description: null
 page-status-flag: never-activated
 uuid: 70556745-56b2-4f22-bbc5-7f8106fb0d4a
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9ca649b4-2226-4cfe-bae1-4632c421975b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 2%
 
 ---
 
 
-# 使用聚合{#using-aggregates}
+# 使用彙總{#using-aggregates}
 
 此使用案例詳細資訊如何自動識別最後新增至資料庫的收件者。
 
@@ -38,17 +38,17 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 ## 步驟1:計算匯總結果 {#step-1--calculating-the-aggregate-result}
 
 1. 建立查詢。 在此，目標是計算資料庫中所有收件人的最後一個已知建立日期。 因此，查詢不包含篩選器。
-1. Select **[!UICONTROL Add data]**.
+1. 選取 **[!UICONTROL Add data]**。
 1. 在開啟的視窗中，選取 **[!UICONTROL Data linked to the filtering dimension]** 然後 **[!UICONTROL Filtering dimension data]**。
-1. 在窗 **[!UICONTROL Data to add]** 口中，添加一列，該列計算收件人表中「創 **建日期** 」欄位的最大值。 您可以使用運算式編輯器，或 **直接在欄的欄位中輸入max(@created)****[!UICONTROL Expression]** 。 然後按一下 **[!UICONTROL Finish]** 按鈕。
+1. 在窗 **[!UICONTROL Data to add]** 口中，添加一列，該列計算收件人表中「創 **建日期** 」欄位的最大值。 您可以使用運算式編輯器，或 **直接在欄的欄位中輸入max(@created)****[!UICONTROL Expression]** 。 Then click the **[!UICONTROL Finish]** button.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. 按一 **[!UICONTROL Edit additional data]** 下 **[!UICONTROL Advanced parameters...]**。 勾選 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 選項。
+1. 按一下 **[!UICONTROL Edit additional data]**，之後 **[!UICONTROL Advanced parameters...]**。核取 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 選項。
 
    此選項可確保不會因此顯示所有收件者，而且不會保留明確新增的資料。 在此例中，它是指收件者最後建立的日期。
 
-   保留選 **[!UICONTROL Remove duplicate rows (DISTINCT)]** 項為選中狀態。
+   保留 **[!UICONTROL Remove duplicate rows (DISTINCT)]** 選項為已核取狀態。
 
 ## 步驟2:連結收件人和聚合函式結果 {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
@@ -60,6 +60,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
    * 選擇與聚合相關的臨時方案。 此架構的資料將添加到主集的成員中。
    * 選擇 **[!UICONTROL Use a simple join]** 將聚合結果連結到主集的每個收件人。
    * 最後，指定連結為 **[!UICONTROL Type 11 simple link]**。
+
    ![](assets/datamanagement_usecase_3.png)
 
 因此，聚合結果與每個接收者連結。
@@ -80,6 +81,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Value]**: `toDate([datemax/expr####])`，其中expr####與聚合函式查詢中指定的聚合相關。
+
    ![](assets/datamanagement_usecase_4.png)
 
 因此，分割活動的結果與與上次已知建立日期建立的同一天建立的收件人有關。
