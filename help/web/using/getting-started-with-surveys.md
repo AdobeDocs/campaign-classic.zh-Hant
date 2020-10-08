@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 2df82006-dcc3-4b07-bc36-b646b1c27aaa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +56,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 調查至少必 **須包含** 下列三個元件：頁面、儲存方塊和結束頁面。
 
-* 要建立頁面，請在編輯 **[!UICONTROL Page]** 器的左側部分中選擇對象，並將其放在中間部分，如下所示：
+* 要建立頁面，請在編 **[!UICONTROL Page]** 輯器的左側部分中選擇該對象，並將其放在中間部分，如下所示：
 
    ![](assets/s_ncs_admin_survey_new_page.png)
 
@@ -95,7 +95,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   輸入問題的標籤，並將答案欄位插入問題的子分支。 若要這麼做，在建立答案欄位時，必須選取連結至問題的節點。 使用圖 **[!UICONTROL drop-down listx]** 示或按一 **[!UICONTROL Selection controls]** 下滑鼠右鍵來新增，如下所示：
+   輸入問題的標籤，並將答案欄位插入為問題的子分支。 若要這麼做，在建立答案欄位時，必須選取連結至問題的節點。 使用圖 **[!UICONTROL drop-down listx]** 示或按一 **[!UICONTROL Selection controls]** 下滑鼠右鍵來新增，如下所示：
 
    ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -138,7 +138,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/s_ncs_admin_survey_start_publ.png)
 
-   調查的狀態會變更為：線 **上**。
+   調查的狀態會變更為： **線上**。
 
    ![](assets/survey_published.png)
 
