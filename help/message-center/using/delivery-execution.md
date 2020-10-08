@@ -1,7 +1,7 @@
 ---
-title: 傳送執行
-seo-title: 傳送執行
-description: 傳送執行
+title: 傳遞執行
+seo-title: 傳遞執行
+description: 傳遞執行
 seo-description: null
 page-status-flag: never-activated
 uuid: d4f4cea7-783b-45d3-b004-297104f0a906
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: afb375de-2de3-47ad-8b37-664cc04864e8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 9%
 
 ---
 
 
-# 傳送執行{#delivery-execution}
+# 傳遞執行{#delivery-execution}
 
 >[!NOTE]
 >
@@ -38,4 +38,4 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 >[!NOTE]
 >
->若是代管或混合式安裝，如果您已升級至「增強MTA」，所有交易訊息也可能會隨Adobe Campaign Enhanced MTA一起傳送，以改善傳遞能力、吞吐量和彈回處理。 所有影響與標準行銷訊息的影響相同，並在 [Adobe Campaign Enhanced MTA檔案中詳細說明](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) 。
+>若是代管或混合式安裝，如果您已升級至「增強MTA」，所有交易訊息也可能會隨Adobe Campaign Enhanced MTA一起傳送，以改善傳遞能力、吞吐量和彈回處理。 所有影響與標準行銷訊息的影響相同，並在 [Adobe Campaign Enhanced MTA檔案中詳細說明](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html) 。
