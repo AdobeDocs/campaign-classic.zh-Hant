@@ -1,7 +1,7 @@
 ---
-title: 關於活動活動
-seo-title: 關於活動活動
-description: 關於活動活動
+title: 關於事件活動
+seo-title: 關於事件活動
+description: 關於事件活動
 seo-description: null
 page-status-flag: never-activated
 uuid: 68a7c3b1-5f6b-482d-97d1-b7b398284ab5
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 7714d028-018e-4728-8c92-42021ed280e0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 11%
 
 ---
 
 
-# 關於活動活動{#about-event-activities}
+# 關於事件活動{#about-event-activities}
 
 這些活動的主要任務是等待事件。 例如，它可以是收到檔案、電子郵件或程式發送的信號。
 
