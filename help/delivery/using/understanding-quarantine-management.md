@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2576'
 ht-degree: 15%
@@ -96,7 +93,7 @@ Administrators can list the addresses in quarantine for the entire platform from
 
 ### Identifying quarantined addresses for a recipient {#identifying-quarantined-addresses-for-a-recipient}
 
-您可以查找任何收件者的電子郵件地址狀態。 若要這麼做，請選取收件者描述檔，然後按一下標 **[!UICONTROL Deliveries]** 簽。 對於所有傳送給該收件人的郵件，您可以瞭解地址是否失敗、分析期間是否隔離等。 對於每個資料夾，您只能顯示電子郵件地址處於隔離狀態的收件人。 若要這麼做，請使用應用程 **[!UICONTROL Quarantined email address]** 式篩選。
+您可以查看任何收件者的電子郵件地址狀態。 若要這麼做，請選取收件者描述檔，然後按一下標 **[!UICONTROL Deliveries]** 簽。 對於所有傳送給該收件人的郵件，您可以瞭解地址是否失敗、分析期間是否隔離等。 對於每個資料夾，您只能顯示電子郵件地址處於隔離狀態的收件人。 若要這麼做，請使用應用程 **[!UICONTROL Quarantined email address]** 式篩選。
 
 ![](assets/tech_quarant_recipients_filter.png)
 
@@ -168,7 +165,7 @@ If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/tec
 * 傳送期間連線中斷：重試時，失敗原因為 **[!UICONTROL Unreachable]**。
 * 服務配置問題（證書無效、證書密碼無效、證書無效）:無重試，失敗原因為 **[!UICONTROL Unreachable]**。
 
-APNS伺服器會以非同步方式通知Adobe Campaign，裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 此工 **[!UICONTROL mobileAppOptOutMgt]** 作流程每6小時執行一次，以聯絡APNS意見服務以更新 **AppSubscriptionRcp** 表。 對於所有已停用的Token, **Disabled** （停用）欄位會設為 **True** ，而連結至該裝置Token的訂閱會自動排除在未來傳送中。
+APNS伺服器會以非同步方式通知Adobe Campaign，裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 此工 **[!UICONTROL mobileAppOptOutMgt]** 作流程每6小時執行一次，以聯絡APNS意見服務以更新 **AppSubscriptionRcp** 表。 對於所有停用的Token, **Disabled** （停用）欄位會設為 **True** ，而連結至該裝置Token的訂閱會自動排除在未來傳送中。
 
 **適用於iOS - HTTP/2連接器**
 
