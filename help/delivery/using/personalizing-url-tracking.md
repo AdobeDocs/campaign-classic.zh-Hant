@@ -1,7 +1,7 @@
 ---
-title: 個人化URL追蹤
-seo-title: 個人化URL追蹤
-description: 個人化URL追蹤
+title: 個人化 URL 追蹤
+seo-title: 個人化 URL 追蹤
+description: 個人化 URL 追蹤
 seo-description: null
 page-status-flag: never-activated
 uuid: e054d106-9cf2-49db-aa16-2fdbc0777c8b
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: f0e8a50b-d4a4-4271-87f7-802ef410a0f9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 12%
 
 ---
 
 
-# 個人化URL追蹤{#personalizing-url-tracking}
+# 個人化 URL 追蹤{#personalizing-url-tracking}
 
 進階訊息追蹤設定可透過傳送精靈 **[!UICONTROL Tracking & Images]** 工具列中的圖示存取。
 
@@ -44,7 +44,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 追蹤的URL會以樹狀結構列在中央視窗中。
 
-您可以針對訊息的每個URL個別啟用或停用追蹤。 如需詳細資訊，請參閱[本小節](../../delivery/using/how-to-configure-tracked-links.md)。
+您可以針對訊息的每個URL個別啟用或停用追蹤。 如需詳細資訊，請參閱[本章節](../../delivery/using/how-to-configure-tracked-links.md)。
 
 此標 **[!UICONTROL Advanced]** 簽可讓您個人化追蹤URL和開啟URL的計算公式。
 
