@@ -1,5 +1,5 @@
 ---
-title: 查詢傳送資訊
+title: 查詢傳遞資訊
 description: 瞭解如何查詢傳送資訊
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 1%
 
 ---
 
 
-# 查詢傳送資訊 {#querying-delivery-information}
+# 查詢傳遞資訊 {#querying-delivery-information}
 
 ## 特定傳送的點按次數 {#number-of-clicks-for-a-specific-delivery}
 
@@ -46,7 +46,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    操作步驟：
 
-   * 按一下 **[!UICONTROL Add]** 欄位右側的圖 **[!UICONTROL Output columns]** 示。 在窗口 **[!UICONTROL Formula type]** 中，選擇選 **[!UICONTROL Edit the formula using an expression]** 項並按一下 **[!UICONTROL Next]**。 在窗口 **[!UICONTROL Field to select]** 中，按一下 **[!UICONTROL Advanced selection]**。
+   * 按一下 **[!UICONTROL Add]** 欄位右側的圖 **[!UICONTROL Output columns]** 示。 在窗口 **[!UICONTROL Formula type]** 中，選擇選 **[!UICONTROL Edit the formula using an expression]** 項並按一下 **[!UICONTROL Next]**。 In the **[!UICONTROL Field to select]** window, click **[!UICONTROL Advanced selection]**.
 
       ![](assets/query_editor_tracklog_06.png)
 
@@ -56,7 +56,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
       ![](assets/query_editor_nveau_18.png)
 
-      按一下 **[!UICONTROL Next]**.
+      按一下 **[!UICONTROL Next]**。
 
    * 選擇字 **[!UICONTROL Primary key (@id)]** 段。 輸 **[!UICONTROL count (primary key)]** 出列已配置。
 
@@ -80,29 +80,29 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    * 在特定傳送的指定期間內恢復追蹤記錄檔。 需要三種篩選條件：兩個日期條件，將搜索期間設定在當前日期前2週和當前日期前2週之間；以及另一個條件，以限制搜尋至特定的傳送。
 
-      在視 **[!UICONTROL Target element]** 窗中，設定將追蹤記錄納入其中的開始日期。 按一下 **[!UICONTROL Add]**. 顯示條件行。 按一下 **[!UICONTROL Expression]** 函式以編輯 **[!UICONTROL Edit expression]** 欄。 在窗口 **[!UICONTROL Field to select]** 中，選擇 **[!UICONTROL Date (@logDate)]**。
+      在視 **[!UICONTROL Target element]** 窗中，設定將追蹤記錄納入其中的開始日期。 按一下 **[!UICONTROL Add]**。顯示條件行。 按一下 **[!UICONTROL Expression]** 函式以編輯 **[!UICONTROL Edit expression]** 欄。 在窗口 **[!UICONTROL Field to select]** 中，選擇 **[!UICONTROL Date (@logDate)]**。
 
       ![](assets/query_editor_nveau_23.png)
 
       選擇運算 **[!UICONTROL greater than]** 符。 在列中 **[!UICONTROL Value]** ，按一下 **[!UICONTROL Edit expression]**，然後在窗口 **[!UICONTROL Formula type]** 中選擇 **[!UICONTROL Process on dates]**。 最後，在 **[!UICONTROL Current date minus n days]**&#x200B;中輸入&quot;15&quot;。
 
-      按一下 **[!UICONTROL Finish]**.
+      按一下 **[!UICONTROL Finish]**。
 
       ![](assets/query_editor_nveau_24.png)
 
    * 若要選取追蹤記錄搜尋結束日期，請按一下以建立第二個條件 **[!UICONTROL Add]**。 在欄中， **[!UICONTROL Expression]** 再次選 **[!UICONTROL Date (@logDate)]** 擇。
 
-      選擇運算 **[!UICONTROL less than]** 符。 在欄中 **[!UICONTROL Value]** 按一下 **[!UICONTROL Edit expression]**。 對於日期處理，請轉至 **[!UICONTROL Formula type]** 窗口，在中輸入&quot;1&quot; **[!UICONTROL Current date minus n days]**。
+      選擇運算 **[!UICONTROL less than]** 符。 In the **[!UICONTROL Value]** column, click **[!UICONTROL Edit expression]**. 對於日期處理，請轉至 **[!UICONTROL Formula type]** 窗口，在中輸入&quot;1&quot; **[!UICONTROL Current date minus n days]**。
 
-      按一下 **[!UICONTROL Finish]**.
+      按一下 **[!UICONTROL Finish]**。
 
       ![](assets/query_editor_nveau_65.png)
 
       現在，我們要設定第三個篩選條件，即我們查詢所關注的傳送標籤。
 
-   * 按一下函 **[!UICONTROL Add]** 數以建立另一個篩選條件。 在欄中 **[!UICONTROL Expression]** 按一下 **[!UICONTROL Edit expression]**。 在窗口 **[!UICONTROL Field to select]** 中，在節 **[!UICONTROL Label]** 點中選 **[!UICONTROL Delivery]** 擇。
+   * 按一下函 **[!UICONTROL Add]** 數以建立另一個篩選條件。 In the **[!UICONTROL Expression]** column, click **[!UICONTROL Edit expression]**. 在窗口 **[!UICONTROL Field to select]** 中，在節 **[!UICONTROL Label]** 點中選 **[!UICONTROL Delivery]** 擇。
 
-      按一下 **[!UICONTROL Finish]**.
+      按一下 **[!UICONTROL Finish]**。
 
       ![](assets/query_editor_nveau_66.png)
 
@@ -168,7 +168,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    ![](assets/s_advuser_query_sample1.1.png)
 
-   按一 **[!UICONTROL Finish]** 下以確認選擇。
+   Click **[!UICONTROL Finish]** to confirm selection.
 
    若要僅復原不到兩週的追蹤記錄檔，請選取運算 **[!UICONTROL Greater than]** 元。
 
@@ -202,17 +202,17 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    ![](assets/query_editor_ex_09.png)
 
-1. 開啟 **[!UICONTROL Split]** 盒子。 在標籤 **[!UICONTROL General]** 中，輸入標籤：例 **如，根據行為** 分割。
+1. 開啟 **[!UICONTROL Split]** 盒子。 在標籤 **[!UICONTROL General]** 中，輸入標籤： **例如，根據行為** (Split)進行分割。
 
    ![](assets/query_editor_ex_04.png)
 
 1. 在頁籤 **[!UICONTROL Subsets]** 中，定義第一個拆分分支。 例如，輸入此 **分支的** 「已點按」標籤。
-1. 選擇選 **[!UICONTROL Add a filtering condition on the incoming population]** 項。 按一下 **[!UICONTROL Edit]**.
+1. 選擇選 **[!UICONTROL Add a filtering condition on the incoming population]** 項。 按一下 **[!UICONTROL Edit]**。
 1. 在視窗 **[!UICONTROL Targeting and filtering dimension]** 中，按兩下篩選 **[!UICONTROL Recipients of a delivery]** 器。
 
    ![](assets/query_editor_ex_05.png)
 
-1. 在窗口 **[!UICONTROL Target element]** 中，選擇要應用於此分支的行為： **[!UICONTROL Recipients having clicked (email)]**。
+1. 在窗口 **[!UICONTROL Target element]** 中，選擇要應用於此分支的行為： **[!UICONTROL Recipients having clicked (email)]**.
 
    在下方，選擇 **[!UICONTROL Delivery specified by the transition]** 選項。 這項功能會自動復原第一次傳送期間鎖定的人員。
 
@@ -225,14 +225,14 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
    ![](assets/query_editor_ex_06.png)
 
 1. 將顯示另一個子頁籤。 將其命名為「**Did not click**」。
-1. 按一下 **[!UICONTROL Add a filtering condition for the incoming population]**. 然後按一 **[!UICONTROL Edit...]**&#x200B;下。
+1. 按一下 **[!UICONTROL Add a filtering condition for the incoming population]**。然後按一下 **[!UICONTROL Edit...]**。
 
    ![](assets/query_editor_ex_07.png)
 
 1. 在視 **[!UICONTROL Delivery recipients]** 窗中按一 **[!UICONTROL Targeting and filtering dimension]** 下。
 1. 在窗口 **[!UICONTROL Target element]** 中，選擇行 **[!UICONTROL Recipients who did not click (email)]** 為。 選擇 **[!UICONTROL Delivery specified by the transition]** 最後一個分支的選項。
 
-   現在 **[!UICONTROL Split]** 已完全配置該框。
+   現在 **[!UICONTROL Split]** 已完全配置此框。
 
    ![](assets/query_editor_ex_03.png)
 
