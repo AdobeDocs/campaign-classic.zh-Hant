@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 29339aad-fd8e-4dae-8f6e-2db87221ad04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
@@ -71,7 +71,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ### 輸入頻道（網頁） {#input-channel--web-page-}
 
-若要在呼叫引擎時傳輸其他資料，您必須將 **interactionGlobalCtx** 變數新增至網頁的JavaScript程式碼。 將包含 **呼叫資料** 的「互動」節點插入此變數。 必須遵循與 **nms:interaction架構中相同的xml結** 構。 請參閱：其 [他資料設定](#additional-data-configuration)。
+若要在呼叫引擎時傳輸其他資料，您必須將 **interactionGlobalCtx** 變數新增至網頁的JavaScript程式碼。 將包含 **呼叫資料** 的「互動」節點插入此變數。 必須遵循與 **nms:interaction架構中相同的xml結** 構。 請參閱： [其他資料設定](#additional-data-configuration)。
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -79,7 +79,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### 輸出通道 {#output-channel}
 
-必須建立一個定位工作流，該工作流將載入工作表中的其他資料，方法是遵守與 **nms:interaction架構中相同的xml結構和內部名稱** 。 請參閱：其 [他資料設定](#additional-data-configuration)。
+必須建立一個定位工作流，該工作流將載入工作表中的其他資料，方法是遵守與 **nms:interaction架構中相同的xml結構和內部名稱** 。 請參閱： [其他資料設定](#additional-data-configuration)。
 
 ## 使用其他資料 {#using-additional-data}
 
@@ -95,7 +95,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 >
 >您必須限制定義資料之渠道的規則。 在我們的範例中，我們會限制傳入Web頻道（欄位）上&#x200B;**[!UICONTROL Taken into account if]** 的規則。
 
-### 個人化 {#personalization}
+### 個人化{#personalization}
 
 您也可以在個人化選件時使用此額外資料。 例如，您可以新增導覽語言的條件
 
@@ -119,7 +119,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 >[!NOTE]
 >
->您必須已擴展 **nms:compositionRcp** schema並聲明將包含要儲存的資料的欄位。 如需詳細資訊：其 [他資料設定](#additional-data-configuration)。
+>您必須已擴展 **nms:compositionRcp** schema並聲明將包含要儲存的資料的欄位。 如需詳細資訊： [其他資料設定](#additional-data-configuration)。
 
 在選件空間中，移至標籤， **[!UICONTROL Storage]** 然後按一下按 **[!UICONTROL Add]** 鈕。
 
