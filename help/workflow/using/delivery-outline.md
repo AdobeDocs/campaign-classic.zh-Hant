@@ -1,7 +1,7 @@
 ---
-title: 傳送大綱
-seo-title: 傳送大綱
-description: 傳送大綱
+title: 傳遞大綱
+seo-title: 傳遞大綱
+description: 傳遞大綱
 seo-description: null
 page-status-flag: never-activated
 uuid: 2b924cc6-6b71-481e-acab-2d035bbc2852
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 3%
 
 ---
 
 
-# 傳送大綱{#delivery-outline}
+# 傳遞大綱{#delivery-outline}
 
 傳送大綱可讓您在促銷活動工作流程中使用大綱。 必須事先在促銷活動中建立大綱。
 
@@ -49,6 +49,7 @@ source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
       選件引擎會考量到選件權重和資格規則。
 
    * 如果您未勾選此方塊，傳送大綱中的所有選件都會顯示，而不會呼叫選件引擎。
+
    預覽會考量傳送中指定的選件數。 執行工作流時，會考慮到在傳送大綱中指定的數字。
 
    ![](assets/int_compo_offre_wf1.png)
