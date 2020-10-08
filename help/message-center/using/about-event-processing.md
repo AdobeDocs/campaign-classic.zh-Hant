@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: a78c9986-7c49-47db-99a0-9f0949c4dee7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 4%
 
 ---
 
@@ -30,10 +30,10 @@ source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
 
 要處理事務性消息傳遞事件，必須應用以下步驟：
 
-1. 事件收集、
+1. 事件集合,
 1. 事件傳輸到消息模板，
 1. 利用個人化資料豐富事件，
-1. 傳送執行、
+1. 傳遞執行,
 1. 回收連結傳送失敗的事件（此步驟可透過Adobe Campaign工作流程執行）。
 
 ## 事件狀態 {#event-statuses}
