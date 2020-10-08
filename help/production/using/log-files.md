@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f018df9a2f7516b92f1f25a757065ef268136a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 2%
 
 ---
 
@@ -26,13 +26,13 @@ source-git-commit: 9f018df9a2f7516b92f1f25a757065ef268136a5
 
 ![](assets/d_ncs_directory.png)
 
-每個 **nlserver** 模組都生成一個保存在以下目錄中的日誌檔案： **`<installation directory>`/var/`<instance>`/log/`<module>`.log **。
+每個 **nlserver** 模組都生成一個保存在以下目錄中的日誌檔案： **`<installation directory>`/var/`<instance>`/log/`<module>`.log**。
 
 nlserver syslogd **** 模組將日誌保存到磁碟。 此模組與Unix **syslog守護程式類似**，但已經適用於Unix和Windows之間的相容性。 其他Adobe Campaign模組不會將其記錄檔儲存至磁碟；他們通過發送UDP資料包將 **此任務委派給** syslogd模組。
 
 預設情況下，Adobe Campaign平台上安裝了 **syslogd** 模組，但可以使用另一個 **syslog守護程式**。 此模組在日誌目錄中建立日 **志文** 件。
 
-多實例模組的日誌儲存在以下目錄中： **`<installation directory>`/var/default/log/**。 所有例項都共用相同的記錄檔(例如**web.log **)。
+多實例模組的日誌儲存在以下目錄中： **`<installation directory>`/var/default/log/**。 所有例項都共用相同的記錄檔(例如 **web.log**)。
 
 其他模組的日誌儲存在以實例命名的子資料夾中。 每個實例都有自己的日誌檔案。
 
@@ -62,7 +62,7 @@ nlserver syslogd **** 模組將日誌保存到磁碟。 此模組與Unix **syslo
 
 為了最佳化效能和儲存空間，logins.log檔案會分割為多個檔案，每天一個檔案(logins.yy-mm-dd.log)，最多可保留365個檔案。 serverConf.xml中syslogd(**** maxNumberOfLoginsFiles選項)下的天數可以更改。 請參閱伺服器組態檔 [案上的檔案](../../installation/using/the-server-configuration-file.md#syslogd)。
 
-根據預設，每個模組和每個實例的日誌限制為兩個10 MB的檔案。 第二個檔案稱為： **`<modulename>`_2.log **。 因此，每個模組和每個實例的日誌大小限制為2*10MB。
+根據預設，每個模組和每個實例的日誌限制為兩個10 MB的檔案。 第二個檔案稱為： **`<modulename>`_2.log**。 因此，每個模組和每個實例的日誌大小限制為2*10MB。
 
 不過，您可以保留較大的檔案。 若要啟用此功能，請變更conf/serverConf.xml檔 **案syslogd節點中** maxFileSizeMb=&quot;10&quot; **設定的** 值 **** 。 此值表示日誌檔案的最大大小(MB)。
 
