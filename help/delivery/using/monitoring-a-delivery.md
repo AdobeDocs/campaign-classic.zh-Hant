@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 2%
@@ -70,7 +67,7 @@ ht-degree: 2%
 >
 >如果傳送未啟用追蹤，則不會顯示此標籤。
 
-追蹤設定是在傳送精靈的適當階段執行。 請參 [閱如何設定追蹤的連結](../../delivery/using/how-to-configure-tracked-links.md)。
+追蹤設定是在傳送精靈的適當階段執行。 See [How to configure tracked links](../../delivery/using/how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** 資料會在傳送報表中解譯。 請參閱[本區段](../../reporting/using/delivery-reports.md)。
 
@@ -97,7 +94,7 @@ ht-degree: 2%
 * 如果您的傳送狀態不正確，請檢查是否已完成此傳送的所有必要核准，或是執行 **[!UICONTROL operationMgt]** 和工 **[!UICONTROL deliveryMgt]** 作流程時未出現錯誤。 這也可能是因為傳送時使用了傳送執行個體上未設定的相似性。
 * 如果您的交貨指標仍為零，並且您處於中間採購配置中，請檢查技術工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果狀態不是，請啟動它 **[!UICONTROL Started]**。 然後，您可以嘗試在Adobe Campaign瀏覽器中按一下滑鼠右鍵並選取 **[!UICONTROL Actions]** >，重新計算指標 **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * 如果您的傳送計數器與您的傳送不符，請嘗試在Adobe Campaign檔案總管中以滑鼠右鍵按一下相關傳送，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
-* 如果您的交貨計數器不是中部採購部署的最新版本，請檢查技術工 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 作流程是否正在執行。 如需關於此項目的詳細資訊，請參閱此[頁面](../../installation/using/mid-sourcing-deployment.md)。
+* 如果您的傳送計數器不是中部採購部署的最新版本，請檢查技術工作 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 流程是否正在執行。 如需關於此項目的詳細資訊，請參閱此[頁面](../../installation/using/mid-sourcing-deployment.md)。
 
 您也可以透過傳送控制面板，使用不同的報表來追蹤傳送。 如需詳細資訊，請參閱本[區段](../../reporting/using/delivery-reports.md)。
 
@@ -118,7 +115,7 @@ ht-degree: 2%
 按一下按 **[!UICONTROL Send]** 鈕後，您的傳送似乎比往常花了更長的時間。 這可能是由不同的元素所造成：
 
 * 有些電子郵件提供者可能已將您的IP位址新增至區塊清單。 在此情況下，請檢查您的廣播並參 [閱本節](../../delivery/using/about-deliverability.md)。
-* 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign傳送 [最佳實務](../../delivery/using/delivery-best-practices.md) ，以瞭解內容准則。
+* 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign傳遞 [最佳實務](../../delivery/using/delivery-best-practices.md) ，以瞭解內容准則。
 * Adobe Campaign MTA中可能已發生調節。 這是由以下原因造成：
 
    * 附加的消息(**[!UICONTROL quotas met]** 消息):已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](../../delivery/using/deliverability-faq.md) . 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
@@ -290,4 +287,4 @@ ht-degree: 2%
 
 如果傳送未在精確的排程日期執行，則可能與伺服器時區之間的差異相關。 中間來源補充實例和生產實例可以位於不同的時區。
 
-例如，如果中間採購實例位於布里斯班時區，生產實例位於達爾文時區，兩個時區彼此相距半小時，那麼在審計日誌中，您會清楚地看到，如果中間採購實例排程在11:56生產，那麼中間採購實例排程在12:26的交貨將相差半小時。
+例如，如果中間採購實例位於布里斯班時區，生產實例位於達爾文時區，兩個時區彼此相距半小時，那麼在審計日誌中，您會清楚地看到，如果將中間採購的交貨時間安排在11:56，那麼中間採購的相同交貨時間將是12:26，差半小時。
