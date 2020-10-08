@@ -1,7 +1,7 @@
 ---
-title: 配置原則
-seo-title: 配置原則
-description: 配置原則
+title: 設定原則
+seo-title: 設定原則
+description: 設定原則
 seo-description: null
 page-status-flag: never-activated
 uuid: 6315d526-b820-46ab-96c7-e64e101c6a7d
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 5%
 
 ---
 
 
-# 配置原則{#configuration-principle}
+# 設定原則{#configuration-principle}
 
 Adobe Campaign平台是以例項的概念為基礎，類似於Apache所使用的虛擬主機。 此操作模式允許您通過為伺服器分配多個實例來共用伺服器。 實例彼此完全分離，並使用它們自己的資料庫和配置檔案操作。
 
@@ -30,7 +30,7 @@ Adobe Campaign平台是以例項的概念為基礎，類似於Apache所使用的
 
    >[!CAUTION]
    >
-   >若要使用內部識 **別碼登入** ，您必須事先定義密碼。 如需詳細資訊，請參閱[本小節](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   >若要使用內部識 **別碼登入** ，您必須事先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
 * 多種技術性伺服器組態：這些配置都可以在實例的特定配置中過載。
 
