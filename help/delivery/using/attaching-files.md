@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -36,7 +33,7 @@ ht-degree: 0%
 可能有兩種情況：
 
 * 選取檔案，並依原樣附加至傳送。
-* 為每個收件者個人化附件的內容。 在這種情況下，您需要建立計算 **附件**: 附件的名稱在每條消息的發送時計算，具體取決於收件人。 如果您有「可變數位列印」選項，也可以在傳送時將內容個人化並轉 **換為PDF格式** 。
+* 為每個收件者個人化附件的內容。 在這種情況下，您需要建立計算 **附件**:附件的名稱在每條消息的發送時計算，具體取決於收件人。 如果您有「可變數位列印」選項，也可以在傳送時將內容個人化並轉 **換為PDF格式** 。
 
 >[!NOTE]
 >
@@ -51,7 +48,7 @@ ht-degree: 0%
 >您可以附加數個檔案至傳送。 附件可以是任何格式，包括壓縮格式。
 
 1. 按一下 **[!UICONTROL Attachments]** 連結。
-1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
+1. 按一下 **[!UICONTROL Add]** 按鈕。
 1. 按一 **[!UICONTROL File...]** 下以選取要附加至傳送的檔案。
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -87,7 +84,7 @@ ht-degree: 0%
 
 ### 附加本地檔案 {#attach-a-local-file}
 
-如果附件是本地檔案，請選擇以下選項： **[!UICONTROL File name is specified when creating the delivery template]**. 檔案會在本機選取並上傳至伺服器。 請遵循下列步驟：
+如果附件是本地檔案，請選擇以下選項： **[!UICONTROL File name is specified when creating the delivery template]**. 檔案會在本機選取並上傳至伺服器。 請遵循以下步驟：
 
 1. 在欄位中選取要上傳的 **[!UICONTROL Local file]** 檔案。
 1. 視需要指定標籤。 在消息傳遞系統中查看時，標籤會替換檔案名。 如果未指定任何內容，則預設情況下會使用檔案名。
@@ -132,7 +129,7 @@ ht-degree: 0%
 
 ### 附加計算檔案 {#attach-a-calculated-file}
 
-您可以在準備交貨期間計算附件名稱。 若要這麼做，請選取選項 **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**。
+您可以在準備交貨期間計算附件名稱。 To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >
