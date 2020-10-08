@@ -1,7 +1,7 @@
 ---
-title: 中部署
-seo-title: 中部署
-description: 中部署
+title: 中間來源部署
+seo-title: 中間來源部署
+description: 中間來源部署
 seo-description: null
 page-status-flag: never-activated
 uuid: e359c486-7ee6-4295-80fc-4c371a0ef068
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 19220d8e-9494-46b4-9aa0-4c4a729aea96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 2%
 
 ---
 
 
-# 中部署{#mid-sourcing-deployment}
+# 中間來源部署{#mid-sourcing-deployment}
 
 此配置是代管(ASP)配置和內部化之間的最佳中間解決方案。 對外執行元件是在Adobe Campaign所代管的「中部採購」伺服器上執行。
 
@@ -35,7 +35,7 @@ source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
 * 執行和彈回管理模組在實例上被禁用。
 * 應用程式已設定為在使用SOAP呼叫（透過HTTP或HTTPS）驅動的遠端「中端來源」伺服器上執行訊息。
 
-## 功能 {#features}
+## Features {#features}
 
 ### 優勢 {#advantages}
 
