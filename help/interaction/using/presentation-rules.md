@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 8ef303b4-d9ce-40ee-a6c6-ed5012ab8eb8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
 
 # 簡報規則{#presentation-rules}
 
-## 建立簡報規則 {#creating-a-presentation-rule}
+## Creating a presentation rule {#creating-a-presentation-rule}
 
 在我們的資料庫中，有幾份旅行優惠，適用於歐洲、非洲、美國和加拿大。 我們想要寄送優惠到加拿大，但如果收件者拒絕此類優惠，我們不想再寄給他們
 
