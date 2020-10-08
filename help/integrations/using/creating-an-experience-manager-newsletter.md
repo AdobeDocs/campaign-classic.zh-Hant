@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 627ade78-96b3-4a6e-9ace-74610a3c8d1a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 1%
@@ -23,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# 建立Experience Manager電子報{#creating-an-experience-manager-newsletter}
+# Creating an Experience Manager newsletter{#creating-an-experience-manager-newsletter}
 
 此整合可用來建立Adobe Experience Manager中的電子報，然後在Adobe Campaign中用作電子郵件促銷活動的一部分。
 
