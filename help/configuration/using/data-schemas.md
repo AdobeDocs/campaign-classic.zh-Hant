@@ -1,7 +1,7 @@
 ---
-title: 資料結構
-seo-title: 資料結構
-description: 資料結構
+title: 資料綱要
+seo-title: 資料綱要
+description: 資料綱要
 seo-description: null
 page-status-flag: never-activated
 uuid: 9f08750a-e125-4531-8c2c-1ab218190210
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: b65e8d27-f427-464e-ad42-51c0a88eee86
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 2%
 
 ---
 
 
-# 資料結構{#data-schemas}
+# 資料綱要{#data-schemas}
 
 ## 原則 {#principles}
 
@@ -48,11 +48,11 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >
 >保存源模式時，將自動啟動擴展模式的生成。
 
-如果需要檢查方案的完整結構，可以使用預覽頁籤。 如果架構已擴充，則您將能夠直觀顯示其所有擴展。 作為補充，「文檔」頁籤顯示所有方案屬性和元素及其屬性（SQL欄位、類型／長度、標籤、說明）。 「文檔」頁籤僅適用於生成的方案。 有關詳細資訊，請參閱「重新生 [成方案](../../configuration/using/regenerating-schemas.md) 」部分。
+如果需要檢查方案的完整結構，可以使用預覽頁籤。 如果架構已擴充，則您將能夠直觀顯示其所有擴展。 作為補充，「文檔」頁籤顯示所有方案屬性和元素及其屬性（SQL欄位、類型／長度、標籤、說明）。 「文檔」頁籤僅適用於生成的方案。 For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
 ## 範例：建立合同表 {#example--creating-a-contract-table}
 
-在下列範例中，我們想在Adobe Campaign資料庫的資料庫 **模型** 中為合約建立新表格。 此表格可讓您儲存每個合約持有人和共同持有人的名字和姓氏以及電子郵件地址。
+在下列範例中，我們想在Adobe Campaign資料庫的資料庫 **模型** 中，為合約建立新表格。 此表格可讓您儲存每個合約持有人和共同持有人的名字和姓氏以及電子郵件地址。
 
 為此，需要建立表的模式並更新資料庫結構以生成相應表。 套用下列階段：
 
@@ -125,5 +125,5 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新資料庫結構以建立將連結模式的表。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md)。
+1. 更新資料庫結構以建立將連結模式的表。 For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
 
