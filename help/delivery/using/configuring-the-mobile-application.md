@@ -1,7 +1,7 @@
 ---
-title: 在Adobe Campaign中設定行動應用程式
-seo-title: 在Adobe Campaign中設定行動應用程式
-description: 在Adobe Campaign中設定行動應用程式
+title: 在 Adobe Campaign 設定行動應用程式
+seo-title: 在 Adobe Campaign 設定行動應用程式
+description: 在 Adobe Campaign 設定行動應用程式
 seo-description: null
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
 
-# 在Adobe Campaign中設定行動應用程式 {#configuring-the-mobile-application-in-adobe-campaign}
+# 在 Adobe Campaign 設定行動應用程式 {#configuring-the-mobile-application-in-adobe-campaign}
 
 您可以根據銷售線上假日套件的公司，在下方找到設定範例。 他的行動應用程式(Neotrips)有兩種版本可供客戶使用：iOS專用的Neotrips和Neotrips。 若要在Adobe Campaign中設定行動應用程式，您必須：
 
@@ -48,7 +48,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
    ![](assets/package_ios.png)
 
-1. Select **[!UICONTROL Install a standard package]**.
+1. 選取 **[!UICONTROL Install a standard package]**。
 
 1. 在出現的清單中，勾選 **[!UICONTROL Mobile App Channel]**。
 
@@ -56,7 +56,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 1. 按一下 **[!UICONTROL Next]**，然 **[!UICONTROL Start]** 後啟動軟體包安裝。
 
-   安裝軟體包後，進度欄顯示 **100%** ，您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**。
+   安裝軟體包後，進度欄顯示 **100%** ，您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 
@@ -72,7 +72,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 要選擇要使用的連接器，請執行以下步驟：
 
 1. 前往 **[!UICONTROL Administration > Platform > External accounts]**。
-1. 選擇外 **[!UICONTROL iOS routing]** 部帳戶。
+1. Select the **[!UICONTROL iOS routing]** external account.
 1. 在標籤 **[!UICONTROL Connector]** 中，填寫欄 **[!UICONTROL Access URL of the connector]** 位：
 
    對於iOS HTTP2:http://localhost:8080/nms/jsp/iosHTTP2.jsp
@@ -83,7 +83,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
    >
    > 您也可以依https://localhost:8080/nms/jsp/ios.jsp設定，但建議您使用第2版的連接器。
 
-1. 按一下 **[!UICONTROL Save]**.
+1. 按一下 **[!UICONTROL Save]**。
 
 您的iOS連接器現在已設定。 您可以開始建立服務。
 
@@ -93,7 +93,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
    ![](assets/nmac_service_1.png)
 
-1. 定義 **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]**。
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. 轉至欄位 **[!UICONTROL Type]** 並選取 **[!UICONTROL Mobile application]**。
 
    >[!NOTE]
@@ -125,7 +125,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 1. 按一 **[!UICONTROL Next]** 下以開始設定開發應用程式。
 
-1. 請務必在Adobe **[!UICONTROL Integration key]** Campaign和應用程式程式碼中透過SDK定義相同的內容。 有關詳情，請參閱：將 [Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。 此整合金鑰是每個應用程式專屬，可讓您將行動應用程式連結至Adobe Campaign平台。
+1. 請務必在Adobe **[!UICONTROL Integration key]** Campaign和應用程式程式碼中透過SDK定義相同的內容。 有關詳情，請參閱： [將Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。 此整合金鑰是每個應用程式專屬，可讓您將行動應用程式連結至Adobe Campaign平台。
 
    >[!NOTE]
    >
@@ -145,7 +145,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
    ![](assets/nmac_ios_5.png)
 
-1. 按一下 **[!UICONTROL Finish]**. 您的iOS應用程式現已可供用於Campaign Classic。
+1. 按一下 **[!UICONTROL Finish]**。您的iOS應用程式現已可供用於Campaign Classic。
 
 ### 步驟4:建立iOS豐富式通知 {#creating-ios-delivery}
 
@@ -155,7 +155,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 1. 前往 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
-1. 按一下 **[!UICONTROL New]**.
+1. 按一下 **[!UICONTROL New]**。
 
    ![](assets/nmac_android_3.png)
 
@@ -192,7 +192,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
    ![](assets/package_ios.png)
 
-1. Select **[!UICONTROL Install a standard package]**.
+1. 選取 **[!UICONTROL Install a standard package]**。
 
 1. 在出現的清單中，勾選 **[!UICONTROL Mobile App Channel]**。
 
@@ -200,7 +200,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 1. 按一下 **[!UICONTROL Next]**，然 **[!UICONTROL Start]** 後啟動軟體包安裝。
 
-   安裝軟體包後，進度欄顯示 **100%** ，您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**。
+   安裝軟體包後，進度欄顯示 **100%** ，您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 
@@ -216,7 +216,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 要選擇要使用的連接器，請執行以下步驟：
 
 1. 前往 **[!UICONTROL Administration > Platform > External accounts]**。
-1. 選擇外 **[!UICONTROL Android routing]** 部帳戶。
+1. Select the **[!UICONTROL Android routing]** external account.
 1. 在標籤 **[!UICONTROL Connector]** 中，填寫欄 **[!UICONTROL JavaScript used in the connector]** 位：
 
    針對Android V2:https://localhost:8080/nms/jsp/androidPushConnectorV2.js
@@ -229,7 +229,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 1. 對於Android V2,Adobe Server組態檔(serverConf.xml)中還有一個參數：
 
-   * **maxGCMConnectPerChild**:每個子伺服器啟動的FCM的並行HTTP請求的最大限制（預設為8）。
+   * **maxGCMConnectPerChild**:每個子伺服器啟動的對FCM的並行HTTP請求的最大限制（預設為8）。
 
 ### 步驟3:設定Android服務 {#configuring-android-service}
 
@@ -237,7 +237,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
    ![](assets/nmac_service_1.png)
 
-1. 定義 **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]**。
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. 轉至欄位 **[!UICONTROL Type]** 並選取 **[!UICONTROL Mobile application]**。
 
    >[!NOTE]
@@ -250,13 +250,13 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
    ![](assets/nmac_service_2.png)
 
-1. Select **[!UICONTROL Create an Android application]**.
+1. 選取 **[!UICONTROL Create an Android application]**。
 
    ![](assets/nmac_android.png)
 
 1. 輸入 **[!UICONTROL Label]**。
 
-1. 請務必在Adobe **[!UICONTROL Integration key]** Campaign和應用程式程式碼中透過SDK定義相同的內容。 有關詳情，請參閱：將 [Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
+1. 請務必在Adobe **[!UICONTROL Integration key]** Campaign和應用程式程式碼中透過SDK定義相同的內容。 有關詳情，請參閱： [將Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
 
    >[!NOTE]
    >
@@ -272,7 +272,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
    ![](assets/nmac_android_2.png)
 
-1. 按一 **[!UICONTROL Finish]** 下 **[!UICONTROL Save]**。 您的Android應用程式現在已可供用於Campaign Classic。
+1. 按一下 **[!UICONTROL Finish]**，之後 **[!UICONTROL Save]**。您的Android應用程式現在已可供用於Campaign Classic。
 
 依預設，Adobe Campaign會在表格的(@userKey) **[!UICONTROL User identifier]** 欄位中儲存金鑰 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 。 此金鑰可讓您將訂閱連結至收件者。 要收集其他資料（如複雜的協調密鑰），需要應用以下配置：
 
@@ -280,7 +280,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 1. 在標籤中定義映 **[!UICONTROL Subscription parameters]** 射。
    >[!CAUTION]
    >
-   >請確定標籤中的設 **[!UICONTROL Subscription parameters]** 定名稱與行動應用程式程式碼中的設定名稱相同。 請參閱「將 [Campaign SDK整合至行動應用程式」區](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 段。
+   >請確定標籤中的設 **[!UICONTROL Subscription parameters]** 定名稱與行動應用程式程式碼中的設定名稱相同。 請參閱「將 [Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 」區段。
 
 ### 步驟4:建立Android豐富式通知 {#creating-android-delivery}
 
@@ -288,7 +288,7 @@ source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 1. 前往 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
-1. 按一下 **[!UICONTROL New]**.
+1. 按一下 **[!UICONTROL New]**。
 
    ![](assets/nmac_android_3.png)
 
