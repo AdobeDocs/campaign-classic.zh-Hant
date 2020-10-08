@@ -1,7 +1,7 @@
 ---
-title: 外部信號
-seo-title: 外部信號
-description: 外部信號
+title: 外部訊號
+seo-title: 外部訊號
+description: 外部訊號
 seo-description: null
 page-status-flag: never-activated
 uuid: dbe6624a-70cf-4ac4-adfd-bc72db9bb3f3
@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 3739593f-056c-4165-87ef-63c812bd3c43
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 4%
@@ -23,7 +20,7 @@ ht-degree: 4%
 ---
 
 
-# 外部信號{#external-signal}
+# 外部訊號{#external-signal}
 
 「外 **部信號** 」活動可讓您觸發工作流中一組任務的執行到調度。
 
