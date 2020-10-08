@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 6934c165-6d27-4ce5-8607-170f299b4702
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 1%
@@ -58,7 +55,7 @@ Web服務在資料模式的語法中描述，並且可從元素中 **`<methods>`
 
 服務的說明從元素開 `<method>` 始。 從元素中完成方法的參數列 `<parameters>` 表。 每個參數都由名稱、類型（布林值、字串、DOMElement等）指定 和說明。 具有&quot;out&quot;值的&quot;inout&quot;屬性可讓您指定&quot;result&quot;參數位於SOAP呼叫輸出。
 
-存在&quot;static&quot;屬性（值為&quot;true&quot;）將此方法描述為static，這意味著必須聲明該方法的所有參數。
+存在&quot;static&quot;屬性（值為&quot;true&quot;）將此方法描述為static，這表示必須聲明方法的所有參數。
 
 「const」方法隱式地將XML文檔以其相關模式的格式作為輸入。
 
@@ -200,7 +197,7 @@ Adobe Campaign透過引入安全區(請參閱本節中的「定義安全區 **�
 
 有兩種可用的驗證模式：
 
-* **透過對logon方法()的呼叫**。 此模式會產生作業Token與安全Token。 這是最安全的模式，因此建議使用最多。
+* **透過對logon方法()的呼叫**。 此模式會產生作業Token與安全Token。 它是最安全的模式，因此也是最推薦的模式。
 
 或
 
