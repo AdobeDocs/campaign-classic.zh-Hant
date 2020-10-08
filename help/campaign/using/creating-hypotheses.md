@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 0f73de0e-e589-4e39-9895-209dad75db75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 1%
 
 ---
 
@@ -120,7 +120,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 建立選件提案的假設與建立即時傳送假設類似。 只要選件有效，就可以執行假設。 計算期間以優惠提案日期為基礎。 當假設可讓您將收件者連結至購買時，可能被接受的選件提案狀態會自動變更(如需詳細資訊，請參閱「交 [易](../../campaign/using/hypothesis-templates.md#transactions)」)。
 
 1. 建立一個或多個 **[!UICONTROL Offer]** 類型模型，如建立假 [說模型中所述](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)。
-1. 轉至節 **[!UICONTROL Campaign management > Measurement hypotheses]** 點。
+1. Go to the **[!UICONTROL Campaign management > Measurement hypotheses]** node.
 1. 選取先 **[!UICONTROL Offers]** 前建立的模型，建立類型假設。
 
    ![](assets/response_hypothesis_instance_offer_001.png)
