@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1510fd9-995b-46c6-8d57-e1fe3999235e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 2%
 
 ---
 
@@ -42,6 +42,7 @@ Adobe Campaign伺服器的安裝步驟如下：
    * **[!UICONTROL Minimal installation (Network)]** :從網路安裝客戶機。 如果需要，電腦上將只安裝有限數量的DLL，並且所有其它元件將從網路驅動器使用。
    * **[!UICONTROL Installation of a client]** :安裝Adobe Campaign用戶端所需的元件。
    * **[!UICONTROL Custom installation]** :使用者選擇要安裝的元素。
+
    選 **擇安裝應用程式伺服器**，然後執行下列不同步驟：
 
    ![](assets/s_ncs_install_installer_02.png)
@@ -84,7 +85,7 @@ No task
 
 ## 伺服器的首次啟動 {#first-start-up-of-the-server}
 
-安裝測試完成後，通過菜單開啟命令提 **[!UICONTROL Start > Programs > Adobe Campaign]** 示符並輸入以下命令：
+安裝測試完成後，通過菜單開啟命令提示 **[!UICONTROL Start > Programs > Adobe Campaign]** 符並輸入以下命令：
 
 ```
 nlserver web
