@@ -1,7 +1,7 @@
 ---
-title: 關於促銷活動中的查詢
-seo-title: 關於促銷活動中的查詢
-description: 關於促銷活動中的查詢
+title: 關於 Campaign 中的查詢
+seo-title: 關於 Campaign 中的查詢
+description: 關於 Campaign 中的查詢
 seo-description: null
 page-status-flag: never-activated
 uuid: 5b48dc57-678d-4cef-84e9-5c50df3c72db
@@ -11,16 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: 08161b4a-7196-41db-b3df-68012a9fc2f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 86%
 
 ---
 
 
-# 關於促銷活動中的查詢{#about-queries-in-campaign}
+# 關於 Campaign 中的查詢{#about-queries-in-campaign}
 
 您可以在軟體的多個層級上找到 Adobe Campaign 查詢工具：建立目標母體、細分客戶、擷取和篩選追蹤記錄、建立篩選器等。
 
@@ -30,6 +30,6 @@ Adobe Campaign查詢工具可讓您使用專用精靈查詢資料庫：一般查
 
 透過使用所選資料表的欄位或公式可以建立查詢。
 
-[按一下這裡](../../workflow/using/query.md) ，以探索促銷活動查詢編輯器。
+[按一下這裡](../../workflow/using/query.md) ，以探索 Campaign 查詢編輯器。
 
 ![](assets/query_recipients_4.png)
