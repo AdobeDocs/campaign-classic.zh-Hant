@@ -1,7 +1,7 @@
 ---
-title: 管理選件範本
-seo-title: 管理選件範本
-description: 管理選件範本
+title: 管理優惠方案範本
+seo-title: 管理優惠方案範本
+description: 管理優惠方案範本
 seo-description: null
 page-status-flag: never-activated
 uuid: d5d1198e-d3f3-4b83-8907-4646af89fa8c
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 62d03128-5525-4556-8590-8492847c4a1f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
-# 管理選件範本{#managing-offer-templates}
+# 管理優惠方案範本{#managing-offer-templates}
 
 選件範本是在Adobe Campaign中立即提供的。 您可以在建立選件、複製選件或依您的需求調整其設定後使用選件。 您也可以建立自己的範本。 範本選件會儲存在資 **源** >範本 **>選** 件範本中 ****。
 
