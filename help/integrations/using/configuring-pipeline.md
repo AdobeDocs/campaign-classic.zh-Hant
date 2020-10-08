@@ -1,7 +1,7 @@
 ---
-title: 設定整合
-seo-title: 設定整合
-description: 設定整合
+title: 設定 整合
+seo-title: 設定 整合
+description: 設定 整合
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# 配置管線 {#configuring-pipeline}
+# 設定管線 {#configuring-pipeline}
 
 驗證參數（如客戶ID、私密金鑰和驗證端點）是在實例配置檔案中配置的。
 要處理的觸發器清單在選項中配置。 它是JSON格式。
@@ -35,7 +32,7 @@ ht-degree: 0%
 在促銷 [!DNL Experience Cloud Triggers] 活動中使用需要：
 
 * Adobe Campaign 6.11版組建版本8705或更新版本。
-* Adobe Analytics Ultimate、Premium、Foundation、OD、Select、Prime、Mobile Apps、Select或Standard。
+* Adobe Analytics Ultimate、Premium、Foundation、OD、Select、Prime、行動應用程式、Select 或 Standard。
 
 先決條件配置包括：
 
@@ -71,7 +68,7 @@ Adobe Campaign需要Adobe Analytics提供下列資訊：
 
 IMSOrgId是Adobe Experience Cloud上客戶的識別碼。
 在實例serverConf.xml檔案中，在IMSOrgId屬性下進行設定。
-例如：
+範例:
 
 ```
 <redirection IMSOrgId="C5E715(…)98A4@AdobeOrg" (…)
@@ -116,7 +113,7 @@ EwIDAQAB
 
 請遵循下列步驟：
 
-1. 選擇 **[!UICONTROL Service Account (JWT Assertion)]**。
+1. 選取 **[!UICONTROL Service Account (JWT Assertion)]**。
 1. 輸入 **[!UICONTROL Application Name]**。
 1. 註冊 **[!UICONTROL Public key]**。
 1. 選擇觸發器的 **[!UICONTROL Scopes]**。
@@ -131,7 +128,7 @@ EwIDAQAB
 
 建立的oAuth用戶端的應用程式ID必須在Adobe Campaign中設定。 您可以在元素中編輯例項設定檔案，尤其是 [!DNL pipelined] appName屬性，來執行此動作。
 
-例如：
+範例:
 
 ```
 <pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
@@ -145,7 +142,7 @@ EwIDAQAB
 
 加密的私密金鑰必須在Adobe Campaign中註冊。 您可以編輯元素中的例項設定檔案，尤其是authPrivateKey [!DNL pipelined] 屬性來執行此動作。
 
-例如：
+範例:
 
 ```
 <pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
@@ -174,13 +171,13 @@ nlserver start pipelined@instance
 nlserver restart pipelined@instance
 ```
 
-如果出現錯誤，請在標準輸出（如果您手動啟動）或記錄檔中尋找 [!DNL pipelined] 錯誤。 有關解決問題的詳細資訊，請參閱本文檔的「疑難解答」部分。
+如果出現錯誤，請在標準輸出（如果您手動啟動）或日誌檔案中查找 [!DNL pipelined] 錯誤。 有關解決問題的詳細資訊，請參閱本文檔的「疑難解答」部分。
 
 ### 流水線配置選項 {#pipelined-configuration-options}
 
 | 選項 | 說明 |
 |:-:|:-:|
-| appName | 在Adobe Analytics中註冊的OAuth應用程式ID（應用程式ID）（公開金鑰已上傳）: 管理員>使用者管理>舊版誓言應用程式。 請參閱本[節](../../integrations/using/configuring-pipeline.md#oauth-client-creation)。 |
+| appName | 在Adobe Analytics中註冊的OAuth應用程式ID（應用程式ID）（公開金鑰已上傳）:管理員>使用者管理>舊版誓言應用程式。 Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
 | authGatewayEndpoint | 取得「閘道Token」的URL。 <br> 預設值： https://api.omniture.com |
 | authPrivateKey | 私密金鑰（在Adobe Analytics中上傳的公用部分）（請參閱本節）。 使用XtkSecretKey選項加密的AES: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
 | disableAuth | 停用驗證（不使用閘道Token進行連線時，只有某些開發管道端點才接受） |
