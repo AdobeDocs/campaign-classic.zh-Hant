@@ -1,7 +1,7 @@
 ---
-title: 設定整合
-seo-title: 設定整合
-description: 設定整合
+title: 設定 整合
+seo-title: 設定 整合
+description: 設定 整合
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# 管線選項NmsPipeline_Config {#nmspipeline_config}
+# 管線選項 NmsPipeline_Config {#nmspipeline_config}
 
 一旦驗證運作，就 [!DNL pipelined] 可以擷取事件並加以處理。 它只會處理在Adobe Campaign中設定的觸發程式，而忽略其他觸發程式。 觸發器必須是從Analytics產生，並事先推送至管道。
 也可以使用通配符配置該選項，以捕獲所有觸發器（無論名稱）。
@@ -85,7 +82,7 @@ ht-degree: 0%
 
 ## 如何配置「管線」(Pipeline)選項 {#configure-pipeline-option}
 
-在「觸發器」陣列下新增或編輯Experience Cloud觸發器； 不要編輯其餘的。
+在「觸發器」陣列下新增或編輯Experience Cloud觸發器；不要編輯其餘的。
 請確定JSON在此網站的協助下有 [效](http://jsonlint.com/)。
 
 * &quot;name&quot;是觸發器ID。 萬用字元&quot;*&quot;會擷取所有觸發器。
