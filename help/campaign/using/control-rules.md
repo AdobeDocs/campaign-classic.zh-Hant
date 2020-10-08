@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: be037a80-3f94-465c-ba7d-ae7d50f70e36
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
@@ -37,11 +37,11 @@ source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 * **[!UICONTROL Wave scheduling check]** （電子郵件）:檢查如果傳送分成若干波，最後一波傳送是否排程在有效期結束前開始。
 * **[!UICONTROL Unsubscription link approval]** （電子郵件）:檢查每個內容（HTML和文字）中是否至少有一個未訂閱（選擇退出）URL。
 
-## 建立控制規則 {#creating-a-control-rule}
+## Creating a control rule {#creating-a-control-rule}
 
 您可以建立符合您需求的新控制規則。 要執行此操作，請建立一 **[!UICONTROL Control]** 個分類規則，並在頁籤的SQL中輸入控制 **[!UICONTROL Code]** 公式。
 
-**例如：**
+**範例:**
 
 在下列範例中，我們將建立規則，以防止SMS選件傳送給超過100個收件者。 此規則將連結至促銷活動類型，然後連結至有相關選件可用的SMS傳送。
 
