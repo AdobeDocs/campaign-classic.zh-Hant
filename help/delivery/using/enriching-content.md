@@ -1,7 +1,7 @@
 ---
-title: 豐富內容
-seo-title: 豐富內容
-description: 豐富內容
+title: 豐富化內容
+seo-title: 豐富化內容
+description: 豐富化內容
 seo-description: null
 page-status-flag: never-activated
 uuid: 6f1bce9f-88ed-4ad3-987f-79f6c68264d2
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4404c21e-0a89-4762-af20-384ad7071916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 1%
 
 ---
 
 
-# 豐富內容{#enriching-content}
+# 豐富化內容{#enriching-content}
 
 匯整器可讓您使用外部資料豐富內容。 此資料來自一般查詢或連結的表格。
 
