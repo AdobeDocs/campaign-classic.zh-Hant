@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 98706258-0621-4aa9-bf14-f92f14946308
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 7%
 
 ---
 
@@ -32,6 +32,6 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## 調查資料儲存 {#survey-data-storage}
 
-依預設，Web表格欄位會儲存在收件者表格中。 要使用其他表，請在欄位中選 **[!UICONTROL Document type]** 擇它。 圖 **[!UICONTROL Zoom]** 示可讓您檢視所選表格的內容。
+依預設，Web表格欄位會儲存在收件者表格中。 要使用其它表，請在欄位中選 **[!UICONTROL Document type]** 擇它。 圖 **[!UICONTROL Zoom]** 示可讓您檢視所選表格的內容。
 
 未儲存在欄位（但是儲存在本機變數中）的使用者所提供之調查的答案，會儲存在「調查的答 **案」表格中** 。 您可以根據欄位變更所使用的 **[!UICONTROL Library]** 架構。 此欄位僅適用於調 **查**。
