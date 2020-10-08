@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
@@ -31,7 +28,7 @@ ht-degree: 0%
 >
 >修改或更新Adobe Campaign選項只能由專家使用者執行。
 
-其中一些是在安裝促銷活動時內建的，其他則可視需要手動新增。 可用選項會根據隨實例安裝的軟體包而有所不同。
+其中一些是在安裝促銷活動時內建的，其他則可視需要手動新增。 可用選項會根據實例安裝的軟體包而有所不同。
 
 ## 傳送 {#delivery}
 
@@ -104,7 +101,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span> <br /> </td> 
-   <td> 可讓您定義回覆訊息時使用的錯誤位址語法。<br /> </td> 
+   <td> 可讓您定義回覆訊息時使用之錯誤位址的語法。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span> <br /> </td> 
@@ -236,7 +233,7 @@ ht-degree: 0%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> 鏡像頁伺服器的URL（預設情況下，應與NmsTracking_ServerUrl相同）。<br /> 當路由定義中未指定URL時，此值是電子郵件傳送的預設值。<br /> </td> 
+   <td> 鏡像頁伺服器的URL（預設情況下，應與NmsTracking_ServerUrl相同）。<br /> 在傳送定義中未指定URL時，此值是電子郵件傳送的預設值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
@@ -575,7 +572,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_BroadLogPurgeDelay</span> <br /> </td> 
-   <td> <p>可讓您定義從資料庫中清除之後的廣播的延遲。</p><p>在介面中修改延遲後，會自動建立此選項。 如果修改選項清單中的值，應以秒錶示。</p><br /> </td> 
+   <td> <p>可讓您定義從資料庫中清除廣告的延遲。</p><p>在介面中修改延遲後，會自動建立此選項。 如果修改選項清單中的值，應以秒錶示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_EventHistoPurgeDelay</span> <br /> </td> 
