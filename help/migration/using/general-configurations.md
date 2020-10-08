@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 0%
@@ -92,7 +89,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->基於安全性原因，Adobe Campaign平台不再預設為可存取： 您必須設定安全區，因此必須收集營運商IP位址。
+>基於安全性原因，Adobe Campaign平台不再預設為可存取：您必須設定安全區，因此必須收集營運商IP位址。
 
 Adobe Campaign v7包含安全區 **的概念**。 每個用戶都必須與區域關聯才能登錄到實例，並且用戶的IP地址必須包含在安全區域中定義的地址或地址範圍中。 您可在Adobe Campaign伺服器設定檔案中設定安全區。 必須在控制台(**[!UICONTROL Administration > Access management > Operators]**)中定義用戶關聯到的安全區。
 
@@ -206,7 +203,7 @@ Adobe Campaign v7整合了更新的JavaScript解譯器。 但是，此更新可�
 
 語 **[!UICONTROL myObject.@attribute]** 法現在只對XML物件有效。 此語法可用於個人化傳送和內容管理。 如果您在非XML物件上使用此類語法，個人化功能將不再有效。
 
-對於所有其他對象類型，語法現在 **[!UICONTROL myObject`[`為「attribute」`]`]**。 例如，使用下列語法的非XML物件：**[!UICONTROL employee.@sn]**，現在必須使用下列語法：**[!UICONTROL employee`[`「sn」`]`]**。
+對於所有其他對象類型，語法現在 **[!UICONTROL myObject`[`為「attribute」`]`]**。 例如，使用下列語法的非XML物件： **[!UICONTROL employee.@sn]**，現在必須使用下列語法： **[!UICONTROL employee`[`「sn」`]`]**。
 
 * 前語法：
 
@@ -256,19 +253,19 @@ Adobe Campaign v7整合了更新的JavaScript解譯器。 但是，此更新可�
 
 為了加強例項安全性，Adobe Campaign v7已引入新語法，以取代以SQLData為基礎的語法。 如果您將此語法與這些程式碼元素搭配使用，則必須加以修改。 主要內容是：
 
-* 依子查詢篩選： 新語法是以元素為 `<subQuery>` 基礎，以定義子查詢
-* 匯總： 新語法為&quot;aggregate function(collection)&quot;
-* 依連結篩選： 新語法為 `[schemaName:alias:xPath]`
+* 依子查詢篩選：新語法是以元素為 `<subQuery>` 基礎，以定義子查詢
+* 匯總：新語法為&quot;aggregate function(collection)&quot;
+* 依連結篩選：新語法為 `[schemaName:alias:xPath]`
 
 查詢定義(xtk:queryDef)架構已修改：
 
 * 有新元 `<subQuery>` 素可用來替換SQLData中包含的SELECT
 * 為@setOperator屬性引入兩個新值&quot;IN&quot;和&quot;NOT IN&quot;
-* 新元 `<where>` 素，是元素的子 `<node>` 項： 這可讓您在SELECT中進行「子選擇」
+* 新元 `<where>` 素，是元素的子 `<node>` 項：這可讓您在SELECT中進行「子選擇」
 
-使用&quot;@expr&quot;屬性時，可能存在SQLData。 可搜尋下列詞語： &quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
+使用&quot;@expr&quot;屬性時，可能存在SQLData。 可搜尋下列詞語：&quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
 
-Adobe Campaign v7例項預設會受到保護。 安全性來自檔案中安全區的定 **[!UICONTROL serverConf.xml]** 義： allowSQLInjoffent **** 屬性管理SQL語法安全性。
+Adobe Campaign v7例項預設會受到保護。 安全性來自檔案中安全區的定 **[!UICONTROL serverConf.xml]** 義：allowSQLInjoffent **** 屬性管理SQL語法安全性。
 
 如果在配置級執行期間發生SQLData錯誤，則必須修改此屬性以暫時允許使用基於SQLData的語法，從而允許重寫代碼。 為此，必須在serverConf.xml檔案中變更 **下列選項** :
 
@@ -400,7 +397,7 @@ allowSQLInjection="false"
 
 在元 `<subQuery>` 素中，若要參考主要元素的「欄位」欄 `<queryDef>` 位，請使用下列語法： `[../@field]`
 
-例如：
+範例:
 
 ```
 <queryDef operation="select" schema="xtk:jobLog" startPath="/" xtkschema="xtk:queryDef">
@@ -459,9 +456,9 @@ allowSQLInjection="false"
 
 解決衝突有三種可能的方法：
 
-* **[!UICONTROL Declared as resolved]**: 需要營運商事先介入。
-* **[!UICONTROL Accept the new version]**: 如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
-* **[!UICONTROL Keep the current version]**: 表示更新遭拒。
+* **[!UICONTROL Declared as resolved]**:需要營運商事先介入。
+* **[!UICONTROL Accept the new version]**:如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
+* **[!UICONTROL Keep the current version]**:表示更新遭拒。
 
    >[!IMPORTANT]
    如果選擇此解析模式，則可能丟失新版本中的修補程式。 因此，強烈建議不要將此選項用於或僅保留給專家運算子。
@@ -477,7 +474,7 @@ allowSQLInjection="false"
    ![](assets/s_ncs_production_conflict003.png)
 
 1. 前往您已解決的衝突。 按一下圖 **[!UICONTROL Actions]** 示並選取 **[!UICONTROL Declare as resolved]**。
-1. 儲存變更： 衝突現已解決。
+1. 儲存變更：衝突現已解決。
 
 ## Tomcat {#tomcat}
 
@@ -512,7 +509,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 >[!IMPORTANT]
 如果某些使用已設定選件的傳送要在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，則會提供「相容模式」。 不建議使用此模式，因為Interaction v7中的所有新功能都不會讓您受益。 這是一種過渡模式，可讓您在實際6.1移轉之前完成持續的促銷活動。 有關此模式的更多資訊，請與我們聯絡。
 
-Adobe Campaign v7檔案夾中的&#x200B;**Migration**&#x200B;檔案夾提供移動指令碼(interactionTo610_full_XX.js **** )範例。 此檔案顯示客戶端指令碼的範例，每個選件（和欄位）使用單一電子 **[!UICONTROL htmlSource]** 郵件 **[!UICONTROL textSource]** 表示法。 NmsEmailOfferView表中 **** 的內容已移到選件表。
+Adobe Campaign v7檔案夾中的&#x200B;**Migration**&#x200B;檔案夾提供移動指令碼(interactionTo610_full_XX.js **** )範例。 此檔案顯示客戶端指令碼的範例，每個選件（和欄位）都使用單一電子 **[!UICONTROL htmlSource]** 郵件 **[!UICONTROL textSource]** 表示法。 NmsEmailOfferView表中 **** 的內容已移到選件表。
 
 >[!NOTE]
 使用此指令碼不允許您從「內容管理」和「轉換函式」選項中獲益。 為了從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
@@ -620,7 +617,7 @@ logInfo("Done");
 
 ### 標準報表 {#standard-reports}
 
-所有標準報表目前都使用轉換引擎v6.x。 如果您已將JavaScript新增至這些報表，某些元素可能不再有效。 事實上，舊版JavaScript與v6.x轉換引擎不相容。 因此，您必須檢查JavaScript程式碼，並稍後加以調整。 您應測試每個報表，尤其是匯出功能。
+所有標準報表目前都使用轉換引擎v6.x。如果您已將JavaScript新增至這些報表，某些元素可能不再有效。 事實上，舊版JavaScript與v6.x轉換引擎不相容。 因此，您必須檢查JavaScript程式碼，並稍後加以調整。 您應測試每個報表，尤其是匯出功能。
 
 ### 個人化報表 {#personalized-reports}
 
@@ -630,7 +627,7 @@ logInfo("Done");
 
 如果您想要從新的報表功能中獲益，則必須選取v.6.x轉換引擎。 在這種情況下，請檢查所有指令碼，並視需要進行更改。 至於PDF匯出，如果您已新增OpenOffice的特定指令碼，這將不再適用於新的PDF匯出引擎(PhantomJS)。
 
-## 網頁應用程式 {#web-applications}
+## 網頁應用程式{#web-applications}
 
 有兩個Web應用程式系列：
 
