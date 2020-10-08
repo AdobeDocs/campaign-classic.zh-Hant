@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: d538f489-f1ae-4682-9c21-d0300bd42b26
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 * 此函 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 數可讓您「依群組」並選取已分組的項目（「已分組」）。 此函式適用於輸出列中的所有欄位。 例如，此選項可讓您將輸出欄的所有選擇分組，並復原特定類型的資訊，例如35到50的收件者。
 
-   如需詳細資訊，請參閱[本小節](../../workflow/using/querying-using-grouping-management.md)。
+   如需詳細資訊，請參閱[本章節](../../workflow/using/querying-using-grouping-management.md)。
 
 * 此函 **[!UICONTROL Remove duplicate rows (DISTINCT)]** 數可讓您去重複輸出欄中取得的相同結果。 例如，如果您在輸出欄中選擇姓氏、名字和電子郵件欄位進行人口普查，則會刪除資料相同的欄位，因為這表示在資料庫中輸入了多次相同的連絡人：只會考慮一個結果。
 
@@ -94,7 +94,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    >[!NOTE]
    >
-   >如需建立和使用篩選器的詳細資訊，請參閱 [篩選選項](../../platform/using/filtering-options.md)。
+   >如需建立和使用篩選器的詳細資訊，請參 [閱篩選選項](../../platform/using/filtering-options.md)。
 
 如以下示例所示，要恢復所有講英語的收件人，請選擇：「收件者語 **言等於** EN」。
 
@@ -102,7 +102,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 >[!NOTE]
 >
->您可以在「值」欄位中輸入下列公式，直接存取 **選項** : **$（選項：OPTION_NAME）**。
+>您可以在「值」欄位中輸入下列公式，直接存取 **選項** : **$(options:OPTION_NAME)**。
 
 按一下 **[!UICONTROL Preview]** 標籤以檢視篩選條件的結果。 在這種情況下，所有會講英語的收件者都會顯示其姓名、名字和電子郵件地址。
 
