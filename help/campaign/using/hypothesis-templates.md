@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: addfc395-7a85-4be1-a757-a719ed34bb33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1437'
+ht-degree: 0%
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
       ![](assets/response_frequency_execution_002.png)
 
-   1. 按一 **[!UICONTROL Finish]** 下以儲存排程。
+   1. Click **[!UICONTROL Finish]** to save the schedule.
 
       ![](assets/response_frequency_execution_003.png)
 
@@ -172,7 +172,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
       ![](assets/response_scope_filtering_005.png)
 
-   1. 按一 **[!UICONTROL Finish]** 下以儲存查詢。
+   1. Click **[!UICONTROL Finish]** to save your query.
 
       ![](assets/response_scope_filtering_006.png)
 
@@ -188,7 +188,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ## 範例：在交貨上建立假設模板 {#example--creating-a-hypothesis-template-on-a-delivery}
 
-在此範例中，我們將建立直接郵件類型傳送的假設範本。 假設將基於的交&#x200B;**易表(** 在我們的範例中是購買)包含連結至文章或產品的購買行。 我們想要設定我們的模型，以在購買表格中建立文章或產品的假設。
+在此範例中，我們將建立直接郵件類型傳送的假設範本。 假設將基於的交&#x200B;**易表(在我們的例子中是** 「購買」)包含連結至文章或產品的購買行。 我們想要設定我們的模型，以在購買表格中建立文章或產品的假設。
 
 1. 在Adobe Campaign檔案總管中，前往節 **[!UICONTROL Resources > Templates > Hypothesis templates]** 點。
 1. 按一 **[!UICONTROL New]** 下以建立範本。
