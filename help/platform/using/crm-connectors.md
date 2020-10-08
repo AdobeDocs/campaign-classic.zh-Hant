@@ -1,7 +1,7 @@
 ---
-title: CRM連接器
-seo-title: CRM連接器
-description: CRM連接器
+title: CRM 連接器
+seo-title: CRM 連接器
+description: CRM 連接器
 seo-description: null
 page-status-flag: never-activated
 uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
@@ -11,19 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2541'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# CRM連接器{#crm-connectors}
+# CRM 連接器{#crm-connectors}
 
 ## 關於CRM連接器 {#about-crm-connectors}
 
@@ -41,7 +38,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 下列CRM可整合至Adobe Campaign。
 
-Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
 
 * **Salesforce.com**
 
@@ -130,7 +127,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    若要這麼做，請按一下連 **[!UICONTROL Synchronizing enumerations...]** 結並選取符合CRM列舉的Adobe Campaign列舉。
 
-   您可以將Adobe Campaign枚舉的所有值取代為CRM的值： 若要這麼做，請在 **[!UICONTROL Yes]** 欄中選 **[!UICONTROL Replace]** 取。
+   您可以將Adobe Campaign枚舉的所有值取代為CRM的值：若要這麼做，請在 **[!UICONTROL Yes]** 欄中選 **[!UICONTROL Replace]** 取。
 
    ![](assets/crm_connectors_sfdc_enum.png)
 
@@ -152,7 +149,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. 開啟配置嚮導： Adobe Campaign會自動顯示Oracle資料模型的表格。 選擇要收集的表。
+1. 開啟配置嚮導：Adobe Campaign會自動顯示Oracle資料模型的表格。 選擇要收集的表。
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -204,7 +201,7 @@ Compatibility matrix中詳細說明了支 [持的版本](https://helpx.adobe.com
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
-   有關CRM版本相容性的詳細資訊，請參閱「相容性 [清單」](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+   有關CRM版本相容性的詳細資訊，請參閱「相容性 [清單」](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
 
 1. 開啟配置嚮導。 Adobe Campaign會自動從Microsoft Dynamics資料範本中偵測表格。
 
@@ -323,9 +320,9 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
 啟用選 **[!UICONTROL Automatic index]** 項會產生三個變數，這些變數可透過類型活動用於同步 **[!UICONTROL JavaScript code]** 工作流程。 這些活動包括：
 
-* **vars.crmOptionName**: 代表包含上次匯入日期的選項名稱。
-* **vars.crmStartImport**: 表示上次資料恢復的開始日期（包括）。
-* **vars.crmEndDate**: 代表上次資料復原的結束日期（已排除）。
+* **vars.crmOptionName**:代表包含上次匯入日期的選項名稱。
+* **vars.crmStartImport**:表示上次資料恢復的開始日期（包括）。
+* **vars.crmEndDate**:代表上次資料復原的結束日期（已排除）。
 
    >[!NOTE]
    >
@@ -394,7 +391,7 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
    >[!NOTE]
    >
-   >對於指定欄位，如果CRM端未定義相符項目，則無法更新值： 會直接插入CRM。
+   >對於指定欄位，如果CRM端未定義相符項目，則無法更新值：會直接插入CRM。
 
    如有必要，請透過欄的下拉式清單變更資料格 **[!UICONTROL Conversion]** 式。 可能的轉換類型會以資料格式 [詳細說明](#data-format)。
 
@@ -416,9 +413,9 @@ Adobe Campaign和CRM之間的同步化是透過專屬的工作流程活動進行
 
 其他可能的轉換包括：
 
-* **[!UICONTROL Date only]**: 此模式會刪除「日期+時間」類型欄位。
-* **[!UICONTROL Without time offset]**: 此模式取消在預設模式下應用的時區管理。
-* **[!UICONTROL Copy/Paste]**: 此模式使用原始資料，例如字串（無轉換）。
+* **[!UICONTROL Date only]**:此模式會刪除「日期+時間」類型欄位。
+* **[!UICONTROL Without time offset]**:此模式取消在預設模式下應用的時區管理。
+* **[!UICONTROL Copy/Paste]**:此模式使用原始資料，例如字串（無轉換）。
 
 #### 錯誤處理 {#error-processing}
 
