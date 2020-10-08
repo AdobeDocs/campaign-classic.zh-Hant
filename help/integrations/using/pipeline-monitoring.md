@@ -1,7 +1,7 @@
 ---
-title: 設定整合
-seo-title: 設定整合
-description: 設定整合
+title: 設定 整合
+seo-title: 設定 整合
+description: 設定 整合
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 管道監控 {#pipeline-monitoring}
+# 管線監控 {#pipeline-monitoring}
 
 狀 [!DNL pipelined] 態web服務提供進程狀態的信 [!DNL pipelined] 息。
 
@@ -39,45 +36,45 @@ ht-degree: 0%
 
 反白顯示建議的監控指標。
 
-* 消費者： 提取觸發器的客戶端的名稱。 在管線選項中配置。
+* 消費者：提取觸發器的客戶端的名稱。 在管線選項中配置。
 * http-request
-   * last-alive-ms-ago: 進行連接檢查後的毫秒數時間。
-   * last-failed-cnx-ms-ago: 自上次連接檢查失敗以來的毫秒數時間。
-   * pipeline-host: 提取管線資料的主機的名稱。
+   * last-alive-ms-ago:進行連接檢查後的毫秒數時間。
+   * last-failed-cnx-ms-ago:自上次連接檢查失敗以來的毫秒數時間。
+   * pipeline-host:提取管線資料的主機的名稱。
 * 指針
-   * 當前偏移： 指針的值，每個子線程進入管線。
-   * last flush-ms-ago: 自擷取一批觸發器以來的毫秒數時間。
-   * 下一偏移齊平： 等到下一批完成時。
-   * processed-since-last-flush: 上一批處理的觸發器數。
+   * 當前偏移：指針的值，每個子線程進入管線。
+   * last flush-ms-ago:自擷取一批觸發器以來的毫秒數時間。
+   * 下一偏移齊平：等到下一批完成時。
+   * processed-since-last-flush:上一批處理的觸發器數。
 * 路由
-   * 觸發器： 已檢索的觸發器清單。 在選項中 [!DNL pipelined] 配置。
+   * 觸發器：已檢索的觸發器清單。 在選項中 [!DNL pipelined] 配置。
 * 統計
-   * average-pointer-flush-time-ms: 一批觸發器的平均處理時間。
-   * average-trigger-processing-time-ms: 解析觸發器資料的平均時間。
-   * 位元組讀取： 自進程啟動以來從隊列中讀取的位元組數。
-   * current-messages: 已從佇列提取並正在等待處理的待處理訊息的目前數目。 **此指標應接近零**。
-   * current-retries: 當前處理失敗並正在等待重試的消息數。
-   * 峰值消息： 進程自啟動以來處理的待處理消息的最大數量。
-   * 指針刷新： 自啟動以來處理的消息批數。
-   * routing-JS-custom: 自訂JS處理的訊息數。
-   * trigger-incolled: 因處理錯誤而在重試次數過多後被丟棄的消息數。
-   * trigger-processed: 未出現錯誤的消息數。
-   * trigger-received: 從隊列中接收的消息數。
+   * average-pointer-flush-time-ms:一批觸發器的平均處理時間。
+   * average-trigger-processing-time-ms:解析觸發器資料的平均時間。
+   * 位元組讀取：自進程啟動以來從隊列中讀取的位元組數。
+   * current-messages:已從佇列提取並正在等待處理的待處理訊息的目前數目。 **此指標應接近零**。
+   * current-retries:當前處理失敗並正在等待重試的消息數。
+   * 峰值消息：進程自啟動以來處理的待處理消息的最大數量。
+   * 指針刷新：自啟動以來處理的消息批數。
+   * routing-JS-custom:自訂JS處理的訊息數。
+   * trigger-incolled:因處理錯誤而在重試次數過多後被丟棄的消息數。
+   * trigger-processed:未出現錯誤的消息數。
+   * trigger-received:從隊列中接收的消息數。
 
 這些統計資料會依處理執行緒顯示。
 
-* average-trigger-processing-time-ms: 解析觸發器資料的平均時間。
-* is-JS-processor: 值&quot;1&quot;（如果此執行緒使用自訂JS）。
-* trigger-incolled: 因處理錯誤而在重試次數過多後被丟棄的消息數。 **此指標應為零**。
-* 觸發器失敗： JS中的處理錯誤數。 **此指標應為零**。
-* trigger-received: 從隊列中接收的消息數。
+* average-trigger-processing-time-ms:解析觸發器資料的平均時間。
+* is-JS-processor:值&quot;1&quot;（如果此執行緒使用自訂JS）。
+* trigger-incolled:因處理錯誤而在重試次數過多後被丟棄的消息數。 **此指標應為零**。
+* 觸發器失敗：JS中的處理錯誤數。 **此指標應為零**。
+* trigger-received:從隊列中接收的消息數。
 
-* 設定： 它們被設定在配置檔案中。
-   * flush-pointer-msg-count: 批中的消息數。
-   * flush-pointer-period-ms: 兩批之間的時間（以毫秒為單位）。
-   * processing-threads-JS: 執行自訂JS的處理執行緒數。
-   * retry-period-ms: 兩次重試之間的時間。
-   * retry-validity-duration-ms: 從時間處理開始的持續時間會重試，直到消息被丟棄。
+* 設定：它們被設定在配置檔案中。
+   * flush-pointer-msg-count:批中的消息數。
+   * flush-pointer-period-ms:兩批之間的時間（以毫秒為單位）。
+   * processing-threads-JS:執行自訂JS的處理執行緒數。
+   * retry-period-ms:兩次重試之間的時間。
+   * retry-validity-duration-ms:從時間處理開始的持續時間會重試，直到消息被丟棄。
    * 管線消息報告
 
 ## 管線消息報告 {#pipeline-report}
