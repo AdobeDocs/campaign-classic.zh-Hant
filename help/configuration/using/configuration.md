@@ -1,7 +1,7 @@
 ---
-title: 配置
-seo-title: 配置
-description: 配置
+title: 設定
+seo-title: 設定
+description: 設定
 seo-description: null
 page-status-flag: never-activated
 uuid: 0f2aadc3-5199-476c-9956-6e39b899a7d0
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 discoiquuid: b781fd52-828c-4582-a546-a1fee7e5a26d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 2%
 
 ---
 
 
-# 配置{#configuration}
+# 設定{#configuration}
 
 導覽清單所使用的資料夾類型在遵循 **xtk:navtree架構語法的XML檔案中描述** 。
 
