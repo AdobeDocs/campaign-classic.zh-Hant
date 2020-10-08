@@ -1,7 +1,7 @@
 ---
-title: 在Facebook上發佈
-seo-title: 在Facebook上發佈
-description: 在Facebook上發佈
+title: 在 Facebook 上發佈
+seo-title: 在 Facebook 上發佈
+description: 在 Facebook 上發佈
 seo-description: null
 page-status-flag: never-activated
 uuid: f15170fa-0e7d-4913-81d6-0072c1ece482
@@ -11,16 +11,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 335cf2de-1874-4e48-9538-f0937641cf96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 3%
 
 ---
 
 
-# 在Facebook上發佈{#publishing-on-facebook}
+# 在 Facebook 上發佈{#publishing-on-facebook}
 
 設定完成後，Social Marketing可讓您在Facebook頁面的塗鴉牆上張貼出版物。
 
@@ -37,7 +37,7 @@ Facebook固有下列限制。
 
 ![](assets/social_facebook_delivery_001.png)
 
-## 選擇主目標 {#selecting-the-main-target}
+## Selecting the main target {#selecting-the-main-target}
 
 您必須選取要張貼出版物的頁面。
 
@@ -45,11 +45,11 @@ Facebook固有下列限制。
 
    ![](assets/social_facebook_delivery_010.png)
 
-1. Click the **[!UICONTROL Add]** button.
+1. 按一下 **[!UICONTROL Add]** 按鈕。
 
    ![](assets/social_facebook_delivery_011.png)
 
-1. Select **[!UICONTROL A Facebook page]**.
+1. 選取 **[!UICONTROL A Facebook page]**。
 
    ![](assets/social_facebook_delivery_012.png)
 
@@ -59,7 +59,7 @@ Facebook固有下列限制。
 
 ## 選擇校對目標 {#selecting-the-proof-target}
 
-標 **[!UICONTROL Target of the proofs]** 簽可讓您定義Facebook頁面，在傳出傳送之前，您要用來測試傳送。 我們建議為此目的建立專用的Facebook私人頁面。 如需建立私人Facebook頁面的詳細資訊，請參閱「 [建立測試Facebook頁面」](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)。 要選擇校對目標，請應用與主目標相同的步驟：選 [擇主目標](#selecting-the-main-target)。
+標 **[!UICONTROL Target of the proofs]** 簽可讓您定義Facebook頁面，在傳出傳送之前，您要用來測試傳送。 我們建議為此目的建立專用的Facebook私人頁面。 如需建立私人Facebook頁面的詳細資訊，請參閱「 [建立測試Facebook頁面」](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)。 要選擇校對目標，請應用與主目標相同的步驟： [選擇主目標](#selecting-the-main-target)。
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -201,7 +201,7 @@ Facebook固有下列限制。
 
 Adobe Campaign會測量傳送中所含URL的點按次數。 Facebook會測量按鈕 **[!UICONTROL Like]** 的點按次數、留言數和粉絲數。
 
-追蹤設定與電子郵件傳送的設定相同。 如需詳細資訊，請參閱[本小節](../../delivery/using/monitoring-a-delivery.md)。
+追蹤設定與電子郵件傳送的設定相同。 如需詳細資訊，請參閱[本章節](../../delivery/using/monitoring-a-delivery.md)。
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ Adobe Campaign會測量傳送中所含URL的點按次數。 Facebook會測量按
 
 我們強烈建議您在最終傳送之前傳送出版物證明，以便在私人Facebook測試頁面上檢視出版物的精確呈現。 如需建立私人Facebook測試頁面的詳細資訊，請參閱「 [建立測試Facebook頁面」](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)。 選擇目標校對的步驟在選擇校 [對目標中詳細說明](#selecting-the-proof-target)。
 
-證明傳送與電子郵件傳送相同。 Refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+證明傳送與電子郵件傳送相同。 請參閱[本區段](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
 ## 傳送訊息 {#sending-the-message}
 
