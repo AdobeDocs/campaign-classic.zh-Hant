@@ -1,7 +1,7 @@
 ---
-title: 關於在促銷活動中建立報表
-seo-title: 關於在促銷活動中建立報表
-description: 關於在促銷活動中建立報表
+title: 關於在 Campaign 建立報表
+seo-title: 關於在 Campaign 建立報表
+description: 關於在 Campaign 建立報表
 seo-description: null
 page-status-flag: never-activated
 uuid: 9176ab80-c941-47a1-956a-3d1d63c403ba
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: a21e9c9e-ffc5-40d1-8eac-f4f25da8f21d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 11%
 
 ---
 
 
-# 關於在促銷活動中建立報表{#about-reports-creation-in-campaign}
+# 關於在 Campaign 建立報表{#about-reports-creation-in-campaign}
 
 若要產生Campaign資料庫中資料的統計資料，您可以建立報表並根據需求調整其內容和版面配置。 這些報表可與其他運算子共用。
 
