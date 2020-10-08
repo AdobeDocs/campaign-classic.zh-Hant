@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -50,7 +47,7 @@ ht-degree: 1%
 在資料庫上執行操作時必須特別謹慎：
 
 * 必須仔細配置導入，特別是在選擇協調密鑰時。
-* 變更的電子郵件地址也可以是重複的來源。 特別是，兩個具有不同域的地址可以被路由到同一郵箱，例如，在某公司更改了名稱並在特定時間內維護了前一個域的情況下： joe.doe@amce-co.com和joe.doe@acme-rebranded.com。
+* 變更的電子郵件地址也可以是重複的來源。 特別是，兩個具有不同域的地址可以被路由到同一郵箱，例如，在某公司更改了名稱並在特定時間內維護了前一個域的情況下：joe.doe@amce-co.com和joe.doe@acme-rebranded.com。
 * 自動匯入（無論是清單匯入還是其他資料庫匯入）是管理描述檔時要考慮的元素。 刪除或移動另一個分區中的配置檔案時會發生什麼情況？ 例如，在下訂單時，可通過自動導入在初始分區中重新建立。
 * 可以使用視圖而不是分區來實現將配置檔案儲存在不同資料夾中。 這樣，您可以確定配置式位於同一物理分區中，同時仍能顯示和管理適當的權限。
 
@@ -58,6 +55,6 @@ ht-degree: 1%
 
 ## 隔離 {#quarantines}
 
-Adobe Campaign 管理隔離地址的清單。在傳送分析期間，預設會排除隔離地址的收件者： 它們不是目標。 例如，當收件箱已滿或地址不存在時，可以隔離電子郵件地址。 在所有情況下，隔離都符合下列具體規則。
+Adobe Campaign 管理隔離地址的清單。在傳送分析期間，預設會排除隔離地址的收件者：它們不是目標。 例如，當收件箱已滿或地址不存在時，可以隔離電子郵件地址。 在所有情況下，隔離都符合下列具體規則。
 
 隔離管理介紹在 [本節中](../../delivery/using/understanding-quarantine-management.md)。
