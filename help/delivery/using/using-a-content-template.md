@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 48f491b7-bf7b-457f-9cf2-db2bbf4eceea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-如需詳細資訊，請參閱完整的實作範例：在 [傳送精靈中建立內容](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard)。
+如需詳細資訊，請參閱完整的實作範例： [在傳送精靈中建立內容](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard)。
 
 ## 建立內容例項 {#creating-a-content-instance}
 
