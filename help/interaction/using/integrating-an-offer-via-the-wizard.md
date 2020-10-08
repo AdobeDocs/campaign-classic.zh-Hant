@@ -1,7 +1,7 @@
 ---
-title: 透過精靈整合選件
-seo-title: 透過精靈整合選件
-description: 透過精靈整合選件
+title: 透過精靈整合優惠方案
+seo-title: 透過精靈整合優惠方案
+description: 透過精靈整合優惠方案
 seo-description: null
 page-status-flag: never-activated
 uuid: 0d8cf0b5-fc27-4bf4-bd1d-892fe6e3257b
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 181fcb70-9394-4091-93df-92c39273ec3d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 2%
 
 ---
 
 
-# 透過精靈整合選件{#integrating-an-offer-via-the-wizard}
+# 透過精靈整合優惠方案{#integrating-an-offer-via-the-wizard}
 
 建立傳送時，有兩種可能的整合選件方法：
 
@@ -53,7 +53,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
    ![](assets/offer_delivery_004.png)
 
-1. 指定您要插入傳送內文的選件數目。
+1. 指定要插入傳送內文的選件數目。
 
    ![](assets/offer_delivery_005.png)
 
