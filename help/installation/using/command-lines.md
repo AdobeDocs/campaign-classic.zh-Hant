@@ -1,7 +1,7 @@
 ---
-title: 命令行
-seo-title: 命令行
-description: 命令行
+title: 命令列
+seo-title: 命令列
+description: 命令列
 seo-description: null
 page-status-flag: never-activated
 uuid: fa897d6a-0326-4922-8936-2471af2f213c
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 3621d4ec-8839-40c3-a574-486c408f79ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
 
-# 命令行{#command-lines}
+# 命令列{#command-lines}
 
 以下命令行要求能夠訪問應用程式伺服器。 對於Adobe代管的部署，這些命令只能由Adobe執行。
 
