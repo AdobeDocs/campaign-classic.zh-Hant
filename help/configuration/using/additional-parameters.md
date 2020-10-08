@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 1b2ae224-8406-4506-b589-6e5f6631e87f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
@@ -75,18 +75,18 @@ webTrackingParamSize="64"/>
 修改配置後，您必須：
 
 * 停止承載重定向模組（Apache、IIS等）的Web伺服器，
-* 停止Adobe Campaign伺服器：在 **Windows中停止nlserver6** 、 **/etc/init.d/nlserver6在Linux中停止** 、
+* 停止Adobe Campaign伺服器： **net stop nlserver6 in Windows** , **/etc/init.d/nlserver6 stop** in Linux,
 
    >[!NOTE]
    >
    >從20.1開始，建議改用下列命令（適用於Linux）: **systemctl stop nlserver**
 
 * 在Linux中，使用 **ipcrm命令刪除共用內** 存段，
-* 重新啟動Adobe Campaign伺服器：在 **Windows中啟動nlserver6** ，在 **Linux中啟動** /etc/init.d/nlserver6
+* 重新啟動Adobe Campaign伺服器： **net start nlserver6 in Windows** , **/etc/init.d/nlserver6 start** in Linux,
 
    >[!NOTE]
    >
-   >從20.1開始，建議改用下列命令（適用於Linux）:系 **統mctl啟動nlserver**
+   >從20.1開始，建議改用下列命令（適用於Linux）: **systemctl啟動伺服器**
 
 * 重新啟動Web伺服器。
 
