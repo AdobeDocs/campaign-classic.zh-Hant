@@ -1,7 +1,7 @@
 ---
-title: 發佈促銷活動套件
-seo-title: 發佈促銷活動套件
-description: 發佈促銷活動套件
+title: 發佈行銷活動套件
+seo-title: 發佈行銷活動套件
+description: 發佈行銷活動套件
 seo-description: null
 page-status-flag: never-activated
 uuid: f2d35a8d-191f-4c53-8682-7ccce2a94257
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 8653d4fc-e47f-451a-95f2-c9209a252664
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 3%
 
 ---
 
 
-# 發佈促銷活動套件{#publishing-the-campaign-package}
+# 發佈行銷活動套件{#publishing-the-campaign-package}
 
 中央實體運算子會將想要提供的促銷活動發佈至中的本機實體 **[!UICONTROL list of campaign packages]**。
 
