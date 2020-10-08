@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 7%
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 為確保編輯的最佳作業，我們建議遵守下列准則：
 
-* 在Adobe **Campaign中匯入HTML頁面範本** ，請確定範本已開啟，並正確顯示在各種瀏覽器中。
-* 如果HTML頁面包含 **JavaScript指令碼**，則需要在編輯器 **外執行** ，而不需出現錯誤。
-* 建立範本時，建議將&#39;type&#39; **attribute新增至**`<input>` 標籤。 編輯器將處理此資訊，並幫助用戶在配置Web應用程式時將資料庫的欄位連結到表單的欄位。
+* Before **importing an HTML page template** in Adobe Campaign, please make sure the template opens and displays correctly in the various browsers.
+* If the HTML page contains **JavaScript scripts**, they need to execute **without errors** outside of the editor.
+* 建立範本時，建議將 **&#39;type&#39;** 屬性新增至標籤。`<input>`編輯器將處理此資訊，並幫助用戶在配置Web應用程式時將資料庫的欄位連結到表單的欄位。
 
-   範本中的HTML程式碼範例：
+   範本中的 HTML 程式碼範例：
 
    ```
    <input id="email" type="email" name="email"/>
@@ -56,7 +56,7 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 * CSS:.zip檔案中的影像不會匯入。 CSS中這些影像的參考不會更新。
 * JS:.zip檔案中的影像不會匯入。 JS中對這些影像的參照不會更新。
 * Iframe:連結的頁面不會匯入。
-* 著陸頁面與網頁應用程式：如果 **表單標籤** 遺失，將會出現警告。 消息 `<form> </form>` 正文中必須始終存在。
+* 著陸頁面與網頁應用程式：如果 **表單標** 記遺失，將會出現警告。 消息 `<form> </form>` 正文中必須始終存在。
 
 數位內容編輯器也適用於下列支援的程式碼頁面：
 
