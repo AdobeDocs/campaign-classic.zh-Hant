@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -49,7 +46,7 @@ SpamAssassin運用多種垃圾郵件偵測技術，包括：
 
 如需建立和設計傳送的詳細資訊，請參閱 [本節](../../delivery/using/about-email-channel.md)。
 
-1. 轉至標 **[!UICONTROL Preview]** 簽。
+1. 移至 **[!UICONTROL Preview]** 索引標籤。
 1. 選取收件者以預覽您的傳送。
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -63,8 +60,8 @@ SpamAssassin運用多種垃圾郵件偵測技術，包括：
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. 按一下 **[!UICONTROL More...]** 警告旁的連結。
-1. 選擇選 **[!UICONTROL Anti-spam checking]** 項卡。
-1. 請至本節 **[!UICONTROL Points / Rule / Description]** 以檢視此風險的原因。
+1. 選取 **[!UICONTROL Anti-spam checking]** 索引標籤。
+1. 請至區段 **[!UICONTROL Points / Rule / Description]** 以檢視此風險的原因。
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
