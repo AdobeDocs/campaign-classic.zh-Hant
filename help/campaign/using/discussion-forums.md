@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 88eb17b6-5206-4064-9cd9-b4645a85c609
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 1%
 
 ---
 
 
 # 論壇{#discussion-forums}
 
-Adobe Campaign營運商可使用論壇來分享資訊。 以下各元素各有其論壇：計畫、計畫、宣傳、資源、模擬、股票。 每家運營商還設有個人論壇。 所有討論都是公開的，甚至在個人論壇上。
+Adobe Campaign營運商可以使用論壇來分享資訊。 以下各元素各有其論壇：計畫、計畫、宣傳、資源、模擬、股票。 每家運營商還設有個人論壇。 所有討論都是公開的，甚至在個人論壇上。
 
 營運商可訂閱論壇，在每次張貼訊息時收到通知電子郵件。
 
@@ -80,7 +80,7 @@ Adobe Campaign營運商可使用論壇來分享資訊。 以下各元素各有�
 要訪問操作員論壇：
 
 * 如果您擁有存取檔案總管節點的必 **[!UICONTROL Administration > Access management > Operators]** 要權限，請開啟所要運算子的控制面板，然後按一下右上角 **[!UICONTROL Forum]** 的連結。
-* 如果沒有，請在Adobe Campaign中尋找運算元的名稱（透過此運算元張貼至論壇的訊息，指派給他的工作），然後按一下該名稱以存取其控制面板。 您也可以要求管理員建立運算子資料夾的檢視。
+* 如果沒有，請在Adobe Campaign中尋找運算元的名稱（透過此運算元張貼至論壇的訊息，指派給他的工作），然後按一下它以存取其控制面板。 您也可以要求管理員建立運算子資料夾的檢視。
 
 ## 訂閱論壇 {#subscribing-to-a-forum}
 
@@ -116,5 +116,6 @@ Adobe Campaign營運商可使用論壇來分享資訊。 以下各元素各有�
 
    * 在Adobe Campaign首頁上，前往 **[!UICONTROL Campaigns > Navigation > Deliveries]**，然後開啟傳 **[!UICONTROL Discussion forum notification]** 送。
    * 在瀏覽器中，轉至 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然後按一下 **[!UICONTROL Discussion forum notifications]**。
+
    在方塊 **[!UICONTROL Discussion forum notifications]** 中，傳送記錄檔位於標籤 **[!UICONTROL Edit > Delivery]** 中。 您也可以檢視 **[!UICONTROL Tracking > Log]** 和標 **[!UICONTROL Exclusion causes]** 簽。
 
