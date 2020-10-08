@@ -1,7 +1,7 @@
 ---
-title: 安裝客戶機控制台
-seo-title: 安裝客戶機控制台
-description: 安裝客戶機控制台
+title: 安裝客戶端主控台
+seo-title: 安裝客戶端主控台
+description: 安裝客戶端主控台
 seo-description: null
 page-status-flag: never-activated
 uuid: 1279c0d8-bf27-4a58-ae94-796d6147231a
@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 005be008585f75a87fb0029a8a88578cfde5ce51
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 2%
 
 促銷活動用戶端主控台是rich client，可讓您連線至您的促銷活動應用程式伺服器。
 
-在開始之前，您必須檢查「促銷活動相容 [性」矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)，取得您的促銷活動伺服器URL和使用者認證。
+在開始之前，您必須檢查「促銷活動相容 [性」矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)，取得您的促銷活動伺服器URL和使用者認證。
 
 >[!CAUTION]
 >
@@ -49,7 +46,7 @@ ht-degree: 2%
 
 1. 按一下安 **[!UICONTROL Download]** 裝頁面上的連結。
 1. 下載並儲存用戶端設定檔案。
-1. 在Windows上的電腦上執行下載的檔案： 安裝即會啟動。 根據您的Adobe Campaign版本，用戶端主控台的預設安裝路徑是 **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**，其中&#39;X&#39;為&#39;6&#39;或&#39;7&#39;。
+1. 在Windows上的電腦上執行下載的檔案：安裝即會啟動。 根據您的Adobe Campaign版本，用戶端主控台的預設安裝路徑是 **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**，其中&#39;X&#39;為&#39;6&#39;或&#39;7&#39;。
 
 >[!NOTE]
 >
@@ -75,7 +72,7 @@ ht-degree: 2%
 
 1. 如果您的組織已設定Adobe IMS，請勾選 **[!UICONTROL Connect with an Adobe ID]**
 
-1. 按一 **[!UICONTROL Ok]** 下以儲存您的設定。
+1. Click **[!UICONTROL Ok]** to save your settings.
 
 例如，您可以視需要新增多個連線，以連線至測試、舞台和生產環境。
 
@@ -100,6 +97,6 @@ ht-degree: 2%
 
 **相關主題**
 
-* [建立例項並登入](../../installation/using/creating-an-instance-and-logging-on.md)。
-* [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
+* [相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 * [安裝和設定Adobe Campaign Client](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) （視訊）
