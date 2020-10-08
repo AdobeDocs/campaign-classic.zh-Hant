@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2001'
 ht-degree: 0%
@@ -61,7 +58,7 @@ ht-degree: 0%
    >
    >按一下圖的背景以取消選擇所有元素。
 
-* 僅查看連結到給定任務的消息。 要執行此操作，請選 **[!UICONTROL Tasks]** 擇頁籤，然後在圖中選擇活動以限制清單。 連按兩下工作即可顯示資訊； 窗口中的最後一個頁籤包含日誌。
+* 僅查看連結到給定任務的消息。 要執行此操作，請選 **[!UICONTROL Tasks]** 擇頁籤，然後在圖中選擇活動以限制清單。 連按兩下工作即可顯示資訊；窗口中的最後一個頁籤包含日誌。
 
    ![](assets/new-workflow-display-tasks-activity.png)
 
@@ -81,7 +78,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_journal.png)
 
-   所有促銷活動訊息皆顯示： 促銷活動以及警告或錯誤。
+   所有促銷活動訊息皆顯示：促銷活動以及警告或錯誤。
 
 * 活動記錄
 
@@ -91,7 +88,7 @@ ht-degree: 0%
 
       ![](assets/s_user_segmentation_show_logs.png)
 
-      圖的下部分顯示兩個頁籤： 日誌和任務。
+      圖的下部分顯示兩個頁籤：日誌和任務。
 
       在圖中選擇的活動用作日誌和任務清單上的篩選器。
 
@@ -105,7 +102,7 @@ ht-degree: 0%
 
 ## 清除日誌 {#purging-the-logs}
 
-工作流歷史記錄不會自動清除： 預設情況下會保留所有消息。 您可以透過選單或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中 **[!UICONTROL Actions]** 的按鈕，來清除歷史記錄。 Select **[!UICONTROL Purge history]**. 功能表中可用的選 **[!UICONTROL Actions]** 項會在「動作」工具列區 [段中詳細說明](../../workflow/using/starting-a-workflow.md) 。
+工作流歷史記錄不會自動清除：預設情況下會保留所有消息。 您可以透過選單或按一 **[!UICONTROL File > Actions]** 下清單上方工具列中 **[!UICONTROL Actions]** 的按鈕，來清除歷史記錄。 選取 **[!UICONTROL Purge history]**。功能表中可用的選 **[!UICONTROL Actions]** 項會在「動作」工具列區 [段中詳細說明](../../workflow/using/starting-a-workflow.md) 。
 
 ![](assets/purge_historique.png)
 
@@ -131,7 +128,7 @@ ht-degree: 0%
 
 ![](assets/wf-properties_select-supervisors.png)
 
-通知內容是在預設範本 **[!UICONTROL Workflow manager notification]** 中設定： 此模板在工作流屬性 **[!UICONTROL Execution]** 的頁籤中選擇。 通知會顯示錯誤工作流程的名稱及相關任務。
+通知內容是在預設範本 **[!UICONTROL Workflow manager notification]** 中設定：此模板在工作流屬性 **[!UICONTROL Execution]** 的頁籤中選擇。 通知會顯示錯誤工作流程的名稱及相關任務。
 
 通知範例：
 
@@ -213,7 +210,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**isRunning** 是為此示例選擇的變數名稱。 這不是內建變數。
+>**isRunning** 是本範例所選的變數名稱。 這不是內建變數。
 
 緊接在yes分支中 **[!UICONTROL Test]** 的 **後續活動** ，必須在其 **Initialization指令碼中設定實例變數**:
 
@@ -244,7 +241,7 @@ instance.vars.isRunning = false
 
 工作流程使用大量工作表，這些工作表會佔用空間，最終導致整個平台的速度變慢（如果不加以維護）。 有關資料庫維護的詳細資訊，請參 [閱](../../production/using/tables-to-maintain.md) 。
 
-「數 **據庫清理** 」工作流可通過「管理」>「生產」>「技術工作流程 **** 」節點訪問，它允許您刪除過時的資料，以避免資料庫的指數級增長。 工作流程會自動觸發，使用者不需干預。 請參閱本 [節](../../production/using/database-cleanup-workflow.md)。
+「數 **據庫清理** 」工作流可通過「管理」>「生產」>「技術工作流程 **** 」節點訪問，它允許您刪除過時的資料，以避免資料庫的指數級增長。 工作流程會自動觸發，使用者不需干預。 Refer to this [section](../../production/using/database-cleanup-workflow.md).
 
 您也可以建立特定的技術工作流程，以清除不必要的資料佔用空間。 請參閱本 [節](../../production/using/application-objects.md) 和本 [頁](#purging-the-logs)。
 
