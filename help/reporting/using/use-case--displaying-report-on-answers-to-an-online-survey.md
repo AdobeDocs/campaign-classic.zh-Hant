@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：顯示線上調查回答的報表」
-seo-title: 「使用案例：顯示線上調查回答的報表」
-description: 「使用案例：顯示線上調查回答的報表」
+title: '"使用案例：顯示線上意見調查之答案的報表"'
+seo-title: '"使用案例：顯示線上意見調查之答案的報表"'
+description: '"使用案例：顯示線上意見調查之答案的報表"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c0a5b7d-c606-4bcb-9600-8f89e6fce32a
@@ -11,20 +11,20 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 5404a227-6cfb-463b-9a56-af46a022eb38
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 10%
 
 ---
 
 
-# 使用案例：顯示線上調查答案的報告{#use-case-displaying-report-on-answers-to-an-online-survey}
+# 使用案例：顯示線上意見調查之答案的報表{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 您可使用專屬報表來收集和分析Adobe Campaign調查的答案。
 
-在下列範例中，我們想要收集線上調查的答案，並將它們顯示在樞紐表格中
+在下列範例中，我們想要收集線上調查的答案，並在樞紐表格中顯示答案
 
 應用以下步驟：
 
