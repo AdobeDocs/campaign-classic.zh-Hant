@@ -1,7 +1,7 @@
 ---
-title: 跨通道傳送工作流程
-seo-title: 跨通道傳送工作流程
-description: 跨通道傳送工作流程
+title: 跨通道傳遞工作流程
+seo-title: 跨通道傳遞工作流程
+description: 跨通道傳遞工作流程
 seo-description: null
 page-status-flag: never-activated
 uuid: 02d51b13-656f-48f3-b744-5968ffa94b3e
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 2fe907da-ef37-46e2-a8fb-6ad4e18be486
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 4%
 
 ---
 
 
-# 跨通道傳送工作流程{#cross-channel-delivery-workflow}
+# 跨通道傳遞工作流程{#cross-channel-delivery-workflow}
 
 此使用案例提供跨通道傳送工作流程的範例。 本節將介紹跨通道傳送的一 [般概念](../../workflow/using/cross-channel-deliveries.md)。
 
@@ -42,7 +42,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 若要定義目標，請建立查詢以識別收件者。
 
-1. 建立促銷活動。 如需詳細資訊，請參閱[本小節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 建立促銷活動. 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在促銷 **[!UICONTROL Targeting and workflows]** 活動的標籤中，新增「查 **詢** 」活動至工作流程。 For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. 定義將接收您遞送的收件者。 例如，選擇「Gold」成員作為目標維。
 1. 新增篩選條件至查詢。 在此範例中，選取具有電子郵件地址和行動號碼的收件者。
@@ -89,7 +89,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. 在篩選設定中，從下 **[!UICONTROL Recipients who have not opened or clicked (email)]** 拉式清 **[!UICONTROL Behavior]** 單中選擇，然後選取電子郵件，包括您要從傳送清單傳送的選件。 按一下 **[!UICONTROL Finish]**.
+1. 在篩選設定中，從下 **[!UICONTROL Recipients who have not opened or clicked (email)]** 拉式清 **[!UICONTROL Behavior]** 單中選擇，然後選取電子郵件，包括您要從傳送清單傳送的選件。 按一下 **[!UICONTROL Finish]**。
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -106,7 +106,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    ![](assets/wkf_cross-channel_13.png)
 
-1. 按一 **[!UICONTROL Finish]** 下以儲存變更。
+1. Click **[!UICONTROL Finish]** to save your changes.
 
 ## 步驟4:最終確定工作流 {#step-4--finalizing-the-workflow}
 
