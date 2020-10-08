@@ -1,7 +1,7 @@
 ---
-title: 傳入渠道上的選件
-seo-title: 傳入渠道上的選件
-description: 傳入渠道上的選件
+title: 傳入頻道上的優惠方案
+seo-title: 傳入頻道上的優惠方案
+description: 傳入頻道上的優惠方案
 seo-description: null
 page-status-flag: never-activated
 uuid: 45cfc990-da38-451b-b65e-e9703e443a4d
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2093'
+ht-degree: 1%
 
 ---
 
 
-# 傳入渠道上的選件{#offers-on-an-inbound-channel}
+# 傳入頻道上的優惠方案{#offers-on-an-inbound-channel}
 
 ## 向匿名訪客呈現選件 {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -65,6 +65,7 @@ Neobank網站想在其網站上顯示選件，以針對瀏覽該頁面的未識�
    * HTML內容
    * 影像URL
    * 目標URL
+
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. 編輯HTML轉換函式，例如：
@@ -100,7 +101,7 @@ Neobank網站想在其網站上顯示選件，以針對瀏覽該頁面的未識�
 ### 建立匿名選件 {#creating-anonymous-offers}
 
 1. 前往您剛建立的類別。
-1. 按一下 **[!UICONTROL New]**.
+1. 按一下 **[!UICONTROL New]**。
 
    ![](assets/offer_inbound_anonymous_example_013.png)
 
@@ -147,7 +148,7 @@ Neobank網站想在其網站上顯示選件，以針對瀏覽該頁面的未識�
 
    上方的藍色URL方塊會對應例項名稱、環境的內部名稱(請參閱「建立匿名環境 [」)，以及連結至類別的主題(](#creating-an-anonymous-environment)Creating an offer category and a theme[](#creating-an-offer-category-and-a-theme))。 後者是可選的。
 
-當訪客存取網站首頁時，具有融資主題的選件 **會** ，顯示為HTML頁面上的設定。
+當訪客存取網站首頁時，具有融資主題的選 **件** ，會顯示為HTML頁面上的設定。
 
 ![](assets/offer_inbound_anonymous_example_022.png)
 
@@ -205,7 +206,7 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 
 ### 為匿名環境配置選件空間 {#configuring-offer-spaces-for-the-anonymous-environment}
 
-必須在網站上顯示的選件屬於兩個不同類別：最佳 **優惠** ，合作 **夥伴**。 在此範例中，我們將為每個類別建立特定的選件空間。
+必須在網站上顯示的選件屬於兩個不同類別： **最佳優惠** , **合作夥伴**。 在此範例中，我們將為每個類別建立特定的選件空間。
 
 若要建立符合「最佳選件」類別的選 **件空間** ，請套用下列程式：
 
@@ -217,8 +218,8 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
-1. 輸入標籤：例如 **Web最佳匿名優惠** 。
-1. 新增用於此選件空間的選件內容欄位，並設定轉換功能。
+1. 輸入標籤： **例如Web最佳匿名選件** 。
+1. 新增用於此選件空間的選件內容欄位，並設定轉換函式。
 
    ![](assets/offer_inbound_fallback_example_025.png)
 
@@ -235,7 +236,7 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 首先，請建立兩個選件類別：「最 **佳選件** 」類別和「合 **作夥伴** 」類別。 每個類別都會包含兩個匿名聯絡人的選件。
 
 1. 前往您剛 **[!UICONTROL Offer catalog]** 建立的匿名環境。
-1. 新增「最 **[!UICONTROL Offer category]** 佳選件」 **為標籤的資料夾** 。
+1. 新增包含 **[!UICONTROL Offer category]** 「最佳選 **件」的資料夾** ，做為標籤。
 
    ![](assets/offer_inbound_fallback_example_027.png)
 
@@ -284,7 +285,7 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 
 ### 在識別的環境中設定選件空間 {#configure-the-offer-spaces-in-the-identified-environment}
 
-您要在網站上展示的選件來自兩個不同的類別：最佳 **優惠** ，合作 **夥伴**。 在此範例中，我們想為每個類別建立特定的空間。
+您要在網站上展示的選件來自兩個不同的類別： **最佳優惠** , **合作夥伴**。 在此範例中，我們想為每個類別建立特定的空間。
 
 若要建立兩個選件空間，請套用與匿名選件空間相同的程式。 請參閱 [為匿名環境配置選件空間](#configuring-offer-spaces-for-the-anonymous-environment)。
 
@@ -310,7 +311,7 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. 在標籤 **[!UICONTROL Target identification]** 中，按一下 **[!UICONTROL Add]**。
+1. 在 **[!UICONTROL Target identification]** 索引標籤中，按一下 **[!UICONTROL Add]**。
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
