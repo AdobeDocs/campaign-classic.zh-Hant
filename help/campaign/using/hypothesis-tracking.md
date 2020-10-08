@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 * **已聯絡的人口總收入**:總金額超過所聯絡的個人數。
 * **控制組之總收益**:總金額超過控制群組數目。
-* **每個連絡人的平均收入**:總金額／已聯絡。
+* **每位連絡人的平均收入**:總金額／已聯絡。
 * **控制組平均收入**:總金額／控制組。
 * **每位連絡人的總利潤**:已聯絡的總利潤。
 * **控制組毛利總額**:控制組的毛利總額。
@@ -56,7 +56,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 * **控制群組的平均毛利**:總利潤／控制組。
 * **額外收入**:（已聯繫的平均收入——控制組的平均收入）*已聯繫的數量
 * **額外利潤**:（已聯繫的平均利潤——控制組的平均利潤）/已聯繫的數量
-* **每位連絡人的平均成本**:計算的傳送成本／聯絡人數。
+* **每位聯絡人的平均成本**:計算的傳送成本／聯絡人數。
 * **投資報酬**:交貨的計算成本／每位連絡人的毛利總計
 * **有效的投資報酬率**:計算交貨成本／額外利潤。
 * **重要性**:包含0到3的值，視促銷活動重要性而定。
