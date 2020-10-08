@@ -1,7 +1,7 @@
 ---
-title: 版本18.10
-seo-title: 版本18.10
-description: 版本18.10
+title: 版本 18.10
+seo-title: 版本 18.10
+description: 版本 18.10
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -11,22 +11,22 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 8%
 
 ---
 
 
-# 版本18.10{#release-18-10}
+# 版本 18.10{#release-18-10}
 
-## 版本18.10.6 - Build 8985{#release-18-10-6-build-8985}
+## 版本 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
-**改進**
+**功能改善**
 
 * 現在，我們允許在匯入工作流程期間刪除在Microsoft Dynamics中建立的虛擬記錄。
 * 修正「檔案收集器」工作流程活動在檔案存取遭拒時，可能會在回圈記錄錯誤的問題。 (NEO-12085)
@@ -34,21 +34,21 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * 改進使用內部帳戶時執行安全區套件的權限。
 * 修正可能導致像片記錄檔錯誤的問題。 (NEO-8978)
 
-## 版本18.10.5 - Build 8984{#release-18-10-5-build-8984}
+## 版本 18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
-**改進**
+**功能改善**
 
 * 修正在同時分析／傳送（同時分析兩個傳送）時，導致傳送分析失敗的SQL死鎖問題。 (NEO-13026)
 * 已移除「工作流程熱圖」中的10,000個記錄限制，以修正遺失的資料問題。 (NEO-12329)
 * 修正在擴充工作流程活動中使用「保留主集的所有其他資料」選項的問題。 (NEO-13291)
 
-## 版本18.10.4 - Build 8983{#release-18-10-4-build-8983}
+## 版本 18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
-**改進**
+**功能改善**
 
 * 修正交易訊息追蹤指標的計算程式問題。 (NEO-12529、NEO-12581)
 * 修正HTTPRequest API未等待所有回呼完成的問題。 (NEO-12628)
@@ -57,7 +57,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * 在Analytics整合中，現在允許擷取含%字元的AAM區段資料。 (NEO-12025)
 * 修正使用HTTP2傳送推播通知時的Tomcat當機問題。 (NEO-12701)
 
-## 版本18.10.3 - Build 8981{#release-18-10-3-build-8981}
+## 版本 18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
@@ -65,7 +65,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 >
 >這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
 
-**改進**
+**功能改善**
 
 * 修正s3檔案傳輸工作流程活動的問題。 (NEO-12473)
 * 修正「追蹤」工作流程可能失敗的問題。 (NEO-12520)
@@ -81,7 +81,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * 修正在行動應用程式上傳送推播通知時的字元逸出問題。
 * 修正Mid-Sourcing外部帳戶無法從FDA切換至SOAP同步方法的問題。
 
-## 版本18.10.2 - Build 8978{#release-18-10-2-build-8978}
+## 版本 18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
@@ -89,7 +89,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 >
 >這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
 
-**改進**
+**功能改善**
 
 * 已修正使用FDA上的MySQL執行工作流程時的各種問題。 (NEO-11652)
 * 修正傳送推播通知時的效能問題。 (NEO-11787)
@@ -103,7 +103,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * 修正Workflow HeatMap中計算工作流持續時間的問題。
 
 
-## 版本18.10 - Build 8977{#release-18-10-build-8977}
+## 版本 18.10 - Build 8977{#release-18-10-build-8977}
 
 2018年11月5日
 
@@ -128,15 +128,15 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
      <li> <p>在iOS中追蹤無訊息通知 </p> </li> 
      <li> <p>在iOS中實作註冊呼叫的意見回應</p> </li> 
      <li> <p>改善iOS傳送準備速度</p> </li> 
-    </ul> <p>Android V2連接器現在僅允許與FCM伺服器連接，這是Google GCM折舊的一部分。</p><p>如需詳細資訊，請參閱詳 <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">細檔案</a>。 本文對FCM的手動升級作了詳 <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">細說</a>明 </p> </td> 
+    </ul> <p>Android V2連接器現在僅允許與FCM伺服器連接，這是Google GCM折舊的一部分。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">相關的文件</a>，以瞭解詳情。本文對FCM的手動升級作了詳 <a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">細說</a>明 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
-   <td> <p>新增了資料管理工作流程活動。 「 <strong>SQL資料管理</strong> 」活動允許您編寫或複製貼上自己的SQL指令碼以建立和填充工作表（僅限FDA）。 </p> <p>如需詳細資訊，請參閱詳 <a href="../../workflow/using/sql-data-management.md">細檔案</a>。</p></td> 
+   <td> <p>新增了資料管理工作流程活動。 「 <strong>SQL資料管理</strong> 」活動允許您編寫或複製貼上自己的SQL指令碼以建立和填充工作表（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">相關的文件</a>，以瞭解詳情。</p></td> 
   </tr> 
   <tr> 
    <td> 工作流程監控<br /> </td> 
-   <td> <p>有了新的Adobe Campaign Workflow HeatMap，平台管理員可快速以圖形方式呈現所有並行工作流程，讓他們可以監控執行個體的負載情況，並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱詳 <a href="../../workflow/using/heatmap.md">細檔案</a>。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝的詳細資訊，請參閱 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
+   <td> <p>有了新的Adobe Campaign Workflow HeatMap，平台管理員可快速以圖形方式呈現所有並行工作流程，讓他們可以監控執行個體的載入情況，並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝的詳細資訊，請參閱 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -144,26 +144,26 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 **安全性增強功能**
 
 * 已修正可能導致伺服器端偽造要求(SSRF)攻擊和拒絕服務(DoS)攻擊弱點的安全性問題。 (NEO-11453)
-* 內容（追蹤重新導向、鏡像頁面、調查等）現在由Campaign搭配X-Robots-Tag提供：無快取標頭。 這可防止Internet搜尋引擎對此內容進行索引。 (NEO-11101)
+* 內容（追蹤重新導向、鏡像頁面、調查等） 現在由Campaign搭配X-Robots-Tag提供：無快取標頭。 這可防止Internet搜尋引擎對此內容進行索引。 (NEO-11101)
 * 修正訂閱API（nms:subscription:Unsubscribe和nms:subscribe:Subscribe）中的XTK植入問題。
 * 已修正取消訂閱Web應用程式中的XTK植入問題。
 * 已移除某些SMS記錄檔中無法安全顯示的密碼。
 
-**改進**
+**功能改善**
 
-* Campaign Classic API現在可在專用頁 [面中使用](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。 如果您使用jsapi.chm檔案，現在應參考新的線上版本。
-* 現在支援PostgreSQL 10、Debian 9和Teradata 16.20。 請參閱「 [Compatibility matrix(相容性表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html))」。
-* 建立SFTP連線時，您現在可以使用代理驗證。 如需詳細資訊，請參 [閱詳細檔案](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
+* 現在針對 Campaign Classic API 推出[專屬頁 面](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
+* 現在支援PostgreSQL 10、Debian 9和Teradata 16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
+* 建立SFTP連線時，您現在可以使用代理驗證。 For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * 使用 **直接郵件傳送範本建立單一傳送時** ，傳送屬性中現在提供「日期計算公式」選項。 (NEO-9792)
 * Cookie追蹤和Web應用程式的網域名稱管理已改善。 如需詳細資訊，請參閱下方的「技術演變」一節。
-* Adobe Marketing cloud共用資產在傳送或登陸頁面中的匯入方式已改善安全性與效能。
+* Adobe Marketing Cloud共用資產在傳送或登陸頁面中的匯入方式已改善安全性與效能。
 * 行動頻道外部帳戶中有新的核取方塊，可啟用記錄檔中的詳細SMPP追蹤，讓Adobe Campaign介面直接存取此輸出。
 * 在廣播中，現在可以區分每小時最大連接數和最大消息數。 當達到限制時，便可知道為什麼吞吐量受到限制。 以前，這兩種情況都會套用相同的訊息（「符合配額」）。
 * 現在，您可以指定從池中獲取連接時要執行的SQL指令碼。 此指令碼可用於設定預設模式。 此指令碼將在查詢條帶化後應用。 (NEO-11256)
 * 促銷活動SDK不再儲存使用者ID以符合我們的PII規定。 資料現在會儲存為雜湊。
 * 匯入封裝匯出XML檔案時，Campaign現在支援檔案中存在BOM，即使已明確宣告編碼亦然。
 
-**技術變革**
+**技術演變**
 
 用戶端與伺服器升級
 
@@ -175,7 +175,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 Cookie追蹤和Web應用程式的網域名稱管理已改善。
 
-現在，預設支援所有雙字母的二級網域名稱（例如。aa.com）。 對於更複雜的網域名稱（例如，三個字母的二級網域，例如。com.au），您需要將它們新增至serverConf的 **cookieDomains** （在重新導向標籤下）選項中。 以下是範例：
+現在，預設支援所有雙字母的二級網域名稱（例如。aa.com）。 若是更複雜的網域名稱（例如，三個字母的二級網域，例如。com.au），您需要在serverConf的 **cookieDomains** （在重新導向標籤下）選項中新增這些網域。 以下是範例：
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
@@ -204,7 +204,7 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 
 * 修正無法下載 **Web下載工作流程活動中** ，檔案的錯誤。 (NEO-11105)
 * 修正偶爾會將「傳送指 **示符」和促銷活動屬性** 」工作流程保留為「失敗」狀態的錯誤(NEO-10820)。
-* 修正在工作流程中執行「清單更新」活動後，刪除所建立之收件者清單的問題。 (NEO-11696)
+* 修正在工作流程中執行「清單更新」活動後所建立的收件者清單已刪除的問題。 (NEO-11696)
 * 修正在「促銷活動」日曆（在日文例項上）中，提前一個月錯誤顯示促銷活動的問題。 (NEO-11445)
 * 修正Analytics設定無法顯示在傳送屬性的「Web Analytics」標籤中的問題。 (NEO-11619)
 * 修正嘗試編輯並儲存nms:delivery輸入表單時顯示的錯誤。 (NEO-10973)
@@ -227,7 +227,7 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 * 修正可能導致LINE傳送收件者錯誤地傳回為「無法存取」的問題。 (NEO-10833)
 * 修正在Oracle上執行具有附加列的工作流查詢時的問題。 (NEO-11615)
 * 已對連接池進行了增強，以確保關閉的連接不會在連接池中保存太長時間。 (NEO-11392)
-* 修正使用定位工作流程活動(查詢、資料載入(RDBMS)等)時的問題通過FDA連接到包含UTF8字元（在表名、欄位名等）的外部Oracle表其中也包含具有系統生成的預設約束名的主鍵約束。 (NEO-10714)
+* 修正使用定位工作流程活動(查詢、資料載入(RDBMS)等)時的問題 通過FDA連接到包含UTF8字元（在表名、欄位名等）的外部Oracle表 其中也包含具有系統生成的預設約束名的主鍵約束。 (NEO-10714)
 * 修正無法刪除傳送之HTML內容的問題。 (NEO-11327)
 * 修正促銷活動執行後，直接郵件中XML和CSV檔案預覽的問題。 (NEO-11290)
 * 修正在擴充工作流程活動中排序資料的問題。 (NEO-11394)
@@ -241,7 +241,7 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 * 修正Oracle中無法在選取超過1000個元素時執行DELETE查詢的問題。 (NEO-11171)
 * 修正導致在Android推播通知傳送的其他參數中，將URL編碼為追蹤URL的問題。 (NEO-11468)
 * 修正將參數設為「一天間隔」和「開啟」時，在「使用者活動」報表中發生的指令碼錯誤。 (NEO-11655)
-* 修正透過已驗證的Web proxy連線至中端採購伺服器或訊息中心時發生的問題。 (NEO-11309)
+* 修正透過已驗證的Web Proxy連線至中端採購伺服器或訊息中心時發生的問題。 (NEO-11309)
 * 修正在根據SQL視圖選擇特定方案的元素後保存新傳送組合時 **發生的Oracle錯誤**。 (NEO-11682)
 * 修正當透過使用解壓縮選項的載入檔案活動處理包含。csv的zip檔案時，產生包含誤報的拒絕檔案的問題。
 * xtkjoblog現在會被清除。
