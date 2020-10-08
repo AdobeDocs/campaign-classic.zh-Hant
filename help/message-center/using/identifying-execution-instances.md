@@ -1,7 +1,7 @@
 ---
-title: 識別執行例項
-seo-title: 識別執行例項
-description: 識別執行例項
+title: 辨識執行實例
+seo-title: 辨識執行實例
+description: 辨識執行實例
 seo-description: null
 page-status-flag: never-activated
 uuid: 215908da-9e70-4f37-aa99-67e80c2ae16a
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: c4b3f1f1-4be7-441e-b348-35d0e26b57d8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 11%
 
 ---
 
 
-# 識別執行例項{#identifying-execution-instances}
+# 辨識執行實例{#identifying-execution-instances}
 
 必須在控制實例中查看每個執行實例時，為每個實例分配一個唯一標識符，以區分每個執行實例的歷史記錄。 即使您的控制和執行例項已安裝在同一部電腦上，此步驟仍為必備步驟。 此識別碼可透過部署精靈手動分配給每個執行例項，或透過從控制例項按一下 **Initialize connection** (請參閱 [Control instance](../../message-center/using/creating-a-shared-connection.md#control-instance))自動進行。
 
