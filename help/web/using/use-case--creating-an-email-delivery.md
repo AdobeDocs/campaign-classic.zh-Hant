@@ -1,7 +1,7 @@
 ---
-title: 「使用案例：建立電子郵件傳送」
-seo-title: 「使用案例：建立電子郵件傳送」
-description: 「使用案例：建立電子郵件傳送」
+title: '"使用案例：建立電子郵件傳遞"'
+seo-title: '"使用案例：建立電子郵件傳遞"'
+description: '"使用案例：建立電子郵件傳遞"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 7cd6329c-63d5-4cf0-9451-f0b4c2eaf0dd
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 4ec34980-62a2-47b9-b103-de4290925624
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 3%
 
 ---
 
 
-# 使用案例：建立電子郵件傳送{#use-case-creating-an-email-delivery}
+# 使用案例：建立電子郵件傳遞{#use-case-creating-an-email-delivery}
 
 在此使用案例中，您將學習使用Adobe Campaign數位內容編輯器(DCE)來設計電子郵件傳送的步驟。
 
@@ -45,7 +45,7 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 ## 步驟2 —— 選擇範本 {#step-2---selecting-a-template}
 
-選取傳送範本，然後為傳送命名。 此名稱只會顯示給Adobe Campaign主控台的使用者，而收件者不會顯示，不過，此標題會顯示在您的傳送清單中。 按一下 **[!UICONTROL Continue]**.
+選取傳送範本，然後為傳送命名。 此名稱只會顯示給Adobe Campaign主控台的使用者，而收件者不會顯示，不過，此標題會顯示在您的傳送清單中。 按一下 **[!UICONTROL Continue]**。
 
 ![](assets/dce_delivery_model.png)
 
