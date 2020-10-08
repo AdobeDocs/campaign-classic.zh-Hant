@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 860be8be-f28c-4836-b4fb-e91c6a4616c6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 1%
 
 ---
 
 
-# 管理{#administration}
+# 管理員{#administration}
 
-自動啟動Adobe Campaign模組(**web**、 **mta**、 **wfserver**&#x200B;等)由nlserver服務 **器提供** 。
+自動啟動Adobe Campaign模組(**web**、 **mta**、 **wfserver**&#x200B;等) 由nlserver服務 **器提供** 。
 
 安裝Adobe Campaign會自動設定機器，讓nlserver **** service在引導序列期間啟動。
 
@@ -63,9 +63,9 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
    **nlserver停止`<module>[@<instance>][-immediate][-noconsole]`**
 
-   您也可以使用 **nlserver restart命`<module>[@<instance>]`**令重新啟動模組。
+   您也可以使用 **nlserver restart命`<module>[@<instance>]`** 令重新啟動模組。
 
-   例如：
+   範例:
 
    **nlserver啟動Web**
 
@@ -85,9 +85,10 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
    >    * 發生緊急情況時，使用 **-immediate** 選項強制立即停止進程(相當於Unix命 **令kill -9**)。
    >    * 使用 **-noconsole** 選項，確保啟動的模組在控制台上不顯示任何內容。 其日誌將通過syslogd模組寫入 **磁碟** 。
    >    * 使用 **-verbose選項** ，顯示有關進程操作的其他資訊。
+
       >    
       >      
-      例如：
+      範例:
       >    
       >      
       **nlserver重新啟動web -verbose**
@@ -107,7 +108,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
    **伺服器關閉**
 
-* 編輯 **serverConf.xml和** config- **檔案時，重新載入nlserver web** module配置(和web server extension模組（如果適用） **`<instance>  .xml </instance>`**。
+* 編輯 **serverConf.xml和** config- **檔案時，重新載入nlserver web** module配置(和web server extension模組（如果適用） **`<instance>  .xml </instance>`** 。
 
    **nlserver config -reload**
 
