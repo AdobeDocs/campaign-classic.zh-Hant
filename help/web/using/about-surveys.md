@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: ef7d9b16-506a-409c-a578-000b88cd17a2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Campaign包含一個圖形模組，可用來定義和發佈網頁應用程
 * 呈現個人化和現場位置，
 * 根據答案有條件顯示調查欄位、
 * 條件式頁面顯示、
-* 核准前先檢查資訊，視預期資料類型（編號、電子郵件地址、日期等）而定和必填欄位，
+* 核准前先檢查資訊，視預期資料類型（編號、電子郵件地址、日期等）而定 和必填欄位，
 * 電子郵件邀請／通知、
 * 將錯誤和結束訊息個人化，
 * 影像、視訊、超文字連結、驗證碼等的使用。
