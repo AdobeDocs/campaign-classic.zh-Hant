@@ -1,7 +1,7 @@
 ---
-title: 同步對象
-seo-title: 同步對象
-description: 同步對象
+title: 同步受眾
+seo-title: 同步受眾
+description: 同步受眾
 seo-description: null
 page-status-flag: never-activated
 uuid: eda67bf7-8a0a-4240-8b31-de364be5d572
@@ -11,20 +11,20 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 749a084e-69ee-46b4-b09b-cb91bb1da3cd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1155'
+ht-degree: 1%
 
 ---
 
 
-# 同步對象{#synchronizing-audiences}
+# 同步受眾{#synchronizing-audiences}
 
-您可以使用Campaign v7進階功能建立複雜的清單，並與Campaign Standard（包括其他資料）以順暢的方式直接即時地以觀眾身分分享此清單。 然後，您的Campaign standard使用者就可以在Adobe Campaign standard中使用對象。
+您可以使用Campaign v7進階功能建立複雜的清單，並與Campaign Standard（包括其他資料）以順暢的方式直接即時地以觀眾身分分享此清單。 然後，您的Campaign Standard使用者就可以在Adobe Campaign Standard中使用對象。
 
-複雜的定位涉及未在Campaign standard中複製的其他資料，只能使用Campaign v7來達成。
+複雜的定位涉及未在Campaign Standard中複製的其他資料，只能使用Campaign v7來達成。
 
 您也只需共用收件者清單或透過連接器（例如Microsoft Dynamics with Campaign Standard）傳送的資料。
 
@@ -32,20 +32,20 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 >[!NOTE]
 >
->如果您需要的所有資料都已複製，您也可以在Adobe Campaign standard中使用匯總和集合來豐富資料。
+>如果您需要的所有資料都已複製，您也可以在Adobe Campaign Standard中使用匯總和集合來豐富資料。
 
 ## 必要條件 {#prerequisites}
 
 為達到此目的，您需要：
 
-* 儲存在Campaign v7資料庫並與Campaign Standard同步的收件者。 請參閱同步 [配置檔案](../../integrations/using/synchronizing-profiles.md) 。
-* 其他資料，例如儲存在Campaign v7資料庫中與nms:recipients相關的表格中的訂閱或交易。 這些資料可來自Campaign v7 OOB結構描述或自訂表格。 由於未同步化，因此在「促銷活動標準」中預設無法使用這些項目。
-* 在Campaign v7和Campaign standard中執行工作流程的權限。
-* 在Campaign standard中建立和執行傳送的權限。
+* 儲存在Campaign v7資料庫並與Campaign Standard同步的收件者。 請參閱「同步 [配置檔案](../../integrations/using/synchronizing-profiles.md) 」部分。
+* 其他資料，例如儲存在Campaign v7資料庫中與nms:recipients相關的表格中的訂閱或交易。 這些資料可來自Campaign v7 OOB結構描述或自訂表格。 由於未同步化，因此在Campaign Standard中預設無法使用這些項目。
+* 在Campaign v7和Campaign Standard中執行工作流程的權限。
+* 在Campaign Standard中建立和執行傳送的權限。
 
 ## 在Campaign v7中建立包含其他資料的定位工作流程 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
-複雜的定位涉及未在Campaign standard中複製的其他資料，只能使用Campaign v7來達成。
+複雜的定位涉及未在Campaign Standard中複製的其他資料，只能使用Campaign v7來達成。
 
 定義目標及其其他資料後，就可將其儲存為可與「促銷活動標準」共用的清單。
 
@@ -60,15 +60,15 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
    ![](assets/acs_connect_query1.png)
 
-1. 從查詢中新增其他資料。 如需詳細資訊，請參閱「新增 [資料](../../workflow/using/query.md#adding-data) 」一節。
+1. 從查詢中新增其他資料。 For more information, refer to the [Adding data](../../workflow/using/query.md#adding-data) section.
 
    此範例說明如何新增匯總，以計算收件者在一年中收到多少傳送。
 
-   在中， **[!UICONTROL Query]**&#x200B;選擇 **[!UICONTROL Add data...]**。
+   In the **[!UICONTROL Query]**, select **[!UICONTROL Add data...]**.
 
    ![](assets/acs_connect_query2.png)
 
-1. 選擇 **[!UICONTROL Data linked to the filtering dimension]** 並按一下 **[!UICONTROL Next]**。
+1. 選取 **[!UICONTROL Data linked to the filtering dimension]** 並按一下 **[!UICONTROL Next]**。
 
    ![](assets/acs_connect_query3.png)
 
@@ -87,22 +87,23 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 1. 定義輸出列。 在這裡，唯一需要的欄是計算傳送次數的欄。 若要這麼做：
 
    * 在 **[!UICONTROL Add]** 窗口右側選擇。
-   * 在窗口 **[!UICONTROL Select field]** 中，按一下 **[!UICONTROL Advanced selection]**。
+   * From the **[!UICONTROL Select field]** window, click **[!UICONTROL Advanced selection]**.
    * 選擇 **[!UICONTROL Aggregate]**，然後 **[!UICONTROL Count]**。 勾選選選 **[!UICONTROL Distinct]** 項，然後按一下 **[!UICONTROL Next]**。
    * 在欄位清單中，選擇用於計數函式的 **欄位** 。 選擇永遠會填入的欄位，例如欄 **[!UICONTROL Primary key]** 位，然後按一下 **[!UICONTROL Finish]**。
    * 更改列中的表達 **[!UICONTROL Alias]** 式。 此別名可讓您輕鬆擷取最終傳送中新增的欄。 例如 **NBdeliveries**。
    * 按一下 **[!UICONTROL Finish]** 並保存活 **[!UICONTROL Query]** 動配置。
+
    ![](assets/acs_connect_query7.png)
 
-1. 儲存工作流程。 下節說明如何與ACS共用人口。
+1. 儲存工作流程。下節說明如何與ACS共用人口。
 
-## 與Campaign standard共用目標 {#share-the-target-with-campaign-standard}
+## 與Campaign Standard共用目標 {#share-the-target-with-campaign-standard}
 
 定義目標人口後，您就可以透過活動與ACS共 **[!UICONTROL List update]** 用。
 
 1. 在先前建立的工作流程中，新 **[!UICONTROL List update]** 增活動並指定您要更新或建立的清單。
 
-   指定您要在Campaign v7中儲存清單的檔案夾。 清單受實作期間所定義的資料夾對應所約束，一旦在Campaign standard中共用後，這些對其可見性會有影響。 請參閱「 [權限轉換](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion) 」一節。
+   指定您要在Campaign v7中儲存清單的檔案夾。 清單受實作期間所定義的資料夾對應所約束，一旦在Campaign Standard中共用後，這些對其可見性會有影響。 請參閱「 [權限轉換](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion) 」一節。
 
 1. 請確定已勾 **[!UICONTROL Share with ACS]** 選此選項。 預設情況下會選中它。
 
@@ -112,15 +113,15 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
    定位及其其他資料會儲存在Campaign v7的清單中，並立即在Campaign Standard中以清單對象的身分共用。 只有已複製的配置檔案與ACS共用。
 
-如果活動發生錯 **[!UICONTROL List update]** 誤，表示與Campaign standard的同步可能失敗。 若要查看有關問題的詳細資訊，請前往 **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**。 此資料夾包含由活動執行觸發的同 **[!UICONTROL List update]** 步工作流。 請參閱「 [Troubleshooting the ACS Connector(ACS連接器疑難排解](../../integrations/using/troubleshooting-the-acs-connector.md) )」部分。
+如果活動發生錯 **[!UICONTROL List update]** 誤，表示與Campaign Standard的同步可能失敗。 若要查看有關問題的詳細資訊，請前往 **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**。 此資料夾包含由活動執行觸發的同 **[!UICONTROL List update]** 步工作流。 請參閱「 [Troubleshooting the ACS Connector(ACS連接器疑難排解](../../integrations/using/troubleshooting-the-acs-connector.md) )」部分。
 
-## 擷取Campaign standard中的資料，並在傳送中使用 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
+## 擷取Campaign Standard中的資料，並在傳送中使用 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
 在Campaign v7中執行定位工作流程後，您就可以從Campaign Standard的選單中，以唯讀模式尋找 **[!UICONTROL Audiences]** 清單對象。
 
 ![](assets/acs_connect_deliveryworkflow_audience.png)
 
-在Campaign standard中建立傳送工作流程後，就可使用此對象及其在傳送中包含的其他資料。
+在Campaign Standard中建立傳送工作流程後，就可使用此對象及其在傳送中包含的其他資料。
 
 1. 從功能表建立新的工作 **[!UICONTROL Marketing activities]** 流程。
 1. 新增活 **[!UICONTROL Read audience]** 動並選取您先前從Campaign v7共用的對象。
@@ -129,7 +130,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 1. 新增活 **[!UICONTROL Email delivery]** 動，並將其設定為任何其他 [電子郵件傳送活動](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
 1. 開啟傳送內容。
-1. 新增個人化欄位。 從彈出式選單中，找到節 **[!UICONTROL Additional data (targetData)]** 點。 此節點包含初始定位工作流程中計算的觀眾其他資料。 您可將其當做任何其他個人化欄位使用。
+1. 新增個人化欄位。從彈出式選單中，找到節 **[!UICONTROL Additional data (targetData)]** 點。 此節點包含初始定位工作流程中計算的觀眾其他資料。 您可將其當做任何其他個人化欄位使用。
 
    在此範例中，原始定位工作流程所產生的其他資料是過去365天內傳送給每個收件者的傳送數。 在定位工作流程中指定的NBdeliveries別名在此處可見。
 
@@ -143,7 +144,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ## 傳送及監控您的傳送 {#send-and-monitor-your-delivery}
 
-傳送及其內容準備就緒後，請傳送傳送，如本節中詳細說明 [所述](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
+傳送及其內容準備就緒後，請依照本節的詳細資訊說明傳送 [傳送](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
 
 1. 執行傳送工作流程。 此步驟會準備傳送電子郵件。
 1. 從傳送控制面板，手動確認可傳送。
