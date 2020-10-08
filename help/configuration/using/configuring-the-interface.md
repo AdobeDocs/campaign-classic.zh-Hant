@@ -1,7 +1,7 @@
 ---
-title: 配置介面
-seo-title: 配置介面
-description: 配置介面
+title: 設定介面
+seo-title: 設定介面
+description: 設定介面
 seo-description: null
 page-status-flag: never-activated
 uuid: 101ba02f-da43-4dcc-b9ff-6e5ca848fc5d
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 8fb9ff23-17a7-4425-9195-738d6fd914dc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 3%
 
 ---
 
 
-# 配置介面{#configuring-the-interface}
+# 設定介面{#configuring-the-interface}
 
 若要在Adobe Campaign介面中檢視並與新的收件者表格對話，請套用下列步驟：
 
@@ -34,7 +34,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 1. 更改 **Nms_DefaultRcpSchema** 變數的值，其名稱與外部收件者表匹配的模式(在本例中：cus:individual)。
 1. 儲存變更。
 
-## 建立新表格 {#creating-a-new-form-}
+## Creating a new form {#creating-a-new-form-}
 
 建立新表格可讓您檢視和編輯外部收件者表格的資料。
 
@@ -69,7 +69,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 
 ## 在導覽階層中建立新類型的資料夾 {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. 轉至節 **[!UICONTROL Administration>Configuration>Navigation hierarchies]** 點。
+1. Go to the **[!UICONTROL Administration>Configuration>Navigation hierarchies]** node.
 1. 建立新的 **xtk:navtree** 類 **型navtree** 。
 1. 根據表格範本說明您需要的所有監視和欄位。
 
