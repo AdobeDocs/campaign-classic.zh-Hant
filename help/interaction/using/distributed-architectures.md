@@ -1,7 +1,7 @@
 ---
-title: 分佈式體系結構
-seo-title: 分佈式體系結構
-description: 分佈式體系結構
+title: 分佈式架構
+seo-title: 分佈式架構
+description: 分佈式架構
 seo-description: null
 page-status-flag: never-activated
 uuid: f672446f-18e6-4fff-81a1-01ee22792755
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 1%
 
 ---
 
 
-# 分佈式體系結構{#distributed-architectures}
+# 分佈式架構{#distributed-architectures}
 
 ## 原則 {#principle}
 
@@ -61,7 +61,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ## 軟體包配置 {#packages-configuration}
 
-任何直接連結至 **Interaction** （選件、主張、收件者等）的架構擴充功能必須部署在執行例項上。
+任何直接連結至 **Interaction** （選件、主張、收件者等）的架構擴充功能 必須部署在執行例項上。
 
 Interaction軟體包必須安裝在所有實例上（控制和執行）。 另外提供兩個套件：一個軟體包要安裝在控制實例上，另一個軟體包要安裝在每個執行實例上。
 
@@ -78,11 +78,11 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
    ![](assets/interaction_powerbooster1.png)
 
    * 完成標籤並新增簡短且明確的內部名稱。
-   * 選擇 **[!UICONTROL Execution instance]**。
-   * 勾選 **[!UICONTROL Enabled]** 選項。
+   * 選取 **[!UICONTROL Execution instance]**。
+   * 核取 **[!UICONTROL Enabled]** 選項。
    * 完成執行實例的連接參數。
    * 每個執行例項都必須連結至ID。 此ID是在您按一下按鈕時指 **[!UICONTROL Initialize connection]** 派的。
-   * 檢查使用的應用程式類型： **[!UICONTROL Message Center]**、 **[!UICONTROL Interaction]**&#x200B;或兩者皆有。
+   * 檢查使用的應用程式類型： **[!UICONTROL Message Center]**、 **[!UICONTROL Interaction]**&#x200B;或兩者。
    * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須對有關實例的資料庫具有以下讀寫權限：
 
       ```
@@ -137,11 +137,11 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
 
 >[!NOTE]
 >
->如果您已在命題表中執行了特定配置，請相應地調整查詢。
+>如果您已在命題表中執行了特定的配置，請相應地調整查詢。
 
 ### PostgreSQL {#postgresql}
 
-有兩種方法。 第一個（使用工作表）的速度稍微快一些。
+有兩種方法。 第一個（使用工作表）的速度稍快。
 
 **工作表**
 
