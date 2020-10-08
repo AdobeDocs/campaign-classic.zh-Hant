@@ -1,7 +1,7 @@
 ---
-title: 在Facebook塗鴉牆上發佈
-seo-title: 在Facebook塗鴉牆上發佈
-description: 在Facebook塗鴉牆上發佈
+title: 在 Facebook 塗鴉牆上發佈
+seo-title: 在 Facebook 塗鴉牆上發佈
+description: 在 Facebook 塗鴉牆上發佈
 seo-description: null
 page-status-flag: never-activated
 uuid: 02288473-a0d7-42b5-9f86-3c96550ab1a8
@@ -11,19 +11,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 8577db0b-f1fc-41af-aa0f-ec4d02dac376
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 在Facebook塗鴉牆上發佈{#publishing-on-facebook-walls}
+# 在 Facebook 塗鴉牆上發佈{#publishing-on-facebook-walls}
 
 為了讓Adobe Campaign能夠將出版品傳送至Facebook塗鴉牆，您必須將這些頁面的寫入存取權委派給Adobe Campaign。 這包括下列設定步驟：
 
@@ -34,7 +31,7 @@ ht-degree: 0%
 
 ## 必要條件 {#prerequisites}
 
-首先，建立Facebook帳戶和數個頁面： 這些將用於發送發佈。
+首先，建立Facebook帳戶和數個頁面：這些將用於發送發佈。
 
 * 若要建立Facebook帳戶，請使用https://www.facebook.com [連結](https://www.facebook.com) 。
 * 若要建立Facebook頁面，請使用https://www.facebook.com/pages/create [連結](https://www.facebook.com/pages/create) 。
@@ -50,12 +47,12 @@ ht-degree: 0%
 1. 登入您用來管理頁面的Facebook帳戶。
 1. 建立新的Facebook頁面。
 1. 按一下 **[!UICONTROL Settings]** 右上角的按鈕。
-1. 在標籤 **[!UICONTROL General]** 中，修改頁面的可見性參數： 複選框 **[!UICONTROL Page unpublished]** 時。
-1. 按一下&#x200B;**[!UICONTROL Save Changes]**&#x200B;按鈕。
+1. 在標籤 **[!UICONTROL General]** 中，修改頁面的可見性參數：複選框 **[!UICONTROL Page unpublished]** 時。
+1. 按一下 **[!UICONTROL Save Changes]** 按鈕。
 
 ![](assets/social_facebook_test_page.png)
 
-## 建立Facebook應用程式 {#creating-a-facebook-application}
+## 建立 Facebook 應用程式 {#creating-a-facebook-application}
 
 為了讓Adobe Campaign能夠在您頁面的塗鴉牆上發佈，您需要建立Facebook應用程式。 若要這麼做，請套用下列步驟：
 
@@ -94,7 +91,7 @@ ht-degree: 0%
 >
 >Adobe Campaign營運商必須擁有管理權限才能執行此設定。
 
-* **Facebook**: 選擇先前建立的應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選擇該 **[!UICONTROL Settings > Basic]** 頁籤。
+* **Facebook**:選擇先前建立的應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選擇該 **[!UICONTROL Settings > Basic]** 頁籤。
 
    ![](assets/social_facebook_external_account_002.png)
 
@@ -102,7 +99,7 @@ ht-degree: 0%
    >
    >如果未 **[!UICONTROL Facebook Web Games]** 出現區段，請按一 **[!UICONTROL Add Platform]** 下頁面底部的按鈕，然後選取 **[!UICONTROL Facebook Web Games]**。
 
-* **Adobe Campaign**: 轉至樹 **[!UICONTROL Administration > Platform > External Accounts]** 的節點，選擇外部帳 **[!UICONTROL Facebook routing]** 戶並按一下選 **[!UICONTROL Connector]** 項卡。
+* **Adobe Campaign**:轉至樹 **[!UICONTROL Administration > Platform > External Accounts]** 的節點，選擇外部帳 **[!UICONTROL Facebook routing]** 戶並按一下選 **[!UICONTROL Connector]** 項卡。
 
    ![](assets/social_facebook_external_account_001.png)
 
@@ -127,7 +124,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >此欄 **[!UICONTROL Marketing URL]** 位為選擇性。
+   >The **[!UICONTROL Marketing URL]** field is optional.
 
 1. 在Adobe Campaign主控台中，按一 **[!UICONTROL Request the authorization from the application]** 下標籤底部的連 **[!UICONTROL Connector]** 結。 工作流 **[!UICONTROL Synchronize Facebook pages]** 程會自動觸發，並收集管理員管理的所有Facebook頁面。 如需詳細資訊，請參閱「同 [步Facebook頁面」](#synchronizing-facebook-pages)。
 
