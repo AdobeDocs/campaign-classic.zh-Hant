@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 069dbc6b-4019-4d66-85a8-0e4de6b66f18
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e09692e316a92a67632201e5691e8b4df42cc341
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1387'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: e09692e316a92a67632201e5691e8b4df42cc341
 
 Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷資源。 這些行銷資源可以是手冊、視覺輔助工具或任何其他涉及數位營運商的通訊媒體。
 
-對於透過Adobe Campaign管理的每個行銷資源，您可以隨時追蹤其狀態和歷史記錄，並檢視目前的版本。
+對於透過Adobe Campaign管理的每個行銷資源，您可以隨時追蹤其狀態和歷史記錄並檢視目前版本。
 
 ## 新增行銷資源 {#adding-a-marketing-resource}
 
@@ -135,7 +135,7 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 >
 >除了為每個行銷資源指定的審閱者外，具有管理員權限的操作員和資源管理員還被授權批准行銷資源。
 
-### 發佈資源 {#publishing-a-resource}
+### Publishing a resource {#publishing-a-resource}
 
 核准後，必須發佈行銷資源。 出版程式必鬚根據公司要求具體實施。 這表示資源可以發佈在外部網站或任何其他伺服器上，特定資訊可以傳送給外部服務供應商等。
 
@@ -151,12 +151,12 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
-工作流將執行：
+將執行工作流：
 
 * 當審核者按一下鏈 **[!UICONTROL Publish resource]** 接時（或者，如果未定義審核者，則為資源負責人）。
 * 如果資源是通過行銷資源建立任務管理的，則只要選定任務中的框 **[!UICONTROL Finished]**，就會在該任務設定為時執行(請參閱 **[!UICONTROL Publish the marketing resource]** Marketing資源建立任務 [](../../campaign/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
-如果工作流未立即啟動（例如，如果工作流已停止），則資源的狀態將更改為 **[!UICONTROL Pending publication]**。 啟動工作流後，資源的狀態將更改為 **[!UICONTROL Published]**。 此狀態未考慮發佈程式中的可能錯誤。 檢查工作流程的狀態，以確認其已正確執行。
+如果工作流未立即啟動（例如，如果工作流已停止），則資源的狀態將更改為 **[!UICONTROL Pending publication]**。 啟動工作流後，資源的狀態將更改為 **[!UICONTROL Published]**。 此狀態未考慮發佈程式中可能發生的錯誤。 檢查工作流程的狀態，以確認其已正確執行。
 
 ## 將資源連結至促銷活動 {#linking-a-resource-to-a-campaign}
 
