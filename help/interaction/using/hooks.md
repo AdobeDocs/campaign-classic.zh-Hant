@@ -1,7 +1,7 @@
 ---
-title: 鈎子
-seo-title: 鈎子
-description: 鈎子
+title: 鈎點
+seo-title: 鈎點
+description: 鈎點
 seo-description: null
 page-status-flag: never-activated
 uuid: 4394717e-8625-4e2f-9492-3fd9b444a732
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2b799ad7-b729-4b3e-9adc-1df13259f2a9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 1%
 
 ---
 
 
-# 鈎子{#hooks}
+# 鈎點{#hooks}
 
 「互動」中的勾點可讓您修改標 **準引擎行為**。
 
@@ -53,7 +53,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 >
 >xmlInteraction **** 參數同時包含呼叫資料和由現成可用查詢載入之連絡人的描述檔。
 
-**例如：**
+**範例:**
 
 ```
 // Call an external system to get additional data for the target
@@ -75,7 +75,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 **輸入參數：**
 
-* 建議：合格主張表。 下面是此表中元素結構的示例
+* 主張：合格主張表。 下面是此表中元素結構的示例
 
    ```
    { offer_id:1234,
@@ -98,7 +98,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 * 修正命題清單（掛接的第一個參數）
 * 修改的交互節點
 
-**例如：**
+**範例:**
 
 ```
 var aReturnedProps = [];
@@ -147,7 +147,7 @@ return aReturnedProps;
 >
 >系統會檢查選件ID是否與輸入和傳回參數相同。
 
-**例如：**
+**範例:**
 
 ```
 var product = getUrl("https://EXTERNAL_SYSTEM?offerCode=" + encodeURIComponent(xmlOffer.@code));
