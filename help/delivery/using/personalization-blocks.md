@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '888'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ HTML原始碼會插入傳送內容中。 例如，個人化 **[!UICONTROL Greeti
    >有關鏡像頁生成的詳細資訊，請參 [閱生成鏡像頁](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
 
 * **[!UICONTROL Link to mirror page]** :插入指向鏡像頁的連結：&quot;如果您無法正確檢視此訊息，請按一下這裡&quot;。
-* **[!UICONTROL Unsubscription link]** :插入可取消訂閱所有傳送的連結（區塊清單）。
+* **[!UICONTROL Unsubscription link]** :插入可取消訂閱所有傳送的連結(denylist)。
 * **[!UICONTROL Formatting function for proper nouns]** :產生 **[!UICONTROL toSmartCase]** Javascript函式，此函式會將每個字詞的第一個字母變更為大寫。 此區塊必須插入傳送的原始碼中，並放入標 **`<script>...</script>`** 記中。
 
    在以下範例中，此函式用於將元素&quot;My header&quot;取代為&quot;My new header&quot;，並在每個字詞加上大寫字母：
