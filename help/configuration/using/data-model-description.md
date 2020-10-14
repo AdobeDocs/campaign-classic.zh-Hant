@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Adobe Campaign依賴包含連結在一起的表格的關係式資料庫。
 * iEmailFormat:電子郵件的偏好格式（1代表文字，2代表HTML，若未定義則為0）。
 * sAddress1、sAddress2、sAddress3、sAddress4、sZipCode、sCity用於建立郵遞區號（與1997年5月的XPZ 10-011 AFNOR標準一致）。
 * sPhone、sMobilePhone、sFax分別包含手機、行動電話和傳真號碼。
-* iBlockList是用於描述檔的預設退出標幟（1表示「未訂閱」，否則為0）。
+* iBlackList是用於描述檔的預設退出標幟（1表示「未訂閱」，否則為0）。
 
 iFolderId欄位是將收件者連結至其執行資料夾的外鍵。 For more on this, see [XtkFolder](#XtkFolder).
 
@@ -139,7 +139,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 ![](assets/data-model_typology.png)
 
 * **NmsTypelogy規則**:此表與 **nms:typelogyRule** Schema匹配。 它包含根據類型套用至傳送的規則。
-* **NmsTypelogy**:此表與 **nms：類型學架構匹配** 。 它包含要套用至符合類型法之傳送的規則集。
+* **NmsTypelogy**:此表與 **nms：類型學架構匹配** 。 它包含要套用至符合類型學之傳送的規則集。
 * **NmsTypelogyRuleRel**:此表與 **nms:typelogyRuleRel模式匹配** 。 它包含了類型及其規則之間的關係。
 * **NmsVolumeLine**:此表與 **nms:volumeLine模式匹配** 。 它包含容量規則的可用行集。
 * **已使用NmsVolume**:此表與 **nms:volumeUnced模式匹配** 。 它包含能力規則的所有衝減行。
