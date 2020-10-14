@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 73%
+source-wordcount: '792'
+ht-degree: 68%
 
 ---
 
@@ -25,8 +25,6 @@ ht-degree: 73%
 ## 關於 Adobe Campaign 中的清單 {#about-lists-in-adobe-campaign}
 
 清單 (list) 是一組靜態的用戶檔案，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。例如，透過查詢而從資料庫中摘取出的母體可形成一個清單。
-
-
 
 Lists are created and managed via the **[!UICONTROL Lists]** link in the **[!UICONTROL Profiles and targets]** tab.
 
@@ -41,6 +39,8 @@ Adobe Campaign 提供兩種類型的清單：
 * **[!UICONTROL List]** 類型：類型 **[!UICONTROL List]** 清單可讓您使用工作流程來建立和管理清單。 These will be specific lists resulting from data imports, that can be updated via the dedicated **[!UICONTROL List update]** workflow activity.
 
    Unlike the **[!UICONTROL Group]** type list, this type list can be automatically updated with a **[!UICONTROL Scheduler]** activity. Note that For an example on how to create **[!UICONTROL List]** type lists, refer to [this page](../../workflow/using/list-update.md).
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#create-list-video)
 
 ## 從群組建立用戶檔案清單 {#creating-a-profile-list-from-a-group}
 
@@ -131,3 +131,22 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 >
 >刪除清單時，清單上的用戶檔案不受影響，但是將更新用戶檔案中的資料。
 
+## 如何建立收件者清單 {#create-list-video}
+
+此清單 (list) 是一組靜態的收件者名單，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。收件者清單也可以稱為受眾。
+
+瞭解如何從檔案總管設定收件者清單，以建立觀眾。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+## 如何使用工作流程建立收件者清單
+
+瞭解如何建立工作流程以鎖定收件者，以及如何在使用電子郵件目標中的清單之前讓工作流程重複執行。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+**另請參閱**
+
+* 
+
+* 
