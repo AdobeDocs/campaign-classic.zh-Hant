@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1303'
 ht-degree: 3%
 
 ---
@@ -151,5 +151,5 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
    * 如果您針對單一用戶端在多個執行個體（開發、測試、prod）上使用相同的MTA，則dataLogPath選項會複製從這三個執行個體傳送的訊息。
 
 * **每個連線的電子郵件**:密件副本電子郵件封存的運作方式是開啟連線並嘗試透過該連線傳送所有電子郵件。 Adobe建議與您的內部技術聯絡人確認特定連線上接受的電子郵件數。 增加此數量對BCC吞吐量有很大影響。
-* **密件副本發送IP**:目前，密件副本電子郵件不會透過一般的MTA Proxy傳送。 而是從MTA伺服器開啟直接連線至目標電子郵件伺服器。 這表示您可能需要根據電子郵件伺服器配置，將其他IP添加到網路上的允許清單。
+* **密件副本發送IP**:目前，密件副本電子郵件不會透過一般的MTA Proxy傳送。 而是從MTA伺服器開啟直接連線至目標電子郵件伺服器。 這表示，根據您的電子郵件伺服器配置，您可能需要將其他IP添加到網路上的allowlist。
 
