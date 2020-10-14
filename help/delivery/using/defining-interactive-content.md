@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -151,6 +151,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 目前，您可以嘗試透過兩個步驟傳送AMP電子郵件：
 
 1. Adobe Campaign可讓您測試將AMP支援的動態電子郵件傳送至已正確設定的選定電子郵件地址，以驗證其內容和行為。 請參 [閱測試AMP電子郵件傳送以取得選定的位址](#testing-amp-delivery-for-selected-addresses)。
+
 1. 一旦經過測試，您就可以向相關電子郵件提供者註冊，將您的傳送者網域加入允許清單中，以便將傳送或促銷活動作為AMP for Email計畫的一部分傳送。 請參 [閱向電子郵件供應商註冊來傳送AMP電子郵件](#delivering-amp-emails-by-registering)。
 
 ### 測試AMP電子郵件傳送的選定地址 {#testing-amp-delivery-for-selected-addresses}
@@ -161,7 +162,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 >
 >目前只有Gmail、Outlook和Mail.ru支援測試AMP格式。
 
-對於Gmail和Outlook，您必須先將您使用的寄件者位址新增至您所定位之Gmail和Outlook帳戶的允許清單。
+若是Gmail和Outlook，您必須先將您使用的傳送者位址新增至允許清單，以便從Adobe Campaign針對您所鎖定的Gmail和Outlook帳戶傳送。
 
 操作步驟：
 1. 請確定已勾選啟用動態電子郵件的選項，以找出相關的電子郵件提供者。
