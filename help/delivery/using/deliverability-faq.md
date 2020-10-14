@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -47,38 +47,38 @@ For more on MX configuration, see [this section](../../installation/using/email-
 
 如果問題持續存在，請聯絡商業或傳遞性服務、Adobe Campaign Client Care或Adobe Campaign支援。
 
-## 塊清單與隔離 {#block-list-versus-quarantine}
+## Denylist與隔離 {#denylist-versus-quarantine}
 
-* **阻止清單上的電子郵件地址與隔離的電子郵件地址之間有何區別？**
+* **拒絕清單上的電子郵件地址和隔離的電子郵件地址之間有何區別？**
 
-   * 狀態是 **[!UICONTROL On block list]** 回饋迴路的結果（當某人將訊息報告為垃圾訊息時）。
+   * 狀態是 **[!UICONTROL Denylisted]** 回饋迴路的結果（當某人將訊息報告為垃圾訊息時）。
 
    * 狀態 **[!UICONTROL Quarantined]** 是軟反彈或硬反彈的結果。
-   如需詳細資訊，請參閱[本區段](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list)。
+   如需詳細資訊，請參閱[本區段](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)。
 
 * **不同的隔離錯誤原因意味著什麼？**
 
-   以下是10個可能的原因：未定義、用戶未知、無效域、塊清單上的地址、拒絕、錯誤忽略、無法訪問、帳戶禁用、郵箱已滿、未連接。
+   以下是10個可能的原因：未定義、用戶未知、無效域、拒絕、錯誤忽略、無法訪問、帳戶禁用、郵箱已滿、未連接。
 
    For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## 從塊清單中刪除 {#remove-from-block-list}
+## 從denylist移除 {#remove-from-denylist}
 
-* **我的其中一個收件者被錯誤地加入區塊清單。 如何從塊清單中刪除它們，以便我可以再次開始發送郵件？**
+* **我的收件者中有一個被誤加入密尼列斯特。 我要如何從簡歷表中移除這些字元，以便重新傳送訊息？**
 
    * 前往 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
    * 在對應記錄的詳細資訊中，將欄位的值 **[!UICONTROL Status]** 設定為 **[!UICONTROL Valid]**。
    * 保存記錄。
 
-* **我要如何得知我的其中一個IP是否在區塊清單中？ 如何從塊清單中刪除IP?**
+* **我要如何得知我的IP是否列在密文清單上？ 如何從密鑰清單移除IP?**
 
-   若要檢查您的IP位址是否在區塊清單中，您可以使用各種網站來驗證它，例如：
+   若要檢查您的IP位址是否在密文清單中，您可以使用各種網站來驗證，例如：
    * [MX工具箱](https://mxtoolbox.com/)
    * [我的IP地址是什麼](https://whatismyipaddress.com)
 
-   通常，IP地址檢查的結果將返回一個清單，其中包含塊清單的詳細資訊以及阻止IP地址的網站的名稱。
+   通常，IP位址檢查的結果會傳回一個清單，其中包含拒絕IP位址的登入清單和網站名稱。
 
-   按一下對應的連結，即可存取網站詳細資訊。 然後，您可以要求將您的網站從將IP位址新增至其區塊清單的網站中除名。
+   按一下對應的連結，即可存取網站詳細資訊。 然後，您可以要求將您的網站從新增IP位址至其登入清單的網站中移除。
 
    >[!NOTE]
    >
