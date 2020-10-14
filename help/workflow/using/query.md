@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -187,7 +187,7 @@ ht-degree: 0%
 
    確保該 `where` 子句與欄位的類型相同。
 
-   一個常見的錯誤是： `iBlocklist='3'` 其中 `iBlocklist` 是數值欄位，且 `3` 表示文字值。
+   一個常見的錯誤是： `iBlacklist='3'` 其中 `iBlacklist` 是數值欄位，且 `3` 表示文字值。
 
    請確定您知道查詢的執行計畫。 避免完整表掃描，尤其是每分鐘執行的即時查詢或近乎即時的查詢。
 
