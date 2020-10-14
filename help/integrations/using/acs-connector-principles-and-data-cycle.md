@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: acs-connector
 discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -216,15 +216,15 @@ ACS連接器有兩種實施類型。 兩者一律由Adobe Campaign Consulting團
   </tr> 
   <tr> 
    <td> 不再聯絡（透過任何管道）<br /> </td> 
-   <td> @blockList<br /> </td> 
+   <td> @blackList<br /> </td> 
   </tr> 
   <tr> 
    <td> 不再透過電子郵件聯絡<br /> </td> 
-   <td> @blockListEmail<br /> </td> 
+   <td> @blackListEmail<br /> </td> 
   </tr> 
   <tr> 
    <td> 不再透過SMS聯絡<br /> </td> 
-   <td> @blockListMobile<br /> </td> 
+   <td> @blackListMobile<br /> </td> 
   </tr> 
   <tr> 
    <td> 電話<br /> </td> 
