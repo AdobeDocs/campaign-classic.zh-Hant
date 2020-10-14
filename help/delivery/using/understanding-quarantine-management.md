@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2571'
 ht-degree: 15%
 
 ---
@@ -34,21 +34,21 @@ Adobe Campaign 管理隔離地址的清單。在執行傳遞分析時，預設�
 
 郵件準備期間會自動排除其電子郵件地址或電話號碼處於隔離狀態的設定檔（請參閱[識別傳送的隔離地址](#identifying-quarantined-addresses-for-a-delivery)）。這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。
 
-如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者添加到塊清單中。
+如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者添加到拒絕清單。
 
 此外，隔離有助於減少簡訊傳送成本，因為將錯誤的電話號碼排除在遞送服務之外。如需確保傳送安全並最佳化的最佳實務，請參閱[本頁面](../../delivery/using/delivery-best-practices.md)。
 
-### 隔離與塊清單 {#quarantine-vs-block-list}
+### 隔離與拒絕清單 {#quarantine-vs-denylist}
 
 **隔離** (Quarantine)　僅適用於地址，而不適用於設定檔本身。這代表如果兩個設定檔具有相同的電子郵件地址，則兩個設定檔在隔離地址時都會受到影響。
 
 同樣地，被隔離的電子郵件地址的設定檔可以更新其設定檔並輸入新地址，然後再次被傳送動作設為目標。
 
-Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->當使用者回覆SMS訊息時，其關鍵字如「STOP」，以選擇退出SMS傳送時，其描述檔不會像電子郵件選擇退出程式一樣新增至區塊清單。 配置檔案電話號碼會發送到隔離區，以便用戶繼續接收電子郵件消息。
+>當使用者回覆SMS訊息時，其關鍵字如「STOP」，以選擇退出SMS傳送時，其個人檔案不會像電子郵件選擇退出程式一樣新增至密文清單。 配置檔案電話號碼會發送到隔離區，以便用戶繼續接收電子郵件消息。
 
 ## 識別隔離地址 {#identifying-quarantined-addresses}
 
@@ -107,9 +107,7 @@ Administrators can list the addresses in quarantine for the entire platform from
 
    ![](assets/tech_quarant_error_status.png)
 
-* 您也可以將其狀態變更為 **[!UICONTROL On allow list]**。 在這種情況下，地址仍在隔離清單中，但是，即使遇到錯誤，該地址仍將被系統地定位。
-
-<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+* 您也可以將其狀態變更為 **[!UICONTROL Allowlisted]**。 在這種情況下，地址仍在隔離清單中，但是，即使遇到錯誤，該地址仍將被系統地定位。
 
 在以下情況下，這些地址將自動從隔離清單中刪除：
 
@@ -120,7 +118,7 @@ Administrators can list the addresses in quarantine for the entire platform from
 然後，他們的狀態會變更為 **[!UICONTROL Valid]**。
 
 >[!IMPORTANT]
-即使收到電子郵件， **[!UICONTROL Quarantine]** 具有 **[!UICONTROL On block list]** 或狀態地址的收件者也不會被移除。
+即使收到電子郵件， **[!UICONTROL Quarantine]** 具有 **[!UICONTROL On denylist]** 或狀態地址的收件者也不會被移除。
 
 您可以修改錯誤數和兩個錯誤之間的句點。 若要這麼做，請變更部署精靈(**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)中的對應設定。 For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
