@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 2%
 
 ---
@@ -134,7 +134,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >若要允許來自Azure Synapse Analytics的通訊，您可能需要將公用IP新增至允許清單。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >若要允許來自Azure Synapse Analytics的通訊，您可能需要將公用IP新增至allowlist。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 1. 如果是iptables，請運行以下命令：
 
@@ -225,7 +225,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >若要允許來自Azure Synapse Analytics的通訊，您可能需要將公用IP新增至允許清單。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >若要允許來自Azure Synapse Analytics的通訊，您可能需要將公用IP新增至allowlist。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 ## 配置對雪花的訪問 {#configure-access-to-snowflake}
 
