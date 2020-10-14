@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2440'
 ht-degree: 16%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 16%
 
 傳送訊息後，傳送記錄檔可讓您檢視每個描述檔的傳送狀態以及相關的失敗類型和原因。
 
-如果地址被隔離，或者配置檔案位於塊清單中，在準備傳送時也可以排除郵件。 已排除的訊息會列在傳送控制面板中。
+如果地址被隔離或配置檔案位於拒絕清單中，也可以在準備傳送期間排除郵件。 已排除的訊息會列在傳送控制面板中。
 
 **相關主題：**
 
@@ -83,10 +83,10 @@ ht-degree: 16%
    <td> 此位址的品質分級太低。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 塊清單上的地址 </td> 
+   <td> 拒絕列出的地址 </td> 
    <td> 硬 </td> 
    <td> 8 </td> 
-   <td> 發送時，地址已添加到塊清單中。 此狀態用於從外部清單和外部系統將資料匯入Adobe Campaign Quarantine清單。<br /> </td> 
+   <td> 傳送時，地址已新增至密尼清單。 此狀態用於從外部清單和外部系統將資料匯入Adobe Campaign Quarantine清單。<br /> </td> 
   </tr> 
   <tr> 
    <td> 控制地址 </td> 
@@ -104,7 +104,7 @@ ht-degree: 16%
    <td> 忽略錯誤 </td> 
    <td> 已忽略 </td> 
    <td> 25 </td> 
-   <td> 地址在允許清單中。 因此會忽略錯誤，並傳送電子郵件。<br /> </td> 
+   <td> 地址在allowlist上。 因此會忽略錯誤，並傳送電子郵件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 仲裁後排除 </td> 
@@ -204,7 +204,7 @@ ht-degree: 16%
    >
    >本節將詳細介紹彈回郵箱 [的配置](../../installation/using/deploying-an-instance.md#managing-bounced-emails)。
 
-   回饋 [迴路的運作](../../delivery/using/technical-recommendations.md#feedback-loop) ，就像跳回電子郵件。 當使用者將電子郵件歸類為垃圾訊息時，您可以在Adobe Campaign中設定電子郵件規則，以封鎖傳送給此使用者的所有內容。 傳送給符合電子郵件垃圾訊息資格的使用者的訊息會自動重新導向至專為此目的而建立的電子郵件方塊。 這些使用者的位址位於區塊清單中，即使他們未按一下取消訂閱連結。 地址位於(**NmsAddress**)隔離表中的塊清單上，而不在(**NmsRecipient**)接收表中。
+   回饋 [迴路的運作](../../delivery/using/technical-recommendations.md#feedback-loop) ，就像跳回電子郵件。 當使用者將電子郵件歸類為垃圾訊息時，您可以在Adobe Campaign中設定電子郵件規則，以封鎖傳送給此使用者的所有內容。 傳送給符合電子郵件垃圾訊息資格的使用者的訊息會自動重新導向至專為此目的而建立的電子郵件方塊。 這些使用者的位址已列在密文清單中，即使他們未按一下取消訂閱連結。 地址在(**NmsAddress**)隔離表中的denylist中，而不在(**NmsRecipient**)接收表中。
 
    >[!NOTE]
    >
