@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3587'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
 >
 >這些組態必須由管理員執行，且僅 **適用於內部部署** 代管模型。
 >
->對於 **代管** (Hosted)部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IP允許清單管理或URL權限）。
+>對於 **代管** (Hosted)部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IPallowlist管理或URL權限）。
 
 如需詳細資訊，請參閱下列章節：
 
@@ -322,7 +322,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
    要查看相關參數，請參 **閱serverConf.xml檔案** 。
 
-1. 若要在下拉式清單中啟用相似性選擇，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
+1. 若要在下拉式清單中啟用相似性選取，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
 
    ![](assets/ipaffinity_enum.png)
 
@@ -355,9 +355,9 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 存在三種連接保護模式：
 
-* **阻止**:不屬於允許清單的所有URL都被阻止，並出現錯誤消息。 這是postupgrade之後的預設模式。
+* **阻止**:不屬於允許清單的所有URL都被阻止，並返回錯誤消息。 這是postupgrade之後的預設模式。
 * **權限**:允許所有不屬於允許清單的URL。
-* **警告**:不屬於允許清單的所有URL皆允許，但JS解譯器會發出警告，讓管理員可以收集這些URL。 此模式添加JST-310027警告消息。
+* **警告**:允許所有不屬於允許清單的URL，但JS解釋器會發出警告，以便管理員收集這些URL。 此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -369,9 +369,9 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 >[!IMPORTANT]
 >
->根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應連絡其管理員，將其新增至允許清單。
+>根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應聯繫其管理員以將其添加到allowlist。
 >
->來自移轉的現有客戶可使用警 **告模式** 一段時間。 同時，他們需要在授權URL之前分析出站流量。 定義授權URL的清單後，他們應連絡其管理員，將URL新增至允許清單並啟 **用封鎖模式**。
+>來自移轉的現有客戶可使用警 **告模式** 一段時間。 同時，他們需要在授權URL之前分析出站流量。 定義授權URL的清單後，他們應聯絡其管理員，將URL新增至allowlist並啟用封 **鎖模式**。
 
 ## 動態頁面安全性與中繼 {#dynamic-page-security-and-relays}
 
@@ -452,7 +452,7 @@ sh
 >
 >這份清單並非完整無遺。
 
-在服務 **器配置檔案** 的exec節點中，需要引用blocklistFile屬性中先前建立的 **檔案** 。
+在服務 **器配置檔案** 的執行節點中，需要引用blackstFile屬性中以前建立 **的檔案** 。
 
 **僅適用於Linux**:在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。 此用戶在配置檔案的 **exec** 節點中設定。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
@@ -464,7 +464,7 @@ sh
 
 ```
 <serverConf>
- <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
+ <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
 </serverConf>
 ```
 
