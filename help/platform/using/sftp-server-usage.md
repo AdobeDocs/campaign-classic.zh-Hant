@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 58%
+source-wordcount: '992'
+ht-degree: 59%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 58%
 * 時常登入 SFTP 以直接檢查其內容。
 * 請記住，SFTP 硬碟的管理主要是您的責任。
 * 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
-* 您嘗試從中啟動SFTP連線的公用IP必須新增至促銷活動例項的允許清單。 將IP位址新增至允許清單可透過支援票證 [要求](https://support.neolane.net)。
+* 您嘗試從中啟動SFTP連線的公用IP必須新增至促銷活動例項的allowlist。 可以通過支援票證請求將IP地址添加到允許 [清單](https://support.neolane.net)。
 
 >[!CAUTION]
 >
@@ -87,8 +87,8 @@ ht-degree: 58%
 
    如果埠未打開，請確保打開側面的傳出連線，然後重試。如果仍遇到連接問題，請與 Adobe 支援團隊分享該命令的輸出。
 
-1. 檢查您嘗試從中啟動SFTP連線的公用IP是否是您提供給Adobe支援的允許清單。
-1. 如果您使用密碼驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用基於密鑰的驗證(請參 [閱SFTP伺服器最佳實務](#sftp-server-best-practices))。
+1. 檢查您嘗試從中啟動SFTP連線的公用IP是否是您提供給Adobe支援的allowlist。
+1. 因此，我們強烈建議使用基於密鑰的驗證(請參 [閱SFTP伺服器最佳實務](#sftp-server-best-practices))。
 1. 如果您使用的是基於金鑰的身份驗證，請檢查您使用的金鑰是否與為執行個體配置提供給 Adobe 支援團隊的金鑰相同。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
 
@@ -129,7 +129,7 @@ ht-degree: 58%
 
    1. 轉至工作流審計並檢查日誌是否顯示「無法解析主機名」錯誤。
 
-1. 如果SFTP伺服器由Adobe代管，請聯絡客戶服務以檢查IP是否已新增至允許清單。
+1. 如果SFTP伺服器由Adobe代管，請聯絡客戶服務以檢查是否已將IP新增至允許清單。
 
    否則請驗證：
 
