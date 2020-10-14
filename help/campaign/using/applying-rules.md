@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 10%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 10%
 1. 控制規則（如果這些規則是在定位開始時套用）。
 1. 篩選規則：
 
-   * 地址限定的原生應用程式規則：塊清單上的已定義地址／未驗證地址／地址／隔離地址／地址質量。
+   * 地址限定的原生應用程式規則：denylist /隔離地址／地址質量上的已定義地址／未驗證地址／地址。
    * 篩選由使用者定義的規則。
    * 位址或識別碼的去重複化規則（視需要套用）。
 
