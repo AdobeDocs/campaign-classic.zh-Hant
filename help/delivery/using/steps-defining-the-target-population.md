@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1576'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ ht-degree: 2%
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，亦即電子郵件位址在區塊清單中的收件者（「選擇退出」）。 為了遵守電子行銷的職業道德和電子商務的法律，必須繼續選擇這一選項。
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，亦即電子郵件位址在拒絕清單（「選擇退出」）上的收件者。 為了遵守電子行銷的職業道德和電子商務的法律，必須繼續選擇這一選項。
 * **[!UICONTROL Exclude quarantined recipients]**. 此選項可讓您從目標中排除任何地址沒有回應的描述檔。 我們強烈建議保留此選項。
 
    >[!NOTE]
