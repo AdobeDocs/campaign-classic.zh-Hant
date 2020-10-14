@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2974'
 ht-degree: 1%
 
 ---
@@ -564,7 +564,7 @@ ht-degree: 1%
   <tr> 
    <td> 投訴<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> 狀態等於「失敗」且原因等於「新增至區塊清單的位址」的訊息計數。<br /> </td> 
+   <td> 狀態等於「失敗」且原因等於「登入清單的位址」的訊息計數。<br /> </td> 
    <td> Count（@status=2和msg/@failureReason=8）<br /> </td> 
   </tr> 
   <tr> 
@@ -766,7 +766,7 @@ ht-degree: 1%
   <tr> 
    <td> 規則拒絕的訊息<br /> </td> 
    <td> @reject<br /> </td> 
-   <td> 在分析期間根據分類規則忽略的地址數：未指定的地址、隔離的地址、添加到塊清單中的地址等。<br /> </td> 
+   <td> 在分析期間根據分類規則忽略的地址數：未指定的地址、隔離的地址、拒絕清單上的地址等。<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
