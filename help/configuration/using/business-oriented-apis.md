@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 4%
 
 ---
@@ -147,7 +147,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如果未將服務名指定為參數，則收件者會自動顯示在塊清單(@blockList=&quot;1&quot;)上。
+>如果未將服務名指定為參數，則收件人將自動顯示在denylist(@blackList=&quot;1&quot;)上。
 
 此呼叫不會傳回任何資料，但錯誤除外。
 
