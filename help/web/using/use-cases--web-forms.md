@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. 由於此遞送的收件者尚未確認其批准，因此他們仍在資料庫區塊清單中。 若要接收此通訊，您必鬚根據此範本授權傳送給區塊清單上的目標收件者。
+1. 由於此遞送的收件者尚未確認其批准，因此他們仍在資料庫拒絕清單中。 若要接收此通訊，您必鬚根據此範本授權傳送至密文清單上的目標收件者。
 
    若要這麼做，請按一下標 **[!UICONTROL Exclusions]** 簽。
 
-1. 按一下連 **[!UICONTROL Edit...]** 結並取消勾選 **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** 選項。
+1. 按一下連 **[!UICONTROL Edit...]** 結並取消勾選 **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** 選項。
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -109,10 +109,10 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一個活 **[!UICONTROL Script]** 動會將收件者新增至區塊清單，直到他們確認訂閱電子報為止。 其內容必須如下：
+   第一個活 **[!UICONTROL Script]** 動會在電子報上新增收件者，直到他們確認訂閱電子報為止。 其內容必須如下：
 
    ```
-   ctx.recipient.@blockList=1
+   ctx.recipient.@blackList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +120,7 @@ Web表單工作流程將包含下列活動：
    第二個活 **[!UICONTROL Script]** 動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將允許您將收件者從臨時資料夾傳輸到另一個資料夾，並在他們確認訂閱後立即與現有配置檔案協調。
 
    ```
-   ctx.recipient.@blockList=0
+   ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +172,7 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   使用者會新增至資料夾中的Adobe Campaign資料庫， **[!UICONTROL Temp]** 其個人檔案會新增至區塊清單，直到他們以電子郵件確認訂閱為止。
+   使用者會新增至資料夾中的Adobe Campaign資料庫，其個人檔案會 **[!UICONTROL Temp]** 列在密文清單中，直到他們以電子郵件確認訂閱為止。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ Web表單工作流程將包含下列活動：
 
    在Adobe Campaign中，使用者設定檔已更新：
 
-   * 他們不再在區塊清單上，
+   * 他們不再在密文名單上，
    * 他們訂閱了資訊服務。
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
