@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ AOL、Gmail、Microsoft和Yahoo！等ISP 將非參與視為不想要的電子郵
 ### 階段1 {#phase-1}
 
 * 第一步是識別幾乎沒有開啟或點按活動的訂閱者，並據此根據設定的時間範圍劃分此群組。 經驗法則是檢閱過去90天內未開啟或點按過電子郵件的訂閱者。 不過，這會因業務性質（例如季節性傳送）而有所不同。
-* 定義時間範圍時要記住的另一點是，ISP和屏蔽清單公司認為參與時間介於1.5到1.8年之間。 此外，行為活動（例如購買和網站活動）或其他接觸點（例如註冊階段或第一個聯絡點時的偏好設定）。
+* 在定義時間框架時要記住的另一點是，ISP和Denylist公司認為，參與時間介於1.5到1.8年之間。 此外，行為活動（例如購買和網站活動）或其他接觸點（例如註冊階段或第一個聯絡點時的偏好設定）。
 
 ### 階段2 {#phase-2}
 
