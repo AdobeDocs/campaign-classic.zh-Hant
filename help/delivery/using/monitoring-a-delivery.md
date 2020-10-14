@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 2%
 
 ---
@@ -114,12 +114,12 @@ ht-degree: 2%
 
 按一下按 **[!UICONTROL Send]** 鈕後，您的傳送似乎比往常花了更長的時間。 這可能是由不同的元素所造成：
 
-* 有些電子郵件提供者可能已將您的IP位址新增至區塊清單。 在此情況下，請檢查您的廣播並參 [閱本節](../../delivery/using/about-deliverability.md)。
+* 有些電子郵件提供者可能已將您的IP位址新增至密碼清單。 在此情況下，請檢查您的廣播並參 [閱本節](../../delivery/using/about-deliverability.md)。
 * 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign傳遞 [最佳實務](../../delivery/using/delivery-best-practices.md) ，以瞭解內容准則。
 * Adobe Campaign MTA中可能已發生調節。 這是由以下原因造成：
 
    * 附加的消息(**[!UICONTROL quotas met]** 消息):已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](../../delivery/using/deliverability-faq.md) . 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
-   * 附加的消息(**[!UICONTROL dynamic flow control]** 消息):Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，進而面臨潛在的區塊清單。
+   * 附加的消息(**[!UICONTROL dynamic flow control]** 消息):Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，進而面臨潛在的拒絕清單。
 
 * 系統問題可能會阻止伺服器進行交互：這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如在取得個人化資料的過程中會影響促銷活動。
 
@@ -163,7 +163,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由於收件者的地址發生錯誤，因此未將傳送內容傳送給收件者。 它已添加到阻止清單、隔離、未提供或重複。 <br /> </td> 
+   <td> 由於收件者的地址發生錯誤，因此未將傳送內容傳送給收件者。 它位於拒絕清單、隔離、未提供或重複。 <br /> </td> 
   </tr> 
   <tr> 
    <td> 已傳送<br /> </td> 
@@ -241,7 +241,7 @@ ht-degree: 2%
 
 傳送記錄檔是瞭解傳送失敗原因的關鍵。 您可從傳送記錄中偵測到以下可能錯誤：
 
-* 如果收件者訊息失敗，並出現「無法存取」錯誤，指出： **編譯指令碼&#39;content htmlContent&#39;行X時出錯：`[table]`未定義。 JavaScript:評估指令碼&#39;content htmlContent**&#39;時出錯，此問題的原因幾乎總是HTML中的個人化，嘗試呼叫未在上游定位或傳送的目標對應中定義或映射的表或欄位。
+* 如果收件者訊息失敗，並出現「無法存取」錯誤，指出： **編譯指令碼&#39;content htmlContent&#39;行X時出錯： `[table]` 未定義。 JavaScript:評估指令碼&#39;content htmlContent**&#39;時出錯，此問題的原因幾乎總是HTML中的個人化，嘗試呼叫未在上游定位或傳送的目標對應中定義或映射的表或欄位。
 
    為了修正此問題，必須審查工作流程和傳送內容，以明確決定個人化嘗試呼叫相關表格的方式，以及表格是否可以映射。 在此處，移除HTML中對此表格的呼叫或修正對應至傳送，都是解析的路徑。
 
