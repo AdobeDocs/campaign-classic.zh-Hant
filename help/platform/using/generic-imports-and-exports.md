@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '489'
 ht-degree: 55%
 
 ---
@@ -40,11 +40,11 @@ Adobe Campaign 還提供了一個匯入模組，可讓您使用外部檔案為�
 >
 >Campaign 中的資料匯入應通過工作流程執行，以確保資料一致性並提高效率。有關詳細資訊，請參見[匯入資料](../../workflow/using/importing-data.md)、[匯入最佳實作](../../workflow/using/importing-data.md#best-practices-when-importing-data)和[匯入範本示例](../../workflow/using/importing-data.md#setting-up-a-recurring-import)部分。
 
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+
 ## 建立作業範本 {#creating-a-job-template}
 
 Import and export templates are stored in the **[!UICONTROL Resources > Templates > Job templates]** directory of the Adobe Campaign tree.
-
-![](assets/s_ncs_user_export_wizard_template.png)
 
 按照預設，此目錄中存在三個匯入範本和一個匯出範本。不得更改它們。You can duplicate them to create your own templates or create a new template via the **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
 
@@ -54,7 +54,7 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 >[!NOTE]
 >
->原生范 **[!UICONTROL Import block list]** 本已設定為匯入已新增至區塊清單的電子郵件地址清單。
+>原生范 **[!UICONTROL Import denylist]** 本已設定為匯入已新增至denylist的電子郵件地址清單。
 > 
 >此 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 範本可讓您從頭開始設定匯入或匯出。
 
