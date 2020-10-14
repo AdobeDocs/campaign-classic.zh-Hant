@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1101'
 ht-degree: 2%
 
 ---
@@ -153,7 +153,7 @@ ht-degree: 2%
 
 依法，電子郵件傳送必須包含取消訂閱的連結。 收件者可以按一下此連結來更新其描述檔，並排除在未來傳送的目標之外。
 
-預設的取消訂閱連結會透過傳送精靈中內容編輯器工具列的最後一個按鈕插入(請參閱關於個 [人化](../../delivery/using/about-personalization.md))。 當收件者按一下此連結時，描述檔會新增至區塊清單（選擇退出），這表示此收件者將不再受任何傳送動作的鎖定。
+預設的取消訂閱連結會透過傳送精靈中內容編輯器工具列的最後一個按鈕插入(請參閱關於個 [人化](../../delivery/using/about-personalization.md))。 當收件者按一下此連結時，描述檔會新增至密文清單（選擇退出），這表示此收件者將不再受任何傳送動作的定位。
 
 但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許此動作，您可以使用Web表單(請參 [閱本節](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes))或插入個人化的取消訂閱連結(請參閱 [個人化區塊](../../delivery/using/personalization-blocks.md))。
 
