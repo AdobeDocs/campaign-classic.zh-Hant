@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 **回呼URL**
 
-回 **呼URL** 應新增至允許清單，並以「https://」開頭。 檢查回 **呼URL** 是否連結至對應的例項。 例如，生產例項應重新導向至生產URL。
+回 **呼URL** 應新增至allowlist，並以&quot;https://&quot;開頭。 檢查回 **呼URL** 是否連結至對應的例項。 例如，生產例項應重新導向至生產URL。
 
 **用戶端ID與密碼**
 
