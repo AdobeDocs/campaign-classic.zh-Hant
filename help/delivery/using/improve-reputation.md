@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
 
 # 提升您的名譽{#improve-reputation}
 
-為避免讓收件者筋疲力盡，請從目標位置刪除重複的電子郵件地址。 此步驟可保護您的發送信譽並確保良好的隔離管理。 Adobe Campaign提供必要的工具來建置這些建議，並避免ISP將其新增至區塊清單的風險。
+為避免讓收件者筋疲力盡，請從目標位置刪除重複的電子郵件地址。 此步驟可保護您的發送信譽並確保良好的隔離管理。 Adobe Campaign提供必要的工具來實施這些建議，並避免ISP將其新增至密文清單的風險。
 
 為盡量避免重複，必須執行下列動作：
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 * 相同的訊息會多次傳送。 即使Campaign在傳送之前預設會執行去重複化程式，在分割目標時，也無法停止由具有相同內容的不同動作所傳送的相同訊息。
 * 未接受取消訂閱請求。 如果收件者在收到訊息後取消訂閱，則其重複的描述檔仍符合日後訊息的資格。
 
-除了選擇加入程式的這種側步外，這種情況還可能導致用戶將郵件視為垃圾郵件，並在ISP觸發塊清單過程。
+除了選擇加入程式的這種側步外，這種情況還可能導致用戶將郵件視為垃圾郵件，並在ISP觸發拒絕清單程式。
 
 在資料庫上執行操作時必須特別謹慎：
 
