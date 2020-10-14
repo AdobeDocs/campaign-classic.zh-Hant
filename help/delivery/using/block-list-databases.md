@@ -1,7 +1,7 @@
 ---
-title: 封鎖清單資料庫
-seo-title: 封鎖清單資料庫
-description: 封鎖清單資料庫
+title: Denylist資料庫
+seo-title: Denylist資料庫
+description: Denylist資料庫
 seo-description: null
 page-status-flag: never-activated
 uuid: 8a4a69f9-87d5-4044-bc55-76cdcb2e7800
@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 3%
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
 
-# 封鎖清單資料庫{#blocklisting-databases}
+# Denylist資料庫{#denylist-databases}
 
 有些組織會維護據稱由垃圾郵件發送者使用的IP位址和網域資料庫。 諮詢這些網站有助於瞭解為何某些訊息會被拒絕為垃圾訊息。 通常可請求移除錯誤地添加到這些清單的地址。
 
