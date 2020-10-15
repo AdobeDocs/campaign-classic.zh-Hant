@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Recommendations for defining an SPF record:
 
 ## 反饋迴路 {#feedback-loop}
 
-反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP會以類似方式將郵件發送到此郵箱，即接收者報告為垃圾郵件的郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 基於這些抱怨， ISP將在其塊清單中添加一個IP地址。 根據ISP的不同，投訴率約為1%將導致IP地址被阻塞。
+反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP會以類似方式將郵件發送到此郵箱，即接收者報告為垃圾郵件的郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 根據這些抱怨， ISP將在其密鑰中添加一個IP地址。 根據ISP的不同，投訴率約為1%將導致IP地址被阻塞。
 
 目前正在制定一個標準，以定義反饋迴路消息的格式：濫用 [反饋報告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
@@ -255,7 +255,7 @@ IP認證是傳送最佳實務方案，可協助確保收到電子郵件時不會
 
 目前有兩家供應商提供IP認證：Return Path和認證寄件者聯盟。
 
-認證的寄件者會加入電子郵件允許清單，全球郵箱供應商和電子郵件安全公司都會使用這些清單。 這些商業允許清單基於一個系統，該系統使發送者能夠完全繞過反垃圾郵件過濾器，或者在他們進入系統時被分配增量點。
+認證寄件者會新增至全球郵箱供應商和電子郵件安全公司使用的電子郵件允許清單。 這些商業許可清單基於一個系統，該系統使發送者能夠完全繞過反垃圾郵件過濾器，或者在他們進入系統時被分配增量點。
 
 Return [Path Certification方案提供多項優點](https://www.validity.com/products/returnpath/certification/) ，包括：
 
