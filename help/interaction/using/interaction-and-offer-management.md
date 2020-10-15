@@ -1,6 +1,6 @@
 ---
 title: 互動與優惠管理
-description: 根據資格規則，將最佳選件傳送給您的聯絡人。
+description: 根據資格規則，將最佳項目傳送給您的聯絡人。
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
