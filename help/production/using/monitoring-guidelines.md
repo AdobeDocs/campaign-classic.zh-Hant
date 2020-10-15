@@ -1,6 +1,6 @@
 ---
 title: 監控准則
-description: 瞭解監控促銷活動例項和程式的准則和最佳實務。
+description: 探索監控 Campaign 執行個體和程序的準則和最佳作法。
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
