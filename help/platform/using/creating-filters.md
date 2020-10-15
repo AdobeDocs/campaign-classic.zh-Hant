@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1976'
 ht-degree: 1%
 
 ---
@@ -276,8 +276,8 @@ Adobe Campaign提供下列篩選類型：
    <td> 選取在過去Y個月中點按傳送至少X次的收件者。<br /> </td> 
   </tr> 
   <tr> 
- <td> 區塊清單上的電子郵件地址<br /> </td> 
-    <td> 選擇其電子郵件地址位於塊清單中的收件人。<br/> </td>
+ <td> 拒絕列出的電子郵件地址<br /> </td> 
+    <td> 選擇電子郵件地址位於密鑰清單中的收件人。<br/> </td>
   </tr> 
   <tr> 
    <td> 隔離的電子郵件地址<br /> </td> 
