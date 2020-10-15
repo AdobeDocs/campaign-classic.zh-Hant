@@ -1,6 +1,6 @@
 ---
-title: Gold Standard版本
-description: Gold Standard版本
+title: Gold Standard 發行
+description: Gold Standard 發行
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
 
-# Gold Standard版本{#gold-standard}
+# Gold Standard 發行{#gold-standard}
 
 身為Gold Standard使用者，您可以透過最新穩定版本自動受益於Gold Standard升級，而不需採取任何動作。
 
