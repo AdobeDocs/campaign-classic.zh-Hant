@@ -7,13 +7,13 @@ contentOwner: sauviat
 products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
-topic-tags: latest-release-notes
+topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
 workflow-type: tm+mt
-source-wordcount: '3704'
-ht-degree: 88%
+source-wordcount: '3695'
+ht-degree: 87%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 88%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
+
+## 2020 年 10 月 {#oct-2020}
+
+我們建立了一項新技術，詳細介紹了如何從舊式二進位協定遷移到基於HTTP/2的APNs提供程式API。 [顯示全文](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 ## 2020 年 9 月{#september-2020}
 
@@ -94,8 +98,6 @@ ht-degree: 88%
 更新「移除已隔離的位址」章節，內容包括釐清將位址自動從隔離清單移除的案例。[顯示全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 新增使用案例，以說明如何使用「控制面板」及「行銷活動工作流程」進行資料[加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)與[解密](../../workflow/using/importing-data.md#use-case-gpg-decrypt)。
-
-「Whitelist」和「blacklist」兩種字詞已從 Adobe Campaign 文件移除。產品 UI、選項名稱及內部代碼仍可能出現這兩種字詞，但未來版本的 Campaign 將以「blocklist」和「allowlist」取代。
 
 The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
 
