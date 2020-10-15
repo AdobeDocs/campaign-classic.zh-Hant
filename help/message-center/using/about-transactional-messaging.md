@@ -1,6 +1,6 @@
 ---
 title: 關於交易式訊息傳送
-description: '根據從資訊系統生成的事件發送觸發消息。 '
+description: '根據從資訊系統產生的事件發送觸發訊息。 '
 page-status-flag: never-activated
 uuid: c854daac-8756-44f3-a4e2-be31177ab9d1
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
