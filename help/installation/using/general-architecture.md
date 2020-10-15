@@ -1,6 +1,6 @@
 ---
 title: 通用架構
-description: 瞭解如何安裝和設定Campaign Classic。
+description: 瞭解如何安裝和設定 Campaign Classic。
 page-status-flag: never-activated
 uuid: 686bc660-2403-4bab-a4ea-9b872adf8fa0
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1341'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
