@@ -1,7 +1,7 @@
 ---
 title: 通訊通道
 seo-title: 通訊通道
-description: 建立傳送，以在不同通道上傳送個人化訊息。
+description: 建立傳遞，以在不同通道上傳送個人化訊息。
 seo-description: null
 page-status-flag: never-activated
 uuid: 42975431-64c9-4ecb-98ed-b1f9b13c157e
@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1183'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
