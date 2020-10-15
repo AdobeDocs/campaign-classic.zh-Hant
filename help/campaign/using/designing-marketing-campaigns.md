@@ -1,7 +1,7 @@
 ---
 title: 設計行銷活動
 seo-title: 設計行銷活動
-description: 定義、最佳化、執行和分析行銷宣傳。
+description: 定義、最佳化、執行和分析行銷促銷活動。
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
