@@ -1,6 +1,6 @@
 ---
 title: 關於Adobe Campaign Classic資料模型
-description: 瞭解如何擴充Campaign資料模型、編輯結構、使用API等。
+description: 了解如何延伸 Campaign 資料模型、編輯結構描述，以及使用 API 等。
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
