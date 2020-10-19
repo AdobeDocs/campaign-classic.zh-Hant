@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 10%
+source-wordcount: '325'
+ht-degree: 11%
 
 ---
 
@@ -36,11 +36,11 @@ ht-degree: 10%
 
 ![](assets/messagecenter_archiving_002.png)
 
-**最低架構**
+<!--**Minimal architecture**
 
-在將控制和執行模組安裝在同一實例上後，您必須使用部署嚮導建立歸檔工作流。 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕以建立並啟動工作流程。
+Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
 
-![](assets/messagecenter_archiving_001.png)
+![](assets/messagecenter_archiving_001.png)-->
 
 ## 執行例項工作流程 {#execution-instance-workflows}
 
