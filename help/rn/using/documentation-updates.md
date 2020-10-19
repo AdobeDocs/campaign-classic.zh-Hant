@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 87%
+source-wordcount: '3731'
+ht-degree: 86%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 87%
 您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
 
 ## 2020 年 10 月 {#oct-2020}
+
+「促銷活動報表」進階功能區段已改進，可詳細說明如何在自訂報表中使用URL參數和變數。 [顯示全文](../../reporting/using/advanced-functionalities.md)
+
+報表屬性頁面已重新整理並加以擴充，以方便設定。 [顯示全文](../../reporting/using/properties-of-the-report.md)
 
 我們建立了一項新技術，詳細介紹了如何從舊式二進位協定遷移到基於HTTP/2的APNs提供程式API。 [顯示全文](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
