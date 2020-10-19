@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 58%
@@ -30,7 +30,7 @@ ht-degree: 58%
 
 使用用戶端主控台連線視窗，您可以選取或設定現有資料庫，並使用使用者名稱和密碼進行連線：
 
-![](assets/s_ncs_user_login.png)
+![](assets/acc-logon-screen.png)
 
 ## 連線 Adobe Campaign {#connecting-to-adobe-campaign}
 
