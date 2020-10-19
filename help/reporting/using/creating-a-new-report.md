@@ -1,8 +1,6 @@
 ---
 title: 建立新報表
-seo-title: 建立新報表
-description: 建立新報表
-seo-description: null
+description: 瞭解建立新報表的關鍵步驟
 page-status-flag: never-activated
 uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
@@ -60,29 +58,29 @@ ht-degree: 2%
 
 若要建立報表，請視其性質和內容而定，您必須識別有用的元素並建立其邏輯順序的模型。
 
-1. 使用「開始」活動來具體化要執行的建立報表的第一個流程。 每個報表只能使用其中一個活動。
+1. 使用 **[!UICONTROL Start]** 活動來具體化要執行的建立報表的第一個程式。 每個報表只能使用其中一個活動。
 
    如果圖表包含回圈，則此為必填項目。
 
-1. 新增一或多個「查詢」活動，以收集對建立報表有用的資料。 可以通過資料庫方案上的查詢或通過導入清單或現有多維資料集直接收集資料。
+1. 新增一或多個活 **[!UICONTROL Query]** 動以收集對建立報表有用的資料。 可以通過資料庫方案上的查詢或通過導入清單或現有多維資料集直接收集資料。
 
    有關詳情，請參閱收 [集資料以分析](../../reporting/using/collecting-data-to-analyze.md)。
 
    此資料會依頁面設定而顯示（或不顯示）在報表中。
 
-1. 放置一或多個「頁面」活動，以定義所收集資料的圖形表示。 您可以插入表格、圖表、輸入欄位，並設定一或多個頁面或頁面元素的顯示條件。 所顯示的內容可完全設定。
+1. 放置一或多個活 **[!UICONTROL Page]** 動以定義所收集資料的圖形表示。 您可以插入表格、圖表、輸入欄位，並設定一或多個頁面或頁面元素的顯示條件。 所顯示的內容可完全設定。
 
    For more on this, refer to [Static elements](#static-elements).
 
-1. 使用「測試」活動來定義顯示或存取資料的條件。
+1. 使用活 **[!UICONTROL Test]** 動來定義顯示或存取資料的條件。
 
    For more on this, refer to [Conditioning page display](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. 如有必要，請透過「指令碼」活動新增個人化指令碼，例如計算報表名稱，以篩選結果在特定內容中的顯示，等等。
+1. 如有必要，請透過活動新增個 **[!UICONTROL Script]** 人化指令碼，例如計算報表名稱，以篩選結果在特定內容中的顯示，等等。
 
    For more on this, refer to [Script activity](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. 最後，您可插入一或多個「跳轉」類型活動，以方便閱讀複雜報表。 這可讓您從一個活動移至另一個活動，而不須在報表上實體化轉場。 「跳轉」也可用來顯示其他報表。
+1. 最後，您可插入一或多個類型活動，以便更輕鬆地閱讀復 **[!UICONTROL Jump]** 雜報表。 這可讓您從一個活動移至另一個活動，而不須在報表上實體化轉場。 此 **[!UICONTROL Jump]** 活動也可用來顯示其他報表。
 
    For more on this, refer to [Jump activity](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -167,4 +165,3 @@ A **[!UICONTROL Page]** 可包含下列元素：
 您可以在此處篩選報表中的資料，只顯示樹狀結構其中一個資料夾中所包含的資訊：
 
 ![](assets/reporting_control_folder.png)
-
