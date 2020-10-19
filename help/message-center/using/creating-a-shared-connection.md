@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%
@@ -78,7 +78,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >請注意，在使用FDA over HTTP時，僅支援使用Postgres資料庫的執行例項。 不支援MSSQL或Oracle資料庫。
+   >請注意，在使用FDA over HTTP時，僅支援使用PostgreSQL資料庫的執行實例。 不支援MSSQL或Oracle資料庫。
 
    如果控制實例可以直接訪問執行實例的資料庫，則建議使用第二種方法。 否則，請選擇Web服務訪問。 要指定的FDA帳戶與與在控制實例上建立的各種執行實例的資料庫的連接一致。
 
