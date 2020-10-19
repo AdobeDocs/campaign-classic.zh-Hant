@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2130'
 ht-degree: 94%
 
 ---
@@ -577,17 +577,16 @@ ht-degree: 94%
       + [Facebook 應用程式範例](social/using/examples-of-facebook-apps.md)
       + [追蹤](social/using/tracking.md)
 + 安裝 Campaign Classic {#installing-campaign-classic}
-   + 架構與託管模型 {#architecture-and-hosting-models}
-      + [閱讀前](installation/using/before-reading.md)
+   + 架構原則 {#architecture-and-hosting-models}
       + [通用架構](installation/using/general-architecture.md)
-      + [託管模式](installation/using/hosting-models.md)
-   + 混合模式與託管模式 {#hybrid-and-hosted-models}
-      + [關於混合模式與託管模式](installation/using/about-hybrid-and-hosted-models.md)
-      + [混合模式](installation/using/hybrid-model.md)
-      + [託管模式](installation/using/hosted-model.md)
-   + 必要條件與建議  {#prerequisites-and-recommendations-}
-      + [開始之前](installation/using/before-starting.md)
-      + [資料庫](installation/using/database.md)
+      + 託管模式{#hosting-models-lp}
+         + [關於代管模型](installation/using/hosting-models.md)
+         + [混合模式](installation/using/hybrid-model.md)
+         + [託管模式](installation/using/hosted-model.md)
+         + [能力矩陣](installation/using/capability-matrix.md)
+   + 部署准則 {#deployment-guidelines}
+      + [必要條件](installation/using/before-starting.md)
+      + [資料庫伺服器](installation/using/database.md)
       + [應用程式伺服器](installation/using/application-server.md)
       + [傳訊伺服器](installation/using/messaging-server.md)
       + [網路配置](installation/using/network-configuration.md)
