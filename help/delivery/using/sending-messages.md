@@ -1,6 +1,6 @@
 ---
 title: 使用Adobe Campaign Classic傳送電子郵件
-description: 瞭解Adobe Campaign Classic中傳送電子郵件的特定參數。
+description: 瞭解電子郵件傳送參數
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 9%
+source-wordcount: '739'
+ht-degree: 8%
 
 ---
 
@@ -29,25 +29,25 @@ ht-degree: 9%
 
 以下各節將詳細說明傳送電子郵件的特定參數。
 
-## 封存電子郵件 {#archiving-emails}
+## 電子郵件密件副本 {#archiving-emails}
 
 Adobe Campaign可讓您透過密件副本將電子郵件儲存在外部系統上，只需將密件副本電子郵件地址新增至訊息目標即可。 在啟動選項後，所有已傳送訊息的完整副本都會保留在此傳送中。
 
-如需設定電子郵件密件副本的詳細資訊，請參 [閱本節](../../installation/using/email-archiving.md)。
+有關「電子郵件密件副本」配置和最佳實踐方案的詳細資訊，請參 [閱本節](../../installation/using/email-archiving.md)。
 
 >[!NOTE]
 >
->此功能是選取性的。請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
+>電子郵件密件副本是一項可選功能。 請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
 
-在建立新的傳送或傳送範本時，即使已購買選項，依預設不會啟用電子郵件密件副本。 您必須在每個要使用的傳送或範本中手動啟用它。
+在建立新的傳送或傳送範本時，預設不會啟用電子郵件密件副本。 您需要在電子郵件傳送或傳送範本層級手動啟用它。
 
-要執行此操作，請遵循下列步驟：
+若要啟用電子郵件傳送範本的電子郵件密件副本，請遵循下列步驟：
 
 1. 前往 **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** 或 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**。
 1. 選擇您選擇的傳送方式或複製現成可用的 **電子郵件傳送** ，然後選取複製的範本。
 1. Click the **Properties** button.
 1. 選取 **[!UICONTROL Delivery]** 索引標籤。
-1. 勾選「封 **存電子郵件** 」方塊，以保留所有已傳送訊息的副本，以供此傳送或依據此範本傳送。
+1. 勾選「電 **子郵件密件副本** 」選項。 根據此範本，每個傳送的所有已傳送訊息副本都會傳送至已設定的電子郵件密件副本地址。
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
