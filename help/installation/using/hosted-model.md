@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: ada27825-42bd-48c7-bc03-a619f1fa9463
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '88'
 ht-degree: 9%
 
 ---
@@ -22,12 +22,11 @@ ht-degree: 9%
 
 # 託管模式{#hosted-model}
 
-以下是適用於托管機型的安裝和配置步驟：
+身為代管客戶，大部分的安裝和設定步驟都由Adobe執行。 您可以存取下列章節來自訂您的實作：
 
-* 設定追蹤和鏡像每個品牌的頁面URL。 有關事務性消息，請參閱本 [節](../../message-center/using/configuring-multibranding.md)。
-* 安裝客戶機控制台：請參閱本 [節](../../installation/using/installing-the-client-console.md)。
-* 安裝軟體包：請參閱本 [節](../../installation/using/installing-campaign-standard-packages.md)。
+* 依品牌設定追蹤和鏡像頁面URL。 有關事務性消息，請 [參閱本節](../../message-center/using/configuring-multibranding.md)。
+* 安裝客戶機控制台：請參 [閱本節](../../installation/using/installing-the-client-console.md)。
 * 閱讀快速入門手冊和詳細檔案，進一步瞭解可 [傳遞性工具](../../delivery/using/deliverability-key-points.md)[和最佳實務](../../delivery/using/about-deliverability.md)。
-* 設定促銷活動選項：請參閱本 [節](../../installation/using/configuring-campaign-options.md)。
-* 設定CRM連接器：請參閱本 [節](../../platform/using/crm-connectors.md)。
+* 設定促銷活動選項：請參 [閱本節](../../installation/using/configuring-campaign-options.md)。
+* 設定CRM連接器：請參 [閱本節](../../platform/using/crm-connectors.md)。
 
