@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 5%
@@ -52,7 +52,7 @@ ht-degree: 5%
    >
    >有關配置SMTP伺服器的詳細資訊，請參 [閱本節](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
 
-* **[!UICONTROL Archive emails]**:此選項可讓您透過密件副本將電子郵件儲存在外部系統上，只要在訊息目標中新增密件副本電子郵件地址即可。 For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**:此選項可讓您透過密件副本將電子郵件儲存在外部系統上，只要在訊息目標中新增密件副本電子郵件地址即可。 For more on this, refer [to this section](../../delivery/using/sending-messages.md#archiving-emails).
 
 在設定傳送並準備傳送後，請確定您已執行傳送 [分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。 完成後，按一 **[!UICONTROL Confirm delivery]** 下以啟動訊息傳送。
 
