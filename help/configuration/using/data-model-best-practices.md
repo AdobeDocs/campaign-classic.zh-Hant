@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe Campaign Classic收件者表格
-description: 瞭解如何在設計資料模型時，使用Adobe Campaign Classic中的現成可用收件者表格。
+title: 資料模型最佳實務
+description: 瞭解如何使用Campaign Classic資料模型
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3997'
-ht-degree: 0%
+source-wordcount: '4014'
+ht-degree: 1%
 
 ---
 
@@ -253,6 +253,10 @@ Adobe Campaign既不是資料倉庫，也不是報告工具。 因此，為確�
 
 * 如果希望將日誌保留更長時間，則應根據資料庫大小和發送的消息量仔細作出此決定。 提醒您，Adobe Campaign序列是32位元整數。
 * 建議在這些表格中，每次不要有超過10億份記錄（21.4億個ID中的50%），以限制使用所有可用ID的風險。 這將要求某些客戶將保留期限降低到180天以下。
+
+進一步瞭解「促銷活動隱私權與 [安全性」方針中的資料保留](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)。
+
+在本節中進一步瞭解「促銷活動資料庫」 [清理工作流程](../../production/using/database-cleanup-workflow.md)。
 
 >[!IMPORTANT]
 >
