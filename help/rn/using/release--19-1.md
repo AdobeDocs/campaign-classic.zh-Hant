@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2625'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,6 @@ _2020年9月15日_
 
 * 已改善Apache 2.4執行緒的nlsrvmod，以修正nlsrvmod當機。
 * 修正搭配Azure外部帳戶和SSL加密使用「檔案傳輸」活動時的問題。 連線是透過HTTP而非HTTPS來執行。 (NEO-26720)
-* 在傳送屬性中，選 **[!UICONTROL Archive emails]** 項已重新命名，以 **[!UICONTROL Email BCC]** 提供更佳的使用者體驗。
 * 修正URL快取機制無法擷取標籤或類別的問題。
 * 修正導致在電子郵件傳送中錯誤定義鏡像頁面URL（因為ASCII字元控制不當）的問題。 (NEO-26084)
 * catalina.properties中的jarToSkip清單已更新，以刪除對不再使用的jar檔案的引用（iOS通知）。
