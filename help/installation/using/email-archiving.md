@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1303'
-ht-degree: 3%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
 
-# 電子郵件封存{#email-archiving}
+# 電子郵件密件副本 {#email-archiving}
 
 您可以設定Adobe Campaign，以保留從您的平台傳送的電子郵件副本。
 
@@ -30,15 +30,15 @@ ht-degree: 3%
 
 ## 建議與限制 {#recommendations-and-limitations}
 
-* 電子郵件封存功能是選用的。 請檢查您的授權合約。
-* 如需 **代管和混合式架構**，請聯絡您的客戶經理以啟動它。 您選擇的密件副本位址必須提供給將為您設定的Adobe團隊。
-* 如需 **內部部署安裝**，請依照下列准則啟動它——請參閱「啟用電子郵件封存（內部部署） [」和「設定密件副本電子郵件位](#activating-email-archiving--on-premise-) 址（內部部署）」章節 [](#configuring-the-bcc-email-address--on-premise-) 。
+* 電子郵件密件副本功能是可選的。 請檢查您的授權合約。
+* 如需 **代管和混合式架構**，請聯絡您的客戶經理以啟動它。 您選擇的密件副本電子郵件地址必須提供給將為您設定的Adobe團隊。
+* 如需 **內部部署安裝**，請依照下列指引啟動它——請參閱啟用電子郵件密件副本（內部部署） [和](#activating-email-archiving--on-premise-) 設定密件副本電子郵件地址（內部部署） [](#configuring-the-bcc-email-address--on-premise-) 。
 * 您只能使用一個密件副本電子郵件地址。
-* 一旦設定電子郵件密件副本後，請務必在傳送範本或透過選項傳送時啟用 **[!UICONTROL Archive emails]** 功能。 如需詳細資訊，請參閱[本區段](../../delivery/using/sending-messages.md#archiving-emails)。
+* 一旦設定電子郵件密件副本後，請務必在傳送範本或透過選項傳送時啟用 **[!UICONTROL Email BCC]** 功能。 如需詳細資訊，請參閱[本區段](../../delivery/using/sending-messages.md#archiving-emails)。
 * 只有成功傳送的電子郵件才會納入考量，但彈回數則不會納入考量。
-* 電子郵件封存系統已隨Adobe Campaign 17.2(build 8795)而變更。 如果您已使用電子郵件封存，則必須手動升級至新的電子郵件封存系統(BCC)。 如需詳細資訊，請參閱「更新 [的電子郵件封存系統(BCC)](#updated-email-archiving-system--bcc-) 」一節。
+* 電子郵件封存系統已隨Adobe Campaign 17.2(build 8795)而變更。 如果您已使用電子郵件封存，則必須手動升級至新的電子郵件密件副本系統。 如需詳細資訊，請參閱「移 [至新電子郵件密件副本](#updated-email-archiving-system--bcc-) 」區段。
 
-## 啟動電子郵件封存（內部部署） {#activating-email-archiving--on-premise-}
+## 啟用電子郵件密件副本（內部部署） {#activating-email-archiving--on-premise-}
 
 若要在內部部署Adobe Campaign時啟用密件副本電子郵件封存，請遵循下列步驟。
 
@@ -70,7 +70,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->在中間採購實例中，存檔電子郵件的目錄位於中間採購伺服器上。
+>在中間採購實例中，密件副本電子郵件的目錄位於中間採購伺服器上。
 >
 >當未傳送電子郵件狀態時，deliveryID和broadlogID會來自中間採購伺服器。 狀態變更為後， **[!UICONTROL Sent]**&#x200B;這些ID會來自行銷伺服器。
 
@@ -128,7 +128,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >此外，中繼會為所有電 **[!UICONTROL Sent]** 子郵件指派狀態，包括未傳送的電子郵件。 因此，將存檔所有消息。
 
-## 更新的電子郵件封存系統(BCC) {#updated-email-archiving-system--bcc-}
+## 移至新的電子郵件密件副本 {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
@@ -140,9 +140,9 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 1. 視需要 **將compressionFormat** 參 **數設為** 1。
 1. 將archivingType **參數設** 定為 **1**。
 
-設定電子郵件密件副本後，請務必在傳送范 **[!UICONTROL Archive emails]** 本或傳送中選取選項。 如需詳細資訊，請參閱[本區段](../../delivery/using/sending-messages.md#archiving-emails)。
+設定電子郵件密件副本後，請務必在傳送范 **[!UICONTROL Email BCC]** 本或傳送中選取選項。 如需詳細資訊，請參閱[本區段](../../delivery/using/sending-messages.md#archiving-emails)。
 
-## 最佳實務{#best-practices}
+## 電子郵件密件副本最佳實踐方案 {#best-practices}
 
 * **密件副本地址郵箱**:請確定它有足夠的接收能力來封存MTA傳送的所有電子郵件。
 * **MTA共同化**:密件副本封存功能可在MTA層級運作。 它可讓您複製MTA傳送的每封電子郵件。 由於MTA可以跨多個例項（例如開發、測試或prod）或甚至跨多個用戶端（在中部採購環境中）共同化，因此設定此功能會影響安全性：
