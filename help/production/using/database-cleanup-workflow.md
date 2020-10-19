@@ -1,8 +1,6 @@
 ---
 title: 資料庫清除工作流程
-seo-title: 資料庫清除工作流程
-description: 資料庫清除工作流程
-seo-description: null
+description: 瞭解過時的資料如何自動清理
 page-status-flag: never-activated
 uuid: a7478641-cdf6-4bd4-9dd7-0c84416c9de6
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -32,7 +30,7 @@ ht-degree: 0%
 
 資料庫清理配置在兩個級別上：在工作流調度程式和部署嚮導中。
 
-### 排程器 {#the-scheduler}
+### 工作流程排程器 {#the-scheduler}
 
 >[!NOTE]
 >
@@ -53,7 +51,7 @@ ht-degree: 0%
 
 ### 部署精靈 {#deployment-wizard}
 
-透過 **[!UICONTROL Deployment wizard]** 功能表存取的 **[!UICONTROL Tools > Advanced]** 資料，可讓您設定資料儲存的時間長度。 值以天數表示。 如果這些值未變更，工作流程會使用預設值。
+透過 **[!UICONTROL Deployment wizard]**&#x200B;功能表存取的 **[!UICONTROL Tools > Advanced]** 資料，可讓您設定資料的儲存時間。 值以天數表示。 如果這些值未變更，工作流程會使用預設值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
