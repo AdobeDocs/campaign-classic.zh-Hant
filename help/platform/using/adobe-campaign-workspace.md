@@ -12,17 +12,17 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 89%
+source-wordcount: '2147'
+ht-degree: 88%
 
 ---
 
 
 # Adobe Campaign 工作區{#adobe-campaign-workspace}
 
-## 關於 Adobe Campaign 介面 {#about-adobe-campaign-interface}
+## 探索Adobe Campaign介面 {#about-adobe-campaign-interface}
 
 連線資料庫之後，您就可以存取 Adobe Campaign 首頁了，Adobe Campaign 首頁是一個儀表板，其中包含了可用於存取功能的連結和捷徑，顯示的連結和捷徑具體取決於安裝以及一般平台設定。
 
@@ -30,7 +30,7 @@ ht-degree: 89%
 
 ![](assets/d_ncs_user_interface_home.png)
 
-上面的螢幕擷取畫面為 Adobe Campaign 使用者首頁的示例。如需更多資訊，請觀看 [Adobe Campaign 介面概觀影片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)。
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索促銷活動工作區](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ### 語言 {#languages}
 
-安裝Adobe Campaign Classic例項時會選取語言，之後無法變更。 For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+安裝Adobe Campaign Classic例項時，會選取語言。
 
 ![](assets/language.png)
 
@@ -67,6 +67,12 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 * 日文
 
 您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
+
+For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+
+>[!CAUTION]
+>
+>建立例項後，無法變更語言。
 
 ## 基本的導覽功能 {#navigation-basics}
 
@@ -174,9 +180,9 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-### 設定清單 {#configuring-lists}
+## 設定清單 {#configuring-lists}
 
-#### 新增欄 {#add-columns}
+### 新增欄 {#add-columns}
 
 有兩個方法可在清單中加入欄。
 
@@ -222,14 +228,14 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 1. 按一下 **[!UICONTROL OK]** 確認設定並顯示結果。
 
-#### 新建欄 {#create-a-new-column}
+### 新建欄 {#create-a-new-column}
 
 您可以建立新的欄來顯示清單中的其他欄位。操作步驟：
 
 1. Click **[!UICONTROL Configure the list]** at below and to the right of the list.
 1. 按一下 **[!UICONTROL Add]**，以在清單中顯示新欄位。
 
-#### 移除欄 {#remove-a-column}
+### 移除欄 {#remove-a-column}
 
 您可以使用位於清單右下方的 **[!UICONTROL Configure list]** 遮蔽一列或數列欄。
 
@@ -241,11 +247,11 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 對要遮蔽的每一欄重複此步驟。按一下 **[!UICONTROL OK]** 確認設定並顯示結果。
 
-#### 調整欄寬 {#adjust-column-width}
+### 調整欄寬 {#adjust-column-width}
 
 當清單作用中時，例如：選取了至少一行時，您可以使用 F9 來調整欄的寬度以便在螢幕上顯示所有欄。
 
-#### 顯示子資料夾記錄 {#display-sub-folders-records}
+### 顯示子資料夾記錄 {#display-sub-folders-records}
 
 清單可顯示：
 
@@ -286,7 +292,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-### 匯出清單 {#exporting-a-list}
+## 匯出清單 {#exporting-a-list}
 
 若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
 
@@ -296,7 +302,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 >
 >不可使用 [複製/貼上] 功能匯出清單中的元素。
 
-### 清單排序 {#sorting-a-list}
+## 清單排序 {#sorting-a-list}
 
 清單中可包含大量資料。您可以對這些資料進行排序或套用簡單、進階篩選器。透過排序，您設定以遞增或遞減順序顯示資料。透過篩選，您可以定義和合併準則以僅顯示所選資料。
 
@@ -321,7 +327,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 1. 按一下 **[!UICONTROL Ok]** 確認此設定，並在清單中呈現結果。
 
-### 執行搜尋 {#running-a-search}
+### 搜尋元素 {#running-a-search}
 
 您可使用欄位清單上方的 **[!UICONTROL Search]** 欄位執行編輯器中可用欄位的搜尋。按下鍵盤上的 **Enter**，或瀏覽清單。符合搜尋文字的欄位將以粗體呈現。
 
@@ -388,4 +394,3 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 * **[!UICONTROL d]** 幾天。
 
 ![](assets/enter_unit_sample.png)
-
