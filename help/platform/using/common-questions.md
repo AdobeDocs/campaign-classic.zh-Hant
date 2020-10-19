@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9ef8e05904751cc141403af20582dc850610f6d2
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe Campaign 提供一組可監視電子郵件傳遞的儀表板和工具。
 
 您可以在[本頁面](https://docs.adobe.com/content/help/zh-Hant/campaign-classic/using/release-notes/latest-release.html)找到最新的 Campaign Classic 發布版本通知。
 
-## 9. 網域委派的程序為何？{#what-is-the-procedure-for-domain-delegation-}
+## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
 
 子網域是您網域的分區，可用來隔離您的名稱或各類流量 (交易訊息、行銷資訊等等)。Adobe 使用網域名稱系統 (DNS) 的帳戶進行電子郵件傳遞，允許用戶端使用網域名稱的 DNS 別名維護品牌形象，允許 Adobe 自主實行所有技術最佳實務，以利傳送電子郵件期間最佳化傳遞。
 
