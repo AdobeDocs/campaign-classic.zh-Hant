@@ -1,8 +1,6 @@
 ---
-title: 資料庫
-seo-title: 資料庫
-description: 資料庫
-seo-description: null
+title: Campaign Classic資料庫建議
+description: 資料庫建議
 page-status-flag: never-activated
 uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 1%
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
 
@@ -32,14 +30,11 @@ ht-degree: 1%
 
 原生用戶端必須安裝在Adobe Campaign應用程式伺服器上。
 
-可以通過ODBC驅動程式配置面板檢查伺服器上的本地客戶端，位於 **SQL Server Native Client 10.0** （對於Microsoft SQL Server 2008和2008 R2客戶端）或 **SQL Server Native Client 11.0** （對於Microsoft SQL Server 20）下客戶)。
+可以通過ODBC驅動程式配置面板(在 **SQL Server Native Client 11.0下)檢查伺服器上的本機客戶端**。
 
-必須存在以下訪問DLL:
+必須存在以下訪問DLL: **sqlncli11.dll**。
 
-* **用於Microsoft SQL Server 2008和** 2008 R2客戶端的sqlncli10.dll,
-* **用於Microsoft SQL Server 2012** 、2014、2016和2017客戶端的sqlncli11.dll。
-
-   訪問DLL可在Microsoft網站上找到。
+訪問DLL可在Microsoft網站上找到。
 
 >[!NOTE]
 >
