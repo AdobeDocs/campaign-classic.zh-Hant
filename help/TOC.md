@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 94%
+source-wordcount: '2124'
+ht-degree: 93%
 
 ---
 
@@ -590,21 +590,21 @@ ht-degree: 94%
       + [應用程式伺服器](installation/using/application-server.md)
       + [傳訊伺服器](installation/using/messaging-server.md)
       + [網路配置](installation/using/network-configuration.md)
-   + 部署類型  {#deployment-types-}
+   + 部署類型 {#deployment-types-}
       + [關於部署類型](installation/using/about-deployment-types.md)
       + [獨立部署](installation/using/standalone-deployment.md)
       + [標準部署](installation/using/standard-deployment.md)
       + [企業部署](installation/using/enterprise-deployment.md)
       + [中間來源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 與 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 在 Windows 安裝 Campaign  {#installing-campaign-in-windows-}
-      + [在 Windows 安裝 Campaign 的必要條件](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + Windows上的促銷活動 {#installing-campaign-in-windows-}
+      + [在Windows上安裝促銷活動之前](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [安裝伺服器](installation/using/installing-the-server.md)
       + [與 Windows 版 Web 伺服器整合](installation/using/integration-into-a-web-server-for-windows.md)
       + [適用於 Windows 的用戶端主控台可用性](installation/using/client-console-availability-for-windows.md)
       + [安裝用戶端主控台](installation/using/installing-the-client-console.md)
-   + 在 Linux 安裝Campaign  {#installing-campaign-in-linux-}
-      + [在 Linux 安裝 Campaign 的必要條件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + Linux上的Campaign  {#installing-campaign-in-linux-}
+      + [在Linux上安裝Campaign之前](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [使用 Linux 安裝軟體套件](installation/using/installing-packages-with-linux.md)
       + [與 Linux 網頁伺服器整合](installation/using/integration-into-a-web-server-for-linux.md)
       + [Linux 用戶端主控台可用性](installation/using/client-console-availability-for-linux.md)
@@ -625,11 +625,11 @@ ht-degree: 94%
       + [中間來源伺服器](installation/using/mid-sourcing-server.md)
       + [互動——資料緩衝](installation/using/interaction---data-buffer.md)
    + 附錄 {#appendices}
-      + [伺服器設定檔](installation/using/the-server-configuration-file.md)
+      + [伺服器配置檔案](installation/using/the-server-configuration-file.md)
       + [Campaign 網路端點](installation/using/campaign-network-endpoints.md)
       + [命令列](installation/using/command-lines.md)
       + [建立新執行個體](installation/using/creating-new-instances.md)
-      + [Campaign Classic 選項清單](installation/using/configuring-campaign-options.md)
+      + [Campaign 選項清單](installation/using/configuring-campaign-options.md)
       + [解除安裝 Campaign](installation/using/uninstalling-campaign.md)
 + 監控 Campaign Classic {#monitoring-campaign-classic}
    + 簡介 {#introduction}
