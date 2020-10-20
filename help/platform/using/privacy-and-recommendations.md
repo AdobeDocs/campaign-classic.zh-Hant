@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 247d73933991047603b8d61c7489d976c448dd52
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1804'
 ht-degree: 7%
 
 ---
@@ -152,9 +152,10 @@ Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug,
 由於Adobe Campaign的追蹤功能，您可以使用三種Cookie來追蹤傳送收件者的瀏覽：作業Cookie和兩個永久Cookie。
 
 * A **session cookie**: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). 連絡人按一下由 Adobe Campaign 傳送的電子郵件中包含的 URL 後即可添加識別碼，並且允許您追蹤他們在網路上的行為。瀏覽器關閉時，將自動清除工作階段 Cookie。連絡人可以將其瀏覽器設定為拒絕 Cookie。
-* 兩個 **永久Cookie**:
-   * UUID **** （通用唯一ID識別碼）Cookie會在Adobe Experience Cloud解決方案之間共用。 它會設定一次，直到產生新值時從用戶端瀏覽器中消失為止。 此Cookie可讓您識別在使用者造訪網站時與Experience Cloud解決方案互動的使用者。 您可以透過登陸頁面（將未知的客戶活動與收件者建立關聯）或傳送來儲存。 此處提供此Cookie的說 [明](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)。
-   * nllastdelid **Cookie（在Campaign Classic 20.3中推出）是永久Cookie，包含使用者點按連結的** 上次傳送的 **deliveryId** 。 當作業Cookie遺失時，會使用此Cookie來識別將使用的追蹤表格。
+
+* 永久 **Cookie**:Adobe Experience Cloud解決方 **案之間共用UUID** （通用唯一ID識別碼）Cookie。 它會設定一次，直到產生新值時從用戶端瀏覽器中消失為止。 此Cookie可讓您識別在使用者造訪網站時與Experience Cloud解決方案互動的使用者。 您可以透過登陸頁面（將未知的客戶活動與收件者建立關聯）或傳送來儲存。 此處提供此Cookie的說 [明](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)。
+
+<!--The **nllastdelid** cookie (introduced in Campaign Classic 20.3) is a permanent cookie which contains the **deliveryId** of the last delivery that user clicked the link from. This cookie is used - when the session cookie is missing - to identify the tracking table that will be used.-->
 
 《通用資料保護規則》(GDPR)等法規規定，公司在安裝Cookie之前必須取得網站使用者的同意。
 
