@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '3731'
-ht-degree: 86%
+source-wordcount: '3764'
+ht-degree: 85%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 86%
 您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
 
 ## 2020 年 10 月 {#oct-2020}
+
+現在，專用區段中會說明促銷活動內部部署、代管和混合代管模型。 [顯示全文](../../installation/using/hosting-models.md)
+
+已在安裝指南中更新並移動每個代管模型的促銷活動功能矩陣。 [顯示全文](../../installation/using/capability-matrix.md)
 
 「促銷活動報表」進階功能區段已改進，可詳細說明如何在自訂報表中使用URL參數和變數。 [顯示全文](../../reporting/using/advanced-functionalities.md)
 
