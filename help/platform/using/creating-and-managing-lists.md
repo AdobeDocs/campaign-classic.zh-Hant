@@ -1,8 +1,6 @@
 ---
 title: 建立和管理清單
-seo-title: 建立和管理清單
-description: 建立和管理清單
-seo-description: null
+description: 瞭解如何建立和管理清單
 page-status-flag: never-activated
 uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 68%
 
 ---
@@ -139,7 +137,7 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## 如何使用工作流程建立收件者清單
+## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 瞭解如何建立工作流程以鎖定收件者，以及如何在使用電子郵件目標中的清單之前讓工作流程重複執行。
 
