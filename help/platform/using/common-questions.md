@@ -11,7 +11,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 9ef8e05904751cc141403af20582dc850610f6d2
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 98%
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 # 常見問題{#common-questions}
 
-使用 Campaign Classic 時需要協助嗎？請閱讀下列 10 大問題，以及該頁面的其他常見問題。您也可以[觀賞教學課程影片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)和閱讀 Campaign [快速入門指南](../../platform/using/tutorials.md#step-by-step-guides)，以瞭解核心功能。找不到答案？[諮詢社群](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign)
+使用 Campaign Classic 時需要協助嗎？請閱讀下列 10 大問題，以及該頁面的其他常見問題。您也可以[觀賞教學課程影片](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)和閱讀 Campaign [快速入門指南](../../platform/using/tutorials.md#step-by-step-guides)，以瞭解核心功能。找不到答案？[諮詢社群](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign)
 
 ## 1. 如何將 Campaign 升級至最新版本？{#how-can-i-upgrade-campaign-to-the-latest-version-}
 
