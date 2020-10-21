@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 7d0a00f4ef49a48014735de36786a48c31b76804
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 4%
+source-wordcount: '3582'
+ht-degree: 3%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 4%
 
 * [控制面板文件](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 * [託管模式](../../installation/using/hosting-models.md)
-* [Campaign Classic內部部署與代管功能矩陣](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)
-* [混合型和托管型配置步驟](../../installation/using/about-hybrid-and-hosted-models.md) )
+* [Campaign Classic內部部署與代管功能矩陣](../../installation/using/capability-matrix.md)
+* [混合型和代管型配置步驟](../../installation/using/hosting-models.md)
 
 Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf資料夾中。 配置分佈在兩個檔案上：
 
