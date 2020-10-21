@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3752'
 ht-degree: 85%
 
 ---
@@ -225,7 +225,7 @@ Hadoop FDA Connector 增強功能——[顯示全文](../../platform/using/speci
 
 [此處](../../reporting/using/properties-of-the-report.md#defining-additional-settings)記錄 URL 報表設定的新參數。
 
-更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)
+更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
 更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
@@ -379,7 +379,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 加強「子工作流程活動」章節，並提供使用範例。[顯示全文](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
+「 [Campaign Classic內部部署與托管功能矩陣」頁面已更新](../../installation/using/capability-matrix.md) ，其中包含與電子郵件密件副本相關的資訊。
 
 更新了交易式傳訊文件，其中包含關於範本發佈的說明。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
@@ -446,6 +446,6 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 新增了使用案例，說明如何使用工作流程中的「擴充活動」，傳送包含自訂資料欄位的電子郵件。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
 
-功能影片已移至[此處](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)。
+功能影片已移至[此處](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)。
 
 針對 [Teradata](https://helpx.adobe.com/tw/campaign/kb/campaign_fda_teradata.html) 和 [MySQL 5.7](https://helpx.adobe.com/tw/campaign/kb/campaign_fda_mysql.html) 新增了兩則技術文件。
