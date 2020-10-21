@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 11%
+source-wordcount: '139'
+ht-degree: 8%
 
 ---
 
@@ -32,5 +32,5 @@ Adobe Campaign的模組化設計可讓您進行多種部署組態，從獨立設
 >Adobe適用於Adobe代管的部署。 例如，
 >配置伺服器和實例配置檔案。
 >
->若要進一步瞭解部署之間的主要差異，請參閱「代管模型 [」一節，或](../../installation/using/hosting-models.md) 「代管與內部部署的功能差異」文章 [](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html) 。
+>若要進一步瞭解部署之間的主要差異，請參閱「代管模型 [」一節，或](../../installation/using/hosting-models.md) 參閱代管與內部部署的「功能差異」一節 [](../../installation/using/capability-matrix.md)。
 
