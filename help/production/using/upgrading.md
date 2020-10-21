@@ -1,8 +1,6 @@
 ---
-title: 升級
-seo-title: 升級
-description: 升級
-seo-description: null
+title: 升級至新建版本
+description: 瞭解升級至新版本的技術步驟
 page-status-flag: never-activated
 uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1136'
 ht-degree: 1%
 
 ---
 
 
-# 升級{#upgrading}
+# 升級至新建版本（內部部署）{#upgrading}
 
 在開始升級程式之前，請確定並確認要升級至哪個Adobe Campaign版本，並參閱版 [本說明](../../rn/using/latest-release.md) 。
 
