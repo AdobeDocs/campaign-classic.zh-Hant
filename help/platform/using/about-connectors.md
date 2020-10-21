@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 12%
+source-wordcount: '195'
+ht-degree: 10%
 
 ---
 
@@ -38,5 +38,5 @@ Adobe Campaign提供數種連接器，可讓您與外部應用程式通訊、連
 
 >[!NOTE]
 >
->這些模組的可用性和使用取決於安裝的部署類型。 請參閱 [Campaign on-prem/hosted capabilities表](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
+>這些模組的可用性和使用取決於安裝的部署類型。 請參閱 [Campaign on-premise —— 代管功能表](../../installation/using/capability-matrix.md)。
 
