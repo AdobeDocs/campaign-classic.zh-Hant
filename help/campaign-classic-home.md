@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 99%
 
 ## 新增功能
 
-* **[表情符號](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>您現在可以在訊息和主旨列插入表情符號
+* **[表情符號](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
+您現在可以在訊息和主旨列插入表情符號
 
 * **[取得支援](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)**<br/>
 存取常見問題集、最佳實務、說明資源，以及請求協助
@@ -27,7 +28,8 @@ ht-degree: 99%
 * **[追蹤功能](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html)**<br/>
 瞭解 Campaign 中的追蹤功能和流程
 
-* **[AMP 互動式內容](delivery/using/defining-interactive-content.md)**<br/>瞭解如何使用新的 AMP 格式傳送動態電子郵件
+* **[AMP 互動式內容](delivery/using/defining-interactive-content.md)**<br/>
+瞭解如何使用新的 AMP 格式傳送動態電子郵件
 
 [按一下這裡以取得更多更新](/help/rn/using/documentation-updates.md)
 
@@ -82,7 +84,7 @@ ht-degree: 99%
 | 有用的頁面 | 面向開發人員的資源 |
 |---|---|
 | [發行說明](/help/rn/using/latest-release.md) | [錯誤訊息清單](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [操作說明短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign 資料模型](configuration/using/about-data-model.md) |
+| [操作說明短片](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html) | [Campaign 資料模型](configuration/using/about-data-model.md) |
 | [相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html) | [Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [開始使用 Campaign](platform/using/about-adobe-campaign-classic.md) | [實施指南](https://helpx.adobe.com/tw/campaign/kb/acc-implementation.html) |
 | [Gold Standard 升級](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html) | [追蹤指南](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html) |
