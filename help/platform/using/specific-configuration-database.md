@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1826'
 ht-degree: 2%
 
 ---
@@ -231,7 +231,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Snowflake] connector適用於代管和內部部署。 For more on this, refer to [this article](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html).
+>[!DNL Snowflake] connector適用於代管和內部部署。 有關詳細資訊，請參見[此頁面](../../installation/using/capability-matrix.md)。
 
 ![](assets/snowflake_3.png)
 
