@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 3175b9ab-e305-4f19-8267-d6172fa07a2a
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign提供三種代管模型的選擇，提供選擇最佳模型的靈
 
 >[!NOTE]
 >
->對於Adobe代管環境，主要安裝和設定步驟只能由Adobe執行，例如設定伺服器和自訂執行個體設定檔。 若要進一步瞭解部署模式之間的主要差異，請參閱 [本文章](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
+>對於Adobe代管環境，主要安裝和設定步驟只能由Adobe執行，例如設定伺服器和自訂執行個體設定檔。 若要進一步瞭解部署模式之間的主要差異，請參 [閱本頁](../../installation/using/capability-matrix.md)。
 
 * **托管服務（托管）**
 
