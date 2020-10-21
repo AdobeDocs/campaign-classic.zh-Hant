@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -47,7 +47,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
-    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
