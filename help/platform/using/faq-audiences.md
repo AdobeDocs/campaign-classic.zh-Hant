@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 84%
 
 ---
 
@@ -29,17 +29,22 @@ ht-degree: 97%
 
 ## 如何匯入設定檔？{#how-to-import-profiles-}
 
-探索在您的資料庫中輕鬆[匯入用戶檔案](../../platform/using/importing-data.md#generic-import-samples)的使用案例。您也可以觀看[此短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)。
+探索在您的資料庫中輕鬆[匯入用戶檔案](../../platform/using/importing-data.md#generic-import-samples)的使用案例。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## 如何定義行銷活動的目標人群？{#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-您可以[使用工作流程建立行銷宣傳活動的目標母體](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。透過[此短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html)了解如何在行銷活動中建立目標工作流程。
+您可以[使用工作流程建立行銷宣傳活動的目標母體](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
+
 
 ## 如何建立設定檔清單？{#how-can-i-create-a-list-of-profiles-}
 
 清單 (list) 是傳遞作業中可以鎖定的一組靜態收件者，在匯入操作或執行工作流程時可對清單進行更新。例如，透過查詢而從資料庫中摘取出的母體可形成一個清單。
 
-[按一下這裡以了解更多資訊](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。您也可以觀看[此影片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html)，瞭解如何手動建立清單，或者觀看[另一部影片](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)，以瞭解如何在工作流程建立並自動更新收件者清單。
+[按一下這裡以了解更多資訊](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
+
+![](assets/do-not-localize/how-to-video.png) 探索此視訊 [和此其他視訊](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)[中的這項功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## 如何在傳送訊息前刪除重複的人口？{#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
