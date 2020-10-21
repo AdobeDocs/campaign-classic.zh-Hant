@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '2625'
-ht-degree: 6%
+source-wordcount: '2623'
+ht-degree: 5%
 
 ---
 
@@ -122,11 +122,11 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>為了提高管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增允許清單的IP位址，以及為每個例項安裝SSH金鑰。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">詳細文件</a>及<a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">作法影片</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
+   <td> <p>為了提高管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增允許清單的IP位址，以及為每個例項安裝SSH金鑰。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">詳細文件</a>及<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">作法影片</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
   </tr> 
     <tr> 
    <td> 稽核軌跡<br /> </td> 
-   <td> <p>身為管理員，透過監控和管理在Adobe Campaign Classic例項中所做的變更，提高生產力。 審計線索將記錄對源方案、工作流和選項執行的操作。 您可以快速查看元素是否已建立、修改或刪除。</p><p>For more information, refer to the <a href="../../production/using/audit-trail.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">how-to video</a>.</p></td> 
+   <td> <p>身為管理員，透過監控和管理在Adobe Campaign Classic例項中所做的變更，提高生產力。 審計線索將記錄對源方案、工作流和選項執行的操作。 您可以快速查看元素是否已建立、修改或刪除。</p><p>For more information, refer to the <a href="../../production/using/audit-trail.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to video</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail、強穩性與可擴充性<br /> </td> 
