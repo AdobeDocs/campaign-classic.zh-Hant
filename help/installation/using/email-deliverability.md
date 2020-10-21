@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2975'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有些組態只能由Adobe針對Adobe代管的部署執行，例如存取伺服器和執行個體組態檔。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
+>有些組態只能由Adobe針對Adobe代管的部署執行，例如存取伺服器和執行個體組態檔。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本頁](../../installation/using/capability-matrix.md)。
 
 有關交付能力相關概念和最佳做法的詳細資訊，請參閱本 [節](../../delivery/using/about-deliverability.md)。
 
