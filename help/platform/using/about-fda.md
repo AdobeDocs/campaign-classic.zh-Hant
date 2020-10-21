@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 15%
+source-wordcount: '578'
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 >[!CAUTION]
 >
->除雪花連接器外，只有現場安裝或混合安裝才能通過FDA訪問外部資料庫。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
+>除雪花連接器外，只有現場安裝或混合安裝才能通過FDA訪問外部資料庫。 For more on this, refer [to this page](../../installation/using/capability-matrix.md).
 
 ## 操作原則 {#operating-principle}
 
