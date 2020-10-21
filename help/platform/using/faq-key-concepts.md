@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 100%
 
 ## 在內部部署環境與託管環境下運作有何不同？{#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campaign Classic 隨附了一套模組和選項。這些模組及其設定是否可用將取決於安裝的[部署類型](../../installation/using/hosting-models.md)：託管 (受管理的服務) 還是內部部署。
+Adobe Campaign Classic 隨附了一套模組和選項。The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
 
-[按一下這裡以了解更多資訊](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。
+[按一下這裡以了解更多資訊](../../installation/using/capability-matrix.md)。
 
 ## 如何設定使用者權限? {#how-can-i-set-up-user-permissions-}
 
@@ -64,7 +64,9 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規 (GDPR、CC
 
 ## 我應該了解哪些 Campaign 使用者介面概念? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
-請閱讀[本小節](../../platform/using/adobe-campaign-workspace.md)，深入了解 Adobe Campaign 工作區基本知識。您也可以觀看[此短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)。
+請閱讀[本小節](../../platform/using/adobe-campaign-workspace.md)，深入了解 Adobe Campaign 工作區基本知識。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索促銷活動工作區](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## 如何選取訊息的目標受眾？{#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -84,7 +86,9 @@ Adobe Campaign 的工作流程包括跨應用程式伺服器的不同模組策�
 
 ## 如何建立並傳送第一封電子郵件？{#how-to-create-and-send-a-first-email-}
 
-[按一下這裡以深入了解](../../delivery/using/about-email-channel.md)或[觀看此短片](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html)，以在行銷活動中建立電子郵件。
+[按一下這裡以了解更多資訊](../../delivery/using/about-email-channel.md)。
+
+![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## 如何傳送 SMS 訊息？{#how-to-send-sms-messages-}
 
