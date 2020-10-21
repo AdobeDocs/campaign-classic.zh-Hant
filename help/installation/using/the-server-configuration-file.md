@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '7857'
+source-wordcount: '7852'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ Adobe Campaign的整體設定是在位於安裝目錄 **conf****** 目錄的serv
 
 >[!NOTE]
 >
->伺服器端組態只能由Adobe針對Adobe代管的部署執行。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本文章](https://helpx.adobe.com/tw/campaign/kb/acc-on-prem-vs-hosted.html)。 本節將介紹代管和混合機型的安裝和配置步 [驟](../../installation/using/hosted-model.md)。
+>伺服器端組態只能由Adobe針對Adobe代管的部署執行。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本頁](../../installation/using/capability-matrix.md)。 本節將介紹代管和混合機型的安裝和配置步 [驟](../../installation/using/hosted-model.md)。
 
 第一個參數位於共用節 **點內** 。 這些與實例相關。 所有nlserver命令（nlserver web 、 nlserver wfserver等）都可能使用這些命令。 其他部分與特定的nlserver子命令相關。
 
