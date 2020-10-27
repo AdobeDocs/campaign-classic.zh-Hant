@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: e001db7a-7c53-477e-a534-ce4d83d68559
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 6%
+source-wordcount: '114'
+ht-degree: 7%
 
 ---
 
@@ -34,6 +34,6 @@ ht-degree: 6%
 
 對於IIS使用者（在Windows上），在建立更新後，主控台中將會遺失數個圖示。 需要其他IIS更新步驟：
 
-1. 在建立更新後，按兩下位於 **Campaign安裝目錄中的iis_neolane_setup.vbs** 。 預設路徑為C:\Program Files (x86)\Adobe\Adobe Campaign v7\tomcat-7\conf
+1. 在建立更新後，按兩下位於 **Campaign安裝目錄中的iis_neolane_setup.vbs** 。 預設路徑為C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
 1. 重新啟動已通過上一步更新的IIS站點。
 
