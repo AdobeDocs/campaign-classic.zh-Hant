@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 9%
@@ -24,7 +24,7 @@ ht-degree: 9%
 
 本章詳細說明Interaction中各種可能的高級參數。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >以下章節適用於技術 **管理員**。
 
@@ -33,4 +33,3 @@ ht-degree: 9%
 * 建立測試環境在建立測試環 [境一節中有詳細說明](../../interaction/using/creating-a-test-environment.md) 。
 * 您可以使用勾點修改標準引擎行為。 For more on this, refer to the [Hooks](../../interaction/using/hooks.md) section
 * 最後，在「分佈式體系結構」一節中詳細介紹了使用與分佈式體系 [結構的交互](../../interaction/using/distributed-architectures.md) 。
-
