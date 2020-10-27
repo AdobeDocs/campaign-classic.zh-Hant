@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1670'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 1. **分析傳送**:此步驟可讓您準備要傳送的訊息。 請參閱 [分析傳送](#analyzing-the-delivery)。
 
-   分析期間應用的規則將在本節 [中介紹](#validation-process-with-typologies) 。 可用的驗證模式在「更改批准模 [式」部分中有詳細說明](#changing-the-approval-mode) 。
+   本節將介紹分析期間應用的 [規則](#validation-process-with-typologies)。 可用的驗證模式在「更改批准模 [式」部分中有詳細說明](#changing-the-approval-mode) 。
 
 1. **傳送校樣**:此步驟可讓您核准內容、URL、個人化欄位等。 請參 [閱傳送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定義特定證明目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
