@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 7d8828c5-5776-49ca-b4f7-a4a6aaaa9db1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
@@ -78,7 +78,7 @@ ht-degree: 3%
 
    若要檢查執行個體的工作流程數目，建議使用預先定義的檢視，預設可在 **[!UICONTROL Administration]** /資料夾 **[!UICONTROL Audit]** 中存取。 如需詳細資訊，請參閱[本頁面](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >增加選 **[!UICONTROL NmsOperation_LimitConcurrency]** 項臨界值可能會導致執行個體的效能問題。 無論如何，請勿自行執行此動作，並聯絡您的Adobe Campaign聯絡人。
 
