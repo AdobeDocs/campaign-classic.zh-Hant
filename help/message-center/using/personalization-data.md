@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 2cd8a320-37e8-410a-b71b-0c13c8e15482
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 # 個人化資料{#personalization-data}
 
-可以使用消息模板中的資料來測試事務性消息個性化。 此功能可用來產生預覽或傳送校樣。 如果您安裝了 **Deliverability** module，則此資料允許您顯示各種Internet訪問提供商的消息渲染(收件箱&#x200B;**渲染**:有關此內容的詳細資訊，請參 [閱本節](../../delivery/using/about-deliverability.md))。
+可以使用消息模板中的資料來測試事務性消息個性化。 此功能可用來產生預覽或傳送校樣。 如果您安裝了 **Deliverability** module，則此資料允許您顯示各種Internet訪問提供商的消息渲染(收件箱&#x200B;**渲染**:有關此內容的詳細資訊，請參 [閱本節](../../delivery/using/inbox-rendering.md))。
 
 此資料的目的是在訊息最終傳遞之前先進行測試。 這些消息與要由消息中心處理的實際資料不一致。 但是，XML結構必須與儲存在執行實例中的事件結構相同，如下所示。
 
@@ -34,4 +34,3 @@ ht-degree: 5%
 1. 在事件內容中，以XML格式輸入測試資訊。
 
    ![](assets/messagecenter_create_custo_001.png)
-
