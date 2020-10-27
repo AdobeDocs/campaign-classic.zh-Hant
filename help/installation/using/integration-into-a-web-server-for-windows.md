@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: a4f2ae0e-e631-4ab6-934e-8298e4ce6f2c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -70,7 +70,7 @@ IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. VBS **** 指令碼可讓您在我們剛建立的虛擬目錄上自動設定Adobe Campaign伺服器使用的資源。 若要啟動它，請連按兩下資料 **夾中的iis_neolane_setup.vbs** 檔案，其中 `[INSTALL]\tomcat-7\conf``[INSTALL]` 是存取Adobe Campaign安裝資料夾的路徑。
+1. VBS **** 指令碼可讓您在我們剛建立的虛擬目錄上自動設定Adobe Campaign伺服器使用的資源。 若要啟動它，請連按兩下資料 **夾中的iis_neolane_setup.vbs** 檔案，其中 `[INSTALL]\conf``[INSTALL]` 是存取Adobe Campaign安裝資料夾的路徑。
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
