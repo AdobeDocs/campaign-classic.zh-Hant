@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
+source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '309'
 ht-degree: 11%
 
 ---
@@ -28,13 +28,11 @@ ht-degree: 11%
 
 ## 控制例項工作流程 {#control-instance-workflows}
 
-在控制實例上，每個執行實例必須建立一個歸檔工作流。 然後，您可從「管理>生產>訊息中 **心」資料夾存取封存工作流程** 。 建立後，封存工作流程就會自動啟動。
-
-**分佈式體系結構**
-
-如果您註冊了一個或多個執行實例，則必須在控制實例上為每個外部帳戶建立一個歸 **[!UICONTROL Message Center execution instance]** 檔工作流。 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕以建立並啟動工作流程。
+在控制實例上，無論您註冊了一個或多個執行實例，都必須為每個外部帳戶建立一個歸檔 **[!UICONTROL Message Center execution instance]** 工作流。 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕以建立並啟動工作流程。
 
 ![](assets/messagecenter_archiving_002.png)
+
+然後，您可從「管理>生產>訊 **息中心」檔案夾存取這些工作流程** 。 建立後，封存工作流程就會自動啟動。
 
 <!--**Minimal architecture**
 
