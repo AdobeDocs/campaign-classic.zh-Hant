@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Campaign提供內建的工作流程，可讓您排程特定資料庫維護
 * 刪除失效對象的孤立記錄並重新初始化狀態，
 * 更新資料庫統計資訊。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >請注意，清除任務主要涉及應用程式級別維護，而不是RDBMS級別維護（統計資料更新除外）。 但是，資料庫上需要維護操作。 即使資料庫清理工作流運行成功，但這並不意味著資料庫已得到優化。
 
