@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -114,7 +114,7 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 ## 如何建立和管理個人檔案 {#create-profiles-video}
 
-瞭解如何存取描述檔資料、排序和篩選描述檔，以及手動建立和管理描述檔。
+了解如何存取設定檔資料、排序和篩選設定檔，以及手動建立和管理設定檔。
 
 此影片也說明Adobe Campaign Classic與一般資料保護法規的相容性。
 
