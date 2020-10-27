@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -59,14 +59,14 @@ ht-degree: 1%
 
 (mobileAppOptOutMagt **[!UICONTROL NMAC opt-out management]** )工作流程會更新行動裝置上取消訂閱的通知。 For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
 
-Adobe Campaign與二進位和HTTP/2 APNS都相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中 [設定行動應用程式」一節](../../delivery/using/configuring-the-mobile-application.md) 。
+Adobe Campaign可與二進位和HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中 [設定行動應用程式」一節](../../delivery/using/configuring-the-mobile-application.md) 。
 
 ## 資料路徑 {#data-path}
 
 下列結構說明如何讓行動應用程式與Adobe Campaign交換資料的步驟。 此過程涉及三個實體：
 
 * 行動應用程式
-* 通知服務：Apple適用的APNS（Apple推播通知服務）和Android適用的FCM（Firebase Cloud訊息）
+* 通知服務：適用於Apple的APN（Apple推播通知服務）和適用於Android的FCM（Firebase Cloud訊息）
 * Adobe Campaign
 
 通知程式的三個主要步驟是：在Adobe Campaign中註冊應用程式（訂閱收集）、傳送和追蹤。
@@ -88,10 +88,14 @@ Adobe Campaign提供下列資訊：
 
 ![](assets/nmac_delivery_view.png)
 
-Adobe Campaign伺服器必須能夠透過下列埠連絡APNS伺服器：
+Adobe Campaign伺服器必須能夠透過下列埠聯絡APNs伺服器：
 
 * iOS二進位連接器的2195（傳送）和2186（回饋服務）
 * 443 for iOS HTTP/2 connector
+
+   >[!NOTE]
+   >
+   > 從Campaign 20.3版開始，iOS舊版二進位連接器已過時。 如果您使用此連接器，則需要依此調整實作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
 
 若要檢查它是否正常運作，請使用下列命令：
 
@@ -107,7 +111,7 @@ Adobe Campaign伺服器必須能夠透過下列埠連絡APNS伺服器：
    telnet gateway.push.apple.com
    ```
 
-如果使用iOS二進位連接器，MTA和Web伺服器必須能夠連絡連接埠2195（傳送）的APNS，工作流程伺服器必須能夠連絡連接埠2196的APNS（回饋服務）。
+如果使用iOS二進位連接器，MTA和Web伺服器必須能夠與埠2195（發送）上的APN聯繫，工作流伺服器必須能夠與埠2196上的APN聯繫（反饋服務）。
 
-如果使用iOS HTTP/2連接器，MTA、Web伺服器和工作流程伺服器必須能夠連絡連接埠443上的APNS。
+如果使用iOS HTTP/2連接器，則MTA、Web伺服器和工作流伺服器必須能夠聯繫埠443上的APN。
 
