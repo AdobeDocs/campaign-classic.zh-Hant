@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: f459dc07-b7db-4526-b428-852b51c9c00e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1540'
 ht-degree: 1%
 
 ---
@@ -305,10 +305,10 @@ ht-degree: 1%
 
 1. 執行 **iis_neolane_setup.vbs** 指令碼，以自動設定Adobe Campaign伺服器在先前建立之虛擬目錄上所使用的資源。
 
-   * 此檔案位於\tomcat-7\conf file目錄 **`[Adobe Campaign v7]`中**, **`[Adobe Campaign v7]`** 其中是Adobe Campaign安裝目錄的存取路徑。 用於執行指令碼的命令如下（對於管理員）:
+   * 此檔案位於 **`[Adobe Campaign v7]`\conf** 目錄中，其 **`[Adobe Campaign v7]`** 中是Adobe Campaign安裝目錄的存取路徑。 用於執行指令碼的命令如下（對於管理員）:
 
       ```
-      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\tomcat-7\conf
+      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
       cscript iis_neolane_setup.vbs
       ```
 
