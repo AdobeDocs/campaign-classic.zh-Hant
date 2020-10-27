@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '2020'
 ht-degree: 2%
 
 ---
@@ -203,3 +203,10 @@ For more information, [refer to this document](https://helpx.adobe.com/tw/campai
    * 測試傳送SMS
    * 如果您有任何外部FDA連線，請測試資料是否以兩種方式傳送
    * 如果您使用Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics等整合，請測試這些整合是否仍像以前一樣運作
+
+**另請參閱**
+
+* [執行版本編號升級](../../production/using/build-upgrade.md)
+* [Campaign Classic發行說明](../../rn/using/rn-overview.md)
+* [Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Gold Standard計畫](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)
