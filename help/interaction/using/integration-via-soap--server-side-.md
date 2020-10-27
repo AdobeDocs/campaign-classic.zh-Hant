@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 4%
 
 ---
 
 
-# 透過 SOAP 整合 (伺服器端){#integration-via-soap-server-side}
+# 透過SOAP（伺服器端）整合{#integration-via-soap-server-side}
 
 為選件管理提供的SOAP網站服務與Adobe Campaign中通常使用的服務不同。 您可透過上一節所述的互動URL來存取這些選件，並讓您為特定連絡人呈現或更新選件。
 
