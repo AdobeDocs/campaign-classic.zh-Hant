@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 2%
@@ -119,7 +119,7 @@ ht-degree: 2%
 
 ### 設定排除設定 {#customizing-exclusion-settings}
 
-地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會在收件者描述檔中自動更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
+地址錯誤和質量分級由服務提供商(IAP)提供。 在傳送動作後，此資訊會自動在收件者描述檔中更新，並由服務提供者傳回檔案。 您可在描述檔中以唯讀方式檢視。
 
 您可以選擇排除已達到特定數量連續錯誤或品質分級低於此窗口中指定臨界值的地址。 您也可以選擇是否授權尚未傳回任何資料的非合格地址。
 
@@ -228,7 +228,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 >
 >種子地址在關於種 [子地址中顯示](../../delivery/using/about-seed-addresses.md)。
 
-您可以結合特定證明目標的定義和使用種子地址的選項來 **[!UICONTROL Specific target and Seed addresses]** 進行。 然後在兩個單獨的子頁籤中定義相關配置。
+您可以結合特定證明目標的定義和使用種子地址的選 **[!UICONTROL Specific target and Seed addresses]** 項。 然後在兩個單獨的子頁籤中定義相關配置。
 
 ## How to manage seed and proofs in an email {#seeds-and-proofs-video}
 
@@ -239,6 +239,6 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 另請參閱：
 * [選擇校對目標](#selecting-the-proof-target)
 
-* [關於種子接頭](../../delivery/using/about-seed-addresses.md)
+* [關於種子地址](../../delivery/using/about-seed-addresses.md)
 
 * [使用案例：依條件選取種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
