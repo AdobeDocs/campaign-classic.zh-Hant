@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 6%
+source-wordcount: '428'
+ht-degree: 5%
 
 ---
 
@@ -28,27 +28,21 @@ Adobe Campaign會定期更新。 平均每年發行兩、三個次要版本，�
 
 ## 發行狀態{#rn-statuses}
 
-啟動Campaign Classic 19.2時，狀態會關聯至每個建置。 您會在狀態清單下方找到，以及如何解讀狀態。
+狀態與每個構建關聯。 您會在狀態清單下方找到，以及如何解讀狀態。
 
-![](assets/do-not-localize/green3.png) **一般可用性** -提供最新的穩定版本。 在生產環境中經過驗證。
+![](assets/do-not-localize/green3.png) **一般可用性** (GA)-經過生產驗證，由Adobe建議。
 
-最 **後一個穩定版本** 是Gold Standard 10。 按一下[這裡](../../rn/using/gold-standard.md#gs-10)
+最 **後一個GA版本** 是Gold Standard 10。 按一下[這裡](../../rn/using/gold-standard.md#gs-10)
 
-![](assets/do-not-localize/limited3.png) **有限可用性** -目前正在進行生產驗證。 僅限隨選部署。
+![](assets/do-not-localize/limited3.png) **有限可用性** (LA)-僅限隨選部署。
 
-![](assets/do-not-localize/blue3.png) **Release Canditad** —— 由Adobe驗證的建置版本。 等待生產校對。
+![](assets/do-not-localize/blue3.png) **發行候選者** (RC)-具有新功能的最新版本。
 
-![](assets/do-not-localize/orange3.png) **不再提供** -更新版本已修正錯誤。 需要更新。
+最後 **一個RC組建版本** 是Campaign Classic 20.3。按一 [下](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/red3.png) **已過時** -包含已知回歸。 更新是必備的。
+![](assets/do-not-localize/orange3.png) **不再提供** -需要更新至較新的組建版本。
 
-## 升級程式{#process-upgrade}
-
-身為代管客戶（托管服務或混合服務），您需要與客戶服務團隊聯繫，以升級您的環境。
-
-身為Gold Standard的使用者，您將透過最新穩定版本自動從Gold Standard升級中獲益，而不需採取任何動作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-10)
-
-身為內部部署使用者，您可以執行升級。 為此，您需要下載最 [新的穩定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，並升級所有環境。 進一步瞭解升 [級程式](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)，並參閱建置 [升級常見問答集](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)。
+![](assets/do-not-localize/red3.png) **已過時** -必須更新至較新的組建版本。
 
 ## 建議{#recommendations}
 
@@ -56,16 +50,24 @@ Adobe Campaign會定期更新。 平均每年發行兩、三個次要版本，�
 
 為了保持實作的最新狀態，請務必閱讀每個新版本的「已過時 [」和「已移除的功能](../../rn/using/deprecated-features.md)[」和「相容性表](../../rn/using/compatibility-matrix.md) 」頁面。
 
-若要得知Experience Cloud解決方案的最新版本，請訂閱 [Adobe優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)。
+## 升級程式{#process-upgrade}
 
-進一步瞭解其他 [建議](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html#Recommendations)。
+身為代管客戶（托管服務或混合服務），您需要與客戶服務團隊聯繫，以升級您的環境。
+
+身為內部部署使用者，您可以執行升級。 為此，您需要下載最 [新的穩定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，並升級所有環境。 進一步瞭解升 [級程式](../../production/using/build-upgrade.md)，並參閱建置 [升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+
+### 金標{#upgrade-for-gold-standard-users}
+
+身為Gold Standard的使用者，您將可透過最新的GA版本自動從Gold Standard升級 [中獲益](../../rn/using/gold-standard.md#gs-10) ，而不需採取任何動作。 [進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
+
+>[!NOTE]
+>GA相容性矩陣中提供了Gold Standard的 [相容性矩陣](../../rn/using/compatibility-matrix-gs.md)。
 
 ## 支援和其他有用連結{#support}
 
 * [說明與支援](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 * [「控制面板」發行版本](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)
-* [檔案更新](../../rn/using/documentation-updates.md)
-* [舊版](../../rn/using/release--20-1.md)
-* [棄用的功能](../../rn/using/deprecated-features.md)
-* [相容性矩陣](../../rn/using/compatibility-matrix.md)
+* [最新檔案更新](../../rn/using/documentation-updates.md)
+* [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
 
+若要得知Experience Cloud解決方案的最新版本，請訂閱 [Adobe優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)。
