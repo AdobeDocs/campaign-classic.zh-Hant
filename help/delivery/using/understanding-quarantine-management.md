@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 15%
+source-wordcount: '2802'
+ht-degree: 14%
 
 ---
 
@@ -156,20 +156,23 @@ If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/tec
 
 **適用於iOS —— 二進位連接器**
 
-對於每個通知，Adobe Campaign會從APNS伺服器收到同步和非同步錯誤。 對於下列同步錯誤，Adobe Campaign會產生軟性錯誤：
+>[!NOTE]
+從Campaign 20.3版開始，iOS舊版二進位連接器已過時。 如果您使用此連接器，則需要依此調整實作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+
+Adobe Campaign會針對每個通知從APNs伺服器接收同步與非同步錯誤。 對於下列同步錯誤，Adobe Campaign會產生軟性錯誤：
 
 * 裝載長度問題：無重試，失敗原因為 **[!UICONTROL Unreachable]**。
 * 憑證到期問題：無重試，失敗原因為 **[!UICONTROL Unreachable]**。
 * 傳送期間連線中斷：重試時，失敗原因為 **[!UICONTROL Unreachable]**。
 * 服務配置問題（證書無效、證書密碼無效、證書無效）:無重試，失敗原因為 **[!UICONTROL Unreachable]**。
 
-APNS伺服器會以非同步方式通知Adobe Campaign，裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 此工 **[!UICONTROL mobileAppOptOutMgt]** 作流程每6小時執行一次，以聯絡APNS意見服務以更新 **AppSubscriptionRcp** 表。 對於所有停用的Token, **Disabled** （停用）欄位會設為 **True** ，而連結至該裝置Token的訂閱會自動排除在未來傳送中。
+APNs伺服器會以非同步方式通知Adobe Campaign，裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 此工 **[!UICONTROL mobileAppOptOutMgt]** 作流程每6小時運行一次，以聯繫APNs反饋服務以更新 **AppSubscriptionRcp** 表。 對於所有停用的Token, **Disabled** （停用）欄位會設為 **True** ，而連結至該裝置Token的訂閱會自動排除在未來傳送中。
 
-**適用於iOS - HTTP/2連接器**
+**適用於iOS - HTTP/V2連接器**
 
-http/2通訊協定可讓每個推播傳送直接回饋和狀態。 如果使用http/2通訊協定連接器，工作流程將不再呼叫回饋服 **[!UICONTROL mobileAppOptOutMgt]** 務。 未註冊的Token在iOS二進位連接器和iOS http/2連接器之間的處理方式不同。 解除安裝或重新安裝行動應用程式時，會將Token視為未註冊。
+HTTP/V2通訊協定可讓每個推播傳送直接提供意見和狀態。 如果使用HTTP/V2通訊協定連接器，工作流程將不再呼叫回饋服 **[!UICONTROL mobileAppOptOutMgt]** 務。 未註冊的Token在iOS二進位連接器和iOS HTTP/V2連接器之間的處理方式不同。 解除安裝或重新安裝行動應用程式時，會將Token視為未註冊。
 
-同步地，如果APNS返回消息的「未註冊」狀態，則目標Token將立即被隔離。
+同時，如果APN返回消息的「未註冊」狀態，則目標令牌將立即被隔離。
 
 <table> 
  <tbody> 
@@ -222,7 +225,7 @@ http/2通訊協定可讓每個推播傳送直接回饋和狀態。 如果使用h
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> 憑證問題（密碼、損毀等） 並測試與APNS問題的連線<br /> </td> 
+   <td> 憑證問題（密碼、損毀等） 並測試與APN問題的連接<br /> </td> 
    <td> 失敗<br /> </td> 
    <td> 根據錯誤顯示的各種錯誤消息<br /> </td> 
    <td> Soft<br /> </td> 
@@ -238,7 +241,7 @@ http/2通訊協定可讓每個推播傳送直接回饋和狀態。 如果使用h
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS消息拒絕：取消註冊<br /> ，使用者已移除應用程式或Token已過期<br /> </td> 
+   <td> APN消息拒絕：取消註冊<br /> ，使用者已移除應用程式或Token已過期<br /> </td> 
    <td> 失敗<br /> </td> 
    <td> 未註冊<br /> </td> 
    <td> 硬<br /> </td> 
@@ -246,7 +249,7 @@ http/2通訊協定可讓每個推播傳送直接回饋和狀態。 如果使用h
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS消息拒絕：所有其他錯誤<br /> </td> 
+   <td> APN消息拒絕：所有其他錯誤<br /> </td> 
    <td> 失敗<br /> </td> 
    <td> 錯誤消息中將顯示錯誤拒絕原因<br /> </td> 
    <td> Soft<br /> </td> 
@@ -356,6 +359,134 @@ Android V2隔離機制使用與Android V1相同的程式，訂閱和排除更新
    <td> 拒絕<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
+    <tr> 
+   <td> FCM消息拒絕：無效引數<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> INVALID_ARGUMENT </td> 
+   <td> 已忽略</td> 
+   <td> 未定義<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒絕：協力廠商驗證錯誤<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> THIRD_PARTY_AUTH_ERROR </td> 
+   <td> 已忽略</td>
+   <td> 拒絕<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒絕：傳送者ID不符<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> SENDER_ID_MISMATCH </td> 
+   <td> Soft</td>
+   <td> 用戶未知<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒絕：未註冊<br /> </td> 
+   <td> 失敗<br /> </td>
+   <td> 未註冊 </td> 
+   <td> 硬</td> 
+   <td> 用戶未知<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒絕：內部<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> 內部 </td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒絕：無法使用<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> 無法使用</td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒絕：意外錯誤代碼<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> 意外錯誤代碼</td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+  <tr> 
+   <td> 驗證：連線問題<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> 無法連接到驗證伺服器 </td> 
+   <td> 已忽略</td>
+   <td> 拒絕<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：未授權用戶端或請求範圍。<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> 已忽略</td>
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：用戶端未授權使用此方法擷取存取Token，或用戶端未授權使用任何要求的範圍。<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> 已忽略</td>
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：存取遭拒<br /> </td> 
+   <td> 失敗<br /> </td>
+   <td> access_denied</td> 
+   <td> 已忽略</td>
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：無效電子郵件<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：無效的JWT<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：無效的JWT簽名<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：提供的OAuth範圍或ID Token對象無效<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> unauthorized_client</td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 驗證：OAuth用戶端已停用<br /> </td> 
+   <td> 失敗<br /> </td> 
+   <td> disabled_client</td> 
+   <td> 已忽略</td> 
+   <td> 拒絕<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
  </tbody> 
 </table>
 
