@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ### 概觀 {#overview}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您沒有對伺服器和資料庫（托管環境）的訪問權限，則將無法執行下面所述的過程。 請聯絡Adobe。
 
@@ -49,14 +49,14 @@ ht-degree: 1%
    >在Adobe Campaign中，燒灼會結 **合動作** ，讓您停止所有程式與外部互動：記錄檔、追蹤、傳送、促銷活動工作流程等。\
    >必須執行此步驟，以避免多次傳送訊息（一次是從名義環境傳送，一次是從複製的環境傳送）。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >一個環境可以包含多個實例。 每個Adobe Campaign實例都需遵守授權合約。 查看您的授權合約，瞭解您可擁有的環境數。\
    >以下過程可讓您傳輸環境，而不影響您安裝的環境和實例數。
 
 ### 開始之前 {#before-you-start}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我們強烈建議在啟動傳輸過程之前，對源和目標環境的所有實例運行資料庫的完整備份。 這樣，如果出現問題，您將能夠恢復備份並返回初始配置。
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 必須謹慎執行下列步驟：複製源環境資料庫時，某些進程可能仍在進行中。 燒灼（下面的步驟3）可防止訊息傳送兩次，並維持資料的一致性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* 以下過程在PostgreSQL語言中有效。 如果SQL語言不同（例如Oracle），則必須調整SQL查詢。
 >* 以下命令適用於 **prod** **instance和PostgreSQL下** dev instance的上下文。
@@ -218,7 +218,7 @@ nlserver pdump
 
 ### 步驟8 —— 將選項和外部帳戶導入目標環境（開發） {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此步驟僅應啟動Web程式。 如果不是這樣，請在繼續之前停止其他正在運行的進程
 
