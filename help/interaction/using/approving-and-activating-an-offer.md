@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 您可以選擇在特定可用空間上核准選件內容，並在其他空間上拒絕選件內容。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在核准選件的內容和資格後，出版工作流程（選件通知）就會自動執行，而且選件會上線，並可在所有啟用的空間中使用。
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
 核准選件資格是指接受或拒絕選件權重，以及選件中設定或繼承自父類別中建立之規則的資格規則。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在核准選件的內容和資格後，出版工作流程（選件通知）就會自動執行，而且選件會上線，並可在所有啟用的空間中使用。
 
