@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -369,7 +369,7 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->對於Microsoft SQL Server，您可以使用本頁中詳細介紹的 [維護計畫](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
+>對於Microsoft SQL Server，您可以使用此頁上詳細的維 [護計畫](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
 
 以下示例涉及Microsoft SQL Server 2005。 如果您使用其他版本，請連絡您的資料庫管理員以瞭解維護程式。
 
@@ -421,7 +421,7 @@ function sqlGetMemo(strSql)
 
    請注意，已在資料夾中建立了 **[!UICONTROL SQL Server Agent > Jobs]** 對象。 此物件可讓您啟動維護計畫。 在我們的示例中，只有一個對象，因為所有維護任務都是同一計畫的一部分。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >要運行此對象，必須啟用Microsoft SQL Server代理。
 
