@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-environments
 discoiquuid: c7b4103d-99b2-4e64-a457-ee0e3326b172
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 8%
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 管理和使用選件時會涉及數個不同的使用者設定檔。 因此，第一步包括確保這些配置檔案存在，如果不存在，則建立它們。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >以下配置需由技術管理員 **執行**。
 
