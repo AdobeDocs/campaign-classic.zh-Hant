@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 12%
@@ -34,7 +34,6 @@ ht-degree: 12%
 
 預設情況下，工藝路線基於以下資訊：
 
-* 事件類型，
-* 要使用的頻道(預設為：電子郵件)、
-* 最新的傳送範本，根據發佈日期。
-
+* 事件類型
+* 要使用的渠道(預設為：電子郵件)
+* 最近的傳送範本，根據發佈日期
