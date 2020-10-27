@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 * **選件空間**:資料夾，以定義選件公開的位置。 定義空格可讓您指定使用的頻道、指定是否可以在統一模式中使用(預設為：僅在批次模式中)，使用演算功能建立選件的內容，並指定所呈現選件的選件。 空間是頻道與選件引擎之間的介面。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >選件空間不是通信通道，它與通道上的特定展示位置一致。 例如，網站上公開的選件可能會佔用同一頁面上的兩個空格。 在此情況下，我們會為同一頻道提供兩個空格。
    >
