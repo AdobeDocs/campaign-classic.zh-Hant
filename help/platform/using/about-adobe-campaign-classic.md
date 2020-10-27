@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 translation-type: tm+mt
-source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
+source-git-commit: 84f14b7a8c4ed05b309109c76be8c8c7b7b52d83
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Adobe Campaign Classic 現提供 v6.11 和 v7 兩個版本。除非另外提及，否則說明資料適用於兩個版本的最新組建。螢幕截圖為 Campaign Classic v7 使用者介面。
+>Adobe Campaign Classic 現提供 v6.11 和 v7 兩個版本。Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). 螢幕截圖為 Campaign Classic v7 使用者介面。
 
 ## 核心功能 {#key-capabilities}
 
