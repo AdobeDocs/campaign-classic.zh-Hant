@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 8ec525f400c29b986eadd888d29f1579860871c6
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -209,10 +209,10 @@ ht-degree: 0%
 
 在安裝Adobe Campaign應用程式伺服器的機器上(nserverweb)，下載並複製檔案：
 
+```
+Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
+```
 
-    &quot;
-    [應用程式路徑]\datakit\nl\en\jsp中的Setup-client-7.xxxx.exe
-    &quot;
 
 下次連接客戶機控制台時，會出現一個窗口通知用戶新更新的可用性，並為用戶提供下載和安裝該更新的可能性。
 
@@ -344,7 +344,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結
 * 對象將不升級
 * 長期影響：版本不相容，客戶將不會從錯誤修正中獲益。
 
->[!CAUTION]
+>[!IMPORTANT]
 >強烈建議您解決衝突。
 
 
@@ -408,7 +408,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結
 1. 在測試環境中執行
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >執行複雜合併需要具備開發技巧。
 
 
