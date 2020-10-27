@@ -1,7 +1,6 @@
 ---
 title: 常見問題
-seo-title: 常見問題
-description: Campaign Classic 常見問題集
+description: Adobe Campaign Classic常見問答集
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -11,17 +10,23 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 98%
+source-wordcount: '539'
+ht-degree: 87%
 
 ---
 
 
 # 常見問題{#common-questions}
 
-使用 Campaign Classic 時需要協助嗎？請閱讀下列 10 大問題，以及該頁面的其他常見問題。您也可以[觀賞教學課程影片](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)和閱讀 Campaign [快速入門指南](../../platform/using/tutorials.md#step-by-step-guides)，以瞭解核心功能。找不到答案？[諮詢社群](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign)
+使用 Campaign Classic 時需要協助嗎？請閱讀下列 10 大問題，以及該頁面的其他常見問題。您也可以：
+
+* [觀看教學課程影片](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)
+* [瀏覽自助選項](../../platform/using/tutorials.md#how-to-videos)
+* [閱讀開始使用和使用案例一節](../../platform/using/tutorials.md#step-by-step-guides)
+* 找不到答案？[詢問專家](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+* 需要支援嗎？ [諮詢促銷活動說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 
 ## 1. 如何將 Campaign 升級至最新版本？{#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -29,7 +34,7 @@ Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組
 
 如果您使用 Adobe Managed Services，則可從 Campaign Gold Standard 升級中獲益。如需詳細資訊，請參閱[本文章](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
-[閱讀本文章](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)，瞭解如何更新您的環境，並閱讀 [有關此特定主題的常見問題](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)。
+[閱讀本節](../../production/using/build-upgrade.md) ，瞭解如何更新您的環境，並閱讀 [有關此特定主題的常見問題](../../platform/using/faq-build-upgrade.md) 。
 
 ## 2. 什麼是資料庫清理工作流程？{#what-is-the-database-cleanup-workflow-}
 
