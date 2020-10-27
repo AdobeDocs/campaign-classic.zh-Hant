@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 4%
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 交易訊息內容的定義與Adobe Campaign中定期傳送的定義相同。 例如，對於電子郵件傳送，您可以建立HTML或文字格式的內容、新增附件或個人化傳送物件。 如需詳細資訊，請參閱「電子郵件傳 [送」一章](../../delivery/using/about-email-channel.md)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >訊息中包含的影像必須可公開存取。 Adobe Campaign不提供任何交易訊息的影像上傳機制。\
 >與JSSP或webApp不同， `<%=` 沒有任何預設逸出字元。
