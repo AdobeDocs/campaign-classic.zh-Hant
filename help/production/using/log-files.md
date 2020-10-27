@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -56,7 +56,7 @@ nlserver syslogd **** 模組將日誌保存到磁碟。 此模組與Unix **syslo
 | inMail.log | 彈回郵件模組記錄檔 |
 | logins.log | 記錄所有登入Adobe Campaign的嘗試（成功與否） |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >redir目 **錄僅存** 在於重定向伺服器上。 url子 **目錄** ，包含要重新導向之URL的相符項目，而子目錄 **記錄檔則包** 含追蹤記錄。 若要產生追蹤記錄檔， **trackinglogd** 模組必須正在執行。
 
@@ -68,4 +68,4 @@ nlserver syslogd **** 模組將日誌保存到磁碟。 此模組與Unix **syslo
 
 如果您想要在記錄檔中維持更詳細的層級，可以使用 **-verbose參數啟動Adobe Campaign** 模組：
 
-**nlserver啟動`<MODULE>`@`<INSTANCE>`-verbose**
+**nlserver啟動 `<MODULE>`@`<INSTANCE>` -verbose**
