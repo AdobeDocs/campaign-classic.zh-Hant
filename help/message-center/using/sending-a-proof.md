@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 8%
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 傳送證明的程式與一般傳送的程式相同(如需詳細資訊，請參閱 [本節](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof))。 但是，要在消息中心內發送證明，您需要事先執行以下操作：
 
-* 使用測試資料建立一或多個種子位址(請參 [閱管理交易訊息中的種子位址](../../message-center/using/managing-seed-addresses-in-transactional-messages.md))(請參閱 [個人化資料](../../message-center/using/personalization-data.md)),
+* 使用測試資料建立一或多個種子位址(請參 [閱「管理交易訊息中的種子位址](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)」)(請參閱「 [個人化資料」](../../message-center/using/personalization-data.md))。
 * 建立消息內容(請參閱 [建立消息內容](../../message-center/using/creating-message-content.md))。
 
 若要傳送證明：
