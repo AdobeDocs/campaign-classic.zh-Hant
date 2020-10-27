@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 8%
@@ -57,7 +57,7 @@ ht-degree: 8%
 
 如需詳細資訊，請參閱[本章節](../../production/using/recommendations.md)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您使用中間採購配置，則必須定期維護資料庫。 分析行銷平台上的傳送時，行銷例項會傳送資訊至中間採購例項。 如果程式變慢，行銷例項將會受到影響。
 
@@ -69,7 +69,7 @@ ht-degree: 8%
 * 停止或刪除因錯誤而暫停的工作流程，
 * 停止所有測試所用的工作流程，這些測試不包含活 **[!UICONTROL End]** 動，因此其狀態仍然 **[!UICONTROL Paused]** 。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果操作時間長，佔用空間大，則表示需要深入維護（索引重建等）。 如需詳細資訊，請參閱[本章節](../../production/using/recommendations.md)。
 
