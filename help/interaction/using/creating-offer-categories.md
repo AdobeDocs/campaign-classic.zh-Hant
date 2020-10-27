@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 4%
 
       ![](assets/offer_cat_create_004.png)
 
-   * 使用欄位，輸入可用於選擇此類別中選件的關鍵字 **[!UICONTROL Themes]** 詞。
+   * 使用欄位，輸入可用於在此類別中選擇選件的關鍵字 **[!UICONTROL Themes]** 詞。
 
       ![](assets/offer_cat_create_005.png)
 
@@ -58,7 +58,7 @@ ht-degree: 4%
       >
       >呼叫選件引擎時，只會選取主題或類別符合參數的目錄部分。
 
-   * 您可以透過欄位暫時「提升」特定時段的類別選件 **[!UICONTROL Multiplier weight]** 權重。
+   * 透過欄位暫時「提升」特定時段內類別的選件 **[!UICONTROL Multiplier weight]** 權重。
 
       ![](assets/offer_cat_create_006.png)
 
