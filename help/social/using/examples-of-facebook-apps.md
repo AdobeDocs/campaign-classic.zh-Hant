@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: annexes
 discoiquuid: 07be1d3c-b038-48ca-be37-a33adb8e0fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Facebook類型網頁應用程式的範例如下：
 
 ## 如何獲取風扇資料？ {#how-to-acquire-fan-data-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >遵循建立Facebook應用程式中詳 [細的設定步驟](../../social/using/creating-a-facebook-application.md)。
 
@@ -250,7 +250,7 @@ Facebook類型網頁應用程式的範例如下：
 
 1. 在字 **[!UICONTROL Mapping]** 段中，選擇要執行協調的方案。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >請確定標籤的欄位 **[!UICONTROL Social networks]** 在傳送對應中已正確輸入。 傳送對應可透過節點 **[!UICONTROL Administration > Campaign management > Target mappings]** 存取。
 
