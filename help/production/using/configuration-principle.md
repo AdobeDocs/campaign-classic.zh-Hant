@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
@@ -28,7 +28,7 @@ Adobe Campaign平台是以例項的概念為基礎，類似於Apache所使用的
 
 * 內部 **密碼** :這是一般管理員密碼。 它對特定應用程式伺服器的所有執行個體都很常見。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >若要使用內部識 **別碼登入** ，您必須事先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
