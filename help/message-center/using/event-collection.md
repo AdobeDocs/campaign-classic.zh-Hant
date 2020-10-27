@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: cfff302a-6ac0-461a-a1e4-8e4b617fe134
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 7%
@@ -25,9 +25,8 @@ ht-degree: 7%
 資訊系統生成的事件可以使用兩種模式進行收集：
 
 * 對SOAP方法的呼叫可讓您推送Adobe Campaign中的事件：pushevent方法可讓您一次傳送一個事件，而PushEvents方法可讓您一次傳送數個事件。 請參閱事 [件說明](../../message-center/using/event-description.md)。
-* 建立工作流允許您通過導入檔案或通過SQL網關(使用同盟資料存取選 **項** )恢復事件。
+* 建立工作流允許您通過導入檔案或通過SQL網關(使用「同盟資料存取」選 **項** )恢復事件。
 
 收集事件後，會依技術工作流程在執行例項的即時佇列和批次佇列之間劃分事件，同時等待連結至訊息範本。
 
 ![](assets/messagecenter_events_queues_001.png)
-
