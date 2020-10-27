@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 3%
@@ -242,7 +242,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 ### Tomcat的預設埠 {#default-port-for-tomcat}
 
-當Tomcat伺服器的8080偵聽埠已忙於配置所需的其他應用程式時，您需要將8080埠替換為免費埠（例如8090）。 若要變更，請編 **輯儲存在** Adobe Campaign安裝資料夾之 **** /tomcat-7/conf目錄中的server.xml檔案。
+當Tomcat伺服器的8080偵聽埠已忙於配置所需的其他應用程式時，您需要將8080埠替換為免費埠（例如8090）。 若要變更，請編 **輯儲存在** Adobe Campaign安裝資料夾之 **** /tomcat-8/conf目錄中的server.xml檔案。
 
 然後修改JSP中繼頁的埠。 若要這麼做，請變 **更儲存在Adobe Campaign安裝目錄** /conf **** 目錄中的serverConf.xml檔案。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
 
@@ -255,7 +255,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 ### 映射Tomcat中的資料夾 {#mapping-a-folder-in-tomcat}
 
-要定義客戶特定設定，可以在 **/tomcat-7/conf** （包含上下文。xml檔案）資料夾中建立 **user_contexts.xml****** 檔案。
+要定義客戶特定設定，可以在 **/tomcat-8/conf** （包含上下文。xml檔案）資料夾中建立 **user_contexts.xml****** 檔案。
 
 此檔案將包含下列類型的資訊：
 
