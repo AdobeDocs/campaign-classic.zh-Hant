@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 1%
@@ -79,7 +79,7 @@ Neobank網站想在其網站上顯示選件，以針對瀏覽該頁面的未識�
        }   
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >轉換函式必須依照先前選取的順序為空間所用的欄位命名，如此選件才能正確顯示。
 
@@ -223,7 +223,7 @@ Neobank公司想要為兩個不同的目標建立行銷選件。 它想要針對
 
    ![](assets/offer_inbound_fallback_example_025.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >轉換函式必須依照先前選取的順序為空間所用的欄位命名，如此選件才能正確顯示。
 
