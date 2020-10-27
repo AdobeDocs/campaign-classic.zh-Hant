@@ -2,7 +2,6 @@
 title: Campaign Classic 已棄用和移除的功能
 description: 本頁列出 Adobe Campaign Classic 已棄用和已移除的功能
 page-status-flag: never-activated
-uuid: null
 contentOwner: simonetn
 products: SG_CAMPAIGN/CLASSIC
 audience: rn
@@ -11,10 +10,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+source-git-commit: 87c2ee675b77be0f24a2028e7dbbf0bd1b91d46e
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 96%
+source-wordcount: '1607'
+ht-degree: 84%
 
 ---
 
@@ -45,9 +44,40 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
  <tbody> 
    <tr>
    <td><strong>功能</strong></td>
-   <td><strong>取代的功能</strong></td> 
+   <td><strong>取代的功能</strong></td>
   </tr>
+  <tr>
+  <td>CRM連接器<br></td>
+   <td><p>從Campaign 20.3版開始，已不建議使用下列CRM連接器：</p>
+   <ul>
+   <li>Soap API —— 內部部署：2007、2015、2016年</li>
+   <li>Soap API —— 線上：2015年、2016年</li>
+   </ul>
+  <p><em>目標移除日期：2021 年</em></p>
+  </td>
+ </tr>
+  <tr>
+  <td>iOS舊二進位<br></td>
+  <td><p>從Campaign 20.3版開始，iOS舊版二進位連接器已過時。<p>
+  <p> 如果您使用此連接器，則需要依此調整實作。
+  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-http2.html">進一步瞭解</a></p>
+  <p><em>目標移除日期：2021 年</em></p>
+  </td>
+ </tr>
    <tr>
+  <td>Demdex網域<br></td>
+  <td><p> 從Campaign 20.3版開始，用於匯入和匯出觀眾至Adobe Experience Cloud的Demdex網域已過時。<p>
+  <p>如果您使用Demdex網域做為匯入／匯出外部帳戶，則需要依此調整實作。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">進一步瞭解</a></p> 
+  <p><em>目標移除日期：2021 年</em></p>
+  </td>
+  <tr>
+  <td>OAuth驗證（OAuth和JWT）<br></td>
+  <td><p> 從Campaign 20.3版開始，原本以oAUTH驗證設定來存取管道的觸發器整合驗證，現在已變更並移至Adobe I/O。 <p>
+  <p>如果您使用「觸發器」整合，則需要依此調整實作。 <a href="../../integrations/using/about-triggers.md">進一步瞭解</a></p> 
+  <p>有關OAuth驗證折舊的詳細資訊，請參閱本 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">頁</a></p> 
+  <p><em>目標刪除日期：2021年4月</em></p>
+  </td>
+  </tr>
   <td>SMS 連接器<br></td>
   <td><p> 從Campaign 20.2版開始，下列SMS連接器已過時。<p>
    <ul>
@@ -83,6 +113,10 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>區域——功能</strong></td>
    <td><strong>取代的功能</strong></td> 
   </tr> 
+   <tr> 
+   <td>Windows NT驗證<br></td>
+   <td><p>在啟動Campaign 20.3版本時，在使用Microsoft SQL Server配置新資料庫時，Windows NT驗證已從可用的驗證方法中刪除。 <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">進一步瞭解</a></p></td>
+  </tr>
    <tr> 
    <td>檔案式電子郵件封存<br></td>
    <td><p>從 Campaign 20.2 版開始，不再提供檔案式電子郵件封存功能。電子郵件封存現在透過專屬的 BCC 電子郵件地址提供。<a href="../../installation/using/email-archiving.md">進一步瞭解</a></p></td>
@@ -129,20 +163,7 @@ Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](../../rn/
 
 ### Adobe Campaign 20.2版本 {#compat-20-2-release}
 
-從20.2版開始，Campaign Classic不再支援下列系統。 相容性將於20.3版本中終止- 2020年10月。
-
-* 客戶端主控台：Windows 7
-* 舊版SMS連接器——請參閱「已過時 [的功能」](#deprecated-features)
-* DB2 UDB 10.5 for Federated Data Access(FDA)
-
-### Adobe Campaign 19.2 版本  {#compat-19-2-release}
-
-從 19.2 版開始，Campaign Classic 將不再使用下列作業系統。相容性將於 2020 年末結束。
-
-* Web 伺服器：Apache 2.2。
-* 作業系統：CentOS 6。
-
-請參閱「[相容性矩陣](../../rn/using/compatibility-matrix.md)」，以升級到較新版本，或轉移至新系統。
+從20.2版開始，舊版SMS連接器已過時。 請參閱「 [已過時的功能」部分](#deprecated-features)
 
 ## 相容性終止 {#end-of-compatibility}
 
@@ -155,7 +176,7 @@ Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](../../rn/
 Adobe Campaign Classic 用戶端主控台無法再在下列系統執行，因為編輯者已不使用這些系統。客戶若其中一個版本執行 Campaign 用戶端主控台，必須在目標移除日期前升級至最新版本。請參閱「[相容性矩陣](../../rn/using/compatibility-matrix.md)」。
 
 * Windows Server 2003、2008、2008 R2
-* Windows XP、Vista
+* Windows 7、XP、Vista
 
 >[!NOTE]
 >從 Campaign 20.1 版開始，Campaign Classic 用戶端主控台 32位元已不再與 Campaign 最新版本相容。您需要使用 64 位版用戶端主控台。
@@ -165,6 +186,7 @@ Adobe Campaign Classic 用戶端主控台無法再在下列系統執行，因為
 
 從 19.1 版開始，Adobe Campaign 不再與下列作業系統相容。
 
+* CentOS 6了 [解更多](https://wiki.centos.org/Download)
 * Debian 7。[進一步瞭解](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x。 [進一步瞭解](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008。[進一步瞭解](https://support.microsoft.com/en-us/lifecycle/search/1163)
@@ -174,6 +196,7 @@ Adobe Campaign Classic 用戶端主控台無法再在下列系統執行，因為
 
 從 19.1 春季版開始，Adobe Campaign 不再與下列 Web 伺服器相容。
 
+* Apache 2.2. [進一步瞭解](https://httpd.apache.org/)
 * Microsoft IIS 7。[進一步瞭解](https://support.microsoft.com/en-us/lifecycle/search/810)
 
 ### 工具 {#tools-eol}
@@ -191,7 +214,11 @@ Adobe 不支援下列資料庫引擎，因為其編輯者已不建議使用這�
 
 **同盟資料存取 (FDA)**
 
-從 19.1 春季版開始，Adobe Campaign 不再與下列 FDA 伺服器相容。
+從20.2版開始，Adobe Campaign不再與下列FDA伺服器相容：
+
+* DB2 UDB 10.5
+
+從19.1春季版開始，Adobe Campaign不再與下列FDA伺服器相容：
 
 * PostgreSQL 9.3。 [進一步瞭解](https://www.postgresql.org/support/versioning)
 * MySQL 5.5。 [進一步瞭解](http://www.fromdual.com/support-for-mysql-from-oracle)
