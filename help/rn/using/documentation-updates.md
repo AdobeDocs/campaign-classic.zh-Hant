@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 85%
+source-wordcount: '3882'
+ht-degree: 83%
 
 ---
 
@@ -25,6 +25,31 @@ ht-degree: 85%
 您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
 
 ## 2020 年 10 月 {#oct-2020}
+
+**20.3版本中包含的新功能**
+
+iOS的推播通知改進——閱 [讀更多](../../delivery/using/configuring-the-mobile-application.md)
+
+Android的推播通知改良功能——閱 [讀更多](../../delivery/using/configuring-the-mobile-application-android.md)
+
+**此版本隨附的其他文件更新**
+
+更新相容性矩陣。[顯示全文](../../rn/using/compatibility-matrix.md)
+
+更新「已棄用和已移除的功能」頁面。[顯示全文](../../rn/using/deprecated-features.md)
+
+Gold Standard版本的發行說明和相容性表現在可在專屬章節中取得。
+[顯示全文](../../rn/using/gold-standard.md#gs-10)。
+
+**其他更新**
+
+說明檔案頁面已更新，以反映Tomcat 8更新。
+
+詳細資訊已新增至「取得Adobe Campaign版本」區段的「關於」方塊說明中。 [顯示全文](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+
+執行建置升級的准則已新增至「更新Adobe Campaign Classic」區段。 閱讀更多 [閱讀更多](../../production/using/build-upgrade.md)
+
+有關Campaign組建升級的常見問答集已新增至Campaign常見問題。 閱讀更多 [閱讀更多](../../platform/using/faq-build-upgrade.md)
 
 現在，專用區段中會說明促銷活動內部部署、代管和混合代管模型。 [顯示全文](../../installation/using/hosting-models.md)
 
