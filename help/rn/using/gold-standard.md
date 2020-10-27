@@ -1,6 +1,6 @@
 ---
 title: Gold Standard 發行
-description: Gold Standard 發行
+description: Campaign Classic金級標準發行說明
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '820'
 ht-degree: 15%
 
 ---
@@ -20,15 +20,13 @@ ht-degree: 15%
 
 # Gold Standard 發行{#gold-standard}
 
-身為Gold Standard使用者，您可以透過最新穩定版本自動受益於Gold Standard升級，而不需採取任何動作。
+Gold Standard是Campaign Classic長期支援版本。 身為Gold Standard使用者，您可以透過最新穩定版本自動受益於Gold Standard升級，而不需採取任何動作。 內部部署和Hybrid客戶也可從Gold Standard版本中獲益。
 
-內部部署和Hybrid客戶也可從Gold Standard版本中獲益。
-
-這是我們的長期支援版本。 如果您從舊版本移轉，建議您先升級至此版本。
+如果您從舊版本移轉，建議您先升級至此版本。
 
 本頁列出Gold Standard版本。
 
-有關Gold Standard升級的詳細資訊，請參閱本 [文](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
+如需促銷活動金級標準方案的詳細資訊，請 [參閱本文章](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 10版{#gs-10}
 
@@ -40,7 +38,7 @@ _2020年7月7日_
 
 >[!CAUTION]
 >
->我們建議您使用此版本中提供的客戶端控制台升級。 Refer to this [page](../../installation/using/installing-the-client-console.md)
+>我們建議您使用此版本中提供的客戶端控制台升級。 Refer [to this page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 9版{#gs-9}
 
@@ -50,7 +48,7 @@ _2020年6月22日_
 
 * iOS HTTP2連接器已改善（協力廠商更新和錯誤管理）。 (NEO-25904、NEO-25903、NEO-25799)
 
-下列修正與追蹤連結安全性機制相關(請參閱「安全性與隱 [私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
+下列修正與追蹤連結安全性機制相關(詳細資訊請參閱「安全性與隱 [私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)」):
 
 * 修正追蹤「通知點按」無法運作的問題（iOS和Android推播通知）。 (NEO-25965)
 * 修正使用某些舊版Outlook時，無法開啟／按一下追蹤URL的問題。  (NEO-25688)
@@ -68,7 +66,7 @@ _2020年4月29日_
 
 >[!CAUTION]
 >
->如果您在使用追蹤連結的推播通知或使用錨點標籤的傳送時遇到問題，建議您停用追蹤連結的新簽名機制。 本頁詳細介紹了該過 [程](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>如果您在使用追蹤連結的推播通知或使用錨點標籤的傳送時遇到問題，建議您停用追蹤連結的新簽名機制。 本頁詳細介紹 [了該過程](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * 修正影像無法顯示在「行」傳送上的問題。 (NEO-23207)
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
