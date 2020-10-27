@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: web-applications
 discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2d6266957a1e290333c505e40f95df46797e19c4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 21%
@@ -30,7 +30,7 @@ Web應用程式類型在建立過程中被選擇。
 
 >[!NOTE]
 >
->AlWays可保護可能包含個人資訊的頁面。 請參閱「安 [全與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
+>請務必保護可能包含個人資訊的頁面。 請參閱「安 [全與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此範本會決定Web應用程式的類型。 您可以建立：
 
