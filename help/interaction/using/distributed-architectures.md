@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 選件同步是透過封包進行。 在執行例項上，所有目錄物件都以外部帳戶名稱為前置詞。 這表示同一執行例項可支援數個控制例項（例如開發與生產例項）。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我們建議您使用簡短而明確的內部名稱。
 
@@ -112,7 +112,7 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
 
 以下是控制實例上可用的維護選項清單：
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >這些選項只能用於特定的維護案例。
 
@@ -128,7 +128,7 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
 
 如果您的例項先前沒有Interaction套件，則不需要移轉。 預設情況下，在安裝軟體包後，命題表將以64位元顯示。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >根據實例中現有主張的數量，此操作可能需要一段時間。
 
