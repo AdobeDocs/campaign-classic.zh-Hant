@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
+source-git-commit: 285cf8c6521696a0a94f6ffd8fc1eb148977836d
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 50%
 
 使用用戶端主控台連線視窗，您可以選取或設定現有資料庫，並使用使用者名稱和密碼進行連線：
 
-![](assets/s_ncs_user_login.png)
+![](assets/acc-logon.png)
 
 ## 連線 Adobe Campaign {#connecting-to-adobe-campaign}
 
@@ -46,7 +46,7 @@ ht-degree: 50%
 
    第一次存取資料庫時使用的密碼由管理員提供。Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Details on operators and connections are available in [Access management](../../platform/using/access-management.md).
 
-1. Click **[!UICONTROL Log in]** to confirm.
+1. Click **[!UICONTROL LOG IN]** to confirm.
 
 您現在可以存取 [Adobe Campaign 工作區](../../platform/using/adobe-campaign-workspace.md)。
 
@@ -57,8 +57,6 @@ ht-degree: 50%
 ![](assets/s_ncs_user_connections_management.png)
 
 In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
-
-![](assets/s_ncs_user_add_connexion.png)
 
 然後您必須定義連線設定。操作步驟：
 
@@ -97,7 +95,7 @@ The **[!UICONTROL Help > About...]** menu lets you access the following informat
 
 ![](assets/about-acc.png)
 
-每當您聯絡Adobe客戶服務團隊時，您必須提供Campaign用戶端主控台和應用程式伺服器的版本號碼和組建編號。
+每當您聯絡Adobe客戶服務團隊時，您都需要提供Adobe Campaign用戶端主控台和應用程式伺服器的版本號碼和組建版本號碼。
 
 如果您是在 [Campaign Gold Standard版本上執行](../../rn/using/gold-standard.md)，您也需要共用方塊中顯示的SHA/1字 **[!UICONTROL About]** 元。 例如，對於Gold **Standard 10版本**，組建編號會顯 **示組建9032@efd8a94**，如下所示：
 
@@ -107,6 +105,6 @@ The **[!UICONTROL Help > About...]** menu lets you access the following informat
 
 **相關主題**：
 
-* [促銷活動支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
-* [軟體散發](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
-* [Experience Cloud支援與專家諮詢](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Campaign說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [Adobe軟體散發](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Adobe Experience Cloud支援與專家諮詢](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
