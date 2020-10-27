@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 7a92bc51-24cf-4ce6-bd50-a315f8f6e34e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 若要建立測試環境（沙盒模式），請套用下列步驟：
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標映射嚮導。 如需詳細資訊，請參閱「 [建立選件環境」](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
