@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1132'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 在開始升級程式之前，請確定並確認要升級至哪個Adobe Campaign版本，並參閱版 [本說明](../../rn/using/latest-release.md) 。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我們強烈建議在更新之前對每個實例進行資料庫備份。 有關詳細資訊，請參 [閱Backup](../../production/using/backup.md)。\
 >若要執行升級，請確定您擁有存取例項和記錄檔的能力和權限。
@@ -31,7 +31,7 @@ ht-degree: 1%
 >
 >另請參閱安裝 [指南](../../installation/using/general-architecture.md) ，以及 [組建升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 。
 
-## 在Windows中 {#in-windows}
+## Windows {#in-windows}
 
 若要在傳送新組建版本時以新版本更新Adobe Campaign,Windows應套用下列程式：
 
@@ -53,7 +53,7 @@ ht-degree: 1%
       **iisreset /stop**
 
    * Adobe Campaign服務： **net stop nlserver6**
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >您還需要確保重定向伺服器(webmdl)已停止，以便IIS使用的 **nlsrvmod.dll** 檔案可以替換為新版本。
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 * Adobe Campaign服務： **net start nlserver6**
 
-## 在Linux中 {#in-linux}
+## Linux {#in-linux}
 
 若要在傳送新建版本時更新Adobe Campaign,Linux的程式如下：
 
@@ -171,7 +171,7 @@ ht-degree: 1%
 /etc/init.d/apache stop
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* 您的指令碼可能會被 **稱為httpd** ，而非 **apache**。
 >* 您必須執行此命令，直到您獲得以下回覆：
@@ -223,7 +223,7 @@ ht-degree: 1%
 * **[!UICONTROL Accept the new version]** :如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
 * **[!UICONTROL Keep the current version]** :表示更新遭拒。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >如果您選取此解析度模式，新版本中的修正可能不會讓您受益。
 
@@ -248,7 +248,7 @@ ht-degree: 1%
 
 ## 警告客戶端控制台可用更新 {#warn-the-client-consoles-of-the-available-update}
 
-### 在Windows中 {#in-windows-1}
+### Windows {#in-windows-1}
 
 在安裝(**nlserver web**)Adobe Campaign應用程式伺服器的機器上，下載並複製檔案
 
@@ -262,7 +262,7 @@ ht-degree: 1%
 >
 >請確定IIS_XPG用戶具有該安裝檔案的適當讀權限，並參閱安裝指 [南](../../installation/using/general-architecture.md) ，以瞭解詳細資訊。
 
-### 在Linux中 {#in-linux-1}
+### Linux {#in-linux-1}
 
 在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的機器上，擷取下列套件：
 
