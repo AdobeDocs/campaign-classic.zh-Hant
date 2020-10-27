@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Adobe Campaign模組有三種類型：
 
 nlserver工具的一般 **語法** 如下：
 
-**nlserver`<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
 有關可用模組的清單，請使用 **nlserver** 命令。
 
@@ -79,11 +79,11 @@ nlserver工具的一般 **語法** 如下：
 | web | 應用程式伺服器（HTTP和SOAP） |
 | wfserver | 工作流程伺服器 |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >最後一個模組：與應用伺服器連結的跟蹤和中繼模組，為了效能考慮，它通過本地機制通過動態庫整合到Apache或IIS Web伺服器中。 沒有Adobe Campaign命令可讓您啟動或管理此模組。 因此，您必須使用Web伺服器本身的命令。
 
-使用以下命令顯示模組用法及其參數的語法： **nlserver`[module]`-?**
+使用以下命令顯示模組用法及其參數的語法： **nlserver `[module]` -?**
 
 範例:
 
