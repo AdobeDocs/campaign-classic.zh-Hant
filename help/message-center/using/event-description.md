@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 1%
@@ -164,7 +164,7 @@ PushEvents **方法** ，由包含事件 **`<urn:domeventcollection>`** 的參�
 
 當Adobe Campaign收到事件時，會產生唯一的傳回ID。 這是事件封存版本的ID。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >當收到SOAP呼叫時，Adobe Campaign會驗證電子郵件地址格式。 如果電子郵件地址格式錯誤，則會傳回錯誤。
 
