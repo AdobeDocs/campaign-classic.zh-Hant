@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Adobe建議使用JavaScript整合方法。
    <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >標 `<script>` 簽不得自行關閉。
 
@@ -214,7 +214,7 @@ Adobe建議使用JavaScript整合方法。
    </srcSchema>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >每個元素必須定義兩次。 CDATA(&quot;_jst&quot;)類型元素可以包含個性化欄位。
    >
@@ -264,7 +264,7 @@ Adobe建議使用JavaScript整合方法。
 
    ![](assets/interaction_xmlmode_form_001.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >()表單的字 `<input>`段必須指向在建立的模式中定義的CDATA類型元素。
 
