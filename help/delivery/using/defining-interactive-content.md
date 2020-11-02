@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # 定義互動式內容{#defining-interactive-content}
 
-Adobe Campaign可讓您嘗試新的互動式 [AMP for Email](https://amp.dev/about/email/) ，讓您在特定條件下傳送動態電子郵件。
+Adobe Campaign可讓您使用新的互動式 [AMP for Email](https://amp.dev/about/email/) （電子郵件格式），可在特定條件下傳送動態電子郵件。
 
-目前，AMP for Email提供下列功能：
+有了AMP for Email，您可以：
 * 測試將AMP電子郵件傳送至正確設定的特定位址。
 * 在向對應的提供者註冊後，將AMP電子郵件傳送至Gmail、Outlook或Mail.ru地址。
 
