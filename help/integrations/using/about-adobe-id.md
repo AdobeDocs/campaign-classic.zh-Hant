@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 31%
@@ -27,7 +27,7 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此�
 * 更安全的密碼管理原則。
 * 使用聯合 ID 帳戶 (外部 ID 提供者)。
 
-Adobe IMS(Identity Management System)可協助管理員建立和管理使用者對應用程式和服務的存取。 如需不同Adobe ID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
+Adobe Identity Management System(IMS)可協助管理員建立和管理使用者對應用程式和服務的存取。 如需不同Adobe ID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
