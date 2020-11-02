@@ -1,8 +1,6 @@
 ---
-title: 安裝 Campaign Classic 標準套件
-seo-title: 安裝 Campaign Classic 標準套件
-description: 安裝 Campaign Classic 標準套件
-seo-description: null
+title: 安裝Campaign Classic內建套件
+description: 瞭解如何安裝Campaign內建套件
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 6%
+source-wordcount: '1154'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +50,7 @@ ht-degree: 6%
 
 ### 現成包清單 {#list-of-standard-packages}
 
-下表列出所有標準套件及其說明、可安裝的例項類型（行銷、中端等） 及其他資訊。
+下表列出所有Campaign內建套件。
 
 <table> 
  <thead> 
@@ -80,17 +78,17 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 選件引擎（互動）<br /> </td> 
-   <td> 在與特定連絡人（客戶或目標）互動期間，透過將他們變成單一或數個適合的選件，即時回應。  選填。<a href="../../interaction/using/interaction-and-offer-management.md">進一步瞭解</a> <br /> </td> 
+   <td> 在與特定連絡人（客戶或目標）互動期間，透過將他們變成單一或數個適合的選件，即時回應。  選填。<a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用執行例項控制選件引擎。 選填。<br /> </td> 
-   <td> </td> 
+   <td> 要安裝在選件引擎（互動）的控制例項上的套件。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">進一步瞭解</a> </td> 
    <td> 行銷<br /> </td>  
   </tr> 
   <tr> 
    <td> 執行例項的選件引擎。 選填。<br /> </td> 
-   <td> </td> 
+   <td> 套件以安裝在選件引擎（互動）的執行例項上。 <a href="../../interaction/using/distributed-architectures.md">進一步瞭解</a> </td> 
    <td> Mid，執行 <br /> </td>  
   </tr> 
   <!--tr> 
@@ -200,13 +198,13 @@ ht-degree: 6%
    <td> 行銷</td> 
   </tr> 
   <tr> 
-   <td> Adobe Marketing Cloud共用觀眾整合<br /> </td> 
+   <td> Adobe Experience Cloud共用觀眾整合<br /> </td> 
    <td> 可讓您使用Adobe Experience Cloud解決方案和核心服務來交換和分享受眾／細分。 需要IMS <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> 與Adobe Marketing Cloud整合<br /> </td> 
-   <td> 可讓您從不同的Adobe Marketing Cloud解決方案匯入和匯出觀眾／區段至Adobe Campaign。 選填。<a href="../../integrations/using/configuring-ims.md#installing-the-package">進一步瞭解</a> </td> 
+   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> 可讓您從不同的Adobe Experience Cloud解決方案匯入和匯出觀眾／區段至Adobe Campaign。 選填。<a href="../../integrations/using/configuring-ims.md#installing-the-package">進一步瞭解</a> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 
@@ -223,6 +221,11 @@ ht-degree: 6%
    <td> 中間來源平台<br /> </td> 
    <td> 此配置是代管(ASP)配置和內部化之間的最佳中間解決方案。 對外執行元件是在Adobe Campaign所代管的「中部採購」伺服器上執行。 選填。<a href="../../installation/using/mid-sourcing-server.md">進一步瞭解</a> <br /> </td> 
    <td> 中部採購 </td> 
+  </tr> 
+  <tr> 
+   <td> AMP支援<br /> </td> 
+   <td> 可讓您針對電子郵件格式使用全新的互動式AMP，並傳送動態電子郵件。 選填。<a href="../../delivery/using/defining-interactive-content.md">進一步瞭解</a> <br /> </td> 
+   <td> 全部 </td> 
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
