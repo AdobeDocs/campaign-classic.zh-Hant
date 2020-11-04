@@ -10,10 +10,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 87c2ee675b77be0f24a2028e7dbbf0bd1b91d46e
+source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 84%
+source-wordcount: '1621'
+ht-degree: 83%
 
 ---
 
@@ -52,6 +52,8 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <ul>
    <li>Soap API —— 內部部署：2007、2015、2016年</li>
    <li>Soap API —— 線上：2015年、2016年</li>
+   <li>Web API - Microsoft Dynamics CRM內部部署：2016, 2016更新1</li>
+   <li>Web API - Microsoft Dynamics CRM線上：2016, 2016更新1</li>
    </ul>
   <p><em>目標移除日期：2021 年</em></p>
   </td>
