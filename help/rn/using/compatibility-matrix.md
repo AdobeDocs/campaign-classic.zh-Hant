@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 9cff35424b389d0cc6adb8ce0ec81d3258ffb6ba
+source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '543'
 ht-degree: 13%
 
 ---
@@ -195,9 +195,7 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API —— 內部部署：2007、2015、2016年</p>
-<p>Soap API —— 線上：2015年、2016年</p>
-<p>Web API —— 內部部署與線上：365、2016、2016更新1</p>
+<p>網頁API:Dynamics 365內部部署與線上</p>
 </td>
 </tr>
 </tbody>
