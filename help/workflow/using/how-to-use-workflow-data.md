@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -108,7 +108,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過活動定義�
 
 1. 使用GPG公用程式產生GPG金鑰對（公用／私用），然後將公用金鑰安裝至「控制面板」。 「控制面板」文檔中提供 [了詳細步驟](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)。
 
-1. 在Campaign Classic中，建立工作流程以匯出資料，並使用透過控制面板安裝的私密金鑰匯出。 為此，我們將建立以下工作流程：
+1. 在Campaign Classic中，建立工作流程以匯出資料，並使用透過控制面板安裝的私密金鑰加密資料。 為此，我們將建立以下工作流程：
 
    ![](assets/gpg-workflow-encrypt.png)
 
@@ -147,4 +147,3 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過活動定義�
 
 1. 您現在可以執行工作流程。 執行後，查詢的資料目標將匯出至SFTP伺服器，並匯出至加密的。gpg檔案。
 
-   ![](assets/gpg-sftp-encrypt.png)
