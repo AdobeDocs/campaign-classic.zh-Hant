@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
 translation-type: tm+mt
-source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -272,8 +272,6 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在資料載入（檔�
    ![](assets/gpg_generate.png)
 
 1. 在外部系統中，使用從「控制面板」下載的公開金鑰來加密要匯入Campaign Classic的資料。
-
-   ![](assets/gpg_external.png)
 
 1. 在Campaign Classic中，建立工作流程以匯入加密資料，並使用透過控制面板安裝的私密金鑰加以解密。 為此，我們將建立以下工作流程：
 
