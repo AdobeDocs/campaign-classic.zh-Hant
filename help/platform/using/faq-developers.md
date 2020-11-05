@@ -10,9 +10,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
 ht-degree: 100%
 
@@ -39,21 +39,21 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 * 定義 Campaign 應用程式中不同資料物件之間的連結。
 * 定義及描述每個物件中包含的個別欄位。
 
-閱讀[資料表及綱要使用入門](../../configuration/using/about-schema-edition.md)了解如何使用資料綱要、擴充和自訂 Campaign，以滿足您的需求。
+閱讀[資料表及綱要使用入門](../../configuration/using/about-schema-edition.md)瞭解如何使用資料綱要、擴充和自訂 Campaign，以滿足您的需求。
 
 ## 如何使用自訂的收件者表格？{#how-to-use-a-custom-recipient-table-}
 
-您可以在 Campaign 中建立和實作非標準式收件者表格，以傳送訊息。
+您可以在 Campaign 中建立和實施非標準式收件者表格，以傳送訊息。
 
-[按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
+[按一下這裡以取得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 
 ## 在 Campaign 定義查詢的最佳實務是什麼？{#what-are-the-best-practices-to-define-queries-in-campaign-}
 
-Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料和建立細分。
+Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料和建立區段。
 
-您可以在軟體的多個層級上找到 Adobe Campaign 查詢工具：建立目標母體、細分客戶、擷取和篩選追蹤記錄、建立篩選器等。
+您可以在軟體的多個層級上找到 Adobe Campaign 查詢工具：建立目標母體、劃分客戶、擷取和篩選追蹤記錄、建立篩選器等。
 
-您可以使用一般查詢編輯器查詢 Campaign 資料庫。可透過 **Tools>Generic query editor...** 選單存取一般查詢編輯器。透過它，您可擷取儲存在資料庫中的資訊，將其整理、分組、排序等操作。例如，使用者可以在新聞稿的連結上，還原在給定時間內點擊連結超過 [n] 次以上的收件者。透過這個工具，您可根據您的需求收集、排序和顯示結果。此工具結合了 Adobe Campaign 的所有可行的查詢方式。例如，您可以建立和儲存限制篩選器。這表示在目標工作流程等的查詢方塊中，可以使用在一般查詢編輯器中建立的使用者篩選器。
+您可以使用一般查詢編輯器查詢 Campaign 資料庫。可透過 **Tools > Generic query editor...** 功能表存取一般查詢編輯器。透過它，您可擷取儲存在資料庫中的資訊，將其整理、分組、排序等操作。例如，使用者可以在新聞稿的連結上，還原在給定時間內按一下連結超過 [n] 次以上的收件者。透過這個工具，您可根據您的需求收集、排序和顯示結果。此工具結合了 Adobe Campaign 的所有可行的查詢方式。例如，您可以建立和儲存限制篩選器。這表示在目標工作流程等的查詢方塊中，可以使用在一般查詢編輯器中建立的使用者篩選器。
 
 透過使用所選資料表的欄位或公式可以建立查詢。[本頁面](../../platform/using/about-queries-in-campaign.md)對在 Campaign 資料庫中建立查詢的主要原則進行了闡述。
 
@@ -61,11 +61,11 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 ## 如何匯入資料包？{#how-can-i-import-a-data-package-}
 
-使用 Adobe Campaign，您可以透過資料包系統匯出或匯入平台設定和資料。資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
+使用 Adobe Campaign，您可以透過資料包系統匯出或匯入平台配置和資料。資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
 
-資料包用於匯出資料設定，並將它整合到另一個 Adobe Campaign 系統中。
+資料包用於匯出資料配置，並將它整合到另一個 Adobe Campaign 系統中。
 
-[按一下這裡](../../platform/using/working-with-data-packages.md)了解如何使用資料包匯入和匯出 Campaign 設定。
+[按一下這裡](../../platform/using/working-with-data-packages.md)瞭解如何使用資料包匯入和匯出 Campaign 配置。
 
 ## 我可以在哪裡找到 Campaign Classic API 清單？{#where-can-i-find-the-list-of-campaign-classic-apis}
 
