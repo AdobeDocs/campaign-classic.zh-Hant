@@ -9,9 +9,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 100%
 
@@ -90,7 +90,7 @@ _2020 年 10 月 27 日_
 不建議在第 20.3 版本中使用下列功能：
 
 * 已棄用使用於匯入和匯出受眾至 Adobe Experience Cloud 的 Demdex 網域。如果您使用 Demdex 網域作為匯入/匯出的外部帳戶，則需要依此調整實施。[進一步瞭解](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-* 已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至 Adobe I/O。[瞭解更多](../../integrations/using/about-triggers.md)
+* 已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至 Adobe I/O。[瞭解更多](../../integrations/using/configuring-adobe-io.md)
 
 瞭解更多[與已棄用和已移除的功能頁面相關的資訊](../../rn/using/deprecated-features.md)。
 
