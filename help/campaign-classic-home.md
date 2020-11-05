@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 84%
+source-wordcount: '283'
+ht-degree: 78%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 84%
 
 ## 新增功能
 
-* **[轉到基於HTTP/2的APNs提供者API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/>&#x200B;瞭解如何從舊式二進位協定遷移到基於HTTP/2的APNs提供者API。
+* **[更新您的Adobe Experience Cloud觸發器整合](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/>&#x200B;舊版oAuth驗證服務已到期。 瞭解如何移轉至Adobe I/O。
+
+* **[轉到基於HTTP/2的APNs提供者API](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/>&#x200B;瞭解如何從舊式二進位協定遷移到基於HTTP/2的APNs提供者API。
 
 * **[將表情符號新增至訊息](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>您現在可以在訊息和主旨行中插入表情符號
 
 * **[取得支援](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)**<br/>
 存取常見問題集、最佳實務、說明資源，以及請求協助
-
-* **[隱私權規範](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy.html)**<br/>&#x200B;瞭解 Adobe Campaign 如何協助您符合隱私權規範
 
 * **[追蹤功能](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html)**<br/>
 瞭解 Campaign 中的追蹤功能和流程
@@ -87,4 +87,4 @@ ht-degree: 84%
 | [開始使用 Campaign](platform/using/about-adobe-campaign-classic.md) | [實施指南](https://helpx.adobe.com/tw/campaign/kb/acc-implementation.html) |
 | [Gold Standard 升級](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html) | [追蹤指南](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html) |
 | [棄用的功能](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html) | [安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html) |
-| [Campaign 控制面板](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html) | [監控准則](production/using/monitoring-guidelines.md) |
+| [Campaign 控制面板](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html) | [監視准則](production/using/monitoring-guidelines.md) |
