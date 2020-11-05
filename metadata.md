@@ -10,13 +10,13 @@ tutorials-url: https://docs.adobe.com/content/help/zh-Hant/campaign-classic-lear
 git-repo: https://git.corp.adobe.com/AdobeDocs/campaign-classic.zh-Hant
 solution: Campaign, Campaign Classic
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 83717ec594f4d63eb0d3486b6ba8ac84087e7c3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '35'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Campaign Classic 元數據
+# Adobe Campaign Classic 中繼資料
