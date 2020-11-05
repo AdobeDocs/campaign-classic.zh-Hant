@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '907'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 先決條件配置包括：
 
-* Adobe IO專案驗證
+* Adobe I/O專案驗證
 * IMSOrgId是Experience Cloud客戶與Adobe Analytics的識別碼。
 * 布建團隊必須擁有客戶IMS組織的系統管理員權限
 * 在Adobe Analytics中設定觸發器。
@@ -48,13 +48,13 @@ ht-degree: 1%
 
 驗證是必要的，因為管道是由Adobe Experience Cloud代管。
 它使用一對公鑰和私鑰。 此程式與用戶／密碼功能相同，但更安全。
-透過Adobe IO專案支援Marketing Cloud的驗證。
+透過Adobe I/O專案的Marketing Cloud支援驗證。
 
-## 步驟1:建立／更新Adobe IO專案 {#creating-adobe-io-project}
+## 步驟1:建立／更新Adobe I/O專案 {#creating-adobe-io-project}
 
-對於代管客戶，您可以建立客戶服務票證，以便透過Adobe IO技術帳戶Token為觸發器整合啟用您的組織。
+對於代管客戶，您可以建立客戶服務票證，以便透過Adobe I/O技術帳戶Token為觸發器整合啟用您的組織。
 
-若為On Premise客戶，請參閱「 [設定Adobe IO for Adobe Experience Cloud觸發器](../../integrations/using/configuring-adobe-io.md) 」頁面。 請注意，在將API新增 **[!UICONTROL Adobe Analytics]** 至Adobe IO憑證時，您必須選取。
+若為On Premise客戶，請參 [閱「設定Adobe Experience Cloud觸發器的Adobe I/O](../../integrations/using/configuring-adobe-io.md) 」頁面。 請注意，在將API新 **[!UICONTROL Adobe Analytics]** 增至Adobe I/O憑證時，您必須選取。
 
 ## 步驟2:配置NmsPipeline_Config管線選項 {#configuring-nmspipeline}
 
