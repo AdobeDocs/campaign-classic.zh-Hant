@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 6ac6145a38538f07b8080e503cd7750b19ed9621
+source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 78%
@@ -17,7 +17,7 @@ ht-degree: 78%
 
 ## 新增功能
 
-* **[更新您的Adobe Experience Cloud觸發器整合](integrations/using/configuring-adobe-io.md)))**<br/>&#x200B;舊版Outh驗證服務已到期。 瞭解如何移轉至Adobe I/O。
+* **[更新您的Adobe Experience Cloud觸發器整合](integrations/using/configuring-adobe-io.md)**<br/>舊版oAuth驗證服務已到期。 瞭解如何移轉至Adobe I/O。
 
 * **[轉到基於HTTP/2的APNs提供者API](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/>&#x200B;瞭解如何從舊式二進位協定遷移到基於HTTP/2的APNs提供者API。
 
