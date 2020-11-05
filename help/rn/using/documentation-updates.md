@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '3905'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 82%
 
 ## 2020 年 10 月 {#oct-2020}
 
-**20.3版本中包含的新功能**
+**第 20.3 發行版本包含的新功能**
 
-iOS的推播通知改進——閱 [讀更多](../../delivery/using/configuring-the-mobile-application.md)
+iOS 的推播通知改善 - [閱讀更多資訊](../../delivery/using/configuring-the-mobile-application.md)
 
-Android的推播通知改良功能——閱 [讀更多](../../delivery/using/configuring-the-mobile-application-android.md)
+Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/configuring-the-mobile-application-android.md)
 
 **此版本隨附的其他文件更新**
 
@@ -38,95 +38,95 @@ Android的推播通知改良功能——閱 [讀更多](../../delivery/using/con
 
 更新「已棄用和已移除的功能」頁面。[顯示全文](../../rn/using/deprecated-features.md)
 
-Gold Standard版本的發行說明和相容性表現在可在專屬章節中取得。
+專屬區段現在提供了 Gold Standard 發行版本的發行說明和相容性矩陣。
 [顯示全文](../../rn/using/gold-standard.md#gs-10)。
 
-觸發器整合原本以oAUTH驗證設定為基礎，以存取管道，現在已變更並移至Adobe I/O。 [閱讀更多資訊](../../integrations/using/about-triggers.md)
+Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
 
 **其他更新**
 
-說明檔案頁面已更新，以反映Tomcat 8更新。
+已更新文件頁面，以反映 Tomcat 8 更新。
 
-詳細資訊已新增至「取得Adobe Campaign版本」區段的「關於」方塊說明中。 [顯示全文](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+已將詳細資訊新增至「取得 Adobe Campaign 版本」區段的「關於」方塊說明中。[顯示全文](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-執行建置升級的准則已新增至「更新Adobe Campaign Classic」區段。 閱讀更多 [閱讀更多](../../production/using/build-upgrade.md)
+已將執行建置升級的准則新增至「更新 Adobe Campaign Classic」區段。閱讀更多資訊[閱讀更多資訊](../../production/using/build-upgrade.md)
 
-有關Campaign組建升級的常見問答集已新增至Campaign常見問題。 閱讀更多 [閱讀更多](../../platform/using/faq-build-upgrade.md)
+已將有關 Campaign 版本編號升級的常見問答集新增至 Campaign 常見問題。閱讀更多資訊[閱讀更多資訊](../../platform/using/faq-build-upgrade.md)
 
-現在，專用區段中會說明促銷活動內部部署、代管和混合代管模型。 [顯示全文](../../installation/using/hosting-models.md)
+已在專用區段中，說明 Campaign 內部部署、託管和混合託管模型。[顯示全文](../../installation/using/hosting-models.md)
 
-已在安裝指南中更新並移動每個代管模型的促銷活動功能矩陣。 [顯示全文](../../installation/using/capability-matrix.md)
+已在安裝指南中，更新並移動 Campaign 功能矩陣的每個託管模型。[顯示全文](../../installation/using/capability-matrix.md)
 
-「促銷活動報表」進階功能區段已改進，可詳細說明如何在自訂報表中使用URL參數和變數。 [顯示全文](../../reporting/using/advanced-functionalities.md)
+已改善「Campaign 報告」進階功能區段，以詳細說明如何在自訂報告中使用 URL 參數和變數。[顯示全文](../../reporting/using/advanced-functionalities.md)
 
-報表屬性頁面已重新整理並加以擴充，以方便設定。 [顯示全文](../../reporting/using/properties-of-the-report.md)
+已重新整理報告屬性頁面並加以擴充，以方便配置。[顯示全文](../../reporting/using/properties-of-the-report.md)
 
-我們建立了一項新技術，詳細介紹了如何從舊式二進位協定遷移到基於HTTP/2的APNs提供程式API。 [顯示全文](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+已建立新的技術，其詳細說明了如何從舊的二進位通訊協定移轉至以 HTTP/2 為基礎的 APN 提供程式 API。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
 ## 2020 年 9 月{#september-2020}
 
-已新增附註，以指定「作用中」描述檔計數僅適用於「行銷」例項。 [顯示全文](../../platform/using/about-profiles.md#active-profiles)
+已新增附註，以指明「主要」用戶檔案計數僅適用於「行銷」執行個體。[顯示全文](../../platform/using/about-profiles.md#active-profiles)
 
-已新增關於架構版本的新範例，以將欄位連結至現有的參考表。 [顯示全文](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+已新增有關方案版本的新範例，以將欄位連結至現有的參考表。[顯示全文](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
-已新增附註，說明如何在傳送中搭配種子地址使用其他資料。 [顯示全文](../../delivery/using/creating-seed-addresses.md#defining-addresses)
+已新增附註，說明如何在傳遞種子地址時使用其他資料。[顯示全文](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## 2020 年 8 月{#aug-2020}
 
-在專屬的章節中，瞭解與傳送設計及與Campaign一起傳送有關的最佳實務。 [顯示全文](../../delivery/using/delivery-best-practices.md)
+在專屬區段中，瞭解與傳遞設計以及與 Campaign 一同傳送相關的最佳實務。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
-「傳遞能力」最佳實務登陸頁面已改善，以方便存取子區段。 [顯示全文](../../delivery/using/deliverability-key-points.md)
+已改善「傳遞」最佳實務登陸頁面，以方便存取子區段。[顯示全文](../../delivery/using/deliverability-key-points.md)
 
-現在，有關下列主題的教學影片已可供使用：
+現在已提供有關下列主題的教學影片：
 
-* [如何使用類型學規則和預先定義的篩選器來設定疲勞管理](../../campaign/using/about-campaign-typologies.md)
+* [如何使用類型規則和預先定義的篩選器來設定疲勞管理](../../campaign/using/about-campaign-typologies.md)
 
-* [如何在促銷活動中建立電子郵件](../../campaign/using/marketing-campaign-deliveries.md)
+* [如何在行銷活動中建立電子郵件](../../campaign/using/marketing-campaign-deliveries.md)
 
-* [如何建立包含條件式內容的多語言電子報](../../delivery/using/conditional-content.md)
+* [如何建立具有條件內容的多語言電子報](../../delivery/using/conditional-content.md)
 
-* [如何設定和部署傳送範本](../../delivery/using/creating-a-delivery-template.md)
+* [如何配置和部署傳遞範本](../../delivery/using/creating-a-delivery-template.md)
 
-* [如何啟動和使用AMP處理電子郵件](../../delivery/using/defining-interactive-content.md)
+* [如何啟用和使用電子郵件 AMP](../../delivery/using/defining-interactive-content.md)
 
 * [使用動態內容區塊個人化電子郵件](../../delivery/using/personalization-blocks.md)
 
-* [如何使用個人化欄位個人化電子郵件](../../delivery/using/personalization-fields.md)
+* [如何使用個人化欄位進行電子郵件個人化](../../delivery/using/personalization-fields.md)
 
 * [如何管理電子郵件中的種子和校樣](../../delivery/using/steps-defining-the-target-population.md)
 
-* [如何設定循環傳送](../../workflow/using/recurring-delivery.md)
+* [如何設定循環傳遞](../../workflow/using/recurring-delivery.md)
 
-* [如何設定連續傳送](../../workflow/using/continuous-delivery.md)
+* [如何設定連續傳遞](../../workflow/using/continuous-delivery.md)
 
-已新增資訊至連線至FTP伺服器後，當收到「無法解析主機名稱」錯誤時，要執行的檢查和動作。 [顯示全文](../../platform/using/sftp-server-usage.md)
+在連線至 FTP 伺服器且收到「無法解決主機名稱」錯誤後，已將資訊新增至要執行的檢查和動作中。[顯示全文](../../platform/using/sftp-server-usage.md)
 
-工作流程使用案例清單中已參考了新 [的使用案例](../../workflow/using/about-workflow-use-cases.md):
+已參考[工作流程使用案例](../../workflow/using/about-workflow-use-cases.md)清單的新使用案例：
 
-* 自動化內容建立、編輯和發佈
-* 在傳送傳送前設定收件者核准程式
-* 呼叫查詢中的例項變數
-* 對人口套用分割百分比
+* 自動建立、編輯和發佈內容
+* 在傳送傳遞前，設定收件者核准程序
+* 調用查詢中的執行個體變數
+* 將分割百分比套用在人口上
 
-本 **[!UICONTROL AND-join]** 活動章節已豐富其使用資訊，以及使用變數的附註。 [顯示全文](../../workflow/using/and-join.md)
+已新增其他使用資訊與變數使用附註以豐富本&#x200B;**[!UICONTROL AND-join]**&#x200B;活動區段內容。[顯示全文](../../workflow/using/and-join.md)
 
 ## 2020 年 7 月{#july-2020}
 
-有關如何使用增量查詢自動更新清單的使用案例已添加到工作流使用案例中。 [顯示全文](../../workflow/using/about-workflow-use-cases.md)
+已將有關如何使用增量查詢以自動更新清單的使用案例新增至工作流使用案例中。[顯示全文](../../workflow/using/about-workflow-use-cases.md)
 
-「發 [行說明](../../rn/using/latest-release.md) 」已重新整理：已新 [增概述頁面](../../rn/using/latest-release.md) ，其中包含有關建置狀態、升級程式、建議和重要連結的資訊。 此外，還新增 [了Gold Standard版本專用頁](../../rn/using/gold-standard.md) ，並整合 [了Compatibility Matrix](../../rn/using/compatibility-matrix.md) 。
+已重新整理[發行說明](../../rn/using/latest-release.md)：已新增[概述頁面](../../rn/using/latest-release.md)，其中包含有關建置狀態、升級流程、建議和重要連結資訊。此外，也同樣新增 [Gold Standard 發行版本](../../rn/using/gold-standard.md)專用頁面，並整合[相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
-新增了與Campaign Classic監控相關的准則。 [顯示全文](../../production/using/monitoring-guidelines.md)
+新增了與 Campaign Classic 監視相關的准則。[顯示全文](../../production/using/monitoring-guidelines.md)
 
-「隱私權與同意」一節已增強，提供更詳細的資訊和有用的連結。 [顯示全文](../../platform/using/privacy-and-recommendations.md)。
+已提升「隱私權與同意」一節，其提供更詳細的資訊和有用的連結。[顯示全文](../../platform/using/privacy-and-recommendations.md)。
 
-「促銷活動傳統型」中的「隱私權管理」頁面已更新，其中包含「規則」欄位的資訊，現在使用允許設定自動隱私權要求程式的API時，此欄位已可供使用。 [顯示全文](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+已更新 Campaign Classic 頁面的「隱私權管理」，其中包含「規範」欄位資訊，當您使用 API 允許設定自動隱私權要求流程時，便可使用此欄位。[顯示全文](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
 「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 和巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
-已在子工作流程記錄檔和行為中新增資訊，以防發生錯誤。 [顯示全文](../../workflow/using/sub-workflow.md)
+已將資訊新增至子工作流程記錄和行為中，以防發生錯誤。[顯示全文](../../workflow/using/sub-workflow.md)
 
-已在「活動」區段中新增最佳 **[!UICONTROL Scheduler]** 實務。 [詳細內容](../../workflow/using/scheduler.md)
+已將最佳實務新增至&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動區段。[詳細內容](../../workflow/using/scheduler.md)
 
 ## 2020 年 6月 {#june-2020}
 
@@ -134,11 +134,11 @@ Gold Standard版本的發行說明和相容性表現在可在專屬章節中取�
 
 新增使用案例，以說明如何使用「控制面板」及「行銷活動工作流程」進行資料[加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)與[解密](../../workflow/using/importing-data.md#use-case-gpg-decrypt)。
 
-The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
+Experience Cloud Triggers 和 Adobe Campaign Classic 整合頁面已移至[此處](../../integrations/using/about-triggers.md)。
 
-## july 2020 {#release-20-2}
+## 2020 年 7 月{#release-20-2}
 
-**20.2版本中包含的新功能**
+**第 20.2 發行版本包含的新功能**
 
 支援表情符號——[顯示全文](../../delivery/using/customizing-emoticon-list.md)
 
@@ -224,7 +224,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 ## 2020 年 1 月 {#release-20-1}
 
-**20.1版中包含的新功能**
+**第 20.1 發行版本包含的新功能**
 
 Snowflake FDA Connector——[顯示全文](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
 
@@ -292,7 +292,7 @@ Campaign 選項清單已新增「WdbcOptions_TempDbName」選項。[顯示全文
 
 移動說明如何定義 AMP 互動式內容的章節。[顯示全文](../../delivery/using/defining-interactive-content.md)
 
-**19.2版本中包含的新功能**
+**第 19.2 發行版本包含的新功能**
 
 加州消費者隱私保護法 (CCPA) ──[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
 
@@ -364,7 +364,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 ## 2019 年 5 月 {#release-19-1}
 
-**19.1版中包含的新功能**
+**第 19.1 發行版本包含的新功能**
 
 控制面板——[顯示全文](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 
@@ -406,7 +406,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 加強「子工作流程活動」章節，並提供使用範例。[顯示全文](../../workflow/using/sub-workflow.md)
 
-「 [Campaign Classic內部部署與托管功能矩陣」頁面已更新](../../installation/using/capability-matrix.md) ，其中包含與電子郵件密件副本相關的資訊。
+已更新[Campaign Classic 內部部署與托管功能矩陣](../../installation/using/capability-matrix.md)頁面，其中包含與電子郵件密件副本相關的資訊。
 
 更新了交易式傳訊文件，其中包含關於範本發佈的說明。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
