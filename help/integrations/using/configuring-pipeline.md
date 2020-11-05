@@ -1,8 +1,6 @@
 ---
-title: 設定 整合
-seo-title: 設定 整合
-description: 設定 整合
-seo-description: null
+title: 配置管線
+description: 瞭解如何設定管線
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: f3caef21a269cf57624a07bfe1b4bf1e241061a6
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 1%
+source-wordcount: '911'
+ht-degree: 0%
 
 ---
 
@@ -32,17 +30,17 @@ ht-degree: 1%
 
 ## 必要條件 {#prerequisites}
 
-在促銷 [!DNL Experience Cloud Triggers] 活動中使用需要：
+在開始此配置之前，請檢查您是否有：
 
-* Adobe Campaign 19.1.9版或20.3.1。和更高版本。
-* Analytics Standard版本。
+* Adobe Campaign的最新版本：19.1.8或20.2.1版及更高版本，
+* Adobe Analytics Standard版本
 
-先決條件配置包括：
+您還需要：
 
 * Adobe I/O專案驗證
-* IMSOrgId是Experience Cloud客戶與Adobe Analytics的識別碼。
-* 布建團隊必須擁有客戶IMS組織的系統管理員權限
-* 在Adobe Analytics中設定觸發器。
+* 有效的IMSOrgID,Experience Cloud客戶的識別碼，並新增Adobe Analytics
+* a開發人員存取IMS組織
+* 觸發器設定在Adobe Analytics中完成
 
 ## 驗證和配置檔案 {#authentication-configuration}
 
