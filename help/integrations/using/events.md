@@ -1,8 +1,6 @@
 ---
-title: 設定 整合
-seo-title: 設定 整合
-description: 設定 整合
-seo-description: null
+title: 設定事件
+description: 瞭解如何設定自訂實作的事件
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 1%
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
 
-# 設定自訂實作的事件 {#events}
+# 配置自訂實施事件 {#events}
 
 此配置的部分是自定義開發，需要以下各項：
 
@@ -28,9 +26,7 @@ ht-degree: 1%
 * QueryDef和Writer API的使用知識。
 * 使用私密金鑰進行加密和驗證的工作概念。
 
-由於編輯JS程式碼需要技術技巧，因此若未取得適當的瞭解，請勿嘗試。
-
-事件的進一步處理作業是在預設實作以外提供的ACX套件中完成。 接收的事件會使用JavaScript程式碼立即處理。 它被保存到資料庫表中，不需要即時進行進一步處理。 觸發程式可用於透過傳送電子郵件的促銷活動工作流程進行定位。 促銷活動已設定，因此觸發事件的客戶將會收到電子郵件。
+由於編輯Javascript程式碼需要技術技巧，因此若未適當瞭解，請勿嘗試。
 
 ## 在JavaScript中處理事件 {#events-javascript}
 
@@ -40,7 +36,7 @@ ht-degree: 1%
 
 它是在「JSConnector」 **[!UICONTROL NmsPipeline_Config]** 屬性下的選項中配置的。 每次收到事件時都會呼叫此javascript。 它由流程運 [!DNL pipelined] 行。
 
-範例JS檔案為cus:triggers.js。
+範例Javascript檔案為cus:triggers.js。
 
 ### JavaScript函式 {#function-js}
 
@@ -58,7 +54,7 @@ function processPipelineMessage(xmlTrigger) {}
 <undefined/>
 ```
 
-您應在編輯 [!DNL pipelined] JS後重新啟動。
+您應在編輯 [!DNL pipelined] Javascript後重新啟動。
 
 ### 觸發資料格式 {#trigger-format}
 
@@ -136,7 +132,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 剖析資料 {#data-parsing}
 
-此範例JS程式碼會剖析eVar01在元素中。
+此範例Javascript程式碼會剖析eVar01在元素中。
 
 ```
 function processPipelineMessage(xmlTrigger)
