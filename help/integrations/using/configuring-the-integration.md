@@ -1,8 +1,6 @@
 ---
-title: 設定 整合
-seo-title: 設定 整合
-description: 設定 整合
-seo-description: null
+title: 設定Adobe Experience Manager整合
+description: 瞭解如何設定Campaign-AEM整合
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 4%
+source-wordcount: '555'
+ht-degree: 2%
 
 ---
 
 
-# 設定 整合{#configuring-the-integration}
+# 配置整合{#configuring-the-integration}
 
 ## Configuring in Adobe Campaign {#configuring-in-adobe-campaign}
 
