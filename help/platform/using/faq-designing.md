@@ -10,9 +10,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
@@ -25,25 +25,25 @@ ht-degree: 100%
 
 ## 使用 Campaign 設計電子郵件時是否有特定準則？{#are-there-specific-guidelines-when-designing-emails-with-campaign-}
 
-開始設計電子郵件之前，請先了解透過 Adobe Campaign 進行的傳遞設計與傳送的相關概念和最佳做法。
+開始設計電子郵件之前，請先瞭解透過 Adobe Campaign 進行的傳遞設計與傳送的相關概念和最佳實務。
 
-[按一下這裡以了解更多資訊](../../delivery/using/delivery-best-practices.md)。
+[按一下這裡以瞭解更多](../../delivery/using/delivery-best-practices.md)。
 
 ## 什麼是傳遞範本？{#what-is-a-delivery-template-}
 
-傳遞設定和參數可以儲存在傳遞範本中以便重複使用。
+傳遞配置和參數可以儲存在傳遞範本中以便重複使用。
 
-[按一下這裡以了解更多資訊](../../delivery/using/about-templates.md)。
+[按一下這裡以瞭解更多](../../delivery/using/about-templates.md)。
 
-## 在 Campaign 中可以輕鬆地匯入現有的 HTML 並製作電子郵件嗎? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
+## 在 Campaign 中可以輕鬆地匯入現有的 HTML 並製作電子郵件嗎？{#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
-探索如何按幾下就可以在 Adobe Campaign 匯入現有的 HTML，藉此建立並傳送電子郵件。
+探索如何按一下滑鼠就可以在 Adobe Campaign 匯入現有的 HTML，藉此建立並傳送電子郵件。
 
-[按一下這裡以了解更多資訊](../../delivery/using/defining-the-email-content.md#message-content)。
+[按一下這裡以瞭解更多](../../delivery/using/defining-the-email-content.md#message-content)。
 
 ## 如何使用 Campaign DCE 建立電子郵件內容？{#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[使用 Campaign 數位內容編輯器設計電子郵件內容](../../web/using/use-case--creating-an-email-delivery.md)：透過一個範例了解如何使用 Campaign DCE 設計電子郵件。
+[使用 Campaign 數位內容編輯器設計電子郵件內容](../../web/using/use-case--creating-an-email-delivery.md)：透過一個範例瞭解如何使用 Campaign DCE 設計電子郵件。
 
 ## 如何在 Campaign 建立訂閱式電子報？{#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
@@ -51,12 +51,12 @@ ht-degree: 100%
 
 ## 如何建立個人化的訊息？{#how-can-i-personalize-messages-}
 
-有幾種不同的方式可個人化由 Adobe Campaign 傳送的訊息，包括訊息的內容或外觀。尤其是根據收件者用戶檔案中的準則，可以將這些方法結合使用。一般而言，Adobe Campaign 允許您：
+有幾種不同的方式可個人化由 Adobe Campaign 傳送的訊息，包含訊息的內容或外觀。尤其是根據收件者用戶檔案中的準則，可以將這些方法結合使用。一般而言，Adobe Campaign 允許您：
 
-* 個人化訊息格式。[按一下這裡以了解更多資訊](../../delivery/using/defining-the-email-content.md#message-content)。
-* 插入動態的個人化欄位。[按一下這裡以了解更多資訊](../../delivery/using/personalization-fields.md)。
-* 插入預先定義的個人化區塊，或建立自己的區塊。[按一下這裡以了解更多資訊](../../delivery/using/personalization-blocks.md)。
-* 建立有條件的內容。[按一下這裡以深入了解](../../delivery/using/conditional-content.md)並且閱讀[本小節](../../delivery/using/conditional-content.md)。
+* 個人化訊息格式。[按一下這裡以瞭解更多](../../delivery/using/defining-the-email-content.md#message-content)。
+* 插入動態的個人化欄位。[按一下這裡以瞭解更多](../../delivery/using/personalization-fields.md)。
+* 插入預先定義的個人化區塊，或建立自己的區塊。[按一下這裡以瞭解更多](../../delivery/using/personalization-blocks.md)。
+* 建立有條件的內容。[按一下這裡以瞭解更多](../../delivery/using/conditional-content.md)並且閱讀[本小節](../../delivery/using/conditional-content.md)。
 
 ## 我可以傳送多國語言的訊息嗎？{#can-i-send-multilingual-messages-}
 
