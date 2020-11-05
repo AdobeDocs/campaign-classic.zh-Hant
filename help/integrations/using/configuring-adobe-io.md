@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->如果您透過JWT Token或oAuth驗證使用舊版觸發器整合， **您必須依照下列說明移至Adobe I/O**。 JWT和oAuth驗證模式現在已不再使用。 [進一步瞭解](https://github.com/AdobeDocs/analytics-1.4-apis)
+>如果您透過驗證使用舊版觸發器整合， **則需依照下列說明移至Adobe I/O**。 舊版驗證模式將於2021年4月30日淘汰。 [進一步瞭解](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
 
 ## 必要條件 {#adobe-io-prerequisites}
 
