@@ -10,11 +10,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 84%
 
 探索在您的資料庫中輕鬆[匯入用戶檔案](../../platform/using/importing-data.md#generic-import-samples)的使用案例。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## 如何定義行銷活動的目標人群？{#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -44,7 +44,7 @@ ht-degree: 84%
 
 [按一下這裡以了解更多資訊](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
 
-![](assets/do-not-localize/how-to-video.png) 探索此視訊 [和此其他視訊](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)[中的這項功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png)探索此功能[於此影片中](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)和[其他影片中](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## 如何在傳送訊息前刪除重複的人口？{#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
