@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2149'
 ht-degree: 91%
 
 ---
@@ -341,7 +341,7 @@ ht-degree: 91%
    + Experience Cloud Triggers {#experience-triggers}
       + [關於 [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [設定管線](integrations/using/configuring-pipeline.md)
-      + [為Adobe Experience Cloud觸發器配置Adobe IO](integrations/using/configuring-adobe-io.md)
+      + [為Adobe Experience Cloud觸發器設定Adobe I/O](integrations/using/configuring-adobe-io.md)
       + [設定自訂實作的事件](integrations/using/events.md)
       + [管線監控](integrations/using/pipeline-monitoring.md)
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
