@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: e01acc00d0b15df99c009fe29d170ed0fc9fa956
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 12%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 12%
 
 # 通訊通道{#communication-channels}
 
-有了Adobe Campaign，您可以傳送跨通道的宣傳活動，包括電子郵件、SMS、LINE訊息、推播通知和直接郵件，並使用各種專用的報告來評估宣傳的 [成效](../../reporting/using/delivery-reports.md)。 這些訊息是透過傳送進行設計和傳送，而且可針對每位收件者個人化。
+有了Adobe Campaign，您可以傳送跨通道的宣傳活動，包括電子郵件、簡訊、LINE訊息、推播通知和直接郵件，並使用各種專用的報告來評估宣傳的 [成效](../../reporting/using/delivery-reports.md)。 這些訊息是透過傳送進行設計和傳送，而且可針對每位收件者個人化。
 
-核心功能包括定位、定義和個人化訊息、通訊執行及相關的營運報告。 主要功能存取點是傳送精靈。 此存取點可提供Adobe Campaign涵蓋的數種功能。
+核心功能包括定位、定義和個人化訊息、通訊執行及相關的營運報告。 主要功能存取點是傳送精靈。 此存取點可提供Adobe Campaign涵蓋的多項功能。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Adobe Campaign提供下列傳送渠道：
 
    >[!NOTE]
    >
-   >使用多個渠道取決於您的套件。 請檢查您的授權合約。
+   >可用渠道的數量取決於您的合約。 請檢查您的授權合約。
 
 您可線上(透 **過電子郵件** 、其中一個行動通道和推播通知)和離線( **直接郵件通道** )進行傳送。
 
