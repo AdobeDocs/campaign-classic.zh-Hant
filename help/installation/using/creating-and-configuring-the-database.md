@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1307'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 * 對於Oracle、Microsoft SQL Server或PostgreSQL資料庫，管理員還可以定義建立資料庫對 **像時要使用的儲存參數** 。
 
-   這些參數會接收到確切的表空間名稱(警告：區分大小寫)。 它們會分別儲存在 **[!UICONTROL Administration > Platform > Options]** 節點的下列選項中(請參 [](../../installation/using/configuring-campaign-options.md#database)閱):
+   這些參數會接收到確切的表空間名稱(警告：區分大小寫)。 它們會分別儲存在 **[!UICONTROL Administration > Platform > Options]** 節點的下列選項中(請參 [閱本節](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**:基於方案的用戶表
    * **WdbcOptions_TableSpaceIndex**:基於方案的用戶表索引
