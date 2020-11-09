@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
+source-git-commit: c14d257bb4f206e56a16d45507ee98ccad239fe7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 78%
+source-wordcount: '274'
+ht-degree: 77%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 78%
 
 ## 新增功能
 
-* **[更新您的Adobe Experience Cloud觸發器整合](integrations/using/configuring-adobe-io.md)**<br/>舊版oAuth驗證服務已到期。 瞭解如何移轉至Adobe I/O。
+* **[更新您的Adobe Experience Cloud觸發器整合](integrations/using/configuring-adobe-io.md)**<br/> ：舊版oAuth驗證服務已過期。 瞭解如何移轉至Adobe I/O。
 
-* **[轉到基於HTTP/2的APNs提供者API](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/>&#x200B;瞭解如何從舊式二進位協定遷移到基於HTTP/2的APNs提供者API。
+* **[轉到基於HTTP/2的APNs提供商API](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/> 瞭解如何從舊式二進位協定遷移到基於HTTP/2的APNs提供商API。
 
-* **[將表情符號新增至訊息](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>您現在可以在訊息和主旨行中插入表情符號
+* **[將表情符號加入訊息](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> 。您現在可以在訊息和主旨行中插入表情符號
 
 * **[取得支援](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)**<br/>
 存取常見問題集、最佳實務、說明資源，以及請求協助
@@ -29,7 +29,7 @@ ht-degree: 78%
 * **[追蹤功能](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html)**<br/>
 瞭解 Campaign 中的追蹤功能和流程
 
-[按一下這裡以取得更多更新](/help/rn/using/documentation-updates.md)
+[更多更新](/help/rn/using/documentation-updates.md)
 
 ## 熱門頁面
 
