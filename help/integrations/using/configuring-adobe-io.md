@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
+source-git-commit: 8486213403bf848f1632aff06f3f1528b199f86d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 開始此實作前，請檢查您有：
 
-* Adobe Campaign的最新版本：19.1.8或20.2.1版及更高版本，
+* a dobe Campaign（20.2.1和更新版本）的最新版本，
 * 有效的IMSOrgID:身分管理系統(IMS)組織識別碼是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO),
 * a開發人員存取IMS組織。
 
@@ -56,31 +56,31 @@ ht-degree: 2%
 
 1. 使用擷取的用戶端ID來識別現有專案。 尋找與前一步驟中擷取的用戶端ID相同的現有專案。
 
-   ![](assets/adobe_io_8.png)
+   ![](assets/do-not-localize/adobe_io_8.png)
 
 1. 選擇 **[!UICONTROL + Add to Project]** 並選擇 **[!UICONTROL API]**。
 
-   ![](assets/adobe_io_1.png)
+   ![](assets/do-not-localize/adobe_io_1.png)
 
 1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
 
-   ![](assets/adobe_io_2.png)
+   ![](assets/do-not-localize/adobe_io_2.png)
 
 1. 選擇 **[!UICONTROL Service Account (JWT)]** 作為驗證類型。
 
-   ![](assets/adobe_io_3.png)
+   ![](assets/do-not-localize/adobe_io_3.png)
 
 1. 如果您的用戶端ID為空，請選 **[!UICONTROL Generate a key pair]** 取以建立公用和私用鑰匙對。
 
-   ![](assets/adobe_io_4.png)
+   ![](assets/do-not-localize/adobe_io_4.png)
 
 1. 上傳您的公開金鑰，然後按一下 **[!UICONTROL Next]**。
 
-   ![](assets/adobe_io_5.png)
+   ![](assets/do-not-localize/adobe_io_5.png)
 
 1. 選擇名為 **Analytics-&lt;組織名稱>的產品設定檔** ，然後按一下 **[!UICONTROL Save configured API]**。
 
-   ![](assets/adobe_io_6.png)
+   ![](assets/do-not-localize/adobe_io_6.png)
 
 1. 從您的專案中，選 **[!UICONTROL Service Account (JWT)]** 取並複製下列資訊：
    * **[!UICONTROL Client ID]**
@@ -88,7 +88,7 @@ ht-degree: 2%
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-   ![](assets/adobe_io_7.png)
+   ![](assets/do-not-localize/adobe_io_7.png)
 
 ## 步驟2:在Adobe Campaign中新增專案認證 {#add-credentials-campaign}
 
