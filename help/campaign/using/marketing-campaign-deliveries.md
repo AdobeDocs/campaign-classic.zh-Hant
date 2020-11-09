@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 傳送可透過促銷活動控制面板、促銷活動工作流程或直接透過傳送概述來建立。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
 
 ## 建立傳送 {#creating-deliveries}
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 >
 >在相同的促銷活動中，您無法設定超過28個工作流程。 超過此限制後，介面中將無法顯示其他工作流程，並可能產生錯誤。
 
-### 如何在促銷活動中建立電子郵件 {#create-email-video}
+### 如何在行銷活動中建立電子郵件 {#create-email-video}
 
 此影片說明如何在Adobe Campaign Classic 建立行銷活動和電子郵件。
 
