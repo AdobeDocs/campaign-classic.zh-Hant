@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8486213403bf848f1632aff06f3f1528b199f86d
+source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 2%
@@ -29,9 +29,10 @@ ht-degree: 2%
 
 ## 必要條件 {#adobe-io-prerequisites}
 
+此整合僅適用於 **Campaign Classic 20.3起始版本**。
+
 開始此實作前，請檢查您有：
 
-* a dobe Campaign（20.2.1和更新版本）的最新版本，
 * 有效的IMSOrgID:身分管理系統(IMS)組織識別碼是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO),
 * a開發人員存取IMS組織。
 
