@@ -1,8 +1,6 @@
 ---
 title: 工作流程最佳實務
-seo-title: 工作流程最佳實務
-description: 工作流程最佳實務
-seo-description: null
+description: 瞭解促銷活動工作流程最佳實務
 page-status-flag: never-activated
 uuid: 56b04004-5d96-4169-9494-3d04284d5a3d
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 6%
+source-wordcount: '1609'
+ht-degree: 5%
 
 ---
 
