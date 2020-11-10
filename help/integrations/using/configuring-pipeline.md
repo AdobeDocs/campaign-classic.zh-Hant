@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 4f949d8db3aa3082acf1765bf66080b270cc6db4
+source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 0%
 
 ## 必要條件 {#prerequisites}
 
-在開始此配置之前，請檢查您是否有：
+在開始此配置之前，請檢查您使用的是：
 
-* a dobe Campaign（20.2.1和更新版本）的最新版本，
+* Adobe Campaign 20.3版本最低
 * Adobe Analytics Standard版本
 
 您還需要：
