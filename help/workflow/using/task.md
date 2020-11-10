@@ -1,8 +1,6 @@
 ---
 title: 任務
-seo-title: 任務
-description: 任務
-seo-description: null
+description: 進一步瞭解「任務」工作流活動
 page-status-flag: never-activated
 uuid: a6fda9d7-83ce-4528-8a9e-e7d06e9b1017
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: ec6f9a10-ad84-4d9f-86e2-490539c2171b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 4%
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
