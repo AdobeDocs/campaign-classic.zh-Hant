@@ -1,8 +1,6 @@
 ---
 title: 監督工作流程
-seo-title: 監督工作流程
-description: 監督工作流程
-seo-description: null
+description: 瞭解如何監督Campaign工作流程
 page-status-flag: never-activated
 uuid: e16d1c40-50ae-4c3d-95df-fac62f987a15
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 978cbe62-f06a-46a6-b8a1-e30a65b8470a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 1%
+source-wordcount: '643'
+ht-degree: 0%
 
 ---
 
