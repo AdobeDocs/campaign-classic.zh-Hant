@@ -1,6 +1,6 @@
 ---
-title: Adobe Campaign Classic中的收件匣轉換技術工作流程
-description: 本節說明隨Adobe Campaign Classic中「收件匣」轉換套件安裝的技術工作流程。
+title: 收件匣轉換技術工作流程
+description: 本節介紹隨收件箱渲染包安裝的技術工作流
 page-status-flag: never-activated
 uuid: f60a09f0-47a0-4fc0-b0ac-47178af6ad55
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '73'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # 收件箱呈現(IR){#inbox-rendering}
 
-下面詳細介紹的工作流默 **認情況下會與收件箱渲染(IR)** 模組一起安裝。 For more on Inbox rendering, refer to this [section](../../delivery/using/inbox-rendering.md).
+下面詳細介紹的工作流默 **認情況下會與收件箱渲染(IR)** 模組一起安裝。 有關收件箱轉換的詳細資訊，請參閱 [本節](../../delivery/using/inbox-rendering.md)。
 
 <table> 
  <tbody> 
