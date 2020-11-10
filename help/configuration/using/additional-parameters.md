@@ -1,8 +1,6 @@
 ---
-title: 其他參數
-seo-title: 其他參數
-description: 其他參數
-seo-description: null
+title: 其他網頁追蹤參數
+description: 進一步瞭解網頁追蹤的參數
 page-status-flag: never-activated
 uuid: c223c84a-f8fd-43d3-9deb-b1c19d442c65
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 1b2ae224-8406-4506-b589-6e5f6631e87f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 2%
+source-wordcount: '350'
+ht-degree: 1%
 
 ---
 
