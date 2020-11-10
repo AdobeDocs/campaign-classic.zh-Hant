@@ -1,8 +1,6 @@
 ---
 title: 重複資料刪除
-seo-title: 重複資料刪除
-description: 重複資料刪除
-seo-description: null
+description: 進一步瞭解重複資料消除工作流活動
 page-status-flag: never-activated
 uuid: 90dee589-ac45-442e-89ef-1c14bb22200d
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 11%
+source-wordcount: '733'
+ht-degree: 10%
 
 ---
 
