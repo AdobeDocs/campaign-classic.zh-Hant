@@ -1,8 +1,6 @@
 ---
 title: 排除
-seo-title: 排除
-description: 排除
-seo-description: null
+description: 進一步瞭解「排除」工作流程活動
 page-status-flag: never-activated
 uuid: e4f54a0b-2fec-4415-986b-83c8928ed174
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 1%
+source-wordcount: '349'
+ht-degree: 0%
 
 ---
 
