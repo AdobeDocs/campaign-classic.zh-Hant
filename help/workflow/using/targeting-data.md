@@ -1,8 +1,6 @@
 ---
 title: 目標定位資料
-seo-title: 目標定位資料
-description: 目標定位資料
-seo-description: null
+description: 進一步瞭解工作流程中的定位資料
 page-status-flag: never-activated
 uuid: 90c46ae9-8f9d-4538-a0fe-92fb3373f863
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1904'
 ht-degree: 3%
 
 ---
@@ -236,9 +234,9 @@ ht-degree: 3%
 
 在Adobe Campaign中，資料管理結合一系列活動，透過提供更有效率且更有彈性的工具來解決複雜的定位問題。 這可讓您使用與合約、訂閱、交付反應等相關的資訊，對與聯絡人的所有通訊實施一致的管理。 「資料管理」可讓您在分段作業期間追蹤資料生命週期，尤其是：
 
-* 透過包括未在資料超市中模塊化的資料，來簡化及最佳化鎖定過程 (建立新的資料表：根據設定，對目標工作流程進行本地擴充)。
+* 透過包含未在資料超市中模型化的資料，來簡化及最佳化鎖定過程（建立新的資料表：根據配置，對目標工作流程進行本地擴展）。
 * 保持和傳達緩衝區計算，尤其是在目標建構階段或進行資料庫管理時。
-* 存取外部資料庫 (選用)：在鎖定過程中考慮異質資料庫。
+* 存取外部資料庫（選用）：在鎖定過程中考慮異質資料庫。
 
 為了實作這些作業，Adobe Campaign提供：
 
