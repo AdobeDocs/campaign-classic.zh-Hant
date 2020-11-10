@@ -1,8 +1,6 @@
 ---
 title: 建立工作流程
-seo-title: 建立工作流程
-description: 建立工作流程
-seo-description: null
+description: 瞭解如何建立工作流程
 page-status-flag: never-activated
 uuid: 55743545-dd4b-4a0a-aeff-8fd638812b9d
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1624'
 ht-degree: 3%
 
 ---
@@ -145,13 +143,13 @@ ht-degree: 3%
 
 促銷活動架構中的定位工作流程會與所有促銷活動工作流程一起儲存。
 
-### 實作步驟 {#implementation-steps-}
+### 建立定位工作流程的關鍵步驟 {#implementation-steps-}
 
-定位資料建立階段如下：
+建立定位工作流程的步驟在下列章節中詳述：
 
-1. 有關標識資料庫中的資料，請參閱創 [建查詢](../../workflow/using/targeting-data.md#creating-queries)。
-1. 如需準備符合傳送需求的資料，請參 [閱豐富和修改資料](../../workflow/using/targeting-data.md#enriching-and-modifying-data)。
-1. 有關使用資料執行更新或在傳送中執行更新的資訊，請參 [閱更新資料庫](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)。
+1. **標識數** 據庫中的資料——請參閱 [建立查詢](../../workflow/using/targeting-data.md#creating-queries)
+1. **準備資料** ，以符合傳送需求——請參閱 [豐富和修改資料](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **使用** 「資料」執行更新或在傳送中——請參 [閱更新資料庫](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 所有在定位期間執行的豐富結果和所有處理的結果都儲存在個性化領域中，並且可以訪問，尤其用於建立個性化消息。 For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -179,15 +177,15 @@ ht-degree: 3%
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-此標籤包含的活動與所有工作流程相同。 它們會顯示在「實 [施步驟](#implementation-steps-) 」一節。
+此標籤包含的活動與所有工作流程相同。 [進一步瞭解](#implementation-steps-)
 
-除了定位促銷活動外，促銷活動工作流程可讓您建立並設定所有可用渠道的傳送。 在工作流程中建立後，這些傳送即可從促銷活動的控制面板中使用。
+除了定位促銷活動外，促銷活動工作流程可讓您建立並設定所有可用渠道的傳送。 在工作流程中建立後，這些傳送即可從促銷活動的控制面板中使用。 [進一步瞭解](../../campaign/using/marketing-campaign-deliveries.md)
 
 所有促銷活動工作流程都集中在節 **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** 點下。
 
 ![](assets/campaigns_wf.png)
 
-本頁詳細說明促銷活動工作流程和實作 [範例](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
+本頁詳細說明促銷活動工作流程和實 [作範例](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
 
 ## 技術工作流程 {#technical-workflows}
 
@@ -205,7 +203,7 @@ Adobe Campaign提供現成可用的技術工作流程。 它們是計畫在伺�
 
 您可以在樹結構的節點中建立 **[!UICONTROL Administration > Production > Technical workflows]** 其他技術工作流。 不過，此程式會保留給專家使用者。
 
-提供的活動與定位工作流程相同。 For more on this, refer to [Implementation steps](#implementation-steps-).
+提供的活動與定位工作流程相同。 [進一步瞭解](#implementation-steps-)
 
 ## 工作流程範本 {#workflow-templates}
 
