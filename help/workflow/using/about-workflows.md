@@ -1,6 +1,6 @@
 ---
 title: 關於工作流程
-description: 使用工作流程自動化流程、管理資料和受眾、傳送訊息等。
+description: 使用工作流程自動化程序，管理資料和對象、傳送訊息等。
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 16%
+source-wordcount: '650'
+ht-degree: 20%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 ## 關於工作流程{#about-workflows}
 
-Adobe Campaign包含工作流程模組，可讓您協調應用程式伺服器不同模組的所有流程和工作。 使用這個全方位的圖像式環境，您可以設計各式流程，包括細分、行銷活動執行、檔案處理、人力參與等。工作流程引擎將執行並追蹤這些流程。
+Adobe Campaign包含工作流程模組，可讓您協調應用程式伺服器不同模組的所有流程和工作。 使用這個全方位的圖像式環境，您可以設計各式流程，包含細分、行銷活動執行、檔案處理、人力參與等。工作流程引擎將執行並追蹤這些流程。
 
 例如，您可以使用工作流程從伺服器下載檔案、解壓縮，然後將其中的記錄匯入 Adobe Campaign 資料庫。
 
@@ -32,9 +32,9 @@ Adobe Campaign包含工作流程模組，可讓您協調應用程式伺服器不
 
 Adobe Campaign使用工作流程：
 
-* 進行定位促銷活動。 For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* 建立促銷活動：對於每個促銷活動， **[!UICONTROL Workflow]** 標籤可讓您建立目標並建立傳送。 For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* 執行技術流程：清除、收集追蹤資訊或臨時計算。 For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* 進行定位促銷活動。 [進一步瞭解](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* 建立促銷活動：對於每個促銷活動， **[!UICONTROL Workflow]** 標籤可讓您建立目標並建立傳送。 [進一步瞭解](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* 執行技術流程：清除、收集追蹤資訊或臨時計算。 [進一步瞭解](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 工作流可以表示流程定義（工作流模型，它表示應發生的事件）和此流程的實例（工作流實例，它表示實際發生的事件）。
 
