@@ -1,8 +1,6 @@
 ---
 title: 網站分析
-seo-title: 網站分析
-description: 網站分析
-seo-description: null
+description: 進一步瞭解Web Analytics套件
 page-status-flag: never-activated
 uuid: 63742453-16d9-48c2-9a3d-d96f5b131fb3
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: cc2d4741-2b26-4933-a28d-5dd7b5f436be
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 5%
+source-wordcount: '182'
+ht-degree: 3%
 
 ---
 
