@@ -1,8 +1,6 @@
 ---
 title: 行銷促銷活動傳送
-seo-title: 行銷促銷活動傳送
-description: 行銷促銷活動傳送
-seo-description: 進一步瞭解行銷宣傳傳遞
+description: 進一步瞭解行銷宣傳傳遞
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
 workflow-type: tm+mt
-source-wordcount: '2956'
-ht-degree: 2%
+source-wordcount: '2917'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,9 @@ ht-degree: 2%
 
 傳送可透過促銷活動控制面板、促銷活動工作流程或直接透過傳送概述來建立。
 
-![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
+當從促銷活動建立傳送時，傳送將連結至此促銷活動，並在促銷活動層級進行合併。
+
+![](assets/do-not-localize/how-to-video.png)[ 在影片中探索此功能](#create-email-video)
 
 ## 建立傳送 {#creating-deliveries}
 
@@ -32,29 +32,21 @@ ht-degree: 2%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的配置適用於不同類型的交付：直效郵件、電子郵件、行動通道。
-
->[!NOTE]
->
->如需建立和設定傳送的詳細資訊，請參閱「傳送 [訊息](../../delivery/using/steps-about-delivery-creation-steps.md) 」一節。
+建議的配置適用於不同類型的交付：直效郵件、電子郵件、行動通道。 [進一步瞭解](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 ## 選擇目標人口 {#selecting-the-target-population}
 
-對於每個傳送，促銷活動管理員將定義：
+您可以針對每個傳送定義：
 
-* 主要目標。 有關詳細資訊，請參 [閱在工作流中構建主目標](#building-the-main-target-in-a-workflow)[和選擇目標人口](#selecting-the-target-population)。
-* 控制組。 有關詳細資訊，請參閱定 [義控制組](#defining-a-control-group)。
-* 種子地址。 如需詳細資訊，請參閱[本章節](../../delivery/using/about-seed-addresses.md)。
+* 觀眾——在工作流程中 [建立觀眾並選取目標人口中](#building-the-main-target-in-a-workflow) , [瞭解更多資訊](#selecting-the-target-population)。
+* 控制組——瞭解定義控 [制組的詳細資訊](#defining-a-control-group)。
+* 種子位址——本節將進一步 [瞭解](../../delivery/using/about-seed-addresses.md)。
 
-其中有些資訊會繼承自範本。
+其中有些資訊可從範本繼 [承](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
 
->[!NOTE]
->
->促銷活動範本會顯示在促銷 [活動範本中](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
+若要建立傳送目標，您可以為資料庫中的收件者定義篩選條件。 此收件者選擇模式會顯示在 [本節中](../../delivery/using/steps-defining-the-target-population.md)。
 
-若要建立傳送目標，您可以為資料庫中的收件者定義篩選條件。 此收件者選擇模式顯示在「發送消 [息」部分](../../delivery/using/steps-defining-the-target-population.md) 。
-
-### 範例：傳送給一組收件者 {#example--delivering-to-a-group-of-recipients}
+**範例：向組發送消息**
 
 您可以將人口匯入清單，然後在傳送中定位此清單。
 
@@ -68,24 +60,15 @@ ht-degree: 2%
 
 ![](assets/s_user_target_group_next.png)
 
-### 在工作流程中建立主要目標 {#building-the-main-target-in-a-workflow}
+### 在工作流程中建立觀眾 {#building-the-main-target-in-a-workflow}
 
-傳送的主要目標也可以在定位工作流程中定義：此圖形環境可讓您使用查詢、測試和運算子來建立目標：聯合、重複資料消除、共用等。
-
-「使 [用工作流自動化](../../workflow/using/architecture.md) 」指南包含工作流模組操作的詳細說明。
+傳送的主要目標也可以在定位工作流程中定義：此圖形環境可讓您使用查詢、測試和運算子來建立目標：聯合、重複資料消除、共用等。 [進一步瞭解](../../workflow/using/architecture.md)。
 
 >[!IMPORTANT]
 >
->在相同的促銷活動中，您無法設定超過28個工作流程。 超過此限制後，介面中將無法顯示其他工作流程，並可能產生錯誤。
+>促銷活動中無法建立超過28個工作流程。 超過此限制後，介面中將無法顯示其他工作流程，並可能產生錯誤。
 
-### 如何在行銷活動中建立電子郵件 {#create-email-video}
-
-此影片說明如何在Adobe Campaign Classic 建立行銷活動和電子郵件。
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-
-#### 建立定位工作流程 {#creating-a-targeting-workflow}
+#### 建立工作流程 {#creating-a-targeting-workflow}
 
 您可以透過工作流程中圖形順序的篩選條件組合來建立定位。 您可以建立人口和子人口，並根據您的需求進行定位。 若要顯示工作流程編輯器，請按一下促銷 **[!UICONTROL Targeting and workflows]** 活動控制面板中的標籤。
 
@@ -275,7 +258,7 @@ ht-degree: 2%
 
 ## 開始傳送 {#starting-a-delivery}
 
-一旦所有許可都已獲得批准，交貨即可開始。 然後，傳送程式會視傳送類型而定。 如需電子郵件或行動通路傳送，請參閱「啟 [動線上傳送」](#starting-an-online-delivery)，如需直接郵件傳送 [，請參閱「](#starting-an-offline-delivery)啟動離線傳送」。
+一旦所有許可都已獲得批准，交貨即可開始。 然後，傳送程式會視傳送類型而定。 如需電子郵件或行動通路傳送，請參 [閱「開始線上傳送](#starting-an-online-delivery)」，如需直接郵件傳送 [，請參閱「](#starting-an-offline-delivery)開始離線傳送」。
 
 ### 開始線上傳送 {#starting-an-online-delivery}
 
@@ -476,3 +459,9 @@ ht-degree: 2%
 >[!NOTE]
 >
 >有關導出的詳細資訊，請參閱「 [Getting Started](../../platform/using/generic-imports-and-exports.md) （快速入門）」部分。
+
+#### 如何在行銷活動中建立電子郵件 {#create-email-video}
+
+此影片說明如何在Adobe Campaign Classic 建立行銷活動和電子郵件。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
