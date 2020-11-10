@@ -1,6 +1,6 @@
 ---
 title: 資料擷取 (檔案)
-description: 進一步瞭解資料擷取（檔案）工作流程活動。
+description: 進一步瞭解資料擷取（檔案）工作流程活動
 page-status-flag: never-activated
 uuid: c1e3fde3-183c-4602-9cef-760e4648fcf7
 contentOwner: sauviat
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
