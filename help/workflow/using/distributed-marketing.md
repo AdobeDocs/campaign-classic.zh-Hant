@@ -1,8 +1,6 @@
 ---
 title: 分散式行銷
-seo-title: 分散式行銷
-description: 分散式行銷
-seo-description: null
+description: 進一步瞭解Distributed Marketing套件
 page-status-flag: never-activated
 uuid: 071edddc-b9d2-4193-a667-71f738132684
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 5d34669d-e79f-42e1-85ba-8b4e38d98e5c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 15%
+source-wordcount: '69'
+ht-degree: 8%
 
 ---
 
