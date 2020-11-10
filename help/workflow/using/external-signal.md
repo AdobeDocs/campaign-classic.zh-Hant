@@ -1,8 +1,6 @@
 ---
 title: 外部訊號
-seo-title: 外部訊號
-description: 外部訊號
-seo-description: null
+description: 進一步瞭解外部信號工作流程活動
 page-status-flag: never-activated
 uuid: dbe6624a-70cf-4ac4-adfd-bc72db9bb3f3
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 3739593f-056c-4165-87ef-63c812bd3c43
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 4%
+source-wordcount: '168'
+ht-degree: 2%
 
 ---
 
