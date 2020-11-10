@@ -1,8 +1,6 @@
 ---
 title: SQL 資料管理
-seo-title: SQL 資料管理
-description: SQL 資料管理
-seo-description: null
+description: 進一步瞭解SQL資料管理工作流活動
 page-status-flag: never-activated
 uuid: b6057496-2dd5-4289-96df-98378e4f0ae7
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
+source-wordcount: '409'
+ht-degree: 1%
 
 ---
 
