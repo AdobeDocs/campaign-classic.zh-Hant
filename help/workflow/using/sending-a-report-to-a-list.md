@@ -1,8 +1,6 @@
 ---
 title: 傳送報表至清單
-seo-title: 傳送報表至清單
-description: 傳送報表至清單
-seo-description: null
+description: 瞭解如何使用工作流程將報表傳送至清單
 page-status-flag: never-activated
 uuid: 29759fd8-47f3-47cc-9f7e-263e305fd6fb
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
 source-wordcount: '623'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -38,7 +36,7 @@ ht-degree: 3%
 
 ![](assets/use_case_report_1.png)
 
-For more on creating lists, refer to this [section](../../platform/using/creating-and-managing-lists.md).
+有關建立清單的詳細資訊，請參 [閱](../../platform/using/creating-and-managing-lists.md)。
 
 ## 步驟2:建立傳送範本 {#step-2--creating-the-delivery-template}
 
