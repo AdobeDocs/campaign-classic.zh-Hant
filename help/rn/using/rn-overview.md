@@ -9,11 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
-workflow-type: ht
-source-wordcount: '428'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -32,13 +32,13 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後 **的 GA 版本編號** 為 Gold Standard 10。按一下[這裡](../../rn/using/gold-standard.md#gs-10)
+最後 **一個GA版本** : [Gold Standard 10版](../../rn/using/gold-standard.md#gs-10) , [Campaign 20.2.3版](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
 ![](assets/do-not-localize/blue3.png) **發行候選版本** (RC) - 具有新功能的最新版本。
 
-最後&#x200B;**的 RC 版本編號**&#x200B;為 Campaign Classic 20.3。按一下[這裡](../../rn/using/latest-release.md)
+The **last RC build** is [Campaign Classic 20.3 release](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/orange3.png) **不再適用** - 需要更新至更新的版本編號。
 
