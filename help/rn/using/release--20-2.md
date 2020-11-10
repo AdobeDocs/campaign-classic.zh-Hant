@@ -1,6 +1,6 @@
 ---
-title: 版本20.2
-description: 版本20.2
+title: 第 20.2 發行版本
+description: 第 20.2 發行版本
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,19 +10,19 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: aeae6320f9b8de8618f7e5f07bc586d1b101611f
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 76%
+ht-degree: 80%
 
 ---
 
 
-# Release 20.2{#release-20-2}
+# 第 20.2 發行版本{#release-20-2}
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板10月發行** ，其中包含使用CNAME的網域設定和新的資料庫監控功能。 [進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/blue_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
 _2020年9月11日_
 
@@ -39,20 +39,20 @@ _2020年9月11日_
 
 _2020年7月22日_
 
-* 修正在停用簽名功能時無法運作追蹤的問題。 (NEO-26411)
+* 修正了在停用簽名功能時，無法進行追蹤的問題。(NEO-26411)
 * 修正造成個人化網域中未簽署的連結在允許時遭到封鎖的問題。 (NEO-25210)
-* 修正使用某些舊版Outlook時，無法開啟／按一下追蹤URL的問題。 (NEO-25688)
+* 修正了在使用某些特定 Outlook 舊版本時，無法開啟/按一下追蹤 URL 的問題。(NEO-25688)
 * 修正導致在電子郵件傳送中錯誤定義鏡像頁面URL（因為ASCII字元控制不當）的問題。 (NEO-26084)
 * 修正反網路釣魚服務中編碼URL管理的問題。 (NEO-25283)
-* 修正在個人化參數（具有井字型大小的錨記）中使用片段追蹤URL無法運作的問題。 (NEO-25774)
-* 修正使用特定自訂追蹤公式時的追蹤問題。 (NEO-25277)
-* 修正追蹤「通知點按」無法運作的問題（iOS和Android推播通知）。 (NEO-25965)
+* 修正了在個人化參數（井字鍵符號的錨點標記）中無法使用片段追蹤 URL 的問題。(NEO-25774)
+* 修正了在使用特定自訂追蹤公式時的追蹤問題。(NEO-25277)
+* 修正了「通知單擊」無法進行追蹤的問題（iOS 和 Android 推播通知）。(NEO-25965)
 * 修正影響工作流程中計算欄位的回歸，導致工作流程失敗。 (NEO-25194)
 * 修正無法即時建立網頁追蹤URL的回歸。 (NEO-20999)
 * 已修正現成可用的傳送報表回歸問題，在匯出為PDF時，這些報表會出現截斷。 (NEO-25757)
 * 修正部署精靈中的當機問題。
 * 修正「選件」通知工作流程在設定檔後無法正常運作的問題。
-* iOS HTTP2連接器已改善（協力廠商更新和錯誤管理）。 (NEO-25904、NEO-25903)
+* 改善了 iOS HTTP2 連接器（協力廠商更新和錯誤管理）。(NEO-25904、NEO-25903)
 * catalina.properties中的jarToSkip清單已更新，以刪除對不再使用的jar檔案的引用（iOS通知）。
 * 修正了在postupgrade後封鎖傳送準備的問題。
 * 在切換至新的序 [列ID機制後](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)，所有更新收件者表格的Web應用程式都會在設定檔期間重新發佈。
