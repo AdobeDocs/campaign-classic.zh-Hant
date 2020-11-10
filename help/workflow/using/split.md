@@ -1,8 +1,6 @@
 ---
 title: 分割
-seo-title: 分割
-description: 分割
-seo-description: null
+description: 進一步瞭解「分割」工作流程活動
 page-status-flag: never-activated
 uuid: 00dc3436-e271-4512-8f29-71a55213afc3
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1935'
 ht-degree: 0%
 
 ---
