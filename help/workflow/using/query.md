@@ -1,8 +1,6 @@
 ---
 title: 查詢
-seo-title: 查詢
-description: 查詢
-seo-description: null
+description: 進一步瞭解查詢工作流程活動
 page-status-flag: never-activated
 uuid: 32f4f467-5083-414f-8616-1aa4bf2b5867
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1622'
 ht-degree: 0%
 
 ---
