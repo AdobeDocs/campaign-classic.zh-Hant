@@ -1,8 +1,6 @@
 ---
 title: 網頁下載
-seo-title: 網頁下載
-description: 網頁下載
-seo-description: null
+description: 進一步瞭解網頁下載工作流程活動
 page-status-flag: never-activated
 uuid: 44039e9c-0cd8-4d3f-b73f-e01c5343835a
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: event-activities
 discoiquuid: 8590cc75-11c8-450d-90e8-56744e12ac70
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 3%
+source-wordcount: '405'
+ht-degree: 2%
 
 ---
 
