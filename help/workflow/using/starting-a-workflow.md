@@ -1,6 +1,6 @@
 ---
 title: 啟動工作流程
-description: 瞭解如何開始工作流程並探索工作流程動作工具列和按一下滑鼠右鍵的功能表。
+description: 瞭解如何啟動工作流程並探索工作流程動作工具列和按一下滑鼠右鍵的功能表
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
 contentOwner: sauviat
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
