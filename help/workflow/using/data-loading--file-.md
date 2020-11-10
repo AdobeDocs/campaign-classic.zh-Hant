@@ -1,6 +1,6 @@
 ---
 title: 資料載入 (檔案)
-description: 進一步瞭解資料載入（檔案）活動。
+description: 進一步瞭解資料載入（檔案）工作流程活動
 page-status-flag: never-activated
 uuid: c064aa23-412e-49b4-a51d-b0e8ca572f2e
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1052'
 ht-degree: 15%
 
 ---
