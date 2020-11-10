@@ -1,8 +1,6 @@
 ---
 title: 使用本機核准活動
-seo-title: 使用本機核准活動
-description: 使用本機核准活動
-seo-description: null
+description: 瞭解如何使用本機核准活動
 page-status-flag: never-activated
 uuid: 6003aaed-543d-4e6b-b1f2-ad4e9757bff3
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: c143d8c3-c3ce-470c-8812-4b19cdb8afbf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 2%
+source-wordcount: '1272'
+ht-degree: 1%
 
 ---
 
