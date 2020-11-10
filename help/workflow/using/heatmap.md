@@ -1,8 +1,6 @@
 ---
 title: 工作流程熱度圖
-seo-title: 工作流程熱度圖
-description: 工作流程熱度圖
-seo-description: null
+description: 使用Workflow HeatMap監控您的促銷活動工作流程
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
 contentOwner: sauviat
@@ -12,17 +10,17 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 5%
+source-wordcount: '1328'
+ht-degree: 3%
 
 ---
 
 
 # 工作流程熱度圖 {#workflow-heatmap}
 
-Adobe Campaign 工作流程熱度圖包含目前執行的所有工作流程，並以色彩編碼的圖形來加以呈現。  它僅適用於實例管理員。
+Adobe Campaign Workflow HeatMap包含目前執行的所有工作流程的色彩編碼圖形表示法。 它僅適用於實例管理員。
 
 本頁提供其他監控不同促銷活動程式 [的方法](../../production/using/monitoring-guidelines.md)。
 
