@@ -1,8 +1,6 @@
 ---
 title: 時間限制
-seo-title: 時間限制
-description: 時間限制
-seo-description: null
+description: 進一步瞭解時間限制工作流程活動
 page-status-flag: never-activated
 uuid: 63bde1af-dd78-4fca-b3b9-edb1b64552cd
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 798409af-b236-4bb5-ac0f-90f0a19db345
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 10%
+source-wordcount: '80'
+ht-degree: 5%
 
 ---
 
