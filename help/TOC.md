@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5f3ecffba2e505ad0bb074f6d635a51d983997e2
+source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2156'
 ht-degree: 99%
 
 ---
@@ -39,7 +39,6 @@ ht-degree: 99%
 + 快速入門{#getting-started}
    + 開始使用 Adobe Campaign{#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [啟動 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign 工作區](platform/using/adobe-campaign-workspace.md)
       + 常見問答集{#faq}
@@ -54,6 +53,10 @@ ht-degree: 99%
          + [報告](platform/using/faq-reporting.md)
          + [開發](platform/using/faq-developers.md)
       + [教學課程](platform/using/tutorials.md)
+   + 隱私權 {#privacy}
+      + [隱私權與同意](platform/using/privacy-and-recommendations.md)
+      + [隱私權管理](platform/using/privacy-management.md)
+      + [隱私權要求](platform/using/privacy-requests.md)
    + 用戶檔案管理{#profile-management}
       + [關於用戶檔案](platform/using/about-profiles.md)
       + [編輯用戶檔案](platform/using/editing-a-profile.md)
