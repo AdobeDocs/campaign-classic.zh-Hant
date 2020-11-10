@@ -1,8 +1,6 @@
 ---
 title: 豐富資料
-seo-title: 豐富資料
-description: 豐富資料
-seo-description: null
+description: 進一步瞭解Enrichment工作流程活動
 page-status-flag: never-activated
 uuid: 3f65a8a2-b3e1-4c4c-9653-b8a7c4d7557a
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
