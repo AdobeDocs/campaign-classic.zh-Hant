@@ -1,8 +1,6 @@
 ---
 title: 使用彙總
-seo-title: 使用彙總
-description: 使用彙總
-seo-description: null
+description: 瞭解如何使用匯總
 page-status-flag: never-activated
 uuid: 70556745-56b2-4f22-bbc5-7f8106fb0d4a
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 9ca649b4-2226-4cfe-bae1-4632c421975b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '612'
 ht-degree: 2%
 
 ---
