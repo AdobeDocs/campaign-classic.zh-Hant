@@ -1,8 +1,6 @@
 ---
 title: 傳送
-seo-title: 傳送
-description: 傳送
-seo-description: null
+description: 進一步瞭解「傳送類型」工作流程活動
 page-status-flag: never-activated
 uuid: 3a74fd0b-8598-46a0-bf13-cf35db0987d7
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 9fd7122e-22c7-4f9a-a2a4-5de3daaa3c2e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
