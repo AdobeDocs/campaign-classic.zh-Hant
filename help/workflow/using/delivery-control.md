@@ -1,8 +1,6 @@
 ---
 title: 傳遞控制
-seo-title: 傳遞控制
-description: 傳遞控制
-seo-description: null
+description: 進一步瞭解「傳送控制」工作流程活動
 page-status-flag: never-activated
 uuid: f9cef2d9-a6a5-45bd-8c7a-fabc11879628
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 0b5ee05c-4b96-425a-ab0f-60b930de21bd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 8%
+source-wordcount: '164'
+ht-degree: 5%
 
 ---
 
