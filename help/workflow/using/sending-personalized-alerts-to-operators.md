@@ -1,8 +1,6 @@
 ---
 title: 傳送個人化警報給營運商
-seo-title: 傳送個人化警報給營運商
-description: 傳送個人化警報給營運商
-seo-description: null
+description: 瞭解如何傳送個人化警報給營運商
 page-status-flag: never-activated
 uuid: 10dd46b9-df28-4043-91f9-c9316a7c69d3
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 4d72db10-29bd-4b3c-adb3-bead02890271
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 5%
+source-wordcount: '343'
+ht-degree: 2%
 
 ---
 
