@@ -1,8 +1,6 @@
 ---
 title: 轉移至中間來源
-seo-title: 轉移至中間來源
-description: 轉移至中間來源
-seo-description: null
+description: 進一步瞭解轉移至中部採購工作流程
 page-status-flag: never-activated
 uuid: 6b5be5a0-d1ea-428b-a755-74dd34b1d53d
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 57b873e9-e934-410b-b966-040cebd94e3e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 13%
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 
