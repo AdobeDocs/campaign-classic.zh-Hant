@@ -1,8 +1,6 @@
 ---
 title: 傳遞大綱
-seo-title: 傳遞大綱
-description: 傳遞大綱
-seo-description: null
+description: 進一步瞭解「傳送大綱」工作流程活動
 page-status-flag: never-activated
 uuid: 2b924cc6-6b71-481e-acab-2d035bbc2852
 contentOwner: sauviat
@@ -12,17 +10,17 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 1%
 
 ---
 
 
 # 傳遞大綱{#delivery-outline}
 
-傳送大綱可讓您在促銷活動工作流程中使用大綱。 必須事先在促銷活動中建立大綱。
+傳送 **大綱** ，可讓您在促銷活動工作流程中使用大綱。 必須事先在促銷活動中建立大綱。
 
 如需Adobe Campaign中傳送大綱的詳細資訊，請參閱本 [節](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
@@ -30,7 +28,7 @@ ht-degree: 3%
 
 ## 範例：透過傳送大綱插入選件 {#example--inserting-an-offer-via-a-delivery-outline}
 
-促銷活動工作流程中提供的傳送大綱活動，可讓您顯示目前促銷活動中傳送大綱中參考的選件。
+促銷 **活動工作流程中提供的傳送大綱** ，可讓您顯示目前進行中促銷活動的傳送大綱中參考的選件。
 
 >[!NOTE]
 >
