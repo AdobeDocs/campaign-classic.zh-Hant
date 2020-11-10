@@ -1,8 +1,6 @@
 ---
 title: 讀取清單
-seo-title: 讀取清單
-description: 讀取清單
-seo-description: null
+description: 進一步瞭解「讀取清單」工作流程活動
 page-status-flag: never-activated
 uuid: 34e28675-f28b-407f-8d60-41a5383af0db
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 96a7aea4-4799-4ac7-8dff-666b075a1c43
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 1%
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
