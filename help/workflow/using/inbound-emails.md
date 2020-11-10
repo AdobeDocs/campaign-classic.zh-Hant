@@ -1,8 +1,6 @@
 ---
 title: 傳入電子郵件
-seo-title: 傳入電子郵件
-description: 傳入電子郵件
-seo-description: null
+description: 進一步瞭解「傳入電子郵件」工作流程活動
 page-status-flag: never-activated
 uuid: 6bcc7952-f051-4e50-8833-95d49c7ed781
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: event-activities
 discoiquuid: 4c0530b1-0292-45bc-8730-668bc5b8550b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 2%
+source-wordcount: '337'
+ht-degree: 1%
 
 ---
 
