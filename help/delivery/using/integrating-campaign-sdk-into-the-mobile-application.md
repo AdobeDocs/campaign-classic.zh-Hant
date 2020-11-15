@@ -1,8 +1,6 @@
 ---
-title: 設定行動應用程式頻道
-seo-title: 設定行動應用程式頻道
-description: 設定行動應用程式頻道
-seo-description: null
+title: 整合Campaign SDK
+description: 瞭解如何將Campaign SDK整合至您的行動應用程式
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
 
-# 將 Campaign SDK 整合至行動應用程式 {#integrating-campaign-sdk-into-the-mobile-application}
+# 將Campaign SDK與您的應用程式整合 {#integrating-campaign-sdk-into-the-mobile-application}
 
 iOS和Android適用的促銷活動SDK是行動應用程式頻道模組的元件之一。
 
@@ -30,7 +28,7 @@ iOS和Android適用的促銷活動SDK是行動應用程式頻道模組的元件�
 
 SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
-若要進一步瞭解支援的不同Android和iOS版本，請參閱「相容 [性」表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) 。
+若要進一步瞭解支援的不同Android和iOS版本，請參閱「相容 [性」表](../../rn/using/compatibility-matrix.md#MobileSDK) 。
 
 ## 載入促銷活動SDK {#loading-campaign-sdk}
 
