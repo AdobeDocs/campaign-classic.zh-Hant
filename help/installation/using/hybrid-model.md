@@ -1,7 +1,7 @@
 ---
-title: 混合模式
-seo-title: 混合模式
-description: 混合模式
+title: 混合模型
+seo-title: 混合模型
+description: 混合模型
 seo-description: null
 page-status-flag: never-activated
 uuid: d10cf1b9-f572-427f-8cfb-78965f76ce76
@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: f5244ab8-2421-4d76-bcf6-3574e68ea4e9
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 6%
@@ -20,7 +20,7 @@ ht-degree: 6%
 ---
 
 
-# 混合模式{#hybrid-model}
+# 混合模型{#hybrid-model}
 
 身為代管客戶，大部分的安裝和設定步驟都由Adobe執行。 您可以存取下列章節來自訂您的實作：
 
@@ -30,7 +30,7 @@ ht-degree: 6%
 * 安裝內置軟體包：請參 [閱本節](../../installation/using/installing-campaign-standard-packages.md)。
 * 可傳遞性：設定 [MX規則](../../installation/using/email-deliverability.md#mx-configuration) ，以 [及電子郵件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 閱讀快速入門手冊和詳細檔案，進一步瞭解可 [傳遞性工具](../../delivery/using/deliverability-key-points.md)[和最佳實務](../../delivery/using/about-deliverability.md)。
 * 設定促銷活動選項：請參 [閱本節](../../installation/using/configuring-campaign-options.md)。
-* 配置外部資料庫（同盟資料存取）:請參 [閱本節](../../platform/using/about-fda.md)。
+* 配置外部資料庫（同盟資料存取）:請參 [閱本節](../../installation/using/about-fda.md)。
 * 設定CRM連接器：請參 [閱本節](../../platform/using/crm-connectors.md)。
 * 若要進一步瞭解中端採購部署原則，請 [參閱本節](../../installation/using/mid-sourcing-deployment.md)。
 
