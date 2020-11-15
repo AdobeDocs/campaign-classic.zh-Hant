@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 例如，具有 **** &lt;%= recipient.LastName %>語法的個人化欄位會告訴Adobe Campaign將收件者名稱插入資料庫（收件者表格）。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#personalization-fields-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#personalization-fields-video)
 
 >[!CAUTION]
 >
@@ -86,7 +86,7 @@ ht-degree: 8%
 
 在傳送分析期間，此選項會自動建立並執行將所有連結至目標的資料儲存在暫存表格中的工作流程，包括FDA中連結之表格的資料。
 
-在處理大量資料時，檢查此選項可大幅改善傳送分析效能，尤其是當個人化資料來自透過FDA的外部表格時。 有關詳細資訊，請參 [閱訪問外部資料庫(FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data)。
+在處理大量資料時，檢查此選項可大幅改善傳送分析效能，尤其是當個人化資料來自透過FDA的外部表格時。 有關詳細資訊，請參 [閱訪問外部資料庫(FDA)](../../installation/using/about-fda.md)。
 
 例如，如果您在傳送訊息給大量收件者時，在訊息內容中使用許多個人化欄位和／或個人化區塊，遇到效能問題，這個選項可加速個人化的處理，進而加速訊息的傳送。
 
@@ -123,7 +123,7 @@ Adobe Campaign介面中不會顯示此工作流程。 它只是一種技術手�
 
 如果您將此選項設為0，個人化階段將不會有時間限制。
 
-## 如何使用個人化欄位個人化電子郵件 {#personalization-fields-video}
+## 如何使用個人化欄位進行電子郵件個人化 {#personalization-fields-video}
 
 瞭解如何將個人化欄位新增至主旨行，以及電子郵件傳送的內容。
 
