@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 582f7ac6-cebe-4b47-8730-bbc16fd6b1bd
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 18%
@@ -18,7 +18,7 @@ ht-degree: 18%
 ---
 
 
-# 能力矩陣 {#capability-matrix-per-model}
+# 功能矩陣 {#capability-matrix-per-model}
 
 Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性和使用取決於安裝的部署類型。 本文分享了有關完全托管（托管服務）和內部部署之間某些功能的主要差異。
 
@@ -46,11 +46,11 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [進一步瞭解](../../platform/using/about-fda.md)
+Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [進一步瞭解](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->除了 [Snowflake連接器外，只有內部部署或混合安裝才能透過FDA存取外部資料庫](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)。
+>除了 [Snowflake連接器外，只有內部部署或混合安裝才能透過FDA存取外部資料庫](../../installation/using/configure-fda-snowflake.md)。
 
 
 **另請參閱**
