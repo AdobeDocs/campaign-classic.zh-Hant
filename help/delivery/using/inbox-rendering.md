@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -41,7 +41,7 @@ The mobile, messaging and webmail clients available for **Inbox rendering** in A
 對於內部部署安裝，請遵循以下步驟來配置收件箱呈現。
 
 1. 透過> **[!UICONTROL Inbox rendering (IR)]** >功能表 **[!UICONTROL Tools]** 安裝 **[!UICONTROL Advanced]** 套件 **[!UICONTROL Import package]** 。 如需詳細資訊，請參閱安 [裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
-1. 透過> **[!UICONTROL Administration]** >節點設定HTTP類型的外部 **[!UICONTROL Platform]****[!UICONTROL External Accounts]** 帳戶。 如需詳細資訊，請參 [閱建立外部帳戶](../../platform/using/external-accounts.md#creating-an-external-account)。
+1. 透過> **[!UICONTROL Administration]** >節點設定HTTP類型的外部 **[!UICONTROL Platform]****[!UICONTROL External Accounts]** 帳戶。 如需詳細資訊，請參 [閱建立外部帳戶](../../installation/using/external-accounts.md#creating-an-external-account)。
 1. 按如下方式設定外部帳戶參數：
    * **[!UICONTROL Label]**:傳遞性伺服器資訊
    * **[!UICONTROL Internal name]**:deliverabilityInstance
