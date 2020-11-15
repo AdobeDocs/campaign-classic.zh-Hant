@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 3%
@@ -180,7 +180,7 @@ ht-degree: 3%
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   如需詳細資訊，請參閱本[區段](../../platform/using/about-fda.md)。
+   如需詳細資訊，請參閱本[區段](../../installation/using/about-fda.md)。
 
 然後，我們需要添加新子集：
 
