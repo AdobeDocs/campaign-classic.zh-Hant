@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 此應用程式已獲得Oracle和 **OpenJDK開發的Java開發套件(JDK)的批准**。
 
-支援的版本在「相容性」 [表中詳述](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
+支援的版本在「促銷活動相容性」 [矩陣中詳述](../../rn/using/compatibility-matrix.md)。
 
 >[!NOTE]
 >
