@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: ht
-source-wordcount: '539'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '525'
 ht-degree: 100%
 
 ---
@@ -66,11 +66,11 @@ Adobe Campaign 提供一組可監視電子郵件傳遞的儀表板和工具。
 
 ## 7. 哪些系統和組件與 Campaign Classic 相容？{#which-systems-and-components-campaign-classic-is-compatible-with-}
 
-在 [Adobe Campaign Classic 相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)中，您可以取得 Campaign 最新建立支援的所有系統和組件的清單。
+在 [Adobe Campaign Classic 相容性矩陣](../../rn/using/compatibility-matrix.md)中，您可以取得 Campaign 最新建立支援的所有系統和組件的清單。
 
 ## 8. Campaign Classic 發行說明在何處？{#where-are-campaign-classic-release-notes-}
 
-您可以在[本頁面](https://docs.adobe.com/content/help/zh-Hant/campaign-classic/using/release-notes/latest-release.html)找到最新的 Campaign Classic 發佈版本通知。
+您可以在[本頁面](../../rn/using/latest-release.md)找到最新的 Campaign Classic 發佈版本通知。
 
 ## 9. 網域配置的程序為何？{#what-is-the-procedure-for-domain-delegation-}
 
