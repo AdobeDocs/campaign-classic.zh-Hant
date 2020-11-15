@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '3932'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Experience Cloud Triggers 和 Adobe Campaign Classic 整合頁面已移至[此�
 
 支援表情符號——[顯示全文](../../delivery/using/customizing-emoticon-list.md)
 
-Azure Synapse FDA Connector——[顯示全文](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Azure Synapse FDA Connector——[顯示全文](../../installation/using/configure-fda-synapse.md)
 
 泰國及巴西隱私權法——[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -188,7 +188,7 @@ Campaign 網路端點已移至此[章節](../../installation/using/campaign-netw
 
 ## 2020 年 4 月 {#april-2020}
 
-FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](../../platform/using/remote-database-access-rights.md)
+FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](../../installation/using/remote-database-access-rights.md)
 
 更新常見問題集，其中包含清除軟快取及硬快取的秘訣。[顯示全文](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
@@ -232,9 +232,9 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 **第 20.1 發行版本包含的新功能**
 
-Snowflake FDA Connector——[顯示全文](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Snowflake FDA Connector——[顯示全文](../../installation/using/configure-fda-snowflake.md)
 
-Hadoop FDA Connector 增強功能——[顯示全文](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Hadoop FDA Connector 增強功能——[顯示全文](../../installation/using/configure-fda-hadoop.md)
 
 **此版本隨附的其他文件更新**
 
@@ -292,7 +292,7 @@ Hadoop FDA Connector 增強功能——[顯示全文](../../platform/using/speci
 
 Campaign 選項清單已新增「WdbcOptions_TempDbName」選項。[顯示全文](../../installation/using/configuring-campaign-options.md)
 
-「FDA 矩陣」頁面已移至[此處](../../platform/using/remote-database-access-rights.md)。
+「FDA 矩陣」頁面已移至[此處](../../installation/using/remote-database-access-rights.md)。
 
 「存取權限矩陣」頁面已移至[此處](https://docs.adobe.com/content/help/zh-Hant/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
 
