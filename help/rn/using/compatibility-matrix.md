@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 13%
 
 ---
@@ -170,7 +170,7 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 >
 >PostgreSQL是托管環境的預設資料庫伺服器。
 
-## CRM connectors{#CRMconnectors}
+## CRM 連接器{#CRMconnectors}
 
 <table>
 <tbody>
@@ -342,4 +342,4 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 * [Campaign Classic發行說明](../../rn/using/latest-release.md)
 * [安裝指南](../../installation/using/general-architecture.md)
 * [不建議使用的功能和系統](../../rn/using/deprecated-features.md)
-* [建立升級程式](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)
+* [建立升級程式](../../production/using/build-upgrade.md)
