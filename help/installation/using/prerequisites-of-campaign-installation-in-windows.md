@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: faaecbd6-f707-4307-8921-04d8993c2c47
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 15%
+source-wordcount: '141'
+ht-degree: 12%
 
 ---
 
 
 # 在 Windows 安裝 Campaign 的必要條件{#prerequisites-of-campaign-installation-in-windows}
 
-安裝Adobe Campaign所需的技術組態和軟體會列於「相容性」 [表中](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
+安裝Adobe Campaign所需的技術組態和軟體會列於「相容性」 [表中](../../rn/using/compatibility-matrix.md)。
 
 Adobe Campaign伺服器的多執行個體使用安裝程式如下「安裝伺服器」中 [所述](../../installation/using/installing-the-server.md)。
 
