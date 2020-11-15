@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 2%
+source-wordcount: '1301'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-支援的資料庫在「相容性」一節 [中顯示](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
+支援的資料庫列於「促銷活動相 [容性」矩陣](../../rn/using/compatibility-matrix.md)。
 
 確定伺服器並選擇要執行的操作類型。 在這個例子中， **[!UICONTROL Create or recycle a database]**.
 
