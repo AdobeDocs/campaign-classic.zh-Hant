@@ -1,7 +1,7 @@
 ---
-title: 版本 19.2
-seo-title: 版本 19.2
-description: 版本 19.2
+title: 第 19.2 發行版本
+seo-title: 第 19.2 發行版本
+description: 第 19.2 發行版本
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 8%
@@ -20,7 +20,7 @@ ht-degree: 8%
 ---
 
 
-# 版本 19.2{#release-19-2}
+# 第 19.2 發行版本{#release-19-2}
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
@@ -107,7 +107,7 @@ _2019年12月2日_
 
 * 推播通知的記憶體耗用最佳化。
 * 為達到效能和儲存空間最佳化， **已增強logins.log** 檔案的處理。 檔案現在會分割為多個檔案，每天一個，最多可保留365個檔案。 [顯示全文](../../production/using/log-files.md)
-* Microsoft Dynamics CRM外部帳戶現在可使用密碼憑證（密碼+使用者名稱）或憑證（私密金鑰）來設定。 [顯示全文](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* Microsoft Dynamics CRM外部帳戶現在可使用密碼憑證（密碼+使用者名稱）或憑證（私密金鑰）來設定。 [顯示全文](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Hadoop FDA連接器已新增一些增強功能，以提升可靠性
 * 在允許上傳伺服器上的公共資源之前，已添加了一個特定的保護欄來檢查磁碟空間。
 * 已新 [增促銷活動](../../installation/using/configuring-campaign-options.md) 選項：
