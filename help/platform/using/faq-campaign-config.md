@@ -10,10 +10,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '759'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -59,11 +59,11 @@ Campaign 可以讓您以協作模式，針對行銷活動的主要步驟設定�
 
 Adobe Campaign 提供同盟資料存取 (FDA) 選項，以處理儲存在一或多個外部資料庫中的資訊：您不需要變更 Adobe Campaign 資料的結構就可以存取外部資料。
 
-[按一下這裡以瞭解更多](../../platform/using/connecting-to-database.md)。
+[按一下這裡以瞭解更多](../../installation/using/connecting-to-database.md)。
 
 ## 我可以將 Campaign 連線到哪些外部資料庫？{#which-external-databases-can-i-connect-campaign-to-}
 
-[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)中列有透過同盟資料存取 (FDA) 與 Campaign 相容的外部資料庫。
+[相容性矩陣](../../rn/using/compatibility-matrix.md)中列有透過同盟資料存取 (FDA) 與 Campaign 相容的外部資料庫。
 
 ## Adobe Campaign 可以與輕型目錄存取協定 (LDAP) 整合嗎？{#can-adobe-campaign-integrate-with-ldap-}
 
