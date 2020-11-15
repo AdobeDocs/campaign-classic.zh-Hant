@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 99%
+source-wordcount: '2167'
+ht-degree: 97%
 
 ---
 
@@ -82,17 +82,6 @@ ht-degree: 99%
       + [存取管理](platform/using/access-management.md)
       + [使用資料包](platform/using/working-with-data-packages.md)
       + [管理分項清單](platform/using/managing-enumerations.md)
-      + [外部帳戶](platform/using/external-accounts.md)
-   + 存取外部資料庫 (FDA){#accessing-external-database}
-      + [關於 FDA](platform/using/about-fda.md)
-      + [配置 FDA 連接器](platform/using/specific-configuration-database.md)
-      + [舊的連接器](platform/using/legacy-connectors.md)
-      + [遠端資料庫存取權限](platform/using/remote-database-access-rights.md)
-      + [連接到資料庫](platform/using/connecting-to-database.md)
-      + [建立資料結構綱要](platform/using/creating-data-schema.md)
-      + [定義資料對應](platform/using/defining-data-mapping.md)
-      + [其他選項](platform/using/additional-options.md)
-      + [附錄](platform/using/appendices-fda.md)
    + 連接器{#connectors}
       + [關於連接器](platform/using/about-connectors.md)
       + [CRM 連接器](platform/using/crm-connectors.md)
@@ -460,7 +449,7 @@ ht-degree: 99%
       + [工作流程屬性](workflow/using/workflow-properties.md)
       + [高級參數](workflow/using/advanced-parameters.md)
       + [JavaScript 指令碼和範本](workflow/using/javascript-scripts-and-templates.md)
-      + [存取外部資料庫 (FDA)](workflow/using/accessing-an-external-database--fda-.md)
+      + [存取外部資料庫](workflow/using/accessing-an-external-database--fda-.md)
       + [管理權限](workflow/using/managing-rights.md)
       + [管理活動影像](workflow/using/managing-activity-images.md)
       + [管理傾向](workflow/using/managing-propensity.md)
@@ -585,7 +574,7 @@ ht-degree: 99%
    + 附件 {#annexes}
       + [Facebook 應用程式範例](social/using/examples-of-facebook-apps.md)
       + [追蹤](social/using/tracking.md)
-+ 安裝 Campaign Classic {#installing-campaign-classic}
++ 安裝及設定指南 {#installing-campaign-classic}
    + 架構原則{#architecture-and-hosting-models}
       + [通用架構](installation/using/general-architecture.md)
       + 託管模型{#hosting-models-lp}
@@ -633,6 +622,23 @@ ht-degree: 99%
       + [設定 SpamAssassin](installation/using/configuring-spamassassin.md)
       + [中間來源伺服器](installation/using/mid-sourcing-server.md)
       + [互動——資料緩衝](installation/using/interaction---data-buffer.md)
+      + [設定外部帳戶](installation/using/external-accounts.md)
+   + 存取外部資料庫 {#accessing-external-database}
+      + [開始使用FDA](installation/using/about-fda.md)
+      + 配置指南 {#config-databases}
+         + [配置步驟](installation/using/configure-fda.md)
+         + [配置雪花](installation/using/configure-fda-snowflake.md)
+         + [配置Azure突觸](installation/using/configure-fda-synapse.md)
+         + [配置Hadoop](installation/using/configure-fda-hadoop.md)
+         + [配置Oracle](installation/using/configure-fda-oracle.md)
+         + [配置Netezza](installation/using/configure-fda-netezza.md)
+         + [配置Sybase IQ](installation/using/configure-fda-sybase.md)
+         + [配置Teradata](installation/using/configure-fda-teradata.md)
+         + [配置SAP HANA](installation/using/configure-fda-sap-hana.md)
+      + [遠程訪問權限](installation/using/remote-database-access-rights.md)
+      + [連接到資料庫](installation/using/connecting-to-database.md)
+      + [建立資料結構綱要](installation/using/creating-data-schema.md)
+      + [定義資料對應](installation/using/defining-data-mapping.md)
    + 附錄 {#appendices}
       + [伺服器配置檔案](installation/using/the-server-configuration-file.md)
       + [Campaign 網路端點](installation/using/campaign-network-endpoints.md)
@@ -640,7 +646,7 @@ ht-degree: 99%
       + [建立新執行個體](installation/using/creating-new-instances.md)
       + [Campaign 選項清單](installation/using/configuring-campaign-options.md)
       + [解除安裝 Campaign](installation/using/uninstalling-campaign.md)
-+ 監控 Campaign Classic {#monitoring-campaign-classic}
++ 監控指南 {#monitoring-campaign-classic}
    + 簡介 {#introduction}
       + [前言](production/using/foreword.md)
       + [通用架構](production/using/general-architecture.md)
@@ -688,7 +694,7 @@ ht-degree: 99%
       + [主控台更新](production/using/console-update.md)
       + [遺失密碼](production/using/lost-password.md)
       + [JSP 行為](production/using/jsp-behavior.md)
-+ 設定 Campaign Classic {#configuring-campaign-classic}
++ 開發人員指南 {#configuring-campaign-classic}
    + 資料模型 {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
@@ -746,7 +752,7 @@ ht-degree: 99%
       + [在您的網站中插入標籤](configuration/using/inserting-tags-in-your-site.md)
       + [收集所有瀏覽](configuration/using/collecting-all-visits.md)
       + [匿名追蹤](configuration/using/anonymous-tracking.md)
-+ 移轉至新版本 {#migrating-to-a-new-version}
++ 遷移指南 {#migrating-to-a-new-version}
    + 移轉概觀 {#migration-overview}
       + [關於移轉](migration/using/about-migration.md)
       + [移轉方法](migration/using/migration-method.md)
