@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 3%
 
 本節詳細說明安裝Adobe Campaign前所需的初步設定步驟。
 
-安裝Adobe Campaign所需的技術和軟體組態詳見「相容性」 [表](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
+安裝Adobe Campaign所需的技術和軟體組態詳見「相容性」 [表](../../rn/using/compatibility-matrix.md)。
 
 提醒您，必須安裝並正確設定下列元件：
 
-* Apache，請參閱 [Compatibility matrix](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html),
+* Apache，請參閱 [Compatibility matrix](../../rn/using/compatibility-matrix.md),
 * Java JDK和OpenJDK，請參閱 [Java開發套件- JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * 程式庫，請參閱 [程式庫](#libraries),
 * 資料庫訪問層，請參閱數 [據庫訪問層](#database-access-layers),
@@ -169,7 +169,7 @@ CentOS需要下列組態：
 
 您所使用之資料庫引擎的存取層必須安裝在伺服器上，並可透過Adobe Campaign帳戶存取。 版本和安裝模式可能會因所使用的資料庫引擎而異。
 
-支援的試用版在「相容性」表中 [有詳細說明](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
+支援的試用版在「相容性」表中 [有詳細說明](../../rn/using/compatibility-matrix.md)。
 
 另請檢查常規 [資料庫](../../installation/using/database.md) 部分。
 
@@ -211,7 +211,7 @@ Adobe Campaign支援7.2版的所有PostgreSQL用戶端程式庫版本：(**libpq
 
 支援的程式庫版 **本為libdb2.so**。
 
-## 實作步驟 {#implementation-steps}
+## 實施步驟 {#implementation-steps}
 
 Adobe Campaign的Linux安裝必須依下列順序進行：伺服器安裝後跟實例配置。
 
