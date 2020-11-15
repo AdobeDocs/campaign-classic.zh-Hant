@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 80%
@@ -90,7 +90,7 @@ _2020 年 6 月 8 日_
  <tbody> 
   <tr> 
    <td> <p>您現在可以將 Campaign 執行個體連線至 Azure Synapse 外部資料庫。此連線透過新的外部帳戶進行管理。</p>
-    <p>Azure Synapse 僅適用於混合式和內部部署環境。如需詳細資訊，請參閱<a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">相關的文件</a>，以瞭解詳情。</p>
+    <p>Azure Synapse 僅適用於混合式和內部部署環境。如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-synapse.md">相關的文件</a>，以瞭解詳情。</p>
    </td> 
   </tr> 
  </tbody> 
