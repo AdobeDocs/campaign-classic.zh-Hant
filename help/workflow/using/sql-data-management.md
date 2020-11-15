@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 1%
 
 在設定活動之前，請確定已符合下列先決條件：
 
-* 活動僅適用於遠程資料源。 因 **[!UICONTROL FDA]** 此，(Federated Data Access)套件必須安裝在您的例項上(請參 [閱本節](../../platform/using/about-fda.md))。
-* 出站模式必須存在於資料庫中，並連結到FDA資料庫(有關資料模式的詳細資訊，請參 [閱本節](../../configuration/using/about-schema-reference.md))。
-* 執行工作流程的運算子必須具有 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 命名權限。 For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
+* 活動僅適用於遠程資料源。 因 **[!UICONTROL FDA]** 此，您的實例上必須安裝(Federated Data Access)包。 [進一步瞭解](../../installation/using/about-fda.md)。
+* 出站模式必須存在於資料庫中，並連結到FDA資料庫。 [進一步瞭解](../../configuration/using/about-schema-reference.md)。
+* 執行工作流程的運算子必須具有 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 命名權限。 [進一步瞭解](../../platform/using/access-management.md#named-rights)。
 
 ## 配置SQL資料管理活動 {#configuring-the-sql-data-management-activity}
 
