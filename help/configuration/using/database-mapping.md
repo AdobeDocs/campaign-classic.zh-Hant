@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -373,7 +373,7 @@ SQL欄位約束如下：
 * ![](assets/join_fda_11.png) :基數1-1
 * ![](assets/join_fda_1m.png) :基數1-N
 
-有關FDA表的詳細資訊，請參閱 [訪問外部資料庫](../../platform/using/about-fda.md)。
+有關FDA表的詳細資訊，請參閱 [訪問外部資料庫](../../installation/using/about-fda.md)。
 
 必須在包含通過主元素連結的表的外鍵的架構中聲明連結：
 
