@@ -1,6 +1,6 @@
 ---
-title: 版本 20.1
-description: 版本 20.1
+title: 第 20.1 發行版本
+description: 第 20.1 發行版本
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# 版本 20.1{#release-20-1}
+# 第 20.1 發行版本{#release-20-1}
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
@@ -47,7 +47,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
-    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>For more information, refer to the <a href="../../installation/using/configure-fda-snowflake.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -62,7 +62,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Hadoop FDA Connector已經過改良，可支援Hadoop 3.0和Cloudera。</p>
-    <p>如需詳細資訊，請參閱<a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">相關的文件</a>，以瞭解詳情。</p>
+    <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-hadoop.md">相關的文件</a>，以瞭解詳情。</p>
    </td> 
   </tr> 
  </tbody> 
