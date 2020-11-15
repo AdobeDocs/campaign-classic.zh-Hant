@@ -1,8 +1,6 @@
 ---
 title: 移轉警告
-seo-title: 移轉警告
 description: 移轉警告
-seo-description: null
 page-status-flag: never-activated
 uuid: 35361471-881c-4aaf-a57b-ed7e89a97eae
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 1fa1fe0f-c392-413a-9fa0-d1b4e10e2e5e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 6%
+source-wordcount: '181'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +21,7 @@ ht-degree: 6%
 # 移轉警告{#migration-warnings}
 
 * 移轉程式會保留給專業使用者。 您至少必須有Adobe Campaign的資料庫專家、系統管理員和應用程式開發人員協助。
-* 開始移轉之前，請先檢查您使用的系統和系統元件是否與v7相容。 請參閱相 [容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
+* 開始移轉之前，請先檢查您使用的系統和系統元件是否與v7相容。 請參閱相 [容性矩陣](../../rn/using/compatibility-matrix.md)。
 * 如果您使用Adobe Campaign Cloud訊息（先前是中部採購），請在開始整個移轉程式前先與Adobe Campaign聯絡。
 * 在開始移轉程式之前，您 **必須** 備份您的資料。
 * 移轉程式可能需要數天才能完成。
