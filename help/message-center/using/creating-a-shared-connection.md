@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%
@@ -84,7 +84,7 @@ ht-degree: 3%
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   有關Federated Data Access(FDA)的詳細資訊，請參閱 [訪問外部資料庫](../../platform/using/about-fda.md)。
+   有關Federated Data Access(FDA)的詳細資訊，請參閱 [訪問外部資料庫](../../installation/using/about-fda.md)。
 
 1. 單 **[!UICONTROL Test the connection]** 擊以確保控制實例和執行實例已連結。
 
