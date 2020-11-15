@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 2%
@@ -103,7 +103,7 @@ Adobe Campaign可讓您定義並管理指派給各種運算子的權限。 這�
 
 >[!NOTE]
 >
->欄位 **[!UICONTROL Session timeout]** 可讓您調整FDA作業逾時前的延遲。 有關詳細資訊，請參閱關於 [同盟資料存取](../../platform/using/about-fda.md)。
+>欄位 **[!UICONTROL Session timeout]** 可讓您調整FDA作業逾時前的延遲。 有關詳細資訊，請參閱關於 [同盟資料存取](../../installation/using/about-fda.md)。
 
 ### 運算子的時區 {#time-zone-of-the-operator}
 
