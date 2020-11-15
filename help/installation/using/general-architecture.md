@@ -1,6 +1,6 @@
 ---
 title: 通用架構
-description: 瞭解如何安裝和設定 Campaign Classic。
+description: 了解如何安裝和設定 Campaign Classic。
 page-status-flag: never-activated
 uuid: 686bc660-2403-4bab-a4ea-9b872adf8fa0
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 7c28c179-eb18-437e-baf2-25829566c766
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 1%
+source-wordcount: '1336'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign是以服務導向架構(SOA)為基礎，並包含數個功能模�
 
 >[!CAUTION]
 >
->若未明確說明，則Adobe Campaign平台所有元件的安裝、更新和維護由代管元件的電腦管理員負責。 這包括實作Adobe Campaign應用程式的先決條件，以及遵守元件間的 [相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html) 。
+>若未明確說明，則Adobe Campaign平台所有元件的安裝、更新和維護由代管元件的電腦管理員負責。 這包括實作Adobe Campaign應用程式的先決條件，以及遵守元件之間的「促銷活 [動相容性](../../rn/using/compatibility-matrix.md) 」矩陣。
 
 ## 表現層 {#presentation-layer}
 
