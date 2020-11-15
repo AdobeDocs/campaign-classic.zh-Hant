@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 3ac779a7-1f91-4c1c-a439-10d01697326a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 4%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ v7仍支援32位元版本的資料庫和作業系統，但Adobe Campaign未來�
 >
 >Adobe Campaign v7不再支援Adobe Campaign 5.11和6.02支援的部分軟體版本。
 >
->如需Adobe Campaign支援版本的詳細資訊，請參閱相容性 [表](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。
+>如需Adobe Campaign支援版本的詳細資訊，請參閱相容性 [表](../../rn/using/compatibility-matrix.md)。
 
 ## 關鍵移轉步驟 {#key-migration-steps}
 
