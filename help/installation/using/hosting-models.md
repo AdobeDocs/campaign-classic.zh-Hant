@@ -1,6 +1,6 @@
 ---
-title: 託管模式
-description: 託管模式
+title: 託管模型
+description: Discover Campaign代管模型
 page-status-flag: never-activated
 uuid: a9e035d9-326b-4e14-8f05-a22fe38d172b
 contentOwner: sauviat
@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 3175b9ab-e305-4f19-8267-d6172fa07a2a
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 24521f77d6d13f8469869fdd8445b46a8d215dad
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
 
 
-# 託管模式{#hosting-models}
+# 託管模型{#hosting-models}
 
 Adobe Campaign提供三種代管模型的選擇，提供選擇最佳模型的靈活彈性和自由，或是符合業務需求的模型。
 
