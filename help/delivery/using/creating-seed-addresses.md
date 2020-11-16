@@ -1,8 +1,6 @@
 ---
 title: 建立種子地址
-seo-title: 建立種子地址
-description: 建立種子地址
-seo-description: null
+description: 瞭解如何建立和使用種子位址
 page-status-flag: never-activated
 uuid: 0dae107a-7b53-4096-93c3-9517b402cbc9
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: 6dad49af-4818-471b-9df1-057cc6b9a68a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 2%
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
