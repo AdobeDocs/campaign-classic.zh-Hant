@@ -1,7 +1,7 @@
 ---
-title: 版本 18.10
-seo-title: 版本 18.10
-description: 版本 18.10
+title: 第 18.10 發行版本
+seo-title: 第 18.10 發行版本
+description: 第 18.10 發行版本
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 8%
+source-wordcount: '2367'
+ht-degree: 7%
 
 ---
 
 
-# 版本 18.10{#release-18-10}
+# 第 18.10 發行版本{#release-18-10}
 
 ## 版本 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
@@ -63,7 +63,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+>這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **功能改善**
 
@@ -87,7 +87,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+>這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **功能改善**
 
@@ -109,7 +109,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+>這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **新增功能？**
 
@@ -122,7 +122,7 @@ ht-degree: 8%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 推播通知的改進<br /> </td> 
+   <td> Push notification improvements<br /> </td> 
    <td> Adobe Campaign中已實作許多推播通知的增強功能：<br /> 
     <ul> 
      <li> <p>在iOS中追蹤無訊息通知 </p> </li> 
@@ -151,7 +151,7 @@ ht-degree: 8%
 
 **功能改善**
 
-* 現在針對 Campaign Classic API 推出[專屬頁 面](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
+* 現在針對 Campaign Classic API 推出[專屬頁 面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
 * 現在支援PostgreSQL 10、Debian 9和Teradata 16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
 * 建立SFTP連線時，您現在可以使用代理驗證。 For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * 使用 **直接郵件傳送範本建立單一傳送時** ，傳送屬性中現在提供「日期計算公式」選項。 (NEO-9792)
