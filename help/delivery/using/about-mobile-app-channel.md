@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
 
-# 關於行動應用程式通道{#about-mobile-app-channel}
+# 關於行動應用程式頻道{#about-mobile-app-channel}
 
 >[!CAUTION]
 >
@@ -95,7 +95,7 @@ Adobe Campaign伺服器必須能夠透過下列埠聯絡APNs伺服器：
 
    >[!NOTE]
    >
-   > 從Campaign 20.3版開始，iOS舊版二進位連接器已過時。 如果您使用此連接器，則需要依此調整實作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+   > 自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。如果您使用此連接器，則需要據此調整實施。[進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
 若要檢查它是否正常運作，請使用下列命令：
 
