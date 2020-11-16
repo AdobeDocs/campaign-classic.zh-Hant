@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 1%
@@ -267,7 +267,7 @@ GetAnd **Transform方法必須在** 標籤的元素下 **`<enter>`****`<input>`*
 <input label="File name" type="editbtn" xpath="/tmp/@name">
   <enter>
     <soapCall name="GetAndTransform" service="ncm:content">
-      <param exprIn="'https://server/incoming/' + [/tmp/@name] + '.xml'" type="string"/>
+      <param exprIn="'https://myserver.adobe.com/incoming/' + [/tmp/@name] + '.xml'" type="string"/>
       <param exprIn="'xtk:xslt|cus:book-workflow.xsl'" type="string"/>
       <param type="DOMElement" xpathOut="."/>
     </soapCall>
@@ -275,7 +275,7 @@ GetAnd **Transform方法必須在** 標籤的元素下 **`<enter>`****`<input>`*
 </input>
 ```
 
-編輯區域可讓您輸入要檢索的檔案的名稱。 URL是根據此名稱建構，例如：https://server/incomin/data.xml
+編輯區域可讓您輸入要檢索的檔案的名稱。 URL是根據此名稱建構，例如：https://myserver.adobe.com/incomin/data.xml
 
 要擷取的資料格式與工作流程自動化範例1中的格式相同。 我們將使用此範例中顯示的「cus:book-workflow.xsl」樣式表。
 
