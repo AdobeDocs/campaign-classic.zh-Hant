@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2541'
 ht-degree: 4%
 
 ---
@@ -191,7 +191,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
    Adobe Campaign Classic支援Dynamics 365 REST介面與OAuth通訊協定，以進行驗證。
 
-   如果您選取部 **[!UICONTROL WebAPI]** 署，則需要在Azure目錄上註冊應用程式，並從Azure目錄 **取得clientId** 。 本頁記錄了此 [註冊](https://msdn.microsoft.com/en-us/library/mt622431.aspx)。
+   如果您選取部 **[!UICONTROL WebAPI]** 署，則需要在Azure目錄上註冊應用程式，並從Azure目錄 **取得clientId** 。 本頁記錄了此 [註冊](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN)。
 
    >[!NOTE]
    >
