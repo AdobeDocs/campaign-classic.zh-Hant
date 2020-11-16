@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 59%
+source-wordcount: '1007'
+ht-degree: 51%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 59%
 * 伺服器大小功能因許可證而異。在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 * 使用基於密鑰的身份驗證而不是密碼身份驗證，以避免密碼過期 (密碼的有效期為 90 天)。此外，基於金鑰的身份驗證允許您生成多個金鑰，例如在管理多個實體時。相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
 
-   支持的金鑰格式為 SSH-2 RSA 2048。金鑰可以通過PuTTY (Windows) 或 ssh-keygen (UNIX) 等工具生成。你將必須通過[支援票證](https://support.neolane.net) 為 Adobe 支援團隊提供公共金鑰，將它上傳到活動伺服器上。
+   支持的金鑰格式為 SSH-2 RSA 2048。Keys can be generated with tools like PyTTY (Windows), or ssh-keygen (Unix).You will have to provide the public key to Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) to have it uploaded on the Campaign server.
 
 * 使用工作流程正確刪除資料（管理使用資料的工作流程的保留）。
 * 在 SFTP 上載和工作流程中使用批次處理。
@@ -45,7 +45,7 @@ ht-degree: 59%
 * 時常登入 SFTP 以直接檢查其內容。
 * 請記住，SFTP 硬碟的管理主要是您的責任。
 * 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
-* 您嘗試從中啟動SFTP連線的公用IP必須新增至促銷活動例項的allowlist。 可以通過支援票證請求將IP地址添加到允許 [清單](https://support.neolane.net)。
+* 您嘗試從中啟動SFTP連線的公用IP必須新增至促銷活動例項的allowlist。 您可透過 [Adobe客戶服務要求將IP位址新增至允許清單](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ ht-degree: 59%
 
 ## Adobe代管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
-以下部分列出了在遇到與 Adobe 託管的 SFTP 伺服器的連接問題時，通過[支援票證](https://support.neolane.net)檢查並提供給 Adobe 支援團隊的資訊。
+The section below lists the information to check and provide to the Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) when encountering connection issues with Adobe hosted SFTP servers.
 
 1. 檢查您的執行個體是否正在運行。To do this, open your browser, then make a **[!UICONTROL GET]** call on the instance **[!UICONTROL /r/test]** endpoint:
 
@@ -88,7 +88,7 @@ ht-degree: 59%
    如果埠未打開，請確保打開側面的傳出連線，然後重試。如果仍遇到連接問題，請與 Adobe 支援團隊分享該命令的輸出。
 
 1. 檢查您嘗試從中啟動SFTP連線的公用IP是否是您提供給Adobe支援的allowlist。
-1. 因此，我們強烈建議使用基於密鑰的驗證(請參 [閱SFTP伺服器最佳實務](#sftp-server-best-practices))。
+1. 如果您使用密碼驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用基於密鑰的驗證(請參 [閱SFTP伺服器最佳實務](#sftp-server-best-practices))。
 1. 如果您使用的是基於金鑰的身份驗證，請檢查您使用的金鑰是否與為執行個體配置提供給 Adobe 支援團隊的金鑰相同。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
 
