@@ -1,7 +1,7 @@
 ---
-title: 版本 18.6
-seo-title: 版本 18.6
-description: 版本 18.6
+title: 第 18.6 發行版本
+seo-title: 第 18.6 發行版本
+description: 第 18.6 發行版本
 seo-description: null
 page-status-flag: never-activated
 uuid: 72941f8f-0b84-4868-a768-8aa972459ef2
@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 8%
+source-wordcount: '795'
+ht-degree: 6%
 
 ---
 
 
-# 版本 18.6{#release-18-6}
+# 第 18.6 發行版本{#release-18-6}
 
 ## 版本 18.6.2 - Build 8949{#release-18-6-3-build-8949}
 
@@ -28,7 +28,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+>這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **新增功能？**
 
@@ -42,7 +42,7 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td> 查詢色帶<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDA Teradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign現在都能傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，Teradata管理員便可使用這些資料進行稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">相關的文件</a>，以瞭解詳情。</p> </td>
+   <td> <p>當多個Campaign使用者連線至相同的FDA Teradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign現在都能傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，Teradata管理員便可使用這些資料進行稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">相關的文件</a>，以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -84,7 +84,7 @@ Teradata外部帳戶中已新增一個標籤。 此標 **[!UICONTROL Query bandi
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或聯絡 [技術支援](https://support.neolane.net/)。
+>這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [技術支援](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **新增功能？**
 
