@@ -1,8 +1,6 @@
 ---
-title: 事件說明
-seo-title: 事件說明
-description: 事件說明
-seo-description: null
+title: 消息中心事件說明
+description: 進一步瞭解交易式傳訊事件
 page-status-flag: never-activated
 uuid: 7b174ffd-28b2-4147-b992-e17b0b2cf733
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
 translation-type: tm+mt
-source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 1%
+source-wordcount: '746'
+ht-degree: 0%
 
 ---
 
