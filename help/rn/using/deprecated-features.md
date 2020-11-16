@@ -10,7 +10,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 99%
@@ -61,7 +61,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <tr>
   <td>舊的 iOS 二進位<br></td>
   <td><p>自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。<p>
-  <p> 如果您使用此連接器，則需要據此調整實施。<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-http2.html">進一步瞭解</a></p>
+  <p> 如果您使用此連接器，則需要據此調整實施。<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html">進一步瞭解</a></p>
   <p><em>目標移除日期：2021 年</em></p>
   </td>
  </tr>
