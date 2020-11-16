@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: 48176ebb19689855f3ee5e61fa6492be5a682291
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 7%
@@ -34,7 +34,7 @@ ht-degree: 7%
 
 1. 開啟網頁瀏覽器並從下列位址下載主控台：
 
-   [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://machine/nl/jsp/logon.jsp).
+   [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://myserver.adobe.com/nl/jsp/logon.jsp).
 
 1. 在標識窗口中，輸入您的登錄名和密碼。
 
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 1. 指定透過URL連線至Adobe Campaign應用程式伺服器。 使用DNS或電腦的別名或您的IP地址。
 
-   例如，您可以使用類 [`https://<machine>.<domain>.com`](https://machine) 型URL。
+   例如，您可以使用類 [`https://<machine>.<domain>.com`](https://myserver.adobe.com) 型URL。
 
 1. 如果您的組織已設定Adobe IMS，請勾選 **[!UICONTROL Connect with an Adobe ID]**
 
