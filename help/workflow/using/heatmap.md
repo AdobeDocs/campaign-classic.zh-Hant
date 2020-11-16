@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1333'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Workflow HeatMap提供並行工作流程數目的快速概覽，讓Adobe Campaig
 
 使用Workflow HeatMap需要對下列概念有充分的瞭解： [工作流程](../../workflow/using/about-workflows.md)、 [活動](../../workflow/using/about-activities.md) 和工作 [流程最佳實務](../../workflow/using/workflow-best-practices.md)。
 
-Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版本介於8700和8977(18.10)之間，您也可以受益於此功能。 若要要求相應的套件，請聯絡 [Adobe客戶服務](https://support.neolane.net/) ，並依照本頁 [的指示](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) ，瞭解如何安裝它。
+Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版本介於8700和8977(18.10)之間，您也可以受益於此功能。 若要要求相應的套件，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，並依照本頁 [的指示](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) ，瞭解如何安裝它。
 
 當您第一次存取Worklow HeatMap時，會出現下列快顯視窗。 本合約允許Adobe Campaign在美國的轉讓和儲存，以便：
 
