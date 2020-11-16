@@ -1,8 +1,6 @@
 ---
 title: 關於技術工作流程
-seo-title: 關於技術工作流程
-description: 關於技術工作流程
-seo-description: null
+description: 促銷活動技術工作流程清單
 page-status-flag: never-activated
 uuid: 60b66853-ae4f-458d-bd62-076f2d7c965f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 38%
+source-wordcount: '137'
+ht-degree: 35%
 
 ---
 
@@ -40,8 +38,8 @@ ht-degree: 38%
 * [收件箱呈現(IR)](../../workflow/using/inbox-rendering.md)
 * [互動](../../workflow/using/interaction.md)
 * [優惠方案引擎的控制](../../workflow/using/control-of-offer-engine.md)
-* [訊息中心 (控制項)](../../workflow/using/message-center--control-.md)
-* [訊息中心 (控制項)](../../workflow/using/message-center--execution-.md)
+* [訊息中心（控制）](../../workflow/using/message-center--control-.md)
+* [訊息中心（執行）](../../workflow/using/message-center--execution-.md)
 * [行動應用程式頻道](../../workflow/using/mobile-app-channel.md)
 * [LINE 頻道](../../workflow/using/line-channel.md)
 * [行銷資源 (MRM)](../../workflow/using/marketing-resources--mrm-.md)
