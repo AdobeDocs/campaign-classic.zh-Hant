@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '2802'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 14%
 
 ## 關於隔離 {#about-quarantines}
 
-Adobe Campaign 管理隔離地址的清單。在執行傳遞分析時，預設情況下將不會向被隔離的收件者的電郵地址傳送內容。例如信箱容量已滿或地址不存在時，您可以隔離電子郵件地址。在任何情況下，隔離程式都符合以下所述的特定規則。
+Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情況下將不會向被隔離的收件者的電郵地址傳送內容。例如信箱容量已滿或地址不存在時，您可以隔離電子郵件地址。在任何情況下，隔離程式都符合以下所述的特定規則。
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/tec
 **適用於iOS —— 二進位連接器**
 
 >[!NOTE]
-從Campaign 20.3版開始，iOS舊版二進位連接器已過時。 如果您使用此連接器，則需要依此調整實作。 [進一步瞭解](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。如果您使用此連接器，則需要據此調整實施。[進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
 Adobe Campaign會針對每個通知從APNs伺服器接收同步與非同步錯誤。 對於下列同步錯誤，Adobe Campaign會產生軟性錯誤：
 
