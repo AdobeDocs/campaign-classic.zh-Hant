@@ -1,8 +1,6 @@
 ---
 title: 部署執行個體
-seo-title: 部署執行個體
-description: 部署執行個體
-seo-description: null
+description: 進一步瞭解Campaign部署精靈
 page-status-flag: never-activated
 uuid: 5694b07a-6c1c-45a3-8a22-fd9da163c28c
 contentOwner: sauviat
@@ -12,7 +10,7 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 1%
@@ -446,7 +444,7 @@ Adobe Campaign可讓您區隔這三個URL，將負載分散到多個平台。
 </redirection>
 ```
 
-**設定**
+**配置**
 
 對於每個必須同步的公共資源，必須向部件中的元素添加 `<url>` 狀態屬 `<relay>` 性：
 
