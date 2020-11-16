@@ -1,8 +1,6 @@
 ---
 title: 解除安裝 Campaign
-seo-title: 解除安裝 Campaign
-description: 解除安裝 Campaign
-seo-description: null
+description: 瞭解如何解除安裝Campaign
 page-status-flag: never-activated
 uuid: 4e95a576-a2fe-41dd-a03d-e4a3120f8788
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 702253cc-3e1a-44ad-9340-b8588ee86bad
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '35'
-ht-degree: 25%
+source-wordcount: '36'
+ht-degree: 13%
 
 ---
 
