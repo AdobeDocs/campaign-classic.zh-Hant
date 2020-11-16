@@ -1,8 +1,6 @@
 ---
 title: 範本發佈
-seo-title: 範本發佈
-description: 範本發佈
-seo-description: null
+description: 事務性消息模板發佈
 page-status-flag: never-activated
 uuid: f83dbe5f-762c-4c58-aeed-6ec289eb522f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
