@@ -1,6 +1,6 @@
 ---
-title: 在Adobe Campaign Classic中管理傳遞性時的要點
-description: 在Adobe Campaign Classic中管理傳遞性時，需要檢查哪些要點？
+title: 可傳遞性關鍵點
+description: 提高傳遞能力的關鍵點
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
