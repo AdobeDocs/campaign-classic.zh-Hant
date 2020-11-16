@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 >
 >此更新由代管SpamAssassin的伺服器管理員負責。
 
-在Adobe Campaign中使用SpamAssassin可指出使用SpamAssassin的郵件伺服器在收到Adobe Campaign傳送的電子郵件時的可能行為。 不過，網際網路供應商或線上郵件伺服器的郵件伺服器仍可能認為Adobe Campaign傳送的訊息不受歡迎。
+在Adobe Campaign中使用SpamAssassin可指出使用SpamAssassin的郵件伺服器在收到Adobe Campaign傳送的電子郵件時的可能行為。 不過，網際網路供應商或線上郵件伺服器的郵件伺服器仍可能認為Adobe Campaign所傳送的訊息不受歡迎。
 
 在Perl中部署SpamAssassin及其模組需要Adobe Campaign應用程式伺服器具備透過HTTP連線（TCP/80流程）進行網際網路存取的功能。
 
@@ -53,8 +53,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 
 ### 安裝SpamAssassin {#installing-spamassassin}
 
-1. 使用您的用戶憑 [據連接到](http://support.neolane.net) Extranet門戶。
-1. 前往下載 **中心** ，然後瀏覽頁面以尋找「工 **具** 」區段。
+1. 使用您的使 [用者認證連線至](https://experience.adobe.com/downloads) 「軟體散發入口網站」。 在本頁中進一步瞭解軟 [體散發](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
 1. 下載 **Neolane Spam Assassin（Windows安裝）(2.0)** (neolane_spamassassin.2.0.zip)。
 1. 將此檔案複製至Adobe Campaign伺服器，然後解壓縮。
 
