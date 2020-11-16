@@ -1,6 +1,6 @@
 ---
-title: 關於Adobe Campaign Classic中的傳遞能力
-description: 進一步瞭解如何在Adobe Campaign Classic中管理傳遞性。
+title: 關於Campaign中的傳遞能力
+description: 瞭解傳遞能力最佳實務
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
