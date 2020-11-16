@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3497'
 ht-degree: 98%
 
 ---
@@ -342,7 +342,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 ## 2019 年 10 月 {#october-2019}
 
-更新 Campaign Standard 及 Campaign Classic 的錯誤訊息清單。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+更新 Campaign Standard 及 Campaign Classic 的錯誤訊息清單。[顯示全文](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
 改善並加強 GDPR 快速入門手冊。該手冊現在是包含 GDPR 及 CCPA 的隱私權管理文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy.html)
 
@@ -384,29 +384,29 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新「已棄用和已移除的 Campaign Classic 功能」頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)
 
-《安裝指南》新增伺服器設定檔的說明。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_The_server_configuration_file.html)
+《安裝指南》新增伺服器設定檔的說明。[顯示全文](../../installation/using/the-server-configuration-file.md)
 
-新增了新的章節，說明託管及混合模式的安裝及設定步驟。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_Introduction.html)
+新增了新的章節，說明託管及混合模式的安裝及設定步驟。[顯示全文](../../installation/using/hosting-models.md)
 
-新增了新的章節，說明 Campaign 伺服器解除安裝步驟。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Uninstalling_Campaign.html)
+新增了新的章節，說明 Campaign 伺服器解除安裝步驟。[顯示全文](../../installation/using/uninstalling-campaign.md)
 
-更新「[安全性](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)、[傳遞能力](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)[及隱私權](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)」快速入門手冊。
+更新「[安全性](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)、[傳遞能力](../../delivery/using/deliverability-key-points.md)[及隱私權](../../platform/using/privacy-management.md)」快速入門手冊。
 
-更新預先處理工作流程選項的說明，以反映產品變更。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
+更新預先處理工作流程選項的說明，以反映產品變更。[顯示全文](../../workflow/using/data-loading--file-.md)
 
-更新 Marketing Cloud Triggers Technote。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/triggers-and-campaign.html)
+更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
 
-更新錯誤消息清單。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+更新錯誤消息清單。[顯示全文](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
-新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Event_description.html)
+新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](../../message-center/using/event-description.md)
 
-更新 Apache 設定步驟已更新。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Integration_into_a_Web_server.html#Configuring_Apache_web_server_in_RHEL)
+更新 Apache 設定步驟已更新。[顯示全文](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-新增了包含 Campaign Standard 和 Classic 的端點清單頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/campaign-endpoints.html)
+新增了包含 Campaign Standard 和 Classic 的端點清單頁面。[顯示全文](../../installation/using/campaign-network-endpoints.md)
 
-更新「資料套件最佳實務」文章。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/data-package-best-practices.html)
+更新「資料套件最佳實務」文章。[顯示全文](../../configuration/using/data-model-best-practices.md)
 
-更新「管理優惠方案」文件，新增了列出最佳實務的新章節。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/ITA_Interaction_Overview_Interaction_best_practices.html)
+更新「管理優惠方案」文件，新增了列出最佳實務的新章節。[顯示全文](../../interaction/using/interaction-best-practices.md)
 
 建立了新的知識庫文章，說明如何在 Adobe Campaign Classic 使用優惠方案目錄。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/offer-best-practices.html)
 
@@ -414,30 +414,30 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 已更新[Campaign Classic 內部部署與托管功能矩陣](../../installation/using/capability-matrix.md)頁面，其中包含與電子郵件密件副本相關的資訊。
 
-更新了交易式傳訊文件，其中包含關於範本發佈的說明。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
+更新了交易式傳訊文件，其中包含關於範本發佈的說明。[顯示全文](../../message-center/using/template-publication.md)
 
-更新「未處理的退回郵件」章節，其中包含「轉寄地址」和「錯誤地址」欄位的詳細資訊。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Deploying_an_instance.html#Unprocessed_bounce_mails)
+更新「未處理的退回郵件」章節，其中包含「轉寄地址」和「錯誤地址」欄位的詳細資訊。[顯示全文](../../installation/using/deploying-an-instance.md)
 
-新增了關於工作流程規劃最佳實務的新章節。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Workflow_best_practices.html#Execution_and_performance)
+新增了關於工作流程規劃最佳實務的新章節。[顯示全文](../../workflow/using/workflow-best-practices.md)
 
 Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 NmsOperation_OperationMgtDebug。
-[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+[顯示全文](../../installation/using/configuring-campaign-options.md)
 
 新增了有關 Campaign Classic 可以使用的不同外部帳戶，以及如何設定這些帳戶的相關資訊。
-[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html)
+[顯示全文](../../installation/using/external-accounts.md)
 
 更新「Analytics Data Connector 」章節，以反映介面變更。
-[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
+[顯示全文](../../platform/using/adobe-analytics-data-connector.md)
 
 新增了關於帳單報表的資訊。
-[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#Billing_report)
+[顯示全文](../../production/using/monitoring-processes.md)
 
 更新了「共用受眾整合」的文件。
-[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
+[顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
 更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
-更新「技術工作流程」章節。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
+更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
 改善並更新「Campaign 網域名稱設定程序」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)
 
@@ -445,40 +445,38 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 更新「Campaign 硬體調整指南」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)
 
-新增關於 Teradata 外部帳戶的「查詢集區」的相關資訊。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#External_database_external_account)
+新增關於 Teradata 外部帳戶的「查詢集區」的相關資訊。[顯示全文](../../installation/using/external-accounts.md)
 
 ## 2019 年 1 月{#release-doc-16-01-2019}
 
-更新 Marketing Cloud Triggers Technote。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/triggers-and-campaign.html)
+更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
 
-已於「優惠方案核准」章節新增說明，以指出「已核准內容」提及是代表內容核准流程已完成，不論所有優惠方案是否已啟用/核准。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
+已於「優惠方案核准」章節新增說明，以指出「已核准內容」提及是代表內容核准流程已完成，不論所有優惠方案是否已啟用/核准。[顯示全文](../../interaction/using/offer-catalog-overview.md)
 
-「安裝指南」新增了新的章節，列出「管理/平台/選項」節點中的選項。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+「安裝指南」新增了新的章節，列出「管理/平台/選項」節點中的選項。[顯示全文](../../installation/using/configuring-campaign-options.md)
 
-新增了使用種子地址保護郵寄清單的相關資訊。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+新增了使用種子地址保護郵寄清單的相關資訊。[顯示全文](../../delivery/using/creating-seed-addresses.md)
 
 建立和傳送傳遞時的主要步驟已重新分組成為新章節，並視需要引述各管道。[顯示全文](../../delivery/using/steps-about-delivery-creation-steps.md)
 
-移動、重新組織及改善「[電子郵件封存](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html)」章節，並釐清相關資訊：
+移動、重新組織及改善「[電子郵件封存](../../installation/using/email-archiving.md)」章節，並釐清相關資訊：
 
-* 新增了有關每一連線的電子郵件及 BCC 傳送 IP 參數的最佳實務。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Best_practices)
+* 新增了有關每一連線的電子郵件及 BCC 傳送 IP 參數的最佳實務。
 
-* 如果您已透過舊版組建版本 (Adobe Campaign 17.2之前——組建版本 8795) 來使用電子郵件封存，我們更新了升級至新版電子郵件封存系統 (BCC) 的步驟。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
+* 如果您已透過舊版組建版本 (Adobe Campaign 17.2之前——組建版本 8795) 來使用電子郵件封存，我們更新了升級至新版電子郵件封存系統 (BCC) 的步驟。
 
-「使用工作流程自動化」指南新增了使用案例：傳送個人化警報給營運商。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
+「使用工作流程自動化」指南新增了使用案例：傳送個人化警報給營運商。[顯示全文](../../workflow/using/sending-personalized-alerts-to-operators.md)
 
-更新「移轉至新版本」章節。本文件現在僅詳細說明從任何舊版移轉至 Adobe Campaign Classic v7 的步驟，因為現在已無法移轉至 Adobe Campaign v6.11。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+更新「移轉至新版本」章節。本文件現在僅詳細說明從任何舊版移轉至 Adobe Campaign Classic v7 的步驟，因為現在已無法移轉至 Adobe Campaign v6.11。[顯示全文](../../migration/using/about-migration.md)
 
-釐清「出現傳遞暫時性錯誤後重試」章節。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
+釐清「出現傳遞暫時性錯誤後重試」章節。[顯示全文](../../delivery/using/understanding-delivery-failures.md)
 
-「定義電子郵件內容」章節，新增了前往「數位內容編輯器」章節的連結。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Defining_the_email_content.html#Message_content)
+「定義電子郵件內容」章節，新增了前往「數位內容編輯器」章節的連結。[顯示全文](../../delivery/using/defining-the-email-content.md)
 
-更新「交易式傳訊架構」章節，其中包含控制項及執行實例無法安裝在同一台電腦上的警告。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Transactional_messaging_architecture.html)
+更新「交易式傳訊架構」章節，其中包含控制項及執行實例無法安裝在同一台電腦上的警告。[顯示全文](../../message-center/using/transactional-messaging-architecture.md)
 
-更新「工作流程監控」章節，其中包含適用於 8700 到 8977 (18.10) 組建版本之間的說明，包括如何為這些組建版本安裝 Workflow HeatMap 套件的技術文件連結。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#About_the_Workflow_HeatMap)
+更新「工作流程監控」章節，其中包含適用於 8700 到 8977 (18.10) 組建版本之間的說明，包括如何為這些組建版本安裝 Workflow HeatMap 套件的技術文件連結。[顯示全文](../../workflow/using/heatmap.md)
 
-新增了使用案例，說明如何使用工作流程中的「擴充活動」，傳送包含自訂資料欄位的電子郵件。[顯示全文](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
+新增了使用案例，說明如何使用工作流程中的「擴充活動」，傳送包含自訂資料欄位的電子郵件。[顯示全文](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
 功能影片已移至[此處](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)。
-
-針對 [Teradata](https://helpx.adobe.com/tw/campaign/kb/campaign_fda_teradata.html) 和 [MySQL 5.7](https://helpx.adobe.com/tw/campaign/kb/campaign_fda_mysql.html) 新增了兩則技術文件。
