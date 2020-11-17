@@ -1,8 +1,6 @@
 ---
 title: 擴展綱要
-seo-title: 擴展綱要
-description: 擴展綱要
-seo-description: null
+description: 瞭解如何擴充架構
 page-status-flag: never-activated
 uuid: 1767b9de-1d72-4ece-aeec-87f83862d81c
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 1c9af980-4e6b-44dc-af61-dd284863ec7d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
