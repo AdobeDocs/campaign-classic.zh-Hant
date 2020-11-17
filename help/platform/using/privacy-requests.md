@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: e0ca252aceb0f2abca4a1324c5e4ece038927533
 workflow-type: tm+mt
-source-wordcount: '2443'
-ht-degree: 1%
+source-wordcount: '2444'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Campaign提供資料掌控者工具，可針對儲存在Adobe Campaign中�
 
 3個可用的現成可用名稱空間：電子郵件、手機和行動電話。 如果您需要不同的命名空間（例如收件者自訂欄位），您可以從> **[!UICONTROL Administration]****[!UICONTROL Platform]** >建立新的 **[!UICONTROL Namespaces]**。
 
-## 建立隱私權請求 {#create-privacy-request-ui}
+## Creating a Privacy request {#create-privacy-request-ui}
 
 Adobe **Campaign介面可讓您建立您的隱私權要求** ，並追蹤其演變。 若要建立新的隱私權要求，請依照下列指示：
 
@@ -129,7 +129,7 @@ Adobe **Campaign介面可讓您建立您的隱私權要求** ，並追蹤其演�
 >如果您使用描述檔刪除工作流程來執行隱私權批次要求，請考慮下列注釋：
 >* 透過工作流程刪除描述檔時，不會處理子表格。
 >* 您需要處理所有子表格的刪除。
->* Adobe建議您建立ETL工作流程，在「隱私權存取」表格中新增要刪除的行，並讓 **[!UICONTROL Delete privacy requests data]** 執行刪除。 我們建議限制每天200個設定檔，以便因效能而刪除。
+>* Adobe建議您建立ETL工作流程，在「隱私權存取」表格中新增要刪除的行，並讓工作 **[!UICONTROL Delete privacy requests data]** 流程執行刪除。 我們建議限制每天200個設定檔，以便因效能而刪除。
 
 
 ### 隱私權要求狀態 {#privacy-request-statuses}
@@ -443,14 +443,14 @@ GDPR和CCPA都常使用存取與刪除請求的設定與使用。 本節說明CC
 
 然後，您應確保您絕不會向任何第三方銷售已選擇退出之個人資料。
 
-若要變更退出狀態，請前往 **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** 並選取收件者。 在標籤 **[!UICONTROL General]** 中，您會看到在上一節中設定的欄位。
+1. 若要變更退出狀態，請前往 **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** 並選取收件者。 在標籤 **[!UICONTROL General]** 中，您會看到在上一節中設定的欄位。
 
-![](assets/privacy-ccpa-5.png)
+   ![](assets/privacy-ccpa-5.png)
 
-設定收件者清單以顯示輸出欄。 要瞭解如何配置清單，請參閱詳細 [文檔](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+1. 設定收件者清單以顯示輸出欄。 要瞭解如何配置清單，請參閱詳細 [文檔](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
-![](assets/privacy-ccpa-6.png)
+   ![](assets/privacy-ccpa-6.png)
 
-您可以按一下欄，根據退出資訊對收件者排序。 您也可以建立篩選，只顯示已選擇退出的收件者。 For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. 您可以按一下欄，根據退出資訊對收件者排序。 您也可以建立篩選，只顯示已選擇退出的收件者。 For more on creating filters, see [this section](../../platform/using/creating-filters.md).
 
-![](assets/privacy-ccpa-7.png)
+   ![](assets/privacy-ccpa-7.png)
