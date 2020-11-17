@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
 translation-type: tm+mt
-source-git-commit: e615b2420d126cd42ed52257491282b36975f9ff
+source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 
-# Gold Standard相容性矩陣{#compatibility-matrix-gs}
+# Gold Standard Compatibility matrix{#compatibility-matrix-gs}
 
 本檔案列出 **Adobe Campaign Classic Gold Standard** 19.1版本支援的所有系統和元件。 不屬於此清單的產品和版本與Adobe Campaign不相容。
 
@@ -165,7 +165,7 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 >
 >PostgreSQL是托管環境的預設資料庫伺服器。
 
-## CRM connectors{#CRMconnectors-gs}
+## CRM 連接器{#CRMconnectors-gs}
 
 <table>
 <tbody>
@@ -190,8 +190,8 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API —— 內部部署：2007、2015、2016年</p>
-<p>Soap API —— 線上：2015年、2016年</p>
+<p>Soap API - 內部部署：2007、2015、2016 年</p>
+<p>Soap API - 線上：2015、2016 年</p>
 <p>Web API —— 內部部署與線上：365、2016、2016更新1</p>
 </td>
 </tr>
@@ -308,8 +308,8 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 12</p>
-<p>與行動SDK建置版本1.0.25相容，與32和64位元版本相容。</p>
+<p>iOS 9 - 14</p>
+<p>與行動SDK建置版本1.0.26相容，與32和64位元版本相容。</p>
 </td>
 </tr>
 </tbody>
