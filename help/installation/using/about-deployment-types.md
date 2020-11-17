@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 12bb3b4ba833d2c265350167be61bd916e8b3fc8
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 8%
@@ -28,9 +28,7 @@ Adobe Campaign的模組化設計可讓您進行多種部署組態，從獨立設
 
 >[!NOTE]
 >
->主要安裝配置步驟只能由
->Adobe適用於Adobe代管的部署。 例如，
->配置伺服器和實例配置檔案。
+>主要安裝設定步驟僅能由Adobe針對Adobe代管的部署執行，例如設定伺服器和執行個體設定檔。
 >
 >若要進一步瞭解部署之間的主要差異，請參閱「代管模型 [」一節，或](../../installation/using/hosting-models.md) 參閱代管與內部部署的「功能差異」一節 [](../../installation/using/capability-matrix.md)。
 
