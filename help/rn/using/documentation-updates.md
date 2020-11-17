@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '3497'
-ht-degree: 98%
+source-wordcount: '3528'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,9 @@ ht-degree: 98%
 
 [Campaign 20.2.3版已移至](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 「一般可用性(GA)」。
 
-「隱私權」區段已移動，並包含兩個新區段： [隱私權管理](../../platform/using/privacy-management.md) , [以及管理隱私權要求](../../platform/using/privacy-requests.md)。
+「隱私權」區段已移動，並包含兩個新頁面： [隱私權管理](../../platform/using/privacy-management.md) , [以及管理隱私權要求](../../platform/using/privacy-requests.md)。
+
+在中間來源補充伺服器設定頁面中已新增附註，以指定在伺服器設定後，不應更新外部帳戶的內部名稱。 [顯示全文](../../installation/using/mid-sourcing-server.md)
 
 ## 2020 年 10 月 {#oct-2020}
 
