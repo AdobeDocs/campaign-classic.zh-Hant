@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 022fe39e849ceafa6678120ff455d07432fb9a1f
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -96,11 +96,9 @@ Teradata外部帳戶可讓您將Campaign例項連接至Teradata外部資料庫�
 
    * **[!UICONTROL Database]**:資料庫名稱（可選）
 
-   * 
-      * **[!UICONTROL Options]**:要通過Teradata傳遞的選項。 使用下列格式：&#39;parameter=value&#39;。 使用半欄作為值之間的分隔符。
-   * 
-      * **[!UICONTROL Timezone]**:Teradata中設定的時區。 [進一步瞭解](#timezone)
+   * **[!UICONTROL Options]**:要通過Teradata傳遞的選項。 使用下列格式：&#39;parameter=value&#39;。 使用半欄作為值之間的分隔符。
 
+   * **[!UICONTROL Timezone]**:Teradata中設定的時區。 [進一步瞭解](#timezone)
 
 ### 查詢色帶
 
