@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 34ee3d99-4ffb-4279-b994-5ab7abc7cf06
 translation-type: tm+mt
-source-git-commit: 270c86a8a15ebe38907be258aed9d245d2a49b6d
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 0%
 「中間採購」架構是在中間採購部 [署中呈現的](../../installation/using/mid-sourcing-deployment.md)。
 
 安裝中間採購伺服器的過程與以正常方式安裝伺服器的過程相同（請參閱標準配置）。 它是獨立實例，具有自己的資料庫，可用於運行傳送。 簡單來說，它包含額外的設定，可讓遠端執行個體在中端採購模式中透過它執行傳送。
+
+>[!CAUTION]
+>
+>在設定中間採購伺服器並首次執行 [同步工作流程](../../workflow/using/transfer-to-mid-sourcing.md) 後，請確定您未更新中間採購外部帳戶的內部名稱。
 
 ## 安裝和配置實例的步驟 {#steps-for-installing-and-configuring-an-instance}
 
