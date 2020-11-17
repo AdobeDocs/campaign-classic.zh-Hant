@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign提供一套工具，可協助您遵守隱私權法規（包括GDP
 
 * 本節提供有關隱私權管理的一般資訊，以及Adobe Campaign為管理存取權和被遺 [忘權所提供的功能](#right-access-forgotten)。
 
-* 此外，還包含管理隱私權(同意、資[料保留和使用者角色](#consent-retention-roles))的重要功能，以及使用Adobe Campaign時協助您符合隱私權規範的最佳實務。
+* 此外，還包含管理隱私權([同意、保留和角色](#consent-retention-roles))的重要功能，以及使用Adobe Campaign時協助您符合隱私權規範的最佳實務。
 
 ## 隱私權管理法規 {#privacy-management-regulations}
 
@@ -74,7 +74,7 @@ Adobe Campaign自始至終都採用有助於管理同意部分的功能。 透�
 
 有關「同意管理」的更多資訊，請參閱詳 [細檔案](../../delivery/using/managing-subscriptions.md)。
 
-除了Adobe Campaign提供的「同意管理」工具外，您還可以追蹤消費者是否選擇退出個人資訊的銷售。 請參閱[本區段](../../platform/using/privacy-requests.md#sale-of-personal-information)。
+除了Adobe Campaign提供的「同意管理」工具外，您還可以追蹤消費者是否選擇退出個人資訊的銷售。 請參閱[本區段](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa)。
 
 ### 資料保留 {#data-retention}
 
