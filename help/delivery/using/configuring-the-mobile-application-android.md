@@ -13,15 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 1%
+source-wordcount: '1593'
+ht-degree: 2%
 
 ---
 
 
-# Android的設定步驟
+# 針對 Android 的配置步驟
 
 在安裝套件後，您就可以在Adobe Campaign Classic中定義您的Android應用程式設定。
 
@@ -29,6 +29,14 @@ ht-degree: 1%
 >
 >若要瞭解如何設定iOS適用的應用程式，以及如何建立iOS的傳送，請參閱本 [節](../../delivery/using/configuring-the-mobile-application.md)。
 
+主要步驟為：
+
+1. [設定Android外部帳戶](#configuring-external-account-android)
+1. [設定Android服務](#configuring-android-service)
+1. [在Campaign中建立行動應用程式](#creating-android-app)
+1. [使用其他資料擴充應用程式架構](#extend-subscription-schema)
+
+然後，您就可以建 [立Android豐富式通知](#creating-android-delivery)。
 
 ## 設定Android外部帳戶 {#configuring-external-account-android}
 
@@ -94,23 +102,17 @@ ht-degree: 1%
    >
    > 可 **[!UICONTROL Integration key]** 完全自訂字串值，但必須與SDK中指定的值完全相同。
 
-1. 選擇以下選項之 **[!UICONTROL API version]**&#x200B;一：
-   * HTTP. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-   * HTTPV1. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+1. 選取 **[!UICONTROL API version]**：
 
-1. Fill in the **[!UICONTROL Firebase Cloud Messaging settings for the Android connection]** fields.
+   * HTTPV1. 本節將詳細介紹配 [置](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
+   * HTTP（舊版）。 本節將詳細介紹配 [置](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)。
+
+
+1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
 1. 按一下 **[!UICONTROL Finish]**，之後 **[!UICONTROL Save]**。您的Android應用程式現在已可供用於Campaign Classic。
 
 依預設，Adobe Campaign會在表格的(@userKey) **[!UICONTROL User identifier]** 欄位中儲存金鑰 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 。 此金鑰可讓您將訂閱連結至收件者。 要收集其他資料（如複雜的協調密鑰），需要應用以下配置：
-
-1. 建立方案的擴 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 展名並定義新欄位。
-
-1. 在標籤中定義映 **[!UICONTROL Subscription parameters]** 射。
-
-   >[!CAUTION]
-   >
-   >請確定標籤中的設 **[!UICONTROL Subscription parameters]** 定名稱與行動應用程式程式碼中的設定名稱相同。 請參閱「將 [Campaign SDK整合至行動應用程式」區](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 段。
 
 ### 選擇API版本{#select-api-version}
 
@@ -126,7 +128,7 @@ ht-degree: 1%
 
 1. 按一 **[!UICONTROL Load project json file to extract projet details...]** 下可直接載入您的JSON金鑰檔案。 如需如何擷取JSON檔案的詳細資訊，請參閱本 [頁](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
-1. 您也可以人工輸入下列詳細資訊：
+   您也可以人工輸入下列詳細資訊：
    * **[!UICONTROL Project Id]**
    * **[!UICONTROL Private Key]**
    * **[!UICONTROL Client Email]**
@@ -179,6 +181,19 @@ ht-degree: 1%
 | 通知消息 | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
 
 <br>
+
+## 擴充appsubscriptionRcp架構 {#extend-subscription-schema}
+
+您需要擴充 **appsubscriptionRcp** ，以定義新的其他欄位，以便從應用程式儲存參數至Campaign資料庫。 例如，這些欄位將用於個人化。 操作步驟：
+
+1. 建立方案的擴 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 展名並定義新欄位。 進一步瞭解本頁中的結構擴 [充功能](../../configuration/using/about-schema-edition.md)
+
+1. 在標籤中定義映 **[!UICONTROL Subscription parameters]** 射。
+
+   >[!CAUTION]
+   >
+   >請確定標籤中的設 **[!UICONTROL Subscription parameters]** 定名稱與行動應用程式程式碼中的設定名稱相同。 請參閱「將 [Campaign SDK整合至行動應用程式」區](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 段。
+
 
 ## 建立Android豐富式通知 {#creating-android-delivery}
 
