@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
+source-git-commit: 6c5684ad4cd1a4d2bb4f39d9e531ebd5e72d4824
 workflow-type: tm+mt
 source-wordcount: '2802'
 ht-degree: 15%
