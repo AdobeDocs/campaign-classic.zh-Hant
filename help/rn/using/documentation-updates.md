@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 58b7070ad765ba072b9c82e75ab1100f8cb38f3a
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 96%
+source-wordcount: '3588'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,8 @@ Campaign Federated Data Access(FDA)檔案已經過改良，並包含每個外部
 「隱私權」區段已移動，並包含兩個新頁面： [隱私權管理](../../platform/using/privacy-management.md) , [以及管理隱私權要求](../../platform/using/privacy-requests.md)。
 
 在中間來源補充伺服器設定頁面中已新增附註，以指定在伺服器設定後，不應更新外部帳戶的內部名稱。 [顯示全文](../../installation/using/mid-sourcing-server.md)
+
+已在語法上新增資訊，以在指定外部SFTP伺服器的路徑時使用。 [顯示全文](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
 ## 2020 年 10 月 {#oct-2020}
 
