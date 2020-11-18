@@ -10,21 +10,37 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 51%
+source-wordcount: '1086'
+ht-degree: 41%
 
 ---
 
 
 # SFTP伺服器最佳範例與疑難排解 {#sftp-server-usage}
 
-## SFTP 伺服器最佳實作 {#sftp-server-best-practices}
+## SFTP伺服器全域建議 {#global-recommendations}
 
-管理用於 ETL 的檔案和資料時，這些檔案儲存在 Adobe 提供的代管 SFTP 伺服器上。此 SFTP 旨在作為臨時儲存空間，您可以在其上控製檔案的保留和刪除。
+管理用於 ETL 的檔案和資料時，這些檔案儲存在 Adobe 提供的代管 SFTP 伺服器上。使用SFTP伺服器時，請務必遵循下列建議。
 
-如果未正確使用或監視此空間，則此空間可以快速填充伺服器上可用的物理空間，並導致在後續上載時截斷檔案。一旦空間飽和，自動清除可以觸發並從 SFTP 儲存器中刪除最舊的檔案。
+* 使用基於密鑰的身份驗證而不是密碼身份驗證，以避免密碼過期 (密碼的有效期為 90 天)。此外，基於金鑰的身份驗證允許您生成多個金鑰，例如在管理多個實體時。相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
+
+   支持的金鑰格式為 SSH-2 RSA 2048。Keys can be generated with tools like PyTTY (Windows), or ssh-keygen (Unix).You will have to provide the public key to Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) to have it uploaded on the Campaign server.
+
+* 在 SFTP 上載和工作流程中使用批次處理。
+
+* 處理錯誤/例外狀況。
+
+* 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
+
+* 您嘗試從中啟動SFTP連線的公用IP必須新增至促銷活動例項的allowlist。 您可透過 [Adobe客戶服務要求將IP位址新增至允許清單](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+
+## 資料庫使用最佳實踐 {#sftp-server-best-practices}
+
+SFTP伺服器設計為臨時儲存空間，您可以在其上控制檔案的保留和刪除。
+
+當未正確使用或監視時，這些空格可快速填滿伺服器上可用的物理空間，並導致檔案在後續上傳時遭到截斷。 一旦空間飽和，自動清除可以觸發並從 SFTP 儲存器中刪除最舊的檔案。
 
 為避免此類問題，Adobe建議遵循下列最佳實務。
 
@@ -35,21 +51,21 @@ ht-degree: 51%
 >要檢查您的執行個體是否託管在 AWS 上，請按照[本節](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/faq.html#ims-org-id)詳述的步驟操作。
 
 * 伺服器大小功能因許可證而異。在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
-* 使用基於密鑰的身份驗證而不是密碼身份驗證，以避免密碼過期 (密碼的有效期為 90 天)。此外，基於金鑰的身份驗證允許您生成多個金鑰，例如在管理多個實體時。相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
-
-   支持的金鑰格式為 SSH-2 RSA 2048。Keys can be generated with tools like PyTTY (Windows), or ssh-keygen (Unix).You will have to provide the public key to Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) to have it uploaded on the Campaign server.
 
 * 使用工作流程正確刪除資料（管理使用資料的工作流程的保留）。
-* 在 SFTP 上載和工作流程中使用批次處理。
-* 處理錯誤/例外狀況。
-* 時常登入 SFTP 以直接檢查其內容。
-* 請記住，SFTP 硬碟的管理主要是您的責任。
-* 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
-* 您嘗試從中啟動SFTP連線的公用IP必須新增至促銷活動例項的allowlist。 您可透過 [Adobe客戶服務要求將IP位址新增至允許清單](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
->[!CAUTION]
->
->如果您使用自己的 SFTP 伺服器，請務必儘可能遵循上述建議。
+* 時常登入 SFTP 以直接檢查其內容。
+
+* 請記住，SFTP 硬碟的管理主要是您的責任。
+
+## 外部SFTP伺服器使用 {#external-SFTP-server}
+
+如果您使用自己的SFTP伺服器，請務必盡可能遵循上述建議。
+
+此外，在Campaign Classic中指定外部SFTP伺服器的路徑時，路徑語法會因SFTP伺服器作業系統而異：
+
+* 如果您的SFTP伺服器位於 **Windows**，請一律使用相對路徑。
+* 如果您的STP伺服器位於 **Linux**，請始終使用相對於主目錄的路徑（以&quot;~/&quot;開頭），或絕對路徑（以&quot;/&quot;開頭）。
 
 ## Adobe代管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
