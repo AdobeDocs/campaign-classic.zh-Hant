@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: '"使用案例：建立「推薦朋友」表單"'
-seo-title: '"使用案例：建立「推薦朋友」表單"'
 description: '"使用案例：建立「推薦朋友」表單"'
-seo-description: null
-page-status-flag: never-activated
-uuid: ad8b9076-c551-420d-bb23-0b3c645ee943
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: online-surveys
-discoiquuid: bbb1154f-2818-489c-9860-0e860596cbf7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 5%
+source-wordcount: '621'
+ht-degree: 3%
 
 ---
 
