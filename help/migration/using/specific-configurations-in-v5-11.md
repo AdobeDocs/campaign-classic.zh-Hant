@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: v5.11 中 的特定配置
-seo-title: v5.11 中 的特定配置
 description: v5.11 中 的特定配置
-seo-description: null
-page-status-flag: never-activated
-uuid: d6920beb-a766-4aec-8a8e-d32e47b545a4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: fc280640-528d-44de-87d8-52f443772abd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1041'
 ht-degree: 3%
 
 ---
@@ -119,7 +114,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 * 內部名稱：NlMigration_KeepFolderStructure
 * 資料類型：整數
-* 值（文本）:1
+* 值（文本）:3
 
 如果您使用此選項，在移轉後，您必須刪除過時的資料夾，新增資料夾並執行所有必要的檢查。
 
@@ -160,7 +155,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 | ncmImage | 影像 | 已安裝Content Manager |
 | ncmJavascript | JavaScript程式碼 | 已安裝Content Manager |
 | ncmJst | JavaScript範本 | 已安裝Content Manager |
-| ncmParameters | 設定 | 已安裝Content Manager |
+| ncmParameters | 配置 | 已安裝Content Manager |
 | ncmSrcSchema | 資料綱要 | 已安裝Content Manager |
 | ncmStylesheet | XSL樣式檔 | 已安裝Content Manager |
 | nmsAdminPlan | 管理 | 已安裝促銷活動 |
