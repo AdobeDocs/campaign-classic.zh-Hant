@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 字彙
-seo-title: 字彙
 description: 字彙
-seo-description: null
-page-status-flag: never-activated
-uuid: 7c96d243-99d8-4402-9e2a-75beb8b2fbee
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 translation-type: tm+mt
-source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
