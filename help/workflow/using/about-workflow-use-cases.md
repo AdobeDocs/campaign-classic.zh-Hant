@@ -1,21 +1,18 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於工作流程使用案例
 description: 進一步瞭解您可以使用Campaign Classic工作流程來執行的使用案例。
-page-status-flag: never-activated
-uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/STANDARD
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
-discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 46%
+ht-degree: 66%
 
 ---
 
@@ -36,7 +33,7 @@ ht-degree: 46%
 * [載入傳遞內容](../../workflow/using/loading-delivery-content.md)
 * [跨通道傳遞工作流程](../../workflow/using/cross-channel-delivery-workflow.md)
 * [使用自訂日期欄位擴充電子郵件](../../workflow/using/email-enrichment-with-custom-date-fields.md)
-* [自動化內容建立、編輯和發佈](../../delivery/using/automating-via-workflows.md#examples)
+* [自動建立、編輯和發佈內容](../../delivery/using/automating-via-workflows.md#examples)
 
 ## 監控{#monitoring}
 
@@ -45,7 +42,7 @@ ht-degree: 46%
 * [傳送報表至清單](../../workflow/using/sending-a-report-to-a-list.md)
 * [監督工作流程](../../workflow/using/supervising-workflows.md)
 * [傳送個人化警報給營運商](../../workflow/using/sending-personalized-alerts-to-operators.md)
-* [在傳送傳送前設定收件者核准程式](../../workflow/using/using-the-local-approval-activity.md)
+* [在傳送傳遞前，設定收件者核准程序](../../workflow/using/using-the-local-approval-activity.md)
 
 ## 資料管理{#management}
 
@@ -59,7 +56,7 @@ ht-degree: 46%
 * [使用控制面板上安裝的密鑰加密和導出資料](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
 
-## 定位 {#designing-queries}
+## 目標定位{#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
@@ -71,5 +68,5 @@ ht-degree: 46%
 * [新增分項清單類型計算欄位](../../workflow/using/adding-enumeration-type-calculated-field.md)
 * [建立篩選](../../workflow/using/creating-a-filter.md)
 * [篩選重複的收件者](../../workflow/using/filtering-duplicated-recipients.md)
-* [呼叫查詢中的例項變數](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
-* [對人口套用分割百分比](../../workflow/using/javascript-scripts-and-templates.md#example)
+* [調用查詢中的執行個體變數](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
+* [將分割百分比套用在人口上](../../workflow/using/javascript-scripts-and-templates.md#example)
