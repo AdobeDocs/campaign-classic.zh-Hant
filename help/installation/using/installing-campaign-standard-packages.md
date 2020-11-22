@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 安裝Campaign Classic內建套件
 description: 瞭解如何安裝Campaign內建套件
-page-status-flag: never-activated
-uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 5%
@@ -113,7 +110,7 @@ ht-degree: 5%
    <td> 執行<br /> </td>
   </tr> 
   <tr> 
-   <td> LINE 通道<br /> </td> 
+   <td> LINE 道<br /> </td> 
    <td> 使用LINE渠道與Adobe Campaign傳送傳送。 選填。交易式訊息（訊息中心套件）強制性。 <a href="../../delivery/using/line-channel.md">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
@@ -183,7 +180,7 @@ ht-degree: 5%
    <td> 行銷 </td> 
   </tr> 
   <tr> 
-   <td> CRM connectors<br /> </td> 
+   <td> CRM 連接器<br /> </td> 
    <td> 提供多種CRM連接器，以連結您的Adobe Campaign平台與協力廠商系統。  <a href="../../platform/using/crm-connectors.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
