@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於Adobe Campaign Classic中的架構參考
 description: 瞭解如何設定擴充結構，以擴充Adobe Campaign Classic資料庫的概念資料模型。
-page-status-flag: never-activated
-uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 7%
