@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立摘要清單
-seo-title: 建立摘要清單
 description: 建立摘要清單
-seo-description: null
-page-status-flag: never-activated
-uuid: ea9d097d-d474-47e6-b0d7-08d587666a55
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-discoiquuid: 6b0acb6b-0808-4972-b2a2-15fab29b3861
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '974'
 ht-degree: 2%
 
 ---
