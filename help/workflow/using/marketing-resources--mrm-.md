@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 行銷資源 (MRM)
-seo-title: 行銷資源 (MRM)
 description: 行銷資源 (MRM)
-seo-description: null
-page-status-flag: never-activated
-uuid: cccd9046-be4f-4eaa-adb4-802fbb2ea87a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-discoiquuid: cf535ff5-f871-4edb-bc05-993cd5b1937b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 14%
+source-wordcount: '92'
+ht-degree: 11%
 
 ---
 
