@@ -1,26 +1,21 @@
 ---
-title: SMS 通道
-seo-title: SMS 通道
-description: SMS 通道
-seo-description: null
-page-status-flag: never-activated
-uuid: be6a2abc-ba5c-4363-bf38-cc309ee3a8d9
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: SMS 頻道
+description: SMS 頻道
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '3151'
+source-wordcount: '3149'
 ht-degree: 20%
 
 ---
 
 
-# SMS 通道{#sms-channel}
+# SMS 頻道{#sms-channel}
 
 Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描述檔必須至少包含行動電話號碼。
 
@@ -495,7 +490,7 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板可在節點�
 
 傳送訊息後，您可以監控及追蹤傳送內容。 如需詳細資訊，請參閱下列區段。
 
-* [監控傳送](../../delivery/using/monitoring-a-delivery.md)
+* [監視](../../delivery/using/monitoring-a-delivery.md)
 * [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
 * [關於訊息追蹤](../../delivery/using/about-message-tracking.md)
 
