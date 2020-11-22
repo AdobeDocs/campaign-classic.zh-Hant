@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立Experience Manager電子報
-seo-title: 建立Experience Manager電子報
 description: 建立Experience Manager電子報
-seo-description: null
-page-status-flag: never-activated
-uuid: 75cf4891-06a6-42d2-9b22-b4d93e0dc64a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-discoiquuid: 627ade78-96b3-4a6e-9ace-74610a3c8d1a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
