@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立和管理清單
 description: 瞭解如何建立和管理清單
-page-status-flag: never-activated
-uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: profile-management
-discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 68%
@@ -38,7 +35,7 @@ Adobe Campaign 提供兩種類型的清單：
 
    Unlike the **[!UICONTROL Group]** type list, this type list can be automatically updated with a **[!UICONTROL Scheduler]** activity. Note that For an example on how to create **[!UICONTROL List]** type lists, refer to [this page](../../workflow/using/list-update.md).
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#create-list-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-list-video)
 
 ## 從群組建立用戶檔案清單 {#creating-a-profile-list-from-a-group}
 
