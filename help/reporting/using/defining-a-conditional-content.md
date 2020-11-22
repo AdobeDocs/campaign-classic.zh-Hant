@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 定義條件式內容
-seo-title: 定義條件式內容
 description: 定義條件式內容
-seo-description: null
-page-status-flag: never-activated
-uuid: 2b49958d-6429-445d-a7dc-caaca072f4e4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-discoiquuid: 0ca5e0f6-cc81-4da9-aecf-a095cc1a19f9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 9%
+source-wordcount: '245'
+ht-degree: 8%
 
 ---
 
