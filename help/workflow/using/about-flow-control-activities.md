@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於流量控制活動
-seo-title: 關於流量控制活動
 description: 關於流量控制活動
-seo-description: null
-page-status-flag: never-activated
-uuid: de3fee78-4f1c-4c75-a7d4-b2257b0c3316
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-discoiquuid: 27cd51f6-b787-4703-a34d-ce23321f0dcf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 9%
+source-wordcount: '233'
+ht-degree: 7%
 
 ---
 
