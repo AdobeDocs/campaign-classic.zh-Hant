@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立共用連線
-seo-title: 建立共用連線
 description: 建立共用連線
-seo-description: null
-page-status-flag: never-activated
-uuid: 30d6d23b-72c6-4454-8d6b-a10102f89262
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 3%
+source-wordcount: '998'
+ht-degree: 2%
 
 ---
 
