@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 匯入和匯出受眾
-seo-title: 匯入和匯出受眾
 description: 匯入和匯出受眾
-seo-description: null
-page-status-flag: never-activated
-uuid: af03ce68-8a58-4909-83e9-23c385820284
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-discoiquuid: f26cc65a-76be-4b7a-bde3-d0cbe3eedaaf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 3%
+source-wordcount: '629'
+ht-degree: 2%
 
 ---
 
