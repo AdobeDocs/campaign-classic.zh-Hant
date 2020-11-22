@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於優惠方案模擬
-seo-title: 關於優惠方案模擬
 description: 關於優惠方案模擬
-seo-description: null
-page-status-flag: never-activated
-uuid: 3c6783a0-6bab-4c41-8101-1d926c1ac6ac
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-discoiquuid: 0af021af-2686-4a37-97d9-6d13a851b5dd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
+source-wordcount: '259'
+ht-degree: 3%
 
 ---
 
