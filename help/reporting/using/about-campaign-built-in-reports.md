@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於 Campaign 內建的報表
-seo-title: 關於 Campaign 內建的報表
 description: 關於 Campaign 內建的報表
-seo-description: null
-page-status-flag: never-activated
-uuid: 28c32281-51b8-419d-9f18-c7073788df13
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-discoiquuid: 8e4028f8-055a-435c-b226-3d8e0a352f92
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 5%
+source-wordcount: '269'
+ht-degree: 4%
 
 ---
 
