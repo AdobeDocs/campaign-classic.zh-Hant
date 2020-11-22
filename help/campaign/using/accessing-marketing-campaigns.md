@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 存取行銷活動
-seo-title: 存取行銷活動
 description: 存取行銷活動
-seo-description: null
-page-status-flag: never-activated
-uuid: a482be37-61bb-4588-9dfb-f9c3ee5a1930
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-discoiquuid: 8e7eb53c-bbe2-4bd4-8581-c2a63a3dc84e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
