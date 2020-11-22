@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 外部帳戶
 description: 瞭解如何建立外部帳戶
-page-status-flag: never-activated
-uuid: e06e7a36-b449-4ab0-a4f6-fa82dbb8de11
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 10%
