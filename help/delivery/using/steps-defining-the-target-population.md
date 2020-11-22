@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 定義目標人口
-seo-title: 定義目標人口
 description: 定義目標人口
-seo-description: null
-page-status-flag: never-activated
-uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 2%
+source-wordcount: '1572'
+ht-degree: 3%
 
 ---
 
@@ -171,7 +166,7 @@ ht-degree: 2%
 
 此證明是特殊訊息，可讓您在傳送傳送至主要目標之前先測試傳送。 證明收件者負責核准訊息的表單和內容。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#seeds-and-proofs-video)
 
 
 要選擇校樣的目標，請執行以下步驟：
@@ -230,7 +225,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以結合特定證明目標的定義和使用種子地址的選 **[!UICONTROL Specific target and Seed addresses]** 項。 然後在兩個單獨的子頁籤中定義相關配置。
 
-## How to manage seed and proofs in an email {#seeds-and-proofs-video}
+## 如何管理電子郵件中的種子和校樣 {#seeds-and-proofs-video}
 
 在此影片中，您將學習如何在現有電子郵件中新增種子和校樣，以及如何傳送。
 
