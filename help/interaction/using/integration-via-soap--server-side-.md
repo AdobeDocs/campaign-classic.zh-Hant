@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 透過 SOAP 整合 (伺服器端)
-seo-title: 透過 SOAP 整合 (伺服器端)
 description: 透過 SOAP 整合 (伺服器端)
-seo-description: null
-page-status-flag: never-activated
-uuid: 678371c5-4246-4886-994e-30dbbc70f14a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
 translation-type: tm+mt
-source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 4%
+source-wordcount: '318'
+ht-degree: 3%
 
 ---
 
