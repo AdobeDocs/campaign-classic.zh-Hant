@@ -1,28 +1,23 @@
 ---
-title: 如何設定追蹤的連結
-seo-title: 如何設定追蹤的連結
-description: 如何設定追蹤的連結
-seo-description: null
-page-status-flag: never-activated
-uuid: 0fb41a43-8a84-4a61-bf93-97e1d448a5ec
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 如何配置追蹤的連結
+description: 如何配置追蹤的連結
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 12%
+source-wordcount: '443'
+ht-degree: 11%
 
 ---
 
 
-# 如何設定追蹤的連結{#how-to-configure-tracked-links}
+# 如何配置追蹤的連結{#how-to-configure-tracked-links}
 
-對於每次傳遞，您都可以追蹤訊息是否收到，以及郵件內容中的連結是否被點擊。這樣，您可以在目標傳遞行動實施後，追蹤收件者的行為。
+對於每次傳遞，您都可以追蹤訊息是否收到，以及郵件內容中的連結是否被啟用。這樣，您可以在目標傳遞操作實施後，追蹤收件者的行為。
 
 >[!NOTE]
 >
