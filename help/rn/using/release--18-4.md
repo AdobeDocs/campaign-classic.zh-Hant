@@ -1,26 +1,21 @@
 ---
-title: 版本 18.4
-seo-title: 版本 18.4
-description: 版本 18.4
-seo-description: null
-page-status-flag: never-activated
-uuid: d132570e-20e6-4550-95bd-176701f43b19
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 第 18.4 發行版本
+description: 第 18.4 發行版本
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2262'
 ht-degree: 7%
 
 ---
 
 
-# 版本 18.4{#release-18-4}
+# 第 18.4 發行版本{#release-18-4}
 
 ## 版本 18.4.5 - Build 8937{#release-18-4-5-build-8937}
 
