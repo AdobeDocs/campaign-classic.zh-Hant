@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 在Adobe Campaign Classic中定義互動式內容
 description: 瞭解如何在Adobe Campaign Classic中使用AMP定義互動式和動態電子郵件內容。
-page-status-flag: never-activated
-uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -47,7 +44,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 
 如需有關AMP for Email格式、規格和需求的詳細資訊，請參閱 [AMP開發人員檔案](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email)。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#amp-email-video)
 
 ## 搭配Adobe Campaign使用AMP for Email的關鍵步驟 {#key-steps-to-use-amp}
 
@@ -206,7 +203,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 >
 >依預設， **[!UICONTROL AMP inclusion]** 選項會設為 **[!UICONTROL No]**。
 
-## 如何啟動和使用AMP處理電子郵件 {#amp-email-video}
+## 如何啟用和使用電子郵件 AMP {#amp-email-video}
 
 以下影片說明如何在Adobe Campaign Classic 啟動 AMP，並展示其使用情形。
 
