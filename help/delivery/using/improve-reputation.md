@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用Adobe Campaign Classic提升您的聲譽
 description: 進一步瞭解如何在使用Adobe Campaign Classic時提升您的聲譽。
-page-status-flag: never-activated
-uuid: 2681042b-3018-42ae-b252-2367b56616bd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 2%
@@ -55,6 +52,6 @@ ht-degree: 2%
 
 ## 隔離 {#quarantines}
 
-Adobe Campaign 管理隔離地址的清單。在傳送分析期間，預設會排除隔離地址的收件者：它們不是目標。 例如，當收件箱已滿或地址不存在時，可以隔離電子郵件地址。 在所有情況下，隔離都符合下列具體規則。
+Adobe Campaign 管理隔離地址清單。在傳送分析期間，預設會排除隔離地址的收件者：它們不是目標。 例如，當收件箱已滿或地址不存在時，可以隔離電子郵件地址。 在所有情況下，隔離都符合下列具體規則。
 
 隔離管理介紹在 [本節中](../../delivery/using/understanding-quarantine-management.md)。
