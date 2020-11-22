@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 資料庫效能
-seo-title: 資料庫效能
 description: 資料庫效能
-seo-description: null
-page-status-flag: never-activated
-uuid: 47ff7532-1fe7-47c2-bc3b-0f46d3a4a288
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '481'
 ht-degree: 8%
 
 ---
@@ -24,7 +19,7 @@ ht-degree: 8%
 
 大多數效能問題都與資料庫維護相關。 以下是四個主要線索，可協助您找出效能緩慢的原因：
 
-* 設定,
+* 配置,
 * 安裝和設定Adobe Campaign平台、
 * 資料庫維護,
 * 即時診斷。
