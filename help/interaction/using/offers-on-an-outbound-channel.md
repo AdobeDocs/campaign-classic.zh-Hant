@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 對出頻道上的優惠方案
-seo-title: 對出頻道上的優惠方案
 description: 對出頻道上的優惠方案
-seo-description: null
-page-status-flag: never-activated
-uuid: a8a7ce5f-0d18-47f2-b258-34b9471de769
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: case-study
-discoiquuid: 3bd113c3-da67-4f4f-aa40-f4c7860a8569
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 4%
+source-wordcount: '445'
+ht-degree: 3%
 
 ---
 
