@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於活動
-seo-title: 關於活動
 description: 關於活動
-seo-description: null
-page-status-flag: never-activated
-uuid: f71620c3-048b-462c-bb87-cfb454d93498
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: introduction
-discoiquuid: 96c0ffae-b7b8-4346-bf20-963aa233438f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 18%
+source-wordcount: '96'
+ht-degree: 16%
 
 ---
 
