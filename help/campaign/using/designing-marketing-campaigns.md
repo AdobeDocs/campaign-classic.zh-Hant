@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 設計行銷活動
-seo-title: 設計行銷活動
 description: 定義、最佳化、執行和分析行銷促銷活動。
-seo-description: null
-page-status-flag: never-activated
-uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-discoiquuid: a9eb6627-2e51-42d0-9b29-5b798bdf5b33
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 8%
+source-wordcount: '417'
+ht-degree: 7%
 
 ---
 
