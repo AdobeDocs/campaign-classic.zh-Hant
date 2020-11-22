@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於種子地址
-seo-title: 關於種子地址
 description: 關於種子地址
-seo-description: null
-page-status-flag: never-activated
-uuid: 80ab5abc-3ae0-484d-88c0-be039aac360d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 9%
 
 ---
@@ -28,7 +23,7 @@ ht-degree: 9%
 
 此外，種子位址可讓您在傳送 **傳送個人化內容和轉譯之前** ，先預覽並測試傳送的個人化內容，方法是傳送校樣(請 [參閱使用種子位址做為證明](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof))。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 種子地址功能具有以下優點：
 
