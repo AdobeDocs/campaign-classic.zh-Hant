@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 相容性矩陣
 description: 相容性矩陣
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -176,7 +173,7 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 >
 >PostgreSQL是托管環境的預設資料庫伺服器。
 
-## CRM connectors{#CRMconnectors}
+## CRM 連接器{#CRMconnectors}
 
 <table>
 <tbody>
@@ -201,8 +198,8 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API —— 內部部署：2007、2015、2016年</p>
-<p>Soap API —— 線上：2015年、2016年</p>
+<p>Soap API - 內部部署：2007、2015、2016 年</p>
+<p>Soap API - 線上：2015、2016 年</p>
 <p>Web API —— 內部部署與線上：365、2016、2016更新1</p>
 </td>
 </tr>
