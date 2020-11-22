@@ -1,26 +1,21 @@
 ---
-title: 設定 整合
-seo-title: 設定 整合
-description: 設定 整合
-seo-description: null
-page-status-flag: never-activated
-uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 配置整合
+description: 配置整合
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 2%
+source-wordcount: '435'
+ht-degree: 1%
 
 ---
 
 
-# 管線監控 {#pipeline-monitoring}
+# 管線監視 {#pipeline-monitoring}
 
 狀 [!DNL pipelined] 態web服務提供進程狀態的信 [!DNL pipelined] 息。
 
