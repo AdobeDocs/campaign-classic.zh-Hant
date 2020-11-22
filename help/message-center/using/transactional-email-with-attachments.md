@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用Adobe Campaign Classic將附件新增至交易訊息
 description: 瞭解如何使用Adobe Campaign Classic傳送包含個人及／或個人化附件的交易式電子郵件
-page-status-flag: never-activated
-uuid: 4452d839-318a-49d8-8abb-4ba04c803e9f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: use-case
-discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 1%
