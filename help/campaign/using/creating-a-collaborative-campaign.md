@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立協作行銷活動
-seo-title: 建立協作行銷活動
 description: 建立協作行銷活動
-seo-description: null
-page-status-flag: never-activated
-uuid: 13d8ff65-1480-422a-85b6-40b553a3c151
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-discoiquuid: 01d8be92-7312-4386-b5f5-651af31308f7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '912'
 ht-degree: 4%
 
 ---
