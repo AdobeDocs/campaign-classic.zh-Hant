@@ -1,24 +1,20 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 最佳化訊息傳送
-seo-title: 最佳化訊息傳送
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '733'
 ht-degree: 6%
 
 ---
 
 
-# 最佳化傳送 {#optimize-delivery}
+# 最佳化傳遞 {#optimize-delivery}
 
 在開始建立傳送之前，您可以採取數個動作來保護並最佳化上游傳送程式。
 
@@ -28,7 +24,7 @@ ht-degree: 6%
 
 數個因素會直接影響伺服器效能並減緩平台速度：
 
-* 個人化元素的數量和類型：電子郵件中的個人化會從資料庫中提取每個收件者的資料。 如果有許多個人化元素，會增加準備傳送所需的資料量。  在本節中進一步瞭解個 [人化](../../delivery/using/about-personalization.md)
+* 個人化元素的數量和類型：電子郵件中的個人化會從資料庫中提取每個收件者的資料。 如果有許多個人化元素，會增加準備傳送所需的資料量。  Learn more about personalization in [this section](../../delivery/using/about-personalization.md)
 
 * 伺服器載入：當行銷伺服器同時處理許多不同的工作時，可能會降低效能。 行銷伺服器需要協調所有傳送的所有傳入和傳出資料，以確保資料正確且準時。
 
