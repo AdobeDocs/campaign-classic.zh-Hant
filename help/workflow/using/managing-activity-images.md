@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 管理活動影像
-seo-title: 管理活動影像
 description: 管理活動影像
-seo-description: null
-page-status-flag: never-activated
-uuid: 6497d979-b22b-4245-9142-b7c5ff047413
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-discoiquuid: ae8fc2b7-456b-481c-8abb-64dab1c22534
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 7%
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
