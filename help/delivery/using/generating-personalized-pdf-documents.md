@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 產生個人化 PDF 文件
-seo-title: 產生個人化 PDF 文件
 description: 產生個人化 PDF 文件
-seo-description: null
-page-status-flag: never-activated
-uuid: d4c27523-bff3-457a-ba60-e2747a2b3166
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: 8dfc5e7c-c762-46ba-bbda-a7251354cb47
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 3%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
