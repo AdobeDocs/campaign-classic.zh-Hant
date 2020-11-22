@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 壓力規則
-seo-title: 壓力規則
 description: 壓力規則
-seo-description: null
-page-status-flag: never-activated
-uuid: 653d8336-8765-4938-88c1-a96cd76c3b7e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-discoiquuid: 3710768e-ab7f-40a4-9c48-830695adc990
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '3255'
+source-wordcount: '3253'
 ht-degree: 4%
 
 ---
