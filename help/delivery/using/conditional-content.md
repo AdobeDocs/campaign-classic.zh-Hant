@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 條件式內容
-seo-title: 條件式內容
 description: 條件式內容
-seo-description: null
-page-status-flag: never-activated
-uuid: d1c38263-a163-448c-8822-8b3e776e45cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 2%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 2%
 
 例如，透過設定條件式內容欄位，您可以根據收件者的個人檔案建立動態個人化。 當滿足特定條件時，替代文字塊和／或影像。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#conditionnal-content-video)
 
 
 ## 在電子郵件中使用條件 {#using-conditions-in-an-email}
@@ -114,7 +109,7 @@ ht-degree: 2%
    >
    >由於電子郵件內容中未定義任何替代版本，請務必在傳送電子郵件前先篩選目標人口族群。
 
-## 如何建立包含條件式內容的多語言電子報 {#conditionnal-content-video}
+## 如何建立具有條件內容的多語言電子報 {#conditionnal-content-video}
 
 透過多語言電子報的範例，瞭解如何將條件式內容新增至傳送內容。
 
