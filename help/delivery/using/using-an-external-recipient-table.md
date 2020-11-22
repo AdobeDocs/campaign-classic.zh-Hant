@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用外部收件者資料表
-seo-title: 使用外部收件者資料表
 description: 使用外部收件者資料表
-seo-description: null
-page-status-flag: never-activated
-uuid: a6147425-14f0-41e8-a47f-3e7072deafa7
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-discoiquuid: 92c32b2d-d8bf-41ab-9349-ef4a15f10521
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 22%
+source-wordcount: '83'
+ht-degree: 18%
 
 ---
 
