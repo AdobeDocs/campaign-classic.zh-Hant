@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於設定檔
-seo-title: 關於設定檔
 description: 關於設定檔
-seo-description: null
-page-status-flag: never-activated
-uuid: 9a3fcb58-a356-4eee-bc26-c64825de5f99
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: profile-management
-discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 translation-type: tm+mt
-source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '942'
 ht-degree: 63%
 
 ---
