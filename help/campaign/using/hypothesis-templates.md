@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 假設範本
-seo-title: 假設範本
 description: 假設範本
-seo-description: null
-page-status-flag: never-activated
-uuid: 080417c2-1c45-4404-961e-2e660d8f0436
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-discoiquuid: addfc395-7a85-4be1-a757-a719ed34bb33
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
