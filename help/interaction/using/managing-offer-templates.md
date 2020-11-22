@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 管理優惠方案範本
-seo-title: 管理優惠方案範本
 description: 管理優惠方案範本
-seo-description: null
-page-status-flag: never-activated
-uuid: d5d1198e-d3f3-4b83-8907-4646af89fa8c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-discoiquuid: 62d03128-5525-4556-8590-8492847c4a1f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 7%
+source-wordcount: '165'
+ht-degree: 5%
 
 ---
 
