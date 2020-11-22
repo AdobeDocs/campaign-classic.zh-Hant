@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 豐富化內容
-seo-title: 豐富化內容
 description: 豐富化內容
-seo-description: null
-page-status-flag: never-activated
-uuid: 6f1bce9f-88ed-4ad3-987f-79f6c68264d2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: content-management
-discoiquuid: 4404c21e-0a89-4762-af20-384ad7071916
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 1%
+source-wordcount: '661'
+ht-degree: 0%
 
 ---
 
