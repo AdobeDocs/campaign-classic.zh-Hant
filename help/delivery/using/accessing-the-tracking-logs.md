@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 存取追蹤記錄
-seo-title: 存取追蹤記錄
 description: 存取追蹤記錄
-seo-description: null
-page-status-flag: never-activated
-uuid: 1460739d-7e10-430d-8fed-fd24815f4a40
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-discoiquuid: ad1ce80d-8976-430d-9964-e50d548b2822
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 21%
+source-wordcount: '89'
+ht-degree: 17%
 
 ---
 
