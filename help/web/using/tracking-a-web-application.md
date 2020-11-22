@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 追蹤 Web 應用程式
-seo-title: 追蹤 Web 應用程式
 description: 追蹤 Web 應用程式
-seo-description: null
-page-status-flag: never-activated
-uuid: c087b40c-fd14-440f-8f38-33f5f68120a9
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-applications
-discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 3%
+source-wordcount: '409'
+ht-degree: 2%
 
 ---
 
