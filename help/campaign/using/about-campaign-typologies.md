@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於行銷活動態樣
-seo-title: 關於行銷活動態樣
 description: 關於行銷活動態樣
-seo-description: null
-page-status-flag: never-activated
-uuid: ec89fb14-7e2f-4e9f-b7ab-3c2caf93a697
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '481'
 ht-degree: 11%
 
 ---
@@ -24,7 +19,7 @@ ht-degree: 11%
 
 「促銷活動最佳化」是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這可確保傳送的訊息符合客戶和公司通訊政策的需求和期望。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#typologies-video)
 
 >[!NOTE]
 >
