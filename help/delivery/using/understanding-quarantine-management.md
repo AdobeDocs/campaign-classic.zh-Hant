@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 瞭解隔離管理
-seo-title: 瞭解隔離管理
 description: 瞭解隔離管理
-seo-description: null
-page-status-flag: never-activated
-uuid: 9421e26c-bdcc-4588-8e44-fa6f31051081
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 6c5684ad4cd1a4d2bb4f39d9e531ebd5e72d4824
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2799'
 ht-degree: 15%
 
 ---
