@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 匯入資料
-seo-title: 匯入資料
 description: 匯入資料
-seo-description: null
-page-status-flag: never-activated
-uuid: ca2269ad-7cfd-4f27-88be-469445a468bf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4136'
 ht-degree: 64%
 
 ---
@@ -30,7 +25,7 @@ Adobe Campaign 允許您以文字、CSV、TAB 或 XML 格式從一個或多個�
 >
 >The data can then be used exclusively in workflows via the **[!UICONTROL Read list]** object. 有關詳細資訊，請參見[此頁面](../../workflow/using/read-list.md)。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## 要匯入的資料的結構 {#structure-of-the-data-to-import}
 
