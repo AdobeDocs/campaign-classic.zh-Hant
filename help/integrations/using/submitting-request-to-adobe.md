@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 向 Adobe 提交請求
-seo-title: 向 Adobe 提交請求
 description: 向 Adobe 提交請求
-seo-description: null
-page-status-flag: never-activated
-uuid: 8caa1dd6-864d-4101-8b72-c9bd28b8173f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '156'
 ht-degree: 10%
 
 ---
@@ -39,7 +34,7 @@ ht-degree: 10%
    <td> 您的組織名稱 </td> 
   </tr> 
   <tr> 
-   <td> <strong>IMS組織ID</strong><br /> </td> 
+   <td> <strong>IMS 組織 ID</strong><br /> </td> 
    <td> 您的IMS組織ID。 <br> 您可以在Experience Cloud的「管理」功能表中找到您的IMS組織ID。 當您第一次連線至Adobe Experience Cloud時，也會提供。 </td> 
   </tr> 
   <tr> 
