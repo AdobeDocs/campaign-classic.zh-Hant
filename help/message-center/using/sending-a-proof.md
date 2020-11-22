@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 傳送證明
-seo-title: 傳送證明
 description: 傳送證明
-seo-description: null
-page-status-flag: never-activated
-uuid: 6446cc5c-8378-48d1-9486-bffbae83e28d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
 translation-type: tm+mt
-source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 8%
+source-wordcount: '140'
+ht-degree: 6%
 
 ---
 
