@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於調查
-seo-title: 關於調查
 description: 關於調查
-seo-description: null
-page-status-flag: never-activated
-uuid: 31a07a48-2ebb-4b51-ae24-382f3ce3f04a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: online-surveys
-discoiquuid: ef7d9b16-506a-409c-a578-000b88cd17a2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '584'
 ht-degree: 1%
 
 ---
@@ -28,7 +23,7 @@ Adobe Campaign包含一個圖形模組，可用來定義和發佈網頁應用程
 
 本章詳細說明如何建立和管理 **調查**、欄位和頁面管理、儲存模式和記錄。
 
-建立標準Web表單的步驟在本節中 [詳述](../../web/using/about-web-forms.md)。
+建立標準Web表單的步驟在本節 [中詳細說明](../../web/using/about-web-forms.md)。
 
 本節將詳述Web應用 [程式管理](../../web/using/about-web-applications.md)。 有關詳細資訊，請參閱本章。
 
