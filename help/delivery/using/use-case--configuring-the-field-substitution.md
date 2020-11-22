@@ -1,26 +1,21 @@
 ---
-title: '"使用案例：設定欄位替代"'
-seo-title: '"使用案例：設定欄位替代"'
-description: '"使用案例：設定欄位替代"'
-seo-description: null
-page-status-flag: never-activated
-uuid: 7f083dc6-e6d7-4eea-ac66-87674716515c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: '"使用案例：配置欄位替代"'
+description: '"使用案例：配置欄位替代"'
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-discoiquuid: a104fcab-75e6-4d73-bc3d-88570de6df7f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 6%
+source-wordcount: '448'
+ht-degree: 4%
 
 ---
 
 
-# 使用案例：設定欄位替代{#use-case-configuring-the-field-substitution}
+# 使用案例：配置欄位替代{#use-case-configuring-the-field-substitution}
 
 隨機欄位替代可讓您將收件者清單中的值歸因於使用者在傳送中使用此值時的種子地址空白(例如：名稱、城市等)。
 
