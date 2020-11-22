@@ -1,28 +1,24 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 追蹤及監控訊息
-seo-title: 追蹤及監控訊息
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '444'
 ht-degree: 2%
 
 ---
 
 
-# 追蹤和監控 {#track-and-monitor}
+# 追蹤和監視 {#track-and-monitor}
 
 您按了「傳送」按鈕？ 讓我們看看會發生什麼。 傳送後，Adobe Campaign可讓您追蹤已傳送的訊息，並瞭解收件者對傳送的反應。 這可協助您改善未來的傳送方式，並最佳化您的下一個促銷活動。
 
-## 監控傳遞{#monitoring-deliveries}
+## 監視傳遞{#monitoring-deliveries}
 
 若要控制您的促銷活動，您必須確保訊息確實已傳送給收件者。
 
