@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 訊息中心事件的歷程記錄
-seo-title: 訊息中心事件的歷程記錄
 description: 訊息中心事件的歷程記錄
-seo-description: null
-page-status-flag: never-activated
-uuid: ed2cf462-6fa9-47c7-912d-6d8253806629
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: reports
-discoiquuid: 3caa1bd7-7111-4f94-ab89-5e12eaca4966
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 14%
+source-wordcount: '135'
+ht-degree: 11%
 
 ---
 
