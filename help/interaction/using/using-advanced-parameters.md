@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用進階參數
-seo-title: 使用進階參數
 description: 使用進階參數
-seo-description: null
-page-status-flag: never-activated
-uuid: ae34c763-23fd-43ee-9784-4ea95027090b
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
 translation-type: tm+mt
-source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 9%
+source-wordcount: '118'
+ht-degree: 7%
 
 ---
 
