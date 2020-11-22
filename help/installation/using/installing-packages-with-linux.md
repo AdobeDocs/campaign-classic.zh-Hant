@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用 Linux 安裝軟體套件
-seo-title: 使用 Linux 安裝軟體套件
 description: 使用 Linux 安裝軟體套件
-seo-description: null
-page-status-flag: never-activated
-uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
