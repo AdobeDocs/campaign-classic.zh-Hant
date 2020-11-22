@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用增量查詢更新每季清單
 description: 在此使用案例中，增量查詢會用來自動更新收件者清單。
-page-status-flag: never-activated
-uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
