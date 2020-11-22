@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 資料模型最佳實務
 description: 瞭解如何使用Campaign Classic資料模型
-page-status-flag: never-activated
-uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -241,7 +238,7 @@ Adobe建議定義其他索引，因為它可能會改善效能。
 
 請注意，連結的反向基數預設為(N)。 通過將屬性revCardinality=&#39;single&#39;添加到連結定義中，可以定義連結(1-1)。
 
-如果使用者不應看到反向連結，您可使用連結定義revLink=&#39;_NONE_&#39;來隱藏該連結。 例如，最好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件人到最後一個事務處理的連結，並且不需要從事務處理表中查看任何反向連結。
+如果使用者不應看到反向連結，您可使用連結定義revLink=&#39;_NONE_&#39;來隱藏該連結。 例如，最好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件人到最後一個事務處理的連結，並且無需從事務處理表中查看任何反向連結。
 
 執行外部連接(1-0..1)的連結應小心使用，因為它將影響系統效能。
 
