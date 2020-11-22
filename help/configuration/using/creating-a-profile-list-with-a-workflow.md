@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用工作流建立設定檔清單
 description: 瞭解如何在工作流程中建立描述檔清單
-page-status-flag: never-activated
-uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -24,7 +21,7 @@ ht-degree: 7%
 
 如需促銷活動清單的詳細資訊，請參閱 [本節](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
 若要建立定位工作流程並在自訂收件者表格中更新收件者，請遵循下列步驟：
 
