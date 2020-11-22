@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 定義直接郵件內容
-seo-title: 定義直接郵件內容
 description: 定義直接郵件內容
-seo-description: null
-page-status-flag: never-activated
-uuid: eac69f58-5ecb-4884-8806-edb16e6dece8
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-discoiquuid: 443689f4-4c82-490f-ad96-22446f649a07
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 11%
+source-wordcount: '164'
+ht-degree: 9%
 
 ---
 
