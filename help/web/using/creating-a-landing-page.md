@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立登錄頁面
-seo-title: 建立登錄頁面
 description: 建立登錄頁面
-seo-description: null
-page-status-flag: never-activated
-uuid: fc0e9749-f44e-4aa0-bdfa-6f44ba570bea
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-discoiquuid: 5f1e5886-628f-4c9e-80c1-d82feec23e8c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '724'
 ht-degree: 3%
 
 ---
