@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於訊息追蹤
-seo-title: 關於訊息追蹤
 description: 關於訊息追蹤
-seo-description: null
-page-status-flag: never-activated
-uuid: 91127faf-b9c4-46af-b842-b9816c501ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-discoiquuid: 5d8bbfe0-e202-4062-aa47-9ad87b975bb7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 19%
+source-wordcount: '186'
+ht-degree: 18%
 
 ---
 
@@ -30,7 +25,7 @@ ht-degree: 19%
 
 **相關主題**：
 
-* [如何設定追蹤的連結](../../delivery/using/how-to-configure-tracked-links.md)
+* [如何配置追蹤的連結](../../delivery/using/how-to-configure-tracked-links.md)
 * [轉送追蹤記錄檔](../../production/using/tracking-logs-issues.md)
 * [傳遞報表](../../reporting/using/delivery-reports.md)
 * [追蹤 Web 應用程式](../../web/using/tracking-a-web-application.md)
