@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用內容
-seo-title: 使用內容
 description: 使用內容
-seo-description: null
-page-status-flag: never-activated
-uuid: ac8c7068-d640-4934-b7f5-bc91b98eab4c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-discoiquuid: 72fe6df0-0271-48f9-bd6d-bb1ff25fbdf3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '485'
 ht-degree: 3%
 
 ---
@@ -26,7 +21,7 @@ ht-degree: 3%
 
 ## 定義資料的直接篩選 {#defining-a-direct-filter-on-data}
 
-### 篩選資料 {#filtering-data}
+### 篩選資料{#filtering-data}
 
 建立報 **[!UICONTROL Query]** 表時，使用類型活動並非必要項目。 可直接在組成報表的表格和圖表中篩選資料。
 
