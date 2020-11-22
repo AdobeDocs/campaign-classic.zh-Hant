@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 管理答案
-seo-title: 管理答案
 description: 管理答案
-seo-description: null
-page-status-flag: never-activated
-uuid: 329e2f4a-c5bc-4654-bdef-71a0818fc2b7
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: online-surveys
-discoiquuid: affecd87-00a3-4d50-92d3-31ac6228948b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
