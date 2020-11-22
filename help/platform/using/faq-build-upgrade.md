@@ -1,26 +1,23 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立升級常見問答集
 description: 與Campaign建置升級相關的常見問題
-page-status-flag: never-activated
-uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # 建立升級常見問答集 {#build-upgrade-faq}
 
-Adobe Campaign會定期更新。 如果您熟悉我們發佈的發行說 [明](../../rn/using/rn-overview.md)，您可能會注意到，平均每年2/3的次要版本都會發佈包含新功能、改進和修正的內容。 此外，我們會定期發行僅包含累積修正的組建版本。 此定期更新旨在讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
+定期更新 Adobe Campaign。如果您熟悉我們發佈的發行說 [明](../../rn/using/rn-overview.md)，您可能會注意到，平均每年2/3的次要版本都會發佈包含新功能、改進和修正的內容。 此外，我們定期發行只累積修正的版本編號。此定期更新旨在讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
 
 我們的客戶必須執行最新版的Adobe Campaign。 此外，Adobe也可讓您更有效率地協助您避免遇到問題——識別、重制和修正舊版產品的問題通常需要更多時間，更不用說您最近版本中可能遇到的某些問題已經修正。
 
