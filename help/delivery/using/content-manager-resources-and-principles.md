@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 內容管理員資源與原則
-seo-title: 內容管理員資源與原則
 description: 內容管理員資源與原則
-seo-description: null
-page-status-flag: never-activated
-uuid: 3560e392-129a-471d-a211-05481cdda224
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: content-management
-discoiquuid: b22b3abb-6fe5-4f4d-93fc-0d00d426edb6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 8%
+source-wordcount: '238'
+ht-degree: 6%
 
 ---
 
