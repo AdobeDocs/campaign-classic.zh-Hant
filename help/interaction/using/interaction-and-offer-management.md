@@ -1,16 +1,13 @@
 ---
-title: 互動與優惠管理
+solution: Campaign Classic
+product: campaign
+title: 互動與優惠方案管理
 description: 根據資格規則，將最佳項目傳送給您的聯絡人。
-page-status-flag: never-activated
-uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-discoiquuid: 9fe22450-057c-44b4-ab73-4027a2ddb20c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -18,7 +15,7 @@ ht-degree: 10%
 ---
 
 
-# 互動與優惠管理{#interaction-and-offer-management}
+# 互動與優惠方案管理{#interaction-and-offer-management}
 
 互動功能可讓您在與特定連絡人（客戶或目標）互動時，即時回應，讓他們成為單一或數個已調整的選件。 例如，這些訊息可以是簡單的通訊訊息、單一或數種產品或服務的特殊優惠。
 
