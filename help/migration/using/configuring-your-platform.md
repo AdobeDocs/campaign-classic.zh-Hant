@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 設定您的平台
-seo-title: 設定您的平台
 description: 設定您的平台
-seo-description: null
-page-status-flag: never-activated
-uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -96,7 +91,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
    如果您自訂安裝資料夾，請務必檢查在移轉後是否正確更新。 有關詳細資訊，請參閱 [Tomcat](../../migration/using/general-configurations.md#tomcat) 部分。
 
-* 報表
+* 報告
 
    現成可用的報表目前使用v6.x轉換引擎。 如果您已將JavaScript程式碼新增至報表中，某些元素可能會變更。
 
