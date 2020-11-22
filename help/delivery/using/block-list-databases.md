@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Denylist資料庫
-seo-title: Denylist資料庫
 description: Denylist資料庫
-seo-description: null
-page-status-flag: never-activated
-uuid: 8a4a69f9-87d5-4044-bc55-76cdcb2e7800
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
