@@ -1,30 +1,25 @@
 ---
-title: 使用資料套件
-seo-title: 使用資料套件
-description: 使用資料套件
-seo-description: null
-page-status-flag: never-activated
-uuid: 867b2702-dbc4-4b71-a385-a2c7fd09d25e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 使用資料包
+description: 使用資料包
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2458'
 ht-degree: 3%
 
 ---
 
 
-# 使用資料套件{#working-with-data-packages}
+# 使用資料包{#working-with-data-packages}
 
 ## 關於資料包 {#about-data-packages}
 
-使用 Adobe Campaign，您可以透過資料包系統匯出或匯入平台設定和資料。包可以包含不同類型的配置、元素、過濾或不過濾。
+使用 Adobe Campaign，您可以透過資料包系統匯出或匯入平台配置和資料。包可以包含不同類型的配置、元素、過濾或不過濾。
 
 資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
 
