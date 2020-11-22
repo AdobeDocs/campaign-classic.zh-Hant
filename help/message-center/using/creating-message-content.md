@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立訊息內容
-seo-title: 建立訊息內容
 description: 建立訊息內容
-seo-description: null
-page-status-flag: never-activated
-uuid: 4ee013fc-fba2-4120-b796-dd4008000ea9
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
 translation-type: tm+mt
-source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 4%
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
