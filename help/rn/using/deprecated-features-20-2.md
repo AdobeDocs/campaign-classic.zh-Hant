@@ -1,18 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Campaign Classic 已棄用和移除的功能
 description: 本頁列出 Adobe Campaign Classic 已棄用和已移除的功能
-page-status-flag: never-activated
-uuid: null
-contentOwner: simonetn
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 100%
 
@@ -49,7 +47,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
    <tr>
   <td>SMS 連接器<br></td>
-  <td><p> 下列 SMS 連接器自 Campaign 第 20.2 發行版本開始將不再使用。<p>
+  <td><p> 下列 SMS 連接器自 Campaign 20.2 發行版本開始將不再使用。<p>
    <ul>
    <li>NetSize</li>
    <li>Generic SMPP（支援二進位模式的 SMPP 第 3.4 版本）</li>
