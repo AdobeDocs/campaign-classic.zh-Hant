@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 在Adobe Campaign Classic中定義電子郵件內容
 description: 瞭解如何使用Adobe Campaign Classic定義電子郵件內容。
-page-status-flag: never-activated
-uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2887'
 ht-degree: 1%
@@ -421,4 +418,4 @@ Adobe Campaign可讓您檢查訊息格式是否適合傳送至日文行動裝置
 
 >[!IMPORTANT]
 >
->請務必遵守與每種日文電子郵件格式（裝飾郵件、裝飾郵件和廣告郵件）相關的特殊功能。 For more information on limitations, refer to [this section](#limitations-and-recommendations).
+>請務必遵守與每種日文電子郵件格式（裝飾郵件、裝飾郵件和轉寄郵件）相關的特殊功能。 For more information on limitations, refer to [this section](#limitations-and-recommendations).
