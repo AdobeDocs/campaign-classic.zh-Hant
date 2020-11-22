@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用自訂日期欄位擴充電子郵件
 description: 瞭解如何透過自訂日期欄位豐富電子郵件內容
-page-status-flag: never-activated
-uuid: 6dd240b1-f995-4e12-90a5-55aeb584bcdc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-discoiquuid: 9cb3be65-6652-47fa-b8a4-e088530aab4a
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
