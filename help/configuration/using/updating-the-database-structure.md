@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 更新資料庫結構
-seo-title: 更新資料庫結構
 description: 更新資料庫結構
-seo-description: null
-page-status-flag: never-activated
-uuid: 084dcc7b-f890-4dff-a322-c9a8f1d614b8
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-discoiquuid: b82ae459-30b5-4a1c-91cc-5c7b8f128333
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 11%
+source-wordcount: '137'
+ht-degree: 8%
 
 ---
 
