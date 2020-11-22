@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: SpamAssassin
 description: 瞭解如何使用SpamAssassin設定電子郵件垃圾訊息偵測
-page-status-flag: never-activated
-uuid: 4f439432-4215-42ed-8f92-b4ca8dd92726
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -59,7 +56,7 @@ SpamAssassin運用多種垃圾郵件偵測技術，包括：
 
 1. 按一下 **[!UICONTROL More...]** 警告旁的連結。
 1. 選取 **[!UICONTROL Anti-spam checking]** 索引標籤。
-1. 請至區段 **[!UICONTROL Points / Rule / Description]** 以檢視此風險的原因。
+1. 請至本節 **[!UICONTROL Points / Rule / Description]** 以檢視此風險的原因。
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
