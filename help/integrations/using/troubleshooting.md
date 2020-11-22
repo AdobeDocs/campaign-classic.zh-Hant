@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 疑難排解
-seo-title: 疑難排解
 description: 疑難排解
-seo-description: null
-page-status-flag: never-activated
-uuid: fb51ad18-221b-4058-b206-ca2ca045c507
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-discoiquuid: f3ff8c8e-22b0-4d61-9f26-11f5ca3bc0be
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 4%
+source-wordcount: '130'
+ht-degree: 3%
 
 ---
 
