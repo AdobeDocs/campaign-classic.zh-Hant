@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立優惠方案類別
-seo-title: 建立優惠方案類別
 description: 建立優惠方案類別
-seo-description: null
-page-status-flag: never-activated
-uuid: 5ac0ae5e-1731-4699-b4ef-f3867ad0ab58
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
 translation-type: tm+mt
-source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 4%
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
 
