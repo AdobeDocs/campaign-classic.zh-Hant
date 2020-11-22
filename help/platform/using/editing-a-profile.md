@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 編輯用戶檔案
-seo-title: 編輯用戶檔案
 description: 編輯用戶檔案
-seo-description: null
-page-status-flag: never-activated
-uuid: ad3cd54e-b22f-4fae-8d2a-3e0d3e45fffb
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: profile-management
-discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '471'
 ht-degree: 87%
 
 ---
