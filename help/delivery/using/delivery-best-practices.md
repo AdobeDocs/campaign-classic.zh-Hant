@@ -1,24 +1,20 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 宣傳活動提供最佳實務
-seo-title: 提供最佳實務
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 6%
+source-wordcount: '94'
+ht-degree: 24%
 
 ---
 
 
-# 提供最佳實務 {#delivery-best-practices}
+# 傳遞最佳實務{#delivery-best-practices}
 
 瞭解與Adobe Campaign的傳送設計和傳送相關的最佳實務。 使用下列連結來導覽主題並尋找指引。
 
@@ -30,7 +26,7 @@ ht-degree: 6%
     </a>
     <div>
       <a href="optimize-delivery.md">
-    <strong>最佳化傳送</strong>
+    <strong>最佳化傳遞</strong>
     </a>
     </div>
     <p>
@@ -71,7 +67,7 @@ ht-degree: 6%
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>定義正確的受眾</strong>
+    <strong>定義正確受眾</strong>
     </a>
     </div>
     <p>
@@ -97,7 +93,7 @@ ht-degree: 6%
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>追蹤和監控</strong>
+    <strong>追蹤和監視</strong>
     </a>
     </div>
     <p>
