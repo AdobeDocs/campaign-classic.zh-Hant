@@ -1,26 +1,21 @@
 ---
-title: 版本 19.1
-seo-title: 版本 19.1
-description: 版本 19.1
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 第 19.1 發行版本
+description: 第 19.1 發行版本
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2623'
-ht-degree: 5%
+source-wordcount: '2622'
+ht-degree: 7%
 
 ---
 
 
-# 版本 19.1{#release-19-1}
+# 第 19.1 發行版本{#release-19-1}
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
@@ -62,15 +57,15 @@ _2019年10月3日_
 
 **功能改善**
 
-* 修正使用Salesforce的CRM連接器時的問題。 (NEO-17712)
-* 修正在傳送事務性訊息時，可能導致效能問題的索引問題。
+* 修正了為 Salesforce 而使用 CRM 連接器所產生的問題。(NEO-17712)
+* 修正了正在傳送異動訊息時，可能導致效能問題的索引問題。
 * 修正傳送訊息時的效能問題。 (NEO-17558)
 * 修正Mid-Sourcing伺服器無法處理某些訊息的問題。 (NEO-12395)
 * 修正無法充分使用SQL資料管理活動（缺少名為右的「SQL資料管理」）的問題。
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-_2019年8月13日_
+_2019 年 8 月 13 日_
 
 **功能改善**
 
@@ -122,7 +117,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>為了提高管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增允許清單的IP位址，以及為每個例項安裝SSH金鑰。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">詳細文件</a>及<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">作法影片</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
+   <td> <p>為了提高管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增允許清單的IP位址，以及為每個例項安裝SSH金鑰。 請注意，控制面板僅適用於當天AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">詳細文件</a>及<a href="https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/control-panel/control-panel-overview.html">作法影片</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
   </tr> 
     <tr> 
    <td> 稽核軌跡<br /> </td> 
