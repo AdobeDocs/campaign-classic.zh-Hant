@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 在Adobe Campaign中設定Android行動應用程式
 description: 瞭解如何設定Android適用的行動應用程式
-page-status-flag: never-activated
-uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a69c9132a776eac5591bbbac0c89d6374047bb17
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 2%
@@ -189,7 +186,7 @@ ht-degree: 2%
 
    >[!CAUTION]
    >
-   >請確定標籤中的設 **[!UICONTROL Subscription parameters]** 定名稱與行動應用程式程式碼中的設定名稱相同。 請參閱「將 [Campaign SDK整合至行動應用程式」區](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 段。
+   >請確定標籤中的設 **[!UICONTROL Subscription parameters]** 定名稱與行動應用程式程式碼中的設定名稱相同。 請參閱「將 [Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 」區段。
 
 
 ## 建立Android豐富式通知 {#creating-android-delivery}
