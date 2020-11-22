@@ -1,20 +1,15 @@
 ---
-title: 監控傳送
-seo-title: 監控傳送
-description: 監控傳送
-seo-description: null
-page-status-flag: never-activated
-uuid: 7cb409eb-a01c-4b4d-bb62-760e0bafdc8a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 監視
+description: 監視
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2559'
 ht-degree: 2%
 
 ---
@@ -28,7 +23,7 @@ ht-degree: 2%
 
 * [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
 * [瞭解隔離管理](../../delivery/using/understanding-quarantine-management.md)
-* [提供最佳實務](../../delivery/using/delivery-best-practices.md)
+* [傳遞最佳實務](../../delivery/using/delivery-best-practices.md)
 * [管理傳送能力](../../delivery/using/about-deliverability.md)
 
 ## 傳送控制面板 {#delivery-dashboard}
@@ -121,7 +116,7 @@ ht-degree: 2%
    * 附加的消息(**[!UICONTROL quotas met]** 消息):已符合Campaign中定義的宣告性MX規則所宣告的配額。 For more information about this message, refer to [this page](../../delivery/using/deliverability-faq.md) . 若要進一步瞭解MX規則，請參 [閱本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
    * 附加的消息(**[!UICONTROL dynamic flow control]** 消息):Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，進而面臨潛在的拒絕清單。
 
-* 系統問題可能會阻止伺服器進行交互：這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如在取得個人化資料的過程中會影響促銷活動。
+* 系統問題可能會阻止伺服器進行交互：這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如，在取得個人化資料的過程中，這些問題可能會影響促銷活動。
 
 ### 最佳效能實務 {#best-practices-performance}
 
