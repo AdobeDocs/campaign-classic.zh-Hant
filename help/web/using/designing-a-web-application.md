@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 設計 Web 應用程式
-seo-title: 設計 Web 應用程式
 description: 設計 Web 應用程式
-seo-description: null
-page-status-flag: never-activated
-uuid: 29c11154-f056-4047-849a-739ba0a2c615
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-applications
-discoiquuid: 08efa472-d090-404d-9ad7-47adb3489c30
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 4%
+source-wordcount: '361'
+ht-degree: 3%
 
 ---
 
