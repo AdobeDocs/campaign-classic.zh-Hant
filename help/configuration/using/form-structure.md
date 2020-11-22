@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 表單結構
-seo-title: 表單結構
 description: 表單結構
-seo-description: null
-page-status-flag: never-activated
-uuid: b4e2078e-5630-493b-8ed5-3553ffea105c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: input-forms
-discoiquuid: f8ae9497-9ca2-4c0c-8dc8-c0563839b036
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2384'
 ht-degree: 0%
 
 ---
