@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 新增欄位至網路表單
-seo-title: 新增欄位至網路表單
 description: 新增欄位至網路表單
-seo-description: null
-page-status-flag: never-activated
-uuid: 33c6ab85-b021-422a-a224-c9eff27e6fc0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-forms
-discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2446'
 ht-degree: 1%
 
 ---
