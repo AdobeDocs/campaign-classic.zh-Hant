@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 一般匯入和匯出
-seo-title: 一般匯入和匯出
 description: 一般匯入和匯出
-seo-description: null
-page-status-flag: never-activated
-uuid: e98753bb-1f14-4ec7-aa3b-d5e4f1ebaef7
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '485'
 ht-degree: 55%
 
 ---
@@ -40,7 +35,7 @@ Adobe Campaign 還提供了一個匯入模組，可讓您使用外部檔案為�
 >
 >Campaign 中的資料匯入應通過工作流程執行，以確保資料一致性並提高效率。有關詳細資訊，請參見[匯入資料](../../workflow/using/importing-data.md)、[匯入最佳實作](../../workflow/using/importing-data.md#best-practices-when-importing-data)和[匯入範本示例](../../workflow/using/importing-data.md#setting-up-a-recurring-import)部分。
 
-![](assets/do-not-localize/how-to-video.png) [在視訊中探索此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
 ## 建立作業範本 {#creating-a-job-template}
 
