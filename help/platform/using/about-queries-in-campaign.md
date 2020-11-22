@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於 Campaign 中的查詢
-seo-title: 關於 Campaign 中的查詢
 description: 關於 Campaign 中的查詢
-seo-description: null
-page-status-flag: never-activated
-uuid: 5b48dc57-678d-4cef-84e9-5c50df3c72db
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-discoiquuid: 08161b4a-7196-41db-b3df-68012a9fc2f8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '177'
 ht-degree: 86%
 
 ---
@@ -22,9 +17,9 @@ ht-degree: 86%
 
 # 關於 Campaign 中的查詢{#about-queries-in-campaign}
 
-您可以在軟體的多個層級上找到 Adobe Campaign 查詢工具：建立目標母體、細分客戶、擷取和篩選追蹤記錄、建立篩選器等。
+您可以在軟體的多個層級上找到 Adobe Campaign 查詢工具：建立目標母體、劃分客戶、擷取和篩選追蹤記錄、建立篩選器等。
 
-Adobe Campaign查詢工具可讓您使用專用精靈查詢資料庫：一般查詢編輯器。 It is accessed via the **[!UICONTROL Tools > Generic query editor...]** menu. 透過它，您可擷取儲存在資料庫中的資訊，將其整理、分組、排序等操作。例如，使用者可以在新聞稿的連結上，還原在給定時間內點擊連結超過 [n] 次以上的收件者。透過這個工具，您可根據您的需求收集、排序和顯示結果。
+Adobe Campaign查詢工具可讓您使用專用精靈查詢資料庫：一般查詢編輯器。 It is accessed via the **[!UICONTROL Tools > Generic query editor...]** menu. 透過它，您可擷取儲存在資料庫中的資訊，將其整理、分組、排序等操作。例如，使用者可以在新聞稿的連結上，還原在給定時間內按一下連結超過 [n] 次以上的收件者。透過這個工具，您可根據您的需求收集、排序和顯示結果。
 
 此工具結合了 Adobe Campaign 的所有可行的查詢方式。例如，您可以建立和儲存限制篩選器。這表示在目標工作流程等的查詢方塊中，可以使用在一般查詢編輯器中建立的使用者篩選器。
 
