@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 在 Twitter 上發佈
-seo-title: 在 Twitter 上發佈
 description: 在 Twitter 上發佈
-seo-description: null
-page-status-flag: never-activated
-uuid: 405bce50-a63c-4bd3-8f03-c71809bb1cfd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
-discoiquuid: 2dc278ce-477c-493d-8abb-8bbdf2e988a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '941'
 ht-degree: 5%
 
 ---
