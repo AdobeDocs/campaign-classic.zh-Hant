@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於立方體
-seo-title: 關於立方體
 description: 關於立方體
-seo-description: null
-page-status-flag: never-activated
-uuid: 429bd5e9-288a-4c71-9b01-c4c5690f5abe
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '731'
 ht-degree: 10%
 
 ---
@@ -26,9 +21,9 @@ ht-degree: 10%
 
 立方可用來產生特定的內建報表，包括傳送報表（傳送追蹤、點按、開啟等）。 基於立方的報告只能用作500萬條資料線以下資料卷的標準。
 
-您可以擴充資料庫的探索和分析能力，同時讓最終使用者更容易設定報表和表格：他們只需在建立其報表或表格時，選取現有的 (完全設定好的) 立方體，以處理計算、測量和統計數據。
+您可以擴充資料庫的探索和分析能力，同時讓最終使用者更容易設定報告和表格：他們只需在建立其報告或表格時，選取現有的（全設定好的）多維度資料集，以處理計算、測量和統計數據。
 
-建立並設定立方體後，便可以用於報表查詢方塊和 Web 應用程式；立方體並可以在樞紐分析表內使用及操作。
+建立並設定多維度資料集後，便可以用於報告查詢方塊和網頁應用程式；可以在樞紐分析表內使用及操作多維度資料集。
 
 >[!CAUTION]
 >
