@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 個人化區塊
-seo-title: 個人化區塊
 description: 個人化區塊
-seo-description: null
-page-status-flag: never-activated
-uuid: f9867f8d-f6ce-4a5f-b6b4-fd8056d28576
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 2%
+source-wordcount: '886'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 2%
 
 個人化區塊是動態、個人化的，並包含您可插入遞送的特定演算。 例如，您可以新增標誌、問候訊息或鏡像頁面的連結。 請參 [閱插入個人化區塊](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png) 探索視訊中的 [這項功能](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png)[ 在影片中探索此功能](#personalization-blocks-video)
 
 個人化區塊可透過Adobe Campaign **[!UICONTROL Resources > Campaign Management > Personalization blocks]** 檔案總管的節點存取。 預設有數個區塊(請參 [閱現成可用的個人化區塊](#out-of-the-box-personalization-blocks))。
 
