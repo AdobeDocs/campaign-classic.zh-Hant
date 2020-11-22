@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用立方體來探索資料
-seo-title: 使用立方體來探索資料
 description: 使用立方體來探索資料
-seo-description: null
-page-status-flag: never-activated
-uuid: ba15e7dc-0a3b-48cf-971a-7a89b8b9c9f7
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-discoiquuid: e1ab1e82-8194-40a8-8df3-e7cfbaa3e777
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 3%
+source-wordcount: '956'
+ht-degree: 2%
 
 ---
 
