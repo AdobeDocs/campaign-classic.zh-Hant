@@ -1,26 +1,21 @@
 ---
-title: 建立和辨識傳遞
-seo-title: 建立和辨識傳遞
-description: 建立和辨識傳遞
-seo-description: null
-page-status-flag: never-activated
-uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 建立和識別傳遞
+description: 建立和識別傳遞
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 13%
+source-wordcount: '271'
+ht-degree: 11%
 
 ---
 
 
-# 建立和辨識傳遞 {#create-and-identify-the-delivery}
+# 建立和識別傳遞 {#create-and-identify-the-delivery}
 
 ## 建立傳送 {#creating-the-delivery}
 
