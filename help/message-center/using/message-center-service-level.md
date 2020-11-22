@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 訊息中心服務層級
-seo-title: 訊息中心服務層級
 description: 訊息中心服務層級
-seo-description: null
-page-status-flag: never-activated
-uuid: 8e363706-292b-40db-97bc-d41b41910556
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: reports
-discoiquuid: e46a4e87-6c02-4b9c-bf6d-bb4e785e78fa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 6%
+source-wordcount: '232'
+ht-degree: 5%
 
 ---
 
