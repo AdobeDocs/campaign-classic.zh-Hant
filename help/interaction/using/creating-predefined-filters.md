@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立預先定義的篩選
-seo-title: 建立預先定義的篩選
 description: 建立預先定義的篩選
-seo-description: null
-page-status-flag: never-activated
-uuid: cc09435c-4c9f-436c-8648-3a9c5e20a98b
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-discoiquuid: d47017a3-a342-4758-a700-b8e88aa724f2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 11%
+source-wordcount: '112'
+ht-degree: 8%
 
 ---
 
