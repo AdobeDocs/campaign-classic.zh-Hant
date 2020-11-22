@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 個人化資料
-seo-title: 個人化資料
 description: 個人化資料
-seo-description: null
-page-status-flag: never-activated
-uuid: d3d66216-502a-410b-b062-fb413eb9363f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-discoiquuid: 2cd8a320-37e8-410a-b71b-0c13c8e15482
 translation-type: tm+mt
-source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 5%
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
