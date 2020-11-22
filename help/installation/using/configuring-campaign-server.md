@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 設定 Campaign 伺服器
-seo-title: 設定 Campaign 伺服器
 description: 設定 Campaign 伺服器
-seo-description: null
-page-status-flag: never-activated
-uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '3582'
+source-wordcount: '3579'
 ht-degree: 3%
 
 ---
@@ -322,7 +317,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
    要查看相關參數，請參 **閱serverConf.xml檔案** 。
 
-1. 若要在下拉式清單中啟用相似性選取，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
+1. 若要在下拉式清單中啟用相似性選擇，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
 
    ![](assets/ipaffinity_enum.png)
 
