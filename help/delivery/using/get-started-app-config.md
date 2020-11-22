@@ -1,24 +1,21 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: '在 Adobe Campaign 設定行動應用程式 '
 description: 瞭解如何從行動應用程式設定開始
-page-status-flag: never-activated
-uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
 
-# 開始使用應用程式設定
+# 開始使用應用程式配置
 
 您可以在本節中找到根據銷售線上假日套件的公司所提供的組態範例。 他的行動應用程式(Neotrips)有兩種版本可供客戶使用：iOS專用的Neotrips和Neotrips。
 
@@ -61,6 +58,6 @@ ht-degree: 4%
 完成此步驟後，您就可以設定您的Android和iOS應用程式。
 請參閱以下章節：
 
-* [iOS的設定步驟](../../delivery/using/configuring-the-mobile-application.md)
+* [針對 iOS 的配置步驟](../../delivery/using/configuring-the-mobile-application.md)
 
-* [Android的設定步驟](../../delivery/using/configuring-the-mobile-application-android.md)
+* [針對 Android 的配置步驟](../../delivery/using/configuring-the-mobile-application-android.md)
