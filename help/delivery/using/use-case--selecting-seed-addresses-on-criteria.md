@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: '"使用案例：依條件選取種子地址"'
-seo-title: '"使用案例：依條件選取種子地址"'
 description: '"使用案例：依條件選取種子地址"'
-seo-description: null
-page-status-flag: never-activated
-uuid: 6af39893-6ef3-4204-8b53-0c16e35bac8f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 4%
+source-wordcount: '838'
+ht-degree: 3%
 
 ---
 
