@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於Adobe Experience Manager
-seo-title: 關於Adobe Experience Manager
 description: 關於Adobe Experience Manager
-seo-description: null
-page-status-flag: never-activated
-uuid: c523822f-8178-4989-bd88-ab402470e540
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
