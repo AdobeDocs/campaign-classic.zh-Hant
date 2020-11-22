@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 管理
-seo-title: 管理
 description: 管理
-seo-description: null
-page-status-flag: never-activated
-uuid: 376efec1-1647-43b4-b72f-2603214c7cc6
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: production-procedures
-discoiquuid: 860be8be-f28c-4836-b4fb-e91c6a4616c6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '411'
 ht-degree: 1%
 
 ---
@@ -33,7 +28,7 @@ ht-degree: 1%
    * **net start nlserver6**
    * **net stop nlserver6**
 
-* 在Linux（作為根）中：
+* 在Linux中（以root用戶身份）:
 
    * **/etc/init.d/nlserver6 start**
    * **/etc/init.d/nlserver6 stop**
@@ -75,7 +70,7 @@ ht-degree: 1%
 
    **nlserver停止wfserver@my_instance**
 
-   **nlserver停止Web -immediate**
+   **nlserver stop web -immediate**
 
    **nlserver重新啟動網路**
 
