@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 定義網路表單頁面排序
-seo-title: 定義網路表單頁面排序
 description: 定義網路表單頁面排序
-seo-description: null
-page-status-flag: never-activated
-uuid: 297fad62-d806-4bd8-9b8c-313c20344ab0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-forms
-discoiquuid: 85bf3244-6896-43e7-96b8-84c45c282fec
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '702'
 ht-degree: 2%
 
 ---
