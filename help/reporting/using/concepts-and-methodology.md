@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 概念和方法
-seo-title: 概念和方法
 description: 概念和方法
-seo-description: null
-page-status-flag: never-activated
-uuid: 595e9183-97f5-470d-9d82-dcd756e1fc83
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-discoiquuid: 4655ad65-7eba-44d5-b3f9-f4b8f44d9d5c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
