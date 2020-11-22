@@ -1,26 +1,21 @@
 ---
-title: LINE 通道
-seo-title: LINE 通道
-description: LINE 通道
-seo-description: null
-page-status-flag: never-activated
-uuid: 94b4e044-3f5d-42a6-b249-29f417386156
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: LINE 道
+description: LINE 道
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1100'
 ht-degree: 3%
 
 ---
 
 
-# LINE 通道{#line-channel}
+# LINE 道{#line-channel}
 
 LINE是免費即時訊息、語音和視訊通話的應用程式，適用於所有智慧型手機(iPhone、Android、Windows Phone、Blackberry、Nokia)和PC。 Adobe Campaign可讓您傳送LINE訊息。
 
