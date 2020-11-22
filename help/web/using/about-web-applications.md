@@ -1,24 +1,21 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於 Web 應用程式
 description: 建立和共用動態網頁應用程式、登陸頁面和調查。
-page-status-flag: never-activated
-uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-applications
-discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
 
-# 開始使用Web應用程式{#about-web-applications}
+# 開始使用網路應用程式{#about-web-applications}
 
 Adobe Campaign可讓您建立和發佈動態互動式網頁應用程式，其中包含資料庫的資料和符合連線使用者權限的內容。
 
