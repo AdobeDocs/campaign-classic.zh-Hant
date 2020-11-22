@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立資料表
-seo-title: 建立資料表
 description: 建立資料表
-seo-description: null
-page-status-flag: never-activated
-uuid: c5bca799-a5d6-4d98-8fc5-25d7f71be5f7
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2495'
 ht-degree: 1%
 
 ---
@@ -44,7 +39,7 @@ ht-degree: 1%
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
-### 實作步驟 {#implementation-steps}
+### 實施步驟 {#implementation-steps}
 
 此處提供完整的實作範例： [使用案例：建立含群組清單的報表](#use-case--create-a-report-with-a-group-list)。
 
