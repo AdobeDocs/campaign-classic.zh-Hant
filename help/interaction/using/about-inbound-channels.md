@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於傳入頻道
-seo-title: 關於傳入頻道
 description: 關於傳入頻道
-seo-description: null
-page-status-flag: never-activated
-uuid: 4224282b-f05f-400e-82f9-9ee9d7a8b443
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-discoiquuid: 9469495c-9e46-4fd8-826d-1b7227326ce1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 5%
+source-wordcount: '218'
+ht-degree: 4%
 
 ---
 
