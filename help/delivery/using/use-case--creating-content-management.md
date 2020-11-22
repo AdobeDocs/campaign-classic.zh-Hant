@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: '"使用案例：建立內容管理"'
-seo-title: '"使用案例：建立內容管理"'
 description: '"使用案例：建立內容管理"'
-seo-description: null
-page-status-flag: never-activated
-uuid: 204a63eb-40dd-446d-a847-4e55ad23b2bd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: content-management
-discoiquuid: a4c62580-664d-47fe-87f5-cfe608b05e6f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1173'
 ht-degree: 2%
 
 ---
