@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 事件集合
-seo-title: 事件集合
 description: 事件集合
-seo-description: null
-page-status-flag: never-activated
-uuid: 8c373962-40d4-4982-9bd1-ce1cf8261dd5
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-discoiquuid: cfff302a-6ac0-461a-a1e4-8e4b617fe134
 translation-type: tm+mt
-source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 7%
+source-wordcount: '104'
+ht-degree: 5%
 
 ---
 
