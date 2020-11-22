@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: JavaScript 指令碼和範本
-seo-title: JavaScript 指令碼和範本
 description: JavaScript 指令碼和範本
-seo-description: null
-page-status-flag: never-activated
-uuid: d341a892-dc71-4413-acb8-9cba372b38cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 1%
+source-wordcount: '1234'
+ht-degree: 2%
 
 ---
 
@@ -162,7 +157,7 @@ logInfo("Start date: " + task.creationDate)
 
 此範例顯示 **** JavaScript程式碼後的活動會存取例項變數和事件變數，但是無法從外部存取工作變數(&#39;undefined&#39;)。
 
-### 呼叫查詢中的例項變數 {#calling-an-instance-variable-in-a-query}
+### 調用查詢中的執行個體變數 {#calling-an-instance-variable-in-a-query}
 
 在活動中指定例項變數後，您就可以在工作流程查詢中重新使用它。
 
