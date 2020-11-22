@@ -1,26 +1,21 @@
 ---
-title: 實作步驟
-seo-title: 實作步驟
-description: 實作步驟
-seo-description: null
-page-status-flag: never-activated
-uuid: 11582071-00a2-4245-af3e-bc81174ce223
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 實施步驟
+description: 實施步驟
 audience: interaction
 content-type: reference
 topic-tags: general-operation
-discoiquuid: 7f79c0d8-77b0-4cc6-a888-7dbd32d2f3b6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
 
 
-# 實作步驟{#implementation-steps}
+# 實施步驟{#implementation-steps}
 
 ## 設定互動 {#configuring-interaction}
 
