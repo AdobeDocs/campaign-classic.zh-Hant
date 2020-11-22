@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於網路表單
-seo-title: 關於網路表單
 description: 關於網路表單
-seo-description: null
-page-status-flag: never-activated
-uuid: 1d129af4-008b-4f6a-9094-b2edd6c1eee1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-forms
-discoiquuid: 3b8e4691-fcbc-48ef-b529-11c9a9a9d788
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '489'
 ht-degree: 5%
 
 ---
@@ -58,7 +53,7 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 
 要定義Web表單的配置和內容，請應用以下步驟：
 
-* 開始時，請建立必要的頁面並檢查：輸入欄位、下拉式清單、HTML內容等。
+* 首先，請建立必要的頁面並進行檢查：輸入欄位、下拉式清單、HTML內容等。
 
    此步驟在下面詳述。
 
