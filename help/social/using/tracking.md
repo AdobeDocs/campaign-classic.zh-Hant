@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 追蹤
-seo-title: 追蹤
 description: 追蹤
-seo-description: null
-page-status-flag: never-activated
-uuid: 607886fd-c036-4f61-aa86-fc0a97d38762
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: social
 content-type: reference
 topic-tags: annexes
-discoiquuid: 1755ab4f-b655-48da-bf9a-426807bd85fd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 5%
+source-wordcount: '67'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +23,7 @@ Social Marketing提供報表，可讓您測量Facebook和Twitter傳送的反應�
 
    ![](assets/social_report_3.png)
 
-* 報 **[!UICONTROL Reactivity rate]** 表，可透過Twitter或Facebook **[!UICONTROL Dashboard]** 服務的標籤取得。
+* 報表 **[!UICONTROL Reactivity rate]** 可透過Twitter或Facebook **[!UICONTROL Dashboard]** 服務的標籤取得。
 
    ![](assets/social_report_2.png)
 
