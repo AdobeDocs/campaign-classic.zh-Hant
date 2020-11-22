@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Campaign Classic資料庫建議
 description: 資料庫建議
-page-status-flag: never-activated
-uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
