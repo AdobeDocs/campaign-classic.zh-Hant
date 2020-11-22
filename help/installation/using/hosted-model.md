@@ -1,26 +1,21 @@
 ---
-title: 託管模式
-seo-title: 託管模式
-description: 託管模式
-seo-description: null
-page-status-flag: never-activated
-uuid: b8db3c93-ccba-465a-8b75-921d7266c4e4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 託管模型
+description: 託管模型
 audience: installation
 content-type: reference
 topic-tags: hybrid-and-hosted-models
-discoiquuid: ada27825-42bd-48c7-bc03-a619f1fa9463
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 9%
+source-wordcount: '86'
+ht-degree: 6%
 
 ---
 
 
-# 託管模式{#hosted-model}
+# 託管模型{#hosted-model}
 
 身為代管客戶，大部分的安裝和設定步驟都由Adobe執行。 您可以存取下列章節來自訂您的實作：
 
