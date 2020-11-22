@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 關於Adobe Campaign Classic中的電子郵件渠道
 description: 本節提供Adobe Campaign Classic中電子郵件通道的一般資訊。
-page-status-flag: never-activated
-uuid: aaef3c4a-99b2-4554-9a78-bb66459e45a4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
@@ -18,7 +15,7 @@ ht-degree: 12%
 ---
 
 
-# 關於電子郵件通道{#about-email-channel}
+# 關於電子郵件頻道{#about-email-channel}
 
 Adobe Campaign可讓您將個人化電子訊息大量傳遞給目標群體。
 
