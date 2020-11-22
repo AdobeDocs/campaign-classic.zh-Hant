@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 交集
-seo-title: 交集
 description: 交集
-seo-description: null
-page-status-flag: never-activated
-uuid: a8ff7a66-6c12-4e3c-ad45-d11b34ca64ff
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: d0dd9c74-aad5-452e-a11d-c231dacd2aec
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '398'
+ht-degree: 0%
 
 ---
 
