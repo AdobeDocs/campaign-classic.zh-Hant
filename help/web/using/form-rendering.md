@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 表單轉譯
-seo-title: 表單轉譯
 description: 表單轉譯
-seo-description: null
-page-status-flag: never-activated
-uuid: 714ce201-5535-4fde-b388-1605ac54edcb
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-forms
-discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '987'
 ht-degree: 2%
 
 ---
