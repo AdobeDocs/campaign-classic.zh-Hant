@@ -1,16 +1,13 @@
 ---
-title: 監控准則
+solution: Campaign Classic
+product: campaign
+title: 監視准則
 description: 探索監控 Campaign 執行個體和程序的準則和最佳作法。
-page-status-flag: never-activated
-uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: introduction
-discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 8%
@@ -18,7 +15,7 @@ ht-degree: 8%
 ---
 
 
-# 監控准則 {#monitoring-guidelines}
+# 監視准則 {#monitoring-guidelines}
 
 ## 例項監控控制面板 {#instance-monitoring-dashboard}
 
@@ -87,7 +84,7 @@ Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流�
 * [使用工作流程時的最佳實務](../../workflow/using/workflow-best-practices.md)
 * [監控工作流程執行](../../workflow/using/monitoring-workflow-execution.md)
 
-### 監控傳遞{#monitoring-deliveries}
+### 監視傳遞{#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
