@@ -1,26 +1,21 @@
 ---
-title: 訊息中心 (控制項)
-seo-title: 訊息中心 (控制項)
-description: 訊息中心 (控制項)
-seo-description: null
-page-status-flag: never-activated
-uuid: 8dfb09d1-da00-43fb-9df4-243bb915cbde
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: 訊息中心（執行）
+description: 訊息中心（執行）
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-discoiquuid: dc3d8998-9493-4d71-b3e2-6f9531cb9bac
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 7%
+source-wordcount: '231'
+ht-degree: 6%
 
 ---
 
 
-# 訊息中心 (控制項){#message-center-execution}
+# 訊息中心（執行）{#message-center-execution}
 
 下面詳細介紹的工作流預設隨 **「消息中心——執行** 」模組安裝。 For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
 
