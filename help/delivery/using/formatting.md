@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 格式
-seo-title: 格式
 description: 格式
-seo-description: null
-page-status-flag: never-activated
-uuid: b6065289-c487-416b-8847-49aa0fb782bf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: content-management
-discoiquuid: d678db05-cc44-4086-98a5-e5296e8e5de8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -477,7 +472,7 @@ HTML格式樣式表的示例基於模式&quot;cus:book&quot;:
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* 新增條件測 **試&lt;% if(recipient.language == &#39;en&#39;)`{`%>**:
+* 新增條件測 **試&lt;% if(recipient.language == &#39;en&#39;) `{` %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
