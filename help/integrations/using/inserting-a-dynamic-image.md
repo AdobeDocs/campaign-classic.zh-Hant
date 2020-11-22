@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 插入動態影像
-seo-title: 插入動態影像
 description: 插入動態影像
-seo-description: null
-page-status-flag: never-activated
-uuid: 4acc905e-625c-45aa-bb70-7dde22911aa0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
-discoiquuid: f6e4d22b-4ad3-4a1e-8a6f-3bdfc1da0535
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 3%
+source-wordcount: '849'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +68,7 @@ ht-degree: 3%
 
 在Target中，您可以建立不同版本的選件。 視每個使用者體驗而定，您可以建立重新導向選件，並指定要顯示的影像。
 
-在我們的案例中，我們需要兩個重新導向選件，第三個（預設值）將在Adobe Campaign中定義。
+在我們的案例中，我們需要兩個重新導向選件，第三個（預設值）是在Adobe Campaign中定義。
 
 1. 若要在Target Standard中建立新的重新導向選件，請從標籤中 **[!UICONTROL Content]** 按一下 **[!UICONTROL Code offers]**。
 
