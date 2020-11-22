@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 模擬追蹤
-seo-title: 模擬追蹤
 description: 模擬追蹤
-seo-description: null
-page-status-flag: never-activated
-uuid: 8979eb5b-596b-4308-87a1-126afcfb6e0c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-discoiquuid: a557026c-3b6a-4302-a042-0015449eaca5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 11%
+source-wordcount: '138'
+ht-degree: 10%
 
 ---
 
