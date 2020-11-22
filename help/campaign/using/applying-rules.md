@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 套用規則
-seo-title: 套用規則
 description: 套用規則
-seo-description: null
-page-status-flag: never-activated
-uuid: 4472fc0d-d717-4603-8472-bdaf2835a02a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 10%
+source-wordcount: '977'
+ht-degree: 9%
 
 ---
 
