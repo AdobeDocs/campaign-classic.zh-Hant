@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 監控Adobe Campaign Classic中的傳遞能力
 description: 瞭解Adobe Campaign Classic中傳送性監控的工具與准則。
-page-status-flag: never-activated
-uuid: 0b5c5dbd-f532-4d8a-a255-9e6d88357d8d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 2%
@@ -18,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# 監控傳遞能力{#monitoring-deliverability}
+# 監視傳遞能力{#monitoring-deliverability}
 
 以下是Adobe Campaign提供的不同監控工具的詳細資訊，以及傳送性監控的其他相關准則。
 
@@ -46,7 +43,7 @@ Deliverability套件可讓您存取：
    * 傳 [送記錄和歷史記錄](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)，顯示哪些目標已被排除及原因；
    * 追蹤 [記錄檔](../../delivery/using/monitoring-a-delivery.md#tracking-logs)，其中顯示追蹤資訊，例如開啟和點按。
 
-## 監控准則 {#monitoring-guidelines}
+## 監視准則 {#monitoring-guidelines}
 
 以下是有關交付能力監控的一些附加准則：
 
