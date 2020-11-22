@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 擴充功能範例
-seo-title: 擴充功能範例
 description: 擴充功能範例
-seo-description: null
-page-status-flag: never-activated
-uuid: 6703b6e8-4eac-4a94-a80a-a7cd71b25cdf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-discoiquuid: 990b6cbc-9b7b-4278-a635-653d5abafe87
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 5%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
