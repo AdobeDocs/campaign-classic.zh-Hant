@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 建立新報表
 description: 瞭解建立新報表的關鍵步驟
-page-status-flag: never-activated
-uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
