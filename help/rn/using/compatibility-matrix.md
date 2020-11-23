@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 13%
 
 ---
@@ -214,6 +214,7 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <tr>
 <td>Oracle</td>
 <td>
+<p>19c</p>
 <p>18c</p>
 <p>12c</p>
 <p>11g</p>
@@ -269,7 +270,7 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <tr>
 <td>SAP HANA</td>
 <td>
-<p>第1版SP12或更高版本</p>
+<p>第1版SPS 12</p>
 </td>
 </tr>
 <tr><td>通過HiveSQL的Hadoop</td>
