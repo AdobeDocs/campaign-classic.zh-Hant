@@ -317,7 +317,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
    要查看相關參數，請參 **閱serverConf.xml檔案** 。
 
-1. 若要在下拉式清單中啟用相似性選擇，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
+1. 若要在下拉式清單中啟用相似性選取，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
 
    ![](assets/ipaffinity_enum.png)
 
