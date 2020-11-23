@@ -76,7 +76,7 @@ ht-degree: 2%
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. 參考促銷活動已取消，而所有作用中的程式（工作流程、傳送）都會停止，
+1. 參考促銷活動已取消，而所有作用中的程式（工作流程、傳送）都已停止，
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 
