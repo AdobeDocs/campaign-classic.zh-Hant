@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 4d5ca9277305cc0baeb233d0912f26b6bdcf3206
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '509'
 ht-degree: 15%
 
 ---
@@ -253,7 +253,7 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <tr>
 <td>SAP HANA</td>
 <td>
-<p>第1版SP12或更高版本</p>
+<p>第1版SPS 12</p>
 </td>
 </tr>
 <tr><td>通過HiveSQL的Hadoop</td>
@@ -261,10 +261,6 @@ Adobe Campaign Classic與本頁所列的所有系統和工具相容。 由於這
 <p>HortonWorks HDP 2.4.X、2.5.x、2.6.x</p>
 <p>HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)</p>
 </td>
-</tr>
-<tr>
-<td>雪花</td>
-<td> </td>
 </tr>
 </tbody>
 </table>
