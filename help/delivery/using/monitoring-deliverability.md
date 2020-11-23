@@ -35,7 +35,7 @@ Deliverability套件可讓您存取：
 * 報 **[!UICONTROL Technical deliverability monitoring]** 表包含許多平台的傳遞能力品質指標。 如需詳細資訊，請參閱[本區段](#technical-deliverability-monitoring)。
 * 每個傳送都會針對不同的網際網路服務供應商(ISP)產生廣播統計報告。 它會顯示一些可能影響傳遞能力的資料品質和信譽度量，包括下列數字：
    * **[!UICONTROL Hard bounces]** 指出資料品質。 此數字應小於2%。
-   * **[!UICONTROL Soft bounces]** 表明信譽。 對於任何給定的ISP，該數字都不應高於10%。
+   * **[!UICONTROL Soft bounces]** 表明信譽。 對於任何給定的ISP，此數字都不應高於10%。
 
    For more on this, see the [Delivery statistics](../../reporting/using/global-reports.md#delivery-statistics) section.
 * 更一般而言，傳送 [控制面板](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) 可讓您存取：
