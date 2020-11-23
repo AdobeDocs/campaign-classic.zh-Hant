@@ -70,7 +70,7 @@ ht-degree: 1%
 
    **nlserver停止wfserver@my_instance**
 
-   **nlserver stop web -immediate**
+   **nlserver停止Web -immediate**
 
    **nlserver重新啟動網路**
 
