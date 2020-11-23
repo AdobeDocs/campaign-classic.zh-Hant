@@ -23,7 +23,7 @@ Adobe Campaign包含一個圖形模組，可用來定義和發佈網頁應用程
 
 本章詳細說明如何建立和管理 **調查**、欄位和頁面管理、儲存模式和記錄。
 
-建立標準Web表單的步驟在本節 [中詳細說明](../../web/using/about-web-forms.md)。
+建立標準Web表單的步驟在本節中 [詳述](../../web/using/about-web-forms.md)。
 
 本節將詳述Web應用 [程式管理](../../web/using/about-web-applications.md)。 有關詳細資訊，請參閱本章。
 
