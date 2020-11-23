@@ -157,7 +157,7 @@ Henry所執行的開啟和4次點按次數會顯示在下列記錄中：
 
 * **[!UICONTROL Clicks]** （點按的收件者）:2
 * **[!UICONTROL Distinct clicks for the population reached]** （點擊的人員）:6
-* **[!UICONTROL Distinct opens for the population reached]** （開啟的收件者）:3
+* **[!UICONTROL Distinct opens for the population reached]** （開啟的收件者）:1
 
 前向反應性的計算和估算如下：
 
