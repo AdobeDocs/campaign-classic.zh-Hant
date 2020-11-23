@@ -63,7 +63,7 @@ ht-degree: 8%
 
 ## 工作流程監督 {#workflow-supervision}
 
-群 **[!UICONTROL Workflow supervisors]** 組中應包含需要隨時得知失敗情況的運算子，以及哪些運算子可及時採取行動。
+群 **[!UICONTROL Workflow supervisors]** 組中應包含需要隨時得知失敗情況的運算子，以及哪些運算子可以及時採取行動。
 
 ![](assets/monitoring_technical_workflows3.png)
 
