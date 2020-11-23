@@ -95,7 +95,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 * 顯示另一頁
 
-   該選 **[!UICONTROL Enable a transition]** 項可讓您顯示與在欄位中選取的傳出轉場相關聯的特定 **[!UICONTROL Transition]** 頁面。
+   選 **[!UICONTROL Enable a transition]** 項可讓您顯示與欄位中選取之傳出轉場相關聯的特定 **[!UICONTROL Transition]** 頁面。
 
    ![](assets/s_ncs_admin_survey_link_viral.png)
 
