@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '820'
 ht-degree: 7%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 7%
 >
 >在與Adobe Campaign SDK整合之前，應用程式必須已設定為推播動作。
 >
->如果不是這樣，請參閱 [本頁](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/)。
+>如果不是這樣，請參閱 [本頁](https://developer.apple.com/documentation/usernotifications)。
 
 1. 轉到節 **[!UICONTROL Profiles and Targets > Services and subscriptions]** 點並按一下 **[!UICONTROL New]**。
 
