@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 到期日 {#expirations}
 
-過期是用於不同活動類型（尤其是在批准中）的特定轉場。 過期可用來在沒有回應的指定時間段後觸發動作，或追蹤工作流程（例如，將核准指派給不同群組）。
+過期是用於不同活動類型（尤其是在批准中）的特定轉場。 您可以使用過期時間在指定時間後觸發動作，而不需要回應。 例如，它也可用來追蹤工作流程，並指派核准給不同群組。
 
 活動核准屬性中的第二個標籤可讓您定義一或多個到期日。 事實上，您可以定義多種過期類型。
 
