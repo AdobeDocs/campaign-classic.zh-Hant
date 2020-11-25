@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
+source-git-commit: 68fee697b65b2ba69f456803e0a7cebca9be3760
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '337'
 ht-degree: 2%
 
 ---
@@ -45,34 +45,17 @@ ht-degree: 2%
   </tr>
   <tr> 
    <td>Adobe Campaign是否已正確整合？</td> 
-   <td>登入： <b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 伺服器應傳回下列類型的訊息：
-
-    &lt;pre>
-    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
-    &lt;/pre>
-如果未獲得此結果，請檢查Web伺服器配置中已考慮到整合。</td>
-</tr>
+   <td>登入： <b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 伺服器應傳回下列類型的訊息：&lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;如果您未獲得此結果，請檢查已考慮整合的Web伺服器配置。</td>
+  </tr>
   <tr> 
-   <td>Adobe Campaign Web模組是否已啟動？</td> 
-   <td>連線至下列URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>*如果您獲得Tomcat Java錯誤：
-
-JAVA整合是否正確執行？ Adobe Campaign需要SUN JDK。
-
-它已整合在應用程式的檔 [案路徑中]/nl6/customer.sh
-
-* 如果您取得空白頁面：Adobe Campaign Web模組是否已啟動？ 您應獲得：
-
-<pre>
-DD/MM/YYYY[...]web@default(27515)- 55.2 Mb[...]的Adobe Campaign Classic(7.X YY.R組建版本XXX@SHA1)的Nlserver pdumpHH:MM:SS &gt;應用程式伺服器
-</pre>
-* 如果不是，請使用以下命令重新啟動它：
-
-<pre>        
-nlserver啟動Web
-</pre>
-</td>
-</tr>
-  <tr>
+   <td>連線至下列URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+   <td>如果獲得Tomcat Java錯誤，請檢查JAVA整合是否正確執行。 它已整合在檔案[應用程式路徑]/nl6/customer.sh中</td>
+  </tr>
+  <tr> 
+   <td>連線至下列URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+   <td>如果您取得空白頁面，請檢查Adobe Campaign Web模組是否已啟動。 命令nlserver pdump應傳回Adobe Campaign Classic(7.X YY.R組建版本XXX@SHA1)的Application Server,DD/MM/YYYY。 否則，使用命令nlserver啟動Web重新啟動模組</td>
+  </tr>
+   <tr>
   	<td>檢查安全區的常規配置。</td>
   	<td>有關配置安全區的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)</td>
   </tr>
