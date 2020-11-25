@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: eb7e1c98f69ba20ef4222bfefea74fdaf6072397
+source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 2%
@@ -55,32 +55,31 @@ ht-degree: 2%
 </tr>
   <tr> 
    <td>Adobe Campaign Web模組是否已啟動？</td> 
-   <td>
-   連線至下列URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>*如果您獲得Tomcat Java錯誤：
+   <td>連線至下列URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>*如果您獲得Tomcat Java錯誤：
 
     JAVA整合是否正確執行？ Adobe Campaign需要SUN JDK。
     
-    它已整合在檔案[應用程式路徑]/nl6/customer.sh
-    
-    *如果您取得空白頁面：
-    
-    Adobe Campaign Web模組是否已啟動？ 您應取得：
-    
-    &lt;pre>
-    nlserver
-    pdumpHH:MM:SS > Adobe Campaign Classic(7.X YY.R組建版XXX@SHA1)的Application Server(DD/MM/YYYY
-    [...]
-    web@default(27515)-55.2 Mb
-    [$1……
+    它已整合在檔案[應用程式路徑]/nl6/customer.sh中
+
+* 如果您取得空白頁面：
+
+       Adobe Campaign Web模組是否已啟動？ 您應獲得：
+      
+       &lt;pre>
+ nlserver pdump     
+ HH:MM:SS > Adobe Campaign Classic(7.X YY.R組建XXX@SHA1)的Adobe Campaign Classic（7.X YY.R組建版本）pdump     
     
     
     
-    
-    
-    
-    
-    &lt;/pre>如果沒有，請使用以下命令重新啟動它：pre&lt;llstart>Web點&lt;/pre>。
-</tr>
+    HH:MM:SS >應用程式伺服器。&lt;&lt;/pre>
+   
+* 如果不是，請使用以下命令重新啟動它：
+
+       &lt;pre>
+ nlserver     啟動web
+ &lt;/pre>     
+    &lt;/td>
+   </tr>
   <tr>
   	<td>檢查安全區的常規配置。</td>
   	<td>有關配置安全區的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)</td>
