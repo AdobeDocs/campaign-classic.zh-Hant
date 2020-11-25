@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2043'
 ht-degree: 5%
 
 ---
@@ -78,6 +78,8 @@ Adobe Campaign是Adobe Experience Cloud解決方案的一部分。 在Campaign�
 * **個人資料** ，是指可直接或間接識別活人的資訊。
 * **敏感個人資料** ，是指與個人種族、政治觀點、宗教信仰、犯罪背景、遺傳資訊、健康資料、性偏好、生物識別資訊，以及工會會員相關的資訊。
 
+將Campaign與其他Experience Cloud解決方案整合時，您需要支付額外的護理，才能保護個人資料，例如 [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md)、 [Audience Manager或People核心服務、](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)Campaign Standard [，或透過](../../integrations/using/synchronizing-audiences.md)[](../../platform/using/crm-connectors.md)CRM連接器將受眾從其他解決方案整合。
+
 主 [要法規](#privacy-regulations) ，是指管理資料的不同實體：
 * 資 **料掌控者** ，是決定收集、使用及分享個人資料之方式與目的的權威。
 * 資 **料處理者** ，是指依據資料控制者的指示收集、使用或分享個人資料的任何個人或一方。
@@ -85,7 +87,31 @@ Adobe Campaign是Adobe Experience Cloud解決方案的一部分。 在Campaign�
 
 因此，身為收集和分享個人資料的公司，您是資料掌控者、客戶是資料主體，而Adobe Campaign在依您的指示處理個人資料時，會當成資料處理者。 請注意，身為資料掌控者，您有責任處理與資料主體的關係，例如管理隱私權 [要求](#privacy-requests)。
 
-將Campaign與其他Experience Cloud解決方案整合時，您需要支付額外的護理，才能保護個人資料，例如 [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md)、 [Audience Manager或People核心服務、](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)Campaign Standard [，或透過](../../integrations/using/synchronizing-audiences.md)[](../../platform/using/crm-connectors.md)CRM連接器將受眾從其他解決方案整合。
+### 使用案例方案 {#use-case-scenario}
+
+為了說明不同角色如何互動，以下是GDPR客戶體驗的高階使用案例。
+
+在此範例中，航空公司是Adobe Campaign客戶。 該公司是資 **料掌控者** ，而航空公司的所有客戶都是 **資料主體**。 勞拉是航空公司的客戶。
+
+以下是此範例中使用的不同角色：
+
+* **Laura** 是資料 **主題**。 她是收到航空公司留言的收件人。 勞拉可能是常客，但可能會在某個時刻決定，她不希望這家航空公司提供任何個人化廣告或營銷資訊。 她會要求航空公司（根據他們的流程）刪除她的常旅客號碼。
+
+* **Anne** 是該航 **** 空公司的資料掌控者。 她會收到Laura的請求，擷取用來識別資料主體的有用ID，並在Adobe Campaign中提交請求。
+
+* **Adobe Campaign是資料處** 理者 ****。
+
+![](assets/privacy-gdpr-flow.png)
+
+以下是此使用案例的一般流程：
+
+1. 資 **料主體******(Laura)透過電子郵件、客戶服務或入口網站，向資料掌控者傳送GDPR要求。
+
+1. 資 **料掌控者** (Anne)透過介面或使用API將GDPR要求推送至Campaign。
+
+1. 資料處 **理者** (Adobe Campaign)收到資訊後，會對GDPR要求採取動作，並傳送回應或確認給資料控制者 **** (Anne)。
+
+1. 然 **後資料控制器** (Anne)會檢閱資訊，並傳回資料主 **題** (Laura)。
 
 ## 資料擷取 {#data-acquisition}
 
@@ -125,19 +151,9 @@ Adobe Campaign提供其他功能，協助您做為資料掌控者，針對特定
 
 * 被 **遺忘權** （刪除要求）賦予資料主體權利，讓資料掌控者清除其個人資料。
 
->[!NOTE]
->
->這套工具可協助您符合GDPR、CCPA、PDPA和LGPD的隱私權規範。 如需這些不同法規的詳細資訊，請參 [閱本頁](../../platform/using/privacy-management.md#privacy-management-regulations)。
+Access **和** Delete **requests are presended in** this section [](../../platform/using/privacy-management.md#right-access-forgotten).
 
-<!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
-
-* **CCPA** (California Consumer Privacy Act) provides California residents new rights in regards to their personal information and imposes data protection responsibilities on certain entities whom conduct business in California.
-
-* **Thailand's PDPA** (Personal Data Protection Act) is the new privacy law that harmonizes and modernizes data protection requirements for Thailand. This regulation applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.
-
-Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
-
-此頁 **會顯示** 「存取 **」和「刪** 除」請求 [](../../platform/using/privacy-management.md#right-access-forgotten)。 建立這些請求的實作步驟在本節中 [詳述](../../platform/using/privacy-requests.md)。 <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+建立這些請求的實作步驟在本節中 [詳述](../../platform/using/privacy-requests.md)。
 
 ## 追蹤功能 {#tracking-capabilities}
 
