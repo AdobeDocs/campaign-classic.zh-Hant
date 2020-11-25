@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -162,7 +162,7 @@ XML文檔包含具有 **`<navtree>`** 名稱和命名空 **間屬****** 性的�
 * **名稱**:內部名稱
 * **標籤**:標籤(用於功 **[!UICONTROL Add new folder]** 能表中)和作為插入資料夾時的預設標籤。
 * **img**:檔案夾插入時的預設影像。
-* **hiddenCommands**:要被遮色的命令清單（以逗號分隔）。 可能的值：「insert」、「delete」、「update」和「duplicate」。
+* **hiddenCommands**:要被遮色的命令清單（以逗號分隔）。 可能的值：&quot;adbnew&quot;、&quot;adbsave&quot;、&quot;adbcancel&quot;和&quot;adbdup&quot;。
 * **newFolderShortCuts**:資料夾建立中模型&#x200B;**`<nodemodel>`** 的捷徑清單（以逗號分隔）。
 * **insertRight**, **editRight**, **deleteRight**:用於插入、編輯和刪除資料夾的權限。
 
