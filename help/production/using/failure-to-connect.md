@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: fc5a44fe7bf4c88eca4634a67eaae48c722d8e5e
+source-git-commit: 85fae38f864b031f069058dae79ce6753dc4bf03
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,11 @@ ht-degree: 2%
 </tr>
 <tr>
 <td>檢查安全區的常規配置。</td>
-<td>有關配置安全區的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)</td>
+<td>有關配置安全區的詳細資訊，請參 <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>閱本節。</a></td>
+</tr>
+<tr>
+<td>命令nlserver pdump返回 <b>No tasks</b></td>
+<td>您必須重新啟動整個Adobe Campaign應用程式。 若要這麼做，請使用下列命令： <b>nlserverwatch -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>
