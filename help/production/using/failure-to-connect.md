@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cb6a2247e3b7617511aecf3d2d19985af0216494
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 2%
 
 ---
@@ -17,72 +17,72 @@ ht-degree: 2%
 
 # 無法連線{#failure-to-connect}
 
-其原因可能是多重的，並取決於各種情況。
+連接問題的原因可以是多個，並且取決於各種上下文。
 
-檢查安全區的常規配置。
+您可以嘗試下列測試，如果連線失敗仍持續，請連絡 **Adobe Campaign支援**。
 
->[!NOTE]
->
->有關配置安全區的詳細資訊，請參 [閱本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
-檢查以下資訊：
 
-1. **網路檢查**
+<table> 
+ <thead> 
+  <tr> 
+   <th>檢查<br /> </th> 
+   <th>解析度<br /> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>您是否可從電腦存取網際網路？</td> 
+   <td>檢查您是否可以連線至網際網路上的網站（例如）。 如果您無法連線，問題就在您的電腦上。 請連絡您的系統管理員。</td>
+  </tr>
+  <tr> 
+   <td>您是否可透過其他服務連線至代管Adobe Campaign的伺服器？</td> 
+   <td>通過SSH或任何其他方式連接到伺服器。 如果不可能，則您的主機公司有問題。 聯繫其系統管理員。</td>
+  </tr>
+  <tr> 
+   <td>Web伺服器是否響應？</td> 
+   <td>使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL:**`http(s):// <urlserver>`**. 如果未響應，則Web伺服器將停止在電腦上。 請洽詢您主機公司的系統管理員以重新啟動服務。</td>
+  </tr>
+  <tr> 
+   <td>Adobe Campaign是否已正確整合？</td> 
+   <td>登入：**`http(s)://<urlserver>/r/test`** URL。 伺服器應返回以下類型的消息
 
-   * 您是否可從電腦存取網際網路？
+    &quot;
+    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
+    &quot;
+    
+    如果您未取得此結果，請檢查已考慮整合的Web伺服器組態。&lt;/td>
+</tr>
+  <tr> 
+   <td>Adobe Campaign Web模組是否已啟動？</td> 
+   <td>
+   連線至下列URL:**`http(s)://<URLSERVER>/nl/jsp/logon.jsp`** *如果您獲得Tomcat Java錯誤：
 
-      檢查您是否可以連線至網際網路上的網站（例如）。 如果您無法連線，問題就在您的電腦上。 請連絡您的系統管理員。
-
-   * 您是否可透過其他服務連線至代管Adobe Campaign的伺服器？
-
-      通過SSH或任何其他方式連接到伺服器。 如果不可能，則您的主機公司有問題。 聯繫其系統管理員。
-
-1. **檢查Web伺服器端** (IIS/apache/etc.)
-
-   * Web伺服器是否響應？
-
-      使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL: **http(s)://`<urlserver>`**。 如果未響應，則Web伺服器將停止在電腦上。 請洽詢您主機公司的系統管理員以重新啟動服務。
-
-   * Adobe Campaign是否已正確整合？
-
-      登入： **http(s):/// `<urlserver>`/r/test** URL。 伺服器應返回以下類型的消息
-
-      ```
-      <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='<hostname>' localHost='<server>'/>
-      ```
-
-      如果未獲得此結果，請檢查Web伺服器配置中已考慮到整合。
-
-1. **在Adobe Campaign端進行檢查**
-
-   * Adobe Campaign Web模組是否已啟動？
-
-      連線至下列URL: **http(s)://`<URLSERVER>`/nl/jsp/logon.jsp**
-
-      * 如果獲得Tomcat Java錯誤：
-
-         JAVA整合是否正確執行？ Adobe Campaign需要SUN JDK。
-
-         它已整合在檔案/nl6/customer.sh中 **`[path of application]`。**
-
-      * 如果您取得空白頁面：
-
-         Adobe Campaign Web模組是否已啟動？ 您應獲得：
-
-         ```
-         nlserver pdump
-         HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
-         [...]
-         web@default (27515) - 55.2 Mb
-         [...]
-         ```
-
-      * 如果不是，請使用以下命令重新啟動它：
-
-         ```
-         nlserver start web
-         ```
->[!NOTE]
->
->如果您在列出Adobe Campaign模組時，取得下列類型的回應： **nlserver pdump**
->DD/MM/YYYY的Adobe Campaign Classic(7.X YY.R組建XXX@SHA1)的HH:MM:SS >應用程式伺服器無任務您必須重新啟動整個Adobe Campaign應用程式。 若要這麼做，請使用下列命令：**nlserver watchdog -svc -noconsole*
+    JAVA整合是否正確執行？ Adobe Campaign需要SUN JDK。
+    
+    它已整合在檔案***`[應用程式路徑]`/nl6/customer.sh*
+    
+    **如果您取得空白頁面：
+    
+    Adobe Campaign Web模組是否已啟動？ 您應取得：
+    
+    &quot;
+    nlserver
+    pdumpHH:MM:SS > Adobe Campaign Classic(7.X YY.R組建版本XXX@SHA1)DD/MM/YYYY
+    [...]
+    web@default(27515)- 55.2 Mb
+    [......]
+    
+    
+    
+    
+    
+    
+    &quot;否，請使用以下命令重新啟動它：&quot;nlserver start web td&quot;&lt;/lserver
+</tr>
+  <tr>
+  	<td>檢查安全區的常規配置。</td>
+  	<td>有關配置安全區的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)</td>
+  </tr>
+ </tbody> 
+</table>
