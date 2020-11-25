@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 95%
+source-wordcount: '3631'
+ht-degree: 94%
 
 ---
 
@@ -36,6 +36,10 @@ Campaign Federated Data Access(FDA)檔案已經過改良，並包含每個外部
 在中間來源補充伺服器設定頁面中已新增附註，以指定在伺服器設定後，不應更新外部帳戶的內部名稱。 [顯示全文](../../installation/using/mid-sourcing-server.md)
 
 已在語法上新增資訊，以在指定外部SFTP伺服器的路徑時使用。 [顯示全文](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+
+「個人資料與角色」區段已更新為使用案例案例，以說明不同角色在隱私權方面如何互動。 [顯示全文](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+
+已新增一節，其中列出隱私權的常見問題。 [顯示全文](../../platform/using/privacy-faq.md)
 
 ## 2020 年 10 月 {#oct-2020}
 
