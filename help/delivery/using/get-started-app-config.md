@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 10%
+source-wordcount: '273'
+ht-degree: 9%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 10%
 >前往服 **[!UICONTROL Subscriptions]** 務的標籤，檢視服務訂閱者清單，即所有已在行動裝置上安裝應用程式並同意接收通知的使用者。
 
 ## 安裝軟體包 {#installing-package-ios}
+
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
 身為混合／代管客戶，請聯絡Adobe客戶服務團隊以存取Campaign中的推播通知頻道。
 
