@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: cb6a2247e3b7617511aecf3d2d19985af0216494
+source-git-commit: eb7e1c98f69ba20ef4222bfefea74fdaf6072397
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -41,44 +41,45 @@ ht-degree: 2%
   </tr>
   <tr> 
    <td>Web伺服器是否響應？</td> 
-   <td>使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL:**`http(s):// <urlserver>`**. 如果未響應，則Web伺服器將停止在電腦上。 請洽詢您主機公司的系統管理員以重新啟動服務。</td>
+   <td>使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL: <b>http(s):// &lt;urlserver&gt;</b>。 如果未響應，則Web伺服器將停止在電腦上。 請洽詢您主機公司的系統管理員以重新啟動服務。</td>
   </tr>
   <tr> 
    <td>Adobe Campaign是否已正確整合？</td> 
-   <td>登入：**`http(s)://<urlserver>/r/test`** URL。 伺服器應返回以下類型的消息
+   <td>登入： <b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 伺服器應傳回下列類型的訊息：
 
-    &quot;
+    &lt;pre>
     &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
-    &quot;
+    &lt;/pre>
     
     如果您未取得此結果，請檢查已考慮整合的Web伺服器組態。&lt;/td>
 </tr>
   <tr> 
    <td>Adobe Campaign Web模組是否已啟動？</td> 
    <td>
-   連線至下列URL:**`http(s)://<URLSERVER>/nl/jsp/logon.jsp`** *如果您獲得Tomcat Java錯誤：
+   連線至下列URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>*如果您獲得Tomcat Java錯誤：
 
     JAVA整合是否正確執行？ Adobe Campaign需要SUN JDK。
     
-    它已整合在檔案***`[應用程式路徑]`/nl6/customer.sh*
+    它已整合在檔案[應用程式路徑]/nl6/customer.sh
     
-    **如果您取得空白頁面：
+    *如果您取得空白頁面：
     
     Adobe Campaign Web模組是否已啟動？ 您應取得：
     
-    &quot;
+    &lt;pre>
     nlserver
-    pdumpHH:MM:SS > Adobe Campaign Classic(7.X YY.R組建版本XXX@SHA1)DD/MM/YYYY
+    pdumpHH:MM:SS > Adobe Campaign Classic(7.X YY.R組建版XXX@SHA1)的Application Server(DD/MM/YYYY
     [...]
-    web@default(27515)- 55.2 Mb
-    [......]
+    web@default(27515)-55.2 Mb
+    [$1……
     
     
     
     
     
     
-    &quot;否，請使用以下命令重新啟動它：&quot;nlserver start web td&quot;&lt;/lserver
+    
+    &lt;/pre>如果沒有，請使用以下命令重新啟動它：pre&lt;llstart>Web點&lt;/pre>。
 </tr>
   <tr>
   	<td>檢查安全區的常規配置。</td>
