@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 97%
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
-      + [隱私權要求](platform/using/privacy-requests.md)
+      + [隱私權請求](platform/using/privacy-requests.md)
       + [隱私權常見問答集](platform/using/privacy-faq.md)
    + 用戶檔案管理{#profile-management}
       + [關於用戶檔案](platform/using/about-profiles.md)
@@ -335,7 +335,7 @@ ht-degree: 97%
    + Experience Cloud Triggers {#experience-triggers}
       + [開始使用 [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [設定管線](integrations/using/configuring-pipeline.md)
-      + [為Adobe Experience Cloud觸發器設定Adobe I/O](integrations/using/configuring-adobe-io.md)
+      + [為 Adobe Experience Cloud 觸發器配置 Adobe I/O](integrations/using/configuring-adobe-io.md)
       + [配置自訂實施事件](integrations/using/events.md)
       + [管線監視](integrations/using/pipeline-monitoring.md)
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
