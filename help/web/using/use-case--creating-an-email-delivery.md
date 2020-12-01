@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '"使用案例：建立電子郵件傳遞"'
-description: '"使用案例：建立電子郵件傳遞"'
+title: 使用案例——建立電子郵件傳送
+description: 建立電子郵件傳送使用案例
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 >
 >在開始之前，您必須至少設定一個 **HTML範本** ，以代管未來傳送的內容。
 >
->在傳送 **[!UICONTROL Properties]** 中，請確定 **[!UICONTROL Content editing mode]** (在標籤 **[!UICONTROL Advanced]** 中)已設為 **[!UICONTROL DCE]**。 為確保編輯器的最佳操作，請參閱「內容編輯」 [最佳實踐方案](../../web/using/content-editing-best-practices.md)。
+>在傳送 **[!UICONTROL Properties]**&#x200B;中，請確定 **[!UICONTROL Content editing mode]** (在標籤 **[!UICONTROL Advanced]** 中)已設為 **[!UICONTROL DCE]**。 為確保編輯器的最佳操作，請參閱「內容編輯」 [最佳實踐方案](../../web/using/content-editing-best-practices.md)。
 
 ## 步驟1 —— 建立傳送 {#step-1---creating-a-delivery}
 
