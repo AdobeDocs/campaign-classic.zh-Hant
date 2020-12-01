@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 7%
+source-wordcount: '489'
+ht-degree: 6%
 
 ---
 
@@ -24,6 +24,8 @@ ht-degree: 7%
 >[!CAUTION]
 >
 >促銷活動用戶端主控台和促銷活動應用程式伺服器必須在相同的產品版本上執行。 Adobe也建議使用相同的產品組建版本。
+
+![](assets/do-not-localize/how-to-video.png) 瞭解如何在視訊中安裝和設定Adobe Campaign用 [戶端](#video)
 
 ## 下載主控台{#download-the-client-console}
 
@@ -93,4 +95,11 @@ ht-degree: 7%
 
 * [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
 * [相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
-* [安裝和設定Adobe Campaign Client](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) （視訊）
+
+## 教學課程影片
+
+此影片說明如何安裝和設定Adobe Campaign Client。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
