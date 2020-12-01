@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏
 
    * **轉換率**:顯示導航路徑所有步驟的人數。
    * **反彈率**:僅顯示第一步的人數
-   * **轉換通道**:每個步驟之間的丟失率。
+   * **轉換漏斗**:每個步驟之間的丟失率。
 
    此外，扇區類 **型圖** 表還根據人口來源顯示人口。
 
