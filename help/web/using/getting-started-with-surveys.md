@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 調查快速入門
-description: 調查快速入門
+title: 建立調查的關鍵步驟
+description: 使用Campaign建立您的第一個調查
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 1%
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
 
-# 調查快速入門{#getting-started-with-surveys}
+# 建立調查的關鍵步驟{#getting-started-with-surveys}
 
 以下是使用下列範本，快速概述建立簡單調查的主要步驟：
 
