@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -39,9 +39,9 @@ ht-degree: 2%
 
 ## 定位頁面上的欄位 {#positioning-the-fields-on-the-page}
 
-Web表單的版面配置是在每個容器中依頁面定義，而且每個檢查都會超載。
+Web表單的版面配置是在每個容器中依頁面定義，如有需要可能會超載。
 
-頁面會劃分為多欄：每個頁面都包含特定數目的欄。 頁面的每個欄位都佔有 **n個儲存格** 。 容器也佔用一定數目的欄，而容器所包含的欄位則佔用一定數目的儲存格
+頁面會劃分為多欄：每個頁面都包含特定數目的欄。 頁面的每個欄位都佔有 **n個儲存格** 。 容器也佔據一定數目的欄，而容器所包含的欄位則佔據一定數目的儲存格。
 
 依預設，頁面是建置在單一欄上，而每個元素會佔用一個儲存格。 這表示欄位會一併顯示在另一個下方，每個欄位會佔據一行，如下所示：
 
