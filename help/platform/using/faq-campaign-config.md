@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 100%
@@ -73,7 +73,9 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 透過這些連接器，可快速且輕鬆地整合資料：Adobe Campaign 提供專用的精靈，用於從 CRM 中提供的表格進行收集和選取。並且可確保雙向同步處理，讓整個系統中的資料隨時保持最新。
 
-閱讀[配置 CRM 連接器](../../platform/using/crm-connectors.md)以瞭解如何將 CRM 工具與 Adobe Campaign 同步。觀看有關 [Adobe Campaign 和 Microsoft Dynamics 365 整合](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的使用案例短片。
+閱讀[配置 CRM 連接器](../../platform/using/crm-connectors.md)以瞭解如何將 CRM 工具與 Adobe Campaign 同步。
+
+![](assets/do-not-localize/how-to-video.png)觀看有關 [Adobe Campaign 和 Microsoft Dynamics 365 整合](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的使用案例短片。
 
 ## 如果是特定於電腦的問題或特定於使用者的問題時，如何執行軟快取清除？{#perform-soft-cache-clear}
 
