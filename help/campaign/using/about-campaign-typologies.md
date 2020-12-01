@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '497'
 ht-degree: 11%
 
 ---
@@ -63,17 +63,21 @@ ht-degree: 11%
 
 在準備交貨期間，當符合標準時，將排除收件者。 您可以檢查日誌以監控排除。本頁提供壓力類型學規則的範例使 [用案例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
 
-## 如何使用類型學規則建立疲勞管理 {#typologies-video}
+## 教學課程影片 {#typologies-video}
+
+### 如何使用類型學規則建立疲勞管理
 
 此影片說明如何運用排版規則，在Adobe Campaign Classic中實作疲勞管理。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-## 如何使用預先定義的篩選器來設定疲勞管理
+### 如何使用預先定義的篩選器來設定疲勞管理
 
 疲勞管理控制訊息傳送的頻率和數量，以避免收件者過度招攬。 如果您的促銷活動例項中沒有促銷活動最佳化模組，您可以設定預先定義的篩選條件，以依據收到的訊息數量來篩選目標群體。本影片說明如何使用篩選條件，在Adobe Campaign Classic中實作疲乏管理。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
 
 **相關主題**
 
