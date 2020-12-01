@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 定義網路表單頁面排序{#defining-web-forms-page-sequencing}
 
-表單可包含一或多個頁面。 它是透過圖表建立的，可讓您對頁面進行排序、測試、指令碼執行和頁面跳轉錄制階段。 圖結構模式與工作流模式相同。
+表單可包含一或多個頁面。 它是透過圖表建立的，可讓您排序頁面、測試、指令碼執行、頁面跳轉和錄制步驟。 全域圖設計模式與促銷活動工作流程相同。
 
 ## 關於上一頁和下一頁 {#about-previous-page-and-next-page}
 
