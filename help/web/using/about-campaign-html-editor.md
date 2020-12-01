@@ -1,63 +1,56 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 關於 Campaign HTML 編輯器
-description: 關於 Campaign HTML 編輯器
+title: 開始使用Campaign HTML編輯器
+description: 開始使用Campaign DCE
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
 
-# 關於 Campaign HTML 編輯器{#about-campaign-html-editor}
+# 開始使用Campaign HTML編輯器{#about-campaign-html-editor}
 
-數位 **內容編輯器(DCE)** 是HTML內容編輯器，可讓您在Adobe Campaign中輕鬆建立或修改HTML格式的範本或內容。
+數位 **內容編輯器(DCE)** 是HTML內容編輯器，可讓您在Adobe Campaign中輕鬆建立HTML格式的內容和範本。
 
-「數位內容編輯器」可讓您插入頁面元素並設定其格式，並將資料庫欄位與HTML頁面的元素建立關聯。 在為Web應用程式建立頁面時，預設會提供此選項，或在根據作用中的範本建立傳送時提供。
+使用數位內容編輯器，您可以插入頁面元素並設定其格式，並使用HTML頁面的元素來對應資料庫欄位。 在為Web應用程式建立頁面時，或在基於DCE模板建立傳送時，可以使用此編輯器。
 
 >[!NOTE]
+>>如果您需要新增伺服器端JavaScript程式碼，請使用個人化區塊。 [進一步瞭解](../../delivery/using/personalization-blocks.md)。
 >
->DCE僅允許您執行本節中詳細介紹的操作。
->
->如果您想要新增伺服器端JavaScript程式碼，最好將它新增至個人化區塊。 有關建立和修改個性化塊的詳細資訊，請參 [閱此頁](../../delivery/using/personalization-blocks.md)。
-
 >[!CAUTION]
->
->基於隱私權原因，我們建議對所有外部資源使用HTTPS。
+所有外部資源都需使用HTTPS URL來參考。
 
-## 內容編輯器一般操作 {#content-editor-general-operation}
+## 使用數位內容編輯器的關鍵步驟 {#content-editor-general-operation}
 
-本節介紹在Web應用程式框架內和交付環境中編輯和上傳使用DCE編輯的內容的主要步驟。
+本節介紹在Web應用程式和交付設計中編輯和上傳使用DCE編輯的內容的關鍵步驟。
 
 一般操作如下：
 
 ![](assets/dce_schema.png)
 
-要建立簡單的Web應用程式，請執行以下步驟：
+若要建立簡單的 **Web應用程式**，您必須：
 
-* 建立Web應用程式，如需詳細資訊，請參閱「 [建立著陸頁面」](../../web/using/creating-a-landing-page.md),
-* 選擇現有內容或從標準範本建立內容，如需詳細資訊，請參閱范 [本管理](../../web/using/template-management.md)。
-* 編輯和設定內容，如需詳細資訊，請參閱「編輯 [內容](../../web/using/editing-content.md)」
-* 發佈Web應用程式，如需詳細資訊，請參閱 [發佈內容](../../web/using/creating-a-landing-page.md#step-3---publishing-content)[和本頁](../../web/using/publishing-a-web-form.md#managing-web-forms-delivery-and-tracking)。
-
->[!NOTE]
->
->有關詳細說明在Web應用程式框架內實施DCE的完整示例，請參閱 [建立登錄頁](../../web/using/creating-a-landing-page.md)。
-
-若要建立電子郵件傳送，步驟如下：
-
-* 從DCE處於活動狀態的電子郵件類型模板建立發送，
-* 選擇現有內容或從標準範本建立內容，
-* 編輯和設定線上內容、
-* 傳送傳送，如需詳細資訊，請參閱 [本節](../../delivery/using/steps-about-delivery-creation-steps.md)。
+1. 建立Web應用程式——了 [解更多](../../web/using/creating-a-landing-page.md)
+1. 選擇現有內容或從標準範本建立內容——瞭解 [更多](../../web/using/template-management.md)
+1. 編輯和設定內容——進一 [步瞭解](../../web/using/editing-content.md)
+1. 發佈Web應用程式——瞭解 [更多](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
->
->有關詳細說明在電子郵件發送框架內實施DCE的完整示例，請參 [閱此使用案例](../../web/using/use-case--creating-an-email-delivery.md)。
+本節提供Web應用程式內容中的完整實作 [範例](../../web/using/creating-a-landing-page.md)。
 
+若要建立電 **子郵件傳送**，您必須：
+
+1. 從DCE模板建立交付內容——瞭解 [詳情](../../web/using/use-case--creating-an-email-delivery.md)
+1. 選擇現有內容或從標準範本建 [立內容](../../web/using/template-management.md)
+1. 編輯和設定線上內容
+1. 傳送傳送——瞭解 [更多](../../delivery/using/steps-about-delivery-creation-steps.md)
+
+>[!NOTE]
+此使用案例提供電子郵件傳送內容中的完整實 [作範例](../../web/using/use-case--creating-an-email-delivery.md)。
