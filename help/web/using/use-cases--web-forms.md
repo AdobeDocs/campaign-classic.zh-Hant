@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,7 @@ Web表單工作流程將包含下列活動：
 
 1. 設定活 **[!UICONTROL Storage]** 動以儲存在表單頁面中輸入的資訊。
 
-   本練習可讓您在專用的臨時檔案中建立收件人配置檔案，以便將其與資料庫中的配置檔案分開，以便將通信發送到這些配置檔案。
+   此活動可讓您在專用的臨時資料夾中建立收件人配置檔案，以便將其與資料庫中的配置檔案分開，以便將通信發送到這些配置檔案。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
