@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 4%
@@ -70,7 +70,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
    請參 [閱本節](#example-for-microsoft-dynamics) ，瞭解如何設定與Microsoft Dynamics的連線。
 
-   在此影片中瞭解Adobe Campaign和Microsoft Dynamics整合使 [用案例](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)。
+   ![](assets/do-not-localize/how-to-video.png) 在此影片中瞭解Adobe Campaign和Microsoft Dynamics整合使 [用案例](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)。
 
    >[!IMPORTANT]
    >
