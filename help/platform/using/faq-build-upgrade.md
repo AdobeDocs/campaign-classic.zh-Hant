@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 3%
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 Adobe會在進行任何變更之前備份您的系統。 但是，如果非生產系統（開發或測試伺服器）中有重要的自訂工作，則強烈建議您在進行任何升級之前，先將其匯出為套件。
 
-如需詳細資訊，請 [觀看此影片方式](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
+![](assets/do-not-localize/how-to-video.png) 如需詳細資訊，請 [觀看此影片方式](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
 
 ## 何時會進行升級？
 
