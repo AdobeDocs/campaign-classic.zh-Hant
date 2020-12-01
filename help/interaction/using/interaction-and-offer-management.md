@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 10%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 ![](assets/Offermgt2.png)
 
-若要熟悉「促銷活動互動」中使用的互動功能和術語，請觀看此影片： [Adobe Campaign互動概觀](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
+![](assets/do-not-localize/how-to-video.png) 若要熟悉促銷活動互動中使用的互動功能和術語，請觀看 [此影片](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 相關主題
 
