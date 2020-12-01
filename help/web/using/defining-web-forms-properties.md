@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Web表單可完全設定且可個人化，以符合您的需求。 參數必須�
 
 預設情況下，Web表單的欄位儲存在收件人表中。 可以通過從欄位中選擇新表來更改所用 **[!UICONTROL Document type]** 表。 圖 **[!UICONTROL Zoom]** 示可讓您檢視所選表格的內容。
 
-依預設，答案會儲存在表格 **[!UICONTROL Answer to a recipient form]** 中。
+依預設，答案會儲存在收件者 **表單表格的「答案** 」中。
 
 ## 設定錯誤頁面 {#setting-up-an-error-page}
 
