@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 3%
 
 模擬會考慮先前套用至選件的上下文和資格規則(請參閱選件目錄概述 [)，以及其呈現規則(請參閱](../../interaction/using/offer-catalog-overview.md)管理選件簡報 [](../../interaction/using/managing-offer-presentation.md))。 這可讓您測試和調整選件提案的各種版本，而不需實際使用選件或在請求／請求目標時，因為模擬對目標收件者沒有影響。
 
-若要瞭解如何模擬選件，請閱讀以下步驟。 You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
+若要瞭解如何模擬選件，請閱讀以下步驟。
+
+![](assets/do-not-localize/how-to-video.png)[您也可以觀看此短片](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 建立模擬的主要步驟 {#main-steps-for-creating-a-simulation}
 
