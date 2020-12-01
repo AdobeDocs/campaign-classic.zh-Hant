@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '448'
 ht-degree: 7%
 
 ---
@@ -25,6 +25,8 @@ Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳
 >
 >如需Adobe Campaign核心功能的詳細資訊，請參閱「快速 [入門](../../platform/using/about-adobe-campaign-classic.md) 」一節。\
 >本節將詳細說明在不同通道上進行人口定位、訊息個人化和訊息傳遞的相關 [功能](../../delivery/using/steps-about-delivery-creation-steps.md)。
+
+![](assets/do-not-localize/how-to-video.png) [探索視訊中的行銷宣傳關鍵概念](#video)
 
 ## 核心概念 {#core-concepts}
 
@@ -62,3 +64,10 @@ Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳
 
    有關詳情，請參閱關聯 [和建構透過傳送大綱連結的資源](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
+## 教學課程 {#video}
+
+此視訊介紹行銷促銷活動的主要概念。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
