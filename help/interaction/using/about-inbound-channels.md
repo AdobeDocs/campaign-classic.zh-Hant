@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
@@ -19,9 +19,7 @@ ht-degree: 4%
 
 選件可使用傳入或傳出頻道在各種選件空間上呈現。 本章詳細說明了傳入渠道的一些特定功能。
 
->[!NOTE]
->
->您也可以觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ，詳細說明如何在傳入管道上傳送選件。
+![](assets/do-not-localize/how-to-video.png) 您也可以觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ，詳細說明如何在傳入管道上傳送選件。
 
 要讓選件引擎選取，選件必須經過核准並可在即時環境中使用。如需詳細資訊，請參閱「核准 [並啟動選件」](../../interaction/using/approving-and-activating-an-offer.md)。
 
