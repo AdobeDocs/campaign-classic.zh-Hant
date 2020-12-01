@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 4%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
 
@@ -109,8 +109,10 @@ ht-degree: 4%
    >
    >由於電子郵件內容中未定義任何替代版本，請務必在傳送電子郵件前先篩選目標人口族群。
 
-## 如何建立具有條件內容的多語言電子報 {#conditionnal-content-video}
+## 教學課程影片 {#conditionnal-content-video}
 
 透過多語言電子報的範例，瞭解如何將條件式內容新增至傳送內容。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
