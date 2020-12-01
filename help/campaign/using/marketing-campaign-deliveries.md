@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2925'
 ht-degree: 1%
 
 ---
@@ -457,8 +457,10 @@ ht-degree: 1%
 >
 >有關導出的詳細資訊，請參閱「 [Getting Started](../../platform/using/generic-imports-and-exports.md) （快速入門）」部分。
 
-#### 如何在行銷活動中建立電子郵件 {#create-email-video}
+#### 教學課程影片 {#create-email-video}
 
 此影片說明如何在Adobe Campaign Classic 建立行銷活動和電子郵件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
