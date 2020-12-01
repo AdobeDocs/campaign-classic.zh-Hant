@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 建立調查
-description: 建立調查
+title: 設計調查
+description: 設計調查
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 
-# 建立調查{#building-a-survey}
+# 設計調查{#building-a-survey}
 
 ## Creating a new survey {#creating-a-new-survey}
 
