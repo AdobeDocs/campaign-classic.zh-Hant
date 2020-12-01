@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 促銷活動範本的建立與設定會顯示在促銷活動 [範本中](#campaign-templates)。
 
-如需建立促銷活動的詳細資訊，請參閱 [此影片](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)。
+![](assets/do-not-localize/how-to-video.png) 如需建立促銷活動的詳細資訊，請參閱 [此影片](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)。
 
 ## 可用模組的配置 {#configuration-of-the-available-modules}
 
