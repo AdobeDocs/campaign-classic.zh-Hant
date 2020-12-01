@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 關於調查
-description: 關於調查
+title: 開始使用調查
+description: 開始使用Campaign調查
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 0%
 
 ---
 
 
-# 關於調查{#about-surveys}
+# Get started with surveys{#about-surveys}
 
 Adobe Campaign包含一個圖形模組，可用來定義和發佈網頁應用程式。 它用於建立頁，如外聯網上的編輯表單，或通知表單，包括來自資料庫的資料以及表、圖表、輸入表單等。 這項功能可讓您設計和張貼網頁，讓使用者可在其中查閱或輸入資訊。
 
@@ -23,7 +23,7 @@ Adobe Campaign包含一個圖形模組，可用來定義和發佈網頁應用程
 
 本章詳細說明如何建立和管理 **調查**、欄位和頁面管理、儲存模式和記錄。
 
-建立標準Web表單的步驟在本節中 [詳述](../../web/using/about-web-forms.md)。
+建立標準Web表單的步驟在本節 [中詳細說明](../../web/using/about-web-forms.md)。
 
 本節將詳述Web應用 [程式管理](../../web/using/about-web-applications.md)。 有關詳細資訊，請參閱本章。
 
@@ -31,7 +31,7 @@ Adobe Campaign包含一個圖形模組，可用來定義和發佈網頁應用程
 >
 >基於隱私權原因，我們建議對所有外部資源使用HTTPS。
 
-## 促銷活動調查範圍 {#campaign-surveys-scope}
+## 功能範圍 {#campaign-surveys-scope}
 
 在Adobe Campaign中，Web應用程式一般可讓您存取下列功能：
 
