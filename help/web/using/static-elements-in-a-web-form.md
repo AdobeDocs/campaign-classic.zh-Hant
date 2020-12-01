@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1269'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # 網路表單中的靜態元素{#static-elements-in-a-web-form}
 
-在表單頁面中，您可以加入使用者沒有互動的元素；這些是靜態元素，例如影像、HTML內容、水準列或超文字連結。 這些元素是透過工具列的第一個按鈕，按一下功能表來建 **[!UICONTROL Add static element]** 立。
+在表單頁面中，您可以加入使用者沒有互動的元素；這些是靜態元素，例如影像、HTML內容、水準列或超文字連結。 這些元素是透過工具列中的第一個按鈕，透過選取來建立 **[!UICONTROL Static elements]**。
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 您可以在表單頁面中加入HTML內容：超文字連結、影像、格式化段落、視訊或Flash物件等。
 
-HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯器，請前往 **[!UICONTROL Static elements>HTML]** 。
+HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯器，請按一下 **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** 。
 
 您可以直接輸入內容並設定其格式，或顯示原始碼視窗以貼入某些外部內容。 若要切換至「原始碼」模式，請按一下工具列中的第一個圖示：
 
@@ -54,7 +54,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 填寫編輯視窗中的欄位，如下列範例所示：
 
-要添加超文本連結，請轉至 **[!UICONTROL Static elements>Link]**。
+若要新增超文字連結，請前往 **[!UICONTROL Static elements]** > **[!UICONTROL Link]**。
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 >[!NOTE]
 >
->出於安全原因，在公式中輸入的值 **`<%=`** 將替換為轉義字元。 若要避免此情況，而且只有在必要時，請使用下列語法： **`<%=`**.
+>出於安全原因，在公式中輸入的值 **`<%=`** 將替換為逸出字元。
 
 在我們的範例中，收件者的名字和姓氏會儲存在資料庫的欄位中，而其汽車品牌則會儲存在變數中。 第2頁個人化訊息的語法如下：
 
@@ -210,19 +210,19 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
    >[!CAUTION]
    >
-   >如果您在HTML編輯器中輸入這些字元， **則&lt;** and **>** （和）欄位將被轉義字元取代。 在這種情況下，您需要按一下HTML文字編輯器的圖示， **[!UICONTROL Display source code]** 以修正原始碼。
+   >如果您在HTML編輯器中輸入這些字元， **&lt;** and **>** （和）欄位將被逸出字元取代。 在這種情況下，您需要按一下HTML文字編輯器的圖示， **[!UICONTROL Display source code]** 以修正原始碼。
 
 1. 開啟表 **[!UICONTROL Preview]** 單標籤，以檢視在HTML中輸入的值：
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-此操作模式可讓您對Web表單的文本進行分解，並使用整合翻譯工具管理翻譯。 如需詳細資訊，請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)。
+此作業模式可讓您只定義Web表單的文字一次，並使用整合的翻譯工具來管理翻譯。 如需詳細資訊，請參 [閱轉換Web表格](../../web/using/translating-a-web-form.md)。
 
 ## Inserting images {#inserting-images}
 
 若要將影像包含在表單中，必須將其儲存在可從外部存取的伺服器上。
 
-選擇菜 **[!UICONTROL Static elements>Image]** 單。
+選取 **[!UICONTROL Static elements]** >功 **[!UICONTROL Image]** 能表。
 
 選擇要插入的影像源：它可以來自公共資源庫，也可以儲存在外部可訪問的外部伺服器上。
 
