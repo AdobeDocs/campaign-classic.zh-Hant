@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在資料載入（檔�
 
 在此使用案例中，我們將建立工作流程，以便使用「控制面板」中產生的金鑰，匯入在外部系統中加密的資料。
 
-本節也提供教學課程影片，說明如何使用GPG金鑰解密 [資料](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/instance-settings/gpg-key-management/decrypting-data.html?lang=en#instance-settings)。
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#video)
 
 執行此使用案例的步驟如下：
 
@@ -302,3 +302,11 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在資料載入（檔�
 1. 您現在可以執行工作流程。 執行完該操作後，您可以簽入工作流日誌，確認已執行解密，且已導入檔案中的資料。
 
    ![](assets/gpg_run.png)
+
+### 教學課程影片 {#video}
+
+本視訊說明如何使用GPG金鑰解密資料。
+
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
