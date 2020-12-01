@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 7%
+source-wordcount: '221'
+ht-degree: 9%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 7%
 # 重複傳送{#recurring-delivery}
 
 活 **[!UICONTROL Recurring delivery]** 動可讓您設定促銷活動專屬的傳送範本事件。
+
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#recurring-delivery-video)
 
 此活動僅可從促銷活動中 **[!UICONTROL Targeting and workflows]** 找到的標籤中使用。
 
@@ -39,11 +41,16 @@ ht-degree: 7%
 
 ![循環傳送](assets/delivery_recurring.jpg)
 
-此影片說明如何設定循環傳送和排程器活動。
-
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
-
 >[!NOTE]
 >
 >無法從文字活動傳送 **[!UICONTROL Recurring delivery]** 證明。\
 >若要透過促銷活動工作流程直接建立傳送，請使用預先設定的渠道特定活動(例如 **[!UICONTROL Email delivery]**)。
+
+## 教學課程影片(#recurring-delivery-video)
+
+此影片說明如何設定循環傳送和排程器活動。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+
