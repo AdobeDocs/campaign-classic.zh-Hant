@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 此（每日執行）工作流程會選取目前日期有生日的所有收件者。
 
-此使用案例也可以以視訊的形式找到。 For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
+![](assets/do-not-localize/how-to-video.png) 此使用案例也可以以視訊的形式找到。 For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 若要這麼做，請建立促銷活動，然後按一下標 **[!UICONTROL Targeting and workflows]** 簽。 有關詳細資訊，請參閱「在工 [作流中構建主目標](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) 」部分。
 
