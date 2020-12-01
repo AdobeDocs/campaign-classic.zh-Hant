@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-您可以個別建立選項按鈕（單位按鈕）或透過多選項清單，但是由於選項按鈕的要點是選取一或多個選項，因此我們一律會建立至少一對選項按鈕，而不只是單一按鈕。
+您可以個別建立選項按鈕（單一按鈕）或透過多選項清單，但是由於選項按鈕的要點是選取一或多個選項，因此我們一律會建立至少一對選項按鈕，而不只是單一按鈕。
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-若要允許使用者在表單頁面中輸入日期，請在工具列 **[!UICONTROL Add input field > Date...]** 或頁面編輯器中選取。
+若要允許使用者在表單頁面中輸入日期，請新增輸入欄位並選取類型 **[!UICONTROL Date...]**。
 
 輸入欄位的標籤並配置資料儲存模式。
 
@@ -388,11 +388,13 @@ Captcha會插入頁面，並在視覺下方放置輸入欄位。 這兩個元素
 
 ## 插入隱藏常數 {#inserting-a-hidden-constant}
 
-當使用者在表單的其中一個頁面上傳遞時，您可以反白標示欄位。 若要這麼做，請在頁面中放置常數，並指定值和儲存位置。
+當使用者驗證表單的其中一個頁面時，您可以將特定值設定至其描述檔的欄位或變數。
 
 此欄位對使用者不可見，但可用於豐富使用者設定檔中的資料。
 
-在下列範例中，每當使 **用者核准此頁面** ，就會自動填入收件者描述檔的原始檔案。 常數不會顯示在頁面上。
+若要這麼做，請在頁 **面中放置** 常數，並指定值和儲存位置。
+
+在下列範例中，每當使 **用者核准此頁面時** ，就會自動填入收件者描述檔的來源欄位。 常數不會顯示在頁面上。
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
