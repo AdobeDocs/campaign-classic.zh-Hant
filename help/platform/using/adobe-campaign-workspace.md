@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 89%
+source-wordcount: '2157'
+ht-degree: 88%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 89%
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動工作區](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png)[ 在影片中探索行銷活動工作區](#video)
 
 >[!NOTE]
 >
@@ -389,3 +389,11 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 * **[!UICONTROL d]** 幾天。
 
 ![](assets/enter_unit_sample.png)
+
+## 教學課程影片 {#video}
+
+此影片顯示Campaign Classic工作區。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
