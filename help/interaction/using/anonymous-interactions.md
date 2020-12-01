@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 匿名互動{#anonymous-interactions}
 
-觀看此 [影片](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，以取得如何將選件傳送至已識別和匿名目標的概觀。
+![](assets/do-not-localize/how-to-video.png) 觀看此 [影片](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，以取得如何將選件傳送至已識別和匿名目標的概觀。
 
 ## 針對匿名互動鎖定和儲存環境 {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
