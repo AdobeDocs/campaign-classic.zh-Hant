@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 9%
+source-wordcount: '880'
+ht-degree: 8%
 
 ---
 
@@ -118,8 +118,10 @@ Adobe Campaign介面中不會顯示此工作流程。 它只是一種技術手�
 
 如果您將此選項設為0，個人化階段將不會有時間限制。
 
-## 如何使用個人化欄位進行電子郵件個人化 {#personalization-fields-video}
+## 教學課程影片 {#personalization-fields-video}
 
 瞭解如何將個人化欄位新增至主旨行，以及電子郵件傳送的內容。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
