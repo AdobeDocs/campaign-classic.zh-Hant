@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 4%
+source-wordcount: '1580'
+ht-degree: 3%
 
 ---
 
@@ -203,8 +203,10 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 >
 >依預設， **[!UICONTROL AMP inclusion]** 選項會設為 **[!UICONTROL No]**。
 
-## 如何啟用和使用電子郵件 AMP {#amp-email-video}
+## 教學課程影片 {#amp-email-video}
 
 以下影片說明如何在Adobe Campaign Classic 啟動 AMP，並展示其使用情形。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
