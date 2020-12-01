@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 2%
@@ -63,7 +63,7 @@ ht-degree: 2%
    > 
    >此函式對Web應用程式特別有用，但不建議用於公開表單。 選定的訪問控制選項必須是「啟用訪問控制」。
 
-如 **[!UICONTROL Skip preloading if identification is empty]** 果您不想更新配置式，則必須選擇該選項。 在這種情況下，在批准表單後，輸入的每個配置檔案都將添加到資料庫中。 例如，當表單張貼在網站上時，就會使用這個選項。
+如 **[!UICONTROL Skip preloading if no ID]** 果您不想更新配置式，則必須選擇該選項。 在這種情況下，在批准表單後，輸入的每個配置檔案都將添加到資料庫中。 例如，當表單張貼在網站上時，就會使用這個選項。
 
 選 **[!UICONTROL Auto-load data referenced in the form]** 項可讓您自動預先載入符合表單中輸入和合併欄位的資料。 但是，與活動中參 **[!UICONTROL Script]** 考的 **[!UICONTROL Test]** 資料並不相關。 如果未選取此選項，您必須使用選項來定義欄 **[!UICONTROL Load additional data]** 位。
 
