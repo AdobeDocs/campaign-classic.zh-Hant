@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -99,7 +99,7 @@ Cookie名稱為 **Acoptout**。 常見值有：
 
 * **NL.ServerWebTracking。_displayOptOutBanner()**
 
-   如果管理員在選取退出橫幅後應顯示退出橫幅，則傳回true
+   如果管理員選取退出橫幅後應顯示退出橫幅，則傳回「true」
 
    當管理員已選擇使用網頁追蹤退出橫幅時，就會呼叫此程式碼。
 
