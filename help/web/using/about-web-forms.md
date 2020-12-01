@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 關於網路表單
-description: 關於網路表單
+title: 開始使用Web表格
+description: 開始使用Campaign中的Web表格
 audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 5%
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
 
-# 關於網路表單{#about-web-forms}
+# Get started with web forms{#about-web-forms}
 
 Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立包含輸入和選擇欄位的頁面，並可能包含資料在資料庫中。 這可讓您設計並張貼網頁，讓使用者可存取這些網頁以檢視或輸入資訊。
 
@@ -53,7 +53,7 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 
 要定義Web表單的配置和內容，請應用以下步驟：
 
-* 首先，請建立必要的頁面並進行檢查：輸入欄位、下拉式清單、HTML內容等。
+* 首先，請建立必要的頁面和控制項：輸入欄位、下拉式清單、HTML內容等。
 
    此步驟在下面詳述。
 
