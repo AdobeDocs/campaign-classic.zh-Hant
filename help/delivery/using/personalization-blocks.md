@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -154,8 +154,10 @@ HTML原始碼會插入傳送內容中。 例如，個人化 **[!UICONTROL Greeti
 
    * 輸入內容（在HTML、文字、JavaScript等中） 個人化區塊中，然後按一下 **[!UICONTROL Save]**。
 
-## 使用動態內容區塊個人化電子郵件 {#personalization-blocks-video}
+## 教學課程影片 {#personalization-blocks-video}
 
 瞭解如何建立動態內容區塊，以及如何使用這些區塊來個人化您的電子郵件傳送內容。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
