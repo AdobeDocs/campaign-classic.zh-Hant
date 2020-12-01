@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 68%
+source-wordcount: '805'
+ht-degree: 67%
 
 ---
 
@@ -126,7 +126,9 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 >
 >刪除清單時，清單上的用戶檔案不受影響，但是將更新用戶檔案中的資料。
 
-## 如何建立收件者清單 {#create-list-video}
+## 教學課程影片 {#create-list-video}
+
+### 如何建立收件者清單
 
 此清單 (list) 是一組靜態的收件者名單，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。收件者清單也可以稱為受眾。
 
@@ -134,8 +136,10 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
+### How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 瞭解如何建立工作流程以鎖定收件者，以及如何在使用電子郵件目標中的清單之前讓工作流程重複執行。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
