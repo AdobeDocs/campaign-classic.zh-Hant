@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,8 @@ ht-degree: 3%
 
 通常，將目標儲存在清單中會標示工作流程的結束。 因此，預設情況下， **[!UICONTROL List update]** 活動不具有出站轉換。 勾選 **[!UICONTROL Generate an outbound transition]** 新增選項。
 
+![](assets/do-not-localize/how-to-video.png) [瞭解如何從影片中的檔案總管建立收件者清單](#video)
+
 ## 範例：清單更新 {#example--list-update}
 
 在以下範例中，清單更新活動會遵循查詢，以法國30歲以上的男性為目標。 清單最初會從查詢結果建立。 然後，每當從工作流程啟動時，就會更新它。 例如，它可定期用於促銷活動的定位促銷優惠。
@@ -56,8 +58,6 @@ ht-degree: 3%
 
    然後會建立或更新相符的收件者清單。
 
-如需詳細資訊，請參閱「建立收 [件者清單」影片](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) 。
-
 ## 輸入參數 {#input-parameters}
 
 * tableName
@@ -68,3 +68,11 @@ ht-degree: 3%
 ## 輸出參數 {#output-parameters}
 
 * groupId:群組識別碼。
+
+## 教學課程影片 {#video}
+
+此影片說明如何從檔案總管建立收件者清單。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
