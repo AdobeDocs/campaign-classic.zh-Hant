@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 98%
+source-wordcount: '2179'
+ht-degree: 96%
 
 ---
 
@@ -273,7 +273,7 @@ ht-degree: 98%
       + [追蹤 Web 應用程式](web/using/tracking-a-web-application.md)
       + [Web 應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
    + 編輯 HTML 內容 {#editing-html-content}
-      + [關於 Campaign HTML 編輯器](web/using/about-campaign-html-editor.md)
+      + [開始使用HTML編輯器](web/using/about-campaign-html-editor.md)
       + [範本管理](web/using/template-management.md)
       + [內容編輯器介面](web/using/content-editor-interface.md)
       + [編輯內容](web/using/editing-content.md)
@@ -281,7 +281,7 @@ ht-degree: 98%
       + [建立登錄頁面](web/using/creating-a-landing-page.md)
       + [使用案例：建立電子郵件傳遞](web/using/use-case--creating-an-email-delivery.md)
    + 網路表單{#web-forms}
-      + [關於網路表單](web/using/about-web-forms.md)
+      + [開始使用Web表格](web/using/about-web-forms.md)
       + [使用網路表單範本](web/using/using-a-web-form-template.md)
       + [新增欄位至網路表單](web/using/adding-fields-to-a-web-form.md)
       + [網路表單中的靜態元素](web/using/static-elements-in-a-web-form.md)
@@ -294,9 +294,9 @@ ht-degree: 98%
       + [轉譯網路表單](web/using/translating-a-web-form.md)
       + [使用案例：網路表單](web/using/use-cases--web-forms.md)
    + 線上意見調查{#online-surveys}
-      + [關於調查](web/using/about-surveys.md)
-      + [調查快速入門](web/using/getting-started-with-surveys.md)
-      + [建立調查](web/using/building-a-survey.md)
+      + [開始使用調查](web/using/about-surveys.md)
+      + [建立調查的關鍵步驟](web/using/getting-started-with-surveys.md)
+      + [設計調查](web/using/building-a-survey.md)
       + [管理答案](web/using/managing-answers.md)
       + [發佈、追蹤及使用收集的資料](web/using/publish--track-and-use-collected-data.md)
       + [設定調查](web/using/configuring-surveys.md)
