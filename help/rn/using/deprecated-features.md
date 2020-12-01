@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1626'
 ht-degree: 99%
 
 ---
@@ -54,21 +54,21 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <li>Web API - Microsoft Dynamics CRM內部部署：2016, 2016更新1</li>
    <li>Web API - Microsoft Dynamics CRM線上：2016, 2016更新1</li>
    </ul>
-  <p><em>目標移除日期：2021 年</em></p>
+  <p><em>目標移除日期：2021 年 4 月</em></p>
   </td>
  </tr>
   <tr>
   <td>舊的 iOS 二進位<br></td>
   <td><p>自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。<p>
   <p> 如果您使用此連接器，則需要據此調整實施。<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html">進一步瞭解</a></p>
-  <p><em>目標移除日期：2021 年</em></p>
+  <p><em>目標移除日期：2021 年 4 月</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex 網域<br></td>
   <td><p> 自 Campaign 第 20.3 發行版本開始，已棄用使用於匯入和匯出受眾至 Adobe Experience Cloud 的 Demdex 網域。<p>
   <p>如果您使用 Demdex 網域作為匯入/匯出的外部帳戶，則需要依此調整實施。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">進一步瞭解</a></p> 
-  <p><em>目標移除日期：2021 年</em></p>
+  <p><em>目標移除日期：2021 年 4 月</em></p>
   </td>
   <tr>
   <td>OAuth 驗證（OAuth 和 JWT）<br></td>
@@ -91,14 +91,14 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    </ul>
   <p>如果您使用其中一個連接器，則需要據此調整實施。<a href="../../delivery/using/sms-channel.md">瞭解更多</a></p> 
   <p>閱讀此<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector.html">技術文件</a>，瞭解如何移轉舊連接器。</p>
-  <p><em>目標移除日期：2021 年</em></p>
+  <p><em>目標移除日期：2021 年 4 月</em></p>
   </td> 
  </tr>
   <tr>  
    <td>傳真頻道<br></td>
    <td><p>傳真頻道自 Campaign 20.2 發行版本開始不再使用。</p> 
    <p>如果您使用此頻道，則需要據此調整實施。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">瞭解更多</a> Campaign 頻道。</p>
-   <p><em>目標移除日期：2021 年</em></p></td>
+   <p><em>目標移除日期：2021 年 4 月</em></p></td>
   </tr>
  </tbody> 
 </table>
