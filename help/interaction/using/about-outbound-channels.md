@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 選件可使用傳入或傳出頻道，以各種空間顯示。 本章詳細說明出站渠道。
 
->[!NOTE]
->
->您也可以觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，其中詳細說明如何在對外渠道傳送選件。
+![](assets/do-not-localize/how-to-video.png) 您也可以觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，其中詳細說明如何在對外渠道傳送選件。
 
 要讓選件引擎選取該選件，它必須經過核准，並可在即時環境中使用。 如需詳細資訊，請參閱核 [準和啟用選件](../../interaction/using/approving-and-activating-an-offer.md)。
 
