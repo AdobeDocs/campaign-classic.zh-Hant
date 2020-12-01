@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 1%
 # Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 促銷活動包括動作（傳送）和程式（匯入或擷取檔案），以及資源（行銷檔案、傳送大綱）。 它們用於行銷促銷活動。 促銷活動是方案的一部分，而方案則包含在促銷活動計畫中。
+
+![](assets/do-not-localize/how-to-video.png) 瞭解如何在視訊中建立行銷計畫、計畫和 [宣傳](#video)
 
 若要建立行銷促銷活動：
 
@@ -45,7 +47,7 @@ ht-degree: 1%
 
    請參 [閱建立服務提供商及其成本結構](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
-完成這些步驟後，您可以開始傳送(請參閱 [Starting a delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))、檢查與傳送相關的資料、流程和資訊，並視需要管理相關的檔案(請參閱 [Managing associated documents](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您也可以追蹤促銷活動和傳送的處理階段的執行情況(請參閱 [追蹤](../../campaign/using/marketing-campaign-monitoring.md)。
+完成這些步驟後，您可以開始傳送(請參閱 [Starting a delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))、檢查與傳送相關的資料、流程和資訊，並視需要管理相關的檔案(請參閱 [Managing associated documents](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您也可以追蹤促銷活動和傳送的處理階段執行(請參閱 [追蹤](../../campaign/using/marketing-campaign-monitoring.md))。
 
 ## 建立計畫和方案層次結構 {#creating-plan-and-program-hierarchy}
 
@@ -230,3 +232,11 @@ ht-degree: 1%
    ![](assets/s_ncs_user_op_template_period_planning.png)
 
 每個定期促銷活動都包含相同的元素。 建立後，即會將其管理為標準促銷活動。
+
+## 教學課程影片 {#video}
+
+此影片說明如何建立行銷計畫、方案和促銷活動。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
