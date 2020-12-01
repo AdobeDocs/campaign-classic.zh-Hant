@@ -7,17 +7,21 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 3%
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
 
 
 # 持續傳遞{#continuous-delivery}
 
-「連 **續傳送類型** 」動作可讓您將新收件者新增至現有的傳送。 此傳送類型可避免您每次都必須建立新傳送：此模式通常更有效率，尤其是對於需要時發送的低容量警報或通知。 在傳送範本層級，您可以指定指令碼來計算相關傳送的標籤（和促銷活動資料夾）。 如果指令檔計算尚未存在的傳送，則會即時建立。
+「連 **續傳送類型** 」動作可讓您將新收件者新增至現有的傳送。 此傳送類型可避免您每次都必須建立新傳送：此模式通常更有效率，尤其是對於需要時發送的低容量警報或通知。
+
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#continuous-delivery-video)
+
+在傳送範本層級，您可以指定指令碼來計算相關傳送的標籤（和促銷活動資料夾）。 如果指令檔計算尚未存在的傳送，則會即時建立。
 
 ![](assets/edit_diffusion_fil.png)
 
@@ -56,6 +60,10 @@ ht-degree: 3%
 
 ![持續傳送](assets/delivery_continuous.jpg)
 
+## 教學課程影片 {#continuous-delivery-video}
+
 此視訊說明如何設定具有遞增查詢的連續傳送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
