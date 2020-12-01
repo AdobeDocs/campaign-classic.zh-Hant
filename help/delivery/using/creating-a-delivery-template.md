@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 6%
 
 ---
 
@@ -68,20 +68,24 @@ Right-click and select **[!UICONTROL Actions > Save as template...]**.
 >
 >為避免設定錯誤，建議您複製原生範本並變更其屬性，而不要建立新範本。
 
-## 如何設定傳送範本 {#delivery-template-video}
+## 教學課程影片 {#delivery-template-video}
+
+### 如何設定傳送範本
 
 以下影片示範如何設定臨機傳送的範本。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
-## 如何設定傳送範本屬性
+### 如何設定傳送範本屬性
 
 下面的影片說明如何設定傳送範本屬性，並詳細說明每個屬性。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
-## 如何部署臨機傳送範本
+### 如何部署臨機傳送範本
 
 此影片說明如何部署臨機電子郵件傳送範本，並說明電子郵件傳送與傳送工作流程之間的差異。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
+
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
