@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 關於 Web 應用程式
-description: 建立和共用動態網頁應用程式、登陸頁面和調查。
+title: 開始使用網路應用程式
+description: 建立和共用動態網頁應用程式、登陸頁面和調查
 audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 21%
+source-wordcount: '689'
+ht-degree: 20%
 
 ---
 
