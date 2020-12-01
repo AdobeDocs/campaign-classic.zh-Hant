@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 3%
+source-wordcount: '1579'
+ht-degree: 2%
 
 ---
 
@@ -225,15 +225,16 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以結合特定證明目標的定義和使用種子地址的選 **[!UICONTROL Specific target and Seed addresses]** 項。 然後在兩個單獨的子頁籤中定義相關配置。
 
-## 如何管理電子郵件中的種子和校樣 {#seeds-and-proofs-video}
+另請參閱：
+
+* [選擇校對目標](#selecting-the-proof-target)
+* [關於種子地址](../../delivery/using/about-seed-addresses.md)
+* [使用案例：依條件選取種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+
+## 教學課程影片 {#seeds-and-proofs-video}
 
 在此影片中，您將學習如何在現有電子郵件中新增種子和校樣，以及如何傳送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-另請參閱：
-* [選擇校對目標](#selecting-the-proof-target)
-
-* [關於種子地址](../../delivery/using/about-seed-addresses.md)
-
-* [使用案例：依條件選取種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
