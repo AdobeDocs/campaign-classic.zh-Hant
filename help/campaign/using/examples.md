@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # 範例{#examples}
 
-## 建立本機促銷活動（依表單） {#creating-a-local-campaign--by-form-}
+## 建立本機促銷活動（依表單）{#creating-a-local-campaign--by-form-}
 
-By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程式可包含任何類型已定義的個人化元素，視其設定而定。 例如，您可以建議連結來評估目標、預算、內容等。 透過專屬API。
+**By form**&#x200B;類型的web介面涉及使用&#x200B;**web應用程式**。 視其設定而定，此Web應用程式可包含任何類型已定義的個人化元素。 例如，您可以建議連結來評估目標、預算、內容等。 透過專屬API。
 
 >[!NOTE]
 >
->API會在專屬檔案中詳細列出，其存取權取決於您的合約。 請參閱 [API](../../configuration/using/about-web-services.md)。
+>API會在專屬檔案中詳細列出，其存取權取決於您的合約。 請參閱[API](../../configuration/using/about-web-services.md)。
 >
 >此範例中使用的網頁應用程式並非隨附Adobe Campaign而現成的網頁應用程式。 若要在促銷活動中使用表單，您必須建立專用的Web應用程式。
 
-建立促銷活動範本時，按一 **[!UICONTROL Zoom]** 下連結選項中 **[!UICONTROL Web interface]** 的圖 **[!UICONTROL Advanced campaign settings...]** 示，以存取Web應用程式的詳細資訊。
+建立促銷活動範本時，按一下&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;連結的&#x200B;**[!UICONTROL Web interface]**&#x200B;選項中的&#x200B;**[!UICONTROL Zoom]**&#x200B;圖示，以存取Web應用程式的詳細資訊。
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -35,11 +35,11 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 >
 >Web應用程式參數僅適用於促銷活動範本。
 
-在標籤 **[!UICONTROL Edit]** 中，選取「促銷 **活動」訂單活動** ，並開啟它以存取其內容。
+在&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，選取&#x200B;**促銷活動順序**&#x200B;活動，並開啟它以存取其內容。
 
 ![](assets/mkg_dist_web_app1.png)
 
-在此範例中，促銷活 **動訂單活動** 包括：
+在此範例中，**促銷活動順序**&#x200B;活動包括：
 
 * 欄位，
 
@@ -73,7 +73,7 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
    var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
    ```
 
-## 建立協作促銷活動（透過目標核准） {#creating-a-collaborative-campaign--by-target-approval-}
+## 建立協作促銷活動（透過目標核准）{#creating-a-collaborative-campaign--by-target-approval-}
 
 ### 簡介 {#introduction}
 
@@ -96,17 +96,17 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
 **對於中央實體：**
 
-1. 建立活 **[!UICONTROL Data distribution]** 動。
+1. 建立&#x200B;**[!UICONTROL Data distribution]**&#x200B;活動。
 1. 建立協作促銷活動。
 1. 發佈促銷活動。
 
-### 本端實體側 {#local-entity-side}
+### 本地實體端{#local-entity-side}
 
 1. 已選擇參與促銷活動的當地實體將會收到電子郵件通知。
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. 按一下連 **[!UICONTROL Access your contact list and approve targeting]** 結，即可（透過網頁瀏覽器）存取為促銷活動選取的用戶端清單。
+1. 按一下&#x200B;**[!UICONTROL Access your contact list and approve targeting]**&#x200B;連結，即可讓本機實體存取（透過網頁瀏覽器）促銷活動所選用的用戶端清單。
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -116,27 +116,27 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
 一旦核准檢查後，促銷活動就會自動啟動。
 
-### 中央實體側 {#central-entity-side}
+### 中央實體側{#central-entity-side}
 
-#### 建立資料分發活動 {#creating-a-data-distribution-activity}
+#### 建立資料分發活動{#creating-a-data-distribution-activity}
 
-1. 若要設定協作促銷活動（透過目標核准），您必須先建立 **[!UICONTROL Data distribution activity]**。 按一下節 **[!UICONTROL New]** 點中的圖 **[!UICONTROL Resources > Campaign management > Data distribution]** 標。
+1. 若要設定協作促銷活動（透過目標核准），您必須先建立&#x200B;**[!UICONTROL Data distribution activity]**。 按一下&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;節點中的&#x200B;**[!UICONTROL New]**&#x200B;表徵圖。
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
-1. 在標籤 **[!UICONTROL General]** 中，您必須指定：
+1. 在&#x200B;**[!UICONTROL General]**&#x200B;標籤中，您必須指定：
 
-   * the **[!UICONTROL Targeting dimension]**. 在此， **資料分發** 會對收件者 **執行**。
-   * the **[!UICONTROL Distribution type]**. 您可以選擇「固 **定大小** 」或「 **大小」作為百分比**。
-   * the **[!UICONTROL Assignment type]**. 選擇「本 **地實體** 」選項。
-   * the **[!UICONTROL Distribution type]**. 在此，「收件者」 **[!UICONTROL Origin (@origin)]** 表格中顯示的欄位可讓您識別聯繫人與本機實體之間的關係。
-   * 欄 **[!UICONTROL Approval storage]** 位。 選擇「收 **件者的本地批准** 」選項。
+   * **[!UICONTROL Targeting dimension]**。 在此，在&#x200B;**收件者**&#x200B;上執行&#x200B;**資料分發**。
+   * **[!UICONTROL Distribution type]**。 您可以選擇&#x200B;**固定大小**&#x200B;或&#x200B;**大小作為百分比**。
+   * **[!UICONTROL Assignment type]**。 選擇&#x200B;**本地實體**&#x200B;選項。
+   * **[!UICONTROL Distribution type]**。 在此，**[!UICONTROL Origin (@origin)]**&#x200B;欄位出現在「收件者」表格中，可讓您識別連絡人與本機實體之間的關係。
+   * **[!UICONTROL Approval storage]**&#x200B;欄位。 選擇&#x200B;**收件人的本地批准**&#x200B;選項。
 
-1. In the **[!UICONTROL Breakdown]** tab, specify:
+1. 在&#x200B;**[!UICONTROL Breakdown]**&#x200B;標籤中，指定：
 
-   * 的 **[!UICONTROL Distribution field value]**&#x200B;值，此值對應於參與即將進行之促銷活動的當地實體。
-   * 本機實體 **[!UICONTROL label]**。
-   * ( **[!UICONTROL Size]** 固定或百分比)。 0的 **預設值** ，包括選取連結至本機實體的所有收件者。
+   * **[!UICONTROL Distribution field value]**，它對應於參與即將進行之促銷活動的當地實體。
+   * 本地實體&#x200B;**[!UICONTROL label]**。
+   * **[!UICONTROL Size]**（固定或百分比）。 **0預設值**&#x200B;涉及選擇連結到本地實體的所有收件人。
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -144,12 +144,12 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
 #### 建立協作行銷活動 {#creating-a-collaborative-campaign}
 
-1. 從節 **[!UICONTROL Campaign management > Campaign]** 點建立新 **[!UICONTROL collaborative campaign (by target approval)]**。
-1. 在標籤 **[!UICONTROL Targeting and workflows]** 中，建立促銷活動的工作流程。 這必須包含 **Split** 活動，活動 **[!UICONTROL Record count limitation]** 在其中定 **[!UICONTROL Data distribution]** 義。
+1. 從&#x200B;**[!UICONTROL Campaign management > Campaign]**&#x200B;節點建立新&#x200B;**[!UICONTROL collaborative campaign (by target approval)]**。
+1. 在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;標籤中，建立促銷活動的工作流程。 這必須包含&#x200B;**Split**&#x200B;活動，其中&#x200B;**[!UICONTROL Record count limitation]**&#x200B;由&#x200B;**[!UICONTROL Data distribution]**&#x200B;活動定義。
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
-1. 新增可 **[!UICONTROL Local approval]** 指定的動作：
+1. 新增&#x200B;**[!UICONTROL Local approval]**&#x200B;動作，您可在其中指定：
 
    * 即會傳送給通知中本機實體的訊息內容，
    * 核准提醒，
@@ -159,18 +159,18 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
 1. 儲存您的記錄。
 
-#### 發佈促銷活動 {#publishing-the-campaign}
+#### 發佈促銷活動{#publishing-the-campaign}
 
-您現在可以從「促銷活 **動」範圍** ，新增 **促銷活動** 套件。
+您現在可以從&#x200B;**促銷活動**&#x200B;範圍新增&#x200B;**促銷活動套件**。
 
-1. 選擇您的 **[!UICONTROL Reference campaign]**。 在套件 **[!UICONTROL Edit]** 的標籤中，您可以選取要用 **[!UICONTROL Approval mode]** 於促銷活動的：
+1. 選擇您的&#x200B;**[!UICONTROL Reference campaign]**。 在套件的&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，您可以選取&#x200B;**[!UICONTROL Approval mode]**&#x200B;以用於促銷活動：
 
-   * 在「 **手動** 」模式中，如果本地實體接受中央實體的邀請，就會參與促銷活動。 如果他們想要，而且必須向經理核准，才能確認其參與促銷活動，他們可以刪除預先選取的聯絡人。
-   * 在「 **自動** 」模式中，除非本地實體從中註銷，否則必須參與促銷活動。 他們可以刪除聯絡人，而不需要核准。
+   * 在&#x200B;**Manual**&#x200B;模式中，如果本地實體接受中央實體的邀請，它們會參與促銷活動。 如果他們想要，而且必須向經理核准，才能確認其參與促銷活動，他們可以刪除預先選取的聯絡人。
+   * 在&#x200B;**自動**&#x200B;模式中，除非本地實體從中註銷，否則必須參與促銷活動。 他們可以刪除聯絡人，而不需要核准。
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
-1. 在標籤 **[!UICONTROL Description]** 中，您可以新增促銷活動的說明，以及任何要傳送至本機實體的檔案。
+1. 在&#x200B;**[!UICONTROL Description]**&#x200B;標籤中，您可以新增促銷活動的說明，以及任何要傳送至本機實體的檔案。
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
@@ -178,7 +178,7 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
-## 建立協作促銷活動（依表單） {#creating-a-collaborative-campaign--by-form-}
+## 建立協作促銷活動（依表單）{#creating-a-collaborative-campaign--by-form-}
 
 ### 簡介 {#introduction-1}
 
@@ -203,12 +203,12 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 **對於中央實體：**
 
 1. 建立協作促銷活動。
-1. 設定本 **[!UICONTROL Advanced campaign settings...]** 機促銷活動的方式。
+1. 設定&#x200B;**[!UICONTROL Advanced campaign settings...]**，就像您對本機促銷活動所做的設定。
 1. 設定促銷活動工作流程和傳送方式，就像您對本機促銷活動一樣。
 1. 更新Web表格。
 1. 建立促銷活動套件並發佈。
 
-### 本端實體側 {#local-entity-side-1}
+### 本地實體端{#local-entity-side-1}
 
 1. 選擇參與促銷活動的本機實體會收到電子郵件通知，通知他們參與促銷活動。
 
@@ -226,26 +226,26 @@ By表 **單類型** Web介面涉及使用 **Web應用程式**。 此Web應用程
 
    ![](assets/mkg_dist_use_case_form_9.png)
 
-### 中央實體側 {#central-entity-side-1}
+### 中央實體側{#central-entity-side-1}
 
-1. 若要實作協作促銷活動（依表單），您必須使用「協作促銷活動」（依表單）范 **本建立促銷活動** 。
+1. 若要實作協作促銷活動（依表單），您必須使用&#x200B;**協作促銷活動（依表單）**&#x200B;範本建立促銷活動。
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. 在促銷活動的標 **[!UICONTROL Edit]** 簽中，按一下 **[!UICONTROL Advanced campaign settings...]** 連結，將其設定為本機促銷活動。 請參閱 [建立本機促銷活動（依表單）](#creating-a-local-campaign--by-form-)。
+1. 在促銷活動的&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;連結，將其設定為本機促銷活動。 請參閱[建立本機促銷活動（依表單）](#creating-a-local-campaign--by-form-)。
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
-1. 設定促銷活動工作流程和Web表單。 請參閱 [建立本機促銷活動（依表單）](#creating-a-local-campaign--by-form-)。
+1. 設定促銷活動工作流程和Web表單。 請參閱[建立本機促銷活動（依表單）](#creating-a-local-campaign--by-form-)。
 1. 指定執行排程和相關的本機實體，以建立促銷活動套件。
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. 通過在頁籤中選擇批准模式來最終確定包 **[!UICONTROL Edit]** 配置。
+1. 在&#x200B;**[!UICONTROL Edit]**&#x200B;頁籤中選擇批准模式，完成包配置。
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. 在標籤 **[!UICONTROL Description]** 中，您可以輸入促銷活動套件說明、發佈套件時要傳送至本機實體的通知訊息，以及將任何資訊性檔案附加至您的促銷活動套件。
+1. 在&#x200B;**[!UICONTROL Description]**&#x200B;標籤中，您可以輸入促銷活動套件說明、發佈套件時傳送至本機實體的通知訊息，以及將任何資訊性檔案附加至您的促銷活動套件。
 
    ![](assets/mkg_dist_use_case_form_5.png)
 
