@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2201'
 ht-degree: 80%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 # 第 20.2 發行版本{#release-20-2}
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板10月發行** ，其中包含使用CNAME的網域設定和新的資料庫監控功能。 [進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
@@ -52,10 +52,10 @@ _2020年7月22日_
 * 改善了 iOS HTTP2 連接器（協力廠商更新和錯誤管理）。(NEO-25904、NEO-25903)
 * catalina.properties中的jarToSkip清單已更新，以刪除對不再使用的jar檔案的引用（iOS通知）。
 * 修正了在postupgrade後封鎖傳送準備的問題。
-* 在切換至新的序 [列ID機制後](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)，所有更新收件者表格的Web應用程式都會在設定檔期間重新發佈。
+* 在切換至[新序列ID機制](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)後，所有更新收件者表的Web應用程式都會在設定檔期間重新發佈。
 * 已修正傳送內容中的潛在XSS弱點。 (NEO-17987、NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
@@ -155,6 +155,8 @@ _2020 年 6 月 8 日_
 * 使用 iOS HTTP2連接器的 iOS 行動應用程式憑證，現在將於傳送推播通知前驗證，因此可以避免傳遞因憑證過期而失敗。
 
 * 改善了 HTTP 代理連線的管理機制。[進一步瞭解](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+
+* **[!UICONTROL Javascript Code]**&#x200B;和&#x200B;**[!UICONTROL Advanced Javascript Code]**&#x200B;工作流程活動中的新選項，可在限制後停止執行。 預設值為1小時。 [進一步瞭解](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
 
 **其他變更**
 
