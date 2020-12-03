@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 如果此擴充方法提供擴充表格的良好彈性，則不允許減少表格中的欄位或連結數。 使用非標準表（或「外部收件者表」）可提供更大的靈活性，但在實施時需要某些預防措施。
 
-## 精確度 {#precisions}
+## 精度{#precisions}
 
 此功能可讓Adobe Campaign處理來自外部資料庫的資料：此資料將用作一組傳送的描述檔。 實施此程式涉及多項可能與客戶需求相關的精確度。 例如：
 
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 本節說明可讓您映射Adobe Campaign中現有表格的關鍵點，以及套用以根據任何表格執行傳送的設定。 最後，說明如何像標準收件人表格一樣，向用戶提供查詢介面。 為了瞭解本節中介紹的內容，您必須熟悉螢幕和架構設計的原則。
 
-## 建議與限制 {#recommendations-and-limitations}
+## 建議與限制{#recommendations-and-limitations}
 
 使用外部收件者表格有下列限制：
 
@@ -47,34 +47,34 @@ ht-degree: 2%
 
    我們建議：
 
-   * 將這些 **[!UICONTROL nms:BroadLogRcp]** 和 **[!UICONTROL nms:TrackingLogRcp]** 結構描述指定給現成可用的 **[!UICONTROL nms:Recipientschema]**。 這兩個日誌表不應連結到任何其他自定義收件人表。
-   * 為每個新的自訂收件者架構定義專用的自訂廣告和追蹤記錄結構。 在設定目標對應時，可自動執行此動作，請參閱 [Target對應](../../configuration/using/target-mapping.md)。
+   * 將&#x200B;**[!UICONTROL nms:BroadLogRcp]**&#x200B;和&#x200B;**[!UICONTROL nms:TrackingLogRcp]**&#x200B;方案指定到現成可用的&#x200B;**[!UICONTROL nms:Recipientschema]**。 這兩個日誌表不應連結到任何其他自定義收件人表。
+   * 為每個新的自訂收件者架構定義專用的自訂廣告和追蹤記錄結構。 在設定目標映射時，可以自動完成此操作，請參閱[目標映射](../../configuration/using/target-mapping.md)。
 
-* 您無法使用產品 **[!UICONTROL Services and Subscriptions]** 中提供的標準。
+* 您無法使用產品中提供的標準&#x200B;**[!UICONTROL Services and Subscriptions]**。
 
-   這表示本節中詳述的 [整體操作](../../delivery/using/managing-subscriptions.md) 不適用。
+   這表示[本節](../../delivery/using/managing-subscriptions.md)中詳述的整體操作不適用。
 
-* 與表格的連 **[!UICONTROL visitor]** 結無法運作。
+* 與&#x200B;**[!UICONTROL visitor]**&#x200B;表格的連結無法運作。
 
-   因此，要使用模 **[!UICONTROL Social Marketing]** 塊，必須配置儲存步驟以引用正確的表。
+   因此，要使用&#x200B;**[!UICONTROL Social Marketing]**&#x200B;模組，必須配置儲存步驟以引用正確的表。
 
    同樣地，在使用轉介功能時，必須調整標準的初始訊息傳送範本。
 
 * 您無法手動在清單中新增描述檔。
 
-   因此，本節中詳述的 [過程](../../platform/using/creating-and-managing-lists.md) ，如果沒有其他配置，則不適用。
+   因此，如果沒有額外的配置，則[本節](../../platform/using/creating-and-managing-lists.md)中詳細介紹的過程不適用。
 
    >[!NOTE]
    >
-   >您仍然可以使用工作流程來建立收件者清單。 有關詳細資訊，請參 [閱使用工作流建立配置檔案清單](../../configuration/using/creating-a-profile-list-with-a-workflow.md)。
+   >您仍然可以使用工作流程來建立收件者清單。 有關詳細資訊，請參閱[使用工作流建立配置式清單。](../../configuration/using/creating-a-profile-list-with-a-workflow.md)
 
 我們也建議檢查不同現成可用組態所使用的預設值：根據使用的功能，必須進行若干適應。
 
 例如：
 
-* 某些標準報表，尤其是 **Interaction** 和 **Mobile Applications提供的報** 表，必須重新開發。 請參閱「管 [理報表](../../configuration/using/managing-reports.md) 」一節。
-* 某些工作流活動的預設配置引用標準收件人表(**[!UICONTROL nms:recipient]**):這些配置在用於外部收件者表時必須更改。 請參閱「管理工 [作流程](../../configuration/using/managing-workflows.md) 」一節。
-* 標準個 **[!UICONTROL Unsubscription link]** 人化區塊必須調整。
+* 某些標準報表，尤其是&#x200B;**Interaction**&#x200B;和&#x200B;**Mobile Applications**&#x200B;所提供的報表，必須重新開發。 請參閱[管理報表](../../configuration/using/managing-reports.md)一節。
+* 某些工作流活動的預設配置引用標準收件人表(**[!UICONTROL nms:recipient]**):這些配置在用於外部收件者表時必須更改。 請參閱[管理工作流程](../../configuration/using/managing-workflows.md)一節。
+* 標準&#x200B;**[!UICONTROL Unsubscription link]**&#x200B;個人化區塊必須調整。
 * 必須修改標準傳送範本的目標對應。
 * V4表格與外部收件者表格不相容：您必須使用Web應用程式。
 
