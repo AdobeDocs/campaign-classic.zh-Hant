@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 2%
@@ -27,10 +27,10 @@ ht-degree: 2%
 套用下列步驟以設定這些標籤：
 
 1. 識別您要追蹤的頁面，並判斷其類型（WEB或TRANSACTION）。
-1. 確定您要收集的其他資訊，並使用此信 **息的說明擴展nms:webTrackingLog** 架構。 預設情況下，此方案可以儲存每個事務處理的事務處理金額和項目數。
+1. 確定您要收集的其他資訊，並使用此資訊的說明擴展&#x200B;**nms:webTrackingLog**&#x200B;模式。 預設情況下，此方案可以儲存每個事務處理的事務處理金額和項目數。
 1. 建立網頁追蹤標籤。 有兩種方法可以做到：
 
-   * 在您的Adobe Campaign平台中插入與這些頁面對應的URL，然後產生並擷取相關的網頁追蹤標籤(從用戶端主控台 **[!UICONTROL Campaign execution>Resources>Web tracking tags]** 的節點)。
+   * 在您的Adobe Campaign平台中插入與這些頁面對應的URL，然後產生並擷取相關的網路追蹤標籤（從用戶端主控台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;節點）。
    * 在「即時建立」模式中自行建立網頁追蹤標籤：與這些頁面對應的URL會自動插入您的Adobe Campaign平台。
 
 1. 在您要追蹤的頁面中以靜態或動態方式新增這些標籤。
