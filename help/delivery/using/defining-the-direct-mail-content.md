@@ -7,25 +7,25 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
 
 # 定義直接郵件內容{#defining-the-direct-mail-content}
 
-## 擷取檔案 {#extraction-file}
+## 抽取檔案{#extraction-file}
 
-包含提取資料的檔案的名稱在欄位中定 **[!UICONTROL File]** 義。 欄位右側的按鈕可讓您使用個人化欄位來建立檔案名稱。
+包含提取資料的檔案的名稱在&#x200B;**[!UICONTROL File]**&#x200B;欄位中定義。 欄位右側的按鈕可讓您使用個人化欄位來建立檔案名稱。
 
-預設情況下，抽取檔案將建立並儲存在伺服器上。 您可將它儲存在電腦上。 若要這麼做，請檢查 **[!UICONTROL Download the generated file after the analysis of the delivery]**。 在這種情況下，您需要指示本地儲存目錄的訪問路徑以及檔案名。
+預設情況下，抽取檔案將建立並儲存在伺服器上。 您可將它儲存在電腦上。 要執行此操作，請檢查&#x200B;**[!UICONTROL Download the generated file after the analysis of the delivery]**。 在這種情況下，您需要指示本地儲存目錄的訪問路徑以及檔案名。
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-對於直接郵件發送，提取內容在連結中定 **[!UICONTROL Edit the extraction file format...]** 義。
+對於直接郵件發送，抽取內容定義在&#x200B;**[!UICONTROL Edit the extraction file format...]**&#x200B;連結中。
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -33,8 +33,8 @@ ht-degree: 9%
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-可以將個人化URL插入提取檔案。 For more on this, refer to [Web functionality](../../web/using/publishing-a-web-form.md).
+可以將個人化URL插入提取檔案。 如需詳細資訊，請參閱[本章節](../../web/using/publishing-a-web-form.md)。
 
 >[!NOTE]
 >
->此嚮導包含導出嚮導的步驟，如「快速入門」部 [分中詳細](../../platform/using/exporting-data.md#export-wizard) 。
+>此嚮導包括導出嚮導的步驟，詳見[Getting Started](../../platform/using/exporting-data.md#export-wizard)部分。
