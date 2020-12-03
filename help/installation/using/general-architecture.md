@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -41,17 +41,17 @@ Adobe Campaign是以服務導向架構(SOA)為基礎，並包含數個功能模�
 
 >[!CAUTION]
 >
->若未明確說明，則Adobe Campaign平台所有元件的安裝、更新和維護由代管元件的電腦管理員負責。 這包括實作Adobe Campaign應用程式的先決條件，以及遵守元件之間的「促銷活 [動相容性](../../rn/using/compatibility-matrix.md) 」矩陣。
+>若未明確說明，則Adobe Campaign平台所有元件的安裝、更新和維護由代管元件的電腦管理員負責。 這包括實作Adobe Campaign應用程式的先決條件，以及在元件之間遵循Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
-## 表現層 {#presentation-layer}
+## 表現層{#presentation-layer}
 
 應用程式的存取方式視使用者需求而定：Rich client、Thin client或API整合。
 
-* **Rich client**:應用程式的主要使用者介面是rich client，換言之，是原生應用程式(Windows)，僅與Adobe Campaign應用程式伺服器通訊，僅與標準網際網路通訊協定（SOAP、HTTP等）。 此主控台提供絕佳的使用便利性，讓您提高生產力，並且使用極少的頻寬（透過使用本機快取），而且易於部署。 此控制台可從網際網路瀏覽器部署、可自動更新，而且不需要任何特定網路組態，因為它只會產生HTTP(S)流量。
-* **瘦客戶端**:應用程式的某些部分可使用HTML使用者介面，透過簡單的Web瀏覽器存取，包括報告模組、傳送核准階段、Distributed Marketing模組（中央／本機）的功能、例項監控等。 此模式可將Adobe Campaign功能納入內部網路或外部網路。
+* **Rich client**:應用程式的主要使用者介面是rich client，換言之，是原生應用程式(Windows)，僅與Adobe Campaign應用程式伺服器通訊，僅與標準網際網路通訊協定（SOAP、HTTP等）。此主控台提供絕佳的使用便利性，讓您提高生產力，並且使用極少的頻寬（透過使用本機快取），而且易於部署。 此控制台可從網際網路瀏覽器部署、可自動更新，而且不需要任何特定網路組態，因為它只會產生HTTP(S)流量。
+* **瘦客戶端**:應用程式的某些部分可使用HTML使用者介面，透過簡單的網頁瀏覽器存取，包括報告模組、傳送核准階段、Distributed Marketing模組（中央／本機）的功能、例項監控等。此模式可將Adobe Campaign功能納入內部網路或外部網路。
 * **透過API進行整合**:在某些情況下，可使用透過SOAP通訊協定公開的Web Services API，從外部應用程式呼叫系統。
 
-## 邏輯應用層 {#logical-application-layer}
+## 邏輯應用層{#logical-application-layer}
 
 Adobe Campaign是單一平台，其中包含不同的應用程式，可結合這些應用程式來建立開放且可擴充的架構。 Adobe Campaign平台是在有彈性的應用程式層上編寫，可輕鬆配置以符合公司的業務需求。 這從功能和技術角度適應了企業不斷增長的需求。 分佈式體系結構確保線性系統可擴充性從數千條消息擴展到數百萬條消息。
 
@@ -119,9 +119,9 @@ Adobe Campaign具備原生的電子郵件廣播功能。 此進程充當SMTP郵�
 
 >[!NOTE]
 >
->本檔案提供Adobe Campaign模組的完整 [清單](../../production/using/operating-principle.md)。
+>[本檔案](../../production/using/operating-principle.md)中提供Adobe Campaign模組的完整清單。
 
-## 持久層 {#persistence-layer}
+## 持久層{#persistence-layer}
 
 資料庫是做為永續性層，並包含幾乎所有由Adobe Campaign管理的資訊。 這包括功能資料（描述檔、訂閱、內容等）、技術資料（傳送工作和記錄檔、追蹤記錄檔等） 和工作資料（購買、銷售機會）。
 
