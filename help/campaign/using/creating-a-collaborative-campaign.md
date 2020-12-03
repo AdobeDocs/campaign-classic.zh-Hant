@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 4%
@@ -17,43 +17,43 @@ ht-degree: 4%
 
 # 建立協作行銷活動{#creating-a-collaborative-campaign-intro}
 
-中央實體會從「分散式行銷」促銷活動范 **本建立協作** 式促銷活動。 請參見[此頁面](../../campaign/using/about-distributed-marketing.md#collaborative-campaign)。
+中央實體從&#x200B;**Distributed Marketing**&#x200B;促銷活動範本建立協作促銷活動。 請參見[此頁面](../../campaign/using/about-distributed-marketing.md#collaborative-campaign)。
 
 ## 建立協作行銷活動 {#creating-a-collaborative-campaign}
 
-若要設定協作促銷活動，請按一下節 **[!UICONTROL Campaign management > Campaigns]** 點，然後按一下 **[!UICONTROL New]** 圖示。
+若要設定協作促銷活動，請按一下&#x200B;**[!UICONTROL Campaign management > Campaigns]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示。
 
 >[!NOTE]
 >
->除此之 **[!UICONTROL collaborative campaigns (by campaign)]**&#x200B;外，這些促銷活動可透過網頁介面進行設定和執行。
+>除了&#x200B;**[!UICONTROL collaborative campaigns (by campaign)]**，這些促銷活動可透過Web介面進行設定和執行。
 
 協作促銷活動資料庫的設定程式與本機促銷活動範本的設定程式類似。 以下詳述不同類型的協作促銷活動的規格。
 
-### 依表單 {#by-form}
+### 按格式{#by-form}
 
-若要建立協作促銷活動（依表單）, **[!UICONTROL Collaborative campaign (by form)]** 必須選取範本。
+若要建立協作促銷活動（依表單），必須選取&#x200B;**[!UICONTROL Collaborative campaign (by form)]**&#x200B;範本。
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-在標籤 **[!UICONTROL Edit]** 中，按一下 **[!UICONTROL Advanced campaign settings...]** 連結以存取「分 **布式行銷」標籤** 。
+在&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;連結以存取&#x200B;**Distributed Marketing**&#x200B;標籤。
 
-選擇「按 **表單** Web介面」。 此類型的介面可讓您建立個人化欄位，供本機實體在訂購促銷活動時使用。 請參閱 [建立本機促銷活動（依表單）](../../campaign/using/examples.md#creating-a-local-campaign--by-form-)。
+選擇&#x200B;**By form** web interface。 此類型的介面可讓您建立個人化欄位，供本機實體在訂購促銷活動時使用。 請參閱[建立本機促銷活動（依表單）](../../campaign/using/examples.md#creating-a-local-campaign--by-form-)。
 
-儲存促銷活動。 您現在可以從「促銷活動」 **範圍的** 「促銷活動套件」檢視中，按一下按鈕來使用它 ******[!UICONTROL Create]** 。
+儲存促銷活動。 您現在可以從&#x200B;**Campaign**&#x200B;宇宙的&#x200B;**Campaign套件**&#x200B;檢視中，按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕使用它。
 
-此檢 **[!UICONTROL Campaign Package]** 視可讓您使用本機促銷活動範本（即裝即用或複製），以及參考協作促銷活動的促銷活動，以建立不同組織實體的促銷活動。
+**[!UICONTROL Campaign Package]**&#x200B;檢視可讓您使用本機促銷活動範本（現成或複製），以及參考協作促銷活動的促銷活動，以建立不同組織實體的促銷活動。
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
-### 依促銷活動 {#by-campaign}
+### 依促銷活動{#by-campaign}
 
-若要建立協作促銷活動（依促銷活動）, **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** 必須選取範本。
+若要建立協作促銷活動（依促銷活動），必須選取&#x200B;**[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]**&#x200B;範本。
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
 在排序促銷活動時，本機實體可以完成由中央實體預先定義的條件，並在排序前先評估促銷活動。
 
-一旦中央實體核 **準（依促銷活動）** ，就會為本機實體建立子促銷活動。 當本機實體可供使用後，便可修改：
+當&#x200B;**協作促銷活動（依促銷活動）**&#x200B;的訂單獲得中央實體核准後，就會為本機實體建立子促銷活動。 當本機實體可供使用後，便可修改：
 
 * 促銷活動工作流程，
 * 排版規則，
@@ -61,13 +61,13 @@ ht-degree: 4%
 
 本機實體會執行子促銷活動。 中央實體會執行父促銷活動。
 
-中央實體可從此控制面板（透過連結）檢視與 **Collaborative促銷活動（依促銷活動）連結的所有子****[!UICONTROL List of associated campaigns]** 促銷活動。
+中央實體可從此控制面板（透過&#x200B;**[!UICONTROL List of associated campaigns]**&#x200B;連結）檢視與&#x200B;**協作促銷活動（依促銷活動）**&#x200B;連結的所有子促銷活動。
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
-### 依目標核准 {#by-target-approval}
+### 按目標批准{#by-target-approval}
 
-若要建立協作促銷活動（透過目標核准）, **[!UICONTROL Collaborative campaign (by target approval)]** 必須選取範本。
+若要建立協作促銷活動（透過目標核准），必須選取&#x200B;**[!UICONTROL Collaborative campaign (by target approval)]**&#x200B;範本。
 
 ![](assets/mkg_dist_mutual_op_by_valid.png)
 
@@ -75,23 +75,23 @@ ht-degree: 4%
 >
 >在此模式中，中央實體不需要指定本地實體。
 
-促銷活動工作流程必須整 **合「本機核准** 」類型活動。 活動參數如下：
+促銷活動工作流程必須整合&#x200B;**本機核准**&#x200B;類型活動。 活動參數如下：
 
 * **[!UICONTROL Action to perform]** :定位核准通知。
 * **[!UICONTROL Distribution context]** :明確。
 * **[!UICONTROL Data distribution]** :本機實體散發。
 
-**必須建立本地實體分佈** 類型資料分佈。 資料分發範本可讓您限制群組值清單中的記錄數。 在中 **[!UICONTROL Resources > Campaign management > Data distribution]**，按一下該 **[!UICONTROL New]** 表徵圖可建立新 **[!UICONTROL Data distribution]**。 如需資料散發的詳細資訊，請參閱「工作 [流程](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) 」指南。
+**必須建立** 本地實體分發類型資料分發。資料分發範本可讓您限制群組值清單中的記錄數。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，按一下&#x200B;**[!UICONTROL New]**&#x200B;表徵圖以建立新的&#x200B;**[!UICONTROL Data distribution]**。 有關資料分發的詳細資訊，請參閱[ Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-)指南。
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. 對於，選 **[!UICONTROL Assignment type]**&#x200B;擇「本 **地實體」**。
+選擇&#x200B;**定位維**&#x200B;和&#x200B;**[!UICONTROL Distribution field]**。 對於&#x200B;**[!UICONTROL Assignment type]**，選擇&#x200B;**本地實體**。
 
-在標籤 **[!UICONTROL Distribution]** 中，為每個本機實體新增欄位並指定值。
+在&#x200B;**[!UICONTROL Distribution]**&#x200B;標籤中，為每個本機實體新增欄位並指定值。
 
 ![](assets/mkg_dist_data_distribution2.png)
 
-您可以在「傳送類型 **」活動之** 後新增第二個Target核准 **** ，以設定報表。
+您可以在&#x200B;**Delivery**&#x200B;類型活動之後新增第二個&#x200B;**Target approval**，以設定報表。
 
 在促銷活動建立通知訊息中，本機實體接收由中央實體參數預先定義的連絡人清單。
 
@@ -101,19 +101,19 @@ Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. 
 
 ![](assets/mkg_dist_mutual_op_by_valid2.png)
 
-### 簡單 {#simple}
+### 簡單{#simple}
 
-若要建立簡單的協作促銷活動， **[!UICONTROL Collaborative campaign (simple)]** 必須選取範本。
+若要建立簡單的協作促銷活動，必須選取&#x200B;**[!UICONTROL Collaborative campaign (simple)]**&#x200B;範本。
 
-## Creating a collaborative campaign package {#creating-a-collaborative-campaign-package}
+## 建立協作促銷活動套件{#creating-a-collaborative-campaign-package}
 
 若要讓促銷活動可供本機實體使用，中央實體必須建立促銷活動套件。
 
 應用以下步驟：
 
-1. 在「促銷 **[!UICONTROL Navigation]** 活動」頁面的 **區段中** ，按一下連結 **[!UICONTROL Campaign packages]** 。
+1. 在&#x200B;**促銷活動**&#x200B;頁面的&#x200B;**[!UICONTROL Navigation]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
 1. 按一下 **[!UICONTROL Create]** 按鈕。
-1. 視窗頂端的區段可讓您選取范 **[!UICONTROL New collaborative package (mutualizedEmpty)]** 本。
+1. 窗口頂部的部分允許您選擇&#x200B;**[!UICONTROL New collaborative package (mutualizedEmpty)]**&#x200B;模板。
 1. 選取參考促銷活動。
 1. 指定促銷活動套件的標籤、資料夾和執行排程。
 
@@ -121,11 +121,11 @@ Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. 
 
 開始和結束日期會定義促銷活動套件清單中促銷活動的可見性時段。
 
-對於 **協作促銷**，中央實體必須指定註冊和個人化期限。
+對於&#x200B;**協作促銷活動**，中央實體必須指定註冊和個人化期限。
 
 >[!NOTE]
 >
->此 **[!UICONTROL Personalization deadline]** 選項可讓中央實體選擇當地實體必須交付檔案（試算表、影像）才能用來設定促銷活動的期限。 這不是強制性選項。 側移此日期不會影響促銷活動實作。
+>**[!UICONTROL Personalization deadline]**&#x200B;可讓中央實體選擇當地實體必須交付檔案（試算表、影像）以用於設定促銷活動的截止日期。 這不是強制性選項。 側移此日期不會影響促銷活動實作。
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
@@ -139,9 +139,9 @@ Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. 
 >
 >**[!UICONTROL Simple, by form and by campaign collaborative campaign kits]** 須當地相關單位指定後方可核准。
 
-### 核准模式 {#approval-modes}
+### 批准模式{#approval-modes}
 
-對於 **協作促銷**，您可以指定訂單核准模式。
+對於&#x200B;**協作促銷活動**，您可以指定訂單核准模式。
 
 ![](assets/mkg_dist_edit_kit1.png)
 
@@ -151,13 +151,13 @@ Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. 
 
 ![](assets/mkg_dist_edit_kit2.png)
 
-### 通知 {#notifications}
+### 通知{#notifications}
 
 通知的設定與本機實體的通知相同。 請參閱[本區段](../../campaign/using/creating-a-local-campaign.md#notifications)。
 
-## 排序促銷活動 {#ordering-a-campaign}
+## 排序促銷活動{#ordering-a-campaign}
 
-當協作促銷活動新增至促銷活動套件清單時，會通知屬於中央實體所定義對象的本機實體(協作促銷活動（透過目標核准） **** ，沒有預先定義的對象)。 傳送的訊息包含可讓您註冊促銷活動的連結，如下所示：
+當將協作促銷活動新增至促銷活動套件清單時，通知屬於由中央實體定義的對象的本機實體(**協作促銷活動（透過目標核准）**&#x200B;沒有預先定義的對象)。 傳送的訊息包含可讓您註冊促銷活動的連結，如下所示：
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 
@@ -171,8 +171,8 @@ Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. 
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-For more on this, refer to the [Approval process](../../campaign/using/creating-a-local-campaign.md#approval-process) section.
+有關詳細資訊，請參閱[批准進程](../../campaign/using/creating-a-local-campaign.md#approval-process)部分。
 
-## 批准訂單 {#approving-an-order}
+## 批准訂單{#approving-an-order}
 
 核准協作促銷活動套件訂單的程式與核准本機促銷活動的程式相同。 請參閱[本區段](../../campaign/using/creating-a-local-campaign.md#approving-an-order)。
