@@ -7,19 +7,19 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 5%
+source-wordcount: '226'
+ht-degree: 4%
 
 ---
 
 
 # SQL 程式碼和 JavaScript 程式碼{#sql-code-and-javascript-code}
 
-## SQL代碼 {#sql-code}
+## SQL代碼{#sql-code}
 
-活動 **[!UICONTROL SQL code]** 執行SQL指令碼。 該指令碼是JST模板。
+**[!UICONTROL SQL code]**&#x200B;活動執行SQL指令碼。 該指令碼是JST模板。
 
 ![](assets/sql_code.png)
 
@@ -29,30 +29,33 @@ ht-degree: 5%
 
 * **[!UICONTROL Processing errors]**
 
-   請參閱「 [處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)」。
+   請參閱[處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)。
 
-## JavaScript程式碼與進階JavaScript程式碼 {#javascript-code}
+## JavaScript程式碼和進階JavaScript程式碼{#javascript-code}
 
-**[!UICONTROL JavaScript code]** 和活 **[!UICONTROL Advanced JavaScript code]** 動在工作流的上下文中執行JavaScript指令碼。 如需指令碼的詳細資訊，請參閱 [JavaScript指令碼和範本一節](../../workflow/using/javascript-scripts-and-templates.md) 。
+**[!UICONTROL JavaScript code]** 和活 **[!UICONTROL Advanced JavaScript code]** 動在工作流的上下文中執行JavaScript指令碼。有關指令碼的詳細資訊，請參閱[JavaScript指令碼和模板](../../workflow/using/javascript-scripts-and-templates.md)部分。
 
->[!NOTE]
->
->預設情況下，活動和活動的執 **[!UICONTROL JavaScript code]** 行階 **[!UICONTROL Advanced JavaScript code]** 段不能超過1小時。 在此延遲後，進程將中止，並顯示錯誤消息，活動執行將失敗。
->
->您可以在活動屬性中可 **[!UICONTROL Stop execution after]** 用的欄位中更改此延遲。
+### 執行延遲{#exec-delay}
 
-* **[!UICONTROL JavaScript code]**
+從20.2版開始，**[!UICONTROL JavaScript code]**&#x200B;和&#x200B;**[!UICONTROL Advanced JavaScript code]**&#x200B;活動已添加執行延遲。 依預設，執行階段不能超過1小時。 在此延遲後，進程將中止，並顯示錯誤消息，活動執行將失敗。
 
-   ![](assets/javascript_code.png)
+您可以在這些活動中的&#x200B;**[!UICONTROL Stop execution after]**&#x200B;欄位中更改此延遲。
 
-   * **[!UICONTROL Script]**:編輯器的中心區域包含要執行的指令碼。
-   * **[!UICONTROL Processing errors]**:請參閱「 [處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)」。
+若要忽略此限制，您必須將值設為&#x200B;**0**。
 
-* **[!UICONTROL Advanced JavaScript code]**
+### JavaScript程式碼{#js-code-desc}
 
-   ![](assets/advanced_javascript_code.png)
+![](assets/javascript_code.png)
 
-   * **[!UICONTROL First call]**:編輯器的第一個區域包含要在第一次調用期間執行的指令碼。
-   * **[!UICONTROL Next calls]**:編輯器的第二個區域包含在下次調用期間執行的指令碼。
-   * **[!UICONTROL Transitions]**:您可以定義數個活動輸出轉場。
-   * **[!UICONTROL Schedule]**:此標 **[!UICONTROL Schedule]** 簽可讓您排程何時觸發活動。
+* **[!UICONTROL Script]**:編輯器的中心區域包含要執行的指令碼。
+
+* **[!UICONTROL Process errors]**:請參閱「 [處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)」。
+
+### 進階JavaScript程式碼{#adv-js-code-desc}
+
+![](assets/advanced_javascript_code.png)
+
+* **[!UICONTROL First call]**:編輯器的第一個區域包含要在第一次調用期間執行的指令碼。
+* **[!UICONTROL Next calls]**:編輯器的第二個區域包含在下次調用期間執行的指令碼。
+* **[!UICONTROL Transitions]**:您可以定義數個活動輸出轉場。
+* **[!UICONTROL Schedule]**:此標 **[!UICONTROL Schedule]** 簽可讓您排程何時觸發活動。
