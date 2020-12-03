@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d0ae3d597f9ee30515437d94901cb034d0ca3d5
 workflow-type: tm+mt
-source-wordcount: '3579'
+source-wordcount: '3600'
 ht-degree: 3%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->這些組態必須由管理員執行，且僅 **適用於內部部署** 代管模型。
+>這些配置必須由管理員和&#x200B;**On-premise**&#x200B;代管模型執行。
 >
->對於 **代管** (Hosted)部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IPallowlist管理或URL權限）。
+>對於&#x200B;**Hosted**&#x200B;部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IPallowlist管理或URL權限）。
 
 如需詳細資訊，請參閱下列章節：
 
@@ -32,20 +32,20 @@ ht-degree: 3%
 * [Campaign Classic內部部署與代管功能矩陣](../../installation/using/capability-matrix.md)
 * [混合型和代管型配置步驟](../../installation/using/hosting-models.md)
 
-Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf資料夾中。 配置分佈在兩個檔案上：
+Campaign Classic組態檔會儲存在Adobe Campaign安裝資料夾的&#x200B;**conf**&#x200B;資料夾中。 配置分佈在兩個檔案上：
 
-* **serverConf.xml**:所有實例的常規配置。 此檔案結合了Adobe Campaign伺服器的技術參數：這些會由所有例項共用。 以下詳細說明了其中一些參數。 本節列出的不同節點和 [參數](../../installation/using/the-server-configuration-file.md)。
-* **config-`<instance>`.xml** (其中 **instance** 是實例的名稱):實例的特定配置。 如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
+* **serverConf.xml**:所有實例的常規配置。此檔案結合了Adobe Campaign伺服器的技術參數：這些會由所有例項共用。 以下詳細說明了其中一些參數。 此[部分](../../installation/using/the-server-configuration-file.md)中列出的不同節點和參數。
+* **config-`<instance>`.xml** (其中 **** instance是實例的名稱):實例的特定配置。如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
 
-## 定義安全區 {#defining-security-zones}
+## 定義安全區{#defining-security-zones}
 
-### 關於安全區 {#about-security-zones}
+### 關於安全區{#about-security-zones}
 
 每個運算子都必須連結至區域才能登入例項，且運算子IP必須包含在安全區域中定義的位址或位址集中。 安全區設定是在Adobe Campaign伺服器的設定檔案中執行。
 
-操作員從控制台（節點）中的配置檔案連結到安 **[!UICONTROL Administration > Access management > Operators]** 全區。 在本節中瞭解如何將區域連結至Campaign [運算子](#linking-a-security-zone-to-an-operator)。
+操作員從控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點）中的配置檔案連結到安全區域。 瞭解如何在[本節](#linking-a-security-zone-to-an-operator)中將區域連結至Campaign運算子。
 
-### 建立安全區 {#creating-security-zones}
+### 建立安全區{#creating-security-zones}
 
 區域由以下項定義：
 
@@ -54,7 +54,7 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 
 安全區域互鎖，這表示在另一個區域中定義新區域可以減少可登錄該區域的運算子數量，同時增加分配給每個運算子的權限。
 
-必須在伺服器配置期間在serverConf.xml文 **件中定義區域** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+必須在伺服器配置期間在&#x200B;**serverConf.xml**&#x200B;檔案中定義區域。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
 每個區域都定義權限，例如：
 
@@ -66,16 +66,16 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 
 >[!NOTE]
 >
->**每個運算子都必須連結至區域**。 如果運算子的IP位址屬於區域所定義的範圍，運算子可登入執行個體。\
->操作員的IP地址可以定義在多個區域中。 在這種情況下，運算子會收到 **每個區** 域的可用權限集。
+>**每個運算子都必須連結至區域**。如果運算子的IP位址屬於區域所定義的範圍，運算子可登入執行個體。\
+>操作員的IP地址可以定義在多個區域中。 在這種情況下，運算子接收每個區域的可用權限的&#x200B;**set**。
 
-現成可用的serverConf.xml **檔案包含** 3個區域： **公共、VPN和LAN**。
+現成可用的&#x200B;**serverConf.xml**&#x200B;檔案包括三個區域：**public、VPN和LAN**。
 
 >[!NOTE]
 >
->**現成可用的配置是安全的**。 不過，在從舊版Adobe Campaign移轉之前，可能需要暫時降低安全性，才能移轉並核准新規則。
+>**現成可用的配置是安全的**。不過，在從舊版Adobe Campaign移轉之前，可能需要暫時降低安全性，才能移轉並核准新規則。
 
-如何在serverConf.xml檔案中定 **義區域的示例** :
+如何在&#x200B;**serverConf.xml**&#x200B;檔案中定義區域的示例：
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" name="public">
@@ -110,13 +110,13 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 
 >[!IMPORTANT]
 >
->在區域定義中，每個具有true值的屬 **性** ，都會降低安全性。
+>在區域定義中，每個具有&#x200B;**true**&#x200B;值的屬性都會降低安全性。
 
-使用消息中心時，如果有數個執行例項，您需要建立額外的安全區，其中 **sessionTokenOnly** attribute defined as **true**，其中只需新增必要的IP位址。 如需設定例項的詳細資訊，請參 [閱本檔案](../../message-center/using/creating-a-shared-connection.md)。
+使用消息中心時，如果存在多個執行實例，則需要使用定義為&#x200B;**true**&#x200B;的&#x200B;**sessionTokenOnly**&#x200B;屬性來建立附加安全區，其中僅添加必要的IP地址。 有關配置實例的詳細資訊，請參閱[本文檔](../../message-center/using/creating-a-shared-connection.md)。
 
-### 安全區的最佳做法 {#best-practices-for-security-zones}
+### 安全區{#best-practices-for-security-zones}的最佳做法
 
-在LAN安全區的定 **義中** ，可以添加定義技術訪問的IP地址掩碼。 此新增功能將允許存取伺服器上裝載的所有執行個體。
+在&#x200B;**lan**&#x200B;安全區的定義中，可以添加定義技術訪問的IP地址掩碼。 此新增功能將允許存取伺服器上裝載的所有執行個體。
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -137,7 +137,7 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
 
 我們建議在僅存取特定例項的運算子專用的設定檔案中，直接定義IP位址範圍。
 
-在檔 **`config-<instance>.xml`** 案中：
+在&#x200B;**`config-<instance>.xml`**&#x200B;檔案中：
 
 ```
   <securityZone name="public">
@@ -146,9 +146,9 @@ Campaign Classic組態檔會儲存在Adobe Campaign安 **裝資料夾的** conf�
       <subNetwork id="cus1" mask="a.b.c.d/xx"/>
 ```
 
-### 安全區中的子網和代理 {#sub-networks-and-proxies-in-a-security-zone}
+### 安全區{#sub-networks-and-proxies-in-a-security-zone}中的子網和代理
 
-proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的proxy使用。
+**proxy**&#x200B;參數可用於&#x200B;**subNetwork**&#x200B;元素中，以指定安全區中的proxy使用。
 
 當參考代理並且連接通過此代理進入時（通過HTTP X-Forwarded-For標頭可見），驗證區域是代理的客戶端區域，而不是代理的客戶端區域。
 
@@ -158,7 +158,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 >
 >此外，中繼現在也像Proxy一樣產生。 因此，您可以將IP地址127.0.0.1添加到安全區配置中的Proxy清單中。
 >
->For example: &quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;.
+>例如：&quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;。
 
 可能會發生各種情況：
 
@@ -174,7 +174,7 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
    ![](assets/8101_proxy3.png)
 
-可能存取Adobe Campaign伺服器的Proxy IP位址必須同時輸入相關網路和 **`<subnetwork>`** 第一層子網路 **`<subnetwork name="all"/>`**。 例如，以下是IP位址為10.131.146.102的Proxy:
+可能存取Adobe Campaign伺服器的Proxy IP位址必須同時輸入至&#x200B;**`<subnetwork>`**&#x200B;相關網路和第一層子網路&#x200B;**`<subnetwork name="all"/>`**。 例如，以下是IP位址為10.131.146.102的Proxy:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -201,45 +201,45 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 定義區域後，必須將每個運算子連結到其中一個運算子，才能登錄到實例，並且該運算子的IP地址必須包含在區域中引用的地址或地址範圍中。
 
-區域的技術組態會在促銷活動伺服器的組態檔案中執行： **serverConf.xml**。
+區域的技術組態會在促銷活動伺服器的組態檔案中執行：**serverConf.xml**。
 
-在此之前，您必須首先配置現成枚舉，以將標籤連結到 **[!UICONTROL Security zone]** serverConf.xml檔案中定義的區 **域的內部名稱** 。
+在此之前，您必須首先配置現成可用的&#x200B;**[!UICONTROL Security zone]**&#x200B;枚舉，以將標籤連結到&#x200B;**serverConf.xml**&#x200B;檔案中定義的區域的內部名稱。
 
 此設定是在促銷活動檔案總管中完成：
 
-1. 按一下節 **[!UICONTROL Administration > Platform > Enumerations]** 點。
-1. 選擇系 **[!UICONTROL Security zone (securityZone)]** 統枚舉。
+1. 按一下&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;節點。
+1. 選擇&#x200B;**[!UICONTROL Security zone (securityZone)]**&#x200B;系統枚舉。
 
    ![](assets/enum_securityzone.png)
 
-1. 對於伺服器配置檔案中定義的每個安全區，按一下按 **[!UICONTROL Add]** 鈕。
-1. 在字 **[!UICONTROL Internal name]** 段中，輸入serverConf.xml檔案中定 **義的區域名稱** 。 它對應於元 **素的@name**`<securityzone>` 屬性。 在標籤欄位中輸入連結至內部名稱的 ****&#x200B;標籤。
+1. 對於伺服器配置檔案中定義的每個安全區，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
+1. 在&#x200B;**[!UICONTROL Internal name]**&#x200B;欄位中，輸入&#x200B;**serverConf.xml**&#x200B;檔案中定義的區域名稱。 它對應於`<securityzone>`元素的&#x200B;**@name**&#x200B;屬性。 在&#x200B;**Label**&#x200B;欄位中輸入連結至內部名稱的標籤。
 
    ![](assets/enum_addsecurityvalue.png)
 
 1. 按一下「確定」並儲存修改。
 
-定義區域並配置枚舉後， **[!UICONTROL Security zone]** 您需要將每個操作符連結到安全區域：
+定義區域並配置&#x200B;**[!UICONTROL Security zone]**&#x200B;枚舉後，您需要將每個運算子連結到安全區域：
 
-1. 按一下節 **[!UICONTROL Administration > Access management > Operators]** 點。
-1. 選擇要將安全區域連結到的操作員，然後按一下該選 **[!UICONTROL Edit]** 項卡。
-1. 前往標籤 **[!UICONTROL Access rights]** 並按一下連 **[!UICONTROL Edit access parameters...]** 結。
+1. 按一下&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點。
+1. 選擇要將安全區連結到的運算子，然後按一下&#x200B;**[!UICONTROL Edit]**&#x200B;頁籤。
+1. 前往&#x200B;**[!UICONTROL Access rights]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Edit access parameters...]**&#x200B;連結。
 
    ![](assets/zone_operator.png)
 
-1. 從下拉式清單 **[!UICONTROL Authorized connection zone]** 中選取區域
+1. 從&#x200B;**[!UICONTROL Authorized connection zone]**&#x200B;下拉式清單中選取區域
 
    ![](assets/zone_operator_selection.png)
 
-1. 按一 **[!UICONTROL OK]** 下並儲存修改，以套用這些變更。
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;並保存修改以應用這些更改。
 
 ## 配置Tomcat {#configuring-tomcat}
 
-### Tomcat的預設埠 {#default-port-for-tomcat}
+### Tomcat {#default-port-for-tomcat}的預設埠
 
-當Tomcat伺服器的8080偵聽埠已忙於配置所需的其他應用程式時，您需要將8080埠替換為免費埠（例如8090）。 若要變更，請編 **輯儲存在** Adobe Campaign安裝資料夾之 **** /tomcat-8/conf目錄中的server.xml檔案。
+當Tomcat伺服器的8080偵聽埠已忙於配置所需的其他應用程式時，您需要將8080埠替換為免費埠（例如8090）。 若要變更，請編輯儲存在Adobe Campaign安裝資料夾之&#x200B;**/tomcat-8/conf**&#x200B;目錄中的&#x200B;**server.xml**&#x200B;檔案。
 
-然後修改JSP中繼頁的埠。 若要這麼做，請變 **更儲存在Adobe Campaign安裝目錄** /conf **** 目錄中的serverConf.xml檔案。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+然後修改JSP中繼頁的埠。 若要這麼做，請變更儲存在Adobe Campaign安裝目錄&#x200B;**/conf**&#x200B;目錄中的&#x200B;**serverConf.xml**&#x200B;檔案。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
 ```
 <serverConf>
@@ -248,9 +248,9 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
    <url ... targetUrl="http://localhost:8090"...
 ```
 
-### 映射Tomcat中的資料夾 {#mapping-a-folder-in-tomcat}
+### 映射Tomcat {#mapping-a-folder-in-tomcat}中的資料夾
 
-要定義客戶特定設定，可以在 **/tomcat-8/conf** （包含上下文。xml檔案）資料夾中建立 **user_contexts.xml****** 檔案。
+要定義客戶特定設定，可以在&#x200B;**/tomcat-8/conf**&#x200B;資料夾中建立&#x200B;**user_contexts.xml**&#x200B;檔案，該檔案還包含&#x200B;**contexts.xml**&#x200B;檔案。
 
 此檔案將包含下列類型的資訊：
 
@@ -260,21 +260,21 @@ proxy參 **數可用於子網元** 素中，以指定安全區 **** 域中的pro
 
 如有必要，可在伺服器端重制此作業。
 
-## 個人化傳送參數 {#personalizing-delivery-parameters}
+## 個人化傳送參數{#personalizing-delivery-parameters}
 
-傳送參數在serverConf.xml **配置檔案中定義** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+傳送參數在&#x200B;**serverConf.xml**&#x200B;配置檔案中定義。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
-一般伺服器組態和指令在 [Campaign伺服器組態中有詳細說明](../../installation/using/campaign-server-configuration.md)。
+[Campaign伺服器組態](../../installation/using/campaign-server-configuration.md)中詳細說明一般伺服器組態和指令。
 
 您也可以根據您的需求和設定執行下列設定。
 
-### SMTP中繼 {#smtp-relay}
+### SMTP中繼{#smtp-relay}
 
 MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 但是，如果安全策略要求，則可以將其替換為中繼伺服器。 在這種情況下，全局吞吐量將是中繼吞吐量（前提是中繼伺服器吞吐量低於Adobe Campaign 1）。
 
-在這種情況下，這些參數是通過在部分中配置SMTP伺服器來設 **`<relay>`** 置的。 必須指定用於傳輸郵件及其關聯埠的SMTP伺服器的IP地址（或主機）（預設為25）。
+在這種情況下，通過在&#x200B;**`<relay>`**&#x200B;部分中配置SMTP伺服器來設定這些參數。 必須指定用於傳輸郵件及其關聯埠的SMTP伺服器的IP地址（或主機）（預設為25）。
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -284,17 +284,17 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 >
 >此操作模式對傳送帶來嚴重限制，因為由於中繼伺服器的固有效能（延遲、頻寬……），它可大大降低吞吐量。 此外，限定同步傳送錯誤（通過分析SMTP通信量檢測到）的能力將受到限制，如果中繼伺服器不可用，則無法發送。
 
-### MTA子進程 {#mta-child-processes}
+### MTA子進程{#mta-child-processes}
 
-可以根據伺服器的CPU功率和可用網路資源來控制子進程（預設情況下為maxSpareServers 2）的數量，以優化廣播效能。 此配置將在每台電腦的MTA **`<master>`** 配置部分中進行。
+可以根據伺服器的CPU功率和可用網路資源來控制子進程（預設情況下為maxSpareServers 2）的數量，以優化廣播效能。 此配置將在每台電腦的MTA配置的&#x200B;**`<master>`**&#x200B;部分中進行。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-另請參閱「電子郵 [件傳送最佳化」](../../installation/using/email-deliverability.md#email-sending-optimization)。
+另請參閱[電子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization)。
 
-### 管理具有相關性的出站SMTP通信 {#managing-outbound-smtp-traffic-with-affinities}
+### 使用相關性{#managing-outbound-smtp-traffic-with-affinities}管理出站SMTP通信
 
 >[!IMPORTANT]
 >
@@ -304,9 +304,9 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 若要這麼做，請套用下列步驟：
 
-1. 在serverConf.xml檔案 **`<ipaffinity>`** 的區段 **中輸入相關性** 。
+1. 在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**`<ipaffinity>`**&#x200B;區段中輸入相關性。
 
-   一個相似性可以有數個不同的名稱：分離，使用 **;** 字元。
+   一個相似性可以有數個不同的名稱：若要分隔，請使用&#x200B;**;**&#x200B;字元。
 
    範例:
 
@@ -315,15 +315,15 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   要查看相關參數，請參 **閱serverConf.xml檔案** 。
+   要查看相關參數，請參閱&#x200B;**serverConf.xml**&#x200B;檔案。
 
-1. 若要在下拉式清單中啟用相似性選取，您需要在 **IPAffinity枚舉中新增相似性名稱** 。
+1. 若要在下拉式清單中啟用相似性選擇，您需要在&#x200B;**IPAffinity**&#x200B;列舉中新增相似性名稱。
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >本文檔詳細介紹了 [枚舉](../../platform/using/managing-enumerations.md)。
+   >[本檔案](../../platform/using/managing-enumerations.md)中詳述了枚舉。
 
    然後，您可以選取要使用的相似性，如下所示：
 
@@ -331,7 +331,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
    >[!NOTE]
    >
-   >您也可以參考 [Delivery伺服器組態](../../installation/using/email-deliverability.md#delivery-server-configuration)。
+   >您也可以參考[傳送伺服器組態](../../installation/using/email-deliverability.md#delivery-server-configuration)。
 
 ## URL 權限{#url-permissions}
 
@@ -343,16 +343,16 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 它們可讓您管理URL權限的方式視您的代管模型而定：
 
-* **混合** 或 **內部部署**:將允許的URL新增至 **serverConf.xml檔案**。 詳細資訊請參閱以下章節。
-* **代管**:新增URL以允許透過「控 **制面板」**。 如需詳細資訊，請參閱[專屬文件](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
+* **** Hybridor **內部部署**:將允許的URL新增至 **serverConf.xml檔案**。詳細資訊請參閱以下章節。
+* **代管**:新增URL以允許透過「控 **制面板」**。如需詳細資訊，請參閱[專屬文件](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
 
-使用 **Hybrid****和** On-premise **代管模型時，管理員需要參考** Server **** Conf.xml檔案中的新urlPermission。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+使用&#x200B;**Hybrid**&#x200B;和&#x200B;**On-premise**&#x200B;代管模型時，管理員需要在&#x200B;**serverConf.xml**&#x200B;檔案中參考新的&#x200B;**urlPermission**。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
 存在三種連接保護模式：
 
-* **阻止**:不屬於允許清單的所有URL都被阻止，並返回錯誤消息。 這是postupgrade之後的預設模式。
+* **阻止**:不屬於允許清單的所有URL都被阻止，並返回錯誤消息。這是postupgrade之後的預設模式。
 * **權限**:允許所有不屬於允許清單的URL。
-* **警告**:允許所有不屬於允許清單的URL，但JS解釋器會發出警告，以便管理員收集這些URL。 此模式添加JST-310027警告消息。
+* **警告**:允許所有不屬於允許清單的URL，但JS解釋器會發出警告，以便管理員收集這些URL。此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -364,17 +364,17 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 >[!IMPORTANT]
 >
->根據預設，新客戶的客戶端使用阻 **塞模式**。 如果他們需要允許新的URL，則應聯繫其管理員以將其添加到allowlist。
+>根據預設，新客戶的客戶端使用&#x200B;**封鎖模式**。 如果他們需要允許新的URL，則應聯繫其管理員以將其添加到allowlist。
 >
->來自移轉的現有客戶可使用警 **告模式** 一段時間。 同時，他們需要在授權URL之前分析出站流量。 定義授權URL的清單後，他們應聯絡其管理員，將URL新增至allowlist並啟用封 **鎖模式**。
+>來自移轉的現有客戶可使用&#x200B;**警告模式**&#x200B;一段時間。 同時，他們需要在授權URL之前分析出站流量。 定義授權URL的清單後，應聯絡其管理員，將URL新增至allowlist並啟動&#x200B;**封鎖模式**。
 
-## 動態頁面安全性與中繼 {#dynamic-page-security-and-relays}
+## 動態頁面安全性和中繼{#dynamic-page-security-and-relays}
 
-預設情況下，所有動態頁都自動與啟動Web模 **塊的電腦的本地** Tomcat伺服器相關。 此配置在 **`<url>`** ServerConf.xml檔案的查 **詢中繼配置部分中輸** 入。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+預設情況下，所有動態頁都自動與啟動Web模組的電腦的&#x200B;**local** Tomcat伺服器相關。 此配置在&#x200B;**ServerConf.xml**&#x200B;檔案的查詢中繼配置的&#x200B;**`<url>`**&#x200B;部分中輸入。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
-在遠程伺服器上中繼動態頁 **面** ;如果未在電腦上激活Web模組。 為此，必須將 **localhost** 替換為JSP和JSSP、Web應用程式、報告和字串的遠程電腦的名稱。
+在&#x200B;**remote**&#x200B;伺服器上中繼動態頁的執行；如果未在電腦上激活Web模組。 要執行此操作，必須將&#x200B;**localhost**&#x200B;替換為遠程電腦的名稱，以用於JSP和JSSP、Web應用程式、報告和字串。
 
-有關各種可用參數的詳細資訊，請參 **閱serverConf.xml配置檔案** 。
+有關各種可用參數的詳細資訊，請參閱&#x200B;**serverConf.xml**&#x200B;配置檔案。
 
 對於JSP頁，預設配置為：
 
@@ -384,10 +384,10 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 Adobe Campaign使用下列JSP頁面：
 
-* /nl/jsp/**soapruter.jsp**:用戶端主控台與網站服務連線(SOAP API)、
+* /nl/jsp/**soaprouter.jsp**:用戶端主控台與網站服務連線(SOAP API)、
 * /nl/jsp/**m.jsp**:鏡像頁面，
 * /nl/jsp/**logon.jsp**:基於Web訪問報告和客戶端控制台的部署，
-* /nl/jsp/**s.jsp** :使用病毒式行銷（贊助和社交網路）。
+* /nl/jsp/**s.jsp**:使用病毒式行銷（贊助和社交網路）。
 
 「行動應用程式頻道」使用的JSSP如下：
 
@@ -396,7 +396,7 @@ Adobe Campaign使用下列JSP頁面：
 
 **範例:**
 
-可以防止客戶機從外部連接。 為此，只需限制 **soaprouter.jsp的執行** ，並僅授權執行鏡像頁、病毒式連結、Web表單和公共資源。
+可以防止客戶機從外部連接。 為此，只需限制&#x200B;**soaprouter.jsp**&#x200B;的執行，並僅授權執行鏡像頁、病毒式連結、Web表單和公共資源。
 
 參數如下：
 
@@ -414,13 +414,13 @@ Adobe Campaign使用下列JSP頁面：
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-在此示例中，該 **`<IP_addresses>`** 值與授權使用此掩碼中繼模組的IP地址清單（由comas分隔）一致。
+在此示例中，**`<IP_addresses>`**&#x200B;值與授權使用此掩碼的中繼模組的IP地址清單（由comas分隔）一致。
 
 >[!NOTE]
 >
 >值應根據您的配置和網路限制進行調整，尤其是如果已為您的安裝開發了特定配置。
 
-## 限制授權的外部命令 {#restricting-authorized-external-commands}
+## 限制授權的外部命令{#restricting-authorized-external-commands}
 
 >[!NOTE]
 >
@@ -447,9 +447,9 @@ sh
 >
 >這份清單並非完整無遺。
 
-在服務 **器配置檔案** 的執行節點中，需要引用blackstFile屬性中以前建立 **的檔案** 。
+在伺服器配置檔案的&#x200B;**exec**&#x200B;節點中，您需要引用&#x200B;**blickstFile**&#x200B;屬性中先前建立的檔案。
 
-**僅適用於Linux**:在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。 此用戶在配置檔案的 **exec** 節點中設定。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+**僅適用於Linux**:在伺服器配置檔案中，我們重新命令您指定專用於執行外部命令的用戶，以增強您的安全配置。此用戶設定在配置檔案的&#x200B;**exec**&#x200B;節點中。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
 >[!NOTE]
 >
@@ -469,13 +469,13 @@ sh
 >
 >您不應使用自訂sudo。 系統上需要安裝標準Sudo。
 
-## 管理HTTP標題 {#managing-http-headers}
+## 管理HTTP標頭{#managing-http-headers}
 
 依預設，不會中繼所有HTTP標題。 您可以在中繼傳送的回覆中新增特定標題。 操作步驟：
 
-1. 轉至 **serverConf.xml檔案** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
-1. 在節 **`<relay>`** 點中，轉至中繼的HTTP標頭清單。
-1. 新增具 **`<responseheader>`** 有下列屬性的元素：
+1. 轉至&#x200B;**serverConf.xml**&#x200B;檔案。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
+1. 在&#x200B;**`<relay>`**&#x200B;節點中，轉至中繼HTTP標頭清單。
+1. 新增&#x200B;**`<responseheader>`**&#x200B;元素，其中包含下列屬性：
 
    * **名稱**:標題名稱
    * **值**:值名稱。
@@ -486,7 +486,7 @@ sh
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## 冗餘追蹤 {#redundant-tracking}
+## 冗餘跟蹤{#redundant-tracking}
 
 當使用多部伺服器進行重新導向時，它們必須能夠透過SOAP呼叫彼此通訊，才能共用要重新導向之URL的資訊。 在發送啟動時，可能並非所有重定向伺服器都可用；因此，他們可能沒有相同程度的資訊。
 
@@ -494,7 +494,7 @@ sh
 >
 >使用標準或企業架構時，主應用程式伺服器必須獲得授權，才能在每部電腦上傳追蹤資訊。
 
-冗餘伺服器的URL必須通過serverConf.xml檔案在重定向配置 **中指定** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+冗餘伺服器的URL必須通過&#x200B;**serverConf.xml**&#x200B;檔案在重定向配置中指定。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
 **範例:**
 
@@ -503,19 +503,19 @@ sh
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為true時啟用連接；這可讓您在所有重新導向伺服器上取得相同的組態。
+**enableIf**&#x200B;屬性是可選的（預設為空），並允許您僅在結果為true時啟用連接；這可讓您在所有重新導向伺服器上取得相同的組態。
 
-要獲取電腦的主機名，請運行以下命令： **hostname -s**。
+要獲取電腦的主機名，請運行以下命令：**hostname -s**。
 
-## 管理公共資源 {#managing-public-resources}
+## 管理公共資源{#managing-public-resources}
 
-公共資源在管理公共 [資源中顯示](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+公共資源在[管理公共資源](../../installation/using/deploying-an-instance.md#managing-public-resources)中顯示。
 
-它們會儲存在 **Adobe Campaign安裝目錄的** /var/res/instance目錄中。
+它們會儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
 
-相符的URL為： **http://server/res/instance** ，其 **中** instance是追蹤例項的名稱。
+相符的URL為：**http://server/res/instance**，其中&#x200B;**instance**&#x200B;是追蹤例項的名稱。
 
-通過向 **conf-`<instance>`** .xml檔案添加節點以配置伺服器上的儲存，可以指定另一個目錄。 這表示新增下列行：
+通過向&#x200B;**conf-`<instance>`.xml**&#x200B;檔案添加節點，可以指定另一個目錄，以配置伺服器上的儲存。 這表示新增下列行：
 
 ```
 <serverconf>
@@ -530,17 +530,17 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
 在這種情況下，在部署精靈視窗的上半部中指定之公用資源的新URL應指向此資料夾。
 
-## 高可用性工作流程與相關性 {#high-availability-workflows-and-affinities}
+## 高可用性工作流程和相關性{#high-availability-workflows-and-affinities}
 
 您可以設定數個工作流程伺服器(wfserver)，並在兩部或多部電腦上散發。 如果您選擇此類型的架構，請根據Adobe Campaign存取權設定負載平衡器的連線模式。
 
-要從Web訪問，請選擇負載平衡 **器模式** ，以限制連接時間。
+要從Web訪問，請選擇&#x200B;**負載平衡器**&#x200B;模式以限制連接時間。
 
-如果透過Adobe Campaign主控台存取，請選 **擇雜湊****或嚴格ip** 模式。 例如，這可讓您維持rich client和伺服器之間的連線，並防止使用者作業在匯入或匯出作業期間中斷。
+如果透過Adobe Campaign主控台存取，請選擇&#x200B;**雜湊**&#x200B;或&#x200B;**嚴格ip**&#x200B;模式。 例如，這可讓您維持rich client和伺服器之間的連線，並防止使用者作業在匯入或匯出作業期間中斷。
 
 您可以選擇在特定電腦上強制執行工作流或工作流活動。 若要這麼做，您必須為相關工作流程或活動定義一或多個相關性。
 
-1. 在欄位中輸入工作流程或活動的相關性，以建立工作流程或活動的 **[!UICONTROL Affinity]** 相關性。
+1. 在&#x200B;**[!UICONTROL Affinity]**&#x200B;欄位中輸入工作流程或活動的相關性，以建立工作流程或活動的相關性。
 
    您可以自由選擇相似性名稱。 不過，請務必不要使用空格或標點符號。 如果您使用不同的伺服器，請指定不同的名稱。
 
@@ -550,8 +550,8 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
 
    下拉式清單包含先前使用的相關性。 它會隨著時間而以不同的輸入值完成。
 
-1. 開啟 **nl6/conf/config-`<instance>.xml`** file。
-1. 按如下方式修改與模組 **[!UICONTROL wfserver]** 匹配的行：
+1. 開啟&#x200B;**nl6/conf/config-`<instance>.xml`**&#x200B;檔案。
+1. 按如下方式修改與&#x200B;**[!UICONTROL wfserver]**&#x200B;模組匹配的行：
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
@@ -571,47 +571,50 @@ enableIf **** 屬性是可選的（預設為空），並允許您僅在結果為
    <wfserver autoStart="true" affinity="XXX"/>
    ```
 
-## 自動重新啟動程式 {#automatic-process-restart}
+## 自動進程重新啟動{#automatic-process-restart}
 
 依預設，不同的Adobe Campaign程式會每天早上6點（伺服器時間）自動重新啟動。
 
 不過，您可以變更此設定。
 
-要執行此操作，請轉到安 **裝的conf儲存庫中的serverConf.xml****** 檔案。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+要執行此操作，請轉至安裝&#x200B;**conf**&#x200B;儲存庫中的&#x200B;**serverConf.xml**&#x200B;檔案。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
-在此檔案中配置的每個進程都具有 **processRestartTime** 屬性。 您可以修改此屬性的值，以根據需要調整每個進程的重新啟動時間。
+在此檔案中配置的每個進程都具有&#x200B;**processRestartTime**&#x200B;屬性。 您可以修改此屬性的值，以根據需要調整每個進程的重新啟動時間。
 
 >[!IMPORTANT]
 >
 >請勿刪除此屬性。 必須每天重新啟動所有進程。
 
-## 限制可上載檔案 {#limiting-uploadable-files}
+## 限制可上載檔案{#limiting-uploadable-files}
 
-新的屬性 **uploadWhiteList** ，可讓您限制可在Adobe Campaign伺服器上上傳的檔案類型。
+新屬性&#x200B;**uploadWhiteList**&#x200B;可讓您限制可在Adobe Campaign伺服器上傳的檔案類型。
 
-此屬性可在serverConf.xml文 **件的dataStore****元素中使用** 。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+此屬性可在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**dataStore**&#x200B;元素中使用。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
-此屬性的預設值為 **。+** ，並可讓您上傳任何檔案類型。
+此屬性的預設值為&#x200B;**。+**，並可讓您上傳任何檔案類型。
 
 要限制可能的格式，必須用有效的java規則運算式替換屬性值。 您可以用逗號分隔數個值，以輸入數個值。
 
-例如： **uploadWhiteList=&quot;&quot;。*.png、。*.jpg」** ，可讓您在伺服器上上傳PNG和JPG格式。 不接受其他格式。
+例如：**uploadWhiteList=&quot;&quot;。*.png、。*.jpg&quot;**&#x200B;可讓您在伺服器上上傳PNG和JPG格式。 不接受其他格式。
 
 >[!IMPORTANT]
 >
 >在Internet Explorer中，完整的檔案路徑必須由規則運算式驗證。
 
-## 代理連接配置 {#proxy-connection-configuration}
+## 代理連接配置{#proxy-connection-configuration}
 
-如果您需要透過Proxy將Campaign伺服器連線至外部（例如使用檔案傳輸工作流程活動），則需要透過命令來設定serverConf的proxyConfig區段。 可能有下列代理連接：HTTP、HTTPS、FTP、SFTP。 serverConf.xml中可用的所 **有參數** ，都列在本節 [中](../../installation/using/the-server-configuration-file.md)。
+例如，您可以使用&#x200B;**檔案傳輸**&#x200B;工作流程活動，將Campaign伺服器連接至外部系統。 要實現此目的，您需要通過特定命令配置&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**proxyConfig**&#x200B;部分。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
->[!NOTE]
+可能有下列代理連接：HTTP、HTTPS、FTP、SFTP。 請注意，從20.2促銷活動發行開始，HTTP和HTTPS通訊協定參數已不再提供&#x200B;****。 這些參數仍在下面提及，因為它們在以前的版本中仍然可用——包括9032。
+
+>[!CAUTION]
 >
->從20.2開始，HTTP和HTTPS通訊協定參數不再可用。 下列資訊仍會提及這些參數，因為這些參數仍可用於先前的組建版本，包括9032。
+>僅支援基本驗證模式。 不支援NTLM身份驗證。
 >
 >不支援SOCKS代理。
 
-使用下列命令：
+
+您可以使用下列命令：
 
 ```
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
