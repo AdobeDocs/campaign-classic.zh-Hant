@@ -2,91 +2,91 @@
 solution: Campaign Classic
 product: campaign
 title: 相容性矩陣
-description: Campaign Classic相容性矩陣
+description: Campaign Classic 相容性矩陣
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 
 # 相容性矩陣{#compatibility-matrix}
 
-本檔案列出最新版 [Adobe Campaign Classic支援的所](../../rn/using/latest-release.md) 有系統 ****&#x200B;和元件。 不屬於此清單的產品和版本與Adobe Campaign不相容。
+本文件列出[最新建置版本](../../rn/using/latest-release.md)之 **Adobe Campaign Classic** 支援的所有系統及元件。不屬於此清單的產品和版本與 Adobe Campaign 不相容。
 
-如果您是Gold Standard使用者，請參閱 [Gold Standard相容性表](../../rn/using/compatibility-matrix-gs.md)。
+如果您是 Gold Standard 使用者，請參閱 [Gold Standard 相容性矩陣](../../rn/using/compatibility-matrix-gs.md)。
 
 ## 重要附註{#important-notes}
 
 除非另有提及，否則支援所有次要版本。
 
-Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)，與本頁所列的所有系統和工具相容。 由於這些協力廠商系統和工具的特定版本已與其各自的建立者達成生命週期結束(EOL),Adobe Campaign將不再與這些版本相容，而且會在後續的產品版本中，從我們的相容性矩陣中移除這些版本。 請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
+在其[最新建置版本](../../rn/using/latest-release.md)中，Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從我們的相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
 
-若要進一步瞭解已過時的項目，請造 [訪本頁](../../rn/using/deprecated-features.md)。
+若要進一步瞭解已棄用的項目，請瀏覽[本頁面](../../rn/using/deprecated-features.md)。
 
 >[!CAUTION]
 >
->此矩陣會定期更新，新增支援的項目，並移除不建議使用的項目。
+>此矩陣會定期更新、新增支援的項目，並會移除已啟用的項目。
 
-## Operating Systems{#OperatingSystems}
+## 作業系統{#OperatingSystems}
 
 <table> 
 <tbody> 
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x（64位）</p>
-<p>7.x（64位）</p>
+<p>8.x（64 位元）</p>
+<p>7.x（64 位元）</p>
 </td>
 </tr>
 <tr>
 <td>Debian</td>
 <td>
-<p>10（64位）</p>
-<p>9（64位）</p>
-<p>8（64位）</p>
+<p>10（64 位元）</p>
+<p>9（64 位元）</p>
+<p>8（64 位元）</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>8.x（64位）</p>
-<p>7.x（64位）</p>
-<p><strong>重要：</strong> 如果您使用RHEL，您必須願意停用SELinux，或讓架構設計人員編寫自訂SELinux規則，以檢查啟用的SELinux是否不會造成促銷活動作業的問題。</p>
+<p>8.x（64 位元）</p>
+<p>7.x（64 位元）</p>
+<p><strong>重要：</strong>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。</p>
 </td>
 </tr>
 <tr>
 <td>Windows Server</td>
 <td>
 <p>2016</p>
-<p>2012年R2</p>
+<p>2012 R2</p>
 <p>2012</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Web Servers{#WebServers}
+## Web 伺服器{#WebServers}
 
 <table>
 <tbody>
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>Windows Server 2016上的10.0</p>
-<p>Windows Server 2012 R2上的8.5</p>
-<p>Windows Server 2012上的8.0 - Windows 8</p>
+<p>Windows Server 2016 上的 10.0</p>
+<p>Windows Server 2012 R2 上的 8.5</p>
+<p>Windows Server 2012 上的 8.0 - Windows 8</p>
 </td>
 </tr>
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 for RHEL7 - CentOS 7、Debian 8/9、Windows（64位）</p>
+<p>2.4 for RHEL7 - CentOS 7、Debian 8/9、Windows（64 位元）</p>
 </td>
 </tr>
 </tbody>
@@ -97,18 +97,18 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <table>
 <tbody>
 <tr>
-<td>Java開發套件(JDK)</td>
+<td>Java 開發套件 (JDK)</td>
 <td>
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>此應用程式已獲得Oracle和OpenJDK開發的Java開發套件(JDK)的核准。</p>
+<p>此應用程式已獲得核准，而可用於 Oracle 及 OpenJDK 開發的 Java 開發套件 (JDK)。</p>
 </td>
 </tr>
 <tr>
 <td>Libre Office</td>
 <td>
-<p>6（及舊版，如果內嵌在您的系統中）</p>
+<p>6（及舊版，若是內嵌在您的系統中）</p>
 </td>
 </tr>
 <tr>
@@ -120,11 +120,11 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 </tbody>
 </table>
 
-## RDBMS伺服器{#RDBMSservers}
+## RDBMS 伺服器{#RDBMSservers}
 
 >[!NOTE]
 >
->RDBMS驅動程式必須與RDBMS伺服器版本匹配。
+>RDBM S驅動程式必須與 RDBMS 伺服器版本相符。
 
 <table>
 <tbody>
@@ -146,7 +146,7 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p>注意：您也可以將Amazon RDS for PostgreSQL與上述指定的版本一起使用。</p>
+<p>注意：您也可以將 Amazon RDS for PostgreSQL 與上述指定版本搭配使用。</p>
 </td>
 </tr>
 <tr>
@@ -156,8 +156,8 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p>2012 - SP1和SP2</p>
-<p>警告：當Campaign伺服器在Linux上執行時，不支援Microsoft SQL Server做為主資料庫。 <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>。</p>
+<p>2012 - SP1 及 SP2</p>
+<p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -165,40 +165,40 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 
 >[!NOTE]
 >
->PostgreSQL是托管環境的預設資料庫伺服器。
+>PostgreSQL 是託管環境的預設資料庫伺服器。
 
 ## CRM 連接器{#CRMconnectors}
 
 <table>
 <tbody>
 <tr>
-<td>Salesforce連接器API</td>
+<td>Salesforce 連接器 API</td>
 <td>
-<p>API第37版</p>
+<p>API 37 版</p>
 </td>
 </tr>
 <tr>
 <td>SFDC API</td>
 <td>
-<p>API第21版</p>
-<p>API 15版</p>
+<p>API 21 版</p>
+<p>API 15 版</p>
 </td>
 </tr>
 <tr><td>Oracle On Demand API</td>
 <td>
-<p>網站服務1.0版API</p>
+<p>網站服務1.0 版API</p>
 </td>
 </tr>
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>網頁API:Dynamics 365內部部署與線上</p>
+<p>Web API：Dynamics 365 內部部署與線上</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Federated Data Access (FDA){#FederatedDataAccessFDA}
+## 同盟資料存取 (FDA){#FederatedDataAccessFDA}
 
 <table>
 <tbody>
@@ -237,7 +237,7 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p>2012 SP1和SP2</p>
+<p>2012 SP1 及 SP2</p>
 </td>
 </tr>
 <tr><td>MySQL</td>
@@ -255,7 +255,7 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 </td>
 </tr>
 <tr>
-<td>內泰扎</td>
+<td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
@@ -270,24 +270,24 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <tr>
 <td>SAP HANA</td>
 <td>
-<p>第1版SPS 12</p>
+<p>第 1 版 SPS 12</p>
 </td>
 </tr>
-<tr><td>通過HiveSQL的Hadoop</td>
+<tr><td>透過 HiveSQL 提供的 Hadoop</td>
 <td>
 <p>HortonWorks HDP 2.4.X、2.5.x、2.6.x</p>
-<p>HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)</p>
+<p>HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
 </tr>
 <tr>
-<td>雪花</td>
+<td>Snowflake</td>
 <td> </td>
 </tr>
 </tbody>
 </table>
 
-## 客戶端控制台作業系統{#ClientConsoleoperatingsystems}
+## 用戶端控制台作業系統{#ClientConsoleoperatingsystems}
 
 <table>
 <tbody>
@@ -302,13 +302,13 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <td>Windows</td>
 <td>
 <p>8</p>
-<p>10（建議使用日文例項）</p>
+<p>10（建議用於日文執行個體）</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## 行動SDK{#MobileSDK}
+## 行動 SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -316,14 +316,14 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 <td>Android</td>
 <td>
 <p>7.x、8.x、9.0</p>
-<p>和行動SDK 1.0.27版。</p>
+<p>搭配行動 SDK 建置版本 1.0.27。</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
 <p>iOS 9 - 14</p>
-<p>與行動SDK建置版本1.0.26相容，與32和64位元版本相容。</p>
+<p>與行動 SDK 建置版本 1.0.26 相容，與 32 及 64 位元版本相容。</p>
 </td>
 </tr>
 </tbody>
@@ -333,11 +333,11 @@ Adobe Campaign [Classic在其最新版本中](../../rn/using/latest-release.md)�
 
 對於下列瀏覽器，支援最新版本：Microsoft Edge、Mozilla Firefox、Google Chrome、Safari。
 
-支援Internet Explorer 11。
+支援 Internet Explorer 11。
 
-## 更像這樣{#Morelikethis}
+## 比較喜歡此內容{#Morelikethis}
 
-* [Campaign Classic發行說明](../../rn/using/latest-release.md)
+* [Campaign Classic 發行說明](../../rn/using/latest-release.md)
 * [安裝指南](../../installation/using/general-architecture.md)
-* [不建議使用的功能和系統](../../rn/using/deprecated-features.md)
-* [建立升級程式](../../production/using/build-upgrade.md)
+* [已棄用的功能及系統](../../rn/using/deprecated-features.md)
+* [建立升級程序](../../production/using/build-upgrade.md)
