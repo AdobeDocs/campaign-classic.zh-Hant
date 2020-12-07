@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 + [最新更新](rn/using/documentation-updates.md)
 + 發行說明{#release-notes}
    + [開始升級](rn/using/rn-overview.md)
-   + [最新發行版本](rn/using/latest-release.md)
+   + [最新版本](rn/using/latest-release.md)
    + Gold Standard 發行版本{#gs-release}
       + [Gold Standard 發行說明](rn/using/gold-standard.md)
       + [Gold Standard 相容性矩陣](rn/using/compatibility-matrix-gs.md)
@@ -57,7 +57,7 @@ ht-degree: 96%
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
-      + [隱私權請求](platform/using/privacy-requests.md)
+      + [隱私權要求](platform/using/privacy-requests.md)
       + [隱私權常見問答集](platform/using/privacy-faq.md)
    + 用戶檔案管理{#profile-management}
       + [關於用戶檔案](platform/using/about-profiles.md)
@@ -113,7 +113,7 @@ ht-degree: 96%
       + [附加檔案](delivery/using/attaching-files.md)
    + 在行動裝置上傳送訊息{#sending-messages-on-mobiles}
       + [SMS 頻道](delivery/using/sms-channel.md)
-      + [LINE 道](delivery/using/line-channel.md)
+      + [LINE 頻道](delivery/using/line-channel.md)
    + 傳送推播通知{#sending-push-notifications}
       + [關於行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
       + [將 Campaign SDK 整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -623,21 +623,21 @@ ht-degree: 96%
       + [時區管理](installation/using/time-zone-management.md)
       + [設定 SpamAssassin](installation/using/configuring-spamassassin.md)
       + [中間來源伺服器](installation/using/mid-sourcing-server.md)
-      + [互動——資料緩衝](installation/using/interaction---data-buffer.md)
+      + [互動 – 資料緩衝](installation/using/interaction---data-buffer.md)
       + [設定外部帳戶](installation/using/external-accounts.md)
    + 存取外部資料庫 {#accessing-external-database}
-      + [開始使用FDA](installation/using/about-fda.md)
+      + [開始使用 FDA](installation/using/about-fda.md)
       + 配置指南 {#config-databases}
          + [配置步驟](installation/using/configure-fda.md)
-         + [配置雪花](installation/using/configure-fda-snowflake.md)
-         + [配置Azure突觸](installation/using/configure-fda-synapse.md)
-         + [配置Hadoop](installation/using/configure-fda-hadoop.md)
-         + [配置Oracle](installation/using/configure-fda-oracle.md)
-         + [配置Netezza](installation/using/configure-fda-netezza.md)
-         + [配置Sybase IQ](installation/using/configure-fda-sybase.md)
-         + [配置Teradata](installation/using/configure-fda-teradata.md)
-         + [配置SAP HANA](installation/using/configure-fda-sap-hana.md)
-      + [遠程訪問權限](installation/using/remote-database-access-rights.md)
+         + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
+         + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
+         + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
+         + [配置 Oracle](installation/using/configure-fda-oracle.md)
+         + [配置 Netezza](installation/using/configure-fda-netezza.md)
+         + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
+         + [配置 Teradata](installation/using/configure-fda-teradata.md)
+         + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
+      + [遠端存取權限](installation/using/remote-database-access-rights.md)
       + [連接到資料庫](installation/using/connecting-to-database.md)
       + [建立資料結構綱要](installation/using/creating-data-schema.md)
       + [定義資料對應](installation/using/defining-data-mapping.md)
@@ -648,7 +648,7 @@ ht-degree: 96%
       + [建立新執行個體](installation/using/creating-new-instances.md)
       + [Campaign 選項清單](installation/using/configuring-campaign-options.md)
       + [解除安裝 Campaign](installation/using/uninstalling-campaign.md)
-+ 監控指南 {#monitoring-campaign-classic}
++ 監視指南 {#monitoring-campaign-classic}
    + 簡介 {#introduction}
       + [前言](production/using/foreword.md)
       + [通用架構](production/using/general-architecture.md)
