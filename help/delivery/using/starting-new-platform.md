@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 1%
@@ -27,17 +27,17 @@ ht-degree: 1%
 
 以下列出啟動新平台時應遵循的主要原則：
 
-* 如果您有此資訊，請 **將無效地址導入隔離表中**。
+* 如果您有此資訊， **將無效地址導入隔離表**。
 首次使用地址清單且可能無法完全限定的平台時，通常會啟動平台。 如果您傳送至無效的位址或蜜罐位址，這將會降低平台的聲譽。
 
-   * 如果您有無效地址清單，在首次發送前將其導入隔離表(可通過菜 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 單提供)符合您的最大利益。
+   * 如果您有無效地址清單，在首次發送前將其導入隔離表（可通過&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**&#x200B;菜單獲得）符合您的最大利益。
    * 但是，如果您希望重新命名無效地址，則最好在平台信譽建立後再逐個逐個地執行此操作，以便隨著時間的推移「稀釋」不良地址的使用。
 
-   如需詳細資訊，請參閱「 [透過隔離最佳化傳送」](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines)。
-* **通過限制匹配數** ，限制吞吐率。 如需有關調整此類技術設定的詳細資訊，請連絡您的Adobe Campaign管理員。
-* **逐步增加發送的卷** ，以避免標籤為垃圾郵件。 從頭開始不要將整個資料庫作為目標，而是每次傳送時新增清單的一部分。 這應可讓您在每個步驟增加音量，同時降低無效地址的總體速率。 為確保啟動階段的順利開發，您可使用波。 有關詳細資訊，請參 [閱使用多波發送](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
-* **定期傳送**。 從某種程度上講，定期傳送小鏡頭比偶爾傳送大型宣傳更好。
-* **密切關注傳送報表**。 高錯誤指示燈可能表示技術設定配置不當。 如需詳細資訊，請參 [閱監控傳送](../../delivery/using/monitoring-a-delivery.md)。
+   如需詳細資訊，請參閱[透過隔離最佳化傳送](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines)。
+* **通過限制匹** 配數來限制吞吐率。如需有關調整此類技術設定的詳細資訊，請連絡您的Adobe Campaign管理員。
+* **逐步增加卷，以** 避免標籤為垃圾郵件。從頭開始不要將整個資料庫作為目標，而是每次傳送時新增清單的一部分。 這應可讓您在每個步驟增加音量，同時降低無效地址的總體速率。 為確保啟動階段的順利開發，您可使用波。 有關詳細資訊，請參閱[使用多個波發送](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
+* **定期傳送**。從某種程度上講，定期傳送小鏡頭比偶爾傳送大型宣傳更好。
+* **密切關注傳送報表**。高錯誤指示燈可能表示技術設定配置不當。 有關詳細資訊，請參閱[監視傳送](../../delivery/using/about-delivery-monitoring.md)。
 
 **相關主題**：
 * [透過IP變暖提高您的電子郵件聲譽](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
