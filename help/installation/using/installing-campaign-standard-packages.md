@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 5%
@@ -15,9 +15,9 @@ ht-degree: 5%
 ---
 
 
-# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
+# 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
 
-## 關於內建套件 {#campaign-standard-packages}
+## 關於內置軟體包{#campaign-standard-packages}
 
 內建套件包含一組功能，可根據您的需求和合約進行安裝。 Campaign內建套件的完整清單可在下方取得。
 
@@ -31,21 +31,21 @@ ht-degree: 5%
 
 要安裝內置軟體包，請執行以下操作：
 
-1. 從Adobe Campaign用戶端主控台 **[!UICONTROL Tools > Advanced > Package import...]** 存取套件匯入精靈。
+1. 從Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;存取套件匯入精靈。
 1. 選取 **[!UICONTROL Install a standard package]**。
 1. 在包清單中，檢查要安裝的包。
    >[!NOTE]
    >
    >當套件呈灰色顯示時，表示已安裝或與您的例項不相容。 下表詳述了相容性。
-1. 按一下 **[!UICONTROL Next]**，然 **[!UICONTROL Start]** 後啟動軟體包安裝。
+1. 按一下&#x200B;**[!UICONTROL Next]** ，然後按一下&#x200B;**[!UICONTROL Start]**&#x200B;啟動軟體包安裝。
 
-   安裝軟體包後，進度欄顯示 **100%** ，您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**.
+   安裝軟體包後，進度條將顯示&#x200B;**100%** ，您可以在安裝日誌中看到以下消息：**[!UICONTROL Installation of packages successful]**。
 
 1. **[!UICONTROL Close]** 安裝窗口。
 
 現在已安裝軟體包。
 
-### 現成包清單 {#list-of-standard-packages}
+### 現成包清單{#list-of-standard-packages}
 
 下表列出所有Campaign內建套件。
 
@@ -60,7 +60,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td> 傳送<br /> </td> 
-   <td> 監控傳送的內容，以及傳送訊息時最終遇到的問題。 <a href="../../delivery/using/monitoring-a-delivery.md">進一步瞭解</a><br /> </td> 
+   <td> 監控傳送的內容，以及傳送訊息時最終遇到的問題。 <a href="../../delivery/using/about-delivery-monitoring.md">進一步瞭解</a><br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -69,7 +69,7 @@ ht-degree: 5%
    <td> 行銷</td>
   </tr> 
   <tr> 
-   <td> Marketing resources (MRM)<br /> </td> 
+   <td> 行銷資源(MRM)<br /> </td> 
    <td> 透過管理和追蹤工作、預算和行銷資源，以協作模式控制行銷動作。 <a href="../../campaign/using/about-marketing-resource-management.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
@@ -86,7 +86,7 @@ ht-degree: 5%
   <tr> 
    <td> 執行例項的選件引擎。 選填。<br /> </td> 
    <td> 套件以安裝在選件引擎（互動）的執行例項上。 <a href="../../interaction/using/distributed-architectures.md">進一步瞭解</a> </td> 
-   <td> Mid，執行 <br /> </td>  
+   <td> Mid，執行<br /> </td>  
   </tr> 
   <!--tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
@@ -95,7 +95,7 @@ ht-degree: 5%
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
   </tr--> 
   <tr> 
-   <td> 社交網路（Social行銷） <br /> </td> 
+   <td> 社交網路(Social Marketing)<br /> </td> 
    <td> 將Adobe Campaign與Twitter和Facebook同步。 <a href="../../social/using/about-social-marketing.md">進一步瞭解</a> <br /> </td> 
    <td> 全部</td> 
   </tr> 
@@ -105,22 +105,22 @@ ht-degree: 5%
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> 事務性消息執行（消息中心——執行） <br /> </td> 
+   <td> 事務性消息執行（消息中心——執行）<br /> </td> 
    <td> 確保更高的可用性和更好的負載管理。 選填。<a href="../../message-center/using/about-transactional-messaging.md">進一步瞭解</a><br /> </td> 
    <td> 執行<br /> </td>
   </tr> 
   <tr> 
-   <td> LINE 道<br /> </td> 
+   <td> LINE 頻道<br /> </td> 
    <td> 使用LINE渠道與Adobe Campaign傳送傳送。 選填。交易式訊息（訊息中心套件）強制性。 <a href="../../delivery/using/line-channel.md">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
-   <td> 直效郵件通道<br /> </td> 
+   <td> 直接郵件通道<br /> </td> 
    <td> 使用Adobe Campaign的直效郵件通道傳送傳送。 選填。<a href="../../delivery/using/about-direct-mail-channel.md">進一步瞭解</a><br /> </td> 
    <td> 全部<br /> </td>
   </tr> 
   <tr> 
-   <td> 行動通道(SMS) <br /> </td> 
+   <td> 行動通道(SMS)<br /> </td> 
    <td> 使用Adobe Campaign的行動／簡訊頻道傳送傳送。 選填。<a href="../../delivery/using/sms-channel.md">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
@@ -140,7 +140,7 @@ ht-degree: 5%
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing Analytics<br /> </td> 
+   <td> 行銷分析<br /> </td> 
    <td> 可讓您分析和測量資料、計算統計資料、簡化並最佳化報表建立和計算。 此外，您還可以建立報表並建立目標人口族群。 選填。<a href="../../reporting/using/about-cubes.md">進一步瞭解</a><br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
@@ -150,7 +150,7 @@ ht-degree: 5%
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> 存取外部資料（同盟資料存取）<br /> </td> 
+   <td> 對外部資料的訪問（同盟資料存取）<br /> </td> 
    <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，讓您可以存取外部資料，而不需變更Adobe Campaign資料的結構。  選填。<a href="../../workflow/using/accessing-an-external-database--fda-.md">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
@@ -160,7 +160,7 @@ ht-degree: 5%
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> 傳送能力監控（電子郵件傳送能力）<br /> </td> 
+   <td> 傳遞能力監控（電子郵件傳遞能力）<br /> </td> 
    <td> 測量促銷活動在到達收件者收件匣時是否成功，而不會反彈或標示為垃圾訊息。 選填。<a href="../../delivery/using/about-deliverability.md">進一步瞭解</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
@@ -185,7 +185,7 @@ ht-degree: 5%
    <td> 行銷</td> 
   </tr> 
   <tr> 
-   <td> 網頁分析連接器<br /> </td> 
+   <td> Web Analytics連接器<br /> </td> 
    <td> 可讓Adobe Campaign和Adobe Analytics透過Web Analytics連接器套件進行互動。 與事務性消息傳遞（消息中心包）不相容。 <a href="../../platform/using/adobe-analytics-data-connector.md">進一步瞭解</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
@@ -200,7 +200,7 @@ ht-degree: 5%
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> 與Adobe Experience Cloud整合<br /> </td> 
    <td> 可讓您從不同的Adobe Experience Cloud解決方案匯入和匯出觀眾／區段至Adobe Campaign。 選填。<a href="../../integrations/using/configuring-ims.md#installing-the-package">進一步瞭解</a> </td> 
    <td> 行銷</td> 
   </tr> 
@@ -210,7 +210,7 @@ ht-degree: 5%
    <td> 全部</td> 
   </tr> 
   <tr> 
-   <td> Transfer to Mid-Sourcing <br /> </td> 
+   <td> 傳送至中部採購<br /> </td> 
    <td> 詳細說明中間採購伺服器的安裝與設定，以及實例的部署，讓第三方在中間採購模式中傳送訊息。 選填。<a href="../../installation/using/mid-sourcing-server.md">進一步瞭解</a> <br /> </td> 
    <td> 行銷 </td> 
   </tr> 
@@ -232,18 +232,18 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-### 消息中心包 {#message-center-package}
+### 消息中心軟體包{#message-center-package}
 
 您必須安裝傳送渠道（電子郵件、行動通道、行動應用程式通道等） 安裝事務性消息傳遞（消息中心軟體包）之前。 如果您已啟動電子郵件專用的「訊息中心」專案，且日後需要新增渠道，您必須遵循下列步驟：
 
-1. 使用套件匯入精靈( ******[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新頻道，例如行動頻道。
-1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，然後選取：
+1. 使用套件匯入精靈(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新頻道，例如&#x200B;**行動頻道**。
+1. 匯入檔案(**[!UICONTROL Tools > Advanced > Import package > File]**)，然後選取：
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在中， **[!UICONTROL XML data content to import]**&#x200B;僅保留與相關渠道對應的「消息中心」傳送模板。 例如，如果您已新增 **Mobile頻道********[!UICONTROL Mobile transactional message]** ，請僅保留與(smsTriggerMessage)範本對應的實體元素。 如果您已新增行動應 **用程式頻道**，請只保留 **iOS交易訊息範本(iosTriggerMessage)和** Android交易訊息 **** (androidTriggerMessage)。
+1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，僅保留與相關渠道對應的消息中心傳送模板。 例如，如果您已新增&#x200B;**行動頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]**(smsTriggerMessage)範本對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易訊息**&#x200B;範本(iosTriggerMessage)和&#x200B;**Android交易訊息**(androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 
