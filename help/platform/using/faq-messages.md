@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -96,7 +96,7 @@ Adobe 強烈建議您先建立驗證訊息，並在正式發送前先行在核�
 
 ### 我可以在哪裡存取傳遞內容和追蹤記錄？{#where-can-i-access-delivery-and-tracking-logs-}
 
-[透過本頁面](../../delivery/using/monitoring-a-delivery.md)瞭解如何追蹤您傳送的郵件，瞭解收件者的行為。
+[透過本頁面](../../delivery/using/delivery-dashboard.md)瞭解如何追蹤您傳送的郵件，瞭解收件者的行為。
 
 ### 我在哪裡可以取得傳遞報告？{#where-can-i-get-delivery-reports-}
 
