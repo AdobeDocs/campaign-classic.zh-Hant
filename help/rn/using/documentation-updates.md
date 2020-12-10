@@ -6,11 +6,11 @@ description: 此頁面列出 Adobe Campaign Classic 各版本的所有新功能�
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: ht
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: ht
-source-wordcount: '3631'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+workflow-type: tm+mt
+source-wordcount: '3663'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 100%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
+
+## 2020 年 12 月{#dec-2020}
+
+交付監測科已改編為專題專題。 [顯示全文](../../delivery/using/about-delivery-monitoring.md)
+
+已新增使用案例，說明如何將傳送者的IP位址新增至傳送記錄檔。 [顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
 
 ## 2020 年11月 {#nov-2020}
 
@@ -39,7 +45,7 @@ Campaign Federated Data Access (FDA) 文件已經過改良，並包含每個外�
 
 「個人資料與角色」區段已更新為使用案例，以說明不同角色在隱私權方面如何進行互動。[顯示全文](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
-已新增區段，其中會列出隱私權的常見問答集。[顯示全文](../../platform/using/privacy-faq.md)
+已新增一個區段，其中列出「隱私權」的常見問題集。[顯示全文](../../platform/using/privacy-faq.md)
 
 ## 2020 年 10 月 {#oct-2020}
 
@@ -253,7 +259,7 @@ Hadoop FDA Connector 增強功能——[顯示全文](../../installation/using/c
 
 更新安裝指南，並與最新版本的相容性矩陣同步。新增了新支援的系統。移除已棄用及不支援的系統的項目。[顯示全文](../../installation/using/general-architecture.md)
 
-更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
+更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 安裝指南新增了有關 IP 相似性的最佳實務。[顯示全文](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -271,7 +277,7 @@ Hadoop FDA Connector 增強功能——[顯示全文](../../installation/using/c
 
 更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
-更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
+更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 [此處](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)記錄新的 **[!UICONTROL Cleanup of Nmsaddress]** 工作流程。
 
@@ -321,7 +327,7 @@ AMP 互動式內容——[顯示全文](../../delivery/using/defining-interactiv
 
 **此版本隨附的其他文件更新**
 
-推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
+推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增章節，說明如何疑難排解行銷活動中，持續顯示「盡快開始」狀態的工作流程。[顯示全文](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -377,13 +383,13 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 已新增了新的頁面，說明 Adobe Campaign Classic 追蹤的一般準則。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html)。
 
-更新工作流程和傳遞效能改善的最佳實務。[深入瞭解工作流程](../../workflow/using/workflow-best-practices.md)，以及 [深入瞭解傳遞](../../delivery/using/monitoring-a-delivery.md#best-practices-performance)。
+更新工作流程和傳遞效能改善的最佳實務。[深入瞭解工作流程](../../workflow/using/workflow-best-practices.md)，以及 [深入瞭解傳遞](../../delivery/using/delivery-performances.md#best-practices-performance)。
 
 ## 2019 年 5 月 {#release-19-1}
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板——[顯示全文](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
+控制面板——[顯示全文](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 
 稽核軌跡——[顯示全文](../../production/using/audit-trail.md)
 
@@ -391,7 +397,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 建立了新的「組建版本升級常見問題集」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)
 
-更新[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存[ 19.0 相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix-19-0.html)。
+更新[相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存[ 19.0 相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix-19-0.html)。
 
 更新「已棄用和已移除的 Campaign Classic 功能」頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)
 
@@ -446,7 +452,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
