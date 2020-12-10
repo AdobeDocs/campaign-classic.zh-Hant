@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 2%
@@ -23,9 +23,9 @@ ht-degree: 2%
 若要控制您的促銷活動，您必須確保訊息確實已傳送給收件者。
 
 從「促銷活動傳送」控制面板，您可以檢查已處理的訊息和傳送稽核記錄。
-您也可以控制傳送記錄檔中訊息的狀態。 [進一步瞭解](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)。
+您也可以控制傳送記錄檔中訊息的狀態。 [進一步瞭解](../../delivery/using/about-delivery-monitoring.md)。
 
-如果傳送未傳送，且狀態仍為「待定」，該怎麼辦 **呢**?
+如果傳送未傳送，且狀態仍為&#x200B;**待定**，該怎麼辦？
 
 * 執行進程正在等待某些資源的可用性。 MTA可能尚未啟動。
 檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [進一步瞭解](../../production/using/administration.md)。
@@ -41,13 +41,13 @@ ht-degree: 2%
 
 若要深入瞭解收件者的行為，您可以追蹤他們對遞送的反應：接收、開啟、點按連結、取消訂閱等。 在「促銷活動傳統型」中，此資訊會顯示在傳送所定位之收件者的「追蹤」標籤和傳送的「追蹤」標籤中。 在「促銷活動標準」中，它會顯示在傳送的「追蹤記錄檔」標籤中。
 
-**提示**:預設會啟用訊息追蹤。 若要設定URL，請在傳送精靈的下方區段中選取「顯示URL」選項。 對於訊息的每個URL，您可以選擇是否啟用追蹤。
+**提示**:預設會啟用訊息追蹤。若要設定URL，請在傳送精靈的下方區段中選取「顯示URL」選項。 對於訊息的每個URL，您可以選擇是否啟用追蹤。
 
-如需詳細資訊，請參閱「設 [定追蹤](../../delivery/using/how-to-configure-tracked-links.md) 」區段和 [「追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators) 」說明。
+有關詳細資訊，請參閱[設定追蹤](../../delivery/using/how-to-configure-tracked-links.md)區段和[追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)說明。
 
-## 傳送效能 {#delivery-performances}
+## 傳送效能{#delivery-performances}
 
-要測量消息的傳送速度，您可以控制傳送吞吐量。 標準是每小時發送的消息數和消息的大小（以位／秒為單位）。 如需詳細資訊，請參閱「傳送 [總處理能力」](../../reporting/using/global-reports.md#delivery-throughput)。
+要測量消息的傳送速度，您可以控制傳送吞吐量。 標準是每小時發送的消息數和消息的大小（以位／秒為單位）。 有關詳細資訊，請參閱[傳送吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
 
 **提示**:
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 * 請勿嘗試排程大型傳送。 請注意，在系統上均勻分配負載可能需要5到10分鐘。
 
-## 傳送疑難排解 {#delivery-troubleshooting}
+## 傳送疑難排解{#delivery-troubleshooting}
 
 當傳送發生問題時，可執行特定動作：
 
@@ -65,6 +65,6 @@ ht-degree: 2%
 
 * [影像顯示問題](../../production/using/image-display-issues.md)
 
-* [傳送效能問題](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [傳送效能問題](../../delivery/using/delivery-performances.md)
 
 * [臨時檔案問題](../../production/using/temporary-files.md) -僅 *限內部部署客戶*
