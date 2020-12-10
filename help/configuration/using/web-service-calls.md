@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Web服務在資料結構描述的語法中描述，可從&#x200B;**`<methods>`**
 
 「const」方法隱式地將XML文檔以其相關模式的格式作為輸入。
 
-<a href="../../configuration/using/schema/method.md)" target="_blank">下方的「架構參考」一章中，提供Adobe Campaign架構之`<method>`元素的完整說明  `<method>`    元素。
+[Method](../../configuration/using/schema/method.md)下的「架構參考」一章中，提供Adobe Campaign架構之`<method>`元素的完整說明
 
 &quot;xtk:queryDef&quot;架構中的&quot;const&quot;類型&quot;ExecuteQuery&quot;方法範例：
 
