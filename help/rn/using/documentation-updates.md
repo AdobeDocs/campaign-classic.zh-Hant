@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
 workflow-type: tm+mt
-source-wordcount: '3663'
+source-wordcount: '3660'
 ht-degree: 99%
 
 ---
@@ -311,7 +311,7 @@ Campaign 選項清單已新增「WdbcOptions_TempDbName」選項。[顯示全文
 
 「FDA 矩陣」頁面已移至[此處](../../installation/using/remote-database-access-rights.md)。
 
-「存取權限矩陣」頁面已移至[此處](https://docs.adobe.com/content/help/zh-Hant/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
+「存取權限矩陣」頁面已移至[此處](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)。
 
 移動說明如何定義 AMP 互動式內容的章節。[顯示全文](../../delivery/using/defining-interactive-content.md)
 
