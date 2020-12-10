@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '3660'
 ht-degree: 99%
@@ -339,7 +339,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 更新使用包含 logon() 及 query() 的 **HttpServletRequest** 的 API 呼叫範例。[顯示全文](../../configuration/using/web-service-calls.md)。
 
-針對綱要定義中的 **sqlDefault** 屬性，新增建議。[顯示全文](../../configuration/using/elements-and-attributes.md#attribute-description)。
+針對綱要定義中的 **sqlDefault** 屬性，新增建議。[顯示全文](../../configuration/using/schema/attribute.md)).
 
 現在「**與 Adobe Experience Cloud 整合**」指南已提及 Adobe Campaign 與 Adobe Real-time Customer Data Platform 之整合。[顯示全文](../../integrations/using/about-campaign-integrations.md)。
 
