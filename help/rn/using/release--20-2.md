@@ -6,11 +6,11 @@ description: 第 20.2 發行版本
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2201'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -21,41 +21,41 @@ ht-degree: 80%
 
 ## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
-_2020年9月11日_
+_2020 年 9 月 11 日_
 
-* 修正由於傳送部件上單一錯誤功能導致記憶體過載，導致傳送準備被封鎖的回歸。 (NEO-27346)
-* 修正在重新發佈Web應用程式之前，關閉Apache和Web伺服器的錯誤升級問題。 (NEO-27155)
-* 修正HTML範本管理上的回歸，導致追蹤URL因標籤誤譯而變得可見。 (NEO-25909)
-* 修正資料庫清除工作流程因非托管資料來源而可能失敗的問題。 (NEO-23160、NEO-23364)
-* 清除工作流程現在會依100批次清除過期清單，而非逐一清除。
-* 修正無法修改外部帳戶內部名稱的回歸。 (NEO-27323)
-* 修正錯誤升級期間的回歸，導致nlserver（錯誤記錄）啟動錯誤。
-* 已改善共用記憶體的更新管理。 20.2中所需的其他步驟不再需要。
+* 修正了由於傳送組件上單一錯誤功能導致記憶體過載，導致傳送準備遭到封鎖的迴歸。(NEO-27346)
+* 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
+* 修正了 HTML 範本管理上的迴歸，導致追蹤 URL 因索引錯誤表示而變得可見。(NEO-25909)
+* 修正了資料庫清除工作流程因非受管理資料來源而可能失敗的問題。(NEO-23160、NEO-23364)
+* 清除工作流程現在會依 100 的批次清除過期清單，而非逐一清除。
+* 修正了導致無法修改外部帳戶內部名稱的迴歸。(NEO-27323)
+* 修正了升級後期間的迴歸，而導致 nlserver（錯誤記錄）錯誤啟動。
+* 已改善共用記憶體的更新管理。20.2 中所需的其他步驟已不再需要。
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
-_2020年7月22日_
+_2020 年 7 月 22 日_
 
 * 修正了在停用簽名功能時，無法進行追蹤的問題。(NEO-26411)
-* 修正造成個人化網域中未簽署的連結在允許時遭到封鎖的問題。 (NEO-25210)
+* 修正了造成個人化網域中未簽署的連結在允許時遭到封鎖的問題。(NEO-25210)
 * 修正了在使用某些特定 Outlook 舊版本時，無法開啟/按一下追蹤 URL 的問題。(NEO-25688)
-* 修正導致在電子郵件傳送中錯誤定義鏡像頁面URL（因為ASCII字元控制不當）的問題。 (NEO-26084)
-* 修正反網路釣魚服務中編碼URL管理的問題。 (NEO-25283)
+* 修正了導致在電子郵件傳送中錯誤定義鏡像頁面 URL（因為 ASCII 字元控制不當）的問題。(NEO-26084)
+* 修正了反網路釣魚服務中編碼 URL 管理的問題。(NEO-25283)
 * 修正了在個人化參數（井字鍵符號的錨點標記）中無法使用片段追蹤 URL 的問題。(NEO-25774)
 * 修正了在使用特定自訂追蹤公式時的追蹤問題。(NEO-25277)
 * 修正了「通知單擊」無法進行追蹤的問題（iOS 和 Android 推播通知）。(NEO-25965)
-* 修正影響工作流程中計算欄位的回歸，導致工作流程失敗。 (NEO-25194)
-* 修正無法即時建立網頁追蹤URL的回歸。 (NEO-20999)
-* 已修正現成可用的傳送報表回歸問題，在匯出為PDF時，這些報表會出現截斷。 (NEO-25757)
-* 修正部署精靈中的當機問題。
-* 修正「選件」通知工作流程在設定檔後無法正常運作的問題。
+* 修正了影響工作流程中計算欄位的迴歸，導致工作流程失敗。(NEO-25194)
+* 修正無法即時建立網頁追蹤 URL 的迴歸。(NEO-20999)
+* 已修正現成可用的傳送報表迴歸問題，在匯出為 PDF 時，這些報表會顯示為截斷。(NEO-25757)
+* 修正了部署精靈中的當機問題。
+* 修正了「優惠方案」通知工作流程在升級後後無法正常運作的問題。
 * 改善了 iOS HTTP2 連接器（協力廠商更新和錯誤管理）。(NEO-25904、NEO-25903)
-* catalina.properties中的jarToSkip清單已更新，以刪除對不再使用的jar檔案的引用（iOS通知）。
-* 修正了在postupgrade後封鎖傳送準備的問題。
-* 在切換至[新序列ID機制](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)後，所有更新收件者表的Web應用程式都會在設定檔期間重新發佈。
-* 已修正傳送內容中的潛在XSS弱點。 (NEO-17987、NEO-26073)
+* catalina.properties 中的 jarToSkip 清單已更新，而可刪除對不再使用的 jar 檔案的參照（iOS 通知）。
+* 修正了在升級後封鎖傳送準備的問題。
+* 在切換至[新序列 ID 機制](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)後，所有更新收件者表格的 Web 應用程式都會在升級後期間重新發佈。
+* 修正了傳送內容中的潛在 XSS 弱點。(NEO-17987、NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
@@ -72,7 +72,7 @@ _2020 年 6 月 8 日_
  <tbody> 
   <tr> 
    <td> <p>在 Campaign 設計訊息時，您現在可以使用專屬按鈕，輕鬆將表情符號插入訊息本文。您也可以在電子郵件主旨列新增表情符號。您可以在介面自訂可用的表情符號清單。</p>
-    <p>如需新增表情符號的詳細資訊，請參閱<a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">相關的文件</a>，以瞭解詳情。前往<a href="../../delivery/using/customizing-emoticon-list.md">此章節</a>，瞭解如何自訂表情符號清單。 </p>
+    <p>如需新增表情符號的詳細資訊，請參閱<a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">相關的文件</a>，以瞭解詳情。前往<a href="../../delivery/using/customizing-emoticon-list.md">此章節</a>，瞭解如何自訂表情符號清單。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -102,7 +102,7 @@ _2020 年 6 月 8 日_
  <tbody> 
   <tr> 
    <td> <p>泰國的個人資料保護法 (PDPA) 是新的隱私權法令，該法協調泰國的資料保護要求並以現代化方式加以規範。 </p>
-   <p>巴西的Lei Geral de Proteção de Dados(LGPD)將於2021年初生效，適用於巴西所有收集或處理個人資料的公司。</p>
+   <p>巴西的 Lei Geral de Proteção de Dados (LGPD) 將於 2021 年初生效，所有於巴西收集或處理個人資料的公司皆適用。</p>
    <p>這些法令及規範適用於所持有資料的主體居住於這些國家的 Adobe Campaign 客戶。除了 Campaign 已提供的隱私權功能 (包括許可管理、資料保留設定及使用者角色) 外，我們還將利用此機會加入其他功能，以協助您做好迎接 PDPA 及 LGPD 的準備：</p>
    <ul> 
      <li><p>近用權與刪除全：我們利用了專為 GDPR 和 CCPA 所新增的功能。<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">顯示全文</a></p></li> 
@@ -156,7 +156,7 @@ _2020 年 6 月 8 日_
 
 * 改善了 HTTP 代理連線的管理機制。[進一步瞭解](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
 
-* **[!UICONTROL Javascript Code]**&#x200B;和&#x200B;**[!UICONTROL Advanced Javascript Code]**&#x200B;工作流程活動中的新選項，可在限制後停止執行。 預設值為1小時。 [進一步瞭解](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
+* **[!UICONTROL Javascript Code]** 和 **[!UICONTROL Advanced Javascript Code]** 工作流程活動中的新選項，可在限制後停止執行。預設值為 1 小時。[進一步瞭解](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
 
 **其他變更**
 
@@ -238,7 +238,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修正了在高頻率傳送時，可能影響推播通知的問題。(NEO-20516)
 * 修正了即使追蹤記錄未包含重複項，追蹤資料仍包含重複項的問題。(NEO-20040)
 * 修正了追蹤伺服器通訊失敗經修正後，傳送重複的交易式電子郵件的問題。(NEO-23640)
-* 修正從追蹤URL重新導向時刪除編碼參數值（對日文字元的影響）的問題。 (NEO-25637)
+* 修正了從追蹤 URL 重新導向時，刪除編碼參數值的問題（會影響日文字元）。(NEO-25637)
 * 修正了比較浮點數字時，查詢無法運作的問題。(NEO-23243)
 * 修正了重新啟動工作流程後，**修改者**&#x200B;欄位的內容無法顯示的問題。(NEO-23035)
 * 修正從第二個容器下載記錄檔時，追蹤技術工作流程失敗的問題。(NEO-23159)
@@ -248,7 +248,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修正了透過&#x200B;**指令碼**&#x200B;工作流程活動的&#x200B;**依指令碼計算**&#x200B;選項建立傳遞時，其他儲存欄位的問題。(NEO-20609)
 * 修正了無法在資料庫清理工作刪除 Ghost 工作流程的問題。
 * 修正了造成&#x200B;**帳單 (作用中設定檔)** 技術工作流程失敗的問題。(NEO-19777)
-* 修正使用ACS連接器功能時，無法連線至Campaign Standard例項（FOH/FOH2連線管理錯誤）的回歸問題。 (NEO-23433)
+* 修正了使用 ACS 連接器功能時，無法連線至 Campaign Standard 執行個體（FOH/FOH2 連線管理錯誤）的迴歸問題。(NEO-23433)
 * 修正了無法在 Hadoop 表單擁有多欄位的主要金鑰建立綱要擴展的問題。(NEO-17390)
 * 修正了&#x200B;**載入 (SOAP)**&#x200B;活動中，無法從 URL 載入 WSDL 檔案的問題。(NEO-16924)
 * 修正了當多個作用中工作流程伺服器負載平衡時，無法透過主控台執行&#x200B;**無條件停止**&#x200B;的問題。(NEO-19556)
@@ -262,4 +262,4 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修正了按下在 Line 訊息內的 Web 應用程式連結時，可能顯示錯誤訊息的問題。
 * 修正了執行清理工作流程後，刪除了&#x200B;**增量查詢**&#x200B;活動歷史記錄的問題。
 * 修正了建立中間來源外部帳戶時，NmsMidSourcing_LastBroadLog_&lt;InternalName> 選項遺失的問題.
-* 修正資料庫連線上的回歸問題，造成Web伺服器因資料庫編碼問題而持續重新啟動。 這可能導致過度消費。 (NEO-23264)
+* 修正了資料庫連線上的迴歸問題，造成 Web 伺服器因資料庫編碼問題而持續重新啟動。這可能導致過度耗用。(NEO-23264)
