@@ -6,11 +6,11 @@ description: 最新的 Campaign Classic 發行說明
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1820'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 792bfbd041b20a61e975703e7d9d4a35859c2882
+workflow-type: tm+mt
+source-wordcount: '1852'
+ht-degree: 98%
 
 ---
 
@@ -94,6 +94,11 @@ _2020 年 10 月 27 日_
 **功能改善**
 
 * 幾項改善進行於&#x200B;**客戶端控制台**：
+   * 已更新連線通訊協定，以遵循新的IMS驗證機制。
+
+      >[!CAUTION]
+      >
+      >連線通訊協定更新後，必須升級（伺服器和主控台）才能從2020年3月21日起連線。
    * 為了避免與某些網際網路安全性　GPO　規則限制發生不相容的情況，已將　Campaign　用戶端主控台登入畫面由內建的標準　Windows　表單取代。
    * 修正了在使用　64　位元用戶端主控台的工作流程中進行複製/貼上活動所發生的問題。(NEO-27635)
    * 在&#x200B;**「關於」**&#x200B;功能表中，已新增資訊，以區分 64 位元和 32 位元控制台。
