@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,13 @@ Adobe Campaign是以伺服器端執行的數個程式為基礎，您在更新期
 * 傳送伺服器(nlserver mta)
 * 重定向伺服器(webmdl)
 
+>[!CAUTION]
+>
+>客戶機控制台應與伺服器實例位於同一版本。
+
 >[!NOTE]
 >
->如需各種Adobe Campaign程式的詳細資訊，請參 [閱本節](../../installation/using/general-architecture.md#logical-application-layer)。\
+>有關各種Adobe Campaign程式的詳細資訊，請參閱[本節](../../installation/using/general-architecture.md#logical-application-layer)。\
 >使用Power Booster或Power Cluster類型體系結構時，必須將此過程應用於所有Power Booster/Cluster伺服器。
 
 如果新版本涉及更改資料庫結構，建議按以下順序重新啟動伺服器：
