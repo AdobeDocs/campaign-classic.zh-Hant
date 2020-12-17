@@ -7,43 +7,43 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2017'
 ht-degree: 3%
 
 ---
 
 
-# 建立升級常見問答集 {#build-upgrade-faq}
+# 建立升級常見問答集{#build-upgrade-faq}
 
-定期更新 Adobe Campaign。如果您熟悉我們發佈的發行說 [明](../../rn/using/rn-overview.md)，您可能會注意到，平均每年2/3的次要版本都會發佈包含新功能、改進和修正的內容。 此外，我們定期發行只累積修正的版本編號。此定期更新旨在讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
+定期更新 Adobe Campaign。如果您熟悉我們發佈的[發行說明](../../rn/using/rn-overview.md)，您可能會知道，平均2/3次發行包含新功能、改進和修正的次要版本每年都會推出。 此外，我們定期發行只累積修正的版本編號。此定期更新旨在讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
 
 我們的客戶必須執行最新版的Adobe Campaign。 此外，Adobe也可讓您更有效率地協助您避免遇到問題——識別、重制和修正舊版產品的問題通常需要更多時間，更不用說您最近版本中可能遇到的某些問題已經修正。
 
-因此，我們開始 [推出Gold Standard](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html) （金級標準）計畫，與客戶合作，主動且定期地升級其環境。
+因此，我們啟動了[Gold Standard](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)計畫，與客戶協作，主動定期升級其環境。
 
 ## 什麼是建置升級？
 
 「建置升級」是指Adobe Campaign Classic軟體已更新為最新的安全建置編號，但仍維持相同的主要／次要建置層級。 例如：Campaign Classic v7組建9026到Campaign v7組建9032。
 
-在本節 [中進一步瞭解](../../rn/using/rn-overview.md)。
+瞭解本節[的更多資訊。](../../rn/using/rn-overview.md)
 
 ## 什麼是Adobe Campaign Classic的最新版本？
 
-最新的Campaign Classic版本，包括新功能和檔案，在最新的發行說明中 [詳細說明](../../rn/using/latest-release.md)。
+最新的Campaign Classic版本，包括新功能和說明檔案，詳見最新的[發行說明](../../rn/using/latest-release.md)。
 
 ## 我要如何得知我要執行的版本？
 
-從Adobe Campaign Client主控 **[!UICONTROL Help > About...]** 台的選單檢查您的版本。 該 **[!UICONTROL About]** 框包含您為控制台和伺服器運行的版本和內部版本的詳細資訊。
+從Adobe Campaign Client主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本。 **[!UICONTROL About]**&#x200B;框包含您正在為控制台和伺服器運行的版本和內部版本的詳細資訊。
 
-在本節 [中進一步瞭解](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
+瞭解本節[的更多資訊。](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
 ## 建置狀態是什麼意思？
 
 啟動Campaign Classic 19.2時，狀態會關聯至每個建置。
 
-在本節 [中進一步瞭解](../../rn/using/rn-overview.md)。
+瞭解本節[的更多資訊。](../../rn/using/rn-overview.md)
 
 ## 建置升級與版本升級是否相同？
 
@@ -83,7 +83,7 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 1. 升級本身——生產環境已升級。 此階段通常在幾小時內執行。 對於非常複雜的環境，應該期望更長的停機時間。 當發生問題時，定義並可以執行回滾策略。
 
-For more information, [refer to this document](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html).
+有關詳細資訊，請[參閱本文檔](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)。
 
 ## 構建版本升級需要哪些資源？
 
@@ -96,15 +96,15 @@ For more information, [refer to this document](https://helpx.adobe.com/tw/campai
 
 ## 我要如何為構建版本升級做準備？
 
-在您的開發和測試系統中，匯出任何重要且必須保留的工作。 如需詳細資訊，請 [觀看此影片方式](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
+在您的開發和測試系統中，匯出任何重要且必須保留的工作。 如需詳細資訊，請[觀看此影片](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
 
 在實作結束時檢閱提供給您團隊的檔案，以重新瞭解您在執行手冊（或您的諮詢團隊／合作夥伴）中建立的重要路徑工作流程和傳送。
 
 識別適合維護視窗的低流量或低流量時間，因為它們對業務影響最小。
 
-請檢閱以 [下建置升級檢查清單](#check-list) ，以及您的測試計畫，並確保可執行這些測試的資源在24-48小時內可供使用。 完成升級。
+檢閱我們的[建立](#check-list)下的升級檢查清單以及您的測試計畫，並確保可執行這些測試的資源在24-48小時內可用。 完成升級。
 
-For more information, [refer to this document](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html).
+有關詳細資訊，請[參閱本文檔](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)。
 
 ## 建置升級是否可在夜間或在下班時間執行？
 
@@ -136,7 +136,7 @@ For more information, [refer to this document](https://helpx.adobe.com/tw/campai
 
 ## 我是否需要更新客戶端控制台？
 
-是. 客戶端控制台必須與伺服器實例位於相同的組建版本或更新版本。 升級完成後，您的客戶端控制台應提示您升級至最新版本，以確保它與伺服器版本保持一致。
+是. 客戶機控制台必須與伺服器實例位於同一版本。 升級完成後，您的客戶端控制台應提示您升級至最新版本，以確保它與伺服器版本保持一致。
 
 ## 回滾計畫是什麼？ 我的資料是否保留備份？
 
@@ -148,13 +148,13 @@ For more information, [refer to this document](https://helpx.adobe.com/tw/campai
 
 ## 升級後，在系統上執行哪些類型的測試？
 
-請參閱下 [面的組建升級檢查清單](#check-list)。
+請參閱[下面的組建升級檢查清單](#check-list)。
 
 ## 升級後，我必須執行何種測試？
 
 開發和階段環境會依序升級或一起升級，但在升級生產實例之前需要先簽署。 這可讓每位客戶在簽署任何生產變更前，先進行徹底的測試。
 
-請參閱下 [面的清單建立升級檢查清單](#check-list)。 客戶應執行類似的測試，以及他們可能需要的環境測試。
+請參閱](#check-list)下方的[建置升級檢查清單。 客戶應執行類似的測試，以及他們可能需要的環境測試。
 
 ## 我必須執行構建升級的頻率為何？
 
@@ -166,11 +166,11 @@ For more information, [refer to this document](https://helpx.adobe.com/tw/campai
 
 ## 我應該與誰聯絡以開啟組建升級票證？
 
-如果您在建置升級後遇到問題，請連絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會排程建置日期並開啟與建置升級相關的票證。
+如果您在建置升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會排程建置日期並開啟與建置升級相關的票證。
 
-進一步瞭解Campaign Classic [的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+進一步瞭解[Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
 
-## 建立升級檢查清單 {#check-list}
+## 建立升級檢查清單{#check-list}
 
 ### 雲端訊息伺服器升級後檢查清單
 
@@ -185,9 +185,12 @@ For more information, [refer to this document](https://helpx.adobe.com/tw/campai
 
 * 您可以登入伺服器嗎？ 檢查促銷活動用戶端主控台是否運作正常，沒有任何錯誤／警告彈出式視窗。
 * 請務必在升級後使用與組建版本相同的主控台版本。
-* 您是否有將資料插入促銷活動資料庫的Web應用程式？ 如果是，請執行這些檔案並驗證他們是否可透過API插入新記錄。
-* 您能成功寄出測試電子郵件嗎？ 使用已知範本建立新的傳送內容、將它傳送至一個測試收件者、驗證個人化、不明嫌犯連結、鏡像頁面等所有功能。
-* 您的所有重要路徑工作流程都在執行嗎？ 檢查工作流程、開啟工作流程日誌、確認沒有錯誤。
+* 您是否有將資料插入促銷活動資料庫的Web應用程式？ 如果是，請執行並
+確認他們可以透過API插入新記錄。
+* 您能成功寄出測試電子郵件嗎？ 使用已知範本建立新傳送，並傳送至
+一個測試收件者，驗證個人化，不明嫌犯連結，鏡像頁面都能運作。
+* 您的所有重要路徑工作流程都在執行嗎？ 檢查工作流程、開啟工作流程日誌、確認
+沒有錯誤。
 * 您的所有資料夾都存在、可見且可存取嗎？ 瀏覽不同的資料夾並檢查。
 所有內容都會顯示並呈現。
 * 您的交貨是否在正確的時區內完成？
@@ -206,4 +209,4 @@ For more information, [refer to this document](https://helpx.adobe.com/tw/campai
 * [執行版本編號升級](../../production/using/build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
 * [Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
-* [Gold Standard計畫](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)
+* [Gold Standard計畫](https://helpx.adobe.com/campaign/kb/gold-standard.html)
