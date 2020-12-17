@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2368'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 本節將提供升級程式的深入說明，以及識別和解決衝突的步驟。
 
-建設升級必須謹慎進行，其影響必須事先充分考慮，程式必須嚴格執行。 為確保成功升級，請確定只有專家使用者才能執行下列步驟。 此外，我們強烈建議您在開始升級之前先與 [Adobe客戶服務聯絡](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 。
+建設升級必須謹慎進行，其影響必須事先充分考慮，程式必須嚴格執行。 為確保成功升級，請確定只有專家使用者才能執行下列步驟。 此外，我們強烈建議您在開始任何升級之前，先聯絡[Adobe客戶服務。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 需要下列必要條件：
 
@@ -27,16 +27,16 @@ ht-degree: 0%
 * 系統與伺服器端知識
 * 管理權限
 
-您可以在下列章節中找到更多資訊： [更新Adobe Campaign](../../production/using/upgrading.md), [移轉至新版本](../../migration/using/about-migration.md)。
+您可以在下列章節中找到更多資訊：[更新Adobe Campaign](../../production/using/upgrading.md)、[移轉至新版本](../../migration/using/about-migration.md)。
 
-對於代管和混合型例項，您必須向Adobe技術營運團隊申請組建升級。 如需詳細資訊，請參閱本頁下方的「常見問題」區段。 另請參閱建置 [升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+對於代管和混合型例項，您必須向Adobe技術營運團隊申請組建升級。 如需詳細資訊，請參閱本頁下方的「常見問題」區段。 另請參閱[組建升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
 ## 準備升級
 
 ![](assets/do-not-localize/icon_planification.png)
 
 在開始構建版本升級之前，您必須按照以下說明執行完整準備。
-一旦系統準備好升級後，構建版本升級至 **少需要** 2小時。
+一旦系統準備好升級後，構建升級至少需要**** 2小時。
 
 建立升級程式需要下列資源：
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 1. 為Adobe和客戶員工分發聯絡資訊。
 1. 對於托管實例：Adobe和客戶員工將協調升級的時間，以及執行人員。
 1. 對於內部部署實例：客戶員工負責管理整個流程——如果需要協助測試自訂工作流程和傳送邏輯，則應提供諮詢服務。
-1. 確定並確認您要升級至哪個Adobe Campaign版本——請參閱 [Adobe Campaign Classic版本注意事項](../../rn/using/rn-overview.md)。
+1. 確定並確認您要升級至哪個Adobe Campaign版本——請參閱[Adobe Campaign Classic發行說明](../../rn/using/rn-overview.md)。
 1. 確認擁有升級執行檔。
 
 ### 關鍵人物
@@ -82,11 +82,11 @@ ht-degree: 0%
 
 1. 對源環境和目標環境的所有實例執行資料庫完整備份。
 
-1. 取得伺服器組態檔的 [最新版本](../../installation/using/the-server-configuration-file.md)。
+1. 獲取[伺服器配置檔案](../../installation/using/the-server-configuration-file.md)的最新版本。
 
 1. 下載最新版本。 [進一步瞭解下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
 
-在開始構建升級之前，您還 [需要瞭解所有有用的](../../installation/using/command-lines.md) 命令行：
+在開始構建升級之前，您還需要瞭解所有[有用的命令行](../../installation/using/command-lines.md):
 
 * **nlserver pdump**:列出運行進程
 * **nlserver pdump -who**:列出活動客戶端會話
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/icon_process.png)
 
-以下程式僅由內部部 **署客戶執行** 。 對於代管客戶，由代管團隊負責處理。 若要將Adobe Campaign更新為新建版本，詳細程式如下所述。
+以下過程僅由&#x200B;**on-premise**&#x200B;客戶執行。 對於代管客戶，由代管團隊負責處理。 若要將Adobe Campaign更新為新建版本，詳細程式如下所述。
 
 ### 複製環境
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 在目標環境的所有實例上恢復這些拷貝。
 
-1. 在啟動 **** 目標環境之前，先在目標環境上運行nms:freezeInstance.js燒灼指令碼。 這將停止所有進程與外部的交互：記錄檔、追蹤、傳送、促銷活動工作流程等。
+1. 在啟動目標環境之前，在目標環境上運行&#x200B;**nms:freezeInstance.js**&#x200B;燒灼指令碼。 這將停止所有進程與外部的交互：記錄檔、追蹤、傳送、促銷活動工作流程等。
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 1. 檢查燒灼，如下所示：
 
-   * 檢查唯一的傳送部件是ID設定為 **0的部件**:
+   * 檢查唯一的傳送部件是ID設定為&#x200B;**0**&#x200B;的部件：
 
       ```
       SELECT * FROM neolane.nmsdeliverypart;
@@ -146,14 +146,14 @@ ht-degree: 0%
 
 1. 關閉以下服務：
 
-   * 網站服務(IIS): **iisreset /stop**
-   * Adobe Campaign服務： **net stop nlserver6**
+   * 網站服務(IIS):**iisreset /stop**
+   * Adobe Campaign服務：**net stop nlserver6**
 
    >[!NOTE]
    >
    >請確定已停止重定向伺服器(webmdl)，以便IIS使用的nlsrvmod.dll檔案可以替換為新版本。
 
-1. 通過運行nlserver pdump命令驗證沒有任 **務處於活動狀態** 。 如果沒有任務，則輸出應與以下內容類似：
+1. 運行&#x200B;**nlserver pdump**&#x200B;命令，驗證沒有任務處於活動狀態。 如果沒有任務，則輸出應與以下內容類似：
 
    ```
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
@@ -163,21 +163,21 @@ ht-degree: 0%
 
 ### 升級Adobe Campaign Server應用程式
 
-1. 運行 **Setup.exe檔案** 。 如果您需要下載此檔案，請存 [取下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
+1. 運行&#x200B;**Setup.exe**&#x200B;檔案。 如果您需要下載此檔案，請存取[下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
 
-1. 選擇安裝模式： **更新** 或 **修復**。
+1. 選擇安裝模式：**Update**&#x200B;或&#x200B;**Repair**。
 
-1. 按一 **下「下一步**」。
+1. 按一下&#x200B;**Next**。
 
-1. 按一下 **完成**:安裝程式會複製新檔案。
+1. 按一下&#x200B;**完成** :安裝程式會複製新檔案。
 
-1. 操作完成後，按一下「完 **成」**。
+1. 操作完成後，按一下&#x200B;**完成**。
 
 ### 同步資源
 
 1. 開啟命令行。
 
-1. 運 **行nlserver config -postupgrade -allinstances** ，以執行以下操作：
+1. 運行&#x200B;**nlserver config -postupgrade -allinstances**&#x200B;以執行以下操作：
 
    * 同步資源
    * 更新結構描述
@@ -199,17 +199,18 @@ ht-degree: 0%
 
 需要重新啟動以下服務：
 
-* 網站服務(IIS): **issreset/start**
-* Adobe Campaign服務： **net start nlserver6**
+* 網站服務(IIS):**issreset /start**
+* Adobe Campaign服務：**net start nlserver6**
 
 ### 客戶端控制台更新
+
+客戶機控制台必須與伺服器實例位於同一版本。
 
 在安裝Adobe Campaign應用程式伺服器的機器上(nserverweb)，下載並複製檔案：
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
-
 
 下次連接客戶機控制台時，會出現一個窗口通知用戶新更新的可用性，並為用戶提供下載和安裝該更新的可能性。
 
@@ -245,7 +246,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 在中端採購環境中，您需要執行以下其他步驟才能升級：
 
-1. 聯 [絡Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，協調Mid-Sourcing伺服器的升級。
+1. 聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以協調Mid-Sourcing伺服器的升級。
 1. 執行測試連結以驗證版本已更新。 例如：
 
    ```
@@ -276,7 +277,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 如果警告涉及資源衝突，則需要使用者注意才能解決。
 
-postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結果。 預設情況下，它位於以下目錄： **installationDirectory/var/instanceName/postupgrade**。 錯誤和警告由錯誤和警告屬性指示。
+**postupgrade_ServerVersionNumber_TimeOfPostupgrade.log**&#x200B;檔案包含同步結果。 預設情況下，它位於以下目錄：**installationDirectory/var/instanceName/postupgrade**。 錯誤和警告由錯誤和警告屬性指示。
 
 ### 分析衝突
 
@@ -312,10 +313,10 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結
 
 要解決衝突，請應用以下流程：
 
-1. 在Adobe Campaign檔案總管中，前往「管 **理>設定>封裝管理>編輯衝突」**。
+1. 在Adobe Campaign檔案總管中，前往&#x200B;**管理>設定>封裝管理>編輯衝突**。
 
 1. 在清單中選擇要解決的衝突。
-解決衝突有三種選擇： **接受新版本**、 **保留目前版本**、合併程式碼（並宣告為已解決） **、**&#x200B;忽略衝突（不建議） ****。
+解決衝突有三種選擇：**接受新版**、**保留目前版本**、**合併程式碼（並宣告為已解決）**、**忽略衝突（不建議）**。
 
 **我何時可以接受新版本？**
 
@@ -333,7 +334,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結
 * 只有表單、報表和Web應用程式才能合併。
 * 有些次要合併可以解決，而不需瞭解程式碼。
 * 更複雜的合併應由具備適當技能和能力的人執行。
-* 請參 [閱執行合併](#perform-a-merge)。
+* 請參閱[執行合併](#perform-a-merge)。
 
 **如果我忽視衝突呢？**
 
@@ -352,7 +353,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結
 1. 輕鬆合併：自訂和新元素很小且不相關，不需要撰寫程式碼。
 1. 無變更：接受新版本，僅更改上次更新日期，只接受注釋、制表符、空格或新行。 範例：意外儲存。
 1. 瑣碎變更：只變更了一行。 範例：xpathToLoad
-1. 複雜的合併：當需要編碼時。 需要開發技能。 請參 [閱複雜合併](#complex-merges)。
+1. 複雜的合併：當需要編碼時。 需要開發技能。 請參閱[複雜合併](#complex-merges)。
 
 #### 如何合併？
 
@@ -364,8 +365,8 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結
 #### 在哪裡找到代碼？
 
 1. 內建程式碼會儲存在XML檔案的datakit資料夾中。 尋找符合衝突物件的XML檔案。 範例：installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 擷取原始版本：透過下 [載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) ，或其他未升級的產品安裝。
-1. 擷取新版本：透過下 [載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) ，或客戶安裝的檔案。
+1. 擷取原始版本：透過[下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或其他未升級的產品安裝。
+1. 擷取新版本：透過[下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或客戶安裝的檔案。
 1. 擷取自訂版本：從促銷活動用戶端擷取物件的原始碼。
 
 ### 如何做比較？
@@ -384,9 +385,9 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結
 
 如果您選擇手動解決衝突，請按如下步驟進行：
 
-1. 在窗口的下半部分中，搜索 **_conflict_string_** ，以查找具有衝突的實體。 隨新版本安裝的實體包含新引數，與舊版相符的實體包含自訂引數。
-1. 刪除您不想保留的版本。 刪除 **_要保留的實體的conflict_argument_** 字串。
-1. 前往您已解決的衝突。 按一下「 **動作** 」圖示，並選 **取「宣告為已解決」**。
+1. 在窗口的下半部分中，搜索&#x200B;**_conflict_string_**&#x200B;以查找具有衝突的實體。 隨新版本安裝的實體包含新引數，與舊版相符的實體包含自訂引數。
+1. 刪除您不想保留的版本。 刪除您保留的實體的&#x200B;**_conflict_argument_**&#x200B;字串。
+1. 前往您已解決的衝突。 按一下&#x200B;**Actions**&#x200B;表徵圖，然後選擇&#x200B;**Declare as resolved**。
 1. 儲存變更：衝突現已解決。
 
 #### 複雜合併{#complex-merges}
