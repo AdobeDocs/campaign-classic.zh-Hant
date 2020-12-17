@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 494be84478f652dd5e1473dd98272056514f31c8
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 90%
+source-wordcount: '820'
+ht-degree: 100%
 
 ---
 
@@ -25,24 +25,6 @@ Gold Standard 是 Campaign Classic 的長期支援版本。作為 Gold Standard 
 
 如需 Campaign Gold Standard 方案的詳細資訊，請[參閱本文章](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/limited_2.png)Gold Standard 第 11 發行版本{#gs-11}
-
-_2020年12月15日_
-
->[!CAUTION]
->
->此版本隨附新的連線通訊協定：升級對於促銷活動伺服器和用戶端主控台而言，都是必備的，才能在2020年3月21日之後連線至促銷活動
-
-建置9032@2a2a028包含下列改進和修正：
-
-* 已更新連線通訊協定，以遵循新的IMS驗證機制。
-
-* 已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至 Adobe I/O。[瞭解更多](../../integrations/using/configuring-adobe-io.md)
-
-* 在iOS APNs舊式二進位通訊協定支援結束後，使用此通訊協定的所有執行個體都會在設定檔期間更新為HTTP/2通訊協定。
-
-* 已修正安全性問題，以加強針對伺服器端偽造要求(SSRF)問題的保護。 (NEO-27777)
-
 ## ![](assets/do-not-localize/green_2.png)Gold Standard 第 10 發行版本{#gs-10}
 
 _2020 年 7 月 7 日_
@@ -53,7 +35,7 @@ _2020 年 7 月 7 日_
 
 >[!CAUTION]
 >
->我們建議您使用此版本中可用的用戶端控制台進行升級。請參閱[本頁](../../installation/using/installing-the-client-console.md)
+>我們建議您使用此版本中可用的用戶端控制台進行升級。請參閱[此頁面](../../installation/using/installing-the-client-console.md)。
 
 ## ![](assets/do-not-localize/red_2.png)Gold Standard 第 9 發行版本{#gs-9}
 
