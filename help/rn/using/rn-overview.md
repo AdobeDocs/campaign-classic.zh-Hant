@@ -6,11 +6,11 @@ description: 瞭解更多 Campaign Classic 升級
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '429'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 96%
 
 ---
 
@@ -44,6 +44,8 @@ ht-degree: 100%
 ## 建議{#recommendations}
 
 若要確保配置穩定，我們建議您在所有執行相同用戶端配置的伺服器上，安裝相同的穩定版本編號。
+
+此外，客戶端控制台應與伺服器實例位於同一個版本。
 
 若要保持最新的實施，請務必閱讀每個新發行版本的[已棄用和已移除功能](../../rn/using/deprecated-features.md)和[相容性矩陣](../../rn/using/compatibility-matrix.md)頁面。
 
