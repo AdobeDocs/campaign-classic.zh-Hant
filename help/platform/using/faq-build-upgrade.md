@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2020'
 ht-degree: 3%
 
 ---
@@ -136,7 +136,7 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 ## 我是否需要更新客戶端控制台？
 
-是. 客戶機控制台必須與伺服器實例位於同一版本。 升級完成後，您的客戶端控制台應提示您升級至最新版本，以確保它與伺服器版本保持一致。
+是. 客戶端控制台必須與伺服器實例位於相同的組建版本或更新版本。 升級完成後，您的客戶端控制台應提示您升級至最新版本，以確保它與伺服器版本保持一致。
 
 ## 回滾計畫是什麼？ 我的資料是否保留備份？
 
