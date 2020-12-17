@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 4%
 
 ## 必要條件 {#adobe-io-prerequisites}
 
-此整合僅適用於&#x200B;**Campaign Classic 20.3和Gold Standard 11版本**&#x200B;開始。
+此整合僅適用於&#x200B;**Campaign Classic 20.3發行版**&#x200B;起。
 
 開始此實作前，請檢查您有：
 
