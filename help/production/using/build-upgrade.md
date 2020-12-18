@@ -217,7 +217,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 某些配置需要特定的附加任務才能更新為新構建版本。
 
-#### 交易式訊息傳送
+#### 異動訊息傳送
 
 當您的促銷活動例項啟用「交易式訊息（訊息中心）」時，您必須執行下列其他步驟以升級：
 
