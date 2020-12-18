@@ -21,19 +21,19 @@ Adobe Campaign中可用的篩選條件是透過篩選條件來定義的，篩選
 
 >[!NOTE]
 >
->For more on creating filters, refer to [this section](../../platform/using/filtering-options.md).
+>有關建立篩選器的詳細資訊，請參閱[本節](../../platform/using/filtering-options.md)。
 
-節 **[!UICONTROL Administration > Configuration > Predefined filters]** 點包含清單和概觀中使用的所有篩選器。
+**[!UICONTROL Administration > Configuration > Predefined filters]**&#x200B;節點包含清單和概述中使用的所有篩選器。
 
-例如，運算子清單可依下列方式篩選 **[!UICONTROL Active accounts]**:
+例如，運算子清單可依&#x200B;**[!UICONTROL Active accounts]**&#x200B;篩選：
 
 ![](assets/query_editor_filter_sample_1.png)
 
-匹配篩選器包含對方案 **[!UICONTROL Account disabled]** 值的查 **[!UICONTROL Operators]** 詢：
+匹配篩選器包含&#x200B;**[!UICONTROL Operators]**&#x200B;方案&#x200B;**[!UICONTROL Account disabled]**&#x200B;值的查詢：
 
 ![](assets/query_editor_filter_sample_2.png)
 
-對於相同的清單，篩選 **[!UICONTROL By login or label]** 器可讓您根據在篩選欄位中輸入的值來篩選清單上的資料：
+對於相同的清單，**[!UICONTROL By login or label]**&#x200B;篩選器可讓您根據在篩選欄位中輸入的值來篩選清單上的資料：
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -49,12 +49,12 @@ Adobe Campaign中可用的篩選條件是透過篩選條件來定義的，篩選
 
 >[!NOTE]
 >
->此函 **[!UICONTROL Upper]** 數可讓您停用區分大小寫的函式。
+>**[!UICONTROL Upper]**&#x200B;函式可讓您停用區分大小寫的函式。
 
-欄可 **[!UICONTROL Taken into account if]** 讓您定義這些篩選條件的應用程式條件。 這裡， **$(/tmp/@text)** 字元代表連結至篩選器的輸入欄位內容：
+**[!UICONTROL Taken into account if]**&#x200B;欄可讓您定義這些篩選條件的應用程式條件。 這裡，**$(/tmp/@text)**&#x200B;字元代表連結至篩選器的輸入欄位內容：
 
 ![](assets/query_editor_filter_sample_5.png)
 
-這裡， **$(/tmp/@text)=&#39;agency&#39;**
+這裡，**$(/tmp/@text)=&#39;agency&#39;**
 
-**$(/tmp/@text)!=&quot;** expression在輸入欄位不空白時套用每個條件。
+**$(/tmp/@text)!=&quot;**&#x200B;運算式會在輸入欄位不空白時套用每個條件。
