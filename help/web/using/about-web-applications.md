@@ -29,13 +29,13 @@ Adobe Campaign可讓您建立和發佈動態互動式網頁應用程式，其中
 
 >[!NOTE]
 >
->請參閱「安 [全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html) 」，瞭解如何最佳化Web應用程式的安全性。
+>請參閱[安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)以瞭解如何最佳化Web應用程式的安全性。
 
 >[!CAUTION]
 >
 >基於隱私權原因，我們建議對所有外部資源使用HTTPS。
 
-## Web應用程式範圍 {#web-application-scope}
+## Web應用程式範圍{#web-application-scope}
 
 Adobe Campaign中的網頁應用程式可讓您存取下列功能：
 
@@ -52,7 +52,7 @@ Adobe Campaign中的網頁應用程式可讓您存取下列功能：
 * 影像、視訊、超文字連結、驗證碼等的使用。 如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/editing-content.md)。
 * 即時監控回應。 如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/publish--track-and-use-collected-data.md#response-tracking)。
 
-選用的 **Survey** 建立模組提供下列額外功能：
+選用的&#x200B;**Survey**&#x200B;建立模組提供下列額外功能：
 
 * 資料庫的動態擴展：建立未包含在初始資料範本中的回應。 如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/managing-answers.md#storing-collected-answers)。
 * 產生專用報表。 如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys)。
@@ -61,31 +61,31 @@ Adobe Campaign中的網頁應用程式可讓您存取下列功能：
 
 >[!NOTE]
 >
->本節將詳述 [調查](../../web/using/about-surveys.md)。
+>調查詳見[本節](../../web/using/about-surveys.md)。
 >
->Adobe Campaign中Web表格的整體功能在本節 [中詳述](../../web/using/about-web-forms.md)。
+>Adobe Campaign中Web表格的整體功能詳見[本節](../../web/using/about-web-forms.md)。
 
-## Web應用程式實作 {#web-application-implementation}
+## Web應用程式實施{#web-application-implementation}
 
 若要建立和張貼Web應用程式，您必須：
 
 1. 建立內容（欄位、清單、表格、圖形等）。
 
-   您也可以檢視詳細說明表單可用欄位的章節：這些欄位也適用於Web應用程式。 本頁提供此 [資訊](../../web/using/adding-fields-to-a-web-form.md)。
+   您也可以檢視詳細說明表單可用欄位的章節：這些欄位也適用於Web應用程式。 此資訊可在[此頁](../../web/using/adding-fields-to-a-web-form.md)中獲得。
 
 1. 根據需要，您可以添加預載、測試和保存步驟，並配置訪問控制系統（主要在外聯網出版物的框架內）。
 1. 發佈網路應用程式，以便在外部網路或Adobe Campaign中提供。
 
-## Web應用程式初始設定 {#web-application-initial-configuration}
+## Web應用程式初始配置{#web-application-initial-configuration}
 
-Web應用程式是透過與標籤 **[!UICONTROL Web Applications]** 中的連結 **[!UICONTROL Campaigns]** 建立 **[!UICONTROL Profiles and targets]** 的。
+Web應用程式通過&#x200B;**[!UICONTROL Campaigns]**&#x200B;和&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;頁籤中的&#x200B;**[!UICONTROL Web Applications]**&#x200B;連結建立。
 
-Web應用程式會儲存在Adobe **[!UICONTROL Resources > Online > Web Applications]** Campaign樹狀結構的節點中。 配置在以下資料夾中劃分：
+Web應用程式會儲存在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;節點中。 配置在以下資料夾中劃分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**:包含Web表單簡報（應用程式和調查）的轉換範本。 範本可讓您產生表單。 它也使用CSS樣式表。 此樣式表可以在模板級別過載。 有關詳細資訊，請參見[此頁面](../../web/using/form-rendering.md#selecting-the-form-rendering-template)。
-* **[!UICONTROL Resources > Templates > Web application templates]**:包含表單範本。 若要建立表單或Web應用程式，您必須從範本開始。
+* **[!UICONTROL Administration > Configuration > Form renderings]**:包含Web表單簡報（應用程式和調查）的轉換範本。範本可讓您產生表單。 它也使用CSS樣式表。 此樣式表可以在模板級別過載。 有關詳細資訊，請參見[此頁面](../../web/using/form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Resources > Templates > Web application templates]**:包含表單範本。若要建立表單或Web應用程式，您必須從範本開始。
 
-## 網頁應用程式範本 {#web-application-templates}
+## Web應用程式模板{#web-application-templates}
 
 依預設，Adobe Campaign會針對每個可用的網頁應用程式提供一個範本。
 
@@ -93,7 +93,7 @@ Web應用程式會儲存在Adobe **[!UICONTROL Resources > Online > Web Applicat
 >
 >您可以將現有的Web應用程式轉換為範本。 若要這麼做，請選取表格並按一下滑鼠右鍵。 選取 **[!UICONTROL Actions > Save as template...]**。
 
-您可以透過Adobe Campaign樹狀結 **[!UICONTROL Resources > Templates > Web Application templates]** 構的節點建立新範本。
+您可以透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Web Application templates]**&#x200B;節點建立新範本。
 
 建立精靈可讓您選取要啟用的選項，如下所示。
 
