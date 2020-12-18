@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 互動——資料緩衝
-description: 互動——資料緩衝
+title: 互動 – 資料緩衝
+description: 互動 – 資料緩衝
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -15,19 +15,19 @@ ht-degree: 3%
 ---
 
 
-# 互動——資料緩衝{#interaction-data-buffer}
+# 互動 – 資料緩衝{#interaction-data-buffer}
 
 >[!NOTE]
 >
->有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱「代 [管模型](../../installation/using/hosting-models.md) 」一節或 [本頁](../../installation/using/capability-matrix.md)。
+>有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱[代管模型](../../installation/using/hosting-models.md)一節或[本頁](../../installation/using/capability-matrix.md)。
 
-在Adobe Campaign中，「互 **動」模組中已引入資料緩衝區** 。 這可讓您取消 **同步庫存** 和選件計算，以提高傳入互動的效能。
+在Adobe Campaign中，「互動」模組中已引入&#x200B;**資料緩衝區**。 這可讓您取消同步庫存和選件計算，以&#x200B;**提高傳入互動的效能**。
 
 它只涉及傳入的互動，不論是呼叫（有無呼叫資料）或狀態更新(updateStatus)。
 
-為避免在寫入與接收方相關的提案時出現隊列，新進程生成允許 **以非同步方式寫入提案的** 資料緩 **衝區**。 此資料緩衝區會定期讀取和清空。 預設時段約為1秒。因此，建議書寫是分組的。
+為避免在寫入與收件者相關的提案時出現隊列，新進程生成允許以非同步方式寫入提案的&#x200B;**資料緩衝區**。 ****&#x200B;此資料緩衝區會定期讀取和清空。 預設時段約為1秒。因此，建議書寫是分組的。
 
-可在實 **例的配置檔案** (config-Instance.xml)中完成資料緩衝區配置。
+資料緩衝區&#x200B;**configuration**&#x200B;可在實例的配置檔案(config-Instance.xml)中完成。
 
 >[!NOTE]
 >
