@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **功能改善**
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **功能改善**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->這個建築已經召回。 請升 [級至最新版本](../../production/using/build-upgrade.md) ，或聯絡 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **新增功能？**
 
@@ -117,21 +117,21 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Push notification improvements<br /> </td> 
+   <td> 推播通知改進<br /> </td> 
    <td> Adobe Campaign中已實作許多推播通知的增強功能：<br /> 
     <ul> 
      <li> <p>在iOS中追蹤無訊息通知 </p> </li> 
      <li> <p>在iOS中實作註冊呼叫的意見回應</p> </li> 
      <li> <p>改善iOS傳送準備速度</p> </li> 
-    </ul> <p>Android V2連接器現在僅允許與FCM伺服器連接，這是Google GCM折舊的一部分。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">相關的文件</a>，以瞭解詳情。本文對FCM的手動升級作了詳 <a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">細說</a>明 </p> </td> 
+    </ul> <p>Android V2連接器現在僅允許與FCM伺服器連接，這是Google GCM折舊的一部分。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">相關的文件</a>，以瞭解詳情。本<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>中詳細說明了對FCM的手動升級。 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
-   <td> <p>新增了資料管理工作流程活動。 「 <strong>SQL資料管理</strong> 」活動允許您編寫或複製貼上自己的SQL指令碼以建立和填充工作表（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">相關的文件</a>，以瞭解詳情。</p></td> 
+   <td> <p>新增了資料管理工作流程活動。 <strong>SQL資料管理</strong>活動允許您編寫或複製貼上自己的SQL指令碼以建立和填充工作表（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">相關的文件</a>，以瞭解詳情。</p></td> 
   </tr> 
   <tr> 
-   <td> 工作流程監控<br /> </td> 
-   <td> <p>有了新的Adobe Campaign Workflow HeatMap，平台管理員可快速以圖形方式呈現所有並行工作流程，讓他們可以監控執行個體的載入情況，並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝的詳細資訊，請參閱 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
+   <td> 工作流監控<br /> </td> 
+   <td> <p>有了新的Adobe Campaign Workflow HeatMap，平台管理員可快速以圖形方式呈現所有並行工作流程，讓他們可以監控執行個體的載入情況，並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,8 +148,8 @@ ht-degree: 7%
 
 * 現在針對 Campaign Classic API 推出[專屬頁 面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
 * 現在支援PostgreSQL 10、Debian 9和Teradata 16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
-* 建立SFTP連線時，您現在可以使用代理驗證。 For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
-* 使用 **直接郵件傳送範本建立單一傳送時** ，傳送屬性中現在提供「日期計算公式」選項。 (NEO-9792)
+* 建立SFTP連線時，您現在可以使用代理驗證。 有關詳細資訊，請參閱[詳細說明檔案](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)(NEO-9868)
+* 當使用直接郵件傳送模板建立單次傳送時，**日期計算公式**&#x200B;選項現在可用於傳送屬性。 (NEO-9792)
 * Cookie追蹤和Web應用程式的網域名稱管理已改善。 如需詳細資訊，請參閱下方的「技術演變」一節。
 * Adobe Marketing Cloud共用資產在傳送或登陸頁面中的匯入方式已改善安全性與效能。
 * 行動頻道外部帳戶中有新的核取方塊，可啟用記錄檔中的詳細SMPP追蹤，讓Adobe Campaign介面直接存取此輸出。
@@ -170,7 +170,7 @@ ht-degree: 7%
 
 Cookie追蹤和Web應用程式的網域名稱管理已改善。
 
-現在，預設支援所有雙字母的二級網域名稱（例如。aa.com）。 若是更複雜的網域名稱（例如，三個字母的二級網域，例如。com.au），您需要在serverConf的 **cookieDomains** （在重新導向標籤下）選項中新增這些網域。 以下是範例：
+現在，預設支援所有雙字母的二級網域名稱（例如。aa.com）。 對於更複雜的網域名稱（例如，三個字母的二級網域，如。com.au），您需要在serverConf的&#x200B;**cookieDomains**&#x200B;選項（在重新導向標籤下）中新增這些網域。 以下是範例：
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
@@ -197,8 +197,8 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 
 **修補程式**
 
-* 修正無法下載 **Web下載工作流程活動中** ，檔案的錯誤。 (NEO-11105)
-* 修正偶爾會將「傳送指 **示符」和促銷活動屬性** 」工作流程保留為「失敗」狀態的錯誤(NEO-10820)。
+* 修正無法下載&#x200B;**Web download**&#x200B;工作流程活動中檔案的錯誤。 (NEO-11105)
+* 修正偶爾會將&#x200B;**傳送指示符和促銷活動屬性**&#x200B;工作流程保留為「失敗」狀態的錯誤(NEO-10820)。
 * 修正在工作流程中執行「清單更新」活動後所建立的收件者清單已刪除的問題。 (NEO-11696)
 * 修正在「促銷活動」日曆（在日文例項上）中，提前一個月錯誤顯示促銷活動的問題。 (NEO-11445)
 * 修正Analytics設定無法顯示在傳送屬性的「Web Analytics」標籤中的問題。 (NEO-11619)
@@ -217,7 +217,7 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 * 修正使用Extended一般SMPP連接器設定行動頻道外部帳戶時發生的問題：如果您為接收器指定了不同的參數，則發射器會錯誤地使用這些參數而不是自己的參數。
 * 修正在設定壓力規則的頻率時，排程的傳送會失敗的問題，因為傳送會在第一次仲裁後持續重新計算。 (NEO-10016)
 * 修正在應用程式池回收程式（在nlsrvmod.dll程式庫中）期間，造成IIS網站伺服器當機的問題。 (NEO-10862)
-* 修正無法在「描述檔與目標」畫面中搜尋收件 **者的問題** 。 (NEO-8228)
+* 修正無法在&#x200B;**描述檔和Target**&#x200B;畫面中搜尋收件者的問題。 (NEO-8228)
 * 修正在存取「事件歷史記錄」檔案夾時，若記錄數量較多，可能導致逾時錯誤的問題。 (NEO-11738)
 * 修正可能導致LINE傳送收件者錯誤地傳回為「無法存取」的問題。 (NEO-10833)
 * 修正在Oracle上執行具有附加列的工作流查詢時的問題。 (NEO-11615)
@@ -237,7 +237,7 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 * 修正導致在Android推播通知傳送的其他參數中，將URL編碼為追蹤URL的問題。 (NEO-11468)
 * 修正將參數設為「一天間隔」和「開啟」時，在「使用者活動」報表中發生的指令碼錯誤。 (NEO-11655)
 * 修正透過已驗證的Web Proxy連線至中端採購伺服器或訊息中心時發生的問題。 (NEO-11309)
-* 修正在根據SQL視圖選擇特定方案的元素後保存新傳送組合時 **發生的Oracle錯誤**。 (NEO-11682)
+* 修正在根據SQL視圖&#x200B;**選擇特定方案**&#x200B;的元素後保存新傳送組合時發生的Oracle錯誤。 (NEO-11682)
 * 修正當透過使用解壓縮選項的載入檔案活動處理包含。csv的zip檔案時，產生包含誤報的拒絕檔案的問題。
 * xtkjoblog現在會被清除。
 
