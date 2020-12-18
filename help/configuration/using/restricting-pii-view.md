@@ -21,9 +21,9 @@ ht-degree: 2%
 
 有些客戶需要行銷使用者能夠存取資料記錄，但不希望他們看到個人識別資訊(PII)，例如名字、姓氏或電子郵件地址。 Adobe Campaign提出一種保護隱私權並防止一般行銷活動營運商濫用資料的方法。
 
-## 實作 {#implementation}
+## 實施{#implementation}
 
-可套用至任何元素或屬性的新屬性已新增至結構描述，可補充現有屬性 **[!UICONTROL visibleIf]** 。 此屬性為： **[!UICONTROL accessibleIf]** . 當包含與當前用戶上下文相關的XTK表達式時，例如，它 **[!UICONTROL HasNamedRight]** 可 **[!UICONTROL $(login)]** 以利用或。
+新屬性（可套用至任何元素或屬性）已新增至結構描述，它補充了現有屬性&#x200B;**[!UICONTROL visibleIf]**。 此屬性為：**[!UICONTROL accessibleIf]**。 例如，當包含與當前用戶上下文相關的XTK表達式時，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**。
 
 您可以找到以下顯示此用法的收件者結構擴展示例：
 
@@ -42,8 +42,8 @@ ht-degree: 2%
 
 主要屬性有：
 
-* **[!UICONTROL visibleIf]** :隱藏中繼資料中的欄位，因此無法在架構檢視、欄選取或運算式產生器中存取欄位。 但這不會隱藏任何資料，如果欄位名稱是手動輸入在運算式中，值就會顯示。
-* **[!UICONTROL accessibleIf]** :隱藏資料（以空值取代資料），以免產生查詢。 如果visibleIf為空白，則會取得與。相同的運算式 **[!UICONTROL accessibleIf]** 。
+* **[!UICONTROL visibleIf]** :隱藏中繼資料中的欄位，因此無法在架構檢視、欄選取或運算式產生器中存取欄位。但這不會隱藏任何資料，如果欄位名稱是手動輸入在運算式中，值就會顯示。
+* **[!UICONTROL accessibleIf]** :隱藏資料（以空值取代資料），以免產生查詢。如果visibleIf為空，則其獲得與&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表達式。
 
 以下是在促銷活動中使用此屬性的後果：
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 ## 建議 {#recommendations}
 
-在每次傳送中，電子郵件地址都會複製 **[!UICONTROL broadLog]** 到表格 **[!UICONTROL forecastLog]** 中：因此，這些欄位也需要受到保護。
+在每次傳送中，電子郵件地址都會複製到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表格中：因此，這些欄位也需要受到保護。
 
 以下是實施此功能的日誌表擴展示例：
 
