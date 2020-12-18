@@ -27,7 +27,7 @@ ht-degree: 3%
 
    * Tomcat側：實際到達Adobe Campaign Tomcat用戶端的所有查詢。
 
-      此閾值在nl6/tomcat-8/conf/server.xml檔案中 **配置** 。 maxThreads **** 屬性可讓您增加一次處理之查詢數的臨界值。 例如，可變更為250。
+      此閾值在&#x200B;**nl6/tomcat-8/conf/server.xml**&#x200B;檔案中配置。 **maxThreads**&#x200B;屬性可讓您增加一次處理的查詢數的臨界值。 例如，可變更為250。
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,7 +43,7 @@ ht-degree: 3%
 
    * 資料庫：進程在資料庫上同時開啟的所有連接集。
 
-      此閾值在檔案nl6/conf/serverConf.xml中 **配置**。 位於 **資料來源** pool中的maxCnx **屬性** ，可讓您增加同時處理的查詢臨界值。
+      此閾值在檔案&#x200B;**nl6/conf/serverConf.xml**&#x200B;中配置。 位於&#x200B;**資料來源池**&#x200B;的&#x200B;**maxCnx**&#x200B;屬性可讓您增加同時處理的查詢臨界值。
 
       ```
           <!-- Data source
