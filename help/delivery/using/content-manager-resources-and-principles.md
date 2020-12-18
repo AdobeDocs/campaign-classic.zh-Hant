@@ -27,11 +27,11 @@ ht-degree: 6%
 
 內容設定需要下列資源：
 
-* 資料結構：描述XML內容結構。 For more on this, refer to [Data schemas](../../delivery/using/data-schemas.md).
-* 資料輸入表單：建立資料輸入畫面。 For more on this, refer to [Input forms](../../delivery/using/input-forms.md).
-* 影像：用於資料輸入表單的影像。 For more on this, refer to [Image management](../../delivery/using/formatting.md#image-management).
-* 樣式表：格式。 For more on this, refer to [Formatting](../../delivery/using/formatting.md).
-* JavaScript範本：格式化輸出檔案。 For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* JavaScript代碼：資料匯整的JavaScript程式碼。 For more on this, refer to [Aggregator](../../delivery/using/publication-templates.md#aggregator).
-* 出版物範本：出版物範本的定義。 For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* 內容：要建立和發佈的內容例項。 如需詳細資訊，請參閱「使 [用內容範本」](../../delivery/using/using-a-content-template.md)。
+* 資料結構：描述XML內容結構。 有關詳細資訊，請參閱[資料結構](../../delivery/using/data-schemas.md)。
+* 資料輸入表單：建立資料輸入畫面。 有關詳細資訊，請參閱[Input forms](../../delivery/using/input-forms.md)。
+* 影像：用於資料輸入表單的影像。 有關詳細資訊，請參閱[映像管理](../../delivery/using/formatting.md#image-management)。
+* 樣式表：格式。 有關詳細資訊，請參閱[Formatting](../../delivery/using/formatting.md)。
+* JavaScript範本：格式化輸出檔案。 有關詳細資訊，請參閱[出版物模板](../../delivery/using/publication-templates.md)。
+* JavaScript代碼：資料匯整的JavaScript程式碼。 有關詳細資訊，請參閱[聚合器](../../delivery/using/publication-templates.md#aggregator)。
+* 出版物範本：出版物範本的定義。 有關詳細資訊，請參閱[出版物模板](../../delivery/using/publication-templates.md)。
+* 內容：要建立和發佈的內容例項。 有關詳細資訊，請參閱[使用內容模板](../../delivery/using/using-a-content-template.md)。
