@@ -15,7 +15,7 @@ ht-degree: 31%
 ---
 
 
-# About Adobe ID{#about-adobe-id}
+# 關於Adobe ID{#about-adobe-id}
 
 Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此整合具備以下優勢︰
 
@@ -24,7 +24,7 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此�
 * 更安全的密碼管理原則。
 * 使用 Federated ID 帳戶（外部 ID 提供者）。
 
-Adobe Identity Management System(IMS)可協助管理員建立和管理使用者對應用程式和服務的存取。 如需不同Adobe ID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
+Adobe Identity Management System(IMS)可協助管理員建立和管理使用者對應用程式和服務的存取。 有關不同Adobe ID類型的詳細資訊，請參閱[本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
