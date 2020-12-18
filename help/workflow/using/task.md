@@ -17,12 +17,12 @@ ht-degree: 2%
 
 # 任務{#task}
 
-在促銷活動工作流程中，活 **[!UICONTROL Task]** 動可讓您指定兩個藍本：第一個是任務完成時，第二個是任務未完成時（如果手動標籤為未完成或任務過期）。
+在促銷活動工作流程中，**[!UICONTROL Task]**&#x200B;活動可讓您指定兩個藍本：第一個是任務完成時，第二個是任務未完成時（如果手動標籤為未完成或任務過期）。
 
 ![](assets/mrm_task_in_workflow.png)
 
-如何配置和操作任務將在本節中詳 [細說明](../../campaign/using/creating-and-managing-tasks.md)。
+如何配置和操作任務在[部分](../../campaign/using/creating-and-managing-tasks.md)中有詳細說明。
 
 ![](assets/wkf_task_activity.png)
 
-此選 **[!UICONTROL Resources]** 項可讓您定義數個運算子以及任務的核准排程。 如果核准者拒絕，這不會導致任務本身遭到拒絕。
+**[!UICONTROL Resources]**&#x200B;選項可讓您定義數個運算子以及任務的核准排程。 如果核准者拒絕，這不會導致任務本身遭到拒絕。
