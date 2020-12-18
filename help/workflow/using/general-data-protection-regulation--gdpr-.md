@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # 隱私權資料保護法規{#general-data-protection-regulation-gdpr}
 
-依預設，下列詳細的工作流程會隨 **「隱私資料保護規則** 」模組安裝。 For more on this module, refer to this [article](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html).
+以下詳細說明的工作流預設隨&#x200B;**隱私資料保護規則**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[文章](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)。
 
 <table> 
  <tbody> 
