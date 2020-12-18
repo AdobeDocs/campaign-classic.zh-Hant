@@ -21,21 +21,21 @@ ht-degree: 4%
 
 若要建立此範例，請套用下列步驟：
 
-1. 在工作流程中拖 **[!UICONTROL Query]** 放活動並開啟活動。
-1. 按一 **[!UICONTROL Edit query]** 下並將定位和篩選維度設為 **[!UICONTROL Recipients]**。
+1. 在工作流程中拖放&#x200B;**[!UICONTROL Query]**&#x200B;活動並開啟活動。
+1. 按一下&#x200B;**[!UICONTROL Edit query]**，將目標和篩選維度設為&#x200B;**[!UICONTROL Recipients]**。
 
    ![](assets/query_recipients_1.png)
 
-1. 定義下列篩選條件，以定位存在於傳送記錄中的收件者。 在「 **運算子收件者」欄中選擇「傳送記錄(broadlog)** 」，選擇「運 **算子收件者」欄中存** 在(例如 **「****** OperatorRecipient」)。
+1. 定義下列篩選條件，以定位存在於傳送記錄中的收件者。 在&#x200B;**Expression**&#x200B;欄中選擇&#x200B;**Recipient delivery log(broadlog)**，在&#x200B;**Operator**&#x200B;欄中選擇&#x200B;**exist，例如**。
 
    ![](assets/query_recipients_2.png)
 
-1. 定義下列篩選條件以定位您的傳送。 在「運 **[!UICONTROL Internal name]** 算式」欄和「運算子 **[!UICONTROL equal to]** 」欄中選擇。
+1. 定義下列篩選條件以定位您的傳送。 在「運算式」欄中選擇&#x200B;**[!UICONTROL Internal name]**，在「運算子」欄中選擇&#x200B;**[!UICONTROL equal to]**。
 1. 在值欄中，新增目標傳送的內部名稱。
 
    ![](assets/query_recipients_3.png)
 
-1. 使用運算 **[!UICONTROL AND]** 子，重複相同的作業以定位其他傳送。
+1. 使用&#x200B;**[!UICONTROL AND]**&#x200B;運算子，重複相同的作業以定位其他傳送。
 
    ![](assets/query_recipients_4.png)
 
