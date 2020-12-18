@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 訪問外部資料庫
-description: 訪問外部資料庫
+title: 存取外部資料庫
+description: 存取外部資料庫
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 要在外部資料庫上建立模式：
 
-1. 按一下數 **[!UICONTROL New]** 據結構表上方的按鈕並選擇 **[!UICONTROL Access external data]**。
+1. 按一下資料方案清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕，然後選擇&#x200B;**[!UICONTROL Access external data]**。
 
    ![](assets/wf_new_schema_fda.png)
 
@@ -27,9 +27,9 @@ ht-degree: 3%
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Click **[!UICONTROL OK]** to confirm. Adobe Campaign會自動偵測選取表格的結構並產生邏輯架構。 請注意，Adobe Campaign不會產生連結。
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;進行確認。 Adobe Campaign會自動偵測選取表格的結構並產生邏輯架構。 請注意，Adobe Campaign不會產生連結。
 
-1. 按一 **[!UICONTROL Save]** 下以確認建立。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;確認建立。
 
    >[!CAUTION]
    >
