@@ -21,9 +21,9 @@ ht-degree: 6%
 
 這些篩選器將可在目標選擇視窗中使用，其功能與收件者的區段（使用參數輸入表單、資料夾等）相同。
 
-1. Go to the **[!UICONTROL Administration > Configuration > Predefined filters]** node.
+1. 轉至&#x200B;**[!UICONTROL Administration > Configuration > Predefined filters]**&#x200B;節點。
 1. 建立新篩選。
-1. 輸入篩 **[!UICONTROL Label]** 選器，然後在欄位中選擇與外部收件人表匹配的方案 **[!UICONTROL Document type]** 。
-1. 根據 **[!UICONTROL filtering conditions]** 架構的欄位建立。
+1. 輸入篩選器的&#x200B;**[!UICONTROL Label]**，然後在&#x200B;**[!UICONTROL Document type]**&#x200B;欄位中選擇與外部收件人表匹配的方案。
+1. 根據架構的欄位建立&#x200B;**[!UICONTROL filtering conditions]**。
 1. 儲存篩選。
 
