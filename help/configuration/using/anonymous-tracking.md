@@ -26,8 +26,8 @@ Adobe Campaign可讓您在收件者匿名瀏覽您的網站時，將收集的網
 
 若要在您的例項上啟用匿名Web追蹤，必須設定下列元素：
 
-* 追蹤 **的server** Conf.xml檔案中，trackVisitors元素的 **trackWebVisitors參數必須設定為「TrueConf** 」，以在造訪網站之未知使用者的網際網路瀏覽器中放置 ************ Cookie(permonantUuid 230B)。
-* 必須 **** 在部署精靈的追蹤設定畫面中選取「匿名Web追蹤」模式。
+* 追蹤伺服器的&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**trackWebVisitors**&#x200B;重新導向&#x200B;**元素參數必須設為&#39;** true **&#39;，以在uuid中放置永久Cookie(** 230 **)未知網際網路使用者瀏覽網站的瀏覽器。**
+* 必須在部署精靈的追蹤設定畫面中選取&#x200B;**匿名網頁追蹤**&#x200B;模式。
 
    ![](assets/webtracking_anonymous_set.png)
 
