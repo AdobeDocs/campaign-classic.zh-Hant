@@ -30,9 +30,9 @@ ht-degree: 1%
 * 執行和彈回管理模組在實例上被禁用。
 * 應用程式已設定為在使用SOAP呼叫（透過HTTP或HTTPS）驅動的遠端「中端來源」伺服器上執行訊息。
 
-## Features {#features}
+## 功能{#features}
 
-### 優勢 {#advantages}
+### 優勢{#advantages}
 
 * 簡化的伺服器組態：客戶無需配置面向外的模組（mta和inMail）。
 * 頻寬使用有限：由於執行是由中間採購伺服器執行的，因此只需足夠的頻寬即可將個性化資料發送到中間採購伺服器。
@@ -40,12 +40,12 @@ ht-degree: 1%
 * 資料庫不會離開公司：只有匯整訊息所需的資料才會傳送至中端來源伺服器（HTTPS可用於此）。
 * 這種部署方式可以解決高容量體系結構（資料庫中的許多接收方），並具有高的交付吞吐量。
 
-### 缺點 {#disadvantages}
+### 缺點{#disadvantages}
 
 * 由於從中端來源伺服器取得資訊所花的時間，因此在檢視訊息執行資訊和報告功能方面有輕微的延遲。
 * 調查和Web表格仍保留在用戶端平台上。
 
-### 建議的設備 {#recommended-equipment}
+### 建議的設備{#recommended-equipment}
 
 * 應用程式伺服器：2 Ghz四核CPU,4 GB RAM，軟體RAID 1 80 GB SATA硬碟。
 * 資料庫伺服器：3 GHz雙四核CPU、最低4 GB RAM、硬體RAID 10 15000RPM SAS硬碟機，數量取決於資料庫的大小和預期效能。
@@ -54,7 +54,7 @@ ht-degree: 1%
 >
 >重新導向和中間採購是個別的元素，不過一般而言，追蹤伺服器會與中間採購伺服器共用。
 
-## 安裝和配置步驟 {#installation-and-configuration-steps-}
+## 安裝和配置步驟{#installation-and-configuration-steps-}
 
 ### 必要條件 {#prerequisites}
 
@@ -62,6 +62,6 @@ ht-degree: 1%
 * 訪問應用程式伺服器上的資料庫伺服器。
 * 防火牆配置為開啟HTTP(80)或HTTPS(443)埠至中端源伺服器。
 
-### 安裝和配置（中部採購部署） {#installing-and-configuring--mid-sourcing-deployment-}
+### 安裝和配置（中部採購部署）{#installing-and-configuring--mid-sourcing-deployment-}
 
-請參閱 [Mid-sourcing伺服器](../../installation/using/mid-sourcing-server.md)。
+請參閱[Mid-sourcing server](../../installation/using/mid-sourcing-server.md)。
