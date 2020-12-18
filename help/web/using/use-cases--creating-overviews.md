@@ -19,17 +19,17 @@ ht-degree: 1%
 
 在下例中，我們將建立概述類型的Web應用程式，以顯示資料庫中的所有Web應用程式。 設定下列元素：
 
-* 資料夾上的篩選(請參 [閱在資料夾上新增篩選](#adding-a-filter-on-a-folder)),
-* 用於建立新Web應用程式的按鈕(請參 [閱添加按鈕以配置新Web應用程式](#adding-a-button-to-configure-a-new-web-application)),
-* 詳細資訊顯示清單中每個條目(請參 [閱向清單添加詳細資訊](#adding-detail-to-a-list)),
-* 每個連結編輯工具一個篩選器(請參 [閱使用連結編輯器建立篩選器](#creating-a-filter-using-a-link-editor)),
-* 刷新連結(請參 [閱建立刷新連結](#creating-a-refresh-link))。
+* 資料夾上的篩選（請參閱[在資料夾上新增篩選）,](#adding-a-filter-on-a-folder)
+* 用於建立新Web應用程式的按鈕（請參閱[添加按鈕以配置新Web應用程式](#adding-a-button-to-configure-a-new-web-application)）,
+* 詳細顯示清單中每個條目（請參閱[向清單添加詳細資訊](#adding-detail-to-a-list)）,
+* 每個連結編輯工具一個篩選器（請參閱[使用連結編輯器建立篩選器）,](#creating-a-filter-using-a-link-editor)
+* 刷新連結（請參閱[建立刷新連結](#creating-a-refresh-link)）。
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## Creating a single-page Web application {#creating-a-single-page-web-application}
+## 建立單頁Web應用程式{#creating-a-single-page-web-application}
 
-1. 建立單一Web應 **[!UICONTROL Page]** 用程式，並停用傳出轉場和轉場至下一頁。
+1. 建立單一&#x200B;**[!UICONTROL Page]** Web應用程式，並停用傳出轉場和轉場至下一頁。
 
    ![](assets/s_ncs_configuration_webapp_create.png)
 
@@ -37,44 +37,44 @@ ht-degree: 1%
 
    此標題會出現在概述標題和Web應用程式概述中。
 
-1. 在Web應用程式屬性中，選取範本以修改應用程式的轉 **[!UICONTROL Single-page Web application]** 譯。
+1. 在Web應用程式屬性中，通過選擇&#x200B;**[!UICONTROL Single-page Web application]**&#x200B;模板來修改應用程式的渲染。
 
    ![](assets/s_ncs_configuration_webapp_rendering.png)
 
-1. 開啟您 **[!UICONTROL Page]** 的Web應用程式活動並開啟清單(**[!UICONTROL Static element > List]**)。
-1. 在列 **[!UICONTROL Data]** 表的頁籤中，選擇文檔類 **[!UICONTROL Web applications]** 型和 **[!UICONTROL Label]** 、和 **[!UICONTROL Creation date]****[!UICONTROL Type of application]** 輸出列。
-1. 在子標 **[!UICONTROL Filter]** 簽中，建立下列篩選，如下所示，以便僅顯示Web應用程式並從您的檢視中排除範本。
+1. 開啟Web應用程式的&#x200B;**[!UICONTROL Page]**&#x200B;活動，並開啟清單(**[!UICONTROL Static element > List]**)。
+1. 在清單的&#x200B;**[!UICONTROL Data]**&#x200B;頁籤中，選擇&#x200B;**[!UICONTROL Web applications]**&#x200B;文檔類型和&#x200B;**[!UICONTROL Label]** 、 **[!UICONTROL Creation date]**&#x200B;和&#x200B;**[!UICONTROL Type of application]**&#x200B;輸出列。
+1. 在&#x200B;**[!UICONTROL Filter]**&#x200B;子標籤中，建立下列篩選，如下所示，以便僅顯示Web應用程式並從您的檢視中排除範本。
 
    ![](assets/s_ncs_configuration_webapp_filter.png)
 
-1. 關閉頁面的設定視窗，然後按一下 **[!UICONTROL Preview]**。
+1. 關閉頁面的配置窗口，然後按一下&#x200B;**[!UICONTROL Preview]**。
 
    將顯示資料庫中可用的Web應用程式清單。
 
    ![](assets/s_ncs_configuration_webapp_preview.png)
 
-## 在資料夾上新增篩選 {#adding-a-filter-on-a-folder}
+## 在資料夾{#adding-a-filter-on-a-folder}上添加篩選器
 
 在概觀中，您可以根據資料在Adobe Campaign樹狀結構中的位置來選擇存取資料。 這是資料夾上的篩選。 套用下列程式，將它新增至您的概述。
 
-1. 將游標置於Web應 **[!UICONTROL Page]** 用程式的節點上，並添加 **[!UICONTROL Select folder]** 元素(**[!UICONTROL Advanced controls > Select folder]**)。
-1. 在出現 **[!UICONTROL Storage]** 的視窗中，按一下連 **[!UICONTROL Edit variables]** 結。
+1. 將游標置於Web應用程式的&#x200B;**[!UICONTROL Page]**&#x200B;節點上，並添加&#x200B;**[!UICONTROL Select folder]**&#x200B;元素(**[!UICONTROL Advanced controls > Select folder]**)。
+1. 在出現的&#x200B;**[!UICONTROL Storage]**&#x200B;窗口中，按一下&#x200B;**[!UICONTROL Edit variables]**&#x200B;連結。
 1. 變更變數標籤以符合您的需求。
-1. 使用資料夾值變更變 **數** 。
+1. 使用&#x200B;**folder**&#x200B;值變更變數名稱。
 
    >[!NOTE]
    >
-   >變數的名稱必須與連結至資料夾的元素名稱（在架構中定義）相符，即 **資料夾** 。 引用表時，必須重新使用此名稱。
+   >變數的名稱必須與連結至資料夾的元素名稱（在架構中定義）相符，即&#x200B;**folder**。 引用表時，必須重新使用此名稱。
 
-1. 將類型 **[!UICONTROL XML]** 套用至變數。
+1. 將&#x200B;**[!UICONTROL XML]**&#x200B;類型套用至變數。
 
    ![](assets/s_ncs_configuration_webapp_variable_xml.png)
 
-1. 選取互 **[!UICONTROL Refresh page]** 動。
+1. 選擇&#x200B;**[!UICONTROL Refresh page]**&#x200B;交互。
 
    ![](assets/s_ncs_configuration_webapp_variable.png)
 
-1. 將游標置於清單上，在標 **[!UICONTROL Advanced]** 簽中，參考先前在清單的標籤中 **[!UICONTROL Folder filter XPath]** 建立的變數。 您必須使用資料夾連結所關注之元素的名稱，即資料 **夾**。
+1. 將游標放在清單上，在&#x200B;**[!UICONTROL Advanced]**&#x200B;頁籤中，引用以前在清單的&#x200B;**[!UICONTROL Folder filter XPath]**&#x200B;頁籤中建立的變數。 您必須使用資料夾連結所關注之元素的名稱，即&#x200B;**folder**。
 
    ![](assets/s_ncs_configuration_webapp_variable002.png)
 
@@ -82,48 +82,48 @@ ht-degree: 1%
    >
    >在此階段，Web應用程式不在其應用程式內容中，因此無法在資料夾上測試篩選器。
 
-## 新增按鈕以設定新的Web應用程式 {#adding-a-button-to-configure-a-new-web-application}
+## 添加用於配置新Web應用程式{#adding-a-button-to-configure-a-new-web-application}的按鈕
 
-1. 將游標置於元 **[!UICONTROL Page]** 素上並新增連結(**[!UICONTROL Static elements > Link]**)。
+1. 將游標置於&#x200B;**[!UICONTROL Page]**&#x200B;元素上並添加連結(**[!UICONTROL Static elements > Link]**)。
 1. 修改連結標籤，因為連結標籤會顯示在概述的按鈕上。
 
-   在我們的範例中，標籤是 **New**。
+   在我們的範例中，標籤為&#x200B;**New**。
 
-1. 在URL欄位中插入下列URL: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**.
+1. 在URL欄位中插入下列URL:**xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**。
 
    >[!NOTE]
    >
-   >**nms:webApp** 與Web應用程式模式一致。
+   >**nms:** webApp與Web應用程式模式一致。
    >
-   >**nms:newWebApp** 與新的Web應用程式建立嚮導一致。
+   >**nms:** newWebApp與新的Web應用程式建立嚮導一致。
 
 1. 選擇以在相同視窗中顯示URL。
-1. 在影像欄位中新增Web應用程式圖示： **/nms/img/webApp.png**.
+1. 在影像欄位中新增Web應用程式圖示：**/nms/img/webApp.png**。
 
-   此圖示將出現在按鈕 **[!UICONTROL New]** 上。
+   此表徵圖將顯示在&#x200B;**[!UICONTROL New]**&#x200B;按鈕上。
 
-1. 在 **欄位中** ，輸入 **[!UICONTROL Style]** 按鈕。
+1. 在&#x200B;**[!UICONTROL Style]**&#x200B;欄位中輸入&#x200B;**button**。
 
-   在先前選取的範本中會參 **[!UICONTROL Single-page Web application]** 考此樣式。
+   此樣式在先前選擇的&#x200B;**[!UICONTROL Single-page Web application]**&#x200B;模板中參考。
 
    ![](assets/s_ncs_configuration_webapp_link.png)
 
-## 向清單添加詳細資訊 {#adding-detail-to-a-list}
+## 向清單{#adding-detail-to-a-list}添加詳細資訊
 
 在概述中設定清單時，您可以選擇顯示清單上每個項目的其他詳細資料。
 
 1. 將游標置於先前建立的清單元素上。
-1. 在標 **[!UICONTROL General]** 簽中，選 **[!UICONTROL Columns and additional detail]** 擇下拉式清單中的顯示模式。
+1. 在&#x200B;**[!UICONTROL General]**&#x200B;標籤中，從下拉式清單中選擇&#x200B;**[!UICONTROL Columns and additional detail]**&#x200B;顯示模式。
 
    ![](assets/s_ncs_configuration_webapp_detail.png)
 
-1. 在標 **[!UICONTROL Data]** 簽中，新增 **[!UICONTROL Primary key]** 、 **[!UICONTROL Internal name]** 和欄，並選 **[!UICONTROL Description]****[!UICONTROL Hidden field]** 取每個欄的選項。
+1. 在&#x200B;**[!UICONTROL Data]**&#x200B;標籤中，添加&#x200B;**[!UICONTROL Primary key]** 、 **[!UICONTROL Internal name]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;列，並為每個列選擇&#x200B;**[!UICONTROL Hidden field]**&#x200B;選項。
 
    ![](assets/s_ncs_configuration_webapp_detail002.png)
 
    這樣，這些資訊只會顯示在每個條目的詳細資訊中。
 
-1. 在標籤 **[!UICONTROL Additional detail]** 中，新增下列程式碼：
+1. 在&#x200B;**[!UICONTROL Additional detail]**&#x200B;標籤中，新增下列程式碼：
 
    ```
    <div class="detailBox">
@@ -160,46 +160,46 @@ ht-degree: 1%
 >
 >在伺服器上重新整理JavaScript程式庫需要5分鐘。 您可以重新啟動伺服器以避免等待此延遲。
 
-## 篩選和更新清單 {#filtering-and-updating-the-list}
+## 篩選和更新清單{#filtering-and-updating-the-list}
 
 在本節中，您將建立篩選器，以顯示由特定運算子建立之Web應用程式的概述。 此篩選器是使用連結編輯器建立的。 選取運算子後，請重新整理清單以套用篩選；這需要建立重新整理連結。
 
 這兩個元素將分組在相同的容器中，以便以圖形方式在概述中分組。
 
-1. 將游標置於元素 **[!UICONTROL Page]** 上並選取 **[!UICONTROL Container > Standard]**。
-1. 將欄數設為 **2**，讓連結編輯器和連結彼此相鄰。
+1. 將游標置於&#x200B;**[!UICONTROL Page]**&#x200B;元素上，然後選擇&#x200B;**[!UICONTROL Container > Standard]**。
+1. 將欄數設為&#x200B;**2**，讓連結編輯器和連結彼此相鄰。
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   如需元素配置的詳細資訊，請參閱 [本節](../../web/using/about-web-forms.md)。
+   有關元素佈局的資訊，請參閱[本節](../../web/using/about-web-forms.md)。
 
-1. 套用 **dottedFilter**。
+1. 套用&#x200B;**dottedFilter**。
 
-   此樣式在先前選取的 **[!UICONTROL Single-page Web applicatio]** n個範本中參考。
+   此樣式在先前選擇的&#x200B;**[!UICONTROL Single-page Web applicatio]** n模板中參考。
 
    ![](assets/s_ncs_configuration_webapp_container002.png)
 
-### 使用連結編輯器建立篩選 {#creating-a-filter-using-a-link-editor}
+### 使用連結編輯器{#creating-a-filter-using-a-link-editor}建立過濾器
 
-1. 將游標置於在上一階段建立的容器上，並透過選單插入連結編輯 **[!UICONTROL Advanced controls]** 器。
-1. 在自動開啟的儲存視窗中，選取選 **[!UICONTROL Variables]** 項，然後按一下連結並 **[!UICONTROL Edit variables]** 建立XML變數以篩選資料。
+1. 將游標置於在上一階段建立的容器上，並透過&#x200B;**[!UICONTROL Advanced controls]**&#x200B;功能表插入連結編輯器。
+1. 在自動開啟的儲存窗口中，選擇&#x200B;**[!UICONTROL Variables]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Edit variables]**&#x200B;連結並建立用於過濾資料的XML變數。
 
    ![](assets/s_ncs_configuration_webapp_variable003.png)
 
 1. 修改標籤。
 
-   它將出現在概述 **[!UICONTROL Filter]** 中欄位旁。
+   它將出現在概述的&#x200B;**[!UICONTROL Filter]**&#x200B;欄位旁。
 
 1. 選擇Operator表作為應用程式方案。
 
    ![](assets/s_ncs_configuration_webapp_linkeditor.png)
 
-1. 將游標置於清單元素上，並透過標籤建立篩選 **[!UICONTROL Data > Filter]** 器：
+1. 將游標置於清單元素上，並透過&#x200B;**[!UICONTROL Data > Filter]**&#x200B;標籤建立篩選：
 
-   * **運算式：** 「建立者」連結的外鍵
+   * **表達式：** &#39;Created by&#39;連結的外鍵
    * **運算元：** 等於
-   * **值：** 變數（變數）
-   * **在下列情況下，請考慮：** &#39;$(var2/@id)&#39;!=&quot;
+   * **值：變** 數（變數）
+   * **考量if:** &#39;$(var2/@id)&#39;!=&quot;
 
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
@@ -207,21 +207,21 @@ ht-degree: 1%
 >
 >Web應用程式使用者必須是已識別的營運商，具有適當的Adobe Campaign權限才能存取資訊。 此類型的組態無法用於匿名Web應用程式。
 
-### 建立刷新連結 {#creating-a-refresh-link}
+### 建立刷新連結{#creating-a-refresh-link}
 
-1. 將游標置於容器上，並透過選 **[!UICONTROL Link]** 單插入 **[!UICONTROL Static elements]** 一個。
+1. 將游標置於容器上，並透過&#x200B;**[!UICONTROL Static elements]**&#x200B;功能表插入&#x200B;**[!UICONTROL Link]**。
 1. 修改標籤。
 1. 選取 **[!UICONTROL Refresh data in a list]**。
 1. 新增先前建立的清單。
 
    ![](assets/s_ncs_configuration_webapp_refreshlink.png)
 
-1. 在欄位中新增重新整理 **[!UICONTROL Image]** 圖示： **/xtk/img/refresh.png**.
+1. 在&#x200B;**[!UICONTROL Image]**&#x200B;欄位中新增重新整理圖示：**/xtk/img/refresh.png**。
 1. 使用排序順序箭頭，重新組織Web應用程式的各種元素，如下所示。
 
    ![](assets/s_ncs_configuration_webapp_orderelements.png)
 
-現在已設定Web應用程式。 您可以按一下標 **[!UICONTROL Preview]** 簽來預覽它。
+現在已設定Web應用程式。 您可以按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤來預覽。
 
 ![](assets/s_ncs_configuration_webapp_result.png)
 
