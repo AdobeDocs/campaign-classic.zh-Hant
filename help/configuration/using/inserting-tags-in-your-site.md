@@ -17,9 +17,9 @@ ht-degree: 5%
 
 # 在您的網站中插入標籤{#inserting-tags-in-your-site}
 
-## 簡單方法 {#simple-method}
+## 簡單方法{#simple-method}
 
-此方法包括透過在您要追蹤之網頁的HTML原始碼中插入 **`<img>`** HTML標籤，將HTTP呼叫傳送至重新導向伺服器。
+此方法包括在您要追蹤之網頁的HTML原始碼中插入&#x200B;**`<img>`** HTML標籤，以傳送HTTP呼叫至重新導向伺服器。
 
 >[!IMPORTANT]
 >
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 但是，在使用TRANSACTION-type標籤時，必須使用JavaScript修改示例標籤，以插入事務資訊（金額、項目數）和擴展架構定義的任何資訊。
 
-### 標籤的靜態插入 {#static-insertion-of-tags}
+### 標籤{#static-insertion-of-tags}的靜態插入
 
 若要執行靜態標籤插入，只需將主控台產生或手動建構的標籤複製並貼入網頁來源即可。
 
@@ -87,7 +87,7 @@ ht-degree: 5%
 </html>
 ```
 
-### 動態產生網頁追蹤標籤 {#dynamic-generation-of-web-tracking-tags}
+### 動態產生Web追蹤標籤{#dynamic-generation-of-web-tracking-tags}
 
 動態產生網頁時，您可以在頁面產生時新增網頁追蹤標籤。
 
@@ -124,11 +124,11 @@ ht-degree: 5%
 </html>
 ```
 
-## 最佳化方法 {#optimum-method-}
+## 最佳方法{#optimum-method-}
 
 如果您想要控制傳送至重新導向伺服器的資訊，最可靠的方式是使用頁面產生語言自行同步執行HTTP查詢。
 
-您建構的URL必須遵循Web追蹤標籤中定義的 [語法規則：定義](../../configuration/using/web-tracking-tag--definition.md)。
+您建構的URL必須遵循[Web追蹤標籤中定義的語法規則：definition](../../configuration/using/web-tracking-tag--definition.md)。
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
