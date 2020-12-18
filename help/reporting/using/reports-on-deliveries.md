@@ -21,13 +21,13 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 
 可使用下列類型的報表：
 
-* 有關整個平台的報告，請參閱全 [域報告](../../reporting/using/global-reports.md)。
-* 傳送報表，請參閱 [傳送報表](../../reporting/using/delivery-reports.md)。
-* 累積報表，請參 [閱累計報表](../../reporting/using/cumulative-reports.md)。
+* 有關整個平台的報告，請參閱[全域報告](../../reporting/using/global-reports.md)。
+* 傳送報表，請參閱[傳送報表](../../reporting/using/delivery-reports.md)。
+* 累積報表，請參閱[累積報表](../../reporting/using/cumulative-reports.md)。
 
-您可以從用戶端主控台首頁、報表控制面板或傳送清單存取報表。 報表的顯示模式視其內容而定。 首頁上提供主要報表的清單，可讓您快速存取傳送資料。 您可依需求變更此清單。 Refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md) for more information.
+您可以從用戶端主控台首頁、報表控制面板或傳送清單存取報表。 報表的顯示模式視其內容而定。 首頁上提供主要報表的清單，可讓您快速存取傳送資料。 您可依需求變更此清單。 如需詳細資訊，請參閱[本節](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-## 使用報表 {#using-reports}
+## 使用報告{#using-reports}
 
 搜尋欄位可透過報表控制面板使用，以快速存取清單上的其中一個報表。
 
@@ -49,4 +49,4 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 >
 >有些報表具有圖表（曲線、橫條、漏斗等）。 將游標移到圖表上以顯示其值。
 
-For more information on these options, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+有關這些選項的詳細資訊，請參閱[本節](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
