@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 訪問外部資料庫
+title: 存取外部資料庫
 description: 瞭解如何存取和處理外部資料庫中的資料
 audience: platform
 content-type: reference
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# 開始使用同盟資料存取 {#about-federated-data-access}
+# 開始使用同盟資料存取{#about-federated-data-access}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data.
+Adobe Campaign提供&#x200B;**同盟資料存取**(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您可以存取外部資料，而不需變更Adobe Campaign資料的結構。
 
 ## 必要條件 {#operating-principle}
 
@@ -25,9 +25,9 @@ FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它將自動�
 
 若要使用此功能，下列為必要條件：
 
-* **配置**:除雪花之外，您需要 **內部部署****** 或混合托管模型來設定Federated Data Access。 [進一步瞭解](../../installation/using/hosting-models.md)
-* **外部資料庫版本**:您需要有與Adobe Campaign FDA模組相容的外部資料庫。 資料庫系統和相容版本的清單會在「促銷活動相容性」 [矩陣中詳細說明](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)。
-* **權限**:使用者也必須擁 [有Adobe Campaign](../../installation/using/remote-database-access-rights.md) 和外部資料庫的必要權限。
+* **配置**:除雪花之外，您需要以 **前提** 或混 **** 合代管模型來設定Federated Data Access。[進一步瞭解](../../installation/using/hosting-models.md)
+* **外部資料庫版本**:您需要有與Adobe Campaign FDA模組相容的外部資料庫。資料庫系統和相容版本的清單詳見Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)。
+* **權限**:使用者也必須擁有 [Adobe ](../../installation/using/remote-database-access-rights.md) Campaign和外部資料庫的必要權限。
 
 ## 限制 {#limitations}
 
@@ -45,7 +45,7 @@ FDA選項受您使用的外部資料庫系統的限制。
 
 ## 建議 {#recommendations}
 
-### 建立臨時結構 {#create-temporary-schemas}
+### 建立臨時方案{#create-temporary-schemas}
 
 您可以透過FDA管理對Greenplum外部資料庫的數次存取。 專用選項可讓您在設定外部帳戶時直接建立工作架構。
 
@@ -55,22 +55,22 @@ FDA選項受您使用的外部資料庫系統的限制。
 >
 >此選項僅適用於PostgreSQL Greenplum。
 
-### 使用外部資料最佳化電子郵件個人化 {#optimizing-email-personalization-with-external-data}
+### 使用外部資料{#optimizing-email-personalization-with-external-data}最佳化電子郵件個人化
 
-您可以在專屬的工作流程中預先處理訊息個人化。 若要執行此動作，請 **[!UICONTROL Prepare the personalization data with a workflow]** 使用傳送屬性標籤 **[!UICONTROL Analysis]** 中的選項。
+您可以在專屬的工作流程中預先處理訊息個人化。 若要執行此動作，請使用傳送屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤中提供的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。
 
 在傳送分析期間，此選項會自動建立並執行將所有連結至目標的資料儲存在暫存表格中的工作流程，包括來自外部資料庫中連結之表格的資料。
 
 此選項可大幅改善執行個人化步驟時的效能。
 
-### Use data from an external database in a workflow {#using-data-from-an-external-database-in-a-workflow}
+### 在工作流{#using-data-from-an-external-database-in-a-workflow}中使用外部資料庫的資料
 
 在多個Adobe Campaign工作流程活動中，您可以使用儲存在外部資料庫中的資料。
 
-* **篩選外部資料** -查 [](../../workflow/using/targeting-data.md#selecting-data) 詢活動可讓您新增外部資料，並在定義的篩選設定中使用。 有關詳細資訊，請參見[此頁面](../../workflow/using/targeting-data.md#selecting-data)。
+* **篩選外部資料** - 「查詢」 [](../../workflow/using/targeting-data.md#selecting-data) 活動可讓您新增外部資料，並在定義的篩選設定中使用。有關詳細資訊，請參見[此頁面](../../workflow/using/targeting-data.md#selecting-data)。
 
-* **建立子集** -「拆 [分](../../workflow/using/split.md) 」活動允許您建立子集。 您可以使用外部資料來定義要使用的篩選條件。 有關詳細資訊，請參見[此頁面](../../workflow/using/split.md)。
+* **建立子集** - 「拆 [](../../workflow/using/split.md) 分」活動允許您建立子集。您可以使用外部資料來定義要使用的篩選條件。 有關詳細資訊，請參見[此頁面](../../workflow/using/split.md)。
 
-* **載入外部資料庫** -可以在「資料載入 [(RDBMS)」活動中](../../workflow/using/data-loading--rdbms-.md) 使用外部資料。 在本頁中進 [一步瞭解](../../workflow/using/data-loading--rdbms-.md)。
+* **載入外部資料庫** -可以在「資料載入 [(RDBMS)」活動中](../../workflow/using/data-loading--rdbms-.md) 使用外部資料。進一步瞭解[本頁](../../workflow/using/data-loading--rdbms-.md)。
 
-* **添加資訊和連結** - [Enrichment](../../workflow/using/enrichment.md) （擴展）活動允許您向工作流的工作台添加其他資料，以及向外部表的連結。 在此上下文中，它可以使用外部資料庫的資料。 在本頁中進 [一步瞭解](../../workflow/using/enrichment.md)。
+* **添加資訊和連結** -  [](../../workflow/using/enrichment.md) Enrichmentactivity允許您向工作流的工作台添加其他資料，以及向外部表的連結。在此上下文中，它可以使用外部資料庫的資料。 進一步瞭解[本頁](../../workflow/using/enrichment.md)。
