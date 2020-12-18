@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 訪問外部資料庫
-description: 訪問外部資料庫
+title: 存取外部資料庫
+description: 存取外部資料庫
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Campaign可讓您定義外部表格中資料的對應。
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以選擇是將排除(排除&#x200B;**日誌**)、消息(**broadlog**)或單獨的表中儲存。
+   您可以選擇是將排除(**excludelog**)、訊息(**broadlog**)或儲存在個別的表格中。
 
    您也可以選擇是否管理此傳送對應的追蹤(**trackinglog**)。
 
@@ -43,4 +43,4 @@ Adobe Campaign可讓您定義外部表格中資料的對應。
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   按一下按 **[!UICONTROL Save]** 鈕以啟動傳送對應建立：所有連結的表都會基於所選參數自動建立。
+   按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕以啟動傳送對應建立：所有連結的表都會基於所選參數自動建立。
