@@ -21,12 +21,12 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->本節將介紹有關建立交付的全 [局概念](../../delivery/using/steps-about-delivery-creation-steps.md)。
+>在[本節](../../delivery/using/steps-about-delivery-creation-steps.md)中介紹了建立交付的全局概念。
 
 1. 建立新的傳送，例如從「傳送」控制面板建立。
-1. 選擇傳送範本 **電子郵件傳送（郵件）** ，或您建立的任何電子郵件傳送範本。 For more on delivery templates, refer to [this section](../../delivery/using/about-templates.md).
+1. 選擇傳送範本&#x200B;**電子郵件傳送(mail)**&#x200B;或您建立的任何電子郵件傳送範本。 有關傳送範本的詳細資訊，請參閱[本節](../../delivery/using/about-templates.md)。
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
 1. 使用標籤、程式碼和說明來識別您的傳送。 如需詳細資訊，請參閱[本章節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
-1. 按一下 **繼續** ，確認此資訊並顯示消息配置窗口。
+1. 按一下&#x200B;**繼續**&#x200B;確認此資訊並顯示消息配置窗口。
