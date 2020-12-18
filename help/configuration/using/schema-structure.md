@@ -147,7 +147,7 @@ ht-degree: 1%
 * **datetimenotz**:日期+時間，不含時區資料。
 * **時間平移**:持續時間。範例：資歷。
 * **備忘**:長文字欄位（多行）。範例：說明、注釋等。
-* **uuid**:「uniqueidentifier」欄位，以支援GUID（僅適用於Microsoft SQL Server）。
+* **uuid**:「uniqueidentifier」欄位，以支援GUID（僅限Microsoft SQL Server支援）。
 
    >[!NOTE]
    >
