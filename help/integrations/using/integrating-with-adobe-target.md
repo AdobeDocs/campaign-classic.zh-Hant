@@ -15,13 +15,13 @@ ht-degree: 4%
 ---
 
 
-# Integrating with Adobe Target{#integrating-with-adobe-target}
+# 與Adobe Target整合{#integrating-with-adobe-target}
 
 Adobe Experience Cloud中Adobe Campaign與Adobe Target（Classic和Standard）的整合可讓您將Adobe Target的選件加入Adobe Campaign電子郵件傳送中。
 
 其工作原理是：當收件者開啟透過Adobe Campaign傳送的電子郵件時，對Adobe Target的呼叫可讓您顯示內容的動態版本。 根據建立電子郵件時預先指定的規則，計算此動態版本。
 
-透過這四個秘訣與訣竅，進一步瞭解Adobe Campaign [和Adobe Target整合](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)。
+進一步瞭解與[這四個秘訣與訣竅](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)整合的Adobe Campaign和Adobe Target。
 >[!NOTE]
 >
 >整合僅支援靜態影像。 其他內容無法個人化。
@@ -34,4 +34,4 @@ Adobe Target可運用數種資料：
 
 >[!NOTE]
 >
->您也可以在 [Adobe Target說明頁面上，找到有關Adobe Campaign與Adobe Target整合的資訊](https://docs.adobe.com/content/help/zh-Hant/target/using/integrate/campaign-and-target.html)。
+>您也可以在[Adobe Target說明頁面](https://docs.adobe.com/content/help/zh-Hant/target/using/integrate/campaign-and-target.html)中，找到有關Adobe Campaign與Adobe Target整合的資訊。
