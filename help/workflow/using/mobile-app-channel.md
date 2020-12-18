@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # 行動應用程式頻道{#mobile-app-channel}
 
-依預設，下列詳細的工作流程會隨 **「行動應用程式頻道** 」模組安裝。 For more on this module, refer to this [section](../../delivery/using/about-mobile-app-channel.md).
+依預設，下面詳述的工作流程會與&#x200B;**行動應用程式頻道**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../delivery/using/about-mobile-app-channel.md)。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 18%
   <tr> 
    <td> <span class="uicontrol">NMAC退出管理</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> 此工作流程會更新行動裝置上取消訂閱的通知。 每6小時從凌晨1點到午夜觸發一次。 For more details, refer to this <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">section</a>.<br /> </td> 
+   <td> 此工作流程會更新行動裝置上取消訂閱的通知。 每6小時從凌晨1點到午夜觸發一次。 如需詳細資訊，請參閱此<a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">節</a>。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
