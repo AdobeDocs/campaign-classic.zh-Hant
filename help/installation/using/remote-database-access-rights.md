@@ -19,19 +19,19 @@ ht-degree: 1%
 
 首先，為了讓使用者可以透過FDA對外部資料庫執行作業，後者必須在Adobe Campaign中擁有特定的命名權限。
 
-1. 在Adobe Campaign **[!UICONTROL Administration > Access Management > Named Rights]** 檔案總管中選取節點。
+1. 在Adobe Campaign檔案總管中選取&#x200B;**[!UICONTROL Administration > Access Management > Named Rights]**&#x200B;節點。
 1. 指定您選擇的標籤以建立新的權限。
-1. 欄位 **[!UICONTROL Name]** 必須採用下列格式 **的使用者：base@server**，其中：
+1. **[!UICONTROL Name]**&#x200B;欄位必須採用下列格式&#x200B;**user:base@server**，其中：
 
-   * **user** 與外部資料庫中的用戶名相對應。
-   * **base** 與外部資料庫的名稱相對應。
-   * **伺服器** 與外部資料庫伺服器的名稱相對應。
+   * **user** 與外部資料庫中用戶的名稱相對應。
+   * **基** 礎庫使用外部資料庫的名稱進行響應。
+   * **服** 務器與外部資料庫伺服器的名稱相對應。
 
       >[!NOTE]
       >
-      >Oracle **中** :base部件是可選的。
+      >**:base**&#x200B;部件在Oracle中是可選的。
 
-1. 儲存指名的右側，然後從Adobe Campaign檔案總管的節 **[!UICONTROL Administration > Access Management > Operators]** 點將其連結至您選擇的使用者。
+1. 儲存指名的右側，然後從Adobe Campaign檔案總管的&#x200B;**[!UICONTROL Administration > Access Management > Operators]**&#x200B;節點將其連結至您選擇的使用者。
 
 然後，若要處理外部資料庫中包含的資料，Adobe Campaign使用者必須在資料庫上至少擁有「寫入」權限，才能建立工作表。 Adobe Campaign會自動刪除這些項目。
 
@@ -41,21 +41,21 @@ ht-degree: 1%
 * **讀取資料**:只讀存取包含客戶資料的表格，
 * **閱讀「中繼資料」**:存取伺服器資料目錄以取得表格結構，
 * **載入**:在工作表中成批載入（處理系列和聯接時需要）,
-* **CREATE/DROP** for **TABLE/INDEX/PROCEDURE/FUNCTION** （僅適用於Adobe Campaign產生的工作表）,
+* **CREATE/** DROP **for TABLE/INDEX/PROCEDURE/FUNCTION** （僅適用於Adobe Campaign產生的工作表）,
 * **EXPLAIN** （建議）:在遇到問題時監控效能，
 * **WRITE Data** （視整合藍本而定）。
 
 資料庫管理員需要使這些權限與每個資料庫引擎的特定權限相匹配。 如需詳細資訊，請參閱以下章節。
 
-## FDA權利 {#fda-rights}
+## FDA權利{#fda-rights}
 
-|   | 雪花 | 紅移 | Oracle | SQLServer | PostgreSQL | MySQL |
+|   | Snowflake | 紅移 | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **連接到遠程資料庫** | 倉庫使用、資料庫使用和方案權限使用 | 建立連結到AWS帳戶的用戶 | 建立會話權限 | CONNECT權限 | CONNECT權限 | 建立綁定到具有ALL PRIVILEGES的遠程主機的用戶 |
 | **建立表** | 建立方案權限表 | CREATE權限 | 建立表權限 | 建立表權限 | CREATE權限 | CREATE權限 |
 | **建立索引** | N/A | CREATE權限 | 索引或建立任何索引權限 | ALTER權限 | CREATE權限 | INDEX權限 |
 | **建立函式** | CREATE FUNCTION ON SCHEMA權限 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | CREATE FUNCTION權限 | 使用權限 | 建立常式權限 |
-| **建立過程** | N/A | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | USAGE權限（過程是函式） | 建立常式權限 |
+| **建立過程** | 不適用 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | USAGE權限（過程是函式） | 建立常式權限 |
 | **刪除對象（表、索引、函式、過程）** | 擁有對象 | 擁有對象或是超級用戶 | 刪除任何&lt;對象>權限 | ALTER權限 | 表格：擁有表索引：擁有索引函式：擁有函式 | DROP權限 |
 | **監控執行** | 對所需對象的MONITOR權限 | 使用EXPLAIN命令無需權限 | INSERT和SELECT權限以及執行EXPLAIN PLAN所基於的語句的必要權限 | SHOWPLAN權限 | 使用EXPLAIN語句無需權限 | SELECT權限 |
 | **寫入資料** | INSERT和／或UPDATE權限（取決於寫操作） | 插入和更新權限 | 插入、更新或插入和更新任何表權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 |
@@ -63,7 +63,7 @@ ht-degree: 1%
 | **訪問客戶端資料** | 選擇（未來）表或視圖權限 | SELECT權限 | 選擇或選擇任何表權限 | SELECT權限 | SELECT權限 | SELECT權限 |
 | **存取中繼資料** | 選擇資訊方案權限 | SELECT權限 | 使用DESCRIBE語句無需權限 | 檢視定義權限 | 使用&quot;\d table&quot;命令不需要權限 | SELECT權限 |
 
-|   | DB2 UDB | TeraData | InfiniDB | Sybase IQ / Sybase ASE | 內泰扎 | 青梅 | AsterData |
+|   | DB2 UDB | TeraData | InfiniDB | Sybase IQ / Sybase ASE | Netezza | 青梅 | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **連接到遠程資料庫** | CONNECT授權 | CONNECT權限 | 建立綁定到具有ALL PRIVILEGES的遠程主機的用戶 | 使用CONNECT語句無需權限 | 無需權限 | CONNECT權限 | CONNECT權限 |
 | **建立表** | CREATETAB授權 | 建立表或表關鍵字 | CREATE權限 | RESOURCE權限和CREATE權限 | TABLE權限 | CREATE權限 | CREATE權限 |
