@@ -17,9 +17,9 @@ ht-degree: 7%
 
 # 訊息中心（控制）{#message-center-control}
 
-以下詳細說明的工作流程排程為每小時執行一次。 預設情況下，它與 **消息中心——控制** 模組一起安裝。 For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
+以下詳細說明的工作流程排程為每小時執行一次。 預設情況下，它與&#x200B;**消息中心- Control**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../message-center/using/about-transactional-messaging.md)。
 
-要瞭解有關如何配置與消息中心模組相關的技術工作流的更多資訊，請參 [閱本頁](../../message-center/using/technical-workflows.md)。
+要瞭解有關如何配置與消息中心模組相關的技術工作流的更多資訊，請參閱[本頁](../../message-center/using/technical-workflows.md)。
 
 <table> 
  <tbody> 
