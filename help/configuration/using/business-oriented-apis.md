@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 傳遞:
 
-   * 建立傳送動作，請參 [閱SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
+   * 建立傳送操作，請參閱[SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
    * 傳送促銷活動（開始、暫停、停止、傳送校樣）,
    * 恢復交付日誌。
 
@@ -30,19 +30,19 @@ ht-degree: 3%
    * 啟動工作流程，
    * 驗證流程等。
 
-      請參閱 [JavaScript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md)。
+      請參閱JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
 * 內容管理
-* 訂閱管理，請參 [閱訂閱(nms:subscription)](#subscribe--nms-subscription-)[和取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
+* 訂閱管理，請參閱[訂閱(nms:subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
 * 資料流程：進出口。
 
 本節詳細說明「訂閱」、「取消訂閱」和「提交傳送」服務的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI檔案包含](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) Adobe Campaign中有關SOAP呼叫和使用Javascript的其他資訊，以及應用程式中所有使用方法與函式的完整參考。
+>[促銷活動JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 檔案包含有關SOAP呼叫和在Adobe Campaign中使用Javascript的其他資訊，以及應用程式中所有使用方法和函式的完整參考。
 
-## 訂閱(nms:subscription) {#subscribe--nms-subscription-}
+## 訂閱(nms:subscription){#subscribe--nms-subscription-}
 
 此服務可讓您訂閱資訊服務的收件者，並更新收件者個人檔案。
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 </method>
 ```
 
-協調鍵的定義必須透過XML檔案元素&#x200B;**上的** _ `<recipient>` key屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
+協調鍵的定義必須通過XML文檔的`<recipient>`元素上的_**key**&#x200B;屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
 
 此呼叫不會傳回任何資料，但錯誤除外。
 
@@ -83,7 +83,7 @@ ht-degree: 3%
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
 ```
 
-### SOAP消息示例 {#example-of-soap-messages}
+### SOAP消息{#example-of-soap-messages}示例
 
 * 查詢:
 
@@ -115,7 +115,7 @@ ht-degree: 3%
    </SOAP-ENV:Envelope>
    ```
 
-## 取消訂閱(nms:subscription) {#unsubscribe--nms-subscription-}
+## 取消訂閱(nms:subscription){#unsubscribe--nms-subscription-}
 
 此服務可讓您取消訂閱資訊服務的收件者，並更新收件者個人檔案。
 
@@ -136,7 +136,7 @@ ht-degree: 3%
 </method>
 ```
 
-協調鍵的定義必須透過XML檔案元素上的_key `<recipient>` 屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
+協調鍵的定義必須通過XML文檔的`<recipient>`元素上的_key屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
 
 如果收件者不在資料庫中或未訂閱相關資訊服務，則服務不執行任何操作並且不生成錯誤。
 
@@ -146,7 +146,7 @@ ht-degree: 3%
 
 此呼叫不會傳回任何資料，但錯誤除外。
 
-### SOAP消息示例 {#example-of-soap-messages-1}
+### SOAP消息{#example-of-soap-messages-1}示例
 
 查詢:
 
@@ -176,7 +176,7 @@ ht-degree: 3%
 </SOAP-ENV:Envelope>
 ```
 
-## SubmitDelivery(nms:delivery) {#submitdelivery--nms-delivery-}
+## SubmitDelivery(nms:delivery){#submitdelivery--nms-delivery-}
 
 此服務可讓您建立和送出傳送動作。
 
@@ -205,9 +205,9 @@ ht-degree: 3%
 
 此呼叫不會傳回任何資料，但錯誤除外。
 
-### XML檔案範例 {#xml-document-example}
+### XML文檔示例{#xml-document-example}
 
-此範例以來自外部資料來源的自訂傳送範本（此例中為檔案）為基礎。 傳送範本中已完整說明此設定，因此在呼叫發生時仍要傳送的所有內容，都是元素中的檔案內 `<externalsource>` 容。
+此範例以來自外部資料來源的自訂傳送範本（此例中為檔案）為基礎。 傳送範本中已完整說明此設定，因此在呼叫發生時，所有仍待傳送的內容都是來自`<externalsource>`元素的檔案內容。
 
 ```
 <delivery>
