@@ -21,7 +21,7 @@ ht-degree: 11%
 
 ## 建立種子地址 {#creating-a-seed-address}
 
-1. 在事務性消息模板中，按一下該選 **[!UICONTROL Seed addresses]** 項卡。
+1. 在事務性消息模板中，按一下&#x200B;**[!UICONTROL Seed addresses]**&#x200B;頁籤。
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -37,12 +37,12 @@ ht-degree: 11%
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. 插入測試資料(請參 [閱個人化資料](../../message-center/using/personalization-data.md))。
+1. 插入測試資料（請參閱[個人化資料](../../message-center/using/personalization-data.md)）。
 
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. 按一下 **[!UICONTROL Add other seed addresses]** 連結，然後按一下 **[!UICONTROL Add]** 按鈕。
+1. 按一下&#x200B;**[!UICONTROL Add other seed addresses]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -51,4 +51,4 @@ ht-degree: 11%
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-建立地址後，您就可以顯示其預覽和個人化。 請參閱「事 [務性訊息預覽](../../message-center/using/transactional-message-preview.md)」。
+建立地址後，您就可以顯示其預覽和個人化。 請參閱[事務性消息預覽](../../message-center/using/transactional-message-preview.md)。
