@@ -17,7 +17,7 @@ ht-degree: 16%
 
 # 開始使用報告功能 {#about-adobe-campaign-reporting-tools}
 
-In addition to [built-in reports](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign lets you generate reports in various contexts and to meet different needs. 本檔案詳細說明了使用原則和實施模式。
+除了[內建報表](../../reporting/using/about-campaign-built-in-reports.md)外，Adobe Campaign還可讓您在各種內容中產生報表，以符合不同的需求。 本檔案詳細說明了使用原則和實施模式。
 
 Adobe Campaign不是專門的報告工具：在Adobe Campaign中建立的報表主要可讓您檢視匯總資料。 Adobe Campaign報表專門用於分析和表示資料，但不適用於資料庫匯出。
 
@@ -25,15 +25,15 @@ Adobe Campaign不是專門的報告工具：在Adobe Campaign中建立的報表�
 
 Adobe Campaign提供數種報表工具：
 
-1. **內建報表**:Adobe Campaign提供一組有關傳送、促銷活動、平台活動、選用功能等的報表。 這些報告可透過其相關的各種功能取得。 它們可以適應您的特定需求。
+1. **內建報表**:Adobe Campaign提供一組有關傳送、促銷活動、平台活動、選用功能等的報表。這些報告可透過其相關的各種功能取得。 它們可以適應您的特定需求。
 
    如需詳細資訊，請參閱[本章節](../../reporting/using/about-campaign-built-in-reports.md)。
 
-1. **描述性資料分析**:Adobe Campaign提供視覺化工具，可產生資料庫中資料的統計資料。 您可以使用專屬的精靈建立描述性分析報表，並視需要調整其內容和版面。
+1. **描述性資料分析**:Adobe Campaign提供視覺化工具，可產生資料庫中資料的統計資料。您可以使用專屬的精靈建立描述性分析報表，並視需要調整其內容和版面。
 
    如需詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)。
 
-1. **個人化報表**:Adobe Campaign可讓您建立資料庫中資料的報表。 一旦建立了這些內容，就可以在相應的上下文中訪問這些內容。
+1. **個人化報表**:Adobe Campaign可讓您建立資料庫中資料的報表。一旦建立了這些內容，就可以在相應的上下文中訪問這些內容。
 
    根據查詢、計算和卷的複雜性，這些報告中分析的資料可透過查詢收集，並預先匯總到清單（「資料管理」類型工作流程）或立方（使用Marketing Analytics）中。 它將以透視表或組清單的形式顯示。
 
