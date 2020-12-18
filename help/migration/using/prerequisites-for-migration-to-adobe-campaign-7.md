@@ -17,7 +17,7 @@ ht-degree: 22%
 
 # 移轉至 Adobe Campaign 7 的必要條件{#prerequisites-for-migration-to-adobe-campaign}
 
-在執行任何移轉之前，請先參 [閱「開始移轉](../../migration/using/before-starting-migration.md) 」 [和「設定平台」章節](../../migration/using/configuring-your-platform.md) 。
+在運行任何遷移之前，請參考[開始遷移前](../../migration/using/before-starting-migration.md)和[配置平台](../../migration/using/configuring-your-platform.md)部分。
 
 從v6.02移轉至Adobe Campaign v7時，無法傳送某些預先傳送的檔案。
 
