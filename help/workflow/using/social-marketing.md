@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 社交行銷{#social-marketing}
 
-依預設，下列詳細的工作流程會隨 **Social Marketing** 模組一起安裝。 For more on this module, refer to this [section](../../social/using/starting-workflows.md).
+依預設，下列詳細的工作流程會與&#x200B;**Social Marketing**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../social/using/starting-workflows.md)。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 5%
   <tr> 
    <td> <span class="uicontrol">計算Facebook統計資料</span> <br /> </td> 
    <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
-   <td> 此工作流程會計算與Facebook粉絲互動相關的統計資料。<br /> </td> 
+   <td> 此工作流程會計算與Facebook粉絲互動的統計資料。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">同步Facebook粉絲</span> <br /> </td> 
@@ -49,7 +49,7 @@ ht-degree: 5%
   <tr> 
    <td> <span class="uicontrol">同步Twitter頁面</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> 此工作流程會每天早上7點將Twitter追隨者匯入Adobe Campaign。<br /> </td> 
+   <td> 此工作流程每天早上7點將Twitter追隨者匯入Adobe Campaign。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
