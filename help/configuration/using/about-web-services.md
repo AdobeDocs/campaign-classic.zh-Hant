@@ -169,7 +169,7 @@ catch (SoapException e)
 }
 ```
 
-## Web服務伺服器（或EndPoint）的URL {#url-of-web-service-server--or-endpoint-}
+## Web服務伺服器（或EndPoint）{#url-of-web-service-server--or-endpoint-}的URL
 
 若要提交Web服務，必須聯絡實作對應服務方法的Adobe Campaign伺服器。
 
