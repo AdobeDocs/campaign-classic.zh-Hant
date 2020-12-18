@@ -15,21 +15,21 @@ ht-degree: 0%
 ---
 
 
-# 配置對SAP HANA的訪問 {#configure-access-to-sap-hana}
+# 配置對SAP HANA {#configure-access-to-sap-hana}的訪問
 
-使用Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定對SAP HANA的存取。
+使用Campaign [Federated Data Access](../../installation/using/about-fda.md)(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定對SAP HANA的存取。
 
-1. 配置 [SAP HANA資料庫](#sap-config)
-1. 在Campaign中設定SAP HANA [外部帳戶](#sap-external) 。
+1. 配置[SAP HANA資料庫](#sap-config)
+1. 在Campaign中設定SAP HANA [外部帳戶](#sap-external)
 
-## SAP HANA驅動程式 {#sap-config}
+## SAP HANA驅動程式{#sap-config}
 
 在FDA中連線至SAP HANA外部資料庫需要Adobe Campaign伺服器上的某些額外設定：
 
 1. 根據您使用的作業系統，安裝SAP HANA的ODBC驅動程式：
 
-   * **hdb_client_linux.tgz** for Linux。 解壓縮後，啟動hdbinst命令並按照說明完成驅動程式安裝。
-   * **hdb_client_windows.zip** for Windows。 解壓縮檔案並啟動可執行檔： **hdbinst.exe**。 按照嚮導說明完成驅動程式的安裝。
+   * **hdb_client_linux.** tgzfor Linux。解壓縮後，啟動hdbinst命令並按照說明完成驅動程式安裝。
+   * **hdb_client_windows.** zippfor Windows。解壓縮檔案並啟動可執行檔：**hdbinst.exe**。 按照嚮導說明完成驅動程式的安裝。
 
 1. 配置ODBC驅動程式。 配置可在標準檔案中執行：/etc/odbc.ini代表一般參數，/etc/odbcinst.ini代表聲明驅動程式。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
       User:SYSTEM
       ```
 
-      &quot;InstallDir&quot;與 **odbcinst.ini檔案的位置對應** 。
+      &quot;InstallDir&quot;與&#x200B;**odbcinst.ini**&#x200B;檔案的位置相對應。
 
    * **/etc/odbcinst.ini**
 
@@ -64,11 +64,11 @@ ht-degree: 0%
 
 SAP HANA外部帳戶可讓您將Campaign例項連接至SAP HANA外部資料庫。
 
-1. 在促銷 **[!UICONTROL Explorer]**&#x200B;活動中，按 **[!UICONTROL Administration]** 一下「>」 **[!UICONTROL Platform]** 「>」 **[!UICONTROL External accounts]**。
+1. 在促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;> &#39;> &#39; **[!UICONTROL External accounts]**。
 
-1. 按一 **[!UICONTROL New]** 下並選 **[!UICONTROL External database]** 擇為 **[!UICONTROL Type]**。
+1. 按一下&#x200B;**[!UICONTROL New]** ，然後選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為&#x200B;**[!UICONTROL Type]**。
 
-1. 若要設定外 **[!UICONTROL SAP Hana]** 部帳戶，您必須指定：
+1. 要配置&#x200B;**[!UICONTROL SAP Hana]**&#x200B;外部帳戶，您必須指定：
 
    * **[!UICONTROL Type]**:SAP Hana
 
