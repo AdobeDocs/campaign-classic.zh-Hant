@@ -23,11 +23,11 @@ ht-degree: 2%
 
 可以定義重複資料消除標準。
 
-## 配置模式 {#configuration-mode}
+## 配置模式{#configuration-mode}
 
 要配置更改維活動，請應用以下步驟：
 
-1. 透過欄位選取新的定位 **[!UICONTROL Change dimension]** 維度。
+1. 透過&#x200B;**[!UICONTROL Change dimension]**&#x200B;欄位選擇新的定位維度。
 
    ![](assets/s_user_change_dimension_param1.png)
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
    當您選擇只保留一個記錄時，系列會顯示在工作結構中：此集合代表所有不會在最終結果中定位的記錄（因為只保留一個記錄）。 和其他所有系列一樣，此系列可讓您計算欄中的匯總或復原資訊。
 
-   例如，如果您將維 **[!UICONTROL Customers]** 度變更為維 **[!UICONTROL Recipients]** 度，則可定位特定商店的客戶，同時新增購買次數。
+   例如，如果您將&#x200B;**[!UICONTROL Customers]**&#x200B;維度變更為&#x200B;**[!UICONTROL Recipients]**&#x200B;維度，則可定位特定商店的客戶，同時新增購買次數。
 
 1. 如果您選擇不保留所有這些資訊，則可以配置複製管理模式。
 
@@ -47,23 +47,23 @@ ht-degree: 2%
 
    在上述範例中，收件者會先在其電子郵件地址上進行去重複化，然後視需要在其帳號上進行去重複化。
 
-1. 此標 **[!UICONTROL Result]** 簽可讓您新增其他資訊。
+1. **[!UICONTROL Result]**&#x200B;標籤可讓您新增其他資訊。
 
-   例如，您可以使用子字串類型函式，根據郵遞區號來 **復原郡** 。 操作步驟：
+   例如，您可以使用&#x200B;**子字串**&#x200B;類型函式，根據郵遞區號來復原郡。 操作步驟：
 
-   * 按一下連 **[!UICONTROL Add data...]** 結並選取 **[!UICONTROL Data linked to the filtering dimension]**。
+   * 按一下&#x200B;**[!UICONTROL Add data...]**&#x200B;連結並選擇&#x200B;**[!UICONTROL Data linked to the filtering dimension]**。
 
       ![](assets/wf_change-dimension_sample_01.png)
 
       >[!NOTE]
       >
-      >有關建立和管理附加列的資訊，請參閱添 [加資料](../../workflow/using/query.md#adding-data)。
+      >有關建立和管理附加列的資訊，請參閱[添加資料](../../workflow/using/query.md#adding-data)。
 
-   * 選取先前的定位維度（軸切換前），並在收件 **[!UICONTROL Zip Code]** 者的子樹狀結構 **[!UICONTROL Location]** 中選取，然後按一下 **[!UICONTROL Edit expression]**。
+   * 選擇上一個定位維（軸切換前），然後在收件者的&#x200B;**[!UICONTROL Location]**&#x200B;子樹中選擇&#x200B;**[!UICONTROL Zip Code]**，然後按一下&#x200B;**[!UICONTROL Edit expression]**。
 
       ![](assets/wf_change-dimension_sample_02.png)
 
-   * 按一 **[!UICONTROL Advanced selection]** 下並選擇 **[!UICONTROL Edit the formula using an expression]**。
+   * 按一下&#x200B;**[!UICONTROL Advanced selection]**&#x200B;並選擇&#x200B;**[!UICONTROL Edit the formula using an expression]**。
 
       ![](assets/wf_change-dimension_sample_03.png)
 
