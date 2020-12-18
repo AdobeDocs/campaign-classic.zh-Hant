@@ -17,8 +17,8 @@ ht-degree: 9%
 
 # 建立訊息範本{#creating-the-message-template}
 
-1. 前往Adobe Campaign **[!UICONTROL Message Center >Transactional message templates]** 樹狀結構中的資料夾。
-1. 在事務性消息模板清單中，按一下右鍵並 **[!UICONTROL New]** 在下拉菜單中選擇，或按一下事務性消息模 **[!UICONTROL New]** 板清單上方的按鈕。
+1. 前往Adobe Campaign樹狀結構中的&#x200B;**[!UICONTROL Message Center >Transactional message templates]**&#x200B;資料夾。
+1. 在事務性消息模板清單中，按一下右鍵並選擇下拉菜單中的&#x200B;**[!UICONTROL New]** ，或按一下事務性消息模板清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -31,13 +31,13 @@ ht-degree: 9%
 
    ![](assets/messagecenter_create_model_003.png)
 
-   事件類型需事先在主控台中建立。 有關詳細資訊，請參閱創 [建事件類型](../../message-center/using/creating-event-types.md)。
+   事件類型需事先在主控台中建立。 有關詳細資訊，請參閱[建立事件類型](../../message-center/using/creating-event-types.md)。
 
    >[!NOTE]
    >
    >事件類型永遠不應連結至多個範本。
 
-1. 輸入性質和說明，然後按一 **[!UICONTROL Continue]** 下以建立訊息內文(請參 [閱建立訊息內容](../../message-center/using/creating-message-content.md))。
+1. 輸入性質和說明，然後按一下&#x200B;**[!UICONTROL Continue]**&#x200B;建立消息主體（請參閱[建立消息內容](../../message-center/using/creating-message-content.md)）。
 
    ![](assets/messagecenter_create_model_004.png)
 
