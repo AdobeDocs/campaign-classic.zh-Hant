@@ -21,12 +21,12 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->本節將介紹有關建立交付的全 [局概念](../../delivery/using/steps-about-delivery-creation-steps.md)。
+>在[本節](../../delivery/using/steps-about-delivery-creation-steps.md)中介紹了建立交付的全局概念。
 
 1. 建立新的傳送，例如從「傳送」控制面板建立。
-1. 選擇「直接郵 **件傳送（紙張）」傳送範本**。
+1. 選擇「Deliver by direct mail(paper)**（按直效郵件傳送）」發送模板。**
 
    ![](assets/direct_mail.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳送。 For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)
-1. 按一下 **繼續** ，確認此資訊並顯示消息配置窗口。
+1. 使用標籤、程式碼和說明來識別您的傳送。 有關詳細資訊，請參閱[本節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. 按一下&#x200B;**繼續**&#x200B;確認此資訊並顯示消息配置窗口。
