@@ -26,13 +26,13 @@ ht-degree: 2%
 * 自動匯入時請注意
 * 應將配置檔案分類到不同的資料夾
 
-隔離管理介紹在 [本節中](../../delivery/using/understanding-quarantine-management.md)。
+隔離管理在[本節](../../delivery/using/understanding-quarantine-management.md)中介紹。
 
 在下面，您將找到有關複製和隔離管理的詳細資訊。
 
 您可以按IP位址監控已傳送的電子郵件卷。 此程式需要模式擴展。 您需要擴充Broadlogs表格以新增「公用識別碼」，並建立工作流程以擷取和顯示資料。 如果您需要，請聯絡Adobe。
 
-## 複製 {#duplicates}
+## 複製{#duplicates}
 
 擁有重複的電子郵件地址可能會產生多種後果：
 
@@ -50,8 +50,8 @@ ht-degree: 2%
 
 同樣地，有時不同分區之間的複製是正常的。 例如，當傳送給第三方或不同的公司實體時，出於不同原因，同一個人是收件者是合乎邏輯的。 但是，在同一分區中查找重複項很少是正常的。
 
-## 隔離 {#quarantines}
+## 隔離{#quarantines}
 
 Adobe Campaign 管理隔離地址清單。在傳送分析期間，預設會排除隔離地址的收件者：它們不是目標。 例如，當收件箱已滿或地址不存在時，可以隔離電子郵件地址。 在所有情況下，隔離都符合下列具體規則。
 
-隔離管理介紹在 [本節中](../../delivery/using/understanding-quarantine-management.md)。
+隔離管理在[本節](../../delivery/using/understanding-quarantine-management.md)中介紹。
