@@ -22,8 +22,8 @@ ht-degree: 5%
 若要一律在建議中納入類別，請套用下列步驟：
 
 1. 開啟瀏覽器，然後從樹狀結構按一下選件目錄。
-1. 按一下標 **[!UICONTROL Eligibility]** 簽並勾選方 **[!UICONTROL Always include this category in the recommendations]** 塊。
-1. 按一下即可完成及核准 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Eligibility]**&#x200B;頁籤並勾選&#x200B;**[!UICONTROL Always include this category in the recommendations]**&#x200B;框。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;完成並核准。
 
    ![](assets/offer_cat_default_001.png)
 
