@@ -23,23 +23,23 @@ ht-degree: 3%
 
 * Adobe Campaign運算子遺失密碼。
 
-   在這種情況下，您可以更改有關操作員的密碼。 若要這麼做，請透過具有管理員權限的運算子連線，以滑鼠右鍵按一下運算子，選取 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** 並設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。
+   在這種情況下，您可以更改有關操作員的密碼。 若要這麼做，請透過具有管理員權限的運算子連線，以滑鼠右鍵按一下運算子，選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。
 
    ![](assets/operator-passwd.png)
 
-* **內部密碼** （僅限內部部署客戶）遺失。
+* **內** 部密碼遺失（僅限內部部署客戶）。
 
-   如果內 **部密碼** ，您必須重新初始化它。 若要這麼做，請套用下列程式：
+   如果&#x200B;**internal**&#x200B;密碼丟失，則必須重新初始化它。 若要這麼做，請套用下列程式：
 
-   1. 編輯/usr/local/neolane/nl6/conf/serverConf.xml **檔案** 。
-   1. 轉至internalPassword **行** 。
+   1. 編輯&#x200B;**/usr/local/neolane/nl6/conf/serverConf.xml**&#x200B;檔案。
+   1. 轉至&#x200B;**internalPassword**&#x200B;行。
 
       ```
       <!-- XTK authentication mode internalPassword : Password of internal account -->
        <xtk internalPassword="myPassword"/>
       ```
 
-   1. 刪除引號中的字串，在此例中： **myPassword**
+   1. 刪除引號中的字串，在此例中：**myPassword**
 
       因此，您可以獲得以下行：
 
@@ -61,5 +61,5 @@ ht-degree: 3%
       Confirmation 
       ```
 
-   1. 您現在可以使用新密碼在「內部」模 **式下** 連接。
+   1. 您現在可以使用新密碼在&#x200B;**Internal**&#x200B;模式下連接。
 
