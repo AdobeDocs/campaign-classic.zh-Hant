@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # 優惠方案分析報表{#offer-analysis-report}
 
-報 **[!UICONTROL Offer analysis]** 告概述了接受或拒絕的主張數。
+**[!UICONTROL Offer analysis]**&#x200B;報告概述了接受或拒絕的主張數。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 10%
 
    ![](assets/offer_report_perdeliveries.png)
 
-您可以根據報表上方區段中的各種可用准則來篩選資料。 在您選取所要的准則後，按一下 **[!UICONTROL Refresh]** 連結以將其套用至報表。
+您可以根據報表上方區段中的各種可用准則來篩選資料。 在您選取所要的准則後，按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;連結，將它們套用至報表。
 
 ![](assets/offer_report_criteria.png)
 
