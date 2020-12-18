@@ -21,27 +21,27 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe Campaign中調查的生命週期及其發佈和傳送模式與Web表格類似：本節將詳述 [這些內容](../../web/using/about-web-forms.md)。
+>Adobe Campaign中調查的生命週期及其發佈和傳送模式與Web表格類似：這些內容詳見[本節](../../web/using/about-web-forms.md)。
 
-## 調查控制面板 {#survey-dashboard}
+## 調查控制面板{#survey-dashboard}
 
-每個調查都有其專屬的控制面板，可讓您檢視其狀態、說明、公用URL和可用性排程。 它也可讓您檢視可用報表。 如需詳細資訊，請參閱調查 [的報表](#reports-on-surveys)。
+每個調查都有其專屬的控制面板，可讓您檢視其狀態、說明、公用URL和可用性排程。 它也可讓您檢視可用報表。 如需詳細資訊，請參閱調查的[報表](#reports-on-surveys)。
 
 調查的公用URL會顯示在控制面板上：
 
 ![](assets/survey_public_url.png)
 
-## 回應追蹤 {#response-tracking}
+## 回應追蹤{#response-tracking}
 
 您可以在記錄檔和報表中追蹤對調查的回應。
 
-### 調查記錄檔 {#survey-logs}
+### 調查記錄{#survey-logs}
 
-您可以針對每個傳送的調查，在標籤中追蹤回 **[!UICONTROL Logs]** 應。 此標籤會顯示已完成調查的使用者清單及其來源：
+對於每個傳送的調查，您可以在&#x200B;**[!UICONTROL Logs]**&#x200B;標籤中追蹤回應。 此標籤會顯示已完成調查的使用者清單及其來源：
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-連按兩下一行，以顯示回應者填入的調查表單。 您可以完整瀏覽調查，並完整存取答案。 這些檔案可以導出到外部檔案中。 For more on this, refer to [Exporting answers](#exporting-answers).
+連按兩下一行，以顯示回應者填入的調查表單。 您可以完整瀏覽調查，並完整存取答案。 這些檔案可以導出到外部檔案中。 有關詳細資訊，請參閱[導出答案](#exporting-answers)。
 
 調查URL中會新增下列字元來指出來源：
 
@@ -49,19 +49,19 @@ ht-degree: 3%
 ?origin=xxx
 ```
 
-在編輯調查時，其URL會包含參 **[!UICONTROL __uuid]**&#x200B;數，這表示調查正處於測試階段但尚未上線。 當您透過此URL存取調查時，在追蹤（報表）中不會考慮建立的記錄。 原點被強制為值 **[!UICONTROL Adobe Campaign]**。
+在編輯調查時，其URL包含參數&#x200B;**[!UICONTROL __uuid]**，表示調查處於測試階段且尚未上線。 當您透過此URL存取調查時，在追蹤（報表）中不會考慮建立的記錄。 原點被強制為值&#x200B;**[!UICONTROL Adobe Campaign]**。
 
-For more on URL parameters, refer to [this page](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+有關URL參數的詳細資訊，請參閱[此頁](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
 
-### 調查報告 {#reports-on-surveys}
+### 調查報告{#reports-on-surveys}
 
 控制面板標籤可讓您存取調查報表。 按一下報表名稱以檢視。
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
-調查的結構會顯示在報 **[!UICONTROL Documentation]** 表中。
+調查的結構會顯示在&#x200B;**[!UICONTROL Documentation]**&#x200B;報表中。
 
-在調查的標籤中提供兩份Web調查 **[!UICONTROL Reports]** 的其他報表： **[!UICONTROL General]** 和 **[!UICONTROL Breakdown of responses]**。
+在調查的&#x200B;**[!UICONTROL Reports]**&#x200B;標籤中，可使用另外兩份Web調查的報表：**[!UICONTROL General]**&#x200B;和&#x200B;**[!UICONTROL Breakdown of responses]**。
 
 * 一般
 
@@ -73,23 +73,23 @@ For more on URL parameters, refer to [this page](../../web/using/defining-web-fo
 
 * 回應的劃分
 
-   此報表顯示每個問題的回應劃分。 此劃分僅適用於儲存在類型容器中之欄位的 **[!UICONTROL Question]** 答案。 它僅適用於選擇控制項（例如，文字欄位上沒有劃分）。
+   此報表顯示每個問題的回應劃分。 此劃分僅適用於儲存在&#x200B;**[!UICONTROL Question]**&#x200B;類型容器中的欄位。 它僅適用於選擇控制項（例如，文字欄位上沒有劃分）。
 
    ![](assets/s_ncs_admin_survey_report_2.png)
 
-## 匯出答案 {#exporting-answers}
+## 導出答案{#exporting-answers}
 
 可將調查的答案匯出為外部檔案，以供日後處理。 有兩種方法可以做到：
 
 1. 匯出報表資料
 
-   若要匯出報表資料，請按一下 **[!UICONTROL Export]** 按鈕並選擇匯出格式。
+   若要匯出報表資料，請按一下&#x200B;**[!UICONTROL Export]**&#x200B;按鈕並選擇匯出格式。
 
-   For more on exporting report data, refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md).
+   有關導出報告資料的詳細資訊，請參閱[本節](../../reporting/using/about-reports-creation-in-campaign.md)。
 
 1. 匯出答案
 
-   若要匯出答案，請按一 **[!UICONTROL Responses]** 下調查的標籤，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Export...]**。
+   若要匯出答案，請按一下調查的&#x200B;**[!UICONTROL Responses]**&#x200B;標籤，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Export...]**。
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -103,31 +103,31 @@ For more on URL parameters, refer to [this page](../../web/using/defining-web-fo
    * 格式化匯出的資料，
    * 為檔案中的資訊選擇編碼格式。
 
-   如果您要匯出的調查包含數個 **[!UICONTROL Multi-line text]** 或欄 **[!UICONTROL HTML text]** 位，則必須以格式 **[!UICONTROL XML]** 匯出。 若要這麼做，請在欄位的下拉式清單中選取此格 **[!UICONTROL Output format]** 式，如下所示：
+   如果您要匯出的調查包含數個&#x200B;**[!UICONTROL Multi-line text]**&#x200B;或&#x200B;**[!UICONTROL HTML text]**&#x200B;欄位，則必須以&#x200B;**[!UICONTROL XML]**&#x200B;格式匯出。 若要這麼做，請在&#x200B;**[!UICONTROL Output format]**&#x200B;欄位的下拉式清單中選取此格式，如下所示：
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
-   按一 **[!UICONTROL Start]** 下以執行匯出。
+   按一下&#x200B;**[!UICONTROL Start]**&#x200B;以運行導出。
 
    >[!NOTE]
    >
-   >本節將詳細介紹資料導出及其配置的 [階段](../../platform/using/generic-imports-and-exports.md)。
+   >[本節](../../platform/using/generic-imports-and-exports.md)中詳細介紹了資料導出及其配置的階段。
 
-## 使用收集的資料 {#using-the-collected-data}
+## 使用收集的資料{#using-the-collected-data}
 
-透過線上調查收集的資訊可在定位工作流程的架構中復原。 To do this, use the **[!UICONTROL Survey responses]** box.
+透過線上調查收集的資訊可在定位工作流程的架構中復原。 若要這麼做，請使用&#x200B;**[!UICONTROL Survey responses]**&#x200B;方塊。
 
 在下列範例中，我們希望為至少有兩個孩子並線上上調查中獲得最高分數的五個收件者提供網頁優惠。 此調查的答案為：
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-在定位工作流程中， **[!UICONTROL Survey responses]** 將依下列方式設定：
+在定位工作流程中，**[!UICONTROL Survey responses]**&#x200B;將依下列方式設定：
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 從選取相關調查開始，然後在視窗中央區段擷取資料。 在這種情況下，我們至少需要擷取分數欄，因為它將用於分割方塊中，以復原五個最高分數。
 
-按一下連結，指出答案的篩選 **[!UICONTROL Edit query...]** 條件。
+按一下&#x200B;**[!UICONTROL Edit query...]**&#x200B;連結，指出答案的篩選條件。
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -143,25 +143,25 @@ For more on URL parameters, refer to [this page](../../web/using/defining-web-fo
 
 編輯拆分框以進行配置：
 
-* 首先，在頁籤中選擇適 **[!UICONTROL General]** 當的架構，然後配置子集：
+* 首先，在&#x200B;**[!UICONTROL General]**&#x200B;標籤中選擇適當的架構，然後配置子集：
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* 前往標籤 **[!UICONTROL Sub-sets]** 並選取選 **[!UICONTROL Limit the selected records]** 項，然後按一下 **[!UICONTROL Edit...]** 連結。
+* 前往&#x200B;**[!UICONTROL Sub-sets]**&#x200B;標籤並選取&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;連結。
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* 選擇選 **[!UICONTROL Keep only the first records after sorting]** 項並選擇排序列。 核取 **[!UICONTROL Descending sort]** 選項。
+* 選擇&#x200B;**[!UICONTROL Keep only the first records after sorting]**&#x200B;選項並選擇排序列。 核取 **[!UICONTROL Descending sort]** 選項。
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
-* 按一下 **[!UICONTROL Next]** 按鈕，將記錄數限制為5。
+* 按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕，將記錄數限制為5。
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* 按一 **[!UICONTROL Finish]** 下，然後重新啟動工作流程以核准定位。
+* 按一下&#x200B;**[!UICONTROL Finish]**，然後重新啟動工作流程以核准定位。
 
-## 標準化資料 {#standardizing-data}
+## 標準化資料{#standardizing-data}
 
 在Adobe Campaign中，可針對使用別名收集的資料設定標準化程式。 這可讓您標準化儲存在資料庫中的資料：為此，請在包含相關資訊的明細清單中定義別名。
 
