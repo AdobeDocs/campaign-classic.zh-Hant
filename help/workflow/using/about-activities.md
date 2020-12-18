@@ -21,7 +21,7 @@ ht-degree: 16%
 
 工作流活動按類別分組。 同時有四個標籤。
 
-在促銷活動工作流程中， **[!UICONTROL Events]** 標籤會由標籤取 **[!UICONTROL Deliveries]** 代。 「操作」(Action)活動部分詳細介紹了此標籤中 [的活動](../../workflow/using/about-action-activities.md) 。
+在促銷活動工作流程中，**[!UICONTROL Events]**&#x200B;標籤會由&#x200B;**[!UICONTROL Deliveries]**&#x200B;標籤所取代。 [Action activities](../../workflow/using/about-action-activities.md)一節中詳細介紹了此頁籤中的活動。
 
 ![](assets/wf-activity-tabs.png)
 
