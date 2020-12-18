@@ -21,9 +21,9 @@ Adobe Campaign 允許您以文字、CSV、TAB 或 XML 格式從一個或多個�
 
 >[!NOTE]
 >
->You can import data without mapping it with the database data using the **[!UICONTROL Import a list]** function.
+>您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式導入資料，而不將其與資料庫資料映射。
 >
->The data can then be used exclusively in workflows via the **[!UICONTROL Read list]** object. 有關詳細資訊，請參見[此頁面](../../workflow/using/read-list.md)。
+>然後，資料便可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件專用於工作流程中。 有關詳細資訊，請參見[此頁面](../../workflow/using/read-list.md)。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
@@ -45,27 +45,27 @@ Adobe Campaign 允許您以文字、CSV、TAB 或 XML 格式從一個或多個�
 
 啟動匯入精靈時，首先必須選擇範本。例如，要配置收到簡報的收件者的匯入，請按照以下步驟操作：
 
-1. 選擇文 **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** 件夾。
+1. 選擇&#x200B;**[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**&#x200B;資料夾。
 1. 點擊&#x200B;**新建**，然後點擊&#x200B;**匯入**&#x200B;以建立匯入範本。
 
    ![](assets/s_ncs_user_import_wizard01_1.png)
 
-1. Click the arrow to the right of the **[!UICONTROL Import template]** field to select your template, or click **[!UICONTROL Select link]** to browse the tree.
+1. 按一下&#x200B;**[!UICONTROL Import template]**&#x200B;欄位右側的箭頭以選擇模板，或按一下&#x200B;**[!UICONTROL Select link]**&#x200B;以瀏覽樹。
 
-   原生範本為 **[!UICONTROL New text import]**。 不得修改此範本，但您可以根據您的要求復制它以配置新範本。預設情況下，導入模板將保存在節點 **[!UICONTROL Profiles and targets > Templates > Job templates]** 中。
+   原生範本為&#x200B;**[!UICONTROL New text import]**。 不得修改此範本，但您可以根據您的要求復制它以配置新範本。預設情況下，導入模板保存在&#x200B;**[!UICONTROL Profiles and targets > Templates > Job templates]**&#x200B;節點中。
 
-1. Enter a name for this import in the **[!UICONTROL Label]** field. 您可以添加描述。
-1. 在相應欄位中選擇匯入類型。匯入有兩種可能類型： **[!UICONTROL Simple import]** 只導入一個檔案，並在單 **[!UICONTROL Multiple import]** 次執行中導入多個檔案。
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入此匯入的名稱。 您可以添加描述。
+1. 在相應欄位中選擇匯入類型。匯入有兩種可能類型：**[!UICONTROL Simple import]**&#x200B;僅匯入一個檔案，**[!UICONTROL Multiple import]**&#x200B;在單次執行中匯入多個檔案。
 
-   For a multiple import, select **[!UICONTROL Multiple import]** from the **[!UICONTROL Import type]** drop-down list in the first screen of the import wizard.
+   對於多重導入，請從導入嚮導第一個螢幕的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉清單中選擇&#x200B;**[!UICONTROL Multiple import]**。
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
-1. Specify the fields you want to import by clicking **[!UICONTROL Add]**.
+1. 按一下&#x200B;**[!UICONTROL Add]**，指定您要匯入的欄位。
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Each time a file is added, the screen of the **[!UICONTROL File to import]** wizard is displayed. See section [Step 2 - Source file selection](#step-2---source-file-selection) and follow the steps in the wizard to define the import options as for a simple import.
+   每次添加檔案時，都會顯示&#x200B;**[!UICONTROL File to import]**&#x200B;嚮導的螢幕。 請參閱[步驟2 —— 源檔案選擇](#step-2---source-file-selection)一節，並遵循嚮導中的步驟將導入選項定義為簡單導入。
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ Adobe Campaign 允許您以文字、CSV、TAB 或 XML 格式從一個或多個�
 
 #### 高級參數 {#advanced-parameters}
 
-The **[!UICONTROL Advanced parameters]** link lets you access the following options:
+**[!UICONTROL Advanced parameters]**&#x200B;連結可讓您存取下列選項：
 
 * **[!UICONTROL General]** 頁籤
 
@@ -91,39 +91,39 @@ The **[!UICONTROL Advanced parameters]** link lets you access the following opti
 
    * **[!UICONTROL Do not update enumerations]**
 
-      選擇此選項可避免增補資料庫中的枚舉值清單。請參 [閱管理枚舉](../../platform/using/managing-enumerations.md)。
+      選擇此選項可避免增補資料庫中的枚舉值清單。請參閱[管理枚舉](../../platform/using/managing-enumerations.md)。
 
 * **[!UICONTROL Variables]** 頁籤
 
-   您可以定義與可在查詢編輯器和計算欄位中存取的作業關聯的變數。To create a variable, click **[!UICONTROL Add]** and use the variable editor.
+   您可以定義與可在查詢編輯器和計算欄位中存取的作業關聯的變數。若要建立變數，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;並使用變數編輯器。
 
    >[!CAUTION]
    >
-   >The **[!UICONTROL Variables]** tab is for Workflow-type programming use only, and should be configured by expert users only.
+   >**[!UICONTROL Variables]**&#x200B;標籤僅供工作流程類型程式設計使用，且應僅由專家使用者設定。
 
 ### 第 2 步 - 源檔選擇 {#step-2---source-file-selection}
 
 源檔可以是文字格式 (txt、csv、tab、固定行) 或 xml。
 
-By default, **[!UICONTROL Upload file on the server]** is selected. Click the folder to the right of the **[!UICONTROL Local file]** field to browse the local disk and select the file to import. 您可以取消選擇此選項以輸入存取路徑以及要在伺服器上匯入的檔案名稱。
+預設情況下，選擇&#x200B;**[!UICONTROL Upload file on the server]**。 按一下&#x200B;**[!UICONTROL Local file]**&#x200B;欄位右側的資料夾以瀏覽本地磁碟並選擇要導入的檔案。 您可以取消選擇此選項以輸入存取路徑以及要在伺服器上匯入的檔案名稱。
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
-When the file has been specified, you can view its data in the lower section of the window by clicking **[!UICONTROL Auto-detect format]**. 此預覽顯示源檔案的前 200 行。
+指定檔案後，可通過按一下&#x200B;**[!UICONTROL Auto-detect format]**&#x200B;在窗口的下部查看其資料。 此預覽顯示源檔案的前 200 行。
 
 ![](assets/s_ncs_user_import_wizard02_2.png)
 
 使用此視圖上方提供的選項配置匯入。通過這些選項定義的參數將傳輸到預覽中。可以使用以下選項：
 
 * **[!UICONTROL Click here to change the file format...]** 可讓您檢查檔案格式並微調設定。
-* **[!UICONTROL Update on server...]** 可讓您將本機檔案傳輸至伺服器。 此選項僅在選取時 **[!UICONTROL Upload file on the server]** 可用。
+* **[!UICONTROL Update on server...]** 可讓您將本機檔案傳輸至伺服器。此選項僅在選擇&#x200B;**[!UICONTROL Upload file on the server]**&#x200B;時可用。
 * **[!UICONTROL Download]** 只有在伺服器上已上傳檔案時，才可使用。
-* **[!UICONTROL Auto-detect format]** 用於重新初始化資料源的格式。 This option lets you reapply the original formats to data that has been formatted via the **[!UICONTROL Click here to change the file format...]** option.
-* The **[!UICONTROL Advanced parameters]** link lets you filter the source data and access advanced options. 在此屏幕中，您可以選擇僅匯入部分檔案。您還可以定義篩選器，例如，根據相應行的值僅匯入「潛在客戶」或「客戶」類型的用戶。這些選項僅供專業 JavaScript 用戶使用。
+* **[!UICONTROL Auto-detect format]** 用於重新初始化資料源的格式。此選項可讓您將原始格式重新套用至透過&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;選項格式化的資料。
+* **[!UICONTROL Advanced parameters]**&#x200B;連結可讓您篩選來源資料並存取進階選項。 在此屏幕中，您可以選擇僅匯入部分檔案。您還可以定義篩選器，例如，根據相應行的值僅匯入「潛在客戶」或「客戶」類型的用戶。這些選項僅供專業 JavaScript 用戶使用。
 
 #### 更改檔案格式 {#changing-the-file-format}
 
-The **[!UICONTROL Click here to change the file format...]** option lets you format the data of the source file, and in particular to specify the column separator and the type of data for each field. 此配置通過以下視窗執行：
+**[!UICONTROL Click here to change the file format...]**&#x200B;選項可讓您格式化來源檔案的資料，尤其是指定欄分隔符和每個欄位的資料類型。 此配置通過以下視窗執行：
 
 ![](assets/s_ncs_user_import_wizard02_3.png)
 
@@ -131,7 +131,7 @@ The **[!UICONTROL Click here to change the file format...]** option lets you for
 
 您可以在視窗下部的預覽區欄位中查看配置結果。
 
-Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]** to display the next step.
+按一下&#x200B;**[!UICONTROL OK]**&#x200B;以儲存格式，然後按一下&#x200B;**[!UICONTROL Next]**&#x200B;以顯示下一步。
 
 ### 第 3 步 - 欄位對應 {#step-3---field-mapping}
 
@@ -139,18 +139,18 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* The **[!UICONTROL Destination schema]** field lets you select the schema in which the data will be imported. 此資訊是強制性的。Click the **[!UICONTROL Select link]** icon to select one of the existing schemas. Click **[!UICONTROL Edit link]** to display the content of the selected table.
+* **[!UICONTROL Destination schema]**&#x200B;欄位可讓您選取要匯入資料的架構。 此資訊是強制性的。按一下&#x200B;**[!UICONTROL Select link]**&#x200B;表徵圖以選擇一個現有方案。 按一下&#x200B;**[!UICONTROL Edit link]**&#x200B;以顯示選取表格的內容。
 * 中央表顯示源檔中定義的所有欄位。選擇要匯入的欄位以將目標檔案與它們相關聯。可以手動或自動對應這些欄位。
 
-   要手動對應欄位，請點擊核取方塊以選擇源欄位，然後點擊第二行以激活與所選欄位對應的儲存格。Next, click the **[!UICONTROL Edit expression]** icon to display all the fields of the current table. Select the destination field and click **[!UICONTROL OK]** to validate the mapping.
+   要手動對應欄位，請點擊核取方塊以選擇源欄位，然後點擊第二行以激活與所選欄位對應的儲存格。接著，按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示以顯示目前表格的所有欄位。 選擇目標欄位，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以驗證映射。
 
-   To associate the source fields and destination fields automatically, click the **[!UICONTROL Guess the destination fields]** icon to the right of the list of fields. 如果需要，可以修改建議的欄位。
+   要自動關聯源欄位和目標欄位，請按一下欄位清單右側的&#x200B;**[!UICONTROL Guess the destination fields]**&#x200B;表徵圖。 如果需要，可以修改建議的欄位。
 
    >[!CAUTION]
    >
    >在繼續執行下一步之前，必須始終驗證此操作的結果。
 
-* 您可以將轉換應用於匯入的欄位。To do this, click in the cell of the **[!UICONTROL Transformation]** column that relates to the field concerned, and select the transformation to be applied.
+* 您可以將轉換應用於匯入的欄位。要執行此操作，請按一下與相關欄位相關的&#x200B;**[!UICONTROL Transformation]**&#x200B;列的單元格，然後選擇要應用的轉換。
 
    ![](assets/s_ncs_user_import_wizard03_2.png)
 
@@ -166,14 +166,14 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 
 有四種類型的計算欄位：
 
-* **[!UICONTROL Fixed string]**:對於源檔案的所有行，計算欄位的值都相同。 允許您設置插入或更新的記錄的欄位值。例如，您可以為所有匯入的記錄將標記設置為「是」。
+* **[!UICONTROL Fixed string]**:對於源檔案的所有行，計算欄位的值都相同。允許您設置插入或更新的記錄的欄位值。例如，您可以為所有匯入的記錄將標記設置為「是」。
 * **[!UICONTROL String with JavaScript tags]**:計算欄位的值是包含JavaScript指令的字元字串。
-* **[!UICONTROL JavaScript expression]**:計算欄位的值是JavaScript函式評估的結果。 返回的值可以是數字、日期等。
-* **[!UICONTROL Enumeration]**:欄位的值根據源檔案中包含的值來分配。 編輯器允許您指定源行並輸入枚舉值清單，如以下示例所示：
+* **[!UICONTROL JavaScript expression]**:計算欄位的值是JavaScript函式評估的結果。返回的值可以是數字、日期等。
+* **[!UICONTROL Enumeration]**:欄位的值根據源檔案中包含的值來分配。編輯器允許您指定源行並輸入枚舉值清單，如以下示例所示：
 
    ![](assets/s_ncs_user_import_wizard03_3.png)
 
-   The **[!UICONTROL Preview]** tab lets you view the result of the defined configuration. Here, the **[!UICONTROL Subscription]** column has been added. 該值計算自&#x200B;**狀態**&#x200B;欄位。
+   使用&#x200B;**[!UICONTROL Preview]**&#x200B;頁籤可以查看已定義配置的結果。 在這裡，**[!UICONTROL Subscription]**&#x200B;欄已新增。 該值計算自&#x200B;**狀態**&#x200B;欄位。
 
    ![](assets/s_ncs_user_import_wizard03_4.png)
 
@@ -185,7 +185,7 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 
 屏幕的中央部分包含一個樹結構，其中包含要匯入資料的 Adobe Campaign 資料庫的欄位和表。
 
-每個節點 (表或欄位) 都有特殊選項。點擊清單中的相關節點時，其參數和簡要說明將顯示在下方。The behavior defined for each element is displayed in the corresponding **[!UICONTROL Behavior]** column.
+每個節點 (表或欄位) 都有特殊選項。點擊清單中的相關節點時，其參數和簡要說明將顯示在下方。為每個元素定義的行為顯示在相應的&#x200B;**[!UICONTROL Behavior]**&#x200B;列中。
 
 ![](assets/s_ncs_user_import_wizard04_2.png)
 
@@ -196,13 +196,13 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 * **[!UICONTROL Update or insertion]**:如果記錄存在於資料庫中，則更新該記錄，如果不存在，則建立該記錄。
 * **[!UICONTROL Insertion]**:將記錄插入資料庫。
 * **[!UICONTROL Update]**:僅更新現有記錄（忽略其他記錄）。
-* **[!UICONTROL Reconciliation only]**:在資料庫中查找記錄，但不執行更新。 例如，允許您根據檔案行關聯要匯入的收件者資料夾，而不更新資料夾中的資料。
+* **[!UICONTROL Reconciliation only]**:在資料庫中查找記錄，但不執行更新。例如，允許您根據檔案行關聯要匯入的收件者資料夾，而不更新資料夾中的資料。
 * **[!UICONTROL Deletion]**:可讓您銷毀資料庫中的記錄。
 
 匯入所涉及的表中的每個欄位都有以下選項：
 
-* **[!UICONTROL Update (empty) if source value is empty]**:如果源檔案中的欄位為空，則在更新時，欄位中的值將刪除資料庫值。 否則，保留資料庫欄位。
-* **[!UICONTROL Update only if destination is empty]**:源檔案中的值不會覆蓋資料庫欄位中的值，除非資料庫欄位為空。 在這種情況下，它採用源檔的值。
+* **[!UICONTROL Update (empty) if source value is empty]**:如果源檔案中的欄位為空，則在更新時，欄位中的值將刪除資料庫值。否則，保留資料庫欄位。
+* **[!UICONTROL Update only if destination is empty]**:源檔案中的值不會覆蓋資料庫欄位中的值，除非資料庫欄位為空。在這種情況下，它採用源檔的值。
 * **[!UICONTROL Update the field only when the record is inserted]**:在更新或插入操作期間，將只導入新的源檔案記錄。
 
 >[!NOTE]
@@ -235,20 +235,20 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 >
 >「重複」是同時存在於要匯入的檔案和資料庫中的項目。
 
-The **[!UICONTROL Management of doubles]** field lets you configure the deduplication of data. 重複資料刪除涉及&#x200B;**在源檔中**&#x200B;多次出現的記錄 (或多檔案匯入時的源檔)，即調解金鑰的欄位相同的行。
+**[!UICONTROL Management of doubles]**&#x200B;欄位可讓您配置重複資料消除。 重複資料刪除涉及&#x200B;**在源檔中**&#x200B;多次出現的記錄 (或多檔案匯入時的源檔)，即調解金鑰的欄位相同的行。
 
-* Duplicate management in **[!UICONTROL Update]** mode (the default mode) does not perform deduplication. 因此，最後一條記錄具有優先權 (因為它更新了先前記錄的資料)。在此模式下不執行重複計數。
-* 在模式中復 **[!UICONTROL Ignore]** 制管理， **[!UICONTROL Reject entity]** 或從導入中排除複製。 在這種情況下，不會匯入任何記錄。
-* In **[!UICONTROL Reject entity]** mode, the element is not imported, and an error is generated in the import logs.
-* In **[!UICONTROL Ignore]** mode, the element is not imported, but no trace of the error is kept. 此模式可讓您優化性能。
+* 在&#x200B;**[!UICONTROL Update]**&#x200B;模式（預設模式）中的重複管理不執行重複資料消除。 因此，最後一條記錄具有優先權 (因為它更新了先前記錄的資料)。在此模式下不執行重複計數。
+* 在&#x200B;**[!UICONTROL Ignore]**&#x200B;模式或&#x200B;**[!UICONTROL Reject entity]**&#x200B;中進行重複管理會從導入中排除重複管理。 在這種情況下，不會匯入任何記錄。
+* 在&#x200B;**[!UICONTROL Reject entity]**&#x200B;模式中，元素不會匯入，而匯入記錄檔中會產生錯誤。
+* 在&#x200B;**[!UICONTROL Ignore]**&#x200B;模式中，元素未導入，但未保留錯誤跟蹤。 此模式可讓您優化性能。
 
 >[!CAUTION]
 >
 >重複資料刪除僅在內存中執行。因此，具有重複資料刪除的匯入的大小是有限的。限制取決於幾個參數 (應用程序伺服器的容量，活動，金鑰中的欄位數等)。重複資料刪除的最大大小為 1,000,000 行。
 
-重複資料刪除涉及源檔和資料庫中都存在的記錄。它僅涉及更新操作(即 **[!UICONTROL Update and insertion]** 或 **[!UICONTROL Update]**)。 The **[!UICONTROL Duplicate management]** option lets you update or ignore the record if it is in both the source file and the database. The **[!UICONTROL Update or insert based on origin]** option belongs to the optional module and cannot be used in a standard context.
+重複資料刪除涉及源檔和資料庫中都存在的記錄。它僅涉及更新操作(即&#x200B;**[!UICONTROL Update and insertion]**&#x200B;或&#x200B;**[!UICONTROL Update]**)。 **[!UICONTROL Duplicate management]**&#x200B;選項可讓您更新或忽略記錄（如果記錄同時位於源檔案和資料庫中）。 **[!UICONTROL Update or insert based on origin]**&#x200B;選項屬於可選模組，不能用於標準上下文。
 
-購股權 **[!UICONTROL Reject]** 及運 **[!UICONTROL Ignore]** 作如上文所述。
+選項&#x200B;**[!UICONTROL Reject]**&#x200B;和&#x200B;**[!UICONTROL Ignore]**&#x200B;如上所示。
 
 #### 發生錯誤時的行為 {#behavior-in-the-event-of-an-error}
 
@@ -256,11 +256,11 @@ The **[!UICONTROL Management of doubles]** field lets you configure the deduplic
 
 ![](assets/s_ncs_user_import_general_tab.png)
 
-Details of these rejects can be viewed via the **[!UICONTROL Rejects]** tab.
+您可以透過&#x200B;**[!UICONTROL Rejects]**&#x200B;標籤來檢視這些拒絕的詳細資訊。
 
 ![](assets/s_ncs_user_import_rejets_tab.png)
 
-There are two types of rejects (the type is displayed in the **[!UICONTROL Connector]** column):
+有兩種類型的拒絕（類型顯示在&#x200B;**[!UICONTROL Connector]**&#x200B;列中）:
 
 * 拒絕文字連接器涉及在處理檔案行時發生的錯誤 (計算欄位、資料分析等)。在這種情況下，如果發生錯誤，則始終拒絕整行。
 * 資料庫連接器拒絕涉及資料調解或寫入資料庫期間發生的錯誤。在匯入到多個表的情況下，拒絕只涉及記錄的一部分 (例如，對於收件者和相關事件的匯入，錯誤可以阻止更新事件而不拒絕接收者)。
@@ -275,7 +275,7 @@ There are two types of rejects (the type is displayed in the **[!UICONTROL Conne
 
 匯入執行個體的拒絕屏幕中的樹結構指示哪些欄位被拒絕以及錯誤發生的位置。
 
-You can generate a file containing these records via the **[!UICONTROL Export rejects]** icon:
+您可以通過&#x200B;**[!UICONTROL Export rejects]**&#x200B;表徵圖生成包含這些記錄的檔案：
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
@@ -289,17 +289,17 @@ You can generate a file containing these records via the **[!UICONTROL Export re
 >
 >在僅匯入收件者時以及使用預設的 Adobe Campaign 收件者表 (**nms:recipient**) 時，將顯示此步驟。
 
-* Click the **[!UICONTROL Edit]** links to select the folder, the list, or the service to which you want to associate or subscribe the recipients.
+* 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;連結以選擇要與收件人關聯或預訂的資料夾、清單或服務。
 
    1. 匯入到資料夾中
 
-      The **[!UICONTROL Edit...]** link of the **[!UICONTROL Import into a folder]** section lets you select or create the folder into which the recipients will be imported. 按照預設，如果未定義分區，則會將資料匯入到操作員的預設資料夾中。
+      **[!UICONTROL Import into a folder]**&#x200B;區段的&#x200B;**[!UICONTROL Edit...]**&#x200B;連結可讓您選擇或建立要將收件者匯入的資料夾。 按照預設，如果未定義分區，則會將資料匯入到操作員的預設資料夾中。
 
       >[!NOTE]
       >
-      >操作員的預設資料夾是操作員具有寫存取權限的第一個資料夾。請參閱 [資料夾存取管理](../../platform/using/access-management.md#folder-access-management)。
+      >操作員的預設資料夾是操作員具有寫存取權限的第一個資料夾。請參閱[資料夾存取管理](../../platform/using/access-management.md#folder-access-management)。
 
-      To select the import folder, click the arrow to the right of the **[!UICONTROL Folder]** field and select the folder concerned. You can also use the **[!UICONTROL Select link]** icon to display the tree in a new window or create a new folder.
+      要選擇導入資料夾，請按一下&#x200B;**[!UICONTROL Folder]**&#x200B;欄位右側的箭頭，然後選擇相關資料夾。 您也可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;表徵圖在新窗口中顯示樹或建立新資料夾。
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
@@ -307,17 +307,17 @@ You can generate a file containing these records via the **[!UICONTROL Export re
 
       ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      該資料夾添加到當前節點下方。Enter the name of the new folder, hit Enter to confirm, and then click **[!UICONTROL OK]**.
+      該資料夾添加到當前節點下方。輸入新資料夾的名稱，按一下Enter以確認，然後按一下&#x200B;**[!UICONTROL OK]**。
 
       ![](assets/s_ncs_user_import_wizard05_4.png)
 
    1. 與清單相關聯
 
-      The **[!UICONTROL Edit...]** link in the **[!UICONTROL Add recipients to a list]** section lets you select or create a list into which the recipients will be imported.
+      **[!UICONTROL Add recipients to a list]**&#x200B;區段中的&#x200B;**[!UICONTROL Edit...]**&#x200B;連結可讓您選擇或建立要將收件者匯入的清單。
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      You can create a new list for these recipients by clicking **[!UICONTROL Select link]**, then **[!UICONTROL Create]**. 建立和管理清單時，清單的創 [建和管理會顯示](../../platform/using/creating-and-managing-lists.md)。
+      您可以按一下&#x200B;**[!UICONTROL Select link]**，然後按一下&#x200B;**[!UICONTROL Create]**，為這些收件者建立新清單。 建立和管理清單在[建立和管理清單](../../platform/using/creating-and-managing-lists.md)中顯示。
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -325,19 +325,19 @@ You can generate a file containing these records via the **[!UICONTROL Export re
 
    1. 訂閱服務
 
-      To subscribe all imported recipients to an information service, click the **[!UICONTROL Edit...]** link of the **[!UICONTROL Subscribe recipients to a service]** section in order to select or create the information service which the recipients will be subscribed to. You can select the **[!UICONTROL Send a confirmation message]** option: The content of this message is defined in the delivery template associated with the subscription service.
+      要將所有導入的收件人預訂到資訊服務，請按一下&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;連結，以選擇或建立收件人將預訂的資訊服務。 您可以選擇&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;選項：此訊息的內容是在與訂閱服務相關的傳送範本中定義。
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      You can create a new service for these recipients by clicking **[!UICONTROL Select link]** and then the **[!UICONTROL Create]** icon. [本節](../../delivery/using/managing-subscriptions.md)介紹了資訊服務的管理。
+      您可以按一下&#x200B;**[!UICONTROL Select link]**，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;圖示，為這些收件者建立新服務。 [本節](../../delivery/using/managing-subscriptions.md)介紹了資訊服務的管理。
 
-* Use the **[!UICONTROL Origin]** field to add information about the origin of recipients to their profiles. 此資訊在多重匯入的框架內特別有用。
+* 使用&#x200B;**[!UICONTROL Origin]**&#x200B;欄位，將收件者來源的相關資訊新增至其描述檔。 此資訊在多重匯入的框架內特別有用。
 
-Click **[!UICONTROL Next]** to validate this step and display the following step.
+按一下&#x200B;**[!UICONTROL Next]**&#x200B;以驗證此步驟並顯示下列步驟。
 
 ### 第 6 步 - 啟動匯入 {#step-6---launching-the-import}
 
-精靈的最後一步允許您啟動資料匯入。To do this, click the **[!UICONTROL Start]** button.
+精靈的最後一步允許您啟動資料匯入。要執行此操作，請按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕。
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
@@ -357,7 +357,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 * **取消**
 
-   Click the **[!UICONTROL Cancel]** button: the job in progress is cancelled.
+   按一下&#x200B;**[!UICONTROL Cancel]**&#x200B;按鈕：正在進行的作業被取消。
 
 * **取消正在進行中**
 
@@ -365,11 +365,11 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 * **暫停進行中**
 
-   Click **[!UICONTROL Pause]**: the job is being suspended.
+   按一下&#x200B;**[!UICONTROL Pause]**:工作正在暫停。
 
 * **已暫停**
 
-   按一 **[!UICONTROL Pause]**&#x200B;下：工作暫停。 It can be restarted by clicking **[!UICONTROL Start]**.
+   按一下&#x200B;**[!UICONTROL Pause]**:工作暫停。 按一下&#x200B;**[!UICONTROL Start]**&#x200B;可重新啟動它。
 
 * **已完成**
 
@@ -385,18 +385,18 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 ## 一般匯入示例 {#generic-import-samples}
 
-### Example: Import from a list of recipients {#example--import-from-a-list-of-recipients}
+### 範例：從收件者清單匯入{#example--import-from-a-list-of-recipients}
 
 要從清單概述建立和提供收件者清單，請應用以下步驟：
 
 1. 建立清單
 
-   * 按一下 **[!UICONTROL Lists]** Adobe Campaign首頁 **[!UICONTROL Profiles and targets]** 功能表中的連結。
-   * 按一下 **[!UICONTROL Create]** 按鈕，然後按 **[!UICONTROL Import a list]** 鈕。
+   * 按一下Adobe Campaign首頁&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;功能表中的&#x200B;**[!UICONTROL Lists]**&#x200B;連結。
+   * 按一下&#x200B;**[!UICONTROL Create]** ，然後按一下&#x200B;**[!UICONTROL Import a list]**&#x200B;按鈕。
 
 1. 選擇要匯入的檔案
 
-   Click the folder to the right of the **[!UICONTROL Local file]** field and select the file containing the list to import.
+   按一下&#x200B;**[!UICONTROL Local file]**&#x200B;欄位右側的資料夾，並選取包含要匯入之清單的檔案。
 
    ![](assets/s_ncs_user_import_example00_01.png)
 
@@ -408,7 +408,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 啟動匯入
 
-   按一 **[!UICONTROL Next]** 下，然 **[!UICONTROL Start]** 後開始匯入清單。
+   按一下&#x200B;**[!UICONTROL Next]** ，然後按一下&#x200B;**[!UICONTROL Start]**&#x200B;開始導入清單。
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
@@ -418,29 +418,29 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 選擇範本
 
-   * 從Adobe Campaign首頁，按一下連 **[!UICONTROL Profiles and targets]** 結，然後 **[!UICONTROL Jobs]**。 Above the list of jobs, click **[!UICONTROL New import]**.
-   * 依預設 **[!UICONTROL New text import]** 保留範本選取。
+   * 從Adobe Campaign首頁，按一下&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Jobs]**。 在作業清單的上方，按一下&#x200B;**[!UICONTROL New import]**。
+   * 依預設保留&#x200B;**[!UICONTROL New text import]**&#x200B;範本。
    * 更改標籤和描述。
    * 選取 **[!UICONTROL Simple import]**。
    * 保留預設作業資料夾。
-   * Click **[!UICONTROL Advanced parameters]** and select the **[!UICONTROL Tracking mode]** option to view the details of your import during execution.
+   * 按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;並選擇&#x200B;**[!UICONTROL Tracking mode]**&#x200B;選項，以查看執行過程中導入的詳細資訊。
 
 1. 選擇要匯入的檔案
 
-   Click the folder to the right of the **[!UICONTROL Local file]** field and select the file you want to import.
+   按一下&#x200B;**[!UICONTROL Local file]**&#x200B;欄位右側的資料夾，然後選取您要匯入的檔案。
 
    ![](assets/s_ncs_user_import_example01_01.png)
 
 1. 關聯欄位
 
-   Click the **[!UICONTROL Guess the destination fields]** icon to map the source and destination schemas automatically. Check the information in this window before clicking **[!UICONTROL Next]**.
+   按一下&#x200B;**[!UICONTROL Guess the destination fields]**&#x200B;表徵圖可自動映射源和目標方案。 在按一下&#x200B;**[!UICONTROL Next]**&#x200B;之前，請查看此窗口中的資訊。
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
 1. 調解
 
    * 轉到&#x200B;**收件者 (nms:recipient)** 表。
-   * Select the **[!UICONTROL Insertion]** operation and leave the default values in the other fields.
+   * 選擇&#x200B;**[!UICONTROL Insertion]**&#x200B;操作，並將預設值保留在其它欄位中。
 
       ![](assets/s_ncs_user_import_example04_01.png)
 
@@ -458,7 +458,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
       ![](assets/s_ncs_user_import_example06_01.png)
 
-      The **[!UICONTROL Tracking]** mode lets you track the details of the import for each record in the source file. 若要這麼做，請在首頁按一 **[!UICONTROL Profiles and Targets]** 下， **[!UICONTROL Processes]**&#x200B;然後選取相關的匯入，並查 **[!UICONTROL General]**&#x200B;看和 **[!UICONTROL Journal]** 標籤 **[!UICONTROL Rejects]** 。
+      **[!UICONTROL Tracking]**&#x200B;模式可讓您追蹤來源檔案中每個記錄的匯入詳細資訊。 若要這麼做，請在首頁按一下&#x200B;**[!UICONTROL Profiles and Targets]**，然後按一下&#x200B;**[!UICONTROL Processes]**，選取相關的匯入，並查看&#x200B;**[!UICONTROL General]**、**[!UICONTROL Journal]**&#x200B;和&#x200B;**[!UICONTROL Rejects]**&#x200B;標籤。
 
       * 檢查匯入進度
 
@@ -468,7 +468,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
          ![](assets/s_ncs_user_import_example07_02.png)
 
-### Example: Update and insert recipients {#example--update-and-insert-recipients}
+### 範例：更新並插入收件者{#example--update-and-insert-recipients}
 
 我們希望更新資料庫中的現有記錄，並從文字檔中建立新記錄。以下是該過程的示例：
 
@@ -490,9 +490,9 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 調解
 
-   * 依預 **[!UICONTROL Update or insert]** 設保留選取。
-   * Keep the option **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** mode so that existing records in the database will be modified with data from the text file.
-   * 選擇欄位 **[!UICONTROL Birth date]**, **[!UICONTROL Name]** 並為 **[!UICONTROL Company]** 其分配協調密鑰。
+   * 依預設將&#x200B;**[!UICONTROL Update or insert]**&#x200B;保持選取狀態。
+   * 將選項&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式中，以便使用文本檔案中的資料修改資料庫中的現有記錄。
+   * 選擇&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Company]**&#x200B;欄位，並為其分配協調密鑰。
 
       ![](assets/s_ncs_user_import_example04_02.png)
 
@@ -508,7 +508,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
       ![](assets/s_ncs_user_import_example06_03.png)
 
-### Example: Enrich the values with those of an external file {#example--enrich-the-values-with-those-of-an-external-file}
+### 範例：使用外部檔案{#example--enrich-the-values-with-those-of-an-external-file}的值豐富值
 
 我們希望從文字檔中修改資料庫表中的某些欄位，優先考慮資料庫中包含的值。
 
@@ -540,12 +540,12 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 調解
 
-   * Go to the table and select the **[!UICONTROL Update]** operation.
-   * 選取欄位 **[!UICONTROL Reject entity]** 的選 **[!UICONTROL Management of doubles]** 項。
-   * Keep the option **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** mode so that existing records in the database will be modified with data from the text file.
-   * 將游標置於節 **[!UICONTROL Last name (@lastName)]** 點上並選擇選 **[!UICONTROL Update only if destination is empty]** 項。
-   * 對節點重複此操 **[!UICONTROL Company (@company)]** 作。
-   * 為欄位分配協調 **[!UICONTROL Birth date]**&#x200B;鍵 **[!UICONTROL E-mail]** 和 **[!UICONTROL First name]**。
+   * 轉到表並選擇&#x200B;**[!UICONTROL Update]**&#x200B;操作。
+   * 為&#x200B;**[!UICONTROL Management of doubles]**&#x200B;欄位選擇&#x200B;**[!UICONTROL Reject entity]**&#x200B;選項。
+   * 將選項&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式中，以便使用文本檔案中的資料修改資料庫中的現有記錄。
+   * 將游標置於&#x200B;**[!UICONTROL Last name (@lastName)]**&#x200B;節點上，然後選擇&#x200B;**[!UICONTROL Update only if destination is empty]**&#x200B;選項。
+   * 對&#x200B;**[!UICONTROL Company (@company)]**&#x200B;節點重複此操作。
+   * 為&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL E-mail]**&#x200B;和&#x200B;**[!UICONTROL First name]**&#x200B;欄位分配協調密鑰。
 
       ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -559,7 +559,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
    只有空值才被文字檔中的值替換，但資料庫中的現有值未被匯入檔案中的值覆寫。
 
-### Example: Update and enrich the values from those in an external file {#example--update-and-enrich-the-values-from-those-in-an-external-file}
+### 範例：更新並豐富外部檔案{#example--update-and-enrich-the-values-from-those-in-an-external-file}中的值
 
 我們希望使用文字檔修改資料庫表中的某些欄位，優先套用文字檔中包含的值。
 
@@ -589,11 +589,11 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 調解
 
-   * Go to the table and select **[!UICONTROL Update]**.
-   * 選取欄位 **[!UICONTROL Reject entity]** 的選 **[!UICONTROL Management of doubles]** 項。
-   * Leave the option **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** mode for existing records in the database to be modified with data from the text file.
-   * 將游標置於節 **[!UICONTROL Account number (@account)]** 點上並選擇選項 **[!UICONTROL Take empty values into account]**。
-   * 選擇欄位 **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** 並為 **[!UICONTROL First name]** 其分配協調密鑰。
+   * 轉到表並選擇&#x200B;**[!UICONTROL Update]**。
+   * 為&#x200B;**[!UICONTROL Management of doubles]**&#x200B;欄位選擇&#x200B;**[!UICONTROL Reject entity]**&#x200B;選項。
+   * 將&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;選項保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式下，以便使用文本檔案中的資料修改資料庫中的現有記錄。
+   * 將游標置於&#x200B;**[!UICONTROL Account number (@account)]**&#x200B;節點上，然後選擇&#x200B;**[!UICONTROL Take empty values into account]**&#x200B;選項。
+   * 選擇&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL E-mail]**&#x200B;和&#x200B;**[!UICONTROL First name]**&#x200B;欄位，並為其分配協調密鑰。
 
       ![](assets/s_ncs_user_import_example04_04.png)
 
@@ -604,7 +604,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
       ![](assets/s_ncs_user_import_example06_06.png)
 
-      空文字檔的值已覆寫資料庫中的值。The existing values in the database were updated with those in the import file in keeping with the **[!UICONTROL Update]** option selected for duplicates in step 4.
+      空文字檔的值已覆寫資料庫中的值。資料庫中的現有值已更新為導入檔案中的值，與步驟4中為複製項選擇的&#x200B;**[!UICONTROL Update]**&#x200B;選項保持一致。
 
 ## 從工作流程匯入資料 {#importing-data-from-a-workflow}
 
