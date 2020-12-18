@@ -19,15 +19,15 @@ ht-degree: 4%
 
 Social Marketing提供報表，可讓您測量Facebook和Twitter傳送的反應率，並分析Facebook設定檔的取得。 可使用下列報表：
 
-* 報表 **[!UICONTROL Reactivity rate]** 可透過Facebook或Twitter **[!UICONTROL Summary]** 傳送的標籤取得。
+* **[!UICONTROL Reactivity rate]**&#x200B;報表，可透過Facebook或Twitter傳送的&#x200B;**[!UICONTROL Summary]**&#x200B;標籤取得。
 
    ![](assets/social_report_3.png)
 
-* 報表 **[!UICONTROL Reactivity rate]** 可透過Twitter或Facebook **[!UICONTROL Dashboard]** 服務的標籤取得。
+* **[!UICONTROL Reactivity rate]**&#x200B;報表，可透過Twitter或Facebook服務的&#x200B;**[!UICONTROL Dashboard]**&#x200B;標籤取得。
 
    ![](assets/social_report_2.png)
 
-* 報 **[!UICONTROL Fan acquisition]** 表，可透過Facebook服務 **[!UICONTROL Dashboard]** 的標籤取得。
+* **[!UICONTROL Fan acquisition]**&#x200B;報表，可透過Facebook服務的&#x200B;**[!UICONTROL Dashboard]**&#x200B;標籤取得。
 
    ![](assets/social_report_1.png)
 
