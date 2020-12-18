@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 內容管理{#content-management}
 
-「內 **容管理** 」活動可讓您建立和控制內容，並根據此內容產生檔案。 然後，此內容可透過「傳送」活動傳送。
+**內容管理**&#x200B;活動可讓您建立和控制內容，並根據此內容產生檔案。 然後，此內容可透過「傳送」活動傳送。
 
 >[!CAUTION]
 >
@@ -31,29 +31,29 @@ ht-degree: 2%
 
    ![](assets/content_mgmt_edit.png)
 
-   如需在Adobe Campaign中設定和使用內容管理的詳細資訊，請參閱本 [節](../../delivery/using/about-content-management.md)。
+   如需在Adobe Campaign中設定和使用內容管理的詳細資訊，請參閱此[章節](../../delivery/using/about-content-management.md)。
 
 1. **內容**
 
    * **[!UICONTROL Specified in the transition]**
 
-      此選項可讓您使用轉場中指定的內容，即啟動內容管理的事件必須包含變 **[!UICONTROL contentId]** 數。 此變數可由先前的內容管理或任何指令碼設定。
+      此選項可讓您使用轉場中指定的內容，即啟動內容管理的事件必須包含&#x200B;**[!UICONTROL contentId]**&#x200B;變數。 此變數可由先前的內容管理或任何指令碼設定。
 
    * **[!UICONTROL Explicit]**
 
-      此選項可讓您透過欄位選取已建立的 **[!UICONTROL Content]** 內容。 此欄位僅在選取選項 **[!UICONTROL Explicit]** 時顯示。
+      此選項可讓您透過&#x200B;**[!UICONTROL Content]**&#x200B;欄位選取已建立的內容。 只有在選取&#x200B;**[!UICONTROL Explicit]**&#x200B;選項時，才會顯示此欄位。
 
       ![](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Calculated by a script]**
 
-      內容識別碼由指令碼計算。 欄位 **[!UICONTROL Script]** 可讓您定義JavaScript範本，以評估內容的識別碼（主鍵）。 此欄位僅在選取選項 **[!UICONTROL Calculated by a script]** 時顯示。
+      內容識別碼由指令碼計算。 **[!UICONTROL Script]**&#x200B;欄位可讓您定義評估內容識別碼（主鍵）的JavaScript範本。 只有在選取&#x200B;**[!UICONTROL Calculated by a script]**&#x200B;選項時，才會顯示此欄位。
 
       ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL New, created from a publication template]**
 
-      從出版物範本建立新內容。 此新內容將儲存在欄位中指定的檔 **[!UICONTROL String]** 案中。 該 **[!UICONTROL Template]** 欄位指定用於建立內容的發佈模板。
+      從出版物範本建立新內容。 此新內容將保存在&#x200B;**[!UICONTROL String]**&#x200B;欄位中指定的檔案中。 **[!UICONTROL Template]**&#x200B;欄位指定用來建立內容的出版物範本。
 
       ![](assets/content_mgmt_new.png)
 
@@ -65,7 +65,7 @@ ht-degree: 2%
 
    * **[!UICONTROL Access to data from an XML feed]**
 
-      此選項可讓您從透過XSL樣式表下載的XML檔案建構內容。 選取此選項時，欄位會 **[!UICONTROL URL]** 指定XML內容下載URL。 可 **[!UICONTROL XSL stylesheet]** 以指定用於轉換已下載XML文檔的樣式表。 此屬性為可選屬性。
+      此選項可讓您從透過XSL樣式表下載的XML檔案建構內容。 選取此選項時，**[!UICONTROL URL]**&#x200B;欄位會指定XML內容下載URL。 **[!UICONTROL XSL stylesheet]**&#x200B;可讓您指定要用於轉換已下載XML文檔的樣式表。 此屬性為可選屬性。
 
       ![](assets/content_mgmt_xmlcontent.png)
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
       此選項會儲存已建立或修改的內容。
 
-      對外轉場只會啟動一次，而內容會以參數 **[!UICONTROL contentId]** 的形式儲存在變數中。
+      對外轉場只會啟動一次，而內容會儲存在&#x200B;**[!UICONTROL contentId]**&#x200B;變數中作為參數。
 
    * **[!UICONTROL Generate]**
 
@@ -83,15 +83,15 @@ ht-degree: 2%
 
       ![](assets/content_mgmt_generate.png)
 
-      對於以變數中儲存的內容識別碼作為參數和變數中的檔案名稱而產生的每 **[!UICONTROL contentId]** 個檔案，都會啟用出站轉 **[!UICONTROL filename]** 場。
+      對於以&#x200B;**[!UICONTROL contentId]**&#x200B;變數中儲存的內容識別碼作為參數和&#x200B;**[!UICONTROL filename]**&#x200B;變數中的檔案名稱而產生的每個檔案，都會啟用出站轉場。
 
-## 輸入參數 {#input-parameters}
+## 輸入參數{#input-parameters}
 
 * contentId
 
-啟用選項時要使用的內容 **[!UICONTROL Specified in the transition]** 識別碼。
+啟用&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;選項時要使用的內容識別碼。
 
-## 輸出參數 {#output-parameters}
+## 輸出參數{#output-parameters}
 
 * contentId
 
@@ -99,8 +99,8 @@ ht-degree: 2%
 
 * 檔案名
 
-   如果所選操作為，則生成檔案的完整名 **[!UICONTROL Generate]**&#x200B;稱。
+   如果所選操作為&#x200B;**[!UICONTROL Generate]**，則生成檔案的完整名稱。
 
 ## 範例 {#examples}
 
-本節提供範例 [](../../delivery/using/automating-via-workflows.md#examples)。
+本[節](../../delivery/using/automating-via-workflows.md#examples)提供了示例。
