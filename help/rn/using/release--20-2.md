@@ -6,9 +6,9 @@ description: 第 20.2 發行版本
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ _2020 年 7 月 22 日_
 * 在切換至[新序列 ID 機制](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)後，所有更新收件者表格的 Web 應用程式都會在升級後期間重新發佈。
 * 修正了傳送內容中的潛在 XSS 弱點。(NEO-17987、NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
