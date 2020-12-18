@@ -19,19 +19,19 @@ ht-degree: 19%
 
 Web應用程式類型在建立過程中被選擇。
 
-前往「促銷 **活動** 」標籤，並選取 **[!UICONTROL Web Applications]** 功能表。 按一下 **[!UICONTROL Create]** 按鈕。選擇要使用的Web應用程式模板：
+前往&#x200B;**促銷活動**&#x200B;標籤，並選取&#x200B;**[!UICONTROL Web Applications]**&#x200B;功能表。 按一下 **[!UICONTROL Create]** 按鈕。選擇要使用的Web應用程式模板：
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->請務必保護可能包含個人資訊的頁面。 請參閱「安 [全與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
+>請務必保護可能包含個人資訊的頁面。 請參閱[安全與隱私檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此範本會決定Web應用程式的類型。 您可以建立：
 
 1. Web表單（+描述檔修改）
 
-   Web表單可讓您提供網頁，其中包含輸入或選擇欄位：使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
+   Web表單可讓您提供網頁，其中包含輸入或選擇欄位：使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 有關詳細資訊，請參閱[Web表單](../../web/using/about-web-forms.md)。
 
 1. 網頁應用程式
 
@@ -43,18 +43,18 @@ Web應用程式類型在建立過程中被選擇。
 
 1. 調查
 
-   Adobe Campaign可讓您透過「調查管 **理員」選項** ，設計和管理線上調查，並處理其結果：動態欄位建立、分數管理、轉存答案和專屬報表。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
+   Adobe Campaign可讓您透過&#x200B;**調查管理員**&#x200B;選項，設計和管理線上調查並處理其結果：動態欄位建立、分數管理、轉存答案和專屬報表。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
 
    >[!CAUTION]
    >
-   >**「調查管理員** 」是選用的Adobe Campaign模組。 請檢查您的授權合約。
+   >**調查管** 理員是選用的Adobe Campaign模組。請檢查您的授權合約。
 
 1. Facebook應用程式
 
-   由於有了「社 **交行銷」選項** ,Adobe Campaign可讓您在Facebook應用程式中發佈個人化內容。 如需詳細資訊，請參閱[本章節](../../social/using/about-social-marketing.md)。
+   由於&#x200B;**Social Marketing**&#x200B;選項，Adobe Campaign可讓您在Facebook應用程式中發佈個人化內容。 如需詳細資訊，請參閱[本章節](../../social/using/about-social-marketing.md)。
 
    >[!CAUTION]
    >
-   >**Social Marketing** 是選用的Adobe Campaign模組。 請檢查您的授權合約。
+   >**Social** Marketing是選用的Adobe Campaign模組。請檢查您的授權合約。
 
 頁面配置模式和可用配置對於幾種Web應用程式類型都是相同的。 如需詳細資訊，請參閱[本章節](../../web/using/about-web-forms.md)。
