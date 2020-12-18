@@ -17,9 +17,9 @@ ht-degree: 2%
 
 # 模擬範圍{#simulation-scope}
 
-## 範圍定義 {#definition-of-the-scope}
+## 範圍{#definition-of-the-scope}的定義
 
-開啟標 **[!UICONTROL Scope]** 簽以選擇您的設定。
+開啟&#x200B;**[!UICONTROL Scope]**&#x200B;標籤以選擇您的設定。
 
 下列項目為必備項目：
 
@@ -44,11 +44,11 @@ ht-degree: 2%
 >
 >您必須指定聯絡日期。 這可讓互動引擎將選取環境或類別中的選件排序。 如果未設定日期，則模擬會引發錯誤。
 
-## 新增報表軸 {#adding-reporting-axes}
+## 添加報告軸{#adding-reporting-axes}
 
-您可以透過標籤在目標或選件本身上新增報告軸，以增強模擬分 **[!UICONTROL Calculations]** 析。
+您可以透過&#x200B;**[!UICONTROL Calculations]**&#x200B;標籤，在目標或選件本身新增報告軸，以增強模擬分析。
 
-若要這麼做，請按一下按 **[!UICONTROL Add]** 鈕並選擇適當的欄位。 軸將用於計算模擬，並顯示在分析報告中。 For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+若要這麼做，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並選擇適當的欄位。 軸將用於計算模擬，並顯示在分析報告中。 如需詳細資訊，請參閱[模擬追蹤](../../interaction/using/simulation-tracking.md)。
 
 ![](assets/offer_simulation_011.png)
 
