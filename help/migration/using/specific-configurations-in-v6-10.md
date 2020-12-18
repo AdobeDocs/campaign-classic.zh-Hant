@@ -25,4 +25,4 @@ Adobe Campaign v7中已進行某些改進，以最佳化安全性。
 >
 >如果您拒絕更新，將無法連線。
 
-如果您要從v6.10版本早於8104版本的平台移轉，您也必須參閱v7中的「 [新功能](../../migration/using/general-configurations.md#new-features-in-v7) 」一節。
+如果您要從v6.10版本早於8104版本的平台移轉，您也必須參閱v7](../../migration/using/general-configurations.md#new-features-in-v7)中的[新功能一節。
