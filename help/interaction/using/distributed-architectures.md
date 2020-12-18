@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 分佈式架構{#distributed-architectures}
 
-## 原則 {#principle}
+## 原則{#principle}
 
 若要支援可擴充性並在傳入通道上提供全年無休的服務，您可以使用與分散式架構的互動功能。 此類體系結構已與消息中心一起使用，由以下幾個實例組成：
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 >
 >控制實例專用於入站通道，並包含目錄的聯機版本。 每個執行例項都獨立且專屬於一個連絡人區段（例如，每個國家／地區一個執行例項）。 選件引擎呼叫必須直接在執行中執行（每個執行例項有一個特定URL）。 由於執行個體間的同步並非自動，因此來自相同聯絡人的互動必須透過相同的執行個體傳送。
 
-## 命題同步 {#proposition-synchronization}
+## 命題同步{#proposition-synchronization}
 
 選件同步是透過封包進行。 在執行例項上，所有目錄物件都以外部帳戶名稱為前置詞。 這表示同一執行例項可支援數個控制例項（例如開發與生產例項）。
 
@@ -54,17 +54,17 @@ ht-degree: 1%
 * 命題同步只由FDA連接執行。
 * 如果您在同一實例上使用交互和消息中心，則在這兩種情況下都將通過FDA協定進行同步。
 
-## 軟體包配置 {#packages-configuration}
+## 軟體包配置{#packages-configuration}
 
-任何直接連結至 **Interaction** （選件、主張、收件者等）的架構擴充功能 必須部署在執行例項上。
+任何直接連結至&#x200B;**Interaction**（選件、主張、收件者等）的架構擴充功能 必須部署在執行例項上。
 
 Interaction軟體包必須安裝在所有實例上（控制和執行）。 另外提供兩個套件：一個軟體包要安裝在控制實例上，另一個軟體包要安裝在每個執行實例上。
 
 >[!NOTE]
 >
->安裝軟體包時， **nms:** composition表的長類型欄位(如命題ID **)將變為** int64 **** type欄位。 此類資料在本節中有詳 [細說明](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)。
+>在安裝軟體包時，**nms:composition**&#x200B;表的&#x200B;**long**&#x200B;類型欄位（如命題ID）變為&#x200B;**int64**&#x200B;類型欄位。 [本節](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)將詳細介紹此類資料。
 
-必須在每個實例上配置資料保留期間(通過部 **[!UICONTROL Data purge]** 署嚮導中的窗口)。 在執行例項中，此期間必須對應於要計算的類型學規則（滑動期間）和資格規則所需的歷史深度。
+必須在每個實例上配置資料保留期間（通過部署嚮導中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在執行例項中，此期間必須對應於要計算的類型學規則（滑動期間）和資格規則所需的歷史深度。
 
 在控制例項上：
 
@@ -76,8 +76,8 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
    * 選取 **[!UICONTROL Execution instance]**。
    * 核取 **[!UICONTROL Enabled]** 選項。
    * 完成執行實例的連接參數。
-   * 每個執行例項都必須連結至ID。 此ID是在您按一下按鈕時指 **[!UICONTROL Initialize connection]** 派的。
-   * 檢查使用的應用程式類型： **[!UICONTROL Message Center]**、 **[!UICONTROL Interaction]**&#x200B;或兩者。
+   * 每個執行例項都必須連結至ID。 當您按一下&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按鈕時，就會指派此ID。
+   * 檢查使用的應用程式類型：**[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或兩者皆有。
    * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須對有關實例的資料庫具有以下讀寫權限：
 
       ```
@@ -99,11 +99,11 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
       >
       >如果您遇到錯誤，可以參考同步工作流程和選件通知。 這些功能可在應用程式的技術工作流程中找到。
 
-如果基於最佳化原因，只有部分行銷資料庫在執行例項上複製，您可以指定連結至環境的受限架構，讓使用者僅能使用執行例項上可用的資料。 您可以使用執行例項無法使用的資料來建立選件。 若要這麼做，您必須在對外渠道（欄位）上限制此規則，以停用其他渠道&#x200B;**[!UICONTROL Taken into account if]** 的規則。
+如果基於最佳化原因，只有部分行銷資料庫在執行例項上複製，您可以指定連結至環境的受限架構，讓使用者僅能使用執行例項上可用的資料。 您可以使用執行例項無法使用的資料來建立選件。 若要這麼做，您必須在對外通道（**[!UICONTROL Taken into account if]**&#x200B;欄位）上限制此規則，以停用其他通道的規則。
 
 ![](assets/ita_filtering.png)
 
-## 維護選項 {#maintenance-options}
+## 維護選項{#maintenance-options}
 
 以下是控制實例上可用的維護選項清單：
 
@@ -119,7 +119,7 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
 
 **NmsExecutionInstanceId**:選項。
 
-## 軟體包安裝 {#packages-installation}
+## 軟體包安裝{#packages-installation}
 
 如果您的例項先前沒有Interaction套件，則不需要移轉。 預設情況下，在安裝軟體包後，命題表將以64位元顯示。
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-編輯數字類 **型的大小** ，不會導致值或重新寫入索引。 因此，這是立竿見影的。
+編輯&#x200B;**Number**&#x200B;類型的大小不會導致值或重新寫入索引。 因此，這是立竿見影的。
 
 要執行的查詢如下：
 
