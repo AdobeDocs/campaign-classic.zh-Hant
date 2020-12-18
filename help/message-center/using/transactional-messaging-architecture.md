@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 交易式傳訊架構{#transactional-messaging-architecture}
 
-## 關於執行和控制實例 {#about-execution-and-control-instances}
+## 關於執行和控制實例{#about-execution-and-control-instances}
 
 在Adobe Campaign中，交易式訊息功能（又稱為訊息中心）旨在支援延展性並提供全年無休的服務。 它由幾個實例組成：
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ![](assets/messagecenter_diagram.png)
 
-## 支援數個控制例項 {#supporting-several-control-instances}
+## 支援多個控制實例{#supporting-several-control-instances}
 
 >[!IMPORTANT]
 >
@@ -42,9 +42,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有關必要配置的詳細資訊，請參閱使 [用多個控制實例](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances)。
+>有關必要配置的詳細資訊，請參閱[使用多個控制實例](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances)。
 
-## 安裝實例 {#installing-instances}
+## 安裝實例{#installing-instances}
 
 在安裝Transactional消息包時，需要採取幾種預防措施。 Adobe建議您在投入生產之前，先在測試環境中工作。 您也需要有相容的Adobe Campaign授權。 如需詳細資訊，請聯絡您的Adobe銷售代表。
 
@@ -52,23 +52,23 @@ ht-degree: 1%
 >
 >控制實例和執行實例必須安裝在不同的電腦上。 他們無法共用相同的促銷活動例項。
 
-如果您需要使用多個渠道，則必須在安裝事務性消息包之前安裝並配置相關包。 請參閱 [新增傳送渠道](#adding-a-delivery-channel)。
+如果您需要使用多個渠道，則必須在安裝事務性消息包之前安裝並配置相關包。 請參閱[添加傳送通道](#adding-a-delivery-channel)。
 
-* 要在電腦上安裝控制實例，請選擇模 **[!UICONTROL Transactional message control]** 塊。
+* 要在電腦上安裝控制實例，請選擇&#x200B;**[!UICONTROL Transactional message control]**&#x200B;模組。
 
    ![](assets/messagecenter_install_controlinstance_001.png)
 
-* 要在電腦上安裝執行實例，請選擇模 **[!UICONTROL Transactional message execution]** 塊。
+* 要在電腦上安裝執行實例，請選擇&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;模組。
 
    ![](assets/messagecenter_install_executioninstance_001.png)
 
-## 新增傳送渠道 {#adding-a-delivery-channel}
+## 新增傳送渠道{#adding-a-delivery-channel}
 
 新增傳送渠道（行動通道、行動應用通道等） 必須在安裝Transactional消息包之前執行。 如果您已在電子郵件頻道上啟動交易式訊息專案，然後在專案期間決定新增新頻道，您必須遵循下列步驟：
 
-1. 使用套件匯入精靈( ******[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** )，安裝您需要的頻道，例如行動頻道。
-1. 執行檔案匯入( **[!UICONTROL Tools > Advanced > Import package... > File]** )，並選取 ****`[Your language]`**** datakitnmspackagemessageCenter.xml檔案。
-1. 在中， **[!UICONTROL XML content of the data to import]** 僅保留與新增渠道對應的傳送範本。 例如，如果您已新增 **Mobile頻道********[!UICONTROL Mobile transactional message]** ，請僅保留與(smsTriggerMessage)對應的實體元素。 如果您已新增 **行動應用程式頻道**，請只保留 **iOS交易訊息** (iosTriggerMessage)和 **Android交易訊息** (androidTriggerMessage)。
+1. 使用套件匯入精靈(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)，安裝您需要的頻道，例如&#x200B;**行動頻道**。
+1. 執行檔案導入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選擇&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
+1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，僅保留與新增頻道對應的傳送範本。 例如，如果您已新增&#x200B;**行動頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]**(smsTriggerMessage)對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易訊息**(iosTriggerMessage)和&#x200B;**Android交易訊息**(androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -107,24 +107,24 @@ Create your delivery templates the way you would for an email campaign:
 
 You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
-## 交易式訊息和推播通知 {#transactional-messaging-and-push-notifications}
+## 交易式傳訊和推播通知{#transactional-messaging-and-push-notifications}
 
 當與行動應用程式頻道模組結合時，交易訊息可讓您透過行動裝置上的通知來推播交易訊息。
 
 >[!NOTE]
 >
->「行動應用程式」頻道在本節中 [有詳細說明](../../delivery/using/about-mobile-app-channel.md)。
+>「行動應用程式」頻道詳見[本節](../../delivery/using/about-mobile-app-channel.md)。
 
 若要搭配行動應用程式頻道使用交易式訊息模組，您必須套用下列組態：
 
-1. 將行動應 **** 用程式頻道套件安裝至控制項和執行例項。
-1. 複製 **Mobile應用程式類型** Adobe Campaign服務，以及它在執行例項中包含的行動應用程式。
+1. 將&#x200B;**行動應用程式頻道**&#x200B;套件安裝至控制項和執行例項。
+1. 複製&#x200B;**Mobile應用程式**&#x200B;類型的Adobe Campaign服務，以及它在執行例項中包含的行動應用程式。
 
 事件必須包含下列元素：
 
-* 行動裝置ID(Android **的registrationId** ,iOS的 **deviceToken** )。 此ID代表通知要傳送至的「位址」。
-* 行動應用程式的連結或整合金鑰(**uuid**)，可讓您復原應用程式的特定連線資訊。
-* 將傳送通知的渠道(**whishedChannel**):iOS為41,Android為42
+* 行動裝置ID（適用於Android的&#x200B;**registrationId**，適用於iOS的&#x200B;**deviceToken**）。 此ID代表通知要傳送至的「位址」。
+* 指向行動應用程式的連結或整合金鑰(**uuid**)，可讓您復原應用程式的特定連線資訊。
+* 通知要傳送到的頻道(**whishedChannel**):iOS為41,Android為42
 * 所有對個人化有用的資料
 
 以下是包含此資訊之事件的範例：
@@ -154,27 +154,27 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 >
 >消息模板的建立保持不變。
 
-## 交易式訊息與LINE {#transactional-messaging-and-line}
+## 事務性消息傳遞和LINE {#transactional-messaging-and-line}
 
 交易訊息與LINE Channel結合，可讓您在消費性行動裝置中安裝的LINE應用程式上傳送即時訊息。 當LINE使用者新增品牌頁面時，這會用來傳送歡迎訊息。
 
-要將事務性消息模組與LINE一起使用，在您的 **marketing實例和執行實例上的配置需要以下** 元素 **** :
+要將事務性消息模組與LINE一起使用，**marketing**&#x200B;實例和&#x200B;**執行**&#x200B;實例上的配置需要以下元素：
 
-* 在兩個實 **[!UICONTROL LINE Connect]** 例上安裝軟體包。
-* 在您的 **[!UICONTROL Transactional message control]** 行銷例項上安裝套件，並在執 **[!UICONTROL Transactional message execution]** 行例項上安裝套件。
-* 在兩個實 **例上建立LINE外** 部帳戶 **** 和服務，其命名與要同步的實例相同。 有關如何建立LINE外部帳戶和服務的詳細資訊，請參閱本 [頁](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-)。
+* 在兩個實例上安裝&#x200B;**[!UICONTROL LINE Connect]**&#x200B;軟體包。
+* 將&#x200B;**[!UICONTROL Transactional message control]**&#x200B;套件安裝在您的行銷實例上，並將&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;套件安裝在執行實例上。
+* 在要同步的兩個實例上建立具有相同命名的LINE **外部帳戶**&#x200B;和&#x200B;**服務**。 有關如何建立LINE外部帳戶和服務的詳細資訊，請參閱此[頁](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-)。
 
-然後，從 **[!UICONTROL Explorer]** ，在 **[!UICONTROL Platform]** > **[!UICONTROL External account]** ，您需要在兩個例項上設定不同的外部帳戶：
+然後，從&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在兩個實例上配置不同的外部帳戶：
 
-1. 在您的 **[!UICONTROL External database]** 執行例項中建立 **外部帳戶** ，其設定如下：
+1. 在您的&#x200B;**execution**&#x200B;實例中建立&#x200B;**[!UICONTROL External database]**&#x200B;外部帳戶，其配置如下：
 
    ![](assets/line_config_mc.png)
 
    * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Type]** :選擇「 **[!UICONTROL External database]** Select（選擇）」。
    * **[!UICONTROL Enabled]** 框。
 
-   從類 **[!UICONTROL Connection]** 別：
+   從&#x200B;**[!UICONTROL Connection]**&#x200B;類別：
 
    * **[!UICONTROL Type]** :選擇資料庫伺服器，例如PostgresSQL。
    * **[!UICONTROL Server]** :輸入資料庫伺服器URL。
@@ -189,43 +189,43 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** 框。
 
 
-1. 在您的 **[!UICONTROL External Database]** 行銷實例中 **使用** 下列設定建立帳戶。
+1. 在您的&#x200B;**marketing**&#x200B;例項中建立&#x200B;**[!UICONTROL External Database]**&#x200B;帳戶，並使用下列設定。
 
    ![](assets/line_config_mc_1.png)
 
    * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Type]** :選擇「 **[!UICONTROL External database]** Select（選擇）」。
    * 必須勾選「啟用」方塊。
 
-   從類 **[!UICONTROL Connection]** 別：
+   從&#x200B;**[!UICONTROL Connection]**&#x200B;類別：
 
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL HTTP relay to remote Database]** 。
+   * **[!UICONTROL Type]** :選擇「 **[!UICONTROL HTTP relay to remote Database]** Select（選擇）」。
    * **[!UICONTROL Server]** :輸入您促銷活動的執行例項伺服器URL。
    * **[!UICONTROL Account]** :輸入用於訪問執行實例的帳戶。
    * **[!UICONTROL Password]** :輸入用於訪問執行實例的帳戶的密碼。
-   * **[!UICONTROL Data Source]** :輸入下列語法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
+   * **[!UICONTROL Data Source]** :輸入以下語法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
 
 
-1. 使用下 **[!UICONTROL Execution instance]** 列設定在您的行銷 **例項中建立外部帳戶** ，以建立資料同步工作流程：
+1. 在您的&#x200B;**marketing**&#x200B;例項中使用下列設定建立&#x200B;**[!UICONTROL Execution instance]**&#x200B;外部帳戶，以建立資料同步工作流程：
 
    ![](assets/line_config_mc_2.png)
 
    * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :視需要為您的外部帳戶命名。
-   * **[!UICONTROL Type]** :選擇 **[!UICONTROL Execution instance]** 。
+   * **[!UICONTROL Type]** :選擇「 **[!UICONTROL Execution instance]** Select（選擇）」。
    * 必須勾選「啟用」方塊。
 
-   從類 **[!UICONTROL Connection]** 別：
+   從&#x200B;**[!UICONTROL Connection]**&#x200B;類別：
 
    * **[!UICONTROL URL]** :輸入執行例項的URL。
    * **[!UICONTROL Account]** :輸入用於訪問執行實例的帳戶。
    * **[!UICONTROL Password]** :輸入用於訪問執行實例的帳戶的密碼。
 
-   從類 **[!UICONTROL Account connection method]** 別：
+   從&#x200B;**[!UICONTROL Account connection method]**&#x200B;類別：
 
-   * **[!UICONTROL Method]** :選擇 **[!UICONTROL Federated Data Access (FDA)]** 。
+   * **[!UICONTROL Method]** :選擇「 **[!UICONTROL Federated Data Access (FDA)]** Select（選擇）」。
    * **[!UICONTROL FDA account]** :從下拉式清單中選擇您的FDA帳戶。
    * 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕。
-   * 按一下該 **[!UICONTROL Create data synchronization workflow]** 按鈕可建立LINE資料同步工作流。
+   * 按一下&#x200B;**[!UICONTROL Create data synchronization workflow]**&#x200B;按鈕以建立LINE資料同步工作流。
 
 
 
