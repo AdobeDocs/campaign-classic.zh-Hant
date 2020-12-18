@@ -17,7 +17,7 @@ ht-degree: 37%
 
 # 定義篩選條件{#defining-filter-conditions}
 
-## 選擇運算元 {#choosing-the-operator}
+## 選擇運算子{#choosing-the-operator}
 
 在篩選條件中，您需要使用運算子將兩個值連結在一起。
 
@@ -36,7 +36,7 @@ ht-degree: 37%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Equal to</span> <br /> </td> 
-   <td> 傳回與第二個「值」欄中輸入的資料相同的結果。<br /> </td> 
+   <td> 傳回與在第二個值欄中輸入的資料相同的結果。<br /> </td> 
    <td> <strong>姓氏(@lastName)等於'Jones'</strong>，將只傳回姓氏為Jones的收件者。<br /> </td> 
   </tr> 
   <tr> 
@@ -71,53 +71,53 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不以</span> <br /> </td> 
-   <td> 傳回結果，不以輸入的值開頭<br /> </td> 
+   <td> 傳回結果，不以輸入值<br />開始 </td> 
    <td> <strong>帳戶#(@account)不以'20'開頭</strong>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Contains</span> <br /> </td> 
    <td> 傳回至少包含輸入值的結果。<br /> </td> 
-   <td> <strong>電子郵件網域(@domain)包含'mail'</strong>，將傳回所有包含'mail'的網域名稱。 因此，'gmail.com'網域也會傳回。<br /> </td> 
+   <td> <strong>電子郵件網域(@domain)包含'mail'</strong>，將傳回所有包含'mail'的網域名稱。因此，'gmail.com'網域也會傳回。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不包含</span> <br /> </td> 
    <td> 傳回不含輸入值的結果。<br /> </td> 
-   <td> <strong>電子郵件網域(@domain)不包含'vo'</strong>。 在此情況下，不會傳回包含'vo'的網域名稱。 'voila.fr'網域名稱不會出現在結果中。<br /> </td> 
+   <td> <strong>電子郵件網域(@domain)不包含'vo'</strong>。在此情況下，不會傳回包含'vo'的網域名稱。 'voila.fr'網域名稱不會出現在結果中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Like</span> <br /> </td> 
-   <td> <span class="uicontrol">Like</span> 與　<span class="uicontrol">Contains</span>　運算子非常類似。它可讓您在值中 <span class="uicontrol">插入</span> %萬用字元。<br /> </td> 
-   <td> <strong>姓氏(@lastName)，如「Jon%s」</strong>。 在此，萬用字元會用作「小丑」來尋找"Jones"，如果運算子忘記'n'和's'之間遺失的字母。<br /> </td> 
+   <td> <span class="uicontrol">Like</span> 與　<span class="uicontrol">Contains</span>　運算子非常類似。它可讓您在值中插入<span class="uicontrol">%</span>萬用字元。<br /> </td> 
+   <td> <strong>姓氏(@lastName)，如「Jon%s」</strong>。在這裡，萬用字元會當做「小丑」來尋找"Jones"，如果運算子忘記'n'和's'之間遺失的字母，則會使用此字元尋找"Jones"。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
    <td> 類似 <span class="uicontrol">Like</span>。可讓您不復原輸入的值。 在這裡，輸入的值也必須包含 <span class="uicontrol">%</span> 萬用字元。<br /> </td> 
-   <td> <strong>姓氏(@lastName)與'Smi%h'不同</strong>。 在此，不會傳回姓氏為'Smi%h'的收件者。<br /> </td> 
+   <td> <strong>姓氏(@lastName)與'Smi%h'不同</strong>。在此，不會傳回姓氏為'Smi%h'的收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Is empty</span> <br /> </td> 
-   <td> 在此情況下，我們尋找的結果與第二個「值」欄中的空值相符。<br /> </td> 
-   <td> <strong>Mobile(@mobilePhone)為空</strong> ，會傳回所有沒有行動電話號碼的收件者。<br /> </td> 
+   <td> 在這種情況下，我們尋找的結果與第二個「值」欄中的空值相符。<br /> </td> 
+   <td> <strong>行動(@mobilePhone)會傳</strong> 回所有沒有行動號碼的收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不為空</span> <br /> </td> 
-   <td> 與「空白」運算子 <span class="uicontrol">相反</span> 。 不需要在第二個「值」列中輸入資料。<br /> </td> 
+   <td> 與<span class="uicontrol">Is empty</span>運算子相反。 無需在第二個值列中輸入資料。<br /> </td> 
    <td> <strong>電子郵件(@email)不為空</strong>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">包含在</span> <br /> </td> 
    <td> 傳回包含在指定值中的結果。 這些值必須以逗號分隔。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)包含在'12/10/1979,12/10/1984'中</strong>，將會傳回在這些日期之間出生的收件者。 <br /> </td> 
+   <td> <strong>出生日期(@birthDate)包含在'12/10/1979,12/10/1984'中</strong>，將會傳回在這些日期之間出生的收件者。  <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不包含在</span> <br /> </td> 
-   <td> 類似於運算 <span class="uicontrol">子中包含</span> Is。 在此，我們要根據輸入的值排除收件者。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'中</strong>。 與上例不同，在這些日期內出生的收件者將不會傳回。<br /> </td> 
+   <td> 類似<span class="uicontrol">Is included in </span>運算子的作用。 在此，我們要根據輸入的值排除收件者。<br /> </td> 
+   <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'中</strong>。與上例不同，在這些日期內出生的收件者將不會傳回。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 使用AND，或，除 {#using-and--or--except}
+## 使用AND、OR，但{#using-and--or--except}除外
 
 對於使用多個篩選條件的查詢，您需要定義條件之間的連結。 有三個可能的連結：
 
@@ -125,7 +125,7 @@ ht-degree: 37%
 * **[!UICONTROL Or]** 讓你提供另一種選擇，
 * **[!UICONTROL Except]** 可讓您定義例外。
 
-按一 **[!UICONTROL And]** 下（依預設提供）並從下拉式清單中選擇。
+按一下&#x200B;**[!UICONTROL And]**（預設提供）並從下拉式清單中選擇。
 
 ![](assets/query_condition_modif_01.png)
 
@@ -146,7 +146,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_31.png)
 
-## 排定條件優先順序 {#prioritizing-conditions}
+## 排定條件{#prioritizing-conditions}優先順序
 
 本節說明如何利用工具列中的藍色箭頭來排列條件的優先順序。
 
@@ -157,33 +157,33 @@ ht-degree: 37%
 
 * 垂直箭頭可讓您移動條件，從而更改其執行順序。
 
-此示例說明如何使用箭頭刪除括弧層。 從下列篩選條件開始： **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
+此示例說明如何使用箭頭刪除括弧層。 從下列篩選條件開始：**[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**。
 
-將游標置於篩選條 **[!UICONTROL Gender (@gender) equal to Male]** 件上，然後按一下箭 **[!UICONTROL Remove a parenthesis level]** 頭。
+將游標置於&#x200B;**[!UICONTROL Gender (@gender) equal to Male]**&#x200B;過濾條件上，然後按一下&#x200B;**[!UICONTROL Remove a parenthesis level]**&#x200B;箭頭。
 
 ![](assets/query_editor_nveau_32.png)
 
-條 **[!UICONTROL Gender (@gender) equal to Male]** 件已從括弧中取出。 它已經向「倫敦金融城與倫敦相當」的水準邁進。 這些條件會連結在一起(**[!UICONTROL And]**)。
+**[!UICONTROL Gender (@gender) equal to Male]**&#x200B;條件已從括弧中取出。 它已經向「倫敦金融城與倫敦相當」的水準邁進。 這些條件會連結在一起(**[!UICONTROL And]**)。
 
-## 選擇要提取的資料 {#selecting-data-to-extract}
+## 選擇要提取{#selecting-data-to-extract}的資料
 
-可用欄位因表格而異。 所有欄位都儲存在主節點中，稱為 **[!UICONTROL Main element]**。 在以下範例中，可用欄位位於收件者表格中。 欄位一律以字母順序顯示。
+可用欄位因表格而異。 所有欄位都儲存在稱為&#x200B;**[!UICONTROL Main element]**&#x200B;的主節點中。 在以下範例中，可用欄位位於收件者表格中。 欄位一律以字母順序顯示。
 
-所選欄位的詳細資訊在窗口底部可見。 例如，欄位 **[!UICONTROL Email domain]** 為a, **[!UICONTROL Calculated SQL field]** 其延伸為 **[!UICONTROL (@domain)]**。
+所選欄位的詳細資訊在窗口底部可見。 例如，**[!UICONTROL Email domain]**&#x200B;欄位是&#x200B;**[!UICONTROL Calculated SQL field]**，其延伸名為&#x200B;**[!UICONTROL (@domain)]**。
 
 ![](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
->使用工 **[!UICONTROL Search]** 具尋找可用欄位。
+>使用&#x200B;**[!UICONTROL Search]**&#x200B;工具尋找可用欄位。
 
-連按兩下可用欄位，將其新增至輸出欄。 在查詢結束時，每個選定欄位都會在窗口中建立一 **[!UICONTROL Data preview]** 列。
+連按兩下可用欄位，將其新增至輸出欄。 在查詢結束時，每個選定欄位都會在&#x200B;**[!UICONTROL Data preview]**&#x200B;窗口中建立一列。
 
 ![](assets/query_editor_nveau_01.png)
 
-預設不會顯示進階欄位。 按一 **[!UICONTROL Display advanced fields]** 下可用欄位右下角的，即可顯示所有項目。 再按一下以返回前一個檢視。
+預設不會顯示進階欄位。 按一下可用欄位右下角的&#x200B;**[!UICONTROL Display advanced fields]**&#x200B;以顯示所有項目。 再按一下以返回前一個檢視。
 
-例如，在收件者表格中，進階欄位是 **Boolean 1****[!UICONTROL Boolean 2]**、 **[!UICONTROL Boolean 3]**、 **[!UICONTROL Foreign key of "Folder" link]**&#x200B;等。
+例如，在收件者表格中，進階欄位為&#x200B;**Boolean 1**、**[!UICONTROL Boolean 2]**、**[!UICONTROL Boolean 3]**、**[!UICONTROL Foreign key of "Folder" link]**&#x200B;等。
 
 以下示例顯示收件人表的高級欄位。
 
@@ -203,7 +203,7 @@ ht-degree: 37%
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_47.png" /> </td> 
    <td> 簡單欄位<br /> </td> 
-   <td> 電子郵件、性別等<br /> </td> 
+   <td> 電子郵件、性別等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
@@ -212,23 +212,23 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_02.png" /> </td> 
-   <td> 外鍵。 用作其他表格的連結。<br /> </td> 
+   <td> 外鍵。 用作指向另一個表的連結。<br /> </td> 
    <td> 接收方外鍵、服務外鍵等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> 計算欄位。 此類型的欄位是根據要求使用資料庫中的值來計算。<br /> </td> 
-   <td> 年齡、電子郵件網域等<br /> </td> 
+   <td> 計算欄位。 此類型的欄位是使用資料庫中的值在請求時計算的。<br /> </td> 
+   <td> 年齡、電子郵件網域等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_49.png" /> </td> 
-   <td> 包含長篇文本的欄位。<br /> </td> 
+   <td> 包含長文本的欄位。<br /> </td> 
    <td> 注釋、完整地址等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_50.png" /> </td> 
-   <td> 索引的SQL欄位。 <br /> </td> 
-   <td> 完整名稱、ISO程式碼等 <br /> </td> 
+   <td> 索引的SQL欄位。<br /> </td> 
+   <td> 完整名稱、ISO程式碼等<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -246,12 +246,12 @@ ht-degree: 37%
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> 特別是表的連結。 這些關聯與1-1類型關聯一致。 源表的具體值只能與目標表的一個具體值一致。 例如，只有一個收件者可以連結至國家。<br /> </td> 
-   <td> 資料夾、狀態、國家等 <br /> </td> 
+   <td> 特別是表的連結。 這些關聯與1-1類型關聯一致。 源表的具體值只能與目標表的一個具體值一致。 例如，只能將一個收件者連結至國家。<br /> </td> 
+   <td> 資料夾、狀態、國家等<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> 特定表格上的收集元素。 這些關聯與1-N類型關聯一致。 一個源表實例可以與目標表的幾個實例重合，但目標表的一個實例只能與源表的一個實例重合。 例如，一個收件者可以訂閱'n'訂閱信函。<br /> </td> 
+   <td> 特定表格上的收集元素。 這些關聯與1-N類型關聯一致。 一個源表實例可以與目標表的幾個實例重合，但目標表的一個實例只能與源表的一個實例重合。 例如，一個收件者可以訂閱'n'訂閱字母。<br /> </td> 
    <td> 訂閱、清單、排除記錄檔等。<br /> </td> 
   </tr> 
  </tbody> 
@@ -259,13 +259,13 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->* 使用 **[!UICONTROL Add]** 按鈕（位於側表徵圖欄上方）可新增要編輯運算式的輸出欄。 有關編輯表達式的詳細資訊，請參 [閱Building expressions](#building-expressions)。
->* 按一下紅色的&#39;x&#39;（刪除），以刪除&#x200B;**輸出欄**。
+>* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按鈕（位於側表徵圖欄上方）添加要編輯表達式的輸出列。 有關編輯表達式的詳細資訊，請參閱[ Building expressions](#building-expressions)。
+>* 按一下紅色的「x」(**Delete**)，以刪除輸出欄。
 >* 使用箭頭更改輸出列的順序。
->* 此 **[!UICONTROL Distribution of values]** 功能可用來檢視所選欄位值的分佈（例如，連結至收件者城鎮、收件者語言等的分佈）。
+>* **[!UICONTROL Distribution of values]**&#x200B;可作為查看所選欄位值的分佈（例如，連結到接收城鎮、接收人語言等的分佈）的方式。
 
 
-## 建立計算欄位 {#creating-calculated-fields}
+## 建立計算欄位{#creating-calculated-fields}
 
 如有必要，請在資料格式化期間新增欄。 計算欄位會新增欄至資料預覽區段。 按一下 **[!UICONTROL Add a calculated field]**。
 
@@ -281,7 +281,7 @@ ht-degree: 37%
 
    ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript expression]**:計算欄位的值是JavaScript函式評估的結果。 可輸入傳回的值（數字、日期等）。
+* **[!UICONTROL JavaScript expression]**:計算欄位的值是JavaScript函式評估的結果。可輸入傳回的值（數字、日期等）。
 
    ![](assets/query_editor_nveau_62.png)
 
@@ -289,24 +289,24 @@ ht-degree: 37%
 
    可以使用列的源值並為其指定目標值。 此目標值將顯示在新輸出列中。
 
-   有一個新增計算欄位類型 **[!UICONTROL Enumerations]** 的範例，請參閱 [本節](../../workflow/using/adding-enumeration-type-calculated-field.md)。
+   有關添加計算欄位類型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，請參閱[本節](../../workflow/using/adding-enumeration-type-calculated-field.md)。
 
    ![](assets/query_editor_nveau_63.png)
 
-   類型 **[!UICONTROL Enumerations]** 計算欄位可包含4個條件：
+   **[!UICONTROL Enumerations]**&#x200B;類型計算欄位可包含4個條件：
 
    * **[!UICONTROL Keep the source value]** 將源值還原到目標，而不進行更改。
    * **[!UICONTROL Use the following value]** 可讓您輸入未定義來源值的預設目標值。
    * **[!UICONTROL Generate a warning and continue]** 警告用戶源值無法更改。
    * **[!UICONTROL Generate an error and reject the line]** 防止計算和導入行。
 
-按一下 **[!UICONTROL Detail of calculated field]** 查看插入欄位的詳細資訊。
+按一下&#x200B;**[!UICONTROL Detail of calculated field]**&#x200B;查看插入欄位的詳細資訊。
 
-若要移除此計算欄位，請按一下 **[!UICONTROL Remove the calculated field]** 交叉點。
+若要移除此計算欄位，請按一下&#x200B;**[!UICONTROL Remove the calculated field]**&#x200B;交叉點。
 
 ![](assets/query_editor_nveau_58.png)
 
-## 建立運算式 {#building-expressions}
+## 建立運算式{#building-expressions}
 
 運算式編輯工具可讓您計算匯整、產生函式，或使用運算式編輯公式。
 
@@ -314,11 +314,11 @@ ht-degree: 37%
 
 應用以下步驟：
 
-1. 在視 **[!UICONTROL Add]** 窗中按一 **[!UICONTROL Data to extract]** 下。 在窗口 **[!UICONTROL Formula type]** 中，選擇要輸入表達式的公式類型。
+1. 按一下&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中的&#x200B;**[!UICONTROL Add]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，選擇要輸入表達式的公式類型。
 
-   可用的公式有幾種類型： **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**
+   可用的公式有幾種類型：**[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
 
-   Select **[!UICONTROL Process on an aggregate function]**, and **[!UICONTROL Count]**. Click **[!UICONTROL Next]**.
+   選擇&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -326,30 +326,30 @@ ht-degree: 37%
 
    ![](assets/query_editor_nveau_88.png)
 
-以下是視窗中可用選項的詳細檢 **[!UICONTROL Formula types]** 視：
+以下是&#x200B;**[!UICONTROL Formula types]**&#x200B;視窗中可用選項的詳細檢視：
 
 ![](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Field only]** 讓您返回視 **[!UICONTROL Field to select]** 窗。
-1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. 以下是匯整使用的一些範例：
+1. **[!UICONTROL Aggregate (Process on an aggregate function)]**.以下是匯整使用的一些範例：
 
    * **[!UICONTROL Count]** 可讓您執行主要金鑰計數。
    * **[!UICONTROL Sum]** 可讓您將客戶在一年以上進行的所有購買加總。
    * **[!UICONTROL Maximum value]** 可讓您尋找購買最多「n」個產品的客戶。
    * **[!UICONTROL Minimum value]** 可讓您排序客戶，並尋找最近訂閱過優惠的客戶。
-   * **[!UICONTROL Average]**. 此函式可讓您計算收件者的平均年齡。
+   * **[!UICONTROL Average]**.此函式可讓您計算收件者的平均年齡。
 
-      此 **[!UICONTROL Distinct]** 方塊可讓您復原欄的唯一值和非零值。 例如，您可以復原收件者的所有追蹤記錄檔，而這些追蹤記錄檔會變更為值1，因為這些記錄檔都與相同的收件者有關。
+      **[!UICONTROL Distinct]**&#x200B;方塊可讓您恢復列的唯一值和非零值。 例如，您可以復原收件者的所有追蹤記錄檔，而這些追蹤記錄檔會變更為值1，因為這些記錄檔都與相同的收件者有關。
 
-1. **[!UICONTROL Expression]** 開啟窗 **[!UICONTROL Edit the expression]** 口。 這可讓您偵測到數字過多的電話號碼，可能是輸入錯誤。
+1. **[!UICONTROL Expression]** 開啟窗 **[!UICONTROL Edit the expression]** 口。這可讓您偵測到數字過多的電話號碼，可能是輸入錯誤。
 
    ![](assets/query_editor_nveau_71.png)
 
-   有關所有可用函式的清單，請參 [閱函式清單](#list-of-functions)。
+   有關所有可用函式的清單，請參閱[函式清單](#list-of-functions)。
 
 ## 函式清單 {#list-of-functions}
 
-如果選 **[!UICONTROL Expression]** 擇了類型公式，則將進入「編輯表達式」窗口。 各種函式類別可關聯至可用欄位： **[!UICONTROL Aggregates]**、 **[!UICONTROL String]**、 **[!UICONTROL Date]**、 **[!UICONTROL Numerical]**、 **[!UICONTROL Currency]**、 **[!UICONTROL Geomarketing]**&#x200B;和 **[!UICONTROL Windowing function]****[!UICONTROL Others]**。
+如果選擇&#x200B;**[!UICONTROL Expression]**&#x200B;類型公式，則會進入「編輯表達式」窗口。 各種函式類別可關聯至可用欄位：**[!UICONTROL Aggregates]**、**[!UICONTROL String]**、**[!UICONTROL Date]**、**[!UICONTROL Numerical]**、**[!UICONTROL Currency]**、**[!UICONTROL Geomarketing]**、**[!UICONTROL Windowing function]**&#x200B;和&#x200B;**[!UICONTROL Others]**。
 
 運算式編輯器的外觀如下：
 
@@ -373,7 +373,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>計數</strong><br /> </td> 
-   <td> Counts the non-null values of a column<br /> </td> 
+   <td> 計算列<br />的非空值 </td> 
    <td> Count(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -383,17 +383,17 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Countdistinct</strong><br /> </td> 
-   <td> Counts the distinct non-null values of a column<br /> </td> 
+   <td> 計算列<br />的不同非空值 </td> 
    <td> Countdistinct(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>最大值</strong><br /> </td> 
-   <td> Returns the maximum value of a number, string, or date type column<br /> </td> 
+   <td> 傳回數字、字串或日期類型欄的最大值<br /> </td> 
    <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>最小</strong><br /> </td> 
-   <td> Returns the minimum value of a number, string or date type column<br /> </td> 
+   <td> 傳回數字、字串或日期類型欄<br />的最小值 </td> 
    <td> Min(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -403,7 +403,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>總和</strong><br /> </td> 
-   <td> 傳回數字、字串或日期類型欄的值總和<br /> </td> 
+   <td> 傳回數字、字串或日期類型欄值之和<br /> </td> 
    <td> Sum(&lt;value&gt;)<br /></td> 
   </tr> 
  </tbody> 
@@ -450,7 +450,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
-   <td> 如果前兩個參數相等，則傳回第三個參數。 若否，則傳回最後一個參數<br /> </td> 
+   <td> 如果前兩個參數相等，則傳回第三個參數。 否則，返回最後一個參數<br /> </td> 
    <td> IfEquals(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -460,12 +460,12 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
-   <td> 串連作為參數傳遞的字串。 如有必要，在字串之間添加空格。<br /> </td> 
+   <td> 串連作為參數傳遞的字串。 在字串之間添加空格（如有必要）。<br /> </td> 
    <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
-   <td> 串連作為參數傳遞的字串。 如果需要，在字串之間添加空格<br /> </td> 
+   <td> 串連作為參數傳遞的字串。 如有必要，在字串之間添加空格<br /> </td> 
    <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -480,7 +480,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
-   <td> 傳回字串的長度<br /> </td> 
+   <td> 傳回字串長度<br /> </td> 
    <td> Length(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -525,7 +525,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> Extracts the substring starting at character n1 of the string and of length n2<br /> </td> 
+   <td> 從字串的字元n1和長度n2<br />開始提取子字串 </td> 
    <td> Substring(&lt;string&gt;, &lt;offset&gt;, &lt;length&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -550,7 +550,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Returns the string size<br /> </td> 
+   <td> 傳回字串大小<br /> </td> 
    <td> dataLength(&lt;string&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -597,7 +597,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>DateOnly</strong><br /> </td> 
-   <td> Returns the date only (with time at 00:00)*<br /> </td> 
+   <td> 僅傳回日期（時間為00:00）*<br /> </td> 
    <td> DateOnly(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -607,17 +607,17 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> Returns the number of the day in the year of the date<br /> </td> 
+   <td> 傳回日期<br />年中的日數 </td> 
    <td> DayOfYear(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> Returns the date corresponding to the current date minus n days<br /> </td> 
+   <td> 傳回與目前日期對應的日期減去n天<br /> </td> 
    <td> DaysAgo(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> Returns the date (integer yyyymmdd) corresponding to the current date minus n days<br /> </td> 
+   <td> 傳回與目前日期對應的日期（整數yyymmdd）減去n天<br /> </td> 
    <td> DaysAgoInt(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -785,7 +785,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->請注意， **Dateonly** 函式會考慮伺服器的時區，而非運算子的時區。
+>請注意，**Dateonly**&#x200B;函式會考慮伺服器的時區，而非運算子的時區。
 
 **數值**
 
@@ -808,7 +808,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> Returns the greatest integer greater than or equal to a number<br /> </td> 
+   <td> 傳回大於或等於數字<br />的最大整數 </td> 
    <td> Floor(&lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -823,7 +823,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Mod</strong><br /> </td> 
-   <td> Returns the remainder of the integer division of n1 by n2<br /> </td> 
+   <td> 傳回n1除以n2<br />的整數除的余數 </td> 
    <td> Mod(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -880,12 +880,12 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>ConvertCurrency</strong><br /> </td> 
-   <td> 將來源貨幣中的金額折換為目標貨幣中的金額<br /> </td> 
+   <td> 將來源貨幣中的金額換算為目標貨幣中的金額<br /> </td> 
    <td> ConvertCurrency(&lt;amount&gt;, &lt;source currency&gt;, &lt;target currency&gt;, &lt;conversion date&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>FormatCurrency</strong><br /> </td> 
-   <td> 根據所選貨幣設定來設定顯示金額的格式<br /> </td> 
+   <td> 根據所選貨幣設定格式化顯示的金額<br /> </td> 
    <td> FormatCurrency(&lt;amount&gt;, &lt;currency&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -902,7 +902,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>距離</strong><br /> </td> 
-   <td> Returns the distance between two points defined by their longitude and latitude, expressed in degrees.<br /> </td> 
+   <td> 傳回由經度和緯度定義的兩個點之間的距離，以度表示。<br /> </td> 
    <td> 距離（&lt;Longitude A&gt;, &lt;Latitude A&gt;, &lt;Longitude B&gt;, &lt;Latitude B&gt;）<br /> </td>  
   </tr> 
  </tbody> 
@@ -919,7 +919,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>案例</strong><br /> </td> 
-   <td> 如果條件為true，則返回值1。 否則，返回值2。<br /> </td> 
+   <td> 如果條件為true，則返回值1。 否則，返回值2.<br /> </td> 
    <td> Case(When(&lt;condition&gt;, &lt;value 1&gt;), Else(&lt;value 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
@@ -934,7 +934,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Decode</strong><br /> </td> 
-   <td> 如果值1 =值2，則返回值3。 如果不返回值4。<br /> </td> 
+   <td> 如果值1 =值2，則返回值3。 如果不返回值4.<br /> </td> 
    <td> Decode(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;, &lt;value 4&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -944,7 +944,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
-   <td> Extracts the domain from an e-mail address<br /> </td> 
+   <td> 從電子郵件地址中提取域<br /> </td> 
    <td> GetEmailDomain(&lt;value&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -954,7 +954,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Iif</strong><br /> </td> 
-   <td> 如果運算式為true，則傳回值1。 否則返回值2<br /> </td> 
+   <td> 如果運算式為true，則傳回值1。 否則，返回值2<br /> </td> 
    <td> Iif(&lt;condition&gt;, &lt;value 1&gt;, &lt;value 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -964,7 +964,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Returns value 2 if string 1 is empty, otherwise returns value 3<br /> </td> 
+   <td> 如果字串1為空，則返回值2，否則返回值3<br /> </td> 
    <td> IsEmptyString(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -989,7 +989,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>When</strong><br /> </td> 
-   <td> 如果運算式為true，則傳回值1。 If not, it returns value 2 (may only be used as a parameter of the case function)<br /> </td> 
+   <td> 如果運算式為true，則傳回值1。 否則，它返回值2（只能用作case函式的參數）<br /> </td> 
    <td> When(&lt;condition&gt;, &lt;value 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -1021,7 +1021,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>RowNum</strong><br /> </td> 
-   <td> Generates a line number based on the table partition and on a sorting sequence.<br /> </td> 
+   <td> 根據表分區和排序順序生成行號。<br /> </td> 
    <td> RowNum(PartitionBy(&lt;value 1&gt;), OrderBy(&lt;value 1&gt;))<br /> </td> 
   </tr> 
  </tbody> 
