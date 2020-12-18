@@ -17,17 +17,17 @@ ht-degree: 1%
 
 # 傳入電子郵件{#inbound-emails}
 
-「傳 **入電子郵件** 」活動可讓您從POP3郵件伺服器下載並處理電子郵件訊息。
+**傳入電子郵件**&#x200B;活動可讓您從POP3郵件伺服器下載並處理電子郵件訊息。
 
 ![](assets/email_rec_edit_1.png)
 
-「入站電子郵 **件** 」活動的第一個頁籤允許您輸入POP3伺服器的參數，並輸入在收到每條消息時要執行的指令碼。 第二個標籤可讓您指派排程給活動，而第三個標籤則定義活動到期條件。
+**入站電子郵件**&#x200B;活動的第一個頁籤允許您輸入POP3伺服器的參數，並輸入在收到每條消息時要執行的指令碼。 第二個標籤可讓您指派排程給活動，而第三個標籤則定義活動到期條件。
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-      啟用此選項時，您可以選擇外部POP3帳戶，而不是輸入連接參數。 該 **[!UICONTROL External account]** 欄位指定用於連接到電子郵件服務的外部POP3帳戶。 只有啟用「使用外部帳戶」選項時，才會顯示此欄位。
+      啟用此選項時，您可以選擇外部POP3帳戶，而不是輸入連接參數。 **[!UICONTROL External account]**&#x200B;欄位指定要用來連線至電子郵件服務的外部POP3帳戶。 只有啟用「使用外部帳戶」選項時，才會顯示此欄位。
 
       如果未選取此選項，您必須指定下列參數：
 
@@ -64,19 +64,19 @@ ht-degree: 1%
    * 3 —— 從伺服器刪除消息。
    * 4 —— 將消息保留在伺服器上。
 
-   可從全域變數存取訊息的 **[!UICONTROL mailMessage]** 內容。
+   可從全域&#x200B;**[!UICONTROL mailMessage]**&#x200B;變數存取訊息內容。
 
 1. **[!UICONTROL Schedule]**
 
-   要定義活動的計畫，請按一下該標 **[!UICONTROL Scheduling]** 簽並選中 **[!UICONTROL Plan execution]**。 按一下 **[!UICONTROL Change]** 按鈕以設定排程。
+   要定義活動的調度，請按一下&#x200B;**[!UICONTROL Scheduling]**&#x200B;頁籤並選中&#x200B;**[!UICONTROL Plan execution]**。 按一下&#x200B;**[!UICONTROL Change]**&#x200B;按鈕以配置計畫。
 
-   計畫配置與計畫活動的配置相同。 請參閱 [Scheduler](../../workflow/using/scheduler.md)。
+   計畫配置與計畫活動的配置相同。 請參閱[調度程式](../../workflow/using/scheduler.md)。
 
 1. **[!UICONTROL Expiration]**
 
-   您可以透過標籤來定義到期延 **[!UICONTROL Expiration]** 遲。
+   您可以透過&#x200B;**[!UICONTROL Expiration]**&#x200B;標籤來定義到期延遲。
 
    ![](assets/email_rec_edit_3.png)
 
-   設定與排程活動的設定相同。 請參閱 [到期](../../workflow/using/defining-approvals.md)。
+   設定與排程活動的設定相同。 請參閱[過期](../../workflow/using/defining-approvals.md)。
 
