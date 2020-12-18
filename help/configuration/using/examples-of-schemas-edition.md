@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # 方案版本範例{#examples-of-schemas-edition}
 
-## 擴展表 {#extending-a-table}
+## 擴展表{#extending-a-table}
 
-要擴展 **nms:recipient** schema recipient表，請應用以下過程：
+要擴展&#x200B;**nms:recipient**&#x200B;模式接收方表，請應用以下過程：
 
-1. 使用下列資料建立&#x200B;**擴充功能架構(cus:extension**):
+1. 使用下列資料建立擴充功能架構(**cus:extension**):
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此範例中，新增索引欄位(**fidelity**)，並以列舉欄位( **areaChema)來補充位置元素(已存在於** nms:recipient ******** schema)。
+   在本例中，添加索引欄位(**fidelity**)，並且&#x200B;**location**&#x200B;元素（已存在於&#x200B;**nms:recipient**&#x200B;模式中）以列舉欄位(**are**)補充。
 
    >[!IMPORTANT]
    >
-   >請記住，要添加 **extendedSchema** 屬性以引用擴展模式。
+   >請記得新增&#x200B;**extendedSchema**&#x200B;屬性以參考擴充架構。
 
-1. 檢查擴展模式是否為 **nms:recipient** 模式，並檢查其他資料是否存在：
+1. 檢查擴展模式是否為&#x200B;**nms:recipient**&#x200B;模式，並檢查是否存在附加資料：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -84,7 +84,7 @@ ht-degree: 2%
    CREATE INDEX NmsRecipient_area ON NmsRecipient(sArea);
    ```
 
-## 連結的系清單格 {#linked-collection-table}
+## 連結的收集表格{#linked-collection-table}
 
 本節介紹如何建立連結到基數為1-N的收件者表的訂單表。
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表類型為 **autopk** ，以便建立自動生成的主鍵，該主鍵用於連結與收件人表的連接。
+表類型為&#x200B;**autopk**，以便建立自動生成的主鍵，該主鍵將用於連結到收件人表。
 
 已生成模式：
 
@@ -149,7 +149,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >在指令碼末尾的SQL命令INSERT INTO可讓您插入設定為0的標識符記錄，以模擬外部連接。
 
-## 擴充表 {#extension-table}
+## 擴展表{#extension-table}
 
 擴充表可讓您擴充連結基數1-1表中現有表格的內容。
 
@@ -199,7 +199,7 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## 溢位表 {#overflow-table}
+## 溢出表{#overflow-table}
 
 溢出表是擴展表（基數1-1），但到要擴展表的連結的聲明將填充到溢出表的模式中。
 
@@ -233,7 +233,7 @@ CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId I
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## 關係表 {#relationship-table}
+## 關係表{#relationship-table}
 
 關係表格可讓您將兩個表格連結為基數N-N。此表僅包含要連結的表的外鍵。
 
@@ -299,11 +299,11 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## 使用案例：將欄位連結到現有引用表 {#uc-link}
+## 使用案例：將欄位連結到現有引用表{#uc-link}
 
 此使用案例示範如何使用現有的參考表作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代項目。
 
-您也可以將現有的參考表用作方案中的枚舉。 這可透過建立表格與參考表格之間的連結，以及新增屬性 **displayAsField=&quot;true&quot;來達成**。
+您也可以將現有的參考表用作方案中的枚舉。 這可以通過建立表和參考表之間的連結，並添加屬性&#x200B;**displayAsField=&quot;true&quot;**&#x200B;來實現。
 
 在此示例中，參考表包含銀行名稱和標識符的清單：
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-在使用此參考表格的任何表格中，定義連結並新增 **displayAsField=&quot;true&quot;屬性** 。
+在使用此參考表的任何表中，定義連結並添加&#x200B;**displayAsField=&quot;true&quot;**&#x200B;屬性。
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ xtkschema="xtk:srcSchema">
 
 * 要使其自動完成，必須在參考表中定義計算字串。
 
-* 在連結定 **義中新增noDbIndex=&quot;true&quot;** 屬性，以防止Adobe Campaign在連結來源表格中儲存的值上建立索引。
+* 在連結定義中新增&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;屬性，以防止Adobe Campaign在連結來源表格中儲存的值上建立索引。
 
 ## 相關主題
 
