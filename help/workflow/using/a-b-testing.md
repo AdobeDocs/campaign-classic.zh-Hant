@@ -37,11 +37,11 @@ ht-degree: 1%
 * [步驟7:啟動工作流](#step-7--starting-the-workflow)
 * [步驟8:分析結果](#step-8--analyzing-the-result)。
 
-## Step 1: Creating a targeting workflow {#step-1--creating-a-targeting-workflow}
+## 步驟1:建立定位工作流程{#step-1--creating-a-targeting-workflow}
 
-您必須在促銷活動的標籤中 **[!UICONTROL Targeting and Workflows]** 建立工作流程。 它由活動、與兩個活 **[!UICONTROL Query]** 動連結的活 **[!UICONTROL Split]** 動、活動、活 **[!UICONTROL Email delivery]** 動和活 **[!UICONTROL Wait]** 動組成 **[!UICONTROL JavaScript code]****[!UICONTROL Delivery]** 。
+您必須在促銷活動的&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;標籤中建立工作流程。 它由&#x200B;**[!UICONTROL Query]**&#x200B;活動、與兩個&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動連結的&#x200B;**[!UICONTROL Split]**&#x200B;活動、**[!UICONTROL Wait]**&#x200B;活動、**[!UICONTROL JavaScript code]**&#x200B;活動和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動組成。
 
-1. 如果您尚未建立促銷活動，請建立促銷活動(如需詳細資訊，請參閱此 [節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign))。
+1. 如果您尚未建立促銷活動，請建立促銷活動（如需詳細資訊，請參閱此[章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)）。
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -49,37 +49,37 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. 變更現有工作流程的標籤或按一 **[!UICONTROL Add]** 下以建立新工作流程(如需詳細資訊，請參閱本 [節](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population))。
+1. 變更現有工作流程的標籤，或按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新工作流程（如需詳細資訊，請參閱此[章節](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. 使用滑鼠將活動拖放到工作流中，包括 **[!UICONTROL Query]** (**[!UICONTROL Target]** )、( **[!UICONTROL Split]** tab)、兩個&#x200B;**[!UICONTROL Target]** (tab)、活動(tab)、活動(tab)、活動 **[!UICONTROL Email deliveries]****[!UICONTROL Deliveries]****[!UICONTROL Wait]****[!UICONTROL Flow Control]****[!UICONTROL JavaScript code]****[!UICONTROL Actions]****[!UICONTROL Delivery]****[!UICONTROL Actions]** (tab)、活動(tab)和活動(tab)。
+1. 使用滑鼠將活動拖放到工作流圖中，包括&#x200B;**[!UICONTROL Query]**（**[!UICONTROL Target]**&#x200B;標籤）、**[!UICONTROL Split]**（**[!UICONTROL Target]**&#x200B;標籤）、兩個&#x200B;**[!UICONTROL Email deliveries]**（**[!UICONTROL Deliveries]**&#x200B;標籤）、**[!UICONTROL Wait]**&#x200B;活動（**[!UICONTROL Flow Control]**&#x200B;標籤）、**[!UICONTROL JavaScript code]**&#x200B;活動（**[!UICONTROL Actions]**&#x200B;標籤）和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動（**[!UICONTROL Actions]**&#x200B;標籤）。
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-## 步驟2:配置人口樣本 {#step-2--configuring-population-samples}
+## 步驟2:配置人口樣本{#step-2--configuring-population-samples}
 
-### 配置查詢活動 {#configuring-the-query-activity}
+### 配置查詢活動{#configuring-the-query-activity}
 
-* Double-click the **[!UICONTROL Query]** activity.
+* 按兩下&#x200B;**[!UICONTROL Query]**&#x200B;活動。
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* 按一下 **[!UICONTROL Edit query]** 連結，然後選取您要定位的收件者。
+* 按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結，並選取您要定位的收件者。
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* 將活動 **[!UICONTROL Query]** 連結至活 **[!UICONTROL Split]** 動。
+* 將&#x200B;**[!UICONTROL Query]**&#x200B;活動連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-### 配置拆分活動 {#configuring-the-split-activity}
+### 配置拆分活動{#configuring-the-split-activity}
 
 此活動可讓您建立數個人口族群：接收遞送A的遞送B的遞送B的遞送B的遞送A和剩餘的人口。 使用隨機選擇可讓您只鎖定每個傳送的部分人口。
 
 1. 建立人口A:
 
-   * Double-click the **[!UICONTROL Split]** activity.
+   * 按兩下&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -87,21 +87,21 @@ ht-degree: 1%
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * 選擇選 **[!UICONTROL Limit the selected records]** 項。
+   * 選擇&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;選項。
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * 按一下 **[!UICONTROL Edit]** 連結，選 **[!UICONTROL Activate random sampling]**&#x200B;取並按一下 **[!UICONTROL Next]**。
+   * 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;連結，選擇&#x200B;**[!UICONTROL Activate random sampling]** ，然後按一下&#x200B;**[!UICONTROL Next]**。
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * 將臨界值設為10%，然後按一下 **[!UICONTROL Finish]**。
+   * 將閾值設定為10%，然後按一下&#x200B;**[!UICONTROL Finish]**。
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. 建立人口B:
 
-   * 按一 **[!UICONTROL Add]** 下以建立人口B的新標籤。
+   * 按一下&#x200B;**[!UICONTROL Add]**&#x200B;為人口B建立新頁籤。
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -119,16 +119,16 @@ ht-degree: 1%
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * 變更標籤以指定此人口族群既不包含A也不包含B，然後按一下 **[!UICONTROL OK]** 以關閉活動。
+   * 變更標籤以指定此人口族群不包含A或B，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉活動。
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-## 步驟3:建立兩個傳送範本 {#step-3--creating-two-delivery-templates}
+## 步驟3:建立兩個傳送模板{#step-3--creating-two-delivery-templates}
 
-我們現在想要建立兩個傳送範本。 每個範本都會在連結至活 **[!UICONTROL Email delivery]** 動的活動中引 **[!UICONTROL Split]** 用。 如需詳細資訊，請參閱本[區段](../../delivery/using/about-templates.md)。
+我們現在想要建立兩個傳送範本。 每個範本都會在連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動中參考。 如需詳細資訊，請參閱本[區段](../../delivery/using/about-templates.md)。
 
-1. Go to the **[!UICONTROL Resources > Delivery template]** folder.
-1. 複製傳 **[!UICONTROL Email]** 送範本。
+1. 前往&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;資料夾。
+1. 複製&#x200B;**[!UICONTROL Email]**&#x200B;傳送範本。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 
@@ -140,11 +140,11 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-## 步驟4:在工作流程中設定傳送 {#step-4--configuring-the-deliveries-in-the-workflow}
+## 步驟4:在工作流{#step-4--configuring-the-deliveries-in-the-workflow}中配置傳送
 
-下一步是設定傳送。 它們的目的地是在前一個階段建立的三個人口： [步驟2:配置人口樣本](#step-2--configuring-population-samples)。 前兩個傳送可讓您傳送不同的內容給人口A和B。第三批貨物的目的地是既未收到A也未收到B的人口。其內容將由指令碼計算，並會與A或B相同，視哪一個開啟率最高而定。 我們需要設定第三個交貨的等待期，以瞭解交貨A和B的結果。這就是為什麼第三個傳送包含活 **[!UICONTROL Wait]** 動。
+下一步是設定傳送。 它們的目的地是在前一個階段建立的三個人口：[步驟2:配置人口樣本](#step-2--configuring-population-samples)。 前兩個傳送可讓您傳送不同的內容給人口A和B。第三批貨物的目的地是既未收到A也未收到B的人口。其內容將由指令碼計算，並會與A或B相同，視哪一個開啟率最高而定。 我們需要設定第三個交貨的等待期，以瞭解交貨A和B的結果。這就是為什麼第三個傳送包含&#x200B;**[!UICONTROL Wait]**&#x200B;活動。
 
-1. 移至活動 **[!UICONTROL Split]** 並將目的地為人口A的轉場連結至工作流程中已傳送的其中一個電子郵件。
+1. 轉至&#x200B;**[!UICONTROL Split]**&#x200B;活動，並將目的地為人口A的轉換連結至工作流程中已有的電子郵件傳送。
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
@@ -153,11 +153,11 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. 按一 **[!UICONTROL Continue]** 下以檢視傳送，然後儲存。
+1. 按一下&#x200B;**[!UICONTROL Continue]**&#x200B;以檢視傳送，然後儲存。
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. 將目的地為人口B **[!UICONTROL Split]** 的活動轉換連結至第二封電子郵件傳送。
+1. 將目的地為人口B的&#x200B;**[!UICONTROL Split]**&#x200B;活動的轉換連結至第二個電子郵件傳送。
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
@@ -165,25 +165,25 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. 將目的地為剩餘人口的轉場連結至活 **[!UICONTROL Wait]** 動。
+1. 將目的地為剩餘人口的轉場連結至&#x200B;**[!UICONTROL Wait]**&#x200B;活動。
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. 開啟 **[!UICONTROL Wait]** 活動並設定5天等候期。
+1. 開啟&#x200B;**[!UICONTROL Wait]**&#x200B;活動並設定5天的等候期。
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. 將活動 **[!UICONTROL Wait]** 連結至活 **[!UICONTROL JavaScript code]** 動。
+1. 將&#x200B;**[!UICONTROL Wait]**&#x200B;活動連結至&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-## 步驟5:建立指令碼 {#step-5--creating-the-script}
+## 步驟5:建立指令碼{#step-5--creating-the-script}
 
 指令碼會計算針對剩餘人口的傳送內容選擇。 此指令碼會以最高開啟率來恢復傳送的相關資訊，並將內容複製至最終傳送。
 
-### 指令碼範例 {#example-of-a-script}
+### 指令碼{#example-of-a-script}示例
 
-以下指令碼可如同在定位工作流程中使用。 For more on this, refer to [Implementation](#implementation).
+以下指令碼可如同在定位工作流程中使用。 有關詳細資訊，請參閱[實施](#implementation)。
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,16 +229,16 @@ ht-degree: 1%
    vars.deliveryId = delivery.id
 ```
 
-有關指令碼的詳細說明，請參 [閱指令碼詳細資訊](#details-of-the-script)。
+有關指令碼的詳細說明，請參閱[指令碼的詳細資訊](#details-of-the-script)。
 
-### 實作 {#implementation}
+### 實施{#implementation}
 
-1. 開啟您的 **[!UICONTROL JavaScript code]** 活動。
-1. 將「指令碼範例 [」中提供的指令碼複製](#example-of-a-script) ，到 **[!UICONTROL JavaScript code]** 視窗中。
+1. 開啟您的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
+1. 將[Example of a script](#example-of-a-script)中提供的指令碼複製到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. 在字 **[!UICONTROL Label]** 段中，輸入指令碼的名稱，即
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中，輸入指令碼的名稱，例如：
 
    ```
    <%= vars.deliveryId %>
@@ -246,14 +246,14 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. 關閉活 **[!UICONTROL JavaScript code]** 動。
+1. 關閉&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
 1. 儲存您的工作流程。
 
-### 指令碼的詳細資訊 {#details-of-the-script}
+### 指令碼{#details-of-the-script}的詳細資訊
 
 本節詳細說明指令碼的各個部分及其操作模式。
 
-* 指令碼的第一部分是查詢。 使 **用queryDef** 命令可以從 **NmsDelivery** 表中恢復通過執行定位工作流建立的傳送，並根據其估計的開啟率對傳送進行排序，然後恢復具有最高開啟率的傳送資訊。
+* 指令碼的第一部分是查詢。 **queryDef**&#x200B;命令可讓您從&#x200B;**NmsDelivery**&#x200B;表中恢復通過執行定位工作流建立的傳送，並根據其估計的開啟率對它們進行排序，然後恢復來自具有最高開啟率的傳送的資訊。
 
    ```
    // query the database to find the winner (best open rate)
@@ -282,7 +282,7 @@ ht-degree: 1%
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* 已修改複製傳送的標籤，並將詞 **詞** final新增至標籤。
+* 修改複製的傳送的標籤，並將單字&#x200B;**final**&#x200B;添加到該標籤中。
 
    ```
    // append 'final' to the delivery label
@@ -320,34 +320,34 @@ ht-degree: 1%
    vars.deliveryId = delivery.id
    ```
 
-### 其他選擇標準 {#other-selection-criteria}
+### 其他選擇標準{#other-selection-criteria}
 
 上述範例可讓您根據電子郵件的開啟率來選取傳送的內容。 您可以根據其他特定遞送指標來調整：
 
-* 最佳點按吞吐量： `[indicators/@recipientClickRatio]`的
-* 最高反應率（開啟電子郵件並點擊訊息）: `[indicators/@reactivity]`的
-* 最低投訴率： `[indicators/@refusedRatio]` （對sortDesc屬性使用false值）,
-* 最高轉換率： `[indicators/@transactionRatio]`的
-* 收到訊息後瀏覽的頁數： `[indicators/@totalWebPage]`的
-* 最低取消訂閱率： `[indicators/@optOutRatio]`的
-* 事務處理金額： `[indicators/@amount]`.
+* 最佳點按吞吐量：`[indicators/@recipientClickRatio]`,
+* 最高反應率（開啟電子郵件並點擊訊息）:`[indicators/@reactivity]`,
+* 最低投訴率：`[indicators/@refusedRatio]`（對sortDesc屬性使用false值）,
+* 最高轉換率：`[indicators/@transactionRatio]`,
+* 收到訊息後瀏覽的頁數：`[indicators/@totalWebPage]`,
+* 最低取消訂閱率：`[indicators/@optOutRatio]`,
+* 事務處理金額：`[indicators/@amount]`。
 
-## 步驟6:定義最終交付 {#step-6--defining-the-final-delivery}
+## 步驟6:定義最終交付{#step-6--defining-the-final-delivery}
 
 建立指令碼以選取A/B測試成功者後，您就可以定義最終傳送的參數。
 
-1. 將活動 **[!UICONTROL JavaScript code]** 連接到其餘活 **[!UICONTROL Delivery]** 動。
-1. 開啟活 **[!UICONTROL Delivery]** 動。
-1. 取消選 **[!UICONTROL Generate an outbound transition]** 中此選項可完成此活動的工作流。
+1. 將&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動連接到其餘的&#x200B;**[!UICONTROL Delivery]**&#x200B;活動。
+1. 開啟&#x200B;**[!UICONTROL Delivery]**&#x200B;活動。
+1. 取消選中&#x200B;**[!UICONTROL Generate an outbound transition]**&#x200B;選項，以完成此活動的工作流。
 1. 將其他選項保留為其預設值。
 
    ![](assets/ab_test_final_delivery.png)
 
-準備在轉場中指定的傳送(透過活 **[!UICONTROL Javascript Code]** 動定義)後，您就可以核准傳送，並開始傳送，如下一步所述。
+準備在轉場中指定的傳送（透過&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活動定義）後，您就可以核准傳送，並開始傳送，如下一步所述。
 
-## 步驟7:啟動工作流 {#step-7--starting-the-workflow}
+## 步驟7:啟動工作流{#step-7--starting-the-workflow}
 
-1. 按一下 **[!UICONTROL Start]** 工作流程。
+1. 按一下工作流程&#x200B;**[!UICONTROL Start]**。
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
@@ -361,15 +361,15 @@ ht-degree: 1%
 
 1. 確定第三個傳送的內容後，請核准目標和內容。
 
-## 步驟8:分析結果 {#step-8--analyzing-the-result}
+## 步驟8:分析結果{#step-8--analyzing-the-result}
 
 在傳送測試傳送後，您可以檢查哪些收件者已傳送至，以及是否已開啟。
 
-* 若要找出已定位哪些收件者，請透過促銷活動控制面板開啟傳送，然後按一下標 **[!UICONTROL Delivery]** 簽。
+* 若要找出已定位哪些收件者，請透過促銷活動控制面板開啟傳送，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤。
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
-* 若要瞭解傳送是否已開啟，請前往標籤 **[!UICONTROL Tracking]** 頁。
+* 若要瞭解傳送是否已開啟，請前往&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤。
 
    ![](assets/use_case_abtesting_analysis_002.png)
 
