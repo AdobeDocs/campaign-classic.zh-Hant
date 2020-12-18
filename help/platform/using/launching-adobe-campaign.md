@@ -17,11 +17,11 @@ ht-degree: 50%
 
 # 啟動 Adobe Campaign{#launching-adobe-campaign}
 
-促銷活動用戶端主控台是rich client，可讓您連線至您的促銷活動應用程式伺服器。 在本頁瞭解如何下載及設定用戶 [端主控台](../../installation/using/installing-the-client-console.md)。
+促銷活動用戶端主控台是rich client，可讓您連線至您的促銷活動應用程式伺服器。 瞭解如何在[本頁](../../installation/using/installing-the-client-console.md)中下載和配置客戶端控制台。
 
 ## 開始使用 Adobe Campaign {#starting-adobe-campaign}
 
-您可以透過選取來啟動Adobe Campaign **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**。
+您可以選擇&#x200B;**[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**&#x200B;來啟動Adobe Campaign。
 
 使用用戶端主控台連線視窗，您可以選取或設定現有資料庫，並使用使用者名稱和密碼進行連線：
 
@@ -39,9 +39,9 @@ ht-degree: 50%
 
 1. 在 **[!UICONTROL Password]** 欄位輸入您的密碼。
 
-   第一次存取資料庫時使用的密碼由管理員提供。Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Details on operators and connections are available in [Access management](../../platform/using/access-management.md).
+   第一次存取資料庫時使用的密碼由管理員提供。連接後，可以通過&#x200B;**[!UICONTROL Tools > Change password...]**&#x200B;菜單更改密碼。 有關運算子和連接的詳細資訊，請參見[訪問管理](../../platform/using/access-management.md)。
 
-1. Click **[!UICONTROL LOG IN]** to confirm.
+1. 按一下&#x200B;**[!UICONTROL LOG IN]**&#x200B;進行確認。
 
 您現在可以存取 [Adobe Campaign 工作區](../../platform/using/adobe-campaign-workspace.md)。
 
@@ -51,7 +51,7 @@ ht-degree: 50%
 
 ![](assets/s_ncs_user_connections_management.png)
 
-In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
+在&#x200B;**[!UICONTROL Connections]**&#x200B;窗口中，按一下&#x200B;**[!UICONTROL Add > Connection]**。
 
 然後您必須定義連線設定。操作步驟：
 
@@ -59,15 +59,15 @@ In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection
 
 1. 在 **[!UICONTROL URL]** 欄位中，新增應用程式伺服器的位址。如果您不知道連線 URL，請連絡管理員。
 
-1. Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. 有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
+1. 請檢查&#x200B;**[!UICONTROL Connect with an Adobe ID]**，以取得運算子以使用其Adobe ID連線至主控台。 有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
 
-1. Click **[!UICONTROL OK]** to validate.
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;進行驗證。
 
 ## 操作者和許可 {#operators-and-permissions}
 
 Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICONTROL Administration > Access management > Operators]** 節點設定具有軟體存取權限及其相關許可的操作者的識別碼與密碼。
 
-This functionality is detailed in the [Access management](../../platform/using/access-management.md) section.
+此功能在[訪問管理](../../platform/using/access-management.md)部分中有詳細說明。
 
 ## 中斷 Adobe Campaign 連線 {#disconnecting-from-adobe-campaign}
 
@@ -79,12 +79,12 @@ This functionality is detailed in the [Access management](../../platform/using/a
 >
 >您也可以不先登出，而直接關閉應用程式。
 
-## Getting your Adobe Campaign version {#getting-your-campaign-version}
+## 取得您的Adobe Campaign版本{#getting-your-campaign-version}
 
-The **[!UICONTROL Help > About...]** menu lets you access the following information:
+**[!UICONTROL Help > About...]**&#x200B;功能表可讓您存取下列資訊：
 
-* **Campaign用戶端主控台和應用程式伺服器的版本號碼**
-* **Campaign用戶端主控台和應用程式伺服器的組建編號**
+* **Campaign用** 戶端主控台和應用程式伺服器的版本號碼
+* **Campaign用** 戶端主控台和應用程式伺服器的建置碼
 * 連結以聯絡Adobe客戶服務
 * Adobe隱私權政策、使用條款與Cookie政策的連結
 
@@ -92,11 +92,11 @@ The **[!UICONTROL Help > About...]** menu lets you access the following informat
 
 每當您聯絡Adobe客戶服務團隊時，您都需要提供Adobe Campaign用戶端主控台和應用程式伺服器的版本號碼和組建版本號碼。
 
-如果您是在 [Campaign Gold Standard版本上執行](../../rn/using/gold-standard.md)，您也需要共用方塊中顯示的SHA/1字 **[!UICONTROL About]** 元。 例如，對於Gold **Standard 10版本**，組建編號會顯 **示組建9032@efd8a94**，如下所示：
+如果您正在[促銷活動金標準版](../../rn/using/gold-standard.md)上執行，您也需要共用顯示在&#x200B;**[!UICONTROL About]**&#x200B;方塊中的SHA/1字元。 例如，對於Gold **Standard 10發行**，組建編號將顯示&#x200B;**組建9032@efd8a94**，如下所示：
 
 ![](assets/about-acc-gs.png)
 
-在本文中進一步了 [解金本位](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
+在本文](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)中進一步瞭解金級標準[。
 
 **相關主題**：
 
