@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# 報告最佳實務{#best-practices-reporting}
+# 報告最佳實踐{#best-practices-reporting}
 
 ## 分析需求{#analyzing-needs}
 
@@ -31,15 +31,15 @@ ht-degree: 0%
 
    例如，您可以：
 
-   * 探索資料庫中的資料並定義度量。 本節將進 [一步瞭解](../../reporting/using/about-cubes.md)
-   * 新增指標至現有報表。 本節將進 [一步瞭解](../../reporting/using/about-reports-creation-in-campaign.md)
-   * 查看資料庫中的資料。 本節將進 [一步瞭解](../../reporting/using/about-descriptive-analysis.md)
-   * 建立新的傳送報表。 在本節 [中進一步瞭解](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參 [閱本節](../../workflow/using/about-workflows.md)
-   * 建立透視表。 本節將進 [一步瞭解](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * 探索匯整的資料。 本節將進 [一步瞭解](../../reporting/using/about-cubes.md)
-   * 使用精靈來分析資料。 本節將進 [一步瞭解](../../reporting/using/about-descriptive-analysis.md)
-   * 分析大量資料。 本節將進 [一步瞭解](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 探索資料庫中的資料並定義度量。 瞭解本節[的更多資訊](../../reporting/using/about-cubes.md)
+   * 新增指標至現有報表。 瞭解本節[的更多資訊](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 查看資料庫中的資料。 瞭解本節[的更多資訊](../../reporting/using/about-descriptive-analysis.md)
+   * 建立新的傳送報表。 瞭解更多[在本節](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱[本節](../../workflow/using/about-workflows.md)
+   * 建立透視表。 瞭解本節[的更多資訊](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * 探索匯整的資料。 瞭解本節[的更多資訊](../../reporting/using/about-cubes.md)
+   * 使用精靈來分析資料。 瞭解本節[的更多資訊](../../reporting/using/about-descriptive-analysis.md)
+   * 分析大量資料。 瞭解本節[的更多資訊](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. 識別目標人口
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 最佳化報表建立{#optimizing-report-creation}
 
-### 資料卷 {#data-volume}
+### 資料卷{#data-volume}
 
 為了保證最佳效能，操作資料量不能太大。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 您也可以在夜間計算報表，並自動建立可隨時檢視的歷史記錄，而不會超過資料庫。
 
-### 查詢 {#queries}
+### 查詢{#queries}
 
 我們建議盡可能使用SQL查詢，並避免JavaScript後處理。 如有必要，請在工作流中使用指令碼活動並刪除用於計算的資料。 您也可以使用封存的資料來加速處理時間。
 
@@ -92,7 +92,7 @@ if(string(ctx@_historyId)!==""))
 
 可讓您收集報表中顯示的資料的查詢不應太複雜，尤其是套用至資料庫中所有資料時。 為了改善效能，在執行這些查詢之前先過濾資料非常有用：這表示計算只涉及部分資料。
 
-### 效能 {#performances}
+### 效能{#performances}
 
 上述建議可讓您最佳化報表計算。
 
@@ -102,7 +102,7 @@ if(string(ctx@_historyId)!==""))
 
    若要快速尋找索引欄位，請查看Adobe Campaign介面中的欄名：如果對欄位編製索引，則排序箭頭將以紅色加底線。
 
-   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+   有關索引的詳細資訊，請參閱[本節](../../configuration/using/data-model-best-practices.md#indexes)。
 
 * 請確定報表是可擴充的：資料量可能會隨著時間而大幅增加。
 
@@ -110,8 +110,8 @@ if(string(ctx@_historyId)!==""))
 
    最後，需要知道並調整資料清除延遲，以方便進行資料操作。
 
-   有關清除和資料保留的詳細資訊，請參 [閱本節](../../configuration/using/data-model-best-practices.md#data-retention)。
+   有關清理和資料保留的詳細資訊，請參閱[本節](../../configuration/using/data-model-best-practices.md#data-retention)。
 
-### 匯出報表 {#exporting-reports}
+### 導出報告{#exporting-reports}
 
-本節將詳述特定於匯出報表 [的建議](../../reporting/using/actions-on-reports.md#exporting-a-report)。
+匯出報表的特定建議詳見[本節](../../reporting/using/actions-on-reports.md#exporting-a-report)。
