@@ -17,13 +17,13 @@ ht-degree: 10%
 
 # 模擬追蹤{#simulation-tracking}
 
-模擬完成後，您可以透過新增至模擬視窗和報表的 **[!UICONTROL Results]** 標籤(可在模擬控制面板 **[!UICONTROL Breakdown of offers by rank]** 中取得)來分析其結果。
+模擬完成後，您可以通過添加到模擬窗口的&#x200B;**[!UICONTROL Results]**&#x200B;頁籤和模擬儀表板中的&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;報告來分析其結果。
 
 模擬結果包含每個排名和每個接收者的命題的劃分。 報表軸也會納入考量，並顯示在此標籤中。
 
 您可以儲存這些結果，並視需要匯出結果，方法是建立結果的說明性分析。 若要這麼做，請在結果視窗中按一下適當的連結。
 
-有關描述 [性分析嚮導](../../reporting/using/about-descriptive-analysis.md) ，請參閱此部分。
+有關描述性分析嚮導的詳細資訊，請參閱[本節](../../reporting/using/about-descriptive-analysis.md)。
 
 ![](assets/offer_simulation_012.png)
 
