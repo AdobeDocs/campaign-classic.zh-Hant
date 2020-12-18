@@ -23,7 +23,7 @@ ht-degree: 4%
 
 原因如下：
 
-Adobe Campaign會在 **/tmp下產生暫存檔**，然後重新命名檔案，將檔案移至 **/usr/local/neolane/nl6/var**。 當兩個資料夾(**/tmp** and **/usr/local/neolane/nl6/var**，實際上是到 ****/var/nl6的符號連結)對應到不同的設備時，就會發生此錯誤。 df **命令** ，用於驗證。
+Adobe Campaign會在&#x200B;**/tmp**&#x200B;下產生暫存檔案，然後重新命名檔案，將檔案移至&#x200B;**/usr/local/neolane/nl6/var**。 當兩個資料夾（**/tmp**&#x200B;和&#x200B;**/usr/local/neolane/nl6/var**）對應於不同設備時，就會發生此錯誤。 ******df**&#x200B;命令用於驗證。
 
 要解決此問題，必須在與目標相同的設備中生成臨時檔案。 例如，執行：
 
