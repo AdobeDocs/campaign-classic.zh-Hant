@@ -41,7 +41,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。為了與外部系統�
 
 若要建立新的外部帳戶，請遵循下列步驟。 詳細設定取決於外部帳戶的類型。
 
-1. 從促銷 **[!UICONTROL Explorer]**&#x200B;活動中， **[!UICONTROL Administration]** 選擇「>」 **[!UICONTROL Platform]** 「>」 **[!UICONTROL External accounts]**。
+1. 在促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，選擇&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
    ![](assets/ext_account_1.png)
 
@@ -49,26 +49,26 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。為了與外部系統�
 
    ![](assets/ext_account_2.png)
 
-1. Enter a **[!UICONTROL Label]** and an **[!UICONTROL Internal Name]**.
-1. 選擇您要建 **[!UICONTROL Type]** 立的外部帳戶。
+1. 輸入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal Name]**。
+1. 選擇要建立的外部帳戶&#x200B;**[!UICONTROL Type]**。
 1. 根據所選的外部帳戶類型指定憑證，以設定帳戶的存取權。
 
    所需資訊通常由您所連接的伺服器提供者提供。
 
-1. 選中 **[!UICONTROL Enabled]** 啟用連接的選項。
+1. 選中&#x200B;**[!UICONTROL Enabled]**&#x200B;選項以激活連接。
 1. 按一下 **[!UICONTROL Save]**。
 
 外部帳戶會建立並新增至外部帳戶清單。
 
-## 彈回郵件外部帳戶 {#bounce-mails-external-account}
+## 彈回郵件外部帳戶{#bounce-mails-external-account}
 
-Bouncemails **外部帳戶** ，指定用來連線至電子郵件服務的外部POP3帳戶。 For more on this external account, refer to this [page](../../workflow/using/inbound-emails.md).
+**Bouncemails**&#x200B;外部帳戶指定用於連接電子郵件服務的外部POP3帳戶。 有關此外部帳戶的詳細資訊，請參閱此[頁](../../workflow/using/inbound-emails.md)。
 
 為POP3訪問配置的所有伺服器都可用於接收返回郵件。
 
 ![](assets/ext_account_6.png)
 
-要配置外部 **[!UICONTROL Bounce mails (defaultPopAccount)]** 帳戶：
+要配置&#x200B;**[!UICONTROL Bounce mails (defaultPopAccount)]**&#x200B;外部帳戶：
 
 * **[!UICONTROL Server]**
 
@@ -88,11 +88,11 @@ Bouncemails **外部帳戶** ，指定用來連線至電子郵件服務的外部
 
 * **[!UICONTROL Encryption]**
 
-   在、或之間選擇的 **[!UICONTROL By default]**&#x200B;加密 **[!UICONTROL POP3 + STARTTLS]**&#x200B;類 **[!UICONTROL POP3]** 型 **[!UICONTROL POP3S]**。
+   在&#x200B;**[!UICONTROL By default]**、**[!UICONTROL POP3 + STARTTLS]**、**[!UICONTROL POP3]**&#x200B;或&#x200B;**[!UICONTROL POP3S]**&#x200B;之間選擇的加密類型。
 
-## 傳送外部帳戶 {#routing-external-account}
+## 路由外部帳戶{#routing-external-account}
 
-外 **[!UICONTROL Routing]** 部帳戶可讓您根據所安裝的套件，設定Adobe Campaign中的每個可用渠道。
+**[!UICONTROL Routing]**&#x200B;外部帳戶可讓您根據所安裝的封裝，設定Adobe Campaign中的每個可用頻道。
 
 ![](assets/ext_account_7.png)
 
@@ -108,7 +108,7 @@ Bouncemails **外部帳戶** ，指定用來連線至電子郵件服務的外部
 * [iOS頻道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android頻道](../../delivery/using/configuring-the-mobile-application-android.md)
 
-## FTP外部帳戶 {#ftp-external-account}
+## FTP外部帳戶{#ftp-external-account}
 
 FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
 
@@ -134,48 +134,48 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取
 
 * **[!UICONTROL Encryption]**
 
-   或之間選擇的加密 **[!UICONTROL None]** 類型 **[!UICONTROL SSL]**。
+   在&#x200B;**[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**&#x200B;之間選擇的加密類型。
 
-要知道這些憑據的位置，請參閱此 [頁](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials)。
+要知道這些憑據的位置，請參閱此[頁](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials)。
 
-## 外部資料庫外部帳戶 {#external-database-external-account}
+## 外部資料庫外部帳戶{#external-database-external-account}
 
-使用 **External database** type external account（外部資料庫類型外部帳戶）連接到外部資料庫。 在本節中進一步瞭解Federated Data Access(FDA) [選項](../../installation/using/about-fda.md)。
+使用&#x200B;**External database**&#x200B;鍵入外部帳戶以連接到外部資料庫。 在[本節](../../installation/using/about-fda.md)中進一步瞭解Federated Data Access(FDA)選項。
 
-與Campaign相容的外部資料庫列在「相容性」 [矩陣中](../../rn/using/compatibility-matrix.md)
+與Campaign相容的外部資料庫列在[相容性矩陣](../../rn/using/compatibility-matrix.md)中
 
 ![](assets/ext_account_11.png)
 
 外部帳戶配置設定取決於資料庫引擎。 以下各節提供更多資訊：
 
-* 配置對 [Azure突觸的訪問](../../installation/using/configure-fda-synapse.md)
-* 配置對 [Hadoop的訪問](../../installation/using/configure-fda-hadoop.md)
-* 配置對 [Oracle的訪問](../../installation/using/configure-fda-oracle.md)
-* 配置對 [Netezza的訪問](../../installation/using/configure-fda-netezza.md)
-* 配置對 [SAP HANA的訪問](../../installation/using/configure-fda-sap-hana.md)
-* 配置對雪花的 [訪問](../../installation/using/configure-fda-snowflake.md)
-* 配置對 [Sybase IQ的訪問](../../installation/using/configure-fda-sybase.md)
-* 配置對 [Teradata的訪問](../../installation/using/configure-fda-teradata.md)
+* 配置對[Azure Synapse](../../installation/using/configure-fda-synapse.md)的訪問
+* 配置對[Hadoop](../../installation/using/configure-fda-hadoop.md)的訪問
+* 配置對[Oracle](../../installation/using/configure-fda-oracle.md)的訪問
+* 配置對[Netezza](../../installation/using/configure-fda-netezza.md)的訪問
+* 配置對[SAP HANA](../../installation/using/configure-fda-sap-hana.md)的訪問
+* 配置對[雪花](../../installation/using/configure-fda-snowflake.md)的訪問
+* 配置對[Sybase IQ](../../installation/using/configure-fda-sybase.md)的訪問
+* 配置對[Teradata](../../installation/using/configure-fda-teradata.md)的訪問
 
-## Web Analytics外部帳戶 {#web-analytics-external-account}
+## Web Analytics外部帳戶{#web-analytics-external-account}
 
-外 **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** 部帳戶可讓您將資料從Adobe Analytics轉送至Adobe Campaign的區段形式。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動指標和屬性傳送至Adobe Analytics —— 資料連接器。
+**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帳戶可讓您以區段的形式，將資料從Adobe Analytics轉送至Adobe Campaign。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動指標和屬性傳送至Adobe Analytics —— 資料連接器。
 
 ![](assets/ext_account_10.png)
 
 對於此外部帳戶，必須豐富追蹤URL的計算公式，並且必須核准兩個解決方案之間的連線。 如需關於此項目的詳細資訊，請參閱此[頁面](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign)。
 
-## Facebook Connect外部帳戶 {#facebook-connect-external-account}
+## Facebook連線外部帳戶{#facebook-connect-external-account}
 
-外部 **[!UICONTROL Facebook Connect]** 帳戶可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更輕鬆。
+**[!UICONTROL Facebook Connect]**&#x200B;外部帳戶可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更輕鬆。
 
-對於每個Facebook應用程式，您都需要建立類 **[!UICONTROL Facebook Connect]** 型外部帳戶。 For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+對於每個Facebook應用程式，您必須建立&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型的外部帳戶。 如需詳細資訊，請參閱[ page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
 ![](assets/ext_account_12.png)
 
 * **[!UICONTROL Hosting mode]**
 
-   或之間應用程式的代管 **[!UICONTROL hosted by a partner]** 模式 **[!UICONTROL hosted by this instance]**。
+   **[!UICONTROL hosted by a partner]**&#x200B;或&#x200B;**[!UICONTROL hosted by this instance]**&#x200B;之間應用程式的代管模式。
 
 * **[!UICONTROL Application ID]**
 
@@ -185,11 +185,11 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取
 
    您Facebook應用程式的應用程式密碼。
 
-如果您選擇由此例項模式代管，則「安全畫布URL」必須貼入Facebook上的 **Facebook網頁遊戲(https)** 欄位
+如果您選擇此例項模式代管，則「保全畫布URL」必須貼入Facebook上的&#x200B;**Facebook網頁遊戲(https)**&#x200B;欄位
 
-要知道這些憑據的位置，請參閱此 [頁](https://developers.facebook.com/docs/facebook-login/access-tokens)。
+要知道這些憑據的位置，請參閱此[頁](https://developers.facebook.com/docs/facebook-login/access-tokens)。
 
-## 執行實例外部帳戶 {#execution-instance-external-account}
+## 執行實例外部帳戶{#execution-instance-external-account}
 
 如果您有劃分的架構，則需要指定連結至控制例項的執行例項，並加以連接。 事務性消息模板部署到執行實例
 
@@ -207,11 +207,11 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取
 
    操作員資料夾中定義的帳戶密碼。
 
-For more information on this configuration, refer to this [page](../../message-center/using/creating-a-shared-connection.md#control-instance).
+有關此配置的詳細資訊，請參閱此[頁](../../message-center/using/creating-a-shared-connection.md#control-instance)。
 
-## Adobe Experience Cloud external account {#adobe-experience-cloud-external-account}
+## Adobe Experience Cloud外部帳戶{#adobe-experience-cloud-external-account}
 
-若要使用Adobe ID連線至Adobe Campaign主控台，您必須設定外 **[!UICONTROL Adobe Experience Cloud (MAC)]** 部帳戶。
+若要使用Adobe ID連線至Adobe Campaign主控台，您必須設定&#x200B;**[!UICONTROL Adobe Experience Cloud (MAC)]**&#x200B;外部帳戶。
 
 ![](assets/ext_account_9.png)
 
@@ -237,7 +237,7 @@ For more information on this configuration, refer to this [page](../../message-c
 
 * **[!UICONTROL IMS organization ID]**
 
-   IMS組織的ID。 若要尋找您的組織ID，請參 [閱此頁](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (我&#x200B;**可在何處找到我的IMS組織ID?**)。
+   IMS組織的ID。 若要尋找您的組織ID，請參閱此[頁面](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html)（**哪裡可以找到我的IMS組織ID?**）。
 
 * **[!UICONTROL Association mask]**
 
@@ -251,7 +251,7 @@ For more information on this configuration, refer to this [page](../../message-c
 
    您的Adobe Experience Cloud租用戶名稱。
 
-For more information on this configuration, refer to this [page](../../integrations/using/configuring-ims.md).
+有關此配置的詳細資訊，請參閱此[頁](../../integrations/using/configuring-ims.md)。
 
 ## SFTP 外部帳戶 {#sftp-external-account}
 
@@ -277,7 +277,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存�
 
 ## Adobe Experience Manager 外部帳戶 {#adobe-experience-manager-external-account}
 
-外 **[!UICONTROL AEM (AEM instance)]** 部帳戶可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容以及表單。
+**[!UICONTROL AEM (AEM instance)]**&#x200B;外部帳戶可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容以及表單。
 
 ![](assets/ext_account_5.png)
 
@@ -295,7 +295,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存�
 
 如需詳細資訊，請參閱本[區段](../../integrations/using/about-adobe-experience-manager.md)。
 
-## Amazon Simple Storage Service(S3)外部帳戶 {#amazon-simple-storage-service--s3--external-account}
+## Amazon Simple Storage Service(S3)外部帳戶{#amazon-simple-storage-service--s3--external-account}
 
 Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe Campaign。 可在工作流活動中設定。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
 
@@ -313,26 +313,26 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 * **[!UICONTROL AWS access key ID]**
 
-   要瞭解在何處查找您的AWS訪問密鑰ID，請參閱本 [頁](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
+   要瞭解在何處查找您的AWS訪問密鑰ID，請參閱此[頁](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   要瞭解在何處找到AWS的秘密訪問密鑰，請參閱本 [頁](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+   要瞭解在何處找到AWS的秘密訪問密鑰，請參閱此[頁](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
 
 * **[!UICONTROL AWS Region]**
 
-   要瞭解有關AWS地區的更多資訊，請參閱本 [頁](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
+   要瞭解有關AWS地區的更多資訊，請參閱此[頁](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
 
-* 核取 **[!UICONTROL Use server side encryption]** 方塊可讓您以S3加密模式儲存檔案。
+* 使用&#x200B;**[!UICONTROL Use server side encryption]**&#x200B;複選框可以以S3加密模式儲存檔案。
 
-要瞭解在何處查找訪問密鑰ID和秘密訪問密鑰，請參閱Amazon Web services文 [檔](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
+要瞭解在何處查找訪問密鑰ID和秘密訪問密鑰，請參閱Amazon Web Services [文檔](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
-## Microsoft Dynamics CRM外部帳戶 {#microsoft-dynamics-crm-external-account}
+## Microsoft Dynamics CRM外部帳戶{#microsoft-dynamics-crm-external-account}
 
-外 **[!UICONTROL Microsoft Dynamics CRM]** 部帳戶可讓您將Microsoft Dynamics資料匯入並匯出至Adobe Campaign。
+**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帳戶可讓您將Microsoft Dynamics資料匯入並匯出至Adobe Campaign。
 
 Microsoft Dynamics連接器搭配Adobe Campaign運作的設定視您的部署類型而定。
-對於 **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署類型，您需要提供下列詳細資訊：
+對於**[!UICONTROL On-premise]**&#x200B;和&#x200B;**[!UICONTROL Office 365]**&#x200B;部署類型，您需要提供以下詳細資訊：
 
 ![](assets/ext_account_21.png)
 
@@ -355,13 +355,13 @@ Microsoft Dynamics連接器搭配Adobe Campaign運作的設定視您的部署類
 * **[!UICONTROL Organization name]** 內部部署
 
    組織名稱。
-可在Microsoft Dynamics的「開發人員資源」儀表板中找到的組織名稱，欄 **[!UICONTROL Unique Name]** 位。
+可在Microsoft Dynamics的「開發人員資源」儀表板**[!UICONTROL Unique Name]**&#x200B;欄位中找到的組織名稱。
 
 * **[!UICONTROL CRM version]** 針對內部部署
 
-   CRM的版本，介 **[!UICONTROL Dynamics CRM 2007]**&#x200B;於 **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**。
+   **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之間的CRM版本。
 
-有了 **[!UICONTROL Web API]** 部署類型 **[!UICONTROL Password credentials]** 和驗證，您需要提供下列詳細資訊：
+使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;驗證，您需要提供以下詳細資訊：
 
 ![](assets/ext_account_14.png)
 
@@ -375,13 +375,13 @@ Microsoft Dynamics連接器搭配Adobe Campaign運作的設定視您的部署類
 
 * **[!UICONTROL Client identifier]**
 
-   可從類別欄位中的Microsoft Azure管理入口網站找到用戶 **[!UICONTROL Update your code]** 端ID **[!UICONTROL Client ID]** 。
+   可從&#x200B;**[!UICONTROL Update your code]**&#x200B;類別&#x200B;**[!UICONTROL Client ID]**&#x200B;欄位中的Microsoft Azure管理入口網站找到的用戶端ID。
 
 * **[!UICONTROL CRM version]**
 
-   CRM的版本，介 **[!UICONTROL Dynamics CRM 2007]**&#x200B;於 **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**。
+   **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之間的CRM版本。
 
-有了 **[!UICONTROL Web API]** 部署類型 **[!UICONTROL Certificate]** 和驗證，您需要提供下列詳細資訊：
+使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型和&#x200B;**[!UICONTROL Certificate]**&#x200B;驗證，您需要提供以下詳細資訊：
 
 ![](assets/ext_account_22.png)
 
@@ -399,17 +399,17 @@ Microsoft Dynamics連接器搭配Adobe Campaign運作的設定視您的部署類
 
 * **[!UICONTROL Client identifier]**
 
-   可從類別欄位中的Microsoft Azure管理入口網站找到用戶 **[!UICONTROL Update your code]** 端ID **[!UICONTROL Client ID]** 。
+   可從&#x200B;**[!UICONTROL Update your code]**&#x200B;類別&#x200B;**[!UICONTROL Client ID]**&#x200B;欄位中的Microsoft Azure管理入口網站找到的用戶端ID。
 
 * **[!UICONTROL CRM version]**
 
-   CRM的版本，介 **[!UICONTROL Dynamics CRM 2007]**&#x200B;於 **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**。
+   **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之間的CRM版本。
 
-For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
+有關此配置的詳細資訊，請參閱此[頁](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics)。
 
-## Oracle on demand外部帳戶 {#oracle-on-demand-external-account}
+## Oracle on demand外部帳戶{#oracle-on-demand-external-account}
 
-外部 **[!UICONTROL Oracle on demand]** 帳戶可讓您將Oracle資料匯入並匯出至Adobe Campaign。
+**[!UICONTROL Oracle on demand]**&#x200B;外部帳戶可讓您將Oracle資料匯入並匯出至Adobe Campaign。
 
 ![](assets/ext_account_18.png)
 
@@ -427,11 +427,11 @@ For more information on this configuration, refer to this [page](../../platform/
 
    用於按需登錄Oracle CRM的口令。
 
-For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
+有關此配置的詳細資訊，請參閱此[頁](../../platform/using/crm-connectors.md#example-for-oracle-on-demand)。
 
-## Salesforce CRM外部帳戶 {#salesforce-crm-external-account}
+## Salesforce CRM外部帳戶{#salesforce-crm-external-account}
 
-外部 **[!UICONTROL Salesforce CRM]** 帳戶可讓您將Salesforce資料匯入並匯出至Adobe Campaign。
+**[!UICONTROL Salesforce CRM]**&#x200B;外部帳戶可讓您將Salesforce資料匯入並匯出至Adobe Campaign。
 
 ![](assets/ext_account_17.png)
 
@@ -447,16 +447,16 @@ For more information on this configuration, refer to this [page](../../platform/
 
 * **[!UICONTROL Client identifier]**
 
-   若要知道在何處找到您的客戶識別碼，請參閱本 [頁](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+   若要知道在何處找到客戶識別碼，請參閱此[頁](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
 
 * **[!UICONTROL Security token]**
 
-   若要瞭解在何處找到您的安全Token，請參閱本 [頁](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+   若要知道在何處找到安全令牌，請參閱此[頁](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
 
 * **[!UICONTROL API version]**
 
-   API的版本，介 **[!UICONTROL Version 37]**&#x200B;於 **[!UICONTROL Version 21]** 或 **[!UICONTROL Version 15]**。
+   **[!UICONTROL Version 37]**、**[!UICONTROL Version 21]**&#x200B;或&#x200B;**[!UICONTROL Version 15]**&#x200B;之間的API版本。
 
 對於此外部帳戶，您需要使用設定精靈來設定您的Salesforce CRM。
 
-For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-salesforce-com).
+有關此配置的詳細資訊，請參閱此[頁](../../platform/using/crm-connectors.md#example-for-salesforce-com)。
