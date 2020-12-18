@@ -23,8 +23,8 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）在應用程式伺
 
 在本例中：
 
-* 預設監聽埠為8080。 要更改它，請參 [閱Configuring Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
-* 然後，用戶端主控台會使用 [https:// `<computer>`:8080等URL連線](https://myserver.adobe.com:8080)。
+* 預設監聽埠為8080。 要更改它，請參閱[配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
+* 然後，客戶端控制台使用[https:// `<computer>`:8080](https://myserver.adobe.com:8080)等URL進行連接。
 
 不過，出於安全性和管理原因，我們建議使用專用的Web伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦在網際網路上公開，而且您想要在網路外開啟主控台的存取權。
 
@@ -36,13 +36,13 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 >
 >如果您不使用追蹤功能，則可執行Apache或IIS的標準安裝，並重新導向至促銷活動。 不需要追蹤Web伺服器擴充模組。
 
-## 配置IIS Web伺服器 {#configuring-the-iis-web-server}
+## 配置IIS Web伺服器{#configuring-the-iis-web-server}
 
 IIS Web伺服器的配置過程大多是圖形化的。 它涉及使用網站（已建立或待建立）來存取Adobe Campaign伺服器的資源：Java(.jsp)檔案、樣式表(.css、.xsl)、影像(.png)、用於重新導向的ISAPI DLL等。
 
 IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
-如果您的電腦上尚未安裝Web IIS伺服器，則可以通過菜單進行安 **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** 裝。
+如果您的電腦上尚未安裝Web IIS伺服器，則可通過&#x200B;**[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]**&#x200B;菜單進行安裝。
 
 在IIS 7中，除了標準服務外，您還需要安裝ISAPI擴充功能和ISAPI篩選器。
 
@@ -52,7 +52,7 @@ IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
 套用下列設定步驟：
 
-1. 通過菜單開啟IIS **[!UICONTROL Control panel > Administrative tools > Services]** 。
+1. 通過&#x200B;**[!UICONTROL Control panel > Administrative tools > Services]**&#x200B;菜單開啟IIS。
 1. 根據網路參數（TCP連線埠、DNS主機、IP位址），建立並設定網站（例如Adobe Campaign）。
 
    ![](assets/s_ncs_install_iis7_add_site.png)
@@ -65,7 +65,7 @@ IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. VBS **** 指令碼可讓您在我們剛建立的虛擬目錄上自動設定Adobe Campaign伺服器使用的資源。 若要啟動它，請連按兩下資料 **夾中的iis_neolane_setup.vbs** 檔案，其中 `[INSTALL]\conf``[INSTALL]` 是存取Adobe Campaign安裝資料夾的路徑。
+1. **VBS**&#x200B;指令碼可讓您自動設定Adobe Campaign伺服器在我們剛建立的虛擬目錄上所使用的資源。 若要啟動它，請連按兩下位於`[INSTALL]\conf`資料夾中的&#x200B;**iis_neolane_setup.vbs**&#x200B;檔案，其中`[INSTALL]`是存取Adobe Campaign安裝資料夾的路徑。
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
@@ -73,9 +73,9 @@ IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
    >
    >在安裝Windows伺服器2008/IIS7時，您必須以管理員身份登錄才能運行VBS指令碼或以管理員身份執行指令碼。
 
-   如果 **[!UICONTROL OK]** Web伺服器是用作追蹤重新導向伺服器，請按一下，否則請按一下 **[!UICONTROL Cancel]**。
+   如果Web伺服器用作跟蹤重定向伺服器，請按一下&#x200B;**[!UICONTROL OK]** ，否則按一下&#x200B;**[!UICONTROL Cancel]**。
 
-   當網站伺服器上已設定多個網站時，會顯示一個中介頁面，以指定安裝套用至哪個網站：輸入連結至網站的編號，然後按一下 **[!UICONTROL OK]**。
+   當網站伺服器上已設定多個網站時，會顯示一個中介頁面，以指定安裝套用至哪個網站：輸入連結至網站的編號，然後按一下&#x200B;**[!UICONTROL OK]**。
 
    ![](assets/s_ncs_install_iis7_parameters_step3.png)
 
@@ -83,7 +83,7 @@ IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
-1. 在標籤 **[!UICONTROL Content View]** 中，請確定網站已正確設定Adobe Campaign資源：
+1. 在&#x200B;**[!UICONTROL Content View]**&#x200B;標籤中，請確定網站已正確設定Adobe Campaign資源：
 
    ![](assets/s_ncs_install_iis7_parameters_step6.png)
 
@@ -95,21 +95,21 @@ IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
 若要這麼做，請套用下列步驟：
 
-1. 選擇該 **[!UICONTROL Features View]** 頁籤，然後按兩下「 **Authentication** （驗證）」連結。
+1. 選擇&#x200B;**[!UICONTROL Features View]**&#x200B;頁籤，並按兩下&#x200B;**Authentication**&#x200B;連結。
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. 在網站 **的「目錄安全** 」標籤中，請確定已啟用匿名存取。 如有必要，請按一 **[!UICONTROL Edit]** 下連結以變更設定。
+1. 在網站的&#x200B;**目錄安全性**&#x200B;標籤中，請確定已啟用匿名存取。 如有必要，請按一下&#x200B;**[!UICONTROL Edit]**&#x200B;連結以變更設定。
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### 啟動Web伺服器並測試配置 {#launching-the-web-server-and-testing-the-configuration}
+### 啟動Web伺服器並測試配置{#launching-the-web-server-and-testing-the-configuration}
 
 您現在必須測試此設定是否正確。
 
 若要這麼做，請套用下列程式：
 
-1. 使用iisreset命令行重新啟動 **IIS** 伺服器。
+1. 使用&#x200B;**iisreset**&#x200B;命令行重新啟動IIS伺服器。
 1. 將下列URL插入網頁瀏覽器，以測試追蹤模組：
 
    ```
@@ -139,43 +139,43 @@ webmdl@default (1644) - 18.2 Mo
 
 若要這麼做，請套用下列步驟：
 
-1. 按一下圖示，編輯Adobe Campaign網站的ISAPI篩 **[!UICONTROL Driver mapping]** 選。
+1. 按一下&#x200B;**[!UICONTROL Driver mapping]**&#x200B;圖示，編輯Adobe Campaign網站的ISAPI篩選。
 1. 檢查ISAPI篩選器的內容：
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
 
 ## 其他配置 {#additional-configurations}
 
-### 變更上傳檔案大小限制 {#changing-the-upload-file-size-limit}
+### 變更上傳檔案大小限制{#changing-the-upload-file-size-limit}
 
 配置IIS Web伺服器時，將自動為上載到伺服器的設定檔案設定大約28 MB的限制。
 
 這可能會對Adobe Campaign產生影響，尤其是如果您想要上傳超過此限制的檔案。
 
-例如，如果您在工作流中使用「 **Data loading(file)** type」(資料載入(file)類型)活動來匯入50 MB的檔案，則錯誤會導致工作流程無法正確執行。
+例如，如果您在工作流中使用&#x200B;**資料載入（檔案）**&#x200B;類型活動來匯入50 MB的檔案，則錯誤會導致工作流程無法正確執行。
 
 在這種情況下，您必須提高此限制：
 
-1. 通過菜單開啟IIS **[!UICONTROL Start > (Control panel) > Administration tools]** 。
-1. 在「連 **線** 」窗格中，選取為您的Adobe安裝所建立的網站，然後按兩下主窗格中 **的「請求篩選** 」。
-1. 在「動 **作** 」窗格中，選取「編 **輯功能設定」** ，以便能夠編輯「最大授權內容大小（位元組）」欄 **位中的值** 。
+1. 通過&#x200B;**[!UICONTROL Start > (Control panel) > Administration tools]**&#x200B;菜單開啟IIS。
+1. 在&#x200B;**連線**&#x200B;窗格中，選取為您的Adobe安裝所建立的網站，然後按兩下主窗格中的&#x200B;**請求篩選**。
+1. 在&#x200B;**Actions**&#x200B;窗格中，選擇&#x200B;**Edit Feature Settings**&#x200B;以便能夠編輯&#x200B;**Maximum authorized content size(bytes)**&#x200B;欄位中的值。
 
    例如，若要授權上傳50 MB的檔案，您必須指定超過&quot;52428800&quot;位元組的值。
 
 >[!NOTE]
 >
->有關此IIS選項的更多資訊，請參閱官方文檔的「How To」 [部分](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)。
+>有關此IIS選項的詳細資訊，請參閱[官方文檔](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)的「How To」（如何操作）部分。
 
-### 配置http錯誤消息顯示 {#configuring-http-error-message-display}
+### 配置http錯誤消息顯示{#configuring-http-error-message-display}
 
 如果您使用6.1版IIS伺服器，由於訊息中顯示不想要的HTML程式碼，所產生的錯誤訊息可能難以讀取。
 
 若要修正此問題並正確顯示錯誤，請套用下列設定：
 
-1. 通過菜單開啟IIS **[!UICONTROL Start > Control Panel > Administrative tools]** 。
-1. 在「連 **線** 」窗格中，選取為您的Adobe Campaign安裝所建立的網站，然後在主窗格中按兩下「 **設定編輯器** 」。
-1. 在「區 **域** 」下拉式清單中，選 **取system.webServer** > **httpErrors**。
-1. 在現有 **響應行** ，選擇 **「傳遞** 」值。
+1. 通過&#x200B;**[!UICONTROL Start > Control Panel > Administrative tools]**&#x200B;菜單開啟IIS。
+1. 在&#x200B;**連線**&#x200B;窗格中，選取為您的Adobe Campaign安裝所建立的網站，然後在主窗格中按兩下「設定編輯器」。****
+1. 在&#x200B;**Section**&#x200B;下拉清單中，選擇&#x200B;**system.webServer** > **httpErrors**。
+1. 在&#x200B;**existingResponse**&#x200B;行選擇&#x200B;**PassThrough**&#x200B;值。
 
 ![](assets/ins_iis_httperrors.png)
 
