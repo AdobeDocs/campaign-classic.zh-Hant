@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 對出頻道上的優惠方案{#offers-on-an-outbound-channel}
 
-## 電子郵件選件傳送 {#email-offer-delivery}
+## 電子郵件選件傳送{#email-offer-delivery}
 
 在我們的資料庫中，有一類旅行優惠是去非洲。 已設定每個選件的資格、上下文和表示法。 我們現在想要建立促銷活動，透過電子郵件呈現我們的選件。
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_001.png)
 
-1. 編輯電子郵件傳送，然後按一下 **[!UICONTROL Offers]** 圖示。
+1. 編輯電子郵件傳送，然後按一下&#x200B;**[!UICONTROL Offers]**&#x200B;圖示。
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -53,18 +53,18 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 按一 **[!UICONTROL Preview]** 下以在傳送中預覽選件，然後選取收件者以在收到選件時預覽選件。
+1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;以在傳送中預覽選件，然後選取收件者以在收到選件時預覽選件。
 
    ![](assets/offer_delivery_example_009.png)
 
 1. 儲存您的傳送並啟動定位工作流程。
-1. 開啟您的傳送，然後按一下 **[!UICONTROL Audit]** 傳送的標籤：您可以看到選件引擎已從目錄中的各種選件中選取要提出的建議。
+1. 開啟您的傳送，然後按一下傳送的&#x200B;**[!UICONTROL Audit]**&#x200B;標籤：您可以看到選件引擎已從目錄中的各種選件中選取要提出的建議。
 
    ![](assets/offer_delivery_example_010.png)
 
-## 執行選件模擬 {#perform-an-offer-simulation}
+## 執行選件模擬{#perform-an-offer-simulation}
 
-1. 在宇宙 **[!UICONTROL Profiles and Targets]** 中，按一下連 **[!UICONTROL Simulations]** 結，然後按一下 **[!UICONTROL Create]** 按鈕。
+1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;宇宙中，按一下&#x200B;**[!UICONTROL Simulations]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 
    ![](assets/offer_simulation_001.png)
 
@@ -76,7 +76,7 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_003.png)
 
-1. 按一下 **[!UICONTROL Edit]** 標籤，然後 **[!UICONTROL Scope]**。
+1. 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Scope]**。
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -91,7 +91,7 @@ ht-degree: 3%
 1. 輸入有效日期。 您必須至少輸入開始日期。 這可讓選件引擎篩選選件，並選擇在指定日期有效的選件。
 1. 如有必要，請指定一或多個主題，將選件數限制為設定中包含此關鍵字的選件數。
 
-   在我們的範例中， **Travel** 類別包含兩個子類別，其中有兩個不同的主題。 我們想要運用「客戶>1年」主題來 **模擬優惠** 。
+   在我們的範例中，**Travel**&#x200B;類別包含兩個具有兩個不同主題的子類別。 我們想要運用&#x200B;**Customers>1年**&#x200B;主題對選件進行模擬。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -105,21 +105,21 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_009.png)
 
-1. 儲存您的設定，然後按一 **[!UICONTROL Start]** 下標籤中 **[!UICONTROL Dashboard]** 的以執行模擬。
+1. 儲存您的設定，然後按一下&#x200B;**[!UICONTROL Dashboard]**&#x200B;標籤中的&#x200B;**[!UICONTROL Start]**&#x200B;以執行模擬。
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 在模擬完成後，請參閱，以取得 **[!UICONTROL Results]** 每個選件的主張詳細劃分資訊。
+1. 模擬完成後，請參閱&#x200B;**[!UICONTROL Results]**&#x200B;以取得每個選件的主張詳細劃分資訊。
 
    在我們的範例中，選件引擎以3個選件劃分為基礎。
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 顯示以 **[!UICONTROL Breakdown of offers by rank]** 檢視選件引擎所選取的選件清單。
+1. 顯示&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;以檢視選件引擎所選的選件清單。
 
    ![](assets/offer_simulation_example_012.png)
 
-1. 如有必要，您可以變更範圍設定，並按一下以再次執行模擬 **[!UICONTROL Start simulation]**。
+1. 如有必要，可以通過按一下&#x200B;**[!UICONTROL Start simulation]**&#x200B;來更改範圍設定並再次運行模擬。
 
    ![](assets/offer_simulation_example_010.png)
 
