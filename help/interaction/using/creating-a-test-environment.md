@@ -21,19 +21,19 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標映射嚮導。 如需詳細資訊，請參閱「 [建立選件環境」](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+>僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標映射嚮導。 有關詳細資訊，請參閱[建立選件環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
 1. 啟動Adobe Campaign檔案總管並前往執行個體根目錄。
-1. 使用下拉式選單 **[!UICONTROL Generic folder]** 按一下滑鼠右鍵並新增。
+1. 使用下拉式選單，以滑鼠右鍵按一下並新增&#x200B;**[!UICONTROL Generic folder]**。
 
    ![](assets/offer_env_creation_001.png)
 
-1. 接著，移至您剛建立的檔案夾，並使用 **[!UICONTROL Offer environment]** 滑鼠右鍵功能表新增。
+1. 接著，前往您剛建立的資料夾，並使用滑鼠右鍵功能表新增&#x200B;**[!UICONTROL Offer environment]**。
 
    ![](assets/offer_env_creation_001bis.png)
 
 1. 應用相同的流程建立環境子資料夾和元素。
-1. 測試完成後，您想要在生產環境中使用，請複製您設計環境中的選件和空間。 (按一下滑鼠右鍵> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** )。
+1. 測試完成後，您想要在生產環境中使用，請複製您設計環境中的選件和空間。 （按一下右鍵> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]**）。
 
    ![](assets/migration_interaction_5.png)
 
