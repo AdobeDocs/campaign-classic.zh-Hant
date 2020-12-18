@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1087'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## PostgreSQL {#postgresql}
 
-### 檢測大表 {#detecting-large-tables}
+### 檢測大表{#detecting-large-tables}
 
 1. 您可以將下列視圖添加到資料庫中：
 
@@ -44,9 +44,9 @@ ht-degree: 0%
    select * from uvSpace;
    ```
 
-### 簡單維護 {#simple-maintenance}
+### 簡單維護{#simple-maintenance}
 
-在PostgreSQL下，您可以使用的典型命令是真 **空完全****和重新索引**。
+在PostgreSQL下，您可以使用的典型命令是&#x200B;**真空full**&#x200B;和&#x200B;**reindex**。
 
 以下是使用以下兩個命令定期執行的SQL維護計畫的典型示例：
 
@@ -91,23 +91,23 @@ vacuum full nmsdelivery;
 >[!NOTE]
 >
 >* Adobe建議從較小的表格開始：如此，如果大型表上的進程失敗（故障風險最高），則至少已完成部分維護。
->* Adobe會重新命令新增資料模型專屬的表格，這些表格可能會受到重大更新的影響。 如果每日資料複製流 **量較大** ，則NmsRecipient可能會出現這種情況。
->* 真 **空和重** 新索引命令將鎖定表 **** ，在執行維護時會暫停某些進程。
->* 對於超大表（通常高於5 Gb）, **完全真空** 可能會變得相當低效，而且需要很長時間。 Adobe不建議將它用於 **YyyNmsBroadLogXxx表** 。
->* 此維護作業可透過Adobe Campaign工作流程，使用活 **[!UICONTROL SQL]** 動來實施(如需詳細資訊，請參 [閱本節](../../workflow/using/architecture.md))。 請確定您排程的維護時間較短，不會與備份視窗發生衝突。
+>* Adobe會重新命令新增資料模型專屬的表格，這些表格可能會受到重大更新的影響。 如果每日資料複製流量較大，則&#x200B;**NmsRecipient**&#x200B;可能會出現這種情況。
+>* **真空**&#x200B;和&#x200B;**re-index**&#x200B;命令將鎖定表，該表在執行維護時會暫停某些進程。
+>* 對於超大表（通常高於5 Gb）,**真空完全**&#x200B;會變得相當低效，而且需要很長時間。 Adobe不建議將它用於&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
+>* 此維護作業可透過Adobe Campaign工作流程，使用&#x200B;**[!UICONTROL SQL]**&#x200B;活動來實施（如需詳細資訊，請參閱[本節](../../workflow/using/architecture.md)）。 請確定您排程的維護時間較短，不會與備份視窗發生衝突。
 
 >
 
 
 
-### 重建資料庫 {#rebuilding-a-database}
+### 重建資料庫{#rebuilding-a-database}
 
-PostgreSQL不提供執行聯機表重建的簡單方法，因為真空 **完全鎖定表** ，因此無法進行常規生產。 這表示在未使用表時必須執行維護。 您可以：
+由於&#x200B;**真空full**&#x200B;鎖定表，因此PostgreSQL無法提供執行聯機表重建的簡單方法，因此無法正常生產。 這表示在未使用表時必須執行維護。 您可以：
 
 * 在Adobe Campaign平台停止時執行維護，
-* 停止可能寫入重建表格的各種Adobe Campaign子服務(**nlserver stop wfserver instance_name** ，以停止工作流程程式)。
+* 停止可能寫入正在重建的表格的各種Adobe Campaign子服務（**nlserver stop wfserver instance_name**&#x200B;以停止工作流程進程）。
 
-以下是使用特定函式生成所需DDL的表碎片整理示例。 以下SQL可讓您建立兩個新函式： **GenRebuildTablePart1** 和 **GenRebuildTablePart2**，可用於生成必要的DDL以重新建立表。
+以下是使用特定函式生成所需DDL的表碎片整理示例。 以下SQL可讓您建立兩個新函式：**GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它們可用於生成必要的DDL以重新建立表。
 
 * 第一個函式可讓您建立工作表（** _tmp**此處），此為原始表格的副本。
 * 然後，第二個函式刪除原始表並更名工作表及其索引。
@@ -327,7 +327,7 @@ PostgreSQL不提供執行聯機表重建的簡單方法，因為真空 **完全�
  $$ LANGUAGE plpgsql;
 ```
 
-以下示例可用於工作流中以重建所需表，而不是使用 **真空／重建命令** :
+以下示例可用於工作流以重建所需的表，而不是使用&#x200B;**真空/rebuild**&#x200B;命令：
 
 ```
 function sqlGetMemo(strSql)
@@ -364,24 +364,24 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->對於Microsoft SQL Server，您可以使用此頁上詳細的維 [護計畫](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
+>對於Microsoft SQL Server，可以使用本頁[中詳細說明的維護計畫。](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)
 
 以下示例涉及Microsoft SQL Server 2005。 如果您使用其他版本，請連絡您的資料庫管理員以瞭解維護程式。
 
 1. 首先，使用具有管理員權限的登錄功能連接到Microsoft SQL Server Management Studio。
-1. 前往資料 **[!UICONTROL Management > Maintenance Plans]** 夾，以滑鼠右鍵按一下，然後選擇 **[!UICONTROL Maintenance Plan Wizard]**
-1. 當第 **[!UICONTROL Next]** 一個頁面出現時按一下。
-1. 選擇要建立的維護計畫類型（為每個任務單獨計畫或整個計畫單個計畫），然後按一下按 **[!UICONTROL Change...]** 鈕。
-1. 在視窗 **[!UICONTROL Job schedule properties]** 中，選取所要的執行設定，然後按一 **[!UICONTROL OK]** 下，然後按一下 **[!UICONTROL Next]** 。
-1. 選擇要執行的維護任務，然後按一下 **[!UICONTROL Next]** 。
+1. 前往&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;資料夾，按一下滑鼠右鍵並選擇&#x200B;**[!UICONTROL Maintenance Plan Wizard]**
+1. 第一頁出現時，按一下&#x200B;**[!UICONTROL Next]**。
+1. 選擇要建立的維護計畫類型（為每個任務單獨計畫或整個計畫單個計畫），然後按一下&#x200B;**[!UICONTROL Change...]**&#x200B;按鈕。
+1. 在&#x200B;**[!UICONTROL Job schedule properties]**&#x200B;視窗中，選取所要的執行設定，然後按一下&#x200B;**[!UICONTROL OK]**，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 選擇要執行的維護任務，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
    >我們建議至少執行以下所示的維護任務。 您也可以選擇統計資訊更新任務，儘管該任務已由資料庫清理工作流執行。
 
-1. 在下拉清單中，選擇要在其上運行任務的數 **[!UICONTROL Database Check Integrity]** 據庫。
-1. 選取資料庫並按一下 **[!UICONTROL OK]** ，然後按一下 **[!UICONTROL Next]** 。
-1. 配置分配給資料庫的最大大小，然後按一下 **[!UICONTROL Next]** 。
+1. 在下拉清單中，選擇要運行&#x200B;**[!UICONTROL Database Check Integrity]**&#x200B;任務的資料庫。
+1. 選擇資料庫並按一下&#x200B;**[!UICONTROL OK]** ，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 配置分配給資料庫的最大大小，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
@@ -391,7 +391,7 @@ function sqlGetMemo(strSql)
 
    * 如果指數碎片化率在10%到40%之間，建議進行重組。
 
-      選擇要重組的資料庫和對象（表或視圖），然後按一下 **[!UICONTROL Next]** 。
+      選擇要重組的資料庫和對象（表或視圖），然後按一下&#x200B;**[!UICONTROL Next]**。
 
       >[!NOTE]
       >
@@ -399,22 +399,22 @@ function sqlGetMemo(strSql)
 
    * 如果索引碎片率高於40%，建議重建。
 
-      選擇要應用於索引重建任務的選項，然後按一下 **[!UICONTROL Next]** 。
+      選擇要應用於索引重建任務的選項，然後按一下&#x200B;**[!UICONTROL Next]**。
 
       >[!NOTE]
       >
-      >從處理器的使用角度看，重建索引過程更加緊張，並鎖定了資料庫資源。 如果希 **[!UICONTROL Keep index online while reindexing]** 望索引在重建期間可用，請勾選此選項。
+      >從處理器的使用角度看，重建索引過程更加緊張，並鎖定了資料庫資源。 如果希望索引在重建期間可用，請勾選&#x200B;**[!UICONTROL Keep index online while reindexing]**&#x200B;選項。
 
-1. 選取要在活動報表中顯示的選項，然後按一下 **[!UICONTROL Next]** 。
-1. 檢查為維護計畫配置的任務清單，然後按一下 **[!UICONTROL Finish]** 。
+1. 選擇要在活動報告中顯示的選項，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 檢查為維護計畫配置的任務清單，然後按一下&#x200B;**[!UICONTROL Finish]**。
 
    此時將顯示維護計畫的概要及其各步驟的狀態。
 
-1. 維護計畫完成後，按一下 **[!UICONTROL Close]** 。
-1. 在Microsoft SQL Server瀏覽器中，按兩下該檔案 **[!UICONTROL Management > Maintenance Plans]** 夾。
+1. 維護計畫完成後，按一下&#x200B;**[!UICONTROL Close]**。
+1. 在Microsoft SQL Server瀏覽器中，按兩下&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;資料夾。
 1. 選擇Adobe Campaign維護計畫：工作流程中會詳細說明各種步驟。
 
-   請注意，已在資料夾中建立了 **[!UICONTROL SQL Server Agent > Jobs]** 對象。 此物件可讓您啟動維護計畫。 在我們的示例中，只有一個對象，因為所有維護任務都是同一計畫的一部分。
+   請注意，**[!UICONTROL SQL Server Agent > Jobs]**&#x200B;資料夾中已建立物件。 此物件可讓您啟動維護計畫。 在我們的示例中，只有一個對象，因為所有維護任務都是同一計畫的一部分。
 
    >[!IMPORTANT]
    >
@@ -426,7 +426,7 @@ function sqlGetMemo(strSql)
 >
 >此配置是可選的。
 
-使 **用WdbcOptions_TempDbName** 選項，可以為Microsoft SQL Server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。
+**WdbcOptions_TempDbName**&#x200B;選項允許您為Microsoft SQL Server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。
 
 如果希望在另一個資料庫上建立工作表（例如，在工作流執行期間建立的表），可以使用此選項。
 
