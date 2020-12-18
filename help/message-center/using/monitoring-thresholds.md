@@ -17,11 +17,11 @@ ht-degree: 6%
 
 # 監控閾值{#monitoring-thresholds}
 
-您可以配置「 **Message Center」服務級別和「** Message Center」處理時間報告（請參閱「關於事務性消息報告」）中顯示的指示器的警告閾值（橙色）和警告閾值(紅 **色)**[](../../message-center/using/about-transactional-messaging-reports.md)。 若要這麼做，請開啟執行例項的部署精靈，前往頁 **[!UICONTROL Message Center]** 面並使用箭頭變更臨界值。
+您可以配置&#x200B;**消息中心服務級別**&#x200B;和&#x200B;**消息中心處理時間**&#x200B;報告中顯示的指示符的警告閾值（橙色）和警告閾值（紅色）（請參閱[關於事務性消息報告](../../message-center/using/about-transactional-messaging-reports.md)）。 要執行此操作，請開啟執行實例的部署嚮導，轉至&#x200B;**[!UICONTROL Message Center]**&#x200B;頁，然後使用箭頭更改閾值。
 
 ![](assets/messagecenter_monitor_events_001.png)
 
 >[!NOTE]
 >
->佇列中待決事件的數目會顯示在Adobe Campaign流程監 [控頁面的](../../production/using/monitoring-processes.md#system-indicators) 「系統指標」區段中。 有關部署嚮導的詳細資訊，請參 [閱本節](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+>佇列中待處理的事件數會顯示在Adobe Campaign流程監控頁面的[System indicators](../../production/using/monitoring-processes.md#system-indicators)區段中。 有關部署嚮導的詳細資訊，請參閱[本節](../../installation/using/deploying-an-instance.md#deployment-wizard)。
 
