@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # 更新彙總{#update-aggregate}
 
-聚合在立方級別定義，用於報告。 配置 **[!UICONTROL Workflow]** 聚合時，頁籤可用。
+聚合在立方級別定義，用於報告。 配置聚合時，**[!UICONTROL Workflow]**&#x200B;頁籤可用。
 
-有關Adobe Campaign中立方和使用匯總的詳細資訊，請參閱專屬的 [章節](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)。
+有關Adobe Campaign中立方和使用匯總的詳細資訊，請參閱專屬的[章節](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)。
 
-此活 **[!UICONTROL Update aggregate]** 動可讓您選取要套用的更新模式：完整或部分。
+**[!UICONTROL Update aggregate]**&#x200B;活動可讓您選擇要套用的更新模式：完整或部分。
 
 依預設，每次計算時都會執行完整更新。 若要啟用部分更新，請選取相關選項並定義更新條件。
 
