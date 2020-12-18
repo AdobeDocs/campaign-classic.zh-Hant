@@ -38,9 +38,9 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏
    * **反彈率**:僅顯示第一步的人數
    * **轉換漏斗**:每個步驟之間的丟失率。
 
-   此外，扇區類 **型圖** 表還根據人口來源顯示人口。
+   此外，**扇區**&#x200B;類型圖表根據人口來源顯示人口。
 
-## 識別流量來源 {#identifying-the-traffic-source}
+## 識別流量來源{#identifying-the-traffic-source}
 
 可使用兩種不同的模式來識別訪客在存取Web應用程式時的出處：
 
@@ -59,11 +59,11 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏
 >
 >請記住，只有在部署精靈中啟動了對應的選項時，才能進行匿名追蹤。
 >
->For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
+>有關詳細資訊，請參閱[《安裝指南》](../../installation/using/deploying-an-instance.md)。
 
-## 使用數位內容編輯器(DCE)設計的Web應用程式 {#web-applications-designed-with-digital-content-editor--dce-}
+## 使用數位內容編輯器(DCE){#web-applications-designed-with-digital-content-editor--dce-}設計的Web應用程式
 
-當使用HTML內容編輯器- **Digital Content Editor(DCE)** -建立Web應用程式時，會從編輯器的頁籤 **[!UICONTROL Properties]** 插入跟蹤標籤。 有關數字內容編輯器(DCE)的詳細資訊，請參 [閱本節](../../web/using/about-campaign-html-editor.md)。
+使用HTML內容編輯器- **數位內容編輯器(DCE)**&#x200B;建立Web應用程式時，會從編輯器的&#x200B;**[!UICONTROL Properties]**&#x200B;頁籤插入跟蹤標籤。 有關數字內容編輯器(DCE)的詳細資訊，請參閱[本節](../../web/using/about-campaign-html-editor.md)。
 
 ![](assets/trackers_2.png)
 
@@ -71,7 +71,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏
 
 ![](assets/trackers_3.png)
 
-圖 **[!UICONTROL Display blocks]** 示可讓您檢視為頁面定義的追蹤標籤數。
+**[!UICONTROL Display blocks]**&#x200B;圖示可讓您檢視為頁面定義的追蹤標籤數。
 
 ![](assets/trackers_4.png)
 
