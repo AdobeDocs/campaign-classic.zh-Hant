@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
 
-# Get Started with Campaign Classic{#about-adobe-campaign-classic}
+# 開始使用Campaign Classic{#about-adobe-campaign-classic}
 
 為了實現高水準的客戶參與度並打造精彩的體驗，企業必須在所有接觸點建立一致的客戶旅程。現在，行銷人員可以有效地設計、規劃、執行、管理以及最佳化跨通路行銷活動，為行銷投資帶來更高的投資報酬，並且提高客戶的忠誠度。
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Adobe Campaign Classic 現提供 v6.11 和 v7 兩個版本。Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). 螢幕截圖為 Campaign Classic v7 使用者介面。
+>Adobe Campaign Classic 現提供 v6.11 和 v7 兩個版本。除了提及之外，[最新版本](../../rn/using/latest-release.md)中的這兩個版本都適用幫助材料。 螢幕截圖為 Campaign Classic v7 使用者介面。
 
 ![](assets/do-not-localize/how-to-video.png) [探索視訊的主要功能與功能](#video)
 
@@ -87,10 +87,10 @@ Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行�
 * [網路服務](../../configuration/using/about-web-services.md) -透過 API/網路服務使用 Campaign
 * [報告](../../reporting/using/about-adobe-campaign-reporting-tools.md) -存取內建報表，分析資料及設計您自己的報告
 
-## 教學課程影片 {#video}
+## 教學課程影片{#video}
 
 此影片提供Campaign Classic的主要功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
