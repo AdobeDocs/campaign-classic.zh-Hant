@@ -19,9 +19,9 @@ ht-degree: 4%
 
 網頁追蹤標籤只是使用適當參數建構的URL，透過HTTP查詢傳送至重新導向伺服器。
 
-## 要傳送的資料格式 {#format-of-the-data-to-be-sent}
+## 要發送的資料的格式{#format-of-the-data-to-be-sent}
 
-網頁追蹤URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+網頁追蹤URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
@@ -79,7 +79,8 @@ ht-degree: 4%
                               <p>URL參數</p> 
                            </td>
                            <td>
-                              <p>若沒有工作階段Cookie，則使用傳送識別碼。 此值將以十六進位表示。
+                              <p>若沒有工作階段Cookie，則使用傳送識別碼。 此值將是
+                                 以十六進位表示。
                               </p> 
                            </td> 
                         </tr>
@@ -91,7 +92,9 @@ ht-degree: 4%
                               <p>URL參數</p> 
                            </td>
                            <td>
-                              <p>用於識別網際網路使用者的參數。 此參數的格式為"name=value"，其中name是收件人方案的欄位。 此參數會優先於作業Cookie中包含的識別碼。
+                              <p>用於識別網際網路使用者的參數。 此參數的格式為"name=value",
+                                 其中，名稱是收件方案的欄位。 此參數優先於
+                                 工作階段Cookie中包含的識別碼。
                               </p> 
                            </td> 
                         </tr> 
@@ -124,10 +127,10 @@ ht-degree: 4%
 >
 >所有透過URL參數傳送至重新導向伺服器的值都必須經過URL編碼。 在給定的示例中，請注意，字元&#39;=&#39;和&#39;|&#39;分別編碼為&#39;%3D&#39;和&#39;%7C&#39;。
 
-## 資料傳輸方法 {#data-transmission-methods}
+## 資料傳輸方法{#data-transmission-methods}
 
 可能有下列方法：
 
-* 將URL插入 **您要追蹤的網****`<img>`** 頁中併入之HTML標籤的「src」屬性。
+* 將URL插入您要追蹤之網頁內併入之HTML **`<img>`**&#x200B;標籤的&#x200B;**&quot;src&quot;**&#x200B;屬性中。
 * 產生您要追蹤的網頁時，直接呼叫重新導向伺服器。
 
