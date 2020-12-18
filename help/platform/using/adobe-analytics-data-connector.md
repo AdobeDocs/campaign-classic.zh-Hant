@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # Adobe Analytics 資料連接器{#adobe-analytics-data-connector}
 
-## 關於資料連接器整合 {#about-data-connector-integration}
+## 關於資料連接器整合{#about-data-connector-integration}
 
 >[!IMPORTANT]
 >
 >Adobe Analytics Data Connector與交易式訊息（訊息中心）不相容。
 
-資料連接器（先前稱為Adobe Genesis）可讓Adobe Campaign和Adobe Analytics透過 **Web Analytics連接器套件互動** 。 它會以區段形式將資料轉送至Adobe Campaign，內容與電子郵件促銷活動後的使用者行為有關。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動指標和屬性傳送至Adobe Analytics —— 資料連接器。
+資料連接器（先前稱為Adobe Genesis）可讓Adobe Campaign和Adobe Analytics透過&#x200B;**Web Analytics連接器**&#x200B;套件進行互動。 它會以區段形式將資料轉送至Adobe Campaign，內容與電子郵件促銷活動後的使用者行為有關。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動指標和屬性傳送至Adobe Analytics —— 資料連接器。
 
 Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web Analytics)。 有了這些整合，Adobe Campaign可以恢復行銷活動後一或多個網站的訪客行為資料，並（分析後）執行再行銷活動，以便將其轉換為購買者。 相反地，網頁分析工具可讓Adobe Campaign將指標和促銷活動屬性轉送至其平台。
 
-如需Adobe Analytics與Adobe Campaign整合的詳細資訊，請參閱本文 [件](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
+如需Adobe Analytics與Adobe Campaign整合的詳細資訊，請參閱本[檔案](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
 
 每個工具的操作欄位如下：
 
@@ -42,7 +42,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
    1. 恢復和分析細分，
    1. 觸發重新行銷促銷活動。
 
-## 設定整合 {#setting-up-the-integration}
+## 設定整合{#setting-up-the-integration}
 
 若要設定「資料」連接器，您必須連線至您的Adobe Campaign例項並執行下列作業：
 
@@ -50,7 +50,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 * [步驟2:在Campaign中建立外部帳戶](#step-2--create-the-external-account-in-campaign)
 * [步驟3:同步化Adobe Campaign和Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### 步驟1:在Analytics中設定整合 {#step-1--configure-integration-in-analytics}
+### 步驟1:在Analytics中設定整合{#step-1--configure-integration-in-analytics}
 
 以下步驟詳細說明使用嚮導的資料連接器的配置。
 
@@ -58,36 +58,36 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/adobe_genesis_install_001.png)
 
-1. 從Experience Cloud解決方案清單中，選取 **[!UICONTROL Analytics]**。
+1. 從Experience Cloud解決方案清單中，選取&#x200B;**[!UICONTROL Analytics]**。
 
    ![](assets/adobe_genesis_install_013.png)
 
-1. From the **[!UICONTROL Admin]** tab, select **[!UICONTROL Data Connectors]**.
+1. 從&#x200B;**[!UICONTROL Admin]**&#x200B;標籤中，選擇&#x200B;**[!UICONTROL Data Connectors]**。
 
-   您必須具備下列Analytics工具權限才能存取功 **[!UICONTROL Data Connectors]** 能表。 For more on this, refer to this [page](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   您必須具備下列Analytics工具權限才能存取&#x200B;**[!UICONTROL Data Connectors]**&#x200B;功能表。 如需詳細資訊，請參閱此[頁面](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
    * 整合（建立）
    * 整合（更新）
    * 整合（刪除）
 
    ![](assets/adobe_genesis_install_002.png)
 
-1. 從合作夥伴清單中，選擇 **[!UICONTROL Adobe Campaign Classic]**。
+1. 從合作夥伴清單中，選擇&#x200B;**[!UICONTROL Adobe Campaign Classic]**。
 
    ![](assets/adobe_genesis_install_014.png)
 
-1. In the **[!UICONTROL Add integration]** dialog, click **[!UICONTROL Activate]**.
-1. 選 **[!UICONTROL I accept these terms and conditions]** 中並選擇鏈 **[!UICONTROL Report suite]** 接到此整合併輸入連接器標籤。
+1. 在&#x200B;**[!UICONTROL Add integration]**&#x200B;對話框中，按一下&#x200B;**[!UICONTROL Activate]**。
+1. 選中&#x200B;**[!UICONTROL I accept these terms and conditions]**&#x200B;並選擇連結到此整合的&#x200B;**[!UICONTROL Report suite]** ，然後輸入連接器標籤。
 
-   完成後，按一下 **[!UICONTROL Create and configure this integration]**。
+   完成後，按一下&#x200B;**[!UICONTROL Create and configure this integration]**。
 
    ![](assets/adobe_genesis_install_015.png)
 
-1. 輸入代表連接器接收通知的電子郵件地址，然後複製外部 **[!UICONTROL Account ID]** Adobe Campaign帳戶中顯示的通知(如需詳細資訊，請參閱 [步驟2:在促銷活動中建立外部帳戶](#step-2--create-the-external-account-in-campaign))。
+1. 輸入代表連接器接收通知的電子郵件地址，然後複製&#x200B;**[!UICONTROL Account ID]**，如外部Adobe Campaign帳戶中所示(如需詳細資訊，請參閱[步驟2:在Campaign](#step-2--create-the-external-account-in-campaign)中建立外部帳戶)。
 
    ![](assets/adobe_genesis_install_005.png)
 
 1. 指定測量電子郵件促銷活動影響所需的識別碼，例如內部促銷活動名稱(cid)和iNmsBroadlog（競標）表格ID。 您也應指定要收集之事件的指標。
-請確定您的 **[!UICONTROL Events]** 類型為「數值」，否則它們不會出現在下拉式選單中。
+請確定您的**[!UICONTROL Events]**&#x200B;為「數值」類型，否則它們不會出現在下拉式選單中。
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -95,7 +95,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/adobe_genesis_install_007.png)
 
-1. 在中 **[!UICONTROL Data collection]**，選擇恢復資料的方法，在此例中，選擇步驟6中 **[!UICONTROL cid]** 指定 **[!UICONTROL bid]** 的和標識符。
+1. 在&#x200B;**[!UICONTROL Data collection]**&#x200B;中，選擇恢復資料的方法，在此例中，選擇步驟6中指定的&#x200B;**[!UICONTROL cid]**&#x200B;和&#x200B;**[!UICONTROL bid]**&#x200B;標識符。
 
    ![](assets/adobe_genesis_install_009.png)
 
@@ -107,30 +107,30 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/adobe_genesis_install_011.png)
 
-1. 按一下 **[!UICONTROL Activate Now]** 批准配置並激活連接器。
+1. 按一下&#x200B;**[!UICONTROL Activate Now]**&#x200B;批准配置並激活連接器。
 
    ![](assets/adobe_genesis_install_012.png)
 
    「資料」連接器現在已設定。
 
-### 步驟2:在Campaign中建立外部帳戶 {#step-2--create-the-external-account-in-campaign}
+### 步驟2:在促銷活動{#step-2--create-the-external-account-in-campaign}中建立外部帳戶
 
 將Adobe Campaign整合至Analytics平台時，會使用連接器。 若要同步應用程式，請套用下列程式：
 
-1. 在Adobe Campaign中 **安裝Web Analytics** connectors套件。
-1. 前往Adobe **[!UICONTROL Administration > Platform > External accounts]** Campaign樹狀結構的資料夾。
-1. 以滑鼠右鍵按一下外部帳戶清單，然 **[!UICONTROL New]** 後在下拉式選單中選取(或按一下外部帳戶 **[!UICONTROL New]** 清單上方的按鈕)。
-1. 使用下拉式清單來選取類 **[!UICONTROL Web Analytics]** 型。
-1. 選擇連接器的提供器，即 **[!UICONTROL Adobe Analytics - Data Connector]** 在本例中。
+1. 在Adobe Campaign中安裝&#x200B;**Web Analytics connectors**&#x200B;套件。
+1. 前往Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;資料夾。
+1. 按一下右鍵外部帳戶清單，然後在下拉菜單中選擇&#x200B;**[!UICONTROL New]**（或按一下外部帳戶清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕）。
+1. 使用下拉式清單來選擇&#x200B;**[!UICONTROL Web Analytics]**&#x200B;類型。
+1. 選擇連接器的提供器，即&#x200B;**[!UICONTROL Adobe Analytics - Data Connector]**。
 
    ![](assets/webanalytics_ext_account_create_001.png)
 
-1. 按一 **[!UICONTROL Enrich the formula...]** 下連結以變更URL計算公式，以指定網站分析工具整合資訊（促銷活動ID）和必須追蹤其活動之網站的網域。
+1. 按一下&#x200B;**[!UICONTROL Enrich the formula...]**&#x200B;連結以變更URL計算公式，以指定網站分析工具整合資訊（促銷活動ID）和必須追蹤其活動之網站的網域。
 1. 指定網站的網域名稱。
 
    ![](assets/webanalytics_tracking_001.png)
 
-1. 單 **[!UICONTROL Next]** 擊並確保域名已保存。
+1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;並確保域名已保存。
 
    ![](assets/webanalytics_tracking_002.png)
 
@@ -142,62 +142,62 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
    >
    >此配置模式保留給專家用戶：此公式中的任何錯誤都可能導致電子郵件傳送停止。
 
-1. 此標 **[!UICONTROL Advanced]** 簽可讓您設定或修改更多技術設定。
+1. **[!UICONTROL Advanced]**&#x200B;標籤可讓您設定或修改更多技術設定。
 
-   * **[!UICONTROL Lifespan]**:可讓您指定延遲（以天數_為單位），之後Adobe Campaign中的網頁事件會依技術工作流程進行復原。 預設值：180天。
+   * **[!UICONTROL Lifespan]**:可讓您指定延遲（以天數_為單位），之後Adobe Campaign中的網頁事件會依技術工作流程進行復原。預設值：180天。
    * **[!UICONTROL Persistence]**:可讓您將所有Web事件（例如購買）歸因於重新行銷促銷活動的期間，預設值：7天。
 
 >[!NOTE]
 >
->如果您使用數種對象測量工具，則可在建 **[!UICONTROL Other]** 立外部 **[!UICONTROL Partners]** 帳戶時，在下拉式清單中選取。 您只能在傳送屬性中參考一個外部帳戶：因此，您必須新增Adobe和所有其他測量工具所預期的參數，以調整追蹤URL的公式。
+>如果您使用數種觀眾測量工具，則可在建立外部帳戶時，在&#x200B;**[!UICONTROL Partners]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Other]**。 您只能在傳送屬性中參考一個外部帳戶：因此，您必須新增Adobe和所有其他測量工具所預期的參數，以調整追蹤URL的公式。
 
 ### 步驟3:同步化Adobe Campaign和Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 建立外部帳戶後，您需要同步兩個應用程式。
 
 1. 前往您先前建立的外部帳戶。
-1. 視需要變 **[!UICONTROL Label]** 更帳戶。
-1. 變更 **[!UICONTROL Internal name]** ，使其符合設定「資料 **[!UICONTROL Name]** 連接器」時選擇的項目。
+1. 視需要變更帳戶&#x200B;**[!UICONTROL Label]**。
+1. 更改&#x200B;**[!UICONTROL Internal name]**，使其與配置資料連接器時選擇的&#x200B;**[!UICONTROL Name]**&#x200B;匹配。
 
    ![](assets/webanalytics_ext_account_setting_001.png)
 
-1. 按一下 **[!UICONTROL Approve connection]** 連結。
+1. 按一下&#x200B;**[!UICONTROL Approve connection]**&#x200B;連結。
 
    ![](assets/webanalytics_ext_account_setting_002.png)
 
-   請確定符合 **[!UICONTROL Internal name]** 「資料連 **[!UICONTROL Name]** 接器設定」精靈中指定的項目。
+   確保&#x200B;**[!UICONTROL Internal name]**&#x200B;與「資料連接器配置」嚮導中指定的&#x200B;**[!UICONTROL Name]**&#x200B;匹配。
 
-1. 在「資料 **[!UICONTROL Account ID]** 連接器配置」嚮導中輸入。
+1. 在資料連接器配置嚮導中輸入&#x200B;**[!UICONTROL Account ID]**。
 
    ![](assets/webanalytics_ext_account_setting_003.png)
 
 1. 依照「資料連接器」精靈指南的步驟進行，然後返回Adobe Campaign中的外部帳戶。
-1. 按一 **[!UICONTROL Next]** 下，以便在Adobe Campaign和Adobe Analytics —— 資料連接器之間進行資料交換。
+1. 按一下&#x200B;**[!UICONTROL Next]**，以便在Adobe Campaign和Adobe Analytics —— 資料連接器之間進行資料交換。
 
    同步完成後，將顯示段清單。
 
    ![](assets/webanalytics_ext_account_setting_004.png)
 
-當Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料同步生效時，Adobe Campaign會復原「資料連接器」精靈中定義的三個預設區段，並可在Adobe Campaign外部帳戶的標籤中存取。 **[!UICONTROL Segments]**
+當Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料同步生效時，Adobe Campaign會復原「資料連接器」精靈中定義的三個預設區段，並可在Adobe Campaign外部帳戶的&#x200B;**[!UICONTROL Segments]**&#x200B;標籤中存取。
 
 ![](assets/webanalytics_segments.png)
 
-如果在「資料連接器」精靈中設定了其他區段，您可以將它們新增至Adobe Campaign。 若要這麼做，請按一下 **[!UICONTROL Update segment list]** 連結，並遵循外部帳戶精靈中概述的步驟。 執行操作後，新區段就會顯示在清單中。
+如果在「資料連接器」精靈中設定了其他區段，您可以將它們新增至Adobe Campaign。 若要這麼做，請按一下&#x200B;**[!UICONTROL Update segment list]**&#x200B;連結，然後依照外部帳戶精靈中所述的步驟進行。 執行操作後，新區段就會顯示在清單中。
 
 ![](assets/webanalytics_segments_update.png)
 
-### 網頁分析程式的技術工作流程 {#technical-workflows-of-web-analytics-processes}
+### 網頁分析程式的技術工作流程{#technical-workflows-of-web-analytics-processes}
 
 Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是由四個技術工作流程所處理，這些工作流程會以後台工作的方式執行。
 
-這些功能可在Adobe Campaign樹狀結構的資料夾下 **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** 使用。
+它們可在&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Web analytics process]**&#x200B;資料夾下的Adobe Campaign樹狀結構中使用。
 
 ![](assets/webanalytics_workflows.png)
 
 * **[!UICONTROL Recovering of web events]**:每小時一次，此工作流程會下載有關特定網站使用者行為的區段，並將其納入Adobe Campaign資料庫，然後啟動重新行銷工作流程。
-* **[!UICONTROL Event purge]**:此工作流允許您根據欄位中配置的期間，從資料庫中刪除所有事 **[!UICONTROL Lifespan]** 件。 如需詳細資訊，請參閱 [步驟2:在Campaign中建立外部帳戶](#step-2--create-the-external-account-in-campaign)。
-* **[!UICONTROL Identification of converted contacts]**:重新行銷促銷活動後進行購買的訪客的目錄。 此工作流程收集的資料可在報表中存 **[!UICONTROL Re-marketing efficiency]** 取，請參閱此 [頁](#creating-a-re-marketing-campaign)。
-* **[!UICONTROL Sending of indicators and campaign attributes]**:可讓您使用Adobe Analytics —— 資料連接器，透過Adobe Campaign將電子郵件宣傳指標傳送至Adobe Experience Cloud。 此工作流程每天凌晨4點觸發，資料傳送至Analytics可能需要24小時。
+* **[!UICONTROL Event purge]**:此工作流允許您根據欄位中配置的時段，從資料庫中刪除所有 **[!UICONTROL Lifespan]** 事件。有關詳細資訊，請參閱[步驟2:在Campaign](#step-2--create-the-external-account-in-campaign)中建立外部帳戶。
+* **[!UICONTROL Identification of converted contacts]**:重新行銷促銷活動後進行購買的訪客的目錄。此工作流程收集的資料可在&#x200B;**[!UICONTROL Re-marketing efficiency]**&#x200B;報表中存取，請參閱此[頁面](#creating-a-re-marketing-campaign)。
+* **[!UICONTROL Sending of indicators and campaign attributes]**:可讓您使用Adobe Analytics —— 資料連接器，透過Adobe Campaign將電子郵件宣傳指標傳送至Adobe Experience Cloud。此工作流程每天凌晨4點觸發，資料傳送至Analytics可能需要24小時。
 
    請注意，此工作流程不應重新啟動，否則將重新傳送所有可能扭曲Analytics結果的先前資料。
 
@@ -222,8 +222,8 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
-   * **[!UICONTROL Label]** (operation/@label):只有在安 **裝Campaign** 套件時
-   * **[!UICONTROL Nature]** (operation/@nature):只有在安 **裝Campaign** 套件時
+   * **[!UICONTROL Label]** (operation/@label):只有在安裝 **** Campaign套件時
+   * **[!UICONTROL Nature]** (operation/@nature):只有在安裝 **** Campaign套件時
    * **[!UICONTROL Tag 1]** (webAnalytics/@tag1)
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
@@ -231,7 +231,7 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
 
 
 
-## 追蹤Adobe Campaign中的傳送 {#tracking-deliveries-in-adobe-campaign}
+## 追蹤Adobe Campaign {#tracking-deliveries-in-adobe-campaign}中的傳送
 
 為了讓Adobe Experience Cloud能夠在Adobe Campaign傳送後追蹤網站上的活動，您必須在傳送屬性中參考相符的連接器。 若要這麼做，請套用下列步驟：
 
@@ -240,13 +240,13 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. 開啟傳送屬性。
-1. 前往標籤 **[!UICONTROL Web Analytics]** 並選取先前建立的外部帳戶。 請參閱 [步驟2:在Campaign中建立外部帳戶](#step-2--create-the-external-account-in-campaign)。
+1. 前往&#x200B;**[!UICONTROL Web Analytics]**&#x200B;標籤，並選取先前建立的外部帳戶。 請參閱[步驟2:在Campaign](#step-2--create-the-external-account-in-campaign)中建立外部帳戶。
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
 1. 您現在可以在Adobe Analytics中傳送並存取報表。
 
-## Creating a re-marketing campaign {#creating-a-re-marketing-campaign}
+## 建立重新行銷促銷活動{#creating-a-re-marketing-campaign}
 
 若要準備再行銷促銷活動，只需建立要用於再行銷類型促銷活動的傳送範本。 然後設定您的再行銷促銷活動，並將其連結至區段。 每個區段必須有不同的再行銷促銷活動。
 
@@ -254,17 +254,17 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
 
 Adobe Campaign提供個人化的傳送範本，您可使用這些範本或將其建立資料庫，以準備宣傳活動。
 
-1. 從中 **[!UICONTROL Explorer]**，移至Adobe Campaign **[!UICONTROL Resources > Templates > Delivery templates]** 樹狀結構的資料夾。
-1. 複製Adobe **[!UICONTROL Email delivery (re-marketing)]** Campaign提供的範本或再行銷範本範例。
+1. 從&#x200B;**[!UICONTROL Explorer]**&#x200B;移至Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;資料夾。
+1. 複製&#x200B;**[!UICONTROL Email delivery (re-marketing)]**&#x200B;範本或Adobe Campaign提供的再行銷範本範例。
 1. 個人化範本以符合您的需求並加以儲存。
 
    ![](assets/webanalytics_delivery_model.png)
 
-1. 建立新促銷活動，並從下 **[!UICONTROL Re-marketing campaign]** 拉式清單中選取範本。
+1. 建立新促銷活動，並從下拉式清單中選取&#x200B;**[!UICONTROL Re-marketing campaign]**&#x200B;範本。
 
    ![](assets/webanalytics_remarketing_campaign_002.png)
 
-1. 按一下 **[!UICONTROL Configure...]** 連結，指定連結至促銷活動的區段和傳送範本。
+1. 按一下&#x200B;**[!UICONTROL Configure...]**&#x200B;連結，指定連結至促銷活動的區段和傳送範本。
 1. 選擇先前配置的外部帳戶。
 
    ![](assets/webanalytics_remarketing_campaign_003.png)
@@ -273,13 +273,13 @@ Adobe Campaign提供個人化的傳送範本，您可使用這些範本或將其
 
    ![](assets/webanalytics_remarketing_campaign_005.png)
 
-1. 選取要用於此重新行銷促銷活動的傳送範本，然後按一下 **[!UICONTROL Finish]** 以關閉視窗。
+1. 選取要用於此重新行銷促銷活動的傳送範本，然後按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以關閉視窗。
 
    ![](assets/webanalytics_remarketing_campaign_006.png)
 
-1. 按一 **[!UICONTROL OK]** 下以關閉促銷活動視窗。
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉促銷活動視窗。
 
-報表 **[!UICONTROL Re-marketing efficiency]** 可透過全域報表頁面存取。 它可讓您檢視與Adobe Campaign再行銷促銷活動後放棄的購物車數量相關的轉換聯絡人數（亦即已購買商品）。 轉換率是每週、每月或自Adobe Campaign與網頁分析工具開始同步起計算。
+**[!UICONTROL Re-marketing efficiency]**&#x200B;報表可透過全域報表頁面存取。 它可讓您檢視與Adobe Campaign再行銷促銷活動後放棄的購物車數量相關的轉換聯絡人數（亦即已購買商品）。 轉換率是每週、每月或自Adobe Campaign與網頁分析工具開始同步起計算。
 
 ![](assets/webanalytics_reporting.png)
 
