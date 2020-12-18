@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 收集資料以進行分析{#collecting-data-to-analyze}
 
-用於建立報表的資料可直接在報表頁面中選取(如需詳細資訊，請參閱「使用內容 [](../../reporting/using/using-the-context.md)」)，或透過一或多個查詢收集。
+建立報表時，可直接在報表頁面中選取要使用的資料（如需詳細資訊，請參閱[使用內容](../../reporting/using/using-the-context.md)），或透過一或多個查詢收集。
 
 本練習提供三種不同的方法：
 
@@ -27,13 +27,13 @@ ht-degree: 3%
 
 方法的選擇取決於計算類型、資料量及其耐久性等。 必須仔細檢查這些參數，以避免超出Adobe Campaign資料庫的負載，並最佳化所建立報表的產生與控制。 有關詳細資訊，請參見[此頁面](../../reporting/using/best-practices.md#optimizing-report-creation)。
 
-在所有情況下，資料都會透過類型活 **[!UICONTROL Query]** 動收集。
+在所有情況下，資料都會透過&#x200B;**[!UICONTROL Query]**&#x200B;類型活動來收集。
 
 ![](assets/reporting_query_edit.png)
 
-當需要使用資料庫中的資料收集或建立報表中的資料時，此資料選擇模式即相關。 在某些情況下，您也可以直接從報表中使用的元素中選取資料。 例如，插入圖表時，您可以直接選擇源資料。 如需詳細資訊，請參閱「使 [用內容」](../../reporting/using/using-the-context.md)。
+當需要使用資料庫中的資料收集或建立報表中的資料時，此資料選擇模式即相關。 在某些情況下，您也可以直接從報表中使用的元素中選取資料。 例如，插入圖表時，您可以直接選擇源資料。 有關詳細資訊，請參閱[使用上下文](../../reporting/using/using-the-context.md)。
 
-## 使用架構中的資料 {#using-the-data-from-a-schema}
+## 使用架構{#using-the-data-from-a-schema}中的資料
 
 要使用連結到資料庫方案的資料，請在查詢編輯器中選擇相應的選項，並配置要應用的查詢。
 
@@ -41,41 +41,41 @@ ht-degree: 3%
 
 ![](assets/reporting_query_from_schema.png)
 
-## 使用導入的清單 {#using-an-imported-list}
+## 使用導入的清單{#using-an-imported-list}
 
 若要建立報表，您可以使用匯入資料清單中的資料。
 
-要執行此操作，請在查詢 **[!UICONTROL Use an imported list]** 框中選擇選項並選擇相關清單。
+要執行此操作，請在查詢框中選擇&#x200B;**[!UICONTROL Use an imported list]**&#x200B;選項並選擇相關清單。
 
 ![](assets/reporting_query_from_list.png)
 
-按一下 **[!UICONTROL Edit query...]** 連結，定義要在此清單中元素間收集的資料，以建立報表。
+按一下&#x200B;**[!UICONTROL Edit query...]**&#x200B;連結，定義要在此清單中元素間收集的資料，以建立報表。
 
-## 使用立方 {#using-a-cube}
+## 使用立方{#using-a-cube}
 
 可以選擇一個立方來定義查詢。
 
 ![](assets/reporting_query_from_cube.png)
 
-立方體可讓您擴充資料庫的探索和分析能力，同時讓一般使用者更容易設定報表和表格：只需選擇一個現有的完全配置的立方，並使用其計算、度量和統計資訊。 For more on creating cubes, refer to [this section](../../reporting/using/about-cubes.md).
+立方體可讓您擴充資料庫的探索和分析能力，同時讓一般使用者更容易設定報表和表格：只需選擇一個現有的完全配置的立方，並使用其計算、度量和統計資訊。 有關建立立方的詳細資訊，請參閱[本節](../../reporting/using/about-cubes.md)。
 
-按一下 **[!UICONTROL Edit query...]** 連結，並選取您要在報表中顯示或使用的指標。
+按一下&#x200B;**[!UICONTROL Edit query...]**&#x200B;連結，並選取您要在報表中顯示或使用的指標。
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
-## 查詢中的篩選選項 {#filtering-options-in-the-queries}
+## 查詢{#filtering-options-in-the-queries}中的篩選選項
 
 為避免在整個資料庫上運行查詢，需要過濾資料。
 
-### 簡化的濾鏡 {#simplified-filter}
+### 簡化的篩選{#simplified-filter}
 
-您可以選取 **[!UICONTROL Filter automatically with the context]** 選項，讓報表可透過樹狀結構的特定節點（例如清單、收件者或傳送）存取。
+您可以選取&#x200B;**[!UICONTROL Filter automatically with the context]**&#x200B;選項，讓報表可透過樹狀結構的特定節點（例如清單、收件者或傳送）存取。
 
-此選 **[!UICONTROL Filter with the folder]** 項可讓您指定資料夾，並僅考量其內容。 這可讓您篩選報表資料，僅顯示樹狀結構中其中一個資料夾的資料，如下所示：
+**[!UICONTROL Filter with the folder]**&#x200B;選項可讓您指定資料夾，並僅考量其內容。 這可讓您篩選報表資料，僅顯示樹狀結構中其中一個資料夾的資料，如下所示：
 
 ![](assets/reporting_control_folder.png)
 
-### 限制收集的資料量 {#limiting-the-amount-of-data-collected}
+### 限制收集的{#limiting-the-amount-of-data-collected}資料量
 
 使用結果限制選項配置要通過查詢提取的記錄數：
 
