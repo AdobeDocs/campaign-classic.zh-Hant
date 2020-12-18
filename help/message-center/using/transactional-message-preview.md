@@ -19,11 +19,11 @@ ht-degree: 16%
 
 在您建立一或多個種子位址和訊息內文後，您就可以預覽訊息並檢查其個人化。
 
-1. 在訊息範本中，按一下標 **[!UICONTROL Preview]** 簽。
+1. 在消息模板中，按一下&#x200B;**[!UICONTROL Preview]**&#x200B;頁籤。
 
    ![](assets/messagecenter_preview_001.png)
 
-1. Select **[!UICONTROL A seed address]** in the drop-down list.
+1. 在下拉式清單中選取&#x200B;**[!UICONTROL A seed address]**。
 
    ![](assets/messagecenter_preview_002.png)
 
