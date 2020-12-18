@@ -17,18 +17,18 @@ ht-degree: 11%
 
 # Linux 中的堆疊追蹤{#stack-trace-in-linux}
 
-堆 **棧跟蹤** ，表示核心類型檔案 **中包含的跟** 蹤。 此檔案在發生電腦錯誤時生成。 它可識別錯誤的來源。
+**堆棧跟蹤**&#x200B;表示&#x200B;**核心**&#x200B;類型檔案中包含的跟蹤。 此檔案在發生電腦錯誤時生成。 它可識別錯誤的來源。
 
 >[!NOTE]
 >
->* 核 **心檔** ，稱為 **core.`<num>`**.
->* **gdb —— 必須在電腦上安裝GNU Debugger** 。
+>* **core**&#x200B;檔名為&#x200B;**core.`<num>`**。
+>* **gdb —— 必須在** 電腦上安裝GNU調試程式。
 
 >
 
 
 
-Adobe Campaign技術支援可要求您進行此堆疊 **追蹤**。 要獲得它，請在Linux中輸入以下命令：
+Adobe Campaign技術支援可要求您輸入此&#x200B;**堆疊追蹤**。 要獲得它，請在Linux中輸入以下命令：
 
 ```
 su - neolane
@@ -57,7 +57,7 @@ gdb nlserver <coreFile>
 
 Adobe Campaign技術支援可能會要求您使用特定的可執行檔（由我們提供）執行此命令。
 
-在此情況下，只需將nlserver取代為Adobe Campaign提供的 **可執行檔** ，執行下列命令：
+在此情況下，只需將&#x200B;**nlserver**&#x200B;取代為Adobe Campaign提供的可執行檔，執行下列命令：
 
 ```
 gdb nlserver <coreFile>
