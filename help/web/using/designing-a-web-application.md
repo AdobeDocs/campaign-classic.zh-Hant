@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 設計 Web 應用程式{#designing-a-web-application}
 
-Web應用程式的建立與管理原則與線上調查 [相同](../../web/using/about-surveys.md)。
+Web應用程式是根據與[線上調查](../../web/using/about-surveys.md)相同的原則建立和管理。
 
 但功能差異如下：
 
@@ -27,21 +27,21 @@ Web應用程式的建立與管理原則與線上調查 [相同](../../web/using/
 
 >[!CAUTION]
 >
->強烈建議您持續檢查套用的組態，以便在Web應用程式建構程式早期偵測任何錯誤。 若要檢查修改的呈現，請儲存應用程式，然後按一下 **[!UICONTROL Preview]** 子標籤。
+>強烈建議您持續檢查套用的組態，以便在Web應用程式建構程式早期偵測任何錯誤。 要檢查修改的呈現，請保存應用程式，然後按一下&#x200B;**[!UICONTROL Preview]**&#x200B;子頁籤。
 >
 >在發佈Web應用程式之前，使用者無法看到這些變更。
 
-## 在Web應用程式中插入圖表 {#inserting-charts-in-a-web-application}
+## 在Web應用程式{#inserting-charts-in-a-web-application}中插入圖表
 
 您可以在Web應用程式中加入圖表。 要執行此操作，請使用任務欄中的圖表下拉清單選擇要插入的圖表類型。
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-您也可以選取功 **[!UICONTROL Add a chart]** 能表。
+您也可以選取&#x200B;**[!UICONTROL Add a chart]**&#x200B;功能表。
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
-## 在Web應用程式中插入表 {#inserting-tables-in-a-web-application}
+## 在Web應用程式{#inserting-tables-in-a-web-application}中插入表
 
 要添加表，請使用任務欄中表的下拉清單選擇要使用的表類型。
 
@@ -51,15 +51,15 @@ Web應用程式的建立與管理原則與線上調查 [相同](../../web/using/
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
-## 概觀型Web應用程式 {#overview-type-web-applications}
+## 概述類型的Web應用程式{#overview-type-web-applications}
 
 Adobe Campaign介面使用許多網頁應用程式來存取、管理及與收件者、傳送、促銷活動、股票等互動。
 
 在介面中，只有一個頁面的控制面板就會顯示它們。
 
-現成可用的Web應用程式會儲存在節 **[!UICONTROL Administration > Configuration > Web applications]** 點。
+現成可用的Web應用程式儲存在&#x200B;**[!UICONTROL Administration > Configuration > Web applications]**&#x200B;節點中。
 
-## 編輯表單類型的Web應用程式 {#edit-forms-type-web-applications}
+## 編輯表單類型的Web應用程式{#edit-forms-type-web-applications}
 
 為外部網編輯表單Web應用程式的特點：
 
@@ -72,4 +72,4 @@ Adobe Campaign介面使用許多網頁應用程式來存取、管理及與收件
 
    雖然「概述」類型的Web應用程式都有單一頁面，但編輯表單可以根據特定條件（測試、選擇、連線運算子的設定檔等）提供一系列的頁面。
 
-此類Web應用程式的運作類似於「調查」 ****，但是沒有歷史管理或欄位封存。 使用者通常透過登入頁面加以存取，在登入頁面中必須自行識別。
+此類型Web應用程式的運作類似於&#x200B;**Surveys**，但沒有歷史管理或欄位封存。 使用者通常透過登入頁面加以存取，在登入頁面中必須自行識別。
