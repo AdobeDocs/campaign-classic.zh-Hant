@@ -19,7 +19,7 @@ ht-degree: 2%
 
 傳送設定可儲存在傳送範本中，以便重新使用。 範本可能包含傳送的完整或部分設定。
 
-可如本章所述手動執行傳送模板，或根據事件（在指定時間啟動，檔案到達伺服器等）執行。 傳送範本可透過樹狀結構中 **[!UICONTROL Resources > Templates > Delivery templates]** 的節點來設定。
+可如本章所述手動執行傳送模板，或根據事件（在指定時間啟動，檔案到達伺服器等）執行。 可通過樹中的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點配置傳送模板。
 
 ![](assets/s_user_template_list.png)
 
@@ -35,4 +35,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可用的範本取決於您的存取權限、您的例項設定，以及內容。 例如，當您建立資訊服務時，可以連結傳送範本以確認訊息：然後您只能存取其目標對應為訂閱對應的範本。 有關詳細資訊，請參 [閱選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)[和關於服務和訂閱](../../delivery/using/about-services-and-subscriptions.md)。
+>可用的範本取決於您的存取權限、您的例項設定，以及內容。 例如，當您建立資訊服務時，可以連結傳送範本以確認訊息：然後您只能存取其目標對應為訂閱對應的範本。 有關詳細資訊，請參閱[選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)和[關於服務和訂閱](../../delivery/using/about-services-and-subscriptions.md)。
