@@ -31,7 +31,7 @@ Adobe Campaign提供兩組預先封裝的架構選項，讓您調整部署的尺
 
 ![](assets/architectural_options_diagram.png)
 
-## 符合資格的應用程式 {#eligible-applications}
+## 符合資格的應用程式{#eligible-applications}
 
 Power Booster和Power Cluster選項可用於以下應用程式：
 
@@ -39,7 +39,7 @@ Power Booster和Power Cluster選項可用於以下應用程式：
 * 傳送
 * 訊息中心
 
-## 建築推薦矩陣 {#matrix-of-architectural-recommendations}
+## 建築建議矩陣{#matrix-of-architectural-recommendations}
 
 <table> 
  <tbody> 
@@ -51,40 +51,40 @@ Power Booster和Power Cluster選項可用於以下應用程式：
   </tr> 
   <tr> 
    <td> 電子郵件促銷活動和對外互動<br /> </td> 
-   <td> 每月最多可收到約3千萬封電子郵件<br /> </td> 
+   <td> 每月最多約3000萬封電子郵件<br /> </td> 
    <td> 每月3000萬到1億封電子郵件<br /> </td> 
    <td> 每月超過1億封電子郵件<br /> </td> 
   </tr> 
   <tr> 
    <td> 交易式訊息<br /> </td> 
-   <td> 每執行伺服器每小時50,000次<br /> </td> 
-   <td> 每執行伺服器每小時50,000次<br /> </td> 
-   <td> 每執行伺服器每小時50,000次<br /> </td> 
+   <td> 每個執行伺服器每小時50,000<br /> </td> 
+   <td> 每個執行伺服器每小時50,000<br /> </td> 
+   <td> 每個執行伺服器每小時50,000<br /> </td> 
   </tr> 
   <tr> 
    <td> 可用性<br /> </td> 
    <td> 主資料庫的資料庫<br /> </td> 
-   <td> 24/7，執行實例的維護窗口和下載時間除外<br /> </td> 
+   <td> 24/7，執行實例的維護窗口和下載時間<br />除外 </td> 
    <td> 24/7/365服務可能<br /> </td> 
   </tr> 
   <tr> 
    <td> 安全性<br /> </td> 
    <td> 資料集市可從公共網際網路訪問<br /> </td> 
-   <td> 資料集市與面向網際網路的正面元件隔離<br /> </td> 
-   <td> 資料集市與面向網際網路的正面元件隔離<br /> </td> 
+   <td> 資料集市與正面、面向網際網路的元件隔離<br /> </td> 
+   <td> 資料集市與正面、面向網際網路的元件隔離<br /> </td> 
   </tr> 
   <tr> 
-   <td> 部署範本<br /> </td> 
-   <td> 所有功能都可在單一網站上（可在內部部署或在雲端）<br /> </td> 
+   <td> 部署模板<br /> </td> 
+   <td> 所有內容都在一個網站上（可在內部部署或在雲端）<br /> </td> 
    <td> 可在雲端執行的內部部署行銷<br /> </td> 
-   <td> 在雲端執行內部部署行銷；在不同的情況下執行<br /> </td> 
+   <td> 在雲端執行內部部署行銷；可能執行的不同格點<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 建議 {#recommendations}
 
-* 執行實例必須專用於服務。 您無法為尚未訂閱的服務安裝套件。 例如，如果您訂閱了消息中心服務的 **Power Booster** ( **Power Booster** )選項，則只能在專用執行實例 **[!UICONTROL Execution of transactional messages]** 上安裝軟體包。 請檢查您的授權合約。
-* 由於專用例項（或叢集）是Adobe Campaign例項，因此建議與主例項相同。 For more on this, refer to [this document](../../production/using/foreword.md).
+* 執行實例必須專用於服務。 您無法為尚未訂閱的服務安裝套件。 例如，如果您訂閱&#x200B;**消息中心**&#x200B;服務的&#x200B;**Power Booster**&#x200B;選項，則只能在專用執行實例上安裝&#x200B;**[!UICONTROL Execution of transactional messages]**&#x200B;軟體包。 請檢查您的授權合約。
+* 由於專用例項（或叢集）是Adobe Campaign例項，因此建議與主例項相同。 有關詳細資訊，請參閱[本文檔](../../production/using/foreword.md)。
 * 若要從資料庫／硬體元件的視點正確設定例項，請聯絡Adobe Campaign專業服務。
 
