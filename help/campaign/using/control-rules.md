@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 控制規則{#control-rules}
 
-## 分析與仲裁控制規則 {#analysis-and-arbitration-control-rules}
+## 分析和仲裁控制規則{#analysis-and-arbitration-control-rules}
 
 控制規則可讓您在傳送訊息之前，先保證訊息的有效性和品質：字元顯示、SMS大小、位址格式等。
 
@@ -32,9 +32,9 @@ ht-degree: 3%
 * **[!UICONTROL Wave scheduling check]** （電子郵件）:檢查如果傳送分成若干波，最後一波傳送是否排程在有效期結束前開始。
 * **[!UICONTROL Unsubscription link approval]** （電子郵件）:檢查每個內容（HTML和文字）中是否至少有一個未訂閱（選擇退出）URL。
 
-## Creating a control rule {#creating-a-control-rule}
+## 建立控制規則{#creating-a-control-rule}
 
-您可以建立符合您需求的新控制規則。 要執行此操作，請建立一 **[!UICONTROL Control]** 個分類規則，並在頁籤的SQL中輸入控制 **[!UICONTROL Code]** 公式。
+您可以建立符合您需求的新控制規則。 要執行此操作，請建立&#x200B;**[!UICONTROL Control]**&#x200B;類型規則，並在&#x200B;**[!UICONTROL Code]**&#x200B;頁籤的SQL中輸入控制公式。
 
 **範例:**
 
@@ -42,11 +42,11 @@ ht-degree: 3%
 
 應用以下步驟：
 
-1. 建立類 **[!UICONTROL Control]** 型規則。 選擇警 **[!UICONTROL Warning]** 報級別。
+1. 建立&#x200B;**[!UICONTROL Control]**&#x200B;排版規則。 選擇&#x200B;**[!UICONTROL Warning]**&#x200B;警報級別。
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. 在標籤 **[!UICONTROL Code]** 中，輸入要應用所需閾值的指令碼，如下所示：
+1. 在&#x200B;**[!UICONTROL Code]**&#x200B;標籤中，輸入要應用所需閾值的指令碼，如下所示：
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   分析結束時，按鈕 **[!UICONTROL Confirm delivery]** 將無法使用。
+   分析結束時，**[!UICONTROL Confirm delivery]**&#x200B;按鈕將不可用。
 
    ![](assets/campaign_opt_create_control_06.png)
 
