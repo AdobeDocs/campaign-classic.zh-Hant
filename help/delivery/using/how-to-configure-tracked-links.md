@@ -23,11 +23,11 @@ ht-degree: 11%
 >
 >追蹤會套用至訊息，但網路追蹤可讓您監控收件者瀏覽網站（瀏覽的頁面、購買）的方式。
 >
->本節將介紹Web跟蹤的 [配置](../../configuration/using/about-web-tracking.md)。
+>網頁追蹤的設定顯示在[本節](../../configuration/using/about-web-tracking.md)中。
 
 預設會啟用訊息追蹤。 若要個人化URL的追蹤方式，請遵循下列步驟：
 
-1. 在傳送 **[!UICONTROL Display URLs]** 精靈下方的訊息內容下方選取選項。
+1. 在傳送精靈下方的訊息內容下方，選取&#x200B;**[!UICONTROL Display URLs]**&#x200B;選項。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -49,7 +49,7 @@ ht-degree: 11%
    >
    >追蹤的URL標籤和標籤可加以修改，以簡化追蹤傳送時的資訊讀取作業。 計算點按計數時，會新增兩個或兩個同名的URL。
 
-1. 如有需要，請變更追蹤模式，在符合目標連結的欄 **[!UICONTROL Tracking]** 中選取新模式，如下所示：
+1. 如有需要，請變更追蹤模式，在&#x200B;**[!UICONTROL Tracking]**&#x200B;欄中選取符合目標連結的新模式，如下所示：
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -57,9 +57,9 @@ ht-degree: 11%
 
    * **[!UICONTROL Enabled]** :在此URL上啟動追蹤。
    * **[!UICONTROL Not tracked]** :停用此URL上的追蹤。
-   * **[!UICONTROL Always enabled]** :一律啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息內容中，其追蹤就會自動啟動。
-   * **[!UICONTROL Never tracked]** :切勿啟動此URL的追蹤。 此資訊會儲存，如此，如果下次URL再次出現在未來的訊息中，其追蹤就會自動停用。
+   * **[!UICONTROL Always enabled]** :一律啟動此URL的追蹤。此資訊會儲存，如此，如果下次URL再次出現在未來的訊息內容中，其追蹤就會自動啟動。
+   * **[!UICONTROL Never tracked]** :切勿啟動此URL的追蹤。此資訊會儲存，如此，如果下次URL再次出現在未來的訊息中，其追蹤就會自動停用。
    * **[!UICONTROL Opt-out]** :將此URL視為選擇退出或取消訂閱URL。
    * **[!UICONTROL Mirror page]** :認為此URL是鏡像頁面URL。
 
-1. 此外，您也可以在欄的下拉式清單中，為每個追蹤的URL選取類 **[!UICONTROL Category]** 別。 這些類別可顯示報表，例如 **[!UICONTROL URLs and click streams]** (請 [參閱本節](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams))。 類別在特定枚舉中定義： **[!UICONTROL urlCategory]** (請參 [閱管理枚舉](../../platform/using/managing-enumerations.md))。
+1. 此外，您也可以在&#x200B;**[!UICONTROL Category]**&#x200B;欄的下拉式清單中，為每個追蹤的URL選取類別。 這些類別可顯示報告，例如&#x200B;**[!UICONTROL URLs and click streams]**（請參閱[本節](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)）。 類別在特定枚舉中定義：**[!UICONTROL urlCategory]**（請參閱[管理枚舉](../../platform/using/managing-enumerations.md)）。
