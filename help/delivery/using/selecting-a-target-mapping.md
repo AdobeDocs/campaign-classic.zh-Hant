@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 選擇目標對應{#selecting-a-target-mapping}
 
-依預設，傳送範本會定位 **[!UICONTROL Recipients]**。 因此，其目標映射使用 **nms:recipient表的欄位** 。 Adobe Campaign會根據您的需求，為您的傳送提供其他目標對應。
+依預設，傳送範本目標為&#x200B;**[!UICONTROL Recipients]**。 因此，其目標映射使用&#x200B;**nms:recipient**&#x200B;表的欄位。 Adobe Campaign會根據您的需求，為您的傳送提供其他目標對應。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -35,4 +35,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您也可以建立新的目標對應。 此操作保留給專家用戶。 For more information, refer to the [Configuration guide](../../configuration/using/target-mapping.md).
+>您也可以建立新的目標對應。 此操作保留給專家用戶。 有關詳細資訊，請參閱[配置指南](../../configuration/using/target-mapping.md)。
