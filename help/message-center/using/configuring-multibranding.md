@@ -21,11 +21,11 @@ ht-degree: 2%
 
 ## 必要條件 {#prerequisites}
 
-* 所有主機都必須添加到實例(`config-<instance>.xml`)的配置檔案中。
+* 所有主機都必須添加到實例的配置檔案(`config-<instance>.xml`)中。
 * 每個品牌都必須指派一個子網域。
 * 如果在HTTPS頁面上進行網頁追蹤，您必須擁有所有品牌的HTTPS憑證。
 
-## 典型過程 {#typical-process}
+## 典型進程{#typical-process}
 
 若要設定多品牌，您必須同時設定執行例項和控制例項。 在執行例項中，請遵循下列步驟：
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >建立執行實例類型外部帳戶顯示在「控制實例 [」部分](../../message-center/using/creating-a-shared-connection.md#control-instance) 。
+   >在[Control instance](../../message-center/using/creating-a-shared-connection.md#control-instance)部分中顯示了建立執行實例類型外部帳戶。
 
 1. 擴充nms:extAccount架構以新增追蹤URL:
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >擴展現有模式在擴展模式部 [分中顯示](../../configuration/using/extending-a-schema.md) 。
+   >在[擴展模式](../../configuration/using/extending-a-schema.md)部分中顯示擴展現有模式。
 
 1. 修改nms:extAccount表單：
 
@@ -80,5 +80,5 @@ ht-degree: 2%
 
 1. 使用步驟1中定義的相同內部名稱，為每個品牌建立一個外部帳戶。
 1. 為每個品牌建立一個預設傳送範本。
-1. 在交貨模板的 **[!UICONTROL Properties]** 中，將工藝路線設定為品牌的外部帳戶。
+1. 在傳送範本的&#x200B;**[!UICONTROL Properties]**&#x200B;中，設定品牌外部帳戶的路由。
 
