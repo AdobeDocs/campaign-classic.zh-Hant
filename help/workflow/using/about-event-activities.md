@@ -19,8 +19,8 @@ ht-degree: 8%
 
 這些活動的主要任務是等待事件。 例如，它可以是收到檔案、電子郵件或程式發送的信號。
 
-* 檔案收集器：監視一個或多個檔案到達目錄中的情況，並啟用每個接收檔案的轉換。 請參閱「文 [件」收集器](../../workflow/using/file-collector.md)。
-* 檔案傳輸：將檔案傳輸到伺服器。 請參閱 [檔案傳輸](../../workflow/using/file-transfer.md)。
-* 網頁下載：從網頁下載檔案。 請參閱網 [頁下載](../../workflow/using/web-download.md)。
-* SMS和電子郵件接收：恢復和處理電子郵件或簡訊 請參閱 [傳入的簡訊](../../workflow/using/inbound-sms.md) 和 [傳入電子郵件](../../workflow/using/inbound-emails.md)。
+* 檔案收集器：監視一個或多個檔案到達目錄中的情況，並啟用每個接收檔案的轉換。 請參閱[檔案收集器](../../workflow/using/file-collector.md)。
+* 檔案傳輸：將檔案傳輸到伺服器。 請參閱[檔案傳輸](../../workflow/using/file-transfer.md)。
+* 網頁下載：從網頁下載檔案。 請參閱[Web download](../../workflow/using/web-download.md)。
+* SMS和電子郵件接收：恢復和處理電子郵件或簡訊 請參閱[入站SMS](../../workflow/using/inbound-sms.md)和[入站電子郵件](../../workflow/using/inbound-emails.md)。
 
