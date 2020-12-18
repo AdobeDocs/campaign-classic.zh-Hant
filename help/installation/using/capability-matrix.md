@@ -21,9 +21,9 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 本頁顯示托管（托管服務）和內部部署之間的主要差異。 混合式部署的特定性取決於由Adobe代管並由您所在地代管的元素。
 
-本節將介紹不同的 [代管模型](../../installation/using/hosting-models.md)。
+本節[介紹了不同的代管模型。](../../installation/using/hosting-models.md)
 
-## 每部署模型的可用性 {#capability-matrix}
+## 每部署型號{#capability-matrix}的可用性
 
 | 功能 | 代管 | 混合 | 內部部署 | 詳細資訊 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -41,13 +41,13 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 | 配置LDAP身份驗證 | 不可用 | 可用 | 可用 | [進一步瞭解](../../installation/using/connecting-through-ldap.md) |
 
 
-## Federated Data Access{#fda}
+## 同盟資料存取{#fda}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [進一步瞭解](../../installation/using/about-fda.md)
+Adobe Campaign提供&#x200B;**同盟資料存取**(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您可以存取外部資料，而不需變更Adobe Campaign資料的結構。 [進一步瞭解](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->除了 [Snowflake連接器外，只有內部部署或混合安裝才能透過FDA存取外部資料庫](../../installation/using/configure-fda-snowflake.md)。
+>通過FDA訪問外部資料庫僅可用於內部部署或混合安裝，但[雪花連接器](../../installation/using/configure-fda-snowflake.md)除外。
 
 
 **另請參閱**
@@ -55,6 +55,6 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 * [相容性矩陣](../../rn/using/compatibility-matrix.md)
 * [發行說明](../../rn/using/latest-release.md)
 * [Campaign Classic升級](../../rn/using/rn-overview.md)
-* [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
+* [已過時及已移除的功能](../../rn/using/deprecated-features.md)
 * [Gold Standard版本](../../rn/using/gold-standard.md)
 * [Gold Standard計畫](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)
