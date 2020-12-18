@@ -23,6 +23,6 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->以下配置需由技術管理員 **執行**。
+>**技術管理員**&#x200B;需要執行下列配置。
 
-![](assets/do-not-localize/how-to-video.png) 觀看此影 [片](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ，以瞭解Campaign互動的架構，並瞭解選件引擎的運作方式。
+![](assets/do-not-localize/how-to-video.png) 觀看此影 [](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) 片，瞭解Campaign互動的架構，並瞭解選件引擎的運作方式。
