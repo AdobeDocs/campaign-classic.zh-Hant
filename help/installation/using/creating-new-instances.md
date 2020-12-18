@@ -23,9 +23,9 @@ ht-degree: 10%
 
 1. 宣告新例項
 
-   轉到 **[!UICONTROL Tools > Advanced > Declare a new instance...]** 啟動嚮導。
+   轉至&#x200B;**[!UICONTROL Tools > Advanced > Declare a new instance...]**&#x200B;啟動嚮導。
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   指定新實例的參數。 有關詳細資訊，請參閱 [建立實例和登錄](../../installation/using/creating-an-instance-and-logging-on.md)。
+   指定新實例的參數。 有關詳細資訊，請參閱[建立實例並登錄](../../installation/using/creating-an-instance-and-logging-on.md)。
 
