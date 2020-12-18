@@ -17,20 +17,20 @@ ht-degree: 0%
 
 # 關於傳遞能力{#about-deliverability}
 
-**傳遞能力** ，包括測量促銷活動在到達收件者收件匣時是否成功，而不會反彈或標示為垃圾訊息。
+**傳遞** 能力包括測量促銷活動在到達收件者收件匣時是否成功，而不會反彈或標示為垃圾訊息。
 
 Adobe Campaign提供了若干工具來追蹤平台的傳遞效能。 本節也說明在管理和最佳化傳遞能力時，您應牢記的主要原則。
 
 ## 設定 {#configuration}
 
 此功能可透過Adobe Campaign中的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
-* 對於代管和混合式客戶， **Adobe技術支援和顧問會在您的例項上設定** 「傳遞能力監控」。 如需詳細資訊，請洽詢您的Adobe銷售代表。
+* 對於代管和混合式客戶端，**Deliverability monitoring**&#x200B;是由Adobe技術支援和顧問在您的實例上設定的。 如需詳細資訊，請洽詢您的Adobe銷售代表。
 
-* 對於內部部署安裝，您必須透過> **[!UICONTROL Deliverability monitoring (Email Deliverability)]****[!UICONTROL Tools]** >功能表安裝套 **[!UICONTROL Advanced]****[!UICONTROL Import package]** 件。 如需詳細資訊，請參閱安 [裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
+* 對於內部部署安裝，您必須通過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜單安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;軟體包。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
 
-在Adobe Campaign Classic中，「傳遞 **性」監控** ，由工作流程 **[!UICONTROL Refresh for deliverability]** 管理。 它預設會安裝在所有例項上，讓您初始化彈回郵件資格規則清單、網域清單和MX清單。 在安裝套 **[!UICONTROL Deliverability monitoring (Email Deliverability)]** 件後，此工作流程會在每晚執行，以定期更新規則清單，並讓您主動管理平台傳遞能力。
+在Adobe Campaign Classic中，**Deliverability monitoring**&#x200B;由&#x200B;**[!UICONTROL Refresh for deliverability]**&#x200B;工作流程管理。 它預設會安裝在所有例項上，讓您初始化彈回郵件資格規則清單、網域清單和MX清單。 安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;套件後，此工作流程會在每晚執行，以定期更新規則清單，並讓您主動管理平台傳遞能力。
 
-## 背景 {#background}
+## 背景{#background}
 
 電子郵件傳遞能力對行銷人員而言是一項重大挑戰——不論他們要傳送幾千則訊息或數十億則。 五分之一的留言不會進入收件匣或其預定收件人。
 
