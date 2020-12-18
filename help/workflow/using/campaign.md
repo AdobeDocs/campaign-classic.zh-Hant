@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Campaign
-description: Campaign
+description: 促銷活動
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Campaign{#campaign}
 
-依預設，下列詳細的工作流程會隨 **Campaign** 模組一起安裝。 For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+依預設，下面詳述的工作流程會與&#x200B;**Campaign**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../campaign/using/designing-marketing-campaigns.md)。
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">股票：訂購與警報</span> <br /> </td> 
    <td> <span class="uicontrol">stockMagt</span> <br /> </td> 
-   <td> 此工作流會在訂單行上啟動庫存計算並管理警告警報閾值。<br /> </td> 
+   <td> 此工作流將啟動訂單行上的庫存計算並管理警告預警閾值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">促銷活動中傳送的工作</span> <br /> </td> 
@@ -53,7 +53,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">服務提供者的工作</span> <br /> </td> 
    <td> <span class="uicontrol">supplierMagt</span> <br /> </td> 
-   <td> 一旦交件獲得批准，此工作流將開始處理提供程式（向路由器發送電子郵件和後處理）。 <br /> </td> 
+   <td> 一旦交件獲得批准，此工作流將開始處理提供程式（向路由器發送電子郵件和後處理）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
