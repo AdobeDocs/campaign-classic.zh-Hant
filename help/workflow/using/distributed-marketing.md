@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 分散式行銷{#distributed-marketing}
 
-依預設，下面詳述的工作流程會 **與Distributed Marketing** 模組一起安裝。 For more on this module, refer to this [section](../../campaign/using/about-distributed-marketing.md).
+依預設，下面詳述的工作流程會與&#x200B;**Distributed Marketing**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../campaign/using/about-distributed-marketing.md)。
 
 <table> 
  <tbody> 
