@@ -17,7 +17,7 @@ ht-degree: 27%
 
 # Nlserver 模組{#nlserver-module}
 
-nlserver模 **塊活動** ，會啟動nlserver模組，其參數在中央窗口中指定。
+**nlserver模組**&#x200B;活動使用中央窗口中指定的參數啟動nlserver模組。
 
 ![](assets/nlserver_module_edit.png)
 
