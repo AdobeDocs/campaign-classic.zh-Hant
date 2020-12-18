@@ -19,11 +19,11 @@ ht-degree: 1%
 
 假設計算的結果適用於Adobe Campaign平台的不同層級：由假設和目標群體反應計算的指標可通過實際假設以及通過促銷活動和交付獲得的假設報告中可見。
 
-## 假設結果 {#hypothesis-results}
+## 假設結果{#hypothesis-results}
 
-### 指標 {#indicators}
+### 指標{#indicators}
 
-一旦計算了假設，就會自動更新多個測量指標。 這些可在假設的 **[!UICONTROL General]** 標籤中找到。
+一旦計算了假設，就會自動更新多個測量指標。 這些選項可在假設的&#x200B;**[!UICONTROL General]**&#x200B;標籤中使用。
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 * **控制組的響應率**:回應者控制群組數量／傳送控制群組總數。
 * **反應次數**:表中包含個人、假設和事務表之間關係的記錄數。
 
-如需指標的完整清單，請按一下 **[!UICONTROL Display the list]** 連結：
+有關指示符的完整清單，請按一下&#x200B;**[!UICONTROL Display the list]**&#x200B;連結：
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -56,23 +56,23 @@ ht-degree: 1%
 * **有效的投資報酬率**:計算交貨成本／額外利潤。
 * **重要性**:包含0到3的值，視促銷活動重要性而定。
 
-### 反應 {#reactions}
+### 反應{#reactions}
 
-您可以透過標籤來檢視收件者對假設的反 **[!UICONTROL Reactions]** 應。
+您可以透過&#x200B;**[!UICONTROL Reactions]**&#x200B;標籤來檢視收件者對假設的反應。
 
-1. 假設計算完成後，請前往Adobe **[!UICONTROL Campaign management > Measurement hypotheses]** Campaign樹狀結構的節點。
-1. 選取所要的假設，然後按一下標 **[!UICONTROL Reactions]** 簽，以檢視可能在行銷活動後購買某些內容的收件者清單。
+1. 假設計算完成後，請前往Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;節點。
+1. 選取所要的假設，然後按一下&#x200B;**[!UICONTROL Reactions]**&#x200B;標籤，以檢視可能在行銷促銷活動後購買內容的收件者清單。
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## 報表 {#reports}
 
-可 **[!UICONTROL Hypothesis report]** 讓您檢視在促銷活動和傳送上執行之假設的結果。 此報表包含由假設計算的指標(如需詳細資訊，請參閱 [指標](#indicators))。
+**[!UICONTROL Hypothesis report]**&#x200B;可讓您檢視在促銷活動和傳送上執行之假設的結果。 此報告包含由假設計算的指標（有關詳情，請參閱[指標](#indicators)）。
 
-* **在促銷活動層級**:按一下 **[!UICONTROL Reports]** 相關促銷活動的連結，然後選取 **[!UICONTROL Hypothesis report]**。 此報表包含促銷活動傳送的清單，以及針對每個傳送計算的假設。
+* **在促銷活動層級**:按一下 **[!UICONTROL Reports]** 相關促銷活動的連結，然後選取 **[!UICONTROL Hypothesis report]**。此報表包含促銷活動傳送的清單，以及針對每個傳送計算的假設。
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **在傳送層級**:若要存取報表，請開啟相關的傳送，按一下標 **[!UICONTROL Reports]** 簽中的 **[!UICONTROL Summary]** 並選取 **[!UICONTROL Hypothesis report]**。 如果針對相同傳送計算了數個假設，報表將包含所有假設。
+* **在傳送層級**:若要存取報表，請開啟相關的傳送，按一下標 **[!UICONTROL Reports]** 簽中的 **[!UICONTROL Summary]** 頁籤並選取 **[!UICONTROL Hypothesis report]**。如果針對相同傳送計算了數個假設，報表將包含所有假設。
 
    ![](assets/response_hypothesis_delivery_report_001.png)
