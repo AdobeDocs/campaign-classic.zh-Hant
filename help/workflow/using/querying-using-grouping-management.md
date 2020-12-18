@@ -29,40 +29,40 @@ ht-degree: 4%
 
 * 資料分組？
 
-   根據主鍵數超過30的電子郵件網域。 此操作是使用選項執 **[!UICONTROL Group by + Having]** 行的。 **[!UICONTROL Group by + Having]** 可讓您將資料分組（「分組依據」），並選取已分組的項目（「有」）。
+   根據主鍵數超過30的電子郵件網域。 此操作使用&#x200B;**[!UICONTROL Group by + Having]**&#x200B;選項執行。 **[!UICONTROL Group by + Having]** 可讓您將資料分組（「分組依據」），並選取已分組的項目（「有」）。
 
 若要建立此範例，請套用下列步驟：
 
-1. 開啟 **[!UICONTROL Generic query editor]** 並選擇「收件者」表(**nms:recipient**)。
+1. 開啟&#x200B;**[!UICONTROL Generic query editor]**&#x200B;並選擇「Recipient（收件人）」表(**nms:recipient（收件人）**)。
 
    ![](assets/query_editor_02.png)
 
-1. 在窗口 **[!UICONTROL Data to extract]** 中，選擇和 **[!UICONTROL Email domain]** 字 **[!UICONTROL Primary key]** 段。 對欄位執行計 **[!UICONTROL Primary key]** 數。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL Primary key]**&#x200B;欄位。 在&#x200B;**[!UICONTROL Primary key]**&#x200B;欄位上執行計數。
 
-   有關主鍵計數的詳細資訊，請參 [閱本節](../../platform/using/defining-filter-conditions.md#building-expressions)。
+   有關主鍵計數的詳細資訊，請參閱[本節](../../platform/using/defining-filter-conditions.md#building-expressions)。
 
-1. 選中該 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 框。
+1. 選中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;框。
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在視窗中 **[!UICONTROL Sorting]** ，以遞減順序排序電子郵件網域。 要執行此操作，請 **[!UICONTROL Yes]** 檢入列 **[!UICONTROL Descending sort]** 。 按一下 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;視窗中，以遞減順序排序電子郵件網域。 若要這麼做，請勾選&#x200B;**[!UICONTROL Descending sort]**&#x200B;欄中的&#x200B;**[!UICONTROL Yes]**。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在 **[!UICONTROL Data filtering]** 中選取 **[!UICONTROL Filtering conditions]**。轉到窗口 **[!UICONTROL Target elements]** 並按一下 **[!UICONTROL Next]**。
-1. 在窗口 **[!UICONTROL Data grouping]** 中，按一下 **[!UICONTROL Email domain]** 選擇 **[!UICONTROL Add]**。
+1. 在 **[!UICONTROL Data filtering]** 中選取 **[!UICONTROL Filtering conditions]**。轉至&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;選擇&#x200B;**[!UICONTROL Email domain]**。
 
-   此資料分組窗口僅在選中該 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框時顯示。
+   此資料分組窗口僅在選中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**&#x200B;框時顯示。
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. 在視窗 **[!UICONTROL Grouping condition]** 中，指出主要金鑰計數大於30，因為我們只希望傳回超過30次的電子郵件網域作為結果。
+1. 在&#x200B;**[!UICONTROL Grouping condition]**&#x200B;視窗中，指出主鍵數大於30，因為我們只希望將電子郵件網域定位在超過30次後傳回為結果。
 
-   選中該框時，將 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 顯示此窗口：這是篩選分組結果(HAVING)的地方。
+   選中&#x200B;**[!UICONTROL Manage groupings (GROUP BY + HAVING)]**&#x200B;框時，將顯示此窗口：這是篩選分組結果(HAVING)的地方。
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. 在視窗中 **[!UICONTROL Data formatting]** ，按一下 **[!UICONTROL Next]**:這裡不需要格式設定。
-1. 在資料預覽視窗中，按一下 **[!UICONTROL Launch data preview]**:在此，會傳回3個以上30次為目標的不同電子郵件網域。
+1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Next]**:這裡不需要格式設定。
+1. 在資料預覽視窗中，按一下&#x200B;**[!UICONTROL Launch data preview]**:在此，會傳回3個以上30次為目標的不同電子郵件網域。
 
    ![](assets/query_editor_blocklist_06.png)
