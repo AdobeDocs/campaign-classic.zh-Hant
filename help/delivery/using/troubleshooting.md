@@ -19,7 +19,7 @@ ht-degree: 3%
 
 如果您的移動設備已連接到Wi-Fi，而您未收到通知，請檢查防火牆是否未阻止FCM/APN埠。
 
-**Android**:移動設備連接到埠5228到5230上的FCM伺服器。 因此，必須配置防火牆，以便它授權與FCM的連接。 要開啟的埠包括：5228（最常使用）、5229和5230。
+**Android**:移動設備連接到埠5228到5230上的FCM伺服器。因此，必須配置防火牆，以便它授權與FCM的連接。 要開啟的埠包括：5228（最常使用）、5229和5230。
 
 **iOS**:
 
@@ -32,4 +32,4 @@ HTTP/2連接器：您必須允許與下列伺服器通訊：
 
 >[!NOTE]
 >
->如需兩個連接器的詳細資訊，請參 [閱在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
+>如需兩個連接器的詳細資訊，請參閱[在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
