@@ -19,13 +19,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->本檔案詳細說明整合行動應用程式與Adobe Campaign平台的程式。 它不提供如何建立行動應用程式或如何設定它以管理通知的資訊。 如果您想要進一步瞭解此資訊，請參閱官方的Apple文 [件](https://developer.apple.com/) 和Android [檔案](https://developer.android.com/index.html)。
+>本檔案詳細說明整合行動應用程式與Adobe Campaign平台的程式。 它不提供如何建立行動應用程式或如何設定它以管理通知的資訊。 如果您想要進一步瞭解此資訊，請參閱官方的Apple [檔案](https://developer.apple.com/)和Android [檔案](https://developer.android.com/index.html)。
 
 以下章節提供行動應用程式頻道專屬的資訊。
 
-如需如何建立傳送的全域資訊，請參[閱本節](../../delivery/using/steps-about-delivery-creation-steps.md)。
+有關如何建立傳送的全局資訊，請參閱[本節](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
-行動 **應用程式頻道** ，可讓您使用Adobe Campaign平台，透過應用程式將個人化通知傳送至iOS和Android終端機。 提供兩個傳送渠道：
+**行動應用程式頻道**&#x200B;可讓您使用Adobe Campaign平台，透過應用程式將個人化通知傳送至iOS和Android終端機。 提供兩個傳送渠道：
 
 * iOS頻道，可讓您傳送通知至Apple行動裝置。
 
@@ -54,11 +54,11 @@ ht-degree: 5%
 >* 警告：在某些國家／地區，法律要求您告知使用者您收集到的資料類型行動應用程式及其處理目的。 你必須檢查法律。
 
 
-(mobileAppOptOutMagt **[!UICONTROL NMAC opt-out management]** )工作流程會更新行動裝置上取消訂閱的通知。 For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
+**[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流程會更新行動裝置上取消訂閱的通知。 有關此工作流的詳細資訊，請參閱[工作流指南](../../workflow/using/mobile-app-channel.md)。
 
-Adobe Campaign可與二進位和HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中 [設定行動應用程式」一節](../../delivery/using/configuring-the-mobile-application.md) 。
+Adobe Campaign可與二進位和HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中設定行動應用程式」一節。[](../../delivery/using/configuring-the-mobile-application.md)
 
-## 資料路徑 {#data-path}
+## 資料路徑{#data-path}
 
 下列結構說明如何讓行動應用程式與Adobe Campaign交換資料的步驟。 此過程涉及三個實體：
 
@@ -68,13 +68,13 @@ Adobe Campaign可與二進位和HTTP/2 APN相容。 如需設定步驟的詳細�
 
 通知程式的三個主要步驟是：在Adobe Campaign中註冊應用程式（訂閱收集）、傳送和追蹤。
 
-### 步驟1:訂閱系列 {#step-1--subscription-collection}
+### 步驟1:訂閱系列{#step-1--subscription-collection}
 
 行動應用程式是由使用者從App Store或Google Play下載。 此應用程式包含連線設定（iOS憑證和Android專案金鑰）和整合金鑰。 首次開啟應用程式時（視設定而定），系統會要求使用者輸入註冊資訊(@userKey:電子郵件或帳號)。 同時，應用程式會詢問通知服務以收集通知ID（推播ID）。 所有這些資訊（連線設定、整合金鑰、通知識別碼、userKey）都會傳送至Adobe Campaign。
 
 ![](assets/nmac_register_view.png)
 
-### 步驟2:傳送 {#step-2--delivery}
+### 步驟2:傳送{#step-2--delivery}
 
 行銷人員鎖定應用程式訂閱者。 傳送程式會傳送連線設定至通知服務（iOS憑證和Android專案金鑰）、通知ID（推播ID）和通知內容。 通知服務向目標終端發送通知。
 
