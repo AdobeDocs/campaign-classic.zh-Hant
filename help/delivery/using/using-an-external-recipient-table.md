@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # 使用外部收件者資料表{#using-an-external-recipient-table}
 
-如果傳送表是外部表，則需要進行其他配置。 必 **[!UICONTROL nms:seedmember]** 須擴展模式。 系統會在種子地址中添加一個頁籤以定義適當的欄位，如下所示：
+如果傳送表是外部表，則需要進行其他配置。 **[!UICONTROL nms:seedmember]**&#x200B;架構必須擴展。 系統會在種子地址中添加一個頁籤以定義適當的欄位，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,4 +25,4 @@ ht-degree: 18%
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-此 **部分是nms:seedMember** 架構 [擴展](../../configuration/using/seed-addresses.md)。
+**nms:seedMember**&#x200B;模式擴展是[本節](../../configuration/using/seed-addresses.md)。
