@@ -19,7 +19,7 @@ ht-degree: 9%
 
 這是在Adobe Campaign伺服器上執行的JavaScript。
 
-## 靜態方法 {#static-methods}
+## 靜態方法{#static-methods}
 
 靜態SOAP方法是通過調用表示模式的對象上的方法來訪問的。 結構描述是&#39;namespace&#39;對象的屬性。 這些名稱空間是全局變數，因此，例如xtk或nms變數表示相應的名稱空間
 
@@ -29,7 +29,7 @@ ht-degree: 9%
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
 ```
 
-## 非靜態方法 {#non-static-methods}
+## 非靜態方法{#non-static-methods}
 
 若要使用非靜態SOAP方法，必須先使用對應結構描述上的&quot;get&quot;或&quot;create&quot;方法來擷取實體。
 
