@@ -37,7 +37,7 @@ ht-degree: 70%
 * [建立概要](../../web/using/use-cases--creating-overviews.md)：建立概要型的網路應用程式，以顯示資料庫中的所有網路應用程式。
 * [工作流程使用案例](../../workflow/using/about-workflow-use-cases.md)：透過這些使用案例探索使用工作流程的不同方法。
 
-## 自助 {#how-to-videos}
+## 自助{#how-to-videos}
 
 除了產品檔案外，您還可存取下列的促銷活動自助資源。
 
@@ -47,8 +47,8 @@ ht-degree: 70%
 
 ### 訓練課程與影片
 
-除了這些短片和詳細的影片外，您還可以在 [Adobe.com上尋找](https://learning.adobe.com/catalog.html)[培訓課程](https://www.adobe.com/training/video.html) ，並觀看功能簡報影片。
+除了這些短片和詳細的影片外，您還可以在Adobe.com上找到[培訓課程](https://learning.adobe.com/catalog.html)並觀賞功能[簡報影片](https://www.adobe.com/training/video.html)。
 
 ### Experience League課程
 
-您也可以造訪Adobe [Campaign Classic的](https://experienceleague.adobe.com/?lang=en#dashboard/learning) 「建議課程」:課程是專業的課程集，可快速協助您獲得技能和知識。
+您也可以造訪[Recommended Cordes](https://experienceleague.adobe.com/?lang=en#dashboard/learning) for Adobe Campaign Classic:課程是專業的課程集，可快速協助您獲得技能和知識。
