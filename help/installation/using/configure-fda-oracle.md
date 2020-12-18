@@ -15,23 +15,23 @@ ht-degree: 0%
 ---
 
 
-# 配置對Oracle的訪問 {#configure-access-to-oracle}
+# 配置對Oracle {#configure-access-to-oracle}的訪問
 
-使用Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA)選項來處理儲存在外部資料庫中的資訊。 按照以下步驟配置對Oracle的訪問。
+使用Campaign [Federated Data Access](../../installation/using/about-fda.md)(FDA)選項來處理儲存在外部資料庫中的資訊。 按照以下步驟配置對Oracle的訪問。
 
-1. 在 [Linux或](#oracle-linux)[Windows上配置Oracle](#azure-windows)
-1. 在Campaign中配 [置Oracle外](#oracle-external) 部帳戶
+1. 在[Linux](#oracle-linux)或[Windows](#azure-windows)上配置Oracle
+1. 在Campaign中配置Oracle [external帳戶](#oracle-external)
 
-## Linux上的Oracle {#oracle-linux}
+## Oracle on Linux {#oracle-linux}
 
 在FDA中連線至Oracle外部資料庫需要Adobe Campaign伺服器下方的其他設定。
 
 1. 安裝與Oracle版本對應的Oracle完整客戶端。
-1. 將您的TNS定義新增至安裝。 要執行此操作，請在/etc/oracle儲存庫 **的tnsnames.ora** 檔案中指定它們。 如果此儲存庫不存在，請建立它。
+1. 將您的TNS定義新增至安裝。 要執行此操作，請在/etc/oracle儲存庫的&#x200B;**tnsnames.ora**&#x200B;檔案中指定它們。 如果此儲存庫不存在，請建立它。
 
    然後建立新的TNS_ADMIN環境變數：導出TNS_ADMIN=/etc/oracle並重新啟動電腦。
 
-1. 將Oracle整合到您的Adobe Campaign伺服器(nlserver)。 若要這麼做，請檢查 **customer.sh** 檔案是否位於Adobe Campaign伺服器樹狀結構的「nl6」資料夾中，且其中包含Oracle程式庫的連結。
+1. 將Oracle整合到您的Adobe Campaign伺服器(nlserver)。 若要這麼做，請檢查&#x200B;**customer.sh**&#x200B;檔案是否位於Adobe Campaign伺服器樹狀結構的&quot;nl6&quot;資料夾中，且其中包含Oracle程式庫的連結。
 
    例如，對於11.2版的客戶：
 
@@ -62,33 +62,33 @@ ht-degree: 0%
       yum install libaio1
       ```
 
-1. 在Campaign Classic中，您接著可以設定您的 [!DNL Oracle] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參 [閱本節](#oracle-external)。
+1. 在Campaign Classic中，您接著可以設定[!DNL Oracle]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[本節](#oracle-external)。
 
-## Windows版Oracle {#oracle-windows}
+## Windows上的Oracle {#oracle-windows}
 
 在FDA中連線至Oracle外部資料庫需要Adobe Campaign伺服器下方的其他設定。
 
 1. 安裝Oracle客戶端。
 
-1. 在C:Oracle資料夾中，建立包含 **TNS定義的tnsnames.ora** 檔案。
+1. 在C:Oracle資料夾中，建立包含TNS定義的&#x200B;**tnsnames.ora**&#x200B;檔案。
 
 1. 以C:Oracle為值添加TNS_ADMIN環境變數並重新啟動電腦。
 
-1. 在Campaign Classic中，您接著可以設定您的 [!DNL Oracle] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參 [閱本節](#oracle-external)。
+1. 在Campaign Classic中，您接著可以設定[!DNL Oracle]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[本節](#oracle-external)。
 
-## Oracle外部帳戶 {#oracle-external}
+## Oracle外部帳戶{#oracle-external}
 
-外部 [!DNL Oracle] 帳戶允許您將Campaign實例連接到Oracle外部資料庫。
+[!DNL Oracle]外部帳戶允許您將Campaign實例連接到Oracle外部資料庫。
 
-1. 從促銷 **[!UICONTROL Explorer]**&#x200B;活動中， **[!UICONTROL Administration]** 選擇「>」 **[!UICONTROL Platform]** 「>」 **[!UICONTROL External accounts]**。
+1. 在促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，選擇&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
-1. 選擇 **[!UICONTROL New]**。
+1. 選擇&#x200B;**[!UICONTROL New]**。
 
-1. 選 **[!UICONTROL External database]** 擇作為外部帳戶 **[!UICONTROL Type]**。
+1. 選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
-1. 設定外 **[!UICONTROL Oracle]** 部帳戶，您必須指定：
+1. 設定&#x200B;**[!UICONTROL Oracle]**&#x200B;外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:Oracle
+   * **[!UICONTROL Type]**: Oracle
 
    * **[!UICONTROL Server]**:DNS的名稱
 
