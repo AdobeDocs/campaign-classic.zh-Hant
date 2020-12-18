@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # 管理報表{#managing-reports}
 
-必須重新開發預設Adobe Campaign收件者（nm：收件者或結構連結的）特定結構的報表，以考慮自訂表格及其透過目標對應連結的表格的資料(請參閱 [Target對應區段](../../configuration/using/target-mapping.md) )。
+必須重新開發預設Adobe Campaign收件者（nm:recipient或schema linked）專屬的架構報表，以考慮自訂表格及其透過目標對應連結的表格的資料（請參閱[Target對應](../../configuration/using/target-mapping.md)區段）。
 
-若要建立新報表，請參 [閱本節](../../reporting/using/about-reports-creation-in-campaign.md)。
+若要建立新報表，請參閱[本節](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-在某些情況下，還必須放置這些表專用的新立方。 本節將詳細介紹 [立方體](../../reporting/using/about-cubes.md)。
+在某些情況下，還必須放置這些表專用的新立方。 Cubes詳見[本節](../../reporting/using/about-cubes.md)。
 
 以下報告涉及：
 
