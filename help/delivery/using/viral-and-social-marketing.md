@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 病毒式行銷及社交行銷{#viral-and-social-marketing}
 
-## 關於病毒式行銷 {#about-viral-marketing}
+## 關於病毒式行銷{#about-viral-marketing}
 
 Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 
@@ -29,7 +29,7 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 >
 >為了讓新增的連結正常運作，必須提供相符的鏡像頁面。 若要這麼做，請在傳送中加入鏡像頁面的連結。
 
-## 社交網路：共用連結 {#social-networks--sharing-a-link}
+## 社交網路：共用連結{#social-networks--sharing-a-link}
 
 若要讓遞送收件者與其網路成員分享訊息內容，您必須包含相符的個人化區塊。
 
@@ -37,7 +37,7 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 
 >[!NOTE]
 >
->預設情況下，塊清單中不提供此連結。 您可以按一下並選 **[!UICONTROL Other...]**&#x200B;取區塊來存取 **[!UICONTROL Social network sharing links]** 它。
+>預設情況下，塊清單中不提供此連結。 您可以按一下&#x200B;**[!UICONTROL Other...]**&#x200B;並選擇&#x200B;**[!UICONTROL Social network sharing links]**&#x200B;塊來訪問它。
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -49,9 +49,9 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 
 >[!NOTE]
 >
->此個人化區塊包含所有連結（用於傳送訊息並與所有社交網路共用）。 可以根據您的需求進行變更。 不過，設定會保留給進階使用者。 若要編輯相符的個人化區塊，請前 **[!UICONTROL Resources > Campaign management > Personalization blocks]** 往Adobe Campaign樹狀結構的節點。
+>此個人化區塊包含所有連結（用於傳送訊息並與所有社交網路共用）。 可以根據您的需求進行變更。 不過，設定會保留給進階使用者。 若要編輯相符的個人化區塊，請前往Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;節點。
 
-## 病毒式行銷：向朋友轉達 {#viral-marketing--forward-to-a-friend}
+## 病毒式行銷：轉發給朋友{#viral-marketing--forward-to-a-friend}
 
 病毒式服務可讓您執行反向連結類型動作：這些動作可讓您將訊息轉寄給朋友。 裁判者的簡檔暫時儲存在資料庫中（在專用表中）。 轉發的消息包括裁判訂閱的連結：如果有，則會將其新增至Adobe Campaign資料庫。
 
@@ -59,8 +59,8 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 
 套用下列階段：
 
-1. 將個人 **[!UICONTROL Social network sharing links]** 化區塊新增至原始訊息的正文。
-1. 訊息收件者可以按一下 **[!UICONTROL Email]** 圖示，將此訊息傳送給一或多位朋友。
+1. 將&#x200B;**[!UICONTROL Social network sharing links]**&#x200B;個人化區塊新增至原始訊息的正文。
+1. 訊息收件者可以按一下&#x200B;**[!UICONTROL Email]**&#x200B;圖示，將此訊息傳送給一或多位朋友。
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -68,13 +68,13 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   當主要收件者按一下按鈕時，訊息會傳送給 **[!UICONTROL Next]** 他們。
+   當主要收件者按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕時，就會傳送訊息給他們。
 
    >[!NOTE]
    >
-   >此訊息的內容可以個人化，以符合您的需求。 它基於儲存在節 **[!UICONTROL Transfer of original message]** 點中的模板創 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 建。
+   >此訊息的內容可以個人化，以符合您的需求。 它基於&#x200B;**[!UICONTROL Transfer of original message]**&#x200B;模板建立，該模板儲存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;節點中。
    >
-   >您也可以變更已提供給反向連結的訊息轉寄表單。若要這麼做，您必須變更儲存在節點中的 **Viralform** Web應用程 **[!UICONTROL Resources > Online > Web applications]** 式。
+   >您也可以變更已提供給反向連結的訊息轉寄表單。為此，您必須變更儲存在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;節點中的&#x200B;**病毒式表單** Web應用程式。
 
 1. 在轉發的消息中，連結使裁判能夠將他們的概況保存在資料庫中。 為此，提供了入門表單。
 
@@ -82,23 +82,23 @@ Adobe Campaign可讓您設定工具，以鼓勵病毒式行銷。
 
    >[!NOTE]
    >
-   >此配置可以調整。 為此，您需要修改儲存在節 **點中的Recipient** Web應用 **[!UICONTROL Resources > Online > Web applications]** 程式。
+   >此配置可以調整。 要執行此操作，您需要修改儲存在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;節點中的&#x200B;**Recipient subscription** Web應用程式。
    >
-   >For more information on Web applications, refer to [this section](../../web/using/about-web-applications.md).
+   >有關Web應用程式的詳細資訊，請參閱[本節](../../web/using/about-web-applications.md)。
 
-   驗證後，會傳送確認訊息給他們：只有在確認訊息中啟用連結後，才會永久註冊。 此消息基於儲存在節 **[!UICONTROL Registration confirmation]** 點中的模板創 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 建。
+   驗證後，會傳送確認訊息給他們：只有在確認訊息中啟用連結後，才會永久註冊。 此消息基於&#x200B;**[!UICONTROL Registration confirmation]**&#x200B;模板建立，該模板儲存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;節點中。
 
-   裁判會新增至資料庫的 **Recipients** 資料夾，並訂閱（依預設） **Newsletter** 資訊服務。
+   裁判被添加到資料庫的&#x200B;**收件者**&#x200B;資料夾中，並且（預設）訂閱&#x200B;**電子報**&#x200B;資訊服務。
 
-## 追蹤社交網路共用 {#tracking-social-network-sharing}
+## 追蹤社交網路共用{#tracking-social-network-sharing}
 
 會追蹤共用資訊的共用和存取權。 Adobe Campaign收集到的這項資訊可在兩處存取：
 
-* 在傳送 **[!UICONTROL Tracking]** 的標籤中（或針對每位收件者個別）:
+* 在傳送的&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤中（或針對每位收件者個別）:
 
    ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
-* 在專屬報 **[!UICONTROL Sharing to social networks]** 告中：
+* 在專用的&#x200B;**[!UICONTROL Sharing to social networks]**&#x200B;報告中：
 
    ![](assets/s_ncs_user_viral_report.png)
 
