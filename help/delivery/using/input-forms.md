@@ -19,11 +19,11 @@ ht-degree: 2%
 
 以下是有關在Adobe Campaign中使用輸入表單的一些一般原則。
 
-本節將詳述 [表單](../../configuration/using/identifying-a-form.md)。
+[本節](../../configuration/using/identifying-a-form.md)中詳細說明了表單。
 
 ## 表單結構 {#form-structure}
 
-輸入表單的XML檔案必須包含 **`<form>`** 根元素，其中 **包含name** 和namespace **** 屬性，以分別填入表單名稱及其namespace。
+輸入表單的XML文檔必須包含&#x200B;**`<form>`**&#x200B;根元素，其中&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬性必須分別填入表單名稱及其namespace。
 
 ```
 <form name="form_name" namespace="name_space">
@@ -31,7 +31,7 @@ ht-degree: 2%
 </form>
 ```
 
-預設情況下，表單與具有相同名稱和命名空間的資料架構相關聯。 要將表單與不同名稱關聯，請在元素的 **entity-schema屬性中輸入模式鍵****`<form>`** 。
+預設情況下，表單與具有相同名稱和命名空間的資料架構相關聯。 要將表單與不同的名稱關聯，請在&#x200B;**`<form>`**&#x200B;元素的&#x200B;**entity-schema**&#x200B;屬性中輸入模式鍵。
 
 為了說明輸入表單的結構，我們基於示例模式&quot;cus:book&quot;描述一個介面：
 
@@ -47,9 +47,9 @@ ht-degree: 2%
 </form>
 ```
 
-編輯元素的說明以根元素開 **`<form>`** 頭。
+編輯元素的說明從&#x200B;**`<form>`**&#x200B;根元素開始。
 
-在元素中輸入編輯控 **`<input>`** 制項，其中 **xpath** 屬性包含其架構中欄位的路徑。
+在&#x200B;**`<input>`**&#x200B;元素中輸入編輯控制項，該元素具有&#x200B;**xpath**&#x200B;屬性，該屬性在其模式中包含欄位的路徑。
 
 **有關XPath語法的提醒：**
 
@@ -71,7 +71,7 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 
 >[!CAUTION]
 >
->輸入表單必須參考元 **素上的type=&quot;contentForm&quot;** 屬性， **`<form>`** 以自動新增要輸入內容所需的影格。
+>輸入表單必須參考&#x200B;**`<form>`**&#x200B;元素上的&#x200B;**type=&quot;contentForm&quot;**&#x200B;屬性，以自動新增要輸入內容所需的影格。
 
 ## 格式 {#formatting}
 
@@ -79,11 +79,11 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 
 如需詳細資訊，請參閱[本章節](../../configuration/using/form-structure.md#formatting)。
 
-## 清單類型控制項 {#list-type-controls}
+## 清單類型控制項{#list-type-controls}
 
 若要編輯系列元素，您必須使用清單類型控制項。
 
-### 列清單 {#column-list}
+### 列清單{#column-list}
 
 此控制項會顯示可編輯的欄清單，其工具列包含「新增」和「刪除」按鈕。
 
@@ -96,13 +96,13 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 </input>
 ```
 
-清單控制項必須填入 **type=&quot;list&quot;屬性** ，清單的路徑必須參照系列元素。
+清單控制項必須填入&#x200B;**type=&quot;list&quot;**&#x200B;屬性，且清單的路徑必須參照系列元素。
 
-列由清單的子 **`<input>`** 元素聲明。
+列由清單的子&#x200B;**`<input>`**&#x200B;元素聲明。
 
 >[!NOTE]
 >
->當資料結構中的收集元素完成 **** ordered=&quot;true&quot;屬性時，會自動新增向上和向下排序箭頭。
+>當資料結構中的收集元素完成&#x200B;**ordered=&quot;true&quot;**&#x200B;屬性時，會自動新增向上和向下排序箭頭。
 
 依預設，工具列按鈕會垂直對齊。 也可以水準對齊：
 
@@ -115,13 +115,13 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 </input>
 ```
 
-工具 **列Caption** 屬性會強制工具列的水準對齊方式，並填入清單上方的標題。
+**toolbarCaption**&#x200B;屬性強制工具列的水準對齊方式，並填入清單上方的標題。
 
 >[!NOTE]
 >
->對於不要顯示在控制項左側的系列元素標籤，請新增 **nolabel=&quot;true&quot;屬性** 。
+>對於不要顯示在控制項左側的收集元素標籤，請添加&#x200B;**nolabel=&quot;true&quot;**&#x200B;屬性。
 
-#### 放大清單 {#zoom-in-a-list}
+#### 放大清單{#zoom-in-a-list}
 
 清單資料的插入和編輯可以在單獨的編輯表單中執行。
 
@@ -146,15 +146,15 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 </input>
 ```
 
-編輯表單的定義是通過清單元素下 **`<form>`** 的元素指定的。 其結構與輸入形式的結構相同。
+編輯表單的定義是透過清單元素下方的&#x200B;**`<form>`**&#x200B;元素指定。 其結構與輸入形式的結構相同。
 
-當 **[!UICONTROL Detail]** 在清單定義中輸 **** 入zoom=&quot;true&quot;屬性時，會自動新增按鈕。 這可讓您在選取的行上開啟編輯表格。
+當在清單定義中輸入&#x200B;**zoom=&quot;true&quot;**&#x200B;屬性時，會自動新增&#x200B;**[!UICONTROL Detail]**&#x200B;按鈕。 這可讓您在選取的行上開啟編輯表格。
 
 >[!NOTE]
 >
->新增 **zoomOnAdd=&quot;true&quot;屬性** ，會強制在插入清單的元素時呼叫編輯表單。
+>新增&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;屬性會強制在插入清單的元素時呼叫編輯表單。
 
-### 頁籤清單 {#tab-list}
+### 標籤清單{#tab-list}
 
 此清單以標籤的形式呈現系列元素的編輯。
 
@@ -170,23 +170,23 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 </container>
 ```
 
-清單控制項必須填入 **type=&quot;notebooklist&quot;屬性** ，清單的路徑必須參照系列元素。
+清單控制項必須填入&#x200B;**type=&quot;notebooklist&quot;**&#x200B;屬性，且清單的路徑必須參照系列元素。
 
-該頁籤的標題包含通過 **xpath-label屬性輸入的資料值** 。
+該頁籤的標題包含通過&#x200B;**xpath-label**&#x200B;屬性輸入的資料值。
 
-編輯控制項必須宣告在 **`<container>`** 清單控制項的子項元素下。
+編輯控制項必須在&#x200B;**`<container>`**&#x200B;元素下宣告，該元素是清單控制項的子項。
 
 使用工具列按鈕來新增或刪除清單元素。
 
 >[!NOTE]
 >
->為資料結構中的收集元素填入 **** ordered=&quot;true&quot;屬性時，會自動新增向左和向右排序箭頭。
+>為資料結構中的收集元素填入&#x200B;**ordered=&quot;true&quot;**&#x200B;屬性時，會自動新增向左和向右排序箭頭。
 
-## 容器 {#containers}
+## 容器{#containers}
 
-容器可讓您將一組控制項分組。 它們透過元素存 **`<container>`** 在。 它們已用於格式化多欄中的控制項，以及用於控制標籤清單。
+容器可讓您將一組控制項分組。 它們通過&#x200B;**`<container>`**&#x200B;元素存在。 它們已用於格式化多欄中的控制項，以及用於控制標籤清單。
 
-有關容器以及如何在輸入表單中使用容器的詳細資訊，請參閱 [本節](../../configuration/using/form-structure.md#containers)。
+有關容器以及如何在輸入表單中使用容器的詳細資訊，請參閱[本節](../../configuration/using/form-structure.md#containers)。
 
 ## 編輯表格 {#editing-forms}
 
@@ -194,6 +194,6 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 
 ![](assets/d_ncs_content_form12.png)
 
-此標 **[!UICONTROL Preview]** 簽可讓您檢視輸入表單：
+**[!UICONTROL Preview]**&#x200B;標籤可讓您檢視輸入表單：
 
 ![](assets/d_ncs_content_form13.png)
