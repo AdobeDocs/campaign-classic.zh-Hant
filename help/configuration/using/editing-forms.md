@@ -17,7 +17,7 @@ ht-degree: 13%
 
 # 編輯表格{#editing-forms}
 
-您可從Adobe Campaign用戶端主控台的 **[!UICONTROL Administration]> [!UICONTROL Configuration] >資[!UICONTROL Input forms]** 料夾存取輸入表單建立與設定畫面：
+您可從Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]**&#x200B;資料夾存取輸入表單建立與設定畫面：
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
