@@ -10,33 +10,33 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # 網路配置{#network-configuration}
 
-## 進程間的通信 {#communication-between-processes}
+## 進程之間的通信{#communication-between-processes}
 
 應用程式的某些程式需要與其他人通訊或存取LAN和網際網路。 這意味著某些TCP埠需要為這些進程開啟。
 
 使用內嵌的Apache Tomcat埠作為優先順序（預設為8080），在Adobe Campaign平台的各種應用程式伺服器之間進行內部通訊。
 
-### 傳送伺服器 {#delivery-server}
+### 傳送伺服器{#delivery-server}
 
-對於傳送伺服器(**nlserver mta**)，必須開啟下列埠：
+對於傳送伺服器(**nlserver mta**)，必須開啟以下埠：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> Comments<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
-   <td> 隨處皆可<br /> </td> 
+   <td> Anywhere<br /> </td> 
    <td> 電子郵件廣播的SMTP通信。<br /> </td> 
   </tr> 
   <tr> 
@@ -47,7 +47,7 @@ ht-degree: 2%
   <tr> 
    <td> 38000/tcp（預設埠）<br /> </td> 
    <td> SMS閘道<br /> </td> 
-   <td> 用於將SMS通信發送到NetSize SMS路由器[選項]。<br /> </td> 
+   <td> 用於將SMS通信發送到NetSize SMS路由器[option]。<br /> </td> 
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
@@ -57,7 +57,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 入站郵件 {#inbound-mail}
+### 入站郵件{#inbound-mail}
 
 對於入站郵件恢復過程(**nlserver inMail**)，必須開啟以下埠：
 
@@ -66,12 +66,12 @@ ht-degree: 2%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> Comments<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp(pop3)<br /> </td> 
    <td> 內部郵件伺服器<br /> </td> 
-   <td> POP3流量，以擷取反彈訊息。<br /> </td> 
+   <td> POP3流量，用以擷取反彈訊息。<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
@@ -83,18 +83,18 @@ ht-degree: 2%
 
 ### 應用程式伺服器 {#application-server}
 
-對於應用程式伺服器(**nlserver web**)，必須開啟以下埠：
+對於應用伺服器(**nlserver web**)，必須開啟以下埠：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> Comments<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp(http)<br /> 443/tcp(https)<br /> </td> 
-   <td> 隨處皆可<br /> </td> 
+   <td> Anywhere<br /> </td> 
    <td> HTTP或HTTPS流量（包括可傳遞性選件）。<br /> </td> 
   </tr> 
  </tbody> 
@@ -102,7 +102,7 @@ ht-degree: 2%
 
 當Adobe Campaign平台的數個應用程式伺服器需要彼此通訊時，建議使用Apache Tomcat伺服器的連接埠(預設為：8080)，而非執行重定向模組整合的Web伺服器的HTTP埠。 這表示這些伺服器之間需要開啟埠。
 
-### 簡訊傳送狀態 {#sms-delivery-status}
+### SMS傳送狀態{#sms-delivery-status}
 
 若要追蹤SMS傳送(**nlserver sms**)，必須開啟下列連接埠：
 
@@ -111,7 +111,7 @@ ht-degree: 2%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> Comments<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp（預設埠）<br /> </td> 
@@ -130,7 +130,7 @@ ht-degree: 2%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> Comments<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p>443/tcp(https)</p><br /> </td> 
@@ -140,7 +140,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 資料庫存取 {#database-access}
+## 資料庫訪問{#database-access}
 
 使用資料庫的所有元件都必須能夠連接到它。 大多數元件都是這樣，但重定向伺服器（可獨立工作）和瘦Win32客戶端(僅使用HTTP（或HTTPS）與應用程式伺服器通信)除外。
 
@@ -173,11 +173,11 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 外部存取 {#external-access}
+## 外部訪問{#external-access}
 
 此外，某些元件必須可從公共網際網路存取，才能檢視直接從Adobe Campaign執行的電子郵件促銷活動。 這表示某些埠需要為元件開啟。
 
-### 重定向伺服器 {#redirection-server}
+### 重定向伺服器{#redirection-server}
 
 <table> 
  <tbody> 
@@ -192,7 +192,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 外部Web伺服器 {#external-web-server}
+### 外部Web伺服器{#external-web-server}
 
 此伺服器托管Web表單、鏡像頁等。 需要開啟以下埠：
 
@@ -209,7 +209,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 內部應用程式伺服器(Web) {#internal-application-server--web-}
+### 內部應用程式伺服器(Web){#internal-application-server--web-}
 
 <table> 
  <tbody> 
@@ -224,9 +224,9 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 與Adobe Experience Manager整合 {#integration-with-adobe-experience-manager}
+## 與Adobe Experience Manager {#integration-with-adobe-experience-manager}整合
 
-如果安裝是「內部部署」，則Adobe Campaign與Adobe Experience Manager之間的整合需要開啟數個埠。 如需設定此整合的詳細資訊，請參閱詳細 [的檔案](../../integrations/using/about-adobe-experience-manager.md)。
+如果安裝是「內部部署」，則Adobe Campaign與Adobe Experience Manager之間的整合需要開啟數個埠。 有關配置此整合的詳細資訊，請參閱[詳細文檔](../../integrations/using/about-adobe-experience-manager.md)。
 
 <table> 
  <tbody> 
@@ -239,13 +239,13 @@ ht-degree: 2%
    <td> AEM與Adobe Campaign的連線<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign與AEM的「編寫」和「發佈」例項的連線。 要開啟的埠可能與預設埠不同，視您的AEM設定而定。<br /> </td> 
+   <td><p> 郵編：4502</p><p> 郵編：4503</p><br /> </td> 
+   <td> Adobe Campaign與AEM的「編寫」和「發佈」例項的連線。 要開啟的埠可能與預設埠不同，具體取決於您的AEM配置。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 頻寬 {#bandwidth}
+## 頻寬{#bandwidth}
 
 要考慮的網路配置的另一個關鍵參數。 在電子郵件廣播中，它幾乎總是對外發送，而且有很多需求。 以下是一些基於我們經驗的配置示例：
 
