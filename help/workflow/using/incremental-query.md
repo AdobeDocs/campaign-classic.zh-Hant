@@ -30,22 +30,22 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->如果增量查詢的結果在其中一個執行期 **間等於** 0，則暫停工作流，直到查詢的下次寫程式執行。 因此，在執行下列操作之前，不會處理增量查詢之後的轉換和活動。
+>如果增量查詢的結果在其其中一個執行期間等於&#x200B;**0**，則暫停工作流，直到查詢的下次寫程式執行。 因此，在執行下列操作之前，不會處理增量查詢之後的轉換和活動。
 
 操作步驟：
 
-1. In the **[!UICONTROL Scheduling & History]** tab, select the **[!UICONTROL Schedule execution]** option. 建立任務後，該任務將保持活動狀態，並且僅在計畫為執行查詢指定的時間觸發。 但是，如果選項被禁用，則查詢會立即執行， **並一次執行**。
+1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;標籤中，選擇&#x200B;**[!UICONTROL Schedule execution]**&#x200B;選項。 建立任務後，該任務將保持活動狀態，並且僅在計畫為執行查詢指定的時間觸發。 但是，如果禁用該選項，則會立即執行查詢&#x200B;**，並在單行操作中執行查詢。**
 1. 按一下 **[!UICONTROL Change]** 按鈕。
 
-   在視窗 **[!UICONTROL Schedule editing wizard]** 中，您可以設定頻率、事件週期和事件有效期間的類型。
+   在&#x200B;**[!UICONTROL Schedule editing wizard]**&#x200B;視窗中，您可以設定頻率、事件週期和事件有效期。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Click **[!UICONTROL Finish]** to save the schedule.
+1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;保存計畫。
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. 頁籤的下 **[!UICONTROL Scheduling & History]** 部分允許您選擇歷史記錄中要考慮的天數。
+1. **[!UICONTROL Scheduling & History]**&#x200B;標籤的下半部分允許您選擇歷史記錄中要考慮的天數。
 
    ![](assets/edit_request_inc.png)
 
@@ -61,7 +61,7 @@ ht-degree: 3%
 
       此參數可讓您過載包含歷史記錄資料的預設SQL表。
 
-## 輸出參數 {#output-parameters}
+## 輸出參數{#output-parameters}
 
 * tableName
 * 架構
