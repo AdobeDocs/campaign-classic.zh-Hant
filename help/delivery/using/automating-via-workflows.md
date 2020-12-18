@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # 透過工作流程自動化{#automating-via-workflows}
 
-## 內容管理活動 {#content-management-activity}
+## 內容管理活動{#content-management-activity}
 
 使用透過Adobe Campaign用戶端介面設定的工作流程，可自動建立、編輯和發佈內容。
 
-「內 **容管理** 」活動可通過工作 **[!UICONTROL Tools]** 流圖的工具欄訪問。
+**內容管理**&#x200B;活動可通過工作流圖的&#x200B;**[!UICONTROL Tools]**&#x200B;工具欄訪問。
 
 活動屬性分為四個步驟：
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_wf.png)
 
-### 內容 {#content}
+### 內容{#content}
 
 * **由轉換指定**
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
    透過出版物範本建立新內容。 內容例項將儲存在填入的「字串」檔案夾中。
 
-### 更新內容 {#update-the-content}
+### 更新內容{#update-the-content}
 
 * **主旨**
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
    XSL樣式表可用於轉換傳入的XML資料。
 
-### 執行動作 {#action-to-execute}
+### 執行{#action-to-execute}的動作
 
 * **儲存**
 
@@ -74,11 +74,11 @@ ht-degree: 0%
 
 ### 轉變 {#transition}
 
-「生 **成輸出轉換** 」選項可讓您新增輸出轉換至活動， **[!UICONTROL Content management]** 以將新活動連結至工作流程執行。 勾選此選項後，輸入轉場的標籤。
+**產生輸出轉變**&#x200B;選項可讓您新增輸出轉變至&#x200B;**[!UICONTROL Content management]**&#x200B;活動，以連結新活動與工作流程執行。 勾選此選項後，輸入轉場的標籤。
 
 ## 範例 {#examples}
 
-### 自動化內容建立和傳送 {#automating-content-creation-and-delivery}
+### 自動化內容建立和傳送{#automating-content-creation-and-delivery}
 
 以下範例會自動建立和傳送內容區塊。
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 透過出版物模型和內容字串資料夾建立新的內容例項。
 
-在我們的例子中，我們超載了交貨對象。 它將被考慮在內，而不是在模板中輸入的 **[!UICONTROL Delivery]** 內。
+在我們的例子中，我們超載了交貨對象。 它將被考慮在內，而不是在&#x200B;**[!UICONTROL Delivery]**&#x200B;模板中輸入的。
 
 內容會由輸入之URL的XML摘要自動填入：
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 </book>
 ```
 
-資料格式與在出版物模板中輸入的資料模式不匹配(**本例中為cus:book** );元 **`<section>`** 素必須替換為元 **`<chapter>`** 素。 我們需要套用&quot;cus:book-workflow.xsl&quot;樣式表，以進行必要的變更。
+資料格式與在出版物模板中輸入的資料模式不匹配（在本例中為&#x200B;**cus:book**）;**`<section>`**&#x200B;元素必須以&#x200B;**`<chapter>`**&#x200B;元素取代。 我們需要套用&quot;cus:book-workflow.xsl&quot;樣式表，以進行必要的變更。
 
 使用的XSLT樣式表的原始碼：
 
@@ -142,11 +142,11 @@ ht-degree: 0%
 
 活動的最終動作是儲存內容例項並繼續下一個工作。
 
-定位是透過「查詢」活 **動執行** 。
+定位是透過&#x200B;**Query**&#x200B;活動執行。
 
-已 **新增AND-join** 活動，以確保只有在目標查詢和內容更新完成後，才啟動傳送。
+已新增&#x200B;**AND-join**&#x200B;活動，以確保只有在目標查詢和內容更新完成後，才啟動傳送。
 
-傳送動作是透過「傳送」活 **動設定** :
+傳送動作是透過&#x200B;**傳送**&#x200B;活動來設定：
 
 ![](assets/d_ncs_content_workflow4.png)
 
@@ -160,19 +160,19 @@ ht-degree: 0%
 
 完成活動的最後一個步驟是準備然後啟動傳送。
 
-### 建立內容並稍後發佈 {#creating-content-and-publishing-it-later}
+### 建立內容並稍後發佈{#creating-content-and-publishing-it-later}
 
 此範例會建立內容區塊，並在特定時間延遲後啟動檔案發佈。
 
 ![](assets/d_ncs_content_workflow5.png)
 
-第一個內 **容管理** (Content Management)任務建立內容實例。
+第一個&#x200B;**內容管理**&#x200B;任務建立內容實例。
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->必 **[!UICONTROL Publication]** 須在轉換模板窗口的頁籤中填入要生成的目標位置。
+>必須在轉換模板窗口的&#x200B;**[!UICONTROL Publication]**&#x200B;頁籤中填入要生成的目標位置。
 
 會新增等待活動，以暫停下一個轉場一週。
 
@@ -188,21 +188,21 @@ ht-degree: 0%
 
 最後的動作是強制發佈目錄來產生此內容。
 
-「 **JavaScript代碼** 」活動會擷取每個產生檔案的完整名稱。
+**JavaScript代碼**&#x200B;活動會擷取每個產生檔案的完整名稱。
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### 建立傳送內容 {#creating-the-delivery-and-its-content}
+### 建立傳送及其內容{#creating-the-delivery-and-its-content}
 
 此範例使用與第一個範例相同的概念，只會在第一個步驟中建立傳送動作。
 
 ![](assets/d_ncs_content_workflow10.png)
 
-第一個「 **建立傳送** 」工作會建立傳送動作。
+第一個&#x200B;**建立交付**&#x200B;任務將建立交付操作。
 
 fork活動可讓您同時啟動目標計算和內容實例的建立。
 
-執行完任務後，AND-join方塊會啟動 **Delivery** task，以啟動先前建立的內容與定位傳送。
+執行完任務後，AND-join框將激活&#x200B;**Delivery**&#x200B;任務，以啟動以前建立的內容和目標傳送。
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -214,25 +214,25 @@ fork活動可讓您同時啟動目標計算和內容實例的建立。
 
 活動的最終動作是準備並啟動傳送。
 
-### 從FTP匯入內容 {#importing-content-from-ftp}
+### 從FTP {#importing-content-from-ftp}匯入內容
 
-如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您就可輕鬆將此內容載入Adobe Campaign傳送。 Refer to [this example](../../workflow/using/loading-delivery-content.md).
+如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您就可輕鬆將此內容載入Adobe Campaign傳送。 請參閱[此示例](../../workflow/using/loading-delivery-content.md)。
 
-### 從Amazon Simple Storage Service(S3)連接器匯入內容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### 從Amazon Simple Storage Service(S3)連接器{#importing-content-from-amazon-simple-storage-service--s3--connector}導入內容
 
-如果您的傳送內容位於Amazon Simple Storage Service(S3)儲存區，您可以輕鬆將此內容載入Adobe Campaign傳送。 Refer to [this example](../../workflow/using/loading-delivery-content.md).
+如果您的傳送內容位於Amazon Simple Storage Service(S3)儲存區，您可以輕鬆將此內容載入Adobe Campaign傳送。 請參閱[此示例](../../workflow/using/loading-delivery-content.md)。
 
-## 半自動更新 {#semi-automatic-update}
+## 半自動更新{#semi-automatic-update}
 
 內容資料可在「半自動」模式中更新。 資料會透過URL從XML饋送中復原。
 
 資料恢復的激活是通過輸入表單手動執行的。
 
-其目的是在表單中 **聲明editBtn** **`<input>`** type欄位。 該控制包括編輯區和啟動處理的按鈕。
+其目的是聲明&#x200B;**editBtn**&#x200B;類型&#x200B;**`<input>`**&#x200B;的欄位。 該控制包括編輯區和啟動處理的按鈕。
 
 編輯區可讓您填入變數資料，用以建構要擷取之資料之XML饋送的URL。
 
-按鈕會執行填 **入在標籤下方的GetAndTransform** SOAP **`<input>`** 方法。
+按鈕會執行填入&#x200B;**`<input>`**&#x200B;標籤下的&#x200B;**GetAndTransform** SOAP方法。
 
 形式中的控制聲明如下：
 
@@ -248,7 +248,7 @@ fork活動可讓您同時啟動目標計算和內容實例的建立。
 </input>
 ```
 
-GetAnd **Transform方法必須在** 標籤的元素下 **`<enter>`****`<input>`** 宣告。 此標籤會作為從動態建構的運算式中恢復XML資料的URL參數。 函式的第二個參數是可選的，當傳入的XML資料與內容格式不同時，引用用於中間轉換的樣式表。
+**GetAndTransform**&#x200B;方法必須在&#x200B;**`<input>`**&#x200B;標籤的&#x200B;**`<enter>`**&#x200B;元素下宣告。 此標籤會作為從動態建構的運算式中恢復XML資料的URL參數。 函式的第二個參數是可選的，當傳入的XML資料與內容格式不同時，引用用於中間轉換的樣式表。
 
 輸出會根據最後一個參數中輸入的路徑更新內容。
 
