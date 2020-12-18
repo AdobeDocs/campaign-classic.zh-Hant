@@ -33,7 +33,7 @@ ht-degree: 88%
 
 ### 大量更新 {#mass-update}
 
-若要進行大量更新，請使用 **[!UICONTROL Action > Mass update of selected lines...]**。 此精靈可協助您設定並執行更新。
+對於大量更新，請使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 此精靈可協助您設定並執行更新。
 
 精靈的第一步驟是指定要更新的欄位。
 
@@ -67,7 +67,7 @@ ht-degree: 88%
 
 ### 合併資料 {#merge-data}
 
-Select **[!UICONTROL Merge selected lines...]** to launch the merging of two recipient profiles. 選取該選項之前，必須選取要合併的用戶檔案。使用精靈來設定和開始合併。
+選擇&#x200B;**[!UICONTROL Merge selected lines...]**&#x200B;以啟動合併兩個收件人配置檔案。 選取該選項之前，必須選取要合併的用戶檔案。使用精靈來設定和開始合併。
 
 精靈會顯示一或多個來源用戶檔案中每個已填充欄位的擷取內容。如果用戶檔案中要合併的一或多個欄位具有不同的值，則會顯示在 **[!UICONTROL List of conflicts]** 區段中。然後，您可以使用清單下方的選項按鈕來選取預設用戶檔案，如下列範例所示：
 
@@ -84,7 +84,7 @@ Select **[!UICONTROL Merge selected lines...]** to launch the merging of two rec
 清單內容可以匯出。若要設定並執行匯出：
 
 1. 選取要匯出的記錄。
-1. Right-click and select **[!UICONTROL Export...]**.
+1. 按一下右鍵並選擇&#x200B;**[!UICONTROL Export...]**。
 
    ![](assets/s_ncs_user_export_list.png)
 
@@ -92,7 +92,7 @@ Select **[!UICONTROL Merge selected lines...]** to launch the merging of two rec
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   For more on how to configure the export wizard, refer to [Export wizard](../../platform/using/exporting-data.md#export-wizard).
+   有關如何配置導出嚮導的詳細資訊，請參閱[導出嚮導](../../platform/using/exporting-data.md#export-wizard)。
 
 ## 訂閱服務 {#subscribing-to-a-service}
 
@@ -111,16 +111,16 @@ Select **[!UICONTROL Merge selected lines...]** to launch the merging of two rec
    >
    >此編輯器可讓您建立新的服務：按一下 **[!UICONTROL Create]** 按鈕。
 
-1. You can **[!UICONTROL Send a confirmation message]** to recipients. 可在與所選服務相連結的訂閱場景中設定此訊息的內容。
+1. 您可以&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;傳送給收件者。 可在與所選服務相連結的訂閱場景中設定此訊息的內容。
 1. 按一下 **[!UICONTROL Start]** 按鈕執行訂閱程序。
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
 使用視窗的上方區域可監視執行程序。使用 **[!UICONTROL Stop]** 按鈕可停止程序。不過，已處理之收件者將訂閱服務。
 
-If you uncheck the **[!UICONTROL Do not keep a trace of this job in the database]** option, you can select (or create) the execution folder where the information on this process will be stored.
+如果取消選中&#x200B;**[!UICONTROL Do not keep a trace of this job in the database]**&#x200B;選項，則可以選擇（或建立）將儲存此進程資訊的執行資料夾。
 
-To check on the process, go to the **[!UICONTROL Subscriptions]** tab on the profiles of the recipients concerned by this operation, or to the **[!UICONTROL Subscriptions]** tab accessed via the **[!UICONTROL Profiles and Targets > Services and Subscriptions]** node.
+要檢查進程，請轉至此操作所涉及的收件人配置檔案的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;頁籤，或轉至通過&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;節點訪問的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;頁籤。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
