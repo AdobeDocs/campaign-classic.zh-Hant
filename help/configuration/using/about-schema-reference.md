@@ -19,9 +19,9 @@ ht-degree: 7%
 
 本章說明如何設定擴充架構，以擴充Adobe Campaign資料庫的概念資料模型。
 
-如需深入瞭解Campaign內建表格及其互動，請參閱 [Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
+如需深入瞭解Campaign內建表格及其互動，請參閱[Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
-並以 XML 描述了應用程式中資料的實體和邏輯結構。It obeys a grammar specific to Adobe Campaign, called a **schema**.
+並以 XML 描述了應用程式中資料的實體和邏輯結構。它遵循Adobe Campaign專屬的語法，稱為&#x200B;**schema**。
 
 方案是與資料庫表關聯的XML文檔。 它定義了資料結構，並描述了表的SQL定義：
 
@@ -44,11 +44,11 @@ ht-degree: 7%
 
 ![](assets/reference_schema_intro.png)
 
-## 結構的語法 {#syntax-of-schemas}
+## 結構{#syntax-of-schemas}的語法
 
-方案的根元素為 **`<srcschema>`**。 它包含 **`<element>`** 和 **`<attribute>`** 子元素。
+架構的根元素為&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
 
-第一 **`<element>`** 個子元素與圖元的根重合。
+第一個&#x200B;**`<element>`**&#x200B;子元素與實體的根重合。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ ht-degree: 7%
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-標 **`<element>`** 記定義實體元素的名稱。 **`<attribute>`** 架構的標籤定義了已連結到的標 **`<element>`** 記中屬性的名稱。
+**`<element>`**&#x200B;標籤定義實體元素的名稱。 **`<attribute>`** 架構的標籤定義了已連結到的標 **`<element>`** 記中屬性的名稱。
 
-## 模式的標識 {#identification-of-a-schema}
+## 方案{#identification-of-a-schema}的標識
 
 資料架構由其名稱及其命名空間標識。
 
-命名空間可讓您依目標區域對一組結構描述進行分組。 例如， **cus** namespace用於客戶特定的&#x200B;**配置(客戶**)。
+命名空間可讓您依目標區域對一組結構描述進行分組。 例如，**cus**&#x200B;命名空間用於客戶特定的配置(**customers**)。
 
 >[!IMPORTANT]
 >
@@ -90,4 +90,4 @@ ht-degree: 7%
 * **ncm**:內容管理，
 * **臨時**:為臨時方案保留。
 
-模式的標識鍵是使用命名空間和名稱以冒號分隔的字串；例如： **cus:recipient**.
+模式的標識鍵是使用命名空間和名稱以冒號分隔的字串；例如：**cus:recipient**。
