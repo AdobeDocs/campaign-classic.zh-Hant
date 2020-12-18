@@ -21,27 +21,27 @@ ht-degree: 7%
 
 1. 建立新電子郵件或新登陸頁面。
 
-   如果您使用Adobe Experience Manager資產庫中的資產，請使用在設定整合時建立 [的傳送範本](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets)。
+   如果您使用Adobe Experience Manager資產庫中的資產，請使用在[設定整合時建立的傳送範本。](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets)
 
-   如果您沒有此特定範本，請確定在傳送屬性 ****, **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** tab)已設為 **DCE** ，而且您要用來存取AEM Assets資源庫的AEM外部帳戶已提供。
+   如果您沒有此特定範本，請確定在傳送&#x200B;**屬性**&#x200B;中，**[!UICONTROL Content editing mode]**（**[!UICONTROL Advanced]**&#x200B;標籤）已設為&#x200B;**DCE**，並已提供您要用來存取AEM Assets資源庫的AEM外部帳戶。
 
 1. 在編輯視窗中，選取要新增影像的選項：
 
-   * 如果您使用標準編輯 [模式](../../delivery/using/defining-the-email-content.md#adding-images)，請選 **[!UICONTROL Image]** 取> **[!UICONTROL Select a shared asset]**。
+   * 如果您使用[標準編輯模式](../../delivery/using/defining-the-email-content.md#adding-images)，請選擇&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
 
       ![](assets/dam_insert_image_standard.png)
 
-   * 如果您使用進階 [編輯模式](../../web/using/about-campaign-html-editor.md) (DCE)，請移至影像區塊，然後透過內容相關選單，選取 **[!UICONTROL Select a shared asset]**。
+   * 如果您使用[進階編輯模式](../../web/using/about-campaign-html-editor.md)(DCE)，請轉至影像塊，然後通過上下文菜單選擇&#x200B;**[!UICONTROL Select a shared asset]**。
 
       ![](assets/dam_insert_image_dce.png)
 
       >[!NOTE]
       >
-      >使用DCE時，您無法在Web存取 [中插入](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) Adobe Campaign的共用影像。
+      >使用DCE時，您無法在[web access](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)中插入來自Adobe Campaign的共用影像。
 
 1. 在開啟的選取視窗中，選取影像，然後確認。
 
-   可用的影像會來自您的Adobe Experience Cloud資料庫或AEM Assets資料庫，這取決於您的Adobe Campaign例項設定方式。 請參閱「設 [定資產存取權](../../integrations/using/configuring-access-to-assets.md) 」一節。
+   可用的影像會來自您的Adobe Experience Cloud資料庫或AEM Assets資料庫，這取決於您的Adobe Campaign例項設定方式。 請參閱[設定資產存取權](../../integrations/using/configuring-access-to-assets.md)一節。
 
    ![](assets/dam_shared_image_selection.png)
 
