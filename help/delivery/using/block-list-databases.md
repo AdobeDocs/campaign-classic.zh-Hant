@@ -25,35 +25,35 @@ ht-degree: 0%
 * 按發件人域：列出傳送垃圾郵件或設定錯誤的傳送者網域（彈回數郵件位址的完整網域）。
 * 依網域：列出在垃圾郵件內容所含連結和影像的URL中找到的網域（在註冊者註冊的高階網域）。 在Adobe Campaign中，通常要考慮的網域是用於追蹤的位址。
 
-以下是最廣泛使用的RBL清單。 如需更完整的清單，請參閱https://www.dnsstuff.com/ [](https://tools.dnsstuff.com/)。
+以下是最廣泛使用的RBL清單。 如需更完整的清單，請參閱[https://www.dnsstuff.com/](https://tools.dnsstuff.com/)。
 
 * **Spamhaus**
 
-   請參閱 [https://www.spamhaus.org/](https://www.spamhaus.org/)
+   請參閱[https://www.spamhaus.org/](https://www.spamhaus.org/)
 
    資料庫更重要。 列入這份名單通常是一種嚴重情況。 如果發生此情況，您必須立即採取行動，並警告商業服務、傳遞性和Adobe Campaign支援。
 
 * **SpamCop**
 
-   請參閱 [https://www.spamcop.net/](https://www.spamcop.net/)
+   請參閱[https://www.spamcop.net/](https://www.spamcop.net/)
 
    它是最著名的資料庫之一。 如果您的其中一個IP位址放在此清單上，這通常表示SpamCop使用者已將您的訊息宣告為垃圾訊息，或您已將訊息傳送至SpamCop蜜罐。
 
 * **URIBL**
 
-   請參閱 [https://www.uribl.com/](https://www.uribl.com/)
+   請參閱[https://www.uribl.com/](https://www.uribl.com/)
 
    此清單標識在宣告為垃圾郵件的郵件中定期顯示的域。 如果您的網域出現在此清單中，可能會大幅影響您的傳遞能力。 您應立即通知傳遞性服務和Adobe Campaign支援。
 
 * **SURBL**
 
-   請參閱 [http://www.surbl.org/](http://www.surbl.org/)
+   請參閱[http://www.surbl.org/](http://www.surbl.org/)
 
    SURBL可識別定期出現在垃圾訊息中的網站。 如果您的網域出現在此清單中，可能會大幅影響您的傳遞能力。 您應立即通知傳遞性服務和Adobe Campaign支援。
 
 * **iX Manitu**
 
-   這是一份IP清單，在德國廣為使用。 請參閱 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+   這是一份IP清單，在德國廣為使用。 請參閱[https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 
