@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必須在聯繫人數和選件類別和選件數之間找到平衡。 如果未仔細處理這些因素，您的Adobe Campaign例項可能會遇到問題。
 
-### 實作 {#implementation}
+### 實施{#implementation}
 
 以下列出實施和設定互動時應牢記的重要元素。
 
@@ -32,7 +32,7 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 * 選件目錄設計對Adobe Campaign Classic的效能有巨大影響。
 * 當有許多選件時，請將它們分割成數個選件目錄。
 
-### 資格規則 {#eligibility-rules}
+### 資格規則{#eligibility-rules}
 
 以下列出有關資格規則的一些最佳實務。
 
@@ -46,7 +46,7 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 * 建議每個選件空間有限數量的選件。 如此可確保在任何指定空間中更快擷取選件。
 * 使用索引，尤其是常用的查詢欄。
 
-### 命題表 {#proposition-table}
+### 命題表{#proposition-table}
 
 以下列出關於主張表格的一些最佳做法。
 
@@ -56,17 +56,17 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 * 限制每個目標所詢問的主張數。 請勿設定您實際要使用的項目。
 * 盡可能避免在規則條件中加入連接。
 
-## 管理優惠的秘訣與訣竅 {#tips-managing-offers}
+## 管理選件的秘訣與訣竅{#tips-managing-offers}
 
 本節包含有關管理選件和使用Adobe Campaign Classic中「互動」模組的更詳細建議。
 
-### 在電子郵件傳送中使用多個選件空間 {#multiple-offer-spaces}
+### 在電子郵件傳送中使用多個選件空間{#multiple-offer-spaces}
 
 在傳送中納入選件時，選件通常會在促銷活動工作流程中透過擴充活動（或其他類似活動）的上游選取。
 
 在「擴充」活動中選取選件時，您可以選擇要使用的選件空間。 不過，無論選取的選件空間為何，傳送自訂功能表會視傳送中設定的選件空間而定。
 
-在下列範例中，傳送中選取的選件空間為 **[!UICONTROL Email (Environment - Recipient)]**:
+在下列範例中，傳送中選取的選件空間為&#x200B;**[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -76,9 +76,9 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-此函式插入代碼，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
+此函式插入代碼，例如：`<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
 
-當您選擇提案時，屬性的 **[!UICONTROL view]** 值如下：
+當您選擇提案時，**[!UICONTROL view]**&#x200B;屬性的值如下：
 * &quot;rendering/html&quot;:html轉換。 它使用HTML轉換功能。
 * 「選件／檢視/html」:html內容。 它不使用HTML轉換功能。 它只包含HTML欄位。
 
@@ -86,7 +86,7 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 
 因此，為避免任何問題，建議所有選件空間都定義HTML轉換函式，即使選件空間只需要HTML內容亦然。
 
-### 在命題日誌表中設定排名 {#rank-proposition-log-table}
+### 在命題日誌表{#rank-proposition-log-table}中設定排名
 
 在生成或接受主張時，選件空間能夠將資料儲存在命題表中：
 
@@ -108,7 +108,7 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 
 由於命題表中有一個名為@rank的欄位，因此將複製工作流臨時表中的值。
 
-如需將其他欄位儲存在提案表格中的詳細資訊，請參 [閱透過工作流程整合選件](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)。
+如需將其他欄位儲存在提案表格中的詳細資訊，請參閱[透過工作流程整合選件](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)。
 
 對於具有互動的對外選件，當選取數個選件且您想要記錄這些選件在電子郵件中的顯示順序時，這項功能會很有用。
 
@@ -120,10 +120,10 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### 擴展nms:offer模式 {#extending-nms-offer-schema}
+### 擴展nms:offer模式{#extending-nms-offer-schema}
 
 在擴展nms:offer架構時，請確保遵循已設定的現成結構：
-* 在下定義任何新的內容儲存欄位 `<element name="view">`。
+* 在`<element name="view">`下定義內容儲存的任何新欄位。
 * 每個新欄位必須定義兩次。 一次是常規XML欄位，一次是名稱附加「_jst」的CDATA XML欄位。 例如：
 
    ```
@@ -131,4 +131,4 @@ Adobe Campaign中的互動需要謹慎的管理，才能有效運作。 您必�
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* 任何包含要追蹤之URL的欄位，都必須放 `<element name="trackedUrls">` 在下方，位於下方 `<element name="view" >`。
+* 任何包含要追蹤之URL的欄位都必須放在`<element name="trackedUrls">`下方，該欄位位於`<element name="view" >`下方。
