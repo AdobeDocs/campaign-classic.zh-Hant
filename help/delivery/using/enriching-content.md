@@ -19,9 +19,9 @@ ht-degree: 0%
 
 匯整器可讓您使用外部資料豐富內容。 此資料來自一般查詢或連結的表格。
 
-## 一般查詢 {#generic-queries}
+## 一般查詢{#generic-queries}
 
-查詢是通過頁籤中的發佈模板 **[!UICONTROL Aggregator]** 配置的。
+查詢是通過&#x200B;**[!UICONTROL Aggregator]**&#x200B;頁籤中的發佈模板配置的。
 
 擷取的資料將透過其主要元素豐富XML輸出檔案。
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 </book>
 ```
 
-元 **`<collection-recipient>`** 素表示由查詢產生的文檔的輸入元素。 檢索到的資料在此元素下返回；在我們的範例中，是收件者清單。
+**`<collection-recipient>`**&#x200B;元素代表由查詢產生的文檔的輸入元素。 檢索到的資料在此元素下返回；在我們的範例中，是收件者清單。
 
-### 添加查詢 {#adding-a-query}
+### 添加查詢{#adding-a-query}
 
 查詢參數是使用嚮導編輯的。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >編輯欄位 **Path** 用於更名查詢輸出元素。
+   >編輯欄位&#x200B;**Path**&#x200B;用於更名查詢輸出元素。
 
 1. 下一頁可讓您選取要擷取的資料。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
    ![](assets/d_ncs_content_query4.png)
 
-## 連結的表格 {#linked-tables}
+## 連結表{#linked-tables}
 
 連結可讓您擷取連結至內容的外部資料。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 * 內容連結：這是原生內容管理模式。 連結的內容會自動整合在XML輸出檔案中。
 * 到外部表的連結允許訪問資料庫中的所有其它表，並限制使用聚合器檢索所選連結的資料。
 
-### 內容架構的連結 {#link-to-a-content-schema}
+### 連結至內容架構{#link-to-a-content-schema}
 
 在資料模式中聲明內容連結如下：
 
@@ -80,9 +80,9 @@ ht-degree: 0%
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-連結的定義會填入 **字串**- **`<element>`**&#x200B;類型，而 **expandSchemaTarget** 屬性會參照目標結構（我們範例中的「cus:chapter」）。 引用的架構必須是內容架構。
+連結的定義會填入至&#x200B;**字串**-type **`<element>`**，而&#x200B;**expandSchemaTarget**&#x200B;屬性會參照目標結構（在我們的範例中為cus:chapter）。 引用的架構必須是內容架構。
 
-目標元素的內容豐富了連結元素，即我們示例模式 **`<chapter>`** 中的元素：
+目標元素的內容豐富了連結元素，即我們示例模式中的&#x200B;**`<chapter>`**&#x200B;元素：
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->連 **結的Compute字串** ，是從computeString屬性 **呈現** 。
+>連結的&#x200B;**計算字串**&#x200B;是從&#x200B;**computeString**&#x200B;屬性中顯示的。
 
 在輸入表單中，連結的編輯控制聲明如下：
 
@@ -102,11 +102,11 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link.png)
 
-此圖 **[!UICONTROL Magnifier]** 示可讓您開啟連結元素的編輯表單。
+**[!UICONTROL Magnifier]**&#x200B;圖示可讓您開啟連結的元素的編輯表單。
 
-#### 連結系列 {#link-collection}
+#### 連結系列{#link-collection}
 
-若要填入連結的集合，請將 **unboind=&quot;true&quot;** 屬性新增至資料結構中連結元素的定義：
+若要填入連結集合，請將&#x200B;**unboind=&quot;true&quot;**&#x200B;屬性新增至資料結構中連結元素的定義：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -128,9 +128,9 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link2.png)
 
-將顯示一個預設列，以查看目標元 **素的** 「計算」字串。
+為了查看目標元素的&#x200B;**計算字串**，將顯示預設列。
 
-### 外部表的連結 {#links-to-external-tables}
+### 外部表{#links-to-external-tables}的連結
 
 在資料模式中聲明到外部表的連結如下：
 
@@ -138,11 +138,11 @@ ht-degree: 0%
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-鏈路的定義填充在鏈 **路類型****`<element>`**&#x200B;上， **target** 屬性引用目標模式（在本例中為nms:recipient）。
+鏈路的定義填充在&#x200B;**link**-type **`<element>`**&#x200B;上，並且&#x200B;**target**&#x200B;屬性引用目標模式（在我們的示例中為「nms:recipient」）。
 
 依慣例，必須從資料架構的主要元素宣告連結。
 
-計 **算字串** 和目標元素的索引鍵會豐富主元素 **`<name>-id`** 上的 **`<name>-cs`** 屬性和屬性。
+**計算字串**&#x200B;和目標元素的鍵豐富了主元素上的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;屬性。
 
 在我們的範例中，連結會填入「cus:book」架構中，連結資料的內容會包含在「mainContact-id」和「mainContact-cs」屬性中：
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link3.png)
 
-您可以透過輸入表單中的連結定義來新增 **`<sysfilter>`** 元素，以限制目標元素的選擇：
+您可以透過輸入表單中的連結定義新增&#x200B;**`<sysfilter>`**&#x200B;元素，以限制目標元素的選擇：
 
 ```
 <input xpath="mainContact">
@@ -173,7 +173,7 @@ ht-degree: 0%
 >
 >此限制也適用於內容連結。
 
-#### 連結系列 {#link-collection-1}
+#### 連結系列{#link-collection-1}
 
 系列的定義與系列元素上清單的定義相同：
 
@@ -204,9 +204,9 @@ ht-degree: 0%
 <contact id="11504982510" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/>
 ```
 
-#### 鏈路聚合 {#link-aggregation}
+#### 鏈路聚合{#link-aggregation}
 
-參考的每個連結的內容僅限於目標元素的內 **部索引鍵** 和計算字串。
+參考的每個連結的內容限制為目標元素的內部鍵和&#x200B;**計算字串**。
 
 JavaScript指令碼可用來透過SOAP查詢豐富連結的內容。
 
@@ -257,7 +257,7 @@ for each(var contact in content.contact)
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-JavaScript程式碼的內容會透過資料夾新增， **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** 而且必須在每次轉換的出版物範本中填入。
+JavaScript程式碼的內容會透過&#x200B;**[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]**&#x200B;資料夾新增，而且必須在每個轉換的出版物範本中填入。
 
 ![](assets/d_ncs_content_link5.png)
 
