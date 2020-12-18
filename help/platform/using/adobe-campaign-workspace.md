@@ -17,7 +17,7 @@ ht-degree: 88%
 
 # Adobe Campaign 工作區{#adobe-campaign-workspace}
 
-## 探索Adobe Campaign介面 {#about-adobe-campaign-interface}
+## 探索Adobe Campaign介面{#about-adobe-campaign-interface}
 
 連線資料庫之後，您就可以存取 Adobe Campaign 首頁了，Adobe Campaign 首頁是一個儀表板，其中包含了可用於存取功能的連結和捷徑，顯示的連結和捷徑具體取決於安裝以及一般平台設定。
 
@@ -47,7 +47,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ![](assets/operation_from_web.png)
 
-### 語言 {#languages}
+### 語言{#languages}
 
 安裝Adobe Campaign Classic例項時，會選取語言。
 
@@ -63,7 +63,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
-For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+有關如何建立實例的詳細資訊，請參閱此[頁](../../installation/using/creating-an-instance-and-logging-on.md)。
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ For more information on how to create an instance, refer to this [page](../../in
 
 每項核心功能都包含一套基於任務相關需求及使用情境的功能。例如，使用 **[!UICONTROL Profiles and targets]** 連結，您可以找到收件者清單、訂閱服務、現有的目標工作流程，以及建立這些元素的捷徑。
 
-The lists are available via the **[!UICONTROL Lists]** link in the left-hand section of the **[!UICONTROL Profiles and Targets]** interface.
+這些清單可通過&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;介面左側部分的&#x200B;**[!UICONTROL Lists]**&#x200B;連結獲得。
 
 ![](assets/recipient_list_overview.png)
 
@@ -99,7 +99,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 使用每個核心功能區段，您可以瀏覽可用的元素。若要瀏覽可用元素，請使用 **[!UICONTROL Browsing]** 區段中的捷徑。使用 **[!UICONTROL Other choices]** 連結，您可存取其他所有頁面，不受環境影響。
 
-您可以建立新元素（傳送、Web應用程式、工作流程等） 使用畫面左 **[!UICONTROL Create]** 側區段中的捷徑。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
+您可以建立新元素（傳送、Web應用程式、工作流程等） 使用畫面左側&#x200B;**[!UICONTROL Create]**&#x200B;區段中的捷徑。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
 
 例如，在傳遞頁面上，使用 **[!UICONTROL Create]** 按鈕來建立新的傳遞。
 
@@ -139,9 +139,9 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 >[!NOTE]
 >
->Configuration and personalization of list content are presented in [Configuring lists](#configuring-lists).
+>清單內容的設定和個人化顯示在[設定清單](#configuring-lists)中。
 >
->您也可以排序和篩選資料。請參閱 [篩選選項](../../platform/using/filtering-options.md)。
+>您也可以排序和篩選資料。請參閱[篩選選項](../../platform/using/filtering-options.md)。
 
 ### 記錄計數 {#counting-records}
 
@@ -206,11 +206,11 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
    >
    >標籤會按表格顯示且以字母順序排列。
    >
-   >使用 **Search** 欄位在可用欄位中執行搜尋。如需詳細資訊，請參 [閱排序清單](#sorting-a-list)。
+   >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱[排序清單](#sorting-a-list)。
    >
    >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[設定清單](#configuring-lists).
    >
-   >您也可以排序和篩選資料。請參閱 [篩選選項](../../platform/using/filtering-options.md)。
+   >您也可以排序和篩選資料。請參閱[篩選選項](../../platform/using/filtering-options.md)。
 
 1. 對要顯示的每一個欄重複此步驟。
 1. 使用箭頭修改 **顯示順序**。最高的欄將顯示在記錄清單的左邊。
@@ -227,7 +227,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 您可以建立新的欄來顯示清單中的其他欄位。操作步驟：
 
-1. Click **[!UICONTROL Configure the list]** at below and to the right of the list.
+1. 按一下清單右下方的&#x200B;**[!UICONTROL Configure the list]**。
 1. 按一下 **[!UICONTROL Add]**，以在清單中顯示新欄位。
 
 ### 移除欄 {#remove-a-column}
@@ -273,11 +273,11 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 1. 以滑鼠右鍵按一下包含顯示資料的資料夾。
 1. 選取 **[!UICONTROL Properties]**。
-1. Click **[!UICONTROL Advanced settings]** and then specify a name in the **[!UICONTROL Configuration]** field.
+1. 按一下&#x200B;**[!UICONTROL Advanced settings]**，然後在&#x200B;**[!UICONTROL Configuration]**&#x200B;欄位中指定名稱。
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Click **[!UICONTROL OK]** and then click **[!UICONTROL Save]**.
+1. 按一下&#x200B;**[!UICONTROL OK]** ，然後按一下&#x200B;**[!UICONTROL Save]**。
 
 然後將此設定套用至另一個 **Delivery** 資料夾：
 
@@ -291,7 +291,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
 
-進出口功能的使用在一般進出口 [中有說明](../../platform/using/generic-imports-and-exports.md)。
+[Generic imports and exports](../../platform/using/generic-imports-and-exports.md)中說明了導入和導出功能的使用。
 
 >[!CAUTION]
 >
@@ -322,13 +322,13 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 1. 按一下 **[!UICONTROL Ok]** 確認此設定，並在清單中呈現結果。
 
-### 搜尋元素 {#running-a-search}
+### 搜索元素{#running-a-search}
 
 您可使用欄位清單上方的 **[!UICONTROL Search]** 欄位執行編輯器中可用欄位的搜尋。按下鍵盤上的 **Enter**，或瀏覽清單。符合搜尋文字的欄位將以粗體呈現。
 
 >[!NOTE]
 >
->您可以建立篩選器，只顯示清單中的部分資料。請參閱 [建立篩選](../../platform/using/creating-filters.md)。
+>您可以建立篩選器，只顯示清單中的部分資料。請參閱[建立篩選器](../../platform/using/creating-filters.md)。
 
 ## 格式和單位 {#formats-and-units}
 
@@ -377,7 +377,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 >[!NOTE]
 >
->管理員可透過 **[!UICONTROL Administration > Platform > Enumerations]** 區域管理列舉 (也稱為「分項清單」)。For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
+>管理員可透過 **[!UICONTROL Administration > Platform > Enumerations]** 區域管理列舉 (也稱為「分項清單」)。有關詳細資訊，請參閱[管理枚舉](../../platform/using/managing-enumerations.md)。
 
 ### 預設單位 {#default-units}
 
@@ -390,10 +390,10 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 ![](assets/enter_unit_sample.png)
 
-## 教學課程影片 {#video}
+## 教學課程影片{#video}
 
 此影片顯示Campaign Classic工作區。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
