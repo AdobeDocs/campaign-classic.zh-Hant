@@ -45,45 +45,45 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/generic-imports-and-exports.md).
+>要瞭解如何導入檔案和Web表單，請參閱[通用導入和導出](../../platform/using/generic-imports-and-exports.md)。
 
 ## 用戶檔案和目標 {#profiles-and-targets}
 
-The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. 您可以新建收件者、編輯現有的收件者以及存取其用戶檔案。有關詳細資訊，請參見[此頁面](../../platform/using/editing-a-profile.md)。
+**[!UICONTROL Profiles and targets]**&#x200B;連結可讓您顯示儲存在Adobe Campaign資料庫中的收件者。 您可以新建收件者、編輯現有的收件者以及存取其用戶檔案。有關詳細資訊，請參見[此頁面](../../platform/using/editing-a-profile.md)。
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
 它也可讓您存取：
 
-* 清單；請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md),
+* 清單；請參閱[建立和管理清單](../../platform/using/creating-and-managing-lists.md),
 * 訂閱服務，請參閱[本頁面](../../delivery/using/managing-subscriptions.md)
 * 網路應用程式，請參閱[本頁面](../../web/using/about-web-applications.md)
-* 進出口（就業）;請參閱 [一般匯入和匯出](../../platform/using/generic-imports-and-exports.md),
+* 進出口（就業）;請參閱[一般匯入與匯出](../../platform/using/generic-imports-and-exports.md),
 * 鎖定工作流程，請參閱[本頁面](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 使用收件者頁面，您可以對用戶檔案執行常見的作業，如編輯、更新、新增、刪除、排序。
 
 如需更多用戶檔案進階操作，您需要編輯 Adobe Campaign 樹狀結構清單。若要執行此項操作，請按一下 Adobe Campaign 首頁上的 **[!UICONTROL Explorer]** 連結。
 
-By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. 由此畫面，您可以建立收件者以及以下各項：
+預設情況下，收件人儲存在樹的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;節點中。 由此畫面，您可以建立收件者以及以下各項：
 
-* sort and filter the profiles of the database; see [Filtering options](../../platform/using/filtering-options.md),
-* move, copy or delete profiles from the database; see [Managing profiles](../../platform/using/managing-profiles.md),
-* 更新設定檔；請參閱 [更新資料](../../platform/using/updating-data.md),
-* 匯出收件者；請參 [閱導出和導入配置檔案](../../platform/using/exporting-and-importing-profiles.md),
-* 建立收件者群組；請參 [閱建立和管理清單](../../platform/using/creating-and-managing-lists.md)。
+* 對資料庫的配置檔案進行排序和過濾；請參閱[篩選選項](../../platform/using/filtering-options.md),
+* 從資料庫中移動、複製或刪除配置檔案；請參閱[管理配置式](../../platform/using/managing-profiles.md),
+* 更新設定檔；請參閱[更新data](../../platform/using/updating-data.md),
+* 匯出收件者；請參閱[匯出和匯入描述檔](../../platform/using/exporting-and-importing-profiles.md),
+* 建立收件者群組；請參閱[建立和管理清單](../../platform/using/creating-and-managing-lists.md)。
 
 若要存取進階功能和設定，您必須按一下 **[!UICONTROL Explorer]** 圖示。
 
 ![](assets/d_ncs_user_interface01.png)
 
-「使用Adobe Campaign檔案總管」中會顯示Adobe Campaign檔案總 [管的一般版面](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
+Adobe Campaign檔案總管的一般版面配置會顯示在「使用Adobe Campaign檔案總管[」中。](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)
 
 >[!NOTE]
 >
->您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 「使用Adobe Campaign檔案總管」中 [說明清單顯示設定](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
+>您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 [使用Adobe Campaign檔案總管](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中說明清單顯示設定。
 >
->您也可以定義收件者畫面。有關此功能的詳細資訊，請參 [閱資料夾和視圖](../../platform/using/access-management.md#folders-and-views)。
+>您也可以定義收件者畫面。有關此功能的詳細資訊，請參閱[資料夾和視圖](../../platform/using/access-management.md#folders-and-views)。
 
 ## 使用中的設定檔案 {#active-profiles}
 
@@ -91,9 +91,9 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 >[!NOTE]
 >
->如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 有關詳細資訊，請參閱[控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 >
->請注意，「作用中」描述檔計數僅適 **用於Marketing例項** 。 它不適用於執行實例，即MID（中間採購）和RT（消息中心／即時消息）實例。
+>請注意，「作用中」描述檔計數僅適用於&#x200B;**行銷例項**。 它不適用於執行實例，即MID（中間採購）和RT（消息中心／即時消息）實例。
 
 **Profile** 是指一筆代表終端客戶或潛在客戶之資訊的紀錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。
 
@@ -105,9 +105,9 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 >
 >Facebook 和 Twitter 通路不包含在內。
 
-您可從「促銷活動標準」功 **[!UICONTROL Number of active profiles]** 能表取得 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 概觀。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每個期間均為 12 個月。
+您可以從Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;功能表概述&#x200B;**[!UICONTROL Number of active profiles]**。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技術工作流](../../workflow/using/deliveries.md)執行，該工作流每天運行，並將新資料添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜單中當前時段的現有報告中。 每個期間均為 12 個月。
 
-## 教學課程影片 {#create-profiles-video}
+## 教學課程影片{#create-profiles-video}
 
 了解如何存取設定檔資料、排序和篩選設定檔，以及手動建立和管理設定檔。
 
@@ -115,7 +115,7 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
 
 **另請參閱**
 
