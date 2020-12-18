@@ -17,11 +17,11 @@ ht-degree: 5%
 
 # 時間限制{#time-constraint}
 
-「時 **間約束** 」活動可讓您延遲任務的執行或放棄任務。
+**時間約束**&#x200B;活動可讓您延遲任務的執行或放棄任務。
 
 輸入活動的標籤，並指定必須暫停工作流任務的時間範圍。
 
-當選 **[!UICONTROL Try again later if outside of execution period]** 擇該選項時，它可讓您在執行時間範圍外重新啟動任務。 如果您希望在暫停工作流操作後將其永久放棄，請取消選擇此選項。
+選擇&#x200B;**[!UICONTROL Try again later if outside of execution period]**&#x200B;選項後，它可讓您在執行時間範圍外重新啟動任務。 如果您希望在暫停工作流操作後將其永久放棄，請取消選擇此選項。
 
 ![](assets/s_user_scheduled_wait.png)
 
