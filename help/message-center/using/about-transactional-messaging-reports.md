@@ -17,7 +17,7 @@ ht-degree: 26%
 
 # 關於交易式傳訊報表{#about-transactional-messaging-reports}
 
-Adobe Campaign提供數種報表，可讓您控制執行例項的活動並順暢執行。 您可從控制實例的頁籤 **[!UICONTROL Reports]** 訪問這些消息中心報告。
+Adobe Campaign提供數種報表，可讓您控制執行例項的活動並順暢執行。 這些消息中心報告可從控制實例的&#x200B;**[!UICONTROL Reports]**&#x200B;頁籤訪問。
 
 ![](assets/messagecenter_reporting_002.png)
 
