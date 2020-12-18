@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # 編輯綱要{#edit-schema}
 
-資料可以轉換、標準化，並且如果需要，可以使用活動豐富工作流 **[!UICONTROL Edit schema]** 中。 它通常用於標準化資料結構：例如，您可以計算欄位或聚合的平均值，以更名輸出列或修改其內容。
+使用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活動，可以轉換、標準化資料，並在工作流程中豐富資料。 它通常用於標準化資料結構：例如，您可以計算欄位或聚合的平均值，以更名輸出列或修改其內容。
 
 此活動不會更改工作表中的資料，它只更改其模式，即資料的邏輯視圖。
 
 ![](assets/wf_manipulation_box.png)
 
-您也可以通過頁籤建立與其他工作表的聯 **[!UICONTROL Links]** 接。
+您也可以通過&#x200B;**[!UICONTROL Links]**&#x200B;頁籤建立與其他工作表的聯接。
 
 ![](assets/wf_manipulation_box_link_tab.png)
 
