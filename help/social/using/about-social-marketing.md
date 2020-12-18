@@ -17,7 +17,7 @@ ht-degree: 12%
 
 # 關於社交行銷{#about-social-marketing}
 
-管理 **社交網路** (Social Marketing)應用程式是專為管理社交網路而設計，可讓您透過Facebook和Twitter與客戶和潛在客戶互動。
+**管理社交網路**（社交行銷）應用程式可讓您透過Facebook和Twitter與客戶和潛在客戶互動。
 
 1. **傳送訊息**
 
