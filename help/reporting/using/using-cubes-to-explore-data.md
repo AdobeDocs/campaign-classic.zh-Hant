@@ -19,27 +19,27 @@ ht-degree: 2%
 
 行銷分析可讓您更輕鬆地建立報表，並透過立方體從資料庫識別和選取資料。 這可讓您：
 
-* 根據立方建立報表。 此過程在以下位置詳細說明： [探索報表中的資料](#exploring-the-data-in-a-report)。
-* 收集資料庫中的資料，並將其分組至清單中，例如識別並建立目標和傳送。 有關詳細資訊，請參閱 [構建目標人口](#building-a-target-population)。
-* 將透視表插入報表中，引用報表中的現有立方。 有關詳細資訊，請參 [閱將透視表插入報表](#inserting-a-pivot-table-into-a-report)。
+* 根據立方建立報表。 此過程在以下位置詳細說明：[探索報表中的資料](#exploring-the-data-in-a-report)。
+* 收集資料庫中的資料，並將其分組至清單中，例如識別並建立目標和傳送。 有關詳細資訊，請參閱[構建目標人口](#building-a-target-population)。
+* 將透視表插入報表中，引用報表中的現有立方。 有關詳細資訊，請參閱[將透視表插入報告](#inserting-a-pivot-table-into-a-report)。
 
 >[!NOTE]
 >
->建立或修改立方是必要的行銷分析。 For more on this, refer to [About cubes](../../reporting/using/about-cubes.md).
+>建立或修改立方是必要的行銷分析。 有關詳細資訊，請參閱[關於立方](../../reporting/using/about-cubes.md)。
 
-## 探索報表中的資料 {#exploring-the-data-in-a-report}
+## 探索報表{#exploring-the-data-in-a-report}中的資料
 
-### 步驟1 —— 基於立方建立報告 {#step-1---creating-a-report-based-on-a-cube}
+### 步驟1 —— 基於立方{#step-1---creating-a-report-based-on-a-cube}建立報告
 
-要建立基於立方的報表，請按一下 **[!UICONTROL Create]** 宇宙中的按 **[!UICONTROL Reports]** 鈕，然後選擇要使用的立方。
+要建立基於立方的報表，請按一下&#x200B;**[!UICONTROL Reports]**&#x200B;宇宙中的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選擇要使用的立方。
 
-此過程在以下位置詳細說明： [根據立方建立報表](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)。
+此過程在以下位置詳細說明：[建立以立方](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)為基礎的報表。
 
-### 步驟2 —— 選擇行和列 {#step-2---selecting-lines-and-columns}
+### 步驟2 —— 選擇行和列{#step-2---selecting-lines-and-columns}
 
 預設顯示顯示立方的前兩個維（在本例中為年齡和城市）。
 
-每個 **[!UICONTROL Add]** 軸上的按鈕都可讓您新增尺寸。
+每個軸上的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕可讓您新增尺寸。
 
 ![](assets/s_advuser_cube_in_report_03.png)
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
    參數取決於所選維的資料類型。
 
-   例如，對於日期，可以使用數個層級。 For more on this, refer to [Displaying measures](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   例如，對於日期，可以使用數個層級。 有關詳細資訊，請參閱[顯示度量](../../reporting/using/concepts-and-methodology.md#displaying-measures)。
 
    本例提供下列選項：
 
@@ -68,13 +68,13 @@ ht-degree: 2%
    * 以遞增(a-z, 0-9)或遞減(z-a, 9-0)順序顯示值。
    * 變更載入時要顯示的欄數(預設為：200)。
 
-1. 按一 **[!UICONTROL Ok]** 下以確認：維將添加到現有維。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認：維將添加到現有維。
 
-   表格上方的黃色橫幅顯示您已進行變更：按一下按 **[!UICONTROL Save]** 鈕以儲存它們。
+   表格上方的黃色橫幅顯示您已進行變更：按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕保存它們。
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### 步驟3 —— 設定顯示的測量 {#step-3---configuring-the-measures-to-display}
+### 步驟3 —— 將測量配置為顯示{#step-3---configuring-the-measures-to-display}
 
 在行和列就位後，指定要顯示的測量及其顯示模式。
 
@@ -84,7 +84,7 @@ ht-degree: 2%
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
-1. 使 **[!UICONTROL Use a measure]** 用按鈕可以選擇一個現有測量。
+1. 使用&#x200B;**[!UICONTROL Use a measure]**&#x200B;按鈕可以選擇一個現有測量。
 
    ![](assets/s_advuser_cube_in_report_08.png)
 
@@ -92,13 +92,13 @@ ht-degree: 2%
 
    ![](assets/s_advuser_cube_in_report_09.png)
 
-   也可透過標題中的圖示使 **[!UICONTROL Edit the configuration of the pivot table]** 用整體測量設定。
+   也可透過標題中的&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;圖示使用整體測量設定。
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   然後，您可以選擇是否顯示度量標籤。 有關詳細資訊，請參 [閱配置顯示](../../reporting/using/concepts-and-methodology.md#configuring-the-display)。
+   然後，您可以選擇是否顯示度量標籤。 有關詳細資訊，請參閱[配置顯示](../../reporting/using/concepts-and-methodology.md#configuring-the-display)。
 
-1. 有可能使用現有的措施來建立新的措施。 若要這麼做，請按一 **[!UICONTROL Create a measure]** 下並設定它。
+1. 有可能使用現有的措施來建立新的措施。 若要這麼做，請按一下&#x200B;**[!UICONTROL Create a measure]**&#x200B;並加以設定。
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -116,11 +116,11 @@ ht-degree: 2%
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   建立度量後，可以對其進行編輯，並根據需要更改其配置。 要執行此操作，請單 **[!UICONTROL Measures]** 擊按鈕，然後轉到要編輯的度量的頁籤。
+   建立度量後，可以對其進行編輯，並根據需要更改其配置。 要執行此操作，請按一下&#x200B;**[!UICONTROL Measures]**&#x200B;按鈕，然後轉到要編輯的度量的頁籤。
 
-   然後按一 **[!UICONTROL Edit the dynamic measure]** 下以存取設定功能表。
+   然後按一下&#x200B;**[!UICONTROL Edit the dynamic measure]**&#x200B;以存取設定功能表。
 
-## 建立目標人口 {#building-a-target-population}
+## 建立目標人口{#building-a-target-population}
 
 使用立方建立報表可讓您從表格收集資料並儲存在清單中。
 
@@ -128,23 +128,23 @@ ht-degree: 2%
 
 要將人口分組到清單中，請應用以下步驟：
 
-1. 按一下包含要收集之人口族群的儲存格以選取它們，然後按一下圖 **[!UICONTROL Add to cart]** 示。
+1. 按一下包含要收集之人口族群的儲存格以選取它們，然後按一下&#x200B;**[!UICONTROL Add to cart]**&#x200B;圖示。
 
    ![](assets/s_advuser_cube_in_report_config_02c.png)
 
    若要收集各種描述檔，請視需要多次這麼做
 
-1. 在執行匯 **[!UICONTROL Show cart]** 出之前，按一下按鈕以檢視其內容。
+1. 在執行匯出之前，按一下&#x200B;**[!UICONTROL Show cart]**&#x200B;按鈕以檢視其內容。
 
    ![](assets/s_advuser_cube_in_report_config_02d.png)
 
-1. 按 **[!UICONTROL Export]** 鈕可讓您將購物車中的項目群組至清單。
+1. **[!UICONTROL Export]**&#x200B;按鈕可讓您將購物車中的項目群組至清單。
 
    您需要指定清單的名稱和要執行的匯出類型。
 
    ![](assets/s-advuser_cube_in_report_config_02e.png)
 
-   按一 **[!UICONTROL Start]** 下以執行匯出。
+   按一下&#x200B;**[!UICONTROL Start]**&#x200B;以運行導出。
 
 1. 匯出完成後，訊息會確認其執行以及已處理的記錄數。
 
@@ -152,11 +152,11 @@ ht-degree: 2%
 
    您可以儲存購物車的內容或將其空白。
 
-   相關清單可透過宇宙存 **[!UICONTROL Profiles and targets]** 取。
+   相關清單通過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;宇宙訪問。
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## 將透視表插入報表 {#inserting-a-pivot-table-into-a-report}
+## 將透視表插入報表{#inserting-a-pivot-table-into-a-report}
 
 要建立表並瀏覽立方中的資料，請應用以下步驟：
 
@@ -164,9 +164,9 @@ ht-degree: 2%
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
-1. 在頁面 **[!UICONTROL Data]** 的頁籤中，選擇立方以處理它包含的維並顯示計算度量。
+1. 在頁的&#x200B;**[!UICONTROL Data]**&#x200B;頁籤中，選擇立方以處理它包含的維並顯示計算度量。
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
-   這可讓您建立要顯示的報表。 有關詳細資訊，請參閱 [步驟2 —— 選擇行和列](#step-2---selecting-lines-and-columns)。
+   這可讓您建立要顯示的報表。 有關詳細資訊，請參閱[步驟2 —— 選擇行和列](#step-2---selecting-lines-and-columns)。
 
