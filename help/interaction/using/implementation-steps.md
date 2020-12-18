@@ -17,16 +17,16 @@ ht-degree: 3%
 
 # 實施步驟{#implementation-steps}
 
-## 設定互動 {#configuring-interaction}
+## 配置交互{#configuring-interaction}
 
 >[!NOTE]
 >
->以下步驟應由管理員配置式 **執行** ，且僅在設計環境中執行。
+>以下步驟應由&#x200B;**管理員**&#x200B;配置式執行，且僅在設計環境中執行。
 
-1. 建立使用者設定檔。 For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
-1. 透過定位維度建立選件環境。 如需詳細資訊，請參閱「 [建立選件環境」](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
-1. 為每個環境建立類型學規則。 如需詳細資訊，請參閱建 [立和參考選件簡報規則](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)。
-1. 為每個環境建立選件空間並配置渲染功能。 如需詳細資訊，請參閱「建立選 [件空間」](../../interaction/using/creating-offer-spaces.md)。
+1. 建立使用者設定檔。 有關詳細資訊，請參閱[Operator profiles](../../interaction/using/operator-profiles.md)。
+1. 透過定位維度建立選件環境。 有關詳細資訊，請參閱[建立選件環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+1. 為每個環境建立類型學規則。 如需詳細資訊，請參閱[建立並參考選件簡報規則](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)。
+1. 為每個環境建立選件空間並配置渲染功能。 有關詳細資訊，請參閱[建立選件空間](../../interaction/using/creating-offer-spaces.md)。
 
    >[!NOTE]
    >
@@ -34,28 +34,28 @@ ht-degree: 3%
 
 1. 設定傳入互動的選件引擎，以呈現和更新一或多個選件。
 
-   有關入站通道，將詳細介紹 [各種整合模式](../../interaction/using/about-inbound-channels.md)。
+   [關於入站通道](../../interaction/using/about-inbound-channels.md)中詳細介紹了各種整合模式。
 
    >[!NOTE]
    >
    >在傳入Web頻道上建立空間時，您也必須在要顯示選件的網站上進行設定。
 
-## Managing the offer catalog {#managing-the-offer-catalog-}
+## 管理選件目錄{#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
->選件管理員應執行下列 **步驟**。
+>**選件管理員**&#x200B;應執行下列步驟。
 
-1. 在設計環境中建立選件類別。 如需詳細資訊，請參閱「建立選 [件類別」](../../interaction/using/creating-offer-categories.md)。
-1. 在設計環境中建立選件。 如需詳細資訊，請參閱「 [建立選件」](../../interaction/using/creating-an-offer.md)。
-1. 在一或多個空間上核准和發佈選件，以便在即時環境中提供給傳送管理員。 如需詳細資訊，請參閱核 [準和啟用選件](../../interaction/using/approving-and-activating-an-offer.md)。
+1. 在設計環境中建立選件類別。 如需詳細資訊，請參閱[建立選件類別](../../interaction/using/creating-offer-categories.md)。
+1. 在設計環境中建立選件。 如需詳細資訊，請參閱[建立選件](../../interaction/using/creating-an-offer.md)。
+1. 在一或多個空間上核准和發佈選件，以便在即時環境中提供給傳送管理員。 如需詳細資訊，請參閱[核准和啟用選件](../../interaction/using/approving-and-activating-an-offer.md)。
 
-## 使用選件目錄 {#using-the-offer-catalog-}
+## 使用選件目錄{#using-the-offer-catalog-}
 
 >[!NOTE]
 >
->下列步驟應由「傳送管理員」設 **定檔執行** 。 他們只能在即時環境中編輯選件。
+>**傳送管理員**&#x200B;描述檔應執行下列步驟。 他們只能在即時環境中編輯選件。
 
 1. 建立行銷活動.
-1. 參考促銷活動或促銷活動傳送中的選件。 有關詳情，請參閱關於 [出站渠道](../../interaction/using/about-outbound-channels.md)。
+1. 參考促銷活動或促銷活動傳送中的選件。 有關詳細資訊，請參閱[關於出站通道](../../interaction/using/about-outbound-channels.md)。
 
