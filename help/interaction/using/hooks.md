@@ -17,17 +17,17 @@ ht-degree: 1%
 
 # 鈎點{#hooks}
 
-「互動」中的勾點可讓您修改標 **準引擎行為**。
+「交互」中的掛接可讓您修改&#x200B;**標準引擎行為**。
 
-在Adobe **[!UICONTROL Target loading]** Campaign中 **[!UICONTROL Proposition post-processing]** ，會在選件空間中設定和勾選：
+**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;勾點是在Adobe Campaign中，在選件空間中設定：
 
 ![](assets/interaction_hooks_1.png)
 
-此掛 **[!UICONTROL Dynamic offer]** 接是以Adobe Campaign中的選件權重設定：
+**[!UICONTROL Dynamic offer]**&#x200B;勾選已設定Adobe Campaign中的選件權重：
 
 ![](assets/interaction_hooks_2.png)
 
-## 目標載入 {#target-loading}
+## 目標載入{#target-loading}
 
 此掛接可讓您使用外部系統的額外資料，豐富連絡人的描述檔（由現成可用的查詢載入）。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->xmlInteraction **** 參數同時包含呼叫資料和由現成可用查詢載入之連絡人的描述檔。
+>**xmlInteraction**&#x200B;參數同時包含呼叫資料和由現成可用查詢載入的連絡人描述檔。
 
 **範例:**
 
@@ -57,7 +57,7 @@ ht-degree: 1%
   interaction.@additionalData = additionalData;
 ```
 
-## 提案後處理 {#proposition-post-processing-}
+## 提案後處理{#proposition-post-processing-}
 
 此掛接可讓您檢查特定互動中合格命題的一致性和相容性。 它還可讓您定義新的計分或概率計算功能。
 
@@ -115,11 +115,11 @@ if( aProposition.length > 0 )
 return aReturnedProps;
 ```
 
-## 動態選件 {#dynamic-offer}
+## 動態選件{#dynamic-offer}
 
 此掛接可讓您呼叫外部引擎，以選取連結至選件的產品清單。 它是在選件中設定的符合資格規則，以及在分類規則應用程式之前。
 
-在此之前，整合商應使用產品上的附 **加資訊來擴展命題CompositionRcp** schema。 若要指定此資料的儲存位置， **[!UICONTROL Proposition being processed]** 空間標籤中會 **[!UICONTROL Storage]** 有連結
+在此之前，整合器應使用產品上的附加資訊擴展命題&#x200B;**CompositionRcp**&#x200B;模式。 要指定此資料的儲存位置，空間的&#x200B;**[!UICONTROL Storage]**&#x200B;頁籤中提供&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;連結
 
 ![](assets/interaction_hooks_3.png)
 
