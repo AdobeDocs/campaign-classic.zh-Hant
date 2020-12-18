@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Sharing assets with Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
+# 使用Adobe Experience Cloud共用資產{#sharing-assets-with-adobe-experience-cloud}
 
 Experience Cloud資產提供單一、集中的儲存庫，存放可供您跨解決方案共用的行銷資產。 資產是數位檔案、影像、視訊或音訊檔案。
 
@@ -26,9 +26,9 @@ Experience Cloud資產提供單一、集中的儲存庫，存放可供您跨解�
 
 在Adobe Campaign中編輯電子郵件傳送或登陸頁面時，您可以放置Adobe Experience Cloud資料庫中的資產。 視您使用的解決方案而定，這些資產可以儲存在Assets核心服務或Adobe Experience Manager Assets中。
 
-本檔案將詳述不同的可 [用程式庫](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html)。
+[本檔案](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html)中詳述了不同的可用庫。
 
-請參閱「 [設定資產存取權](../../integrations/using/configuring-access-to-assets.md) 」一節，以進一步瞭解連結至每個資料庫的詳細資訊。
+請參閱[設定對資產的存取權](../../integrations/using/configuring-access-to-assets.md)一節，以進一步瞭解連結至每個資料庫的詳細資訊。
 
 >[!NOTE]
 >
