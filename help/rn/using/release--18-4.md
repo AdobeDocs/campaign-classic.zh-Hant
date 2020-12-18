@@ -53,12 +53,12 @@ ht-degree: 7%
 * 電子郵件封存記錄已增強，因此檢查哪些電子郵件已透過密件副本封存成功傳送或失敗，變得更輕鬆更清楚。 (NEO-10675)
 * 修正導致在追蹤廣播中顯示負載平衡器IP而非客戶IP的問題。 (NEO-11295)
 * 修正使用FDA連線至PostgreSQL資料庫時，LATIN1編碼的錯誤。 (NEO-11299)
-* 修正使用傳送選項時發生 **[!UICONTROL Prepare the personalization data with a workflow]** 的問題。 (NEO-11047、NEO-11301)
+* 修正使用&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;傳送選項時發生的問題。 (NEO-11047、NEO-11301)
 * 修正導致傳送屬性覆寫錯誤的隨機問題。 (NEO-11015)
-* 修正在工作流程活動中使用計算欄位 **[!UICONTROL Survey answers]** 的問題。 (NEO-11382)
-* 修正在工作流程活動中使用儲存在XML中的資料 **[!UICONTROL Survey answers]** 的問題。 (NEO-10816)
+* 修正在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流程活動中使用計算欄位的問題。 (NEO-11382)
+* 修正在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流程活動中使用儲存在XML中的資料時的問題。 (NEO-10816)
 * 修正使用build 8935執行伺服器升級時的問題。
-* 修正當工作流程活動未完整設定時，在設定檔記錄檔中 **[!UICONTROL Survey answers]** 顯示無用錯誤的問題。
+* 修正當&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流程活動未完整設定時，在設定檔記錄檔中顯示無用錯誤的問題。
 * FDA Teradata:修正SQL表格中自動遞增欄位和索引的問題。
 
 ## 版本 18.4.3 - Build 8935{#release-18-4-3-build-8935}
@@ -71,7 +71,7 @@ ht-degree: 7%
 * 修正LINE傳送中影像連結個人化的問題。 (NEO-11077)
 * 修正ID序列產生機制無法正確運作的問題。 (NEO-11115)
 * 修正使用具有整數類型協調金鑰的自訂命名空間時，隱私權(GDPR)要求無法運作的問題。 (NEO-11123)
-* 修正在工作流程活動中使用選項時 **[!UICONTROL Distribution of values]** 可能發生 **[!UICONTROL Query]** 的錯誤。 (NEO-10958)
+* 修正在&#x200B;**[!UICONTROL Query]**&#x200B;工作流程活動中使用&#x200B;**[!UICONTROL Distribution of values]**&#x200B;選項時可能發生的錯誤。 (NEO-10958)
 * 修正從行銷實例同步選件空間至互動實例的問題。 (NEO-11162)
 * 改進配置期間長名稱索引的管理
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 **功能改善**
 
 * 修正Windows Server更新無法正常運作的問題。
-* 修正使用儲存在XML **[!UICONTROL Survey Result]** 中的資料時，活動中的問題。 報表顯示不正確。 (NEO-10816)
+* 修正使用XML中儲存的資料時，**[!UICONTROL Survey Result]**&#x200B;活動中的問題。 報表顯示不正確。 (NEO-10816)
 * 修正使用彈回郵件伺服器時，inMail程式可能會發生的效能問題。 (NEO-10641)
 * 修正在升級超過1000個結構描述時可能發生的資料庫升級問題。
 
@@ -101,7 +101,7 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> EU General Data Protection Regulation (GDPR)<br /> </td> 
+   <td> 歐盟通用資料保護規則(GDPR)<br /> </td> 
    <td> <p>GDPR是歐盟(EU)的新隱私權法，協調並現代化將於2018年5月25日生效的資料保護要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign中已提供的隱私權功能（包括同意管理、資料保留設定和使用者角色）外，我們也將利用這個機會，以資料處理者的身分，加入其他功能，以協助您做好準備，做為特定GDPR要求的資料掌控者：</p> 
     <ul> 
      <li> <p>存取權：允許資料主體接收資料掌控者所擷取的個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
@@ -129,22 +129,22 @@ ht-degree: 7%
 **功能改善**
 
 * **LINE通道——體系結構增強**:與Adobe Campaign中的所有其他通道一樣，LINE通道現在支援所有部署類型：代管、混合式和內部部署。
-* **序列自動產生**:ID產生機制已增強，以增加具有大量物件之促銷活動例項的期限。 For more information, refer to this [technote](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html).
+* **序列自動產生**:ID產生機制已增強，以增加具有大量物件之促銷活動例項的期限。如需詳細資訊，請參閱此[technote](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html)。
 
 **其他變更**
 
 * 使用命令行可以使用新模式導入包，允許循環從屬關係（對於大型包不建議使用）。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-8979)
 * 已改善Teradata中大量資料載入的效能，並修正無法顯示記錄檔中處理之資料正確值的問題。 (NEO-10429)
 * 從Audience Manager匯入觀眾現在可處理分割檔案。 以前，只有區段的最後一個檔案是由importSharedAudience技術工作流程匯入的。 (NEO-10156)
-* 在Windows上，促銷活動伺服器預設安裝路徑已變更。 啟動64位元版本設定時，預設安裝路徑現在為： **C:\Program Files\Adobe\Adobe Campaign Classic v7** ，而非 **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
+* 在Windows上，促銷活動伺服器預設安裝路徑已變更。 啟動64位元版本設定時，預設安裝路徑現在為：**C:\Program Files\Adobe\Adobe Campaign Classic v7**&#x200B;而非&#x200B;**C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * 預設MX規則已增強，加入更多網域並最佳化總處理能力。
 * 對部署精靈SOAP呼叫(xtk:serverOptions#SaveOptions)強制執行存取限制。
 * weka.jar過時的程式庫已移除，OpenSSL程式庫已更新，以進行安全性最佳化。
 * 改善帳單技術工作流程，以保護例項效能。
-* 管理員設定或重設任何運算子密碼的能力已恢復。 若要這麼做，請在運算子上按一下滑鼠右鍵，選 **[!UICONTROL Actions]** 取> **[!UICONTROL Reset password]** 並設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。 如需詳細資訊，請參閱[相關的文件](../../production/using/lost-password.md)，以瞭解詳情。
+* 管理員設定或重設任何運算子密碼的能力已恢復。 若要這麼做，請在運算子上按一下滑鼠右鍵，選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。 如需詳細資訊，請參閱[相關的文件](../../production/using/lost-password.md)，以瞭解詳情。
 * 為支援Adobe Target中的新多租賃功能，現在在設定選項和外部帳戶以與Target整合時，可將新的&quot;at_property&quot;參數新增至URL。 此參數的值可在Adobe Target中找到，且在執行對Target的呼叫時，Campaign會使用。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
 * 您現在可以指定在按一下Adobe Target所提供的影像時開啟的預設登陸頁面。 以前，按一下該影像會在建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
-* 在外 **部帳戶中新增「啟用SMPP追蹤** 」核取方塊，以強制追蹤輸出。 如需詳細資訊，請參閱[相關的文件](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)，以瞭解詳情。
+* 已在外部帳戶中添加「啟用SMPP跟蹤&#x200B;**」複選框以強制跟蹤輸出。**&#x200B;如需詳細資訊，請參閱[相關的文件](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)，以瞭解詳情。
 
 **技術演變**
 
@@ -185,7 +185,7 @@ urlEncode函式
 
 包導入新模式
 
-使用命令行可以使用新模式導入包，允許循環從屬關係（對於大型包不建議使用）。 保留現有功能。 對於具有循環依賴性的此類包，已將新標 **記-usejs** 添加到命令行包導入中。 執行時，它將像從介面執行包導入時一樣使用JSEngine。
+使用命令行可以使用新模式導入包，允許循環從屬關係（對於大型包不建議使用）。 保留現有功能。 對於具有循環依賴性的此類軟體包，命令行軟體包導入中已添加了新標籤&#x200B;**-usejs**。 執行時，它將像從介面執行包導入時一樣使用JSEngine。
 
 ```
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
@@ -196,14 +196,14 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * 修正從Adobe Campaign Standard複製傳送和追蹤記錄檔至Adobe Campaign Classic時的同步問題。 (NEO-10023)
 * 修正在快速載入作業失敗後，ETL工作流程繼續執行時，Teradata中錯誤和記錄表的處理問題。 現在，每次工作流恢復時，錯誤和日誌表都會正確刪除。 (NEO-10672)
 * 修正當安裝FDA封裝時，自動安裝Hive封裝（Hadoop需要）的Postupgrade問題。 (NEO-10592)
-* 修正將無效網域視為未定義錯誤 **的錯誤** 。 (NEO-10248)
+* 修正將無效網域視為&#x200B;**Not defined**&#x200B;錯誤的錯誤。 (NEO-10248)
 * 修正傳送Android推播傳送時，deliveryLogStats表格中重複記錄的問題。 (NEO-10234)
 * 修正可能導致某些條形碼格式無法由條形碼掃描器讀取的問題。 (NEO-10125)
 * 修正使用非ASCII字元時，「urlEncode」 JavaScript函式的問題。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-10123)
 * 修正在Teradata資料庫上執行包含sha256函式的查詢時的問題。 (NEO-10119)
 * 修正當使用非常大的SalesForce表時，SalesForce活動中可能發生的工作流記憶體錯誤。 (NEO-9900)
-* 修正使用FDA時，定 **位工作流程活動時** ,「產生補充」選項的問題。 (NEO-9878)
-* 修正當使用中間來源補充時， **行銷例項上可能無法更新「已處理** 」和「成功 **** 」度量的問題。 (NEO-9454)
+* 修正使用FDA時，定位工作流程活動中的&#x200B;**產生補體**&#x200B;選項問題。 (NEO-9878)
+* 修正當使用中間來源補充時，行銷例項上的&#x200B;**Processed**&#x200B;和&#x200B;**Success**&#x200B;量度無法更新的問題。 (NEO-9454)
 * 修正在平台中總共超過10k個選件時的互動非重新命題規則(NEO-9352)
 * 修正使用XML外部檔案時無法指定傳送目標的問題。 (NEO-9312)
 * 修正在選件上執行假設並更新提案狀態時，可能導致工作流程錯誤的問題。 (NEO-9304)
