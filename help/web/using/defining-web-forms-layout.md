@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # 定義網路表單版面{#defining-web-forms-layout}
 
-## 建立容器 {#creating-containers}
+## 建立容器{#creating-containers}
 
 容器可讓您結合頁面的欄位並設定其版面配置；來組織頁面中的元素。
 
-對於表單的每個頁面，容器都會透過工具列 **[!UICONTROL Containers]** 的按鈕建立。
+對於表單的每個頁面，容器都是透過工具列的&#x200B;**[!UICONTROL Containers]**&#x200B;按鈕建立。
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
@@ -31,17 +31,17 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
-標籤的位置會套用至階層中容器下方的元素。 如有必要，可以對每個元素進行過載。 新增或移除欄以變更版面。 請參 [閱定位頁面上的欄位](#positioning-the-fields-on-the-page)。
+標籤的位置會套用至階層中容器下方的元素。 如有必要，可以對每個元素進行過載。 新增或移除欄以變更版面。 請參閱[定位頁面上的欄位](#positioning-the-fields-on-the-page)。
 
 在上述範例中，演算方式如下：
 
 ![](assets/s_ncs_admin_survey_containers_std_ex.png)
 
-## 定位頁面上的欄位 {#positioning-the-fields-on-the-page}
+## 定位頁面{#positioning-the-fields-on-the-page}上的欄位
 
 Web表單的版面配置是在每個容器中依頁面定義，如有需要可能會超載。
 
-頁面會劃分為多欄：每個頁面都包含特定數目的欄。 頁面的每個欄位都佔有 **n個儲存格** 。 容器也佔據一定數目的欄，而容器所包含的欄位則佔據一定數目的儲存格。
+頁面會劃分為多欄：每個頁面都包含特定數目的欄。 頁面的每個欄位都佔有&#x200B;**n**&#x200B;儲存格。 容器也佔據一定數目的欄，而容器所包含的欄位則佔據一定數目的儲存格。
 
 依預設，頁面是建置在單一欄上，而每個元素會佔用一個儲存格。 這表示欄位會一併顯示在另一個下方，每個欄位會佔據一行，如下所示：
 
@@ -69,21 +69,21 @@ Web表單的版面配置是在每個容器中依頁面定義，如有需要可�
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-標題和清單各佔用一個儲存格（以及容器的整行），核取方塊延伸至兩個儲存格。 根據欄位類型，在標籤或標籤中定 **[!UICONTROL General]** 義屬於輸 **[!UICONTROL Advanced]** 入欄位的儲存格數：
+標題和清單各佔用一個儲存格（以及容器的整行），核取方塊延伸至兩個儲存格。 根據欄位類型，在&#x200B;**[!UICONTROL General]**&#x200B;頁籤或&#x200B;**[!UICONTROL Advanced]**&#x200B;頁籤中定義了屬於輸入欄位的單元格數：
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
-## 定義標籤的位置 {#defining-the-position-of-labels}
+## 定義標籤的位置{#defining-the-position-of-labels}
 
 您可以定義表單中欄位和標籤的對齊方式。
 
 依預設，頁面的欄位和其他內容的顯示參數會繼承自表單的一般設定、頁面的設定或父容器的設定（如果存在）。
 
-整個表單的全局顯示參數在表單屬性框中指定。 此標 **[!UICONTROL Rendering]** 簽可讓您選取標籤的位置。
+整個表單的全局顯示參數在表單屬性框中指定。 **[!UICONTROL Rendering]**&#x200B;標籤可讓您選取標籤的位置。
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-此位置可透過標籤，為每個頁面、每個容器和每個欄位超載 **[!UICONTROL Advanced]** 。
+此位置可透過&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤，為每個頁面、每個容器和每個欄位多載。
 
 支援下列對齊：
 
