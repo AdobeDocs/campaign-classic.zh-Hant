@@ -23,17 +23,17 @@ Adobe Campaign有許多模組。 有些會持續運作，而有些則偶爾啟�
 
 Adobe Campaign模組有三種類型：
 
-* 多實例模組：所有例項都會執行單一程式。 這適用於以下模組： **web**、syslogd **、** trackinglogd **和** watchdg ******** （來自config-default.xml檔案的活動）。
-* 單實例模組：每個實例運行一個進程。 這適用於以下模組： **mta** wfserver **,** inMail **,** sms **********`<instance>`** 和Stat活動（來自Config-Xml, xml檔案）。
-* 實用程式模組：這些模組偶爾會執行，以執行偶爾或經常執行的&#x200B;**作業**(清除 **、設定**、下載追蹤記錄等)。
+* 多實例模組：所有例項都會執行單一程式。 這適用於以下模組：**web**、**syslogd**、**trackinglogd**&#x200B;和&#x200B;**watchdog**（**config-default.xml**&#x200B;檔案中的活動）。
+* 單實例模組：每個實例運行一個進程。 這適用於以下模組：**mta**、**wfserver**、**inMail**、**sms**&#x200B;和&#x200B;**stat**（**config-`<instance>`.xml**&#x200B;檔案中的活動）。
+* 實用程式模組：這些模組偶爾會運行，以執行偶爾或反複的操作（**cleanup**、**config**、下載跟蹤日誌等）。
 
-使用安裝資料夾bin目錄中安 **裝的命令行工具nlserver****來執行模** 塊管理。
+使用安裝資料夾的&#x200B;**bin**&#x200B;目錄中安裝的命令行工具&#x200B;**nlserver**&#x200B;執行模組管理。
 
-nlserver工具的一般 **語法** 如下：
+**nlserver**&#x200B;工具的一般語法如下：
 
-**nlserver `<command>``<command arguments>`**
+**nlserver  `<command>``<command arguments>`**
 
-有關可用模組的清單，請使用 **nlserver** 命令。
+有關可用模組的清單，請使用&#x200B;**nlserver**&#x200B;命令。
 
 下表詳細介紹了可用模組：
 
@@ -78,7 +78,7 @@ nlserver工具的一般 **語法** 如下：
 >
 >最後一個模組：與應用伺服器連結的跟蹤和中繼模組，為了效能考慮，它通過本地機制通過動態庫整合到Apache或IIS Web伺服器中。 沒有Adobe Campaign命令可讓您啟動或管理此模組。 因此，您必須使用Web伺服器本身的命令。
 
-使用以下命令顯示模組用法及其參數的語法： **nlserver `[module]` -?**
+使用以下命令顯示模組用法及其參數的語法：**nlserver `[module]` -?**
 
 範例:
 
