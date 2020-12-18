@@ -30,11 +30,11 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->如需深入資訊， [請參閱Adobe Campaign硬體調整指南](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html) 。
+>如需深入資訊，請參閱[Adobe Campaign硬體調整指南](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)。
 
-## 平台配置 {#platform-configuration}
+## 平台配置{#platform-configuration}
 
-不當的配置可能會影響平台效能。 建議您檢查serverConf.xml檔案中的網路組態、平台傳遞能力選項 **以及MTA組態** 。
+不當的配置可能會影響平台效能。 建議您在&#x200B;**serverConf.xml**&#x200B;檔案中檢查網路組態、平台傳遞性選項以及MTA組態。
 
 ## 資料庫維護 {#database-maintenance}
 
@@ -60,9 +60,9 @@ ht-degree: 8%
 
 請檢查工作表的數量和大小。 當資料庫超過某一大小時，資料庫效能會受到影響。 這些表格是由工作流程和傳送所建立。 它們會保留在資料庫中，而工作流程和傳送則會處於作用中。 要限制工作表的大小，可執行以下操作：
 
-* 停止或刪除具有下列狀態的傳送： **[!UICONTROL Failed]** 、 **[!UICONTROL In progress]** 、 **[!UICONTROL Ready for delivery]** 或 **[!UICONTROL Paused]** 。
+* 停止或刪除具有下列狀態的傳送：**[!UICONTROL Failed]**、**[!UICONTROL In progress]**、**[!UICONTROL Ready for delivery]**&#x200B;或&#x200B;**[!UICONTROL Paused]**。
 * 停止或刪除因錯誤而暫停的工作流程，
-* 停止所有測試所用的工作流程，這些測試不包含活 **[!UICONTROL End]** 動，因此其狀態仍然 **[!UICONTROL Paused]** 。
+* 停止所有測試所用的工作流程，測試中不包含&#x200B;**[!UICONTROL End]**&#x200B;活動，因此其狀態仍為&#x200B;**[!UICONTROL Paused]**。
 
 >[!IMPORTANT]
 >
@@ -72,10 +72,10 @@ ht-degree: 8%
 
 視Adobe Campaign安裝設定而定，平台監控可使用兩種工具：
 
-* 例項生產頁面。 For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
-* netreport指令碼。 如需詳細資訊，請參閱「透過Adobe Campaign [指令碼自動監控」](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
+* 例項生產頁面。 有關詳細資訊，請參閱[手動監控](../../production/using/monitoring-processes.md#manual-monitoring)。
+* netreport指令碼。 如需詳細資訊，請參閱[透過Adobe Campaign指令碼自動監控](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
 
-## Specifics {#specifics}
+## 具體說明{#specifics}
 
 可能需要執行即時診斷以找出問題的原因。 首先檢查進程和平台日誌檔案，然後在重新建立問題時監視資料庫活動。 請特別注意：
 
