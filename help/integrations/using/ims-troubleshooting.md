@@ -17,11 +17,11 @@ ht-degree: 1%
 
 # IMS 疑難排解{#ims-troubleshooting}
 
-下列疑難排解秘訣可 **協助內部部署** ，客戶解決使用IMS整合時最常發生的問題。 若為 **代管** ，請聯絡Adobe。
+下列疑難排解提示將協助&#x200B;**on-premise**&#x200B;客戶解決使用IMS整合時最常見的問題。 若是&#x200B;**代管**&#x200B;的客戶，請聯絡Adobe。
 
 **外部帳戶**
 
-只有一個外 **部帳戶** ，其設定如下：
+只有&#x200B;**一個**&#x200B;外部帳戶具有以下設定：
 
 * **內部名稱**:Adobe_Marketing_Cloud
 * **類型**:Adobe Marketing Cloud
@@ -30,20 +30,20 @@ ht-degree: 1%
 
 **產品內容**
 
-如果外部帳戶有「產 **品內容** 」欄位，請檢查其值是否設為： **dma_campaign_classic**
+如果外部帳戶有&#x200B;**產品上下文**&#x200B;欄位，請檢查其值是否設定為：**dma_campaign_classic**
 
 請確定您的產品內容與Campaign和Experience Cloud相同。
 
-例如，如果未顯 **示「產品內容** 」，則預設產品內容應為 **dma_campaign** （在Campaign和Experience Cloud中）。 如果出 **現「產品內容** 」欄位，則預設產品內容應為 **dma_campaign_classic** （在Campaign和Experience Cloud中）。
+例如，如果未顯示&#x200B;**產品內容**，則Campaign和Experience Cloud中的預設產品內容應為&#x200B;**dma_campaign**。 如果出現「**產品內容**」欄位，則Campaign和Experience Cloud中的預設產品內容應為&#x200B;**dma_campaign_classic**。
 
 **[!UICONTROL IMS Server URL]**
 
-在Campaign **Adobe Marketing Cloud外部帳戶中，檢查** 是 **[!UICONTROL IMS Server URL]** adobeid-na1.services.adobe.com或 [ims-na1.adobelogin.com](https://adobeid-na1.services.adobe.com/)[](http://ims-na1.adobelogin.com/)。 請確定舞台和生產執行個體都指向相同的IMS生產端點。
+在Campaign **Adobe Marketing Cloud**&#x200B;外部帳戶中，檢查&#x200B;**[!UICONTROL IMS Server URL]**&#x200B;是[adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/)還是[ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/)。 請確定舞台和生產執行個體都指向相同的IMS生產端點。
 
 **關聯遮色片**
 
 * 檢查嘗試登入的使用者是否屬於Enterprise Dashboard中的運算元群組。
-* 在Enterprise Dashboard **[!UICONTROL Association Mask]** 中，檢查使用者的運算子群組名稱前置詞。
+* 檢查&#x200B;**[!UICONTROL Association Mask]**&#x200B;是Enterprise Dashboard中使用者運算子群組名稱的首碼。
 * 請確定沒有空格和拼字錯誤。
 * 檢查「促銷活動」中運算元群組的名稱是否未變更，並遵循下列語法：
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 **回呼URL**
 
-回 **呼URL** 應新增至allowlist，並以&quot;https://&quot;開頭。 檢查回 **呼URL** 是否連結至對應的例項。 例如，生產例項應重新導向至生產URL。
+**回呼URL**&#x200B;應新增至allowlist，並以&quot;https://&quot;開頭。 檢查&#x200B;**回呼URL**&#x200B;是否連結至對應的例項。 例如，生產例項應重新導向至生產URL。
 
 **用戶端ID與密碼**
 
@@ -73,11 +73,11 @@ ht-degree: 1%
 
 * 使用者已重新導向至adobe.com頁面：
 
-   這個問題出了問題 **[!UICONTROL Callback URL]**。 請參閱上述步驟以檢查設 **[!UICONTROL Callback URL]** 定。
+   **[!UICONTROL Callback URL]**&#x200B;有問題。 請參閱上述步驟以檢查&#x200B;**[!UICONTROL Callback URL]**&#x200B;配置。
 
 * 訊息「登入沒有任何與運算式相符的權限」:
 
-   請參閱上述步驟，以檢查 **[!UICONTROL Association Mask]** 和運算元群組設定。
+   請參閱上述步驟，檢查&#x200B;**[!UICONTROL Association Mask]**&#x200B;和運算子群組組態。
 
 * 使用者無法存取Adobe ID登入頁面：
 
