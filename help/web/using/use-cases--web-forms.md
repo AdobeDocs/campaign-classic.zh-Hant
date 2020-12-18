@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 使用案例：網路表單{#use-cases-web-forms}
 
-## 建立包含雙重選擇加入的訂閱表單 {#create-a-subscription--form-with-double-opt-in}
+## 建立包含雙重選擇加入{#create-a-subscription--form-with-double-opt-in}的訂閱表單
 
 當您提供資訊服務時，收件者必須訂閱才能接收所有連結的通訊資料。 為避免不當通訊並確保收件者有意訂閱，我們建議傳送訂閱確認要求以建立雙重選擇加入。 只有當使用者按一下確認訊息中包含的連結時，訂閱才會生效。
 
@@ -26,9 +26,9 @@ ht-degree: 1%
 1. 在網站上建立電子報訂閱表單，其中包含訂閱暫時服務的核取方塊。 本服務可讓您傳送訂閱確認訊息。
 1. 使用連結至Web表單的傳送範本建立訂閱確認傳送。 它包含確認連結，可呼叫電子報訂閱的表單，並顯示訂閱核准訊息。
 
-### 步驟1 —— 建立資訊服務 {#step-1---creating-information-services}
+### 步驟1 —— 建立資訊服務{#step-1---creating-information-services}
 
-1. 建立要提供給收件者的電子報訂閱服務。 如需如何建立電子報的詳細資訊，請參閱 [本節](../../delivery/using/about-services-and-subscriptions.md)。
+1. 建立要提供給收件者的電子報訂閱服務。 有關如何建立電子報的詳細資訊，請參閱[本節](../../delivery/using/about-services-and-subscriptions.md)。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -36,21 +36,21 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### 步驟2 —— 建立確認消息 {#step-2---creating-confirmation-messages}
+### 步驟2 —— 建立確認消息{#step-2---creating-confirmation-messages}
 
 確認消息通過臨時服務級別引用的專用傳送模板發送。
 
-1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. 在&#x200B;**[!UICONTROL Explorer]**&#x200B;中，選擇&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**。
 1. 建立傳送訂閱確認訊息的傳送範本。
-1. 按一下 **[!UICONTROL To]** 中的按鈕， **[!UICONTROL Email parameters]** 將傳送範本與「訂閱」目標對應（而非收件者）建立關聯。
+1. 按一下&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;按鈕，將傳送範本與「訂閱」目標對應（而非「收件者」）建立關聯。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. 由於此遞送的收件者尚未確認其批准，因此他們仍在資料庫拒絕清單中。 若要接收此通訊，您必鬚根據此範本授權傳送至密文清單上的目標收件者。
 
-   若要這麼做，請按一下標 **[!UICONTROL Exclusions]** 簽。
+   要執行此操作，請按一下&#x200B;**[!UICONTROL Exclusions]**&#x200B;頁籤。
 
-1. 按一下連 **[!UICONTROL Edit...]** 結並取消勾選 **[!UICONTROL Exclude recipients who no longer want to be contacted]** 選項。
+1. 按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;連結並取消選中&#x200B;**[!UICONTROL Exclude recipients who no longer want to be contacted]**&#x200B;選項。
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### 步驟3 —— 建立訂閱表單 {#step-3---creating-the-subscription-form}
+### 步驟3 —— 建立訂閱表單{#step-3---creating-the-subscription-form}
 
 Web表格可讓收件者訂閱和訂閱確認。
 
@@ -80,31 +80,31 @@ Web表單工作流程將包含下列活動：
 
 要執行此操作，請遵循下列步驟：
 
-1. 建立Web表格並選擇範本 **[!UICONTROL Newsletter subscription (subNewsletter)]**。
+1. 建立Web表單並選擇模板&#x200B;**[!UICONTROL Newsletter subscription (subNewsletter)]**。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. 在標籤 **[!UICONTROL Edit]** 中，我們需要設定現有的工作流程，因為我們要新增確認訊息給想要訂閱的收件者。
+1. 在&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，我們需要配置現有的工作流，因為我們要向要訂閱的收件人添加確認消息。
 
-   若要這麼做，請按兩下方 **[!UICONTROL Preloading]** 塊並依下列設定。
+   若要這麼做，請按兩下&#x200B;**[!UICONTROL Preloading]**&#x200B;方塊，並依如下方式加以設定。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    這表示如果使用者透過確認訊息中的連結存取此表單，則會載入其描述檔資訊。 如果他們透過網站的頁面存取Web表格，則不會載入任何資訊。
 
-1. 新增活 **[!UICONTROL Test]** 動至工作流程。
+1. 將&#x200B;**[!UICONTROL Test]**&#x200B;活動新增至您的工作流程。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   活動 **[!UICONTROL Test]** 可能與收件者電子郵件有關。 在這種情況下，請按如下方式配置：
+   **[!UICONTROL Test]**&#x200B;活動可能與收件者電子郵件有關。 在這種情況下，請按如下方式配置：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
-1. 將兩個活 **[!UICONTROL Script]** 動新增至工作流程。
+1. 將兩個&#x200B;**[!UICONTROL Script]**&#x200B;活動新增至您的工作流程。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一個活 **[!UICONTROL Script]** 動會在電子報上新增收件者，直到他們確認訂閱電子報為止。 其內容必須如下：
+   前一個&#x200B;**[!UICONTROL Script]**&#x200B;活動會將收件者新增至電子報，直到他們確認訂閱電子報為止。 其內容必須如下：
 
    ```
    ctx.recipient.@blackList=1
@@ -112,7 +112,7 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   第二個活 **[!UICONTROL Script]** 動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將允許您將收件者從臨時資料夾傳輸到另一個資料夾，並在他們確認訂閱後立即與現有配置檔案協調。
+   第二個&#x200B;**[!UICONTROL Script]**&#x200B;活動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將允許您將收件者從臨時資料夾傳輸到另一個資料夾，並在他們確認訂閱後立即與現有配置檔案協調。
 
    ```
    ctx.recipient.@blackList=0
@@ -123,15 +123,15 @@ Web表單工作流程將包含下列活動：
 
    >[!NOTE]
    >
-   >也 **[!UICONTROL Temp]** 可以使用工作流定期清除分區。
+   >**[!UICONTROL Temp]**&#x200B;分區也可以使用工作流定期清除。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. 連按兩下活 **[!UICONTROL Subscription]** 動以個人化訂閱表單，並將核取方塊連結至先前建立的臨時服務。
+1. 連按兩下&#x200B;**[!UICONTROL Subscription]**&#x200B;活動，以個人化訂閱表單並連結核取方塊與先前建立的臨時服務。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
-1. 設定活 **[!UICONTROL Storage]** 動以儲存在表單頁面中輸入的資訊。
+1. 設定&#x200B;**[!UICONTROL Storage]**&#x200B;活動以儲存在表單頁面中輸入的資訊。
 
    此活動可讓您在專用的臨時資料夾中建立收件人配置檔案，以便將其與資料庫中的配置檔案分開，以便將通信發送到這些配置檔案。
 
@@ -141,9 +141,9 @@ Web表單工作流程將包含下列活動：
    >
    >您不能定義任何協調選項。
 
-1. 新增兩 **[!UICONTROL End]** 個活動以顯示使用者的訊息。
+1. 新增兩個&#x200B;**[!UICONTROL End]**&#x200B;活動，以顯示使用者的訊息。
 
-   訂閱完 **[!UICONTROL End]** 成後，第二個方塊會顯示確認訊息。
+   訂閱完成後，第二個&#x200B;**[!UICONTROL End]**&#x200B;方塊會顯示確認訊息。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
@@ -151,7 +151,7 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
-### 步驟4 —— 發佈和測試表單 {#step-4---publishing-and-testing-the-form}
+### 步驟4 —— 發佈和測試表單{#step-4---publishing-and-testing-the-form}
 
 您現在可以發佈表格，讓使用者可以存取。
 
@@ -167,7 +167,7 @@ Web表單工作流程將包含下列活動：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   使用者會新增至資料夾中的Adobe Campaign資料庫，其個人檔案會 **[!UICONTROL Temp]** 列在密文清單中，直到他們以電子郵件確認訂閱為止。
+   使用者會新增至&#x200B;**[!UICONTROL Temp]**&#x200B;資料夾中的Adobe Campaign資料庫，而且其設定檔會列在登入清單中，直到使用者以電子郵件確認訂閱為止。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ Web表單工作流程將包含下列活動：
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
-## 根據所選值顯示不同的選項 {#displaying-different-options-depending-on-the-selected-values}
+## 根據所選值{#displaying-different-options-depending-on-the-selected-values}顯示不同的選項
 
 在下列範例中，系統會要求使用者選擇車輛類型。 您可以根據所選類型顯示可用的車輛類別。 這表示右側欄中顯示的項目取決於使用者的選擇：
 
