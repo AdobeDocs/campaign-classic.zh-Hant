@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # 新增欄位精靈{#new-field-wizard}
 
-可通過訪問的 **[!UICONTROL Tools > Advanced > Add new fields]** 嚮導允許您向資料庫中的表添加一個或多個欄位。
+可通過&#x200B;**[!UICONTROL Tools > Advanced > Add new fields]**&#x200B;訪問的嚮導允許您向資料庫中的表添加一個或多個欄位。
 
 驗證嚮導將更新要擴展的表的擴展模式，並啟動SQL指令碼以修改資料庫的物理結構。
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. 若要確認變更，請按一下 **[!UICONTROL Finish]** 按鈕。
+1. 要確認更改，請按一下&#x200B;**[!UICONTROL Finish]**&#x200B;按鈕。
 
 在我們的示例中，名為&quot;cus:recipient&quot;的擴展檔案將自動建立並執行相應的SQL指令碼：
 
@@ -49,5 +49,5 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->依預設，新增的欄位會以屬性 **user** （值為&quot;true&quot;）宣告。 這可讓您使用「treeEdit」類型的控制項（請參閱「輸入表單」），在擴充架構的輸入表單中顯示和編輯欄位。
+>依預設，新增的欄位會以屬性&#x200B;**user**&#x200B;宣告（值為&quot;true&quot;）。 這可讓您使用「treeEdit」類型的控制項（請參閱「輸入表單」），在擴充架構的輸入表單中顯示和編輯欄位。
 
