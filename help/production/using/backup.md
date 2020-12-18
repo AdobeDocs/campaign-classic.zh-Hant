@@ -26,11 +26,11 @@ ht-degree: 2%
 
 大部分資料都在資料庫中。 這佔要備份資訊的99%。
 
-## 物理檔案 {#physical-files}
+## 物理檔案{#physical-files}
 
 檔案可分為幾類：
 
-* 配置檔案，位 **於nl6/conf**
+* 配置檔案，位於&#x200B;**nl6/conf**
 
    這些功能可讓您迅速重新設定Adobe Campaign。
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
    這些位於追蹤（通常稱為「正面」）伺服器上，並包含所有先前的促銷活動重新導向。 舊版促銷活動仍會使用它們。
 
-* 日誌檔案： **nl6/var/`<instancename>`log**
+* 日誌檔案：**nl6/var/`<instancename>`/log**
 
    這些可用於跟蹤問題。
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 * nl6/conf
 
-* nl6/var/`<instanceName>`/redir（用於每個實例）
+* nl6/var/`<instanceName>`/redir（針對每個實例）
 
 * nl6/var/`<instanceName>`/log（可選）
 
