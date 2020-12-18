@@ -25,61 +25,61 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->只有內 **部識** 別碼才能執行這些操作。 For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>只有&#x200B;**internal**&#x200B;標識符可以執行這些操作。 有關詳細資訊，請參閱[內部標識符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
 當Adobe Campaign主控台啟動時，您會存取登入頁面。
 
 要建立新實例，請執行以下步驟：
 
-1. 按一下憑據欄位右上角的連結以訪問連接配置窗口。 此連結可以是現 **[!UICONTROL New...]** 有的例項名稱。
+1. 按一下憑據欄位右上角的連結以訪問連接配置窗口。 此連結可以是&#x200B;**[!UICONTROL New...]**&#x200B;或現有的例項名稱。
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. 按一 **[!UICONTROL Add > Connection]** 下並輸入Adobe Campaign應用程式伺服器的標籤和URL。
+1. 按一下&#x200B;**[!UICONTROL Add > Connection]**，然後輸入Adobe Campaign應用程式伺服器的標籤和URL。
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
 1. 指定透過URL連線至Adobe Campaign應用程式伺服器。 使用DNS或電腦的別名或您的IP地址。
 
-   例如，您可以使用類 [`https://<machine>.<domain>.com`](https://myserver.adobe.com) 型URL。
+   例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)類型URL。
 
    >[!CAUTION]
    >
-   >對於連線URL，僅使用下列字元： `[a-z]`、 `[A-Z]`、 `[0-9]` 和破折號(-)或完全停止。
+   >對於連線URL，僅使用下列字元：`[a-z]`、`[A-Z]`、`[0-9]`和破折號(-)或完全停止。
 
-1. 按一 **[!UICONTROL Ok]** 下以確認設定：您現在可以從例項建立程式開始。
-1. 在視 **[!UICONTROL Connection settings]** 窗中輸入 **內部登入** 及其密碼，以連線至Adobe Campaign應用程式伺服器。 連接後，您將訪問實例建立嚮導以聲明新實例
-1. 在欄位 **[!UICONTROL Name]** 中，輸入實 **例名稱**。 由於此名稱用於生成配置檔案 **config-`<instance>`.xml** ，並用於命令行參數中來標識實例，因此請確保選擇一個不帶特殊字元的短名稱。 例如： **電子行銷**。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認設定：您現在可以從例項建立程式開始。
+1. 在&#x200B;**[!UICONTROL Connection settings]**&#x200B;視窗中，輸入&#x200B;**internal**&#x200B;登入名稱及其密碼，以連線至Adobe Campaign應用程式伺服器。 連接後，您將訪問實例建立嚮導以聲明新實例
+1. 在&#x200B;**[!UICONTROL Name]**&#x200B;欄位中，輸入&#x200B;**例項名稱**。 由於此名稱用於生成配置檔案&#x200B;**config-`<instance>`.xml**，並用於命令行參數中以識別實例，請確保選擇一個不帶特殊字元的短名稱。 例如：**eMarketing**。
 
    ![](assets/s_ncs_install_create_instance.png)
 
    新增至網域名稱的例項名稱不得超過40個字元。 這可讓您限制「Message-ID」標題的大小，並防止訊息被視為垃圾訊息，尤其是SpamAssassin等工具。
 
-1. 在字 **[!UICONTROL DNS masks]** 段中，輸 **入應附加實例的DNS掩碼清單** 。 Adobe Campaign伺服器會使用出現在HTTP請求中的主機名稱來判斷要觸及哪個例項。
+1. 在&#x200B;**[!UICONTROL DNS masks]**&#x200B;欄位中，輸入應將實例附加到的&#x200B;**DNS掩碼清單。** Adobe Campaign伺服器會使用出現在HTTP請求中的主機名稱來判斷要觸及哪個例項。
 
-   主機名稱包含在字串https:// **和伺服器位址的第** 一個斜線字元 **** /之間。
+   主機名包含在伺服器地址的字串&#x200B;**https://**&#x200B;和第一個斜線字元&#x200B;**/**&#x200B;之間。
 
    您可以定義以逗號分隔的值清單。
 
-   ? 和*字元可用作萬用字元，以取代一或多個字元（DNS、連接埠等）。 例如， **demo*** value將與&quot;https://demo&quot;搭配使用，就像與&quot;https://demo:8080&quot;甚至&quot;https://demo2&quot;搭配使用一樣。
+   ? 和*字元可用作萬用字元，以取代一或多個字元（DNS、連接埠等）。 例如，**demo***&#x200B;值將與&quot;https://demo&quot;搭配使用，就像與&quot;https://demo:8080&quot;甚至&quot;https://demo2&quot;一樣。
 
-   使用的名稱必須在您的DNS中定義。 您還可以通知Windows中 **c:/windows/system32/drivers/etc/hosts** file和Linux中 **/etc/hosts** file中的DNS名稱與IP地址之間的對應。 因此，您必須修改連接設定以使用此DNS名稱，才能連接到所選實例。
+   使用的名稱必須在您的DNS中定義。 您還可以在Windows的&#x200B;**c:/windows/system32/drivers/etc/hosts**&#x200B;檔案和Linux的&#x200B;**/etc/hosts**&#x200B;檔案中通知DNS名稱與IP地址的對應。 因此，您必須修改連接設定以使用此DNS名稱，才能連接到所選實例。
 
    伺服器必須由此名稱來識別，尤其是在電子郵件中上傳影像時。
 
    此外，伺服器必須能夠通過此名稱和環回地址(127.0.0.1)連接到自己，尤其是允許以PDF格式導出報告。
 
-1. 在下拉 **[!UICONTROL Language]** 式清單中，選取例 **項語言**:英文（美國）、英文（英國）、法文或日文。
+1. 在&#x200B;**[!UICONTROL Language]**&#x200B;下拉式清單中，選取&#x200B;**例項語言**:英文（美國）、英文（英國）、法文或日文。
 
-   本節將說明美國英文與英國英文之 [差異](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
+   本節[說明美國英文與英國英文的差異。](../../platform/using/adobe-campaign-workspace.md#date-and-time)
 
    >[!CAUTION]
    >
    >此步驟後無法修改實例語言。 Adobe Campaign實例不是多語言版本：您無法將介面從語言切換為其他語言。
 
-1. 按一下 **[!UICONTROL Ok]** 確認實例聲明。 註銷並重新登錄以聲明資料庫。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認實例聲明。 註銷並重新登錄以聲明資料庫。
 
    >[!NOTE]
    >
-   >可從命令行建立實例。 For more on this, refer to [Command lines](../../installation/using/command-lines.md).
+   >可從命令行建立實例。 有關詳細資訊，請參閱[命令行](../../installation/using/command-lines.md)。
 
