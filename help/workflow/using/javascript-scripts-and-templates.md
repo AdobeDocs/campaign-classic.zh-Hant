@@ -28,15 +28,15 @@ ht-degree: 2%
 
    ![](assets/script-button.png)
 
-## 公開的物件 {#objects-exposed}
+## 公開的{#objects-exposed}對象
 
 在工作流程的上下文中執行的JavaScripts會存取一系列額外的全域物件。
 
-* **例項**:表示要執行的工作流。 此對象的模式為 **xtk:workflow**。
-* **任務**:表示正在執行的任務。 此對象的模式為 **xtk:workflowTask**。
-* **事件**:表示激活要執行的任務的事件。 此物件的架構為 **xtk:workflowEvent**。 此對象未初始化為 **AND-join** type活動，這些活動已從多個轉變中激活。
-* **事件**:表示激活當前任務的事件清單。 此物件的架構為 **xtk:workflowEvent**。 此表通常包含一個元素，但可能包含 **AND-join** type活動的數個元素，這些活動已基於多個轉變而激活。
-* **活動**:表示正在執行的任務的模型。 此對象的模式取決於活動類型。 此對象可由初始化指令碼修改，在其它指令碼中，修改具有不可確定的效果。
+* **例項**:表示要執行的工作流。此對象的模式為&#x200B;**xtk:workflow**。
+* **任務**:表示正在執行的任務。此對象的模式為&#x200B;**xtk:workflowTask**。
+* **事件**:表示激活要執行的任務的事件。此物件的架構為&#x200B;**xtk:workflowEvent**。 此對象未初始化為&#x200B;**AND-join**&#x200B;類型活動，這些活動已從多個轉變中激活。
+* **事件**:表示激活當前任務的事件清單。此物件的架構為&#x200B;**xtk:workflowEvent**。 此表通常包含一個元素，但可包含多個&#x200B;**AND-join**&#x200B;類型活動，這些活動已基於多個轉變而激活。
+* **活動**:表示正在執行的任務的模型。此對象的模式取決於活動類型。 此對象可由初始化指令碼修改，在其它指令碼中，修改具有不可確定的效果。
 
 按一下指令碼工具列右側的按鈕，即可在下拉式清單中檢視這些物件的可用屬性。
 
@@ -48,50 +48,50 @@ ht-degree: 2%
 
 **範例**
 
-在此範例和下列範例中，建立包含 **JavaScript程式碼活動和** End **** 活動的工作流程，如下圖所示。
+在此範例和下列範例中，建立包含&#x200B;**JavaScript程式碼**&#x200B;活動和&#x200B;**End**&#x200B;活動的工作流程，如下圖所示。
 
 ![](assets/script-1.png)
 
-連按兩下 **JavaScript程式碼活動** ，並插入下列指令碼：
+連按兩下&#x200B;**JavaScript程式碼**&#x200B;活動並插入下列指令碼：
 
 ```
 logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-函式 **[!UICONTROL logInfo(message)]** 將消息插入日誌中。
+**[!UICONTROL logInfo(message)]**&#x200B;函式將消息插入日誌中。
 
-按一 **[!UICONTROL OK]** 下以關閉建立精靈，然後使用位於工作流程清單右上方的動作按鈕來啟動工作流程。 執行結束時，請查閱記錄檔。 您應該會看到與指令碼對應的兩則訊息：一個顯示工作流的標籤，另一個顯示指令碼激活的日期。
+按一下&#x200B;**[!UICONTROL OK]**&#x200B;關閉建立嚮導，然後使用位於工作流清單右上方的操作按鈕啟動工作流。 執行結束時，請查閱記錄檔。 您應該會看到與指令碼對應的兩則訊息：一個顯示工作流的標籤，另一個顯示指令碼激活的日期。
 
-## 變數 {#variables}
+## 變數{#variables}
 
-變數是對象和對象的 **[!UICONTROL instance]**&#x200B;自由 **[!UICONTROL task]** 屬 **[!UICONTROL event]** 性。 為這些變數授權的JavaScript類型 **[!UICONTROL string]**&#x200B;為 **[!UICONTROL number]** 和 **[!UICONTROL Date]**。
+變數是&#x200B;**[!UICONTROL instance]**、**[!UICONTROL task]**&#x200B;和&#x200B;**[!UICONTROL event]**&#x200B;對象的自由屬性。 授權這些變數的JavaScript類型有&#x200B;**[!UICONTROL string]**、**[!UICONTROL number]**&#x200B;和&#x200B;**[!UICONTROL Date]**。
 
-### 例項變數 {#instance-variables}
+### 例項變數{#instance-variables}
 
 例項變數(**[!UICONTROL instance.vars.xxx]**)可與全域變數比較。 所有活動都會共用。
 
-### 任務變數 {#task-variables}
+### 任務變數{#task-variables}
 
-任務變數(**[!UICONTROL task.vars.xxx]**)可與局部變數相比。 它們僅用於當前任務。 這些變數會由持續性活動使用，以保留資料，有時也會用來在相同活動的不同指令碼之間交換資料。
+任務變數(**[!UICONTROL task.vars.xxx]**)與本地變數相當。 它們僅用於當前任務。 這些變數會由持續性活動使用，以保留資料，有時也會用來在相同活動的不同指令碼之間交換資料。
 
-### 事件變數 {#event-variables}
+### 事件變數{#event-variables}
 
-事件變數(**[!UICONTROL vars.xxx]**)可讓工作流程程式的基本任務之間交換資料。 這些變數由啟動進行中任務的任務傳遞。 可以修改它們並定義新的。 然後，會將它們傳遞至下列活動。
+事件變數(**[!UICONTROL vars.xxx]**)可在工作流進程的基本任務之間交換資料。 這些變數由啟動進行中任務的任務傳遞。 可以修改它們並定義新的。 然後，會將它們傳遞至下列活動。
 
 >[!CAUTION]
 >
->對於 [AND-join](../../workflow/using/and-join.md) type活動，會合併變數，但如果同一個變數定義了兩次，則會發生衝突，且值仍未確定。
+>對於[AND-join](../../workflow/using/and-join.md)類型活動，會合併變數，但如果同一個變數定義了兩次，則會發生衝突，且值仍未確定。
 
 事件是最常使用的變數，應優先使用它們來取代例項變數。
 
-某些事件變數會由各種活動修改或讀取。 這些都是字串類型變數。 例如，匯出會以剛 **[!UICONTROL vars.filename]** 匯出的檔案的完整名稱來設定變數。 所有這些讀取或修改的變數都記錄在活 [動的](../../workflow/using/about-activities.md)About活動中， **活動的Input參數****** 和Output參數中。
+某些事件變數會由各種活動修改或讀取。 這些都是字串類型變數。 例如，匯出會設定&#x200B;**[!UICONTROL vars.filename]**&#x200B;變數，其名稱為剛匯出的檔案。 所有這些讀取或修改的變數都記錄在[關於活動](../../workflow/using/about-activities.md)中，位於活動的&#x200B;**輸入參數**&#x200B;和&#x200B;**輸出參數**&#x200B;節中。
 
 ### 使用案例 {#example}
 
 >[!NOTE]
 >
->本節提供其他工作區使 [用案例](../../workflow/using/about-workflow-use-cases.md)。
+>[本節](../../workflow/using/about-workflow-use-cases.md)中提供了其他工作流使用案例。
 
 **範例1**
 
@@ -101,7 +101,7 @@ logInfo("Start date: " + task.creationDate)
 
 1. 新增及設定JavaScript程式碼活動以定義例項變數。
 
-   For example: `instance.vars.segmentpercent = 10;`
+   例如：`instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 
@@ -129,7 +129,7 @@ logInfo("Start date: " + task.creationDate)
 
 **範例2**
 
-1. 從上述範例中，將工作流程以下列指令碼取代 **JavaScript程式碼活動的指令碼** :
+1. 從上例中的工作流程，將&#x200B;**JavaScript代碼**&#x200B;活動的指令碼替換為以下指令碼：
 
    ```
    instance.vars.foo = "bar1"
@@ -137,7 +137,7 @@ logInfo("Start date: " + task.creationDate)
    task.vars.foo = "bar3"
    ```
 
-1. 將以下指令碼添加到 **End** 活動的初始化指令碼：
+1. 將以下指令碼添加到&#x200B;**End**&#x200B;活動的初始化指令碼中：
 
    ```
    logInfo("instance.vars.foo = " + instance.vars.foo)
@@ -155,17 +155,17 @@ logInfo("Start date: " + task.creationDate)
    Starting workflow (operator 'admin')
    ```
 
-此範例顯示 **** JavaScript程式碼後的活動會存取例項變數和事件變數，但是無法從外部存取工作變數(&#39;undefined&#39;)。
+此範例顯示&#x200B;**JavaScript程式碼**&#x200B;後續的活動會存取例項變數和事件變數，但無法從外部存取工作變數(&#39;undefined&#39;)。
 
 ### 調用查詢中的執行個體變數 {#calling-an-instance-variable-in-a-query}
 
 在活動中指定例項變數後，您就可以在工作流程查詢中重新使用它。
 
-因此，若要在篩選器中呼 **叫變數instance.vars.xxx = &quot;yyy&quot;** ，請輸 **入$(instance/vars/xxx)**。
+因此，要在過濾器中調用變數&#x200B;**instance.vars.xxx = &quot;yyy&quot;**，請輸入&#x200B;**$(instance/vars/xxx)**。
 
 例如：
 
-1. 建立例項變數，透過下列網址定義傳送的內部名稱 **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**。
+1. 建立例項變數，透過&#x200B;**[!UICONTROL JavaScript code]**&#x200B;定義傳送的內部名稱：**instance.vars.deliveryIN = &quot;DM42&quot;**。
 
    ![](assets/wkf_js_activity_1.png)
 
@@ -173,7 +173,7 @@ logInfo("Start date: " + task.creationDate)
 
    提醒時，此資訊會儲存在傳送記錄檔中。
 
-   若要參考欄中的例 **[!UICONTROL Value]** 項變數，請 **輸入$(instance/vars/@deliveryIN)**。
+   若要參考&#x200B;**[!UICONTROL Value]**&#x200B;欄中的例項變數，請輸入&#x200B;**$(instance/vars/@deliveryIN)**。
 
    工作流將返回DM42交付的收件人。
 
@@ -183,16 +183,16 @@ logInfo("Start date: " + task.creationDate)
 
 除了標準JavaScript函式外，還提供特殊函式，可用來控制檔案、讀取或修改資料庫中的資料，或將訊息新增至記錄檔。
 
-### 日誌 {#journal}
+### 日誌{#journal}
 
-**[!UICONTROL logInfo(message)]** 在上述範例中詳細說明。 此函式將資訊消息添加到日誌中。
+**[!UICONTROL logInfo(message)]** 在上述範例中詳細說明。此函式將資訊消息添加到日誌中。
 
-**[!UICONTROL logError(message)]** 將錯誤消息添加到日誌中。 指令碼會中斷執行，而工作流程會變更為錯誤狀態（依預設會暫停執行個體）。
+**[!UICONTROL logError(message)]** 將錯誤消息添加到日誌中。指令碼會中斷執行，而工作流程會變更為錯誤狀態（依預設會暫停執行個體）。
 
-## 初始化指令碼 {#initialization-script}
+## 初始化指令碼{#initialization-script}
 
 在特定條件下，您可以在執行時修改活動的屬性。
 
 活動的大部分屬性都可以動態計算，不論是使用JavaScript範本，還是因為工作流程屬性明確允許指令碼計算值。
 
-但是，對於其他屬性，您必須使用初始化指令碼。 執行任務之前會評估此指令碼。 變 **[!UICONTROL activity]** 數會參照與任務對應的活動。 可修改此活動的屬性，並僅影響此任務。
+但是，對於其他屬性，您必須使用初始化指令碼。 執行任務之前會評估此指令碼。 **[!UICONTROL activity]**&#x200B;變數會參照與任務對應的活動。 可修改此活動的屬性，並僅影響此任務。
