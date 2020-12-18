@@ -17,9 +17,9 @@ ht-degree: 11%
 
 # 管理工作流程{#managing-workflows}
 
-根據預設，您的新工作流程是以預先設定的工作流程範本為基礎，並以收件者表(nms:recipient)為基礎。 要根據 **Nms_DefaultRcpSchema選項中引用的收件人的自定義表自動使用這些檔案(請參** 閱配置介面部分 [](../../configuration/using/configuring-the-interface.md) )，必須建立新的工作流模板。
+根據預設，您的新工作流程是以預先設定的工作流程範本為基礎，並以收件者表(nms:recipient)為基礎。 要根據&#x200B;**Nms_DefaultRcpSchema**&#x200B;選項中引用的收件者自動表（請參閱[配置介面](../../configuration/using/configuring-the-interface.md)部分），您必須建立新的工作流模板。
 
-通過節點建立新模 **[!UICONTROL Resources > Templates > Workflow templates]** 板。 在範本的屬性中，提供的維度與您的外部收件者表格相符。
+通過&#x200B;**[!UICONTROL Resources > Templates > Workflow templates]**&#x200B;節點建立新模板。 在範本的屬性中，提供的維度與您的外部收件者表格相符。
 
 將新工作流程建立在最近建立的範本上，您的個人化表格將依預設會針對工作流程的全域定位和篩選維度選取。
 
