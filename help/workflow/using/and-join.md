@@ -19,7 +19,7 @@ ht-degree: 6%
 
 只有在激活所有入站轉換（即在所有先前活動完成時）時，連接才會觸發其出站轉換。 這可讓您在繼續執行工作流程之前，先確定某些活動已完成。
 
-例如，您可以在內容建立和傳送傳送自動化的內容中使用AND-join活動，以確保只有在目標查詢和內容更新步驟完成後，才啟動傳送。 本節提供專用的使 [用案例](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
+例如，您可以在內容建立和傳送傳送自動化的內容中使用AND-join活動，以確保只有在目標查詢和內容更新步驟完成後，才啟動傳送。 [本節](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中提供專用的使用案例
 
 ![](assets/and-join-usage.png)
 
@@ -29,4 +29,4 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->對於 **AND-join** type活動，會合併事件變數，但如果同一個變數定義兩次，則會發生衝突，且值仍未確定。 如需詳細資訊，請參閱[本章節](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
+>對於&#x200B;**AND-join**&#x200B;類型活動，事件變數會合併，但如果相同變數定義兩次，則會發生衝突，且值仍未確定。 如需詳細資訊，請參閱[本章節](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
