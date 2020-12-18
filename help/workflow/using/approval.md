@@ -17,15 +17,15 @@ ht-degree: 0%
 
 # 核准{#approval}
 
-「核 **準** 」任務需要操作員的參與。 操作員會獲得指派的任務，並可以通過電子郵件、使用電子郵件消息中連結的網頁或通過控制台進行響應。
+**Approval**&#x200B;任務需要操作員的參與。 操作員會獲得指派的任務，並可以通過電子郵件、使用電子郵件消息中連結的網頁或通過控制台進行響應。
 
-## 任務分配 {#task-assignment}
+## 任務分配{#task-assignment}
 
 依預設，會將核准指派給一組運算子。 此群組代表角色，例如「電子報內容群組」或「電子報定位群組」。 群組中的每個運算元都可回答，但只會考慮第一個回覆（若發生多次核准則除外）。
 
 如有必要，您可以將核准工作指派給單一運算元或由篩選器定義的運算元集。
 
-* 要選擇單個運算子，請在字 **[!UICONTROL Operator]** 段中選擇 **[!UICONTROL Assignment type]** 值，然後在欄位的下拉清單中選擇相關運 **[!UICONTROL Assignee]** 算符。
+* 要選擇單個運算子，請在&#x200B;**[!UICONTROL Assignment type]**&#x200B;欄位中選擇&#x200B;**[!UICONTROL Operator]**&#x200B;值，然後在&#x200B;**[!UICONTROL Assignee]**&#x200B;欄位的下拉清單中選擇相關運算子。
 
    ![](assets/s_advuser_validation_box_assign.png)
 
@@ -33,7 +33,7 @@ ht-degree: 0%
    >
    >只有所選的營運商才能獲得核准工作的授權。
 
-* 您可以定義查詢來篩選批准運算子。 若要這麼做，請在欄 **[!UICONTROL Filter]** 位中選取值 **[!UICONTROL Assignment type]** ，然後按一下連結以 **[!UICONTROL Advanced parameters...]** 定義篩選條件，如下列範例所示：
+* 您可以定義查詢來篩選批准運算子。 若要這麼做，請在&#x200B;**[!UICONTROL Assignment type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Filter]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;連結以定義篩選條件，如下列範例所示：
 
    ![](assets/s_advuser_validation_box_filter.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 修改活動的標題或消息主體不會影響當前任務，但是，另一方面，修改可能的選擇直接影響當前任務，這些任務將自動繼承新的選擇清單。
 
-**可從節點訪問** 「批准類型」任 **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 務：營運商可透過此檢視直接存取核准表單。
+**可** 從節點訪問批准類 **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 型任務：營運商可透過此檢視直接存取核准表單。
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -57,17 +57,17 @@ ht-degree: 0%
 
 ![](assets/edit_validation.png)
 
-此 **[!UICONTROL Title]** 欄位包含訊息的標題：這是所傳送電子郵件的主旨。 標題和訊息內文都是JavaScript範本，因此可包含根據工作流程內容計算的值。
+此&#x200B;**[!UICONTROL Title]**&#x200B;欄位包含訊息的標題：這是所傳送電子郵件的主旨。 標題和訊息內文都是JavaScript範本，因此可包含根據工作流程內容計算的值。
 
 編輯器的下半部分可讓您定義可能的答案清單。 每個答案都對應一個轉場。 名稱是內部識別碼，標籤是將顯示在選項清單中的文字。
 
-按一下 **[!UICONTROL Advanced parameters...]** 連結，以選取要用於通知營運商的傳送範本。 預設範本（內部名稱&#39;notifyAssignee&#39;）會擷取標題和訊息，並新增用於回答的網頁連結。
+按一下&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;連結，以選取要用於通知運算子的傳送範本。 預設範本（內部名稱&#39;notifyAssignee&#39;）會擷取標題和訊息，並新增用於回答的網頁連結。
 
 您可以修改此範本以個人化訊息版面，但最好複製。 不得修改定位機制（外部檔案、定位對應），因為通知必須正確運作。
 
-「定義審批」中顯示了 [審批實例](../../workflow/using/defining-approvals.md)。
+[定義批准](../../workflow/using/defining-approvals.md)中顯示了批准示例。
 
-## 輸出參數 {#output-parameters}
+## 輸出參數{#output-parameters}
 
 * **[!UICONTROL response]**
 
@@ -75,5 +75,5 @@ ht-degree: 0%
 
 * **[!UICONTROL responseOperator]**
 
-   回應的運算子識別碼。 此欄位是數值，但是欄 **[!UICONTROL String]** 位。
+   回應的運算子識別碼。 此欄位是數值，但是&#x200B;**[!UICONTROL String]**&#x200B;欄位。
 
