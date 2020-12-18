@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # 資料模式的結構{#structure-of-a-data-schema}
 
-資料模式的結構以樹結構的形式顯示。 若要在Adobe Campaign用戶端主控台中以圖形方式檢視它，請選取目標結構並按一下 **[!UICONTROL Structure]** 子標籤。
+資料模式的結構以樹結構的形式顯示。 若要在Adobe Campaign用戶端主控台中以圖形方式檢視它，請選取目標結構，然後按一下&#x200B;**[!UICONTROL Structure]**&#x200B;子標籤。
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
