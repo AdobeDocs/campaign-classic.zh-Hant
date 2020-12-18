@@ -19,15 +19,15 @@ ht-degree: 13%
 
 追蹤記錄無法轉送的原因可能有多種。 建議您檢查下列資訊：
 
-* 追蹤工 **作流程** 是否有錯誤？
+* **追蹤**&#x200B;工作流程是否有錯誤？
 
-   請參閱「監 [控技術工作流程](../../workflow/using/monitoring-technical-workflows.md)」。
+   請參閱[監控技術工作流](../../workflow/using/monitoring-technical-workflows.md)。
 
    ![](assets/tracking_scheduled_task.png)
 
-* 在伺服器上 **運行的模組** trackinglogd是否正在運行？
+* 伺服器上是否運行模組&#x200B;**trackinglogd**?
 
-   請參閱 [記錄檔](../../production/using/log-files.md)。
+   請參閱[日誌檔案](../../production/using/log-files.md)。
 
 * 是否進行了更改？ 它們可以使用追蹤別名觸發與伺服器的連線中斷。
 
