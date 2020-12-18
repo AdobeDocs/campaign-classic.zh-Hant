@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # 建立優惠方案{#creating-an-offer}
 
-## 建立選件 {#creating-the-offer}
+## 建立選件{#creating-the-offer}
 
 若要建立選件，請套用下列步驟：
 
-1. 前往宇宙 **[!UICONTROL Campaigns]** ，然後按一下連 **[!UICONTROL Offers]** 結。
+1. 前往&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙，然後按一下&#x200B;**[!UICONTROL Offers]**&#x200B;連結。
 
    ![](assets/offer_create_001.png)
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
    ![](assets/offer_create_002.png)
 
-1. 按一 **[!UICONTROL Save]** 下以建立選件。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立選件。
 
    ![](assets/offer_create_003.png)
 
@@ -41,11 +41,11 @@ ht-degree: 2%
 
    ![](assets/offer_create_004.png)
 
-## 設定優惠資格 {#configuring-offer-eligibility}
+## 設定優惠資格{#configuring-offer-eligibility}
 
-在標籤 **[!UICONTROL Eligibility]** 中，定義選件的有效期間，以及可顯示的期間、套用至目標的篩選條件和選件權重。
+在&#x200B;**[!UICONTROL Eligibility]**&#x200B;標籤中，定義選件的有效期間，以及可顯示的期間、套用至目標的篩選條件和選件權重。
 
-### 定義選件的資格期間 {#defining-the-eligibility-period-of-an-offer}
+### 定義選件的資格期間{#defining-the-eligibility-period-of-an-offer}
 
 若要定義選件的資格期間，請使用下拉式清單，並在日曆中選取開始和結束日期。
 
@@ -53,19 +53,19 @@ ht-degree: 2%
 
 在這些日期以外，互動引擎不會選取選件。 如果您也設定了選件類別的資格日期，則會套用最嚴格的期間。
 
-### 目標上的篩選器 {#filters-on-the-target}
+### 目標{#filters-on-the-target}上的篩選器
 
 您可以套用篩選器至選件目標。
 
-若要這麼做，請按一 **[!UICONTROL Edit query]** 下連結並選取您要套用的篩選。 (Refer to [this section](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+若要這麼做，請按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結，然後選取您要套用的篩選。 （請參閱[本節](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)）。
 
 ![](assets/offer_eligibility_create_003.png)
 
-如果已建立預先定義的篩選，您可以從使用者篩選清單中選取這些篩選。 如需詳細資訊，請參閱「建立預先 [定義的篩選器](../../interaction/using/creating-predefined-filters.md)」。
+如果已建立預先定義的篩選，您可以從使用者篩選清單中選取這些篩選。 有關詳細資訊，請參閱[建立預定義過濾器](../../interaction/using/creating-predefined-filters.md)。
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 選件重量 {#offer-weight}
+### 選件重量{#offer-weight}
 
 若要讓引擎在目標符合資格的數個選件之間做出決定，您必須為選件指派一或多個權重。 您也可以視需要將篩選套用至目標，或限制權重要套用的選件空間。 比較重量較輕的選件，更適合使用較重量的選件。
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可根據選件所屬類別的參數暫時修改指派的權重。 如需詳細資訊，請參閱「建立選 [件類別」](../../interaction/using/creating-offer-categories.md)。
+>可根據選件所屬類別的參數暫時修改指派的權重。 如需詳細資訊，請參閱[建立選件類別](../../interaction/using/creating-offer-categories.md)。
 
 若要在選件中建立權重，請套用下列步驟：
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
    ![](assets/offer_weight_create_004.png)
 
-1. Click **[!UICONTROL OK]** to save the weight.
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以保存重量。
 
    ![](assets/offer_weight_create_005.png)
 
@@ -111,26 +111,26 @@ ht-degree: 2%
    >
    >如果目標符合所選選件的多重權重，引擎會保留最佳（最高）權重。 在呼叫選件引擎時，每個連絡人最多會選取一次選件。
 
-### 選件資格規則摘要 {#a-summary-of-offer-eligibility-rules}
+### 優惠資格規則摘要{#a-summary-of-offer-eligibility-rules}
 
 設定完成後，資格規則的摘要將可在選件控制面板上取得。
 
-若要檢視，請按一下 **[!UICONTROL Schedule and eligibility rules]** 連結。
+若要檢視，請按一下&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;連結。
 
 ![](assets/offer_eligibility_create_005.png)
 
-## 建立選件內容 {#creating-the-offer-content}
+## 建立選件內容{#creating-the-offer-content}
 
-1. 按一下標 **[!UICONTROL Edit]** 簽，然後按一下標 **[!UICONTROL Content]** 簽。
+1. 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Content]**&#x200B;頁籤。
 
    ![](assets/offer_content_create_001.png)
 
 1. 完成選件內容的各欄位。
 
-   * **[!UICONTROL Title]** :指定您想要在選件中顯示的標題。 警告：這並非指選件的標籤，此標籤在標籤中定 **[!UICONTROL General]** 義。
-   * **[!UICONTROL Destination URL]** :指定您選件的URL。 若要正確處理，必須以&quot;http://&quot;或&quot;https://&quot;開頭。
+   * **[!UICONTROL Title]** :指定您想要在選件中顯示的標題。警告：這不是指選件的標籤，該標籤在&#x200B;**[!UICONTROL General]**&#x200B;標籤中定義。
+   * **[!UICONTROL Destination URL]** :指定您選件的URL。若要正確處理，必須以&quot;http://&quot;或&quot;https://&quot;開頭。
    * **[!UICONTROL Image URL]** :指定選件影像的URL或存取路徑。
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** :在您要的標籤中輸入選件的正文。 若要產生追蹤， **[!UICONTROL HTML content]** 必須由HTML元素組成，這些元素可封閉在文字元 `<div>` 素中。 例如，HTML頁面中 `<table>` 的元素結果如下：
+   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** :在您要的標籤中輸入選件的正文。若要產生追蹤，**[!UICONTROL HTML content]**&#x200B;必須由HTML元素組成，這些元素可封閉在`<div>`類型元素中。 例如，HTML頁面中`<table>`元素的結果如下：
 
    ```
       <div> 
@@ -147,21 +147,21 @@ ht-degree: 2%
       </div>
    ```
 
-   定義接受URL會顯示在「設定 [接受提案時的狀態」一節](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) 。
+   [「設定接受提案時的狀態」一節中會顯示定義接受URL。](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)
 
    ![](assets/offer_content_create_002.png)
 
-   若要尋找在選件空間設定期間所定義的必填欄位，請按一下 **[!UICONTROL Content definitions]** 連結以顯示清單。 如需詳細資訊，請參閱「建立選 [件空間」](../../interaction/using/creating-offer-spaces.md)。
+   若要尋找在選件空間設定期間所定義的必填欄位，請按一下&#x200B;**[!UICONTROL Content definitions]**&#x200B;連結以顯示清單。 有關詳細資訊，請參閱[建立選件空間](../../interaction/using/creating-offer-spaces.md)。
 
    ![](assets/offer_content_create_003.png)
 
    在此範例中，選件必須包含標題、影像、HTML內容和目標URL。
 
-## 預覽選件 {#previewing-the-offer}
+## 預覽選件{#previewing-the-offer}
 
 一旦您的選件內容設定好，您就可以預覽該選件，因為它會顯示給其收件者。 操作步驟：
 
-1. 按一下標 **[!UICONTROL Preview]** 簽。
+1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;頁籤。
 
    ![](assets/offer_preview_create_001.png)
 
@@ -173,7 +173,7 @@ ht-degree: 2%
 
    ![](assets/offer_preview_create_003.png)
 
-## 建立選件的假設 {#creating-a-hypothesis-on-an-offer}
+## 建立選件{#creating-a-hypothesis-on-an-offer}的假設
 
 您可以建立選件命題的假設。 這可讓您判斷選件對相關產品所執行之購買的影響。
 
@@ -181,9 +181,9 @@ ht-degree: 2%
 >
 >這些假設是透過「回應管理員」執行。 請檢查您的授權合約。
 
-在選件命題上執行的假設在其標籤中被 **[!UICONTROL Measure]** 引用。
+對選件提案進行的假設在其&#x200B;**[!UICONTROL Measure]**&#x200B;標籤中引用。
 
-本頁將詳述建立 [假設](../../campaign/using/about-response-manager.md)。
+建立假設詳見[本頁](../../campaign/using/about-response-manager.md)。
 
 ![](assets/offer_hypothesis_001.png)
 
