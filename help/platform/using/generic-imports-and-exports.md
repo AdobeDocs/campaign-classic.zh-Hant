@@ -23,13 +23,13 @@ Adobe Campaign 還提供了一個匯入模組，可讓您使用外部檔案為�
 
 >[!NOTE]
 >
->Exports and imports are configured in dedicated templates executed through workflows via the **[!UICONTROL Import]** and **[!UICONTROL Export]** activities. 它們可以根據時間表自動重複，例如多個資訊系統之間的自動化資料交換。If necessary, you can create an occasional import or export via the **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** node of the Adobe Campaign tree.
+>導出和導入在通過工作流通過&#x200B;**[!UICONTROL Import]**&#x200B;和&#x200B;**[!UICONTROL Export]**&#x200B;活動執行的專用模板中配置。 它們可以根據時間表自動重複，例如多個資訊系統之間的自動化資料交換。如有必要，您可以透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**&#x200B;節點建立偶爾的匯入或匯出。
 
 您可以：
 
 * 建立匯入或匯出範本並對其進行配置 (參見下文)。
-* 建立匯入或匯出：請參閱匯 [出資料](../../platform/using/exporting-data.md) 或匯 [入資料](../../platform/using/importing-data.md)。
-* 啟動導入或導出並監視其執行。 請參閱執 [行追蹤](#execution-tracking)。
+* 建立匯入或匯出：請參閱[匯出資料](../../platform/using/exporting-data.md)或[匯入資料](../../platform/using/importing-data.md)。
+* 啟動導入或導出並監視其執行。 請參閱[執行追蹤](#execution-tracking)。
 
 >[!CAUTION]
 >
@@ -39,19 +39,19 @@ Adobe Campaign 還提供了一個匯入模組，可讓您使用外部檔案為�
 
 ## 建立作業範本 {#creating-a-job-template}
 
-Import and export templates are stored in the **[!UICONTROL Resources > Templates > Job templates]** directory of the Adobe Campaign tree.
+匯入和匯出範本會儲存在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;目錄中。
 
-按照預設，此目錄中存在三個匯入範本和一個匯出範本。不得更改它們。You can duplicate them to create your own templates or create a new template via the **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
+按照預設，此目錄中存在三個匯入範本和一個匯出範本。不得更改它們。您可以複製範本以建立自己的範本，或透過&#x200B;**[!UICONTROL New > Import template]** / **[!UICONTROL Export template]**&#x200B;功能表建立新範本。
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-建立流程模板的過程在導出嚮導和導 [入嚮導](../../platform/using/exporting-data.md#export-wizard)[中顯示](../../platform/using/importing-data.md#import-wizard)。
+建立流程模板的過程顯示在[導出嚮導](../../platform/using/exporting-data.md#export-wizard)和[導入嚮導](../../platform/using/importing-data.md#import-wizard)中。
 
 >[!NOTE]
 >
->原生范 **[!UICONTROL Import denylist]** 本已設定為匯入已新增至denylist的電子郵件地址清單。
+>原生範本&#x200B;**[!UICONTROL Import denylist]**&#x200B;已設定為匯入已新增至denylist的電子郵件地址清單。
 > 
->此 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 範本可讓您從頭開始設定匯入或匯出。
+>**[!UICONTROL New text import]**&#x200B;和&#x200B;**[!UICONTROL New text export]**&#x200B;範本可讓您從頭開始設定匯入或匯出。
 
 ## 建立新的匯入/匯出 {#creating-a-new-import-export}
 
@@ -59,9 +59,9 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 所有這些操作都打開了[匯入](../../platform/using/importing-data.md)或[匯出](../../platform/using/exporting-data.md#export-wizard)精靈。
 
-* In the **[!UICONTROL Profiles and targets]** section of Adobe Campaign workspace, click the **[!UICONTROL Jobs]** link: this takes you to the list of existing imports and exports.
+* 在Adobe Campaign工作區的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結：這會帶您進入現有進出口清單。
 
-   Click the **[!UICONTROL Create]** button and select the type of job you want to perform.
+   按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選擇要執行的作業類型。
 
    ![](assets/s_ncs_user_import_from_home.png)
 
@@ -71,7 +71,7 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 * 也可以從 Adobe Campaign Explorer 啟動匯入和匯出。
 
-   若要匯出／匯入資料，請按一 **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** 下節點、圖 **[!UICONTROL New]** 示，然後選取 **[!UICONTROL Export]** 或 **[!UICONTROL Import]**。 這將打開相應的精靈。
+   要導出／導入資料，請按一下&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]**&#x200B;表徵圖，然後選擇&#x200B;**[!UICONTROL Export]**&#x200B;或&#x200B;**[!UICONTROL Import]**。 這將打開相應的精靈。
 
    ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
@@ -81,10 +81,10 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* The **[!UICONTROL Log]** tab lets you look at log messages concerning execution.
-* The **[!UICONTROL Rejects]** tab contains the rejected records. See [Behavior in the event of an error](../../platform/using/importing-data.md#behavior-in-the-event-of-an-error).
+* **[!UICONTROL Log]**&#x200B;標籤可讓您查看有關執行的日誌消息。
+* **[!UICONTROL Rejects]**&#x200B;標籤包含拒絕的記錄。 請參閱[發生錯誤時的行為](../../platform/using/importing-data.md#behavior-in-the-event-of-an-error)。
 
 >[!NOTE]
 >
->Import/export job statuses are presented in [Job statuses](../../platform/using/importing-data.md#job-statuses).
+>導入／導出作業狀態顯示在[作業狀態](../../platform/using/importing-data.md#job-statuses)中。
 
