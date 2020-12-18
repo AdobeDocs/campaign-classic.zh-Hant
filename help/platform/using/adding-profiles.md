@@ -21,6 +21,6 @@ ht-degree: 82%
 
 ![](assets/s_ncs_user_profile_add.png)
 
-輸入此用戶檔案的資訊。The tabs and fields to be completed are described in [Editing a profile](../../platform/using/editing-a-profile.md).
+輸入此用戶檔案的資訊。[編輯配置檔案](../../platform/using/editing-a-profile.md)中介紹了要完成的頁籤和欄位。
 
 按一下 **[!UICONTROL Save]** 以驗證用戶檔案的建立。然後，該用戶檔案將新增到 Adobe Campaign 資料庫中。
