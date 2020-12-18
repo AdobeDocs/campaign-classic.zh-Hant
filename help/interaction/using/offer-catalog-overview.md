@@ -23,8 +23,8 @@ ht-degree: 4%
 
 選件管理是透過Adobe Campaign中的資料夾樹狀結構來執行。
 
-在建立選件之前，您必須先指定環境(請參 [閱環境概觀](../../interaction/using/environments-overview.md))。 它將包含一組選件的所有特性（資格、目標限制、呈現規則）、分類類別，以及其空格清單。
+在建立選件之前，您必須先指定環境（請參閱[環境概述](../../interaction/using/environments-overview.md)）。 它將包含一組選件的所有特性（資格、目標限制、呈現規則）、分類類別，以及其空格清單。
 
 >[!IMPORTANT]
 >
->建立選件目錄（即類別和選件）是該選件的責任 **[!UICONTROL Offer manager]**。
+>建立選件目錄（即類別和選件）是&#x200B;**[!UICONTROL Offer manager]**&#x200B;的責任。
