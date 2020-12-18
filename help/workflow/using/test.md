@@ -17,15 +17,15 @@ ht-degree: 5%
 
 # 測試 {#test}
 
-A **Test** type activity activates the first transition that satisfies the condition associated with it. If no condition is satisfied and if the **[!UICONTROL Use the default fork]** option is activated, the default transition will be activated.
+**Test**&#x200B;類型活動激活滿足與其相關聯的條件的第一過渡。 如果未滿足任何條件，且&#x200B;**[!UICONTROL Use the default fork]**&#x200B;選項已激活，則將激活預設過渡。
 
-條件是必須評估為&#39;true&#39;或&#39;false&#39;的JavaScript運算式。 要輸入表達式，請按一下條件名稱右側的表徵圖，然後選擇 **[!UICONTROL Edit...]**。
+條件是必須評估為&#39;true&#39;或&#39;false&#39;的JavaScript運算式。 要輸入表達式，請按一下條件名稱右側的表徵圖，然後選擇&#x200B;**[!UICONTROL Edit...]**。
 
 ![](assets/edit_test.png)
 
-如需可透過工作流程JavaScript存取之應用程式伺服器的所有其他JavaScript函式和SOAP方法的詳細資訊，請參閱 [JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
+有關可通過工作流JavaScript訪問的應用程式伺服器的所有附加JavaScript函式和SOAP方法的詳細資訊，請參閱[JSAPI文檔](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
-您也可以直接從此編輯器插入變數。 有關如何使用變數的詳細資訊，請參閱 [本節](../../workflow/using/javascript-scripts-and-templates.md#variables)。
+您也可以直接從此編輯器插入變數。 有關如何使用變數的詳細資訊，請參閱[本節](../../workflow/using/javascript-scripts-and-templates.md#variables)。
 
 條件可以從活動屬性編輯窗口中添加、刪除或排序，也可以從轉換中修改。
 
