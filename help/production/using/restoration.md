@@ -26,5 +26,5 @@ ht-degree: 4%
 * 建立和重建資料庫，
 * 啟動Adobe Campaign。
 
-For more information, refer to the **Installation Guide**.
+有關詳細資訊，請參閱&#x200B;**《安裝指南》。**
 
