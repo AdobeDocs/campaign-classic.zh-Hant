@@ -19,4 +19,4 @@ ht-degree: 11%
 
 您可以選擇強制在特定電腦上執行工作流或工作流活動。 為此，您必須在工作流或相關活動的級別定義一個或多個傾向性。
 
-本節將詳述高可用性工作流 [程配置](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
+高可用性工作流配置在[部分](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)中有詳細說明。
