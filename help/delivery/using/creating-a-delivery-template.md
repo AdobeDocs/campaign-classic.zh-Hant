@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -19,50 +19,50 @@ ht-degree: 6%
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#delivery-template-video)
 
-## 將現有傳送轉換為範本 {#converting-an-existing-delivery-to-a-template}
+## 將現有傳送轉換為{#converting-an-existing-delivery-to-a-template}範本
 
-傳送可轉換為範本，以執行新的重複傳送動作。 若要將傳送轉換為範本，請從傳送清單中選取它，此傳送清單可透過樹狀 **[!UICONTROL Campaign management]** 結構的節點存取。
+傳送可轉換為範本，以執行新的重複傳送動作。 若要將傳送轉換為範本，請從傳送清單中選取它，此傳送清單可透過樹狀結構的&#x200B;**[!UICONTROL Campaign management]**&#x200B;節點存取。
 
-Right-click and select **[!UICONTROL Actions > Save as template...]**.
+按一下右鍵並選擇&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-此動作會從選取的傳送建立傳送範本。 您必須輸入儲存資料夾（在欄位中），以及建立 **[!UICONTROL Folder]** 根據此範本所建立之傳送的資料夾(在欄位 **[!UICONTROL Execution folder]** 中)。
+此動作會從選取的傳送建立傳送範本。 您必須輸入儲存資料夾（在&#x200B;**[!UICONTROL Folder]**&#x200B;欄位中），以及建立依據此範本建立之傳送的資料夾（在&#x200B;**[!UICONTROL Execution folder]**&#x200B;欄位中）。
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-有關配置模式的詳細資訊，請參 [閱連結模板到交付](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
+有關配置模式的詳細資訊，請參閱[將模板連結到交付](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
 
 ## 建立新範本 {#creating-a-new-template}
 
 若要設定傳送範本，請執行下列步驟：
 
 1. 開啟促銷活動總管。
-1. 在「資源 **」資料夾** ，依序選 **擇「範本** 」和「傳 **送範本」**。
+1. 在&#x200B;**資源**&#x200B;資料夾中，選擇&#x200B;**模板**，然後選擇&#x200B;**交付模板**。
 
    ![](assets/delivery_template_1.png)
 
-1. 按一 **下工具列** 中的「新增」，以建立新的傳送範本。
+1. 按一下工具列中的&#x200B;**New**，以建立新的傳送範本。
 
    ![](assets/delivery_template_2.png)
 
-1. 修改 **資料夾的** Label **和Internal名稱** 。
+1. 修改資料夾的&#x200B;**Label**&#x200B;和&#x200B;**Internal name**。
 1. 儲存範本並重新開啟。
-1. 按一下「 **屬性** 」按鈕，然後根據您的需求修改值。
+1. 按一下「**屬性**」按鈕，然後根據您的需求修改值。
 
    ![](assets/delivery_template_3.png)
 
-1. 在「一 **般** 」頁籤中，確認或更改「執行」資料夾 **、「資料夾**」和「 ******** RoutingDrop-down」菜單中選定的位置。
+1. 在&#x200B;**一般**&#x200B;標籤中，確認或更改在&#x200B;**執行資料夾**、**資料夾**&#x200B;和&#x200B;**路由**&#x200B;下拉菜單中選擇的位置。
 
    ![](assets/delivery_template_4.png)
 
-1. 使用您的電 **子郵件主旨** ，以及目標人群，完成「電子郵件參數」類別。
-1. 新增 **HTML內容** ，以個人化範本，您可以顯示鏡像頁面連結和取消訂閱連結。
-1. Select the **Preview** tab. 在「測 **試個人化** 」下拉式選單中，選取「收件者 **** 」以預覽範本作為選擇的設定檔。
+1. 請填妥&#x200B;**電子郵件參數**&#x200B;類別，以及您的電子郵件主旨和目標人口。
+1. 新增&#x200B;**HTML內容**&#x200B;以個人化範本，您可以顯示鏡像頁面連結和取消訂閱連結。
+1. 選擇&#x200B;**預覽**&#x200B;標籤。 在&#x200B;**測試個人化**&#x200B;下拉式選單中，選擇&#x200B;**收件者**&#x200B;以預覽範本做為選擇的描述檔。
 
    ![](assets/delivery_template_5.png)
 
-1. 按一下 **儲存**。 您的範本現在已可供傳送使用。
+1. 按一下&#x200B;**保存**。 您的範本現在已可供傳送使用。
 
 >[!NOTE]
 >
@@ -88,4 +88,4 @@ Right-click and select **[!UICONTROL Actions > Save as template...]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-此處提供其他Campaign Classic操作方 [法](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
