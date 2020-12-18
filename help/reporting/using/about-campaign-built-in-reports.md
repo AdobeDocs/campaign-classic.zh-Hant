@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->您也可以學習如何將自己的報表新增至標 **[!UICONTROL Reports]** 簽。 For more information, refer to this [page](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
+>您也可以學習如何將自己的報表新增至&#x200B;**[!UICONTROL Reports]**&#x200B;標籤。 如需詳細資訊，請參閱此[頁面](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options)。
 
 這些報告及其內容在與其相關功能相關的檔案中詳述。
 
@@ -29,15 +29,15 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 
 可使用下列類型的報表：
 
-* 有關整個平台的報告，請參閱全 [域報告](../../reporting/using/global-reports.md)。
-* 傳送報表，請參閱 [傳送報表](../../reporting/using/delivery-reports.md)。
-* 累積報表，請參 [閱累計報表](../../reporting/using/cumulative-reports.md)。
+* 有關整個平台的報告，請參閱[全域報告](../../reporting/using/global-reports.md)。
+* 傳送報表，請參閱[傳送報表](../../reporting/using/delivery-reports.md)。
+* 累積報表，請參閱[累積報表](../../reporting/using/cumulative-reports.md)。
 
-您可以從用戶端主控台首頁、報表控制面板或傳送清單存取報表。 報表的顯示模式視其內容而定。 首頁上提供主要報表的清單，可讓您快速存取傳送資料。 您可依需求變更此清單。 Refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md) for more information.
+您可以從用戶端主控台首頁、報表控制面板或傳送清單存取報表。 報表的顯示模式視其內容而定。 首頁上提供主要報表的清單，可讓您快速存取傳送資料。 您可依需求變更此清單。 如需詳細資訊，請參閱[本節](../../reporting/using/about-reports-creation-in-campaign.md)。
 
 若要存取促銷活動內建報表：
 
-1. 選取Adobe **[!UICONTROL Reports]** Campaign介面的標籤。
+1. 選取Adobe Campaign介面的&#x200B;**[!UICONTROL Reports]**&#x200B;標籤。
 
    ![](assets/reporting_access_from_home.png)
 
@@ -47,11 +47,11 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 
    ![](assets/reporting_edit_a_report.png)
 
-1. 按一 **[!UICONTROL Back]** 下畫面頂端的連結，可帶您回到報表清單。
+1. 按一下畫面頂端的&#x200B;**[!UICONTROL Back]**&#x200B;連結，將您帶回報表清單。
 
    ![](assets/reporting_back_button.png)
 
-本頁詳細說明了正在編輯的報表的其 [他操作](../../reporting/using/actions-on-reports.md)。
+有關正在編輯的報表的其他可能操作，請參閱[本頁](../../reporting/using/actions-on-reports.md)。
 
 特定於促銷活動或傳送的報表可透過其各自的控制面板存取。
 
