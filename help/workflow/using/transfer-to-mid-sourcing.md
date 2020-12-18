@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # 轉移至中間來源{#transfer-to-mid-sourcing}
 
-依預設，下列詳細的工作流程 **會隨「轉移至中端來源** 」模組安裝。 For more on this module, refer to this [section](../../installation/using/mid-sourcing-deployment.md).
+以下詳細說明的工作流預設隨&#x200B;**Transfer to Mid-Sourcing**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../installation/using/mid-sourcing-deployment.md)。
 
 <table> 
  <tbody> 
