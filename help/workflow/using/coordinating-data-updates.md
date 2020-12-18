@@ -25,15 +25,15 @@ ht-degree: 3%
 
 此工作流由以下幾部分組成：
 
-* a **Scheduler** activity, that executes workflow on a specific frequency.
-* 會檢 **查工作流程是否已執行的Test** 活動。
-* **在工作流尚未執行時** ，查詢和更新資料活動，接著執行 **End****** 活動，將工作流實例變數重新初始化為false。
-* 如果 **工作流已執行** ，則會執行「結束」活動。
+* a **調度器**&#x200B;活動，該活動在特定頻率上執行工作流。
+* a **Test**&#x200B;活動，會檢查工作流是否已執行。
+* **查詢和** 更 **新資料活動，以備工作流尚未執行時使用，接著執行**  **** Endactivity，將工作流實例變數重新初始化為false。
+* 如果工作流已在執行，則&#x200B;**結束**&#x200B;活動。
 
 若要建立工作流程，請遵循下列步驟：
 
-1. 新增「 **排程器** 」活動，然後根據您的需求設定其頻率。
-1. 新增 **Test** （測試）活動以檢查工作流程是否已執行，然後依下列方式設定。
+1. 新增&#x200B;**排程器**&#x200B;活動，然後根據您的需求設定其頻率。
+1. 新增&#x200B;**Test**&#x200B;活動以檢查工作流程是否已執行，然後設定如下。
 
    >[!NOTE]
    >
@@ -41,13 +41,13 @@ ht-degree: 3%
 
    ![](assets/uc_dataupdate_test.png)
 
-1. 將End活 **動添加** 到 **No** 分叉。 這樣，如果工作流已執行，則不執行任何操作。
-1. 將所需的活動新增至 **「是** 」分叉。 在本例中，「查 **詢** 」和「 **更新資料** 」活動。
-1. 開啟第一個活動，然後在 **標籤中新增instance.vars.isRunning = true** 命 **[!UICONTROL Advanced]** 令。 如此，例項變數就會設為執行中。
+1. 將&#x200B;**End**&#x200B;活動添加到&#x200B;**No**&#x200B;分叉。 這樣，如果工作流已執行，則不執行任何操作。
+1. 將所需活動添加到&#x200B;**Yes**&#x200B;分叉。 在本例中，**Query**&#x200B;和&#x200B;**更新資料**&#x200B;活動。
+1. 開啟第一個活動，然後在&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤中新增&#x200B;**instance.vars.isRunning = true**&#x200B;命令。 如此，例項變數就會設為執行中。
 
    ![](assets/uc_dataupdate_query.png)
 
-1. 在 **fork的結尾添加** End **[!UICONTROL Yes]** 活動，然後在標籤中添 **加instance.vars.isRunning = false****[!UICONTROL Advanced]** 命令。
+1. 在&#x200B;**[!UICONTROL Yes]**&#x200B;分叉的末尾添加&#x200B;**End**&#x200B;活動，然後在&#x200B;**[!UICONTROL Advanced]**&#x200B;頁籤中添加&#x200B;**instance.vars.isRunning = false**&#x200B;命令。
 
    這樣，只要工作流正在執行，就不會執行任何操作。
 
