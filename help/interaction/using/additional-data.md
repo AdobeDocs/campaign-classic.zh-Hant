@@ -23,11 +23,11 @@ ht-degree: 0%
 
 在定位工作流程（出站渠道）中，您可以在呼叫引擎期間使用定位資料。 例如，您可以透過FDA，利用收件者連結交易或外部資料庫的資料來豐富目標。
 
-## 其他資料設定 {#additional-data-configuration}
+## 其他資料配置{#additional-data-configuration}
 
-必須擴展鏈 **接到環境的nms:interaction** schema並聲明在調用交互引擎期間將使用的附加欄位的清單。 建立資格規則或個人化選件時，這些欄位將可從「互動」節點存取(請參 **閱使用其他資料**[](#using-additional-data))。
+您必須擴展連結到環境的&#x200B;**nms:interaction**&#x200B;模式，並聲明在調用交互引擎期間將使用的附加欄位清單。 當建立資格規則或個人化選件時，這些欄位將可從&#x200B;**Interaction**&#x200B;節點存取（請參閱[使用其他資料](#using-additional-data)）。
 
-對於入站渠道，必須將呼叫資料欄位添加到「交互 **」節點** 。
+對於入站通道，必須將呼叫資料欄位添加到&#x200B;**Interaction**&#x200B;節點中。
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -39,7 +39,7 @@ ht-degree: 0%
 >
 >傳入渠道上支援Xml集合，但其他結構的連結則不支援。
 
-對於出站渠道，必須將包含其 **他欄位的targetData** 元素添加到 **Interaction** 節點。
+對於出站通道，必須將包含附加欄位的&#x200B;**targetData**&#x200B;元素添加到&#x200B;**Interaction**&#x200B;節點中。
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -53,7 +53,7 @@ ht-degree: 0%
 >
 >對外渠道不支援系列。 不過，您可以建立其他結構描述的連結。
 
-如果要將此資料儲存在命題表中，還必須擴展 **nms:compositionRcp** schema並聲明這些欄位。
+如果要將此資料儲存在命題表中，則還必須擴展&#x200B;**nms:compositionRcp**&#x200B;模式並聲明這些欄位。
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -62,23 +62,23 @@ ht-degree: 0%
 </element>
 ```
 
-## 其他資料實作 {#additional-data-implementation}
+## 其他資料實作{#additional-data-implementation}
 
-### 輸入頻道（網頁） {#input-channel--web-page-}
+### 輸入頻道（網頁）{#input-channel--web-page-}
 
-若要在呼叫引擎時傳輸其他資料，您必須將 **interactionGlobalCtx** 變數新增至網頁的JavaScript程式碼。 將包含 **呼叫資料** 的「互動」節點插入此變數。 必須遵循與 **nms:interaction架構中相同的xml結** 構。 請參閱： [其他資料設定](#additional-data-configuration)。
+若要在呼叫引擎時傳輸其他資料，您必須將&#x200B;**interactionGlobalCtx**&#x200B;變數新增至網頁的JavaScript程式碼。 將包含調用資料的&#x200B;**Interaction**&#x200B;節點插入此變數。 您必須遵守&#x200B;**nms:interaction**&#x200B;架構中的相同xml結構。 請參閱：[其他資料配置](#additional-data-configuration)。
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 ```
 
-### 輸出通道 {#output-channel}
+### 輸出通道{#output-channel}
 
-必須建立一個定位工作流，該工作流將載入工作表中的其他資料，方法是遵守與 **nms:interaction架構中相同的xml結構和內部名稱** 。 請參閱： [其他資料設定](#additional-data-configuration)。
+必須建立一個目標工作流，該工作流將載入工作表中的其他資料，方法是遵循與&#x200B;**nms:interaction**&#x200B;模式中相同的xml結構和內部名稱。 請參閱：[其他資料配置](#additional-data-configuration)。
 
-## 使用其他資料 {#using-additional-data}
+## 使用其他資料{#using-additional-data}
 
-### 資格規則 {#eligibility-rules}
+### 資格規則{#eligibility-rules}
 
 您可以在資格規則中使用選件、類別和權重的其他資料。
 
@@ -88,7 +88,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 >[!NOTE]
 >
->您必須限制定義資料之渠道的規則。 在我們的範例中，我們會限制傳入Web頻道（欄位）上&#x200B;**[!UICONTROL Taken into account if]** 的規則。
+>您必須限制定義資料之渠道的規則。 在我們的範例中，我們將限制傳入Web頻道（**[!UICONTROL Taken into account if]**&#x200B;欄位）上的規則。
 
 ### 個人化{#personalization}
 
@@ -100,25 +100,25 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 >
 >您必須限制資料所定義之通道的個人化。 在我們的範例中，我們會限制傳入Web頻道的規則。
 
-如果您使用其他資料來個人化選件，則預設情況下，此資料不會顯示在預覽中，因為該資料不在資料庫中。 在環境的頁籤 **[!UICONTROL Example of call data]** 中，必須添加值示例才能在預覽中使用。 請遵循與 **nms:interaction架構擴充中相同的xml** 結構。 有關詳細資訊，請參閱「其 [他資料配置」](#additional-data-configuration)。
+如果您使用其他資料來個人化選件，則預設情況下，此資料不會顯示在預覽中，因為該資料不在資料庫中。 在環境的&#x200B;**[!UICONTROL Example of call data]**&#x200B;標籤中，必須添加值示例才能在預覽中使用。 請遵循&#x200B;**nms:interaction**&#x200B;架構擴充中的相同xml結構。 有關詳細資訊，請參閱[ Additional data configuration](#additional-data-configuration)。
 
 ![](assets/ita_calldata_preview.png)
 
-預覽時，按一 **[!UICONTROL Content personalization options for the preview]** 下並選取欄位中的 **[!UICONTROL Call data]** 值。
+在預覽時，按一下&#x200B;**[!UICONTROL Content personalization options for the preview]**&#x200B;並在&#x200B;**[!UICONTROL Call data]**&#x200B;欄位中選取值。
 
 ![](assets/ita_calldata_preview2.png)
 
-### 儲存空間 {#storage}
+### 儲存{#storage}
 
 在呼叫引擎期間，您可以將其他資料儲存在命題表格中，以豐富資料庫。 這些資料可用於報告、ROI計算或後續程式。
 
 >[!NOTE]
 >
->您必須已擴展 **nms:compositionRcp** schema並聲明將包含要儲存的資料的欄位。 如需詳細資訊： [其他資料設定](#additional-data-configuration)。
+>您必須已擴展&#x200B;**nms:compositionRcp**&#x200B;模式，並聲明將包含要儲存的資料的欄位。 如需詳細資訊：[其他資料配置](#additional-data-configuration)。
 
-在選件空間中，移至標籤， **[!UICONTROL Storage]** 然後按一下按 **[!UICONTROL Add]** 鈕。
+在選件空間中，前往&#x200B;**[!UICONTROL Storage]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 
-在列中， **[!UICONTROL Storage path]** 選擇命題表中的儲存欄位。 在列中 **[!UICONTROL Expression]** ，選擇節點中的其他字 **[!UICONTROL Interaction]** 段。
+在&#x200B;**[!UICONTROL Storage path]**&#x200B;列中，選擇命題表中的儲存欄位。 在&#x200B;**[!UICONTROL Expression]**&#x200B;列中，選擇&#x200B;**[!UICONTROL Interaction]**&#x200B;節點中的其他欄位。
 
 您可以在提案產生或被接受時（當訪客點按選件時）擷取呼叫資料。
 
