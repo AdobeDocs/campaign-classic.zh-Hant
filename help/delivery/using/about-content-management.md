@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # 關於內容管理{#about-content-management}
 
-Adobe Campaign Content Manager模組是特定的Campaign Classic標 [準套件](../../installation/using/installing-campaign-standard-packages.md) ，您可安裝它以建立經常性電子報或網站。 它可協助您建立、驗證和發佈訊息。
+Adobe Campaign Content Manager模組是特定的Campaign Classic [標準套件](../../installation/using/installing-campaign-standard-packages.md)，您可安裝它以建立經常性電子報或網站。 它可協助您建立、驗證和發佈訊息。
 
 >[!NOTE]
 >
->本節指內容管理模組。 如需如何設計電子郵件傳送內容的詳細資訊，請參 [閱本節](../../delivery/using/defining-the-email-content.md)。
+>本節指內容管理模組。 有關如何設計電子郵件傳送內容的詳細資訊，請參閱[本節](../../delivery/using/defining-the-email-content.md)。
 
 內容管理模組整合了工作組、工作流和內容聚合功能。 這允許自動格式化消息：電子郵件、郵件、簡訊、網路等
 
