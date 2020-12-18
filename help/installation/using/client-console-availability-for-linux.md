@@ -17,4 +17,4 @@ ht-degree: 29%
 
 # Linux 用戶端主控台可用性{#client-console-availability-for-linux}
 
-Adobe Campaign使用者若要能夠登入您所建立和設定的例項，就必須使用用戶端主控台。 有關詳細資訊，請參閱Windows [客戶端控制台可用性](../../installation/using/client-console-availability-for-windows.md)。
+Adobe Campaign使用者若要能夠登入您所建立和設定的例項，就必須使用用戶端主控台。 有關詳細資訊，請參閱[Windows](../../installation/using/client-console-availability-for-windows.md)客戶端控制台可用性。
