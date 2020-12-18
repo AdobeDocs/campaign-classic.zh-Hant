@@ -23,9 +23,9 @@ Adobe Campaign可讓您停止追蹤透過Cookie或網站信標選擇退出行為
 
 >[!NOTE]
 >
->當指令碼執行時，請一律遵循「安全性與隱私權」檢 [查清單中所述的准則](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)。
+>當指令碼執行時，請一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准則。
 
-## 設定橫幅 {#configuring-the-banner-}
+## 配置橫幅{#configuring-the-banner-}
 
 若要在Web應用程式或著陸頁面中顯示，必須設定橫幅。
 
@@ -35,7 +35,7 @@ Adobe Campaign會隨附範例橫幅，您必須依需求調整。 此橫幅版�
 >
 >若要建立您自己的橫幅，您必須個人化現成可用的橫幅。
 
-若要啟用橫幅，您必須設定Web應用程式屬性。 請參閱「設 [計Web應用程式](../../web/using/designing-a-web-application.md) 」一節。
+若要啟用橫幅，您必須設定Web應用程式屬性。 請參閱[設計Web應用程式](../../web/using/designing-a-web-application.md)一節。
 
 如果網頁追蹤已啟動，您可以：
 
@@ -64,15 +64,15 @@ Adobe Campaign會隨附範例橫幅，您必須依需求調整。 此橫幅版�
       
 ```
 
-您必須將「請 **在此處插入訊息** 」取代為包含追蹤資訊的區塊。 此項取代應在您與「退出」橫幅相關的新個人化區塊中執行。
+您必須將&#x200B;**請將訊息插入此處**&#x200B;取代為包含追蹤資訊的區塊。 此項取代應在您與「退出」橫幅相關的新個人化區塊中執行。
 
 橫幅會以特定的CSS傳送。 不過，您可以在建立和設定網頁時覆寫樣式。 請參見[此頁面](../../web/using/content-editor-interface.md)。
 
-## 使用API設定選擇退出Cookie {#setting-the-opt-out-cookie-using-api}
+## 使用API {#setting-the-opt-out-cookie-using-api}設定選擇退出Cookie
 
 Adobe Campaign會隨附API，可讓您管理Cookie值並擷取使用者偏好設定。
 
-Cookie名稱為 **Acoptout**。 常見值有：
+Cookie名稱為&#x200B;**acoptout**。 常見值有：
 
 * 0:使用者已允許網頁追蹤（預設值）
 * 1:使用者已禁止網頁追蹤
@@ -80,9 +80,9 @@ Cookie名稱為 **Acoptout**。 常見值有：
 
 自訂橫幅的可用用戶端API包括：
 
-* **NL.ClientWebTracking.allow()**:設定退出Cookie值以允許網頁追蹤。 預設允許網頁追蹤。
-* **NL.ClientWebTracking.bord()**:設定選擇退出Cookie值以禁止網頁追蹤。 網頁追蹤需要禁止使用者輸入。
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:在使用者按一下「接受」或「拒絕」按鈕後，關閉選擇退出Cookie橫幅。 （在點按事件反升階段）
+* **NL.ClientWebTracking.allow()**:設定退出Cookie值以允許網頁追蹤。預設允許網頁追蹤。
+* **NL.ClientWebTracking.bord()**:設定選擇退出Cookie值以禁止網頁追蹤。網頁追蹤需要禁止使用者輸入。
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:在使用者按一下「接受」或「拒絕」按鈕後，關閉選擇退出Cookie橫幅。（在點按事件反升階段）
 
    bannerDomElt {DOMElement}需要移除之Cookie橫幅的根DOM元素
 
