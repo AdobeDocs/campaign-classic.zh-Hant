@@ -15,11 +15,11 @@ ht-degree: 1%
 ---
 
 
-# 使用案例：傳送含附件的交易式電子郵件{#transactional-email-with-attachments}
+# 使用案例：傳送含附件的交易電子郵件{#transactional-email-with-attachments}
 
 此使用案例的目的是即時將電子郵件附件添加到出站派單。
 
-## 關鍵步驟 {#key-steps}
+## 關鍵步驟{#key-steps}
 
 在此案例中，您將學習如何傳送包含個別及／或個人化附件的交易式電子郵件。 附件不會預先上載到Transactional Messaging伺服器上：而是即時產生。
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->為避免效能問題，如果您將即時從個人化URL下載的影像加入附件，預設每個影像大小不應超過100,000位元組。 此建議的臨界值可從「促銷活 [動傳統」選項清單中設定](../../installation/using/configuring-campaign-options.md#delivery)。
+>為避免效能問題，如果您將即時從個人化URL下載的影像加入附件，預設每個影像大小不應超過100,000位元組。 此建議的臨界值可從[促銷活動傳統選項清單中設定。](../../installation/using/configuring-campaign-options.md#delivery)
 
 ## 建議 {#important-notes}
 
@@ -54,9 +54,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->為避免效能問題，建議每個電子郵件不要包含多個附件。 建議的臨界值可從「促銷活 [動傳統」選項清單中設定](../../installation/using/configuring-campaign-options.md#delivery)。
+>為避免效能問題，建議每個電子郵件不要包含多個附件。 建議的臨界值可從[促銷活動經典選項清單中設定。](../../installation/using/configuring-campaign-options.md#delivery)
 
-## 實作 {#implementation}
+## 實施{#implementation}
 
 下圖顯示實施此方案時的不同步驟：
 
@@ -64,17 +64,17 @@ ht-degree: 1%
 
 要即時將電子郵件附件添加到事務性郵件，請執行以下步驟：
 
-1. 從設計附件開始。 如需詳細資訊，請參閱[本區段](../../delivery/using/attaching-files.md#attach-a-personalized-file)。
+1. 從設計附件開始。 如需詳細資訊，請參閱[本節](../../delivery/using/attaching-files.md#attach-a-personalized-file)。
 
    這可讓您將檔案附加至電子郵件，即使這些檔案並非由執行例項代管。
 
 1. 您可以透過SOAP訊息觸發器傳送電子郵件。 在SOAP呼叫中，有URL參數(attachmentURL)。
 
-   有關SOAP請求的詳細資訊，請參閱事 [件說明](../../message-center/using/event-description.md)。
+   有關SOAP請求的詳細資訊，請參見[事件說明](../../message-center/using/event-description.md)。
 
-1. 設計電子郵件時，按一下 **[!UICONTROL Attachment]**。
+1. 在設計電子郵件時，按一下&#x200B;**[!UICONTROL Attachment]**。
 
-1. 在螢幕 **[!UICONTROL Attachment definition]** 中，輸入SOAP附件參數：
+1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;螢幕中，輸入SOAP附件參數：
 
    ```
    <%= rtEvent.ctx.attachementUrl %>
