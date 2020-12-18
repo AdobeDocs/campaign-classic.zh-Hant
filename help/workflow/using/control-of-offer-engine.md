@@ -17,7 +17,7 @@ ht-degree: 26%
 
 # 優惠方案引擎的控制{#control-of-offer-engine}
 
-依預設，下列詳細的工作流程會隨 **「控制選件引擎」(Control of of offer engine)及執行例項模組一起安裝** 。
+依預設，下面詳述的工作流程會與&#x200B;**Control of of offer engine with execution instance**&#x200B;模組一起安裝。
 
 <table> 
  <tbody> 
