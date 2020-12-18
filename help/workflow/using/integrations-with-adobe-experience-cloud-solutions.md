@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 與 Adobe Experience Cloud 解決方案整合{#integrations-with-adobe-experience-cloud-solutions}
 
-依預設，下列詳細的工作流程 **** 會隨「與Adobe Experience Cloud整合」模組一起安裝。 For more on this module, refer to this [section](../../integrations/using/configuring-ims.md#installing-the-package).
+依預設，下列詳細的工作流程會與&#x200B;**Integration with the Adobe Experience Cloud**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../integrations/using/configuring-ims.md#installing-the-package)。
 
 <table> 
  <tbody> 
@@ -29,12 +29,12 @@ ht-degree: 8%
   <tr> 
    <td> <span class="uicontrol">從Adobe Experience Cloud匯入觀眾</span> <br /> </td> 
    <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
-   <td> 此工作流程可讓您將不同Adobe Experience Cloud解決方案的受眾／細分匯入Adobe Campaign。<br /> </td> 
+   <td> 此工作流程可讓您將不同Adobe Experience Cloud解決方案的觀眾／區段匯入Adobe Campaign。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">將觀眾匯出至Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> 此工作流程會將觀眾匯出為共用的觀眾／區段。 這些受眾可用於您所使用的不同Adobe Experience Cloud解決方案。<br /> </td> 
+   <td> 此工作流程會將觀眾匯出為共用的觀眾／區段。 這些觀眾可用於您使用的不同Adobe Experience Cloud解決方案。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
