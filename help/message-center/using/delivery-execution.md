@@ -21,7 +21,7 @@ ht-degree: 8%
 >
 >MTA會優先處理交易訊息，而非其他傳送。
 
-在執行例項上，一旦濃縮階段完成且傳送範本已連結至事件，傳送。 所有傳送都會分組在資料 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 夾中。
+在執行例項上，一旦濃縮階段完成且傳送範本已連結至事件，傳送。 所有傳送都會分組在&#x200B;**[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**&#x200B;資料夾中。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -33,4 +33,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->若是代管或混合式安裝，如果您已升級至「增強MTA」，所有交易訊息也可能會隨Adobe Campaign Enhanced MTA一起傳送，以改善傳遞能力、吞吐量和彈回處理。 所有影響與標準行銷訊息的影響相同，並在 [Adobe Campaign Enhanced MTA檔案中詳細說明](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html) 。
+>若是代管或混合式安裝，如果您已升級至「增強MTA」，所有交易訊息也可能會隨Adobe Campaign Enhanced MTA一起傳送，以改善傳遞能力、吞吐量和彈回處理。 所有影響與標準行銷訊息的影響相同，並詳見[Adobe Campaign Enhanced MTA](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)檔案。
