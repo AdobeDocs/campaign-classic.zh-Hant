@@ -17,37 +17,37 @@ ht-degree: 2%
 
 # 啟動工作流程 {#starting-a-workflow}
 
-工作流程一律以手動方式啟動。 但是，啟動時，它可以根據通過調度程式指定的資訊(請參見 [Scheduler](../../workflow/using/scheduler.md))或活動調度來保持非活動狀態。
+工作流程一律以手動方式啟動。 但是，啟動時，它可以根據通過調度程式指定的資訊（請參見[ Scheduler](../../workflow/using/scheduler.md)）或活動調度來保持非活動狀態。
 
-與定位工作流程執行（啟動、停止、暫停等）相關的動作 是非 **同步進程** :訂單會記錄下來，當伺服器可供套用時，訂單就會生效。
+與定位工作流程執行（啟動、停止、暫停等）相關的動作 are **asynchronous** processes:訂單會記錄下來，當伺服器可供套用時，訂單就會生效。
 
 工具列可讓您啟動並追蹤工作流程的執行。
 
-功能表和右鍵功能表 **[!UICONTROL Actions]** 中可用選項的清單在下方詳述。
+**[!UICONTROL Actions]**&#x200B;功能表和右鍵功能表中可用選項的清單如下所述。
 
 >[!IMPORTANT]
 >
->請記住，當運算子對工作流執行動作（啟動、停止、暫停等）時，動作不會立即執行，而是放在佇列中，以便由工作流模組 [處理](../../workflow/using/architecture.md)。
+>請記住，當運算子對工作流執行動作（啟動、停止、暫停等）時，動作不會立即執行，而會置於佇列中，以便由[工作流模組](../../workflow/using/architecture.md)處理。
 
-## 動作工具列 {#actions-toolbar}
+## 動作工具列{#actions-toolbar}
 
-本節將詳細介紹工具欄 [按鈕](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。 此按 **[!UICONTROL Actions]** 鈕可讓您存取其他執行選項，以便在選取的工作流程上執行。 您也可以使用功 **[!UICONTROL File > Actions]** 能表，或以滑鼠右鍵按一下工作流程並選取 **[!UICONTROL Actions]**。
+此[部分](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)中詳細介紹了工具欄按鈕。 **[!UICONTROL Actions]**&#x200B;按鈕可讓您存取其他執行選項，以便在選取的工作流程上執行。 您也可以使用&#x200B;**[!UICONTROL File > Actions]**&#x200B;功能表，或在工作流程上按一下滑鼠右鍵，然後選取&#x200B;**[!UICONTROL Actions]**。
 
 ![](assets/purge_historique.png)
 
 * **[!UICONTROL Start]**
 
-   此動作可讓您開始執行工作流程：已完成、正在編 **輯**&#x200B;或暫 **停的工作流將狀** 態更改為 ********&#x200B;已啟動 然後，工作流引擎將處理此工作流的執行。 如果暫停了工作流，則會繼續，否則工作流會從頭開始，並激活初始活動。
+   此動作可讓您開始執行工作流程：**已完成的**、**正在編輯的**&#x200B;或&#x200B;**Paused**&#x200B;工作流將狀態更改為&#x200B;**Started**。 然後，工作流引擎將處理此工作流的執行。 如果暫停了工作流，則會繼續，否則工作流會從頭開始，並激活初始活動。
 
    啟動是非同步程式：請求會儲存，並由工作流程伺服器盡快處理。
 
 * **[!UICONTROL Pause]**
 
-   此動作會將工作流程的狀態設為「暫 **停」**。 在工作流恢復之前，不會激活任何活動；但不會暫停進行中的操作。
+   此操作將工作流的狀態設定為&#x200B;**Paused**。 在工作流恢復之前，不會激活任何活動；但不會暫停進行中的操作。
 
 * **[!UICONTROL Stop]**
 
-   此動作會停止目前執行的工作流程。 實例的狀態設定為「已 **完成」**。 如果可能，將停止正在進行的操作。 導入和SQL查詢會立即取消。
+   此動作會停止目前執行的工作流程。 實例的狀態設定為&#x200B;**Finished**。 如果可能，將停止正在進行的操作。 導入和SQL查詢會立即取消。
 
    停止是非同步進程。 該請求被註冊，然後工作流伺服器或伺服器取消正在進行的操作。 因此，停止工作流實例可能需要時間，尤其是當工作流在多個伺服器上運行時，每個伺服器都必須控制其中的一個，以取消正在進行的任務。
 
@@ -55,23 +55,23 @@ ht-degree: 2%
 
    此動作會停止，然後重新啟動工作流程。 在大多數情況下，它可以更快地重新啟動。 當停止需要一定時間時，自動重新啟動也很有用：這是因為當工作流停止時，「停止」命令不可用。
 
-   這些 **[!UICONTROL Start / Pause / Stop / Restart]** 動作也可透過工具列中的執行圖示使用。 如需詳細資訊，請參閱本[區段](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)。
+   **[!UICONTROL Start / Pause / Stop / Restart]**&#x200B;動作也可透過工具列中的執行圖示使用。 如需詳細資訊，請參閱本[區段](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)。
 
 * **[!UICONTROL Purge history]**
 
-   此動作可讓您清除工作流程歷史記錄。 有關詳細資訊，請參閱 [清除日誌](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs)。
+   此動作可讓您清除工作流程歷史記錄。 有關詳細資訊，請參閱[清除日誌](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs)。
 
 * **[!UICONTROL Start in simulation mode]**
 
-   此選項可讓您在模擬模式中啟動工作流程，而非實際模式。 這表示啟用此模式時，僅執行不影響資料庫或檔案系統的活動(如 **[!UICONTROL Query]**、 **[!UICONTROL Union]**、 **[!UICONTROL Intersection]**&#x200B;等等)。 具有影響的活動(例如 **[!UICONTROL Export]**、 **[!UICONTROL Import]**&#x200B;等) 以及之後（位於相同分支）的執行。
+   此選項可讓您在模擬模式中啟動工作流程，而非實際模式。 這表示啟用此模式時，僅執行不影響資料庫或檔案系統的活動(如&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等。 具有影響的活動(例如&#x200B;**[!UICONTROL Export]**、**[!UICONTROL Import]**&#x200B;等) 以及之後（位於相同分支）的執行。
 
 * **[!UICONTROL Execute pending tasks now]**
 
-   此動作可讓您盡快開始所有待審工作。 要啟動特定任務，請按一下右鍵其活動並選擇 **[!UICONTROL Execute pending task(s) now]**。
+   此動作可讓您盡快開始所有待審工作。 要啟動特定任務，請按一下右鍵其活動並選擇&#x200B;**[!UICONTROL Execute pending task(s) now]**。
 
 * **[!UICONTROL Unconditional stop]**
 
-   此選項會將工作流狀態更改為 **[!UICONTROL Finished]**。 只有在正常停止進程在幾分鐘後失敗時，才應將此操作用作最後選擇。 只有在確定沒有實際工作流作業正在進行時，才使用無條件停止。
+   此選項會將工作流狀態更改為&#x200B;**[!UICONTROL Finished]**。 只有在正常停止進程在幾分鐘後失敗時，才應將此操作用作最後選擇。 只有在確定沒有實際工作流作業正在進行時，才使用無條件停止。
 
    >[!CAUTION]
    >
@@ -79,11 +79,11 @@ ht-degree: 2%
 
 * **[!UICONTROL Save as template]**
 
-   此動作會根據選取的工作流程建立新的工作流程範本。 您需要指定要儲存檔案夾的資料夾(在欄位 **[!UICONTROL Folder]** 中)。
+   此動作會根據選取的工作流程建立新的工作流程範本。 您需要指定要儲存檔案夾的資料夾（在&#x200B;**[!UICONTROL Folder]**&#x200B;欄位中）。
 
-   和 **[!UICONTROL Mass update of selected lines]** 選 **[!UICONTROL Merge selected lines]** 項是所有功能表中的通用平台 **[!UICONTROL Actions]** 選項。 如需詳細資訊，請參閱本[區段](../../platform/using/updating-data.md)。
+   **[!UICONTROL Mass update of selected lines]**&#x200B;和&#x200B;**[!UICONTROL Merge selected lines]**&#x200B;選項是所有&#x200B;**[!UICONTROL Actions]**&#x200B;功能表中可用的通用平台選項。 如需詳細資訊，請參閱本[區段](../../platform/using/updating-data.md)。
 
-## 右鍵功能表 {#right-click-menu}
+## 按一下右鍵菜單{#right-click-menu}
 
 在選取一或多個工作流程活動時，您可以按一下滑鼠右鍵，對您的選取動作。
 
@@ -93,7 +93,7 @@ ht-degree: 2%
 
 **[!UICONTROL Open]**:此選項可讓您存取活動屬性。
 
-**[!UICONTROL Display logs:]** 此選項可讓您查看所選活動的任務執行日誌。 請參閱顯 [示日誌](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)。
+**[!UICONTROL Display logs:]** 此選項可讓您查看所選活動的任務執行日誌。請參閱[顯示日誌](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)。
 
 **[!UICONTROL Execute pending task(s) now:]** 此動作可讓您盡快開始待審工作。
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
 **[!UICONTROL Copy as bitmap:]** 此選項可讓您擷取所有活動的螢幕擷取。
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** 這些選項也可在活動屬 **[!UICONTROL Advanced]** 性的頁籤中使用。 這些內容在「執行」 [中詳述](../../workflow/using/advanced-parameters.md#execution)。
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** 這些選項也可在活動屬 **[!UICONTROL Advanced]** 性的頁籤中使用。[Execution](../../workflow/using/advanced-parameters.md#execution)中詳細介紹了這些問題。
 
 **[!UICONTROL Save / Cancel:]** 可讓您儲存或取消對工作流程所做的變更。
 
@@ -111,4 +111,4 @@ ht-degree: 2%
 >
 >您可以選取一組活動，並將其中一個命令套用至活動。
 
-本節中也詳述了右鍵功 [能表](../../campaign/using/marketing-campaign-deliveries.md#executing-a-workflow)。
+右鍵菜單在[部分](../../campaign/using/marketing-campaign-deliveries.md#executing-a-workflow)中也有詳細說明。
