@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# 透過重新參與來改善傳遞能力{#re-engagement}
+# 透過重新參與改善傳遞能力{#re-engagement}
 
 在實作可傳送性時，部分最佳實務包括嘗試透過重新參與策略維持健康的訂閱者群並改善可傳送性。
 
@@ -26,23 +26,23 @@ ht-degree: 0%
 >
 >如需有關重新參與促銷活動策略和Adobe的可交付性服務的詳細資訊，請聯絡您的可交付性顧問，或與您的Adobe銷售代理聯絡。
 
-## ISP如何檢視非參與活動？ {#how-do-isps-view-non-engagement-activity-}
+## ISP如何檢視非參與活動？{#how-do-isps-view-non-engagement-activity-}
 
 多年來，ISP都使用使用者的參與意見回饋量度，來決定放送訊息的位置，或者他們是否應該放送訊息。 使用者參與度包括正面和負面意見，而ISP則會持續監控。 沒有參與也許是消極參與的主要貢獻者之一。 從傳遞性的角度來看，一致地傳送促銷活動給未顯示參與度的使用者，也會降低IP位址和網域的整體信譽。
 
 AOL、Gmail、Microsoft和Yahoo！等ISP 將非參與視為不想要的電子郵件，然後開始將訊息重新導向至垃圾訊息資料夾。 此外，這些訂閱者可能不再擁有電子郵件帳戶，而且這可當成「回收」垃圾訊息陷阱。 這表示該地址在一段時間內無效，且所有消息都被拒絕。 如果您的訂閱者管理系統未移除「硬性跳回」位址，則很可能會寄送垃圾訊息陷阱，導致重大傳送問題。
 
-## 您應該如何對待閒置？ {#how-should-you-approach-inactivity-}
+## 您應該如何對待閒置？{#how-should-you-approach-inactivity-}
 
 幸運的是，使用Adobe Campaign平台的客戶可以檢視其例項中的閒置狀態，方法是檢閱開啟的資料，然後根據區段點選資料。 由於非參與可能會阻礙傳遞，因此第一個想法可能是將訂閱者從資料庫中移除。 然而，在某些情況下，這可能被證明是錯誤的選擇。 因此，重新參與（也稱為贏回）策略是保留有興趣接收郵件的訂閱者，並逐步淘汰不再顯示活動的訂閱者的最佳建議。
 
-## 重新參與宣傳活動真的有效嗎？ {#do-re-engagement-campaigns-really-work-}
+## 重新參與宣傳活動真的有效嗎？{#do-re-engagement-campaigns-really-work-}
 
 根據回訪路徑研究，重新參與促銷活動的結果是12%的開放率，而正常促銷活動的平均為14%。 雖然只有24%的訂閱者看過重新參與的宣傳活動，但約45%的訂閱者看過後續的訊息。
 
 ![](assets/deliverability_implementation_1.png)
 
-## 如何建立重新參與的促銷活動？ {#how-do-you-create-a-re-engagement-campaign-}
+## 如何建立重新參與的促銷活動？{#how-do-you-create-a-re-engagement-campaign-}
 
 ### 階段1 {#phase-1}
 
