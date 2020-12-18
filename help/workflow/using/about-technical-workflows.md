@@ -17,13 +17,13 @@ ht-degree: 35%
 
 # 關於技術工作流程{#about-technical-workflows}
 
-本節中詳述的工作流程會與不同的Adobe Campaign內建套件一起安裝。 這些套件和相關的技術工作流程取決於您的授權合約。 預設情況下，它們位於以下節點的子資料夾中： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**
+本節中詳述的工作流程會與不同的Adobe Campaign內建套件一起安裝。 這些套件和相關的技術工作流程取決於您的授權合約。 預設情況下，它們位於以下節點的子資料夾中：**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
 
 >[!NOTE]
 >
->預設情況下，「 > > > 」節點中提供與「消息中心」模組相 **[!UICONTROL Administration]** 關 **[!UICONTROL Production]** 的 **[!UICONTROL Message Center]** 技術工作 **[!UICONTROL Technical workflows]** 流。
+>預設情況下，**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**&#x200B;節點中提供與消息中心模組相關的技術工作流。
 
-有關如何監控技術工作流程的詳細資訊，請參閱專 [用章節](../../workflow/using/monitoring-technical-workflows.md)。
+有關如何監控技術工作流的詳細資訊，請參閱[專用部分](../../workflow/using/monitoring-technical-workflows.md)。
 
 本節包含有關涉及下列套件之技術工作流程的資訊：
 
