@@ -19,11 +19,11 @@ ht-degree: 5%
 
 您可以翻譯使用Adobe Campaign數位內容編輯器(DCE)建立的網頁應用程式頁面。
 
-如果您通過Web應用程式的頁籤至少 **[!UICONTROL Localization]** 選擇了 **[!UICONTROL Properties]** 一種其他語言，則在使用DCE編輯的頁面中添加HTML內容塊時，將會出現一個新選項。
+如果您通過Web應用程式&#x200B;**[!UICONTROL Properties]**&#x200B;中的&#x200B;**[!UICONTROL Localization]**&#x200B;頁籤至少選擇了一種其他語言，則在使用DCE編輯的頁面中添加HTML內容塊時，將會出現一個新選項。
 
 此選項可讓您指出是否必須翻譯區塊內容。
 
-要翻譯的字串會透過應用程式的標籤，以與Web應用程式其他字串相同的 **[!UICONTROL Translations]** 方式收集。 有關詳細資訊，請參見[此頁面](../../web/using/translating-a-web-form.md)。
+要翻譯的字串會透過應用程式的&#x200B;**[!UICONTROL Translations]**&#x200B;標籤，以與Web應用程式其他字串相同的方式收集。 有關詳細資訊，請參見[此頁面](../../web/using/translating-a-web-form.md)。
 
 要標籤要翻譯的字串：
 
@@ -32,7 +32,7 @@ ht-degree: 5%
    ![](assets/dce_translation_3.png)
 
 1. 選取HTML區塊。
-1. 在右側的參數區塊中，選 **[!UICONTROL Localization]** 項可讓您標幟選取區塊的內容。 依預設，僅翻譯頁面標題。
+1. 在右側的參數塊中，**[!UICONTROL Localization]**&#x200B;選項可讓您標籤所選塊的內容。 依預設，僅翻譯頁面標題。
 
    ![](assets/dce_translation_1.png)
 
@@ -51,7 +51,7 @@ ht-degree: 5%
 
       ![](assets/dce_translation_2.png)
 
-1. 完成字串的標幟後，請返回Web應用程式並選取標 **[!UICONTROL Translations]** 簽。
+1. 完成字串的標幟後，請返回Web應用程式並選取&#x200B;**[!UICONTROL Translations]**&#x200B;標籤。
 1. 選取 **[!UICONTROL Collect the strings to translate]**。DCE中標籤的字串將添加到Web應用程式的字串中。
 
    >[!NOTE]
@@ -60,5 +60,5 @@ ht-degree: 5%
 
 1. 翻譯並核准字串。
 
-   然後，您就可以從Web應用程式的標籤中選取所需 **[!UICONTROL Preview]** 的語言來預覽翻譯。
+   然後，您可以從Web應用程式的&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中選取所需的語言來預覽翻譯。
 
