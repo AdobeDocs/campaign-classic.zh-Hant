@@ -19,11 +19,11 @@ ht-degree: 2%
 
 以下是有關在Adobe Campaign中使用資料結構描述的一些一般原則。
 
-如需在Adobe Campaign中建立和設定資料結構描述的詳細資訊，請參 [閱此節](../../configuration/using/about-schema-edition.md)。
+如需在Adobe Campaign中建立和設定資料結構的詳細資訊，請參閱[本節](../../configuration/using/about-schema-edition.md)。
 
 ## 綱要結構 {#schema-structure}
 
-資料結構的XML檔案必須包含 **`<srcschema>`** 根元素，其中 **包含** namespace **** 屬性，以填入結構名稱及其命名空間。
+資料架構的XML文檔必須包含&#x200B;**`<srcschema>`**&#x200B;根元素，其中&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬性必須填入架構名稱及其命名空間。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,13 +39,13 @@ ht-degree: 2%
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-在主 **要元素中輸入的範本屬性** ，可讓您將具有一般屬性的架構擴充至所有內容定義，例如名稱、建立日期、作者、相關字串等。
+在主要元素中輸入的&#x200B;**template**&#x200B;屬性可讓您將具有一般屬性的架構擴充至所有內容定義，例如名稱、建立日期、作者、相關字串等。
 
-這些屬性在 **ncm:content架構中說明** 。
+這些屬性在&#x200B;**ncm:content**&#x200B;架構中有說明。
 
 >[!NOTE]
 >
->xmlChildren屬性的存 **** 在表示通過主元素輸入的資料結構儲存在內容實例的XML文檔中。
+>存在&#x200B;**xmlChildren**&#x200B;屬性表示通過主元素輸入的資料結構儲存在內容實例的XML文檔中。
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 ## 屬性 {#properties}
 
-可使用各種屬性來豐富資 **`<element>`** 料 **`<attribute>`** 架構的元素。
+各種屬性可用於豐富資料架構的&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;元素。
 
 內容管理中使用的主要屬性如下：
 
@@ -106,11 +106,11 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-## 系列元素 {#collection-elements}
+## 系列元素{#collection-elements}
 
 系列是具有相同名稱和相同階層層級的元素清單。
 
-在我們的範例中， **`<chapter>`** 和元 **`<page>`** 素是系列元素。 因此 **，必須將未綁定** 的屬性添加到以下元素的定義中：
+在我們的範例中，**`<chapter>`**&#x200B;和&#x200B;**`<page>`**&#x200B;元素是系列元素。 因此，**unbound**&#x200B;屬性必須添加到以下元素的定義中：
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -122,15 +122,15 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->存在ordered=&quot; **** true&quot;屬性可讓您對插入的系列元素進行排序。
+>存在&#x200B;**ordered=&quot;true&quot;**&#x200B;屬性可讓您排序插入的系列元素。
 
-## 元素參照 {#element-referencing}
+## 引用{#element-referencing}的元素
 
-在內容結構描述中，元素參考使用較多。 它可讓您將元素的定義分解， **`<element>`** 以便在具有相同結構的其他元素上引用它。
+在內容結構描述中，元素參考使用較多。 它可讓您對&#x200B;**`<element>`**&#x200B;元素的定義進行分解，以便對具有相同結構的其他元素進行引用。
 
-要 **引用的元素** 上的ref屬性必須使用引用元素的路徑(XPath)完成。
+要引用的元素上的&#x200B;**ref**&#x200B;屬性必須以引用元素的路徑(XPath)完成。
 
-**範例**:添加與示 **例模式的元素具有****`<chapter>`** 相同結構的附錄部分。
+**範例**:添加與示 **** 例模式的元素具有相 **`<chapter>`** 同結構的Appendixsection。
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -152,11 +152,11 @@ ht-degree: 2%
 
 章節結構會移至主要元素外部名稱為&quot;section&quot;的元素。 本章和章節引用「章節」元素。
 
-## 計算字串 {#compute-string}
+## 計算字串{#compute-string}
 
-計 **算字串** 是XPath運算式，用來建構代表內容例項的字串。
+**計算字串**&#x200B;是用於構造表示內容實例的字串的XPath表達式。
 
-以下是我們的示例模式及其 **計算字串**:
+以下是我們的示例模式及其&#x200B;**Compute string**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -177,4 +177,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->「名 **稱** 」編輯控制項可讓您輸入架構的索引鍵，包括名稱和命名空間。 架構 **根元素的名** 稱和名稱空間屬性 **** ，將在架構的XML編輯欄位中自動更新。
+>**Name**&#x200B;編輯控制項可讓您輸入架構的索引鍵，包括名稱和命名空間。 架構根元素的&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬性會在架構的XML編輯欄位中自動更新。
