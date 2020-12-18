@@ -27,7 +27,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。請參閱「 [資料夾和視圖」](../../platform/using/access-management.md#folders-and-views)。
+>若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。請參閱[資料夾和視圖](../../platform/using/access-management.md#folders-and-views)。
 
 ## 移動收件者 {#moving-recipients}
 
