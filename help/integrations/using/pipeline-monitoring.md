@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 管線監視 {#pipeline-monitoring}
 
-狀 [!DNL pipelined] 態web服務提供進程狀態的信 [!DNL pipelined] 息。
+[!DNL pipelined]狀態web服務提供有關[!DNL pipelined]進程狀態的資訊。
 
 它可以使用瀏覽器手動存取，也可以自動與監控應用程式一起存取。
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ![](assets/triggers_8.png)
 
-## 指標 {#indicators}
+## 指標{#indicators}
 
 本節列出狀態Web服務中的指示器。
 
@@ -42,7 +42,7 @@ ht-degree: 1%
    * 下一偏移齊平：等到下一批完成時。
    * processed-since-last-flush:上一批處理的觸發器數。
 * 路由
-   * 觸發器：已檢索的觸發器清單。 在選項中 [!DNL pipelined] 配置。
+   * 觸發器：已檢索的觸發器清單。 在[!DNL pipelined]選項中配置。
 * 統計
    * average-pointer-flush-time-ms:一批觸發器的平均處理時間。
    * average-trigger-processing-time-ms:解析觸發器資料的平均時間。
@@ -72,7 +72,7 @@ ht-degree: 1%
    * retry-validity-duration-ms:從時間處理開始的持續時間會重試，直到消息被丟棄。
    * 管線消息報告
 
-## 管線消息報告 {#pipeline-report}
+## 管線消息報告{#pipeline-report}
 
 此報表顯示過去五天內每小時的訊息數。
 
