@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # 切換為 Unicode{#switching-to-unicode}
 
-對於Linux/ **PostgreSQL中的現有** prod實例，切換到unicode的步驟如下：
+對於Linux/PostgreSQL中現有的&#x200B;**prod**&#x200B;實例，切換到unicode的步驟如下：
 
 1. 停止向資料庫寫入的進程：
 
@@ -60,7 +60,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   在與數 **據庫標識符** (databaseId)相關的值前面添加&#x200B;**u字元**:
+   將&#x200B;**u**&#x200B;字元加在與資料庫標識符(**databaseId**)相關的值前面：
 
    ```
    <web>
