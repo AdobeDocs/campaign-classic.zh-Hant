@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2368'
 ht-degree: 0%
 
 ---
@@ -204,12 +204,13 @@ ht-degree: 0%
 
 ### 客戶端控制台更新
 
+客戶機控制台必須與伺服器實例位於同一版本。
+
 在安裝Adobe Campaign應用程式伺服器的機器上(nserverweb)，下載並複製檔案：
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
-
 
 下次連接客戶機控制台時，會出現一個窗口通知用戶新更新的可用性，並為用戶提供下載和安裝該更新的可能性。
 
