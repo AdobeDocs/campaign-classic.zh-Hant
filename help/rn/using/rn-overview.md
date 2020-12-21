@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '434'
+ht-degree: 94%
 
 ---
 
@@ -37,13 +37,13 @@ ht-degree: 100%
 
 最後&#x200B;**的 RC 版本**[為 Campaign Classic 20.3 版本](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/orange3.png) **不再適用** - 需要更新至更新的版本編號。
-
-![](assets/do-not-localize/red3.png) **已棄用** - 必須更新至更新的版本編號。
+![](assets/do-not-localize/red3.png) **已過時** -無部署。現有實作必須升級。
 
 ## 建議{#recommendations}
 
 若要確保配置穩定，我們建議您在所有執行相同用戶端配置的伺服器上，安裝相同的穩定版本編號。
+
+此外，客戶端控制台應與伺服器實例位於同一個版本。
 
 若要保持最新的實施，請務必閱讀每個新發行版本的[已棄用和已移除功能](../../rn/using/deprecated-features.md)和[相容性矩陣](../../rn/using/compatibility-matrix.md)頁面。
 
