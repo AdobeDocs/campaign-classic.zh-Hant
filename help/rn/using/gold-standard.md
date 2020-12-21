@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: f9584342d81b53ad5854b30b7c4970b0aba6d4ff
+source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ _2020 年 7 月 7 日_
 
 >[!CAUTION]
 >
->我們建議您使用此版本中可用的用戶端控制台進行升級。請參閱[此頁面](../../installation/using/installing-the-client-console.md)。
+>我們建議您使用此版本中可用的用戶端控制台進行升級。請參閱[本頁](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png)Gold Standard 第 9 發行版本{#gs-9}
 
@@ -78,7 +78,7 @@ _2020 年 4 月 29 日_
 * 修正了造成清理工作流程當機的迴歸。
 * 修正了清理工作流程記錄檔的次要迴歸。
 
-## ![](assets/do-not-localize/orange_2.png)Gold Standard 第 6 發行版本{#gs-6}
+## ![](assets/do-not-localize/red_2.png)Gold Standard 第 6 發行版本{#gs-6}
 
 _2020 年 3 月 9 日_
 
@@ -86,7 +86,7 @@ _2020 年 3 月 9 日_
 
 * 修正了使用 FTP over SSL 的外部帳戶的問題。(NEO-20498)
 
-## ![](assets/do-not-localize/orange_2.png)Gold Standard 第 5 發行版本{#gs-5}
+## ![](assets/do-not-localize/red_2.png)Gold Standard 第 5 發行版本{#gs-5}
 
 _2019 年 12 月 17 日_
 
@@ -94,7 +94,7 @@ _2019 年 12 月 17 日_
 
 * 修正以下通訊頻道的追蹤問題：行動（SMS、MMS）、推播（iOS、Android）和社交網路（Facebook、Twitter）。(NEO-19595)
 
-## ![](assets/do-not-localize/orange_2.png)Gold Standard 第 4 發行版本{#gs-4}
+## ![](assets/do-not-localize/red_2.png)Gold Standard 第 4 發行版本{#gs-4}
 
 _2019 年 12 月 11 日_
 
@@ -102,7 +102,7 @@ _2019 年 12 月 11 日_
 
 * 修正了在使用 MSSQL 資料庫傳送訊息時，所導致的效能問題。(NEO-17558)
 
-## ![](assets/do-not-localize/orange_2.png)Gold Standard 第 3 發行版本{#gs-3}
+## ![](assets/do-not-localize/red_2.png)Gold Standard 第 3 發行版本{#gs-3}
 
 _2019 年 11 月 20 日_
 
