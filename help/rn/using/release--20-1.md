@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -17,19 +17,19 @@ ht-degree: 6%
 
 # 第 20.1 發行版本{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.1.3 - Build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) 版本 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.1 - Build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) 版本 20.1 - Build 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
