@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '3660'
-ht-degree: 99%
+source-wordcount: '3668'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,8 @@ ht-degree: 99%
 交付監測科已改編為專題專題。 [顯示全文](../../delivery/using/about-delivery-monitoring.md)
 
 已新增使用案例，說明如何將傳送者的IP位址新增至傳送記錄檔。 [顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
+
+隱私權常見問答已移至[本節](../../platform/using/privacy-faq.md)。
 
 ## 2020 年11月 {#nov-2020}
 
