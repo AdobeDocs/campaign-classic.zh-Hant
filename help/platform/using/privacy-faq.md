@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 99%
+source-wordcount: '809'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 ## 主要條款{#key-terms}
 
-**隱私權的主要條款為何？**
+### 隱私權的主要條款為何？
 
 以下所列出的項目會連結至 Adobe Campaign 中與隱私權和同意相關的主要條款與概念：
 
@@ -32,7 +32,7 @@ ht-degree: 99%
 
 ## 隱私權法規準備{#privacy-regulations-readiness}
 
-**Adobe Campaign 對遵守最新的隱私權法規有何建議？**
+### Adobe Campaign 對遵守最新的隱私權法規有何建議？
 
 Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保他們採取一切必要步驟，以便做好 GDPR、CCPA、PDPA、LGPD 或任何其他適用法規的準備。
 
@@ -68,7 +68,7 @@ Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保�
 
 ## 保留使用者參與{#preserve-user-engagement}
 
-**資料控制方如何在對使用者參與影響最小的情況下獲得同意？**
+### 資料控制方如何在對使用者參與影響最小的情況下獲得同意？
 
 在某些行銷活動需要同意的情況下，消費者同意需要有效（即沒有沉默作為同意或預先選取的核取方塊）、未捆綁銷售，並且可能不以提供服務為條件。
 
@@ -78,7 +78,7 @@ Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保�
 
 ## 管理同意{#manage-consent}
 
-**資料控制方如何在 Adobe Campaign 中管理同意？**
+### 資料控制方如何在 Adobe Campaign 中管理同意？
 
 與大多數行銷人員透過自訂資料欄位或一個或多個服務善用的情況相比，Adobe Campaign 已經提供了在更高層級上管理同意的功能。
 
@@ -88,7 +88,7 @@ Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保�
 
 ## 資料刪除{#data-deletion}
 
-**Adobe Campaign 中的資料控制方可以根據資料主體的客戶請求刪除哪些資料？**
+### Adobe Campaign 中的資料控制方可以根據資料主體的客戶請求刪除哪些資料？
 
 所有與資料主體相關的資料都會被刪除，包括現成可用的表格和自訂表格。
 
@@ -96,19 +96,21 @@ Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保�
 
 作為資料控制方，您可以選擇透過更改資料架構中定義的連結的完整性來自訂此內容（例如，若您有商業理由不刪除某些資料）。
 
-**刪除傳送和追蹤記錄時，報告會受到哪些影響？**
+### 刪除傳送和追蹤記錄時，報告會受到哪些影響？
 
 Adobe Campaign 中的報告是以根據來自傳送和追蹤記錄彙總資料計算的指標為基礎。因此，移除個別記錄檔時，不應該影響報告上顯示的度量。
 
 ## 重新匯入資料{#re-import-data}
 
-**通常在 Adobe Campaign 中，記錄會從外部資料來源上傳。我是否需要留意稍後可能重新匯入資料？**
+### 我是否需要留意稍後可能重新匯入資料？
+
+通常在 Adobe Campaign 中，記錄會從外部資料來源上傳。
 
 作為資料控制方，您需要確保在收到刪除請求時，從所有系統刪除資料主體的所有必要資料。
 
 ## 再次選擇加入{#opt-in-again}
 
-**資料主體（其資料已從 Adobe Campaign 中清除）可以稍後再次選擇加入嗎？**
+**資料主體（其資料已從Adobe Campaign中清除）可以稍後再次選擇加入嗎？**
 
 資料主體可能會再次選擇加入，或在其資料從 Adobe Campaign 中刪除後以新收件者身分新增。
 
