@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2215'
 ht-degree: 98%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 98%
          + [常見問題](platform/using/common-questions.md)
          + [重要概念](platform/using/faq-key-concepts.md)
          + [建置升級](platform/using/faq-build-upgrade.md)
+         + [隱私權](platform/using/privacy-faq.md)
          + [受眾](platform/using/faq-audiences.md)
          + [設計訊息](platform/using/faq-designing.md)
          + [傳送訊息](platform/using/faq-messages.md)
@@ -57,8 +58,7 @@ ht-degree: 98%
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
-      + [隱私權要求](platform/using/privacy-requests.md)
-      + [隱私權常見問答集](platform/using/privacy-faq.md)
+      + [隱私權請求](platform/using/privacy-requests.md)
    + 用戶檔案管理{#profile-management}
       + [關於用戶檔案](platform/using/about-profiles.md)
       + [編輯用戶檔案](platform/using/editing-a-profile.md)
