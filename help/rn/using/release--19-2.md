@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 第 19.2 發行版本{#release-19-2}
 
-## ![](assets/do-not-localize/orange_2.png) 版本 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) 版本 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _2020年2月07日_
 
@@ -26,7 +26,7 @@ _2020年2月07日_
 * 修正因實施SSL認證而導致使用者連線在Windows伺服器上失敗的回歸問題。 (NEO-20629)
 * 修正在&#x200B;**關於**&#x200B;功能表中顯示錯誤版本標籤號碼的問題。
 
-## ![](assets/do-not-localize/orange_2.png) 版本 19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) 版本 19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
