@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
 workflow-type: tm+mt
 source-wordcount: '1852'
 ht-degree: 98%
@@ -148,7 +148,7 @@ _2020 年 10 月 27 日_
 * 修正了使用 Snowflake FDA 連接器時所發生的問題。具有 Snowflake FDA 存取名稱權限的使用者無法對 Snowflake FDA 方案執行查詢。在記錄中顯示「找不到密碼」類型的錯誤。(NEO-23851)
 * 修正了使用　FDA　連接器時，連結的　FDA　方案名稱為目前方案的元素名稱子字串時，所發生的問題。例如，這發生在若 FDA 方案是「cust」，且收件者方案中的其中一個元素是「customer」，就會發生這種問題。在擷取「customer」元素內的欄目並從「cust」FDA 方案中新增欄目時，本機的欄目值便會遺失。(NEO-20193)
 * 修正了從外部資料庫擷取記錄並將記錄插入　Campaign　資料庫時，所發生的工作流程問題。(NEO-26359)
-* 修正了&#x200B;**「更新事件狀態」**&#x200B;技術工作流程中的問題：為了符合&#x200B;**「傳送數據」**&#x200B;活動的傳入對應欄位大小、**「更新傳遞數據」**&#x200B;活動的三個目標欄位大小，已從 32 位元變更為 64 位元。(NEO-11557) 瞭解更多&#x200B;**「更新」事件狀態**&#x200B;工作流程[，請參閱本節](../../workflow/using/message-center--execution-.md)。
+* 修正了&#x200B;**「更新事件狀態」**&#x200B;技術工作流程中的問題：為了符合&#x200B;**「傳送數據」**&#x200B;活動的傳入對應欄位大小、**「更新傳遞數據」**&#x200B;活動的三個目標欄位大小，已從 32 位元變更為 64 位元。(NEO-11557) 瞭解更多&#x200B;**「更新」事件狀態**&#x200B;工作流程[，請參閱本節](../../workflow/using/about-technical-workflows.md)。
 * 修正了在&#x200B;**「訊息中心事件歷史記錄」**&#x200B;報到中，嘗試套用篩選器且導致指令碼錯誤，且無法根據日期範圍篩選的問題。(NEO-23365)
 * 修正了干擾問題，其在 **Campaign 工作** (operationMgt) 和&#x200B;**預覽**（預測）技術工作流程之間。當排定的傳遞仍為「目標就緒」或「就緒即可傳送」狀態時，便會發生此問體。(NEO-20819)
 * 修正了 xtkOperator mdata 欄位中未顯示 XML 識別碼時，所發生的 XML 解析問題。它導致了後升級失敗。(NEO-26113)
