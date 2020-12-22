@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 70%
+source-wordcount: '255'
+ht-degree: 66%
 
 ---
 
@@ -19,17 +19,16 @@ ht-degree: 70%
 
 ## 新增功能
 
-* **[更新您的Adobe Experience Cloud觸發器整合](integrations/using/configuring-adobe-io.md)**<br/> ：舊版oAuth驗證服務已過期。 瞭解如何移轉至Adobe I/O
+* **[移除不正確的硬](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 體彈回數瞭解如何在Gmail中斷後更新不正確的硬體彈回數
 
-* **[移至基於HTTP/2的APNs提供者API](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/> 瞭解如何從舊式二進位通訊協定移轉至基於HTTP/2的APNs提供者API
+* **[更新您的Adobe Experience Cloud觸發器整](integrations/using/configuring-adobe-io.md)**<br/> 合舊版oAuth驗證服務已到期。瞭解如何移轉至Adobe I/O
 
-* **[將表情符號加入訊息](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> 。您現在可以在訊息和主旨行中插入表情符號
+* **[移至基於HTTP/2的APNs提供者](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/> APIL瞭解如何從舊式二進位通訊協定移轉至基於HTTP/2的APNs提供者API
+
+* **[將表情符號新增至](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> 訊息中您現在可以在訊息和主旨行中插入表情符號
 
 * **[取得支援](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)**<br/>
 存取常見問題集、最佳實務、說明資源，以及請求協助
-
-* **[追蹤功能](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html)**<br/>
-瞭解 Campaign 中的追蹤功能和流程
 
 [更多更新](/help/rn/using/documentation-updates.md)
 
@@ -84,7 +83,7 @@ ht-degree: 70%
 | 有用的頁面 | 面向開發人員的資源 |
 |---|---|
 | [發行說明](/help/rn/using/latest-release.md) | [錯誤訊息清單](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [操作說明短片](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html) | [Campaign 資料模型](configuration/using/about-data-model.md) |
+| [操作說明短片](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant) | [Campaign 資料模型](configuration/using/about-data-model.md) |
 | [相容性矩陣](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [開始使用 Campaign](platform/using/about-adobe-campaign-classic.md) | [實施指南](https://helpx.adobe.com/tw/campaign/kb/acc-implementation.html) |
 | [Gold Standard 升級](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html) | [追蹤指南](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html) |
