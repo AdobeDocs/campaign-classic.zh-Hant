@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 98%
+source-wordcount: '2181'
+ht-degree: 97%
 
 ---
 
@@ -114,6 +114,8 @@ ht-degree: 98%
    + 在行動裝置上傳送訊息{#sending-messages-on-mobiles}
       + [SMS 頻道](delivery/using/sms-channel.md)
       + [LINE 頻道](delivery/using/line-channel.md)
+      + [SMS連接器通訊協定與設定](delivery/using/sms-protocol.md)
+      + [SMS疑難排解](delivery/using/troubleshooting-sms.md)
    + 傳送推播通知{#sending-push-notifications}
       + [關於行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
       + [將 Campaign SDK 整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -438,6 +440,8 @@ ht-degree: 98%
          + [建立摘要清單](workflow/using/creating-a-summary-list.md)
          + [豐富資料](workflow/using/enriching-data.md)
          + [使用彙總](workflow/using/using-aggregates.md)
+         + [使用重複資料消除活動的合併功能](workflow/using/deduplication-merge.md)
+      + 設計查詢{#designing-queries}
          + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
       + 目標定位{#designing-queries}
          + [查詢收件人資料表](workflow/using/querying-recipient-table.md)
@@ -461,26 +465,7 @@ ht-degree: 98%
       + [管理活動影像](workflow/using/managing-activity-images.md)
       + [管理傾向](workflow/using/managing-propensity.md)
       + [管理時區](workflow/using/managing-time-zones.md)
-   + 技術工作流程 {#technical-workflows}
-      + [關於技術工作流程](workflow/using/about-technical-workflows.md)
-      + [傳遞](workflow/using/deliveries.md)
-      + [Campaign](workflow/using/campaign.md)
-      + [網站分析](workflow/using/web-analytics.md)
-      + [分散式行銷](workflow/using/distributed-marketing.md)
-      + [傳遞能力監視](workflow/using/email-deliverability.md)
-      + [收件匣轉譯](workflow/using/inbox-rendering.md)
-      + [互動](workflow/using/interaction.md)
-      + [優惠方案引擎的控制](workflow/using/control-of-offer-engine.md)
-      + [訊息中心（控制）](workflow/using/message-center--control-.md)
-      + [訊息中心（執行）](workflow/using/message-center--execution-.md)
-      + [行動應用程式頻道](workflow/using/mobile-app-channel.md)
-      + [LINE 頻道](workflow/using/line-channel.md)
-      + [行銷資源 (MRM)](workflow/using/marketing-resources--mrm-.md)
-      + [社交行銷](workflow/using/social-marketing.md)
-      + [與 Adobe Experience Cloud 解決方案整合](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [隱私權資料保護法規](workflow/using/general-data-protection-regulation--gdpr-.md)
-      + [轉移至中間來源](workflow/using/transfer-to-mid-sourcing.md)
-      + [中間來源平台](workflow/using/mid-sourcing-platform.md)
+      + [技術工作流程](workflow/using/about-technical-workflows.md)
 + 管理優惠方案{#managing-offers}
    + 開始互動{#interaction-overview}
       + [互動與優惠方案管理](interaction/using/interaction-and-offer-management.md)
@@ -619,7 +604,7 @@ ht-degree: 98%
       + [建立和設定資料庫](installation/using/creating-and-configuring-the-database.md)
       + [Campaign 伺服器設定](installation/using/campaign-server-configuration.md)
       + [部署執行個體](installation/using/deploying-an-instance.md)
-      + [安裝 Campaign Classic 標準套件](installation/using/installing-campaign-standard-packages.md)
+      + [安裝Campaign Classic內建套件](installation/using/installing-campaign-standard-packages.md)
    + 其他配置 {#additional-configurations}
       + [設定 Campaign 伺服器](installation/using/configuring-campaign-server.md)
       + [透過 LDAP 連線](installation/using/connecting-through-ldap.md)
