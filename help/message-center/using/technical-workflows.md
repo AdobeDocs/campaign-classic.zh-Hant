@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 11%
@@ -51,4 +51,3 @@ Once the control and execution modules are installed on the same instance, you m
    * **[!UICONTROL Ignored by the delivery]** :此狀態會從傳送記錄複製。這表示會由傳送忽略。
    * **[!UICONTROL Delivery failed]** :此狀態會從傳送記錄複製。這表示傳送失敗。
    * **[!UICONTROL Event not taken into account]** :事件無法連結至訊息範本。將不會處理事件。
-
