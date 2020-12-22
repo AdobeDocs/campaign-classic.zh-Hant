@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 97%
@@ -110,7 +110,7 @@ Adobe Campaign 中的報告是以根據來自傳送和追蹤記錄彙總資料�
 
 ## 再次選擇加入{#opt-in-again}
 
-**資料主體（其資料已從Adobe Campaign中清除）可以稍後再次選擇加入嗎？**
+### 資料主體（其資料已從Adobe Campaign中清除）可以稍後再次選擇加入嗎？
 
 資料主體可能會再次選擇加入，或在其資料從 Adobe Campaign 中刪除後以新收件者身分新增。
 
