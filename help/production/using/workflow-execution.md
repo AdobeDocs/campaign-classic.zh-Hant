@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 此問題可能有數個原因，請依照下列步驟加以解決：
 
-1. 檢查[**[!UICONTROL operationMgt]**](../../workflow/using/campaign.md)技術工作流狀態。 此工作流程管理促銷活動內的工作或工作流程。 如果失敗，這會導致工作流程無法啟動／停止。 重新啟動它以繼續執行促銷活動工作流程。
+1. 檢查[**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md)技術工作流狀態。 此工作流程管理促銷活動內的工作或工作流程。 如果失敗，這會導致工作流程無法啟動／停止。 重新啟動它以繼續執行促銷活動工作流程。
 
    有關技術工作流監控的詳細資訊，請參閱[本頁](../../workflow/using/monitoring-technical-workflows.md)。
 
