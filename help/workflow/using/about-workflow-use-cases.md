@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 66%
+source-wordcount: '201'
+ht-degree: 64%
 
 ---
 
@@ -55,6 +55,7 @@ ht-degree: 66%
 * [匯入使用控制面板產生的金鑰加密的資料](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [使用控制面板上安裝的密鑰加密和導出資料](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
+* [使用重複資料消除活動的合併功能](../../workflow/using/deduplication-merge.md)
 
 ## 目標定位{#designing-queries}
 
