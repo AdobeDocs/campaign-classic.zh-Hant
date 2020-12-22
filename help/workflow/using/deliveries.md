@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 # 傳遞{#deliveries}
 
-依預設會安裝下列詳細的工作流程。
+依預設，以下詳細說明的工作流程會與&#x200B;**Deliveries**&#x200B;模組一起安裝。
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ ht-degree: 15%
    <td> 此工作流程會透過電子郵件將系統活動報表傳送至「帳單」運算元。 預設會在每月25日觸發。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">有效帳單設定檔數</span> <br /> </td> 
+   <td> <span class="uicontrol">帳單（作用中描述檔）</span> <br /> </td> 
    <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
    <td> <p>此工作流程會計算作用中描述檔的數目。 預設會在每晚1點觸發。</p> <p><strong>Profile</strong> 是指一筆代表終端客戶或潛在客戶之資訊的紀錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。計費只涉及「作用中」的設定檔。 如果描述檔在過去12個月內已透過任何通道鎖定或傳達，則描述檔會被視為「作用中」。</p> <p>Facebook 和 Twitter 通路不包含在內。</p> <p>您可從「管理」「促銷活動管理」「<span class="uicontrol">&gt;「客戶量度」「</span>」選單中概述「<span class="uicontrol">作用中描述檔數」。</span><span class="uicontrol"></span></span><span class="uicontrol"></span></span></p> </td> 
   </tr> 
@@ -67,7 +67,7 @@ ht-degree: 15%
    <td> 此工作流程會將核准的選件部署至線上環境，以及選件目錄中包含的每個類別。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">預覽</span> <br /> </td> 
+   <td> <span class="uicontrol">預測</span> <br /> </td> 
    <td> <span class="uicontrol">預測</span> <br /> </td> 
    <td> 此工作流程會分析儲存在臨時日曆中的傳送（建立臨時記錄）。 預設每天1am觸發。<br /> </td> 
   </tr> 
