@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -58,7 +58,7 @@ ht-degree: 8%
 
 對於&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. 查看位於&#x200B;**[!UICONTROL Campaign process]**&#x200B;資料夾下的所有工作流。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/campaign.md)。
+1. 查看位於&#x200B;**[!UICONTROL Campaign process]**&#x200B;資料夾下的所有工作流。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/about-technical-workflows.md)。
 1. 檢查工作流程是否如計畫般執行，以及日記帳是否不會反覆顯示錯誤。
 
 ## 工作流程監督{#workflow-supervision}
