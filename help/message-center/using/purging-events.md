@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '90'
 ht-degree: 6%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 6%
 
 # 清除事件{#purging-events}
 
-您可以使用部署嚮導來配置資料在資料庫中儲存的時間。
+您可以使用[部署嚮導](../../production/using/database-cleanup-workflow.md#deployment-wizard)配置資料在資料庫中儲存的時間。
 
-事件清除由&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流自動執行。 此工作流程會清除在執行例項上接收和儲存的事件，以及封存在控制例項上的事件。
+事件清除由[資料庫清理工作流](../../production/using/database-cleanup-workflow.md)自動執行。 此工作流程會清除在執行例項上接收和儲存的事件，以及封存在控制例項上的事件。
 
 根據需要使用箭頭來更改清除設定。
 
