@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 647a872d71d19802d7334a6e8f881f8d7ad94d13
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2984'
 ht-degree: 2%
 
 ---
@@ -451,3 +451,7 @@ Adobe Campaign存取權限表位於[這裡](/help/platform/using/assets/access-r
 檢視中將顯示下列傳送：
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
+
+>[!NOTE]
+>
+>在管理[事務性消息傳遞](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不能設定為執行實例的視圖，因為這可能導致訪問權限問題。 如需事件收集的詳細資訊，請參閱[本節](../../message-center/using/event-collection.md)。
