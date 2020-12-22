@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
@@ -156,7 +156,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
-   <td> 兩次重試電子郵件訊息的間隔（秒）。<br /> </td> 
+   <td> 兩次重試電子郵件的間隔（秒）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
@@ -204,7 +204,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>在計算正在運行的交貨數時，<span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span>技術工作流將使用此選項。</p>它允許您定義超過天數，以便將狀態不一致的交貨從運行交貨的計數中排除。</p><p>依預設，值會設為"7"，這表示將排除7天前不一致的傳送。</p></td> 
+   <td><p>在計算正在運行的交貨數時，<span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span>技術工作流將使用此選項。</p>它允許您定義超過天數，以便將狀態不一致的交貨從運行交貨的計數中排除。</p><p>依預設，值會設為"7"，這表示將排除7天前不一致的傳送。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -360,7 +360,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 允許您監視<a href="../../workflow/using/campaign.md">operationMgt</a>技術工作流執行。 激活（值"1"）後，執行資訊將記錄在工作流審計日誌中。<br /> </td> 
+   <td> 允許您監視<a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>技術工作流執行。 激活（值"1"）後，執行資訊將記錄在工作流審計日誌中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
