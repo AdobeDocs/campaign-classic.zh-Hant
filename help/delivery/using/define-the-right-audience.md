@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '480'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,10 @@ ht-degree: 3%
 
 刪除重複地址可保護您的發送信譽並確保良好的隔離管理。
 
-瞭解更多[在此使用案例中](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery)。
+**相關主題：**
+
+* [重複資料消除活動](../../workflow/using/deduplication.md)。
+* [使用案例：使用重複資料消除活動的合併功能](../../workflow/using/deduplication-merge.md)
 
 ## 索引電子郵件地址{#index-addresses}
 
