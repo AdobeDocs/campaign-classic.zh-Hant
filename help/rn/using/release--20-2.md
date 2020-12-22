@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 100%
+source-wordcount: '2483'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,30 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) 版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+
+_2020年12月22日_
+
+>[!CAUTION]
+>
+>此版本隨附新的連線通訊協定： 升級對於促銷活動伺服器和用戶端主控台而言，都是必備的，才能在2020年3月21日之後連線至促銷活動
+
+**功能改善**
+
+* 已更新連線通訊協定，以遵循新的IMS驗證機制。
+* 觸發整合驗證原本以oAUTH驗證設定為基礎，以存取管道的觸發器已變更並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
+* 在iOS APNs舊式二進位通訊協定支援結束後，使用此通訊協定的所有執行個體都會在設定檔期間更新為HTTP/2通訊協定。
+* 已修正安全性問題，以加強針對伺服器端偽造要求(SSRF)問題的保護。 (NEO-27777)
+* 修正連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳送並導致效能問題的問題。 (NEO-28609)
+* 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。(NEO-26856)
+* 修正了在工作流程&#x200B;**「分割」**&#x200B;活動中顯示目標資料餘數時，而造成伺服器當機的問題。
+* 修正了嘗試在查詢後預覽 SMS 訊息時，除&#x200B;**收件者** (nms:recipient) 以外的其他方案可能會顯示錯誤訊息的問題。(NEO-27517)
+* 修正當以主機名稱中明確定義的埠號提出HTTPS連線要求時，呼叫失敗並發生憑證錯誤的問題。 (NEO-29146)
+* 修正POSIX線程管理中在行銷實例上生成大型核心轉儲檔案的問題。 (NEO-28117、NEO-29281)
+* 已修正在準備傳送或循環傳送預覽時，可能導致網頁程式當機的問題。 (NEO-27790、NEO-27517)
+* 修正當非管理員運算子觸發傳送或證明傳送失敗的問題。 (NEO-28597)
+
+## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
 _2020 年 9 月 11 日_
 
