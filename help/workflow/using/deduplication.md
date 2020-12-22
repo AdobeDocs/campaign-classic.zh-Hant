@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '1089'
 ht-degree: 10%
 
 ---
@@ -18,6 +18,29 @@ ht-degree: 10%
 # 重複資料刪除{#deduplication}
 
 重複資料消除從入站活動的結果中刪除重複項。 可在電子郵件地址、電話號碼或其他欄位上執行重複資料刪除。
+
+**[!UICONTROL Deduplication]**&#x200B;活動用於從資料集中刪除重複行。 例如，以下記錄可能會被視為重複，因為它們有相同的電子郵件地址和相同的行動及／或家用電話。
+
+| 上次修改日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
+-----|------------|-----------|-------|--------------|------
+| 02/03/2020 | 鮑勃 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 05/19/2020 | 羅伯特 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | 鮑比 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+
+**[!UICONTROL Deduplication]**&#x200B;活動可在識別重複項後將整行保留為唯一記錄。 例如，在上述使用案例中，如果活動設定為僅保留最舊&#x200B;**[!UICONTROL Date]**&#x200B;的記錄，則結果為：
+
+| 日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
+-----|----------|------------|-------|--------------|------
+| 02/03/2020 | 鮑勃 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+
+所選主記錄將繼承資料，而不將欄位資料與重複行中其它相關資料合併。
+
+補充：
+
+| 日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
+-----|------------|-----------|-------|--------------|------
+| 05/19/2020 | 羅伯特 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | 鮑比 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 ## 最佳實務{#best-practices}
 
@@ -34,15 +57,11 @@ ht-degree: 10%
 
 要配置重複資料消除，請輸入其標籤、方法和重複資料消除標準，以及與結果相關的選項。
 
-按一下&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;連結以定義重複資料消除模式。
+1. 按一下&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;連結以定義重複資料消除模式。
 
-![](assets/s_user_segmentation_dedup_param.png)
+   ![](assets/s_user_segmentation_dedup_param.png)
 
-1. 目標選擇
-
-   選擇此活動的目標類型（預設情況下，重複資料消除涉及收件人）和要使用的標準，即相同值允許您識別重複項的欄位：電子郵件地址、行動電話或電話號碼、傳真號碼或直接郵件地址。
-
-   ![](assets/s_user_segmentation_dedup_param2.png)
+1. 選擇此活動的目標類型（預設情況下，重複資料消除連結到收件人）和要使用的標準，即相同值允許您標識重複項的欄位。
 
    >[!NOTE]
    >
@@ -50,11 +69,13 @@ ht-degree: 10%
    >
    >在下一步中，**[!UICONTROL Other]**&#x200B;選項可讓您選取要使用的准則或准則：
 
+   ![](assets/s_user_segmentation_dedup_param2.png)
+
+1. 在下一步中，**[!UICONTROL Other]**&#x200B;選項可讓您選擇在相同值情況下要使用的准則或准則。
+
    ![](assets/s_user_segmentation_dedup_param3.png)
 
-1. 重複資料消除方法
-
-   從下拉清單中，選擇要使用的重複資料消除方法，並輸入要保留的重複數。
+1. 從下拉清單中，選擇要使用的重複資料消除方法，並輸入要保留的重複數。
 
    ![](assets/s_user_segmentation_dedup_param4.png)
 
@@ -72,7 +93,11 @@ ht-degree: 10%
    * **[!UICONTROL Using an expression]**:可讓您使用指定運算式的最低（或最高）值來保存記錄。
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   按一下&#x200B;**[!UICONTROL Finish]**&#x200B;批准所選的重複資料消除方法。
+   >[!NOTE]
+   >
+   >**[!UICONTROL Merge]**&#x200B;功能可透過&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結存取，可讓您設定一組規則，以便將欄位或欄位群組合併為單一產生的資料記錄。 有關詳細資訊，請參閱[將欄位合併到單個記錄](#merging-fields-into-single-record)。
+
+1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;批准所選的重複資料消除方法。
 
    窗口的中部區域將匯總定義的配置。
 
@@ -80,7 +105,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   如果希望利用剩餘人口，請選中&#x200B;**[!UICONTROL Generate complement]**&#x200B;選項。 補碼由所有復本組成。 然後，活動中會新增額外的轉場，如下所示：
+1. 如果希望利用剩餘人口，請選中&#x200B;**[!UICONTROL Generate complement]**&#x200B;選項。 補碼由所有復本組成。 然後，活動中會新增額外的轉場，如下所示：
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -109,6 +134,32 @@ ht-degree: 10%
 1. 選擇&#x200B;**[!UICONTROL Choose for me]**&#x200B;重複資料消除模式，以便隨機選擇在發現重複項時保存的記錄，然後按一下&#x200B;**[!UICONTROL Finish]**。
 
 執行工作流程時，所有識別為重複項目的收件者都會從結果中排除（因此也會排除傳送），並新增至重複項清單。 此清單可能會再次使用，而不需要重新識別重複項目。
+
+## 將欄位合併到單個資料記錄{#merging-fields-into-single-record}
+
+**[!UICONTROL Merge]**&#x200B;功能允許您為重複資料消除配置一組規則，以定義要合併到單個結果資料記錄中的欄位或欄位組。
+
+例如，您可以使用一組重複的記錄，選擇保留最舊的電話號碼或最新名稱。
+
+[本節](../../workflow/using/deduplication-merge.md)中提供了利用此功能的使用案例。
+
+要執行此操作，請依照下列步驟執行：
+
+1. 在&#x200B;**[!UICONTROL Deduplication method]**&#x200B;選擇步驟中，按一下&#x200B;**[!UICONTROL Advanced Parameters]**&#x200B;連結。
+
+   ![](assets/dedup1.png)
+
+1. 選擇&#x200B;**[!UICONTROL Merge records]**&#x200B;選項以激活該功能。
+
+   如果您想在每個合併條件中對多個資料欄位進行分組，請激活&#x200B;**[!UICONTROL Use several record merging criteria]**&#x200B;選項。
+
+   ![](assets/dedup2.png)
+
+1. 啟動功能後，**[!UICONTROL Merge]**&#x200B;標籤會新增至&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。 它可讓您定義要合併的欄位群組及其相關規則。
+
+   有關詳細資訊，請參閱[本節](../../workflow/using/deduplication-merge.md)中的專用使用案例。
+
+   ![](assets/dedup3.png)
 
 ## 輸入參數{#input-parameters}
 
