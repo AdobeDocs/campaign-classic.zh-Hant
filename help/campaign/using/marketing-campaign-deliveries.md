@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2926'
 ht-degree: 1%
 
 ---
@@ -281,7 +281,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有關促銷活動流程的技術工作流程列於[促銷活動流程工作流程清單](../../workflow/using/campaign.md)。
+>[技術工作流程清單](../../workflow/using/about-technical-workflows.md)中顯示與促銷活動套件相關的技術工作流程。
 
 **步驟1 —— 檔案批准**
 
