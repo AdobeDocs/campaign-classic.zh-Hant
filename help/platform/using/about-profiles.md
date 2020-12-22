@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 63%
@@ -105,7 +105,7 @@ Adobe Campaign檔案總管的一般版面配置會顯示在「使用Adobe Campai
 >
 >Facebook 和 Twitter 通路不包含在內。
 
-您可以從Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;功能表概述&#x200B;**[!UICONTROL Number of active profiles]**。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技術工作流](../../workflow/using/deliveries.md)執行，該工作流每天運行，並將新資料添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜單中當前時段的現有報告中。 每個期間均為 12 個月。
+您可以從Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;功能表概述&#x200B;**[!UICONTROL Number of active profiles]**。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技術工作流](../../workflow/using/about-technical-workflows.md)執行，該工作流每天運行，並將新資料添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜單中當前時段的現有報告中。 每個期間均為 12 個月。
 
 ## 教學課程影片{#create-profiles-video}
 
