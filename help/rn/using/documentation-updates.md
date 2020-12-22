@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 98%
+source-wordcount: '3729'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,12 @@ ht-degree: 98%
 已新增使用案例，說明如何將傳送者的IP位址新增至傳送記錄檔。 [顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
 
 隱私權常見問答已移至[本節](../../platform/using/privacy-faq.md)。
+
+關於如何使用重複資料消除活動的合併功能，已添加了一個使用案例。 [顯示全文](../../workflow/using/deduplication-merge.md)
+
+SMS連接器通訊協定和設定頁面已移至[此處](../../delivery/using/sms-protocol.md)。
+
+已在「事務性消息傳送」部分添加了一個注釋，以警告事件資料夾不能設定為執行實例的視圖，以避免訪問權限問題。 [顯示全文](../../message-center/using/event-collection.md)
 
 ## 2020 年11月 {#nov-2020}
 
