@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ _2020年12月22日_
 
 >[!CAUTION]
 >
->此版本隨附新的連線通訊協定： 升級對於促銷活動伺服器和用戶端主控台而言，都是必備的，才能在2020年3月21日之後連線至促銷活動
+>此版本隨附新的連線通訊協定： 升級對於Campaign伺服器和用戶端主控台而言，都是必備的，才能在2021年3月21日之後連線至Campaign。
 
 **功能改善**
 
