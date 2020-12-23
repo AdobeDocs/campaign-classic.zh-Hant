@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 4%
+source-wordcount: '431'
+ht-degree: 5%
 
 ---
 
@@ -30,29 +30,24 @@ ht-degree: 4%
 
 開始此實作前，請檢查您有：
 
-* 有效的IMSOrgID:身分管理系統(IMS)組織識別碼是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO),
-* a開發人員存取IMS組織。
-
->[!NOTE]
+* 有效的&#x200B;**組織識別碼**:身分管理系統(IMS)組織識別碼是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [進一步瞭解](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **您組織的開發人員存取權**。  如果您需要申請IMS組織的系統管理員權限，請依照本頁[中詳細說明的程式，為所有產品設定檔提供此存取權。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)
 >
->如果您需要申請IMS組織的系統管理員權限，請依照本頁[中詳細說明的程式，為所有產品設定檔提供此存取權。](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html)
-
-
 ## 步驟1:建立／更新Adobe I/O專案{#creating-adobe-io-project}
 
-1. 存取Adobe I/O，並與系統管理員登入IMSorg。
+1. 存取Adobe I/O，並向系統管理員登入IMS組織。
 
    >[!NOTE]
    >
-   > 請確定您已登入正確的IMSorg入口網站。
+   > 請確定您已登入正確的組織入口網站。
 
-1. 從例項設定檔案ims/authIMSTAClientId擷取現有整合用戶端ID。 非現有或空屬性表示未配置客戶端ID。
+1. 從例項設定檔案ims/authIMSTAClientId擷取現有整合用戶端ID。 非現有或空屬性表示未配置客戶機標識符。
 
    >[!NOTE]
    >
-   >如果您的用戶端ID為空白，您可以直接在Adobe I/O中&#x200B;**[!UICONTROL Create a New project]**。
+   >如果您的用戶端識別碼是空的，您可以直接在Adobe I/O中&#x200B;**[!UICONTROL Create a New project]**。
 
-1. 使用擷取的用戶端ID來識別現有專案。 尋找與前一步驟中擷取的用戶端ID相同的現有專案。
+1. 使用擷取的用戶端識別碼來識別現有專案。 尋找與前一步驟中擷取的相同用戶端識別碼的現有專案。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
