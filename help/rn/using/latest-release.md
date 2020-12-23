@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,6 +65,10 @@ _2020 年 10 月 27 日_
 </tbody> 
 </table>
 
+>[!CAUTION]
+>
+>此版本隨附新的連線通訊協定：升級對於Campaign伺服器和用戶端主控台而言，都是必備的，才能在2021年3月21日之後連線至Campaign。
+
 **安全性增強功能**
 
 * 確保載入資料庫安全：為了防止 DLL 預先載入攻擊，Campaign 現在只能在載入 Campaign 用戶端 (nlclient) 的同時，從 Windows 預設系統 DLL 路徑中載入 Windows DLL。[瞭解更多](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
@@ -94,11 +98,7 @@ _2020 年 10 月 27 日_
 **功能改善**
 
 * 幾項改善進行於&#x200B;**客戶端控制台**：
-   * 已更新連線通訊協定，以遵循新的IMS驗證機制。
-
-      >[!CAUTION]
-      >
-      >連線通訊協定更新後，必須升級（伺服器和主控台）才能從2020年3月21日起連線。
+   * 已更新連線通訊協定，以遵循新的IMS驗證機制。 在2021年3月21日之後必須能連線伺服器和用戶端主控台升級。
    * 為了避免與某些網際網路安全性　GPO　規則限制發生不相容的情況，已將　Campaign　用戶端主控台登入畫面由內建的標準　Windows　表單取代。
    * 修正了在使用　64　位元用戶端主控台的工作流程中進行複製/貼上活動所發生的問題。(NEO-27635)
    * 在&#x200B;**「關於」**&#x200B;功能表中，已新增資訊，以區分 64 位元和 32 位元控制台。
