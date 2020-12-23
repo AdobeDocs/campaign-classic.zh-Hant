@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 您的Adobe Campaign Classic版本不支援管道。
 
 1. 檢查配置檔案中是否存在[!DNL pipelined]元素。 否則表示不支援。
-1. 升級至6.11版Build 8705或更新版本。
+1. 升級至Campaign 20.3或Gold Standard 11。
 
 **Pipelined fails with &quot;aurait duj commencer par  `[` ou `{` (iRc=16384)&quot;**
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 **流水線失敗，但「主題必須是有效的組織或客戶」**
 
-IMSOrgid配置無效。
+組織識別碼設定無效。
 
 1. 檢查serverConf.xml中是否已設定IMSOrgId。
 1. 在實例配置檔案中查找可以覆蓋預設值的空IMSOrgId。 如果是，請將其刪除。
@@ -85,4 +85,3 @@ IMSOrgid配置無效。
 1. 在pipelined.log中查找可能導致重試的錯誤。 修正錯誤（如果適用）。
 1. 檢查[!DNL pipelined]狀態頁面中的隊列大小。 如果佇列大小較大，請改善JS的效能。
 1. 由於延遲似乎隨卷增加，所以使用較少的訊息在Analytics上設定觸發器。
-附件
