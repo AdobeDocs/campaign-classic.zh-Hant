@@ -7,15 +7,26 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 8d4fd855df2f373c2684fd8dfaf54ffe42e196f1
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1403'
 ht-degree: 6%
 
 ---
 
 
 # 第 20.1 發行版本{#release-20-1}
+
+## ![](assets/do-not-localize/limited_2.png) 版本 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
+
+_2020年12月24日_
+
+>[!CAUTION]
+>
+>此版本隨附新的連線通訊協定： 升級對於促銷活動伺服器和用戶端主控台而言，都是必備的，才能在2020年3月21日之後連線至促銷活動
+
+* 已更新連線通訊協定，以遵循新的IMS驗證機制。
+* 已修正安全性問題，以加強針對伺服器端偽造要求(SSRF)問題的保護。 (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
