@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9c78d8f469bade41717eb854e8cec00859c1d4e3
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -75,23 +75,23 @@ ht-degree: 1%
    **nlserver重新啟動網路**
 
    >[!NOTE]
-   > 
-   >    * 如果未指定實例，則使用「預設」實例。
-   >    * 發生緊急情況時，使用&#x200B;**-immediate**&#x200B;選項強制立即停止進程（相當於Unix命令&#x200B;**kill -9**）。
-   >    * 使用&#x200B;**-noconsole**&#x200B;選項，確保啟動的模組在控制台上不顯示任何內容。 其日誌將通過&#x200B;**syslogd**&#x200B;模組寫入磁碟。
-   >    * 使用&#x200B;**-verbose**&#x200B;選項可顯示有關進程操作的其他資訊。
+   >
+   >* 如果未指定實例，則使用「預設」實例。
+   >* 發生緊急情況時，使用&#x200B;**-immediate**&#x200B;選項強制立即停止進程（相當於Unix命令&#x200B;**kill -9**）。
+   >* 使用&#x200B;**-noconsole**&#x200B;選項，確保啟動的模組在控制台上不顯示任何內容。 其日誌將通過&#x200B;**syslogd**&#x200B;模組寫入磁碟。
+   >* 使用&#x200B;**-verbose**&#x200B;選項可顯示有關進程操作的其他資訊。
 
-      >    
-      >      
+      >
+      >   
       範例:
-      >    
-      >      
+      >
+      >   
       **nlserver重新啟動web -verbose**
-      >    
-      >      
+      >
+      >   
       **nlserver啟動mta@myinstance -verbose**
-      >    
-      >      
+      >
+      >   
       此選項會新增其他記錄檔。 建議在您找到所需的資訊後，不使用&#x200B;**-verbose**&#x200B;選項重新啟動程式，以避免過載記錄檔。
 
 
