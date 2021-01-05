@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '111'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 **Apache使用者：**
 
-如果Apache用戶使用提供的&#x200B;**apache_neolane.conf**，則對他們沒有影響
+如果Apache用戶使用提供的&#x200B;**apache_neolane.conf**，則對他們沒有影響。
 
 **IIS使用者：**
 
@@ -31,4 +31,3 @@ ht-degree: 5%
 
 1. 在建立更新後，按兩下位於促銷活動安裝目錄中的&#x200B;**iis_neolane_setup.vbs**。 預設路徑為C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
 1. 重新啟動已通過上一步更新的IIS站點。
-
