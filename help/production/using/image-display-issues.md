@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '133'
 ht-degree: 6%
 
 ---
@@ -19,13 +19,12 @@ ht-degree: 6%
 
 如果您在傳送的訊息中遇到影像顯示問題，原因可能會連結至錯誤位置：
 
-* 位置可能不符，或影像無法正確推送至重複的追蹤伺服器：檢查您的設定。
-* 影像可能不位於行銷實例的公共資源資料夾中：將影像上傳至資源檔案夾，以解決問題。
+* 位置可能不符，或影像可能未正確推送至重複的追蹤伺服器：檢查您的設定。
+* 影像不得位於行銷實例的公用資源資料夾中：將影像上傳至資源檔案夾，以解決問題。
 * 如果您在中部採購架構中工作：當傳送校樣時，檢查影像會上傳而無錯誤（資訊會顯示在分析記錄中）。
 
 如何疑難排解：
 
 1. 傳送將顯示影像的證明。
 1. 驗證實例設定中的資源配置是否正確。
-1. 檢查公共資源資料夾，或者（如果它不在公共資源資料夾中）交付中引用的資料夾。
-
+1. 檢查公共資源資料夾，或者（如果不在公共資源資料夾中）發送中引用的資料夾。
