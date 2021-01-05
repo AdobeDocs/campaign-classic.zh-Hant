@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1186'
 ht-degree: 1%
 
 ---
@@ -200,7 +200,7 @@ ht-degree: 1%
 
 第一個&#x200B;**建立交付**&#x200B;任務將建立交付操作。
 
-fork活動可讓您同時啟動目標計算和內容實例的建立。
+fork活動可讓您並行啟動目標計算和內容實例的建立。
 
 執行完任務後，AND-join框將激活&#x200B;**Delivery**&#x200B;任務，以啟動以前建立的內容和目標傳送。
 
