@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
 source-wordcount: '2181'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -155,12 +155,12 @@ ht-degree: 97%
       + [管理訂閱](delivery/using/managing-subscriptions.md)
       + [病毒式行銷及社交行銷](delivery/using/viral-and-social-marketing.md)
    + 監視傳遞{#monitoring-deliveries}
-      + [開始使用傳送監控](delivery/using/about-delivery-monitoring.md)
-      + [存取傳送清單](delivery/using/list-of-deliveries.md)
-      + [傳送控制面板](delivery/using/delivery-dashboard.md)
-      + [發佈效能最佳實務](delivery/using/delivery-performances.md)
-      + [傳送疑難排解](delivery/using/delivery-troubleshooting.md)
-      + [傳送狀態](delivery/using/delivery-statuses.md)
+      + [開始使用傳遞監視](delivery/using/about-delivery-monitoring.md)
+      + [存取傳遞清單](delivery/using/list-of-deliveries.md)
+      + [傳遞儀表板](delivery/using/delivery-dashboard.md)
+      + [傳遞效能最佳實務](delivery/using/delivery-performances.md)
+      + [傳遞疑難排解](delivery/using/delivery-troubleshooting.md)
+      + [傳遞狀態](delivery/using/delivery-statuses.md)
       + [瞭解傳送故障](delivery/using/understanding-delivery-failures.md)
       + [瞭解隔離管理](delivery/using/understanding-quarantine-management.md)
    + 追蹤訊息{#tracking-messages}
