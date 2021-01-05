@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
+source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
 workflow-type: tm+mt
-source-wordcount: '3729'
-ht-degree: 98%
+source-wordcount: '3814'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,16 @@ ht-degree: 98%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
+
+## 2021 年 1 月 {#jan,2021}
+
+**[!UICONTROL Fork]**&#x200B;活動部分已豐富了其他資訊。 已新增附註，以指定傳出轉場不會同時執行，因此不應使用活動來改善工作流程的效能。 [顯示全文](../../workflow/using/fork.md)
+
+已將「查找Tomcat版本」部分[移到此處](../../production/using/locate-tomcat-version.md)。
+
+技術工作流程清單及其相關套件已重新整理為單一頁面。 [顯示全文](../../workflow/using/about-technical-workflows.md)
+
+「監視指南」的疑難排解部分已重新整理並增強為著陸頁面。 [顯示全文](../../production/using/troubleshooting.md)。
 
 ## 2020 年 12 月{#dec-2020}
 
@@ -149,7 +159,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 新增了與 Campaign Classic 監視相關的准則。[顯示全文](../../production/using/monitoring-guidelines.md)
 
-已提升「隱私權與同意」一節，其提供更詳細的資訊和有用的連結。[顯示全文](../../platform/using/privacy-and-recommendations.md)。
+已提升「隱私權與同意」一節，其提供更詳細的資訊和有用的連結。[顯示全文](../../platform/using/privacy-and-recommendations.md)
 
 已更新 Campaign Classic 頁面的「隱私權管理」，其中包含「規範」欄位資訊，當您使用 API 允許設定自動隱私權要求流程時，便可使用此欄位。[顯示全文](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
