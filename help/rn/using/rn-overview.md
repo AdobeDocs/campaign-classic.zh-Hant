@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 86dab2e03aa7a07d88d9a1df5e4015b001451d2e
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 
 最後&#x200B;**的 RC 版本**[為 Campaign Classic 20.3 版本](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/red3.png) **已過時** -無部署。現有實作必須升級。
+![](assets/do-not-localize/red3.png) **已過時** -無部署。現有實施必須升級。
 
 ## 建議{#recommendations}
 
