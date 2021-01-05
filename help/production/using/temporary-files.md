@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -17,9 +17,9 @@ ht-degree: 4%
 
 # 臨時檔案{#temporary-files}
 
-如果系統投入生產時出現以下錯誤消息（尤其是在交付日誌中）:
+當系統投入生產時，可能會顯示以下錯誤訊息（尤其是在傳送記錄檔中）:
 
-**無法將檔案&#39;/tmp/tmp0000.tmp&#39;更名為/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;（errno=18，無效的跨設備連結）(iRc=-52)**
+*無法將檔案&#39;/tmp/tmp0000.tmp&#39;更名為/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;（errno=18，無效的跨設備連結）(iRc=-52)*
 
 原因如下：
 
