@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,15 @@ ht-degree: 1%
 
 ## 新增傳送渠道{#adding-a-delivery-channel}
 
-新增傳送渠道（行動通道、行動應用通道等） 必須在安裝Transactional消息包之前執行。 如果您已在電子郵件頻道上啟動交易式訊息專案，然後在專案期間決定新增新頻道，您必須遵循下列步驟：
+新增傳送渠道（行動通道、行動應用通道等） 必須在安裝Transactional消息包之前執行。
+
+Adobe建議您在安裝Transactional訊息套件之前，務必先新增傳送渠道套件。
+
+不過，如果您已在電子郵件頻道上啟動交易式訊息專案，然後在專案期間決定新增新頻道，您可以遵循下列步驟。
+
+>[!NOTE]
+>
+>此過程僅適用於使用安裝在與其工作相同電腦上的Windows NLServer的客戶。
 
 1. 使用套件匯入精靈(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)，安裝您需要的頻道，例如&#x200B;**行動頻道**。
 1. 執行檔案導入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選擇&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
