@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -19,10 +19,10 @@ ht-degree: 8%
 
 大多數效能問題都與資料庫維護相關。 以下是四個主要線索，可協助您找出效能緩慢的原因：
 
-* 配置,
-* 安裝和設定Adobe Campaign平台、
-* 資料庫維護,
-* 即時診斷。
+* 配置
+* Adobe Campaign平台的安裝與設定
+* 資料庫維護
+* 即時診斷
 
 ## 設定 {#configuration}
 
