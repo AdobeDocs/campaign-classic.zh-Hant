@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 97%
 
 ## 2020 年 12 月{#dec-2020}
 
-交付監測科已改編為專題專題。 [顯示全文](../../delivery/using/about-delivery-monitoring.md)
+傳遞監視節已改編為專題。[顯示全文](../../delivery/using/about-delivery-monitoring.md)
 
-已新增使用案例，說明如何將傳送者的IP位址新增至傳送記錄檔。 [顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
+已新增使用案例，說明如何將傳送者的IP位址新增至傳遞記錄日誌中。[顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
 
 隱私權常見問答已移至[本節](../../platform/using/privacy-faq.md)。
 
