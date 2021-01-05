@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 6%
+source-wordcount: '190'
+ht-degree: 5%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 6%
 例如，您可以在內容建立和傳送傳送自動化的內容中使用AND-join活動，以確保只有在目標查詢和內容更新步驟完成後，才啟動傳送。 [本節](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中提供專用的使用案例
 
 ![](assets/and-join-usage.png)
+
+>[!NOTE]
+>
+>請注意，使用不同定位維度設定的傳入轉場無法使用&#x200B;**[!UICONTROL AND-join]**&#x200B;活動連結在一起。
 
 通過在活動的入站轉變中選擇主集來確定活動的出站發送人口。
 
