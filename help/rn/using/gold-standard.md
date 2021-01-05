@@ -7,19 +7,19 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 91%
+ht-degree: 86%
 
 ---
 
 
-# Gold Standard 發行{#gold-standard}
+# Gold Standard版本{#gold-standard}
 
-Gold Standard 是 Campaign Classic 的長期支援版本。作為 Gold Standard 使用者，您無需採取任何操作便可透過最新穩定版本，自動受益於 Gold Standard 升級。內部部署和混合客戶也可以受益於 Gold Standard 發行版本。
+Gold Standard 是 Campaign Classic 的長期支援版本。身為代管的Gold Standard使用者，您可透過最新穩定版本自動從Gold Standard升級中獲益，毋需採取任何動作。 內部部署和Hybrid客戶也可從Gold Standard版本中獲益。
 
-如果您從舊的版本編號移轉出，我們建議您先升級至此版本。
+如果您從舊版本移轉，建議您先升級至此版本。
 
 本頁面列出的 Gold Standard 發行版本。
 
