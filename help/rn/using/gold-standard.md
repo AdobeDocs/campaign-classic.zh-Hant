@@ -9,8 +9,8 @@ topic-tags: latest-release-notes
 translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '937'
+ht-degree: 91%
 
 ---
 
@@ -53,7 +53,7 @@ _2020 年 7 月 7 日_
 
 >[!CAUTION]
 >
->我們建議您使用此版本中可用的用戶端控制台進行升級。請參閱[本頁](../../installation/using/installing-the-client-console.md)
+>我們建議您使用此版本中可用的用戶端控制台進行升級。請參見[此頁面](../../installation/using/installing-the-client-console.md)。
 
 ## ![](assets/do-not-localize/red_2.png)Gold Standard 第 9 發行版本{#gs-9}
 
