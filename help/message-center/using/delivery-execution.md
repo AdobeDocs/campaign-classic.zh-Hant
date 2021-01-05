@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 8%
+source-wordcount: '236'
+ht-degree: 4%
 
 ---
 
@@ -37,11 +37,17 @@ ht-degree: 8%
 >
 >若是代管或混合式安裝，如果您已升級至「增強MTA」，所有交易訊息也可能會隨Adobe Campaign Enhanced MTA一起傳送，以改善傳遞能力、吞吐量和彈回處理。 所有影響與標準行銷訊息的影響相同，並詳見[Adobe Campaign Enhanced MTA](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)檔案。
 
-<!--## Transactional message monitoring {#transactional-message-monitoring}
+## 事務性消息監視{#transactional-message-monitoring}
 
-To monitor your transactional messages, check the delivery logs. Accessing the delivery logs is presented in [this section](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+要監視事務性消息，請檢查發送日誌。 存取傳送記錄檔的方式見[本節](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)。
 
-The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+從執行實例發送的事務傳送通過每小時運行的技術工作流(**[!UICONTROL Message Center execution instance]**)同步回控制實例。
+
+>[!NOTE]
+>
+>每週傳送會根據最新事件更新累積事件，而非根據事件建立日期。 因此，當從控制實例提取事務性消息傳送日誌時，與每個傳送日誌ID相關聯的傳送ID可隨著日誌更新而隨時間變化（例如，當接收到事件的傳入彈回數時）。
+
+<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
