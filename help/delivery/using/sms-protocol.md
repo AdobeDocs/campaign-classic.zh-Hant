@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 8f45fcc57062e6f13bc674c72f53788483de93fb
+source-git-commit: 09a79330e1ff951898d1559d5765818c12dc497a
 workflow-type: tm+mt
-source-wordcount: '8399'
+source-wordcount: '8424'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 # SMS連接器協定和設定{#sms-connector-protocol}
 
 >[!NOTE]
+>
+>此[頁面](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-sms/sms-protocol.html#administrating)中提供Adobe Campaign Standard的&#x200B;**SMS連接器通訊協定和設定**。
 >
 >通過本文檔，所有有關協定、欄位名和值的詳細資訊的引用都引用[SMPP 3.4規範](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
 
