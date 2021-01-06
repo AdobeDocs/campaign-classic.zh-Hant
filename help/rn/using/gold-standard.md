@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 86%
 
 ---
@@ -25,7 +25,7 @@ Gold Standard 是 Campaign Classic 的長期支援版本。身為代管的Gold S
 
 如需 Campaign Gold Standard 方案的詳細資訊，請[參閱本文章](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/limited_2.png)Gold Standard 第 11 發行版本{#gs-11}
+## ![](assets/do-not-localize/green_2.png)Gold Standard 第 11 發行版本{#gs-11}
 
 _2020年12月22日_
 
@@ -33,7 +33,7 @@ _2020年12月22日_
 >
 >此版本隨附新的連線通訊協定：升級對於Campaign伺服器和用戶端主控台而言，都是必備的，才能在2021年3月21日之後連線至Campaign。
 
-建置9032@2a2a028包含下列改進和修正：
+建置9032@d3b452f包含下列改進和修正：
 
 * 已更新連線通訊協定，以遵循新的IMS驗證機制。
 
@@ -43,7 +43,7 @@ _2020年12月22日_
 
 * 已修正安全性問題，以加強針對伺服器端偽造要求(SSRF)問題的保護。 (NEO-27777)
 
-## ![](assets/do-not-localize/green_2.png)Gold Standard 第 10 發行版本{#gs-10}
+## ![](assets/do-not-localize/red_2.png)Gold Standard 第 10 發行版本{#gs-10}
 
 _2020 年 7 月 7 日_
 
