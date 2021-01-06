@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 94%
@@ -29,7 +29,7 @@ ht-degree: 94%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後&#x200B;**一個 GA 版本** : [Gold Standard 10 版本](../../rn/using/gold-standard.md#gs-10) 及[ Campaign 20.2.4 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+最後&#x200B;**一個 GA 版本** : [Gold Standard 11 版本](../../rn/using/gold-standard.md#gs-11) 及[ Campaign 20.2.4 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
