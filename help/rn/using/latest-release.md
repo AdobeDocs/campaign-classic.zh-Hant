@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 97%
+source-wordcount: '1911'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,14 @@ ht-degree: 97%
 
 如需 Campaign Classic Gold Standard 版本（最新的 GA 版本編號）資訊，[請參閱本頁面](../../rn/using/gold-standard.md)。
 
-## ![](assets/do-not-localize/blue_2.png) 版本 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/blue_2.png) 版本 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
+
+_2021年1月11日_
+
+* 已修正安全性問題，以加強針對伺服器端偽造要求(SSRF)問題的保護。 (NEO-27777)
+* 修正可能導致MTA程式當機的廣播產生程式相關回歸問題。
+
+## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
 
 _2020 年 10 月 27 日_
 
