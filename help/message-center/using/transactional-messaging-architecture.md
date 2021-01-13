@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
+source-git-commit: 2d30a70f8fbfb7a916638697c0f7a5060c2458ee
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 1%
@@ -74,7 +74,7 @@ Adobe建議您在安裝Transactional訊息套件之前，務必先新增傳送�
 >
 >此過程僅適用於使用安裝在與其工作相同電腦上的Windows NLServer的客戶。
 
-1. 使用套件匯入精靈(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)，安裝您需要的頻道，例如&#x200B;**行動頻道**。
+1. 使用套件匯入精靈(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安裝您需要的頻道，例如&#x200B;**行動頻道**。
 1. 執行檔案導入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選擇&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
 1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，僅保留與新增頻道對應的傳送範本。 例如，如果您已新增&#x200B;**行動頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]**(smsTriggerMessage)對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易訊息**(iosTriggerMessage)和&#x200B;**Android交易訊息**(androidTriggerMessage)。
 
