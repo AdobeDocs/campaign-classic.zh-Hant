@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5d5d4b87bae44ce0a93458f79179434a5bf315c3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 1%
@@ -68,5 +68,6 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;套件也安裝在您的Adobe Campaign實例上，則您只能使用Adobe Experience Cloud程式庫中的可用資產。 若要存取AEM Assets資料庫中的資產，您必須同步化AEM Assets和Adobe Experience Cloud。 AEM Assets中的資產也將可在Adobe Experience Cloud資料庫中取用。 在這種情況下，您不需要建立特定的傳送範本。 如需AEM Assets與Adobe Experience Cloud同步化的詳細資訊，請參閱[詳細檔案](https://docs.adobe.com/docs/en/aod/overview/collaborating/aem-assets-aod-sync.html)。
+>如果&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;套件也安裝在您的Adobe Campaign實例上，則您只能使用Adobe Experience Cloud程式庫中的可用資產。 若要存取AEM Assets資料庫中的資產，您必須同步化AEM Assets和Adobe Experience Cloud。 AEM Assets中的資產也將可在Adobe Experience Cloud資料庫中取用。 在這種情況下，您不需要建立特定的傳送範本。 如需AEM Assets與Adobe Experience Cloud同步化的詳細資訊，請參閱[詳細檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/configure-assets-cc-integration.html#integration)。
+
 
