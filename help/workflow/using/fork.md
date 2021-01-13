@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 您也可以在內容建立和傳送傳送自動化的環境中使用活動，以便同時啟動目標計算和內容建立。 [本節](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中提供專用的使用案例。
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >請記住，在Fork活動之後新增的去話切換效果不會同時執行。
 >
