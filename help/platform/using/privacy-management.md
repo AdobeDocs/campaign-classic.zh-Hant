@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
+source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 93%
+source-wordcount: '887'
+ht-degree: 91%
 
 ---
 
@@ -20,22 +20,15 @@ ht-degree: 93%
 Adobe Campaign 提供一套工具，以協助您遵守[隱私權法規](#privacy-management-regulations)（包含 GDPR、CCPA、PDPA、LGPD）。
 
 以下是 Adobe Campaign 為確保 GDPR 和其他隱私權法規的準備而提供的五大功能：
+* **存取權限**
+* **刪除權限**
+* **同意管理**
+* **資料保留**
+* **權限管理**
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-* **存取權限**
-
-* **刪除權限**
-
-如需詳細資訊，請參閱[存取權限與要消除的權限](#right-access-forgotten)。
-
-* **同意管理**
-
-* **資料保留**
-
-* **權限管理**
-
-如需詳細資訊，請參閱[同意、保留和角色](#consent-retention-roles)。
+有關詳細資訊，請參閱[訪問權和被遺忘權](#right-access-forgotten)和[同意、保留和角色](#consent-retention-roles)。
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
