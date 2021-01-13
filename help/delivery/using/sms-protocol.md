@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 09a79330e1ff951898d1559d5765818c12dc497a
+source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
 workflow-type: tm+mt
 source-wordcount: '8424'
 ht-degree: 0%
@@ -102,7 +102,7 @@ SMPP傳輸單元（「資料包」）稱為PDU。 **PDU**&#x200B;包含命令、
 
 例如，在發送MT時，使用發射器連接，並通過發射器通道發送確認MT的`RESP`。 當您收到MO（或SR）時，接收器連接用於接收MO併發送確認MO的`RESP`。
 
-![](assets/sms_protocol_1.png)
+![](assets/do-not-localize/sms_protocol_1.png)
 
 在Adobe Campaign Classic中，若要將SR與其對應的MT連結，SMSC會傳回ID與`SUBMIT_SM_RESP`和`DELIVER_SM`步驟。 標識符儲存在`nms::providerMsgId`表的`providerId`欄位中，並連結到`broadLogId`和`deliveryId`。 此匹配操作由SMS進程在寫入資料庫時完成。
 
@@ -505,7 +505,7 @@ Adobe Campaign Classic對KPI有完全不同的機制，因此此選項不可用�
 
 最大窗口為4的傳輸示例：
 
-![](assets/sms_protocol_2.png)
+![](assets/do-not-localize/sms_protocol_2.png)
 
 當網路連結有高延遲時，此視窗有助於提高總處理能力。  視窗的值必須至少是SMS/s的數目乘以連結的延遲
 以秒為單位，這樣連接器在發送下一條消息之前就不會等待`SUBMIT_SM_RESP`。
@@ -772,7 +772,7 @@ SMS協定將SMS限制在255個部分，但有些手機無法將長消息與10個
 
 ## 擴展的通用SMPP連接器{#acc-extended-connector}
 
-![](assets/sms_protocol_4.png)
+![](assets/do-not-localize/sms_protocol_4.png)
 
 箭頭代表資料流。
 
