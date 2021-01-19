@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -61,13 +61,13 @@ Phone;500;London 5
 
    **資料載入（檔案）**&#x200B;活動可讓您以收集的資料豐富工作流程的工作表。
 
-   有關此活動的詳細資訊，請參閱[從檔案](../../workflow/using/importing-data.md#loading-data-from-a-file)載入資料。
+   有關此活動的詳細資訊，請參閱[從檔案](../../platform/using/import-export-workflows.md#loading-data-from-a-file)載入資料。
 
 1. 配置&#x200B;**檔案收集器**&#x200B;活動，以從所選目錄收集文本(*.txt)類型檔案。
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   **檔案收集器**&#x200B;活動可讓您管理源目錄中缺少檔案。 若要這麼做，請勾選&#x200B;**[!UICONTROL Process file nonexistence]**&#x200B;選項。 在此工作流中，如果收集時目錄中缺少&#x200B;**Wait**&#x200B;活動，則已添加&lt;a0/>Wait&lt;a1/>活動以嘗試其他檔案集合。
+   **檔案收集器**&#x200B;活動可讓您管理源目錄中缺少檔案。 若要這麼做，請勾選&#x200B;**[!UICONTROL Process file nonexistence]**&#x200B;選項。 在此工作流中，如果收集時目錄中缺少&#x200B;**Wait**&#x200B;活動，則已添加Wait活動以嘗試其他檔案集合。
 
 1. 使用與要導入的資料格式相同的示例檔案配置&#x200B;**資料載入（檔案）**&#x200B;活動。
 
