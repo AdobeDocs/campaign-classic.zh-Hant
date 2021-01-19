@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
+source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +28,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->請記住，在Fork活動之後新增的去話切換效果不會同時執行。
->
->因此，不應使用活動來改進工作流的效能，而應獨立執行多個活動，並最終在執行其餘工作流之前將它們連接在一起。
+>在&#x200B;**[!UICONTROL Fork]**&#x200B;活動&#x200B;**之後新增的去話轉場不會同時執行。**&#x200B;此行為會影響工作流程的效能。 如果您需要獨立執行數個活動，並最終在執行其餘工作區之前將這些活動連接在一起，請使用此活動。
 
-若要設定活動，請將其開啟，然後定義所要之出站轉場的數目和標籤。
+要配置&#x200B;**[!UICONTROL Fork]**&#x200B;活動，請將其開啟，以定義出站轉場的編號和標籤。
 
 ![](assets/s_user_segmentation_fork.png)
 
