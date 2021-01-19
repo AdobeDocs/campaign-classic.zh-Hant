@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 使用它們的主要原因之一是&#x200B;**您的郵件清單保護**。 將種子地址插入郵件清單中，可讓第三方在使用該種子地址時引起注意，因為其中包含的種子地址將接收發送到郵件清單的遞送。
 
-此外，種子位址可讓您在傳送遞送個人化和轉換&#x200B;**之前，先透過傳送校樣來預覽和測試遞送內容（請參閱**&#x200B;使用種子位址作為證明[）。](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)
+此外，種子位址可讓您在傳送遞送個人化和轉換&#x200B;**之前，先透過傳送校樣來預覽和測試遞送內容（請參閱[使用種子位址作為證明](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)）。**
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
@@ -46,7 +46,7 @@ ht-degree: 9%
 >對於直接郵件傳送，解壓縮檔案格式必須符合下列限制：
 >
 >* 它不能使用&#x200B;**[!UICONTROL Handle groupings (GROUP BY+HAVING)]**&#x200B;選項。
->* 如果提取元素集合，則這些欄位的種子地址將具有空值，除非選擇了&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;選項。 如需詳細資訊，請參閱[本章節](../../platform/using/exporting-data.md#step-7---data-formatting)。
+>* 如果提取元素集合，則這些欄位的種子地址將具有空值，除非選擇了&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;選項。 如需詳細資訊，請參閱[本章節](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
 
 >
 
