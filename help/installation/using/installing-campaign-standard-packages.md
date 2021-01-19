@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1173'
 ht-degree: 5%
 
 ---
@@ -122,6 +122,11 @@ ht-degree: 5%
   <tr> 
    <td> 行動通道(SMS)<br /> </td> 
    <td> 使用Adobe Campaign的行動／簡訊頻道傳送傳送。 選填。<a href="../../delivery/using/sms-channel.md">進一步瞭解</a> <br /> </td> 
+   <td> 全部<br /> </td> 
+  </tr> 
+   <tr> 
+   <td> 電話頻道<br /> </td> 
+   <td> 使用Adobe Campaign的電話頻道傳送傳送內容。 用於呼叫中心。 選填。<a href="../../delivery/using/communication-channels.md">進一步瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
