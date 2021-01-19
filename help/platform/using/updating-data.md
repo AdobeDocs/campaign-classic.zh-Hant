@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 88%
@@ -92,7 +92,7 @@ ht-degree: 88%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   有關如何配置導出嚮導的詳細資訊，請參閱[導出嚮導](../../platform/using/exporting-data.md#export-wizard)。
+   有關如何配置導出嚮導的詳細資訊，請參閱[本節](../../platform/using/executing-export-jobs.md)。
 
 ## 訂閱服務 {#subscribing-to-a-service}
 
