@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -35,7 +35,7 @@ ht-degree: 15%
 
 ![](assets/preprocessing-dataloading.png)
 
-如需更多相關資訊，請參閱本節：[在處理](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)之前解壓縮或解密檔案。
+如需更多相關資訊，請參閱本節：[在處理](../../platform/using/unzip-decrypt.md)之前解壓縮或解密檔案。
 
 ## 定義檔案格式{#defining-the-file-format}
 
@@ -113,7 +113,7 @@ ht-degree: 15%
    * 第一欄包含與事件相符的程式碼：購買（大於或少於3,000歐元），一次或多次購買時不會購買或退款。
    * 以下四欄包含客戶的名字、姓氏、電子郵件和帳號。
 
-   要載入的檔案格式設定與在Adobe Campaign中匯入資料時所定義的格式設定一致。 如需詳細資訊，請參閱本[區段](../../platform/using/importing-data.md#step-2---source-file-selection)。
+   要載入的檔案格式設定與在Adobe Campaign中匯入資料時所定義的格式設定一致。 如需詳細資訊，請參閱本[區段](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)。
 
 1. 在拆分活動中，根據&#x200B;**Event**&#x200B;列值指定要建立的子集。
 
