@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
+source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
 workflow-type: tm+mt
-source-wordcount: '3814'
-ht-degree: 96%
+source-wordcount: '3869'
+ht-degree: 94%
 
 ---
 
@@ -19,31 +19,39 @@ ht-degree: 96%
 
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
-您也可以參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md) ，以瞭解更多更新詳情。
+如需版本相關更新，請參閱[Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
 
-## 2021 年 1 月 {#jan,2021}
+## 2021 年 1 月 {#jan-2021}
 
-**[!UICONTROL Fork]**&#x200B;活動部分已豐富了其他資訊。 已新增附註，以指定傳出轉場不會同時執行，因此不應使用活動來改善工作流程的效能。 [顯示全文](../../workflow/using/fork.md)
+**[!UICONTROL Fork]**&#x200B;活動部分已豐富了最佳做法。 [顯示全文](../../workflow/using/fork.md)
 
-已將「查找Tomcat版本」部分[移到此處](../../production/using/locate-tomcat-version.md)。
+**CRM Connectors**&#x200B;區段已更新、改進並重新組織。 [顯示全文](../../platform/using/crm-connectors.md)。
 
-技術工作流程清單及其相關套件已重新整理為單一頁面。 [顯示全文](../../workflow/using/about-technical-workflows.md)
+連線&#x200B;**Adobe Campaign和Microsoft Dynamics**&#x200B;的步驟現在會在專用頁面中詳細說明。 [顯示全文](../../platform/using/crm-ms-dynamics.md)。
 
-「監視指南」的疑難排解部分已重新整理並增強為著陸頁面。 [顯示全文](../../production/using/troubleshooting.md)。
+Oracle On Demand API現在已不再作為與Campaign連接的CRM使用。 [顯示全文](../../rn/using/deprecated-features.md)。
+
+瞭解如何在[這裡](../../production/using/locate-tomcat-version.md)瞭解Adobe Campaign實例中使用的內嵌Tomcat網頁servlet的最新版本。
+
+技術工作流程清單及其相關套件已增強並集中在單一頁面中。 [顯示全文](../../workflow/using/about-technical-workflows.md)
+
+**監控**&#x200B;指南的疑難排解部分已重新整理並增強為著陸頁面。 [顯示全文](../../production/using/troubleshooting.md)。
+
+新的&#x200B;**匯入和匯出資料**&#x200B;區段可用於與工作流程、資料壓縮、加密和匯入最佳實務相關的新頁面。 [顯示全文](../../platform/using/get-started-data-import-export.md)
 
 ## 2020 年 12 月{#dec-2020}
 
-傳遞監視節已改編為專題。[顯示全文](../../delivery/using/about-delivery-monitoring.md)
+**交付監測**&#x200B;部分已重新組織為專題主題。 [顯示全文](../../delivery/using/about-delivery-monitoring.md)
 
 已新增使用案例，說明如何將傳送者的IP位址新增至傳遞記錄日誌中。[顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
 
 隱私權常見問答已移至[本節](../../platform/using/privacy-faq.md)。
 
-關於如何使用重複資料消除活動的合併功能，已添加了一個使用案例。 [顯示全文](../../workflow/using/deduplication-merge.md)
+有關如何使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動的合併功能的使用案例已經添加。 [顯示全文](../../workflow/using/deduplication-merge.md)
 
-SMS連接器通訊協定和設定頁面已移至[此處](../../delivery/using/sms-protocol.md)。
+現在，[此處](../../delivery/using/sms-protocol.md)提供SMS連接器通訊協定和設定頁面的完整說明。
 
-已在「事務性消息傳送」部分添加了一個注釋，以警告事件資料夾不能設定為執行實例的視圖，以避免訪問權限問題。 [顯示全文](../../message-center/using/event-collection.md)
+**Transactional messaging**&#x200B;區段中已添加了一個注釋，警告事件資料夾不能設定為執行實例的視圖，以避免訪問權限問題。 [顯示全文](../../message-center/using/event-collection.md)
 
 ## 2020 年11月 {#nov-2020}
 
@@ -173,7 +181,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 更新「移除已隔離的位址」章節，內容包括釐清將位址自動從隔離清單移除的案例。[顯示全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-新增使用案例，以說明如何使用「控制面板」及「行銷活動工作流程」進行資料[加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)與[解密](../../workflow/using/importing-data.md#use-case-gpg-decrypt)。
+新增使用案例，以說明如何使用「控制面板」及「行銷活動工作流程」進行資料[加密](../../platform/using/zip-encrypt.md)與[解密](../../platform/using/unzip-decrypt.md)。
 
 Experience Cloud Triggers 和 Adobe Campaign Classic 整合頁面已移至[此處](../../integrations/using/about-triggers.md)。
 
