@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 29%
+source-wordcount: '145'
+ht-degree: 28%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 29%
 
 ## 使用工作流程{#use-workflows}
 
-導出和導入在通過工作流通過&#x200B;**[!UICONTROL Import]**&#x200B;和&#x200B;**[!UICONTROL Export]**&#x200B;活動執行的專用模板中配置。 它們可以根據時間表自動重複，例如多個資訊系統之間的自動化資料交換。[進一步瞭解](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+匯出和匯入是在專用範本中設定，這些範本是透過匯入和匯出活動透過工作流程執行。 它們可以根據時間表自動重複，例如多個資訊系統之間的自動化資料交換。[進一步瞭解](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 如有必要，您可以透過下述的&#x200B;**[!UICONTROL Generic imports and exports]**&#x200B;功能建立偶爾匯入或匯出工作。
 
 ## 建立作業{#create-jobs}
 
-要配置並執行資料導入和導出作業，請轉至&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結。 [進一步瞭解](../../platform/using/generic-imports-and-exports.md)
+要配置並執行資料導入和導出作業，請轉至&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結。 [進一步瞭解](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
