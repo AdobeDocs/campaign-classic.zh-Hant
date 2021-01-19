@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 64%
+source-wordcount: '207'
+ht-degree: 62%
 
 ---
 
@@ -52,10 +52,11 @@ ht-degree: 64%
 * [建立摘要清單](../../workflow/using/creating-a-summary-list.md)
 * [豐富資料](../../workflow/using/enriching-data.md)
 * [使用彙總](../../workflow/using/using-aggregates.md)
-* [匯入使用控制面板產生的金鑰加密的資料](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [匯入使用控制面板產生的金鑰加密的資料](../../platform/using/unzip-decrypt.md)
 * [使用控制面板上安裝的密鑰加密和導出資料](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
 * [使用重複資料消除活動的合併功能](../../workflow/using/deduplication-merge.md)
+* [設定循環匯入工作流程](../../workflow/using/recurring-import-workflow.md)
 
 ## 目標定位{#designing-queries}
 
