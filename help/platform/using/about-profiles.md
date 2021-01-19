@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 63%
@@ -45,7 +45,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->要瞭解如何導入檔案和Web表單，請參閱[通用導入和導出](../../platform/using/generic-imports-and-exports.md)。
+>要瞭解如何導入檔案和Web表單，請參閱[通用導入和導出](../../platform/using/get-started-data-import-export.md)。
 
 ## 用戶檔案和目標 {#profiles-and-targets}
 
@@ -58,7 +58,7 @@ ht-degree: 63%
 * 清單；請參閱[建立和管理清單](../../platform/using/creating-and-managing-lists.md),
 * 訂閱服務，請參閱[本頁面](../../delivery/using/managing-subscriptions.md)
 * 網路應用程式，請參閱[本頁面](../../web/using/about-web-applications.md)
-* 進出口（就業）;請參閱[一般匯入與匯出](../../platform/using/generic-imports-and-exports.md),
+* 進出口（就業）;請參閱[一般匯入與匯出](../../platform/using/about-generic-imports-exports.md),
 * 鎖定工作流程，請參閱[本頁面](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 使用收件者頁面，您可以對用戶檔案執行常見的作業，如編輯、更新、新增、刪除、排序。
@@ -77,7 +77,7 @@ ht-degree: 63%
 
 ![](assets/d_ncs_user_interface01.png)
 
-Adobe Campaign檔案總管的一般版面配置會顯示在「使用Adobe Campaign檔案總管[」中。](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)
+Adobe Campaign檔案總管的一般版面配置會顯示在「使用Adobe Campaign檔案總管](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)」中。[
 
 >[!NOTE]
 >
