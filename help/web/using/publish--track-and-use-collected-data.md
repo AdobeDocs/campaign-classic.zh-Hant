@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -111,7 +111,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >[本節](../../platform/using/generic-imports-and-exports.md)中詳細介紹了資料導出及其配置的階段。
+   >[本節](../../platform/using/about-generic-imports-exports.md)中詳細介紹了資料導出及其配置的階段。
 
 ## 使用收集的資料{#using-the-collected-data}
 
