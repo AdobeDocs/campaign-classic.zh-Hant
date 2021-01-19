@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 2%
@@ -104,7 +104,7 @@ ht-degree: 2%
 
 1. 匯入收件者時，按一下&#x200B;**[!UICONTROL File format definition...]**&#x200B;連結以選取並設定外部檔案。
 
-   有關資料導入的詳細資訊，請參閱[本節](../../platform/using/importing-data.md#step-2---source-file-selection)。
+   有關資料導入的詳細資訊，請參閱[本節](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)。
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**，將傳送設定為標準傳送。
 
