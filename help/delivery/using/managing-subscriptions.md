@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -130,7 +130,7 @@ ht-degree: 2%
 * 自動訂閱一組收件者至此服務。 收件者清單可來自使用滑鼠的篩選操作、群組、資料夾、匯入或直接選取。 若要訂閱這些收件者，請選取描述檔，然後按一下滑鼠右鍵。 選擇&#x200B;**[!UICONTROL Actions > Subscribe selection to a service...]**，選擇相關服務，然後啟動操作。
 * 匯入收件者，並自動將其訂閱至資訊服務。 要執行此操作，請在導入嚮導的最後一個步驟中選擇相關服務。
 
-   如需詳細資訊，請參閱[本章節](../../platform/using/importing-data.md#import-wizard)。
+   如需詳細資訊，請參閱[本章節](../../platform/using/executing-import-jobs.md)。
 
 * 使用Web表格，讓收件者可訂閱服務。
 
