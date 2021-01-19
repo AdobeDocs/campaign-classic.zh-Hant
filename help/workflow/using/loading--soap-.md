@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -43,7 +43,7 @@ ht-degree: 4%
 
    如果要更新示例，請選擇&#x200B;**[!UICONTROL Re-analyze the example]**。
 
-   您也可以透過&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結個人化欄資料的格式。 有關格式化導入資料的詳細資訊，請參閱此[部分](../../platform/using/importing-data.md#import-wizard)。
+   您也可以透過&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結個人化欄資料的格式。 有關格式化導入資料的詳細資訊，請參閱此[部分](../../platform/using/executing-import-jobs.md)。
 
 1. 您可以使用行號作為識別碼，並／或指定SOAP呼叫傳回數個元素。
 1. 根據頁籤指令碼的函式輸入以下頁籤指令碼：
