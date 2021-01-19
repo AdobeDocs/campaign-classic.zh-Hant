@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '441'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 * **[!UICONTROL Anonymous access]**:此選項可讓您不受限制地存取報表。但是，不可能操縱。
 
-   「webapp」技術營運商的權利可用來顯示報表元素。 瞭解本節[的更多資訊。](../../platform/using/access-management.md#default-operators)
+   「webapp」技術營運商的權利可用來顯示報表元素。 瞭解本節](../../platform/using/access-management.md#default-operators)的更多資訊。[
 
 * **[!UICONTROL Access control]**:此選項可讓Adobe Campaign營運商在登入後加以存取。
 * **[!UICONTROL Specific account]**:此選項可讓您以在欄位中選取之運算子的權限執行 **[!UICONTROL Operator]** 報表。
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 在&#x200B;**[!UICONTROL Rendering]**&#x200B;標籤中，您可以個人化頁面的資料顯示模式。 您可以選擇：
 
-* 圖表轉換引擎：Adobe Campaign提供兩種不同的模式來產生圖表轉換。 依預設，演算引擎為HTML 5。 如有必要，您可以選取Flash演算。
+* 圖表轉換引擎：依預設，演算引擎為HTML 5。
 * 報表中的導覽類型：按鈕或連結。
 * 報表元素的標籤預設位置。 此位置可以為每個元素過載。
 * 用於產生報表頁面的範本或主題。
