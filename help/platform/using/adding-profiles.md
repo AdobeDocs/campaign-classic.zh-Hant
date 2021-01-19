@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 82%
@@ -17,7 +17,7 @@ ht-degree: 82%
 
 # 新增用戶檔案{#adding-profiles}
 
-在大部分情況下，用戶檔案會[透過工作流程匯入 Campaign](../../workflow/using/importing-data.md)。不過，您可以按一下 **[!UICONTROL Create]** 按鈕，直接從介面新增一或多個用戶檔案。然後將它們新增至資料庫。
+在大部分情況下，用戶檔案會[透過工作流程匯入 Campaign](../../platform/using/import-export-workflows.md)。不過，您可以按一下 **[!UICONTROL Create]** 按鈕，直接從介面新增一或多個用戶檔案。然後將它們新增至資料庫。
 
 ![](assets/s_ncs_user_profile_add.png)
 
