@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 * **查詢**:可讓您執行查詢。請參閱[建立查詢](../../workflow/using/query.md#creating-a-query)。
 * **增量查詢**:可讓您執行查詢並規劃其執行。請參閱[增量查詢](../../workflow/using/incremental-query.md)部分。
-* **閱讀清單**:可讓您使用清單中包含的資料。請參閱[使用清單中的資料：閱讀list](../../workflow/using/importing-data.md#using-data-from-a-list--read-list)章節。
+* **閱讀清單**:可讓您使用清單中包含的資料。請參閱[使用清單中的資料：閱讀list](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list)章節。
 * **聯合**:可讓您將多個活動的結果群組至單一目標。請參閱[Union](../../workflow/using/union.md)一節。
 * **交叉點**:可讓您僅擷取具有相同傳入活動結果的人口。請參閱[Intersection](../../workflow/using/intersection.md)部分。
 * **排除**:可讓您根據擷取一或多個其他目標的主要目標來建立目標。請參閱[Intersection](../../workflow/using/intersection.md)部分。
