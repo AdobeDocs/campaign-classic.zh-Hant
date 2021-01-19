@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1210'
 ht-degree: 12%
 
 ---
@@ -88,7 +88,11 @@ Adobe Campaign可讓您透過專用應用程式，在iOS和Android行動裝置�
 
 ## 其他通道 {#other-channels}
 
-Adobe Campaign提供代理商或電話傳送範本，可用來建立外部傳送。 使用這些渠道意味著您可以設定專用的方法來處理輸出檔案。 配置步驟與[直接郵件通道](../../delivery/using/about-direct-mail-channel.md)的配置步驟相同。
+Adobe Campaign提供電話傳送範本，用於建立外部傳送。 使用此通道意味著您可以設定專用的方法來處理輸出檔案。 配置步驟與[直接郵件通道](../../delivery/using/about-direct-mail-channel.md)的配置步驟相同。
+
+>[!NOTE]
+>
+>電話頻道無法立即使用。 其實施需要Adobe諮詢或Adobe合作夥伴參與。 如需詳細資訊，請洽詢您的Adobe代表。
 
 此外，「其他」類型的交付使用不執行流程的特定技術模板：這可讓他們管理在Adobe Campaign平台以外執行的行銷動作。
 
