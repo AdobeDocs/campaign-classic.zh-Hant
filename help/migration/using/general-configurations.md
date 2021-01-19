@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
@@ -616,11 +616,11 @@ logInfo("Done");
 
 ### 個人化報表{#personalized-reports}
 
-如果您想要v7的藍色橫幅（可讓您存取宇宙），您必須重新發佈報表。 如果您遇到問題，可以強制使用v6.0轉換引擎。 若要這麼做，請前往報表中的&#x200B;**[!UICONTROL Properties]**，按一下&#x200B;**[!UICONTROL Rendering]**&#x200B;並選擇&#x200B;**[!UICONTROL Version 6.0 (Flash & OpenOffice)]**&#x200B;轉換引擎。
+<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
-
-如果您想要從新的報表功能中獲益，則必須選取v.6.x轉換引擎。 在這種情況下，請檢查所有指令碼，並視需要進行更改。 至於PDF匯出，如果您已新增OpenOffice的特定指令碼，這將不再適用於新的PDF匯出引擎(PhantomJS)。
+-->
+如果您想要從新報表功能中獲益，您必須重新發佈報表。 若要這麼做，請編輯報表&#x200B;**[!UICONTROL Properties]**，按一下&#x200B;**[!UICONTROL Rendering]**&#x200B;並選取v.6.x轉換引擎。 在這種情況下，請檢查所有指令碼，並視需要進行更改。 至於PDF匯出，如果您已新增Open Office的特定指令碼，這將不再適用於新的PDF匯出引擎(PhantomJS)。
 
 ## 網頁應用程式{#web-applications}
 
