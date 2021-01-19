@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 18%
@@ -21,7 +21,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 本頁顯示托管（托管服務）和內部部署之間的主要差異。 混合式部署的特定性取決於由Adobe代管並由您所在地代管的元素。
 
-本節[介紹了不同的代管模型。](../../installation/using/hosting-models.md)
+本節](../../installation/using/hosting-models.md)介紹了不同的代管模型。[
 
 ## 每部署型號{#capability-matrix}的可用性
 
@@ -33,8 +33,8 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 | 管理中端採購平台 | 隨選 | 隨選 | 可用 | [進一步瞭解](../../installation/using/mid-sourcing-server.md) |
 | 透過Litmus轉換收件匣 | 隨選 | 隨選 | 可用 | [進一步瞭解](../../delivery/using/inbox-rendering.md) |
 | 與IMS整合(Adobe ID) | 隨選 | 隨選 | 隨選 | [進一步瞭解](../../integrations/using/about-adobe-id.md) |
-| 加密／解密檔案傳輸的資料 | 隨選 | 可用 | 可用 | [進一步瞭解](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| 壓縮／解壓縮檔案 | 隨選 | 可用 | 可用 | [進一步瞭解](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| 加密／解密檔案傳輸的資料 | 隨選 | 可用 | 可用 | [進一步瞭解](../../platform/using/unzip-decrypt.md) |
+| 壓縮／解壓縮檔案 | 隨選 | 可用 | 可用 | [進一步瞭解](../../platform/using/unzip-decrypt.md) |
 | 域名委派 | 隨選 | 隨選 | 不可用 | [進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html) |
 | 安裝SpamAssassin | 隨選 | 可用 | 可用 | [進一步瞭解](../../delivery/using/spamassassin.md) |
 | 存取傳送能力報表 | 可用 | 隨選 | 可用 | [進一步瞭解](../../delivery/using/monitoring-deliverability.md) |
