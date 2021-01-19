@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: a80f611140a5fb03e3547a8de228ecd8c96e8862
+source-git-commit: f57f52d8807eb771e2416b6648e1d746a206fa96
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 6%
@@ -57,7 +57,7 @@ ht-degree: 6%
 | **LINE V2存取Token更新** (updateLineV2AccessToken) | LINE 頻道 | 此工作流程會將存取Token重新整理為LINE V2。 |
 | **MID到LineUserID遷移** (MIDToUserIDMigration) | LINE 頻道 | 此工作流將生成LINE V2用戶的ID，以便從LINE V1遷移到LINE V2。 |
 | **行銷資源通知** （資產管理） | 行銷資源(MRM) | 此工作流程管理連結至核准和發佈行銷資源的通知。 |
-| **消息中 &lt;external_account_name>** 心(mcSynch_&lt;external_account_name>) | 事務性消息控制（消息中心——控制） | 此工作流程： <ul><li>恢復由操作處理的事件清單。</li><li>與NmsBroadLogMsg表同步，以恢復發送消息的資格。</li><li>當與NmsBroadLogMsg表的同步完成時，可以立即恢復事件發送日誌。</li><li>與NmsTrackingUrl表同步，以便恢復傳送URL的追蹤。</li><li>當與NmsTrackingUrl表的同步完成時，會立即恢復事件追蹤URL。</li><li>可讓您在傳送傳送後每三小時恢復隔離中放置的所有電子郵件地址。</ul> |
+| **消息中 &lt;external_account_name>** 心(mcSynch_&lt;external_account_name>) | 事務性消息控制（消息中心——控制） | 此工作流程： <ul><li>恢復由操作處理的事件清單。</li><li>與NmsBroadLogMsg表同步，以恢復發送消息的資格。</li><li>當與NmsBroadLogMsg表的同步完成時，可以立即恢復事件發送日誌。</li><li>與NmsTrackingUrl表同步，以便恢復傳送URL的追蹤。</li><li>當與NmsTrackingUrl表的同步完成時，會立即恢復事件追蹤URL。</li><li>可讓您在傳送傳送後每三小時恢復隔離中放置的所有電子郵件地址。</li></ul> |
 | **MessageCenter完整聚合計算** (agg_messageCenter_full) | 事務性消息控制（消息中心——控制） | 此工作流將更新消息中心多維資料集的完全聚合。 預設每天凌晨3點觸發。 此匯總會擷取下列維度：渠道、日期、狀態和事件類型。 然後，消息中心多維資料集用於根據事件生成報告。 您可以在[本節](../../reporting/using/about-cubes.md)中進一步瞭解立方 |
 | **中間採購（傳送計數器）** (defaultMidSourcingDlv) | 轉移至中間來源 | 此工作流程會收集中間採購伺服器上傳送的計數資訊。 計數資訊包括一般傳送指標，例如傳送的傳送數量等。 不包含開啟等追蹤資訊。 預設每10分鐘觸發一次。 |
 | **中端採購（傳送記錄）** (defaultMidSourcingLog) | 轉移至中間來源 | 此工作流程會收集中端採購伺服器上的傳送記錄。 預設會每小時觸發一次。 |
