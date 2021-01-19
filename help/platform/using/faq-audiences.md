@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 如何匯入設定檔？{#how-to-import-profiles-}
 
-探索在您的資料庫中輕鬆[匯入用戶檔案](../../platform/using/importing-data.md#generic-import-samples)的使用案例。
+探索在您的資料庫中輕鬆[匯入用戶檔案](../../platform/using/import-operations-samples.md)的使用案例。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
