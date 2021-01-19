@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >抵用券管理是必須安裝的套件。 若要確認您有「抵用券」管理，請勾選&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 >
->抵用券資料可以使用CSV和XML格式匯入和匯出。 有關導入和導出的詳細資訊，請參閱[本節](../../platform/using/generic-imports-and-exports.md)。
+>抵用券資料可以使用CSV和XML格式匯入和匯出。 有關導入和導出的詳細資訊，請參閱[本節](../../platform/using/get-started-data-import-export.md)。
 
 ## 建立抵用券{#creating-a-coupon}
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >您可大量匯入個別抵用券。 有關導入和導出的詳細資訊，請參閱[本節](../../platform/using/generic-imports-and-exports.md)。
+   >您可大量匯入個別抵用券。 有關導入和導出的詳細資訊，請參閱[本節](../../platform/using/get-started-data-import-export.md)。
 
 ### 設定個別抵用券{#configuring-individual-coupons}
 
