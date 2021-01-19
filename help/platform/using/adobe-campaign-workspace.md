@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '2157'
 ht-degree: 88%
@@ -291,7 +291,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
 
-[Generic imports and exports](../../platform/using/generic-imports-and-exports.md)中說明了導入和導出功能的使用。
+[Generic imports and exports](../../platform/using/about-generic-imports-exports.md)中說明了導入和導出功能的使用。
 
 >[!CAUTION]
 >
