@@ -6,11 +6,11 @@ description: 瞭解更多 Campaign Classic 升級
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 94%
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-身為代管的Gold Standard使用者，您將可自動從Gold Standard升級中獲益，並搭配[最新的GA Gold Standard組建版本](../../rn/using/gold-standard.md#gs-10)，而不需採取任何動作。 [進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
+作為託管 Gold Standard 使用者，您無需採取任何操作便可透過[最新 GA Gold Standard 版本編號](../../rn/using/gold-standard.md#gs-10)，自動受益於 Gold Standard 升級。[進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
 >[!NOTE]
 >[在 GA 相容性矩陣中](../../rn/using/compatibility-matrix-gs.md)提供 Gold Standard 的相容性矩陣。
