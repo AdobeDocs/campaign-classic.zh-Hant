@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
+source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 94%
+source-wordcount: '2290'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 94%
    + 匯入和匯出資料{#importing-and-exporting-data}
       + [開始使用資料匯入和匯出](platform/using/get-started-data-import-export.md)
       + [使用工作流程匯入和匯出資料](platform/using/import-export-workflows.md)
-      + 使用通用導入和導出{generic-imports-exports}
+      + 使用一般導入和導出{#generic-imports-exports}
          + [開始使用一般匯入和匯出功能](platform/using/about-generic-imports-exports.md)
          + [建立匯入和匯出範本](platform/using/creating-import-export-templates.md)
          + [建立導入和導出作業](platform/using/creating-import-export-jobs.md)
@@ -78,10 +78,10 @@ ht-degree: 94%
          + [配置導出作業](platform/using/executing-export-jobs.md)
          + [監視作業執行](platform/using/monitoring-jobs-execution.md)
          + [一般匯入示例](platform/using/import-operations-samples.md)
-      + 管理資料加密和壓縮{managing-data-encryption-compression}
+      + 管理資料加密和壓縮{#managing-data-encryption-compression}
          + [在處理前解壓縮或解密檔案](platform/using/unzip-decrypt.md)
          + [處理前壓縮或加密檔案](platform/using/zip-encrypt.md)
-      + 最佳實務與疑難排解{best-practices}
+      + 最佳實務與疑難排解{#best-practices}
          + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
          + [SFTP伺服器最佳範例與疑難排解](platform/using/sftp-server-usage.md)
    + 篩選資料{#filtering-data}
@@ -453,7 +453,7 @@ ht-degree: 94%
          + [建立摘要清單](workflow/using/creating-a-summary-list.md)
          + [豐富資料](workflow/using/enriching-data.md)
          + [使用彙總](workflow/using/using-aggregates.md)
-         + [使用重複資料消除活動的合併功能](workflow/using/deduplication-merge.md)
+         + [使用重複資料刪除活動的合併功能](workflow/using/deduplication-merge.md)
          + [設定循環匯入工作流程](workflow/using/recurring-import-workflow.md)
       + 設計查詢{#designing-queries}
          + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
@@ -618,7 +618,7 @@ ht-degree: 94%
       + [建立和設定資料庫](installation/using/creating-and-configuring-the-database.md)
       + [Campaign 伺服器設定](installation/using/campaign-server-configuration.md)
       + [部署執行個體](installation/using/deploying-an-instance.md)
-      + [安裝Campaign Classic內建套件](installation/using/installing-campaign-standard-packages.md)
+      + [安裝 Campaign Classic 內建套件](installation/using/installing-campaign-standard-packages.md)
    + 其他配置 {#additional-configurations}
       + [設定 Campaign 伺服器](installation/using/configuring-campaign-server.md)
       + [透過 LDAP 連線](installation/using/connecting-through-ldap.md)
@@ -684,8 +684,8 @@ ht-degree: 94%
       + [RDBMS 特定建議](production/using/rdbms-specific-recommendations.md)
       + [應用程式物件](production/using/application-objects.md)
    + 疑難排解 {#troubleshooting-toc}
-      + [生產疑難排解總覽](production/using/troubleshooting.md)
-      + 常見和一般問題{#common-general-issues-toc}
+      + [生產疑難排解概觀](production/using/troubleshooting.md)
+      + 常見及一般問題{#common-general-issues-toc}
          + [模組和常見問題](production/using/modules-and-frequent-issues.md)
          + [工作流程執行](production/using/workflow-execution.md)
          + [遺失密碼](production/using/lost-password.md)
@@ -701,13 +701,13 @@ ht-degree: 94%
       + 資料庫問題{#database-issues-toc}
          + [資料庫效能](production/using/database-performances.md)
          + [Oracle 資料庫的編碼](production/using/encoding-of-the-oracle-database.md)
-      + 連接改進{#connection-improvements-toc}
+      + 連線增強功能{#connection-improvements-toc}
          + [無法連線](production/using/failure-to-connect.md)
          + [連線閾值](production/using/connection-thresholds.md)
-      + 技術故障排除{#technical-troubleshooting-toc}
+      + 技術疑難排解{#technical-troubleshooting-toc}
          + [Linux 中的堆疊追蹤](production/using/stack-trace-in-linux.md)
          + [JSP 行為](production/using/jsp-behavior.md)
-         + [查找Tomcat版本](production/using/locate-tomcat-version.md)
+         + [找到 Tomcat 版本](production/using/locate-tomcat-version.md)
 + 開發人員指南 {#configuring-campaign-classic}
    + 資料模型 {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
