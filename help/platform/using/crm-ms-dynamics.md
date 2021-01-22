@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 7478ae37aee5e8b0d9c904f5b9d810375d9d6481
+source-git-commit: 521bc3bf9b2507947007d7f458679275d407f910
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 0%
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
@@ -188,3 +188,22 @@ Campaign和Microsoft Dynamics現在已連接。 您可以在兩個系統之間�
 觀看此影片，瞭解如何在Office 365部署中，將Dynamics 365與Adobe Campaign Classic整合。
 
 >[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
+
+
+## 支援的欄位資料類型{#ms-dyn-supported-types}
+
+對於Microsoft Dynamics 365，以下列出支援／不支援的屬性類型：
+
+
+| 屬性類型 | 支援 |
+| --------------------------------------------------------------------------------- | --------- |
+| 基本類型：布爾型，日期時間，小數，浮點型，雙精度，整數， bigint，字串 | 是 |
+| 金錢（雙倍） | 是 |
+| memo, entityname, primarykey, uniqueidentifier（作為字串） | 是 |
+| 狀態、選擇清單（我們將可能的值儲存在枚舉中）、狀態（字串） | 是 |
+| 擁有者（作為字串） | 是 |
+| 查閱（僅單一實體參考查閱） | 是 |
+| 客戶 | 否 |
+| 關於 | 否 |
+| PartyList | 否 |
+| ManagedProperty | 否 |
