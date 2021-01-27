@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 60%
+source-wordcount: '292'
+ht-degree: 59%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 60%
 
 * **[透過IMS/Adobe ID進行連線？升級至最新組建版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，您必須升級至** 2021年3月21日&#x200B;**之後才能連線至Campaign。
 
-* **[促銷活動安](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 全性公告更新至最新建置，以保護您的促銷活動平台。
+* **[保護您的促銷活](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 動例項更新至最新建置，以保護您的促銷活動平台。
 
 * **[移除不正確的硬](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 體彈回數瞭解如何在Gmail中斷後更新不正確的硬體彈回數
 
