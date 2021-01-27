@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1402'
+ht-degree: 9%
 
 ---
 
@@ -19,14 +19,22 @@ ht-degree: 0%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
 
-_2020年12月23日_
+_2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
->此版本隨附新的連線通訊協定： 升級對於Campaign伺服器和用戶端主控台而言，都是必備的，才能在2021年3月21日之後連線至Campaign。
+> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月21日後連線至Campaign。**
+   >
+   > 
+* 此版本隨附安全性修正：升級是強化環境安全的必備條件。
 
-* 已更新連線通訊協定，以遵循新的IMS驗證機制。
-* 已修正安全性問題，以加強針對伺服器端偽造要求(SSRF)問題的保護。 (NEO-27777)
+>
+
+
+
+
+* 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
+* 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
