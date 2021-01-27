@@ -7,15 +7,17 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 24%
 
 ---
 
 
 # 關於Adobe ID{#about-adobe-id}
+
+Adobe Identity Management System(IMS)可協助管理員建立和管理使用者對應用程式和服務的存取。 有關不同Adobe ID類型的詳細資訊，請參閱[本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此整合具備以下優勢︰
 
@@ -24,11 +26,21 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此�
 * 更安全的密碼管理原則。
 * 使用 Federated ID 帳戶（外部 ID 提供者）。
 
-Adobe Identity Management System(IMS)可協助管理員建立和管理使用者對應用程式和服務的存取。 有關不同Adobe ID類型的詳細資訊，請參閱[本頁](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
->Adobe IMS實作嚴格保留給Adobe技術管理員。 請洽詢您的Adobe主管以開始實施程式。
+>如果您要透過Adobe Identity Service(IMS)連線至Campaign，您必須升級至最新的組建版本，才能在&#x200B;**2021年3月21日**&#x200B;之後連線至Campaign。 此升級對於Campaign伺服器和用戶端主控台都是必備的。 視您目前的版本而定，您必須升級至下列其中一個版本：
+>
+> * [Campaign Gold Standard 11](../../rn/using/gold-standard.md)
+> * [Campaign 20.3.3](../../rn/using/latest-release.md)
+> * [Campaign 20.2.4](../../rn/using/release--20-2.md)
+> * [Campaign 20.1.4](../../rn/using/release--20-1.md)
+> * [Campaign 19.2.4](../../rn/using/release--19-2.md)
+> * [Campaign 19.1.8](../../rn/using/release--19-1.md)
+
+>
+
+
 
 ## 相關主題
 
