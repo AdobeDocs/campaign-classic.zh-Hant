@@ -6,11 +6,11 @@ description: Campaign Classic Gold Standard 發行說明
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
-workflow-type: ht
-source-wordcount: '938'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+workflow-type: tm+mt
+source-wordcount: '984'
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,14 @@ _2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
->此版本隨附新的連線通訊協定：對於 Campaign 伺服器和用戶端主控台而言，升級都是必要動作如此才能在 2021 年 3 月 21 日之後連線至 Campaign。
+> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月21日後連線至Campaign。**
+   >
+   > 
+* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
+>
+>
+進一步瞭解[Gold Standard 11升級常見問答集](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)。
+
 
 版本編號 9032@d3b452f 包含下列增強功能及修正檔：
 
@@ -77,11 +84,11 @@ _2020 年 4 月 29 日_
 
 建置 9032@3a9dc9c 包含以下修正：
 
-* 改善了電子郵件中追蹤連結的安全性。依預設為所有客戶啟用此功能。另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)。
+* 改善了電子郵件中追蹤連結的安全性。依預設為所有客戶啟用此功能。另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 
 >[!CAUTION]
 >
->如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。[本頁面](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
+>如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。[本頁面](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
 
 * 修正了無法在 Line 傳遞顯示影像的問題。(NEO-23207)
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
