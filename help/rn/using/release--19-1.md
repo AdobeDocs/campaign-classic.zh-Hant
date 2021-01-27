@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '3061'
-ht-degree: 18%
+source-wordcount: '3087'
+ht-degree: 20%
 
 ---
 
@@ -19,23 +19,31 @@ ht-degree: 18%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
 
-_2020年12月16日_
+_2020 年 12 月 16 日_
 
 >[!CAUTION]
 >
->此版本隨附新的連線通訊協定： 升級對於Campaign伺服器和用戶端主控台而言，都是必備的，才能在2021年3月21日之後連線至Campaign。
+> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月21日後連線至Campaign。**
+   >
+   > 
+* 此版本隨附安全性修正：升級是強化環境安全的必備條件。
+
+>
+
+
+
 
 **功能改善**
 
-* 已更新連線通訊協定，以遵循新的IMS驗證機制。
+* 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 觸發整合驗證原本以oAUTH驗證設定為基礎，以存取管道的觸發器已變更並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
-* 在iOS APNs舊式二進位通訊協定支援結束後，使用此通訊協定的所有執行個體都會在設定檔期間更新為HTTP/2通訊協定。
-* 已修正安全性問題，以加強針對伺服器端偽造要求(SSRF)問題的保護。 (NEO-27777)
+* 在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
+* 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳送並導致效能問題的問題。
 * 修正透過工作流程活動產生描述性報表時，顯示錯誤百分比的問題。 (NEO-14314)
 * 修正未選取「在傳送期間排除重複位址」選項時的傳送準備問題。 ****(NEO-13240)
 * 修正執行&#x200B;**擴充**&#x200B;活動時，工作流程可能失敗的問題。(NEO-17338)
-* 修正了從外部資料庫擷取記錄並將記錄插入　Campaign　資料庫時，所發生的工作流程問題。(NEO-26359)
+* 修正了從外部資料庫擷取記錄並將記錄插入 Campaign 資料庫時，所發生的工作流程問題。(NEO-26359)
 * 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。
 * 修正在升級至build 9032後，**NoNull**&#x200B;函式無法在Oracle資料庫中工作的問題。 (NEO-26488)
 * 修正了當編輯行銷活動範本說明，在複製貼上像是日文字元等符號時，無法顯示&#x200B;**「儲存」**&#x200B;按鈕的問題。(NEO-27071)
