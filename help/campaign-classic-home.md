@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 66%
+source-wordcount: '291'
+ht-degree: 60%
 
 ---
 
@@ -19,13 +19,15 @@ ht-degree: 66%
 
 ## 新增功能
 
+* **[透過IMS/Adobe ID進行連線？升級至最新組建版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，您必須升級至** 2021年3月21日&#x200B;**之後才能連線至Campaign。
+
+* **[促銷活動安](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 全性公告更新至最新建置，以保護您的促銷活動平台。
+
 * **[移除不正確的硬](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 體彈回數瞭解如何在Gmail中斷後更新不正確的硬體彈回數
 
-* **[更新您的Adobe Experience Cloud觸發器整](integrations/using/configuring-adobe-io.md)**<br/> 合舊版oAuth驗證服務已到期。瞭解如何移轉至Adobe I/O
+* **[更新您的Adobe Experience Cloud觸發器整](integrations/using/configuring-adobe-io.md)**<br/> 合舊版oAuth驗證服務已到期。瞭解如何移轉至Adobe I/O。
 
 * **[移至基於HTTP/2的APNs提供者](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/> APIL瞭解如何從舊式二進位通訊協定移轉至基於HTTP/2的APNs提供者API
-
-* **[將表情符號新增至](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> 訊息中您現在可以在訊息和主旨行中插入表情符號
 
 * **[取得支援](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)**<br/>
 存取常見問題集、最佳實務、說明資源，以及請求協助
