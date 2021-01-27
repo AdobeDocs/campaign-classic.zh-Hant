@@ -6,11 +6,11 @@ description: 最新的 Campaign Classic 發行說明
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: ht
-source-wordcount: '1911'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+workflow-type: tm+mt
+source-wordcount: '1937'
+ht-degree: 97%
 
 ---
 
@@ -31,6 +31,17 @@ _2021 年 1 月 11 日_
 ## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
 
 _2020 年 10 月 27 日_
+
+>[!CAUTION]
+>
+> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月21日後連線至Campaign。**
+   >
+   > 
+* 此版本隨附安全性修正：升級是強化環境安全的必備條件。
+
+>
+
+
 
 **新增功能？**
 
@@ -71,10 +82,6 @@ _2020 年 10 月 27 日_
 </tr> 
 </tbody> 
 </table>
-
->[!CAUTION]
->
->此版本隨附新的連線通訊協定：對於 Campaign 伺服器和用戶端主控台而言，升級都是必要動作如此才能在 2021 年 3 月 21 日之後連線至 Campaign。
 
 **安全性增強功能**
 
