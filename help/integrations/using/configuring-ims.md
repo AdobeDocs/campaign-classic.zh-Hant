@@ -7,15 +7,19 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
 
 
 # 配置IMS{#configuring-ims}
+
+>[!IMPORTANT]
+>
+>Adobe IMS實作嚴格保留給Adobe技術管理員。 請洽詢您的Adobe主管以開始實施程式。
 
 ## 必要條件 {#prerequisites}
 
