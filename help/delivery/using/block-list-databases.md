@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    請參閱[https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   資料庫更重要。 列入這份名單通常是一種嚴重情況。 如果發生此情況，您必須立即採取行動，並警告商業服務、傳遞性和Adobe Campaign支援。
+   資料庫更重要。 列入這份名單通常是一種嚴重情況。 如果發生此情況，您必須立即採取行動，並警告商業服務、傳遞性和[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ ht-degree: 0%
 
    請參閱[https://www.uribl.com/](https://www.uribl.com/)
 
-   此清單標識在宣告為垃圾郵件的郵件中定期顯示的域。 如果您的網域出現在此清單中，可能會大幅影響您的傳遞能力。 您應立即通知傳遞性服務和Adobe Campaign支援。
+   此清單標識在宣告為垃圾郵件的郵件中定期顯示的域。 如果您的網域出現在此清單中，可能會大幅影響您的傳遞能力。 您應立即通知傳遞性服務和[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **SURBL**
 
    請參閱[http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL可識別定期出現在垃圾訊息中的網站。 如果您的網域出現在此清單中，可能會大幅影響您的傳遞能力。 您應立即通知傳遞性服務和Adobe Campaign支援。
+   SURBL可識別定期出現在垃圾訊息中的網站。 如果您的網域出現在此清單中，可能會大幅影響您的傳遞能力。 您應立即通知傳遞性服務和[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **iX Manitu**
 
