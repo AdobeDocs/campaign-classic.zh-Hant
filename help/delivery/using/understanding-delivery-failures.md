@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2440'
-ht-degree: 16%
+source-wordcount: '2446'
+ht-degree: 15%
 
 ---
 
@@ -297,7 +297,7 @@ Adobe Campaign訊息伺服器會將單一&#x200B;**網域管理**&#x200B;規則�
 * 您可以選擇是否激活某些標識標準和加密密鑰來檢查域名，如&#x200B;**發送者ID**、**域密鑰**、**DKIM**&#x200B;和&#x200B;**S/MIME**。
 * **SMTP中繼**&#x200B;參數允許您為特定域配置中繼伺服器的IP地址和埠。 如需詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
-如果您的訊息在Outlook中的傳送者位址中顯示有&#x200B;**[!UICONTROL on behalf of]**，請確定您未使用&#x200B;**傳送者ID**&#x200B;來簽署電子郵件，此為Microsoft的過時專屬電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消勾選對應方塊，並聯絡Adobe Campaign支援。 您的傳遞能力不會受到影響。
+如果您的訊息在Outlook中的傳送者位址中顯示有&#x200B;**[!UICONTROL on behalf of]**，請確定您未使用&#x200B;**傳送者ID**&#x200B;來簽署電子郵件，此為Microsoft的過時專屬電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消勾選對應的方塊，並聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不會受到影響。
 
 >[!IMPORTANT]
 >
