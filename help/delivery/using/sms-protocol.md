@@ -1,20 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: SMS連接器通訊協定與設定
+title: SMS 連接器通訊協定及設定
 description: 進一步瞭解SMS連接器以及如何設定它。
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '8424'
+source-wordcount: '8433'
 ht-degree: 0%
 
 ---
 
-# SMS連接器協定和設定{#sms-connector-protocol}
+# SMS 連接器通訊協定及設定 {#sms-connector-protocol}
 
 >[!NOTE]
 >
@@ -819,7 +819,7 @@ SMS程式每分鐘檢查是否有完整的線路，然後以非同步方式處�
 ### 在檢查{#enable-verbose}期間啟用詳細SMPP跟蹤
 
 您應始終在檢查期間啟用詳細的SMPP跟蹤。
-即使您無法自行檢查記錄檔，「支援」也能更輕鬆地協助您。
+即使您無法自行檢查記錄檔，[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)也能更輕鬆地協助您。
 
 ### 測試您的SMS {#test}
 
