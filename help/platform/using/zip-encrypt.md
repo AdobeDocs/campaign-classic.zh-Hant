@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '538'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過&#x200B;**[!UI
    >
    >控制面板適用於AWS托管的所有客戶（現場托管其行銷實例的客戶除外）。
 
-1. 如果您的Adobe Campaign安裝是由Adobe代管，請聯絡Adobe客戶服務，以便在伺服器上安裝必要的公用程式。
+1. 如果您的Adobe Campaign安裝是由Adobe代管，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以便在伺服器上安裝必要的公用程式。
 1. 如果您的Adobe Campaign安裝是內部部署，請安裝您要使用的公用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
 
 然後，您可以在活動的&#x200B;**[!UICONTROL Script]**&#x200B;標籤或&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動中使用命令或代碼。 在下面的使用案例中提供了示例。
@@ -58,7 +58,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過&#x200B;**[!UI
 
 1. 配置&#x200B;**[!UICONTROL Query]**&#x200B;活動以定位資料庫中所需的資料。 如需詳細資訊，請參閱[本章節](../../workflow/using/query.md)。
 
-1. 開啟&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何配置活動的全局概念可在[本節](../../workflow/using/extraction--file-.md)中獲得。
+1. 開啟&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何配置活動的全局概念，請參閱[本節](../../workflow/using/extraction--file-.md)。
 
    ![](assets/gpg-data-extraction.png)
 
