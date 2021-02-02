@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 * 更新訂閱表單以偵測輸入的網域名稱中的任何錯誤(例如：gmaul.com或yaho.com)。
 * 如果您發現錯誤，指出您的訊息已宣告為垃圾訊息，或您的訊息經常遭到封鎖，請嘗試將過去12個月中未開啟或點按其中一則訊息的收件者排除在目標位置。
 
-如果問題持續存在，請聯絡商業或傳遞性服務、Adobe Campaign Client Care或Adobe Campaign支援。
+如果問題持續存在，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)的商業或交付性服務。
 
 ## Denylist與隔離{#denylist-versus-quarantine}
 
