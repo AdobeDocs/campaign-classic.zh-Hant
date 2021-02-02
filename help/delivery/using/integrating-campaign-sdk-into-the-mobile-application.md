@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ iOS和Android適用的促銷活動SDK是行動應用程式頻道模組的元件�
 
 >[!NOTE]
 >
->若要取得Campaign SDK（先前稱為Neolane SDK），請聯絡Adobe客戶服務。
+>若要取得Campaign SDK（先前稱為Neolane SDK），請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 SDK的目標是協助將行動應用程式整合至Adobe Campaign平台。
 
