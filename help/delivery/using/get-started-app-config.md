@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '280'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 9%
 
 ![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-身為混合／代管客戶，請聯絡Adobe客戶服務團隊以存取Campaign中的推播通知頻道。
+身為混合／代管客戶，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊，以存取Campaign中的推播通知頻道。
 
 身為內部部署客戶，您需要執行下列安裝步驟：
 
