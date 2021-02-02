@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -41,23 +41,6 @@ Workflow HeatMap提供並行工作流程數目的快速概覽，讓Adobe Campaig
 使用Workflow HeatMap需要對下列概念有充分的瞭解：[Workflows](../../workflow/using/about-workflows.md)、[Activitys](../../workflow/using/about-activities.md)和[Workflow Best Practices](../../workflow/using/workflow-best-practices.md)。
 
 Adobe Campaign 18.10版本預設提供Workflow HeatMap。 如果您的組建版本介於8700和8977(18.10)之間，您也可以受益於此功能。 若要要求相應的套件，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，並依照[本頁](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html)的指示，瞭解如何安裝它。
-
-當您第一次存取Worklow HeatMap時，會出現下列快顯視窗。 本合約允許Adobe Campaign在美國的轉讓和儲存，以便：
-
-* 監視實例以調查任何效能問題。
-* 收集異常偵測的資料。
-
-請注意，您的資料傳輸僅適用於使用其Adobe ID連線至Adobe Campaign的使用者。
-
-![](assets/wf_monitoring_agreement.png)
-
-有三個選項可供使用：
-
-* **[!UICONTROL Accept]** :接受本合約後，您即授權Adobe Campaign收集您的資料，並將其傳輸至美國，以便在異常偵測時提供協助。
-* **[!UICONTROL Refuse]** :拒絕合約後，您的資料將不會傳輸，但您仍可使用「工作流程熱圖」。
-* **[!UICONTROL Do not show this message again]** :按一 **[!UICONTROL Do not show this message again]** 下，當存取「工作流程熱圖」時，快顯視窗將停止顯示，但仍可從按鈕 **[!UICONTROL Term of use]** 使用。
-
-此選項不是最終選項，您隨時都可以按一下&#x200B;**[!UICONTROL Term of use]**&#x200B;按鈕來變更。
 
 ## 使用熱圖{#using-the-heatmap}
 
