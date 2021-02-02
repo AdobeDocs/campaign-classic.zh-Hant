@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98a2c5aa01b4d45ceeb14fb1ad7a607b236c2817
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 1%
 * [步驟3:建立兩個傳送範本](#step-3--creating-two-delivery-templates)
 * [步驟4:在工作流程中設定傳送](#step-4--configuring-the-deliveries-in-the-workflow)
 * [步驟5:建立指令碼](#step-5--creating-the-script)
+* [步驟6:定義最終交付](#step-6--defining-the-final-delivery)
 * [步驟7:啟動工作流](#step-7--starting-the-workflow)
 * [步驟8:分析結果](#step-8--analyzing-the-result)。
 
@@ -49,7 +50,7 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. 變更現有工作流程的標籤，或按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新工作流程（如需詳細資訊，請參閱此[章節](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
+1. 變更現有工作流程的標籤，或按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新工作流程。
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
@@ -183,7 +184,7 @@ ht-degree: 1%
 
 ### 指令碼{#example-of-a-script}示例
 
-以下指令碼可如同在定位工作流程中使用。 有關詳細資訊，請參閱[實施](#implementation)。
+以下指令碼可以與目標工作流中一樣使用（請參閱[配置指令碼](../../workflow/using/a-b-testing.md#configuring-script)）。
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,12 +230,12 @@ ht-degree: 1%
    vars.deliveryId = delivery.id
 ```
 
-有關指令碼的詳細說明，請參閱[指令碼的詳細資訊](#details-of-the-script)。
+有關指令碼的詳細說明，請參閱[本節](../../workflow/using/a-b-testing.md#details-of-the-script)。
 
-### 實施{#implementation}
+### 配置指令碼{#configuring-script}
 
 1. 開啟您的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
-1. 將[Example of a script](#example-of-a-script)中提供的指令碼複製到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口。
+1. 將呈現在[之前](../../workflow/using/a-b-testing.md#example-of-a-script)的指令碼複製到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口中。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
