@@ -1,13 +1,13 @@
 ---
-keywords: Campaign Classic;home;popular topics
+keywords: Campaign Classic;home；熱門主題
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '296'
 ht-degree: 59%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 59%
 
 ## 新增功能
 
-* **[透過IMS/Adobe ID進行連線？升級至最新組建版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，您必須升級至** 2021年3月21日&#x200B;**之後才能連線至Campaign。
+* **[透過IMS/Adobe ID進行連線？升級至最新組建版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至** 2021年3月31日&#x200B;**之後才能連線至Campaign。
 
 * **[保護您的促銷活](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 動例項更新至最新建置，以保護您的促銷活動平台。
 
