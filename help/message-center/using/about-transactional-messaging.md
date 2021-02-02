@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '171'
 ht-degree: 9%
 
 ---
@@ -29,4 +29,4 @@ Adobe Campaign訊息中心模組已整合在資訊系統中，可傳回要變更
 
 >[!NOTE]
 >
->若要為Adobe Cloud上裝載的訊息中心執行例項建立新使用者，您必須聯絡Adobe客戶服務。 消息中心用戶是需要專用權限才能訪問「即時事件」(nmsRtEvent)資料夾的特定操作員。
+>若要為Adobe Cloud上裝載的訊息中心執行例項建立新使用者，您必須聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 消息中心用戶是需要專用權限才能訪問「即時事件」(nmsRtEvent)資料夾的特定操作員。
