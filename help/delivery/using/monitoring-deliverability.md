@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '773'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Deliverability套件可讓您存取：
 * **[!UICONTROL Technical deliverability monitoring]**&#x200B;報表包含許多平台的傳遞能力品質指標。 如需詳細資訊，請參閱[本節](#technical-deliverability-monitoring)。
 * 每個傳送都會針對不同的網際網路服務供應商(ISP)產生廣播統計報告。 它會顯示一些可能影響傳遞能力的資料品質和信譽度量，包括下列數字：
    * **[!UICONTROL Hard bounces]** 指出資料品質。此數字應小於2%。
-   * **[!UICONTROL Soft bounces]** 表明信譽。對於任何給定的ISP，此數字都不應高於10%。
+   * **[!UICONTROL Soft bounces]** 表明信譽。對於任何給定的ISP，該數字都不應高於10%。
 
    有關詳細資訊，請參閱[傳送統計資訊](../../reporting/using/global-reports.md#delivery-statistics)部分。
 * 通常，[傳送控制面板](../../delivery/using/about-delivery-monitoring.md)可讓您存取：
@@ -71,17 +71,12 @@ Signal Spam是法國服務，為法國ISP(Orange、SFR)提供匿名回饋迴路�
 
 ## 技術交付能力監控報告{#technical-deliverability-monitoring}
 
-技術傳遞能力監控報告會每日更新，您可導覽至&#x200B;**[!UICONTROL Monitoring]** > **[!UICONTROL Overview]**，然後按一下Adobe Campaign **[!UICONTROL Home]**&#x200B;標籤中的&#x200B;**[!UICONTROL Technical monitoring]**&#x200B;連結。 它包含許多平台的傳遞能力品質指標。
+**技術傳遞能力監控**&#x200B;報表包含許多平台的傳遞能力品質指標。 您可以透過電子郵件收到此每日報表。 若要請求，請開啟特定的[支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)並指定：
 
-這些指標每天上午9點更新。
+* 實例的名稱
+* 要傳送報表的電子郵件地址
 
->[!NOTE]
->
->此外，您還可以透過電子郵件，在指定的位址接收每日報表。 透過電子郵件或Adobe Campaign Extranet，告訴我們所要求的電子郵件地址。
-
-![](assets/s_tn_del_monitoring.png)
-
-報表中使用下列指標：
+此報表包含下列指標：
 
 * **[!UICONTROL Reverse DNS]** :Adobe Campaign會檢查是否提供反向DNS以取得IP位址，且這會正確指向IP。
 
@@ -92,6 +87,9 @@ Signal Spam是法國服務，為法國ISP(Orange、SFR)提供匿名回饋迴路�
 * **[!UICONTROL IP and RBL domain]** （即時黑洞清單）:IP位址和網域的清單，這些網域已被拒絕列出的組織標示為傳送信譽不佳。這些清單由專屬組織維護，例如Spamhaus、Spamcop、SURBL/URIBL等。 Adobe Campaign目前會處理對RBL進行檢查，這些RBL對傳遞能力有重大影響。 這些RBL反映傳送的信譽，ISP可能會在接收您的電子郵件前參考這些信譽。
 
 * **[!UICONTROL SNDS]** （智慧網路資料服務）:Windows  [Live Hotmail反垃圾郵件服務](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)。Hotmail是唯一提供此類資訊的ISP。 基準分數是綠色篩選結果，投訴率低於0.1%，而且零垃圾訊息陷阱。
+
+這些指標每天上午9點更新。
+
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
