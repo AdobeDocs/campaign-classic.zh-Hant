@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 41%
+source-wordcount: '1102'
+ht-degree: 36%
 
 ---
 
@@ -98,11 +98,11 @@ SFTP伺服器設計為臨時儲存空間，您可以在其上控制檔案的保�
    >
    >Netcat 工具可讓您輕鬆管理各種操作系統上的網路連線 (請參見 [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/))。
 
-   如果埠未打開，請確保打開側面的傳出連線，然後重試。如果仍遇到連接問題，請與 Adobe 支援團隊分享該命令的輸出。
+   如果埠未打開，請確保打開側面的傳出連線，然後重試。如果您仍然遇到連線問題，請與[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊共用命令輸出。
 
 1. 檢查您嘗試從中啟動SFTP連線的公用IP是否是您提供給Adobe支援的allowlist。
 1. 如果您使用密碼驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用基於密鑰的驗證（請參閱[SFTP伺服器最佳實踐](#sftp-server-best-practices)）。
-1. 如果您使用的是基於金鑰的身份驗證，請檢查您使用的金鑰是否與為執行個體配置提供給 Adobe 支援團隊的金鑰相同。
+1. 如果您使用基於金鑰的驗證，請檢查您使用的金鑰是否與您提供給[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊的實例設定相同。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
 
 ## 「無法解析主機名」錯誤
