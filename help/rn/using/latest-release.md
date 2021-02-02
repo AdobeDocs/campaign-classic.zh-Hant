@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1977'
 ht-degree: 95%
@@ -34,7 +34,7 @@ _2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級促銷活動伺服器和用戶端主控台才能在&#x200B;**2021年3月21日**&#x200B;之後連線至Campaign。
+> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月31日後連線至Campaign。**
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
 > * 如果您透過Auth驗證使用Experience Cloud觸發器整合，您必須依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於2021年4月30日&#x200B;****&#x200B;淘汰。
 
@@ -108,7 +108,7 @@ _2020 年 10 月 27 日_
 **功能改善**
 
 * 幾項改善進行於&#x200B;**客戶端控制台**：
-   * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。必須進行伺服器及用戶端主控台升級，才能在 2021 年 3 月 21 日之後連線。
+   * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。必須進行伺服器及用戶端主控台升級，才能在 2021 年 3 月 31 日之後連線。
    * 為了避免與某些網際網路安全性 GPO 規則限制發生不相容的情況，已將 Campaign 用戶端主控台登入畫面由內建的標準 Windows 表單取代。
    * 修正了在使用 64 位元用戶端主控台的工作流程中進行複製/貼上活動所發生的問題。(NEO-27635)
    * 在&#x200B;**「關於」**&#x200B;功能表中，已新增資訊，以區分 64 位元和 32 位元控制台。
