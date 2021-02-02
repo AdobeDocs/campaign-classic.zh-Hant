@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '692'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 本[頁面](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)中詳細說明內部部署Campaign Classic硬體需求的一般准則。
 
-諮詢團隊可為代管客戶提供工具，讓您輕鬆檢視資料庫中各種表格使用了多少空間，以及SFTP網站上使用多少空間。 此外，它還提供工具，讓您能夠清除不必要的資料。 如果您需要實作此工具，請聯絡諮詢或支援團隊。 以下是使用此工具檢查的幾項重要事項：
+諮詢團隊可為代管客戶提供工具，讓您輕鬆檢視資料庫中各種表格使用了多少空間，以及SFTP網站上使用多少空間。 此外，它還提供工具，讓您能夠清除不必要的資料。 如果您需要實作此工具，請連絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 以下是使用此工具檢查的幾項重要事項：
 
 * 如果索引大小大於表格大小，則需要真空。
 * 檢查具有最大部落格的表。 如果這些表格經常使用，則需要抽空。
