@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: c24cdd21c2426ea12a1cbd76d78154256bc814c8
 workflow-type: tm+mt
-source-wordcount: '2984'
+source-wordcount: '3019'
 ht-degree: 2%
 
 ---
@@ -123,6 +123,11 @@ Adobe Campaign可讓您定義並管理指派給各種運算子的權限。 這�
 **[!UICONTROL Edit the access parameters...]**&#x200B;連結可讓您存取下列選項：
 
 * **[!UICONTROL Disable account]**&#x200B;選項可讓您停用運算子的帳戶：他將無法再存取Adobe Campaign。
+
+   >[!NOTE]
+   >
+   >即使其帳戶已停用，營運商仍可接收來自促銷活動的警報或通知。 若要停止傳送促銷活動通知給此營運商，Adobe建議您從他的個人檔案中移除電子郵件地址。
+
 * **[!UICONTROL Forbid access from the rich client]**&#x200B;選項可讓您將Adobe Campaign的使用限制為[Web存取](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)或透過API:無法再存取Adobe Campaign用戶端主控台。
 * 可以把安全區和操作員連接起來。 有關詳細資訊，請參見[此頁面](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 * 您也可以使用適當的連結來定義受信任的IP遮罩。
