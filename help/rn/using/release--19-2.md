@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1416'
 ht-degree: 9%
 
 ---
@@ -26,10 +26,7 @@ _2020 年 12 月 23 日_
 > * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月21日後連線至Campaign。**
    >
    > 
-* 此版本隨附安全性修正：升級是強化環境安全的必備條件。
-
->
-
+* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
 
 
 
@@ -145,7 +142,7 @@ _不建議使用的系統_
 
 _Campaign Mobile SDK_
 
-iOS SDK的組建版本1.0.26現已推出。 在這個新版本中，我們新增了iOS 13的支援。 這個新版本現在支援iOS 13推播通知的通知優先順序和新的註冊Token管理程式。 如果您正在舊版SDK上執行應用程式，則需要使用新的SDK重新編譯應用程式。 若要取得SDK，請聯絡Adobe客戶服務。
+iOS SDK的組建版本1.0.26現已推出。 在這個新版本中，我們新增了iOS 13的支援。 這個新版本現在支援iOS 13推播通知的通知優先順序和新的註冊Token管理程式。 如果您正在舊版SDK上執行應用程式，則需要使用新的SDK重新編譯應用程式。 若要取得SDK，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **修補程式**
 
