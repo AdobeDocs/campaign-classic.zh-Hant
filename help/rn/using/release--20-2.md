@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '2509'
-ht-degree: 92%
+source-wordcount: '2556'
+ht-degree: 90%
 
 ---
 
@@ -25,13 +25,9 @@ _2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月21日後連線至Campaign。**
-   >
-   > 
-* 此版本隨附安全性修正：升級是強化環境安全的必備條件。
-
->
-
+> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級促銷活動伺服器和用戶端主控台才能在&#x200B;**2021年3月21日**&#x200B;之後連線至Campaign。
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
+> * 如果您透過Auth驗證使用Experience Cloud觸發器整合，您必須依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於2021年4月30日&#x200B;****&#x200B;淘汰。
 
 
 
@@ -39,7 +35,7 @@ _2020 年 12 月 22 日_
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 觸發整合驗證原本以oAUTH驗證設定為基礎，以存取管道的觸發器已變更並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
-* 在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
+* 在[結束對iOS APNs舊式二進位通訊協定](https://developer.apple.com/news/?id=c88acm2b)的支援後，使用此通訊協定的所有執行個體會在設定檔期間更新為HTTP/2通訊協定。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳送並導致效能問題的問題。 (NEO-28609)
 * 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。(NEO-26856)
