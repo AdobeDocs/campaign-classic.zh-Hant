@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1436'
 ht-degree: 8%
 
 ---
@@ -26,10 +26,7 @@ _2020 年 12 月 23 日_
 > * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月21日後連線至Campaign。**
    >
    > 
-* 此版本隨附安全性修正：升級是強化環境安全的必備條件。
-
->
-
+* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
 
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
