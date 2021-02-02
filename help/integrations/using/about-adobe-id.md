@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 24%
 
 ---
@@ -29,7 +29,7 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此�
 
 >[!IMPORTANT]
 >
->如果您要透過Adobe Identity Service(IMS)連線至Campaign，您必須升級至最新的組建版本，才能在&#x200B;**2021年3月21日**&#x200B;之後連線至Campaign。 此升級對於Campaign伺服器和用戶端主控台都是必備的。 視您目前的版本而定，您必須升級至下列其中一個版本：
+>如果您要透過Adobe Identity Service(IMS)連線至Campaign，則需要升級至最新的組建版本，才能在&#x200B;**2021年3月31日**&#x200B;之後連線至Campaign。 此升級對於Campaign伺服器和用戶端主控台都是必備的。 視您目前的版本而定，您必須升級至下列其中一個版本：
 >
 > * [Campaign Gold Standard 11](../../rn/using/gold-standard.md)
 > * [Campaign 20.3.3](../../rn/using/latest-release.md)
