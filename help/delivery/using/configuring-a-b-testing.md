@@ -1,13 +1,13 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 配置A/B測試
+title: 設定A/B測試
 description: 瞭解如何在Campaign Classic中設定A/B測試。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 1. 新增[Split](../../workflow/using/split.md)活動，將目標人口劃分為多個子集。
 
-1. 開啟活動，然後根據您的需求設定每個子集。 有關如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活動的詳細資訊，請參閱此部分。
+1. 開啟活動，然後根據您的需求設定每個子集。 有關如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活動的詳細資訊，請參閱[本節](../../workflow/using/split.md)。
 
    在此範例中，我們想要測試電子報的2個新主題，將每個主題呈現給10%的目標人口。
 
