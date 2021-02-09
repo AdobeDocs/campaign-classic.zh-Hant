@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->只有傳送擁有者才能開始傳送。 為了讓其他運算元（或運算元群組）能夠開始傳送，您必須在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將其新增為審閱者。
->
->如需詳細資訊，請參閱[本節](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
+>只有傳送擁有者才能開始傳送。 為了讓其他運算元（或運算元群組）能夠開始傳送，您必須在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將其新增為審閱者。 有關詳細資訊，請參閱[本節](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
 
 ## 傳送其他參數{#delivery-additiona-parameters}
 
@@ -33,7 +31,7 @@ ht-degree: 5%
 
 * **[!UICONTROL Message batch quantity]**:此選項允許您定義在同一XML傳送包內分組的消息數。如果參數設為0，則消息會自動分組。 軟體包大小由計算`<delivery size>/1024`定義，每個軟體包最少8條消息，最多256條消息。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >複製傳送時，會重設參數。
 
@@ -43,15 +41,19 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >當安裝使用中間採購來源時，不建議使用此選項，即不呼叫mta。
-   >
-   >有關配置SMTP伺服器的詳細資訊，請參閱本節[。](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)
+   >當安裝使用中間採購來源時，不建議使用此選項，即不呼叫mta。 有關配置SMTP伺服器的詳細資訊，請參閱[以瞭解本節](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
 
-* **[!UICONTROL Email BCC]**:此選項可讓您透過密件副本將電子郵件儲存在外部系統上，只要在訊息目標中新增密件副本電子郵件地址即可。有關詳細資訊，請參閱[至本節](../../delivery/using/sending-messages.md#archiving-emails)。
+* **[!UICONTROL Email BCC]**:此選項可讓您透過密件副本將電子郵件儲存在外部系統上，只要在訊息目標中新增密件副本電子郵件地址即可。如需詳細資訊，請參閱[本章節](../../delivery/using/sending-messages.md#archiving-emails)。
 
-在設定傳送並準備傳送後，請確定您已執行[傳送分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。 完成後，按一下&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以啟動消息傳送。
+## 確認傳送{#confirming-delivery}
+
+當已設定傳送並準備傳送時，請確定您已執行傳送分析。
+
+若要這麼做，請按一下&#x200B;**[!UICONTROL Send]**，選取所要的動作，然後按一下&#x200B;**[!UICONTROL Analyze]**。 有關詳細資訊，請參閱[啟動分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 ![](assets/s_ncs_user_email_del_send.png)
+
+完成後，按一下&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以啟動消息傳送。
 
 然後，您可以關閉傳送精靈並從&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤追蹤傳送的執行，此標籤可透過此傳送的詳細資料或傳送清單存取。
 
@@ -73,7 +75,7 @@ ht-degree: 5%
 
 1. 然後，您可以開始傳送分析，然後確認傳送傳送。 不過，傳送傳送要等到&#x200B;**[!UICONTROL Contact date]**&#x200B;欄位中指定的日期才會開始。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >開始分析後，您定義的連絡人日期即為固定。 如果您修改此日期，則必須重新開始分析，以便將您的修改納入考量。
 
@@ -133,7 +135,7 @@ ht-degree: 5%
       ![](assets/s_ncs_user_wizard_waves_create.png)
    特定的排版規則&#x200B;**[!UICONTROL Wave scheduling check]**&#x200B;可確保最後一波在傳送有效性限制之前就已規劃好。 在傳送屬性的&#x200B;**[!UICONTROL Typology]**&#x200B;標籤中設定的促銷活動類型及其規則，會在[驗證程式中顯示有類型](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >請確定最後的波不會超過&#x200B;**[!UICONTROL Validity]**&#x200B;標籤中定義的傳送期限。 否則，可能無法發送某些消息。
    >
@@ -169,18 +171,15 @@ ht-degree: 5%
 
 由於&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;錯誤而暫時未傳送的訊息會遭到自動重試。 [部分](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)中列出了交付失敗類型和原因。
 
-傳送參數的&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤的中央區段會指出在傳送後一天應執行多少次重試，以及兩次重試之間的最小延遲。
+>[!IMPORTANT]
+>
+>對於代管或混合安裝，如果您已升級至[增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，促銷活動將不再使用傳送中的重試設定。 軟反彈重試次數及其間的時間長度，由增強的MTA根據訊息電子郵件網域傳回的反彈回應類型和嚴重性來決定。
+
+對於使用舊版促銷活動MTA的內部部署安裝和代管／混合安裝，傳送參數的&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤的中央區段會指出在傳送後一天應執行多少次重試，以及兩次重試之間的最小延遲。
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-依預設，會在傳送的第一天排程五次重試，最少間隔為一小時，在一天中的24小時內分佈。 每天一次重試的程式設定在此之後，直到交貨期限為止（在&#x200B;**[!UICONTROL Validity]**&#x200B;標籤中定義）（請參閱[定義有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)）。
-
->[!NOTE]
->
->對於代管或混合安裝，如果您已升級至「增強MTA」，則「促銷活動」不再使用傳送中的重試設定。 軟反彈重試次數及其間的時間長度，由增強的MTA根據訊息電子郵件網域傳回的反彈回應類型和嚴重性來決定。
->
->所有影響在[Adobe Campaign Enhanced MTA](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)檔案中詳述。
-
+依預設，會在傳送的第一天排程五次重試，最少間隔為一小時，在一天中的24小時內分佈。 每天一次重試的程式設定在此之後，直到交貨期限為止（在&#x200B;**[!UICONTROL Validity]**&#x200B;標籤中定義）（請參閱[定義有效期](#defining-validity-period)）。
 
 ## 定義有效期{#defining-validity-period}
 
@@ -192,12 +191,10 @@ ht-degree: 5%
 
    您也可以選擇指定日期。 要執行此操作，請選擇&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情況下，傳送和有效性限制日期也可讓您指定時間。 目前時間預設會使用，但您可以直接在輸入欄位中修改。
 
+   >[!IMPORTANT]
+   >
+   >對於代管或混合安裝，如果您已升級至[增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短的**&#x200B;時，才會使用促銷活動電子郵件傳送中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;設定。  如果您定義的值超過　3.5　天，則不會考慮該值。
+
 * **資源的有效性限制**:此欄 **[!UICONTROL Validity limit]** 位用於上傳的資源，主要用於鏡像頁面和影像。本頁上的資源在限定時間內有效（以節省磁碟空間）。
 
    此欄位中的值可以用[本節](../../platform/using/adobe-campaign-workspace.md#default-units)中列出的單位表示。
-
->[!NOTE]
->
->對於代管或混合安裝，如果您已升級至「增強型MTA」，則促銷活動傳送中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;設定只有在設為&#x200B;**3.5**&#x200B;天或更短時才會使用。  如果您定義的值超過　3.5　天，則不會考慮該值。
->
->所有影響在[Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)檔案中詳述。
