@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -152,7 +152,7 @@ Adobe Campaign主要金鑰是自動產生的ID，適用於所有現成可用的�
 
 **相關主題：**
 * 有關&#x200B;**序列自動生成**&#x200B;功能的詳細資訊，請參閱[本文檔](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html)。
-* 如需序列耗盡的詳細資訊，請觀賞此影片[。](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)
+* 如需序列耗盡的詳細資訊，請觀賞此影片](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。[
 
 ## 索引 {#indexes}
 
@@ -251,7 +251,7 @@ Adobe Campaign既不是資料倉庫，也不是報告工具。 因此，為確�
 * 如果希望將日誌保留更長時間，則應根據資料庫大小和發送的消息量仔細作出此決定。 提醒您，Adobe Campaign序列是32位元整數。
 * 建議在這些表格中，每次不要有超過10億份記錄（21.4億個ID中的50%），以限制使用所有可用ID的風險。 這將要求某些客戶將保留期限降低到180天以下。
 
-進一步瞭解[促銷活動隱私與安全性准則](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)中的資料保留。
+進一步瞭解[促銷活動隱私與安全性准則](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html#consent)中的資料保留。
 
 在本節](../../production/using/database-cleanup-workflow.md)中進一步瞭解促銷活動資料庫清除工作流程[。
 
