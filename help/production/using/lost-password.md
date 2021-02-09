@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '171'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +20,12 @@ ht-degree: 8%
 您可以更改或恢復丟失的密碼。
 有兩種可能的情況：
 
-**Adobe Campaign營運商遺失密碼**
+* [Adobe Campaign營運商遺失密碼](#password-lost-by-campaign-operator)
+* [內部密碼遺失](#internal-password-lost) （僅限內部部署客戶）
 
-在這種情況下，您可以更改有關操作員的密碼。
+## 促銷活動運算子{#password-lost-by-campaign-operator}遺失密碼
+
+如果Adobe Campaign運算子遺失其密碼，您可以加以變更。
 要執行此操作，請遵循下列步驟：
 
 1. 透過擁有管理員權限的營運商連線。
@@ -31,9 +34,13 @@ ht-degree: 8%
 
    ![](assets/operator-passwd.png)
 
-1. 設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。
+1. 設定運算子的新密碼。 我們建議操作員在首次重新連接時更改其密碼。
 
-**內部密碼遺失（僅限內部部署客戶）**
+## 內部密碼丟失{#internal-password-lost}
+
+>[!NOTE]
+>
+>本節僅適用於內部部署客戶。
 
 如果內部密碼丟失，您必須重新初始化它。
 若要這麼做，請套用下列程式：
