@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 2%
@@ -69,7 +69,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >當未傳送電子郵件狀態時，deliveryID和broadlogID會來自中間採購伺服器。 狀態變更為&#x200B;**[!UICONTROL Sent]**&#x200B;後，這些ID會來自行銷伺服器。
 
-### 參數{#parameters}
+### 參數 {#parameters}
 
 定義本機資料夾路徑後，視需要在&#x200B;**config-`<instance name>.xml`**&#x200B;檔案中新增及編輯下列元素。 以下是預設值：
 
@@ -102,7 +102,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ## 配置密件副本電子郵件地址（內部部署）{#configuring-the-bcc-email-address--on-premise-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >出於隱私原因，密件副本電子郵件必須由能夠安全地儲存個人識別資訊(PII)的歸檔系統處理。
 
@@ -125,7 +125,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ## 移至新的電子郵件密件副本{#updated-email-archiving-system--bcc-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >電子郵件封存系統(BCC)已隨Adobe Campaign 17.2(build 8795)變更。 如果您正在從舊版本升級，並且已使用電子郵件存檔功能，則必須手動升級到新的電子郵件存檔系統(BCC)。
 
