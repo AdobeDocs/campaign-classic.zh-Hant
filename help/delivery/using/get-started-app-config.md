@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 9%
+source-wordcount: '295'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,13 @@ ht-degree: 9%
 
 身為混合／代管客戶，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊，以存取Campaign中的推播通知頻道。
 
-身為內部部署客戶，您需要執行下列安裝步驟：
+身為內部部署客戶，您需要安裝內建套件。
+
+>[!CAUTION]
+>
+>進一步瞭解[本頁](../../installation/using/installing-campaign-standard-packages.md)中的促銷活動內建套件、最佳實務和建議。
+
+安裝步驟包括：
 
 1. 從Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;存取套件匯入精靈。
 
