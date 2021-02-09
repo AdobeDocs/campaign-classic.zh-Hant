@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
 workflow-type: tm+mt
-source-wordcount: '7851'
-ht-degree: 5%
+source-wordcount: '7846'
+ht-degree: 4%
 
 ---
 
@@ -1561,7 +1561,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> 如果設為"true"，則您的實例使用<a href="https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">增強的MTA</a>。<br /> </td> 
+   <td> 如果設為"true"，則您的實例使用<a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">增強的MTA</a>。<br /> </td> 
    <td> 布爾<br /> </td> 
    <td> <br /> </td>b 
   </tr>
