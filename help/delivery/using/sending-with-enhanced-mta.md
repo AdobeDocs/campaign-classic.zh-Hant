@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 2%
@@ -147,7 +147,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-## 傳送總處理能力
+### 傳送總處理能力
 
 「促銷活動傳送」總處理量圖表將不再顯示您電子郵件收件者的總處理量。 該圖表現在會顯示從促銷活動傳送至增強MTA的訊息的中繼處理速度。
 
@@ -163,7 +163,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 有關有效期的詳細資訊，請參閱[本節](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
 
-## DKIM簽署
+### DKIM簽署
 
 DKIM(DomainKeys Indified Mail)電子郵件驗證簽署由增強的MTA完成。 在「增強的MTA」升級中，原生Campaign MTA的DKIM簽署將會在「網域管理」表格中關閉。
 有關DKIM的詳細資訊，請參閱[本節](../../delivery/using/technical-recommendations.md#dkim)。
