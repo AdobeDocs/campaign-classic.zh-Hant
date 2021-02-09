@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -26,7 +26,7 @@ ht-degree: 4%
 
 此步驟可讓您偵測可能的錯誤並加以修正，然後再傳送至主要目標。
 
-驗證傳送的步驟在本節[中顯示。](../../delivery/using/steps-validating-the-delivery.md)
+驗證傳送的步驟在本節](../../delivery/using/steps-validating-the-delivery.md)中顯示。[
 
 ## 收件匣轉譯 {#inbox-and-email-rendering}
 
@@ -38,13 +38,13 @@ ht-degree: 4%
 
 * 收件匣轉換功能對於識別您的電子郵件促銷活動是否成功超過主要ISP（網際網路服務供應商）和網路郵件服務的篩選至關重要。 此類工具會將電子郵件的預檢副本傳送至測試收件匣網路，讓您瞭解訊息在這些服務間的顯示或呈現方式。 它們也可能包含報表和程式碼修正選項，可協助您快速識別並進行修正，以改善傳遞性。
 
-瞭解本節[的更多資訊。](../../delivery/using/inbox-rendering.md)
+瞭解本節](../../delivery/using/inbox-rendering.md)的更多資訊。[
 
 ## 校對訊息{#proof-messages}
 
 傳送校樣可讓您檢查選擇退出連結、鏡像頁面和任何其他連結、驗證訊息、確認影像已顯示、偵測可能的錯誤等。 您也可能想要檢查不同裝置上的設計和演算。
 
-瞭解本節[的更多資訊。](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+瞭解本節](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)的更多資訊。[
 
 ## 設定A/B測試傳送{#a-b-testing-deliveries}
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 * 選取成功率最高的成功率，並將它傳送至目標的其他部分
 
-瞭解本節[的更多資訊。](../../workflow/using/a-b-testing.md)
+瞭解本節](../../delivery/using/get-started-a-b-testing.md)的更多資訊。[
 
 ## 確定您的訊息已傳送{#make-sure-your-message-is-delivered}
 
@@ -64,11 +64,11 @@ ht-degree: 4%
 
 ### 進行驗證程式
 
-您可以定義包含Adobe Campaign運算子和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保對促銷活動的各種程式進行完整監控：定位、內容、預算、擷取和傳送證明。 視其權限而定，使用者會收到通知、收到校樣，並可驗證或拒絕訊息。 瞭解本節[的更多資訊。](../../campaign/using/marketing-campaign-approval.md#approval-process)
+您可以定義包含Adobe Campaign運算子和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保對促銷活動的各種程式進行完整監控：定位、內容、預算、擷取和傳送證明。 視其權限而定，使用者會收到通知、收到校樣，並可驗證或拒絕訊息。 瞭解本節](../../campaign/using/marketing-campaign-approval.md#approval-process)的更多資訊。[
 
 ### 使用波
 
-您可以使用波浪遞增音量。 這樣可避免您的訊息被標示為垃圾訊息，或您想要限制每天的訊息數目。 使用波，您可以將傳送分成數批，而不是同時傳送大量訊息。 瞭解本節[的更多資訊。](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)
+您可以使用波浪遞增音量。 這樣可避免您的訊息被標示為垃圾訊息，或您想要限制每天的訊息數目。 使用波，您可以將傳送分成數批，而不是同時傳送大量訊息。 瞭解本節](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)的更多資訊。[
 
 ### 排定訊息的優先順序
 
