@@ -1,6 +1,6 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classic
+breadcrumb-title: 協助中心
 product: campaign
 title: Campaign Classic 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
+source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 95%
+source-wordcount: '2347'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,11 @@ ht-degree: 95%
       + [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
       + [定義電子郵件內容](delivery/using/defining-the-email-content.md)
       + [定義互動式內容](delivery/using/defining-interactive-content.md)
-      + [傳送訊息](delivery/using/sending-messages.md)
+      + 傳送電子郵件{#sending-an-email}
+         + [確認電子郵件傳送](delivery/using/sending-messages.md)
+         + [電子郵件參數](delivery/using/email-parameters.md)
+         + [使用增強的MTA傳送](delivery/using/sending-with-enhanced-mta.md)
+         + [在日本手機上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [附加檔案](delivery/using/attaching-files.md)
    + 在行動裝置上傳送訊息{#sending-messages-on-mobiles}
       + [SMS 頻道](delivery/using/sms-channel.md)
@@ -165,6 +169,19 @@ ht-degree: 95%
       + [使用外部收件者資料表](delivery/using/using-an-external-recipient-table.md)
       + [使用案例：依條件選取種子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [使用案例：配置欄位替代](delivery/using/use-case--configuring-the-field-substitution.md)
+   + A/B 測試 {#a-b-testing}
+      + [開始使用A/B測試](delivery/using/get-started-a-b-testing.md)
+      + [設定A/B測試](delivery/using/configuring-a-b-testing.md)
+      + 使用案例 {#use-case}
+         + [關於此使用案例](delivery/using/a-b-testing-use-case.md)
+         + [建立定位工作流程](delivery/using/a-b-testing-uc-targeting-workflow.md)
+         + [配置人口樣本](delivery/using/a-b-testing-uc-population-samples.md)
+         + [建立傳送範本](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [設定傳送](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+         + [建立指令碼](delivery/using/a-b-testing-uc-script.md)
+         + [定義最終交付](delivery/using/a-b-testing-uc-final-delivery.md)
+         + [啟動工作流](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [分析結果](delivery/using/a-b-testing-uc-analyzing.md)
    + 訂閱與轉介{#subscriptions-and-referrals}
       + [關於服務與訂閱](delivery/using/about-services-and-subscriptions.md)
       + [管理訂閱](delivery/using/managing-subscriptions.md)
@@ -195,7 +212,7 @@ ht-degree: 95%
       + [收件匣轉譯](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [重新參與的最佳實務](delivery/using/re-engagement-best-practices.md)
-      + [封鎖清單資料庫](delivery/using/block-list-databases.md)
+      + [Denylist資料庫](delivery/using/block-list-databases.md)
       + [疑難排解](delivery/using/deliverability-faq.md)
    + 內容管理模組{#content-management}
       + [關於內容管理](delivery/using/about-content-management.md)
@@ -439,7 +456,6 @@ ht-degree: 95%
       + [關於工作流程使用案例](workflow/using/about-workflow-use-cases.md)
       + 傳遞{#deliveries}
          + [使用本機核准活動](workflow/using/using-the-local-approval-activity.md)
-         + [A/B 測試](workflow/using/a-b-testing.md)
          + [傳送生日電子郵件](workflow/using/sending-a-birthday-email.md)
          + [載入傳遞內容](workflow/using/loading-delivery-content.md)
          + [跨通道傳遞工作流程](workflow/using/cross-channel-delivery-workflow.md)
