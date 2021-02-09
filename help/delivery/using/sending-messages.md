@@ -2,110 +2,39 @@
 solution: Campaign Classic
 product: campaign
 title: 使用Adobe Campaign Classic傳送電子郵件
-description: 瞭解電子郵件傳送參數
+description: 瞭解如何確認電子郵件的傳送，並瞭解傳送電子郵件的特定性。
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 8%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
 
-# 傳送電子郵件{#sending-an-email}
+# 確認電子郵件傳送{#confirming-email-delivery}
 
-若要核准您的電子郵件並傳送給所建立之傳送的收件者，請按一下&#x200B;**[!UICONTROL Send]**。
+在建立並設定您的電子郵件後，您就可將其傳送至主要目標。 本節介紹確認傳送電子郵件的主要步驟。
 
-驗證和傳送傳送時的詳細程式會列於以下各節：
+1. 請確定您已設定所有電子郵件傳送專用的設定。 如需詳細資訊，請參閱[電子郵件參數](../../delivery/using/email-parameters.md)。
+1. 當電子郵件準備就緒後，在將其傳送至主要目標之前，建議您透過傳送校樣來偵測任何潛在錯誤。 有關詳細資訊，請參閱[發送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-* [驗證傳遞](../../delivery/using/steps-validating-the-delivery.md)
-* [傳送傳遞](../../delivery/using/steps-sending-the-delivery.md)
+1. 完成後，您必須啟動分析來驗證電子郵件。 要執行此操作，請按一下&#x200B;**[!UICONTROL Send]** ，選擇一個操作，然後按一下&#x200B;**[!UICONTROL Analyze]**。 有關詳細資訊，請參閱[啟動分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 
-以下各節將詳細說明傳送電子郵件的特定參數。
+1. 分析完成後，按一下&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以啟動訊息傳送給目標收件者。 如需詳細資訊，請參閱[確認傳送](../../delivery/using/steps-sending-the-delivery.md#confirming-delivery)。
 
-## 電子郵件密件副本{#archiving-emails}
-
-Adobe Campaign可讓您透過密件副本將電子郵件儲存在外部系統上，只需將密件副本電子郵件地址新增至訊息目標即可。 在啟動選項後，所有已傳送訊息的完整副本都會保留在此傳送中。
-
-有關電子郵件密件副本配置和最佳實踐的詳細資訊，請參閱[本節](../../installation/using/email-archiving.md)。
+   <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 
 >[!NOTE]
 >
->電子郵件密件副本是一項可選功能。 請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
+>[本節](../../delivery/using/steps-validating-the-delivery.md)說明驗證傳送的整個程式。 配置和發送傳送的完整詳細步驟列於[本節](../../delivery/using/steps-sending-the-delivery.md)。
 
-在建立新的傳送或傳送範本時，預設不會啟用電子郵件密件副本。 您需要在電子郵件傳送或傳送範本層級手動啟用它。
-
-若要啟用電子郵件傳送範本的電子郵件密件副本，請遵循下列步驟：
-
-1. 前往&#x200B;**[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**&#x200B;或&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**。
-1. 選擇您選擇的傳送或複製現成可用的&#x200B;**電子郵件傳送**&#x200B;範本，然後選取複製的範本。
-1. 按一下&#x200B;**屬性**&#x200B;按鈕。
-1. 選取 **[!UICONTROL Delivery]** 索引標籤。
-1. 選中&#x200B;**電子郵件密件副本**&#x200B;選項。 根據此範本，每個傳送的所有已傳送訊息副本都會傳送至已設定的電子郵件密件副本地址。
-
-   ![](assets/s_ncs_user_wizard_archiving.png)
-
-   >[!NOTE]
-   >
-   >如果已開啟並點進傳送至密件副本位址的電子郵件，則會在傳送分析的&#x200B;**[!UICONTROL Total opens]**&#x200B;和&#x200B;**[!UICONTROL Clicks]**&#x200B;中考慮此問題，這可能會造成一些誤算。
-
-## 生成鏡像頁{#generating-the-mirror-page}
-
-鏡像頁是可通過Web瀏覽器線上上訪問的HTML頁。 其內容與電子郵件相同。
-
-預設情況下，如果連結插入郵件內容中，將生成鏡像頁。 有關個人化塊插入的詳細資訊，請參閱[個人化塊](../../delivery/using/personalization-blocks.md)。
-
-在傳送屬性中， **[!UICONTROL Validity]**&#x200B;標籤的&#x200B;**[!UICONTROL Mode]**&#x200B;欄位可讓您修改此頁面的產生模式。
-
-![](assets/s_ncs_user_wizard_miror_page_mode.png)
-
->[!CAUTION]
->
->必須已定義HTML內容，才能傳送要建立的鏡像頁面。
-
-除了預設模式外，還提供下列選項：
-
-* **[!UICONTROL Force the generation of the mirror page]** :即使傳送中未插入鏡像頁面的連結，也會建立鏡像頁面。
-* **[!UICONTROL Do not generate the mirror page]** :不會產生任何鏡像頁面，即使連結存在於傳送中亦然。
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** :此選項可讓您在傳送記錄視窗中存取包含個人化資訊的鏡像頁面內容。若要這麼做，請在傳送結束後，按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤，並選取您要檢視其鏡像頁面的收件者行。 按一下&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;連結。
-
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
-
-## 管理反彈電子郵件{#managing-bounce-emails}
-
-傳送參數的&#x200B;**[!UICONTROL SMTP]**&#x200B;標籤可讓您設定彈回郵件的管理。
-
-![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
-
-依預設，已拒絕的電子郵件會在平台的預設錯誤方塊中收到，但您可以定義傳送的特定錯誤位址。
-
-您也可以從此螢幕定義特定位址，以調查當應用程式無法自動限定反彈電子郵件的原因。 對於這些欄位，「新增個人化欄位」圖示可讓您新增個人化參數。
-
-## 字元編碼{#character-encoding}
-
-在傳送參數的&#x200B;**[!UICONTROL SMTP]**&#x200B;標籤中， **[!UICONTROL Character encoding]**&#x200B;區段可讓您設定特定編碼。
-
-預設編碼為UTF-8。 如果某些收件者的電子郵件提供者不支援UTF-8標準編碼，您可能想要設定特定編碼，以正確顯示特殊字元給電子郵件的收件者。
-
-例如，您想傳送包含日文字元的電子郵件。 為確保所有字元都能正確顯示給日本的收件者，您可能想要使用支援日文字元的編碼，而非標準UTF-8。
-
-若要這麼做，請在&#x200B;**[!UICONTROL Character encoding]**&#x200B;區段中選取&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;選項，然後從顯示的下拉式清單中選擇編碼。
-
-![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
-
-## 添加SMTP標頭{#adding-smtp-headers}
-
-可以將SMTP標頭添加到您的交貨中。 若要這麼做，請使用傳送中&#x200B;**[!UICONTROL SMTP]**&#x200B;標籤的相關章節。
-
-在此窗口中輸入的指令碼必須引用以下格式的每行一個標題：**name:value**。
-
-如有必要，會自動對值編碼。
-
->[!CAUTION]
->
->會為進階使用者保留新增指令碼，以便插入其他 SMTP 標題。
->
->此指令碼的語法必須符合以下內容類型的要求：沒有未使用的空間，沒有空行等。
+以下各節將詳細說明傳送電子郵件的特定設定和設定：
+<!--* [Generating the mirror page](../../delivery/using/generating-mirror-page.md)
+* [Email BCC](../../delivery/using/email-bcc.md)-->
+* [電子郵件參數](../../delivery/using/email-parameters.md)
+* [使用增強的MTA傳送電子郵件](../../delivery/using/sending-with-enhanced-mta.md)
+* [在日本手機上傳送電子郵件](../../delivery/using/sending-emails-on-japanese-mobiles.md)
