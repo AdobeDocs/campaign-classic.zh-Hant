@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -46,9 +46,9 @@ ht-degree: 8%
 
 確保正確排程並執行資料庫維護。 若要這麼做，請連絡您的資料庫管理員以進一步瞭解：
 
-* 他們的維護計畫，
-* 先前執行的維護計畫，
-* 查看指令碼日誌。
+* 他們的維護計畫
+* 先前執行的維護計畫
+* 查看指令碼日誌
 
 如需詳細資訊，請參閱[本章節](../../production/using/recommendations.md)。
 
@@ -61,8 +61,8 @@ ht-degree: 8%
 請檢查工作表的數量和大小。 當資料庫超過某一大小時，資料庫效能會受到影響。 這些表格是由工作流程和傳送所建立。 它們會保留在資料庫中，而工作流程和傳送則會處於作用中。 要限制工作表的大小，可執行以下操作：
 
 * 停止或刪除具有下列狀態的傳送：**[!UICONTROL Failed]**、**[!UICONTROL In progress]**、**[!UICONTROL Ready for delivery]**&#x200B;或&#x200B;**[!UICONTROL Paused]**。
-* 停止或刪除因錯誤而暫停的工作流程，
-* 停止所有測試所用的工作流程，測試中不包含&#x200B;**[!UICONTROL End]**&#x200B;活動，因此其狀態仍為&#x200B;**[!UICONTROL Paused]**。
+* 停止或刪除因錯誤而暫停的工作流程。
+* 停止所有測試所用的工作流程，這些測試不包含&#x200B;**[!UICONTROL End]**&#x200B;活動，因此其狀態仍為&#x200B;**[!UICONTROL Paused]**。
 
 >[!IMPORTANT]
 >
@@ -73,13 +73,12 @@ ht-degree: 8%
 視Adobe Campaign安裝設定而定，平台監控可使用兩種工具：
 
 * 例項生產頁面。 有關詳細資訊，請參閱[手動監控](../../production/using/monitoring-processes.md#manual-monitoring)。
-* netreport指令碼。 如需詳細資訊，請參閱[透過Adobe Campaign指令碼自動監控](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
+* *netreport*&#x200B;指令碼。 如需詳細資訊，請參閱[透過Adobe Campaign指令碼自動監控](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
 
 ## 具體說明{#specifics}
 
 可能需要執行即時診斷以找出問題的原因。 首先檢查進程和平台日誌檔案，然後在重新建立問題時監視資料庫活動。 請特別注意：
 
-* 維護執行計畫，
-* 正在執行的SQL查詢、
-* 是否同時運行外部進程（清洗、導入、匯總計算等）。
-
+* 維護執行計畫
+* 正在執行的SQL查詢
+* 是否同時運行外部進程（清理、導入、匯總計算等）。
