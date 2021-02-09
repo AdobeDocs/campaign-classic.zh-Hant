@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 4%
+source-wordcount: '220'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->若是代管或混合式安裝，如果您已升級至「增強MTA」，所有交易訊息也可能會隨Adobe Campaign Enhanced MTA一起傳送，以改善傳遞能力、吞吐量和彈回處理。 所有影響與標準行銷訊息的影響相同，並詳見[Adobe Campaign Enhanced MTA](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)檔案。
+>對於代管或混合式安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，所有交易訊息也可隨Adobe Campaign增強型MTA傳送，以改善傳遞能力、總處理能力和彈回處理。 所有影響與標準行銷訊息的影響相同。
 
 ## 事務性消息監視{#transactional-message-monitoring}
 
