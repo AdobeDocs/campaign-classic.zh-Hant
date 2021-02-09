@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2427'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,10 @@ SPF是一種技術，在某種程度上，它使您能夠確保電子郵件中�
 
 ### DKIM {#dkim}
 
+>[!IMPORTANT]
+>
+>對於托管或混合安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則DKIM電子郵件驗證簽署由增強型MTA針對所有網域的所有訊息完成。
+
 DKIM(DomainKeys Indified Mail)驗證是SPF的繼承者，使用公開金鑰加密技術，允許接收電子郵件伺服器驗證消息實際上是由其聲稱發送的個人或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 為確保DKIM的安全級別，建議使用最佳實務加密大小1024b。 大部分的存取提供者不會將低DKIM金鑰視為有效。
 
 DKIM來自DomainKeys、Yahoo! 和Cisco Identified Internet Mail身份驗證原則，用於檢查發件人域的真實性並保證消息的完整性。
@@ -87,10 +91,6 @@ DKIM已更換&#x200B;**DomainKeys**&#x200B;驗證。
 >* DKIM是DomainKeys的改進版本，因此無需為相同的域同時啟用DomainKeys和DKIM。
 >* 下列網域目前驗證DKIM:AOL,Gmail。
 
-
->[!IMPORTANT]
->
->對於托管或混合安裝，如果您已升級至[增強型MTA](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)，則DKIM電子郵件驗證簽署由增強型MTA針對所有網域的所有訊息完成。
 
 ### DMARC {#dmarc}
 
