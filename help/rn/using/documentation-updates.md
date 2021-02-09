@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
+source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 94%
+source-wordcount: '3914'
+ht-degree: 93%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 94%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 如需版本相關更新，請參閱[Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
+
+## 2021 年 2 月 {#feb-2021}
+
+新增了一節，其中包含如何使用工作流程執行A/B測試的詳細資訊。 [顯示全文](../../delivery/using/get-started-a-b-testing.md)
+
+「Adobe Campaign增強型MTA」區段已移至[此處](../../delivery/using/sending-with-enhanced-mta.md)。
+
+**傳送電子郵件**&#x200B;區段已重新整理，並以新的子區段加以釐清。 [顯示全文](../../delivery/using/sending-messages.md)
 
 ## 2021 年 1 月 {#jan-2021}
 
@@ -43,7 +51,7 @@ Oracle On Demand API現在已不再作為與Campaign連接的CRM使用。 [顯�
 
 **交付監測**&#x200B;部分已重新組織為專題主題。 [顯示全文](../../delivery/using/about-delivery-monitoring.md)
 
-已新增使用案例，說明如何將傳送者的IP位址新增至傳遞記錄日誌中。[顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
+已新增使用案例，說明如何將傳送者的　IP　位址新增至傳遞記錄日誌中。[顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
 
 隱私權常見問答已移至[本節](../../platform/using/privacy-faq.md)。
 
