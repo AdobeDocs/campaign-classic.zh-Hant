@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
+source-git-commit: 3b82796182525ffa55b17fe8ac2f84f1bec230cf
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 * 有效的&#x200B;**組織識別碼**:身分管理系統(IMS)組織識別碼是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [進一步瞭解](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **您組織的開發人員存取權**。  如果您需要申請IMS組織的系統管理員權限，請依照本頁](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中詳細說明的程式，為所有產品設定檔提供此存取權。[
->
+
 ## 步驟1:建立／更新Adobe I/O專案{#creating-adobe-io-project}
 
 1. 存取Adobe I/O，並向系統管理員登入IMS組織。
