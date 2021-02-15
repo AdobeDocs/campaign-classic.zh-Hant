@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3b82796182525ffa55b17fe8ac2f84f1bec230cf
+source-git-commit: 3348156f020d4c8af7e1d57c46cba99205422696
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ht-degree: 4%
    >
    >如果您的用戶端識別碼是空的，您可以直接在Adobe I/O中&#x200B;**[!UICONTROL Create a New project]**。
 
-1. 使用擷取的用戶端識別碼來識別現有專案。 尋找與前一步驟中擷取的相同用戶端識別碼的現有專案。
+1. 使用擷取的用戶端識別碼來識別現有專案。 尋找與上一步驟中擷取的用戶端識別碼相同的現有專案。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
@@ -87,7 +87,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe I/O憑證將在12個月後到期。 您必須每年產生新的索引鍵對。
+>Adobe I/O憑證將在12個月後到期。 您每年需要產生新的索引鍵對。
 
 ## 步驟2:在Adobe Campaign {#add-credentials-campaign}中新增專案認證
 
