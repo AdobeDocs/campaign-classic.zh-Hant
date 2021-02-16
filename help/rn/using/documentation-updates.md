@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
+source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3947'
 ht-degree: 93%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 93%
 新增了一節，其中包含如何使用工作流程執行A/B測試的詳細資訊。 [顯示全文](../../delivery/using/get-started-a-b-testing.md)
 
 「Adobe Campaign增強型MTA」區段已移至[此處](../../delivery/using/sending-with-enhanced-mta.md)。
+
+已新增頁面，提供[!DNL Campaign Classic]中追蹤功能的概述。 [顯示全文](../../delivery/using/about-message-tracking.md)
+
+已新增疑難排解區段，以協助您解決與追蹤相關的常見問題。 [顯示全文](../../delivery/using/tracking-troubleshooting.md)
 
 **傳送電子郵件**&#x200B;區段已重新整理，並以新的子區段加以釐清。 [顯示全文](../../delivery/using/sending-messages.md)
 
