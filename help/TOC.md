@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
 source-wordcount: '2349'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -68,22 +68,22 @@ ht-degree: 93%
       + [匯出和匯入用戶檔案](platform/using/exporting-and-importing-profiles.md)
       + [建立和管理清單](platform/using/creating-and-managing-lists.md)
    + 匯入和匯出資料{#importing-and-exporting-data}
-      + [開始使用資料匯入和匯出](platform/using/get-started-data-import-export.md)
-      + [使用工作流程匯入和匯出資料](platform/using/import-export-workflows.md)
-      + 使用一般導入和導出{#generic-imports-exports}
-         + [開始使用一般匯入和匯出功能](platform/using/about-generic-imports-exports.md)
+      + [開始使用匯入和匯出資料](platform/using/get-started-data-import-export.md)
+      + [使用工作流程來匯入和匯出資料](platform/using/import-export-workflows.md)
+      + 使用一般匯入和匯出{#generic-imports-exports}
+         + [開始使用一般匯入和匯出](platform/using/about-generic-imports-exports.md)
          + [建立匯入和匯出範本](platform/using/creating-import-export-templates.md)
-         + [建立導入和導出作業](platform/using/creating-import-export-jobs.md)
-         + [配置導入作業](platform/using/executing-import-jobs.md)
-         + [配置導出作業](platform/using/executing-export-jobs.md)
-         + [監視作業執行](platform/using/monitoring-jobs-execution.md)
+         + [建立匯入和匯出工作](platform/using/creating-import-export-jobs.md)
+         + [設定匯入工作](platform/using/executing-import-jobs.md)
+         + [設定匯出工作](platform/using/executing-export-jobs.md)
+         + [監控工作執行](platform/using/monitoring-jobs-execution.md)
          + [一般匯入示例](platform/using/import-operations-samples.md)
       + 管理資料加密和壓縮{#managing-data-encryption-compression}
          + [在處理前解壓縮或解密檔案](platform/using/unzip-decrypt.md)
-         + [處理前壓縮或加密檔案](platform/using/zip-encrypt.md)
-      + 最佳實務與疑難排解{#best-practices}
+         + [在處理前壓縮或加密檔案](platform/using/zip-encrypt.md)
+      + 最佳實務及疑難排解 {#best-practices}
          + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
-         + [SFTP伺服器最佳範例與疑難排解](platform/using/sftp-server-usage.md)
+         + [SFTP 伺服器最佳實務及疑難排解](platform/using/sftp-server-usage.md)
    + 篩選資料{#filtering-data}
       + [篩選選項](platform/using/filtering-options.md)
       + [建立篩選](platform/using/creating-filters.md)
@@ -99,9 +99,9 @@ ht-degree: 93%
    + 連接器{#connectors}
       + [關於連接器](platform/using/about-connectors.md)
       + CRM 連接器{#crm-connectors}
-         + [開始使用CRM Connectors](platform/using/crm-connectors.md)
-         + [與Microsoft Dynamics 365連接](platform/using/crm-ms-dynamics.md)
-         + [與CRM同步資料](platform/using/crm-data-sync.md)
+         + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
+         + [與 Microsoft Dynamics 365 連接](platform/using/crm-ms-dynamics.md)
+         + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector.md)
 + 傳送訊息{#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
