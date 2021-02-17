@@ -6,11 +6,11 @@ description: 最新的 Campaign Classic 發行說明
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1977'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ _2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月31日後連線至Campaign。**
-> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
-> * 如果您透過Auth驗證使用Experience Cloud觸發器整合，您必須依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於2021年4月30日&#x200B;****&#x200B;淘汰。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 3 月 31 日後連線至 Campaign。**
+> * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
+> * 如果您透過 Auth 驗證使用 Experience Cloud 觸發器整合，您必須依照本頁[所述移至 Adobe I/O。](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
 
 
 **新增功能？**
