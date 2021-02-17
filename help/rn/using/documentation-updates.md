@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
-如需版本相關更新，請參閱[Adobe Campaign Classic發行說明](../../rn/using/latest-release.md)。
+如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
 ## 2021 年 2 月 {#feb-2021}
 
@@ -35,35 +35,35 @@ ht-degree: 93%
 
 ## 2021 年 1 月 {#jan-2021}
 
-**[!UICONTROL Fork]**&#x200B;活動部分已豐富了最佳做法。 [顯示全文](../../workflow/using/fork.md)
+**[!UICONTROL Fork]**　活動區段已新增最佳實務而更加豐富。[顯示全文](../../workflow/using/fork.md)
 
-**CRM Connectors**&#x200B;區段已更新、改進並重新組織。 [顯示全文](../../platform/using/crm-connectors.md)。
+**CRM 連接器**&#x200B;區段已更新、改進並重新組織。[顯示全文](../../platform/using/crm-connectors.md)。
 
-連線&#x200B;**Adobe Campaign和Microsoft Dynamics**&#x200B;的步驟現在會在專用頁面中詳細說明。 [顯示全文](../../platform/using/crm-ms-dynamics.md)。
+連接 **Adobe Campaign 和 Microsoft Dynamics** 的步驟現在會在專用頁面中詳細說明。[顯示全文](../../platform/using/crm-ms-dynamics.md)。
 
-Oracle On Demand API現在已不再作為與Campaign連接的CRM使用。 [顯示全文](../../rn/using/deprecated-features.md)。
+Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示全文](../../rn/using/deprecated-features.md)。
 
-瞭解如何在[這裡](../../production/using/locate-tomcat-version.md)瞭解Adobe Campaign實例中使用的內嵌Tomcat網頁servlet的最新版本。
+在[此處](../../production/using/locate-tomcat-version.md)了解如何確定 Adobe Campaign 執行個體中使用之內嵌 Tomcat Web Servlet 的目前版本。
 
-技術工作流程清單及其相關套件已增強並集中在單一頁面中。 [顯示全文](../../workflow/using/about-technical-workflows.md)
+已將技術工作流程清單及其相關聯套件增強並集中至單一頁面。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
-**監控**&#x200B;指南的疑難排解部分已重新整理並增強為著陸頁面。 [顯示全文](../../production/using/troubleshooting.md)。
+已重新整理&#x200B;**監視**&#x200B;指南的疑難排解區段，並利用登陸頁面使其內容更加豐富。[顯示全文](../../production/using/troubleshooting.md)。
 
-新的&#x200B;**匯入和匯出資料**&#x200B;區段可用於與工作流程、資料壓縮、加密和匯入最佳實務相關的新頁面。 [顯示全文](../../platform/using/get-started-data-import-export.md)
+新的&#x200B;**匯入和匯出資料**&#x200B;區段可用於與工作流程、資料壓縮、加密和匯入最佳實務相關的新頁面。[顯示全文](../../platform/using/get-started-data-import-export.md)
 
 ## 2020 年 12 月{#dec-2020}
 
-**交付監測**&#x200B;部分已重新組織為專題主題。 [顯示全文](../../delivery/using/about-delivery-monitoring.md)
+**傳遞監控**&#x200B;區段已改編為專題。[顯示全文](../../delivery/using/about-delivery-monitoring.md)
 
 已新增使用案例，說明如何將傳送者的　IP　位址新增至傳遞記錄日誌中。[顯示全文](../../delivery/using/delivery-dashboard.md#use-case)
 
 隱私權常見問答已移至[本節](../../platform/using/privacy-faq.md)。
 
-有關如何使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動的合併功能的使用案例已經添加。 [顯示全文](../../workflow/using/deduplication-merge.md)
+已新增使用個案，讓您了解如何使用 **[!UICONTROL Deduplication]** 活動的合併功能。[顯示全文](../../workflow/using/deduplication-merge.md)
 
-現在，[此處](../../delivery/using/sms-protocol.md)提供SMS連接器通訊協定和設定頁面的完整說明。
+現在，[此處](../../delivery/using/sms-protocol.md)提供 SMS 連接器通訊協定和設定頁面的完整說明。
 
-**Transactional messaging**&#x200B;區段中已添加了一個注釋，警告事件資料夾不能設定為執行實例的視圖，以避免訪問權限問題。 [顯示全文](../../message-center/using/event-collection.md)
+已對&#x200B;**異動訊息**&#x200B;區段新增附註，以警告事件資料夾不得被設定為執行個體的檢視，進而避免存取權限問題。[顯示全文](../../message-center/using/event-collection.md)
 
 ## 2020 年11月 {#nov-2020}
 
@@ -134,7 +134,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 ## 2020 年 8 月{#aug-2020}
 
-在專屬區段中，瞭解與傳遞設計以及與 Campaign 一同傳送相關的最佳實務。[顯示全文](../../delivery/using/delivery-best-practices.md)
+在專屬區段中，了解與傳遞設計以及與 Campaign 一同傳送相關的最佳實務。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
 已改善「傳遞」最佳實務登陸頁面，以方便存取子區段。[顯示全文](../../delivery/using/deliverability-key-points.md)
 
@@ -201,11 +201,11 @@ Experience Cloud Triggers 和 Adobe Campaign Classic 整合頁面已移至[此�
 
 **第 20.2 發行版本包含的新功能**
 
-支援表情符號——[顯示全文](../../delivery/using/customizing-emoticon-list.md)
+支援表情符號 - [顯示全文](../../delivery/using/customizing-emoticon-list.md)
 
-Azure Synapse FDA Connector——[顯示全文](../../installation/using/configure-fda-synapse.md)
+Azure Synapse FDA Connector - [顯示全文](../../installation/using/configure-fda-synapse.md)
 
-泰國及巴西隱私權法——[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+泰國及巴西隱私權法 - [顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
 **此版本隨附的其他文件更新**
 
@@ -221,13 +221,13 @@ Azure Synapse FDA Connector——[顯示全文](../../installation/using/configu
 
 更新相容性矩陣。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
-更新「清理工作流程」章節。[進一步瞭解](../../production/using/database-cleanup-workflow.md)
+更新「清理工作流程」章節。[進一步了解](../../production/using/database-cleanup-workflow.md)
 
 Campaign 網路端點已移至此[章節](../../installation/using/campaign-network-endpoints.md)。
 
-「Spam Assassin 安裝」章節更新了新的安裝檔案名稱。[進一步瞭解](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+「Spam Assassin 安裝」章節更新了新的安裝檔案名稱。[進一步了解](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
-更新有關複製環境的章節。[進一步瞭解](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
+更新有關複製環境的章節。[進一步了解](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 ## 2020 年 5 月 {#may-2020}
 
@@ -287,9 +287,9 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 **第 20.1 發行版本包含的新功能**
 
-Snowflake FDA Connector——[顯示全文](../../installation/using/configure-fda-snowflake.md)
+Snowflake FDA Connector - [顯示全文](../../installation/using/configure-fda-snowflake.md)
 
-Hadoop FDA Connector 增強功能——[顯示全文](../../installation/using/configure-fda-hadoop.md)
+Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/configure-fda-hadoop.md)
 
 **此版本隨附的其他文件更新**
 
@@ -335,7 +335,7 @@ Hadoop FDA Connector 增強功能——[顯示全文](../../installation/using/c
 
 推出新的章節，說明在 Adobe Campaign Classic 管理優惠方案及使用互動模組的秘訣與訣竅。[顯示全文](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
-已進一步加強「互動」文件，包含多個影片的連結，以協助您進一步瞭解如何管理優惠方案。[顯示全文](../../interaction/using/interaction-and-offer-management.md)
+已進一步加強「互動」文件，包含多個影片的連結，以協助您進一步了解如何管理優惠方案。[顯示全文](../../interaction/using/interaction-and-offer-management.md)
 
 關於如何最佳化執行個體上執行的查詢的最佳實務文章，已整合至文件。[顯示全文](../../workflow/using/query.md#optimizing-queries)
 
@@ -355,13 +355,13 @@ Campaign 選項清單已新增「WdbcOptions_TempDbName」選項。[顯示全文
 
 **第 19.2 發行版本包含的新功能**
 
-加州消費者隱私保護法 (CCPA) ──[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
+加州消費者隱私保護法 (CCPA) - [顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
 
-AMP 互動式內容——[顯示全文](../../delivery/using/defining-interactive-content.md)
+AMP 互動式內容 - [顯示全文](../../delivery/using/defining-interactive-content.md)
 
-工作流程即時監控——[顯示全文](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+工作流程即時監控 - [顯示全文](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
-安全的 SMS 傳訊 (TLS) ──[顯示全文](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)
+安全的 SMS 傳訊 (TLS) - [顯示全文](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)
 
 **此版本隨附的其他文件更新**
 
@@ -403,7 +403,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 針對 Campaign Classic 追蹤功能，新增了新的疑難排解頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/classic-tracking-troubleshooting.html)。
 
-新增了 Adobe Analytics Data Connector 最佳實務頁面。[深入瞭解 Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
+新增了 Adobe Analytics Data Connector 最佳實務頁面。[深入了解 Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
 
 移動並更新「傳遞最佳實務快速入門手冊」。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
@@ -421,15 +421,15 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 已新增了新的頁面，說明 Adobe Campaign Classic 追蹤的一般準則。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html)。
 
-更新工作流程和傳遞效能改善的最佳實務。[深入瞭解工作流程](../../workflow/using/workflow-best-practices.md)，以及 [深入瞭解傳遞](../../delivery/using/delivery-performances.md#best-practices-performance)。
+更新工作流程和傳遞效能改善的最佳實務。[深入了解工作流程](../../workflow/using/workflow-best-practices.md)，以及[深入了解傳遞](../../delivery/using/delivery-performances.md#best-practices-performance)。
 
 ## 2019 年 5 月 {#release-19-1}
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板——[顯示全文](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 
-稽核軌跡——[顯示全文](../../production/using/audit-trail.md)
+稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
 **此版本隨附的其他文件更新**
 
@@ -518,7 +518,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 * 新增了有關每一連線的電子郵件及 BCC 傳送 IP 參數的最佳實務。
 
-* 如果您已透過舊版組建版本 (Adobe Campaign 17.2之前——組建版本 8795) 來使用電子郵件封存，我們更新了升級至新版電子郵件封存系統 (BCC) 的步驟。
+* 如果您已透過舊版組建版本 (Adobe Campaign 17.2之前 - 組建版本 8795) 來使用電子郵件封存，我們更新了升級至新版電子郵件封存系統 (BCC) 的步驟。
 
 「使用工作流程自動化」指南新增了使用案例：傳送個人化警報給營運商。[顯示全文](../../workflow/using/sending-personalized-alerts-to-operators.md)
 
