@@ -6,18 +6,18 @@ description: Gold Standard 版本的 Campaign Classic相容性矩陣
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d1f5561098bb867b8a62e8bcdb14f60829be1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Gold Standard 相容性矩陣{#compatibility-matrix-gs}
 
-本文件列出 **Adobe Campaign Classic Gold Standard** 19.1 建置版本支援的所有系統和元件。不屬於此清單的產品和版本與此版本的Adobe Campaign不相容。
+本文件列出 **Adobe Campaign Classic Gold Standard** 19.1 建置版本支援的所有系統和元件。不屬於此清單的產品和版本與此版本的 Adobe Campaign 不相容。
 
 ## 重要附註{#important-notes-gs}
 
@@ -141,7 +141,7 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>。</p>
@@ -221,10 +221,10 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -277,8 +277,8 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
