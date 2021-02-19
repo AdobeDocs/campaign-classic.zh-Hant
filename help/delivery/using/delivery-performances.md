@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 發佈效能最佳實務
+title: 傳遞效能最佳實務
 description: 進一步瞭解傳送效能和最佳實務。
 audience: delivery
 content-type: reference
@@ -10,19 +10,19 @@ translation-type: tm+mt
 source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 
-# 傳送效能最佳實務{#delivery-performances}
+# 傳遞效能最佳實務 {#delivery-performances}
 
 我們建議您遵循以下准則，以確保您的傳送順利執行，並檢查您遇到傳送問題時的執行。
 
 **相關主題：**
 
-* [傳送控制面板](../../delivery/using/delivery-dashboard.md)
-* [傳送疑難排解](../../delivery/using/delivery-troubleshooting.md)
+* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
+* [傳遞疑難排解](../../delivery/using/delivery-troubleshooting.md)
 * [關於傳遞能力](../../delivery/using/about-deliverability.md)
 
 ## 效能{#best-practices-performance}的最佳做法
