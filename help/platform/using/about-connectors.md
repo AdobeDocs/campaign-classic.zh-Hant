@@ -27,7 +27,7 @@ Adobe Campaign提供數種連接器，可讓您與外部應用程式通訊、連
 
 您也可以將Campaign與多個其他系統整合，例如：
 
-* Adobe Experience Cloud解決方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud觸發器等 [進一步瞭解](../../integrations/using/about-campaign-integrations.md)
+* Adobe Experience Cloud解決方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud觸發器等 [進一步了解](../../integrations/using/about-campaign-integrations.md)
 * Adobe IMS/SSO，以確保您對Campaign例項的存取安全，並使用與其他Adobe Experience Cloud解決方案相同的Adobe ID連線至Adobe Campaign。 [進一步瞭解](../../integrations/using/about-adobe-id.md)。
 * LDAP目錄，以統一存取管理。 [進一步瞭解](../../installation/using/connecting-through-ldap.md)。
 
