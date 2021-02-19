@@ -31,15 +31,15 @@ ht-degree: 0%
 
    例如，您可以：
 
-   * 探索資料庫中的資料並定義度量。 瞭解本節[的更多資訊](../../reporting/using/about-cubes.md)
-   * 新增指標至現有報表。 瞭解本節[的更多資訊](../../reporting/using/about-reports-creation-in-campaign.md)
-   * 查看資料庫中的資料。 瞭解本節[的更多資訊](../../reporting/using/about-descriptive-analysis.md)
+   * 探索資料庫中的資料並定義度量。 瞭解本節](../../reporting/using/about-cubes.md)的更多資訊[
+   * 新增指標至現有報表。 瞭解本節](../../reporting/using/about-reports-creation-in-campaign.md)的更多資訊[
+   * 查看資料庫中的資料。 瞭解本節](../../reporting/using/about-descriptive-analysis.md)的更多資訊[
    * 建立新的傳送報表。 瞭解更多[在本節](../../reporting/using/about-reports-creation-in-campaign.md)),
    * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱[本節](../../workflow/using/about-workflows.md)
-   * 建立透視表。 瞭解本節[的更多資訊](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * 探索匯整的資料。 瞭解本節[的更多資訊](../../reporting/using/about-cubes.md)
-   * 使用精靈來分析資料。 瞭解本節[的更多資訊](../../reporting/using/about-descriptive-analysis.md)
-   * 分析大量資料。 瞭解本節[的更多資訊](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 建立透視表。 瞭解本節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)的更多資訊[
+   * 探索匯整的資料。 瞭解本節](../../reporting/using/about-cubes.md)的更多資訊[
+   * 使用精靈來分析資料。 瞭解本節](../../reporting/using/about-descriptive-analysis.md)的更多資訊[
+   * 分析大量資料。 瞭解本節](../../reporting/using/about-reports-creation-in-campaign.md)的更多資訊[
 
 1. 識別目標人口
 
