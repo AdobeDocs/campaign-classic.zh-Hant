@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 * 請勿嘗試排程大型傳送。 請注意，在系統上均勻分配負載可能需要5到10分鐘。
 
-## 傳送疑難排解{#delivery-troubleshooting}
+## 傳遞疑難排解 {#delivery-troubleshooting}
 
 當傳送發生問題時，可執行特定動作：
 
