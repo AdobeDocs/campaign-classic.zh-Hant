@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 匯入和匯出最佳實務{#import-export-best-practices}
+# 匯入和匯出最佳實務 {#import-export-best-practices}
 
 謹慎並遵循下面詳述的幾個簡單規則，將有助於確保資料庫內的資料一致性，並避免在資料庫更新或資料匯出期間發生常見錯誤。
 
