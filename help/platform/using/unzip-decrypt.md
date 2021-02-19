@@ -54,7 +54,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 執行此使用案例的步驟如下：
 
-1. 使用「控制面板」產生金鑰對（公開／私用）。 [控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)中提供了詳細步驟。
+1. 使用「控制面板」產生金鑰對（公開／私用）。 有關詳細步驟，請參閱[控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
 
    * 公開金鑰將會與外部系統共用，外部系統會使用它來加密要傳送至Campaign的資料。
    * Campaign Classic將使用私密金鑰解密傳入的加密資料。
