@@ -138,7 +138,7 @@ ht-degree: 0%
 
 容器可讓您將一組控制項分組。 它們由&#x200B;**`<container>`**&#x200B;元素表示。 上文使用它們來設定數欄的控制項格式。
 
-`<container>`上的&#x200B;**xpath**&#x200B;屬性可讓您簡化子控制項的參照。 然後，控制項的引用相對於父`<container>`父項。
+`<container>`上的&#x200B;**xpath**&#x200B;屬性可讓您簡化子控制項的參考。 然後，控制項的引用相對於父`<container>`父項。
 
 不含&quot;xpath&quot;的容器範例：
 
@@ -522,7 +522,7 @@ ht-degree: 0%
 
 此控制項會在一組要編輯的欄位上建立樹狀結構。
 
-要編輯的控制項按&#x200B;**`<container>`**&#x200B;分組，該&#x200B;**`<input>`**&#x200B;輸入在樹控制項的&lt;a1/>標籤下：
+要編輯的控制項按&#x200B;**`<container>`**&#x200B;分組，該&#x200B;**`<input>`**&#x200B;輸入在樹控制項的標籤下：
 
 ```
 <input nolabel="true" type="treeEdit">
@@ -586,7 +586,7 @@ ht-degree: 0%
 
 在表單定義中使用巨集語言，以執行條件式測試。
 
-如果運算式已驗證，**`<if expr="<expression>" />`**&#x200B;標籤會執行標籤下所指定的指示：
+**`<if expr="<expression>" />`**&#x200B;標籤會執行標籤下指定的指令（如果運算式已驗證）:
 
 ```
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
