@@ -43,7 +43,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 一般而言，若要在Adobe Campaign中使用CRM連接器，請遵循下列步驟：
 
 1. 透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;節點建立新的外部帳戶。
-1. 選擇您需要的CRM系統，以將Campaign連接至。
+1. 選擇您將Campaign連接至所需的CRM系統。
 1. 輸入設定以啟用連接。
 1. 運行配置嚮導以生成可用的CRM表：配置嚮導可讓您收集表並建立匹配的模式。
 
