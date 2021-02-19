@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >修改或更新Adobe Campaign選項只能由專家使用者執行。
 
-其中一些是在安裝促銷活動時內建的，其他則可視需要手動新增。 可用選項會根據實例安裝的軟體包而有所不同。
+其中一些是在安裝促銷活動時內建的，其他則可視需要手動新增。 可用選項會根據隨實例安裝的軟體包而有所不同。
 
 ## 傳送 {#delivery}
 
@@ -156,7 +156,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
-   <td> 兩次重試電子郵件的間隔（秒）。<br /> </td> 
+   <td> 兩次重試電子郵件訊息的間隔（秒）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
@@ -449,7 +449,7 @@ ht-degree: 0%
    <td> 個人化JavaScript程式庫，以豐富事件。 必須包含這兩個函式的實作：<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">methingRtEvents(aiEventId);</span> :豐富並儲存資料庫中的事件(其 <span class="uicontrol"></span> 中aiEventId對應於處理的即時事件表)。</p> </li> 
-     <li> <p> <span class="uicontrol">menchingBatchEvents(aiEventId);</span> :豐富和保存資料庫中的事件(其中 <span class="uicontrol"></span> aiEventId與已處理批處理事件的ID表相對應)。</p> </li> 
+     <li> <p> <span class="uicontrol">menchingBatchEvents(aiEventId);</span> :豐富和保存資料庫中的事件(其中 <span class="uicontrol"></span> aiEventId與已處理批次事件的ID表相對應)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
