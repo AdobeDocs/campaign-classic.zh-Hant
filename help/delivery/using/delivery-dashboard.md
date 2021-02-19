@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 傳送控制面板
+title: 傳遞儀表板
 description: 進一步瞭解如何使用傳送控制面板來監控傳送。
 audience: delivery
 content-type: reference
@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# 傳送控制面板{#delivery-dashboard}
+# 傳遞儀表板 {#delivery-dashboard}
 
 **傳送控制面板**&#x200B;是監控傳送以及傳送訊息時最終遇到問題的關鍵。
 
@@ -117,7 +117,7 @@ ht-degree: 4%
 
 * 如果您的交貨指標仍為零且您處於中間採購配置中，請檢查&#x200B;**[!UICONTROL Mid-sourcing (delivery counters)]**&#x200B;技術工作流程。 如果狀態不是&#x200B;**[!UICONTROL Started]**，請啟動它。 然後，您可以嘗試在Adobe Campaign檔案總管中按一下滑鼠右鍵並選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**，重新計算指標。 有關跟蹤指示器的詳細資訊，請參閱此[部分](../../reporting/using/delivery-reports.md#tracking-indicators)。
 
-* 如果您的傳送計數器與您的傳送不符，請嘗試在Adobe Campaign檔案總管中以滑鼠右鍵按一下相關傳送，然後選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**&#x200B;以重新同步，以重新計算指標。 有關跟蹤指示器的詳細資訊，請參閱此[部分](../../reporting/using/delivery-reports.md#tracking-indicators)。
+* 如果您的傳送計數器與您的傳送不符，請嘗試在Adobe Campaign檔案總管中以滑鼠右鍵按一下相關的傳送，然後選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**&#x200B;以重新同步，以重新計算指標。 有關跟蹤指示器的詳細資訊，請參閱此[部分](../../reporting/using/delivery-reports.md#tracking-indicators)。
 
 * 如果您的交貨計數器不是中部採購部署的最新狀態，請檢查&#x200B;**[!UICONTROL Mid-Sourcing (Delivery counters)]**&#x200B;技術工作流程是否正在執行。 如需關於此項目的詳細資訊，請參閱此[頁面](../../installation/using/mid-sourcing-deployment.md)。
 
