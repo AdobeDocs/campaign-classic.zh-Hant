@@ -97,7 +97,7 @@ ACS連接器可同步Campaign v7和Campaign Standard之間的隔離。
 
 複製的設定檔可供傳送使用，但在Campaign Standard中有某些限制。 請檢閱下列項目，瞭解如何最佳化管理。
 
-* **Campaign Standard的唯讀設定檔**:複製的設定檔在Campaign Standard中為唯讀。不過，您可以在Campaign v7中編輯收件者，而且ACS連接器會在Campaign Standard中自動更新修改。
+* **Campaign Standard的唯讀設定檔**:複製的設定檔在Campaign Standard中為唯讀。不過，您可以在Campaign v7中編輯收件者，而ACS連接器會在Campaign Standard中自動更新修改。
 * **在Campaign Standard中建立的設定檔**:ACS連接器將收件者資料從Campaign v7複製到Campaign Standard，以單一方向複製。因此，源自Campaign Standard的設定檔不會複製至Campaign v7。
 * **Campaign Standard的基本收件者資料**:ACS連接器可複製適合Campaign Standard的收件者資料。其中包括收件者的姓名、地址、電子郵件地址、行動電話號碼、家庭電話號碼，以及其他相關聯絡資訊。 如果Campaign v7中提供的其他收件者欄位和自訂定位表格對您的工作流程至關重要，請與您的顧問聯絡。
 * **導入隔離配置檔案**:不想與其聯絡的個人檔案清單可匯入Campaign v7或Campaign Standard，做為隔離的個人檔案。配置檔案的狀態包括在應用程式之間的隔離同步中，它們不會用於傳送。
