@@ -19,15 +19,15 @@ ht-degree: 4%
 
 身為技術使用者，除了[一般屬性](../../reporting/using/properties-of-the-report.md)外，您還可運用進階功能來設定報表，例如：
 
-* 建立複雜查詢以處理&#x200B;**Script**&#x200B;活動中的資料。 [進一步瞭解](#script-activity)
+* 建立複雜查詢以處理&#x200B;**Script**&#x200B;活動中的資料。 [進一步了解](#script-activity)
 
-* 新增要在伺服器或用戶端上執行的外部指令碼。 [進一步瞭解](#external-script)
+* 新增要在伺服器或用戶端上執行的外部指令碼。 [進一步了解](#external-script)
 
-* 呼叫具有&#x200B;**Jump**&#x200B;活動的報表。 [進一步瞭解](#calling-up-another-report)
+* 呼叫具有&#x200B;**Jump**&#x200B;活動的報表。 [進一步了解](#calling-up-another-report)
 
-* 新增URL參數至報表，讓其更易於存取。 [進一步瞭解](#calling-up-another-report)
+* 新增URL參數至報表，讓其更易於存取。 [進一步了解](#calling-up-another-report)
 
-* 新增要用於報表內容的變數。 [進一步瞭解](#adding-variables)
+* 新增要用於報表內容的變數。 [進一步了解](#adding-variables)
 
 ## 使用指令碼{#adding-a-script}
 
