@@ -50,7 +50,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. 如果需要，可以使用&#x200B;**按鈕添加其他子集**。**[!UICONTROL Add]**
+1. 如果需要，可以使用&#x200B;**[!UICONTROL Add]**&#x200B;按鈕添加其他子集&#x200B;**。**
 
    ![](assets/s_user_segmentation_partage_add.png)
 
@@ -215,7 +215,7 @@ ht-degree: 0%
 
 例如，如果資料是通過&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活動直接從外部資料庫（如Netezza，它不支援索引的概念）讀取，則由&#x200B;**[!UICONTROL Split]**&#x200B;活動生成的補語將不正確。
 
-為避免此問題，您可以在&#x200B;**[!UICONTROL Split]**&#x200B;活動之前拖放&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動。 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動中，檢查&#x200B;**[!UICONTROL Keep all additional data from the main set]**&#x200B;並在其他資料中指定要用於配置&#x200B;**[!UICONTROL Split]**&#x200B;活動篩選器的列。 然後，**[!UICONTROL Split]**&#x200B;活動傳入轉場的資料會儲存在Adobe Campaign伺服器的臨時表格中，並可正確產生補碼。
+為避免此情況，您可以在&#x200B;**[!UICONTROL Split]**&#x200B;活動之前拖放&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動。 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動中，檢查&#x200B;**[!UICONTROL Keep all additional data from the main set]**&#x200B;並在其他資料中指定要用於配置&#x200B;**[!UICONTROL Split]**&#x200B;活動篩選器的列。 然後，**[!UICONTROL Split]**&#x200B;活動傳入轉場的資料會儲存在Adobe Campaign伺服器的臨時表格中，並可正確產生補碼。
 
 **[!UICONTROL Enable overlapping of output populations]**&#x200B;選項可讓您管理屬於數個子集的人口族群：
 
