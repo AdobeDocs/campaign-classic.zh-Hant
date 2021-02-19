@@ -79,7 +79,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Save]**:此選項可讓您建立傳送並儲存。它不會分析或提供。
    * **[!UICONTROL Estimate the target]**:此選項可讓您計算傳送目標，以評估其潛力（第一個分析階段）。此動作等同於在透過&#x200B;**Delivery**&#x200B;傳送傳送至主要目標時，選取&#x200B;**[!UICONTROL Estimate the population to be targeted]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Analyze]**。
-   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。交貨不寄。 此動作等效於在傳送傳送至主目標時，選擇&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Analyze]**，傳送至&#x200B;**Delivery**。
+   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。交貨不寄。 此動作等效於在傳送傳送至主目標時，選擇&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Analyze]**，傳送&#x200B;****。
    * **[!UICONTROL Send a proof]**:此選項可讓您傳送傳送的證明。此動作等同於按一下傳送工具列中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按鈕，並附上&#x200B;**傳送**
    * **[!UICONTROL Prepare and start]**:此選項會啟動完整分析程式（目標計算和內容準備）並傳送傳送。此動作等同於在以&#x200B;**傳送**&#x200B;傳送傳送至主要目標時按一下&#x200B;**[!UICONTROL Deliver as soon as possible]**、**[!UICONTROL Analyze]**&#x200B;和&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;選項。
 
