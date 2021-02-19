@@ -83,7 +83,7 @@ Adobe Campaign中立即可用的「收件者」表格為您建立資料模型提
 
 ## 使用自訂收件者表{#custom-recipient-table}
 
-在設計您的Adobe Campaign資料模型時，您可以使用「現成可用的收件者」表格[，或決定建立「自訂收件者」表格](#default-recipient-table)，以儲存您的行銷描述檔。[](../../configuration/using/about-custom-recipient-table.md)
+在設計您的Adobe Campaign資料模型時，您可以使用「現成可用的收件者」表格](#default-recipient-table)，或決定建立「自訂收件者」表格[，以儲存您的行銷描述檔。[](../../configuration/using/about-custom-recipient-table.md)
 
 事實上，如果您的資料模型不符合以收件者為中心的結構，您可以在Adobe Campaign中將其他表格設定為定位維度。 例如，當您需要鎖定家庭、帳戶（如行動電話）和公司／網站（而不只是收件者）時，這可能是相關的。
 
