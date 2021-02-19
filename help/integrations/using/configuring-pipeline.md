@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 在開始此配置之前，請檢查您使用的是：
 
-* Adobe Campaign 20.3或Gold Standard 11版本最低
+* 最少20.3、20.2.4、19.1.8或Gold Standard 11
 * Adobe Analytics Standard版本
 
 您還需要：
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 步驟1:建立／更新Adobe I/O專案{#creating-adobe-io-project}
 
-對於代管客戶，您可以建立客戶服務票證，以便透過Adobe I/O技術帳戶Token為觸發器整合啟用您的組織。
+對於代管客戶，您可以建立客戶服務票證，以便透過Adobe I/O技術帳戶Token為「觸發器」整合啟用您的組織。
 
 若為On Premise客戶，請參閱[為Adobe Experience Cloud觸發器設定Adobe I/O頁面](../../integrations/using/configuring-adobe-io.md)。 請注意，在將API新增至Adobe I/O憑證時，您必須選取&#x200B;**[!UICONTROL Adobe Analytics]**。
 
