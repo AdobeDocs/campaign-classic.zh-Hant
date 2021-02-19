@@ -152,7 +152,7 @@ ht-degree: 2%
 
 章節結構會移至主要元素外部名稱為&quot;section&quot;的元素。 本章和章節引用「章節」元素。
 
-## 計算字串{#compute-string}
+## 計算字串 {#compute-string}
 
 **計算字串**&#x200B;是用於構造表示內容實例的字串的XPath表達式。
 
