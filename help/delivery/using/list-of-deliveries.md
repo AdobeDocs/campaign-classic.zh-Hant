@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 存取傳送清單
+title: 存取傳遞清單
 description: 瞭解如何存取已建立的傳送清單。
 audience: delivery
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
 
-# 存取傳送清單{#list-of-deliveries}
+# 存取傳遞清單 {#list-of-deliveries}
 
 您可以通過樹的&#x200B;**[!UICONTROL Campaign Management > Deliveries]**&#x200B;節點從傳送清單訪問傳送。
 
@@ -33,5 +33,5 @@ ht-degree: 1%
 
 **相關主題：**
 
-* [傳送控制面板](../../delivery/using/delivery-dashboard.md)
-* [傳送狀態](../../delivery/using/delivery-statuses.md)
+* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
+* [傳遞狀態](../../delivery/using/delivery-statuses.md)
