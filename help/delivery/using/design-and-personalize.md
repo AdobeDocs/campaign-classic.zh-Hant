@@ -67,7 +67,7 @@ ht-degree: 7%
 
 ### 鏡像頁
 
-一律包含鏡像頁面連結。 首選位置是電子郵件的頂端。 [進一步瞭解](../../delivery/using/sending-messages.md#generating-the-mirror-page)
+一律包含鏡像頁面連結。 首選位置是電子郵件的頂端。 [進一步了解](../../delivery/using/sending-messages.md#generating-the-mirror-page)
 
 ### 取消訂閱連結
 
@@ -110,7 +110,7 @@ ht-degree: 7%
 
 若要避免常見的格式錯誤，請檢查下列元素：
 
-* 更正&#x200B;**日期格式**:Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能。 [進一步瞭解](../../delivery/using/formatting.md#date-display)
+* 更正&#x200B;**日期格式**:Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能。 [進一步了解](../../delivery/using/formatting.md#date-display)
 
 * 電子郵件中&#x200B;**授權字元**&#x200B;的用法：電子郵件地址的有效字元清單已在「XtkEmail_Characters」選項中定義。 瞭解如何存取本節](../../installation/using/configuring-campaign-options.md)中的促銷活動選項[。 若要正確處理特殊字元，Adobe Campaign必須以Unicode安裝。
 
@@ -148,9 +148,9 @@ ht-degree: 7%
 
 若要從外部存取，連結至促銷活動的電子郵件和公共資源中使用的影像必須存在於外部存取的伺服器上。
 
-* 您可以檢查實例配置是否啟用公共資源管理。 [進一步瞭解](../../installation/using/deploying-an-instance.md#managing-public-resources)
+* 您可以檢查實例配置是否啟用公共資源管理。 [進一步了解](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* 從傳送精靈中，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。 [進一步瞭解](../../delivery/using/defining-the-email-content.md#adding-images)
+* 從傳送精靈中，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。 [進一步了解](../../delivery/using/defining-the-email-content.md#adding-images)
 
 * 如果未顯示影像，請檢查伺服器上是否有影像。 若要這麼做，請按一下傳送中的「來源」標籤。 在網頁瀏覽器中尋找您的影像並複製並貼上每個影像的URL。 如果未顯示影像，請連絡您的IT管理員或提供傳送內容的協力廠商。
 
@@ -158,6 +158,6 @@ ht-degree: 7%
 
 Adobe建議預覽您的訊息，以檢查其個人化，以及收件者如何看到您的傳送。
 
-* 在傳送捲軸中，**[!UICONTROL Preview]**&#x200B;子標籤可讓您檢視收件者的每個內容的轉譯。 個性化欄位和內容的條件元素被所選配置檔案的相應資訊替換。 [進一步瞭解](../../delivery/using/defining-the-email-content.md#message-content)
+* 在傳送捲軸中，**[!UICONTROL Preview]**&#x200B;子標籤可讓您檢視收件者的每個內容的轉譯。 個性化欄位和內容的條件元素被所選配置檔案的相應資訊替換。 [進一步了解](../../delivery/using/defining-the-email-content.md#message-content)
 
-* 每次預覽期間會執行自動反垃圾郵件檢查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子標籤中，檢查[ SpamAssassin](../../delivery/using/spamassassin.md)垃圾訊息計分。  按一下&#x200B;**[!UICONTROL More...]**&#x200B;以進一步瞭解警告。  在這麼做之前，請確定SpamAssassin已正確安裝並設定在Adobe Campaign應用程式伺服器上。 [進一步瞭解](../../installation/using/configuring-spamassassin.md)
+* 每次預覽期間會執行自動反垃圾郵件檢查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子標籤中，檢查[ SpamAssassin](../../delivery/using/spamassassin.md)垃圾訊息計分。  按一下&#x200B;**[!UICONTROL More...]**&#x200B;以進一步瞭解警告。  在這麼做之前，請確定SpamAssassin已正確安裝並設定在Adobe Campaign應用程式伺服器上。 [進一步了解](../../installation/using/configuring-spamassassin.md)
