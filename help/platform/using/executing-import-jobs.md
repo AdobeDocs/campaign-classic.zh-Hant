@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 配置導入作業
+title: 設定匯入工作
 description: 瞭解如何在Campaign Classic中設定和執行匯入工作。
 audience: platform
 content-type: reference
@@ -15,7 +15,7 @@ ht-degree: 60%
 ---
 
 
-# 配置導入作業{#executing-import-jobs}
+# 設定匯入工作 {#executing-import-jobs}
 
 Adobe Campaign可讓您從一或多個檔案，以文字、CSV、TAB或XML格式將資料匯入資料庫。 這些檔案與表 (主要或連結) 相關聯，並且源檔的每個欄位與資料庫的欄位相關聯。
 
