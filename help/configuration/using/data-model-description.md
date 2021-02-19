@@ -136,7 +136,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 ![](assets/data-model_typology.png)
 
 * **NmsTypelogy規則**:此表與 **nms:** typelogyRuleschema匹配。它包含根據類型套用至傳送的規則。
-* **NmsTypelogy**:此表與 **nms:** typelogyschema匹配。它包含要套用至符合類型學之傳送的規則集。
+* **NmsTypelogy**:此表與 **nms:** typelogyschema匹配。它包含要套用至符合類型法之傳送的規則集。
 * **NmsTypelogyRuleRel**:此表與 **nms:** typelogyRuleRelschema匹配。它包含了類型及其規則之間的關係。
 * **NmsVolumeLine**:此表與 **nms:** volumeLineschema匹配。它包含容量規則的可用行集。
 * **已使用NmsVolume**:此表與 **nms:** volumeConsumedschema匹配。它包含能力規則的所有衝減行。
