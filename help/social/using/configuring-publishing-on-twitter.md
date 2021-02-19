@@ -95,7 +95,7 @@ ht-degree: 2%
 
       ![](assets/social_twitter_service_010.png)
 
-1. 在&#x200B;**[!UICONTROL Visitor folder]**&#x200B;欄位中，選取要建立追隨者的訪客資料夾。 有關詳細資訊，請參閱[操作原理](../../social/using/publishing-on-twitter.md#operating-principle)。 預設情況下，將在&#x200B;**[!UICONTROL Visitors]**&#x200B;資料夾的根目錄中建立追隨者。
+1. 在&#x200B;**[!UICONTROL Visitor folder]**&#x200B;欄位中，選取要建立追隨者的訪客資料夾。 有關詳細資訊，請參閱[操作原則](../../social/using/publishing-on-twitter.md#operating-principle)。 預設情況下，將在&#x200B;**[!UICONTROL Visitors]**&#x200B;資料夾的根目錄中建立追隨者。
 
    ![](assets/social_twitter_service_010_b.png)
 
