@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 使用Adobe Campaign Classic改善傳遞能力的技術建議
-description: 探索使用Adobe Campaign Classic提升傳遞率的技術、設定和工具。
+description: 探索使用Adobe Campaign Classic提高傳遞率的技巧、設定和工具。
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ### 反向DNS {#reverse-dns}
 
-Adobe Campaign會檢查是否提供反向DNS以取得IP位址，且這會正確指向IP。
+Adobe Campaign會檢查是否提供反向DNS來識別IP位址，且這會正確指向IP。
 
 網路配置中的一個重要點是確保為每個傳出消息的IP地址定義了正確的反向DNS。 這表示對於給定的IP地址，存在具有匹配DNS（A記錄）的反向DNS記錄（PTR記錄），該DNS（記錄）返回初始IP地址。
 
@@ -73,7 +73,7 @@ SPF是一種技術，在某種程度上，它使您能夠確保電子郵件中�
 >
 >對於托管或混合安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則DKIM電子郵件驗證簽署由增強型MTA針對所有網域的所有訊息完成。
 
-DKIM(DomainKeys Indified Mail)驗證是SPF的繼承者，使用公開金鑰加密技術，允許接收電子郵件伺服器驗證消息實際上是由其聲稱發送的個人或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 為確保DKIM的安全級別，建議使用最佳實務加密大小1024b。 大部分的存取提供者不會將低DKIM金鑰視為有效。
+DKIM(DomainKeys Indified Mail)驗證是SPF的繼承者，使用公開金鑰加密技術，允許接收電子郵件伺服器驗證消息實際上是由其聲稱發送的個人或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 為確保DKIM的安全級別，建議使用1024b的最佳做法加密大小。 大部分的存取提供者不會將低DKIM金鑰視為有效。
 
 DKIM來自DomainKeys、Yahoo! 和Cisco Identified Internet Mail身份驗證原則，用於檢查發件人域的真實性並保證消息的完整性。
 
@@ -132,7 +132,7 @@ Recommendations for defining an SPF record:
 
 ## 反饋環{#feedback-loop}
 
-反饋迴路在ISP級別為用於發送消息的IP地址範圍聲明給定的電子郵件地址。 ISP會以類似方式將郵件發送到此郵箱，即接收者報告為垃圾郵件的郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 根據這些抱怨， ISP將在其密鑰中添加一個IP地址。 根據ISP的不同，投訴率約為1%將導致IP地址被阻塞。
+回饋迴路可在ISP層級為用於傳送訊息的IP位址範圍宣告指定電子郵件地址。 ISP會以類似方式將郵件發送到此郵箱，即接收者報告為垃圾郵件的郵件。 應將平台設定為封鎖將來傳送給已投訴的使用者。 即使他們未使用適當的退出連結，也必須不再與他們聯絡。 根據這些抱怨， ISP將在其密鑰中添加一個IP地址。 根據ISP的不同，投訴率約為1%將導致IP地址被阻塞。
 
 目前正在制定一個標準，以定義反饋迴路消息的格式：[濫用反饋報告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
