@@ -88,9 +88,9 @@ ht-degree: 4%
 
 您可以：
 
-* 在serverConf.xml配置檔案中定義IP相關性。 [進一步瞭解](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* 在serverConf.xml配置檔案中定義IP相關性。 [進一步了解](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* 對於每個IPAffinity元素，請聲明可使用的IP位址。 [進一步瞭解](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* 對於每個IPAffinity元素，請聲明可使用的IP位址。 [進一步了解](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
 * 在您選擇的[類型學](../../campaign/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理所述相似性的傳送伺服器(MTA)。 [進一步瞭解](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
