@@ -25,7 +25,7 @@ ht-degree: 10%
    >
    >此矩陣會定期更新，以取得最新版本的Adobe Campaign。 因此，建議您在實施或遷移系統和元件之前系統檢查相容性。
 
-* 根據您的環境，請閱讀Windows[和](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)安裝Linux[的先決條件。](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)
+* 根據您的環境，請閱讀Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)和[安裝Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的先決條件。[
 * 瞭解本節](../../installation/using/database.md)中與資料庫引擎[相關的建議。
 * 檢查伺服器上是否已安裝必要的資料庫存取層，並可從Adobe Campaign帳戶存取。 如需詳細資訊，請參閱[本區段](../../installation/using/application-server.md)。
 * 將您的網路配置為應用程式的特定進程需要與他人通信或訪問LAN和Internet。 這意味著某些TCP埠需要為這些進程開啟。 請參閱[本節](../../installation/using/network-configuration.md)以進一步瞭解網路配置要求。
