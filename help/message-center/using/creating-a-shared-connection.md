@@ -69,7 +69,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_extaccount_007.png)
 
-   資料收集是透過使用HTTP/HTTPS存取的Web服務，或透過Federated Data Access(FDA)模組進行。
+   資料收集可透過使用HTTP/HTTPS存取的Web服務，或透過Federated Data Access(FDA)模組進行。
 
    >[!NOTE]
    >
@@ -142,7 +142,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. 通過複製預設提供的消息中心運算子(**mc5/>)建立** mc1 **和** mc2 **運算子。**&#x200B;有關建立運算子的詳細資訊，請參閱[本節](../../platform/using/access-management.md#operators)。
+1. 通過複製預設提供的消息中心運算子(**mc5/>)，建立** mc1 **和** mc2 **運算子。**&#x200B;有關建立運算子的詳細資訊，請參閱[本節](../../platform/using/access-management.md#operators)。
 
    ![](assets/messagecenter_multi_control_4.png)
 
@@ -150,7 +150,7 @@ ht-degree: 2%
    >
    >**mc1** 和 **mc2** 營運 **[!UICONTROL Message Center execution]** 商必須擁有權限，且無法存取Adobe Campaign用戶端主控台。操作員必須始終與安全區域連結。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
-1. 對於每個運算子，選中&#x200B;**[!UICONTROL Restrict to information found in sub-folders of]**&#x200B;框，並為&#x200B;**mc1**&#x200B;運算子選擇相關資料夾（****&#x200B;資料夾1&lt;a2/>和&#x200B;**mc2**&#x200B;運算子的&#x200B;**資料夾2**）。
+1. 對於每個運算子，選中&#x200B;**[!UICONTROL Restrict to information found in sub-folders of]**&#x200B;框，並為&#x200B;**mc1**&#x200B;運算子選擇相關資料夾（****&#x200B;資料夾1和&#x200B;**mc2**&#x200B;運算子的&#x200B;**資料夾2**）。
 
    ![](assets/messagecenter_multi_control_5.png)
 
