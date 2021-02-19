@@ -95,7 +95,7 @@ Teradata外部帳戶可讓您將Campaign例項連接至Teradata外部資料庫�
 
    * **[!UICONTROL Options]**:要通過Teradata傳遞的選項。使用下列格式：&#39;parameter=value&#39;。 使用半欄作為值之間的分隔符。
 
-   * **[!UICONTROL Timezone]**:Teradata中設定的時區。[進一步瞭解](#timezone)
+   * **[!UICONTROL Timezone]**:Teradata中設定的時區。[進一步了解](#timezone)
 
 ### 查詢色帶
 
@@ -205,7 +205,7 @@ Adobe Campaign不會針對它將在資料庫中建立的物件設定保護模式
 
 ### UDF_UTF16TO8安裝{#UDF-UTF16TO8-installation}
 
-如果您想在Adobe Campaign實例中使用udf_utf16to8函式，則必須從&#x200B;**Teradataunicode工具套件[page](https://downloads.teradata.com/download/tools/unicode-tool-kit)(utk_release1.7.0.0.zip)的&lt;a0/>，在Teradata資料庫上安裝使用者模式函式。**
+如果您想在Adobe Campaign實例中使用udf_utf16to8函式，則必須從&#x200B;**Teradataunicode工具套件[page](https://downloads.teradata.com/download/tools/unicode-tool-kit)(utk_release1.7.0.0.zip)的**，在Teradata資料庫上安裝使用者模式函式。
 
 下載檔案的sha1如下： e58235f434f52c71316a577cb48e20b97d24f470。
 
