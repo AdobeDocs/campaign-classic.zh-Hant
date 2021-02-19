@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過&#x200B;**[!UI
 
 執行此使用案例的步驟如下：
 
-1. 使用GPG公用程式產生GPG金鑰對（公用／私用），然後將公用金鑰安裝至「控制面板」。 [控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)中提供了詳細步驟。
+1. 使用GPG公用程式產生GPG金鑰對（公用／私用），然後將公用金鑰安裝至「控制面板」。 有關詳細步驟，請參閱[控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)。
 
 1. 在Campaign Classic中，建立工作流程以匯出資料，並使用透過控制面板安裝的私密金鑰加密資料。 為此，我們將建立以下工作流程：
 
@@ -58,7 +58,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過&#x200B;**[!UI
 
 1. 配置&#x200B;**[!UICONTROL Query]**&#x200B;活動以定位資料庫中所需的資料。 如需詳細資訊，請參閱[本章節](../../workflow/using/query.md)。
 
-1. 開啟&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何配置活動的全局概念，請參閱[本節](../../workflow/using/extraction--file-.md)。
+1. 開啟&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何配置活動的全局概念可在[本節](../../workflow/using/extraction--file-.md)中獲得。
 
    ![](assets/gpg-data-extraction.png)
 
