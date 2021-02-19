@@ -180,7 +180,7 @@ Adobe Campaign支援7.2版的所有PostgreSQL用戶端程式庫版本：（**lib
 
 擷取64位元Debian的程式庫版本，例如：**libclntsh.so**、**libclntsh.so.11.1**&#x200B;和&#x200B;**libclntsh.so.10.1**。
 
-您可以從Oracle技術網路獲得Linux RPM包。
+您可以從Oracle技術網路獲取Linux RPM包。
 
 >[!NOTE]
 >
