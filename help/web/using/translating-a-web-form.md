@@ -414,7 +414,7 @@ Web表單以Web應用程式屬性的&#x200B;**[!UICONTROL Localization]**&#x200B
 
 ## 範例：以多種語言顯示Web應用程式{#example--displaying-a-web-application-in-several-languages}
 
-下列Web表格提供4種語言：英文、法文、德文和西班牙文。 所有字元字串都已透過Web表單的&#x200B;**[!UICONTROL Translation]**&#x200B;標籤進行翻譯。 由於預設語言為英文，因此在發佈調查時，請使用標準URL以英文顯示。
+下列Web表格提供四種語言：英文、法文、德文和西班牙文。 所有字元字串都已透過Web表單的&#x200B;**[!UICONTROL Translation]**&#x200B;標籤進行翻譯。 由於預設語言為英文，因此在發佈調查時，請使用標準URL以英文顯示。
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
@@ -426,7 +426,7 @@ Web表單以Web應用程式屬性的&#x200B;**[!UICONTROL Localization]**&#x200B
 
 ![](assets/s_ncs_admin_survey_trad_sample_en.png)
 
-您可以新增&#x200B;**?lang=es**&#x200B;或&#x200B;**?lang=de**&#x200B;以西班牙文或德文顯示。
+您可以新增&#x200B;**?lang=es**&#x200B;或&#x200B;**?lang=de**，以西班牙文或德文顯示。
 
 >[!NOTE]
 >
