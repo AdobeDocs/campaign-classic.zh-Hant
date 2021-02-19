@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 監視作業執行
+title: 監控工作執行
 description: 瞭解如何監控導入和導出作業的執行。
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
 
-# 監視作業執行{#monitoring-job-execution}
+# 監控工作執行 {#monitoring-job-execution}
 
 您可以直接從匯入／匯出工作清單追蹤匯入和匯出工作的執行。
 
