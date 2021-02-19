@@ -39,7 +39,7 @@ ht-degree: 15%
   <tr> 
    <td> <span class="uicontrol">帳單（作用中描述檔）</span> <br /> </td> 
    <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>此工作流程會計算作用中描述檔的數目。 預設會在每晚1點觸發。</p> <p><strong>Profile</strong> 是指一筆代表終端客戶或潛在客戶之資訊的紀錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。計費只涉及「作用中」的設定檔。 如果描述檔在過去12個月內已透過任何通道鎖定或傳達，則描述檔會被視為「作用中」。</p> <p>Facebook 和 Twitter 通路不包含在內。</p> <p>您可從「管理」「促銷活動管理」「<span class="uicontrol">&gt;「客戶量度」「</span>」選單中概述「<span class="uicontrol">作用中描述檔數」。</span><span class="uicontrol"></span></span><span class="uicontrol"></span></span></p> </td> 
+   <td> <p>此工作流程會計算作用中描述檔的數目。 預設會在每晚1點觸發。</p> <p><strong>Profile</strong> 是指一筆代表終端客戶或潛在客戶之資訊的紀錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。計費只涉及「作用中」的設定檔。 如果描述檔在過去12個月內已透過任何通道鎖定或傳達，則描述檔會被視為「作用中」。</p> <p>Facebook 和 Twitter 通路不包含在內。</p> <p>您可從「管理」「促銷活動管理」「<span class="uicontrol">&gt;「客戶量度」「</span>」選單中概述「<span class="uicontrol">作用中描述檔數」。</span></span><span class="uicontrol"></span><span class="uicontrol"></span></p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">化名清洗</span> <br /> </td> 
