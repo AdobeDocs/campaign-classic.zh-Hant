@@ -192,7 +192,7 @@ ht-degree: 14%
 
 若要使用舊版促銷活動MTA進行內部部署安裝和代管／混合安裝，若要修改傳送的持續時間，請移至傳送或傳送範本的進階參數，並在對應欄位中指定所需的持續時間。 請參閱[定義有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
 
-預設配置允許在1小時間隔內重試5次，之後在4天內每天重試1次。 可以全域變更重試次數（請洽詢您的Adobe技術管理員），或針對每個傳送或傳送範本變更重試次數（請參閱「設定重試次數[」）。](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)
+預設配置允許在1小時間隔內重試5次，之後在4天內每天重試1次。 可全域變更重試次數（請洽詢您的Adobe技術管理員），或針對每個傳送或傳送範本變更重試次數（請參閱「設定重試次數[」）。](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)
 
 ## 同步與非同步錯誤 {#synchronous-and-asynchronous-errors}
 
@@ -260,7 +260,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 * **[!UICONTROL To qualify]** :彈回數郵件無法合格。必須將資格指派給「傳遞能力」團隊，以確保有效率的平台傳遞能力。 只要郵件不符合條件，反彈郵件就不會用來豐富電子郵件管理規則清單。
 * **[!UICONTROL Keep]** :彈回郵件已經合格， **Refresh將用於傳遞** 性工作流程，以與現有電子郵件管理規則比較並豐富清單。
-* **[!UICONTROL Ignore]** :「促銷活動MTA」會忽略反彈郵件，這表示此反彈不會造成隔離收件者的位址。**Refresh for deliverability**&#x200B;工作流將不使用它，也不會將它發送到客戶端實例。
+* **[!UICONTROL Ignore]** :「促銷活動MTA」會忽略彈回數郵件，這表示此彈回數不會造成隔離收件者的位址。**Refresh for deliverability**&#x200B;工作流將不使用它，也不會將它發送到客戶端實例。
 
 ![](assets/deliverability_qualif_status.png)
 
