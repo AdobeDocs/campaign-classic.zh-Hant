@@ -175,7 +175,7 @@ Facebook類型網頁應用程式的範例如下：
 
 **[!UICONTROL Access control]**&#x200B;活動可讓您在使用者進入競爭時顯示Facebook權限請求頁面。 如果他們同意分享其資訊，則會在預先載入時加以復原。 有關詳情，請參閱：[預載入活動](#pre-loading-activity)。
 
-如果您先前在建立Web應用程式時輸入外部帳戶（請參閱「建立Facebook類型的Web應用程式」[），則不需要編輯活動。 ](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application)如果沒有，請前往&#x200B;**[!UICONTROL Application]**&#x200B;欄位，並選取連結至Facebook應用程式的外部帳戶。
+如果您先前在建立Web應用程式時輸入外部帳戶（請參閱「建立Facebook類型的Web應用程式」](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application)），則不需要編輯活動。 [如果沒有，請前往&#x200B;**[!UICONTROL Application]**&#x200B;欄位，並選取連結至Facebook應用程式的外部帳戶。
 
 ![](assets/social_webapp_024.png)
 
