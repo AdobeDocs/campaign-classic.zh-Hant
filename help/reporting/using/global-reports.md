@@ -297,7 +297,7 @@ ht-degree: 2%
 
 此報告顯示相關期間依作業系統、裝置和瀏覽器劃分的開啟次數。 對於每個類別，都會使用兩個圖表。 第一個顯示有關電腦和行動裝置上開啟次數的統計資料。 第二個顯示僅與行動裝置上開啟有關的統計資料。
 
-開啟次數與開啟的消息總數相對應。 文字格式電子郵件不會計算在內。 有關「追蹤」開啟的詳細資訊，請參閱「追蹤」開啟[一節。](../../reporting/using/indicator-calculation.md#tracking-opens-)
+開啟次數與開啟的消息總數相對應。 文字格式電子郵件不會計算在內。 有關「追蹤」開啟的詳細資訊，請參閱「追蹤」開啟](../../reporting/using/indicator-calculation.md#tracking-opens-)一節。[
 
 ![](assets/dlv_useragent_report.png)
 
