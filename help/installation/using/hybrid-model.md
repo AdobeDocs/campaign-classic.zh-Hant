@@ -27,5 +27,5 @@ ht-degree: 4%
 * 設定促銷活動選項：請參閱[至本節](../../installation/using/configuring-campaign-options.md)。
 * 配置外部資料庫（同盟資料存取）:請參閱[至本節](../../installation/using/about-fda.md)。
 * 設定CRM連接器：請參閱[至本節](../../platform/using/crm-connectors.md)。
-* 要瞭解有關中間採購部署原則的詳細資訊，請參閱本節[。](../../installation/using/mid-sourcing-deployment.md)
+* 要瞭解有關中間採購部署原則的詳細資訊，請參閱本節](../../installation/using/mid-sourcing-deployment.md)。[
 
