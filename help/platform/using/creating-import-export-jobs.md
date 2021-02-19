@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 建立導入和導出作業
+title: 建立匯入和匯出工作
 description: 瞭解如何在Campaign Classic中建立匯入和匯出工作。
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# 建立導入和導出作業{#creating-import-export-jobs}
+# 建立匯入和匯出工作 {#creating-import-export-jobs}
 
 在設定範本後，匯入和匯出作業就可在Adobe Campaign的數個內容中啟動。
 
