@@ -27,7 +27,7 @@ ht-degree: 2%
 1. [設定外部帳戶](#configure-the-external-account)
 1. [設定AEM資源篩選](#configure-aem-resources-filtering)
 
-適用於進階配置，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [說明檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
+適用於進階配置，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
 
 ### 在Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}中安裝AEM整合套件
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 ### 設定AEM運算子的安全區{#configure-the-security-zone-for-aem-operator}
 
-**[!UICONTROL AEM integration]**&#x200B;套件會在Campaign中設定&#x200B;**[!UICONTROL aemserver]**&#x200B;運算子。 此運算子將用來將Adobe Experience Manager伺服器連接至Adobe Campaign。
+**[!UICONTROL AEM integration]**&#x200B;套件會在Campaign中設定&#x200B;**[!UICONTROL aemserver]**&#x200B;運算子。 此運算子將用來將Adobe Experience Manager伺服器連線至Adobe Campaign。
 
 您需要為此營運商設定安全區，以便透過Adobe Experience Manager連線至Adobe Campaign。
 
