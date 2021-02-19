@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
@@ -23,10 +23,10 @@ _2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月31日後連線至Campaign。**
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 3 月 31 日後連線至 Campaign。**
    >
    > 
-* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
+* 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
 
 
 
@@ -56,7 +56,7 @@ _2019年12月2日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA是加州新推出的隱私權法，協調並現代化將於2020年1月1日生效的資料保護要求。 CCPA適用於持有居住在加州之資料主體資料的Adobe Campaign客戶。</p>
+   <td> <p>CCPA是加州新推出的隱私權法，協調並現代化資料保護要求，將於2020年1月1日生效。 CCPA適用於持有居住在加州之資料主體資料的Adobe Campaign客戶。</p>
     <p>除了現有的隱私權功能（包括許可管理、資料保留設定和使用者角色）外，Adobe Campaign還可協助您做好CCPA的準備：</p>
     <ul>
       <li>存取權與刪除權：我們運用了為GDPR新增的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">顯示全文</a></li>
