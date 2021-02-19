@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 開始使用資料匯入和匯出
+title: 開始使用匯入和匯出資料
 description: 進一步瞭解Campaign Classic中的資料匯入和匯出。
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
 
-# 開始使用資料匯入和匯出{#get-started-data-import-export}
+# 開始使用匯入和匯出資料 {#get-started-data-import-export}
 
 Adobe Campaign Classic提供資料管理功能，可讓您匯入和匯出資料。 這些操作可以使用工作流或通用導入和導出來執行。
 
@@ -59,7 +59,7 @@ Campaign Classic可讓您匯入壓縮或加密的檔案，以及匯出壓縮或�
 * [解壓縮或解密檔案](../../platform/using/unzip-decrypt.md)
 * [壓縮或加密檔案](../../platform/using/zip-encrypt.md)
 
-## 最佳實務與疑難排解{#best-practices-troubleshooting}
+## 最佳實務及疑難排解 {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
