@@ -68,7 +68,7 @@ ht-degree: 2%
 
 在Target中，您可以建立不同版本的選件。 視每個使用者體驗而定，您可以建立重新導向選件，並指定要顯示的影像。
 
-在我們的案例中，我們需要兩個重新導向選件，第三個（預設值）是在Adobe Campaign中定義。
+在我們的案例中，我們需要兩個重新導向選件，第三個（預設值）將在Adobe Campaign中定義。
 
 1. 若要在Target Standard中建立新的重新導向選件，請從&#x200B;**[!UICONTROL Content]**&#x200B;標籤按一下&#x200B;**[!UICONTROL Code offers]**。
 
