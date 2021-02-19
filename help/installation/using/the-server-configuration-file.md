@@ -2356,7 +2356,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> 使用SMS閘道的通訊逾時。<br /> </td> 
+   <td> SMS閘道的通訊逾時。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
