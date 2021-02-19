@@ -28,7 +28,7 @@ ht-degree: 1%
    * **net start nlserver6**
    * **net stop nlserver6**
 
-* 在Linux（作為根）中：
+* 在Linux中（以root用戶身份）:
 
    * **/etc/init.d/nlserver6 start**
    * **/etc/init.d/nlserver6 stop**
@@ -52,7 +52,7 @@ ht-degree: 1%
    >    * 其他值（如果有錯誤）。
 
 
-* 啟動／停止多實例或單實例模組(**web**、**trackinglogd**、**syslogd**、**mta**、**wfserver**、**inmail&lt;a1/>):**
+* 啟動／停止多實例或單實例模組(**web**、**trackinglogd**、**syslogd**、**mta**、**wfserver**、**inmail**):
 
    **nlserver啟動`<module>[@<instance>]`**
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    **nlserver停止wfserver@my_instance**
 
-   **nlserver停止Web -immediate**
+   **nlserver stop web -immediate**
 
    **nlserver重新啟動網路**
 
