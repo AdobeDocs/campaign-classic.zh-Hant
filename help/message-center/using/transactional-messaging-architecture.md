@@ -170,7 +170,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在兩個實例上安裝&#x200B;**[!UICONTROL LINE Connect]**&#x200B;軟體包。
 * 將&#x200B;**[!UICONTROL Transactional message control]**&#x200B;套件安裝在您的行銷實例上，並將&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;套件安裝在執行實例上。
-* 在要同步的兩個實例上建立具有相同命名的LINE **外部帳戶**&#x200B;和&#x200B;**服務**。 有關如何建立LINE外部帳戶和服務的詳細資訊，請參閱此[頁](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-)。
+* 在要同步的兩個實例上建立LINE **external account**&#x200B;和&#x200B;**service**，其命名完全相同。 有關如何建立LINE外部帳戶和服務的詳細資訊，請參閱此[頁](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-)。
 
 然後，從&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在兩個實例上配置不同的外部帳戶：
 
