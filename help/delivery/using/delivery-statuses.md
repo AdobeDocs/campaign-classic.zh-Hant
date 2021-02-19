@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 傳送狀態
+title: 傳遞狀態
 description: 進一步瞭解傳送控制面板上的可用狀態。
 audience: delivery
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 
-# 傳送狀態{#delivery-statuses}
+# 傳遞狀態 {#delivery-statuses}
 
 <!--ajouter intro 
 
@@ -29,8 +29,8 @@ ajouter screenshot -->
 
 **相關主題：**
 
-* [傳送控制面板](../../delivery/using/delivery-dashboard.md)
-* [傳送疑難排解](../../delivery/using/delivery-troubleshooting.md)
+* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
+* [傳遞疑難排解](../../delivery/using/delivery-troubleshooting.md)
 * [關於傳遞能力](../../delivery/using/about-deliverability.md)
 
 ## 傳送狀態清單{#list-delivery-statuses}
