@@ -32,26 +32,26 @@ ht-degree: 3%
 
 例如，您可以將描述檔透過社交網路收集到的訪客或訂閱資訊服務的訪客傳送至訪客。
 
-這些映射在本節[中顯示。](../../delivery/using/selecting-a-target-mapping.md)
+這些映射在本節](../../delivery/using/selecting-a-target-mapping.md)中顯示。[
 
 您也可以建立和使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
 
 ## 外部收件者{#external-recipients}
 
-您可以將內容傳送給儲存在外部檔案而非儲存在資料庫中的收件者。 瞭解本節[的更多資訊。](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)
+您可以將內容傳送給儲存在外部檔案而非儲存在資料庫中的收件者。 瞭解本節](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)的更多資訊。[
 
 ## 傳送給您的訂閱者{#send-to-subscribers}
 
-若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者鎖定在對應的資訊服務。 瞭解本節[的更多資訊。](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)
+若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者鎖定在對應的資訊服務。 瞭解本節](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)的更多資訊。[
 
 
 ## 測試收件人和種子地址{#test-recipients-seed-addresses}
 
 若要測試傳送內容，請在傳送至主要目標之前先使用校樣。
 
-請確定您選取了適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義校樣收件者的步驟在本節[中介紹。](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target)
+請確定您選取了適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義校樣收件者的步驟在本節](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target)中介紹。[
 
-種子地址用於定位不符合定義的目標標準的接收者，以便在發送到主目標之前測試傳送。 本節[中列出了它們。](../../delivery/using/about-seed-addresses.md)
+種子地址用於定位不符合定義的目標標準的接收者，以便在發送到主目標之前測試傳送。 本節](../../delivery/using/about-seed-addresses.md)中列出了它們。[
 
 ## 消除地址{#deduplicate-addresses}重複
 
@@ -72,4 +72,4 @@ ht-degree: 3%
 
 要優化應用程式中使用的SQL查詢的效能，可以從資料模式的主元素中聲明索引。
 
-將索引添加到電子郵件地址的步驟在本節[中顯示。](../../configuration/using/database-mapping.md#indexed-fields)
+將索引添加到電子郵件地址的步驟在本節](../../configuration/using/database-mapping.md#indexed-fields)中顯示。[
