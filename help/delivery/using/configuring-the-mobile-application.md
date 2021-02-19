@@ -35,7 +35,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   > 自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。如果您使用此連接器，則需要據此調整實施。[進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
+   > 自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。如果您使用此連接器，則需要據此調整實施。[進一步了解](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
