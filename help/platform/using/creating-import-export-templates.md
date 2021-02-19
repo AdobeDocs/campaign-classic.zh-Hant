@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 14%
+ht-degree: 22%
 
 ---
 
 
-# 建立導入和導出模板{#creating-import-export-templates}
+# 建立匯入和匯出範本 {#creating-import-export-templates}
 
 匯入和匯出範本會儲存在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;目錄中。
 
