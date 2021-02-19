@@ -90,7 +90,7 @@ Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流�
 
 **SMTP報告**
 
-SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [進一步瞭解](../../production/using/monitoring-processes.md)
+SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [進一步了解](../../production/using/monitoring-processes.md)
 
 **最佳實務**
 
