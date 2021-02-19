@@ -39,7 +39,7 @@ Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案產生可變的PDF�
 
 * 建立包含三行且視需要多欄的表格，然後設定其版面配置（邊框等）。
 * 將游標置於表格上，然後按一下&#x200B;**[!UICONTROL Table > Table properties]**&#x200B;菜單。 前往&#x200B;**[!UICONTROL Table]**&#x200B;標籤，輸入以&#x200B;**NlJsTable**&#x200B;開頭的名稱。
-* 在第一行的第一個儲存格中，定義一個循環（例如，&quot;for&quot;），可讓您在表格中顯示的值上進行迭代。
+* 在第一行的第一個儲存格中，定義一個循環（例如，&quot;for&quot;），可對要顯示在表格中的值啟用小版本。
 * 在表格第二行的每個儲存格中，插入傳回要顯示的值的指令碼。
 * 關閉表的第三行和最後一行中的環。
 
