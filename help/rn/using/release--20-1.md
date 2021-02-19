@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -23,10 +23,10 @@ _2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過Adobe Identity Service(IMS)連線至Campaign，則必須升級至Campaign伺服器和用戶端主控台，才能在&#x200B;**2021年3月31日後連線至Campaign。**
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 3 月 31 日後連線至 Campaign。**
    >
    > 
-* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升級是強化環境安全的必備條件。
+* 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
 
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
@@ -120,7 +120,7 @@ _2020年2月17日_
 
 * 資料庫記錄管理得到了增強。
 
-* 連接池的健壯性已經得到改善，這可以防止意外連接故障的發生太多。
+* 連接池的健壯性已經得到改善，這可能防止意外連接故障的發生太多。
 
 * 增強了在發生軟性錯誤時傳送要隔離的電子郵件地址驗證規則。 [顯示全文](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
