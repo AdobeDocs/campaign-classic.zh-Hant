@@ -57,7 +57,7 @@ ht-degree: 3%
       >
       >(&#39;name&#39;)值與轉場屬性的&#x200B;**[!UICONTROL Name]**&#x200B;欄位相對應。
 
-1. 如果SQL指令碼已包含建立出站工作表的命令，請取消選擇&#x200B;**[!UICONTROL Automatically create work table]**&#x200B;選項。 否則，工作流一旦執行，就會自動建立工作表。
+1. 如果SQL指令碼已包含建立出站工作表的命令，請取消選擇&#x200B;**[!UICONTROL Automatically create work table]**&#x200B;選項。 否則，工作表將在工作流執行後自動建立。
 1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認活動配置。
 
 活動現在已設定。 它已準備好在工作流中執行。
