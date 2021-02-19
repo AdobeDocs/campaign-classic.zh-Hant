@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 選擇分析類型{#selecting-a-type-of-analysis}
 
-在助理的第一個步驟中，您可以選擇要使用的描述性分析模板。 依預設，Adobe Campaign提供兩個範本：**[!UICONTROL Qualitative distribution]**&#x200B;和&#x200B;**[!UICONTROL Quantitative distribution]**。 有關詳細資訊，請參閱[配置定性分佈模板](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template)部分。 [關於描述性分析](../../reporting/using/about-descriptive-analysis.md)一節中顯示了各種渲染。
+在助理的第一個步驟中，您可以選擇要使用的描述性分析模板。 依預設，Adobe Campaign提供兩個範本：**[!UICONTROL Qualitative distribution]**&#x200B;和&#x200B;**[!UICONTROL Quantitative distribution]**。 有關詳細資訊，請參閱[配置定性分佈模板](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template)部分。 [關於描述性分析](../../reporting/using/about-descriptive-analysis.md)節中顯示了各種渲染。
 
 在此示例中，選擇&#x200B;**[!UICONTROL Qualitative distribution]**&#x200B;模板並選擇具有圖表和表（陣列）的顯示。 為報表指定名稱（「說明性分析」），然後按一下&#x200B;**[!UICONTROL Next]**。
 
