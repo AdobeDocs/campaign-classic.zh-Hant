@@ -80,7 +80,7 @@ Confirmation: XXXX
 
    可從&#x200B;**config-default.xml**&#x200B;檔案設定啟用。
 
-   宣告Adobe Campaign伺服器以存取用戶端主控台並進行重新導向（追蹤）:
+   宣告Adobe Campaign伺服器以存取用戶端主控台並用於重新導向（追蹤）:
 
    ```
    vi nl6/conf/config-default.xml
@@ -112,7 +112,7 @@ Confirmation: XXXX
 
 必須在&#x200B;**serverConf.xml**&#x200B;資料夾中設定傳送參數。
 
-* **DNS配置**:指定傳送網域和DNS伺服器的IP位址（或主機），這些DNS伺服器用來回應MTA模組從此以後所做的MX型DNS查 **`<dnsconfig>`** 詢。
+* **DNS配置**:指定傳送網域和DNS伺服器的IP位址（或主機），這些DNS伺服器用來回應MTA模組從此以後所做的MX類型DNS查 **`<dnsconfig>`** 詢。
 
    >[!NOTE]
    >
