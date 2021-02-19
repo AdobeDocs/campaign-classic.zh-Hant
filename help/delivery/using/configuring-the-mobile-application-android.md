@@ -163,7 +163,7 @@ ht-degree: 2%
 
 1. 您也可以視需要使用某些&#x200B;**[!UICONTROL Application variables]**&#x200B;來豐富推播訊息內容。 這些功能可完全自訂，而且是傳送至行動裝置的訊息裝載的一部分。
 
-   在下列範例中，我們新增&#x200B;**title**、**imageURL**&#x200B;和&#x200B;**iconURL**&#x200B;來建立豐富式推播通知，然後為應用程式提供影像、標題和圖示，以便在通知中顯示。
+   在下列範例中，我們新增&#x200B;**title**、**imageURL**&#x200B;和&#x200B;**iconURL**&#x200B;來建立豐富式推播通知，然後為應用程式提供影像、標題和圖示以顯示在通知中。
 
    ![](assets/nmac_android_2.png)
 
@@ -190,7 +190,7 @@ ht-degree: 2%
 
    >[!CAUTION]
    >
-   >請確定&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的組態名稱與行動應用程式碼中的組態名稱相同。 請參閱「將Campaign SDK整合至行動應用程式[」一節。](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+   >請確定&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的組態名稱與行動應用程式碼中的組態名稱相同。 請參閱「將Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)」一節。[
 
 ## 建立Android豐富式通知{#creating-android-delivery}
 
