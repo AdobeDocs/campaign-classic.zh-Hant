@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 在Adobe Campaign Classic中使用增強的MTA傳送
+title: 使用Adobe Campaign Classic中的增強MTA傳送
 description: 瞭解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍和特定性。
 audience: delivery
 content-type: reference
