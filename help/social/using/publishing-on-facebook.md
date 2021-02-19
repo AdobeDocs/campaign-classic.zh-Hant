@@ -204,7 +204,7 @@ Adobe Campaign會測量傳送中所含URL的點按次數。 Facebook會測量&#x
 
 ## 傳送證明{#sending-the-proof}
 
-我們強烈建議您在最終傳送之前傳送出版物證明，以便在私人Facebook測試頁面上檢視出版物的精確呈現。 如需建立私人Facebook測試頁面的詳細資訊，請參閱「建立測試Facebook頁面[」。 ](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)選擇目標校對的步驟在[選擇校對目標](#selecting-the-proof-target)中有詳細說明。
+我們強烈建議您在最終傳送之前傳送出版物證明，以便在私人Facebook測試頁面上檢視出版物的精確呈現。 如需建立私人Facebook測試頁面的詳細資訊，請參閱「建立測試Facebook頁面](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)」。 [選擇目標校對的步驟在[選擇校對目標](#selecting-the-proof-target)中有詳細說明。
 
 證明傳送與電子郵件傳送相同。 請參閱[本區段](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
