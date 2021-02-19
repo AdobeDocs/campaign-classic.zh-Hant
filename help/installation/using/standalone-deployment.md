@@ -164,7 +164,7 @@ ht-degree: 1%
 
    如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/campaign-server-configuration.md)。
 
-1. 將用戶端主控台設定程式（v7或&#x200B;**setup-client-6.XX**,v6.1的&#x200B;**setup-client-7.XX**, **/datakit/>,&lt;a8/>/datakit/）複製至&lt;a8/>/nl/eng/jsp**&#x200B;資料夾。********
+1. 將用戶端主控台設定程式（v7或&#x200B;**setup-client-6.XX**,v6.1的&#x200B;**setup-client-7.XX**, **/datakit/>,**/datakit/）複製至&#x200B;**/nl/eng/jsp**&#x200B;資料夾。****
 
    如需詳細資訊，請參閱下列章節：
 
