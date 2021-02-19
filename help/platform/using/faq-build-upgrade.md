@@ -27,7 +27,7 @@ ht-degree: 3%
 
 「建置升級」是指Adobe Campaign Classic軟體已更新為最新的安全建置編號，但仍維持相同的主要／次要建置層級。 例如：Campaign Classic v7組建9026到Campaign v7組建9032。
 
-瞭解本節[的更多資訊。](../../rn/using/rn-overview.md)
+瞭解本節](../../rn/using/rn-overview.md)的更多資訊。[
 
 ## 什麼是Adobe Campaign Classic的最新版本？
 
@@ -37,13 +37,13 @@ ht-degree: 3%
 
 從Adobe Campaign Client主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本。 **[!UICONTROL About]**&#x200B;框包含您正在為控制台和伺服器運行的版本和內部版本的詳細資訊。
 
-瞭解本節[的更多資訊。](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+瞭解本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)的更多資訊。[
 
 ## 建置狀態是什麼意思？
 
 啟動Campaign Classic 19.2時，狀態會關聯至每個建置。
 
-瞭解本節[的更多資訊。](../../rn/using/rn-overview.md)
+瞭解本節](../../rn/using/rn-overview.md)的更多資訊。[
 
 ## 建置升級與版本升級是否相同？
 
@@ -116,7 +116,7 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 ## 在升級過程中是否可以訪問實例？
 
-否. 在升級期間會關閉伺服器，以確保在產品升級期間保留資料完整性。 完成後，它將重新啟動，並恢復所有服務。
+否. 在升級期間會關閉伺服器，以確保在產品升級時保留資料完整性。 完成後，它將重新啟動，並恢復所有服務。
 
 ## 在升級過程中，是否會繼續從訊息中心傳送電子郵件？
 
@@ -162,7 +162,7 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 ## 是否會因內部版本升級而關閉？
 
-是. 在升級期間會關閉伺服器，以確保在產品升級期間保留資料完整性。 完成後，它將重新啟動，並恢復所有服務。
+是. 在升級期間會關閉伺服器，以確保在產品升級時保留資料完整性。 完成後，它將重新啟動，並恢復所有服務。
 
 ## 我應該與誰聯絡以開啟組建升級票證？
 
