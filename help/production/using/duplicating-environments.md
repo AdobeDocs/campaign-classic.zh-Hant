@@ -168,7 +168,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 ### 步驟6 —— 檢查燒灼{#step-6---check-cauterization}
 
-1. 檢查唯一的傳送部件是其ID設為0的部件：
+1. 檢查唯一的傳送部件是ID設為0的部件：
 
    ```
    SELECT * FROM neolane.nmsdeliverypart;
