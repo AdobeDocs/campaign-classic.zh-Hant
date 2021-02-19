@@ -44,7 +44,7 @@ ht-degree: 8%
 
 ![](assets/s_ncs_user_add_custom_field.png)
 
-在選取資料來源（收件者欄位或檔案欄位）後，此插入會採用命令的形式，由Adobe Campaign解釋，並由指定收件者的欄位值所取代。 然後，您可以在&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中查看物理更換。
+在選取資料來源（收件者欄位或檔案欄位）後，此插入會採用命令的形式，由Adobe Campaign解釋，並由指定收件者的欄位值取代。 然後，您可以在&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中查看物理更換。
 
 ## 個人化欄位範例{#personalization-fields-example}
 
