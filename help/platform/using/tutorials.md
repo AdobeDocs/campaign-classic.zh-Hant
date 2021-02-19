@@ -43,7 +43,7 @@ ht-degree: 70%
 
 ### 教學課程影片
 
-探索Adobe Campaign在視訊中的主要功能。 [進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)
+探索Adobe Campaign在視訊中的主要功能。 [進一步了解](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)
 
 ### 訓練課程與影片
 
