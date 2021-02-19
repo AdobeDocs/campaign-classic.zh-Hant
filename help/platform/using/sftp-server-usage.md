@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 36%
+ht-degree: 37%
 
 ---
 
 
-# SFTP伺服器最佳實踐和{#sftp-server-usage}故障排除
+# SFTP 伺服器最佳實務及疑難排解 {#sftp-server-usage}
 
 ## SFTP伺服器全局建議{#global-recommendations}
 
