@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 開始使用傳送監控
+title: 開始使用傳遞監視
 description: 進一步瞭解Campaign Classic傳送監控功能。
 audience: delivery
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
 
-# 開始使用傳送監控{#about-delivery-monitoring}
+# 開始使用傳遞監視 {#about-delivery-monitoring}
 
 在傳送交貨後監控交貨是確保行銷宣傳有效率並與客戶溝通的關鍵步驟。
 
@@ -29,8 +29,8 @@ ht-degree: 8%
 
 每次傳送時，都會提供專屬的儀表板。 它可讓您監控傳送期間最終遇到的問題，以及傳送的各種資訊類型：報表、鏡像頁面、排除、追蹤記錄檔、演算等。
 
-* [存取傳送清單](../../delivery/using/list-of-deliveries.md)
-* [傳送控制面板](../../delivery/using/delivery-dashboard.md)
+* [存取傳遞清單](../../delivery/using/list-of-deliveries.md)
+* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
