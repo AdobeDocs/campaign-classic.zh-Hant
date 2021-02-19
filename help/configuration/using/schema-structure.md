@@ -478,7 +478,7 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 * **location/@city**:在元素下選擇「city」屬 **`<location>`** 性
 * **../@email**:從當前元素的父元素中選擇電子郵件地址
 * **群組`[1]/@label`**:選擇作為第一個收集元素子項的「標籤」 **`<group>`** 屬性
-* **群組`[@label='test1']`**:選擇元素的子項「label」屬性， **`<group>`** 並包含值「test1」
+* **群組`[@label='test1']`**:選擇元素的子項&quot;label&quot;屬性， **`<group>`** 並包含值&quot;test1&quot;
 
 >[!NOTE]
 >
