@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 59%
 
 * **[透過IMS/Adobe ID進行連線？升級至最新組建版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至** 2021年3月31日&#x200B;**之後才能連線至Campaign。
 
-* **[保護您的促銷活](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 動例項更新至最新建置，以保護您的促銷活動平台。
+* **[保護您的促銷活](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)**<br/> 動例項更新至最新建置，以保護您的促銷活動平台。
 
 * **[移除不正確的硬](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 體彈回數瞭解如何在Gmail中斷後更新不正確的硬體彈回數
 
