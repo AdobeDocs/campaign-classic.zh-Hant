@@ -821,7 +821,7 @@ ht-degree: 1%
    <td> 點按<br /> </td> 
    <td> @clicks<br /> </td> 
    <td> URL類型等於「電子郵件點按」的所有@totalClicks的總和。<br /> </td> 
-   <td> sum(If([url/@type] = 1, @totalClicks, 0))<br /> </td> 
+   <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 開啟<br /> </td> 
