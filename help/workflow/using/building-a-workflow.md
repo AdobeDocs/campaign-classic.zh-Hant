@@ -174,9 +174,9 @@ ht-degree: 3%
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-此標籤包含的活動與所有工作流程相同。 [進一步瞭解](#implementation-steps-)
+此標籤包含的活動與所有工作流程相同。 [進一步了解](#implementation-steps-)
 
-除了定位促銷活動外，促銷活動工作流程可讓您建立並設定所有可用渠道的傳送。 在工作流程中建立後，這些傳送即可從促銷活動的控制面板中使用。 [進一步瞭解](../../campaign/using/marketing-campaign-deliveries.md)
+除了定位促銷活動外，促銷活動工作流程可讓您建立並設定所有可用渠道的傳送。 在工作流程中建立後，這些傳送即可從促銷活動的控制面板中使用。 [進一步了解](../../campaign/using/marketing-campaign-deliveries.md)
 
 所有促銷活動工作流程都集中在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**&#x200B;節點下。
 
@@ -192,7 +192,7 @@ Adobe Campaign提供現成可用的技術工作流程。 它們是計畫在伺�
 
 原生範本可用於建立技術工作流程。 您可依您的需求來設定它們。
 
-**[!UICONTROL Campaign process]**&#x200B;子資料夾會集中執行促銷活動中之程式所需的工作流程：任務通知、庫存管理、成本計算等。
+**[!UICONTROL Campaign process]**&#x200B;子資料夾會集中執行促銷活動中的程式所需的工作流程：任務通知、庫存管理、成本計算等。
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Adobe Campaign提供現成可用的技術工作流程。 它們是計畫在伺�
 
 您可以在樹結構的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;節點中建立其他技術工作流。 不過，此程式會保留給專家使用者。
 
-提供的活動與定位工作流程相同。 [進一步瞭解](#implementation-steps-)
+提供的活動與定位工作流程相同。 [進一步了解](#implementation-steps-)
 
 ## 工作流模板{#workflow-templates}
 
