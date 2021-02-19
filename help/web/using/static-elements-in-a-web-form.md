@@ -127,7 +127,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 要開啟編輯器
 
    >[!NOTE]
    >
-   >在設定外部帳戶時，可變更擴充權限的清單。 如果您未輸入任何延伸權限，Facebook會依預設轉送基本設定檔資訊。\
+   >在設定外部帳戶時，可變更延伸權限清單。 如果您未輸入任何延伸權限，Facebook會依預設轉送基本設定檔資訊。\
    >若要檢視擴充權限的清單及其語法，請按一下這裡：[https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
 
    如果使用者同意分享其資訊，表單的欄位會預先載入。
