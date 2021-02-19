@@ -238,7 +238,7 @@ ht-degree: 3%
 為了實作這些作業，Adobe Campaign提供：
 
 * 資料收集活動：[檔案傳輸](../../workflow/using/file-transfer.md)、[資料載入（檔案）](../../workflow/using/data-loading--file-.md)、[資料載入(RDBMS)](../../workflow/using/data-loading--rdbms-.md)、[更新資料](../../workflow/using/update-data.md)。 收集資料的第一步會準備資料，以便在其他活動中加以處理。 需要監控多個參數，以確保工作流正確執行並提供預期結果。 例如，在匯入資料時，此資料的主鍵(Pkey)必須對每個記錄都是唯一的。
-* 資料管理選項豐富了定位活動：[Query](../../workflow/using/query.md)、[Union](../../workflow/using/union.md)、[Intersection](../../workflow/using/intersection.md)、[Split](../../workflow/using/split.md)。 這可讓您設定來自數個不同定位維度之資料之間的聯合或交叉點，只要資料協調是可能的。
+* 使用資料管理選項豐富定位活動：[Query](../../workflow/using/query.md)、[Union](../../workflow/using/union.md)、[Intersection](../../workflow/using/intersection.md)、[Split](../../workflow/using/split.md)。 這可讓您設定來自數個不同定位維度之資料之間的聯合或交叉點，只要資料協調是可能的。
 * 資料轉換活動：[Enrichment](../../workflow/using/enrichment.md)、[變更尺寸](../../workflow/using/change-dimension.md)。
 
 >[!CAUTION]
