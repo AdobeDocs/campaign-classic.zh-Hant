@@ -152,7 +152,7 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
 **適用於iOS —— 二進位連接器**
 
 >[!NOTE]
-自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。如果您使用此連接器，則需要據此調整實施。[進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
+自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。如果您使用此連接器，則需要據此調整實施。[進一步了解](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
 Adobe Campaign會針對每個通知從APNs伺服器接收同步與非同步錯誤。 對於下列同步錯誤，Adobe Campaign會產生軟性錯誤：
 
@@ -161,7 +161,7 @@ Adobe Campaign會針對每個通知從APNs伺服器接收同步與非同步錯�
 * 傳送期間連線中斷：重試時，失敗原因為&#x200B;**[!UICONTROL Unreachable]**。
 * 服務配置問題（證書無效、證書密碼無效、證書無效）:無重試，故障原因為&#x200B;**[!UICONTROL Unreachable]**。
 
-APNs伺服器會以非同步方式通知Adobe Campaign，裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 **[!UICONTROL mobileAppOptOutMgt]**&#x200B;工作流每6小時運行一次，以聯繫APNs反饋服務以更新&#x200B;**AppSubscriptionRcp**&#x200B;表。 對於所有停用的Token，欄位&#x200B;**Disabled**&#x200B;會設為&#x200B;**True**，連結至該裝置Token的訂閱會自動排除在未來傳送之外。
+APNs伺服器會以非同步方式通知Adobe Campaign裝置Token已未註冊（當使用者解除安裝行動應用程式時）。 **[!UICONTROL mobileAppOptOutMgt]**&#x200B;工作流每6小時運行一次，以聯繫APNs反饋服務以更新&#x200B;**AppSubscriptionRcp**&#x200B;表。 對於所有停用的Token，欄位&#x200B;**Disabled**&#x200B;會設為&#x200B;**True**，連結至該裝置Token的訂閱會自動排除在未來傳送之外。
 
 **適用於iOS - HTTP/V2連接器**
 
@@ -527,7 +527,7 @@ SMS消息的隔離機制與一般過程在全局上是相同的。 請參閱[關
   <tr> 
    <td> 無效的MT確認<br /> </td> 
    <td> 失敗<br /> </td> 
-   <td> 處理傳送查詢的確認影格時發生'{1}'錯誤<br /> </td> 
+   <td> 處理傳送查詢的確認影格時發生錯誤'{1}'<br /> </td> 
    <td> Soft<br /> </td> 
    <td> 無法訪問<br /> </td> 
   </tr> 
