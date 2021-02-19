@@ -35,6 +35,6 @@ ht-degree: 5%
 
    ![](assets/incremental_query_example_2.png)
 
-1. 在批准增量查詢後，請按照[清單更新](../../workflow/using/list-update.md)中的說明配置清單更新活動。
+1. 批准增量查詢後，請按照[List update](../../workflow/using/list-update.md)中的說明配置清單更新活動。
 
 因此，工作流程將會在每季開始前自動啟動。 清單將會更新為新的合格收件者，以接收選件。
