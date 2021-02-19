@@ -131,7 +131,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 工作流監控<br /> </td> 
-   <td> <p>有了新的Adobe Campaign Workflow HeatMap，平台管理員可快速以圖形方式呈現所有並行工作流程，讓他們可以監控執行個體的載入情況，並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
+   <td> <p>有了新的Adobe Campaign Workflow HeatMap，平台管理員可快速以圖形方式呈現所有並行工作流程，讓他們可以監控執行個體的負載情況，並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -199,7 +199,7 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 
 * 修正無法下載&#x200B;**Web download**&#x200B;工作流程活動中檔案的錯誤。 (NEO-11105)
 * 修正偶爾會將&#x200B;**傳送指示符和促銷活動屬性**&#x200B;工作流程保留為「失敗」狀態的錯誤(NEO-10820)。
-* 修正在工作流程中執行「清單更新」活動後所建立的收件者清單已刪除的問題。 (NEO-11696)
+* 修正在工作流程中執行「清單更新」活動後，刪除所建立之收件者清單的問題。 (NEO-11696)
 * 修正在「促銷活動」日曆（在日文例項上）中，提前一個月錯誤顯示促銷活動的問題。 (NEO-11445)
 * 修正Analytics設定無法顯示在傳送屬性的「Web Analytics」標籤中的問題。 (NEO-11619)
 * 修正嘗試編輯並儲存nms:delivery輸入表單時顯示的錯誤。 (NEO-10973)
