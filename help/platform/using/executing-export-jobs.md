@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 配置導出作業
+title: 設定匯出工作
 description: 瞭解如何在Campaign Classic中設定和執行匯出工作。
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
 
-# 配置導出作業{#executing-export-jobs}
+# 設定匯出工作 {#executing-export-jobs}
 
 導出作業允許您訪問和提取資料庫中的資料：連絡人、客戶、清單、區段等。
 
