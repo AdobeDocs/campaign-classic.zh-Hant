@@ -155,7 +155,7 @@ Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個�
 
    ![](assets/social_webapp_fb_001.png)
 
-1. 在&#x200B;**[!UICONTROL Secure Page Tab URL]**&#x200B;欄位中，輸入Web應用程式的公用URL，此URL可透過Web應用程式的&#x200B;**[!UICONTROL Dashboard]**&#x200B;標籤存取。 如需建立Facebook類型網頁應用程式的詳細資訊，請參閱「建立Facebook類型網頁應用程式」[。](#creating-a-facebook-type-web-application)
+1. 在&#x200B;**[!UICONTROL Secure Page Tab URL]**&#x200B;欄位中，輸入Web應用程式的公用URL，此URL可透過Web應用程式的&#x200B;**[!UICONTROL Dashboard]**&#x200B;標籤存取。 如需建立Facebook類型網頁應用程式的詳細資訊，請參閱「建立Facebook類型網頁應用程式」](#creating-a-facebook-type-web-application)。[
 
    ![](assets/social_webapp_fb_002.png)
 
