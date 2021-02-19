@@ -23,13 +23,13 @@ ht-degree: 28%
 
 ## 使用工作流程{#use-workflows}
 
-匯出和匯入是在專用範本中設定，這些範本是透過匯入和匯出活動透過工作流程執行。 它們可以根據時間表自動重複，例如多個資訊系統之間的自動化資料交換。[進一步瞭解](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
+匯出和匯入是在專用範本中設定，這些範本是透過匯入和匯出活動透過工作流程執行。 它們可以根據時間表自動重複，例如多個資訊系統之間的自動化資料交換。[進一步了解](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 如有必要，您可以透過下述的&#x200B;**[!UICONTROL Generic imports and exports]**&#x200B;功能建立偶爾匯入或匯出工作。
 
 ## 建立作業{#create-jobs}
 
-要配置並執行資料導入和導出作業，請轉至&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結。 [進一步瞭解](../../platform/using/about-generic-imports-exports.md)
+要配置並執行資料導入和導出作業，請轉至&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結。 [進一步了解](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
