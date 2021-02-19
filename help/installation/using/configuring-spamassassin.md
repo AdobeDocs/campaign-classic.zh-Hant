@@ -35,7 +35,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 >
 >此更新由代管SpamAssassin的伺服器管理員負責。
 
-在Adobe Campaign中使用SpamAssassin可指出使用SpamAssassin的郵件伺服器在收到Adobe Campaign傳送的電子郵件時的可能行為。 不過，網際網路供應商或線上郵件伺服器的郵件伺服器仍可能認為Adobe Campaign所傳送的訊息不受歡迎。
+在Adobe Campaign中使用SpamAssassin可指出使用SpamAssassin的郵件伺服器在收到Adobe Campaign傳送的電子郵件時的可能行為。 不過，網際網路供應商或線上郵件伺服器的郵件伺服器仍可能認為Adobe Campaign傳送的訊息不受歡迎。
 
 在Perl中部署SpamAssassin及其模組需要Adobe Campaign應用程式伺服器具備透過HTTP連線（TCP/80流程）進行網際網路存取的功能。
 
@@ -60,7 +60,7 @@ SpamAssassin是一套軟體，可用來篩選不想要的電子郵件。 搭配�
 
    如果出現Windows Shell並繼續顯示幾秒鐘，請等待安裝和更新完成，然後按一下&#x200B;**Enter**。
 
-   如果Windows Shell未出現或未在立即消失之前顯示，請遵循下列步驟，按兩下&#x200B;**portableShell.bat**&#x200B;檔案以顯示Windows Shell，並檢查Shell路徑是否與&#x200B;**spamassassin.zip**&#x200B;檔案已解壓縮的資料夾相對應。 如果不是這樣，請使用&#x200B;**cd**&#x200B;命令訪問它。
+   如果Windows Shell未出現或未在立即消失之前顯示，請遵循下列步驟，按兩下&#x200B;**portableShell.bat**&#x200B;檔案以顯示Windows Shell，並檢查Shell路徑是否與&#x200B;**spamassassin檔案已解壓縮的資料夾相對應。**&#x200B;如果不是這樣，請使用&#x200B;**cd**&#x200B;命令訪問它。
 
    輸入&#x200B;**run_me.bat**，然後按一下&#x200B;**Enter**&#x200B;以開始安裝和更新程式。 該操作返回以下值之一，以指示更新結果。
 
