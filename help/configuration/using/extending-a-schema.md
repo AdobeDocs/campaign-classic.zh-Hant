@@ -21,7 +21,7 @@ ht-degree: 5%
 >
 >某些內建結構不能擴展：主要是已定義下列設定者：\
 >**dataSource=&quot;file&quot;** and  **mappingType=&quot;xmlFile&quot;**。\
->不得擴展以下結構：**xtk:entityBackupNew**、**xtk:entityBackupOriginal**、**xtk:entityOriginal**、**xtk:form**、**xtk:srcSchema**、&lt;a10>ncm:publishing **、** nl:monitoring **、** nms:calendar **、** nms:remoteTracking **、** nms:userAgentRules **、** xtk:builder **、** xtk:connections **、** xtk:dbInit **、** xtk:funcList **、** xtk:fusion **,** xtk:jst **、** xtk:navtree **、** xtk:queryDef **、** xtk:resourceMenu **、** xtk:schema **、** xtk:scriptContext **、** xtk:session **、** xtk:sqlSchema **、** xtk:strings **。**
+>不得擴展以下結構：**xtk:entityBackupNew**、**xtk:entityBackupOriginal**、**xtk:entityOriginal**、**xtk:form**、**xtk:srcSchema**、**ncm:publishing**、**nl:monitoring**、**nms:calendar**、**nms:remoteTracking**、**nms:userAgentRules**、**xtk:builder**、**xtk:connections**、**xtk:dbInit**、**xtk:funcList**、**xtk:fusion**,**xtk:jst**、**xtk:navtree**、**xtk:queryDef**、**xtk:resourceMenu**、**xtk:schema**、**xtk:scriptContext**、**xtk:session**、**xtk:sqlSchema**、**xtk:strings**。
 >這份清單並非完整無遺。
 
 擴展現有模式有兩種方法：
