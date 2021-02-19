@@ -54,7 +54,7 @@ ht-degree: 2%
 </tr>
 <tr> 
 <td>連線至下列URL:<b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果您取得空白頁面，請檢查Adobe Campaign Web模組是否已啟動。 命令nlserver pdump應傳回Adobe Campaign Classic(7.X YY.R組建版本XXX@SHA1)的Application Server,DD/MM/YYYY。 否則，使用命令nlserver啟動Web重新啟動模組</td>
+<td>如果您取得空白頁面，請檢查Adobe Campaign Web模組是否已啟動。 命令nlserver pdump應傳回Adobe Campaign Classic(7.X YY.R組建版本XXX@SHA1)的Application Server（應用程式伺服器）DD/MM/YYYY。 否則，使用命令nlserver啟動Web重新啟動模組</td>
 </tr>
 <tr>
 <td>檢查安全區的常規配置。</td>
