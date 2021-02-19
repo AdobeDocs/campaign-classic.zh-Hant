@@ -64,7 +64,7 @@ ht-degree: 2%
    ![](assets/local_validation_data_distribution_2.png)
 
 1. 輸入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Distribution context]**。 在此範例中，我們選取了&#x200B;**[!UICONTROL Recipient]**&#x200B;定位架構和&#x200B;**[!UICONTROL Email domain]**&#x200B;欄位作為分佈欄位。 收件者清單將依網域劃分。
-1. 在&#x200B;**[!UICONTROL Distribution type]**&#x200B;欄位中，選取如何在&#x200B;**[!UICONTROL Distribution]**&#x200B;標籤中表示目標限制值。 這裡，我們選擇了&#x200B;**[!UICONTROL Percentage]**。
+1. 在&#x200B;**[!UICONTROL Distribution type]**&#x200B;欄位中，選取目標限制值在&#x200B;**[!UICONTROL Distribution]**&#x200B;標籤中的表示方式。 這裡，我們選擇了&#x200B;**[!UICONTROL Percentage]**。
 1. 在&#x200B;**[!UICONTROL Approval storage]**&#x200B;欄位中，輸入與使用中的目標模式相符之核准的儲存模式。 下面我們將使用預設儲存模式：**[!UICONTROL Local approval of recipients]**。
 1. 然後按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結。
 
@@ -156,7 +156,7 @@ ht-degree: 2%
 
 ### 等待 {#wait}
 
-等待活動可讓您延遲第二個本機核准活動的開始，該活動會傳送傳送意見回應通知。 在&#x200B;**[!UICONTROL Duration]**&#x200B;欄位中，我們輸入了&#x200B;**[!UICONTROL 5d]**&#x200B;值（5天）。 收件者在傳送傳送後5天所執行的動作，會納入回饋通知中。
+等待活動可讓您延遲第二個本機核准活動的開始，該活動將傳送傳送意見回應通知。 在&#x200B;**[!UICONTROL Duration]**&#x200B;欄位中，我們輸入了&#x200B;**[!UICONTROL 5d]**&#x200B;值（5天）。 收件者在傳送傳送後5天所執行的動作，會納入回饋通知中。
 
 ![](assets/local_validation_workflow_3.png)
 
