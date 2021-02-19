@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 安裝Campaign Classic內建套件
+title: 安裝 Campaign Classic 內建套件
 description: 瞭解如何安裝Campaign內建套件
 audience: installation
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
+# 安裝 Campaign Classic 內建套件{#installing-campaign-standard-packages}
 
 ## 關於內置軟體包{#campaign-standard-packages}
 
@@ -60,7 +60,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td> 傳送<br /> </td> 
-   <td> 監控傳送的內容，以及傳送訊息時最終遇到的問題。 <a href="../../delivery/using/about-delivery-monitoring.md">進一步瞭解</a><br /> </td> 
+   <td> 監控傳送的內容，以及傳送訊息時最終遇到的問題。 <a href="../../delivery/using/about-delivery-monitoring.md">進一步了解</a><br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
