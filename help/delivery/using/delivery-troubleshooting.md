@@ -23,8 +23,8 @@ ht-degree: 1%
 
 **相關主題：**
 
-* [傳送狀態](../../delivery/using/delivery-statuses.md)
-* [傳送控制面板](../../delivery/using/delivery-dashboard.md)
+* [傳遞狀態](../../delivery/using/delivery-statuses.md)
+* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
 * [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
 
 ## 傳送速度緩慢{#slow-deliveries}
@@ -41,7 +41,7 @@ ht-degree: 1%
 
    * 附加的消息（**[!UICONTROL dynamic flow control]**&#x200B;消息）:Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，進而面臨潛在的拒絕清單。
 
-* 系統問題可能會阻止伺服器進行交互：這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如在取得個人化資料的過程中會影響促銷活動。
+* 系統問題可能會阻止伺服器進行交互：這會拖慢整個傳送程式。 檢查伺服器，以確保沒有記憶體或資源問題，例如，在取得個人化資料的過程中，這些問題可能會影響促銷活動。
 
 ## 排程的傳送{#scheduled-deliveries-}
 
