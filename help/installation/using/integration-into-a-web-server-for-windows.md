@@ -42,7 +42,7 @@ IIS Web伺服器的配置過程大多是圖形化的。 它涉及使用網站（
 
 IIS 7中的以下章節詳細配置。 IIS8的組態基本相同。
 
-如果您的電腦上尚未安裝Web IIS伺服器，則可通過&#x200B;**[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]**&#x200B;菜單進行安裝。
+如果電腦上尚未安裝Web IIS伺服器，則可通過&#x200B;**[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]**&#x200B;菜單進行安裝。
 
 在IIS 7中，除了標準服務外，您還需要安裝ISAPI擴充功能和ISAPI篩選器。
 
