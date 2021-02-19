@@ -37,7 +37,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 查詢條帶<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDA Teradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign現在都能傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，Teradata管理員便可使用這些資料進行稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">相關的文件</a>，以瞭解詳情。</p> </td>
+   <td> <p>當多個Campaign使用者連線至相同的FDA Teradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign現在都能傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，Teradata管理員便可用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">相關的文件</a>，以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
 </table>
