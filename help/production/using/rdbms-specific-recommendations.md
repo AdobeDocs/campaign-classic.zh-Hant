@@ -90,7 +90,7 @@ vacuum full nmsdelivery;
 
 >[!NOTE]
 >
->* Adobe建議從較小的表格開始：如此，如果大型表上的進程失敗（故障風險最高），則至少已完成部分維護。
+>* Adobe建議從較小的表格開始：這樣，如果大型表上的進程失敗（故障風險最高），則至少已完成部分維護。
 >* Adobe會重新命令新增資料模型專屬的表格，這些表格可能會受到重大更新的影響。 如果每日資料複製流量較大，則&#x200B;**NmsRecipient**&#x200B;可能會出現這種情況。
 >* **真空**&#x200B;和&#x200B;**re-index**&#x200B;命令將鎖定表，該表在執行維護時會暫停某些進程。
 >* 對於超大表（通常高於5 Gb）,**真空完全**&#x200B;會變得相當低效，而且需要很長時間。 Adobe不建議將它用於&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
@@ -405,7 +405,7 @@ function sqlGetMemo(strSql)
       >
       >從處理器的使用角度看，重建索引過程更加緊張，並鎖定了資料庫資源。 如果希望索引在重建期間可用，請勾選&#x200B;**[!UICONTROL Keep index online while reindexing]**&#x200B;選項。
 
-1. 選擇要在活動報告中顯示的選項，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 選取您要在活動報表中顯示的選項，然後按一下&#x200B;**[!UICONTROL Next]**。
 1. 檢查為維護計畫配置的任務清單，然後按一下&#x200B;**[!UICONTROL Finish]**。
 
    此時將顯示維護計畫的概要及其各步驟的狀態。
@@ -428,7 +428,7 @@ function sqlGetMemo(strSql)
 
 **WdbcOptions_TempDbName**&#x200B;選項允許您為Microsoft SQL Server上的工作表配置單獨的資料庫。 這樣可以優化備份和複製。
 
-如果希望在另一個資料庫上建立工作表（例如，在工作流執行期間建立的表），可以使用此選項。
+如果希望在另一個資料庫上建立工作表（例如，在工作流執行期間建立的表），則可使用此選項。
 
 將選項設定為&quot;tempdb.dbo.&quot;時，將在Microsoft SQL Server的預設臨時資料庫上建立工作表。 資料庫管理員需要允許對tempdb資料庫的寫訪問。
 
