@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ### 輸入頻道（網頁）{#input-channel--web-page-}
 
-若要在呼叫引擎時傳輸其他資料，您必須將&#x200B;**interactionGlobalCtx**&#x200B;變數新增至網頁的JavaScript程式碼。 將包含調用資料的&#x200B;**Interaction**&#x200B;節點插入此變數。 您必須遵守&#x200B;**nms:interaction**&#x200B;架構中的相同xml結構。 請參閱：[其他資料配置](#additional-data-configuration)。
+若要在呼叫引擎時傳輸其他資料，您必須將&#x200B;**interactionGlobalCtx**&#x200B;變數新增至網頁的JavaScript程式碼。 將包含調用資料的&#x200B;**Interaction**&#x200B;節點插入此變數。 您必須遵循&#x200B;**nms:interaction**&#x200B;架構中的相同xml結構。 請參閱：[其他資料配置](#additional-data-configuration)。
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -74,7 +74,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### 輸出通道{#output-channel}
 
-必須建立一個目標工作流，該工作流將載入工作表中的其他資料，方法是遵循與&#x200B;**nms:interaction**&#x200B;模式中相同的xml結構和內部名稱。 請參閱：[其他資料配置](#additional-data-configuration)。
+必須建立一個定位工作流，該工作流將載入工作表中的其他資料，方法是遵循與&#x200B;**nms:interaction**&#x200B;模式中相同的xml結構和內部名稱。 請參閱：[其他資料配置](#additional-data-configuration)。
 
 ## 使用其他資料{#using-additional-data}
 
