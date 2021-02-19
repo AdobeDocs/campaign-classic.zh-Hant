@@ -48,7 +48,7 @@ Deliverability套件可讓您存取：
 以下是有關交付能力監控的一些附加准則：
 
 * 定期檢查整個平台的[傳送吞吐量](../../reporting/using/global-reports.md#delivery-throughput)，以驗證它是否與原始設定一致。
-* 檢查傳送範本中的[retries](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)是否已正確設定（30分鐘的重試週期，以及20次以上的重試）。
+* 檢查傳送範本中的[retries](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)是否已正確設定（30分鐘的重試週期，以及超過20次重試）。
 * 定期驗證[bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)郵箱是否可訪問，且帳戶不會過期。
 * 檢查每個傳送吞吐量，以確定其與傳送內容的有效性一致(例如：&#39;flash銷售&#39;應在幾分鐘內完成，而非數天內完成)。
 * 使用[waves](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)時，請確認每個波片有足夠的時間完成，然後再觸發下一個波片。
@@ -78,7 +78,7 @@ Signal Spam是法國服務，為法國ISP(Orange、SFR)提供匿名回饋迴路�
 
 此報表包含下列指標：
 
-* **[!UICONTROL Reverse DNS]** :Adobe Campaign會檢查是否提供反向DNS以取得IP位址，且這會正確指向IP。
+* **[!UICONTROL Reverse DNS]** :Adobe Campaign會檢查是否提供反向DNS來識別IP位址，且這會正確指向IP。
 
 * **[!UICONTROL SPF]** （發件人策略框架）:一種驗證機制，可讓ISP和郵箱提供者檢查電子郵件傳送者是否在傳送網域獲得授權。
 
