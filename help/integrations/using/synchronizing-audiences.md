@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您需要的所有資料都已複製，您也可以在Adobe Campaign Standard中使用匯總和集合來豐富資料。
+>如果您需要的所有資料都已複製，您也可以在Adobe Campaign Standard中使用匯整和系列來豐富資料。
 
 ## 必要條件 {#prerequisites}
 
