@@ -46,7 +46,7 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 * **mssql**:對於Microsoft SQL Server,
 * **DB2**:用於DB2引擎。
 
-以下命令將&#x200B;**demo**&#x200B;實例配置為SQL類型伺服器&#x200B;**base6**，該伺服器連結到&#x200B;**campaign**&#x200B;帳戶及其&#x200B;**password**&#x200B;在&#x200B;**dbsrv**&#x200B;伺服器上的&lt;a6/>口令：
+以下命令將&#x200B;**demo**&#x200B;實例配置為SQL類型伺服器&#x200B;**base6**，該伺服器連結到&#x200B;**campaign**&#x200B;帳戶及其&#x200B;**password**&#x200B;在&#x200B;**dbsrv**&#x200B;伺服器上的口令：
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
