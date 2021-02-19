@@ -109,4 +109,4 @@ Adobe Campaign可讓您檢查訊息格式是否適合傳送至日文行動裝置
 
 >[!IMPORTANT]
 >
->請務必遵守與每種日文電子郵件格式（裝飾郵件、裝飾郵件和轉寄郵件）相關的特殊功能。 有關限制的詳細資訊，請參閱[本節](#limitations-and-recommendations)。
+>請務必遵守與每種日文電子郵件格式（裝飾郵件、裝飾郵件和廣告郵件）相關的特殊功能。 有關限制的詳細資訊，請參閱[本節](#limitations-and-recommendations)。
