@@ -142,7 +142,7 @@ ht-degree: 37%
 
    ![](assets/query_condition_modif_03.png)
 
-此範例顯示可讓您顯示的篩選：會說西班牙文或OR的收件者是具有行動號碼的女性，或是沒有帳號且公司名稱以字母&quot;N&quot;開頭的收件者。
+此範例顯示可讓您顯示的篩選：會說西班牙文或OR的收件者是具有行動號碼的女性，或沒有帳號且公司名稱以字母&quot;N&quot;開頭的收件者。
 
 ![](assets/query_editor_nveau_31.png)
 
