@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# 設定循環匯入工作流程{#setting-up-a-recurring-import}
+# 設定循環匯入工作流程 {#setting-up-a-recurring-import}
 
 如果您需要定期匯入具有相同結構的檔案，請使用工作流程範本是最佳做法。
 
