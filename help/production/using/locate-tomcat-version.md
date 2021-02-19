@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# 查找Tomcat版本{#locate-tomcat-version}
+# 找到 Tomcat 版本{#locate-tomcat-version}
 
 Adobe Campaign使用&#x200B;**內嵌的網頁servlet（稱為Apache Tomcat**），處理應用程式與任何外部介面（包括用戶端主控台、追蹤的URL連結、SOAP呼叫等）之間的HTTP/HTTPS要求。 對於任何外部對應的Adobe Campaign例項，通常會有外部Web伺服器（通常是IIS或Apache）出現在此之前。
 
