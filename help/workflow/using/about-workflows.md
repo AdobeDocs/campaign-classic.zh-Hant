@@ -29,13 +29,13 @@ Adobe Campaign包含工作流程模組，可讓您協調應用程式伺服器不
 
 Adobe Campaign使用工作流程：
 
-* 進行定位促銷活動。 [進一步瞭解](../../workflow/using/building-a-workflow.md#implementation-steps-)
-* 建立促銷活動：對於每個促銷活動，**[!UICONTROL Workflow]**&#x200B;標籤可讓您建立目標並建立傳送。 [進一步瞭解](../../workflow/using/building-a-workflow.md#campaign-workflows)
-* 執行技術流程：清除、收集追蹤資訊或臨時計算。 [進一步瞭解](../../workflow/using/building-a-workflow.md#technical-workflows)
+* 進行定位促銷活動。 [進一步了解](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* 建立促銷活動：對於每個促銷活動，**[!UICONTROL Workflow]**&#x200B;標籤可讓您建立目標並建立傳送。 [進一步了解](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* 執行技術流程：清除、收集追蹤資訊或臨時計算。 [進一步了解](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 工作流可以表示流程定義（工作流模型，它表示應發生的事件）和此流程的實例（工作流實例，它表示實際發生的事件）。
 
-工作流程範本說明要執行的各種工作，以及它們如何連結在一起。 任務模板稱為活動，用表徵圖表示。 它們通過轉換而連接在一起。
+工作流程範本說明要執行的各種工作，以及它們如何連結在一起。 任務模板稱為活動，由表徵圖表示。 它們通過轉換而連接在一起。
 
 ![](assets/example1.png)
 
