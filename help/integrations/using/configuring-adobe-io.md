@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果您使用舊版的觸發器透過驗證整合，**您需要移至Adobe I/O，如下所述**。 舊版授權驗證模式將於2021年4月30日淘汰。 [進一步瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您使用舊版的觸發器透過驗證整合，**您需要移至Adobe I/O，如下所述**。 舊版驗證模式將於 2021 年 4 月 30 日淘汰。[進一步了解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >請注意，在移至Adobe I/O期間，有些傳入的觸發程式可能會遺失。
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 
 開始此實作前，請檢查您有：
 
-* 有效的&#x200B;**組織識別碼**:身分管理系統(IMS)組織識別碼是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [進一步瞭解](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* 有效的&#x200B;**組織識別碼**:身分管理系統(IMS)組織識別碼是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [進一步了解](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **您組織的開發人員存取權**。  如果您需要申請IMS組織的系統管理員權限，請依照本頁](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中詳細說明的程式，為所有產品設定檔提供此存取權。[
 
 ## 步驟1:建立／更新Adobe I/O專案{#creating-adobe-io-project}
