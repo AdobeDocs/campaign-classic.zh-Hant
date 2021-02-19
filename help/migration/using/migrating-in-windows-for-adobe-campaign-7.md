@@ -373,7 +373,7 @@ ht-degree: 1%
 在刪除並清除Adobe Campaign 6.02版安裝之前，您必須套用下列建議：
 
 * 讓功能團隊對新安裝進行完整檢查。
-* 只有在您確定不需要回溯時，才能解除安裝Adobe Campaign 6.02版。
+* 只有在您確定不需要回滾時，才解除安裝Adobe Campaign 6.02版。
 
 1. 在IIS中，刪除&#x200B;**Neolane v6**&#x200B;網站，然後刪除&#x200B;**Neolane v6**&#x200B;應用程式池。
 1. 將&#x200B;**Neolane v6.back**&#x200B;資料夾重新命名為&#x200B;**Neolane v6**。
