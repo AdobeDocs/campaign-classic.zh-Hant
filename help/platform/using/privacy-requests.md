@@ -69,7 +69,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 * **[!UICONTROL Delete privacy requests data]**:此工作流程會刪除Adobe Campaign中儲存的收件者資料。
 * **[!UICONTROL Privacy request cleanup]**:此工作流程會清除90天以前的存取要求檔案。
 
-在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**&#x200B;中，已添加了&#x200B;**[!UICONTROL Privacy Data Right]**&#x200B;名稱為right的&lt;a3/>。 資料控制者若要使用隱私權工具，必須具備此指名權限。 這可讓他們建立新請求、追蹤其演變、使用API等。
+在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**&#x200B;中，已添加了&#x200B;**[!UICONTROL Privacy Data Right]**&#x200B;名稱為right的。 資料控制者若要使用隱私權工具，必須具備此指名權限。 這可讓他們建立新請求、追蹤其演變、使用API等。
 
 ![](assets/privacy-right.png)
 
