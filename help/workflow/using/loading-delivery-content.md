@@ -56,4 +56,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有關SFTP伺服器使用情況的最佳實踐和故障排除，請參見本頁[。](../../platform/using/sftp-server-usage.md)
+>有關SFTP伺服器使用情況的最佳實踐和故障排除，請參見本頁](../../platform/using/sftp-server-usage.md)。[
