@@ -110,7 +110,7 @@ _operation（字串）、進階（布林）、appliableIf（字串）、autoIncr
    要完全定義表中欄位的名稱，請在定義屬性時使用&quot;@sqlname&quot;選項。
 
 * **notNull（布林值）**:可讓您重新定義Adobe Campaign在資料庫中管理NULL記錄的行為。依預設，數值欄位不是null，字串和日期類型欄位可以是null。
-* **pkgStatus（字串）**:在包導出過程中，根據&quot;@pkgStatus&quot;的值，會考慮以下值：
+* **pkgStatus（字串）**:在軟體包導出過程中，根據&quot;@pkgStatus&quot;的值，會考慮以下值：
 
    * 「always」:allowest
    * 「永不」:永遠不存在
