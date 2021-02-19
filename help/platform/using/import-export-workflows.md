@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 使用工作流程匯入和匯出資料
+title: 使用工作流程來匯入和匯出資料
 description: 瞭解如何使用Campaign Classic的工作流程匯入和匯出資料。
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 30%
+ht-degree: 34%
 
 ---
 
 
-# 使用工作流{#import-export-workflows}匯入和匯出資料
+# 使用工作流程來匯入和匯出資料 {#import-export-workflows}
 
 ## 收集資料{#collecting-data-workflows}
 
