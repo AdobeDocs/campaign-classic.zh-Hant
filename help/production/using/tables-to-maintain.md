@@ -177,7 +177,7 @@ ht-degree: 0%
   <tr> 
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> 大<br /> </td> 
-   <td> 插入、更新<br /> </td> 
+   <td> 插入，更新<br /> </td> 
    <td> 包含用於傳送通知的行動裝置（地址）識別碼的表格（類似於收件者表格）。<br /> </td> 
   </tr> 
   <tr> 
