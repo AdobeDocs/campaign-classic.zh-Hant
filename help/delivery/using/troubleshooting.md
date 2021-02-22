@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 3%
+source-wordcount: '98'
+ht-degree: 4%
 
 ---
 
@@ -22,8 +22,6 @@ ht-degree: 3%
 **Android**:移動設備連接到埠5228到5230上的FCM伺服器。因此，必須配置防火牆，以便它授權與FCM的連接。 要開啟的埠包括：5228（最常使用）、5229和5230。
 
 **iOS**:
-
-二進位連接器：要發送通知，您必須授權埠2195上的入站和出站TCP通信。 連接到推送服務的設備必須授權埠5223上的入站和出站TCP通信。
 
 HTTP/2連接器：您必須允許與下列伺服器通訊：
 
