@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 5%
+source-wordcount: '674'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
 **[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流程會更新行動裝置上取消訂閱的通知。 有關此工作流的詳細資訊，請參閱[技術工作流清單](../../workflow/using/about-technical-workflows.md)。
 
-Adobe Campaign可與二進位和HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中設定行動應用程式」一節。[](../../delivery/using/configuring-the-mobile-application.md)
+Adobe Campaign與HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中設定行動應用程式」一節。[](../../delivery/using/configuring-the-mobile-application.md)
 
 ## 資料路徑{#data-path}
 
@@ -85,14 +85,7 @@ Adobe Campaign提供下列資訊：
 
 ![](assets/nmac_delivery_view.png)
 
-Adobe Campaign伺服器必須能夠透過下列埠聯絡APNs伺服器：
-
-* iOS二進位連接器的2195（傳送）和2186（回饋服務）
-* 443 for iOS HTTP/2 connector
-
-   >[!NOTE]
-   >
-   > 自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。如果您使用此連接器，則需要據此調整實施。[進一步了解](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
+Adobe Campaign伺服器必須能夠在iOS HTTP/2連接器的443連接埠上連絡APNs伺服器。
 
 若要檢查它是否正常運作，請使用下列命令：
 
@@ -108,7 +101,5 @@ Adobe Campaign伺服器必須能夠透過下列埠聯絡APNs伺服器：
    telnet gateway.push.apple.com
    ```
 
-如果使用iOS二進位連接器，MTA和Web伺服器必須能夠與埠2195（發送）上的APN聯繫，工作流伺服器必須能夠與埠2196上的APN聯繫（反饋服務）。
-
-如果使用iOS HTTP/2連接器，則MTA、Web伺服器和工作流伺服器必須能夠聯繫埠443上的APN。
+使用iOS HTTP/2連接器，MTA、Web伺服器和工作流伺服器必須能夠與埠443上的APN聯繫。
 
