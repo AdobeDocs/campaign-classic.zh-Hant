@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '3947'
-ht-degree: 98%
+source-wordcount: '4045'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 98%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2021 年 2 月 {#feb-2021}
+## 2021 年 2 月 {#release-21.1}
+
+**21.1版隨附的檔案更新**
+
+新的&#x200B;**電子郵件反饋服務**&#x200B;功能（私用測試版）記錄在[這裡](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)。
+
+**伺服器設定檔**&#x200B;區段已更新，其中包含Campaign使用IMS連線至其他服務所需的設定參數。 [顯示全文](../../installation/using/the-server-configuration-file.md#ims)
+
+在交貨狀態清單中，**服務提供商**&#x200B;考慮的說明已更新：此狀態現在也用於使用[電子郵件回饋服務](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)傳送的電子郵件傳送。 [顯示全文](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+
+新登入畫面上可用來連線至Adobe Campaign的鍵盤快速鍵現在已記載。 [顯示全文](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+
+**其他更新**
 
 新增了一節，其中包含如何使用工作流程執行A/B測試的詳細資訊。 [顯示全文](../../delivery/using/get-started-a-b-testing.md)
 
@@ -100,7 +112,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 更新「已棄用和已移除的功能」頁面。[顯示全文](../../rn/using/deprecated-features.md)
 
 專屬區段現在提供了 Gold Standard 發行版本的發行說明和相容性矩陣。
-[顯示全文](../../rn/using/gold-standard.md#gs-10)。
+[顯示全文](../../rn/using/gold-standard.md#gs-11)。
 
 已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器驗證，並將其移動至 Adobe I/O。[閱讀更多資訊](../../integrations/using/configuring-adobe-io.md)
 
