@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: df7c27e763e7e0c02189ed972f33eb03ca2a915f
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---
@@ -128,7 +128,7 @@ HTML原始碼會插入傳送內容中。 例如，**[!UICONTROL Greetings]**&#x2
    >此區塊僅可用於定位訪客的傳送。
 
 * **[!UICONTROL Registration confirmation]** :插入啟用確認訂閱的連結。
-* **[!UICONTROL Social network sharing links]** :插入按鈕，讓收件者能夠與電子郵件用戶端、Facebook、Twitter、Google +和LinkedIn共用鏡像頁面內容的連結(請參 [閱病毒式行銷：轉達給朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
+* **[!UICONTROL Social network sharing links]** :插入按鈕，讓收件者可與電子郵件用戶端、Facebook、Twitter和LinkedIn共用鏡像頁面內容的連結(請參閱病 [毒式行銷：轉達給朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
 * **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** :產生程式碼，以預先定義的HTML樣式格式化電子郵件。這些區塊必須插入傳送的原始碼（位於&#x200B;**[!UICONTROL ...]**&#x200B;區段）至&#x200B;**`<style>...</style>`**&#x200B;標籤中。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** :插入URL，以將「互動」選件設 **[!UICONTROL Accepted]** 定為( [請參閱](../../interaction/using/offer-analysis-report.md))。
 
