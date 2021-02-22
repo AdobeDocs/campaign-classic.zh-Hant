@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 0%
       **iisreset /stop**
 
    * Adobe Campaign服務：**net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >您還需要確保重定向伺服器(webmdl)已停止，以便IIS使用的&#x200B;**nlsrvmod.dll**&#x200B;檔案可以替換為新版本。
@@ -71,7 +70,7 @@ ht-degree: 0%
 
 1. 運行&#x200B;**setup.exe**。
 
-   若要下載此檔案，請使用您的使用者認證連線至[軟體散發入口網站](https://experience.adobe.com/downloads)。 在[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中進一步瞭解軟體分發。
+   若要下載此檔案，請使用您的使用者認證連線至[軟體散發入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中進一步瞭解軟體分發。
 
 1. 選擇安裝模式：選擇&#x200B;**[!UICONTROL Update or repair]**
 1. 按一下 **[!UICONTROL Next]**。
@@ -125,7 +124,7 @@ ht-degree: 0%
 
 ### 獲取更新的軟體包{#obtain-updated-packages}
 
-從恢復Adobe Campaign的兩個更新套件開始：使用您的用戶憑據連接到[軟體分發門戶](https://experience.adobe.com/downloads)。 在[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中進一步瞭解軟體分發。
+從恢復Adobe Campaign的兩個更新套件開始：使用您的用戶憑據連接到[軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中進一步瞭解軟體分發。
 
 檔案為&#x200B;**nlserver6-v7-XXX.rpm**
 
@@ -173,8 +172,10 @@ ht-degree: 0%
 >
 >* 您的指令碼可能稱為&#x200B;**httpd**，而非&#x200B;**apache**。
 >* 您必須執行此命令，直到您獲得以下回覆：
->
->   Apache必須執行此操作，才能應用新庫。
+
+   >
+   >   
+   Apache必須執行此操作，才能應用新庫。
 
 
 然後重新啟動Apache:
@@ -225,7 +226,7 @@ ht-degree: 0%
 
 如果您選擇手動解決衝突，請按如下步驟進行：
 
-1. 在窗口的下半部分中，搜索&#x200B;**_conflict_**&#x200B;字串以查找具有衝突的實體。 隨新版本安裝的實體包含&#x200B;**new**&#x200B;引數，與舊版相符的實體包含&#x200B;**cus**&#x200B;引數。
+1. 在窗口的下半部分，搜索&#x200B;**_conflict_**&#x200B;字串以查找具有衝突的實體。 隨新版本安裝的實體包含&#x200B;**new**&#x200B;引數，與舊版相符的實體包含&#x200B;**cus**&#x200B;引數。
 
    ![](assets/s_ncs_production_conflict002.png)
 
