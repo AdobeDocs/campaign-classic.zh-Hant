@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ _2020 年 12 月 22 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
-_2020 年 9 月 11 日_
+_2020年9月11日_
 
 * 修正了由於傳送組件上單一錯誤功能導致記憶體過載，導致傳送準備遭到封鎖的迴歸。(NEO-27346)
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
@@ -61,7 +61,7 @@ _2020 年 9 月 11 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
-_2020 年 7 月 22 日_
+_2020 年 22 月 7 日_
 
 * 修正了在停用簽名功能時，無法進行追蹤的問題。(NEO-26411)
 * 修正了造成個人化網域中未簽署的連結在允許時遭到封鎖的問題。(NEO-25210)
