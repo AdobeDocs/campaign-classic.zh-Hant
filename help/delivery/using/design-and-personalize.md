@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 7%
@@ -158,6 +158,6 @@ ht-degree: 7%
 
 Adobe建議預覽您的訊息，以檢查其個人化，以及收件者如何看到您的傳送。
 
-* 在傳送捲軸中，**[!UICONTROL Preview]**&#x200B;子標籤可讓您檢視收件者的每個內容的轉譯。 個性化欄位和內容的條件元素被所選配置檔案的相應資訊替換。 [進一步了解](../../delivery/using/defining-the-email-content.md#message-content)
+* 在傳送精靈中，**[!UICONTROL Preview]**&#x200B;子標籤可讓您檢視收件者的每個內容的轉譯。 個性化欄位和內容的條件元素被所選配置檔案的相應資訊替換。 [進一步了解](../../delivery/using/defining-the-email-content.md#message-content)
 
 * 每次預覽期間會執行自動反垃圾郵件檢查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子標籤中，檢查[ SpamAssassin](../../delivery/using/spamassassin.md)垃圾訊息計分。  按一下&#x200B;**[!UICONTROL More...]**&#x200B;以進一步瞭解警告。  在這麼做之前，請確定SpamAssassin已正確安裝並設定在Adobe Campaign應用程式伺服器上。 [進一步了解](../../installation/using/configuring-spamassassin.md)
