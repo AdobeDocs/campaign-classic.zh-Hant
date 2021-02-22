@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 11%
@@ -408,7 +408,7 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 * **[!UICONTROL API version]**
 
-   **[!UICONTROL Version 37]**、**[!UICONTROL Version 21]**&#x200B;或&#x200B;**[!UICONTROL Version 15]**&#x200B;之間的API版本。
+   **[!UICONTROL Version 49]**、**[!UICONTROL Version 37]**、**[!UICONTROL Version 21]**&#x200B;或&#x200B;**[!UICONTROL Version 15]**&#x200B;之間的API版本。
 
 對於此外部帳戶，您需要使用設定精靈來設定您的Salesforce CRM。
 
