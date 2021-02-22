@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
+source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1880'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 2%
 如果您在2018年9月後已布建Campaign Classic例項，則您會使用增強的MTA。 對於所有其他Campaign Classic客戶，請參閱以下[常見問答](#enhanced-mta-faq)。
 
 增強的MTA實作可能會影響部分現有的促銷活動功能。 有關詳細資訊，請參閱[增強的MTA特性](#enhanced-mta-impacts)。
+
+>[!NOTE]
+>
+>如果您是Adobe Campaign的使用者，但想要知道您的例項是否已升級至「增強型MTA」，請連絡您的內部「促銷活動」管理員。
 
 ## 常見問題 {#enhanced-mta-faq}
 
@@ -129,24 +133,6 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 如需反彈資格的詳細資訊，請參閱[本節](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)。
 
-### 使用增強的MTA傳送狀態
-
-在電子郵件傳送[控制面板](../../delivery/using/delivery-dashboard.md)的&#x200B;**[!UICONTROL Summary]**&#x200B;檢視中，**[!UICONTROL Success]**&#x200B;百分比從100%開始，然後在傳送[有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期間逐漸降低，因為軟彈回彈和硬彈回會從增強的MTA回報至促銷活動。
-
-事實上，當所有訊息從「促銷活動」成功中繼至「增強型MTA」時，傳送記錄檔[中的訊息都會顯示為&#x200B;**[!UICONTROL Sent]**。 ](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)除非或直到該訊息的[bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)從增強的MTA傳回至促銷活動，否則這些訊息仍維持該狀態。
-
-當硬彈回訊息從增強的MTA回報時，其狀態會從&#x200B;**[!UICONTROL Sent]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比會相應降低。
-
-當從增強的MTA回報軟反彈訊息時，仍會顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，在傳送有效期間內，將[retryed](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)軟彈跳消息：
-
-* 如果重試在有效期結束前成功，則消息狀態將保持為&#x200B;**[!UICONTROL Sent]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比將保持不變。
-
-* 否則，狀態變化為&#x200B;**[!UICONTROL Failed]**&#x200B;並相應地降低&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
-
-因此，您應等到有效期結束時，才能查看最終的&#x200B;**[!UICONTROL Success]**&#x200B;百分比，以及實際的&#x200B;**[!UICONTROL Sent]**&#x200B;和&#x200B;**[!UICONTROL Failed]**&#x200B;訊息的最終數字。
-
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
 ### 傳送總處理能力
 
 「促銷活動傳送」總處理量圖表將不再顯示您電子郵件收件者的總處理量。 該圖表現在會顯示從促銷活動傳送至增強MTA的訊息的中繼處理速度。
@@ -167,3 +153,78 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 DKIM(DomainKeys Indified Mail)電子郵件驗證簽署由增強的MTA完成。 在「增強的MTA」升級中，原生Campaign MTA的DKIM簽署將會在「網域管理」表格中關閉。
 有關DKIM的詳細資訊，請參閱[本節](../../delivery/using/technical-recommendations.md#dkim)。
+
+### 傳送成功報告
+
+在電子郵件傳送[控制面板](../../delivery/using/delivery-dashboard.md)的&#x200B;**[!UICONTROL Summary]**&#x200B;檢視中，**[!UICONTROL Success]**&#x200B;百分比從100%開始，然後在傳送[有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期間逐漸降低，因為軟彈回彈和硬彈回會從增強的MTA回報至促銷活動。
+
+事實上，當所有訊息從「促銷活動」成功中繼至「增強型MTA」時，傳送記錄檔[中的訊息都會顯示為&#x200B;**[!UICONTROL Sent]**。 ](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)除非或直到該訊息的[bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)從增強的MTA傳回至促銷活動，否則這些訊息仍維持該狀態。
+
+當硬彈回訊息從增強的MTA回報時，其狀態會從&#x200B;**[!UICONTROL Sent]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比會相應降低。
+
+當從增強的MTA回報軟反彈訊息時，仍會顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，在傳送有效期間內，將[retryed](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)軟彈跳消息：
+
+* 如果重試在有效期結束前成功，則消息狀態將保持為&#x200B;**[!UICONTROL Sent]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比將保持不變。
+
+* 否則，狀態變化為&#x200B;**[!UICONTROL Failed]**&#x200B;並相應地降低&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
+
+因此，您應等到有效期結束時，才能查看最終的&#x200B;**[!UICONTROL Success]**&#x200B;百分比，以及實際的&#x200B;**[!UICONTROL Sent]**&#x200B;和&#x200B;**[!UICONTROL Failed]**&#x200B;訊息的最終數字。
+
+<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
+
+### 電子郵件回饋服務（測試版）{#email-feedback-service}
+
+借助電子郵件反饋服務(EFS)功能，可以準確報告每封電子郵件的狀態，因為反饋是直接從增強的MTA（消息傳輸代理）中捕獲的。
+
+>[!IMPORTANT]
+>
+>電子郵件回饋服務目前提供測試版功能。
+>
+>如果您有興趣參與此beta版程式，請填妥[本表格](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u)，我們將會回覆給您。
+
+傳送開始後，當訊息從促銷活動成功中繼至增強的MTA時，**[!UICONTROL Success]**&#x200B;百分比不會變更。
+
+<!--![](assets/efs-sending.png)-->
+
+傳送記錄顯示每個目標地址的&#x200B;**[!UICONTROL Taken into account by the service provider]**&#x200B;狀態。
+
+<!--![](assets/efs-pending.png)-->
+
+當訊息實際傳送至目標描述檔，並且從增強MTA即時回報此資訊後，傳送記錄會顯示成功接收訊息之每個位址的&#x200B;**[!UICONTROL Sent]**&#x200B;狀態。 每次成功傳送時，**[!UICONTROL Success]**&#x200B;百分比會隨之增加。
+
+當硬彈回訊息從增強的MTA回報時，其記錄狀態會從&#x200B;**[!UICONTROL Taken into account by the service provider]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。
+
+當從「增強的MTA」回報軟反彈訊息時，其記錄狀態保持不變(**[!UICONTROL Taken into account by the service provider]**):僅[錯誤原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)被更新為<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不變。 然後在傳送[有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期間重試軟彈跳消息：
+
+* 如果在有效期結束之前成功重試，則消息狀態將變為&#x200B;**[!UICONTROL Sent]**，並相應地增加&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
+
+* 否則，狀態將更改為&#x200B;**[!UICONTROL Failed]**。 **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->百分比保持不變。
+
+>[!NOTE]
+>
+>如需硬彈回數和軟彈回數的詳細資訊，請參閱[本節](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+>
+>如需傳送暫時失敗後重試的詳細資訊，請參閱[本節](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+
+
+下表顯示了EFS功能引入的KPI和發送日誌狀態的更改。
+
+**使用電子郵件回饋服務**
+
+| 傳送程式的步驟 | KPI摘要 | 正在發送日誌狀態 |
+|--- |--- |--- |
+| 訊息從促銷活動成功中繼至增強的MTA | **[!UICONTROL Success]** 百分比未顯示（開始為0%） | 服務提供者已考慮到 |
+| 從增強的MTA回報硬反彈訊息 | **[!UICONTROL Success]**&#x200B;百分比無變化 | 失敗 |
+| 從增強的MTA回報軟反彈訊息 | **[!UICONTROL Success]**&#x200B;百分比無變化 | 服務提供者已考慮到 |
+| 軟反彈訊息重試成功 | **[!UICONTROL Success]** 百分比隨之增加 | 已傳送 |
+| 軟反彈訊息重試失敗 | **[!UICONTROL Success]**&#x200B;百分比無變化 | 失敗 |
+
+**不提供電子郵件意見回應服務**
+
+| 傳送程式的步驟 | KPI摘要 | 正在發送日誌狀態 |
+|--- |--- |--- |
+| 訊息從促銷活動成功中繼至增強的MTA | **[!UICONTROL Success]** 百分比以100%開始 | 已傳送 |
+| 從增強的MTA回報硬反彈訊息 | **[!UICONTROL Success]** 百分比會因此減少 | 失敗 |
+| 從增強的MTA回報軟反彈訊息 | **[!UICONTROL Success]**&#x200B;百分比無變化 | 已傳送 |
+| 軟反彈訊息重試成功 | **[!UICONTROL Success]**&#x200B;百分比無變化 | 已傳送 | **[!UICONTROL Success]** 百分比隨之增加 | 已傳送 |
+| 軟反彈訊息重試失敗 | **[!UICONTROL Success]** 百分比會因此減少 | 失敗 |
