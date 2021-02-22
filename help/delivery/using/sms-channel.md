@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Adobe Campaign可讓您執行大量個人化的SMS訊息傳送。 收件者描�
 
 1. 指定連接器和消息類型的外部帳戶。
 
-   請注意，從20.2版開始，將不建議使用下列連接器：NetSize、通用SMPP（支援二進位模式的SMPP 3.4版）、Sybase365(SAP SMS 365)、CLX Communications、Tele2、O2和iOS。 淘汰的功能仍然可用，但將不會進一步增強，也不支援。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)。
+   請注意，從20.2版開始，將不建議使用下列連接器：通用SMPP（支援二進位模式的SMPP 3.4版）、Sybase365(SAP SMS 365)、CLX通信、Tele2、O2和iOS。 淘汰的功能仍然可用，但將不會進一步增強，也不支援。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)。
 
 1. 參考此外部帳戶的傳送範本。
 
