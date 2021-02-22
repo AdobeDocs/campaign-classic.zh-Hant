@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 12%
@@ -24,8 +24,9 @@ _2020 年 12 月 23 日_
 >[!CAUTION]
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 3 月 31 日後連線至 Campaign。**
->
-> * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
+   >
+   > 
+* 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
 
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
@@ -39,7 +40,7 @@ _2020年5月6日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
-_2020年3月13日_
+_2020 年 3 月 13 日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
