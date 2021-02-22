@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -55,7 +55,7 @@ ht-degree: 100%
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-作為託管 Gold Standard 使用者，您無需採取任何操作便可透過[最新 GA Gold Standard 版本編號](../../rn/using/gold-standard.md#gs-10)，自動受益於 Gold Standard 升級。[進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
+作為託管 Gold Standard 使用者，您無需採取任何操作便可透過[最新 GA Gold Standard 版本編號](../../rn/using/gold-standard.md#gs-11)，自動受益於 Gold Standard 升級。[進一步瞭解](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
 
 >[!NOTE]
 >[在 GA 相容性矩陣中](../../rn/using/compatibility-matrix-gs.md)提供 Gold Standard 的相容性矩陣。
