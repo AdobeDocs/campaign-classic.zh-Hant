@@ -5,12 +5,11 @@ title: 為 Adobe Experience Cloud 觸發器配置 Adobe I/O
 description: 瞭解如何為Adobe Experience Cloud觸發器配置Adobe I/O
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 6%
