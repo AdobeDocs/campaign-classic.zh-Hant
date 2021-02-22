@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
+source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
 workflow-type: tm+mt
-source-wordcount: '7846'
-ht-degree: 4%
+source-wordcount: '7929'
+ht-degree: 5%
 
 ---
 
@@ -32,6 +32,7 @@ Adobe Campaign的整體設定定義在安裝目錄的&#x200B;**conf**&#x200B;目
 * [dnsConfig](#dnsconfig)
 * [執行](#exec)
 * [htmlToPdf](#htmltopdf)
+* [ims](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
 * [模組](#module)
@@ -637,6 +638,71 @@ phantomjs的範例：
 ```
 phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:{outPdf}' '-post:{postFile}' '-url:{originUrl}' -sessiontoken:{sessiontoken} -format:{format} -orientation:{orientation} -marginTop:{marginTop} -marginLeft:{marginLeft} -marginRight:{marginRight} -marginBottom:{marginBottom}
 ```
+
+## ims {#ims}
+
+以下是&#x200B;**ims**&#x200B;節點的不同參數。 這是使用[IMS](../../integrations/using/about-adobe-id.md)連線至其他服務之促銷活動的設定。
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> 參數 </th> 
+   <th> 說明 </th> 
+   <th> 類型 </th> 
+   <th> 預設值 </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> authIMSClientId<br /> </td> 
+   <td> 用戶端ID<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSClientSecret<br /> </td> 
+   <td> 密鑰（在AES中加密）<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSCode<br /> </td> 
+   <td> 授權碼（在AES中加密）<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSEndpoint<br /> </td> 
+   <td> IMS伺服器URL<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> 'https://ims-na1.adobelogin.com'<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientId<br /> </td> 
+   <td> 技術帳戶客戶端ID<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientSecret<br /> </td> 
+   <td> Technical Account Secret金鑰（在AES中加密）<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAId<br /> </td> 
+   <td> 技術帳戶ID<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAPrivateKey<br /> </td> 
+   <td> 技術帳戶私密金鑰（在AES中加密）<br /> </td> 
+   <td> 字串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ## javaScript {#javascript}
 
