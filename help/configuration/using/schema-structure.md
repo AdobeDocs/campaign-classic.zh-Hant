@@ -464,7 +464,7 @@ ht-degree: 1%
 <group label="Group2"/>
 ```
 
-## 使用XPath {#referencing-with-xpath}引用
+## 使用XPath引用 {#referencing-with-xpath}
 
 Adobe Campaign使用XPath語言來參考屬於資料結構的元素或屬性。
 
@@ -486,7 +486,6 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 >
 >* **location/@** cityis not valid;please use  **`[location/@city]`**
 >* **`[@email]`** 和 **@** emailare等同
-
 >
 
 
@@ -508,7 +507,7 @@ XPath是一種語法，可讓您在XML文檔的樹狀結構中找到節點。
 * **Year(@created)**:傳回「已建立」屬性中所含日期的年份。
 * **GetEmailDomain(@email)**:返回電子郵件地址的域。
 
-## 透過計算字串{#building-a-string-via-the-compute-string}建立字串
+## 透過計算字串建立字串{#building-a-string-via-the-compute-string}
 
 **計算字串**&#x200B;是XPath表達式，用於構建表示與模式相關聯的表中的記錄的字串。 **計** 算字串主要用於圖形介面，以顯示選定記錄的標籤。
 

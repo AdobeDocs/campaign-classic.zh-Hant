@@ -29,7 +29,6 @@ ht-degree: 3%
 >
 >* 無論如何，您都可以添加&#x200B;**-noconsole**&#x200B;參數，以刪除在啟動模組後顯示的注釋。
 >* 相反地，您可以新增引數&#x200B;**-verbose**&#x200B;以顯示詳細資訊。
-
 >
 
 
@@ -163,8 +162,6 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 一般而言，您不需手動修改配置檔案，而可使用&#x200B;**config**&#x200B;命令
 >* 若要取得參數清單，請使用&#x200B;**-?** 參數： **nlserver config -?**
 >* 對於Oracle資料庫，不能指定帳戶。 語法如下：
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
+>  nlserver config -setdblogin:Oracle:test6@dbserver
 

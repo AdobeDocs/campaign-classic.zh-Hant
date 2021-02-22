@@ -37,7 +37,6 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台。 此�
 > * [Campaign 20.1.4](../../rn/using/release--20-1.md)
 > * [Campaign 19.2.4](../../rn/using/release--19-2.md)
 > * [Campaign 19.1.8](../../rn/using/release--19-1.md)
-
 >
 
 

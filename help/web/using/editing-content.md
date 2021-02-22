@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ## 編輯表格 {#editing-forms}
 
-### 更改表單{#changing-the-data-properties-for-a-form}的資料屬性
+### 更改表單的資料屬性{#changing-the-data-properties-for-a-form}
 
 您可以將資料庫欄位與輸入區域、單選按鈕或複選框類型塊連結。
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
-## 向按鈕{#adding-an-action-to-a-button}添加操作
+## 向按鈕添加操作{#adding-an-action-to-a-button}
 
 當使用者按一下按鈕時，您可以定義相關的動作。 若要這麼做，請從下拉式清單中選取要執行的動作。
 
@@ -137,7 +137,6 @@ ht-degree: 1%
 >* 新視窗(_blank)
 >* 目前視窗(_self)
 >* 預設瀏覽器行為
-
 >
 
 
@@ -203,9 +202,8 @@ ht-degree: 1%
 >[!NOTE]
 >
 >* **刪除** 表徵圖：刪除塊及其所有內容。
-   >
-   >
-* **復** 制表徵圖：複製塊以及與塊相關的所有樣式。
+>
+>* **復** 制表徵圖：複製塊以及與塊相關的所有樣式。
 
 
 ## 管理影像和動畫{#managing-images-and-animations}
@@ -216,7 +214,7 @@ ht-degree: 1%
 >
 >您不得在HTML頁面的&#x200B;**script**&#x200B;標籤中呼叫外部檔案。 這些檔案不會匯入至Adobe Campaign伺服器。
 
-### 添加／刪除／複製{#adding---deleting---duplicating-an-image}映像
+### 添加／刪除／複製映像{#adding---deleting---duplicating-an-image}
 
 要插入影像，請選擇影像類型塊並按一下&#x200B;**影像**&#x200B;表徵圖。
 

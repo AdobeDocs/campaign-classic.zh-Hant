@@ -176,7 +176,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## 範例：如果勾選了{#example--assign-a-value-to-a-field-if-a-box-is-checked}方塊，請為欄位指定值
+## 範例：如果勾選了方塊，請為欄位指定值{#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 我們希望在表單中插入核取方塊以傳送維護要求，如下所示：
 
@@ -381,7 +381,6 @@ Captcha會插入頁面，並在視覺下方放置輸入欄位。 這兩個元素
 >* Adobe Campaign不會控制上傳的資源大小或類型：因此，強烈建議僅針對安全類型的內部網站使用上傳欄位。
 >* 如果有數台伺服器連結至該例項（負載平衡架構），您需要確定對Web表單的呼叫會送達同一伺服器。
 >* 這些實作需要Adobe Campaign諮詢團隊的協助。
-
 >
 
 

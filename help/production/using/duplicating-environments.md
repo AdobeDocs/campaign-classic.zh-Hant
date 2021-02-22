@@ -49,7 +49,7 @@ ht-degree: 1%
    >一個環境可以包含多個實例。 每個Adobe Campaign實例都需遵守授權合約。 查看您的授權合約，瞭解您可擁有的環境數。\
    >以下過程可讓您傳輸環境，而不影響您安裝的環境和實例數。
 
-### 開始{#before-you-start}之前
+### 開始之前{#before-you-start}
 
 >[!IMPORTANT]
 >
@@ -69,7 +69,6 @@ ht-degree: 1%
 >
 >* 以下過程在PostgreSQL語言中有效。 如果SQL語言不同（例如Oracle），則必須調整SQL查詢。
 >* 以下命令適用於&#x200B;**prod**&#x200B;實例和&#x200B;**dev**&#x200B;實例的PostgreSQL下的上下文。
-
 >
 
 
@@ -148,7 +147,7 @@ nlserver pdump
 * 在Windows中：開啟&#x200B;**任務管理器**&#x200B;並檢查沒有&#x200B;**nlserver.exe**&#x200B;進程。
 * 在Linux中：運行&#x200B;**ps aux | grep nlserver**&#x200B;命令，並檢查沒有&#x200B;**nlserver**&#x200B;進程。
 
-### 步驟4 —— 恢復目標環境(dev){#step-4---restore-the-databases-in-the-target-environment--dev-}中的資料庫
+### 步驟4 —— 恢復目標環境(dev)中的資料庫{#step-4---restore-the-databases-in-the-target-environment--dev-}
 
 要恢復目標環境中的源資料庫，請使用以下命令：
 

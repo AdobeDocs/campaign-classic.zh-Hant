@@ -95,7 +95,6 @@ vacuum full nmsdelivery;
 >* **真空**&#x200B;和&#x200B;**re-index**&#x200B;命令將鎖定表，該表在執行維護時會暫停某些進程。
 >* 對於超大表（通常高於5 Gb）,**真空完全**&#x200B;會變得相當低效，而且需要很長時間。 Adobe不建議將它用於&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
 >* 此維護作業可透過Adobe Campaign工作流程，使用&#x200B;**[!UICONTROL SQL]**&#x200B;活動來實施（如需詳細資訊，請參閱[本節](../../workflow/using/architecture.md)）。 請確定您排程的維護時間較短，不會與備份視窗發生衝突。
-
 >
 
 

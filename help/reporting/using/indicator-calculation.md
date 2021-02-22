@@ -891,7 +891,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 開啟次數{#breakdown-of-opens-1}的劃分
+## 開啟次數的劃分{#breakdown-of-opens-1}
 
 此報告基於&#x200B;**Deliveries**(nms:delivery)和&#x200B;**Tracking logs**(nms:trackingLogRcp)表。
 

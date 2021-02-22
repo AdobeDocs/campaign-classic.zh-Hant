@@ -135,7 +135,6 @@ ht-degree: 5%
 >
 >* [更改批准模式](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)中詳細說明了可用的驗證模式。
 >* [定義特定校對目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)中說明了校對目標的配置。
-
 >
 
 
@@ -179,7 +178,7 @@ ht-degree: 5%
 * **[!UICONTROL Keep the delivery code for the proof]**&#x200B;選項可讓您提供與傳送相關之傳送所定義之傳送代碼相同的傳送代碼。 此程式碼是在傳送精靈的第一個步驟中指定。
 * 依預設，證明的主旨是前置詞「證明#」，其中#是證明的編號。 您可以在&#x200B;**[!UICONTROL Label prefix]**&#x200B;欄位中變更此首碼。
 
-## 使用類型{#validation-process-with-typologies}的驗證流程
+## 使用類型的驗證流程{#validation-process-with-typologies}
 
 在傳送任何訊息之前，您應先分析促銷活動以核准其內容和設定。 在分析階段應用的檢查規則在&#x200B;**類型學**&#x200B;中定義。 依預設，對於電子郵件，分析涵蓋下列幾點：
 

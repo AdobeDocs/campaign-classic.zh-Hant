@@ -21,7 +21,6 @@ ht-degree: 2%
 >
 >* 在[消息中心技術工作流](../../message-center/using/technical-workflows.md)中對控制或執行實例所使用的方案進行的方案擴展需要在Adobe Campaign事務性消息傳遞模組使用的其他實例上複製。
 >* 控制實例和執行實例必須安裝在不同的電腦上。 他們無法共用相同的促銷活動例項。
-
 >
 
 

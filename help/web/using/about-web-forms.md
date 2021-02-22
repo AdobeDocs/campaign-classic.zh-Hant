@@ -25,7 +25,7 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 >
 >基於隱私權原因，我們建議對所有外部資源使用HTTPS。
 
-## 建立Web表單{#steps-for-creating-a-web-form}的步驟
+## 建立Web表單的步驟{#steps-for-creating-a-web-form}
 
 本章詳細說明在Adobe Campaign中設計&#x200B;**webForm**&#x200B;類型表單所需的步驟，以及可用的選項和設定。 Adobe Campaign可讓您將此Web表格提供給使用者，並收集和封存資料庫中的答案。
 
@@ -65,7 +65,7 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 
    此步驟在[轉換Web表單](../../web/using/translating-a-web-form.md)中有詳細說明。
 
-## 關於設計{#about-web-forms-designing}的Web表單
+## 關於設計的Web表單{#about-web-forms-designing}
 
 表單的頁面是透過特定編輯器建立的，可讓您定義和設定輸入區域（文字）、選擇欄位（清單、核取方塊等） 和靜態元素（影像、HTLM內容等）。 您可將容器分組，並依您的需求變更其版面配置（如需詳細資訊，請參閱「建立容器[」）。](../../web/using/defining-web-forms-layout.md#creating-containers)
 
@@ -80,12 +80,11 @@ Adobe Campaign整合了圖形模組，用於定義和發佈Web表單，以建立
 >
 >* 在頁面設計期間，您可以在&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中檢視最終演算。 若要檢視變更，請先儲存表單。 所有錯誤都會顯示在&#x200B;**[!UICONTROL Log]**&#x200B;標籤中。
 >* 若要確保頁面顯示和資訊儲存以適當順序進行，請在Web表單中啟用除錯模式。 要執行此操作，請轉至&#x200B;**[!UICONTROL Preview]**&#x200B;子頁籤並選中&#x200B;**[!UICONTROL Enable debug mode]**&#x200B;框：所有收集的資訊和可能的執行錯誤都會顯示在每個頁面的底部。
-
 >
 
 
 
-### 使用工具欄{#using-the-icons-in-the-toolbar}中的表徵圖
+### 使用工具欄中的表徵圖{#using-the-icons-in-the-toolbar}
 
 您也可以使用工具列中的圖示，或按一下滑鼠右鍵以插入輸入區域。
 

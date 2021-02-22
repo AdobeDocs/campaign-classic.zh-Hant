@@ -56,10 +56,10 @@ ht-degree: 1%
 
 
 >[!CAUTION]
+>
 > 將Adobe Campaign與Microsoft Dynamics連接時，您無法：
 > * 安裝可變更CRM行為並導致與Adobe Campaign相容性問題的外掛程式
 > * 選擇多個枚舉
-
 >
 
 

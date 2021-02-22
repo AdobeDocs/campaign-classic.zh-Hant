@@ -106,7 +106,7 @@ nlserver config -internalpassword
 >
 >所有追蹤伺服器的&#x200B;**internal**&#x200B;密碼必須相同。 如需詳細資訊，請參閱[本節](../../installation/using/campaign-server-configuration.md#internal-identifier)和[本節](../../platform/using/access-management.md#about-permissions)。
 
-### v7 {#new-features-in-v7}的新功能
+### v7的新功能 {#new-features-in-v7}
 
 * 沒有權限的使用者無法再連線至Adobe Campaign。 其權限必須手動添加，例如，建立名為&#x200B;**connect**&#x200B;的權限。
 
@@ -456,7 +456,8 @@ allowSQLInjection="false"
 * **[!UICONTROL Keep the current version]**:表示更新遭拒。
 
    >[!IMPORTANT]
-   如果選擇此解析模式，則可能丟失新版本中的修補程式。 因此，強烈建議不要將此選項用於或僅保留給專家運算子。
+   >
+   >如果選擇此解析模式，則可能丟失新版本中的修補程式。 因此，強烈建議不要將此選項用於或僅保留給專家運算子。
 
 如果您選擇手動解決衝突，請按如下步驟進行：
 
@@ -502,12 +503,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 在v7中，選件內容已移動。 在v6.02中，內容位於每個表示模式(**nms:emailOfferView**)中。 在v7中，內容現在位於選件架構中。 在設定升級後，內容就不會顯示在介面中。 在設定升級後，您必須重新建立選件內容，或開發指令碼，自動將內容從表示架構移至選件架構。
 
 >[!IMPORTANT]
-如果某些使用已設定選件的傳送要在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，則會提供「相容模式」。 不建議使用此模式，因為Interaction v7中的所有新功能都不會讓您受益。 這是一種過渡模式，可讓您在實際6.1移轉之前完成持續的促銷活動。 有關此模式的更多資訊，請與我們聯絡。
+>
+>如果某些使用已設定選件的傳送要在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，則會提供「相容模式」。 不建議使用此模式，因為Interaction v7中的所有新功能都不會讓您受益。 這是一種過渡模式，可讓您在實際6.1移轉之前完成持續的促銷活動。 有關此模式的更多資訊，請與我們聯絡。
 
 Adobe Campaign v7檔案夾的&#x200B;**Migration**&#x200B;檔案夾中提供移動指令碼(**interactionTo610_full_XX.js**)範例。 此檔案顯示客戶端指令碼的範例，每個選件使用單一電子郵件表示法（**[!UICONTROL htmlSource]**&#x200B;和&#x200B;**[!UICONTROL textSource]**&#x200B;欄位）。 **NmsEmailOfferView**&#x200B;表格中的內容已移至選件表格。
 
 >[!NOTE]
-使用此指令碼不允許您從「內容管理」和「轉換函式」選項中獲益。 為了從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
+>
+>使用此指令碼不允許您從「內容管理」和「轉換函式」選項中獲益。 為了從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +609,8 @@ logInfo("Done");
 1. 執行完整的測試。
 
    >[!NOTE]
-   線上類別和選件的名稱會在上線後修改。 在傳入渠道上，更新選件和類別的所有參考。
+   >
+   >線上類別和選件的名稱會在上線後修改。 在傳入渠道上，更新選件和類別的所有參考。
 
 ## 報表 {#reports}
 
@@ -634,7 +638,8 @@ logInfo("Done");
 如同報表（請參閱[報表](#reports)），如果您已新增JavaScript，則必須檢查並調整。 如果您想要從v7藍色橫幅（包含宇宙）獲益，則必須重新發佈Web應用程式。 如果您的JavaScript程式碼正在運作，您可以選取v6.x轉換引擎。 如果不是這樣，您可以在調整程式碼時使用v6.0轉譯引擎，然後使用v6.x轉譯引擎。
 
 >[!NOTE]
-選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
+>
+>選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
 
 v7中的Web應用程式連線方法已變更。 如果您在已識別的Web應用程式中遇到任何連線問題，您必須暫時啟用&#x200B;**serverConf.xml**&#x200B;檔案中的&#x200B;**allowUserPassword**&#x200B;和&#x200B;**sessionTokenOnly**&#x200B;選項。 在配置升級後，請修改下列選項值：
 
@@ -667,7 +672,8 @@ sessionTokenOnly="false"
 如果您遇到任何問題，請重新發佈Web應用程式。 如果問題仍然存在，您可以選取v6.0轉換引擎。 如果您尚未新增JavaScript，則可以選取v6.x轉換引擎，並受益於其新功能。
 
 >[!NOTE]
-選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
+>
+>選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
 
 ## Red-Hat {#red-hat}
 

@@ -48,8 +48,8 @@ Adobe Campaign可以使用兩個記錄層級：
    >[!NOTE]
    >
    >如果您使用&#x200B;**tracefilter:***，則會激活所有日誌類型：ncm, rdr, nms, jst，計時， wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
-   最有用的日誌類型有：**wdbc**（顯示所有SQL查詢）、**soap**（顯示所有SOAP調用）、**ldap**（驗證後顯示所有LDAP查詢）、**xtkquery**（顯示所有查詢的清單）。\
-   您可以個別使用（例如&#x200B;**tracefilter:soap,wdbc**）。 您也可以全部啟動，並選擇排除某些其他人：**-tracefilter:*,!soap**
+   >最有用的日誌類型有：**wdbc**（顯示所有SQL查詢）、**soap**（顯示所有SOAP調用）、**ldap**（驗證後顯示所有LDAP查詢）、**xtkquery**（顯示所有查詢的清單）。\
+   >您可以個別使用（例如&#x200B;**tracefilter:soap,wdbc**）。 您也可以全部啟動，並選擇排除某些其他人：**-tracefilter:*,!soap**
 
    檢查錯誤是否實際發生，然後以正常方式重新啟動進程：
 
@@ -58,7 +58,8 @@ Adobe Campaign可以使用兩個記錄層級：
    ```
 
 >[!IMPORTANT]
-這些命令的日誌儲存在模組的日誌檔案中。
+>
+>這些命令的日誌儲存在模組的日誌檔案中。
 
 以下是Web模組的特有示例。 其他模組如上所示。
 
@@ -81,11 +82,13 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-**Tracefile**&#x200B;模式可讓您儲存記錄檔。 在上述範例中，記錄檔儲存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;檔案中。
+>
+>**Tracefile**&#x200B;模式可讓您儲存記錄檔。 在上述範例中，記錄檔儲存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;檔案中。
 
 >[!IMPORTANT]
-在Windows中，不要添加LD_PRELOAD選項。 以下命令即可：\
-nlserver web -tomcat -verbose -tracefilter:*
+>
+>在Windows中，不要添加LD_PRELOAD選項。 以下命令即可：\
+>nlserver web -tomcat -verbose -tracefilter:*
 
 檢查問題是否再次出現，然後重新啟動模組：
 

@@ -109,7 +109,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 範例：在傳送{#example--identify-the-duplicates-before-a-delivery}之前識別重複項目
+## 範例：在傳送之前識別重複項目{#example--identify-the-duplicates-before-a-delivery}
 
 在以下示例中，重複資料消除涉及三個查詢的聯合。
 
