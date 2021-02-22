@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 1. 獲取[伺服器配置檔案](../../installation/using/the-server-configuration-file.md)的最新版本。
 
-1. 下載最新版本。 [進一步瞭解下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
+1. [下載最新版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。[進一步瞭解](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
 
 在開始構建升級之前，您還需要瞭解所有[有用的命令行](../../installation/using/command-lines.md):
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ### 升級Adobe Campaign Server應用程式
 
-1. 運行&#x200B;**Setup.exe**&#x200B;檔案。 如果您需要下載此檔案，請存取[下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
+1. 運行&#x200B;**Setup.exe**&#x200B;檔案。 如果您需要下載此檔案，請存取[下載中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。
 
 1. 選擇安裝模式：**Update**&#x200B;或&#x200B;**Repair**。
 
@@ -365,8 +365,8 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 #### 在哪裡找到代碼？
 
 1. 內建程式碼會儲存在XML檔案的datakit資料夾中。 尋找符合衝突物件的XML檔案。 範例：installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 擷取原始版本：透過[下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或其他未升級的產品安裝。
-1. 擷取新版本：透過[下載中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或客戶安裝的檔案。
+1. 擷取原始版本：透過[下載中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)或其他未升級的產品安裝。
+1. 擷取新版本：透過[下載中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)或客戶安裝的檔案。
 1. 擷取自訂版本：從促銷活動用戶端擷取物件的原始碼。
 
 ### 如何做比較？
