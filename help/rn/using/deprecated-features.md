@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 99%
+source-wordcount: '1717'
+ht-degree: 94%
 
 ---
 
@@ -45,6 +45,14 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>功能</strong></td>
    <td><strong>取代的功能</strong></td>
   </tr>
+    <tr>
+  <td>技術交付能力監控報告<br></td>
+   <td><p>從Campaign 21.1版開始，技術傳遞性監控報表已過時。</p>
+   <p>如有需要，您可以透過電子郵件每天收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報表的例項名稱和電子郵件地址。</p> 
+   <p>Adobe建議您與「傳遞性團隊」合作，以定義最佳工具來監控執行個體的傳遞效能。</p>
+  <p><em>目標刪除日期：2021年底</em></p>
+  </td>
+ </tr>
   <tr>
   <td>CRM 連接器<br></td>
    <td><p>從Campaign 20.3版開始，下列CRM連接器已不再適用於Campaign:</p>
@@ -82,7 +90,6 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <td>SMS 連接器<br></td>
   <td><p> 下列 SMS 連接器自 Campaign 20.2 發行版本開始將不再使用。<p>
    <ul>
-   <li>NetSize</li>
    <li>Generic SMPP（支援二進位模式的 SMPP 第 3.4 版本）</li>
    <li>Sybase365 (SAP SMS 365)</li>
    <li>CLX Communications</li>
