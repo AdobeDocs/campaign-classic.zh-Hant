@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
+source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
 workflow-type: tm+mt
-source-wordcount: '8432'
+source-wordcount: '8458'
 ht-degree: 0%
 
 ---
@@ -597,6 +597,12 @@ MTA會嘗試使用清單中的第一個編碼進行編碼。 如果失敗，則�
 勾選後，連線不再安全，在生產中不應啟用。
 
 它可用於除錯或測試用途。
+
+您可以為憑證驗證選擇三個不同的值：
+
+* 完整認證檢查（包括主機名稱），預設值。
+* 略過主機名稱驗證。
+* 略過認證驗證。
 
 #### 綁定TON/NPI {#bind-ton-npi}
 
