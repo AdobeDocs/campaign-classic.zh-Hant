@@ -7,11 +7,11 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 設計、規劃、執行、管理和最佳化可提供高行銷投資報酬率的跨頻道行銷活動。
 solution: Campaign Classic
 sub-product: adobe campaign classic
-type: Documentation
+type: 文件
 translation-type: tm+mt
-source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
+source-git-commit: 4030eb1cf9aa78a10daffe9ea849aa205660e359
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2351'
 ht-degree: 97%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 97%
       + [Gold Standard 發行說明](rn/using/gold-standard.md)
       + [Gold Standard 相容性矩陣](rn/using/compatibility-matrix-gs.md)
    + 舊的發行版本{#previous-releases}
+      + [第 20.3 發行版本](rn/using/release--20-3.md)
       + [第 20.2 發行版本](rn/using/release--20-2.md)
       + [第 20.1 發行版本](rn/using/release--20-1.md)
       + [第 19.2 發行版本](rn/using/release--19-2.md)
