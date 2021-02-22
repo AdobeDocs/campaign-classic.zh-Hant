@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '617'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 服務提供商考慮<br /> </td> 
-   <td> SMS服務提供商收到了發送。<br /> </td> 
+   <td> SMS服務提供商收到了發送。<br /> 若是代管或混合安裝，如果您已升級至 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>，則訊息會從Campaign成功中繼至Enhanced MTA。</td> 
   </tr> 
   <tr> 
    <td> 在行動裝置上收到<br /> </td> 
@@ -129,7 +129,7 @@ ajouter screenshot -->
 
    在此例中，請檢查流量管理（IP相關性）的設定，並使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理相關性的MTA。 有關相關性的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
 
-* 當執行的促銷活動過多時，傳送狀態仍維持「擱置中」狀態。
+* 當執行的促銷活動過多時，傳送狀態仍會維持在「擱置中」狀態。
 
    同時進行促銷活動的限制在&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;選項中定義。 預設值為 10。
 
