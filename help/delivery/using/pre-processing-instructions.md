@@ -1,0 +1,161 @@
+---
+solution: Campaign Classic
+product: campaign
+title: 追蹤URL的預處理指示
+description: 進一步瞭解使用來編寫電子郵件URL的指令碼，並仍會加以追蹤的預先處理指示。
+audience: delivery
+content-type: reference
+topic-tags: tracking-messages
+translation-type: tm+mt
+source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 0%
+
+---
+
+
+# 預處理指令{#pre-processing-instructions}
+
+&lt;%@指示不是JavaScript，此語法是Adobe Campaign專用的。
+
+它們僅適用於傳送內容的內容。 這是為電子郵件的URL編寫指令碼並仍然追蹤（除了URL參數外）的唯一方法。 在偵測要追蹤的連結之前，這些連結可視為在傳送分析期間套用的自動複製／貼上。
+
+說明有三種類型：
+
+* &quot;**include**&quot;:主要是將選項、個人化區塊、外部檔案或頁面中的部分程式碼分解
+* &quot;**value**&quot;以存取傳送、傳送變數和自訂物件中載入的傳送欄位
+* &quot;**foreach**&quot;:以循環載入為自定義對象的陣列。
+
+您可直接從傳送精靈中測試。 它們會套用在內容預覽中，當您按一下追蹤按鈕以查看URL清單時。
+
+## &lt;>{#<%@-include}
+
+下列範例是最常使用的範例：
+
+* 包括鏡像頁連結：`<%@ include view="MirrorPage" %>`
+* 鏡像頁面URL:&quot;View as a `<a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page"`
+* 立即可用的取消訂閱URL:`<%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>`
+* 其他範例：
+   * `<%@ include file='http://www.google.com' %>`
+   * `<%@ include file='file:///X:/france/service/test.html' %>`
+   * `<%@ include option='NmsServer_URL' %>`
+
+使用傳送精靈中的個人化按鈕，取得正確的語法。
+
+## &lt;>{#<%@-value}
+
+本說明提供對所有收件者都恆定的傳送參數的存取。
+
+語法:
+
+`<%@ value object="myObject" xpath="@myField" index="1" %>`
+
+其中：
+
+* 「物件」:對象的名稱(示例：傳送、提供者等)。
+* &quot;xpath&quot;:xpath。
+* &quot;index&quot;（可選）:如果&quot;object&quot;是陣列（對於其他指令碼對象），則陣列中的項目索引（開始於0）。
+
+對象可以是：
+
+* *「交付」:（請參閱下方子節中的詳細資訊和限制）。
+* 「提供者」:(nms:externalAccount)。
+* 額外的指令碼物件：如果對象通過以下方式載入到上下文：**屬性** > **個人化** > **在執行上下文中添加對象**。
+* 前循環項：請參閱下面的[Foreach](#<%@-foreach)一節。
+
+### &quot;delivery&quot;對象{#delivery-object}
+
+對於電子郵件個人化，傳送物件可透過兩種方式存取：
+
+* 在JavaScript中。 例如：`<%= delivery.myField %>`。
+
+   在JavaScript物件傳送中不支援自訂欄位。 它們可在預覽中運作，但在MTA中無法運作，因為MTA只能存取現成可用的傳送架構。
+
+* 通過`<%@ value object="delivery"`預處理。
+
+對於`<%@ value object="delivery" xpath="@myCustomField" %>`指令，通過中間來源補充發送的交貨還有其它限制。 自訂欄位@myCustomField必須新增至行銷和中部採購平台的nms:delivery架構。
+
+>[!NOTE]
+>
+>對於傳送參數／變數，請使用下列語法（使用傳送物件）:
+>
+>`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+
+### &lt;>{#<%@-value-in-javascript}
+
+要允許在指令碼部分中使用&lt;%@值，兩個特殊對象將替換為&lt;%和%>:
+
+* `<%@ value object='startScript' %>`
+* `<%@ value object='endScript' %>`
+
+例如：
+
+```
+<%@ value object='startScript' %> var iMode = <%@ value object="delivery" xpath="@deliveryMode" %> if(iMode == 1) { ... } else { ... }`
+`<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
+```
+
+## &lt;>{#<%@-foreach}
+
+此指令允許在傳送中載入的物件陣列上進行小版本，以追蹤與物件相關的個別連結。
+
+語法:
+
+`<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>`
+
+其中：
+
+* 「物件」:要開始的對象的名稱，通常是額外的指令碼對象，但它可以是交付。
+* &quot;xpath&quot;（可選）:xpath of the collection to loop on. 預設值為&quot;。&quot;，表示物件是要循環播放的陣列。
+* &quot;index&quot;（可選）:如果xpath不是&quot;&quot; 對象是陣列本身，對象的項索引（從0開始）。
+* &quot;item&quot;（可選）:前循環內具有&lt;%@值的新對象的名稱。 預設為架構中的連結名稱。
+
+範例:
+
+在傳送屬性／個人化中，載入文章陣列以及收件者與文章之間的關係表。
+
+只要使用Javascript即可顯示這些文章的連結，如下所示：
+
+```
+<%
+  for(var i=0; i<recipient.rcpArticle.length; i++ )
+  {
+    %><a href="http://nl.net?a.jsp?article=<%=recipient.rcpArticle[i].article.@id%>">article</a><%
+  }
+%>
+```
+
+透過該解決方案，所有文章的連結都會不加區分地受到追蹤。 您可以知道收件者已點按文章連結，但您無法知道哪篇文章。
+
+解決方案是：
+
+1. 將所有可能的文章預先載入傳送的額外指令碼陣列- articleList[] —— 這表示可能的文章數目必須有限。
+1. 在內容開頭編寫JavaScript函式。
+
+   ```
+   <%@ value object='startScript' %>
+   function displayArticle(articleId)
+   {
+     <%@ foreach object="articleList" item="article" %>
+       if( articleId == <% value object="article" xpath="@id" %> ) 
+       {
+         <%@ value object='endScript' %>
+           <a href="http://nl.net?a.jsp?article=<%@ value object="article" xpath="@id" %>">article</a>
+         <%@ value object='startScript' %>
+       } 
+     <%@ end @%>
+   }
+   <%@ value object='endScript' %>
+   ```
+1. 呼叫函式以顯示文章。
+
+   ```
+   <%
+   for(var i=0; i<recipient.rcpArticle.length; i++ )
+   {
+    displayArticle(recipient.rcpArticle[i].article.@id)
+   }
+   %>
+   ```
+
