@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 2%
 
 ---
 
@@ -80,3 +80,5 @@ ht-degree: 3%
    * 變更標籤以指定此人口族群不包含A或B，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉活動。
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
+
+您現在可以建立兩個傳送範本(請參閱[步驟3:建立兩個傳送範本](../../delivery/using/a-b-testing-uc-delivery-templates.md))。
