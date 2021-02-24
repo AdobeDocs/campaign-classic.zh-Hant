@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 4030eb1cf9aa78a10daffe9ea849aa205660e359
+source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 97%
+source-wordcount: '2368'
+ht-degree: 96%
 
 ---
 
@@ -199,7 +199,11 @@ ht-degree: 97%
    + 追蹤訊息{#tracking-messages}
       + [關於訊息追蹤](delivery/using/about-message-tracking.md)
       + [如何配置追蹤的連結](delivery/using/how-to-configure-tracked-links.md)
-      + [個人化 URL 追蹤](delivery/using/personalizing-url-tracking.md)
+      + 追蹤個人化連結{#tracking-personalized-links}
+         + [開始使用個人化連結追蹤](delivery/using/tracking-personalized-links.md)
+         + [偵測追蹤URL](delivery/using/detecting-tracking-urls.md)
+         + [追蹤的預處理指令](delivery/using/pre-processing-instructions.md)
+      + [設定URL追蹤選項](delivery/using/personalizing-url-tracking.md)
       + [存取追蹤記錄](delivery/using/accessing-the-tracking-logs.md)
       + [測試追蹤](delivery/using/testing-tracking.md)
       + [追蹤疑難排解](delivery/using/tracking-troubleshooting.md)
