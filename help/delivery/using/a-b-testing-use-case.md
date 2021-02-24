@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,14 @@ ht-degree: 0%
 
 執行此使用案例的主要步驟為：
 
-* [步驟1:建立定位工作流程](#step-1--creating-a-targeting-workflow)
-* [步驟2:配置人口樣本](#step-2--configuring-population-samples)
-* [步驟3:建立兩個傳送範本](#step-3--creating-two-delivery-templates)
-* [步驟4:在工作流程中設定傳送](#step-4--configuring-the-deliveries-in-the-workflow)
-* [步驟5:建立指令碼](#step-5--creating-the-script)
-* [步驟7:啟動工作流程](#step-7--starting-the-workflow)
-* [步驟8:分析結果](#step-8--analyzing-the-result)。
+* [步驟1:建立定位工作流程](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
+* [步驟2:配置人口樣本](../../delivery/using/a-b-testing-uc-population-samples.md)
+* [步驟3:建立兩個傳送範本](../../delivery/using/a-b-testing-uc-delivery-templates.md)
+* [步驟4:在工作流程中設定傳送](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
+* [步驟5:建立指令碼](../../delivery/using/a-b-testing-uc-script.md)
+* [步驟6:定義最終交付](../../delivery/using/a-b-testing-uc-final-delivery.md)
+* [步驟7:啟動工作流程](../../delivery/using/a-b-testing-uc-start-workflow.md)
+* [步驟8:分析結果](../../delivery/using/a-b-testing-uc-analyzing.md)
 
 **相關主題：**
 
