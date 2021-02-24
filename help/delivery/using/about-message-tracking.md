@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 8%
+source-wordcount: '685'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 8%
 
 **追蹤連結個人化**
 
-Campaign Classic追蹤功能可讓您在可個人化且支援追蹤的電子郵件中新增連結。 [進一步了解](https://helpx.adobe.com/campaign/kb/tracking-personnalized-links.html)
+Campaign Classic追蹤功能可讓您在可個人化且支援追蹤的電子郵件中新增連結。 [進一步了解](../../delivery/using/tracking-personalized-links.md)
 
 **追蹤記錄檔**
 
