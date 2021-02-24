@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 個人化 URL 追蹤
-description: 個人化 URL 追蹤
+title: 設定URL追蹤選項
+description: 設定URL追蹤選項
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 019c982dcf040fb2dc2a1c82d4a2ff5a964ec5fa
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 10%
+source-wordcount: '164'
+ht-degree: 4%
 
 ---
 
 
-# 個人化 URL 追蹤{#personalizing-url-tracking}
+# 設定URL追蹤選項{#personalizing-url-tracking}
 
 進階訊息追蹤設定可透過傳送精靈工具列的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;圖示存取。
 
