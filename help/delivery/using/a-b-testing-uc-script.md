@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,5 @@ ht-degree: 0%
 * 收到訊息後瀏覽的頁數：`[indicators/@totalWebPage]`,
 * 最低取消訂閱率：`[indicators/@optOutRatio]`,
 * 事務處理金額：`[indicators/@amount]`。
+
+您現在可以定義最終傳送(請參閱[步驟6:定義最終交貨](../../delivery/using/a-b-testing-uc-final-delivery.md))。
