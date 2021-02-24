@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -27,3 +27,5 @@ ht-degree: 0%
    ![](assets/ab_test_final_delivery.png)
 
 準備在轉場中指定的傳送（透過&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活動定義）後，您就可以核准傳送，並開始傳送，如下一步所述。
+
+您現在可以啟動工作流程(請參閱[步驟7:啟動工作流](../../delivery/using/a-b-testing-uc-start-workflow.md))。
