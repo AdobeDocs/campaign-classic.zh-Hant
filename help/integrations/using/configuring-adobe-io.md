@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: 333d2221d4f86fe18232473385653ed8409adf54
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '526'
 ht-degree: 6%
 
 ---
@@ -96,9 +96,19 @@ ht-degree: 6%
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
->[!NOTE]
->
->您應將私密金鑰編碼為base64 UTF-8格式。 請記得在編碼索引鍵之前，先從索引鍵中移除新行，私密金鑰除外。 私密金鑰必須與用來建立整合的金鑰相同。 若要測試私密金鑰的base64編碼，您可使用[此網站](https://www.base64encode.org/)。
+私密金鑰應編碼為base64 UTF-8格式。 若要這麼做：
+
+1. 使用在[步驟1中生成的私鑰：建立／更新Adobe I/O專案區段](#creating-adobe-io-project)。 私密金鑰必須與用來建立整合的私密金鑰相同。
+
+1. 使用此[此網站](https://www.base64encode.org/)，將您的私密金鑰複製至對應的欄位。
+
+   >[!NOTE]
+   >
+   >複製／貼上私密金鑰時，有時可自動新增額外的行。 請記得在編碼私密金鑰之前先移除它。
+
+1. 按一下 **[!UICONTROL Encode]**。
+
+1. 使用您新產生的以base64 UTF-8格式編碼的私密金鑰來執行上述命令。
 
 ## 步驟3:更新流水線標籤{#update-pipelined-tag}
 
