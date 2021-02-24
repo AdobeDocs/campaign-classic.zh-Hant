@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 對象可以是：
 
-* *「交付」:（請參閱下方子節中的詳細資訊和限制）。
+* 「傳送」:（請參閱下方子節中的詳細資訊和限制）。
 * 「提供者」:(nms:externalAccount)。
 * 額外的指令碼物件：如果對象通過以下方式載入到上下文：**屬性** > **個人化** > **在執行上下文中添加對象**。
 * 前循環項：請參閱下面的[Foreach](#<%@-foreach)一節。
