@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '478'
 ht-degree: 11%
 
 ---
@@ -19,11 +19,14 @@ ht-degree: 11%
 
 對於每次傳遞，您都可以追蹤訊息是否收到，以及郵件內容中的連結是否被啟用。這樣，您可以在目標傳遞操作實施後，追蹤收件者的行為。
 
+追蹤會套用至訊息，但網路追蹤可讓您監控收件者瀏覽網站（瀏覽的頁面、購買）的方式。 網頁追蹤的設定顯示在[本節](../../configuration/using/about-web-tracking.md)中。
+
 >[!NOTE]
 >
->追蹤會套用至訊息，但網路追蹤可讓您監控收件者瀏覽網站（瀏覽的頁面、購買）的方式。
->
->網頁追蹤的設定顯示在[本節](../../configuration/using/about-web-tracking.md)中。
+>包含個人化的電子郵件內容中的連結需要追蹤特定的語法。 有關如何在電子郵件中新增可個人化且支援追蹤的連結，請參閱[本節](../../delivery/using/tracking-personalized-links.md)。
+
+
+
 
 預設會啟用訊息追蹤。 若要個人化URL的追蹤方式，請遵循下列步驟：
 
