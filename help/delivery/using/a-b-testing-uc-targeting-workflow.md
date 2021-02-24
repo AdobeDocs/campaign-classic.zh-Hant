@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 9%
+source-wordcount: '136'
+ht-degree: 8%
 
 ---
 
@@ -34,3 +34,5 @@ ht-degree: 9%
 1. 使用滑鼠將活動拖放到工作流圖中，包括&#x200B;**[!UICONTROL Query]**（**[!UICONTROL Target]**&#x200B;標籤）、**[!UICONTROL Split]**（**[!UICONTROL Target]**&#x200B;標籤）、兩個&#x200B;**[!UICONTROL Email deliveries]**（**[!UICONTROL Deliveries]**&#x200B;標籤）、**[!UICONTROL Wait]**&#x200B;活動（**[!UICONTROL Flow Control]**&#x200B;標籤）、**[!UICONTROL JavaScript code]**&#x200B;活動（**[!UICONTROL Actions]**&#x200B;標籤）和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動（**[!UICONTROL Actions]**&#x200B;標籤）。
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
+
+您現在可以設定人口樣本(請參閱[步驟2:配置人口樣本](../../delivery/using/a-b-testing-uc-population-samples.md))。
