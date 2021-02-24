@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 8%
 
 ---
 
@@ -31,3 +31,5 @@ ht-degree: 10%
 1. 重複此程式以建立傳送B的範本。
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
+
+您現在可以在工作流程中設定傳送(請參閱[步驟4:在工作流程中設定傳送。](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
