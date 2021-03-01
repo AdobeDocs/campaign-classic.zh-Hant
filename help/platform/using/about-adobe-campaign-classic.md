@@ -89,8 +89,8 @@ Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行�
 
 ## 教學課程影片{#video}
 
-此影片提供Campaign Classic的主要功能。
+本影片介紹Campaign Classic的主要功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
