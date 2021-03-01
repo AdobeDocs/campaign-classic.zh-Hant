@@ -17,13 +17,13 @@ ht-degree: 8%
 
 # 設計行銷活動{#designing-marketing-campaigns}
 
-Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳。 Adobe Campaign的運作方式類似於行銷策略的統一訂單與執行中心。 如需詳細資訊，請參閱[存取促銷活動](../../campaign/using/accessing-campaigns.md)和[設定行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
+Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳。 Adobe Campaign就像一個統一的訂單和執行中心，負責行銷策略。 如需詳細資訊，請參閱[存取促銷活動](../../campaign/using/accessing-campaigns.md)和[設定行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 此外，**行銷資源管理(MRM)**&#x200B;模組可讓您透過完整管理和即時追蹤相關任務、預算和行銷資源，以協作模式控制行銷動作。 「行銷資源管理」可讓您最佳化並規範內部和外部程式、資源與行銷宣傳以及第三方關係（代理商、印表機等）的管理。 如需詳細資訊，請參閱[本章節](../../campaign/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
->如需Adobe Campaign核心功能的詳細資訊，請參閱[快速入門](../../platform/using/about-adobe-campaign-classic.md)一節。\
+>有關Adobe Campaign核心功能的詳細資訊，請參閱[入門指南](../../platform/using/about-adobe-campaign-classic.md)一節。\
 >[本節](../../delivery/using/steps-about-delivery-creation-steps.md)將詳細說明與各種通道上的人口目標鎖定、消息個人化和消息傳遞相關的功能。
 
 ![](assets/do-not-localize/how-to-video.png) [探索視訊中的行銷宣傳關鍵概念](#video)
@@ -70,4 +70,4 @@ Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
