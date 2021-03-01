@@ -56,7 +56,7 @@ _2021年2月22日_
 
 * 使用壓縮功能已改善大型追蹤記錄檔的傳輸速度。
 * Workflow Heatmap已經過改良，可避免在執行包含多個活動的工作流程時逾時。 (NEO-27423).
-* 修正即使選件的結束日期已過，仍可能顯示選件的問題。 Campaign Classic現在會考慮結束日期的整個時間戳記，而非僅考慮日期。 (NEO-27590)
+* 修正即使選件的結束日期已過，仍可能顯示選件的問題。 Campaign Classic現在會考量結束日期的整個時間戳記，而非僅考慮日期。 (NEO-27590)
 * Google+連結已從&#x200B;**社交網路共用連結**&#x200B;個人化區塊中移除。
 * 修正上一版中實施錯誤修正後的問題。 使用SSL/TLS連線時，在主機名稱上新增檢查，導致SMS傳送失敗。 已針對大多數通訊協定停用主機名稱驗證，例如使用proxy的POP3、SMS和HTTP，而SMS外部帳戶的憑證檢查已改進為使用三個值(NEO-29581)。 [進一步了解](../../delivery/using/sms-protocol.md#skip-tls)
 
@@ -95,10 +95,10 @@ There is no index on the sourceId field of the 'NmsTrackingLogRcp' table require
 XTK-170024 The temporary 'temp:deliveryEmail-all' schema is not defined in the current context
 ```
 
-* 修正在行銷實例與Adobe Campaign Standard實例或Campaign Classic中間採購實例之間設定外部帳戶，並使用「DisableFOH2=1」選項時發生的錯誤。 在外部帳戶中使用&quot;DisableFOH2=1&quot;選項時，連接未正確關閉，並會累積導致以下錯誤(NEO-26258):
+* 修正在行銷實例與Adobe Campaign Standard實例或Campaign Classic中部採購實例之間設定外部帳戶，並使用「DisableFOH2=1」選項時發生的錯誤。 在外部帳戶中使用&quot;DisableFOH2=1&quot;選項時，連接未正確關閉，並會累積導致以下錯誤(NEO-26258):
 
 ```
 The maximum number of connections has been reached (50) by connections pool 'nms:extAccount:acsDefaultRelayAccount XXX'. The server is overloaded. Please try again later.
 ```
 
-* 修正伺服器與提供者之間發生連線問題時的SMS錯誤。 然後，MTA子項會自動停用連線。 只要尚未啟動新子系，Adobe Campaign Classic就不會嘗試連線至此失敗的連線。
+* 修正伺服器與提供者之間發生連線問題時的SMS錯誤。 然後，MTA子項會自動停用連線。 Adobe Campaign Classic不會嘗試連接到此失敗的連接，只要尚未啟動新子系。
