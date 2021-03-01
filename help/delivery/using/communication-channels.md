@@ -17,13 +17,13 @@ ht-degree: 12%
 
 # 通訊通道{#communication-channels}
 
-有了Adobe Campaign，您可以傳送跨通道的促銷活動，包括電子郵件、簡訊、LINE訊息、推播通知和直接郵件，並使用各種專用的[報表](../../reporting/using/delivery-reports.md)來評估其成效。 這些訊息是透過傳送進行設計和傳送，而且可針對每位收件者個人化。
+有了Adobe Campaign，您可以傳送跨通道宣傳，包括電子郵件、簡訊、LINE訊息、推播通知和直接郵件，並使用各種專用的[報告](../../reporting/using/delivery-reports.md)來評估宣傳的成效。 這些訊息是透過傳送進行設計和傳送，而且可針對每位收件者個人化。
 
-核心功能包括定位、定義和個人化訊息、通訊執行及相關的營運報告。 主要功能存取點是傳送精靈。 此存取點可提供Adobe Campaign涵蓋的多項功能。
+核心功能包括定位、定義和個人化訊息、通訊執行及相關的營運報告。 主要功能存取點是傳送精靈。 此接入點可提供Adobe Campaign涵蓋的多種功能。
 
 >[!NOTE]
 >
->Adobe Campaign提供一組工具，可監控您的傳遞能力並最佳化電子郵件傳送。 如需詳細資訊，請參閱[Deliverability getting started](../../delivery/using/deliverability-key-points.md)和[Deliverability management](../../delivery/using/about-deliverability.md)。
+>Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 如需詳細資訊，請參閱[Deliverability getting started](../../delivery/using/deliverability-key-points.md)和[Deliverability management](../../delivery/using/about-deliverability.md)。
 
 傳送傳送可透過準備傳送和／或在工作流程中傳送來自動化。 如需工作流程中傳送類型活動的詳細資訊，請參閱[本節](../../workflow/using/about-action-activities.md)。
 
@@ -51,7 +51,7 @@ Adobe Campaign提供下列傳送渠道：
 
 ## 電子郵件傳送 {#email-deliveries}
 
-[電子郵件渠道](../../delivery/using/about-email-channel.md)是Adobe Campaign的核心渠道之一，可讓您排程個人化電子郵件並傳送至特定目標。
+[電子郵件渠道](../../delivery/using/about-email-channel.md)是Adobe Campaign的核心渠道之一，可讓您排程個人化電子郵件，並傳送給特定目標。
 
 您可以傳送不同類型的電子郵件：
 
@@ -65,7 +65,7 @@ Adobe Campaign提供下列傳送渠道：
 
 ## 行動傳送{#mobile-deliveries}
 
-Adobe Campaign可讓您在行動裝置上傳送[SMS](../../delivery/using/sms-channel.md)和[LINE](../../delivery/using/line-channel.md)訊息。
+Adobe Campaign允許您在手機上發送[SMS](../../delivery/using/sms-channel.md)和[LINE](../../delivery/using/line-channel.md)訊息。
 
 對於SMS訊息，您只能以文字格式建立、修改及個人化訊息。 您也可以在傳送SMS訊息之前先預覽。
 
@@ -96,9 +96,9 @@ Adobe Campaign提供電話傳送範本，用於建立外部傳送。 使用此�
 
 此外，「其他」類型的交付使用不執行流程的特定技術模板：這可讓他們管理在Adobe Campaign平台以外執行的行銷動作。
 
-此通道沒有特定的機制。 它是一般渠道，具有其自己的外部帳戶路由選項、傳送範本類型和促銷活動工作流程活動，就像Adobe Campaign中其他可用的通訊渠道一樣。
+此通道沒有特定的機制。 它是一般渠道，擁有其自己的外部帳戶路由選項、傳送範本類型和促銷活動工作流程活動，就像Adobe Campaign市的其他通訊渠道一樣。
 
-此渠道僅用於描述性用途，例如，定義要追蹤在Adobe Campaign以外工具中執行之促銷活動目標的傳送。
+此渠道僅用於描述性用途，例如定義傳送，以便追蹤在非Adobe Campaign工具中執行之促銷活動的目標。
 
 ## 傳遞類型{#types-of-deliveries}
 
