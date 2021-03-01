@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 關於Adobe Campaign報表工具
+title: 關於Adobe Campaign報告工具
 description: 在內建或自訂的報表中分析促銷活動的成功。
 audience: reporting
 content-type: reference
@@ -17,15 +17,15 @@ ht-degree: 16%
 
 # 開始使用報告功能 {#about-adobe-campaign-reporting-tools}
 
-除了[內建報表](../../reporting/using/about-campaign-built-in-reports.md)外，Adobe Campaign還可讓您在各種內容中產生報表，以符合不同的需求。 本檔案詳細說明了使用原則和實施模式。
+除了[內建報表](../../reporting/using/about-campaign-built-in-reports.md)外，Adobe Campaign還可讓您在不同的上下文中產生報表，以符合不同的需求。 本檔案詳細說明了使用原則和實施模式。
 
-Adobe Campaign不是專門的報告工具：在Adobe Campaign中建立的報表主要可讓您檢視匯總資料。 Adobe Campaign報表專門用於分析和表示資料，但不適用於資料庫匯出。
+Adobe Campaign不是專門的報告工具：在Adobe Campaign建立的報表主要可讓您檢視匯總資料。 Adobe Campaign的報告專門用於分析和表示資料，但並非用於資料庫出口。
 
 若要從Adobe Campaign資料庫匯出資料，您必須建立工作流程並使用資料匯出活動。 如需詳細資訊，請參閱[本章節](../../workflow/using/about-action-activities.md)。
 
-Adobe Campaign提供數種報表工具：
+Adobe Campaign提供數種報告工具：
 
-1. **內建報表**:Adobe Campaign提供一組有關傳送、促銷活動、平台活動、選用功能等的報表。這些報告可透過其相關的各種功能取得。 它們可以適應您的特定需求。
+1. **內建報表**:Adobe Campaign提供一套有關交付、宣傳、平台活動、可選功能等的報告。這些報告可透過其相關的各種功能取得。 它們可以適應您的特定需求。
 
    如需詳細資訊，請參閱[本章節](../../reporting/using/about-campaign-built-in-reports.md)。
 
