@@ -129,7 +129,7 @@ SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [進一步了解](../..
 
 ## Campaign Classic技術原則{#campaign-classic-technical-principles}
 
-Campaign Classic說明檔案中提供技術資源。 建議您在對實例執行任何技術操作之前先熟悉這些主題。
+技術資源可在Campaign Classic檔案中取得。 建議您在對實例執行任何技術操作之前先熟悉這些主題。
 
 **代管模型與功能**
 
