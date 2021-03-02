@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '261'
+ht-degree: 3%
 
 ---
 
@@ -59,3 +59,12 @@ ht-degree: 4%
 * **[!UICONTROL Next calls]**:編輯器的第二個區域包含在下次調用期間執行的指令碼。
 * **[!UICONTROL Transitions]**:您可以定義數個活動輸出轉場。
 * **[!UICONTROL Schedule]**:此標 **[!UICONTROL Schedule]** 簽可讓您排程何時觸發活動。
+
+進階JavaScript是一項永續性工作，如果尚未標示為完成，則會定期回調它。 要終止任務並防止將來召回，您必須使用&#x200B;**[!UICONTROL Next calls]**&#x200B;部分中的&#x200B;**task.setCompleted()**&#x200B;方法：
+
+```
+task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
+task.setCompleted();
+
+return 0;
+```
