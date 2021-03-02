@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4092'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 95%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
+## 2021 年 3月 {#march-2021}
+
+在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活動部分中已添加了有關如何使用task.setCompleted()方法終止任務和防止將來召回的資訊。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+
 ## 2021 年 2 月 {#release-21.1}
 
 **21.1版隨附的檔案更新**
@@ -31,13 +35,13 @@ ht-degree: 95%
 
 在交貨狀態清單中，**服務提供商**&#x200B;考慮的說明已更新：此狀態現在也用於使用[電子郵件回饋服務](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)傳送的電子郵件傳送。 [顯示全文](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
-新登入畫面上可用來連線至Adobe Campaign的鍵盤快速鍵現在已記載。 [顯示全文](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+新登錄螢幕上可用來連接到Adobe Campaign的鍵盤快捷鍵現在有文檔記錄。 [顯示全文](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
 **其他更新**
 
 新增了一節，其中包含如何使用工作流程執行A/B測試的詳細資訊。 [顯示全文](../../delivery/using/get-started-a-b-testing.md)
 
-「Adobe Campaign增強型MTA」區段已移至[此處](../../delivery/using/sending-with-enhanced-mta.md)。
+「Adobe Campaign增強型MTA」部分已將[移到此處](../../delivery/using/sending-with-enhanced-mta.md)。
 
 已新增頁面，提供[!DNL Campaign Classic]中追蹤功能的概述。 [顯示全文](../../delivery/using/about-message-tracking.md)
 
