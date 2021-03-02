@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2372'
 ht-degree: 96%
 
 ---
@@ -125,8 +125,8 @@ ht-degree: 96%
       + [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
       + [定義電子郵件內容](delivery/using/defining-the-email-content.md)
       + [定義互動式內容](delivery/using/defining-interactive-content.md)
-      + 傳送電子郵件{#sending-an-email}
-         + [確認電子郵件傳送](delivery/using/sending-messages.md)
+      + 傳送電子郵件傳送{#sending-an-email}
+         + [傳送電子郵件的主要步驟](delivery/using/sending-messages.md)
          + [電子郵件參數](delivery/using/email-parameters.md)
          + [使用增強的MTA傳送](delivery/using/sending-with-enhanced-mta.md)
          + [在日本手機上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
