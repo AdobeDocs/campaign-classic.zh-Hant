@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 使用Adobe Campaign Classic傳送電子郵件
+title: 向Adobe Campaign Classic發送電子郵件
 description: 瞭解如何確認電子郵件的傳送，並瞭解傳送電子郵件的特定性。
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 
-# 確認電子郵件傳送{#confirming-email-delivery}
+# 傳送電子郵件{#confirming-email-delivery}的主要步驟
 
-在建立並設定您的電子郵件後，您就可將其傳送至主要目標。 本節介紹確認傳送電子郵件的主要步驟。
+在建立並設定您的電子郵件後，您就可將其傳送至主要目標。 本節介紹檢查並確認傳送電子郵件的主要步驟。
 
 1. 請確定您已設定所有電子郵件傳送專用的設定。 如需詳細資訊，請參閱[電子郵件參數](../../delivery/using/email-parameters.md)。
 1. 當電子郵件準備就緒後，在將其傳送至主要目標之前，建議您透過傳送校樣來偵測任何潛在錯誤。 有關詳細資訊，請參閱[發送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
