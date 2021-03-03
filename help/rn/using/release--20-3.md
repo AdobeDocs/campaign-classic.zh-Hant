@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -19,20 +19,20 @@ ht-degree: 99%
 
 ## ![](assets/do-not-localize/blue_2.png) 版本 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
 
-_2021 年 1 月 11 日_
+_2021年1月11日_
 
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正了與 broadlog 產生程序相關的迴歸問題，而此問題可能導致 MTA 程序當機。
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
 
-_2020年10月27日_
+_2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 3 月 31 日後連線至 Campaign。**
 > * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您透過 Auth 驗證使用 Experience Cloud 觸發器整合，您必須依照本頁[所述移至 Adobe I/O。](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
+> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
 
 
 **新增功能？**
