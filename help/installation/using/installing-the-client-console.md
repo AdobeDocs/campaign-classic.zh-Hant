@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '494'
 ht-degree: 8%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 8%
 >
 >促銷活動用戶端主控台和促銷活動應用程式伺服器必須在相同的產品版本上執行。 Adobe也建議使用相同的產品組建版本。
 
-![](assets/do-not-localize/how-to-video.png) 瞭解如何在視訊中安裝和設定Adobe Campaign用 [戶端](#video)
+![](assets/do-not-localize/how-to-video.png) 瞭解如何在視訊中安裝和設定Adobe Campaign客 [戶端](#video)
 
 ## 下載控制台{#download-the-client-console}
 
-若要下載並安裝Adobe Campaign用戶端主控台，請遵循下列步驟：
+要下載並安裝Adobe Campaign客戶端控制台，請遵循以下步驟：
 
 1. 開啟網頁瀏覽器並從下列位址下載主控台：
 
@@ -43,31 +43,32 @@ ht-degree: 8%
 
 1. 按一下安裝頁上的&#x200B;**[!UICONTROL Download]**&#x200B;連結。
 1. 下載並儲存用戶端設定檔案。
-1. 在Windows上的電腦上執行下載的檔案：安裝即會啟動。 根據您的Adobe Campaign版本，用戶端主控台的預設安裝路徑為&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**，其中&#39;X&#39;為&#39;6&#39;或&#39;7&#39;。
+1. 在Windows上的電腦上執行下載的檔案：安裝即會啟動。 根據您的Adobe Campaign版本，客戶機控制台的預設安裝路徑是&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign ClassicvX客戶機**，其中&#39;X&#39;是&#39;6&#39;或&#39;7&#39;。
 
 >[!NOTE]
 >
->在Windows上，您可以直接從Windows伺服器上的`[INSTALL]/bin`目錄啟動&#x200B;**nlclient.exe**&#x200B;檔案，其中`[INSTALL]`是Adobe Campaign安裝資料夾的存取路徑。
+>您可以複製促銷活動行銷伺服器特定資料夾上的主控台可執行檔案，將更新建議給所有的促銷活動用戶端主控台使用者。 [進一步瞭解](../../installation/using/client-console-availability-for-windows.md)。
+
 
 ## 建立連接{#create-the-connection}
 
 安裝客戶機控制台後，請按照以下步驟建立與應用程式伺服器的連接：
 
-1. 從&#x200B;**Adobe Campaign**&#x200B;程式群組的Windows **[!UICONTROL Start]**&#x200B;功能表啟動主控台。
+1. 從&#x200B;**Adobe Campaign**&#x200B;程式組中的Windows **[!UICONTROL Start]**&#x200B;菜單啟動控制台。
 
 1. 按一下憑據欄位右上角的連結以訪問連接配置窗口。
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. 按一下&#x200B;**[!UICONTROL Add > Connection]**，然後輸入Adobe Campaign應用程式伺服器的標籤和URL。
+1. 按一下&#x200B;**[!UICONTROL Add > Connection]**&#x200B;並輸入Adobe Campaign應用程式伺服器的標籤和URL。
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. 指定透過URL連線至Adobe Campaign應用程式伺服器。 使用DNS或電腦的別名或您的IP地址。
+1. 指定透過URL連線至您的Adobe Campaign應用程式伺服器。 使用DNS或電腦的別名或您的IP地址。
 
    例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)類型URL。
 
-1. 如果您的組織已設定Adobe IMS，請勾選&#x200B;**[!UICONTROL Connect with an Adobe ID]**&#x200B;選項
+1. 如果已為您的組織設定AdobeIMS，請勾選選項&#x200B;**[!UICONTROL Connect with an Adobe ID]**
 
 1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以儲存您的設定。
 
@@ -77,11 +78,11 @@ ht-degree: 8%
 >
 >**[!UICONTROL Add]**&#x200B;按鈕可讓您建立&#x200B;**[!UICONTROL folders]**&#x200B;來組織所有連線。 只需將每個連線拖放到資料夾中即可。
 
-## 登入Adobe Campaign
+## 登錄Adobe Campaign
 
 要登錄到現有實例，請執行以下步驟：
 
-1. 從&#x200B;**Adobe Campaign**&#x200B;程式群組的Windows **[!UICONTROL Start]**&#x200B;功能表啟動主控台。
+1. 從&#x200B;**Adobe Campaign**&#x200B;程式組中的Windows **[!UICONTROL Start]**&#x200B;菜單啟動控制台。
 
 1. 按一下憑據欄位右上角的連結以訪問連接配置窗口。
 
@@ -98,8 +99,8 @@ ht-degree: 8%
 
 ## 教學課程影片
 
-此影片說明如何安裝和設定Adobe Campaign Client。
+本視頻介紹如何安裝和設定Adobe Campaign客戶端。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
