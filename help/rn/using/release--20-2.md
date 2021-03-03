@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 94%
@@ -21,20 +21,20 @@ ht-degree: 94%
 
 ## ![](assets/do-not-localize/green_2.png) 版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
-_2020 年 12 月 22 日_
+_2020年12月22日_
 
 >[!CAUTION]
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 3 月 31 日後連線至 Campaign。**
 > * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您透過 Auth 驗證使用 Experience Cloud 觸發器整合，您必須依照本頁[所述移至 Adobe I/O。](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
+> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
 
 
 
 **功能改善**
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
-* 觸發整合驗證原本以oAUTH驗證設定為基礎，以存取管道的觸發器已變更並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
+* 觸發器整合驗證最初基於oAUTH驗證設定以訪問管線，現已更改並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
 * [在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，](https://developer.apple.com/news/?id=c88acm2b)使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳送並導致效能問題的問題。 (NEO-28609)
@@ -48,7 +48,7 @@ _2020 年 12 月 22 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
-_2020年9月11日_
+_2020 年 9 月 11 日_
 
 * 修正了由於傳送組件上單一錯誤功能導致記憶體過載，導致傳送準備遭到封鎖的迴歸。(NEO-27346)
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
@@ -61,7 +61,7 @@ _2020年9月11日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
-_2020 年 22 月 7 日_
+_2020 年 7 月 22 日_
 
 * 修正了在停用簽名功能時，無法進行追蹤的問題。(NEO-26411)
 * 修正了造成個人化網域中未簽署的連結在允許時遭到封鎖的問題。(NEO-25210)
