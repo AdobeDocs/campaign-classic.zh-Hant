@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '3127'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -19,20 +19,20 @@ ht-degree: 23%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
 
-_2020 年 12 月 16 日_
+_2020年12月16日_
 
 >[!CAUTION]
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 3 月 31 日後連線至 Campaign。**
 > * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您透過 Auth 驗證使用 Experience Cloud 觸發器整合，您必須依照本頁[所述移至 Adobe I/O。](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
+> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
 
 
 
 **功能改善**
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
-* 觸發整合驗證原本以oAUTH驗證設定為基礎，以存取管道的觸發器已變更並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
+* 觸發器整合驗證最初基於oAUTH驗證設定以訪問管線，現已更改並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
 * 在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳送並導致效能問題的問題。
@@ -41,7 +41,7 @@ _2020 年 12 月 16 日_
 * 修正執行&#x200B;**擴充**&#x200B;活動時，工作流程可能失敗的問題。(NEO-17338)
 * 修正了從外部資料庫擷取記錄並將記錄插入 Campaign 資料庫時，所發生的工作流程問題。(NEO-26359)
 * 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。
-* 修正在升級至build 9032後，**NoNull**&#x200B;函式無法在Oracle資料庫中工作的問題。 (NEO-26488)
+* 修正在升級至build 9032後，**NoNull**&#x200B;函式無法在Oracle資料庫中運作的問題。 (NEO-26488)
 * 修正了當編輯行銷活動範本說明，在複製貼上像是日文字元等符號時，無法顯示&#x200B;**「儲存」**&#x200B;按鈕的問題。(NEO-27071)
 * 修正了無法儲存行銷活動說明或行銷活動範本的問題，其發生於在按一下&#x200B;**「儲存」**&#x200B;按鈕前按了視窗外部。(NEO-27449)
 * 修正了在代理配置層級，導致您無法在更新到最新 Windows 10 後登入 Adobe Campaign 的問題。(NEO-27813)
@@ -55,7 +55,7 @@ _2020 年 12 月 16 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
-_2020年9月15日_
+_2020 年 9 月 15 日_
 
 **功能改善**
 
@@ -101,7 +101,7 @@ _2019年10月3日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-_2019 年 8 月 13 日_
+_2019年8月13日_
 
 **功能改善**
 
@@ -111,7 +111,7 @@ _2019 年 8 月 13 日_
 * 已修正透過命令列安裝midEmitter套件的問題。
 * 已新增驗證選項，以支援使用Microsoft Dynamics的AC連接器中的OAuth認證。 (NEO-11982)
 * 修正UUID（唯一通用識別碼）管理導致Hive FDA查詢和資料載入工作流程活動失敗的問題。
-* 修正Oracle上的回歸，導致部分函式在發佈後被視為無效。 (NEO-12759)
+* 修正Oracle上的回歸，造成部分函式在置入程式後被視為無效。 (NEO-12759)
 * 修正在「排程器」工作流程活動中設定時間時，會選取錯誤時區的回歸。
 
 ## ![](assets/do-not-localize/green_2.png) 版本 19.1.4 - Build 9032{#release-19-1-4-build-9032}
@@ -153,24 +153,24 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>為了提高管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增允許清單的IP位址，以及為每個例項安裝SSH金鑰。 請注意，控制面板僅適用於AWS托管的客戶（<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天透過Experience Cloud登入</a>）。</p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">詳細文件</a>及<a href="https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/control-panel/control-panel-overview.html">作法影片</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
+   <td> <p>為了提高管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增允許清單的IP位址，以及為每個例項安裝SSH金鑰。 請注意，控制面板僅適用於當天(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通過Experience Cloud登錄</a>)在AWS上托管的客戶。</p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">詳細文件</a>及<a href="https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/control-panel/control-panel-overview.html">作法影片</a>。 </p><p>注意：升級至最新的促銷活動組建版本並不需要存取控制面板。</p> </td> 
   </tr> 
     <tr> 
    <td> 稽核軌跡<br /> </td> 
-   <td> <p>身為管理員，透過監控和管理在Adobe Campaign Classic例項中所做的變更，提高生產力。 審計線索將記錄對源方案、工作流和選項執行的操作。 您可以快速查看元素是否已建立、修改或刪除。</p><p>如需詳細資訊，請參閱<a href="../../production/using/audit-trail.md">詳細說明檔案</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to影片</a>。</p></td> 
+   <td> <p>身為管理員，透過監控和管理在Adobe Campaign Classic執行個體中所做的變更來提高生產力。 審計線索將記錄對源方案、工作流和選項執行的操作。 您可以快速查看元素是否已建立、修改或刪除。</p><p>如需詳細資訊，請參閱<a href="../../production/using/audit-trail.md">詳細說明檔案</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to影片</a>。</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, Rublizent &amp; Scalability<br /> </td> 
-   <td> Campaign Classic已新增一系列改良功能。 Guardrail、魯棒性和可擴充性改進列於下方。<br /> </td> 
+   <td> Campaign Classic已經增加了一系列的改進。 Guardrail、魯棒性和可擴充性改進列於下方。<br /> </td> 
   </tr> 
   <tr> 
    <td> 相容性清單更新<br /> </td> 
-   <td> 有了這個新版本，Adobe Campaign現在支援下列資料庫系統。 請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html">相容性表</a>。<br /> 
+   <td> 使用此新版本，Adobe Campaign現在支援以下資料庫系統。 請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html">相容性表</a>。<br /> 
     <ul> 
-     <li> <p>Oracle 18c</p> </li> 
+     <li> <p>Oracle18c</p> </li> 
      <li> <p>MySQL 5.7(FDA)</p> </li> 
      <li> <p>SQL Server 2017</p> </li> 
-     <li> <p>Teradata 16(FDA)</p> </li> 
+     <li> <p>Teradata16(FDA)</p> </li> 
      <li> <p>PostgreSQL 11</p> </li> 
     </ul> </td> 
   </tr> 
@@ -213,7 +213,7 @@ _2019年5月30日_
 * 現在，在分析反編譯傳送期間，如果發佈模式在部署精靈中設為&#x200B;**[!UICONTROL None]**，則會記錄錯誤並停止分析：&quot;發佈模式設定為&#39;無&#39;:無法嵌入影像。 功能手機無法顯示影像。」 (NEO-12208)
 * 交易訊息的廣播管理已經改善。 當廣播從執行例項同步到控制例項時，@lastModified欄位會更新至系統的目前日期。 MC_Update_BlLastModified選項已添加到控制實例。 True表示目前日期將用於控制例項（預設行為）。 False表示我們使用執行例項廣告的@lastModified日期。 (NEO-12579)
 * 已在抵用券臨時表格中新增索引，以最佳化傳送。 (NEO-12437)
-* 在Analytics整合中，現在允許擷取含%字元的AAM區段資料。 (NEO-12025)
+* 在Analytics整合中，現在允許擷AAM取含有%字元的區段資料。 (NEO-12025)
 * 已移除「工作流程熱圖」中的10,000個記錄限制，以修正遺失的資料問題。 (NEO-12329)
 * 不支援Open Office，現在已完全從應用程式移除。 如果您仍在使用它，請移至Libre Office，因為從19.1開始，它將無法運作。
 * 您現在可以使用sysfilter屬性限制對工作流中更新資料活動的「寫入」訪問。 [顯示全文](../../configuration/using/filtering-schemas.md)
@@ -242,7 +242,7 @@ _2019年5月30日_
 * 修正即使您擁有正確的存取權限，仍無法刪除Web應用程式的問題。 (NEO-12072)
 * 修正匯出後再透過XML匯入物件時，可能會覆寫某些值的問題。 已添加XtkExport_IncludeDefaultValues選項。 設為True（預設行為）時，會匯出所有值。 設為False時，會以預設值覆寫修改。 (NEO-11979)
 * 修正在查詢後新增擴充活動時，導致&#x200B;**[!UICONTROL Alert]**&#x200B;工作流程活動失敗的問題。 (NEO-12132)
-* 修正Oracle設定中，無法從資料庫成功檢索管線（觸發器）偏移而導致重複的問題。 (NEO-12121)
+* 修正Oracle設定中，管線（觸發器）偏移無法從資料庫成功擷取而造成重複的問題。 (NEO-12121)
 * 修正使用Analytics整合時，可能導致樞紐表格顯示錯誤的問題(NEO-12103)
 * 修正「描述性分析」報表的問題。 (NEO-11414)
 * 修正CRM連接器的問題：當遠端表格包含名稱有底線的欄位時。
@@ -263,10 +263,10 @@ _2019年5月30日_
 * 已修正Web伺服器當機問題。 (NEO-12904)
 * 修正交易範本中「自然」參數的問題。 (NEO-12334)
 * 修正在電子郵件文字編輯器中顯示追蹤的URL時的主控台當機問題。 (NEO-13122)
-* 修正從Audience Manager匯入觀眾時，「分割檔案」活動的問題。 (NEO-11550)
+* 修正從Audience Manager匯入對象時，「分割檔案」活動的問題。 (NEO-11550)
 * 修正熱點按報告中發生錯誤的問題。 (NEO-11459)
 * 已修正選件轉換的問題。 (NEO-11565)
-* 修正從Audience Manager匯入觀眾時，「清單更新」活動的問題。 (NEO-11226)
+* 修正從Audience Manager匯入對象時，「清單更新」活動的問題。 (NEO-11226)
 * 修正「排程」活動和時區設定的問題。 (NEO-11662)
 * 修正當URL格式錯誤時，追蹤工作流程失敗的問題。
 * 修正匯入行動應用程式套件後，外部帳戶的問題。
