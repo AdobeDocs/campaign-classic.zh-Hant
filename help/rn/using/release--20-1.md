@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 12%
@@ -19,7 +19,7 @@ ht-degree: 12%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
 
-_2020 年 12 月 23 日_
+_2020年12月23日_
 
 >[!CAUTION]
 >
@@ -40,7 +40,7 @@ _2020年5月6日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
-_2020 年 3 月 13 日_
+_2020年3月13日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
@@ -53,12 +53,12 @@ _2020年2月17日_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>雪花FDA連接器</strong><br /> </th> 
+   <th> <strong>SnowflakeFDA連接器</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別進行擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料分段。 此連接器適用於所有客戶，包括Adobe代管。</p>
+   <td> <p>Snowflake是完全托管的雲資料倉庫，可在儲存和計算級別上擴展。 有了這個新的連接器，Adobe Campaign現在可以運用Snowflake的強大功能來執行大資料區隔。 此連接器適用於所有客戶，包括由Adobe代管。</p>
     <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-snowflake.md">詳細說明檔案</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">教學課程影片</a>。</p>
    </td> 
   </tr> 
@@ -68,12 +68,12 @@ _2020年2月17日_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Hadoop FDA連接器增強功能</strong><br /> </th> 
+   <th> <strong>HadoopFDA連接器增強功能</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Hadoop FDA Connector已經過改良，可支援Hadoop 3.0和Cloudera。</p>
+   <td> <p>hadoopFDA Connector已改善，以支援Hadoop3.0和Cloudera。</p>
     <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-hadoop.md">相關的文件</a>，以瞭解詳情。</p>
    </td> 
   </tr> 
@@ -138,7 +138,7 @@ _2020年2月17日_
 
 * 修正當工作流程ID為負數時，遞增查詢活動的問題。 (NEO-19779)
 
-* 修正透過Netezza FDA連接器執行查詢時的編碼問題。 (NEO-19594)
+* 修正透過NetezzaFDA連接器執行查詢時的編碼問題。 (NEO-19594)
 
 * 修正在&#x200B;**Web Download**&#x200B;工作流程事件活動中使用POST方法時導致錯誤的問題。
 
