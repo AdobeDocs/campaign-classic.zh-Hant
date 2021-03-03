@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 14%
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
 
-_2020 年 12 月 23 日_
+_2020年12月23日_
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ _2020年2月7日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.2 - Build 9080 {#release-19-2-build-9080}
 
-_2019 年 12 月 2 日_
+_2019年12月2日_
 
 **新增功能？**
 
@@ -57,7 +57,7 @@ _2019 年 12 月 2 日_
  <tbody> 
   <tr> 
    <td> <p>CCPA是加州新推出的隱私權法，協調並現代化資料保護要求，將於2020年1月1日生效。 CCPA適用於持有居住在加州之資料主體資料的Adobe Campaign客戶。</p>
-    <p>除了現有的隱私權功能（包括許可管理、資料保留設定和使用者角色）外，Adobe Campaign還可協助您做好CCPA的準備：</p>
+    <p>除了現有的隱私權功能（包括許可管理、資料保留設定和使用者角色）外，Adobe Campaign還協助您做好CCPA的準備：</p>
     <ul>
       <li>存取權與刪除權：我們運用了為GDPR新增的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">顯示全文</a></li>
       <li>您可以追蹤消費者是否已選擇退出個人資訊的銷售。 為此，您需要擴展「配置式」表並添加<strong>CCPA</strong>欄位。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">顯示全文</a></li></td> 
@@ -88,7 +88,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Adobe Campaign可讓您試用新的互動式<a href="https://amp.dev/about/email/">AMP for Email</a>格式，讓行銷人員在訊息中加入AMP元件，以利用豐富、動態和互動式內容來增強電子郵件體驗，並直接在訊息中採取行動。</p>
+<td> <p>Adobe Campaign公司可讓您試用新的互動式<a href="https://amp.dev/about/email/">AMP for Email</a>格式，讓行銷人員在訊息中加入AMP元件，以增強電子郵件體驗，提供豐富、動態和互動式內容，並直接在訊息中採取行動。</p>
    <p>此功能會以公開測試版發佈。</p>
    <p>如需詳細資訊，請參閱<a href="../../delivery/using/defining-interactive-content.md">詳細文件</a>及<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">教學影片</a>。</p><br /></td> 
   </tr> 
@@ -119,7 +119,7 @@ _2019 年 12 月 2 日_
 * 推播通知的記憶體耗用最佳化。
 * 對於效能和儲存優化，**logins.log**&#x200B;檔案的處理已增強。 檔案現在會分割為多個檔案，每天一個，最多可保留365個檔案。 [顯示全文](../../production/using/log-files.md)
 * Microsoft Dynamics CRM外部帳戶現在可使用密碼憑證（密碼+使用者名稱）或憑證（私密金鑰）來設定。 [顯示全文](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Hadoop FDA連接器已新增一些增強功能，以提升可靠性
+* hadoopFDA連接器已新增一些增強功能，以改善可靠性
 * 在允許上傳伺服器上的公共資源之前，已添加了一個特定的保護欄來檢查磁碟空間。
 * 已新增[促銷活動選項](../../installation/using/configuring-campaign-options.md):
    * **WdbcKillSessionPolicy**&#x200B;配置選項允許您在所有工作流和PostgreSQL資料庫查詢上影響&#x200B;**無條件停止**&#x200B;行為。
@@ -134,7 +134,7 @@ _2019 年 12 月 2 日_
 
 _不建議使用的系統_
 
-下列系統現在[不建議使用](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)，適用於Campaign Classic實作：
+下列系統現在[已過時](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)，適用於Campaign Classic實施：
 * Apache 2.2
 * Centos 6
 
@@ -148,11 +148,11 @@ iOS SDK的組建版本1.0.26現已推出。 在這個新版本中，我們新增
 
 * 修正&#x200B;**資料載入(RDBMS)**&#x200B;工作流程活動中，**新增連結的表格**&#x200B;欄位空白的當機問題。 (NEO-12213)
 * 修正Mid-Sourcing伺服器無法處理某些訊息的問題。 (NEO-12395)
-* 修正搭配Teradata使用查詢色帶選項時，資料庫清除工作流程中的問題。 (NEO-12399)
+* 修正將查詢色帶選項與Teradata搭配使用時，資料庫清除工作流程中的問題。 (NEO-12399)
 * 修正影響含有ne.jp網域之類型規則之傳送分析的問題。 (NEO-12609)
 * 修正TLS更新的SMS相關問題，此問題暗示憑證政策限制較嚴格。 這些更新可能導致行銷和中部採購伺服器之間發生連線失敗，以備憑證過期時使用。 (NEO-17698)
 * 修正在具有Vault驗證的中部採購環境中，在外部帳戶上使用&#x200B;**Test connection**&#x200B;按鈕的問題。 (NEO-12722)
-* 修正使用FDA Hadoop連線之日期函式的查詢問題。 (NEO-12847)
+* 修正使用日期函式與FDAHadoop連線的查詢問題。 (NEO-12847)
 * 已修正在電子郵件編輯器中取代影像的問題。 (NEO-13098)
 * 已修正可能導致已刪除或移至其他位置的檔案夾發生升級後錯誤的問題。 (NEO-13118)
 * 修正在LINE訊息上使用&#x200B;**「依裝置螢幕大小定義影像」選項時，影像顯示的問題。**(NEO-13228)
@@ -167,13 +167,13 @@ iOS SDK的組建版本1.0.26現已推出。 在這個新版本中，我們新增
 * 修正未內嵌至電子郵件的DKIM金鑰問題。 (NEO-16804)
 * 修正在API呼叫中使用無效作業Token來觸發事件時，顯示錯誤錯誤錯誤代碼的問題。 錯誤代碼是&#39;HTTP 200 OK&#39;，而不是&#39;HTTP 403 Forbidden&#39;。 (NEO-16826)
 * 修正透過Web存取顯示傳送報表的問題。 (NEO-17015)
-* 已修正登入Adobe Campaign時的IMS驗證問題。 (NEO-17312)
+* 修正登入Adobe Campaign時的IMS驗證問題。 (NEO-17312)
 * 修正「隱私權管理」程式無法刪除隔離電子郵件的問題。 (NEO-17314)
 * 修正使用SQL資料庫升級至9031後的總處理能力問題。 (NEO-17558)
 * 修正影響Salesforce CRM連接器的問題。 (NEO-17712)
 * 修正從外部SFTP匯入資料時的逾時問題。 (NEO-19723)
 * 修正存取預測性模型時的問題。 (NEO-19713)
-* 修正影響&#x200B;**Split**&#x200B;工作流程活動與Hadoop FDA資料庫的隨機取樣的問題。 (NEO-16636)
-* 修正Oracle上的回歸，導致部分函式在發佈後被視為無效。 (NEO-12759)
+* 修正影響&#x200B;**Split**&#x200B;工作流程活動與HadoopFDA資料庫的隨機取樣的問題。 (NEO-16636)
+* 修正Oracle上的回歸，造成部分函式在置入程式後被視為無效。 (NEO-12759)
 
 
