@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 7%
+ht-degree: 4%
 
 ---
 
 
-# 使用網路表單範本{#using-a-web-form-template}
+# 使用Web表單模板{#using-a-web-form-template}
 
 表單範本是可重複使用的組態，可讓您建立新的表單。 預設情況下，表單模板與&#x200B;**[!UICONTROL Resources > Templates > Web application templates]**&#x200B;節點中的Web應用程式模板一起儲存。
 
