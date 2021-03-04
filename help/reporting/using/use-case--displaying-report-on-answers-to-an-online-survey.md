@@ -7,17 +7,17 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 8%
+source-wordcount: '475'
+ht-degree: 6%
 
 ---
 
 
-# 使用案例：顯示線上意見調查之答案的報表{#use-case-displaying-report-on-answers-to-an-online-survey}
+# 使用案例：顯示線上調查的回覆報告{#use-case-displaying-report-on-answers-to-an-online-survey}
 
-您可使用專屬報表來收集和分析Adobe Campaign調查的答案。
+可使用專屬報告收集和分析Adobe Campaign調查的答案。
 
 在下列範例中，我們想要收集線上調查的答案，並在樞紐表格中顯示答案
 
