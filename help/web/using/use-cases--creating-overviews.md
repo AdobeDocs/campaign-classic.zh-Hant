@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 1%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
 
-# 使用案例：建立概述{#use-cases-creating-overviews}
+# 使用案例：建立概述頁面{#use-cases-creating-overviews}
 
 在下例中，我們將建立概述類型的Web應用程式，以顯示資料庫中的所有Web應用程式。 設定下列元素：
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 ## 在資料夾{#adding-a-filter-on-a-folder}上添加篩選器
 
-在概觀中，您可以根據資料在Adobe Campaign樹狀結構中的位置來選擇存取資料。 這是資料夾上的篩選。 套用下列程式，將它新增至您的概述。
+在概述中，您可以選擇根據資料在Adobe Campaign樹中的位置來存取資料。 這是資料夾上的篩選。 套用下列程式，將它新增至您的概述。
 
 1. 將游標置於Web應用程式的&#x200B;**[!UICONTROL Page]**&#x200B;節點上，並添加&#x200B;**[!UICONTROL Select folder]**&#x200B;元素(**[!UICONTROL Advanced controls > Select folder]**)。
 1. 在出現的&#x200B;**[!UICONTROL Storage]**&#x200B;窗口中，按一下&#x200B;**[!UICONTROL Edit variables]**&#x200B;連結。
