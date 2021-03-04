@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 9%
+source-wordcount: '167'
+ht-degree: 5%
 
 ---
 
 
-# 關於在 Campaign 建立報表{#about-reports-creation-in-campaign}
+# 建立報表的關鍵步驟{#about-reports-creation-in-campaign}
 
 若要產生Campaign資料庫中資料的統計資料，您可以建立報表並根據需求調整其內容和版面配置。 這些報表可與其他運算子共用。
 
