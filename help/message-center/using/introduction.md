@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 簡介
-description: 簡介
+title: 關於事務性消息模板
+description: 開始使用交易式訊息範本
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 3%
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
 
-# 簡介{#introduction}
+# 關於事務性消息模板{#introduction}
 
 為確保每個事件都可變更為個人化訊息，您需要建立訊息範本以符合每個事件類型。 範本包含個人化交易訊息的必要資訊。 您也可以使用範本來測試訊息預覽，並在傳送至最終目標之前，使用種子位址傳送校樣。
 
