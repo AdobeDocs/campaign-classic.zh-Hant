@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 管理權限
-description: 管理權限
+title: 管理工作流程權限
+description: 瞭解如何管理工作流程權限
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# 管理權限{#managing-rights}
+# 管理工作流權限{#managing-rights}
 
-如果Adobe Campaign營運商不是管理員，則需要建立、執行或修改工作流程的存取權限。
+如果非管理員，Adobe Campaign營運商需要建立、執行或修改工作流程的存取權。
 
 一般而言，負責工作流程的營運商必須存取包含各種活動（收件者、收件者清單、訂閱、傳送等）期間所使用資料的檔案，以及可能的子檔案。
 
