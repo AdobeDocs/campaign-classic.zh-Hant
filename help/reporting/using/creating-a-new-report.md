@@ -7,10 +7,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 若要建立報表，請套用下列步驟：
 
-1. 開啟「Adobe Campaign Explorer」並從&#x200B;**[!UICONTROL Administration > Configuration]**&#x200B;節點，然後選取&#x200B;**[!UICONTROL Reports]**&#x200B;資料夾。
+1. 開啟「Adobe Campaign資源管理器」並從&#x200B;**[!UICONTROL Administration > Configuration]**&#x200B;節點中，然後選擇&#x200B;**[!UICONTROL Reports]**&#x200B;資料夾。
 1. 按一下報表清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
 1. 選取 **[!UICONTROL Create a new report from a template]** 並按一下 **[!UICONTROL Next]**。
 
