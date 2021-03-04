@@ -7,17 +7,17 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1101'
 ht-degree: 3%
 
 ---
 
 
-# LINE 頻道{#line-channel}
+# 建立LINE交貨{#line-channel}
 
-LINE是免費即時訊息、語音和視訊通話的應用程式，適用於所有智慧型手機(iPhone、Android、Windows Phone、Blackberry、Nokia)和PC。 Adobe Campaign可讓您傳送LINE訊息。
+LINE是免費即時訊息、語音和視訊通話的應用程式，適用於所有智慧型手機(iPhone、Android、Windows Phone、Blackberry、Nokia)和PC。 Adobe Campaign允許您發送LINE消息。
 
 LINE僅適用於內部部署或托管服務安裝。
 
@@ -43,7 +43,7 @@ LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上�
 >
 >在建立LINE帳戶和外部帳戶之前，您必須先將LINE套件安裝在實例上。 有關此問題的詳細資訊，請參閱《安裝指南》中的[LINE](../../installation/using/installing-campaign-standard-packages.md#line-package)部分。
 
-您必須先建立LINE帳戶，才能將其連結至Adobe Campaign。 然後，您可以傳送LINE訊息給已在行動應用程式中新增您LINE帳戶的使用者。 外部帳戶和LINE帳戶只能由平台的功能管理員管理。
+您必須先建立LINE帳戶，以便將其連結至Adobe Campaign。 然後，您可以傳送LINE訊息給已在行動應用程式中新增您LINE帳戶的使用者。 外部帳戶和LINE帳戶只能由平台的功能管理員管理。
 
 要建立和配置LINE帳戶，請參閱[https://developers.line.me/](https://developers.line.me/)。
 
@@ -51,7 +51,7 @@ LINE也可與交易訊息模組結合，以在安裝在消費性行動裝置上�
 
 ![](assets/line_service.png)
 
-最後，若要在Adobe Campaign上建立外部帳戶：
+最後，要在Adobe Campaign建立外部帳戶：
 
 1. 在&#x200B;**管理** > **平台**&#x200B;樹結構中，按一下&#x200B;**外部帳戶**&#x200B;頁籤。
 1. 然後按一下&#x200B;**新增**&#x200B;圖示。
