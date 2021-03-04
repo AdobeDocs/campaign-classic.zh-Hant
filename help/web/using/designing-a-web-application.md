@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 
-# 設計 Web 應用程式{#designing-a-web-application}
+# 設計Web應用程式{#designing-a-web-application}
 
 Web應用程式是根據與[線上調查](../../web/using/about-surveys.md)相同的原則建立和管理。
 
@@ -53,7 +53,7 @@ Web應用程式是根據與[線上調查](../../web/using/about-surveys.md)相�
 
 ## 概述類型的Web應用程式{#overview-type-web-applications}
 
-Adobe Campaign介面使用許多網頁應用程式來存取、管理及與收件者、傳送、促銷活動、股票等互動。
+Adobe Campaign介面使用許多Web應用程式來存取、管理並與收件者、傳送、促銷活動、股票等互動。
 
 在介面中，只有一個頁面的控制面板就會顯示它們。
 
