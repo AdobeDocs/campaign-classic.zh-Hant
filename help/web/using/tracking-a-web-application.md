@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '411'
+ht-degree: 1%
 
 ---
 
 
-# 追蹤 Web 應用程式{#tracking-a-web-application}
+# 追蹤Web應用程式上的瀏覽{#tracking-a-web-application}
 
 Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏覽。 此功能可用於所有Web應用程式類型（表單、線上調查、使用DCE建立的Web頁等）。
 
@@ -49,7 +49,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的瀏
 
    ![](assets/trackers_6.png)
 
-為了識別網頁應用程式中的流量來源，Adobe Campaign會先後尋找下列資訊：
+為了識別Web應用程式中的流量來源，Adobe Campaign先後尋找下列資訊：
 
 1. 來源傳送識別碼（如果存在）(nlId Cookie),
 1. 在Web應用程式屬性中定義的外部傳送識別碼（如果存在）,
