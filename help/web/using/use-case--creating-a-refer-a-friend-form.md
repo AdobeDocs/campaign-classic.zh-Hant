@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
 
 
-# 使用案例：建立「推薦朋友」表單{#use-case-creating-a-refer-a-friend-form}
+# 使用案例：建立轉介表單{#use-case-creating-a-refer-a-friend-form}
 
 在此範例中，我們想為資料庫中的收件者提供競賽。 Web表單將包含輸入答案的章節，另一個章節則透過輸入朋友的電子郵件地址來參照朋友。
 
