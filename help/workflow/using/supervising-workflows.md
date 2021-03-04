@@ -7,15 +7,15 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
 
-# 監督工作流程{#supervising-workflows}
+# 使用案例：監督工作流{#supervising-workflows}
 
 此使用案例詳細說明如何建立工作流程，讓您監視「暫停」、「停止」或「有錯誤」之工作流程集的狀態。
 
@@ -95,7 +95,7 @@ JavaScript程式碼的第二部分可讓您根據查詢期間復原的狀態，�
 
 >[!NOTE]
 >
->所建立的字串必須載入工作流程的事件變數中。
+>所建立的字串必須載入至工作流程的事件變數中。
 
 ```
 for each ( var wkf in ndWkfError.workflow ) 
