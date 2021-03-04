@@ -7,17 +7,17 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 10%
 
 ---
 
 
-# 關於立方體{#about-cubes}
+# 開始使用立方{#about-cubes}
 
-透過&#x200B;**行銷分析**&#x200B;模組探索資料庫中的資料。 它可讓您分析和測量資料、計算統計資料、簡化並最佳化報表建立和計算。 除此之外，行銷分析還可讓您建立報表並建立目標人口族群。 在識別這些項目後，這些項目會儲存在可用於Adobe Campaign（定位、分段等）的清單中。
+透過&#x200B;**行銷分析**&#x200B;模組探索資料庫中的資料。 它可讓您分析和測量資料、計算統計資料、簡化並最佳化報表建立和計算。 除此之外，行銷分析還可讓您建立報表並建立目標人口族群。 在識別這些項目後，這些項目會儲存在可用於Adobe Campaign的清單中（定位、分段等）。
 
 立方可用來產生特定的內建報表，包括傳送報表（傳送追蹤、點按、開啟等）。 基於立方的報告只能用作500萬條資料線以下資料卷的標準。
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 >[!CAUTION]
 >
->**Marketing** Analytics是Adobe Campaign模組。它必須安裝在您的例項上，您才能使用下述功能。
+>**行銷** 分析是Adobe Campaign模組。它必須安裝在您的例項上，您才能使用下述功能。
 
 透過Marketing Analytics模組，Campaign可讓您：
 
@@ -65,9 +65,9 @@ ht-degree: 10%
 
    例如，事實表可以是：broadlog表、購買表等。
 
-* 維
+* Dimension
 
-   維度可讓您將資料分段至群組：建立維後，尺寸將用作分析軸。 在大多數情況下，對於給定維，將定義多個級別。 例如，對於時間維度，層級將是月、日、小時、分鐘等。 這組層代表維層次，並啟用各種級別的資料分析。
+   Dimension可讓您將資料分段至群組：建立維後，尺寸將用作分析軸。 在大多數情況下，對於給定維，將定義多個級別。 例如，對於時間維度，層級將是月、日、小時、分鐘等。 這組層代表維層次，並啟用各種級別的資料分析。
 
 * Binning
 
@@ -89,7 +89,7 @@ ht-degree: 10%
 
 立方的主要使用上下文如下：
 
-* 資料匯出可直接在Adobe Campaign平台的&#x200B;**[!UICONTROL Reports]**&#x200B;範圍內設計的報表中進行。
+* 資料輸出可直接在Adobe Campaign平台&#x200B;**[!UICONTROL Reports]**&#x200B;宇宙中設計的報告中執行。
 
    若要這麼做，請建立新報表並選取您要使用的立方。
 
