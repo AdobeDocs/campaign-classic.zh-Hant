@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2391'
 ht-degree: 58%
 
 ---
@@ -237,10 +237,12 @@ ht-degree: 58%
       + [設計行銷宣傳](campaign/using/designing-marketing-campaigns.md)
       + [存取行銷宣傳](campaign/using/accessing-marketing-campaigns.md)
    + 協調行銷活動{#orchestrate-campaigns}
-      + [設定行銷促銷活動](campaign/using/setting-up-marketing-campaigns.md)
-      + [行銷宣傳範本](campaign/using/marketing-campaign-templates.md)
-      + [行銷促銷活動傳送](campaign/using/marketing-campaign-deliveries.md)
-      + [行銷宣傳核准](campaign/using/marketing-campaign-approval.md)
+      + [開始使用行銷宣傳](campaign/using/setting-up-marketing-campaigns.md)
+      + [建立和設定範本](campaign/using/marketing-campaign-templates.md)
+      + [新增傳送](campaign/using/marketing-campaign-deliveries.md)
+      + [選取對象](campaign/using/marketing-campaign-target.md)
+      + [管理檔案和資產](campaign/using/marketing-campaign-assets.md)
+      + [設定和管理核准](campaign/using/marketing-campaign-approval.md)
       + [監控您的促銷活動](campaign/using/marketing-campaign-monitoring.md)
       + [供應商、庫存和預算](campaign/using/providers--stocks-and-budgets.md)
    + 任務、資源和預算{#tasks--resources-and-budgets}
