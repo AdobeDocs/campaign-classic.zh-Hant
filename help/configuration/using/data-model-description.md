@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe Campaign Classic資料模型說明
-description: 本檔案說明Adobe Campaign Classic資料模型。
+title: Adobe Campaign Classic資料模型描述
+description: 本檔案說明Adobe Campaign資料模型。
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2374'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 促銷活動資料模型說明{#data-model-description}
 
-Adobe Campaign 隨附預先定義的資料模型。本節提供Adobe Campaign資料模型內建表格及其互動的詳細資訊。
+Adobe Campaign 隨附預先定義的資料模型。本節詳細介紹Adobe Campaign資料模型的內置表及其交互。
 
 要訪問每個表的說明，請轉至&#x200B;**[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選擇資源，然後按一下&#x200B;**[!UICONTROL Documentation]**&#x200B;頁籤。
 
@@ -25,19 +25,19 @@ Adobe Campaign 隨附預先定義的資料模型。本節提供Adobe Campaign資
 
 >[!NOTE]
 >
->並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。如需Adobe Campaign結構描述的詳細資訊，請閱讀[本節](../../configuration/using/about-schema-reference.md)。
+>並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。有關Adobe Campaign方案的詳細資訊，請讀取[本節](../../configuration/using/about-schema-reference.md)。
 
 ## 主表{#description-main-tables}的說明
 
-Adobe Campaign依賴包含連結在一起的表格的關係式資料庫。
+Adobe Campaign依賴於一個關係資料庫，該資料庫包含連結在一起的表。
 
-下圖顯示Adobe Campaign資料模型的主要商業表格與各主要欄位之間的連結。
+下圖顯示了Adobe Campaign資料模型的主業務表與各主欄位之間的連接。
 
 <!--![](assets/data-model_diagram.png)-->
 
 ![](assets/data-model_simplified-diagram.png)
 
-預先定義的Adobe Campaign資料模型包含下列主要表格。
+預先定義的Adobe Campaign資料模型包括下列主表。
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -71,7 +71,7 @@ NmsRcpGrpRel關係表僅包含與iRecipientId和iGroupId連結表的標識符對
 
 此表與&#x200B;**nms:service**&#x200B;架構匹配。
 
-在Adobe Campaign中，您可以建立並管理資訊服務（主題）的訂閱。 NmsService表儲存您為收件人提供的資訊服務（主題）的定義（例如電子報）。
+在Adobe Campaign，您可以建立並管理資訊服務（主題）的訂閱。 NmsService表儲存您為收件人提供的資訊服務（主題）的定義（例如電子報）。
 
 服務是與群組（靜態收件者群組）類似的實體，但它們會循環更多資訊，並可透過表單輕鬆管理訂閱和取消訂閱。
 
@@ -253,7 +253,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 這組表格會連結至&#x200B;**行動應用程式頻道**，可透過應用程式傳送個人化通知至iOS和Android終端。 如需詳細資訊，請參閱[關於行動應用程式頻道](../../delivery/using/about-mobile-app-channel.md)。
 
-* **NmsMobileApp**:此表與 **nms:** mobileAppschema匹配。它包含Adobe Campaign中定義的行動應用程式。
+* **NmsMobileApp**:此表與 **nms:** mobileAppschema匹配。它包含Adobe Campaign定義的行動應用程式。
 * **NmsAppSubscription**:此表與 **nms:** appSubscriptionschema匹配。它包含有關一或多個應用程式的訂閱者資訊。
 * **NmsAppSubscriptionRcp**:此表與 **nms:** appSubscriptionRcpschema匹配。它可讓您將訂閱應用程式的訪客連結至收件者表格。
 * **NmsExcludeLogAppSubRcp**:此表與 **nms:excludeLogAppSubRcpschema** 匹配。
