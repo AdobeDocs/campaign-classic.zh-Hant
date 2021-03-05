@@ -1,29 +1,29 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 設計行銷活動
+title: 設計和執行行銷宣傳
 description: 定義、最佳化、執行和分析行銷促銷活動。
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 8%
+source-wordcount: '443'
+ht-degree: 9%
 
 ---
 
 
-# 設計行銷活動{#designing-marketing-campaigns}
+# 設計和執行行銷宣傳{#designing-marketing-campaigns}
 
-Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳。 Adobe Campaign就像一個統一的訂單和執行中心，負責行銷策略。 如需詳細資訊，請參閱[存取促銷活動](../../campaign/using/accessing-campaigns.md)和[設定行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
+Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳。 Adobe Campaign就像一個統一的訂單和執行中心，負責行銷策略。 如需詳細資訊，請參閱[存取促銷活動](../../campaign/using/accessing-campaigns.md)和[建立行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 此外，**行銷資源管理(MRM)**&#x200B;模組可讓您透過完整管理和即時追蹤相關任務、預算和行銷資源，以協作模式控制行銷動作。 「行銷資源管理」可讓您最佳化並規範內部和外部程式、資源與行銷宣傳以及第三方關係（代理商、印表機等）的管理。 如需詳細資訊，請參閱[本章節](../../campaign/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
->有關Adobe Campaign核心功能的詳細資訊，請參閱[入門指南](../../platform/using/about-adobe-campaign-classic.md)一節。\
+>有關Adobe Campaign核心功能的更多資訊，請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)一節。\
 >[本節](../../delivery/using/steps-about-delivery-creation-steps.md)將詳細說明與各種通道上的人口目標鎖定、消息個人化和消息傳遞相關的功能。
 
 ![](assets/do-not-localize/how-to-video.png) [探索視訊中的行銷宣傳關鍵概念](#video)
@@ -62,7 +62,7 @@ Adobe Campaign可讓您定義、最佳化、執行及分析通訊和行銷宣傳
 
    傳送大綱是傳送的結構化描述。 每個傳送都可參照傳送大綱，其中包含例如相關選件、要附加的檔案或商店連結。 選件可根據所選的傳送大綱在傳送中參考。
 
-   有關詳細資訊，請參閱[關聯和構建通過交付大綱連結的資源](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+   如需詳細資訊，請參閱[本章節](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 ## 教學課程{#video}
 
