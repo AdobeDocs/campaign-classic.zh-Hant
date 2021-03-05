@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -60,11 +60,11 @@ ht-degree: 4%
 
 ## 確定您的訊息已傳送{#make-sure-your-message-is-delivered}
 
-最後一個步驟是，將您的機會發揮到最大，並運用Adobe Campaign Classic的強大功能，確保您的訊息確實能傳送給相關的收件者。
+最後一步，將您的機會發揮到最大，並運用Adobe Campaign Classic的力量，確保您的訊息能確實傳達給相關收件者。
 
 ### 進行驗證程式
 
-您可以定義包含Adobe Campaign運算子和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保對促銷活動的各種程式進行完整監控：定位、內容、預算、擷取和傳送證明。 視其權限而定，使用者會收到通知、收到校樣，並可驗證或拒絕訊息。 瞭解本節](../../campaign/using/marketing-campaign-approval.md#approval-process)的更多資訊。[
+您可以定義完整的驗證程式，包括Adobe Campaign運算子和群組，以驗證目標和訊息內容。 這將確保對促銷活動的各種程式進行完整監控：定位、內容、預算、擷取和傳送證明。 視其權限而定，使用者會收到通知、收到校樣，並可驗證或拒絕訊息。 瞭解本節](../../campaign/using/marketing-campaign-approval.md)的更多資訊。[
 
 ### 使用波
 
