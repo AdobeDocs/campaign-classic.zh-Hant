@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,16 @@ ht-degree: 0%
 
 **傳遞** 能力包括測量促銷活動在到達收件者收件匣時是否成功，而不會反彈或標示為垃圾訊息。
 
-Adobe Campaign提供了若干工具來追蹤平台的傳遞效能。 本節也說明在管理和最佳化傳遞能力時，您應牢記的主要原則。
+Adobe Campaign提供特定數量的工具，以追蹤平台的可傳遞效能。 本節也說明在管理和最佳化傳遞能力時，您應牢記的主要原則。
 
 ## 設定 {#configuration}
 
-此功能可透過Adobe Campaign中的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
-* 對於代管和混合式客戶端，**Deliverability monitoring**&#x200B;是由Adobe技術支援和顧問在您的實例上設定的。 如需詳細資訊，請洽詢您的Adobe銷售代表。
+此功能可透過Adobe Campaign的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
+* 對於代管和混合式客戶端，**可傳遞性監控**&#x200B;是由Adobe技術支援和顧問在實例上配置的。 如需詳細資訊，請洽詢您的Adobe帳戶主管。
 
-* 對於內部部署安裝，您必須通過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜單安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;軟體包。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
+* 對於內部部署安裝，您必須通過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜單安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;軟體包。 如需詳細資訊，請參閱[安裝促銷活動內建套件](../../installation/using/installing-campaign-standard-packages.md)。
 
-在Adobe Campaign Classic中，**Deliverability monitoring**&#x200B;由&#x200B;**[!UICONTROL Refresh for deliverability]**&#x200B;工作流程管理。 它預設會安裝在所有例項上，讓您初始化彈回郵件資格規則清單、網域清單和MX清單。 安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;套件後，此工作流程會在每晚執行，以定期更新規則清單，並讓您主動管理平台傳遞能力。
+在Adobe Campaign,**傳遞性監控**&#x200B;由&#x200B;**[!UICONTROL Refresh for deliverability]**&#x200B;工作流管理。 它預設會安裝在所有例項上，讓您初始化彈回郵件資格規則清單、網域清單和MX清單。 安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;套件後，此工作流程會在每晚執行，以定期更新規則清單，並讓您主動管理平台傳遞能力。
 
 ## 背景{#background}
 
