@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1004'
 ht-degree: 6%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 6%
 
 # 關於綱要版本{#about-schema-edition}
 
-Adobe Campaign採用資料結構描述：
+Adobe Campaign利用資料結構：
 
 * 定義應用程式內資料物件與基礎資料庫表的連結方式。
 * 定義 Campaign 應用程式中不同資料物件之間的連結。
 * 定義及描述每個物件中包含的個別欄位。
 
-如需深入瞭解Campaign內建表格及其互動，請參閱[Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
+如需深入瞭解促銷活動內建表格及其互動，請參閱[本節](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
 ## 擴展或建立方案{#extending-or-creating-schemas}
 
 若要將欄位或索引或其他元素新增至促銷活動中的其中一個核心資料結構，例如收件者表(nms:recipient)，您必須擴充該結構。 有關詳細資訊，請參閱[擴展架構](../../configuration/using/extending-a-schema.md)部分。
 
-若要新增Adobe Campaign中不現成可用的全新資料類型（例如合約表格），您可以直接建立自訂結構。 有關詳細資訊，請參閱[資料結構](../../configuration/using/data-schemas.md)部分。
+若要新增在Adobe Campaign不現成可用的全新資料類型（例如合約表格），您可以直接建立自訂結構。 有關詳細資訊，請參閱[資料結構](../../configuration/using/data-schemas.md)部分。
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -136,7 +136,7 @@ type="string" enum="exTransactionTypeEnum"/>
 * **@xml**
 * **@type**
 
-   若要檢視列示Adobe Campaign針對不同資料庫管理系統產生之資料類型之映射的表格，請參閱[對應Adobe Campaign/DBMS資料類型](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)一節。
+   要查看列出Adobe Campaign為不同資料庫管理系統生成的資料類型映射的表，請參閱[映射Adobe Campaign/DBMS資料類型](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)部分。
 
 有關每個屬性的詳細資訊，請參閱[屬性說明](../../configuration/using/schema/attribute.md)部分。
 
