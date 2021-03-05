@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 設定行銷促銷活動
-description: 設定行銷促銷活動
+title: 建立行銷宣傳
+description: 瞭解如何建立和執行行銷宣傳
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 1%
+source-wordcount: '1253'
+ht-degree: 2%
 
 ---
 
 
-# 設定行銷促銷活動{#setting-up-marketing-campaigns}
+# 開始使用行銷促銷活動{#setting-up-marketing-campaigns}
 
 促銷活動包括動作（傳送）和程式（匯入或擷取檔案），以及資源（行銷檔案、傳送大綱）。 它們用於行銷促銷活動。 促銷活動是方案的一部分，而方案則包含在促銷活動計畫中。
 
@@ -23,31 +23,19 @@ ht-degree: 1%
 
 若要建立行銷促銷活動：
 
-1. 建立促銷活動：探索促銷活動及其特性：標籤、類型、開始和結束日期、預算、相關資源、經理和參與者。
+1. 建立促銷活動：探索促銷活動及其特性：標籤、類型、開始和結束日期、預算、相關資源、經理和參與者。 [進一步瞭解](#creating-a-campaign)。
 
-   請參閱[建立促銷活動](#creating-a-campaign)。
+1. 定義目標人口：建立具有定位查詢的工作流程。 [進一步瞭解](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 定義目標人口：建立具有定位查詢的工作流程。
+1. 建立傳送：選取頻道並定義要傳送的內容。 [進一步瞭解](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
-   請參閱[選擇目標人口](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
+1. 核准傳送。 [進一步瞭解](../../campaign/using/marketing-campaign-approval.md)。
 
-1. 建立傳送：選取頻道並定義要傳送的內容。
+1. 監控傳送。 [進一步瞭解](../../campaign/using/marketing-campaign-monitoring.md)。
 
-   請參閱[建立傳送](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
+1. 規劃促銷活動和相關成本。 [進一步瞭解](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
-1. 核准傳送。
-
-   請參閱[批准流程](../../campaign/using/marketing-campaign-approval.md#approval-process)。
-
-1. 監控傳送。
-
-   請參閱[監控](../../campaign/using/marketing-campaign-monitoring.md)。
-
-1. 規劃促銷活動和相關成本。
-
-   請參閱[建立服務提供商及其成本結構](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
-
-完成這些步驟後，您可以開始傳送（請參閱[啟動傳送](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)）、檢查與傳送有關的資料、流程和資訊，並視需要管理相關檔案（請參閱[管理相關檔案](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)）。 您也可以追蹤促銷活動和傳送的處理階段執行（請參閱[追蹤](../../campaign/using/marketing-campaign-monitoring.md)）。
+完成這些步驟後，您可以開始傳送（請參閱[本節](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)）、檢查與傳送相關的資料、流程和資訊，並視需要管理相關檔案（請參閱[本節](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)）。 您也可以追蹤促銷活動和傳送的處理階段執行（請參閱[本節](../../campaign/using/marketing-campaign-monitoring.md)）。
 
 ## 建立計畫和程式層次結構{#creating-plan-and-program-hierarchy}
 
@@ -69,7 +57,7 @@ ht-degree: 1%
 1. 按一下右鍵新建立的計畫，然後選擇&#x200B;**建立新的&#39;Program&#39;資料夾**。
 1. 重複上述步驟，更名新程式資料夾及其內部名稱。
 
-## 建立行銷活動 {#creating-a-campaign}
+## 建立促銷活動 {#creating-a-campaign}
 
 ### 新增促銷活動{#adding-a-campaign}
 
@@ -99,7 +87,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
-### 編輯和設定促銷活動{#editing-and-configuring-a-campaign}
+### 編輯並設定促銷活動{#editing-and-configuring-a-campaign}
 
 然後，您可以編輯剛建立的促銷活動，並定義其參數。
 
@@ -115,11 +103,11 @@ ht-degree: 1%
 
 定期促銷活動是根據其範本的執行排程自動建立的促銷活動。
 
-### 建立循環性促銷活動{#creating-a-recurring-campaign}
+### 建立循環促銷活動{#creating-a-recurring-campaign}
 
 循環促銷活動是從定義要執行的工作流程範本和執行排程的特定範本建立。
 
-#### 建立循環促銷活動的範本{#creating-the-campaign-template}
+#### 建立週期性促銷活動的範本{#creating-the-campaign-template}
 
 1. 建立&#x200B;**[!UICONTROL Recurring]**&#x200B;促銷活動範本。
 
@@ -223,7 +211,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >定期促銷活動範本會根據上述定義的排程建立新促銷活動。 因此，必須小心完成，以避免超出Adobe Campaign資料庫的負載。
+   >定期促銷活動範本會根據上述定義的排程建立新促銷活動。 因此，必須謹慎完成，以避免Adobe Campaign資料庫超載。
 
 1. 一旦達到執行開始日期，就會自動建立相符的促銷活動。 它具有其模板的所有特性。
 
@@ -239,4 +227,4 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他促銷活動操作影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
