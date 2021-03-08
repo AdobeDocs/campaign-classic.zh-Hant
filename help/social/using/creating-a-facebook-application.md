@@ -7,7 +7,7 @@ audience: social
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您也可以將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在這種情況下，您不需要使用Adobe Campaign網頁應用程式來取得Facebook設定檔。 有關詳細資訊，請參閱[配置外部帳戶](#configuring-external-accounts)。
+>您也可以將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在這種情況下，不需要使用Adobe Campaign網頁應用程式來取得Facebook個人檔案。 有關詳細資訊，請參閱[配置外部帳戶](#configuring-external-accounts)。
 
 ![](assets/social_webapp_fb_000.png)
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 1. 建立一或多個Facebook應用程式。 有關詳情，請參閱：[建立Facebook應用程式](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)。
 1. 輸入要顯示在Facebook權限請求畫面上的&#x200B;**[!UICONTROL terms of service]**&#x200B;和&#x200B;**[!UICONTROL Privacy policy]**&#x200B;連結。 有關詳情，請參閱：[輸入服務條款和隱私權政策連結](#entering-the-terms-of-service-and-privacy-policy-links)。
 1. 針對每個Facebook應用程式，建立&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型的外部帳戶。 有關詳情，請參閱：[設定外部帳戶](#configuring-external-accounts)。
-1. 針對每個Facebook應用程式，在Adobe Campaign中建立Facebook類型的網路應用程式。 有關詳情，請參閱：[建立Facebook類型的網路應用程式](#creating-a-facebook-type-web-application)。
+1. 針對每個Facebook應用程式，在Adobe Campaign建立Facebook類型的網頁應用程式。 有關詳情，請參閱：[建立Facebook類型的網路應用程式](#creating-a-facebook-type-web-application)。
 1. 設定您的Facebook應用程式，讓這些應用程式在您的Facebook頁面上顯示為標籤。 有關詳情，請參閱：[設定Facebook標籤](#configuring-facebook-tabs)。
 
 ## 設定外部帳戶 {#configuring-external-accounts}
@@ -61,7 +61,7 @@ ht-degree: 1%
 
    **合作夥伴代管的應用程式**
 
-   您可將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在這種情況下，您不需要使用Adobe Campaign網頁應用程式來取得Facebook設定檔。 當Facebook使用者安裝應用程式時，會產生金鑰（存取Token）。 合作夥伴會呼叫web services，將此存取Token轉送至Adobe Campaign。 然後，Adobe Campaign會使用此Token登入Facebook資料庫，並收集使用者透過應用程式分享的資料。
+   將Adobe Campaign與合作夥伴開發的Facebook應用程式整合是可能的。 在這種情況下，不需要使用Adobe Campaign網頁應用程式來取得Facebook個人檔案。 當Facebook使用者安裝應用程式時，會產生金鑰（存取Token）。 合作夥伴呼叫web service，將此存取Token轉送給Adobe Campaign。 Adobe Campaign接著使用此Token登入Facebook資料庫，並收集使用者透過應用程式分享的資料。
 
    >[!NOTE]
    >
@@ -75,7 +75,7 @@ ht-degree: 1%
 
    如果您想要在此例項上代管應用程式（如果您沒有協力廠商應用程式），則需要使用Adobe Campaign網頁應用程式來取得Facebook設定檔。 如需詳細資訊，請參閱[ Examples of Facebook apps](../../social/using/examples-of-facebook-apps.md)。
 
-   在Adobe Campaign主控台中，複製&#x200B;**[!UICONTROL Secure Canvas URL]**&#x200B;欄位中包含的位址，並貼入Facebook上的&#x200B;**[!UICONTROL Facebook Web games (https)]**&#x200B;欄位（位於&#x200B;**[!UICONTROL Facebook Web Games]**&#x200B;區段）。
+   在Adobe Campaign控制台中，複製&#x200B;**[!UICONTROL Secure Canvas URL]**&#x200B;欄位中包含的位址，並貼入Facebook上的&#x200B;**[!UICONTROL Facebook Web games (https)]**&#x200B;欄位（在&#x200B;**[!UICONTROL Facebook Web Games]**&#x200B;區段中）。
 
    ![](assets/social_facebook_external_account_009.png)
 
@@ -88,7 +88,7 @@ ht-degree: 1%
    ![](assets/social_facebook_external_account_008.png)
 
 1. 在Facebook上，按一下頁面底部的&#x200B;**[!UICONTROL Save Changes]**&#x200B;按鈕。
-1. 在Adobe Campaign主控台中，按一下&#x200B;**[!UICONTROL Subscribe]**&#x200B;按鈕，讓Adobe Campaign在粉絲每次透過此應用程式簽入時即時復原資料。 有關詳情，請參閱：[Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
+1. 在Adobe Campaign控制台中，按一下&#x200B;**[!UICONTROL Subscribe]**&#x200B;按鈕，使Adobe Campaign能夠在風扇每次通過此應用程式簽入時即時恢復資料。 有關詳情，請參閱：[Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
 
    ![](assets/social_webapp_fb_013.png)
 
@@ -107,9 +107,9 @@ ht-degree: 1%
 
 ## 建立Facebook類型的Web應用程式{#creating-a-facebook-type-web-application}
 
-Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個人化內容。 對於每個Facebook應用程式，您都需要在Adobe Campaign中建立網頁應用程式。 若要建立Facebook網路應用程式，請依照下列步驟進行：
+Adobe CampaignFacebook應用程式可讓您在Facebook應用程式中顯示個人化內容。 對於每個Facebook應用程式，您都需要在Adobe Campaign建立Web應用程式。 若要建立Facebook網路應用程式，請依照下列步驟進行：
 
-1. 前往&#x200B;**[!UICONTROL Social networks]**&#x200B;宇宙，按一下&#x200B;**[!UICONTROL Applications]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
+1. 前往&#x200B;**[!UICONTROL Social networks]**&#x200B;標籤，按一下&#x200B;**[!UICONTROL Applications]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 
    ![](assets/social_webapp_001.png)
 
