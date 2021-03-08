@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 訊息中心服務層級{#message-center-service-level}
 
-此報告會顯示與交易訊息相關的傳送統計資料以及錯誤劃分。 您可以按一下錯誤類型以顯示其詳細資訊。 此報告針對技術管理員，也可透過控制例項中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;範圍存取。
+此報告會顯示與交易訊息相關的傳送統計資料以及錯誤劃分。 您可以按一下錯誤類型以顯示其詳細資訊。 此報告針對技術管理員，也可透過控制例項的&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤存取。
 
 ![](assets/mc_reports_1.png)
 
