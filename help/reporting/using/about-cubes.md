@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -89,7 +89,7 @@ ht-degree: 10%
 
 立方的主要使用上下文如下：
 
-* 資料輸出可直接在Adobe Campaign平台&#x200B;**[!UICONTROL Reports]**&#x200B;宇宙中設計的報告中執行。
+* 資料匯出可直接在Adobe Campaign平台的&#x200B;**[!UICONTROL Reports]**&#x200B;標籤中設計的報告中進行。
 
    若要這麼做，請建立新報表並選取您要使用的立方。
 
