@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '229'
 ht-degree: 97%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。請參閱[資料夾和視圖](../../platform/using/access-management.md#folders-and-views)。
+>若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。進一步瞭解[資料夾和檢視](../../platform/using/access-management-folders.md)。
 
 ## 移動收件者 {#moving-recipients}
 
