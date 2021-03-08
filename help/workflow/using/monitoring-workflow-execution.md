@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 0%
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ## 工作表和工作流架構{#worktables-and-workflow-schema}
 
-工作流程會傳達可透過特定活動處理的工作表。 Adobe Campaign可讓您透過「資料管理」活動修改、重新命名和豐富工作流程工作表的欄，例如，根據客戶的需求，將它們與名稱對齊，以收集合約共同受益人的其他資訊等。
+工作流程會傳達可透過特定活動處理的工作表。 Adobe Campaign允許您通過資料管理活動修改、更名和豐富工作流工作表的列，例如，根據客戶的需要將它們與術語對齊，以收集關於合同共同受益人的附加資訊等。
 
 還可以建立各種工作維之間的連結並定義維更改。 例如，對於資料庫中記錄的每個合同，請定址主持人，並在附加資訊中使用共同持有人資料。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-在Adobe Campaign Explorer中，工作流程清單預設會顯示&#x200B;**[!UICONTROL Failed]**&#x200B;欄。
+在「Adobe Campaign檔案總管」中，工作流程清單預設會顯示&#x200B;**[!UICONTROL Failed]**&#x200B;欄。
 
 ![](assets/wf-explorer_errors_col.png)
 
@@ -129,7 +129,7 @@ ht-degree: 0%
 
 ![](assets/wf-notification_error-msg.png)
 
-此連結可讓您以網頁模式存取Adobe Campaign主控台，並在您登入後，就能處理錯誤工作流程。
+此連結可讓您以Web模式存取Adobe Campaign主控台，並在您登入後處理錯誤工作流程。
 
 ![](assets/wf-notification_error-console.png)
 
@@ -254,7 +254,7 @@ instance.vars.isRunning = false
 
 ## 根據工作流的狀態{#filtering-workflows-status}篩選工作流
 
-Campaign Classic介面可讓您使用預先定義的&#x200B;**views**&#x200B;來監控執行個體上所有工作流程的執行狀態。 要訪問這些視圖，請開啟&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**&#x200B;節點。
+Campaign Classic介面允許您使用預定義的&#x200B;**views**&#x200B;監視實例上所有工作流的執行狀態。 要訪問這些視圖，請開啟&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**&#x200B;節點。
 
 可使用下列檢視：
 
@@ -271,7 +271,7 @@ Campaign Classic介面可讓您使用預先定義的&#x200B;**views**&#x200B;來
 
 1. 按一下右鍵要添加視圖的資料夾。
 1. 在&#x200B;**[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**&#x200B;中，選擇要添加的視圖。
-1. 將資料夾添加到樹中後，請確保將其配置為視圖，以便顯示所有工作流，無論其源資料夾是什麼。有關如何配置視圖的詳細資訊，請參閱[此部分](../../platform/using/access-management.md#adding-folders-and-creating-views)。
+1. 將資料夾添加到樹中後，請確保將其配置為視圖，以便顯示所有工作流，無論其源資料夾是什麼。有關如何配置視圖的詳細資訊，請參閱[此部分](../../platform/using/access-management-folders.md)。
 
 除了這些檢視外，您還可以設定篩選資料夾，讓您根據工作流程的執行狀態來篩選工作流程清單。 操作步驟：
 
