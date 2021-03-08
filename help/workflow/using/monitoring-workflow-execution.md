@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 ## 管理錯誤{#managing-errors}
 
-發生錯誤時，工作流程暫停，當發生錯誤時執行的活動閃爍紅色。 在工作流程概述（**[!UICONTROL Monitoring]**&#x200B;宇宙> **[!UICONTROL Workflows]**&#x200B;連結）中，您只能顯示有錯誤的工作流程，如下所示。
+發生錯誤時，工作流程暫停，當發生錯誤時執行的活動閃爍紅色。 在工作流程概述中，在&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤- **[!UICONTROL Workflows]**&#x200B;連結下，您只能顯示錯誤工作流程，如下所示。
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 **[!UICONTROL Instance supervision]**&#x200B;頁面可讓您檢視Adobe Campaign伺服器活動，並顯示有錯誤的工作流程和傳送清單。
 
-若要存取本頁，請前往&#x200B;**[!UICONTROL Monitoring]**&#x200B;宇宙，然後按一下&#x200B;**[!UICONTROL General view]**&#x200B;連結。
+要訪問此頁，請轉至&#x200B;**[!UICONTROL Monitoring]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL General view]**&#x200B;連結。
 
 ![](assets/wf-monitoring_from-homepage.png)
 
