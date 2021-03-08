@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 * 活動僅適用於遠程資料源。 因此，您的實例上必須安裝&#x200B;**[!UICONTROL FDA]**(Federated Data Access)軟體包。 [進一步瞭解](../../installation/using/about-fda.md)。
 * 出站模式必須存在於資料庫中，並連結到FDA資料庫。 [進一步瞭解](../../configuration/using/about-schema-reference.md)。
-* 執行工作流的運算子必須具有名為right的&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**。 [進一步瞭解](../../platform/using/access-management.md#named-rights)。
+* 執行工作流的運算子必須具有名為right的&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**。 [進一步瞭解](../../platform/using/access-management-named-rights.md)。
 
 ## 配置SQL資料管理活動{#configuring-the-sql-data-management-activity}
 
