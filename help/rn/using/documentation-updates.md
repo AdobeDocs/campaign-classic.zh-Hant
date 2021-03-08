@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: add0efb4efd5a37129c649b942799622947f3143
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '4092'
 ht-degree: 95%
@@ -287,7 +287,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 推出新的章節，其中詳列 Adobe Campaign 提供的不同語言。[顯示全文](../../platform/using/adobe-campaign-workspace.md#languages)
 
-更新存取管理準則，其中包含更多關於已命名的權限的資訊。[顯示全文](../../platform/using/access-management.md#named-rights)
+更新存取管理準則，其中包含更多關於已命名的權限的資訊。[顯示全文](../../platform/using/access-management-named-rights.md)
 
 ## 2020 年 2 月 {#february-2020}
 
@@ -405,7 +405,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 新增新的章節，說明傳送電子郵件時，如何強制使用字元編碼。[顯示全文](../../delivery/using/sending-messages.md#character-encoding)
 
-新增「存取管理」章節，其中包含&#x200B;**隱私資料權限**。[顯示全文](../../platform/using/access-management.md#named-rights)
+新增「存取管理」章節，其中包含&#x200B;**隱私資料權限**。[顯示全文](../../platform/using/access-management-named-rights.md)
 
 新增相關資訊，以規範個人化欄位內容不得超過 1024 個字元。[顯示全文](../../delivery/using/personalization-fields.md)
 
