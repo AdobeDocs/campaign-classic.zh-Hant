@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1098'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 您可以建立並管理資訊服務的訂閱，其中包含相關的確認訊息或自動傳送給訂閱者。
 
-要訪問資訊服務映射，請轉至&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;宇宙，然後按一下&#x200B;**[!UICONTROL Services and Subscriptions]**&#x200B;連結。
+要訪問資訊服務映射，請開啟&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Services and Subscriptions]**&#x200B;連結。
 
 ![](assets/s_ncs_user_services_new.png)
 
@@ -59,7 +59,7 @@ ht-degree: 2%
    >Facebook和Twitter訂閱詳見[本節](../../social/using/about-social-marketing.md)。 行動應用程式訂閱詳見[關於行動應用程式頻道](../../delivery/using/about-mobile-app-channel.md)。
 
 * 對於電子郵件類型服務，請選擇&#x200B;**傳送模式**。 可能的模式包括：**[!UICONTROL Newsletter]**&#x200B;或&#x200B;**[!UICONTROL Viral]**。
-* 您可以傳送&#x200B;**確認訊息**&#x200B;以取得訂閱或取消訂閱。 若要這麼做，請從&#x200B;**[!UICONTROL Subscription]**&#x200B;和&#x200B;**[!UICONTROL Unsubscription]**&#x200B;欄位選取要用來建立對應傳送的傳送範本。 這些範本必須設定&#x200B;**[!UICONTROL Subscription]**&#x200B;類型的目標對應，而不需定義的目標。 請參閱[關於電子郵件通道](../../delivery/using/about-email-channel.md)一節。
+* 您可以傳送&#x200B;**確認訊息**&#x200B;以取得訂閱或取消訂閱。 若要這麼做，請從&#x200B;**[!UICONTROL Subscription]**&#x200B;和&#x200B;**[!UICONTROL Unsubscription]**&#x200B;欄位選取要用來建立對應傳送的傳送範本。 這些範本必須設定&#x200B;**[!UICONTROL Subscription]**&#x200B;類型的目標對應，而不需定義目標。 請參閱[關於電子郵件通道](../../delivery/using/about-email-channel.md)一節。
 * 依預設，訂閱是無限制的。 您可以取消選取&#x200B;**[!UICONTROL Unlimited]**&#x200B;選項，以定義服務的有效期。 持續時間可以以天(**[!UICONTROL d]**)或月(**[!UICONTROL m]**)指定。
 
 在儲存服務後，它就會新增至「服務與訂閱」清單：按一下其名稱以編輯它。 有幾個標籤可供使用。 **[!UICONTROL Subscriptions]**&#x200B;標籤可讓您查看資訊服務的訂閱者清單（**[!UICONTROL Active subscriptions]**&#x200B;標籤）或訂閱／取消訂閱歷史記錄（**[!UICONTROL History]**&#x200B;標籤）。 您也可以從此標籤中新增和刪除訂閱者。 請參閱[新增和刪除訂閱者](#adding-and-deleting-subscribers)。
