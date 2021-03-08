@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
@@ -15,11 +15,11 @@ ht-degree: 2%
 ---
 
 
-# 限制 PII 檢視{#restricting-pii-view}
+# 限制PI視圖{#restricting-pii-view}
 
 ## 概觀 {#overview}
 
-有些客戶需要行銷使用者能夠存取資料記錄，但不希望他們看到個人識別資訊(PII)，例如名字、姓氏或電子郵件地址。 Adobe Campaign提出一種保護隱私權並防止一般行銷活動營運商濫用資料的方法。
+有些客戶需要行銷使用者能夠存取資料記錄，但不希望他們看到個人識別資訊(PII)，例如名字、姓氏或電子郵件地址。 Adobe Campaign提出了保護隱私和防止資料被常規宣傳活動運營商濫用的方法。
 
 ## 實施{#implementation}
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 * 資料將在詳細檢視中變成唯讀。
 * 資料只能在篩選器中使用（這表示使用某些二分法策略，您仍可以猜測值）。
 * 使用限制欄位建立的任何運算式也會受到限制：lower(@email)變得和@email一樣可存取。
-* 在工作流程中，您可以將受限制的欄新增至目標人口中，作為轉場的額外欄，但Adobe Campaign使用者仍無法存取該欄。
+* 在工作流程中，您可以將受限制的欄新增至目標人口，作為轉場的額外欄，但Adobe Campaign使用者仍無法存取。
 * 將目標人口儲存在群組（清單）中時，儲存欄位的特性與資料來源相同。
 * 依預設，JS程式碼無法存取資料。
 
