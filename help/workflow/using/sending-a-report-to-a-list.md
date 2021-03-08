@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 步驟1:建立收件人清單{#step-1--creating-the-recipient-list}
 
-前往&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;宇宙，按一下&#x200B;**[!UICONTROL Lists]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。 選擇&#x200B;**[!UICONTROL New list]**&#x200B;並為要發送到的報告建立新的收件人清單。
+前往&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;標籤，按一下&#x200B;**[!UICONTROL Lists]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。 選擇&#x200B;**[!UICONTROL New list]**&#x200B;並為要發送到的報告建立新的收件人清單。
 
 ![](assets/use_case_report_1.png)
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 步驟2:建立傳送範本{#step-2--creating-the-delivery-template}
 
-1. 前往Adobe Campaign檔案總管的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點，並複製&#x200B;**[!UICONTROL Email delivery]**&#x200B;現成可用範本。
+1. 轉至Adobe Campaign瀏覽器的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點，並複製&#x200B;**[!UICONTROL Email delivery]**&#x200B;現成可用模板。
 
    ![](assets/use_case_report_2.png)
 
