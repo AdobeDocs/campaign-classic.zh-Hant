@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
@@ -64,7 +64,7 @@ ht-degree: 3%
 
 ## 執行選件模擬{#perform-an-offer-simulation}
 
-1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;宇宙中，按一下&#x200B;**[!UICONTROL Simulations]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
+1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Simulations]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 
    ![](assets/offer_simulation_001.png)
 
