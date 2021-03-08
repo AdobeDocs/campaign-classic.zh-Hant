@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 供應商、庫存和預算{#providers-stocks-and-budgets}
 
-Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供應商。 有關服務供應商和相關成本結構的資訊，由Adobe Campaign管理員從主檢視中定義。 服務提供商從交付中引用，其成本結構允許計算與此交付相關的成本以及管理相關庫存。
+Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供應商。 有關服務提供者和相關費用結構的資訊由Adobe Campaign管理員從主要角度定義。 服務提供商從交付中引用，其成本結構允許計算與此交付相關的成本以及管理相關庫存。
 
 ## 建立服務提供商及其成本結構{#creating-service-providers-and-their-cost-structures}
 
@@ -27,7 +27,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
 在交付期間執行的任務由服務提供商執行，特別是直接郵件和移動通道。 例如，這些服務提供商可以參與打印或分發消息。 這些作業涉及每個服務提供商專屬的配置和成本。 服務提供商的配置包括四個階段：
 
-1. 在Adobe Campaign中建立服務供應商
+1. 在Adobe Campaign建立服務提供商
 
    請參閱[添加服務提供商](#adding-a-service-provider)。
 
@@ -186,7 +186,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
 成本類型可與庫存行關聯，以處理警報、跟蹤供應和啟動訂單。
 
-在Adobe Campaign中設定庫存和訂單管理，並在交貨供應不足時提醒營運商的程式如下：
+在Adobe Campaign設立庫存和訂單管理，並在交貨供應不足時通知運營商的程式如下：
 
 1. 相關服務提供商的庫存建立和引用
 
@@ -206,7 +206,7 @@ Adobe Campaign可讓您定義將參與促銷活動中所執行工作的服務供
 
 ### 股票管理{#stock-management}
 
-Adobe Campaign可在庫存不足或達到最低臨界值時，提醒營運商群組。 庫存水準可透過導覽區域的&#x200B;**[!UICONTROL Other choices]**&#x200B;連結透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙的&#x200B;**[!UICONTROL Stocks]**&#x200B;連結存取。
+Adobe Campaign可以在庫存不足或達到最低閾值時提醒一組操作員。 庫存水準可透過導覽區域的&#x200B;**[!UICONTROL Other choices]**&#x200B;連結透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Stocks]**&#x200B;連結存取。
 
 ![](assets/s_ncs_user_stocks_view.png)
 
