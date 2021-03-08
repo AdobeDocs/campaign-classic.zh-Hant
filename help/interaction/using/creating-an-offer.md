@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 若要建立選件，請套用下列步驟：
 
-1. 前往&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙，然後按一下&#x200B;**[!UICONTROL Offers]**&#x200B;連結。
+1. 前往&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Offers]**&#x200B;連結。
 
    ![](assets/offer_create_001.png)
 
