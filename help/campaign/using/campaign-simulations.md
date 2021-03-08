@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1242'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 要建立模擬，請應用以下步驟：
 
-1. 前往&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙，按一下&#x200B;**[!UICONTROL Create]**&#x200B;區段中的&#x200B;**[!UICONTROL More]**&#x200B;連結，然後選取&#x200B;**[!UICONTROL Simulation]**&#x200B;選項。
+1. 開啟&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤，按一下&#x200B;**[!UICONTROL Create]**&#x200B;區段中的&#x200B;**[!UICONTROL More]**&#x200B;連結，並選取&#x200B;**[!UICONTROL Simulation]**&#x200B;選項。
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如果您透過計畫、方案或促銷活動選取傳送，Adobe Campaign會自動重新整理傳送清單，以便在模擬啟動時加以考慮。 若要這麼做，請勾選&#x200B;**[!UICONTROL Refresh the selection of deliveries each time the simulation is started]**&#x200B;選項。
+   >如果您透過計畫、方案或促銷活動選擇傳送，Adobe Campaign可以自動重新整理傳送清單，以便在模擬啟動時考慮。 若要這麼做，請勾選&#x200B;**[!UICONTROL Refresh the selection of deliveries each time the simulation is started]**&#x200B;選項。
    >  
    >如果您不這樣做，在建立模擬時，計畫、方案或促銷活動中不提供的任何傳送都不會納入考量：稍後新增的傳送將會被忽略。
 
@@ -195,7 +195,7 @@ ht-degree: 2%
 >[!NOTE]
 >
 >我們建議在模擬範本中定義計算軸，而不是針對每個模擬分別定義。\
->模擬範本會儲存在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Simulation templates]**&#x200B;節點中。
+>模擬模板保存在Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > Templates > Simulation templates]**&#x200B;節點中。
 
 **範例:**
 
