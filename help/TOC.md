@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 58%
+source-wordcount: '2412'
+ht-degree: 57%
 
 ---
 
@@ -94,7 +94,11 @@ ht-degree: 58%
       + [建立查詢的步驟](platform/using/steps-to-create-a-query.md)
       + [定義篩選條件](platform/using/defining-filter-conditions.md)
    + 權限{#permissions}
-      + [存取管理](platform/using/access-management.md)
+      + [開始使用權限](platform/using/access-management.md)
+      + [建立和管理營運商](platform/using/access-management-operators.md)
+      + [建立和管理群組](platform/using/access-management-groups.md)
+      + [使用命名權限來設定權限](platform/using/access-management-named-rights.md)
+      + [管理對資料夾的訪問](platform/using/access-management-folders.md)
    + 資料包和枚舉{#administration-basics}
       + [資料包](platform/using/working-with-data-packages.md)
       + [枚舉](platform/using/managing-enumerations.md)
