@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-Adobe Campaign提供&#x200B;**Distributed Marketing**&#x200B;應用程式，用於在中央實體（總部、行銷部門等）之間實作合作促銷活動 及當地實體（銷售點、地區代理等）。 此合作是以共用工作區&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;為基礎，其中集中建立的促銷活動範本和例項提供給本機實體。
+Adobe Campaign提供&#x200B;**分佈式營銷**&#x200B;申請，用於在中央實體（總部、營銷部等）之間實施合作宣傳 及當地實體（銷售點、地區代理等）。 此合作是以共用工作區&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;為基礎，其中集中建立的促銷活動範本和例項提供給本機實體。
 
 中央實體提供本機實體可能使用的促銷活動。 促銷活動是由代表本機或協作促銷活動的套件來實作。 若要使用促銷活動，本機實體必須對其進行訂購，且訂單必須獲得核准。
 
@@ -83,7 +83,7 @@ Distributed Marketing可讓本地實體擁有更多的自主權，同時最佳�
 
 ## 工作區 {#workspace}
 
-可從&#x200B;**Campaigns**&#x200B;範圍存取促銷活動套件清單：按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
+可從&#x200B;**促銷活動**&#x200B;標籤存取促銷活動套件清單：按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
 
 ![](assets/mkg_dist_home_local_op.png)
 
@@ -141,10 +141,10 @@ Central運算子必須屬於&#x200B;**[!UICONTROL Central management]**&#x200B;�
 
    * 目標定義和最大尺寸，
    * 內容定義，
-   * 執行計畫（聯繫日期和提取日期）、**（僅針對本地操作員）** 、
+   * 執行計畫（聯繫日期和提取日期）、**（僅針對本地操作員）、**、
    * 擴展的順序模式，並包含所有必要的附加欄位。
 
-1. 建立網頁表單（Adobe或外部網站），讓您顯示本地化參數、評估目標和預算，以及預覽內容並核准訂單。
+1. 建立Web表單(Adobe或外部網站)，讓您顯示本地化參數、評估目標和預算，以及預覽內容並核准訂單。
 
    對於&#x200B;**協作促銷活動（依目標核准）**，請建立表格，儲存每個本機實體的核准。
 
