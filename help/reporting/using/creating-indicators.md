@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 ## 定義維{#defining-dimensions}
 
-維與為每個立方定義的分析軸基於其相關的事實模式一致。 這些是分析中探索的維度，例如時間（年、月、日……）、產品或合約的分類（家庭、參考等）、人口區段（依城市、年齡組、狀態等）。
+Dimension與為每個立方定義的分析軸基於它們的相關事實模式一致。 這些是分析中探索的維度，例如時間（年、月、日……）、產品或合約的分類（家庭、參考等）、人口區段（依城市、年齡組、狀態等）。
 
 這些分析軸在立方的&#x200B;**[!UICONTROL Dimension]**&#x200B;頁籤中定義。
 
@@ -121,7 +121,7 @@ ht-degree: 1%
 
 操作步驟：
 
-1. 按一下&#x200B;**[!UICONTROL Reports]**&#x200B;宇宙的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選擇剛建立的立方。
+1. 按一下&#x200B;**[!UICONTROL Reports]**&#x200B;頁籤的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選擇剛建立的立方。
 
    ![](assets/s_advuser_cube_wz_14.png)
 
