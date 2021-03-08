@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1564'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** :本機實體可存取其外部網路（非Adobe Campaign）中的促銷活動參數。這些參數與&#x200B;**本機促銷活動（依形式）**&#x200B;的參數相同。
+* **[!UICONTROL By external form]** :本地實體可以訪問其外聯網(非Adobe Campaign)中的促銷活動參數。這些參數與&#x200B;**本機促銷活動（依形式）**&#x200B;的參數相同。
 * **[!UICONTROL Pre-set]** :本機實體使用預設表單來訂購促銷活動，而不進行本地化。
 
    ![](assets/mkt_distr_5.png)
@@ -115,7 +115,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-如果不想顯示文檔上載欄位，請在&#x200B;**[!UICONTROL Number of documents]**&#x200B;欄位中輸入&#x200B;**[!UICONTROL 0]**。
+如果不希望顯示文檔上載欄位，請在&#x200B;**[!UICONTROL Number of documents]**&#x200B;欄位中輸入&#x200B;**[!UICONTROL 0]**。
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-儲存促銷活動範本。 您現在可以從&#x200B;**促銷活動**&#x200B;宇宙的&#x200B;**促銷活動套件**&#x200B;檢視中，按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕來使用它。
+儲存促銷活動範本。 您現在可以從&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤中的&#x200B;**[!UICONTROL Campaign packages]**&#x200B;檢視，按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕來使用它。
 
 ![](assets/mkt_distr_9.png)
 
@@ -234,7 +234,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 要訂購促銷活動，請執行以下操作：
 
-1. 按一下通知訊息中的&#x200B;**[!UICONTROL Order campaign]**，或Adobe Campaign中的對應按鈕。
+1. 在通知訊息中按一下&#x200B;**[!UICONTROL Order campaign]**，或在Adobe Campaign按一下對應的按鈕。
 
    輸入您的ID和密碼以訂購促銷活動。 介面由Web應用程式中定義的一組頁面組成。
 
@@ -270,7 +270,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
    有關詳細資訊，請參閱[批准進程](#approval-process)部分。
 
-1. 接著會通知本機運算子促銷活動可用：促銷活動可用性可在&#x200B;**促銷活動**&#x200B;範圍內的促銷活動套件清單中找到。 然後可使用促銷活動。 如需詳細資訊，請參閱[存取促銷活動](../../campaign/using/accessing-campaigns.md)。
+1. 接著會通知本機運算子促銷活動可用：促銷活動可用性可在&#x200B;**促銷活動**&#x200B;標籤中的促銷活動套件清單中找到。 然後可使用促銷活動。 如需詳細資訊，請參閱[存取促銷活動](../../campaign/using/accessing-campaigns.md)。
 
    **[!UICONTROL Start targeting with order approval]**&#x200B;選項可讓本機實體在訂單核准後立即執行促銷活動。
 
@@ -280,7 +280,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 若要確認促銷活動訂單，中央實體必須核准該訂單。
 
-透過&#x200B;**促銷活動**&#x200B;範圍存取的&#x200B;**[!UICONTROL Campaign orders]**&#x200B;概觀可讓您檢視促銷活動訂單的狀態並加以核准。
+透過&#x200B;**促銷活動**&#x200B;標籤存取的&#x200B;**[!UICONTROL Campaign orders]**&#x200B;概觀可讓您檢視促銷活動訂單的狀態並加以核准。
 
 >[!NOTE]
 >
@@ -300,7 +300,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### 透過Adobe Campaign主控台{#approving-via-the-adobe-campaign-console}核准
+#### 通過Adobe Campaign控制台{#approving-via-the-adobe-campaign-console}批准
 
 訂單也可透過主控台核准，位於促銷活動訂單總覽中。 要批准訂單，請選擇該訂單並按一下&#x200B;**[!UICONTROL Approve the order]**。
 
@@ -326,7 +326,7 @@ Web介面對應於當排序促銷活動時，由本機實體填入的表單。
 
 如果審核者拒絕訂單，則相關通知會自動發送給相關的本地實體：它顯示由操作員輸入的拒絕批准的注釋。
 
-資訊會顯示在促銷活動套件的清單頁面或促銷活動順序頁面上。 如果本機實體有權存取Adobe Campaign主控台，就會收到此拒絕通知。
+資訊會顯示在促銷活動套件的清單頁面或促銷活動順序頁面上。 如果他們可以訪問Adobe Campaign控制台，當地實體將收到此拒絕通知。
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
