@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 ## 過濾器包{#filter-packages}
 
-在&#x200B;**[!UICONTROL Campaigns universe]**&#x200B;中，您可以顯示&#x200B;**[!UICONTROL Campaign packages]**&#x200B;的清單，該清單會重新分組所有現有的Distributed Marketing促銷活動。 您可以篩選此清單，使其只顯示已發佈、延遲、待核准等的促銷活動。 若要這麼做，請按一下此檢視上方區段中的連結，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;連結並選取要顯示的促銷活動套件狀態。
+從&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤中，您可以顯示&#x200B;**[!UICONTROL Campaign packages]**&#x200B;的清單，其中會重新分組所有現有的Distributed Marketing促銷活動。 您可以篩選此清單，使其只顯示已發佈、延遲、待核准等的促銷活動。 若要這麼做，請按一下此檢視上方區段中的連結，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;連結並選取要顯示的促銷活動套件狀態。
 
 ![](assets/mkg_dist_catalog_filter.png)
 
