@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 5%
@@ -80,7 +80,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是除錯工作流程�
 
 ### 工作流資料夾{#workflow-folders}
 
-Adobe建議您在專屬資料夾中建立工作流程。
+Adobe建議您在專用資料夾中建立工作流程。
 
 如果工作流影響整個平台（例如清理流程），您可以考慮在內置&#x200B;**[!UICONTROL Technical Workflows]**&#x200B;資料夾中添加子資料夾。
 
@@ -120,9 +120,9 @@ Adobe建議您在專屬資料夾中建立工作流程。
 
 開始建立工作流之前，請記得定義工作流主管。 如果發生錯誤，將會以電子郵件通知他們。 有關詳細資訊，請參閱[管理錯誤](../../workflow/using/monitoring-workflow-execution.md#managing-errors)。
 
-定期檢查&#x200B;**[!UICONTROL Monitoring]**&#x200B;範圍，以檢視作用中工作流程的整體狀態。 有關詳細資訊，請參閱[實例監督](../../workflow/using/monitoring-workflow-execution.md#instance-supervision)。
+定期檢查&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤以檢視作用中工作流程的整體狀態。 有關詳細資訊，請參閱[實例監督](../../workflow/using/monitoring-workflow-execution.md#instance-supervision)。
 
-Workflow HeatMap可讓Adobe Campaign平台管理員監控執行個體的負載情況，並據以規劃工作流程。 有關詳細資訊，請參閱[工作流監控](../../workflow/using/heatmap.md)。
+Workflow HeatMap可讓Adobe Campaign平台管理員監控執行個體的負載，並據此規劃工作流程。 有關詳細資訊，請參閱[工作流監控](../../workflow/using/heatmap.md)。
 
 ## 使用活動{#using-activities}
 
@@ -132,7 +132,7 @@ Workflow HeatMap可讓Adobe Campaign平台管理員監控執行個體的負載�
 
 ### 活動的名稱{#name-of-the-activity}
 
-在開發工作流程時，所有活動都會有名稱，所有Adobe Campaign物件也會有名稱。 當工具產生名稱時，我們建議您在設定名稱時，以明確的名稱來重新命名該名稱。 稍後執行該操作的風險在於，它可能會使用另一個先前活動的名稱中斷使用活動的工作流。 因此，更新名字將是一項困難的工作。
+在開發工作流程時，所有活動都會有名稱，所有Adobe Campaign物件也一樣。 當工具產生名稱時，我們建議您在設定名稱時，以明確的名稱來重新命名該名稱。 稍後執行該操作的風險在於，它可能會使用另一個先前活動的名稱中斷使用活動的工作流。 因此，更新名字將是一項困難的工作。
 
 活動名稱可在&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤中找到。 請勿將其命名為&#x200B;**[!UICONTROL query]**、**[!UICONTROL query1]**、**[!UICONTROL query11]**，但請為其指定明確的名稱，例如&#x200B;**[!UICONTROL querySubscribedRecipients]**。 此名稱將顯示在日誌中，如果適用於SQL日誌，則有助於在配置工作流時對其進行調試。
 
@@ -143,7 +143,7 @@ Workflow HeatMap可讓Adobe Campaign平台管理員監控執行個體的負載�
 
    ![](assets/wf-scheduler.png)
 
-* 對每個工作流程使用&#x200B;**[!UICONTROL End]**&#x200B;活動。 這可讓Adobe Campaign釋放用於工作流程中計算的暫存空間。 有關詳情，請參閱：[開始和結束](../../workflow/using/start-and-end.md)。
+* 對每個工作流程使用&#x200B;**[!UICONTROL End]**&#x200B;活動。 這可讓Adobe Campaign釋放工作流中用於計算的臨時空間。 有關詳情，請參閱：[開始和結束](../../workflow/using/start-and-end.md)。
 
 ### 活動{#javascript-within-an-activity}中的Javascript
 
