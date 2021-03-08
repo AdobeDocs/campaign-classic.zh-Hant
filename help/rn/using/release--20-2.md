@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 94%
@@ -191,7 +191,7 @@ _2020 年 6 月 8 日_
 
 * 您無法再使用自己的 Litmus 帳戶來佈建及使用 Adobe Campaign 的收件匣轉譯。[進一步瞭解](../../delivery/using/inbox-rendering.md)。
 
-* 為了更好地區分檢視和資料夾，檢視名稱的顏色已從深藍色更改為深青綠色。[顯示全文](../../platform/using/access-management.md#about-views)
+* 為了更好地區分檢視和資料夾，檢視名稱的顏色已從深藍色更改為深青綠色。[顯示全文](../../platform/using/access-management-folders.md)
 
 * Campaign Classic 現在可以連線至英國、印度和加拿大地區代管的 Microsoft Dynamics CRM 帳戶。此功能適用於 Office 365 和內部部署 (Dynamics 2015) 的部署類型。
 
