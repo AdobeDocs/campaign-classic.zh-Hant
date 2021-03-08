@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 訊息中心處理時間{#message-center-processing-time}
 
-此報告會顯示與即時佇列相關的主要指標。 此報告針對技術管理員，也可透過控制例項中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;範圍存取。
+此報告會顯示與即時佇列相關的主要指標。 此報告針對技術管理員，也可透過控制例項的&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤存取。
 
 ![](assets/mc_reports_2.png)
 
@@ -32,5 +32,5 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->警告（橘色）和警告（紅色）指標臨界值可在Adobe Campaign部署精靈中設定。 請參閱[監視閾值](../../message-center/using/monitoring-thresholds.md)。
+>警告（橘色）和警報（紅色）指示符閾值可在Adobe Campaign部署嚮導中配置。 請參閱[監視閾值](../../message-center/using/monitoring-thresholds.md)。
 
