@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 4%
@@ -39,7 +39,7 @@ ht-degree: 4%
 
 選擇&#x200B;**By form** web interface。 此類型的介面可讓您建立個人化欄位，供本機實體在訂購促銷活動時使用。 請參閱[建立本機促銷活動（依表單）](../../campaign/using/examples.md#creating-a-local-campaign--by-form-)。
 
-儲存促銷活動。 您現在可以從&#x200B;**Campaign**&#x200B;宇宙的&#x200B;**Campaign套件**&#x200B;檢視中，按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕使用它。
+儲存促銷活動。 您現在可以從&#x200B;**促銷活動**&#x200B;標籤中的&#x200B;**促銷活動套件**&#x200B;檢視，按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕來使用它。
 
 **[!UICONTROL Campaign Package]**&#x200B;檢視可讓您使用本機促銷活動範本（現成或複製），以及參考協作促銷活動的促銷活動，以建立不同組織實體的促銷活動。
 
