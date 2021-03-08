@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -616,7 +616,7 @@ logInfo("Done");
 
 ### 個人化報表{#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
@@ -631,7 +631,7 @@ logInfo("Done");
 
 ### 已識別的Web應用程式{#identified-web-applications}
 
-如同報表（請參閱[報表](#reports)），如果您已新增JavaScript，則必須檢查並調整。 如果您想要從v7藍色橫幅（包含宇宙）獲益，則必須重新發佈Web應用程式。 如果您的JavaScript程式碼正在運作，您可以選取v6.x轉換引擎。 如果不是這樣，您可以在調整程式碼時使用v6.0轉譯引擎，然後使用v6.x轉譯引擎。
+如同報表（[瞭解詳細內容](#reports)），如果您已新增JavaScript，則必須視需要檢查並調整。 如果您想要從v7藍色橫幅（包含藍色標籤）獲益，則必須重新發佈Web應用程式。 如果您的JavaScript程式碼正在運作，您可以選取v6.x轉換引擎。 如果不是這樣，您可以在調整程式碼時使用v6.0轉譯引擎，然後使用v6.x轉譯引擎。
 
 >[!NOTE]
 選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
