@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 94%
 
 ---
 
@@ -74,7 +74,7 @@ Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保�
 
 有時甚至需要重新整理某些同意，才能繼續使用後續的資料。
 
-行銷人員不會將這些增強的同意要求視為對有價市場的風險，而是可以將它們視為品牌參與度和忠誠度以及客戶滿意度和信任的真正指標。
+行銷人員應將這些增強的同意要求視為品牌參與度、忠誠度以及客戶滿意度與信任的真正指標。
 
 ## 管理同意{#manage-consent}
 
@@ -110,7 +110,7 @@ Adobe Campaign 中的報告是以根據來自傳送和追蹤記錄彙總資料�
 
 ## 再次選擇加入{#opt-in-again}
 
-### 資料主體（其資料已從Adobe Campaign中清除）可以稍後再次選擇加入嗎？
+### 資料主體(其資料已從Adobe Campaign清除)可以稍後再選擇加入嗎？
 
 資料主體可能會再次選擇加入，或在其資料從 Adobe Campaign 中刪除後以新收件者身分新增。
 
