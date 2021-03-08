@@ -2,14 +2,14 @@
 solution: Campaign Classic
 product: campaign
 title: 設定匯入工作
-description: 瞭解如何在Campaign Classic中設定和執行匯入工作。
+description: 瞭解如何在Campaign Classic中配置和執行導入作業。
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2958'
+source-wordcount: '2960'
 ht-degree: 60%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 60%
 
 # 設定匯入工作 {#executing-import-jobs}
 
-Adobe Campaign可讓您從一或多個檔案，以文字、CSV、TAB或XML格式將資料匯入資料庫。 這些檔案與表 (主要或連結) 相關聯，並且源檔的每個欄位與資料庫的欄位相關聯。
+Adobe Campaign可讓您將資料從一或多個檔案匯入至資料庫，格式為文字、CSV、TAB或XML。 這些檔案與表 (主要或連結) 相關聯，並且源檔的每個欄位與資料庫的欄位相關聯。
 
 >[!NOTE]
 >
@@ -291,7 +291,7 @@ Adobe Campaign可讓您從一或多個檔案，以文字、CSV、TAB或XML格式
 
       >[!NOTE]
       >
-      >操作員的預設資料夾是操作員具有寫存取權限的第一個資料夾。請參閱[資料夾存取管理](../../platform/using/access-management.md#folder-access-management)。
+      >操作員的預設資料夾是操作員具有寫存取權限的第一個資料夾。進一步瞭解[資料夾存取管理](../../platform/using/access-management-folders.md)。
 
       要選擇導入資料夾，請按一下&#x200B;**[!UICONTROL Folder]**&#x200B;欄位右側的箭頭，然後選擇相關資料夾。 您也可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;表徵圖在新窗口中顯示樹或建立新資料夾。
 
