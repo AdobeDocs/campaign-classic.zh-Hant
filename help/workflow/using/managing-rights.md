@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 有關管理運算子和權限的詳細資訊，請參閱此[部分](../../platform/using/access-management.md)。
 
-## 運算子群組{#operator-groups}
+## 運算子群組{#operator-groups-wf}
 
 下列運算元群組與工作流程相關聯：
 
