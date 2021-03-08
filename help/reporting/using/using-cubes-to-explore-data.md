@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ### 步驟1 —— 基於立方{#step-1---creating-a-report-based-on-a-cube}建立報告
 
-要建立基於立方的報表，請按一下&#x200B;**[!UICONTROL Reports]**&#x200B;宇宙中的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選擇要使用的立方。
+要建立基於立方的報表，請按一下&#x200B;**[!UICONTROL Reports]**&#x200B;頁籤中的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選擇要使用的立方。
 
 此過程在以下位置詳細說明：[建立以立方](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)為基礎的報表。
 
@@ -152,7 +152,7 @@ ht-degree: 2%
 
    您可以儲存購物車的內容或將其空白。
 
-   相關清單通過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;宇宙訪問。
+   相關清單可通過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;頁籤訪問。
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
