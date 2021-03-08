@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Single selection]** :只有在選取特定實體時，才可存取報表。
 * **[!UICONTROL Multiple selection]** :選取數個實體時，即可存取報表。
-* **[!UICONTROL Global]** :報表可透過「報表」宇宙中可用報表的清單存取。
+* **[!UICONTROL Global]** :報表可透過標籤中可用報表的清單存 **[!UICONTROL Reports]** 取。
 
 ### 顯示序列{#display-sequence}
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 ### 定義篩選選項{#defining-the-filtering-options}
 
-**[!UICONTROL Reports]**&#x200B;宇宙顯示平台中所有可用的報告，且連接的操作員有權對其進行訪問。
+**[!UICONTROL Reports]**&#x200B;標籤會顯示平台中所有可用的報表，且連線的運算子具有存取權。
 
 依預設，這些篩選依相關性排序，但您可以套用其他類型的篩選：字母順序，依年齡等
 
