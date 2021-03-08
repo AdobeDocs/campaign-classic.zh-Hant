@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -19,8 +19,9 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->* 在[消息中心技術工作流](../../message-center/using/technical-workflows.md)中對控制或執行實例所使用的方案進行的方案擴展需要在Adobe Campaign事務性消息傳遞模組使用的其他實例上複製。
+>* [消息中心技術工作流](../../message-center/using/technical-workflows.md)在控制或執行實例上對方案進行的方案擴展需要在Adobe Campaign事務消息模組使用的其他實例上重複。
 >* 控制實例和執行實例必須安裝在不同的電腦上。 他們無法共用相同的促銷活動例項。
+
 >
 
 
@@ -36,7 +37,7 @@ ht-degree: 2%
 要建立執行實例類型外部帳戶，請應用以下步驟：
 
 1. 前往&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;資料夾。
-1. 選擇執行例項類型之一，以Adobe Campaign提供的現成可用外部帳戶，按一下滑鼠右鍵並選擇&#x200B;**[!UICONTROL Duplicate]**。
+1. 選擇一個執行實例類型，其中一個是帶有Adobe Campaign的現成可用外部帳戶，按一下右鍵並選擇&#x200B;**[!UICONTROL Duplicate]**。
 
    ![](assets/messagecenter_create_extaccount_001.png)
 
@@ -52,7 +53,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_extaccount_004.png)
 
-1. 帳戶必須與「消息中心代理」匹配，如操作員資料夾中所定義。 依預設，Adobe Campaign提供的現成可用帳戶是&#x200B;**[!UICONTROL mc]**。
+1. 帳戶必須與「消息中心代理」匹配，如操作員資料夾中所定義。 依預設，Adobe Campaign提供的現成可用帳戶為&#x200B;**[!UICONTROL mc]**。
 
    ![](assets/messagecenter_create_extaccount_005.png)
 
@@ -68,7 +69,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_extaccount_007.png)
 
-   資料收集可透過使用HTTP/HTTPS存取的Web服務，或透過Federated Data Access(FDA)模組進行。
+   資料收集是透過使用HTTP/HTTPS存取的Web服務，或透過Federated Data Access(FDA)模組進行。
 
    >[!NOTE]
    >
@@ -137,17 +138,17 @@ ht-degree: 2%
 
 要使用多個控制實例，必須對ALL執行實例執行此配置。
 
-1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;節點中，為每個運算子建立一個資料夾：**資料夾1**&#x200B;和&#x200B;**資料夾2**。 有關建立資料夾和視圖的詳細資訊，請參閱[Platform](../../platform/using/access-management.md#folders-and-views)。
+1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;節點中，為每個運算子建立一個資料夾：**資料夾1**&#x200B;和&#x200B;**資料夾2**。 有關建立資料夾和視圖的詳細資訊，請參閱[此頁](../../platform/using/access-management-folders.md)。
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. 通過複製預設提供的消息中心運算子(**mc5/>)，建立** mc1 **和** mc2 **運算子。**&#x200B;有關建立運算子的詳細資訊，請參閱[本節](../../platform/using/access-management.md#operators)。
+1. 通過複製預設提供的消息中心運算子(**mc5/>)，建立** mc1 **和** mc2 **運算子。**&#x200B;有關建立運算子的詳細資訊，請參閱[本節](../../platform/using/access-management-operators.md)。
 
    ![](assets/messagecenter_multi_control_4.png)
 
    >[!NOTE]
    >
-   >**mc1** 和 **mc2** 營運 **[!UICONTROL Message Center execution]** 商必須擁有權限，且無法存取Adobe Campaign用戶端主控台。操作員必須始終與安全區域連結。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+   >**mc1** 和 **mc2** 運營商必 **[!UICONTROL Message Center execution]** 須擁有權限，而且無法訪問Adobe Campaign客戶機控制台。操作員必須始終與安全區域連結。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
 1. 對於每個運算子，選中&#x200B;**[!UICONTROL Restrict to information found in sub-folders of]**&#x200B;框，並為&#x200B;**mc1**&#x200B;運算子選擇相關資料夾（****&#x200B;資料夾1和&#x200B;**mc2**&#x200B;運算子的&#x200B;**資料夾2**）。
 
