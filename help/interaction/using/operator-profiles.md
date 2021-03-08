@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 * **[!UICONTROL Offer manager]** :建立和維護選件。請注意，如果選件用於工作流程中，運算元必須位於&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;運算元群組中，才能執行工作流程。
 * **[!UICONTROL Delivery manager]** :核准和使用選件
 
-建立「互動」特定運算子的步驟與建立平台上所有其他運算子的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md#creating-an-operator)。在建立操作員期間配置權限。
+建立「互動」特定運算子的步驟與建立平台上所有其他運算子的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md)。在建立操作員期間配置權限。
 
 ## 選件管理員{#offer-manager}
 
