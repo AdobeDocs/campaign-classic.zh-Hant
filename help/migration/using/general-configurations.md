@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2786'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 一般配置{#general-configurations}
 
-本節詳細說明如果您要從v5.11或v6.02移轉，在Adobe Campaign v7中執行的設定。
+本節詳細說明如果您要從v5.11或v6.02移轉，將在Adobe Campaignv7中執行的設定。
 
 此外：
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ### Oracle {#oracle}
 
-如果在配置過程中出現&#x200B;**ORA 01805**&#x200B;錯誤，這表示應用程式伺服器和資料庫伺服器之間的Oracle時區檔案不同步。 若要重新同步這些檔案，請套用下列步驟：
+如果在配置過程中出現&#x200B;**ORA 01805**&#x200B;錯誤，這表示應用程式伺服器與資料庫伺服器之間的Oracle時區檔案不同步。 若要重新同步這些檔案，請套用下列步驟：
 
 1. 要標識所使用的時區檔案，請運行以下命令：
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 如需詳細資訊，請造訪：[https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004)。
 
-客戶端和伺服器之間的時區未對準也會導致一些滯後。 這就是為什麼建議在客戶端和伺服器端使用相同版本的Oracle庫，兩個時區必須相同。
+客戶端和伺服器之間的時區未對準也會導致一些滯後。 這就是為什麼我們建議在客戶端和伺服器端使用相同版本的Oracle庫，兩個時區必須相同。
 
 要檢查兩側是否位於同一時區：
 
@@ -68,7 +68,7 @@ ht-degree: 0%
    genezi -v
    ```
 
-   genezi是在&#x200B;**$ORACLE_HOME/bin**&#x200B;儲存庫中找到的二進位檔案。
+   genezi是&#x200B;**$ORACLE_HOME/bin**&#x200B;儲存庫中的二進位檔案。
 
 1. 運行以下命令檢查伺服器端的時區檔案版本：
 
@@ -84,9 +84,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->基於安全性原因，Adobe Campaign平台不再預設為可存取：您必須設定安全區，因此必須收集營運商IP位址。
+>出於安全原因，Adobe Campaign平台不再預設訪問：您必須設定安全區，因此必須收集營運商IP位址。
 
-Adobe Campaign v7包含&#x200B;**安全區**&#x200B;的概念。 每個用戶都必須與區域關聯才能登錄到實例，並且用戶的IP地址必須包含在安全區域中定義的地址或地址範圍中。 您可在Adobe Campaign伺服器設定檔案中設定安全區。 必須在控制台(**[!UICONTROL Administration > Access management > Operators]**)中定義用戶關聯到的安全區。
+Adobe Campaignv7包含&#x200B;**安全區**&#x200B;的概念。 每個用戶都必須與區域關聯才能登錄到實例，並且用戶的IP地址必須包含在安全區域中定義的地址或地址範圍中。 可以在Adobe Campaign伺服器配置檔案中配置安全區。 必須在控制台(**[!UICONTROL Administration > Access management > Operators]**)中定義用戶關聯到的安全區。
 
 **在遷移之前**，請向網路管理員請求幫助定義在遷移後要激活的安全區。
 
@@ -104,9 +104,9 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->所有追蹤伺服器的&#x200B;**internal**&#x200B;密碼必須相同。 如需詳細資訊，請參閱[本節](../../installation/using/campaign-server-configuration.md#internal-identifier)和[本節](../../platform/using/access-management.md#about-permissions)。
+>所有追蹤伺服器的&#x200B;**internal**&#x200B;密碼必須相同。 如需詳細資訊，請參閱[本節](../../installation/using/campaign-server-configuration.md#internal-identifier)和[本節](../../platform/using/access-management.md)。
 
-### v7的新功能 {#new-features-in-v7}
+### v7 {#new-features-in-v7}的新功能
 
 * 沒有權限的使用者無法再連線至Adobe Campaign。 其權限必須手動添加，例如，建立名為&#x200B;**connect**&#x200B;的權限。
 
@@ -194,7 +194,7 @@ nlserver config -internalpassword
 
 ### JavaScript {#javascript}
 
-Adobe Campaign v7整合了更新的JavaScript解譯器。 但是，此更新可能會導致某些指令碼運行不正常。 由於舊版引擎的權限較大，因此某些語法將可以運作，而新版引擎則不再適用。
+Adobe Campaignv7整合了更新的JavaScript解譯器。 但是，此更新可能會導致某些指令碼運行不正常。 由於舊版引擎的權限較大，因此某些語法將可以運作，而新版引擎則不再適用。
 
 **[!UICONTROL myObject.@attribute]**&#x200B;語法現在僅對XML對象有效。 此語法可用於個人化傳送和內容管理。 如果您在非XML物件上使用此類語法，個人化功能將不再有效。
 
@@ -246,7 +246,7 @@ Adobe Campaign v7整合了更新的JavaScript解譯器。 但是，此更新可�
 
 ### SQLData {#sqldata}
 
-為了加強例項安全性，Adobe Campaign v7已引入新語法，以取代以SQLData為基礎的語法。 如果您將此語法與這些程式碼元素搭配使用，則必須加以修改。 主要內容是：
+為了增強實例安全性，在Adobe Campaignv7中引入了一種新的語法來取代基於SQLData的語法。 如果您將此語法與這些程式碼元素搭配使用，則必須加以修改。 主要內容是：
 
 * 依子查詢篩選：新語法以`<subQuery>`元素為基礎，以定義子查詢
 * 匯總：新語法為&quot;aggregate function(collection)&quot;
@@ -260,7 +260,7 @@ Adobe Campaign v7整合了更新的JavaScript解譯器。 但是，此更新可�
 
 使用&quot;@expr&quot;屬性時，可能存在SQLData。 可搜尋下列詞語：&quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
 
-Adobe Campaign v7例項預設會受到保護。 安全性來自&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;檔案中安全區的定義：**allowSQLInjoptence**&#x200B;屬性管理SQL語法安全性。
+Adobe Campaignv7例項預設會受到保護。 安全性來自&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;檔案中安全區的定義：**allowSQLInjoptence**&#x200B;屬性管理SQL語法安全性。
 
 如果在配置級執行期間發生SQLData錯誤，則必須修改此屬性以暫時允許使用基於SQLData的語法，從而允許重寫代碼。 為此，**serverConf.xml**&#x200B;檔案中必須變更下列選項：
 
@@ -446,18 +446,17 @@ allowSQLInjection="false"
 
 要解決衝突，請應用以下流程：
 
-1. 在Adobe Campaign樹狀結構中，將游標置於&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**&#x200B;上。
+1. 在Adobe Campaign樹結構中，將游標置於&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**&#x200B;上。
 1. 在清單中選擇要解決的衝突。
 
 解決衝突有三種可能的方法：
 
 * **[!UICONTROL Declared as resolved]**:需要營運商事先介入。
-* **[!UICONTROL Accept the new version]**:如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
+* **[!UICONTROL Accept the new version]**:建議使用者是否未變更Adobe Campaign提供的資源。
 * **[!UICONTROL Keep the current version]**:表示更新遭拒。
 
    >[!IMPORTANT]
-   >
-   >如果選擇此解析模式，則可能丟失新版本中的修補程式。 因此，強烈建議不要將此選項用於或僅保留給專家運算子。
+   如果選擇此解析模式，則可能丟失新版本中的修補程式。 因此，強烈建議不要將此選項用於或僅保留給專家運算子。
 
 如果您選擇手動解決衝突，請按如下步驟進行：
 
@@ -474,7 +473,7 @@ allowSQLInjection="false"
 
 ## Tomcat {#tomcat}
 
-Adobe Campaign v7中整合的Tomcat伺服器已變更版本(Tomcat 7)。 因此，其安裝資料夾(tomcat-6)也發生了更改(tomcat 7)。 在配置升級後，請務必檢查路徑是否連結到更新的資料夾（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;檔案中）:
+Adobe Campaignv7中的整合Tomcat伺服器已更改版本(Tomcat 7)。 因此，其安裝資料夾(tomcat-6)也發生了更改(tomcat 7)。 在配置升級後，請務必檢查路徑是否連結到更新的資料夾（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;檔案中）:
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
@@ -503,14 +502,12 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 在v7中，選件內容已移動。 在v6.02中，內容位於每個表示模式(**nms:emailOfferView**)中。 在v7中，內容現在位於選件架構中。 在設定升級後，內容就不會顯示在介面中。 在設定升級後，您必須重新建立選件內容，或開發指令碼，自動將內容從表示架構移至選件架構。
 
 >[!IMPORTANT]
->
->如果某些使用已設定選件的傳送要在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，則會提供「相容模式」。 不建議使用此模式，因為Interaction v7中的所有新功能都不會讓您受益。 這是一種過渡模式，可讓您在實際6.1移轉之前完成持續的促銷活動。 有關此模式的更多資訊，請與我們聯絡。
+如果某些使用已設定選件的傳送要在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，則會提供「相容模式」。 不建議使用此模式，因為Interaction v7中的所有新功能都不會讓您受益。 這是一種過渡模式，可讓您在實際6.1移轉之前完成持續的促銷活動。 有關此模式的更多資訊，請與我們聯絡。
 
-Adobe Campaign v7檔案夾的&#x200B;**Migration**&#x200B;檔案夾中提供移動指令碼(**interactionTo610_full_XX.js**)範例。 此檔案顯示客戶端指令碼的範例，每個選件使用單一電子郵件表示法（**[!UICONTROL htmlSource]**&#x200B;和&#x200B;**[!UICONTROL textSource]**&#x200B;欄位）。 **NmsEmailOfferView**&#x200B;表格中的內容已移至選件表格。
+移動指令碼(**interactionTo610_full_XX.js**)的示例可在Adobe Campaignv7資料夾的&#x200B;**Migration**&#x200B;資料夾中找到。 此檔案顯示客戶端指令碼的範例，每個選件使用單一電子郵件表示法（**[!UICONTROL htmlSource]**&#x200B;和&#x200B;**[!UICONTROL textSource]**&#x200B;欄位）。 **NmsEmailOfferView**&#x200B;表格中的內容已移至選件表格。
 
 >[!NOTE]
->
->使用此指令碼不允許您從「內容管理」和「轉換函式」選項中獲益。 為了從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
+使用此指令碼不允許您從「內容管理」和「轉換函式」選項中獲益。 為了從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -609,8 +606,7 @@ logInfo("Done");
 1. 執行完整的測試。
 
    >[!NOTE]
-   >
-   >線上類別和選件的名稱會在上線後修改。 在傳入渠道上，更新選件和類別的所有參考。
+   線上類別和選件的名稱會在上線後修改。 在傳入渠道上，更新選件和類別的所有參考。
 
 ## 報表 {#reports}
 
@@ -638,8 +634,7 @@ logInfo("Done");
 如同報表（請參閱[報表](#reports)），如果您已新增JavaScript，則必須檢查並調整。 如果您想要從v7藍色橫幅（包含宇宙）獲益，則必須重新發佈Web應用程式。 如果您的JavaScript程式碼正在運作，您可以選取v6.x轉換引擎。 如果不是這樣，您可以在調整程式碼時使用v6.0轉譯引擎，然後使用v6.x轉譯引擎。
 
 >[!NOTE]
->
->選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
+選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
 
 v7中的Web應用程式連線方法已變更。 如果您在已識別的Web應用程式中遇到任何連線問題，您必須暫時啟用&#x200B;**serverConf.xml**&#x200B;檔案中的&#x200B;**allowUserPassword**&#x200B;和&#x200B;**sessionTokenOnly**&#x200B;選項。 在配置升級後，請修改下列選項值：
 
@@ -672,8 +667,7 @@ sessionTokenOnly="false"
 如果您遇到任何問題，請重新發佈Web應用程式。 如果問題仍然存在，您可以選取v6.0轉換引擎。 如果您尚未新增JavaScript，則可以選取v6.x轉換引擎，並受益於其新功能。
 
 >[!NOTE]
->
->選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
+選取轉換引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
 
 ## Red-Hat {#red-hat}
 
