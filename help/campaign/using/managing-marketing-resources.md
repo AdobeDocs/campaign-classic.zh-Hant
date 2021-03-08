@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1383'
 ht-degree: 1%
 
 ---
@@ -23,19 +23,19 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 ## 新增行銷資源{#adding-a-marketing-resource}
 
-行銷資源可透過「行銷活動」範圍存取。
+行銷資源可透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤存取。
 
 要添加資源，請按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 
 ![](assets/s_ncs_user_mkg_resource_add.png)
 
-若要讓資源可在Adobe Campaign伺服器上使用，您必須將所需資源拖放至編輯器的中間區域，以新增它。 您也可以按一下&#x200B;**[!UICONTROL Upload file to server...]**&#x200B;連結。
+要使資源在Adobe Campaign伺服器上可用，必須通過將所需資源拖放到編輯器的中間區域來添加該資源。 您也可以按一下&#x200B;**[!UICONTROL Upload file to server...]**&#x200B;連結。
 
 ![](assets/s_ncs_user_mkg_resource_file.png)
 
 確認訊息可讓您啟動上傳。
 
-上載完成後，資源將添加到可用資源清單中。 Adobe Campaign營運商可存取它。 他們可以（通過&#x200B;**[!UICONTROL Preview]**&#x200B;頁籤）查看檔案、複製以修改檔案，或更新伺服器上的檔案（使用&#x200B;**[!UICONTROL Edit]**&#x200B;頁籤）。
+上載完成後，資源將添加到可用資源清單中。 Adobe Campaign運營商可以使用。 他們可以（通過&#x200B;**[!UICONTROL Preview]**&#x200B;頁籤）查看檔案、複製以修改檔案，或更新伺服器上的檔案（使用&#x200B;**[!UICONTROL Edit]**&#x200B;頁籤）。
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
@@ -84,7 +84,7 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 ![](assets/s_ncs_user_mkg_resource_lock_date.png)
 
-這項資訊可讓您通知其他Adobe Campaign營運商資源解除鎖定的日期。
+此資訊可讓您通知其他Adobe Campaign營運商資源解除鎖定的日期。
 
 資源更新後，會自動解除鎖定，並讓所有運算子再次使用。
 
@@ -98,11 +98,11 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 對於每個資源， **[!UICONTROL Forum]**&#x200B;頁籤允許參與者交換資訊。
 
-[討論](../../campaign/using/discussion-forums.md) 論壇說明論壇在Adobe Campaign中的運作方式。
+[論壇](../../campaign/using/discussion-forums.md) 闡述了論壇在Adobe Campaign的運作方式。
 
 ## 行銷資源的生命週期{#life-cycle-of-a-marketing-resource}
 
-在建立資源時，會指定Adobe Campaign營運商來設計、校對、核准和發佈資源。 這些促銷活動可以決定持續時間。
+建立資源時，將指定Adobe Campaign操作員來設計、校對、批准和發佈資源。 這些促銷活動可以決定持續時間。
 
 **[!UICONTROL Tracking]**&#x200B;頁籤允許您監視資源上執行的任何操作：核准、核准拒絕、相關意見或出版物。
 
@@ -110,7 +110,7 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 ### 核准程式{#approval-process}
 
-如果在&#x200B;**[!UICONTROL Tracking]**&#x200B;頁籤中指定了預期可用日期，則資源詳細資訊中將顯示該日期。 到達此日期後，您可以使用資源儀表板中的&#x200B;**[!UICONTROL Submit for approval]**&#x200B;按鈕執行批准流程。 資源狀態隨後變為&#x200B;**[!UICONTROL Approval in progress]**。
+如果在&#x200B;**[!UICONTROL Tracking]**&#x200B;頁籤中指定了預期可用日期，則該日期將顯示在資源詳細資訊中。 到達此日期後，您可以使用資源儀表板中的&#x200B;**[!UICONTROL Submit for approval]**&#x200B;按鈕執行批准流程。 資源狀態隨後變為&#x200B;**[!UICONTROL Approval in progress]**。
 
 資源可通過其儀表板上的&#x200B;**[!UICONTROL Approve resource]**&#x200B;按鈕獲得批准。
 
@@ -142,7 +142,7 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 發佈資源意味著（例如，由其他任務）可供使用。 出版物會因資源性質而異：對於傳單，發佈可能意味著將檔案傳送至印表機、對於網路代理商，也可能意味著將檔案發佈至網站等。
 
-為了讓Adobe Campaign發佈，您需要建立適當的工作流程並將其連結至資源。 要執行此操作，請開啟資源的&#x200B;**[!UICONTROL Advanced settings]**&#x200B;框，然後在&#x200B;**[!UICONTROL Post-processing]**&#x200B;欄位中選擇所需的工作流。
+為了讓Adobe Campaign發佈，您需要建立適當的工作流程，並將它連結至資源。 要執行此操作，請開啟資源的&#x200B;**[!UICONTROL Advanced settings]**&#x200B;框，然後在&#x200B;**[!UICONTROL Post-processing]**&#x200B;欄位中選擇所需的工作流。
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
@@ -193,7 +193,7 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 >[!NOTE]
 >
->有關Adobe Campaign中股票管理的詳細資訊，請參閱[股票管理](../../campaign/using/providers--stocks-and-budgets.md#stock-management)。
+>有關Adobe Campaign的股票管理詳情，請參閱[股票管理](../../campaign/using/providers--stocks-and-budgets.md#stock-management)。
 
 若要將行銷資源與庫存建立關聯，請編輯庫存對應並編輯或建立庫存。 新增庫存行並選取對應的行銷資源。
 
@@ -211,7 +211,7 @@ Adobe Campaign可讓您管理和追蹤促銷活動生命週期中涉及的行銷
 
 ## 進階函式 {#advanced-functions}
 
-行銷資源控制面板可讓您執行常見的作業類型：新增、編輯、鎖定／解除鎖定、核准、發佈。 您可以建立其他類型的行銷資源，並透過Adobe Campaign樹狀結構存取進階功能。 若要這麼做，請按一下Adobe Campaign首頁中的&#x200B;**[!UICONTROL Explorer]**。
+行銷資源控制面板可讓您執行常見的作業類型：新增、編輯、鎖定／解除鎖定、核准、發佈。 您可以建立其他類型的行銷資源，並透過Adobe Campaign樹狀結構存取進階功能。 要執行此操作，請按一下Adobe Campaign首頁中的&#x200B;**[!UICONTROL Explorer]**。
 
 預設情況下，行銷資源儲存在樹的&#x200B;**[!UICONTROL MRM > Marketing resources]**&#x200B;節點中。
 
