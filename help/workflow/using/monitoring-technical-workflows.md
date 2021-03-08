@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## 實例監控控制面板{#instance-monitoring-dashboard}
 
-您可透過&#x200B;**[!UICONTROL Monitoring]**&#x200B;宇宙來存取例項監控儀表板。
+您可以透過&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤存取例項監控控制面板。
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -97,4 +97,4 @@ ht-degree: 8%
 
 您可以建立檢視，以便監控整個功能區域或整個系統的所有工作流程。
 
-您也可以使用Adobe Campaign工作或報表功能，根據需求建立檔案，檔案隨時都是最新的。
+您也可以使用Adobe Campaign的工作或報告功能來建立隨選檔案，檔案隨時都是最新的。
