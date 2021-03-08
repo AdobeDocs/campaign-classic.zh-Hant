@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >API會在專屬檔案中詳細列出，其存取權取決於您的合約。 請參閱[API](../../configuration/using/about-web-services.md)。
 >
->此範例中使用的網頁應用程式並非隨附Adobe Campaign而現成的網頁應用程式。 若要在促銷活動中使用表單，您必須建立專用的Web應用程式。
+>此範例中使用的Web應用程式不是隨附於Adobe Campaign的Web應用程式。 若要在促銷活動中使用表單，您必須建立專用的Web應用程式。
 
 建立促銷活動範本時，按一下&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;連結的&#x200B;**[!UICONTROL Web interface]**&#x200B;選項中的&#x200B;**[!UICONTROL Zoom]**&#x200B;圖示，以存取Web應用程式的詳細資訊。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ### 簡介 {#introduction}
 
-你是一家大型服裝品牌的營銷經理，該品牌在美國各地擁有一家線上商店和幾家精品店。 現在春天到來了，你決定推出一個特惠方案，讓最佳客戶在您的服裝目錄中享有50%的折扣。
+你是一家大型服裝品牌的營銷經理，該品牌在美國各地擁有一家線上商店和幾家精品店。 現在春天到來了，你決定推出一個特惠方案，讓最佳客戶將您目錄中所有服飾的50%折扣。
 
 此優惠針對的是您美國商店的最佳客戶，即自年初以來已花費超過300美元的客戶。
 
@@ -161,7 +161,7 @@ ht-degree: 0%
 
 #### 發佈促銷活動{#publishing-the-campaign}
 
-您現在可以從&#x200B;**促銷活動**&#x200B;範圍新增&#x200B;**促銷活動套件**。
+您現在可以從&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤新增&#x200B;**促銷活動套件**。
 
 1. 選擇您的&#x200B;**[!UICONTROL Reference campaign]**。 在套件的&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，您可以選取&#x200B;**[!UICONTROL Approval mode]**&#x200B;以用於促銷活動：
 
