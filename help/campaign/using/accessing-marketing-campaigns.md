@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1045'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,15 @@ Adobe Campaign可讓您建立、設定、執行及分析行銷宣傳。 所有�
 
 ### 首頁 {#home-page}
 
-連線至Adobe Campaign後，您會看到首頁。
+一旦您連線到Adobe Campaign，您就會看到首頁。
 
 ![](assets/campaign_global_view.png)
 
-按一下導覽列中的連結，以存取各個宇宙。
+按一下導覽列中的連結，以存取各種功能。
 
-促銷活動元素位於&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙中：您可在此處檢視行銷方案和促銷活動及其子集的概述。 行銷方案由促銷活動組成，促銷活動由傳遞、任務、連結資源等組成。 在使用Campaign進行行銷活動管理的環境中，促銷活動中會找到有關傳送、預算、審閱者和連結檔案的資訊。
+促銷活動元素位於&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤中：您可在此處檢視行銷方案和促銷活動及其子集的概述。 行銷方案由促銷活動組成，促銷活動由傳遞、任務、連結資源等組成。 在使用Campaign進行行銷活動管理的環境中，促銷活動中會找到有關傳送、預算、審閱者和連結檔案的資訊。
 
-**[!UICONTROL Campaigns]**&#x200B;宇宙的導航塊提供各種條目，具體取決於實例上安裝的模組。 例如，您可以存取：
+**[!UICONTROL Campaigns]**&#x200B;頁籤的&#x200B;**[!UICONTROL Browsing]**&#x200B;塊提供了各種條目，具體取決於實例上安裝的模組。 例如，您可以存取：
 
 * **促銷活動日曆**:計畫、行銷方案、遞送和促銷活動的日曆。請參閱[促銷活動日曆](#campaign-calendar)。
 * **促銷活動**:存取所有行銷方案中所包含的促銷活動。
@@ -40,13 +40,13 @@ Adobe Campaign可讓您建立、設定、執行及分析行銷宣傳。 所有�
 
 >[!NOTE]
 >
->有關Adobe Campaign整體人機工程學、權限和描述檔管理功能的詳細資訊，請參閱[本節](../../platform/using/adobe-campaign-workspace.md)。
+>有關Adobe Campaign總體人機工程學、權限和概要檔案管理功能的詳細資訊，請參閱[本節](../../platform/using/adobe-campaign-workspace.md)。
 >
 >與頻道和傳送有關的所有功能詳見本節[。](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 ### 促銷活動日曆{#campaign-calendar}
 
-每個促銷活動都屬於一個方案，而該方案又屬於一個方案。 計畫、方案和促銷活動可透過&#x200B;**促銷活動**&#x200B;宇宙中的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;功能表存取。
+每個促銷活動都屬於一個方案，而該方案又屬於一個方案。 計畫、程式和促銷活動可通過&#x200B;**促銷活動**&#x200B;標籤中的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;功能表存取。
 
 若要編輯計畫、方案、促銷活動或傳送，請在日曆中按一下其名稱，然後按一下&#x200B;**[!UICONTROL Open...]**。 然後，它會顯示在新標籤中，如下所示：
 
@@ -95,7 +95,7 @@ Campaign可讓您管理由各種行銷促銷活動組成的一組方案。 每�
    ![](assets/campaign_op_edit.png)
 
 1. 透過程式的&#x200B;**[!UICONTROL Schedule]**&#x200B;標籤，編輯模式與透過促銷活動日曆的模式相同。
-1. 透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙的&#x200B;**[!UICONTROL Campaigns]**&#x200B;連結，按一下您要編輯的促銷活動名稱。
+1. 透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Campaigns]**&#x200B;連結，按一下您要編輯的促銷活動名稱。
 
    ![](assets/campaign_edit_from_list.png)
 
@@ -109,7 +109,7 @@ Campaign可讓您管理由各種行銷促銷活動組成的一組方案。 每�
 
 ![](assets/s_ncs_user_op_board_start_del.png)
 
-有了Adobe Campaign，您可以設定協作流程，以建立和核准行銷和通訊宣傳的不同階段：預算、目標、內容等的核准。
+有了Adobe Campaign，您可以設定協作流程，以建立和核准行銷和通訊宣傳活動的各個階段：預算、目標、內容等的核准。
 
 ![](assets/s_ncs_user_op_board_validate.png)
 
@@ -144,7 +144,7 @@ Campaign可讓您管理由各種行銷促銷活動組成的一組方案。 每�
 促銷活動是透過促銷活動範本建立。 您可以設定可重複使用的範本，其中已選取部分選項，並儲存其他設定。 對於每個促銷活動，都提供下列功能：
 
 * 參考檔案和資源：您可以將檔案與促銷活動（簡介、報表、影像等）建立關聯。 支援所有檔案格式。 請參閱[管理相關文檔](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)。
-* 定義成本：對於每個促銷活動，Adobe Campaign可讓您定義成本項目和成本計算結構，以便用於建立行銷活動。 例如：列印成本、使用外部代理、租房等。 請參閱[定義成本類別](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories)。
+* 定義成本：對於每個促銷活動，Adobe Campaign可讓您定義成本分錄和成本計算結構，以便在建立行銷活動時使用。 例如：列印成本、使用外部代理、租房等。 請參閱[定義成本類別](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories)。
 * 定義目標：您可以定義促銷活動的可量化目標，例如訂閱者人數、業務量等。 這些資訊稍後會用於促銷活動報表。
 * 管理種子地址（有關詳細資訊，請參閱[本節](../../delivery/using/about-seed-addresses.md)）和控制組（請參閱[定義控制組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)）。
 * 管理批准：您可以選取要核准的處理，並視需要選取檢閱運算元或運算元群組。 請參閱[檢查和批准傳送](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)。
