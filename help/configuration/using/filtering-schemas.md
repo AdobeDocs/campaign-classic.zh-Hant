@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# 篩選綱要{#filtering-schemas}
+# 篩選結構{#filtering-schemas}
 
 ## 系統過濾器{#system-filters}
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 >
 >如果未指定篩選器，則所有運算子都具有架構的讀取和寫入權限。
 
-## 保護內置結構{#protecting-built-in-schemas}
+## Protect內置結構{#protecting-built-in-schemas}
 
 預設情況下，內置結構只能對具有ADMINISTRATION權限的操作員使用WRITE權限訪問：
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->**xtk:sessionInfo**&#x200B;架構的讀取和寫入權限僅能由Adobe Campaign例項的內部帳戶存取。
+>**xtk:sessionInfo**&#x200B;架構的READ和WRITE權限僅能由Adobe Campaign實例的內部帳戶訪問。
 
 ## 修改內置結構{#modifying-system-filters-of-built-in-schemas}的系統篩選器
 
