@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 63%
@@ -77,13 +77,13 @@ ht-degree: 63%
 
 ![](assets/d_ncs_user_interface01.png)
 
-Adobe Campaign檔案總管的一般版面配置會顯示在「使用Adobe Campaign檔案總管](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)」中。[
+在[使用Adobe Campaign資源管理器](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中顯示Adobe Campaign資源管理器的一般佈局。
 
 >[!NOTE]
 >
->您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 [使用Adobe Campaign檔案總管](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中說明清單顯示設定。
+>您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 [使用Adobe Campaign資源管理器](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中介紹了清單顯示配置。
 >
->您也可以定義收件者畫面。有關此功能的詳細資訊，請參閱[資料夾和視圖](../../platform/using/access-management.md#folders-and-views)。
+>您也可以定義收件者畫面。有關此功能的詳細資訊，請參閱[資料夾和視圖](../../platform/using/access-management-folders.md)。
 
 ## 使用中的設定檔案 {#active-profiles}
 
@@ -91,7 +91,7 @@ Adobe Campaign檔案總管的一般版面配置會顯示在「使用Adobe Campai
 
 >[!NOTE]
 >
->如果您是在AWS上代管，並使用Campaign Classic建置8931，您也可以直接從控制面板監控實例上使用的活動配置檔案數。 有關詳細資訊，請參閱[控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
+>如果您是在AWS上代管，並使用來自build 8931的Campaign Classic，您也可以直接從控制面板監視實例上使用的活動配置檔案的數量。 有關詳細資訊，請參閱[控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 >
 >請注意，「作用中」描述檔計數僅適用於&#x200B;**行銷例項**。 它不適用於執行實例，即MID（中間採購）和RT（消息中心／即時消息）實例。
 
@@ -105,17 +105,17 @@ Adobe Campaign檔案總管的一般版面配置會顯示在「使用Adobe Campai
 >
 >Facebook 和 Twitter 通路不包含在內。
 
-您可以從Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;功能表概述&#x200B;**[!UICONTROL Number of active profiles]**。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技術工作流](../../workflow/using/about-technical-workflows.md)執行，該工作流每天運行，並將新資料添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜單中當前時段的現有報告中。 每個期間均為 12 個月。
+您可以從Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;菜單概述&#x200B;**[!UICONTROL Number of active profiles]**。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技術工作流](../../workflow/using/about-technical-workflows.md)執行，該工作流每天運行，並將新資料添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜單中當前時段的現有報告中。 每個期間均為 12 個月。
 
 ## 教學課程影片{#create-profiles-video}
 
 了解如何存取設定檔資料、排序和篩選設定檔，以及手動建立和管理設定檔。
 
-此影片也說明Adobe Campaign Classic與一般資料保護法規的相容性。
+此視訊還說明Adobe Campaign Classic遵守一般資料保護法規的情況。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
 
 **另請參閱**
 
