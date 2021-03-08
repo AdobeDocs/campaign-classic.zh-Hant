@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 2%
 
 ---
@@ -47,9 +47,9 @@ ht-degree: 2%
 
 * **[!UICONTROL Anonymous access]**:此選項可讓您不受限制地存取報表。但是，不可能操縱。
 
-   「webapp」技術營運商的權利可用來顯示報表元素。 瞭解本節](../../platform/using/access-management.md#default-operators)的更多資訊。[
+   「webapp」技術營運商的權限可用來顯示報表元素。 瞭解本節](../../platform/using/access-management-operators.md)的更多資訊。[
 
-* **[!UICONTROL Access control]**:此選項可讓Adobe Campaign營運商在登入後加以存取。
+* **[!UICONTROL Access control]**:此選項可讓Adobe Campaign運算子在登入後加以存取。
 * **[!UICONTROL Specific account]**:此選項可讓您以在欄位中選取之運算子的權限執行 **[!UICONTROL Operator]** 報表。
 
 ## 管理報告本地化{#managing-report-localization}
