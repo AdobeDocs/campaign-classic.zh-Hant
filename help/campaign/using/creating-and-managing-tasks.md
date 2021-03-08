@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3732'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## 關於任務{#about-tasks}
 
-Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生命週期。 方案和促銷活動實作可細分為指派給Adobe Campaign營運商或外部服務供應商的工作。 此操作模式可讓您建立開放的協作環境，其中包括所有方案參與者和外部參與者。
+Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生命週期。 方案和宣傳實施可分為指派給Adobe Campaign營運商或外部服務供應商的任務。 此操作模式可讓您建立開放的協作環境，其中包括所有方案參與者和外部參與者。
 
 可從工作清單或促銷活動控制面板建立、檢視和監控工作。 您也可以在行銷計畫、方案和促銷活動的排程中檢視和追蹤這些項目。
 
 任務會附加至促銷活動，並且可以具有相依性，即相關任務。 每個任務都有狀態、優先順序、估計負載和相關成本。
 
-所有任務都分組在可通過&#x200B;**Campaigns**&#x200B;宇宙訪問的清單中。 有關詳細資訊，請參閱[訪問任務](#accessing-tasks)。
+所有任務都分組在可通過&#x200B;**Campaigns**&#x200B;頁籤訪問的清單中。 有關詳細資訊，請參閱[訪問任務](#accessing-tasks)。
 
 它們可以顯示在它們所屬的程式的計畫表中。
 
@@ -35,7 +35,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ### 顯示任務{#displaying-tasks}
 
-任務將顯示在可通過&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙訪問的任務清單中。
+這些任務將顯示在可通過&#x200B;**[!UICONTROL Campaigns]**&#x200B;頁籤訪問的任務清單中。
 
 ![](assets/s_ncs_user_task_edit_view.png)
 
@@ -57,7 +57,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ## 建立新任務{#creating-a-new-task}
 
-若要建立工作，請按一下「促銷活動」範圍中的&#x200B;**[!UICONTROL Tasks]**&#x200B;連結，然後選取&#x200B;**[!UICONTROL Create]**。
+要建立任務，請按一下&#x200B;**[!UICONTROL Campaigns]**&#x200B;頁籤中的&#x200B;**[!UICONTROL Tasks]**&#x200B;連結，然後選擇&#x200B;**[!UICONTROL Create]**。
 
 ![](assets/s_ncs_user_task_create_new.png)
 
@@ -89,7 +89,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 只有負責任務的操作員才有權關閉任務。
 
-依預設，當Adobe Campaign運算子建立工作時，系統會自動指派工作給他們。 要選擇不同的運算子，請使用&#x200B;**[!UICONTROL Assigned to]**&#x200B;欄位。
+預設情況下，當Adobe Campaign運算子建立任務時，系統會自動為其分配任務。 要選擇不同的運算子，請使用&#x200B;**[!UICONTROL Assigned to]**&#x200B;欄位。
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -111,7 +111,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 您可以設定提醒，提醒會在任務結束日期前自動傳送給參與該任務的所有運算子。
 
-您可以透過&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示來檢視Adobe Campaign運算子設定檔。
+您可以透過&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示來檢視Adobe Campaign運算子描述檔。
 
 ![](assets/s_ncs_user_task_edit_resource_profile.png)
 
@@ -133,7 +133,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
-即使已指派其他營運商來核准，負責該工作的人員仍可自行指派核准工作。 如果尚未定義審核者，則通知將發送給任務負責人。 所有具有&#x200B;**[!UICONTROL Administrator]**&#x200B;權限的其他Adobe Campaign運算子也可以核准工作。 不過，他們不會收到通知。
+即使已指派其他營運商來核准，負責該工作的人員仍可自行指派核准工作。 如果尚未定義審核者，則通知將發送給任務負責人。 所有具有&#x200B;**[!UICONTROL Administrator]**&#x200B;權限的其他Adobe Campaign操作員也可以批准該任務。 不過，他們不會收到通知。
 
 ### 參考的檔案{#documents-referenced}
 
@@ -219,7 +219,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ### 初始通知{#initial-notifications}
 
-當您建立或修改未來有開始日期的工作時，Adobe Campaign會提供傳送電子郵件給負責工作的人員，讓他們知道工作何時開始。
+當您在將來建立或修改具有開始日期的任務時，Adobe Campaign會向負責該任務的人員發送電子郵件，以告知他們何時開始。
 
 ![](assets/mrm_task_first_notif.png)
 
@@ -232,7 +232,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 * 對於促銷活動中的任務，請選取特定的日期和時間。
 * 對於促銷活動範本中的任務，通知時間表示為任務開始前的剩餘時間（例如，如果您在&#x200B;**[!UICONTROL Initial notification]**&#x200B;欄位中輸入2d，則電子郵件會在任務開始日期前2天傳送）。
 
-如果您已排程通知，當您儲存工作時，Adobe Campaign會暫停提供，以立即傳送通知。 您可以決定傳送它，但不會取代排程的通知。
+如果您已排程通知，在儲存工作時，Adobe Campaign仍會提供立即傳送通知的選件。 您可以決定傳送它，但不會取代排程的通知。
 
 ### 連結到程式{#task-linked-to-a-program}的任務
 
@@ -408,7 +408,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-對於分組任務，Adobe Campaign會自動將父任務的結束日期指派給子任務作為開始日期。 例如，如果&#x200B;**建立邀請**&#x200B;工作於10月15日下午3:30結束，**傳送邀請電子郵件**&#x200B;子工作將於10月15日下午3:30開始。
+對於分組任務，Adobe Campaign會自動將父任務的終止日期作為起始日期分配給子任務。 例如，如果&#x200B;**建立邀請**&#x200B;工作於10月15日下午3:30結束，**傳送邀請電子郵件**&#x200B;子工作將於10月15日下午3:30開始。
 
 此外，如果您推遲父項任務的結束，其某些子項任務可能會受到影響：這些是狀態為&#x200B;**[!UICONTROL Scheduled]**&#x200B;且開始日期早於父任務的新結束日期的子任務。 任務的持續時間保持不變。 如果子任務的開始日期晚於父任務的新結束日期，則子任務不受影響。
 
@@ -430,7 +430,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 * 啟動後，任務為&#x200B;**[!UICONTROL In progress]**。 當負責任務的人員關閉任務時，它將更改為&#x200B;**[!UICONTROL Finished]**。
 * 如果已定義了審核者，則在負責該審核者關閉該審核者後，直到審核者批准該任務為&#x200B;**[!UICONTROL Pending approval]**。 如果審核者拒絕，則任務為&#x200B;**[!UICONTROL Rejected]**。
 * 負責任務的人員可通過控制面板或&#x200B;**[!UICONTROL Task map]**&#x200B;按一下&#x200B;**[!UICONTROL Cancel]**&#x200B;按鈕來取消任務。
-* 要計畫任務，請輸入將來的開始日期。 然後，您可以傳送第一個通知給執行工作所涉及的Adobe Campaign營運商。 請參閱[完成任務生命週期](#complete-task-life-cycle)。
+* 要計畫任務，請輸入將來的開始日期。 然後，您可以傳送第一個通知給執行該任務的Adobe Campaign操作員。 請參閱[完成任務生命週期](#complete-task-life-cycle)。
 
 >[!NOTE]
 >
