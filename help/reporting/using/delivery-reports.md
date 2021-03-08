@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 您可以透過從傳送概述存取的各種報表來追蹤傳送的執行。 若要顯示報表，請套用下列程式：
 
-1. 前往&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;連結以顯示傳送清單。
+1. 前往&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;連結以顯示傳送清單。
 1. 按一下您要顯示的傳送名稱，以顯示其詳細資訊。
 
    ![](assets/s_ncs_user_detailled_report.png)
