@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 57%
+source-wordcount: '2457'
+ht-degree: 56%
 
 ---
 
@@ -42,20 +42,22 @@ ht-degree: 57%
    + 從Adobe Campaign開始{#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [啟動Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Adobe Campaign 工作區](platform/using/adobe-campaign-workspace.md)
-      + 常見問題集 {#faq}
-         + [最常見的 個問題](platform/using/common-questions.md)
-         + [全域概念](platform/using/faq-key-concepts.md)
-         + [建置升級](platform/using/faq-build-upgrade.md)
-         + [隱私權](platform/using/privacy-faq.md)
-         + [受眾](platform/using/faq-audiences.md)
-         + [設計訊息](platform/using/faq-designing.md)
-         + [傳送訊息](platform/using/faq-messages.md)
-         + [工作流程](platform/using/faq-workflows.md)
-         + [配置](platform/using/faq-campaign-config.md)
-         + [報告](platform/using/faq-reporting.md)
-         + [開發](platform/using/faq-developers.md)
-      + [教學課程](platform/using/tutorials.md)
+      + Adobe Campaign 工作區{#campaign-workspace}
+         + [開始使用Campaign UI](platform/using/adobe-campaign-workspace.md)
+         + [瀏覽和自訂清單](platform/using/adobe-campaign-ui-lists.md)
+         + 常見問題集 {#faq}
+            + [最常見的 個問題](platform/using/common-questions.md)
+            + [全域概念](platform/using/faq-key-concepts.md)
+            + [建置升級](platform/using/faq-build-upgrade.md)
+            + [隱私權](platform/using/privacy-faq.md)
+            + [受眾](platform/using/faq-audiences.md)
+            + [設計訊息](platform/using/faq-designing.md)
+            + [傳送訊息](platform/using/faq-messages.md)
+            + [工作流程](platform/using/faq-workflows.md)
+            + [配置](platform/using/faq-campaign-config.md)
+            + [報告](platform/using/faq-reporting.md)
+            + [開發](platform/using/faq-developers.md)
+         + [教學課程](platform/using/tutorials.md)
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
@@ -140,6 +142,7 @@ ht-degree: 57%
       + [SMS 頻道](delivery/using/sms-channel.md)
       + [SMS 連接器通訊協定及設定](delivery/using/sms-protocol.md)
       + [SMS 疑難排解](delivery/using/troubleshooting-sms.md)
+      + [遷移到擴展通用SMPP連接器](delivery/using/unsupported-connector-migration.md)
    + [發送LINE消息](delivery/using/line-channel.md)
    + 傳送推播通知 {#sending-push-notifications}
       + [關於行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
@@ -674,6 +677,14 @@ ht-degree: 57%
       + [連接到資料庫](installation/using/connecting-to-database.md)
       + [建立資料結構](installation/using/creating-data-schema.md)
       + [定義資料對應](installation/using/defining-data-mapping.md)
+   + 安全性與隱私權檢查清單{#security-privacy}
+      + [開始使用安全性和隱私權](installation/using/get-started-security-privacy.md)
+      + [隱私權](installation/using/privacy.md)
+      + [存取管理](installation/using/access-management.md)
+      + [指令碼和編碼准則](installation/using/scripting-coding-guidelines.md)
+      + [網路、資料庫和SSL/TLS](installation/using/network-database.md)
+      + [伺服器組態](installation/using/server-configuration.md)
+      + [Web-server配置](installation/using/web-server-configuration.md)
    + 附錄 {#appendices}
       + [伺服器配置檔案](installation/using/the-server-configuration-file.md)
       + [Campaign 網路端點](installation/using/campaign-network-endpoints.md)
@@ -790,9 +801,8 @@ ht-degree: 57%
       + [JavaScript 中的 SOAP 方法](configuration/using/soap-methods-in-javascript.md)
       + [新增其他 SQL 函式](configuration/using/adding-additional-sql-functions.md)
    + 導覽階層 {#navigation-hierarchy}
-      + [關於導覽階層](configuration/using/about-navigation-hierarchy.md)
-      + [配置](configuration/using/configuration.md)
-      + [版本](configuration/using/edition.md)
+      + [配置瀏覽器分層結構](configuration/using/configuration.md)
+      + [編輯瀏覽器階層](configuration/using/edition.md)
    + 使用自訂收件者表格 {#use-a-custom-recipient-table}
       + [關於自訂收件者表格](configuration/using/about-custom-recipient-table.md)
       + [綱要特性](configuration/using/schema-characteristics.md)
