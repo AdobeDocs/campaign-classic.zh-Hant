@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2038'
 ht-degree: 73%
 
 ---
@@ -25,7 +25,7 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 * 避免傳送未經請求的電子郵件、推播通知和 SMS 訊息（「垃圾訊息」）。在打造顧客終生價值及忠誠度的過程中，Adobe 篤信許可式行銷原則，因此我們嚴格禁止使用 Adobe Campaign 傳送未經請求的訊息。
 
-請前往[安全性和隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)，以了解有關安全性和隱私權需要檢查的核心元素。
+請前往[安全性和隱私權檢查清單](../../installation/using/get-started-security-privacy.md)，以了解有關安全性和隱私權需要檢查的核心元素。
 
 ### 隱私權法規 {#privacy-regulations}
 
@@ -40,7 +40,7 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 >[!NOTE]
 >
->如需有關GDPR、CCPA、PDPA和LGPD如何套用至Adobe Campaign的詳細資訊，請參閱[本頁](../../platform/using/privacy-management.md#privacy-management-regulations)。
+>有關GDPR、CCPA、PDPA和LGPD如何應用於Adobe Campaign的詳細資訊，請參見[本頁](../../platform/using/privacy-management.md#privacy-management-regulations)。
 
 ### Adobe Experience Cloud 隱私權 {#experience-cloud-privacy}
 
@@ -78,7 +78,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 * **個人資料**&#x200B;是指可直接或間接識別在世個人的資訊。
 * **敏感個人資料**&#x200B;是指與個人的種族、政治觀點、宗教信仰、犯罪背景、遺傳資訊、健康資料、性傾向、生物識別資訊，以及工會會員會籍相關的資訊。
 
-將Campaign與其他Experience Cloud解決方案整合時，若觀眾可從一個系統傳輸至另一個系統，例如[Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md)、[Audience Manager或People核心服務](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或透過[CRM Connectors](../../platform/using/crm-connectors.md)與其他解決方案整合，您需要付費格外注重個人資料保護。
+將Campaign與其他Experience Cloud解決方案整合時，如[Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md)、[Audience Manager或人員核心服務](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或透過[CRM Connectors](../../platform/using/crm-connectors.md)與其他解決方案整合時，您需要支付額外費用以保護個人資料。
 
 [主要法規](#privacy-regulations)是指管理資料之不同實體，如下所示：
 * **資料控制方**&#x200B;是決定收集、使用及分享個人資料之方式與目的的當局機關。
@@ -159,13 +159,13 @@ Adobe Campaign 提供其他功能，協助您作為資料控制方，針對特�
 
 ### Cookie {#cookies}
 
-由於Adobe Campaign的追蹤功能，您可以使用三種Cookie來追蹤傳送收件者的瀏覽：作業Cookie和兩個永久Cookie。
+由於其追蹤功能，Adobe Campaign可讓您使用三種Cookie來追蹤遞送收件者的瀏覽：作業Cookie和兩個永久Cookie。
 
 * A **session** cookie:**nlid** Cookie包含傳送給連絡人的電子郵件識別碼(**broadlogId**)和訊息範本識別碼(**deliveryId**)。 連絡人按一下由 Adobe Campaign 傳送的電子郵件中包含的 URL 後即可添加識別碼，並且允許您追蹤他們在網路上的行為。瀏覽器關閉時，將自動清除工作階段 Cookie。連絡人可以將其瀏覽器設定為拒絕 Cookie。
 
 * 兩個&#x200B;**permonent** Cookie:
-   * **UUID**（通用唯一ID識別碼）Cookie會在Adobe Experience Cloud解決方案之間共用。 它會設定一次，直到產生新值時，從用戶端瀏覽器消失為止。 此Cookie可讓您識別在使用者造訪網站時與Experience Cloud解決方案互動的使用者。 您可以透過登陸頁面（將未知的客戶活動與收件者建立關聯）或傳送來儲存。 此Cookie的說明可在[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies)取得。
-   * **nllastdelid** Cookie（在Campaign Classic 20.3中推出）是永久Cookie，包含使用者點按連結的上次傳送的&#x200B;**deliveryId**。 當作業Cookie遺失時，會使用此Cookie來識別將使用的追蹤表格。
+   * **UUID**（通用唯一ID識別碼）Cookie在Adobe Experience Cloud解決方案之間共用。 它會設定一次，直到產生新值時，從用戶端瀏覽器消失為止。 此Cookie可讓您識別在Experience Cloud解決方案造訪網站時與之互動的使用者。 您可以透過登陸頁面（將未知的客戶活動與收件者建立關聯）或傳送來儲存。 此Cookie的說明可在[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies)取得。
+   * **nllastdelid** Cookie(在Campaign Classic20.3中推出)是永久Cookie，包含使用者點按連結的上次傳送的&#x200B;**deliveryId**。 當作業Cookie遺失時，會使用此Cookie來識別將使用的追蹤表格。
 
 《一般資料保護規範》(GDPR) 等法規規定，公司必須先取得網站使用者的同意，才能安裝 Cookie。
 
@@ -174,14 +174,14 @@ Adobe Campaign 提供其他功能，協助您作為資料控制方，針對特�
 
 ### 消息跟蹤{#message-tracking}
 
-Adobe Campaign可讓您追蹤傳送的電子郵件和傳送收件人的行為：開啟、點按連結、取消訂閱等。 有關詳細資訊，請參閱[關於消息跟蹤](../../delivery/using/about-message-tracking.md)。
+Adobe Campaign可讓您追蹤已傳送的電子郵件和傳送收件人的行為：開啟、點按連結、取消訂閱等。 有關詳細資訊，請參閱[關於消息跟蹤](../../delivery/using/about-message-tracking.md)。
 
 若要這麼做，請將[追蹤連結](../../delivery/using/how-to-configure-tracked-links.md)新增至您的訊息，以便在傳送控制面板的[追蹤](../../delivery/using/delivery-dashboard.md#tracking-logs)標籤中測量傳送和收件者行為的影響。 追蹤資料會在[追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)報表中解譯。
 
 ### 網路追蹤{#web-tracking}
 
-Adobe Campaign也可讓您監控收件者瀏覽您網站的方式：插入追蹤標籤，以收集資訊並測量網頁應用程式頁面上的瀏覽。 如需詳細資訊，請參閱[追蹤Web應用程式](../../web/using/tracking-a-web-application.md)。
+Adobe Campaign也可讓您監控收件者瀏覽網站的方式：插入追蹤標籤，以收集資訊並測量網頁應用程式頁面上的瀏覽。 如需詳細資訊，請參閱[追蹤Web應用程式](../../web/using/tracking-a-web-application.md)。
 
 網頁追蹤的設定顯示在[本節](../../configuration/using/about-web-tracking.md)中。
 
-為進一步管理追蹤，Adobe Campaign可讓您顯示退出橫幅，以停止追蹤退出行為追蹤的使用者的網路行為。 如需詳細資訊，請參閱[Web應用程式追蹤選擇退出](../../web/using/web-application-tracking-opt-out.md)。
+為進一步管理追蹤，Adobe Campaign可讓您顯示退出橫幅，以停止追蹤退出行為追蹤的使用者的Web行為。 如需詳細資訊，請參閱[Web應用程式追蹤選擇退出](../../web/using/web-application-tracking-opt-out.md)。
