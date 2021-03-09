@@ -9,7 +9,7 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
+source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 56%
@@ -45,18 +45,18 @@ ht-degree: 56%
       + Adobe Campaign 工作區{#campaign-workspace}
          + [開始使用Campaign UI](platform/using/adobe-campaign-workspace.md)
          + [瀏覽和自訂清單](platform/using/adobe-campaign-ui-lists.md)
-         + 常見問題集 {#faq}
-            + [最常見的 個問題](platform/using/common-questions.md)
-            + [全域概念](platform/using/faq-key-concepts.md)
-            + [建置升級](platform/using/faq-build-upgrade.md)
-            + [隱私權](platform/using/privacy-faq.md)
-            + [受眾](platform/using/faq-audiences.md)
-            + [設計訊息](platform/using/faq-designing.md)
-            + [傳送訊息](platform/using/faq-messages.md)
-            + [工作流程](platform/using/faq-workflows.md)
-            + [配置](platform/using/faq-campaign-config.md)
-            + [報告](platform/using/faq-reporting.md)
-            + [開發](platform/using/faq-developers.md)
+      + 常見問題集 {#faq}
+         + [最常見的 個問題](platform/using/common-questions.md)
+         + [全域概念](platform/using/faq-key-concepts.md)
+         + [建置升級](platform/using/faq-build-upgrade.md)
+         + [隱私權](platform/using/privacy-faq.md)
+         + [受眾](platform/using/faq-audiences.md)
+         + [設計訊息](platform/using/faq-designing.md)
+         + [傳送訊息](platform/using/faq-messages.md)
+         + [工作流程](platform/using/faq-workflows.md)
+         + [配置](platform/using/faq-campaign-config.md)
+         + [報告](platform/using/faq-reporting.md)
+         + [開發](platform/using/faq-developers.md)
          + [教學課程](platform/using/tutorials.md)
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
