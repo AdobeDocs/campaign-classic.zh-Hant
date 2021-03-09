@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign 工作區
-description: Adobe Campaign 工作區
-audience: platform
-content-type: reference
-topic-tags: starting-with-adobe-campaign
+description: 瞭解如何使用和自訂促銷活動工作區
+feature: 概觀
+role: 資料工程師
+level: 初學者
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: c91d9c39d92779ed0366905a944f065c427b1e5a
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 88%
+source-wordcount: '1260'
+ht-degree: 63%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ### 語言{#languages}
 
-安裝Adobe Campaign Classic例項時，會選取語言。
+安裝Adobe Campaign Classic實例時，會選擇該語言。
 
 ![](assets/language.png)
 
@@ -61,7 +61,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 * 德文
 * 日文
 
-您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
+您為Adobe Campaign Classic實例選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
 有關如何建立實例的詳細資訊，請參閱此[頁](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -71,7 +71,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ## 基本的導覽功能 {#navigation-basics}
 
-### 瀏覽頁面 {#browsing-pages}
+### 瀏覽頁{#browsing-pages}
 
 平台功能各式各樣，可歸類為幾大核心功能，您可使用介面上方的連結來存取這些功能。
 
@@ -85,7 +85,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ![](assets/recipient_list_overview.png)
 
-### 使用索引標籤 {#using-tabs}
+### 使用標籤{#using-tabs}
 
 * 當您按一下核心功能或連結時，相關頁面會取代當前頁面。若要返回到上一頁，請按一下工具列上的 **[!UICONTROL Back]** 按鈕。若要返回到首頁，請按一下 **[!UICONTROL Home]** 按鈕。
 
@@ -95,7 +95,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
    ![](assets/d_ncs_user_interface_tabs.png)
 
-### 建立新元素 {#creating-an-element}
+### 建立元素{#creating-an-element}
 
 使用每個核心功能區段，您可以瀏覽可用的元素。若要瀏覽可用元素，請使用 **[!UICONTROL Browsing]** 區段中的捷徑。使用 **[!UICONTROL Other choices]** 連結，您可存取其他所有頁面，不受環境影響。
 
@@ -105,9 +105,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
-## 使用 Adobe Campaign 探索器 {#using-adobe-campaign-explorer}
-
-### 關於 Adobe Campaign 探索器 {#about-adobe-campaign-explorer}
+## 使用Adobe Campaign資源管理器{#using-adobe-campaign-explorer}
 
 可透過工具列圖示存取 Adobe Campaign 探索器。使用工具列圖示，您可以存取 Adobe Campaign、所有 Adobe Campaign 功能、設定畫面以及部分平台元素的更詳細視圖。
 
@@ -115,11 +113,50 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - 樹狀結構清單**：您可以個人化樹狀結構的內容 (新增、移動或刪除節點)。此程序僅適用於資深使用者。有關詳細資訊，請參見[此頁面](../../configuration/using/about-navigation-hierarchy.md)。
+**1 - 樹狀結構清單**：您可以個人化樹狀結構的內容 (新增、移動或刪除節點)。此程序僅適用於資深使用者。有關詳細資訊，請參閱[本節](#about-navigation-hierarchy)。)
 
-**2 - 清單**：您可以篩選清單、執行搜尋、新增資訊或排序資料。
+**2 - 清單**：您可以篩選清單、執行搜尋、新增資訊或排序資料。[進一步瞭解](adobe-campaign-ui-lists.md)。
 
 **3 - 詳情**：您可以顯示所選元素的詳細資訊。透過右上角的圖示，您可以全螢幕顯示這項資訊。
+
+### 資料夾和導航樹{#about-navigation-hierarchy}
+
+導覽樹狀結構的運作方式類似檔案瀏覽器（例如Windows檔案總管）。 資料夾可能包含子資料夾。 選擇節點時，將顯示與該節點對應的視圖。
+
+顯示的視圖是與方案相關聯的清單和用於編輯選定行的輸入表單。
+
+![](assets/d_ncs_integration_navigation.png)
+
+要向樹中添加新資料夾，請按一下右鍵要插入資料夾的分支中的資料夾，然後選擇&#x200B;**[!UICONTROL Add new folder]**。 在快捷菜單中，選擇要建立的檔案類型。
+
+![](assets/d_ncs_integration_navigation_create.png)
+
+瞭解如何在本節](../../configuration/using/configuration.md)中設定促銷活動導覽樹狀結構[。
+
+瞭解如何在本節](access-management-folders.md)中設定資料夾[的權限。
+
+### 資料夾配置最佳實踐
+
+* **使用內建資料夾**
+
+   使用內建資料夾，讓不參與專案的人員更容易使用、維護和疑難排解應用程式。 您不應為收件者、清單、傳送等建立自訂資料夾結構，而應使用標準資料夾，例如「管理」、「描述檔與目標」、「促銷活動管理」。
+
+* **建立子資料夾**
+
+   將技術工作流程放在標準資料夾下：管理／生產／技術工作流程，並依工作流程類型建立子目錄。
+
+* **設定命名規則**
+
+   例如，您可以按字母順序為工作流命名，以便它們按照執行順序顯示。
+
+   例如：
+
+   * A1 —— 匯入收件者，從10:00開始；
+   * A2 —— 導入票證，從11:00開始。
+
+* **建立範本，讓使用者從**
+
+   建立傳送範本、工作流程範本、使用者專屬的促銷活動範本。 此結構可節省時間，並確保每個使用者都使用正確的傳送對應和類型。
 
 ### 螢幕解析度 {#screen-resolution}
 
@@ -127,208 +164,15 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 >[!CAUTION]
 >
->Adobe Campaign 可能不支援 1600x900 像素以下的解析度。
+>Adobe Campaign支援1600x900像素以下的解析度。
 
 在 **[!UICONTROL Explorer]** 工作區中，如果出現部分 **[!UICONTROL Details]** 區域被截斷，請透過區域頂端的箭頭加以展開或按一下 **[!UICONTROL Enlarge]** 按鈕。
 
 ![](assets/s_ncs_user_resolution.png)
 
-### 瀏覽清單 {#browsing-lists}
+### 瀏覽和自訂清單{#browsing-lists}
 
-若要瀏覽清單，您不需要重新選取記錄或者使用&#x200B;**滑鼠滾輪** 或&#x200B;**方向鍵**，可以直接使用&#x200B;**捲軸** (水平或垂直) 捲動頁面。
-
->[!NOTE]
->
->清單內容的設定和個人化顯示在[設定清單](#configuring-lists)中。
->
->您也可以排序和篩選資料。請參閱[篩選選項](../../platform/using/filtering-options.md)。
-
-### 記錄計數 {#counting-records}
-
-根據預設，Adobe Campaign 會載入清單中的前 200 條記錄。這意味著將不一定顯示您正在檢視之表格中的所有記錄。您可以統計清單中的記錄計數，並載入更多記錄。
-
-在清單畫面右下角，**[!UICONTROL counter]** 會顯示已載入的記錄數，以及資料庫中的記錄總數 (套用任何篩選器之後)：
-
-![](assets/s_ncs_user_nb_200_0.png)
-
-如果右側出現「**?**」而非數字，請按一下計數器執行計算。
-
-### 載入更多紀錄 {#loading-more-records}
-
-若要載入 (並顯示) 更多記錄 (預設為 200 條)，請按一下 **[!UICONTROL Continue loading]**。
-
-![](assets/s_ncs_user_load_list.png)
-
-若要載入所有記錄，請以滑鼠右鍵按一下清單，然後選取 **[!UICONTROL Load all]**。
-
->[!CAUTION]
->
->載入全部清單的時間可能會很長，具體取決於記錄數目。
-
-### 變更預設的記錄數目 {#change-default-number-of-records}
-
-若要變更載入的預設記錄數目，請按一下清單右下角的 **[!UICONTROL Configure list]**。
-
-![](assets/s_ncs_user_configure_list.png)
-
-在清單設定視窗中，按一下「Advanced parameters」(位於左下方)，並變更要擷取的行數。
-
-![](assets/s_ncs_user_configurelist_advancedparam.png)
-
-## 設定清單 {#configuring-lists}
-
-### 新增欄 {#add-columns}
-
-有兩個方法可在清單中加入欄。
-
-您可以從記錄的詳細資料中快速新增欄至清單。 操作步驟：
-
-1. 從詳細資料畫面中，以滑鼠右鍵按一下 要在欄中顯示的欄位。
-1. 選取 **[!UICONTROL Add in the list]**。
-
-   該欄會新增至現有欄的右邊。
-
-![](assets/s_ncs_user_add_in_list.png)
-
-新增欄的另一個方法，例如，如果您想要顯示詳細資料畫面上未顯示的資料，則可使用清單設定視窗。操作步驟：
-
-1. 按一下清單右下方的 **[!UICONTROL Configure list]**。
-
-   ![](assets/s_ncs_user_configure_list.png)
-
-1. 在清單設定視窗的 **[!UICONTROL Available fields]** 清單中按兩下要新增的欄位，以便將它新增至 **[!UICONTROL Output columns]**。
-
-   ![](assets/s_ncs_user_configurelist.png)
-
-   >[!NOTE]
-   >
-   >預設情況下，不會顯示進階欄位。若要顯示它們，請按一下可用欄位清單右下方的 **Display advanced fields**。
-   >
-   >標籤會按表格顯示且以字母順序排列。
-   >
-   >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱[排序清單](#sorting-a-list)。
-   >
-   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[設定清單](#configuring-lists).
-   >
-   >您也可以排序和篩選資料。請參閱[篩選選項](../../platform/using/filtering-options.md)。
-
-1. 對要顯示的每一個欄重複此步驟。
-1. 使用箭頭修改 **顯示順序**。最高的欄將顯示在記錄清單的左邊。
-
-   ![](assets/s_ncs_user_columns_order_down.png)
-
-1. 如果需要，可以按一下 **[!UICONTROL Distribution of values]**，以檢視目前資料夾中所選取欄位的重新分割值。
-
-   ![](assets/s_ncs_user_configurelist_values.png)
-
-1. 按一下 **[!UICONTROL OK]** 確認設定並顯示結果。
-
-### 新建欄 {#create-a-new-column}
-
-您可以建立新的欄來顯示清單中的其他欄位。操作步驟：
-
-1. 按一下清單右下方的&#x200B;**[!UICONTROL Configure the list]**。
-1. 按一下 **[!UICONTROL Add]**，以在清單中顯示新欄位。
-
-### 移除欄 {#remove-a-column}
-
-您可以使用位於清單右下方的 **[!UICONTROL Configure list]** 遮蔽一列或數列欄。
-
-![](assets/s_ncs_user_configure_list.png)
-
-在清單設定視窗中，從 **[!UICONTROL Output columns]** 區域中選取要遮蔽的欄，然後按一下刪除按鈕。
-
-![](assets/s_ncs_user_removecolumn_icon.png)
-
-對要遮蔽的每一欄重複此步驟。按一下 **[!UICONTROL OK]** 確認設定並顯示結果。
-
-### 調整欄寬 {#adjust-column-width}
-
-當清單作用中時，例如：選取了至少一行時，您可以使用 F9 來調整欄的寬度以便在螢幕上顯示所有欄。
-
-### 顯示子資料夾記錄 {#display-sub-folders-records}
-
-清單可顯示：
-
-* 只包含在所選資料夾中的記錄，
-* 或是所選取的資料夾及其子資料夾中的記錄。
-
-若要從一個顯示模式切換至另一個顯示模式，請按一下工具列中的 **[!UICONTROL Display sub-levels]**。
-
-![](assets/s_ncs_user_display_children_icon.png)
-
-### 儲存清單設定 {#saving-a-list-configuration}
-
-清單設定是在工作站層級本機定義。清除本機快取時，會停用本機設定。
-
-根據預設，所定義的顯示參數會套用至使用相匹配資料夾類型的所有清單。因此，當您修改一個資料夾中收件者清單顯示方式時，這個設定將套用至所有其他收件者資料夾。
-
-但您可儲存多個設定，以套用至相同類型的不同資料夾。該設定會隨包含資料的資料夾屬性一起儲存，並可重新套用。
-
-例如，對於傳遞資料夾，可以設定下列顯示：
-
-![](assets/s_ncs_user_folder_save_config_1.png)
-
-若要儲存此清單設定，使其可重複使用，請遵循下列步驟：
-
-1. 以滑鼠右鍵按一下包含顯示資料的資料夾。
-1. 選取 **[!UICONTROL Properties]**。
-1. 按一下&#x200B;**[!UICONTROL Advanced settings]**，然後在&#x200B;**[!UICONTROL Configuration]**&#x200B;欄位中指定名稱。
-
-   ![](assets/s_ncs_user_folder_save_config_2.png)
-
-1. 按一下&#x200B;**[!UICONTROL OK]** ，然後按一下&#x200B;**[!UICONTROL Save]**。
-
-然後將此設定套用至另一個 **Delivery** 資料夾：
-
-![](assets/s_ncs_user_folder_save_config_3.png)
-
-按一下資料夾屬性視窗中的 **[!UICONTROL Save]**。此清單顯示會修改以符合指明的設定：
-
-![](assets/s_ncs_user_folder_save_config_5.png)
-
-## 匯出清單 {#exporting-a-list}
-
-若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
-
-[Generic imports and exports](../../platform/using/about-generic-imports-exports.md)中說明了導入和導出功能的使用。
-
->[!CAUTION]
->
->不可使用 [複製/貼上] 功能匯出清單中的元素。
-
-## 清單排序 {#sorting-a-list}
-
-清單中可包含大量資料。您可以對這些資料進行排序或套用簡單、進階篩選器。透過排序，您設定以遞增或遞減順序顯示資料。透過篩選，您可以定義和合併準則以僅顯示所選資料。
-
-按一下欄標題，套用遞增或遞減排序，或是取消資料排序。作用中的排序狀態和排序順序會在欄標籤前方以藍色箭頭表示。欄位標籤前方的紅色破折號表示該排序已套用至資料庫中索引的資料。此排序方法用於最佳化排序工作。
-
-您也可以設定排序或合併排序準則。要執行此操作，請遵循下列步驟：
-
-1. **[!UICONTROL Configure list]** 在清單右側。
-
-   ![](assets/s_ncs_user_configure_list.png)
-
-1. 在清單設定視窗中，按一下 **[!UICONTROL Sorting]** 索引標籤。
-1. 選取要排序的欄位以及排序方向 (遞增或遞減)。
-
-   ![](assets/s_ncs_user_configurelist_sort.png)
-
-1. 排序優先順序透過排序欄的順序定義。若要變更優先順序，請使用適當的圖示來變更欄的順序。
-
-   ![](assets/s_ncs_user_configurelist_move.png)
-
-   排序優先順序不會影響清單中欄的顯示情況。
-
-1. 按一下 **[!UICONTROL Ok]** 確認此設定，並在清單中呈現結果。
-
-### 搜索元素{#running-a-search}
-
-您可使用欄位清單上方的 **[!UICONTROL Search]** 欄位執行編輯器中可用欄位的搜尋。按下鍵盤上的 **Enter**，或瀏覽清單。符合搜尋文字的欄位將以粗體呈現。
-
->[!NOTE]
->
->您可以建立篩選器，只顯示清單中的部分資料。請參閱[建立篩選器](../../platform/using/creating-filters.md)。
+瞭解如何瀏覽、管理和自訂本節[中的清單。](adobe-campaign-ui-lists.md)
 
 ## 格式和單位 {#formats-and-units}
 
@@ -396,4 +240,4 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
