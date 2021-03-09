@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1712'
 ht-degree: 94%
 
 ---
@@ -49,7 +49,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <td>技術交付能力監控報告<br></td>
    <td><p>從Campaign 21.1版開始，技術傳遞性監控報表已過時。</p>
    <p>如有需要，您可以透過電子郵件每天收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報表的例項名稱和電子郵件地址。</p> 
-   <p>Adobe建議您與「傳遞性團隊」合作，以定義最佳工具來監控執行個體的傳遞效能。</p>
+   <p>Adobe建議您與交付能力團隊合作，以定義最佳工具來監控實例的交付能力效能。</p>
   <p><em>目標刪除日期：2021年底</em></p>
   </td>
  </tr>
@@ -98,7 +98,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <li>iOS</li>
    </ul>
   <p>如果您使用其中一個連接器，則需要據此調整實施。<a href="../../delivery/using/sms-channel.md">瞭解更多</a></p> 
-  <p>閱讀此<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector.html">技術文件</a>，瞭解如何移轉舊連接器。</p>
+  <p>閱讀此<a href="../../delivery/using/unsupported-connector-migration.md">技術文件</a>，瞭解如何移轉舊連接器。</p>
   <p><em>目標移除日期：2021 年 4 月</em></p>
   </td> 
  </tr>
