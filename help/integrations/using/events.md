@@ -6,7 +6,7 @@ description: 瞭解如何設定自訂實作的事件
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 此配置的部分是自定義開發，需要以下各項：
 
-* 在Adobe Campaign中瞭解JSON、XML和Javascript剖析的使用知識。
+* Adobe Campaign地區JSON、XML和Javascript剖析的使用知識。
 * QueryDef和Writer API的使用知識。
 * 使用私密金鑰進行加密和驗證的工作概念。
 
@@ -57,7 +57,7 @@ function processPipelineMessage(xmlTrigger) {}
 [!DNL trigger]資料會以XML格式傳遞至JS函式。
 
 * **[!UICONTROL @triggerId]**&#x200B;屬性包含[!DNL trigger]的名稱。
-* JSON格式的&#x200B;**enrichments**&#x200B;元素包含Adobe Analytics產生的資料，並附加至觸發器。
+* JSON格式的&#x200B;**enrichments**&#x200B;元素包含由Adobe Analytics產生的資料，並附加至觸發器。
 * **[!UICONTROL @offset]** 是訊息的「指針」。它指示隊列中消息的順序。
 * **[!UICONTROL @partition]** 是隊列中消息的容器。偏移相對於分區。 <br>隊列中大約有15個分區。
 
@@ -76,12 +76,12 @@ function processPipelineMessage(xmlTrigger) {}
 >
 >它是各種可能實作的特定範例。
 
-內容是在Adobe Analytics中針對每個觸發器以JSON格式定義。
+內容是以JSON格式定義，每個觸發器的Adobe Analytics。
 例如，在觸發器中，LogoUpload_uploading_Visits:
 
 * **[!UICONTROL eVar01]** 可以包含字串格式的購物者ID，用於與Adobe Campaign收件者協調。<br>必須協調以尋找主要金鑰的購物者ID。
 
-* **[!UICONTROL timeGMT]** 可以包含Adobe Analytics端觸發時間的UTC Epoc格式（自01/01/1970 UTC起的秒數）。
+* **[!UICONTROL timeGMT]** 可以以UTC Epoc格式包含Adobe Analytics側觸發器的時間（自UTC 01/01/1970以來的秒數）。
 
 範例:
 
@@ -128,7 +128,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 剖析資料{#data-parsing}
 
-此範例Javascript程式碼會剖析eVar01在元素中。
+此範例Javascript程式碼會剖析eVar01。
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -208,7 +208,7 @@ triggerType欄位可識別資料觸發的來源。
 | shopper_id | 字串32 | shopper_id | 購物者的內部識別碼。 由協調工作流設定。 若為零，則表示客戶在Campaign中未知。 |
 | shopper_key | 長 | shopper_key | Analytics擷取的購物者外部識別碼。 |
 | 已建立 | 日期時間 | 已建立 | 在促銷活動中建立事件的時間。 |
-| lastModified | 日期時間 | 上次修改日期 | 上次在Adobe中修改事件的時間。 |
+| lastModified | 日期時間 | 上次修改日期 | 事件上次在Adobe中修改的時間。 |
 | timeGMT | 日期時間 | 時間戳記 | 事件在Analytics中產生的時間。 |
 
 ### 顯示事件{#display-events}
@@ -217,7 +217,7 @@ triggerType欄位可識別資料觸發的來源。
 
 >[!NOTE]
 >
->Pipeline Event節點未內建，需要新增，以及相關表單需要在Campaign中建立。 這些操作僅限專家用戶使用。 如需更多相關資訊，請參閱以下章節：[導覽階層](../../configuration/using/about-navigation-hierarchy.md)和[編輯表單](../../configuration/using/editing-forms.md)。
+>Pipeline Event節點未內建，需要新增，以及相關表單需要在Campaign中建立。 這些操作僅限專家用戶使用。 如需更多相關資訊，請參閱以下章節：[導覽階層](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)。 和[編輯表單](../../configuration/using/editing-forms.md)。
 
 ![](assets/triggers_7.png)
 
@@ -225,10 +225,10 @@ triggerType欄位可識別資料觸發的來源。
 
 ### 協調工作流{#reconciliation-workflow}
 
-協調是將客戶從Adobe Analytics匹配至Adobe Campaign資料庫的程式。 例如，符合的准則可以是shopper_id。
+協調是將Adobe Analytics的客戶匹配到Adobe Campaign資料庫的過程。 例如，符合的准則可以是shopper_id。
 
 基於效能原因，必須由工作流在批次模式下完成匹配。
-頻率必須設定為15分鐘才能優化工作負載。 因此，Adobe Campaign中的事件接收與行銷工作流程的處理之間的延遲最長為15分鐘。
+頻率必須設定為15分鐘才能優化工作負載。 因此，Adobe Campaign的事件接收與行銷工作流程處理之間的延遲最長為15分鐘。
 
 ### JavaScript {#options-unit-reconciliation}中設備協調的選項
 
