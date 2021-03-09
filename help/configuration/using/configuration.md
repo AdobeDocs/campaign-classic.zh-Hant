@@ -7,15 +7,19 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
+source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
 
 
-# 設定{#configuration}
+# 設定促銷活動檔案總管導覽樹{#configuration}
+
+身為專家用戶，您可以在瀏覽器樹中添加資料夾並對其進行自定義。
+
+在本節](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)中進一步瞭解促銷活動瀏覽器和導覽階層[。
 
 導航清單使用的資料夾類型在遵循&#x200B;**xtk:navtree**&#x200B;模式的語法的XML文檔中進行了描述。
 
