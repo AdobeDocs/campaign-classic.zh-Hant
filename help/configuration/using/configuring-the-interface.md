@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -17,13 +17,13 @@ ht-degree: 2%
 
 # 設定介面{#configuring-the-interface}
 
-若要在Adobe Campaign介面中檢視並與新的收件者表格對話，請套用下列步驟：
+要在Adobe Campaign介面中查看新收件人表並與其對話，請應用以下步驟：
 
 * 建立新表格以編輯新收件者表格的內容。
 * 在瀏覽器樹的資料夾中輸入新類型。
 * 建立新的Web應用程式，以透過Adobe Campaign首頁存取自訂表格。
 
-Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms:recipient)對話。 因此，此變數需要變更。
+Adobe Campaign使用「Nms_DefaultRcpSchema」全局變數與預設接收方資料庫(nms:recipient)對話。 因此，此變數需要變更。
 
 1. 轉至瀏覽器的&#x200B;**[!UICONTROL Administration>Platform>Options]**&#x200B;節點。
 1. 使用與外部收件者表匹配的方案名稱更改&#x200B;**Nms_DefaultRcpSchema**&#x200B;變數的值(在本例中：cus:individual)。
@@ -70,7 +70,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 
    >[!NOTE]
    >
-   >有關&#x200B;**navtree**&#x200B;類型檔案的詳細資訊，請參閱[此頁](../../configuration/using/about-navigation-hierarchy.md)。
+   >有關&#x200B;**navtree**&#x200B;類型檔案的詳細資訊，請參閱[此頁](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)。
 
    在目前範例中，**navtree**&#x200B;檔案必須以&#x200B;**cus:individual**&#x200B;架構為基礎，因此具有下列格式：
 
