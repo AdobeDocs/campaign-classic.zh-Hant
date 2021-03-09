@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 管理對資料夾的訪問{#folder-access-management}
 
-樹的每個資料夾都有附加的讀取、寫入和刪除訪問權限。 若要存取檔案，運算元或運算元群組至少必須具有讀取存取權。
+瀏覽器導航樹的每個資料夾都有附加的讀取、寫入和刪除訪問權限。 若要存取檔案，運算元或運算元群組至少必須具有讀取存取權。
 
 ## 資料夾的權限
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以授予這些資料夾的權限，就像對樹的所有其他資料夾一樣。 請參閱[資料夾存取管理](#folder-access-management)。
+您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解配置步驟和最佳實踐[。
 
 ### 關於視圖{#about-views}
 
