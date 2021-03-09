@@ -2,12 +2,12 @@
 solution: Campaign Classic
 product: campaign
 title: 開始追蹤
-description: 進一步瞭解Adobe Campaign Classic中追蹤的一般准則。
+description: 進一步瞭解在Adobe Campaign Classic追蹤的一般方針。
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # 開始使用訊息追蹤{#get-started-tracking}
 
-由於Adobe Campaign的追蹤功能，您可以追蹤傳送的訊息，並檢查收件者的行為：開啟、點按連結、取消訂閱等。
+由於其追蹤功能，Adobe Campaign可讓您追蹤傳送的訊息，並檢查收件者的行為：開啟、點按連結、取消訂閱等。
 
 此資訊會擷取至傳送之每個收件者之描述檔的&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤中。 此標籤會顯示清單中選取之收件者所追蹤和點按的所有URL連結。 這是傳送畫面中仍顯示之傳送中追蹤的所有URL的累積。 清單可以設定，通常會包含：點按的URL、點按的日期和時間，以及找到URL的檔案。 如需詳細資訊，請參閱[本章節](../../platform/using/editing-a-profile.md#tracking-tab)。
 
@@ -41,7 +41,7 @@ ht-degree: 9%
 
 **儲存追蹤**
 
-設定追蹤並填入URL後，必須註冊追蹤伺服器。 [進一步了解](../../installation/using/deploying-an-instance.md#tracking-configuration#saving-tracking)
+設定追蹤並填入URL後，必須註冊追蹤伺服器。 [進一步了解](../../installation/using/deploying-an-instance.md#saving-tracking)
 
 ## 消息跟蹤{#message-tracking}
 
@@ -57,7 +57,7 @@ ht-degree: 9%
 
 **追蹤連結個人化**
 
-Campaign Classic追蹤功能可讓您在可個人化且支援追蹤的電子郵件中新增連結。 [進一步了解](../../delivery/using/tracking-personalized-links.md)
+Campaign Classic追蹤功能可讓您在電子郵件中新增可個人化且支援追蹤的連結。 [進一步了解](../../delivery/using/tracking-personalized-links.md)
 
 **追蹤記錄檔**
 
@@ -93,7 +93,7 @@ Campaign Classic追蹤功能可讓您在可個人化且支援追蹤的電子郵�
 
 **人員與收件者**
 
-透過此範例，進一步瞭解Adobe Campaign中的人員／人員與收件者之間的追蹤差異。 [進一步了解](../../reporting/using/person-people-recipients.md)
+透過此範例，進一步瞭解Adobe Campaign地區的人員／人員與收件者之間的追蹤差異。 [進一步了解](../../reporting/using/person-people-recipients.md)
 
 **追蹤指標**
 
@@ -107,7 +107,7 @@ Campaign Classic追蹤功能可讓您在可個人化且支援追蹤的電子郵�
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-下列疑難排解提示將協助您解決在Adobe Campaign Classic中使用追蹤時最常見的問題。 如需更進階的疑難排解，請參閱[本節](../../delivery/using/tracking-troubleshooting.md)。
+下列疑難排解提示將協助您解決在Adobe Campaign Classic使用追蹤時最常發生的問題。 如需更進階的疑難排解，請參閱[本節](../../delivery/using/tracking-troubleshooting.md)。
 
 * 檢查trackinglogd進程是否正在運行
 
