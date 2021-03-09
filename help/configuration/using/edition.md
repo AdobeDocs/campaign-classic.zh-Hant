@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 2%
+source-wordcount: '123'
+ht-degree: 1%
 
 ---
 
 
-# 版本{#edition}
+# 編輯促銷活動檔案總管導覽樹{#edition}
 
 可通過&#x200B;**[!UICONTROL Administration > Configuration > Navigation hierarchies]**&#x200B;節點訪問用於建立和配置導航層次配置文檔的螢幕：
 
