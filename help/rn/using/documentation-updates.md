@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '4151'
+source-wordcount: '4170'
 ht-degree: 93%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 93%
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
 ## 2021 年 3月 {#march-2021}
+
+新增了與安全性和隱私權相關的最佳實務和檢查。 [顯示全文](../../installation/using/get-started-security-privacy.md)
 
 [權限管理章節](../../platform/using/access-management.md)已改進並分成幾節，包括有關[操作員](../../platform/using/access-management-operators.md)、[操作員組](../../platform/using/access-management-groups.md)、[命名權限](../../platform/using/access-management-named-rights.md)和[資料夾管理](../../platform/using/access-management-folders.md)的詳細資訊。
 
