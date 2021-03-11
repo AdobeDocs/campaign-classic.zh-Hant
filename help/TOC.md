@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: de017afc1e5d30b561ed2bb7485756f30ef8778a
+source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2464'
 ht-degree: 56%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 56%
    + [相容性矩陣](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
    + [iOS憑證更新](technotes/ios-certificate-update.md)
+   + [促銷活動設定更新](technotes/acc-config-updates.md)
 + 開始使用 {#getting-started}
    + 從Adobe Campaign開始{#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
