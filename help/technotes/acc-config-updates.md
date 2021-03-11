@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
+source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -50,7 +50,7 @@ ht-degree: 4%
 
    新建版本至少與Campaign Classic17.9版本相容，但為避免任何安全性差距，Adobe強烈建議將所有實例升級為新建版本。 
 
-* 身為內部部署客戶，您被要求將行銷和中部採購實例升級至新建。
+* 身為內部部署客戶，您被要求將行銷和中部採購實例升級至較新的版本。
 
 >[!CAUTION]
 >
