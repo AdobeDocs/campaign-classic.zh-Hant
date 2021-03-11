@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 93dc5a16ce4880c132f4f91c72794892b00e7259
+source-git-commit: 87844fae046dff69193d3462c802057499f406ef
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 5%
@@ -38,16 +38,17 @@ ht-degree: 5%
 
 最新的促銷活動版本隨附安全性修正，可加強針對伺服器端偽造要求(SSRF)問題的保護。 在本頁瞭解更多[的資訊。](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)
 
-### 您受影響嗎？
+**您受影響嗎？**
 
 如果您的環境建置低於Campaign 21.1，您會受到影響。
 
-## 如何更新？
+**如何更新？**
 
 您必須升級至上述任一較新的版本。
 
 * 身為混合型客戶，Adobe會將中端採購執行個體升級至新版本，並強烈建議您也升級其行銷執行個體。
-新建版本至少與Campaign Classic17.9版本相容，但為避免任何安全性差距，Adobe強烈建議將所有實例升級為新建版本。 
+
+   新建版本至少與Campaign Classic17.9版本相容，但為避免任何安全性差距，Adobe強烈建議將所有實例升級為新建版本。 
 
 * 身為內部部署客戶，您被要求將行銷和中部採購實例升級至新建。
 
@@ -64,13 +65,13 @@ ht-degree: 5%
 
 ## 透過IMS連線至促銷活動
 
-Adobe身分服務(IMS)將從2021年3月31日起停止支援舊版Internet Explorer。 [進一步瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。已更新促銷活動主控台，以確保與IMS相容。
+Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explorer。 [進一步瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。已更新促銷活動主控台，以確保與IMS相容。
 
-### 您受影響嗎？
+**您受影響嗎？**
 
-如果您透過Adobe ID](../integrations/using/about-adobe-id.md)連線至促銷活動，透過Adobe識別服務(IMS)，升級至上述其中一個新版本是促銷活動伺服器和用戶端主控台都必須在2021年3月31日&#x200B;**之後才能連線至促銷活動。[**
+如果您透過Adobe ID](../integrations/using/about-adobe-id.md)連線至促銷活動，透過Adobe識別服務(IMS)，升級至上述其中一個新版本是促銷活動伺服器和用戶端主控台都必須在2021年6月30日&#x200B;**之後才能連線至促銷活動。[**
 
-### 如何更新？
+**如何更新？**
 
 身為代管客戶，您不需採取任何動作：Adobe已將實例升級到較新版本。
 
@@ -78,13 +79,13 @@ Adobe身分服務(IMS)將從2021年3月31日起停止支援舊版Internet Explor
 
 ## 與Experience Cloud觸發器整合
 
-舊版Auth驗證服務已停售，將於2021年4月30日退役。 [進一步瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
+舊版Auth驗證服務已到期，將於2021年6月30日退役。 [進一步瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
 
-### 您受影響嗎？
+**您受影響嗎？**
 
 如果您使用舊版的觸發器整合（透過oAuth驗證）,**您必須移至Adobe I/O**。
 
-### 如何更新？
+**如何更新？**
 
 [瞭解如何移轉至Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
@@ -92,11 +93,11 @@ Adobe身分服務(IMS)將從2021年3月31日起停止支援舊版Internet Explor
 
 自2021年3月31日起，Apple推播通知服務(APN)將不再支援舊版二進位通訊協定。 [顯示全文](https://developer.apple.com/news/?id=c88acm2b)。
 
-### 您的影響力？
+**您的影響力？**
 
 如果您的例項是在舊版Campaign 21.1上執行，並使用舊版Apple二進位通訊協定傳送推播通知，您必須更新為以HTTP/2為基礎的APNs提供者API。
 
-### 如何更新？
+**如何更新？**
 
 身為代管客戶，您不需採取任何動作：Adobe已將您的例項更新為以HTTP/2為基礎的API。
 
@@ -108,11 +109,11 @@ Adobe身分服務(IMS)將從2021年3月31日起停止支援舊版Internet Explor
 
 在本頁](https://developer.apple.com/news/?id=7gx0a2lp)中進一步瞭解APN更改[。
 
-### 您受影響嗎？
+**您受影響嗎？**
 
 如果您使用促銷活動在iOS裝置上傳送推播通知，您會受到影響。
 
-### 如何更新？
+**如何更新？**
 
 身為代管客戶，您不需採取任何動作：Adobe已將新的根證書整合到您的環境中。
 
