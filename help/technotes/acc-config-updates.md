@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 87844fae046dff69193d3462c802057499f406ef
+source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -69,23 +69,33 @@ Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explor
 
 **您受影響嗎？**
 
-如果您透過Adobe ID](../integrations/using/about-adobe-id.md)連線至促銷活動，透過Adobe識別服務(IMS)，升級至上述其中一個新版本是促銷活動伺服器和用戶端主控台都必須在2021年6月30日&#x200B;**之後才能連線至促銷活動。[**
+如果您透過Adobe ID](../integrations/using/about-adobe-id.md)透過Adobe身分服務(IMS)連線至促銷活動[，則必須升級至上述其中一個新版本。 這些版本隨附新的連線通訊協定：升級對於促銷活動伺服器和用戶端主控台而言都是強制性的，因此在&#x200B;**2021年6月30日**&#x200B;之後，才能連線至促銷活動。
 
 **如何更新？**
 
 身為代管客戶，您不需採取任何動作：Adobe已將實例升級到較新版本。
 
-身為內部部署／混合型客戶，您需要升級至其中一個較新版本，以便從新的客戶端主控台獲益，並確保在2021年3月31日前順暢地轉換&#x200B;**。**
+身為內部部署／混合型客戶，您需要升級至其中一個較新版本，以便從新的客戶端主控台獲益，並確保在2021年6月30日之前順暢地轉換&#x200B;**。**
+
+在升級所有實例後，客戶端控制台也需要升級到此版本。
+
+* 瞭解如何訪問[Adobe軟體分發](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
+
+* [瞭解如何安裝Campaign Client主控台](../installation/using/installing-the-client-console.md)。
 
 ## 與Experience Cloud觸發器整合
 
-舊版Auth驗證服務已到期，將於2021年6月30日退役。 [進一步瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
+舊版驗證服務已到期。 觸發器整合驗證原本是以oAUTH驗證設定為基礎，以存取管線，現在已移至Adobe I/O。將於2021年6月30日退役。 [進一步瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
 
 **您受影響嗎？**
 
 如果您使用舊版的觸發器整合（透過oAuth驗證）,**您必須移至Adobe I/O**。
 
 **如何更新？**
+
+當實例升級到較新版本後，所有客戶都需要按照[過程移至新的驗證模式](../integrations/using/configuring-adobe-io.md)。 這需要產生新的Adobe I/OToken，並在實作中使用它。  
+
+此外，對於混合環境，客戶需要確保在中端採購實例上配置了管道。 [進一步瞭解](../integrations/using/configuring-pipeline.md)。
 
 [瞭解如何移轉至Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
@@ -119,4 +129,4 @@ Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explor
 
 身為內部部署／混合型客戶，您需要更新您的設定，以確保在2021年3月29日前順暢地進行&#x200B;**轉換。**
 
-[瞭解如何整合新憑證](ios-certificate-update.md)
+[瞭解如何整合新憑證](ios-certificate-update.md)。
