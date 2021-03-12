@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 95%
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 # 第 20.3 發行版本{#release-20-3}
 
-## ![](assets/do-not-localize/blue_2.png) 版本 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png) 版本 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
 
 _2021年1月11日_
 
