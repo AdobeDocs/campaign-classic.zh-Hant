@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '918'
 ht-degree: 4%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 4%
 
 # Adobe Campaign配置更新- 2021年3月{#acc-config-updates}
 
-您需要使用最新的組建和產品修正來更新您的基礎架構和設定。 這些修正是確保服務連續性和安全性的必備修正。
+您必須使用最新的組建版本和產品修正來更新您的基礎架構和設定。 這些修正是確保服務連續性和安全性的必備修正。
 
-促銷活動使用者需要升級至下列其中一個最新版本：
+促銷活動使用者必須升級至下列其中一個最新版本：
 
 * 金標11 [進一步了解](../rn/using/gold-standard.md)
 * Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
@@ -32,7 +32,11 @@ ht-degree: 4%
 
 身為代管客戶，Adobe會定期通知您需要的建置升級。 您必須依照建議進行升級，以確保符合規範。
 
-身為內部部署／混合型客戶，您需要升級至上述版本之一。 此外，還必須執行一些手動任務，以確保您的環境安全，並準備好迎接Adobe或第三方系統即將進行的更改。
+身為內部部署／混合型客戶，您必須升級至上述版本之一。 此外，還必須執行一些手動任務，以確保您的環境安全，並準備好迎接Adobe或第三方系統即將進行的更改。
+
+>[!NOTE]
+>
+>如需這些變更的任何問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 安全性更新
 
@@ -48,13 +52,13 @@ ht-degree: 4%
 
 * 身為混合型客戶，Adobe會將中端採購執行個體升級至新版本，並強烈建議您也升級其行銷執行個體。
 
-   新建版本至少與Campaign Classic17.9版本相容，但為避免任何安全性差距，Adobe強烈建議將所有實例升級為新建版本。 
+   新建版本至少與Campaign Classic17.9版本相容，但為避免任何安全性差距，Adobe強烈建議將所有執行個體升級為新建版本。 
 
 * 身為內部部署客戶，您被要求將行銷和中部採購實例升級至較新的版本。
 
 >[!CAUTION]
 >
->如果您目前無法升級，**必須聯絡Adobe客戶服務團隊，以手動套用例項的安全性修正**。
+>如果您目前無法升級，**必須聯絡Adobe客戶服務團隊，以手動套用例項的安全性修正。**
 
 
 ## 促銷活動用戶端主控台更新
