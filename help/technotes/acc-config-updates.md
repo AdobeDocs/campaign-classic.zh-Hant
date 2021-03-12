@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
+source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -85,7 +85,7 @@ Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explor
 
 ## 與Experience Cloud觸發器整合
 
-舊版驗證服務已到期。 觸發器整合驗證原本是以oAUTH驗證設定為基礎，以存取管線，現在已移至Adobe I/O。將於2021年6月30日退役。 [進一步瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
+舊版驗證服務已到期。 觸發器整合驗證原本是以oAUTH驗證設定為基礎，以存取管線，現在已移至Adobe I/O。它將於2021年4月30日&#x200B;**退休。**[進一步瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
 
 **您受影響嗎？**
 
