@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
+source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '905'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 4%
 
 這些建置可確保特定促銷活動服務的連續性：Experience Cloud觸發器整合、APNs身份驗證和影響AdobeIdentity Management服務(IMS)身份驗證機制的新連接協定。
 
-身為代管客戶，您不需採取任何動作：Adobe擁有適合您的組建升級和配置更新。
+身為代管客戶，Adobe會定期通知您需要的建置升級。 您必須依照建議進行升級，以確保符合規範。
 
-身為內部部署／混合型客戶，您需要升級至上述版本之一。 此外，您需要執行一些手動任務，以確保您的環境安全，並準備好迎接Adobe或第三方系統即將進行的更改。
+身為內部部署／混合型客戶，您需要升級至上述版本之一。 此外，還必須執行一些手動任務，以確保您的環境安全，並準備好迎接Adobe或第三方系統即將進行的更改。
 
 ## 安全性更新
 
