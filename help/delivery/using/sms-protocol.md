@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
 source-wordcount: '8458'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此[頁面](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-sms/sms-protocol.html#administrating)中提供Adobe Campaign Standard的&#x200B;**SMS連接器通訊協定和設定**。
+>在此[頁](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-sms/sms-protocol.html#administrating)中可找到用於Adobe Campaign Standard的&#x200B;**SMS連接器協定和設定**。
 >
 >通過本文檔，所有有關協定、欄位名和值的詳細資訊的引用都引用[SMPP 3.4規範](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
 
@@ -30,11 +30,11 @@ SMS可能僅限於傳送沒有格式的簡短文字訊息，但其簡單性使�
 
 * 手動從電話傳送，這是人們直接進行溝通的通常方式。
 * 從網際網路傳送，就像Adobe Campaign傳送訊息的方式。 為此，您需要一個將網際網路連接到移動網路的SMS服務提供商。
-Adobe Campaign使用SMPP通訊協定將SMS傳送給服務供應商。
+Adobe Campaign公司使用SMPP協定向服務提供商發送SMS。
 
-本檔案將引導您瞭解Adobe Campaign與SMPP供應商之間所設定的連線。
+本檔案將引導您瞭解Adobe Campaign與SMPP供應商之間的連接設定。
 
-SMPP供應商有時可能會偏離官方規格，但Adobe Campaign中的SMS連接器提供許多選項來調整其行為，使其與大部分供應商相容。
+SMPP供應商有時可能會偏離官方規格，但Adobe Campaign的SMS連接器提供許多選項來調整其行為，使其與大多數供應商相容。
 
 >[!IMPORTANT]
 >
@@ -44,11 +44,11 @@ SMPP供應商有時可能會偏離官方規格，但Adobe Campaign中的SMS連�
 
 當透過SMS提供者傳送大量SMS時，您會遇到三種不同的SMS:
 
-* **SMS MT（行動終止）**:Adobe Campaign透過SMPP供應商向行動電話發出的SMS。
+* **SMS MT（行動終止）**:Adobe Campaign透過SMPP供應商向行動電話發出的簡訊。
 
 * **SMS MO（源自行動裝置）**:行動裝置透過SMPP供應商傳送至Adobe Campaign的SMS。
 
-* **SMS SR（狀態報告）、DR或DLR（傳送收據）**:行動裝置透過SMPP提供者傳送回執給Adobe Campaign，指出SMS已成功接收。Adobe Campaign也可能會收到SR，指出無法傳送訊息，通常會附上錯誤的說明。
+* **SMS SR（狀態報告）、DR或DLR（傳送收據）**:行動裝置透過SMPP提供者傳送回執給Adobe Campaign，指出SMS已成功接收。Adobe Campaign可能還會收到指示無法傳送消息的SR，通常會包含錯誤的描述。
 
 您需要區分鳴謝（RESP PDU, SMPP協定的一部分）和SR :SR是一種通過網路端到端發送的SMS，而確認只是確認一次傳輸成功。
 
@@ -74,14 +74,14 @@ SMPP供應商有時可能會偏離官方規格，但Adobe Campaign中的SMS連�
 
 ## SMPP協定{#smpp-protocol}
 
-Adobe Campaign Classic支援SMPP通訊協定3.4版。這是一種廣泛的協定，允許向提供者(SMSC)發送SMS，並接收SMS和接收。 有關詳細資訊，請參閱[SMPP文檔](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
+Adobe Campaign Classic支援SMPP協定3.4版。這是一種廣泛的協定，允許向提供者(SMSC)發送SMS，並接收SMS和接收。 有關詳細資訊，請參閱[SMPP文檔](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
 
 SMS服務提供商端的網路設備通常稱為SMSC。
 
 ### SMPP連接{#smpp-connections}
 
-Adobe Campaign透過TCP連線至SMS服務供應商的網路設備。 SMPP通訊協定會設定從Adobe Campaign到提供者的永久TCP連線。 TCP連線一律由Adobe Campaign啟動，甚至是接收訊息。
-SMPP會開啟1或2個TCP連接，具體取決於其模式。 所有連線一律由Adobe Campaign啟動。
+Adobe Campaign通過TCP與SMS服務提供商的網路設備連接。 SMPP協定設定從Adobe Campaign到提供方的永久TCP連接。 TCP連接始終由Adobe Campaign發起，即使接收消息也是如此。
+SMPP會開啟1或2個TCP連接，具體取決於其模式。 所有連線都由Adobe Campaign發起。
 
 SMPP協定可以在兩種模式下工作：
 
@@ -104,15 +104,15 @@ SMPP傳輸單元（「資料包」）稱為PDU。 **PDU**&#x200B;包含命令、
 
 ![](assets/do-not-localize/sms_protocol_1.png)
 
-在Adobe Campaign Classic中，若要將SR與其對應的MT連結，SMSC會傳回ID與`SUBMIT_SM_RESP`和`DELIVER_SM`步驟。 標識符儲存在`nms::providerMsgId`表的`providerId`欄位中，並連結到`broadLogId`和`deliveryId`。 此匹配操作由SMS進程在寫入資料庫時完成。
+在Adobe Campaign Classic，要將SR與其相應的MT連結，SMSC將返回一個ID，其中包含`SUBMIT_SM_RESP`和`DELIVER_SM`步驟。 標識符儲存在`nms::providerMsgId`表的`providerId`欄位中，並連結到`broadLogId`和`deliveryId`。 此匹配操作由SMS進程在寫入資料庫時完成。
 
 成功的`SUBMIT_SM_RESP PDU`在成功的`DELIVER_SM (SR) PDU`觸發「已接收」消息狀態時，會在發送日誌中觸發「已發送」消息狀態。
 
 ### 安全方面{#security-aspects}
 
-協定本身不加密。 大部分的提供者會實作允許清單上的IP變數，因此必須向提供者宣告Adobe Campaign伺服器IP位址。
+協定本身不加密。 大多數提供者在允許清單上實施IP的變型，因此必須向提供者聲明Adobe Campaign伺服器IP地址。
 
-Adobe Campaign支援在系結階段傳遞登入和密碼。 它還支援SMPP而非TLS。 應當指出，為了獲得適當的安全性，需要證書。 雖然SMPP連接器允許略過證書檢查，但它只應用於測試，因為沒有證書的TLS提供了明顯較低的安全級別。
+Adobe Campaign支援在綁定階段傳遞登錄和密碼。 它還支援SMPP而非TLS。 應當指出，為了獲得適當的安全性，需要證書。 雖然SMPP連接器允許略過證書檢查，但它只應用於測試，因為沒有證書的TLS提供了明顯較低的安全級別。
 
 連接器使用系統`openssl`庫提供的預設證書。 通常由Debian上的`/etc/ssl/certs`目錄提供。 預設情況下，此目錄由&quot;ca-certificates&quot;包提供，但可自定義。
 
@@ -152,7 +152,7 @@ PDU可以有可選欄位。 此處僅介紹最常見的欄位。 有關詳細資
 
 此PDU必須由系統發送，才能斷開連接。 必須等待匹配的`UNBIND_RESP` PDU才能關閉連接。
 
-符合SMSC的TCP連線不得關閉，而TCP連線由Adobe Campaign連接器控制。
+符合SMSC要求的SMSC不能關閉連接，TCP連接由Adobe Campaign連接器控制。
 
 #### SUBMIT_SM {#submit-sm}
 
@@ -176,13 +176,13 @@ PDU可以有可選欄位。 此處僅介紹最常見的欄位。 有關詳細資
 
 * **validity_period**:時間戳記，之後不應嘗試重試。設定在傳送本身。
 
-* **registered_delivery**:說明是否請求SR。Adobe Campaign一律會設定此標幟，但自動回覆除外。 對於多部件消息，僅為第一部件設定標誌。 所有版本都有相同的行為。
+* **registered_delivery**:說明是否請求SR。Adobe Campaign一律會設定此旗標，但自動回覆除外。 對於多部件消息，僅為第一部件設定標誌。 所有版本都有相同的行為。
 
 * **data_coding**:表示文字欄位中使用的編碼。如需詳細資訊，請參閱[SMS文字編碼](../../delivery/using/sms-protocol.md#sms-text-encoding)一節。
 
 * **short_message**:訊息的文字。如果使用UDH，這也包含UHD標題。
 
-Adobe Campaign支援下列選用欄位：
+Adobe Campaign支援以下可選欄位：
 
 * **dest_addr_subut**:用於指定SMS的目標：flash、行動或SIM卡。在傳送屬性中設定。
 
@@ -196,11 +196,11 @@ Adobe Campaign支援下列選用欄位：
 >
 >許多提供者會以十六進位方式傳送MT ID。 請務必在外部帳戶中正確設定MT確認&#x200B;**中的** ID格式。
 
-某些提供者在發送SR後發送`SUBMIT_SM_RESP`。 為了說明該行為，Adobe Campaign會等待30秒後，將&#x200B;**無效訊息ID**&#x200B;回覆給SR，其ID未知。
+某些提供者在發送SR後發送`SUBMIT_SM_RESP`。 為瞭解釋這種行為，Adobe Campaign在將&#x200B;**無效消息ID**&#x200B;回復到SR時，等待30秒。
 
 #### DELIVER_SM {#delivery-sm}
 
-此PDU由SMSC傳送至Adobe Campaign。 它包含MO或SR。
+此PDU由SMSC發送到Adobe Campaign。 它包含MO或SR。
 
 大部分欄位的含義與其`SUBMIT_SM`對應項目相同。 以下是實用欄位清單：
 
@@ -212,13 +212,13 @@ Adobe Campaign支援下列選用欄位：
 
 * **short_message**:文字。對於SR ，它包含SMPP協定規範附錄B中介紹的資料。 有關詳細資訊，請參見[SR錯誤管理](../../delivery/using/sms-protocol.md#sr-error-management)。
 
-Adobe Campaign可以讀取`receipted_message_id`選用欄位中含有某些設定的訊息ID。
+Adobe Campaign可以讀取`receipted_message_id`選填欄位中的訊息ID，其中包含一些設定。
 
 #### DELIVER_SM_RESP {#deliver-sm-resp}
 
-此PDU由Adobe Campaign傳送，以確認SR和MO。
+此PDU由Adobe Campaign發送，以確認SR和MO。
 
-Adobe Campaign Classic在將SR和MO插入資料庫後，即確認它們。 即使已發送成功的`DELIVER_SM_RESP` PDU，也可能發生某些處理錯誤。 此限制是由Adobe Campaign Classic的軟體架構所造成。
+Adobe Campaign Classic承認SR和MO一旦被插入資料庫中即可。 即使已發送成功的`DELIVER_SM_RESP` PDU，也可能發生某些處理錯誤。 這種限制是由Adobe Campaign Classic的軟體體系結構造成的。
 
 #### INQUIRE_LINK {#enquire-links}
 
@@ -234,15 +234,15 @@ Adobe Campaign Classic在將SR和MO插入資料庫後，即確認它們。 即�
 
 多部分簡訊(SMS)或長篇簡訊(SMS)是以多個部分傳送的簡訊。 由於行動網路通訊協定的技術限制，SMS不能大於140位元組，否則需要分割。 請參閱[SMS文字編碼](../../delivery/using/sms-protocol.md#sms-text-encoding)一節，進一步瞭解SMS中可容納的字元數。
 
-長訊息的每個部分都是個別的SMS。 這些部件獨立地在網路上運行，並由接收行動電話組裝。 為處理重試和連線問題，Adobe Campaign會以反向順序傳送這些部分，並僅在訊息的第一部分（最後一次傳送）上要求SR。 由於行動電話只會在收到其第一部分時顯示訊息，因此在行動電話上，其他部分的重試不會產生重複。
+長訊息的每個部分都是個別的SMS。 這些部件獨立地在網路上運行，並由接收行動電話組裝。 為了處理重試和連接問題，Adobe Campaign以反向順序發送這些部件，並僅在消息的第一部分（最後發送的部分）請求SR。 由於行動電話只會在收到其第一部分時顯示訊息，因此在行動電話上，其他部分的重試不會產生重複。
 
 使用&#x200B;**傳送範本**&#x200B;中的&#x200B;**每則訊息的最大SMS數設定，可設定每則訊息的最大SMS數。**&#x200B;在發送時，如果訊息超過此限制，會因為SMS故障過長而失敗。
 
 有2種方式可傳送長篇簡訊：
 
-* **UDH**:預設和建議的傳送長訊息方式。在此模式下，連接器將消息拆分為多個`SUBMIT_SM PDU`s，其中包含UDH資訊。 此通訊協定是行動電話本身使用的通訊協定。 這表示Adobe Campaign對訊息產生的控制力最強，因此能夠精確計算已傳送的部件數及分割方式。
+* **UDH**:預設和建議的傳送長訊息方式。在此模式下，連接器將消息拆分為多個`SUBMIT_SM PDU`s，其中包含UDH資訊。 此通訊協定是行動電話本身使用的通訊協定。 這意味著Adobe Campaign對消息生成擁有最大的控制權，從而能夠準確計算發送了多少部件以及它們被拆分的方式。
 
-* **message_payload**:以單一方式傳送長資訊 `SUBMIT_SM PDU`。提供者必須分割它，這表示Adobe Campaign無法確切知道已傳送的零件數。 有些提供者需要此模式，但我們建議您只在不支援UDH時才使用。
+* **message_payload**:以單一方式傳送長資訊 `SUBMIT_SM PDU`。供應商將不得不分割它，這意味著Adobe Campaign不可能確切知道發送了多少部件。 有些提供者需要此模式，但我們建議您只在不支援UDH時才使用。
 
 有關協定和格式的詳細資訊，請參閱[SUBMIT_SM PDU](../../delivery/using/sms-protocol.md#information-pdu)的`esm_class`、`short_message`和`message_payload`欄位的說明。
 
@@ -258,7 +258,7 @@ SMPP協定定義了`RESP PDU`s中的標準同步錯誤，但並未定義SR的錯
 
 建議在[SMPP協定規範](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)的附錄B部分中提出（第167頁），但這不列出實際錯誤代碼及其含義。
 
-為了適應錯誤管理，Adobe Campaign的廣播訊息系統已運用於正確布建錯誤及其嚴重性（硬式、軟式等）。
+為了適應錯誤管理，Adobe Campaign的廣播消息系統被用來正確地設定錯誤及其嚴重性（硬、軟等）。
 
 如上所述，存在兩種不同的錯誤：
 
@@ -267,7 +267,7 @@ SMPP協定定義了`RESP PDU`s中的標準同步錯誤，但並未定義SR的錯
 
 收到SR時，其`short_message`欄位（例如附錄B符合實施）中可找到狀態和錯誤。 PDU的`short_message`欄位通常稱為&#x200B;**文本欄位**，因為它包含MT中的文本。 如果是SR，則它包含技術資訊加上名為&#x200B;**Text**&#x200B;的子欄位。 這2個欄位不同，`short_message`實際上包含&#x200B;**Text**&#x200B;欄位和其他資訊。
 
-Adobe Campaign Classic連接器（Extended SMPP除外）使用硬式編碼行為，這取決於選取的提供者。 一般SMPP只區分成功與錯誤，沒有詳細資訊。 傳送記錄檔可能包含一些不保證的資訊。
+Adobe Campaign Classic連接器（Extended SMPP除外）使用硬式編碼行為，這取決於所選的提供者。 一般SMPP只區分成功與錯誤，沒有詳細資訊。 傳送記錄檔可能包含一些不保證的資訊。
 
 #### SR文本欄位格式{#sr-text-field-format}
 
@@ -281,17 +281,17 @@ id:1234567890 sub:001 dlvrd:001 submit date:1608011415 done date:1608011417 stat
 
 id欄位是`SUBMIT_SM_RESP PDU`中收到的ID，即MT的確認。
 
-`sub` 而且 `dlvrd` 應計算已傳送的部件和已傳送訊息的數量，但Adobe Campaign並未使用此功能，因為Broadlog系統提供更好、更整合的資訊。
+`sub` 而 `dlvrd` 且應該計算傳送的部件和傳送的消息的數量，但Adobe Campaign沒有使用，因為廣播系統提供了更好、更整合的資訊。
 
 `submit date` 欄位 `done date` 是指MT的傳送時間和行動裝置傳送SR的時間戳記。預期會出現時區問題，甚至是日期設定不正確之手機所指定的時間戳記錯誤。
 
-stat欄位很重要，因為它會告訴消息的狀態。 唯一重要的狀態是`DELIVRD`、`UNDELIV`和`REJECTD`。 `DELIVRD`狀態表示成功，其他兩個表示錯誤。 其他值是可能的，但通常是中間通知，例如MT到達行動電信業者，但不是行動電話。 Adobe Campaign會忽略這些中介通知。
+stat欄位很重要，因為它會告訴消息的狀態。 唯一重要的狀態是`DELIVRD`、`UNDELIV`和`REJECTD`。 `DELIVRD`狀態表示成功，其他兩個表示錯誤。 其他值是可能的，但通常是中間通知，例如MT到達行動電信業者，但不是行動電話。 這些中間通知被Adobe Campaign忽略。
 
 err欄位包含特定於提供程式的錯誤代碼。 提供者必須提供可能的錯誤代碼及其含義的表，才能解釋此值。
 
-最後，文本欄位通常包含MT文本的開頭。 Adobe Campaign會忽略這一點，而有些供應商不會傳輸它，以避免PII洩漏和網路頻寬耗用。 在故障排除期間，可通過閱讀此欄位，更輕鬆地發現與測試MT匹配的SR。
+最後，文本欄位通常包含MT文本的開頭。 這被Adobe Campaign所忽視，有些供應商不會傳輸它，以避免PII洩漏和網路頻寬消耗。 在故障排除期間，可通過閱讀此欄位，更輕鬆地發現與測試MT匹配的SR。
 
-### Adobe Campaign Classic Extended中SR處理範例一般SMPP {#sr-processing}
+### Adobe Campaign Classic擴展通用SMPP {#sr-processing}中的SR處理示例
 
 此範例顯示附錄B建議後的實作案例、外部帳戶的預設值，以及成功的SMS MT。
 
@@ -321,7 +321,7 @@ SR ExampleProvider DELIVRD 000|#MESSAGE#
 
 * 如果符合`error` regex，則訊息會限定為錯誤。
 
-* 如果這兩個規則集不匹配，則會忽略SR。 可能是中間通知，Adobe Campaign不會處理。
+* 如果這兩個規則集不匹配，則會忽略SR。 這可能是中間通知，Adobe Campaign不處理。
 
 預設情況下，所有錯誤都被設定為軟錯誤。 這表示必須手動布建硬性錯誤。
 
@@ -343,13 +343,13 @@ SMS訊息使用特殊的7位元編碼，通常稱為GSM7編碼。
 
 * Latin-1並非一律受支援。 嘗試使用Latin-1之前，請先檢查與SMSC提供商的相容性。
 
-* Adobe Campaign連接器不支援國家語言班次表。 您必須改用UCS-2或其他`data_coding`。
+* 國家語言班次表不受Adobe Campaign連接器支援。 您必須改用UCS-2或其他`data_coding`。
 
 * UCS-2和UTF-16通常由手機混合。 使用UCS-2中未顯示的emoji和其他字元時，這個問題。
 
 * 大部份的手機都沒有UCS-2字元的字型字元。 智慧手機往往能夠很容易地顯示稀有字元，但功能手機通常對它們所購買國家的母語有用的功能的支援有限。 如果您想要使用emoji或ASCII-art，請在傳送前在多種手機上進行測試。 Adobe Campaign預覽不會模擬遺失的字元，並會顯示網頁瀏覽器上可用的符號。
 
-`data_coding`欄位會告訴您使用的編碼。 一個主要問題是，值0表示規範中的預設SMSC編碼，通常指GSM7。 請洽詢SMSC合作夥伴，Adobe Campaign僅支援與`data_coding` = 0關聯的編碼。 其他`data_coding`值通常遵循規範，但確保唯一方法是向SMSC提供程式檢查。
+`data_coding`欄位會告訴您使用的編碼。 一個主要問題是，值0表示規範中的預設SMSC編碼，通常指GSM7。 請洽詢SMSC合作夥伴，該合作夥伴的編碼與`data_coding` = 0相關聯，而Adobe Campaign僅支援此協定。 其他`data_coding`值通常遵循規範，但確保唯一方法是向SMSC提供程式檢查。
 
 消息的最大大小取決於其編碼。 下表總結了所有相關資訊：
 
@@ -403,15 +403,15 @@ SMPP連接的口令。 在BIND PDU的口令欄位中傳遞。
 
 #### MTA子連接數{#number-mta-child}
 
-在Adobe Campaign Classic中，它定義每個MTA子系的連線數。
+在Adobe Campaign Classic，它定義每個MTA子項的連接數。
 
-Adobe Campaign Classic Extended SMPP連接器可以控制每個MTA子系的連線數。 若要控制連線的全域限制，您必須限制MTA子程式的數量，這通常意味著SMS需要有專用的中端採購平台。
+Adobe Campaign Classic擴展SMPP連接器可以控制每個MTA子系的連接數。 若要控制連線的全域限制，您必須限制MTA子程式的數量，這通常意味著SMS需要有專用的中端採購平台。
 
-對於Adobe Campaign Classic，可以有不同數目的接收器和發射器連線：
+對Adobe Campaign Classic來說，接收機和發送機的連接數可能不同：
 
 * **發射器連接= MTA子連接數x MTA子進程數x MTA子進程數x MTA數（如果設定了自動回覆）+ MTA子連接數**
 
-如上所述，如果已啟用自動回覆，Adobe Campaign Classic SMS程式會開啟更多發射器連線。 這些額外的連線會用來傳送自動回覆。
+如上所建議，如果啟用自動回覆，Adobe Campaign ClassicSMS程式會開啟更多發射器連線。 這些額外的連線會用來傳送自動回覆。
 
 * **接收器連接= MTA子連接數**
 
@@ -425,7 +425,7 @@ Adobe Campaign Classic Extended SMPP連接器可以控制每個MTA子系的連�
 
 此設定會轉儲記錄檔中的所有SMPP流量。 在初始設定期間，通常需要調整參數。 在排除連接器故障時必須啟用此功能，並與提供者所看到的流量進行比較。
 
-在Adobe Campaign Classic中，記錄輸出位於MT相關流量的MTA記錄檔，以及MO和SR相關流量的SMS記錄檔。
+在Adobe Campaign Classic，日誌輸出位於與MT相關的流量的MTA日誌中，以及與MO和SR相關流量的SMS日誌中。
 
 ### 接收器連接設定{#receiver-connection}
 
@@ -457,7 +457,7 @@ Adobe Campaign Classic Extended SMPP連接器可以控制每個MTA子系的連�
 
 啟用後，傳入的MO將儲存在資料庫的inSMS表中。 您可以使用任何工作流程的查詢活動來查詢此表格。
 
-Adobe Campaign Classic一律會將所有MO儲存在inSMS資料庫中，因此此選項不可用。
+Adobe Campaign Classic總是將所有MO儲存在inSMS資料庫中，因此這個選項不可用。
 
 #### 在SR處理{#real-time-kpi}期間啟用即時KPI更新
 
@@ -465,7 +465,7 @@ Adobe Campaign Classic一律會將所有MO儲存在inSMS資料庫中，因此此
 
 缺點是效能低，因為它會產生資料庫爭用。 如果禁用，則&#x200B;**syncfromexec**&#x200B;工作流將更新統計資訊，每20分鐘運行一次。
 
-Adobe Campaign Classic對KPI有完全不同的機制，因此此選項不可用。
+Adobe Campaign Classic的KPI機制完全不同，因此無法使用此選項。
 
 #### 源編號{#source-number}
 
@@ -539,7 +539,7 @@ Adobe Campaign Classic對KPI有完全不同的機制，因此此選項不可用�
 
 #### 綁定超時{#bind-timeout}
 
-TCP連接嘗試與`BIND_*_RESP`回覆之間的逾時。 逾時時，連線會由Adobe Campaign連接器關閉，而且會等候「時間」再重新連線，然後再次嘗試。
+TCP連接嘗試與`BIND_*_RESP`回覆之間的逾時。 超時時，連接由Adobe Campaign連接器關閉，在重新連接之前將等待時間，然後再次嘗試。
 
 #### inquire_link句點{#enquire-link-period}
 
@@ -547,7 +547,7 @@ TCP連接嘗試與`BIND_*_RESP`回覆之間的逾時。 逾時時，連線會由
 
 ### SMSC 細節 {#SMSC-specifics}
 
-這些設定是進階設定，可讓Adobe Campaign連接器與大部分SMPP實作特性相適應。
+這些設定是進階設定，可將Adobe Campaign連接器調整為符合大部分SMPP實作特性。
 
 **定義編碼的特定對應**
 
@@ -559,7 +559,7 @@ MTA會嘗試使用清單中的第一個編碼進行編碼。 如果失敗，則�
 
 表中項的順序很重要：編碼會從上到下嘗試。 您應將最便宜或建議最多的編碼放在清單的頂端，接著是越來越昂貴的編碼。
 
-請注意，UCS-2不會失敗，因為它可以編碼Adobe Campaign支援的所有字元，而UCS-2 SMS的最大長度則小得多：僅70個字元。
+請注意，UCS-2不會失敗，因為它可編碼Adobe Campaign支援的所有字元，而UCS-2 SMS的最大長度則小得多：僅70個字元。
 
 您也可以使用此設定，強制一律使用特定編碼，方法是在對應表格中僅聲明1行。
 
@@ -580,7 +580,7 @@ MTA會嘗試使用清單中的第一個編碼進行編碼。 如果失敗，則�
 
 勾選後，長SMS會傳送到一個SUBMIT_SM PDU中，並將文字放入message_payload選填欄位。 有關詳細資訊，請參見[SMPP規範](../../delivery/using/sms-protocol.md#ACS-SMPP-connector)。
 
-如果啟用此功能，Adobe Campaign將無法個別計算SMS部件：所有訊息都會計為一個部分傳送。
+如果啟用此功能，Adobe Campaign將無法單獨計算SMS部件：所有訊息都會計為一個部分傳送。
 
 #### 傳送完整電話號碼{#send-full-phone-number}
 
@@ -642,7 +642,7 @@ Fox範例，設定為2時：
 
 #### SR {#regex-extraction}中ID的抽取規則
 
-SR格式不嚴格由SMPP協定規範執行。 它只是說明書[附錄B](../../delivery/using/sms-protocol.md#sr-error-management)（第167頁）中所述的建議。 有些SMPP實作者對此欄位的格式不同，因此Adobe Campaign需要一種擷取正確欄位的方法。
+SR格式不嚴格由SMPP協定規範執行。 它只是說明書[附錄B](../../delivery/using/sms-protocol.md#sr-error-management)（第167頁）中所述的建議。 有些SMPP實施者對此欄位的格式不同，所以Adobe Campaign需要擷取正確欄位的方法。
 
 依預設，在`id:`之後最多可擷取10個英數字元。
 
@@ -678,7 +678,7 @@ regex中未包含足夠的上下文，可能會造成小的安全性缺陷：消
 
 >[!NOTE]
 >
->僅適用於Adobe Campaign Classic Extended SMPP連接器。
+>僅在Adobe Campaign Classic擴展SMPP連接器中提供。
 
 如果勾選，則選用欄位的內容會附加至上述規則處理的文字。 文本的格式為`0xTAG:VALUE`,`0xTAG` ，是標籤的4位十六進位值，大寫如下：`0x002E`。
 
@@ -718,7 +718,7 @@ regex中未包含足夠的上下文，可能會造成小的安全性缺陷：消
 
 >[!IMPORTANT]
 >
->在Adobe Campaign Classic和混合式架構中，套用擴充SMPP連接器的自動回覆功能需要在&#x200B;**External account**&#x200B;資料夾上新增mid運算子的寫入存取權。
+>在Adobe Campaign Classic和混合體系結構中，對擴展的SMPP連接器應用自動回復要求在&#x200B;**External account**&#x200B;資料夾上為mid運算子添加寫訪問權。
 
 此功能可讓您快速回覆文字給MO，並處理傳送至Denylist的簡短程式碼。
 
@@ -754,7 +754,7 @@ SMPP規範將欄位限制為21個字元，但有些提供者允許的值較長�
 
 SMS協定將SMS限制在255個部分，但有些手機無法將長消息與10個部分以上的部分組合在一起，這個限制取決於確切的型號。 我們建議您不要在每則訊息中超過5個部分。
 
-由於個人化訊息在Adobe Campaign中的運作方式，訊息的大小可能會有所不同。 長資訊量大可能會增加發送成本。
+由於個人化訊息在Adobe Campaign的運作方式，訊息的大小可能有所不同。 長資訊量大可能會增加發送成本。
 
 #### 傳輸模式{#transmission-mode}
 
@@ -820,12 +820,12 @@ SMS程式每分鐘檢查是否有完整的線路，然後以非同步方式處�
 
 檢查您沒有舊的SMS外部帳戶。 如果您停用測試帳戶，您就會面臨在生產系統上重新啟用測試帳戶並產生潛在衝突的風險。
 
-如果您在同一個Adobe Campaign實例上有多個帳戶連線至同一個提供者，請連絡該提供者，以確定他們實際區分這些帳戶之間的連線。 若有多個帳戶具有相同的登入，則需要額外的設定。
+如果您在同一個Adobe Campaign實例上有多個帳戶連接到同一個提供程式，請聯繫該提供程式以確保它們實際區分這些帳戶之間的連接。 若有多個帳戶具有相同的登入，則需要額外的設定。
 
 ### 在檢查{#enable-verbose}期間啟用詳細SMPP跟蹤
 
 您應始終在檢查期間啟用詳細的SMPP跟蹤。
-即使您無法自行檢查記錄檔，[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)也能更輕鬆地協助您。
+即使您無法自行檢查記錄檔，[Adobe客戶服務將更容易協助您。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 ### 測試您的SMS {#test}
 
@@ -841,14 +841,14 @@ SMS程式每分鐘檢查是否有完整的線路，然後以非同步方式處�
 
 * **檢查MO是否**
 已處理如果您需要處理MO（自動回覆、將MO儲存在資料庫等）試著做些測試。 針對所有自動回覆關鍵字傳送幾則簡訊，並檢查回覆是否足夠快，不超過幾秒。
-登入記錄，Adobe Campaign會成功回覆 
+請登入Adobe Campaign成功回覆的記錄檔 
 `DELIVER_SM_RESP` (command_status=0)。
 
 ### 檢查PDU {#check-pdus}
 
 即使消息看起來很成功，檢查PDU的格式是否正確也很重要。
 
-連線至之前未連線至Adobe Campaign的提供者時，此步驟是必要的。
+在連接到以前未連接到Adobe Campaign的提供程式時，必須執行此步驟。
 
 #### BIND {#bind}
 
