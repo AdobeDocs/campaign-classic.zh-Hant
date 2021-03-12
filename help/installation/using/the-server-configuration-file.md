@@ -7,21 +7,21 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
+source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
 workflow-type: tm+mt
-source-wordcount: '7929'
-ht-degree: 5%
+source-wordcount: '7970'
+ht-degree: 4%
 
 ---
 
 
 # 伺服器設定檔{#the-server-configuration-file}
 
-Adobe Campaign的整體設定定義在安裝目錄的&#x200B;**conf**&#x200B;目錄的&#x200B;**serverConf.xml**&#x200B;檔案中。 本節列出&#x200B;**serverConf.xml**&#x200B;檔案的所有不同節點和參數。
+Adobe Campaign的總體配置在安裝目錄的&#x200B;**conf**&#x200B;目錄下的&#x200B;**serverConf.xml**&#x200B;檔案中定義。 本節列出&#x200B;**serverConf.xml**&#x200B;檔案的所有不同節點和參數。
 
 >[!NOTE]
 >
->伺服器端組態只能由Adobe針對Adobe代管的部署執行。 若要進一步瞭解不同的部署，請參閱[代管模型](../../installation/using/hosting-models.md)一節或[本頁](../../installation/using/capability-matrix.md)。 代管型號和混合型號的安裝和配置步驟在[部分](../../installation/using/hosted-model.md)中介紹。
+>伺服器端組態只能透過AdobeAdobe代管的部署來執行。 若要進一步瞭解不同的部署，請參閱[代管模型](../../installation/using/hosting-models.md)一節或[本頁](../../installation/using/capability-matrix.md)。 代管型號和混合型號的安裝和配置步驟在[部分](../../installation/using/hosted-model.md)中介紹。
 
 第一參數位於&#x200B;**shared**&#x200B;節點內。 這些與實例相關。 所有nlserver命令（nlserver web 、 nlserver wfserver等）都可能使用這些命令。 其他部分與特定的nlserver子命令相關。
 
@@ -337,7 +337,7 @@ Adobe Campaign的整體設定定義在安裝目錄的&#x200B;**conf**&#x200B;目
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> 類型（枚舉）。 可能的值包括'Oracle'、'MSSQL'(Microsoft SQL Server)、'PostgreSQL'(PostgreSQL, Greenplum)、'Teradata'、'DB2'、'MySQL'、'Netezza'、'AsterData'、'SAPHANA'(SAP HANA)、RedShift」(Amazon Redshift)、「ODBC」(ODBC(Sybase ASE、Sybase IQ))、「中繼」（HTTP中繼到遠程資料庫）。<br /> </td> 
+   <td> 類型（枚舉）。 可能的值包括'Oracle'、'MSSQL'(Microsoft SQL Server)、'PostgreSQL'(PostgreSQL, Greenplum)、'Teradata'、'DB2'、'MySQL'、'Netezza'、'AsterData'、'SAPHANA'(SAP HANA)、'RedShift'(Amazon)Redshift)、「ODBC」(ODBC(Sybase ASE,Sybase IQ))、「中繼」（HTTP中繼到遠程資料庫）。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -965,7 +965,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 以下是&#x200B;**urlPermission**&#x200B;節點的不同參數。 這是Javascript程式碼可存取的URL清單。
 
-網域清單和規則運算式，指定Javascript程式碼中遇到的URL是否可供Adobe Campaign伺服器使用。
+網域和規則運算式清單，指定Javascript程式碼中遇到的URL是否可供Adobe Campaign伺服器使用。
 
 如果找不到URL，則會根據指定的預設模式執行預設動作。
 
@@ -1237,7 +1237,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> 驗證實例名稱：如果為true，則訊息ID標題中包含的Adobe Campaign例項名稱必須與目前例項相同。<br /> </td> 
+   <td> 驗證實例名稱：如果為true，則Message-ID標題中包含的Adobe Campaign實例的名稱必須與當前實例相同。<br /> </td> 
    <td> 布爾<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1690,6 +1690,8 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
 ### 中繼{#relay}
 
 在&#x200B;**mta > relay**&#x200B;節點中，配置以下參數。 這是郵件發送的郵件伺服器配置。
+
+清單的處理方式與MX DNS查詢傳回的MX清單相同，通常只要第一個MX可用，就會使用下一個MX，依此類推。
 
 有關其他資訊，請參閱[SMTP中繼](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
@@ -3281,7 +3283,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> 身分管理系統(IMS)組織識別碼：Adobe Experience Cloud中的唯一組織識別碼，尤其用於VisitorID服務和IMS SSO。<br /> </td> 
+   <td> Identity Management系統(IMS)組織識別碼：Adobe Experience Cloud內的獨特組織識別碼，尤其用於VisitorID服務和IMS SSO。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3289,7 +3291,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
    <td> P3PCompactPolicy<br /> </td> 
    <td> 描述永久Cookie所用原則的值（與P3P精簡版原則格式相容）。<br /> </td> 
    <td> 字串<br /> </td> 
-   <td> 「CAO DSP COR CURa DEVa TAIa我們的匯流排IND UNI COM NAV」<br /> </td> 
+   <td> 「CAO DSP COR CURa DEVa TAIaOUR BUS IND UNI COM NAV」<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
