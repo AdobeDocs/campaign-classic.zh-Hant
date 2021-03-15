@@ -6,33 +6,21 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
+source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 5%
+source-wordcount: '989'
+ht-degree: 6%
 
 ---
 
 
 # Adobe Campaign配置更新- 2021年3月{#acc-config-updates}
 
-您必須使用最新的組建版本和產品修正來更新您的基礎架構和設定。 這些修正是確保服務連續性和安全性的必備修正。
-
-促銷活動使用者必須升級至下列其中一個最新版本：
-
-* 金標11 [進一步了解](../rn/using/gold-standard.md)
-* Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
-* Campaign 20.3.3發行。 [進一步了解](../rn/using/release--20-3.md)
-* Campaign 20.2.4發行。 [進一步了解](../rn/using/release--20-2.md)
-* Campaign 20.1.4發行。 [進一步了解](../rn/using/release--20-1.md)
-* Campaign 19.2.4發行。 [進一步了解](../rn/using/release--19-2.md)
-* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
-
-這些建置可確保特定促銷活動服務的連續性：Experience Cloud觸發器整合、APNs身份驗證和影響AdobeIdentity Management服務(IMS)身份驗證機制的新連接協定。
+您必須使用最新的組建版本和產品修正來更新您的基礎架構和設定。 這些修正是確保服務連續性和安全性的必備修正。 此外，您需要調整實作，以配合第三方變更。
 
 身為代管客戶，Adobe會定期通知您需要的建置升級。 您必須依照建議進行升級，以確保符合規範。
 
-身為內部部署／混合型客戶，您必須升級至上述版本之一。 此外，還必須執行一些手動任務，以確保您的環境安全，並準備好迎接Adobe或第三方系統即將進行的更改。
+身為內部部署／混合型客戶，出於安全考慮，您必須升級至本頁所列的其中一個版本。 此外，還必須執行一些手動任務，以確保您的環境安全，並準備好迎接Adobe或第三方系統即將進行的更改。
 
 >[!NOTE]
 >
@@ -44,7 +32,15 @@ ht-degree: 5%
 
 **您受影響嗎？**
 
-如果您的環境的組建版本低於Campaign 19.1.8、19.2.4、20.1.4、20.2.4、20.3.3或Gold Standard 11，您會受到影響。
+如果您的環境的組建版本低於下列版本，您會受到影響：
+
+* 金標11 [進一步了解](../rn/using/gold-standard.md)
+* Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
+* Campaign 20.3.3發行。 [進一步了解](../rn/using/release--20-3.md)
+* Campaign 20.2.4發行。 [進一步了解](../rn/using/release--20-2.md)
+* Campaign 20.1.4發行。 [進一步了解](../rn/using/release--20-1.md)
+* Campaign 19.2.4發行。 [進一步了解](../rn/using/release--19-2.md)
+* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
 
 **如何更新？**
 
@@ -71,13 +67,25 @@ ht-degree: 5%
 >
 >其他版本的全新Client Console即將推出。
 
-## 透過IMS連線至促銷活動
+## AdobeIdentity Management系統(IMS)更新
 
-Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30日&#x200B;**開始。**[進一步瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。已更新促銷活動用戶端主控台，以確保與AdobeIMS相容。
+Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30日&#x200B;**開始。**[進一步瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+
+已更新促銷活動用戶端主控台，以確保與下列促銷活動版本中的AdobeIMS相容：
 
 **您受影響嗎？**
 
-如果您透過Adobe ID](../integrations/using/about-adobe-id.md)透過Adobe身分服務(IMS)連線至促銷活動[，則必須升級至上述其中一個新版本。 這些版本隨附新的連線通訊協定：升級對於促銷活動伺服器和用戶端主控台而言都是強制性的，才能在&#x200B;**2021年6月30日**&#x200B;後連線至促銷活動。
+如果您透過Adobe ID](../integrations/using/about-adobe-id.md)透過Adobe身分服務(IMS)連線至促銷活動[，則必須升級至下列其中一個新版本：
+
+* 金標11 [進一步了解](../rn/using/gold-standard.md)
+* Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
+* Campaign 20.3.3發行。 [進一步了解](../rn/using/release--20-3.md)
+* Campaign 20.2.4發行。 [進一步了解](../rn/using/release--20-2.md)
+* Campaign 20.1.4發行。 [進一步了解](../rn/using/release--20-1.md)
+* Campaign 19.2.4發行。 [進一步了解](../rn/using/release--19-2.md)
+* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
+
+這些版本隨附新的連線通訊協定：升級對於促銷活動伺服器和用戶端主控台而言都是強制性的，才能在&#x200B;**2021年6月30日**&#x200B;後連線至促銷活動。
 
 **如何更新？**
 
@@ -97,7 +105,7 @@ Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30�
 
 **您受影響嗎？**
 
-如果您的環境的組建版本低於Campaign 19.1.8、20.2.4、Gold Standard 11，則您使用舊版的觸發器整合（透過驗證）:**您必須移至Adobe I/O**。
+如果您的例項是在&#x200B;**舊版Campaign 19.1.8、20.2.4、Gold Standard 11**&#x200B;上執行，則您使用舊版Triggers整合透過Auth驗證：**您必須移至Adobe I/O**。
 
 **如何更新？**
 
@@ -107,13 +115,15 @@ Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30�
 
 [瞭解如何移轉至Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
-## 基於HTTP/2的APNs提供者API
+## APN更新
+
+### 基於HTTP/2的APNs提供者API
 
 自2021年3月31日起，Apple推播通知服務(APN)將不再支援舊版二進位通訊協定。 ****[顯示全文](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您的影響力？**
 
-如果您的例項是在舊版Campaign 21.1上執行，並使用舊版Apple二進位通訊協定傳送推播通知，您必須更新為以HTTP/2為基礎的APNs提供者API。
+如果您的例項是在Campaign 21.1以前的&#x200B;**版本上執行，並使用舊版Apple二進位通訊協定傳送推播通知，您必須更新為以HTTP/2為基礎的APNs提供者API。**
 
 **如何更新？**
 
@@ -121,7 +131,7 @@ Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30�
 
 身為內部部署／代管客戶，您需要更新您的設定。 [瞭解如何移轉至HTTP/2](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
-## APN根證書更新
+### APN根證書更新
 
 在2021年3月29日，Apple推播通知服務(APNs)基礎架構更新將影響Adobe Campaign ClassiciOS頻道。 作業系統組態變更為&#x200B;**mandatory**&#x200B;以避免iOS推播頻道中斷。
 
