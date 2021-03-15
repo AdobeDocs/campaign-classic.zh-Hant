@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 3454af2faffacd43fa1ad852529dad175340a237
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 # 預處理指令{#pre-processing-instructions}
 
-&lt;%@指示不是JavaScript，此語法是特定於Adobe Campaign。
+您可以在傳送內容中使用特定語法來新增指示，並為追蹤之電子郵件的URL編寫指令碼。 &lt;%@指示不是JavaScript:此語法是Adobe Campaign特有的。
 
 它們僅適用於傳送內容的內容。 這是為電子郵件的URL編寫指令碼並仍然追蹤（除了URL參數外）的唯一方法。 在偵測要追蹤的連結之前，這些連結可視為在傳送分析期間套用的自動複製／貼上。
 
 說明有三種類型：
 
-* &quot;**include**&quot;:主要是將選項、個人化區塊、外部檔案或頁面中的部分程式碼分解
+* &quot;**include**&quot;:主要用來將選項、個人化區塊、外部檔案或頁面中的某些程式碼分解
 * &quot;**value**&quot;以存取傳送、傳送變數和自訂物件中載入的傳送欄位
 * &quot;**foreach**&quot;:以循環載入為自定義對象的陣列。
 
 您可直接從傳送精靈中測試。 它們會套用在內容預覽中，當您按一下追蹤按鈕以查看URL清單時。
 
-## &lt;>{#include}
+## [!DNL include] {#include}
 
 下列範例是最常使用的範例：
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 使用傳送精靈中的個人化按鈕，取得正確的語法。
 
-## &lt;>{#value}
+## [!DNL value] {#value}
 
 本說明提供對所有收件者都恆定的傳送參數的存取。
 
@@ -53,18 +53,15 @@ ht-degree: 0%
 
 其中：
 
-* 「物件」:對象的名稱(示例：傳送、提供者等)。
-* &quot;xpath&quot;:xpath。
-* &quot;index&quot;（可選）:如果&quot;object&quot;是陣列（對於其他指令碼對象），則陣列中的項目索引（開始於0）。
+* **[!DNL object]**:對象的名稱(示例：傳送、提供者等)。對象可以是：
+   * 「傳送」:（請參閱下方子節中的詳細資訊和限制）。
+   * 「提供者」:(nms:externalAccount)。
+   * 額外的指令碼物件：如果對象通過以下方式載入到上下文：**屬性** > **個人化** > **在執行上下文中添加對象**。
+   * 前循環項：請參閱下面的[Foreach](#foreach)一節。
+* **[!DNL xpath]**:xpath。
+* **[!DNL index]** （可選）:如 **[!DNL object]** 果是陣列（對於額外指令碼對象），則陣列中的項目索引（從0開始）。
 
-對象可以是：
-
-* 「傳送」:（請參閱下方子節中的詳細資訊和限制）。
-* 「提供者」:(nms:externalAccount)。
-* 額外的指令碼物件：如果對象通過以下方式載入到上下文：**屬性** > **個人化** > **在執行上下文中添加對象**。
-* 前循環項：請參閱下面的[Foreach](#foreach)一節。
-
-### &quot;delivery&quot;對象{#delivery-object}
+### [!DNL delivery] 物件 {#delivery-object}
 
 對於電子郵件個人化，傳送物件可透過兩種方式存取：
 
@@ -82,9 +79,9 @@ ht-degree: 0%
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
-### &lt;>{#value-in-javascript}
+### [!DNL value] 在Javascript區段中  {#value-in-javascript}
 
-要允許在指令碼部分中使用&lt;%@值，兩個特殊對象將替換為&lt;%和%>:
+若要允許在Javascript區段中使用&lt;%@值，請以&lt;%和%>取代兩個特殊物件：
 
 * `<%@ value object='startScript' %>`
 * `<%@ value object='endScript' %>`
@@ -96,7 +93,7 @@ ht-degree: 0%
 `<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
 ```
 
-## &lt;>{#foreach}
+## [!DNL foreach] {#foreach}
 
 此指令允許在傳送中載入的物件陣列上進行小版本，以追蹤與物件相關的個別連結。
 
