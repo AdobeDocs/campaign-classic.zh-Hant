@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: 6b81d0ea22bf9d8f33e486535b4ce02fbae7b9ae
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 6%
+source-wordcount: '219'
+ht-degree: 7%
 
 ---
 
@@ -24,9 +24,7 @@ ht-degree: 6%
 * 指令碼無法直接訪問資料庫（SQL函式和API函式不可用）,
 * Adobe Campaign必須能夠偵測URL，才能追蹤連結。 [進一步了解](detecting-tracking-urls.md)
 
-您可以在這些URL中新增[特定的預處理指示](pre-processing-instructions.md)
-
-預處理指令。
+您可以新增特定的預處理指示，以編寫URL的指令碼並加以追蹤。 [進一步了解](pre-processing-instructions.md)
 
 為了追蹤偵測，Adobe Campaign內嵌[Tidy](http://www.html-tidy.org/)以剖析HTML來源並偵測模式。 它會列出內容的所有URL，以便個別追蹤。 Adobe Campaign再次使用「整潔」將URL(`http://myurl.com`)替換為指向Adobe Campaign重定向伺服器的URL。
 
