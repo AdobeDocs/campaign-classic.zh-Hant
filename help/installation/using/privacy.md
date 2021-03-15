@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '772'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 請參閱[本頁](../../platform/using/privacy-management.md)以取得有關隱私權管理的一般資訊，以及Adobe Campaign的實作步驟。 您也會找到最佳實務，並概述使用者程式與角色。
 
-## URL個人化
+## URL個人化{#url-personalization}
 
 在將個人化連結新增至您的內容時，請務必避免URL的主機名稱部分有任何個人化，以避免潛在的安全性缺口。 以下範例不應用於所有URL屬性&lt;`a href="">`或`<img src="">`:
 
@@ -57,7 +57,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 >
 >當點按格式錯誤的簽名URL時，會傳回下列錯誤：&quot;找不到請求的URL &#39;... &#39;。&quot;
 
-此外，Build 19.1.4(9032@3a9dc9c和9032@800be2e)和Campaign 20.2的代管和混合型客戶可使用增強功能來停用從舊版建置產生的URL。 此選項預設為停用。 您可以聯絡[客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以啟用此功能。
+此外，從Campaign 20.2和Gold Standard版本開始，代管和混合客戶可以使用增強功能來停用從先前建置產生的URL。 此選項預設為停用。 您可以聯絡[客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以啟用此功能。
 
 若要啟用此新機制，內部部署客戶必須在所有Campaign伺服器上執行下列步驟：
 
@@ -65,7 +65,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 1. 重新啟動&#x200B;**nlserver**&#x200B;服務。
 1. 在追蹤伺服器上，重新啟動Web伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-在Build 19.1.4(9032@3a9dc9c)上執行的客戶可能會在使用追蹤連結進行推播通知傳送或使用錨記進行傳送時遇到問題。 如果是，Adobe建議停用追蹤連結的新簽名機制：
+使用Gold Standard 19.1.4的客戶可能會在使用追蹤連結的推播通知傳送或使用錨記的傳送時遇到問題。 如果是，Adobe建議停用追蹤連結的新簽名機制：
 
 **代管和混合** 式客戶必須聯絡 [客](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 戶服務，以停用此機制。
 
