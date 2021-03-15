@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
+source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 6%
+source-wordcount: '1026'
+ht-degree: 7%
 
 ---
 
@@ -105,7 +105,15 @@ Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30�
 
 **您受影響嗎？**
 
-如果您的例項是在&#x200B;**舊版Campaign 19.1.8、20.2.4、Gold Standard 11**&#x200B;上執行，則您使用舊版Triggers整合透過Auth驗證：**您必須移至Adobe I/O**。
+如果您的例項是在&#x200B;**舊版Campaign 19.1.8、20.2.4、Gold Standard 11**&#x200B;上執行，則您使用舊版Triggers整合透過Auth驗證：**您需要升級至較新版本並移至Adobe I/O**。
+
+必須升級至下列其中一個新版本：
+
+* 金標11 [進一步了解](../rn/using/gold-standard.md)
+* Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
+* Campaign 20.3.3發行。 [進一步了解](../rn/using/release--20-3.md)
+* Campaign 20.2.4發行。 [進一步了解](../rn/using/release--20-2.md)
+* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
 
 **如何更新？**
 
