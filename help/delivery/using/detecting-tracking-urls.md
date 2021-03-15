@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 偵測追蹤URL
-description: 進一步瞭解要追蹤URL的建議模式。
+title: 偵測追蹤 URL
+description: 進一步瞭解要追蹤URL的建議模式
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 0%
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
 
-# 偵測追蹤URL
+# 偵測追蹤 URL
 
 ## 非偵測範例
 
-`<%= getURL("http://mynewsletter.com") %>` 工作，並透過電子郵件將網頁的實際內容傳送給收件者。但是，這些連結都不會受到追蹤。 其原因是MTA在傳送前會先針對每封電子郵件執行`"<%=getURL(..."`。 每個收件者皆可使用不同的URL，因此Adobe Campaign無法知道要追蹤的URL，並指派標籤ID給他們。
+`<%= getURL("http://mynewsletter.com") %>` 工作，並透過電子郵件將網頁的實際內容傳送給收件者。但是，這些連結都不會受到追蹤。 其原因是MTA在傳送前會先針對每封電子郵件執行`"<%=getURL(..."`。 每個收件者的URL可能不同，因此Adobe Campaign無法知道要追蹤的URL，並指派標籤ID。
 
 當要下載的頁面對所有收件者都相同時，最佳實務是：
 
@@ -33,16 +33,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe不支援所有其他模式，因此應避免出現潛在的安全性缺口。
+>所有其他模式都不受Adobe支援，應避免出現潛在的安全漏洞。
 
-## http://&lt;%=myURL%>模式上的警告
+## 無擔保模式
 
-`<a href="http://<%=myURL%>">`語法不安全，因為：
+在將個人化連結新增至您的內容時，請務必避免URL的主機名稱部分有任何個人化，以避免潛在的安全性缺口。 進一步瞭解[本頁](../../installation/using/privacy.md#url-personalization)。
 
+例如，`<a href="http://<%=myURL%>">`語法為&#x200B;**notsecure**，必須避免。
+
+* 如果Adobe Campaign產生的連結包含一或多個參數，使用此語法可能會導致安全性問題。
 * Tidy可能會錯誤地修補某些連結，這些連結會隨機發生。 典型的症狀是HTML片段，在電子郵件校樣中可見，但在預覽中不可見。
 * 逸出URL有問題，URL中的某些字元可能會造成問題。
 * 您不能有名為ID的參數與重新導向URL中的參數衝突。
-* 追蹤的興趣會限制在傳送的統計資料上，因為Adobe Campaign會以不同方式追蹤&quot;myURL&quot;的所有可能值。
-
-請參閱[本頁](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)以瞭解詳細資訊。
-
+* 接著，追蹤的興趣會限制在傳送的統計資料上，因為Adobe Campaign會以不同的方式追蹤&quot;myURL&quot;的所有可能值。
