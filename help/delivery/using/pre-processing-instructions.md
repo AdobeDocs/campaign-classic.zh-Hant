@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 0%
+source-wordcount: '642'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 說明有三種類型：
 
-* &quot;**include**&quot;:主要用來將選項、個人化區塊、外部檔案或頁面中的某些程式碼分解
-* &quot;**value**&quot;以存取傳送、傳送變數和自訂物件中載入的傳送欄位
-* &quot;**foreach**&quot;:以循環載入為自定義對象的陣列。
+* **[!DNL include]**:主要用來將選項、個人化區塊、外部檔案或頁面中的某些程式碼分解。[進一步了解](#include)
+* &quot;**[!DNL value]**&quot;:可存取傳送、傳送變數和傳送中載入的自訂物件欄位。 [進一步了解](#value)
+* &quot;**[!DNL foreach]**&quot;:以循環載入為自定義對象的陣列。 [進一步了解](#foreach)
 
 您可直接從傳送精靈中測試。 它們會套用在內容預覽中，當您按一下追蹤按鈕以查看URL清單時。
 
@@ -33,15 +33,33 @@ ht-degree: 0%
 
 下列範例是最常使用的範例：
 
-* 包括鏡像頁連結：`<%@ include view="MirrorPage" %>`
-* 鏡像頁面URL:&quot;View as a `<a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page"`
-* 立即可用的取消訂閱URL:`<%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>`
-* 其他範例：
-   * `<%@ include file='http://www.google.com' %>`
-   * `<%@ include file='file:///X:/france/service/test.html' %>`
-   * `<%@ include option='NmsServer_URL' %>`
+* 包括鏡像頁連結：
 
-使用傳送精靈中的個人化按鈕，取得正確的語法。
+   ```
+   <%@ include view="MirrorPage" %>  
+   ```
+
+* 鏡像頁面URL:
+
+   ```
+   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+   ```
+
+* 立即可用的取消訂閱URL:
+
+   ```
+   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+   ```
+
+* 其他範例：
+
+   ```
+   <%@ include file='http://www.google.com' %>
+   <%@ include file='file:///X:/france/service/test.html' %>
+   <%@ include option='NmsServer_URL' %>
+   ```
+
+   使用傳送精靈中的個人化按鈕，取得正確的語法。
 
 ## [!DNL value] {#value}
 
@@ -49,7 +67,9 @@ ht-degree: 0%
 
 語法:
 
-`<%@ value object="myObject" xpath="@myField" index="1" %>`
+```
+<%@ value object="myObject" xpath="@myField" index="1" %>
+```
 
 其中：
 
@@ -65,19 +85,30 @@ ht-degree: 0%
 
 對於電子郵件個人化，傳送物件可透過兩種方式存取：
 
-* 在JavaScript中。 例如：`<%= delivery.myField %>`。
+* 使用JavaScript:
+
+   ```
+   <%= delivery.myField %>`.
+   ```
 
    在JavaScript物件傳送中不支援自訂欄位。 它們可在預覽中運作，但在MTA中無法運作，因為MTA只能存取現成可用的傳送架構。
 
-* 通過`<%@ value object="delivery"`預處理。
+* 使用預處理：
 
-對於`<%@ value object="delivery" xpath="@myCustomField" %>`指令，通過中間來源補充發送的交貨還有其它限制。 自訂欄位@myCustomField必須新增至行銷和中部採購平台的nms:delivery架構。
+   ```
+   <%@ value object="delivery"
+   ```
+
 
 >[!NOTE]
 >
->對於傳送參數／變數，請使用下列語法（使用傳送物件）:
+>* 對於`<%@ value object="delivery" xpath="@myCustomField" %>`指令，通過中間來源補充發送的交貨還有其它限制。 自訂欄位@myCustomField必須新增至行銷和中部採購平台的nms:delivery架構。
+   >
+   >
+* 對於傳送參數／變數，請使用下列語法（使用傳送物件）:
 >
->`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+>
+`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
 ### [!DNL value] 在Javascript區段中  {#value-in-javascript}
 
@@ -99,14 +130,16 @@ ht-degree: 0%
 
 語法:
 
-`<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>`
+```
+<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
+```
 
 其中：
 
-* 「物件」:要開始的對象的名稱，通常是額外的指令碼對象，但它可以是交付。
-* &quot;xpath&quot;（可選）:xpath of the collection to loop on. 預設值為&quot;。&quot;，表示物件是要循環播放的陣列。
-* &quot;index&quot;（可選）:如果xpath不是&quot;&quot; 對象是陣列本身，對象的項索引（從0開始）。
-* &quot;item&quot;（可選）:前循環內具有&lt;%@值的新對象的名稱。 預設為架構中的連結名稱。
+* **[!DNL object]**:要開始的對象的名稱，通常是額外的指令碼對象，但它可以是交付。
+* **[!DNL xpath]** （可選）:xpath of the collection to loop on.預設值為&quot;。&quot;，表示物件是要循環播放的陣列。
+* **[!DNL index]** （可選）:如果xpath不是&quot;&quot;對象是陣列本身，對象的項索引（從0開始）。
+* **[!DNL item]** （可選）:可訪問的新對象的名稱  &lt;>預設為架構中的連結名稱。
 
 範例:
 
