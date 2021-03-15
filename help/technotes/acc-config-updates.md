@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
+source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '974'
+ht-degree: 5%
 
 ---
 
@@ -63,22 +63,21 @@ ht-degree: 4%
 
 ## 促銷活動用戶端主控台更新
 
-最新的Gold Standard 11組建版本修正了回歸，使主控台無法使用某些元件，例如日期選擇器和影像管理在傳送中。 控制台升級是必備的。
+最新的Gold Standard 11建置版本修正了回歸，使Clien Console的某些元件無法使用，例如日期選擇器和影像管理在傳送中。 控制台升級是必備的。
 
 [進一步瞭解](../rn/using/gold-standard.md)。
 
-
 >[!NOTE]
 >
->其他版本的更新即將推出。
+>其他版本的全新Client Console即將推出。
 
 ## 透過IMS連線至促銷活動
 
-Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explorer。 [進一步瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。已更新促銷活動主控台，以確保與IMS相容。
+Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30日&#x200B;**開始。**[進一步瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。已更新促銷活動用戶端主控台，以確保與AdobeIMS相容。
 
 **您受影響嗎？**
 
-如果您透過Adobe ID](../integrations/using/about-adobe-id.md)透過Adobe身分服務(IMS)連線至促銷活動[，則必須升級至上述其中一個新版本。 這些版本隨附新的連線通訊協定：升級對於促銷活動伺服器和用戶端主控台而言都是強制性的，因此在&#x200B;**2021年6月30日**&#x200B;之後，才能連線至促銷活動。
+如果您透過Adobe ID](../integrations/using/about-adobe-id.md)透過Adobe身分服務(IMS)連線至促銷活動[，則必須升級至上述其中一個新版本。 這些版本隨附新的連線通訊協定：升級對於促銷活動伺服器和用戶端主控台而言都是強制性的，才能在&#x200B;**2021年6月30日**&#x200B;後連線至促銷活動。
 
 **如何更新？**
 
@@ -86,11 +85,11 @@ Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explor
 
 身為內部部署／混合型客戶，您需要升級至其中一個較新版本，以便從新的客戶端主控台獲益，並確保在2021年6月30日之前順暢地轉換&#x200B;**。**
 
-在升級所有實例後，客戶端控制台也需要升級到此版本。
+在升級所有實例後，Client Console也需要升級到此版本。
 
 * 瞭解如何訪問[Adobe軟體分發](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
 
-* [瞭解如何安裝Campaign Client主控台](../installation/using/installing-the-client-console.md)。
+* [瞭解如何安裝Campaign Client Console](../installation/using/installing-the-client-console.md)。
 
 ## 與Experience Cloud觸發器整合
 
@@ -110,7 +109,7 @@ Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explor
 
 ## 基於HTTP/2的APNs提供者API
 
-自2021年3月31日起，Apple推播通知服務(APN)將不再支援舊版二進位通訊協定。 [顯示全文](https://developer.apple.com/news/?id=c88acm2b)。
+自2021年3月31日起，Apple推播通知服務(APN)將不再支援舊版二進位通訊協定。 ****[顯示全文](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您的影響力？**
 
@@ -139,3 +138,11 @@ Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explor
 身為內部部署／混合型客戶，您需要更新您的設定，以確保在2021年3月29日前順暢地進行&#x200B;**轉換。**
 
 [瞭解如何整合新憑證](ios-certificate-update.md)。
+
+
+## 有用的連結
+
+* [升級您的環境](../production/using/build-upgrade.md)
+* [建立升級常見問答集](../platform/using/faq-build-upgrade.md)
+* [下載Campaign Classic組建版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [讓新的用戶端主控台可供使用](../installation/using/client-console-availability-for-windows.md)
