@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
+source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -24,8 +24,8 @@ ht-degree: 1%
 說明有三種類型：
 
 * **[!DNL include]**:主要用來將選項、個人化區塊、外部檔案或頁面中的某些程式碼分解。[進一步了解](#include)
-* &quot;**[!DNL value]**&quot;:可存取傳送、傳送變數和傳送中載入的自訂物件欄位。 [進一步了解](#value)
-* &quot;**[!DNL foreach]**&quot;:以循環載入為自定義對象的陣列。 [進一步了解](#foreach)
+* **[!DNL value]**:可存取傳送、傳送變數和傳送中載入的自訂物件欄位。[進一步了解](#value)
+* **[!DNL foreach]**:以循環載入為自定義對象的陣列。[進一步了解](#foreach)
 
 您可直接從傳送精靈中測試。 它們會套用在內容預覽中，當您按一下追蹤按鈕以查看URL清單時。
 
@@ -74,8 +74,8 @@ ht-degree: 1%
 其中：
 
 * **[!DNL object]**:對象的名稱(示例：傳送、提供者等)。對象可以是：
-   * 「傳送」:（請參閱下方子節中的詳細資訊和限制）。
-   * 「提供者」:(nms:externalAccount)。
+   * **[!DNL delivery]**:（請參閱下方子節中的詳細資訊和限制）。
+   * **[!DNL provider]**:(nms:externalAccount)。
    * 額外的指令碼物件：如果對象通過以下方式載入到上下文：**屬性** > **個人化** > **在執行上下文中添加對象**。
    * 前循環項：請參閱下面的[Foreach](#foreach)一節。
 * **[!DNL xpath]**:xpath。
@@ -100,22 +100,28 @@ ht-degree: 1%
    ```
 
 
->[!NOTE]
->
->* 對於`<%@ value object="delivery" xpath="@myCustomField" %>`指令，通過中間來源補充發送的交貨還有其它限制。 自訂欄位@myCustomField必須新增至行銷和中部採購平台的nms:delivery架構。
-   >
-   >
-* 對於傳送參數／變數，請使用下列語法（使用傳送物件）:
->
->
-`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+**警告**
+
+如果您使用下列指示來傳送經由中部來源補充傳送，則必須將自訂欄位&#x200B;**@myCustomField**&#x200B;新增至行銷和中部來源補充平台的nms:delivery架構：
+
+```
+<%@ value object="delivery" xpath="@myCustomField" %>
+```
+
+對於傳送參數／變數，請使用下列語法（使用傳送物件）:
+
+```
+<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
+```
 
 ### [!DNL value] 在Javascript區段中  {#value-in-javascript}
 
 若要允許在Javascript區段中使用&lt;%@值，請以&lt;%和%>取代兩個特殊物件：
 
-* `<%@ value object='startScript' %>`
-* `<%@ value object='endScript' %>`
+```
+<%@ value object='startScript' %>
+<%@ value object='endScript' %>
+```
 
 例如：
 
