@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 **您受影響嗎？**
 
-如果您的環境建置低於Campaign 21.1，您會受到影響。
+如果您的環境的組建版本低於Campaign 19.1.8、19.2.4、20.1.4、20.2.4、20.3.3或Gold Standard 11，您會受到影響。
 
 **如何更新？**
 
@@ -66,6 +66,11 @@ ht-degree: 4%
 最新的Gold Standard 11組建版本修正了回歸，使主控台無法使用某些元件，例如日期選擇器和影像管理在傳送中。 控制台升級是必備的。
 
 [進一步瞭解](../rn/using/gold-standard.md)。
+
+
+>[!NOTE]
+>
+>其他版本的更新即將推出。
 
 ## 透過IMS連線至促銷活動
 
@@ -93,7 +98,7 @@ Adobe身分服務(IMS)將從2021年6月30日起停止支援舊版Internet Explor
 
 **您受影響嗎？**
 
-如果您使用舊版的觸發器整合（透過oAuth驗證）,**您必須移至Adobe I/O**。
+如果您的環境的組建版本低於Campaign 19.1.8、20.2.4、Gold Standard 11，則您使用舊版的觸發器整合（透過驗證）:**您必須移至Adobe I/O**。
 
 **如何更新？**
 
