@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 100%
 * [瀏覽自助選項](../../platform/using/tutorials.md#how-to-videos)
 * [閱讀開始使用和使用案例一節](../../platform/using/tutorials.md#step-by-step-guides)
 * 找不到答案？[詢問專家](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
-* 需要支援嗎？[諮詢行銷活動說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html#acc-support)
+* 需要支援嗎？[諮詢行銷活動說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
 
 ## 1. 如何將 Campaign 升級至最新版本？{#how-can-i-upgrade-campaign-to-the-latest-version-}
 
