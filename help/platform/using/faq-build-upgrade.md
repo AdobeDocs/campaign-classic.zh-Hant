@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2015'
 ht-degree: 3%
 
 ---
@@ -19,29 +19,29 @@ ht-degree: 3%
 
 定期更新 Adobe Campaign。如果您熟悉我們發佈的[發行說明](../../rn/using/rn-overview.md)，您可能會知道，平均2/3次發行包含新功能、改進和修正的次要版本每年都會推出。 此外，我們定期發行只累積修正的版本編號。此定期更新旨在讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
 
-我們的客戶必須執行最新版的Adobe Campaign。 此外，Adobe也可讓您更有效率地協助您避免遇到問題——識別、重制和修正舊版產品的問題通常需要更多時間，更不用說您最近版本中可能遇到的某些問題已經修正。
+我們的客戶必須執行最新版的Adobe Campaign。 它也可讓Adobe在您遇到問題時更有效率地提供協助——在舊版本上識別、重制和修正問題通常需要更多時間，更不用說您最近版本中可能遇到的某些問題已經修正。
 
 因此，我們啟動了[Gold Standard](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)計畫，與客戶協作，主動定期升級其環境。
 
 ## 什麼是建置升級？
 
-「建置升級」是指Adobe Campaign Classic軟體已更新為最新的安全建置編號，但仍維持相同的主要／次要建置層級。 例如：Campaign Classic v7組建9026到Campaign v7組建9032。
+A Build Upgrade是指將Adobe Campaign Classic軟體更新為最新的安全版本號，但仍保持在相同的主／次版本級別。 例如：Campaign Classicv7組建9026到Campaign v7組建9032。
 
 瞭解本節](../../rn/using/rn-overview.md)的更多資訊。[
 
-## 什麼是Adobe Campaign Classic的最新版本？
+## 什麼是最新版的Adobe Campaign Classic?
 
 最新的Campaign Classic版本，包括新功能和說明檔案，詳見最新的[發行說明](../../rn/using/latest-release.md)。
 
 ## 我要如何得知我要執行的版本？
 
-從Adobe Campaign Client主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本。 **[!UICONTROL About]**&#x200B;框包含您正在為控制台和伺服器運行的版本和內部版本的詳細資訊。
+從「Adobe Campaign客戶端控制台」的&#x200B;**[!UICONTROL Help > About...]**&#x200B;菜單檢查您的版本。 **[!UICONTROL About]**&#x200B;框包含您正在為控制台和伺服器運行的版本和內部版本的詳細資訊。
 
 瞭解本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)的更多資訊。[
 
 ## 建置狀態是什麼意思？
 
-啟動Campaign Classic 19.2時，狀態會關聯至每個建置。
+從Campaign Classic19.2開始，狀態會與每個構建關聯。
 
 瞭解本節](../../rn/using/rn-overview.md)的更多資訊。[
 
@@ -59,7 +59,7 @@ ht-degree: 3%
 
 ## 我是否應在這些更新之前備份資料？
 
-Adobe會在進行任何變更之前備份您的系統。 但是，如果非生產系統（開發或測試伺服器）中有重要的自訂工作，則強烈建議您在進行任何升級之前，先將其匯出為套件。
+Adobe將在進行任何更改之前備份您的系統。 但是，如果非生產系統（開發或測試伺服器）中有重要的自訂工作，則強烈建議您在進行任何升級之前，先將其匯出為套件。
 
 ![](assets/do-not-localize/how-to-video.png) 如需詳細資訊，請 [觀看此影片方式](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
 
@@ -89,10 +89,10 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 建立升級程式需要下列資源：
 
-* Adobe Architect —— 對於代管或雲端訊息／混合式架構，架構設計人員必須與客戶服務協作。
+* Adobe架構師——對於代管或雲端訊息／混合架構，架構師必須與客戶服務協作。
 * 項目經理——托管：代管團隊將與客戶服務團隊及客戶合作，協調所有例項的升級時間表。
-* Adobe Campaign管理員——代管：代管團隊會執行升級。
-* Adobe Campaign營運商\marketing使用者——營運商會針對開發、測試和生產例項執行測試。
+* Adobe Campaign管理員——托管：代管團隊會執行升級。
+* Adobe Campaign營運商\行銷使用者——營運商會執行開發、測試和生產例項的測試。
 
 ## 我要如何為構建版本升級做準備？
 
@@ -124,7 +124,7 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 ## 工作流程是否會繼續執行並傳送傳送？
 
-否. 在建立升級期間，工作流程和郵件服務都會停止。 這表示工作流程將不會執行，傳送作業也不會傳送。 在系統重新啟動後，系統將會恢復。 不過，Adobe強烈建議在升級後檢查所有重要的路徑工作流程，以確保它們正常運作。
+否. 在建立升級期間，工作流程和郵件服務都會停止。 這表示工作流程將不會執行，傳送作業也不會傳送。 在系統重新啟動後，系統將會恢復。 但是，Adobe強烈建議在升級後檢查所有關鍵路徑工作流程，以確保它們正常運作。
 
 ## 我的追蹤連結在升級期間是否仍然有效？
 
@@ -132,7 +132,7 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 ## 我是否需要在構建升級過程中提供？
 
-是. 客戶應在升級生產實例期間或升級後立即向Adobe提供聯絡點。  除非另有安排，否則Adobe將透過電子郵件聯絡此人。 這將確保關鍵任務的平穩過渡和立即驗證。 建置升級完成後，Adobe將與客戶聯絡以供確認。
+是. 客戶應在升級生產實例期間或升級後立即向Adobe提供聯絡點。  Adobe將透過電子郵件聯絡此人，除非另有安排。 這將確保關鍵任務的平穩過渡和立即驗證。 Adobe將在構建升級完成以確認後與客戶聯繫。
 
 ## 我是否需要更新客戶端控制台？
 
@@ -140,7 +140,7 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 ## 回滾計畫是什麼？ 我的資料是否保留備份？
 
-回滾計畫是使用最新的可用備份恢復系統。 資料中心客戶將備份儲存7天，Amazon Web Service(AWS)客戶將備份儲存14天。
+回滾計畫是使用最新的可用備份恢復系統。 資料中心客戶將備份儲存7天，AmazonWeb服務(AWS)客戶將備份儲存14天。
 
 ## 回滾需要多少時間？
 
@@ -166,9 +166,9 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
 
 ## 我應該與誰聯絡以開啟組建升級票證？
 
-如果您在建置升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會排程建置日期並開啟與建置升級相關的票證。
+如果您在建立版本升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會排程建置日期並開啟與建置升級相關的票證。
 
-進一步瞭解[Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+進一步瞭解[Campaign Classic的說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
 
 ## 建立升級檢查清單{#check-list}
 
@@ -202,11 +202,11 @@ Adobe會在進行任何變更之前備份您的系統。 但是，如果非生�
    * 測試推播通知及其追蹤功能，以用於深層連結
    * 測試傳送SMS
    * 如果您有任何外部FDA連線，請測試資料是否以兩種方式傳送
-   * 如果您使用Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics等整合，請測試這些整合是否仍像以前一樣運作
+   * 如果您使用整合功能(例如Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics)，請測試它們是否仍像以前一樣運作
 
 **另請參閱**
 
 * [執行版本編號升級](../../production/using/build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
-* [Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html)
 * [Gold Standard計畫](https://helpx.adobe.com/campaign/kb/gold-standard.html)
