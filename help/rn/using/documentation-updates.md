@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '4170'
-ht-degree: 93%
+source-wordcount: '4193'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 93%
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
 ## 2021 年 3月 {#march-2021}
+
+已新增新頁面，其中包含指引和參考，以取得有關Campaign Classic的支援。 [進一步了解](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
 
 新增了與安全性和隱私權相關的最佳實務和檢查。 [顯示全文](../../installation/using/get-started-security-privacy.md)
 
@@ -38,27 +40,27 @@ ht-degree: 93%
 
 ## 2021 年 2 月 {#release-21.1}
 
-**21.1版隨附的檔案更新**
+**21.1 版本隨附的其他文件更新**
 
-新的&#x200B;**電子郵件反饋服務**&#x200B;功能（私用測試版）記錄在[這裡](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)。
+新的&#x200B;**電子郵件回饋服務**&#x200B;功能 (私人測試版) 已記錄在[此處](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)。
 
-**伺服器設定檔**&#x200B;區段已更新，其中包含Campaign使用IMS連線至其他服務所需的設定參數。 [顯示全文](../../installation/using/the-server-configuration-file.md#ims)
+**「伺服器設定檔」**&#x200B;區段已更新，其中包含 Campaign 使用 IMS 連線至其他服務所需的設定參數。 [顯示全文](../../installation/using/the-server-configuration-file.md#ims)
 
-在交貨狀態清單中，**服務提供商**&#x200B;考慮的說明已更新：此狀態現在也用於使用[電子郵件回饋服務](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)傳送的電子郵件傳送。 [顯示全文](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+在傳遞狀態清單中，**服務提供者須考慮**&#x200B;的說明已更新：此狀態現在也用於使用[電子郵件回饋服務](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)傳送的電子郵件傳遞。 [顯示全文](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
-新登錄螢幕上可用來連接到Adobe Campaign的鍵盤快捷鍵現在有文檔記錄。 [顯示全文](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+現在已記錄新登入畫面上可用來連線至 Adobe Campaign 的鍵盤快速鍵。 [顯示全文](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
 **其他更新**
 
-新增了一節，其中包含如何使用工作流程執行A/B測試的詳細資訊。 [顯示全文](../../delivery/using/get-started-a-b-testing.md)
+新增了一個部分，其中包含如何使用工作流程執行 A/B 測試的詳細資訊。 [顯示全文](../../delivery/using/get-started-a-b-testing.md)
 
-「Adobe Campaign增強型MTA」部分已將[移到此處](../../delivery/using/sending-with-enhanced-mta.md)。
+「Adobe Campaign 增強型 MTA」部分已移至[此處](../../delivery/using/sending-with-enhanced-mta.md)。
 
-已新增頁面，提供[!DNL Campaign Classic]中追蹤功能的概述。 [顯示全文](../../delivery/using/about-message-tracking.md)
+已新增頁面，以提供[!DNL Campaign Classic]中追蹤功能的概述。 [顯示全文](../../delivery/using/about-message-tracking.md)
 
-已新增疑難排解區段，以協助您解決與追蹤相關的常見問題。 [顯示全文](../../delivery/using/tracking-troubleshooting.md)
+已新增疑難排解部分，用以協助您解決與追蹤相關的常見問題。 [顯示全文](../../delivery/using/tracking-troubleshooting.md)
 
-**傳送電子郵件**&#x200B;區段已重新整理，並以新的子區段加以釐清。 [顯示全文](../../delivery/using/sending-messages.md)
+**「傳送電子郵件」**&#x200B;部分已重新整理，並以新的子部分加以釐清。 [顯示全文](../../delivery/using/sending-messages.md)
 
 已新增有關如何新增可個人化且支援追蹤的電子郵件連結的資訊。 [顯示全文](../../delivery/using/tracking-personalized-links.md)。
 
