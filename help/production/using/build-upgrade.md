@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2367'
 ht-degree: 2%
 
 ---
@@ -27,9 +27,9 @@ ht-degree: 2%
 * 系統與伺服器端知識
 * 管理權限
 
-您可以在下列章節中找到更多資訊：[更新Adobe Campaign](../../production/using/upgrading.md)、[移轉至新版本](../../migration/using/about-migration.md)。
+您可以在下列章節中找到更多資訊：[更新Adobe Campaign](../../production/using/upgrading.md)、[遷移至新版本](../../migration/using/about-migration.md)。
 
-對於代管和混合型例項，您必須向Adobe技術營運團隊申請組建升級。 如需詳細資訊，請參閱本頁下方的「常見問題」區段。 另請參閱[組建升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+對於代管和混合型實例，您必須向Adobe技術運營團隊申請組建升級。 如需詳細資訊，請參閱本頁下方的「常見問題」區段。 另請參閱[組建升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
 ## 準備升級
 
@@ -40,10 +40,10 @@ ht-degree: 2%
 
 建立升級程式需要下列資源：
 
-* adobe架構設計人員——瞭解資料庫結構（即裝即用的架構和任何已新增的其他架構、促銷活動設計，以及任何必須依特定順序啟動和測試的重要路徑功能）。
+* Adobe架構師——瞭解資料庫結構（現成可用的架構和任何已新增的其他架構、促銷活動設計，以及任何必須依特定順序啟動和測試的重要路徑功能）。
 * 專案經理——如果建置升級涉及許多不同的例項（生產、測試、測試）和其他協力廠商伺服器和應用程式（資料庫、SFTP網站、傳訊服務供應商），則建議由專案經理來協調所有測試，視為最佳實務。
-* adobe Campaign管理員——您的管理員瞭解伺服器的設定，包括但不限於：安全性、檔案夾配置、報告和匯入\匯出需求。 請勿在沒有管理員的情況下執行組建升級。
-* adobe Campaign營運商（行銷使用者）-成功升級有賴於使用者成功執行其每日工作的能力。 因此，在測試升級的伺服器時，請務必至少包含您的每日營運商之一。
+* Adobe Campaign管理員——您的管理員瞭解伺服器的配置，包括但不限於：安全性、檔案夾配置、報告和匯入\匯出需求。 請勿在沒有管理員的情況下執行組建升級。
+* Adobe Campaign營運商（行銷使用者）-成功升級有賴於使用者成功執行其日常工作的能力。 因此，在測試升級的伺服器時，請務必至少包含您的每日營運商之一。
 
 ### 規劃
 
@@ -51,16 +51,16 @@ ht-degree: 2%
 
 1. 升級至少需要2小時。
 1. 為Adobe和客戶員工分發聯絡資訊。
-1. 對於托管實例：Adobe和客戶員工將協調升級的時間，以及執行人員。
+1. 對於托管實例：Adobe和客戶員工將協調升級的時間和執行人員。
 1. 對於內部部署實例：客戶員工負責管理整個流程——如果需要協助測試自訂工作流程和傳送邏輯，則應提供諮詢服務。
-1. 確定並確認您要升級至哪個Adobe Campaign版本——請參閱[Adobe Campaign Classic發行說明](../../rn/using/rn-overview.md)。
+1. 確定並確認要升級的Adobe Campaign版本——請參閱[Adobe Campaign Classic發行說明](../../rn/using/rn-overview.md)。
 1. 確認擁有升級執行檔。
 
 ### 關鍵人物
 
 建置升級程式需要以下人員參與：
 
-* Adobe架構設計人員：對於代管或混合式架構，架構設計人員必須與Adobe Campaign Client Care協作。
+* Adobe架構師：對於代管或混合式架構，架構設計人員必須與Adobe Campaign客戶服務部門協作。
 
 * 專案經理：
    * 針對內部部署安裝：客戶內部的「項目領導者」負責引導升級並管理生命週期測試。
@@ -72,7 +72,7 @@ ht-degree: 2%
 
    * 針對代管安裝：代管團隊會執行升級。
 
-* Adobe Campaign營運商\行銷使用者：營運商會對開發、測試和生產執行個體執行測試。
+* Adobe Campaign營運商／行銷使用者：營運商會對開發、測試和生產執行個體執行測試。
 
 ### 準備構建版本升級
 
@@ -101,11 +101,11 @@ ht-degree: 2%
 
 ![](assets/do-not-localize/icon_process.png)
 
-以下過程僅由&#x200B;**on-premise**&#x200B;客戶執行。 對於代管客戶，由代管團隊負責處理。 若要將Adobe Campaign更新為新建版本，詳細程式如下所述。
+以下過程僅由&#x200B;**on-premise**&#x200B;客戶執行。 對於代管客戶，由代管團隊負責處理。 要將Adobe Campaign更新為新構建版本，詳細過程如下所述。
 
 ### 複製環境
 
-以下是複製Adobe Campaign環境的方式，以便將來源環境還原至目標環境，產生兩個相同的工作環境。
+以下是複製Adobe Campaign環境的方式，以便將源環境恢復到目標環境，從而產生兩個相同的工作環境。
 
 要執行此操作，請遵循下列步驟：
 
@@ -147,7 +147,7 @@ ht-degree: 2%
 1. 關閉以下服務：
 
    * 網站服務(IIS):**iisreset /stop**
-   * Adobe Campaign服務：**net stop nlserver6**
+   * Adobe Campaign社：**net stop nlserver6**
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 1. 檢查Windows任務管理器以確認所有進程都已停止。
 
-### 升級Adobe Campaign Server應用程式
+### 升級Adobe Campaign伺服器應用程式
 
 1. 運行&#x200B;**Setup.exe**&#x200B;檔案。 如果您需要下載此檔案，請存取[下載中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。
 
@@ -200,13 +200,13 @@ ht-degree: 2%
 需要重新啟動以下服務：
 
 * 網站服務(IIS):**issreset /start**
-* Adobe Campaign服務：**net start nlserver6**
+* Adobe Campaign社：**net start nlserver6**
 
 ### 客戶端控制台更新
 
 客戶機控制台必須與伺服器實例位於同一版本。
 
-在安裝Adobe Campaign應用程式伺服器的機器上(nserverweb)，下載並複製檔案：
+在安裝Adobe Campaign應用程式伺服器的電腦上(nlserverweb)，下載並複製檔案：
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
@@ -246,7 +246,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 在中端採購環境中，您需要執行以下其他步驟才能升級：
 
-1. 聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以協調Mid-Sourcing伺服器的升級。
+1. 請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以協調Mid-Sourcing伺服器的升級。
 1. 執行測試連結以驗證版本已更新。 例如：
 
    ```
@@ -306,14 +306,14 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 1. 有&quot;常客&quot;嗎？ 內建Web應用程式或報表(例如：&#39;deliveryValidation&#39;、&#39;deliveryOverview&#39;、&#39;budget&#39;)。
 1. 檢查更改日誌中是否有更新。
-1. 向Adobe Campaign專家諮詢。
+1. 問問Adobe Campaign專家。
 1. 對代碼執行「比較」。
 
 ### 解決衝突
 
 要解決衝突，請應用以下流程：
 
-1. 在Adobe Campaign檔案總管中，前往&#x200B;**管理>設定>封裝管理>編輯衝突**。
+1. 在「Adobe Campaign檔案總管」中，前往「**管理>設定>封裝管理>編輯衝突**」。
 
 1. 在清單中選擇要解決的衝突。
 解決衝突有三種選擇：**接受新版**、**保留目前版本**、**合併程式碼（並宣告為已解決）**、**忽略衝突（不建議）**。
@@ -392,7 +392,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 #### 複雜合併{#complex-merges}
 
-1. 瞭解變更的功能：對變更進行逆向工程、檢查變更記錄、向Adobe Campaign專家跟進。
+1. 瞭解變更的功能：對變更進行逆向工程、檢查變更記錄、跟進Adobe Campaign專家。
 1. 決定如何處理變更。
 1. 瞭解自訂功能：逆向工程變更
 
@@ -414,5 +414,5 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 * [建立升級常見問答集](../../platform/using/faq-build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
-* [Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Campaign Classic的說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
 * [Gold Standard計畫](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)
