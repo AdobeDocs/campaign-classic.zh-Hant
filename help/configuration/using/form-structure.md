@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f82f71f4eed44f4f12ab7a65188d25ff6c552d35
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -235,7 +235,7 @@ ht-degree: 0%
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**:測試字串類型資料上的等同性。比較值必須以引號括住。
 * **visibleIf=&quot;@geder >= 1和@geder != 2&quot;**:條件。
-* **visibleIf=&quot;@boolean1==true或@boolean2==false&quot;**:測試布林欄位。
+* **visibleIf=&quot;@boolean1=true或@boolean2=false&quot;**:測試布林欄位。
 
 #### 啟用容器{#enabling-container}
 
@@ -555,9 +555,9 @@ ht-degree: 0%
 
 ### 更新上下文{#updating-the-context}
 
-要修改表單的上下文，請使用&#x200B;**`<set expr="<value>" xpath="<field>"/>`**&#x200B;標籤，其中&#x200B;**`<field>`**&#x200B;是目標欄位，而&#x200B;**`<value>`**&#x200B;是更新表達式或值。
+要修改表單的上下文，請使用`<set expr="<value>" xpath="<field>"/>`標籤，其中`<field>`是目標欄位，而`<value>`是更新表達式或值。
 
-**`<set>`**&#x200B;標籤的使用範例：
+`<set>`標籤的使用範例：
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**:將&#39;Test&#39;值定位在臨時位置/tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**:以&#39;Test&#39;值更新&quot;lastName&quot;屬性上的實體
