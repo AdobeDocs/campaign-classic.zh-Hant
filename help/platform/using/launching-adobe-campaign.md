@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '557'
 ht-degree: 47%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 47%
 
 1. 在 **[!UICONTROL URL]** 欄位中，新增應用程式伺服器的位址。如果您不知道連線 URL，請連絡管理員。
 
-1. 請檢查&#x200B;**[!UICONTROL Connect with an Adobe ID]**，以取得運算子以使用其Adobe ID連線至主控台。 有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
+1. 檢查&#x200B;**[!UICONTROL Connect with an Adobe ID]**&#x200B;中的運算子是否使用其Adobe ID連接到控制台。 有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
 
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;進行驗證。
 
@@ -84,18 +84,18 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 >
 >您也可以不先登出，而直接關閉應用程式。
 
-## 取得您的Adobe Campaign版本{#getting-your-campaign-version}
+## 取得您的Adobe Campaign版{#getting-your-campaign-version}
 
 **[!UICONTROL Help > About...]**&#x200B;功能表可讓您存取下列資訊：
 
 * **Campaign用** 戶端主控台和應用程式伺服器的版本號碼
 * **Campaign用** 戶端主控台和應用程式伺服器的建置碼
-* 連結以聯絡Adobe客戶服務
+* 連絡Adobe客戶服務
 * Adobe隱私權政策、使用條款與Cookie政策的連結
 
 ![](assets/about-acc.png)
 
-每當您聯絡Adobe客戶服務團隊時，您都需要提供Adobe Campaign用戶端主控台和應用程式伺服器的版本號碼和組建版本號碼。
+每當您與Adobe客戶服務團隊聯絡時，都需要提供Adobe Campaign客戶主控台和應用程式伺服器的版本號碼和組建版本號碼。
 
 如果您正在[促銷活動金標準版](../../rn/using/gold-standard.md)上執行，您也需要共用顯示在&#x200B;**[!UICONTROL About]**&#x200B;方塊中的SHA/1字元。 例如，對於Gold **Standard 10發行**，組建編號將顯示&#x200B;**組建9032@efd8a94**，如下所示：
 
@@ -105,6 +105,6 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 
 **相關主題**：
 
-* [Adobe Campaign說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html#acc-support)
-* [Adobe Campaign軟體散發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud支援與專家諮詢](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Campaign說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
+* [Adobe Campaign軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Adobe Experience Cloud支援和專家會議](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
