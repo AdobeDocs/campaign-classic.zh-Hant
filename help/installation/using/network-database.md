@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,9 @@ ht-degree: 2%
 
 ## 資料庫
 
-您必須遵循資料庫引擎的安全性。
+您必須應用資料庫引擎安全性最佳實踐。
 
-### SSL/TLS設定*
+## SSL/TLS配置
 
 若要檢查憑證，您可以使用openssl。 若要檢查作用中的密碼，您可以使用nmap:
 
