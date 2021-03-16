@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
+source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 14%
@@ -38,14 +38,14 @@ ht-degree: 14%
 
 為確保交貨順利進行，應遵守若干准則。 您也可以在傳送傳送時遇到的常見問題，協助您有效率地傳送傳送。
 
-* [發佈效能與最佳實務](../../delivery/using/list-of-deliveries.md)
-* [傳送傳送疑難排解](../../delivery/using/delivery-dashboard.md)
+* [發佈效能與最佳實務](../../delivery/using/delivery-performances.md)
+* [傳送傳送疑難排解](../../delivery/using/delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
 **瞭解交付失敗**
 
-當訊息無法傳送至描述檔時，遠端伺服器會自動傳送錯誤訊息，該錯誤訊息會由Adobe Campaign平台擷取，並符合資格決定是否應隔離電子郵件地址或電話號碼。
+當無法將郵件發送到配置式時，遠程伺服器會自動發送錯誤消息，該錯誤消息由Adobe Campaign平台採集，並有資格確定是否應隔離電子郵件地址或電話號碼。
 
 [瞭解傳送](../../delivery/using/understanding-delivery-failures.md) 失敗是協助您改善行銷宣傳的關鍵步驟。
 
