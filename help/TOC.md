@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
+source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
 workflow-type: tm+mt
-source-wordcount: '2464'
-ht-degree: 56%
+source-wordcount: '2467'
+ht-degree: 57%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 56%
       + [Gold Standard發行說明](rn/using/gold-standard.md)
       + [Gold Standard相容性矩陣](rn/using/compatibility-matrix-gs.md)
    + 舊版{#previous-releases}
-      + [第 20.3 發行版本](rn/using/release--20-3.md)
+      + [發行版本 20.3](rn/using/release--20-3.md)
       + [第 20.2 發行版本](rn/using/release--20-2.md)
       + [第 20.1 發行版本](rn/using/release--20-1.md)
       + [第 19.2 發行版本](rn/using/release--19-2.md)
@@ -114,6 +114,7 @@ ht-degree: 56%
          + [與 Microsoft Dynamics 365 連接](platform/using/crm-ms-dynamics.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector.md)
+   + [說明與支援選項](support.md)
 + 建立併發送消息{#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
    + 建立傳遞時的主要步驟{#key-steps-when-creating-a-delivery}
@@ -182,7 +183,7 @@ ht-degree: 56%
       + [使用案例：選擇標準中的種子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [使用案例：配置欄位替代](delivery/using/use-case--configuring-the-field-substitution.md)
    + A/B 測試 {#a-b-testing}
-      + [開始使用A/B測試](delivery/using/get-started-a-b-testing.md)
+      + [開始使用 A/B 測試](delivery/using/get-started-a-b-testing.md)
       + [設定A/B測試](delivery/using/configuring-a-b-testing.md)
       + 使用案例 {#use-case}
          + [關於此使用案例](delivery/using/a-b-testing-use-case.md)
@@ -229,7 +230,7 @@ ht-degree: 56%
       + [收件匣轉譯](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [重新參與的最佳實務](delivery/using/re-engagement-best-practices.md)
-      + [Denylist資料庫](delivery/using/block-list-databases.md)
+      + [封鎖清單資料庫](delivery/using/block-list-databases.md)
       + [疑難排解](delivery/using/deliverability-faq.md)
    + 內容管理模組{#content-management}
       + [關於內容管理](delivery/using/about-content-management.md)
