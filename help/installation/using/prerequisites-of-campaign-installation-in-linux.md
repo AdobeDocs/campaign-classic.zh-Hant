@@ -7,21 +7,21 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
-# 在 Linux 安裝 Campaign 的必要條件{#prerequisites-of-campaign-installation-in-linux}
+# 在Linux{#prerequisites-of-campaign-installation-in-linux}上安裝促銷活動的先決條件
 
 ## 軟體先決條件{#software-prerequisites}
 
-本節詳細說明安裝Adobe Campaign前所需的初步設定步驟。
+本節詳細說明了安裝Adobe Campaign之前所需的初步配置步驟。
 
-安裝Adobe Campaign所需的技術和軟體組態詳見[相容性表](../../rn/using/compatibility-matrix.md)。
+安裝Adobe Campaign所需的技術和軟體配置在[相容性矩陣](../../rn/using/compatibility-matrix.md)中有詳細說明。
 
 提醒您，必須安裝並正確設定下列元件：
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
    對於RHEL 7散發版本，需要1.0版的OpenSSL。
 
-* 若要使用Adobe Campaign，您必須安裝&#x200B;**libicu**&#x200B;程式庫。
+* 要使用Adobe Campaign，需要安裝&#x200B;**libicu**&#x200B;庫。
 
    支援下列版本的&#x200B;**libicu**（32位元或64位元）:
 
@@ -80,13 +80,13 @@ ht-degree: 2%
 echo 0 >/selinux/enforce
 ```
 
-除此之外，在&#x200B;**/etc/sysconfig/httpd**&#x200B;檔案中，已新增下列行以參考Adobe Campaign環境設定指令碼：
+除此之外，在&#x200B;**/etc/sysconfig/httpd**&#x200B;檔案中，添加了以下行以引用Adobe Campaign環境配置指令碼：
 
 ```
 . ~neolane/nl6/env.sh
 ```
 
-在RHEL和CentOS中，當啟用SELinux時，會發現與資料庫客戶端層的相容性問題。 為確保Adobe Campaign能夠正確運作，我們建議停用SELinux。
+在RHEL和CentOS中，當啟用SELinux時，會發現與資料庫客戶端層的相容性問題。 為確保Adobe Campaign能夠正確運行，建議禁用SELinux。
 
 **套用下列程式：**
 
@@ -164,7 +164,7 @@ CentOS需要下列組態：
 
 ## 資料庫訪問層{#database-access-layers}
 
-您所使用之資料庫引擎的存取層必須安裝在伺服器上，並可透過Adobe Campaign帳戶存取。 版本和安裝模式可能會因所使用的資料庫引擎而異。
+您所使用的資料庫引擎的訪問層必須安裝在伺服器上，並可通過Adobe Campaign帳戶訪問。 版本和安裝模式可能會因所使用的資料庫引擎而異。
 
 [相容性矩陣](../../rn/using/compatibility-matrix.md)中詳細說明了支援的導頻版本。
 
@@ -172,35 +172,35 @@ CentOS需要下列組態：
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign支援7.2版的所有PostgreSQL用戶端程式庫版本：（**libpq.so.5**、**libpq.so.4**、**libpq.so.3.2**&#x200B;和&#x200B;**libpq.so.3.1**）。
+Adobe Campaign支援7.2版中的所有PostgreSQL客戶端庫版本：（**libpq.so.5**、**libpq.so.4**、**libpq.so.3.2**&#x200B;和&#x200B;**libpq.so.3.1**）。
 
-搭配使用PostgreSQL和Adobe Campaign也需要安裝對應的&#x200B;**pgcrypto**&#x200B;程式庫。
+將PostgreSQL與Adobe Campaign一起使用還需要安裝相應的&#x200B;**pgcrypto**&#x200B;庫。
 
 ### Oracle {#oracle}
 
 擷取64位元Debian的程式庫版本，例如：**libclntsh.so**、**libclntsh.so.11.1**&#x200B;和&#x200B;**libclntsh.so.10.1**。
 
-您可以從Oracle技術網路獲取Linux RPM包。
+您可以從Oracle技術網路獲得Linux RPM軟體包。
 
 >[!NOTE]
 >
->如果您已經安裝了Oracle客戶端，但已安裝了全局環境(例如：/etc/profile)未正確配置，您可以將缺少的資訊添加到&#x200B;**nl6/customer.sh**&#x200B;指令碼中有關詳細資訊，請參閱[環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables)。
+>如果您已經安裝了Oracle客戶端，但是安裝了全局環境(例如：/etc/profile)未正確配置，您可以將缺少的資訊添加到&#x200B;**nl6/customer.sh**&#x200B;指令碼中有關詳細資訊，請參閱[環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables)。
 
 **疑難排解與最佳實務**
 
-在Oracle客戶端或伺服器更新、版本更改或實例的首次安裝後，可能會出現問題。
+在Oracle客戶端或伺服器更新、版本更改或第一次安裝實例時，可能會出現問題。
 
-如果您在客戶端控制台上發現日誌、工作流上次處理、下次處理等中存在意外的時間延遲（一個或多個小時），則Oracle客戶端庫和Oracle Server之間可能存在問題。 為避免此類問題
+如果您在用戶端主控台上發現記錄檔、工作流程上次處理、下次處理等中有未預期的時間延遲（一或多小時），則Oracle用戶端程式庫和Oracle伺服器之間可能會有問題。 為避免此類問題
 
 1. 請務必使用&#x200B;**full client**。
 
-   在使用Oracle Instant Client版本時發現了各種問題。 此外，無法更改即時客戶端上的時區檔案。
+   使用Oracle即時客戶端版本時發現了各種問題。 此外，無法更改即時客戶端上的時區檔案。
 
 1. 請確定&#x200B;**客戶端版本**&#x200B;和&#x200B;**資料庫伺服器版本**&#x200B;是&#x200B;**相同**。
 
-   儘管Oracle的相容性清單和建議使客戶端和伺服器版本一致，但混合使用版本仍然會導致問題。
+   儘管Oracle的相容性矩陣和建議會混用版本，但已知會導致問題。
 
-   另請檢查ORACLE_HOME值，以確保它指向預期的客戶機版本（在電腦上安裝多個版本時）。
+   另請檢查ORACLE_HOME值，以確定它指向預期的客戶端版本（在電腦上安裝多個版本時）。
 
 1. 請確定客戶端和伺服器使用相同的&#x200B;**時區檔案**。
 
@@ -210,7 +210,7 @@ Adobe Campaign支援7.2版的所有PostgreSQL用戶端程式庫版本：（**lib
 
 ## 實施步驟 {#implementation-steps}
 
-Adobe Campaign的Linux安裝必須依下列順序進行：伺服器安裝後跟實例配置。
+Adobe Campaign的Linux安裝必須按照以下順序進行：伺服器安裝後跟實例配置。
 
 本章介紹了安裝過程。 安裝步驟如下：
 
