@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1156'
 ht-degree: 3%
 
 ---
@@ -29,8 +29,6 @@ ht-degree: 3%
 >
 >
 要檢查您的執行個體是否託管在 AWS 上，請按照[本節](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
-
-要瞭解如何使用安全區自助服務UI管理VPN安全區配置中的條目，請參閱[此技術](https://helpx.adobe.com/tw/campaign/kb/configuring-security-zones-self-service.html)。
 
 * 請確定子網中不允許您的反向代理。 如果是這樣，將檢測到&#x200B;**all**&#x200B;通信來自此本地IP，因此將受信任。
 
@@ -127,6 +125,6 @@ Adobe Campaign可讓您在`<dbcnx .../>`元素中設定簡單密碼。 請勿使
 
 依預設，Adobe Campaign不會將工作階段固定在特定IP上，但您可以啟用它，以防止工作階段被盜。 若要這麼做，請在[serverConf.xml檔案](../../installation/using/the-server-configuration-file.md)中，在`<authentication>`節點中將checkIPConsistent屬性設為&#x200B;**true**。
 
-預設情況下，Adobe Campaign的MTA不使用安全連接將內容發送到SMTP伺服器。 您必須啟用此功能（可能會降低傳送速度）。 若要這麼做，請在`<smtp ...>`節點中將enableTLS設為tr**ue。
+預設情況下，Adobe Campaign的MTA不使用安全連接將內容發送到SMTP伺服器。 您必須啟用此功能（可能會降低傳送速度）。 為此，請在`<smtp ...>`節點中將&#x200B;**enableTLS**&#x200B;設為&#x200B;**true**。
 
 您可以減少驗證節點（sessionTimeOutSec屬性）中會話的存留期。
