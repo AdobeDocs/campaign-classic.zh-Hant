@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 2%
@@ -93,7 +93,7 @@ ht-degree: 2%
 
 為了使控制實例能夠連接到執行實例而不需要提供口令，只需在&#x200B;**消息中心**&#x200B;訪問權限部分中輸入控制實例的IP地址。 但是，空密碼預設為禁止。
 
-要使用空口令，請轉至執行實例並定義一個安全區，該安全區限制為發送事件的資訊系統的IP地址。 此安全區必須允許空密碼並接受`<identifier> / <password>`類型連接。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+要使用空口令，請轉至執行實例並定義一個安全區，該安全區限制為發送事件的資訊系統的IP地址。 此安全區必須允許空密碼並接受`<identifier> / <password>`類型連接。 如需詳細資訊，請參閱[本章節](../../installation/using/security-zones.md)。
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >**mc1** 和 **mc2** 運營商必 **[!UICONTROL Message Center execution]** 須擁有權限，而且無法訪問Adobe Campaign客戶機控制台。操作員必須始終與安全區域連結。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+   >**mc1** 和 **mc2** 運營商必 **[!UICONTROL Message Center execution]** 須擁有權限，而且無法訪問Adobe Campaign客戶機控制台。操作員必須始終與安全區域連結。 如需詳細資訊，請參閱[本章節](../../installation/using/security-zones.md)。
 
 1. 對於每個運算子，選中&#x200B;**[!UICONTROL Restrict to information found in sub-folders of]**&#x200B;框，並為&#x200B;**mc1**&#x200B;運算子選擇相關資料夾（****&#x200B;資料夾1和&#x200B;**mc2**&#x200B;運算子的&#x200B;**資料夾2**）。
 
