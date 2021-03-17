@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 一般資訊{#general-information}
 
-所有API方法都以Web services的形式呈現。 這可讓您透過SOAP呼叫管理所有Adobe Campaign功能，而SOAP呼叫是Adobe Campaign應用程式伺服器的原生入口點。 Adobe Campaign主控台本身僅使用SOAP呼叫。
+所有API方法都以Web services的形式呈現。 這可讓您透過SOAP呼叫(即Adobe Campaign應用程式伺服器的原生入口點)來管理所有Adobe Campaign函式。 Adobe Campaign控制台本身僅使用SOAP呼叫。
 
 Web services可讓您從協力廠商系統建立許多應用程式：
 
@@ -29,7 +29,7 @@ Web services可讓您從協力廠商系統建立許多應用程式：
 
 ## Web服務的定義{#definition-of-web-services}
 
-Adobe Campaign應用程式伺服器上實作的網站服務定義可從資料結構描述中取得。
+在Adobe Campaign應用程式伺服器上實現的Web服務的定義可從資料模式獲得。
 
 Web服務在資料結構描述的語法中描述，可從&#x200B;**`<methods>`**&#x200B;元素中獲得。
 
@@ -54,7 +54,7 @@ Web服務在資料結構描述的語法中描述，可從&#x200B;**`<methods>`**
 
 「const」方法隱式地將XML文檔以其相關模式的格式作為輸入。
 
-[Method](../../configuration/using/schema/method.md)下的「架構參考」一章中，提供Adobe Campaign架構之`<method>`元素的完整說明
+[Method](../../configuration/using/schema/method.md)下的&quot;Schema references&quot;一章中提供了Adobe Campaign架構的`<method>`元素的完整說明
 
 &quot;xtk:queryDef&quot;架構中的&quot;const&quot;類型&quot;ExecuteQuery&quot;方法範例：
 
@@ -176,7 +176,7 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
 
 #### 服務 {#service}
 
-`<service>`部分說明「XtkQueryDef」服務及其URI，位於Adobe Campaign應用程式伺服器的URL上。
+`<service>`部分介紹了&quot;XtkQueryDef&quot;服務及其URI(位於Adobe Campaign應用程式伺服器的URL上)。
 
 ```
 <service name="XtkQueryDef">
@@ -188,7 +188,7 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
 
 ## 連接{#connectivity}
 
-Adobe Campaign已透過引入安全區（請參閱[本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)中的&#x200B;**定義安全區**&#x200B;章節）以及作業階段管理設定，提高驗證機制的安全性。
+Adobe Campaign通過引入安全區（請參閱[本節](../../installation/using/security-zones.md)中的&#x200B;**定義安全區一章）以及會話管理設定，提高了身份驗證機制的安全性。**
 
 有兩種可用的驗證模式：
 
@@ -196,7 +196,7 @@ Adobe Campaign已透過引入安全區（請參閱[本節](../../installation/us
 
 或
 
-* **透過Adobe Campaign登入+密碼** 建立工作階段Token。作業Token會在設定的時段後自動過期。 不建議使用此模式，並需要減少某些區域設定的應用程式安全性設定（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
+* **透過Adobe Campaign登入+** 密碼建立工作階段Token。作業Token會在設定的時段後自動過期。 不建議使用此模式，並需要減少某些區域設定的應用程式安全性設定（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
 
 ### 作業代號特性{#session-token-characteristics}
 
@@ -215,7 +215,7 @@ Adobe Campaign已透過引入安全區（請參閱[本節](../../installation/us
 
 * 它是從工作階段Token產生
 * 其生命週期為24小時（可在&#39;serverConf.xml&#39;檔案中設定，預設期間為24小時）
-* 它會儲存在Adobe Campaign主控台中
+* 它儲存在Adobe Campaign控制台中
 * 透過Web存取時：
 
    * 會儲存在檔案中。__securityToken屬性
@@ -229,7 +229,7 @@ Adobe Campaign已透過引入安全區（請參閱[本節](../../installation/us
 * 在登錄響應中傳輸（在HTTP標題中）
 * 用於每個查詢（在HTTP標題中）
 
-從POST和GET HTTP:
+來自POST和GETHTTP:
 
 * 伺服器使用Token完成連結
 * 伺服器在表格中新增隱藏欄位
