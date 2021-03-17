@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組
 
 ## 3. 如何設定安全性區域？{#how-can-i-configure-security-zones-}
 
-您可以使用 Security Zones 自助服務介面來管理 Adobe Campaign Classic 部署之 VPN Security Zone 設定中的項目。閱讀[本小節](../../installation/using/configuring-campaign-server.md#defining-security-zones)以瞭解 Campaign 中的安全性區域。
+您可以使用 Security Zones 自助服務介面來管理 Adobe Campaign Classic 部署之 VPN Security Zone 設定中的項目。閱讀[本小節](../../installation/using/security-zones.md)以瞭解 Campaign 中的安全性區域。
 
 [按一下這裡以深入瞭解](https://helpx.adobe.com/tw/campaign/kb/configuring-security-zones-self-service.html) Security Zone 自助服務 UI。
 
