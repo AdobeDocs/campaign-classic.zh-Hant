@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f7e4f129a96e80ec169428057f661165d8b967c9
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Adobe Campaign可讓您定義並管理指派給各種運算子的權限。 這�
 
 權限會套用至運算元設定檔或運算元群組。
 
-它們由與操作員與Adobe Campaign的連接模式相關的安全參數完成。 有關[本頁](../../installation/using/configuring-campaign-server.md#defining-security-zones)中安全區的詳細資訊。
+它們由與操作員與Adobe Campaign的連接模式相關的安全參數完成。 有關[本頁](../../installation/using/security-zones.md)中安全區的詳細資訊。
 
 您可以授予使用者兩種權限類型：
 
