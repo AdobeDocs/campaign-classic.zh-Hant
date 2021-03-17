@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '299'
 ht-degree: 3%
 
 ---
@@ -17,22 +17,27 @@ ht-degree: 3%
 
 # 互動 – 資料緩衝{#interaction-data-buffer}
 
->[!NOTE]
->
->有些組態只能由Adobe針對Adobe代管的部署執行。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱[代管模型](../../installation/using/hosting-models.md)一節或[本頁](../../installation/using/capability-matrix.md)。
+您可以設定資料緩衝區，以取消同步化選件提案計算，以提高傳入的互動效能。 此配置將在實例自己的配置檔案(config-Instance.xml)中執行。
 
-在Adobe Campaign中，「互動」模組中已引入&#x200B;**資料緩衝區**。 這可讓您取消同步庫存和選件計算，以&#x200B;**提高傳入互動的效能**。
+在Adobe Campaign，在交互模組中引入了&#x200B;**資料緩衝區**。 這可讓您取消同步庫存和選件計算，以&#x200B;**提高傳入互動的效能**。
 
 它只涉及傳入的互動，不論是呼叫（有無呼叫資料）或狀態更新(updateStatus)。
 
 為避免在寫入與收件者相關的提案時出現隊列，新進程生成允許以非同步方式寫入提案的&#x200B;**資料緩衝區**。 ****&#x200B;此資料緩衝區會定期讀取和清空。 預設時段約為1秒。因此，建議書寫是分組的。
 
-資料緩衝區&#x200B;**configuration**&#x200B;可在實例的配置檔案(config-Instance.xml)中完成。
-
 >[!NOTE]
 >
->對設定所做的任何變更都需要重新啟動Web伺服器(Apache:IIS)和Adobe Campaign程式。\
+>如果您使用與分佈式體系結構的交互，則此參數是必要的。
+
+資料緩衝區&#x200B;**configuration**&#x200B;可在實例的配置檔案(config-Instance.xml)中完成。
+
+>[!CAUTION]
+>
+>某些配置只能通過Adobe來執行由Adobe托管的部署。 例如，訪問伺服器和實例配置檔案。 若要進一步瞭解不同的部署，請參閱[代管模型](../../installation/using/hosting-models.md)一節或[本頁](../../installation/using/capability-matrix.md)。
+>
+>對配置所做的任何更改都需要重新啟動Web伺服器(Apache:IIS)和Adobe Campaign進程。\
 >在配置資料緩衝區後，請確保有適合的硬體配置可用。 （記憶體量）。
+
 
 在配置資料緩衝區後，請確保有適合的硬體配置可用。 （記憶體量）。
 
@@ -44,7 +49,7 @@ maxProcessMemoryWarningMb="1600" maxSharedEntries="25000" nextOffersSize="0"
 processRestartTime="06:00:00" runLevel="10" targetKeySize="16"/>
 ```
 
-如果您使用「傳入互動」,@autostart屬性必須為&quot;true&quot;，才能在Adobe Campaign伺服器啟動時自動啟動程式。
+如果您使用「入站交互」，則@autostart屬性必須為&quot;true&quot;，以在Adobe Campaign伺服器啟動時自動啟動進程。
 
 引數詳細資料：
 
