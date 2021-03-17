@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->為避免效能問題，建議每個電子郵件不要包含多個附件。 建議的臨界值可從[促銷活動經典選項清單中設定。](../../installation/using/configuring-campaign-options.md#delivery)
+>為避免效能問題，建議每個電子郵件不要包含多個附件。 建議的閾值可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置。
 
 可能有兩種情況：
 
@@ -101,11 +101,6 @@ ht-degree: 1%
 對於此類型的附件，應用以下配置步驟：
 
 1. 選取要上傳的檔案。
-
-   >[!NOTE]
-   >
-   >源檔案必須在LibreOffice中建立。 必鬚根據[本節](../../installation/using/before-starting.md)中詳細介紹的先決條件配置實例。
-
 1. 視需要指定標籤。
 1. 選擇&#x200B;**[!UICONTROL Upload file on the server]** ，然後按一下&#x200B;**[!UICONTROL Update on server]**&#x200B;開始傳輸。
 1. 您可以顯示預覽。 若要這麼做，請選取收件者。
@@ -120,7 +115,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->為避免效能問題，如果您將即時從個人化URL下載的影像加入附件，預設每個影像大小不應超過100,000位元組。 此建議的臨界值可從[促銷活動傳統選項清單中設定。](../../installation/using/configuring-campaign-options.md#delivery)
+>為避免效能問題，如果您將即時從個人化URL下載的影像加入附件，預設每個影像大小不應超過100,000位元組。 此建議的閾值可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置。
 
 ### 附加計算檔案{#attach-a-calculated-file}
 
