@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Adobe Campaignv7包含&#x200B;**安全區**&#x200B;的概念。 每個用戶都�
 
 **在配置升級後** （伺服器重新啟動之前），必須配置安全區。
 
-安全區配置位於[本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)中。
+安全區配置位於[本節](../../installation/using/security-zones.md)中。
 
 ### 用戶密碼{#user-passwords}
 
