@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 57%
+source-wordcount: '2470'
+ht-degree: 55%
 
 ---
 
@@ -380,11 +380,6 @@ ht-degree: 57%
       + [與 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [設定與 [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
-   + 通過Adobe ID連接{#connecting-via-an-adobe-id}
-      + [關於 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [配置Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [實施Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
-      + [IMS 疑難排解](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
       + [[!DNL ACS Connector] 原理和資料週期](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步描述檔](integrations/using/synchronizing-profiles.md)
@@ -562,7 +557,7 @@ ht-degree: 57%
       + [建立測試環境](interaction/using/creating-a-test-environment.md)
       + [鈎點](interaction/using/hooks.md)
       + [分佈式架構](interaction/using/distributed-architectures.md)
-      + [資料緩衝區](interaction/using/data-buffer-zone.md)
+      + [資料緩衝區配置](installation/using/interaction---data-buffer.md)
    + 使用案例 {#case-study}
       + [簡報規則](interaction/using/presentation-rules.md)
       + [傳入頻道上的優惠方案](interaction/using/offers-on-an-inbound-channel.md)
@@ -620,16 +615,8 @@ ht-degree: 57%
    + 架構原則{#architecture-and-hosting-models}
       + [通用架構](installation/using/general-architecture.md)
       + 託管模型{#hosting-models-lp}
-         + [關於託管模型](installation/using/hosting-models.md)
-         + [混合模型](installation/using/hybrid-model.md)
-         + [託管模型](installation/using/hosted-model.md)
+         + [促銷活動代管模型](installation/using/hosting-models.md)
          + [功能矩陣](installation/using/capability-matrix.md)
-   + 部署准則{#deployment-guidelines}
-      + [必要條件](installation/using/before-starting.md)
-      + [資料庫伺服器](installation/using/database.md)
-      + [應用程式伺服器](installation/using/application-server.md)
-      + [傳訊伺服器](installation/using/messaging-server.md)
-      + [網路配置](installation/using/network-configuration.md)
    + 部署類型{#deployment-types-}
       + [關於部署類型](installation/using/about-deployment-types.md)
       + [獨立部署](installation/using/standalone-deployment.md)
@@ -637,58 +624,70 @@ ht-degree: 57%
       + [企業部署](installation/using/enterprise-deployment.md)
       + [中間來源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 與 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 在 Windows 上的行銷活動{#installing-campaign-in-windows-}
-      + [在 Windows 上安裝 Campaign 之前](installation/using/prerequisites-of-campaign-installation-in-windows.md)
-      + [安裝伺服器](installation/using/installing-the-server.md)
-      + [整合至Web伺服器(Windows)](installation/using/integration-into-a-web-server-for-windows.md)
-      + [適用於 Windows 的用戶端主控台可用性](installation/using/client-console-availability-for-windows.md)
-      + [安裝客戶機控制台](installation/using/installing-the-client-console.md)
-   + 在 Linux 上的 Campaign{#installing-campaign-in-linux-}
-      + [在 Linux 上安裝 Campaign 之前](installation/using/prerequisites-of-campaign-installation-in-linux.md)
-      + [安裝軟體包](installation/using/installing-packages-with-linux.md)
-      + [整合至Web伺服器(Linux)](installation/using/integration-into-a-web-server-for-linux.md)
-      + [Linux 用戶端主控台可用性](installation/using/client-console-availability-for-linux.md)
-   + 初始配置 {#initial-configuration}
+   + 安全性與隱私權檢查清單{#security-privacy}
+      + [開始使用安全性和隱私權](installation/using/get-started-security-privacy.md)
+      + [個人化與隱私](installation/using/privacy.md)
+      + [安全的存取管理](installation/using/access-management.md)
+      + [指令碼和編碼准則](installation/using/scripting-coding-guidelines.md)
+      + [網路、資料庫和SSL/TLS](installation/using/network-database.md)
+      + [伺服器安全性設定](installation/using/server-configuration.md)
+      + [Web伺服器安全設定](installation/using/web-server-configuration.md)
+   + 安裝促銷活動（內部部署）{#install-campaign-on-prem}
+      + 部署准則{#deployment-guidelines}
+         + [資料庫伺服器](installation/using/database.md)
+         + [應用程式伺服器](installation/using/application-server.md)
+         + [傳訊伺服器](installation/using/messaging-server.md)
+         + [網路配置](installation/using/network-configuration.md)
+      + 在 Windows 上的行銷活動{#installing-campaign-in-windows-}
+         + [開始使用](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+         + [安裝伺服器](installation/using/installing-the-server.md)
+         + [整合至Web伺服器(Windows)](installation/using/integration-into-a-web-server-for-windows.md)
+         + [適用於 Windows 的用戶端主控台可用性](installation/using/client-console-availability-for-windows.md)
+      + 在 Linux 上的 Campaign{#installing-campaign-in-linux-}
+         + [必要條件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+         + [安裝軟體包](installation/using/installing-packages-with-linux.md)
+         + [整合至網頁伺服器](installation/using/integration-into-a-web-server-for-linux.md)
+      + [時區管理](installation/using/time-zone-management.md)
+      + [安裝中間採購伺服器](installation/using/mid-sourcing-server.md)
+   + 部署促銷活動（內部部署）{#initial-configuration}
       + [關於初始配置](installation/using/about-initial-configuration.md)
       + [建立例項並登入](installation/using/creating-an-instance-and-logging-on.md)
       + [建立和配置資料庫](installation/using/creating-and-configuring-the-database.md)
-      + [Campaign 伺服器設定](installation/using/campaign-server-configuration.md)
+      + [設定促銷活動伺服器](installation/using/campaign-server-configuration.md)
       + [部署例項](installation/using/deploying-an-instance.md)
-      + [安裝Campaign Classic內置軟體包](installation/using/installing-campaign-standard-packages.md)
-   + 其他配置 {#additional-configurations}
-      + [設定促銷活動伺服器](installation/using/configuring-campaign-server.md)
-      + [通過LDAP連接](installation/using/connecting-through-ldap.md)
+      + [安裝內置軟體包](installation/using/installing-campaign-standard-packages.md)
+   + 設定促銷活動{#additional-configurations}
+      + [促銷活動伺服器設定](installation/using/configuring-campaign-server.md)
+      + [定義安全區](installation/using/security-zones.md)
       + [技術電子郵件設定](installation/using/email-deliverability.md)
-      + [電子郵件封存](installation/using/email-archiving.md)
-      + [時區管理](installation/using/time-zone-management.md)
+      + [設定電子郵件密件副本](installation/using/email-archiving.md)
       + [設定SpamAssassin](installation/using/configuring-spamassassin.md)
-      + [中間來源伺服器](installation/using/mid-sourcing-server.md)
-      + [互動 – 資料緩衝](installation/using/interaction---data-buffer.md)
+   + 連線至促銷活動{#connect-to-campaign}
+      + [安裝客戶機控制台](installation/using/installing-the-client-console.md)
+      + 通過Adobe ID連接{#connecting-via-an-adobe-id}
+         + [關於 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [配置Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
+         + [實施Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
+         + [IMS 疑難排解](integrations/using/ims-troubleshooting.md)
+      + [通過LDAP連接](installation/using/connecting-through-ldap.md)
+   + 將促銷活動連接至外部系統{#accessing-external-database}
       + [設定外部帳戶](installation/using/external-accounts.md)
-   + 訪問外部資料庫{#accessing-external-database}
-      + [開始使用 FDA](installation/using/about-fda.md)
-      + 配置指南 {#config-databases}
-         + [配置步驟](installation/using/configure-fda.md)
-         + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
-         + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
-         + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
-         + [配置 Oracle](installation/using/configure-fda-oracle.md)
-         + [配置 Netezza](installation/using/configure-fda-netezza.md)
-         + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
-         + [配置 Teradata](installation/using/configure-fda-teradata.md)
-         + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
-      + [遠端存取權限](installation/using/remote-database-access-rights.md)
-      + [連接到資料庫](installation/using/connecting-to-database.md)
-      + [建立資料結構](installation/using/creating-data-schema.md)
-      + [定義資料對應](installation/using/defining-data-mapping.md)
-   + 安全性與隱私權檢查清單{#security-privacy}
-      + [開始使用安全性和隱私權](installation/using/get-started-security-privacy.md)
-      + [隱私權](installation/using/privacy.md)
-      + [存取管理](installation/using/access-management.md)
-      + [指令碼和編碼准則](installation/using/scripting-coding-guidelines.md)
-      + [網路、資料庫和SSL/TLS](installation/using/network-database.md)
-      + [伺服器組態](installation/using/server-configuration.md)
-      + [Web-server配置](installation/using/web-server-configuration.md)
+      + 配置同盟資料存取{#configure-fda}
+         + [開始使用Federated Data Access](installation/using/about-fda.md)
+         + 配置指南 {#config-databases}
+            + [配置步驟](installation/using/configure-fda.md)
+            + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
+            + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
+            + [配置 Oracle](installation/using/configure-fda-oracle.md)
+            + [配置 Netezza](installation/using/configure-fda-netezza.md)
+            + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
+            + [配置 Teradata](installation/using/configure-fda-teradata.md)
+            + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
+         + [遠端存取權限](installation/using/remote-database-access-rights.md)
+         + [連接到資料庫](installation/using/connecting-to-database.md)
+         + [建立資料結構](installation/using/creating-data-schema.md)
+         + [定義資料對應](installation/using/defining-data-mapping.md)
    + 附錄 {#appendices}
       + [伺服器配置檔案](installation/using/the-server-configuration-file.md)
       + [Campaign 網路端點](installation/using/campaign-network-endpoints.md)
