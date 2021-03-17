@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1159'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 升級至新建版本（內部部署）{#upgrading}
 
-在開始升級程式之前，請確定並確認要升級至哪個Adobe Campaign版本，並參閱[發行說明](../../rn/using/latest-release.md)。
+在開始升級過程之前，確定並確認要升級到哪個版本的Adobe Campaign，並參閱[發行說明](../../rn/using/latest-release.md)。
 
 >[!IMPORTANT]
 >
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ## Windows {#in-windows}
 
-若要在傳送新組建版本時以新版本更新Adobe Campaign,Windows應套用下列程式：
+要在交付新構建版本時以新版本更新Adobe Campaign，應在Windows中應用以下過程：
 
 * [關閉服務](#shut-down-services),
 * [升級Adobe Campaign伺服器應用程式](#upgrade-the-adobe-campaign-server-application),
@@ -49,7 +49,7 @@ ht-degree: 2%
 
       **iisreset /stop**
 
-   * Adobe Campaign服務：**net stop nlserver6**
+   * Adobe Campaign社：**net stop nlserver6**
    >[!IMPORTANT]
    >
    >您還需要確保重定向伺服器(webmdl)已停止，以便IIS使用的&#x200B;**nlsrvmod.dll**&#x200B;檔案可以替換為新版本。
@@ -106,17 +106,17 @@ ht-degree: 2%
 
    **iisreset /start**
 
-* Adobe Campaign服務：**net start nlserver6**
+* Adobe Campaign社：**net start nlserver6**
 
 ## Linux {#in-linux}
 
-若要在傳送新建版本時更新Adobe Campaign,Linux的程式如下：
+要在交付新構建版本時以新版本更新Adobe Campaign,Linux的過程如下：
 
 * [獲取更新的包](#obtain-updated-packages),
 * [執行更新](#perform-an-update),
 * [重新啟動Web伺服器](#reboot-the-web-server)。
 
-要瞭解如何更新客戶機控制台，請參閱[本節](../../installation/using/client-console-availability-for-linux.md)。
+[進一步瞭解Client Console的可用性](../../installation/using/client-console-availability-for-windows.md)。
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ ht-degree: 2%
 
 ### 獲取更新的軟體包{#obtain-updated-packages}
 
-從恢復Adobe Campaign的兩個更新套件開始：使用您的用戶憑據連接到[軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中進一步瞭解軟體分發。
+從恢復Adobe Campaign的兩個更新包開始：使用您的用戶憑據連接到[軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中進一步瞭解軟體分發。
 
 檔案為&#x200B;**nlserver6-v7-XXX.rpm**
 
@@ -211,13 +211,13 @@ ht-degree: 2%
 
 要解決衝突，請應用以下流程：
 
-1. 在Adobe Campaign樹狀結構中，前往&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**。
+1. 在Adobe Campaign樹中，轉至&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**。
 1. 在清單中選擇要解決的衝突。
 
 解決衝突的方法有三種：
 
 * **[!UICONTROL Declare as resolved]** :需要事先進行使用者干預。
-* **[!UICONTROL Accept the new version]** :如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
+* **[!UICONTROL Accept the new version]** :建議使用者是否未變更Adobe Campaign提供的資源。
 * **[!UICONTROL Keep the current version]** :表示更新遭拒。
 
    >[!IMPORTANT]
@@ -226,7 +226,7 @@ ht-degree: 2%
 
 如果您選擇手動解決衝突，請按如下步驟進行：
 
-1. 在窗口的下半部分，搜索&#x200B;**_conflict_**&#x200B;字串以查找具有衝突的實體。 隨新版本安裝的實體包含&#x200B;**new**&#x200B;引數，與舊版相符的實體包含&#x200B;**cus**&#x200B;引數。
+1. 在窗口的下半部分中，搜索&#x200B;**_conflict_**&#x200B;字串以查找具有衝突的實體。 隨新版本安裝的實體包含&#x200B;**new**&#x200B;引數，與舊版相符的實體包含&#x200B;**cus**&#x200B;引數。
 
    ![](assets/s_ncs_production_conflict002.png)
 
@@ -247,7 +247,7 @@ ht-degree: 2%
 
 ### Windows {#in-windows-1}
 
-在安裝(**nlserver web**)Adobe Campaign應用程式伺服器的機器上，下載並複製檔案
+在安裝(**nlserver web**)Adobe Campaign應用程式伺服器的電腦上，下載並複製檔案
 
 **setup-client-6.XXXX.exe**
 
@@ -261,7 +261,7 @@ ht-degree: 2%
 
 ### Linux {#in-linux-1}
 
-在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的機器上，擷取下列套件：
+在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的電腦上，檢索以下軟體包：
 
 **setup-client-6.XXXX.exe**
 
