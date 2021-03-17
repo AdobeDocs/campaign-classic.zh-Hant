@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 第 20.3 發行版本
-description: 第 20.3 發行版本
+title: 20.3 發行版本
+description: 20.3 發行版本
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
@@ -15,7 +15,7 @@ ht-degree: 95%
 ---
 
 
-# 第 20.3 發行版本{#release-20-3}
+# 20.3 發行版本{#release-20-3}
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
 
