@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1221'
 ht-degree: 1%
 
 ---
@@ -58,10 +58,10 @@ ht-degree: 1%
 * 可通過POP3訪問的彈回郵箱，
 * 在負載平衡器上建立兩個DNS別名：
 
-   * 首次公開用於追蹤並指向虛擬IP位址(VIP)上的負載平衡器，然後散布至兩個正面伺服器，
-   * 第二個則暴露給內部使用者，以便透過主控台存取，並指向虛擬IP位址(VIP)上的負載平衡器，然後該負載平衡器會散布至兩個應用程式伺服器。
+   * 首先暴露在公眾面前，用於跟蹤並指向虛擬IP地址(VIP)上的負載平衡器，然後分配給兩個前端伺服器，
+   * 第二個暴露給內部用戶，以便通過控制台訪問，並指向虛擬IP地址(VIP)上的負載平衡器，然後該負載平衡器被分發到兩個應用程式伺服器。
 
-* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL（1521 for Oracle,5432 for PostgreSQL等） 埠。 有關詳細資訊，請參閱[Database access](../../installation/using/network-configuration.md#database-access)一節。
+* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521 forOracle、5432 for PostgreSQL等) 埠。 有關詳細資訊，請參閱[Database access](../../installation/using/network-configuration.md#database-access)一節。
 
 >[!CAUTION]
 >
@@ -82,11 +82,11 @@ ht-degree: 1%
 
 安裝第一台伺服器的步驟如下：
 
-1. 請依照Adobe Campaign伺服器的安裝程式：**nlserver**&#x200B;套件（在Linux上）或&#x200B;**setup.exe**（在Windows上）。
+1. 按照Adobe Campaign伺服器的安裝過程操作：**nlserver**&#x200B;套件（在Linux上）或&#x200B;**setup.exe**（在Windows上）。
 
    有關詳細資訊，請參閱[Linux中促銷活動安裝的先決條件(Linux)和[Windows中促銷活動安裝的先決條件(Windows)。](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)
 
-1. 在安裝Adobe Campaign伺服器後，使用命令&#x200B;**nlserver web -tomcat**&#x200B;啟動應用程式伺服器(web)（Web模組可讓您在獨立Web伺服器模式監聽連接埠8080上啟動Tomcat），並確保Tomcat正確啟動：
+1. 安裝Adobe Campaign伺服器後，使用命令&#x200B;**nlserver web -tomcat**&#x200B;啟動應用程式伺服器(Web)（Web模組使您能夠在埠8080上的獨立Web伺服器模式偵聽中啟動Tomcat），並確保Tomcat正確啟動：
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -165,14 +165,9 @@ ht-degree: 1%
 
    如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/campaign-server-configuration.md)。
 
-1. 將用戶端主控台設定程式（v7或&#x200B;**setup-client-6.XX**,v6.1的&#x200B;**setup-client-7.XX**, **/datakit/>,**/datakit/）複製至&#x200B;**/nl/eng/jsp**&#x200B;資料夾。****
+1. 將用戶端主控台設定程式（v7或&#x200B;**setup-client-6.XX**,v6.1的&#x200B;**setup-client-7.XX**, **/datakit/>,**/datakit/）複製至&#x200B;**/nl/eng/jsp**&#x200B;資料夾。 ****[進一步瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
-   如需詳細資訊，請參閱下列章節：
-
-   * 針對Linux:[Linux](../../installation/using/client-console-availability-for-linux.md)客戶端控制台可用性
-   * 針對Windows:[Windows](../../installation/using/client-console-availability-for-windows.md)的客戶端控制台可用性。
-
-1. 啟動Adobe Campaign伺服器(在Windows中&#x200B;**net start nlserver6**，在Linux中&#x200B;**/etc/init.d/nlserver6 start**)並再次執行命令&#x200B;**nlserver pdump**，以檢查是否有所有已啟用的模組。
+1. 啟動Adobe Campaign伺服器(在Windows中&#x200B;**net start nlserver6**，在Linux中&#x200B;**/etc/init.d/nlserver6 start**)，並再次運行命令&#x200B;**nlserver pdump**&#x200B;以檢查是否存在所有已啟用的模組。
 
    >[!NOTE]
    >
@@ -190,20 +185,15 @@ ht-degree: 1%
    web@default (28671) - 40.5 MB
    ```
 
-   此命令也可讓您知道電腦上安裝的Adobe Campaign伺服器版本和組建版本號碼。
+   此命令還可讓您瞭解安裝在電腦上的Adobe Campaign伺服器的版本和內部版本號。
 
 1. 使用URL測試&#x200B;**nlserver web**&#x200B;模組：[https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)。
 
-   此URL可讓您存取用戶端設定程式的下載頁面。
+   此URL可讓您存取用戶端設定程式的下載頁面。 [進一步瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
    當您到達訪問控制頁時，輸入&#x200B;**internal**&#x200B;登錄和相關密碼。
 
    ![](assets/s_ncs_install_access_client.png)
-
-   如需詳細資訊，請參閱下列章節：
-
-   * 針對Linux:[Linux](../../installation/using/client-console-availability-for-linux.md)客戶端控制台可用性
-   * 針對Windows:[Windows](../../installation/using/client-console-availability-for-windows.md)的客戶端控制台可用性
 
 ### 安裝和配置應用程式伺服器2 {#installing-and-configuring-the-application-server-2}
 
@@ -266,7 +256,7 @@ ht-degree: 1%
 
 步驟如下：
 
-1. 安裝Adobe Campaign伺服器、
+1. 安裝Adobe Campaign伺服器，
 1. 符合下列章節所述的Web伺服器整合程式(IIS、Apache):
 
    * 針對Linux:[整合至Linux的Web伺服器，](../../installation/using/integration-into-a-web-server-for-linux.md)
