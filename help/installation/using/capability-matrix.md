@@ -7,19 +7,19 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '305'
 ht-degree: 19%
 
 ---
 
 
-# 功能矩陣 {#capability-matrix-per-model}
+# 每個型號的能力矩陣{#capability-matrix-per-model}
 
-Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性和使用取決於安裝的部署類型。 本文分享了有關完全托管（托管服務）和內部部署之間某些功能的主要差異。
+Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性和使用取決於安裝的部署類型。 本文分享了完全托管(Managed Services)和內部部署之間某些功能的主要區別。
 
-本頁顯示托管（托管服務）和內部部署之間的主要差異。 混合式部署的特定性取決於由Adobe代管並由您所在地代管的元素。
+本頁顯示代管(Managed Services)與內部部署之間的主要差異。 混合部署的具體性取決於Adobe托管和托管在您所在地的元素。
 
 本節](../../installation/using/hosting-models.md)介紹了不同的代管模型。[
 
@@ -43,11 +43,11 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 ## 同盟資料存取{#fda}
 
-Adobe Campaign提供&#x200B;**同盟資料存取**(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您可以存取外部資料，而不需變更Adobe Campaign資料的結構。 [進一步了解](../../installation/using/about-fda.md)
+Adobe Campaign提供&#x200B;**Federated Data Access**(FDA)選項，以處理儲存在一個或多個外部資料庫中的資訊：您可以存取外部資料，而不需變更Adobe Campaign資料的結構。 [進一步了解](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->通過FDA訪問外部資料庫僅可用於內部部署或混合安裝，但[雪花連接器](../../installation/using/configure-fda-snowflake.md)除外。
+>通過FDA訪問外部資料庫僅可用於內部部署或混合安裝，但[Snowflake連接器](../../installation/using/configure-fda-snowflake.md)除外。
 
 
 **另請參閱**
