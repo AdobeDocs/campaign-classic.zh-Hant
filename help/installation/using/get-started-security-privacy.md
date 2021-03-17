@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 45a77d3fc143ab9c6f9f17ab6118f8816254f6fd
+source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 開始使用安全性和隱私權{#get-started-security-privacy}
 
-本節將向您介紹檢查安全性和隱私權的關鍵要素。
+本節將向您介紹檢查安全性和隱私權的關鍵要素。 某些配置只能由現場客戶執行。
 
 ## 隱私權
 
@@ -92,9 +92,9 @@ ht-degree: 3%
 
 在配置Web伺服器(Apache/IIS)時，應遵循以下幾個最佳做法：
 
-* 停用舊版SSL和密碼：
-* 刪除TRACE方法：
-* 移除橫幅：
-* 限制查詢大小以防止上傳重要檔案：
+* 停用舊版SSL和密碼
+* 刪除TRACE方法
+* 移除橫幅
+* 限制查詢大小以防止上傳重要檔案
 
 [顯示全文](../../installation/using/web-server-configuration.md)
