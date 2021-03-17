@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->操作員必須連結至安全區才能登入例項。 有關Adobe Campaign安全區的詳細資訊，請參閱[本頁](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+>操作員必須連結至安全區才能登入例項。 有關Adobe Campaign安全區的詳細資訊，請參閱[本頁](../../installation/using/security-zones.md)。
 
 使用者也可以使用其Adobe ID直接連線至Adobe Campaign。 如需關於此項目的詳細資訊，請參閱此[頁面](../../integrations/using/about-adobe-id.md)。
 
@@ -106,7 +106,7 @@ ht-degree: 2%
    >即使其帳戶已停用，營運商仍可接收來自促銷活動的警報或通知。 若要停止傳送促銷活動通知給此運算子，Adobe建議您從其個人資料中移除電子郵件地址。
 
 * **[!UICONTROL Forbid access from the rich client]**&#x200B;選項可讓您將Adobe Campaign的使用限制為[Web存取](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)或透過API:無法再存取Adobe Campaign用戶端主控台。
-* 可以把安全區和操作員連接起來。 有關詳細資訊，請參見[此頁面](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+* 可以把安全區和操作員連接起來。 有關詳細資訊，請參見[此頁面](../../installation/using/security-zones.md)。
 * 您也可以使用適當的連結來定義受信任的IP遮罩。
 
    如果IP位址在此清單中，則營運商將可以連線至Adobe Campaign，而不需輸入密碼。
