@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # 設定您的平台{#configuring-your-platform}
 
-Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作。 遷移前後可能需要這些參數。 本節將介紹相關更改及其配置模式。
+Adobe Campaign第7版中的某些重大變更需要設定以確保其有效運作。 遷移前後可能需要這些參數。 本節將介紹相關更改及其配置模式。
 
-在遷移期間，從模式定義重建&#x200B;**NmsRecipient**&#x200B;表。 在Adobe Campaign之外對此表的SQL結構所做的任何更改都將丟失。
+在遷移期間，從模式定義重建&#x200B;**NmsRecipient**&#x200B;表。 在Adobe Campaign以外對此表的SQL結構所做的任何更改都將丟失。
 
 要檢查的元素範例：
 
@@ -27,11 +27,11 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 * 預設情況下，**tablespace**&#x200B;屬性會回收其值，即部署嚮導中定義的值。
 * 如果已將參考視圖添加到NmsRecipient表，則必須在遷移前將其刪除。
 
-此警告還涉及Oracle用戶：如果您在播放期間新增了&#x200B;**usetimestamptz:1**&#x200B;選項（請參閱[時區](../../migration/using/general-configurations.md#time-zones)），則會重建包含至少一個&#x200B;**date+time**&#x200B;欄位的所有表格。
+此警告也涉及Oracle用戶：如果您在播放期間新增了&#x200B;**usetimestamptz:1**&#x200B;選項（請參閱[時區](../../migration/using/general-configurations.md#time-zones)），則會重建包含至少一個&#x200B;**date+time**&#x200B;欄位的所有表格。
 
 ## 遷移前{#before-the-migration}
 
-移轉至Adobe Campaign v7時，必須設定下列元素。 在啟動&#x200B;**postupgrade**&#x200B;之前，必須解決這些元素。
+移轉至Adobe Campaignv7時，必須配置以下元素。 在啟動&#x200B;**postupgrade**&#x200B;之前，必須解決這些元素。
 
 * 時區
 
@@ -43,7 +43,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
 * 安全區
 
-   基於安全性原因，Adobe Campaign平台不再預設為可存取：您必須配置安全區，這要求在遷移前收集用戶IP地址。
+   出於安全原因，Adobe Campaign平台不再預設訪問：您必須配置安全區，這要求在遷移前收集用戶IP地址。
 
    有關詳細資訊，請參閱[Security](../../migration/using/general-configurations.md#security)部分。
 
@@ -51,7 +51,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
    JavaScript中的某些語法可能在5.11和6.02版中接受，而v7版中則不再接受，因為使用了新的解釋器。 如需詳細資訊，請參閱[JavaScript](../../migration/using/general-configurations.md#javascript)一節。
 
-   同樣地，Adobe Campaign v7中也引入了新語法，以取代以SQLData為基礎的語法。 如果您使用此語法的程式碼元素，則必須加以調整。 有關詳細資訊，請參閱[SQLData](../../migration/using/general-configurations.md#sqldata)部分。
+   同樣地，Adobe Campaignv7中引入了新語法來取代基於SQLData的語法。 如果您使用此語法的程式碼元素，則必須加以調整。 有關詳細資訊，請參閱[SQLData](../../migration/using/general-configurations.md#sqldata)部分。
 
 * 密碼
 
@@ -59,7 +59,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
 * 樹狀結構
 
-   如果從v5.11平台移轉，您必鬚根據Adobe Campaign v6規範重新組織樹狀結構資料夾。 如需詳細資訊，請參閱[Adobe Campaign v7樹狀結構](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure)一節。
+   如果從v5.11平台移轉，您必鬚根據Adobe Campaignv6規範重新組織樹結構資料夾。 有關詳細資訊，請參閱[Adobe Campaignv7樹結構](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure)部分。
 
 * 互動
 
@@ -73,7 +73,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
    鏡像頁面個人化區塊已隨v6.x變更。此新版本可改善存取這些頁面時的安全性。
 
-   如果您在訊息中使用v5個人化區塊，鏡像頁面顯示將會失敗。 Adobe強烈建議在訊息中插入鏡像頁面時使用新的個人化區塊。
+   如果您在訊息中使用v5個人化區塊，鏡像頁面顯示將會失敗。 Adobe強烈建議在消息中插入鏡像頁時使用新的個性化塊。
 
    但是，作為臨時解決方案（且鏡像頁仍然有效），您可以返回舊的個人化區塊，以透過變更選項&#x200B;**[!UICONTROL XtkAcceptOldPasswords]**&#x200B;並將其設為&#x200B;**[!UICONTROL 1]**&#x200B;來避免此問題。 這不會影響新v6.x個人化區塊的使用。
 
@@ -109,7 +109,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
 * 安全區。
 
-   在啟動伺服器之前，必須配置安全區。 如需詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#defining-security-zones)和[安全性](../../migration/using/general-configurations.md#security)一節。
+   在啟動伺服器之前，必須配置安全區。 如需詳細資訊，請參閱[本節](../../installation/using/security-zones.md)和[安全性](../../migration/using/general-configurations.md#security)一節。
 
 * 結構描述
 
