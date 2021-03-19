@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 第 19.1 發行版本
-description: 第 19.1 發行版本
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Campaign 19.1發行說明
+description: Campaign 19.1的發行說明
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 21%
+source-wordcount: '3134'
+ht-degree: 20%
 
 ---
 
 
-# 第 19.1 發行版本{#release-19-1}
+# 19.1 發行版本{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) 版本 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
+## ![](assets/do-not-localize/limited_2.png) 發行版本 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
 
 _2020年12月16日_
 
@@ -25,7 +25,7 @@ _2020年12月16日_
 >
 > * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
 > * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
+> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)具有促銷活動的舊式驗證模式將於2021年11月30日&#x200B;****&#x200B;淘汰。
 
 
 
@@ -53,7 +53,7 @@ _2020年12月16日_
 
 在Linux上，nlserver服務啟動現在使用系統單元，而不是/etc/init.d/nlserver6指令碼。 在安裝19.1.8軟體包時，會自動執行到新啟動方案的遷移。 /etc/init.d/nlserver6仍然提供，但是用於與nlserver服務（啟動、重新啟動、停止等）交互，建議您直接使用systemctl命令。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
 _2020 年 9 月 15 日_
 
@@ -83,7 +83,7 @@ _2020 年 9 月 15 日_
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
 * 修正在&#x200B;**排程器**&#x200B;工作流程活動中設定時間時，導致選擇錯誤時區的回歸。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -99,7 +99,7 @@ _2019年10月3日_
 * 修正Mid-Sourcing伺服器無法處理某些訊息的問題。 (NEO-12395)
 * 修正無法充分使用SQL資料管理活動（缺少名為右的「SQL資料管理」）的問題。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _2019年8月13日_
 
@@ -121,7 +121,7 @@ _2019年8月13日_
 >19.1.4金級標準發行列在此[頁](../../rn/using/gold-standard.md)中。
 
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _2019年6月21日_
 
@@ -137,7 +137,7 @@ _2019年6月21日_
 * 現在，我們允許在匯入工作流程期間刪除在Microsoft Dynamics中建立的虛擬記錄。
 * 改進使用內部帳戶時執行安全區套件的權限。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1 - Build 9026{#release-19-1-build-9026}
 
 _2019年5月30日_
 
