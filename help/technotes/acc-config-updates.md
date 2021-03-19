@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 849a95c718f9dc58aeabc8a49d3bf8290ea79b86
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 7%
@@ -25,6 +25,7 @@ ht-degree: 7%
 >[!NOTE]
 >
 >如需這些變更的任何問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+
 
 ## 安全性更新
 
@@ -101,7 +102,7 @@ Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30�
 
 ## 與Experience Cloud觸發器整合
 
-舊版驗證服務已到期。 觸發器整合驗證（最初是根據存取管道的oAuth驗證設定）已移至Adobe I/O。它將於2021年4月30日&#x200B;**退休。**[進一步瞭解](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
+舊版驗證服務已到期。 觸發器整合驗證原本是以oAUTH驗證設定為基礎，以存取管線，現在已移至Adobe I/O。它將於2021年11月30日&#x200B;**退休。**[進一步瞭解](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
 
 **您受影響嗎？**
 
