@@ -1,29 +1,32 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 第 18.6 發行版本
-description: 第 18.6 發行版本
+title: Campaign 18.6發行說明
+description: Campaign 18.6的發行說明
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '803'
 ht-degree: 6%
 
 ---
 
 
-# 第 18.6 發行版本{#release-18-6}
+# 18.6 發行版本{#release-18-6}
 
-## 版本 18.6.2 - Build 8949{#release-18-6-3-build-8949}
+## 發行版本 18.6.2 - Build 8949{#release-18-6-3-build-8949}
 
 2018年8月22日
 
 >[!CAUTION]
 >
->這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或與[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)聯絡。
 
 **新增功能？**
 
@@ -37,7 +40,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 查詢條帶<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDA Teradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每次Campaign使用者對Teradata資料庫執行查詢時，Adobe Campaign現在都能傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，Teradata管理員便可用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">相關的文件</a>，以瞭解詳情。</p> </td>
+   <td> <p>當多個促銷活動使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢頻段（金鑰／值配對）。 每當促銷活動使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在可以傳送與使用者相關的中繼資料。 例如，這些包含在索引鍵和值清單中的資料，便可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">相關的文件</a>，以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -60,9 +63,9 @@ ht-degree: 6%
 
 查詢色帶
 
-特定金鑰（PROXYUSER或PROXYROLE）可用來將Teradata使用者或角色與促銷活動使用者建立關聯。 已新增使用此代理用戶／角色的權限。 您需要將GRANT CONNECT通過訪問權限添加到資料庫帳戶（在Teradata外部帳戶中定義）。
+特定金鑰（PROXYUSER或PROXYROLE）可用來將Teradata使用者或角色與促銷活動使用者建立關聯。 已新增使用此代理用戶／角色的權限。 您需要通過對資料庫帳戶(在Teradata外部帳戶中定義的帳戶)的訪問權限添加GRANTCONNECT。
 
-Teradata外部帳戶中已新增一個標籤。 **[!UICONTROL Query banding]**&#x200B;標籤包含下列選項：
+已在Teradata外部帳戶中新增標籤。 **[!UICONTROL Query banding]**&#x200B;標籤包含下列選項：
 
 * **[!UICONTROL Active]**:選中此框以激活特徵。
 * **[!UICONTROL Default]**:輸入預設查詢帶條，如果用戶沒有關聯的查詢帶條，則將使用該帶條。如果沒有定義預設查詢帶，則沒有關聯查詢帶的用戶將無法使用Teradata。
@@ -73,7 +76,7 @@ Teradata外部帳戶中已新增一個標籤。 **[!UICONTROL Query banding]**&#
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## 版本 18.6 - Build 8947{#release-18-6-build-8947}
+## 發行版本 18.6 - Build 8947{#release-18-6-build-8947}
 
 2018年6月25日
 
@@ -97,7 +100,7 @@ Teradata外部帳戶中已新增一個標籤。 **[!UICONTROL Query banding]**&#
   </tr> 
   <tr> 
    <td> 支援Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign現在與Windows Server 2016相容。 請參閱<a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">促銷活動經典相容性矩陣</a>。<br /> </td> 
+   <td> Adobe Campaign現在與Windows Server 2016相容。 請參閱<a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic相容性表</a>。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -118,9 +121,9 @@ decryptPassword
 
 檔案API
 
-對於新安裝，透過檔案API的資料夾存取限制為&#x200B;**var**、**sftp**&#x200B;和Adobe Campaign的暫存資料夾。
+對於新安裝，通過檔案API訪問資料夾的限制為&#x200B;**var**、**sftp**&#x200B;和Adobe Campaign的臨時資料夾。
 
-對於現有客戶，檔案API無法再存取Adobe Campaign的&#x200B;**conf**&#x200B;資料夾。 **XtkSecurity_Disable_JSFileSandboxing**&#x200B;相容性選項由配置添加，預設情況下激活，允許您繼續訪問其他資料夾。 如果您想要限制對&#x200B;**var**、**sftp**&#x200B;和Adobe Campaign臨時資料夾的存取，請停用選項。
+對於現有客戶，檔案API無法再訪問Adobe Campaign的&#x200B;**conf**&#x200B;資料夾。 **XtkSecurity_Disable_JSFileSandboxing**&#x200B;相容性選項由配置添加，預設情況下激活，允許您繼續訪問其他資料夾。 如果您想要限制對&#x200B;**var**、**sftp**&#x200B;和Adobe Campaign的臨時資料夾的存取，請停用選項。
 
 **修補程式**
 
