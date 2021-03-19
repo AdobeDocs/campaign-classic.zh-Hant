@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 第 18.4 發行版本
-description: 第 18.4 發行版本
-audience: rn
-content-type: reference
-topic-tags: latest-release-notes
+title: Campaign 18.4發行說明
+description: Campaign 18.4的發行說明
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2267'
 ht-degree: 7%
 
 ---
 
 
-# 第 18.4 發行版本{#release-18-4}
+# 18.4 發行版本{#release-18-4}
 
-## 版本 18.4.5 - Build 8937{#release-18-4-5-build-8937}
+## 發行版本 18.4.5 - Build 8937{#release-18-4-5-build-8937}
 
 2018年11月21日
 
@@ -34,17 +34,17 @@ ht-degree: 7%
 * 修正傳送推播通知時的效能問題。 (NEO-11787)
 * 修正網頁追蹤無法用於&quot;com.au&quot;網域(NEO-4385)的問題。
 * 修正使用複雜工作流程時可能發生的用戶端凍結問題。 (NEO-11847)
-* 修正在選擇特定方案的元素後儲存新傳送時的Oracle錯誤(NEO-11682)。
-* 修正查詢包含重音字元的欄位(FDA/Teradata)時的問題。 現在，外部帳戶允許您更改用於與Teradata驅動程式通信的編碼。 (NEO-11818).
+* 修正在選取特定架構的元素後儲存新傳送時的Oracle錯誤(NEO-11682)。
+* 修正查詢包含重音字元的欄位時的問題(FDA/Teradata)。 外部帳戶現在允許您更改用於與Teradata驅動程式通信的編碼。 (NEO-11818).
 * 修正在推播通知中傳送其他變數中的URL時，可能導致行動應用程式收到格式錯誤或資料不正確的追蹤問題。 (NEO-11468、NEO-11960)
 * 修正當使用1:N連結的值分佈時，造成顯示問題的問題。 (NEO-11820)
-* 修正Teradata 16無法使用大量載入的問題。
-* 已增加Teradata上時間戳記的緩衝區大小，以避免與15.10驅動程式的系結問題。
+* 修正批量載入無法在Teradata16上運作的問題。
+* 增加Teradata上時間戳記的緩衝區大小，以避免與15.10驅動程式發生系結問題。
 * 已改善可能導致錯誤等級問題的長名稱索引管理。
 * 已改善子代停用處理(MTA)期間的共用記憶體可用時間。
 * 修正Apache（追蹤）中的潛在死鎖。
 
-## 版本 18.4.4 - Build 8936{#release-18-4-4-build-8936}
+## 發行版本 18.4.4 - Build 8936{#release-18-4-4-build-8936}
 
 2018年8月1日
 
@@ -59,9 +59,9 @@ ht-degree: 7%
 * 修正在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流程活動中使用儲存在XML中的資料時的問題。 (NEO-10816)
 * 修正使用build 8935執行伺服器升級時的問題。
 * 修正當&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流程活動未完整設定時，在設定檔記錄檔中顯示無用錯誤的問題。
-* FDA Teradata:修正SQL表格中自動遞增欄位和索引的問題。
+* FDATeradata:修正SQL表格中自動遞增欄位和索引的問題。
 
-## 版本 18.4.3 - Build 8935{#release-18-4-3-build-8935}
+## 發行版本 18.4.3 - Build 8935{#release-18-4-3-build-8935}
 
 2018年6月22日
 
@@ -75,7 +75,7 @@ ht-degree: 7%
 * 修正從行銷實例同步選件空間至互動實例的問題。 (NEO-11162)
 * 改進配置期間長名稱索引的管理
 
-## 版本 18.4.2 - Build 8932{#release-18-4-2-build-8932}
+## 發行版本 18.4.2 - Build 8932{#release-18-4-2-build-8932}
 
 2018年5月22日
 
@@ -86,7 +86,7 @@ ht-degree: 7%
 * 修正使用彈回郵件伺服器時，inMail程式可能會發生的效能問題。 (NEO-10641)
 * 修正在升級超過1000個結構描述時可能發生的資料庫升級問題。
 
-## 版本 18.4 - Build 8931{#release-18-4-build-8931}
+## 發行版本 18.4 - Build 8931{#release-18-4-build-8931}
 
 2018年4月24日
 
@@ -102,15 +102,15 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 歐盟通用資料保護規則(GDPR)<br /> </td> 
-   <td> <p>GDPR是歐盟(EU)的新隱私權法，協調並現代化將於2018年5月25日生效的資料保護要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign中已提供的隱私權功能（包括同意管理、資料保留設定和使用者角色）外，我們也將利用這個機會，以資料處理者的身分，加入其他功能，以協助您做好準備，做為特定GDPR要求的資料掌控者：</p> 
+   <td> <p>GDPR是歐盟(EU)的新隱私權法，協調並現代化將於2018年5月25日生效的資料保護要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign已具備的隱私權功能（包括同意管理、資料保留設定和使用者角色）外，我們還將利用這個機會作為資料處理者加入額外的功能，以協助您做好準備，以因應特定GDPR要求：</p> 
     <ul> 
-     <li> <p>存取權：允許資料主體接收資料掌控者所擷取的個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
-     <li> <p>刪除權：資料主體有權清除資料掌控者擷取的個人資料，可能包括Adobe Campaign中儲存的資料。</p> </li> 
+     <li> <p>存取權：允許資料主體接收資料掌控者所擷取的個人資料副本，可能包括儲存在Adobe Campaign的資料。</p> </li> 
+     <li> <p>刪除權：資料主體有權清除資料掌控者擷取的個人資料，可能包括儲存在Adobe Campaign的資料。</p> </li> 
     </ul> 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">相關的文件</a>，以瞭解詳情。<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用中的設定檔案<br /> </td> 
-   <td> <p>Adobe Campaign現在提供使用中的設定檔清單，並透過專屬的工作流程每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">相關的文件</a>，以瞭解詳情。</p> </td> 
+   <td> <p>Adobe Campaign現在提供作用中個人檔案的清單，透過專屬的工作流程每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">相關的文件</a>，以瞭解詳情。</p> </td> 
   </tr> 
   <tr> 
    <td> Android推播連接器增強功能<br /> </td> 
@@ -128,13 +128,13 @@ ht-degree: 7%
 
 **功能改善**
 
-* **LINE通道——體系結構增強**:與Adobe Campaign中的所有其他通道一樣，LINE通道現在支援所有部署類型：代管、混合式和內部部署。
+* **LINE通道——體系結構增強**:與Adobe Campaign的所有其他通道一樣，LINE通道現在支援所有部署類型：代管、混合式和內部部署。
 * **序列自動產生**:ID產生機制已增強，以增加具有大量物件之促銷活動例項的期限。如需詳細資訊，請參閱此[technote](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html)。
 
 **其他變更**
 
 * 使用命令行可以使用新模式導入包，允許循環從屬關係（對於大型包不建議使用）。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-8979)
-* 已改善Teradata中大量資料載入的效能，並修正無法顯示記錄檔中處理之資料正確值的問題。 (NEO-10429)
+* 已改善Teradata中大量資料載入的效能，並修正無法顯示記錄中處理之資料正確值的問題。 (NEO-10429)
 * 從Audience Manager匯入觀眾現在可處理分割檔案。 以前，只有區段的最後一個檔案是由importSharedAudience技術工作流程匯入的。 (NEO-10156)
 * 在Windows上，促銷活動伺服器預設安裝路徑已變更。 啟動64位元版本設定時，預設安裝路徑現在為：**C:\Program Files\Adobe\Adobe Campaign Classic v7**&#x200B;而非&#x200B;**C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * 預設MX規則已增強，加入更多網域並最佳化總處理能力。
@@ -142,8 +142,8 @@ ht-degree: 7%
 * weka.jar過時的程式庫已移除，OpenSSL程式庫已更新，以進行安全性最佳化。
 * 改善帳單技術工作流程，以保護例項效能。
 * 管理員設定或重設任何運算子密碼的能力已恢復。 若要這麼做，請在運算子上按一下滑鼠右鍵，選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。 如需詳細資訊，請參閱[相關的文件](../../production/using/lost-password.md)，以瞭解詳情。
-* 為支援Adobe Target中的新多租賃功能，現在在設定選項和外部帳戶以與Target整合時，可將新的&quot;at_property&quot;參數新增至URL。 此參數的值可在Adobe Target中找到，並將在Campaign執行對Target的呼叫時供其使用。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
-* 您現在可以指定在按一下Adobe Target所提供的影像時開啟的預設登陸頁面。 以前，按一下該影像會在建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
+* 為支援Adobe Target的新多租賃功能，現在在設定選項和外部帳戶以與Target整合時，可將新的&quot;at_property&quot;參數新增至URL。 此參數的值可在Adobe Target找到，且在執行對Target的呼叫時，促銷活動將會使用。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
+* 您現在可以指定在按一下Adobe Target提供的影像時開啟的預設登陸頁面。 以前，按一下該影像會在建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
 * 已在外部帳戶中添加「啟用SMPP跟蹤&#x200B;**」複選框以強制跟蹤輸出。**&#x200B;如需詳細資訊，請參閱[相關的文件](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)，以瞭解詳情。
 
 **技術演變**
@@ -194,8 +194,8 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 **修補程式**
 
 * 修正從Adobe Campaign Standard複製傳送和追蹤記錄檔至Adobe Campaign Classic時的同步問題。 (NEO-10023)
-* 修正在快速載入作業失敗後，ETL工作流程繼續執行時，Teradata中錯誤和記錄表的處理問題。 現在，每次工作流恢復時，錯誤和日誌表都會正確刪除。 (NEO-10672)
-* 修正當安裝FDA封裝時，自動安裝Hive封裝（Hadoop需要）的Postupgrade問題。 (NEO-10592)
+* 修正在快速載入作業失敗後，ETL工作流程繼續執行時，在Teradata中處理「錯誤」和「記錄檔」表格的問題。 現在，每次工作流恢復時，錯誤和日誌表都會正確刪除。 (NEO-10672)
+* 修正當安裝FDA封裝時，自動安裝Hive封裝(Hadoop需要)的Postupgrade問題。 (NEO-10592)
 * 修正將無效網域視為&#x200B;**Not defined**&#x200B;錯誤的錯誤。 (NEO-10248)
 * 修正傳送Android推播傳送時，deliveryLogStats表格中重複記錄的問題。 (NEO-10234)
 * 修正可能導致某些條形碼格式無法由條形碼掃描器讀取的問題。 (NEO-10125)
@@ -225,7 +225,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * 修正資料管理中無法在類似擴充的工作流程活動上建立索引的回歸。
 * 修正建立標題為@id的外部資源時可能發生的問題
 * 修正透過FTP伺服器上傳壓縮檔案或上傳檔案名稱中含萬用字元的檔案時，可能會發生的問題。
-* 修正在「促銷活動標準」中建立之外部自訂資源中，長基本類型枚舉的問題。
+* 修正外部自訂資源中建立至Campaign Standard的長基本類型列舉問題。
 * 修正即使與提供者的連線失敗，也可能導致SMS遺失的問題。
 * 修正SMTP連線無限期卡住的錯誤。
 * 修正在使用LINE對應或篩選和定位結構不同時，訊息準備期間壓力類型規則的問題。
