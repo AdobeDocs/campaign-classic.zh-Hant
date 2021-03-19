@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
+source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 7%
@@ -47,7 +47,7 @@ ht-degree: 7%
 
 您必須升級至上述任一較新的版本。
 
-* 身為混合型客戶，Adobe會將中端採購執行個體升級至新版本，並強烈建議您也升級其行銷執行個體。
+* 身為混合型客戶，Adobe會將行銷實例升級至新版本，並強烈建議您也升級其行銷實例。
 
    新建版本至少與Campaign Classic17.9版本相容，但為避免任何安全性差距，Adobe強烈建議將所有執行個體升級為新建版本。 
 
