@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1027'
 ht-degree: 7%
 
 ---
@@ -72,11 +72,11 @@ ht-degree: 7%
 
 Adobe身分服務(IMS)將停止支援舊版Internet Explorer，從2021年6月30日&#x200B;**開始。**[進一步瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
-已更新促銷活動用戶端主控台，以確保與下列促銷活動版本中的AdobeIMS相容：
+已更新促銷活動用戶端主控台，以確保與AdobeIMS相容。
 
 **您受影響嗎？**
 
-如果您透過Adobe ID](../integrations/using/about-adobe-id.md)透過Adobe身分服務(IMS)連線至促銷活動[，則必須升級至下列其中一個新版本：
+如果您透過Adobe ID](../integrations/using/about-adobe-id.md)連線至促銷活動，透過AdobeIdentity Management服務(IMS)，必須升級至下列其中一個新版本：[
 
 * 金標11 [進一步了解](../rn/using/gold-standard.md)
 * Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
