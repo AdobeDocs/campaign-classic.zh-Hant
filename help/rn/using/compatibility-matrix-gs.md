@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gold Standard 相容性矩陣
+title: Campaign Gold Standard的相容性矩陣
 description: Gold Standard 版本的 Campaign Classic相容性矩陣
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 9d1f5561098bb867b8a62e8bcdb14f60829be1ea
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 100%
+source-wordcount: '520'
+ht-degree: 98%
 
 ---
 
