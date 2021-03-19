@@ -1,29 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gold Standard 發行
-description: Campaign Classic Gold Standard 發行說明
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Gold Standard發行說明
+description: Campaign Classic金標發行說明
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 88%
+source-wordcount: '1055'
+ht-degree: 85%
 
 ---
 
 
 # Gold Standard 版本{#gold-standard}
 
-Gold Standard 是 Campaign Classic 的長期支援版本。作為託管 Gold Standard 使用者，您無需採取任何操作便可透過最新穩定版本，自動受益於 Gold Standard 升級。內部部署和混合客戶也可以受益於 Gold Standard 發行版本。
-
-如果您從舊的版本編號移轉出，我們建議您先升級至此版本。
-
-本頁面列出的 Gold Standard 發行版本。
-
-如需 Campaign Gold Standard 方案的詳細資訊，請[參閱本文章](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)。
+本頁面列出的 Gold Standard 發行版本。在本頁](gs-overview.md)中進一步瞭解促銷活動金級標準[。
 
 ## ![](assets/do-not-localize/green_2.png)Gold Standard 第 11 發行版本{#gs-11}
 
@@ -46,7 +40,7 @@ _2020年12月22日_
 >
 > * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
 > * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
+> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)具有促銷活動的舊式驗證模式將於2021年11月30日&#x200B;****&#x200B;淘汰。
 
 >
 >
