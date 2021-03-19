@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 第 18.10 發行版本
-description: 第 18.10 發行版本
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Campaign 18.10發行說明
+description: Campaign 18.10的發行說明
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2375'
 ht-degree: 7%
 
 ---
 
 
-# 第 18.10 發行版本{#release-18-10}
+# 18.10 發行版本{#release-18-10}
 
-## 版本 18.10.6 - Build 8985{#release-18-10-6-build-8985}
+## 發行版本 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
@@ -29,7 +29,7 @@ ht-degree: 7%
 * 改進使用內部帳戶時執行安全區套件的權限。
 * 修正可能導致像片記錄檔錯誤的問題。 (NEO-8978)
 
-## 版本 18.10.5 - Build 8984{#release-18-10-5-build-8984}
+## 發行版本 18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
@@ -39,7 +39,7 @@ ht-degree: 7%
 * 已移除「工作流程熱圖」中的10,000個記錄限制，以修正遺失的資料問題。 (NEO-12329)
 * 修正在擴充工作流程活動中使用「保留主集的所有其他資料」選項的問題。 (NEO-13291)
 
-## 版本 18.10.4 - Build 8983{#release-18-10-4-build-8983}
+## 發行版本 18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
@@ -49,16 +49,16 @@ ht-degree: 7%
 * 修正HTTPRequest API未等待所有回呼完成的問題。 (NEO-12628)
 * 已在抵用券臨時表格中新增索引，以最佳化傳送。 (NEO-12437)
 * 修正分析日文(.JP)網域的目標收件者訊息時的問題。 (NEO-12246)
-* 在Analytics整合中，現在允許擷取含%字元的AAM區段資料。 (NEO-12025)
+* 在Analytics整合中，現在允許擷AAM取含有%字元的區段資料。 (NEO-12025)
 * 修正使用HTTP2傳送推播通知時的Tomcat當機問題。 (NEO-12701)
 
-## 版本 18.10.3 - Build 8981{#release-18-10-3-build-8981}
+## 發行版本 18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
 >[!CAUTION]
 >
->這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或與[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)聯絡。
 
 **功能改善**
 
@@ -70,19 +70,19 @@ ht-degree: 7%
 * 修正資料庫結構更新導致NmsRecipient上新索引遺失的問題。
 * 修正當使用傳送之主要目標之外部檔案中的「定義」選項時，可能會發生的主控台當機問題。 (NEO-12349)
 * 已修正數次InMail當機。
-* 修正使用「更新」資料工作流程活動來刪除FDA Teradata資料庫中儲存的記錄時的問題。
+* 修正使用「更新」資料工作流程活動來刪除FDATeradata資料庫中儲存的記錄時的問題。
 * 已修正密鑰管理中的不一致問題。
 * 修正將欄位輸入為：xml=true和calculated=true
 * 修正在行動應用程式上傳送推播通知時的字元逸出問題。
 * 修正Mid-Sourcing外部帳戶無法從FDA切換至SOAP同步方法的問題。
 
-## 版本 18.10.2 - Build 8978{#release-18-10-2-build-8978}
+## 發行版本 18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
 >[!CAUTION]
 >
->這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或與[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)聯絡。
 
 **功能改善**
 
@@ -98,13 +98,13 @@ ht-degree: 7%
 * 修正Workflow HeatMap中計算工作流持續時間的問題。
 
 
-## 版本 18.10 - Build 8977{#release-18-10-build-8977}
+## 發行版本 18.10 - Build 8977{#release-18-10-build-8977}
 
 2018年11月5日
 
 >[!CAUTION]
 >
->這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>這個建築已經召回。 請[升級至最新版本](../../production/using/build-upgrade.md)或與[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)聯絡。
 
 **新增功能？**
 
@@ -118,7 +118,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 推播通知改進<br /> </td> 
-   <td> Adobe Campaign中已實作許多推播通知的增強功能：<br /> 
+   <td> Adobe Campaign已針對推播通知實作多項增強功能：<br /> 
     <ul> 
      <li> <p>在iOS中追蹤無訊息通知 </p> </li> 
      <li> <p>在iOS中實作註冊呼叫的意見回應</p> </li> 
@@ -131,7 +131,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 工作流監控<br /> </td> 
-   <td> <p>有了新的Adobe Campaign Workflow HeatMap，平台管理員可快速以圖形方式呈現所有並行工作流程，讓他們可以監控執行個體的負載情況，並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
+   <td> <p>使用全新的Adobe Campaign工作流熱圖，平台管理員可快速以圖形化方式呈現所有併發工作流，以便監控實例的負載並據此規劃工作流。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -147,12 +147,12 @@ ht-degree: 7%
 **功能改善**
 
 * 現在針對 Campaign Classic API 推出[專屬頁 面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
-* 現在支援PostgreSQL 10、Debian 9和Teradata 16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
+* 現在支援PostgreSQL 10、Debian 9和Teradata16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
 * 建立SFTP連線時，您現在可以使用代理驗證。 有關詳細資訊，請參閱[詳細說明檔案](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)(NEO-9868)
 * 當使用直接郵件傳送模板建立單次傳送時，**日期計算公式**&#x200B;選項現在可用於傳送屬性。 (NEO-9792)
 * Cookie追蹤和Web應用程式的網域名稱管理已改善。 如需詳細資訊，請參閱下方的「技術演變」一節。
-* Adobe Marketing Cloud共用資產在傳送或登陸頁面中的匯入方式已改善安全性與效能。
-* 行動頻道外部帳戶中有新的核取方塊，可啟用記錄檔中的詳細SMPP追蹤，讓Adobe Campaign介面直接存取此輸出。
+* Adobe Marketing Cloud在交付或登陸頁面中的共用資產的導入在安全性和效能方面都得到改進。
+* Mobile channel外部帳戶中有一個新的複選框，用於在日誌檔案中啟用詳細的SMPP跟蹤，使此輸出可直接從Adobe Campaign介面訪問。
 * 在廣播中，現在可以區分每小時最大連接數和最大消息數。 當達到限制時，便可知道為什麼吞吐量受到限制。 以前，這兩種情況都會套用相同的訊息（「符合配額」）。
 * 現在，您可以指定從池中獲取連接時要執行的SQL指令碼。 此指令碼可用於設定預設模式。 此指令碼將在查詢條帶化後應用。 (NEO-11256)
 * 促銷活動SDK不再儲存使用者ID以符合我們的PII規定。 資料現在會儲存為雜湊。
@@ -213,22 +213,22 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 * 修正編輯查詢以新增抵用券至傳送時發生的錯誤。 (NEO-11037)
 * 修正報表中，無論選取哪個匯整運算子，圖表都會計算值總和的問題。 (NEO-10913)
 * 當&quot;request.scheme&quot;函式已過時時，它已從JSAPI檔案中移除。 (NEO-10828)
-* 修正某些具有特定時區設定的使用者無法登入Adobe Campaign的問題。 (NEO-10712)
+* 修正某些具有特定時區組態的使用者無法登入Adobe Campaign的問題。 (NEO-10712)
 * 修正使用Extended一般SMPP連接器設定行動頻道外部帳戶時發生的問題：如果您為接收器指定了不同的參數，則發射器會錯誤地使用這些參數而不是自己的參數。
 * 修正在設定壓力規則的頻率時，排程的傳送會失敗的問題，因為傳送會在第一次仲裁後持續重新計算。 (NEO-10016)
 * 修正在應用程式池回收程式（在nlsrvmod.dll程式庫中）期間，造成IIS網站伺服器當機的問題。 (NEO-10862)
 * 修正無法在&#x200B;**描述檔和Target**&#x200B;畫面中搜尋收件者的問題。 (NEO-8228)
 * 修正在存取「事件歷史記錄」檔案夾時，若記錄數量較多，可能導致逾時錯誤的問題。 (NEO-11738)
 * 修正可能導致LINE傳送收件者錯誤地傳回為「無法存取」的問題。 (NEO-10833)
-* 修正在Oracle上執行具有附加列的工作流查詢時的問題。 (NEO-11615)
+* 修正在Oracle上執行附加列的工作流程查詢時的問題。 (NEO-11615)
 * 已對連接池進行了增強，以確保關閉的連接不會在連接池中保存太長時間。 (NEO-11392)
-* 修正使用定位工作流程活動(查詢、資料載入(RDBMS)等)時的問題 通過FDA連接到包含UTF8字元（在表名、欄位名等）的外部Oracle表 其中也包含具有系統生成的預設約束名的主鍵約束。 (NEO-10714)
+* 修正使用定位工作流程活動(查詢、資料載入(RDBMS)等)時的問題 透過FDA連線至包含UTF8字元的外部Oracle表（在表名、欄位名稱等） 其中也包含具有系統生成的預設約束名的主鍵約束。 (NEO-10714)
 * 修正無法刪除傳送之HTML內容的問題。 (NEO-11327)
 * 修正促銷活動執行後，直接郵件中XML和CSV檔案預覽的問題。 (NEO-11290)
 * 修正在擴充工作流程活動中排序資料的問題。 (NEO-11394)
 * 修正在自訂報表中排序資料的問題。 (NEO-10896)
-* 修正搭配使用useVault設定和Teradata時導致錯誤的問題。 (NEO-11399)
-* 修正刪除多個查詢行時，造成Adobe Campaign用戶端主控台當機的問題。 (NEO-10744)
+* 修正使用useVault設定搭配Teradata時導致錯誤的問題。 (NEO-11399)
+* 修正刪除多個查詢行時造成Adobe Campaign客戶端控制台當機的問題。 (NEO-10744)
 * 修正傳送直接郵件時，在某些情況下無法套用壓力規則的問題。 (NEO-9004)
 * 修正使用「資料載入」活動匯入資料類型為「時間」的欄時發生的問題：即使在移除後，時間分隔符也會重設。 (NEO-10743)
 * 修正編輯循環傳送時，「傳送」資料夾無法從「傳送」屬性的「執行」資料夾清單中顯示的問題。 (NEO-11094)
