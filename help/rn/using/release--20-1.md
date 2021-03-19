@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 第 20.1 發行版本
-description: 第 20.1 發行版本
-audience: rns
-content-type: reference
-topic-tags: campaign-release-notes, latest-release-notes
+title: 20.1 發行版本
+description: 20.1 發行版本
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1439'
 ht-degree: 10%
 
 ---
 
 
-# 第 20.1 發行版本{#release-20-1}
+# 20.1 發行版本{#release-20-1}
 
-## ![](assets/do-not-localize/limited_2.png) 版本 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png) 發行版本 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
 
 _2020年12月23日_
 
@@ -32,19 +32,19 @@ _2020年12月23日_
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.1.3 - Build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.1 - Build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.1 - Build 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
