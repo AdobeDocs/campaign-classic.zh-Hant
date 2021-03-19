@@ -2,17 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Campaign Classic 已棄用和移除的功能
-description: 本頁列出 Adobe Campaign Classic 已棄用和已移除的功能
-audience: rn
-content-type: reference
-topic-tags: campaign-classic-deprecated-features
-internal: n
-snippet: y
+description: 本頁列出Adobe Campaign Classic已過時和已移除的功能
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 94%
+source-wordcount: '1716'
+ht-degree: 93%
 
 ---
 
