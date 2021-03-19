@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 第 19.2 發行版本
-description: 第 19.2 發行版本
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: 19.2 發行版本
+description: Campaign 19.2的發行說明
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1418'
 ht-degree: 11%
 
 ---
 
 
-# 第 19.2 發行版本{#release-19-2}
+# 19.2 發行版本{#release-19-2}
 
-## ![](assets/do-not-localize/limited_2.png) 版本 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
+## ![](assets/do-not-localize/limited_2.png) 發行版本 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
 
 _2020年12月23日_
 
@@ -33,7 +33,7 @@ _2020年12月23日_
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _2020年2月7日_
 
@@ -42,7 +42,7 @@ _2020年2月7日_
 * 修正因實施SSL認證而導致使用者連線在Windows伺服器上失敗的回歸問題。 (NEO-20629)
 * 修正在&#x200B;**關於**&#x200B;功能表中顯示錯誤版本標籤號碼的問題。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
