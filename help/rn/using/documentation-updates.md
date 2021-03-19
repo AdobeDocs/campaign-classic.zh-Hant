@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic 文件更新
-description: 此頁面列出 Adobe Campaign Classic 各版本的所有新功能及文件更新。
-audience: rns
-content-type: reference
-topic-tags: latest-documentation-updates
+description: 本頁列出了Adobe Campaign Classic文檔中的所有新功能和更新
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '4193'
-ht-degree: 97%
+source-wordcount: '4194'
+ht-degree: 96%
 
 ---
 
