@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # 命令列{#command-lines}
 
-以下命令行要求能夠訪問應用程式伺服器。 對於Adobe代管的部署，這些命令只能由Adobe執行。
+以下命令行要求能夠訪問應用程式伺服器。 對於由Adobe托管的部署，這些命令只能由Adobe執行。
 
 ## 建立實例{#creating-an-instance}
 
@@ -42,7 +42,7 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 **`[rdbms]`**&#x200B;參數可能有下列值：
 
 * **postgresql**:對於PostgreSQL,
-* **oracle**:對於Oracle,
+* **oracle**:oracle,
 * **mssql**:對於Microsoft SQL Server,
 * **DB2**:用於DB2引擎。
 
