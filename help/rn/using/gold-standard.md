@@ -7,15 +7,15 @@ feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: 0ce968d8acdd0aea0211da248a085f05dfe70ae7
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 85%
+source-wordcount: '1056'
+ht-degree: 84%
 
 ---
 
 
-# Gold Standard 版本{#gold-standard}
+# Gold Standard發行說明{#gold-standard}
 
 本頁面列出的 Gold Standard 發行版本。在本頁](gs-overview.md)中進一步瞭解促銷活動金級標準[。
 
