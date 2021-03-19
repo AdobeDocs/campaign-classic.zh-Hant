@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 6%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->如果您使用舊版的觸發器整合（透過oAuth驗證）,**您必須依照**&#x200B;下方所述移至Adobe I/O。 舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。[進一步瞭解](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
+>如果您使用舊版的觸發器整合（透過oAuth驗證）,**您必須依照**&#x200B;下方所述移至Adobe I/O。 含促銷活動的舊版驗證模式將於2021年11月30日淘汰。 [進一步了解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >請注意，在移至[!DNL Adobe I/O]期間，有些傳入的觸發器可能會遺失。
 
