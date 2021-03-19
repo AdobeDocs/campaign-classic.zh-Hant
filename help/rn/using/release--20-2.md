@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 第 20.2 發行版本
 description: 第 20.2 發行版本
-audience: rns
-content-type: reference
-topic-tags: campaign-release-notes, latest-release-notes
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2562'
 ht-degree: 92%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/green_2.png) 版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
 _2020年12月22日_
 
@@ -27,7 +27,7 @@ _2020年12月22日_
 >
 > * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
 > * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)舊版驗證模式將於 2021 年 4 月 30 日&#x200B;****&#x200B;淘汰。
+> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)具有促銷活動的舊式驗證模式將於2021年11月30日&#x200B;****&#x200B;淘汰。
 
 
 
