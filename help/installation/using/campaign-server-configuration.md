@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 1%
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Campaign 伺服器設定{#campaign-server-configuration}
 
-以下各節詳細說明必備的伺服器組態，以確保Adobe Campaign在大部分設定中都能有效運作。
+以下各節詳細介紹了強制性伺服器配置，這些配置將保證Adobe Campaign對大多數設定的高效運行。
 
 [設定促銷活動伺服器](../../installation/using/configuring-campaign-server.md)中提供其他設定。
 
 >[!NOTE]
 >
->伺服器端組態只能由Adobe針對Adobe代管的部署執行。 要進一步瞭解不同的部署，請參閱[代管模型](../../installation/using/hosting-models.md)部分或[功能矩陣](../../installation/using/capability-matrix.md)。
+>伺服器端組態只能透過AdobeAdobe代管的部署來執行。 要進一步瞭解不同的部署，請參閱[代管模型](../../installation/using/hosting-models.md)部分或[功能矩陣](../../installation/using/capability-matrix.md)。
 
 ## 內部識別碼{#internal-identifier}
 
@@ -51,12 +51,12 @@ Confirmation: XXXX
 
 ## 配置檔案{#configuration-files}
 
-設定檔案會儲存在Adobe Campaign安裝資料夾的&#x200B;**conf**&#x200B;資料夾中。 配置分佈在兩個檔案上：
+配置檔案儲存在Adobe Campaign安裝資料夾的&#x200B;**conf**&#x200B;資料夾中。 配置分佈在兩個檔案上：
 
 * **`config-<instance>.xml`** (其 **** 中instance是實例的名稱):實例的特定配置。如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
 * **serverConf.xml**:所有實例的常規配置。此檔案結合了Adobe Campaign伺服器的技術參數：這些會由所有例項共用。 以下詳細說明了其中一些參數。 請參閱檔案本身以查看所有可用參數。 此[部分](../../installation/using/the-server-configuration-file.md)中列出的不同節點和參數。
 
-您可以設定Adobe Campaign資料（記錄檔、下載、重新導向等）的儲存目錄（**var**&#x200B;目錄）。 若要這麼做，請使用&#x200B;**XTK_VAR_DIR**&#x200B;系統變數：
+您可以配置Adobe Campaign資料（日誌、下載、重定向等）的儲存目錄（**var**&#x200B;目錄）。 若要這麼做，請使用&#x200B;**XTK_VAR_DIR**&#x200B;系統變數：
 
 * 在Windows中，在&#x200B;**XTK_VAR_DIR**&#x200B;系統變數中指定以下值
 
@@ -70,9 +70,9 @@ Confirmation: XXXX
 
 ## 啟用進程{#enabling-processes}
 
-伺服器上的Adobe Campaign程式會透過&#x200B;**config-default.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**&#x200B;檔案啟用（和停用）。
+通過&#x200B;**config-default.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**&#x200B;檔案啟用（和禁用）伺服器上的Adobe Campaign進程。
 
-若要將變更套用至這些檔案，如果Adobe Campaign服務已啟動，您必須執行&#x200B;**nlserver config -reload**&#x200B;命令。
+要對這些檔案應用更改，如果啟動了Adobe Campaign服務，則必須運行&#x200B;**nlserver config -reload**&#x200B;命令。
 
 有兩種流程：多執行個體和單一執行個體。
 
@@ -80,7 +80,7 @@ Confirmation: XXXX
 
    可從&#x200B;**config-default.xml**&#x200B;檔案設定啟用。
 
-   宣告Adobe Campaign伺服器以存取用戶端主控台並用於重新導向（追蹤）:
+   聲明Adobe Campaign伺服器以訪問客戶端控制台和重定向（跟蹤）:
 
    ```
    vi nl6/conf/config-default.xml
@@ -122,6 +122,6 @@ Confirmation: XXXX
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-此檔案中可用的其他傳送參數顯示在[個人化傳送參數](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)中。
+此檔案中可用的其他傳送參數顯示在[個性化傳送參數](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)中。
 
 另請參閱[電子郵件傳遞能力](../../installation/using/email-deliverability.md)。
