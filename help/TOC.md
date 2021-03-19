@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 55%
 
 ---
@@ -651,7 +651,7 @@ ht-degree: 55%
       + [時區管理](installation/using/time-zone-management.md)
       + [安裝中間採購伺服器](installation/using/mid-sourcing-server.md)
    + 部署促銷活動（內部部署）{#initial-configuration}
-      + [關於初始配置](installation/using/about-initial-configuration.md)
+      + [關鍵步驟](installation/using/about-initial-configuration.md)
       + [建立例項並登入](installation/using/creating-an-instance-and-logging-on.md)
       + [建立和配置資料庫](installation/using/creating-and-configuring-the-database.md)
       + [設定促銷活動伺服器](installation/using/campaign-server-configuration.md)
