@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1035'
 ht-degree: 7%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->其他版本的全新Client Console即將推出。
+>此修正也位於最新版[19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039)、[19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082)和[20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126)中。 其他版本的全新Client Console即將推出。
 
 ## AdobeIdentity Management系統(IMS)更新
 
