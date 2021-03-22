@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1025'
 ht-degree: 7%
 
 ---
@@ -60,13 +60,13 @@ ht-degree: 7%
 
 ## 促銷活動用戶端主控台更新
 
-最新的Gold Standard 11建置版本修正了回歸，使Clien Console的某些元件無法使用，例如日期選擇器和影像管理在傳送中。 控制台升級是必備的。
+最新的Gold Standard 11建置版本修正了回歸，使用戶端主控台的某些元件無法使用，例如日期選擇器和影像管理在傳送中。 控制台升級是必備的。
 
 [進一步瞭解](../rn/using/gold-standard.md)。
 
 >[!NOTE]
 >
->此修正也位於最新版[19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039)、[19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082)和[20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126)中。 其他版本的全新Client Console即將推出。
+>此修正也適用於最新版[19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039)、[19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082)和[20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126)。
 
 ## AdobeIdentity Management系統(IMS)更新
 
