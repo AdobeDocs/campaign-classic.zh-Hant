@@ -7,9 +7,9 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '3134'
+source-wordcount: '3200'
 ht-degree: 20%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 20%
 # 19.1 發行版本{#release-19-1}
 
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
+
+_2021年3月22日_
+
+* 修正回歸，防止在傳送中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453、NEO-31454)
+
+**僅控制台升級是強制性的。不需要伺服器升級。**
+
+>[!NOTE]
+>
+> 連線至[Adobe軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有最終用戶[建議控制台更新。
 
 _2020年12月16日_
 
