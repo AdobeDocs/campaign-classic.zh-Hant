@@ -7,9 +7,9 @@ feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1505'
 ht-degree: 10%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 10%
 # 20.1 發行版本{#release-20-1}
 
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
+
+_2021年3月22日_
+
+* 修正回歸，防止在傳送中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453、NEO-31454)
+
+**僅控制台升級是強制性的。不需要伺服器升級。**
+
+>[!NOTE]
+>
+> 連線至[Adobe軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有最終用戶[建議控制台更新。
 
 _2020年12月23日_
 
