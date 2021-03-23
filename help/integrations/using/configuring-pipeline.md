@@ -6,9 +6,9 @@ description: 瞭解如何設定管線
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -28,34 +28,34 @@ ht-degree: 0%
 
 在開始此配置之前，請檢查您使用的是：
 
-* 最少20.3、20.2.4、19.1.8或Gold Standard 11
-* Adobe Analytics Standard版本
+* Adobe Campaign20.3、20.2.4、19.1.8或[!DNL Gold Standard]至少11個
+* Adobe Analytics Standard版
 
 您還需要：
 
-* Adobe I/O專案驗證
-* 有效的IMSOrgID,Experience Cloud客戶的識別碼，並新增Adobe Analytics
+* Adobe I/O項目驗證
+* 有效的IMSOrgID，即Experience Cloud客戶與Adobe Analytics的識別碼
 * a開發人員存取IMS組織
-* 觸發器設定在Adobe Analytics中完成
+* 觸發器配置在Adobe Analytics完成
 
 ## 驗證和配置檔案{#authentication-configuration}
 
-驗證是必要的，因為管道是由Adobe Experience Cloud代管。
+由於管道是在Adobe Experience Cloud代管，因此需要驗證。
 它使用一對公鑰和私鑰。 此程式與用戶／密碼功能相同，但更安全。
-透過Adobe I/O專案的Marketing Cloud支援驗證。
+通過Marketing Cloud項目支援Adobe I/O。
 
-## 步驟1:建立／更新Adobe I/O專案{#creating-adobe-io-project}
+## 步驟1:建立／更新Adobe I/O項目{#creating-adobe-io-project}
 
-對於代管客戶，您可以建立客戶服務票證，以便透過Adobe I/O技術帳戶Token為「觸發器」整合啟用您的組織。
+對於代管客戶，您可以建立客戶服務票證，以啟用您的組織，其中包含「觸發器」整合的Adobe I/O技術帳戶Token。
 
-若為On Premise客戶，請參閱[為Adobe Experience Cloud觸發器設定Adobe I/O頁面](../../integrations/using/configuring-adobe-io.md)。 請注意，在將API新增至Adobe I/O憑證時，您必須選取&#x200B;**[!UICONTROL Adobe Analytics]**。
+對於On Premise客戶，請參閱[為Adobe Experience Cloud Triggers配置Adobe I/O頁。 ](../../integrations/using/configuring-adobe-io.md)請注意，在將API新增至Adobe I/O憑證時，您必須選取&#x200B;**[!UICONTROL Adobe Analytics]**。
 
 ## 步驟2:配置NmsPipeline_Config管線選項{#configuring-nmspipeline}
 
-一旦設定了驗證，管線將檢索事件。 它只會處理在Adobe Campaign中設定的觸發程式。 觸發器必須是從Adobe Analytics產生，並推送至管線，而管線僅會處理在Adobe Campaign中設定的觸發器。
+一旦設定了驗證，管線將檢索事件。 它將僅處理在Adobe Campaign中配置的觸發器。 觸發器必須是從Adobe Analytics生成，並推送到管線，該管線僅處理在Adobe Campaign配置的觸發器。
 也可以使用通配符配置該選項，以便捕獲所有觸發器（無論其名稱如何）。
 
-1. 在Adobe Campaign中，存取&#x200B;**[!UICONTROL Explorer]**&#x200B;中&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下的選項功能表。
+1. 在Adobe Campaign，訪問&#x200B;**[!UICONTROL Explorer]**&#x200B;中&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下的選項菜單。
 
 1. 選擇&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;選項。
 
