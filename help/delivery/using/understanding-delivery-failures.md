@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2580'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 ## 瞭解傳送故障{#about-delivery-failures}
 
-當訊息（電子郵件、SMS、推播通知）無法傳送至描述檔時，遠端伺服器會自動傳送錯誤訊息，該錯誤訊息會由Adobe Campaign平台擷取，並符合資格決定是否應隔離電子郵件地址或電話號碼。 請參閱[彈回郵件管理](#bounce-mail-management)。
+當無法將郵件（電子郵件、SMS、推播通知）傳送至描述檔時，遠端伺服器會自動傳送錯誤訊息，該錯誤訊息由Adobe Campaign平台擷取，並符合資格決定是否應隔離電子郵件地址或電話號碼。 請參閱[彈回郵件管理](#bounce-mail-management)。
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ ht-degree: 14%
    <td> 拒絕列出的地址 </td> 
    <td> 硬 </td> 
    <td> 8 </td> 
-   <td> 傳送時，地址已新增至密尼清單。 此狀態用於從外部清單和外部系統將資料匯入Adobe Campaign Quarantine清單。<br /> </td> 
+   <td> 傳送時，地址已新增至密尼清單。 此狀態用於從外部清單和外部系統將資料導入Adobe Campaign隔離清單。<br /> </td> 
   </tr> 
   <tr> 
    <td> 控制地址 </td> 
@@ -192,20 +192,20 @@ ht-degree: 14%
 
 若要使用舊版促銷活動MTA進行內部部署安裝和代管／混合安裝，若要修改傳送的持續時間，請移至傳送或傳送範本的進階參數，並在對應欄位中指定所需的持續時間。 請參閱[定義有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
 
-預設配置允許在1小時間隔內重試5次，之後在4天內每天重試1次。 可全域變更重試次數（請洽詢您的Adobe技術管理員），或針對每個傳送或傳送範本變更重試次數（請參閱「設定重試次數[」）。](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)
+預設配置允許在1小時間隔內重試5次，之後在4天內每天重試1次。 可以全局更改重試次數(請與您的Adobe技術管理員聯繫)或每個交付或交付模板（請參閱[配置重試](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)）。
 
 ## 同步與非同步錯誤 {#synchronous-and-asynchronous-errors}
 
 消息在發送後可能立即失敗（同步錯誤），或稍後失敗（非同步錯誤）。
 
-* 同步錯誤：由Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不允許傳送至描述檔的伺服器。 Adobe Campaign可讓每個錯誤符合資格，以判斷是否應隔離相關電子郵件地址。 請參閱[退信資格](#bounce-mail-qualification)。
+* 同步錯誤：由Adobe Campaign發送伺服器聯繫的遠程郵件伺服器立即返回一條錯誤消息，不允許將發送內容發送到配置檔案的伺服器。 Adobe Campaign使每個錯誤都具有隔離資格，以確定是否應隔離相關電子郵件地址。 請參閱[退信資格](#bounce-mail-qualification)。
 * 非同步錯誤：接收伺服器稍後會重新發送退回郵件或 SR。此郵件已載入到應用程式用於標籤錯誤消息的技術郵箱中。 傳送後一週內，可能會發生非同步錯誤。
 
    >[!NOTE]
    >
    >彈回郵箱的配置詳見[本節](../../installation/using/deploying-an-instance.md#managing-bounced-emails)。
 
-   [回饋回圈](../../delivery/using/technical-recommendations.md#feedback-loop)的運作方式與彈回電子郵件類似。 當使用者將電子郵件歸類為垃圾訊息時，您可以在Adobe Campaign中設定電子郵件規則，以封鎖傳送給此使用者的所有內容。 傳送給符合電子郵件垃圾訊息資格的使用者的訊息會自動重新導向至專為此目的而建立的電子郵件方塊。 這些使用者的位址已列在密文清單中，即使他們未按一下取消訂閱連結。 地址在(**NmsAddress**)隔離表中，而不在(**NmsRecipient**)接收表中。
+   [回饋回圈](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)的運作方式與彈回電子郵件類似。 當使用者將電子郵件歸類為垃圾訊息時，您可以在Adobe Campaign設定電子郵件規則，以封鎖傳送給此使用者的所有內容。 傳送給符合電子郵件垃圾訊息資格的使用者的訊息會自動重新導向至專為此目的而建立的電子郵件方塊。 這些使用者的位址已列在密文清單中，即使他們未按一下取消訂閱連結。 地址在(**NmsAddress**)隔離表中，而不在(**NmsRecipient**)接收表中。
 
    >[!NOTE]
    >
@@ -217,7 +217,7 @@ Adobe Campaign平台可讓您透過彈回郵件功能管理電子郵件傳送失
 
 當電子郵件無法傳送給收件者時，遠端訊息伺服器會自動將錯誤訊息（彈回郵件）傳回至專為此目的而設計的技術收件匣。
 
-對於使用舊版Campaign MTA的內部部署安裝和代管／混合安裝，錯誤訊息會由Adobe Campaign平台收集，並由inMail程式加以限定，以豐富電子郵件管理規則清單。
+對於使用舊版Campaign MTA的內部部署安裝和代管／混合安裝，錯誤訊息會由Adobe Campaign平台收集，並由inMail流程加以限定，以豐富電子郵件管理規則清單。
 
 >[!IMPORTANT]
 >
@@ -238,9 +238,9 @@ Adobe Campaign平台可讓您透過彈回郵件功能管理電子郵件傳送失
 * 對於使用「增強型MTA **而不使用Webhook/EFS**&#x200B;的例項，**[!UICONTROL Inbound email]**&#x200B;規則也將用來處理來自「增強型MTA」的同步彈回電子郵件，使用與非同步彈回電子郵件相同的電子郵件地址。
 
 
-若是使用舊版Campaign MTA進行內部部署安裝和代管／混合安裝，當傳送電子郵件失敗時，Adobe Campaign傳送伺服器會從傳訊伺服器或遠端DNS伺服器收到錯誤訊息。 錯誤清單由遠程伺服器返回的消息中包含的字串組成。 故障類型和原因會分配給每個錯誤消息。
+對於使用舊版Campaign MTA的內部部署安裝和托管／混合安裝，當電子郵件傳送失敗時，Adobe Campaign傳送伺服器會從傳訊伺服器或遠端DNS伺服器接收錯誤訊息。 錯誤清單由遠程伺服器返回的消息中包含的字串組成。 故障類型和原因會分配給每個錯誤消息。
 
-此清單可通過&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;節點使用。 它包含Adobe Campaign用來限定傳送失敗的所有規則。 這並非完整，而且由Adobe Campaign定期更新，也可由使用者管理。
+此清單可通過&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;節點使用。 它包含Adobe Campaign用來限定交付失敗的所有規則。 它並非完整，由Adobe Campaign定期更新，也可由用戶管理。
 
 ![](assets/tech_quarant_rules_qualif.png)
 
@@ -248,7 +248,7 @@ Adobe Campaign平台可讓您透過彈回郵件功能管理電子郵件傳送失
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電子郵件地址、電話號碼等） 並在&#x200B;**[!UICONTROL Text]**&#x200B;欄中顯示篩選結果。 變數會以&#x200B;**`#xxx#`**&#x200B;取代，但以&#x200B;**`*`**&#x200B;取代的位址除外。
+Adobe Campaign會篩選此訊息，以刪除變數內容（例如ID、日期、電子郵件地址、電話號碼等） 並在&#x200B;**[!UICONTROL Text]**&#x200B;欄中顯示篩選結果。 變數會以&#x200B;**`#xxx#`**&#x200B;取代，但以&#x200B;**`*`**&#x200B;取代的位址除外。
 
 此程式可讓所有相同類型的故障匯集在一起，並避免在「傳送記錄」資格表中出現類似錯誤時出現多個項目。
 
@@ -294,7 +294,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 對於使用舊版促銷活動MTA的內部部署安裝和代管／混合安裝，這些規則包含可由遠端伺服器傳回的字串清單，讓您限定錯誤（**Hard**、**Soft**&#x200B;或&#x200B;**Ignored**）。
 
-當電子郵件失敗時，遠端伺服器會傳回彈回訊息至平台參數中指定的位址。 Adobe Campaign會將每個彈回郵件的內容與規則清單中的字串進行比較，然後將其指派為三個[錯誤類型](#delivery-failure-types-and-reasons)中的一個。
+當電子郵件失敗時，遠端伺服器會傳回彈回訊息至平台參數中指定的位址。 Adobe Campaign將每個彈回郵件的內容與規則清單中的字串進行比較，然後將其指派為3種[錯誤類型](#delivery-failure-types-and-reasons)中的一種。
 
 >[!NOTE]
 >
@@ -308,14 +308,14 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 >
 >對於代管或混合安裝，如果您已升級至[增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，則不再使用&#x200B;**[!UICONTROL Domain management]**&#x200B;規則。 **DKIM (DomainKeys Indified Mail)** 電子郵件驗證簽署是由 Enhanced MTA 針對所有網域的所有郵件完成。除非在 Enhanced MTA 層級中另外指定，否則不會使用 **Sender ID**、**DomainKeys** 或 **S/MIME** 簽署。
 
-對於使用舊版Campaign MTA的內部部署安裝和代管／混合安裝，Adobe Campaign訊息伺服器會將單一&#x200B;**網域管理**&#x200B;規則套用至所有網域。
+對於使用舊版Campaign MTA的內部部署安裝和托管／混合安裝，Adobe Campaign消息伺服器將單一&#x200B;**域管理**&#x200B;規則應用於所有域。
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
 * 您可以選擇是否激活某些標識標準和加密密鑰來檢查域名，如&#x200B;**發送者ID**、**域密鑰**、**DKIM**&#x200B;和&#x200B;**S/MIME**。
 * **SMTP中繼**&#x200B;參數允許您為特定域配置中繼伺服器的IP地址和埠。 如需詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
-如果您的訊息在Outlook中的傳送者位址中顯示有&#x200B;**[!UICONTROL on behalf of]**，請確定您未使用&#x200B;**傳送者ID**&#x200B;來簽署電子郵件，此為Microsoft的過時專屬電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消勾選對應的方塊，並聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不會受到影響。
+如果您的訊息在Outlook中的傳送者位址中顯示有&#x200B;**[!UICONTROL on behalf of]**，請確定您未使用&#x200B;**傳送者ID**&#x200B;來簽署電子郵件，此為Microsoft的過時專屬電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消選中相應的框，然後聯繫[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不會受到影響。
 
 #### MX管理{#mx-management}
 
@@ -327,7 +327,7 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 * MX管理規則可用來規範特定網域的傳出電子郵件流程。 他們會取樣彈回訊息，並在適當時封鎖傳送。
 
-* Adobe Campaign傳訊伺服器會套用網域的特定規則，然後套用規則清單中星號所代表之一般案例規則。
+* Adobe Campaign消息伺服器應用特定於域的規則，然後應用規則清單中星號表示的一般大小寫規則。
 
 * 要配置MX管理規則，只需設定閾值並選擇某些SMTP參數。 **threshold**&#x200B;是以錯誤百分比計算的限制，超過該百分比後，所有針對特定域的消息都將被阻止。 例如，一般情況下，至少300則訊息，如果錯誤率達到90%，則會封鎖3小時的電子郵件傳送。
 
