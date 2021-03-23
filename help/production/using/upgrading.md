@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -21,19 +21,20 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->我們強烈建議在更新之前對每個實例進行資料庫備份。 有關詳細資訊，請參閱[Backup](../../production/using/backup.md)。\
->若要執行升級，請確定您擁有存取例項和記錄檔的能力和權限。
+>* Adobe強烈建議在更新之前對每個實例進行資料庫備份。 如需詳細資訊，請參閱[本區段](../../production/using/backup.md)。
+>* 若要執行升級，請確定您具備存取例項和記錄檔的能力和權限。
+>* 開始前，請閱讀[本節](../../installation/using/general-architecture.md)和[build upgrade](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)一章。
 
->[!NOTE]
 >
->另請參閱[安裝指南](../../installation/using/general-architecture.md)和[組建升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)快速入門。
+
+
 
 ## Windows {#in-windows}
 
-要在交付新構建版本時以新版本更新Adobe Campaign，應在Windows中應用以下過程：
+在Windows環境中，請遵循下列步驟將Adobe Campaign更新為新建版本：
 
 * [關閉服務](#shut-down-services),
-* [升級Adobe Campaign伺服器應用程式](#upgrade-the-adobe-campaign-server-application),
+* [升級應用程式伺服器](#upgrade-the-adobe-campaign-server-application),
 * [同步資源](#synchronize-resources),
 * [重新啟動服務](#restart-services)。
 
@@ -88,9 +89,9 @@ ht-degree: 2%
 
 這可讓您執行下列作業：
 
-* 同步資源、
-* 更新方案，
-* 更新資料庫。
+* 同步資源
+* 更新結構描述
+* 更新資料庫
 
 >[!NOTE]
 >
@@ -110,9 +111,9 @@ ht-degree: 2%
 
 ## Linux {#in-linux}
 
-要在交付新構建版本時以新版本更新Adobe Campaign,Linux的過程如下：
+在Linux環境中，請遵循以下步驟將Adobe Campaign更新為新構建版本：
 
-* [獲取更新的包](#obtain-updated-packages),
+* [下載更新的套件](#obtain-updated-packages),
 * [執行更新](#perform-an-update),
 * [重新啟動Web伺服器](#reboot-the-web-server)。
 
@@ -247,11 +248,7 @@ ht-degree: 2%
 
 ### Windows {#in-windows-1}
 
-在安裝(**nlserver web**)Adobe Campaign應用程式伺服器的電腦上，下載並複製檔案
-
-**setup-client-6.XXXX.exe**
-
-在**[應用程式路徑]**datakitlengjsp中
+在安裝Adobe Campaign應用伺服器的機器上(**nlserver web**)，下載並複製應用程式]/datakit/nl/eng/jsp **的檔案** setup-client-6.XXXX.exe **i n**[&#x200B;路徑。
 
 下次連接客戶機控制台時，窗口將通知用戶更新的可用性，並為用戶提供下載和安裝更新的可能性。
 
@@ -261,11 +258,7 @@ ht-degree: 2%
 
 ### Linux {#in-linux-1}
 
-在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的電腦上，檢索以下軟體包：
-
-**setup-client-6.XXXX.exe**
-
-並複製，另存為&#x200B;**/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的電腦上，檢索&#x200B;**setup-client-6.XXXX.exe**&#x200B;軟體包並複製它，另存為&#x200B;**/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
