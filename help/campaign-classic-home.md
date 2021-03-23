@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 5097eea4cf842b93af77ee828693f76a7182a8fe
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 54%
+source-wordcount: '300'
+ht-degree: 52%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 54%
 
 * **[透過IMS/Adobe ID連線？升級至最新組建版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至** 2021年6月30日後能夠連線至Campaign。**
 
-* **[保護您的促銷活](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)**<br/> 動例項更新至最新建置，以保護您的促銷活動平台。
+* **[保護您的促銷活](technotes/acc-config-updates.md)**<br/> 動例項更新至最新建置，以保護您的促銷活動平台。
 
 * **[移除不正確的硬](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 體彈回數瞭解如何在Gmail中斷後更新不正確的硬體彈回數
 
@@ -89,6 +89,6 @@ ht-degree: 54%
 | [發行說明](/help/rn/using/latest-release.md) | [錯誤訊息清單](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [操作說明短片](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant) | [Campaign 資料模型](configuration/using/about-data-model.md) |
 | [相容性矩陣](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Gold Standard 升級](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html) | [追蹤指南](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html) |
+| [[!DNL Gold Standard] 升級](rn/using/gs-overview.md) | [追蹤指南](https://helpx.adobe.com/tw/campaign/kb/acc-tracking.html) |
 | [棄用的功能](rn/using/deprecated-features.md) | [安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html) |
 | [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [監視准則](production/using/monitoring-guidelines.md) |
