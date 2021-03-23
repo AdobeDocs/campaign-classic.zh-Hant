@@ -7,9 +7,9 @@ feature: 概觀
 role: 架構師
 level: 初學者
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Adobe Campaign可部署為受管理服務：Adobe Campaign的所有元件，包�
 
 * 依品牌設定追蹤和鏡像頁面URL。 有關事務性消息，請參閱[至本節](../../message-center/using/configuring-multibranding.md)。
 * 安裝客戶機控制台：請參閱[至本節](../../installation/using/installing-the-client-console.md)。
-* 閱讀[快速入門手冊](../../delivery/using/deliverability-key-points.md)和[詳細說明檔案](../../delivery/using/about-deliverability.md)，進一步瞭解傳遞性工具和最佳實務。
+* 閱讀[詳細說明檔案](../../delivery/using/about-deliverability.md)，進一步瞭解可傳遞性工具和最佳實務。
 * 設定促銷活動選項：請參閱[至本節](../../installation/using/configuring-campaign-options.md)。
 * 設定CRM連接器：請參閱[至本節](../../platform/using/crm-connectors.md)。
 
@@ -65,7 +65,7 @@ Adobe Campaign可部署在現場：Adobe Campaign的所有元件，包括用戶�
 * 依品牌設定追蹤和鏡像頁面URL。 有關事務性消息，請參閱[至本節](../../message-center/using/configuring-multibranding.md)。
 * 安裝客戶機控制台：請參閱[至本節](../../installation/using/installing-the-client-console.md)。
 * 安裝內置軟體包：請參閱[至本節](../../installation/using/installing-campaign-standard-packages.md)。
-* 可傳遞性：設定[MX規則](../../installation/using/email-deliverability.md#mx-configuration)和[電子郵件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 閱讀[快速入門手冊](../../delivery/using/deliverability-key-points.md)和[詳細說明檔案](../../delivery/using/about-deliverability.md)，進一步瞭解傳遞性工具和最佳實務。
+* 可傳遞性：設定[MX規則](../../installation/using/email-deliverability.md#mx-configuration)和[電子郵件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 閱讀[詳細說明檔案](../../delivery/using/about-deliverability.md)，進一步瞭解可傳遞性工具和最佳實務。
 * 設定促銷活動選項：請參閱[至本節](../../installation/using/configuring-campaign-options.md)。
 * 配置外部資料庫（同盟資料存取）:請參閱[至本節](../../installation/using/about-fda.md)。
 * 設定CRM連接器：請參閱[至本節](../../platform/using/crm-connectors.md)。
