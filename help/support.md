@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3a65bc08fd3b6cedfd7ef05a51fd8378f19daa85
+source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 9%
+source-wordcount: '686'
+ht-degree: 10%
 
 ---
 
@@ -38,50 +38,58 @@ ht-degree: 9%
 
 如何升級至新建版本？ 如何監控工作流程執行？ 什麼是資料庫清理工作流程？...[閱讀前10個問題](platform/using/common-questions.md)。
 
-### 主題問答
-
-依主題閱讀一組特定問答：
-
-* [重要概念](platform/using/faq-key-concepts.md)
-* [促銷活動設定](platform/using/faq-campaign-config.md)
-* [報告](platform/using/faq-reporting.md)
-* [建置升級](platform/using/faq-build-upgrade.md)
-* [測試、傳送和追蹤訊息](platform/using/faq-messages.md)
-* [工作流程](platform/using/faq-workflows.md)
-* [開發人員](platform/using/faq-developers.md)
-* [傳送能力](delivery/using/monitoring-deliverability.md)
-
-### 常見問題
-
-* [效能和輸送量的相關問題](production/using/performance-and-throughput-issues.md)
-* [傳送效能](delivery/using/delivery-performances.md)
-* [最佳化工作流程效能](workflow/using/workflow-best-practices.md)
-* [工作流程執行疑難排解](workflow/using/monitoring-workflow-execution.md)
-* [SFTP 伺服器使用情況](platform/using/sftp-server-usage.md)
-* [瞭解交付失敗](delivery/using/understanding-delivery-failures.md)
-
-### 最佳實務
-
-* [工作流程最佳實務](workflow/using/workflow-best-practices.md)
-* [技術工作流程監控](workflow/using/monitoring-technical-workflows.md)
-* [瞭解追蹤管理](delivery/using/about-message-tracking.md)
-* [探索監控工具](production/using/monitoring-guidelines.md)
-* [使用工作流程匯入資料](platform/using/import-export-workflows.md)
-* [以多波傳送訊息  ](delivery/using/steps-sending-the-delivery.md)
-* [設計電子郵件內容](delivery/using/defining-the-email-content.md)
-* [傳遞最佳實務](delivery/using/delivery-best-practices.md)
-
-### 操作說明
-
-* [升級至最新組建版本](production/using/build-upgrade.md)
-* [建立升級常見問答集](platform/using/faq-build-upgrade.md)
-* [監控傳送](delivery/using/about-delivery-monitoring.md)
-* [瞭解隔離管理](delivery/using/understanding-quarantine-management.md)
-* [安全性與隱私權檢查清單](installation/using/get-started-security-privacy.md)
-* [隱私權與同意管理](platform/using/privacy-management.md)
-* [設計查詢](platform/using/steps-to-create-a-query.md)
-* [查詢範例](workflow/using/querying-recipient-table.md)
-* [建立工作流程](workflow/using/building-a-workflow.md)
+<table>
+    <tr><td><strong>主題問答</strong></td><td><strong>常見問題</strong></td><td><strong>最佳實務</strong></td><td><strong>操作說明</strong></td></tr>
+    <tr>
+    <td valign="top">
+        <ul>
+        <li><a href="platform/using/faq-key-concepts.md">重要概念</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">促銷活動設定</a></li>
+        <li><a href="platform/using/faq-reporting.md">報告</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">建置升級</a></li>
+        <li><a href="platform/using/faq-messages.md">測試、傳送和追蹤訊息</a></li>
+        <li><a href="platform/using/faq-workflows.md">工作流程</a></li>
+        <li><a href="platform/using/faq-developers.md">開發人員</a></li>
+        <li><a href="delivery/using/monitoring-deliverability.md">傳送能力</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/performance-and-throughput-issues.md">效能和輸送量的相關問題</a></li>
+        <li><a href="delivery/using/delivery-performances.md">傳送效能</a></li>
+        <li><a href="workflow/using/workflow-best-practices.md">最佳化工作流程效能</a></li>
+        <li><a href="workflow/using/monitoring-workflow-execution.md">工作流程執行疑難排解</a></li>
+        <li><a href="platform/using/sftp-server-usage.md">SFTP 伺服器使用情況</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">瞭解交付失敗</a></li>
+        </ul>
+    </td>
+   <td valign="top">
+        <ul>
+        <li><a href="workflow/using/workflow-best-practices.md">工作流程最佳實務</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">技術工作流程監控</a></li>
+        <li><a href="delivery/using/about-message-tracking.md">瞭解追蹤管理</a></li>
+        <li><a href="production/using/monitoring-guidelines.md">探索監控工具</a></li>
+        <li><a href="platform/using/import-export-workflows.md">使用工作流程匯入資料</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">以多波傳送訊息</a></li>
+        <li><a href="delivery/using/defining-the-email-content.md">設計電子郵件內容</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">傳遞最佳實務</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/build-upgrade.md">升級至最新組建版本</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">建立升級常見問答集</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">監控傳送</a></li>
+        <li><a href="delivery/using/understanding-quarantine-management.md">瞭解隔離管理</a></li>
+        <li><a href="installation/using/get-started-security-privacy.md">安全性與隱私權檢查清單</a></li>
+        <li><a href="platform/using/privacy-management.md">隱私權與同意管理</a></li>
+        <li><a href="platform/using/steps-to-create-a-query.md">設計查詢</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">查詢範例</a></li>
+        <li><a href="workflow/using/building-a-workflow.md">建立工作流程</a></li>
+        </ul>
+    </td>
+    </tr>
+</table>
 
 ## Campaign 控制面板 {#control-panel}
 
@@ -122,7 +130,7 @@ ht-degree: 9%
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新訂票系統已通過[Adobe Admin Console](https://adminconsole.adobe.com/overview)推出。 新系統要求每個使用者都有新的個別帳戶，並擁有正確的權限。 如果您發現無法與Adobe ID登入，請透過Experience League申請存取權，客戶服務團隊會盡快為您設定。 [進一步了解](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+新的訂票系統已通過[Adobe Admin Console](https://adminconsole.adobe.com/overview)推出。 新系統要求每個使用者都有新的個別帳戶，並擁有正確的權限。 如果您發現無法與Adobe ID登入，請透過Experience League申請存取權，客戶服務團隊會盡快為您設定。 [進一步了解](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ### 問專家！
 
@@ -130,16 +138,10 @@ ht-degree: 9%
 
 ### 存取促銷活動下載中心
 
-自2020年6月起，Experience Cloud解決方案軟體散發取代了舊版Neolane下載中心，並提供更有效率的使用體驗來尋找和下載您的軟體、套件和工具。
-
-[按一](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) 下此處存取Experience Cloud軟體散發。進一步瞭解本頁](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html)中新的下載中心[。
+自2020年6月起，Experience Cloud解決方案軟體散發取代了舊版Neolane下載中心，並提供更有效率的使用體驗來尋找和下載您的軟體、套件和工具。 [按一](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) 下此處存取Experience Cloud軟體散發。進一步瞭解本頁](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html)中新的下載中心[。
 
 ### 建立票證或開始聊天
 
-建立案例可讓您聯絡Adobe客戶支援團隊，瞭解您在Adobe產品上遇到的任何問題。
+建立案例可讓您聯絡Adobe客戶支援團隊，瞭解您在Adobe產品上遇到的任何問題。 為協助解決或疑難排解您的問題，Adobe Admin Console將允許您與Adobe客戶支援部門進行交談。
 
-為幫助解決或疑難排解問題，Adobe Admin Console將允許您與[Adobe客戶支援](https://adminconsole.adobe.com/overview)交談。
-
-要在該新系統中記錄問題或啟動聊天會話，請連接到[Adobe Admin Console](https://adminconsole.adobe.com/overview)。
-
-按照[本頁](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中介紹的詳細過程操作。
+要在該新系統中記錄問題或啟動聊天會話，請連接到[Adobe Admin Console](https://adminconsole.adobe.com/overview)。 按照[本頁](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中介紹的詳細過程操作。
