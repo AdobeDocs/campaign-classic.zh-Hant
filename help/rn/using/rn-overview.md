@@ -7,10 +7,10 @@ feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '423'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後&#x200B;**一個 GA 版本** : [Gold Standard 11 版本](../../rn/using/gold-standard.md#gs-11) 及[ Campaign 20.2.4 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+最後&#x200B;**一個 GA 版本** : [[!DNL Gold Standard]  11 版本](../../rn/using/gold-standard.md#gs-11) 及[ Campaign 20.2.4 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
@@ -53,12 +53,12 @@ ht-degree: 100%
 
 身為內部部署使用者，您可以進行升級。為此，您需要[下載最新的穩定版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)並升級所有環境。瞭解更多[升級流程](../../production/using/build-upgrade.md)，並參閱[版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
-### Gold Standard{#upgrade-for-gold-standard-users}
+### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-作為託管 Gold Standard 使用者，您無需採取任何操作便可透過[最新 GA Gold Standard 版本編號](../../rn/using/gold-standard.md#gs-11)，自動受益於 Gold Standard 升級。[進一步瞭解](../../rn/using/gs-overview.md)。
+身為代管[!DNL Gold Standard]使用者，您將自動受益於使用[最新GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11)的[!DNL Gold Standard]升級，而不需採取任何動作。 [進一步瞭解](../../rn/using/gs-overview.md)。
 
 >[!NOTE]
->[在 GA 相容性矩陣中](../../rn/using/compatibility-matrix-gs.md)提供 Gold Standard 的相容性矩陣。
+>[!DNL Gold Standard]的相容性矩陣在[GA相容性矩陣](../../rn/using/compatibility-matrix-gs.md)中可用。
 
 ## 支援和其他有效連結{#support}
 
