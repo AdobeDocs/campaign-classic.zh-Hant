@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 47%
+source-wordcount: '548'
+ht-degree: 46%
 
 ---
 
@@ -97,11 +97,11 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 
 每當您與Adobe客戶服務團隊聯絡時，都需要提供Adobe Campaign客戶主控台和應用程式伺服器的版本號碼和組建版本號碼。
 
-如果您正在[促銷活動金標準版](../../rn/using/gold-standard.md)上執行，您也需要共用顯示在&#x200B;**[!UICONTROL About]**&#x200B;方塊中的SHA/1字元。 例如，對於Gold **Standard 10發行**，組建編號將顯示&#x200B;**組建9032@efd8a94**，如下所示：
+如果您在[Campaign [!DNL Gold Standard] version](../../rn/using/gold-standard.md)上執行，則還需要共用顯示在&#x200B;**[!UICONTROL About]**&#x200B;方塊中的SHA/1字元。 例如，對於Gold **Standard 10發行**，組建編號將顯示&#x200B;**組建9032@efd8a94**，如下所示：
 
 ![](assets/about-acc-gs.png)
 
-在本文](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)中進一步瞭解金級標準[。
+在本文](../../rn/using/gs-overview.md)中進一步瞭解[!DNL Gold Standard] [。
 
 **相關主題**：
 
