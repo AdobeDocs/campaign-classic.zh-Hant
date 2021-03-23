@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # 追蹤和監視 {#track-and-monitor}
 
-您按了「傳送」按鈕？ 讓我們看看會發生什麼。 傳送後，Adobe Campaign可讓您追蹤已傳送的訊息，並瞭解收件者對傳送的反應。 這可協助您改善未來的傳送方式，並最佳化您的下一個促銷活動。
+您是否按一下了&#x200B;**Send**&#x200B;按鈕？ 讓我們看看會發生什麼。 傳送後，Adobe Campaign可讓您追蹤傳送的訊息，並瞭解收件者對傳送的反應。 這可協助您改善未來的傳送方式，並最佳化您的下一個促銷活動。
 
 ## 監視傳遞{#monitoring-deliveries}
 
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 ## 追蹤 {#tracking-deliveries}
 
-若要深入瞭解收件者的行為，您可以追蹤他們對遞送的反應：接收、開啟、點按連結、取消訂閱等。 在「促銷活動傳統型」中，此資訊會顯示在傳送所定位之收件者的「追蹤」標籤和傳送的「追蹤」標籤中。 在「促銷活動標準」中，它會顯示在傳送的「追蹤記錄檔」標籤中。
+若要深入瞭解收件者的行為，您可以追蹤他們對遞送的反應：接收、開啟、點按連結、取消訂閱等。 在Campaign Classic中，此資訊會顯示在傳送所定位之收件者的「追蹤」標籤和傳送的「追蹤」標籤中。 在Campaign Standard中，它會顯示在傳送的「追蹤記錄檔」標籤中。
 
 **提示**:預設會啟用訊息追蹤。若要設定URL，請在傳送精靈的下方區段中選取「顯示URL」選項。 對於訊息的每個URL，您可以選擇是否啟用追蹤。
 
