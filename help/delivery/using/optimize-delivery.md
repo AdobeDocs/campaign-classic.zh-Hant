@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 在開始建立傳送之前，您可以採取數個動作來保護並最佳化上游傳送程式。
 
-以下章節概述最佳化Adobe Campaign設定的最佳實務和建議程式。 遵循這些實務可將下游可能遇到的問題降到最低。
+下節概述了Adobe Campaign最佳配置的最佳做法和建議程式。 遵循這些實務可將下游可能遇到的問題降到最低。
 
 ## 平台效能
 
@@ -50,9 +50,9 @@ ht-degree: 6%
 
    * 在檢查您的電子郵件是否具有傳遞能力時，您希望將重點放在四個主要類別：資料品質、訊息和內容、傳送基礎架構和聲譽。 有關本主題的深入探討，請參閱[本節](../../delivery/using/about-deliverability.md)。
 
-* 套用本檔案](../../delivery/using/deliverability-key-points.md)中詳細說明的建議。[
+* 套用本檔案](../../delivery/using/about-deliverability.md)中詳細說明的建議。[
 
-* 請連絡您的Adobe代表以取得協助。
+* 請洽詢您的Adobe代表以取得協助。
 
 ## 隔離管理{#quarantine-management}
 
@@ -62,11 +62,11 @@ ht-degree: 6%
 
 **提示**
 
-* 如果您有無效地址的清單，Adobe建議通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;將其導入隔離表。
+* 如果您有無效地址清單，Adobe建議通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;將其導入隔離表。
 
 * 在傳送分析期間，預設會排除隔離地址的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，當收件箱已滿或地址不存在時，可以隔離電子郵件地址。 [進一步了解](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign會根據傳回的錯誤類型管理錯誤位址。 如需詳細資訊，請參閱[本章節](../../delivery/using/understanding-quarantine-management.md)。
+* Adobe Campaign根據傳回的錯誤類型管理錯誤地址。 如需詳細資訊，請參閱[本章節](../../delivery/using/understanding-quarantine-management.md)。
 
 
 * 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者添加到拒絕清單。
@@ -75,6 +75,6 @@ ht-degree: 6%
 
 ## 雙選機制{#double-opt-in}
 
-為避免傳送訊息至無效位址、限制不當通訊並改善寄件者信譽，Adobe建議實作訂閱後確認的雙重選擇加入機制。 這有助於確保收件者有意訂閱。
+為避免將訊息傳送至無效位址、限制不當通訊並改善寄件者信譽，Adobe建議實作訂閱後確認的雙重選擇機制。 這有助於確保收件者有意訂閱。
 
 實施此機制的詳細資訊請見[本節](../../web/using/use-cases--web-forms.md)。
