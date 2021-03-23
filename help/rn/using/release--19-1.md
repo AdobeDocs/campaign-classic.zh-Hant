@@ -7,9 +7,9 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: 631e7a0f89a365626401a6157ef84442fa0fd59f
 workflow-type: tm+mt
-source-wordcount: '3200'
+source-wordcount: '3198'
 ht-degree: 20%
 
 ---
@@ -128,7 +128,7 @@ _2019年8月13日_
 
 >[!NOTE]
 >
->19.1.4金級標準發行列在此[頁](../../rn/using/gold-standard.md)中。
+>19.1.4 [!DNL Gold Standard]版本列於此[頁](../../rn/using/gold-standard.md)中。
 
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.2 - Build 9029{#release-19-1-2-build-9029}
