@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 55%
+source-wordcount: '2448'
+ht-degree: 54%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 55%
 + 發行說明{#release-notes}
    + [開始升級](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
-   + Gold Standard 發行 {#gs-release}
-      + [什麼是金標準](rn/using/gs-overview.md)
-      + [Gold Standard發行說明](rn/using/gold-standard.md)
-      + [Gold Standard相容性矩陣](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] 發行  {#gs-release}
+      + [什麼是 [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [[!DNL Gold Standard] 發行說明](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] 相容性矩陣](rn/using/compatibility-matrix-gs.md)
    + 舊版{#previous-releases}
       + [發行版本 20.3](rn/using/release--20-3.md)
       + [第 20.2 發行版本](rn/using/release--20-2.md)
@@ -221,17 +221,11 @@ ht-degree: 55%
       + [測試追蹤](delivery/using/testing-tracking.md)
       + [追蹤疑難排解](delivery/using/tracking-troubleshooting.md)
    + 傳遞能力管理{#deliverability-management}
-      + [關於傳遞能力](delivery/using/about-deliverability.md)
-      + [需要檢查的關鍵點](delivery/using/deliverability-key-points.md)
-      + [啟動新平台](delivery/using/starting-new-platform.md)
+      + [什麼是傳遞能力](delivery/using/about-deliverability.md)
       + [控制訊息內容](delivery/using/control-message-content.md)
-      + [提升您的聲譽](delivery/using/improve-reputation.md)
-      + [技術建議](delivery/using/technical-recommendations.md)
       + [監視傳遞能力](delivery/using/monitoring-deliverability.md)
       + [收件匣轉譯](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
-      + [重新參與的最佳實務](delivery/using/re-engagement-best-practices.md)
-      + [封鎖清單資料庫](delivery/using/block-list-databases.md)
       + [疑難排解](delivery/using/deliverability-faq.md)
    + 內容管理模組{#content-management}
       + [關於內容管理](delivery/using/about-content-management.md)
