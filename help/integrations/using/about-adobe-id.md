@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 313f15a3097fa4c53c1bd802de0e73801acd410b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 24%
 
 ---
@@ -31,7 +31,7 @@ AdobeIdentity Management系統(IMS)可協助管理員建立並管理使用者對
 >
 >如果您要透過Adobe身分服務(IMS)連線至促銷活動，您必須升級至最新組建版本，才能在&#x200B;**2021年6月30日**&#x200B;之後連線至促銷活動。 此升級對於Campaign伺服器和用戶端主控台都是必備的。 視您目前的版本而定，您必須升級至下列其中一個版本：
 >
-> * [Campaign Gold Standard 11](../../rn/using/gold-standard.md)
+> * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 20.3.3](../../rn/using/latest-release.md)
 > * [Campaign 20.2.4](../../rn/using/release--20-2.md)
 > * [Campaign 20.1.4](../../rn/using/release--20-1.md)
@@ -42,7 +42,7 @@ AdobeIdentity Management系統(IMS)可協助管理員建立並管理使用者對
 
 
 
-## 相關主題
+## 更多資源
 
 | 有用的頁面 | 其他資源 |
 |---|---|
