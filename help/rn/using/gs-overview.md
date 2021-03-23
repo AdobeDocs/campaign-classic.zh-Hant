@@ -1,35 +1,35 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gold Standard 升級
-description: '瞭解什麼是Campaign Classic金標 '
+title: '[!DNL Gold Standard] 升級'
+description: '瞭解什麼是Campaign Classic [!DNL Gold Standard] '
 feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 20%
+source-wordcount: '559'
+ht-degree: 12%
 
 ---
 
 
-# Gold Standard 版本 {#gs-overviews}
+# [!DNL Gold Standard] 釋放  {#gs-overviews}
 
-## 什麼是金本位？
+## 這是什麼[!DNL Gold Standard]？
 
 Adobe和Adobe Campaign致力於透過我們的軟體解決方案為您提供最佳的體驗和價值。 該組織致力於確保您能夠訪問我們的解決方案用來執行其任務的最新版本的相關技術。
 
 Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組合，需要您定期升級 Campaign Classic 執行個體，以確保使用最新版本來提供優越的安全性、穩定性和效能。
 
-Gold Standard 是 Campaign Classic 的長期支援版本。作為託管 Gold Standard 使用者，您無需採取任何操作便可透過最新穩定版本，自動受益於 Gold Standard 升級。內部部署和混合客戶也可以受益於 Gold Standard 發行版本。如果您從舊的版本編號移轉出，我們建議您先升級至此版本。
+[!DNL Gold Standard] 是Campaign Classic長期支援版本。身為代管[!DNL Gold Standard]使用者，您可透過最新穩定版本自動受益於[!DNL Gold Standard]升級，而不需採取任何動作。 內部部署和Hybrid客戶也可以從[!DNL Gold Standard]版本中獲益。 如果您從舊的版本編號移轉出，我們建議您先升級至此版本。
 
 ## 我的組織為何需要此升級？
 
 身為代管客戶，如果您的帳戶被認定需要升級一或多項與Campaign Classic相關的技術，以及更新目前的組建版本和／或版本，Adobe會直接通知您。
 
-身為使用舊版軟體的內部部署或混合型客戶，Adobe鼓勵您改用最新的金級標準。
+身為舊版的內部部署或混合型客戶，Adobe鼓勵您改用最新的[!DNL Gold Standard]。
 
 這將確保您的帳戶免受漏洞的侵擾，並可運用更新的效能技術。 此升級版還可讓您的帳戶日後更輕鬆、定期地升級，而且所需的手動工作和干預也更少。
 
@@ -100,6 +100,6 @@ Adobe團隊將帶領並引導您的組織完成此旅程。
 
 ## 其他資源
 
-* [Gold Standard發行說明](gold-standard.md)
+* [[!DNL Gold Standard] 發行說明](gold-standard.md)
 * [建立升級常見問答集](../../platform/using/faq-build-upgrade.md)
-* [Gold Standard相容性矩陣](compatibility-matrix-gs.md)
+* [[!DNL Gold Standard] 相容性矩陣](compatibility-matrix-gs.md)
