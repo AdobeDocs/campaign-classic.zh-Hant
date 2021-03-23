@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '768'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 >
 >當點按格式錯誤的簽名URL時，會傳回下列錯誤：&quot;找不到請求的URL &#39;... &#39;。&quot;
 
-此外，從Campaign 20.2和Gold Standard版本開始，代管和混合客戶可以使用增強功能來停用從先前建置產生的URL。 此選項預設為停用。 您可以聯絡[客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以啟用此功能。
+此外，從Campaign 20.2和[!DNL Gold Standard]發行開始，代管和混合型客戶可使用增強功能來停用從舊版建置產生的URL。 此選項預設為停用。 您可以聯絡[客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以啟用此功能。
 
 若要啟用此新機制，內部部署客戶必須在所有Campaign伺服器上執行下列步驟：
 
@@ -65,7 +65,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 1. 重新啟動&#x200B;**nlserver**&#x200B;服務。
 1. 在追蹤伺服器上，重新啟動Web伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-使用Gold Standard 19.1.4的客戶可能會在使用追蹤連結的推播通知傳送或使用錨記的傳送時遇到問題。 如果是，Adobe建議停用追蹤連結的新簽名機制：
+在[!DNL Gold Standard] 19.1.4上執行的客戶可能會在使用追蹤連結的推播通知傳送或使用錨記的傳送時遇到問題。 如果是，Adobe建議停用追蹤連結的新簽名機制：
 
 **代管和混合** 式客戶必須聯絡 [客](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 戶服務，以停用此機制。
 
