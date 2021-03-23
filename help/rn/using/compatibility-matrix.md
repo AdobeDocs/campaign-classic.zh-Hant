@@ -7,10 +7,10 @@ feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 99%
+source-wordcount: '527'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 本文件列出[最新建置版本](../../rn/using/latest-release.md)之 **Adobe Campaign Classic** 支援的所有系統及元件。不屬於此清單的產品和版本與 Adobe Campaign 不相容。
 
-如果您是 Gold Standard 使用者，請參閱 [Gold Standard 相容性矩陣](../../rn/using/compatibility-matrix-gs.md)。
+如果您是[!DNL Gold Standard]用戶，請參閱[[!DNL Gold Standard] 相容性表](../../rn/using/compatibility-matrix-gs.md)。
 
 ## 重要附註{#important-notes}
 
