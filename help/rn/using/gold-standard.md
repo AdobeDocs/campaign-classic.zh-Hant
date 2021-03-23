@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gold Standard發行說明
-description: Campaign Classic金標發行說明
+title: '[!DNL Gold Standard] 發行說明'
+description: Campaign Classic的發行說明 [!DNL Gold Standard]
 feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: 0ce968d8acdd0aea0211da248a085f05dfe70ae7
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 84%
+source-wordcount: '1026'
+ht-degree: 83%
 
 ---
 
 
-# Gold Standard發行說明{#gold-standard}
+# [!DNL Gold Standard] 發行說明{#gold-standard}
 
-本頁面列出的 Gold Standard 發行版本。在本頁](gs-overview.md)中進一步瞭解促銷活動金級標準[。
+本頁列出[!DNL Gold Standard]版本。 進一步瞭解本頁](gs-overview.md)中的促銷活動[!DNL Gold Standard] [。
 
-## ![](assets/do-not-localize/green_2.png)Gold Standard 第 11 發行版本{#gs-11}
+## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11版{#gs-11}
 
 _2021年3月2日_
 
@@ -44,7 +44,7 @@ _2020年12月22日_
 
 >
 >
-進一步瞭解 [Gold Standard 11 升級常見問答集](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)。
+進一步瞭解[[!DNL Gold Standard] 11升級常見問答集](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)。
 
 版本編號 9032@d3b452f 包含下列增強功能及修正檔：
 
@@ -58,7 +58,7 @@ _2020年12月22日_
 
 * 修正執行&#x200B;**擴充**&#x200B;活動時，工作流程可能失敗的問題。(NEO-17338)
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 10 發行版本{#gs-10}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10版{#gs-10}
 
 _2020 年 7 月 7 日_
 
@@ -70,7 +70,7 @@ _2020 年 7 月 7 日_
 >
 >我們建議您使用此版本中可用的用戶端控制台進行升級。請參見[此頁面](../../installation/using/installing-the-client-console.md)。
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 9 發行版本{#gs-9}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9版{#gs-9}
 
 _2020 年 6 月 22 日_
 
@@ -86,7 +86,7 @@ _2020 年 6 月 22 日_
 * 修正了反網路釣魚服務的問題。(NEO-25283)
 * 修正了在使用特定自訂追蹤公式時的追蹤問題。(NEO-25277)
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 8 發行版本{#gs-8}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8版{#gs-8}
 
 _2020年4月29日_
 
@@ -111,7 +111,7 @@ _2020年4月29日_
 * 修正了造成清理工作流程當機的迴歸。
 * 修正了清理工作流程記錄檔的次要迴歸。
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 6 發行版本{#gs-6}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6版{#gs-6}
 
 _2020年3月9日_
 
@@ -119,7 +119,7 @@ _2020年3月9日_
 
 * 修正了使用 FTP over SSL 的外部帳戶的問題。(NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 5 發行版本{#gs-5}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5版{#gs-5}
 
 _2019年12月17日_
 
@@ -127,7 +127,7 @@ _2019年12月17日_
 
 * 修正以下通訊頻道的追蹤問題：行動（SMS、MMS）、推播（iOS、Android）和社交網路（Facebook、Twitter）。(NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 4 發行版本{#gs-4}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4個版本{#gs-4}
 
 _2019年12月11日_
 
@@ -135,7 +135,7 @@ _2019年12月11日_
 
 * 修正了在使用 MSSQL 資料庫傳送訊息時，所導致的效能問題。(NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 3 發行版本{#gs-3}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3版{#gs-3}
 
 _2019年11月20日_
 
@@ -145,7 +145,7 @@ _2019年11月20日_
 * 修正了在多個傳遞顯示累積報告時所產生的問題。(NEO-18165)
 * 修正了可能封鎖或造成 Web 伺服器當機的問題。
 
-## ![](assets/do-not-localize/red_2.png)Gold Standard 第 2 發行版本{#gs-2}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2版{#gs-2}
 
 _2019 年 9 月 19 日_
 
