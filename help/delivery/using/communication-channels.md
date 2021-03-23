@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1204'
 ht-degree: 12%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 如需詳細資訊，請參閱[Deliverability getting started](../../delivery/using/deliverability-key-points.md)和[Deliverability management](../../delivery/using/about-deliverability.md)。
+>Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 進一步瞭解[本節](../../delivery/using/about-deliverability.md)。
 
 傳送傳送可透過準備傳送和／或在工作流程中傳送來自動化。 如需工作流程中傳送類型活動的詳細資訊，請參閱[本節](../../workflow/using/about-action-activities.md)。
 
