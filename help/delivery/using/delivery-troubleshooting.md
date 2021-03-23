@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -33,11 +33,11 @@ ht-degree: 1%
 
 * 有些電子郵件提供者可能已將您的IP位址新增至密碼清單。 在這種情況下，請檢查您的廣播並咨詢[本節](../../delivery/using/about-deliverability.md)。
 
-* 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign [傳送最佳實務](../../delivery/using/delivery-best-practices.md)以瞭解內容准則。
+* 您的傳送量可能太大，無法快速處理，這可能是透過高度的JavaScript個人化，或是您的傳送量超過60KB而發生。 請參閱Adobe Campaign[傳遞最佳實務](../../delivery/using/delivery-best-practices.md)以瞭解內容准則。
 
-* Adobe Campaign MTA中可能已發生調節。 這是由以下原因造成：
+* 在Adobe CampaignMTA中可能發生頻寬限制。 這是由以下原因造成：
 
-   * 附加的消息（**[!UICONTROL quotas met]**&#x200B;消息）:已符合Campaign中定義的宣告性MX規則所宣告的配額。 有關此消息的詳細資訊，請參閱[此頁](../../delivery/using/deliverability-faq.md)。 若要進一步瞭解MX規則，請參閱[本頁](../../delivery/using/technical-recommendations.md#mx-rules)。
+   * 附加的消息（**[!UICONTROL quotas met]**&#x200B;消息）:已符合Campaign中定義的宣告性MX規則所宣告的配額。 有關此消息的詳細資訊，請參閱[此頁](../../delivery/using/deliverability-faq.md)。 若要進一步瞭解MX規則，請參閱[本節](../../installation/using/email-deliverability.md#about-mx-rules)。
 
    * 附加的消息（**[!UICONTROL dynamic flow control]**&#x200B;消息）:Campaign MTA嘗試傳送給特定ISP的訊息時發生錯誤，造成延遲，以避免錯誤密度過大，進而面臨潛在的拒絕清單。
 
@@ -93,6 +93,6 @@ ht-degree: 1%
    Inbound email bounce (rule 'Auto_replies' has matched this bounce).
    ```
 
-   這表示傳送成功，但Adobe Campaign卻收到來自收件者的自動回覆（例如「不在辦公室」回覆），符合「Auto_ryples」傳入電子郵件規則。
+   這表示傳送成功，但Adobe Campaign收到來自接收者的自動回覆（例如，「不在辦公室」回覆），符合「Auto_ryples」傳入電子郵件規則。
 
-   Adobe Campaign會忽略自動回覆電子郵件，而且不會將收件者的位址傳送至隔離。
+   自動回覆電子郵件被Adobe Campaign忽略，收件人的地址不會被傳送給隔離。
