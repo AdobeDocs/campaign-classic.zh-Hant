@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '577'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ## 必要條件 {#adobe-io-prerequisites}
 
-此整合僅適用於&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和Gold Standard 11版本**&#x200B;的起始版本。
+此整合僅適用於&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和[!DNL Gold Standard] 11版**&#x200B;的開始。
 
 開始此實作前，請檢查您有：
 
