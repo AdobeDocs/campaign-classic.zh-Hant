@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 3%
+source-wordcount: '2034'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 我們的客戶必須執行最新版的Adobe Campaign。 它也可讓Adobe在您遇到問題時更有效率地提供協助——在舊版本上識別、重制和修正問題通常需要更多時間，更不用說您最近版本中可能遇到的某些問題已經修正。
 
-因此，我們啟動了[Gold Standard](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)計畫，與客戶協作，主動定期升級其環境。
+[!DNL Gold Standard] 是Campaign Classic長期支援版本。身為代管[!DNL Gold Standard]使用者，您可透過最新穩定版本自動受益於[!DNL Gold Standard]升級，而不需採取任何動作。 內部部署和Hybrid客戶也可以從[!DNL Gold Standard]版本中獲益。 如果您從舊的版本編號移轉出，我們建議您先升級至此版本。[進一步瞭解](../../rn/using/gs-overview.md)。
 
 ## 什麼是建置升級？
 
@@ -209,4 +209,4 @@ Adobe將在進行任何更改之前備份您的系統。 但是，如果非生�
 * [執行版本編號升級](../../production/using/build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
 * [Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html)
-* [Gold Standard計畫](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] 方案](../../rn/using/gs-overview.md)
