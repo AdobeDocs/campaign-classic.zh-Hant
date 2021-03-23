@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 3%
+source-wordcount: '711'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 3%
 
 ## 硬體和基礎架構{#hardware-and-infrastructure}
 
-本[頁面](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)中詳細說明內部部署Campaign Classic硬體需求的一般准則。
+本[頁](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)中詳細說明了現場Campaign Classic硬體要求的一般指南。
 
-諮詢團隊可為代管客戶提供工具，讓您輕鬆檢視資料庫中各種表格使用了多少空間，以及SFTP網站上使用多少空間。 此外，它還提供工具，讓您能夠清除不必要的資料。 如果您需要實作此工具，請連絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 以下是使用此工具檢查的幾項重要事項：
+諮詢團隊可為代管客戶提供工具，讓您輕鬆檢視資料庫中各種表格使用了多少空間，以及SFTP網站上使用多少空間。 此外，它還提供工具，讓您能夠清除不必要的資料。 如果您需要實作此工具，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 以下是使用此工具檢查的幾項重要事項：
 
 * 如果索引大小大於表格大小，則需要真空。
 * 檢查具有最大部落格的表。 如果這些表格經常使用，則需要抽空。
@@ -37,8 +37,8 @@ Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#m
 
 大多數時候，效能問題都與資料庫維護相關。 以下是要檢查的主要項目：
 
-* 配置：我們建議檢查初始Adobe Campaign平台設定，並執行完整硬體檢查。
-* Adobe Campaign平台的安裝與設定：檢查網路組態和平台傳遞能力選項。
+* 配置：我們建議檢查初始的Adobe Campaign平台配置並運行完整的硬體檢查。
+* Adobe Campaign平台的安裝與配置：檢查網路組態和平台傳遞能力選項。
 * 資料庫維護：確保資料庫清理任務可以運行，並確保資料庫維護已正確排程並執行。 檢查工作表的數量和大小。
 * 即時診斷：檢查進程和平台日誌檔案，然後在重新建立問題時監視資料庫活動。
 
@@ -52,7 +52,7 @@ Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#m
 
 * MTA和MTAChild進程和記憶體：**mta**&#x200B;模組將消息分發到其&#x200B;**mtachild**&#x200B;子模組。 每個&#x200B;**mtachild**&#x200B;在向統計伺服器請求授權併發送消息之前準備消息。 如需詳細資訊，請參閱此[頁面](../../installation/using/email-deliverability.md)。
 * TLS配置：不建議全局啟用TLS，因為它可以降低吞吐量。 相反，應視需要調整由可傳遞性團隊管理的每網域TLS設定。 如需詳細資訊，請參閱此[頁面](../../installation/using/email-deliverability.md#mx-configuration)。
-* DKIM:為確保DKIM的安全級別，建議的加密大小為1024b。 大部分的存取提供者不會將低DKIM金鑰視為有效。 請參閱此[頁](../../delivery/using/technical-recommendations.md#dkim)和此[technote](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)。
+* DKIM:為確保DKIM的安全級別，建議使用1024b作為最佳做法。 大部分的存取提供者不會將低DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ## 傳遞能力問題{#deliverability-issues}
 
@@ -67,4 +67,4 @@ Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#m
 
 >[!NOTE]
 >
->另請參閱[傳遞能力關鍵點](../../delivery/using/deliverability-key-points.md)部分。
+>另請參閱[Deliverability](../../delivery/using/about-deliverability.md)一節。 有關交付能力的深入探討，請參閱[Adobe交付能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
