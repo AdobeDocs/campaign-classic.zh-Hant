@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 監控Adobe Campaign Classic中的傳遞能力
-description: 瞭解Adobe Campaign Classic中傳送性監控的工具與准則。
+title: Adobe Campaign Classic的可交付性監測
+description: 瞭解有關Adobe Campaign Classic地區可交付性監控的工具和准則。
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: fa5679d91808edb8e3916d5f0e0f54c73198e934
+source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '531'
 ht-degree: 2%
 
 ---
@@ -17,16 +17,23 @@ ht-degree: 2%
 
 # 監視傳遞能力{#monitoring-deliverability}
 
-以下是Adobe Campaign提供的不同監控工具的詳細資訊，以及傳送性監控的其他相關准則。
+以下是Adobe Campaign提供的不同監控工具的詳細資訊，以及運用Adobe Campaign提供的功能監控平台可交付性的其他相關指引。
 
-## 監控工具{#monitoring-tools}
+## 傳遞能力監視 {#configuration}
 
-使用Adobe Campaign提供的功能監控平台的傳遞能力。
+此功能可透過Adobe Campaign的專屬套件取得。 若要使用，必須安裝此套件。 完成後，重新啟動伺服器，以便將包納入考慮範圍。
+* 對於代管和混合式客戶端，**可傳遞性監控**&#x200B;是由Adobe技術支援和顧問在實例上配置的。 如需詳細資訊，請洽詢您的Adobe帳戶主管。
+
+* 對於內部部署安裝，您必須通過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜單安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;軟體包。 有關詳細資訊，請參見[安裝Campaign Classic標準軟體包](../../installation/using/installing-campaign-standard-packages.md)。
+
+在Adobe Campaign Classic,**傳遞性監控**&#x200B;由&#x200B;**[!UICONTROL Refresh for deliverability]**&#x200B;工作流管理。 它預設會安裝在所有例項上，讓您初始化彈回郵件資格規則清單、網域清單和MX清單。 安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;套件後，此工作流程會在每晚執行，以定期更新規則清單，並讓您主動管理平台傳遞能力。
 
 Deliverability套件可讓您存取：
 
 * [收件匣轉換報表](../../delivery/using/inbox-rendering.md)可讓您在主要電子郵件用戶端上預覽訊息，以掃描內容和信譽。
 * 訊息品質（收件匣、垃圾訊息）概觀。
+
+## 監控工具{#monitoring-tools}
 
 您也可以使用下列工具：
 
@@ -48,24 +55,10 @@ Deliverability套件可讓您存取：
 * 定期檢查整個平台的[傳送吞吐量](../../reporting/using/global-reports.md#delivery-throughput)，以驗證它是否與原始設定一致。
 * 檢查傳送範本中的[retries](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)是否已正確設定（30分鐘的重試週期，以及超過20次重試）。
 * 定期驗證[bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)郵箱是否可訪問，且帳戶不會過期。
-* 檢查每個傳送吞吐量，以確定其與傳送內容的有效性一致(例如：&#39;flash銷售&#39;應在幾分鐘內完成，而非數天內完成)。
+* 檢查從[傳送控制面板](../../delivery/using/delivery-dashboard.md)存取的每個傳送總處理能力，以確定其與傳送內容的有效性一致(例如，&#39;flash銷售&#39;應在幾分鐘內完成，而非數天內完成)。
 * 使用[waves](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)時，請確認每個波片有足夠的時間完成，然後再觸發下一個波片。
 * 檢查錯誤數和新的[隔離](../../delivery/using/understanding-quarantine-management.md)是否與其他傳送一致。
 * 請仔細查閱[傳送記錄](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)，以檢查反白顯示的錯誤類型（登入清單、DNS問題、反垃圾訊息規則等）。
-
-## 信號垃圾郵件{#signal-spam}
-
-Signal Spam是法國服務，為法國ISP(Orange、SFR)提供匿名回饋迴路報告。
-
-* 本服務可讓您追蹤法國ISP的聲譽，並追蹤客戶的活動演變。
-
-* Signal Spam也提供直接投訴，讓使用者透過專用介面登入。 然後，這些投訴會被隔離在電子郵件地址資料庫中。
-
-## 250ok {#deliverability-250ok}
-
-[250](https://250ok.com/) okis是Adobe提供性內部工具的輔助監控解決方案，提供IP和網域密碼清單以及信譽指標。
-
-提供的資訊是即時的，可提供主動幫助。
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
