@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 19%
+source-wordcount: '296'
+ht-degree: 16%
 
 ---
 
@@ -56,5 +56,5 @@ Adobe Campaign提供&#x200B;**Federated Data Access**(FDA)選項，以處理儲�
 * [發行說明](../../rn/using/latest-release.md)
 * [Campaign Classic升級](../../rn/using/rn-overview.md)
 * [已過時及已移除的功能](../../rn/using/deprecated-features.md)
-* [Gold Standard 版本](../../rn/using/gold-standard.md)
-* [Gold Standard計畫](https://helpx.adobe.com/tw/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] 釋放](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard] 方案](../../rn/using/gs-overview.md)
