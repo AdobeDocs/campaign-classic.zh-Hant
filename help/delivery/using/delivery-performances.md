@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '458'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,6 @@ ht-degree: 5%
 
 * **傳送的大小**:大型傳送可能需要更長的時間才能完成。MTA子系設定為處理預設批次大小，這適用於大部分的例項，但傳送速度持續緩慢時，需要加以檢查。
 * **傳送的目標**:傳送效能禁止受到軟反彈錯誤的影響，這些錯誤會根據重試設定進行處理。錯誤數越多，則需要重試的次數越多。
-* **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。您也可以檢查IP信譽和傳遞性問題。 如需詳細資訊，請參閱Adobe Campaign [傳遞能力最佳實務指南](../../delivery/using/deliverability-key-points.md)和[本頁](../../delivery/using/about-deliverability.md)。
+* **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。您也可以檢查IP信譽和傳遞性問題。 有關詳細資訊，請參閱[本部分](../../delivery/using/about-deliverability.md)和[Adobe交付能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
 
 平台與資料庫維護也會影響傳送傳送的效能。 有關詳細資訊，請參見[此頁面](../../production/using/database-performances.md)。
