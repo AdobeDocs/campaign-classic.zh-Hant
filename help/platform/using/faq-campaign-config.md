@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -41,9 +41,9 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 ## 如何配置電子郵件傳遞機制？{#how-to-configure-email-deliverability-}
 
-除了「[傳遞能力配置](../../delivery/using/about-deliverability.md#configuration)」章節，請閱讀傳遞能力技術建議，以瞭解如何配置執行個體，以充份發揮 Campaign 傳遞功能。
+除了[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)之外，請閱讀傳遞能力技術建議，以瞭解如何設定實例，以便最大化促銷活動傳遞能力。
 
-[按一下這裡以瞭解更多](../../delivery/using/technical-recommendations.md)。
+[按一下這裡以瞭解更多](../../delivery/using/about-deliverability.md)。
 
 ## 如何實施內容核准？{#how-can-i-implement-content-approval-}
 
