@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 4%
+source-wordcount: '629'
+ht-degree: 3%
 
 ---
 
@@ -87,7 +87,7 @@ ajouter screenshot -->
  </tbody> 
 </table>
 
-如要瞭解如何最佳化Adobe Campaign電子郵件的傳遞能力，請參閱Adobe Campaign [傳遞能力最佳實務指南](../../delivery/using/deliverability-key-points.md)和[本頁](../../delivery/using/about-deliverability.md)。
+如要瞭解如何最佳化您的Adobe Campaign電子郵件的傳遞能力，請參閱[本節](../../delivery/using/about-deliverability.md)。 有關交付能力的深入探討，請參閱[Adobe交付能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
 
 ## 暫掛狀態{#pending-status}
 
