@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2605'
+source-wordcount: '2613'
 ht-degree: 15%
 
 ---
@@ -119,13 +119,13 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 ## 將地址傳送到隔離區的條件 {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原因（請參閱[彈回郵件限定](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)）和[傳送失敗類型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)來管理隔離。
+Adobe Campaign根據遞送失敗類型和在錯誤資訊限定期間分配的原因（請參閱[彈回郵件限定](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)）和[遞送失敗類型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)管理隔離。
 
 * **忽略錯誤**：忽略的錯誤不會傳送要隔離的地址。
 * **硬錯誤**：會立即將相對應的電子郵件地址傳送至隔離區。
 * **軟錯誤**：軟錯誤不會立即傳送要隔離的地址，但會增加錯誤計數器。有關詳細資訊，請參閱[軟錯誤管理](#soft-error-management)。
 
-如果使用者將電子郵件歸類為垃圾訊息（[回饋迴路](../../delivery/using/technical-recommendations.md#feedback-loop)），則會自動將訊息重新導向至Adobe管理的技術郵箱。 然後，用戶的電子郵件地址會自動發送到隔離區。
+如果用戶將電子郵件定為垃圾郵件（[反饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)），則會自動將郵件重定向到由Adobe管理的技術郵箱。 然後，用戶的電子郵件地址會自動發送到隔離區。
 
 在隔離地址清單中，**[!UICONTROL Error reason]**&#x200B;欄位指明了將選定地址置於隔離中的原因。 Adobe Campaign　中的隔離區會區分大小寫。請務必以小寫匯入電子郵件地址，如此一來，稍後就不會將它們重新設為目標。
 
@@ -242,7 +242,7 @@ HTTP/V2通訊協定可讓每個推播傳送直接提供意見和狀態。 如果
 
 **適用於Android V1**
 
-對於每個通知，Adobe Campaign會直接從FCM伺服器接收同步錯誤。 Adobe促銷活動會即時處理這些錯誤，並根據錯誤的嚴重性產生硬錯誤或軟錯誤，並可執行重試：
+對於每個通知，Adobe Campaign直接從FCM伺服器接收同步錯誤。 Adobe促銷活動會即時處理這些錯誤，並根據錯誤的嚴重性產生硬錯誤或軟錯誤，並可執行重試：
 
 * 負載長度已超出，連接問題，服務可用性問題：重試，軟錯誤，失敗原因為&#x200B;**[!UICONTROL Refused]**。
 * 超過設備配額：無重試，軟錯誤，失敗原因為&#x200B;**[!UICONTROL Refused]**。
@@ -258,7 +258,7 @@ HTTP/V2通訊協定可讓每個推播傳送直接提供意見和狀態。 如果
 * 傳送期間連線遺失：軟錯誤，故障原因&#x200B;**[!UICONTROL Refused]**，將執行重試。
 * Baidu在傳送期間傳回的同步錯誤：硬錯誤，故障原因&#x200B;**[!UICONTROL Refused]**，未執行重試。
 
-Adobe Campaign每10分鐘與Baidu伺服器連絡，以擷取已傳送訊息的狀態並更新廣播。 如果消息被聲明為已發送，則廣播中消息的狀態將設定為&#x200B;**[!UICONTROL Received]**。 如果Baidu宣告錯誤，狀態會設為&#x200B;**[!UICONTROL Failed]**。
+Adobe Campaign每10分鐘與Baidu伺服器聯繫一次，以檢索發送消息的狀態，並更新廣播。 如果消息被聲明為已發送，則廣播中消息的狀態將設定為&#x200B;**[!UICONTROL Received]**。 如果Baidu宣告錯誤，狀態會設為&#x200B;**[!UICONTROL Failed]**。
 
 **適用於Android V2**
 
