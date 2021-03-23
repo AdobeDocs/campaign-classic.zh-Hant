@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 7%
+source-wordcount: '1278'
+ht-degree: 6%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 7%
 
 ## 最佳化個人化{#optimize-personalization}
 
-為避免常見問題，避免您無法執行傳送作業，並改善收件者的體驗，Adobe Campaign可讓您個人化您的訊息。
+為避免常見問題，避免您無法執行傳送，並改善收件者的體驗，Adobe Campaign可讓您個人化訊息。
 
 您可以使用儲存在Adobe Campaign資料庫中或透過追蹤、登陸頁面、訂閱等方式收集的收件者資料。
 個人化基本資訊會顯示在[本節](../../delivery/using/personalization-fields.md)中。
 
 請確定您的訊息內容已正確設計，以避免任何通常與個人化相關的錯誤。
 
-**提示**:在來自第三方廠商提供之外部檔案的個人化欄位中，外部HTML內容可能錯誤。若要避免此情況，請檢查語法、使用標籤、字元等。 例如，Adobe Campaign個人化標籤一律有下清單格：&lt;%=table.field%>。 如需詳細資訊，請參閱[本節](../../delivery/using/about-personalization.md)。
+**提示**:在來自第三方廠商提供之外部檔案的個人化欄位中，外部HTML內容可能錯誤。若要避免此情況，請檢查語法、使用標籤、字元等。 例如，Adobe Campaign個人化標籤總有下列格式：&lt;%=table.field%>。 如需詳細資訊，請參閱[本節](../../delivery/using/about-personalization.md)。
 
 在個人化區塊中使用參數不正確可能是個問題。 例如，JavaScript中的變數應使用如下：
 
@@ -110,11 +110,11 @@ ht-degree: 7%
 
 若要避免常見的格式錯誤，請檢查下列元素：
 
-* 更正&#x200B;**日期格式**:Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能。 [進一步了解](../../delivery/using/formatting.md#date-display)
+* 更正&#x200B;**日期格式**:Adobe Campaign提供JavaScript範本和XSL樣式表的日期格式化函式。 [進一步了解](../../delivery/using/formatting.md#date-display)
 
-* 電子郵件中&#x200B;**授權字元**&#x200B;的用法：電子郵件地址的有效字元清單已在「XtkEmail_Characters」選項中定義。 瞭解如何存取本節](../../installation/using/configuring-campaign-options.md)中的促銷活動選項[。 若要正確處理特殊字元，Adobe Campaign必須以Unicode安裝。
+* 電子郵件中&#x200B;**授權字元**&#x200B;的用法：電子郵件地址的有效字元清單已在「XtkEmail_Characters」選項中定義。 瞭解如何存取本節](../../installation/using/configuring-campaign-options.md)中的促銷活動選項[。 要正確處理特殊字元，Adobe Campaign必須安裝在Unicode中。
 
-* **電子郵件驗證**&#x200B;的配置：請確定電子郵件標題包含DKIM簽名。 DKIM（域密鑰標識的郵件）驗證允許接收電子郵件伺服器驗證消息確實是由其聲稱發送者或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 如需詳細資訊，請參閱[本章節](../../delivery/using/technical-recommendations.md#dkim)。
+* **電子郵件驗證**&#x200B;的配置：請確定電子郵件標題包含DKIM簽名。 DKIM（域密鑰標識的郵件）驗證允許接收電子郵件伺服器驗證消息確實是由其聲稱發送者或實體發送的，以及消息內容是否在最初發送（和DKIM「簽名」）和接收時間之間發生了更改。 此標準通常使用「寄件者」或「寄件者」標題中的網域。 有關詳細資訊，請參閱[Adobe交付能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 互動式電子郵件設計
 
@@ -124,7 +124,7 @@ ht-degree: 7%
 
 * 使用預覽模式並傳送校樣，以盡可能多的裝置來測試演算效果
 
-* Adobe Campaign Classic數位內容編輯器(DCE)模組包含一些互動式設計格式的範本，適用於透過&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**&#x200B;行動裝置。 閱讀本文](https://theblog.adobe.com/responsive-email-design-101/)，瞭解更多[資訊
+* Adobe Campaign Classic數字內容編輯器(DCE)模組包含一些響應性設計格式的模板，可通過&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**&#x200B;為移動設備提供。 閱讀本文](https://theblog.adobe.com/responsive-email-design-101/)，瞭解更多[資訊
 
 ## 管理影像{#manage-images}
 
@@ -156,8 +156,8 @@ ht-degree: 7%
 
 ## 預覽您的訊息{#preview-msg}
 
-Adobe建議預覽您的訊息，以檢查其個人化，以及收件者如何看到您的傳送。
+Adobe建議預覽您的訊息，以檢查其個人化，以及收件者將如何看到您的傳送。
 
 * 在傳送精靈中，**[!UICONTROL Preview]**&#x200B;子標籤可讓您檢視收件者的每個內容的轉譯。 個性化欄位和內容的條件元素被所選配置檔案的相應資訊替換。 [進一步了解](../../delivery/using/defining-the-email-content.md#message-content)
 
-* 每次預覽期間會執行自動反垃圾郵件檢查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子標籤中，檢查[ SpamAssassin](../../delivery/using/spamassassin.md)垃圾訊息計分。  按一下&#x200B;**[!UICONTROL More...]**&#x200B;以進一步瞭解警告。  在這麼做之前，請確定SpamAssassin已正確安裝並設定在Adobe Campaign應用程式伺服器上。 [進一步了解](../../installation/using/configuring-spamassassin.md)
+* 每次預覽期間會執行自動反垃圾郵件檢查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子標籤中，檢查[ SpamAssassin](../../delivery/using/spamassassin.md)垃圾訊息計分。  按一下&#x200B;**[!UICONTROL More...]**&#x200B;以進一步瞭解警告。  在執行此操作之前，請確定SpamAssassin已正確安裝並設定在Adobe Campaign應用程式伺服器上。 [進一步了解](../../installation/using/configuring-spamassassin.md)
