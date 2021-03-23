@@ -6,9 +6,9 @@ description: 配置整合
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 您的Adobe Campaign Classic版本不支援管道。
 
 1. 檢查配置檔案中是否存在[!DNL pipelined]元素。 否則表示不支援。
-1. 升級至Campaign 20.3或Gold Standard 11。
+1. 升級至Campaign 20.3或[!DNL Gold Standard] 11。
 
 **Pipelined fails with &quot;aurait duj commencer par  `[` ou `{` (iRc=16384)&quot;**
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 1. 檢查authPrivateKey是否已設定。
 1. 檢查authPrivateKey:開頭為@，結尾為=，長度約為4000個字元。
 1. 尋找原始金鑰並檢查其是否為：以RSA格式，長4096位，開頭為—BEGIN RSA PRIVATE KEY —。
-   <br> 如有必要，請重新建立索引鍵並在Adobe Analytics中註冊。
+   <br> 如有必要，請重新建立索引鍵並在Adobe Analytics註冊。
 1. 檢查密鑰是否與[!DNL pipelined]在同一實例中編碼。 <br>如有必要，請使用範例JavaScript或工作流程重做編碼。
 
 **流水線失敗，「在驗證期間無法讀取代號」**
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 當Analytics時間戳記比促銷活動中事件的建立日期早得多時。
 
-一般而言，觸發器可能需要15-90分鐘才能啟動行銷促銷活動。 這視資料收集的實作、在管線上載入、定義觸發器的自訂設定，以及Adobe Campaign中的工作流程而定。
+一般而言，觸發器可能需要15-90分鐘才能啟動行銷促銷活動。 這視資料收集的實作、在管道上載入、定義觸發器的自訂設定，以及Adobe Campaign的工作流程而定。
 
 1. 檢查[!DNL pipelined]進程是否正在運行。
 1. 在pipelined.log中查找可能導致重試的錯誤。 修正錯誤（如果適用）。
