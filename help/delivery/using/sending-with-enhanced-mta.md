@@ -1,37 +1,37 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 使用Adobe Campaign Classic中的增強MTA傳送
-description: 瞭解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍和特定性。
+title: 隨增強的MTA一起發送，在Adobe Campaign Classic
+description: 瞭解使用Adobe Campaign增強型MTA傳送電子郵件的範圍和特定性。
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 2%
+source-wordcount: '1892'
+ht-degree: 3%
 
 ---
 
 
-# 使用增強的MTA發送{#sending-with-enhanced-mta}
+# 使用增強的 MTA 傳送 {#sending-with-enhanced-mta}
 
-**Adobe Campaign Enhanced MTA**（郵件傳輸代理）提供升級的傳送基礎架構，可改善傳送能力、信譽、吞吐量、報告、彈回處理、IP提升和連線設定管理。
+**Adobe Campaign增強型MTA**（郵件傳輸代理）提供了升級的發送基礎結構，允許改進傳送能力、信譽、吞吐量、報告、彈回處理、IP加速和連接設定管理。
 
 它的實作目的在於改善擴充性、提高傳送的總處理能力，並協助更快傳送更多電子郵件。 這是透過新的可調式傳送技術實現的，可根據來自網際網路服務供應商的意見回應即時變更電子郵件傳送設定。
 
 >[!IMPORTANT]
 >
->Adobe Campaign Enhanced MTA僅適用於Campaign Classic代管或混合型客戶。 無法升級Campaign Classic內部部署安裝，以使用增強的MTA。
+>Adobe Campaign增強型MTA僅適用於Campaign Classic代管或混合型客戶。 Campaign Classic內部部署安裝無法升級為使用增強的MTA。
 
-如果您在2018年9月後已布建Campaign Classic例項，則您會使用增強的MTA。 對於所有其他Campaign Classic客戶，請參閱以下[常見問答](#enhanced-mta-faq)。
+如果您在2018年9月後已布建Campaign Classic例項，則您會使用增強的MTA。 對於所有其他Campaign Classic客戶，請參閱下面的[常見問題](#enhanced-mta-faq)。
 
 增強的MTA實作可能會影響部分現有的促銷活動功能。 有關詳細資訊，請參閱[增強的MTA特性](#enhanced-mta-impacts)。
 
 >[!NOTE]
 >
->如果您是Adobe Campaign的使用者，但想要知道您的例項是否已升級至「增強型MTA」，請連絡您的內部「促銷活動」管理員。
+>如果您是Adobe Campaign的使用者，而您想知道您的例項是否已升級至增強型MTA，請連絡您的內部促銷活動管理員。
 
 ## 常見問題 {#enhanced-mta-faq}
 
@@ -39,17 +39,17 @@ ht-degree: 2%
 
 **什麼是增強的MTA?**
 
-Adobe Campaign現在可升級為使用新的MTA（郵件傳輸代理），此MTA會執行SparkPost的商業電子郵件MTA，稱為&#x200B;**Momentum**。
+Adobe Campaign現在可升級為使用新的MTA（郵件傳輸代理），此代理會執行SparkPost的商業電子郵件MTA，稱為&#x200B;**Momentum**。
 
 Momentum代表創新、高效能的MTA技術，包括更聰明的彈回處理以及自動化傳送能力最佳化功能，可協助傳送者達到並維持最佳的收件匣傳送率。<!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
 
 **有哪些好處？**
 
-* 使用「增強型MTA」的Adobe Campaign用戶端看到整體總處理能力速度大幅提升，軟彈回彈率大幅降低。<!--300%--><!--90%+-->
+* 使用增強型MTA的Adobe Campaign客戶看到總吞吐量速度的大幅提升，軟彈回差的顯著降低。<!--300%--><!--90%+-->
 * 增強型MTA採用最新的MTA技術，為您的電子郵件傳送提供最佳的總處理能力。
 * 它可立即自動地調整，以符合收到的意見，確保以即時傳送資料傳送更精確、更智慧的電子郵件。
 
-**我是否可同時使用原生的Adobe Campaign MTA和增強的MTA?**
+**我是否可同時使用原生的Adobe CampaignMTA和增強的MTA?**
 
 否. 在您的例項升級後，您的電子郵件傳送只能使用增強的MTA。
 
@@ -68,9 +68,9 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 **升級至增強型MTA需要什麼？**
 
-如果您在2018年9月後已布建Campaign Classic例項，則不需要採取任何動作，因為您已使用增強的MTA。
+如果您在2018年9月後已布建Campaign Classic例項，則不需執行任何動作，因為您已使用增強的MTA。
 
-對於所有其他代管或部分代管（混合）客戶，Adobe Campaign團隊將會聯絡以協調移轉日期，並提供移轉所需適當步驟的詳細資訊。
+對於所有其他代管或部分代管（混合）客戶，Adobe Campaign團隊將聯絡協調移轉日期，並提供移轉所需適當步驟的詳細資訊。
 
 >[!IMPORTANT]
 >
@@ -78,9 +78,9 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 **將我的實例升級到增強型MTA的過程是什麼？**
 
-托管實例的整個流程需要幾分鐘的停機時間。 Adobe會在升級後24小時內監控電子郵件的吞吐量和傳遞能力，以評估對您電子郵件傳遞的任何影響。
+托管實例的整個流程需要幾分鐘的停機時間。 Adobe將在升級後24小時內監控電子郵件的吞吐量和傳遞能力，以評估對您電子郵件傳遞的任何影響。
 
-如果發現任何問題，Adobe可以快速並暫時將您的例項回復回原生的Adobe Campaign MTA。
+如果發現任何問題，Adobe可以快速並暫時將實例還原回原生Adobe CampaignMTA。
 
 目前，「增強型MTA」只會影響電子郵件通道。 您的推播通知和簡訊傳送將繼續使用原生的促銷活動MTA，而且升級不會對它造成任何影響。
 
@@ -92,13 +92,13 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 在您的實例升級為使用增強型MTA之前準備的任何交貨都需要重新準備，才能正確使用新的MTA。
 
-對於使用Adobe Campaign交易傳訊功能的客戶，任何觸發電子郵件的API呼叫都會在短暫的升級停機期間排入佇列，並在升級完成時嘗試進行。
+對於使用Adobe Campaign交易訊息功能的客戶，任何觸發電子郵件的API呼叫都會在短暫的升級停機期間排入佇列，並在升級完成時嘗試。
 
 ## 增強的MTA特異性{#enhanced-mta-impacts}
 
 ### 增強的MTA標題
 
-最新的「促銷活動傳統型」例項包含程式碼，可將必要的「增強型MTA」標題新增至每則訊息。 如果您使用Adobe Campaign 19.1(build 9032)或更新版本，而且不是這樣，您必須將&quot;useMomentum=true&quot;參數新增至您的行銷實例設定（在[serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)檔案中）。
+最新的Campaign Classic例項包含程式碼，可在每則訊息中新增所需的增強MTA標題。 如果您使用Adobe Campaign19.1(build 9032)或更高版本，而且不是這樣，則必須將&quot;useMomentum=true&quot;參數新增至您的行銷實例設定（在[serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)檔案中）。
 
 不過，如果您使用的舊例項不包含此程式碼，則必須將名為&#x200B;**[!UICONTROL Typology Rule for Enhanced MTAs]**的新排版規則新增至促銷活動例項中的所有現有排版。
 此規則由作為升級至增強型MTA的一部分安裝的**[!UICONTROL Typology]**&#x200B;軟體包添加。
@@ -113,7 +113,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 >[!IMPORTANT]
 >
->Adobe Campaign團隊針對如何安裝&#x200B;**[!UICONTROL Typology]**&#x200B;套件提供的指示應謹慎遵循。 否則，您的IP傳送電子郵件時可能會遇到重大問題。
+>應謹慎遵循Adobe Campaign小組關於如何安裝&#x200B;**[!UICONTROL Typology]**&#x200B;軟體包的說明。 否則，您的IP傳送電子郵件時可能會遇到重大問題。
 
 有關類型的詳細資訊，請參閱[本節](../../campaign/using/about-campaign-typologies.md)。
 
@@ -152,7 +152,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 ### DKIM簽署
 
 DKIM(DomainKeys Indified Mail)電子郵件驗證簽署由增強的MTA完成。 在「增強的MTA」升級中，原生Campaign MTA的DKIM簽署將會在「網域管理」表格中關閉。
-有關DKIM的詳細資訊，請參閱[本節](../../delivery/using/technical-recommendations.md#dkim)。
+有關DKIM的詳細資訊，請參閱[Adobe交付能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 傳送成功報告
 
