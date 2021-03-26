@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
+source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 7%
@@ -29,7 +29,7 @@ ht-degree: 7%
 >如對這些變更有任何疑問，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
-## 安全性更新
+## 安全性更新{#acc-security-updates}
 
 最新的促銷活動版本隨附安全性修正，加強針對伺服器端偽造要求(SSRF)問題的保護。 在本頁瞭解更多[的資訊。](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)
 
@@ -62,7 +62,7 @@ ht-degree: 7%
 >如果您無法在建議的時間範圍內升級，請&#x200B;**聯絡Adobe客戶服務團隊，以針對您的例項套用短期手動安全性修正。**
 
 
-## Campaign Classic客戶端控制台更新
+## Campaign Classic客戶端控制台更新{#acc-cc-updates}
 
 **現已提供**&#x200B;控制台版本，應安裝以解決最近識別的回歸。 此回歸無法使用用戶端主控台的某些元件，例如傳送中的日期選擇器和影像管理。 **控制台** 升級是必備的。
 
@@ -105,7 +105,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 * [瞭解如何安裝Campaign Client Console](../installation/using/installing-the-client-console.md)。
 
-## 與Experience Cloud觸發器整合
+## 與Experience Cloud觸發器整合{#acc-triggers-updates}
 
 舊版驗證服務已到期。 觸發器整合驗證原本是以oAUTH驗證設定為基礎，以存取管線，現在已移至Adobe I/O。它將於2021年11月30日&#x200B;**退休。**[進一步瞭解](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
 
@@ -131,7 +131,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 [瞭解如何移轉至Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
-## APN更新
+## APN更新{#acc-apns-updates}
 
 ### 基於HTTP/2的APNs提供者API
 
