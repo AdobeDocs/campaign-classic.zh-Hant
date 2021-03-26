@@ -6,9 +6,9 @@ description: Technote
 hide: false
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: a21f970b6b81105517a11bcbd7f334173acc76e4
+source-git-commit: 08c6e84e07da2811c91aa58ddf40c5781de2b163
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,11 @@ ht-degree: 0%
 
 1. 從本頁](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL)下載&#x200B;**AAACertificateServices 5/12/2020**&#x200B;根證書[。
 
-1. 將它新增至作業系統信任商店。
+1. 檢查AAA憑證是否同時存在於您的OS和JAVAtrustore中。 如果沒有，請加入。
 
 1. 重新啟動Adobe CampaignWeb服務：
 
    ```
    nlserver restart web
    ```
+
