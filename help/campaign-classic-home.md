@@ -5,7 +5,7 @@ product: campaign
 title: Adobe Campaign Classic 產品文件
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 5097eea4cf842b93af77ee828693f76a7182a8fe
+source-git-commit: 9ce945af1ed1cabd5041a28812e540f814211071
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 52%
@@ -38,7 +38,7 @@ ht-degree: 52%
 
 ## 熱門頁面
 
-<table>
+<table style="table-layout:fixed">
 <tr>
   <td>
     <a href="platform/using/common-questions.md">
