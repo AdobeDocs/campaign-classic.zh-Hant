@@ -7,7 +7,7 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -144,7 +144,7 @@ ht-degree: 7%
 * 管理員設定或重設任何運算子密碼的能力已恢復。 若要這麼做，請在運算子上按一下滑鼠右鍵，選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定運算子的新密碼。 我們建議營運商在第一次重新連線時變更其密碼。 如需詳細資訊，請參閱[相關的文件](../../production/using/lost-password.md)，以瞭解詳情。
 * 為支援Adobe Target的新多租賃功能，現在在設定選項和外部帳戶以與Target整合時，可將新的&quot;at_property&quot;參數新增至URL。 此參數的值可在Adobe Target找到，且在執行對Target的呼叫時，促銷活動將會使用。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
 * 您現在可以指定在按一下Adobe Target提供的影像時開啟的預設登陸頁面。 以前，按一下該影像會在建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
-* 已在外部帳戶中添加「啟用SMPP跟蹤&#x200B;**」複選框以強制跟蹤輸出。**&#x200B;如需詳細資訊，請參閱[相關的文件](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)，以瞭解詳情。
+* 已在外部帳戶中添加「啟用SMPP跟蹤&#x200B;**」複選框以強制跟蹤輸出。**&#x200B;如需詳細資訊，請參閱[相關的文件](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)，以瞭解詳情。
 
 **技術演變**
 
