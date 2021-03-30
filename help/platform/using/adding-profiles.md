@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: 新增用戶檔案
 description: 新增用戶檔案
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: 設定檔
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 82%
+source-wordcount: '78'
+ht-degree: 80%
 
 ---
 
 
-# 新增用戶檔案{#adding-profiles}
+# 添加配置檔案{#adding-profiles}
 
 在大部分情況下，用戶檔案會[透過工作流程匯入 Campaign](../../platform/using/import-export-workflows.md)。不過，您可以按一下 **[!UICONTROL Create]** 按鈕，直接從介面新增一或多個用戶檔案。然後將它們新增至資料庫。
 
