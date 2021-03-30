@@ -7,33 +7,31 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1974'
-ht-degree: 1%
+source-wordcount: '1963'
+ht-degree: 0%
 
 ---
 
 
-# 建立篩選{#creating-filters}
+# 建立篩選器{#creating-filters}
 
-## 簡介 {#introduction}
-
-當您在Adobe Campaign樹狀結構中導覽（從首頁的&#x200B;**[!UICONTROL Explorer]**&#x200B;功能表）時，資料庫中包含的資料會顯示在清單中。 這些清單可設定為只顯示運算子所需的資料。 然後可對篩選的資料啟動動作。 篩選設定可讓您從清單&#x200B;**[!UICONTROL dynamically]**&#x200B;中選取資料。 如果修改了資料，則更新過濾的資料。
+在Adobe Campaign樹中導航（從首頁的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜單）時，資料庫中包含的資料將顯示在清單中。 這些清單可設定為只顯示運算子所需的資料。 然後可對篩選的資料啟動動作。 篩選設定可讓您從清單&#x200B;**[!UICONTROL dynamically]**&#x200B;中選取資料。 如果修改了資料，則更新過濾的資料。
 
 >[!NOTE]
 >
->顯示配置在工作站級別本地定義。 它會儲存在隱藏的檔案中，有時可能需要清除此資料，尤其是在重新整理資料時發生問題時。 若要這麼做，請使用&#x200B;**[!UICONTROL File > Clear the local cache]**&#x200B;功能表。
+>用戶介面配置設定在設備級別本地定義。 有時可能需要清除此資料，尤其是在刷新資料時出現問題時。 若要這麼做，請使用&#x200B;**[!UICONTROL File > Clear the local cache]**&#x200B;功能表。
 
 ## 可用篩選器的類型學{#typology-of-available-filters}
 
-Adobe Campaign可讓您將篩選套用至資料清單。
+Adobe Campaign可讓您套用篩選至資料清單。
 
 這些篩選器可使用一次，或儲存以供日後使用。 您可以同時套用數個篩選。
 
-Adobe Campaign提供下列篩選類型：
+下列篩選類型適用於Adobe Campaign:
 
-* 預設篩選
+* **預設篩選**
 
    **預設篩選器**&#x200B;可透過清單上方的欄位存取。 它可讓您篩選預先定義的欄位（對於收件者描述檔，預設為姓名和電子郵件地址）。 您可以使用欄位輸入要篩選的字元，或從下拉式清單中選取篩選條件。
 
@@ -43,9 +41,9 @@ Adobe Campaign提供下列篩選類型：
   >
   >The **%** character replaces any character string. For example, the string `%@yahoo.com` lets you display all the profiles with an e-mail address in the domain "yahoo.com".
 -->
-您可以變更清單的預設篩選。 有關詳細資訊，請參閱[Arteling the default filter](#altering-the-default-filter)。
+您可以變更清單的預設篩選。 有關詳細資訊，請參閱[更改預設篩選器](#altering-the-default-filter)。
 
-* 簡單篩選
+* **簡單篩選**
 
    **簡單** 篩選器會在欄上共用一次性篩選器。它們是在顯示的欄上使用一個或多個簡單的搜尋准則來定義。
 
@@ -55,23 +53,23 @@ Adobe Campaign提供下列篩選類型：
 
    [建立簡單篩選器](#creating-a-simple-filter)中詳細說明了簡單篩選器。
 
-* 進階篩選
+* **進階篩選**
 
    **進階** 篩選器是使用資料的查詢或查詢組合來建立。
 
-   有關建立高級過濾器的詳細資訊，請參閱[建立高級過濾器](#creating-an-advanced-filter)。
+   如需建立進階篩選的詳細資訊，請參閱[建立進階篩選](#creating-an-advanced-filter)。
 
    您可以使用函式來定義篩選器的內容。 有關詳細資訊，請參閱[建立帶有函式的高級過濾器。](#creating-an-advanced-filter-with-functions)
 
    >[!NOTE]
    >
-   >如需在Adobe Campaign中建立查詢的詳細資訊，請參閱[本節](../../platform/using/about-queries-in-campaign.md)。
+   >有關在Adobe Campaign構建查詢的詳細資訊，請參閱[本節](../../platform/using/about-queries-in-campaign.md)。
 
-* 使用者篩選
+* **使用者篩選**
 
    **應用程式篩選器**&#x200B;是已儲存的進階篩選器，可與其他運算子使用及共用其組態。
 
-   位於清單上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕提供一組應用程式篩選器，可加以組合以調整篩選。 建立這些過濾器的方法顯示在[保存過濾器](#saving-a-filter)中。
+   位於清單上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕提供一組應用程式篩選器，可加以組合以調整篩選。 建立這些篩選器的方法顯示在「儲存篩選器」中。[](#saving-a-filter)
 
 ## 變更預設篩選器{#altering-the-default-filter}
 
@@ -96,7 +94,7 @@ Adobe Campaign提供下列篩選類型：
    >
    >[建立高級過濾器](#creating-an-advanced-filter)和[保存過濾器](#saving-a-filter)中詳細介紹了過濾器定義窗口。
 
-## 建立簡單過濾器{#creating-a-simple-filter}
+## 建立簡單篩選{#creating-a-simple-filter}
 
 要建立&#x200B;**簡單過濾器**，請應用以下步驟：
 
@@ -185,7 +183,7 @@ Adobe Campaign提供下列篩選類型：
 
    * **[!UICONTROL Field only]** 的雙曲餘切值。這是預設模式。
    * **[!UICONTROL Aggregate]** 以選擇要使用的匯總公式（計數、總計、平均、最大、最小）。
-   * **[!UICONTROL User filter]** 來選擇現有用戶篩選器之一。[儲存篩選器](#saving-a-filter)中詳細說明了使用者篩選器。
+   * **[!UICONTROL User filter]** 來選擇現有用戶篩選器之一。[儲存篩選器](#saving-a-filter)中詳細說明使用者篩選器。
    * **[!UICONTROL Expression]** 來訪問表達式編輯器。
 
       運算式編輯器可讓您定義進階篩選。 類似於：
@@ -196,9 +194,9 @@ Adobe Campaign提供下列篩選類型：
 
       >[!NOTE]
       >
-      >有關基於表達式建立篩選器的示例，請參閱[標識生日為](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is)的收件人。
+      >有關基於表達式建立篩選器的示例，請參閱[此部分](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is)。
 
-## 保存過濾器{#saving-a-filter}
+## 儲存篩選器{#saving-a-filter}
 
 篩選器是每個運算元專屬的，每當運算元清除其用戶端主控台的快取時，都會重新初始化篩選器。
 
