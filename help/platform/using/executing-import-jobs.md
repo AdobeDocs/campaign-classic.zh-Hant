@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '2955'
 ht-degree: 60%
 
 ---
 
 
-# 設定匯入工作 {#executing-import-jobs}
+# 配置導入作業{#executing-import-jobs}
 
 Adobe Campaign可讓您將資料從一或多個檔案匯入至資料庫，格式為文字、CSV、TAB或XML。 這些檔案與表 (主要或連結) 相關聯，並且源檔的每個欄位與資料庫的欄位相關聯。
 
@@ -35,7 +35,7 @@ Adobe Campaign可讓您將資料從一或多個檔案匯入至資料庫，格式
 
 在源檔中，每行與記錄重合。記錄中的資料由分隔符 (空格、製表符、字符等) 分隔。這意味著以行的形式檢索資料，並且每行與資料庫的欄位相關聯。
 
-## 第 1 步 - 選擇匯入範本 {#step-1---choosing-the-import-template}
+## 步驟1 —— 選擇導入模板{#step-1---choosing-the-import-template}
 
 啟動匯入精靈時，首先必須選擇範本。例如，要配置收到簡報的收件者的匯入，請按照以下步驟操作：
 
@@ -115,7 +115,7 @@ Adobe Campaign可讓您將資料從一或多個檔案匯入至資料庫，格式
 * **[!UICONTROL Auto-detect format]** 用於重新初始化資料源的格式。此選項可讓您將原始格式重新套用至透過&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;選項格式化的資料。
 * **[!UICONTROL Advanced parameters]**&#x200B;連結可讓您篩選來源資料並存取進階選項。 在此屏幕中，您可以選擇僅匯入部分檔案。您還可以定義篩選器，例如，根據相應行的值僅匯入「潛在客戶」或「客戶」類型的用戶。這些選項僅供專業 JavaScript 用戶使用。
 
-### 更改檔案格式 {#changing-the-file-format}
+### 更改檔案格式{#changing-the-file-format}
 
 **[!UICONTROL Click here to change the file format...]**&#x200B;選項可讓您格式化來源檔案的資料，尤其是指定欄分隔符和每個欄位的資料類型。 此配置通過以下視窗執行：
 
@@ -244,7 +244,7 @@ Adobe Campaign可讓您將資料從一或多個檔案匯入至資料庫，格式
 
 選項&#x200B;**[!UICONTROL Reject]**&#x200B;和&#x200B;**[!UICONTROL Ignore]**&#x200B;如上所示。
 
-### 發生錯誤時的行為 {#behavior-in-the-event-of-an-error}
+### 發生錯誤{#behavior-in-the-event-of-an-error}時
 
 大多數資料傳輸操作會產生各種類型的錯誤 (不一致的行格式，無效的電子郵件地址等)。匯入引擎生成的所有錯誤和所有警告都將儲存並連結到匯入執行個體。
 
@@ -311,7 +311,7 @@ Adobe Campaign可讓您將資料從一或多個檔案匯入至資料庫，格式
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      您可以按一下&#x200B;**[!UICONTROL Select link]**，然後按一下&#x200B;**[!UICONTROL Create]**，為這些收件者建立新清單。 建立和管理清單在[建立和管理清單](../../platform/using/creating-and-managing-lists.md)中顯示。
+      您可以按一下&#x200B;**[!UICONTROL Select link]**，然後按一下&#x200B;**[!UICONTROL Create]**，為這些收件者建立新清單。 清單的建立和管理在[本節](../../platform/using/creating-and-managing-lists.md)中介紹。
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -329,7 +329,7 @@ Adobe Campaign可讓您將資料從一或多個檔案匯入至資料庫，格式
 
 按一下&#x200B;**[!UICONTROL Next]**&#x200B;以驗證此步驟並顯示下列步驟。
 
-## 第 6 步 - 啟動匯入 {#step-6---launching-the-import}
+## 步驟6 —— 啟動導入{#step-6---launching-the-import}
 
 精靈的最後一步允許您啟動資料匯入。要執行此操作，請按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕。
 
