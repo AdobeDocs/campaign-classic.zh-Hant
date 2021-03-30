@@ -2,20 +2,20 @@
 solution: Campaign Classic
 product: campaign
 title: 設定匯出工作
-description: 瞭解如何在Campaign Classic中設定和執行匯出工作。
+description: 瞭解如何在Campaign Classic中配置和執行導出作業。
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 47%
+ht-degree: 45%
 
 ---
 
 
-# 設定匯出工作 {#executing-export-jobs}
+# 配置導出作業{#executing-export-jobs}
 
 導出作業允許您訪問和提取資料庫中的資料：連絡人、客戶、清單、區段等。
 
@@ -25,7 +25,7 @@ ht-degree: 47%
 
 導出嚮導在建立新導出作業後顯示(請參閱[建立導入和導出作業](../../platform/using/creating-import-export-jobs.md)。
 
-## 第 1 步 - 選擇匯出範本 {#step-1---choosing-the-export-template}
+## 步驟1 —— 選擇導出模板{#step-1---choosing-the-export-template}
 
 啟動匯出精靈時，首先必須選擇範本。例如，要配置最近註冊的收件者的匯出，請按照以下步驟操作：
 
@@ -63,7 +63,7 @@ ht-degree: 47%
 
    您必須輸入上次修改的日期。它可以從欄位中檢索或計算。
 
-## 第 3 步 - 定義輸出格式 {#step-3---defining-the-output-format}
+## 步驟3 —— 定義輸出格式{#step-3---defining-the-output-format}
 
 選擇匯出檔案的輸出格式。可以使用以下格式：文字、固定行文字、CSV 和 XML。
 
@@ -85,7 +85,7 @@ ht-degree: 47%
 
 1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以呼叫函式。 有關詳細資訊，請參閱[函式清單](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
-## 第 5 步 - 對行進行排序 {#step-5---sorting-columns}
+## 步驟5 —— 對列{#step-5---sorting-columns}排序
 
 選擇行的排序順序。
 
@@ -125,7 +125,7 @@ ht-degree: 47%
 
 點擊精靈底部的標籤，從行中結果的預覽切換到 XML 中的結果。您還可以查看生成的 SQL 查詢。
 
-## 第 9 步 - 啟動匯出 {#step-9---launching-the-export}
+## 步驟9 —— 啟動導出{#step-9---launching-the-export}
 
 按一下&#x200B;**[!UICONTROL Start]**&#x200B;以啟動資料匯出。
 
