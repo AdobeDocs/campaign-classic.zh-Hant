@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -23,4 +23,4 @@ Adobe Campaign可讓您建立和管理資訊服務，例如電子報，並管理
 
 >[!NOTE]
 >
->此功能與Adobe Campaign的標準配置相同。 選用的應用程式Social Marketing可讓您透過Facebook和Twitter與客戶和潛在客戶聯絡。
+>這項功能與Adobe Campaign的標準一樣。 選用的應用程式Social Marketing可讓您透過Facebook和Twitter與客戶和潛在客戶聯絡。
