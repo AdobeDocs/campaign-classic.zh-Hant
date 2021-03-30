@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
+source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1612'
 ht-degree: 11%
 
 ---
@@ -32,9 +32,10 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。為了與外部系統�
 * [Adobe Experience Cloud外部帳戶](#adobe-experience-cloud-external-account)
 * [SFTP 外部帳戶](#sftp-external-account)
 * [Adobe Experience Manager 外部帳戶](#adobe-experience-manager-external-account)
-* [Amazon Simple Storage Service(S3)外部帳戶](#amazon-simple-storage-service--s3--external-account)
+* [Amazon簡易儲存服務(S3)外部帳戶](#amazon-simple-storage-service--s3--external-account)
 * [Microsoft Dynamics CRM外部帳戶](#microsoft-dynamics-crm-external-account)
 * [Salesforce CRM外部帳戶](#salesforce-crm-external-account)
+* [Azure Blob 儲存外部帳戶](#azure-blob-external-account)
 
 ## 建立外部帳戶 {#creating-an-external-account}
 
@@ -91,14 +92,14 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。為了與外部系統�
 
 ## 路由外部帳戶{#routing-external-account}
 
-**[!UICONTROL Routing]**&#x200B;外部帳戶可讓您根據所安裝的封裝，設定Adobe Campaign中的每個可用頻道。
+**[!UICONTROL Routing]**&#x200B;外部帳戶允許您根據所安裝的軟體包配置Adobe Campaign的每個可用通道。
 
 ![](assets/ext_account_7.png)
 
 可以配置以下通道：
 
 * [電子郵件](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [行動裝置（簡訊）](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [行動裝置（簡訊）](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [電話](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [代理商](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
@@ -147,18 +148,18 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取
 
 外部帳戶配置設定取決於資料庫引擎。 以下各節提供更多資訊：
 
-* 配置對[Azure Synapse](../../installation/using/configure-fda-synapse.md)的訪問
+* 配置對[Azure synapse](../../installation/using/configure-fda-synapse.md)的訪問
 * 配置對[Hadoop](../../installation/using/configure-fda-hadoop.md)的訪問
 * 配置對[Oracle](../../installation/using/configure-fda-oracle.md)的訪問
 * 配置對[Netezza](../../installation/using/configure-fda-netezza.md)的訪問
 * 配置對[SAP HANA](../../installation/using/configure-fda-sap-hana.md)的訪問
-* 配置對[雪花](../../installation/using/configure-fda-snowflake.md)的訪問
+* 配置對[Snowflake](../../installation/using/configure-fda-snowflake.md)的訪問
 * 配置對[Sybase IQ](../../installation/using/configure-fda-sybase.md)的訪問
 * 配置對[Teradata](../../installation/using/configure-fda-teradata.md)的訪問
 
 ## Web Analytics外部帳戶{#web-analytics-external-account}
 
-**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帳戶可讓您以區段的形式，將資料從Adobe Analytics轉送至Adobe Campaign。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動指標和屬性傳送至Adobe Analytics —— 資料連接器。
+**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帳戶允許您將資料以段的形式從Adobe Analytics轉發到Adobe Campaign。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動的指標和屬性傳送至Adobe Analytics-資料連接器。
 
 ![](assets/ext_account_10.png)
 
@@ -210,7 +211,7 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取
 
 ## Adobe Experience Cloud外部帳戶{#adobe-experience-cloud-external-account}
 
-若要使用Adobe ID連線至Adobe Campaign主控台，您必須設定&#x200B;**[!UICONTROL Adobe Experience Cloud (MAC)]**&#x200B;外部帳戶。
+要使用Adobe ID連接到Adobe Campaign控制台，必須配置&#x200B;**[!UICONTROL Adobe Experience Cloud (MAC)]**&#x200B;外部帳戶。
 
 ![](assets/ext_account_9.png)
 
@@ -232,7 +233,7 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取
 
 * **[!UICONTROL Callback server]**
 
-   存取Adobe Campaign例項的URL。
+   存取您的Adobe Campaign實例的URL。
 
 * **[!UICONTROL IMS organization ID]**
 
@@ -240,11 +241,11 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存取
 
 * **[!UICONTROL Association mask]**
 
-   可讓Enterprise Dashboard中的設定名稱與Adobe Campaign中的群組同步的語法。
+   語法，可讓Enterprise Dashboard中的設定名稱與Adobe Campaign的群組同步。
 
 * **[!UICONTROL Server]**
 
-   Adobe Experience Cloud實例的URL。
+   您的Adobe Experience Cloud實例的URL。
 
 * **[!UICONTROL Tenant]**
 
@@ -276,7 +277,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存�
 
 ## Adobe Experience Manager 外部帳戶 {#adobe-experience-manager-external-account}
 
-**[!UICONTROL AEM (AEM instance)]**&#x200B;外部帳戶可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容以及表單。
+**[!UICONTROL AEM (AEM instance)]**&#x200B;外部帳戶可讓您直接在Adobe Experience Manager管理電子郵件傳送內容以及表格。
 
 ![](assets/ext_account_5.png)
 
@@ -286,17 +287,17 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign以外伺服器的存�
 
 * **[!UICONTROL Port]**
 
-   用來連線至Adobe Experience Manager製作例項的帳戶名稱。
+   用於連線至Adobe Experience Manager編寫例項的帳戶名稱。
 
 * **[!UICONTROL Password]**
 
-   用來連線至Adobe Experience Manager製作例項的密碼。
+   用於連接到Adobe Experience Manager編寫實例的口令。
 
 如需詳細資訊，請參閱本[區段](../../integrations/using/about-adobe-experience-manager.md)。
 
-## Amazon Simple Storage Service(S3)外部帳戶{#amazon-simple-storage-service--s3--external-account}
+## Amazon簡單儲存服務(S3)外部帳戶{#amazon-simple-storage-service--s3--external-account}
 
-Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe Campaign。 可在工作流活動中設定。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
+Amazon簡單儲存服務(S3)連接器可用於將資料導入或導出到Adobe Campaign。 可在工作流活動中設定。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
 
 ![](assets/ext_account_3.png)
 
@@ -324,11 +325,11 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 * 使用&#x200B;**[!UICONTROL Use server side encryption]**&#x200B;複選框可以以S3加密模式儲存檔案。
 
-要瞭解在何處查找訪問密鑰ID和秘密訪問密鑰，請參閱Amazon Web Services [文檔](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
+要瞭解在何處查找訪問密鑰ID和秘密訪問密鑰，請參閱Amazon網站服務[文檔](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
 ## Microsoft Dynamics CRM外部帳戶{#microsoft-dynamics-crm-external-account}
 
-**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帳戶可讓您將Microsoft Dynamics資料匯入並匯出至Adobe Campaign。
+**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帳戶允許您將Microsoft Dynamics資料導入和導出到Adobe Campaign。
 
 在此[頁面](../../platform/using/crm-ms-dynamics.md)中進一步瞭解Campaign - Microsoft Dynamics CRM連接器。
 
@@ -388,7 +389,7 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 ![](assets/ext_account_17.png)
 
-若要設定Salesforce CRM外部帳戶以搭配Adobe Campaign運作，您必須提供下列詳細資訊：
+若要設定Salesforce CRM外部帳戶以搭配Adobe Campaign使用，您必須提供下列詳細資訊：
 
 * **[!UICONTROL Account]**
 
@@ -413,3 +414,23 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 對於此外部帳戶，您需要使用設定精靈來設定您的Salesforce CRM。
 
 有關此配置的詳細資訊，請參閱此[頁](../../platform/using/crm-connectors.md)。
+
+## Azure Blob儲存外部帳戶(#azure-blob-external-account)
+
+**Azure Blob儲存**&#x200B;外部帳戶可用於使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動將資料匯入或匯出至Adobe Campaign。 如需詳細資訊，請參閱本[區段](../../workflow/using/file-transfer.md)。
+
+![](assets/ext_account_23.png)
+
+要將&#x200B;**[!UICONTROL Azure external account]**&#x200B;配置為與Adobe Campaign合作，您需要提供以下詳細資訊：
+
+* **[!UICONTROL Server]**
+
+   您的Azure Blob儲存伺服器的URL。
+
+* **[!UICONTROL Encryption]**
+
+   在&#x200B;**[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**&#x200B;之間選擇的加密類型。
+
+* **[!UICONTROL Access key]**
+
+   若要瞭解在何處找到&#x200B;**[!UICONTROL Access key]**，請參閱此[頁](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
