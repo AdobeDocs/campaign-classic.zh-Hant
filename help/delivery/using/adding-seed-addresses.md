@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 5%
+source-wordcount: '335'
+ht-degree: 6%
 
 ---
 
 
-# 新增種子地址{#adding-seed-addresses}
+# 添加種子地址{#adding-seed-addresses}
 
 ## 傳送{#seed-addresses-in-a-delivery}中的種子地址
 
@@ -31,7 +31,7 @@ ht-degree: 5%
 
 1. 匯入地址範本並加以調整，以符合您的需求。
 
-   要執行此操作，請按一下&#x200B;**[!UICONTROL Import seed templates...]**&#x200B;連結，然後選擇包含地址模板的資料夾。 有關詳細資訊，請參閱[建立種子地址模板](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)。
+   要執行此操作，請按一下&#x200B;**[!UICONTROL Import seed templates...]**&#x200B;連結，然後選擇包含地址模板的資料夾。 如需詳細資訊，請參閱[本章節](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)。
 
    如有必要，在新增這些項目後，您可以按兩下，或按一下&#x200B;**[!UICONTROL Detail...]**&#x200B;按鈕以調整每個位址的內容。
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->當使用的收件者表不是預設的&#x200B;**nms:recipient**&#x200B;表格，而您使用Adobe Campaign的&#x200B;**[!UICONTROL Deliverability]**&#x200B;模組隨附的「收件匣轉譯」功能時，就會使用此選項。
+>當使用的收件者表不是預設的&#x200B;**nms:recipient**&#x200B;表，並且您正在使用Adobe Campaign **[!UICONTROL Deliverability]**&#x200B;模組提供的「收件箱呈現」功能時，將使用此選項。
 >
 >有關詳細資訊，請參閱[使用外部收件人表](../../delivery/using/using-an-external-recipient-table.md)和[收件箱呈現](../../delivery/using/inbox-rendering.md)上的文檔。
 
