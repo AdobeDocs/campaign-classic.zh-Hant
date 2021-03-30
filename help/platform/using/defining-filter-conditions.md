@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 37%
+ht-degree: 36%
 
 ---
 
@@ -146,7 +146,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_31.png)
 
-## 排定條件{#prioritizing-conditions}優先順序
+## 排定條件{#prioritizing-conditions}的優先順序
 
 本節說明如何利用工具列中的藍色箭頭來排列條件的優先順序。
 
@@ -259,7 +259,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按鈕（位於側表徵圖欄上方）添加要編輯表達式的輸出列。 有關編輯表達式的詳細資訊，請參閱[ Building expressions](#building-expressions)。
+>* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按鈕（位於側表徵圖欄上方）添加要編輯表達式的輸出列。 有關編輯表達式的詳細資訊，請參閱[本節](#building-expressions)。
 >* 按一下紅色的「x」(**Delete**)，以刪除輸出欄。
 >* 使用箭頭更改輸出列的順序。
 >* **[!UICONTROL Distribution of values]**&#x200B;可作為查看所選欄位值的分佈（例如，連結到接收城鎮、接收人語言等的分佈）的方式。
