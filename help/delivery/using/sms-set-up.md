@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 64f5b108173806aff53f7240e8c9d499cc332d72
+source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 34%
 
 ---
 
 
-# 設定SMS通道{#setting-up-sms-channel}
+# 配置SMS通道{#setting-up-sms-channel}
 
 若要傳送至行動電話，您需要：
 
@@ -286,7 +286,7 @@ CR：歸位
 
 ^ { } `[ ~ ]` |€
 
-## 關於文字編碼{#about-text-encodings}
+## 文字編碼{#about-text-encodings}
 
 傳送 SMS 訊息時，Adobe Campaign 可以使用一或多種文字編碼。每個編碼都有其專屬的字元集，並決定符合 SMS 訊息的字元數。
 
