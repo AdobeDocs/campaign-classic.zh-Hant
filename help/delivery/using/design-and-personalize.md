@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 6%
@@ -96,7 +96,7 @@ ht-degree: 6%
 根據預設，SMS 中的字元數量符合 GSM（行動通訊全球系統）標準。使用 GSM 編碼的 SMS 訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個 SMS 的 SMS 訊息最多只能有 153 個字元。
 
 音譯包括當 GSM 標準未考慮到 SMS 的一個字元時，用另一個字元取代該字元。請注意，將個人化欄位插入SMS訊息的內容可能會引入GSM編碼未考慮的字元。 您可以通過選中相應&#x200B;**[!UICONTROL External account]**的SMPP通道設定頁籤中的相應框來授權字元音譯。
-瞭解本節](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)的更多資訊。[
+瞭解本節](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)的更多資訊。[
 
 **提示**:
 
@@ -104,7 +104,7 @@ ht-degree: 6%
 
 * 不過，如果您的SMS訊息包含許多未經GSM標準考量的字元，則可讓音譯功能限制傳送訊息的成本。
 
-瞭解本節](../../delivery/using/sms-channel.md#about-character-transliteration)的更多資訊。[
+瞭解本節](../../delivery/using/sms-set-up.md#about-character-transliteration)的更多資訊。[
 
 ## 處理格式{#formatting}
 
