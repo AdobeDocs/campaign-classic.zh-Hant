@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: 開始使用權限
 description: 瞭解如何授與Campaign功能的存取權
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 存取管理
+role: 業務從業人員、管理員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 1%
+source-wordcount: '259'
+ht-degree: 2%
 
 ---
 
