@@ -7,29 +7,29 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: ba50892f7b9578cface142184a287d95c0e11370
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1663'
 ht-degree: 5%
 
 ---
 
 
-# 驗證傳遞 {#validating-the-delivery}
+# 驗證傳送{#validating-the-delivery}
 
 建立並設定傳送後，您必須先驗證傳送，才能將它傳送至主要目標。
 
 操作步驟：
 
-1. **分析傳送**:此步驟可讓您準備要傳送的訊息。請參閱[分析傳送](#analyzing-the-delivery)。
+1. **分析傳送**:此步驟可讓您準備要傳送的訊息。[進一步瞭解](#analyzing-the-delivery)。
 
    分析期間套用的規則顯示在[本節](#validation-process-with-typologies)中。 [更改批准模式](#changing-the-approval-mode)部分中詳細介紹了可用的驗證模式。
 
-1. **傳送校樣**:此步驟可讓您核准內容、URL、個人化欄位等。請參閱[發送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)和[定義特定證明目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+1. **傳送校樣**:此步驟可讓您控制內容、URL、個人化等。請參閱[傳送校對](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)和[定義特定校對目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)，瞭解更多資訊。
 
 >[!IMPORTANT]
 >
->這兩個步驟都必須在對訊息內容進行每次修改後執行。
+>上述兩個步驟在對消息內容進行每次修改後都必須執行。
 
 ## 分析傳送{#analyzing-the-delivery}
 
@@ -83,7 +83,7 @@ ht-degree: 5%
 >
 >如果要發送的消息數與您的配置不匹配，請按一下&#x200B;**[!UICONTROL Change the main delivery target]**&#x200B;連結。 這可讓您變更目標人口的定義，並重新開始分析。
 
-### 分析參數{#analysis-parameters}
+### 分析設定{#analysis-parameters}
 
 傳送屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤可讓您定義分析階段中訊息準備的相關資訊集。
 
@@ -95,7 +95,7 @@ ht-degree: 5%
 * **[!UICONTROL Approval mode]** :此欄位可讓您定義分析完成後的人工或自動傳送。驗證模式在[更改批准模式](#changing-the-approval-mode)部分中顯示。
 * **[!UICONTROL Prepare the delivery parts in the database]** :此選項可讓您改善傳送分析效能。如需詳細資訊，請參閱[本節](#improving-delivery-analysis)。
 * **[!UICONTROL Prepare the personalization data with a workflow]** :此選項可讓您在自動工作流程中準備傳送時所包含的個人化資料，如此可大幅提升執行個人化的效能。如需詳細資訊，請參閱[最佳化個人化](../../delivery/using/personalization-fields.md#optimizing-personalization)。
-* **[!UICONTROL Start job in a detached process]** :此選項可讓您在個別程式中啟動傳送分析。分析功能依預設會使用Adobe Campaign應用程式伺服器程式(web nlserver)。 選取此選項，即使在應用程式伺服器發生故障時，您也能確保分析完成。
+* **[!UICONTROL Start job in a detached process]** :此選項可讓您在個別程式中啟動傳送分析。預設情況下，分析函式使用Adobe Campaign應用程式伺服器進程(web nlserver)。 選取此選項，即使在應用程式伺服器發生故障時，您也能確保分析完成。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** :此選項在分析階段將SQL查詢日誌添加到傳送日誌。
 * **[!UICONTROL Ignore personalization scripts during sending]** :此選項可讓您略過HTML內容中的JavaScript指令解譯。它們會如同傳送的內容一樣顯示。 這些指令是隨&#x200B;**&lt;%=**&#x200B;標籤引入的。
 
@@ -127,7 +127,7 @@ ht-degree: 5%
 >
 >為確保較大的傳送分析不會拖慢工作流程的進度，您可以透過&#x200B;**[!UICONTROL Schedule execution for a time of low activity]**&#x200B;嘀嗒作響來排程執行。
 
-## 傳送校樣 {#sending-a-proof}
+## 傳送證明{#sending-a-proof}
 
 若要檢測訊息設定中可能出現的錯誤，Adobe 強烈建議您配置傳遞驗證階段。要經常性地透過傳送驗證訊息測試收件者，確保核准內容。每次進行變更時都必須傳送驗證訊息，以核准內容。
 
@@ -135,6 +135,7 @@ ht-degree: 5%
 >
 >* [更改批准模式](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)中詳細說明了可用的驗證模式。
 >* [定義特定校對目標](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)中說明了校對目標的配置。
+
 >
 
 
@@ -178,7 +179,7 @@ ht-degree: 5%
 * **[!UICONTROL Keep the delivery code for the proof]**&#x200B;選項可讓您提供與傳送相關之傳送所定義之傳送代碼相同的傳送代碼。 此程式碼是在傳送精靈的第一個步驟中指定。
 * 依預設，證明的主旨是前置詞「證明#」，其中#是證明的編號。 您可以在&#x200B;**[!UICONTROL Label prefix]**&#x200B;欄位中變更此首碼。
 
-## 使用類型的驗證流程{#validation-process-with-typologies}
+## 使用類型{#validation-process-with-typologies}的驗證流程
 
 在傳送任何訊息之前，您應先分析促銷活動以核准其內容和設定。 在分析階段應用的檢查規則在&#x200B;**類型學**&#x200B;中定義。 依預設，對於電子郵件，分析涵蓋下列幾點：
 
@@ -196,7 +197,7 @@ ht-degree: 5%
 
 您可以從此節點建立新規則並定義新類型。 但是，這些工作會保留給熟悉JavaScript的專業使用者。
 
-如需有關類型規則的詳細資訊，請參閱[關於促銷活動類型](../../campaign/using/about-campaign-typologies.md)。
+有關類型學規則的更多資訊，請參閱[本頁](../../campaign/using/about-campaign-typologies.md)。
 
 要編輯當前的類型學，請按一下&#x200B;**[!UICONTROL Typology]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Edit link]**&#x200B;表徵圖。
 
@@ -210,7 +211,7 @@ ht-degree: 5%
 >
 >**[!UICONTROL Arbitration]** 類型類型在銷售壓力管理的框架內使用。如需詳細資訊，請參閱[本章節](../../campaign/using/about-marketing-resource-management.md)。
 
-## 更改批准模式{#changing-the-approval-mode}
+## 變更核准模式{#changing-the-approval-mode}
 
 傳送屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤可讓您選取驗證模式。 如果分析期間產生警告（例如，如果某些字元在傳送的主旨中突出顯示等），您可以設定傳送來定義是否仍應執行。 預設情況下，用戶必須在分析階段結束時確認消息的發送：這是&#x200B;**manual**&#x200B;驗證。
 
