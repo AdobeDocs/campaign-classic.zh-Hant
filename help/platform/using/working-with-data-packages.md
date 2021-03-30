@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2458'
-ht-degree: 3%
+source-wordcount: '2442'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
 
-**資料套件**&#x200B;的原則是匯出資料組態並將它整合至其他Adobe Campaign系統。 瞭解如何在此[節](#data-package-best-practices)中維護一致的資料套件集。
+**資料包**&#x200B;的原則是導出資料配置並將其整合到另一個Adobe Campaign系統。 瞭解如何在此[節](#data-package-best-practices)中維護一致的資料套件集。
 
 ### 軟體包類型{#types-of-packages}
 
@@ -81,9 +81,9 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開始和結束。 隨後
 
 具有值&quot;none&quot;的&#x200B;**`operation`**&#x200B;屬性定義了協調連結。
 
-可以從任何文本編輯器手動構建資料包。 只要確保XML檔案的結構符合「xtk:navtree」資料架構。 Adobe Campaign主控台有資料套件匯出與匯入模組。
+可以從任何文本編輯器手動構建資料包。 只要確保XML檔案的結構符合「xtk:navtree」資料架構。 Adobe Campaign控制台具有資料包導出和導入模組。
 
-## 匯出套件 {#exporting-packages}
+## 導出包{#exporting-packages}
 
 ### 關於包導出{#about-package-export}
 
@@ -91,13 +91,13 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開始和結束。 隨後
 
 * **[!UICONTROL Package Export Wizard]**&#x200B;可讓您將一組對象導出到單個包中。 有關詳細資訊，請參閱[導出包中的一組對象](#exporting-a-set-of-objects-in-a-package)
 * 通過按一下右鍵&#x200B;**單個對象**&#x200B;並選擇&#x200B;**[!UICONTROL Actions > Export in a package]**，可以直接將其導出到包中。
-* **包定** 義可讓您建立包結構，在其中添加將在以後在包中導出的對象。有關詳細資訊，請參閱[管理軟體包定義](#managing-package-definitions)
+* **包定** 義可讓您建立包結構，在其中添加將在以後在包中導出的對象。有關詳細資訊，請參閱[管理包定義](#managing-package-definitions)
 
 在匯出套件後，您就可以將它和所有新增的實體匯入另一個促銷活動例項。
 
 ### 導出包{#exporting-a-set-of-objects-in-a-package}中的一組對象
 
-套件匯出精靈可透過Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;功能表存取。
+可通過Adobe Campaign客戶端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;菜單訪問包導出嚮導。
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -143,7 +143,7 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開始和結束。 隨後
 
 ### 管理相依性{#managing-dependencies}
 
-匯出機制可讓Adobe Campaign追蹤各種匯出元素之間的連結。
+出口機制使Adobe Campaign能夠跟蹤各種出口要素之間的連結。
 
 此機制由兩個規則定義：
 
@@ -224,14 +224,12 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ## 管理包定義{#managing-package-definitions}
 
-### 關於包定義{#about-package-definitions}
-
 包定義允許您建立包結構，在其中添加將在以後在單個包中導出的實體。 然後，您就可以將此套件及所有新增的實體匯入另一個促銷活動實例。
 
 **相關主題：**
 
 * [建立包定義](#creating-a-package-definition)
-* [向包定義添加實體](#adding-entities-to-a-package-definition)
+* [將實體添加到包定義](#adding-entities-to-a-package-definition)
 * [配置包定義生成](#configuring-package-definitions-generation)
 * [從包定義導出包](#exporting-packages-from-a-package-definition)
 
@@ -247,13 +245,13 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 **相關主題：**
 
-* [向包定義添加實體](#adding-entities-to-a-package-definition)
+* [將實體添加到包定義](#adding-entities-to-a-package-definition)
 * [配置包定義生成](#configuring-package-definitions-generation)
 * [從包定義導出包](#exporting-packages-from-a-package-definition)
 
 ### 將實體添加到包定義{#adding-entities-to-a-package-definition}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;頁籤中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以選擇要與包一起導出的實體。 在[導出包](#exporting-a-set-of-objects-in-a-package)中的一組對象部分中顯示了選擇圖元的最佳做法。
+在&#x200B;**[!UICONTROL Content]**&#x200B;頁籤中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以選擇要與包一起導出的實體。 在選擇實體時的最佳做法會顯示在[本節](#exporting-a-set-of-objects-in-a-package)節中。
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -267,7 +265,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. 實體將添加到包定義中，將與包一起導出（請參閱[從包定義中導出包](#exporting-packages-from-a-package-definition)）。
+1. 實體將添加到包定義中，將與包一起導出（請參見[本節](#exporting-packages-from-a-package-definition)）。
 
    ![](assets/packagedefinition_entityadded.png)
 
@@ -301,13 +299,11 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_packageexport.png)
 
-## 導入軟體包{#importing-packages}
+## 導入包{#importing-packages}
 
-### 關於包導入{#about-package-import}
+軟體包導入嚮導可通過Adobe Campaign客戶端控制台的主菜單&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;訪問。
 
-您可透過Adobe Campaign用戶端主控台的主功能表&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;存取套件匯入精靈。
-
-您可以從先前執行的匯出匯入套件，例如從其他Adobe Campaign例項或[內建套件](../../installation/using/installing-campaign-standard-packages.md)匯入套件，視授權條款而定。
+您可以從先前執行的匯出匯入套件，例如從另一個Adobe Campaign例項匯入，或根據授權條款從[內建套件](../../installation/using/installing-campaign-standard-packages.md)匯入。
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -325,7 +321,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 安裝內置軟體包{#installing-a-standard-package}
 
-標準套件是內建套件，在設定Adobe Campaign時安裝。 視您的權限和部署模型而定，如果您取得新選項或附加元件，或升級至新選件，則可匯入新的標準套件。
+標準軟體包是內置軟體包，在配置Adobe Campaign時安裝。 視您的權限和部署模型而定，如果您取得新選項或附加元件，或升級至新選件，則可匯入新的標準套件。
 
 請參閱您的授權合約以檢查您可以安裝哪些套件。
 
@@ -339,7 +335,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 此外，由於同一平台上有許多不同的功能，使得封裝規格資料夾的複雜度很快。
 
-雖然不是強制性的，但本節提供解決方案，協助您在Adobe Campaign中組織及使用套件以進行大型專案。
+雖然不是強制性的，但本節提供解決方案，以協助組織和使用Adobe Campaign的套件進行大型專案。
 
 主要限制如下：
 * 組織套件並追蹤變更的項目及變更時間
@@ -367,7 +363,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 首先，定義不同類型的包。 僅使用4種類型：
 
 **實體**
-* Adobe Campaign中的所有「xtk」和「nms」特定元素，例如結構、表單、資料夾、傳送範本等。
+* Adobe Campaign的所有「xtk」和「nms」特定元素，如架構、表單、資料夾、傳送範本等。
 * 您可以將實體視為「管理員」和「平台」元素。
 * 在促銷活動例項上傳套件時，套件中不應包含多個實體。
 
@@ -398,7 +394,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 命名約定{#data-package-naming}
 
-既然已定義了類型，我們應指定命名慣例。 Adobe Campaign不允許針對套件規格建立子檔案夾，這表示數字是維持有條理的最佳解決方案。 數字前置詞包名。 您可以使用下列慣例：
+既然已定義了類型，我們應指定命名慣例。 Adobe Campaign不允許為軟體包規格建立子資料夾，這意味著數字是保持井然有序的最佳解決方案。 數字前置詞包名。 您可以使用下列慣例：
 
 * 實體：從1到99
 * 功能：從100到199
@@ -421,7 +417,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 >[!NOTE]
 >
->表單只應在模式更新後匯入。
+>Forms只應在模式更新後導入。
 
 #### 軟體包200 {#package-200}
 
