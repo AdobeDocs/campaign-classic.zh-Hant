@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
 workflow-type: tm+mt
-source-wordcount: '1579'
-ht-degree: 2%
+source-wordcount: '1599'
+ht-degree: 3%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 2%
 
 ## 關於目標人口{#about-target-populations}
 
-您可以針對每個傳送定義數種目標人口族群。 以下章節提供如何選擇的詳細資訊：
+對於每個傳送，您可以定義數種目標人口族群：
 
-* 主要的收件者。 [顯示全文](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* 校對訊息的收件者，以設定驗證週期。 [顯示全文](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-
-此外，如果傳送內容包含在行銷促銷活動中，您也可以定義[種子位址](../../delivery/using/about-seed-addresses.md)和[控制群組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
+* **主要觀眾**:接收訊息的個人檔案。[進一步了解](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **證明**:驗證訊息的收件者，參與驗證週期。[進一步了解](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **種子地址**:已超出傳送目標但將接收傳送的收件者（僅限在行銷促銷活動中）。[進一步了解](../../delivery/using/about-seed-addresses.md)
+* **控制群組**:不會收到傳送的人口族群，用於追蹤行為和促銷活動影響（僅限在行銷促銷活動中）。[進一步瞭解](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
 
 ## 選擇傳送{#selecting-the-main-target}的主要收件者
 
-在大多數情況下，主要目標會從Adobe Campaign資料庫（預設模式）擷取。 不過，收件者也可以儲存在外部檔案中。 進一步瞭解[本節](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
+在大多數情況下，主目標是從Adobe Campaign資料庫中提取的（預設模式）。 不過，收件者也可以儲存在外部檔案中。 進一步瞭解[本節](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
 
 要選擇交貨的收件者，請執行以下步驟：
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉式清單中選取目標對應。 Adobe Campaign預設目標對應是&#x200B;**[!UICONTROL Recipients]**，以&#x200B;**nms:recipient**&#x200B;架構為基礎。
+1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉式清單中選取目標對應。 Adobe Campaign預設目標映射是&#x200B;**[!UICONTROL Recipients]**，基於&#x200B;**nms:recipient**&#x200B;模式。
 
    其他目標映射可用，有些可以與您的特定配置相關。 有關目標映射的詳細資訊，請參閱[選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)。
 
@@ -134,7 +134,7 @@ ht-degree: 2%
 
 可以使用以下選項：
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**.此選項預設為作用中：它可讓您在傳送期間消除重複的電子郵件地址。 所套用的策略會因Adobe Campaign的使用方式及資料庫中的資料類型而異。
+* **[!UICONTROL Exclude duplicate addresses during delivery]**.此選項預設為作用中：它可讓您在傳送期間消除重複的電子郵件地址。 所應用的策略可能因使用Adobe Campaign的方式和資料庫中的資料類型而異。
 
    可為每個傳送範本設定選項的預設值。
 
@@ -237,4 +237,4 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
