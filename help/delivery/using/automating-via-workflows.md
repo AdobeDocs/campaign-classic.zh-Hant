@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 0%
 
 ---
 
 
-# 透過工作流程自動化{#automating-via-workflows}
+# 使用工作流程自動化{#automating-via-workflows}
 
 ## 內容管理活動{#content-management-activity}
 
@@ -160,7 +160,7 @@ ht-degree: 1%
 
 完成活動的最後一個步驟是準備然後啟動傳送。
 
-### 建立內容並稍後發佈{#creating-content-and-publishing-it-later}
+### 建立內容以供稍後發佈{#creating-content-and-publishing-it-later}
 
 此範例會建立內容區塊，並在特定時間延遲後啟動檔案發佈。
 
@@ -218,9 +218,9 @@ fork活動可讓您並行啟動目標計算和內容實例的建立。
 
 如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您就可輕鬆將此內容載入Adobe Campaign傳送。 請參閱[此示例](../../workflow/using/loading-delivery-content.md)。
 
-### 從Amazon Simple Storage Service(S3)連接器{#importing-content-from-amazon-simple-storage-service--s3--connector}導入內容
+### 從Amazon簡單儲存服務(S3)連接器{#importing-content-from-amazon-simple-storage-service--s3--connector}導入內容
 
-如果您的傳送內容位於Amazon Simple Storage Service(S3)儲存區，您可以輕鬆將此內容載入Adobe Campaign傳送。 請參閱[此示例](../../workflow/using/loading-delivery-content.md)。
+如果您的傳送內容位於Amazon簡單儲存服務(S3)儲存區，您可輕鬆將此內容載入Adobe Campaign傳送。 請參閱[此示例](../../workflow/using/loading-delivery-content.md)。
 
 ## 半自動更新{#semi-automatic-update}
 
