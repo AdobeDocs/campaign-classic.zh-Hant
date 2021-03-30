@@ -3,14 +3,11 @@ solution: Campaign Classic
 product: campaign
 title: 'Campaign Classic的說明與支援選項 '
 description: 需要Campaign Classic支援？ 你在正確的地方！
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
+source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '771'
 ht-degree: 10%
 
 ---
@@ -97,8 +94,14 @@ ht-degree: 10%
 
 ### 什麼是控制面板？
 
-「控制面板」可讓您管理每個執行個體的設定並追蹤使用情形，協助您以產品Campaign Classic管理員的身分提高工作效率。
+「促銷活動控制面板」可讓您管理每個例項的設定並追蹤使用情形，以產品Campaign Classic管理員的身分，協助您提高工作效率。
 [按一](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) 下這裡以取得詳細資訊。
+
+>[!NOTE]
+>
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)中。
+>
+>請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](rn/using/gs-overview.md)組建版本或[最新的GA組建版本(21.1)](rn/using/latest-release.md)進行升級。 瞭解如何在[本節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
 
 ### 如何存取控制面板？
 
