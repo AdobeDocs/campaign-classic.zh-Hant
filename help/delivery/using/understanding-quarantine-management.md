@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 15%
@@ -527,7 +527,7 @@ SMS消息的隔離機制與一般過程在全局上是相同的。 請參閱[關
 
 **對於擴展的通用SMPP連接器**
 
-當使用SMPP協定發送SMS消息時，錯誤管理的處理方式不同。 有關擴展通用SMPP連接器的詳細資訊，請參閱[本頁](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+當使用SMPP協定發送SMS消息時，錯誤管理的處理方式不同。 有關擴展通用SMPP連接器的詳細資訊，請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
 SMPP連接器從SR（狀態報告）消息中檢索資料，該消息使用規則運算式(regexes)返回以過濾其內容。 然後，此資料會與&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表格中的資訊相符（可透過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;功能表取得）。
 
@@ -544,13 +544,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * 所有錯誤消息都以&#x200B;**SR**&#x200B;開頭，以區分SMS錯誤代碼和電子郵件錯誤代碼。
-* 錯誤消息的第二部分（本例中的&#x200B;**Generic**）引用SMSC實現的名稱，如SMS外部帳戶的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;欄位中定義的名稱。 請參閱[本頁](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+* 錯誤消息的第二部分（本例中的&#x200B;**Generic**）引用SMSC實現的名稱，如SMS外部帳戶的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;欄位中定義的名稱。 請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
    由於相同的錯誤代碼可能對每個提供程式有不同的含義，因此，此欄位允許您瞭解哪個提供程式生成了錯誤代碼。 然後，您可以在相關供應商的檔案中找到錯誤。
 
 * 該錯誤消息的第三部分（本例中為&#x200B;**DELIVRD**）與使用SMS外部帳戶中定義的狀態抽取規則表從SR檢索的狀態代碼相對應。
 
-   此規則運算式是在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+   此規則運算式是在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -558,7 +558,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 該錯誤消息的第四部分（本例中為&#x200B;**000**）對應於使用在SMS外部帳戶中定義的錯誤代碼提取規則從SR提取的錯誤代碼。
 
-   此規則運算式是在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+   此規則運算式是在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
    依預設，regex會擷取&#x200B;**err:**&#x200B;欄位，如&#x200B;**SMPP 3.4規格**&#x200B;的&#x200B;**附錄B**&#x200B;區段所定義。
 
