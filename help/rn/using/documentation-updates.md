@@ -7,9 +7,9 @@ feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
+source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
 workflow-type: tm+mt
-source-wordcount: '4250'
+source-wordcount: '4275'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 94%
 
 ## 2021 年 3月 {#march-2021}
 
-已新增新頁面，其中包含指引和參考，以取得有關Campaign Classic的支援。 [進一步了解](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
+[開始使用SMS區段](../../delivery/using/sms-channel.md)已重新整理並改進。 您現在可以學習如何在專用區域中[配置SMS頻道](../../delivery/using/sms-set-up.md)、[建立SMS](../../delivery/using/sms-create.md)、[傳送及追蹤SMS](../../delivery/using/sms-send.md)。
+
+Campaign Classic的「說明與支援選項」頁面已整合至核心檔案。 [顯示全文](../../support.md)
 
 新增了與安全性和隱私權相關的最佳實務和檢查。 [顯示全文](../../installation/using/get-started-security-privacy.md)
 
@@ -440,7 +442,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 移動並更新「傳遞最佳實務快速入門手冊」。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
-SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extended generic SMPP 連接器使用多個外部帳戶時發生問題。[顯示全文](../../delivery/using/sms-channel.md#automatic-reply)
+SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extended generic SMPP 連接器使用多個外部帳戶時發生問題。[顯示全文](../../delivery/using/sms-set-up.md#automatic-reply)
 
 「排程器活動」文件新增了關於如何防止同時執行工作流程的資訊。[顯示全文](../../workflow/using/scheduler.md)
 
