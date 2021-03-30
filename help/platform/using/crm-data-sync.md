@@ -7,23 +7,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1530'
 ht-degree: 0%
 
 ---
 
 
-# 促銷活動與CRM {#data-synchronization}之間的資料同步
+# 同步促銷活動與CRM {#data-synchronization}之間的資料
 
-Adobe Campaign和CRM之間的資料同步化是透過專屬的工作流程活動進行：[CRM連接器](../../workflow/using/crm-connector.md)。
+Adobe Campaign與CRM之間的資料同步是通過專用的工作流活動進行的：[CRM連接器](../../workflow/using/crm-connector.md)。
 
-例如，若要將Microsoft Dynamics資料匯入Adobe Campaign，請建立下列類型的工作流程：
+例如，若要將Microsoft Dynamics資料匯入Adobe Campaign，請建立下列工作流程類型：
 
 ![](assets/crm_connectors_msdynamics_07.png)
 
-此工作流程會透過Microsoft Dynamics匯入連絡人、將連絡人與現有的Adobe Campaign資料同步化、刪除重複的連絡人，以及更新Adobe Campaign資料庫。
+此工作流程會透過Microsoft Dynamics匯入連絡人、將連絡人與現有的Adobe Campaign資料同步、刪除重複的連絡人，以及更新Adobe Campaign資料庫。
 
 **[!UICONTROL CRM Connector]**&#x200B;活動必須配置為同步資料。
 
@@ -44,16 +44,16 @@ Adobe Campaign和CRM之間的資料同步化是透過專屬的工作流程活動
 
 此活動的配置取決於要執行的進程。 以下詳細說明了各種配置。
 
-## 從CRM {#importing-from-the-crm}導入
+## 從CRM {#importing-from-the-crm}匯入
 
-若要在Adobe Campaign中透過CRM匯入資料，您必須建立下列類型的工作流程：
+若要透過Adobe Campaign的CRM匯入資料，您必須建立下列類型的工作流程：
 
 ![](assets/crm_wf_import.png)
 
 對於導入活動，**[!UICONTROL CRM Connector]**&#x200B;活動配置步驟為：
 
 1. 選擇&#x200B;**[!UICONTROL Import from the CRM]**&#x200B;操作。
-1. 轉至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取程式所關注的物件。 此物件與連接器設定期間在Adobe Campaign中建立的其中一個表格一致。
+1. 轉至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取程式所關注的物件。 此對象與在連接器配置期間在Adobe Campaign建立的一個表一致。
 1. 轉到&#x200B;**[!UICONTROL Remote fields]**&#x200B;部分，然後輸入要導入的欄位。
 
    若要新增欄位，請按一下工具列中的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示。
@@ -70,7 +70,7 @@ Adobe Campaign和CRM之間的資料同步化是透過專屬的工作流程活動
 
 1. 您也可以根據需求篩選要匯入的資料。 若要這麼做，請按一下&#x200B;**[!UICONTROL Edit the filter...]**&#x200B;連結。
 
-   在下列範例中，Adobe Campaign只會匯入自2012年11月1日起已記錄某些活動的連絡人。
+   在下列範例中，Adobe Campaign將僅匯入自2012年11月1日起已記錄某些活動的連絡人。
 
    ![](assets/crm_task_import_filter.png)
 
@@ -78,13 +78,13 @@ Adobe Campaign和CRM之間的資料同步化是透過專屬的工作流程活動
    >
    >[篩選資料](#filtering-data)中詳細說明連結至資料篩選模式的限制。
 
-1. **[!UICONTROL Use automatic index...]**&#x200B;選項可讓您根據日期及其上次修改，自動管理CRM和Adobe Campaign之間的增量物件同步。
+1. 使用&#x200B;**[!UICONTROL Use automatic index...]**&#x200B;選項，您可以根據日期及其上次修改，自動管理CRM和Adobe Campaign之間的增量對象同步。
 
    有關詳細資訊，請參閱[變數管理](#variable-management)。
 
-### 變數管理{#variable-management}
+### 管理變數{#variable-management}
 
-啟用&#x200B;**[!UICONTROL Automatic index]**&#x200B;選項可讓您僅收集自上次匯入後修改的物件。
+啟用&#x200B;**[!UICONTROL Automatic index]**&#x200B;選項，僅收集自上次導入以來修改的對象。
 
 ![](assets/crm_task_import_option.png)
 
@@ -164,7 +164,7 @@ Adobe Campaign和CRM之間的資料同步化是透過專屬的工作流程活動
 對於導出，請將以下配置應用於&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活動：
 
 1. 選擇&#x200B;**[!UICONTROL Export to CRM]**&#x200B;操作。
-1. 轉至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取程式所關注的物件。 此物件與連接器設定期間在Adobe Campaign中建立的其中一個表格一致。
+1. 轉至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取程式所關注的物件。 此對象與在連接器配置期間在Adobe Campaign建立的一個表一致。
 
    >[!IMPORTANT]
    >
@@ -228,12 +228,12 @@ Adobe Campaign和CRM之間的資料同步化是透過專屬的工作流程活動
 
 ## 導入在CRM {#importing-objects-deleted-in-the-crm}中刪除的對象
 
-若要啟用廣泛的資料同步程式設定，您可以將CRM中刪除的物件匯入Adobe Campaign。
+若要啟用廣泛的資料同步程式設定，您可將CRM中刪除的物件匯入Adobe Campaign。
 
 若要這麼做，請套用下列步驟：
 
 1. 選擇&#x200B;**[!UICONTROL Import objects deleted in the CRM]**&#x200B;操作。
-1. 轉至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取程式所關注的物件。 此物件與連接器設定期間在Adobe Campaign中建立的其中一個表格一致。
+1. 轉至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取程式所關注的物件。 此對象與在連接器配置期間在Adobe Campaign建立的一個表一致。
 1. 在&#x200B;**[!UICONTROL Start date]**&#x200B;和&#x200B;**[!UICONTROL End date]**&#x200B;欄位中指定要考慮的刪除期間。 這些日期將包含在期間內。
 
    ![](assets/crm_import_deleted_obj.png)
