@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 28%
@@ -15,9 +15,9 @@ ht-degree: 28%
 ---
 
 
-# 導入和導出配置檔案{#exporting-and-importing-profiles}
+# 匯入和匯出描述檔{#exporting-and-importing-profiles}
 
-您可以[使用workflows](#use-workflows)將收件者描述檔匯入或匯出至Adobe Campaign資料庫，或設定[一般匯入或匯出工作](#create-jobs)。
+您可以[使用工作流](#use-workflows)將收件人配置檔案導入或導出到Adobe Campaign資料庫，或設定[一般導入或導出作業](#create-jobs)。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#import-profiles-video)
 
@@ -36,8 +36,8 @@ ht-degree: 28%
 
 ## 教學課程影片{#import-profiles-video}
 
-此影片說明如何在Adobe Campaign中匯入設定檔，以便偶爾匯入。
+此影片說明如何匯入Adobe Campaign的設定檔，以便偶爾匯入。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
