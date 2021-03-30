@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: 壓縮或加密檔案
-description: 瞭解如何在處理前先在Campaign Classic中壓縮或加密檔案。
+description: 瞭解如何在處理前先壓縮或加密Campaign Classic中的檔案。
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 5%
+source-wordcount: '603'
+ht-degree: 3%
 
 ---
 
@@ -25,16 +25,18 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過&#x200B;**[!UI
 
    >[!NOTE]
    >
-   >控制面板適用於AWS托管的所有客戶（現場托管其行銷實例的客戶除外）。
+   >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權的步驟詳見[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
+   >
+   >請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](../../rn/using/gs-overview.md)組建版本或[最新的GA組建版本(21.1)](../../rn/using/latest-release.md)進行升級。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
 
-1. 如果您的Adobe Campaign安裝是由Adobe代管，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以便在伺服器上安裝必要的公用程式。
+1. 如果您的Adobe Campaign安裝是由Adobe代管，請與Adobe客戶服務部門聯繫，以在伺服器上安裝必要的實用程式。[](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. 如果您的Adobe Campaign安裝是內部部署，請安裝您要使用的公用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
 
 然後，您可以在活動的&#x200B;**[!UICONTROL Script]**&#x200B;標籤或&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動中使用命令或代碼。 在下面的使用案例中提供了示例。
 
 **相關主題：**
 
-* [在處理前解壓縮或解密檔案](../../platform/using/unzip-decrypt.md)
+* [處理前解壓縮或解密檔案](../../platform/using/unzip-decrypt.md)
 * [資料擷取（檔案）活動](../../workflow/using/extraction--file-.md)。
 
 ## 使用案例：使用控制面板{#use-case-gpg-encrypt}上安裝的密鑰加密和導出資料
@@ -92,4 +94,4 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 當透過&#x200B;**[!UI
 
 >[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
