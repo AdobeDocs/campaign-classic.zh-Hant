@@ -7,17 +7,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
 
-# 建立匯入和匯出工作 {#creating-import-export-jobs}
+# 建立導入和導出作業{#creating-import-export-jobs}
 
-在設定範本後，匯入和匯出作業就可在Adobe Campaign的數個內容中啟動。
+一旦配置了模板，就可以在Adobe Campaign的多個上下文中啟動導入和導出操作。
 
 * 在Adobe Campaign工作區的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結：這會帶您進入現有進出口清單。
 
@@ -29,12 +29,12 @@ ht-degree: 7%
 
    ![](assets/s_ncs_user_import_from_production.png)
 
-* 最後，您可從Adobe Campaign檔案總管啟動匯入和匯出。
+* 最後，進出口可以從Adobe Campaign探險家啟動。
 
    ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
 所有這些開放資料匯入或匯出精靈。 以下各節將詳述這些內容：
 
-* [配置導入作業](../../platform/using/executing-import-jobs.md)
-* [配置導出作業](../../platform/using/executing-export-jobs.md)
+* [設定匯入工作](../../platform/using/executing-import-jobs.md)
+* [設定匯出工作](../../platform/using/executing-export-jobs.md)
