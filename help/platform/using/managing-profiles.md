@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
 
-# 管理設定檔{#managing-profiles}
+# 管理配置式{#managing-profiles}
 
 ## 收件者樹狀結構清單 {#recipient-tree}
 
@@ -29,15 +29,15 @@ ht-degree: 97%
 >
 >若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。進一步瞭解[資料夾和檢視](../../platform/using/access-management-folders.md)。
 
-## 移動收件者 {#moving-recipients}
+## 移動收件者{#moving-recipients}
 
 您可以選取一位或多位收件者，從收件者清單拖曳收件者，並將它們放在想要的資料夾中。將顯示一條警告訊息，要求您確認此動作。
 
-## 複製收件者 {#copying-a-recipient}
+## 複製收件者{#copying-a-recipient}
 
 您可以複製同一資料夾中的收件者，方法是在所需的收件者上按一下滑鼠右鍵，然後選取 **[!UICONTROL Copy]**。
 
-## 刪除收件者 {#deleting-recipients}
+## 刪除收件者{#deleting-recipients}
 
 若要刪除收件者，請將它們移至特定資料夾，然後清除此資料夾的內容。**強烈建議您不要使用** 此處的 **[!UICONTROL Delete]** 選項。
 
