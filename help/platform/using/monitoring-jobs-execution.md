@@ -7,22 +7,22 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 52%
+source-wordcount: '184'
+ht-degree: 53%
 
 ---
 
 
-# 監控工作執行 {#monitoring-job-execution}
+# 監視作業執行{#monitoring-job-execution}
 
 您可以直接從匯入／匯出工作清單追蹤匯入和匯出工作的執行。
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * **[!UICONTROL Journal]**&#x200B;標籤可讓您查看有關執行的日誌消息。
-* **[!UICONTROL Rejects]**&#x200B;標籤包含拒絕的記錄。 請參閱[發生錯誤時的行為](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* **[!UICONTROL Rejects]**&#x200B;標籤包含拒絕的記錄。 請參閱[本節](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
 在&#x200B;**[!UICONTROL General]**&#x200B;標籤中，**[!UICONTROL Status]**&#x200B;欄位會指出工作的目前狀態。
 
