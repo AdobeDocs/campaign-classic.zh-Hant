@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '2034'
-ht-degree: 4%
+source-wordcount: '2024'
+ht-degree: 3%
 
 ---
 
@@ -168,7 +168,7 @@ Adobe將在進行任何更改之前備份您的系統。 但是，如果非生�
 
 如果您在建立版本升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會排程建置日期並開啟與建置升級相關的票證。
 
-進一步瞭解[Campaign Classic的說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
+進一步瞭解[Campaign Classic的說明與支援選項](../../support.md)
 
 ## 建立升級檢查清單{#check-list}
 
@@ -208,5 +208,5 @@ Adobe將在進行任何更改之前備份您的系統。 但是，如果非生�
 
 * [執行版本編號升級](../../production/using/build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
-* [Campaign Classic的說明與支援選項](https://helpx.adobe.com/campaign/kb/ac-support.html)
+* [Campaign Classic的說明與支援選項](../../support.md)
 * [[!DNL Gold Standard] 方案](../../rn/using/gs-overview.md)
