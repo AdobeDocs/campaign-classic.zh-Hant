@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 建立和管理運算元群組
 description: 瞭解如何授與營運商群組的存取權
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 存取管理
+role: 業務從業人員、管理員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 0%
 
    * **[!UICONTROL INSERT FOLDERS]**:將資料夾插入Adobe Campaign樹的權利（前提是您對相關分支具有編輯權限）,
    * **[!UICONTROL WORKFLOW]**:使用工作流程。
-
    >[!NOTE]
    >
    >此群組不會讓運算子開始傳送。
@@ -100,6 +99,3 @@ ht-degree: 0%
 
    * **[!UICONTROL INSERT FOLDERS]**:將資料夾插入Adobe Campaign樹的權利（前提是您對相關分支具有編輯權）,
    * **[!UICONTROL EDIT FOLDERS]**:有權更改資料夾屬性，如內部名稱、標籤、關聯的影像、子資料夾順序等。
-
-
-
