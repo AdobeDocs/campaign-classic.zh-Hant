@@ -7,17 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
 
-# 管理分項清單{#managing-enumerations}
-
-## 關於枚舉{#about-enumerations}
+# 管理枚舉{#managing-enumerations}
 
 枚舉（也稱為「項目化清單」）是系統建議用於填充某些欄位的值清單。 枚舉可讓您標準化這些欄位的值，並協助您輸入資料或在查詢中使用。
 
@@ -54,7 +52,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->資料清理是影響資料庫中資料的關鍵過程。 Adobe Campaign會進行大量資料更新，這可能會導致刪除某些值。 因此，此操作將保留給專家用戶。
+>資料清理是影響資料庫中資料的關鍵過程。 Adobe Campaign進行大量資料更新，可能會導致某些值被刪除。 因此，此操作將保留給專家用戶。
 
 輸入的值為：
 
@@ -90,7 +88,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-因此，當使用者在「公司」欄位中（在Adobe Campaign主控台或表單中）輸入值&#x200B;**NEILSEN**&#x200B;時，值&#x200B;**NIELSEN Ltd**&#x200B;會自動取代。 值替換由&#x200B;**別名清洗**&#x200B;工作流執行。 請參閱[運行資料清理](#running-data-cleansing)。
+因此，當用戶在&quot;company&quot;欄位(在Adobe Campaign控制台或表單中)中輸入值&#x200B;**NEILSEN**&#x200B;時，值&#x200B;**NIELSEN Ltd**&#x200B;將自動替換。 值替換由&#x200B;**別名清洗**&#x200B;工作流執行。 請參閱[執行資料清理](#running-data-cleansing)。
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -112,11 +110,11 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### 正在檢索別名點擊{#retrieving-alias-hits}
+#### 擷取別名點擊{#retrieving-alias-hits}
 
 用戶輸入的值可以轉換為別名。 實際上，當用戶輸入未包含在項目化清單中的值時，該值將儲存在&#x200B;**[!UICONTROL Alias]**&#x200B;頁籤中。
 
-**別名清除**&#x200B;技術工作流每晚恢復這些值以更新明細清單。 請參閱[運行資料清理](#running-data-cleansing)
+**別名清除**&#x200B;技術工作流每晚恢復這些值以更新明細清單。 請參閱[執行資料清理](#running-data-cleansing)
 
 如有必要，**[!UICONTROL Hits]**&#x200B;欄可顯示輸入值的次數。 計算此值既耗時又耗時。 有關詳細資訊，請參閱[計算條目發生次數](#calculating-entry-occurrences)。
 
@@ -134,7 +132,7 @@ ht-degree: 0%
 
 按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕以執行資料清除。
 
-#### 計算條目具體值{#calculating-entry-occurrences}
+#### 計算條目發生次數{#calculating-entry-occurrences}
 
 項目化清單的&#x200B;**[!UICONTROL Alias]**&#x200B;子標籤可顯示所有輸入值中別名的發生次數。 此資訊是估計值，將顯示在&#x200B;**[!UICONTROL Hits]**&#x200B;列中。
 
@@ -147,7 +145,7 @@ ht-degree: 0%
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
 * **[!UICONTROL Update the number of alias hits]**:這可讓您根據輸入的日期更新已計算的點擊。
-* **[!UICONTROL Recalculate the number of alias hits from the start]**:可讓您在整個Adobe Campaign平台上執行計算。
+* **[!UICONTROL Recalculate the number of alias hits from the start]**:讓您在整個Adobe Campaign平台上進行計算。
 
 您也可以建立專用的工作流程，讓計算在指定期間自動執行，例如每週執行一次。
 
