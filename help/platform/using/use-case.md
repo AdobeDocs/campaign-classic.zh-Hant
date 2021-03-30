@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 使用案例{#use-case}
 
-## 建立訂閱者電子郵件格式的篩選器{#creating-a-filter-on-the-email-format-of-subscribers}
+## 針對訂閱者的電子郵件格式建立篩選{#creating-a-filter-on-the-email-format-of-subscribers}
 
 此使用案例將示範如何建立篩選，以根據收件者電子郵件格式來排序電子報訂閱。
 
