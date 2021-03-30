@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6eb29742d5884096f2d06b763823aede48f5dcb3
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -98,7 +98,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 ### 增強的MTA標題
 
-最新的Campaign Classic例項包含程式碼，可在每則訊息中新增所需的增強MTA標題。 如果您使用Adobe Campaign19.1(build 9032)或更高版本，而且不是這樣，則必須將&quot;useMomentum=true&quot;參數新增至您的行銷實例設定（在[serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)檔案中）。
+最新的Campaign Classic例項包含程式碼，可在每則訊息中新增所需的增強MTA標題。 如果您使用Adobe Campaign19.1(build 9032)或更高版本，而且不是這樣，則必須請求[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)將&quot;useMomentum=true&quot;參數新增至您的執行例項設定（在[serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)檔案中），這可能是您的行銷例項[mid-sourcing instance](../../installation/using/mid-sourcing-server.md)或[事務性訊息執行例項](../../message-center/using/creating-a-shared-connection.md#execution-instance)，視您的設定而定。
 
 不過，如果您使用的舊例項不包含此程式碼，則必須將名為&#x200B;**[!UICONTROL Typology Rule for Enhanced MTAs]**的新排版規則新增至促銷活動例項中的所有現有排版。
 此規則由作為升級至增強型MTA的一部分安裝的**[!UICONTROL Typology]**&#x200B;軟體包添加。
