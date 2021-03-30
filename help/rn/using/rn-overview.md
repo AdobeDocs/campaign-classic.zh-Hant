@@ -7,9 +7,9 @@ feature: 概觀
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 93%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 93%
 
 ## 支援和其他有效連結{#support}
 
-* [說明與支援](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
+* [說明與支援](../../support.md)
 * [「控制面板」發行版本](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)
 * [最新文件更新](../../rn/using/documentation-updates.md)
 * [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
