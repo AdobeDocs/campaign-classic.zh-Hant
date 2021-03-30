@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 6d0ae3d597f9ee30515437d94901cb034d0ca3d5
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '3600'
-ht-degree: 3%
+source-wordcount: '3765'
+ht-degree: 4%
 
 ---
 
@@ -19,20 +19,24 @@ ht-degree: 3%
 
 下節詳細說明可根據您的需求和環境特性執行的伺服器端組態。
 
->[!IMPORTANT]
+這些配置必須由管理員和&#x200B;**On-premise**&#x200B;代管模型執行。
+
+對於&#x200B;**Hosted**&#x200B;部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IPallowlist管理或URL權限）。
+
+>[!NOTE]
 >
->這些配置必須由管理員和&#x200B;**On-premise**&#x200B;代管模型執行。
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)中。
 >
->對於&#x200B;**Hosted**&#x200B;部署，伺服器端設定只能由Adobe設定。 不過，您可以在「控制面板」中設定某些設定（例如，IPallowlist管理或URL權限）。
+>請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](../../rn/using/gs-overview.md)組建版本或[最新的GA組建版本(21.1)](../../rn/using/latest-release.md)進行升級。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
 
 如需詳細資訊，請參閱下列章節：
 
 * [控制面板文件](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 * [託管模式](../../installation/using/hosting-models.md)
-* [Campaign Classic內部部署與代管功能矩陣](../../installation/using/capability-matrix.md)
+* [Campaign Classic內部部署和托管能力矩陣](../../installation/using/capability-matrix.md)
 * [混合型和代管型配置步驟](../../installation/using/hosting-models.md)
 
-Campaign Classic組態檔會儲存在Adobe Campaign安裝資料夾的&#x200B;**conf**&#x200B;資料夾中。 配置分佈在兩個檔案上：
+Campaign Classic配置檔案儲存在Adobe Campaign安裝資料夾的&#x200B;**conf**&#x200B;資料夾中。 配置分佈在兩個檔案上：
 
 * **serverConf.xml**:所有實例的常規配置。此檔案結合了Adobe Campaign伺服器的技術參數：這些會由所有例項共用。 以下詳細說明了其中一些參數。 此[部分](../../installation/using/the-server-configuration-file.md)中列出的不同節點和參數。
 * **config-`<instance>`.xml** (其中 **** instance是實例的名稱):實例的特定配置。如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
@@ -41,7 +45,7 @@ Campaign Classic組態檔會儲存在Adobe Campaign安裝資料夾的&#x200B;**c
 
 ### 關於安全區{#about-security-zones}
 
-每個運算子都必須連結至區域才能登入例項，且運算子IP必須包含在安全區域中定義的位址或位址集中。 安全區設定是在Adobe Campaign伺服器的設定檔案中執行。
+每個運算子都必須連結至區域才能登入例項，且運算子IP必須包含在安全區域中定義的位址或位址集中。 安全區配置在Adobe Campaign伺服器的配置檔案中執行。
 
 操作員從控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點）中的配置檔案連結到安全區域。 瞭解如何在[本節](#linking-a-security-zone-to-an-operator)中將區域連結至Campaign運算子。
 
@@ -162,19 +166,19 @@ Campaign Classic組態檔會儲存在Adobe Campaign安裝資料夾的&#x200B;**c
 
 可能會發生各種情況：
 
-* 安全區中直接引用子網路，且未配置代理：子網路的使用者可以直接連線至Adobe Campaign伺服器。
+* 安全區中直接引用子網路，且未配置代理：子網用戶可直接連接到Adobe Campaign伺服器。
 
    ![](assets/8101_proxy1.png)
 
-* 為安全區域中的子網路指定代理：來自此子網路的使用者可透過此代理存取Adobe Campaign伺服器。
+* 為安全區域中的子網路指定代理：來自此子網的用戶可以通過此代理訪問Adobe Campaign伺服器。
 
    ![](assets/8101_proxy2.png)
 
-* 代理包含在安全區子網路中：透過此Proxy存取的使用者（不論其來源為何）都可存取Adobe Campaign伺服器。
+* 代理包含在安全區子網路中：透過此Proxy存取的使用者，不論其來源為何，都可存取Adobe Campaign伺服器。
 
    ![](assets/8101_proxy3.png)
 
-可能存取Adobe Campaign伺服器的Proxy IP位址必須同時輸入至&#x200B;**`<subnetwork>`**&#x200B;相關網路和第一層子網路&#x200B;**`<subnetwork name="all"/>`**。 例如，以下是IP位址為10.131.146.102的Proxy:
+可能訪問Adobe Campaign伺服器的代理的IP地址必須在&#x200B;**`<subnetwork>`**&#x200B;相關子網和一級子網&#x200B;**`<subnetwork name="all"/>`**&#x200B;中輸入。 例如，以下是IP位址為10.131.146.102的Proxy:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -237,9 +241,9 @@ Campaign Classic組態檔會儲存在Adobe Campaign安裝資料夾的&#x200B;**c
 
 ### Tomcat {#default-port-for-tomcat}的預設埠
 
-當Tomcat伺服器的8080偵聽埠已忙於配置所需的其他應用程式時，您需要將8080埠替換為免費埠（例如8090）。 若要變更，請編輯儲存在Adobe Campaign安裝資料夾之&#x200B;**/tomcat-8/conf**&#x200B;目錄中的&#x200B;**server.xml**&#x200B;檔案。
+當Tomcat伺服器的8080偵聽埠已忙於配置所需的其他應用程式時，您需要將8080埠替換為免費埠（例如8090）。 要更改它，請編輯保存在Adobe Campaign安裝資料夾&#x200B;**/tomcat-8/conf**&#x200B;目錄中的&#x200B;**server.xml**&#x200B;檔案。
 
-然後修改JSP中繼頁的埠。 若要這麼做，請變更儲存在Adobe Campaign安裝目錄&#x200B;**/conf**&#x200B;目錄中的&#x200B;**serverConf.xml**&#x200B;檔案。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
+然後修改JSP中繼頁的埠。 為此，請更改保存在Adobe Campaign安裝目錄&#x200B;**/conf**&#x200B;目錄中的&#x200B;**serverConf.xml**&#x200B;檔案。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
 ```
 <serverConf>
@@ -272,7 +276,7 @@ Campaign Classic組態檔會儲存在Adobe Campaign安裝資料夾的&#x200B;**c
 
 MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
-但是，如果安全策略要求，則可以將其替換為中繼伺服器。 在這種情況下，全局吞吐量將是中繼吞吐量（前提是中繼伺服器吞吐量低於Adobe Campaign 1）。
+但是，如果安全策略要求，則可以將其替換為中繼伺服器。 在這種情況下，全局吞吐量將是中繼吞吐量(如果中繼伺服器吞吐量低於Adobe Campaign吞吐量)。
 
 在這種情況下，通過在&#x200B;**`<relay>`**&#x200B;部分中配置SMTP伺服器來設定這些參數。 必須指定用於傳輸郵件及其關聯埠的SMTP伺服器的IP地址（或主機）（預設為25）。
 
@@ -298,7 +302,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 
 >[!IMPORTANT]
 >
->相關性配置需要從一個伺服器到另一個伺服器之間保持一致。 我們建議您連絡Adobe以取得相似性設定，因為所有執行MTA的應用程式伺服器上都應複製設定變更。
+>相關性配置需要從一個伺服器到另一個伺服器之間保持一致。 我們建議您與Adobe聯絡以進行親和性配置，因為所有執行MTA的應用程式伺服器上應複製組態變更。
 
 您可以通過具有IP地址的相關性來改進出站SMTP通信。
 
@@ -346,6 +350,12 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 * **** Hybridor **內部部署**:將允許的URL新增至 **serverConf.xml檔案**。詳細資訊請參閱以下章節。
 * **代管**:新增URL以允許透過「控 **制面板」**。如需詳細資訊，請參閱[專屬文件](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
 
+   >[!NOTE]
+   >
+   >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)中。
+   >
+   >請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](../../rn/using/gs-overview.md)構建版本進行升級。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
+
 使用&#x200B;**Hybrid**&#x200B;和&#x200B;**On-premise**&#x200B;代管模型時，管理員需要在&#x200B;**serverConf.xml**&#x200B;檔案中參考新的&#x200B;**urlPermission**。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
 存在三種連接保護模式：
@@ -382,7 +392,7 @@ MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
 <url relayHost="true" relayPath="true" targetUrl="http://localhost:8080" urlPath="*.jsp"/>
 ```
 
-Adobe Campaign使用下列JSP頁面：
+Adobe Campaign使用以下JSP頁：
 
 * /nl/jsp/**soaprouter.jsp**:用戶端主控台與網站服務連線(SOAP API)、
 * /nl/jsp/**m.jsp**:鏡像頁面，
@@ -426,7 +436,7 @@ Adobe Campaign使用下列JSP頁面：
 >
 >只有內部部署安裝才需要以下配置。
 
-從組建8780起，技術管理員可限制Adobe Campaign中可使用的授權外部指令清單。
+從build 8780開始，技術管理員可以限制可在Adobe Campaign使用的授權外部命令清單。
 
 為此，您需要建立一個文本檔案，其中包含您要防止使用的命令清單，例如：
 
@@ -453,7 +463,7 @@ sh
 
 >[!NOTE]
 >
->如果未指定任何使用者，則會在Adobe Campaign例項的使用者內容中執行所有命令。 使用者必須與執行Adobe Campaign的使用者不同。
+>如果未指定用戶，則在Adobe Campaign實例的用戶上下文中執行所有命令。 使用者必須與執行Adobe Campaign的使用者不同。
 
 例如：
 
@@ -463,7 +473,7 @@ sh
 </serverConf>
 ```
 
-此使用者必須新增至「Adobe Campaign」運算子的使用者清單。
+該用戶需要添加到「Neolane」Adobe Campaign運算子的用戶清單中。
 
 >[!IMPORTANT]
 >
@@ -511,7 +521,7 @@ sh
 
 公共資源在[管理公共資源](../../installation/using/deploying-an-instance.md#managing-public-resources)中顯示。
 
-它們會儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
+它們儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
 
 相符的URL為：**http://server/res/instance**，其中&#x200B;**instance**&#x200B;是追蹤例項的名稱。
 
@@ -532,11 +542,11 @@ sh
 
 ## 高可用性工作流程和相關性{#high-availability-workflows-and-affinities}
 
-您可以設定數個工作流程伺服器(wfserver)，並在兩部或多部電腦上散發。 如果您選擇此類型的架構，請根據Adobe Campaign存取權設定負載平衡器的連線模式。
+您可以設定數個工作流程伺服器(wfserver)，並在兩部或多部電腦上散發。 如果您選擇此類型的體系結構，請根據Adobe Campaign訪問配置負載平衡器的連接模式。
 
 要從Web訪問，請選擇&#x200B;**負載平衡器**&#x200B;模式以限制連接時間。
 
-如果透過Adobe Campaign主控台存取，請選擇&#x200B;**雜湊**&#x200B;或&#x200B;**嚴格ip**&#x200B;模式。 例如，這可讓您維持rich client和伺服器之間的連線，並防止使用者作業在匯入或匯出作業期間中斷。
+如果通過Adobe Campaign控制台訪問，請選擇&#x200B;**hash**&#x200B;或&#x200B;**嚴格ip**&#x200B;模式。 例如，這可讓您維持rich client和伺服器之間的連線，並防止使用者作業在匯入或匯出作業期間中斷。
 
 您可以選擇在特定電腦上強制執行工作流或工作流活動。 若要這麼做，您必須為相關工作流程或活動定義一或多個相關性。
 
@@ -573,7 +583,7 @@ sh
 
 ## 自動進程重新啟動{#automatic-process-restart}
 
-依預設，不同的Adobe Campaign程式會每天早上6點（伺服器時間）自動重新啟動。
+預設情況下，不同的Adobe Campaign進程每天早上6點（伺服器時間）自動重新啟動。
 
 不過，您可以變更此設定。
 
@@ -587,7 +597,7 @@ sh
 
 ## 限制可上載檔案{#limiting-uploadable-files}
 
-新屬性&#x200B;**uploadWhiteList**&#x200B;可讓您限制可在Adobe Campaign伺服器上傳的檔案類型。
+新屬性&#x200B;**uploadWhiteList**&#x200B;可讓您限制可在Adobe Campaign伺服器上上傳的檔案類型。
 
 此屬性可在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**dataStore**&#x200B;元素中使用。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
 
