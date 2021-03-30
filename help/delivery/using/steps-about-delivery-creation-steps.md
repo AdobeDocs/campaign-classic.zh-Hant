@@ -1,13 +1,13 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 關於Adobe Campaign Classic中的傳送建立步驟
-description: 探索Adobe Campaign Classic中主要的傳送建立步驟。
+title: 關於Adobe Campaign Classic的交貨建立步驟
+description: 探索Adobe Campaign Classic的主要傳送建立步驟。
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 7%
@@ -24,7 +24,7 @@ ht-degree: 7%
 1. **定義傳送內容**。傳送內容定義是每個通道專屬的。 如需詳細資訊，請參閱專屬章節：
 
    * [電子郵件通道](../../delivery/using/defining-the-email-content.md)
-   * [SMS 頻道](../../delivery/using/sms-channel.md#defining-the-sms-content)
+   * [SMS 頻道](../../delivery/using/sms-create.md#defining-the-sms-content)
    * [直接郵件通道](../../delivery/using/defining-the-direct-mail-content.md)
    * [行動應用程式頻道](../../delivery/using/about-mobile-app-channel.md)
 
