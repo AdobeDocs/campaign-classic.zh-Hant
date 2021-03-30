@@ -7,17 +7,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
 
-# 建立匯入和匯出範本 {#creating-import-export-templates}
+# 建立導入和導出模板{#creating-import-export-templates}
 
-匯入和匯出範本會儲存在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;目錄中。
+導入和導出模板儲存在Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;目錄中。
 
 按照預設，此目錄中存在三個匯入範本和一個匯出範本。不得更改它們。
 
@@ -31,5 +31,5 @@ ht-degree: 22%
 
 然後，設定範本的程式會與下列章節中顯示的程式相同：
 
-* [配置導入作業](../../platform/using/executing-import-jobs.md)
-* [配置導出作業](../../platform/using/executing-export-jobs.md)
+* [設定匯入工作](../../platform/using/executing-import-jobs.md)
+* [設定匯出工作](../../platform/using/executing-export-jobs.md)
