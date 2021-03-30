@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 範本有兩種類型：
 
-1. Adobe Campaign原生傳送範本
+1. Adobe Campaign本地交付模板
 
    不得從系統中刪除原生模板。 它們包含每個傳送管道的最低組態。 不過，管理員可以限制某些功能或提供預設值給使用者（追蹤啟動、寄件者電子郵件地址等）。 範本清單中的原生藍本會以粗體顯示。 必須複製它們才能修改它們。
 
