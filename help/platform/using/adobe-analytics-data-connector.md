@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Analytics 資料連接器
 description: Adobe Analytics 資料連接器
-audience: platform
-content-type: reference
-topic-tags: connectors
+feature: 概觀
+role: 業務從業人員、管理員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1662'
 ht-degree: 0%
 
 ---
@@ -21,22 +21,22 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe Analytics Data Connector與交易式訊息（訊息中心）不相容。
+>Adobe Analytics資料連接器與事務性消息傳遞（消息中心）不相容。
 
-資料連接器（先前稱為Adobe Genesis）可讓Adobe Campaign和Adobe Analytics透過&#x200B;**Web Analytics連接器**&#x200B;套件進行互動。 它會以區段形式將資料轉送至Adobe Campaign，內容與電子郵件促銷活動後的使用者行為有關。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動指標和屬性傳送至Adobe Analytics —— 資料連接器。
+資料連接器(先前稱為Adobe Genesis)可讓Adobe Campaign和Adobe Analytics透過&#x200B;**Web Analytics連接器**&#x200B;套件進行互動。 它會以區段形式將資料轉送至Adobe Campaign，內容涉及電子郵件促銷活動後的使用者行為。 相反地，它會將Adobe Campaign傳送的電子郵件促銷活動的指標和屬性傳送至Adobe Analytics-資料連接器。
 
-Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web Analytics)。 有了這些整合，Adobe Campaign可以恢復行銷活動後一或多個網站的訪客行為資料，並（分析後）執行再行銷活動，以便將其轉換為購買者。 相反地，網頁分析工具可讓Adobe Campaign將指標和促銷活動屬性轉送至其平台。
+使用資料連接器，Adobe Campaign有一種測量網際網路觀眾(Web Analytics)的方式。 有了這些整合，Adobe Campaign可以復原行銷促銷活動後一或多個網站的訪客行為資料，並（分析後）執行再行銷促銷活動，以便將其轉換為購買者。 相反地，網頁分析工具讓Adobe Campaign能夠將指標和促銷活動屬性轉送至其平台。
 
-如需Adobe Analytics與Adobe Campaign整合的詳細資訊，請參閱本[檔案](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
+有關Adobe Analytics與Adobe Campaign一體化的執行情況的更多資訊，請參閱本[檔案](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
 
 每個工具的操作欄位如下：
 
 * 網頁分析的角色：
 
-   1. 標示使用Adobe Campaign啟動的電子郵件促銷活動，
+   1. 標誌著與Adobe Campaign一起發起的電子郵件宣傳，
    1. 以區段的形式儲存收件者在點按促銷活動電子郵件後所瀏覽之網站上的行為。 區段涉及放棄的產品（已檢視但未新增至購物車或已購買）、購買或購物車放棄。
 
-* Adobe Campaign的角色：
+* Adobe Campaign的作用：
 
    1. 將指標和促銷活動屬性傳送至連接器，接著再將它們轉送至網頁分析工具，
    1. 恢復和分析細分，
@@ -44,11 +44,11 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
 ## 設定整合{#setting-up-the-integration}
 
-若要設定「資料」連接器，您必須連線至您的Adobe Campaign例項並執行下列作業：
+要設定「資料」連接器，必須連接到Adobe Campaign實例並執行以下操作：
 
 * [步驟1:在Analytics中設定整合](#step-1--configure-integration-in-analytics)
 * [步驟2:在Campaign中建立外部帳戶](#step-2--create-the-external-account-in-campaign)
-* [步驟3:同步化Adobe Campaign和Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
+* [步驟3:同步Adobe Campaign和Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
 ### 步驟1:在Analytics中設定整合{#step-1--configure-integration-in-analytics}
 
@@ -58,7 +58,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/adobe_genesis_install_001.png)
 
-1. 從Experience Cloud解決方案清單中，選取&#x200B;**[!UICONTROL Analytics]**。
+1. 從Experience Cloud解決方案清單中，選擇&#x200B;**[!UICONTROL Analytics]**。
 
    ![](assets/adobe_genesis_install_013.png)
 
@@ -82,7 +82,7 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/adobe_genesis_install_015.png)
 
-1. 輸入代表連接器接收通知的電子郵件地址，然後複製&#x200B;**[!UICONTROL Account ID]**，如外部Adobe Campaign帳戶中所示(如需詳細資訊，請參閱[步驟2:在Campaign](#step-2--create-the-external-account-in-campaign)中建立外部帳戶)。
+1. 輸入代表連接器接收通知的電子郵件地址，然後複製&#x200B;**[!UICONTROL Account ID]**，如外部Adobe Campaign帳戶中所示(有關詳情，請參閱[步驟2:在Campaign](#step-2--create-the-external-account-in-campaign)中建立外部帳戶)。
 
    ![](assets/adobe_genesis_install_005.png)
 
@@ -117,8 +117,8 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
 將Adobe Campaign整合至Analytics平台時，會使用連接器。 若要同步應用程式，請套用下列程式：
 
-1. 在Adobe Campaign中安裝&#x200B;**Web Analytics connectors**&#x200B;套件。
-1. 前往Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;資料夾。
+1. 在Adobe Campaign安裝&#x200B;**Web Analytics connectors**&#x200B;套件。
+1. 轉到Adobe Campaign樹的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;資料夾。
 1. 按一下右鍵外部帳戶清單，然後在下拉菜單中選擇&#x200B;**[!UICONTROL New]**（或按一下外部帳戶清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕）。
 1. 使用下拉式清單來選擇&#x200B;**[!UICONTROL Web Analytics]**&#x200B;類型。
 1. 選擇連接器的提供器，即&#x200B;**[!UICONTROL Adobe Analytics - Data Connector]**。
@@ -144,14 +144,14 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
 1. **[!UICONTROL Advanced]**&#x200B;標籤可讓您設定或修改更多技術設定。
 
-   * **[!UICONTROL Lifespan]**:可讓您指定延遲（以天數_為單位），之後Adobe Campaign中的網頁事件會依技術工作流程進行復原。預設值：180天。
+   * **[!UICONTROL Lifespan]**:可讓您指定延遲（以天數_為單位），之後，技術工作流程會在Adobe Campaign恢復Web事件。預設值：180天。
    * **[!UICONTROL Persistence]**:可讓您將所有Web事件（例如購買）歸因於重新行銷促銷活動的期間，預設值：7天。
 
 >[!NOTE]
 >
 >如果您使用數種觀眾測量工具，則可在建立外部帳戶時，在&#x200B;**[!UICONTROL Partners]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Other]**。 您只能在傳送屬性中參考一個外部帳戶：因此，您必須新增Adobe和所有其他測量工具所預期的參數，以調整追蹤URL的公式。
 
-### 步驟3:同步化Adobe Campaign和Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
+### 步驟3:同步Adobe Campaign和Adobe Analytics{#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 建立外部帳戶後，您需要同步兩個應用程式。
 
@@ -171,33 +171,33 @@ Adobe Campaign使用「資料」連接器，可以測量網際網路觀眾(Web A
 
    ![](assets/webanalytics_ext_account_setting_003.png)
 
-1. 依照「資料連接器」精靈指南的步驟進行，然後返回Adobe Campaign中的外部帳戶。
-1. 按一下&#x200B;**[!UICONTROL Next]**，以便在Adobe Campaign和Adobe Analytics —— 資料連接器之間進行資料交換。
+1. 依照「資料連接器」精靈指南，依照步驟進行，然後返回Adobe Campaign的外部帳戶。
+1. 按一下&#x200B;**[!UICONTROL Next]** ，以便在Adobe Campaign和Adobe Analytics-資料連接器之間進行資料交換。
 
    同步完成後，將顯示段清單。
 
    ![](assets/webanalytics_ext_account_setting_004.png)
 
-當Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料同步生效時，Adobe Campaign會復原「資料連接器」精靈中定義的三個預設區段，並可在Adobe Campaign外部帳戶的&#x200B;**[!UICONTROL Segments]**&#x200B;標籤中存取。
+當Adobe Campaign與Adobe Analytics-資料連接器之間的資料同步生效時，Adobe Campaign將恢復資料連接器嚮導中定義的三個預設段，並可在Adobe Campaign外部帳戶的&#x200B;**[!UICONTROL Segments]**&#x200B;頁籤中訪問。
 
 ![](assets/webanalytics_segments.png)
 
-如果在「資料連接器」精靈中設定了其他區段，您可以將它們新增至Adobe Campaign。 若要這麼做，請按一下&#x200B;**[!UICONTROL Update segment list]**&#x200B;連結，然後依照外部帳戶精靈中所述的步驟進行。 執行操作後，新區段就會顯示在清單中。
+如果已在「資料連接器」精靈中設定其他區段，您可將其新增至Adobe Campaign。 若要這麼做，請按一下&#x200B;**[!UICONTROL Update segment list]**&#x200B;連結，然後依照外部帳戶精靈中所述的步驟進行。 執行操作後，新區段就會顯示在清單中。
 
 ![](assets/webanalytics_segments_update.png)
 
 ### 網頁分析程式的技術工作流程{#technical-workflows-of-web-analytics-processes}
 
-Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是由四個技術工作流程所處理，這些工作流程會以後台工作的方式執行。
+Adobe Campaign與Adobe Analytics之間的資料交換——資料連接器由四個作為後台任務運行的技術工作流處理。
 
-它們可在&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Web analytics process]**&#x200B;資料夾下的Adobe Campaign樹狀結構中使用。
+它們位於Adobe Campaign樹的&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Web analytics process]**&#x200B;資料夾下。
 
 ![](assets/webanalytics_workflows.png)
 
-* **[!UICONTROL Recovering of web events]**:每小時一次，此工作流程會下載有關特定網站使用者行為的區段，並將其納入Adobe Campaign資料庫，然後啟動重新行銷工作流程。
+* **[!UICONTROL Recovering of web events]**:每小時一次，此工作流程會下載特定網站上使用者行為的區段，並將其納入Adobe Campaign資料庫，然後啟動重新行銷工作流程。
 * **[!UICONTROL Event purge]**:此工作流允許您根據欄位中配置的時段，從資料庫中刪除所有 **[!UICONTROL Lifespan]** 事件。有關詳細資訊，請參閱[步驟2:在Campaign](#step-2--create-the-external-account-in-campaign)中建立外部帳戶。
 * **[!UICONTROL Identification of converted contacts]**:重新行銷促銷活動後進行購買的訪客的目錄。此工作流程收集的資料可在&#x200B;**[!UICONTROL Re-marketing efficiency]**&#x200B;報表中存取，請參閱此[頁面](#creating-a-re-marketing-campaign)。
-* **[!UICONTROL Sending of indicators and campaign attributes]**:可讓您使用Adobe Analytics —— 資料連接器，透過Adobe Campaign將電子郵件宣傳指標傳送至Adobe Experience Cloud。此工作流程每天凌晨4點觸發，資料傳送至Analytics可能需要24小時。
+* **[!UICONTROL Sending of indicators and campaign attributes]**:可讓您使用「Adobe Analytics-資料」連接器，透過Adobe Campaign傳送電子郵件促銷活動指標至Adobe Experience Cloud。此工作流程每天凌晨4點觸發，資料傳送至Analytics可能需要24小時。
 
    請注意，此工作流程不應重新啟動，否則將重新傳送所有可能扭曲Analytics結果的先前資料。
 
@@ -231,9 +231,9 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
 
 
 
-## 追蹤Adobe Campaign {#tracking-deliveries-in-adobe-campaign}中的傳送
+## 在Adobe Campaign追蹤交貨{#tracking-deliveries-in-adobe-campaign}
 
-為了讓Adobe Experience Cloud能夠在Adobe Campaign傳送後追蹤網站上的活動，您必須在傳送屬性中參考相符的連接器。 若要這麼做，請套用下列步驟：
+為了讓Adobe Experience Cloud能夠在Adobe Campaign發送交貨後跟蹤站點上的活動，您需要在交貨屬性中引用匹配連接器。 若要這麼做，請套用下列步驟：
 
 1. 開啟要追蹤之促銷活動的傳送。
 
@@ -244,17 +244,17 @@ Adobe Campaign與Adobe Analytics —— 資料連接器之間的資料交換是�
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. 您現在可以在Adobe Analytics中傳送並存取報表。
+1. 您現在可以在Adobe Analytics傳送並存取報表。
 
 ## 建立重新行銷促銷活動{#creating-a-re-marketing-campaign}
 
 若要準備再行銷促銷活動，只需建立要用於再行銷類型促銷活動的傳送範本。 然後設定您的再行銷促銷活動，並將其連結至區段。 每個區段必須有不同的再行銷促銷活動。
 
-一旦Adobe Campaign完成對分析初始促銷活動所定位人員行為的區段的復原，重新行銷促銷活動就會自動啟動。 如果購物車放棄或檢視產品而未購買，則會傳送遞送給相關收件者，讓其網站瀏覽結束購買。
+在Adobe Campaign完成回收區段後，重新行銷促銷活動會自動啟動，以分析初始促銷活動所定位之人員的行為。 如果購物車放棄或檢視產品而未購買，則會傳送遞送給相關收件者，讓其網站瀏覽結束購買。
 
 Adobe Campaign提供個人化的傳送範本，您可使用這些範本或將其建立資料庫，以準備宣傳活動。
 
-1. 從&#x200B;**[!UICONTROL Explorer]**&#x200B;移至Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;資料夾。
+1. 從&#x200B;**[!UICONTROL Explorer]**&#x200B;移至Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;資料夾。
 1. 複製&#x200B;**[!UICONTROL Email delivery (re-marketing)]**&#x200B;範本或Adobe Campaign提供的再行銷範本範例。
 1. 個人化範本以符合您的需求並加以儲存。
 
@@ -279,7 +279,7 @@ Adobe Campaign提供個人化的傳送範本，您可使用這些範本或將其
 
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉促銷活動視窗。
 
-**[!UICONTROL Re-marketing efficiency]**&#x200B;報表可透過全域報表頁面存取。 它可讓您檢視與Adobe Campaign再行銷促銷活動後放棄的購物車數量相關的轉換聯絡人數（亦即已購買商品）。 轉換率是每週、每月或自Adobe Campaign與網頁分析工具開始同步起計算。
+**[!UICONTROL Re-marketing efficiency]**&#x200B;報表可透過全域報表頁面存取。 它可讓您檢視在Adobe Campaign再行銷活動後放棄購物車的次數，與轉換的連絡人數（亦即已購買商品）有關。 轉換率是每週、每月或自Adobe Campaign和網頁分析工具開始同步起計算。
 
 ![](assets/webanalytics_reporting.png)
 
