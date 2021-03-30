@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 開始使用Campaign運算子
 description: 瞭解如何建立和管理促銷活動使用者
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 存取管理
+role: 業務從業人員、管理員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
