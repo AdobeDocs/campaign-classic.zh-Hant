@@ -1,31 +1,29 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 關於Adobe Campaign Classic中的行動應用程式頻道
-description: 本節提供Adobe Campaign Classic中行動應用程式頻道的一般資訊。
+title: 關於Adobe Campaign Classic的行動應用程式頻道
+description: 本節提供Adobe Campaign Classic行動應用程式頻道的一般資訊。
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 1%
+source-wordcount: '659'
+ht-degree: 0%
 
 ---
 
 
-# 關於行動應用程式頻道{#about-mobile-app-channel}
+# 開始使用行動應用程式頻道{#about-mobile-app-channel}
+
+**行動應用頻道**&#x200B;可讓您使用Adobe Campaign平台，透過應用程式將個人化推播通知傳送至iOS和Android終端機。
 
 >[!CAUTION]
 >
 >本檔案詳細說明整合行動應用程式與Adobe Campaign平台的程式。 它不提供如何建立行動應用程式或如何設定它以管理通知的資訊。 如果您想要進一步瞭解此資訊，請參閱官方的Apple [檔案](https://developer.apple.com/)和Android [檔案](https://developer.android.com/index.html)。
 
-以下章節提供行動應用程式頻道專屬的資訊。
-
-有關如何建立傳送的全局資訊，請參閱[本節](../../delivery/using/steps-about-delivery-creation-steps.md)。
-
-**行動應用程式頻道**&#x200B;可讓您使用Adobe Campaign平台，透過應用程式將個人化通知傳送至iOS和Android終端機。 提供兩個傳送渠道：
+提供兩個傳送渠道：
 
 * iOS頻道，可讓您傳送通知至Apple行動裝置。
 
@@ -38,6 +36,7 @@ ht-degree: 1%
 與這兩個渠道相對應，促銷活動工作流程中有兩個傳送活動：
 
 ![](assets/nmac_intro_3.png)
+
 
 >[!NOTE]
 >
@@ -56,17 +55,19 @@ ht-degree: 1%
 
 **[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流程會更新行動裝置上取消訂閱的通知。 有關此工作流的詳細資訊，請參閱[技術工作流清單](../../workflow/using/about-technical-workflows.md)。
 
-Adobe Campaign與HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參閱「在Adobe Campaign中設定行動應用程式」一節。[](../../delivery/using/configuring-the-mobile-application.md)
+Adobe Campaign與HTTP/2 APN相容。 有關配置步驟的詳細資訊，請參閱[本節](../../delivery/using/configuring-the-mobile-application.md)一節。
+
+有關如何建立傳送的全局資訊，請參閱[本節](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 ## 資料路徑{#data-path}
 
-下列結構說明如何讓行動應用程式與Adobe Campaign交換資料的步驟。 此過程涉及三個實體：
+下列結構說明讓行動應用程式與Adobe Campaign交換資料的步驟。 此過程涉及三個實體：
 
 * 行動應用程式
 * 通知服務：適用於Apple的APN（Apple推播通知服務）和適用於Android的FCM（Firebase Cloud訊息）
 * Adobe Campaign
 
-通知程式的三個主要步驟是：在Adobe Campaign中註冊應用程式（訂閱收集）、傳送和追蹤。
+通知程式的三個主要步驟是：在Adobe Campaign註冊（訂閱收集）、交付和追蹤。
 
 ### 步驟1:訂閱系列{#step-1--subscription-collection}
 
@@ -78,14 +79,14 @@ Adobe Campaign與HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參�
 
 行銷人員鎖定應用程式訂閱者。 傳送程式會傳送連線設定至通知服務（iOS憑證和Android專案金鑰）、通知ID（推播ID）和通知內容。 通知服務向目標終端發送通知。
 
-Adobe Campaign提供下列資訊：
+在Adobe Campaign，可獲得以下資訊：
 
 * 僅限Android:顯示通知的裝置數（曝光數）
 * Android和iOS:通知的點按次數
 
 ![](assets/nmac_delivery_view.png)
 
-Adobe Campaign伺服器必須能夠在iOS HTTP/2連接器的443連接埠上連絡APNs伺服器。
+Adobe Campaign伺服器必須能夠在iOS HTTP/2連接器的443埠上與APNs伺服器聯繫。
 
 若要檢查它是否正常運作，請使用下列命令：
 
