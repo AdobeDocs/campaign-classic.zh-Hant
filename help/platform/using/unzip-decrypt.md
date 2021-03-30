@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,11 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
    >[!NOTE]
    >
-   >控制面板適用於AWS托管的所有客戶（現場托管其行銷實例的客戶除外）。
+   >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權的步驟詳見[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
+   >
+   >請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](../../rn/using/gs-overview.md)組建版本或[最新的GA組建版本(21.1)](../../rn/using/latest-release.md)進行升級。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
 
-1. 如果您的Adobe Campaign安裝是由Adobe代管，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以便在伺服器上安裝必要的公用程式。
+1. 如果您的Adobe Campaign安裝是由Adobe代管，請與Adobe客戶服務部門聯繫，以在伺服器上安裝必要的實用程式。[](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. 如果您的Adobe Campaign安裝是內部部署，請安裝您要使用的公用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
 
 然後，您就可以在工作流程中使用所需的預處理命令：
@@ -46,7 +48,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 * [資料載入（檔案）活動](../../workflow/using/data-loading--file-.md)。
 * [壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
 
-## 使用案例：導入使用控制面板{#use-case-gpg-decrypt}生成的密鑰加密的資料
+## 使用案例：使用控制面板{#use-case-gpg-decrypt}產生的金鑰匯入加密的資料
 
 在此使用案例中，我們將建立工作流程，以便使用「控制面板」中產生的金鑰，匯入在外部系統中加密的資料。
 
@@ -57,24 +59,24 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 1. 使用「控制面板」產生金鑰對（公開／私用）。 有關詳細步驟，請參閱[控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
 
    * 公開金鑰將會與外部系統共用，外部系統會使用它來加密要傳送至Campaign的資料。
-   * Campaign Classic將使用私密金鑰解密傳入的加密資料。
+   * 私密金鑰將由Campaign Classic用來解密傳入的加密資料。
 
    ![](assets/gpg_generate.png)
 
-1. 在外部系統中，使用從「控制面板」下載的公開金鑰來加密要匯入Campaign Classic的資料。
+1. 在外部系統中，使用從控制面板下載的公開金鑰來加密要導入Campaign Classic的資料。
 
-1. 在Campaign Classic中，建立工作流程以匯入加密資料，並使用透過控制面板安裝的私密金鑰加以解密。 為此，我們將建立以下工作流程：
+1. 在Campaign Classic中，建立工作流程以匯入加密的資料，並使用透過控制面板安裝的私密金鑰加以解密。 為此，我們將建立以下工作流程：
 
    ![](assets/gpg_import_workflow.png)
 
-   * **[!UICONTROL File transfer]** 活動：將檔案從外部來源傳輸至Campaign Classic。在此範例中，我們要從SFTP伺服器傳輸檔案。
+   * **[!UICONTROL File transfer]** 活動：將檔案從外部源傳輸到Campaign Classic。在此範例中，我們要從SFTP伺服器傳輸檔案。
    * **[!UICONTROL Data loading (file)]** 活動：將檔案中的資料載入到資料庫中，然後使用「控制面板」中生成的專用密鑰對其進行解密。
 
 1. 開啟&#x200B;**[!UICONTROL File transfer]**&#x200B;活動，然後指定您要從中匯入加密。gpg檔案的外部帳戶。
 
    ![](assets/gpg_key_transfer.png)
 
-   有關如何配置活動的全局概念可在[本節](../../workflow/using/file-transfer.md)中獲得。
+   有關如何配置活動的全局概念，請參閱[本節](../../workflow/using/file-transfer.md)。
 
 1. 開啟&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何配置活動的全局概念可在[本節](../../workflow/using/data-loading--file-.md)中獲得。
 
@@ -102,4 +104,4 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-其他Campaign Classic操作視訊可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
