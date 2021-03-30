@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -52,7 +52,7 @@ ht-degree: 11%
 傳送內容已準備好可供設定。 傳送內容定義是每個通道的專屬定義。 如需詳細資訊，請參閱專屬章節：
 
 * [定義電子郵件內容](../../delivery/using/defining-the-email-content.md)
-* [定義SMS內容](../../delivery/using/sms-channel.md#defining-the-sms-content)
+* [定義SMS內容](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [定義直接郵件內容](../../delivery/using/defining-the-direct-mail-content.md)
 * [推播通知](../../delivery/using/about-mobile-app-channel.md)
 
