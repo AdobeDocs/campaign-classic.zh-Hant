@@ -7,19 +7,19 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 46%
+source-wordcount: '543'
+ht-degree: 43%
 
 ---
 
 
-# 啟動 Adobe Campaign{#launching-adobe-campaign}
+# 啟動Adobe Campaign{#launching-adobe-campaign}
 
 促銷活動用戶端主控台是rich client，可讓您連線至您的促銷活動應用程式伺服器。 瞭解如何在[本頁](../../installation/using/installing-the-client-console.md)中下載和配置客戶端控制台。
 
-## 開始使用 Adobe Campaign {#starting-adobe-campaign}
+## 啟動Adobe Campaign{#starting-adobe-campaign}
 
 您可以選擇&#x200B;**[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**&#x200B;來啟動Adobe Campaign。
 
@@ -27,7 +27,7 @@ ht-degree: 46%
 
 ![](assets/acc-logon.png)
 
-## 連線 Adobe Campaign {#connecting-to-adobe-campaign}
+## 連接到Adobe Campaign{#connecting-to-adobe-campaign}
 
 您可以使用 Adobe ID 連線至 Adobe Campaign。有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
 
@@ -50,7 +50,7 @@ ht-degree: 46%
 * 要啟動連接，還可以按&#x200B;**Enter**&#x200B;鍵。
 * 您可以使用&#x200B;**Escape**&#x200B;鍵將&#x200B;**[!UICONTROL Login]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;欄位重置為上次成功的連接值。
 
-## 設定連線 {#setting-up-connections}
+## 設定連接{#setting-up-connections}
 
 您可以透過輸入區域上方的連結存取伺服器連線設定。
 
@@ -74,7 +74,7 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 
 此功能在[訪問管理](../../platform/using/access-management.md)部分中有詳細說明。
 
-## 中斷 Adobe Campaign 連線 {#disconnecting-from-adobe-campaign}
+## 斷開與Adobe Campaign的連接{#disconnecting-from-adobe-campaign}
 
 若要中斷 Adobe Campaign 的連線，請使用圖示列的第一個圖示。
 
@@ -105,6 +105,6 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 
 **相關主題**：
 
-* [Adobe Campaign說明與支援選項](https://helpx.adobe.com/tw/campaign/kb/ac-support.html)
+* [Adobe Campaign說明與支援選項](../../support.md)
 * [Adobe Campaign軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Adobe Experience Cloud支援和專家會議](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
