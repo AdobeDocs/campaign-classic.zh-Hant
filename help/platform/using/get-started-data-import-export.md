@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 12%
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 # 開始使用匯入和匯出資料 {#get-started-data-import-export}
 
-Adobe Campaign Classic提供資料管理功能，可讓您匯入和匯出資料。 這些操作可以使用工作流或通用導入和導出來執行。
+Adobe Campaign Classic提供資料管理功能，讓您匯入和匯出資料。 這些操作可以使用工作流或通用導入和導出來執行。
 
 >[!IMPORTANT]
 >
@@ -37,7 +37,7 @@ Adobe Campaign Classic提供資料管理功能，可讓您匯入和匯出資料�
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-此外，Campaign Classic提供&#x200B;**一般匯入和匯出**，讓您建立偶爾匯入或匯出工作。
+此外，Campaign Classic還提供&#x200B;**一般匯入和匯出**，讓您建立偶爾匯入或匯出工作。
 
 導入和導出在專用模板中配置，您可以配置並使用這些模板來啟動和監視導入和導出作業。
 
