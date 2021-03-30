@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2462'
 ht-degree: 54%
 
 ---
@@ -144,13 +144,16 @@ ht-degree: 54%
          + [在日本手機上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [附加檔案](delivery/using/attaching-files.md)
    + 傳送SMS {#sending-messages-on-mobiles}
-      + [SMS 頻道](delivery/using/sms-channel.md)
+      + [開始使用SMS](delivery/using/sms-channel.md)
+      + [設定SMS頻道](delivery/using/sms-set-up.md)
+      + [建立簡訊](delivery/using/sms-create.md)
+      + [傳送及追蹤簡訊](delivery/using/sms-send.md)
       + [SMS 連接器通訊協定及設定](delivery/using/sms-protocol.md)
       + [SMS 疑難排解](delivery/using/troubleshooting-sms.md)
       + [遷移到擴展通用SMPP連接器](delivery/using/unsupported-connector-migration.md)
    + [發送LINE消息](delivery/using/line-channel.md)
    + 傳送推播通知 {#sending-push-notifications}
-      + [關於行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
+      + [行動應用程式頻道快速入門](delivery/using/about-mobile-app-channel.md)
       + [將Campaign SDK整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 設定行動應用程式{#configure-the-mobile-app}
          + [開始使用應用程式配置](delivery/using/get-started-app-config.md)
