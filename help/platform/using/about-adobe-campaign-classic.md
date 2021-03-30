@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 關於 Adobe Campaign Classic
 description: 探索重要功能、使用者介面和全域準則。
-audience: platform
-content-type: reference
-topic-tags: starting-with-adobe-campaign
+feature: 概觀
+role: 業務從業人員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '915'
 ht-degree: 95%
 
 ---
