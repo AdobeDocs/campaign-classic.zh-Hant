@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
 
 
-# 附加檔案{#attaching-files}
+# 將檔案附加至電子郵件{#attaching-files}
 
 ## 關於電子郵件附件{#about-email-attachments}
 
