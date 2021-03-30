@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 管理對促銷活動資料夾的存取權
 description: 瞭解如何授與Campaign資料夾的存取權並建立檢視
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 應用程式設定
+role: 業務從業人員、管理員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -19,53 +19,9 @@ ht-degree: 0%
 
 瀏覽器導航樹的每個資料夾都有附加的讀取、寫入和刪除訪問權限。 若要存取檔案，運算元或運算元群組至少必須具有讀取存取權。
 
-## 資料夾的權限
-
-### 編輯資料夾{#edit-permissions-on-a-folder}的權限
-
-要編輯對樹的特定資料夾的權限，請執行以下步驟：
-
-1. 按一下右鍵資料夾並選擇&#x200B;**[!UICONTROL Properties...]**。
-
-   ![](assets/s_ncs_user_folder_properties.png)
-
-1. 按一下&#x200B;**[!UICONTROL Security]**&#x200B;頁籤查看此資料夾的授權。
-
-   ![](assets/s_ncs_user_folder_properties_security.png)
-
-### 修改權限{#modify-permissions}
-
-若要修改權限，您可以：
-
-* **取代群組或運算子**。若要這麼做，請按一下其中一個具有資料夾權限的群組（或運算子），然後從下拉式清單中選取新群組（或新運算子）:
-
-   ![](assets/s_ncs_user_folder_properties_security02.png)
-
-* **授權群組或營運商**。要執行此操作，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後選擇要為此資料夾分配授權的組或運算子。
-* **禁止群組或營運商**。若要這麼做，請按一下&#x200B;**[!UICONTROL Delete]**&#x200B;並選取您要移除此資料夾授權的群組或運算子。
-* **選擇指派給群組或運算子的權限**。若要這麼做，請按一下相關的群組或運算子，然後選取您要授與的存取權，並取消選取其他的存取權。
-
-   ![](assets/s_ncs_user_folder_properties_security03.png)
-
-### 傳播權限{#propagate-permissions}
-
-您可以傳播授權和訪問權限。 要執行此操作，請在資料夾屬性中選擇&#x200B;**[!UICONTROL Propagate]**&#x200B;選項。
-
-然後，在此窗口中定義的授權將應用於當前節點的所有子資料夾。 然後，您可以對每個子資料夾超載這些授權。
-
->[!NOTE]
->
->清除資料夾的此選項不會自動清除子資料夾的選項。 您必須明確清除每個子資料夾。
-
-### 授予對所有運算子{#grant-access-to-all-operators}的訪問權限
-
-在&#x200B;**[!UICONTROL Security]**&#x200B;標籤中，如果選取&#x200B;**[!UICONTROL System folder]**&#x200B;選項，所有運算子都可存取此資料，不論其權限為何。 如果清除此選項，您必須將運算子（或其群組）明確新增至授權清單，以便其擁有存取權。
-
-![](assets/s_ncs_user_folder_properties_security03b.png)
-
 ## 資料夾和視圖{#folders-and-views}
 
-### 關於資料夾{#about-folders}
+### 什麼是資料夾{#about-folders}
 
 資料夾是Adobe Campaign樹中的節點。 通過按一下右鍵樹，通過&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜單建立這些節點。 依預設，第一個功能表可讓您新增與目前內容對應的資料夾。
 
@@ -73,7 +29,7 @@ ht-degree: 0%
 
 您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解配置步驟和最佳實踐[。
 
-### 關於視圖{#about-views}
+### 什麼是視圖{#about-views}
 
 此外，您還可以建立檢視，以限制資料存取，並組織樹狀結構的內容以符合您的需求。 然後，您可以指派檢視的權限。
 
@@ -121,3 +77,49 @@ ht-degree: 0%
 >[!NOTE]
 >
 >在管理[事務性消息傳遞](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不能設定為執行實例的視圖，因為這可能導致訪問權限問題。 如需事件收集的詳細資訊，請參閱[本節](../../message-center/using/event-collection.md)。
+
+
+
+## 資料夾的權限
+
+### 編輯資料夾{#edit-permissions-on-a-folder}的權限
+
+要編輯對樹的特定資料夾的權限，請執行以下步驟：
+
+1. 按一下右鍵資料夾並選擇&#x200B;**[!UICONTROL Properties...]**。
+
+   ![](assets/s_ncs_user_folder_properties.png)
+
+1. 按一下&#x200B;**[!UICONTROL Security]**&#x200B;頁籤查看此資料夾的授權。
+
+   ![](assets/s_ncs_user_folder_properties_security.png)
+
+### 修改權限{#modify-permissions}
+
+若要修改權限，您可以：
+
+* **取代群組或運算子**。若要這麼做，請按一下其中一個具有資料夾權限的群組（或運算子），然後從下拉式清單中選取新群組（或新運算子）:
+
+   ![](assets/s_ncs_user_folder_properties_security02.png)
+
+* **授權群組或營運商**。要執行此操作，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後選擇要為此資料夾分配授權的組或運算子。
+* **禁止群組或營運商**。若要這麼做，請按一下&#x200B;**[!UICONTROL Delete]**&#x200B;並選取您要移除此資料夾授權的群組或運算子。
+* **選擇指派給群組或運算子的權限**。若要這麼做，請按一下相關的群組或運算子，然後選取您要授與的存取權，並取消選取其他的存取權。
+
+   ![](assets/s_ncs_user_folder_properties_security03.png)
+
+### 傳播權限{#propagate-permissions}
+
+您可以傳播授權和訪問權限。 要執行此操作，請在資料夾屬性中選擇&#x200B;**[!UICONTROL Propagate]**&#x200B;選項。
+
+然後，在此窗口中定義的授權將應用於當前節點的所有子資料夾。 然後，您可以對每個子資料夾超載這些授權。
+
+>[!NOTE]
+>
+>清除資料夾的此選項不會自動清除子資料夾的選項。 您必須明確清除每個子資料夾。
+
+### 授予對所有運算子{#grant-access-to-all-operators}的訪問權限
+
+在&#x200B;**[!UICONTROL Security]**&#x200B;標籤中，如果選取&#x200B;**[!UICONTROL System folder]**&#x200B;選項，所有運算子都可存取此資料，不論其權限為何。 如果清除此選項，您必須將運算子（或其群組）明確新增至授權清單，以便其擁有存取權。
+
+![](assets/s_ncs_user_folder_properties_security03b.png)
