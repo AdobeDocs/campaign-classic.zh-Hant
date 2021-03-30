@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 使用命名權限來設定權限
 description: 瞭解如何使用命名權限來設定權限
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 存取管理
+role: 業務從業人員、管理員
+level: 初學者
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '509'
 ht-degree: 4%
 
 ---
