@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: 第 20.2 發行版本
 description: 第 20.2 發行版本
-feature: 概觀
+feature: 概覽
 role: 業務從業人員
 level: 初學者
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 92%
+source-wordcount: '2833'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,26 @@ ht-degree: 92%
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
+
+_2020年3月31日_
+
+**功能改善**
+
+* 已進行改進，以防止無效soap呼叫發生當機。 這可能導致在嘗試執行特定複雜查詢時，執行個體停止運作。 (NEO-28796、NEO-30553)
+* 修正因主機名稱驗證而無法傳送具有TLS的SMS傳送的回歸。 (NEO-29581)
+* 修正已簽署的追蹤連結無法用於某些電子郵件用戶端的問題。 (NEO-28414、NEO-29615)
+* 修正使用webApp追蹤標籤時，可能會與重複ID產生衝突的追蹤ID序列。 (NEO-27931)
+* 修正每日wfserver重新啟動導致執行工作流程停止的問題。 (NEO-30047)
+* 修正了在非管理員使用者嘗試同步 Adobe Experience Manager 範本時，使用 API 調用的安全性問題。(NEO-32389、NEO-23487)
+* 修正當關閉從範本建立之傳送的傳送對話方塊時，造成主控台當機的問題。 (NEO-31547)
+* 修正在促銷活動的&#x200B;**定位與工作流程**&#x200B;標籤中建立和儲存傳送時發生的問題：預覽會失敗，並出現下列錯誤。(NEO-29440)
+* 修正Tomcat 8.5傳送無效回覆的問題，此問題會導致「事務性訊息」記錄檔發生錯誤。 (NEO-30858)
+* 修正導致外部線程管理中記憶體損毀並影響效能的回歸問題。
+* 修正使用自訂目標對應時，可能導致帳單工作流程失敗的問題。 自訂架構的主要索引鍵會儲存在僅允許整數值的「sourceId」欄中。 它現在允許整數和字串值。 (NEO-25914、NEO-28146)
+* 修正回歸，防止在傳送中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
+
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
 _2020年12月22日_
 
@@ -28,7 +47,6 @@ _2020年12月22日_
 > * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
 > * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
 > * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)具有促銷活動的舊式驗證模式將於2021年11月30日&#x200B;****&#x200B;淘汰。
-
 
 
 **功能改善**
