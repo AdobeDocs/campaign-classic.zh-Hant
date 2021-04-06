@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文件
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2481'
 ht-degree: 54%
 
 ---
@@ -113,6 +113,7 @@ ht-degree: 54%
       + CRM 連接器{#crm-connectors}
          + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
          + [與 Microsoft Dynamics 365 連接](platform/using/crm-ms-dynamics.md)
+         + [與Salesforce.com連線](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector.md)
    + [說明與支援選項](support.md)
@@ -210,7 +211,8 @@ ht-degree: 54%
       + [傳遞效能最佳實務](delivery/using/delivery-performances.md)
       + [傳遞疑難排解](delivery/using/delivery-troubleshooting.md)
       + [傳遞狀態](delivery/using/delivery-statuses.md)
-      + [瞭解交付失敗](delivery/using/understanding-delivery-failures.md)
+      + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
+      + [在ISP中斷後更新反彈資格](delivery/using/update-bounce-qualification.md)
       + [瞭解隔離管理](delivery/using/understanding-quarantine-management.md)
    + 追蹤訊息{#tracking-messages}
       + [關於訊息追蹤](delivery/using/about-message-tracking.md)
@@ -658,6 +660,7 @@ ht-degree: 54%
       + [促銷活動伺服器設定](installation/using/configuring-campaign-server.md)
       + [定義安全區](installation/using/security-zones.md)
       + [技術電子郵件設定](installation/using/email-deliverability.md)
+      + [搭配使用MX伺服器與Campaign](installation/using/using-mx-servers.md)
       + [設定電子郵件密件副本](installation/using/email-archiving.md)
       + [設定SpamAssassin](installation/using/configuring-spamassassin.md)
    + 連線至促銷活動{#connect-to-campaign}
@@ -672,6 +675,7 @@ ht-degree: 54%
       + [設定外部帳戶](installation/using/external-accounts.md)
       + 配置同盟資料存取{#configure-fda}
          + [開始使用Federated Data Access](installation/using/about-fda.md)
+         + [最佳實務和限制](installation/using/fda-best-practices.md)
          + 配置指南 {#config-databases}
             + [配置步驟](installation/using/configure-fda.md)
             + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
