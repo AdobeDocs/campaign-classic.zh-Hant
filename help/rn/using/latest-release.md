@@ -3,17 +3,17 @@ solution: Campaign Classic
 product: campaign
 title: 最新版本
 description: 最新的 Campaign Classic 發行說明
-feature: 概觀
+feature: 概覽
 role: 業務從業人員
 level: 初學者
+exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 3db426580ba72668cd9fa274b57f925600eda27b
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 97%
+source-wordcount: '905'
+ht-degree: 96%
 
 ---
-
 
 # 最新版本{#latest-release}
 
@@ -21,12 +21,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->促銷活動&#x200B;**GA組建**&#x200B;是：
->* [[!DNL Gold Standard] 11版](../../rn/using/gold-standard.md#gs-11)
->* [Campaign 20.2.4發行](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
-
->
-
+>促銷活動&#x200B;**一般可用性(GA)組建**&#x200B;包括：[[!DNL Gold Standard] 11版](../../rn/using/gold-standard.md#gs-11)和[Campaign 20.2.5版](../../rn/using/release--20-2.md)。
 
 
 ## ![](assets/do-not-localize/blue_2.png) 發行版本 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
