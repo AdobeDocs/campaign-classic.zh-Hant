@@ -6,14 +6,14 @@ description: 瞭解如何瞭解交付失敗
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2614'
 ht-degree: 14%
 
 ---
-
 
 # 瞭解傳送故障{#understanding-delivery-failures}
 
@@ -264,6 +264,10 @@ Adobe Campaign會篩選此訊息，以刪除變數內容（例如ID、日期、�
 
 ![](assets/deliverability_qualif_status.png)
 
+>[!NOTE]
+>
+>如果ISP發生中斷，透過Campaign傳送的電子郵件會錯誤標示為彈回。 若要修正此問題，您必須更新彈回資格。 如需詳細資訊，請參閱[此頁面](../../delivery/using/update-bounce-qualification.md)。
+
 ### 電子郵件管理規則{#email-management-rules}
 
 >[!IMPORTANT]
@@ -315,7 +319,7 @@ Adobe Campaign會篩選此訊息，以刪除變數內容（例如ID、日期、�
 * 您可以選擇是否激活某些標識標準和加密密鑰來檢查域名，如&#x200B;**發送者ID**、**域密鑰**、**DKIM**&#x200B;和&#x200B;**S/MIME**。
 * **SMTP中繼**&#x200B;參數允許您為特定域配置中繼伺服器的IP地址和埠。 如需詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
-如果您的訊息在Outlook中的傳送者位址中顯示有&#x200B;**[!UICONTROL on behalf of]**，請確定您未使用&#x200B;**傳送者ID**&#x200B;來簽署電子郵件，此為Microsoft的過時專屬電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消選中相應的框，然後聯繫[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不會受到影響。
+如果您的訊息在Outlook中的傳送者位址中顯示有&#x200B;**[!UICONTROL on behalf of]**，請確定您未使用&#x200B;**傳送者ID**&#x200B;來簽署電子郵件，此為Microsoft的過時專屬電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消選中相應的框，然後聯繫[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不會受到影響。
 
 #### MX管理{#mx-management}
 
