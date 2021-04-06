@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Microsoft Dynamics CRM Connector
+title: Campaign - Microsoft Dynamics CRM Connector
 description: Connect Campaign和Microsoft Dynamics
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 translation-type: tm+mt
-source-git-commit: 521bc3bf9b2507947007d7f458679275d407f910
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '947'
 ht-degree: 1%
 
 ---
-
 
 # Connect Campaign和Microsoft Dynamics 365{#connect-to-msdyn}
 
@@ -27,15 +27,9 @@ ht-degree: 1%
 
 資料同步通過專用的工作流活動執行。 [進一步瞭解](../../platform/using/crm-data-sync.md)。
 
-
->[!NOTE]
->
-> 與Campaign相容的CRM系統版本列在[相容性矩陣](../../rn/using/compatibility-matrix.md#CRMconnectors)中。
-
-
 ## 實施步驟{#microsoft-dynamics-implementation-steps}
 
-若要連線Microsoft Dynamics 365以透過&#x200B;**Web API**&#x200B;與Adobe Campaign搭配運作，您必須套用下列步驟：
+若要連接Microsoft Dynamics 365以透過&#x200B;**Web API**&#x200B;與Adobe Campaign合作，您必須套用下列步驟：
 
 在Microsoft Dynamics CRM中：
 1. 取得Microsoft Dynamics Client ID
@@ -46,7 +40,7 @@ ht-degree: 1%
 
 [本節提供更多資訊](#config-crm-microsoft)
 
-在Campaign Classic中：
+Campaign Classic:
 1. 建立新的外部帳戶
 1. 使用Microsoft Dynamics設定來設定外部帳戶
 1. 使用配置嚮導來映射表並同步枚舉
@@ -56,10 +50,10 @@ ht-degree: 1%
 
 
 >[!CAUTION]
->
 > 將Adobe Campaign與Microsoft Dynamics連接時，您無法：
-> * 安裝可變更CRM行為並導致與Adobe Campaign相容性問題的外掛程式
+> * 安裝可變更CRM行為並導致與Adobe Campaign相容問題的外掛程式
 > * 選擇多個枚舉
+
 >
 
 
@@ -171,13 +165,13 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >若要核准設定，您必須中斷連線／重新連線至Adobe Campaign主控台。
+   >要批准配置，必須斷開／重新連接到Adobe Campaign控制台。
 
-   您可以檢查Adobe Campaign中是否有相符的資料結構。
+   您可以檢查相符的資料結構是否可在Adobe Campaign使用。
 
    ![](assets/crm_connectors_msdynamics_05.png)
 
-1. 按一下&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;連結，開始同步Adobe Campaign和Microsoft Dynamics之間的列舉。
+1. 按一下&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;連結，開始同步Adobe Campaign和Microsoft Dynamics之間的枚舉。
 
    ![](assets/crm_connectors_msdynamics_06.png)
 
@@ -185,7 +179,7 @@ Campaign和Microsoft Dynamics現在已連接。 您可以在兩個系統之間�
 
 ## 設定Microsoft Dynamics CRM Office 365整合{#microsoft-dynamics-office-365}
 
-觀看此影片，瞭解如何在Office 365部署中，將Dynamics 365與Adobe Campaign Classic整合。
+觀看此影片，瞭解如何在部署Office 365時，將Dynamics 365與Adobe Campaign Classic整合。
 
 >[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
 
