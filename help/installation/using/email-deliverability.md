@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 電子郵件傳遞能力
-description: 電子郵件傳遞能力
+title: 技術電子郵件設定
+description: 瞭解如何設定Campaign，以在傳送電子郵件時控制執行個體的輸出。
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3022'
 ht-degree: 0%
 
 ---
-
 
 # 技術電子郵件設定{#email-deliverability}
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 有關與Adobe Campaign交付能力有關的概念和最佳做法的更多資訊，請參閱本[節](../../delivery/using/about-deliverability.md)。
 
-如需深入瞭解哪些是可傳遞性，包括有關Adobe平台有效收發電子郵件的所有技術建議，請參閱[Adobe可傳遞性最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
+如需深入瞭解哪些是可傳遞性，包括有關Adobe平台有效收發電子郵件的所有技術建議，請參閱[Adobe可傳遞性最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
 ## 操作原則 {#operating-principle}
 
@@ -135,9 +135,11 @@ ht-degree: 0%
 >
 >對於托管或混合安裝，如果您已升級至[增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，則不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;傳送吞吐量規則。 增強型MTA使用其專屬的MX規則，可讓您根據您過去的電子郵件信譽，以及您傳送電子郵件的網域所提供的即時回應，依網域自訂您的吞吐量。
 
-以下各節僅適用於使用舊版Campaign MTA的內部部署安裝和代管／混合安裝。
-
 ### 關於MX規則{#about-mx-rules}
+
+>[!NOTE]
+>
+>本節和以下各節僅適用於使用舊版促銷活動MTA的內部部署安裝和代管／混合安裝。
 
 MX規則(Mail eXchanger)是管理傳送伺服器與接收伺服器間通訊的規則。
 
@@ -301,6 +303,10 @@ MX要遵循的規則在樹的&#x200B;**[!UICONTROL Administration > Campaign Man
 配置示例：
 
 ![](assets/s_ncs_install_mx_mgt_rule_details.png)
+
+>[!NOTE]
+>
+>如需搭配Adobe Campaign使用MX伺服器的詳細資訊，請參閱[本節](../../installation/using/using-mx-servers.md)。
 
 ### 管理電子郵件格式{#managing-email-formats}
 
