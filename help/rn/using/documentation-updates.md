@@ -2,18 +2,18 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic 文件更新
-description: 本頁列出了Adobe Campaign Classic文檔中的所有新功能和更新
-feature: 概觀
-role: 業務從業人員
-level: 初學者
+description: 本頁列出了 Adobe Campaign Classic 文件中的所有新功能和更新
+feature: 概覽
+role: Business Practitioner
+level: Beginner
+exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '4275'
-ht-degree: 94%
+source-wordcount: '4272'
+ht-degree: 96%
 
 ---
-
 
 # 文件更新{#documentation-updates}
 
@@ -21,24 +21,24 @@ ht-degree: 94%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2021 年 3月 {#march-2021}
+## 2021 年 3 月 {#march-2021}
 
 [開始使用SMS區段](../../delivery/using/sms-channel.md)已重新整理並改進。 您現在可以學習如何在專用區域中[配置SMS頻道](../../delivery/using/sms-set-up.md)、[建立SMS](../../delivery/using/sms-create.md)、[傳送及追蹤SMS](../../delivery/using/sms-send.md)。
 
 Campaign Classic的「說明與支援選項」頁面已整合至核心檔案。 [顯示全文](../../support.md)
 
-新增了與安全性和隱私權相關的最佳實務和檢查。 [顯示全文](../../installation/using/get-started-security-privacy.md)
+新增了一個新的部分，其中包含最佳實務，以及有關安全性和隱私權要執行的檢查。[顯示全文](../../installation/using/get-started-security-privacy.md)
 
-[權限管理章節](../../platform/using/access-management.md)已改進並分成幾節，包括有關[操作員](../../platform/using/access-management-operators.md)、[操作員組](../../platform/using/access-management-groups.md)、[命名權限](../../platform/using/access-management-named-rights.md)和[資料夾管理](../../platform/using/access-management-folders.md)的詳細資訊。
+[權限管理章節](../../platform/using/access-management.md)已已改進並分成幾個部分，包括有關[操作員](../../platform/using/access-management-operators.md)、[操作員群組](../../platform/using/access-management-groups.md)、[已命名的權限](../../platform/using/access-management-named-rights.md)和[資料夾管理](../../platform/using/access-management-folders.md)的詳細資訊。
 
-瞭解如何透過這些新頁面建立和管理您的宣傳：
-* [建立和設定促銷活動範本](../../campaign/using/marketing-campaign-templates.md)
-* [行銷促銷活動傳送](../../campaign/using/marketing-campaign-deliveries.md)
-* [選取促銷活動的對象](../../campaign/using/marketing-campaign-target.md)
-* [管理相關檔案](../../campaign/using/marketing-campaign-assets.md)
-* [設定並管理核准程式](../../campaign/using/marketing-campaign-approval.md)
+瞭解如何透過這些新頁面建立及管理您的行銷活動：
+* [建立及設定行銷活動範本](../../campaign/using/marketing-campaign-templates.md)
+* [行銷活動傳遞](../../campaign/using/marketing-campaign-deliveries.md)
+* [選取行銷活動的閱聽眾](../../campaign/using/marketing-campaign-target.md)
+* [管理相關文件](../../campaign/using/marketing-campaign-assets.md)
+* [設定及管理核准流程](../../campaign/using/marketing-campaign-approval.md)
 
-在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活動部分中已添加了有關如何使用task.setCompleted()方法終止任務和防止將來召回的資訊。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活動部分中已新增了有關如何使用 task.setCompleted() 方法終止任務及防止將來重新呼叫的資訊。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 [傳遞能力](../../delivery/using/about-deliverability.md)區段已更新，現在包含新[Adobe傳遞能力最佳實踐指南](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)的連結。 與可適用於各種Adobe解決方案的傳遞能力相關的所有一般資訊都已移至[最佳實踐指南附錄](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources)。
 
