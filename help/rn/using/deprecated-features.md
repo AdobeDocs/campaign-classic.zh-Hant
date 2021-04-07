@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Campaign Classic 已棄用和移除的功能
-description: 本頁列出Adobe Campaign Classic已過時和已移除的功能
-feature: 概觀
+description: 本頁列出 Adobe Campaign Classic 已過時和已移除的功能
+feature: 概覽
 role: 業務從業人員
 level: 初學者
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1716'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,16 +44,16 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>取代的功能</strong></td>
   </tr>
     <tr>
-  <td>技術交付能力監控報告<br></td>
-   <td><p>從Campaign 21.1版開始，技術傳遞性監控報表已過時。</p>
-   <p>如有需要，您可以透過電子郵件每天收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報表的例項名稱和電子郵件地址。</p> 
-   <p>Adobe建議您與交付能力團隊合作，以定義最佳工具來監控實例的交付能力效能。</p>
-  <p><em>目標刪除日期：2021年底</em></p>
+  <td>技術傳遞能力監視報告<br></td>
+   <td><p>從 Campaign 21.1 版開始，技術傳遞能力監視報告已棄用。</p>
+   <p>如有需要，您可以每天透過電子郵件收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報告的執行個體名稱和電子郵件地址。</p> 
+   <p>Adobe 建議您與傳遞能力團隊合作，以定義最佳工具來監視執行個體的傳遞能力效能。</p>
+  <p><em>目標移除日期：2021 年底</em></p>
   </td>
  </tr>
   <tr>
   <td>CRM 連接器<br></td>
-   <td><p>從Campaign 20.3版開始，下列CRM連接器已不再適用於Campaign:</p>
+   <td><p>下列 CRM 連接器自 Campaign 發行版本第 20.3 版起已棄用。</p>
    <ul>
    <li>Soap API - 內部部署：2007、2015、2016 年</li>
    <li>Soap API - 線上：2015、2016 年</li>
@@ -96,7 +96,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <li>iOS</li>
    </ul>
   <p>如果您使用其中一個連接器，則需要據此調整實施。<a href="../../delivery/using/sms-channel.md">瞭解更多</a></p> 
-  <p>閱讀此<a href="../../delivery/using/unsupported-connector-migration.md">技術文件</a>，瞭解如何移轉舊連接器。</p>
+  <p>閱讀此<a href="../../delivery/using/unsupported-connector-migration.md">技術文件</a>，瞭解如何遷移舊連接器。</p>
   <p><em>目標移除日期：2021 年 4 月</em></p>
   </td> 
  </tr>
