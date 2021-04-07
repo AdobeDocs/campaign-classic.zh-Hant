@@ -4,18 +4,18 @@ product: campaign
 title: 最新版本
 description: 最新的 Campaign Classic 發行說明
 feature: 概覽
-role: 業務從業人員
-level: 初學者
+role: Business Practitioner
+level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 translation-type: tm+mt
 source-git-commit: 3db426580ba72668cd9fa274b57f925600eda27b
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 96%
+source-wordcount: '902'
+ht-degree: 98%
 
 ---
 
-# 最新版本{#latest-release}
+# 最新發行版本{#latest-release}
 
 本頁面列出&#x200B;**最新 Campaign Classic 發行候選版本**&#x200B;的新功能、改善和修正。
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 ## ![](assets/do-not-localize/blue_2.png) 發行版本 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
 
-_2021年2月22日_
+_2021 年 2 月 22 日_
 
 **安全性增強功能**
 
@@ -85,7 +85,7 @@ _2021年2月22日_
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* 修正無法傳送具有目標資料個人化之新傳送的問題(NEO-30323)。
+* 針對具有目標資料個人化的新傳遞修正無法傳送的問題 (NEO-30323)。
 * 修正行銷執行個體中，發生數次當機所導致的核心檔案問題。
 * 修正導致&#x200B;**追蹤**&#x200B;工作流程因下列錯誤而失敗的問題 (NEO-25206)：
 
