@@ -3,45 +3,45 @@ solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard] 升級'
 description: '瞭解什麼是Campaign Classic [!DNL Gold Standard] '
-feature: 概觀
-role: 業務從業人員
-level: 初學者
+feature: 概覽
+role: Business Practitioner
+level: Beginner
+exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 12%
+source-wordcount: '556'
+ht-degree: 92%
 
 ---
-
 
 # [!DNL Gold Standard] 釋放  {#gs-overviews}
 
 ## 這是什麼[!DNL Gold Standard]？
 
-Adobe和Adobe Campaign致力於透過我們的軟體解決方案為您提供最佳的體驗和價值。 該組織致力於確保您能夠訪問我們的解決方案用來執行其任務的最新版本的相關技術。
+Adobe 和 Adobe Campaign 致力透過我們的軟體解決方案為您提供最佳體驗和價值。 針對在我們的解決方案中所運用的相關技術，公司致力確保您能夠取得最新版本來執行其任務。
 
 Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組合，需要您定期升級 Campaign Classic 執行個體，以確保使用最新版本來提供優越的安全性、穩定性和效能。
 
-[!DNL Gold Standard] 是Campaign Classic長期支援版本。身為代管[!DNL Gold Standard]使用者，您可透過最新穩定版本自動受益於[!DNL Gold Standard]升級，而不需採取任何動作。 內部部署和Hybrid客戶也可以從[!DNL Gold Standard]版本中獲益。 如果您從舊的版本編號移轉出，我們建議您先升級至此版本。
+[!DNL Gold Standard] 是Campaign Classic長期支援版本。身為代管[!DNL Gold Standard]使用者，您可透過最新穩定版本自動受益於[!DNL Gold Standard]升級，而不需採取任何動作。 內部部署和Hybrid客戶也可以從[!DNL Gold Standard]版本中獲益。 如果您從舊的建置中遷移，我們建議您先升級至此版本。
 
 ## 我的組織為何需要此升級？
 
-身為代管客戶，如果您的帳戶被認定需要升級一或多項與Campaign Classic相關的技術，以及更新目前的組建版本和／或版本，Adobe會直接通知您。
+作為托管客戶，如果您的帳戶被認定需要升級一或多項與 Campaign Classic 的相關技術，以及更新目前的建置和／或版本，Adobe 會直接通知您。
 
-身為舊版的內部部署或混合型客戶，Adobe鼓勵您改用最新的[!DNL Gold Standard]。
+作為使用舊版軟體的內部部署或混合型客戶，Adobe 鼓勵您改用最新的 [!DNL Gold Standard].
 
-這將確保您的帳戶免受漏洞的侵擾，並可運用更新的效能技術。 此升級版還可讓您的帳戶日後更輕鬆、定期地升級，而且所需的手動工作和干預也更少。
+這將確保您的帳戶免受漏洞的侵擾，並可運用更新的效能技術。 此升級還可讓您的帳戶日後能夠更輕鬆定期升級，而且所需的手動作業和操作也更少。
 
-## 此升級程式和時間表為何？
+## 此升級的流程和時間表為何？
 
-Adobe團隊將帶領並引導您的組織完成此旅程。
+Adobe 團隊將帶領並引導您的組織完成這個過程。
 
-我們組織了一個專門的客戶服務代表、產品經理、工程師和TechOps專家以及產品顧問團隊，以協助並確保體驗順暢。
+我們組織了專門的團隊，包含客戶服務代表、產品經理、工程師和 TechOps 專家以及產品顧問，以便提供協助並確保順暢的體驗。
 
-我們致力於確保您擁有相關專案和聯絡資訊。
+我們致力確保您具有相關專案和聯絡資訊。
 
-## 優點
+## 好處
 
 <tr>
   <td>
@@ -50,10 +50,10 @@ Adobe團隊將帶領並引導您的組織完成此旅程。
     <strong>增強的安全性</strong>
     </div>
     <ul>
-    <li>為Adobe Campaign Classic提供動力的技術組合可以共同提供價值。</li>
-    <li>您必須更新所有例項，以確保安全性。</li>
-    <li>安全性需要持續的專注力和主動維護。</li>
-    <li>安全風險無處不在，不容忽視：每次Campaign Classic升級都能提高安全性。</li>
+    <li>Adobe Campaign Classic 背後的技術組合可以共同帶來價值。</li>
+    <li>您必須更新所有執行個體，以確保安全性。</li>
+    <li>安全性需要持續關注及主動維護。</li>
+    <li>安全風險無處不在，不容忽視：每次 Campaign Classic 升級都能提高安全性。</li>
     </ul>
   </td>
 
@@ -63,9 +63,9 @@ Adobe團隊將帶領並引導您的組織完成此旅程。
     <strong>改善的支援</strong>
     </div>
     <ul>
-    <li>大部份的重大問題都可透過升級實際解決，而且可以避免。</li>
-    <li>定期升級可協助您消除這些挑戰，以減少所面臨的挑戰並提高效率。</li>
-    <li>客戶服務量將會減少，讓解決速度更快，而且對與升級無關的問題會有更多關注。</li>
+    <li>大部份的重大問題都可透過升級實際解決，並且可以避免。</li>
+    <li>定期升級可協助您減少所面臨的挑戰並提高效率。</li>
+    <li>客戶服務量將會減少，提高解決問題的速度，而且對於無關升級的問題將可獲得更多關注。</li>
     </ul>
   </td>
 </tr>
@@ -77,22 +77,22 @@ Adobe團隊將帶領並引導您的組織完成此旅程。
     <strong>增強的維護與穩定性</strong>
     </div>
     <ul>
-    <li>隨著時間推移，Adobe Campaign團隊會找出改善產品穩定性和效能的方法，並修正已知問題。</li>
-    <li>升級功能可讓您的執行個體更新這些增強功能，並消除在Campaign Classic執行個體中快速成長和／或複雜性的組織所面臨的常見挑戰。</li>
-    <li>在您組織的行銷和IT團隊中，都能感受到技術堆疊的改進，推動Campaign Classic。</li>
+    <li>Adobe Campaign 團隊會持續找出方法改善產品穩定性及效能，並修正已知問題。</li>
+    <li>升級可透過這些改進功能更新您的執行個體，並消除了快速成長的組織常見的挑戰和／或 Campaign Classic 執行個體中的複雜性。</li>
+    <li>您組織的行銷團隊和 IT 團隊都能感受到支援 Campaign Classic 技術堆疊的各項改善。</li>
     </ul>
   </td>
 
 <td>
-      <img alt="組建版本升級" src="assets/do-not-localize/upgrades.png" />
+      <img alt="建置升級" src="assets/do-not-localize/upgrades.png" />
     <div>
     <strong>更輕鬆的升級</strong>
     </a>
     </div>
     <ul>
-    <li>升級Campaign經典例項的工作量和複雜性會隨著2個版本(v5 —&gt; v7)之間的距離而增加。</li>
+    <li>升級 Campaign Classic 執行個體的工作量和複雜性會隨著 2 個版本 (v5 --&gt; v7) 之間的距離而增加。</li>
     <li>您的組織等待的時間越長，升級過程就越複雜（而您暴露的漏洞也越多）。</li>
-    <li>定期更新將減少升級的停機時間，並降低退化風險。</li>
+    <li>定期更新將減少升級的停機時間，並降低迴歸風險。</li>
     </ul>
   </td>
 </tr>
@@ -101,5 +101,5 @@ Adobe團隊將帶領並引導您的組織完成此旅程。
 ## 其他資源
 
 * [[!DNL Gold Standard] 發行說明](gold-standard.md)
-* [建立升級常見問答集](../../platform/using/faq-build-upgrade.md)
+* [建置升級常見問答集](../../platform/using/faq-build-upgrade.md)
 * [[!DNL Gold Standard] 相容性矩陣](compatibility-matrix-gs.md)
