@@ -6,20 +6,30 @@ description: 瞭解如何設定安全區
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
 
 
-# 定義安全區{#defining-security-zones}
+# 定義安全區 {#defining-security-zones}
 
 每個運算子都必須連結至區域才能登入例項，且運算子IP必須包含在安全區域中定義的位址或位址集中。 安全區配置在Adobe Campaign伺服器的配置檔案中執行。
 
-操作員從控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點）中的配置檔案連結到安全區域。 瞭解如何在[本節](#linking-a-security-zone-to-an-operator)中將區域連結至Campaign運算子。
+操作員從控制台中的配置式連結到安全區域，可在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中訪問該配置式。 [進一步瞭解](#linking-a-security-zone-to-an-operator)。
+
+>[!NOTE]
+>
+>此程式僅限於&#x200B;**on-premise**&#x200B;部署。
+>
+>身為&#x200B;**代管**&#x200B;的客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，則可使用安全區自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>
+>其他&#x200B;**hybrid/hosted**&#x200B;客戶需要聯絡Adobe以設定其例項的安全區。
+
 
 ## 建立安全區{#creating-security-zones}
 
