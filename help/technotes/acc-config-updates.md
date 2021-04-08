@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1107'
 ht-degree: 8%
 
 ---
@@ -117,7 +117,6 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 * 金標11 [了解更多](../rn/using/gold-standard.md)
 * Campaign 21.1.1發行。 [了解更多](../rn/using/latest-release.md)
-* Campaign 20.3.3發行。 [了解更多](../rn/using/release--20-3.md)
 * Campaign 20.2.5版。 [了解更多](../rn/using/release--20-2.md)
 * Campaign 19.1.8發行。 [了解更多](../rn/using/release--19-1.md)
 
@@ -135,7 +134,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 ### 基於HTTP/2的APNs提供者API
 
-自2021年3月31日起，Apple推播通知服務(APN)將不再支援舊版二進位通訊協定。 ****[顯示全文](https://developer.apple.com/news/?id=c88acm2b)。
+自2021年3月31日&#x200B;**以來，Apple推播通知服務(APN)不再支援舊版二進位通訊協定。**[顯示全文](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您的影響力？**
 
@@ -151,7 +150,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 ### APN根證書更新
 
-在2021年3月29日，Apple推播通知服務(APNs)基礎架構更新將影響Adobe Campaign ClassiciOS頻道。 作業系統組態變更為&#x200B;**mandatory**&#x200B;以避免iOS推播頻道中斷。
+2021年3月29日，Apple推播通知服務(APNs)基礎架構更新對Adobe Campaign ClassiciOS頻道造成影響。 作業系統組態變更為&#x200B;**mandatory**&#x200B;以避免iOS推播頻道中斷。
 
 在本頁](https://developer.apple.com/news/?id=7gx0a2lp)中進一步瞭解APN更改[。
 
