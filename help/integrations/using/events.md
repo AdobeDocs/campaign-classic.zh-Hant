@@ -5,14 +5,14 @@ title: 設定事件
 description: 瞭解如何設定自訂實作的事件
 audience: integrations
 content-type: reference
+exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
 
 ---
-
 
 # 配置自訂實施事件 {#events}
 
@@ -217,7 +217,7 @@ triggerType欄位可識別資料觸發的來源。
 
 >[!NOTE]
 >
->Pipeline Event節點未內建，需要新增，以及相關表單需要在Campaign中建立。 這些操作僅限專家用戶使用。 如需更多相關資訊，請參閱以下章節：[導覽階層](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)。 和[編輯表單](../../configuration/using/editing-forms.md)。
+>Pipeline Event節點未內建，需要新增，以及相關表單需要在Campaign中建立。 這些操作僅限專家用戶使用。 如需更多相關資訊，請參閱以下章節：[導覽階層](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。 和[編輯表單](../../configuration/using/editing-forms.md)。
 
 ![](assets/triggers_7.png)
 
