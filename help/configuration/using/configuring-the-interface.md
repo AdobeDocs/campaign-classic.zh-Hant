@@ -6,14 +6,14 @@ description: 設定介面
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
+exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
 
 ---
-
 
 # 設定介面{#configuring-the-interface}
 
@@ -70,7 +70,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全局變數與預設接收方資�
 
    >[!NOTE]
    >
-   >有關&#x200B;**navtree**&#x200B;類型檔案的詳細資訊，請參閱[此頁](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)。
+   >有關&#x200B;**navtree**&#x200B;類型檔案的詳細資訊，請參閱[此頁](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。
 
    在目前範例中，**navtree**&#x200B;檔案必須以&#x200B;**cus:individual**&#x200B;架構為基礎，因此具有下列格式：
 
@@ -91,4 +91,3 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全局變數與預設接收方資�
    ```
 
 1. 儲存建立內容。
-
