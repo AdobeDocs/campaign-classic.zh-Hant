@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
+source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 
-# 定義安全區 {#defining-security-zones}
+# 定義安全區（內部部署）{#defining-security-zones}
 
 每個運算子都必須連結至區域才能登入例項，且運算子IP必須包含在安全區域中定義的位址或位址集中。 安全區配置在Adobe Campaign伺服器的配置檔案中執行。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 >
 >身為&#x200B;**代管**&#x200B;的客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，則可使用安全區自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
->其他&#x200B;**hybrid/hosted**&#x200B;客戶需要聯絡Adobe以設定其例項的安全區。
+>其他&#x200B;**hybrid/hosted**&#x200B;客戶需要聯繫Adobe支援團隊，將IP新增至允許清單。
 
 
 ## 建立安全區{#creating-security-zones}
@@ -36,7 +36,7 @@ ht-degree: 0%
 區域由以下項定義：
 
 * 一或多個IP位址範圍（IPv4和IPv6）
-* 與每個IP位址範圍連結的技術名稱
+* 與每個IP位址範圍相關的技術名稱
 
 安全區域互鎖，這表示在另一個區域中定義新區域可以減少可登錄該區域的運算子數量，同時增加分配給每個運算子的權限。
 
@@ -218,3 +218,36 @@ ht-degree: 0%
    ![](assets/zone_operator_selection.png)
 
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;並保存修改以應用這些更改。
+
+
+
+## 建議
+
+* 請確定子網中不允許您的反向代理。 如果是這樣，將檢測到&#x200B;**all**&#x200B;通信來自此本地IP，因此將受信任。
+
+* 將sessionTokenOnly=&quot;true&quot;的使用降至最低：
+
+   * 警告：如果此屬性設定為true，則操作員可以暴露在&#x200B;**CRSF攻擊**&#x200B;中。
+   * 此外，sessionToken Cookie不會使用httpOnly標幟來設定，因此有些用戶端javascript程式碼可以讀取。
+   * 但是，多個執行儲存格上的訊息中心需要sessionTokenOnly:建立新的安全區域，並將sessionTokenOnly設為&quot;true&quot;，並在此區域中僅新增所需的IP **。**
+
+* 如果可能，請將allowHTTP、showErrors設為false（非localhost）並加以檢查。
+
+   * allowHTTP = &quot;false&quot;:強制運算子使用HTTPS
+   * showErrors = &quot;false&quot;:隱藏技術錯誤（包括SQL錯誤）。 它可避免顯示太多資訊，但降低行銷人員解決錯誤的能力（毋需向管理員要求更多資訊）
+
+* 只有在行銷使用者／管理員使用的IP上，將allowDebug設為true，而這些IP需要建立（實際上是預覽）調查、webApps和報表。 此標誌允許這些IP獲得顯示的中繼規則並對它們進行調試。
+
+* 請勿將allowEmptyPassword、allowUserPassword、allowSQLInjeption設為true。 這些屬性僅允許從v5和v6.0順暢移轉：
+
+   * **allowEmptyPasswordlet** 運算子具有空密碼。如果是這種情況，請通知所有營運商要求他們在期限內設定密碼。 在此期限過後，請將此屬性變更為false。
+
+   * **allowUserPasswordlets** 運算子會將其認證傳送為參數（因此會由apache/IIS/proxy記錄）。此功能過去曾用來簡化API使用。 您可以登入您的Cookbook（或在規格中），看看是否有某些協力廠商應用程式使用它。 如果是，您必須通知他們，以變更他們使用我們API的方式，並盡快移除此功能。
+
+   * **allowSQLInjection** 可讓使用者使用舊語法來執行SQL插入。盡快執行[本頁](../../migration/using/general-configurations.md)中所述的更正，以便能夠將此屬性設定為false。 您可以使用/nl/jsp/ping.jsp?zones=true來檢查安全區配置。 此頁顯示當前IP的安全措施（使用這些安全標誌計算）的活動狀態。
+
+* HttpOnly cookie/useSecurityToken:請參閱&#x200B;**sessionTokenOnly**&#x200B;旗標。
+
+* 將新增至允許清單的IP降至最低：現在，在安全區中，我們為專用網路添加了3個範圍。 您不太可能使用這些IP位址。 所以只保留您需要的。
+
+* 將webApp/internal運算子更新為只能在localhost中存取。
