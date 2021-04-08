@@ -4,16 +4,16 @@ product: campaign
 title: 關於設定檔
 description: 關於設定檔
 feature: 個人檔案、觀眾
-role: 業務從業人員，資料架構師
-level: 初學者
+role: Business Practitioner, Data Architect
+level: Beginner
+exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 55%
+source-wordcount: '994'
+ht-degree: 57%
 
 ---
-
 
 # 開始使用描述檔{#about-profiles}
 
@@ -79,11 +79,11 @@ ht-degree: 55%
 
 ![](assets/d_ncs_user_interface01.png)
 
-此部分[顯示了Adobe Campaign瀏覽器的一般佈局。](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)
+此頁[中顯示了Adobe Campaign瀏覽器的一般佈局。](../../platform/using/adobe-campaign-explorer.md)
 
 >[!NOTE]
 >
->您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 清單顯示配置在[本節](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中有說明。
+>您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 清單顯示配置在[本頁](../../platform/using/adobe-campaign-ui-lists.md)中介紹。
 >
 >您也可以定義收件者畫面。有關此功能的詳細資訊，請參閱[本節](../../platform/using/access-management-folders.md)。
 
@@ -97,7 +97,7 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)中。
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
 >請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](../../rn/using/gs-overview.md)組建版本或[最新的GA組建版本(21.1)](../../rn/using/latest-release.md)進行升級。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
 
