@@ -8,20 +8,20 @@ content-type: reference
 index: y
 internal: n
 snippet: y
+exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '583'
 ht-degree: 4%
 
 ---
-
 
 # 為 Adobe Experience Cloud 觸發器配置 Adobe I/O {#configuring-adobe-io}
 
 >[!CAUTION]
 >
->如果您使用舊版的觸發器整合（透過oAuth驗證）,**您必須依照**&#x200B;下方所述移至Adobe I/O。 含促銷活動的舊版驗證模式將於2021年11月30日淘汰。 [進一步了解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您使用舊版的觸發器整合（透過oAuth驗證）,**您必須依照**&#x200B;下方所述移至Adobe I/O。 含促銷活動的舊版驗證模式將於2021年11月30日淘汰。 [了解更多](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >請注意，在移至[!DNL Adobe I/O]期間，有些傳入的觸發器可能會遺失。
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 開始此實作前，請檢查您有：
 
-* 有效的&#x200B;**組織識別碼**:Identity Management系統(IMS)組織識別碼是Adobe Experience Cloud內的唯一識別碼，用於VisitorID服務和IMS單一登入(SSO)。 [進一步了解](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* 有效的&#x200B;**組織識別碼**:Identity Management系統(IMS)組織識別碼是Adobe Experience Cloud內的唯一識別碼，用於VisitorID服務和IMS單一登入(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **您組織的開發人員存取權**。  如果您需要申請IMS組織的系統管理員權限，請依照本頁](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中詳細說明的程式，為所有產品設定檔提供此存取權。[
 
 ## 步驟1:建立／更新Adobe I/O項目{#creating-adobe-io-project}
@@ -74,9 +74,9 @@ ht-degree: 4%
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. 選擇任何現有的&#x200B;**[!UICONTROL Product profile]**，或視需要建立新的。 然後，按一下&#x200B;**[!UICONTROL Save configured API]**。
+1. 選擇任何現有的&#x200B;**[!UICONTROL Product profile]**，或視需要建立新的。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要權限。 有關[!DNL Analytics] **[!UICONTROL Product Profiles]**&#x200B;的更多資訊，請參閱[Adobe Analytics文檔](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
 
-   有關[!DNL Analytics] **[!UICONTROL Product Profiles]**&#x200B;的更多資訊，請參閱[Adobe Analytics文檔](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
+   然後，按一下&#x200B;**[!UICONTROL Save configured API]**。
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
