@@ -6,14 +6,14 @@ description: Web服務呼叫
 audience: configuration
 content-type: reference
 topic-tags: api
+exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
-
 
 # Web服務呼叫{#web-service-calls}
 
@@ -188,7 +188,7 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
 
 ## 連接{#connectivity}
 
-Adobe Campaign通過引入安全區（請參閱[本節](../../installation/using/security-zones.md)中的&#x200B;**定義安全區一章）以及會話管理設定，提高了身份驗證機制的安全性。**
+Adobe Campaign通過引入[安全區](../../installation/using/security-zones.md)和會話管理設定提高了身份驗證機制的安全性。
 
 有兩種可用的驗證模式：
 
