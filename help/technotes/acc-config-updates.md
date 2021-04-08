@@ -5,14 +5,14 @@ title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
+exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
-
 
 # Adobe Campaign配置更新- 2021年3月{#acc-config-updates}
 
@@ -37,13 +37,13 @@ ht-degree: 7%
 
 如果您的環境的組建版本低於下列版本，您會受到影響：
 
-* 金標11 [進一步了解](../rn/using/gold-standard.md)
-* Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
-* Campaign 20.3.3發行。 [進一步了解](../rn/using/release--20-3.md)
-* Campaign 20.2.4發行。 [進一步了解](../rn/using/release--20-2.md)
-* Campaign 20.1.4發行。 [進一步了解](../rn/using/release--20-1.md)
-* Campaign 19.2.4發行。 [進一步了解](../rn/using/release--19-2.md)
-* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
+* 金標11 [了解更多](../rn/using/gold-standard.md)
+* Campaign 21.1.1發行。 [了解更多](../rn/using/latest-release.md)
+* Campaign 20.3.3發行。 [了解更多](../rn/using/release--20-3.md)
+* Campaign 20.2.4發行。 [了解更多](../rn/using/release--20-2.md)
+* Campaign 20.1.4發行。 [了解更多](../rn/using/release--20-1.md)
+* Campaign 19.2.4發行。 [了解更多](../rn/using/release--19-2.md)
+* Campaign 19.1.8發行。 [了解更多](../rn/using/release--19-1.md)
 
 瞭解如何在本節](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本[。
 
@@ -66,10 +66,10 @@ ht-degree: 7%
 
 **現已提供**&#x200B;控制台版本，應安裝以解決最近識別的回歸。 此回歸無法使用用戶端主控台的某些元件，例如傳送中的日期選擇器和影像管理。 **控制台** 升級是必備的。
 
-* 最新的Gold Standard 11組建版本9032@10c2709。 [進一步了解](../rn/using/gold-standard.md)
-* Campaign 20.1.4發行。 [進一步了解](../rn/using/release--20-1.md)
-* Campaign 19.2.4發行。 [進一步了解](../rn/using/release--19-2.md)
-* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
+* 最新的Gold Standard 11組建版本9032@10c2709。 [了解更多](../rn/using/gold-standard.md)
+* Campaign 20.1.4發行。 [了解更多](../rn/using/release--20-1.md)
+* Campaign 19.2.4發行。 [了解更多](../rn/using/release--19-2.md)
+* Campaign 19.1.8發行。 [了解更多](../rn/using/release--19-1.md)
 
 ## AdobeIdentity Management系統(IMS)更新
 
@@ -81,13 +81,13 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 如果您透過Adobe ID](../integrations/using/about-adobe-id.md)連線至促銷活動，透過AdobeIdentity Management服務(IMS)，必須升級至下列其中一個新版本：[
 
-* 金標11 [進一步了解](../rn/using/gold-standard.md)
-* Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
-* Campaign 20.3.3發行。 [進一步了解](../rn/using/release--20-3.md)
-* Campaign 20.2.4發行。 [進一步了解](../rn/using/release--20-2.md)
-* Campaign 20.1.4發行。 [進一步了解](../rn/using/release--20-1.md)
-* Campaign 19.2.4發行。 [進一步了解](../rn/using/release--19-2.md)
-* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
+* 金標11 [了解更多](../rn/using/gold-standard.md)
+* Campaign 21.1.1發行。 [了解更多](../rn/using/latest-release.md)
+* Campaign 20.3.3發行。 [了解更多](../rn/using/release--20-3.md)
+* Campaign 20.2.4發行。 [了解更多](../rn/using/release--20-2.md)
+* Campaign 20.1.4發行。 [了解更多](../rn/using/release--20-1.md)
+* Campaign 19.2.4發行。 [了解更多](../rn/using/release--19-2.md)
+* Campaign 19.1.8發行。 [了解更多](../rn/using/release--19-1.md)
 
 這些版本隨附新的連線通訊協定：升級對於促銷活動伺服器和用戶端主控台而言都是強制性的，才能在&#x200B;**2021年6月30日**&#x200B;後連線至促銷活動。
 
@@ -115,11 +115,11 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 必須升級至下列其中一個新版本：
 
-* 金標11 [進一步了解](../rn/using/gold-standard.md)
-* Campaign 21.1.1發行。 [進一步了解](../rn/using/latest-release.md)
-* Campaign 20.3.3發行。 [進一步了解](../rn/using/release--20-3.md)
-* Campaign 20.2.4發行。 [進一步了解](../rn/using/release--20-2.md)
-* Campaign 19.1.8發行。 [進一步了解](../rn/using/release--19-1.md)
+* 金標11 [了解更多](../rn/using/gold-standard.md)
+* Campaign 21.1.1發行。 [了解更多](../rn/using/latest-release.md)
+* Campaign 20.3.3發行。 [了解更多](../rn/using/release--20-3.md)
+* Campaign 20.2.5版。 [了解更多](../rn/using/release--20-2.md)
+* Campaign 19.1.8發行。 [了解更多](../rn/using/release--19-1.md)
 
 瞭解如何在本節](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本[。
 
@@ -147,7 +147,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 
 身為代管客戶，如果您已升級至新建版本，Adobe已將您的例項更新至HTTP/2架構的API。
 
-身為內部部署／代管客戶，您需要更新您的設定。 [瞭解如何移轉至HTTP/2](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
+身為內部部署／混合型客戶，您需要更新您的組態。 [瞭解如何移轉至HTTP/2](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
 ### APN根證書更新
 
@@ -170,6 +170,6 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**停止支援舊版Internet
 ## 有用的連結
 
 * [升級您的環境](../production/using/build-upgrade.md)
-* [建立升級常見問答集](../platform/using/faq-build-upgrade.md)
-* [下載Campaign Classic組建版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [建置升級常見問答集](../platform/using/faq-build-upgrade.md)
+* [下載Campaign Classic組建版本](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html)
 * [讓新的用戶端主控台可供使用](../installation/using/client-console-availability-for-windows.md)
