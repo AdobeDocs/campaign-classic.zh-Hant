@@ -6,14 +6,14 @@ description: 瞭解如何使用Campaign Classic資料模型
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
+exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 6768e9ac518ab0c5642241d1fd2086de5b1e6892
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 1%
 
 ---
-
 
 # 資料模型最佳實務{#data-model-best-practices}
 
@@ -251,7 +251,7 @@ Adobe Campaign既不是資料倉庫，也不是報告工具。 因此，為了�
 * 如果希望將日誌保留更長時間，則應根據資料庫大小和發送的消息量仔細作出此決定。 提醒您，Adobe Campaign序列是32位元整數。
 * 建議在這些表格中，每次不要有超過10億份記錄（21.4億個ID中的50%），以限制使用所有可用ID的風險。 這將要求某些客戶將保留期限降低到180天以下。
 
-進一步瞭解[促銷活動隱私與安全性准則](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html#consent)中的資料保留。
+進一步瞭解[促銷活動隱私與安全性方針中的資料保留。](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html#consent)
 
 在本節](../../production/using/database-cleanup-workflow.md)中進一步瞭解促銷活動資料庫清除工作流程[。
 
