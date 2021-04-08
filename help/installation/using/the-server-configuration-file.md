@@ -6,14 +6,14 @@ description: 伺服器設定檔
 audience: installation
 content-type: reference
 topic-tags: appendices
+exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 4%
 
 ---
-
 
 # 伺服器設定檔{#the-server-configuration-file}
 
@@ -3486,4 +3486,3 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
  </tbody> 
 </table>
-
