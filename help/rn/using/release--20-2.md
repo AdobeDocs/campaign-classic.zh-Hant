@@ -4,49 +4,47 @@ product: campaign
 title: 第 20.2 發行版本
 description: 第 20.2 發行版本
 feature: 概覽
-role: 業務從業人員
-level: 初學者
+role: Business Practitioner
+level: Beginner
+exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
+source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 84%
+source-wordcount: '2830'
+ht-degree: 88%
 
 ---
 
-
 # 第 20.2 發行版本{#release-20-2}
-
-![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
 
-_2020年3月31日_
+_2021年 3 月 31 日_
 
 **功能改善**
 
-* 已進行改進，以防止無效soap呼叫發生當機。 這可能導致在嘗試執行特定複雜查詢時，執行個體停止運作。 (NEO-28796、NEO-30553)
+* 已進行改進，以防止無效soap呼叫發生當機。 這可能導致在嘗試執行特定複雜查詢時，執行個體停止運作。 （NEO-28796、NEO-30553）
 * 修正因主機名稱驗證而無法傳送具有TLS的SMS傳送的回歸。 (NEO-29581)
-* 修正已簽署的追蹤連結無法用於某些電子郵件用戶端的問題。 (NEO-28414、NEO-29615)
+* 修正已簽署的追蹤連結無法用於某些電子郵件用戶端的問題。 （NEO-28414、NEO-29615）
 * 修正使用webApp追蹤標籤時，可能會與重複ID產生衝突的追蹤ID序列。 (NEO-27931)
 * 修正每日wfserver重新啟動導致執行工作流程停止的問題。 (NEO-30047)
-* 修正了在非管理員使用者嘗試同步 Adobe Experience Manager 範本時，使用 API 調用的安全性問題。(NEO-32389、NEO-23487)
+* 修正了在非管理員使用者嘗試同步 Adobe Experience Manager 範本時，使用 API 調用的安全性問題。（NEO-32389、NEO-23487）
 * 修正當關閉從範本建立之傳送的傳送對話方塊時，造成主控台當機的問題。 (NEO-31547)
 * 修正在促銷活動的&#x200B;**定位與工作流程**&#x200B;標籤中建立和儲存傳送時發生的問題：預覽會失敗，並出現下列錯誤。(NEO-29440)
 * 修正Tomcat 8.5傳送無效回覆的問題，此問題會導致「事務性訊息」記錄檔發生錯誤。 (NEO-30858)
 * 修正導致外部線程管理中記憶體損毀並影響效能的回歸問題。
-* 修正使用自訂目標對應時，可能導致帳單工作流程失敗的問題。 自訂架構的主要索引鍵會儲存在僅允許整數值的「sourceId」欄中。 它現在允許整數和字串值。 (NEO-25914、NEO-28146)
-* 修正回歸，防止在傳送中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
+* 修正使用自訂目標對應時，可能導致帳單工作流程失敗的問題。 自訂架構的主要索引鍵會儲存在僅允許整數值的「sourceId」欄中。 它現在允許整數和字串值。 （NEO-25914、NEO-28146）
+* 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
-_2020年12月22日_
+_2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
-> * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)具有促銷活動的舊式驗證模式將於2021年11月30日&#x200B;****&#x200B;淘汰。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
 
 
 **功能改善**
@@ -60,9 +58,11 @@ _2020年12月22日_
 * 修正了在工作流程&#x200B;**「分割」**&#x200B;活動中顯示目標資料餘數時，而造成伺服器當機的問題。
 * 修正了嘗試在查詢後預覽 SMS 訊息時，除&#x200B;**收件者** (nms:recipient) 以外的其他方案可能會顯示錯誤訊息的問題。(NEO-27517)
 * 修正當以主機名稱中明確定義的埠號提出HTTPS連線要求時，呼叫失敗並發生憑證錯誤的問題。 (NEO-29146)
-* 修正POSIX線程管理中在行銷實例上生成大型核心轉儲檔案的問題。 (NEO-28117、NEO-29281)
-* 已修正在準備傳送或循環傳送預覽時，可能導致網頁程式當機的問題。 (NEO-27790、NEO-27517)
+* 修正POSIX線程管理中在行銷實例上生成大型核心轉儲檔案的問題。 （NEO-28117、NEO-29281）
+* 已修正在準備傳送或循環傳送預覽時，可能導致網頁程式當機的問題。 （NEO-27790、NEO-27517）
 * 修正當非管理員運算子觸發傳送或證明傳送失敗的問題。 (NEO-28597)
+
+![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
