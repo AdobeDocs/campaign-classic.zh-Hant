@@ -4,16 +4,16 @@ product: campaign
 title: 開始升級
 description: 瞭解更多 Campaign Classic 升級
 feature: 概觀
-role: 業務從業人員
-level: 初學者
+role: Business Practitioner
+level: Beginner
+exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '415'
 ht-degree: 93%
 
 ---
-
 
 # 開始升級{#rn-overview}
 
@@ -29,13 +29,13 @@ ht-degree: 93%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後&#x200B;**一個 GA 版本** : [[!DNL Gold Standard]  11 版本](../../rn/using/gold-standard.md#gs-11) 及[ Campaign 20.2.4 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+最後&#x200B;**一個 GA 版本** : [[!DNL Gold Standard]  11 版本](../../rn/using/gold-standard.md#gs-11) 及[ Campaign 20.2.5 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
 ![](assets/do-not-localize/blue3.png) **發行候選版本** (RC) - 具有新功能的最新版本。
 
-最後&#x200B;**的 RC 版本**[為 Campaign Classic 21.1 版本](../../rn/using/latest-release.md)
+**最後的 RC 版本**[為 Campaign Classic 21.1 版本](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **已過時** -無部署。現有實施必須升級。
 
@@ -51,7 +51,7 @@ ht-degree: 93%
 
 身為託管客戶（管理的服務或混合），您需要與客戶服務團隊聯絡，以升級您的環境。
 
-身為內部部署使用者，您可以進行升級。為此，您需要[下載最新的穩定版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)並升級所有環境。瞭解更多[升級流程](../../production/using/build-upgrade.md)，並參閱[版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+身為內部部署使用者，您可以進行升級。為此，您需要[下載最新的穩定版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html)並升級所有環境。瞭解更多[升級流程](../../production/using/build-upgrade.md)，並參閱[版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
