@@ -6,14 +6,14 @@ description: 瞭解如何管理隱私權要求
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2415'
 ht-degree: 21%
 
 ---
-
 
 # 管理隱私權要求{#privacy-requests}
 
@@ -23,9 +23,7 @@ ht-degree: 21%
 
 [本節](#sale-of-personal-information-ccpa)會詳細說明專屬於 CCPA 的選擇退出個人資訊銷售。
 
->[!IMPORTANT]
->
->本檔案所述的安裝程式適用於啟動Campaign Classic 18.4(build 8931+)的程式。 如果您使用舊版執行，請參閱此[technote](https://helpx.adobe.com/tw/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)。
+<!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
 ## 關於隱私權要求{#about-privacy-requests}
 
@@ -37,8 +35,8 @@ ht-degree: 21%
 
 Adobe Campaign為資料掌控者提供兩種執行隱私權存取和刪除要求的可能：
 
-* 透過&#x200B;**Adobe Campaign介面**:對於每個隱私權要求，資料控制者會在Adobe Campaign中建立新的隱私權要求。 請參閱[本節](#create-privacy-request-ui)。
-* 透過&#x200B;**API**:Adobe Campaign提供API，允許使用SOAP自動處理隱私權要求。 請參閱[本節](#automatic-privacy-request-api)。
+* 通過&#x200B;**Adobe Campaign介面** :對於每個隱私權要求，資料控制者會在Adobe Campaign建立新的隱私權要求。 請參閱[本節](#create-privacy-request-ui)。
+* 透過&#x200B;**API**:Adobe Campaign提供API，可讓您使用SOAP自動處理隱私權要求。 請參閱[本節](#automatic-privacy-request-api)。
 
 >[!NOTE]
 >
@@ -57,7 +55,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下建立了兩個特定於隱私的新資料夾：
 
 * **[!UICONTROL Privacy Requests]**:您可在此建立您的隱私權要求並追蹤其演變。
-* **[!UICONTROL Namespaces]**:這是您用來定義欄位的位置，此欄位將用來識別Adobe Campaign資料庫中的資料主體。
+* **[!UICONTROL Namespaces]**:您將在此處定義用於標識Adobe Campaign資料庫中資料主題的欄位。
 
 ![](assets/privacy-folders.png)
 
@@ -65,8 +63,8 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 ![](assets/privacy-workflows.png)
 
-* **[!UICONTROL Collect privacy requests]**:此工作流程會產生儲存在Adobe Campaign中的收件者資料，並讓該資料可在隱私權要求的畫面中下載。
-* **[!UICONTROL Delete privacy requests data]**:此工作流程會刪除Adobe Campaign中儲存的收件者資料。
+* **[!UICONTROL Collect privacy requests]**:此工作流程會產生儲存在Adobe Campaign的收件者資料，並讓該資料可在隱私權要求的畫面中下載。
+* **[!UICONTROL Delete privacy requests data]**:此工作流程會刪除收件者儲存在Adobe Campaign的資料。
 * **[!UICONTROL Privacy request cleanup]**:此工作流程會清除90天以前的存取要求檔案。
 
 在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**&#x200B;中，已添加了&#x200B;**[!UICONTROL Privacy Data Right]**&#x200B;名稱為right的。 資料控制者若要使用隱私權工具，必須具備此指名權限。 這可讓他們建立新請求、追蹤其演變、使用API等。
@@ -75,13 +73,13 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 ### 命名空間 {#namesspaces}
 
-在建立隱私權要求之前，您必須先定義要使用的命名空間。這是用來識別Adobe Campaign資料庫中資料主體的索引鍵。
+在建立隱私權要求之前，您必須先定義要使用的命名空間。這是用於在Adobe Campaign資料庫中標識資料主題的密鑰。
 
 3個可用的現成可用名稱空間：電子郵件、手機和行動電話。 如果您需要不同的命名空間（例如收件者自訂欄位），您可以從&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**&#x200B;建立新的命名空間。
 
 ## 建立隱私權要求 {#create-privacy-request-ui}
 
-**Adobe Campaign介面**&#x200B;可讓您建立您的隱私權要求並追蹤其演變。 若要建立新的隱私權要求，請依照下列指示：
+**Adobe Campaign介面**&#x200B;允許您建立您的隱私請求並跟蹤其演變。 若要建立新的隱私權要求，請依照下列指示：
 
 1. 訪問&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Privacy Requests]**&#x200B;下的「隱私請求」資料夾。
 
@@ -97,14 +95,14 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 隱私權技術工作流程每天執行一次，並處理每個新要求：
 
-* 刪除請求：儲存在Adobe Campaign中的收件者資料會遭到清除。
-* 存取要求：收件者儲存在Adobe Campaign中的資料會產生，並以XML檔案形式提供在請求畫面的左側。
+* 刪除請求：收件者儲存在Adobe Campaign的資料被擦除。
+* 存取要求：收件者儲存在Adobe Campaign的資料會產生，並以XML檔案形式提供在請求畫面的左側。
 
 ![](assets/privacy-request-download.png)
 
 ### 表清單{#list-of-tables}
 
-執行刪除或存取隱私權要求時，Adobe Campaign會根據所有具有收件者表格連結（自有類型）的表格中的&#x200B;**[!UICONTROL Reconciliation value]**，搜尋所有資料主體的資料。
+執行刪除或存取隱私權要求時，Adobe Campaign會根據&#x200B;**[!UICONTROL Reconciliation value]**&#x200B;在所有具有收件人表格連結的表格中搜尋所有資料主體的資料（自有類型）。
 
 以下是執行隱私權要求時會考量的現成可用表格清單：
 
@@ -155,7 +153,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 ### JSSP URL {#jspp-url}
 
-處理存取請求時，Adobe Campaign會產生JSSP，從資料庫擷取收件者的資料，並將其匯出至儲存在本機電腦上的XML檔案。 JSSP URL的定義如下：
+在處理「存取」請求時，Adobe Campaign會產生JSSP，從資料庫擷取收件者的資料，並將其匯出至儲存在本機電腦上的XML檔案。 JSSP URL的定義如下：
 
 ```
 "$(serverUrl)+'/nms/gdpr.jssp?id='+@id"
@@ -217,7 +215,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 Adobe Campaign提供&#x200B;**API**，可讓您設定自動隱私權要求程式。
 
-使用API時，一般的隱私權程式與使用介面](#create-privacy-request-ui)的[程式相同。 唯一的不同是建立隱私權要求。 Adobe Campaign中不會建立請求，而是會傳送包含請求資訊的POST給Campaign。 對於每個請求，都會在&#x200B;**[!UICONTROL Privacy Requests]**&#x200B;畫面中新增一個項目。 然後，隱私權技術工作流程會處理要求，與使用介面新增的要求相同。
+使用API時，一般的隱私權程式與使用介面](#create-privacy-request-ui)的[程式相同。 唯一的不同是建立隱私權要求。 系統不會在Adobe Campaign建立請求，而會傳送包含請求資訊的POST至促銷活動。 對於每個請求，都會在&#x200B;**[!UICONTROL Privacy Requests]**&#x200B;畫面中新增一個項目。 然後，隱私權技術工作流程會處理要求，與使用介面新增的要求相同。
 
 如果您使用API來提交隱私權要求，建議您保留針對第一個刪除要求啟動的&#x200B;**2-step程式**，以測試傳回的資料。 測試完成後，您可以停用2步驟程式，讓刪除請求程式自動執行。
 
@@ -247,7 +245,7 @@ Adobe Campaign提供&#x200B;**API**，可讓您設定自動隱私權要求程式
 
 >[!NOTE]
 >
->只有在您使用Campaign Classic 20.2(build 9178+)時，「規則」欄位才可用。
+>只有當您使用Campaign Classic20.2(build 9178+)時，「規則」欄位才可用。
 >
 >如果您要移轉至20.2，而且已使用API，則必須新增「規則」欄位，如上所示。 如果您使用先前的組建版本，則可繼續使用API，而不使用「規則」欄位。
 
@@ -283,11 +281,11 @@ Adobe Campaign提供&#x200B;**API**，可讓您設定自動隱私權要求程式
 
 ### 從JS {#invoking-api-from-js}叫用API
 
-以下範例說明如何從Campaign Classic中的JS叫用API。
+以下範例說明如何從Campaign Classic內的JS叫用API。
 
 >[!NOTE]
 >
->只有在您使用Campaign Classic 20.2(build 9178+)時，「規則」欄位才可用。
+>只有當您使用Campaign Classic20.2(build 9178+)時，「規則」欄位才可用。
 >
 >如果您要移轉至20.2，而且已使用API，則必須新增「規則」欄位。 如果您使用先前的組建版本，則可繼續使用API，而不使用「規則」欄位。
 
@@ -347,7 +345,7 @@ Adobe Campaign提供&#x200B;**API**，可讓您設定自動隱私權要求程式
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-* 如果您&#x200B;**使用Campaign Classic 20.2(build 9178+)或更高版本**，則&#39;regulation&#39;欄位為選擇性，如下所示：
+* 如果您&#x200B;**使用Campaign Classic20.2(build 9178+)或更高版本**，則&#39;regulation&#39;欄位為選擇性，如下所示：
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -384,7 +382,7 @@ Adobe Campaign提供&#x200B;**API**，可讓您設定自動隱私權要求程式
 
 GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本節說明專屬於 CCPA 的選擇退出個人資訊銷售。
 
-除了Adobe Campaign提供的[同意管理](../../platform/using/privacy-management.md#consent-management)工具外，您還可以追蹤消費者是否選擇退出個人資訊的銷售。
+除了Adobe Campaign提供的[同意管理](../../platform/using/privacy-management.md#consent-management)工具外，您還可以追蹤消費者是否已選擇退出個人資訊的銷售。
 
 消費者透過您的系統決定其不允許將個人資訊銷售給第三方。在 Adobe Campaign 中，您將能儲存及追蹤此資訊。
 
@@ -396,7 +394,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
 ### 先決條件{#ccpa-prerequisite}
 
-若要運用此資訊，您必須在Adobe Campaign Classic中建立此欄位。 為此，您將向&#x200B;**[!UICONTROL Recipient]**&#x200B;表添加一個布爾欄位。 建立新欄位時，Campaign API 會自動支援該欄位。
+若要運用此資訊，您必須在Adobe Campaign Classic建立此欄位。 為此，您將向&#x200B;**[!UICONTROL Recipient]**&#x200B;表添加一個布爾欄位。 建立新欄位時，Campaign API 會自動支援該欄位。
 
 如果您使用自訂收件者表格，您也需要執行此作業。
 
