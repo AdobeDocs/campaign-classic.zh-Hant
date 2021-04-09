@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >當安裝使用中間採購來源時，不建議使用此選項，即不呼叫mta。 有關配置SMTP伺服器的詳細資訊，請參閱[以瞭解本節](../../installation/using/configuring-campaign-server.md#delivery-settings)。
+   >當安裝使用中間採購來源時，不建議使用此選項，即不呼叫mta。 有關配置SMTP伺服器的詳細資訊，請參閱[以瞭解本節](../../installation/using/configure-delivery-settings.md)。
 
 * **[!UICONTROL Email BCC]**:此選項可讓您透過密件副本將電子郵件儲存在外部系統上，只要在訊息目標中新增密件副本電子郵件地址即可。如需詳細資訊，請參閱[本章節](../../delivery/using/sending-messages.md#archiving-emails)。
 
