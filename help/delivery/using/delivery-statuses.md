@@ -6,14 +6,14 @@ description: 進一步瞭解傳送控制面板上的可用狀態。
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # 傳遞狀態 {#delivery-statuses}
 
@@ -87,7 +87,7 @@ ajouter screenshot -->
  </tbody> 
 </table>
 
-如要瞭解如何最佳化您的Adobe Campaign電子郵件的傳遞能力，請參閱[本節](../../delivery/using/about-deliverability.md)。 有關交付能力的深入探討，請參閱[Adobe交付能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
+如要瞭解如何最佳化您的Adobe Campaign電子郵件的傳遞能力，請參閱[本節](../../delivery/using/about-deliverability.md)。 有關交付能力的深入探討，請參閱[Adobe交付能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
 ## 暫掛狀態{#pending-status}
 
@@ -127,7 +127,7 @@ ajouter screenshot -->
 
 * 傳送可能使用未在傳送伺服器上設定的相似性。
 
-   在此例中，請檢查流量管理（IP相關性）的設定，並使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理相關性的MTA。 有關相關性的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
+   在此例中，請檢查流量管理（IP相關性）的設定，並使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理相關性的MTA。 有關相關性的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#delivery-settings)。
 
 * 當執行的促銷活動過多時，傳送狀態仍會維持在「擱置中」狀態。
 
