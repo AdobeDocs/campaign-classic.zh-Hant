@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 伺服器組態
-description: 進一步瞭解伺服器組態最佳實務。
+title: 伺服器安全性設定
+description: 進一步瞭解伺服器組態最佳實務
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 2%
+source-wordcount: '625'
+ht-degree: 3%
 
 ---
 
-# 伺服器配置{#server-configuration}
+# 伺服器安全性設定 {#server-configuration}
 
 ## 檔案上傳保護
 
-使用nlclient/web介面，向操作用戶檢查他們上傳到伺服器的檔案類型。 提醒您，業務需求可以是：
+使用Campaign Client Console或Web介面，向營運使用者檢查他們上傳到伺服器的檔案類型。 提醒您，業務需求可以是：
 
 * 影像(jpg、gif、png、...)
 * 內容(zip、html、css、...)
