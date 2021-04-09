@@ -2,22 +2,22 @@
 solution: Campaign Classic
 product: campaign
 title: 生產疑難排解
-description: 探索與Adobe Campaign設定、監控、升級程式、資料處理和資料庫維護程式相關的生產疑難排解程式。
+description: 探索與Adobe Campaign配置、監控、升級過程、資料處理和資料庫維護過程相關的生產故障排除過程。
 audience: production
 content-type: reference
 topic-tags: troubleshooting
+exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 translation-type: tm+mt
-source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
 
-
 # 生產故障排除{#troubleshooting}
 
-本節包含與Adobe Campaign一般生產問題相關的疑難排解程式，例如傳送和工作流程執行、監控、資料庫維護、連線等。
+本節包含與Adobe Campaign一般生產問題相關的故障排除過程，如交付和工作流執行、監控、資料庫維護、連接等。
 
 ## 常見及一般問題{#common-and-general-issues}
 
@@ -65,4 +65,4 @@ ht-degree: 19%
 
 * [Linux 中的堆疊追蹤](../../production/using/stack-trace-in-linux.md)
 * [JSP 行為](../../production/using/jsp-behavior.md)
-* [找到 Tomcat 版本](../../production/using/locate-tomcat-version.md)
+* [找到Tomcat版本](../../production/using/locate-tomcat-version.md)
