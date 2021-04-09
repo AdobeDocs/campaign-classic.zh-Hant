@@ -6,18 +6,18 @@ description: 建立和設定資料庫
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
-
 # 建立和設定資料庫{#creating-and-configuring-the-database}
 
-當您建立資料庫時，Adobe Campaign提供兩種不同的選項：
+建立資料庫時，Adobe Campaign提供了兩個不同的選項：
 
 1. 建立或循環使用資料庫：如果要建立新資料庫或重新使用現有資料庫，請選擇此選項。 請參閱[案例1:建立／循環使用資料庫](#case-1--creating-recycling-a-database)。
 1. 使用現有資料庫：如果管理員已建立空資料庫且您想使用它，請選擇此選項；或擴展現有資料庫的結構。 請參閱[案例2:使用現有資料庫](#case-2--using-an-existing-database)。
@@ -28,7 +28,7 @@ ht-degree: 1%
 >
 >資料庫、用戶和方案的名稱不能以數字開頭或包含特殊字元。
 >
->只有&#x200B;**internal**&#x200B;標識符可以執行這些操作。 有關詳細資訊，請參閱[內部標識符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+>只有&#x200B;**internal**&#x200B;標識符可以執行這些操作。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 ## 案例1:建立／回收資料庫{#case-1--creating-recycling-a-database}
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 要執行此操作，請輸入&#x200B;**管理系統帳戶**&#x200B;的名稱和密碼，該帳戶具有訪問資料庫的權限，即：
 
-* **Oracle** 資料庫的系統，
+* **oracle** 資料庫的系統，
 * **對** 於Microsoft SQL Server資料庫，
 * **PostgreSQL** 資料庫的Postgress,
 * **db2inst1** （用於DB2資料庫）。
@@ -103,7 +103,7 @@ ht-degree: 1%
    >
    >使用Oracle資料庫時， **[!UICONTROL Unicode storage]**&#x200B;選項可以使用&#x200B;**NCLOB**&#x200B;和&#x200B;**NVARCHAR**&#x200B;類型欄位。
    > 
-   >如果不選擇此選項，Oracle資料庫的字元集(charset)必須啟用所有語言的資料儲存（建議使用AL32UTF8）。
+   >如果您未選取此選項，Oracle資料庫的字元集（字元集）必須啟用所有語言的資料儲存（建議使用AL32UTF8）。
 
 * 為資料庫選擇時區，並指定是否要使用UTC（如果可用）。
 
@@ -132,7 +132,7 @@ ht-degree: 1%
    * **WdbcOptions_TableSpaceWork**:無架構的工作表
    * **WdbcOptions_TableSpaceWorkIndex**:沒有模式的工作表索引
 
-* 對於Oracle資料庫，Adobe Campaign用戶必須具有對Oracle庫的訪問權，通常作為&#x200B;**oinstall**&#x200B;組的成員。
+* 對於Oracle資料庫，Adobe Campaign用戶必須具有Oracle庫的訪問權，通常作為&#x200B;**oinstall**&#x200B;組的成員。
 * **[!UICONTROL Set or change the administrator password]**&#x200B;選項可讓您輸入連結至具有管理員權限之Adobe Campaign運算子的密碼。
 
    我們建議為安全目的定義Adobe Campaign帳戶管理員密碼。
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 您現在必須啟動部署精靈，才能完成執行個體的設定。 請參閱[部署嚮導](../../installation/using/deploying-an-instance.md#deployment-wizard)。
 
-連結至執行個體之資料庫的連線設定會儲存在Adobe Campaign安裝目錄中的檔案&#x200B;**`/conf/config-<instance>.xml`**&#x200B;中。
+連結到實例的資料庫的連接設定儲存在位於Adobe Campaign安裝目錄的&#x200B;**`/conf/config-<instance>.xml`**&#x200B;檔案中。
 
 在base61資料庫上連結至「促銷活動」帳戶並加密密碼的Microsoft SQL Server設定範例：
 
@@ -159,7 +159,7 @@ ht-degree: 1%
 
 資料庫以及用戶必須由資料庫管理員建立，並且訪問權限必須正確配置。
 
-例如，對於Oracle資料庫，最低所需權限為：授予連接、資源和無限表空間。
+例如，對於Oracle資料庫，最低要求的權限為：授予CONNECT、資源和無限表空間。
 
 要使用現有資料庫，配置步驟如下：
 
@@ -223,7 +223,7 @@ ht-degree: 1%
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * 對於Oracle、Microsoft SQL Server或PostgreSQL資料庫，管理員可以定義建立資料庫對象時使用的&#x200B;**儲存參數**。
-* 對於Oracle資料庫，Adobe Campaign用戶必須具有對Oracle庫的訪問權，通常作為&#x200B;**oinstall**&#x200B;組的成員。
+* 對於Oracle資料庫，Adobe Campaign用戶必須具有Oracle庫的訪問權，通常作為&#x200B;**oinstall**&#x200B;組的成員。
 * **[!UICONTROL Set or change the administrator password]**&#x200B;選項可讓您輸入連結至具有管理員權限之Adobe Campaign運算子的密碼。
 
    我們建議為安全目的定義Adobe Campaign帳戶管理員密碼。
@@ -238,11 +238,10 @@ ht-degree: 1%
 
 您現在必須啟動部署精靈，才能完成執行個體的設定。 請參閱[部署嚮導](../../installation/using/deploying-an-instance.md#deployment-wizard)。
 
-連結至執行個體之資料庫的連線設定會儲存在Adobe Campaign安裝目錄中的檔案&#x200B;**`/conf/config-<instance>.xml`**&#x200B;中。
+連結到實例的資料庫的連接設定儲存在位於Adobe Campaign安裝目錄的&#x200B;**`/conf/config-<instance>.xml`**&#x200B;檔案中。
 
 在base61資料庫上連結至「促銷活動」帳戶並加密密碼的Microsoft SQL Server設定範例：
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
-
