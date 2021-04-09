@@ -6,37 +6,37 @@ description: Campaign 19.2的發行說明
 feature: null
 role: null
 level: null
+exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 11%
+ht-degree: 18%
 
 ---
-
 
 # 19.2 發行版本{#release-19-2}
 
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
 
-_2021年3月22日_
+_2021年 3 月 22 日_
 
-* 修正回歸，防止在傳送中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453、NEO-31454)
+* 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
 
-**僅控制台升級是強制性的。不需要伺服器升級。**
+**僅主控台升級為強制性。不需要升級伺服器。**
 
 >[!NOTE]
 >
-> 連線至[Adobe軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有最終用戶[建議控制台更新。
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
-_2020年12月23日_
+_2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
    >
    > 
-* 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
+* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 
 
 
@@ -54,7 +54,7 @@ _2020年2月7日_
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 19.2 - Build 9080 {#release-19-2-build-9080}
 
-_2019年12月2日_
+_2019 年 12 月 2 日_
 
 **新增功能？**
 
@@ -138,7 +138,7 @@ _2019年12月2日_
    * PostgreSQL的&#x200B;**XtkCleanup_NoStats**&#x200B;選項已增強，可更好地控制資料庫清理工作流的儲存優化步驟的行為。 [顯示全文](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 帳戶鎖定機制已添加到&#x200B;**logon()** API。 它可防止在指定時間範圍內連續嘗試若干次登入失敗後，再進行任何登入嘗試。
 * 傳送屬性中新的&#x200B;**最大個人化執行時間**&#x200B;選項可讓您定義個人化執行時間的逾時期，以防止個人化階段執行太長。 [顯示全文](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* **ftp通訊協定**&#x200B;選項已新增，可讓您使用SFTP連線的代理設定。 [顯示全文](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* **ftp通訊協定**&#x200B;選項已新增，可讓您使用SFTP連線的代理設定。 [顯示全文](../../installation/using/file-res-management.md)
 * 針對內部部署環境，新支援對SFTP外部伺服器的Proxy存取。
 * 已新增特定保護欄，以防止安裝與促銷活動例項不相容的套件。 [顯示全文](../../installation/using/installing-campaign-standard-packages.md)
 
@@ -185,5 +185,3 @@ iOS SDK的組建版本1.0.26現已推出。 在這個新版本中，我們新增
 * 修正存取預測性模型時的問題。 (NEO-19713)
 * 修正影響&#x200B;**Split**&#x200B;工作流程活動與HadoopFDA資料庫的隨機取樣的問題。 (NEO-16636)
 * 修正Oracle上的回歸，造成部分函式在置入程式後被視為無效。 (NEO-12759)
-
-
