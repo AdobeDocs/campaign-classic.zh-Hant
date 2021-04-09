@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -127,7 +127,7 @@ ajouter screenshot -->
 
 * 傳送可能使用未在傳送伺服器上設定的相似性。
 
-   在此例中，請檢查流量管理（IP相關性）的設定，並使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理相關性的MTA。 有關相關性的詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#delivery-settings)。
+   在此例中，請檢查流量管理（IP相關性）的設定，並使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理相關性的MTA。 有關相關性的詳細資訊，請參閱[本節](../../installation/using/configure-delivery-settings.md)。
 
 * 當執行的促銷活動過多時，傳送狀態仍會維持在「擱置中」狀態。
 
