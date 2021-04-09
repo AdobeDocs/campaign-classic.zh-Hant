@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -131,7 +131,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
       >
       >**nameServers**&#x200B;參數僅用於Windows。
 
-      如需詳細資訊，請參閱[傳送設定](configuring-campaign-server.md#delivery-settings)。
+      如需詳細資訊，請參閱[傳送設定](configure-delivery-settings.md)。
 
    * 重新導向參數中的冗餘追蹤伺服器：
 
@@ -140,7 +140,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      有關詳細資訊，請參閱[冗餘跟蹤](../../installation/using/configuring-campaign-server.md#redundant-tracking)。
+      有關詳細資訊，請參閱[冗餘跟蹤](configuring-campaign-server.md#redundant-tracking)。
 
 1. 啟動網站並測試從URL的重新導向：[https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)。
 
