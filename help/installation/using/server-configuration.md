@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 3%
@@ -28,7 +28,7 @@ ht-degree: 3%
 * ETL(txt、csv、tab、...)
 * 等等。
 
-將所有這些內容都添加到serverConf/shared/datastore/@uploadAllowlist（有效的java規則運算式）中。 進一步瞭解[本頁](../../installation/using/configuring-campaign-server.md#limiting-uploadable-files)。
+將所有這些內容都添加到serverConf/shared/datastore/@uploadAllowlist（有效的java規則運算式）中。 進一步瞭解[本頁](../../installation/using/file-res-management.md)。
 
 Adobe Campaign不限制檔案大小。 但是，您可以通過配置IIS/Apache來實現。 進一步瞭解[本節](../../installation/using/web-server-configuration.md)。
 
