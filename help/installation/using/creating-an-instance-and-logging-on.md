@@ -6,28 +6,28 @@ description: 建立執行個體並登入
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-
 # 建立執行個體並登入{#creating-an-instance-and-logging-on}
 
-若要建立新的例項和Adobe Campaign資料庫，請套用下列程式：
+要建立新實例和Adobe Campaign資料庫，請應用以下過程：
 
 1. 建立連接。
 1. 登入以建立相關例項。
-1. 建立和配置資料庫。
+1. 建立及設定資料庫.
 
 >[!NOTE]
 >
->只有&#x200B;**internal**&#x200B;標識符可以執行這些操作。 有關詳細資訊，請參閱[內部標識符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+>只有&#x200B;**internal**&#x200B;標識符可以執行這些操作。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-當Adobe Campaign主控台啟動時，您會存取登入頁面。
+啟動Adobe Campaign控制台時，您將訪問登錄頁。
 
 要建立新實例，請執行以下步驟：
 
@@ -35,11 +35,11 @@ ht-degree: 3%
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. 按一下&#x200B;**[!UICONTROL Add > Connection]**，然後輸入Adobe Campaign應用程式伺服器的標籤和URL。
+1. 按一下&#x200B;**[!UICONTROL Add > Connection]**&#x200B;並輸入Adobe Campaign應用程式伺服器的標籤和URL。
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. 指定透過URL連線至Adobe Campaign應用程式伺服器。 使用DNS或電腦的別名或您的IP地址。
+1. 指定透過URL連線至您的Adobe Campaign應用程式伺服器。 使用DNS或電腦的別名或您的IP地址。
 
    例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)類型URL。
 
@@ -48,14 +48,14 @@ ht-degree: 3%
    >對於連線URL，僅使用下列字元：`[a-z]`、`[A-Z]`、`[0-9]`和破折號(-)或完全停止。
 
 1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認設定：您現在可以從例項建立程式開始。
-1. 在&#x200B;**[!UICONTROL Connection settings]**&#x200B;視窗中，輸入&#x200B;**internal**&#x200B;登入名稱及其密碼，以連線至Adobe Campaign應用程式伺服器。 連接後，您將訪問實例建立嚮導以聲明新實例
+1. 在&#x200B;**[!UICONTROL Connection settings]**&#x200B;窗口中，輸入&#x200B;**internal**&#x200B;登錄及其密碼以連接到Adobe Campaign應用程式伺服器。 連接後，您將訪問實例建立嚮導以聲明新實例
 1. 在&#x200B;**[!UICONTROL Name]**&#x200B;欄位中，輸入&#x200B;**例項名稱**。 由於此名稱用於生成配置檔案&#x200B;**config-`<instance>`.xml**，並用於命令行參數中以識別實例，請確保選擇一個不帶特殊字元的短名稱。 例如：**eMarketing**。
 
    ![](assets/s_ncs_install_create_instance.png)
 
    新增至網域名稱的例項名稱不得超過40個字元。 這可讓您限制「Message-ID」標題的大小，並防止訊息被視為垃圾訊息，尤其是SpamAssassin等工具。
 
-1. 在&#x200B;**[!UICONTROL DNS masks]**&#x200B;欄位中，輸入應將實例附加到的&#x200B;**DNS掩碼清單。** Adobe Campaign伺服器會使用出現在HTTP請求中的主機名稱來判斷要觸及哪個例項。
+1. 在&#x200B;**[!UICONTROL DNS masks]**&#x200B;欄位中，輸入應將實例附加到的&#x200B;**DNS掩碼清單。** Adobe Campaign伺服器使用HTTP請求中顯示的主機名來確定要訪問的實例。
 
    主機名包含在伺服器地址的字串&#x200B;**https://**&#x200B;和第一個斜線字元&#x200B;**/**&#x200B;之間。
 
@@ -75,11 +75,10 @@ ht-degree: 3%
 
    >[!CAUTION]
    >
-   >此步驟後無法修改實例語言。 Adobe Campaign實例不是多語言版本：您無法將介面從語言切換為其他語言。
+   >此步驟後無法修改實例語言。 Adobe Campaign實例不會多語言：您無法將介面從語言切換為其他語言。
 
 1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認實例聲明。 註銷並重新登錄以聲明資料庫。
 
    >[!NOTE]
    >
    >可從命令行建立實例。 有關詳細資訊，請參閱[命令行](../../installation/using/command-lines.md)。
-
