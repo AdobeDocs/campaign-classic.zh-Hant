@@ -6,26 +6,26 @@ description: 設定原則
 audience: production
 content-type: reference
 topic-tags: production-procedures
+exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
 
 ---
 
-
 # 設定原則{#configuration-principle}
 
-Adobe Campaign平台是以例項的概念為基礎，類似於Apache所使用的虛擬主機。 此操作模式允許您通過為伺服器分配多個實例來共用伺服器。 實例彼此完全分離，並使用它們自己的資料庫和配置檔案操作。
+Adobe Campaign平台基於實例的概念，類似於Apache使用的虛擬主機。 此操作模式允許您通過為伺服器分配多個實例來共用伺服器。 實例彼此完全分離，並使用它們自己的資料庫和配置檔案操作。
 
-對於指定的伺服器，有兩個元素是所有Adobe Campaign例項的共同元素：
+對於給定伺服器，有兩個元素是所有Adobe Campaign實例的共同元素：
 
 * **internal**&#x200B;密碼：這是一般管理員密碼。 它對特定應用程式伺服器的所有執行個體都很常見。
 
    >[!IMPORTANT]
    >
-   >若要使用&#x200B;**Internal**&#x200B;識別碼登入，您必須事先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   >若要使用&#x200B;**Internal**&#x200B;識別碼登入，您必須事先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 * 多種技術性伺服器組態：這些配置都可以在實例的特定配置中過載。
 
