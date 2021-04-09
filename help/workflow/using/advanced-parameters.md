@@ -6,14 +6,14 @@ description: 高級參數
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
+exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
-
 
 # 高級參數{#advanced-parameters}
 
@@ -49,7 +49,10 @@ ht-degree: 2%
 
 ## 相關性{#affinity}
 
-此欄位可讓您強制在特定機器上執行活動。 有關詳情，請參閱：[管理傾向](../../workflow/using/managing-propensity.md)。
+您可以選擇強制在特定電腦上執行工作流或工作流活動。 為此，您必須在工作流或相關活動的級別定義一個或多個傾向性。
+
+高可用性工作流配置在[部分](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)中有詳細說明。
+
 
 ## Max. 執行期{#max--execution-period}
 
