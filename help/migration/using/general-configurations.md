@@ -6,14 +6,14 @@ description: 一般配置
 audience: migration
 content-type: reference
 topic-tags: configuration
+exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
-
 
 # 一般配置{#general-configurations}
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 1. 要更改客戶端上的時區檔案，請使用&#x200B;**ORA_TZFILE**&#x200B;環境變數。
 
-## 安全性{#security}
+## 安全性 {#security}
 
 ### 安全區{#security-zones}
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->所有追蹤伺服器的&#x200B;**internal**&#x200B;密碼必須相同。 如需詳細資訊，請參閱[本節](../../installation/using/campaign-server-configuration.md#internal-identifier)和[本節](../../platform/using/access-management.md)。
+>所有追蹤伺服器的&#x200B;**internal**&#x200B;密碼必須相同。 如需詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#internal-identifier)和[本節](../../platform/using/access-management.md)。
 
 ### v7 {#new-features-in-v7}的新功能
 
@@ -473,7 +473,7 @@ allowSQLInjection="false"
 
 ## Tomcat {#tomcat}
 
-Adobe Campaignv7中的整合Tomcat伺服器已更改版本(Tomcat 7)。 因此，其安裝資料夾(tomcat-6)也發生了更改(tomcat 7)。 在配置升級後，請務必檢查路徑是否連結到更新的資料夾（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;檔案中）:
+Adobe Campaignv7中的整合Tomcat伺服器已更改版本。 因此，其安裝資料夾(tomcat-6)也發生了更改(tomcat 7)。 在配置升級後，請務必檢查路徑是否連結到更新的資料夾（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;檔案中）:
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
@@ -622,7 +622,7 @@ logInfo("Done");
 -->
 如果您想要從新報表功能中獲益，您必須重新發佈報表。 若要這麼做，請編輯報表&#x200B;**[!UICONTROL Properties]**，按一下&#x200B;**[!UICONTROL Rendering]**&#x200B;並選取v.6.x轉換引擎。 在這種情況下，請檢查所有指令碼，並視需要進行更改。 至於PDF匯出，如果您已新增Open Office的特定指令碼，這將不再適用於新的PDF匯出引擎(PhantomJS)。
 
-## 網頁應用程式{#web-applications}
+## 網站應用程式{#web-applications}
 
 有兩個Web應用程式系列：
 
