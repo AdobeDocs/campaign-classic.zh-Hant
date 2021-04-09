@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 4%
@@ -2814,7 +2814,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
 
 以下是&#x200B;**web**&#x200B;節點的不同參數。 這是Web模組的配置。
 
-如需詳細資訊，請參閱此[節](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat)。
+如需詳細資訊，請參閱此[節](configuring-campaign-server.md#default-port-for-tomcat)。
 
 <table> 
  <thead> 
@@ -2858,13 +2858,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Tomcat監聽控制埠：請參閱<a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">配置Tomcat</a>。<br /> </td> 
+   <td> Tomcat監聽控制埠：請參閱<a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP監聽埠：請參閱<a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">配置Tomcat</a>。<br /> </td> 
+   <td> Tomcat HTTP監聽埠：請參閱<a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -3149,7 +3149,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> 目標頁面的URL:請參閱<a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">配置Tomcat</a>。<br /> </td> 
+   <td> 目標頁面的URL:請參閱<a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
