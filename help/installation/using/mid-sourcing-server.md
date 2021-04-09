@@ -6,14 +6,14 @@ description: 本節詳細說明在Campaign中安裝和配置中間採購伺服�
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 中間來源伺服器{#mid-sourcing-server}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
    </serverconf>
    ```
 
-   有關詳細資訊，請參閱[啟用進程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 * 不需要步驟&#x200B;**6**、**9**&#x200B;和&#x200B;**10**。
 * 在步驟&#x200B;**12**&#x200B;和&#x200B;**13**&#x200B;期間，您需要在連接URL中指示8080埠（因為控制台直接與Tomcat通信，而不是通過Web伺服器）。 URL會變成[http://console.campaign.net:8080](http://console.campaign.net)。 在步驟&#x200B;**13**&#x200B;期間，選擇&#x200B;**[!UICONTROL Issue towards Mid-sourcing]**&#x200B;軟體包以及要安裝的軟體包。
@@ -86,7 +86,7 @@ ht-degree: 0%
 
    >[!CAUTION]
    >
-   >如果您安裝中間採購伺服器並想要安裝額外的Adobe Campaign模組，建議您使用「傳送」模組，而非「促銷活動」模組。
+   >如果您安裝中間採購伺服器並想要安裝額外的Adobe Campaign模組，我們建議使用傳送模組，而非促銷活動模組。
 
    按照與標準部署相同的步驟操作，僅選擇&#x200B;**[!UICONTROL Mid-sourcing platform]**&#x200B;選項。
 
@@ -180,4 +180,3 @@ ht-degree: 0%
 如果消息的傳送將由多個中部源伺服器管理，請選擇&#x200B;**[!UICONTROL Routing with alternating mid-sourcing accounts]**&#x200B;選項並指定不同的伺服器。
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)
-
