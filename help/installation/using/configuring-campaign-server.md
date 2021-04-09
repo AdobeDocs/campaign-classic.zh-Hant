@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 1%
+source-wordcount: '1580'
+ht-degree: 2%
 
 ---
 
@@ -38,9 +38,6 @@ Campaign Classic配置檔案儲存在Adobe Campaign安裝資料夾的&#x200B;**c
 * **serverConf.xml**:所有實例的常規配置。此檔案結合了Adobe Campaign伺服器的技術參數：這些會由所有例項共用。 以下詳細說明了其中一些參數。 此[部分](../../installation/using/the-server-configuration-file.md)中列出的不同節點和參數。
 * **config-`<instance>`.xml** (其中 **** instance是實例的名稱):實例的特定配置。如果您在多個實例之間共用伺服器，請在其相關檔案中輸入每個實例的特定參數。
 
-一般伺服器設定指引在[促銷活動伺服器設定](../../installation/using/configuring-campaign-server.md)中有詳細說明。
-
-
 ## 配置範圍
 
 根據您的需求和設定來設定或調整促銷活動伺服器。 您可以：
@@ -50,12 +47,12 @@ Campaign Classic配置檔案儲存在Adobe Campaign安裝資料夾的&#x200B;**c
 * 設定[URL權限](url-permissions.md)
 * 定義[安全區](security-zones.md)
 * 配置[Tomcat設定](configure-tomcat.md)
-* 自訂[傳送參數](#delivery-settings)
+* 自訂[傳送參數](configure-delivery-settings.md)
 * 定義[動態頁面安全性和中繼](#dynamic-page-security-and-relays)
 * 限制[允許的外部命令清單](#restricting-authorized-external-commands)
 * 設定[冗餘追蹤](#redundant-tracking)
 * 管理[高可用性和工作流相關性](#high-availability-workflows-and-affinities)
-* 配置檔案管理- [瞭解詳情](#file-and-resmanagement)
+* 配置檔案管理- [瞭解詳情](file-res-management.md)
    * 限制上傳檔案格式
    * 啟用對公共資源的訪問
    * 配置代理連接
@@ -139,88 +136,6 @@ Confirmation: XXXX
 * 在Linux中，轉到&#x200B;**customer.sh**&#x200B;檔案並指明：**匯出XTK_VAR_DIR=/app/log/AdobeCampaign**。
 
    有關詳細資訊，請參閱[個性化參數](../../installation/using/installing-packages-with-linux.md#personalizing-parameters)。
-
-## 設定傳送設定{#delivery-settings}
-
-必須在&#x200B;**serverConf.xml**&#x200B;資料夾中設定傳送參數。
-
-* **DNS配置**:指定傳送網域和DNS伺服器的IP位址（或主機），這些DNS伺服器用來回應MTA模組從此以後所做的MX類型DNS查 **`<dnsconfig>`** 詢。
-
-   >[!NOTE]
-   >
-   >**nameServers**&#x200B;參數對於在Windows中安裝是必備的。 對於Linux中的安裝，它必須留空。
-
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
-
-您也可以根據您的需求和設定執行下列設定：配置[SMTP中繼](#smtp-relay)，調整[MTA子進程數](#mta-child-processes)、[管理出站SMTP通信](#managing-outbound-smtp-traffic-with-affinities)。
-
-### SMTP中繼{#smtp-relay}
-
-MTA模組用作SMTP廣播（埠25）的本地郵件傳輸代理。
-
-但是，如果安全策略要求，則可以將其替換為中繼伺服器。 在這種情況下，全局吞吐量將是中繼吞吐量(如果中繼伺服器吞吐量低於Adobe Campaign吞吐量)。
-
-在這種情況下，通過在&#x200B;**`<relay>`**&#x200B;部分中配置SMTP伺服器來設定這些參數。 必須指定用於傳輸郵件及其關聯埠的SMTP伺服器的IP地址（或主機）（預設為25）。
-
-```
-<relay address="192.0.0.3" port="25"/>
-```
-
->[!IMPORTANT]
->
->此操作模式對傳送帶來嚴重限制，因為由於中繼伺服器的固有效能（延遲、頻寬……），它可大大降低吞吐量。 此外，限定同步傳送錯誤（通過分析SMTP通信量檢測到）的能力將受到限制，如果中繼伺服器不可用，則無法發送。
-
-### MTA子進程{#mta-child-processes}
-
-可以根據伺服器的CPU功率和可用網路資源來控制子進程數（預設情況下為maxSpareServers 2），以優化廣播效能。 此配置將在每台電腦的MTA配置的&#x200B;**`<master>`**&#x200B;部分中進行。
-
-```
-<master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
-```
-
-另請參閱[電子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization)。
-
-### 使用相關性{#managing-outbound-smtp-traffic-with-affinities}管理出站SMTP通信
-
->[!IMPORTANT]
->
->相關性設定必須在伺服器之間保持一致。 我們建議您與Adobe聯絡以進行親和性配置，因為所有執行MTA的應用程式伺服器上應複製組態變更。
-
-您可以通過具有IP地址的相關性來改進出站SMTP通信。
-
-若要這麼做，請套用下列步驟：
-
-1. 在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**`<ipaffinity>`**&#x200B;區段中輸入相關性。
-
-   一個相似性可以有數個不同的名稱：若要分隔，請使用&#x200B;**;**&#x200B;字元。
-
-   範例:
-
-   ```
-    IPAffinity name="mid.Server;WWserver;local.Server">
-             <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
-   ```
-
-   要查看相關參數，請參閱&#x200B;**serverConf.xml**&#x200B;檔案。
-
-1. 若要在下拉式清單中啟用相似性選擇，您需要在&#x200B;**IPAffinity**&#x200B;列舉中新增相似性名稱。
-
-   ![](assets/ipaffinity_enum.png)
-
-   >[!NOTE]
-   >
-   >[本檔案](../../platform/using/managing-enumerations.md)中詳述了枚舉。
-
-   然後，您可以選取要使用的相似性，如下所示：
-
-   ![](assets/ipaffinity_typology.png)
-
-   >[!NOTE]
-   >
-   >您也可以參考[傳送伺服器組態](../../installation/using/email-deliverability.md#delivery-server-configuration)。
-
 
 
 ## 動態頁面安全性和中繼{#dynamic-page-security-and-relays}
@@ -359,118 +274,7 @@ sh
 
 要獲取電腦的主機名，請運行以下命令：**hostname -s**。
 
-## 檔案和資源管理{#file-and-resmanagement}
 
-### 限制上載檔案格式{#limiting-uploadable-files}
-
-使用&#x200B;**uploadWhiteList**&#x200B;屬性來限制可在Adobe Campaign伺服器上上載的檔案類型。
-
-此屬性可在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**dataStore**&#x200B;元素中使用。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
-
-此屬性的預設值為&#x200B;**。+**，可讓您上傳任何檔案類型。
-
-要限制可能的格式，請用有效的java規則運算式替換屬性值。 您可以用逗號分隔數個值，以輸入數個值。
-
-例如：**uploadWhiteList=&quot;&quot;。*.png、。*.jpg&quot;**&#x200B;可讓您在伺服器上上傳PNG和JPG格式。 不接受其他格式。
-
->[!NOTE]
->
->在Internet Explorer中，完整的檔案路徑必須由規則運算式驗證。
-
-您也可以設定Web伺服器，以防止上傳重要檔案。 [了解更多](web-server-configuration.md)
-
-### 代理連接配置{#proxy-connection-configuration}
-
-例如，您可以使用&#x200B;**檔案傳輸**&#x200B;工作流程活動，將Campaign伺服器連接至外部系統。 要實現此目的，您需要通過特定命令配置&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**proxyConfig**&#x200B;部分。 **serverConf.xml**&#x200B;中的所有可用參數都列在[部分](../../installation/using/the-server-configuration-file.md)中。
-
-可能有下列代理連接：HTTP、HTTPS、FTP、SFTP。 請注意，從20.2促銷活動發行開始，HTTP和HTTPS通訊協定參數已不再提供&#x200B;****。 這些參數仍在下面提及，因為它們在以前的版本中仍然可用——包括9032。
-
->[!CAUTION]
->
->僅支援基本驗證模式。 不支援NTLM身份驗證。
->
->不支援SOCKS代理。
-
-
-您可以使用下列命令：
-
-```
-nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
-```
-
-通訊協定參數可以是「http」、「https」或「ftp」。
-
-如果您要在與HTTP/HTTPS流量相同的埠上設定FTP，則可使用下列功能：
-
-```
-nlserver config -setproxy:http/198.51.100.0:8080/user
-```
-
-只有當通訊協定參數為「ftp」時，才會使用「http」和「https」選項，並指出指定埠上的通道是透過HTTPS或HTTP執行。
-
-如果您使用不同的埠來透過代理伺服器傳送FTP/SFTP和HTTP/HTTPS流量，則應設定「ftp」通訊協定參數。
-
-
-例如：
-
-```
-nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
-```
-
-然後輸入密碼。
-
-HTTP連線在proxyHTTP參數中定義：
-
-```
-<proxyConfig enabled=“1” override=“localhost*” useSingleProxy=“0”>
-<proxyHTTP address=“198.51.100.0" login=“user” password=“*******” port=“8080”/>
-</proxyConfig>
-```
-
-HTTPS連線在proxyHTTPS參數中定義：
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyHTTPS address=“198.51.100.0” login=“user” password=“******” port=“8080"/>
-</proxyConfig>
-```
-
-FTP/FTPS連線是在proxyFTP參數中定義：
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyFTP address=“198.51.100.0” login=“user” password=“******” port=“5555" https=”true”/>
-</proxyConfig>
-```
-
-如果您對數種連線類型使用相同的proxy，則只會定義proxyHTTP，並將useSingleProxy設為&quot;1&quot;或&quot;true&quot;。
-
-如果您有內部連線，而且該連線應經由proxy，請在override參數中新增。
-
-如果您想暫時停用Proxy連線，請將啟用的參數設為&quot;false&quot;或&quot;0&quot;。
-
-### 管理公共資源{#managing-public-resources}
-
-若要公開提供，連結至促銷活動的電子郵件和公共資源中使用的影像必須存在於可外部存取的伺服器上。 然後，外部收件者或運算子就可使用這些檔案。 [進一步瞭解](../../installation/using/deploying-an-instance.md#managing-public-resources)。
-
-公共資源儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
-
-相符的URL為：**http://server/res/instance**，其中&#x200B;**instance**&#x200B;是追蹤例項的名稱。
-
-通過向&#x200B;**conf-`<instance>`.xml**&#x200B;檔案添加節點，可以指定另一個目錄，以配置伺服器上的儲存。 這表示新增下列行：
-
-```
-<serverconf>
-  <shared>
-    <dataStore hosts="media*" lang="fra">
-      <virtualDir name="images" path="/var/www/images"/>
-     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
-    </dataStore>
-  </shared>
-</serverconf>
-```
-
-在這種情況下，在部署精靈視窗的上半部中指定之公用資源的新URL應指向此資料夾。
 
 ## 高可用性工作流程和相關性{#high-availability-workflows-and-affinities}
 
