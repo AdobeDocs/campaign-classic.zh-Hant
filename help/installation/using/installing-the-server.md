@@ -6,20 +6,20 @@ description: 安裝伺服器
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '402'
 ht-degree: 2%
 
 ---
-
 
 # 安裝伺服器{#installing-the-server}
 
 ## 執行安裝程式{#executing-the-installation-program}
 
-若是Windows 32位元平台，請安裝Adobe Campaign 32位元。 若是Windows 64位元平台，請安裝Adobe Campaign 64位元。
+對於Windows 32位元平台，請安裝Adobe Campaign32位元。 對於Windows 64位元平台，請安裝Adobe Campaign64位元。
 
 Adobe Campaign伺服器的安裝步驟如下：
 
@@ -33,9 +33,9 @@ Adobe Campaign伺服器的安裝步驟如下：
 
    有幾種安裝類型可用：
 
-   * **[!UICONTROL Installation of an application server]** :安裝Adobe Campaign應用程式伺服器和用戶端主控台。
+   * **[!UICONTROL Installation of an application server]** :安裝Adobe Campaign應用程式伺服器和客戶端控制台。
    * **[!UICONTROL Minimal installation (Network)]** :從網路安裝客戶機。如果需要，電腦上將只安裝有限數量的DLL，並且所有其它元件將從網路驅動器使用。
-   * **[!UICONTROL Installation of a client]** :安裝Adobe Campaign用戶端所需的元件。
+   * **[!UICONTROL Installation of a client]** :安裝Adobe Campaign客戶機所需的元件。
    * **[!UICONTROL Custom installation]** :使用者選擇要安裝的元素。
 
    選擇&#x200B;**安裝應用程式伺服器**，然後執行以下不同步驟：
@@ -62,7 +62,7 @@ Adobe Campaign伺服器的安裝步驟如下：
    >
    >在伺服器安裝完成後，需要重新啟動伺服器以避免可能的網路問題。
 
-   安裝完成後，啟動Adobe Campaign以建立設定檔案。 請參閱[伺服器的首次啟動](#first-start-up-of-the-server)。
+   安裝完成後，啟動Adobe Campaign以建立配置檔案。 請參閱[伺服器的首次啟動](#first-start-up-of-the-server)。
 
 ## 安裝測試摘要{#summary-installation-testing}
 
@@ -72,7 +72,7 @@ Adobe Campaign伺服器的安裝步驟如下：
 nlserver pdump
 ```
 
-如果Adobe Campaign未啟動，回應是：
+如果Adobe Campaign未啟動，則回應是：
 
 ```
 No task
@@ -88,7 +88,7 @@ nlserver web
 
 ![](assets/s_ncs_install_cmd_nlserverweb.png)
 
-安裝目錄中的檔案可用來設定Adobe Campaign伺服器模組。
+安裝目錄中的檔案用於配置Adobe Campaign伺服器模組。
 
 將顯示以下資訊：
 
@@ -137,19 +137,19 @@ nlserver stop web
 
 ## 內部標識符{#password-for-the-internal-identifier}的口令
 
-Adobe Campaign伺服器會定義名為&#x200B;**internal**&#x200B;的技術登入，此登入具有所有例項的所有權限。 在安裝後，登入就沒有密碼。 必須定義一個。
+Adobe Campaign伺服器定義名為&#x200B;**internal**&#x200B;的技術登錄，該登錄對所有實例具有所有權限。 在安裝後，登入就沒有密碼。 必須定義一個。
 
-請參閱[內部識別碼](../../installation/using/campaign-server-configuration.md#internal-identifier)一節。
+進一步瞭解[本節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 ## 啟動Adobe Campaign服務{#starting-adobe-campaign-services}
 
-若要啟動Adobe Campaign服務，您可以使用服務管理員，或在命令列中輸入下列項目（具有適當的權限）:
+要啟動Adobe Campaign服務，可以使用服務管理器或在命令行中輸入以下內容（具有相應的權限）:
 
 ```
 net start nlserver6
 ```
 
-如果您日後需要停止Adobe Campaign程式，請使用以下命令：
+如果以後需要停止Adobe Campaign進程，請使用命令：
 
 ```
 net stop nlserver6
@@ -164,4 +164,3 @@ net stop nlserver6
 ```
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
 ```
-
