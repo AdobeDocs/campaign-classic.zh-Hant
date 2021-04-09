@@ -6,14 +6,14 @@ description: 進一步瞭解Web-Server組態的主要最佳實務。
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Web伺服器配置{#web-server-configuration}
 
@@ -58,7 +58,7 @@ ht-degree: 0%
    * ServerSignature **Off**
    * ServerToken **Prod**
 
-   **在IIS** (請參 [閱說明檔案](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs))上，執行下列設定：
+   **在IIS上**，執行下列設定：
 
    * 安裝&#x200B;**URLScan**。
    * 編輯&#x200B;**Urlscan.ini**&#x200B;檔案，使其具有&#x200B;**RemoveServerHeader=1**
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 * 限制查詢大小以防止上傳重要檔案：
 
-   **在Apache** (請參 [閱說明檔案](http://httpd.apache.org/docs/2.2/mod/core.html#limitrequestbody))上，在／目錄中新增 **** LimitRequestBody指令（以位元組為單位）。
+   **在Apache上**，將 **** LimitRequestBody指令（以位元組為單位）新增至／目錄中。
 
    ```
    <Directory />
