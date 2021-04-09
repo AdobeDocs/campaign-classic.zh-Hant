@@ -6,25 +6,25 @@ description: 使用 Linux 安裝軟體套件
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
 
-
 # 使用 Linux 安裝軟體套件{#installing-packages-with-linux}
 
-若是Linux 32位元平台，請安裝Adobe Campaign 32位元。 若是Linux 64位元平台，請安裝Adobe Campaign 64位元。
+對於Linux 32位平台，請安裝Adobe Campaign32位。 對於Linux 64位平台，請安裝Adobe Campaign64位。
 
-Adobe Campaign針對上述各個版本都提供一個套件：**nlserver**。 此套件包含特定版本的二進位檔和設定檔。
+對於這些版本，Adobe Campaign提供一個包：**nlserver**。 此套件包含特定版本的二進位檔和設定檔。
 
 使用安裝命令，您可以：
 
 * 將檔案複製到&#x200B;**/usr/local/neolane**
-* 建立Adobe Campaign Linux帳戶（及相關群組），此帳戶以&#x200B;**/usr/local/neolane**&#x200B;為首頁目錄建立
+* 建立以&#x200B;**/usr/local/neolane**&#x200B;作為主目錄建立的Adobe CampaignLinux帳戶（和關聯組）
 * 建立自動指令碼&#x200B;**/etc/init.d/nlserver6**&#x200B;以在啟動時使用，或建立系統單元（從20.1開始）。
 
 >[!NOTE]
@@ -37,26 +37,26 @@ Adobe Campaign針對上述各個版本都提供一個套件：**nlserver**。 �
 
 ## 基於RPM包{#distribution-based-on-rpm--packages}的分發
 
-若要將Adobe Campaign安裝至RPM（RHEL、CentOS和SUSE）作業系統，請套用下列步驟：
+要將Adobe Campaign安裝到RPM（RHEL、CentOS和SUSE）作業系統，請應用以下步驟：
 
-1. 您必須先取得Adobe Campaign套件。
+1. 你必須先拿到Adobe Campaign包裹。
 
-   檔案的名稱如下，其中&#x200B;**XXXX**&#x200B;是Adobe Campaign組建編號：
+   該檔案命名如下，其中&#x200B;**XXXX**&#x200B;是Adobe Campaign構建號：
 
    * **nlserver6-v7-XXXX-0.x86_64.** rpmfor v7.
    * **nlserver6-XXXX-0.x86_64.** rpmfor v6.1。
 
    >[!CAUTION]
    >
-   >請務必在本節的命令範例中，針對您的Adobe Campaign版本使用正確的檔案名稱。
+   >請務必在本節的命令示例中為您的Adobe Campaign版本使用正確的檔案名。
 
-1. 若要安裝它，請以&#x200B;**root**&#x200B;連線並執行下列命令（其中&#x200B;**XXXX**&#x200B;是Adobe Campaign組建編號）:
+1. 要安裝它，請以&#x200B;**root**&#x200B;的身份連接並執行以下命令(其中&#x200B;**XXXX**&#x200B;是Adobe Campaign組建編號):
 
    ```
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   rpm檔案對包具有依賴性，您可以在CentOS/Red Hat分發上找到這些包。 如果您不想使用其中某些相關性（例如，如果想使用Oracle JDK而不是OpenJDK），則可能必須使用rpm的「nodeps」選項：
+   rpm檔案對包具有依賴性，您可以在CentOS/Red Hat分發上找到這些包。 如果您不想使用其中一些相依性(例如，如果想使用OracleJDK而非OpenJDK)，則可能必須使用rpm的「nodeps」選項：
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -74,20 +74,20 @@ yum install bc.x86_64
 
 ### 在Debian中， 64位{#in-debian-64-bits}
 
-若要在Debian 64位元作業系統上安裝Adobe Campaign 64位元，請套用下列步驟：
+若要在Debian 64位元作業系統上安裝Adobe Campaign64位元，請套用下列步驟：
 
-1. 您必須先取得Adobe Campaign套件。
+1. 你必須先拿到Adobe Campaign包裹。
 
    * **nlserver6-v7-XXXX-linux-2.6-amd64.** debfor v7.
    * **nlserver6-XXXX-linux-2.6-amd64.** debfor v6.1。
 
-   **XXXX** 是Adobe Campaign組建編號。
+   **** XXXX是Adobe Campaign組建號。
 
    >[!CAUTION]
    >
-   >請務必在本節的命令範例中，針對您的Adobe Campaign版本使用正確的檔案名稱。
+   >請務必在本節的命令示例中為您的Adobe Campaign版本使用正確的檔案名。
 
-1. 若要安裝它，請以&#x200B;**root**&#x200B;連線並執行下列命令（其中&#x200B;**XXXX**&#x200B;是Adobe Campaign組建編號）:
+1. 要安裝它，請以&#x200B;**root**&#x200B;的身份連接並執行以下命令(其中&#x200B;**XXXX**&#x200B;是Adobe Campaign組建編號):
 
    ```
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
@@ -101,7 +101,7 @@ yum install bc.x86_64
 
 **德比安8/9細節**
 
-在Debian 8/9作業系統上安裝Adobe Campaign時，請考慮下列事項：
+在Debian 8/9作業系統上安裝Adobe Campaign時，請考慮以下事項：
 
 * 必須事先安裝OpenSSL。
 * 使用下列命令安裝libicu52(Debian 8)或libicu57(Debian 9)、libprotobuf9(Debian 8)和libc-ares2:
@@ -178,7 +178,7 @@ export neolane_LANG=fra
 
 必須正確定義以下環境變數。
 
-某些組合需要變更用於執行Adobe Campaign的環境。 您可以建立並編輯特定檔案(`/usr/local/neolane/nl6/customer.sh`)，以新增Adobe Campaign環境的特定修改。
+某些組合要求更改用於執行Adobe Campaign的環境。 可以建立和編輯特定檔案(`/usr/local/neolane/nl6/customer.sh`)以添加特定於Adobe Campaign環境的修改。
 
 如有必要，請使用&#x200B;**vi customer.sh**&#x200B;命令編輯&#x200B;**customer.sh**&#x200B;檔案，並調整組態或新增遺失的行：
 
@@ -190,13 +190,13 @@ export neolane_LANG=fra
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   ORACLE_HOME環境變數的內容與Oracle安裝目錄匹配。
+   oracle_HOME環境變數的內容與Oracle安裝目錄匹配。
 
    TNS_ADMIN變數的內容必須與&#x200B;**tnsnames.ora**&#x200B;檔案的位置相符。
 
 * 對於LibreOffice:
 
-   若要在現有版本的LibreOffice上執行Adobe Campaign，需要其他設定：您需要指定到安裝目錄的訪問路徑。 例如：
+   要在現有的LibreOffice版本上運行Adobe Campaign，需要其他配置：您需要指定到安裝目錄的訪問路徑。 例如：
 
    * Debian
 
@@ -220,7 +220,7 @@ export neolane_LANG=fra
 
 * 針對Java開發套件(JDK):
 
-   依預設，Adobe Campaign環境(`~/nl6/env.sh`)的組態指令碼會搜尋JDK安裝目錄。 由於此行為不是100%可靠，因此您需要指定需要使用的JDK。 要執行此操作，可以使用以下命令強制&#x200B;**JDK_HOME**&#x200B;環境變數：
+   預設情況下，Adobe Campaign環境的配置指令碼(`~/nl6/env.sh`)搜索JDK安裝目錄。 由於此行為不是100%可靠，因此您需要指定需要使用的JDK。 要執行此操作，可以使用以下命令強制&#x200B;**JDK_HOME**&#x200B;環境變數：
 
    ```
    export JDK_HOME=/usr/java/jdk1.6.0_07
@@ -230,13 +230,13 @@ export neolane_LANG=fra
    >
    >這就是一個例子。 請確定使用的JDK版本與目錄名稱相符。
 
-   若要測試JDK設定，請使用下列命令以Adobe Campaign系統使用者身分登入：
+   要測試JDK配置，請使用以下命令以Adobe Campaign系統用戶身份登錄：
 
    ```
    su - neolane
    ```
 
-您必須重新啟動Adobe Campaign服務，才能將變更納入考量。
+您必須重新啟動Adobe Campaign服務，才能將更改考慮在內。
 
 這些命令如下：
 
@@ -252,9 +252,9 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Linux {#oracle-client-in-linux}中的Oracle客戶端
+### Linux中的oracle客戶端{#oracle-client-in-linux}
 
-將Oracle與Adobe Campaign一起使用時，您需要在Linux中配置Oracle客戶端層。
+與Adobe CampaignOracle時，需要在Linux中配置Oracle客戶端層。
 
 * 使用完整用戶端
 * TNS定義
@@ -272,9 +272,9 @@ systemctl start nlserver
 
    請參閱[環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables)。
 
-* Adobe Campaign的設定
+* Adobe Campaign配置
 
-   若要完成Adobe Campaign的Oracle用戶端安裝，您必須為Adobe Campaign使用的&#x200B;**.so**&#x200B;檔案建立符號連結。
+   要完成Adobe Campaign的Oracle客戶端安裝，您需要為Adobe Campaign使用的&#x200B;**.so**&#x200B;檔案建立符號連結。
 
    若要這麼做，請使用下列命令：
 
@@ -357,6 +357,6 @@ nlserver stop web
 
 ## 內部標識符{#password-for-the-internal-identifier}的口令
 
-Adobe Campaign伺服器會定義名為&#x200B;**internal**&#x200B;的技術登入，此登入具有所有例項的所有權限。 在安裝後，登入就沒有密碼。 必須定義一個。
+Adobe Campaign伺服器定義名為&#x200B;**internal**&#x200B;的技術登錄，該登錄對所有實例具有所有權限。 在安裝後，登入就沒有密碼。 必須定義一個。
 
-請參閱[內部識別碼](../../installation/using/campaign-server-configuration.md#internal-identifier)一節。
+進一步瞭解[本節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
