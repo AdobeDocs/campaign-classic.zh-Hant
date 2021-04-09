@@ -6,14 +6,14 @@ description: 標準部署
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # 標準部署{#standard-deployment}
 
@@ -26,7 +26,7 @@ DMZ中的兩台伺服器可處理跟蹤、鏡像頁和交付，並且冗餘，�
 
 LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經常性進程（工作流引擎）。 因此，當前端伺服器上達到峰值負載時，應用程式使用者不會受到影響。
 
-資料庫伺服器可以裝載在與這三台電腦不同的電腦上。 否則，只要Adobe Campaign（Linux或Windows）支援作業系統，應用程式伺服器與資料庫伺服器就必須在LAN內共用相同的電腦。
+資料庫伺服器可以裝載在與這三台電腦不同的電腦上。 否則，只要Adobe Campaign（Linux或Windows）支援作業系統，應用程式伺服器和資料庫伺服器就必須在LAN中共用同一台電腦。
 
 伺服器和進程之間的通用通信根據以下方案進行：
 
@@ -51,14 +51,14 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 * 可通過POP3訪問的彈回郵箱，
 * 建立兩個DNS別名：
 
-   * 首次公開用於追蹤並指向虛擬IP位址(VIP)上的負載平衡器，然後散布至兩個正面伺服器，
+   * 首先暴露在公眾面前，用於跟蹤並指向虛擬IP地址(VIP)上的負載平衡器，然後分配給兩個前端伺服器，
    * 第二個則暴露給內部使用者，供他們透過主控台存取，並指向相同的應用程式伺服器。
 
-* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL（1521 for Oracle,5432 for PostgreSQL等） 埠。 有關詳細資訊，請參閱[Database access](../../installation/using/network-configuration.md#database-access)一節。
+* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521 forOracle、5432 for PostgreSQL等) 埠。 有關詳細資訊，請參閱[Database access](../../installation/using/network-configuration.md#database-access)一節。
 
 ### 安裝應用程式伺服器{#installing-the-application-server}
 
-請依照步驟，從Adobe Campaign應用程式伺服器安裝獨立執行個體，以建立資料庫（步驟12）。 請參閱[安裝和配置（單機）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
+按照步驟從Adobe Campaign應用程式伺服器安裝獨立實例以建立資料庫（步驟12）。 請參閱[安裝和配置（單機）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
 
 由於電腦不是追蹤伺服器，因此請勿考慮與Web伺服器的整合。
 
@@ -107,7 +107,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
 1. 將&#x200B;**internal**&#x200B;變更為與應用程式伺服器相同。
 
-   有關詳細資訊，請參閱[內部標識符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 將資料庫連結到實例：
 
@@ -117,7 +117,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
 
 1. 在&#x200B;**config-default.xml**&#x200B;和&#x200B;**config-demo.xml**&#x200B;檔案中，啟用&#x200B;**web**、**trackinglogd**&#x200B;和&#x200B;**mta**&#x200B;模組。
 
-   有關詳細資訊，請參閱[啟用進程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案並填入：
 
@@ -131,7 +131,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
       >
       >**nameServers**&#x200B;參數僅用於Windows。
 
-      如需詳細資訊，請參閱[傳送設定](../../installation/using/campaign-server-configuration.md#delivery-settings)。
+      如需詳細資訊，請參閱[傳送設定](configuring-campaign-server.md#delivery-settings)。
 
    * 重新導向參數中的冗餘追蹤伺服器：
 
@@ -162,7 +162,7 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
    * 針對Windows:[啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. 啟動Adobe Campaign伺服器。
-1. 在Adobe Campaign主控台中，使用&#x200B;**admin**&#x200B;登入功能連線，毋需輸入密碼，然後啟動部署精靈。
+1. 在Adobe Campaign控制台中，使用&#x200B;**admin**&#x200B;登入功能連線，毋需輸入密碼，然後啟動部署精靈。
 
    有關詳細資訊，請參閱[部署實例](../../installation/using/deploying-an-instance.md)。
 
@@ -177,4 +177,3 @@ LAN中的應用程式伺服器為最終用戶提供服務，並執行所有經�
    >[!NOTE]
    >
    >我們使用先前建立的兩個追蹤伺服器的現有例項，並使用&#x200B;**internal**&#x200B;登入。
-
