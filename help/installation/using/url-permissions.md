@@ -8,21 +8,31 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 8ab0aab42accbd1253d53e8133f5af0a38c724ea
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 27%
+source-wordcount: '338'
+ht-degree: 23%
 
 ---
 
 
-# 設定URL權限{#url-permissions}
+# 設定URL權限（內部部署）{#url-permissions}
 
 可由您的 Campaign Classic 執行個體的 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。這些是可讓您的執行個體正常運作的 URL。
 
 依預設，執行個體不得連線到外部 URL。不過，您可以將一些外部URL新增至授權URL的清單，讓您的例項可以連線至這些URL。 這可讓您將 Campaign 執行個體連結到外部系統，例如 SFTP 伺服器或網站，以啟用檔案和/或資料傳輸。
 
+>[!NOTE]
+>
+>此程式僅限於&#x200B;**on-premise**&#x200B;部署。
+>
+>身為&#x200B;**代管**&#x200B;的客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，則可使用URL權限自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+>
+>其他&#x200B;**hybrid/hosted**&#x200B;客戶需要聯繫Adobe支援團隊，將IP新增至允許清單。
+
+
 對於&#x200B;**Hybrid**&#x200B;和&#x200B;**內部部署**&#x200B;部署，管理員需要在&#x200B;**serverConf.xml**&#x200B;檔案中參考新的&#x200B;**urlPermission**。
+
 
 提供三種連接保護模式：
 
