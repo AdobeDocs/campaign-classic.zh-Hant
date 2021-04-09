@@ -6,14 +6,14 @@ description: 企業部署
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # 企業部署{#enterprise-deployment}
 
@@ -113,7 +113,7 @@ ht-degree: 1%
    nlserver config -internalpassword
    ```
 
-   有關詳細資訊，請參閱[內部標識符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 使用DNS遮罩建立&#x200B;**demo**&#x200B;例項以進行追蹤（在本例中為&#x200B;**tracking.campaign.net**），並存取用戶端主控台（在本例中為&#x200B;**console.campaign.net**）。 有兩種方法可以做到：
 
@@ -151,7 +151,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-   有關詳細資訊，請參閱[啟用進程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案並指定傳送網域，然後指定MTA模組用來回答MX類型DNS查詢的DNS伺服器IP（或主機）位址。
 
@@ -163,7 +163,7 @@ ht-degree: 1%
    >
    >**nameServers**&#x200B;參數僅用於Windows。
 
-   如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/campaign-server-configuration.md)。
+   如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/configuring-campaign-server.md)。
 
 1. 將用戶端主控台設定程式（v7或&#x200B;**setup-client-6.XX**,v6.1的&#x200B;**setup-client-7.XX**, **/datakit/>,**/datakit/）複製至&#x200B;**/nl/eng/jsp**&#x200B;資料夾。 ****[進一步瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
@@ -229,7 +229,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-   有關詳細資訊，請參閱[啟用進程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案並填充MTA模組的DNS配置：
 
@@ -241,7 +241,7 @@ ht-degree: 1%
    >
    >**nameServers**&#x200B;參數僅用於Windows。
 
-   如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/campaign-server-configuration.md)。
+   如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/configuring-campaign-server.md)。
 
 1. 啟動Adobe Campaign伺服器。
 
@@ -290,4 +290,3 @@ ht-degree: 1%
    * 針對Windows:[啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)。
 
 1. 啟動Adobe Campaign伺服器。
-
