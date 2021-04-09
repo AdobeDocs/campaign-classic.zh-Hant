@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 88%
@@ -199,7 +199,7 @@ _2020 年 6 月 8 日_
 
 * 使用 iOS HTTP2連接器的 iOS 行動應用程式憑證，現在將於傳送推播通知前驗證，因此可以避免傳遞因憑證過期而失敗。
 
-* 改善了 HTTP 代理連線的管理機制。[進一步瞭解](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+* 改善了 HTTP 代理連線的管理機制。[進一步瞭解](../../installation/using/file-res-management.md)。
 
 * **[!UICONTROL Javascript Code]** 和 **[!UICONTROL Advanced Javascript Code]** 工作流程活動中的新選項，可在限制後停止執行。預設值為 1 小時。[進一步瞭解](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
 
