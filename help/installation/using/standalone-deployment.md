@@ -6,14 +6,14 @@ description: 獨立部署
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 1%
+source-wordcount: '1086'
+ht-degree: 3%
 
 ---
-
 
 # 獨立部署{#standalone-deployment}
 
@@ -112,7 +112,7 @@ ht-degree: 1%
    nlserver config -internalpassword
    ```
 
-   有關詳細資訊，請參閱[內部標識符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 使用DNS遮罩建立&#x200B;**demo**&#x200B;例項以進行追蹤（在本例中為&#x200B;**tracking.campaign.net**），並存取用戶端主控台（在本例中為&#x200B;**console.campaign.net**）。 有兩種方法可以做到：
 
@@ -150,7 +150,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-   有關詳細資訊，請參閱[啟用進程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案並指定傳送網域，然後指定MTA模組用來回答MX類型DNS查詢的DNS伺服器IP（或主機）位址。
 
@@ -162,7 +162,7 @@ ht-degree: 1%
    >
    >**nameServers**&#x200B;參數僅用於Windows。
 
-   如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/campaign-server-configuration.md)。
+   如需詳細資訊，請參閱[促銷活動伺服器組態](../../installation/using/configuring-campaign-server.md)。
 
 1. 將用戶端主控台設定程式（v7或&#x200B;**setup-client-6.XX**,v6.1的&#x200B;**setup-client-7.XX**, **/datakit/>,**/datakit/）複製至&#x200B;**/nl/eng/jsp**&#x200B;資料夾。 ****[進一步瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
@@ -213,7 +213,7 @@ ht-degree: 1%
 
 1. 啟動Adobe Campaign客戶端控制台（從上一個下載頁面啟動或直接在伺服器上啟動Windows安裝），將伺服器連接URL設定為https://console.campaign.net，並使用&#x200B;**internal**&#x200B;登錄進行連接。
 
-   請參閱[建立例項並登入](../../installation/using/creating-an-instance-and-logging-on.md)和[內部識別碼](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   請參閱[本頁](../../installation/using/creating-an-instance-and-logging-on.md)和[本節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
    首次登錄時，資料庫建立嚮導將顯示：
 
@@ -244,4 +244,3 @@ ht-degree: 1%
    * 存取來源：提供兩個報表URL:Web表單和鏡像頁面。
 
       ![](assets/d_ncs_install_web_url.png)
-
