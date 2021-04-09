@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -509,7 +509,6 @@ ht-degree: 98%
       + [存取外部資料庫](workflow/using/accessing-an-external-database--fda-.md)
       + [管理權限](workflow/using/managing-rights.md)
       + [管理活動影像](workflow/using/managing-activity-images.md)
-      + [管理傾向](workflow/using/managing-propensity.md)
       + [管理時區](workflow/using/managing-time-zones.md)
       + [技術工作流程](workflow/using/about-technical-workflows.md)
 + 管理優惠方案{#managing-offers}
@@ -625,7 +624,7 @@ ht-degree: 98%
       + [企業部署](installation/using/enterprise-deployment.md)
       + [中間來源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 與 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 安全性與隱私權檢查清單{#security-privacy}
+   + 安全性和隱私權設定{#security-privacy}
       + [開始使用安全性和隱私權](installation/using/get-started-security-privacy.md)
       + [個人化與隱私](installation/using/privacy.md)
       + [安全的存取管理](installation/using/access-management.md)
@@ -654,12 +653,13 @@ ht-degree: 98%
       + [關鍵步驟](installation/using/about-initial-configuration.md)
       + [建立執行個體並登入](installation/using/creating-an-instance-and-logging-on.md)
       + [建立及設定資料庫](installation/using/creating-and-configuring-the-database.md)
-      + [設定 Campaign 伺服器](installation/using/campaign-server-configuration.md)
       + [部署執行個體](installation/using/deploying-an-instance.md)
       + [安裝內建套件](installation/using/installing-campaign-standard-packages.md)
    + 設定 Campaign{#additional-configurations}
       + [Campaign 伺服器設定](installation/using/configuring-campaign-server.md)
       + [定義安全區](installation/using/security-zones.md)
+      + [設定URL權限](installation/using/url-permissions.md)
+      + [配置Tomcat](installation/using/configure-tomcat.md)
       + [技術電子郵件設定](installation/using/email-deliverability.md)
       + [搭配使用MX伺服器與Campaign](installation/using/using-mx-servers.md)
       + [設定電子郵件密件副本](installation/using/email-archiving.md)
