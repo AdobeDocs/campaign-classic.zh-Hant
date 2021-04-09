@@ -3,17 +3,17 @@ solution: Campaign Classic
 product: campaign
 title: Campaign 18.10發行說明
 description: Campaign 18.10的發行說明
-feature: 概觀
-role: 業務從業人員
-level: 初學者
+feature: 概覽
+role: Business Practitioner
+level: Beginner
+exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2372'
 ht-degree: 7%
 
 ---
-
 
 # 18.10 發行版本{#release-18-10}
 
@@ -45,7 +45,7 @@ ht-degree: 7%
 
 **功能改善**
 
-* 修正交易訊息追蹤指標的計算程式問題。 (NEO-12529、NEO-12581)
+* 修正交易訊息追蹤指標的計算程式問題。 （NEO-12529、NEO-12581）
 * 修正HTTPRequest API未等待所有回呼完成的問題。 (NEO-12628)
 * 已在抵用券臨時表格中新增索引，以最佳化傳送。 (NEO-12437)
 * 修正分析日文(.JP)網域的目標收件者訊息時的問題。 (NEO-12246)
@@ -130,7 +130,7 @@ ht-degree: 7%
    <td> <p>新增了資料管理工作流程活動。 <strong>SQL資料管理</strong>活動允許您編寫或複製貼上自己的SQL指令碼以建立和填充工作表（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">相關的文件</a>，以瞭解詳情。</p></td> 
   </tr> 
   <tr> 
-   <td> 工作流監控<br /> </td> 
+   <td> 監視工作流程<br /> </td> 
    <td> <p>使用全新的Adobe Campaign工作流熱圖，平台管理員可快速以圖形化方式呈現所有併發工作流，以便監控實例的負載並據此規劃工作流。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>Workflow HeatMap套件也可依需求在8977（從組建8700開始）之前建立。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>。</p> </td> 
   </tr> 
  </tbody> 
@@ -148,7 +148,7 @@ ht-degree: 7%
 
 * 現在針對 Campaign Classic API 推出[專屬頁 面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
 * 現在支援PostgreSQL 10、Debian 9和Teradata16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
-* 建立SFTP連線時，您現在可以使用代理驗證。 有關詳細資訊，請參閱[詳細說明檔案](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)(NEO-9868)
+* 建立SFTP連線時，您現在可以使用代理驗證。 有關詳細資訊，請參閱[詳細說明檔案](../../installation/using/file-res-management.md)(NEO-9868)
 * 當使用直接郵件傳送模板建立單次傳送時，**日期計算公式**&#x200B;選項現在可用於傳送屬性。 (NEO-9792)
 * Cookie追蹤和Web應用程式的網域名稱管理已改善。 如需詳細資訊，請參閱下方的「技術演變」一節。
 * Adobe Marketing Cloud在交付或登陸頁面中的共用資產的導入在安全性和效能方面都得到改進。
@@ -240,4 +240,3 @@ NmsRecipient上的索引已重新編寫。 這應會改善使用此表格的查�
 * 修正在根據SQL視圖&#x200B;**選擇特定方案**&#x200B;的元素後保存新傳送組合時發生的Oracle錯誤。 (NEO-11682)
 * 修正當透過使用解壓縮選項的載入檔案活動處理包含。csv的zip檔案時，產生包含誤報的拒絕檔案的問題。
 * xtkjoblog現在會被清除。
-
