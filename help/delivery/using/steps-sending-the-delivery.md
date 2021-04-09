@@ -6,14 +6,14 @@ description: 設定和傳送傳送
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
+exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
 
 ---
-
 
 # 配置和發送傳送{#configuring-and-sending-the-delivery}
 
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >當安裝使用中間採購來源時，不建議使用此選項，即不呼叫mta。 有關配置SMTP伺服器的詳細資訊，請參閱[以瞭解本節](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
+   >當安裝使用中間採購來源時，不建議使用此選項，即不呼叫mta。 有關配置SMTP伺服器的詳細資訊，請參閱[以瞭解本節](../../installation/using/configuring-campaign-server.md#delivery-settings)。
 
 * **[!UICONTROL Email BCC]**:此選項可讓您透過密件副本將電子郵件儲存在外部系統上，只要在訊息目標中新增密件副本電子郵件地址即可。如需詳細資訊，請參閱[本章節](../../delivery/using/sending-messages.md#archiving-emails)。
 
@@ -187,7 +187,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* **[!UICONTROL Delivery duration]**&#x200B;欄位可讓您輸入全域傳送重試的限制。 這表示Adobe Campaign會傳送從開始日期開始的訊息，然後針對傳回錯誤的訊息，會執行定期、可設定的重試，直到達到有效性限制為止。
+* **[!UICONTROL Delivery duration]**&#x200B;欄位可讓您輸入全域傳送重試的限制。 這意味著Adobe Campaign發送從開始日期開始的消息，然後，對於僅返回錯誤的消息，將執行常規的可配置重試，直到達到有效性限制。
 
    您也可以選擇指定日期。 要執行此操作，請選擇&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情況下，傳送和有效性限制日期也可讓您指定時間。 目前時間預設會使用，但您可以直接在輸入欄位中修改。
 
