@@ -6,31 +6,31 @@ description: 瞭解如何將Campaign整合至網頁伺服器(Linux)
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 5%
 
 ---
 
-
 # 與 Linux 網頁伺服器整合{#integration-into-a-web-server-for-linux}
 
-Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）在應用程式伺服器中當做入口點。
+Adobe Campaign包含Apache Tomcat，它可透過HTTP（和SOAP）在應用程式伺服器中當做入口點。
 
 您可以使用此整合的Tomcat伺服器來服務HTTP請求。
 
 在本例中：
 
-* 預設監聽埠為8080。 要更改它，請參閱[配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
+* 預設監聽埠為8080。 要更改它，請參閱[本節](configure-tomcat.md)。
 * 然後，用戶端主控台會使用URL進行連線，例如：
 
    ```
    http://<computer>:8080
    ```
 
-不過，出於安全性和管理原因，我們建議使用專用的Web伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦在網際網路上公開，而且您想要在網路外開啟主控台的存取權。
+但是，出於安全和管理原因，我們建議使用專用的Web伺服器作為HTTP通信的主要入口點，因為運行Adobe Campaign的電腦在Internet上被公開，並且您希望開啟對網路外部控制台的訪問。
 
 Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
@@ -78,7 +78,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
     a2enmod nlsrv
    ```
 
-   如果您使用Adobe Campaign頁面的&#x200B;**mod_rewrite**&#x200B;模組，則需要將&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;檔案重新命名為&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**z-nlsrv.cf**... 要激活模組，請運行以下命令：
+   如果您使用&#x200B;**mod_rewrite**&#x200B;模組用於Adobe Campaign頁，則需要將&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;檔案更名為&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.a9/>。**&#x200B;要激活模組，請運行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -94,7 +94,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
    儲存變更。
 
-1. 然後使用下列命令類型，將Adobe Campaign使用者新增至Apache使用者群組，反之亦然：
+1. 然後，使用以下類型的命令將Adobe Campaign用戶添加到Apache用戶組，反之亦然：
 
    ```
    usermod neolane -G www-data
@@ -152,7 +152,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    ForceLanguagePriority
    ```
 
-1. 在`/etc/httpd/conf.d/`資料夾中建立Adobe Campaign特定的設定檔案。 例如`CampaignApache.conf`
+1. 在`/etc/httpd/conf.d/`資料夾中建立Adobe Campaign特定的配置檔案。 例如`CampaignApache.conf`
 
 1. 對於&#x200B;**RHEL7**，在檔案中添加以下說明：
 
@@ -178,7 +178,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    systemctl daemon-reload
    ```
 
-1. 然後，執行命令，將Adobe Campaign運算子新增至Apache運算子群組，反之亦然：
+1. 然後，通過運行以下命令將Adobe Campaign運算子添加到Apache運算子組中，反之亦然：
 
    ```
    usermod -a -G neolane apache
@@ -187,7 +187,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
    要使用的組名取決於Apache的配置方式。
 
-1. 執行Apache和Adobe Campaign伺服器。
+1. 運行Apache和Adobe Campaign伺服器。
 
    針對RHEL7:
 
@@ -198,7 +198,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
 ## 啟動Web伺服器並測試配置{#launching-the-web-server-and-testing-the-configuration}
 
-您現在可以啟動Apache來測試設定。 Adobe Campaign模組現在應該會在主控台上顯示其橫幅（某些作業系統上有兩個橫幅）:
+您現在可以啟動Apache來測試設定。 Adobe Campaign模組現在應在控制台上顯示其橫幅（某些作業系統上顯示兩個橫幅）:
 
 ```
  /etc/init.d/apache start
