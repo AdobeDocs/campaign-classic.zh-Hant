@@ -6,14 +6,14 @@ description: 探索監控 Campaign 執行個體和程序的準則和最佳作法
 audience: production
 content-type: reference
 topic-tags: introduction
+exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 7%
+source-wordcount: '770'
+ht-degree: 17%
 
 ---
-
 
 # 監視准則 {#monitoring-guidelines}
 
@@ -31,8 +31,8 @@ ht-degree: 7%
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">監控您的實例</a></p></td>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">監控工作流程</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">監控傳送</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">監視工作流程</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">監視傳遞</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">監視資料庫</a></p></td></tr>
 </table>
 
@@ -44,19 +44,19 @@ ht-degree: 7%
 
 **自動監控工具**
 
-有幾種自動方法可供使用。 來協助您監控您的實例。 例如，您可以設定偵測到異常的電子郵件報表、擷取XML格式的指標清單等。 [按一](../../production/using/monitoring-processes.md#automatic-monitoring) 下這裡以取得詳細資訊。
+有幾種自動方法可供使用。 來協助您監控您的實例。 例如，您可以設定偵測到異常的電子郵件報表、擷取XML格式的指標清單等。 [按一下這裡](../../production/using/monitoring-processes.md#automatic-monitoring)以獲得更多資訊。
 
 **稽核軌跡**
 
-稽核記錄可讓您直觀地顯示實例中與選項、工作流程和結構描述相關的變更的完整記錄。 [按一](../../production/using/audit-trail.md) 下這裡以取得詳細資訊。
+稽核記錄可讓您直觀地顯示實例中與選項、工作流程和結構描述相關的變更的完整記錄。 [按一下這裡](../../production/using/audit-trail.md)以獲得更多資訊。
 
 **控制面板**
 
-「控制面板」可讓您管理數個例項的設定：管理URL權限、檢查您的例項詳細資訊，例如伺服器的建置版本等。 它還允許您監視連接到實例的SFTP伺服器上的可用空間。 [按一](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html) 下這裡以取得詳細資訊。
+「控制面板」可讓您管理數個例項的設定：管理URL權限、檢查您的例項詳細資訊，例如伺服器的建置版本等。 它還允許您監視連接到實例的SFTP伺服器上的可用空間。 [按一下這裡](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)以獲得更多資訊。
 
 >[!NOTE]
 >
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取權的步驟詳見[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
 >請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](../../rn/using/gs-overview.md)組建版本或[最新的GA組建版本(21.1)](../../rn/using/latest-release.md)進行升級。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
 
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 **工作流程熱度圖**
 
-Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流程。 它可讓您輕鬆監控執行個體的負載，並據此規劃工作流程。 [按一](../../workflow/using/heatmap.md) 下這裡以取得詳細資訊。
+Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流程。 它可讓您輕鬆監控執行個體的負載，並據此規劃工作流程。 [按一下這裡](../../workflow/using/heatmap.md)以獲得更多資訊。
 
 **稽核軌跡**
 
@@ -78,7 +78,7 @@ Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流�
 
 **工作流程狀態監控**
 
-除了熱圖外，您還可以建立工作流程，讓您監控一組工作流程的狀態，並傳送循環訊息給主管。 [按一](../../workflow/using/supervising-workflows.md) 下這裡以取得詳細資訊。
+除了熱圖外，您還可以建立工作流程，讓您監控一組工作流程的狀態，並傳送循環訊息給主管。 [按一下這裡](../../workflow/using/supervising-workflows.md)以獲得更多資訊。
 
 **一般准則**
 
@@ -92,7 +92,7 @@ Workflow HeatMap以視覺化方式呈現執行個體上執行的所有工作流�
 
 **SMTP報告**
 
-SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [進一步了解](../../production/using/monitoring-processes.md)
+SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [了解更多](../../production/using/monitoring-processes.md)
 
 **最佳實務**
 
@@ -111,23 +111,23 @@ SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [進一步了解](../..
 
 **資料庫清除工作流程**
 
-「資料庫清理」工作流允許您從資料庫中刪除過時的資料。 建議避免資料庫的指數級增長。 [按一](../../production/using/database-cleanup-workflow.md) 下這裡以取得詳細資訊。
+「資料庫清理」工作流允許您從資料庫中刪除過時的資料。 建議避免資料庫的指數級增長。 [按一下這裡](../../production/using/database-cleanup-workflow.md)以獲得更多資訊。
 
 **資料庫效能故障排除**
 
-在遇到資料庫效能問題時，可以執行特定操作。 [按一](../../production/using/database-performances.md) 下這裡以取得詳細資訊。
+在遇到資料庫效能問題時，可以執行特定操作。 [按一下這裡](../../production/using/database-performances.md)以獲得更多資訊。
 
 **資料庫維護**
 
 *僅限內部部署和混合式代管模型*
 
-建議您定期執行資料庫維護，以避免磁碟空間過度消耗，從而影響資料庫訪問。 [按一](../../production/using/recommendations.md) 下這裡以取得詳細資訊。
+建議您定期執行資料庫維護，以避免磁碟空間過度消耗，從而影響資料庫訪問。 [按一下這裡](../../production/using/recommendations.md)以獲得更多資訊。
 
 **備份和還原**
 
 *僅限內部部署和混合式代管模型*
 
-備份是避免在電腦發生問題（無論是物理問題還是與系統相關）時丟失資料的關鍵。 [按一](../../production/using/backup.md) 下這裡以取得詳細資訊。還原過程在[本節](../../production/using/restoration.md)中介紹。
+備份是避免在電腦發生問題（無論是物理問題還是與系統相關）時丟失資料的關鍵。 [按一下這裡](../../production/using/backup.md)以獲得更多資訊。還原過程在[本節](../../production/using/restoration.md)中介紹。
 
 ## Campaign Classic技術原則{#campaign-classic-technical-principles}
 
@@ -142,7 +142,7 @@ SMTP報告按域顯示傳送統計資訊和SMTP錯誤。 [進一步了解](../..
 
 *僅限內部部署與混合式代管模型*
 
-* [強制性伺服器組態](../../installation/using/campaign-server-configuration.md)
+* [伺服器組態](../../installation/using/configuring-campaign-server.md)
 * [Serverconf.xml檔案配置](../../installation/using/the-server-configuration-file.md)
 * [可傳遞的伺服器組態](../../installation/using/email-deliverability.md)
 * [用於建立實例和聲明資料庫的命令行](../../installation/using/command-lines.md)
