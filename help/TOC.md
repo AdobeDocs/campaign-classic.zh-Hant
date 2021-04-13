@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 97%
+source-wordcount: '2516'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
       + [傳遞疑難排解](delivery/using/delivery-troubleshooting.md)
       + [傳遞狀態](delivery/using/delivery-statuses.md)
       + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
-      + [在ISP中斷後更新反彈資格](delivery/using/update-bounce-qualification.md)
+      + [在 ISP 中斷後更新彈出資格](delivery/using/update-bounce-qualification.md)
       + [瞭解隔離管理](delivery/using/understanding-quarantine-management.md)
    + 追蹤訊息 {#tracking-messages}
       + [關於訊息追蹤](delivery/using/about-message-tracking.md)
@@ -394,6 +394,10 @@ ht-degree: 97%
       + [設定自訂實施的事件](integrations/using/events.md)
       + [管線監視](integrations/using/pipeline-monitoring.md)
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
+   + Adobe Experience Platform源和目標{#aep-sources-destinations}
+      + [開始使用來源和目標](integrations/using/get-started-sources-destinations.md)
+      + [將Adobe Experience Platform觀眾收錄至Campaign](integrations/using/ingest-aep-data.md)
+      + [將資料從Campaign匯出至Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流程自動化{#automating-with-workflows}
    + 開始使用工作流程 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
