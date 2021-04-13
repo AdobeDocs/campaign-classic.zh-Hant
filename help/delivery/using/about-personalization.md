@@ -6,16 +6,16 @@ description: 瞭解如何在Campaign中個人化訊息和使用條件式內容
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
+exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: d3ef2783409a3a36badbd3f8248ba1bdf6acae7e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 37%
 
 ---
 
-
-# 開始使用個人化功能{#about-personalization}
+# 開始使用個人化{#about-personalization}
 
 有幾種不同的方式可個人化由 Adobe Campaign 傳送的訊息，包含訊息的內容或外觀。尤其是根據收件者用戶檔案中的準則，可以將這些方法結合使用。對於電子郵件傳送，您可以直接在JavaScript中，從訊息的&#x200B;**[!UICONTROL Source]**&#x200B;標籤定義傳送的元素和個人化條件。 一般而言，Adobe Campaign 允許您：
 
