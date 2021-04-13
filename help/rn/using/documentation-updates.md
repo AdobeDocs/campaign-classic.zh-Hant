@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
-source-wordcount: '4272'
-ht-degree: 96%
+source-wordcount: '4304'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 96%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
+
+## 2021 年 4 月 {#april-2021}
+
+本節將討論如何與Adobe Experience PlatformSources和Destinations合作，在Campaign Classic和Adobe即時客戶資料平台(RTCDP)之間共用資料。 [顯示全文](../../integrations/using/get-started-sources-destinations.md)
 
 ## 2021 年 3 月 {#march-2021}
 
@@ -40,7 +44,7 @@ Campaign Classic的「說明與支援選項」頁面已整合至核心檔案。 
 
 在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活動部分中已新增了有關如何使用 task.setCompleted() 方法終止任務及防止將來重新呼叫的資訊。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-[傳遞能力](../../delivery/using/about-deliverability.md)區段已更新，現在包含新[Adobe傳遞能力最佳實踐指南](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)的連結。 與可適用於各種Adobe解決方案的傳遞能力相關的所有一般資訊都已移至[最佳實踐指南附錄](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources)。
+[傳遞能力](../../delivery/using/about-deliverability.md)區段已更新，現在包含新 [Adobe 傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)的連結。 針對適用各種 Adobe 解決方案的傳遞能力其所有一般資訊都已移至[最佳實務指南附錄](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hant#additional-resources)。
 
 ## 2021 年 2 月 {#release-21.1}
 
