@@ -6,14 +6,14 @@ description: 使用其他 Adobe 解決方案，並將其不同的功能與 Campa
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
+exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '772'
 ht-degree: 9%
 
 ---
-
 
 # 開始使用Adobe Campaign整合{#about-campaign-integrations}
 
@@ -60,7 +60,7 @@ ID隨後將由具有相同[CNAME](https://docs.adobe.com/content/help/en/id-serv
  <tbody> 
   <tr> 
    <td> <strong>Adobe即時客戶資料平台(RTCDP)</strong><br /> </td> 
-   <td> Adobe Campaign與Adobe即時客戶資料平台(RTCDP)的整合可讓您共用區段資料並將觀眾匯入Adobe Campaign。<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">進一</a> 步瞭解Campaign -Adobe即時客戶資料平台整合。</p><br /> </td> 
+   <td> Adobe Campaign與Adobe即時客戶資料平台(RTCDP)的整合可讓您共用區段資料並將觀眾匯入Adobe Campaign。<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">進一</a> 步瞭解Campaign -Adobe即時客戶資料平台整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AdobeIdentity Management系統(IMS)-Adobe ID</strong><br /> </td> 
@@ -96,4 +96,3 @@ ID隨後將由具有相同[CNAME](https://docs.adobe.com/content/help/en/id-serv
   </tr> 
  </tbody> 
 </table>
-
