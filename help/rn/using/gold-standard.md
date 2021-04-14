@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: ac01b3c064209362cc6142a716d2892c27753d76
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1058'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 96%
 本頁列出[!DNL Gold Standard]版本。 進一步瞭解本頁](gs-overview.md)中的促銷活動[!DNL Gold Standard] [。
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11版{#gs-11}
+
+_2021年4月14日_
+
+建置9032@d030c36包含下列修正：
+
+* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
+
+**僅主控台升級為強制性。不需要升級伺服器。**
 
 _2021年 3 月 2 日_
 
