@@ -6,36 +6,46 @@ description: Campaign 19.1的發行說明
 feature: null
 role: null
 level: null
+exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
 translation-type: tm+mt
-source-git-commit: 631e7a0f89a365626401a6157ef84442fa0fd59f
+source-git-commit: 5271a23f7d815d432cfec00c57555c18be1fd3c7
 workflow-type: tm+mt
-source-wordcount: '3198'
-ht-degree: 20%
+source-wordcount: '3256'
+ht-degree: 25%
 
 ---
-
 
 # 19.1 發行版本{#release-19-1}
 
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
 
-_2021年3月22日_
+_2021年4月15日_
 
-* 修正回歸，防止在傳送中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453、NEO-31454)
+* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
 
-**僅控制台升級是強制性的。不需要伺服器升級。**
+**僅主控台升級為強制性。不需要升級伺服器。**
 
 >[!NOTE]
 >
-> 連線至[Adobe軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有最終用戶[建議控制台更新。
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
-_2020年12月16日_
+_2021年 3 月 22 日_
+
+* 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
+
+**僅主控台升級為強制性。不需要升級伺服器。**
+
+>[!NOTE]
+>
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
+
+_2020 年 12 月 16 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
-> * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)具有促銷活動的舊式驗證模式將於2021年11月30日&#x200B;****&#x200B;淘汰。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
 
 
 
@@ -111,7 +121,7 @@ _2019年10月3日_
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-_2019年8月13日_
+_2019 年 8 月 13 日_
 
 **功能改善**
 
@@ -239,7 +249,7 @@ _2019年5月30日_
 * 修正可能影響SMS交易訊息效能的問題。 (NEO-9812)
 * 修正當使用傳送之主要目標之外部檔案中的「定義」選項時，可能會發生的主控台當機問題。 (NEO-12349)
 * 修正分析日文(.JP)網域的目標收件者訊息時的問題。 (NEO-12246)
-* 修正使用1:N連結的值分佈時的顯示問題。 (NEO-12212、NEO-11820)
+* 修正使用1:N連結的值分佈時的顯示問題。 （NEO-12212、NEO-11820）
 * 修正MTA記錄檔中，在錯誤升級後可能會發生NmsMxDomain錯誤的問題。 (NEO-12752)
 * 修正在擴充工作流程活動中使用「保留主集的所有其他資料」選項的問題。 (NEO-13291)
 * 修正使用HTTP2傳送推播通知時的Tomcat當機問題。 (NEO-12701)
@@ -281,6 +291,6 @@ _2019年5月30日_
 * 修正當URL格式錯誤時，追蹤工作流程失敗的問題。
 * 修正匯入行動應用程式套件後，外部帳戶的問題。
 * 修正將時區指派給運算子的問題。 (NEO-12464)
-* 修正可能導致像片記錄檔錯誤的問題。 (NEO-11539、NEO-8978)
+* 修正可能導致像片記錄檔錯誤的問題。 （NEO-11539、NEO-8978）
 * 修正按一下儲存報表中「步驟記錄」圖示的問題。 (NEO-11620)
 * 修正在報表中編輯樞紐表時的問題。 (NEO-12068)
