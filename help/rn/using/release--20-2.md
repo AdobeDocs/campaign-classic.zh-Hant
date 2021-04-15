@@ -8,16 +8,26 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
 workflow-type: tm+mt
-source-wordcount: '2830'
-ht-degree: 88%
+source-wordcount: '2970'
+ht-degree: 87%
 
 ---
 
 # 第 20.2 發行版本{#release-20-2}
 
 ## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
+
+_2021年4月15日_
+
+* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
+
+**僅主控台升級為強制性。不需要升級伺服器。**
+
+>[!NOTE]
+>
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
 _2021年 3 月 31 日_
 
@@ -37,6 +47,17 @@ _2021年 3 月 31 日_
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+
+_2021年4月15日_
+
+* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
+* 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
+
+**僅主控台升級為強制性。不需要升級伺服器。**
+
+>[!NOTE]
+>
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
 _2020 年 12 月 22 日_
 
