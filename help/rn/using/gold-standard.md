@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: ac01b3c064209362cc6142a716d2892c27753d76
+source-git-commit: 113a3535cd197f9b654fc1e50e20886e76ee886a
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 94%
@@ -40,7 +40,6 @@ _2021年 3 月 2 日_
 >[!NOTE]
 >
 > 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
-
 
 _2020 年 12 月 22 日_
 
