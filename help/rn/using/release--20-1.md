@@ -3,40 +3,50 @@ solution: Campaign Classic
 product: campaign
 title: 20.1 發行版本
 description: 20.1 發行版本
-feature: 概觀
-role: 業務從業人員
-level: 初學者
+feature: 概覽
+role: Business Practitioner
+level: Beginner
+exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: da87e8aac5d5419c8b21803e4041da166d8ffde9
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 10%
+source-wordcount: '1560'
+ht-degree: 18%
 
 ---
-
 
 # 20.1 發行版本{#release-20-1}
 
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
 
-_2021年3月22日_
+_2021年4月15日_
 
-* 修正回歸，防止在傳送中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453、NEO-31454)
+* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
 
-**僅控制台升級是強制性的。不需要伺服器升級。**
+**僅主控台升級為強制性。不需要升級伺服器。**
 
 >[!NOTE]
 >
-> 連線至[Adobe軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有最終用戶[建議控制台更新。
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
-_2020年12月23日_
+_2021年 3 月 22 日_
+
+* 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
+
+**僅主控台升級為強制性。不需要升級伺服器。**
+
+>[!NOTE]
+>
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
+
+_2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
    >
    > 
-* 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
+* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
@@ -50,7 +60,7 @@ _2020年5月6日_
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
-_2020年3月13日_
+_2020 年 3 月 13 日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
