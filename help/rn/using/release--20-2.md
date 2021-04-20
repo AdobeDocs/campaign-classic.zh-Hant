@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 第 20.2 發行版本
 description: 第 20.2 發行版本
-feature: 概覽
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588

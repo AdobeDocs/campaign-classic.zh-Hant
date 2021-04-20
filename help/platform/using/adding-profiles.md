@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 新增用戶檔案
 description: 新增用戶檔案
-feature: 設定檔
-role: 業務從業人員
-level: 初學者
+feature: Profiles
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Campaign 20.3發行說明
 description: Campaign 20.3的發行說明
-feature: 概觀
-role: 業務從業人員
-level: 初學者
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt

@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 關於連接器
 description: 關於連接器
-feature: 概觀
-role: 業務從業人員，資料架構師
-level: 初學者
+feature: Overview
+role: Business Practitioner, Data Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

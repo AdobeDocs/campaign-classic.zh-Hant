@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard] 發行說明'
 description: Campaign Classic的發行說明 [!DNL Gold Standard]
-feature: 概覽
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e

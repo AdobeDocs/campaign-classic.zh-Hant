@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 關於設定檔
 description: 關於設定檔
-feature: 個人檔案、觀眾
+feature: Profiles, Audiences
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae

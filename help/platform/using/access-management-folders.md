@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 管理對促銷活動資料夾的存取權
 description: 瞭解如何授與Campaign資料夾的存取權並建立檢視
-feature: 應用程式設定
-role: 業務從業人員、管理員
-level: 初學者
+feature: Application Settings
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt

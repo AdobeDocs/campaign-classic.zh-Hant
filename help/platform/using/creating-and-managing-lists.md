@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 建立和管理清單
 description: 瞭解如何建立和管理清單
-feature: 設定檔
-role: 業務從業人員
-level: 初學者
+feature: Profiles
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt

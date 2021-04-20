@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 開始使用權限
 description: 瞭解如何授與Campaign功能的存取權
-feature: 存取管理
-role: 業務從業人員、管理員
-level: 初學者
+feature: Access Management
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

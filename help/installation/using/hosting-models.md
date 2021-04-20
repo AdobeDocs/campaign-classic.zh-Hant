@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 託管模型
 description: Discover Campaign代管模型
-feature: 概觀
-role: 架構師
-level: 初學者
+feature: Overview
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt

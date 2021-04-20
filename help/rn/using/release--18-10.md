@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Campaign 18.10發行說明
 description: Campaign 18.10的發行說明
-feature: 概覽
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb

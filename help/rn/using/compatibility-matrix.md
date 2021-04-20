@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Campaign Classic相容性矩陣
 description: Campaign Classic 相容性矩陣
-feature: 概觀
-role: 業務從業人員
-level: 初學者
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt

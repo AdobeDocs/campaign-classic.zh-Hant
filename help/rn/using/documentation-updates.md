@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic 文件更新
 description: 本頁列出了 Adobe Campaign Classic 文件中的所有新功能和更新
-feature: 概覽
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91

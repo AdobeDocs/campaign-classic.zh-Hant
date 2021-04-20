@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 開始升級
 description: 瞭解更多 Campaign Classic 升級
-feature: 概觀
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
