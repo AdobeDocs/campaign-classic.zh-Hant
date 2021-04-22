@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
+source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 96%
+source-wordcount: '2519'
+ht-degree: 97%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 96%
    + [Technotes](technotes/technote.md)
    + [iOS 憑證更新](technotes/ios-certificate-update.md)
    + [Campaign 設定更新](technotes/acc-config-updates.md)
+   + [追蹤的URL更新](technotes/tracked-urls.md)
 + 開始使用{#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
@@ -394,10 +395,10 @@ ht-degree: 96%
       + [設定自訂實施的事件](integrations/using/events.md)
       + [管線監視](integrations/using/pipeline-monitoring.md)
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform源和目標{#aep-sources-destinations}
+   + Adobe Experience Platform 來源和目標{#aep-sources-destinations}
       + [開始使用來源和目標](integrations/using/get-started-sources-destinations.md)
-      + [將Adobe Experience Platform觀眾收錄至Campaign](integrations/using/ingest-aep-data.md)
-      + [將資料從Campaign匯出至Adobe Experience Platform](integrations/using/export-campaign-data.md)
+      + [將Adobe Experience Platform 閱聽眾獲取至 Campaign](integrations/using/ingest-aep-data.md)
+      + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流程自動化{#automating-with-workflows}
    + 開始使用工作流程 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
