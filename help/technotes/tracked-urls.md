@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 5b552afa784b479853335daf13eb02e5e069eb4d
+source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 在最近的變更後，當URL簽名在促銷活動中作用時，追蹤的URL可能會失敗。 有些郵箱受到的影響比其他郵箱大，因為有些公司有特定的安全工具，這些工具可能會影響連結並更改URL簽名機制。
 
-因此，Adobe建議您停用追蹤連結的簽名機制。 此程式將修正舊的追蹤連結，除了以雙重逸出方式接收的連結。
+因此，Adobe建議您停用追蹤連結的簽名機制。 此程式會修正舊的追蹤連結，除了以雙重逸出方式接收的連結。
 
 請注意，取消訂閱連結可能會像其他連結一樣失敗，頻率是從主機到主機的變數，但小於1%。
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 如果您的環境在下列其中一個版本上執行，您可能會受到影響：
 
 * 金標7比11 [了解更多](../rn/using/gold-standard.md)
-* Campaign 21.1.1和21.1.2版本。 [了解更多](../rn/using/latest-release.md)
+* Campaign 21.1.1至21.1.2版。 [了解更多](../rn/using/latest-release.md)
 * Campaign 20.3.1到20.3.3版本。 [了解更多](../rn/using/release--20-3.md)
 * Campaign 20.2.1到20.2.3版本。 [了解更多](../rn/using/release--20-2.md)
 * Campaign 20.1.1到21.1.3版本。 [了解更多](../rn/using/release--20-1.md)
@@ -60,7 +60,7 @@ ht-degree: 6%
 
 **影響是什麼？**
 
-維護作業最長需要25分鐘的停機時間，在此期間，所有傳送、追蹤連結和API呼叫將無法運作。
+維護作業最長需要25分鐘的停機時間，在此期間，所有傳送、追蹤連結和API呼叫都無法運作。
 
 更新完成後，所有連結都會如預期般運作。
 
