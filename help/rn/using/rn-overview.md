@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: 開始升級
 description: 瞭解更多 Campaign Classic 升級
-feature: Overview
+feature: 概觀
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 93%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後&#x200B;**一個 GA 版本** : [[!DNL Gold Standard]  11 版本](../../rn/using/gold-standard.md) 及[ Campaign 20.2.5 版本](../../rn/using/release--20-2.md)
+最後&#x200B;**一個 GA 建置版本** : [[!DNL Gold Standard]  第 11 發行版本](../../rn/using/gold-standard.md)及[ Campaign 20.2.5 版本](../../rn/using/release--20-2.md)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
@@ -51,14 +51,14 @@ ht-degree: 93%
 
 身為託管客戶（管理的服務或混合），您需要與客戶服務團隊聯絡，以升級您的環境。
 
-身為內部部署使用者，您可以進行升級。為此，您需要[下載最新的穩定版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html)並升級所有環境。瞭解更多[升級流程](../../production/using/build-upgrade.md)，並參閱[版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+身為內部部署使用者，您可以進行升級。為此，您需要[下載最新的穩定版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)並升級所有環境。瞭解更多[升級流程](../../production/using/build-upgrade.md)，並參閱[版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-身為代管[!DNL Gold Standard]使用者，您將自動受益於使用[最新GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11)的[!DNL Gold Standard]升級，而不需採取任何動作。 [進一步瞭解](../../rn/using/gs-overview.md)。
+作為託管 [!DNL Gold Standard] 使用者，您無需採取任何操作，便可自動透過 [!DNL Gold Standard] 升級與 [最新的 GA [!DNL Gold Standard] 建置](../../rn/using/gold-standard.md#gs-11)受益。[了解更多](../../rn/using/gs-overview.md)。
 
 >[!NOTE]
->[!DNL Gold Standard]的相容性矩陣在[GA相容性矩陣](../../rn/using/compatibility-matrix-gs.md)中可用。
+>在[ GA 相容性矩陣](../../rn/using/compatibility-matrix-gs.md)中提供 [!DNL Gold Standard] 相容性矩陣。
 
 ## 支援和其他有效連結{#support}
 
