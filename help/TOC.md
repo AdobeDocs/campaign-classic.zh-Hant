@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
 source-wordcount: '2519'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 97%
 + 發行說明{#release-notes}
    + [開始升級](rn/using/rn-overview.md)
    + [最新發行版本](rn/using/latest-release.md)
-   + [!DNL Gold Standard] 發行  {#gs-release}
-      + [什麼是 [!DNL Gold Standard]](rn/using/gs-overview.md)
+   + [!DNL Gold Standard] 發行版本{#gs-release}
+      + [什麼是  [!DNL Gold Standard]](rn/using/gs-overview.md)
       + [[!DNL Gold Standard] 發行說明](rn/using/gold-standard.md)
       + [[!DNL Gold Standard] 相容性矩陣](rn/using/compatibility-matrix-gs.md)
    + 先前版本{#previous-releases}
@@ -49,7 +49,7 @@ ht-degree: 97%
       + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign 工作區{#campaign-workspace}
          + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
-         + [使用促銷活動檔案總管](platform/using/adobe-campaign-explorer.md)
+         + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [瀏覽及自訂清單](platform/using/adobe-campaign-ui-lists.md)
       + 常見問題集 {#faq}
          + [最常見的問題](platform/using/common-questions.md)
@@ -115,7 +115,7 @@ ht-degree: 97%
       + CRM 連接器{#crm-connectors}
          + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
          + [與 Microsoft Dynamics 365 連接](platform/using/crm-ms-dynamics.md)
-         + [與Salesforce.com連線](platform/using/crm-sfdc.md)
+         + [與 Salesforce.com 連線](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector.md)
    + [說明與支援選項](support.md)
@@ -147,8 +147,8 @@ ht-degree: 97%
          + [在日文的行動裝置上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [附加檔案](delivery/using/attaching-files.md)
    + 傳送 SMS {#sending-messages-on-mobiles}
-      + [開始使用SMS](delivery/using/sms-channel.md)
-      + [設定SMS頻道](delivery/using/sms-set-up.md)
+      + [開始使用簡訊](delivery/using/sms-channel.md)
+      + [設定簡訊頻道](delivery/using/sms-set-up.md)
       + [建立簡訊](delivery/using/sms-create.md)
       + [傳送及追蹤簡訊](delivery/using/sms-send.md)
       + [SMS 連接器通訊協定及設定](delivery/using/sms-protocol.md)
@@ -156,7 +156,7 @@ ht-degree: 97%
       + [遷移到擴展的通用 SMPP 連接器](delivery/using/unsupported-connector-migration.md)
    + [傳送 LINE 訊息](delivery/using/line-channel.md)
    + 傳送推送通知 {#sending-push-notifications}
-      + [行動應用程式頻道快速入門](delivery/using/about-mobile-app-channel.md)
+      + [開始使用行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
       + [將 Campaign SDK 整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 設定行動應用程式{#configure-the-mobile-app}
          + [開始使用應用程式配置](delivery/using/get-started-app-config.md)
@@ -214,7 +214,7 @@ ht-degree: 97%
       + [傳遞疑難排解](delivery/using/delivery-troubleshooting.md)
       + [傳遞狀態](delivery/using/delivery-statuses.md)
       + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
-      + [在 ISP 中斷後更新彈出資格](delivery/using/update-bounce-qualification.md)
+      + [在 ISP 中斷後更新跳出資格](delivery/using/update-bounce-qualification.md)
       + [瞭解隔離管理](delivery/using/understanding-quarantine-management.md)
    + 追蹤訊息 {#tracking-messages}
       + [關於訊息追蹤](delivery/using/about-message-tracking.md)
@@ -629,7 +629,7 @@ ht-degree: 97%
       + [企業部署](installation/using/enterprise-deployment.md)
       + [中間來源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 與 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 安全性和隱私權設定{#security-privacy}
+   + 安全性與隱私權設定{#security-privacy}
       + [開始使用安全性和隱私權](installation/using/get-started-security-privacy.md)
       + [個人化與隱私](installation/using/privacy.md)
       + [安全的存取管理](installation/using/access-management.md)
@@ -663,12 +663,12 @@ ht-degree: 97%
    + 設定 Campaign{#additional-configurations}
       + [Campaign 伺服器設定](installation/using/configuring-campaign-server.md)
       + [定義安全區](installation/using/security-zones.md)
-      + [設定URL權限](installation/using/url-permissions.md)
+      + [設定 URL 權限](installation/using/url-permissions.md)
       + [檔案與資源](installation/using/file-res-management.md)
-      + [配置Tomcat](installation/using/configure-tomcat.md)
+      + [設定 Tomcat](installation/using/configure-tomcat.md)
       + [設定傳送設定](installation/using/configure-delivery-settings.md)
       + [技術電子郵件設定](installation/using/email-deliverability.md)
-      + [搭配使用MX伺服器與Campaign](installation/using/using-mx-servers.md)
+      + [以 Campaign 使用 MX 伺服器](installation/using/using-mx-servers.md)
       + [設定電子郵件密件副本](installation/using/email-archiving.md)
       + [設定 SpamAssassin](installation/using/configuring-spamassassin.md)
    + 連結 Campaign{#connect-to-campaign}
