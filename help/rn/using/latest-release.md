@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 最新版本
 description: 最新的 Campaign Classic 發行說明
-feature: Overview
+feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->促銷活動&#x200B;**一般可用性(GA)組建**&#x200B;包括：[[!DNL Gold Standard] 11版](../../rn/using/gold-standard.md#gs-11)和[Campaign 20.2.5版](../../rn/using/release--20-2.md)。
+>Campaign **一般可用性 (GA) 版本**&#x200B;包括：[[!DNL Gold Standard] 11 版本](../../rn/using/gold-standard.md#gs-11)和[Campaign 20.2.5 版本](../../rn/using/release--20-2.md)。
 
-## ![](assets/do-not-localize/blue_2.png) 發行版本 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/blue_2.png) 發行版本 21.1.2 - 版本 9282 {#release-21-1-2-build-9282}
 
 _2021年4月15日_
 
 * 密碼管理已改善，以最佳化安全性。
 * 修正可能導致MTA當機的問題。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
+## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.1 - 版本 9277 {#release-21-1-1-build-9277}
 
 _2021 年 2 月 22 日_
 
