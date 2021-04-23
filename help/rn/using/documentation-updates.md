@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic 文件更新
 description: 本頁列出了 Adobe Campaign Classic 文件中的所有新功能和更新
-feature: Overview
+feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
 source-wordcount: '4304'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 97%
 
 ## 2021 年 3 月 {#march-2021}
 
-[開始使用SMS區段](../../delivery/using/sms-channel.md)已重新整理並改進。 您現在可以學習如何在專用區域中[配置SMS頻道](../../delivery/using/sms-set-up.md)、[建立SMS](../../delivery/using/sms-create.md)、[傳送及追蹤SMS](../../delivery/using/sms-send.md)。
+[開始使用簡訊章節](../../delivery/using/sms-channel.md)已重新整理並改善。 您現在可以在專屬章節中學習如何[設定簡訊頻道](../../delivery/using/sms-set-up.md)、[建立簡訊](../../delivery/using/sms-create.md)、[傳送及追蹤簡訊](../../delivery/using/sms-send.md)。
 
-Campaign Classic的「說明與支援選項」頁面已整合至核心檔案。 [顯示全文](../../support.md)
+Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。 [顯示全文](../../support.md)
 
 新增了一個新的部分，其中包含最佳實務，以及有關安全性和隱私權要執行的檢查。[顯示全文](../../installation/using/get-started-security-privacy.md)
 
@@ -138,7 +138,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 更新「已棄用和已移除的功能」頁面。[顯示全文](../../rn/using/deprecated-features.md)
 
-[!DNL Gold Standard]版本的發行說明和相容性矩陣現在可在專用章節中取得。
+專屬章節現在提供了 [!DNL Gold Standard] 發行版本的發行說明和相容性矩陣。
 [顯示全文](../../rn/using/gold-standard.md#gs-11)。
 
 已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器驗證，並將其移動至 Adobe I/O。[閱讀更多資訊](../../integrations/using/configuring-adobe-io.md)
@@ -214,7 +214,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已將有關如何使用增量查詢以自動更新清單的使用案例新增至工作流使用案例中。[顯示全文](../../workflow/using/about-workflow-use-cases.md)
 
-已重新整理[發行說明](../../rn/using/latest-release.md)：已新增[概述頁面](../../rn/using/latest-release.md)，其中包含有關建置狀態、升級流程、建議和重要連結資訊。此外，也同樣新增 [[!DNL Gold Standard]  發行版本](../../rn/using/gold-standard.md)專用頁面，並整合[相容性矩陣](../../rn/using/compatibility-matrix.md)。
+已重新整理[發行說明](../../rn/using/latest-release.md)：已新增[概述頁面](../../rn/using/latest-release.md)，其中包含有關建置狀態、升級流程、建議和重要連結資訊。此外，也新增了 [[!DNL Gold Standard]  發行版本](../../rn/using/gold-standard.md)專屬頁面，並整合[相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
 新增了與 Campaign Classic 監視相關的准則。[顯示全文](../../production/using/monitoring-guidelines.md)
 
@@ -274,7 +274,7 @@ Campaign 網路端點已移至此[章節](../../installation/using/campaign-netw
 
 移動並改善「傳遞能力疑難排解」章節。[顯示全文](../../delivery/using/deliverability-faq.md)
 
-已增強啟動新平台時的可傳遞性准則。 [顯示全文](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
+改善啟動新平台時的傳遞能力指南內容。[顯示全文](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant#transition-process)
 
 移動並更新「傳送含附件的交易式電子郵件」章節。[顯示全文](../../message-center/using/transactional-email-with-attachments.md)
 
