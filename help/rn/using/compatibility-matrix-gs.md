@@ -2,16 +2,16 @@
 solution: Campaign Classic
 product: campaign
 title: Campaign 相容性矩陣 [!DNL Gold Standard]
-description: ' [!DNL Gold Standard] 版本的Campaign Classic相容性表'
-feature: Overview
+description: ' [!DNL Gold Standard] 版本的 Campaign Classic 相容性矩陣'
+feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>。</p>
@@ -221,10 +221,10 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -277,8 +277,8 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
