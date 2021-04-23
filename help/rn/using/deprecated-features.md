@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Campaign Classic 已棄用和移除的功能
 description: 本頁列出 Adobe Campaign Classic 已過時和已移除的功能
-feature: Overview
+feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 01daff5d95f4635182041b949a21c80cae5e4473
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1713'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
     <tr>
   <td>技術傳遞能力監視報告<br></td>
    <td><p>從 Campaign 21.1 版開始，技術傳遞能力監視報告已棄用。</p>
-   <p>如有需要，您可以每天透過電子郵件收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報告的執行個體名稱和電子郵件地址。</p> 
+   <p>如有需要，您可以每天透過電子郵件收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報告的執行個體名稱和電子郵件地址。</p> 
    <p>Adobe 建議您與傳遞能力團隊合作，以定義最佳工具來監視執行個體的傳遞能力效能。</p>
   <p><em>目標移除日期：2021 年底</em></p>
   </td>
@@ -61,28 +61,28 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <li>Web API – Microsoft Dynamics CRM 線上：2016、2016 更新 1</li>
    <li>Oracle On Demand API</li>
    </ul>
-  <p><em>目標刪除日期：2021年5月</em></p>
+  <p><em>目標移除日期：2021 年 5 月</em></p>
   </td>
  </tr>
   <tr>
   <td>舊的 iOS 二進位<br></td>
   <td><p>自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。<p>
   <p> 如果您使用此連接器，則需要據此調整實施。<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html">進一步瞭解</a></p>
-  <p><em>目標刪除日期：2021年5月</em></p>
+  <p><em>目標移除日期：2021 年 5 月</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex 網域<br></td>
   <td><p> 自 Campaign 第 20.3 發行版本開始，已棄用使用於匯入和匯出受眾至 Adobe Experience Cloud 的 Demdex 網域。<p>
   <p>如果您使用 Demdex 網域作為匯入/匯出的外部帳戶，則需要依此調整實施。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">進一步瞭解</a></p> 
-  <p><em>目標刪除日期：2021年5月</em></p>
+  <p><em>目標移除日期：2021 年 5 月</em></p>
   </td>
   <tr>
   <td>OAuth 驗證（OAuth 和 JWT）<br></td>
   <td><p> 自 Campaign 第 20.3發行版本開始，已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至 Adobe I/O。 <p>
   <p>如果您使用觸發器整合，則需要據此調整實施。<a href="../../integrations/using/configuring-adobe-io.md">進一步瞭解</a></p> 
   <p>如需與 OAuth 驗證折舊相關的資訊，請參閱第 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md"> 頁</a></p> 
-  <p><em>目標刪除日期：2021年11月</em></p>
+  <p><em>目標移除日期：2021 年 11 月</em></p>
   </td>
   </tr>
   <td>SMS 連接器<br></td>
@@ -97,14 +97,14 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    </ul>
   <p>如果您使用其中一個連接器，則需要據此調整實施。<a href="../../delivery/using/sms-channel.md">瞭解更多</a></p> 
   <p>閱讀此<a href="../../delivery/using/unsupported-connector-migration.md">技術文件</a>，瞭解如何遷移舊連接器。</p>
-  <p><em>目標刪除日期：2021年5月</em></p>
+  <p><em>目標移除日期：2021 年 5 月</em></p>
   </td> 
  </tr>
   <tr>  
    <td>傳真頻道<br></td>
    <td><p>傳真頻道自 Campaign 20.2 發行版本開始不再使用。</p> 
    <p>如果您使用此頻道，則需要據此調整實施。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">瞭解更多</a> Campaign 頻道。</p>
-   <p><em>目標刪除日期：2021年5月</em></p></td>
+   <p><em>目標移除日期：2021 年 5 月</em></p></td>
   </tr>
  </tbody> 
 </table>
