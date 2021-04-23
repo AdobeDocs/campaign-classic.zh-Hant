@@ -6,14 +6,14 @@ description: 進一步瞭解隱私權管理
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
-workflow-type: tm+mt
+exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
-
 
 # 隱私權管理 {#privacy-management}
 
@@ -28,7 +28,7 @@ Adobe Campaign 提供一套工具，以協助您遵守[隱私權法規](#privacy
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-有關詳細資訊，請參閱[訪問權和被遺忘權](#right-access-forgotten)和[同意、保留和角色](#consent-retention-roles)。
+有關詳細資訊，請參閱[存取權限和被遺忘的權利](#right-access-forgotten)和[同意、保留和角色](#consent-retention-roles)。
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
@@ -80,9 +80,9 @@ Adobe Campaign 自始至終都採用有助於管理同意部分的功能。透�
 
 ![](assets/privacy-consent-management.png)
 
-有關「許可管理」的詳細資訊，請參閱[詳細說明文檔](../../delivery/using/managing-subscriptions.md)。
+有關「同意管理」的詳細資訊，請參閱[詳細說明文件](../../delivery/using/managing-subscriptions.md)。
 
-除了 Adobe Campaign 提供的同意管理工具以外，您還可以追蹤消費者是否選擇退出個人資訊銷售。請參閱[本區段](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa)。
+除了 Adobe Campaign 提供的同意管理工具以外，您還可以追蹤消費者是否選擇退出個人資訊銷售。請參閱[本節](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa)。
 
 ### 資料保留 {#data-retention}
 
@@ -90,17 +90,17 @@ Adobe Campaign 自始至終都採用有助於管理同意部分的功能。透�
 
 以下是內建表格的預設保留值。請注意，保留設定是由 Adobe 技術管理員在實施期間所設定，每個實作的值可能會因客戶需求而有所不同。
 
-* **整合追蹤**:1年
-* **傳送記錄**：6 個月
-* **追蹤記錄**:1年
-* **已刪除傳送**:1週
-* **匯入拒絕**:6個月
-* **訪客資料**:1個月
-* **提供的建議**:1年
+* **整合追蹤**：1 年
+* **傳遞記錄**：6 個月
+* **追蹤記錄**：1 年
+* **已刪除傳遞**：1 週
+* **匯入拒絕**：6 個月
+* **訪客設定檔**：1 個月
+* **優惠方案主張**：1 年
 * **事件**：1 個月
-* **事件處理統計資料**:1年
-* **封存事件**:1年
-* **忽略的管線事件**:1個月
+* **事件處理統計資料**：1 個月
+* **已封存事件**：1 年
+* **忽略的管線事件**：1 個月
 
 與刪除類似，使用標準工作流程功能，即可設定任何自訂表格的保留期間。
 
@@ -116,4 +116,4 @@ Adobe Campaign 可讓您透過不同的預先建立或自訂角色，管理指�
 
 ![](assets/privacy-user-management.png)
 
-有關訪問管理的詳細資訊，請參閱[詳細文檔](../../platform/using/access-management.md)。
+有關「存取管理」的詳細資訊，請參閱[詳細文件](../../platform/using/access-management.md)。
