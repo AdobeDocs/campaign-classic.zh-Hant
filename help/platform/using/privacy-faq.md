@@ -6,14 +6,14 @@ description: 進一步瞭解隱私權與同意
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # 隱私權常見問答集{#privacy-faq}
 
@@ -32,7 +32,7 @@ ht-degree: 94%
 
 ## 隱私權法規準備{#privacy-regulations-readiness}
 
-### Adobe Campaign 對遵守最新的隱私權法規有何建議？
+### 對 Adobe Campaign 遵守最新隱私權法規有何建議？
 
 Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保他們採取一切必要步驟，以便做好 GDPR、CCPA、PDPA、LGPD 或任何其他適用法規的準備。
 
@@ -74,7 +74,7 @@ Adobe 不提供法律建議。您應該與自己的法律顧問合作，確保�
 
 有時甚至需要重新整理某些同意，才能繼續使用後續的資料。
 
-行銷人員應將這些增強的同意要求視為品牌參與度、忠誠度以及客戶滿意度與信任的真正指標。
+行銷人員應將這些改善的同意要求視為品牌參與度、忠誠度以及客戶滿意度與信任的真正指標。
 
 ## 管理同意{#manage-consent}
 
@@ -110,7 +110,7 @@ Adobe Campaign 中的報告是以根據來自傳送和追蹤記錄彙總資料�
 
 ## 再次選擇加入{#opt-in-again}
 
-### 資料主體(其資料已從Adobe Campaign清除)可以稍後再選擇加入嗎？
+### 資料已從 Adobe Campaign 中清除的資料主體，可以稍後再次選擇加入嗎？
 
 資料主體可能會再次選擇加入，或在其資料從 Adobe Campaign 中刪除後以新收件者身分新增。
 
