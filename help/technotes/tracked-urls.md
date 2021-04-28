@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
+source-git-commit: e1b09767a8eed3a7dc90e4db0429238d86d39570
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 6%
+source-wordcount: '355'
+ht-degree: 5%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 6%
 
 如果您的環境在下列其中一個版本上執行，您可能會受到影響：
 
-* 金標7比11 [了解更多](../rn/using/gold-standard.md)
-* Campaign 21.1.1至21.1.2版。 [了解更多](../rn/using/latest-release.md)
-* Campaign 20.3.1到20.3.3版本。 [了解更多](../rn/using/release--20-3.md)
-* Campaign 20.2.1到20.2.3版本。 [了解更多](../rn/using/release--20-2.md)
-* Campaign 20.1.1到21.1.3版本。 [了解更多](../rn/using/release--20-1.md)
-* Campaign 19.2.2到19.2.3版本。 [了解更多](../rn/using/release--19-2.md)
-* Campaign 19.1.5到19.1.7版。 [了解更多](../rn/using/release--19-1.md)
+* 金標8到11 [了解更多](../rn/using/gold-standard.md#gs-8)
+* Campaign 21.1.1(build 9277)到21.1.2(build 9282)版本。 [了解更多](../rn/using/latest-release.md)
+* Campaign 20.3.1(build 9228)到20.3.3(build 9234)版本。 [了解更多](../rn/using/release--20-3.md)
+* Campaign 20.2.1(build 9178)到20.2.3(build 9182)版本。 [了解更多](../rn/using/release--20-2.md)
+* Campaign 20.1.1(build 9122)到21.1.3(build 9124)版本。 [了解更多](../rn/using/release--20-1.md)
+* Campaign 19.2.2(build 9080)到19.2.3(build 9081)版本。 [了解更多](../rn/using/release--19-2.md)
+* Campaign 19.1.5(build 9033)到19.1.7(build 9036)版本。 [了解更多](../rn/using/release--19-1.md)
 
 瞭解如何在本節](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本[。
 
@@ -66,5 +66,5 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如對這些變更有任何疑問，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>如對這些變更有任何疑問，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
