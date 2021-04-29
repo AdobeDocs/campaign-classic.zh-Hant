@@ -7,11 +7,11 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 113a3535cd197f9b654fc1e50e20886e76ee886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1058'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 97%
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 第 11 發行版本{#gs-11}
 
-_2021年4月14日_
+_2021年 4 月 14 日_
 
-建置9032@d030c36包含下列修正：
+建置 9032@d030c36 包含以下修正：
 
-* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
+* 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
 
 **僅主控台升級為強制性。不需要升級伺服器。**
 
@@ -99,11 +99,11 @@ _2020 年 4 月 29 日_
 
 建置 9032@3a9dc9c 包含以下修正：
 
-* 改善了電子郵件中追蹤連結的安全性。依預設為所有客戶啟用此功能。另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+* 改善了電子郵件中追蹤連結的安全性。依預設為所有客戶啟用此功能。另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)。
 
 >[!CAUTION]
 >
->如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。[本頁面](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
+>如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。[本頁面](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
 
 * 修正了無法在 Line 傳遞顯示影像的問題。(NEO-23207)
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
