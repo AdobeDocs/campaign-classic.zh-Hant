@@ -8,11 +8,11 @@ user-guide-description: 設計、規劃、執行、管理和最佳化可提供�
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2519'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 99%
    + [Technotes](technotes/technote.md)
    + [iOS 憑證更新](technotes/ios-certificate-update.md)
    + [Campaign 設定更新](technotes/acc-config-updates.md)
-   + [追蹤的URL更新](technotes/tracked-urls.md)
+   + [追蹤的 URL 更新](technotes/tracked-urls.md)
 + 開始使用{#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
