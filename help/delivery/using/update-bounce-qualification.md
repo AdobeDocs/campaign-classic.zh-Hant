@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
+source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,14 @@ ht-degree: 4%
 
 如果ISP中斷，透過Campaign傳送的電子郵件無法成功傳送給其收件者：這些電子郵件會被錯誤地標示為彈回。
 
-2021年4月26日，Apple發生全域問題，導致傳送至有效Apple電子郵件地址的部分電子郵件訊息，由於Apple伺服器無效的電子郵件地址遭到錯誤硬性反彈，並出現反彈後回應：*&quot;550 5.1.1 <email address>:使用者查閱成功，但找不到使用者記錄。」*此問題發生在東部時間4/26，持續時間為上午7點至下午1點。
+2021年4月26日，Apple發生全域問題，導致傳送至有效Apple電子郵件地址的部分電子郵件訊息，由於Apple伺服器無效的電子郵件地址遭到錯誤硬性反彈，並出現反彈後回應：
+
+
+```
+“550 5.1.1 <email address>: user lookup success but no user record found.”
+```
+
+此問題發生在東部時間4/26，持續時間為上午7點至下午1點。
 
 >[!NOTE]
 >
@@ -44,7 +51,7 @@ ht-degree: 4%
 
 * 對於隔離清單&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中具有SMTP彈迴響應資訊的促銷活動實例：
 
-   * **錯誤文字（隔離文字）** 包含「使用者查閱成功但找不到使用者記錄」，而 **錯誤文字（隔離文字）** 包含「support.apple.com」 **
+   * **錯誤文字（隔離文字）** 包含「使用者查閱成功但找不到使用者記錄」，而 **錯誤文字（隔離文字）** 包含「support.apple.com」
    * **更新狀態(@lastModified)** 於4/26/2021 07:00:00 AM或之後
    * **更新狀態(@lastModified)** 於4/26/2021 01:00:00 PM或之前
 
