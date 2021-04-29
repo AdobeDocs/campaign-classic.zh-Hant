@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -24,11 +24,11 @@ ht-degree: 3%
 
 此問題發生在東部時間4/26，持續時間為上午7點至下午1點。
 
-如果ISP中斷，透過Campaign傳送的電子郵件無法成功傳送給其收件者：這些電子郵件會被錯誤地標示為彈回。
-
 >[!NOTE]
 >
 >您可以在[此頁面](https://www.apple.com/support/systemstatus/)上檢查Apple System Status Dashboard。
+
+如果ISP中斷，透過Campaign傳送的電子郵件無法成功傳送給其收件者：這些電子郵件會被錯誤地標示為彈回。
 
 根據標準彈回數處理邏輯，Adobe Campaign會自動將這些收件者加入隔離清單，並設定&#x200B;**[!UICONTROL Quarantine]**。 **[!UICONTROL Status]**&#x200B;若要修正此問題，您必須尋找並移除這些收件者，或將其&#x200B;**[!UICONTROL Status]**&#x200B;變更為&#x200B;**[!UICONTROL Valid]**，以便每日清除工作流程移除這些收件者，以更新Campaign中的隔離表格。
 
