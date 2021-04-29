@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
+source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 內容
 
-2021年4月26日，Apple發生全域問題，導致傳送至有效Apple電子郵件地址的部分電子郵件訊息，由於Apple伺服器無效的電子郵件地址遭到錯誤硬性反彈，並出現反彈後回應： &quot;550 5.1.1 <email address>:使用者查閱成功，但找不到使用者記錄。」
+2021年4月26日，Apple發生全域問題，導致傳送至有效Apple電子郵件地址的部分電子郵件訊息，由於Apple伺服器無效的電子郵件地址遭到錯誤硬性反彈，並出現反彈後回應： &quot;550 5.1.1 &#39;電子郵件地址&#39;:使用者查閱成功，但找不到使用者記錄。」
 
 此問題發生在東部時間4/26，持續時間為上午7點至下午1點。
 
