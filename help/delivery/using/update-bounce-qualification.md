@@ -9,27 +9,22 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
+source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 4%
+source-wordcount: '425'
+ht-degree: 3%
 
 ---
 
-# 在 ISP 中斷後更新跳出資格 {#update-bounce-qualification.md}
+# 在Apple中斷{#update-bounce-qualification.md}後更新不正確的硬彈回數
 
 ## 內容
 
-如果ISP中斷，透過Campaign傳送的電子郵件無法成功傳送給其收件者：這些電子郵件會被錯誤地標示為彈回。
-
-2021年4月26日，Apple發生全域問題，導致傳送至有效Apple電子郵件地址的部分電子郵件訊息，由於Apple伺服器無效的電子郵件地址遭到錯誤硬性反彈，並出現反彈後回應：
-
-
-```
-“550 5.1.1 <email address>: user lookup success but no user record found.”
-```
+2021年4月26日，Apple發生全域問題，導致傳送至有效Apple電子郵件地址的部分電子郵件訊息，由於Apple伺服器無效的電子郵件地址遭到錯誤硬性反彈，並出現反彈後回應： &quot;550 5.1.1 <email address>:使用者查閱成功，但找不到使用者記錄。」
 
 此問題發生在東部時間4/26，持續時間為上午7點至下午1點。
+
+如果ISP中斷，透過Campaign傳送的電子郵件無法成功傳送給其收件者：這些電子郵件會被錯誤地標示為彈回。
 
 >[!NOTE]
 >
