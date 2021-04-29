@@ -5,7 +5,7 @@ product: campaign
 title: Adobe Campaign Classic 產品文件
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: bd6f77606517a0d3ceaa3c2b398733521af3ae43
+source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 51%
@@ -18,13 +18,13 @@ ht-degree: 51%
 
 ## 新增功能
 
+* **[移除不正確的硬](https://helpx.adobe.com/tw/campaign/kb/update-bounce-qualification.html)**<br/> 體彈回數瞭解如何在Apple中斷後更新不正確的硬體彈回數
+
 * **[更新您的APN證](technotes/ios-certificate-update.md)**<br/> 書自2021年3月29日起，APN更新影響了Campaign iOS渠道。您需要更新您的設定，以避免iOS推播頻道中斷。
 
 * **[透過IMS/Adobe ID連線？升級至最新組建版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至** 2021年6月30日後能夠連線至Campaign。**
 
 * **[保護您的促銷活](technotes/acc-config-updates.md)**<br/> 動例項更新至最新建置，以保護您的促銷活動平台。
-
-* **[移除不正確的硬](https://helpx.adobe.com/tw/campaign/kb/update-bounce-qualification.html)**<br/> 體彈回數瞭解如何在Gmail中斷後更新不正確的硬體彈回數
 
 * **[更新您的Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 整合舊版Auth驗證服務已到期。瞭解如何移轉至Adobe I/O。
 
