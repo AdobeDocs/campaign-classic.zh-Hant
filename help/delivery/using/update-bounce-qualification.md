@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
+source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -53,7 +53,7 @@ ht-degree: 3%
 * 對於隔離清單&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中包含入站電子郵件規則資訊的促銷活動實例：
 
    * **錯誤文字（隔離文字）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
-   * **電子郵件網域(@domain)** 等於icloud.com&quot; OR Email domain(@domain)等於me.com&quot; OR Email domain(@domain)等於mac.com&quot;
+   * **電子郵件網域(@domain)** 等於icloud.com OR  **Email domain(@domain)** 等於me.com OR  **Email domain(@domain)** 等於mac.com
    * **更新狀態(@lastModified)** 於4/26/2021 07:00:00 AM或之後
    * **更新狀態(@lastModified)** 於4/26/2021 01:00:00 PM或之前
 
