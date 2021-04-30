@@ -8,18 +8,18 @@ content-type: reference
 topic-tags: connectors
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: 3e3a5250f165677026557a4e2249fc683aa23d57
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-# Connect Campaign和Microsoft Dynamics 365{#connect-to-msdyn}
+# Connect Campaign和Salesforce.com{#connect-to-sfdc}
 
 在本頁中，您將學習如何將Campaign Classic連接至&#x200B;**Salesforce**。
 
-資料同步通過專用的工作流活動執行。 [進一步瞭解](../../platform/using/crm-data-sync.md)。
+資料同步通過專用的工作流活動執行。 [了解更多](../../platform/using/crm-data-sync.md)。
 
 
 外部帳戶可讓您將Salesforce資料匯入並匯出至Adobe Campaign。
