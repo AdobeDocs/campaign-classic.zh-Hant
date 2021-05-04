@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: e1b09767a8eed3a7dc90e4db0429238d86d39570
+source-git-commit: 51773f48bac90febe44c6796b8cc08fce072bab3
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 * 金標8到11 [了解更多](../rn/using/gold-standard.md#gs-8)
 * Campaign 21.1.1(build 9277)到21.1.2(build 9282)版本。 [了解更多](../rn/using/latest-release.md)
 * Campaign 20.3.1(build 9228)到20.3.3(build 9234)版本。 [了解更多](../rn/using/release--20-3.md)
-* Campaign 20.2.1(build 9178)到20.2.3(build 9182)版本。 [了解更多](../rn/using/release--20-2.md)
+* Campaign 20.2.1(build 9178)到20.2.4(build 9187)版本。 [了解更多](../rn/using/release--20-2.md)
 * Campaign 20.1.1(build 9122)到21.1.3(build 9124)版本。 [了解更多](../rn/using/release--20-1.md)
 * Campaign 19.2.2(build 9080)到19.2.3(build 9081)版本。 [了解更多](../rn/using/release--19-2.md)
 * Campaign 19.1.5(build 9033)到19.1.7(build 9036)版本。 [了解更多](../rn/using/release--19-1.md)
