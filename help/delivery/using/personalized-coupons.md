@@ -6,14 +6,14 @@ description: 個人化優惠券
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
+exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
 
 ---
-
 
 # 個人化優惠券{#personalized-coupons}
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
       ![](assets/deliv_coup_11.png)
 
-      抵用券會以程式碼的形式插入訊息中，而非您指派的名稱。 代碼用於促銷活動標準資料模型中。
+      抵用券會以程式碼的形式插入訊息中，而非您指派的名稱。 代碼用於促銷活動Otb資料模型中。
    ![](assets/deliv_coup_12.png)
 
 1. 執行測試以確認您指派給抵用券的名稱。 轉到&#x200B;**[!UICONTROL Preview]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Test personalization]**。 選擇測試的收件者。
