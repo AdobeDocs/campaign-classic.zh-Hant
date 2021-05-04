@@ -5,14 +5,14 @@ title: 追蹤及監控訊息
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 translation-type: tm+mt
-source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '430'
 ht-degree: 3%
 
 ---
-
 
 # 追蹤和監視 {#track-and-monitor}
 
@@ -23,12 +23,12 @@ ht-degree: 3%
 若要控制您的促銷活動，您必須確保訊息確實已傳送給收件者。
 
 從「促銷活動傳送」控制面板，您可以檢查已處理的訊息和傳送稽核記錄。
-您也可以控制傳送記錄檔中訊息的狀態。 [進一步瞭解](../../delivery/using/about-delivery-monitoring.md)。
+您也可以控制傳送記錄檔中訊息的狀態。 [了解更多](../../delivery/using/about-delivery-monitoring.md)。
 
 如果傳送未傳送，且狀態仍為&#x200B;**待定**，該怎麼辦？
 
 * 執行進程正在等待某些資源的可用性。 MTA可能尚未啟動。
-檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [進一步瞭解](../../production/using/administration.md)。
+檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [了解更多](../../production/using/administration.md)。
 
 * 傳送可能使用傳送例項上未設定的相似性。
 提示：檢查流量管理（IP相似性）的設定。 有關詳細資訊，請參閱控制傳出SMTP通信。
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 ## 追蹤 {#tracking-deliveries}
 
-若要深入瞭解收件者的行為，您可以追蹤他們對遞送的反應：接收、開啟、點按連結、取消訂閱等。 在Campaign Classic中，此資訊會顯示在傳送所定位之收件者的「追蹤」標籤和傳送的「追蹤」標籤中。 在Campaign Standard中，它會顯示在傳送的「追蹤記錄檔」標籤中。
+若要深入瞭解收件者的行為，您可以追蹤他們對遞送的反應：接收、開啟、點按連結、取消訂閱等。 在Campaign Classic中，此資訊會顯示在傳送所定位之收件者的「追蹤」標籤和傳送的「追蹤」標籤中。
 
 **提示**:預設會啟用訊息追蹤。若要設定URL，請在傳送精靈的下方區段中選取「顯示URL」選項。 對於訊息的每個URL，您可以選擇是否啟用追蹤。
 
