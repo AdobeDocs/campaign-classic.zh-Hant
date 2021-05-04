@@ -6,22 +6,22 @@ description: 瞭解如何設定促銷活動選項
 audience: installation
 content-type: reference
 topic-tags: appendices
+exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
 
 ---
 
-
 # Campaign Classic 選項清單{#configuring-campaign-options}
 
-**[!UICONTROL Administration / Platform / Options]**&#x200B;節點可讓您設定Adobe Campaign選項。
+**[!UICONTROL Administration / Platform / Options]**&#x200B;節點允許您配置Adobe Campaign選項。
 
 >[!NOTE]
 >
->修改或更新Adobe Campaign選項只能由專家使用者執行。
+>修改或更新Adobe Campaign選項只能由專家用戶執行。
 
 其中一些是在安裝促銷活動時內建的，其他則可視需要手動新增。 可用選項會根據隨實例安裝的軟體包而有所不同。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
    <td><p> 可讓您在指定特定運算元或運算元群組以在傳送屬性中開始傳送時，允許負責傳送的運算元確認傳送。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入"0"。</p><p> 然後，傳送確認程式會依預設運作：只有為傳送屬性（或管理員）中指定的運算元或運算元群組才能確認並執行傳送。 請參閱<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">本節</a>。</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms:recipient)對話。<br /> 選項值必須與與匹配外部收件人表的方案名稱相對應。<br /> </td> 
+   <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全局變數與預設接收方資料庫(nms:recipient)對話。<br /> 選項值必須與與匹配外部收件人表的方案名稱相對應。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -156,7 +156,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
-   <td> 兩次重試電子郵件訊息的間隔（秒）。<br /> </td> 
+   <td> 兩次重試電子郵件的間隔（秒）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
@@ -283,11 +283,11 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> 在Adobe Campaign用戶端主控台中發佈的資源位置。 請參閱<a href="../../delivery/using/formatting.md#image-referencing">本節</a>。<br /> </td> 
+   <td> 在Adobe Campaign客戶端控制台中發佈的資源位置。 請參閱<a href="../../delivery/using/formatting.md#image-referencing">本節</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> 在Adobe Campaign用戶端主控台中預覽的資源位置。 請參閱<a href="../../delivery/using/formatting.md#image-referencing">本節</a>。<br /> </td> 
+   <td> 在Adobe Campaign客戶端控制台中預覽的資源位置。 請參閱<a href="../../delivery/using/formatting.md#image-referencing">本節</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -389,7 +389,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 安全性{#security}
+## 安全性 {#security}
 
 <table> 
  <thead> 
@@ -627,11 +627,11 @@ ht-degree: 0%
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> 要包含Adobe Campaign標準表資料的表空間的名稱。<br />請參 <a href="../../installation/using/creating-and-configuring-the-database.md">閱建立和配置資料庫</a>。</td> 
+   <td> 要包含Adobe Campaignootb表資料的表空間的名稱。<br />請參 <a href="../../installation/using/creating-and-configuring-the-database.md">閱建立和配置資料庫</a>。</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> 要包含Adobe Campaign標準表索引的表空間的名稱。<br />請參 <a href="../../installation/using/creating-and-configuring-the-database.md">閱建立和配置資料庫</a>。</td> 
+   <td> 要包含Adobe Campaignootb表索引的表空間的名稱。<br />請參 <a href="../../installation/using/creating-and-configuring-the-database.md">閱建立和配置資料庫</a>。</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
@@ -647,7 +647,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
-   <td> Adobe Campaign例項的時區。 請參閱<a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configuration</a>。<br /> </td> 
+   <td> Adobe Campaign實例的時區。 請參閱<a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configuration</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
@@ -712,11 +712,11 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> 可用於Adobe Campaign的AEM資源類型。 值必須以逗號分隔。<br /> </td> 
+   <td> 可用於AEMAdobe Campaign的資源類型。 值必須以逗號分隔。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> 可讓您設定Experience Cloud觸發器。 資料類型為「長文字」，且必須為JSON格式。 請參閱<a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何搭配Adobe Campaign Classic</a>使用Experience Cloud觸發器。<br /> </td> 
+   <td> 可讓您設定Experience Cloud觸發器。 資料類型為「長文字」，且必須為JSON格式。 請參閱<a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何搭配Adobe Campaign Classic使用Experience Cloud觸發器。<br /></a> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;&gt;_&lt;&gt;</span> <br /> </td> 
@@ -728,11 +728,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用於整合的Adobe Target伺服器。 預設已選取此選項。 此值與Adobe Target網域伺服器相對應，後面接著值/m2。 例如：tt.omtrdc.net/m2。<br /> 請參 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">閱本節</a>。<br /> </td> 
+   <td> Adobe Target伺服器用於整合。 預設已選取此選項。 此值與Adobe Target域伺服器相對應，後面跟著值/m2。 例如：tt.omtrdc.net/m2。<br /> 請參 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">閱本節</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target組織名稱。 此值與Adobe Target用戶端的名稱相對應。<br /> 請參 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">閱本節</a>。<br /> </td> 
+   <td> Adobe Target組織名稱。 此值與Adobe Target客戶機的名稱相對應。<br /> 請參 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">閱本節</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -953,7 +953,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
-   <td> 在Adobe Campaign中啟用自動建立運算子和權限。<br /> </td> 
+   <td> 啟用在Adobe Campaign自動建立運算子和權限。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span> <br /> </td> 
@@ -981,7 +981,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Rights</span> <br /> </td> 
-   <td> 啟用從LDAP目錄將授權和群組同步至Adobe Campaign中的命名權限。<br /> </td> 
+   <td> 啟用從LDAP目錄到Adobe Campaign命名權限的授權和組同步。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsAttr</span> <br /> </td> 
@@ -997,7 +997,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
-   <td> 運算式，從LDAP授權擷取Adobe Campaign權限的名稱。<br /> </td> 
+   <td> 用於從LDAP授權中提取Adobe Campaign權限名稱的表達式。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
@@ -1042,4 +1042,3 @@ ht-degree: 0%
   </tr> 
  </tbody> 
 </table>
-
