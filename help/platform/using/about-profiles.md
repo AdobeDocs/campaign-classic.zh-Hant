@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: 關於設定檔
 description: 關於設定檔
-feature: Profiles, Audiences
+feature: 個人檔案、觀眾
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 57%
+source-wordcount: '906'
+ht-degree: 59%
 
 ---
 
@@ -93,13 +93,7 @@ ht-degree: 57%
 
 作用中的描述檔計數僅適用於&#x200B;**行銷例項**。 它不適用於執行實例，即MID（中間採購）和RT（消息中心／即時消息）實例。
 
-如果您是AWS托管的，您也可以直接從控制面板監視實例上使用的活動配置檔案的數量。 有關詳細資訊，請參閱[控制面板文檔](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
-
->[!NOTE]
->
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
->
->請注意，您的實例必須裝載在AWS上，並使用最新的[Gold Standard](../../rn/using/gs-overview.md)組建版本或[最新的GA組建版本(21.1)](../../rn/using/latest-release.md)進行升級。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的版本。 要檢查您的實例是否托管在AWS上，請遵循本頁[中詳細介紹的步驟。](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)
+如果您是AWS托管的，您也可以直接從控制面板監視實例上使用的活動配置檔案的數量。 有關詳細資訊，請參閱[控制面板文檔](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 
 計費帳單僅會考慮&#x200B;**有效** 的用戶檔案。如果在過去 12 個月透過任何通路鎖定過用戶檔案或與其進行過通訊，那麼則該用戶檔案被視為有效。
 
@@ -109,7 +103,7 @@ ht-degree: 57%
 >
 >Facebook 和 Twitter 通路不包含在內。
 
-您可以從Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;菜單概述&#x200B;**[!UICONTROL Number of active profiles]**。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技術工作流](../../workflow/using/about-technical-workflows.md)執行，該工作流每天運行，並將新資料添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜單中當前時段的現有報告中。 每個期間均為 12 個月。
+您可以從促銷活動&#x200B;**[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;功能表概述&#x200B;**[!UICONTROL Number of active profiles]**。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技術工作流](../../workflow/using/about-technical-workflows.md)執行，該工作流每天運行，並將新資料添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜單中當前時段的現有報告中。 每個期間均為 12 個月。
 
 ## 教學課程影片{#create-profiles-video}
 
