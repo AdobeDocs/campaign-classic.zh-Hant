@@ -6,14 +6,14 @@ description: 瞭解如何使用Adobe Campaign Classic的AMP來定義互動式和
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
+exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
 
 ---
-
 
 # 定義互動式內容{#defining-interactive-content}
 
@@ -49,7 +49,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和／或純文字外，�
 ## 將AMP用於電子郵件的關鍵步驟與Adobe Campaign{#key-steps-to-use-amp}一起使用
 
 若要成功測試並傳送AMP電子郵件給Adobe Campaign，請遵循下列步驟：
-1. 安裝&#x200B;**[!UICONTROL AMP support]**&#x200B;軟體包。 請參閱[安裝促銷活動標準套件](../../installation/using/installing-campaign-standard-packages.md)。
+1. 安裝&#x200B;**[!UICONTROL AMP support]**&#x200B;軟體包。 請參閱[安裝促銷活動內建套件](../../installation/using/installing-campaign-standard-packages.md)。
 1. 在Adobe Campaign建立電子郵件並建立您的AMP內容。 請參閱[使用Adobe Campaign](#build-amp-email-content)建立AMP電子郵件內容。
 1. 請務必遵循支援AMP格式之電子郵件提供者的所有傳送要求。 請參閱[電子郵件傳送需求的AMP](#amp-for-email-delivery-requirements)。
 1. 定義目標時，請確定您選擇了能夠顯示AMP格式的收件者。 請參閱[定位AMP電子郵件](#targeting-amp-email)。
