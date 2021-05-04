@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 translation-type: tm+mt
-source-git-commit: 6768e9ac518ab0c5642241d1fd2086de5b1e6892
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '4010'
+source-wordcount: '4009'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Adobe Campaign系統極為靈活，可以擴展至最初的實施範圍之外。
 
 ## 資料模型體系結構{#data-model-architecture}
 
-Adobe Campaign Standard是功能強大的跨通道宣傳管理系統，可協助您調整線上和線下策略，以建立個人化客戶體驗。
+Adobe Campaign是功能強大的跨通道宣傳管理系統，可協助您調整線上和線下策略，以建立個人化客戶體驗。
 
 ### 以客戶為中心的方法{#customer-centric-approach}
 
