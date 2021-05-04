@@ -6,14 +6,14 @@ description: 監控工作流程執行
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 0%
 
 ---
-
 
 # 監控工作流程執行 {#monitoring-workflow-execution}
 
@@ -261,7 +261,7 @@ Campaign Classic介面允許您使用預定義的&#x200B;**views**&#x200B;監視
 * **[!UICONTROL Running]**：列出所有執行中的工作流程。
 * **[!UICONTROL Paused]**：列出所有暫停的工作流程。
 * **[!UICONTROL Failed]**：列出所有失敗的工作流程。
-* **[!UICONTROL Start Pending]**：列出等待operationMagt進程啟動的所有工作流。此檢視僅適用於&#x200B;**Marketing campaigns**&#x200B;套件（請參閱[安裝Campaign標準套件](../../installation/using/installing-campaign-standard-packages.md)）。
+* **[!UICONTROL Start Pending]**：列出等待operationMagt進程啟動的所有工作流。此檢視僅適用於&#x200B;**Marketing campaigns**&#x200B;套件（請參閱[安裝Campaign內建套件](../../installation/using/installing-campaign-standard-packages.md)）。
 
 ![](assets/workflow-monitoring-views.png)
 
