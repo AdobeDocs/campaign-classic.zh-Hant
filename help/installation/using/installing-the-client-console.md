@@ -6,35 +6,37 @@ description: 瞭解如何安裝客戶端控制台
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 translation-type: tm+mt
-source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 5%
+source-wordcount: '973'
+ht-degree: 4%
 
 ---
 
-
-# 安裝和更新促銷活動用戶端主控台{#installing-the-client-console}
-
+# 安裝和更新Campaign用戶端主控台{#installing-the-client-console}
 
 「促銷活動用戶端主控台」是rich client，可讓您連線至您的Campaign應用程式伺服器。
 
-在開始之前，您必須檢查促銷活動[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)，取得您的促銷活動伺服器URL和使用者認證。
+在開始安裝Client Console之前，您需要：
 
->[!CAUTION]
->
->促銷活動用戶端主控台和促銷活動應用程式伺服器必須在相同的產品版本上執行。 Adobe也建議使用相同的產品組建版本。
-
-![](assets/do-not-localize/how-to-video.png) 瞭解如何在視訊中安裝和設定Adobe Campaign客 [戶端](#video)
+* 在[Compatibility matrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign的相容性
+* 取得您的促銷活動伺服器URL
+* 取得您的使用者認證
 
 安裝或更新用戶端主控台的程式會因您實作的Adobe Campaign Classic而異。
 請檢閱下列詳細資訊，以瞭解您的實作需要什麼。
 
+![](assets/do-not-localize/how-to-video.png) 瞭解如何在視訊中安裝和設定Adobe Campaign客 [戶端](#video)
+
+>[!CAUTION]
+>
+>促銷活動用戶端主控台和促銷活動應用程式伺服器必須在相同的產品版本&#x200B;**上執行**。 Adobe還強烈建議使用&#x200B;**相同的產品組建版本**。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的促銷活動用戶端和伺服器版本。
 
 ## Adobe代管實施{#hosted-customers}
 
-要安裝或更新客戶機控制台，請執行以下操作：
+在代管客戶的廣告中，您有兩個選項可安裝或更新您的用戶端主控台：
 
 1. Adobe可以直接部署。 在更新主控台後，系統會在快顯視窗中提示使用者下載最新的用戶端主控台版本。
 
@@ -42,9 +44,7 @@ ht-degree: 5%
 
    **使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，系統管理員將需要部署到所有客戶端控制台**
 
-
-
-## 混合式和完全內部部署實施{#hybrid-onprem-customers}
+## 混合式與內部部署實作{#hybrid-onprem-customers}
 
 為了讓Adobe Campaign用戶能夠登錄您建立和配置的實例，他們需要使用客戶機控制台。
 
@@ -62,9 +62,10 @@ ht-degree: 5%
 
 1. 啟動Adobe Campaign伺服器。
 
->[!CAUTION]
->
->  Adobe建議取消選擇&#x200B;**[!UICONTROL No longer ask this question]**&#x200B;選項，以確保在控制台有新版本時所有用戶都收到警報。  如果選取此選項，使用者將不會收到新可用版本的通知。
+
+### 不再詢問此問題選項
+
+Adobe建議取消選擇&#x200B;**[!UICONTROL No longer ask this question]**&#x200B;選項，以確保在控制台有新版本時所有用戶都收到警報。  如果選取此選項，使用者將不會收到新可用版本的通知。
 
 如果已選擇&#x200B;**[!UICONTROL No longer ask this question]**，則可重設此提示。 只有熟悉編輯Windows註冊表的系統管理員才應進行以下更改：
 
@@ -82,14 +83,14 @@ ht-degree: 5%
 >
 >如果您要將更新的主控台套用至現有的實施，使用者會自動收到更新其主控台的提示。 如果您是第一次實作促銷活動，使用者將需要下載主控台。 請參閱下方，以取得兩個選項的詳細資訊
 
-### 更新控制台——現有實施{#update-the-client-console}
+### 更新現有實施的控制台{#update-the-client-console}
 
 在「促銷活動伺服器」檔案夾中提供主控台後，系統會在快顯視窗中提示使用者下載最新的用戶端主控台版本。
 
 **使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，系統管理員將需要部署到所有客戶端控制台**
 
 
-### 下載主控台——新建實施{#download-the-client-console}
+### 下載新實作的主控台{#download-the-client-console}
 
 使用者現在應依照下列步驟下載並安裝主控台：
 
@@ -150,11 +151,10 @@ ht-degree: 5%
 1. 輸入您的用戶登錄憑據，然後按一下&#x200B;**[!UICONTROL Log in]**
 
 
-
 **相關主題**
 
 * [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
-* [相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 ## 教學課程影片
 
