@@ -7,11 +7,11 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 91%
 
 ---
 
@@ -154,7 +154,7 @@ ht-degree: 100%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016</p>
+<p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>。</p>
@@ -221,10 +221,10 @@ ht-degree: 100%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019</p>
-<p>2017</p>
-<p>2016</p>
-<p>2014</p>
+<p>2019年</p>
+<p>2017年</p>
+<p>2016年</p>
+<p>2014年</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -275,19 +275,25 @@ ht-degree: 100%
 </tbody>
 </table>
 
-## 用戶端控制台作業系統{#ClientConsoleoperatingsystems}
+## 客戶端控制台{#ClientConsoleoperatingsystems}
+
+使用「促銷活動用戶端主控台」時，需要下列作業系統和瀏覽器。
+
+### 作業系統
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
-<p>2016</p>
-<p>2012</p>
+<p>2016年</p>
+<p>2012年</p>
+</td>
+<td>
 </td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
 <p>8</p>
 <p>10（建議用於日文執行個體）</p>
@@ -295,6 +301,30 @@ ht-degree: 100%
 </tr>
 </tbody>
 </table>
+
+### 瀏覽器
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## 行動 SDK{#MobileSDK}
 
@@ -319,9 +349,53 @@ ht-degree: 100%
 
 ## 瀏覽器{#Browsers}
 
-對於下列瀏覽器，支援最新版本：Microsoft Edge、Mozilla Firefox、Google Chrome、Safari。
+下列瀏覽器與Campaign for Web Access相容。
 
-支援 Internet Explorer 11。
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## 比較喜歡此內容{#Morelikethis}
 
