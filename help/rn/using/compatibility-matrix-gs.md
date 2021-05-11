@@ -8,9 +8,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 translation-type: tm+mt
-source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+source-git-commit: 62b2fdd807a654ab81d19a1b5c0d8ac88648e45c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '542'
 ht-degree: 90%
 
 ---
@@ -273,7 +273,7 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 
 ## 客戶端控制台{#ClientConsoleoperatingsystems}
 
-使用「促銷活動用戶端主控台」時，需要下列作業系統和瀏覽器。
+:warning:使用「促銷活動用戶端主控台」時，需要下列作業系統和瀏覽器。
 
 ### 作業系統
 
@@ -284,8 +284,6 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <td>
 <p>2016年</p>
 <p>2012年</p>
-</td>
-<td>
 </td>
 </tr>
 <tr>
@@ -320,7 +318,6 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 </tr>
 </tbody>
 </table>
-
 
 ## 行動 SDK{#MobileSDK}
 
