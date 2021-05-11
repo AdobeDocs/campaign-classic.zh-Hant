@@ -6,14 +6,14 @@ description: 進一步瞭解使用來編寫電子郵件URL的指令碼，並仍�
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
+exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 translation-type: tm+mt
-source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
+source-git-commit: fdcb96c3c4afed1f36529e658eda26766226c44f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
 
 ---
-
 
 # 預處理指令{#pre-processing-instructions}
 
@@ -23,9 +23,9 @@ ht-degree: 1%
 
 說明有三種類型：
 
-* **[!DNL include]**:主要用來將選項、個人化區塊、外部檔案或頁面中的某些程式碼分解。[進一步了解](#include)
-* **[!DNL value]**:可存取傳送、傳送變數和傳送中載入的自訂物件欄位。[進一步了解](#value)
-* **[!DNL foreach]**:以循環載入為自定義對象的陣列。[進一步了解](#foreach)
+* **[!DNL include]**:主要用來將選項、個人化區塊、外部檔案或頁面中的某些程式碼分解。[了解更多](#include)
+* **[!DNL value]**:可存取傳送、傳送變數和傳送中載入的自訂物件欄位。[了解更多](#value)
+* **[!DNL foreach]**:以循環載入為自定義對象的陣列。[了解更多](#foreach)
 
 您可直接從傳送精靈中測試。 它們會套用在內容預覽中，當您按一下追蹤按鈕以查看URL清單時。
 
@@ -184,6 +184,7 @@ ht-degree: 1%
    }
    <%@ value object='endScript' %>
    ```
+
 1. 呼叫函式以顯示文章。
 
    ```
@@ -194,4 +195,3 @@ ht-degree: 1%
    }
    %>
    ```
-
