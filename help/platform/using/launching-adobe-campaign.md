@@ -6,18 +6,23 @@ description: 啟動 Adobe Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 2c275751ab86e98652820bf461c617442480c725
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '558'
 ht-degree: 43%
 
 ---
 
-
-# 啟動Adobe Campaign{#launching-adobe-campaign}
+# 啟動 Adobe Campaign {#launching-adobe-campaign}
 
 促銷活動用戶端主控台是rich client，可讓您連線至您的促銷活動應用程式伺服器。 瞭解如何在[本頁](../../installation/using/installing-the-client-console.md)中下載和配置客戶端控制台。
+
+
+>[!CAUTION]
+>
+>在[相容性表](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign客戶機控制台的相容性
 
 ## 啟動Adobe Campaign{#starting-adobe-campaign}
 
@@ -107,4 +112,4 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 
 * [Adobe Campaign說明與支援選項](../../support.md)
 * [Adobe Campaign軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud支援和專家會議](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud支援和專家會議](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
