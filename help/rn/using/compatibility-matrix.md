@@ -8,9 +8,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 translation-type: tm+mt
-source-git-commit: 62b2fdd807a654ab81d19a1b5c0d8ac88648e45c
+source-git-commit: 548ed5710cced016606283198f81a8f13c65ac10
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '554'
 ht-degree: 91%
 
 ---
@@ -304,14 +304,6 @@ ht-degree: 91%
 
 <table>
 <tbody>
-<tr>
-<td>
-<p>Microsoft Edge</p>
-</td>
-<td>
-<p>最新版本</p>
-</td>
-</tr>
 <tr>
 <td>
 <p>Microsoft Internet Explorer</p>
