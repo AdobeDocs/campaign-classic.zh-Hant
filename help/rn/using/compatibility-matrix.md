@@ -8,9 +8,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 translation-type: tm+mt
-source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+source-git-commit: 62b2fdd807a654ab81d19a1b5c0d8ac88648e45c
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '558'
 ht-degree: 91%
 
 ---
@@ -277,7 +277,7 @@ ht-degree: 91%
 
 ## 客戶端控制台{#ClientConsoleoperatingsystems}
 
-使用「促銷活動用戶端主控台」時，需要下列作業系統和瀏覽器。
+:warning:使用「促銷活動用戶端主控台」時，需要下列作業系統和瀏覽器。
 
 ### 作業系統
 
@@ -288,8 +288,6 @@ ht-degree: 91%
 <td>
 <p>2016年</p>
 <p>2012年</p>
-</td>
-<td>
 </td>
 </tr>
 <tr>
