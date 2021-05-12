@@ -496,7 +496,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新 Apache 設定步驟已更新。[顯示全文](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-已新增新頁面，包括Classic的端點清單。 [顯示全文](../../installation/using/campaign-network-endpoints.md)
+新增了包含 Classic 端點清單的新頁面。[顯示全文](../../installation/using/campaign-network-endpoints.md)
 
 更新「資料套件最佳實務」文章。[顯示全文](../../configuration/using/data-model-best-practices.md)
 
