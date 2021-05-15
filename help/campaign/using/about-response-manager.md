@@ -6,22 +6,19 @@ description: 關於回應管理器
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
+source-git-commit: dc3151a77350aa2b2acd989a57f5b489c1a98962
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '434'
 ht-degree: 3%
 
 ---
 
+# 開始使用促銷活動回應管理員{#about-response-manager}
 
-# 關於回應管理器{#about-response-manager}
+Adobe Campaign公司提供回應管理附加元件，可讓您衡量行銷活動的成功與獲利能力，或提供跨通訊管道的建議：電子郵件、行動裝置、直效郵件等。
 
-## 目標{#objectives}
-
-Adobe Campaign提供回應管理應用程式（回應管理員），可讓您評估行銷活動的成功與獲利能力，或為所有通訊通道（電子郵件、行動裝置、電話、直效郵件、傳真、代理商等）提供建議。
-
-## 假設概念{#hypothesis-concept}
+## 假設{#hypothesis-concept}
 
 可以在從接觸日期開始的給定期間內配置假設，以推斷在接收到遞送之後被定位的假設的行為。 這些假設是以&#x200B;**transaction**&#x200B;表格為基礎，該表格儲存購買項目和這些購買項目的詳細資料。
 
@@ -41,7 +38,7 @@ Adobe Campaign提供回應管理應用程式（回應管理員），可讓您評
 
 每個假設都會連結至單一交易表。 一個交付或提供可以連結到多個假設。
 
-## 方法{#method}
+## 實施步驟 {#method}
 
 開始使用Response Manager之前，請參閱[Configuration](../../campaign/using/configuration.md)並執行必要的配置。
 
@@ -58,4 +55,3 @@ Adobe Campaign提供回應管理應用程式（回應管理員），可讓您評
 
 1. 檢查假設結果。 請參閱[假設追蹤](../../campaign/using/hypothesis-tracking.md)。
 1. 如有必要，重新啟動假設。 請參閱[在傳送時即時建立假設](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)。
-
