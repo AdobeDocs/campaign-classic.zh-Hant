@@ -8,16 +8,15 @@ user-guide-description: 設計、規劃、執行、管理和最佳化可提供�
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-translation-type: ht
-source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
-workflow-type: ht
-source-wordcount: '2519'
-ht-degree: 100%
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+workflow-type: tm+mt
+source-wordcount: '2521'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic 指南 {#using}
+# Adobe Campaign Classicv7指南 {#using}
 
 + [產品文件](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
@@ -26,18 +25,18 @@ ht-degree: 100%
    + [最新發行版本](rn/using/latest-release.md)
    + [!DNL Gold Standard] 發行版本{#gs-release}
       + [什麼是  [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard] 發行說明](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard]發行說明](rn/using/gold-standard.md)
       + [[!DNL Gold Standard] 相容性矩陣](rn/using/compatibility-matrix-gs.md)
    + 先前版本{#previous-releases}
-      + [發行版本 20.3](rn/using/release--20-3.md)
+      + [20.3 發行版本](rn/using/release--20-3.md)
       + [第 20.2 發行版本](rn/using/release--20-2.md)
-      + [第 20.1 發行版本](rn/using/release--20-1.md)
-      + [第 19.2 發行版本](rn/using/release--19-2.md)
-      + [第 19.1 發行版本](rn/using/release--19-1.md)
-      + [第 18.10 發行版本](rn/using/release--18-10.md)
-      + [第 18.6 發行版本](rn/using/release--18-6.md)
-      + [第 18.4 發行版本](rn/using/release--18-4.md)
-   + [棄用的功能](rn/using/deprecated-features.md)
+      + [版本20.1](rn/using/release--20-1.md)
+      + [版本19.2](rn/using/release--19-2.md)
+      + [版本19.1](rn/using/release--19-1.md)
+      + [版本18.10](rn/using/release--18-10.md)
+      + [版本18.6](rn/using/release--18-6.md)
+      + [版本18.4](rn/using/release--18-4.md)
+   + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性矩陣](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
    + [iOS 憑證更新](technotes/ios-certificate-update.md)
@@ -69,7 +68,7 @@ ht-degree: 100%
       + [隱私權管理](platform/using/privacy-management.md)
       + [隱私權請求](platform/using/privacy-requests.md)
    + 用戶檔案管理{#profile-management}
-      + [關於用戶檔案](platform/using/about-profiles.md)
+      + [關於設定檔](platform/using/about-profiles.md)
       + [編輯設定檔](platform/using/editing-a-profile.md)
       + [新增設定檔](platform/using/adding-profiles.md)
       + [管理設定檔](platform/using/managing-profiles.md)
@@ -215,7 +214,7 @@ ht-degree: 100%
       + [傳遞狀態](delivery/using/delivery-statuses.md)
       + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
       + [在 ISP 中斷後更新跳出資格](delivery/using/update-bounce-qualification.md)
-      + [瞭解隔離管理](delivery/using/understanding-quarantine-management.md)
+      + [認識隔離管理](delivery/using/understanding-quarantine-management.md)
    + 追蹤訊息 {#tracking-messages}
       + [關於訊息追蹤](delivery/using/about-message-tracking.md)
       + [如何配置追蹤的連結](delivery/using/how-to-configure-tracked-links.md)
@@ -445,7 +444,7 @@ ht-degree: 100%
       + [時間限制](workflow/using/time-constraint.md)
       + [子工作流程](workflow/using/sub-workflow.md)
       + [跳到 (起點和終點)](workflow/using/jump--start-point-and-end-point-.md)
-      + [外部信號](workflow/using/external-signal.md)
+      + [外部訊號](workflow/using/external-signal.md)
       + [核准](workflow/using/approval.md)
       + [警報](workflow/using/alert.md)
       + [任務](workflow/using/task.md)
@@ -569,7 +568,7 @@ ht-degree: 100%
       + [對出頻道上的優惠方案](interaction/using/offers-on-an-outbound-channel.md)
 + 傳送異動訊息 {#transactional-messaging}
    + 開始使用異動訊息 {#introduction}
-      + [關於交易式傳訊](message-center/using/about-transactional-messaging.md)
+      + [關於交易式訊息傳送](message-center/using/about-transactional-messaging.md)
       + [交易式傳訊架構](message-center/using/transactional-messaging-architecture.md)
       + [事件說明](message-center/using/event-description.md)
    + 設定執行個體{#instance-configuration}
@@ -610,7 +609,7 @@ ht-degree: 100%
       + [建立 Facebook 應用程式](social/using/creating-a-facebook-application.md)
       + [在 Twitter 上設定發佈](social/using/configuring-publishing-on-twitter.md)
    + 在社交媒體上發佈{#publishing-on-facebook-twitter}
-      + [概觀](social/using/overview.md)
+      + [概覽](social/using/overview.md)
       + [在 Facebook 上發佈](social/using/publishing-on-facebook.md)
       + [在 Twitter 上發佈](social/using/publishing-on-twitter.md)
    + 附件 {#annexes}
@@ -713,7 +712,7 @@ ht-degree: 100%
    + 生產程序 {#production-procedures}
       + [設定原則](production/using/configuration-principle.md)
       + [操作原則](production/using/operating-principle.md)
-      + [管理](production/using/administration.md)
+      + [管理員](production/using/administration.md)
       + [配置](production/using/configuration.md)
       + [日誌檔案](production/using/log-files.md)
       + [監視流程](production/using/monitoring-processes.md)
@@ -736,7 +735,7 @@ ht-degree: 100%
       + [維護類型](production/using/types-of-maintenance.md)
       + [RDBMS 特定建議](production/using/rdbms-specific-recommendations.md)
       + [應用程式物件](production/using/application-objects.md)
-   + 疑難排解 {#troubleshooting-toc}
+   + 疑難排解{#troubleshooting-toc}
       + [生產疑難排解概觀](production/using/troubleshooting.md)
       + 常見及一般問題{#common-general-issues-toc}
          + [模組和常見問題](production/using/modules-and-frequent-issues.md)
@@ -851,7 +850,7 @@ ht-degree: 100%
       + [在 Linux 中移轉 Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + 設定 {#configuration}
       + [一般配置](migration/using/general-configurations.md)
-      + [v5.11 中的特定配置](migration/using/specific-configurations-in-v5-11.md)
-      + [v6.02 中的特定配置](migration/using/specific-configurations-in-v6-02.md)
+      + [v5.11 中 的特定配置](migration/using/specific-configurations-in-v5-11.md)
+      + [v6.02 中 的特定配置](migration/using/specific-configurations-in-v6-02.md)
       + [v6.10 中 的特定配置](migration/using/specific-configurations-in-v6-10.md)
    + [反轉程序](migration/using/about-rollback.md)
