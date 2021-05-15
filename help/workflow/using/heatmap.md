@@ -1,27 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 工作流程熱度圖
-description: 使用Workflow HeatMap監控您的促銷活動工作流程
+title: 促銷活動工作流程HeatMap
+description: 使用Workflow HeatMap監控您的工作流程
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-translation-type: tm+mt
-source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
+source-git-commit: 53d8e2ff56481497c7805b92a7885a662a1924cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 # 工作流程熱度圖 {#workflow-heatmap}
 
-Adobe Campaign工作流程熱圖(Workflow HeatMap)包含目前執行之所有工作流程的色彩編碼圖形表示法。 它僅適用於實例管理員。
+促銷活動工作流程熱圖包含目前執行的所有工作流程的色彩編碼圖形表示法。 它僅適用於&#x200B;**促銷活動管理員**。
 
-監控不同促銷活動程式的其他方式，請參閱本頁[。](../../production/using/monitoring-guidelines.md)
+探索在[本頁](../../production/using/monitoring-guidelines.md)中監控促銷活動進程的其他方式。
 
-## 關於Workflow HeatMap {#about-the-workflow-heatmap}
+## 開始使用Workflow HeatMap {#about-the-workflow-heatmap}
 
 Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平台管理員能夠監控實例的負載並據此規劃工作流。
 
@@ -31,7 +30,7 @@ Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平�
 * 依期間篩選工作流程，以查看哪些工作流程可能遇到問題
 * 依期間篩選活動，以查看哪些活動可能遇到問題
 * 輕易尋找個別的工作流程及所有的相關活動 (包括其持續時間)
-* 依工作流程類型搜尋 ([技術工作流程](../../workflow/using/building-a-workflow.md#technical-workflows)或[行銷活動工作流程](../../workflow/using/building-a-workflow.md#campaign-workflows))
+* 依工作流程類型篩選：[技術工作流程](../../workflow/using/building-a-workflow.md#technical-workflows)或[促銷活動工作流程](../../workflow/using/building-a-workflow.md#campaign-workflows)
 * 尋找特定工作流程並加以分析
 
 >[!NOTE]
@@ -40,13 +39,11 @@ Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平�
 
 使用Workflow HeatMap需要對下列概念有充分的瞭解：[Workflows](../../workflow/using/about-workflows.md)、[Activitys](../../workflow/using/about-activities.md)和[Workflow Best Practices](../../workflow/using/workflow-best-practices.md)。
 
-<!--The Workflow HeatMap is available by default in Adobe Campaign starting 18.10 release. If you have a build between 8700 and 8977 (18.10), you can also benefit from this capability. To request the corresponding package, contact the [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and follow the instructions from [this page](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) to understand how to install it.-->
-
-## 使用熱圖{#using-the-heatmap}
+## 自訂工作流程熱圖{#using-the-heatmap}
 
 >[!NOTE]
 >
->只有具有管理權限的使用者才能存取促銷活動工作流程熱圖。
+>如果「工作流熱圖」中未顯示任何資料，請按一下&#x200B;**[!UICONTROL Load data]**&#x200B;按鈕。
 
 1. 前往&#x200B;**[!UICONTROL Monitoring]**，然後按一下&#x200B;**[!UICONTROL Workflow HeatMap]**&#x200B;連結以顯示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;頁面。
 
@@ -69,7 +66,7 @@ Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平�
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. 您也可以從&#x200B;**[!UICONTROL Workflows]**&#x200B;清單中選擇特定的工作流程。
+1. 您也可以從&#x200B;**[!UICONTROL Workflows]**&#x200B;下拉式清單中選擇特定的工作流程。
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
@@ -84,11 +81,9 @@ Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平�
 
 1. 要按名稱搜索特定工作流，還可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;欄位。
 
-   ![](assets/wkf_monitoring_filters_name.png)
-
 1. 如果您在其間編輯了某些工作流程，請按一下&#x200B;**[!UICONTROL Reload data]**&#x200B;按鈕以重新整理顯示在格線中的資料。
 
-## 閱讀熱圖{#reading-the-heatmap}
+## 解譯工作流熱圖{#reading-the-heatmap}
 
 「促銷活動工作流程熱圖」是自然可讀的格線，從左上至右下方，讓您找到具有綠色到紅色編碼範圍的「作用區」。
 
@@ -135,7 +130,7 @@ Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平�
    * 如果您遇到效能問題，而且在格線中顯示一或多個紅色儲存格，請考慮變更數個工作流程的開始時間。 要求行銷使用者將手動工作流程從繁忙（「熱」）時段移至更多可用時段。 這應該會維持當天的穩定活動水準。
    * 為避免尖峰，避免例項過載，請先查看HeatMap，再規劃新的工作流程，並選擇最佳時間。 考慮網格中與灰色或綠色單元格對應的時隙，以開始新的工作流程。
 
-### 尋找影響效能{#finding-long-running-workflows-that-impact-performance}的長期執行工作流程
+### 尋找影響效能{#finding-long-running-workflows-that-impact-performance}的長效工作流程
 
 身為促銷活動管理員，Workflow HeatMap可協助您尋找最長的工作流程，以減緩活動。
 
@@ -151,7 +146,7 @@ Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平�
    * 建議行銷使用者分割最長的工作流程，以縮短處理時間。
    * 對特定工作流程和特定活動（例如JavaScript、匯入、匯出等）進行更深入的分析，以隔離問題並更輕鬆地解決問題。
 
-## 範例：使用HeatMap改善工作流程規劃{#example--using-the-heatmap-to-improve-workflow-planning}
+## 使用HeatMap改善工作流程規劃{#example--using-the-heatmap-to-improve-workflow-planning}
 
 以下範例說明如何使用Adobe Campaign工作流熱圖來提高規劃效率，以及如何改善效能。
 
