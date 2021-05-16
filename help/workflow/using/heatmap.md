@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 53d8e2ff56481497c7805b92a7885a662a1924cf
+source-git-commit: 527ac9f4e408228aaa1354693a191c1e77e76b68
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -115,7 +115,7 @@ Workflow HeatMap提供並行工作流數的快速概覽，使Adobe Campaign平�
 
 促銷活動工作流程熱圖可在兩個主要案例中派上用場。
 
-### 減少併發工作流{#reducing-the-number-of-concurrent-workflows}的數量
+### 減少併發工作流程的數量{#reducing-the-number-of-concurrent-workflows}
 
 身為促銷活動管理員，Workflow HeatMap可協助您瞭解例項的載入情況，並在適當時間規劃現有或新的工作流程。
 
