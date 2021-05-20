@@ -7,11 +7,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-translation-type: tm+mt
 source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4297'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,13 +37,13 @@ Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。
 瞭解如何透過這些新頁面建立及管理您的行銷活動：
 * [建立及設定行銷活動範本](../../campaign/using/marketing-campaign-templates.md)
 * [行銷活動傳遞](../../campaign/using/marketing-campaign-deliveries.md)
-* [選取行銷活動的閱聽眾](../../campaign/using/marketing-campaign-target.md)
+* [選取行銷活動的對象](../../campaign/using/marketing-campaign-target.md)
 * [管理相關文件](../../campaign/using/marketing-campaign-assets.md)
 * [設定及管理核准流程](../../campaign/using/marketing-campaign-approval.md)
 
 在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活動部分中已新增了有關如何使用 task.setCompleted() 方法終止任務及防止將來重新呼叫的資訊。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-[傳遞能力](../../delivery/using/about-deliverability.md)區段已更新，現在包含新 [Adobe 傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)的連結。 針對適用各種 Adobe 解決方案的傳遞能力其所有一般資訊都已移至[最佳實務指南附錄](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources)。
+[傳遞能力](../../delivery/using/about-deliverability.md)區段已更新，現在包含新 [Adobe 傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)的連結。 針對適用各種 Adobe 解決方案的傳遞能力其所有一般資訊都已移至[最佳實務指南附錄](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hant#additional-resources)。
 
 ## 2021 年 2 月 {#release-21.1}
 
@@ -183,21 +182,21 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 * [如何在行銷活動中建立電子郵件](../../campaign/using/marketing-campaign-deliveries.md)
 
-* [如何建立具有條件內容的多語言電子報](../../delivery/using/conditional-content.md)
+* [如何建立具有條件式內容的多語言電子報](../../delivery/using/conditional-content.md)
 
-* [如何配置和部署傳遞範本](../../delivery/using/creating-a-delivery-template.md)
+* [如何設定及部署傳遞範本](../../delivery/using/creating-a-delivery-template.md)
 
-* [如何啟用和使用電子郵件 AMP](../../delivery/using/defining-interactive-content.md)
+* [如何啟用及使用電子郵件 AMP](../../delivery/using/defining-interactive-content.md)
 
 * [使用動態內容區塊個人化電子郵件](../../delivery/using/personalization-blocks.md)
 
 * [如何使用個人化欄位進行電子郵件個人化](../../delivery/using/personalization-fields.md)
 
-* [如何管理電子郵件中的種子和校樣](../../delivery/using/steps-defining-the-target-population.md)
+* [如何管理電子郵件中的種子和證明](../../delivery/using/steps-defining-the-target-population.md)
 
-* [如何設定循環傳遞](../../workflow/using/recurring-delivery.md)
+* [如何設定循環傳送](../../workflow/using/recurring-delivery.md)
 
-* [如何設定連續傳遞](../../workflow/using/continuous-delivery.md)
+* [如何設定連續傳送](../../workflow/using/continuous-delivery.md)
 
 在連線至 FTP 伺服器且收到「無法解決主機名稱」錯誤後，已將資訊新增至要執行的檢查和動作中。[顯示全文](../../platform/using/sftp-server-usage.md)
 
@@ -336,7 +335,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新安裝指南，並與最新版本的相容性矩陣同步。新增了新支援的系統。移除已棄用及不支援的系統的項目。[顯示全文](../../installation/using/general-architecture.md)
 
-更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 安裝指南新增了有關 IP 相似性的最佳實務。[顯示全文](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -354,7 +353,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
-更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 [此處](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)記錄新的 **[!UICONTROL Cleanup of Nmsaddress]** 工作流程。
 
@@ -404,7 +403,7 @@ AMP 互動式內容 - [顯示全文](../../delivery/using/defining-interactive-c
 
 **此版本隨附的其他文件更新**
 
-推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增章節，說明如何疑難排解行銷活動中，持續顯示「盡快開始」狀態的工作流程。[顯示全文](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -466,7 +465,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
@@ -474,7 +473,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 建立了新的「組建版本升級常見問題集」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)
 
-更新[相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存[ 19.0 相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix-19-0.html)。
+更新[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存[ 19.0 相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix-19-0.html)。
 
 更新「已棄用和已移除的 Campaign Classic 功能」頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)
 
@@ -529,7 +528,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
