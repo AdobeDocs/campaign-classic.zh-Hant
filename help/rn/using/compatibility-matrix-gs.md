@@ -7,11 +7,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +140,7 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>。</p>
@@ -221,10 +220,10 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -271,9 +270,9 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 </table>
 
 
-## 客戶端控制台{#ClientConsoleoperatingsystems}
+## 用戶端主控台 {#ClientConsoleoperatingsystems}
 
-:warning:使用「促銷活動用戶端主控台」時，需要下列作業系統和瀏覽器。
+:warning: 使用「Campaign 用戶端主控台」時，需要下列作業系統和瀏覽器。
 
 ### 作業系統
 
@@ -282,8 +281,8 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
@@ -334,7 +333,7 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 
 ## 瀏覽器{#Browsers}
 
-下列瀏覽器與Campaign for Web Access相容。
+下列瀏覽器與 Campaign for Web Access 相容。
 
 <table>
 <tbody>
@@ -381,9 +380,9 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 </tbody>
 </table>
 
-## 比較喜歡此內容{#Morelikethis-gs}
+## 更多相關資訊{#Morelikethis-gs}
 
 * [Campaign Classic 發行說明](../../rn/using/latest-release.md)
 * [安裝指南](../../installation/using/general-architecture.md)
 * [已棄用的功能及系統](../../rn/using/deprecated-features.md)
-* [建立升級程序](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)
+* [組建升級程序](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)
