@@ -1,24 +1,24 @@
 ---
-audience: end-user
-breadcrumb-title: 說明中心
+solution: Campaign Classic
 product: campaign
-title: Campaign Classic 指南
+sub-product: adobe campaign classic
+title: Adobe Campaign Classic v7說明中心
+breadcrumb-title: Campaign Classicv7
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 設計、規劃、執行、管理和最佳化可提供高行銷投資報酬率的跨頻道行銷活動。
-solution: Campaign Classic
-sub-product: adobe campaign classic
+audience: end-user
 type: Documentation
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: 43f49ecb651e37a7e166f8823c75d938338b952c
 workflow-type: tm+mt
-source-wordcount: '2521'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classicv7指南 {#using}
+# Adobe Campaign Classic v7檔案{#campaign-v7}
 
-+ [產品文件](campaign-classic-home.md)
++ [Campaign Classicv7檔案](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
 + 發行說明{#release-notes}
    + [開始升級](rn/using/rn-overview.md)
@@ -30,12 +30,12 @@ ht-degree: 99%
    + 先前版本{#previous-releases}
       + [20.3 發行版本](rn/using/release--20-3.md)
       + [第 20.2 發行版本](rn/using/release--20-2.md)
-      + [版本20.1](rn/using/release--20-1.md)
-      + [版本19.2](rn/using/release--19-2.md)
-      + [版本19.1](rn/using/release--19-1.md)
-      + [版本18.10](rn/using/release--18-10.md)
-      + [版本18.6](rn/using/release--18-6.md)
-      + [版本18.4](rn/using/release--18-4.md)
+      + [第20.1發行版本](rn/using/release--20-1.md)
+      + [第19.2發行版本](rn/using/release--19-2.md)
+      + [第19.1發行版本](rn/using/release--19-1.md)
+      + [第18.10發行版本](rn/using/release--18-10.md)
+      + [第18.6發行版本](rn/using/release--18-6.md)
+      + [第18.4發行版本](rn/using/release--18-4.md)
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性矩陣](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
@@ -55,7 +55,7 @@ ht-degree: 99%
          + [全域概念](platform/using/faq-key-concepts.md)
          + [Build 升級](platform/using/faq-build-upgrade.md)
          + [隱私權](platform/using/privacy-faq.md)
-         + [受眾](platform/using/faq-audiences.md)
+         + [閱聽眾](platform/using/faq-audiences.md)
          + [設計訊息](platform/using/faq-designing.md)
          + [傳送訊息](platform/using/faq-messages.md)
          + [工作流程](platform/using/faq-workflows.md)
