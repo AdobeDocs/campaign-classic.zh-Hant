@@ -1,24 +1,24 @@
 ---
-solution: Campaign Classic
+audience: end-user
+breadcrumb-title: 說明中心
 product: campaign
-sub-product: adobe campaign classic
-title: Adobe Campaign Classic v7說明中心
-breadcrumb-title: Campaign Classicv7
+title: Campaign Classic 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 設計、規劃、執行、管理和最佳化可提供高行銷投資報酬率的跨頻道行銷活動。
-audience: end-user
+solution: Campaign Classic
+sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 43f49ecb651e37a7e166f8823c75d938338b952c
+source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2521'
 ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7檔案{#campaign-v7}
+# Adobe Campaign Classic v7指南 {#using}
 
-+ [Campaign Classicv7檔案](campaign-classic-home.md)
++ [產品文件](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
 + 發行說明{#release-notes}
    + [開始升級](rn/using/rn-overview.md)
