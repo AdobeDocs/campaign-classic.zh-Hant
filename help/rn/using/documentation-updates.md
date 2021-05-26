@@ -7,9 +7,9 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4367'
 ht-degree: 98%
 
 ---
@@ -441,7 +441,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 新增相關資訊，以規範個人化欄位內容不得超過 1024 個字元。[顯示全文](../../delivery/using/personalization-fields.md)
 
-控制面板文件已整合至新的共同作業文件集。[顯示全文](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
+控制面板文件已整合至新的共同作業文件集。[顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 更新「傳遞最佳實務快速入門手冊」。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
@@ -477,7 +477,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
