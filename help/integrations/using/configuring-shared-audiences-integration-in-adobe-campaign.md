@@ -1,42 +1,41 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 在Adobe Campaign中設定共用觀眾整合
-description: 瞭解如何設定共用觀眾整合
+title: 在Adobe Campaign中設定共用受眾整合
+description: 了解如何設定共用受眾整合
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '482'
 ht-degree: 2%
 
 ---
 
+# 在Adobe Campaign中設定共用受眾整合{#configuring-shared-audiences-integration-in-adobe-campaign}
 
-# 在Adobe Campaign中設定共用觀眾整合{#configuring-shared-audiences-integration-in-adobe-campaign}
+提交此請求後，Adobe將繼續為您布建整合，並聯繫您以提供詳細資訊和資訊，以便您完成配置：
 
-在您提交此要求後，Adobe會繼續為您提供整合，並聯絡您以提供您必須完成設定的詳細資訊：
-
-1. [步驟1:設定或檢查Adobe Campaign中的外部帳戶](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
+1. [步驟1:在Adobe Campaign中設定或檢查外部帳戶](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [步驟2:設定資料來源](#step-2--configure-the-data-source)
 1. [步驟3:設定促銷活動追蹤伺服器](#step-3--configure-campaign-tracking-server)
 1. [步驟4:設定訪客ID服務](#step-4--configure-the-visitor-id-service)
 
 >[!IMPORTANT]
 >
->如果您使用demdex網域，並遵循&#x200B;**ftp-out.demdex.com**&#x200B;語法來匯入外部帳戶，而&#x200B;**ftp-in.demdex.com**&#x200B;來匯出外部帳戶，則您必須依此調整實作，並移至Amazon Simple Storage Service(S3)連接器以匯入或匯出資料。 有關如何使用Amazon S3配置外部帳戶的詳細資訊，請參閱[部分](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)。
+>如果您使用Demdex網域，並針對匯入外部帳戶遵循語法&#x200B;**ftp-out.demdex.com**&#x200B;及針對匯出外部帳戶遵循&#x200B;**ftp-in.demdex.com**，則需據此調整實施，並移至Amazon Simple Storage Service(S3)連接器以匯入或匯出資料。 如需如何使用Amazon S3設定外部帳戶的詳細資訊，請參閱此[區段](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)。
 
 ## 步驟1:在Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}中設定或檢查外部帳戶
 
 首先，我們需要設定或檢查Adobe Campaign中的外部帳戶，如下所示：
 
-1. 按一下&#x200B;**[!UICONTROL Explorer]**&#x200B;表徵圖。
-1. 前往&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帳戶應由Adobe設定，且必要的資訊應已傳達給您。
+1. 按一下&#x200B;**[!UICONTROL Explorer]**&#x200B;圖示。
+1. 前往&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帳戶應已透過Adobe設定，且必要資訊應已傳送給您。
 
-   * **[!UICONTROL importSharedAudience]**:專用於匯入觀眾的帳戶。
-   * **[!UICONTROL exportSharedAudience]**:專用於匯出觀眾的帳戶。
+   * **[!UICONTROL importSharedAudience]**:專用於匯入對象的帳戶。
+   * **[!UICONTROL exportSharedAudience]**:專用於匯出對象的帳戶。
 
    ![](assets/aam_config_1.png)
 
@@ -54,24 +53,24 @@ ht-degree: 2%
       ```
 
    * **[!UICONTROL AWS access key ID]**
-要瞭解在何處查找您的AWS訪問密鑰ID，請參閱本 [頁](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
+要了解在何處查找您的AWS訪問密鑰ID，請參閱本 [頁](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
 
    * **[!UICONTROL Secret access key to AWS]**
-要瞭解在何處找到AWS的秘密訪問密鑰，請參閱本 [頁](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+要了解在何處查找您對AWS的秘密訪問密鑰，請參閱本 [頁](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
 
    * **[!UICONTROL AWS Region]**
-要瞭解有關AWS地區的更多資訊，請參閱本 [頁](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
+要了解有關AWS地區的更多資訊，請參 [閱本頁](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
    ![](assets/aam_config_2.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並設定&#x200B;**[!UICONTROL Import audiences from the Adobe Marketing Cloud]**&#x200B;外部帳戶，如前述步驟所述。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並設定&#x200B;**[!UICONTROL Import audiences from the Adobe Marketing Cloud]**&#x200B;外部帳戶，如先前步驟所述。
 
-您的外部帳戶現在已設定。
+您的外部帳戶現在已設定完畢。
 
 ## 步驟2:配置資料源{#step-2--configure-the-data-source}
 
-**收件者——訪客ID**&#x200B;是在Audience Manager中建立的。 這是預設為訪客ID設定的現成可用資料來源。 從「促銷活動」建立的區段將是此資料來源的一部分。
+**Recipient - Visitor ID**&#x200B;是在Audience Manager內建立。 這是預設為訪客ID設定的現成可用資料來源。 從Campaign建立的區段將屬於此資料來源。
 
-要配置&#x200B;**[!UICONTROL Recipient - Visitor ID]**&#x200B;資料源：
+配置&#x200B;**[!UICONTROL Recipient - Visitor ID]**&#x200B;資料源：
 
 1. 從&#x200B;**[!UICONTROL Explorer]**&#x200B;節點中，選擇&#x200B;**[!UICONTROL Administration > Platform > AMC Data sources]**。
 1. 選取 **[!UICONTROL Recipient - Visitor ID]**。
@@ -81,12 +80,12 @@ ht-degree: 2%
 
 ## 步驟3:設定促銷活動追蹤伺服器{#step-3--configure-campaign-tracking-server}
 
-若要設定與People Core服務或Audience Manager的整合，我們還需要設定促銷活動追蹤伺服器。
+若要設定與People核心服務或Audience Manager的整合，我們也需要設定Campaign追蹤伺服器。
 
-您必須確定「促銷活動追蹤伺服器」已註冊在網域(CNAME)上。 您可在[本文](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)中找到有關域名委派的更多資訊。
+您必須確定已在網域(CNAME)上註冊促銷活動追蹤伺服器。 您可以在[本文](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)中找到有關域名委派的更多資訊。
 
 ## 步驟4:設定訪客ID服務{#step-4--configure-the-visitor-id-service}
 
-若您的訪客ID服務從未在您的網站屬性或網站上設定，請參閱下列[document](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html)以瞭解如何設定您的服務或下列[video](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two)。
+如果您的訪客ID服務從未在您的Web屬性或網站上設定，請參閱下列[document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以了解如何設定您的服務或下列[video](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two) 。
 
-您的設定和布建已完成，整合現在可用來匯入和匯出觀眾或區段。
+您的設定和布建已完成，現在可以使用整合來匯入和匯出對象或區段。
