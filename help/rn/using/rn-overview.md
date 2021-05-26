@@ -7,11 +7,10 @@ feature: 概觀
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: ht
-source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: ht
-source-wordcount: '415'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 98%
 
 ---
 
@@ -63,8 +62,8 @@ ht-degree: 100%
 ## 支援和其他有效連結{#support}
 
 * [說明與支援](../../support.md)
-* [「控制面板」發行版本](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)
+* [「控制面板」發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
 * [最新文件更新](../../rn/using/documentation-updates.md)
-* [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
+* [已過時及已移除的功能](../../rn/using/deprecated-features.md)
 
 若要接收最新 Experience Cloud 解決方案發行版本的通知，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)。
