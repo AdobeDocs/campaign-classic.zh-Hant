@@ -18,30 +18,30 @@ ht-degree: 99%
 
 # Adobe Campaign Classic v7檔案 {#using}
 
-+ [Campaign v7檔案](campaign-classic-home.md)
++ [Campaign v7 文件](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
-+ 發行說明{#release-notes}
++ 發行說明 {#release-notes}
    + [開始升級](rn/using/rn-overview.md)
    + [最新發行版本](rn/using/latest-release.md)
    + [!DNL Gold Standard] 發行版本{#gs-release}
-      + [什麼是  [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [什麼是 [!DNL Gold Standard]](rn/using/gs-overview.md)
       + [[!DNL Gold Standard]發行說明](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] 相容性矩陣](rn/using/compatibility-matrix-gs.md)
-   + 先前版本{#previous-releases}
-      + [20.3 發行版本](rn/using/release--20-3.md)
+      + [[!DNL Gold Standard] 相容性對照表](rn/using/compatibility-matrix-gs.md)
+   + 先前版本 {#previous-releases}
+      + [第 20.3 發行版本](rn/using/release--20-3.md)
       + [第 20.2 發行版本](rn/using/release--20-2.md)
-      + [第20.1發行版本](rn/using/release--20-1.md)
-      + [第19.2發行版本](rn/using/release--19-2.md)
-      + [第19.1發行版本](rn/using/release--19-1.md)
-      + [第18.10發行版本](rn/using/release--18-10.md)
-      + [第18.6發行版本](rn/using/release--18-6.md)
-      + [第18.4發行版本](rn/using/release--18-4.md)
+      + [第 20.1 發行版本](rn/using/release--20-1.md)
+      + [第 19.2 發行版本](rn/using/release--19-2.md)
+      + [第 19.1 發行版本](rn/using/release--19-1.md)
+      + [第 18.10 發行版本](rn/using/release--18-10.md)
+      + [第 18.6 發行版本](rn/using/release--18-6.md)
+      + [第 18.4 發行版本](rn/using/release--18-4.md)
    + [已棄用功能](rn/using/deprecated-features.md)
-   + [相容性矩陣](rn/using/compatibility-matrix.md)
+   + [相容性對照表](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
    + [iOS 憑證更新](technotes/ios-certificate-update.md)
    + [Campaign 設定更新](technotes/acc-config-updates.md)
-   + [追蹤的 URL 更新](technotes/tracked-urls.md)
+   + [已追蹤的 URL 更新](technotes/tracked-urls.md)
 + 開始使用{#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
@@ -53,13 +53,13 @@ ht-degree: 99%
       + 常見問題集 {#faq}
          + [最常見的問題](platform/using/common-questions.md)
          + [全域概念](platform/using/faq-key-concepts.md)
-         + [Build 升級](platform/using/faq-build-upgrade.md)
+         + [版本編號升級](platform/using/faq-build-upgrade.md)
          + [隱私權](platform/using/privacy-faq.md)
-         + [閱聽眾](platform/using/faq-audiences.md)
+         + [對象](platform/using/faq-audiences.md)
          + [設計訊息](platform/using/faq-designing.md)
          + [傳送訊息](platform/using/faq-messages.md)
          + [工作流程](platform/using/faq-workflows.md)
-         + [配置](platform/using/faq-campaign-config.md)
+         + [設定](platform/using/faq-campaign-config.md)
          + [報告](platform/using/faq-reporting.md)
          + [開發](platform/using/faq-developers.md)
          + [教學課程](platform/using/tutorials.md)
@@ -67,7 +67,7 @@ ht-degree: 99%
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
       + [隱私權請求](platform/using/privacy-requests.md)
-   + 用戶檔案管理{#profile-management}
+   + 設定檔管理{#profile-management}
       + [關於設定檔](platform/using/about-profiles.md)
       + [編輯設定檔](platform/using/editing-a-profile.md)
       + [新增設定檔](platform/using/adding-profiles.md)
@@ -75,10 +75,10 @@ ht-degree: 99%
       + [更新資料](platform/using/updating-data.md)
       + [匯入及匯出設定檔](platform/using/exporting-and-importing-profiles.md)
       + [建立及管理清單](platform/using/creating-and-managing-lists.md)
-   + 匯入及匯出資料{#importing-and-exporting-data}
+   + 匯入及匯出資料 {#importing-and-exporting-data}
       + [開始使用匯入及匯出資料](platform/using/get-started-data-import-export.md)
       + [利用工作流程匯入及匯出資料](platform/using/import-export-workflows.md)
-      + 建立一般匯入和匯出{#generic-imports-exports}
+      + 建立一般匯入和匯出 {#generic-imports-exports}
          + [開始使用一般匯入和匯出](platform/using/about-generic-imports-exports.md)
          + [建立匯入和匯出範本](platform/using/creating-import-export-templates.md)
          + [建立匯入和匯出作業](platform/using/creating-import-export-jobs.md)
@@ -86,94 +86,94 @@ ht-degree: 99%
          + [設定匯出作業](platform/using/executing-export-jobs.md)
          + [監視作業執行](platform/using/monitoring-jobs-execution.md)
          + [一般匯入範例](platform/using/import-operations-samples.md)
-      + 管理資料加密和壓縮{#managing-data-encryption-compression}
-         + [處理前先解壓縮或解密檔案](platform/using/unzip-decrypt.md)
-         + [處理前先壓縮或加密檔案](platform/using/zip-encrypt.md)
+      + 管理資料加密和壓縮 {#managing-data-encryption-compression}
+         + [在處理前先解壓縮或解密檔案](platform/using/unzip-decrypt.md)
+         + [在處理前先壓縮或加密檔案](platform/using/zip-encrypt.md)
       + 最佳實務及疑難排解 {#best-practices}
          + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
          + [SFTP 伺服器最佳實務及疑難排解](platform/using/sftp-server-usage.md)
-   + 篩選資料{#filtering-data}
+   + 篩選資料 {#filtering-data}
       + [篩選選項](platform/using/filtering-options.md)
       + [建立篩選器](platform/using/creating-filters.md)
-      + [使用案例](platform/using/use-case.md)
-   + 建立查詢{#creating-queries}
+      + [使用實例](platform/using/use-case.md)
+   + 建立查詢 {#creating-queries}
       + [關於 Campaign 中的查詢](platform/using/about-queries-in-campaign.md)
       + [建立查詢的步驟](platform/using/steps-to-create-a-query.md)
       + [定義篩選條件](platform/using/defining-filter-conditions.md)
-   + 權限{#permissions}
+   + 權限 {#permissions}
       + [開始使用權限](platform/using/access-management.md)
       + [建立及管理操作者](platform/using/access-management-operators.md)
       + [建立和管理群組](platform/using/access-management-groups.md)
       + [使用已命名的權限來設定權限](platform/using/access-management-named-rights.md)
       + [管理對資料夾的存取](platform/using/access-management-folders.md)
-   + 資料套件和分項清單{#administration-basics}
+   + 資料套件和分項清單 {#administration-basics}
       + [資料套件](platform/using/working-with-data-packages.md)
       + [分項清單](platform/using/managing-enumerations.md)
-   + 連接器{#connectors}
+   + 連接器 {#connectors}
       + [關於連接器](platform/using/about-connectors.md)
       + CRM 連接器{#crm-connectors}
          + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
-         + [與 Microsoft Dynamics 365 連接](platform/using/crm-ms-dynamics.md)
-         + [與 Salesforce.com 連線](platform/using/crm-sfdc.md)
+         + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
+         + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector.md)
    + [說明與支援選項](support.md)
-+ 建立及傳送訊息{#sending-messages}
++ 建立及傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
-   + 建立傳遞時的主要步驟{#key-steps-when-creating-a-delivery}
-      + [開始傳遞](delivery/using/steps-about-delivery-creation-steps.md)
+   + 建立傳遞時的主要步驟 {#key-steps-when-creating-a-delivery}
+      + [開始使用傳遞](delivery/using/steps-about-delivery-creation-steps.md)
       + [建立並識別傳遞內容](delivery/using/steps-create-and-identify-the-delivery.md)
-      + [定義閱聽眾](delivery/using/steps-defining-the-target-population.md)
+      + [定義對象](delivery/using/steps-defining-the-target-population.md)
       + [驗證傳遞](delivery/using/steps-validating-the-delivery.md)
       + [傳送傳遞](delivery/using/steps-sending-the-delivery.md)
-      + 傳遞最佳實務{#delivery-bestpractices}
+      + 傳遞最佳實務 {#delivery-bestpractices}
          + [瞭解好的實務](delivery/using/delivery-best-practices.md)
          + [最佳化傳遞](delivery/using/optimize-delivery.md)
          + [使用範本](delivery/using/use-templates.md)
          + [建置個人化內容](delivery/using/design-and-personalize.md)
-         + [定義正確受眾](delivery/using/define-the-right-audience.md)
+         + [定義正確對象](delivery/using/define-the-right-audience.md)
          + [傳送前先檢查](delivery/using/check-before-sending.md)
          + [追蹤和監視](delivery/using/track-and-monitor.md)
    + 傳送電子郵件{#sending-emails}
       + [關於電子郵件頻道](delivery/using/about-email-channel.md)
       + [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
-      + [定義電子郵件內容。](delivery/using/defining-the-email-content.md)
+      + [定義電子郵件內容](delivery/using/defining-the-email-content.md)
       + [定義互動式內容](delivery/using/defining-interactive-content.md)
-      + 傳送電子郵件傳遞{#sending-an-email}
+      + 傳送電子郵件傳遞 {#sending-an-email}
          + [傳送電子郵件的主要步驟](delivery/using/sending-messages.md)
          + [電子郵件參數](delivery/using/email-parameters.md)
          + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
          + [在日文的行動裝置上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [附加檔案](delivery/using/attaching-files.md)
-   + 傳送 SMS {#sending-messages-on-mobiles}
+   + 傳送簡訊 {#sending-messages-on-mobiles}
       + [開始使用簡訊](delivery/using/sms-channel.md)
       + [設定簡訊頻道](delivery/using/sms-set-up.md)
       + [建立簡訊](delivery/using/sms-create.md)
       + [傳送及追蹤簡訊](delivery/using/sms-send.md)
-      + [SMS 連接器通訊協定及設定](delivery/using/sms-protocol.md)
-      + [SMS 疑難排解](delivery/using/troubleshooting-sms.md)
+      + [簡訊連接器通訊協定及設定](delivery/using/sms-protocol.md)
+      + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
       + [遷移到擴展的通用 SMPP 連接器](delivery/using/unsupported-connector-migration.md)
    + [傳送 LINE 訊息](delivery/using/line-channel.md)
-   + 傳送推送通知 {#sending-push-notifications}
+   + 傳送推播通知 {#sending-push-notifications}
       + [開始使用行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
       + [將 Campaign SDK 整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 設定行動應用程式{#configure-the-mobile-app}
-         + [開始使用應用程式配置](delivery/using/get-started-app-config.md)
-         + [針對 iOS 的配置步驟](delivery/using/configuring-the-mobile-application.md)
-         + [針對 Android 的配置步驟](delivery/using/configuring-the-mobile-application-android.md)
+         + [開始使用應用程式設定](delivery/using/get-started-app-config.md)
+         + [針對 iOS 的設定步驟](delivery/using/configuring-the-mobile-application.md)
+         + [針對 Android 的設定步驟](delivery/using/configuring-the-mobile-application-android.md)
       + [建立通知](delivery/using/creating-notifications.md)
       + [疑難排解](delivery/using/troubleshooting.md)
-   + 傳送直郵{#sending-direct-mail}
-      + [關於直郵頻道](delivery/using/about-direct-mail-channel.md)
-      + [建立新的直郵傳遞。](delivery/using/creating-a-direct-mail-delivery.md)
+   + 傳送直接郵件 {#sending-direct-mail}
+      + [關於直接郵件頻道](delivery/using/about-direct-mail-channel.md)
+      + [建立新的直接郵件傳遞](delivery/using/creating-a-direct-mail-delivery.md)
       + [定義直接郵件內容](delivery/using/defining-the-direct-mail-content.md)
       + [驗證](delivery/using/validating.md)
-   + 使用傳遞範本{#using-delivery-templates}
+   + 使用傳遞範本 {#using-delivery-templates}
       + [關於範本](delivery/using/about-templates.md)
-      + [設定傳遞範本](delivery/using/creating-a-delivery-template.md)
+      + [建立傳遞範本](delivery/using/creating-a-delivery-template.md)
       + [選擇目標對應](delivery/using/selecting-a-target-mapping.md)
-      + [從範本建立傳遞](delivery/using/creating-a-delivery-from-a-template.md)
-   + 個人化傳遞{#personalizing-deliveries}
+      + [使用範本建立傳遞](delivery/using/creating-a-delivery-from-a-template.md)
+   + 個人化傳遞 {#personalizing-deliveries}
       + [關於個人化](delivery/using/about-personalization.md)
       + [個人化欄位](delivery/using/personalization-fields.md)
       + [個人化區塊](delivery/using/personalization-blocks.md)
@@ -181,18 +181,18 @@ ht-degree: 99%
       + [個人化優惠券](delivery/using/personalized-coupons.md)
       + [產生個人化 PDF 文件](delivery/using/generating-personalized-pdf-documents.md)
       + [自訂表情符號清單](delivery/using/customizing-emoticon-list.md)
-   + 使用種子地址{#using-seed-addresses}
+   + 使用種子地址 {#using-seed-addresses}
       + [關於種子地址](delivery/using/about-seed-addresses.md)
       + [建立種子地址](delivery/using/creating-seed-addresses.md)
       + [新增種子地址](delivery/using/adding-seed-addresses.md)
       + [使用外部收件者表格](delivery/using/using-an-external-recipient-table.md)
-      + [使用案例：依條件選取種子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
-      + [使用案例：設定欄位替代](delivery/using/use-case--configuring-the-field-substitution.md)
+      + [使用實例：依條件選取種子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+      + [使用實例：設定欄位替代](delivery/using/use-case--configuring-the-field-substitution.md)
    + A/B 測試 {#a-b-testing}
       + [開始使用 A/B 測試](delivery/using/get-started-a-b-testing.md)
       + [設定 A/B 測試](delivery/using/configuring-a-b-testing.md)
-      + 使用案例 {#use-case}
-         + [關於此使用案例](delivery/using/a-b-testing-use-case.md)
+      + 使用實例 {#use-case}
+         + [關於此使用實例](delivery/using/a-b-testing-use-case.md)
          + [建立目標定位工作流程](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [設定母體樣本](delivery/using/a-b-testing-uc-population-samples.md)
          + [建立傳遞範本](delivery/using/a-b-testing-uc-delivery-templates.md)
@@ -201,7 +201,7 @@ ht-degree: 99%
          + [定義最終傳遞](delivery/using/a-b-testing-uc-final-delivery.md)
          + [開始工作流程](delivery/using/a-b-testing-uc-start-workflow.md)
          + [分析結果](delivery/using/a-b-testing-uc-analyzing.md)
-   + 服務與訂閱{#subscriptions-and-referrals}
+   + 服務與訂閱 {#subscriptions-and-referrals}
       + [關於服務與訂閱](delivery/using/about-services-and-subscriptions.md)
       + [管理訂閱](delivery/using/managing-subscriptions.md)
       + [病毒式行銷及社交行銷](delivery/using/viral-and-social-marketing.md)
@@ -217,8 +217,8 @@ ht-degree: 99%
       + [認識隔離管理](delivery/using/understanding-quarantine-management.md)
    + 追蹤訊息 {#tracking-messages}
       + [關於訊息追蹤](delivery/using/about-message-tracking.md)
-      + [如何配置追蹤的連結](delivery/using/how-to-configure-tracked-links.md)
-      + 追蹤個人化連結{#tracking-personalized-links}
+      + [如何設定追蹤的連結](delivery/using/how-to-configure-tracked-links.md)
+      + 追蹤個人化連結 {#tracking-personalized-links}
          + [開始使用個人化連結追蹤](delivery/using/tracking-personalized-links.md)
          + [偵測追蹤 URL](delivery/using/detecting-tracking-urls.md)
          + [追蹤的預處理指令](delivery/using/pre-processing-instructions.md)
@@ -226,18 +226,18 @@ ht-degree: 99%
       + [存取追蹤記錄](delivery/using/accessing-the-tracking-logs.md)
       + [測試追蹤](delivery/using/testing-tracking.md)
       + [追蹤疑難排解](delivery/using/tracking-troubleshooting.md)
-   + 傳遞能力管理{#deliverability-management}
-      + [什麼是傳遞能力](delivery/using/about-deliverability.md)
+   + 傳遞性管理 {#deliverability-management}
+      + [什麼是傳遞性](delivery/using/about-deliverability.md)
       + [控制訊息內容](delivery/using/control-message-content.md)
-      + [監視傳遞能力](delivery/using/monitoring-deliverability.md)
+      + [監視傳遞性](delivery/using/monitoring-deliverability.md)
       + [收件匣轉譯](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [疑難排解](delivery/using/deliverability-faq.md)
-   + 內容管理模組{#content-management}
+   + 內容管理模組 {#content-management}
       + [關於內容管理](delivery/using/about-content-management.md)
       + [內容管理員資源與原則](delivery/using/content-manager-resources-and-principles.md)
-      + [使用案例：建立內容管理](delivery/using/use-case--creating-content-management.md)
-      + [資料綱要](delivery/using/data-schemas.md)
+      + [使用實例：建立內容管理](delivery/using/use-case--creating-content-management.md)
+      + [資料方案](delivery/using/data-schemas.md)
       + [輸入表單](delivery/using/input-forms.md)
       + [格式](delivery/using/formatting.md)
       + [發佈範本](delivery/using/publication-templates.md)
@@ -248,16 +248,16 @@ ht-degree: 99%
    + 關於行銷活動{#about-marketing-campaigns}
       + [設計行銷活動](campaign/using/designing-marketing-campaigns.md)
       + [存取行銷活動](campaign/using/accessing-marketing-campaigns.md)
-   + 協調行銷活動{#orchestrate-campaigns}
+   + 協調行銷活動 {#orchestrate-campaigns}
       + [開始使用行銷活動](campaign/using/setting-up-marketing-campaigns.md)
       + [建立及設定範本](campaign/using/marketing-campaign-templates.md)
       + [新增傳遞](campaign/using/marketing-campaign-deliveries.md)
-      + [選取閱聽眾](campaign/using/marketing-campaign-target.md)
+      + [選取對象](campaign/using/marketing-campaign-target.md)
       + [管理文件和資產](campaign/using/marketing-campaign-assets.md)
       + [設定及管理核准](campaign/using/marketing-campaign-approval.md)
       + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
       + [供應商、庫存和預算](campaign/using/providers--stocks-and-budgets.md)
-   + 任務、資源和預算{#tasks--resources-and-budgets}
+   + 任務、資源和預算 {#tasks--resources-and-budgets}
       + [關於行銷資源管理](campaign/using/about-marketing-resource-management.md)
       + [建立及管理設定檔](campaign/using/creating-and-managing-tasks.md)
       + [控制成本](campaign/using/controlling-costs.md)
@@ -271,9 +271,9 @@ ht-degree: 99%
       + [篩選規則](campaign/using/filtering-rules.md)
       + [套用規則](campaign/using/applying-rules.md)
       + [Campaign 模擬](campaign/using/campaign-simulations.md)
-   + 分散式行銷{#distributed-marketing}
+   + 分散式行銷 {#distributed-marketing}
       + [關於分散式行銷](campaign/using/about-distributed-marketing.md)
-      + [建立本地行銷活動](campaign/using/creating-a-local-campaign.md)
+      + [建立本機行銷活動](campaign/using/creating-a-local-campaign.md)
       + [建立協作行銷活動](campaign/using/creating-a-collaborative-campaign.md)
       + [發佈行銷活動套件](campaign/using/publishing-the-campaign-package.md)
       + [存取行銷活動](campaign/using/accessing-campaigns.md)
@@ -281,7 +281,7 @@ ht-degree: 99%
       + [使用案例](campaign/using/examples.md)
    + 回應管理員{#response-manager}
       + [開始使用回應管理員](campaign/using/about-response-manager.md)
-      + [配置](campaign/using/configuration.md)
+      + [設定](campaign/using/configuration.md)
       + [假設範本](campaign/using/hypothesis-templates.md)
       + [建立假設](campaign/using/creating-hypotheses.md)
       + [假設追蹤](campaign/using/hypothesis-tracking.md)
@@ -294,17 +294,17 @@ ht-degree: 99%
       + [報告清單](reporting/using/list-of-reports.md)
    + 傳遞報表{#reports-on-deliveries}
       + [關於傳遞報表](reporting/using/reports-on-deliveries.md)
-      + [全域報表](reporting/using/global-reports.md)
-      + [傳遞報表](reporting/using/delivery-reports.md)
-      + [累積報表](reporting/using/cumulative-reports.md)
-      + [指示器計算](reporting/using/indicator-calculation.md)
+      + [全域報告](reporting/using/global-reports.md)
+      + [傳遞報告](reporting/using/delivery-reports.md)
+      + [累積報告](reporting/using/cumulative-reports.md)
+      + [指標計算](reporting/using/indicator-calculation.md)
       + [人員與收件者](reporting/using/person-people-recipients.md)
-   + 分析母體{#analyzing-populations}
+   + 分析母體 {#analyzing-populations}
       + [關於描述性分析](reporting/using/about-descriptive-analysis.md)
       + [使用描述性分析精靈](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [報吿設定](reporting/using/processing-a-report.md)
       + [使用案例](reporting/using/use-cases.md)
-   + 建立新報吿{#creating-new-reports}
+   + 建立新報吿 {#creating-new-reports}
       + [設計報吿的關鍵步驟](reporting/using/about-reports-creation-in-campaign.md)
       + [建立新報吿](reporting/using/creating-a-new-report.md)
       + [收集資料以進行分析](reporting/using/collecting-data-to-analyze.md)
@@ -315,12 +315,12 @@ ht-degree: 99%
       + [定義條件式內容](reporting/using/defining-a-conditional-content.md)
       + [進階功能](reporting/using/advanced-functionalities.md)
       + [報吿屬性](reporting/using/properties-of-the-report.md)
-      + [設定報表存取權](reporting/using/configuring-access-to-the-report.md)
+      + [設定報告存取權](reporting/using/configuring-access-to-the-report.md)
       + [針對報吿的動作](reporting/using/actions-on-reports.md)
-   + 設計含立方體的報吿{#designing-reports-with-cubes}
-      + [開始使用立方體](reporting/using/about-cubes.md)
+   + 以 cubes 設計報吿 {#designing-reports-with-cubes}
+      + [開始使用 cubes](reporting/using/about-cubes.md)
       + [建立指標](reporting/using/creating-indicators.md)
-      + [使用立方體來探索資料](reporting/using/using-cubes-to-explore-data.md)
+      + [使用 cubes 來探索資料](reporting/using/using-cubes-to-explore-data.md)
       + [概念和方法](reporting/using/concepts-and-methodology.md)
       + [使用案例：針對線上調查的回答顯示報吿](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 設計網頁內容{#designing-content}
@@ -332,15 +332,15 @@ ht-degree: 99%
       + [追蹤網站應用程式](web/using/translating-a-web-application.md)
       + [追蹤網站應用程式的瀏覽次數](web/using/tracking-a-web-application.md)
       + [網站應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
-   + 編輯 HTML 內容{#editing-html-content}
+   + 編輯 HTML 內容 {#editing-html-content}
       + [開始使用 HTML 編輯器](web/using/about-campaign-html-editor.md)
       + [範本管理](web/using/template-management.md)
       + [內容編輯器介面](web/using/content-editor-interface.md)
       + [編輯內容](web/using/editing-content.md)
       + [內容編輯最佳實務](web/using/content-editing-best-practices.md)
       + [設定登陸頁面](web/using/creating-a-landing-page.md)
-      + [使用案例：建立電子郵件傳遞](web/using/use-case--creating-an-email-delivery.md)
-   + 網路表單{#web-forms}
+      + [使用實例：建立電子郵件傳遞](web/using/use-case--creating-an-email-delivery.md)
+   + 網路表單 {#web-forms}
       + [開始使用網路表單](web/using/about-web-forms.md)
       + [使用網路表單範本](web/using/using-a-web-form-template.md)
       + [新增欄位至網路表單](web/using/adding-fields-to-a-web-form.md)
@@ -348,30 +348,30 @@ ht-degree: 99%
       + [定義網路表單版面](web/using/defining-web-forms-layout.md)
       + [表單轉譯](web/using/form-rendering.md)
       + [定義頁面順序](web/using/defining-web-forms-page-sequencing.md)
-      + [儲存網路表格答案](web/using/web-forms-answers.md)
+      + [儲存網路表單答案](web/using/web-forms-answers.md)
       + [發佈網路表單](web/using/publishing-a-web-form.md)
       + [定義網路表單屬性](web/using/defining-web-forms-properties.md)
-      + [發佈網路表單](web/using/translating-a-web-form.md)
-      + [使用案例：網路表單](web/using/use-cases--web-forms.md)
-   + 線上意見調查{#online-surveys}
+      + [翻譯網路表單](web/using/translating-a-web-form.md)
+      + [使用實例：網路表單](web/using/use-cases--web-forms.md)
+   + 線上意見調查 {#online-surveys}
       + [開始使用意見調查](web/using/about-surveys.md)
       + [建立調查的關鍵步驟](web/using/getting-started-with-surveys.md)
       + [設計調查](web/using/building-a-survey.md)
       + [管理答案](web/using/managing-answers.md)
       + [發佈、追蹤及使用收集的資料](web/using/publish--track-and-use-collected-data.md)
       + [設定調查](web/using/configuring-surveys.md)
-      + [使用案例：建立轉介表單](web/using/use-case--creating-a-refer-a-friend-form.md)
-+ 整合 ADobe Experience Cloud {#integrating-with-adobe-experience-cloud}
+      + [使用實例：建立轉介表單](web/using/use-case--creating-a-refer-a-friend-form.md)
++ 整合 Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
-   + 受眾分享{#audience-sharing}
-      + [分享閱聽眾，透過  [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+   + 對象分享 {#audience-sharing}
+      + [透過  [!DNL Adobe Experience Cloud] 分享對象](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向 Adobe 提交請求](integrations/using/submitting-request-to-adobe.md)
-      + [設定共用閱聽眾整合，於  [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [於  [!DNL Adobe Campaign] 設定共用對象整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [疑難排解](integrations/using/troubleshooting.md)
-      + [匯入和匯出閱聽眾](integrations/using/importing-and-exporting-audiences.md)
-   + 資產共用{#asset-sharing}
-      + [分享資產體驗，透過  [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [設定存取權至  [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+      + [匯入和匯出對象](integrations/using/importing-and-exporting-audiences.md)
+   + 資產共用 {#asset-sharing}
+      + [透過  [!DNL Adobe Experience Cloud] 分享資產體驗](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [設定存取權至 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [關於 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
@@ -379,34 +379,34 @@ ht-degree: 99%
       + [建立 [!DNL Experience Manager] 電子報](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [整合 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
-      + [設定整合，透過  [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
-   + ACS Connector {#acs-connector}
-      + [[!DNL ACS Connector] 原理和資料週期](integrations/using/acs-connector-principles-and-data-cycle.md)
+   + ACS 連結器 {#acs-connector}
+      + [[!DNL ACS Connector] 原則和資料週期](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步設定檔](integrations/using/synchronizing-profiles.md)
-      + [同步閱聽眾](integrations/using/synchronizing-audiences.md)
+      + [同步對象](integrations/using/synchronizing-audiences.md)
       + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
       + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-   + Adobe Experience Cloud Triggers {#experience-triggers}
+   + Adobe Experience Cloud 觸發因子 {#experience-triggers}
       + [開始使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [設定管線](integrations/using/configuring-pipeline.md)
       + [設定 Adobe I/O，用於 [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [設定自訂實施的事件](integrations/using/events.md)
       + [管線監視](integrations/using/pipeline-monitoring.md)
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform 來源和目標{#aep-sources-destinations}
+   + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
       + [開始使用來源和目標](integrations/using/get-started-sources-destinations.md)
-      + [將Adobe Experience Platform 閱聽眾獲取至 Campaign](integrations/using/ingest-aep-data.md)
+      + [將 Adobe Experience Platform 對象內嵌至 Campaign](integrations/using/ingest-aep-data.md)
       + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流程自動化{#automating-with-workflows}
    + 開始使用工作流程 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
       + [關於活動](workflow/using/about-activities.md)
-      + [建立工作流程](workflow/using/building-a-workflow.md)
+      + [建置工作流程](workflow/using/building-a-workflow.md)
       + [目標資料](workflow/using/targeting-data.md)
       + [使用工作流程資料](workflow/using/how-to-use-workflow-data.md)
       + [工作流程最佳實務](workflow/using/workflow-best-practices.md)
-   + 執行工作流程{#executing-a-workflow}
+   + 執行工作流程 {#executing-a-workflow}
       + [開始工作流程](workflow/using/starting-a-workflow.md)
       + [工作流程生命週期](workflow/using/workflow-life-cycle.md)
       + [資料生命週期](workflow/using/data-life-cycle.md)
@@ -417,44 +417,44 @@ ht-degree: 99%
       + [查詢](workflow/using/query.md)
       + [增量查詢](workflow/using/incremental-query.md)
       + [讀取清單](workflow/using/read-list.md)
-      + [聯集](workflow/using/union.md)
+      + [聯合](workflow/using/union.md)
       + [交集](workflow/using/intersection.md)
       + [排除](workflow/using/exclusion.md)
       + [分割](workflow/using/split.md)
       + [儲存格](workflow/using/cells.md)
-      + [依儲存格列出的優惠方案](workflow/using/offers-by-cell.md)
+      + [依儲存格列出的優惠](workflow/using/offers-by-cell.md)
       + [傳遞大綱](workflow/using/delivery-outline.md)
       + [擴充](workflow/using/enrichment.md)
-      + [編輯綱要](workflow/using/edit-schema.md)
-      + [優惠方案引擎](workflow/using/offer-engine.md)
-      + [重複資料刪除](workflow/using/deduplication.md)
+      + [編輯方案](workflow/using/edit-schema.md)
+      + [優惠引擎](workflow/using/offer-engine.md)
+      + [去重複化](workflow/using/deduplication.md)
       + [變更維度](workflow/using/change-dimension.md)
       + [清單更新](workflow/using/list-update.md)
       + [訂閱服務](workflow/using/subscription-services.md)
       + [更新資料](workflow/using/update-data.md)
-      + [CRM Connector](workflow/using/crm-connector.md)
+      + [CRM 連結器](workflow/using/crm-connector.md)
    + 流量控制活動 {#flow-control-activities}
       + [關於流量控制活動](workflow/using/about-flow-control-activities.md)
       + [開始和結束](workflow/using/start-and-end.md)
       + [分支](workflow/using/fork.md)
-      + [合併連結](workflow/using/and-join.md)
+      + [AND-join](workflow/using/and-join.md)
       + [排程器](workflow/using/scheduler.md)
       + [測試](workflow/using/test.md)
       + [等待](workflow/using/wait.md)
       + [時間限制](workflow/using/time-constraint.md)
       + [子工作流程](workflow/using/sub-workflow.md)
-      + [跳到 (起點和終點)](workflow/using/jump--start-point-and-end-point-.md)
+      + [跳至 (起點和終點)](workflow/using/jump--start-point-and-end-point-.md)
       + [外部訊號](workflow/using/external-signal.md)
       + [核准](workflow/using/approval.md)
       + [警報](workflow/using/alert.md)
       + [任務](workflow/using/task.md)
    + 動作活動 {#action-activities}
       + [關於動作活動](workflow/using/about-action-activities.md)
-      + [傳送](workflow/using/delivery.md)
+      + [傳遞](workflow/using/delivery.md)
       + [傳遞控制](workflow/using/delivery-control.md)
       + [持續傳遞](workflow/using/continuous-delivery.md)
       + [重複傳送](workflow/using/recurring-delivery.md)
-      + [跨通道傳遞](workflow/using/cross-channel-deliveries.md)
+      + [跨頻道傳遞](workflow/using/cross-channel-deliveries.md)
       + [本地核准](workflow/using/local-approval.md)
       + [資料載入 (RDBMS)](workflow/using/data-loading--rdbms-.md)
       + [載入 (SOAP)](workflow/using/loading--soap-.md)
@@ -471,29 +471,29 @@ ht-degree: 99%
       + [檔案傳輸](workflow/using/file-transfer.md)
       + [網頁下載](workflow/using/web-download.md)
       + [傳入電子郵件](workflow/using/inbound-emails.md)
-      + [傳入 SMS](workflow/using/inbound-sms.md)
-   + 使用案例 {#use-cases}
-      + [關於工作流程使用案例](workflow/using/about-workflow-use-cases.md)
+      + [傳入簡訊](workflow/using/inbound-sms.md)
+   + 使用實例 {#use-cases}
+      + [關於工作流程使用實例](workflow/using/about-workflow-use-cases.md)
       + 傳遞 {#deliveries}
-         + [使用本機核准活動](workflow/using/using-the-local-approval-activity.md)
+         + [使用本地核准活動](workflow/using/using-the-local-approval-activity.md)
          + [傳送生日電子郵件](workflow/using/sending-a-birthday-email.md)
          + [載入傳遞內容](workflow/using/loading-delivery-content.md)
-         + [跨通道傳遞工作流程](workflow/using/cross-channel-delivery-workflow.md)
+         + [跨頻道傳遞工作流程](workflow/using/cross-channel-delivery-workflow.md)
          + [使用自訂日期欄位擴充電子郵件](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + 監控{#monitoring}
+      + 監視 {#monitoring}
          + [傳送報吿至清單](workflow/using/sending-a-report-to-a-list.md)
          + [監督您的工作流程](workflow/using/supervising-workflows.md)
          + [傳送個人化警示給營運商](workflow/using/sending-personalized-alerts-to-operators.md)
-      + 資料管理{#data-management}
+      + 資料管理 {#data-management}
          + [協調資料更新](workflow/using/coordinating-data-updates.md)
          + [建立摘要清單](workflow/using/creating-a-summary-list.md)
          + [豐富資料](workflow/using/enriching-data.md)
          + [使用彙總](workflow/using/using-aggregates.md)
-         + [使用重複資料刪除活動的合併功能](workflow/using/deduplication-merge.md)
+         + [使用去重複化活動的合併功能](workflow/using/deduplication-merge.md)
          + [設定週期性匯入工作流程](workflow/using/recurring-import-workflow.md)
-      + 設計查詢{#designing-queries}
+      + 設計查詢 {#designing-queries}
          + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
-      + 查詢和篩選{#designing-queries}
+      + 查詢和篩選器 {#designing-queries}
          + [查詢收件者表格](workflow/using/querying-recipient-table.md)
          + [查詢傳遞資訊](workflow/using/querying-delivery-information.md)
          + [執行彙總運算](workflow/using/performing-aggregate-computing.md)
@@ -501,8 +501,8 @@ ht-degree: 99%
          + [使用多對多關係進行查詢](workflow/using/querying-using-many-to-many-relationship.md)
          + [新增分項清單類型計算欄位](workflow/using/adding-enumeration-type-calculated-field.md)
          + [建立篩選器](workflow/using/creating-a-filter.md)
-         + [篩選複製的收件者](workflow/using/filtering-duplicated-recipients.md)
-   + 監視工作流程{#monitoring-workflows}
+         + [篩選重複的收件者](workflow/using/filtering-duplicated-recipients.md)
+   + 監視工作流程 {#monitoring-workflows}
       + [監視工作流程的執行](workflow/using/monitoring-workflow-execution.md)
       + [監視技術工作流程](workflow/using/monitoring-technical-workflows.md)
       + [工作流程熱度圖](workflow/using/heatmap.md)
@@ -516,22 +516,22 @@ ht-degree: 99%
       + [管理時區](workflow/using/managing-time-zones.md)
       + [技術工作流程](workflow/using/about-technical-workflows.md)
 + 管理優惠方案{#managing-offers}
-   + 開始互動{#interaction-overview}
-      + [互動與優惠方案管理](interaction/using/interaction-and-offer-management.md)
+   + 開始使用互動 {#interaction-overview}
+      + [互動與優惠管理](interaction/using/interaction-and-offer-management.md)
       + [字彙](interaction/using/glossary.md)
       + [互動最佳實務](interaction/using/interaction-best-practices.md)
    + 一般操作 {#general-operation}
       + [實施步驟](interaction/using/implementation-steps.md)
       + [基本原則](interaction/using/fundamental-principles.md)
-   + 管理環境{#managing-environments}
-      + [環境概觀](interaction/using/environments-overview.md)
-      + [運算元用戶檔案](interaction/using/operator-profiles.md)
+   + 管理環境 {#managing-environments}
+      + [環境概覽](interaction/using/environments-overview.md)
+      + [運算子設定檔](interaction/using/operator-profiles.md)
       + [即時/設計環境](interaction/using/live-design-environments.md)
-      + [建立優惠方案空間](interaction/using/creating-offer-spaces.md)
-      + [建立預先定義的篩選器](interaction/using/creating-predefined-filters.md)
-   + 管理優惠方案目錄 {#managing-an-offer-catalog}
-      + [優惠方案目錄概觀](interaction/using/offer-catalog-overview.md)
-      + [建立優惠方案類別](interaction/using/creating-offer-categories.md)
+      + [建立優惠空間](interaction/using/creating-offer-spaces.md)
+      + [建立預定義的篩選器](interaction/using/creating-predefined-filters.md)
+   + 管理優惠目錄 {#managing-an-offer-catalog}
+      + [優惠目錄概覽](interaction/using/offer-catalog-overview.md)
+      + [建立優惠類別](interaction/using/creating-offer-categories.md)
       + [建議類別](interaction/using/recommending-a-category.md)
       + [建立優惠方案](interaction/using/creating-an-offer.md)
       + [核准並啟用優惠方案](interaction/using/approving-and-activating-an-offer.md)
@@ -542,36 +542,36 @@ ht-degree: 99%
       + [執行設定](interaction/using/execution-settings.md)
       + [模擬範圍](interaction/using/simulation-scope.md)
       + [模擬追蹤](interaction/using/simulation-tracking.md)
-   + 傳遞優惠方案{#delivering-an-offer}
+   + 傳遞優惠方案 {#delivering-an-offer}
       + [關於傳出頻道](interaction/using/about-outbound-channels.md)
-      + [透過精靈整合優惠方案](interaction/using/integrating-an-offer-via-the-wizard.md)
-      + [透過工作流程整合優惠方案](interaction/using/integrating-an-offer-via-a-workflow.md)
-   + 單一互動{#unitary-interactions}
+      + [透過精靈整合優惠](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [透過工作流程整合優惠](interaction/using/integrating-an-offer-via-a-workflow.md)
+   + 單一互動 {#unitary-interactions}
       + [關於傳入頻道](interaction/using/about-inbound-channels.md)
       + [透過 JavaScript 進行整合 (用戶端)](interaction/using/integration-via-javascript--client-side-.md)
       + [透過 SOAP 整合 (伺服器端)](interaction/using/integration-via-soap--server-side-.md)
       + [匿名互動](interaction/using/anonymous-interactions.md)
-   + 追蹤優惠方案{#tracking-offers}
-      + [優惠方案主張歷程記錄](interaction/using/offer-proposition-history.md)
-      + [優惠方案分析報表](interaction/using/offer-analysis-report.md)
-   + 高級參數 {#advanced-parameters}
+   + 追蹤優惠 {#tracking-offers}
+      + [優惠主張歷史記錄](interaction/using/offer-proposition-history.md)
+      + [優惠分析報告](interaction/using/offer-analysis-report.md)
+   + 進階參數 {#advanced-parameters}
       + [使用進階參數](interaction/using/using-advanced-parameters.md)
       + [其他資料](interaction/using/additional-data.md)
       + [擴充功能範例](interaction/using/extension-example.md)
       + [建立測試環境](interaction/using/creating-a-test-environment.md)
-      + [鈎點](interaction/using/hooks.md)
+      + [勾點](interaction/using/hooks.md)
       + [分佈式架構](interaction/using/distributed-architectures.md)
       + [資料緩衝區設定](installation/using/interaction---data-buffer.md)
-   + 使用案例 {#case-study}
+   + 使用實例 {#case-study}
       + [簡報規則](interaction/using/presentation-rules.md)
-      + [傳入頻道上的優惠方案](interaction/using/offers-on-an-inbound-channel.md)
-      + [對出頻道上的優惠方案](interaction/using/offers-on-an-outbound-channel.md)
+      + [傳入頻道上的優惠](interaction/using/offers-on-an-inbound-channel.md)
+      + [傳出頻道上的優惠](interaction/using/offers-on-an-outbound-channel.md)
 + 傳送異動訊息 {#transactional-messaging}
    + 開始使用異動訊息 {#introduction}
-      + [關於交易式訊息傳送](message-center/using/about-transactional-messaging.md)
-      + [交易式傳訊架構](message-center/using/transactional-messaging-architecture.md)
+      + [關於異動訊息傳送](message-center/using/about-transactional-messaging.md)
+      + [異動傳訊架構](message-center/using/transactional-messaging-architecture.md)
       + [事件說明](message-center/using/event-description.md)
-   + 設定執行個體{#instance-configuration}
+   + 設定執行個體 {#instance-configuration}
       + [建立共用連線](message-center/using/creating-a-shared-connection.md)
       + [識別執行個體](message-center/using/identifying-execution-instances.md)
       + [監視臨界值](message-center/using/monitoring-thresholds.md)
@@ -585,30 +585,30 @@ ht-degree: 99%
       + [建立訊息內容](message-center/using/creating-message-content.md)
       + [管理異動訊息中的種子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [個人化資料](message-center/using/personalization-data.md)
-      + [交易式訊息預覽](message-center/using/transactional-message-preview.md)
+      + [異動訊息預覽](message-center/using/transactional-message-preview.md)
       + [傳送證明](message-center/using/sending-a-proof.md)
       + [範本發佈](message-center/using/template-publication.md)
       + [範本取消發佈](message-center/using/template-unpublication.md)
    + 事件處理 {#event-processing}
       + [關於事件處理](message-center/using/about-event-processing.md)
       + [事件集合](message-center/using/event-collection.md)
-      + [路由至模板](message-center/using/routing-towards-a-template.md)
+      + [路由至範本](message-center/using/routing-towards-a-template.md)
       + [傳遞執行](message-center/using/delivery-execution.md)
-   + 報表 {#reports}
-      + [關於交易式傳訊報表](message-center/using/about-transactional-messaging-reports.md)
-      + [訊息中心事件的歷程記錄](message-center/using/history-of-message-center-events.md)
+   + 報告 {#reports}
+      + [關於異動訊息傳送報告](message-center/using/about-transactional-messaging-reports.md)
+      + [訊息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
       + [訊息中心服務層級](message-center/using/message-center-service-level.md)
       + [訊息中心處理時間](message-center/using/message-center-processing-time.md)
-   + 使用案例 {#use-case}
+   + 使用實例 {#use-case}
       + [傳送含附件的異動電子郵件](message-center/using/transactional-email-with-attachments.md)
 + 整合社交媒體 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
    + 設定 {#configuration}
       + [開始工作流程](social/using/starting-workflows.md)
-      + [在 Facebook 塗鴉牆上發佈](social/using/publishing-on-facebook-walls.md)
+      + [在 Facebook 動態上發佈](social/using/publishing-on-facebook-walls.md)
       + [建立 Facebook 應用程式](social/using/creating-a-facebook-application.md)
       + [在 Twitter 上設定發佈](social/using/configuring-publishing-on-twitter.md)
-   + 在社交媒體上發佈{#publishing-on-facebook-twitter}
+   + 在社交媒體上發佈 {#publishing-on-facebook-twitter}
       + [概覽](social/using/overview.md)
       + [在 Facebook 上發佈](social/using/publishing-on-facebook.md)
       + [在 Twitter 上發佈](social/using/publishing-on-twitter.md)
@@ -616,12 +616,12 @@ ht-degree: 99%
       + [Facebook 應用程式範例](social/using/examples-of-facebook-apps.md)
       + [追蹤](social/using/tracking.md)
 + 安裝及設定指南 {#installing-campaign-classic}
-   + 架構原則{#architecture-and-hosting-models}
-      + [通用架構](installation/using/general-architecture.md)
+   + 架構原則 {#architecture-and-hosting-models}
+      + [一般架構](installation/using/general-architecture.md)
       + 託管模型{#hosting-models-lp}
          + [行銷活動託管模型](installation/using/hosting-models.md)
-         + [功能矩陣](installation/using/capability-matrix.md)
-   + 部署類型{#deployment-types-}
+         + [功能對照表](installation/using/capability-matrix.md)
+   + 部署類型 {#deployment-types-}
       + [關於部署類型](installation/using/about-deployment-types.md)
       + [獨立部署](installation/using/standalone-deployment.md)
       + [標準部署](installation/using/standard-deployment.md)
@@ -635,70 +635,70 @@ ht-degree: 99%
       + [指令碼和程式碼指南](installation/using/scripting-coding-guidelines.md)
       + [網路、資料庫和 SSL/TLS](installation/using/network-database.md)
       + [伺服器安全性設定](installation/using/server-configuration.md)
-      + [Web 伺服器安全設定](installation/using/web-server-configuration.md)
+      + [網路伺服器安全設定](installation/using/web-server-configuration.md)
    + 安裝 Campaign（內部部署）{#install-campaign-on-prem}
       + 部署指南{#deployment-guidelines}
          + [資料庫伺服器](installation/using/database.md)
          + [應用程式伺服器](installation/using/application-server.md)
          + [傳訊伺服器](installation/using/messaging-server.md)
-         + [網路配置](installation/using/network-configuration.md)
-      + 在 Windows 上的 Campaign{#installing-campaign-in-windows-}
+         + [網路設定](installation/using/network-configuration.md)
+      + Windows 上的 Campaign {#installing-campaign-in-windows-}
          + [開始使用](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [安裝伺服器](installation/using/installing-the-server.md)
-         + [整合至 Web 伺服器 (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
-         + [Windows 用戶端主控台的可用性](installation/using/client-console-availability-for-windows.md)
-      + 在 Linux 上的 Campaign{#installing-campaign-in-linux-}
-         + [必要條件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+         + [整合至網路伺服器 (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
+         + [Windows 用戶端控制台的可用性](installation/using/client-console-availability-for-windows.md)
+      + Linux 上的 Campaign{#installing-campaign-in-linux-}
+         + [先決條件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [安裝套件](installation/using/installing-packages-with-linux.md)
-         + [整合至 Web 伺服器](installation/using/integration-into-a-web-server-for-linux.md)
+         + [整合至網站伺服器](installation/using/integration-into-a-web-server-for-linux.md)
       + [時區管理](installation/using/time-zone-management.md)
       + [安裝中間來源伺服器](installation/using/mid-sourcing-server.md)
-   + 部署 Campaign（內部部署）{#initial-configuration}
-      + [關鍵步驟](installation/using/about-initial-configuration.md)
+   + 部署 Campaign (內部部署) {#initial-configuration}
+      + [主要步驟](installation/using/about-initial-configuration.md)
       + [建立執行個體並登入](installation/using/creating-an-instance-and-logging-on.md)
       + [建立及設定資料庫](installation/using/creating-and-configuring-the-database.md)
       + [部署執行個體](installation/using/deploying-an-instance.md)
       + [安裝內建套件](installation/using/installing-campaign-standard-packages.md)
-   + 設定 Campaign{#additional-configurations}
+   + 設定 Campaign {#additional-configurations}
       + [Campaign 伺服器設定](installation/using/configuring-campaign-server.md)
       + [定義安全區](installation/using/security-zones.md)
       + [設定 URL 權限](installation/using/url-permissions.md)
       + [檔案與資源](installation/using/file-res-management.md)
       + [設定 Tomcat](installation/using/configure-tomcat.md)
-      + [設定傳送設定](installation/using/configure-delivery-settings.md)
+      + [設定傳遞設定](installation/using/configure-delivery-settings.md)
       + [技術電子郵件設定](installation/using/email-deliverability.md)
       + [以 Campaign 使用 MX 伺服器](installation/using/using-mx-servers.md)
       + [設定電子郵件密件副本](installation/using/email-archiving.md)
       + [設定 SpamAssassin](installation/using/configuring-spamassassin.md)
    + 連結 Campaign{#connect-to-campaign}
-      + [安裝用戶端主控台](installation/using/installing-the-client-console.md)
+      + [安裝用戶端控制台](installation/using/installing-the-client-console.md)
       + 透過 Adobe ID 連線 {#connecting-via-an-adobe-id}
          + [關於 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [設定 Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
          + [實施 Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
          + [IMS 疑難排解](integrations/using/ims-troubleshooting.md)
       + [透過 LDAP 連線](installation/using/connecting-through-ldap.md)
-   + 連線 Campaign 至外部系統{#accessing-external-database}
+   + 連線 Campaign 至外部系統 {#accessing-external-database}
       + [設定外部帳戶](installation/using/external-accounts.md)
       + 設定同盟資料存取{#configure-fda}
          + [開始使用同盟資料存取](installation/using/about-fda.md)
          + [最佳實務和限制](installation/using/fda-best-practices.md)
-         + 配置指南 {#config-databases}
-            + [配置步驟](installation/using/configure-fda.md)
-            + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
-            + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
-            + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
-            + [配置 Oracle](installation/using/configure-fda-oracle.md)
-            + [配置 Netezza](installation/using/configure-fda-netezza.md)
-            + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
-            + [配置 Teradata](installation/using/configure-fda-teradata.md)
-            + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
+         + 設定指南 {#config-databases}
+            + [設定步驟](installation/using/configure-fda.md)
+            + [設定 Snowflake](installation/using/configure-fda-snowflake.md)
+            + [設定 Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [設定 Hadoop](installation/using/configure-fda-hadoop.md)
+            + [設定 Oracle](installation/using/configure-fda-oracle.md)
+            + [設定 Netezza](installation/using/configure-fda-netezza.md)
+            + [設定 Sybase IQ](installation/using/configure-fda-sybase.md)
+            + [設定 Teradata](installation/using/configure-fda-teradata.md)
+            + [設定 SAP HANA](installation/using/configure-fda-sap-hana.md)
          + [遠端存取權限](installation/using/remote-database-access-rights.md)
          + [連結資料庫](installation/using/connecting-to-database.md)
-         + [建立資料架構](installation/using/creating-data-schema.md)
+         + [建立資料方案](installation/using/creating-data-schema.md)
          + [定義資料對應](installation/using/defining-data-mapping.md)
    + 附錄 {#appendices}
-      + [伺服器配置檔案](installation/using/the-server-configuration-file.md)
+      + [伺服器設定檔案](installation/using/the-server-configuration-file.md)
       + [Campaign 網路端點](installation/using/campaign-network-endpoints.md)
       + [命令列](installation/using/command-lines.md)
       + [建立新執行個體](installation/using/creating-new-instances.md)
@@ -707,67 +707,67 @@ ht-degree: 99%
 + 監視指南 {#monitoring-campaign-classic}
    + 簡介 {#introduction}
       + [前言](production/using/foreword.md)
-      + [通用架構](production/using/general-architecture.md)
-      + [監視准則](production/using/monitoring-guidelines.md)
+      + [一般架構](production/using/general-architecture.md)
+      + [監視指南](production/using/monitoring-guidelines.md)
    + 生產程序 {#production-procedures}
       + [設定原則](production/using/configuration-principle.md)
       + [操作原則](production/using/operating-principle.md)
-      + [管理員](production/using/administration.md)
-      + [配置](production/using/configuration.md)
-      + [日誌檔案](production/using/log-files.md)
+      + [管理](production/using/administration.md)
+      + [設定](production/using/configuration.md)
+      + [記錄檔案](production/using/log-files.md)
       + [監視流程](production/using/monitoring-processes.md)
-      + [常用命令](production/using/usual-commands.md)
+      + [常用指令](production/using/usual-commands.md)
       + [稽核軌跡](production/using/audit-trail.md)
    + 資料處理 {#data-processing}
       + [備份](production/using/backup.md)
       + [復原](production/using/restoration.md)
       + [複製環境](production/using/duplicating-environments.md)
       + [資料庫清除工作流程](production/using/database-cleanup-workflow.md)
-   + 更新 Adobe Campaign{#updating-adobe-campaign}
+   + 更新 Adobe Campaign {#updating-adobe-campaign}
       + [簡介](production/using/introduction.md)
       + [執行建置升級](production/using/build-upgrade.md)
-      + [升級程式（內部部署）](production/using/upgrading.md)
+      + [升級程序 (內部部署)](production/using/upgrading.md)
       + [切換至 Unicode](production/using/switching-to-unicode.md)
       + [移轉程序](production/using/migration-procedures.md)
    + 資料庫維護 {#database-maintenance}
       + [建議](production/using/recommendations.md)
-      + [要維護的資料表](production/using/tables-to-maintain.md)
+      + [需維護的表格](production/using/tables-to-maintain.md)
       + [維護類型](production/using/types-of-maintenance.md)
       + [RDBMS 特定建議](production/using/rdbms-specific-recommendations.md)
       + [應用程式物件](production/using/application-objects.md)
-   + 疑難排解{#troubleshooting-toc}
-      + [生產疑難排解概觀](production/using/troubleshooting.md)
-      + 常見及一般問題{#common-general-issues-toc}
+   + 疑難排解 {#troubleshooting-toc}
+      + [生產疑難排解概覽](production/using/troubleshooting.md)
+      + 常見及一般問題 {#common-general-issues-toc}
          + [模組和常見問題](production/using/modules-and-frequent-issues.md)
          + [工作流程執行](production/using/workflow-execution.md)
          + [遺失密碼](production/using/lost-password.md)
-         + [主控台更新](production/using/console-update.md)
+         + [控制台更新](production/using/console-update.md)
       + 傳遞疑難排解 {#delivery-troubleshooting-toc}
          + [效能和輸送量的相關問題](production/using/performance-and-throughput-issues.md)
          + [影像顯示問題](production/using/image-display-issues.md)
          + [影像遺失](production/using/images-missing.md)
          + [臨時檔案](production/using/temporary-files.md)
-      + 使用日誌{#working-with-log-toc}
-         + [記錄精確度](production/using/log-precision.md)
-         + [追蹤記錄問題](production/using/tracking-logs-issues.md)
-      + 資料庫問題{#database-issues-toc}
+      + 使用記錄檔 {#working-with-log-toc}
+         + [記錄檔精確度](production/using/log-precision.md)
+         + [追蹤記錄檔問題](production/using/tracking-logs-issues.md)
+      + 資料庫問題 {#database-issues-toc}
          + [資料庫效能](production/using/database-performances.md)
          + [Oracle 資料庫的編碼](production/using/encoding-of-the-oracle-database.md)
-      + 連線增強功能{#connection-improvements-toc}
+      + 連線改善 {#connection-improvements-toc}
          + [無法連線](production/using/failure-to-connect.md)
          + [連線閾值](production/using/connection-thresholds.md)
-      + 技術疑難排解{#technical-troubleshooting-toc}
+      + 技術疑難排解 {#technical-troubleshooting-toc}
          + [Linux 中的堆疊追蹤](production/using/stack-trace-in-linux.md)
          + [JSP 行為](production/using/jsp-behavior.md)
-         + [找到 Tomcat 版本](production/using/locate-tomcat-version.md)
+         + [定位 Tomcat 版本](production/using/locate-tomcat-version.md)
 + 開發人員指南 {#configuring-campaign-classic}
    + 資料模型 {#data-model}
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
       + [最佳實務](configuration/using/data-model-best-practices.md)
-   + 綱要參考 {#schema-reference}
-      + [關於綱要參考](configuration/using/about-schema-reference.md)
-      + [綱要結構](configuration/using/schema-structure.md)
+   + 方案參考 {#schema-reference}
+      + [關於方案參考](configuration/using/about-schema-reference.md)
+      + [方案結構](configuration/using/schema-structure.md)
       + [資料庫對應](configuration/using/database-mapping.md)
       + 元素和屬性 {#elements-attributes}
          + [簡介](configuration/using/schema-introduction.md)
@@ -776,11 +776,11 @@ ht-degree: 99%
          + [條件](configuration/using/schema/condition.md)
          + [資料庫索引](configuration/using/schema/db-index.md)
          + [元素](configuration/using/schema/element.md)
-         + [枚舉](configuration/using/schema/enumeration.md)
+         + [分項清單](configuration/using/schema/enumeration.md)
          + [說明](configuration/using/schema/help.md)
          + [加入](configuration/using/schema/join.md)
-         + [機碼](configuration/using/schema/key.md)
-         + [Keyfield](configuration/using/schema/keyfield.md)
+         + [金鑰](configuration/using/schema/key.md)
+         + [金鑰欄位](configuration/using/schema/keyfield.md)
          + [方法](configuration/using/schema/method.md)
          + [方法](configuration/using/schema/methods.md)
          + [參數](configuration/using/schema/param.md)
@@ -788,25 +788,25 @@ ht-degree: 99%
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
          + [值](configuration/using/schema/value.md)
-   + 編輯綱要 {#editing-schemas}
-      + [關於綱要版本](configuration/using/about-schema-edition.md)
-      + [資料綱要](configuration/using/data-schemas.md)
-      + [現有資料表的綱要](configuration/using/schema-of-an-existing-table.md)
-      + [擴展綱要](configuration/using/extending-a-schema.md)
-      + [篩選綱要](configuration/using/filtering-schemas.md)
+   + 編輯方案 {#editing-schemas}
+      + [關於方案版本](configuration/using/about-schema-edition.md)
+      + [資料方案](configuration/using/data-schemas.md)
+      + [現有表格方案](configuration/using/schema-of-an-existing-table.md)
+      + [擴展方案](configuration/using/extending-a-schema.md)
+      + [篩選方案](configuration/using/filtering-schemas.md)
       + [限制 PII 檢視](configuration/using/restricting-pii-view.md)
       + [更新資料庫結構](configuration/using/updating-the-database-structure.md)
       + [新增欄位精靈](configuration/using/new-field-wizard.md)
-      + [資料模式的結構](configuration/using/structure-of-a-data-schema.md)
-      + [重新生成結構](configuration/using/regenerating-schemas.md)
+      + [資料方案結構](configuration/using/structure-of-a-data-schema.md)
+      + [重新產生方案](configuration/using/regenerating-schemas.md)
       + [方案版本範例](configuration/using/examples-of-schemas-edition.md)
    + 輸入表單 {#input-forms}
       + [識別表單](configuration/using/identifying-a-form.md)
-      + [編輯表格](configuration/using/editing-forms.md)
+      + [編輯表單](configuration/using/editing-forms.md)
       + [表單結構](configuration/using/form-structure.md)
    + API {#api}
-      + [關於 web 服務](configuration/using/about-web-services.md)
-      + [Web服務呼叫](configuration/using/web-service-calls.md)
+      + [關於 Web 服務](configuration/using/about-web-services.md)
+      + [Web 服務呼叫](configuration/using/web-service-calls.md)
       + [資料導向 API](configuration/using/data-oriented-apis.md)
       + [商業導向 API](configuration/using/business-oriented-apis.md)
       + [實施 SOAP 方法](configuration/using/implementing-soap-methods.md)
@@ -817,26 +817,26 @@ ht-degree: 99%
       + [編輯瀏覽器階層](configuration/using/edition.md)
    + 使用自訂收件者表格 {#use-a-custom-recipient-table}
       + [關於自訂收件者表格](configuration/using/about-custom-recipient-table.md)
-      + [綱要特性](configuration/using/schema-characteristics.md)
+      + [方案特性](configuration/using/schema-characteristics.md)
       + [目標對應](configuration/using/target-mapping.md)
       + [設定介面](configuration/using/configuring-the-interface.md)
       + [種子地址](configuration/using/seed-addresses.md)
-      + [建立篩選](configuration/using/creating-filters.md)
-      + [使用工作流建立設定檔清單](configuration/using/creating-a-profile-list-with-a-workflow.md)
+      + [建立篩選器](configuration/using/creating-filters.md)
+      + [使用工作流程建立設定檔清單](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [管理工作流程](configuration/using/managing-workflows.md)
-      + [管理報表](configuration/using/managing-reports.md)
-   + 設定網頁追蹤 {#setting-up-web-tracking}
-      + [關於網頁追蹤](configuration/using/about-web-tracking.md)
+      + [管理報告](configuration/using/managing-reports.md)
+   + 設定網路追蹤 {#setting-up-web-tracking}
+      + [關於網路追蹤](configuration/using/about-web-tracking.md)
       + [網路追蹤模式](configuration/using/web-tracking-mode.md)
-      + [網頁追蹤標籤：定義](configuration/using/web-tracking-tag--definition.md)
+      + [網路追蹤標籤：定義](configuration/using/web-tracking-tag--definition.md)
       + [設定階段](configuration/using/setup-stages.md)
       + [其他參數](configuration/using/additional-parameters.md)
-      + [建立網頁追蹤標籤](configuration/using/creating-web-tracking-tags.md)
+      + [建立網路追蹤標籤](configuration/using/creating-web-tracking-tags.md)
       + [在您的網站中插入標籤](configuration/using/inserting-tags-in-your-site.md)
-      + [收集所有瀏覽](configuration/using/collecting-all-visits.md)
+      + [收集所有瀏覽次數](configuration/using/collecting-all-visits.md)
       + [匿名追蹤](configuration/using/anonymous-tracking.md)
 + 遷移指南 {#migrating-to-a-new-version}
-   + 移轉概觀 {#migration-overview}
+   + 移轉概覽 {#migration-overview}
       + [關於移轉](migration/using/about-migration.md)
       + [移轉方法](migration/using/migration-method.md)
       + [移轉警告](migration/using/migration-warnings.md)
@@ -849,8 +849,8 @@ ht-degree: 99%
       + [在 Windows 中移轉 Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [在 Linux 中移轉 Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + 設定 {#configuration}
-      + [一般配置](migration/using/general-configurations.md)
-      + [v5.11 中 的特定配置](migration/using/specific-configurations-in-v5-11.md)
-      + [v6.02 中 的特定配置](migration/using/specific-configurations-in-v6-02.md)
-      + [v6.10 中 的特定配置](migration/using/specific-configurations-in-v6-10.md)
+      + [一般設定](migration/using/general-configurations.md)
+      + [v5.11 中的特定設定](migration/using/specific-configurations-in-v5-11.md)
+      + [v6.02 中的特定設定](migration/using/specific-configurations-in-v6-02.md)
+      + [v6.10 中的特定設定](migration/using/specific-configurations-in-v6-10.md)
    + [反轉程序](migration/using/about-rollback.md)
