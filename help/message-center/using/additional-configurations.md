@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ## 監視臨界值 {#monitoring-thresholds}
 
-您可以配置&#x200B;**Message Center服務級別**&#x200B;和&#x200B;**Message Center處理時間**&#x200B;報告（請參閱[關於交易式訊息報告](../../message-center/using/about-transactional-messaging-reports.md)）中顯示的指標的警告閾值（橙色）和警告閾值（紅色）。
+您可以配置&#x200B;**Message Center服務級別**&#x200B;和&#x200B;**Message Center處理時間**&#x200B;報告（請參閱[訪問交易式消息報告](../../message-center/using/about-transactional-messaging-reports.md)）中顯示的指標的警告閾值（橙色）和警告閾值（紅色）。
 
 要執行此操作，請遵循下列步驟：
 
@@ -109,7 +109,7 @@ Once the control and execution modules are installed on the same instance, you m
 
    >[!NOTE]
    >
-   >了解如何在[Control instance](../../message-center/using/configuring-instances.md#control-instance)區段中建立執行執行個體類型外部帳戶。
+   >了解如何在[此小節](../../message-center/using/configuring-instances.md#control-instance)中建立執行實例類型外部帳戶。
 
 1. 擴充nms:extAccount架構以新增追蹤URL:
 
