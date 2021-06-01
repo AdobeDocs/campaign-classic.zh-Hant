@@ -7,7 +7,7 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '4367'
 ht-degree: 98%
@@ -113,7 +113,7 @@ Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示�
 
 現在，[此處](../../delivery/using/sms-protocol.md)提供 SMS 連接器通訊協定和設定頁面的完整說明。
 
-已對&#x200B;**異動訊息**&#x200B;區段新增附註，以警告事件資料夾不得被設定為執行個體的檢視，進而避免存取權限問題。[顯示全文](../../message-center/using/event-collection.md)
+已對&#x200B;**異動訊息**&#x200B;區段新增附註，以警告事件資料夾不得被設定為執行個體的檢視，進而避免存取權限問題。[顯示全文](../../message-center/using/about-event-processing.md#event-collection)
 
 ## 2020 年11月 {#nov-2020}
 
@@ -259,7 +259,7 @@ Azure Synapse FDA Connector - [顯示全文](../../installation/using/configure-
 
 **此版本隨附的其他文件更新**
 
-[本章節](../../message-center/using/template-unpublication.md)將介紹啟用取消發佈交易式訊息範本的新選項。
+[本章節](../../message-center/using/publishing-message-templates.md#template-unpublication)將介紹啟用取消發佈交易式訊息範本的新選項。
 
 新選項可以讓您傳送包含從個人化 URL 下載的影像及附件的電子郵件時，設定限制；此新選項已新增至 Campaign Classic 選項清單。[顯示全文](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -441,7 +441,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 新增相關資訊，以規範個人化欄位內容不得超過 1024 個字元。[顯示全文](../../delivery/using/personalization-fields.md)
 
-控制面板文件已整合至新的共同作業文件集。[顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板文件已整合至新的共同作業文件集。[顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 
 更新「傳遞最佳實務快速入門手冊」。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
@@ -519,7 +519,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 已更新[Campaign Classic 內部部署與托管功能矩陣](../../installation/using/capability-matrix.md)頁面，其中包含與電子郵件密件副本相關的資訊。
 
-更新了交易式傳訊文件，其中包含關於範本發佈的說明。[顯示全文](../../message-center/using/template-publication.md)
+更新了交易式傳訊文件，其中包含關於範本發佈的說明。[顯示全文](../../message-center/using/publishing-message-templates.md#template-publication)
 
 更新「未處理的退回郵件」章節，其中包含「轉寄地址」和「錯誤地址」欄位的詳細資訊。[顯示全文](../../installation/using/deploying-an-instance.md)
 
