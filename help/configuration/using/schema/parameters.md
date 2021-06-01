@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 17%
 
 ---
-
 
 # 參數元素{#parameters--element}
 
@@ -25,7 +23,7 @@ ht-degree: 17%
 
 無
 
-## 父代{#parents-13}
+## 父級{#parents-13}
 
 `<method>`
 
@@ -39,7 +37,7 @@ ht-degree: 17%
 
 ## 使用與使用內容{#use-and-context-of-use-8}
 
-即使對於`<method>`元素的單個`<param>`子元素，此元素也是強制的。
+此元素是強制元素，即使是`<method>`元素的單一`<param>`子元素亦然。
 
 ## 屬性說明{#attribute-description-13}
 
