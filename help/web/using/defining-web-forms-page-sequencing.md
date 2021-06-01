@@ -1,39 +1,37 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 定義網路表單頁面排序
 description: 定義網路表單頁面排序
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
 
 ---
 
-
 # 定義網路表單頁面排序{#defining-web-forms-page-sequencing}
 
-表單可包含一或多個頁面。 它是透過圖表建立的，可讓您排序頁面、測試、指令碼執行、頁面跳轉和錄制步驟。 全域圖設計模式與促銷活動工作流程相同。
+表單可包含一或多個頁面。 它是透過圖表建置，可讓您排序頁面、測試、指令碼執行、頁面跳轉和記錄步驟。 全域圖表設計模式與Campaign工作流程的模式相同。
 
 ## 關於上一頁和下一頁{#about-previous-page-and-next-page}
 
-對於每個頁面，您可以刪除&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Previous]**&#x200B;按鈕。 若要這麼做，請選取相關頁面，然後選取選項&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disallow returning to the previous page]**。
+對於每個頁面，您可以刪除&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Previous]**&#x200B;按鈕。 若要這麼做，請選取相關頁面，然後選取選項&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disallow returning to the previous page]** 。
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-您可以用連結來取代這些按鈕。 請參閱[插入HTML內容](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
+您可以用連結取代這些按鈕。 請參閱[插入HTML內容](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
 
 ## 插入跳轉{#inserting-a-jump}
 
-當使用者按一下&#x200B;**[!UICONTROL Next]**&#x200B;時，**[!UICONTROL Jump]**&#x200B;物件可存取其他頁面或其他表格。
+當使用者點按&#x200B;**[!UICONTROL Next]**&#x200B;時，**[!UICONTROL Jump]**&#x200B;物件可供存取其他頁面或其他表單。
 
-目標可以是：
+目的地可以是：
 
-* 表單的另一頁。 若要這麼做，請選取&#x200B;**[!UICONTROL Internal activity]**，然後指定所要的頁面，如下所示：
+* 表單的另一頁。 要執行此操作，請選取&#x200B;**[!UICONTROL Internal activity]**，然後指定所需頁面，如下所示：
 
    ![](assets/s_ncs_admin_jump_param1.png)
 
@@ -41,31 +39,31 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_jump_param2.png)
 
-* 目標可以儲存在變數中。 在此情況下，請從下拉式清單中選取它，如下所示：
+* 目的地可儲存在變數中。 在此情況下，請從下拉式清單中選取它，如下所示：
 
    ![](assets/s_ncs_admin_jump_param3.png)
 
-* **[!UICONTROL Comment]**&#x200B;標籤可讓您輸入操作員在按一下圖中的對象時將顯示的資訊。
+* **[!UICONTROL Comment]**&#x200B;索引標籤可讓您輸入當運算子按一下圖表中的物件時，將顯示的資訊。
 
    ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## 範例：根據URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}的參數存取其他表單
+## 範例：根據URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}的參數訪問其他表單
 
-在下列範例中，我們要設定Web表格，當核准後，該表格將顯示由URL參數指定的其他表格。 若要這麼做，請套用下列步驟：
+在以下範例中，我們要設定Web表單，在核准後，該表單將顯示URL參數指定的其他表單。 若要這麼做，請套用下列步驟：
 
-1. 在表單結尾插入跳轉：這將替換&#x200B;**[!UICONTROL End]**&#x200B;框。
+1. 在表單結尾處插入跳轉：這會取代&#x200B;**[!UICONTROL End]**&#x200B;方塊。
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. 在形式屬性中，添加儲存在本地變數(**next**)中的參數(**next**)。 [將資料儲存在本機變數](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)中會詳細說明本機變數。
+1. 在表單屬性中，新增儲存在本機變數(**next**)中的參數(**next**)。 在[將資料儲存在本地變數](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)中會詳細說明本地變數。
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
-1. 編輯&#x200B;**[!UICONTROL Jump]**&#x200B;物件，選擇&#x200B;**[!UICONTROL Stored in a variable]**&#x200B;選項，然後從下拉式方塊中選取&#x200B;**next**&#x200B;變數。
+1. 編輯&#x200B;**[!UICONTROL Jump]**&#x200B;物件，選取&#x200B;**[!UICONTROL Stored in a variable]**&#x200B;選項，然後從下拉式方塊選取&#x200B;**next**&#x200B;變數。
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
-1. 傳送URL必須包含目標表單的內部名稱，例如：
+1. 傳送URL必須包含目的地表單的內部名稱，例如：
 
    ```
    https://[myserver]/webForm/APP62?&next=APP22
@@ -73,17 +71,17 @@ ht-degree: 2%
 
    當使用者按一下&#x200B;**[!UICONTROL Approve]**&#x200B;按鈕時，會顯示表單&#x200B;**APP22**。
 
-## 將連結插入到表單{#inserting-a-link-to-another-page-of-the-form}的另一頁
+## 插入到表單{#inserting-a-link-to-another-page-of-the-form}中其他頁的連結
 
-您可以插入表單中其他頁面的連結。 若要這麼做，請新增&#x200B;**[!UICONTROL Link]**&#x200B;類型靜態元素至頁面。 有關詳細資訊，請參閱[插入連結](../../web/using/static-elements-in-a-web-form.md#inserting-a-link)。
+您可以插入表單中其他頁面的連結。 若要這麼做，請將&#x200B;**[!UICONTROL Link]**&#x200B;類型靜態元素新增至頁面。 有關詳細資訊，請參閱[插入連結](../../web/using/static-elements-in-a-web-form.md#inserting-a-link)。
 
 ## 條件式頁面顯示{#conditional-page-display}
 
 ### 根據回應{#display-based-on-responses}顯示
 
-**[!UICONTROL Test]**&#x200B;方塊可讓您設定表單中頁面順序的條件。 它可讓您根據測試結果定義各種分支線。 這可讓您根據使用者提供的答案顯示不同的頁面。
+**[!UICONTROL Test]**&#x200B;方塊可讓您條件表單中的頁面順序。 它可讓您根據測試結果定義各種分支線。 這可讓您根據使用者提供的答案，顯示不同的頁面。
 
-例如，您可以針對已線上訂購的客戶顯示不同的頁面，或針對已下訂超過10份的客戶顯示另一個頁面。 若要這麼做，請在表單的第一頁插入&#x200B;**[!UICONTROL Number]**&#x200B;類型輸入欄位，讓使用者指出已下多少訂單。
+例如，您可以為已線上訂購的客戶顯示不同的頁面，而為已訂購超過10個的客戶顯示另一個頁面。 要執行此操作，請在表單的第一頁插入&#x200B;**[!UICONTROL Number]**&#x200B;類型輸入欄位，讓使用者指出已下了多少訂單。
 
 ![](assets/s_ncs_admin_survey_test_ex0.png)
 
@@ -91,38 +89,37 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->儲存模式在[響應儲存欄位](../../web/using/web-forms-answers.md#response-storage-fields)中有詳細說明。
+>在[響應儲存欄位](../../web/using/web-forms-answers.md#response-storage-fields)中詳細說明儲存模式。
 
 在我們的範例中，我們想使用變數：
 
 ![](assets/s_ncs_admin_survey_test_ex1.png)
 
-在表單的圖表中，插入測試方塊以定義條件。 對於每個條件，在測試盒的輸出處都會新增一個分支。
+在表單的圖表中，插入測試方塊以定義條件。 對於每個條件，測試方塊的輸出將新增一個新分支。
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-選取&#x200B;**[!UICONTROL Activate the default branching]**&#x200B;選項，以新增條件皆不成立的轉場。 如果所定義的條件涵蓋了所有可能的情況，則此選項是不必要的。
+選取&#x200B;**[!UICONTROL Activate the default branching]**&#x200B;選項，以針對無條件的情況新增轉變。 如果定義的條件涵蓋所有可能的情況，則不需要此選項。
 
-接著，在其中一個或其他條件為true時定義頁面順序，例如：
+接著，當其中一個或其他條件為true時，定義頁面排序，例如：
 
 ![](assets/s_ncs_admin_survey_test_ex3.png)
 
 ### 根據參數{#display-based-on-parameters}顯示
 
-您也可以根據Web表單的初始化參數或根據資料庫中儲存的值個性化頁面排序。 請參閱[表單URL參數](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
+您也可以根據Web表單的初始化參數或根據資料庫中儲存的值來個人化頁面排序。 請參閱[表單URL參數](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
 
 ## 添加指令碼{#adding-scripts}
 
-**[!UICONTROL Script]**&#x200B;物件可讓您直接輸入JavaScript指令碼，例如修改欄位值、從資料庫擷取資料或呼叫Adobe Campaign API。
+**[!UICONTROL Script]**&#x200B;物件可讓您直接輸入JavaScript指令碼，例如修改欄位值、從資料庫擷取資料，或呼叫Adobe Campaign API。
 
 ## 個人化結束頁面{#personalizing-the-end-page}
 
-必須在圖的末尾放置一個結束頁。 當使用者按一下Web表單中的&#x200B;**[!UICONTROL Approve]**&#x200B;按鈕時，會顯示結束頁面。
+必須在圖的結尾處放置結束頁。 當用戶按一下Web表單中的&#x200B;**[!UICONTROL Approve]**&#x200B;按鈕時，將顯示結束頁。
 
 若要個人化此頁面，請連按兩下&#x200B;**[!UICONTROL End]**，然後在中央編輯器中輸入頁面內容。
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* 您可以複製和貼上現有的HTML內容。 若要這麼做，請按一下&#x200B;**[!UICONTROL Display source code]**&#x200B;並插入HTML程式碼。
-* 您可使用外部URL;若要這麼做，請選取對應的選項，並輸入要顯示之頁面的URL。
-
+* 您可以複製並貼上現有的HTML內容。 要執行此操作，請按一下&#x200B;**[!UICONTROL Display source code]**&#x200B;並插入HTML代碼。
+* 您可以使用外部URL;若要這麼做，請選取對應的選項，然後輸入要顯示的頁面URL。
