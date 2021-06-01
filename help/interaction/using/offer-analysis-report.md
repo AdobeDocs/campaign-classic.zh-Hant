@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 優惠方案分析報表
-description: 優惠方案分析報表
+title: 優惠分析報告
+description: 優惠分析報告
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
 
 ---
 
+# 優惠分析報告{#offer-analysis-report}
 
-# 優惠方案分析報表{#offer-analysis-report}
-
-**[!UICONTROL Offer analysis]**&#x200B;報告概述了接受或拒絕的主張數。
+**[!UICONTROL Offer analysis]**&#x200B;報告提供了接受或拒絕命題的概述。
 
 >[!NOTE]
 >
->此功能僅線上上顯示，且僅對傳送管理員顯示。
+>此功能僅可線上顯示，且僅供傳送管理員檢視。
 
-統計資料會根據以下三個准則排序：
+統計資料會根據下列三個條件排序：
 
 * 依日期：
 
@@ -33,11 +31,10 @@ ht-degree: 10%
 
    ![](assets/offer_report_perspaces.png)
 
-* 按交貨：
+* 依傳送：
 
    ![](assets/offer_report_perdeliveries.png)
 
-您可以根據報表上方區段中的各種可用准則來篩選資料。 在您選取所要的准則後，按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;連結，將它們套用至報表。
+您可以根據報表上方區段提供的各種條件來篩選資料。 選取所需條件後，按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;連結以將條件套用至報表。
 
 ![](assets/offer_report_criteria.png)
-
