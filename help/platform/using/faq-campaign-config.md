@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign 設定常見問題集
 description: Campaign Classic 常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
-
 
 # Campaign 設定常見問題集{#settings-faq}
 
@@ -41,7 +39,7 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 ## 如何配置電子郵件傳遞機制？{#how-to-configure-email-deliverability-}
 
-除了[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)之外，請閱讀傳遞能力技術建議，以瞭解如何設定實例，以便最大化促銷活動傳遞能力。
+除了[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)之外，請閱讀傳遞能力技術建議，以了解如何設定執行個體，以充份發揮Campaign傳遞功能。
 
 [按一下這裡以瞭解更多](../../delivery/using/about-deliverability.md)。
 
