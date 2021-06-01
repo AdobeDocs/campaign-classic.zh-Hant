@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
 
 ---
 
-
-# srcschema元素{#srcschema--element}
+# srschema元素{#srcschema--element}
 
 ## 內容模型{#content-model-14}
 
-srcSchema:==(attribute |建立者 |資料 |元素 |枚舉 |說明 |介面 |方法 |修改者)
+srcSchema:==(attribute) | createdBy |資料 |元素 |枚舉 |幫助 |介面 |方法 | modifiedBy)
 
 ## 屬性{#attributes-14}
 
-created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、extendedSchema(string)、img(string)、implements(string)、labelSingular(string)、lastModified(datetime)、library(string)、mappingBy-id(long)、name(string)、name(string)、nameste, useRecycleBin（布林值）, view（布林值）, xtkschema（字串）
+created(datetime), createdBy-id(long), desc(string), entitySchema(string), extendedSchema(string), img(string), implements(string), label(string), lastModified(string), library(boolean), mappingType(string), modifiedBy-id(long), name(string), namespace(string), useRecycleBin(boolean), view(boolean), xtkschema(string)
 
-## 父代{#parents-14}
+## 父級{#parents-14}
 
 無
 
@@ -43,41 +41,41 @@ created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、e
 
 ## 說明 {#description-14}
 
-`<srcschema>`是架構的根元素。 它是模式定義的輸入點。
+`<srcschema>`是架構的根元素。 它是架構定義的輸入點。
 
 ## 使用與使用內容{#use-and-context-of-use-9}
 
-[關於架構引用](../../../configuration/using/about-schema-reference.md)和[架構結構](../../../configuration/using/schema-structure.md)中提供了架構表示。
+[關於架構引用](../../../configuration/using/about-schema-reference.md)和[架構結構](../../../configuration/using/schema-structure.md)中提供了架構演示。
 
 ## 屬性說明{#attribute-description-14}
 
-* **已建立（日期時間）**:此屬性提供了建立方案的日期和時間資訊。它有「日期時間」表單。 顯示的值取自伺服器。 時間以UTC格式顯示。
-* **createdBy-id(long)**:是建立架構的運算子的標識符。
-* **desc（字串）**:架構描述
-* **entitySchema（字串）**:基本架構，其語法和核准是以(Adobe Campaign的預設值：xtk:srcSchema)。當您儲存目前的架構時，Adobe Campaign會核准其語法，其中架構在@xtkschema屬性中宣告。
-* **extendedSchema（字串）**:接收當前模式擴展所基於的現成可用模式的名稱。表單為「namespace:name」。
+* **已建立(datetime)**:此屬性提供有關架構建立日期和時間的資訊。有「日期時間」表單。 顯示的值取自伺服器。 時間以UTC格式顯示。
+* **createdBy-id(long)**:是建立架構的運算子的識別碼。
+* **dsc（字串）**:方案說明
+* **entitySchema(string)**:基本結構，其語法和核准是根據(Adobe Campaign預設為：xtk:srcSchema)。儲存目前的結構時，Adobe Campaign會以在@xtkschema屬性中宣告的結構來核准其語法。
+* **extendedSchema(string)**:接收目前架構擴充功能所根據之現成可用架構的名稱。表單為「namespace:name」。
 * **img(string)**:連結到架構的表徵圖（可在架構建立嚮導中定義）。
 * **標籤（字串）**:方案標籤。
-* **labelSingular(string)**:標籤（單數），以顯示在介面中。
-* **lastModified(datetime)**:此屬性提供上次修改的日期和時間資訊。它有「日期時間」表單。 顯示的值取自伺服器。 時間以UTC格式顯示。
-* **庫（布林）**:將架構用作庫而非實體。因此，由於&quot;@ref&quot;和&quot;@template&quot;屬性，其他方案可能會引用此方案。
-* **mappingType（字串）**:
+* **labelSingular（字串）**:標籤（單數）。
+* **lastModified(datetime)**:此屬性提供上次修改的日期和時間資訊。有「日期時間」表單。 顯示的值取自伺服器。 時間以UTC格式顯示。
+* **程式庫（布林值）**:將結構用作程式庫，而非實體。因此，由於「@ref」和「@template」屬性，其他結構可能會參考此結構。
+* **mappingType(string)**:
 
    * &quot;sql&quot;:資料庫映射
    * &quot;textFile&quot;:文本檔案映射
    * &quot;xmlFile&quot;:XML格式文本檔案映射
    * &quot;binaryFile&quot;:二進位檔案映射
 
-* **modifiedBy-id(long)**:與變更結構的運算子的識別碼相符。
-* **name(string)**:唯一方案名稱。
-* **namespace(string)**:架構的名稱空間(預設值：nms、xtk、nl)。為項目建立新模式時，建議您使用專用的名稱空間。
-* **useRecycleBin（布林值）**:在應用程式中啟動垃圾筒功能。刪除的記錄將放在垃圾筒中，然後再進行最終刪除。 此函式僅在「傳送」模式中可用。
-* **view(boolean)**:如果它已激活(@view=&quot;true&quot;)，則模式將用作視圖。資料庫結構更新嚮導將不考慮模式。 此選項主要用於引用外部表。
-* **xtkschema（字串）**:定義模式語法的模式的名稱（預設情況下為xtk:srcSchema）。
+* **modifiedBy-id(long)**:匹配更改架構的運算子的標識符。
+* **name(string)**:唯一架構名稱。
+* **namespace（字串）**:架構的名稱空間(預設值：nms, xtk, nl)。為專案建立新結構時，建議您使用專用的命名空間。
+* **useRecycleBin（布林值）**:在應用程式中啟用垃圾桶功能。刪除的記錄會放在垃圾桶中，然後才進行最終刪除。 此函式僅可在「傳送」模式中使用。
+* **檢視（布林值）**:如果已啟動(@view=&quot;true&quot;)，則會將結構用作檢視。資料庫結構更新嚮導將不考慮該架構。 此選項主要用於參考外部表。
+* **xtkschema(string)**:定義架構文法的架構名稱（預設為xtk:srcSchema）。
 
 ## 範例 {#examples-11}
 
-`<srcschema>` 「nms:delivery」的出廠模式元素
+`<srcschema>` 「nms:delivery」的元素
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  
