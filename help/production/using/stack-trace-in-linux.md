@@ -1,33 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Linux 中的堆疊追蹤
 description: Linux 中的堆疊追蹤
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
 
 ---
 
-
 # Linux 中的堆疊追蹤{#stack-trace-in-linux}
 
-**堆棧跟蹤**&#x200B;表示&#x200B;**核心**&#x200B;類型檔案中包含的跟蹤。 此檔案在發生電腦錯誤時生成。 它可識別錯誤的來源。
+**堆棧跟蹤**&#x200B;表示&#x200B;**core**&#x200B;類型檔案中包含的跟蹤。 系統會在發生電腦錯誤時產生此檔案。 它可識別錯誤的來源。
 
 >[!NOTE]
 >
->* **core**&#x200B;檔名為&#x200B;**core.`<num>`**。
->* **gdb —— 必須在** 電腦上安裝GNU調試程式。
+>* **core**&#x200B;檔案的名稱為&#x200B;**core.`<num>`**。
+>* **gdb — 必須** 在電腦上安裝GNU調試程式。
+
 >
 
 
 
-Adobe Campaign技術支援可要求您輸入此&#x200B;**堆疊追蹤**。 要獲得它，請在Linux中輸入以下命令：
+Adobe Campaign技術支援可要求您提供此&#x200B;**堆疊追蹤**。 要獲取，請在Linux中輸入以下命令：
 
 ```
 su - neolane
@@ -54,9 +53,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign技術支援可能會要求您使用特定的可執行檔（由我們提供）執行此命令。
+Adobe Campaign技術支援可能會要求您使用特定執行檔（由我們提供）執行此命令。
 
-在此情況下，只需將&#x200B;**nlserver**&#x200B;取代為Adobe Campaign提供的可執行檔，執行下列命令：
+在此情況下，只需將&#x200B;**nlserver**&#x200B;替換為Adobe Campaign提供的執行檔，即可運行以下命令：
 
 ```
 gdb nlserver <coreFile>
@@ -67,4 +66,3 @@ gdb nlserver <coreFile>
 ```
 gdb nlserver.1823 <coreFile>
 ```
-
