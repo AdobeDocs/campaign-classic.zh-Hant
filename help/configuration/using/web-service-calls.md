@@ -1,37 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Web服務呼叫
-description: Web服務呼叫
+title: Web 服務呼叫
+description: Web 服務呼叫
 audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
 
 ---
 
-# Web服務呼叫{#web-service-calls}
+# Web 服務呼叫{#web-service-calls}
 
 ## 一般資訊{#general-information}
 
-所有API方法都以Web services的形式呈現。 這可讓您透過SOAP呼叫(即Adobe Campaign應用程式伺服器的原生入口點)來管理所有Adobe Campaign函式。 Adobe Campaign控制台本身僅使用SOAP呼叫。
+所有API方法都以Web服務的形式呈現。 這可讓您透過SOAP呼叫(即Adobe Campaign應用程式伺服器的原生入口點)來管理所有Adobe Campaign函式。 Adobe Campaign主控台本身僅使用SOAP呼叫。
 
-Web services可讓您從協力廠商系統建立許多應用程式：
+網站服務可讓您從協力廠商系統建立許多應用程式：
 
-* 從後端辦公室或交易系統執行同步警報、通知和即時傳送範本，
-* 開發具有簡化功能的特殊介面（Web介面等）、
-* 在遵守貿易規則並與基礎物理模型保持隔離的同時，餵送和查找資料庫中的資料。
+* 從後台或交易系統執行同步警報、通知和即時傳遞模板
+* 開發具有簡化功能的特殊介面（Web介面等）,
+* 在遵守貿易規則的同時饋送和查詢資料庫中的資料，並與基礎物理模型保持隔離。
 
 ## Web服務的定義{#definition-of-web-services}
 
-在Adobe Campaign應用程式伺服器上實現的Web服務的定義可從資料模式獲得。
+Adobe Campaign應用程式伺服器上實作的Web服務定義，可從資料結構中取得。
 
-Web服務在資料結構描述的語法中描述，可從&#x200B;**`<methods>`**&#x200B;元素中獲得。
+資料結構的語法中描述了Web服務，可從&#x200B;**`<methods>`**&#x200B;元素中使用。
 
 ```
 <methods>
@@ -46,17 +44,17 @@ Web服務在資料結構描述的語法中描述，可從&#x200B;**`<methods>`**
 </methods>
 ```
 
-這裡有一個名為&#x200B;**GenerateForm**&#x200B;的方法定義示例。
+以下是名為&#x200B;**GenerateForm**&#x200B;的方法定義的示例。
 
-服務的說明從`<method>`元素開始。 從`<parameters>`元素中完成方法的參數清單。 每個參數都由名稱、類型（布林值、字串、DOMElement等）指定 和說明。 具有&quot;out&quot;值的&quot;inout&quot;屬性可讓您指定&quot;result&quot;參數位於SOAP呼叫輸出。
+服務的說明以`<method>`元素開頭。 方法的參數清單從`<parameters>`元素中完成。 每個參數都由名稱、類型（布林值、字串、DOMElement等）指定 和描述。 具有「out」值的「inout」屬性可讓您指定「result」參數位於SOAP呼叫輸出。
 
-存在&quot;static&quot;屬性（值為&quot;true&quot;）將此方法描述為static，這表示必須聲明方法的所有參數。
+存在「static」屬性（值為「true」）將此方法描述為靜態，這表示必須聲明方法的所有參數。
 
-「const」方法隱式地將XML文檔以其相關模式的格式作為輸入。
+「const」方法隱式地將XML文檔作為其輸入，其格式為其關聯架構。
 
-[Method](../../configuration/using/schema/method.md)下的&quot;Schema references&quot;一章中提供了Adobe Campaign架構的`<method>`元素的完整說明
+[Method](../../configuration/using/schema/method.md)下的「架構參考」章節提供Adobe Campaign架構的`<method>`元素的完整說明
 
-&quot;xtk:queryDef&quot;架構中的&quot;const&quot;類型&quot;ExecuteQuery&quot;方法範例：
+來自&quot;xtk:queryDef&quot;架構的&quot;const&quot;-type &quot;ExecuteQuery&quot;方法的示例：
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -67,11 +65,11 @@ Web服務在資料結構描述的語法中描述，可從&#x200B;**`<methods>`**
 </method>
 ```
 
-此方法的輸入參數是XML文檔，格式為&quot;xtk:queryDef&quot;模式。
+此方法的輸入參數是格式為「xtk:queryDef」架構的XML文檔。
 
-## Web服務說明：WSDL {#web-service-description--wsdl}
+## Web服務描述：WSDL {#web-service-description--wsdl}
 
-每個服務都有一個WSDL（Web服務說明庫）檔案。 此XML檔案使用元語言來描述服務，並指定可用的方法、參數和伺服器，以便與其聯繫以執行服務。
+每個服務都有一個WSDL（Web服務描述庫）檔案。 此XML檔案使用元語言來描述服務，並指定可用的方法、參數以及要聯繫執行服務的伺服器。
 
 ### WSDL檔案生成{#wsdl-file-generation}
 
@@ -84,17 +82,17 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 * **`<server>`**:Adobe Campaign應用程式伺服器(nlserver web)
 * **`<schema>`**:方案標識鍵(namespace:schema_name)
 
-### 方案&#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}的&#39;ExecuteQuery&#39;方法範例
+### 架構「xtk:queryDef」 {#example-on-the--executequery--method-of-schema--xtk-querydef-}的「ExecuteQuery」方法範例
 
-WSDL檔案是從URL生成的：
+WSDL檔案是從URL中生成的：
 
 [https://localhost/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef](https://my_serveur/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef)
 
-WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&quot;關聯，通過&quot;bindings&quot;形成Web服務，與協定連接。
+WSDL描述首先定義用於形成消息的類型，這些類型與「埠」關聯，通過「綁定」形成Web服務連接到協定。
 
-#### 類型{#types}
+#### 類型 {#types}
 
-類型定義基於XML結構描述。 在我們的範例中，&quot;ExecuteQuery&quot;方法會使用&quot;s:string&quot;字串和XML檔案(`<s:complextype>`)做為參數。 方法的返回值(&quot;ExecuteQueryResponse&quot;)是XML文檔(`<s:complextype>`)。
+類型定義以XML結構為基礎。 在我們的範例中，「ExecuteQuery」方法以「s:string」字串和XML檔案(`<s:complextype>`)作為參數。 方法的返回值(&quot;ExecuteQueryResponse&quot;)是XML文檔(`<s:complextype>`)。
 
 ```
 <types>
@@ -128,9 +126,9 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
   </s:element>
 ```
 
-#### 消息{#messages}
+#### 訊息 {#messages}
 
-`<message>`說明要發送的一組欄位的名稱和類型。 該方法使用兩條消息作為參數(&quot;ExecuteQueryIn&quot;)和返回值(&quot;ExecuteQueryOut&quot;)進行傳遞。
+`<message>`描述了要發送的一組欄位的名稱和類型。 方法使用兩條消息作為參數(&quot;ExecuteQueryIn&quot;)和返回值(&quot;ExecuteQueryOut&quot;)傳遞。
 
 ```
 <message name="ExecuteQueryIn">
@@ -142,9 +140,9 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
 </message> 
 ```
 
-#### PortType {#porttype}
+#### 埠類型 {#porttype}
 
-`<porttype>`會將查詢(&quot;input&quot;)觸發的&quot;ExecuteQuery&quot;操作中的消息關聯起來，生成響應(&quot;output&quot;)。
+`<porttype>`將查詢(&quot;input&quot;)觸發的&quot;ExecuteQuery&quot;操作上的消息關聯，以生成響應(&quot;output&quot;)。
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -155,9 +153,9 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
 </portType>
 ```
 
-#### 綁定{#binding}
+#### 綁定 {#binding}
 
-`<binding>`部分指定SOAP通信協定(`<soap:binding>`)、HTTP中的資料傳輸（&quot;transport&quot;屬性的值）和&quot;ExecuteQuery&quot;操作的資料格式。 SOAP封套的內文直接包含訊息區段，而不需進行轉換。
+`<binding>`部分指定SOAP通信協定(`<soap:binding>`)、HTTP中的資料傳輸（&quot;transport&quot;屬性的值）和&quot;ExecuteQuery&quot;操作的資料格式。 SOAP信封的正文直接包含消息段，無需轉換。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +174,7 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
 
 #### 服務 {#service}
 
-`<service>`部分介紹了&quot;XtkQueryDef&quot;服務及其URI(位於Adobe Campaign應用程式伺服器的URL上)。
+`<service>`部分在Adobe Campaign應用程式伺服器的URL上描述了「XtkQueryDef」服務及其URI。
 
 ```
 <service name="XtkQueryDef">
@@ -186,57 +184,57 @@ WSDL說明首先定義用於形成消息的類型，這些消息與&quot;ports&q
 </service>
 ```
 
-## 連接{#connectivity}
+## 連接 {#connectivity}
 
-Adobe Campaign通過引入[安全區](../../installation/using/security-zones.md)和會話管理設定提高了身份驗證機制的安全性。
+Adobe Campaign已引入[安全區域](../../installation/using/security-zones.md)和工作階段管理設定，借此提高驗證機制的安全性。
 
-有兩種可用的驗證模式：
+可用的驗證模式有兩種：
 
-* **透過對logon方法()的呼叫**。此模式會產生作業Token與安全Token。 它是最安全的模式，因此也是最推薦的模式。
+* **透過對logon方法()的呼叫**。此模式會產生工作階段代號和安全代號。 這是最安全的模式，因此也是最建議的模式。
 
 或
 
-* **透過Adobe Campaign登入+** 密碼建立工作階段Token。作業Token會在設定的時段後自動過期。 不建議使用此模式，並需要減少某些區域設定的應用程式安全性設定（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
+* **透過Adobe Campaign登入+** 密碼建立工作階段Token。工作階段代號會在設定的時段後自動過期。 不建議使用此模式，因此需要減少某些區域設定的應用程式安全設定（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
 
-### 作業代號特性{#session-token-characteristics}
+### 會話令牌特性{#session-token-characteristics}
 
-工作階段Token具有下列特性：
+工作階段代號具有下列特性：
 
-* a X hour life cycle(life cycle is configurable in the &#39;serverConf.xml&#39; file, the default period is 24 hours)
-* 隨機構造（不再包含使用者登入和密碼）
-* 透過Web存取時：
+* a X小時生命週期（生命週期可在&#39;serverConf.xml&#39;檔案中設定，預設期間為24小時）
+* 隨機建構（不再包含使用者登入和密碼）
+* 透過網路存取時：
 
-   * 作業Token會變成永久Token，但瀏覽器關閉後不會銷毀它
-   * 它會置於HTTP-ONLY Cookie（必須為運算子啟用Cookie）
+   * 工作階段代號會變成永久代號，但瀏覽器關閉後不會銷毀
+   * 會放置在HTTP-ONLY Cookie中（運算子必須啟用Cookie）
 
 ### 安全令牌特性{#security-token-characteristics}
 
-安全令牌具有以下特徵：
+安全令牌具有以下特性：
 
-* 它是從工作階段Token產生
+* 會從工作階段權杖產生
 * 其生命週期為24小時（可在&#39;serverConf.xml&#39;檔案中設定，預設期間為24小時）
-* 它儲存在Adobe Campaign控制台中
-* 透過Web存取時：
+* 它會儲存在Adobe Campaign主控台中
+* 透過網路存取時：
 
-   * 會儲存在檔案中。__securityToken屬性
-   * 頁面URL會更新，以更新安全性Token
+   * 它儲存在文檔中。__securityToken屬性
+   * 頁面URL會更新，以更新安全權杖
    * 表單也會透過包含代號的隱藏欄位來更新
 
 #### 安全令牌移動{#security-token-movement}
 
-通過控制台訪問時，它是：
+透過主控台存取時，其為：
 
 * 在登錄響應中傳輸（在HTTP標題中）
 * 用於每個查詢（在HTTP標題中）
 
-來自POST和GETHTTP:
+從POST和GETHTTP:
 
-* 伺服器使用Token完成連結
-* 伺服器在表格中新增隱藏欄位
+* 伺服器會使用token完成連結
+* 伺服器向表單中添加隱藏欄位
 
-從SOAP呼叫：
+從SOAP調用：
 
-* 新增至呼叫標題
+* 它已新增至呼叫標題
 
 ### 呼叫範例{#call-examples}
 
