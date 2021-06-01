@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
 
 ---
 
+# 架構引用{#schema-reference}
 
-# 方案參考{#schema-reference}
+編輯架構時，可使用以來源架構(xtk:srcSchema)為基礎的核准系統。 使用「資料庫結構更新……」更新資料庫時，也可能發現一些錯誤。 嚮導。
 
-編輯架構時，可使用基於源架構(xtk:srcSchema)的批准系統。 使用「資料庫結構更新……」更新資料庫時，也可能發現一些錯誤。 嚮導說明。
-
-依預設，在Adobe Campaign結構描述中，所有布林類型屬性都是「false」。 若要啟動這些屬性，您必須在結構中指定屬性，並將其值設為&quot;true&quot;。
+依預設，在Adobe Campaign結構中，所有布林類型屬性都為「false」。 若要啟用這些屬性，您必須在結構中指定屬性，並將其值設為「true」。
 
 參考清單：
 
@@ -28,11 +26,11 @@ ht-degree: 27%
 * [條件](schema/condition.md)
 * [資料庫索引](schema/db-index.md)
 * [元素](schema/element.md)
-* [枚舉](schema/enumeration.md)
+* [分項清單](schema/enumeration.md)
 * [說明](schema/help.md)
 * [加入](schema/join.md)
-* [機碼](schema/key.md)
-* [Keyfield](schema/keyfield.md)
+* [金鑰](schema/key.md)
+* [金鑰欄位](schema/keyfield.md)
 * [方法](schema/method.md)
 * [方法](schema/methods.md)
 * [參數](schema/param.md)
