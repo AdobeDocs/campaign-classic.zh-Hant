@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 關於 Campaign 整合
 description: 使用其他 Adobe 解決方案，並將其不同的功能與 Campaign 結合。
@@ -7,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 9%
@@ -26,7 +25,7 @@ Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，�
 
 >[!CAUTION]
 >
->大部分的整合需要實作AdobeIdentity Management系統(IMS)，才能透過Adobe ID登入。 [了解更多資訊](../../integrations/using/about-adobe-id.md)。
+>大部分的整合需要實作AdobeIdentity Management系統(IMS)，才能透過Adobe ID登入。 [在本頁](../../integrations/using/about-adobe-id.md)瞭解更多。
 
 
 ## 連結您的解決方案{#working-with-experience-cloud-solutions}
@@ -43,7 +42,7 @@ Adobe Experience Cloud Identity Service（ID服務）提供永續性的通用ID�
 
 系統會為產生追蹤記錄的收件者指派唯一訪客ID。 此ID將保存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;欄位中。 **因此，在訪客ID服務實作前已存在的收件者追蹤資料將無法使用**。
 
-接著，具有相同CNAME的其他Adobe Experience Cloud解決方案便會識別ID。 [了解更多](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
+接著，具有相同CNAME的其他Adobe Experience Cloud解決方案便會識別ID。 [瞭解更多](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
 
 ## Experience Cloud 整合 {#experience-cloud-integrations}
 
