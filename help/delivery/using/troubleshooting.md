@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 疑難排解
 description: 疑難排解
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 4%
 
 ---
 
-
 # 疑難排解{#troubleshooting}
 
-如果您的移動設備已連接到Wi-Fi，而您未收到通知，請檢查防火牆是否未阻止FCM/APN埠。
+如果您的行動裝置已連線至Wi-Fi，而您未收到通知，請檢查防火牆是否未封鎖FCM/APN埠。
 
-**Android**:移動設備連接到埠5228到5230上的FCM伺服器。因此，必須配置防火牆，以便它授權與FCM的連接。 要開啟的埠包括：5228（最常使用）、5229和5230。
+**Android**:行動裝置連接至連接埠5228至5230的FCM伺服器。因此，您必須設定防火牆，以授權其與FCM連線。 要開啟的埠包括：5228（最常使用）、5229和5230。
 
 **iOS**:
 
-HTTP/2連接器：您必須允許與下列伺服器通訊：
+HTTP/2連接器：您必須允許與以下伺服器進行通信：
 
 * api.push.apple.com:埠443
 * api.development.push.apple.com:埠443
 
 >[!NOTE]
 >
->如需兩個連接器的詳細資訊，請參閱[在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
+>有關這兩個連接器的詳細資訊，請參閱[在Adobe Campaign中設定行動應用程式](../../delivery/using/configuring-the-mobile-application.md)。
