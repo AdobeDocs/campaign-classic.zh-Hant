@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 解除安裝 Campaign
-description: 瞭解如何解除安裝Campaign
+description: 了解如何解除安裝Campaign
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e2b026ba-aaf3-443d-8c36-c908288a14fd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 19%
 
 ---
 
-
 # 解除安裝 Campaign{#uninstalling-campaign}
 
 >[!CAUTION]
 >
->這些程式將永久解除安裝Adobe Campaign。 所有資料都將遺失。
+>這些程式會永久解除安裝Adobe Campaign。 所有資料都將丟失。
 
 **RHEL:**
 
@@ -41,4 +39,4 @@ rm -rf /user/local/neolane
 
 **Windows：**
 
-請參閱此[頁](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version)。 別忘了移除Campaign安裝資料夾。
+請參閱此[page](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version)。 別忘了移除Campaign安裝資料夾。
