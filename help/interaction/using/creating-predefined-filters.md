@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 建立預先定義的篩選
 description: 建立預先定義的篩選
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 399e9468-bf70-425d-af0b-72c29636b513
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 8%
 
 ---
 
-
 # 建立預先定義的篩選{#creating-predefined-filters}
 
-預先定義的篩選條件可讓您建立目標群體的資格規則，以便在建立選件時輕鬆重複使用。 它們是每個環境的特定項目，並考慮選件參數。
+預先定義的篩選條件可讓您建立目標母體的適用性規則，以便在建立優惠方案時輕鬆重複使用。 它們是每個環境專屬的，且會將優惠方案參數納入考量。
 
 若要建立篩選，請套用下列程式：
 
-1. 轉到&#x200B;**[!UICONTROL Administration]**&#x200B;資料夾，然後選擇&#x200B;**[!UICONTROL Pre-defined offer filters]**。
+1. 轉至&#x200B;**[!UICONTROL Administration]**&#x200B;資料夾，然後選擇&#x200B;**[!UICONTROL Pre-defined offer filters]**。
 
    ![](assets/offer_filter_create_005.png)
 
@@ -29,11 +27,11 @@ ht-degree: 8%
 
    ![](assets/offer_filter_create_001.png)
 
-1. 變更標籤以便稍後識別篩選。
+1. 變更標籤以便稍後識別篩選器。
 
    ![](assets/offer_filter_create_002.png)
 
-1. 選擇篩選條件將涉及的欄位。
+1. 選取篩選條件將關注的欄位。
 
    ![](assets/offer_filter_create_003.png)
 
@@ -47,4 +45,4 @@ ht-degree: 8%
 
 **相關主題**
 
-* [將常用查詢儲存為可編輯的預先定義篩選](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)
+* [將常用的查詢儲存為可編輯的預先定義篩選器](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)
