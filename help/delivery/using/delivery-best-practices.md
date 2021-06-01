@@ -1,22 +1,20 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 宣傳活動提供最佳實務
+title: 行銷活動傳遞最佳實務
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 24%
 
 ---
 
+# 傳遞最佳實務 {#delivery-best-practices}
 
-# 傳遞最佳實務{#delivery-best-practices}
-
-瞭解與Adobe Campaign的傳送設計和傳送相關的最佳實務。 使用下列連結來導覽主題並尋找指引。
+了解與傳送內容設計和使用Adobe Campaign傳送相關的最佳實務。 使用下列連結來導覽主題和尋找指引。
 
 <table>
 <tr>
@@ -30,7 +28,7 @@ ht-degree: 24%
     </a>
     </div>
     <p>
-    <em>確保傳送程式的安全與最佳化</em>
+    <em>安全並最佳化傳送程式</em>
     <p>
   </td>
    <td>
@@ -43,7 +41,7 @@ ht-degree: 24%
     </a>
     </div>
     <p>
-    <em>促進和加速新的交貨</em>
+    <em>促進和加快新交付</em>
     <p>
   </td>
   <td>
@@ -67,7 +65,7 @@ ht-degree: 24%
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>定義正確受眾</strong>
+    <strong>定義正確對象</strong>
     </a>
     </div>
     <p>
@@ -105,8 +103,8 @@ ht-degree: 24%
 
 另請參閱：
 
-* [開始使用Deliverability](../../delivery/using/about-deliverability.md)
+* [開始使用傳遞能力](../../delivery/using/about-deliverability.md)
 
-* [傳送建立步驟](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [傳遞建立步驟](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 * [安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)
