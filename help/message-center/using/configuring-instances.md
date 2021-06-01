@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >為了避免在每次登錄到實例時輸入密碼，您可以指定執行實例中控制實例的IP地址。 有關詳細資訊，請參閱[設定執行例項](#execution-instance)。
+   >為了避免在每次登錄到實例時輸入密碼，您可以指定執行實例中控制實例的IP地址。 有關詳細資訊，請參閱[配置執行實例](#execution-instance)。
 
 1. 指定要由執行實例使用的恢複方法。 要恢復的資料由執行實例轉發到控制實例，以添加到交易式消息和事件存檔。
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   如需同盟資料存取(FDA)的詳細資訊，請參閱[存取外部資料庫](../../installation/using/about-fda.md)。
+   如需同盟資料存取(FDA)的詳細資訊，請參閱[此區段](../../installation/using/about-fda.md)。
 
 1. 按一下&#x200B;**[!UICONTROL Test the connection]**&#x200B;以確認控制執行個體和執行執行執行個體已連結。
 
@@ -162,11 +162,11 @@ ht-degree: 1%
 >
 >必須在控制實例&#x200B;**上執行以下步驟。**
 
-1. 在&#x200B;**Control 1**&#x200B;控制實例中，為每個執行實例建立一個外部帳戶，並在每個外部帳戶中輸入&#x200B;**mc1**&#x200B;運算子。 之後，將在所有執行實例上建立&#x200B;**mc1**&#x200B;運算子（請參閱[配置執行實例](#configuring-execution-instances)）。
+1. 在&#x200B;**Control 1**&#x200B;控制實例上，為每個執行實例建立一個外部帳戶，並在每個外部帳戶中輸入&#x200B;**mc1**&#x200B;運算子。 之後，將在所有執行實例上建立&#x200B;**mc1**&#x200B;運算子（請參閱[配置執行實例](#configuring-execution-instances)）。
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. 在&#x200B;**Control 2**&#x200B;控制實例中，為每個執行實例建立一個外部帳戶，並在每個外部帳戶中輸入&#x200B;**mc2**&#x200B;運算子。 之後，將在所有執行實例上建立&#x200B;**mc2**&#x200B;運算子（請參閱[配置執行實例](#configuring-execution-instances)）。
+1. 在&#x200B;**Control 2**&#x200B;控制實例上，為每個執行實例建立一個外部帳戶，並在每個外部帳戶中輸入&#x200B;**mc2**&#x200B;運算子。 之後，將在所有執行實例上建立&#x200B;**mc2**&#x200B;運算子（請參閱[配置執行實例](#configuring-execution-instances)）。
 
    ![](assets/messagecenter_multi_control_2.png)
 
