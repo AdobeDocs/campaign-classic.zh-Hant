@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign 20.3發行說明
-description: Campaign 20.3的發行說明
-feature: Overview
+description: Campaign 20.3發行說明
+feature: 概覽
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '1949'
+ht-degree: 98%
 
 ---
-
 
 # 20.3 發行版本{#release-20-3}
 
@@ -30,9 +28,9 @@ _2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您透過Adobe身分服務(IMS)連線至促銷活動，則促銷活動伺服器和用戶端主控台都必須進行升級，才能在2021年6月30日&#x200B;**之後連線至促銷活動。**
-> * 此版本隨附於[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級是強化環境安全的必備條件。
-> * 如果您正透過驗證使用Experience Cloud觸發器整合，則需依照本頁[所述移至Adobe I/O。 ](../../integrations/using/configuring-adobe-io.md)具有促銷活動的舊式驗證模式將於2021年11月30日&#x200B;****&#x200B;淘汰。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
 
 
 **新增功能？**
@@ -104,7 +102,7 @@ _2020 年 10 月 27 日_
 **功能改善**
 
 * 幾項改善進行於&#x200B;**客戶端控制台**：
-   * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。在2021年6月30日之後必須能連線伺服器和用戶端主控台升級。
+   * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。伺服器和用戶端主控台升級是必要項目，才能在2021年6月30日後連線。
    * 為了避免與某些網際網路安全性 GPO 規則限制發生不相容的情況，已將 Campaign 用戶端主控台登入畫面由內建的標準 Windows 表單取代。
    * 修正了在使用 64 位元用戶端主控台的工作流程中進行複製/貼上活動所發生的問題。(NEO-27635)
    * 在&#x200B;**「關於」**&#x200B;功能表中，已新增資訊，以區分 64 位元和 32 位元控制台。
