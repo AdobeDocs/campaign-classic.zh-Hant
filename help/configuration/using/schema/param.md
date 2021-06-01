@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 6%
 
 ---
 
-
-# param element {#param--element}
+# 參數元素{#param--element}
 
 ## 內容模型{#content-model-12}
 
-param:==help
+param:==幫助
 
 ## 屬性{#attributes-12}
 
@@ -28,12 +26,12 @@ param:==help
 * @enum（字串）
 * @inout（字串）
 * @label（字串）
-* @localized（字串）
+* @localizable（字串）
 * @name(MNTOKEN)
 * @namespace(MNTOKEN)
 * @type（字串）
 
-## 父代{#parents-12}
+## 父級{#parents-12}
 
 `<parameters>`
 
@@ -43,51 +41,51 @@ param:==help
 
 ## 說明 {#description-12}
 
-此元素可讓您定義用於呼叫SOAP方法的參數。
+此元素可讓您定義呼叫SOAP方法的參數。
 
 ## 屬性說明{#attribute-description-12}
 
-* **desc（字串）**:與元素相關的 `<param>` 說明。
-* **inout（字串）**:此屬性定義參數是否在SOAP調用的輸入(in)或輸出(out)處。如果未指定此屬性，則預設參數為input(&quot;@inout=in&quot;)。
+* **dsc（字串）**:與元素相關的 `<param>` 說明。
+* **inout（字串）**:此屬性定義參數是否在SOAP調用的輸入(in)或輸出(out)。如果未指定此屬性，則預設參數為輸入(&quot;@inout=in&quot;)。
 * **標籤（字串）**: `<param>` 標籤
-* **可定位（字串）**:如果已激活，此屬性將告訴收集工具恢復「@label」屬性的值以進行轉換（內部使用）。
-* **名稱(MNTOKEN)**:內部名稱  `<param>`
-* **type(string)**:此屬性定義元素的類 `<param>` 型
+* **可本地化（字串）**:如果已啟動，此屬性會告訴收集工具，以復原「@label」屬性的值，以供翻譯（內部使用）。
+* **name(MNTOKEN)**:內部名稱  `<param>`
+* **類型（字串）**:此屬性定義元素的類 `<param>` 型
 
    可用類型清單：
 
    * 任何
-   * 賓
+   * bin
    * blob
    * 布林值
    * 位元組
    * CDATA
    * 日期時間
-   * datetimetz
+   * datemetz
    * datetimenotz
    * 日期
    * DOMDocument
    * DOMElement
-   * 雙倍
+   * 兩次
    * 列舉
-   * 浮水
+   * 浮點
    * html
    * int64
-   * link
+   * 連結
    * long
    * 備忘錄
    * MNTOKEN
    * 百分比
    * primarykey
-   * 短
+   * short
    * 字串
    * 時間
-   * 時間平移
-   * uid
+   * 時間盤
+   * uuid
 
 ## 範例 {#examples-9}
 
-字串類型&quot;serviceName&quot;入站設定的定義：
+字元字串類型「serviceName」入站設定的定義：
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"
