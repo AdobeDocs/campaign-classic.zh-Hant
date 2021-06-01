@@ -3,54 +3,53 @@ solution: Campaign Classic
 product: campaign
 title: 第 20.2 發行版本
 description: 第 20.2 發行版本
-feature: Overview
+feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-translation-type: tm+mt
-source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
 # 第 20.2 發行版本{#release-20-2}
 
-## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.5 - 建置 9188 {#release-20-2-5-build-9188}
 
-_2021年4月15日_
+_2021年 4 月 15 日_
 
-* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
+* 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
 
 **僅主控台升級為強制性。不需要升級伺服器。**
 
 >[!NOTE]
 >
-> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
+> 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
 _2021年 3 月 31 日_
 
 **功能改善**
 
-* 已進行改進，以防止無效soap呼叫發生當機。 這可能導致在嘗試執行特定複雜查詢時，執行個體停止運作。 （NEO-28796、NEO-30553）
-* 修正因主機名稱驗證而無法傳送具有TLS的SMS傳送的回歸。 (NEO-29581)
+* 已進行改善，以防止無效soap呼叫上當機。 這可能會導致執行個體在嘗試執行特定複雜查詢時停止運作。 （NEO-28796、NEO-30553）
+* 修正了因主機名稱驗證而無法傳送具有TLS之SMS傳送的回歸。 (NEO-29581)
 * 修正已簽署的追蹤連結無法用於某些電子郵件用戶端的問題。 （NEO-28414、NEO-29615）
-* 修正使用webApp追蹤標籤時，可能會與重複ID產生衝突的追蹤ID序列。 (NEO-27931)
-* 修正每日wfserver重新啟動導致執行工作流程停止的問題。 (NEO-30047)
+* 修正了使用webApp追蹤標籤時，可能會與重複ID產生衝突的追蹤ID序列。 (NEO-27931)
+* 修正導致每日wfserver重新啟動停止執行工作流程的問題。 (NEO-30047)
 * 修正了在非管理員使用者嘗試同步 Adobe Experience Manager 範本時，使用 API 調用的安全性問題。（NEO-32389、NEO-23487）
-* 修正當關閉從範本建立之傳送的傳送對話方塊時，造成主控台當機的問題。 (NEO-31547)
-* 修正在促銷活動的&#x200B;**定位與工作流程**&#x200B;標籤中建立和儲存傳送時發生的問題：預覽會失敗，並出現下列錯誤。(NEO-29440)
-* 修正Tomcat 8.5傳送無效回覆的問題，此問題會導致「事務性訊息」記錄檔發生錯誤。 (NEO-30858)
-* 修正導致外部線程管理中記憶體損毀並影響效能的回歸問題。
-* 修正使用自訂目標對應時，可能導致帳單工作流程失敗的問題。 自訂架構的主要索引鍵會儲存在僅允許整數值的「sourceId」欄中。 它現在允許整數和字串值。 （NEO-25914、NEO-28146）
+* 修正在透過範本建立的傳送上，關閉傳送對話方塊時，造成主控台當機的問題。 (NEO-31547)
+* 修正在促銷活動的&#x200B;**目標與工作流程**&#x200B;標籤內建立和儲存傳送時發生的問題：預覽會失敗，並出現下列錯誤。(NEO-29440)
+* 修正Tomcat 8.5傳送無效答案，而導致「交易式傳訊」記錄檔發生錯誤的問題。 (NEO-30858)
+* 修正了導致外部執行緒管理中記憶體損毀並影響效能的回歸問題。
+* 修正使用自訂目標對應時，帳單工作流程可能失敗的問題。 自訂架構的主索引鍵儲存在「sourceId」欄中，該欄僅允許整數值。 它現在允許整數和字串值。 （NEO-25914、NEO-28146）
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - 建置 9187 {#release-20-2-4-build-9187}
 
-_2021年4月15日_
+_2021年 4 月 15 日_
 
-* 修正IMS連線畫面上造成持續錯誤訊息的用戶端主控台回歸。 (NEO-34821)
+* 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
 
 **僅主控台升級為強制性。不需要升級伺服器。**
@@ -71,17 +70,17 @@ _2020 年 12 月 22 日_
 **功能改善**
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
-* 觸發器整合驗證最初基於oAUTH驗證設定以訪問管線，現已更改並移至Adobe I/O。[瞭解詳細內容](../../integrations/using/configuring-adobe-io.md)
+* 已變更原本以oAUTH驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移至Adobe I/O。 [了解更多](../../integrations/using/configuring-adobe-io.md)
 * [在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，](https://developer.apple.com/news/?id=c88acm2b)使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
-* 修正連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳送並導致效能問題的問題。 (NEO-28609)
+* 修正了在連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳遞並導致效能問題的問題。 (NEO-28609)
 * 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。(NEO-26856)
 * 修正了在工作流程&#x200B;**「分割」**&#x200B;活動中顯示目標資料餘數時，而造成伺服器當機的問題。
 * 修正了嘗試在查詢後預覽 SMS 訊息時，除&#x200B;**收件者** (nms:recipient) 以外的其他方案可能會顯示錯誤訊息的問題。(NEO-27517)
-* 修正當以主機名稱中明確定義的埠號提出HTTPS連線要求時，呼叫失敗並發生憑證錯誤的問題。 (NEO-29146)
-* 修正POSIX線程管理中在行銷實例上生成大型核心轉儲檔案的問題。 （NEO-28117、NEO-29281）
-* 已修正在準備傳送或循環傳送預覽時，可能導致網頁程式當機的問題。 （NEO-27790、NEO-27517）
-* 修正當非管理員運算子觸發傳送或證明傳送失敗的問題。 (NEO-28597)
+* 修正了在主機名稱中明確定義埠號的HTTPS連線要求時，呼叫因憑證錯誤而失敗的問題。 (NEO-29146)
+* 修正了POSIX執行緒管理中，在行銷執行個體上產生大型核心轉儲檔案的問題。 （NEO-28117、NEO-29281）
+* 修正準備傳送或重複傳送預覽時，Web程式可能當機的問題。 （NEO-27790、NEO-27517）
+* 修正由非管理員運算子觸發時，傳送或校樣傳送失敗的問題。 (NEO-28597)
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
 
@@ -202,7 +201,7 @@ _2020 年 6 月 8 日_
 
 **功能改善**
 
-* 改善交易式傳訊功能，以提供更佳的使用者體驗。您現在可以取消發佈交易式傳訊範本，該範本將從執行實例刪除。[進一步瞭解](../../message-center/using/template-unpublication.md)。
+* 改善交易式傳訊功能，以提供更佳的使用者體驗。您現在可以取消發佈交易式傳訊範本，該範本將從執行實例刪除。[進一步瞭解](../../message-center/using/publishing-message-templates.md#template-unpublication)。
 
 * 提供新的選項，用來設定傳送包含影像或附件之電子郵件時的限制。這些護欄措施可以避免效能問題，對於交易式傳訊特別有用。[顯示全文](../../installation/using/configuring-campaign-options.md#delivery)
 
