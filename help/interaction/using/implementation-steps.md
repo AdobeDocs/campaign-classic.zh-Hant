@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 實施步驟
 description: 實施步驟
 audience: interaction
 content-type: reference
 topic-tags: general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 3%
 
 ---
-
 
 # 實施步驟{#implementation-steps}
 
@@ -21,41 +19,40 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->以下步驟應由&#x200B;**管理員**&#x200B;配置式執行，且僅在設計環境中執行。
+>以下步驟應由&#x200B;**管理員**&#x200B;配置檔案執行，並且僅在設計環境中執行。
 
-1. 建立使用者設定檔。 有關詳細資訊，請參閱[Operator profiles](../../interaction/using/operator-profiles.md)。
-1. 透過定位維度建立選件環境。 有關詳細資訊，請參閱[建立選件環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
-1. 為每個環境建立類型學規則。 如需詳細資訊，請參閱[建立並參考選件簡報規則](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)。
-1. 為每個環境建立選件空間並配置渲染功能。 有關詳細資訊，請參閱[建立選件空間](../../interaction/using/creating-offer-spaces.md)。
-
-   >[!NOTE]
-   >
-   >如果空間由標識模式上的酉通道定義，則必須為此空間指定高級參數。
-
-1. 設定傳入互動的選件引擎，以呈現和更新一或多個選件。
-
-   [關於入站通道](../../interaction/using/about-inbound-channels.md)中詳細介紹了各種整合模式。
+1. 建立使用者設定檔。 有關詳細資訊，請參閱[運算子描述檔](../../interaction/using/operator-profiles.md)。
+1. 依目標維度建立優惠方案環境。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+1. 為每個環境建立類型規則。 如需詳細資訊，請參閱[建立和參考優惠方案簡報規則](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)。
+1. 為每個環境建立優惠方案空間並設定轉譯功能。 如需詳細資訊，請參閱[建立優惠方案空間](../../interaction/using/creating-offer-spaces.md)。
 
    >[!NOTE]
    >
-   >在傳入Web頻道上建立空間時，您也必須在要顯示選件的網站上進行設定。
+   >如果空間由標識模式上的統一通道定義，則必須為此空間指定高級參數。
 
-## 管理選件目錄{#managing-the-offer-catalog-}
+1. 為入站互動設定選件引擎，以呈現和更新一或多個選件。
 
->[!NOTE]
->
->**選件管理員**&#x200B;應執行下列步驟。
+   在[關於傳入頻道](../../interaction/using/about-inbound-channels.md)中詳細說明各種整合模式。
 
-1. 在設計環境中建立選件類別。 如需詳細資訊，請參閱[建立選件類別](../../interaction/using/creating-offer-categories.md)。
-1. 在設計環境中建立選件。 如需詳細資訊，請參閱[建立選件](../../interaction/using/creating-an-offer.md)。
-1. 在一或多個空間上核准和發佈選件，以便在即時環境中提供給傳送管理員。 如需詳細資訊，請參閱[核准和啟用選件](../../interaction/using/approving-and-activating-an-offer.md)。
+   >[!NOTE]
+   >
+   >在入站Web頻道上建立空間時，也需要在將顯示選件的網站上進行設定。
 
-## 使用選件目錄{#using-the-offer-catalog-}
+## 管理優惠方案目錄{#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
->**傳送管理員**&#x200B;描述檔應執行下列步驟。 他們只能在即時環境中編輯選件。
+>下列步驟應由&#x200B;**選件管理員**&#x200B;執行。
+
+1. 在設計環境中建立優惠方案類別。 如需詳細資訊，請參閱[建立優惠方案類別](../../interaction/using/creating-offer-categories.md)。
+1. 在設計環境中建立優惠方案。 如需詳細資訊，請參閱[建立選件](../../interaction/using/creating-an-offer.md)。
+1. 在一或多個空間核准和發佈優惠方案，以便供傳遞管理員在即時環境中使用。 如需詳細資訊，請參閱[核准和啟用優惠方案](../../interaction/using/approving-and-activating-an-offer.md)。
+
+## 使用優惠方案目錄{#using-the-offer-catalog-}
+
+>[!NOTE]
+>
+>下列步驟應由&#x200B;**傳送管理員**&#x200B;設定檔執行。 他們只能編輯即時環境中的選件。
 
 1. 建立行銷活動.
-1. 參考促銷活動或促銷活動傳送中的選件。 有關詳細資訊，請參閱[關於出站通道](../../interaction/using/about-outbound-channels.md)。
-
+1. 參考促銷活動或促銷活動傳送中的選件。 有關詳細資訊，請參閱[關於傳出通道](../../interaction/using/about-outbound-channels.md)。
