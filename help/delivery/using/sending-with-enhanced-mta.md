@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 在Adobe Campaign Classic中使用Enhanced MTA傳送
 description: 了解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍和特性。
@@ -7,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
