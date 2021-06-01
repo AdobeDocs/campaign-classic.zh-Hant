@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 管理和自訂清單
-description: 瞭解如何瀏覽和設定清單
+description: 了解如何瀏覽和設定清單
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 87%
 
 ---
-
 
 # 管理和自訂清單{#manage-and-customize-lists}
 
@@ -57,7 +55,7 @@ ht-degree: 87%
 
 有兩個方法可在清單中加入欄。
 
-您可以從記錄的詳細資料中快速新增欄至清單。 操作步驟：
+您可以從記錄的詳細資訊快速將欄新增至清單。 操作步驟：
 
 1. 從詳細資料畫面中，以滑鼠右鍵按一下 要在欄中顯示的欄位。
 1. 選取 **[!UICONTROL Add in the list]**。
@@ -82,9 +80,9 @@ ht-degree: 87%
    >
    >標籤會按表格顯示且以字母順序排列。
    >
-   >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱[本節](#sorting-a-list)。
+   >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱[此部分](#sorting-a-list)。
    >
-   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[進一步瞭解](#configuring-lists)。
+   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[瞭解更多](#configuring-lists)。
    >
    >您也可以排序和篩選資料。請參閱[本節](../../platform/using/filtering-options.md)。
 
@@ -122,7 +120,7 @@ ht-degree: 87%
 
 當清單作用中時，例如：選取了至少一行時，您可以使用 F9 來調整欄的寬度以便在螢幕上顯示所有欄。
 
-### 在子資料夾中顯示資料{#display-sub-folders-records}
+### 在子資料夾{#display-sub-folders-records}中顯示資料
 
 清單可顯示：
 
@@ -153,7 +151,7 @@ ht-degree: 87%
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. 按一下&#x200B;**[!UICONTROL OK]** ，然後按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL OK]**，然後按一下&#x200B;**[!UICONTROL Save]**。
 
 然後將此設定套用至另一個 **Delivery** 資料夾：
 
@@ -163,11 +161,11 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## 匯出清單{#exporting-a-list}
+## 導出清單{#exporting-a-list}
 
 若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
 
-[Generic imports and exports](../../platform/using/about-generic-imports-exports.md)中說明了導入和導出功能的使用。
+[一般匯入和匯出](../../platform/using/about-generic-imports-exports.md)中對匯入和匯出功能的使用作了說明。
 
 >[!CAUTION]
 >
@@ -181,7 +179,7 @@ ht-degree: 87%
 
 您也可以設定排序或合併排序準則。要執行此操作，請遵循下列步驟：
 
-1. **[!UICONTROL Configure list]** 在清單右側。
+1. **[!UICONTROL Configure list]** 清單右邊。
 
    ![](assets/s_ncs_user_configure_list.png)
 
@@ -204,4 +202,4 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->您可以建立篩選器，只顯示清單中的部分資料。[進一步瞭解](../../platform/using/creating-filters.md)。
+>您可以建立篩選器，只顯示清單中的部分資料。[瞭解更多](../../platform/using/creating-filters.md)。
