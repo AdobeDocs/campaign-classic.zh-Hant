@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 關於工作流程使用案例
-description: 進一步瞭解您可以使用Campaign Classic工作流程來執行的使用案例。
+title: 關於工作流程使用實例
+description: 進一步了解您可使用Campaign Classic工作流程執行的使用案例。
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 68%
 
 ---
 
+# 關於工作流程使用實例 {#about-workflow-use-cases}
 
-# 關於工作流程使用案例 {#about-workflow-use-cases}
+在本節中，您會利用Campaign工作流程功能找到各種使用案例。
 
-在本節中，您將會發現各種運用促銷活動工作流程功能的使用案例。
+它們可協助您探索可使用工作流程的不同內容，並回應您的需求。
 
-它們可協助您探索不同的情境，讓您使用工作流程並回應您的需求。
-
-## 傳遞{#deliveries}
+## 傳遞 {#deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -31,11 +29,11 @@ ht-degree: 68%
 * [A/B 測試](../../delivery/using/a-b-testing-use-case.md)
 * [傳送生日電子郵件](../../workflow/using/sending-a-birthday-email.md)
 * [載入傳遞內容](../../workflow/using/loading-delivery-content.md)
-* [跨通道傳遞工作流程](../../workflow/using/cross-channel-delivery-workflow.md)
+* [跨頻道傳遞工作流程](../../workflow/using/cross-channel-delivery-workflow.md)
 * [使用自訂日期欄位擴充電子郵件](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 * [自動建立、編輯和發佈內容](../../delivery/using/automating-via-workflows.md#examples)
 
-## 監控{#monitoring}
+## 監視 {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
@@ -44,7 +42,7 @@ ht-degree: 68%
 * [傳送個人化警報給營運商](../../workflow/using/sending-personalized-alerts-to-operators.md)
 * [在傳送傳遞前，設定收件者核准程序](../../workflow/using/using-the-local-approval-activity.md)
 
-## 資料管理{#management}
+## 資料管理 {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
@@ -52,8 +50,8 @@ ht-degree: 68%
 * [建立摘要清單](../../workflow/using/creating-a-summary-list.md)
 * [豐富資料](../../workflow/using/enriching-data.md)
 * [使用彙總](../../workflow/using/using-aggregates.md)
-* [匯入使用控制面板產生的金鑰加密的資料](../../platform/using/unzip-decrypt.md)
-* [使用控制面板上安裝的密鑰加密和導出資料](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [匯入使用「控制面板」產生的金鑰加密的資料](../../platform/using/unzip-decrypt.md)
+* [使用安裝在控制面板上的金鑰加密和匯出資料](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
 * [使用重複資料刪除活動的合併功能](../../workflow/using/deduplication-merge.md)
 * [設定循環匯入工作流程](../../workflow/using/recurring-import-workflow.md)
