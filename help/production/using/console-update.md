@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 主控台更新
-description: 主控台更新
+title: 控制台更新
+description: 控制台更新
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3a127bbe-9abb-4b5b-bd7e-e1ea550929ba
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 10%
 
 ---
 
+# 控制台更新{#console-update}
 
-# 主控台更新{#console-update}
-
-如果您選取了&#x200B;**[!UICONTROL Do not request console update]**&#x200B;選項，並且想要重新啟用更新請求，請套用下列程式：
+如果您選取了&#x200B;**[!UICONTROL Do not request console update]**&#x200B;選項，並且要重新激活更新請求，請應用以下過程：
 
 1. 使用Windows **[!UICONTROL Start > Execute]**&#x200B;菜單中的&#x200B;**regedit**&#x200B;命令開啟註冊表資料庫的編輯器。
 
@@ -27,4 +25,3 @@ ht-degree: 10%
 1. 刪除&#x200B;**[!UICONTROL confAdvisedUpgrade]**&#x200B;條目並關閉註冊表編輯器。
 
    ![](assets/ncs_console_update_2.png)
-
