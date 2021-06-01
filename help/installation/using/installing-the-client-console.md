@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 安裝客戶端主控台
-description: 瞭解如何安裝客戶端控制台
+description: 了解如何安裝用戶端主控台
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-translation-type: tm+mt
-source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 4%
@@ -17,84 +15,84 @@ ht-degree: 4%
 
 # 安裝和更新Campaign用戶端主控台{#installing-the-client-console}
 
-「促銷活動用戶端主控台」是rich client，可讓您連線至您的Campaign應用程式伺服器。
+Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Campaign應用程式伺服器。
 
-在開始安裝Client Console之前，您需要：
+開始安裝客戶端控制台之前，您需要：
 
-* 在[Compatibility matrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign的相容性
-* 取得您的促銷活動伺服器URL
+* 在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign的相容性
+* 取得您的Campaign伺服器URL
 * 取得您的使用者認證
 
-安裝或更新用戶端主控台的程式會因您實作的Adobe Campaign Classic而異。
-請檢閱下列詳細資訊，以瞭解您的實作需要什麼。
+安裝或更新用戶端主控台的程式會因您實作Adobe Campaign Classic而異。
+請檢閱下列詳細資訊，了解實作所需的項目。
 
-![](assets/do-not-localize/how-to-video.png) 瞭解如何在視訊中安裝和設定Adobe Campaign客 [戶端](#video)
+![](assets/do-not-localize/how-to-video.png) 了解如何在影片中安裝和設定Adobe Campaign  [Client](#video)
 
 >[!CAUTION]
 >
->促銷活動用戶端主控台和促銷活動應用程式伺服器必須在相同的產品版本&#x200B;**上執行**。 Adobe還強烈建議使用&#x200B;**相同的產品組建版本**。 瞭解如何在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的促銷活動用戶端和伺服器版本。
+>Campaign用戶端主控台和Campaign應用程式伺服器必須在相同產品版本&#x200B;**上執行**。 Adobe也強烈建議使用&#x200B;**相同的產品組建**。 了解如何在[本區段](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的Campaign用戶端和伺服器版本。
 
-## Adobe代管實施{#hosted-customers}
+## Adobe托管實施{#hosted-customers}
 
-在代管客戶的廣告中，您有兩個選項可安裝或更新您的用戶端主控台：
+廣告代管客戶後，您有兩個選項可安裝或更新用戶端主控台：
 
-1. Adobe可以直接部署。 在更新主控台後，系統會在快顯視窗中提示使用者下載最新的用戶端主控台版本。
+1. Adobe可直接部署。 更新主控台後，系統會在快顯視窗中提示使用者下載最新的用戶端主控台版本。
 
-1. 您可以從[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下載至您的用戶端主控台
+1. 您可以從[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下載至用戶端主控台
 
-   **使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，系統管理員將需要部署到所有客戶端控制台**
+   **使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，則系統管理員需要部署到所有客戶端控制台**
 
 ## 混合式與內部部署實作{#hybrid-onprem-customers}
 
-為了讓Adobe Campaign用戶能夠登錄您建立和配置的實例，他們需要使用客戶機控制台。
+Adobe Campaign使用者若想登入您建立和設定的執行個體，必須使用用戶端主控台。
 
-### 使控制台對用戶{#make-console-available}可用
+### 使控制台可供用戶{#make-console-available}使用
 
-當用於啟動Adobe Campaign應用程式伺服器(nlserver web)的電腦從客戶端控制台接收用戶連接時，可以配置它，使Adobe Campaign富客戶端的安裝程式通過HTML介面可用。 每當有新版本的用戶端主控台可供使用時，啟動其用戶端主控台時，都會邀請使用者下載。
+用來啟動Adobe Campaign應用程式伺服器(nlserver web)的電腦從用戶端主控台接收使用者連線時，您可以加以設定，讓Adobe Campaign豐富用戶端的設定程式可透過HTML介面使用。 每當有新版本的用戶端主控台可用時，就會邀請使用者在啟動其用戶端主控台時下載。
 
-若要這麼做，您必須：
+要執行此操作，您必須：
 
-1. 選擇包含控制台安裝程式的軟體包。
+1. 選擇包含控制台安裝程式的包。
 
-   此檔案對v7稱為setup-client-7.X.XXXX.exe ，對v6.1則稱為setup-client-6.X.XXXX.exe ，其中X是Adobe Campaign的子版本，XXXX是內部版本   編號。
+   此檔案稱為setup-client-7.X.XXXX.exe（適用於v7）或setup-client-6.X.XXXX.exe（適用於v6.1），其中X是Adobe Campaign的子版本，XXXX是組建   數字。
 
-1. 將此套件複製並貼至Adobe Campaign安裝資料夾（在混合安裝的行銷伺服器上），位於/datakit/nl/eng/jsp下。
+1. 將此套件複製並貼到Adobe Campaign安裝資料夾（位於混合式安裝的行銷伺服器上）的/datakit/nl/eng/jsp下。
 
 1. 啟動Adobe Campaign伺服器。
 
 
-### 不再詢問此問題選項
+### 不再提出此問題選項
 
-Adobe建議取消選擇&#x200B;**[!UICONTROL No longer ask this question]**&#x200B;選項，以確保在控制台有新版本時所有用戶都收到警報。  如果選取此選項，使用者將不會收到新可用版本的通知。
+Adobe建議取消選取&#x200B;**[!UICONTROL No longer ask this question]**&#x200B;選項，以確保在有新版本的控制台可用時，所有使用者都會收到警報。  如果選取此選項，系統不會通知使用者新的可用版本。
 
-如果已選擇&#x200B;**[!UICONTROL No longer ask this question]**，則可重設此提示。 只有熟悉編輯Windows註冊表的系統管理員才應進行以下更改：
+如果已選取&#x200B;**[!UICONTROL No longer ask this question]**，則可重設此提示。 只有熟悉編輯Windows註冊表的系統管理員才應進行以下更改：
 
 1. 使用&#x200B;**[!UICONTROL Start > Run]**&#x200B;菜單中的&#x200B;**regedit**&#x200B;命令開啟註冊表編輯器。
 
-1. 搜索節點並展開該節點。
+1. 搜尋節點並展開它。
 
    ```
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. 刪除&#x200B;**confCommendedUpgrade**&#x200B;條目並關閉註冊表編輯器。
+1. 刪除&#x200B;**confDescuredUpgrade**&#x200B;條目並關閉註冊表編輯器。
 
 >[!NOTE]
 >
->如果您要將更新的主控台套用至現有的實施，使用者會自動收到更新其主控台的提示。 如果您是第一次實作促銷活動，使用者將需要下載主控台。 請參閱下方，以取得兩個選項的詳細資訊
+>如果您將更新的主控台套用至現有實作，使用者會自動收到更新其用戶端主控台的提示。 如果您是第一次實作Campaign，使用者將需要下載主控台。 請參閱下文，了解有關這兩個選項的詳細資訊
 
-### 更新現有實施的控制台{#update-the-client-console}
+### 更新現有實作的主控台{#update-the-client-console}
 
-在「促銷活動伺服器」檔案夾中提供主控台後，系統會在快顯視窗中提示使用者下載最新的用戶端主控台版本。
+一旦主控台可在Campaign伺服器資料夾中使用，系統就會在快顯視窗中提示使用者下載最新的用戶端主控台版本。
 
-**使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，系統管理員將需要部署到所有客戶端控制台**
+**使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，則系統管理員需要部署到所有客戶端控制台**
 
 
 ### 下載新實作的主控台{#download-the-client-console}
 
 使用者現在應依照下列步驟下載並安裝主控台：
 
-1. 開啟網頁瀏覽器並從下列位址下載主控台：
+1. 開啟Web瀏覽器，然後從以下地址下載控制台：
 
    [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://myserver.adobe.com/nl/jsp/logon.jsp).
 
@@ -102,64 +100,64 @@ Adobe建議取消選擇&#x200B;**[!UICONTROL No longer ask this question]**&#x20
 
    ![](assets/s_ncs_install_setup_download01.png)
 
-   如有必要，請使用在建立執行個體期間定義的內部帳戶認證。
+   如有必要，請使用建立執行個體期間定義之內部帳戶的認證。
 
-1. 按一下安裝頁上的&#x200B;**[!UICONTROL Download]**&#x200B;連結。
-1. 下載並儲存用戶端設定檔案。
-1. 在Windows上的電腦上執行下載的檔案：安裝即會啟動。 根據您的Adobe Campaign版本，客戶機控制台的預設安裝路徑是&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign ClassicvX客戶機**，其中&#39;X&#39;是&#39;6&#39;或&#39;7&#39;。
+1. 按一下安裝頁面上的&#x200B;**[!UICONTROL Download]**&#x200B;連結。
+1. 下載並保存客戶端安裝檔案。
+1. 在Windows上執行下載的檔案：安裝程式隨即啟動。 根據您的Adobe Campaign版本，客戶端控制台的預設安裝路徑為&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX客戶端**，其中「X」為「6」或「7」。
 
-### 建立連線——首次使用者僅{#create-the-connection}
+### 建立連線 — 首次使用者僅{#create-the-connection}
 
-安裝客戶機控制台後，請按照以下步驟建立與應用程式伺服器的連接：
+安裝客戶端控制台後，請按照以下步驟建立與應用程式伺服器的連接：
 
-1. 從&#x200B;**Adobe Campaign**&#x200B;程式組中的Windows **[!UICONTROL Start]**&#x200B;菜單啟動控制台。
+1. 從&#x200B;**Adobe Campaign**&#x200B;程式組的Windows **[!UICONTROL Start]**&#x200B;菜單啟動控制台。
 
-1. 按一下憑據欄位右上角的連結以訪問連接配置窗口。
+1. 按一下認證欄位右上角的連結，以存取連線設定視窗。
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. 按一下&#x200B;**[!UICONTROL Add > Connection]**&#x200B;並輸入Adobe Campaign應用程式伺服器的標籤和URL。
+1. 按一下&#x200B;**[!UICONTROL Add > Connection]** ，然後輸入Adobe Campaign應用程式伺服器的標籤和URL。
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. 指定透過URL連線至您的Adobe Campaign應用程式伺服器。 使用DNS或電腦的別名或您的IP地址。
+1. 透過URL指定與Adobe Campaign應用程式伺服器的連線。 使用電腦的DNS、別名或IP地址。
 
    例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)類型URL。
 
-1. 如果已為您的組織設定AdobeIMS，請勾選選項&#x200B;**[!UICONTROL Connect with an Adobe ID]**
+1. 如果已為您的組織設定AdobeIMS，請核取選項&#x200B;**[!UICONTROL Connect with an Adobe ID]**
 
-1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以儲存您的設定。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以儲存設定。
 
-例如，您可以視需要新增多個連線，以連線至測試、舞台和生產環境。
+例如，您可以視需要新增連線，以連線至您的測試、預備和生產環境。
 
 >[!NOTE]
 >
 >**[!UICONTROL Add]**&#x200B;按鈕可讓您建立&#x200B;**[!UICONTROL folders]**&#x200B;來組織所有連線。 只需將每個連線拖放到資料夾中即可。
 
-### 登錄Adobe Campaign
+### 登入Adobe Campaign
 
-要登錄到現有實例，請執行以下步驟：
+若要登入現有執行個體，請遵循下列步驟：
 
-1. 從&#x200B;**Adobe Campaign**&#x200B;程式組中的Windows **[!UICONTROL Start]**&#x200B;菜單啟動控制台。
+1. 從&#x200B;**Adobe Campaign**&#x200B;程式組的Windows **[!UICONTROL Start]**&#x200B;菜單啟動控制台。
 
-1. 按一下憑據欄位右上角的連結以訪問連接配置窗口。
+1. 按一下認證欄位右上角的連結，以存取連線設定視窗。
 
-1. 選取您登入時需要的促銷活動例項。
+1. 選取您需要登入的Campaign執行個體。
 
 1. 按一下 **[!UICONTROL Ok]**
 
-1. 輸入您的用戶登錄憑據，然後按一下&#x200B;**[!UICONTROL Log in]**
+1. 輸入用戶登錄憑據，然後按一下&#x200B;**[!UICONTROL Log in]**
 
 
 **相關主題**
 
 * [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
-* [相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
+* [相容性對較表](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 ## 教學課程影片
 
-本視頻介紹如何安裝和設定Adobe Campaign客戶端。
+此影片說明如何安裝和設定Adobe Campaign Client。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classic操作說明影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
