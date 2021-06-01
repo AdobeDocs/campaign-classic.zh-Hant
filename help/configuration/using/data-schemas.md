@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 資料綱要
-description: 資料綱要
+title: 資料方案
+description: 資料方案
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
 
 ---
 
+# 資料方案{#data-schemas}
 
-# 資料綱要{#data-schemas}
-
-## 原則{#principles}
+## 原則 {#principles}
 
 若要編輯、建立和設定結構，請按一下Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點。
 
@@ -33,26 +31,26 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->「名稱」編輯控制項可讓您輸入由名稱和名稱空間組成的架構索引鍵。 架構的根元素的&quot;name&quot;和&quot;namespace&quot;屬性會在架構的XML編輯區域中自動更新。
+>「名稱」編輯控制項可讓您輸入由名稱和命名空間組成的架構金鑰。 架構的根元素的「name」和「namespace」屬性會在架構的XML編輯區域中自動更新。
 
-預覽會自動產生擴充的架構：
+預覽會自動產生擴充架構：
 
 ![](assets/d_ncs_integration_schema_edition2.png)
 
 >[!NOTE]
 >
->保存源模式時，將自動啟動擴展模式的生成。
+>儲存來源架構時，會自動啟動延伸架構的產生。
 
-如果需要檢查方案的完整結構，可以使用預覽頁籤。 如果架構已擴充，則您將能夠直觀顯示其所有擴展。 作為補充，「文檔」頁籤顯示所有方案屬性和元素及其屬性（SQL欄位、類型／長度、標籤、說明）。 「文檔」頁籤僅適用於生成的方案。 有關詳細資訊，請參閱[重新生成方案](../../configuration/using/regenerating-schemas.md)部分。
+如果需要檢查架構的完整結構，可以使用預覽頁簽。 如果結構已擴充，您便能將其所有擴充功能視覺化。 作為補充，「文檔」頁簽顯示所有架構屬性和元素及其屬性（SQL欄位、類型/長度、標籤、說明）。 「檔案」索引標籤僅適用於產生的結構。 有關詳細資訊，請參閱[重新生成結構](../../configuration/using/regenerating-schemas.md)部分。
 
 ## 範例：建立合同表{#example--creating-a-contract-table}
 
-在下列範例中，我們想要在Adobe Campaign資料庫的資料庫模型中，為&#x200B;**contracts**&#x200B;建立新表格。 此表格可讓您儲存每個合約持有人和共同持有人的名字和姓氏以及電子郵件地址。
+在以下示例中，我們想在Adobe Campaign資料庫的資料庫模型中為&#x200B;**contracts**&#x200B;建立新表。 此表格可讓您儲存每個合約的持有人和共同持有人的名字和姓氏以及電子郵件地址。
 
-為此，需要建立表的模式並更新資料庫結構以生成相應表。 套用下列階段：
+要執行此操作，需要建立表的架構並更新資料庫結構以生成相應的表。 應用以下階段：
 
-1. 編輯Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]**。
-1. 選擇&#x200B;**[!UICONTROL Create a new table in the data model]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 編輯Adobe Campaign樹的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]** 。
+1. 選擇&#x200B;**[!UICONTROL Create a new table in the data model]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Next]** 。
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -62,9 +60,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >依預設，由使用者建立的結構描述會儲存在&#39;cus&#39;命名空間中。 有關詳細資訊，請參閱[方案標識](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
+   >依預設，使用者建立的結構會儲存在「自訂」命名空間中。 有關詳細資訊，請參閱[架構的標識](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
 
-1. 建立表的內容。 我們建議使用登入精靈，以確保沒有遺失設定。 若要這麼做，請按一下&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕，然後選擇要新增的設定類型。
+1. 建立表格的內容。 建議您使用登入精靈，確保未遺失任何設定。 要執行此操作，請按一下&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕並選擇要添加的設定類型。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -86,7 +84,7 @@ ht-degree: 1%
    </srcSchema>
    ```
 
-   添加合同類型，並在合同編號上放置索引。
+   添加合同類型並在合同編號上放置索引。
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
@@ -116,9 +114,8 @@ ht-degree: 1%
    </srcSchema>
    ```
 
-1. 保存模式以生成結構：
+1. 儲存結構以產生結構：
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新資料庫結構以建立將連結模式的表。 有關詳細資訊，請參閱[更新資料庫結構](../../configuration/using/updating-the-database-structure.md)。
-
+1. 更新資料庫結構以建立將連結架構的表。 有關詳細資訊，請參閱[更新資料庫結構](../../configuration/using/updating-the-database-structure.md)。
