@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >事件類型需要預先建立。 有關詳細資訊，請參閱[建立事件類型](../../message-center/using/creating-event-types.md)。
 
-交易式訊息範本包含個人化交易式訊息的必要資訊。 您也可以使用範本來測試訊息預覽，並在傳送至最終目標之前使用種子地址傳送校樣。 有關詳細資訊，請參閱[測試交易式訊息範本](../../message-center/using/testing-message-templates.md)。
+交易式訊息範本包含個人化交易式訊息的必要資訊。 您也可以使用範本來測試訊息預覽，並在傳送至最終目標之前使用種子地址傳送校樣。 如需詳細資訊，請參閱[測試交易式訊息範本](../../message-center/using/testing-message-templates.md)。
 
 ## 建立訊息範本 {#creating-message-template}
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 建立訊息內容{#creating-message-content}
 
-交易式訊息內容的定義與Adobe Campaign中定期傳送的定義相同。 例如，對於電子郵件傳送，您可以建立HTML或文字格式的內容、新增附件或個人化傳送物件。 如需詳細資訊，請參閱[電子郵件傳送](../../delivery/using/about-email-channel.md)的章節。
+交易式訊息內容的定義與Adobe Campaign中定期傳送的定義相同。 例如，對於電子郵件傳送，您可以建立HTML或文字格式的內容、新增附件或個人化傳送物件。 如需詳細資訊，請參閱[電子郵件傳送](../../delivery/using/about-email-channel.md)章節。
 
 >[!IMPORTANT]
 >
