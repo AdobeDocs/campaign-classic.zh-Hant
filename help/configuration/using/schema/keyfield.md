@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 7%
 
 ---
-
 
 # 關鍵欄位元素{#keyfield--element}
 
@@ -26,7 +24,7 @@ keyfield:==EMPTY
 * @xlink(MNTOKEN)
 * @xpath(MNTOKEN)
 
-## 父代{#parents-9}
+## 父級{#parents-9}
 
 `<key>`  ,  `<dbindex />`
 
@@ -36,16 +34,16 @@ keyfield:==EMPTY
 
 ## 說明 {#description-9}
 
-此元素定義要整合到索引或鍵中的欄位。
+此元素定義要整合至索引或索引鍵的欄位。
 
 ## 屬性說明{#attribute-description-9}
 
-* **xlink(MNTOKEN)**:可讓您自動參照在關係表（N-N連結）的連接中定義的外鍵。
-* **xpath(MNTOKEN)**:索引或元素上索引鍵的定 `<attribute>`  義。此屬性接收一個Xpath ，它定義了用於定義索引或索引的架構屬性的路徑。
+* **xlink(MNTOKEN)**:可讓您自動參照在關係表（N-N連結）的聯接中定義的外鍵。
+* **xpath(MNTOKEN)**:元素上索引或鍵的定 `<attribute>`  義。此屬性會接收一個Xpath，該Xpath定義用於定義鍵或索引的架構屬性的路徑。
 
 ## 範例 {#examples-}
 
-在「@name」上具有Xpath的索引中選擇「sName」欄位：
+在索引中選擇「sName」欄位，並在「@name」上選擇Xpath:
 
 ```
 <keyfield xpath="@name"/>
