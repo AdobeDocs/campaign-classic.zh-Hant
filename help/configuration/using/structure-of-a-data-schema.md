@@ -1,28 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 資料模式的結構
-description: 資料模式的結構
+title: 資料方案結構
+description: 資料方案結構
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 10%
 
 ---
 
+# 資料方案結構{#structure-of-a-data-schema}
 
-# 資料模式的結構{#structure-of-a-data-schema}
-
-資料模式的結構以樹結構的形式顯示。 若要在Adobe Campaign用戶端主控台中以圖形方式檢視它，請選取目標結構，然後按一下&#x200B;**[!UICONTROL Structure]**&#x200B;子標籤。
+資料模式的結構以樹結構的形式顯示。 若要在Adobe Campaign用戶端主控台中以圖形方式檢視，請選取目標架構，然後按一下&#x200B;**[!UICONTROL Structure]**&#x200B;子標籤。
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
-作為標準，欄位會先顯示（「活動」、「已啟動」等） 按字母順序排列。 接著會出現結構元素（郵遞區號、位置），最後是連結（電子郵件資訊、資料夾等）。
+依標準，會先顯示欄位（活動、啟動等） 按字母順序排列。 接下來是結構元素（郵遞區號、位置），最後是連結（電子郵件資訊、資料夾等）。
 
-主鍵由紅色鍵標識，外鍵由黃色鍵標識。
+主鍵由紅鍵標識，外鍵由黃色鍵標識。
 
-根據連結是否屬於表，以圖形方式區分連結。 首先顯示從表開始的表（即表中有外鍵）（電子郵件資訊、資料夾、國家）。 「反向」系列連結（訂閱、訂購等） 的下界。
+連結是否屬於表，以圖形方式加以區分。 首先顯示從表開始的表（即表中有外鍵）（電子郵件資訊、資料夾、國家/地區）。 「反向」收集連結（訂閱、訂購等） 會顯示在結尾。
