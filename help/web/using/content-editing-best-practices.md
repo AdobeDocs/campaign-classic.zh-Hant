@@ -1,26 +1,24 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 內容編輯最佳實務
 description: 內容編輯最佳實務
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
 
 ---
 
-
 # 內容編輯最佳實務{#content-editing-best-practices}
 
-為確保編輯的最佳作業，我們建議遵守下列准則：
+為確保編輯者的最佳操作，建議您遵循下列准則：
 
-* 在&#x200B;**匯入Adobe Campaign中的HTML頁面範本**&#x200B;之前，請確定範本已開啟並正確顯示在各種瀏覽器中。
-* 如果HTML頁面包含&#x200B;**JavaScript指令碼**，則需要在編輯器外執行&#x200B;**，而不需出現錯誤**。
+* 在Adobe Campaign中匯入HTML頁面範本&#x200B;**之前，請確定範本已開啟，並在各種瀏覽器中正確顯示。**
+* 如果HTML頁面包含&#x200B;**JavaScript指令碼**，則這些指令碼必須執行&#x200B;**，而不需要在編輯器外部出現錯誤**。
 * 建立範本時，建議將 **&#39;type&#39;** 屬性新增至標籤。`<input>`編輯器將處理此資訊，並幫助用戶在配置Web應用程式時將資料庫的欄位連結到表單的欄位。
 
    範本中的 HTML 程式碼範例：
@@ -29,31 +27,31 @@ ht-degree: 6%
    <input id="email" type="email" name="email"/>
    ```
 
-   **&#39;type&#39;**&#x200B;屬性在介面中以下列格式顯示：
+   **&#39;type&#39;**&#x200B;屬性以下列形式顯示在介面中：
 
    ![](assets/dce_sidebar_inputtypechanges.png)
 
-   此網站](https://www.w3schools.com/tags/att_input_type.asp)提供「類型」屬性的正式清單。[
+   此網站](https://www.w3schools.com/tags/att_input_type.asp)中提供「type」屬性的正式清單[。
 
 * 使用DCE模擬結束頁的步驟：
 
    ![](assets/dce_enchainement.png)
 
-* 請確定頁面中只有一個`<body> </body>`。
-* 上傳CSS或JS檔案時，不會上傳包含在。zip檔案中的影像。 因此，CSS中這些影像的參考不會更新。
+* 確定頁面中只有一個`<body> </body>`。
+* 上傳CSS或JS檔案時，不會上傳.zip檔案中包含的影像。 因此，CSS中對這些影像的參考不會更新。
 
 ## 內容編輯器支援的格式{#content-editor-supported-formats}
 
-數位內容編輯器支援HTML格式：您可以隨時切換至&#x200B;**source**&#x200B;模式。
+數位內容編輯器支援HTML格式：您可以隨時切換到&#x200B;**source**&#x200B;模式。
 
-數位內容編輯器的匯入功能與下列支援的格式如下：
+數位內容編輯器的匯入功能可搭配下列支援的格式運作：
 
-* CSS:.zip檔案中的影像不會匯入。 CSS中這些影像的參考不會更新。
-* JS:.zip檔案中的影像不會匯入。 JS中對這些影像的參照不會更新。
+* CSS:系統不會匯入.zip檔案中顯示的影像。 CSS中對這些影像的參考不會更新。
+* JS:系統不會匯入.zip檔案中顯示的影像。 JS中對這些影像的參照不會更新。
 * Iframe:連結的頁面不會匯入。
-* 著陸頁面與網頁應用程式：如果&#x200B;**form**&#x200B;標籤遺失，則會出現警告。 `<form> </form>`必須始終存在於消息主體中。
+* 登錄頁面和網頁應用程式：如果缺少&#x200B;**form**&#x200B;標籤，則會出現警告。 `<form> </form>`必須始終出現在消息正文中。
 
-數位內容編輯器也適用於下列支援的程式碼頁面：
+數位內容編輯器也可搭配下列支援的程式碼頁面使用：
 
 * iso-8859-1
 * iso-8859-2
@@ -69,29 +67,28 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->HTML程式碼頁面必須定義在meta標籤（HTML 4或HTML 5）或BOM中。 如果沒有可用的代碼頁，請開啟latin1中的檔案。
+>HTML代碼頁必須在元標籤（HTML 4或HTML 5）或物料清單中定義。 如果沒有可用的代碼頁，請開啟latin1中的檔案。
 
 ## HTML內容狀態{#html-content-statuses}
 
-編輯器的上部區域顯示與內容狀態相關的消息。 消息的顏色代碼如下：
+編輯器的上方區段顯示與內容狀態相關的訊息。 訊息的顏色代碼如下：
 
-* **灰色訊息**:資訊消息，編輯器中不需要執行任何操作。
+* **灰色訊息**:資訊訊息，編輯器中不需要執行任何動作。
 * **藍色訊息**:與正在編輯的內容相關的資訊消息。
-* **黃色消息**:警告或錯誤訊息，要求代表使用者採取行動。
+* **黃色訊息**:需要代表使用者採取動作的警告或錯誤訊息。
 
 ### 編輯Web應用程式{#list-of-messages-when-editing-a-web-application}時的消息清單
 
 * HTML內容可正常運作。
-* Web應用程式尚未發佈，無法線上存取。
-* Web應用程式已線上，請再次發佈以套用任何變更。
-* 頁面內容無法正常運作。 它必須包含HTML表單(`<form>`)
+* Web應用程式尚未發佈，無法聯機訪問。
+* Web應用程式已聯機，請重新發佈以應用任何更改。
+* 頁面內容無法正常運作。 必須包含HTML表單(`<form>`)
 * 沒有要配置的輸入區域或按鈕。
-* 若要啟用轉換至下一頁，您必須將「下一頁」動作連結至目前頁面上的按鈕或連結。
+* 若要啟用轉變至下一頁，您必須將「下一頁」動作連結至目前頁面上的按鈕或連結。
 
 ### 編輯傳送{#list-of-messages-when-editing-a-delivery}時的訊息清單
 
-* 傳送內容具功能
-* 沒有欄位或個人化區塊可供設定。
-* 傳送內容已就緒，請重新執行分析以套用任何變更。
-* 傳送已準備好。
-
+* 傳遞內容可正常運作
+* 沒有要設定的欄位或個人化區塊。
+* 傳遞內容已就緒，請再次執行分析以套用任何變更。
+* 已準備好傳送。
