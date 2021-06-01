@@ -1,84 +1,82 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 分佈式架構
 description: 分佈式架構
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
 
 ---
 
-
 # 分佈式架構{#distributed-architectures}
 
-## 原則{#principle}
+## 原則 {#principle}
 
-若要支援可擴充性並在傳入通道上提供全年無休的服務，您可以使用與分散式架構的互動功能。 此類體系結構已與消息中心一起使用，由以下幾個實例組成：
+若要支援可擴充性並在傳入通道上提供24/7服務，您可以使用與分佈式架構的互動。 此類型的架構已與Message Center搭配使用，且由數個執行個體組成：
 
-* 一或多個專用於對外渠道並包含行銷和環境設計基礎的控制實例
+* 一或多個專用於傳出頻道且包含行銷和環境設計基礎的控制執行個體
 * 專用於入站通道的一個或多個執行實例
 
 ![](assets/interaction_powerbooster_schema.png)
 
 >[!NOTE]
 >
->控制實例專用於入站通道，並包含目錄的聯機版本。 每個執行例項都獨立且專屬於一個連絡人區段（例如，每個國家／地區一個執行例項）。 選件引擎呼叫必須直接在執行中執行（每個執行例項有一個特定URL）。 由於執行個體間的同步並非自動，因此來自相同聯絡人的互動必須透過相同的執行個體傳送。
+>控制執行個體專用於入站通道，並包含目錄的線上版本。 每個執行例項都是獨立的，專屬於一個連絡人區段（例如，每個國家/地區一個執行例項）。 必須直接在執行時執行選件引擎呼叫（每個執行例項一個特定URL）。 由於執行個體之間的同步並非自動，因此來自相同聯絡人的互動必須透過相同執行個體傳送。
 
 ## 命題同步{#proposition-synchronization}
 
-選件同步是透過封包進行。 在執行例項上，所有目錄物件都以外部帳戶名稱為前置詞。 這表示同一執行例項可支援數個控制例項（例如開發與生產例項）。
+選件同步是透過套件執行。 在執行例項上，所有目錄物件都會加上外部帳戶名稱的前置詞。 這表示同一個執行例項可支援數個控制例項（例如開發和生產例項）。
 
 >[!IMPORTANT]
 >
->我們建議您使用簡短而明確的內部名稱。
+>建議您使用簡短且明確的內部名稱。
 
-選件會自動部署，然後發佈至執行和控制例項。
+選件會自動部署，然後在執行和控制執行個體時發佈。
 
-在設計環境中刪除的選件會在所有線上執行個體上停用。 在清除期間（在每個實例的部署助理中指定）和滑動期間（在傳入命題的分類規則中指定）之後，將在所有實例上自動刪除過時的主張和選件。
+在設計環境中刪除的選件在所有線上執行個體上都會停用。 清除期（在每個實例的部署助理中指定）和滑動期（在傳入命題的類型規則中指定）之後，所有實例上都會自動刪除過時的命題和選件。
 
 ![](assets/interaction_powerbooster_schema2.png)
 
-為每個環境和外部帳戶建立一個用於提案同步的工作流。 可針對每個環境和外部帳戶調整同步頻率。
+系統會為每個環境和外部帳戶建立工作流程，以進行命題同步。 可針對每個環境和外部帳戶調整同步頻率。
 
 ## 限制 {#limitations}
 
-* 如果您使用從匿名環境到已識別環境的回退功能，這兩個環境必須位於同一執行例項上。
-* 多個執行實例之間的同步不會即時執行。 必須將相同連絡人的互動傳送至相同的例項。 控制實例必須專用於出站通道（無即時）。
-* 行銷資料庫不會自動同步。 權重和資格規則中使用的行銷資料必須複製至執行例項。 此程式不是標準程式，您必須在整合期間進行開發。
-* 命題同步只由FDA連接執行。
-* 如果您在同一實例上使用交互和消息中心，則在這兩種情況下都將通過FDA協定進行同步。
+* 如果您使用從匿名環境到已識別環境的回傳功能，這兩個環境必須位於相同的執行例項上。
+* 多個執行實例之間的同步不會即時執行。 同一聯絡人的互動必須傳送至相同例項。 控制實例必須專用於出站通道（非即時）。
+* 行銷資料庫不會自動同步。 加權和適用性規則中使用的行銷資料必須在執行例項上重複。 此程式不是標準程式，您必須在整合期間進行開發。
+* 命題同步只由FDA連線執行。
+* 若您在相同例項上使用互動和訊息中心，這兩種情況都會透過FDA通訊協定進行同步。
 
-## 軟體包配置{#packages-configuration}
+## 包配置{#packages-configuration}
 
-任何直接連結至&#x200B;**Interaction**（選件、主張、收件者等）的架構擴充功能 必須部署在執行例項上。
+直接連結到&#x200B;**Interaction**&#x200B;的任何架構擴展（選件、主張、收件人等） 必須部署在執行執行個體上。
 
-Interaction軟體包必須安裝在所有實例上（控制和執行）。 另外提供兩個套件：一個軟體包要安裝在控制實例上，另一個軟體包要安裝在每個執行實例上。
+Interaction包必須安裝在所有實例（控制和執行）上。 另外提供兩個套件：一個軟體包要安裝在控制實例上，另一個要安裝在每個執行實例上。
 
 >[!NOTE]
 >
->在安裝軟體包時，**nms:composition**&#x200B;表的&#x200B;**long**&#x200B;類型欄位（如命題ID）變為&#x200B;**int64**&#x200B;類型欄位。 [本節](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)將詳細介紹此類資料。
+>安裝包時，**nms:composition**&#x200B;表的&#x200B;**long**&#x200B;類型欄位（如主張ID）將變成&#x200B;**int64**&#x200B;類型欄位。 [此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中會詳細說明此類資料。
 
-必須在每個實例上配置資料保留期間（通過部署嚮導中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在執行例項中，此期間必須對應於要計算的類型學規則（滑動期間）和資格規則所需的歷史深度。
+必須在每個執行個體上設定資料保留期間（透過部署精靈中的&#x200B;**[!UICONTROL Data purge]**&#x200B;視窗）。 在執行例項上，此期間必須對應至類型規則（滑動期間）和要計算的適用性規則所需的歷史深度。
 
-在控制例項上：
+在控制執行個體上：
 
 1. 按執行實例建立外部帳戶：
 
    ![](assets/interaction_powerbooster1.png)
 
-   * 完成標籤並新增簡短且明確的內部名稱。
+   * 填妥標籤，並新增簡短且明確的內部名稱。
    * 選取 **[!UICONTROL Execution instance]**。
    * 核取 **[!UICONTROL Enabled]** 選項。
    * 完成執行實例的連接參數。
-   * 每個執行例項都必須連結至ID。 當您按一下&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按鈕時，就會指派此ID。
-   * 檢查使用的應用程式類型：**[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或兩者皆有。
-   * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須對有關實例的資料庫具有以下讀寫權限：
+   * 每個執行例項都必須連結至ID。 按一下&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按鈕時，會指派此ID。
+   * 檢查所使用的應用程式類型：**[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或兩者。
+   * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須在有關實例的資料庫上具有以下讀和寫權限：
 
       ```
       grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
@@ -88,18 +86,18 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
    >
    >必須在執行實例上授權控制實例的IP地址。
 
-1. 配置環境：
+1. 設定環境：
 
    ![](assets/interaction_powerbooster2.png)
 
-   * 添加執行實例清單。
-   * 對於每個同步期間，指定同步期間和篩選條件（例如，按國家／地區）。
+   * 新增執行例項清單。
+   * 對於每個，指定同步期間和篩選條件（例如，依國家/地區）。
 
       >[!NOTE]
       >
-      >如果您遇到錯誤，可以參考同步工作流程和選件通知。 這些功能可在應用程式的技術工作流程中找到。
+      >如果您遇到錯誤，可以查閱同步工作流程和優惠方案通知。 您可以在應用程式的技術工作流程中找到。
 
-如果基於最佳化原因，只有部分行銷資料庫在執行例項上複製，您可以指定連結至環境的受限架構，讓使用者僅能使用執行例項上可用的資料。 您可以使用執行例項無法使用的資料來建立選件。 若要這麼做，您必須在對外通道（**[!UICONTROL Taken into account if]**&#x200B;欄位）上限制此規則，以停用其他通道的規則。
+基於最佳化原因，如果執行例項上僅複製了部分行銷資料庫，則您可以指定連結至環境的受限架構，以允許使用者僅使用執行例項上可用的資料。 您可以使用執行例項上無法使用的資料來建立選件。 要執行此操作，必須通過在出站通道（**[!UICONTROL Taken into account if]**&#x200B;欄位）上限制此規則來停用其他通道上的規則。
 
 ![](assets/ita_filtering.png)
 
@@ -111,32 +109,32 @@ Interaction軟體包必須安裝在所有實例上（控制和執行）。 另�
 >
 >這些選項只能用於特定的維護案例。
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**:環境在指定實例上同步的最後日期。
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**:指定架構中的陳述從一個實例同步到另一個實例的最後日期。
-* **`NmsInteraction_MapWorkflowId`**:一個選項，包含生成的所有同步工作流的清單。
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**:環境在指定執行個體上同步的最後日期。
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**:指定架構的主張從一個實例同步到另一個實例的最後日期。
+* **`NmsInteraction_MapWorkflowId`**:包含所有同步工作流生成的清單的選項。
 
-執行例項上可使用下列選項：
+下列選項適用於執行例項：
 
-**NmsExecutionInstanceId**:選項。
+**NmsExecutionInstanceId**:包含例項ID的選項。
 
 ## 軟體包安裝{#packages-installation}
 
-如果您的例項先前沒有Interaction套件，則不需要移轉。 預設情況下，在安裝軟體包後，命題表將以64位元顯示。
+如果您的執行個體先前沒有互動套件，則不需要移轉。 預設情況下，主張表將在安裝軟體包後以64位元顯示。
 
 >[!IMPORTANT]
 >
->根據實例中現有主張的數量，此操作可能需要一段時間。
+>根據您實例中現有命題的數量，此操作可能需要一些時間。
 
-* 如果您的實例很少或沒有陳述，則不需要手動修改陳述表。 在安裝軟體包時，將進行修改。
-* 如果實例中有許多主張，則最好在安裝並運行控制包之前更改主張表的結構。 我們建議在低活動期間執行查詢。
+* 如果您的實例很少或沒有命題，則不需要手動修改命題表。 安裝軟體包時將進行修改。
+* 如果您的實例有很多建議，則最好先更改建議表的結構，然後安裝控制包並運行它們。 建議您在低活動期間執行查詢。
 
 >[!NOTE]
 >
->如果您已在命題表中執行了特定的配置，請相應地調整查詢。
+>如果您已在主張表格中執行特定設定，請據以調整查詢。
 
 ### PostgreSQL {#postgresql}
 
-有兩種方法。 第一個（使用工作表）的速度稍微快一些。
+有兩種方法。 第一個（使用工作表）的速度稍快。
 
 **工作表**
 
@@ -166,7 +164,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-編輯&#x200B;**Number**&#x200B;類型的大小不會導致值或重新寫入索引。 因此，這是立竿見影的。
+編輯&#x200B;**Number**&#x200B;類型的大小不會導致值或索引重新寫入。 因此，它是立即的。
 
 要執行的查詢如下：
 
@@ -229,4 +227,3 @@ GO
 CREATE NONCLUSTERED INDEX NmsPropositionRcp_recipientId ON NmsPropositionRcp (iRecipientId)
 GO
 ```
-
