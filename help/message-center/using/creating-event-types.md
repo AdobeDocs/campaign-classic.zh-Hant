@@ -2,25 +2,48 @@
 solution: Campaign Classic
 product: campaign
 title: 建立事件類型
-description: 建立事件類型
+description: 了解如何建立符合您要在Adobe Campaign Classic中傳送的交易式訊息的事件類型。
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 10%
+source-wordcount: '169'
+ht-degree: 3%
 
 ---
 
+# 建立事件類型 {#creating-event-types}
 
-# 建立事件類型{#creating-event-types}
+若要確保每個事件都可變更為個人化訊息，您必須先建立&#x200B;**事件類型**。
 
-必須在控制例項中建立Adobe Campaign要處理的事件類型。 這可通過樹的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;資料夾完成。 每個事件類型都與&#x200B;**[!UICONTROL eventType]**&#x200B;枚舉中的值匹配。 這可以是訂單確認、密碼或訂單傳送變更等。
+當[建立訊息範本](../../message-center/using/creating-the-message-template.md)時，您將選取符合您要傳送之訊息的事件類型。
 
-![](assets/messagecenter_eventtype_enum_001.png)
+>[!IMPORTANT]
+>
+>您必須先建立事件類型，才能在訊息範本中使用它們。
 
-有關明細清單的詳細資訊，請參閱[枚舉管理](../../platform/using/managing-enumerations.md)。
+若要建立由Adobe Campaign處理的事件類型，請遵循下列步驟：
 
-在建立明細清單值後，請登出並返回您的例項，讓建立生效。
+1. 登錄到&#x200B;**控制實例**。
+
+1. 轉至樹的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;資料夾。
+
+1. 從清單中選擇&#x200B;**[!UICONTROL Event type]**。
+
+1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立分項清單。 這可以是訂單確認、密碼變更、訂單傳送變更等。
+
+   ![](assets/messagecenter_eventtype_enum_001.png)
+
+   >[!IMPORTANT]
+   >
+   >每個事件類型都必須符合&#x200B;**[!UICONTROL Event type]**&#x200B;分項清單中的值。
+
+1. 建立分項清單值後，請登出再重新登入您的例項，讓建立生效。
+
+>[!NOTE]
+>
+>進一步了解[枚舉管理](../../platform/using/managing-enumerations.md)中的分項清單。
+
+
