@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 在Adobe Campaign Classic中定義互動式內容
 description: 了解如何在Adobe Campaign Classic中使用AMP定義互動式和動態電子郵件內容。
@@ -7,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
