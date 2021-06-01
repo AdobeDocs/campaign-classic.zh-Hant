@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 關於活動
 description: 關於活動
 audience: workflow
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 14%
 
 ---
 
-
 # 關於活動{#about-activities}
 
-本節說明所有可用活動。 根據建立／編輯工作流的節點或上下文，可用活動可能有所不同。 例如，在促銷活動中建立的工作流程具有特定渠道的傳送活動。
+本節說明所有可用的活動。 根據建立/編輯工作流程的節點或內容，可用的活動可能有所不同。 例如，在促銷活動中建立的工作流程具有通道特定的傳送活動。
 
-工作流活動按類別分組。 同時有四個標籤。
+工作流活動按類別分組。 同時有四個索引標籤。
 
-在促銷活動工作流程中，**[!UICONTROL Events]**&#x200B;標籤會由&#x200B;**[!UICONTROL Deliveries]**&#x200B;標籤所取代。 [Action activities](../../workflow/using/about-action-activities.md)一節中詳細介紹了此頁籤中的活動。
+在促銷活動工作流程中， **[!UICONTROL Events]**&#x200B;標籤會由&#x200B;**[!UICONTROL Deliveries]**&#x200B;標籤取代。 在[Action activities](../../workflow/using/about-action-activities.md)區段中會詳細說明此索引標籤中的活動。
 
 ![](assets/wf-activity-tabs.png)
 
 顯示全文:
 
-* [關於定位活動](../../workflow/using/about-targeting-activities.md)
+* [關於鎖定目標活動](../../workflow/using/about-targeting-activities.md)
 * [執行工作流程](../../workflow/using/starting-a-workflow.md)
 * [工作流程最佳實務](../../workflow/using/workflow-best-practices.md)
