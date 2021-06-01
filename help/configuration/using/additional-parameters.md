@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 其他網頁追蹤參數
-description: 進一步瞭解網頁追蹤的參數
+title: 其他網路追蹤參數
+description: 進一步了解網頁追蹤的參數
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
 
 ---
 
-
 # 其他參數{#additional-parameters}
 
 ## 參數{#definition-of-parameters}的定義
 
-您的Adobe Campaign平台提供兩個TRANSACTION類型的網路追蹤參數做為標準：
+您的Adobe Campaign平台提供兩個TRANSACTION類型的網頁追蹤參數作為標準：
 
 * **金額**:代表交易金額，
-* **文章**:表示事務處理中的項數。
+* **文章**:代表交易記錄中的項目數。
 
-這些參數在&#x200B;**nms:webTrackingLog**&#x200B;架構中定義，是報告中看到的一些指標。
+這些參數在&#x200B;**nms:webTrackingLog**&#x200B;架構中定義，且為報表中顯示的一些指標。
 
-要定義其他參數，必須擴展此方案。
+若要定義其他參數，您必須擴充此結構。
 
 **範例**:
 
@@ -42,7 +40,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-您可以設定追蹤記錄清單（傳送或收件者），以顯示這些參數的值。
+您可以設定追蹤記錄清單（傳遞者或收件者），以顯示這些參數的值。
 
 ## 重定向伺服器配置{#redirection-server-configuration}
 
@@ -50,15 +48,15 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->增加要考慮的字元數目上限可能會影響您平台的網頁追蹤效能。
+>增加要考慮的字元數上限可能會影響平台的網頁追蹤效能。
 
-若要這麼做，請修改&#x200B;**serverConf.xml**&#x200B;檔案中&#x200B;**`<trackinglogd>`**&#x200B;元素的&#x200B;**webTrackingParamSize**&#x200B;屬性。 此檔案會儲存在Adobe Campaign安裝目錄的&#x200B;**conf**&#x200B;子目錄中。
+要執行此操作，請修改&#x200B;**serverConf.xml**&#x200B;檔案中&#x200B;**`<trackinglogd>`**&#x200B;元素的&#x200B;**webTrackingParamSize**&#x200B;屬性。 此檔案儲存在Adobe Campaign安裝目錄的&#x200B;**conf**&#x200B;子目錄中。
 
 **範例**:
 
-預設值為64個字元。 此值可讓您考慮&#x200B;**amount**&#x200B;和&#x200B;**article**(&quot;amount=xxxxxxx&amp;article=xxxxxxx&quot;)標準參數。
+預設值為64個字元。 此值可讓您考慮&#x200B;**amount**&#x200B;和&#x200B;**article**(&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;)標準參數。
 
-通過考慮上述擴展模式示例中指示的兩個參數（名稱大小+值大小），您可以修改配置以考慮100個字元(&quot;amount=xxxxxxxx&amp;article=xxxxxx&amp;mode=xxxxxxxxx&amp;code=xxxxx&quot;)。
+考慮到上述擴充功能架構範例中指出的兩個參數（名稱大小+值大小），您可以修改設定，將100個字元納入考量(&quot;amount=xxxxxxxxxxx&amp;article=xxxxxxx&amp;mode=xxxxxxxxx&amp;code=xxxxx&quot;)。
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -67,21 +65,21 @@ processRestartTime="06:00:00" purgeLogsPeriod="50000" runLevel="10"
 webTrackingParamSize="64"/>
 ```
 
-修改配置後，您必須：
+修改設定後，您必須：
 
 * 停止承載重定向模組（Apache、IIS等）的Web伺服器，
-* 停止Adobe Campaign伺服器：**net stop nlserver6**（在Windows中）,**/etc/init.d/nlserver6 stop**（在Linux中）
+* 停止Adobe Campaign伺服器：**net stop nlserver6**&#x200B;在Windows中， **/etc/init.d/nlserver6 stop**&#x200B;在Linux中，
 
    >[!NOTE]
    >
-   >從20.1開始，建議改用下列命令（適用於Linux）:**systemctl stop nlserver**
+   >從20.1開始，建議改用下列命令（Linux適用）:**systemctl停止nlserver**
 
 * 在Linux中，使用&#x200B;**ipcrm**&#x200B;命令刪除共用記憶體段，
-* 重新啟動Adobe Campaign伺服器：**net start nlserver6**（在Windows中）,**/etc/init.d/nlserver6 start**（在Linux中）
+* 重新啟動Adobe Campaign伺服器：**net start nlserver6**，在Linux中， **/etc/init.d/nlserver6 start**
 
    >[!NOTE]
    >
-   >從20.1開始，建議改用下列命令（適用於Linux）:**systemmctl start nlserver**
+   >從20.1開始，建議改用下列命令（Linux適用）:**systemctl啟動nlserver**
 
 * 重新啟動Web伺服器。
 
@@ -111,5 +109,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->對於Linux，如果您增加&#x200B;**webTrackingParamSize**&#x200B;或&#x200B;**maxSharedLogs**&#x200B;參數的大小，則可能需要增加共用記憶體(SHM)的大小。
-
+>在Linux中，若您增加&#x200B;**webTrackingParamSize**&#x200B;或&#x200B;**maxSharedLogs**&#x200B;參數的大小，則可能需要增加共用記憶體(SHM)的大小。
