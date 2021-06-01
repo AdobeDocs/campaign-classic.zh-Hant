@@ -1,52 +1,50 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 鈎點
-description: 鈎點
+title: 勾點
+description: 勾點
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
 
 ---
 
+# 勾點{#hooks}
 
-# 鈎點{#hooks}
+互動中的鈎點可讓您修改&#x200B;**標準引擎行為**。
 
-「交互」中的掛接可讓您修改&#x200B;**標準引擎行為**。
-
-**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;勾點是在Adobe Campaign中，在選件空間中設定：
+**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;鈎點會在Adobe Campaign的選件空間中設定：
 
 ![](assets/interaction_hooks_1.png)
 
-**[!UICONTROL Dynamic offer]**&#x200B;勾選已設定Adobe Campaign中的選件權重：
+**[!UICONTROL Dynamic offer]**&#x200B;鈎點是以Adobe Campaign中的選件加權來設定：
 
 ![](assets/interaction_hooks_2.png)
 
 ## 目標載入{#target-loading}
 
-此掛接可讓您使用外部系統的額外資料，豐富連絡人的描述檔（由現成可用的查詢載入）。
+此連結可讓您以來自外部系統的其他資料，豐富連絡人的設定檔（由現成查詢載入）。
 
-收集的資料必須插入到呼叫資料節點（交互節點）中。 整合器必須事先擴充呼叫資料架構，以定義所收集資料的結構。 使用者可以與標準呼叫資料（在資格規則和個人化層級）相同的方式存取此資料。
+收集的資料必須插入呼叫資料節點（互動節點）中。 整合商必須預先擴展呼叫資料架構，以定義收集資料的結構。 使用者可以與標準呼叫資料（在適用性規則和個人化層級）相同的方式存取此資料。
 
 **輸入參數：**
 
 * xmlInteraction（xml類型）:交互節點
-* aTargetId（表格類型）:目標標識符
-* sUuid230（字串類型）:uuid230永久Cookie的值
-* sNid（字串類型）:內部作業Cookie的值
+* aTargetId（表格類型）:目標識別碼
+* sUuid230（字串類型）:uuid230永久cookie的值
+* sNlid（字串類型）:nlid工作階段cookie的值
 
-**返回參數：**
+**傳回參數：**
 
-* 豐富的交互節點（此掛接的第一個參數）
+* 擴充互動節點（此鈎的第一個參數）
 
 >[!NOTE]
 >
->**xmlInteraction**&#x200B;參數同時包含呼叫資料和由現成可用查詢載入的連絡人描述檔。
+>**xmlInteraction**&#x200B;參數同時包含呼叫資料和由現成查詢載入的聯絡人的設定檔。
 
 **範例:**
 
@@ -57,40 +55,40 @@ ht-degree: 1%
   interaction.@additionalData = additionalData;
 ```
 
-## 提案後處理{#proposition-post-processing-}
+## 命題後處理{#proposition-post-processing-}
 
-此掛接可讓您檢查特定互動中合格命題的一致性和相容性。 它還可讓您定義新的計分或概率計算功能。
+此掛接允許您檢查給定交互中合格命題的一致性和相容性。 它也可讓您定義新的分數或機率計算功能。
 
-使用一致性規則的示例：
+使用一致性規則的範例：
 
-* 限制同一呼叫、連結至相同產品或相同類別的主張數。
-* 僅在相同的互動中呈現與產品相關的選件。
+* 限制同一呼叫中連結到相同產品或相同類別的命題的數量。
+* 僅在相同互動中顯示與產品相關的優惠方案。
 
-後處理在排版規則應用程式和合格命題排序之後以及優先順序步驟之前執行。
+後續處理會在類型規則應用程式和合格命題排序之後，以及優先順序步驟之前執行。
 
 **輸入參數：**
 
-* 主張：合格主張表。 下面是此表中元素結構的示例
+* 主張：合格建議表。 以下是此表格中元素結構的範例
 
    ```
    { offer_id:1234,
      weight:2}
    ```
 
-* dicOffer（xml類型）:合格選件的所有屬性的字典（選件程式碼、類別ID、類別完整名稱、開始日期、結束日期、標籤、內部名稱、選件ID、其他選件欄位）。 例如
+* dicOffer（xml類型）:符合資格優惠方案的所有屬性的字典（優惠方案代碼、類別id、類別完整名稱、開始日期、結束日期、標籤、內部名稱、優惠方案id、其他優惠方案欄位）。 例如
 
    ```
    { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
      "1243": ...}
    ```
 
-* xmlTarget（xml類型）:配置檔案資料節點
+* xmlTarget（xml類型）:設定檔資料節點
 * xmlInteraction（xml類型）:呼叫資料節點
 * iPropNumber（整數類型）:預期選件數
 
-**返回參數：**
+**傳回參數：**
 
-* 修正命題清單（掛接的第一個參數）
+* 修正命題清單（鈎的第一個參數）
 * 修改的交互節點
 
 **範例:**
@@ -117,24 +115,24 @@ return aReturnedProps;
 
 ## 動態選件{#dynamic-offer}
 
-此掛接可讓您呼叫外部引擎，以選取連結至選件的產品清單。 它是在選件中設定的符合資格規則，以及在分類規則應用程式之前。
+此連結可讓您呼叫外部引擎，以選取連結至選件的產品清單。 這是在優惠方案中針對適用性規則和類型規則應用程式進行設定的。
 
-在此之前，整合器應使用產品上的附加資訊擴展命題&#x200B;**CompositionRcp**&#x200B;模式。 要指定此資料的儲存位置，空間的&#x200B;**[!UICONTROL Storage]**&#x200B;頁籤中提供&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;連結
+預先，整合商應擴展命題&#x200B;**DispostitionRcp**&#x200B;架構，並提供有關產品的其他資訊。 若要指定此資料的儲存位置，空間的&#x200B;**[!UICONTROL Storage]**&#x200B;標籤中會顯示&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;連結
 
 ![](assets/interaction_hooks_3.png)
 
 **輸入參數：**
 
-* xmlOffer（xml類型）:選件（選件代碼、類別ID、類別完整名稱、開始日期、結束日期、標籤、內部名稱、選件ID、其他選件欄位）
-* 重量：上下文權重（雙重類型）
-* xmlTarget（xml類型）:配置檔案資料節點
+* xmlOffer（xml類型）:優惠方案（優惠方案代碼、類別id、類別完整名稱、開始日期、結束日期、標籤、內部名稱、優惠方案id、其他優惠方案欄位）
+* dWeight:內容權重（雙重類型）
+* xmlTarget（xml類型）:設定檔資料節點
 * xmlInteraction（xml類型）:呼叫資料節點
 
-**返回參數：**
+**傳回參數：**
 
 返回要生成的命題表。 此表的每個元素都由以下資訊組成：
 
-* 選件識別碼
+* 優惠方案識別碼
 * 其他產品資料（例如產品代碼）
 * 權重
 
@@ -149,4 +147,3 @@ var product = getUrl("https://EXTERNAL_SYSTEM?offerCode=" + encodeURIComponent(x
 if( product )
   return [{offer_id: parseInt(String(xmlOffer.@id)), weight: dWeight, productId: product}];
 ```
-
