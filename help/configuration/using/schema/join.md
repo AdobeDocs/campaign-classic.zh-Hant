@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
 
 ---
 
-
-# 聯接元素{#join--element}
+# 聯接元素&lt;a0/{#join--element}
 
 ## 內容模型{#content-model-7}
 
@@ -27,7 +25,7 @@ join:==EMPTY
 * @xpath-dst（字串）
 * @xpath-src（字串）
 
-## 父代{#parents-7}
+## 父級{#parents-7}
 
 `<element>`
 
@@ -37,23 +35,23 @@ join:==EMPTY
 
 ## 說明 {#description-7}
 
-可讓您定義在SQL表之間建立聯接的欄位。
+用於定義在SQL表之間建立聯接的欄位。
 
 ## 使用與使用內容{#use-and-context-of-use-5}
 
-`<join>`元素僅能在父`<element>`元素為&#39;link&#39;類型時使用。 這表示父元素必須聲明&quot;@type=link&quot;屬性。
+`<join>`元素只有在父`<element>`元素為「link」類型時才可使用。 這表示父元素必須已宣告「@type=link」屬性。
 
-不需要在`<join>`元素中指定遠程表的名稱和名稱空間。 必須在父`<element>`中指定這些值。
+無需在`<join>`元素中指定遠程表的名稱和命名空間。 需要在父`<element>`中指定。
 
-依慣例，連結會定義在架構的結尾。
+根據慣例，連結會定義在結構結尾。
 
-如果在定義連結類型元素時未指定`<join>`元素，則連結將自動放置在兩個表的主鍵上。
+如果定義連結類型元素時未指定`<join>`元素，則該連結將自動放置在兩個表的主鍵上。
 
 ## 屬性說明{#attribute-description-7}
 
-* **dstFilterExpr（字串）**:此屬性可讓您限制遠端表格中符合資格的值數目。
-* **xpath-dst（字串）**:此屬性接收遠程表的Xpath（@name屬性）。
-* **xpath-src（字串）**:此屬性接收當前模式中的Xpath（@name屬性）。
+* **dstFilterExpr（字串）**:此屬性可讓您限制遠端表格中符合條件的值數目。
+* **xpath-dst（字串）**:此屬性接收Xpath(遠程表的@name屬性)。
+* **xpath-src（字串）**:此屬性會接收Xpath(目前架構中的@name屬性)。
 
 ## 範例 {#examples-6}
 
@@ -63,7 +61,7 @@ join:==EMPTY
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
 ```
 
-根據必須包含&#39;EN&#39;值的&quot;@country&quot;欄位內容，篩選指向&quot;cus:Country&quot;表格的連結：
+根據「@country」欄位的內容篩選連結，指向「cus:Country」表格，該欄位必須包含「EN」值：
 
 ```
 <element name="StockEN" type="link" label="MyLink" target="cus:Stock">
