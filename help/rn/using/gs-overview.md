@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard] 升級'
 description: '瞭解什麼是 Campaign Classic [!DNL Gold Standard] '
@@ -7,9 +6,8 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 
@@ -100,6 +98,6 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 
 ## 其他資源
 
-* [[!DNL Gold Standard] 發行說明](gold-standard.md)
+* [[!DNL Gold Standard]發行說明](gold-standard.md)
 * [建置升級常見問答集](../../platform/using/faq-build-upgrade.md)
-* [[!DNL Gold Standard]  相容性矩陣](compatibility-matrix-gs.md)
+* [[!DNL Gold Standard] 相容性對照表](compatibility-matrix-gs.md)
