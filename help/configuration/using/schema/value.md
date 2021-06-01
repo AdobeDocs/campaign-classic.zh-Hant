@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
 
 ---
 
-
 # 值元素{#value--element}
 
 ## 內容模型{#content-model-16}
 
-value:==help
+值：==幫助
 
 ## 屬性{#attributes-16}
 
@@ -31,7 +29,7 @@ value:==help
 * @name（字串）
 * @value（字串）
 
-## 父代{#parents-16}
+## 父級{#parents-16}
 
 `<enumeration>`
 
@@ -45,13 +43,13 @@ value:==help
 
 ## 屬性說明{#attribute-description-16}
 
-* **appliableIf（字串）**:此屬性可讓您使枚舉值成為可選值。它接收XTK表達式。
-* **desc（字串）**:枚舉值的說明。
-* **enabledIf（字串）**:條件，以啟動枚舉值。
-* **img(string)**:連結至&quot;namespace:image_name&quot;表單中列舉的影像。映像必須導入到應用程式伺服器。
+* **applicableIf（字串）**:此屬性可讓您將分項清單設為選用值。它接收XTK運算式。
+* **dsc（字串）**:枚舉值的說明。
+* **enabledIf（字串）**:啟用分項清單的條件。
+* **img(string)**:連結至「namespace:image_name」表單中列舉的影像。必須將映像導入應用程式伺服器。
 * **標籤（字串）**:枚舉值的標籤。
 * **name(string)**:枚舉值的內部名稱。
-* **值（字串）**:枚舉值的值。值的類型是根據枚舉的類型定義的。 如果枚舉為字串類型，則它只能包含字串類型值。
+* **值（字串）**:枚舉值的值。值的類型是根據枚舉的類型定義的。 如果枚舉為字元字串類型，則它只能包含字元字串類型值。
 
 ## 範例 {#examples-13}
 
