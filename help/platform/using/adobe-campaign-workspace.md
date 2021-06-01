@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Campaign 工作區
-description: 瞭解如何使用和自訂促銷活動工作區
-feature: Overview
+description: 了解如何使用和自訂Campaign工作區
+feature: 概覽
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 79%
@@ -31,7 +29,7 @@ ht-degree: 79%
 >
 >您的實例上可用的 Adobe Campaign 功能取決於安裝的模組和附加元件。部分功能可能無法使用，具體取決於您的許可及特定設定。
 >
->在安裝任何模組或附加元件之前，您需要檢查您的授權合約，或聯絡您的Adobe銷售代表。
+>安裝任何模組或附加元件之前，您需要檢查您的授權合約，或聯絡您的Adobe帳戶主管。
 
 ### 主控台和網路存取 {#console-and-web-access}
 
@@ -47,31 +45,31 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ![](assets/operation_from_web.png)
 
-### 語言{#languages}
+### 語言 {#languages}
 
-安裝Adobe Campaign Classic實例時，會選擇該語言。
+安裝Adobe Campaign Classic執行個體時會選取語言。
 
 ![](assets/language.png)
 
-您可以在5種不同的語言之間進行選擇：
+您可以選擇五種不同語言：
 
-* 英文（英國）
+* 英語（英國）
 * 英文 (US)
 * 法文
 * 德文
 * 日文
 
-您為Adobe Campaign Classic實例選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
+您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
-有關如何建立實例的詳細資訊，請參閱此[頁](../../installation/using/creating-an-instance-and-logging-on.md)。
+如需如何建立例項的詳細資訊，請參閱此[page](../../installation/using/creating-an-instance-and-logging-on.md)。
 
 >[!CAUTION]
 >
->建立例項後，無法變更語言。
+>建立執行個體後無法變更語言。
 
 ## 基本的導覽功能 {#navigation-basics}
 
-### 瀏覽頁{#browsing-pages}
+### 瀏覽頁面{#browsing-pages}
 
 平台功能各式各樣，可歸類為幾大核心功能，您可使用介面上方的連結來存取這些功能。
 
@@ -81,11 +79,11 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 每項核心功能都包含一套基於任務相關需求及使用情境的功能。例如，使用 **[!UICONTROL Profiles and targets]** 連結，您可以找到收件者清單、訂閱服務、現有的目標工作流程，以及建立這些元素的捷徑。
 
-這些清單可通過&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;介面左側部分的&#x200B;**[!UICONTROL Lists]**&#x200B;連結獲得。
+清單可透過&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;介面左側區段的&#x200B;**[!UICONTROL Lists]**&#x200B;連結取得。
 
 ![](assets/recipient_list_overview.png)
 
-### 使用標籤{#using-tabs}
+### 使用頁簽{#using-tabs}
 
 * 當您按一下核心功能或連結時，相關頁面會取代當前頁面。若要返回到上一頁，請按一下工具列上的 **[!UICONTROL Back]** 按鈕。若要返回到首頁，請按一下 **[!UICONTROL Home]** 按鈕。
 
@@ -99,7 +97,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 使用每個核心功能區段，您可以瀏覽可用的元素。若要瀏覽可用元素，請使用 **[!UICONTROL Browsing]** 區段中的捷徑。使用 **[!UICONTROL Other choices]** 連結，您可存取其他所有頁面，不受環境影響。
 
-您可以建立新元素（傳送、Web應用程式、工作流程等） 使用畫面左側&#x200B;**[!UICONTROL Create]**&#x200B;區段中的捷徑。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
+您可以建立新元素（傳送、Web應用程式、工作流程等） 使用畫面左側的&#x200B;**[!UICONTROL Create]**&#x200B;區段中的捷徑。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
 
 例如，在傳遞頁面上，使用 **[!UICONTROL Create]** 按鈕來建立新的傳遞。
 
@@ -159,17 +157,17 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 在表示時間期間 (例如，傳遞資源的有效期限、任務的核准期限等) 的欄位中，可以採用下列&#x200B;**單位** 列示值：
 
-* **[!UICONTROL s]** 幾秒鐘內，
-* **[!UICONTROL mn]** 幾分鐘內，
-* **[!UICONTROL h]** 幾個小時，
+* **[!UICONTROL s]** 幾秒，
+* **[!UICONTROL mn]** 幾分鐘，
+* **[!UICONTROL h]** 數小時，
 * **[!UICONTROL d]** 幾天。
 
 ![](assets/enter_unit_sample.png)
 
-## 教學課程影片{#video}
+## 教學課程影片 {#video}
 
-此影片顯示Campaign Classic工作區。
+此影片會介紹Campaign Classic工作區。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classic操作說明影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
