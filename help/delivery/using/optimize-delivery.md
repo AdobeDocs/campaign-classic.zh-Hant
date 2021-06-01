@@ -1,15 +1,14 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 最佳化訊息傳送
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -31,7 +30,7 @@ ht-degree: 7%
 
 * 工作流執行：監控工作流程是避免平台效能問題的關鍵。 遵循本文檔](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的[指南。
 
-* 如果您符合資格，您可以使用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)，透過[效能監控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html)功能來監控您的平台。
+* 如果您符合資格，您可以使用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)，透過[效能監控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html)功能來監控您的平台。
 
 ## 正在檢查網路配置{#network-config}
 
@@ -39,11 +38,11 @@ ht-degree: 7%
 
 **提示**:使用與您品牌網站對應的透明寄件者地址。例如，旅行社公司管理華倫天奴連鎖酒店。 它擁有其網站的valentino.com域。 為了推廣巴黎的華倫天奴酒店，它使用paris.valentino.com子域。 因此，相關寄件者地址可以是hotel@paris.valentino.com。
 
-## 傳遞能力管理{#deliverability-management}
+## 傳遞性管理 {#deliverability-management}
 
 若要在不反彈或標示為垃圾郵件的情況下到達收件者的收件匣，您必須改善訊息的傳遞率。
 
-* 什麼是傳遞能力?
+* 什麼是傳遞性?
 
    * 它指的是電子郵件的因素，這些因素決定了收件人伺服器接受電子郵件的能力。 ISP（網際網路服務提供者）會篩選出其識別為垃圾訊息的電子郵件，或封鎖影像下載。 如果他們判斷某個網域傳送的電子郵件過多，將會限制從該寄件者接收的電子郵件數量。
 
@@ -63,7 +62,7 @@ ht-degree: 7%
 
 * 如果您有無效地址的清單，Adobe建議通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;將其導入隔離表。
 
-* 在傳送分析期間，預設會排除被隔離的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [了解更多](#identifying-quarantined-addresses-for-a-delivery)
+* 在傳送分析期間，預設會排除被隔離的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [瞭解更多](#identifying-quarantined-addresses-for-a-delivery)
 
 * Adobe Campaign會根據傳回的錯誤類型來管理錯誤位址。 如需詳細資訊，請參閱[本章節](../../delivery/using/understanding-quarantine-management.md)。
 
