@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 對出頻道上的優惠方案
-description: 對出頻道上的優惠方案
+title: 傳出頻道上的優惠
+description: 傳出頻道上的優惠
 audience: interaction
 content-type: reference
 topic-tags: case-study
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
 
 ---
 
-
-# 對出頻道上的優惠方案{#offers-on-an-outbound-channel}
+# 傳出頻道上的優惠{#offers-on-an-outbound-channel}
 
 ## 電子郵件選件傳送{#email-offer-delivery}
 
-在我們的資料庫中，有一類旅行優惠是去非洲。 已設定每個選件的資格、上下文和表示法。 我們現在想要建立促銷活動，透過電子郵件呈現我們的選件。
+在我們的資料庫中，有一類前往非洲的旅行優惠。 已設定每個優惠方案的資格、內容和表示法。 我們現在想要建立行銷活動，透過電子郵件呈現優惠方案。
 
-1. 建立行銷促銷活動和定位工作流程。
+1. 建立行銷活動和目標工作流程。
 
    ![](assets/offer_delivery_example_001.png)
 
@@ -29,58 +27,58 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_002.png)
 
-1. 選擇符合節假日的選件環境電子郵件空間。
+1. 為符合假日的優惠方案環境選擇電子郵件空間。
 
    ![](assets/offer_delivery_example_003.png)
 
-1. 選擇包含非洲旅遊優惠的類別。
+1. 選擇包含非洲旅行優惠的類別。
 
    ![](assets/offer_delivery_example_004.png)
 
-1. 將傳送中的選件數設為2。
+1. 將傳送中的選件數設為兩個。
 
    ![](assets/offer_delivery_example_005.png)
 
-1. 關閉選件管理視窗，並建立傳送的內容。
+1. 關閉優惠方案管理視窗，並建立傳送內容。
 
    ![](assets/offer_delivery_example_006.png)
 
-1. 使用功能表插入第一個選件提案並選擇HTML轉換功能。
+1. 使用功能表插入第一個選件主張，並選擇HTML轉譯函式。
 
    ![](assets/offer_delivery_example_007.png)
 
-1. 插入第二個選件提案。
+1. 插入第二個優惠方案主張。
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;以在傳送中預覽選件，然後選取收件者以在收到選件時預覽選件。
+1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;以在傳送中預覽優惠方案，然後選取收件者以在收到優惠方案時預覽優惠方案。
 
    ![](assets/offer_delivery_example_009.png)
 
-1. 儲存您的傳送並啟動定位工作流程。
-1. 開啟您的傳送，然後按一下傳送的&#x200B;**[!UICONTROL Audit]**&#x200B;標籤：您可以看到選件引擎已從目錄中的各種選件中選取要提出的建議。
+1. 儲存您的傳送並啟動目標工作流程。
+1. 開啟您的傳送，然後按一下傳送的&#x200B;**[!UICONTROL Audit]**&#x200B;標籤：您可以看到優惠方案引擎已從目錄中的各種優惠方案中選取要提出的建議。
 
    ![](assets/offer_delivery_example_010.png)
 
-## 執行選件模擬{#perform-an-offer-simulation}
+## 執行優惠方案模擬{#perform-an-offer-simulation}
 
 1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Simulations]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 
    ![](assets/offer_simulation_001.png)
 
-1. 選擇標籤並指定執行設定（如有需要）。
+1. 選擇標籤，並視需要指定執行設定。
 
    ![](assets/offer_simulation_example_002.png)
 
-1. 儲存模擬。 然後，在新標籤中開啟。
+1. 保存模擬。 接著會在新索引標籤中開啟。
 
    ![](assets/offer_simulation_example_003.png)
 
-1. 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;頁籤，然後按一下&#x200B;**[!UICONTROL Scope]**。
+1. 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Scope]**。
 
    ![](assets/offer_simulation_example_004.png)
 
-1. 選擇您要模擬選件的類別。
+1. 選擇要模擬選件的類別。
 
    ![](assets/offer_simulation_example_005.png)
 
@@ -88,10 +86,10 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_006.png)
 
-1. 輸入有效日期。 您必須至少輸入開始日期。 這可讓選件引擎篩選選件，並選擇在指定日期有效的選件。
-1. 如有必要，請指定一或多個主題，將選件數限制為設定中包含此關鍵字的選件數。
+1. 輸入有效日期。 您至少必須輸入開始日期。 這可讓優惠方案引擎篩選優惠方案，並選擇在指定日期有效的優惠方案。
+1. 如有必要，請指定一或多個主題，以限制設定中包含此關鍵字的選件數目。
 
-   在我們的範例中，**Travel**&#x200B;類別包含兩個具有兩個不同主題的子類別。 我們想要運用&#x200B;**Customers>1年**&#x200B;主題對選件進行模擬。
+   在我們的範例中，**Travel**&#x200B;類別包含兩個具有兩個不同主題的子類別。 我們想使用&#x200B;**Customers>1年**&#x200B;主題對選件執行模擬。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -99,9 +97,9 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_008.png)
 
-1. 設定要傳送給每個收件者的選件數。
+1. 設定要傳送給每個收件者的優惠方案數量。
 
-   在我們的範例中，選件引擎會為每個收件者選擇3個具有最大權重的選件。
+   在我們的範例中，優惠方案引擎會為每個收件者選擇3個具有最高權重的優惠方案。
 
    ![](assets/offer_simulation_example_009.png)
 
@@ -109,21 +107,20 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 模擬完成後，請參閱&#x200B;**[!UICONTROL Results]**&#x200B;以取得每個選件的主張詳細劃分資訊。
+1. 模擬完成後，請查閱&#x200B;**[!UICONTROL Results]**&#x200B;以了解每個選件的主張的詳細資訊。
 
-   在我們的範例中，選件引擎以3個選件劃分為基礎。
+   在我們的範例中，優惠方案引擎已根據3個主張來劃分優惠方案。
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 顯示&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;以檢視選件引擎所選的選件清單。
+1. 顯示&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;以檢視選件引擎所選取的選件清單。
 
    ![](assets/offer_simulation_example_012.png)
 
-1. 如有必要，可以通過按一下&#x200B;**[!UICONTROL Start simulation]**&#x200B;來更改範圍設定並再次運行模擬。
+1. 如有必要，可以通過按一下&#x200B;**[!UICONTROL Start simulation]**&#x200B;更改範圍設定並再次運行模擬。
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 若要儲存模擬資料，請使用報表中可用的步驟記錄或匯出功能。
+1. 若要儲存模擬資料，請使用報表中可用的歷史記錄或匯出函式。
 
    ![](assets/offer_simulation_example_013.png)
-
