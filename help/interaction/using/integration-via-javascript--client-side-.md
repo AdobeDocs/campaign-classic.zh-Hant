@@ -1,39 +1,37 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 透過 JavaScript 進行整合 (用戶端)
 description: 透過 JavaScript 進行整合 (用戶端)
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
 
 ---
 
-
 # 透過 JavaScript 進行整合 (用戶端){#integration-via-javascript-client-side}
 
-若要在網頁中呼叫互動引擎，請直接將對JavaScript程式碼的呼叫插入網頁。 此呼叫會傳回定位
+若要在網頁中呼叫互動引擎，請將對JavaScript程式碼的呼叫直接插入頁面中。 此呼叫會傳回目標中的選件內容
 
 元素。
 
 Adobe建議使用JavaScript整合方法。
 
-呼叫URL的指令碼如下所示：
+呼叫URL的指令碼看起來像這樣：
 
 ```
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-&quot;**env**&quot;參數接收專用於匿名交互的即時環境的內部名稱。
+「**env**」參數接收專用於匿名互動的即時環境的內部名稱。
 
 若要呈現選件，我們需要在Adobe Campaign中建立環境和選件空間，然後設定HTML頁面。
 
-下列使用案例詳細說明透過JavaScript整合選件的可能選項。
+下列使用案例詳細說明透過JavaScript整合優惠方案的可能選項。
 
 ## HTML模式{#html-mode}
 
@@ -43,18 +41,18 @@ Adobe建議使用JavaScript整合方法。
 
    開啟Adobe Campaign介面並準備匿名環境。
 
-   建立連結至匿名環境的選件空間。
+   建立連結至匿名環境的優惠方案空間。
 
-   建立連結至選件空間的選件及其表示法。
+   建立連結至優惠方案空間的優惠方案及其表示法。
 
 1. **HTML頁面的內容**
 
    HTML頁面必須包含
 
-   元素，其中包含@id屬性，其值為已建立的選件空間的內部名稱(「i_internal name space」)。 選件將會插入此
+   具有@id屬性的元素，其值為已建立選件空間的內部名稱(「i_internal name space」)。 選件會插入此
 元素。
 
-   在我們的範例中，@id屬性會接收&quot;i_SPC12&quot;值，其中&quot;SPC12&quot;是先前建立的選件空間的內部名稱：
+   在本例中，@id屬性接收「i_SPC12」值，其中「SPC12」是先前建立的優惠方案空間的內部名稱：
 
    ```
    <div id="i_SPC12"></div>
@@ -68,15 +66,15 @@ Adobe建議使用JavaScript整合方法。
 
    >[!IMPORTANT]
    >
-   >`<script>`標籤不能自行關閉。
+   >`<script>`標籤不得自行關閉。
 
-   此靜態呼叫會自動產生動態呼叫，其中包含互動引擎所需的所有參數。
+   此靜態呼叫會自動產生包含互動引擎所需所有參數的動態呼叫。
 
-   此行為可讓您在相同頁面上使用數個選件空格，由對引擎的單一呼叫管理。
+   此行為可讓您在相同頁面上使用數個優惠方案空間，由對引擎的單一呼叫管理。
 
-1. **HTML頁面的結果**
+1. **結果為HTML頁面**
 
-   選件表示法的內容會由互動引擎傳回至HTML頁面：
+   互動引擎會將選件表示的內容傳回至HTML頁面：
 
    ```
    <div id="banner_header">
@@ -102,7 +100,7 @@ Adobe建議使用JavaScript整合方法。
 
 ### 呈現已識別的選件{#presenting-an-identified-offer}
 
-若要向已識別的連絡人提供選件，程式與此處詳述的程式類似：[呈現匿名選件](#presenting-an-anonymous-offer)。 在網頁內容中，您需要新增下列指令碼，以識別呼叫引擎期間的連絡人：
+若要向已識別的聯絡人呈現優惠方案，程式與此處詳述的程式類似：[呈現匿名選件](#presenting-an-anonymous-offer)。 在網頁的內容中，您需要新增下列指令碼，以在呼叫引擎期間識別連絡人：
 
 ```
 <script type="text/javascript">
@@ -110,15 +108,15 @@ Adobe建議使用JavaScript整合方法。
 </script>
 ```
 
-1. 前往網頁將會呼叫的選件空間，按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;並新增一或多個識別碼。
+1. 前往網頁將呼叫的優惠方案空間，按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;並新增一或多個識別金鑰。
 
    ![](assets/interaction_htmlmode_001.png)
 
-   在此範例中，識別碼是複合的，因為它是以電子郵件和收件者名稱為基礎。
+   在此範例中，識別金鑰為複合金鑰，因為它同時以電子郵件和收件者名稱為基礎。
 
-1. 在網頁顯示期間，指令碼評估可讓您將收件者ID傳遞至選件引擎。 如果ID是複合的，則按鍵會以與進階設定中使用的相同順序顯示，並以 |.
+1. 在網頁顯示期間，指令碼評估可讓您將收件者ID傳遞至選件引擎。 如果ID是複合的，則會以與進階設定中使用相同的順序顯示索引鍵，並以 | 。
 
-   在下列範例中，連絡人已登入網站，在呼叫互動引擎時，由於其電子郵件和姓名而被識別。
+   在下列範例中，連絡人已登入網站，且在呼叫互動引擎期間，由於其電子郵件和姓名而被識別。
 
    ```
    <script type="text/javascript">
@@ -126,23 +124,23 @@ Adobe建議使用JavaScript整合方法。
    </script>
    ```
 
-### 使用HTML轉換函式{#using-an-html-rendering-function}
+### 使用HTML呈現函式{#using-an-html-rendering-function}
 
-若要自動產生HTML選件表示法，您可以使用轉換函式。
+若要自動產生HTML選件表示法，您可以使用呈現函式。
 
 1. 前往選件空間，然後按一下&#x200B;**[!UICONTROL Edit functions]**&#x200B;連結。
 1. 選取 **[!UICONTROL Overload the HTML rendering function]**。
-1. 前往&#x200B;**[!UICONTROL HTML rendering]**&#x200B;標籤，並插入與選件空間中為選件內容所定義欄位相符的變數。
+1. 前往&#x200B;**[!UICONTROL HTML rendering]**&#x200B;標籤，並插入與選件空間中針對選件內容定義之欄位相符的變數。
 
    ![](assets/interaction_htmlmode_002.png)
 
-   在此範例中，選件會以橫幅的形式顯示在網頁中，並由可點選的影像和標題所組成，這些標題與選件內容中定義的欄位相符。
+   在此範例中，選件會以網頁中橫幅的形式顯示，由可點按的影像和標題組成，標題與選件內容中定義的欄位相符。
 
 ## XML模式{#xml-mode}
 
 ### 呈現選件{#presenting-an-offer}
 
-互動功能可讓您將XML節點傳回至呼叫選件引擎的HTML頁面。 此XML節點可由客戶端開發的功能來處理。
+互動可讓您將XML節點傳回至呼叫選件引擎的HTML頁面。 此XML節點可由客戶端開發的函式進行處理。
 
 對互動引擎的呼叫如下所示：
 
@@ -150,17 +148,17 @@ Adobe建議使用JavaScript整合方法。
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-&quot;**env**&quot;參數接收即時環境的內部名稱。
+「**env**」參數會接收即時環境的內部名稱。
 
-&quot;**cb**&quot;參數接收函式的名稱，該名稱將讀取包含（回呼）命題的引擎返回的XML節點。 此參數為可選參數。
+&quot;**cb**&quot;參數接收函式的名稱，該函式將讀取引擎返回的包含（回撥）命題的XML節點。 此參數為選用。
 
-&quot;**t**&quot;參數僅接收所標識的交互的目標值。 此參數也可與&#x200B;**interactionTarget**&#x200B;變數一起傳遞。 此參數為可選參數。
+「**t**」參數僅用於已識別的互動，接收目標的值。 此參數也可以與&#x200B;**interactionTarget**&#x200B;變數一併傳遞。 此參數為選用。
 
-&quot;**c**&quot;參數接收類別的內部名稱清單。 此參數為可選參數。
+「**c**」參數接收類別的內部名稱清單。 此參數為選用。
 
-「**th**」參數接收主題清單。 此參數為可選參數。
+「**th**」參數接收主題清單。 此參數為選用。
 
-&quot;**gctx**&quot;參數接收整個頁面的呼叫資料全域（內容）。 此參數為可選參數。
+「**gctx**」參數接收到整個頁面的呼叫資料全域（內容）。 此參數為選用。
 
 傳回的XML節點如下所示：
 
@@ -173,17 +171,17 @@ Adobe建議使用JavaScript整合方法。
 </propositions>
 ```
 
-下列使用案例詳細說明在Adobe Campaign中要進行的設定，以啟用XML模式，然後在HTML頁面中顯示對引擎的呼叫結果。
+下列使用案例詳細說明在Adobe Campaign中執行以啟用XML模式的設定，然後在HTML頁面中顯示對引擎的呼叫結果。
 
-1. **建立環境和選件空間**
+1. **建立環境和優惠方案空間**
 
-   有關建立環境的詳細資訊，請參閱[即時／設計環境](../../interaction/using/live-design-environments.md)。
+   如需建立環境的詳細資訊，請參閱[即時/設計環境](../../interaction/using/live-design-environments.md)。
 
-   有關建立選件空間的詳細資訊，請參閱[建立選件空間](../../interaction/using/creating-offer-spaces.md)。
+   如需建立優惠方案空間的詳細資訊，請參閱[建立優惠方案空間](../../interaction/using/creating-offer-spaces.md)。
 
-1. **擴充選件結構以新增欄位**
+1. **擴充優惠方案結構以新增欄位**
 
-   此方案將定義以下欄位：標題2和價格。
+   此架構將定義下列欄位：標題2和價格。
 
    範例中的架構名稱為&#x200B;**cus:offer**
 
@@ -212,19 +210,19 @@ Adobe建議使用JavaScript整合方法。
 
    >[!IMPORTANT]
    >
-   >每個元素必須定義兩次。 CDATA(&quot;_jst&quot;)類型元素可以包含個性化欄位。
+   >每個元素都需定義兩次。 CDATA(「_jst」)類型元素可以包含個人化欄位。
    >
-   >不要忘記更新資料庫結構。 如需詳細資訊，請參閱[本章節](../../configuration/using/updating-the-database-structure.md)。
+   >別忘了更新資料庫結構。 如需詳細資訊，請參閱[本章節](../../configuration/using/updating-the-database-structure.md)。
 
    >[!NOTE]
    >
    >您可以擴充選件結構，以批次和統一模式，以及任何格式（文字、HTML和XML）新增欄位。
 
-1. **擴充選件公式以編輯新欄位並修改現有欄位**
+1. **擴充優惠方案公式以編輯新欄位和修改現有欄位**
 
    編輯&#x200B;**選件(nsm)**&#x200B;輸入表單。
 
-   在「檢視」區段中，插入兩個新欄位，其中包含下列內容：
+   在「檢視」區段中，插入兩個新欄位，並包含下列內容：
 
    ```
    <input label="Title 2" margin-right="5" prebuildSubForm="false" type="subFormLink"
@@ -256,40 +254,40 @@ Adobe建議使用JavaScript整合方法。
                  <input colspan="2" label="Prix" nolabel="true" type="number" xpath="price_jst"/>
    ```
 
-   注釋掉目標URL欄位：
+   註解目標URL欄位：
 
    ![](assets/interaction_xmlmode_form_001.png)
 
    >[!IMPORTANT]
    >
-   >(`<input>`)表單的欄位必須指向在建立的模式中定義的CDATA類型元素。
+   >(`<input>`)表單的欄位必須指向建立架構中定義的CDATA類型元素。
 
-   選件表示形式中的轉換如下所示：
+   優惠方案表示表單中的呈現如下所示：
 
    ![](assets/interaction_xmlmode_form.png)
 
-   **[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;欄位已新增，**[!UICONTROL Destination URL]**&#x200B;欄位不再顯示。
+   已新增&#x200B;**[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;欄位，且不再顯示&#x200B;**[!UICONTROL Destination URL]**&#x200B;欄位。
 
 1. **建立優惠方案**
 
-   如需建立選件的詳細資訊，請參閱[建立選件](../../interaction/using/creating-an-offer.md)。
+   如需建立優惠方案的詳細資訊，請參閱[建立優惠方案](../../interaction/using/creating-an-offer.md)。
 
    在下列使用案例中，選件的輸入方式如下：
 
    ![](assets/interaction_xmlmode_offer.png)
 
-1. 核准選件或讓其他人核准選件，然後在最後一個步驟建立的選件空間上啟動選件，以便在連結的即時環境中使用。
+1. 核准優惠方案或讓其他人核准優惠方案，然後在最後一個步驟建立的優惠方案空間上加以啟用，以便在連結的即時環境中使用。
 1. **HTML頁面上的引擎呼叫和結果**
 
-   在HTML頁面中呼叫互動引擎的情形如下：
+   HTML頁面中對互動引擎的呼叫看起來像這樣：
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   &quot;**env**&quot;參數的值是即時環境的內部名稱。
+   「**env**」參數的值是即時環境的內部名稱。
 
-   &quot;**cb**&quot;參數的值是需要解譯引擎返回的XML節點的函式的名稱。 在我們的範例中，呼叫的函式會開啟一個模式視窗(alert()函式)。
+   &quot;**cb**&quot;參數的值是函式的名稱，該名稱需要解譯引擎返回的XML節點。 在我們的範例中，呼叫的函式會開啟一個模組視窗(alert()函式)。
 
    交互引擎返回的XML節點如下所示：
 
@@ -309,15 +307,15 @@ Adobe建議使用JavaScript整合方法。
    </propositions>
    ```
 
-### 使用渲染函式{#using-a-rendering-function-}
+### 使用呈現函式{#using-a-rendering-function-}
 
-您可使用XML轉換功能來建立選件簡報。 此函式將修改在調用引擎期間返回到HTML頁面的XML節點。
+可以使用XML呈現函式來建立優惠方案簡報。 此函式將修改在呼叫引擎期間傳回至HTML頁面的XML節點。
 
 1. 前往選件空間，然後按一下&#x200B;**[!UICONTROL Edit functions]**&#x200B;連結。
 1. 選取 **[!UICONTROL Overload the XML rendering function]**。
-1. 前往&#x200B;**[!UICONTROL XML rendering]**&#x200B;標籤並插入所需的函式。
+1. 前往&#x200B;**[!UICONTROL XML rendering]**&#x200B;標籤，並插入所需的函式。
 
-   函式可以如下所示：
+   函式可能如下所示：
 
    ```
    function (proposition) {
@@ -327,4 +325,3 @@ Adobe建議使用JavaScript整合方法。
    ```
 
 ![](assets/interaction_xmlmode_001.png)
-
