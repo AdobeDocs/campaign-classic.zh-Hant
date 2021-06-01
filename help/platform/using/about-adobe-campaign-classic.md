@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 關於 Adobe Campaign Classic
 description: 探索重要功能、使用者介面和全域準則。
-feature: Overview
+feature: 概覽
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '912'
 ht-degree: 95%
 
 ---
-
 
 # 開始使用Campaign Classic{#about-adobe-campaign-classic}
 
@@ -23,9 +21,9 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Adobe Campaign Classic 現提供 v6.11 和 v7 兩個版本。除了提及之外，[最新版本](../../rn/using/latest-release.md)中的這兩個版本都適用幫助材料。 螢幕截圖為 Campaign Classic v7 使用者介面。
+>Adobe Campaign Classic 現提供 v6.11 和 v7 兩個版本。除非另有提及，否則說明資料適用於[最新組建版本](../../rn/using/latest-release.md)中的兩個版本。 螢幕截圖為 Campaign Classic v7 使用者介面。
 
-![](assets/do-not-localize/how-to-video.png) [探索視訊的主要功能與功能](#video)
+![](assets/do-not-localize/how-to-video.png) [探索視訊的主要功能](#video)
 
 ## 核心功能 {#key-capabilities}
 
@@ -67,7 +65,7 @@ Adobe Campaign 可讓您在多個通路上設計及編排有針對性的個人�
 
 ## 核心功能及附加元件 {#core-capabilities-and-add-ons}
 
-Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行及最佳化對話式行銷功能。其中部分是核心功能，部分功能取決於套件的安裝和您的設定。此處提供了詳盡的產品說明：[Adobe Campaign Classic 產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。
+Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行及最佳化對話式行銷功能。其中部分是核心功能，部分功能取決於套件的安裝和您的設定。此處提供了詳盡的產品說明：[Adobe Campaign Classic 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。
 
 下列功能可供選用。您的執行個體可能提供或不提供其中的部分功能，具體取決於您的授權協定。
 
@@ -87,10 +85,10 @@ Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行�
 * [網路服務](../../configuration/using/about-web-services.md) -透過 API/網路服務使用 Campaign
 * [報告](../../reporting/using/about-adobe-campaign-reporting-tools.md) -存取內建報表，分析資料及設計您自己的報告
 
-## 教學課程影片{#video}
+## 教學課程影片 {#video}
 
 本影片介紹Campaign Classic的主要功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-其他Campaign Classichow-to影片可在[這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+其他Campaign Classic操作說明影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
