@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 關於描述性分析
 description: 關於描述性分析
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 4%
 
 ---
 
-
 # 關於描述性分析{#about-descriptive-analysis}
 
-為了產生有關資料庫中資料的統計資料，請使用專用精靈建立描述性分析報表，並依您的需求調整其內容和簡報。
+為了對資料庫中的資料產生統計資料，請使用專用精靈建立描述性分析報告，並根據您的需求調整其內容和呈現方式。
 
-這些報告涉及人口族群，應僅用於分析小資料量。
+這些報告涉及人口，應僅用於分析小資料量。
 
-您可以產生定量或定性分析報表。 定性分析可讓您以下列方式呈現資料：
+您可以產生定量或定性分析報告。 定性分析使您能夠按照以下方式表示資料：
 
 * 表格和色階分佈圖：
 
@@ -35,15 +33,14 @@ ht-degree: 4%
 
    ![](assets/reporting_descriptive_sample_2.png)
 
-量化分析提供有關選擇的數值資料的整體統計資料，如下所示：
+定量分析提供關於所選資料的總體統計資料，如下所示：
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-這些報表是透過描述性分析精靈建立的，此精靈可依據各種步驟，讓您選擇要建立的報表類型以及資料和版面。 報表會顯示在最後一個步驟中。 如有必要，報表可以發佈並與其他運算子共用、列印、匯出為Excel、PDF或OpenDocument格式。
+這些報表是透過描述性分析精靈建立，該精靈可依據不同步驟，讓您選擇要建立的報表類型以及資料和配置。 報告會顯示在最後一個步驟中。 如有必要，可以發佈報告並與其他運算子共用，打印、導出為Excel、PDF或OpenDocument格式。
 
-描述性分析精靈的功能不如Adobe Campaign報表強大，但它們確實提供資料庫內容或資料選擇的快速概述。
+描述性分析精靈的功能不如Adobe Campaign報表強大，但可快速概述資料庫內容或選取資料。
 
 >[!CAUTION]
 >
->描述性分析無法讓您探索大量資料。
-
+>描述性分析不允許您探索大資料量。
