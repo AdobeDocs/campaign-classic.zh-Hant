@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 20%
 
 ---
-
 
 # 方法元素{#methods--element}
 
@@ -25,7 +23,7 @@ ht-degree: 20%
 
 無
 
-## 父代{#parents-11}
+## 父級{#parents-11}
 
 `<srcschema>`
 
