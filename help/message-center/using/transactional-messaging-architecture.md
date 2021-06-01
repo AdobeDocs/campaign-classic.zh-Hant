@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在兩個執行個體上安裝&#x200B;**[!UICONTROL LINE Connect]**&#x200B;套件。
 * 在您的行銷執行個體上安裝&#x200B;**[!UICONTROL Transactional message control]**&#x200B;套件，並在執行執行個體上安裝&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;套件。
-* 在兩個執行個體上建立LINE **外部帳戶**&#x200B;和&#x200B;**服務**，且命名相同，以便同步這些執行個體。 有關如何建立LINE外部帳戶和服務的詳細資訊，請參閱此[page](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-)。
+* 在兩個執行個體上建立LINE **外部帳戶**&#x200B;和&#x200B;**服務**，且命名相同，以便同步這些執行個體。 有關如何建立LINE外部帳戶和服務的詳細資訊，請參閱[此部分](../../delivery/using/line-channel.md#setting-up-line-channel)。
 
 然後，從&#x200B;**[!UICONTROL Explorer]** ，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在這兩個執行個體上設定不同的外部帳戶：
 
@@ -248,4 +248,4 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 
 
-1. 您現在可以開始建立交易式訊息。 如需關於此項目的詳細資訊，請參閱此[頁面](../../message-center/using/creating-the-message-template.md)。
+1. 您現在可以開始[建立交易式訊息](../../message-center/using/creating-the-message-template.md)。
