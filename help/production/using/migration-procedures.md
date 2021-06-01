@@ -1,29 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 移轉程序
 description: 移轉程序
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b71a4d3-b340-4742-bd69-4073ce271cf3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 20%
 
 ---
 
-
 # 移轉程序{#migration-procedures}
 
-如果您從Adobe Campaign v6升級至v7，我們建議您遵循下列准則。
+如果您從Adobe Campaign v6升級至v7，建議遵循下列准則。
 
-* 在Windows上，若要進行用戶端和伺服器升級，請先解除安裝Adobe Campaign v6，然後再安裝v7。 不要忘記事先備份您的日誌和配置檔案。
+* 在Windows上，針對用戶端和伺服器升級，請先解除安裝Adobe Campaign v6，再安裝v7。 別忘了事前備份日誌和配置檔案。
 * 在Linux上，若要進行伺服器升級，請先移除Adobe Campaign v6套件，再安裝v7。
 
-有關遷移過程和最佳實踐的詳細資訊，請參閱：
+如需移轉程式和最佳實務的詳細資訊，請參閱：
 
 * [執行版本編號升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)
-* [移轉概觀](../../migration/using/about-migration.md)
-
+* [移轉概覽](../../migration/using/about-migration.md)
