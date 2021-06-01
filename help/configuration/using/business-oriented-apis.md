@@ -1,59 +1,57 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 商業導向 API
 description: 商業導向 API
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e6638870-3141-4f12-b904-db436127c0d1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
 
 ---
 
-
 # 商業導向 API{#business-oriented-apis}
 
-商業API是每種物件類型專屬的。 它們對以下方面有影響：
+業務API是每種物件類型專屬的。 它們對以下方面有影響：
 
 * 傳遞:
 
-   * 建立傳送操作，請參閱[SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
+   * 建立傳送動作，請參閱[SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
    * 傳送促銷活動（開始、暫停、停止、傳送校樣）,
-   * 恢復交付日誌。
+   * 正在恢復傳送記錄。
 
 * 工作流程:
 
-   * 啟動工作流程，
-   * 驗證流程等。
+   * 啟動工作流，
+   * 驗證流程等
 
       請參閱JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
 * 內容管理
 * 訂閱管理，請參閱[訂閱(nms:subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
-* 資料流程：進出口。
+* 資料流程：進口，出口。
 
-本節詳細說明「訂閱」、「取消訂閱」和「提交傳送」服務的使用。
+本節詳細說明「訂閱」、「取消訂閱」和「提交交付」服務的使用。
 
 >[!IMPORTANT]
 >
->[促銷活動JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 檔案包含有關SOAP呼叫和在Adobe Campaign中使用Javascript的其他資訊，以及應用程式中所有使用方法和函式的完整參考。
+>[Campaign JSAPI檔](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 案包含Adobe Campaign中SOAP呼叫與使用Javascript的其他資訊，以及應用程式中所使用所有方法和函式的完整參考。
 
 ## 訂閱(nms:subscription){#subscribe--nms-subscription-}
 
-此服務可讓您訂閱資訊服務的收件者，並更新收件者個人檔案。
+此服務可讓您訂閱資訊服務的收件者，並更新收件者設定檔。
 
-呼叫服務時需要下列參數：
+呼叫服務需要下列參數：
 
 * 驗證，
-* 訂閱服務的內部名稱、
-* 包含收件者資訊的XML檔案（來自&quot;nms:recipient&quot;架構）,
-* 布林值，若收件者尚未建立，則用於建立。
+* 訂閱服務的內部名稱，
+* 包含收件者資訊的XML文檔（來自&quot;nms:recipient&quot;方案）,
+* 收件者建立的布林值（如果尚未建立）。
 
-「nms:subscription」模式中「subscribe」方法的說明：
+「nms:subscription」方案中「subscribe」方法的描述：
 
 ```
 <method name="Subscribe" static="true">
@@ -65,19 +63,19 @@ ht-degree: 3%
 </method>
 ```
 
-協調鍵的定義必須通過XML文檔的`<recipient>`元素上的_**key**&#x200B;屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
+調解金鑰的定義必須通過XML文檔的`<recipient>`元素上的_**key**&#x200B;屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
 
-此呼叫不會傳回任何資料，但錯誤除外。
+除錯誤外，此呼叫不會傳回任何資料。
 
 ### 範例 {#examples}
 
-電子郵件地址上具有收件人協調密鑰的訂閱：輸入的XML文檔必須引用此欄位中的電子郵件地址和鍵的定義。
+電子郵件地址上具有收件者調解金鑰的訂閱：輸入XML文檔必須參考此欄位上的電子郵件地址和鍵的定義。
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
 ```
 
-更新收件者和訂閱。
+更新收件者及訂閱。
 
 ```
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
@@ -117,15 +115,15 @@ ht-degree: 3%
 
 ## 取消訂閱(nms:subscription){#unsubscribe--nms-subscription-}
 
-此服務可讓您取消訂閱資訊服務的收件者，並更新收件者個人檔案。
+此服務可讓您從資訊服務中取消訂閱收件者，並更新收件者設定檔。
 
-呼叫服務時需要下列參數：
+呼叫服務需要下列參數：
 
 * 驗證，
 * 要取消訂閱的服務的內部名稱，
-* 包含收件者資訊的XML檔案（來自&quot;nms:recipient&quot;架構）,
+* 包含收件者資訊的XML文檔（來自&quot;nms:recipient&quot;方案）,
 
-「nms:subscription」模式中「取消訂閱」方法的說明：
+「nms:subscription」方案中「取消訂閱」方法的說明：
 
 ```
 <method name="Unsubscribe" static="true">
@@ -136,15 +134,15 @@ ht-degree: 3%
 </method>
 ```
 
-協調鍵的定義必須通過XML文檔的`<recipient>`元素上的_key屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
+調解金鑰的定義必須透過XML檔案`<recipient>`元素上的_key屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
 
-如果收件者不在資料庫中或未訂閱相關資訊服務，則服務不執行任何操作並且不生成錯誤。
+如果收件者不在資料庫中或未訂閱相關資訊服務，則服務不會執行任何動作且不會產生錯誤。
 
 >[!NOTE]
 >
->如果未將服務名指定為參數，則收件人將自動顯示在denylist(@blackList=&quot;1&quot;)上。
+>如果未將服務名指定為參數，則收件人將自動列在封鎖清單(@blackList=&quot;1&quot;)上。
 
-此呼叫不會傳回任何資料，但錯誤除外。
+除錯誤外，此呼叫不會傳回任何資料。
 
 ### SOAP消息{#example-of-soap-messages-1}示例
 
@@ -178,15 +176,15 @@ ht-degree: 3%
 
 ## SubmitDelivery(nms:delivery){#submitdelivery--nms-delivery-}
 
-此服務可讓您建立和送出傳送動作。
+此服務可讓您建立和提交傳送動作。
 
-呼叫服務時需要下列參數：
+呼叫服務需要下列參數：
 
 * 驗證，
-* 傳送範本的內部名稱、
-* 可選的XML檔案，包含其他傳送資料。
+* 傳遞範本的內部名稱，
+* 包含其他傳送資料的選用XML檔案。
 
-您不應因可能遇到效能問題而在卷中呼叫此API。
+由於您可能遇到效能問題，因此不應大量呼叫此API。
 
 方法在其架構中的說明：
 
@@ -199,15 +197,15 @@ ht-degree: 3%
 </method>
 ```
 
-傳送範本必須從Adobe Campaign用戶端主控台建立。 它包含所有傳送的公用參數（傳送者位址或訊息有效期）。
+傳遞範本必須從Adobe Campaign用戶端主控台建立。 它包含所有傳送的公用參數（寄件者地址或訊息有效期間）。
 
-輸入的XML文檔是遵守「nms:delivery」架構的傳送模板片段。 它將包含無法在傳送範本中靜態定義的所有其他資料（例如，要定位的收件者清單）。
+輸入的XML文檔是符合「nms:delivery」架構結構的傳遞模板片段。 它將包含無法在傳遞範本中靜態定義的所有其他資料（例如要定位的收件者清單）。
 
-此呼叫不會傳回任何資料，但錯誤除外。
+除錯誤外，此呼叫不會傳回任何資料。
 
 ### XML文檔示例{#xml-document-example}
 
-此範例以來自外部資料來源的自訂傳送範本（此例中為檔案）為基礎。 傳送範本中已完整說明此設定，因此在呼叫發生時，所有仍待傳送的內容都是來自`<externalsource>`元素的檔案內容。
+此範例以來自外部資料來源的自訂傳送範本為基礎（此為檔案）。 傳遞範本中會詳細說明設定，因此呼叫發生時所有仍待傳送的內容，都是`<externalsource>`元素中的檔案內容。
 
 ```
 <delivery>
@@ -220,7 +218,7 @@ ht-degree: 3%
 </delivery>
 ```
 
-如果您沒有傳送範本，則可使用下列範例：
+如果您沒有傳遞範本，可使用下列範例：
 
 ```
 <delivery>
@@ -237,4 +235,3 @@ ht-degree: 3%
   </targets> 
 </delivery> 
 ```
-
