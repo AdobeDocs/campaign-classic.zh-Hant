@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 設定Campaign選項
 description: 了解如何設定Campaign選項
@@ -7,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3941'
 ht-degree: 0%
@@ -26,7 +25,7 @@ ht-degree: 0%
 * 修改或更新Adobe Campaign選項只能由專家使用者執行。
 
 
-## 傳送 {#delivery}
+## 傳遞 {#delivery}
 
 <table> 
  <thead> 
@@ -1011,7 +1010,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 網路表單{#web-forms}
+## 網路表單 {#web-forms}
 
 <table> 
  <thead> 
