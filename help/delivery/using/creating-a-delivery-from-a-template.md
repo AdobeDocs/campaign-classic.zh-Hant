@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 從範本建立傳遞
 description: 從範本建立傳遞
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
 
 ---
 
-
 # 從範本建立傳遞{#creating-a-delivery-from-a-template}
 
 ## 將範本連結至傳送{#linking-the-template-to-a-delivery}
 
-若要根據現有範本建立傳送，請從可用傳送範本清單中選取範本。
+若要根據現有範本建立傳送，請從可用的傳送範本清單中選取範本。
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
@@ -27,21 +25,21 @@ ht-degree: 10%
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-從&#x200B;**[!UICONTROL Folder]**&#x200B;欄位中選擇所需目錄，或按一下&#x200B;**[!UICONTROL Display sub-levels]**&#x200B;表徵圖以顯示當前目錄子樹中目錄的內容。
+從&#x200B;**[!UICONTROL Folder]**&#x200B;欄位中選擇所需目錄，或按一下&#x200B;**[!UICONTROL Display sub-levels]**&#x200B;表徵圖以在當前目錄的子樹中顯示目錄的內容。
 
-選擇要使用的傳送範本，然後按一下&#x200B;**[!UICONTROL Ok]**。
+選取要使用的傳送範本，然後按一下&#x200B;**[!UICONTROL Ok]**。
 
 ## 執行模板{#executing-the-template}
 
-您可以直接從範本清單啟動範本執行，而不需先建立傳送。 若要這麼做，請選取要執行的範本，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Actions>Execute the delivery template...]**。
+您可以直接從範本清單啟動範本的執行，不需先建立傳送。 要執行此操作，請選取要執行的範本，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Actions>Execute the delivery template...]**。
 
 您也可以使用&#x200B;**[!UICONTROL File>Actions>Execute the delivery template...]**。
 
 ![](assets/s_ncs_user_template_execute_menu.png)
 
-輸入傳送參數，然後按一下&#x200B;**[!UICONTROL Send]**。
+輸入傳遞參數，然後按一下&#x200B;**[!UICONTROL Send]**。
 
-此動作會在附加至範本的資料夾中產生傳送。 此傳送的名稱是從中建立傳送範本的名稱。
+此動作會在附加至範本的資料夾中產生傳送。 此傳送的名稱是建立傳送範本的傳送範本名稱。
 
 >[!NOTE]
 >
