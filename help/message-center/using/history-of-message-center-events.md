@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 訊息中心事件的歷史記錄
 description: 進一步了解「訊息中心事件記錄」報表。
@@ -7,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
-source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 7%
