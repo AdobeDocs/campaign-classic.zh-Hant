@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 5%
 
 ---
 
-
 # 枚舉元素{#enumeration--element}
 
 ## 內容模型{#content-model-5}
 
-枚舉：==(help| value)
+枚舉：==（help|值）
 
 ## 屬性{#attributes-5}
 
@@ -30,7 +28,7 @@ ht-degree: 5%
 * @name（字串）
 * @template（字串）
 
-## 父代{#parents-5}
+## 父級{#parents-5}
 
 `<srcschema>`
 
@@ -41,56 +39,56 @@ ht-degree: 5%
 
 ## 說明 {#description-5}
 
-此元素可讓我們定義值列舉。 枚舉屬於它在中定義的模式，但可通過其他模式訪問它。
+此元素可讓我們定義值列舉。 枚舉屬於它在中定義的架構，但可通過其他架構訪問。
 
 ## 使用與使用內容{#use-and-context-of-use-4}
 
-枚舉是在架構開始時（在定義主元素之前）定義的。
+列舉會在架構開始時（在定義主要元素之前）定義。
 
 ## 屬性說明{#attribute-description-5}
 
-* **basetype(string)**:枚舉中儲存的值的類型。
+* **basetype（字串）**:枚舉中儲存的值的類型。
 
    可用類型清單：
 
    * 任何
-   * 賓
+   * bin
    * blob
    * 布林值
    * 位元組
    * CDATA
    * 日期時間
-   * datetimetz
+   * datemetz
    * datetimenotz
    * 日期
    * DOMDocument
    * DOMElement
-   * 雙倍
+   * 兩次
    * 列舉
-   * 浮水
+   * 浮點
    * html
    * int64
-   * link
+   * 連結
    * long
    * 備忘錄
    * MNTOKEN
    * 百分比
    * primarykey
-   * 短
+   * short
    * 字串
    * 時間
-   * 時間平移
-   * uid
+   * 時間盤
+   * uuid
 
-* **default(string)**:預設值。預設值也可以是枚舉中定義的值之一。
-* **desc（字串）**:枚舉說明。
+* **預設值（字串）**:預設值。預設值也可以是枚舉中定義的值之一。
+* **dsc（字串）**:枚舉說明。
 * **標籤（字串）**:枚舉標籤。
 * **name(string)**:枚舉的內部名稱。
-* **範本（字串）**:此屬性定義對由多個方案 `<enumeration>` 共用的元素的引用。定義會自動複製到當前模式。
+* **範本（字串）**:此屬性定義對由多個結 `<enumeration>` 構共用的元素的引用。定義會自動複製到目前的架構中。
 
 ## 範例 {#examples-4}
 
-其值儲存在資料庫中的枚舉值示例：
+其值儲存在資料庫中的枚舉值的示例：
 
 ```
     <enumeration name="myEnum">
@@ -103,7 +101,7 @@ ht-degree: 5%
     </element>
 ```
 
-定義具有預設值的枚舉：
+以預設值列舉的定義：
 
 ```
  <enumeration basetype="byte" default="email" name="canal">
