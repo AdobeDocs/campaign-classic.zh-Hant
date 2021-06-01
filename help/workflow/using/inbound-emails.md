@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 傳入電子郵件
-description: 進一步瞭解「傳入電子郵件」工作流程活動
+description: 深入了解傳入電子郵件工作流程活動
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
 
 ---
 
-
 # 傳入電子郵件{#inbound-emails}
 
-**傳入電子郵件**&#x200B;活動可讓您從POP3郵件伺服器下載並處理電子郵件訊息。
+**傳入電子郵件**&#x200B;活動可讓您從POP3郵件伺服器下載及處理電子郵件。
 
 ![](assets/email_rec_edit_1.png)
 
-**入站電子郵件**&#x200B;活動的第一個頁籤允許您輸入POP3伺服器的參數，並輸入在收到每條消息時要執行的指令碼。 第二個標籤可讓您指派排程給活動，而第三個標籤則定義活動到期條件。
+**入站電子郵件**&#x200B;活動的第一個頁簽允許您輸入POP3伺服器的參數，並輸入在收到每條消息時要執行的指令碼。 第二個索引標籤可讓您指派排程給活動，第三個索引標籤則定義活動過期條件。
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-      啟用此選項時，您可以選擇外部POP3帳戶，而不是輸入連接參數。 **[!UICONTROL External account]**&#x200B;欄位指定要用來連線至電子郵件服務的外部POP3帳戶。 只有啟用「使用外部帳戶」選項時，才會顯示此欄位。
+      激活此選項時，您可以選擇外部POP3帳戶，而不輸入連接參數。 **[!UICONTROL External account]**&#x200B;欄位指定用於連接到電子郵件服務的外部POP3帳戶。 只有在啟用「使用外部帳戶」選項時，此欄位才會顯示。
 
-      如果未選取此選項，您必須指定下列參數：
+      如果未選取此選項，則必須指定以下參數：
 
       ![](assets/email_rec_edit_1b.png)
 
@@ -39,44 +37,43 @@ ht-degree: 1%
 
       * **[!UICONTROL POP3 account]**
 
-         用戶名。
+         使用者名稱。
 
       * **[!UICONTROL Password]**
 
-         使用者帳戶密碼。
+         用戶帳戶密碼。
 
       * **[!UICONTROL Port]**
 
          POP3連接埠號。 預設埠為110。
    * **[!UICONTROL Stop as soon as email is processed]**
 
-      此選項可讓您逐一處理電子郵件。 活動只啟動其轉換一次，然後完成處理，在伺服器上留下未處理的訊息。
+      此選項可讓您逐一處理電子郵件。 活動只會啟動其轉變一次，然後完成處理，將未處理的訊息留在伺服器上。
 
 
 1. **[!UICONTROL Script]**
 
-   此指令碼可讓您處理訊息，並執行取決於訊息內容的各種作業。 該指令碼對每條消息執行，並可確定要對消息執行的操作（離開或刪除消息）和激活出站轉換。
+   指令碼可讓您處理訊息，並執行取決於訊息內容的各種操作。 該指令碼對每條消息執行，並可確定要對消息（離開或刪除消息）執行的操作以及對出站轉變的激活。
 
-   傳回代碼必須是下列值之一：
+   傳回程式碼必須是下列其中一個值：
 
-   * 1 —— 從伺服器刪除消息並激活出站轉換。
-   * 2 —— 將消息保留在伺服器上並激活出站過渡。
-   * 3 —— 從伺服器刪除消息。
-   * 4 —— 將消息保留在伺服器上。
+   * 1 — 從伺服器刪除訊息並啟用出站轉變。
+   * 2 — 將訊息保留在伺服器上並啟動出站轉變。
+   * 3 — 從伺服器刪除訊息。
+   * 4 — 將訊息留在伺服器上。
 
-   可從全域&#x200B;**[!UICONTROL mailMessage]**&#x200B;變數存取訊息內容。
+   可從全域&#x200B;**[!UICONTROL mailMessage]**&#x200B;變數存取訊息的內容。
 
 1. **[!UICONTROL Schedule]**
 
-   要定義活動的調度，請按一下&#x200B;**[!UICONTROL Scheduling]**&#x200B;頁籤並選中&#x200B;**[!UICONTROL Plan execution]**。 按一下&#x200B;**[!UICONTROL Change]**&#x200B;按鈕以配置計畫。
+   若要定義活動的排程，請按一下&#x200B;**[!UICONTROL Scheduling]**&#x200B;標籤並勾選&#x200B;**[!UICONTROL Plan execution]**。 按一下&#x200B;**[!UICONTROL Change]**&#x200B;按鈕以設定排程。
 
-   計畫配置與計畫活動的配置相同。 請參閱[調度程式](../../workflow/using/scheduler.md)。
+   排程設定與排程活動的相同。 請參閱[排程器](../../workflow/using/scheduler.md)。
 
 1. **[!UICONTROL Expiration]**
 
-   您可以透過&#x200B;**[!UICONTROL Expiration]**&#x200B;標籤來定義到期延遲。
+   您可以透過&#x200B;**[!UICONTROL Expiration]**&#x200B;標籤定義到期延遲。
 
    ![](assets/email_rec_edit_3.png)
 
    設定與排程活動的設定相同。 請參閱[過期](../../workflow/using/defining-approvals.md)。
-
