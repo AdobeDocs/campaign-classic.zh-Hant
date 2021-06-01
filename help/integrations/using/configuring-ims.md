@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 設定IMS
 description: 了解如何透過Adobe ID連線
@@ -7,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
@@ -20,7 +19,7 @@ ht-degree: 2%
 >
 >AdobeIMS實作嚴格保留給Adobe技術管理員。 請連絡您的Adobe主管，以開始實作程式。
 
-## 必要條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 若要使用與IMS的整合：
 
