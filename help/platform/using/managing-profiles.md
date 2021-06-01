@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 管理用戶檔案
 description: 管理用戶檔案
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
-
-# 管理配置式{#managing-profiles}
+# 管理設定檔{#managing-profiles}
 
 ## 收件者樹狀結構清單 {#recipient-tree}
 
@@ -27,7 +25,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。進一步瞭解[資料夾和檢視](../../platform/using/access-management-folders.md)。
+>若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。了解更多[資料夾和檢視](../../platform/using/access-management-folders.md)。
 
 ## 移動收件者{#moving-recipients}
 
@@ -37,7 +35,7 @@ ht-degree: 93%
 
 您可以複製同一資料夾中的收件者，方法是在所需的收件者上按一下滑鼠右鍵，然後選取 **[!UICONTROL Copy]**。
 
-## 刪除收件者{#deleting-recipients}
+## 刪除收件人{#deleting-recipients}
 
 若要刪除收件者，請將它們移至特定資料夾，然後清除此資料夾的內容。**強烈建議您不要使用** 此處的 **[!UICONTROL Delete]** 選項。
 
@@ -48,4 +46,3 @@ ht-degree: 93%
 按一下 **[!UICONTROL Start]** 以執行操作。視窗的中間區域會顯示處理進度狀態，如下所示：
 
 ![](assets/s_ncs_user_purge_folder_start.png)
-
