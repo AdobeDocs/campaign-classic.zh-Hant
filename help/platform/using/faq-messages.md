@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 測試並傳送常見問題集
 description: Campaign Classic 常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
 ---
-
 
 # 驗證、傳送及追蹤訊息{#validate-send-track}
 
