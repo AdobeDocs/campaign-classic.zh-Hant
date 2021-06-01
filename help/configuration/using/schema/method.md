@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 3%
 
 ---
 
-
 # 方法元素{#method--element}
 
 ## 內容模型{#content-model-10}
 
-方法：==(help |參數)
+方法：==(幫助 |參數)
 
 ## 屬性{#attributes-10}
 
@@ -33,7 +31,7 @@ ht-degree: 3%
 * @pkonly（布林值）
 * @static（布林值）
 
-## 父代{#parents-10}
+## 父級{#parents-10}
 
 `<methods>`  ,  `<interface />`
 
@@ -48,22 +46,22 @@ ht-degree: 3%
 
 ## 使用與使用內容{#use-and-context-of-use-7}
 
-SOAP方法可啟用應用程式程式。
+SOAP方法啟用應用程式進程。
 
-宣告新方法（非原生）時，必須使用「@library」:namespace和用於庫的名稱獨立於聲明所在的架構的名稱空間和名稱。
+聲明新方法（非本機）時，必須使用「@library」：命名空間和用於程式庫的名稱與聲明所在架構的命名空間和名稱無關。
 
 ## 屬性說明{#attribute-description-10}
 
 * **存取（字串）**:此屬性定義使用方法的訪問控制。如果此屬性遺失，則必須進行識別。 可用值包括：&#39;anonymous&#39;、&#39;admin&#39;和&#39;sql&#39;。
-* **const（布林值）**:如果激活了該屬性，則此屬性表示聲明的方法將改變實體
-* **標籤（字串）**:標籤。
-* **程式庫（字串）**:此方法不是應用程式的原生方法。此屬性使用找到方法定義的方法庫(nms:mylibrary.js)的值。
-* **名稱(MNTOKEN)**:唯一方法名稱。
-* **靜態（布林值）**:如果激活了此屬性，則方法被視為自治，在調用該屬性時，必須將所有參數指定給該方法。
+* **const（布林值）**:如果激活，此屬性表示聲明的方法將更改實體
+* **標籤（字串）**:方法的標籤。
+* **程式庫（字串）**:此方法不是應用程式的原生方法。此屬性會取用找到方法定義的方法程式庫(nms:mylibrary.js)的值。
+* **name(MNTOKEN)**:唯一方法名稱。
+* **靜態（布林值）**:如果激活了此屬性，則該方法被視為自主，則調用該屬性時必須將所有參數指定給該方法。
 
 ## 範例 {#examples-7}
 
-「訂閱」現成可用方法的定義：
+「訂閱」的現成可用方法定義：
 
 ```
  
