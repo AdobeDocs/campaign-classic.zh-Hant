@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 傳送含附件的異動電子郵件
 description: 了解如何使用Adobe Campaign Classic，傳送含有個別和/或個人化附件的交易式電子郵件。
@@ -7,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
