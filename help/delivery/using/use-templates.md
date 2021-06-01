@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 使用傳遞範本
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -16,56 +14,56 @@ ht-degree: 0%
 
 # 使用範本 {#use-templates}
 
-提供範本可針對大多數常見活動類型提供現成的藍本，以提高效率。 使用範本，行銷人員可以在較短的時間內，以最少的自訂方式部署新的促銷活動。
+傳遞範本可為最常見的活動類型提供現成的案例，借此提高效率。 透過範本，行銷人員可以在較短的時間內以最少的自訂方式部署新的行銷活動。
 
-進一步瞭解[本節](../../delivery/using/creating-a-delivery-template.md)中的傳送範本。
+在[此小節](../../delivery/using/creating-a-delivery-template.md)中深入了解傳遞範本。
 
-## 開始使用傳送範本{#gs-templates}
+## 開始使用傳遞範本{#gs-templates}
 
-[傳送範本](../../delivery/using/creating-a-delivery-template.md)可讓您定義一組符合您需求且可重複使用於未來傳送的技術和功能屬性。 然後，您就可以節省時間，並視需要標準化傳送。
+[傳遞範本](../../delivery/using/creating-a-delivery-template.md)可讓您一次定義一組符合您需求且可重複使用的技術和功能屬性。 然後，您就可以視需要節省時間並標準化傳送。
 
-當您在Adobe Campaign管理多個品牌時，Adobe建議每個品牌有一個子網域。 例如，銀行可以有多個子域，對應於每個區域機構。 如果銀行擁有bluebank.com網域，其子網域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每個子網域有一個傳送範本，讓您隨時針對每個品牌使用正確的預先設定參數，以避免錯誤並節省您的時間。
+當您在Adobe Campaign中管理多個品牌時，Adobe建議每個品牌有一個子網域。 例如，銀行可以有與其每個地區機構對應的數個子網域。 如果銀行擁有bluebank.com域，其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每個子網域有一個傳送範本可讓您一律為每個品牌使用正確的預先設定參數，以避免錯誤並節省時間。
 
-**提示**:為避免設定錯誤，建議您複製原生範本並變更其屬性，而不要建立新範本。
+**提示**:為避免設定錯誤，建議您複製原生範本並變更其屬性，而非建立新範本。
 
 ## 配置地址
 
-* 傳送者的地址是強制性的，以允許傳送電子郵件。
+* 寄件者的地址是必填欄位，以允許傳送電子郵件。
 
-* 某些ISP（Internet服務提供商）在接受消息之前檢查發件人地址的有效性。
+* 某些ISP（網際網路服務提供者）在接受訊息之前，會檢查寄件者地址的有效性。
 
-* 錯誤形成的地址可能導致接收伺服器拒絕。 您必須確定地址正確無誤。
+* 錯誤形成的地址可能導致接收伺服器拒絕該地址。 您必須確保提供正確的地址。
 
-* 地址必須明確標識發件人。 域必須由發送者擁有並註冊。
+* 地址必須明確標識發件人。 域必須由發件人擁有並註冊。
 
-* Adobe建議建立與傳送和回覆所指定位址對應的電子郵件帳戶。 請洽詢您的訊息系統管理員。
+* Adobe建議建立與為傳送和回覆指定的地址對應的電子郵件帳戶。 請咨詢您的消息系統管理員。
 
-若要在促銷活動介面中設定位址，請遵循下列步驟：
+若要在Campaign介面中設定位址，請遵循下列步驟：
 
-1. 在[傳送範本](../../delivery/using/creating-a-delivery-template.md)中，按一下&#x200B;**[!UICONTROL From]**&#x200B;連結。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;視窗中，填寫下列欄位：
+1. 在[傳遞範本](../../delivery/using/creating-a-delivery-template.md)中，按一下&#x200B;**[!UICONTROL From]**&#x200B;連結。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;視窗中，填寫下列欄位：
 
    ![](assets/d_best_practices_email_header.png)
 
-1. 在&#x200B;**[!UICONTROL Sender address]**&#x200B;欄位中，請確定地址網域與您委託給Adobe的子網域相同。 您可以變更&#39;@&#39;前的部分，但不能變更網域位址。
+1. 在&#x200B;**[!UICONTROL Sender address]**&#x200B;欄位中，確認地址域與您委派給Adobe的子網域相同。 您可以更改「@」之前的部分，但不能更改域地址。
 
-1. 在&#x200B;**[!UICONTROL From]**&#x200B;欄位中，使用收件者可輕易辨識的名稱（例如您的品牌名稱）來提高交貨的開業率。 若要進一步改善收件者的體驗，您可以新增人名，例如「Emma from Megastore」。
+1. 在&#x200B;**[!UICONTROL From]**&#x200B;欄位中，使用可供收件者輕鬆識別的名稱（例如您的品牌名稱），以提高傳送的開始率。 若要進一步改善收件者的體驗，您可以新增人員名稱，例如「Emma from Megastore」。
 
-1. 在&#x200B;**[!UICONTROL Reply address text]**&#x200B;欄位中，預設會使用傳送者的位址來回覆。 但是，Adobe建議使用現有的實際地址，例如您品牌的客戶服務。 在這種情況下，如果收件者傳送回覆，客戶服務將能夠處理。
+1. 在&#x200B;**[!UICONTROL Reply address text]**&#x200B;欄位中，預設會使用寄件者的地址進行回覆。 不過，Adobe建議使用現有的實際位址，例如您的品牌客戶服務。 在此情況下，如果收件者傳送回覆，客戶服務將能處理。
 
-### 設定控制群組
+### 設定控制組
 
-傳送傳送後，您可以比較已排除的收件者與已接收傳送的收件者的行為。 然後，您可以衡量促銷活動的效率。 進一步瞭解控制群組[本節](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
+傳送後，您可以比較已排除收件者的行為與已接收傳送的收件者。 然後，您可以測量行銷活動的效率。 進一步了解控制組[此部分](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
 
-要設定控制組，請按一下&#x200B;**[!UICONTROL To]**&#x200B;連結。 在&#x200B;**[!UICONTROL Select target]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Control group]**&#x200B;頁籤。 您可以擷取目標的一部分，例如5%的隨機樣本。
+若要設定控制組，請按一下&#x200B;**[!UICONTROL To]**&#x200B;連結。 在&#x200B;**[!UICONTROL Select target]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Control group]**&#x200B;頁簽。 您可以擷取目標的一部分，例如5%的隨機樣本。
 
 ![](assets/d_best_practices_control_group.png)
 
-## 使用類型套用篩選或控制規則
+## 使用類型來套用篩選器或控制規則
 
-類型學包含分析階段期間在傳送任何訊息之前套用的檢查規則。
+類型包含在分析階段期間套用的檢查規則，然後再傳送任何訊息。
 
 在範本屬性的&#x200B;**[!UICONTROL Typology]**&#x200B;標籤中，根據您的需求變更預設類型。
 
-例如，為了更好地控制對外流量，您可以定義每個子網域可使用一個相似性，並為每個相似性建立一個類型，以定義哪些IP位址。 相關性在實例的配置檔案中定義。 聯繫您的Adobe Campaign管理員。
+例如，為了更妥善地控制傳出流量，您可以定義可使用的IP位址，方法是為每個子網域定義一個相關性，並為每個相關性建立一個類型。 相關性會在執行個體的設定檔案中定義。 請連絡您的Adobe Campaign管理員。
 
-有關類型的詳細資訊，請參閱[本節](../../campaign/using/about-campaign-typologies.md)。
+有關類型的詳細資訊，請參閱[此區段](../../campaign/using/about-campaign-typologies.md)。
