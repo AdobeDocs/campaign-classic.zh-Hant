@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 開始進行版本編號升級
 description: 了解升級至新組建的關鍵步驟
@@ -7,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2353'
 ht-degree: 2%
@@ -83,7 +82,7 @@ ht-degree: 2%
 
 1. 獲取[伺服器配置檔案](../../installation/using/the-server-configuration-file.md)的最新版本。
 
-1. [下載最新版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+1. [下載最新版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。[瞭解更多](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
 在開始版本編號升級之前，您還需要知道所有的[有用的命令行](../../installation/using/command-lines.md):
 
