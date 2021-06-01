@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和屬性
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: a0069688-fd05-42e9-91dd-adc10bea3461
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 18%
 
 ---
 
-
 # sysfilter元素{#sysfilter--element}
 
 ## 內容模型{#content-model-15}
 
-sysFilter:==condition
+sysFilter:==條件
 
 ## 屬性{#attributes-15}
 
 無
 
-## 父代{#parents-15}
+## 父級{#parents-15}
 
 `<element>`
 
@@ -35,7 +33,7 @@ sysFilter:==condition
 
 ## 說明 {#description-15}
 
-此元素可讓您定義篩選。
+此元素可讓您定義篩選器。
 
 ## 屬性說明{#attribute-description-15}
 
@@ -43,7 +41,7 @@ sysFilter:==condition
 
 ## 範例 {#examples-12}
 
-定義具有@name屬性上條件的篩選：
+在屬性上具有條件的篩選器@name定：
 
 ```
 <sysFilter>
