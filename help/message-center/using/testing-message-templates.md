@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 測試交易式訊息範本
 description: 了解如何管理交易式訊息中的種子地址，以便在Adobe Campaign Classic中預覽和測試種子地址。
@@ -7,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
