@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 隱私權請求
 description: 瞭解如何管理隱私權請求
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-translation-type: ht
-source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
 
@@ -42,7 +40,7 @@ Adobe Campaign 為資料控制方執行隱私權存取和刪除請求提供兩�
 >
 >如需關於個人資料及管理資料之不同實體 (資料控制方、資料處理方和資料主體) 的詳細資訊，請參閱[個人資料和人員](../../platform/using/privacy-and-recommendations.md#personal-data)。
 
-### 必要條件 {#prerequesites}
+### 先決條件 {#prerequesites}
 
 Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign 中的資料而建立和處理隱私權要求。然而，資料控制方有責任處理與資料主體（電子郵件、客戶服務或 Web 入口網站）的關係。
 
