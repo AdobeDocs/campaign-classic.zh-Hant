@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 報告常見問題集
 description: Campaign Classic 常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
 
 ---
-
 
 # 報告常見問題集{#reporting-faq}
 
