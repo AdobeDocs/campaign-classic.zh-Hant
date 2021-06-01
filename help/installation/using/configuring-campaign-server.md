@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 設定 Campaign 伺服器
 description: 設定 Campaign 伺服器
@@ -7,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -22,11 +21,11 @@ ht-degree: 1%
 
 這些程式限制為&#x200B;**內部部署**/**混合**&#x200B;部署，並需要管理權限。
 
-對於&#x200B;**托管**&#x200B;部署，伺服器端設定僅能由Adobe設定。 不過，有些設定可在[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)內設定，例如IP允許清單管理或URL權限。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)。
+對於&#x200B;**托管**&#x200B;部署，伺服器端設定僅能由Adobe設定。 不過，有些設定可在[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)內設定，例如IP允許清單管理或URL權限。 [瞭解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)。
 
 如需詳細資訊，請參閱下列章節：
 
-* [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 * [託管模型](../../installation/using/hosting-models.md)
 * [Campaign Classic內部部署與托管功能矩陣](../../installation/using/capability-matrix.md)
 
