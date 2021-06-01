@@ -1,28 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 使用外部收件者資料表
 description: 使用外部收件者資料表
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b6aabc68-707d-4c6c-b008-277609166c6c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 18%
 
 ---
 
-
 # 使用外部收件者資料表{#using-an-external-recipient-table}
 
-如果傳送表是外部表，則需要進行其他配置。 **[!UICONTROL nms:seedmember]**&#x200B;架構必須擴展。 系統會在種子地址中添加一個頁籤以定義適當的欄位，如下所示：
+如果傳送表格是外部表格，則您需要進行其他設定。 必須擴展&#x200B;**[!UICONTROL nms:seedmember]**&#x200B;架構。 種子地址中會新增一個索引標籤，以定義足夠的欄位，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-在這種情況下，要將種子地址添加到交貨中，請直接在匹配頁籤中輸入足夠的欄位，或導入地址模板：
+在這種情況下，若要將種子地址添加到傳送中，請直接在匹配頁簽中輸入足夠的欄位，或導入地址模板：
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-**nms:seedMember**&#x200B;模式擴展是[本節](../../configuration/using/seed-addresses.md)。
+**nms:seedMember**&#x200B;方案擴展為[此部分](../../configuration/using/seed-addresses.md)。
