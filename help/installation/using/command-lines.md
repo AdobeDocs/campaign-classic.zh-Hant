@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 命令列
 description: 命令列
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
 
 ---
 
-
 # 命令列{#command-lines}
 
-以下命令行要求能夠訪問應用程式伺服器。 對於由Adobe托管的部署，這些命令只能由Adobe執行。
+以下命令行需要訪問應用程式伺服器的能力。 對於由Adobe托管的部署，這些命令只能由Adobe執行。
 
 ## 建立實例{#creating-an-instance}
 
-可使用命令行以下語法執行實例建立：
+可使用命令列使用語法執行例項建立：
 
 ```
 nlserver config -addinstance:instance/masques DNS[/lang]
@@ -29,11 +27,11 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 （其中&#x200B;**eng**&#x200B;和&#x200B;**fra**&#x200B;是`[lang]`參數的可能值）
 
-使用命令&#x200B;**nlserver config -addinstance:instance1/demo*/eng**，您可以使用DNS掩碼demo*建立一個名為&#x200B;**instance1**&#x200B;的英文實例。
+命令&#x200B;**nlserver config -addinstance:instance1/demo*/eng**&#x200B;允許您使用DNS掩碼演示*建立一個名為&#x200B;**instance1**&#x200B;的實例，該實例的英文版為。
 
 ## 聲明資料庫{#declaring-a-database}
 
-可以使用以下語法將現有資料庫與命令行中的實例關聯：
+您可以使用以下語法，將現有資料庫與命令行中的實例關聯：
 
 ```
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
@@ -44,11 +42,10 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 * **postgresql**:對於PostgreSQL,
 * **oracle**:oracle,
 * **mssql**:對於Microsoft SQL Server,
-* **DB2**:用於DB2引擎。
+* **DB2**:DB2引擎。
 
-以下命令將&#x200B;**demo**&#x200B;實例配置為SQL類型伺服器&#x200B;**base6**，該伺服器連結到&#x200B;**campaign**&#x200B;帳戶及其&#x200B;**password**&#x200B;在&#x200B;**dbsrv**&#x200B;伺服器上的口令：
+以下命令使用名為&#x200B;**base6**&#x200B;的SQL類型伺服器配置&#x200B;**demo**&#x200B;實例，該伺服器連結到&#x200B;**campaign**&#x200B;帳戶及其&#x200B;**password**&#x200B;在&#x200B;**dbsrv**&#x200B;伺服器上：
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
 ```
-
