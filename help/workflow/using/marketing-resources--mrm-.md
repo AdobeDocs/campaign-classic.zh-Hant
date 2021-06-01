@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 行銷資源 (MRM)
 description: 行銷資源 (MRM)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 11%
@@ -17,7 +15,7 @@ ht-degree: 11%
 
 # 行銷資源 (MRM){#marketing-resources-mrm}
 
-依預設，下列詳細的工作流程會與&#x200B;**行銷資源(MRM)**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[部分](../../campaign/using/designing-marketing-campaigns.md)。
+依預設，下列詳細的工作流程會與&#x200B;**行銷資源(MRM)**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../campaign/using/designing-marketing-campaigns.md)。
 
 <table> 
  <tbody> 
@@ -28,18 +26,18 @@ ht-degree: 11%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">行銷資源通知</span> <br /> </td> 
-   <td> <span class="uicontrol">assetMagt</span> <br /> </td> 
-   <td> 此工作流程管理連結至核准和發佈行銷資源的通知。<br /> </td> 
+   <td> <span class="uicontrol">assetMgt</span> <br /> </td> 
+   <td> 此工作流程會管理連結至核准和發佈行銷資源的通知。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">任務通知</span> <br /> </td> 
-   <td> <span class="uicontrol">taskMagt</span> <br /> </td> 
-   <td> 此工作流程可讓您傳送與行銷促銷活動中之工作相關的通知訊息。<br /> </td> 
+   <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
+   <td> 此工作流程可讓您傳送與行銷活動中的任務相關的通知訊息。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">討論論壇流程</span> <br /> </td> 
-   <td> <span class="uicontrol">newsgroupMagt</span> <br /> </td> 
-   <td> 此工作流程可管理論壇通知的傳送。 在收到批准信號時觸發。<br /> </td> 
+   <td> <span class="uicontrol">討論論壇進程</span> <br /> </td> 
+   <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
+   <td> 此工作流程可管理從論壇傳送通知的作業。 在收到批准信號時觸發。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
