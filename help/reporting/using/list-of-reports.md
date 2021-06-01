@@ -1,48 +1,46 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 報告清單
 description: 報告清單
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
 
 ---
 
-
 # 報告清單{#list-of-reports}
 
 ## 傳遞報表 {#reports-on-deliveries}
 
-Adobe Campaign提供的內建報表可在下表中找到。
+Adobe Campaign提供的內建報表位於下表。
 
-有關這些報告內容的詳細資訊，請參閱[本節](../../reporting/using/delivery-reports.md)。
+如需這些報表內容的詳細資訊，請參閱[此區段](../../reporting/using/delivery-reports.md)。
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>說明</strong><br /> </td> 
-   <td> <strong>架構</strong><br /> </td> 
+   <td> <strong>結構</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 使用者活動(recipientActivity)<br /> </td> 
-   <td> 依時段劃分的開啟、點按和交易。<br /> </td> 
+   <td> 按時段劃分的開啟、點按和交易。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳送吞吐量（吞吐量）<br /> </td> 
-   <td> 傳送吞吐量圖表，以消息／小時和Mbits/s表示。<br /> </td> 
+   <td> 傳送吞吐量圖表，以消息/小時和Mbit/s.<br />表示 </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 故障和彈回數（錯誤）<br /> </td> 
-   <td> 按原因和域列出的彈回數和非交付項。<br /> </td> 
+   <td> 失敗和退信（錯誤）<br /> </td> 
+   <td> 按原因和域列出的跳出和無法交付項。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -57,62 +55,62 @@ Adobe Campaign提供的內建報表可在下表中找到。
   </tr> 
   <tr> 
    <td> 瀏覽器(browserStatistics)<br /> </td> 
-   <td> 點按訊息的收件者使用的瀏覽器統計資料。<br /> </td> 
+   <td> 按一下訊息的收件者所使用的瀏覽器統計資料。<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 
-   <td> 共用至社交網路(deliveryForward)<br /> </td> 
+   <td> 分享至社交網路(deliveryForward)<br /> </td> 
    <td> 共用活動和郵件開啟統計資訊。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 熱點點按次數(hoturls)<br /> </td> 
+   <td> 熱點點按（霍特爾）<br /> </td> 
    <td> 顯示疊加的消息和點按率。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 假設報告(deliveryHoxteship)<br /> </td> 
-   <td> 顯示有關交付假設的測量摘要。<br /> </td> 
+   <td> 假設報表(deliveryHexposition)<br /> </td> 
+   <td> 顯示有關傳送假設的度量摘要。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳送統計資料(statisticsPerDelivery)<br /> </td> 
-   <td> 每個電子郵件網域的統計資料（已處理的訊息、已傳送的訊息、硬彈回數、軟彈回數、點按、取消訂閱）。<br /> </td> 
+   <td> 每個電子郵件網域的統計資料（已處理的訊息、已傳送的訊息、硬退信、軟退信、點按、取消訂閱）。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 共用活動統計資料(forwardActivitys)<br /> </td> 
+   <td> 共用活動統計資料(forwardActivities)<br /> </td> 
    <td> 分析每個時段的共用活動、開啟和訂閱。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 追蹤統計資料(trackingStatistics)<br /> </td> 
-   <td> 開啟，按一下並報告事務處理費率。<br /> </td> 
+   <td> 開啟，按一下，然後按交易率報表。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳送摘要(deliverySending)<br /> </td> 
-   <td> 交付指標摘要：目標、排除和傳送的訊息。<br /> </td> 
+   <td> 交付指標摘要：target、排除和已傳送的訊息。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳送摘要(deliveryStatistics)<br /> </td> 
-   <td> 選定交貨的匯總表：目標、排除和已發送消息。<br /> </td> 
+   <td> 所選傳送的摘要表格：已發送目標、排除和消息。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 作業系統(osStatistics)<br /> </td> 
-   <td> 按一下訊息的收件者所使用作業系統的統計資料。<br /> </td> 
+   <td> 按一下訊息的收件者所使用的作業系統統計資料。<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 
-   <td> 反應性率(deliveryFeedbackSocial)<br /> </td> 
-   <td> 投料反應性率和反應擊穿。<br /> </td> 
+   <td> 反應率(deliveryFeedbackSocial)<br /> </td> 
+   <td> 投遞反應率和反應分解。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> URL並按一下總處理能力(topUrlDelivery)<br /> </td> 
-   <td> 最常反應的URL和關聯的點按串流。<br /> </td> 
+   <td> URL和點按輸送量(topUrlDelivery)<br /> </td> 
+   <td> 最多反應URL和關聯的點按流。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
  </tbody> 
@@ -120,11 +118,11 @@ Adobe Campaign提供的內建報表可在下表中找到。
 
 ## 促銷活動報表{#reports-on-campaigns}
 
-有關促銷活動的報表涉及&#x200B;**nms:operation**&#x200B;表中的資料。
+有關促銷活動的報表與&#x200B;**nms:operation**&#x200B;表格中的資料有關。
 
-Adobe Campaign提供的內建報表可在下表中找到。
+Adobe Campaign提供的內建報表位於下表。
 
-有關這些報告內容的詳細資訊，請參閱[本節](../../campaign/using/designing-marketing-campaigns.md)。
+如需這些報表內容的詳細資訊，請參閱[此區段](../../campaign/using/designing-marketing-campaigns.md)。
 
 <table> 
  <tbody> 
@@ -134,56 +132,56 @@ Adobe Campaign提供的內建報表可在下表中找到。
   </tr> 
   <tr> 
    <td> 使用者活動(operationRecipientActivity)<br /> </td> 
-   <td> 依時段劃分的開啟、點按和交易，視促銷活動而定。<br /> </td> 
+   <td> 依時段劃分的開啟、點按和交易次數，取決於促銷活動。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 傳送總處理量(operationThroughput)<br /> </td> 
-   <td> 傳送吞吐量圖表（以電子郵件／小時和Mbits/s為單位）取決於促銷活動。<br /> </td> 
+   <td> 傳送吞吐量(operationThroughput)<br /> </td> 
+   <td> 以郵件/小時和Mbit/s表示的傳送吞吐量圖表取決於促銷活動。<br /> </td> 
   </tr> 
   <tr> 
    <td> 促銷活動費用(budgetOperationExpenses)<br /> </td> 
-   <td> 詳細顯示促銷活動明細項目，視促銷活動而定。<br /> </td> 
+   <td> 詳細顯示促銷活動明細項目，取決於促銷活動。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 故障和彈回數(operationErrors)<br /> </td> 
-   <td> 依據原因和網域的彈回數和非交付項目，取決於促銷活動。<br /> </td> 
+   <td> 失敗和退信(operationErrors)<br /> </td> 
+   <td> 退信和不可交付項（按原因和域）取決於Campaign。<br /> </td> 
   </tr> 
   <tr> 
    <td> 探索成本行(budgetExplorerOperation)<br /> </td> 
-   <td> 成本行的說明性分析，取決於MRM。<br /> </td> 
+   <td> 成本行的描述性分析，取決於MRM.<br /> </td> 
   </tr> 
   <tr> 
    <td> 追蹤指標(operationFeedback)<br /> </td> 
-   <td> 主要追蹤指標概述：開啟、點按和交易取決於促銷活動。<br /> </td> 
+   <td> 關鍵追蹤指標的概觀：開啟、點按和交易，取決於促銷活動。<br /> </td> 
   </tr> 
   <tr> 
    <td> 共用至社交網路(operationForward)<br /> </td> 
-   <td> 共用活動和郵件開啟統計資料，視促銷活動而定。<br /> </td> 
+   <td> 共用活動和郵件開啟統計資料，取決於促銷活動。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 假設報告(operationHextions)<br /> </td> 
+   <td> 假設報表(operationHexposition)<br /> </td> 
    <td> 顯示促銷活動傳送的假設測量摘要，視促銷活動而定。<br /> </td> 
   </tr> 
   <tr> 
    <td> 共用活動統計資料(forwardActivityOpt)<br /> </td> 
-   <td> 依據促銷活動分析每個時段的共用活動、開啟和訂閱。<br /> </td> 
+   <td> 依據Campaign分析每個時段的共用活動、開啟次數和訂閱次數。<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳送摘要(operationStatistics)<br /> </td> 
-   <td> 促銷活動傳送的摘要圖表：目標、排除和已發送消息。<br /> </td> 
+   <td> 促銷活動傳送的摘要圖表：已發送目標、排除和消息。<br /> </td> 
   </tr> 
   <tr> 
-   <td> URL並按一下總處理能力(operationTopUrlDelivery)<br /> </td> 
-   <td> 大多數反應的URL和關聯的點按串流都取決於促銷活動。<br /> </td> 
+   <td> URL和點按輸送量(operationTopUrlDelivery)<br /> </td> 
+   <td> 大部分的反應URL和相關的點按資料流取決於Campaign。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 服務報告{#reports-on-services}
 
-服務報告涉及&#x200B;**nms:service**&#x200B;表中的資料。
+服務報告與&#x200B;**nms:service**&#x200B;表中的資料有關。
 
-Adobe Campaign提供的內建報表可在下表中找到。
+Adobe Campaign提供的內建報表位於下表。
 
 如需這些報表內容的詳細資訊，請參閱相關指南。
 
@@ -194,12 +192,12 @@ Adobe Campaign提供的內建報表可在下表中找到。
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 粉絲贏取(socialUnbrecipationsByWebapp)<br /> </td> 
-   <td> 哪些Web應用程式可讓潛在客戶獲取產品？ 視Social行銷附加元件而定。<br /> </td> 
+   <td> 粉絲贏取(socialUbcripationsByWebapp)<br /> </td> 
+   <td> 哪些Web應用程式使潛在客戶獲得成功？ 取決於社交行銷附加元件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 訂閱的劃分(mobileAppDistribution)<br /> </td> 
-   <td> 依行動應用程式的作用中訂閱劃分，取決於行動應用程式頻道附加元件。<br /> </td> 
+   <td> 每個行動應用程式之作用中訂閱的劃分取決於行動應用程式頻道附加元件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 訂閱追蹤(subscriptionsProgress)<br /> </td> 
@@ -207,65 +205,65 @@ Adobe Campaign提供的內建報表可在下表中找到。
   </tr> 
   <tr> 
    <td> 反應性率(socialReactionRate)<br /> </td> 
-   <td> 最新交貨的反應率是多少？ 視Social行銷附加元件而定。<br /> </td> 
+   <td> 最新傳送的再活動率為何？ 取決於社交行銷附加元件。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 反應性速率(mobileAppRyctivityRate)<br /> </td> 
-   <td> 最新傳送的反應率取決於行動應用程式頻道附加元件。<br /> </td> 
+   <td> 反應率(mobileAppReciblyRate)<br /> </td> 
+   <td> 最新傳送的再活動率取決於行動應用程式通道附加元件。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 預算報告{#budget-reports}
 
-Adobe Campaign提供的內建報表可在下表中找到。
+Adobe Campaign提供的內建報表位於下表。
 
-有關這些報告內容的詳細資訊，請參閱[本節](../../campaign/using/designing-marketing-campaigns.md)。
+如需這些報表內容的詳細資訊，請參閱[此區段](../../campaign/using/designing-marketing-campaigns.md)。
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>說明</strong><br /> </td> 
-   <td> <strong>架構</strong><br /> </td> 
+   <td> <strong>結構</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 與方案（預算方案費用）相關的費用<br /> </td> 
+   <td> 與方案(budgetProgramCost)相關的費用<br /> </td> 
    <td> 方案費用細目。<br /> </td> 
    <td> nms:program<br /> </td> 
   </tr> 
   <tr> 
-   <td> 預算演變(budgetEvolution)<br /> </td> 
-   <td> 按承付款額分列的預算費用演變。<br /> </td> 
+   <td> 預算演化(budgetEvolution)<br /> </td> 
+   <td> 按承諾水準開列的預算費用的演變。<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> 預算的累積演變(budgetCumulativeEvolution)<br /> </td> 
-   <td> 按委員會(a0/&gt;)職等劃分的累積預算費用的演變。<br /> </td> 
+   <td> 預算的累積演化(budgetCumulativeEvolution)<br /> </td> 
+   <td> 按預算<br />部門級別劃分的累積預算費用的演變。 </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
    <td> 探索成本行(budgetExplorerBudget)<br /> </td> 
-   <td> 成本行的說明性分析。<br /> </td> 
+   <td> 成本行的描述性分析。<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
    <td> 探索成本行(budgetExplorer)<br /> </td> 
-   <td> 成本行的說明性分析。<br /> </td> 
+   <td> 成本行的描述性分析。<br /> </td> 
    <td> nms:costLine<br /> </td> 
   </tr> 
   <tr> 
    <td> 探索成本行(budgetExplorerPlan)<br /> </td> 
-   <td> 成本行的說明性分析。<br /> </td> 
+   <td> 成本行的描述性分析。<br /> </td> 
    <td> nms:plan<br /> </td> 
   </tr> 
   <tr> 
    <td> 探索成本行(budgetExplorerProgram)<br /> </td> 
-   <td> 成本行的說明性分析。<br /> </td> 
+   <td> 成本行的描述性分析。<br /> </td> 
    <td> nms:program<br /> </td> 
   </tr> 
   <tr> 
-   <td> 預算（預算）概要<br /> </td> 
+   <td> 預算（預算）匯總<br /> </td> 
    <td> 主要成本、費用類別和預算的快照。<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
@@ -274,9 +272,9 @@ Adobe Campaign提供的內建報表可在下表中找到。
 
 ## 模擬報告{#reports-on-simulations}
 
-有關模擬的報告涉及&#x200B;**nms:simulation**&#x200B;表中的資料。
+模擬報告涉及&#x200B;**nms:simulation**&#x200B;表中的資料。
 
-Adobe Campaign提供的內建報表可在下表中找到。
+Adobe Campaign提供的內建報表位於下表。
 
 如需這些報表內容的詳細資訊，請參閱相關指南。
 
@@ -296,14 +294,14 @@ Adobe Campaign提供的內建報表可在下表中找到。
   </tr> 
   <tr> 
    <td> 模擬摘要(dlvSimuLossSummary)<br /> </td> 
-   <td> 模擬卷和排除的概要。<br /> </td> 
+   <td> 模擬卷和排除的摘要。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 重疊統計(dlvSimuOverplaing)<br /> </td> 
-   <td> 傳送目標重疊卷。<br /> </td> 
+   <td> 重疊統計資訊(dlvSimuOverplaing)<br /> </td> 
+   <td> 傳遞目標重疊卷。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 因模擬(dlvSimuLossSimu)引起的排除摘要<br /> </td> 
+   <td> 因模擬(dlvSimuLossSimu)而排除的摘要<br /> </td> 
    <td> 因模擬而排除的表。<br /> </td> 
   </tr> 
  </tbody> 
@@ -313,9 +311,9 @@ Adobe Campaign提供的內建報表可在下表中找到。
 
 有關Web應用程式的報告涉及&#x200B;**nms:WebApp**&#x200B;表中的資料。
 
-Adobe Campaign提供的內建報表可在下表中找到。
+Adobe Campaign提供的內建報表位於下表。
 
-有關這些報告內容的詳細資訊，請參閱[本節](../../web/using/about-web-applications.md)。
+如需這些報表內容的詳細資訊，請參閱[此區段](../../web/using/about-web-applications.md)。
 
 <table> 
  <tbody> 
@@ -325,7 +323,7 @@ Adobe Campaign提供的內建報表可在下表中找到。
   </tr> 
   <tr> 
    <td> 檔案(surveyDictionary)<br /> </td> 
-   <td> 調查結構的說明，視「調查管理員」附加元件而定。<br /> </td> 
+   <td> 調查結構的說明，取決於「調查管理員」附加元件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 主要(surveyProperties)<br /> </td> 
@@ -340,35 +338,34 @@ Adobe Campaign提供的內建報表可在下表中找到。
 
 ## 其他ootb報告{#other-ootb-reports}
 
-也提供下列內建報表。 有關此內容的詳細資訊，請參閱檔案中有關其所關注之功能的說明。
+也提供下列內建報表。 有關詳細資訊，請參閱相關功能的文檔。
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>說明</strong><br /> </td> 
-   <td> <strong>架構</strong><br /> </td> 
+   <td> <strong>結構</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 選件分析(offerAnalysis)<br /> </td> 
-   <td> 依據日期和頻道的選件分析，視互動附加元件而定。<br /> </td> 
+   <td> 根據日期和管道進行選件分析，取決於「互動」附加元件。<br /> </td> 
    <td> nms:offer<br /> </td> 
   </tr> 
   <tr> 
-   <td> 再行銷效率（再行銷效果）<br /> </td> 
+   <td> 再行銷效率（再行銷Effect）<br /> </td> 
    <td> 再行銷效率的測量<br /> </td> 
    <td> nms:webEvent<br /> </td> 
   </tr> 
   <tr> 
-   <td> 社交潛在客戶贏取記錄(socialVisitorStatistics)<br /> </td> 
-   <td> Twitter和Facebook潛在客戶收購記錄取決於Social行銷附加元件。<br /> </td> 
+   <td> 社交潛在客戶贏取的歷史記錄(socialVisitorStatistics)<br /> </td> 
+   <td> twitter和Facebook潛在客戶贏取的記錄，取決於Social行銷附加元件。<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
-   <td> 最近的命題追蹤（最近的命題）<br /> </td> 
-   <td> 即時命題追蹤<br /> </td> 
-   <td> nms：命題Rcp<br /> </td> 
+   <td> 最近的命題跟蹤(recentPropositions)<br /> </td> 
+   <td> 即時主張追蹤<br /> </td> 
+   <td> nms:postitionRcp<br /> </td> 
   </tr> 
  </tbody> 
 </table>
-
