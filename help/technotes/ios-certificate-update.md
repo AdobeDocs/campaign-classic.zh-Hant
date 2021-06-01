@@ -1,38 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Technote
-description: Technote
+title: 技術檔案
+description: 技術檔案
 hide: false
 hidefromtoc: true
-translation-type: tm+mt
-source-git-commit: 08c6e84e07da2811c91aa58ddf40c5781de2b163
+exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
-
 # Apple推播通知服務伺服器憑證更新{#apns-certificate-update}
 
-在2021年3月29日，Apple推播通知服務(APNs)基礎架構更新將影響Adobe Campaign ClassiciOS頻道。 作業系統組態變更為&#x200B;**mandatory**&#x200B;以避免iOS推播頻道中斷。
+2021年3月29日起，Apple推播通知服務(APN)基礎架構更新將影響Adobe Campaign Classic iOS通道。 作業系統組態變更為&#x200B;**強制**，以避免iOS推播通道中斷。
 
-在本頁](https://developer.apple.com/news/?id=7gx0a2lp)中進一步瞭解APN更改[。
+了解更多有關APN更改[的資訊，請參閱本頁](https://developer.apple.com/news/?id=7gx0a2lp)。
 
-身為代管客戶，您不需採取任何動作：Adobe已將新的根證書整合到您的環境中。
+身為托管客戶，不需要採取任何動作：Adobe已將新的根憑證整合至您的環境。
 
-身為內部部署／混合型客戶，您需要更新您的設定，以確保在2021年3月29日前順暢地進行&#x200B;**轉換。**
+身為內部部署/混合客戶，您必須更新設定，以確保在2021年3月29日前&#x200B;**順暢轉換**。
 
 若要合併新憑證，請遵循下列步驟：
 
-1. 從本頁](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL)下載&#x200B;**AAACertificateServices 5/12/2020**&#x200B;根證書[。
+1. 從此頁面](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL)下載&#x200B;**AAACertificateServices 5/12/2020**&#x200B;根憑證[。
 
-1. 檢查AAA憑證是否同時存在於您的OS和JAVAtrustore中。 如果沒有，請加入。
+1. 檢查您的OS和JAVAtrustore中都有AAA憑證。 如果沒有，請新增。
 
-1. 重新啟動Adobe CampaignWeb服務：
+1. 重新啟動Adobe Campaign Web服務：
 
    ```
    nlserver restart web
    ```
-
