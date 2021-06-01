@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 5%
@@ -40,7 +40,7 @@ ht-degree: 5%
 
 Adobe Campaign交易式訊息模組整合至資訊系統，該資訊系統會傳回要變更為個人化交易式訊息的事件。 這些訊息可以個別傳送，或透過電子郵件、簡訊或推播通知分批傳送。
 
-此功能依賴於特定架構，其中&#x200B;**執行實例**&#x200B;與&#x200B;**控制實例**&#x200B;分開。 此分發可確保更高的可用性和更好的負載管理。 如需詳細資訊，請參閱[交易式傳訊例項](../../message-center/using/transactional-messaging-architecture.md)。
+此功能依賴於特定架構，其中&#x200B;**執行實例**&#x200B;與&#x200B;**控制實例**&#x200B;分開。 此分發可確保更高的可用性和更好的負載管理。 有關詳細資訊，請參閱[交易式傳訊架構](../../message-center/using/transactional-messaging-architecture.md)。
 
 >[!NOTE]
 >
@@ -81,8 +81,8 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 
 在您設計並發佈交易式訊息範本後，如果觸發對應的事件，則以下主要步驟會在&#x200B;**執行例項**&#x200B;上執行：
 
-1. 當事件由外部資訊系統產生時，相關資料會透過&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法傳送至Campaign。 請參閱[事件集合](#event-collection)。
-1. 事件會連結至適當的訊息範本。 請參閱[路由至範本](#routing-towards-a-template)。
+1. 當事件由外部資訊系統產生時，相關資料會透過&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法傳送至Campaign。 請參閱[事件集合](../../message-center/using/about-event-processing.md#event-collection)。
+1. 事件會連結至適當的訊息範本。 請參閱[路由至範本](../../message-center/using/about-event-processing.md#routing-towards-a-template)。
 1. 擴充階段完成後，會傳送傳送。 請參閱[傳送執行](../../message-center/using/delivery-execution.md)。 每個目標收件者都會收到個人化訊息。
 
 ## 相關主題 {#related-topics}
@@ -90,4 +90,4 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 * [開始使用通訊管道](../../delivery/using/communication-channels.md)
 * [傳遞建立關鍵步驟](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [異動傳訊架構](../../message-center/using/transactional-messaging-architecture.md)
-* [關於異動訊息傳送報告](../../message-center/using/about-transactional-messaging-reports.md)
+* [存取交易式訊息報表](../../message-center/using/about-transactional-messaging-reports.md)
