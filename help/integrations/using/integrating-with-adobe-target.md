@@ -1,37 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 與Adobe Target整合
 description: 與Adobe Target整合
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 4%
 
 ---
 
-
 # 與Adobe Target整合{#integrating-with-adobe-target}
 
-Adobe Experience Cloud中Adobe Campaign與Adobe Target（Classic和Standard）的整合可讓您將Adobe Target的選件加入Adobe Campaign電子郵件傳送中。
+Adobe Campaign與Adobe Target（Classic和Standard版）在Adobe Experience Cloud中的整合可讓您將Adobe Target的優惠方案納入Adobe Campaign電子郵件傳送中。
 
-其工作原理是：當收件者開啟透過Adobe Campaign傳送的電子郵件時，對Adobe Target的呼叫可讓您顯示內容的動態版本。 根據建立電子郵件時預先指定的規則，計算此動態版本。
+其工作原則如下：收件者開啟透過Adobe Campaign傳送的電子郵件時，對Adobe Target的呼叫可讓您顯示內容的動態版本。 此動態版本的計算方式取決於建立電子郵件時預先指定的規則。
 
-進一步瞭解與[這四個秘訣與訣竅](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)整合的Adobe Campaign和Adobe Target。
+透過[這四個秘訣和技巧](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)進一步了解Adobe Campaign和Adobe Target整合。
 >[!NOTE]
 >
->整合僅支援靜態影像。 其他內容無法個人化。
+>整合僅支援靜態影像。 其餘內容無法個人化。
 
-Adobe Target可運用數種資料：
+Adobe Target可使用數種資料：
 
-* Adobe Campaign資料庫的資料
+* 來自Adobe Campaign資料庫的資料
 * 連結至Adobe Target中訪客ID的區段（如果使用的資料不受法律限制）
-* Adobe Target資料：用戶代理， IP地址，地理本地化資料
+* Adobe Target資料：使用者代理， IP位址，地域化資料
 
 >[!NOTE]
 >
->您也可以在[Adobe Target說明頁面](https://docs.adobe.com/content/help/zh-Hant/target/using/integrate/campaign-and-target.html)中，找到有關Adobe Campaign與Adobe Target整合的資訊。
+>您也可以在[Adobe Target說明頁面](https://docs.adobe.com/content/help/zh-Hant/target/using/integrate/campaign-and-target.html)上，找到Adobe Campaign與Adobe Target之間整合的相關資訊。
