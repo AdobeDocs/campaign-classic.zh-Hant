@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 操作原則
 description: 操作原則
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
 
 ---
 
-
 # 操作原則{#operating-principle}
 
-從技術上講，Adobe Campaign平台是以數個模組為基礎。
+技術上，Adobe Campaign平台以數個模組為基礎。
 
-Adobe Campaign有許多模組。 有些會持續運作，而有些則偶爾啟動以執行管理任務（例如配置資料庫連接）或執行經常性任務（例如合併跟蹤資訊）。
+有許多Adobe Campaign模組。 有些會持續運行，而有些則偶爾啟動，以執行管理任務（例如配置資料庫連接）或運行經常性任務（例如整合跟蹤資訊）。
 
-Adobe Campaign模組有三種類型：
+有三種類型的Adobe Campaign模組：
 
-* 多實例模組：所有例項都會執行單一程式。 這適用於以下模組：**web**、**syslogd**、**trackinglogd**&#x200B;和&#x200B;**watchdog**（**config-default.xml**&#x200B;檔案中的活動）。
-* 單實例模組：每個實例運行一個進程。 這適用於以下模組：**mta**、**wfserver**、**inMail**、**sms**&#x200B;和&#x200B;**stat**（**config-`<instance>`.xml**&#x200B;檔案中的活動）。
-* 實用程式模組：這些模組偶爾會運行，以執行偶爾或反複的操作（**cleanup**、**config**、下載跟蹤日誌等）。
+* 多實例模組：對所有實例運行單個進程。 這適用於下列模組：**web**、**syslogd**、**trackinglogd**&#x200B;和&#x200B;**watchdog**（**config-default.xml**&#x200B;檔案中的活動）。
+* 單實例模組：每個實例運行一個進程。 這適用於下列模組：**mta**、**wfserver**、**inMail**、**sms**&#x200B;和&#x200B;**stat**（來自&#x200B;**config-`<instance>`.xml**&#x200B;檔案的活動）。
+* 實用程式模組：這些模組偶爾會執行，以執行偶爾或經常的操作（**cleanup**、**config**、下載追蹤記錄等）。
 
-使用安裝資料夾的&#x200B;**bin**&#x200B;目錄中安裝的命令行工具&#x200B;**nlserver**&#x200B;執行模組管理。
+使用安裝資料夾&#x200B;**bin**&#x200B;目錄中安裝的命令行工具&#x200B;**nlserver**&#x200B;來執行模組管理。
 
 **nlserver**&#x200B;工具的一般語法如下：
 
@@ -35,40 +33,40 @@ Adobe Campaign模組有三種類型：
 
 有關可用模組的清單，請使用&#x200B;**nlserver**&#x200B;命令。
 
-下表詳細介紹了可用模組：
+下表詳細說明了可用模組：
 
 | 命令 | 說明 |
 |---|---|
-| aliasClacining | 標準化枚舉值 |
-| 計費 | 將系統活動報告發送到billing@neolane.net |
-| 清除 | 清理資料庫：從資料庫中刪除過時的資料，並運行資料庫引擎優化程式所使用統計資訊的更新。 |
-| config | 修改伺服器配置 |
+| aliasCleancing | 標準化枚舉值 |
+| 帳單 | 將系統活動報告傳送至billing@neolane.net |
+| cleanup | 清除資料庫：從資料庫中刪除過時的資料，並運行資料庫引擎優化程式所使用統計資訊的更新。 |
+| 設定 | 修改伺服器配置 |
 | copybase | 資料庫的副本 |
-| 匯出 | 導出到命令行：可讓您傳送在Adobe Campaign用戶端主控台中建立的匯出模型至命令列 |
+| 匯出 | 導出到命令行：可讓您將在Adobe Campaign用戶端主控台中建立的匯出模型傳送至命令列 |
 | fileconvert | 轉換設定大小的檔案 |
-| 導入 | 導入到命令行：可讓您傳送在Adobe Campaign用戶端主控台中建立的匯入模型至命令列。 |
-| inMail | 入站郵件分析器 |
-| 安裝安裝 | 客戶安裝檔案的可用性 |
+| 匯入 | 導入到命令行：可讓您將在Adobe Campaign用戶端主控台中建立的匯入模型傳送至命令列。 |
+| inMail | 傳入郵件分析器 |
+| 安裝程式 | 客戶安裝檔案的可用性 |
 | javascript | 執行JavaScript指令碼，並可存取SOAP API。 |
 | 工作 | 命令列處理 |
 | 合併 | 表單合併 |
-| midSourcing | 在中部採購模式下恢復交貨資訊 |
-| 監視器 | XML依例項顯示伺服器程式和排程工作的狀態。 |
+| midSourcing | 在中間來源模式下恢復交貨資訊 |
+| 監視 | XML按實例顯示伺服器進程和計畫任務的狀態。 |
 | mta | 主代理傳輸消息 |
-| package | 導入或導出實體包檔案 |
+| 套件 | 導入或導出實體包檔案 |
 | pdump | 顯示伺服器進程狀態 |
-| prepareda | 準備傳送動作 |
-| 重新啟動 | 部分伺服器重啟 |
-| runwf | 工作流實例的執行 |
-| 關閉 | 完全系統關閉 |
+| prepareda | 準備傳遞動作 |
+| 重新啟動 | 部分伺服器重新啟動 |
+| runwf | 執行工作流程例項 |
+| 關閉 | 完全關閉系統 |
 | sms | SMS通知處理 |
 | sql | SQL指令碼執行 |
-| start | 其他開始 |
+| 開始 | 其他開始 |
 | stat | 維護MTA連接統計資訊 |
 | 停止 | 部分系統關閉 |
-| 提交數 | 提交傳送動作 |
+| submitda | 提交傳遞動作 |
 | syslogd | 日誌和跟蹤寫入伺服器 |
-| 追蹤 | 合併和檢索跟蹤日誌 |
+| 追蹤 | 整合和擷取追蹤記錄 |
 | trackinglogd | 跟蹤日誌寫入和清除伺服器 |
 | 監視 | 啟動和監視實例 |
 | web | 應用程式伺服器（HTTP和SOAP） |
@@ -76,13 +74,13 @@ Adobe Campaign模組有三種類型：
 
 >[!IMPORTANT]
 >
->最後一個模組：與應用伺服器連結的跟蹤和中繼模組，為了效能考慮，它通過本地機制通過動態庫整合到Apache或IIS Web伺服器中。 沒有Adobe Campaign命令可讓您啟動或管理此模組。 因此，您必須使用Web伺服器本身的命令。
+>最後一個模組：連結到應用程式伺服器的跟蹤和中繼模組，為了效能，它通過本機機制通過動態庫整合到Apache或IIS web伺服器中。 沒有可讓您啟動或管理此模組的Adobe Campaign命令。 因此，必須使用Web伺服器本身的命令。
 
 使用以下命令顯示模組用法及其參數的語法：**nlserver `[module]` -?**
 
 範例:
 
-**nlserver config -?**
+**nlserver配置 — ?**
 
 ```
 Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]
@@ -126,4 +124,3 @@ Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]
 -filter : applies the XTK filter contained in the file during loading of the schema entities.
 -setactivationkey : sets the activation key
 ```
-
