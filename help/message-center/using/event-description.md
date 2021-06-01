@@ -1,43 +1,42 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 消息中心事件說明
-description: 進一步瞭解交易式傳訊事件
+title: 事件說明
+description: 了解如何使用SOAP方法在Adobe Campaign Classic中管理交易式訊息事件。
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 3a9c435a6469f291c4ecdb30eceb83c4f000f5e0
+exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
+# 事件說明 {#event-description}
 
-# 事件說明{#event-description}
+## 交易式訊息資料模型{#about-transactional-messaging-datamodel}
 
-## 關於事務性消息傳遞資料模型{#about-transactional-messaging-datamodel}
-
-交易式傳訊需仰賴Adobe Campaign資料模型，並使用另外兩個不同的表格。 這些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的欄位，讓您管理即時事件和批次事件。
+交易式訊息需仰賴Adobe Campaign資料模型，並使用其他兩個不同的表格。 這些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的欄位，允許您管理即時事件和批次事件。
 
 ## SOAP方法{#soap-methods}
 
-本節詳細介紹與事務性消息模組結構描述關聯的SOAP方法。
+本節詳細說明與交易式訊息模組結構相關聯的SOAP方法。
 
-兩個&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法連結到兩個&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;資料化學。 決定事件是「批次」或「即時」類型的資訊系統。
+兩個&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法連結到兩個&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;資料化學。 決定事件是「批次」還是「即時」類型的資訊系統。
 
 * **** PushEvent可讓您將單一事件插入訊息中，
-* **PushEvent** 可讓您在訊息中插入一連串事件。
+* **** PushEvent可讓您將一系列事件插入訊息中。
 
-用於訪問兩種方法的WSDL路徑為：
+用於訪問這兩種方法的WSDL路徑為：
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEvento存取即時類型結構。
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEvento存取批次類型結構。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEvent以存取即時類型結構。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEven以存取批次類型結構。
 
-這兩種方法都包含一個&#x200B;**`<urn:sessiontoken>`**&#x200B;元素，用於登錄事務性消息傳遞模組。 我們建議透過受信任的IP位址使用識別方法。 若要擷取工作階段Token，請執行登入SOAP呼叫，然後執行取得Token，再執行註銷。 對數個RT呼叫使用相同的Token。 本節中包含的範例是使用建議的作業Token方法。
+兩種方法都包含用於登入交易式訊息模組的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 建議您透過信任的IP位址使用識別方法。 要檢索會話令牌，請執行登錄SOAP調用，然後執行獲取令牌，然後執行註銷。 對數個RT呼叫使用相同的Token。 本節包含的範例是使用工作階段代號方法，此為建議的方法。
 
-如果您使用負載平衡伺服器，則可使用使用者／密碼驗證（位於RT訊息的層級）。 範例:
+如果您使用負載平衡伺服器，則可以使用「使用者/密碼」驗證（位於RT訊息的層級）。 範例:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -77,7 +76,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果呼叫&#x200B;**PushEvents**&#x200B;方法，我們需要新增父XML元素以符合標準XML。 此XML元素將框架化事件中包含的各種&#x200B;**`<rtevent>`**&#x200B;元素。
+>若呼叫&#x200B;**PushEvents**&#x200B;方法，則需要新增父XML元素以符合標準XML。 此XML元素將框架事件中包含的各種&#x200B;**`<rtevent>`**&#x200B;元素。
 
 使用PushEvents的範例：
 
@@ -103,13 +102,13 @@ ht-degree: 0%
 </urn:PushEvents>
 ```
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素具有一組屬性以及一個強制子元素：**`<ctx>`**，以整合訊息資料。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素具有一組屬性以及強制子元素：**`<ctx>`**&#x200B;以整合訊息資料。
 
 >[!NOTE]
 >
->**`<batchevent>`**&#x200B;元素可讓您將事件新增至「批次」佇列。 **`<rtevent>`**&#x200B;會將事件新增至「即時」佇列。
+>**`<batchevent>`**&#x200B;元素可讓您將事件新增至「batch」佇列。 **`<rtevent>`**&#x200B;會將事件新增至「即時」佇列。
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的必要屬性是@type和@email。 @type的值必須與配置執行實例時定義的項目化清單值相同。 此值可讓您定義要連結至傳送期間事件內容的範本。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的強制屬性為@type和@email。 @type的值必須與設定執行例項時定義的項目清單值相同。 此值可讓您定義要在傳送期間連結至事件內容的範本。
 
 `<rtevent> configuration example:`
 
@@ -117,21 +116,21 @@ ht-degree: 0%
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-在此範例中，提供兩個頻道：電子郵件地址和行動電話號碼。 **whishedChannel**&#x200B;可讓您選擇將事件轉換為訊息時要使用的頻道。 「0」值對應於電子郵件渠道、「1」值對應於行動渠道等。
+在此範例中，提供兩個管道：電子郵件地址和行動電話號碼。 **wishedChannel**&#x200B;可讓您選取將事件轉換為訊息時要使用的管道。 「0」值對應至電子郵件通道、「1」值對應至行動通道等。
 
-如果您想要延遲事件傳送，請新增&#x200B;**[!UICONTROL scheduled]**&#x200B;欄位，後面接著偏好的日期。 該事件將在此日期轉換為消息。
+如果您想要延遲事件傳送，請新增&#x200B;**[!UICONTROL scheduled]**&#x200B;欄位，後面接著偏好的日期。 該事件將在此日期轉換為訊息。
 
-我們建議以數值填入@wishedChannel和@emailFormat屬性。 連結數值和標籤的函式表位於資料方案說明中。
+建議您使用數值填@wishedChannel和@emailFormat屬性。 在資料架構描述中找到連結數值和標籤的函式表。
 
 >[!NOTE]
 >
 >**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;資料架構的說明中提供了所有授權屬性及其值的詳細說明。
 
-**`<ctx>`**&#x200B;元素包含消息資料。 其XML內容是開啟的，這表示您可以根據要傳送的內容來設定它。
+**`<ctx>`**&#x200B;元素包含訊息資料。 其XML內容是開啟的，這表示可以根據要傳送的內容進行配置。
 
 >[!NOTE]
 >
->請務必最佳化訊息中包含的XML節點數目和大小，以避免傳送期間伺服器超載。
+>請務必最佳化訊息中包含的XML節點數目和大小，以避免傳送期間發生伺服器過載。
 
 資料範例：
 
@@ -154,13 +153,13 @@ ht-degree: 0%
     </ctx>
 ```
 
-## SOAP呼叫{#information-returned-by-the-soap-call}傳回的資訊
+## SOAP調用{#information-returned-by-the-soap-call}返回的資訊
 
-當Adobe Campaign收到事件時，會產生唯一的傳回ID。 這是事件封存版本的ID。
+Adobe Campaign在收到事件時會產生唯一傳回ID。 這是封存版本的事件ID。
 
 >[!IMPORTANT]
 >
->當收到SOAP呼叫時，Adobe Campaign會驗證電子郵件地址格式。 如果電子郵件地址格式錯誤，則會傳回錯誤。
+>Adobe Campaign收到SOAP呼叫時，會驗證電子郵件地址格式。 如果電子郵件地址的格式不正確，則會傳回錯誤。
 
 * 事件處理成功時，方法傳回的識別碼範例：
 
@@ -176,9 +175,9 @@ ht-degree: 0%
 
 如果傳回識別碼的值嚴格大於零，表示事件已在Adobe Campaign中成功封存。
 
-但是，如果事件無法處理，方法會傳回錯誤訊息或等於零的值。
+不過，如果無法處理事件，方法會傳回錯誤訊息或等於零的值。
 
-* 處理在查詢不包含登入或指定運算子沒有必要權限時失敗的事件範例：
+* 處理查詢不包含登入或指定運算子沒有必要權限時失敗的事件範例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -192,7 +191,7 @@ ht-degree: 0%
    </SOAP-ENV:Envelope>
    ```
 
-* 因查詢錯誤而失敗的事件範例（XML分類未符合）:
+* 因查詢錯誤而失敗的事件範例（未遵循XML分類）:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -217,7 +216,7 @@ ht-degree: 0%
    </SOAP-ENV:Envelope>
    ```
 
-* 失敗並傳回零識別碼（錯誤方法名稱）的事件範例：
+* 失敗並傳回零識別碼（錯誤的方法名稱）的事件範例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -228,4 +227,3 @@ ht-degree: 0%
       </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
