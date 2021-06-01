@@ -8,10 +8,10 @@ user-guide-description: 設計、規劃、執行、管理和最佳化可提供�
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
+source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2477'
+ht-degree: 98%
 
 ---
 
@@ -566,41 +566,27 @@ ht-degree: 99%
       + [簡報規則](interaction/using/presentation-rules.md)
       + [傳入頻道上的優惠](interaction/using/offers-on-an-inbound-channel.md)
       + [傳出頻道上的優惠](interaction/using/offers-on-an-outbound-channel.md)
-+ 傳送異動訊息 {#transactional-messaging}
-   + 開始使用異動訊息 {#introduction}
-      + [關於異動訊息傳送](message-center/using/about-transactional-messaging.md)
++ 交易式傳訊 {#transactional-messaging}
+   + [開始使用異動訊息](message-center/using/about-transactional-messaging.md)
+   + 配置交易式消息{#configure-transactional-messaging}
       + [異動傳訊架構](message-center/using/transactional-messaging-architecture.md)
-      + [事件說明](message-center/using/event-description.md)
-   + 設定執行個體 {#instance-configuration}
-      + [建立共用連線](message-center/using/creating-a-shared-connection.md)
-      + [識別執行個體](message-center/using/identifying-execution-instances.md)
-      + [監視臨界值](message-center/using/monitoring-thresholds.md)
-      + [清除事件](message-center/using/purging-events.md)
-      + [技術工作流程](message-center/using/technical-workflows.md)
-      + [建立事件類型](message-center/using/creating-event-types.md)
-      + [設定多品牌](message-center/using/configuring-multibranding.md)
+      + [設定例項](message-center/using/configuring-instances.md)
+      + [其他配置](message-center/using/additional-configurations.md)
    + 訊息範本 {#message-templates}
-      + [關於異動訊息範本](message-center/using/introduction.md)
-      + [建立訊息範本](message-center/using/creating-the-message-template.md)
-      + [建立訊息內容](message-center/using/creating-message-content.md)
-      + [管理異動訊息中的種子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
-      + [個人化資料](message-center/using/personalization-data.md)
-      + [異動訊息預覽](message-center/using/transactional-message-preview.md)
-      + [傳送證明](message-center/using/sending-a-proof.md)
-      + [範本發佈](message-center/using/template-publication.md)
-      + [範本取消發佈](message-center/using/template-unpublication.md)
-   + 事件處理 {#event-processing}
-      + [關於事件處理](message-center/using/about-event-processing.md)
-      + [事件集合](message-center/using/event-collection.md)
-      + [路由至範本](message-center/using/routing-towards-a-template.md)
+      + [建立事件類型](message-center/using/creating-event-types.md)
+      + [設計訊息範本](message-center/using/creating-the-message-template.md)
+      + [測試訊息範本](message-center/using/testing-message-templates.md)
+      + [發佈訊息範本](message-center/using/publishing-message-templates.md)
+   + 交易式事件處理{#processing}
+      + [事件說明](message-center/using/event-description.md)
+      + [事件處理](message-center/using/about-event-processing.md)
       + [傳遞執行](message-center/using/delivery-execution.md)
    + 報告 {#reports}
-      + [關於異動訊息傳送報告](message-center/using/about-transactional-messaging-reports.md)
+      + [存取交易式訊息報表](message-center/using/about-transactional-messaging-reports.md)
       + [訊息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
       + [訊息中心服務層級](message-center/using/message-center-service-level.md)
       + [訊息中心處理時間](message-center/using/message-center-processing-time.md)
-   + 使用實例 {#use-case}
-      + [傳送含附件的異動電子郵件](message-center/using/transactional-email-with-attachments.md)
+   + [使用實例](message-center/using/transactional-email-with-attachments.md)
 + 整合社交媒體 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
    + 設定 {#configuration}
