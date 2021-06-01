@@ -1,20 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 監視准則
+title: 監視指南
 description: 探索監控 Campaign 執行個體和程序的準則和最佳作法。
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 20%
 
 ---
 
-# 監視准則 {#monitoring-guidelines}
+# 監視指南 {#monitoring-guidelines}
 
 ## 執行個體監控控制面板{#instance-monitoring-dashboard}
 
@@ -51,7 +50,7 @@ ht-degree: 20%
 
 **控制面板**
 
-「控制面板」可讓您管理執行個體的數個設定：管理URL權限、檢查您的執行個體詳細資訊，例如伺服器的組建版本等。 它也可讓您監視連線至執行個體之SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)以獲得更多資訊。
+「控制面板」可讓您管理執行個體的數個設定：管理URL權限、檢查您的執行個體詳細資訊，例如伺服器的組建版本等。 它也可讓您監視連線至執行個體之SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)以獲得更多資訊。
 
 >[!NOTE]
 >
@@ -91,7 +90,7 @@ ht-degree: 20%
 
 **SMTP報表**
 
-SMTP報表會依網域顯示傳送統計資料和SMTP錯誤。 [了解更多](../../production/using/monitoring-processes.md)
+SMTP報表會依網域顯示傳送統計資料和SMTP錯誤。 [瞭解更多](../../production/using/monitoring-processes.md)
 
 **最佳實務**
 
