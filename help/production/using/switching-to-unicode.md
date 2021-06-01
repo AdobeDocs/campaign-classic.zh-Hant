@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 切換為 Unicode
 description: 切換為 Unicode
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
 
 ---
 
-
 # 切換為 Unicode{#switching-to-unicode}
 
-對於Linux/PostgreSQL中現有的&#x200B;**prod**&#x200B;實例，切換到unicode的步驟如下：
+對於Linux/PostgreSQL中的現有&#x200B;**prod**&#x200B;實例，切換為unicode的步驟如下：
 
-1. 停止向資料庫寫入的進程：
+1. 停止寫入資料庫的進程：
 
    ```
    su - neolane
@@ -45,7 +43,7 @@ ht-degree: 7%
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. 更新指示資料庫為Unicode的選項：
+1. 更新表示資料庫為Unicode的選項：
 
    ```
    psql mydatabase_unicode
@@ -60,7 +58,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   將&#x200B;**u**&#x200B;字元加在與資料庫標識符(**databaseId**)相關的值前面：
+   在與資料庫標識符(**databaseId**)相關的值前面添加&#x200B;**u**&#x200B;字元：
 
    ```
    <web>
@@ -76,7 +74,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   修改資料庫參考：
+   修改資料庫引用：
 
    ```
    <dataSource name="default">
@@ -95,8 +93,7 @@ ht-degree: 7%
    /etc/init.d/apache start
    ```
 
-1. 確認交換機。 若要這麼做，請透過Adobe Campaign主控台連線，並：
+1. 確認開關。 若要這麼做，請透過Adobe Campaign主控台連線，並：
 
    * 檢查資料是否正確顯示，尤其是強調字元：
    * 啟動傳送並檢查追蹤擷取是否有效。
-
