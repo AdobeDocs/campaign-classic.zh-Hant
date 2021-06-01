@@ -1,59 +1,56 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 通用架構
-description: 通用架構
+title: 一般架構
+description: 一般架構
 audience: production
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
 
 ---
 
-
-# 通用架構{#general-architecture}
+# 一般架構{#general-architecture}
 
 ## 最小體系結構{#minimum-architecture}
 
-在最低設定中，Adobe Campaign可與下列項目搭配運作：
+在最低設定中，Adobe Campaign的運作方式為：
 
-* Adobe Campaign應用程式伺服器、
+* Adobe Campaign應用程式伺服器，
 * 資料庫。
 
    ![](assets/formation_exploitation.png)
 
-此圖表顯示，在最小體系結構的上下文中，唯一涉及的流量是：
+此圖表顯示最小體系結構上下文中涉及的唯一流量是：
 
 1. 透過網際網路傳送HTTP通訊協定至Adobe Campaign伺服器，
-1. 透過網際網路從Adobe Campaign伺服器傳入和傳入Adobe Campaign伺服器的SMTP通訊協定流量。
+1. 透過網際網路從Adobe Campaign伺服器傳送和傳送至SMTP通訊協定的流量。
 
-## 分佈式體系結構{#distributed-architecture}
+## 分佈式架構{#distributed-architecture}
 
-Adobe Campaign由多個模組組成，可劃分成多部電腦。 這種操作模式具有以下幾個優點：
+Adobe Campaign由多個模組組成，可在數部電腦上劃分。 此操作模式有以下幾項優點：
 
 * 負載平衡，
 * 設定模組冗餘，
-* 建立由數家服務供應商劃分的架構（所提供服務的區段）。
+* 建立依數個服務提供者劃分的架構（對所提供服務的細分）。
 
 ![](assets/architecturerepartie.png)
 
-在多台機器上分配模組提供了極大的使用靈活性和增強的適應性。
+模組在多台機器上的分佈提供了使用的極大靈活性和改進的適應性。
 
 >[!NOTE]
 >
->有關各種體系結構的詳細資訊，請參閱[本節](../../installation/using/general-architecture.md)。
+>有關各種體系結構的詳細資訊，請參閱[此部分](../../installation/using/general-architecture.md)。
 
 ## 開啟的埠清單{#list-of-open-ports}
 
-| 埠號 | 關注的Adobe Campaign模組或應用程式 | 可配置 |
+| 埠號 | 相關Adobe Campaign模組或應用程式 | 可設定 |
 |---|---|---|
 | 443/tcp或80/tcp | Web伺服器(Apache/IIS) | 是 |
-| 6666/udp（本地） | Adobe Campaign:Syslogd | 是 |
-| 8005/tcp（本地） | Adobe Campaign:Web模組 | 是 |
-| 8080/tcp | Adobe Campaign:Web模組(tomcat) | 是 |
-| 郵編：7777 | 統計伺服器（stat伺服器） | 是 |
-
+| 6666/udp（本地） | Adobe Campaign:敘斯洛格德 | 是 |
+| 8005/tcp（本地） | Adobe Campaign:網頁模組 | 是 |
+| 8080/tcp | Adobe Campaign:web模組(tomcat) | 是 |
+| 7777 | 統計伺服器（統計伺服器） | 是 |
