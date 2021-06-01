@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 常見問題
 description: Adobe Campaign Classic 常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 97%
 
 ---
-
 
 # 常見問題{#common-questions}
 
@@ -74,4 +72,3 @@ Adobe Campaign 提供一組可監視電子郵件傳遞的儀表板和工具。
 子網域是您網域的分區，可用來隔離您的名稱或各類流量（交易訊息、行銷資訊等等）。Adobe 使用網域名稱系統 (DNS) 的帳戶進行電子郵件傳遞，允許用戶端使用網域名稱的 DNS 別名維護品牌形象，允許 Adobe 自主實行所有技術最佳實務，以利傳送電子郵件期間最佳化傳遞。
 
 [按一下這裡以瞭解更多資訊](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)。
-
