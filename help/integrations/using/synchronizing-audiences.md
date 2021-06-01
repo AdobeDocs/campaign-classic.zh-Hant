@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 同步受眾
 description: 同步受眾
@@ -7,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 1%
@@ -28,7 +27,7 @@ ht-degree: 1%
 >
 >如果您需要的所有資料皆已復寫，您也可以在Adobe Campaign Standard中使用匯總和集合來擴充資料。
 
-## 必要條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 若要達成此目標，您需要：
 
