@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 與 Linux 網頁伺服器整合
-description: 瞭解如何將Campaign整合至網頁伺服器(Linux)
+description: 了解如何將Campaign整合至網頁伺服器(Linux)
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 5%
@@ -17,13 +15,13 @@ ht-degree: 5%
 
 # 與 Linux 網頁伺服器整合{#integration-into-a-web-server-for-linux}
 
-Adobe Campaign包含Apache Tomcat，它可透過HTTP（和SOAP）在應用程式伺服器中當做入口點。
+Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）作為應用程式伺服器中的入口點。
 
-您可以使用此整合的Tomcat伺服器來服務HTTP請求。
+您可以使用此整合的Tomcat伺服器來處理HTTP請求。
 
-在本例中：
+在此情況下：
 
-* 預設監聽埠為8080。 要更改它，請參閱[本節](configure-tomcat.md)。
+* 預設監聽埠為8080。 要更改它，請參閱[此部分](configure-tomcat.md)。
 * 然後，用戶端主控台會使用URL進行連線，例如：
 
    ```
@@ -32,21 +30,21 @@ Adobe Campaign包含Apache Tomcat，它可透過HTTP（和SOAP）在應用程式
 
 但是，出於安全和管理原因，我們建議使用專用的Web伺服器作為HTTP通信的主要入口點，因為運行Adobe Campaign的電腦在Internet上被公開，並且您希望開啟對網路外部控制台的訪問。
 
-Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
+Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
 
-同樣地，當您想要使用追蹤功能時，必須使用Web伺服器，此功能僅能做為Web伺服器的擴充模組。
+同樣地，當您想使用追蹤功能時，必須使用Web伺服器，這只能作為Web伺服器的擴充模組使用。
 
 >[!NOTE]
 >
->如果您不使用追蹤功能，則可執行Apache或IIS的標準安裝，並重新導向至促銷活動。 不需要追蹤Web伺服器擴充模組。
+>如果您未使用追蹤功能，則可執行Apache或IIS的標準安裝，並重新導向至Campaign。 不需要追蹤Web伺服器擴充模組。
 
-## 使用Debian {#configuring-the-apache-web-server-with-debian}配置Apache Web伺服器
+## 使用Debian {#configuring-the-apache-web-server-with-debian}設定Apache Web伺服器
 
-如果您已在基於APT的分發中安裝Apache，則此程式適用。
+如果您已根據APT在發佈下安裝Apache，則此程式適用。
 
 應用以下步驟：
 
-1. 使用以下命令禁用預設載入的模組：
+1. 預設情況下，使用以下命令禁用載入的模組：
 
    ```
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
@@ -58,9 +56,9 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    a2enmod  alias authz_host mime
    ```
 
-1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中建立檔案&#x200B;**nlsrv.load**，並插入下列內容：
+1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中建立檔案&#x200B;**nlsrv.load**&#x200B;並插入以下內容：
 
-   在德比安8:
+   在Debian 8中：
 
    ```
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
@@ -78,7 +76,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
     a2enmod nlsrv
    ```
 
-   如果您使用&#x200B;**mod_rewrite**&#x200B;模組用於Adobe Campaign頁，則需要將&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;檔案更名為&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.a9/>。**&#x200B;要激活模組，請運行以下命令：
+   如果您使用的是Adobe Campaign頁面的&#x200B;**mod_rewrite**&#x200B;模組，則需要將&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;檔案更名為&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.conf**。 要激活模組，請運行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -94,7 +92,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
    儲存變更。
 
-1. 然後，使用以下類型的命令將Adobe Campaign用戶添加到Apache用戶組，反之亦然：
+1. 然後使用下列命令類型，將Adobe Campaign使用者新增至Apache使用者群組，反之亦然：
 
    ```
    usermod neolane -G www-data
@@ -109,11 +107,11 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
 ## 在RHEL {#configuring-apache-web-server-in-rhel}中配置Apache Web伺服器
 
-如果您已在基於RPM（RHEL、CentOS和Suse）的軟體包下安裝並保護Apache，則此過程適用。
+如果您已在基於RPM（RHEL、CentOS和Suse）的包下安裝並保護Apache，則此過程適用。
 
 應用以下步驟：
 
-1. 在`httpd.conf`檔案中，激活以下Apache模組：
+1. 在`httpd.conf`檔案中，啟動以下Apache模組：
 
    ```
    alias
@@ -152,7 +150,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    ForceLanguagePriority
    ```
 
-1. 在`/etc/httpd/conf.d/`資料夾中建立Adobe Campaign特定的配置檔案。 例如`CampaignApache.conf`
+1. 在`/etc/httpd/conf.d/`資料夾中建立Adobe Campaign特定設定檔案。 例如`CampaignApache.conf`
 
 1. 對於&#x200B;**RHEL7**，在檔案中添加以下說明：
 
@@ -163,7 +161,7 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
 1. 對於&#x200B;**RHEL7**:
 
-   添加包含以下內容的`/etc/systemd/system/httpd.service`檔案：
+   新增`/etc/systemd/system/httpd.service`檔案，其中包含下列內容：
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -178,18 +176,18 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
    systemctl daemon-reload
    ```
 
-1. 然後，通過運行以下命令將Adobe Campaign運算子添加到Apache運算子組中，反之亦然：
+1. 然後，執行命令，將Adobe Campaign運算子新增至Apache運算子群組，反之亦然：
 
    ```
    usermod -a -G neolane apache
    usermod -a -G apache neolane
    ```
 
-   要使用的組名取決於Apache的配置方式。
+   要使用的群組名稱取決於Apache的設定方式。
 
-1. 運行Apache和Adobe Campaign伺服器。
+1. 執行Apache和Adobe Campaign伺服器。
 
-   針對RHEL7:
+   對於RHEL7:
 
    ```
    systemctl start httpd
@@ -198,13 +196,13 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 
 ## 啟動Web伺服器並測試配置{#launching-the-web-server-and-testing-the-configuration}
 
-您現在可以啟動Apache來測試設定。 Adobe Campaign模組現在應在控制台上顯示其橫幅（某些作業系統上顯示兩個橫幅）:
+您現在可以啟動Apache來測試設定。 Adobe Campaign模組現在應該會在主控台上顯示其橫幅（某些作業系統上有兩個橫幅）:
 
 ```
  /etc/init.d/apache start
 ```
 
-將顯示以下資訊：
+會顯示下列資訊：
 
 ```
 12:26:28 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -215,15 +213,15 @@ Web伺服器也可讓您使用HTTP通訊協定來保證資料的機密性。
 12:26:28 >   Server started
 ```
 
-接下來，請檢查它是否透過送出測試URL做出回應。
+接下來檢查它是否透過提交測試URL來回應。
 
-通過執行以下操作，可以從命令行測試：
+您可以執行以下動作，從命令列測試：
 
 ```
  telnet localhost 80  
 ```
 
-您應獲得：
+您應取得：
 
 ```
 Trying 127.0.0.1...
@@ -237,7 +235,7 @@ Escape character is '^]'.
 GET /r/test
 ```
 
-將顯示以下資訊：
+會顯示下列資訊：
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
