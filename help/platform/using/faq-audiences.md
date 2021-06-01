@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 設定檔及受眾常見問題集
 description: Campaign Classic 常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
 
 ---
-
 
 # 設定檔及受眾常見問題集{#audiences-faq}
 
