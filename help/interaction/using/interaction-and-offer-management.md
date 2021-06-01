@@ -1,38 +1,36 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 互動與優惠方案管理
+title: 互動與優惠管理
 description: 根據資格規則，將最佳項目傳送給您的聯絡人。
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 10%
 
 ---
 
+# 互動與優惠管理{#interaction-and-offer-management}
 
-# 互動與優惠方案管理{#interaction-and-offer-management}
+互動可讓您在與指定連絡人（客戶或目標）的互動期間，透過讓他們成為單一或數個經過調整的優惠方案來即時回應。 例如，這些可以是簡單的通訊訊息、一或多項產品或服務的特殊優惠。
 
-互動功能可讓您在與特定連絡人（客戶或目標）互動時，即時回應，讓他們成為單一或數個已調整的選件。 例如，這些訊息可以是簡單的通訊訊息、單一或數種產品或服務的特殊優惠。
+優惠方案會透過傳入（網站或客服中心）或傳出（電子郵件傳送、直接郵件或行銷活動內的簡訊）連絡人傳送給聯絡人。
 
-選件會透過傳入（網站或客服中心）或傳出（行銷促銷活動內的電子郵件傳送、直效郵件或簡訊）連絡人傳送給聯絡人。
+您可以建立優惠方案目錄，該目錄將與傳入和傳出頻道介面，以選取要在指定內容中傳送給聯絡人的最佳優惠方案。 收件者的優惠相關性是根據適用性規則而定義。 從一組相關優惠方案中選擇優惠方案是使用優先順序規則來決定。 優惠方案簡報規則會考量連絡人的交換記錄，並協助避免他們多次收到相同優惠方案。
 
-您可以建立選件目錄，其將與傳入和傳出渠道介接，以選擇在指定內容中傳送給連絡人的最佳選件。 根據資格規則定義收件者的選件相關性。 從一組相關選件中選擇選件是使用優先順序規則來決定。 選件簡報規則會考量到聯絡人的交換記錄，並協助避免他們多次收到相同的選件。
-
-互動功能可讓您建立和管理選件目錄，並設定與選件連結的資格規則和應用程式主題。 視所選頻道而定，由於各種轉換功能，提供的內容可以個人化。 最後，您可使用模擬模組來計算選件簡報的影響。
+互動可讓您建立和管理優惠方案目錄，以及設定與其連結的適用性規則和應用程式主題。 根據選擇的管道，由於各種演算功能，選件內容可以個人化。 最後，您可以使用模擬模組來計算優惠方案呈現的影響。
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) 若要熟悉促銷活動互動中使用的互動功能和術語，請觀看 [此影片](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
+![](assets/do-not-localize/how-to-video.png) 若要熟悉Campaign互動中使用的互動功能和術語，請觀 [看此影片](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 相關主題
 
 | 有用的頁面 | 其他資源 |
 |---|---|
-| [互動實作步驟](../../interaction/using/implementation-steps.md) | [測試選件散發](../../interaction/using/about-offers-simulation.md) |
-| [即時/設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增選件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [互動實施步驟](../../interaction/using/implementation-steps.md) | [測試優惠方案分送](../../interaction/using/about-offers-simulation.md) |
+| [即時/設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增優惠方案](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增優惠方案](../../interaction/using/offers-on-an-inbound-channel.md) |
