@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 常見問題
 description: Campaign Classic 常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 20552812-5c58-4d48-9636-d5135197685d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
 ---
-
 
 # 開發人員常見問題集 {#dev-faq}
 
@@ -41,7 +39,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 您可以在 Campaign 中建立和實施非標準式收件者表格，以傳送訊息。
 
-[按一下這裡以取得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
+[按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 
 ## 在 Campaign 定義查詢的最佳實務是什麼？{#what-are-the-best-practices-to-define-queries-in-campaign-}
 
