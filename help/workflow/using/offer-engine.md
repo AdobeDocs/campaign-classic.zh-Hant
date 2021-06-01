@@ -1,38 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 優惠方案引擎
-description: 優惠方案引擎
+title: 優惠引擎
+description: 優惠引擎
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8db4b04f-7754-4a49-ab72-afc916888ebb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 4%
 
 ---
 
-
-# 優惠方案引擎{#offer-engine}
+# 優惠引擎{#offer-engine}
 
 **[!UICONTROL Offer engine]**&#x200B;活動可讓您在傳送前定義對選件引擎的呼叫。
 
-此活動與引擎呼叫的富集活動具有相同的原則，即在傳送之前，使用引擎計算的選件來富集傳入人口資料。
+此活動的運作原則與引擎呼叫的擴充活動相同，方法是在傳送前使用引擎計算的選件擴充入站母體資料。
 
 ![](assets/int_offerengine_activity2.png)
 
 設定查詢後（請參閱此[section](../../workflow/using/query.md)）:
 
 1. 新增並開啟&#x200B;**[!UICONTROL Offer engine]**&#x200B;活動。
-1. 填寫各種可用欄位，以指定對選件引擎參數（選件空間、類別或主題、連絡日期、要保留的選件數）的呼叫。 引擎會根據這些參數自動計算要新增的選件。
+1. 填寫各種可用欄位，以指定對優惠方案引擎參數（優惠方案空間、類別或主題、聯絡日期、要保留的優惠方案數量）的呼叫。 引擎會自動計算要根據這些參數新增的選件。
 
    >[!CAUTION]
    >
-   >如果您使用本活動，則只會儲存傳送中使用的選件主張。
+   >如果您使用此活動，則只會儲存傳送中使用的優惠方案。
 
    ![](assets/int_offerengine_activity1.png)
 
-1. 然後設定與您所選渠道對應的傳送活動。 請參閱[跨通道遞送](../../workflow/using/cross-channel-deliveries.md)。
-
+1. 然後設定與您選擇的通道相對應的傳送活動。 請參閱[跨通道傳送](../../workflow/using/cross-channel-deliveries.md)。
