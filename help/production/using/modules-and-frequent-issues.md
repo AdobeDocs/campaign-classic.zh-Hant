@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 模組和常見問題
 description: 模組和常見問題
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 5%
 
 ---
 
-
 # 模組和常見問題{#modules-and-frequent-issues}
 
-以下是受頻繁問題影響的模組清單：
+以下是受常見問題影響的模組清單：
 
 <table> 
  <thead> 
@@ -31,17 +29,17 @@ ht-degree: 5%
   <tr> 
    <td> 匯出 </td> 
    <td> 執行導出進程<br /> </td> 
-   <td> 排程此匯出的運算子需要重新啟動它。 delta或完全重新啟動。<br /> </td> 
+   <td> 排程此匯出作業的運算子需要重新啟動。 增量或完全重新啟動。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 導入 </td> 
+   <td> 匯入 </td> 
    <td> 執行導入進程<br /> </td> 
-   <td> 排程此匯出的運算子需要重新啟動它。 檢查資料庫是否有重複項。<br /> </td> 
+   <td> 排程此匯出作業的運算子需要重新啟動。 檢查資料庫中是否有重複項。<br /> </td> 
   </tr> 
   <tr> 
    <td> inMail </td> 
-   <td> 彈回郵箱的閱讀<br /> </td> 
-   <td> 如果不再轉發彈回郵件，請檢查此模組。<br /> </td> 
+   <td> 讀取退信盒<br /> </td> 
+   <td> 如果退回郵件不再轉發，請檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
    <td> mta </td> 
@@ -66,7 +64,7 @@ ht-degree: 5%
   <tr> 
    <td> trackinglogd </td> 
    <td> 跟蹤日誌寫入和清除伺服器<br /> </td> 
-   <td> 如果跟蹤日誌不再轉發，並且伺服器上的檔案中沒有日誌的跟蹤，請檢查此模組。 請參閱<a href="../../production/using/tracking-logs-issues.md" target="_blank">追蹤記錄問題</a>。<br /> </td> 
+   <td> 如果追蹤記錄檔不再轉送，且伺服器上的檔案中沒有記錄檔的追蹤，請檢查此模組。 請參閱<a href="../../production/using/tracking-logs-issues.md" target="_blank">追蹤記錄問題</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 監視 </td> 
@@ -76,13 +74,12 @@ ht-degree: 5%
   <tr> 
    <td> web </td> 
    <td> 應用程式伺服器（HTTP和SOAP）<br /> </td> 
-   <td> 如果控制台和Web連接不工作，請檢查此模組並觸發<strong>xtk:session</strong>類型錯誤<br /> </td> 
+   <td> 如果主控台和Web連線無法運作，請檢查此模組並觸發<strong>xtk:session</strong>類型錯誤<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
-   <td> 控制工作流實例的執行。<br /> </td> 
-   <td> 如果遇到任何問題，請重新啟動此模組。 如果需要，請應用此過程來提高<a href="../../production/using/log-precision.md" target="_blank">日誌精度</a>部分中詳細描述的日誌精度。<br /> </td> 
+   <td> 控制工作流實例執行。<br /> </td> 
+   <td> 如果遇到任何問題，請重新啟動此模組。 如有必要，請應用該過程以提高<a href="../../production/using/log-precision.md" target="_blank">日誌精度</a>部分中詳述的日誌的精度。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
-
