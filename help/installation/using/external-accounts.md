@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 8%
@@ -112,7 +112,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
    運算子資料夾中定義的帳戶密碼。
 
-有關此配置的詳細資訊，請參閱此[page](../../message-center/using/creating-a-shared-connection.md#control-instance)。
+有關此配置的詳細資訊，請參閱此[page](../../message-center/using/configuring-instances.md#control-instance)。
 
 
 ## 訪問外部系統外部帳戶
@@ -298,7 +298,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署類型現已過時。[了解更多](../../rn/using/deprecated-features.md)。
+> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署類型現已過時。[瞭解更多](../../rn/using/deprecated-features.md)。
 
 使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份驗證時，您需要提供以下詳細資訊：
 
