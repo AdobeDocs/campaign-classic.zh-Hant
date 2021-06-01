@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 存取傳遞清單
-description: 瞭解如何存取已建立的傳送清單。
+description: 了解如何存取已建立的傳送清單。
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
+exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
 
 ---
 
-
 # 存取傳遞清單 {#list-of-deliveries}
 
-您可以通過樹的&#x200B;**[!UICONTROL Campaign Management > Deliveries]**&#x200B;節點從傳送清單訪問傳送。
+您可以透過樹狀結構的&#x200B;**[!UICONTROL Campaign Management > Deliveries]**&#x200B;節點，從傳遞清單存取傳遞。
 
 ![](assets/deliveries-list.png)
 
-依預設，傳送清單會包含所選節點中建立之傳送的名稱和狀態。 它還顯示成功發送、處理和發送的消息數。
+依預設，傳送清單包含所選節點中建立之傳送的名稱和狀態。 它也會顯示要成功傳送、處理及傳送的訊息數量。
 
-* **[!UICONTROL Messages to send]**&#x200B;的數目與分析後和傳送前的目標接收者數目相對應。
-* **[!UICONTROL Success]**&#x200B;欄中的消息數與伺服器發送和接收者接收的消息數相對應。
-* **[!UICONTROL Processed]**&#x200B;消息的數量與收到的消息數以及出錯消息的數量相對應。
+* **[!UICONTROL Messages to send]**&#x200B;的數量與分析後和傳送前的目標收件者數量相對應。
+* **[!UICONTROL Success]**&#x200B;列中的消息數與伺服器發送和接收者接收的消息數相對應。
+* **[!UICONTROL Processed]**&#x200B;消息數與接收的消息數以及存在錯誤的消息數相對應。
 
 >[!NOTE]
 >
