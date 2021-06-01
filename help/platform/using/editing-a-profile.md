@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 編輯用戶檔案
 description: 編輯用戶檔案
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
-
-# 編輯配置式{#editing-a-profile}
+# 編輯設定檔{#editing-a-profile}
 
 若要檢視與用戶檔案相關的資訊，請在用戶檔案清單中按一下其名稱。
 
@@ -41,7 +39,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->當選取&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;選項時，這表示描述檔已列在denylist上，亦即描述檔已表示不希望與其聯絡（例如，按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。有關詳細資訊，請參見[此頁面](../../delivery/using/understanding-quarantine-management.md)。
+>選取&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;選項時，這表示設定檔位於封鎖清單上，亦即設定檔已表示不希望聯絡（例如按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。有關詳細資訊，請參見[此頁面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## 聯絡資訊索引標籤 {#contact-information-tab}
 
@@ -98,4 +96,3 @@ ht-degree: 86%
 >[!NOTE]
 >
 >如需追蹤功能的詳細資訊，請參閱[本頁面](../../delivery/using/delivery-dashboard.md)。
-
