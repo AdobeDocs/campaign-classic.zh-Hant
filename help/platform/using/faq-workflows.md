@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 工作流程常見問題集
 description: Campaign Classic 常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 97%
 
 ---
-
 
 # 工作流程常見問題集{#workflows-faq}
 
@@ -25,7 +23,7 @@ ht-degree: 97%
 
 ## 如何在 Campaign 中匯入資料？{#how-can-i-import-data-in-campaign-}
 
-瞭解在[本節](../../platform/using/import-export-best-practices.md)中匯入資料的最佳實務。
+了解在[此區段](../../platform/using/import-export-best-practices.md)中匯入資料的最佳實務。
 
 ## 是否可以監視工作流程執行？{#can-i-monitor-workflow-execution-}
 
