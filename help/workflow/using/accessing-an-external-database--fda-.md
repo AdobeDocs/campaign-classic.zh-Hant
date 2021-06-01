@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 存取外部資料庫 (FDA)
 description: 存取外部資料庫 (FDA)
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 9500a7ba-263d-425b-8cc3-b111c6b9108f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 53%
 
 ---
-
 
 # 存取外部資料庫 (FDA){#accessing-an-external-database-fda}
 
@@ -26,4 +24,4 @@ Adobe Campaign 提供同盟資料存取 (FDA) 選項，以處理儲存在一或�
 * 擴充
 * 資料載入
 
-FDA選項的使用取決於您的Adobe Campaign授權。 此[部分](../../installation/using/about-fda.md)將詳細介紹配置此選項以及與使用此選項連結的最佳實踐和限制。
+使用FDA選項取決於您的Adobe Campaign授權。 在[section](../../installation/using/about-fda.md)中詳細說明配置此選項以及與使用它相關的最佳做法和限制。
