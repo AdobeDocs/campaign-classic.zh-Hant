@@ -1,78 +1,76 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 假設追蹤
 description: 假設追蹤
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 1%
 
 ---
 
-
 # 假設追蹤{#hypothesis-tracking}
 
-假設計算的結果適用於Adobe Campaign平台的不同層級：由假設和目標群體反應計算的指標可通過實際假設以及通過促銷活動和交付獲得的假設報告中可見。
+假設計算的結果適用於Adobe Campaign平台的不同層級：由假設和目標群體反應計算的指標可透過實際假設以及透過促銷活動和傳送提供的假設報告中看到。
 
 ## 假設結果{#hypothesis-results}
 
-### 指標{#indicators}
+### 指標 {#indicators}
 
-一旦計算了假設，就會自動更新多個測量指標。 這些選項可在假設的&#x200B;**[!UICONTROL General]**&#x200B;標籤中使用。
+計算假設後，會自動更新數個測量指標。 這些在假設的&#x200B;**[!UICONTROL General]**&#x200B;標籤中可用。
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
-這些指標有：
+這些指標是：
 
-* **回應者聯絡人數**:與假設相符的接觸個體數目。
-* **聯繫的回應率**:回應者聯絡人數／傳送期間聯絡的總人數。
-* **回應者控制群組聯絡人數**:符合假設的控制群組數。
-* **控制組的響應率**:回應者控制群組數量／傳送控制群組總數。
+* **回應者聯絡人數**:與假設相符的已聯絡個人數。
+* **聯繫的回應率**:回應者聯絡人數/傳送期間聯絡的總人數。
+* **回應者控制組聯繫人數**:符合假設的控制組數。
+* **控制組的響應率**:回應者控制組數/傳送控制組總數。
 * **反應次數**:表中包含個人、假設和事務表之間關係的記錄數。
 
-有關指示符的完整清單，請按一下&#x200B;**[!UICONTROL Display the list]**&#x200B;連結：
+如需指標的完整清單，請按一下&#x200B;**[!UICONTROL Display the list]**&#x200B;連結：
 
 ![](assets/response_hypothesis_indicators_002.png)
 
 指標提供了以下資訊：
 
-* **已聯絡的人口總收入**:總金額超過所聯絡的個人數。
-* **控制組之總收益**:總金額超過控制群組數目。
-* **每位連絡人的平均收入**:總金額／已聯絡。
-* **控制組平均收入**:總金額／控制組。
-* **每位連絡人的總利潤**:已聯絡的總利潤。
-* **控制組毛利總額**:控制組的毛利總額。
-* **每位連絡人的平均利潤**:總利潤／已聯絡。
-* **控制群組的平均毛利**:總利潤／控制組。
-* **額外收入**:（已聯繫的平均收入——控制組的平均收入）*已聯繫的數量
-* **額外利潤**:（已聯繫的平均利潤——控制組的平均利潤）/已聯繫的數量
-* **每位聯絡人的平均成本**:計算的傳送成本／聯絡人數。
-* **投資報酬**:交貨的計算成本／每位連絡人的毛利總計
-* **有效的投資報酬率**:計算交貨成本／額外利潤。
-* **重要性**:包含0到3的值，視促銷活動重要性而定。
+* **已聯繫的總人口收入**:所聯繫的個人總數。
+* **控制組的總收入**:控制組數的總金額。
+* **每個連絡的平均收入**:總額/已聯繫。
+* **控制組的平均收入**:總金額/控制組。
+* **每個連絡人的總利潤**:已聯繫的總利潤。
+* **控制組的總利潤**:控制組的總利潤。
+* **每次連絡的平均利潤**:總利潤/已聯繫。
+* **控制組的平均裕度**:總利潤/控制組。
+* **其他收入**:（已聯繫的平均收入 — 控制組的平均收入）*已聯繫的數量
+* **其他利潤**:（已聯繫的平均裕度 — 控制組的平均裕度）/已聯繫的數量
+* **每個聯繫人的平均成本**:計算的傳送成本/聯繫人數。
+* **ROI**:傳送的計算成本/每個連絡的總利潤
+* **有效ROI**:計算的交貨成本/附加利潤。
+* **重要性**:根據促銷活動顯著性包含0到3的值。
 
-### 反應{#reactions}
+### 反應 {#reactions}
 
-您可以透過&#x200B;**[!UICONTROL Reactions]**&#x200B;標籤來檢視收件者對假設的反應。
+您可以透過&#x200B;**[!UICONTROL Reactions]**&#x200B;標籤檢視收件者對假設的反應。
 
-1. 假設計算完成後，請前往Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;節點。
-1. 選取所要的假設，然後按一下&#x200B;**[!UICONTROL Reactions]**&#x200B;標籤，以檢視可能在行銷促銷活動後購買內容的收件者清單。
+1. 假設計算完成後，前往Adobe Campaign樹的&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;節點。
+1. 選取所需的假設，然後按一下&#x200B;**[!UICONTROL Reactions]**&#x200B;標籤，以檢視行銷活動後可能購買項目的收件者清單。
 
    ![](assets/response_hypothesis_reactions_001.png)
 
-## 報表 {#reports}
+## 報告 {#reports}
 
-**[!UICONTROL Hypothesis report]**&#x200B;可讓您檢視在促銷活動和傳送上執行之假設的結果。 此報告包含由假設計算的指標（有關詳情，請參閱[指標](#indicators)）。
+**[!UICONTROL Hypothesis report]**&#x200B;可讓您檢視行銷活動和傳送上所執行假設的結果。 此報表包含由假設計算的指標（如需詳細資訊，請參閱[指標](#indicators)）。
 
-* **在促銷活動層級**:按一下 **[!UICONTROL Reports]** 相關促銷活動的連結，然後選取 **[!UICONTROL Hypothesis report]**。此報表包含促銷活動傳送的清單，以及針對每個傳送計算的假設。
+* **在促銷活動層級**:按一下 **[!UICONTROL Reports]** 相關促銷活動的連結，然後選取 **[!UICONTROL Hypothesis report]**。此報表包含行銷活動傳送的清單，以及針對每次傳送計算的假設。
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **在傳送層級**:若要存取報表，請開啟相關的傳送，按一下標 **[!UICONTROL Reports]** 簽中的 **[!UICONTROL Summary]** 頁籤並選取 **[!UICONTROL Hypothesis report]**。如果針對相同傳送計算了數個假設，報表將包含所有假設。
+* **在傳送層級**:若要存取報表，請開啟相關傳送，按一 **[!UICONTROL Reports]** 下索引 **[!UICONTROL Summary]** 標籤中的並選 **[!UICONTROL Hypothesis report]**&#x200B;取如果針對相同傳送計算了數個假設，報表將包含所有假設。
 
    ![](assets/response_hypothesis_delivery_report_001.png)
