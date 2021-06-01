@@ -1,48 +1,46 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 移轉方法
 description: 移轉方法
 audience: migration
 content-type: reference
 topic-tags: migration-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: dd4d068b-f414-448f-8d9a-eedf44e7b6e6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 1%
 
 ---
 
-
 # 移轉方法{#migration-method}
 
-## 對環境進行現代化{#modernizing-your-environment}
+## 更新您的環境{#modernizing-your-environment}
 
 執行遷移是更新環境（資料庫引擎、作業系統）的機會。 Adobe Campaign強烈建議將生產環境升級至最新版本。
 
-v7仍支援32位元版本的資料庫和作業系統，但Adobe Campaign未來版本將不再支援。 強烈建議您盡快將平台升級至64位元。
+v7仍支援32位元版本資料庫和作業系統，但未來版本的Adobe Campaign將不再支援。 強烈建議您盡快將平台升級至64位元。
 
-在v6.02中，「多時區」模式僅適用於PostgreSQL資料庫引擎。 現在，不論使用何種類型的資料庫引擎，都可提供此功能。 我們強烈建議您將您的基本系統轉換為「多時區」基本系統。 有關詳細資訊，請參閱[時區](../../migration/using/general-configurations.md#time-zones)部分。
+在v6.02中，「多時區」模式僅適用於PostgreSQL資料庫引擎。 現在，無論使用何種類型的資料庫引擎，都可提供此功能。 強烈建議您將基礎轉換為「多時區」基礎。 有關詳細資訊，請參閱[時區](../../migration/using/general-configurations.md#time-zones)區段。
 
 >[!IMPORTANT]
 >
->Adobe Campaign v7不再支援Adobe Campaign 5.11和6.02支援的部分軟體版本。
+>Adobe Campaign 5.11和6.02中支援的部分軟體版本不再支援Adobe Campaign v7。
 >
 >如需Adobe Campaign支援版本的詳細資訊，請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
 ## 關鍵遷移步驟{#key-migration-steps}
 
-移轉至Adobe Campaign v7的一般程式，請參閱[開始移轉](../../migration/using/before-starting-migration.md)一節。
+移轉至Adobe Campaign v7的一般程式在[開始移轉前](../../migration/using/before-starting-migration.md)一節中詳細說明。
 
-移轉至Adobe Campaign v7的實施步驟，請參閱[移轉至Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)一節的先決條件。
+移轉至Adobe Campaign v7的實作步驟詳細於[移轉至Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)的必要條件一節。
 
-所需的配置取決於您現有的配置和平台的初始版本。 [General configurations](../../migration/using/general-configurations.md)一節中概述了這些配置。
+所需的設定取決於您現有的設定和平台的初始版本。 在[一般配置](../../migration/using/general-configurations.md)部分中概述了這些配置。
 
 ## 特定配置{#specific-configurations}
 
-Adobe Campaign v7所帶來的變更可能也意味著您必須調整舊版中開發的特定組態。 因此，在遷移之前，可能需要對所有配置執行審計：請連絡Adobe Campaign以取得任何協助。
+Adobe Campaign v7帶來的變更也可能意味著您必須調整在舊版中開發的特定設定。 因此，在移轉前，可能需要對所有設定執行稽核：請聯絡Adobe Campaign以取得任何協助。
 
-例如，應特別注意Web應用程式的特定設定、具有SQLdata的架構擴展或現成可用的架構克隆。 有關詳細資訊，請參閱[配置平台](../../migration/using/configuring-your-platform.md)部分。
+例如，應特別注意Web應用程式的特定設定、具有SQLdata的架構擴展或現成的架構克隆。 如需詳細資訊，請參閱[設定平台](../../migration/using/configuring-your-platform.md)區段。
 
-同樣地，為了回應Adobe Campaign內部安全性的提升，已修改部分內部機制：您必須調整這些對應的配置。
+同樣，為了應對Adobe Campaign內加強的安全，一些內部機制也作了修改：您必須調整這些對應的設定。
