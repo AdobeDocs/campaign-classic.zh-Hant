@@ -1,29 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 建立篩選
-description: 建立篩選
+title: 建立篩選器
+description: 建立篩選器
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 6%
 
 ---
 
-
-# 建立篩選{#creating-filters}
+# 建立篩選器{#creating-filters}
 
 就像Adobe Campaign隨附的現成可用收件者表格一樣，新的收件者表格可能會接收一批預先定義的篩選。
 
-這些篩選器將可在目標選擇視窗中使用，其功能與收件者的區段（使用參數輸入表單、資料夾等）相同。
+這些篩選器將可在目標選擇窗口中使用，其功能與收件者的區段（使用參數輸入表單、資料夾等）相同。
 
 1. 轉至&#x200B;**[!UICONTROL Administration > Configuration > Predefined filters]**&#x200B;節點。
-1. 建立新篩選。
-1. 輸入篩選器的&#x200B;**[!UICONTROL Label]**，然後在&#x200B;**[!UICONTROL Document type]**&#x200B;欄位中選擇與外部收件人表匹配的方案。
+1. 建立新篩選器。
+1. 輸入篩選器的&#x200B;**[!UICONTROL Label]**，然後在&#x200B;**[!UICONTROL Document type]**&#x200B;欄位中選取與外部收件者表格相符的架構。
 1. 根據架構的欄位建立&#x200B;**[!UICONTROL filtering conditions]**。
-1. 儲存篩選。
-
+1. 儲存篩選器。
