@@ -1,36 +1,34 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 分析結果
-description: 瞭解如何透過專屬的使用案例來執行A/B測試。
+description: 透過專屬的使用案例了解如何執行A/B測試。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
+# 分析結果 {#step-8--analyzing-the-result}
 
-# 分析結果{#step-8--analyzing-the-result}
+傳送測試傳送後，您可以檢查哪些收件者已傳送至，以及是否已開啟。
 
-在傳送測試傳送後，您可以檢查哪些收件者已傳送至，以及是否已開啟。
-
-* 若要找出已定位哪些收件者，請透過促銷活動控制面板開啟傳送，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤。
+* 若要找出已鎖定哪些收件者，請透過促銷活動控制面板開啟傳送，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤。
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
-* 若要瞭解傳送是否已開啟，請前往&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤。
+* 若要了解傳送是否已開啟，請前往&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤。
 
    ![](assets/use_case_abtesting_analysis_002.png)
 
-* 請比較其他傳送方式。
+* 與其他傳送進行比較。
 
    ![](assets/use_case_abtesting_analysis_003.png)
 
-在我們的例子中，傳送B的開放率最高。 這表示內容B將用於最終傳送。
+在我們的範例中，傳送B的開放率最高。 這表示內容B將用於最終傳送。
 
 ![](assets/use_case_abtesting_analysis_004.png)
