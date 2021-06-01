@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: b46a483594f210c4530a934194c6d2b73deaeaf9
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -85,7 +85,7 @@ ht-degree: 2%
    * 剛剛收集且尚未處理的事件。 **[!UICONTROL Number of errors]**&#x200B;欄顯示值0。 尚未連結電子郵件範本。
    * 已處理事件，但其確認錯誤。 **[!UICONTROL Number of errors]**&#x200B;欄顯示的值不是0。 若要知道此事件何時會再次處理，請參閱&#x200B;**[!UICONTROL Process requested on]**&#x200B;欄。
 
-* **待定傳送**:已處理事件並連結傳送範本。電子郵件擱置傳送，且會套用傳統傳送程式。 如需詳細資訊，您可以開啟[delivery](../../delivery/using/about-message-tracking.md)。
+* **待定傳送**:已處理事件並連結傳送範本。電子郵件擱置傳送，且會套用傳統傳送程式。 如需詳細資訊，您可以開啟傳送。
 * **傳送**、忽略 **** 和傳 **送錯誤**:這些傳送狀態會透過updateEventsStatusworkflow **** 復原。如需詳細資訊，您可以開啟相關的傳送。
 * **未涵蓋的事件**:事務報文傳送路由階段失敗。例如，Adobe Campaign找不到可作為事件範本的電子郵件。
 * **事件已過期**:已達到傳送嘗試次數上限。該事件被視為null。
