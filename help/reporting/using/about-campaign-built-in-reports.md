@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 關於 Campaign 內建的報表
 description: 關於 Campaign 內建的報表
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
 
 ---
 
-
 # 關於 Campaign 內建的報表{#about-campaign-built-in-reports}
 
-本章提供Adobe Campaign內建報表、其內容及其內容的清單。 以下資訊可讓您避免建立平台中已可使用的報表。
+本章提供Adobe Campaign內建報表的清單、其內容及其內容。 以下資訊可讓您避免建立平台中已有的報表。
 
 >[!NOTE]
 >
->您也可以學習如何將自己的報表新增至&#x200B;**[!UICONTROL Reports]**&#x200B;標籤。 如需詳細資訊，請參閱此[頁面](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options)。
+>您也可以了解如何將自己的報表新增至&#x200B;**[!UICONTROL Reports]**&#x200B;標籤。 如需詳細資訊，請參閱此[page](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options)。
 
-這些報告及其內容在與其相關功能相關的檔案中詳述。
+這些報告及其內容在與其相關功能相關的檔案中詳細說明。
 
 Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路瀏覽器存取。
 
@@ -33,9 +31,9 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 * 傳送報表，請參閱[傳送報表](../../reporting/using/delivery-reports.md)。
 * 累積報表，請參閱[累積報表](../../reporting/using/cumulative-reports.md)。
 
-您可以從用戶端主控台首頁、報表控制面板或傳送清單存取報表。 報表的顯示模式視其內容而定。 首頁上提供主要報表的清單，可讓您快速存取傳送資料。 您可依需求變更此清單。 如需詳細資訊，請參閱[本節](../../reporting/using/about-reports-creation-in-campaign.md)。
+您可以從用戶端主控台首頁、報表控制面板或傳送清單存取報表。 報表的顯示模式取決於其內容。 首頁上提供主要報表的清單，可讓您快速存取傳送資料。 您可以變更此清單以符合您的需求。 如需詳細資訊，請參閱[此區段](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-若要存取促銷活動內建報表：
+若要存取Campaign內建報表：
 
 1. 選取Adobe Campaign介面的&#x200B;**[!UICONTROL Reports]**&#x200B;標籤。
 
@@ -47,16 +45,16 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 
    ![](assets/reporting_edit_a_report.png)
 
-1. 按一下畫面頂端的&#x200B;**[!UICONTROL Back]**&#x200B;連結，將您帶回報表清單。
+1. 按一下畫面頂端的&#x200B;**[!UICONTROL Back]**&#x200B;連結，即可返回報表清單。
 
    ![](assets/reporting_back_button.png)
 
-有關正在編輯的報表的其他可能操作，請參閱[本頁](../../reporting/using/actions-on-reports.md)。
+在[此頁面](../../reporting/using/actions-on-reports.md)中會詳細說明正在編輯之報表的其他可能動作。
 
-特定於促銷活動或傳送的報表可透過其各自的控制面板存取。
+行銷活動或傳送的特定報表可透過其各自的控制面板存取。
 
 ![](assets/reporting_on_a_delivery.png)
 
-清單、服務、優惠等的原則相同。 如下所示：
+清單、服務、優惠方案等原則相同。 如下所示：
 
 ![](assets/reporting_on_an_offer.png)
