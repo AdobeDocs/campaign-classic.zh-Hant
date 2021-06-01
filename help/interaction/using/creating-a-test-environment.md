@@ -1,39 +1,36 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 建立測試環境
 description: 建立測試環境
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 10%
 
 ---
 
-
 # 建立測試環境{#creating-a-test-environment}
 
-若要建立測試環境（沙盒模式），請套用下列步驟：
+若要建立測試環境（沙箱模式），請套用下列步驟：
 
 >[!IMPORTANT]
 >
->僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標映射嚮導。 有關詳細資訊，請參閱[建立選件環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+>僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標對應精靈。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
-1. 啟動Adobe Campaign檔案總管並前往執行個體根目錄。
-1. 使用下拉式選單，以滑鼠右鍵按一下並新增&#x200B;**[!UICONTROL Generic folder]**。
+1. 啟動Adobe Campaign檔案總管，然後前往執行個體根目錄。
+1. 按一下右鍵，然後使用下拉菜單添加&#x200B;**[!UICONTROL Generic folder]**。
 
    ![](assets/offer_env_creation_001.png)
 
-1. 接著，前往您剛建立的資料夾，並使用滑鼠右鍵功能表新增&#x200B;**[!UICONTROL Offer environment]**。
+1. 接下來，轉至您剛建立的資料夾，並使用右鍵菜單添加&#x200B;**[!UICONTROL Offer environment]**。
 
    ![](assets/offer_env_creation_001bis.png)
 
-1. 應用相同的流程建立環境子資料夾和元素。
-1. 測試完成後，您想要在生產環境中使用，請複製您設計環境中的選件和空間。 （按一下右鍵> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]**）。
+1. 應用相同的進程以建立環境子資料夾和元素。
+1. 完成測試且您想要在生產中使用環境後，請複製設計環境中的選件和空間。 （按一下右鍵> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]**）。
 
    ![](assets/migration_interaction_5.png)
-
