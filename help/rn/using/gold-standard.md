@@ -46,10 +46,8 @@ _2020 年 12 月 22 日_
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
-
 >
->
-進一步瞭解 [[!DNL Gold Standard]  第 11 版升級常見問答集](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)。
+>進一步瞭解 [[!DNL Gold Standard]  第 11 版升級常見問答集](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)。
 
 版本編號 9032@d3b452f 包含下列增強功能及修正檔：
 
