@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 ## 建議{#recommendations}
 
-若要確保配置穩定，我們建議您在所有執行相同用戶端配置的伺服器上，安裝相同的穩定版本編號。
+若要確保穩定設定，我們建議您在所有執行相同用戶端設定的伺服器上，安裝相同的穩定版本編號。
 
 此外，客戶端控制台應與伺服器實例位於同一個版本。
 
@@ -61,8 +61,8 @@ ht-degree: 98%
 ## 支援和其他有效連結{#support}
 
 * [說明與支援](../../support.md)
-* [「控制面板」發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
+* [控制面板發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)
 * [最新文件更新](../../rn/using/documentation-updates.md)
-* [已過時及已移除的功能](../../rn/using/deprecated-features.md)
+* [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
 
-若要接收最新 Experience Cloud 解決方案發行版本的通知，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)。
+若要接收最新 Experience Cloud 解決方案發行版本的通知，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)。
