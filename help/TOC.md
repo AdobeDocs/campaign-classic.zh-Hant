@@ -10,12 +10,12 @@ type: Documentation
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2477'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7檔案 {#using}
+# Adobe Campaign Classic v7 文件 {#using}
 
 + [Campaign v7 文件](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
