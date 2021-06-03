@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
 source-wordcount: '4396'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 98%
 
 ## 2021 年 5 月 {#may-2021}
 
-更新並改善「工作流程熱度圖」報表檔案。 [顯示全文](../../workflow/using/heatmap.md)
+更新並改善「工作流程熱度圖」報告文件。 [顯示全文](../../workflow/using/heatmap.md)
 
-「相容性矩陣」中更新了Campaign用戶端主控台需求。 [顯示全文](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+「相容性對照表」中更新了 Campaign 用戶端主控台需求。 [顯示全文](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-改善並釐清步驟的Campaign用戶端主控台安裝。 [顯示全文](../../installation/using/installing-the-client-console.md)
+改善並釐清 Campaign 用戶端主控台安裝的步驟。 [顯示全文](../../installation/using/installing-the-client-console.md)
 
-已建立有關追蹤URL簽章問題的新技術。 [顯示全文](../../technotes/tracked-urls.md)
+已建立有關追蹤 URL 簽名問題的新技術。 [顯示全文](../../technotes/tracked-urls.md)
 
 ## 2021 年 4 月 {#april-2021}
 
 本節將討論如何與 Adobe Experience Platform 來源及目標合作，以便在 Campaign Classic 和 Adobe 即時客戶資料平台 (RTCDP) 之間共用資料。 [顯示全文](../../integrations/using/get-started-sources-destinations.md)
 
-已建立新技術，了解如何在ISP中斷後更新退信資格。 [顯示全文](../../delivery/using/update-bounce-qualification.md)
+已建立新技術以瞭解如何在 ISP 中斷後更新彈回資格。 [顯示全文](../../delivery/using/update-bounce-qualification.md)
 
 ## 2021 年 3 月 {#march-2021}
 
