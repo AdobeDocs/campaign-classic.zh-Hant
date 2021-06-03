@@ -6,9 +6,9 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
-source-wordcount: '4367'
+source-wordcount: '4396'
 ht-degree: 98%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 98%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
+
+## 2021 年 6月 {#june-2021}
+
+**異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型架構](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚了解此程式。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
 ## 2021 年 5 月 {#may-2021}
 
