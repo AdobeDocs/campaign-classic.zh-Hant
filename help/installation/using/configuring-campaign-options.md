@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: b99de2a47bac08578d6e660595eb14c0858bf9fd
 workflow-type: tm+mt
-source-wordcount: '3941'
+source-wordcount: '3961'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,10 @@ ht-degree: 0%
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> 要將測試地址用於收件箱呈現的結構清單。 （元素名稱以逗號分隔）例如：custom_nms_recipient.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> Enhanced MTA將傳送已傳送電子郵件原始副本的密件副本電子郵件地址。<br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> 如果指定特定運算子或運算子群組，以在傳送的屬性中開始傳送，則可讓您允許負責傳送的運算子確認傳送。</p><p> 若要這麼做，請輸入"1"作為值，以啟動選項。 要停用此選項，請輸入"0"。</p><p> 接著，傳送確認程式將依預設運作：在傳送屬性（或管理員）中，只有為傳送指定的運算子或運算子群組才能確認和執行傳送。 請參閱<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">本節</a>。</p> </td> 
