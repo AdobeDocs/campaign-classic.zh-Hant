@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe Campaign需仰賴一組可搭配運作的伺服器端程式。
 
 * 追蹤：恢復和整合追蹤記錄。 它可讓您從重新導向伺服器擷取記錄檔，並建立報表模組所使用的匯總指標。
 * 清理：資料庫清除。 用於清除舊記錄，並避免資料庫呈指數級增長。
-* 帳單：自動傳送平台的活動報表（資料庫大小、行銷動作數量等）。
+* 帳單：為平台自動傳送活動報表（資料庫大小、行銷動作數、作用中設定檔數目等）。
 
 **傳送伺服器** (nlserver mta)
 
