@@ -6,10 +6,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 100%
+source-wordcount: '1629'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +42,13 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>取代的功能</strong></td>
   </tr>
     <tr>
+  <td>Adobe Analytics 資料連接器<br></td>
+   <td><p>自Campaign第21.1發行版本開始，已棄用Adobe Analytics Data Connector。</p>
+   <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/adobe-analytics-connector.md">瞭解更多</a></p>
+  <p><em>目標移除日期：2022 年</em></p>
+  </td>
+ </tr>
+    <tr>
   <td>技術傳遞能力監視報告<br></td>
    <td><p>從 Campaign 21.1 版開始，技術傳遞能力監視報告已棄用。</p>
    <p>如有需要，您可以每天透過電子郵件收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報告的執行個體名稱和電子郵件地址。</p> 
@@ -50,59 +57,12 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </td>
  </tr>
   <tr>
-  <td>CRM 連接器<br></td>
-   <td><p>下列 CRM 連接器自 Campaign 發行版本第 20.3 版起已棄用。</p>
-   <ul>
-   <li>Soap API - 內部部署：2007、2015、2016 年</li>
-   <li>Soap API - 線上：2015、2016 年</li>
-   <li>Web API – Microsoft Dynamics CRM 內部部署：2016、2016 更新 1</li>
-   <li>Web API – Microsoft Dynamics CRM 線上：2016、2016 更新 1</li>
-   <li>Oracle On Demand API</li>
-   </ul>
-  <p><em>目標移除日期：2021 年 5 月</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>舊的 iOS 二進位<br></td>
-  <td><p>自 Campaign 第 20.3 發行版本開始，已棄用舊的 iOS 二進位連接器。<p>
-  <p> 如果您使用此連接器，則需要據此調整實施。<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html">進一步瞭解</a></p>
-  <p><em>目標移除日期：2021 年 5 月</em></p>
-  </td>
- </tr>
-   <tr>
-  <td>Demdex 網域<br></td>
-  <td><p> 自 Campaign 第 20.3 發行版本開始，已棄用使用於匯入和匯出受眾至 Adobe Experience Cloud 的 Demdex 網域。<p>
-  <p>如果您使用 Demdex 網域作為匯入/匯出的外部帳戶，則需要依此調整實施。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">進一步瞭解</a></p> 
-  <p><em>目標移除日期：2021 年 5 月</em></p>
-  </td>
-  <tr>
   <td>OAuth 驗證（OAuth 和 JWT）<br></td>
   <td><p> 自 Campaign 第 20.3發行版本開始，已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至 Adobe I/O。 <p>
   <p>如果您使用觸發器整合，則需要據此調整實施。<a href="../../integrations/using/configuring-adobe-io.md">進一步瞭解</a></p> 
   <p>如需與 OAuth 驗證折舊相關的資訊，請參閱第 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md"> 頁</a></p> 
   <p><em>目標移除日期：2021 年 11 月</em></p>
   </td>
-  </tr>
-  <td>SMS 連接器<br></td>
-  <td><p> 下列 SMS 連接器自 Campaign 20.2 發行版本開始將不再使用。<p>
-   <ul>
-   <li>Generic SMPP（支援二進位模式的 SMPP 第 3.4 版本）</li>
-   <li>Sybase365 (SAP SMS 365)</li>
-   <li>CLX Communications</li>
-   <li>Tele2</li>
-   <li>O2</li>
-   <li>iOS</li>
-   </ul>
-  <p>如果您使用其中一個連接器，則需要據此調整實施。<a href="../../delivery/using/sms-channel.md">瞭解更多</a></p> 
-  <p>閱讀此<a href="../../delivery/using/unsupported-connector-migration.md">技術文件</a>，瞭解如何遷移舊連接器。</p>
-  <p><em>目標移除日期：2021 年 5 月</em></p>
-  </td> 
- </tr>
-  <tr>  
-   <td>傳真頻道<br></td>
-   <td><p>傳真頻道自 Campaign 20.2 發行版本開始不再使用。</p> 
-   <p>如果您使用此頻道，則需要據此調整實施。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">瞭解更多</a> Campaign 頻道。</p>
-   <p><em>目標移除日期：2021 年 5 月</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -112,11 +72,20 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
 本節列出已從 Campaign Classic 移除的功能。
 
 <table> 
- <tbody> 
+ <tbody>
   <tr> 
    <td><strong>區域——功能</strong></td>
    <td><strong>取代的功能</strong></td> 
-  </tr> 
+  </tr>
+  <tr>  
+   <td>傳真頻道<br></td>
+   <td><p>自Campaign 21.1.3版開始，不再提供傳真通道。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">瞭解更多</a></p>
+  <tr>
+  <td>Demdex 網域<br></td>
+  <td><p> 自Campaign 21.1.3發行版本開始，不再提供用於匯入和匯出受眾至Adobe Experience Cloud的Demdex網域。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">瞭解更多</a></p> 
+  </td>
+  </td>
+  </tr>
    <tr> 
    <td>Windows NT 驗證<br></td>
    <td><p>自 Campaign 第 20.3 發行版本開始，在使用 Microsoft SQL Server 配置新的資料庫時，已將 Windows NT 驗證從可用的驗證方法中移除。<a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">進一步瞭解</a></p></td>
@@ -157,7 +126,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <tr> 
    <td>行動裝置頻道 - LINE v1</td>
    <td>自 Campaign 第 18.4 發行版本開始，不再提供 LINE Connect 套件。Adobe 建議使用新的 LINE Channel 套件取而代之。<a href="../../delivery/using/line-channel.md">瞭解更多</a></td>
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -185,8 +154,9 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 >[!NOTE]
 >自 Campaign 20.1 發行版本開始，Campaign Classic 用戶端主控台 32 位元已不再與 Campaign 最新版本相容。您需要使用 64 位元版本的用戶端主控台。
 
-
 ### 作業系統 {#o-s-eol}
+
+自21.1.3版開始，已不再支援Debian 8。
 
 自 19.1 發行版本開始，Adobe Campaign 不再與下列作業系統相容。
 
@@ -208,7 +178,7 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 自 19.1 春季發行版本開始，Adobe Campaign 不再與下列工具相容。
 
 * Java JDK 7。[瞭解更多](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x，但內嵌於其他工具則除外。[瞭解更多](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x，但嵌入到其他工具時除外。 [瞭解更多](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### 資料庫引擎{#dbe-eol}
 
@@ -242,6 +212,11 @@ Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。
 * AsterData 5.0。AsterData 生命週期結束。[瞭解更多](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2、15.4、15.5 和 Sybase ASE 15.0。透過同盟資料存取 (FDA) 支援更新版本的 Sybase。[瞭解更多](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL：Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic 仍將透過同盟資料存取 (FDA) 支援所列的 Hadoop via HiveSQL 版本，但是這些版本與：HortonWorks (HDP 2.4.X、2.5.x、2.6.x) 及 HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6) 合併
+* Soap API - 內部部署：2007、2015、2016 年
+* Soap API - 線上：2015、2016 年
+* Web API – Microsoft Dynamics CRM 內部部署：2016、2016 更新 1
+* Web API – Microsoft Dynamics CRM 線上：2016、2016 更新 1
+* Oracle On Demand API&lt;
 
 **RDBMS 伺服器**
 
@@ -251,3 +226,14 @@ Adobe Campaign 與下列 RDBMS 伺服器不相容：
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+### SMS 連接器 {#sms-eol}
+
+Adobe Campaign與下列SMS連接器不相容：
+
+* Generic SMPP（支援二進位模式的 SMPP 第 3.4 版本）
+* Sybase365 (SAP SMS 365)
+* CLX Communications
+* Tele2
+* O2
+* iOS
