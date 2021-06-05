@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 52%
+source-wordcount: '250'
+ht-degree: 58%
 
 ---
 
@@ -16,17 +16,15 @@ ht-degree: 52%
 
 ## 新增功能
 
+* **[6月發行版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
+
 * **[移除不正確的](delivery/using/update-bounce-qualification.md)**<br/> 硬退信了解如何在Apple中斷後更新不正確的硬退信
 
-* **[更新APN憑](technotes/ios-certificate-update.md)**<br/> 證自2021年3月29日起，APN更新影響了Campaign iOS通道。您必須更新設定，以避免iOS推播通道中斷。
+* **[透過IMS/Adobe ID連線？升級至最新組建](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至在2021年6月30日**&#x200B;之後能夠連線至Campaign **
 
-* **[透過IMS/Adobe ID連線？升級至最新組建](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至2021年6月30日**&#x200B;之後能夠連線至Campaign。**
-
-* **[保護您的促銷活](technotes/acc-config-updates.md)**<br/> 動執行個體更新至最新組建，以保護您的促銷活動平台。
+* **[保護您的促銷活](technotes/acc-config-updates.md)**<br/> 動執行個體更新至最新組建，以保護您的促銷活動平台
 
 * **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 整合舊版oAuth驗證服務已終止。了解如何移轉至Adobe I/O。
-
-* **[移至HTTP/2型APN提供程式APIL](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)**<br/> 了解如何從舊版二進位通訊協定移轉至HTTP/2型APN提供程式API
 
 * **[取得支援](support.md)**<br/>
 存取常見問題集、最佳實務、說明資源，以及請求協助
