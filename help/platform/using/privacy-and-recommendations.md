@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 * **個人資料**&#x200B;是指可直接或間接識別在世個人的資訊。
 * **敏感個人資料**&#x200B;是指與個人的種族、政治觀點、宗教信仰、犯罪背景、遺傳資訊、健康資料、性傾向、生物識別資訊，以及工會會員會籍相關的資訊。
 
-將 Campaign 與其他 Experience Cloud 解決方案整合時，如果閱聽眾可以從一個系統傳輸到另一個系統，例如 [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md)、[Audience Manager 或 People 核心服務](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或是其他解決方案，如 [CRM Connectors](../../platform/using/crm-connectors.md)，您需要額外關注來保護個人資料。
+將 Campaign 與其他 Experience Cloud 解決方案整合時，如果閱聽眾可以從一個系統傳輸到另一個系統，例如 [Adobe Analytics](../../platform/using/adobe-analytics-connector.md)、[Audience Manager 或 People 核心服務](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或是其他解決方案，如 [CRM Connectors](../../platform/using/crm-connectors.md)，您需要額外關注來保護個人資料。
 
 [主要法規](#privacy-regulations)是指管理資料之不同實體，如下所示：
 * **資料控制方**&#x200B;是決定收集、使用及分享個人資料之方式與目的的當局機關。
