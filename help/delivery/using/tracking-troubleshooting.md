@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -139,7 +139,7 @@ $ grep -Rn 50x000000000FD7EC86
 * 語法不正確
 
    ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe-Genesis
+   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
    var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
    if( $(urlstring).match(pattern) && delivery.FCP == false )
    {
@@ -150,7 +150,7 @@ $ grep -Rn 50x000000000FD7EC86
 * 正確語法
 
    ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe-Genesis
+   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
    var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
    if( $(urlstring).match(pattern) && delivery.FCP == false )
    {
@@ -174,7 +174,7 @@ STRING1&cid=STRING2&bid=STRING3
 
    ```
    <%@ include option='NmsTracking_ClickFormula' %>
-   <% // Parameters expected by Adobe-Genesis
+   <% // Parameters expected by Adobe Analytics
    var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
    if( $(urlstring).match(pattern) && delivery.FCP == false )
    {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
@@ -185,7 +185,7 @@ STRING1&cid=STRING2&bid=STRING3
 * 正確語法
 
    ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe-Genesis
+   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
    var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
    if( $(urlstring).match(pattern) && delivery.FCP == false )
    {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
