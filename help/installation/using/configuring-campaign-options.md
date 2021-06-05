@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '3941'
+source-wordcount: '3972'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 0%
 # Campaign Classic 選項清單{#configuring-campaign-options}
 
 **[!UICONTROL Administration / Platform / Options]**&#x200B;節點可讓您設定Adobe Campaign選項。 其中有些是內建的Campaign，有些則可視需要手動新增。 可用選項會依執行個體所安裝的套件而有所不同。
+
 
 >[!CAUTION]
 >
@@ -399,6 +400,14 @@ ht-degree: 0%
   </tr> 
  </thead> 
  <tbody> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictEditingOOTBSchema</span> <br /> </td> 
+   <td> （從21.1.3版開始）如果已選取1（預設值），此選項會停用內建結構的版本。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictEditingOOTBJavascript</span> <br /> </td> 
+   <td> （從21.1.3版開始）如果選取1（預設值），此選項會停用內建javascript程式碼的版本。<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
    <td> (安裝相容性模式：build&gt;6000)激活時（值「1」），此選項允許使用資料庫中儲存的舊密碼來連接到外部帳戶或實例。<br /> </td> 
