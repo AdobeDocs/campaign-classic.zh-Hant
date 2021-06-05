@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '4013'
 ht-degree: 1%
 
 ---
@@ -105,7 +105,7 @@ Adobe Campaign資源有三個識別碼，且可以新增其他識別碼。
 | 識別碼 | 說明 | 最佳實務 |
 |--- |--- |--- |
 | Id | <ul><li>id是Adobe Campaign表的物理主鍵。 對於現成的表，它是從序列中生成的32位數字</li><li>此識別碼通常對特定Adobe Campaign例項不重複。 </li><li>自動產生的ID可顯示在架構定義中。 搜尋&#x200B;*autopk=&quot;true&quot;*&#x200B;屬性。</li></ul> | <ul><li>自動產生的識別碼不應作為工作流程或套件定義中的參考。</li><li>不應假設ID一律會是遞增的數字。</li><li>現成可用表格中的id是32位元數字，此類型不應變更。 此數字取自於區段中以相同名稱涵蓋的「序列」。</li></ul> |
-| 名稱（或內部名稱） | <ul><li>此資訊是表中記錄的唯一標識符。 此值可手動更新，通常具有產生的名稱。</li><li>此識別碼會在部署至不同的Adobe Campaign例項時保留其值，且不應為空。</li></ul> | <ul><li>如果要將物件從環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當對象具有命名空間屬性（例如&#x200B;*schema*）時，此通用命名空間將用於所有建立的自定義對象。 不應使用某些保留的命名空間：*nms*, *xtk*。</li><li>當物件沒有任何命名空間時（例如&#x200B;*workflow*&#x200B;或&#x200B;*delivery*），此命名空間概念將新增為內部名稱物件的前置詞：*namespaceMyObjectName*。</li><li>請勿使用特殊字元，例如空格&quot; &quot;、半欄&quot;:&quot;或連字型大小&quot;-&quot;。 所有這些字元都將替換為底線「_」（允許的字元）。 例如，「abc-def」和「abc:def」會儲存為「abc_def」並互相覆寫。</li></ul> |
+| 名稱（或內部名稱） | <ul><li>此資訊是表中記錄的唯一標識符。 此值可手動更新，通常具有產生的名稱。</li><li>此識別碼會在部署至不同的Adobe Campaign例項時保留其值，且不應為空。</li></ul> | <ul><li>如果要將物件從環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當對象具有命名空間屬性（例如&#x200B;*schema*）時，此通用命名空間將用於所有建立的自定義對象。 不應使用某些保留的命名空間：*nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*。</li><li>當物件沒有任何命名空間時（例如&#x200B;*workflow*&#x200B;或&#x200B;*delivery*），此命名空間概念將新增為內部名稱物件的前置詞：*namespaceMyObjectName*。</li><li>請勿使用特殊字元，例如空格&quot; &quot;、半欄&quot;:&quot;或連字型大小&quot;-&quot;。 所有這些字元都將替換為底線「_」（允許的字元）。 例如，「abc-def」和「abc:def」會儲存為「abc_def」並互相覆寫。</li></ul> |
 | 標籤 | <ul><li>標籤是Adobe Campaign中物件或記錄的業務識別碼。</li><li>此對象允許空格和特殊字元。</li><li>它不能保證記錄的獨特性。</li></ul> | <ul><li>建議您判斷物件標籤的結構。</li><li>這是最方便使用者為Adobe Campaign使用者識別記錄或物件的解決方案。</li></ul> |
 
 ## 自訂內部索引鍵{#custom-internal-keys}
