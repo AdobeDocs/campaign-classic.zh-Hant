@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -189,7 +189,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> Web Analytics連接器<br /> </td> 
-   <td> 可讓Adobe Campaign和Adobe Analytics透過Web Analytics連接器套件互動。 與交易式訊息（訊息中心套件）不相容。 <a href="../../platform/using/adobe-analytics-data-connector.md">更多詳情</a><br /> </td> 
+   <td> 可讓Adobe Campaign和Adobe Analytics透過Web Analytics連接器套件互動。 與交易式訊息（訊息中心套件）不相容。 <a href="../../platform/using/adobe-analytics-connector.md">更多詳情</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 
