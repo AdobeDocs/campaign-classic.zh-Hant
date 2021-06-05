@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 設計、規劃、執行、管理和最佳化可提供高行銷投資報酬率的跨頻道行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2485'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,8 @@ ht-degree: 99%
          + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
          + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
-      + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [說明與支援選項](support.md)
 + 建立及傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
@@ -670,7 +671,9 @@ ht-degree: 99%
          + [最佳實務和限制](installation/using/fda-best-practices.md)
          + 設定指南 {#config-databases}
             + [設定步驟](installation/using/configure-fda.md)
+            + [配置Vertica](installation/using/configure-fda-vertica.md)
             + [設定 Snowflake](installation/using/configure-fda-snowflake.md)
+            + [設定Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [設定 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [設定 Hadoop](installation/using/configure-fda-hadoop.md)
             + [設定 Oracle](installation/using/configure-fda-oracle.md)
