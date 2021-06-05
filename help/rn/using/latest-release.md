@@ -6,10 +6,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 52%
 
 ---
 
@@ -21,7 +21,144 @@ ht-degree: 100%
 >
 >Campaign **一般可用性 (GA) 版本**&#x200B;包括：[[!DNL Gold Standard] 11 版本](../../rn/using/gold-standard.md#gs-11)和[Campaign 20.2.5 版本](../../rn/using/release--20-2.md)。
 
-## ![](assets/do-not-localize/blue_2.png) 發行版本 21.1.2 - 建置 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/blue_2.png) 發行版本 21.1.3 - 建置 9330 {#release-21-1-3-build-9330}
+
+_2021年6月4日_
+
+**新增功能？**
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Orchestration整合</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Orchestration與Adobe Campaign Classic的整合現已正式推出。 它可讓Journey Orchestration使用Adobe Campaign Classic交易訊息功能來傳送電子郵件、推播通知和簡訊。</p>
+<p>Journey Orchestration與Campaign Classic例項之間的連線是在布建時由Adobe設定。</p>
+<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html">Journey Orchestration檔案</a>。 本<a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html">節</a>中提供了逐步使用案例</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>LINE頻道增強</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>LINE頻道已新增下列改良功能：
+</p>
+<ul> 
+<li><p>支援LINE視訊訊息類型</p></li>
+<li><p>支援LINE合作夥伴註冊API</p></li>
+<li><p>支援在出現LINE伺服器端錯誤或網路逾時時發送消息的重試</p></li>
+</ul>
+<p>如需詳細資訊，請參閱<a href="../../delivery/using/line-channel.md">詳細文件</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Vertica FDA連接器</strong><br/> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>您現在可以將Adobe Campaign Classic執行個體連線至Vertica外部資料庫。 此連線透過新的外部帳戶進行管理。</p>
+<p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-vertica.md">詳細文件</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Google Big Query FDA連接器</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>您現在可以將Adobe Campaign Classic執行個體連線至Google Big Query外部資料庫。 此連線透過新的外部帳戶進行管理。
+</p>
+<p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-google-big-query.md">詳細文件</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**安全性增強功能**
+
+* 傳回完整資料庫連線詳細資訊的&#x200B;**xtk:session#GetCnxInfo** API方法現在僅限管理員使用者存取。 (NEO-27779)
+* 在CRM相關的JavaScript檔案中，已棄用的decryptString函式已取代為decryptPassword。
+* 已改善追蹤簽章功能，以在第三方工具（電子郵件用戶端、網際網路瀏覽器、安全連結安全工具）修改追蹤連結時，降低追蹤重新導向錯誤的風險。
+* 修正了當包含大寫字元時，追蹤的URL無法運作的問題。 追蹤的URL簽署機制現在區分大小寫。 (NEO-28414)
+
+**相容性更新**
+
+下列系統現在已支援 Campaign：
+* Google Big Query FDA連接器
+* Vertica FDA連接器
+* PostgreSQL 13
+
+瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
+
+**棄用的功能**
+
+* 自Campaign第21.1發行版本開始，已棄用Adobe Analytics Data Connector。 如果您使用此連接器，則需使用新連接器Adobe Analytics連接器，據以調整實施。
+如需詳細資訊，請參閱[詳細文件](../../platform/using/adobe-analytics-connector.md)。
+* 不再支援Debian 8。
+* 在20.3中淘汰OracleCRM後，相關外部帳戶已從介面中移除。
+
+瞭解更多[與已棄用和已移除的功能頁面相關的資訊](../../rn/using/deprecated-features.md)。
+
+**功能改善**
+
+* 儲存工作流程時已新增額外檢查，以確定活動名稱是唯一的，且轉變後一律會有活動。
+* **帳單（帳單）**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單設定檔數**(billingActiveContactCount)工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報表現在會提供執行個體上作用中設定檔數目的資訊。 [顯示全文](../../workflow/using/about-technical-workflows.md)。
+* 已新增新的&#x200B;**_keyOnMData**&#x200B;屬性，以便能夠對備忘錄資料使用鍵操作。
+
+**其他變更**
+
+* 適用於Windows的openssl協力廠商已更新至1.1.1h版。
+* 在Debian套件說明中，nlserver已變更為Adobe Campaign Classic伺服器。
+
+**修補程式**
+
+* 修正在編輯工作階段逾時，在使用者維持登入的特定時間長度後（即使在設定時間後）登出使用者時的問題。
+* 修正傳遞顯示為唯讀，但仍可在傳遞屬性中編輯的問題。
+* 修正設計Web應用程式時，造成編輯工具列消失的錯誤。
+* 修正新增連結至電子郵件時，顯示包含Adobe Campaign Classic標題之電子郵件文字版本的錯誤。 (NEO-29211
+* 使用FDA over HTTP連線時，**中間來源（傳送記錄檔）**(defaultMidSourcingLog)工作流程卡在&#x200B;**NmsMidSourcing_LogsPeriodHour**&#x200B;選項所設定的時間範圍內。 這會防止記錄以此設定的時間範圍之後發生的資料更新。 (NEO-30833)
+* 修正了執行訊息中心同步工作流程後發生的問題。 每次將傳遞對象資料夾移至自訂資料夾時，工作流程都會將傳遞移回一般&#x200B;**交易式訊息歷史記錄**&#x200B;資料夾。 (NEO-27445)
+* 修正了嘗試顯示&#x200B;**廣播統計資料**、**追蹤指標**&#x200B;和&#x200B;**共用活動統計資料**&#x200B;報告時顯示錯誤訊息的問題。
+* **Oracle隨選**&#x200B;工作流程活動已在OracleCRM連接器淘汰後從介面中移除。
+* 修正了在每日重新啟動工作流程伺服器(wfserver)模組後，停止執行處理工作流程的問題。 (NEO-30047)
+* 修正了無法更新MX管理檔案的問題，這可能對IP信譽造成負面影響。 (NEO-29897)
+* 修正了在收到SOAP呼叫時導致Web程式當機的問題。 (NEO-28796)(NEO-29600)
+* 修正導致SAP HANAFDA索引建立失敗的問題。 (NEO-29664)
+* 修正了執行包含標題的SOAP呼叫時，交易式訊息可能維持在&#x200B;**Waiting**&#x200B;狀態的問題。 (NEO-28737)
+* 修正使用TeradataFDA連接器時發生的問題：所有臨時表都只建立在群集的一個節點上，這最終會佔用整個捲軸空間並導致Teradata崩潰。 現在會在許多節點上產生臨時表格。 (NEO-28230)
+* 修正了使用Web應用程式時，追蹤標籤在&#x200B;**nms:trackingURL**&#x200B;架構中產生錯誤主鍵的問題。 (NEO-27931)
+* 與ODBC 3.x的相容性已增強，以確保錯誤訊息的準確性。
+* 修正當電子郵件傳送中使用自訂內容範本時，可能導致主控台當機的問題。 (NEO-31547)
+* 修正了因連線速度緩慢或回應大而導致Tomcat無法傳送有效回應的問題。
+* 修正從PostgreSQL資料庫讀取UUID時可能發生的問題。
+* 修正搜尋連結至選件的主張資料時，可能導致效能問題的問題。 (NEO-27554)
+* 修正了在啟動IMS服務但未回應時，導致Web程式未回應的問題。
+* 修正由於傳送個人化失敗的特定加入機制，您無法傳送包含一組校樣的傳送的問題。 (NEO-14391)
+* 修正了當查詢和擴充活動以傳送表格為目標時，無法連同警報活動傳送警報的問題。 (NEO-25157)
+
+## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.2 - 建置 9282 {#release-21-1-2-build-9282}
 
 _2021年 4 月 15 日_
 
