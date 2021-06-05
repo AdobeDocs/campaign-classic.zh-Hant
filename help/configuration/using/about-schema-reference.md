@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '381'
 ht-degree: 7%
 
 ---
@@ -74,18 +74,13 @@ ht-degree: 7%
 
 命名空間可讓您依感興趣區域對一組結構進行分組。 例如， **cus**&#x200B;命名空間用於客戶特定配置(**customers**)。
 
+架構的識別索引鍵是使用命名空間建立的字串，以及以冒號分隔的名稱；例如：**cus:recipient**。
+
 >[!IMPORTANT]
 >
->標準而言，命名空間的名稱必須簡明扼要，並且必鬚根據XML命名規則僅包含授權的字元。
+>命名空間的名稱必須簡明，並且必鬚根據XML命名規則僅包含授權的字元。
 >
 >識別碼不得以數字字元開頭。
+>
+>系統會保留下列命名空間，以供Adobe Campaign應用程式作業所需之系統實體的說明使用，且不得使用：**xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**。
 
-某些命名空間會保留給Adobe Campaign應用程式運作所需系統實體的說明：
-
-* **xtk**:關於平台系統資料，
-* **nl**:關於申請的整體使用，
-* **nms**:傳送（收件者、傳送、追蹤等）,
-* **ncm**:內容管理，
-* **臨時**:保留給臨時結構。
-
-架構的識別索引鍵是使用命名空間建立的字串，以及以冒號分隔的名稱；例如：**cus:recipient**。
