@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '722'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 若要這麼做：
 
-1. 使用[控制面板](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)產生公開/私密金鑰組。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)產生公開/私密金鑰組。
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 執行此使用案例的步驟如下：
 
-1. 使用「控制面板」產生金鑰組（公開/私人）。 如需詳細步驟，請參閱[控制面板檔案](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
+1. 使用「控制面板」產生金鑰組（公開/私人）。 如需詳細步驟，請參閱[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
 
    * 公開金鑰將與外部系統共用，外部系統將使用該公開金鑰加密資料，以傳送至Campaign。
    * Campaign Classic將使用私鑰解密傳入的加密資料。
