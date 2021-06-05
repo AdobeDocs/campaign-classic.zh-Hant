@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 
    ![](assets/file_transfert_edit.png)
 
-   檢查&#x200B;**[!UICONTROL Use an external account]**&#x200B;以從樹的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;節點中配置的S3、FTP或SFTP帳戶中選擇帳戶。 然後指定伺服器上包含要下載的檔案的目錄。
+   檢查&#x200B;**[!UICONTROL Use an external account]**&#x200B;以從樹的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;節點中配置的Azure Blob儲存、S3、FTP或SFTP帳戶中選擇帳戶。 然後指定伺服器上包含要下載的檔案的目錄。
 
    ![](assets/file_transfert_edit_external.png)
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Display the session logs]**
 
-   可讓您復原S3、FTP或SFTP傳輸的記錄檔，並將其納入工作流程記錄檔中。
+   可讓您復原Azure Blob儲存、S3、FTP或SFTP傳輸的記錄檔，並將其納入工作流程記錄檔中。
 
 * **[!UICONTROL Disable passive mode]**
 
