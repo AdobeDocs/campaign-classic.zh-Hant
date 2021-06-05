@@ -6,9 +6,9 @@ feature: 概覽
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '194'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign提供數個連接器，可讓您與外部應用程式通訊、連
 
 * FDA連接器（**同盟資料存取**）可讓您將Campaign連線至一或多個外部資料庫，並處理儲存在這些資料庫中的資訊，而不會影響您的Campaign資料。 [瞭解更多](../../installation/using/about-fda.md)。
 * CRM連接器可讓您使用專用的工作流程活動，在Adobe Campaign和您的CRM解決方案之間交換資料。 [瞭解更多](../../platform/using/crm-connectors.md)。
-* Analytics Data Connectors(原為&#x200B;**Adobe Genesis**)可讓您在Adobe Campaign和Adobe Analytics之間共用資料。 [瞭解更多](../../platform/using/adobe-analytics-data-connector.md)。
+* Analytics連接器可讓您在Adobe Campaign和Adobe Analytics之間共用資料。 [瞭解更多](../../platform/using/adobe-analytics-connector.md)。
 
 您也可以將Campaign與多個其他系統整合，例如：
 
