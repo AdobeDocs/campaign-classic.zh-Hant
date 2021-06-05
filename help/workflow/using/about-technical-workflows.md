@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 6%
+source-wordcount: '1700'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,6 @@ ht-degree: 6%
 | **中間來源（傳送計數器）** (defaultMidSourcingDlv) | 轉移至中間來源 | 此工作流程會收集中間來源伺服器上傳送的計數資訊。 計數資訊包括一般傳送指標，例如傳送的傳送數量等。 不包含開啟等追蹤資訊。 預設會每十分鐘觸發一次。 |
 | **中間來源（傳送記錄檔）** (defaultMidSourcingLog) | 轉移至中間來源 | 此工作流程會收集中間來源伺服器上的傳送記錄。 預設會每小時觸發一次。 |
 | **NMAC選擇退出管理** (mobileAppOptOutMgt) | 行動應用程式頻道 | 此工作流程會更新行動裝置上的通知取消訂閱。 從凌晨1點到午夜，每6小時觸發一次。 有關詳細資訊，請參閱[此部分](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)。 |
-| **有效計費配置檔案數** (billingActiveContactCount) | 傳遞 | 此工作流程會計算作用中設定檔的數量。 預設會在每晚凌晨1:00觸發。 「設定檔」是指一筆代表終端客戶或潛在客戶之資訊的記錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。帳單只與「作用中」的設定檔有關。 如果設定檔在過去12個月內已透過任何通道鎖定目標或通訊，則該設定檔會視為「作用中」。 Facebook 和 Twitter 通路不包含在內。您可以從 Administration > Campaign Management > Customer metrics 選單中獲得 Number of active profiles 的概要。 |
 | **選件通知** (offerMgt) | 傳遞 | 此工作流程會將已核准的優惠方案部署至線上環境，以及優惠方案目錄中包含的每個類別。 |
 | **暫停的工作流程清除** (cleanupPausedWorkflows) | 傳遞 | 此工作流程會分析嚴重性設為正常的暫停工作流程，並在暫停太久時觸發警告和通知。 一個月後，暫停的技術工作流程會無條件停止。 預設會每週一早上5點觸發。 如需詳細資訊，請參閱[處理暫停的工作流程](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows)。 |
 | **隱私權要求清除** (cleanupPrivacyRequests) | 隱私權資料保護法規 | 此工作流程會清除90天以前的存取要求檔案。 |
@@ -69,7 +68,7 @@ ht-degree: 6%
 | **主張同步** （主張同步） | 具有執行實例的選件引擎的控制 | 此工作流程會在用於互動的行銷執行個體與執行執行個體之間同步建議。 |
 | **Web事件的恢復** (webAnalyticsGetWebEvents) | 網站分析連接器 | 此工作流程會每小時下載指定網站上網際網路使用者行為的區段，並將其放入Adobe Campaign資料庫並啟動再行銷工作流程。 |
 | **報表匯總** (reportingAggregates) | 傳遞 | 此工作流程會更新報表中使用的匯總。 預設會每天凌晨2:00觸發。 |
-| **傳送指標和促銷活動屬性** (webAnalyticsSendMetrics) | 網站分析連接器 | 此工作流程可讓您透過「Adobe Campaign」® 「Genesis」連接器，將電子郵件促銷活動指標從Adobe傳送至Adobe Experience Cloud套裝。 相關指標如下：已傳送(iSent)、開啟總數(iTotalRecipientOpen)、已點按的收件者總數(iTotalRecipientClick)、錯誤(iError)、選擇退出（選擇退出）(iOptOut)。 |
+| **傳送指標和促銷活動屬性** (webAnalyticsSendMetrics) | 網站分析連接器 | 此工作流程可讓您透過Adobe Campaign® Analytics連接器，將電子郵件促銷活動指標從Adobe傳送至Adobe Experience Cloud套裝。 相關指標如下：已傳送(iSent)、開啟總數(iTotalRecipientOpen)、已點按的收件者總數(iTotalRecipientClick)、錯誤(iError)、選擇退出（選擇退出）(iOptOut)。 |
 | **庫存：訂購與警報** (stockMgt) | 行銷活動（行銷活動） | 此工作流將啟動訂單行上的庫存計算，並管理警告警報閾值。 |
 | **同步Facebook粉絲** (syncFacebookFans) | 社交網路（社交行銷） | 此工作流程會每天早上7:00將Facebook粉絲匯入Adobe Campaign。 |
 | **同步Facebook頁面** (syncFacebook) | 社交網路（社交行銷） | 此工作流程會每天早上7:00將Facebook頁面與Adobe Campaign同步。 |
