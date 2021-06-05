@@ -6,10 +6,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1d25bdaf0d118ec5788d467c48c3c40c5891e46d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,6 @@ ht-degree: 100%
 <td>
 <p>10（64 位元）</p>
 <p>9（64 位元）</p>
-<p>8（64 位元）</p>
 </td>
 </tr>
 <tr>
@@ -138,6 +137,7 @@ ht-degree: 100%
 <tr>
 <td>PostgreSQL</td>
 <td>
+<p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
@@ -189,6 +189,14 @@ ht-degree: 100%
 <table>
 <tbody>
 <tr>
+<td>韋爾蒂卡</td>
+<td> </td>
+</tr>
+<tr>
+<td>Google Big Query</td>
+<td> </td>
+</tr>
+<tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
 </tr>
@@ -209,6 +217,7 @@ ht-degree: 100%
 <tr>
 <td>PostgreSQL</td>
 <td>
+<p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
