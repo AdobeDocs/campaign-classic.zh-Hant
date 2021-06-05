@@ -6,10 +6,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '4396'
-ht-degree: 99%
+source-wordcount: '4421'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,10 @@ ht-degree: 99%
 改善並釐清 Campaign 用戶端主控台安裝的步驟。 [顯示全文](../../installation/using/installing-the-client-console.md)
 
 已建立有關追蹤 URL 簽名問題的新技術。 [顯示全文](../../technotes/tracked-urls.md)
+
+**21.1.3 版本隨附的其他文件更新**
+
+「計費（計費）」技術工作流描述現在包括最初由「活動計費配置檔案數(billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 4 月 {#april-2021}
 
@@ -456,7 +460,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 針對 Campaign Classic 追蹤功能，新增了新的疑難排解頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/classic-tracking-troubleshooting.html)。
 
-新增了 Adobe Analytics Data Connector 最佳實務頁面。[深入了解 Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
+新增了 Adobe Analytics Connector 最佳實務頁面。[深入了解 Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
 
 移動並更新「傳遞最佳實務快速入門手冊」。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
@@ -534,8 +538,8 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 新增了有關 Campaign Classic 可以使用的不同外部帳戶，以及如何設定這些帳戶的相關資訊。
 [顯示全文](../../installation/using/external-accounts.md)
 
-更新「Analytics Data Connector 」章節，以反映介面變更。
-[顯示全文](../../platform/using/adobe-analytics-data-connector.md)
+更新「Analytics Connector 」章節，以反映介面變更。
+[顯示全文](../../platform/using/adobe-analytics-connector.md)
 
 新增了關於帳單報表的資訊。
 [顯示全文](../../production/using/monitoring-processes.md)
