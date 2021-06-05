@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1540'
 ht-degree: 8%
 
 ---
@@ -259,11 +259,11 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 ## 網站分析 {#web-analytics-external-account}
 
-**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帳戶可讓您以區段形式將資料從Adobe Analytics轉送至Adobe Campaign。 相反地，它會將Adobe Campaign傳送之電子郵件促銷活動的指標和屬性傳送至Adobe Analytics - Data connector。
+**[!UICONTROL Web Analytics]**&#x200B;外部帳戶可讓您以區段形式將資料從Adobe Analytics轉送至Adobe Campaign。 相反地，它會將Adobe Campaign傳送之電子郵件促銷活動的指標和屬性傳送至Adobe Analytics連接器。
 
 ![](assets/ext_account_10.png)
 
-對於此外部帳戶，必須擴充追蹤URL的計算公式，且必須核准兩個解決方案之間的連線。 如需關於此項目的詳細資訊，請參閱此[頁面](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign)。
+對於此外部帳戶，必須擴充追蹤URL的計算公式，且必須核准兩個解決方案之間的連線。 如需關於此項目的詳細資訊，請參閱此[頁面](../../platform/using/adobe-analytics-connector.md#external-account-classic)。
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
