@@ -6,10 +6,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 98%
+source-wordcount: '4470'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,18 @@ ht-degree: 98%
 
 **異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型架構](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚了解此程式。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
+**21.1.3 版本隨附的其他文件更新**
+
+與AdobeJourney Orchestration整合 — [深入了解](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html)。 [此頁面](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)中提供逐步使用案例
+
+LINE通道增強功能 — [更多詳情](../../delivery/using/line-channel.md)
+
+全新Vertica FDA連接器 — [深入了解](../../installation/using/configure-fda-vertica.md)
+
+全新Google Big Query FDA連接器 — [深入了解](../../installation/using/configure-fda-google-big-query.md)
+
+「計費（計費）」技術工作流描述現在包括最初由「活動計費配置檔案數(billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
+
 ## 2021 年 5 月 {#may-2021}
 
 更新並改善「工作流程熱度圖」報告文件。 [顯示全文](../../workflow/using/heatmap.md)
@@ -32,10 +44,6 @@ ht-degree: 98%
 改善並釐清 Campaign 用戶端主控台安裝的步驟。 [顯示全文](../../installation/using/installing-the-client-console.md)
 
 已建立有關追蹤 URL 簽名問題的新技術。 [顯示全文](../../technotes/tracked-urls.md)
-
-**21.1.3 版本隨附的其他文件更新**
-
-「計費（計費）」技術工作流描述現在包括最初由「活動計費配置檔案數(billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 4 月 {#april-2021}
 
