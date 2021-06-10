@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '7970'
+source-wordcount: '7969'
 ht-degree: 4%
 
 ---
@@ -335,7 +335,7 @@ Adobe Campaign的整體配置在安裝目錄&#x200B;**conf**&#x200B;目錄的&#x
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> 類型（分項清單）。 可能的值有：「Oracle」、「MSSQL」(Microsoft SQL Server)、「PostgreSQL」(PostgreSQL, Greenplum)、「Teradata」、「DB2」、「MySQL」、「Netezza」、「AsterData」、「SAPHANA」(SAP HANA)、「RedShift」(AmazonShift)、「ODBC」(SYBASE,Sybase IQ)、「RELAY」（HTTP/資料庫）。<br /> </td> 
+   <td> 類型（分項清單）。 可能的值有：「Oracle」、「MSSQL」(Microsoft SQL Server)、「PostgreSQL」(PostgreSQL)、「Teradata」、「DB2」、「MySQL」、「Netezza」、「AsterData」、「SAPHANA」(SAP HANA)、「RedShift」(Amazon Redshift)、「ODBC」(SYBASE,Sybase IQ)、「中繼」（HTTP/&lt;遠程資料庫）。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
