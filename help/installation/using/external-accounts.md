@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1539'
 ht-degree: 8%
 
 ---
@@ -411,7 +411,7 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 若要了解在何處尋找存取金鑰ID和秘密存取金鑰，請參閱Amazon網站服務[檔案](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
-### Azure Blob儲存(#azure-blob-external-account)
+### Azure Blob儲存{#azure-blob-external-account}
 
 **Azure Blob儲存體**&#x200B;外部帳戶可用來使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動將資料匯入或匯出至Adobe Campaign。 如需詳細資訊，請參閱本[區段](../../workflow/using/file-transfer.md)。
 
