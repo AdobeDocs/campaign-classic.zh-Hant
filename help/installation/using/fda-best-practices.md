@@ -6,24 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 6%
+source-wordcount: '409'
+ht-degree: 7%
 
 ---
 
 # 最佳實務和限制
-
-## 建立臨時架構{#create-temporary-schemas}
-
-您可以透過FDA管理對Greenplum外部資料庫的數個存取。 專用選項可讓您在設定外部帳戶時直接建立運作架構。
-
-![](assets/fda_work_table.png)
-
->[!NOTE]
->
->此選項僅適用於PostgreSQL Greenplum。
 
 ## 使用外部資料{#optimizing-email-personalization-with-external-data}最佳化電子郵件個人化
 
