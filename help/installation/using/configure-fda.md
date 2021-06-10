@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '331'
 ht-degree: 5%
 
 ---
@@ -40,6 +40,10 @@ ht-degree: 5%
 您需要執行特定設定，這取決於您要從Adobe Campaign存取的外部資料庫。 這些設定主要涉及安裝驅動程式和聲明屬於Adobe Campaign伺服器上每個RDBMS的環境變數，以及配置外部帳戶。
 
 請依照下列連結了解更多：
+
+* 連線促銷活動和[Vertica](../../installation/using/configure-fda-vertica.md)
+
+* 連線促銷活動和[Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 
 * 連接促銷活動和[Azure synapse](../../installation/using/configure-fda-synapse.md)
 
