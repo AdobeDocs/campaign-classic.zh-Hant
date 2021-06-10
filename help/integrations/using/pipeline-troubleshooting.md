@@ -5,9 +5,9 @@ description: 配置整合
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -82,3 +82,9 @@ ht-degree: 1%
 1. 在pipelined.log中尋找可能導致重試的錯誤。 修正錯誤（如果適用）。
 1. 檢查[!DNL pipelined]狀態頁面中的隊列大小。 如果佇列大小很大，請改善JS的效能。
 1. 由於延遲似乎會隨著數量增加，因此請使用較少的訊息在Analytics上設定觸發器。
+
+**將階段實例從舊式身份驗證升級為AdobeIO身份驗證**
+
+變更預備執行個體上的整合驗證不會影響生產執行個體的設定。 您可以選擇升級您的階段實例，然後更新身份驗證以AdobeIO，並在您的階段實例上測試您的觸發器。
+
+您的生產執行個體將繼續使用舊版驗證，不會受此變更影響。
