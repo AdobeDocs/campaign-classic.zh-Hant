@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -61,16 +61,16 @@ ht-degree: 1%
 | **訪問客戶端資料** | 選擇「開啟（未來）」表或「查看」權限 | 選擇權限 | 選擇或選擇任何表權限 | 選擇權限 | 選擇權限 | 選擇權限 |
 | **存取中繼資料** | 選擇INFORMATION_SCHEMA架構權限 | 選擇權限 | 使用DESCRIBE語句無需任何權限 | 檢視定義權限 | 使用「\d表」命令無需任何權限 | 選擇權限 |
 
-|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | 綠梅 | AsterData |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **連接到遠程資料庫** | CONNECT授權 | CONNECT權限 | 建立與具有ALL PRIVILEGES的遠程主機綁定的用戶 | 無需權限即可使用CONNECT語句 | 無權限 | CONNECT權限 | CONNECT權限 |
-| **建立表格** | CREATETAB權限 | 建立表或表關鍵字 | 建立權限 | RESOURCE authority和CREATE權限 | 表權限 | 建立權限 | 建立權限 |
-| **建立索引** | 索引權限 | 建立索引或索引關鍵字 | 索引權限 | RESOURCE authority和CREATE權限 | 索引權限 | 建立權限 | 建立權限 |
-| **建立函式** | IMPLICIT_SCHEMA權限或CREATEIN權限 | 建立函式或函式關鍵字 | 建立常式權限 | Java函式的RESOURCE權限或DBA權限 | 函式權限 | 使用權限 | 建立函式權限 |
-| **建立程式** | IMPLICIT_SCHEMA權限或CREATEIN權限 | 建立過程或過程關鍵字 | 建立常式權限 | 資源授權 | 過程權限 | 使用權限 | 建立函式權限 |
-| **刪除對象（表、索引、函式、過程）** | DROPIN權限或CONTROL權限或擁有對象 | DROP &lt;對象>或對象相關關鍵字 | 刪除權限 | 擁有對象或DBA權限 | 刪除權限 | 擁有對象 | 擁有對象 |
-| **監控執行** | 解釋權限 | 使用EXPLAIN語句無需任何權限 | 選擇權限 | 只有系統管理員可以執行sp_showplan | 使用EXPLAIN語句無需任何權限 | 使用EXPLAIN語句無需任何權限 | 使用EXPLAIN語句無需任何權限 |
-| **寫入資料** | 插入和更新權限或DATAACCESS權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 |
-| **將資料載入表格** | LOAD授權 | 選擇和插入權限，以分別使用COPY TO和COPY FROM語句 | 檔案權限 | 是表的所有者或ALTER權限。 根據 — gl選項，只有當用戶具有DBA權限時，才可能執行LOAD TABLE | 選擇和插入權限 | 選擇和插入權限 | 選擇和插入權限 |
-| **訪問客戶端資料** | 插入/更新權限或DATAACCESS權限 | 選擇權限 | 選擇權限 | 選擇權限 | 選擇權限 | 選擇權限 | 選擇權限 |
-| **存取中繼資料** | 使用DESCRIBE語句無需授權 | 顯示權限 | 選擇權限 | 無需使用DESCRIBE語句的權限 | 使用「\d表」命令無需任何權限 | 使用「\d表」命令無需任何權限 | 使用SHOW命令無需任何權限 |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **連接到遠程資料庫** | CONNECT授權 | CONNECT權限 | 建立與具有ALL PRIVILEGES的遠程主機綁定的用戶 | 無需權限即可使用CONNECT語句 | 無權限 | CONNECT權限 |
+| **建立表格** | CREATETAB權限 | 建立表或表關鍵字 | 建立權限 | RESOURCE authority和CREATE權限 | 表權限 | 建立權限 |
+| **建立索引** | 索引權限 | 建立索引或索引關鍵字 | 索引權限 | RESOURCE authority和CREATE權限 | 索引權限 | 建立權限 |
+| **建立函式** | IMPLICIT_SCHEMA權限或CREATEIN權限 | 建立函式或函式關鍵字 | 建立常式權限 | Java函式的RESOURCE權限或DBA權限 | 函式權限 | 建立函式權限 |
+| **建立程式** | IMPLICIT_SCHEMA權限或CREATEIN權限 | 建立過程或過程關鍵字 | 建立常式權限 | 資源授權 | 過程權限 | 建立函式權限 |
+| **刪除對象（表、索引、函式、過程）** | DROPIN權限或CONTROL權限或擁有對象 | DROP &lt;對象>或對象相關關鍵字 | 刪除權限 | 擁有對象或DBA權限 | 刪除權限 | 擁有對象 |
+| **監控執行** | 解釋權限 | 使用EXPLAIN語句無需任何權限 | 選擇權限 | 只有系統管理員可以執行sp_showplan | 使用EXPLAIN語句無需任何權限 | 使用EXPLAIN語句無需任何權限 |
+| **寫入資料** | 插入和更新權限或DATAACCESS權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 |
+| **將資料載入表格** | LOAD授權 | 選擇和插入權限，以分別使用COPY TO和COPY FROM語句 | 檔案權限 | 是表的所有者或ALTER權限。 根據 — gl選項，只有當用戶具有DBA權限時，才可能執行LOAD TABLE | 選擇和插入權限 | 選擇和插入權限 |
+| **訪問客戶端資料** | 插入/更新權限或DATAACCESS權限 | 選擇權限 | 選擇權限 | 選擇權限 | 選擇權限 | 選擇權限 |
+| **存取中繼資料** | 使用DESCRIBE語句無需授權 | 顯示權限 | 選擇權限 | 無需使用DESCRIBE語句的權限 | 使用「\d表」命令無需任何權限 | 使用SHOW命令無需任何權限 |
