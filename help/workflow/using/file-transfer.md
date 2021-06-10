@@ -6,17 +6,17 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
 
 # 檔案傳輸{#file-transfer}
 
-**檔案傳輸**活動可讓您接收或發送檔案、測試檔案是否存在，或列出伺服器上的檔案。 使用的通訊協定為Amazon Simple Storage Service(S3)、FTP或SFTP。
-透過S3或SFTP連線，您也可以透過Adobe即時客戶資料平台，將區段資料匯入Adobe Campaign。 有關詳細資訊，請參閱此[文檔](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
+**檔案傳輸**活動可讓您接收或發送檔案、測試檔案是否存在，或列出伺服器上的檔案。 使用的通訊協定為Azure Blob儲存、Amazon簡單儲存服務(S3)、FTP或SFTP。
+有了S3、Azure Blob儲存或SFTP連線，您也可以使用Adobe即時客戶資料平台，將區段資料匯入Adobe Campaign。 有關詳細資訊，請參閱此[文檔](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
 >[!NOTE]
 >
