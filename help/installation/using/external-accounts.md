@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1552'
 ht-degree: 8%
 
 ---
@@ -178,6 +178,9 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 外部帳戶配置設定取決於資料庫引擎。 進一步了解以下章節：
 
+* 配置對[Vertica](../../installation/using/configure-fda-vertica.md)的訪問
+* 配置對[Snowflake](../../installation/using/configure-fda-snowflake.md)的訪問
+* 設定[Google BigQuery](../../installation/using/configure-fda-google-big-query.md)的存取權
 * 配置對[Azure synapse](../../installation/using/configure-fda-synapse.md)的訪問
 * 配置對[Hadoop](../../installation/using/configure-fda-hadoop.md)的訪問
 * 配置對[Oracle](../../installation/using/configure-fda-oracle.md)的訪問
