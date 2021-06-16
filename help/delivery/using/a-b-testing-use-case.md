@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: 關於此使用實例
+title: AB測試使用案例
 description: 透過專屬的使用案例了解如何執行A/B測試。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 8%
+ht-degree: 6%
 
 ---
 
