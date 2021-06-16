@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2512'
 ht-degree: 97%
 
 ---
@@ -161,7 +161,9 @@ ht-degree: 97%
          + [開始使用應用程式設定](delivery/using/get-started-app-config.md)
          + [針對 iOS 的設定步驟](delivery/using/configuring-the-mobile-application.md)
          + [針對 Android 的設定步驟](delivery/using/configuring-the-mobile-application-android.md)
-      + [建立通知](delivery/using/creating-notifications.md)
+      + 自訂推播通知{#create-a-push-msg}
+         + [為iOS建立推送訊息](delivery/using/create-notifications-ios.md)
+         + [為Android建立推送訊息](delivery/using/create-notifications-android.md)
       + [疑難排解](delivery/using/troubleshooting.md)
    + 傳送直接郵件 {#sending-direct-mail}
       + [關於直接郵件頻道](delivery/using/about-direct-mail-channel.md)
@@ -586,7 +588,7 @@ ht-degree: 97%
       + [訊息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
       + [訊息中心服務層級](message-center/using/message-center-service-level.md)
       + [訊息中心處理時間](message-center/using/message-center-processing-time.md)
-   + [使用實例](message-center/using/transactional-email-with-attachments.md)
+   + [使用案例](message-center/using/transactional-email-with-attachments.md)
 + 整合社交媒體 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
    + 設定 {#configuration}
