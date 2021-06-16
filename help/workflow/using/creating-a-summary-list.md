@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -37,7 +37,7 @@ ht-degree: 2%
 1. 從「購買」表中使用匯總計算豐富「聯繫人」資料
 1. 建立摘要清單
 
-## 步驟1:載入檔案並協調匯入的資料{#step-1--loading-the-file-and-reconciling-the-imported-data}
+## 步驟1:載入檔案並調解匯入的資料{#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 要載入的資料為「購買」相關資料，其格式如下：
 
@@ -134,7 +134,7 @@ Phone;500;London 5
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## 步驟3:擴充「連絡人」資料{#step-3--enriching--contact--data-}
+## 步驟3:豐富「聯繫人」資料{#step-3--enriching--contact--data-}
 
 「連絡人」架構實際上連結至「購買」架構。 這表示您可以使用「擴充」選項的其他選項：新增連結至篩選維度的資料。
 
