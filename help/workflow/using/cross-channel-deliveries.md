@@ -6,18 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '284'
+ht-degree: 8%
 
 ---
 
 # 跨頻道傳遞{#cross-channel-deliveries}
 
 跨通道傳送可在促銷活動工作流程活動的&#x200B;**[!UICONTROL Deliveries]**&#x200B;標籤中使用。
-
-它們可讓您建立特定管道的傳送。 您可以使用傳統傳送精靈的相同方式，指定要作為傳送基礎的範本及其內容。
 
 可用的各種管道包括：
 
@@ -26,12 +24,14 @@ ht-degree: 7%
 * [行動裝置](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
 * [Facebook](../../social/using/publishing-on-facebook.md)
-* [iOS](../../delivery/using/creating-notifications.md#sending-notifications-on-ios)
-* [Android](../../delivery/using/creating-notifications.md#sending-notifications-on-android)
+* [iOS](../../delivery/using/create-notifications-ios.md)
+* [Android](../../delivery/using/create-notifications-android.md)
+
+選取您要作為傳送基礎的範本，並定義其內容。
 
 您可以使用不同的定位活動，為工作流程上游的傳送指定目標。
 
-例如，我們將在此建立工作流程，以在一週後傳送電子郵件或簡訊給推播通知訂閱者，然後傳送推播通知。 操作步驟：
+在以下範例中，我們將建立工作流程，在一週後傳送電子郵件或簡訊給推播通知訂閱者，然後傳送推播通知。 操作步驟：
 
 1. 建立促銷活動.
 1. 在促銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;標籤中，將&#x200B;**[!UICONTROL Query]**&#x200B;新增至工作流程。
@@ -39,7 +39,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >對於推播通知，請記得使用&#x200B;**訂閱者應用程式**&#x200B;目標維度。
+   >對於推播通知，請使用&#x200B;**訂閱者應用程式**&#x200B;目標維度。
 
    ![](assets/cross_channel_delivery_1.png)
 
