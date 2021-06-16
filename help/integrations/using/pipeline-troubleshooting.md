@@ -5,9 +5,9 @@ description: 配置整合
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
+source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 1. 檢查authPrivateKey是否已設定。
 1. 檢查authPrivateKey:開頭為@，結尾為=，長度約為4000個字元。
-1. 尋找原始金鑰，並確認其為：以RSA格式，長4096位，以 — 開始RSA私鑰 — 開頭。
+1. 尋找原始金鑰，並確認其為：以RSA格式，長4096位，以`-----BEGIN RSA PRIVATE KEY-----`開頭。
    <br> 如有必要，請重新建立金鑰並在Adobe Analytics上註冊。
 1. 檢查密鑰是否在與[!DNL pipelined]相同的實例內編碼。 <br>如有必要，請使用範例JavaScript或工作流程重做編碼。
 
@@ -51,6 +51,21 @@ ht-degree: 1%
 1. 在本頁上運行密鑰加密步驟。
 1. 檢查同一執行個體上是否加密金鑰。
 1. 檢查設定檔案中的authPrivateKey是否符合產生的金鑰。 <br>請務必使用OpenSSL產生金鑰組。例如，PuttyGen不會產生正確的格式。
+
+**管道失敗，顯示「不再允許取得存取權杖」**
+
+記錄應如下：
+
+```
+2021-05-31T08:42:18.124Z        66462   66501   1       error   log     Listener: JWT Token is empty. (iRc=16384)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     Unknown authentication mode: 'Bearer realm="Adobe Analytics"'. (iRc=-55)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     BAS-010007 Function not implemented (iRc=-55)
+2021-05-31T08:42:48.582Z        66462   66501   1       warning log     Connection seems to have been lost. Attempting to reconnect.
+2021-05-31T08:43:09.156Z        66462   66501   1       error   log     INT-150012 The HTTP query returned a 'Forbidden' type error (403) (iRc=-53)
+2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
+```
+
+此錯誤訊息表示驗證是使用舊版Omniture基本OAuth來設定。 請參閱[為Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md)配置Adobe I/O檔案，以升級您的驗證。
 
 **未擷取觸發器**
 
