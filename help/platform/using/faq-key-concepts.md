@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 99%
@@ -90,7 +90,7 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 ## 如何傳送推播通知？{#how-to-send-push-notifications-}
 
-瞭解如何使用 Adobe Campaign 透過應用程式[將個人化推播通知傳送](../../delivery/using/creating-notifications.md)至 iOS 和 Android 裝置。
+瞭解如何使用 Adobe Campaign 透過應用程式[將個人化推播通知傳送](../../delivery/using/create-notifications-ios.md)至 iOS 和 Android 裝置。
 
 ## 如何設計及分享線上意見調查？{#how-to-design-and-share-an-online-survey-}
 
