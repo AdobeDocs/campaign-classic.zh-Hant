@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 2%
+source-wordcount: '963'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->若要了解如何為iOS設定您的應用程式，以及如何為iOS建立傳送，請參閱此[區段](../../delivery/using/configuring-the-mobile-application.md)。
+>若要了解如何為iOS設定您的應用程式，以及如何為iOS建立傳送，請參閱此[區段](configuring-the-mobile-application.md)。
 
 關鍵步驟為：
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 1. [在Campaign中建立行動應用程式](#creating-android-app)
 1. [使用其他資料擴充應用程式結構](#extend-subscription-schema)
 
-然後，您將能夠[建立Android豐富通知](#creating-android-delivery)。
+然後，您將能夠[建立Android豐富通知](create-notifications-android.md)。
 
 ## 配置Android外部帳戶{#configuring-external-account-android}
 
@@ -71,7 +71,7 @@ Android提供兩個連接器：
 
    >[!NOTE]
    >
-   >預設的&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目標映射連結到收件者表。 如果要使用不同的目標映射，需要建立新的目標映射，並在服務的&#x200B;**[!UICONTROL Target mapping]**&#x200B;欄位中輸入。 有關建立目標映射的詳細資訊，請參閱[配置指南](../../configuration/using/about-custom-recipient-table.md)。
+   >預設的&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目標映射連結到收件者表。 如果要使用不同的目標映射，需要建立新的目標映射，並在服務的&#x200B;**[!UICONTROL Target mapping]**&#x200B;欄位中輸入。 有關建立目標映射的詳細資訊，請參閱[此部分](../../configuration/using/about-custom-recipient-table.md)。
 
    ![](assets/nmac_ios.png)
 
@@ -79,7 +79,7 @@ Android提供兩個連接器：
 
    ![](assets/nmac_service_2.png)
 
-1. 建立Android應用程式。 如需詳細資訊，請參閱本[區段](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app)。
+1. 建立Android應用程式。 如需詳細資訊，請參閱[本章節](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app)。
 
 ## 建立Android行動應用程式{#creating-android-app}
 
@@ -93,7 +93,7 @@ Android提供兩個連接器：
 
    ![](assets/nmac_android.png)
 
-1. 請確定在Adobe Campaign和透過SDK的應用程式程式碼中定義相同的&#x200B;**[!UICONTROL Integration key]**。 有關詳細資訊，請參閱：[將Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
+1. 請確定在Adobe Campaign和透過SDK的應用程式程式碼中定義相同的&#x200B;**[!UICONTROL Integration key]**。 如需詳細資訊，請參閱[本章節](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
 
    >[!NOTE]
    >
@@ -111,8 +111,8 @@ Android提供兩個連接器：
 
 建立服務和新的行動應用程式後，您需要根據所選的API版本來設定行動應用程式。
 
-* **HTTP v1** 設定在本小節中 [詳細說明](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
-* **HTTP（舊版）** 設定在本節中有 [詳細說明](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)。
+* **HTTP v1** 設定在本節中 [有詳細說明](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
+* **HTTP（舊版）** 設定在本節中 [有詳細說明](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)。
 
 #### 配置HTTP v1 API{#android-service-httpv1}
 
@@ -120,7 +120,7 @@ Android提供兩個連接器：
 
 1. 在&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL API version]**&#x200B;下拉式清單中的&#x200B;**[!UICONTROL HTTPV1]** 。
 
-1. 按一下&#x200B;**[!UICONTROL Load project json file to extract projet details...]**&#x200B;以直接載入您的JSON索引鍵檔案。 如需如何擷取JSON檔案的詳細資訊，請參閱此[page](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
+1. 按一下&#x200B;**[!UICONTROL Load project json file to extract projet details...]**&#x200B;以直接載入您的JSON索引鍵檔案。 如需如何擷取JSON檔案的詳細資訊，請參閱[本頁](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
    您也可以手動輸入下列詳細資訊：
    * **[!UICONTROL Project Id]**
@@ -188,111 +188,4 @@ Android提供兩個連接器：
 
    >[!CAUTION]
    >
-   >確認&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的設定名稱與行動應用程式程式碼中的名稱相同。 請參閱[將Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)區段。
-
-## 建立Android豐富通知{#creating-android-delivery}
-
-使用Firebase雲端訊息，您可以在兩種訊息類型之間進行選擇：
-
-* **[!UICONTROL Data message]**，由用戶端應用程式處理。
-   <br>訊息會直接傳送至行動應用程式，行動應用程式會產生並顯示Android通知給裝置。資料訊息僅包含您的自訂應用程式變數。
-
-* **[!UICONTROL Notification message]**，由FCM SDK自動處理。
-   <br> FCM會代表用戶端應用程式在您的使用者裝置上自動顯示訊息。通知訊息包含一組預先定義的參數和選項，但仍可透過自訂應用程式變數進一步個人化。
-
-如需Firebase雲端訊息類型的詳細資訊，請參閱[FCM檔案](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages)。
-
-### 建立資料消息{#creating-data-message}
-
-1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
-
-1. 按一下 **[!UICONTROL New]**。
-
-   ![](assets/nmac_android_3.png)
-
-1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Deliver on Android (android)]**。 將&#x200B;**[!UICONTROL Label]**&#x200B;新增至您的傳送。
-
-1. 按一下&#x200B;**[!UICONTROL To]**&#x200B;以定義要定位的母體。 預設會套用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目標對應。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選擇您的服務。
-
-   ![](assets/nmac_android_7.png)
-
-1. 在&#x200B;**[!UICONTROL Target type]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
-
-1. 在&#x200B;**[!UICONTROL Service]**&#x200B;下拉式清單中，依序選取您先前建立的服務和應用程式，然後按一下&#x200B;**[!UICONTROL Finish]**。
-系統會根據設定步驟期間新增的內容自動新增**[!UICONTROL Application variables]**。
-
-   ![](assets/nmac_android_6.png)
-
-1. 選擇&#x200B;**[!UICONTROL data message]**&#x200B;作為&#x200B;**[!UICONTROL Message Type]**。
-
-1. 編輯豐富通知。
-
-   ![](assets/nmac_android_5.png)
-
-1. 如有需要，您可以在先前設定的&#x200B;**[!UICONTROL Application variables]**&#x200B;中新增資訊。 **[!UICONTROL Application variables]** 需要在Android服務中設定，且是傳送至行動裝置之訊息裝載的一部分。
-
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並傳送您的傳遞。
-
-在訂閱者的行動Android裝置上收到影像和網頁時，應顯示在推播通知中。
-
-![](assets/nmac_android_4.png)
-
-### 建立通知消息{#creating-notification-message}
-
->[!NOTE]
->
->通知訊息的其他選項僅可搭配HTTP v1 API設定使用。 如需詳細資訊，請參閱本[區段](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
-
-![](assets/do-not-localize/how-to-video.png) [了解如何在影片中建立Android推播通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
-
-1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
-
-1. 按一下 **[!UICONTROL New]**。
-
-   ![](assets/nmac_android_3.png)
-
-1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Deliver on Android (android)]**。 將&#x200B;**[!UICONTROL Label]**&#x200B;新增至您的傳送。
-
-1. 按一下&#x200B;**[!UICONTROL To]**&#x200B;以定義要定位的母體。 預設會套用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目標對應。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選擇您的服務。
-
-   ![](assets/nmac_android_7.png)
-
-1. 在&#x200B;**[!UICONTROL Target type]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
-
-1. 在&#x200B;**[!UICONTROL Service]**&#x200B;下拉式清單中，依序選取您先前建立的服務和應用程式，然後按一下&#x200B;**[!UICONTROL Finish]**。
-
-   ![](assets/nmac_android_6.png)
-
-1. 選擇&#x200B;**[!UICONTROL notification message]**&#x200B;作為&#x200B;**[!UICONTROL Message Type]**。
-
-1. 新增標題並編輯訊息。 使用&#x200B;**[!UICONTROL Notification options]**&#x200B;個人化您的推播通知：
-
-   * **[!UICONTROL Channel ID]**:設定通知的通道ID。收到具有此通道ID的任何通知之前，應用程式必須先使用此通道ID建立通道。
-   * **[!UICONTROL Sound]**:設定在裝置收到通知時播放音效。
-   * **[!UICONTROL Color]**:設定通知的圖示顏色。
-   * **[!UICONTROL Icon]**:設定通知的圖示，以在您的設定檔裝置上顯示。
-   * **[!UICONTROL Tag]**:設定用來取代通知抽屜中現有通知的識別碼。
-   * **[!UICONTROL Click action]**:設定與使用者點按您的通知相關聯的動作。
-
-   有關&#x200B;**[!UICONTROL Notification options]**&#x200B;以及如何填寫這些欄位的詳細資訊，請參閱[FCM檔案](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification)。
-
-   ![](assets/nmac_android_8.png)
-
-1. 如果您的應用程式已使用HTTP v1 API通訊協定進行設定，您可以使用下列&#x200B;**[!UICONTROL HTTPV1 additional options]**&#x200B;進一步個人化您的推播通知：
-
-   * **[!UICONTROL Ticker]**:設定通知的代號文字。僅適用於設為Android 5.0 Lollipop的裝置。
-   * **[!UICONTROL Image]**:設定要在通知中顯示的影像URL。
-   * **[!UICONTROL Notification Count]**:設定要直接顯示在應用程式圖示上的新未讀資訊數。
-   * **[!UICONTROL Sticky]**:設為true或false。若設為false，則當使用者按一下通知時，系統會自動將其關閉。 若設為true，即使使用者點按通知，仍會顯示通知。
-   * **[!UICONTROL Notification Priority]**:將通知的優先順序設定為預設、最小、低或高。如需詳細資訊，請參閱[FCM檔案](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority)。
-   * **[!UICONTROL Visibility]**:將通知的可見度層級設為公開、私人或機密。如需詳細資訊，請參閱[FCM檔案](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility)。
-
-   有關&#x200B;**[!UICONTROL HTTP v1 additional options]**&#x200B;以及如何填寫這些欄位的詳細資訊，請參閱[FCM檔案](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification)。
-
-   ![](assets/nmac_android_9.png)
-
-1. 如有需要，您可以在先前設定的&#x200B;**[!UICONTROL Application variables]**&#x200B;中新增資訊。 **[!UICONTROL Application variables]** 需要在Android服務中設定，且是傳送至行動裝置之訊息裝載的一部分。
-
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並傳送您的傳遞。
-
-在訂閱者的行動Android裝置上收到影像和網頁時，應顯示在推播通知中。
+   >確認&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的設定名稱與行動應用程式程式碼中的名稱相同。 請參閱[本節](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
