@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 4%
+source-wordcount: '656'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,16 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->若要了解如何為Android設定您的應用程式，以及如何為Android建立傳送，請參閱此[區段](../../delivery/using/configuring-the-mobile-application-android.md)。
+>若要了解如何為Android設定您的應用程式，以及如何為Android建立傳送，請參閱此[區段](configuring-the-mobile-application-android.md)。
+
+關鍵步驟為：
+
+1. [設定iOS外部帳戶](#configuring-external-account-ios)
+1. [設定iOS服務](#configuring-ios-service)
+1. [將iOS行動應用程式整合至Campaign](#creating-ios-app)
+
+然後，您就能為iOS裝置](create-notifications-ios.md)建立推播通知。[
+
 
 ## 配置iOS外部帳戶{#configuring-external-account-ios}
 
@@ -66,7 +75,7 @@ ht-degree: 4%
 
 ## 建立iOS行動應用程式{#creating-ios-app}
 
-建立服務後，您現在需要建立iOS應用程式：
+建立服務後，在Campaign中建立iOS應用程式。 請遵循以下步驟：
 
 1. 在新建立的服務中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以選擇應用程式類型。
 
@@ -118,40 +127,3 @@ ht-degree: 4%
 1. 按一下 **[!UICONTROL Finish]**。
 
 您的iOS應用程式現在已可用於Campaign Classic。
-
-## 建立iOS豐富通知{#creating-ios-delivery}
-
-若使用iOS 10或更新版本，便可產生豐富通知。 Adobe Campaign可使用變數傳送通知，讓裝置顯示豐富通知。
-
-您現在需要建立新的傳送，並將其連結至您建立的行動應用程式。
-
-1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
-
-1. 按一下 **[!UICONTROL New]**。
-
-   ![](assets/nmac_android_3.png)
-
-1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Deliver on iOS (ios)]**。 將&#x200B;**[!UICONTROL Label]**&#x200B;新增至您的傳送。
-
-1. 按一下&#x200B;**[!UICONTROL To]**&#x200B;以定義要定位的母體。 預設會套用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目標對應。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選取先前建立的服務。
-
-   ![](assets/nmac_ios_9.png)
-
-1. 在&#x200B;**[!UICONTROL Target type]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
-
-1. 在&#x200B;**[!UICONTROL Service]**&#x200B;下拉式清單中，選取您先前建立的服務，然後選取您要定位的應用程式，然後按一下&#x200B;**[!UICONTROL Finish]**。
-系統會根據設定步驟期間新增的內容自動新增**[!UICONTROL Application variables]**。
-
-   ![](assets/nmac_ios_6.png)
-
-1. 編輯豐富通知。
-
-   ![](assets/nmac_ios_7.png)
-
-1. 勾選編輯通知視窗中的&#x200B;**[!UICONTROL Mutable content]**&#x200B;方塊，允許行動應用程式下載媒體內容。
-
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並傳送您的傳遞。
-
-在訂閱者的行動iOS裝置上收到影像和網頁時，應顯示在推播通知中。
-
-![](assets/nmac_ios_8.png)
