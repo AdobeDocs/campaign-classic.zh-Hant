@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 11%
+source-wordcount: '290'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 11%
 
 * 為Neotrips行動應用程式建立&#x200B;**[!UICONTROL Mobile application]**&#x200B;類型資訊服務。 有關iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service)，請參閱[此部分。 和[適用於Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)的此區段。
 * 將應用程式的iOS和Android版本新增至此服務。
-* 建立iOS和Android的傳送。 [請參見此頁面](../../delivery/using/creating-notifications.md)。
+* 為[iOS](create-notifications-ios.md)和[Android](create-notifications-android.md)建立傳送。
 
 ![](assets/nmac_service_diagram.png)
 
