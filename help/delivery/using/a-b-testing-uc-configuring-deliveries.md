@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: 設定傳遞
-description: 透過專屬的使用案例了解如何執行A/B測試。
+title: 設定傳送
+description: 透過專屬的使用案例了解如何執行A/B測試
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 1%
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
 # 在工作流程{#step-4--configuring-the-deliveries-in-the-workflow}中設定傳送
 
-下一步是設定傳送。 它們的目的地是在前一個階段建立的三個人口：[步驟2:設定母體範例](#step-2--configuring-population-samples)。 前兩個傳送可讓您傳送不同內容給母體A和B。第三個傳送的目的地為既未收到A又未收到B的母體。其內容將由指令碼計算，且會與A或B相同，視哪個母體的開放率最高而定。 我們需要設定第三個傳送的等待期，以了解傳送A和B的結果。這就是為什麼第三個傳送包含&#x200B;**[!UICONTROL Wait]**&#x200B;活動。
+一旦建立[母體](a-b-testing-uc-population-samples.md)後，您就可以設定傳送。 在此使用案例中，前兩個傳送可讓您將不同的內容傳送至母體A和B。第三個傳送是後退傳送：它會傳送給不屬於A或B的收件者。其內容將由指令碼計算，且會與A或B相同，視哪個開啟率最高者而定。 我們需要設定第三個傳送的等待期，以了解傳送A和B的結果。這就是為什麼第三個傳送包含&#x200B;**[!UICONTROL Wait]**&#x200B;活動。
 
 1. 前往&#x200B;**[!UICONTROL Split]**&#x200B;活動，並將目的地為母體A的轉變連結至工作流程中已經傳送的其中一個電子郵件。
 
@@ -50,4 +50,4 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-您現在可以建立指令碼(請參閱[步驟5:建立指令碼](../../delivery/using/a-b-testing-uc-script.md))。
+您現在可以建立指令碼。 [瞭解更多](a-b-testing-uc-script.md)。
