@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '330'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 指令碼{#example-of-a-script}的示例
 
-下列指令碼可如同在目標工作流程中使用。 如需詳細資訊，請參閱[實作](#implementation)。
+下列指令碼可如同在目標工作流程中使用。 如需詳細資訊，請參閱[本章節](#implementation)。
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,7 +65,7 @@ ht-degree: 1%
    vars.deliveryId = delivery.id
 ```
 
-有關指令碼的詳細說明，請參閱[指令碼的詳細資訊](#details-of-the-script)。
+有關指令碼的詳細說明，請參閱[此部分](#details-of-the-script)。
 
 ## 實作 {#implementation}
 
@@ -168,4 +168,4 @@ ht-degree: 1%
 * 最低取消訂閱率：`[indicators/@optOutRatio]`,
 * 交易金額：`[indicators/@amount]`。
 
-您現在可以定義最終傳送(請參閱[步驟6:定義最終傳送](../../delivery/using/a-b-testing-uc-final-delivery.md))。
+您現在可以定義最終傳送。 [瞭解更多](a-b-testing-uc-final-delivery.md)。
