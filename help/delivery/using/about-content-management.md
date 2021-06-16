@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 關於內容管理{#about-content-management}
 
-Adobe Campaign Content Manager模組是特定的Campaign Classic[標準套件](../../installation/using/installing-campaign-standard-packages.md)，您可以安裝它來建立經常性電子報或網站。 它可協助您建立、驗證及發佈訊息。
+Adobe Campaign Content Manager模組是特定的Campaign Classic[內建套件](../../installation/using/installing-campaign-standard-packages.md)，您可以安裝該模組以建立經常性電子報或網站。 它可協助您建立、驗證及發佈訊息。
 
 >[!NOTE]
 >
