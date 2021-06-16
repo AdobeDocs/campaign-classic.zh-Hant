@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
-# 設定人口樣本 {#step-2--configuring-population-samples}
+# 設定母體樣本 {#step-2--configuring-population-samples}
 
 ## 配置查詢活動{#configuring-the-query-activity}
 
@@ -79,4 +79,4 @@ ht-degree: 6%
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您現在可以建立兩個傳送範本(請參閱[步驟3:建立兩個傳送範本](../../delivery/using/a-b-testing-uc-delivery-templates.md))。
+您現在可以建立兩個傳送範本。 [瞭解更多](a-b-testing-uc-delivery-templates.md)).
