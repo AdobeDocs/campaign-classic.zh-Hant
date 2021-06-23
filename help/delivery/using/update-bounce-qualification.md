@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -45,18 +45,18 @@ ht-degree: 3%
 * 對於隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中，含有SMTP退信回應資訊的Campaign執行個體：
 
    * **錯誤文字（隔離文字）** 包含「使用者查詢成功，但找不到使用者記錄」，而「錯誤 **文字（隔離文字）」** 包含「support.apple.com」
-   * **更新狀態(@lastModified)** (在4/26/2021 07:00:00 AM上或之後)
-   * **更新狀態(@lastModified)** (在4/26/2021 01:00:00 PM之前)
+   * **4/26/2021 07 00 AM或之後** 更新狀態(@lastModified):00:
+   * **更新狀態(@lastModified)** (在4/26/2021 01 00 PM之前:00:)
 
 * 若是隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有入站電子郵件規則資訊的促銷活動例項：
 
    * **錯誤文字（隔離文字）** 包含「Momen_Code10_InvalidRecipient」
    * **電子郵件網域(@domain)** 等於icloud.com或電子 **郵件網域(@domain)** 等於me.com或電子郵 **件網域(@domain)** 等於mac.com
-   * **更新狀態(@lastModified)** (在4/26/2021 07:00:00 AM上或之後)
-   * **更新狀態(@lastModified)** (在4/26/2021 01:00:00 PM之前)
+   * **4/26/2021 07 00 AM或之後** 更新狀態(@lastModified):00:
+   * **更新狀態(@lastModified)** (在4/26/2021 01 00 PM之前:00:)
 
 在您獲得受影響的收件者清單後，您可以將其設定為&#x200B;**[!UICONTROL Valid]**&#x200B;狀態，以便讓其透過&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程從隔離清單中移除，或直接從表格中刪除。
 
 **相關主題：**
-* [了解傳送失敗](../../delivery/using/understanding-delivery-failures.md)
-* [退回郵件資格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)
+* [了解傳送失敗](understanding-delivery-failures.md)
+* [退回郵件資格](understanding-delivery-failures.md#bounce-mail-qualification)
