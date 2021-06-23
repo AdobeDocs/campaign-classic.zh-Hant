@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 1. [設定內容類型](#defining-the-content)
 1. [監控傳送（追蹤、隔離、報表等）](#accessing-reports)
 
-## 設定LINE通道{#setting-up-line-channel}
+## 設定LINE通道 {#setting-up-line-channel}
 
 建立[!DNL LINE]帳戶和外部帳戶之前，您必須先在執行個體上安裝LINE套件。 有關詳細資訊，請參閱《安裝指南》中的[LINE](../../installation/using/installing-campaign-standard-packages.md#line-package)部分。
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 若要建立和設定[!DNL LINE]帳戶，請參閱[LINE開發人員檔案](https://developers.line.me/)。
 
-### 建立和配置LINE服務{#configure-line-service}
+### 建立和配置LINE服務 {#configure-line-service}
 
 要建立[!DNL LINE]服務，請執行以下操作：
 
@@ -58,9 +58,9 @@ ht-degree: 2%
 
 1. 按一下 **[!UICONTROL Save]**。
 
-如需訂閱與服務的詳細資訊，請參閱[管理訂閱](../../delivery/using/managing-subscriptions.md)。
+如需訂閱與服務的詳細資訊，請參閱[管理訂閱](managing-subscriptions.md)。
 
-### 配置LINE外部帳戶{#configure-line-external}
+### 配置LINE外部帳戶 {#configure-line-external}
 
 建立[!DNL LINE]服務後，您需要在Adobe Campaign上設定[!DNL LINE]外部帳戶：
 
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 [!DNL LINE]現在已在Adobe Campaign中設定，您可以開始建立並傳送LINE傳送給訂閱者。
 
-## 建立LINE傳送{#creating-the-delivery}
+## 建立LINE傳送 {#creating-the-delivery}
 
 >[!NOTE]
 >
@@ -103,13 +103,13 @@ ht-degree: 2%
 
    ![](assets/line_message_01.png)
 
-1. 使用&#x200B;**[!UICONTROL Label]**、**[!UICONTROL Delivery code]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;識別您的傳送。 如需詳細資訊，請參閱[本章節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用&#x200B;**[!UICONTROL Label]**、**[!UICONTROL Delivery code]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;識別您的傳送。 如需詳細資訊，請參閱[本章節](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 
 1. 按一下&#x200B;**[!UICONTROL Continue]**&#x200B;以建立傳遞。
 
 1. 在傳遞編輯器中，選取&#x200B;**[!UICONTROL To]**&#x200B;以定位[!DNL LINE]傳遞的收件者。 在&#x200B;**[!UICONTROL Visitor subscriptions (nms:visitorSub)]**&#x200B;上執行定位。
 
-   如需詳細資訊，請參閱[識別目標母體](../../delivery/using/steps-defining-the-target-population.md)。
+   如需詳細資訊，請參閱[識別目標母體](steps-defining-the-target-population.md)。
 
    ![](assets/line_message_08.png)
 
@@ -131,13 +131,13 @@ ht-degree: 2%
 
 1. 當您的傳送建立並正確設定時，您可以將其傳送至先前定義的目標。
 
-   如需傳送傳遞的詳細資訊，請參閱[傳送訊息](../../delivery/using/sending-messages.md)。
+   如需傳送傳遞的詳細資訊，請參閱[傳送訊息](sending-messages.md)。
 
 1. 傳送訊息後，請存取您的報表以評估傳送的成效。
 
    有關[!DNL LINE]報告的詳細資訊，請參閱[存取報告](#accessing-reports)。
 
-## 定義內容類型{#defining-the-content}
+## 定義內容類型 {#defining-the-content}
 
 若要定義[!DNL LINE]傳送的內容，您必須先將訊息類型新增至傳送。 每個[!DNL LINE]傳送最多可包含5則訊息。
 
@@ -147,7 +147,7 @@ ht-degree: 2%
 * [影像和連結](#configuring-an-image-and-link-delivery)
 * [視訊訊息](#configuring-a-video-message-delivery)
 
-### 配置文本消息傳送{#configuring-a-text-message-delivery}
+### 設定文字訊息傳送 {#configuring-a-text-message-delivery}
 
 >[!NOTE]
 >
@@ -157,9 +157,9 @@ ht-degree: 2%
 
 ![](assets/line_message_02.png)
 
-此類型訊息的設定類似於電子郵件中&#x200B;**[!UICONTROL Text]**&#x200B;的設定。 如需詳細資訊，請參閱此[page](../../delivery/using/defining-the-email-content.md#message-content)。
+此類型訊息的設定類似於電子郵件中&#x200B;**[!UICONTROL Text]**&#x200B;的設定。 如需詳細資訊，請參閱此[page](defining-the-email-content.md#message-content)。
 
-### 設定影像和連結傳送{#configuring-an-image-and-link-delivery}
+### 設定影像和連結傳送 {#configuring-an-image-and-link-delivery}
 
 **[!UICONTROL Image and link]** [!DNL LINE]傳遞是以影像形式傳送給收件者的訊息，可能包含一或多個URL。
 
@@ -193,13 +193,13 @@ ht-degree: 2%
 
    然後，您必須新增會在收件者行動裝置上顯示的替代文字。
 
-* 和&#x200B;**[!UICONTROL Links]**。
+* 和 **[!UICONTROL Links]**.
 
    **[!UICONTROL Links]**&#x200B;區段可讓您在將影像分割成多個可點按區域的不同配置之間進行選擇。 然後，您可以為每個目標分配專用的&#x200B;**[!UICONTROL Link URL]**。
 
    ![](assets/line_message_05.png)
 
-### 設定視訊訊息傳送{#configuring-a-video-message-delivery}
+### 設定視訊訊息傳送 {#configuring-a-video-message-delivery}
 
 **[!UICONTROL Video message]** [!DNL LINE]傳遞是以可包含URL的視訊形式傳送給收件者的訊息。
 
@@ -211,7 +211,7 @@ ht-degree: 2%
 
 ![](assets/line_message_06.png)
 
-## 存取報表{#accessing-reports}
+## 存取報表 {#accessing-reports}
 
 傳送傳遞後，您可以透過&#x200B;**[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**&#x200B;功能表，從&#x200B;**[!UICONTROL Explorer]**&#x200B;檢視[!DNL LINE]報表。
 
@@ -225,7 +225,7 @@ ht-degree: 2%
 
 ![](assets/line_reports.png)
 
-## 範例：建立併發送個性化的LINE消息{#example--create-and-send-a-personalized-line-message}
+## 範例：建立併發送個性化的LINE消息 {#example--create-and-send-a-personalized-line-message}
 
 在此範例中，我們將建立並設定文字訊息和影像，其中包含將根據收件者個人化的資料。
 
@@ -239,7 +239,7 @@ ht-degree: 2%
 
 1. 在傳送的設定視窗中，選取目標母體。
 
-   如需詳細資訊，請參閱[識別目標母體](../../delivery/using/steps-defining-the-target-population.md)。
+   如需詳細資訊，請參閱[識別目標母體](steps-defining-the-target-population.md)。
 
    ![](assets/line_usecase_02.png)
 
