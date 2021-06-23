@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 彈出式視窗中顯示的表情符號清單由列舉排定，可讓您在清單中顯示值，以限制使用者對指定欄位的選擇。
 您可以自訂表情符號清單順序，也可以將其他表情符號新增至清單。
-表情符號可用於電子郵件，並可依此參閱此[page](../../delivery/using/defining-the-email-content.md#inserting-emoticons)以取得更多資訊。
+表情符號可用於電子郵件，並可依此參閱此[page](defining-the-email-content.md#inserting-emoticons)以取得更多資訊。
 
-## 新增表情符號{#add-new-emoticon}
+## 新增表情符號 {#add-new-emoticon}
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 1. 若要將您的變更納入考量，請中斷連線，然後重新連線至Adobe Campaign Classic。 如果新表情符號仍未出現在&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;快顯視窗中，則可能需要清除快取。 如需詳細資訊，請參閱本[區段](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)。
 
-1. 您現在可以在傳送中，依照先前步驟的設定，於第61位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;快顯視窗找到您的新表情符號。 如需如何在傳送中使用表情符號的詳細資訊，請參閱此[page](../../delivery/using/defining-the-email-content.md#inserting-emoticons)。
+1. 您現在可以在傳送中，依照先前步驟的設定，於第61位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;快顯視窗找到您的新表情符號。 如需如何在傳送中使用表情符號的詳細資訊，請參閱此[page](defining-the-email-content.md#inserting-emoticons)。
 
    ![](assets/emoticon_4.png)
 
