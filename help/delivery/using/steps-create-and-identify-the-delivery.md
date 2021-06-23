@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -30,9 +30,9 @@ ht-degree: 11%
 >
 >清單中提供的管道取決於您的授權合約。
 
-您可以建立新的傳遞範本，以便根據您的需求預先設定特定參數。 有關模板的詳細資訊，請參閱[此部分](../../delivery/using/about-templates.md)。
+您可以建立新的傳遞範本，以便根據您的需求預先設定特定參數。 有關模板的詳細資訊，請參閱[此部分](about-templates.md)。
 
-## 識別傳送{#identifying-the-delivery}
+## 識別傳送 {#identifying-the-delivery}
 
 您必須完成參數才能識別傳送。 操作步驟：
 
@@ -49,7 +49,7 @@ ht-degree: 11%
 
 傳遞內容已準備好進行設定。 傳送內容定義是每個管道專屬的。 如需詳細資訊，請參閱專屬區段：
 
-* [定義電子郵件內容](../../delivery/using/defining-the-email-content.md)
-* [定義SMS內容](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [定義直接郵件內容](../../delivery/using/defining-the-direct-mail-content.md)
-* [推播通知](../../delivery/using/about-mobile-app-channel.md)
+* [定義電子郵件內容](defining-the-email-content.md)
+* [定義SMS內容](sms-create.md#defining-the-sms-content)
+* [定義直接郵件內容](defining-the-direct-mail-content.md)
+* [推播通知](about-mobile-app-channel.md)
