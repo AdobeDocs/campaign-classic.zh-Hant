@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -28,19 +28,19 @@ ht-degree: 3%
 * 已準備好傳送，
 * 具有共同值的種子地址。 此值可以是Adobe Campaign中已存在的欄位。 在此示例中，種子地址共用「部門」欄位中的「採購」值，預設情況下，該值不存在於應用程式中。
 
-## 步驟1 — 建立傳送{#step-1---creating-a-delivery}
+## 步驟1 — 建立傳遞 {#step-1---creating-a-delivery}
 
-在[建立電子郵件傳送](../../delivery/using/creating-an-email-delivery.md)區段中會詳細說明建立傳送的步驟。
+在[建立電子郵件傳送](creating-an-email-delivery.md)區段中會詳細說明建立傳送的步驟。
 
 在此範例中，傳送管理員已建立電子報並選取收件者。
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## 步驟2 — 建立公用值{#step-2---creating-a-common-value}
+## 步驟2 — 建立通用值 {#step-2---creating-a-common-value}
 
 若要建立與範例（採購部門）中相同的通用值，您必須先擴充種子地址的&#x200B;**資料結構**&#x200B;並編輯相關的輸入表單。
 
-### 擴展資料架構{#extending-the-data-schema}
+### 擴充資料結構 {#extending-the-data-schema}
 
 有關架構擴展的詳細資訊，請參閱[配置指南](../../configuration/using/data-schemas.md)。
 
@@ -95,7 +95,7 @@ ht-degree: 3%
 
 1. 斷開連接，然後重新連接到Adobe Campaign。 在種子地址資料架構中所做的變更現在已生效。 為了從種子地址螢幕中顯示它們，必須更新關聯的&#x200B;**[!UICONTROL Input form]**。 請參閱[更新輸入表單](#updating-the-input-form)區段。
 
-#### 從連結的表{#extending-the-data-schema-from-a-linked-table}擴展資料架構
+#### 從連結的表擴展資料架構 {#extending-the-data-schema-from-a-linked-table}
 
 種子地址資料方案可以使用來自連結到接收者資料方案 — 接收者(nms)的表的值。
 
@@ -131,7 +131,7 @@ ht-degree: 3%
 
 請參閱[更新輸入表單](#updating-the-input-form)區段。
 
-#### 更新輸入表單{#updating-the-input-form}
+#### 更新輸入表單 {#updating-the-input-form}
 
 1. 在&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;節點中，查找種子地址輸入表單。
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 1. 編輯要用於傳送的種子地址，並在&#x200B;**[!UICONTROL Department]**&#x200B;欄位中輸入&#x200B;**Purchasing**&#x200B;作為值。
 
-## 步驟3 — 定義條件{#step-3---defining-the-condition}
+## 步驟3 — 定義條件 {#step-3---defining-the-condition}
 
 您現在可以指定傳送種子地址的動態條件。 操作步驟：
 
