@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 12%
@@ -19,7 +19,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->此視窗中也會設定電子郵件中影像的管理。 請參閱[新增影像](../../delivery/using/defining-the-email-content.md#adding-images)。
+>此視窗中也會設定電子郵件中影像的管理。 請參閱[新增影像](defining-the-email-content.md#adding-images)。
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -37,7 +37,7 @@ ht-degree: 12%
 
 追蹤的URL會以樹狀結構列在中央視窗中。
 
-您可以針對訊息的每個URL個別啟用或停用追蹤。 如需詳細資訊，請參閱[本章節](../../delivery/using/how-to-configure-tracked-links.md)。
+您可以針對訊息的每個URL個別啟用或停用追蹤。 如需詳細資訊，請參閱[本章節](how-to-configure-tracked-links.md)。
 
 **[!UICONTROL Advanced]**&#x200B;標籤可讓您個人化追蹤URL和開頭URL的計算公式。
 
