@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # 收件匣轉譯{#inbox-rendering}
 
-## 關於收件箱呈現{#about-inbox-rendering}
+## 關於收件匣轉譯 {#about-inbox-rendering}
 
 在按&#x200B;**Send**&#x200B;按鈕之前，請確定您的郵件會以最佳方式顯示在各種Web用戶端、網頁郵件和裝置上。
 
@@ -27,9 +27,9 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 >[!NOTE]
 >
->在傳送中測試個人化不需要收件匣轉譯。 您可以使用Adobe Campaign工具（例如&#x200B;**[!UICONTROL Preview]**&#x200B;和[Doods](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)）來檢查個人化。
+>在傳送中測試個人化不需要收件匣轉譯。 您可以使用Adobe Campaign工具（例如&#x200B;**[!UICONTROL Preview]**&#x200B;和[Doods](steps-validating-the-delivery.md#sending-a-proof)）來檢查個人化。
 
-## 激活收件箱呈現{#activating-inbox-rendering}
+## 啟用收件匣轉譯 {#activating-inbox-rendering}
 
 對於托管和混合式用戶端，收件匣轉譯是由Adobe技術支援和顧問在您的執行個體上設定。 如需詳細資訊，請連絡您的Adobe帳戶高階主管。
 
@@ -64,7 +64,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 >
 >您可能必須從主控台登出並重新登入，才能使用收件匣呈現。
 
-## 關於Litmus權杖{#about-litmus-tokens}
+## 關於Litmus權杖 {#about-litmus-tokens}
 
 由於Litmus是第三方服務，因此其運作模式是按使用計分。 每次使用者呼叫Litmus功能時，都會扣除評分。
 
@@ -93,18 +93,18 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 收件匣轉譯功能通常用於測試新設計之電子郵件的HTML架構。 每次轉譯最多需要70個代號（視通常測試的環境數量而定）。 不過，在某些情況下，您可能需要多個收件匣呈現報表，才能完整測試您的傳送。 因此，可能需要更多代號才能完成數個檢查。
 
-## 訪問收件箱呈現報告{#accessing-the-inbox-rendering-report}
+## 存取收件匣呈現報告 {#accessing-the-inbox-rendering-report}
 
 在您建立電子郵件傳送並定義其內容以及目標定位人口族群後，請遵循下列步驟。
 
-如需建立、設計和定位傳送的詳細資訊，請參閱[此區段](../../delivery/using/about-email-channel.md)。
+如需建立、設計和定位傳送的詳細資訊，請參閱[此區段](about-email-channel.md)。
 
 1. 在傳送的頂端列上，按一下&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;按鈕。
 1. 選擇&#x200B;**[!UICONTROL Analyze]**&#x200B;以啟動捕獲進程。
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   已傳送校樣。 傳送電子郵件後幾分鐘，即可在該校樣中存取呈現的縮圖。 如需傳送校樣的詳細資訊，請參閱[此區段](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+   已傳送校樣。 傳送電子郵件後幾分鐘，即可在該校樣中存取呈現的縮圖。 如需傳送校樣的詳細資訊，請參閱[此區段](steps-validating-the-delivery.md#sending-a-proof)。
 
 1. 傳送後，校樣會顯示在傳送清單中。 按兩下。
 
@@ -116,7 +116,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
    隨即顯示收件匣呈現報告。
 
-## 收件箱呈現報告{#inbox-rendering-report}
+## 收件匣呈現報告 {#inbox-rendering-report}
 
 此報表會以收件者看到的方式顯示收件匣呈現。 呈現會因收件者開啟電子郵件傳送的方式而異：在瀏覽器、行動裝置或透過電子郵件應用程式。
 
