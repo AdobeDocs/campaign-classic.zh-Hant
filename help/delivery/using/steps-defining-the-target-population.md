@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 3%
@@ -15,18 +15,18 @@ ht-degree: 3%
 
 # 定義目標人口 {#defining-the-target-population}
 
-## 關於目標母體{#about-target-populations}
+## 關於目標人口 {#about-target-populations}
 
 對於每個傳送，您可以定義數種目標母體類型：
 
-* **主要對象**:接收訊息的設定檔。[瞭解更多](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* **證明**:校樣訊息的收件者，涉及驗證週期。[瞭解更多](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-* **種子地址**:未達到傳送目標但將收到傳送的收件者（僅限行銷活動的內容中）。[瞭解更多](../../delivery/using/about-seed-addresses.md)
-* **控制組**:不會收到傳送的母體，用於追蹤行為和促銷活動影響（僅限行銷促銷活動的內容）。[瞭解更多](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
+* **主要對象**:接收訊息的設定檔。[深入瞭解](steps-defining-the-target-population.md#selecting-the-main-target)
+* **證明**:校樣訊息的收件者，涉及驗證週期。[深入瞭解](steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **種子地址**:未達到傳送目標但將收到傳送的收件者（僅限行銷活動的內容中）。[深入瞭解](about-seed-addresses.md)
+* **控制組**:不會收到傳送的母體，用於追蹤行為和促銷活動影響（僅限行銷促銷活動的內容）。[深入瞭解](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
 
-## 選擇傳送的主要收件者{#selecting-the-main-target}
+## 選取傳送的主要收件者 {#selecting-the-main-target}
 
-在大多數情況下，主要目標會從Adobe Campaign資料庫（預設模式）中擷取。 不過，收件者也可儲存在外部檔案中。 進一步了解[本節](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
+在大多數情況下，主要目標會從Adobe Campaign資料庫（預設模式）中擷取。 不過，收件者也可儲存在外部檔案中。 進一步了解[本節](steps-defining-the-target-population.md#selecting-external-recipients)。
 
 若要選取傳送的收件者，請遵循下列步驟：
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉式清單中選取目標對應。 Adobe Campaign預設目標對應為&#x200B;**[!UICONTROL Recipients]**，以&#x200B;**nms:recipient**&#x200B;架構為基礎。
 
-   其他目標對應可供使用，有些可與您的特定設定相關。 有關目標映射的詳細資訊，請參閱[選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)。
+   其他目標對應可供使用，有些可與您的特定設定相關。 有關目標映射的詳細資訊，請參閱[選擇目標映射](selecting-a-target-mapping.md)。
 
 1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以定義限制篩選器。
 
@@ -85,7 +85,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
-### 選擇外部收件人{#selecting-external-recipients}
+### 選取外部收件者 {#selecting-external-recipients}
 
 您可以對未儲存在資料庫中，但儲存在外部檔案的收件者啟動傳遞。 例如，我們會在此傳送傳遞給從文字檔案匯入的收件者。
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. 依預設，收件者會匯入資料庫中。 必須選擇&#x200B;**[!UICONTROL Target mapping]**。 有關目標映射的詳細資訊，請參閱[選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)
+1. 依預設，收件者會匯入資料庫中。 必須選擇&#x200B;**[!UICONTROL Target mapping]**。 有關目標映射的詳細資訊，請參閱[選擇目標映射](selecting-a-target-mapping.md)
 
    您也可以選擇&#x200B;**[!UICONTROL Do not import the recipients into the database]**。
 
@@ -110,7 +110,7 @@ ht-degree: 3%
 >
 >定義電子郵件傳送的郵件內容時，請勿包含鏡像頁面的連結；無法在此傳送模式中產生。
 
-### 設定排除設定{#customizing-exclusion-settings}
+### 設定排除設定 {#customizing-exclusion-settings}
 
 地址錯誤和質量評等由服務提供程式(IAP)提供。 在執行傳送動作後，此資訊會在收件者設定檔中自動更新，並包含服務提供者傳回的檔案。 可在設定檔中以唯讀方式檢視。
 
@@ -150,17 +150,17 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >有關隔離管理的詳細資訊，請參閱[了解隔離管理](../../delivery/using/understanding-quarantine-management.md)。
+   >有關隔離管理的詳細資訊，請參閱[了解隔離管理](understanding-quarantine-management.md)。
 
 * **[!UICONTROL Limit delivery]** 指定數量的訊息。此選項可讓您輸入要傳送的訊息數量上限。 如果目標的內容超過所指示的消息數，則隨機選擇被應用到目標。
 
-### 縮小目標人口{#reducing-the-size-of-the-target-population}
+### 縮小目標人口的大小 {#reducing-the-size-of-the-target-population}
 
 您可以縮小目標母體的大小。 要執行此操作，請在&#x200B;**[!UICONTROL Requested quantity]**&#x200B;欄位中指定要匯出的收件者數量。
 
 ![](assets/s_ncs_user_edit_del_exe_tab.png)
 
-## 選擇校樣消息的收件人{#selecting-the-proof-target}
+## 選取校樣訊息的收件者 {#selecting-the-proof-target}
 
 校樣是特殊訊息，可讓您在將傳遞傳送至主要目標之前先測試傳遞。 校樣收件者負責核准訊息的表單和內容。
 
@@ -177,17 +177,17 @@ ht-degree: 3%
 >
 >校樣的目標通常可新增至主要目標。 要執行此操作，請在&#x200B;**[!UICONTROL Main target]**&#x200B;標籤的下半部分中選取適當的選項。
 
-## 定義特定校樣目標{#defining-a-specific-proof-target}
+## 定義特定校樣目標 {#defining-a-specific-proof-target}
 
 選取校樣目標時，**[!UICONTROL Definition of a specific proof target]**&#x200B;選項可讓您從資料庫的設定檔中選取校樣收件者。
 
-選擇此選項可使用&#x200B;**[!UICONTROL Add]**&#x200B;按鈕選擇收件者，如定義主目標的情況。 請參閱[選取主要目標](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)。
+選擇此選項可使用&#x200B;**[!UICONTROL Add]**&#x200B;按鈕選擇收件者，如定義主目標的情況。 請參閱[選取主要目標](steps-defining-the-target-population.md#selecting-the-main-target)。
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-有關校樣傳送的詳細資訊，請參閱[此區段](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+有關校樣傳送的詳細資訊，請參閱[此區段](steps-validating-the-delivery.md#sending-a-proof)。
 
-### 在校樣{#using-address-substitution-in-proof}中使用地址替代
+### 在校樣中使用地址替代 {#using-address-substitution-in-proof}
 
 您可以使用&#x200B;**[!UICONTROL Substitution of the address]**&#x200B;選項，而不是在資料庫中選擇專用的收件人。
 
@@ -211,7 +211,7 @@ ht-degree: 3%
 
    您可以根據需要定義任意數量的替代地址。
 
-## 使用種子地址作為證明{#using-seed-addresses-as-proof}
+## 使用種子地址作為證明 {#using-seed-addresses-as-proof}
 
 您可以使用&#x200B;**[!UICONTROL Seed addresses]**&#x200B;作為校樣的目標：此選項可讓您使用或匯入現有種子地址清單。
 
@@ -219,17 +219,17 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->種子地址顯示在[關於種子地址](../../delivery/using/about-seed-addresses.md)中。
+>種子地址顯示在[關於種子地址](about-seed-addresses.md)中。
 
 您可以使用&#x200B;**[!UICONTROL Specific target and Seed addresses]**&#x200B;選項結合特定校樣目標的定義和使用種子地址。 然後，在兩個不同的子標籤中定義相關配置。
 
 另請參閱：
 
 * [選取校樣目標](#selecting-the-proof-target)
-* [關於種子地址](../../delivery/using/about-seed-addresses.md)
-* [使用案例：依條件選取種子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [關於種子地址](about-seed-addresses.md)
+* [使用案例：依條件選取種子地址](use-case--selecting-seed-addresses-on-criteria.md)
 
-## 教學課程影片{#seeds-and-proofs-video}
+## 教學課程影片 {#seeds-and-proofs-video}
 
 在此影片中，您將學習如何為現有電子郵件新增種子和校樣，以及如何傳送。
 
