@@ -6,10 +6,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9703e9d5cf0dba91d3f38d265756bdae69267c28
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 </tbody>
 </table>
 
-## Web 伺服器{#WebServers-gs}
+## 網頁伺服器{#WebServers-gs}
 
 <table>
 <tbody>
@@ -176,11 +176,6 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 <p>API 15 版</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand API</td>
-<td>
-<p>網站服務1.0 版API</p>
-</td>
-</tr>
 <tr>
 <td>Microsoft Dynamics</td>
 <td>
@@ -271,7 +266,7 @@ Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些
 
 ## 用戶端主控台 {#ClientConsoleoperatingsystems}
 
-:warning: 使用「Campaign 用戶端主控台」時，需要下列作業系統和瀏覽器。
+:warning: 使用Campaign用戶端主控台需要下列作業系統和瀏覽器。
 
 ### 作業系統
 
