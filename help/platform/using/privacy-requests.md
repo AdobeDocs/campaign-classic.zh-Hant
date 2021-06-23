@@ -6,14 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
 
 ---
 
-# 管理隱私權請求{#privacy-requests}
+# 管理隱私權請求 {#privacy-requests}
 
 如需隱私權管理的一般簡報，請參閱[本節](../../platform/using/privacy-management.md)。
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 <!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
-## 關於隱私權請求{#about-privacy-requests}
+## 關於隱私權請求 {#about-privacy-requests}
 
 為協助您加速隱私權準備，Adobe Campaign 可讓您處理存取和刪除要求。[本節](../../platform/using/privacy-management.md#right-access-forgotten)說明&#x200B;**存取權限**&#x200B;及&#x200B;**被遺忘的權利**（刪除要求）。
 
@@ -46,7 +46,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 因此，身為資料控制方的您，應負責確認提出要求之資料主體的身份，並確認傳回給要求者的資料與資料主體有關。
 
-### 安裝隱私套件{#install-privacy-package}
+### 安裝隱私套件 {#install-privacy-package}
 
 為了使用此功能，您需要透過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**&#x200B;功能表安裝&#x200B;**[!UICONTROL Privacy Data Protection Regulation]**&#x200B;套件。 有關如何安裝軟體套件的詳細資訊，請參閱[詳細文件](../../installation/using/installing-campaign-standard-packages.md)。
 
@@ -75,7 +75,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 三個現成可用命名空間：電子郵件、手機和行動電話。 如果您需要不同的命名空間 (例如收件者自訂欄位)，您可以從&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**&#x200B;建立新的命名空間。
 
-## 建立隱私權請求{#create-privacy-request-ui}
+## 建立隱私權請求 {#create-privacy-request-ui}
 
 **Adobe Campaign 介面**&#x200B;允許您建立您的隱私權請求並跟蹤其演進。 若要建立新的隱私權請求，請依照下列指示：
 
@@ -98,7 +98,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 ![](assets/privacy-request-download.png)
 
-### 表格清單{#list-of-tables}
+### 表格清單 {#list-of-tables}
 
 執行刪除或存取隱私權要求時，Adobe Campaign 會根據所有包含收件者表格連結 (自有類型) 之表格中的&#x200B;**[!UICONTROL Reconciliation value]**，以搜尋所有資料主體的資料。
 
@@ -137,7 +137,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 * **[!UICONTROL Complete]**：要求處理已完成，並未發生錯誤。
 * **[!UICONTROL Error]**：工作流程發生錯誤。原因會顯示在 **[!UICONTROL Request status]** 欄位的「隱私權要求」清單中。例如，**[!UICONTROL Error data not found]** 代表在資料庫中找不到與資料主體 **[!UICONTROL Reconciliation value]** 相符的收件者資料。
 
-### 兩步驟流程{#two-step-process}
+### 兩步驟流程 {#two-step-process}
 
 依照預設，會啟動&#x200B;**兩步驟流程**。當您使用此模式建立新的刪除請求時，Adobe Campaign 一律會先執行存取請求。 這可讓您在確認刪除之前先檢查資料。
 
@@ -165,7 +165,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 以下是資料主體資料檔案的範例：
 
-![](assets/privacy-access-file.png)
+![](assets/do-not-localize/privacy-access-file.png)
 
 資料控制方可輕鬆建立包含對應 JSSP URL 的網站應用程式，讓資料主體的資料檔案可從網頁取得。
 
@@ -209,7 +209,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 由於資料主體資料檔案的存取權限受到限制，因此必須停用網頁匿名存取。 只有&#x200B;**[!UICONTROL Privacy Data Right]**&#x200B;已命名權限的操作者才能登入頁面並下載資料。
 
-## 自動隱私權請求流程{#automatic-privacy-request-api}
+## 自動隱私權請求流程 {#automatic-privacy-request-api}
 
 Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流程。
 
@@ -257,7 +257,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
 
 1. 使用「登入」方法，並將使用者名稱和密碼傳入請求中作為參數。 您將會收到包含工作階段權杖的回應。 以下是使用 SoapUI 的範例。
 
-   ![](assets/privacy-api.png)
+   ![](assets/do-not-localize/privacy-api.png)
 
 1. 使用回傳的工作階段權杖作為所有後續 API 呼叫的驗證。 24 小時後過期。
 
@@ -269,7 +269,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
 
    以下是使用 **[!UICONTROL CreateRequestByName]** 的範例。 請注意我們使用上述的工作階段權杖做為驗證的方法。 回應是已建立請求的 ID。
 
-   ![](assets/privacy-api-2.png)
+   ![](assets/do-not-localize/privacy-api-2.png)
 
    若要協助您執行上述步驟，請考慮下列事項：
 
@@ -277,7 +277,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
    * 您可以在 **nms:gdprRequestData** 架構上使用 **queryDef** 來取得存取請求的結果。
    * 若要能夠從 **「$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id」**&#x200B;下載 XML 檔案，您必須登入並從已允許加入清單 IP 進行存取。 為此，請建立網站應用程式，讓您存取 JSSP 產生的檔案。
 
-### 從 JS 叫用 API{#invoking-api-from-js}
+### 從 JS 叫用 API {#invoking-api-from-js}
 
 以下範例說明如何從 Campaign Classic 內的 JS 叫用 API。
 
