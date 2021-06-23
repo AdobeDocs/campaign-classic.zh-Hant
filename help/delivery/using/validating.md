@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # 驗證{#validating}
 
-驗證傳送時的全域概念會顯示在[此區段](../../delivery/using/steps-validating-the-delivery.md)中。
+驗證傳送時的全域概念會顯示在[此區段](steps-validating-the-delivery.md)中。
 
-在傳遞分析期間生成直接郵件傳遞的輸出檔案。 檔案的內容取決於所選的輸出列（請參閱[提取檔案](../../delivery/using/defining-the-direct-mail-content.md#extraction-file)）。
+在傳遞分析期間生成直接郵件傳遞的輸出檔案。 檔案的內容取決於所選的輸出列（請參閱[提取檔案](defining-the-direct-mail-content.md#extraction-file)）。
 
 >[!NOTE]
 >
->分析階段在[分析傳送](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)中詳細說明。
+>分析階段在[分析傳送](steps-validating-the-delivery.md#analyzing-the-delivery)中詳細說明。
 
 在分析階段期間，會產生檔案，但不會更新與收件者（即傳送記錄檔）相關的資訊。 因此，您可以取消此作業，而不會有任何風險。
 
