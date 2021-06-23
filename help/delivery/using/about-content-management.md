@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Adobe Campaign Content Manager模組是特定的Campaign Classic[內建套件](.
 
 >[!NOTE]
 >
->本節說明「內容管理」模組。 有關如何設計電子郵件傳遞內容的詳細資訊，請參閱[此區段](../../delivery/using/defining-the-email-content.md)。
+>本節說明「內容管理」模組。 有關如何設計電子郵件傳遞內容的詳細資訊，請參閱[此區段](defining-the-email-content.md)。
 
 內容管理模組整合了工作組、工作流和內容聚合功能。 這可讓訊息自動格式化：電子郵件、郵件、簡訊、網路等。
 
