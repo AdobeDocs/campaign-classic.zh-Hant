@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
 >
 >如果您未使用追蹤功能，則可執行Apache或IIS的標準安裝，並重新導向至Campaign。 不需要追蹤Web伺服器擴充模組。
 
-## 配置IIS Web伺服器{#configuring-the-iis-web-server}
+## 配置IIS Web伺服器 {#configuring-the-iis-web-server}
 
 IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已建立或待建立）來存取Adobe Campaign伺服器的資源：Java(.jsp)檔案、樣式表(.css、.xsl)、影像(.png)、用於重定向的ISAPI DLL等。
 
@@ -101,13 +101,16 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### 啟動Web伺服器並測試配置{#launching-the-web-server-and-testing-the-configuration}
+### 啟動Web伺服器並測試配置 {#launching-the-web-server-and-testing-the-configuration}
 
 您現在必須測試設定是否正確。
 
 要執行此操作，請應用以下過程：
 
 1. 使用&#x200B;**iisreset**&#x200B;命令行重新啟動IIS伺服器。
+
+1. 啟動Adobe Campaign服務，然後確定其執行中。
+
 1. 在網頁瀏覽器中插入下列URL以測試追蹤模組：
 
    ```
@@ -144,7 +147,7 @@ webmdl@default (1644) - 18.2 Mo
 
 ## 其他配置 {#additional-configurations}
 
-### 更改上載檔案大小限制{#changing-the-upload-file-size-limit}
+### 變更上傳檔案大小限制 {#changing-the-upload-file-size-limit}
 
 配置IIS Web伺服器時，將自動對上載到伺服器的設定檔案設定約28 MB的限制。
 
@@ -164,7 +167,7 @@ webmdl@default (1644) - 18.2 Mo
 >
 >有關此IIS選項的詳細資訊，請參閱[官方文檔](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)的「How To」部分。
 
-### 配置http錯誤消息顯示{#configuring-http-error-message-display}
+### 配置http錯誤消息顯示 {#configuring-http-error-message-display}
 
 如果您使用6.1版IIS伺服器，則生成的錯誤消息可能很難讀取，因為消息中顯示了不適當的HTML代碼。
 
