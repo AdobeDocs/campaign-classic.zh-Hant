@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 若要在Adobe Campaign中傳送推播通知，您必須：
 
-* 為Neotrips行動應用程式建立&#x200B;**[!UICONTROL Mobile application]**&#x200B;類型資訊服務。 有關iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service)，請參閱[此部分。 和[適用於Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)的此區段。
+* 為Neotrips行動應用程式建立&#x200B;**[!UICONTROL Mobile application]**&#x200B;類型資訊服務。 有關iOS](configuring-the-mobile-application.md#configuring-ios-service)，請參閱[此部分。 和[適用於Android](configuring-the-mobile-application-android.md#configuring-android-service)的此區段。
 * 將應用程式的iOS和Android版本新增至此服務。
 * 為[iOS](create-notifications-ios.md)和[Android](create-notifications-android.md)建立傳送。
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 >
 >前往服務的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤以檢視服務的訂閱者清單，亦即所有在行動裝置上安裝了應用程式並同意接收通知的使用者。
 
-## 安裝軟體包{#installing-package-ios}
+## 安裝套件 {#installing-package-ios}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
@@ -64,6 +64,6 @@ ht-degree: 10%
 完成此步驟後，您就可以設定Android和iOS應用程式。
 請參閱以下章節：
 
-* [針對 iOS 的設定步驟](../../delivery/using/configuring-the-mobile-application.md)
+* [針對 iOS 的設定步驟](configuring-the-mobile-application.md)
 
-* [針對 Android 的設定步驟](../../delivery/using/configuring-the-mobile-application-android.md)
+* [針對 Android 的設定步驟](configuring-the-mobile-application-android.md)
