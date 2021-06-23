@@ -6,48 +6,48 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
 
-# 傳送傳送疑難排解{#delivery-troubleshooting}
+# 傳送傳送疑難排解 {#delivery-troubleshooting}
 
 本節列出您在傳送傳遞時可能遇到的常見問題，以及如何進行疑難排解。
 
-此外，請務必遵循[本頁面](../../delivery/using/delivery-performances.md)中詳述的最佳實務和檢查清單，確保您的傳送順利執行。
+此外，請務必遵循[本頁面](delivery-performances.md)中詳述的最佳實務和檢查清單，確保您的傳送順利執行。
 
 **相關主題：**
 
-* [傳遞狀態](../../delivery/using/delivery-statuses.md)
-* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
-* [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
+* [傳遞狀態](delivery-statuses.md)
+* [傳遞儀表板](delivery-dashboard.md)
+* [瞭解傳遞故障](understanding-delivery-failures.md)
 
-## 傳遞緩慢{#slow-deliveries}
+## 傳遞緩慢 {#slow-deliveries}
 
 按一下&#x200B;**[!UICONTROL Send]**&#x200B;按鈕後，您的傳送所需時間似乎比平常長。 這可能是由不同元素造成：
 
-* 某些電子郵件提供者可能已將您的IP位址新增至封鎖清單。 在此情況下，請檢查您的廣播並參閱[此區段](../../delivery/using/about-deliverability.md)。
+* 某些電子郵件提供者可能已將您的IP位址新增至封鎖清單。 在此情況下，請檢查您的廣播並參閱[此區段](about-deliverability.md)。
 
-* 您的傳送可能太大，無法快速處理，這可能會在JavaScript個人化程度較高時發生，或是您的傳送重超過60KB時發生。 請參閱Adobe Campaign [傳送最佳實務](../../delivery/using/delivery-best-practices.md)以了解內容准則。
+* 您的傳送可能太大，無法快速處理，這可能會在JavaScript個人化程度較高時發生，或是您的傳送重超過60KB時發生。 請參閱Adobe Campaign [傳送最佳實務](delivery-best-practices.md)以了解內容准則。
 
 * 在Adobe Campaign MTA內可能已發生限制。 這是由下列原因造成：
 
-   * 已附加消息（**[!UICONTROL quotas met]**&#x200B;消息）:已滿足Campaign中定義的聲明性MX規則所宣告的配額。 有關此消息的詳細資訊，請參閱[此頁](../../delivery/using/deliverability-faq.md)。 要了解有關MX規則的更多資訊，請參閱[此部分](../../installation/using/email-deliverability.md#about-mx-rules)。
+   * 已附加消息（**[!UICONTROL quotas met]**&#x200B;消息）:已滿足Campaign中定義的聲明性MX規則所宣告的配額。 有關此消息的詳細資訊，請參閱[此頁](deliverability-faq.md)。 要了解有關MX規則的更多資訊，請參閱[此部分](../../installation/using/email-deliverability.md#about-mx-rules)。
 
    * 已附加消息（**[!UICONTROL dynamic flow control]**&#x200B;消息）:嘗試傳送給指定ISP的訊息時，Campaign MTA發生錯誤，導致傳送速度變慢，以避免錯誤密度過大，進而面臨潛在封鎖清單。
 
 * 系統問題會阻止伺服器相互作用：這會拖慢整個傳送程式。 檢查伺服器，確保在取得個人化資料的程式中沒有可能影響Campaign的記憶體或資源問題。
 
-## 已排程的傳送{#scheduled-deliveries-}
+## 已排程的傳送 {#scheduled-deliveries-}
 
 如果傳送未在確切的排程日期執行，則可能與伺服器時區之間的差異有關。 中間來源例項和生產例項可位於不同時區。
 
 例如，如果中間來源實例位於布里斯班時區，而生產實例位於達爾文時區，則兩個時區彼此相距半小時，那麼在審核日誌中，您會清楚地看到，如果將中間來源實例安排為11:56生產，則中間來源實例安排的相同傳送將是12:26，其差異為半小時。
 
-## 失敗狀態{#failed-status}
+## 失敗狀態 {#failed-status}
 
 如果電子郵件傳送的狀態為&#x200B;**[!UICONTROL Failed]**，則可連結至個人化區塊的問題。 例如，當結構不符合傳送對應時，傳送中的個人化區塊可能會產生錯誤。
 
