@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: 通訊通道
+title: 通訊頻道
 description: 建立傳遞，以在不同通道上傳送個人化訊息。
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 19%
 
 ---
 
-# 通訊通道{#communication-channels}
+# 通訊頻道{#communication-channels}
 
 透過Adobe Campaign，您可以傳送跨通道行銷活動，包括電子郵件、簡訊、LINE訊息、推播通知和直接郵件，並使用各種專用的[reports](../../reporting/using/delivery-reports.md)評估其成效。 這些訊息是透過傳遞進行設計和傳送，而且可針對每位收件者進行個人化。
 
@@ -21,18 +21,18 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 進一步了解[本節](../../delivery/using/about-deliverability.md)。
+>Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 進一步了解[本節](about-deliverability.md)。
 
 傳遞傳送可透過準備傳遞和/或在工作流程程式中傳送來自動化。 如需工作流程中傳送類型活動的詳細資訊，請參閱[此區段](../../workflow/using/about-action-activities.md)。
 
 Adobe Campaign提供下列傳送管道：
 
-1. **電子郵件頻道**：電子郵件傳遞功能可讓您傳送個人化電子郵件給目標群體。請參閱[關於電子郵件通道](../../delivery/using/about-email-channel.md)。
-1. **直接郵件頻道**：直接郵件傳遞可讓您產生擷取檔案，其中包含目標群體的資料。請參閱[關於直接郵件通道](../../delivery/using/about-direct-mail-channel.md)。
-1. **行動裝置頻道**:行動通道上的傳送可讓您傳送個人化SMS或LINE訊息給目標人口。請參閱[SMS通道](../../delivery/using/sms-channel.md)。
-1. **行動應用程式頻道**：行動應用程式傳送可讓您傳送通知至 iOS 和 Android 系統。請參閱[行動應用程式頻道](../../delivery/using/about-mobile-app-channel.md)章節。
+1. **電子郵件頻道**：電子郵件傳遞功能可讓您傳送個人化電子郵件給目標群體。請參閱[關於電子郵件通道](about-email-channel.md)。
+1. **直接郵件頻道**：直接郵件傳遞可讓您產生擷取檔案，其中包含目標群體的資料。請參閱[關於直接郵件通道](about-direct-mail-channel.md)。
+1. **行動裝置頻道**:行動通道上的傳送可讓您傳送個人化SMS或LINE訊息給目標人口。請參閱[SMS通道](sms-channel.md)。
+1. **行動應用程式頻道**：行動應用程式傳送可讓您傳送通知至 iOS 和 Android 系統。請參閱[行動應用程式頻道](about-mobile-app-channel.md)章節。
 
-   [本頁](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)中介紹了其他通道。
+   [本頁](steps-about-delivery-creation-steps.md#other-channels)中介紹了其他通道。
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Adobe Campaign提供下列傳送管道：
 
 ## 電子郵件傳送 {#email-deliveries}
 
-[電子郵件通道](../../delivery/using/about-email-channel.md)是Adobe Campaign中的核心通道之一，可讓您排程個人化電子郵件並傳送給特定目標。
+[電子郵件通道](about-email-channel.md)是Adobe Campaign中的核心通道之一，可讓您排程個人化電子郵件並傳送給特定目標。
 
 您可以傳送不同類型的電子郵件：
 
@@ -57,13 +57,13 @@ Adobe Campaign提供下列傳送管道：
 * 循環電子郵件：在行銷活動中，定期傳送相同的電子郵件，並定期匯總每個傳送及其報表。 會根據傳送當天的合格目標，傳送相同的電子郵件，但通常會傳送至不同目標。 生日電子郵件是常見的範例。 如需詳細資訊，請參閱[Recurring deliveries](../../workflow/using/recurring-delivery.md)。
 * 交易式電子郵件：根據客戶行為觸發的統一電子郵件。 請參閱[交易式訊息](../../message-center/using/about-transactional-messaging.md)。
 
-若要了解傳送使用方式和建議，請參閱Campaign [傳送最佳實務](../../delivery/using/delivery-best-practices.md)。
+若要了解傳送使用方式和建議，請參閱Campaign [傳送最佳實務](delivery-best-practices.md)。
 
 如需不同傳送類型的詳細資訊，請參閱[此區段](#types-of-deliveries)。
 
-## 行動傳送{#mobile-deliveries}
+## 行動傳送 {#mobile-deliveries}
 
-Adobe Campaign可讓您在行動裝置上傳送[SMS](../../delivery/using/sms-channel.md)和[LINE](../../delivery/using/line-channel.md)訊息。
+Adobe Campaign可讓您在行動裝置上傳送[SMS](sms-channel.md)和[LINE](line-channel.md)訊息。
 
 對於SMS訊息，您只能以文字格式建立、修改及個人化訊息。 您也可以在傳送SMS訊息之前先預覽這些訊息。
 
@@ -76,17 +76,17 @@ Adobe Campaign可讓您在行動裝置上傳送[SMS](../../delivery/using/sms-ch
 
 ## 推播通知 {#push-notifications}
 
-Adobe Campaign可讓您透過專用應用程式，在iOS和Android行動裝置上傳送個人化和分段的[推播通知](../../delivery/using/about-mobile-app-channel.md)。 執行設定和整合步驟後，即可建立及傳送iOS和Android傳送。 您也可以設計影像或影片的豐富通知。
+Adobe Campaign可讓您透過專用應用程式，在iOS和Android行動裝置上傳送個人化和分段的[推播通知](about-mobile-app-channel.md)。 執行設定和整合步驟後，即可建立及傳送iOS和Android傳送。 您也可以設計影像或影片的豐富通知。
 
 ## 直接郵件 {#direct-mail}
 
-[直接郵件是一種離線通道，可讓您個人化並產生直接郵件供應商所需的檔案。](../../delivery/using/about-direct-mail-channel.md)它可讓您在客戶歷程中混合使用線上和離線通道。
+[直接郵件是一種離線通道，可讓您個人化並產生直接郵件供應商所需的檔案。](about-direct-mail-channel.md)它可讓您在客戶歷程中混合使用線上和離線通道。
 
 線上通道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等）並直接從 Adobe Campaign 傳送給您的對象。離線通道則不同。當您準備直接郵件傳送時，Adobe Campaign 會產生一個檔案，其中包含所有目標設定檔和選取的聯絡資訊（例如，郵遞區號）。然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
 
 ## 其他通道 {#other-channels}
 
-Adobe Campaign提供電話傳送範本，可用來建立外部傳送。 使用此通道表示您設定了處理輸出檔案的專用方法。 配置步驟與[直接郵件通道](../../delivery/using/about-direct-mail-channel.md)的步驟相同。
+Adobe Campaign提供電話傳送範本，可用來建立外部傳送。 使用此通道表示您設定了處理輸出檔案的專用方法。 配置步驟與[直接郵件通道](about-direct-mail-channel.md)的步驟相同。
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Adobe Campaign提供電話傳送範本，可用來建立外部傳送。 使用�
 
 Campaign中有三種傳送物件類型：
 
-### 單次傳送{#single-delivery}
+### 單一傳送 {#single-delivery}
 
 **delivery**&#x200B;是執行一次的獨立傳送物件。 它可以重複、重新準備，但只要它處於最終狀態（取消、停止、完成），它就不能重複使用。
 
