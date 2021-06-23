@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 然後，您就能為iOS裝置](create-notifications-ios.md)建立推播通知。[
 
 
-## 配置iOS外部帳戶{#configuring-external-account-ios}
+## 設定iOS外部帳戶 {#configuring-external-account-ios}
 
 若為iOS,iOS HTTP/2連接器會傳送通知至HTTP/2 APN。
 
@@ -46,7 +46,7 @@ ht-degree: 5%
 
 您的iOS連接器現在已設定完畢。 您可以開始建立服務。
 
-## 配置iOS服務{#configuring-ios-service}
+## 設定iOS服務 {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -71,9 +71,9 @@ ht-degree: 5%
 
    ![](assets/nmac_service_2.png)
 
-1. 建立iOS開發和生產應用程式。 如需詳細資訊，請參閱本[區段](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)。
+1. 建立iOS開發和生產應用程式。 如需詳細資訊，請參閱本[區段](configuring-the-mobile-application.md#creating-ios-app)。
 
-## 建立iOS行動應用程式{#creating-ios-app}
+## 建立iOS行動應用程式 {#creating-ios-app}
 
 建立服務後，在Campaign中建立iOS應用程式。 請遵循以下步驟：
 
@@ -100,7 +100,7 @@ ht-degree: 5%
 
 1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;以開始配置開發應用程式。
 
-1. 請確定在Adobe Campaign和透過SDK的應用程式程式碼中定義相同的&#x200B;**[!UICONTROL Integration key]**。 有關詳細資訊，請參閱：[將Campaign SDK整合至行動應用程式](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。 此整合金鑰是每個應用程式專屬的，可讓您將行動應用程式連結至Adobe Campaign平台。
+1. 請確定在Adobe Campaign和透過SDK的應用程式程式碼中定義相同的&#x200B;**[!UICONTROL Integration key]**。 有關詳細資訊，請參閱：[將Campaign SDK整合至行動應用程式](integrating-campaign-sdk-into-the-mobile-application.md)。 此整合金鑰是每個應用程式專屬的，可讓您將行動應用程式連結至Adobe Campaign平台。
 
    >[!NOTE]
    >
