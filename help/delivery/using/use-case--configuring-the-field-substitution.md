@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -30,15 +30,15 @@ ht-degree: 4%
 * 包含一或多個個人化欄位的傳送，
 * 根據傳送中使用的個人化欄位修改&#x200B;**資料結構**&#x200B;的種子地址。
 
-## 建立傳送{#step-1---creating-a-delivery}
+## 建立傳遞 {#step-1---creating-a-delivery}
 
-在[建立電子郵件傳送](../../delivery/using/creating-an-email-delivery.md)區段中會詳細說明建立傳送的步驟。
+在[建立電子郵件傳送](creating-an-email-delivery.md)區段中會詳細說明建立傳送的步驟。
 
 在此範例中，傳送管理員已建立電子報。
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## 編輯種子地址資料架構{#editing-the-seed-addresses-data-schema}
+## 編輯種子地址資料架構 {#editing-the-seed-addresses-data-schema}
 
 有關如何修改資料架構的說明，請參閱一節。
 
@@ -51,9 +51,9 @@ ht-degree: 4%
 
 此列舉可讓使用者指定其客戶的最喜愛文學類型。
 
-要在種子地址&#x200B;**輸入表單**&#x200B;中查看此資料架構修改，必須更新它。 請參閱[更新輸入表單](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form)區段。
+要在種子地址&#x200B;**輸入表單**&#x200B;中查看此資料架構修改，必須更新它。 請參閱[更新輸入表單](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form)區段。
 
-## 配置個人化{#configuring-personalization}
+## 設定個人化 {#configuring-personalization}
 
 1. 開啟傳遞。
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 設定您的傳送清單和種子地址。 請參閱[識別目標母體](../../delivery/using/steps-defining-the-target-population.md)。
+1. 設定您的傳送清單和種子地址。 請參閱[識別目標母體](steps-defining-the-target-population.md)。
 
    在此範例中，使用者選取其&#x200B;**最喜愛的文學類型**&#x200B;為Sci-Fi的使用者作為主要目標母體。
 
@@ -73,7 +73,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >有關&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;連結的詳細資訊，請參閱[使用案例：依條件](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)選取種子地址。
+   >有關&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;連結的詳細資訊，請參閱[使用案例：依條件](use-case--selecting-seed-addresses-on-criteria.md)選取種子地址。
 
 1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤，然後選取種子地址以測試個人化。
 
