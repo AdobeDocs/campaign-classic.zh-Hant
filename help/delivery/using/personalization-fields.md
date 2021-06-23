@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 8%
 >
 >個人化欄位內容不能超過1024個字元。
 
-## 資料源{#data-sources}
+## 資料來源 {#data-sources}
 
 根據選取的傳送模式，個人化欄位可能來自兩種資料來源：
 
@@ -44,7 +44,7 @@ ht-degree: 8%
 
 選取資料來源（收件者欄位或檔案欄位）後，此插入會採用命令的形式，此命令將由Adobe Campaign解譯，並由指定收件者的欄位值取代。 然後，您就可以在&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中查看物理更換。
 
-## 個人化欄位範例{#personalization-fields-example}
+## 個人化欄位範例 {#personalization-fields-example}
 
 我們會建立電子郵件，先插入收件者姓名，然後在訊息內文中新增設定檔建立日期。 操作步驟：
 
@@ -73,9 +73,9 @@ ht-degree: 8%
    >
    >當傳送屬於工作流程時，您可以使用暫時工作流程表格中的資料。 此資料會分組在&#x200B;**[!UICONTROL Target extension]**&#x200B;功能表中。 如需詳細資訊，請參閱[本章節](../../workflow/using/data-life-cycle.md#target-data)。
 
-## 最佳化個人化{#optimizing-personalization}
+## 最佳化個人化 {#optimizing-personalization}
 
-您可以使用專用選項來最佳化個人化：**[!UICONTROL Prepare the personalization data with a workflow]**，可在傳送屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤中使用。 如需分析傳送的詳細資訊，請參閱[此區段](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
+您可以使用專用選項來最佳化個人化：**[!UICONTROL Prepare the personalization data with a workflow]**，可在傳送屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤中使用。 如需分析傳送的詳細資訊，請參閱[此區段](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 在傳遞分析期間，此選項會自動建立並執行工作流程，將連結至目標的所有資料儲存在臨時表格中，包括來自FDA中連結之表格的資料。
 
@@ -102,7 +102,7 @@ ht-degree: 8%
 
 ![](assets/perso_optimization_temp_table.png)
 
-## 超時個人化階段{#timing-out-personalization}
+## 逾時個人化階段 {#timing-out-personalization}
 
 若要改善傳送保護，您可以為個人化階段設定逾時期間。
 
@@ -116,9 +116,9 @@ ht-degree: 8%
 
 如果將此選項設為0，則個人化階段不會有時間限制。
 
-## 教學課程影片{#personalization-fields-video}
+## 教學課程影片 {#personalization-fields-video}
 
-了解如何將個人化欄位新增至主旨行，以及電子郵件傳送的內容。
+瞭解如何將個人化欄位新增至主旨行，以及電子郵件傳送的內容。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
