@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -22,4 +22,4 @@ Adobe Campaign可讓您產生檔案，以便大量傳送個人化信函。 收�
 >郵遞區號是計算欄位。 預設情況下，地址最多可包含6行：第一行包含名字和姓氏，下一行包含郵遞區號（道路等），最後一行則包含郵遞區號和城鎮。\
 >如果名稱、郵遞區號欄位和城鎮/城市欄位不為空，則地址視為完整。
 
-以下各節提供直接郵件通道的專屬資訊。 有關如何建立和傳送傳遞的全域資訊，請參閱[此區段](../../delivery/using/steps-about-delivery-creation-steps.md)。
+以下各節提供直接郵件通道的專屬資訊。 有關如何建立和傳送傳遞的全域資訊，請參閱[此區段](steps-about-delivery-creation-steps.md)。
