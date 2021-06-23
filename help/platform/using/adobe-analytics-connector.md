@@ -7,22 +7,26 @@ feature: 概覽
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 46e5cac1df419de933d96a3f35f7ac491a1defa5
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics Connector{#adobe-analytics-connector}
 
-## 關於Adobe Analytics Connector整合{#about-analytics-connector-integration}
+## 關於Adobe Analytics Connector整合 {#about-analytics-connector-integration}
+
+Adobe Analytics連接器可讓Adobe Campaign和Adobe Analytics透過&#x200B;**[!UICONTROL Web Analytics connectors]**&#x200B;封裝互動。 它會以關於電子郵件促銷活動後使用者行為的區段形式，將資料轉送至Adobe Campaign。 相反地，它會將Adobe Campaign所傳送電子郵件促銷活動的指標和屬性傳送至Adobe Analytics。
 
 >[!CAUTION]
 >
->Adobe Analytics Connector與交易式訊息（訊息中心）不相容。
+>* Adobe Analytics Connector與交易式訊息（訊息中心）不相容。
+   >
+   >
+* 開始之前，請確定已在Campaign中實作AdobeIdentity Management系統(IMS)。 [在本頁面](../../integrations/using/about-adobe-id.md)深入瞭解。
 
-Adobe Analytics連接器可讓Adobe Campaign和Adobe Analytics透過&#x200B;**[!UICONTROL Web Analytics connectors]**&#x200B;封裝互動。 它會以關於電子郵件促銷活動後使用者行為的區段形式，將資料轉送至Adobe Campaign。 相反地，它會將Adobe Campaign所傳送電子郵件促銷活動的指標和屬性傳送至Adobe Analytics。
 
 Adobe Campaign使用Adobe Analytics Connector可測量網際網路受眾(Web Analytics)。 有了這些整合，Adobe Campaign便能復原行銷活動後一或多個網站的訪客行為資料，並（分析後）執行再行銷活動，以便將其轉換為購買者。 反之，Adobe Campaign的網頁分析工具可將指標和行銷活動屬性轉送至其平台。
 
@@ -39,7 +43,7 @@ Adobe Campaign使用Adobe Analytics Connector可測量網際網路受眾(Web Ana
    1. 恢復和分析區段，
    1. 觸發再行銷活動。
 
-## 設定整合{#setting-up-the-integration}
+## 設定整合 {#setting-up-the-integration}
 
 若要設定Data connector，您必須連線至Adobe Campaign執行個體並執行下列操作：
 
@@ -47,7 +51,7 @@ Adobe Campaign使用Adobe Analytics Connector可測量網際網路受眾(Web Ana
 1. [設定轉換變數和成功事件](#configure-conversion-success)
 1. [在Adobe Campaign Classic中設定您的外部帳戶](#external-account-classic)
 
-### 在Adobe Analytics {#report-suite-analytics}中建立報表套裝
+### 在Adobe Analytics中建立報表套裝 {#report-suite-analytics}
 
 若要設定Adobe Analytics/Adobe Campaign Classic整合，您必須連線至您的[!DNL Adobe Analytics]執行個體並執行下列操作：
 
@@ -79,7 +83,7 @@ Adobe Campaign使用Adobe Analytics Connector可測量網際網路受眾(Web Ana
 
 1. 配置後，按一下&#x200B;**[!UICONTROL Create report suite]**。
 
-### 設定轉換變數和成功事件{#configure-conversion-success}
+### 設定轉換變數和成功事件 {#configure-conversion-success}
 
 建立&#x200B;**[!UICONTROL Report suite]**&#x200B;後，您需要依照以下方式配置&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**:
 
@@ -122,7 +126,7 @@ Adobe Campaign使用Adobe Analytics Connector可測量網際網路受眾(Web Ana
 
 設定報表套裝後，您需要在Adobe Campaign Classic中設定&#x200B;**[!UICONTROL External accounts]**。
 
-### 在Adobe Campaign Classic {#external-account-classic}中設定外部帳戶
+### 在Adobe Campaign Classic中設定您的外部帳戶 {#external-account-classic}
 
 >[!IMPORTANT]
 >
@@ -198,7 +202,7 @@ Adobe Campaign使用Adobe Analytics Connector可測量網際網路受眾(Web Ana
 >
 >如果您使用數個對象測量工具，可在建立外部帳戶時，於&#x200B;**[!UICONTROL Partners]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Other]**。 您只能在傳送屬性中參考一個外部帳戶：因此，您需要借由新增Adobe預期的參數以及所有其他測量工具來調整追蹤URL的公式。
 
-### 網頁分析程式的技術工作流程{#technical-workflows-of-web-analytics-processes}
+### 網頁分析程式的技術工作流程 {#technical-workflows-of-web-analytics-processes}
 
 Adobe Campaign和Adobe Analytics之間的資料交換由四個技術工作流程處理，以作為背景工作執行。
 
@@ -243,7 +247,7 @@ Adobe Campaign和Adobe Analytics之間的資料交換由四個技術工作流程
 
 
 
-## 在Adobe Campaign {#tracking-deliveries-in-adobe-campaign}中追蹤傳送
+## 在Adobe Campaign中追蹤傳遞 {#tracking-deliveries-in-adobe-campaign}
 
 為了讓Adobe Experience Cloud在Adobe Campaign傳送後能夠追蹤網站上的活動，您必須在傳送屬性中參考相符的連接器。 若要這麼做，請套用下列步驟：
 
@@ -258,7 +262,7 @@ Adobe Campaign和Adobe Analytics之間的資料交換由四個技術工作流程
 
 1. 您現在可以傳送傳遞內容，並在Adobe Analytics中存取報表。
 
-## 建立再行銷促銷活動{#creating-a-re-marketing-campaign}
+## 建立再行銷行銷活動 {#creating-a-re-marketing-campaign}
 
 若要準備再行銷行銷活動，只需建立要用於再行銷類型行銷活動的傳遞範本。 然後設定再行銷促銷活動，並將其連結至區段。 每個區段必須有不同的再行銷促銷活動。
 
