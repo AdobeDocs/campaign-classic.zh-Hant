@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 傳遞範本可為最常見的活動類型提供現成的案例，借此提高效率。 透過範本，行銷人員可以在較短的時間內以最少的自訂方式部署新的行銷活動。
 
-在[此小節](../../delivery/using/creating-a-delivery-template.md)中深入了解傳遞範本。
+在[此小節](creating-a-delivery-template.md)中深入了解傳遞範本。
 
-## 開始使用傳遞範本{#gs-templates}
+## 開始使用傳遞範本 {#gs-templates}
 
-[傳遞範本](../../delivery/using/creating-a-delivery-template.md)可讓您一次定義一組符合您需求且可重複使用的技術和功能屬性。 然後，您就可以視需要節省時間並標準化傳送。
+[傳遞範本](creating-a-delivery-template.md)可讓您一次定義一組符合您需求且可重複使用的技術和功能屬性。 然後，您就可以視需要節省時間並標準化傳送。
 
 當您在Adobe Campaign中管理多個品牌時，Adobe建議每個品牌有一個子網域。 例如，銀行可以有與其每個地區機構對應的數個子網域。 如果銀行擁有bluebank.com域，其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每個子網域有一個傳送範本可讓您一律為每個品牌使用正確的預先設定參數，以避免錯誤並節省時間。
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 若要在Campaign介面中設定位址，請遵循下列步驟：
 
-1. 在[傳遞範本](../../delivery/using/creating-a-delivery-template.md)中，按一下&#x200B;**[!UICONTROL From]**&#x200B;連結。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;視窗中，填寫下列欄位：
+1. 在[傳遞範本](creating-a-delivery-template.md)中，按一下&#x200B;**[!UICONTROL From]**&#x200B;連結。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;視窗中，填寫下列欄位：
 
    ![](assets/d_best_practices_email_header.png)
 
