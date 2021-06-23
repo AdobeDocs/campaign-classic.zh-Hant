@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 本節提供電子郵件傳送專屬的選項和參數。
 
-## 電子郵件密件副本{#email-bcc}
+## 電子郵件密件副本 {#email-bcc}
 
 Adobe Campaign可讓您透過密件副本，將密件副本電子郵件地址新增至訊息目標，以在外部系統上儲存電子郵件。
 
@@ -45,7 +45,7 @@ Adobe Campaign可讓您透過密件副本，將密件副本電子郵件地址新
 >
 >如果開啟並點進傳送至BCC位址的電子郵件，在傳送分析的&#x200B;**[!UICONTROL Total opens]**&#x200B;和&#x200B;**[!UICONTROL Clicks]**&#x200B;中會考量這一點，這可能會造成某些錯誤計算。
 
-## 選擇消息格式{#selecting-message-formats}
+## 選擇消息格式 {#selecting-message-formats}
 
 您可以變更傳送的電子郵件訊息的格式。 若要這麼做，請編輯傳送屬性，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤。
 
@@ -71,13 +71,13 @@ Adobe Campaign可讓您透過密件副本，將密件副本電子郵件地址新
 
 >[!NOTE]
 >
->如需定義電子郵件內容的詳細資訊，請參閱[此區段](../../delivery/using/defining-the-email-content.md)。
+>如需定義電子郵件內容的詳細資訊，請參閱[此區段](defining-the-email-content.md)。
 
-## 生成鏡像頁{#generating-mirror-page}
+## 產生鏡像頁面 {#generating-mirror-page}
 
 鏡像頁面是可透過網頁瀏覽器線上存取的HTML頁面。 其內容與電子郵件相同。
 
-依預設，如果將連結插入郵件內容中，則會產生鏡像頁面。 有關個人化區塊插入的詳細資訊，請參閱[個人化區塊](../../delivery/using/personalization-blocks.md)。
+依預設，如果將連結插入郵件內容中，則會產生鏡像頁面。 有關個人化區塊插入的詳細資訊，請參閱[個人化區塊](personalization-blocks.md)。
 
 在傳送屬性中， **[!UICONTROL Validity]**&#x200B;標籤的&#x200B;**[!UICONTROL Mode]**&#x200B;欄位可讓您修改此頁面的產生模式。
 
@@ -95,7 +95,7 @@ Adobe Campaign可讓您透過密件副本，將密件副本電子郵件地址新
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## 字元編碼{#character-encoding}
+## 字元編碼 {#character-encoding}
 
 在傳送參數的&#x200B;**[!UICONTROL SMTP]**&#x200B;標籤中， **[!UICONTROL Character encoding]**&#x200B;區段可讓您設定特定編碼。
 
@@ -107,7 +107,7 @@ Adobe Campaign可讓您透過密件副本，將密件副本電子郵件地址新
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
-## 管理退信電子郵件{#managing-bounce-emails}
+## 管理退信電子郵件 {#managing-bounce-emails}
 
 傳送參數的&#x200B;**[!UICONTROL SMTP]**&#x200B;標籤可讓您設定退信郵件的管理。
 
@@ -117,9 +117,9 @@ Adobe Campaign可讓您透過密件副本，將密件副本電子郵件地址新
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-有關退信管理的詳細資訊，請參閱[此部分](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
+有關退信管理的詳細資訊，請參閱[此部分](understanding-delivery-failures.md#bounce-mail-management)。
 
-## 新增SMTP標題{#adding-smtp-headers}
+## 新增SMTP標題 {#adding-smtp-headers}
 
 您可以將SMTP標題新增至您的傳送。 若要這麼做，請在傳送中使用&#x200B;**[!UICONTROL SMTP]**&#x200B;標籤的相關區段。
 
