@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 發佈範本{#publication-templates}
 
-## 關於發佈模板{#about-publication-templates}
+## 關於發佈範本 {#about-publication-templates}
 
 發佈範本是要發佈的內容的身分卡。 它會參考發佈程式中使用的資源，例如：
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 * 輸入表格，
 * 每個輸出文檔的轉換模板。
 
-## 發佈模板{#identification-of-a-publication-template}的標識
+## 出版物模板的標識 {#identification-of-a-publication-template}
 
 發佈範本的名稱和命名空間可供識別。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 >
 >實際上，建議對結構、表單和發佈範本使用相同的索引鍵。
 
-## 建立和配置模板{#creating-and-configuring-the-template}
+## 建立和設定範本 {#creating-and-configuring-the-template}
 
 預設情況下，發佈模板儲存在&#x200B;**[!UICONTROL Administration > Configuration > Publication templates]**&#x200B;節點中。 要建立新模板，請按一下模板清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需內容產生的詳細資訊，請參閱[建立內容例項](../../delivery/using/using-a-content-template.md#creating-a-content-instance)。
+   >如需內容產生的詳細資訊，請參閱[建立內容例項](using-a-content-template.md#creating-a-content-instance)。
 
 ### 傳遞 {#delivery}
 
@@ -95,13 +95,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需根據內容建立傳送的範例，請參閱[傳送內容例項](../../delivery/using/using-a-content-template.md#delivering-a-content-instance)。
+>如需根據內容建立傳送的範例，請參閱[傳送內容例項](using-a-content-template.md#delivering-a-content-instance)。
 
 ### 匯總器 {#aggregator}
 
 通過從指令碼或查詢清單聚合資料，可以使XML文檔與內容資料進行擴展。 其目的是補充連結所參考的特定資訊或從資料庫中新增元素。
 
-### 多檔案生成{#multi-file-generation}
+### 產生多檔案 {#multi-file-generation}
 
 要激活多個檔案生成，請在發佈模型中選擇&#x200B;**[!UICONTROL Multi-file generation]**&#x200B;選項。 此選項允許您在樣式表中指定輸出文檔每個頁面的開頭的分區標籤。 內容的產生會針對遇到的每個分割標籤產生檔案。
 
