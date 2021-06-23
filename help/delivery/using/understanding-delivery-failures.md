@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: 瞭解傳送故障
+title: 瞭解傳遞故障
 description: 了解如何了解傳送失敗
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
 
 ---
 
-# 瞭解傳送故障{#understanding-delivery-failures}
+# 瞭解傳遞故障{#understanding-delivery-failures}
 
-## 瞭解傳送故障{#about-delivery-failures}
+## 瞭解傳送故障 {#about-delivery-failures}
 
 當訊息（電子郵件、簡訊、推播通知）無法傳送至設定檔時，遠端伺服器會自動傳送錯誤訊息，此錯誤訊息會由Adobe Campaign平台擷取，並限定為隔離電子郵件地址或電話號碼。 請參閱[退回郵件管理](#bounce-mail-management)。
 
@@ -31,13 +31,13 @@ ht-degree: 14%
 
 **相關主題：**
 
-* [傳送記錄檔和歷史記錄](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)
-* [失敗狀態](../../delivery/using/delivery-performances.md#failed-status)
+* [傳送記錄檔和歷史記錄](delivery-dashboard.md#delivery-logs-and-history)
+* [失敗狀態](delivery-performances.md#failed-status)
 * [傳送失敗類型和原因](#delivery-failure-types-and-reasons)
 
 ## 傳送失敗類型和原因 {#delivery-failure-types-and-reasons}
 
-訊息失敗時有三種錯誤類型。 每個錯誤類型都會決定地址是否傳送至隔離。 有關詳細資訊，請參閱[將地址發送到隔離區的條件](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
+訊息失敗時有三種錯誤類型。 每個錯誤類型都會決定地址是否傳送至隔離。 有關詳細資訊，請參閱[將地址發送到隔離區的條件](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
 * **硬式**：「硬式」錯誤表示地址無效。這包含明確指出地址無效的錯誤訊息，例如：&quot;未知使用者&quot;。
 * **軟式**：這可能是暫時錯誤，或無法分類的錯誤，例如：「無效域」或「信箱已滿」。
@@ -186,11 +186,11 @@ ht-degree: 14%
 
 >[!IMPORTANT]
 >
->對於托管或混合安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md),Campaign將不再使用傳送中的重試設定。 軟退信重試次數及兩者之間的時間長度，由Enhanced MTA根據來自訊息電子郵件網域傳回之退信的類型和嚴重性決定。
+>對於托管或混合安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md),Campaign將不再使用傳送中的重試設定。 軟退信重試次數及兩者之間的時間長度，由Enhanced MTA根據來自訊息電子郵件網域傳回之退信的類型和嚴重性決定。
 
-若要使用舊版Campaign MTA進行內部部署安裝和托管/混合安裝，若要修改傳送的持續時間，請前往傳送或傳送範本的進階參數，並在對應欄位中指定所需的持續時間。 請參閱[定義有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
+若要使用舊版Campaign MTA進行內部部署安裝和托管/混合安裝，若要修改傳送的持續時間，請前往傳送或傳送範本的進階參數，並在對應欄位中指定所需的持續時間。 請參閱[定義有效期](steps-sending-the-delivery.md#defining-validity-period)。
 
-預設設定允許每小時間隔5次重試，之後每天4天重試1次。 可全域變更重試次數(請聯絡您的Adobe技術管理員)，或針對每個傳送或傳送範本（請參閱[設定重試](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)）。
+預設設定允許每小時間隔5次重試，之後每天4天重試1次。 可全域變更重試次數(請聯絡您的Adobe技術管理員)，或針對每個傳送或傳送範本（請參閱[設定重試](steps-sending-the-delivery.md#configuring-retries)）。
 
 ## 同步與非同步錯誤 {#synchronous-and-asynchronous-errors}
 
@@ -207,9 +207,9 @@ ht-degree: 14%
 
    >[!NOTE]
    >
-   >在[傳遞能力管理](../../delivery/using/about-deliverability.md)一節中詳細說明了投訴管理。
+   >在[傳遞能力管理](about-deliverability.md)一節中詳細說明了投訴管理。
 
-## 退回郵件管理{#bounce-mail-management}
+## 退回郵件管理 {#bounce-mail-management}
 
 Adobe Campaign平台可讓您透過退信功能管理電子郵件傳送失敗。
 
@@ -219,13 +219,13 @@ Adobe Campaign平台可讓您透過退信功能管理電子郵件傳送失敗。
 
 >[!IMPORTANT]
 >
->若為托管或混合式安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，則不再使用大部分的電子郵件管理規則。 如需詳細資訊，請參閱[本節](#email-management-rules)。
+>若為托管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則不再使用大部分的電子郵件管理規則。 如需詳細資訊，請參閱[本節](#email-management-rules)。
 
 ### 退回郵件資格 {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
->對於托管或混合安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md):
+>對於托管或混合安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md):
 >
 >* **[!UICONTROL Delivery log qualification]**&#x200B;表格中的退信限定不再用於&#x200B;**synchronous**&#x200B;傳送失敗錯誤訊息。 Enhanced MTA會決定退信類型和資格，並將該資訊傳回至Campaign。
    >
@@ -264,13 +264,13 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 >[!NOTE]
 >
->如果ISP中斷，透過Campaign傳送的電子郵件將會錯誤標示為退信。 若要更正此問題，您需要更新退信資格。 如需詳細資訊，請參閱[此頁面](../../delivery/using/update-bounce-qualification.md)。
+>如果ISP中斷，透過Campaign傳送的電子郵件將會錯誤標示為退信。 若要更正此問題，您需要更新退信資格。 如需詳細資訊，請參閱[此頁面](update-bounce-qualification.md)。
 
-### 電子郵件管理規則{#email-management-rules}
+### 電子郵件管理規則 {#email-management-rules}
 
 >[!IMPORTANT]
 >
->若為托管或混合式安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，則不再使用大部分的電子郵件管理規則。 如需詳細資訊，請參閱下節。
+>若為托管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則不再使用大部分的電子郵件管理規則。 如需詳細資訊，請參閱下節。
 
 郵件規則通過&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;節點訪問。 電子郵件管理規則會顯示在視窗的下半部。
 
@@ -288,11 +288,11 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 >* 管理規則的修改或建立僅供專家使用者使用。
 
 
-#### 傳入電子郵件{#inbound-email}
+#### 傳入電子郵件 {#inbound-email}
 
 >[!IMPORTANT]
 >
->對於托管或混合安裝，如果您已升級到[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，並且您的實例具有&#x200B;**Webhooks/EFS**&#x200B;功能，則&#x200B;**[!UICONTROL Inbound email]**&#x200B;規則不再用於同步傳送失敗錯誤訊息。 如需詳細資訊，請參閱[本節](#bounce-mail-qualification)。
+>對於托管或混合安裝，如果您已升級到[Enhanced MTA](sending-with-enhanced-mta.md)，並且您的實例具有&#x200B;**Webhooks/EFS**&#x200B;功能，則&#x200B;**[!UICONTROL Inbound email]**&#x200B;規則不再用於同步傳送失敗錯誤訊息。 如需詳細資訊，請參閱[本節](#bounce-mail-qualification)。
 
 對於使用舊版Campaign MTA的內部部署安裝和托管/混合安裝，這些規則包含可由遠端伺服器傳回的字元字串清單，可讓您限定錯誤（**Hard**、**Soft**&#x200B;或&#x200B;**Ignored**）。
 
@@ -304,11 +304,11 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 有關退信限定的詳細資訊，請參閱[本節](#bounce-mail-qualification)。
 
-#### 域管理{#domain-management}
+#### 網域管理 {#domain-management}
 
 >[!IMPORTANT]
 >
->若為托管或混合安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，則不再使用&#x200B;**[!UICONTROL Domain management]**&#x200B;規則。 **DKIM (DomainKeys Indified Mail)** 電子郵件驗證簽署是由 Enhanced MTA 針對所有網域的所有郵件完成。除非在 Enhanced MTA 層級中另外指定，否則不會使用 **Sender ID**、**DomainKeys** 或 **S/MIME** 簽署。
+>若為托管或混合安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則不再使用&#x200B;**[!UICONTROL Domain management]**&#x200B;規則。 **DKIM (DomainKeys Indified Mail)** 電子郵件驗證簽署是由 Enhanced MTA 針對所有網域的所有郵件完成。除非在 Enhanced MTA 層級中另外指定，否則不會使用 **Sender ID**、**DomainKeys** 或 **S/MIME** 簽署。
 
 若為使用舊版Campaign MTA的內部部署安裝和托管/混合式安裝，Adobe Campaign傳訊伺服器會將單一&#x200B;**網域管理**&#x200B;規則套用至所有網域。
 
@@ -319,11 +319,11 @@ Adobe Campaign會篩選此訊息以刪除變數內容（例如ID、日期、電�
 
 如果郵件在Outlook中的發件人地址中顯示為&#x200B;**[!UICONTROL on behalf of]**，請確保您的電子郵件沒有使用&#x200B;**發件人ID**&#x200B;簽名，該ID是Microsoft的過時專有電子郵件身份驗證標準。 如果啟用&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項，請取消勾選對應的方塊，並聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力將不會受到影響。
 
-#### MX管理{#mx-management}
+#### MX管理 {#mx-management}
 
 >[!IMPORTANT]
 >
->對於托管或混合安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，則不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;傳送吞吐量規則。 Enhanced MTA使用其專屬的MX規則，可讓它根據您過去的電子郵件信譽，以及您傳送電子郵件之網域所提供的即時意見，依網域自訂您的輸送量。
+>對於托管或混合安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;傳送吞吐量規則。 Enhanced MTA使用其專屬的MX規則，可讓它根據您過去的電子郵件信譽，以及您傳送電子郵件之網域所提供的即時意見，依網域自訂您的輸送量。
 
 若是使用舊版Campaign MTA的內部部署安裝和托管/混合安裝：
 
