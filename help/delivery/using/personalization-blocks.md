@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 >
 >個人化區塊也可從&#x200B;**[!UICONTROL Digital Content Editor (DCE)]**&#x200B;取得。 有關詳細資訊，請參見[此頁面](../../web/using/editing-content.md#inserting-a-personalization-block)。
 
-## 插入個人化區塊{#inserting-personalization-blocks}
+## 插入個人化區塊 {#inserting-personalization-blocks}
 
 若要在訊息中插入個人化區塊，請遵循下列步驟：
 
@@ -56,7 +56,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
-## 個人化區塊範例{#personalization-blocks-example}
+## 個人化區塊範例 {#personalization-blocks-example}
 
 在此範例中，我們會建立電子郵件，讓收件者能夠使用個人化區塊來檢視鏡像頁面、在社交網路上分享電子報，以及取消訂閱未來的傳送內容。
 
@@ -68,7 +68,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
 >[!NOTE]
 >
->有關鏡像頁生成的詳細資訊，請參閱[生成鏡像頁](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
+>有關鏡像頁生成的詳細資訊，請參閱[生成鏡像頁](sending-messages.md#generating-the-mirror-page)。
 
 1. 建立新傳送或開啟現有的電子郵件類型傳送。
 1. 在傳遞精靈中，按一下&#x200B;**[!UICONTROL Subject]**&#x200B;編輯訊息的主旨並輸入主旨。
@@ -83,7 +83,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
 1. 確認區塊內容已正確顯示。
 
-## 現成可用的個人化區塊{#out-of-the-box-personalization-blocks}
+## 現成可用的個人化區塊 {#out-of-the-box-personalization-blocks}
 
 預設會提供個人化區塊清單，協助您個人化訊息的內容。
 
@@ -100,24 +100,12 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
    >[!NOTE]
    >
-   >有關鏡像頁生成的詳細資訊，請參閱[生成鏡像頁](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
+   >有關鏡像頁生成的詳細資訊，請參閱[生成鏡像頁](sending-messages.md#generating-the-mirror-page)。
 
 * **[!UICONTROL Link to mirror page]** :插入指向鏡像頁面的連結：「如果您無法正確檢視此訊息，請按一下這裡」。
 * **[!UICONTROL Unsubscription link]** :插入可從所有傳送（封鎖清單）中取消訂閱的連結。
-* **[!UICONTROL Formatting function for proper nouns]** :會產生 **[!UICONTROL toSmartCase]** Javascript函式，此函式會將每個字詞的首字母變更為大寫。必須將此區塊插入傳送的原始碼中，並插入&#x200B;**`<script>...</script>`**&#x200B;標籤中。
-
-   在以下範例中，函式可用來將元素「My header」取代為「My new header」，每個字詞都帶有大寫字母：
-
-   ```
-   <h1 id="sample">My header</h1>
-   <script><%@ include view='toSmartCase'%>;
-   document.getElementById("sample").innerHTML = toSmartCase("My new header");
-   </script>
-   ```
-
-   ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
-
-* **[!UICONTROL Registration page URL]** :插入訂閱URL(請參閱 [關於服務與訂閱](../../delivery/using/about-services-and-subscriptions.md))。
+* **[!UICONTROL Formatting function for proper nouns]** :會產生 **[!UICONTROL toSmartCase]** Javascript函式，此函式會將每個字詞的首字母變更為大寫。
+* **[!UICONTROL Registration page URL]** :插入訂閱URL(請參閱 [關於服務與訂閱](about-services-and-subscriptions.md))。
 * **[!UICONTROL Registration link]** :插入訂閱連結。在設定例項時已定義的項目。
 * **[!UICONTROL Registration link (with referrer)]** :插入訂閱連結，以識別訪客和傳送。設定執行個體時已定義連結。
 
@@ -126,11 +114,11 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
    >此區塊僅可用於目標定位訪客的傳遞。
 
 * **[!UICONTROL Registration confirmation]** :插入啟用以確認訂閱的連結。
-* **[!UICONTROL Social network sharing links]** :插入可讓收件者與電子郵件用戶端、Facebook、Twitter和LinkedIn共用鏡像頁面內容連結的按鈕(請參閱病毒式行 [銷：轉給朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
+* **[!UICONTROL Social network sharing links]** :插入可讓收件者與電子郵件用戶端、Facebook、Twitter和LinkedIn共用鏡像頁面內容連結的按鈕(請參閱病毒式行 [銷：轉給朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
 * **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** :產生程式碼，使用預先定義的HTML樣式來格式化電子郵件。這些區塊必須插入傳送的原始碼中（位於&#x200B;**[!UICONTROL ...]**&#x200B;區段），並插入&#x200B;**`<style>...</style>`**&#x200B;標籤中。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** :插入啟用將互動選件設為的URL(請 **[!UICONTROL Accepted]** 參閱 [本區段](../../interaction/using/offer-analysis-report.md))。
 
-## 定義自訂個人化區塊{#defining-custom-personalization-blocks}
+## 定義自訂個人化區塊 {#defining-custom-personalization-blocks}
 
 您可以透過&#x200B;**[!UICONTROL Include...]**&#x200B;功能表，從個人化欄點陣圖示定義要插入的新個人化欄位。 這些欄位會在個人化區塊中定義。
 
@@ -152,7 +140,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
    * 輸入內容（在HTML、文字、JavaScript等中） ，然後按一下&#x200B;**[!UICONTROL Save]**。
 
-## 教學課程影片{#personalization-blocks-video}
+## 教學課程影片 {#personalization-blocks-video}
 
 了解如何建立動態內容區塊，以及如何使用這些區塊來個人化電子郵件傳送的內容。
 
