@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 2%
@@ -15,23 +15,23 @@ ht-degree: 2%
 
 # 建立簡訊傳遞 {#creating-a-sms-delivery}
 
-## 選擇傳送通道{#selecting-the-delivery-channel}
+## 選取傳送通道 {#selecting-the-delivery-channel}
 
 若要建立新的簡訊傳送，請遵循下列步驟：
 
 >[!NOTE]
 >
->傳遞建立的全域概念在[此小節](../../delivery/using/steps-about-delivery-creation-steps.md)中介紹。
+>傳遞建立的全域概念在[此小節](steps-about-delivery-creation-steps.md)中介紹。
 
 1. 建立新傳送，例如從傳送控制面板。
 1. 選取您先前建立的傳送範本&#x200B;**傳送至行動裝置(SMPP)**。 如需詳細資訊，請參閱[變更傳送範本](sms-set-up.md#changing-the-delivery-template)區段。
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳送。 如需詳細資訊，請參閱[本章節](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用標籤、程式碼和說明來識別您的傳送。 如需詳細資訊，請參閱[本章節](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 1. 按一下&#x200B;**[!UICONTROL Continue]**&#x200B;確認此資訊並顯示消息配置窗口。
 
-## 定義SMS內容{#defining-the-sms-content}
+## 定義SMS內容 {#defining-the-sms-content}
 
 若要建立簡訊內容，請遵循下列步驟：
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   個人化欄位的使用會顯示在[關於個人化](../../delivery/using/about-personalization.md)區段中。
+   個人化欄位的使用會顯示在[關於個人化](about-personalization.md)區段中。
 
 1. 按一下頁面底部的&#x200B;**[!UICONTROL Preview]**&#x200B;以檢視呈現訊息及其個人化內容。 若要啟動預覽，請使用工具列中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按鈕選取收件者。 您可以從定義的目標中選擇收件者，或選擇其他收件者。
 
@@ -63,10 +63,10 @@ ht-degree: 2%
 
 1. 如果您使用NetSize連接器或SMPP連接器，則可以個人化傳送者的名稱。 有關詳細資訊，請參閱[進階參數](#advanced-parameters)區段。
 
-## 選擇目標人口{#selecting-the-target-population}
+## 選取目標母體 {#selecting-the-target-population}
 
-選取傳送的目標母體時的詳細程式會顯示在[此區段](../../delivery/using/steps-defining-the-target-population.md)中。
+選取傳送的目標母體時的詳細程式會顯示在[此區段](steps-defining-the-target-population.md)中。
 
-有關個人化欄位使用的詳細資訊，請參閱[此區段](../../delivery/using/about-personalization.md)。
+有關個人化欄位使用的詳細資訊，請參閱[此區段](about-personalization.md)。
 
-有關包含種子清單的詳細資訊，請參閱[此頁](../../delivery/using/about-seed-addresses.md)。
+有關包含種子清單的詳細資訊，請參閱[此頁](about-seed-addresses.md)。
