@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 您是否遇到傳遞能力問題？ 你可以在這裡找到解決方案。
 
-## MX規則錯誤{#mx-rule-error}
+## MX規則錯誤 {#mx-rule-error}
 
 **「配額滿足」錯誤消息是什麼意思？**
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 有關MX配置的詳細資訊，請參閱[此部分](../../installation/using/email-deliverability.md#mx-configuration)。
 
-## ISP {#same-error-for-an-isp}的相同錯誤消息
+## ISP的相同錯誤訊息 {#same-error-for-an-isp}
 
 **為何對特定ISP一律會收到相同的錯誤訊息？**
 
@@ -42,22 +42,22 @@ ht-degree: 2%
 
 如果問題仍然存在，請聯絡商業或傳遞能力服務，[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-## 封鎖清單與隔離{#denylist-versus-quarantine}
+## 封鎖清單與隔離 {#denylist-versus-quarantine}
 
 * **封鎖清單上的電子郵件地址與隔離的電子郵件地址之間有何差異？**
 
    * 狀態&#x200B;**[!UICONTROL Denylisted]**&#x200B;是反饋循環的結果（當某人將郵件報告為垃圾郵件時）。
 
    * 狀態&#x200B;**[!UICONTROL Quarantined]**&#x200B;是軟退信或硬退信的結果。
-   如需詳細資訊，請參閱[本節](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)。
+   如需詳細資訊，請參閱[本節](understanding-quarantine-management.md#quarantine-vs-denylist)。
 
 * **不同的隔離錯誤原因代表什麼？**
 
    原因有10個：未定義，用戶未知，無效域，拒絕，忽略錯誤，無法訪問，帳戶已禁用，郵箱已滿，未連接。
 
-   有關詳細資訊，請參閱[了解隔離管理](../../delivery/using/understanding-quarantine-management.md)。
+   有關詳細資訊，請參閱[了解隔離管理](understanding-quarantine-management.md)。
 
-## 從封鎖清單{#remove-from-denylist}中移除
+## 從封鎖清單中移除 {#remove-from-denylist}
 
 * **我的一個收件者被誤添加到封鎖名單中。如何從封鎖清單中移除這些郵件，以便開始再次傳送郵件？**
 
