@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -40,7 +40,7 @@ ht-degree: 10%
 | 05/19/2020 | 羅伯特 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | 鮑比 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-## 最佳實務{#best-practices}
+## 最佳實務 {#best-practices}
 
 在重複資料刪除期間，會個別處理入站流程。 例如，如果在查詢1的結果和查詢2的結果中找到收件者A，則不會刪除其重複項目。
 
@@ -107,7 +107,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 範例：在傳送{#example--identify-the-duplicates-before-a-delivery}之前識別重複項目
+## 範例：在傳送前識別重複項目 {#example--identify-the-duplicates-before-a-delivery}
 
 在以下範例中，重複資料刪除涉及三個查詢的聯合。
 
@@ -133,7 +133,7 @@ ht-degree: 10%
 
 執行工作流程時，所有識別為重複項目的收件者都會從結果中排除（因此也會排除傳送），並新增至重複項目清單。 此清單可能會再次使用，而不必重新識別重複項目。
 
-## 將欄位合併到單個資料記錄{#merging-fields-into-single-record}
+## 將欄位合併為單一資料記錄 {#merging-fields-into-single-record}
 
 **[!UICONTROL Merge]**&#x200B;功能允許您為重複資料刪除配置一組規則，以定義要合併到單個結果資料記錄中的欄位或欄位組。
 
@@ -159,14 +159,14 @@ ht-degree: 10%
 
    ![](assets/dedup3.png)
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * tableName
 * 綱要
 
 每個入站事件都必須指定由這些參數定義的目標。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要
