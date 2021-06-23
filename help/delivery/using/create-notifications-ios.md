@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
 
 ---
 
-# 建立iOS{#create-notifications-ios}的通知
+# 建立iOS通知{#create-notifications-ios}
 
-本節詳細說明iOS通知傳送的特定元素。 傳遞建立的全域概念在[此小節](../../delivery/using/steps-about-delivery-creation-steps.md)中介紹。
+本節詳細說明iOS通知傳送的特定元素。 傳遞建立的全域概念在[此小節](steps-about-delivery-creation-steps.md)中介紹。
 
 首先，建立新的傳送。
 
@@ -37,7 +37,7 @@ ht-degree: 3%
    >
    >有關個人化欄位使用的詳細資訊，請參閱[此區段](about-personalization.md)。
    >
-   >有關包含種子清單的詳細資訊，請參閱[關於種子地址](../../delivery/using/about-seed-addresses.md)。
+   >有關包含種子清單的詳細資訊，請參閱[關於種子地址](about-seed-addresses.md)。
 
 1. 選取&#x200B;**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**，選取與行動應用程式相關的服務（在此例中為Neotrips），然後選取應用程式的iOS版本。
 
@@ -63,7 +63,7 @@ ht-degree: 3%
    >
    >**[!UICONTROL Badge]** 和類 **[!UICONTROL Alert and badge]** 型通知可讓您修改徽章的值（行動應用程式標誌上方的數字）。若要重新整理徽章，您只需輸入0作為值即可。 如果欄位空白，徽章值將不會變更。
 
-1. 按一下&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;圖示，將表情符號插入推播通知。 若要自訂表情符號清單，請參閱[此區段](../../delivery/using/customizing-emoticon-list.md)
+1. 按一下&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;圖示，將表情符號插入推播通知。 若要自訂表情符號清單，請參閱[此區段](customizing-emoticon-list.md)
 
 1. **[!UICONTROL Action button]**&#x200B;可讓您為出現在警報通知（**action_loc_key**&#x200B;有效負載欄位）上的動作按鈕定義標籤。 如果您的iOS應用程式管理可本地化的字串(**Localable.strings**)，請在此欄位中輸入相應的鍵。 如果您的應用程式不管理可本地化的文字，請輸入要顯示在動作按鈕上的標籤。 如需可本地化字串的詳細資訊，請參閱[Apple檔案](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) 。
 1. 在&#x200B;**[!UICONTROL Play a sound]**&#x200B;欄位中，選取接收通知時由行動終端播放的音效。
@@ -92,12 +92,12 @@ ht-degree: 3%
 
 傳送訊息後，您可以監控及追蹤您的傳送。 如需詳細資訊，請參閱下列區段。
 
-* [推播通知隔離](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [監視傳遞](../../delivery/using/about-delivery-monitoring.md)
-* [瞭解傳遞故障](../../delivery/using/understanding-delivery-failures.md)
+* [推播通知隔離](understanding-quarantine-management.md#push-notification-quarantines)
+* [監視傳遞](about-delivery-monitoring.md)
+* [瞭解傳遞故障](understanding-delivery-failures.md)
 
 
-## 建立iOS豐富通知{#creating-ios-delivery}
+## 建立iOS豐富通知 {#creating-ios-delivery}
 
 若使用iOS 10或更新版本，便可產生豐富通知。 Adobe Campaign可使用變數傳送通知，讓裝置顯示豐富通知。
 
