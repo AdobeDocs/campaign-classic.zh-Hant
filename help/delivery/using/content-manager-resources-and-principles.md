@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 6%
@@ -25,11 +25,11 @@ ht-degree: 6%
 
 內容設定需要下列資源：
 
-* 資料結構：XML內容結構的說明。 有關詳細資訊，請參閱[資料結構](../../delivery/using/data-schemas.md)。
-* 資料輸入表單：資料輸入螢幕的構造。 有關詳細資訊，請參閱[輸入表單](../../delivery/using/input-forms.md)。
-* 影像：用於資料輸入表單的影像。 有關詳細資訊，請參閱[影像管理](../../delivery/using/formatting.md#image-management)。
-* 樣式表：使用XSLT語言對輸出文檔進行格式化。 有關詳細資訊，請參閱[Formatting](../../delivery/using/formatting.md)。
-* JavaScript範本：格式化輸出文檔。 有關詳細資訊，請參閱[發佈範本](../../delivery/using/publication-templates.md)。
-* JavaScript程式碼：資料匯總的JavaScript程式碼。 有關詳細資訊，請參閱[聚合器](../../delivery/using/publication-templates.md#aggregator)。
-* 發佈範本：發佈範本的定義。 有關詳細資訊，請參閱[發佈範本](../../delivery/using/publication-templates.md)。
-* 內容：要建立和發佈的內容例項。 有關詳細資訊，請參閱[使用內容範本](../../delivery/using/using-a-content-template.md)。
+* 資料結構：XML內容結構的說明。 有關詳細資訊，請參閱[資料結構](data-schemas.md)。
+* 資料輸入表單：資料輸入螢幕的構造。 有關詳細資訊，請參閱[輸入表單](input-forms.md)。
+* 影像：用於資料輸入表單的影像。 有關詳細資訊，請參閱[影像管理](formatting.md#image-management)。
+* 樣式表：使用XSLT語言對輸出文檔進行格式化。 有關詳細資訊，請參閱[Formatting](formatting.md)。
+* JavaScript範本：格式化輸出文檔。 有關詳細資訊，請參閱[發佈範本](publication-templates.md)。
+* JavaScript程式碼：資料匯總的JavaScript程式碼。 有關詳細資訊，請參閱[聚合器](publication-templates.md#aggregator)。
+* 發佈範本：發佈範本的定義。 有關詳細資訊，請參閱[發佈範本](publication-templates.md)。
+* 內容：要建立和發佈的內容例項。 有關詳細資訊，請參閱[使用內容範本](using-a-content-template.md)。
