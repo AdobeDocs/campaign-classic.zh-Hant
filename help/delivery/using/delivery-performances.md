@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -19,11 +19,11 @@ ht-degree: 6%
 
 **相關主題：**
 
-* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
-* [傳遞疑難排解](../../delivery/using/delivery-troubleshooting.md)
-* [關於傳遞能力](../../delivery/using/about-deliverability.md)
+* [傳遞儀表板](delivery-dashboard.md)
+* [傳遞疑難排解](delivery-troubleshooting.md)
+* [關於傳遞能力](about-deliverability.md)
 
-## 效能最佳實務{#best-practices-performance}
+## 效能最佳實務 {#best-practices-performance}
 
 * 請勿在執行個體上將傳送保持為失敗狀態，因為這會維護臨時表格並影響效能。
 
@@ -45,12 +45,12 @@ ht-degree: 6%
 >
 >ISP會在閒置一段時間後停用位址。 已跳出的郵件將發送到發件人，以通知他們此新狀態。
 
-## 效能問題檢查清單{#performance-issues}
+## 效能問題檢查清單 {#performance-issues}
 
 如果傳送效能不佳，您可以檢查：
 
 * **傳送的大小**:大型傳送可能需要更長的時間才能完成。MTA子項設定為處理預設批次大小，此大小適用於大部分執行個體，但當傳送持續緩慢時，需要加以檢查。
 * **傳送的目標**:傳送效能禁止受軟退信錯誤影響，這些錯誤會根據重試配置處理。錯誤數越多，重試次數就越多。
-* **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。您也可以檢查IP信譽和傳遞能力問題。 有關詳細資訊，請參閱[此部分](../../delivery/using/about-deliverability.md)和[Adobe傳遞能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
+* **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。您也可以檢查IP信譽和傳遞能力問題。 有關詳細資訊，請參閱[此部分](about-deliverability.md)和[Adobe傳遞能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
 平台和資料庫維護也會影響傳遞傳送效能。 有關詳細資訊，請參見[此頁面](../../production/using/database-performances.md)。
