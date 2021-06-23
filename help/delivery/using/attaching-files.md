@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 1%
 
 ---
 
-# 將檔案附加到電子郵件{#attaching-files}
+# 將檔案附加至電子郵件{#attaching-files}
 
-## 關於電子郵件附件{#about-email-attachments}
+## 關於電子郵件附件 {#about-email-attachments}
 
 您可以將一或多個檔案附加至電子郵件傳送。
 
@@ -30,9 +30,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->這類設定通常會在傳送範本中執行。 有關詳細資訊，請參閱[關於範本](../../delivery/using/about-templates.md)。
+>這類設定通常會在傳送範本中執行。 有關詳細資訊，請參閱[關於範本](about-templates.md)。
 
-## 附加本地檔案{#attaching-a-local-file}
+## 附加本地檔案 {#attaching-a-local-file}
 
 若要將本機檔案附加至傳送，請遵循下列步驟。
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
-## 建立計算附件{#creating-a-calculated-attachment}
+## 建立計算附件 {#creating-a-calculated-attachment}
 
 建立計算的附件時，可以在分析或傳送每則郵件時計算附件的名稱，而且取決於收件者。 您也可以個人化檔案並轉換為PDF。
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 * **檔案名稱會在傳送分析期間計算（不能取決於收件者設定檔）**
 * **檔案名稱是在每個收件者傳送時計算（取決於收件者）**
 
-### 附加本地檔案{#attach-a-local-file}
+### 附加本機檔案 {#attach-a-local-file}
 
 如果附件是本地檔案，請選取選項：**[!UICONTROL File name is specified when creating the delivery template]**。 檔案會在本機選取並上傳至伺服器。 請遵循以下步驟：
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 然後，檔案便可在伺服器上附加至從此範本建立的不同傳送。
 
-### 附加個人化訊息{#attach-a-personalized-message}
+### 附加個人化訊息 {#attach-a-personalized-message}
 
 選項&#x200B;**[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]**&#x200B;可讓您選取包含個人化欄位的檔案，例如預期收件者的姓氏和名字。
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 >
 >為避免效能問題，如果您包含從個人化URL即時下載的影像作為附件，則每個影像大小預設不應超過100,000位元組。 可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置此建議閾值。
 
-### 附加計算檔案{#attach-a-calculated-file}
+### 附加計算檔案 {#attach-a-calculated-file}
 
 您可以在傳送準備期間計算附件名稱。 要執行此操作，請選取選項&#x200B;**[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**。
 
@@ -138,7 +138,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
-### 附加個人化檔案{#attach-a-personalized-file}
+### 附加個人化檔案 {#attach-a-personalized-file}
 
 選擇附件時，可以選擇&#x200B;**[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]**&#x200B;選項。 然後，您可以將收件者個人化資料與要傳送的檔案名稱對應。
 
@@ -161,7 +161,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 
-### 附件設定{#attachment-settings}
+### 附件設定 {#attachment-settings}
 
 對於前兩個選項，可以通過選擇相應的選項來選擇&#x200B;**[!UICONTROL Upload file on the server]**。 **[!UICONTROL Update the file on the server]**&#x200B;連結可讓您開始上傳。
 
