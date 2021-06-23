@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 以下是您可使用控制面板中數個索引標籤來監控的資訊：
 
-* [傳送摘要](#delivery-summary)
+* [傳遞摘要](#delivery-summary)
 * [傳遞報告](#delivery-reports)
 * [傳送記錄、鏡像頁面、排除項目](#delivery-logs-and-history)
 * [傳送追蹤記錄和歷史記錄](#tracking-logs)
@@ -32,12 +32,12 @@ ht-degree: 4%
 
 **相關主題：**
 
-* [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
-* [瞭解隔離管理](../../delivery/using/understanding-quarantine-management.md)
-* [關於傳遞的最佳實務](../../delivery/using/delivery-best-practices.md)
-* [管理傳送能力](../../delivery/using/about-deliverability.md)
+* [瞭解傳遞故障](understanding-delivery-failures.md)
+* [瞭解隔離管理](understanding-quarantine-management.md)
+* [關於傳遞的最佳實務](delivery-best-practices.md)
+* [管理傳遞能力](about-deliverability.md)
 
-## 傳送摘要 {#delivery-summary}
+## 傳遞摘要 {#delivery-summary}
 
 **[!UICONTROL Summary]**&#x200B;標籤包含傳送的特性：傳送狀態、使用的通道、傳送者的相關資訊、主旨、執行的相關資訊。
 
@@ -49,11 +49,11 @@ ht-degree: 4%
 
 ![](assets/delivery-report.png)
 
-## 傳送記錄、歷史記錄和排除{#delivery-logs-and-history}
+## 傳送記錄、歷史記錄和排除 {#delivery-logs-and-history}
 
 **[!UICONTROL Delivery]**&#x200B;標籤提供此傳送中發生次數的歷史記錄。 它包含傳送記錄，亦即已傳送的訊息清單、其狀態以及相關的訊息。
 
-對於傳送，您只能顯示（例如）傳送失敗或隔離中地址的收件者。 要執行此操作，請按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕並選擇&#x200B;**[!UICONTROL By state]**。 然後選取下拉式清單中的狀態。 [此頁面](../../delivery/using/delivery-statuses.md)列出了各種狀態。
+對於傳送，您只能顯示（例如）傳送失敗或隔離中地址的收件者。 要執行此操作，請按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕並選擇&#x200B;**[!UICONTROL By state]**。 然後選取下拉式清單中的狀態。 [此頁面](delivery-statuses.md)列出了各種狀態。
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ ht-degree: 4%
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;連結可讓您在新視窗中檢視從清單中選取之傳送內容的鏡像頁面。
 
-鏡像頁面僅適用於已定義HTML內容的傳送。 有關詳細資訊，請參閱[生成鏡像頁](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
+鏡像頁面僅適用於已定義HTML內容的傳送。 有關詳細資訊，請參閱[生成鏡像頁](sending-messages.md#generating-the-mirror-page)。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## 傳送追蹤記錄和歷史記錄{#tracking-logs}
+## 傳送追蹤記錄和歷史記錄 {#tracking-logs}
 
 **[!UICONTROL Tracking]**&#x200B;索引標籤會列出此傳送的追蹤歷史記錄。 此索引標籤會顯示所傳送訊息的追蹤資料，亦即所有須受Adobe Campaign追蹤的URL。 追蹤資料會每小時更新。
 
@@ -75,7 +75,7 @@ ht-degree: 4%
 >
 >如果未針對傳送啟用追蹤，則不會顯示此索引標籤。
 
-追蹤設定會在傳送精靈的適當階段執行。 請參閱[如何設定追蹤的連結](../../delivery/using/how-to-configure-tracked-links.md)。
+追蹤設定會在傳送精靈的適當階段執行。 請參閱[如何設定追蹤的連結](how-to-configure-tracked-links.md)。
 
 **[!UICONTROL Tracking]** 資料會在傳送報表中解譯。請參閱[本節](../../reporting/using/delivery-reports.md)。
 
@@ -87,17 +87,17 @@ ht-degree: 4%
 
 這樣，您就可以確保以最佳方式向收件者顯示您的郵件，在各種Web用戶端、網頁郵件和裝置上。
 
-有關收件箱呈現的詳細資訊，請參閱[此頁](../../delivery/using/inbox-rendering.md)
+有關收件箱呈現的詳細資訊，請參閱[此頁](inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-## 傳遞審核{#delivery-audit-}
+## 傳遞稽核 {#delivery-audit-}
 
 **[!UICONTROL Audit]**&#x200B;索引標籤包含傳送記錄檔以及與校樣相關的所有訊息。
 
 **[!UICONTROL Refresh]**&#x200B;按鈕可讓您更新資料。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕定義資料的篩選器。
 
-特殊圖示可讓您識別錯誤或警告。 請參閱[分析傳送](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
+特殊圖示可讓您識別錯誤或警告。 請參閱[分析傳送](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 **[!UICONTROL Proofs]**&#x200B;子標籤可讓您檢視已傳送的校樣清單。
 
@@ -105,7 +105,7 @@ ht-degree: 4%
 
 通過選擇要顯示的列，可以修改此窗口中顯示的資訊（以及&#x200B;**[!UICONTROL Delivery]**&#x200B;和&#x200B;**[!UICONTROL Tracking]**&#x200B;頁簽的資訊）。 要執行此操作，請按一下右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;圖示。 有關配置清單顯示的詳細資訊，請參閱[此部分](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
-## 傳遞控制面板同步{#delivery-dashboard-synchronization}
+## 傳遞控制面板同步 {#delivery-dashboard-synchronization}
 
 在您的傳送控制面板中，您要檢查已處理的訊息和傳送記錄，以確定您的傳送已成功傳送。
 
@@ -121,7 +121,7 @@ ht-degree: 4%
 
 您也可以透過傳遞控制面板，以不同的報表來追蹤您的傳送。 如需詳細資訊，請參閱本[區段](../../reporting/using/delivery-reports.md)。
 
-## 使用案例：將發件人的IP地址添加到日誌{#use-case}
+## 使用案例：將發件人的IP地址添加到日誌 {#use-case}
 
 在本節中，您將了解如何將傳送記錄檔中傳送每個電子郵件之IP位址的相關資訊新增至傳送。
 
