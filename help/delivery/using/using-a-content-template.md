@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,13 +15,13 @@ ht-degree: 3%
 
 # 使用內容範本{#using-a-content-template}
 
-## 關於內容範本{#about-content-templates}
+## 關於內容範本 {#about-content-templates}
 
 內容範本可供參考，並直接用於傳遞。 請參閱[透過內容管理建立傳送](#creating-a-delivery-via-content-management)
 
 它們也可用來建立內容例項。 建立這些例項後，即可傳送（請參閱[傳送內容例項](#delivering-a-content-instance)）或匯出（請參閱[建立內容例項](#creating-a-content-instance)）。
 
-## 透過內容管理建立傳遞{#creating-a-delivery-via-content-management}
+## 透過內容管理建立傳遞 {#creating-a-delivery-via-content-management}
 
 在使用輸入欄位輸入內容的檢視中，您可以參考傳送中的內容範本。 傳送精靈中會新增另一個索引標籤，以定義傳送內容。
 
@@ -31,9 +31,9 @@ ht-degree: 3%
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-如需詳細資訊，請參閱完整實作範例：[在傳遞精靈](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard)中建立內容。
+如需詳細資訊，請參閱完整實作範例：[在傳遞精靈](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard)中建立內容。
 
-## 建立內容實例{#creating-a-content-instance}
+## 建立內容例項 {#creating-a-content-instance}
 
 您可以直接在Adobe Campaign樹狀結構中建立內容，以用於工作流程、匯出或直接插入新傳送。
 
@@ -69,13 +69,13 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >您可以授權產生未核准的內容。 若要這麼做，請變更發佈範本中的相關選項。 有關詳細資訊，請參閱[建立和配置模板](../../delivery/using/publication-templates.md#creating-and-configuring-the-template)。
+   >您可以授權產生未核准的內容。 若要這麼做，請變更發佈範本中的相關選項。 有關詳細資訊，請參閱[建立和配置模板](publication-templates.md#creating-and-configuring-the-template)。
 
    HTML和文字內容預設會在Adobe Campaign例項的&#x200B;**publishing**&#x200B;資料夾中產生。 您可以透過&#x200B;**NcmPublishingDir**&#x200B;選項來變更發佈資料夾。
 
-## 傳送內容例項{#delivering-a-content-instance}
+## 傳遞內容例項 {#delivering-a-content-instance}
 
-若要建立內容例項並傳送，傳遞範本必須連結至用於產生此內容的發佈範本。 如需詳細資訊，請參閱[傳送](../../delivery/using/publication-templates.md#delivery)。
+若要建立內容例項並傳送，傳遞範本必須連結至用於產生此內容的發佈範本。 如需詳細資訊，請參閱[傳送](publication-templates.md#delivery)。
 
 此外，內容儲存資料夾必須專用於從此發佈範本擷取的內容（當內容資料夾可讓您產生數種內容類型時，無法自動建立傳送）。
 
