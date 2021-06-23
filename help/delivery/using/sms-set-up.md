@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 34%
@@ -23,10 +23,10 @@ ht-degree: 34%
 
 1. 參考此外部帳戶的傳遞範本。
 
-## 建立SMPP外部帳戶{#creating-an-smpp-external-account}
+## 建立SMPP外部帳戶 {#creating-an-smpp-external-account}
 
 若要將SMS傳送至行動電話，您必須先建立SMPP外部帳戶。
-有關SMS協定和設定的詳細資訊，請參閱此[page](../../delivery/using/sms-protocol.md)。
+有關SMS協定和設定的詳細資訊，請參閱此[page](sms-protocol.md)。
 
 要執行此操作，請遵循下列步驟：
 
@@ -42,7 +42,7 @@ ht-degree: 34%
 
    >[!CAUTION]
    >
-   > 自20.2版起，舊版連接器已遭取代，不受支援。 建議使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;連接器。 如需如何移轉至建議連接器的詳細資訊，請參閱此[page](../../delivery/using/unsupported-connector-migration.md)。
+   > 自20.2版起，舊版連接器已遭取代，不受支援。 建議使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;連接器。 如需如何移轉至建議連接器的詳細資訊，請參閱此[page](unsupported-connector-migration.md)。
 
 1. **[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;選項可讓您將所有SMPP通訊傾印到記錄檔中。 必須啟用此選項，才能疑難排解連接器，並與提供者所看到的流量進行比較。
 
@@ -80,13 +80,13 @@ ht-degree: 34%
 
    但是，由於某些提供者需要使用「+」首碼，因此建議您向您的提供者查詢，並建議您視需要啟用此選項。
 
-   **[!UICONTROL Enable TLS over SMPP]**&#x200B;核取方塊可讓您加密SMPP通訊。 如需關於此項目的詳細資訊，請參閱此[頁面](../../delivery/using/sms-protocol.md)。
+   **[!UICONTROL Enable TLS over SMPP]**&#x200B;核取方塊可讓您加密SMPP通訊。 如需關於此項目的詳細資訊，請參閱此[頁面](sms-protocol.md)。
 
 1. 如果您正在配置&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;連接器，則可以設定自動回覆。
 
    如需詳細資訊，請參閱[本章節](#automatic-reply)。
 
-## SMS字母音譯{#about-character-transliteration}
+## SMS字母音譯 {#about-character-transliteration}
 
 字母音譯可在&#x200B;**[!UICONTROL Mobile]**&#x200B;標籤下的SMPP行動傳送外部帳戶中設定。
 
@@ -202,7 +202,7 @@ ht-degree: 34%
   <tr> 
    <td> Ç </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
-   <td> ） </td> 
+   <td> ) </td> 
    <td> 9 </td> 
    <td> I </td> 
    <td> Y </td> 
@@ -284,7 +284,7 @@ CR：歸位
 
 ^ { } &lt;a0/ | €`[ ~ ]`
 
-## 文字編碼{#about-text-encodings}
+## 文字編碼 {#about-text-encodings}
 
 傳送 SMS 訊息時，Adobe Campaign 可以使用一或多種文字編碼。每個編碼都有其專屬的字元集，並決定符合 SMS 訊息的字元數。
 
@@ -309,7 +309,7 @@ CR：歸位
 >
 >僅宣告您要使用的編碼。如果SMSC提供的某些編碼不符合您的使用目的，請勿在清單中宣告。
 
-## 自動回復{#automatic-reply}
+## 自動回覆 {#automatic-reply}
 
 設定延伸的通用SMPP連接器時，您可以設定自動回覆。
 
@@ -343,9 +343,9 @@ CR：歸位
 
 在[建立SMPP外部帳戶](#creating-an-smpp-external-account)部分中詳細說明了使用擴展通用SMPP連接器設定外部帳戶的步驟。
 
-## 變更傳送範本{#changing-the-delivery-template}
+## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供您傳送至行動裝置的範本。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中可用。 有關詳細資訊，請參閱[關於範本](../../delivery/using/about-templates.md)區段。
+Adobe Campaign提供您傳送至行動裝置的範本。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中可用。 有關詳細資訊，請參閱[關於範本](about-templates.md)區段。
 
 若要透過SMS通道傳送，您必須建立參照通道連接器的範本。
 
