@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -27,4 +27,4 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->如果您看不到傳送的&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤，表示追蹤尚未啟用。 請參閱[本節](../../delivery/using/how-to-configure-tracked-links.md)。
+>如果您看不到傳送的&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤，表示追蹤尚未啟用。 請參閱[本節](how-to-configure-tracked-links.md)。
