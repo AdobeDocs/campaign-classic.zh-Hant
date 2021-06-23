@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -23,15 +23,15 @@ ajouter screenshot -->
 
 ![](assets/delivery-status.png)
 
-有關您可能遇到的不同傳送失敗的詳細資訊，以及如何解決，請參閱[此頁面](../../delivery/using/understanding-delivery-failures.md)。
+有關您可能遇到的不同傳送失敗的詳細資訊，以及如何解決，請參閱[此頁面](understanding-delivery-failures.md)。
 
 **相關主題：**
 
-* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
-* [傳遞疑難排解](../../delivery/using/delivery-troubleshooting.md)
-* [關於傳遞能力](../../delivery/using/about-deliverability.md)
+* [傳遞儀表板](delivery-dashboard.md)
+* [傳遞疑難排解](delivery-troubleshooting.md)
+* [關於傳遞能力](about-deliverability.md)
 
-## 傳遞狀態清單{#list-delivery-statuses}
+## 傳遞狀態清單 {#list-delivery-statuses}
 
 <table> 
  <thead> 
@@ -51,7 +51,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 失敗<br /> </td> 
-   <td> 例如，由於地址無效或收件匣已滿，傳送無法送達收件者。 它也可連結至個人化區塊的問題，因為當結構不符合傳送對應時，這些區塊可能會產生錯誤。 請參閱<a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">了解傳送失敗</a><br /> </td> 
+   <td> 例如，由於地址無效或收件匣已滿，傳送無法送達收件者。 它也可連結至個人化區塊的問題，因為當結構不符合傳送對應時，這些區塊可能會產生錯誤。 請參閱<a href="understanding-delivery-failures.md" target="_blank">了解傳送失敗</a><br /> </td> 
   </tr>
   <tr> 
    <td> 掛起<br /> </td> 
@@ -67,7 +67,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 由服務提供者<br />考慮 </td> 
-   <td> SMS服務提供者收到了傳送。<br /> 對於托管或混合安裝，如果您已升級至 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>，訊息會成功從Campaign中繼至Enhanced MTA。</td> 
+   <td> SMS服務提供者收到了傳送。<br /> 對於托管或混合安裝，如果您已升級至 <a href="sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>，訊息會成功從Campaign中繼至Enhanced MTA。</td> 
   </tr> 
   <tr> 
    <td> 在行動裝置上收到<br /> </td> 
@@ -85,13 +85,13 @@ ajouter screenshot -->
  </tbody> 
 </table>
 
-若要了解如何最佳化Adobe Campaign電子郵件的傳遞能力，請參閱[本區段](../../delivery/using/about-deliverability.md)。 有關傳遞能力的更深入的了解，請參閱[Adobe傳遞能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
+若要了解如何最佳化Adobe Campaign電子郵件的傳遞能力，請參閱[本區段](about-deliverability.md)。 有關傳遞能力的更深入的了解，請參閱[Adobe傳遞能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
-## 掛起狀態{#pending-status}
+## 待定狀態 {#pending-status}
 
 確認傳遞後，您會看到傳遞狀態為&#x200B;**[!UICONTROL Pending]**。 此狀態表示執行程式正在等待某些資源的可用性。
 
-**[!UICONTROL Pending]**&#x200B;狀態可以先表示您的傳送已排程，且在指定日期前一直擱置。 如需詳細資訊，請參閱[傳送排程](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)區段。
+**[!UICONTROL Pending]**&#x200B;狀態可以先表示您的傳送已排程，且在指定日期前一直擱置。 如需詳細資訊，請參閱[傳送排程](steps-sending-the-delivery.md#scheduling-the-delivery-sending)區段。
 
 如果您的傳送未傳送，且其狀態維持&#x200B;**[!UICONTROL Pending]**，則可能是下列結果：
 
@@ -137,5 +137,5 @@ ajouter screenshot -->
 **相關主題：**
 
 * [傳送記錄檔和歷史記錄](#delivery-logs-and-history)
-* [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
-* [傳送失敗類型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [瞭解傳遞故障](understanding-delivery-failures.md)
+* [傳送失敗類型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
