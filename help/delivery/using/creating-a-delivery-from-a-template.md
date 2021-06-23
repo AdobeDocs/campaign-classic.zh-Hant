@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # 從範本建立傳遞{#creating-a-delivery-from-a-template}
 
-## 將範本連結至傳送{#linking-the-template-to-a-delivery}
+## 將範本連結至傳遞 {#linking-the-template-to-a-delivery}
 
 若要根據現有範本建立傳送，請從可用的傳送範本清單中選取範本。
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 
 選取要使用的傳送範本，然後按一下&#x200B;**[!UICONTROL Ok]**。
 
-## 執行模板{#executing-the-template}
+## 執行範本 {#executing-the-template}
 
 您可以直接從範本清單啟動範本的執行，不需先建立傳送。 要執行此操作，請選取要執行的範本，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Actions>Execute the delivery template...]**。
 
@@ -43,4 +43,4 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->如需設定傳送的詳細資訊，請參閱[定義電子郵件內容](../../delivery/using/defining-the-email-content.md)。
+>如需設定傳送的詳細資訊，請參閱[定義電子郵件內容](defining-the-email-content.md)。
