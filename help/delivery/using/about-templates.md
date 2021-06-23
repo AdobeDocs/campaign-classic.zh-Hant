@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -33,4 +33,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可用的範本取決於您的存取權限、執行個體設定和內容。 例如，當您建立資訊服務時，可以連結確認訊息的傳送範本：然後，您只能訪問其目標映射為訂閱映射的模板。 有關詳細資訊，請參閱[選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)和[關於服務和訂閱](../../delivery/using/about-services-and-subscriptions.md)。
+>可用的範本取決於您的存取權限、執行個體設定和內容。 例如，當您建立資訊服務時，可以連結確認訊息的傳送範本：然後，您只能訪問其目標映射為訂閱映射的模板。 有關詳細資訊，請參閱[選擇目標映射](selecting-a-target-mapping.md)和[關於服務和訂閱](about-services-and-subscriptions.md)。
