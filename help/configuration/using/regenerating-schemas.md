@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 6%
+source-wordcount: '128'
+ht-degree: 7%
 
 ---
 
@@ -27,6 +27,6 @@ ht-degree: 6%
 >
 >如果需要強制重新生成所有架構，例如為了解決反向連結中的某些相關性問題，可以從Adobe Campaign應用程式伺服器啟動以下命令：
 >
->**nlserver config -postupgrade -instance:&#39;&lt;instance_name>&#39; -force**
+> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
 >
 >然後，您必須重新啟動Adobe Campaign應用程式伺服器，並中斷用戶端主控台的連線/重新連線至用戶端主控台。
