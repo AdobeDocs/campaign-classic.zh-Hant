@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -27,16 +27,16 @@ ht-degree: 6%
 
 執行此使用案例的主要步驟為：
 
-* [步驟1:建立目標工作流程](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
-* [步驟2:設定母體樣本](../../delivery/using/a-b-testing-uc-population-samples.md)
-* [步驟3:建立兩個傳遞範本](../../delivery/using/a-b-testing-uc-delivery-templates.md)
-* [步驟4:在工作流程中設定傳送](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
-* [步驟5:建立指令碼](../../delivery/using/a-b-testing-uc-script.md)
-* [步驟6:定義最終傳送](../../delivery/using/a-b-testing-uc-final-delivery.md)
-* [步驟7:啟動工作流程](../../delivery/using/a-b-testing-uc-start-workflow.md)
-* [步驟8:分析結果](../../delivery/using/a-b-testing-uc-analyzing.md)
+* [步驟1:建立目標工作流程](a-b-testing-uc-targeting-workflow.md)
+* [步驟2:設定母體樣本](a-b-testing-uc-population-samples.md)
+* [步驟3:建立兩個傳遞範本](a-b-testing-uc-delivery-templates.md)
+* [步驟4:在工作流程中設定傳送](a-b-testing-uc-configuring-deliveries.md)
+* [步驟5:建立指令碼](a-b-testing-uc-script.md)
+* [步驟6:定義最終傳送](a-b-testing-uc-final-delivery.md)
+* [步驟7:啟動工作流程](a-b-testing-uc-start-workflow.md)
+* [步驟8:分析結果](a-b-testing-uc-analyzing.md)
 
 **相關主題：**
 
-* [開始使用 A/B 測試](../../delivery/using/get-started-a-b-testing.md)
-* [設定 A/B 測試](../../delivery/using/configuring-a-b-testing.md)
+* [開始使用 A/B 測試](get-started-a-b-testing.md)
+* [設定 A/B 測試](configuring-a-b-testing.md)
