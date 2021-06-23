@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
@@ -92,7 +92,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 對於使用Adobe Campaign交易式訊息功能的客戶，任何觸發電子郵件的API呼叫都會在短暫的升級停機期間排入佇列，並在升級完成時嘗試。
 
-## 增強的MTA特異性{#enhanced-mta-impacts}
+## 增強的MTA特異性 {#enhanced-mta-impacts}
 
 ### 增強的MTA標題
 
@@ -129,9 +129,9 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 >
 >Enhanced MTA會符合SMTP退信的資格，並以對應至促銷活動退信原因和資格的退信代碼形式，將該資格傳回Campaign。
 
-有關退信資格的詳細資訊，請參閱[本節](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)。
+有關退信資格的詳細資訊，請參閱[本節](understanding-delivery-failures.md#bounce-mail-qualification)。
 
-### 傳送總處理能力
+### 傳遞總處理能力
 
 「促銷活動傳送」輸送量圖表將不再向電子郵件收件者顯示輸送量。 該圖表現在會顯示從Campaign轉送至Enhanced MTA之訊息的輸送速度。
 
@@ -145,7 +145,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 當訊息在 Enhanced MTA 佇列中停留 3.5 天且無法傳送時，訊息會逾時，其狀態會從傳送記錄檔中的 **[!UICONTROL Sent]** 更新為 **[!UICONTROL Failed]**。
 
-有關有效期的詳細資訊，請參閱[此部分](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
+有關有效期的詳細資訊，請參閱[此部分](steps-sending-the-delivery.md#defining-validity-period)。
 
 ### DKIM簽名
 
@@ -154,13 +154,13 @@ DKIM(DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 
 ### 傳送成功報表
 
-在電子郵件傳送[dashboard](../../delivery/using/delivery-dashboard.md)的&#x200B;**[!UICONTROL Summary]**&#x200B;檢視中，**[!UICONTROL Success]**&#x200B;百分比從100%開始，然後在傳送[有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期間逐步下降，因為軟退信和硬退信會從Enhanced MTA回報至Campaign。
+在電子郵件傳送[dashboard](delivery-dashboard.md)的&#x200B;**[!UICONTROL Summary]**&#x200B;檢視中，**[!UICONTROL Success]**&#x200B;百分比從100%開始，然後在傳送[有效期](steps-sending-the-delivery.md#defining-validity-period)期間逐步下降，因為軟退信和硬退信會從Enhanced MTA回報至Campaign。
 
-事實上，從Campaign成功中繼至Enhanced MTA時，所有訊息在[傳送記錄檔](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)中都會顯示為&#x200B;**[!UICONTROL Sent]**。 除非或直到該訊息的[bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)從Enhanced MTA傳回至Campaign，否則它們會維持該狀態。
+事實上，從Campaign成功中繼至Enhanced MTA時，所有訊息在[傳送記錄檔](delivery-dashboard.md#delivery-logs-and-history)中都會顯示為&#x200B;**[!UICONTROL Sent]**。 除非或直到該訊息的[bounce](understanding-delivery-failures.md#delivery-failure-types-and-reasons)從Enhanced MTA傳回至Campaign，否則它們會維持該狀態。
 
 當從Enhanced MTA返回硬跳報文時，其狀態從&#x200B;**[!UICONTROL Sent]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**，並相應地降低&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
 
-從Enhanced MTA回報軟彈跳訊息時，仍會顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，在傳送有效期間內，軟彈跳消息將[retried](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):
+從Enhanced MTA回報軟彈跳訊息時，仍會顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，在傳送有效期間內，軟彈跳消息將[retried](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):
 
 * 如果在有效期結束前重試成功，則消息狀態將保持為&#x200B;**[!UICONTROL Sent]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比將保持不變。
 
@@ -170,7 +170,7 @@ DKIM(DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-### 電子郵件反饋服務（測試版）{#email-feedback-service}
+### 電子郵件意見回饋服務（測試版） {#email-feedback-service}
 
 利用電子郵件反饋服務(EFS)功能，可以準確報告每封電子郵件的狀態，因為反饋是直接從增強MTA（郵件傳輸代理）中捕獲的。
 
@@ -192,7 +192,7 @@ DKIM(DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 
 從Enhanced MTA回報硬跳出訊息時，其記錄狀態會從&#x200B;**[!UICONTROL Taken into account by the service provider]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。
 
-當從Enhanced MTA回報軟跳出訊息時，其記錄狀態維持不變(**[!UICONTROL Taken into account by the service provider]**):僅更新[錯誤原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不變。 然後，在傳送[有效期間](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期間重試軟跳出消息：
+當從Enhanced MTA回報軟跳出訊息時，其記錄狀態維持不變(**[!UICONTROL Taken into account by the service provider]**):僅更新[錯誤原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不變。 然後，在傳送[有效期間](steps-sending-the-delivery.md#defining-validity-period)期間重試軟跳出消息：
 
 * 如果在有效期結束前重試成功，則消息狀態將變為&#x200B;**[!UICONTROL Sent]**，並相應地增加&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
 
@@ -200,9 +200,9 @@ DKIM(DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 
 >[!NOTE]
 >
->如需硬跳出和軟跳出的詳細資訊，請參閱[此區段](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+>如需硬跳出和軟跳出的詳細資訊，請參閱[此區段](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
 >
->如需傳送暫時失敗後重試的詳細資訊，請參閱[此區段](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+>如需傳送暫時失敗後重試的詳細資訊，請參閱[此區段](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
 
 
 下表顯示了EFS功能引入的KPI和發送日誌狀態的更改。
