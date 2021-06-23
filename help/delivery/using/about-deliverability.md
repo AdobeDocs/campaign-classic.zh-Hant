@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 9%
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 如需深入了解什麼是傳遞能力，以及深入了解關鍵傳遞能力條款、概念和方法，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
-## 如何提高傳遞能力{#deliverability-key-points}
+## 如何改善傳遞能力 {#deliverability-key-points}
 
 傳遞能力問題通常與網際網路服務提供商和郵件伺服器管理員實施的針對垃圾郵件的保護措施有關。
 
@@ -40,15 +40,15 @@ ht-degree: 9%
 有了Adobe Campaign，傳遞率取決於眾多因素，尤其是：
 
 * 正確配置實例：請連絡您的Adobe代表以取得協助。
-* 合法的網路配置：請參閱[此部分](../../delivery/using/optimize-delivery.md#network-config)和[域設定和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
+* 合法的網路配置：請參閱[此部分](optimize-delivery.md#network-config)和[域設定和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
 * 您的IP地址信譽：請參閱[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
-* 目標地址的質量：請參閱[隔離管理](../../delivery/using/optimize-delivery.md#quarantine-management)。
+* 目標地址的質量：請參閱[隔離管理](optimize-delivery.md#quarantine-management)。
 * 低[投訴](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬跳出率](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)。
-* 您的訊息內容：請參閱[控制電子郵件內容](../../delivery/using/control-message-content.md)。
+* 您的訊息內容：請參閱[控制電子郵件內容](control-message-content.md)。
 * 報文驗證(SPF、DKIM、DMARC):請參閱[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 * 發件人信譽：若要了解主要ISP如何評估寄件者信譽，請參閱[本節](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html)。
 
-## 促銷活動傳遞工具{#deliverability-tools}
+## Campaign傳遞工具 {#deliverability-tools}
 
 <!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
 Adobe Campaign提供數種工具，可追蹤及改善您平台的傳遞效能。 本頁也著重說明使用Campaign時，您應謹記的主要原則，以最佳化傳遞能力。
@@ -57,12 +57,12 @@ Adobe Campaign提供數種工具，可追蹤及改善您平台的傳遞效能。
 
 設定、設計和測試訊息時，請務必遵循以下各節提及的最佳實務。 運用Adobe Campaign提供的所有功能，協助您改善傳遞能力。
 
-* [關於傳遞的最佳實務](../../delivery/using/delivery-best-practices.md)
-* [控制電子郵件內容](../../delivery/using/control-message-content.md)
-* [收件匣轉譯](../../delivery/using/inbox-rendering.md)
-* [傳送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+* [關於傳遞的最佳實務](delivery-best-practices.md)
+* [控制電子郵件內容](control-message-content.md)
+* [收件匣轉譯](inbox-rendering.md)
+* [傳送證明](steps-validating-the-delivery.md#sending-a-proof)
 
-### 透過雙重選擇加入{#double-opt-in}驗證同意
+### 透過雙重加入驗證同意 {#double-opt-in}
 
 為避免傳送訊息至無效位址、限制不當通訊並改善寄件者信譽，Adobe建議實作雙重加入機制。 此方法可讓您確保收件者有意訂閱。
 
@@ -80,9 +80,9 @@ Adobe Campaign會管理可收集持續發生的垃圾訊息投訴、硬退信及
 
 如需詳細資訊，請參閱下列章節：
 
-* [瞭解傳送故障](../../delivery/using/understanding-delivery-failures.md)
-* [瞭解隔離管理](../../delivery/using/understanding-quarantine-management.md)
-* [隔離與封鎖清單](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+* [瞭解傳遞故障](understanding-delivery-failures.md)
+* [瞭解隔離管理](understanding-quarantine-management.md)
+* [隔離與封鎖清單](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### 使用監控和報告工具
 
@@ -92,8 +92,8 @@ Adobe Campaign可讓您透過一組內建的即時指標和報表，來檢查傳
 
 如需詳細資訊，請參閱下列章節：
 
-* [監視傳遞性](../../delivery/using/monitoring-deliverability.md)
-* [關於傳遞監視](../../delivery/using/about-delivery-monitoring.md)
+* [監視傳遞能力](monitoring-deliverability.md)
+* [關於傳遞監視](about-delivery-monitoring.md)
 * [關於 Campaign 內建的報表](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
