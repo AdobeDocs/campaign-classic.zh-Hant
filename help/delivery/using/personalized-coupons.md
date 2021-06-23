@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >抵用券資料可以使用CSV和XML格式匯入和匯出。 有關匯入和匯出的詳細資訊，請參閱[此區段](../../platform/using/get-started-data-import-export.md)。
 
-## 建立抵用券{#creating-a-coupon}
+## 建立抵用券 {#creating-a-coupon}
 
 「抵用券」模組提供建立抵用券時的兩個選項：
 
@@ -58,7 +58,7 @@ ht-degree: 1%
    >
    >個別抵用券可以大量匯入。 有關匯入和匯出的詳細資訊，請參閱[此區段](../../platform/using/get-started-data-import-export.md)。
 
-### 設定個別抵用券{#configuring-individual-coupons}
+### 設定個別抵用券 {#configuring-individual-coupons}
 
 ![](assets/deliv_coup_03.png)
 
@@ -71,9 +71,9 @@ ht-degree: 1%
 
 會自動完成&#x200B;**[!UICONTROL status]**、**[!UICONTROL channel]**&#x200B;和&#x200B;**[!UICONTROL address]**&#x200B;的值。 不過，促銷活動不會復原&#x200B;**[!UICONTROL redeemed on]**&#x200B;的值。 您可以匯入包含抵用券贖回詳細資訊的檔案，以完成這些操作。
 
-## 在電子郵件傳送{#inserting-a-coupon-into-an-email-delivery}中插入抵用券
+## 將抵用券插入電子郵件傳送 {#inserting-a-coupon-into-an-email-delivery}
 
-在以下範例中，傳遞是從首頁建立。 如需如何建立傳送的詳細指示，請參閱[本區段](../../delivery/using/about-email-channel.md)。 您也可以在工作流程中將抵用券新增至傳送。
+在以下範例中，傳遞是從首頁建立。 如需如何建立傳送的詳細指示，請參閱[本區段](about-email-channel.md)。 您也可以在工作流程中將抵用券新增至傳送。
 
 1. 轉至&#x200B;**[!UICONTROL Campaigns]**，然後選擇&#x200B;**[!UICONTROL Deliveries]**。
 1. 按一下 **[!UICONTROL Create]**。
@@ -149,7 +149,7 @@ ht-degree: 1%
 >
 >依預設，抵用券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 有關如何使用其他表的說明，請參閱[編輯結構](../../configuration/using/data-schemas.md)。
 
-## 管理不足的抵用券{#managing-insufficient-coupons}
+## 管理抵用券不足 {#managing-insufficient-coupons}
 
 如果抵用券數少於訊息數，傳遞分析就會停止。 在這種情況下，您可以匯入更多抵用券或限制訊息的數量。 如果要限制訊息數量，請依照下列指示操作。
 
