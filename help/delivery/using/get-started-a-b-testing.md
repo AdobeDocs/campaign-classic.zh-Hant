@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 3%
@@ -23,7 +23,7 @@ A/B測試可讓您比較多個傳送版本，以識別哪個版本對目標母�
 
 ![](assets/a-b-testing-schema.png)
 
-透過Campaign Classic,A/B測試會透過工作流程實作，您可在其中指定要定位的母體，以及將接收每個變體的群組（請參閱[設定a/b測試](../../delivery/using/configuring-a-b-testing.md)）。
+透過Campaign Classic,A/B測試會透過工作流程實作，您可在其中指定要定位的母體，以及將接收每個變體的群組（請參閱[設定a/b測試](configuring-a-b-testing.md)）。
 
 主要步驟為：
 
@@ -37,4 +37,4 @@ A/B測試可讓您比較多個傳送版本，以識別哪個版本對目標母�
 
 >[!NOTE]
 >
->工作流程也可讓您自動識別執行得較好的傳送變體，然後將其傳送至剩餘母體，借此自動化您的流程。 有關詳細資訊，請參閱此專用[使用案例](../../delivery/using/a-b-testing-use-case.md)。
+>工作流程也可讓您自動識別執行得較好的傳送變體，然後將其傳送至剩餘母體，借此自動化您的流程。 有關詳細資訊，請參閱此專用[使用案例](a-b-testing-use-case.md)。
