@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 3%
@@ -37,4 +37,4 @@ ht-degree: 3%
 
 您現在可以啟動工作流程。 傳送完畢後，您就可以追蹤傳送記錄中三個子集的行為，以查看哪個主題最成功。
 
-工作流程也可讓您自動識別執行得較好的傳送變體，然後將其傳送至剩餘母體，借此自動化您的流程。 有關詳細資訊，請參閱此專用[使用案例](../../delivery/using/a-b-testing-use-case.md)。
+工作流程也可讓您自動識別執行得較好的傳送變體，然後將其傳送至剩餘母體，借此自動化您的流程。 有關詳細資訊，請參閱此專用[使用案例](a-b-testing-use-case.md)。
