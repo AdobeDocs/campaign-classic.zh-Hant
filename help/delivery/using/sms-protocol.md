@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -38,7 +38,7 @@ SMPP提供商有時可能會偏離官方規範，但Adobe Campaign的SMS連接�
 >
 >設定與新提供程式的連接可能需要一些技術技能、TCP知識、二進位、十六進位表示和文本編碼。 還需要與提供商積極合作。
 
-### SMS類型{#sms-types}
+### SMS類型 {#sms-types}
 
 透過簡訊提供者傳送大量簡訊時，您會遇到三種不同的簡訊：
 
@@ -52,11 +52,11 @@ SMPP提供商有時可能會偏離官方規範，但Adobe Campaign的SMS連接�
 
 確認和SR都可觸發錯誤，區分這兩種錯誤將有助於進行故障排除。
 
-### SMS {#information-sms}所攜帶的資訊
+### 簡訊所攜帶的資訊 {#information-sms}
 
 簡訊攜帶的資訊多於文字。 以下是您在SMS中可找到的項目清單：
 
-* 文字，限制為140個位元組，這表示根據編碼，70到160個字元之間。 如需詳細資訊和限制，請參閱下方的[SMS文字編碼](../../delivery/using/sms-protocol.md#sms-text-encoding)。
+* 文字，限制為140個位元組，這表示根據編碼，70到160個字元之間。 如需詳細資訊和限制，請參閱下方的[SMS文字編碼](sms-protocol.md#sms-text-encoding)。
 
 * 收件者地址，有時稱為`ADC`或`MSISDN`。 這是接收簡訊的行動裝置數量。
 
@@ -70,13 +70,13 @@ SMPP提供商有時可能會偏離官方規範，但Adobe Campaign的SMS連接�
 
 * `data_coding`欄位，指示文本的編碼。
 
-## SMPP協定{#smpp-protocol}
+## SMPP協定 {#smpp-protocol}
 
 Adobe Campaign Classic支援SMPP協定3.4版。這是一種廣泛的協定，允許向提供者(SMSC)發送簡訊、接收簡訊以及接收。 有關詳細資訊，請參閱[SMPP文檔](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
 
 SMS服務提供商端的網路設備通常稱為SMSC。
 
-### SMPP連接{#smpp-connections}
+### SMPP連接 {#smpp-connections}
 
 Adobe Campaign通過TCP連接到SMS服務提供商的網路設備。 SMPP協定將從Adobe Campaign到提供程式的永久TCP連接設定為。 TCP連接始終由Adobe Campaign啟動，甚至接收消息。
 SMPP會根據其模式開啟1個或2個TCP連接。 所有連線一律由Adobe Campaign啟動。
@@ -106,7 +106,7 @@ SMPP傳輸單元（「資料包」）稱為PDU。 **PDU**&#x200B;包含命令、
 
 成功的`SUBMIT_SM_RESP PDU`在發送日誌中觸發「已發送」消息狀態，而成功的`DELIVER_SM (SR) PDU`觸發「已接收」消息狀態。
 
-### 安全方面{#security-aspects}
+### 安全方面 {#security-aspects}
 
 協定本身未加密。 大部分的提供者都會在允許清單上實作IP的變體，因此Adobe Campaign伺服器IP位址必須向提供者宣告。
 
@@ -114,7 +114,7 @@ Adobe Campaign支援在系結階段期間傳遞登入和密碼。 也支援SMPP�
 
 連接器使用系統`openssl`庫提供的預設證書。 通常由Debian上的`/etc/ssl/certs`目錄提供。 預設情況下，此目錄由「ca-certificates」包提供，但可自定義。
 
-### 每種PDU {#information-pdu}中的資訊
+### 每種PDU中的資訊 {#information-pdu}
 
 每種PDU都有不同的欄位，承載不同的資訊。 [SMPP 3.4規範](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)中詳細介紹了這些PDU。
 
@@ -176,7 +176,7 @@ PDU可以有可選欄位。 此處僅說明最常見的欄位。 有關詳細資
 
 * **registered_delivery**:指示是否請求SR。Adobe Campaign一律會設定此標幟，但自動回覆除外。 對於多部分消息，只為第一部分設定標誌。 所有版本都有相同的行為。
 
-* **data_coding**:指示文本欄位中使用的編碼。如需詳細資訊，請參閱[SMS文字編碼](../../delivery/using/sms-protocol.md#sms-text-encoding)區段。
+* **data_coding**:指示文本欄位中使用的編碼。如需詳細資訊，請參閱[SMS文字編碼](sms-protocol.md#sms-text-encoding)區段。
 
 * **short_message**:訊息的文字。若已使用UDH，則也會包含UHD標頭。
 
@@ -208,7 +208,7 @@ Adobe Campaign支援下列選用欄位：
 
 * **esm_class**:用來判斷PDU是MO還是SR。
 
-* **short_message**:訊息的文字。對於SR，這包含SMPP協定規範附錄B中描述的資料。 有關詳細資訊，請參見[SR錯誤管理](../../delivery/using/sms-protocol.md#sr-error-management)。
+* **short_message**:訊息的文字。對於SR，這包含SMPP協定規範附錄B中描述的資料。 有關詳細資訊，請參見[SR錯誤管理](sms-protocol.md#sr-error-management)。
 
 Adobe Campaign能透過某些設定，讀取`receipted_message_id`選用欄位中的訊息ID。
 
@@ -230,7 +230,7 @@ Adobe Campaign Classic確認SR和MO一旦插入資料庫中。 即使已發送�
 
 ### 多部分簡訊（長簡訊） {#multipart}
 
-多部分簡訊（或長簡訊）是以多個部分傳送的簡訊。 由於行動網路通訊協定的技術限制，SMS不能超過140個位元組，否則需要分割。 請參閱[SMS文字編碼](../../delivery/using/sms-protocol.md#sms-text-encoding)區段，進一步了解SMS中可容納的字元數。
+多部分簡訊（或長簡訊）是以多個部分傳送的簡訊。 由於行動網路通訊協定的技術限制，SMS不能超過140個位元組，否則需要分割。 請參閱[SMS文字編碼](sms-protocol.md#sms-text-encoding)區段，進一步了解SMS中可容納的字元數。
 
 長訊息的每個部分都是個別的簡訊。 這些部件在網路上獨立運行，並由接收行動電話組裝。 為了處理重試次數和連線問題，Adobe Campaign會以反向順序傳送這些部分，並僅在訊息的第一部分（上次傳送的部分）上要求SR。 由於行動電話只會在收到其第一部分時顯示訊息，因此其他部分的重試不會在行動電話上產生重複項目。
 
@@ -242,15 +242,15 @@ Adobe Campaign Classic確認SR和MO一旦插入資料庫中。 即使已發送�
 
 * **message_payload**:以單一方式傳送完整長訊息的方 `SUBMIT_SM PDU`式。提供者必須將其分割，這表示Adobe Campaign無法確切知道已傳送多少部件。 有些提供者需要此模式，但我們建議您僅在不支援UDH時才使用此模式。
 
-有關協定和格式的詳細資訊，請參閱[SUBMIT_SM PDU](../../delivery/using/sms-protocol.md#information-pdu)的`esm_class`、`short_message`和`message_payload`欄位的說明。
+有關協定和格式的詳細資訊，請參閱[SUBMIT_SM PDU](sms-protocol.md#information-pdu)的`esm_class`、`short_message`和`message_payload`欄位的說明。
 
-### 吞吐量上限和窗口{#throughput-capping}
+### 吞吐量上限和窗口 {#throughput-capping}
 
-大多數提供程式要求每個SMPP連接的吞吐量限制。 這可透過在外部帳戶中設定數個簡訊來達成。 請注意，每個連接都會發生吞吐量限制，有效總吞吐量是每個連接的限制乘以連接總數。 這在[同時連線](../../delivery/using/sms-protocol.md#connection-settings)一節中有詳細說明。
+大多數提供程式要求每個SMPP連接的吞吐量限制。 這可透過在外部帳戶中設定數個簡訊來達成。 請注意，每個連接都會發生吞吐量限制，有效總吞吐量是每個連接的限制乘以連接總數。 這在[同時連線](sms-protocol.md#connection-settings)一節中有詳細說明。
 
-要達到最大的吞吐量，您需要微調最大發送窗口。 發送窗口是可以在不等待`SUBMIT_SM_RESP`的情況下發送的`SUBMIT_SM PDU`數。 如需詳細資訊，請參閱[傳送視窗設定](../../delivery/using/sms-protocol.md#throughput-timeouts)區段。
+要達到最大的吞吐量，您需要微調最大發送窗口。 發送窗口是可以在不等待`SUBMIT_SM_RESP`的情況下發送的`SUBMIT_SM PDU`數。 如需詳細資訊，請參閱[傳送視窗設定](sms-protocol.md#throughput-timeouts)區段。
 
-### SR和錯誤管理（&quot;附錄B&quot;）{#sr-error-management}
+### SR和錯誤管理（「附錄B」） {#sr-error-management}
 
 SMPP協定定義`RESP PDU`s中的標準同步錯誤，但不定義SR的錯誤代碼。 每個提供者都使用各自的錯誤碼及其含義。
 
@@ -267,7 +267,7 @@ SMPP協定定義`RESP PDU`s中的標準同步錯誤，但不定義SR的錯誤代
 
 Adobe Campaign Classic連接器（延伸SMPP除外）使用硬式編碼行為，這取決於選取的提供者。 一般SMPP僅區分成功和錯誤，沒有詳細資訊。 傳送記錄可能包含某些不保證的資訊。
 
-#### SR文本欄位格式{#sr-text-field-format}
+#### SR文本欄位格式 {#sr-text-field-format}
 
 規範建議在SR文本欄位中使用此格式。 它是子欄位的清單，以冒號分隔，以分隔欄位名稱及其值。 欄位名稱不區分大小寫。
 
@@ -289,7 +289,7 @@ stat欄位很重要，因為它會告訴訊息的狀態。 唯一重要的狀態
 
 最後，文本欄位通常包含MT文本的開頭。 Adobe Campaign會忽略這一點，有些提供者不會傳送它，以避免PII洩漏和網路頻寬耗用。 在故障排除期間，可通過讀取此欄位，更輕鬆地發現與測試MT匹配的SR。
 
-### Adobe Campaign Classic延伸通用SMPP {#sr-processing}中的SR處理範例
+### Adobe Campaign Classic延伸通用SMPP中的SR處理範例 {#sr-processing}
 
 此範例顯示遵循附錄B建議、外部帳戶的預設值和成功的SMS MT實作的案例。
 
@@ -323,7 +323,7 @@ SR ExampleProvider DELIVRD 000|#MESSAGE#
 
 依預設，所有錯誤都會布建為軟錯誤。 這表示必須手動布建硬錯誤。
 
-### SMS文字編碼{#sms-text-encoding}
+### SMS文字編碼 {#sms-text-encoding}
 
 若發生編碼問題，您應&#x200B;**一律聯絡SMSC提供者**。 只有SMSC提供者了解其支援的編碼，並了解由於其技術平台限制而可能適用的特殊規則。
 
@@ -357,27 +357,27 @@ SMS訊息使用特殊的7位元編碼，通常稱為GSM7編碼。
 | 拉丁文–1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode（因電話而異） |
 
-## SMPP外部帳戶參數{#SMPP-parameters-external}
+## SMPP外部帳戶參數 {#SMPP-parameters-external}
 
 SMPP協定的每個實現都有許多變化。 為了改善相容性和適應性，可使用許多設定來更改SMPP連接器的行為。 本節介紹每個參數及其對連接器的影響。
 
-### 常規參數和路由{#general-parameters-routing}
+### 一般參數和路由 {#general-parameters-routing}
 
 **限制此帳戶的MTA例項**
 
 可以設定允許連接到SMPP提供程式的MTA實例數的限制。 若勾選此選項，您最多可以指定使用多少個MTA。
 
-此選項允許更精細地控制連接數，請參閱[同時連接](../../delivery/using/sms-protocol.md#connection-settings)。
+此選項允許更精細地控制連接數，請參閱[同時連接](sms-protocol.md#connection-settings)。
 
 如果您設定的值高於執行中的MTA數，則所有MTA都會正常執行：此選項僅為限制，無法產生其他MTA。
 
 如果您需要精確控制連線數量（例如提供者需求），建議您一律設定此選項，即使目前部署的MTA數量正確，亦然。 如果之後新增其他MTA，則仍會接受連線限制。
 
-### 連接設定{#connection-settings}
+### 連線設定 {#connection-settings}
 
-#### SMSC實作名稱{#smsc-implementation-name}
+#### SMSC實作名稱 {#smsc-implementation-name}
 
-設定SMSC實施的名稱。 應將其設為提供者的名稱。 請聯絡管理員或傳遞團隊，了解要在此欄位中新增哪些項目。 [SR錯誤管理](../../delivery/using/sms-protocol.md#sr-error-management)部分中描述了此欄位的角色。
+設定SMSC實施的名稱。 應將其設為提供者的名稱。 請聯絡管理員或傳遞團隊，了解要在此欄位中新增哪些項目。 [SR錯誤管理](sms-protocol.md#sr-error-management)部分中描述了此欄位的角色。
 
 #### 伺服器 {#server}
 
@@ -395,11 +395,11 @@ SMPP協定的每個實現都有許多變化。 為了改善相容性和適應性
 
 SMPP連接的密碼。 在BIND PDU的口令欄位中傳遞。
 
-#### 系統類型{#system-type}
+#### 系統類型 {#system-type}
 
 在BIND PDU的`system_id`欄位中傳遞的值。 有些提供者需要此處的特定值。
 
-#### MTA子連接數{#number-mta-child}
+#### MTA子連接數 {#number-mta-child}
 
 在Adobe Campaign Classic中，會定義每個MTA子項的連線數量。
 
@@ -415,21 +415,21 @@ Adobe Campaign Classic Extended SMPP連接器可以控制每個MTA子項的連�
 
 如果您設定自動回覆，SMS程式將會開啟傳送器/接收器對，增加傳送器連線的數量。 如果您未設定任何自動回覆，則只會開啟接收器連線。
 
-#### 啟用SMPP上的TLS {#enable-TLS}
+#### 透過SMPP啟用TLS {#enable-TLS}
 
 使用TLS連線至提供者。 連線會加密。 TLS連線由OpenSSL程式庫管理，任何適用於OpenSSL的項目，此連線都會成立。
 
-#### 在日誌檔案{#enable-verbose-log-file}中啟用詳細SMPP跟蹤
+#### 在日誌檔案中啟用詳細SMPP跟蹤 {#enable-verbose-log-file}
 
 此設定會將所有SMPP流量轉儲到日誌檔案中。 在初始設定期間，通常需要調整參數。 在疑難排解連接器時，必須啟用此功能，並與提供者所看到的流量進行比較。
 
 在Adobe Campaign Classic中，記錄輸出位於MT相關流量的MTA記錄中，以及MO和SR相關流量的SMS記錄中。
 
-### 接收器連接設定{#receiver-connection}
+### 接收器連接設定 {#receiver-connection}
 
 此區段只會以分隔&#x200B;**傳送器+接收器**&#x200B;模式顯示。
 
-#### 對接收器{#receiver-parameters}使用不同的參數
+#### 對接收器使用不同的參數 {#receiver-parameters}
 
 取消核取方塊時，傳送器和接收器會使用相同的設定。
 
@@ -439,9 +439,9 @@ Adobe Campaign Classic Extended SMPP連接器可以控制每個MTA子項的連�
 
 在發射機+接收機模式下，這些設定會套用至接收器。 如需詳細資訊，請參閱上方的傳送器部分。
 
-### SMPP通道設定{#smpp-channel-settings}
+### SMPP通道設定 {#smpp-channel-settings}
 
-#### 允許字母音譯{#allow-character-transliteration}
+#### 允許字母音譯 {#allow-character-transliteration}
 
 音譯是尋找相等字元與遺失字元的程式。 例如，GSM編碼中缺少法文&quot;ê&quot;（e含抑揚符號）字元，但可以以&quot;e&quot;取代，不會影響可讀性。
 
@@ -449,15 +449,15 @@ Adobe Campaign Classic Extended SMPP連接器可以控制每個MTA子項的連�
 
 核取此方塊時，文字編碼會嘗試將字串轉換為近似版本，而非失敗。 如果某些字元在目標編碼中沒有相同的字元，則文字編碼將會失敗。
 
-如需編碼程式的更一般說明，請參閱[定義編碼設定的特定對應](../../delivery/using/sms-protocol.md#SMSC-specifics) 。
+如需編碼程式的更一般說明，請參閱[定義編碼設定的特定對應](sms-protocol.md#SMSC-specifics) 。
 
-#### 在資料庫{#incoming-mo-storing}中儲存傳入的MO
+#### 將傳入的MO儲存在資料庫中 {#incoming-mo-storing}
 
 啟用後，傳入的MO將儲存在資料庫的inSMS表中。 可以使用任何工作流的查詢活動查詢此表。
 
 Adobe Campaign Classic一律會將所有MO儲存在inSMS資料庫中，因此此選項無法使用。
 
-#### 在SR處理{#real-time-kpi}期間啟用即時KPI更新
+#### 在SR處理期間啟用即時KPI更新 {#real-time-kpi}
 
 啟用後，當收到錯誤SR時，主要傳送頁面上的KPI將即時更新。
 
@@ -465,7 +465,7 @@ Adobe Campaign Classic一律會將所有MO儲存在inSMS資料庫中，因此此
 
 Adobe Campaign Classic的KPI機制完全不同，因此無法使用此選項。
 
-#### 源號{#source-number}
+#### 來源編號 {#source-number}
 
 定義消息的預設源地址。 此設定僅適用於傳送中的來源號碼為空的情況。
 
@@ -473,7 +473,7 @@ Adobe Campaign Classic的KPI機制完全不同，因此無法使用此選項。
 
 這會啟用寄件者地址/oADC覆寫功能。
 
-#### 短代碼{#short-code}
+#### 簡碼 {#short-code}
 
 指出帳戶的主要簡碼。 如果此帳戶使用了多個短代碼，或者短代碼未知，請將此欄位留空。
 
@@ -483,21 +483,21 @@ Adobe Campaign Classic的KPI機制完全不同，因此無法使用此選項。
 
 * 自動回覆功能的封鎖清單設定只會傳送來隔離使用者特定簡短代碼。
 
-#### 源噸/NPI，目標噸/NPI {#ton-npi}
+#### 源噸/NPI、目的地噸/NPI {#ton-npi}
 
 [SMPP 3.4規範](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)（第117頁）的第5.2.5節中描述了TON（編號類型）和NPI（編號計畫指示器）。 這些值應設為提供者的需求。
 
 它們在`SUBMIT_SM PDU`、`source_addr_npi`、`dest_addr_ton`和`dest_addr_npi`欄位中按原樣傳輸。`source_addr_ton`
 
-#### 服務類型{#service-type}
+#### 服務類型 {#service-type}
 
 此欄位在`SUBMIT_SM PDU`的`service_type`欄位中按原樣傳輸。 將此設定為提供程式的需求。
 
-### 吞吐量和超時{#throughput-timeouts}
+### 吞吐量和逾時 {#throughput-timeouts}
 
 這些設定可控制SMPP通道的所有計時方面。 某些提供程式需要非常精確地控制消息速率、窗口和重試計時。 這些設定應設定為符合提供者的容量及其合約中指出條件的值。
 
-#### 發送窗口{#sending-window}
+#### 傳送視窗 {#sending-window}
 
 該窗口是可以在不等待匹配`SUBMIT_SM_RESP`的情況下發送的`SUBMIT_SM PDU`數。
 
@@ -517,7 +517,7 @@ Adobe Campaign Classic的KPI機制完全不同，因此無法使用此選項。
 
 範例：如果您在最大MT吞吐量中設定了300個SMS/s，且平均在`SUBMIT_SM`和`SUBMIT_SM_RESP`之間有100毫秒的延遲，則最佳值為`300×0.1 = 30`。
 
-#### 最大MT吞吐量{#max-mt-throughput}
+#### 最大MT吞吐量 {#max-mt-throughput}
 
 每秒和每個連接的最大MT數。 此設定會嚴格強制執行，MTA永遠不會以超過此限制的速度推送訊息。 它對於需要精確調節的提供商非常有用。
 
@@ -527,19 +527,19 @@ Adobe Campaign Classic的KPI機制完全不同，因此無法使用此選項。
 
 一般建議將此設定保持在1000以下，因為除非對最終體系結構和特別請求的SMPP提供商進行適當基準，否則無法保證精確的吞吐量高於此數字。 將連接數量增加到1000 MT/s以上可能更好。
 
-#### 重新連接前的時間{#time-reconnection}
+#### 重新連接前的時間 {#time-reconnection}
 
 當TCP連接丟失時，連接器將等待此秒數再嘗試建立連接。
 
-#### MT {#expiration-period}的到期期
+#### MT的到期期 {#expiration-period}
 
 `SUBMIT_SM`與其相符`SUBMIT_SM_RESP`之間的逾時。 如果未按時收到`RESP`，則消息將被視為失敗，並且將應用MTA的全局重試策略。
 
-#### 綁定超時{#bind-timeout}
+#### 系結逾時 {#bind-timeout}
 
 TCP連接嘗試與`BIND_*_RESP`回復之間的超時。 逾時時，Adobe Campaign連接器會關閉連線，且會等待「時間」再重新連線，然後再次嘗試。
 
-#### inquire_link句點{#enquire-link-period}
+#### inquire_link期間 {#enquire-link-period}
 
 `enquire_link` 是發送的一種特殊類型的PDU，用於保持連接正常。此時段以秒為單位。 當連線閒置時，促銷活動連接器只會傳送`enquire_link`以節省頻寬。 如果在此期間後兩次未接收到RESP，則連接將被視為死，並將觸發重新連接進程。
 
@@ -549,7 +549,7 @@ TCP連接嘗試與`BIND_*_RESP`回復之間的超時。 逾時時，Adobe Campai
 
 **定義編碼的特定對應**
 
-有關文本編碼的詳細資訊，請參閱[SMS文本編碼](../../delivery/using/sms-protocol.md#sms-text-encoding)部分。
+有關文本編碼的詳細資訊，請參閱[SMS文本編碼](sms-protocol.md#sms-text-encoding)部分。
 
 此設定可讓您定義自訂編碼對應，與規格不同。 您將能宣告編碼清單及其`data_coding`值。
 
@@ -576,11 +576,11 @@ MTA會嘗試使用清單中的第一個編碼進行編碼。 如果失敗，會�
 
 取消勾選後，長SMS將會被MTA分割，並透過UDH傳入多個`SUBMIT_SM PDU`s。 在UDH資料之後，手機將重新合成該消息。
 
-選中後，將在一個SUBMIT_SM PDU中發送長簡訊，將文本放入message_payload可選欄位中。 有關詳細資訊，請參閱[SMPP規範](../../delivery/using/sms-protocol.md#ACS-SMPP-connector)。
+選中後，將在一個SUBMIT_SM PDU中發送長簡訊，將文本放入message_payload可選欄位中。 有關詳細資訊，請參閱[SMPP規範](sms-protocol.md#ACS-SMPP-connector)。
 
 如果已啟用此功能，Adobe Campaign將無法個別計算SMS部件：所有訊息都會計為在一個部分中傳送。
 
-#### 發送完整電話號碼{#send-full-phone-number}
+#### 發送完整電話號碼 {#send-full-phone-number}
 
 未選中此複選框時，只會將電話號碼的數字發送到提供程式（`SUBMIT_SM`欄位的`destination_addr`欄位）。 這是預設行為，因為國際數字指示器（通常為+前置詞）在SMPP中被TON和NPI欄位取代。
 
@@ -588,7 +588,7 @@ MTA會嘗試使用清單中的第一個編碼進行編碼。 如果失敗，會�
 
 此功能也會影響自動回覆封鎖清單功能的行為：未勾選核取方塊時，將在插入隔離表的電話號碼中新增+前置詞，以補償SMPP通訊協定本身從電話號碼中移除的+前置詞。
 
-#### 跳過TLS證書檢查{#skip-tls}
+#### 略過TLS證書檢查 {#skip-tls}
 
 啟用TLS時，請略過所有憑證檢查。
 
@@ -608,11 +608,11 @@ MTA會嘗試使用清單中的第一個編碼進行編碼。 如果失敗，會�
 
 它們在BIND PDU的`addr_ton`和`addr_npi`欄位中按原樣傳輸。
 
-#### 地址範圍{#address-range}
+#### 地址範圍 {#address-range}
 
 在BIND PDU的address_range欄位中按原樣發送。 此值應設為提供者需要的任何值。
 
-#### ID確認計數{#invalid-id}無效
+#### ID確認計數無效 {#invalid-id}
 
 限制可針對單個SR發送的&#x200B;**消息ID invalid** `DELIVER_SM_RESP`的數量。
 
@@ -638,9 +638,9 @@ Fox範例，若設為2:
 
 將此欄位設為1會讓連接器一律回應「OK」，即使ID無效亦然。 只有在監管、故障排除和最小時間（例如從提供方問題中恢復）的情況下，此值才應設定為1。
 
-#### 提取SR {#regex-extraction}中ID的規則運算式
+#### 擷取SR中ID的規則運算式 {#regex-extraction}
 
-SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../../delivery/using/sms-protocol.md#sr-error-management)（第167頁）中描述的建議。 某些SMPP實作者為此欄位的格式不同，因此Adobe Campaign需要一種方式來擷取正確欄位。
+SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](sms-protocol.md#sr-error-management)（第167頁）中描述的建議。 某些SMPP實作者為此欄位的格式不同，因此Adobe Campaign需要一種方式來擷取正確欄位。
 
 依預設，它會在`id:`後擷取最多10個英數字元。
 
@@ -650,13 +650,13 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../
 
 規則運算式中未包含足夠的內容可能會造成小型安全性缺陷：SR中可包含該消息的實際內容。 如果您只比對沒有上下文的特定ID格式（例如UUID），則可能會剖析實際的文字內容，例如內嵌在文字欄位中的UUID，而非ID。
 
-#### 應用Regex以確定成功/錯誤狀態{#regex-applied}
+#### 套用Regex以判斷成功/錯誤狀態 {#regex-applied}
 
 遇到具有未知stat/err欄位組合的消息時，這些規則運算式將應用於stat欄位，以確定SR是成功還是錯誤。 SR的統計值與任何這些規則不匹配，則會被忽略。
 
-預設情況下，以`DELIV`開頭的統計值，例如[附錄B](../../delivery/using/sms-protocol.md#sr-error-management)中的`DELIVRD`將被視為已成功傳送，且所有符合錯誤的統計值，例如`REJECTED`、`UNDELIV`被視為錯誤。
+預設情況下，以`DELIV`開頭的統計值，例如[附錄B](sms-protocol.md#sr-error-management)中的`DELIVRD`將被視為已成功傳送，且所有符合錯誤的統計值，例如`REJECTED`、`UNDELIV`被視為錯誤。
 
-#### MT確認{#id-format-mt}中的ID格式
+#### MT確認中的ID格式 {#id-format-mt}
 
 這表示在`SUBMIT_SM_RESP PDU`的`message_id`欄位中傳回的ID格式。
 
@@ -668,7 +668,7 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../
 
 * **十六進位字串**:ID應為ASCII編碼的文本，其本身是以十六進位編碼的位元組字串。例如，在PDU中，您會找到`0x34 0x31 0x34 0x32 0x34 0x33`，它將轉換為ASCII &quot;414243&quot;。 然後，將此字串解碼為十六進位位元組字串，您將獲得&quot;ABC&quot;，結果：您會將ID「ABC」儲存在資料庫中。
 
-#### SR {#id-format-sr}中的ID格式
+#### SR中的ID格式 {#id-format-sr}
 
 這表示SR中ID的`Extraction`規則運算式所擷取的ID格式。 值具有與上述MT格式相同的含義和行為。
 
@@ -734,11 +734,11 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../
 
 表格中的所有項目都會以指定的順序處理，直到有一個規則符合為止。 如果多個規則符合MO，則只會套用最頂端的規則。
 
-## SMS傳遞範本參數{#sms-delivery-template-parameters}
+## SMS傳遞範本參數 {#sms-delivery-template-parameters}
 
 某些參數可依傳送範本設定。
 
-### 從欄位{#from-field}
+### 從欄位 {#from-field}
 
 此欄位為選填欄位。 它允許覆寫寄件者地址(oADC)。 此欄位的內容放置在`SUBMIT_SM PDU`的`source_addr`欄位中。
 
@@ -746,7 +746,7 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../
 
 ### 傳送參數 {#delivery-parameters}
 
-#### 每條消息的最大SMS數{#maximum-sms}
+#### 每條訊息的最大簡訊數 {#maximum-sms}
 
 此設定僅在&#x200B;**消息裝載**&#x200B;設定被禁用時有效。 如果訊息需要的SMS超過此值，則會觸發錯誤。
 
@@ -754,7 +754,7 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../
 
 由於個人化訊息在Adobe Campaign中的運作方式，訊息的大小可能會有所不同。 擁有大量長報文可能會增加發送成本。
 
-#### 傳輸模式{#transmission-mode}
+#### 傳輸模式 {#transmission-mode}
 
 此欄位指出您要傳輸的簡訊類型：普通或快閃資訊，儲存在行動或SIM卡上。
 
@@ -770,11 +770,11 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../
 
 * **「終止時** 保存」將值設定為3。它告訴手機將簡訊儲存在SIM卡中。
 
-#### 有效期{#validity-period}
+#### 有效期 {#validity-period}
 
 有效期在`SUBMIT_SM PDU`的`validity_period`欄位中傳送。 日期格式一律為絕對UTC時間格式，日期欄位的結尾為「00+」。
 
-## 擴展通用SMPP連接器{#acc-extended-connector}
+## 擴展通用SMPP連接器 {#acc-extended-connector}
 
 ![](assets/do-not-localize/sms_protocol_4.png)
 
@@ -784,7 +784,7 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是說明書[附錄B](../
 
 SMS程式只會處理SR，會連線至提供者並保持連線開啟。 程式每10分鐘重新連線一次以重新載入新設定，這是正常操作。
 
-### 匹配MT、SR和broadlog條目{#matching-mt}
+### 匹配MT、SR和broadlog條目 {#matching-mt}
 
 中間表`nmsProviderMsgId`用於臨時儲存MT和SR資料，然後非同步提交到broadlog。
 
@@ -814,13 +814,13 @@ SMS程式會每分鐘檢查是否有完整的行，然後非同步處理：
 
 此檢查清單提供上線前應檢查的項目清單。 未完成的設定可能會導致許多問題。
 
-### 檢查外部帳戶衝突{#external-account-conflict}
+### 檢查外部帳戶衝突 {#external-account-conflict}
 
 檢查您沒有舊的SMS外部帳戶。 如果禁用測試帳戶，則會運行在生產系統上重新啟用測試帳戶的風險，並產生潛在衝突。
 
 如果您在相同的Adobe Campaign執行個體上有多個帳戶連線至相同的提供者，請連絡提供者，以確定他們實際上區分這些帳戶之間的連線。 有多個帳戶具有相同登入資訊需要額外設定。
 
-### 在檢查{#enable-verbose}期間啟用詳細SMPP跟蹤
+### 在檢查期間啟用詳細SMPP跟蹤 {#enable-verbose}
 
 檢查期間，您應始終啟用詳細的SMPP跟蹤。
 即使您無法自行檢查記錄，[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)也會更容易協助您。
@@ -852,7 +852,7 @@ SMS程式會每分鐘檢查是否有完整的行，然後非同步處理：
 
 檢查`BIND_* PDUs`是否正確傳送。 要檢查的最重要事項是，提供程式始終返回成功的`BIND_*_RESP PDUs`(command_status = 0)。
 
-檢查`BIND_* PDU`s是否不太多。如果其中有太多，可能表示連線不穩定。 如需詳細資訊，請參閱[連線不穩定的問題](../../delivery/using/sms-protocol.md#issues-unstable-connection)一節。
+檢查`BIND_* PDU`s是否不太多。如果其中有太多，可能表示連線不穩定。 如需詳細資訊，請參閱[連線不穩定的問題](sms-protocol.md#issues-unstable-connection)一節。
 
 #### INQUIRE_LINK {#enquire-link-pdus}
 
@@ -889,6 +889,6 @@ SMS程式會每分鐘檢查是否有完整的行，然後非同步處理：
 
 即使您的SMS成功，請連絡提供者以查看一切都順序。
 
-### 禁用詳細SMPP跟蹤{#disable-verbose}
+### 禁用詳細SMPP跟蹤 {#disable-verbose}
 
 完成所有檢查後，最後一件事是&#x200B;**禁用詳細SMPP跟蹤**，以不生成太多日誌。 即使在生產系統上，您也可以重新啟用它們以用於疑難排解。
