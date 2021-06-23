@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 97%
+source-wordcount: '2518'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,11 @@ ht-degree: 97%
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
+   + [Adobe Analytics Connector常見問題集](technotes/aa-connector-migration.md)
    + [iOS 憑證更新](technotes/ios-certificate-update.md)
    + [Campaign 設定更新](technotes/acc-config-updates.md)
    + [已追蹤的 URL 更新](technotes/tracked-urls.md)
+   + [IMS更新](technotes/ims-updates.md)
 + 開始使用{#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
