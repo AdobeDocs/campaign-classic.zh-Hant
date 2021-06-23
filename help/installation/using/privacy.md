@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 5%
+source-wordcount: '889'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 如需隱私權管理的一般資訊，請參閱[本頁面](../../platform/using/privacy-management.md)以及Adobe Campaign中的實作步驟。 您也會找到最佳實務，並概述使用者程式和角色。
 
-## URL個人化{#url-personalization}
+## URL個人化 {#url-personalization}
 
 將個人化連結新增至內容時，請一律避免URL的主機名稱部分出現任何個人化，以避免潛在的安全漏洞。 所有URL屬性&lt;`a href="">`或`<img src="">`中一律不應使用下列範例：
 
@@ -37,7 +37,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 範例:
 
-1. 建立工作流程並新增「查詢」活動。 瞭解更多。
+1. 建立工作流程並新增「查詢」活動。 深入瞭解。
 
 1. 開啟「查詢」活動，並依照下列方式在nmsTrackingUrl表格上建立篩選器：源URL以http://&lt;%開頭，或源URL以https://&lt;%開頭。
 
@@ -47,27 +47,35 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 <img src="assets/privacy-query-dynamic-url.png">
 
-### 簽名機制
+### URL簽名
 
-為了改善安全性，在版本編號19.1.4(9032@3a9dc9c)中推出了新的電子郵件追蹤連結簽名機制，並在版本編號19.1.4(9032@3a9dc9c)和Campaign 20.2中提供。依預設，會為所有客戶啟用此選項。
+為了改善安全性，引入了追蹤電子郵件中連結的簽名機制。 Build 19.1.4(9032@3a9dc9c)和Campaign 20.2中提供此功能。此功能預設為啟用。
 
 >[!NOTE]
 >
->點按格式錯誤的簽名URL時，會傳回下列錯誤：&quot;未找到請求的URL &#39;..&#39;。&quot;
+>點按格式錯誤的簽名URL時，會傳回此錯誤：&quot;未找到請求的URL &#39;..&#39;。&quot;
 
-此外，自Campaign 20.2和[!DNL Gold Standard]發行版本開始，托管和混合客戶可使用增強功能來停用從舊版組建產生的URL。 預設會停用此選項。 您可以聯絡[客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以啟用此功能。
+此外，自從Campaign 20.2和[!DNL Gold Standard]版本開始，您可以使用增強功能來停用先前組建中產生的URL。 此功能預設為停用。 您可以聯絡[客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以啟用此功能。
 
-若要啟用此新機制，內部部署客戶必須在所有Campaign伺服器上遵循下列步驟：
+如果您執行的是[!DNL Gold Standard] 19.1.4，則使用追蹤連結的推播通知傳送或使用錨點標籤的傳送可能會發生問題。 若有，建議您停用URL簽章。
+
+無論您是在內部執行或是在混合架構中執行Campaign，您都必須聯絡[客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)以停用URL簽名。
+
+如果您以混合架構執行Campaign，在啟用URL簽章之前，請確定托管的中間來源執行個體已升級如下：
+* 在內部部署行銷執行個體之前
+* 與內部部署行銷執行個體相同的版本，或升級至稍高的版本
+
+否則，可能會出現以下問題：
+* 在升級中間來源例項之前，URL會透過此例項傳送，且無簽名。
+* 在中間來源執行個體升級且兩個執行個體上都啟用URL簽章後，先前未透過簽章而傳送的URL會遭拒。 原因是行銷執行個體提供的追蹤檔案會要求籤名。
+
+若要停用先前組建中產生的URL，請同時在所有Campaign伺服器上執行下列步驟：
 
 1. 在伺服器配置檔案(serverConf.xml)中，將&#x200B;**blockRedirectForUnsignedTrackingLink**&#x200B;更改為&#x200B;**true**。
 1. 重新啟動&#x200B;**nlserver**&#x200B;服務。
 1. 在追蹤伺服器上，重新啟動Web伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-在[!DNL Gold Standard] 19.1.4上執行的客戶可能會在使用追蹤連結的推播通知傳送，或使用錨點標籤的傳送發生問題。 若存在，Adobe建議停用追蹤連結的新簽章機制：
-
-**托管和混合** 客戶必須聯絡客戶 [服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 人員，才能停用此機制。
-
-**內部部署** 客戶遵循下列步驟：
+若要啟用URL簽章，請同時在所有Campaign伺服器上執行下列步驟：
 
 1. 在伺服器配置檔案(serverConf.xml)中，將&#x200B;**signEmailLinks**&#x200B;更改為&#x200B;**false**。
 1. 重新啟動&#x200B;**nlserver**&#x200B;服務。
