@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -37,7 +37,7 @@ SpamAssassin利用各種垃圾郵件檢測技術，包括：
 
 建立電子郵件傳送並定義其內容後，請依照下列步驟評估風險。
 
-如需建立和設計傳送的詳細資訊，請參閱[此區段](../../delivery/using/about-email-channel.md)。
+如需建立和設計傳送的詳細資訊，請參閱[此區段](about-email-channel.md)。
 
 1. 移至 **[!UICONTROL Preview]** 索引標籤。
 1. 選取收件者以預覽您的傳送。
