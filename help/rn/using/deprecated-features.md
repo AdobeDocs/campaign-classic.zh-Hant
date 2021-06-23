@@ -6,14 +6,14 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1634'
 ht-degree: 94%
 
 ---
 
-# 已棄用及已移除的功能{#deprecated-and-removed-features}
+# 已棄用及已移除的功能 {#deprecated-and-removed-features}
 
 Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代舊的功能，以提升整體客戶價值，並時時考慮回溯相容性。由於 Adobe Campaign Classic 可以搭配協力廠商工具使用，產品相容性將定期更新，以僅實施所支援的版本。不再與 Adobe Campaign Classic 相容的版本列於下方及[「相容性矩陣」](../../rn/using/compatibility-matrix.md)中。
 
@@ -27,7 +27,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
 >[!NOTE]
 >[發行說明](../../rn/using/latest-release.md)將列出 Adobe Campaign 發行版本和新功能。
 
-## 棄用的功能{#deprecated-features}
+## 已棄用功能 {#deprecated-features}
 
 本節列出最新 Campaign Classic 發行版本中已標示為棄用的功能。
 
@@ -43,9 +43,9 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
     <tr>
   <td>Adobe Analytics 資料連接器<br></td>
-   <td><p>自Campaign第21.1發行版本開始，已棄用Adobe Analytics Data Connector。</p>
-   <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/adobe-analytics-connector.md">瞭解更多</a></p>
-  <p><em>目標移除日期：2022 年</em></p>
+   <td><p>Adobe Analytics Data Connector自Campaign 21.1.3發行版本開始將不再使用。</p>
+   <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/adobe-analytics-connector.md">深入瞭解</a></p>
+  <p><em>目標移除日期：2022年3月1日</em></p>
   </td>
  </tr>
     <tr>
@@ -67,7 +67,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
  </tbody> 
 </table>
 
-## 已移除的功能{#removed-features}
+## 已移除的功能 {#removed-features}
 
 本節列出已從 Campaign Classic 移除的功能。
 
@@ -79,10 +79,10 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
   <tr>  
    <td>傳真頻道<br></td>
-   <td><p>自Campaign 21.1.3版開始，不再提供傳真通道。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">瞭解更多</a></p>
+   <td><p>自Campaign 21.1.3版開始，不再提供傳真通道。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">深入瞭解</a></p>
   <tr>
   <td>Demdex 網域<br></td>
-  <td><p> 自Campaign 21.1.3發行版本開始，不再提供用於匯入和匯出受眾至Adobe Experience Cloud的Demdex網域。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">瞭解更多</a></p> 
+  <td><p> 自Campaign 21.1.3發行版本開始，不再提供用於匯入和匯出受眾至Adobe Experience Cloud的Demdex網域。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">深入瞭解</a></p> 
   </td>
   </td>
   </tr>
@@ -130,21 +130,21 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
  </tbody> 
 </table>
 
-## 已棄用的相容性{#deprecated-compatibility}
+## 已棄用的相容性 {#deprecated-compatibility}
 
 Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md)，以升級到更新版本，或在相容性結束之前移至新系統。
 
-### Adobe Campaign 20.2 發行版本{#compat-20-2-release}
+### Adobe Campaign 第 20.2 發行版本 {#compat-20-2-release}
 
 舊的 SMS 連接器自第 20.2 版開始將不再使用。請參閱「[已棄用的功能」部分](#deprecated-features)
 
-## 相容性終止{#end-of-compatibility}
+## 相容性終止 {#end-of-compatibility}
 
 >[!CAUTION]
 >
 >Adobe Campaign Classic 與[「相容性矩陣」](../../rn/using/compatibility-matrix.md)所列的所有系統和工具相容。這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與這些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從我們的相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
 
-### 用戶端主控台{#client-console-eol}
+### 用戶端主控台 {#client-console-eol}
 
 Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編輯者已不使用這些系統。客戶若其中一個版本執行 Campaign 用戶端主控台，必須在目標移除日期前升級至最新版本。請參閱「[相容性矩陣](../../rn/using/compatibility-matrix.md)」。
 
@@ -166,21 +166,21 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 * Windows Server 2008。[瞭解更多](https://support.microsoft.com/en-us/lifecycle/search/1163)
 * SLES 11。[瞭解更多](https://www.suse.com/lifecycle)
 
-### Web 伺服器{#web-server-eol}
+### Web 伺服器 {#web-server-eol}
 
 自 19.1 春季發行版本開始，Adobe Campaign 不再與下列 Web 伺服器相容。
 
 * Apache 2.2. [瞭解更多](https://httpd.apache.org/)
 * Microsoft IIS 7。[瞭解更多](https://support.microsoft.com/en-us/lifecycle/search/810)
 
-### 工具{#tools-eol}
+### 工具 {#tools-eol}
 
 自 19.1 春季發行版本開始，Adobe Campaign 不再與下列工具相容。
 
 * Java JDK 7。[瞭解更多](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x，但嵌入到其他工具時除外。 [瞭解更多](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x，但嵌入到其他工具時除外。 [深入瞭解](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
-### 資料庫引擎{#dbe-eol}
+### 資料庫引擎 {#dbe-eol}
 
 Adobe 不支援下列資料庫引擎，因為其編輯者已不建議使用這些引擎。客戶若執行這些版本，需要升級至最新版本或改用其他引擎。
 
