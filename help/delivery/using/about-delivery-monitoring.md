@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 25%
@@ -27,8 +27,8 @@ ht-degree: 25%
 
 對於每個傳送，都有專用的控制面板可供使用。 它可讓您監控傳送期間遇到的最終問題，以及傳送的各種資訊類型：報表、鏡像頁面、排除、追蹤記錄、呈現等。
 
-* [存取傳遞清單](../../delivery/using/list-of-deliveries.md)
-* [傳遞儀表板](../../delivery/using/delivery-dashboard.md)
+* [存取傳遞清單](list-of-deliveries.md)
+* [傳遞儀表板](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
@@ -36,8 +36,8 @@ ht-degree: 25%
 
 應遵循數個准則，以確保您的傳送順利執行。 傳送傳遞時可能遇到的常見問題，也有助於您有效傳送傳遞。
 
-* [傳遞效能和最佳實務](../../delivery/using/delivery-performances.md)
-* [傳送傳送疑難排解](../../delivery/using/delivery-troubleshooting.md)
+* [傳遞效能和最佳實務](delivery-performances.md)
+* [傳送傳送疑難排解](delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
@@ -45,7 +45,7 @@ ht-degree: 25%
 
 當訊息無法傳送至設定檔時，遠端伺服器會自動傳送錯誤訊息，此錯誤訊息會由Adobe Campaign平台擷取，並限定為隔離電子郵件地址或電話號碼。
 
-[了解傳遞](../../delivery/using/understanding-delivery-failures.md) 失敗是協助您改善行銷活動的關鍵步驟。
+[了解傳遞](understanding-delivery-failures.md) 失敗是協助您改善行銷活動的關鍵步驟。
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ ht-degree: 25%
 
 Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情況下將不會向被隔離的收件者的電郵地址傳送內容。
 
-在[此部分](../../delivery/using/understanding-quarantine-management.md)中，您將找到有關如何標識和管理隔離地址的資訊，並了解有關將地址發送到隔離的條件的詳細資訊。
+在[此部分](understanding-quarantine-management.md)中，您將找到有關如何標識和管理隔離地址的資訊，並了解有關將地址發送到隔離的條件的詳細資訊。
