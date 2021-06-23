@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
 
 ---
 
-# SMS疑難排解{#troubleshooting-sms}
+# SMS疑難排解 {#troubleshooting-sms}
 
-## 不同外部帳戶之間的衝突{#external-account-conflict}
+## 不同外部帳戶之間的衝突 {#external-account-conflict}
 
 如果執行個體有多個SMS外部帳戶，您必須檢查問題是否並非由外部帳戶之間的衝突所造成。
 
@@ -45,10 +45,10 @@ Adobe Campaign將外部帳戶視為不相關的實體。
    * 某些外部帳戶共用相同的登入/密碼組合。
 提供程式無法分辨`BIND PDU`來自哪個外部帳戶，因此它們將多個帳戶的所有連接視為一個連接。 他們可能隨機地在兩個帳戶上路由MO和SR，導致問題。
 如果提供程式支援同一登錄/密碼組合的多個短代碼，則您必須要求它們將該短代碼放在`BIND PDU`中的位置。 請注意，此資訊必須放在`BIND PDU`內，而不是放在`SUBMIT_SM`內，因為`BIND PDU`是唯一允許正確路由MO的位置。
-請參閱上面每種PDU](../../delivery/using/sms-protocol.md#information-pdu)中的[資訊部分，了解`BIND PDU`中可用的欄位，通常您在`address_range`中添加短代碼，但需要提供方的特殊支援。 請聯繫他們，了解他們希望如何單獨路由多個短代碼。
+請參閱上面每種PDU](sms-protocol.md#information-pdu)中的[資訊部分，了解`BIND PDU`中可用的欄位，通常您在`address_range`中添加短代碼，但需要提供方的特殊支援。 請聯繫他們，了解他們希望如何單獨路由多個短代碼。
 Adobe Campaign支援在相同外部帳戶上處理多個短代碼。
 
-## 一般{#external-account-issues}的外部帳戶問題
+## 一般外部帳戶的問題 {#external-account-issues}
 
 * 調查連接器最近是否已更改以及由誰更改（按組檢查外部帳戶）。
 
@@ -67,13 +67,13 @@ Adobe Campaign支援在相同外部帳戶上處理多個短代碼。
 * 調查（在/postupgrade目錄中）系統是否升級以及何時升級
 * 調查最近是否可能升級了任何影響SMS的套件(/var/log/dpkg.log)。
 
-## 中間來源（托管）{#issue-mid-sourcing}問題
+## 中間來源（托管）問題{#issue-mid-sourcing}
 
 * 如果問題發生在中間來源環境，請確定已在中間來源伺服器上正確建立及更新傳送和廣泛記錄檔。 如果不是這樣，則不是SMS問題。
 
 * 如果mid伺服器上的所有項目都運作正常，且SMS已正確傳送，但行銷執行個體未正確更新，則您可能會遇到中間同步問題。
 
-## 連接到提供程式{#issue-provider}時出現問題
+## 連接到提供程式時出現問題 {#issue-provider}
 
 * 如果`BIND PDU`傳回非零`command_status`代碼，請向提供者索取詳細資訊。
 
@@ -83,11 +83,11 @@ Adobe Campaign支援在相同外部帳戶上處理多個短代碼。
 
 * 檢查&#x200B;**外部帳戶**&#x200B;設定。 向提供者詢問欄位的值。
 
-* 如果連接成功但不穩定，請檢查[連接不穩定的問題](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection)部分。
+* 如果連接成功但不穩定，請檢查[連接不穩定的問題](troubleshooting-sms.md#issues-unstable-connection)部分。
 
 * 如果難以診斷連接問題，則網路捕獲可以提供資訊。 確保在出現問題時網路捕獲同時運行，並且可以高效地分析問題。 您也應注意問題出現的確切時間。
 
-## 連接不穩定的問題{#issues-unstable-connection}
+## 連接不穩定的問題 {#issues-unstable-connection}
 
 如果發生下列任一情況，則會將連線視為不穩定：
 
@@ -115,9 +115,9 @@ Adobe Campaign支援在相同外部帳戶上處理多個短代碼。
 
 ## 傳送MT時發生問題（傳送給一般使用者的一般SMS）{#issue-MT}
 
-* 檢查連接是否穩定。 除Adobe Campaign Classic上的發射器外，SMPP連接應持續保持至少1小時。 請參閱[不穩定連線的問題](../../delivery/using/sms-protocol.md#issues-unstable-connection)一節。
+* 檢查連接是否穩定。 除Adobe Campaign Classic上的發射器外，SMPP連接應持續保持至少1小時。 請參閱[不穩定連線的問題](sms-protocol.md#issues-unstable-connection)一節。
 
-* 如果重新啟動MTA讓傳送MT在一小段時間內再次運作，您可能會因為連線不穩定而受到限制。 請參閱[不穩定連線的問題](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection)一節。
+* 如果重新啟動MTA讓傳送MT在一小段時間內再次運作，您可能會因為連線不穩定而受到限制。 請參閱[不穩定連線的問題](troubleshooting-sms.md#issues-unstable-connection)一節。
 
 * 檢查廣泛記錄是否存在，且狀態正確且日期正確。 若非如此，可能是傳送或傳送準備問題。
 
@@ -133,19 +133,19 @@ Adobe Campaign支援在相同外部帳戶上處理多個短代碼。
 
 * 如果它有效但吞吐量不一致，請嘗試調整發送窗口並降低MT吞吐量。 您需要與提供者合作，才能調整。 Adobe Campaign可以很快傳送訊息，因此提供者的裝置上可能會出現效能問題。
 
-## MT重複（一列中會多次傳送相同的SMS）{#duplicated-MT}
+## MT會重複（一列會傳送多次相同的SMS）{#duplicated-MT}
 
 重複項目通常是由重試造成。 重試訊息時有重複項目是正常情況，您應嘗試移除重試的根本原因。
 
 * 如果您發現重複項目相隔60秒，則可能是提供者端的問題，他們無法以足夠快的速度傳送`SUBMIT_SM_RESP`。
 
-* 如果看到許多`BIND/UNBIND`，則連接不穩定。 在嘗試解決重複郵件問題之前，請參閱[不穩定連線的問題](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection)一節以了解解決方案。
+* 如果看到許多`BIND/UNBIND`，則連接不穩定。 在嘗試解決重複郵件問題之前，請參閱[不穩定連線的問題](troubleshooting-sms.md#issues-unstable-connection)一節以了解解決方案。
 
 正在減少重試次數：
 
 * 降低傳送視窗。 發送窗口應足夠大，足以覆蓋`SUBMIT_SM_RESP`延遲。 其值代表當視窗已滿時發生錯誤時，可複製的訊息數上限。
 
-## 處理SR（交貨收據）時出現問題{#issue-process-SR}
+## 處理SR時發出（交貨收據） {#issue-process-SR}
 
 * 您需要啟用SMPP跟蹤才能執行任何類型的SR故障排除。
 
@@ -159,11 +159,11 @@ Adobe Campaign支援在相同外部帳戶上處理多個短代碼。
 
 * 檢查`broadLogMsg`表中是否正確布建了錯誤。
 
-如果`DELIVER_SM PDU`已由Adobe Campaign Classic延伸SMPP連接器確認，但broadLog未正確更新，請檢查[比對MT、SR和broadlog項目](../../delivery/using/sms-protocol.md#matching-mt)一節中所述的ID調解程式。
+如果`DELIVER_SM PDU`已由Adobe Campaign Classic延伸SMPP連接器確認，但broadLog未正確更新，請檢查[比對MT、SR和broadlog項目](sms-protocol.md#matching-mt)一節中所述的ID調解程式。
 
 如果您修正了所有問題，但某些無效SR仍在提供程式的緩衝區中，則可以使用「無效ID確認計數」選項來跳過它們。 這應謹慎使用，並在緩衝區清除後盡快重設為0。
 
-## 處理MO（和黑名單/自動回覆）時出現問題{#issue-process-MO}
+## 處理MO時發生的問題（和黑名單/自動回覆）{#issue-process-MO}
 
 * 在測試期間啟用SMPP跟蹤。 如果不啟用TLS，則在診斷MO時應執行網路捕獲，以檢查PDU是否包含正確的資訊且格式正確。
 
@@ -177,13 +177,13 @@ Adobe Campaign支援在相同外部帳戶上處理多個短代碼。
 
 * 如果在追蹤中找到包含回覆的`SUBMIT_SM MT PDU`，但SMS未送達行動電話，您必須聯絡提供者以取得疑難排解的協助。
 
-## 傳送準備期間發生的問題，不會排除隔離的收件者（由自動回覆功能隔離）{#issue-delivery-preparation}
+## 傳送準備期間發生的問題，不會排除隔離的收件者（由自動回覆功能隔離） {#issue-delivery-preparation}
 
-* 檢查隔離表和傳送日誌中的電話號碼格式是否完全相同。 如果沒有，請參閱此[節](../../delivery/using/sms-protocol.md#automatic-reply)，如果您對國際電話號碼格式的加號前置詞有問題。
+* 檢查隔離表和傳送日誌中的電話號碼格式是否完全相同。 如果沒有，請參閱此[節](sms-protocol.md#automatic-reply)，如果您對國際電話號碼格式的加號前置詞有問題。
 
 * 檢查短代碼。 如果收件者的簡短代碼與外部帳戶中定義的相同，或空白(empty = any shortcode)，則會排除。 如果整個Adobe Campaign例項僅使用一個短程式碼，將所有&#x200B;**short code**&#x200B;欄位留空會比較容易。
 
-## 編碼問題{#encoding-issues}
+## 編碼問題 {#encoding-issues}
 
 **步驟1:與提供者聯繫**
 
@@ -213,7 +213,7 @@ Unicode允許許多相似字元的變體，而Adobe Campaign無法處理所有�
 
 測試時傳送不同種類的特殊字元。 例如，GSM7編碼具有十六進位形式非常不同的擴展字元，這些字元很容易被發現，因為它們不出現在任何其他編碼中。
 
-## 傳送關於SMS問題{#element-include}時要包含的元素
+## 傳送SMS問題時要包含的元素 {#element-include}
 
 每當您在SMS問題上尋求協助時(無論是開啟支援票證給Adobe Campaign、給SMS提供者，或是針對此問題進行任何類型的通訊)，您都必須包含下列資訊，以確保其符合資格。 合格的問題是更快解決問題的關鍵。
 
@@ -237,7 +237,7 @@ Unicode允許許多相似字元的變體，而Adobe Campaign無法處理所有�
 
 * 納入平台上所做的任何變更或調整。 此外，還包括提供者可能已在其一側所做的任何變更。
 
-### 網路捕獲{#network-capture}
+### 網路捕獲 {#network-capture}
 
 不一定需要網路捕獲，通常冗餘的SMPP消息就足夠了。 以下是一些可幫助您確定是否需要網路捕獲的准則：
 
@@ -267,7 +267,7 @@ Unicode允許許多相似字元的變體，而Adobe Campaign無法處理所有�
 
 * 與實際SMPP流量無關的錯誤：傳遞準備、訊息中心API問題、工作流程問題等。
 
-## 啟用SMPP跟蹤{#enabling-smpp-traces}
+## 啟用SMPP跟蹤 {#enabling-smpp-traces}
 
 新連接器支援透過追蹤進行延伸記錄：SMPP。 跟蹤是在MTA日誌中輸出，而不是在標準輸出中。
 
@@ -289,7 +289,7 @@ Unicode允許許多相似字元的變體，而Adobe Campaign無法處理所有�
 <sms args="-tracefilter:SMPP"/>
 ```
 
-## 檢查容器{#open-connections}上開啟的連接數
+## 檢查容器上開啟的連線數 {#open-connections}
 
 若要檢查容器上開啟的連線數，可使用以下命令：
 
