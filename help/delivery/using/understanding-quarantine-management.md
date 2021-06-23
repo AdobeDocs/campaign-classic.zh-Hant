@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 15%
@@ -29,9 +29,9 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者新增至封鎖清單。
 
-此外，隔離有助於減少簡訊傳送成本，因為將錯誤的電話號碼排除在遞送服務之外。如需確保傳送安全並最佳化的最佳實務，請參閱[本頁面](../../delivery/using/delivery-best-practices.md)。
+此外，隔離有助於減少簡訊傳送成本，因為將錯誤的電話號碼排除在遞送服務之外。如需確保傳送安全並最佳化的最佳實務，請參閱[本頁面](delivery-best-practices.md)。
 
-### 隔離與封鎖清單{#quarantine-vs-denylist}
+### 隔離與封鎖清單 {#quarantine-vs-denylist}
 
 **隔離** (Quarantine)　僅適用於地址，而不適用於設定檔本身。這代表如果兩個設定檔具有相同的電子郵件地址，則兩個設定檔在隔離地址時都會受到影響。
 
@@ -49,7 +49,7 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 ### 識別傳送的隔離地址 {#identifying-quarantined-addresses-for-a-delivery}
 
-在傳送準備階段期間，會在傳送控制面板的傳送記錄中列出特定傳送的隔離地址（請參閱[傳送記錄和歷史記錄](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)）。
+在傳送準備階段期間，會在傳送控制面板的傳送記錄中列出特定傳送的隔離地址（請參閱[傳送記錄和歷史記錄](delivery-dashboard.md#delivery-logs-and-history)）。
 
 ### 識別整個平台的隔離地址 {#identifying-quarantined-addresses-for-the-entire-platform}
 
@@ -70,7 +70,7 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 >年底1:(1*0.33)/(1+0.5)=22%。
 年度結束 2：((1.22*0.33)+0.33)/(1.5+0.75)=32.5%。
 
-### 識別傳送報告{#identifying-quarantined-addresses-in-delivery-reports}中的隔離地址
+### 識別傳送報告中的隔離地址 {#identifying-quarantined-addresses-in-delivery-reports}
 
 下列報告提供隔離中地址的相關資訊：
 
@@ -84,13 +84,13 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 您可以查詢平台(**[!UICONTROL Home page > Reports]**)的所有傳送或特定傳送的此資訊。 您也可以建立自訂報表，並選取要顯示的資訊。
 
-### 識別收件者{#identifying-quarantined-addresses-for-a-recipient}的隔離地址
+### 識別收件者的隔離地址 {#identifying-quarantined-addresses-for-a-recipient}
 
 您可以查詢任何收件者之電子郵件地址的狀態。 要執行此操作，請選取收件者設定檔，然後按一下&#x200B;**[!UICONTROL Deliveries]**&#x200B;標籤。 對於傳送給該收件者的所有傳送，您可以找出地址是否失敗、在分析期間是否被隔離等。 對於每個資料夾，您只能顯示其電子郵件地址處於隔離狀態的收件者。 要執行此操作，請使用&#x200B;**[!UICONTROL Quarantined email address]**&#x200B;應用程式篩選器。
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### 刪除隔離地址{#removing-a-quarantined-address}
+### 移除隔離的地址 {#removing-a-quarantined-address}
 
 如有需要，您可以手動從隔離清單中移除地址。 此外，符合特定條件的地址還會由&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程自動從隔離清單中刪除。
 
@@ -117,7 +117,7 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 ## 將地址傳送到隔離區的條件 {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原因（請參閱[退信限定](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)）和[傳送失敗類型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)來管理隔離。
+Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原因（請參閱[退信限定](understanding-delivery-failures.md#bounce-mail-qualification)）和[傳送失敗類型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)來管理隔離。
 
 * **忽略錯誤**：忽略的錯誤不會傳送要隔離的地址。
 * **硬錯誤**：會立即將相對應的電子郵件地址傳送至隔離區。
@@ -129,23 +129,23 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
 
 ![](assets/tech_quarant_error_reasons.png)
 
-### 軟錯誤管理{#soft-error-management}
+### 軟錯誤管理 {#soft-error-management}
 
 與硬錯誤不同，軟錯誤不會立即傳送要隔離的地址，而會增加錯誤計數器。
 
 * 當錯誤計數器達到限制臨界值時，該地址便會進入隔離區。
 * 在預設設定中，臨界值會設定為　5　個錯誤，其中　2　個錯誤若相隔至少　24　小時，即為顯著錯誤。會將地址放置到隔離區的第五個錯誤。
-* 可以修改錯誤計數器臨界值。如需詳細資訊，請參閱[傳送暫時失敗後重試](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+* 可以修改錯誤計數器臨界值。如需詳細資訊，請參閱[傳送暫時失敗後重試](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
 
 如果上次出現重大錯誤超過10天，則重新初始化錯誤計數器。 然後，地址狀態將更改為&#x200B;**Valid**，並且該地址將通過&#x200B;**Database cleanup**&#x200B;工作流從隔離清單中刪除。
 
-## 推播通知隔離{#push-notification-quarantines}
+## 推播通知隔離 {#push-notification-quarantines}
 
 推播通知的隔離機制與一般程式全域相同。 請參閱[關於隔離](#about-quarantines)。 但推播通知的某些錯誤管理方式不同。 例如，針對某些軟錯誤，不會在相同傳送內執行重試。 推播通知的特異性列於下方。 重試機制（重試次數、頻率）與電子郵件的相同。
 
 放入隔離區的項目是裝置代號。
 
-### iOS隔離{#ios-quarantine}
+### iOS隔離 {#ios-quarantine}
 
 HTTP/V2通訊協定可針對每個推送傳送提供直接意見和狀態。 如果使用HTTP/V2通訊協定連接器，**[!UICONTROL mobileAppOptOutMgt]**&#x200B;工作流程將不再呼叫反饋服務。 在卸載或重新安裝移動應用程式時，將令牌視為未註冊。
 
@@ -236,7 +236,7 @@ HTTP/V2通訊協定可針對每個推送傳送提供直接意見和狀態。 如
  </tbody> 
 </table>
 
-### Android隔離{#android-quarantine}
+### Android隔離 {#android-quarantine}
 
 **針對Android V1**
 
@@ -467,7 +467,7 @@ Android V2隔離機制使用的程式與Android V1相同，適用於訂閱和排
  </tbody> 
 </table>
 
-## SMS隔離{#sms-quarantines}
+## SMS隔離 {#sms-quarantines}
 
 **標準連接器**
 
@@ -525,14 +525,14 @@ SMS訊息的隔離機制與一般程式全域相同。 請參閱[關於隔離](#
 
 **Extended generic SMPP連接器**
 
-使用SMPP通訊協定傳送SMS訊息時，錯誤管理的處理方式不同。 有關Extended generic SMPP連接器的詳細資訊，請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
+使用SMPP通訊協定傳送SMS訊息時，錯誤管理的處理方式不同。 有關Extended generic SMPP連接器的詳細資訊，請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
 
 SMPP連接器會從SR（狀態報表）訊息中擷取資料，該訊息使用規則運算式(regexes)傳回以篩選其內容。 然後，此資料將與&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表中的資訊（可通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;菜單獲得）匹配。
 
 在限定新類型的錯誤之前，預設情況下，失敗原因始終設定為&#x200B;**Recommended**。
 
 >[!NOTE]
-失敗類型和原因與電子郵件的相同。 請參閱[傳送失敗類型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+失敗類型和原因與電子郵件的相同。 請參閱[傳送失敗類型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
 請向提供者索取狀態和錯誤代碼清單，以便在「傳送記錄檔資格」表格中設定正確的失敗類型和失敗原因。
 
 產生的訊息範例：
@@ -542,13 +542,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * 所有錯誤訊息都以&#x200B;**SR**&#x200B;開頭，以區分SMS錯誤碼和電子郵件錯誤碼。
-* 錯誤訊息的第二部分（此範例中的&#x200B;**一般**）參照SMS外部帳戶的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;欄位中定義的SMSC實作名稱。 請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
+* 錯誤訊息的第二部分（此範例中的&#x200B;**一般**）參照SMS外部帳戶的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;欄位中定義的SMSC實作名稱。 請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
 
    因為相同的錯誤代碼可能對每個提供程式具有不同的含義，所以此欄位允許您了解生成錯誤代碼的提供程式。 然後，您可以在相關提供者的檔案中找到錯誤。
 
 * 此範例中，錯誤訊息的第三部分(**DELIVRD**)與使用SMS外部帳戶中定義的狀態擷取規則運算式從SR擷取的狀態代碼相對應。
 
-   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
+   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -556,10 +556,10 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 錯誤訊息的第四部分（此範例中為&#x200B;**000**）對應於使用SMS外部帳戶中定義的錯誤碼擷取規則運算式從SR擷取的錯誤碼。
 
-   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
+   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
 
    依預設，規則運算式會擷取&#x200B;**err:**&#x200B;欄位，如&#x200B;**SMPP 3.4規格**&#x200B;的&#x200B;**附錄B**&#x200B;區段所定義。
 
-* 直線符號(|)之後的所有內容僅顯示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表的&#x200B;**[!UICONTROL First text]**&#x200B;列中。 在對消息進行標準化後，此內容始終由&#x200B;**#MESSAGE#**&#x200B;替換。 此程式可避免因類似錯誤而有多個項目，且與電子郵件的項目相同。 有關詳細資訊，請參閱[退信限定](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)。
+* 直線符號(|)之後的所有內容僅顯示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表的&#x200B;**[!UICONTROL First text]**&#x200B;列中。 在對消息進行標準化後，此內容始終由&#x200B;**#MESSAGE#**&#x200B;替換。 此程式可避免因類似錯誤而有多個項目，且與電子郵件的項目相同。 有關詳細資訊，請參閱[退信限定](understanding-delivery-failures.md#bounce-mail-qualification)。
 
 Extended generic SMPP連接器應用啟發式來查找明顯預設值：如果狀態以&#x200B;**DELIV**&#x200B;開頭，則視為成功，因為它符合大多數提供者使用的常見狀態&#x200B;**DELIVRD**&#x200B;或&#x200B;**DELIVED**。 任何其他狀態都會導致硬性失敗。
