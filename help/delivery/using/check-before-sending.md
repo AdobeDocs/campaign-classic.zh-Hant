@@ -5,26 +5,26 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
 
 ---
 
-# 在發送{#perform-all-checks}之前執行所有檢查
+# 在發送前執行所有檢查 {#perform-all-checks}
 
 在您的訊息準備就緒後，請確定其內容在所有裝置上皆正確顯示，且不會包含任何錯誤，例如錯誤的個人化或中斷的連結。
 
 傳送訊息前，也請確定參數和設定與傳送一致。
 
-## 驗證為何是關鍵{#validation-is-key}
+## 驗證為何是關鍵 {#validation-is-key}
 
 在傳送傳遞前，您必須確保收件者會收到您確實想要傳送的訊息。 若要這麼做，您需要驗證訊息內容和傳送參數。
 
 此步驟可讓您在傳送至主要目標之前，偵測可能的錯誤並加以修正。
 
-在本小節](../../delivery/using/steps-validating-the-delivery.md)中顯示了驗證傳送的步驟[。
+在本小節](steps-validating-the-delivery.md)中顯示了驗證傳送的步驟[。
 
 ## 收件匣轉譯 {#inbox-and-email-rendering}
 
@@ -36,15 +36,15 @@ ht-degree: 4%
 
 * 收件匣轉譯功能對於識別您的電子郵件促銷活動是否成功超過主要ISP（網際網路服務提供者）和網路郵件服務的篩選器至關重要。 這類工具會將電子郵件的飛行前副本傳送至測試收件匣網路，讓您了解訊息在這些服務中的顯示或呈現方式。 它們也可能包含報表和程式碼修正選項，可協助您快速識別並進行修正，以改善傳遞能力。
 
-了解更多[，請參閱本節](../../delivery/using/inbox-rendering.md)。
+了解更多[，請參閱本節](inbox-rendering.md)。
 
-## 校樣訊息{#proof-messages}
+## 校樣訊息 {#proof-messages}
 
 傳送校樣可讓您檢查選擇退出連結、鏡像頁面和任何其他連結、驗證訊息、確認影像已顯示、偵測可能的錯誤等。 您也可能想要檢查您的設計和在不同裝置上呈現。
 
-了解更多[，請參閱本節](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+了解更多[，請參閱本節](steps-validating-the-delivery.md#sending-a-proof)。
 
-## 設定A/B測試傳送{#a-b-testing-deliveries}
+## 設定A/B測試傳送 {#a-b-testing-deliveries}
 
 如果您有數個電子郵件傳送內容，您可以使用A/B測試來找出哪個版本對目標母體影響最大。
 
@@ -54,9 +54,9 @@ ht-degree: 4%
 
 * 選取成功率最高的，並將其傳送至目標的其餘部分
 
-了解更多[，請參閱本節](../../delivery/using/get-started-a-b-testing.md)。
+了解更多[，請參閱本節](get-started-a-b-testing.md)。
 
-## 確保傳遞{#make-sure-your-message-is-delivered}
+## 確認訊息已傳送 {#make-sure-your-message-is-delivered}
 
 最後一步，請盡可能提高您的機會並運用Adobe Campaign Classic的強大功能，確保您的訊息確實會傳送給相關的收件者。
 
@@ -66,7 +66,7 @@ ht-degree: 4%
 
 ### 使用波段
 
-您可以使用波數逐步增加傳送的音量。 這樣可避免您的郵件被標示為垃圾訊息，或您想要限制每天的郵件數量。 使用波段，您可以將傳送分為數個批次，而非同時傳送大量訊息。 了解更多[，請參閱本節](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
+您可以使用波數逐步增加傳送的音量。 這樣可避免您的郵件被標示為垃圾訊息，或您想要限制每天的郵件數量。 使用波段，您可以將傳送分為數個批次，而非同時傳送大量訊息。 了解更多[，請參閱本節](steps-sending-the-delivery.md#sending-using-multiple-waves)。
 
 ### 排定訊息的優先順序
 
@@ -86,11 +86,11 @@ ht-degree: 4%
 
 您可以：
 
-* 在serverConf.xml設定檔案中定義IP相關性。 [瞭解更多](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* 在serverConf.xml設定檔案中定義IP相關性。 [深入瞭解](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* 對於每個IPAfinity元素，聲明可使用的IP地址。 [瞭解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* 對於每個IPAfinity元素，聲明可使用的IP地址。 [深入瞭解](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您選擇的[類型](../../campaign/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理上述相關性的傳送伺服器(MTA)。 [瞭解更多](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在您選擇的[類型](../../campaign/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理上述相關性的傳送伺服器(MTA)。 [深入瞭解](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 傳送電子郵件後，檢查標題以確認傳送的來源IP位址。 您的電子郵件管理員應可協助您取得標題資訊。
 
