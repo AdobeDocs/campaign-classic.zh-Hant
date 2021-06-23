@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 開始傳送簡訊之前：
 
 * 請確定收件者設定檔中至少包含行動電話。
-* 進一步了解Adobe Campaign [傳送最佳實務](../../delivery/using/delivery-best-practices.md)。
+* 進一步了解Adobe Campaign [傳送最佳實務](delivery-best-practices.md)。
 
 傳送簡訊的關鍵步驟如下：
 
@@ -34,10 +34,10 @@ ht-degree: 4%
 
 此外，您還需熟悉SMS通訊協定和設定。 在[本檔案](sms-protocol.md)中，逐步說明Adobe Campaign與SMPP提供者之間所設定的連線
 
-如需如何建立傳送的全域資訊，請參閱[此區段](../../delivery/using/steps-about-delivery-creation-steps.md)。
+如需如何建立傳送的全域資訊，請參閱[此區段](steps-about-delivery-creation-steps.md)。
 
 >[!NOTE]
 >
 >Adobe Campaign也可讓您透過其&#x200B;**Adobe Campaign行動應用程式頻道(NMAC)**&#x200B;選項，在行動終端上提交通知。
 > 
->如需詳細資訊，請參閱[行動應用程式頻道快速入門](../../delivery/using/about-mobile-app-channel.md)區段。
+>如需詳細資訊，請參閱[行動應用程式頻道快速入門](about-mobile-app-channel.md)區段。
