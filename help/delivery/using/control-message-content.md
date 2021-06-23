@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 4%
 
 ---
 
-# 控制您的消息內容{#control-message-content}
+# 控制訊息內容{#control-message-content}
 
 為了確保您的電子郵件可送達您的收件者，並改善您的電子郵件傳遞率，他們必須遵守許多規則。 否則，某些消息的內容可能被檢測為垃圾郵件。 Adobe Campaign提供數種工具，讓您的內容符合這些規則。
 
@@ -29,31 +29,31 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如需編輯電子郵件內容的詳細資訊，請參閱「定義電子郵件內容」](../../delivery/using/defining-the-email-content.md)和「建立個人化內容」](../../delivery/using/design-and-personalize.md)。[[
+>如需編輯電子郵件內容的詳細資訊，請參閱「定義電子郵件內容」](defining-the-email-content.md)和「建立個人化內容」](design-and-personalize.md)。[[
 
-## 發件人地址{#sender-address}
+## 寄件者地址 {#sender-address}
 
 某些ISP在接受郵件之前檢查發件人地址(**[!UICONTROL From]**)的有效性。 錯誤形成的地址可能導致接收伺服器拒絕該地址。
 
 您必須確保在執行個體層級（功能表&#x200B;**[!UICONTROL Tools > Advanced > Deployment wizard...]**）或最常使用的情況下提供正確的地址。
 
-有關詳細資訊，請參閱[定義寄件者](../../delivery/using/defining-the-email-content.md)。
+有關詳細資訊，請參閱[定義寄件者](defining-the-email-content.md)。
 
 ## 個人化 {#personalization}
 
 為了改善收件者的體驗，並讓他們開啟您的電子郵件，Adobe Campaign可讓您個人化您的訊息。
 
-如需在Adobe Campaign中使用個人化欄位的詳細資訊，請參閱[此區段](../../delivery/using/personalization-fields.md)。
+如需在Adobe Campaign中使用個人化欄位的詳細資訊，請參閱[此區段](personalization-fields.md)。
 
-在[此區段](../../delivery/using/design-and-personalize.md#optimize-personalization)中會顯示建立內容時最佳化個人化的一些秘訣。
+在[此區段](design-and-personalize.md#optimize-personalization)中會顯示建立內容時最佳化個人化的一些秘訣。
 
-## 退出連結和表單{#opt-out}
+## 退出連結和表單 {#opt-out}
 
-依預設，分析訊息時，[類型規則](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)會檢查是否已包含選擇退出連結，並在遺失時產生警告。 您可以變更此規則，以引發錯誤（而非簡單警告），並在沒有此連結的情況下停止傳送。
+依預設，分析訊息時，[類型規則](steps-validating-the-delivery.md#validation-process-with-typologies)會檢查是否已包含選擇退出連結，並在遺失時產生警告。 您可以變更此規則，以引發錯誤（而非簡單警告），並在沒有此連結的情況下停止傳送。
 
 您必須在每次傳送前，檢查選擇退出連結是否正常運作。 例如，傳送校樣時，請確定連結有效、表單已上線且驗證會將&#x200B;**[!UICONTROL No longer contact this recipient]**&#x200B;欄位的值變更為&#x200B;**[!UICONTROL Yes]**。 您應系統地進行此檢查，因為在進入連結或更改表單時，始終可能出現人為錯誤。
 
-了解如何在此小節](../../delivery/using/personalization-blocks.md#personalization-blocks-example)插入選擇退出連結[。
+了解如何在此小節](personalization-blocks.md#personalization-blocks-example)插入選擇退出連結[。
 
 如果在傳送開始後偵測到有關取消訂閱的問題，則即使收件者無法確認其選擇，仍可手動執行取消訂閱（例如使用大量更新功能）。
 
@@ -67,7 +67,7 @@ ht-degree: 4%
 
 為了執行此操作，Adobe Campaign 會擷取呈現，並將之用於專用報告中。這可讓您在可接收訊息的不同內容中預覽所傳送的訊息。
 
-有關詳細資訊，請參閱[收件箱呈現](../../delivery/using/inbox-rendering.md)。
+有關詳細資訊，請參閱[收件箱呈現](inbox-rendering.md)。
 
 ## SpamAssassin {#spamassassin}
 
@@ -75,4 +75,4 @@ Adobe Campaign可設定為與SpamAssassin搭配使用。 這樣就可以對電�
 
 開始傳送前， **[!UICONTROL Preview]**&#x200B;標籤可讓您評估風險。 警告訊息會提供測試結果。
 
-了解更多[小節](../../delivery/using/spamassassin.md)。
+了解更多[小節](spamassassin.md)。
