@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#delivery-template-video)
 
-## 將現有傳送轉換為範本{#converting-an-existing-delivery-to-a-template}
+## 將現有傳遞轉換為範本 {#converting-an-existing-delivery-to-a-template}
 
 傳送可轉換為範本，以執行新的重複傳送動作。 若要將傳送轉換為範本，請從傳送清單中選取，可透過樹狀結構的&#x200B;**[!UICONTROL Campaign management]**&#x200B;節點存取。
 
@@ -29,7 +29,7 @@ ht-degree: 7%
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-有關配置模式的詳細資訊，請參閱[將模板連結到傳送](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
+有關配置模式的詳細資訊，請參閱[將模板連結到傳送](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
 
 ## 建立新範本 {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ ht-degree: 7%
 
 ### 如何設定傳遞範本
 
-下列影片示範如何設定臨機傳送的範本。
+下列影片示範如何設定隨選傳遞的範本。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
