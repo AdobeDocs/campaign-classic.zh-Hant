@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 13%
+source-wordcount: '582'
+ht-degree: 10%
 
 ---
 
@@ -21,10 +21,17 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->包含個人化的電子郵件內容中的連結需要追蹤特定語法。 如需如何在可個人化的電子郵件中新增連結以及支援追蹤的詳細資訊，請參閱[此區段](../../delivery/using/tracking-personalized-links.md)。
+>包含個人化的電子郵件內容中的連結需要追蹤特定語法。 如需如何在可個人化的電子郵件中新增連結以及支援追蹤的詳細資訊，請參閱[此區段](tracking-personalized-links.md)。
 
+強烈建議您在套用追蹤公式前，先在&#x200B;**[!UICONTROL Text content]**&#x200B;標籤的分隔字元中括住URL。 Adobe Campaign會使用此索引標籤中輸入的URL分隔字元來識別字元字串內的URL。 您可以使用下列分隔字元組：
+* 括弧()
+* 括弧[ ]
+* 大括弧{ }
 
-
+在此範例中，URL https://www.adobe.com後面接著分號(;)。 收件者電子郵件用戶端可將分號解讀為URL的一部分。 因此，連結可能會損毀。 若要避免此問題，您可以透過下列其中一種方式，將URL括在分隔字元中：
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
 
 訊息追蹤預設為啟用。 若要個人化URL的追蹤方式，請遵循下列步驟：
 
