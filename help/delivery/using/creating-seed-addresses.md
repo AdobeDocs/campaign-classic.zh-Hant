@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳遞或促銷活動中，並根據相關傳遞和促銷活動的特定需求加以調整。 請參閱[建立種子地址模板](#creating-seed-address-templates)。
 
-## 定義地址{#defining-addresses}
+## 定義地址 {#defining-addresses}
 
 要建立種子地址，請執行以下步驟：
 
@@ -44,7 +44,7 @@ Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳
    >
    >請確保已使用別名定義其他目標資料，該別名在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動中以「@」開頭。 否則，您將無法在傳遞活動中將種子地址正確使用它們。
 
-## 建立種子地址模板{#creating-seed-address-templates}
+## 建立種子地址模板 {#creating-seed-address-templates}
 
 要建立將導入的地址模板，並且可以針對每次傳送進行修改，該過程與定義新種子地址時的過程相同。 唯一的區別是種子地址模板地址必須儲存在「模板」類型資料夾中。
 
@@ -58,4 +58,4 @@ Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   儲存在此資料夾中的地址現在可以用作地址模板。 您可以將它們匯入傳送或促銷活動，並根據相關傳送和促銷活動的特定需求加以調整（請參閱[新增種子地址](../../delivery/using/adding-seed-addresses.md)）。
+   儲存在此資料夾中的地址現在可以用作地址模板。 您可以將它們匯入傳送或促銷活動，並根據相關傳送和促銷活動的特定需求加以調整（請參閱[新增種子地址](adding-seed-addresses.md)）。
