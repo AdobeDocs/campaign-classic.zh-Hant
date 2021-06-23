@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
 
 ---
 
-# 建立Android{#create-notificaations-android}的通知
+# 建立Android通知{#create-notificaations-android}
 
-使用Adobe Campaign在Android裝置上傳送推播通知。 傳遞建立的全域概念在[此小節](../../delivery/using/steps-about-delivery-creation-steps.md)中介紹。
+使用Adobe Campaign在Android裝置上傳送推播通知。 傳遞建立的全域概念在[此小節](steps-about-delivery-creation-steps.md)中介紹。
 
 首先，建立新的傳送。
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 如需Firebase雲端訊息類型的詳細資訊，請參閱[FCM檔案](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages)。
 
-## 建立資料消息{#creating-data-message}
+## 建立資料訊息 {#creating-data-message}
 
 1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
@@ -66,11 +66,11 @@ ht-degree: 1%
 
 ![](assets/nmac_android_4.png)
 
-## 建立通知消息{#creating-notification-message}
+## 建立通知訊息 {#creating-notification-message}
 
 >[!NOTE]
 >
->通知訊息的其他選項僅可搭配HTTP v1 API設定使用。 如需詳細資訊，請參閱本[區段](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
+>通知訊息的其他選項僅可搭配HTTP v1 API設定使用。 如需詳細資訊，請參閱本[區段](configuring-the-mobile-application-android.md#android-service-httpv1)。
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在影片中建立Android推播通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
