@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 8%
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 有幾個因素會直接影響伺服器效能並減緩平台速度：
 
-* 個人化元素的數量和類型：電子郵件中的個人化會將每個收件者的資料從資料庫中提取。 如果有許多個人化元素，會增加準備傳送所需的資料量。  深入了解[此區段](../../delivery/using/about-personalization.md)中的個人化
+* 個人化元素的數量和類型：電子郵件中的個人化會將每個收件者的資料從資料庫中提取。 如果有許多個人化元素，會增加準備傳送所需的資料量。  深入了解[此區段](about-personalization.md)中的個人化
 
 * 伺服器載入：當行銷伺服器同時處理許多不同的工作時，可能會降低效能。 行銷伺服器需要協調所有傳送的所有傳入和傳出資料，以確保資料正確無誤。
 
@@ -32,7 +32,7 @@ ht-degree: 8%
 
 * 如果您符合資格，您可以使用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)，透過[效能監控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html)功能來監控您的平台。
 
-## 正在檢查網路配置{#network-config}
+## 檢查網路配置 {#network-config}
 
 要在處理大量電子郵件時優化傳送，並避免被誤認為是垃圾郵件發送者，請確保您擁有不嘗試隱藏伺服器身份的合法網路配置。
 
@@ -46,13 +46,13 @@ ht-degree: 8%
 
    * 它指的是電子郵件的因素，這些因素決定了收件人伺服器接受電子郵件的能力。 ISP（網際網路服務提供者）會篩選出其識別為垃圾訊息的電子郵件，或封鎖影像下載。 如果他們判斷某個網域傳送的電子郵件過多，將會限制從該寄件者接收的電子郵件數量。
 
-   * 檢查電子郵件的傳遞能力時，您想要著重於四個主要類別：資料質量、訊息和內容、傳送基礎架構和信譽。 有關此主題的更深入的了解，請參閱[此部分](../../delivery/using/about-deliverability.md)。
+   * 檢查電子郵件的傳遞能力時，您想要著重於四個主要類別：資料質量、訊息和內容、傳送基礎架構和信譽。 有關此主題的更深入的了解，請參閱[此部分](about-deliverability.md)。
 
-* 套用本檔案](../../delivery/using/about-deliverability.md)中詳細的[建議。
+* 套用本檔案](about-deliverability.md)中詳細的[建議。
 
 * 請連絡您的Adobe代表以取得協助。
 
-## 隔離管理{#quarantine-management}
+## 隔離管理 {#quarantine-management}
 
 維護良好的隔離管理流程符合您的最大利益。
 
@@ -62,16 +62,16 @@ ht-degree: 8%
 
 * 如果您有無效地址的清單，Adobe建議通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;將其導入隔離表。
 
-* 在傳送分析期間，預設會排除被隔離的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [瞭解更多](#identifying-quarantined-addresses-for-a-delivery)
+* 在傳送分析期間，預設會排除被隔離的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [深入瞭解](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign會根據傳回的錯誤類型來管理錯誤位址。 如需詳細資訊，請參閱[本章節](../../delivery/using/understanding-quarantine-management.md)。
+* Adobe Campaign會根據傳回的錯誤類型來管理錯誤位址。 如需詳細資訊，請參閱[本章節](understanding-quarantine-management.md)。
 
 
 * 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者新增至封鎖清單。
 
 * 隔離管理也有助於將錯誤的電話號碼排除在傳送之外，以降低簡訊傳送成本。
 
-## 雙重加入機制{#double-opt-in}
+## 雙重加入機制 {#double-opt-in}
 
 為避免傳送訊息至無效位址、限制不當通訊並改善寄件者信譽，Adobe建議實作訂閱後確認的雙重加入機制。 這有助於確保收件者刻意訂閱。
 
