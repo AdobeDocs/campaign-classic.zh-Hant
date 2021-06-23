@@ -6,25 +6,25 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
 
 ---
 
-# 傳送、監視及追蹤SMS傳送{#sms-properties}
+# 傳送、監視及追蹤SMS傳遞{#sms-properties}
 
-## 發送SMS消息{#sending-sms-messages}
+## 傳送SMS訊息 {#sending-sms-messages}
 
 若要核准您的訊息，並將其傳送給所建立傳送的收件者，請按一下&#x200B;**[!UICONTROL Send]**。
 
 驗證和傳送傳遞的詳細程式會顯示在以下章節：
 
-* [驗證傳遞](../../delivery/using/steps-validating-the-delivery.md)
-* [傳送傳遞](../../delivery/using/steps-sending-the-delivery.md)
+* [驗證傳遞](steps-validating-the-delivery.md)
+* [傳送傳遞](steps-sending-the-delivery.md)
 
-## 進階參數 {#advanced-parameters}
+## 高級參數 {#advanced-parameters}
 
 **[!UICONTROL Properties]**&#x200B;按鈕可提供進階傳送參數的存取權。 SMS傳送的特定參數位於&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤的&#x200B;**[!UICONTROL SMS parameters]**&#x200B;區段中。
 
@@ -56,15 +56,15 @@ ht-degree: 3%
 
 * **每條訊息的SMS最大數量**:此選項可讓您設定用於傳送訊息的SMS數量。如果數字設為0，您可以使用SMS來傳送訊息。 如果例項的SMS數量設為1或2，而訊息超過此臨界值，則不會傳送訊息。
 
-## 監視和追蹤SMS {#monitoring-and-tracking-sms-deliveries}
+## 監控及追蹤簡訊 {#monitoring-and-tracking-sms-deliveries}
 
 傳送訊息後，您可以監控及追蹤您的傳送。 如需詳細資訊，請參閱下列區段。
 
-* [監視傳遞](../../delivery/using/about-delivery-monitoring.md)
-* [瞭解傳遞失敗](../../delivery/using/understanding-delivery-failures.md)
-* [關於訊息追蹤](../../delivery/using/about-message-tracking.md)
+* [監視傳遞](about-delivery-monitoring.md)
+* [瞭解傳遞失敗](understanding-delivery-failures.md)
+* [關於訊息追蹤](about-message-tracking.md)
 
-## 處理傳入消息{#processing-inbound-messages}
+## 處理傳入訊息 {#processing-inbound-messages}
 
 **nlserver sms**&#x200B;模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤傳送進度，並處理狀態報表和收件者取消訂閱請求。
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
    請參閱[工作流程](../../workflow/using/architecture.md)指南。
 
-## InSMS架構{#insms-schema}
+## InSMS結構 {#insms-schema}
 
 InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些欄位的說明。
 
@@ -108,7 +108,7 @@ InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些�
 * **operatorCode**:操作員網路代碼。
 * **linkedSmsId**:Adobe Campaign識別碼(broadlogId)連結至傳出的SMS，其中此SMS為回應。
 
-## 管理自動答復（美國法規）{#managing-automatic-replies--american-regulation-}
+## 管理自動答復（美國法規） {#managing-automatic-replies--american-regulation-}
 
 當訂閱者回覆透過Adobe Campaign傳送給他們的SMS訊息，並使用STOP、HELP或YES等關鍵字時，在美國市場上必須設定自動傳回的訊息。
 
@@ -165,6 +165,6 @@ InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些�
 
 >[!IMPORTANT]
 >
->這類自動訊息不會保留歷史記錄。 因此，傳送控制面板中不會顯示這些字元。 [瞭解更多](../../delivery/using/delivery-dashboard.md)。
+>這類自動訊息不會保留歷史記錄。 因此，傳送控制面板中不會顯示這些字元。 [深入瞭解](delivery-dashboard.md)。
 >
->商業壓力規則沒有考慮這些報文。 [瞭解更多](../../campaign/using/pressure-rules.md)。
+>商業壓力規則沒有考慮這些報文。 [深入瞭解](../../campaign/using/pressure-rules.md)。
