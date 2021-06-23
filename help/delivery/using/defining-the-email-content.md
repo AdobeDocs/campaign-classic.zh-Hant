@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 此視窗可讓您輸入建立電子郵件標題所需的所有資訊。 可將此資訊加以個人化。若要這麼做，請使用輸入欄位右側的按鈕來插入個人化欄位。
 
-若要了解如何插入和使用個人化欄位，請參閱[關於個人化](../../delivery/using/about-personalization.md)區段。
+若要了解如何插入和使用個人化欄位，請參閱[關於個人化](about-personalization.md)區段。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >在由網際網路存取提供者(ISP)實作的檢查以打擊未經請求的電子郵件（垃圾郵件）的內容中，Adobe建議建立與指定用於傳送和回覆的地址相對應的電子郵件帳戶。 請咨詢您的消息系統管理員。
 
-## 消息主體{#message-subject}
+## 訊息主體 {#message-subject}
 
 消息的主題在相應欄位中配置。 您可以直接在欄位中輸入，或按一下&#x200B;**[!UICONTROL Subject]**&#x200B;連結以輸入指令碼。 個人化連結可讓您在主題中插入資料庫欄位。
 
@@ -53,11 +53,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->個人化欄位的使用會顯示在[關於個人化](../../delivery/using/about-personalization.md)中。
+>個人化欄位的使用會顯示在[關於個人化](about-personalization.md)中。
 
 您也可以透過&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;快顯視窗，將表情符號插入主旨行。
 
-## 消息內容{#message-content}
+## 訊息內容 {#message-content}
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >個人化欄位的使用會顯示在[關於個人化](../../delivery/using/about-personalization.md)中。
+   >個人化欄位的使用會顯示在[關於個人化](about-personalization.md)中。
 
    頁面底部的索引標籤可讓您顯示所建立頁面的HTML程式碼，並檢視以其個人化呈現訊息的情形。 若要啟動此顯示，請按一下&#x200B;**[!UICONTROL Preview]**&#x200B;並使用工具列中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按鈕選取收件者。 您可以從定義的目標中選取收件者，或選擇其他收件者。
 
@@ -137,9 +137,9 @@ Select the format of the email in the lower section of the window:
 
 Adobe Campaign可讓您嘗試新的互動式[電子郵件適用的AMP](https://amp.dev/about/email/)格式，這可讓您在特定條件下傳送動態電子郵件。
 
-如需詳細資訊，請參閱[本節](../../delivery/using/defining-interactive-content.md)。
+如需詳細資訊，請參閱[本節](defining-interactive-content.md)。
 
-## 使用內容管理{#using-content-management}
+## 使用內容管理 {#using-content-management}
 
 您可以直接在傳遞精靈中使用內容管理表單來定義傳遞內容。 要執行此操作，您必須在傳送屬性的&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤中參考要使用的內容管理的發佈範本。
 
@@ -151,9 +151,9 @@ Adobe Campaign可讓您嘗試新的互動式[電子郵件適用的AMP](https://a
 
 >[!NOTE]
 >
->如需Adobe Campaign中內容管理的詳細資訊，請參閱[此區段](../../delivery/using/about-content-management.md)。
+>如需Adobe Campaign中內容管理的詳細資訊，請參閱[此區段](about-content-management.md)。
 
-## 插入表情符號{#inserting-emoticons}
+## 插入表情符號 {#inserting-emoticons}
 
 您可以將表情符號插入電子郵件內容。
 
@@ -164,9 +164,9 @@ Adobe Campaign可讓您嘗試新的互動式[電子郵件適用的AMP](https://a
 
 1. 完成後，按一下&#x200B;**[!UICONTROL Close]**&#x200B;按鈕。
 
-若要自訂表情符號清單，請參閱此[page](../../delivery/using/customizing-emoticon-list.md)。
+若要自訂表情符號清單，請參閱此[page](customizing-emoticon-list.md)。
 
-## 添加影像{#adding-images}
+## 新增影像 {#adding-images}
 
 HTML格式的電子郵件傳遞可包含影像。 從傳送精靈，您可以透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示，使用HTML編輯器匯入包含影像的HTML頁面或直接插入影像。
 
@@ -211,11 +211,11 @@ HTML格式的電子郵件傳遞可包含影像。 從傳送精靈，您可以透
 >
 >在手動上傳或傳送訊息時修改影像存取路徑。
 
-### 傳送影像{#sending-a-message-with-images}的訊息
+### 傳送包含影像的訊息 {#sending-a-message-with-images}
 
 >[!NOTE]
 >
->為避免效能問題，如果您包含從個人化URL即時下載的影像，如[attachment](../../delivery/using/attaching-files.md)，則每個影像大小預設不應超過100,000位元組。 可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置此建議閾值。
+>為避免效能問題，如果您包含從個人化URL即時下載的影像，如[attachment](attaching-files.md)，則每個影像大小預設不應超過100,000位元組。 可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置此建議閾值。
 
 以下是含有四個影像的傳送範例：
 
@@ -259,7 +259,7 @@ HTML格式的電子郵件傳遞可包含影像。 從傳送精靈，您可以透
 >
 >如果郵件中包含本地映像，則必須確認對郵件原始碼的更改。
 
-## 在電子郵件{#inserting-a-barcode-in-an-email}中插入條形碼
+## 在電子郵件中插入條形碼{#inserting-a-barcode-in-an-email}
 
 條碼產生模組可讓您建立符合許多常見標準的數種條碼，包括2D條碼。
 
