@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 * [步驟5 — 建立發佈範本](#step-5---creating-the-publication-template)、
 * [步驟6 — 建立內容](#step-6---creating-contents)。
 
-## 步驟1 — 分析要產生的內容{#step-1---analyzing-the-content-to-be-produced}
+## 步驟1 — 分析要產生的內容 {#step-1---analyzing-the-content-to-be-produced}
 
 開始之前，您需要對要產生的內容進行精確分析：識別要顯示的元素、研究連結到這些元素的約束、定義每個元素的類型等。 您也需要區分靜態元素和變數元素。
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 這些元素是透過專用架構建立，該架構會為每個內容指定下列元素：名稱、標籤、類型、大小，以及任何與Adobe Campaign中處理程式相關的其他資訊。
 
-## 步驟2 — 建立資料架構{#step-2---creating-the-data-schema}
+## 步驟2 — 建立資料結構 {#step-2---creating-the-data-schema}
 
 資料架構是與內容相關聯的XML檔案。 它描述了此內容中資料的XML結構。
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 >
 >如需在Adobe Campaign中建立和設定資料結構的詳細資訊，請參閱[本區段](../../configuration/using/about-schema-edition.md)。
 >
->[資料結構](../../delivery/using/data-schemas.md)中詳細說明了內容管理的特定配置元素。
+>[資料結構](data-schemas.md)中詳細說明了內容管理的特定配置元素。
 
 若要建立資料結構，請套用下列步驟：
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   有關詳細資訊，請參閱[編輯結構](../../delivery/using/data-schemas.md#editing-schemas)。
+   有關詳細資訊，請參閱[編輯結構](data-schemas.md#editing-schemas)。
 
    對於內容中參考的每個元素，您需要選取相符的類型。
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立資料架構。
 
-## 步驟3 — 建立輸入表單{#step-3---creating-the-input-form}
+## 步驟3 — 建立輸入表單 {#step-3---creating-the-input-form}
 
 輸入表單可讓您透過Adobe Campaign用戶端主控台的輸入介面編輯內容例項。
 
@@ -170,7 +170,7 @@ ht-degree: 2%
 >
 >如需在Adobe Campaign中建立和設定表單的詳細資訊，請參閱[此區段](../../configuration/using/identifying-a-form.md)。
 >
->[輸入表單](../../delivery/using/input-forms.md)中詳細說明了內容管理的特定配置元素。
+>[輸入表單](input-forms.md)中詳細說明了內容管理的特定配置元素。
 
 要建立用於內容管理的輸入表單，請應用以下步驟：
 
@@ -212,7 +212,7 @@ ht-degree: 2%
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;建立輸入表單。
 
-## 步驟4 — 建立構造模板{#step-4---creating-the-construction-template}
+## 步驟4 — 建立構建模板 {#step-4---creating-the-construction-template}
 
 XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱為樣式表的文檔中以XML描述。
 
@@ -220,7 +220,7 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 
 >[!NOTE]
 >
->在[Formatting](../../delivery/using/formatting.md)中詳細說明了連結到文檔構建（JavaScript或XSL模板）的約束。
+>在[Formatting](formatting.md)中詳細說明了連結到文檔構建（JavaScript或XSL模板）的約束。
 
 若要在Adobe Campaign中使用JavaScript範本，請套用下列步驟：
 
@@ -231,7 +231,7 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 1. 輸入模板名稱並選擇為內容管理建立的架構。
 1. 匯入您要在訊息中顯示的設定內容。
 
-   新增變數元素，同時遵循[JavaScript範本](../../delivery/using/formatting.md#javascript-templates)中詳述的語法。
+   新增變數元素，同時遵循[JavaScript範本](formatting.md#javascript-templates)中詳述的語法。
 
    若要顯示範例中顯示的內容，JavaScript範本必須包含下列元素：
 
@@ -324,7 +324,7 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
    </html>
    ```
 
-   在範本開始時呼叫函式可讓您設定對從Adobe Campaign資料庫擷取之個人化資料的呼叫(在此例中為：recipient.firstName和recipient.lastName)，以便在傳送中使用時加以解譯。 有關詳細資訊，請參閱[包含JavaScript範本](../../delivery/using/formatting.md#including-a-javascript-template)。
+   在範本開始時呼叫函式可讓您設定對從Adobe Campaign資料庫擷取之個人化資料的呼叫(在此例中為：recipient.firstName和recipient.lastName)，以便在傳送中使用時加以解譯。 有關詳細資訊，請參閱[包含JavaScript範本](formatting.md#including-a-javascript-template)。
 
    在此範例中，函式將包含下列程式碼：
 
@@ -347,13 +347,13 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## 步驟5 — 建立發佈範本{#step-5---creating-the-publication-template}
+## 步驟5 — 建立發佈範本 {#step-5---creating-the-publication-template}
 
 下一步包括建立內容發佈範本，以連結結構、表單和內容建構範本。 此發佈範本可以有多種輸出格式。
 
 >[!NOTE]
 >
->有關內容發佈模板的詳細資訊，請參閱[發佈模板](../../delivery/using/publication-templates.md)。
+>有關內容發佈模板的詳細資訊，請參閱[發佈模板](publication-templates.md)。
 
 在此範例中，步驟如下：
 
@@ -373,15 +373,15 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立發佈範本。
 
-## 步驟6 — 建立內容{#step-6---creating-contents}
+## 步驟6 — 建立內容 {#step-6---creating-contents}
 
 您現在可以根據此出版物範本建立內容。
 
 >[!NOTE]
 >
->有關建立內容的詳細資訊，請參閱[使用內容範本](../../delivery/using/using-a-content-template.md)。
+>有關建立內容的詳細資訊，請參閱[使用內容範本](using-a-content-template.md)。
 
-### 在傳遞精靈{#creating-content-in-the-delivery-wizard}中建立內容
+### 在傳遞精靈中建立內容 {#creating-content-in-the-delivery-wizard}
 
 若要直接在傳送中建立內容，請套用下列步驟：
 
