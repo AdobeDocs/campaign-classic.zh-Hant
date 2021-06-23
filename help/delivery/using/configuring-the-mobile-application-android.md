@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 3%
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 然後，您將能夠[建立Android豐富通知](create-notifications-android.md)。
 
-## 配置Android外部帳戶{#configuring-external-account-android}
+## 設定Android外部帳戶 {#configuring-external-account-android}
 
 Android提供兩個連接器：
 
@@ -58,7 +58,7 @@ Android提供兩個連接器：
 
    * **maxGCMConnectPerChild**:每個子伺服器啟動的對FCM的並行HTTP請求的最大限制（預設為8）。
 
-## 配置Android服務{#configuring-android-service}
+## 設定Android服務 {#configuring-android-service}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在影片中設定Android服務](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
@@ -79,9 +79,9 @@ Android提供兩個連接器：
 
    ![](assets/nmac_service_2.png)
 
-1. 建立Android應用程式。 如需詳細資訊，請參閱[本章節](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app)。
+1. 建立Android應用程式。 如需詳細資訊，請參閱[本章節](configuring-the-mobile-application-android.md#creating-android-app)。
 
-## 建立Android行動應用程式{#creating-android-app}
+## 建立Android行動應用程式 {#creating-android-app}
 
 建立服務後，您現在需要建立Android應用程式：
 
@@ -93,7 +93,7 @@ Android提供兩個連接器：
 
    ![](assets/nmac_android.png)
 
-1. 請確定在Adobe Campaign和透過SDK的應用程式程式碼中定義相同的&#x200B;**[!UICONTROL Integration key]**。 如需詳細資訊，請參閱[本章節](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
+1. 請確定在Adobe Campaign和透過SDK的應用程式程式碼中定義相同的&#x200B;**[!UICONTROL Integration key]**。 如需詳細資訊，請參閱[本章節](integrating-campaign-sdk-into-the-mobile-application.md)。
 
    >[!NOTE]
    >
@@ -107,14 +107,14 @@ Android提供兩個連接器：
 
 依預設，Adobe Campaign會在&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;表格的&#x200B;**[!UICONTROL User identifier]**(@userKey)欄位中儲存金鑰。 此金鑰可讓您將訂閱連結至收件者。 若要收集其他資料（例如複雜的調解金鑰），您必須套用下列設定：
 
-### 選擇API版本{#select-api-version}
+### 選取API版本{#select-api-version}
 
 建立服務和新的行動應用程式後，您需要根據所選的API版本來設定行動應用程式。
 
-* **HTTP v1** 設定在本節中 [有詳細說明](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
-* **HTTP（舊版）** 設定在本節中 [有詳細說明](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)。
+* **HTTP v1** 設定在本節中 [有詳細說明](configuring-the-mobile-application-android.md#android-service-httpv1)。
+* **HTTP（舊版）** 設定在本節中 [有詳細說明](configuring-the-mobile-application-android.md#android-service-http)。
 
-#### 配置HTTP v1 API{#android-service-httpv1}
+#### 設定HTTP v1 API{#android-service-httpv1}
 
 若要設定HTTP v1 API版本，請遵循下列步驟：
 
@@ -151,7 +151,7 @@ Android提供兩個連接器：
 <br>
 <br>
 
-#### 配置HTTP（舊版）API{#android-service-http}
+#### 設定HTTP（舊版）API{#android-service-http}
 
 若要設定HTTP（舊版）API版本，請遵循下列步驟：
 
@@ -176,7 +176,7 @@ Android提供兩個連接器：
 
 <br>
 
-## 擴展appsubscriptionRcp架構{#extend-subscription-schema}
+## 擴充appsubscriptionRcp架構 {#extend-subscription-schema}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在影片中擴充appsubscriptionRcp架構](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
@@ -188,4 +188,4 @@ Android提供兩個連接器：
 
    >[!CAUTION]
    >
-   >確認&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的設定名稱與行動應用程式程式碼中的名稱相同。 請參閱[本節](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
+   >確認&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的設定名稱與行動應用程式程式碼中的名稱相同。 請參閱[本節](integrating-campaign-sdk-into-the-mobile-application.md)。
