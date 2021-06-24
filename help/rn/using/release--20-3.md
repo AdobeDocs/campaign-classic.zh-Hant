@@ -6,29 +6,29 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1951'
 ht-degree: 98%
 
 ---
 
-# 20.3 發行版本{#release-20-3}
+# 第 20.3 發行版本{#release-20-3}
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.3 - 建置 9234 {#release-20-3-3-build-9234}
 
 _2021年1月11日_
 
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正了與 broadlog 產生程序相關的迴歸問題，而此問題可能導致 MTA 程序當機。
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.1 - 建置 9228 {#release-20-3-1-build-9228}
 
 _2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。[深入瞭解](../../technotes/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
 
