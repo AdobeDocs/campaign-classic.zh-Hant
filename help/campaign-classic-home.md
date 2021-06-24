@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 50%
@@ -20,9 +20,9 @@ ht-degree: 50%
 
 * **[Apple Mail隱私保護常](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> 見問題集根據Apple關於iOS 15的公告，尋找初始指引
 
-* **[移除不正確的](delivery/using/update-bounce-qualification.md)**<br/> 硬退信了解如何在Apple中斷後更新不正確的硬退信
+* **[透過IMS/Adobe ID連線？升級至最新組建](technotes/ims-updates.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至在2021年6月30日**&#x200B;之後能夠連線至Campaign **
 
-* **[透過IMS/Adobe ID連線？升級至最新組建](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至在2021年6月30日**&#x200B;之後能夠連線至Campaign **
+* **[移除不正確的](delivery/using/update-bounce-qualification.md)**<br/> 硬退信了解如何在Apple中斷後更新不正確的硬退信
 
 * **[保護您的促銷活](technotes/acc-config-updates.md)**<br/> 動執行個體更新至最新組建，以保護您的促銷活動平台
 
