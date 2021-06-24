@@ -6,9 +6,9 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1562'
 ht-degree: 19%
 
 ---
@@ -41,7 +41,7 @@ _2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。[深入瞭解](../../technotes/ims-updates.md)
    >
    > 
 * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
