@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 100%
@@ -59,7 +59,7 @@ Adobe Campaign 的功能可協助您遵循下列法規：
 
 如要瞭解如何建立&#x200B;**存取**&#x200B;及&#x200B;**刪除**&#x200B;要求，以及 Adobe Campaign 如何處理這些要求，請參閱[實作步驟](../../platform/using/privacy-requests.md)。
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=en-->
 
 ## 同意、保留和角色 {#consent-retention-roles}
