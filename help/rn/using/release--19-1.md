@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '3258'
+source-wordcount: '3252'
 ht-degree: 26%
 
 ---
@@ -171,11 +171,11 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>若要提高身為管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增IP位址以允許清單，並為每個執行個體安裝SSH金鑰。 請注意，「控制面板」僅適用於目前由AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">透過今天的Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html">詳細文件</a>及<a href="https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/control-panel/control-panel-overview.html">作法影片</a>。 </p><p>注意：存取「控制面板」不需要升級至最新的Campaign版本編號。</p> </td> 
+   <td> <p>若要提高身為管理員使用者的工作效率，請透過監控儲存空間來管理SFTP伺服器的設定、新增IP位址以允許清單，並為每個執行個體安裝SSH金鑰。 請注意，「控制面板」僅適用於目前由AWS托管的客戶(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">透過今天的Experience Cloud登入</a>)。</p> <p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant">詳細文件</a>及<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=zh-Hant">作法影片</a>。 </p><p>注意：存取「控制面板」不需要升級至最新的Campaign版本編號。</p> </td> 
   </tr> 
     <tr> 
    <td> 稽核軌跡<br /> </td> 
-   <td> <p>身為管理員，監控及管理在Adobe Campaign Classic例項內進行的變更，以提高生產力。 稽核軌跡將記錄在來源結構、工作流程和選項上執行的動作。 您可以快速查看元素是否已建立、修改或刪除。</p><p>如需詳細資訊，請參閱<a href="../../production/using/audit-trail.md">詳細檔案</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to video</a>。</p></td> 
+   <td> <p>身為管理員，監控及管理在Adobe Campaign Classic例項內進行的變更，以提高生產力。 稽核軌跡將記錄在來源結構、工作流程和選項上執行的動作。 您可以快速查看元素是否已建立、修改或刪除。</p><p>如需詳細資訊，請參閱<a href="../../production/using/audit-trail.md">詳細檔案</a>和<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to video</a>。</p></td> 
   </tr> 
   <tr> 
    <td> 防護性、健全性和可擴充性<br /> </td> 
