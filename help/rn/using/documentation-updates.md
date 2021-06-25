@@ -6,9 +6,9 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '4470'
+source-wordcount: '4466'
 ht-degree: 97%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2021 年 6月 {#june-2021}
+## 2021年6月 {#june-2021}
 
 **異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型架構](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚了解此程式。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
@@ -116,7 +116,7 @@ Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示�
 
 新的&#x200B;**匯入和匯出資料**&#x200B;區段可用於與工作流程、資料壓縮、加密和匯入最佳實務相關的新頁面。[顯示全文](../../platform/using/get-started-data-import-export.md)
 
-## 2020 年 12 月{#dec-2020}
+## 2020 年 12 月 {#dec-2020}
 
 **傳遞監控**&#x200B;區段已改編為專題。[顯示全文](../../delivery/using/about-delivery-monitoring.md)
 
@@ -130,7 +130,7 @@ Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示�
 
 已對&#x200B;**異動訊息**&#x200B;區段新增附註，以警告事件資料夾不得被設定為執行個體的檢視，進而避免存取權限問題。[顯示全文](../../message-center/using/about-event-processing.md#event-collection)
 
-## 2020 年11月 {#nov-2020}
+## 2020 年 11 月 {#nov-2020}
 
 Campaign 資料模型概觀已改進並重新組織。[顯示全文](../../configuration/using/about-data-model.md)。
 
@@ -189,7 +189,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已建立新的技術，其詳細說明了如何從舊的二進位通訊協定移轉至以 HTTP/2 為基礎的 APN 提供程式 API。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
-## 2020 年 9 月{#september-2020}
+## 2020 年 9 月 {#september-2020}
 
 已新增附註，以指明「主要」用戶檔案計數僅適用於「行銷」執行個體。[顯示全文](../../platform/using/about-profiles.md#active-profiles)
 
@@ -197,7 +197,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已新增附註，說明如何在傳遞種子地址時使用其他資料。[顯示全文](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
-## 2020 年 8 月{#aug-2020}
+## 2020 年 8 月 {#aug-2020}
 
 在專屬區段中，了解與傳遞設計以及與 Campaign 一同傳送相關的最佳實務。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
@@ -236,7 +236,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已新增其他使用資訊與變數使用附註以豐富本&#x200B;**[!UICONTROL AND-join]**&#x200B;活動區段內容。[顯示全文](../../workflow/using/and-join.md)
 
-## 2020 年 7 月{#july-2020}
+## 2020 年 7 月 {#july-2020}
 
 已將有關如何使用增量查詢以自動更新清單的使用案例新增至工作流使用案例中。[顯示全文](../../workflow/using/about-workflow-use-cases.md)
 
@@ -252,7 +252,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已將資訊新增至子工作流程記錄和行為中，以防發生錯誤。[顯示全文](../../workflow/using/sub-workflow.md)
 
-已將最佳實務新增至&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動區段。[詳細內容](../../workflow/using/scheduler.md)
+已將最佳實務新增至&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動區段。[顯示全文](../../workflow/using/scheduler.md)
 
 ## 2020 年 6月 {#june-2020}
 
@@ -262,7 +262,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 Experience Cloud Triggers 和 Adobe Campaign Classic 整合頁面已移至[此處](../../integrations/using/about-triggers.md)。
 
-## 2020 年 7 月{#release-20-2}
+## 2020 年 7 月 {#release-20-2}
 
 **第 20.2 發行版本包含的新功能**
 
@@ -408,7 +408,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 新增如何在工作流程使用執行個體變數的範例。[顯示全文](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019 年 12 月{#december-2019}
+## 2019年12月 {#december-2019}
 
 Campaign 選項清單已新增「WdbcOptions_TempDbName」選項。[顯示全文](../../installation/using/configuring-campaign-options.md)
 
@@ -478,7 +478,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 文件新增了針對內部部署安裝設定收件匣轉譯的步驟。[顯示全文](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-## 2019 年 9 月{#september-2019}
+## 2019 年 9 月 {#september-2019}
 
 新增了新的頁面，以說明維護 Campaign Classic 的一般準則。[顯示全文](../../production/using/monitoring-guidelines.md)
 
@@ -492,7 +492,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
@@ -599,4 +599,4 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 新增了使用案例，說明如何使用工作流程中的「擴充活動」，傳送包含自訂資料欄位的電子郵件。[顯示全文](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
-功能影片已移至[此處](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)。
+功能影片已移至[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)。
