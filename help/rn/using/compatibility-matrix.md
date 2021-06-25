@@ -6,10 +6,10 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1d25bdaf0d118ec5788d467c48c3c40c5891e46d
+source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 99%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -155,7 +155,7 @@ ht-degree: 99%
 <p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">進一步瞭解</a>。</p>
+<p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。[深入了解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
 </td>
 </tr>
 </tbody>
@@ -284,7 +284,7 @@ ht-degree: 99%
 
 ## 用戶端主控台 {#ClientConsoleoperatingsystems}
 
-:warning: 使用「Campaign 用戶端主控台」時，需要下列作業系統和瀏覽器。
+:warning: 使用Campaign用戶端主控台需要下列作業系統和瀏覽器。
 
 ### 作業系統
 
