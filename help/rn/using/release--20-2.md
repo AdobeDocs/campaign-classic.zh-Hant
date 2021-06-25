@@ -6,9 +6,9 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '2972'
+source-wordcount: '2968'
 ht-degree: 88%
 
 ---
@@ -81,7 +81,7 @@ _2020 年 12 月 22 日_
 * 修正準備傳送或重複傳送預覽時，Web程式可能當機的問題。 （NEO-27790、NEO-27517）
 * 修正由非管理員運算子觸發時，傳送或校樣傳送失敗的問題。 (NEO-28597)
 
-![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://docs.adobe.com/content/help/zh-Hant/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)。
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.3 - 建置 9182 {#release-20-2-3-build-9182}
 
@@ -119,7 +119,7 @@ _2020 年 7 月 22 日_
 * 在切換至[新序列 ID 機制](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)後，所有更新收件者表格的 Web 應用程式都會在升級後期間重新發佈。
 * 修正了傳送內容中的潛在 XSS 弱點。(NEO-17987、NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.1 - 建置 9178 {#release-20-2-1-build-9178}
 
