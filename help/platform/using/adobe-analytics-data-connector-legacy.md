@@ -8,9 +8,9 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 6059693522850c13569b2c8f33137531276a3bd0
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >Adobe Analytics Data Connector現已淘汰。 已棄用的功能仍可使用，但將不會進一步增強或支援。 了解更多[資訊，請參閱本頁](../../rn/using/deprecated-features.md)。
 
-## 關於Data Connector整合{#about-data-connector-integration}
+## 關於Data Connector整合 {#about-data-connector-integration}
 
 >[!IMPORTANT]
 >
@@ -46,7 +46,7 @@ Adobe Campaign可使用Data Connector來測量網際網路受眾(Web Analytics)�
    1. 恢復和分析區段，
    1. 觸發再行銷活動。
 
-## 設定整合{#setting-up-the-integration}
+## 設定整合 {#setting-up-the-integration}
 
 若要設定Data connector，您必須連線至Adobe Campaign執行個體並執行下列操作：
 
@@ -54,7 +54,7 @@ Adobe Campaign可使用Data Connector來測量網際網路受眾(Web Analytics)�
 * [步驟2:在Campaign中建立外部帳戶](#step-2--create-the-external-account-in-campaign)
 * [步驟3:同步Adobe Campaign和Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### 步驟1:在Analytics {#step-1--configure-integration-in-analytics}中設定整合
+### 步驟1:在Analytics中設定整合 {#step-1--configure-integration-in-analytics}
 
 下列步驟使用精靈詳細說明Data Connector的設定。
 
@@ -68,7 +68,7 @@ Adobe Campaign可使用Data Connector來測量網際網路受眾(Web Analytics)�
 
 1. 從&#x200B;**[!UICONTROL Admin]**&#x200B;頁簽中，選擇&#x200B;**[!UICONTROL Data Connectors]**。
 
-   您必須具備下列Analytics工具權限才能存取&#x200B;**[!UICONTROL Data Connectors]**&#x200B;功能表。 如需詳細資訊，請參閱此[page](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   您必須具備下列Analytics工具權限才能存取&#x200B;**[!UICONTROL Data Connectors]**&#x200B;功能表。 如需詳細資訊，請參閱此[page](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html)
    * 整合（建立）
    * 整合（更新）
    * 整合（刪除）
@@ -117,7 +117,7 @@ Adobe Campaign可使用Data Connector來測量網際網路受眾(Web Analytics)�
 
    現在已設定資料連接器。
 
-### 步驟2:在促銷活動{#step-2--create-the-external-account-in-campaign}中建立外部帳戶
+### 步驟2:在Campaign中建立外部帳戶 {#step-2--create-the-external-account-in-campaign}
 
 將Adobe Campaign整合至Analytics平台是使用連接器執行。 要同步應用程式，請應用以下進程：
 
@@ -190,7 +190,7 @@ Adobe Campaign可使用Data Connector來測量網際網路受眾(Web Analytics)�
 
 ![](assets/webanalytics_segments_update.png)
 
-### 網頁分析程式的技術工作流程{#technical-workflows-of-web-analytics-processes}
+### 網頁分析程式的技術工作流程 {#technical-workflows-of-web-analytics-processes}
 
 Adobe Campaign與Adobe Analytics之間的資料交換 — Data Connector由四個作為背景工作執行的技術工作流程處理。
 
@@ -235,7 +235,7 @@ Adobe Campaign與Adobe Analytics之間的資料交換 — Data Connector由四�
 
 
 
-## 在Adobe Campaign {#tracking-deliveries-in-adobe-campaign}中追蹤傳送
+## 在Adobe Campaign中追蹤傳遞 {#tracking-deliveries-in-adobe-campaign}
 
 為了讓Adobe Experience Cloud在Adobe Campaign傳送後能夠追蹤網站上的活動，您必須在傳送屬性中參考相符的連接器。 若要這麼做，請套用下列步驟：
 
@@ -250,7 +250,7 @@ Adobe Campaign與Adobe Analytics之間的資料交換 — Data Connector由四�
 
 1. 您現在可以傳送傳遞內容，並在Adobe Analytics中存取報表。
 
-## 建立再行銷促銷活動{#creating-a-re-marketing-campaign}
+## 建立再行銷行銷活動 {#creating-a-re-marketing-campaign}
 
 若要準備再行銷行銷活動，只需建立要用於再行銷類型行銷活動的傳遞範本。 然後設定再行銷促銷活動，並將其連結至區段。 每個區段必須有不同的再行銷促銷活動。
 
