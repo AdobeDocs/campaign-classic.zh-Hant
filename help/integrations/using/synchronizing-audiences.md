@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 * 直接在Campaign v7和Campaign Standard中執行工作流程。
 * 在Campaign Standard中建立和執行傳送的權限。
 
-## 在Campaign v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}中使用其他資料建立目標工作流程
+## 在Campaign v7中使用其他資料建立目標工作流程 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
 只能使用Campaign v7，才能實現複雜的鎖定目標，其中涉及未在Campaign Standard中複製的其他資料。
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 1. 儲存工作流程。下一節顯示如何與ACS共用母體。
 
-## 與Campaign Standard{#share-the-target-with-campaign-standard}共用目標
+## 與Campaign Standard共用目標 {#share-the-target-with-campaign-standard}
 
 定義目標母體後，您可以透過&#x200B;**[!UICONTROL List update]**&#x200B;活動與ACS共用。
 
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 如果&#x200B;**[!UICONTROL List update]**&#x200B;活動發生錯誤，表示與Campaign Standard的同步可能已失敗。 若要查看關於發生錯誤的詳細資訊，請前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**。 此資料夾包含&#x200B;**[!UICONTROL List update]**&#x200B;活動執行所觸發的同步工作流程。 請參閱[ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md)疑難排解部分。
 
-## 擷取Campaign Standard中的資料，並在傳送{#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}中使用該資料
+## 擷取Campaign Standard中的資料並用於傳送 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
 在Campaign v7中執行目標工作流程後，您就可以從促銷活動的&#x200B;**[!UICONTROL Audiences]**&#x200B;功能表中以唯讀模式找到清單對象。
 
@@ -121,7 +121,7 @@ ht-degree: 1%
 
    此活動可用來擷取所選對象的資料。 您也可以視需要使用此活動的相應索引標籤，套用額外的&#x200B;**[!UICONTROL Source Filtering]**。
 
-1. 新增&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動，並將其設定為任何其他[電子郵件傳送活動](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
+1. 新增&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動，並將其設定為任何其他[電子郵件傳送活動](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
 1. 開啟傳遞內容。
 1. 新增個人化欄位。從快顯視窗中，找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;節點。 此節點包含在初始定位工作流程中計算的對象其他資料。 您可以將它們作為任何其他個人化欄位使用。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_deliveryworkflow_ready.png)
 
-## 傳送並監控您的傳送{#send-and-monitor-your-delivery}
+## 傳送並監控您的傳送 {#send-and-monitor-your-delivery}
 
 傳送及其內容準備就緒後，請傳送傳送：
 
