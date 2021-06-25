@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 98bbbb36c9f8156cc34e826a024ff6e6e3f3fee3
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -28,7 +28,7 @@ ht-degree: 10%
 * 括弧[ ]
 * 大括弧{ }
 
-在此範例中，URL https://www.adobe.com後面接著分號(;)。 收件者電子郵件用戶端可將分號解讀為URL的一部分。 因此，連結可能會損毀。 若要避免此問題，您可以透過下列其中一種方式，將URL括在分隔字元中：
+在此範例中，URL https://www.adobe.com後面會加上分號。 收件者電子郵件用戶端可將分號解讀為URL的一部分。 因此，連結可能會損毀。 若要避免此問題，您可以透過下列其中一種方式，將URL括在分隔字元中：
 * (https://www.adobe.com);
 * [https://www.adobe.com];
 * {https://www.adobe.com};
