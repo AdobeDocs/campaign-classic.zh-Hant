@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 4%
+source-wordcount: '203'
+ht-degree: 0%
 
 ---
 
@@ -32,4 +32,4 @@ Adobe Target可使用數種資料：
 
 >[!NOTE]
 >
->您也可以在[Adobe Target說明頁面](https://docs.adobe.com/content/help/zh-Hant/target/using/integrate/campaign-and-target.html)上，找到Adobe Campaign與Adobe Target之間整合的相關資訊。
+>您也可以在[Adobe Target說明頁面](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html)上，找到Adobe Campaign與Adobe Target之間整合的相關資訊。
