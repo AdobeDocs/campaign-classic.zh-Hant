@@ -6,16 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
 
 # 匯入和匯出受眾{#importing-and-exporting-audiences}
 
-## 匯入對象{#importing-an-audience}
+## 匯入對象 {#importing-an-audience}
 
 您可以透過收件者清單，將受眾/區段從Audience Manager或People核心服務匯入Adobe Campaign。
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 每次同步對象資料時，都會完全取代對象資料。 只能匯入區段。 不支援包含機碼值組、特徵和規則的精細資料。
 
-## 匯出對象{#exporting-an-audience}
+## 匯出對象 {#exporting-an-audience}
 
 您可以使用工作流程，將受眾從Adobe Campaign匯出至Audience manager或People核心服務。 在[本文檔](../../workflow/using/building-a-workflow.md)中詳細說明了建立和使用工作流的過程。 匯出的受眾會儲存為「人員」核心服務中的區段：
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 然後會匯出對象。 儲存對象活動有兩個外站轉變。 主轉變包含已成功匯出的收件者。 其他轉變包含無法與訪客ID或宣告ID對應的收件者。
 
-Adobe Campaign與People核心服務的同步需要24到36小時。 在此期間之後，您將能在People核心服務中尋找新的受眾，並在其他Adobe Experience Cloud解決方案中重複使用。 如需在「Adobe人員」核心服務中使用Adobe Campaign共用受眾的詳細資訊，請參閱本[檔案](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html)。
+Adobe Campaign與People核心服務的同步需要24到36小時。 在此期間之後，您將能在People核心服務中尋找新的受眾，並在其他Adobe Experience Cloud解決方案中重複使用。 如需在「Adobe人員」核心服務中使用Adobe Campaign共用受眾的詳細資訊，請參閱本[檔案](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-audience-create.html)。
 
 >[!NOTE]
 >
