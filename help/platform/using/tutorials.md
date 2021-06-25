@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '394'
 ht-degree: 70%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 70%
 
 * [使用 Adobe Experience Manager 編輯電子郵件內容](https://helpx.adobe.com/campaign/kb/acc-aem.html)：了解整合 Adobe Campaign 和 Experience Manager 的基本概念。
 * [隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html):探索Adobe Campaign Classic提供哪些功能，以協助您在使用我們的服務時符合隱私權規範。
-* [整合電子郵件中的動態內容](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
+* [整合電子郵件中的動態內容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
 * [管理傳遞機制](../../delivery/using/about-deliverability.md)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
 * [傳遞最佳做法](../../delivery/using/delivery-best-practices.md)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
 * [執行組建升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)：本指南會顯示執行 Campaign Classic 組建升級的重要步驟和最佳做法。
@@ -35,13 +35,13 @@ ht-degree: 70%
 * [建立概要](../../web/using/use-cases--creating-overviews.md)：建立概要型的網路應用程式，以顯示資料庫中的所有網路應用程式。
 * [工作流程使用案例](../../workflow/using/about-workflow-use-cases.md)：透過這些使用案例探索使用工作流程的不同方法。
 
-## 自助式{#how-to-videos}
+## 自助 {#how-to-videos}
 
 除了產品檔案，您還可以存取下列的Campaign自助資源。
 
 ### 教學課程影片
 
-探索Adobe Campaign的影片主要功能。 [瞭解更多](https://docs.adobe.com/content/help/zh-Hant/campaign-classic-learn/tutorials/overview.html)
+探索Adobe Campaign的影片主要功能。 [深入瞭解](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)
 
 ### 訓練課程與影片
 
