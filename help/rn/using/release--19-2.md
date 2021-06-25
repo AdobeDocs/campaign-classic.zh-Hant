@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1542'
 ht-degree: 21%
 
 ---
@@ -108,7 +108,7 @@ _2019 年 12 月 2 日_
   <tr> 
 <td> <p>Adobe Campaign可讓您試用全新互動式<a href="https://amp.dev/about/email/"> AMP for Email</a>格式，讓行銷人員能在訊息中加入AMP元件，以利用豐富、動態的互動式內容提升電子郵件體驗，並直接在訊息中轉化為實際行動。</p>
    <p>此功能已發佈公開測試版。</p>
-   <p>如需詳細資訊，請參閱<a href="../../delivery/using/defining-interactive-content.md">詳細文件</a>及<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">教學影片</a>。</p><br /></td> 
+   <p>如需詳細資訊，請參閱<a href="../../delivery/using/defining-interactive-content.md">詳細文件</a>及<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">教學影片</a>。</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
