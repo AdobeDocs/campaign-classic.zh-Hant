@@ -6,7 +6,7 @@ feature: 概覽
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 2%
@@ -41,12 +41,12 @@ Adobe Campaign可內部部署：Adobe Campaign的所有元件（包括使用者�
 
 ![](assets/deployment_onpremise.png)
 
-身為內部部署客戶，在開始部署Campaign Classic之前，請先處理下列必要條件和建議：
+身為內部部署客戶，開始部署Campaign Classic前，請先處理下列必要條件和建議：
 
 * 閱讀[相容性矩陣](../../rn/using/compatibility-matrix.md)，其中列出Adobe Campaign支援的所有系統和元件版本。
 * 根據您的環境，閱讀Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[必要條件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的[必要條件。
 * 在本小節](../../installation/using/database.md)中了解與資料庫引擎[相關的建議。
-* 檢查伺服器上是否安裝了所需的資料庫存取層，並可從Adobe Campaign帳戶存取。 [瞭解更多](../../installation/using/application-server.md)。
+* 檢查伺服器上是否安裝了所需的資料庫存取層，並可從Adobe Campaign帳戶存取。 [深入瞭解](../../installation/using/application-server.md)。
 * 在某些進程需要與其他進程通信或訪問LAN和Internet時配置您的網路。 這意味著需要為這些進程開啟某些TCP埠。 [進一](../../installation/using/network-configuration.md) 步了解網路配置要求。
 * 閱讀[促銷活動安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
 * 檢查本文章](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)中有關估計內部部署[的硬體需求的一般准則。
