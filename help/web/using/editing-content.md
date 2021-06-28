@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 編輯內容{#editing-content}
 
-## 定義可見性條件{#defining-a-visibility-condition}
+## 定義可見性條件 {#defining-a-visibility-condition}
 
 您可以在網頁元素上指定可見性條件：只有接受條件時，此元素才會顯示。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 >
 >無法編輯不可見的動態區塊（例如下拉式功能表）。
 
-## 新增邊框和背景{#adding-a-border-and-background}
+## 新增邊框和背景 {#adding-a-border-and-background}
 
 您可以將&#x200B;**border**&#x200B;新增至選取的區塊。 邊框使用三個選項來定義：樣式、大小和顏色。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ## 編輯表單 {#editing-forms}
 
-### 更改表單{#changing-the-data-properties-for-a-form}的資料屬性
+### 變更表單的資料屬性 {#changing-the-data-properties-for-a-form}
 
 您可以將資料庫欄位與輸入區域、單選按鈕或核取方塊類型區塊連結。
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
    ![](assets/dce_sidebar_completeoptionradio.png)
 
-### 修改表單欄位{#modifying-form-fields}
+### 修改表單欄位 {#modifying-form-fields}
 
 表單欄位，例如選項按鈕、輸入區域、下拉式清單等。 可從其工具欄修改。
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
-## 將動作新增至按鈕{#adding-an-action-to-a-button}
+## 新增動作至按鈕 {#adding-an-action-to-a-button}
 
 當使用者按一下按鈕時，您可以定義相關的動作。 若要這麼做，請從下拉式清單中選取要執行的動作。
 
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 您可以在對應欄位中修改連結至按鈕的標籤。
 
-## 新增連結{#adding-a-link}
+## 新增連結 {#adding-a-link}
 
 您可以將連結插入任何頁面元素中：影像、字、字組、文字區塊等。
 
@@ -148,7 +148,7 @@ ht-degree: 1%
 
 在&#x200B;**URL**&#x200B;欄位中輸入相關連結地址。 URL欄位應輸入為：**https://www.myURL.com**。
 
-### 連結到Web應用程式{#link-to-a-web-application}
+### 連結到Web應用程式 {#link-to-a-web-application}
 
 **連結至Web應用程式**&#x200B;選項可讓您存取Adobe Campaign Web應用程式。
 
@@ -158,7 +158,7 @@ ht-degree: 1%
 
 建議的Web應用程式清單與&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;節點中的可用應用程式相對應。
 
-### 連結至動作{#link-to-an-action}
+### 動作連結 {#link-to-an-action}
 
 定義動作&#x200B;**選項的**&#x200B;連結可讓您在按一下來源元素時設定動作。
 
@@ -168,7 +168,7 @@ ht-degree: 1%
 >
 >在[將動作新增至按鈕](#adding-an-action-to-a-button)區段中會詳細說明可用動作。
 
-### 刪除連結{#delete-a-link}
+### 刪除連結 {#delete-a-link}
 
 插入連結後，工具列會提供兩個新圖示：**編輯連結**&#x200B;和&#x200B;**中斷連結**，讓您與建立的連結互動。
 
@@ -179,7 +179,7 @@ ht-degree: 1%
 >
 >如果刪除連結，內容仍會保留。
 
-## 更改字型屬性{#changing-font-attributes}
+## 更改字型屬性 {#changing-font-attributes}
 
 選取文字元素時，可以修改字型屬性（樣式、格式）。
 
@@ -206,7 +206,7 @@ ht-degree: 1%
 * **** 重複圖示：複製區塊以及與區塊相關的所有樣式。
 
 
-## 管理影像和動畫{#managing-images-and-animations}
+## 管理影像和動畫 {#managing-images-and-animations}
 
 數位內容編輯器可讓您處理與瀏覽器相容的&#x200B;**任何類型的影像**。
 
@@ -214,7 +214,7 @@ ht-degree: 1%
 >
 >您不得在HTML頁面的&#x200B;**script**&#x200B;標籤中呼叫外部檔案。 這些檔案將不會匯入Adobe Campaign伺服器。
 
-### 添加/刪除/複製影像{#adding---deleting---duplicating-an-image}
+### 新增/刪除/複製影像 {#adding---deleting---duplicating-an-image}
 
 若要插入影像，請選取影像類型區塊並按一下&#x200B;**Image**&#x200B;圖示。
 
@@ -232,7 +232,7 @@ ht-degree: 1%
 >
 >複製影像時，會刪除與新影像相關的識別碼。
 
-### 編輯影像屬性{#editing-image-properties}
+### 編輯影像屬性 {#editing-image-properties}
 
 選取包含影像的區塊時，您會存取下列屬性：
 
@@ -241,7 +241,7 @@ ht-degree: 1%
 
    ![](assets/dce_popup_imgsize.png)
 
-## 新增個人化內容{#adding-personalization-content}
+## 新增個人化內容 {#adding-personalization-content}
 
 ### 插入個人化欄位 {#inserting-a-personalization-field}
 
@@ -253,9 +253,9 @@ ht-degree: 1%
 
 欄位名稱會顯示在編輯器中，並以黃色強調顯示。 在產生個人化時（例如，預覽登錄頁面時），會由目標收件者的設定檔取代。
 
-[插入個人化欄位](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field)區段中會顯示範例。
+[插入個人化欄位](creating-a-landing-page.md#inserting-a-personalization-field)區段中會顯示範例。
 
-### 插入個人化區塊{#inserting-a-personalization-block}
+### 插入個人化區塊 {#inserting-a-personalization-block}
 
 **個人化區塊**&#x200B;選項可讓您將動態和個人化區塊插入內容。 例如，您可以新增標誌或問候語訊息。 它不適用於文本類型塊。
 
