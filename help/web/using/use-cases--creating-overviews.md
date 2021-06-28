@@ -6,14 +6,14 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
-# 使用案例：建立概覽頁面{#use-cases-creating-overviews}
+# 使用案例：建立概述頁面{#use-cases-creating-overviews}
 
 在以下示例中，我們將建立概述類型的Web應用程式，以顯示資料庫中的所有Web應用程式。 設定下列元素：
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## 建立單頁Web應用程式{#creating-a-single-page-web-application}
+## 建立單頁Web應用程式 {#creating-a-single-page-web-application}
 
 1. 建立單一&#x200B;**[!UICONTROL Page]** Web應用程式，並停用出站轉變和轉變至下一頁。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_preview.png)
 
-## 在資料夾{#adding-a-filter-on-a-folder}上添加篩選器
+## 在資料夾上新增篩選器 {#adding-a-filter-on-a-folder}
 
 在概觀中，您可以根據資料在Adobe Campaign樹狀結構中的位置來選擇存取資料。 這是資料夾上的篩選器。 套用下列程式，將其新增至您的概覽。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
    >
    >在此階段，Web應用程式不在其應用程式上下文中，因此無法在資料夾上測試篩選器。
 
-## 添加按鈕以配置新的Web應用程式{#adding-a-button-to-configure-a-new-web-application}
+## 添加按鈕以配置新的Web應用程式 {#adding-a-button-to-configure-a-new-web-application}
 
 1. 將游標放在&#x200B;**[!UICONTROL Page]**&#x200B;元素上並新增連結(**[!UICONTROL Static elements > Link]**)。
 1. 修改連結標籤，因為它將出現在概述的按鈕上。
@@ -106,7 +106,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_link.png)
 
-## 將詳細資訊添加到清單{#adding-detail-to-a-list}
+## 將詳細資訊添加到清單 {#adding-detail-to-a-list}
 
 當您在概覽中設定清單時，可以選擇顯示清單上每個項目的其他詳細資訊。
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 >
 >伺服器上重新整理JavaScript程式庫需要5分鐘。 您可以重新啟動伺服器，以避免等待此延遲。
 
-## 篩選和更新清單{#filtering-and-updating-the-list}
+## 篩選和更新清單 {#filtering-and-updating-the-list}
 
 在本節中，您將建立一個篩選器，用於顯示由特定運算子建立的Web應用程式的概觀。 此篩選器是使用連結編輯器建立。 選取運算子後，重新整理清單以套用篩選器；這需要建立重新整理連結。
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   有關元素佈局的資訊，請參閱[此部分](../../web/using/about-web-forms.md)。
+   有關元素佈局的資訊，請參閱[此部分](about-web-forms.md)。
 
 1. 套用&#x200B;**dottedFilter**。
 
@@ -177,7 +177,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_container002.png)
 
-### 使用連結編輯器{#creating-a-filter-using-a-link-editor}建立篩選器
+### 使用連結編輯器建立篩選 {#creating-a-filter-using-a-link-editor}
 
 1. 將游標置於上一階段建立的容器上，並透過&#x200B;**[!UICONTROL Advanced controls]**&#x200B;功能表插入連結編輯器。
 1. 在自動開啟的儲存窗口中，選擇&#x200B;**[!UICONTROL Variables]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Edit variables]**&#x200B;連結，並建立用於篩選資料的XML變數。
@@ -205,7 +205,7 @@ ht-degree: 0%
 >
 >Web應用程式用戶必須是已標識的操作員，具有訪問資訊的適當Adobe Campaign權限。 此類型的配置對匿名Web應用程式無效。
 
-### 建立刷新連結{#creating-a-refresh-link}
+### 建立重新整理連結 {#creating-a-refresh-link}
 
 1. 將游標放在容器上，並通過&#x200B;**[!UICONTROL Static elements]**&#x200B;菜單插入&#x200B;**[!UICONTROL Link]**。
 1. 修改標籤。
