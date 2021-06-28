@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3048'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >伺服器端設定只能由Adobe執行，以供Adobe托管的部署使用。 若要進一步了解不同部署，請參閱[托管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
 
-## 部署嚮導{#deployment-wizard}
+## 部署嚮導 {#deployment-wizard}
 
 Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線的執行個體的參數。
 
@@ -45,7 +45,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 ![](assets/s_ncs_install_deployment_wiz_02.png)
 
-### 一般資訊{#general-information}
+### 一般資訊 {#general-information}
 
 窗口的下半部分允許您選擇要激活的選項。
 
@@ -53,7 +53,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 * **[!UICONTROL Common name of the customer]** :輸入公司名稱的字元字串。此資訊可用於取消訂閱連結。
 * **[!UICONTROL Namespace]** :輸入小寫的簡短標識符。目的是在升級時區分您的特定配置和工廠配置。 客戶的預設命名空間為&#x200B;**cus** -。
 
-### 技術選項{#technical-options}
+### 技術選項 {#technical-options}
 
 窗口的下半部分允許您選擇要激活的選項。
 
@@ -70,7 +70,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 這些參數可能會在傳送範本中多載，且會針對每個傳送個別執行（如果使用者具有必要的權限）。
 
-### 已傳送電子郵件的參數{#parameters-for-delivered-emails}
+### 傳遞電子郵件的參數 {#parameters-for-delivered-emails}
 
 ![](assets/s_ncs_install_deployment_wiz_04.png)
 
@@ -84,7 +84,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 除此之外，還可以指定為發件人地址和錯誤地址授權的&#x200B;**masks**。 如有必要，這些遮罩可以使用逗號加以區隔。 此設定為選用。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果位址不包含任何變數）檢查位址是否有效。 此作業模式可確保未使用任何可能觸發傳送問題的地址。 傳遞地址必須在傳遞伺服器上配置。
 
-### 地址{#characters-authorized-in-addresses}中授權的字元
+### 地址中授權的字元 {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
@@ -109,18 +109,18 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 * **[!UICONTROL Exclude recipients who no longer wish to be contacted]** :選取此選項時，將不會聯絡封鎖清單上的收件者，
 * **[!UICONTROL Automatically ignore doubles]** :選取此選項時，不會傳送至重複的位址。
 
-### 重試參數{#retry-parameters}
+### 重試參數 {#retry-parameters}
 
 有關恢復的資訊在&#x200B;**恢復期**&#x200B;和&#x200B;**恢複數**&#x200B;欄位中提供：當收件者無法連線時（例如，如果收件匣已滿），依預設，程式會嘗試與他們連絡5次，每次嘗試之間間隔一小時（在最長傳送時間內）。 您可以變更這些值以符合您的需求。
 
-### 隔離參數{#quarantine-parameters}
+### 隔離參數 {#quarantine-parameters}
 
 隔離的設定選項如下：
 
 * **[!UICONTROL Duration between two significant errors]** :預設情況下，輸入值(&quot;1d&quot;):1天)，定義應用程式在發生故障時增加錯誤計數器之前等待的時間，
 * **[!UICONTROL Maximum number of errors before quarantine]** :達到此值後，會隔離電子郵件地址(依預設為「5」：第六個錯誤時將隔離該地址)。這表示該在後續傳送時將自動排除該聯絡人。
 
-## 管理退信電子郵件{#managing-bounced-emails}
+## 管理退信的電子郵件 {#managing-bounced-emails}
 
 退回郵件對於確認傳送錯誤非常重要。 一旦規則確定其原因，就會在NP@I中分類這些錯誤。
 
@@ -130,7 +130,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 ![](assets/s_ncs_install_deployment_wiz_06.png)
 
-### 用於檢索傳入郵件的POP帳戶{#pop-account-used-to-retrieve-incoming-mails}
+### 用於檢索傳入郵件的POP帳戶 {#pop-account-used-to-retrieve-incoming-mails}
 
 指定要連接到用於檢索傳入電子郵件的帳戶的參數。
 
@@ -143,7 +143,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 指定POP設定後，按一下&#x200B;**Test**&#x200B;以確保它們正確。
 
-### 未處理的退回郵件{#unprocessed-bounce-mails}
+### 未處理的退回郵件 {#unprocessed-bounce-mails}
 
 退信由Adobe Campaign自動處理，套用&#x200B;**管理>促銷活動管理>非交付項目管理>傳送記錄資格**&#x200B;節點中列出的規則。 有關詳細資訊，請參閱[退信管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
 
@@ -157,7 +157,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 >
 >若要轉送未處理的退信電子郵件，Adobe建議僅填入&#x200B;**[!UICONTROL Address for errors]**&#x200B;欄位。 但是，請確保定期檢查所使用的地址，因為這可能會給郵件伺服器帶來大量負載。 如需詳細資訊，請連絡您的帳戶主管。
 
-## 追蹤配置{#tracking-configuration}
+## 追蹤設定 {#tracking-configuration}
 
 下一個步驟可讓您設定例項的追蹤。 例項必須向追蹤伺服器宣告及註冊。
 
@@ -181,7 +181,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
    如需詳細資訊，請參閱[儲存追蹤](#saving-tracking)。
 
-### 追蹤伺服器{#tracking-server}
+### 追蹤伺服器 {#tracking-server}
 
 ![](assets/s_ncs_install_deployment_wiz_08.png)
 
@@ -204,7 +204,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
    ![](assets/s_ncs_install_deployment_wiz_18.png)
 
-### 儲存追蹤{#saving-tracking}
+### 儲存追蹤 {#saving-tracking}
 
 填入URL後，您必須註冊追蹤伺服器。
 
@@ -258,7 +258,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 連結到URL搜索&#x200B;**的參數不得在標準安裝中修改**。 有關所有其他參數，請聯繫Adobe。
 
-## 行動通道參數{#mobile-channel-parameters}
+## 行動通道參數 {#mobile-channel-parameters}
 
 下一個步驟可讓您定義傳送至行動裝置（SMS和WAP推播）的預設設定。
 
@@ -268,18 +268,18 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
-### SMS傳送{#default-account-for-sms-delivery}的預設帳戶
+### SMS傳送的預設帳戶 {#default-account-for-sms-delivery}
 
 輸入以下資訊：
 
 * **[!UICONTROL Label]** :輸入此SMS/Wap推播帳戶的名稱。例如，您可能希望使用路由器的名稱。
 * 對於&#x200B;**[!UICONTROL Server]**、**[!UICONTROL Port]**、**[!UICONTROL Account]**、**[!UICONTROL Password]**、**[!UICONTROL Connector]**、**[!UICONTROL Send Endpoint]**、**[!UICONTROL Reception Endpoint]**、**[!UICONTROL Notification Endpoint]**&#x200B;欄位：如需所需設定，請連絡您的服務提供者。
 
-### 發送的簡訊的參數{#parameters-of-sms-sent}
+### 傳送的簡訊參數 {#parameters-of-sms-sent}
 
 在&#x200B;**優先順序**&#x200B;下拉式清單中：選取「一般」、「高」或「緊急」，將其套用至要傳送的訊息。
 
-### 進階參數 {#advanced-parameters}
+### 高級參數 {#advanced-parameters}
 
 **高級參數……**&#x200B;連結可讓您存取重試和隔離選項。
 
@@ -292,7 +292,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 * **[!UICONTROL Time between two significant errors]** :輸入預設值(預設為「1d」：日)，定義應用程式在增加錯誤計數器以備發生錯誤之前等待的時間。
 * **[!UICONTROL Maximum number of errors before quarantine]** :達到此值後，系統會隔離行動號碼(依預設為「5」：第六個錯誤時，將隔離該號碼)。這表示該連絡人將自動排除在未來傳送之外。
 
-## 區域設定{#regional-settings}
+## 地區設定 {#regional-settings}
 
 此階段允許您包含資料策略首選項。
 
@@ -301,7 +301,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 * **[!UICONTROL Consider all phone numbers as international ones]** :選中此選項時，應用程式將國際格式應用於電話號碼（國家/地區前置詞隨後是強制性的，因為在應用格式之前將不會檢查位數）。如果未選擇此選項，您必須在國際電話號碼前置詞「+」或「00」。
 * **[!UICONTROL Store all phone numbers using the international format]** :此選項只涉及 **** 匯入或編輯的國內電話號碼。定義您是要使用國內格式（例如425 555 0150）還是國際格式(例如+1 425 555 0150)
 
-## 從Internet {#access-from-the-internet}訪問
+## 從Internet訪問 {#access-from-the-internet}
 
 >[!IMPORTANT]
 >
@@ -313,7 +313,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 ![](assets/s_ncs_install_deployment_wiz_15.png)
 
-### Web {#servers-exposed-on-the-web}上公開的伺服器
+### Web上公開的伺服器 {#servers-exposed-on-the-web}
 
 使用此頁可將伺服器URL填充到：
 
@@ -325,7 +325,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 Adobe Campaign可讓您區分這三個URL，以將負載分散到多個平台。
 
-## 管理公共資源{#managing-public-resources}
+## 管理公共資源 {#managing-public-resources}
 
 >[!IMPORTANT]
 >
@@ -357,7 +357,7 @@ Adobe Campaign可讓您區分這三個URL，以將負載分散到多個平台。
 
 * 對於公共資源，URL **https://** server **/res/** instance ****，其中&#x200B;**instance**為追蹤例項的名稱。
 
-### 傳送影像偵測{#delivery-image-detection}
+### 傳送影像偵測 {#delivery-image-detection}
 
 在傳遞中，您可以使用儲存在公共資源庫中的影像，或儲存在伺服器上的任何其他本地影像或影像。
 
@@ -370,9 +370,9 @@ Adobe Campaign可讓您區分這三個URL，以將負載分散到多個平台。
 * 有關在電子郵件中使用和管理影像的資訊，請參閱[此部分](../../delivery/using/defining-the-email-content.md#adding-images)。
 * 在傳送精靈中，從這些URL呼叫的影像將狀態為「已忽略」。
 
-### 發佈模式{#publication-modes}
+### 發佈模式 {#publication-modes}
 
-嚮導的下半部分允許您選擇公共資源和影像的發佈選項。 這些選項也適用於網路表單和調查。
+嚮導的下半部分允許您選擇公共資源和影像的發佈選項。
 
 可使用下列發佈模式：
 
@@ -423,7 +423,7 @@ Adobe Campaign可讓您區分這三個URL，以將負載分散到多個平台。
 >
 >可以更改公共資源儲存目錄。 有關詳細資訊，請參閱[管理公用資源](#managing-public-resources)。
 
-### 同步公共資源{#synchronizing-public-resources}
+### 同步公共資源 {#synchronizing-public-resources}
 
 此功能允許您在多個備用伺服器上同步公共資源&#x200B;**。**
 
@@ -485,7 +485,7 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
  </relay>
 ```
 
-## 清除資料{#purging-data}
+## 清除資料 {#purging-data}
 
 部署精靈的最後一個階段可讓您設定自動清除過時資料。 值以天表示。
 
