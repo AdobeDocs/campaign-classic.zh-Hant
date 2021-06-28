@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -27,13 +27,13 @@ ht-degree: 2%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的設定適用於不同的傳送類型：直接郵件、電子郵件、行動裝置通道。 [瞭解更多](../../delivery/using/steps-about-delivery-creation-steps.md)。
+建議的設定適用於不同的傳送類型：直接郵件、電子郵件、行動裝置通道。 [深入瞭解](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
-## 開始傳送{#starting-a-delivery}
+## 開始傳送 {#starting-a-delivery}
 
 一旦所有核准都獲得授權，傳送即可開始。 然後，傳送程式取決於傳送類型。 如需電子郵件或行動通道傳送，請參閱[開始線上傳送](#starting-an-online-delivery)，如需直接郵件傳送，請參閱[開始離線傳送](#starting-an-offline-delivery)。
 
-### 啟動聯機傳送{#starting-an-online-delivery}
+### 開始線上傳送 {#starting-an-online-delivery}
 
 所有核准請求一經授與，傳送狀態就會變更為&#x200B;**[!UICONTROL Pending confirmation]**，且可由運算子啟動。 指定為審核者以開始傳送的Adobe Campaign運算子（或運算子群組）會在適當時收到通知，告知已準備好開始傳送。
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 確認訊息可讓您保護此動作。
 
-### 開始離線傳送{#starting-an-offline-delivery}
+### 開始離線傳送 {#starting-an-offline-delivery}
 
 所有核准都授與後，傳送狀態會變更為&#x200B;**[!UICONTROL Pending extraction]**。 解壓縮檔案會透過特殊工作流程建立，在預設設定中，當直接郵件傳送擱置解壓縮時，此工作流程會自動啟動。 進程進行中時，會顯示在控制面板中，並可透過其連結編輯。
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 * 解壓檔案將發送到路由器，並完成傳送。
 
-### 費用和庫存的計算{#calculation-of-costs-and-stocks}
+### 費用和庫存的計算 {#calculation-of-costs-and-stocks}
 
 檔案擷取會啟動兩個操作：預算計算和庫存計算。 預算條目會更新。
 
@@ -114,21 +114,21 @@ ht-degree: 2%
 >
 >有關成本計算和庫存管理的詳細資訊，請參閱[提供者、庫存和預算](../../campaign/using/providers--stocks-and-budgets.md)。
 
-## 管理關聯文檔{#managing-associated-documents}
+## 管理關聯文檔 {#managing-associated-documents}
 
-您可以將各種檔案與行銷活動建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 了解如何在本小節](../../campaign/using/marketing-campaign-assets.md)中將檔案連結至促銷活動[。
+您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 了解如何在本小節](../../campaign/using/marketing-campaign-assets.md)中將檔案連結至促銷活動[。
 
 >[!IMPORTANT]
 >
 >此模式為小文檔保留。
 
-在促銷活動中，您也可以參考其他項目，例如促銷優惠券、與特定分店或商店相關的特別優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳送相關聯。 [瞭解更多](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+在促銷活動中，您也可以參考其他項目，例如促銷優惠券、與特定分店或商店相關的特別優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳送相關聯。 [深入瞭解](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 >[!NOTE]
 >
->如果您使用MRM，您也可以管理可供數位參與者協作工作的行銷資源庫。 請參閱[管理行銷資源](../../campaign/using/managing-marketing-resources.md)。
+>如果您使用MRM，您也可以管理可供數位參與者協作工作的行銷資源庫。 請參閱[管理行銷資源](../../mrm/using/managing-marketing-resources.md)。
 
-### 添加文檔{#adding-documents}
+### 添加文檔 {#adding-documents}
 
 可在促銷活動層級（內容檔案）或方案層級（一般檔案）將檔案建立關聯。
 
@@ -155,7 +155,7 @@ ht-degree: 2%
 
 您也可以從此檢視編輯和修改這些量度。
 
-### 通過傳送大綱{#associating-and-structuring-resources-linked-via-a-delivery-outline}關聯和構建連結的資源
+### 通過傳送大綱關聯和構建連結的資源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ ht-degree: 2%
 
 對於促銷活動，傳送大綱可讓您根據特定條件來建構要與傳送相關聯的外部元素：相關分支、已授予的促銷優惠、參加當地活動的邀請等。
 
-#### 建立大綱{#creating-an-outline}
+#### 建立大綱 {#creating-an-outline}
 
 若要建立大綱，請按一下相關促銷活動&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;標籤中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子標籤。
 
@@ -203,9 +203,9 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如需行銷資源的詳細資訊，請參閱[管理行銷資源](../../campaign/using/managing-marketing-resources.md)。
+   >如需行銷資源的詳細資訊，請參閱[管理行銷資源](../../mrm/using/managing-marketing-resources.md)。
 
-#### 選擇大綱{#selecting-an-outline}
+#### 選擇大綱 {#selecting-an-outline}
 
 對於每個傳送，可以從為提取大綱保留的節中選擇要關聯的大綱，如下例所示：
 
@@ -219,7 +219,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
-#### 提取結果{#extraction-result}
+#### 提取結果 {#extraction-result}
 
 在提取併發送到服務提供商的檔案中，大綱的名稱，並在適當時，其特徵（成本、說明等） 根據與服務提供者相關聯的匯出範本中的資訊，將其新增至內容。
 
@@ -233,7 +233,7 @@ ht-degree: 2%
 >
 >有關導出的詳細資訊，請參閱[Getting Started](../../platform/using/get-started-data-import-export.md)部分。
 
-#### 教學課程影片{#create-email-video}
+#### 教學課程影片 {#create-email-video}
 
 此影片說明如何在Adobe Campaign中建立行銷活動和電子郵件。
 
