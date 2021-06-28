@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1046'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有行銷活動都可從統一的控制中心進行管理。 
 
-## 工作區基本介紹{#workspace-basics}
+## 工作區基本介紹 {#workspace-basics}
 
 ### 首頁 {#home-page}
 
@@ -34,7 +34,7 @@ Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有�
 * **促銷活動日曆**:計畫、行銷方案、傳遞和行銷活動行事歷。請參閱[促銷活動日曆](#campaign-calendar)。
 * **促銷活動**:存取所有行銷方案中包含的行銷活動。
 * **傳遞**:存取連結至促銷活動的傳送。
-* **Web應用程式**:存取網路應用程式（表單、調查等）。
+* **Web應用程式**:存取網頁應用程式（表單、登錄頁面等）。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有�
 >
 >與頻道和傳送相關的所有功能在[本節](../../delivery/using/steps-about-delivery-creation-steps.md)中詳細說明。
 
-### 促銷活動日曆{#campaign-calendar}
+### 行銷活動日曆 {#campaign-calendar}
 
 每個促銷活動都屬於一個方案，而該方案又屬於一個計畫。 可透過&#x200B;**促銷活動**&#x200B;標籤中的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;功能表存取計畫、方案和促銷活動。
 
@@ -62,11 +62,11 @@ Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有�
 
 連結至每個項目的圖示可讓您檢視其狀態：已完成、進行中、正在編輯等。
 
-### 在行銷方案{#browsing-in-a-marketing-program}中瀏覽
+### 在行銷方案中瀏覽 {#browsing-in-a-marketing-program}
 
 Campaign可讓您管理由各種行銷活動組成的一組方案。 每個促銷活動都包含傳遞以及相關的程式和資源。
 
-#### 瀏覽程式{#browsing-a-program}
+#### 瀏覽程式 {#browsing-a-program}
 
 編輯程式時，請使用下面描述的頁簽來瀏覽和配置它。
 
@@ -80,7 +80,7 @@ Campaign可讓您管理由各種行銷活動組成的一組方案。 每個促�
 
    ![](assets/s_ncs_user_interface_campaign05.png)
 
-#### 瀏覽促銷活動{#browsing-campaigns}
+#### 瀏覽促銷活動 {#browsing-campaigns}
 
 您可透過促銷活動日曆、方案的&#x200B;**[!UICONTROL Schedule]**&#x200B;標籤或促銷活動清單來存取促銷活動。
 
@@ -97,7 +97,7 @@ Campaign可讓您管理由各種行銷活動組成的一組方案。 每個促�
 
    ![](assets/campaign_edit_from_list.png)
 
-### 控制促銷活動{#controlling-a-campaign}
+### 控制行銷活動 {#controlling-a-campaign}
 
 #### 控制面板 {#dashboard}
 
@@ -125,7 +125,7 @@ Campaign可讓您管理由各種行銷活動組成的一組方案。 每個促�
 
 對於每個促銷活動，操作者可透過專用論壇交換訊息。
 
-有關詳細資訊，請參閱[討論論壇](../../campaign/using/discussion-forums.md)。
+有關詳細資訊，請參閱[討論論壇](../../mrm/using/discussion-forums.md)。
 
 #### 報告 {#reports}
 
@@ -151,7 +151,7 @@ Campaign可讓您管理由各種行銷活動組成的一組方案。 每個促�
 >
 >若要存取促銷活動設定並進行變更，請按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中的&#x200B;**[!UICONTROL Advanced campaign parameters...]**&#x200B;連結。 如需在促銷活動層級設定參數以讓傳遞自動繼承值的詳細資訊，請參閱[我們的Technote](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically)。
 
-## 使用Web介面{#using-the-web-interface-}
+## 使用Web介面 {#using-the-web-interface-}
 
 您可以透過網際網路瀏覽器存取Adobe Campaign主控台畫面，以檢視所有促銷活動和傳送，以及資料庫中設定檔的報表和資訊。 此訪問不啟用記錄建立。 根據操作員權限，您可以查看和/或對資料庫中的資料執行操作。 例如，您可以核准促銷活動內容及鎖定目標、重新啟動或停止傳送等。
 
