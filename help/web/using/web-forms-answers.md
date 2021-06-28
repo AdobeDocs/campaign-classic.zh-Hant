@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 網路表單回答{#web-forms-answers}
 
-## 響應儲存欄位{#response-storage-fields}
+## 回應儲存欄位 {#response-storage-fields}
 
 表單的答案可儲存在資料庫的欄位中，或暫時儲存在本機變數中。 欄位建立期間會選擇答案的儲存模式。 可透過&#x200B;**[!UICONTROL Edit storage...]**&#x200B;連結編輯。
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
    如果您不想將資訊儲存在資料庫中，則可以使用變數。 局部變數可在上游宣告。 請參閱[將資料儲存在本地變數](#storing-data-in-a-local-variable)。
 
-### 在資料庫{#storing-data-in-the-database}中儲存資料
+### 將資料儲存在資料庫中 {#storing-data-in-the-database}
 
 要將資料保存在資料庫的現有欄位中，請按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;表徵圖，然後從可用欄位清單中選擇它。
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 >
 >預設參考文檔為&#x200B;**nms:recipient**&#x200B;方案。 要查看表單或選擇新表單，請從清單中選擇表單，然後按一下&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。
 
-### 將資料儲存在本地變數{#storing-data-in-a-local-variable}中
+### 將資料儲存在本機變數中 {#storing-data-in-a-local-variable}
 
 您可以使用本機變數，這樣即使資料未儲存在資料庫中，也可以在頁面或其他頁面上重複使用，例如在欄位顯示上放置條件，或個人化訊息。
 
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_no_storage_condb.png)
 
-## 使用收集的資訊{#using-collected-information}
+## 使用收集的資訊 {#using-collected-information}
 
 對於每個表單，提供的答案可在欄位或標籤中重複使用。 必須使用下列語法：
 
@@ -107,7 +107,7 @@ ht-degree: 1%
    >
    >與其他將`<%=`字元取代為逸出字元的欄位不同，HTML內容會使用`<%==`語法以原樣儲存。
 
-## 保存網路表單答案{#saving-web-forms-answers}
+## 保存網路表單答案 {#saving-web-forms-answers}
 
 若要儲存在表單頁面中收集的資訊，您必須在圖表中放置儲存方塊。
 
@@ -115,9 +115,9 @@ ht-degree: 1%
 
 使用此方塊有兩種方式：
 
-* 如果通過電子郵件中發送的連結訪問Web表單，並且訪問應用程式的用戶已在資料庫中，則可以檢查&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;選項。 如需詳細資訊，請參閱[透過電子郵件傳送表單](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email)。
+* 如果通過電子郵件中發送的連結訪問Web表單，並且訪問應用程式的用戶已在資料庫中，則可以檢查&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;選項。 如需詳細資訊，請參閱[透過電子郵件傳送表單](publishing-a-web-form.md#delivering-a-form-via-email)。
 
-   在此情況下，Adobe Campaign會使用使用者設定檔的加密主要金鑰，這是Adobe Campaign為每個設定檔指派的唯一識別碼。 您需要透過預先載入方塊來設定要預先載入的資訊。 如需詳細資訊，請參閱[預先載入表單資料](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data)。
+   在此情況下，Adobe Campaign會使用使用者設定檔的加密主要金鑰，這是Adobe Campaign為每個設定檔指派的唯一識別碼。 您需要透過預先載入方塊來設定要預先載入的資訊。 如需詳細資訊，請參閱[預先載入表單資料](publishing-a-web-form.md#pre-loading-the-form-data)。
 
    >[!CAUTION]
    >
