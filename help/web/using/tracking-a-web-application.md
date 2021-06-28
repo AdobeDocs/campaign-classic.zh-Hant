@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
 
 # 追蹤網站應用程式的瀏覽次數{#tracking-a-web-application}
 
-Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造訪次數。 此功能可用於所有Web應用程式類型（表單、線上調查、使用DCE建立的網頁等）。
+Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造訪次數。 此功能可用於所有Web應用程式類型（表單、網頁等）。
 
 因此，您可以定義數個導覽路徑並評估其成功。 然後，每個應用程式的報告中都會提供恢復的資料。
 
@@ -38,7 +38,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造
 
    此外，**Sector**&#x200B;類型圖表還根據其源顯示人口。
 
-## 標識流量源{#identifying-the-traffic-source}
+## 識別流量來源 {#identifying-the-traffic-source}
 
 可使用兩種不同模式來識別訪客存取網頁應用程式時來自何處：
 
@@ -55,13 +55,11 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造
 
 >[!NOTE]
 >
->請記住，只有在部署精靈中啟動了對應的選項時，才可能進行匿名追蹤。
->
->有關詳細資訊，請參閱[安裝指南](../../installation/using/deploying-an-instance.md)。
+>只有在安裝Campaign時在部署精靈中啟動了選項時，才可使用匿名追蹤。
 
-## 使用數字內容編輯器(DCE){#web-applications-designed-with-digital-content-editor--dce-}設計的Web應用程式
+## 使用數字內容編輯器(DCE)設計的Web應用程式 {#web-applications-designed-with-digital-content-editor--dce-}
 
-使用HTML內容編輯器建立Web應用程式時 — **數字內容編輯器(DCE)** — 從編輯器的&#x200B;**[!UICONTROL Properties]**&#x200B;頁簽插入跟蹤標籤。 有關數字內容編輯器(DCE)的詳細資訊，請參閱[本節](../../web/using/about-campaign-html-editor.md)。
+使用HTML內容編輯器建立Web應用程式時 — **數字內容編輯器(DCE)** — 從編輯器的&#x200B;**[!UICONTROL Properties]**&#x200B;頁簽插入跟蹤標籤。 有關數字內容編輯器(DCE)的詳細資訊，請參閱[本節](about-campaign-html-editor.md)。
 
 ![](assets/trackers_2.png)
 
