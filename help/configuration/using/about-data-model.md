@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '980'
 ht-degree: 6%
 
 ---
@@ -17,21 +17,21 @@ ht-degree: 6%
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，本頁面列出主要表格和概念。
 
-## 概觀 {#data-model-overview}
+## 概覽 {#data-model-overview}
 
 Adobe Campaign依賴包含連結在一起之表的關係資料庫。 Adobe Campaign資料模型的基本結構描述如下。
 
-### 收件者表{#recipient-table}
+### 收件者表格 {#recipient-table}
 
 資料模型依賴於主表，該主表預設為收件者表(**NmsRecipient**)。 此表格可讓儲存所有行銷設定檔。
 
 如需「收件者」表格的詳細資訊，請參閱[此區段](#default-recipient-table)。
 
-### 傳遞表{#delivery-table}
+### 傳送表格 {#delivery-table}
 
 資料模型也包含專用於儲存所有行銷活動的部分。 通常是傳送表格(**NmsDelivery**)。 此表中的每個記錄都表示傳遞操作或傳遞模板。 它包含執行傳送所需的所有必要參數，例如目標、內容等。
 
-### 記錄表{#log-tables}
+### 記錄表 {#log-tables}
 
 資料模型的另一個部分可讓您暫時儲存與執行促銷活動相關聯的所有記錄。
 
@@ -39,17 +39,17 @@ Adobe Campaign依賴包含連結在一起之表的關係資料庫。 Adobe Campa
 主要追蹤記錄表(**NmsTrackingLog**)儲存所有收件者的追蹤記錄。 追蹤記錄會參考收件者的反應，例如電子郵件開啟次數和點按次數。 每個反應都對應至追蹤記錄。
 傳送記錄檔和追蹤記錄檔會在特定時段後刪除，而特定時段會在Adobe Campaign中指定，且可以修改。 因此，強烈建議定期匯出日誌。
 
-### 技術表{#technical-tables}
+### 技術表 {#technical-tables}
 
 最後，資料模型的一部分包含用於應用程式的技術資料，包括運算子和用戶權限(**NmsGroup**)、資料夾(**XtkFolder**)。
 
-## 使用預設的收件者表{#default-recipient-table}
+## 使用內建的收件者表格 {#default-recipient-table}
 
-Adobe Campaign中的現成可用收件者表格是建立資料模型的好起點。 它有許多預先定義的欄位和表格連結，可輕鬆擴充。 當您主要鎖定收件者時，這項功能特別實用，因為它適合簡單的收件者導向資料模型。
+Adobe Campaign中的內建收件者表格是建立資料模型的好起點。 它有許多預先定義的欄位和表格連結，可輕鬆擴充。 當您主要鎖定收件者時，這項功能特別實用，因為它適合簡單的收件者導向資料模型。
 
-使用標準「收件者」表格的好處如下：
+使用內建收件者表格的優點如下：
 
-* 現成可用的功能，例如訂閱、種子清單、調查、社交等。
+* 使用內建功能（例如訂閱、種子清單等）。
 * 以收件者為中心的資料模型提供行銷資料庫。
 * 更快速的實作。
 * 由支援和合作夥伴輕鬆維護。
@@ -62,7 +62,7 @@ Adobe Campaign中的現成可用收件者表格是建立資料模型的好起點
 
 此外，由於「收件者」表格是產品的一部分，因此表格及其關聯表單都會隨著產品變更而改變。 因此，需要額外的維護，以檢查升級時是否有任何擴充功能仍有效。
 
-## 擴展資料模型{#extending-data-model}
+## 擴充資料模型 {#extending-data-model}
 
 從Adobe Campaign開始，您需要評估預設資料模型，以檢查哪個表格最適合儲存行銷資料。
 
@@ -79,7 +79,7 @@ Adobe Campaign中的現成可用收件者表格是建立資料模型的好起點
 >
 >擴充資料模型會保留給進階使用者。
 
-## 使用自訂收件者表格{#custom-recipient-table}
+## 使用自訂收件者表格 {#custom-recipient-table}
 
 在設計Adobe Campaign資料模型時，您可以使用[現成可用的收件者表格](#default-recipient-table)，或決定建立[自訂收件者表格](../../configuration/using/about-custom-recipient-table.md)以儲存您的行銷設定檔。
 
