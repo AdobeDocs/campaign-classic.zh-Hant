@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -21,9 +21,9 @@ ht-degree: 5%
 
 ![](assets/dce_popup_templatechoice.png)
 
-若要新增範本，請參閱[全域選項](../../web/using/content-editor-interface.md#global-options)。
+若要新增範本，請參閱[全域選項](content-editor-interface.md#global-options)。
 
-## 將傳送儲存為範本{#saving-a-delivery-as-a-template}
+## 將傳送儲存為範本 {#saving-a-delivery-as-a-template}
 
 設定傳送後，您可以將其儲存為範本，以便在未來傳送時重複使用。
 
