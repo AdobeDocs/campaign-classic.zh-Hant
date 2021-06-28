@@ -4,10 +4,10 @@ title: 移轉至Adobe Analytics Connector
 description: Campaign - Analytics Connector常見問題集
 hide: true
 hidefromtoc: true
-source-git-commit: 248bd7774c01adb44ce33d0499c2b01d013e75bd
+source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 6%
+source-wordcount: '840'
+ht-degree: 5%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如對這些變更有任何疑問，請聯絡 [Adobe 客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>如有關於這些變更的任何問題，請參閱[FAQ](#faq-aa)。 如需詳細資訊，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
 ## 有什麼改變？
 
-現已推出Campaign Classic與Adobe Analytics之間的新整合。 主要變更列於下方。
+現已推出Campaign Classicv7與Adobe Analytics之間的新整合。 主要變更列於下方。
 
 * Adobe Campaign Classic與Adobe Analytics驗證的整合已從使用者/密碼移至AdobeIdentity Management服務(IMS)。 因此，您必須實作AdobeIMS，並透過Adobe ID](../integrations/using/about-adobe-id.md)連線至促銷活動[，再開始實作Analytics Connector。
 
@@ -58,7 +58,7 @@ ht-degree: 6%
 升級所有執行個體後，您將能[實作新的整合](../platform/using/adobe-analytics-connector.md)至Adobe Analytics Connector，並確保順暢轉換。
 
 
-## 常見問答集
+## 常見問答集{#faq-aa}
 
 **如何取得日誌？**
 
@@ -71,17 +71,21 @@ ht-degree: 6%
 * 為用戶介面啟用詳細模式：以詳細模式重新運行`web`進程。
 * 若要為&#x200B;**webAnalytics**&#x200B;工作流程啟用詳細模式：從工作流屬性中選擇&#x200B;**在引擎中執行**&#x200B;選項，然後在詳細模式下重新運行`wfserver`。
 
-**整合擁有者而非管理員**
+**「整合擁有者而非管理員」錯誤代表什麼？**
 
 深入了解[本頁面](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error)中的Data Connectors「整合擁有者非管理員」錯誤。
 
-**分析中存在的現有evar/事件/報表套裝不會顯示於Campaign中**
+**移轉至新連接器後，舊資料和報表套裝會發生什麼事？**
+
+移轉後，新連接器（從舊連接器移轉）將開始推送資料至相同的報表套裝，而現有資料將不受影響：它會新增至現有資料。
+
+**Analytics中存在的某些現有evar/事件/報表套裝在Campaign中不會顯示。我該做什麼？**
 
 整合需仰賴技術帳戶代號上的日常操作資料。 如果與技術帳戶使用者相關聯的產品設定檔缺少維度/量度/報表套裝的權限，我們使用的API就會因這些請求而動搖。
 
 如果我們正在閱讀Analytics元件的詳細資訊（例如量度/維度/區段/報表套裝）,API將不會在結果中傳回這些元件（這看起來可能像Analytics端已刪除的項目，或不存在）。 Analytics API會拒絕這些請求並傳出錯誤。
 
-解決方案是透過在[Adobe Admin Console](https://adminconsole.adobe.com/)中新增這些元件，以新建立/遺失的元件，更新Analytics技術使用者代號的「產品設定檔」。
+解決方案是透過在[Adobe Admin Console](https://adminconsole.adobe.com/)中新增這些元件，以新建立/遺失的元件，更新Analytics技術使用者代號的&#x200B;**產品設定檔**。 如需詳細指引，請聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 實用連結
 
