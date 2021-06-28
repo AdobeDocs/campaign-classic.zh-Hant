@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提供者。 有關服務提供商和相關成本結構的資訊由Adobe Campaign管理員從主視圖中定義。 服務提供者從交付中被引用，其成本結構允許計算與此交付相關的成本以及有關庫存的管理。
 
-## 建立服務提供商及其成本結構{#creating-service-providers-and-their-cost-structures}
+## 建立服務提供商及其成本結構 {#creating-service-providers-and-their-cost-structures}
 
 每個服務提供商將保存在包含聯繫詳細資訊、服務模板和相關作業的檔案中。
 
@@ -41,9 +41,9 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
    請參閱[將服務與促銷活動關聯](#associating-a-service-with-a-campaign)。
 
-### 建立服務提供商及其成本類別{#creating-a-service-provider-and-its-cost-categories}
+### 建立服務提供商及其成本類別 {#creating-a-service-provider-and-its-cost-categories}
 
-#### 添加服務提供程式{#adding-a-service-provider}
+#### 添加服務提供程式 {#adding-a-service-provider}
 
 您可以視需要為傳送建立任意數量的服務提供者。 添加服務提供程式的步驟如下：
 
@@ -54,7 +54,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕，將服務提供程式添加到清單中。
 
-#### 定義成本類別{#defining-cost-categories}
+#### 定義成本類別 {#defining-cost-categories}
 
 必須將服務模板與每個服務提供商關聯。 在這些模板中，您必須首先確定成本類別，並在必要時確定相關庫存。 然後，您必須通過成本結構為每個類別建立成本計算規則。
 
@@ -91,7 +91,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### 定義成本結構{#defining-the-cost-structure}
+### 定義成本結構 {#defining-the-cost-structure}
 
 對於每種成本類型，成本結構指定要應用的計算規則。
 
@@ -111,7 +111,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
    當取決於消息數時，成本計算結構可以是&#x200B;**[!UICONTROL Linear]**、**[!UICONTROL Linear by threshold]**&#x200B;或&#x200B;**[!UICONTROL Constant by threshold]**。
 
-#### 線性結構{#linear-structure}
+#### 線性結構 {#linear-structure}
 
 如果無論消息總數為多少，消息（或消息批）的金額始終相同，請選擇&#x200B;**[!UICONTROL Linear]**&#x200B;並輸入每條消息的成本。
 
@@ -121,7 +121,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_02.png)
 
-#### 閾值{#linear-structure-by-threshold}的線性結構
+#### 依臨界值的線性結構 {#linear-structure-by-threshold}
 
 如果金額按每條消息的閾值應用，則必須定義&#x200B;**[!UICONTROL Linear by threshold]**&#x200B;計算結構。 在此類型的成本結構中，每條消息的成本為0.13，例如，如果消息總數介於1到100之間，則成本為0.12，從100到1000條消息，或從1000條消息到1000條消息的成本為0.11。
 
@@ -131,13 +131,13 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 若要新增臨界值，請按一下清單右側的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 
-#### 按閾值{#constant-structure-by-threshold}的常數結構
+#### 按閾值的常數結構 {#constant-structure-by-threshold}
 
 最後，您可以根據訊息總數來設定成本計算。 要執行此操作，請選擇&#x200B;**[!UICONTROL Constant by threshold]**&#x200B;計算結構。 例如，1到100條報文的成本將設定為固定金額12.00,100.00,101到1000條報文的傳送為100.00，超過1000條報文的任何傳送為500.00，無論總數如何。
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
-### 配置與服務{#configuring-processes-associated-with-a-service}關聯的進程
+### 配置與服務相關聯的進程 {#configuring-processes-associated-with-a-service}
 
 您可以透過&#x200B;**[!UICONTROL Processes]**&#x200B;標籤，關聯與服務相關聯之程式的資訊。
 
@@ -155,7 +155,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 * **[!UICONTROL Post-processing]**&#x200B;區段可讓您選取要在傳遞核准後啟動的工作流程。 如果輸入了工作流模板，則將自動建立工作流實例，並在批准生效後立即啟動。 例如，此工作流程可將解壓縮檔案傳送至外部服務提供者進行處理。
 
-### 將服務與促銷活動{#associating-a-service-with-a-campaign}關聯
+### 將服務與促銷活動關聯 {#associating-a-service-with-a-campaign}
 
 服務會透過傳遞或工作與促銷活動建立關聯。 服務提供者會連結至傳遞範本，以在透過此範本建立的傳遞中提供其服務。
 
@@ -180,7 +180,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 
-## 庫存和訂單管理{#stock-and-order-management}
+## 庫存和訂單管理 {#stock-and-order-management}
 
 成本類型可與庫存行關聯，以便處理警報、跟蹤供應和啟動訂單。
 
@@ -202,13 +202,13 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
    請參閱[Orders](#orders)。
 
-### 股票管理{#stock-management}
+### 股票管理 {#stock-management}
 
 如果庫存不足或達到最低臨界值，Adobe Campaign可以警告一組運算子。 庫存水準可通過導航區域的&#x200B;**[!UICONTROL Other choices]**&#x200B;連結通過&#x200B;**[!UICONTROL Campaigns]**&#x200B;頁簽的&#x200B;**[!UICONTROL Stocks]**&#x200B;連結訪問。
 
 ![](assets/s_ncs_user_stocks_view.png)
 
-#### 建立股票{#creating-a-stock}
+#### 建立股票 {#creating-a-stock}
 
 應用以下步驟建立新庫存：
 
@@ -221,7 +221,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
    >
    >有關詳細資訊，請參閱[建立服務提供程式及其成本結構](#creating-service-providers-and-their-cost-structures)。
 
-#### 添加庫存行{#adding-stock-lines}
+#### 添加庫存行 {#adding-stock-lines}
 
 一種存貨，包括各種存貨線。 庫存行包含交付將消耗的初始資源數量。 每個庫存行指明衝減的數量、庫存數量和訂購數量。
 
@@ -241,15 +241,15 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 * 在&#x200B;**[!UICONTROL Alert level]**&#x200B;欄位中指定應從哪個閾值提醒操作員訂購庫存。 當達到警報級別時，使用此庫存的傳遞的審批窗口中將顯示警告消息。
 
-#### 將庫存與成本類別{#associating-a-stock-with-cost-categories}關聯
+#### 將庫存與成本類別關聯 {#associating-a-stock-with-cost-categories}
 
 對於指定的服務提供商，在服務中，庫存行可以由成本類別之一引用，如下所示：
 
 ![](assets/s_ncs_user_stocks_select_from_supplier.png)
 
-### 庫存追蹤{#stock-tracking}
+### 股票追蹤 {#stock-tracking}
 
-#### 警報運算子{#alerting-operators}
+#### 警報運算子 {#alerting-operators}
 
 當傳送中參考的庫存不足時，會顯示警報。 例如，核准解壓縮檔案時，會顯示下列警報：
 
@@ -275,7 +275,7 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 ![](assets/s_ncs_user_stocks_edit_from_board_consumed.png)
 
-## 計算預算{#calculating-budgets}
+## 計算預算 {#calculating-budgets}
 
 ### 原則 {#principle}
 
@@ -285,8 +285,8 @@ Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提
 
 ### 實作 {#implementation}
 
-在促銷活動中，當您選取預算時，必須輸入初始金額。 計算成本將根據輸入金額（支出、預計、保留、承諾）的承諾水準自動更新。 請參閱[計算金額](../../campaign/using/controlling-costs.md#calculating-amounts)。
+在促銷活動中，當您選取預算時，必須輸入初始金額。 計算成本將根據輸入金額（支出、預計、保留、承諾）的承諾水準自動更新。 請參閱[計算金額](../../mrm/using/controlling-costs.md#calculating-amounts)。
 
 >[!NOTE]
 >
->建立預算的過程在[建立預算](../../campaign/using/controlling-costs.md#creating-a-budget)中介紹。
+>建立預算的過程在[建立預算](../../mrm/using/controlling-costs.md#creating-a-budget)中介紹。
