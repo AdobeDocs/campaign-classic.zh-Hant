@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 20%
@@ -29,19 +29,19 @@ ht-degree: 20%
 
 1. 網路表單（+設定檔修改）
 
-   使用網頁表單，您可以提供包含輸入或選擇欄位的網頁：使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 有關詳細資訊，請參閱[Web表單](../../web/using/about-web-forms.md)。
+   使用網頁表單，您可以提供包含輸入或選擇欄位的網頁：使用者輸入的資訊可儲存在Adobe Campaign資料庫中。 有關詳細資訊，請參閱[Web表單](about-web-forms.md)。
 
 1. 網站應用程式
 
-   Adobe Campaign可讓您建立要在Web平台或外聯網上公開的Web應用程式。 這可讓您編輯資料並記錄Adobe Campaign中的資訊。 在此情況下，您可以限制已驗證使用者的存取權（透過存取控制），並根據各種條件設定資料預先載入。 如需詳細資訊，請參閱[本章節](../../web/using/about-web-applications.md)。
+   Adobe Campaign可讓您建立要在Web平台或外聯網上公開的Web應用程式。 這可讓您編輯資料並記錄Adobe Campaign中的資訊。 在此情況下，您可以限制已驗證使用者的存取權（透過存取控制），並根據各種條件設定資料預先載入。 如需詳細資訊，請參閱[本章節](about-web-applications.md)。
 
 1. 登錄頁面
 
-   登錄頁面是HTML頁面，其內容可在網站上使用，且可讓使用者輸入要儲存在Adobe Campaign資料庫設定檔中的資訊。 這類網頁的內容通常由專門的網站機構建立，然後再匯入Adobe Campaign以供出版、管理和跟進。 有關詳細資訊，請參見[此頁面](../../web/using/creating-a-landing-page.md)。
+   登錄頁面是HTML頁面，其內容可在網站上使用，且可讓使用者輸入要儲存在Adobe Campaign資料庫設定檔中的資訊。 這類網頁的內容通常由專門的網站機構建立，然後再匯入Adobe Campaign以供出版、管理和跟進。 有關詳細資訊，請參見[此頁面](creating-a-landing-page.md)。
 
 1. 調查
 
-   Adobe Campaign可讓您透過&#x200B;**調查管理員**&#x200B;選項，設計及管理線上調查，並處理其結果：動態欄位建立、分數管理、匯出答案和專用報告。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
+   Adobe Campaign可讓您透過&#x200B;**調查管理員**&#x200B;選項，設計及管理線上調查，並處理其結果：動態欄位建立、分數管理、匯出答案和專用報告。 如需詳細資訊，請參閱[本章節](../../surveys/using/about-surveys.md)。
 
    >[!CAUTION]
    >
@@ -55,4 +55,4 @@ ht-degree: 20%
    >
    >**Social** Marketing是選用的Adobe Campaign模組。請檢查您的授權合約。
 
-頁面配置模式和可用配置在幾種Web應用程式類型中可以相同。 如需詳細資訊，請參閱[本章節](../../web/using/about-web-forms.md)。
+頁面配置模式和可用配置在幾種Web應用程式類型中可以相同。 如需詳細資訊，請參閱[本章節](about-web-forms.md)。
