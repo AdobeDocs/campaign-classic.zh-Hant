@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 97%
@@ -94,7 +94,7 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 ## 如何設計及分享線上意見調查？ {#how-to-design-and-share-an-online-survey-}
 
-瞭解如何在 Campaign Classic 中[建立線上意見調查](../../web/using/getting-started-with-surveys.md)，以及設計及發佈意見調查的關鍵步驟。
+瞭解如何在 Campaign Classic 中[建立線上意見調查](../../surveys/using/getting-started-with-surveys.md)，以及設計及發佈意見調查的關鍵步驟。
 
 ## 如何建立登陸頁面？ {#how-to-create-landing-page-}
 
