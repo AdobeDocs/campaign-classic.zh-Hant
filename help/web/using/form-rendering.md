@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 表單轉譯{#form-rendering}
 
-## 選擇表單呈現模板{#selecting-the-form-rendering-template}
+## 選取表單呈現範本 {#selecting-the-form-rendering-template}
 
 表單設定可讓您選取用來產生頁面的範本。 要訪問它們，請按一下表單詳細資訊工具欄中的&#x200B;**[!UICONTROL Settings]**&#x200B;按鈕，然後選擇&#x200B;**[!UICONTROL Rendering]**&#x200B;頁簽。 預設提供許多範本（樣式表）。
 
@@ -57,9 +57,9 @@ ht-degree: 2%
 >呈現模板儲存在&#x200B;**[!UICONTROL Administration > Configuration > Form rendering]**&#x200B;節點中。\
 >如需詳細資訊，請參閱[自訂表單呈現](#customizing-form-rendering)
 
-## 自訂表單呈現{#customizing-form-rendering}
+## 自訂表單轉譯 {#customizing-form-rendering}
 
-### 更改元素{#changing-the-layout-of-elements}的佈局
+### 變更元素的版面 {#changing-the-layout-of-elements}
 
 您可以過載表單中每個元素的樣式表（輸入欄位、影像、選項按鈕等）。
 
@@ -69,9 +69,9 @@ ht-degree: 2%
 
 它可讓您定義下列屬性：
 
-* **[!UICONTROL Label position]**:請 [參閱定義標籤的位置](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Label position]**:請 [參閱定義標籤的位置](defining-web-forms-layout.md#defining-the-position-of-labels),
 * **[!UICONTROL Label format]**:換字或換字，
-* **[!UICONTROL Number of cells]** :請參 [閱定位頁面上的欄位](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Number of cells]** :請參 [閱定位頁面上的欄位](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
 * **[!UICONTROL Horizontal alignment]** （左、右、中） **[!UICONTROL Vertical alignment]** 和（高、低、中）,
 * **[!UICONTROL Width]** 區域：這可以以百分比表示，或以ems、點或像素（預設值）表示，
 * 最大&#x200B;**[!UICONTROL Length]**:允許的字元數上限（對於文本、數字和密碼類型控制項）,
@@ -80,7 +80,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
-### 定義頁眉和頁腳{#defining-headers-and-footers}
+### 定義頁首和頁尾 {#defining-headers-and-footers}
 
 欄位在樹結構中排序，樹結構的根與頁同名。 選取它以修改名稱。
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
-### 將元素新增至HTML標題{#adding-elements-to-html-header}
+### 新增元素至HTML標題 {#adding-elements-to-html-header}
 
 您可以輸入要插入表單頁面HTML標題的其他元素。 要執行此操作，請在相關頁面的&#x200B;**[!UICONTROL Header]**&#x200B;標籤中輸入元素。
 
@@ -96,11 +96,11 @@ ht-degree: 2%
 
 ![](assets/webform_header_page_tab.png)
 
-## 定義控制設定{#defining-control-settings}
+## 定義控制設定 {#defining-control-settings}
 
 當使用者填入表單時，會根據其格式或設定，對特定欄位自動執行檢查。 這可讓您將某些欄位設為必填欄位（請參閱[定義必填欄位](#defining-mandatory-fields)），或檢查輸入資料的格式（請參閱[檢查資料格式](#checking-data-format)）。 在頁面核准期間會執行檢查（透過按一下可啟用輸出轉變的連結或按鈕）。
 
-### 定義必填欄位{#defining-mandatory-fields}
+### 定義必填欄位 {#defining-mandatory-fields}
 
 若要將某些欄位設為必填欄位，請在建立欄位時選取此選項。
 
@@ -118,7 +118,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_required_custom_msg2.png)
 
-### 正在檢查資料格式{#checking-data-format}
+### 檢查資料格式 {#checking-data-format}
 
 對於將其值儲存在資料庫的現有欄位中的表單檢查，將應用儲存欄位的規則。
 
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 使用者必須在表單欄位中輸入整數。
 
-## 定義欄位條件顯示{#defining-fields-conditional-display}
+## 定義欄位條件式顯示 {#defining-fields-conditional-display}
 
 您可以根據使用者選擇的值，設定要顯示之頁面上的欄位顯示。 這可套用至一個欄位或一組欄位（當這些欄位在容器中分組時）。
 
@@ -146,19 +146,19 @@ ht-degree: 2%
 
 * 主樹包含窗體上下文的參數。 預設參數為Identifier（與收件者的加密識別碼相符）、Language（語言）和Origin（原始）。
 
-   如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
+   如需關於此項目的詳細資訊，請參閱此[頁面](defining-web-forms-properties.md#form-url-parameters)。
 
 * **[!UICONTROL Recipients]**&#x200B;子樹包含插入表單並儲存在資料庫中的輸入欄位。
 
-   有關詳細資訊，請參閱[將資料儲存在資料庫](../../web/using/web-forms-answers.md#storing-data-in-the-database)。
+   有關詳細資訊，請參閱[將資料儲存在資料庫](web-forms-answers.md#storing-data-in-the-database)。
 
-* **[!UICONTROL Variables]**&#x200B;子樹包含此表單的可用變數。 有關詳細資訊，請參閱[將資料儲存在本地變數](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)。
+* **[!UICONTROL Variables]**&#x200B;子樹包含此表單的可用變數。 有關詳細資訊，請參閱[將資料儲存在本地變數](web-forms-answers.md#storing-data-in-a-local-variable)。
 
-如需詳細資訊，請參閱以下提供的使用案例：[根據所選值](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)顯示不同的選項。
+如需詳細資訊，請參閱以下提供的使用案例：[根據所選值](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)顯示不同的選項。
 
-您也可以使用&#x200B;**[!UICONTROL Test]**&#x200B;物件來限制表單頁面的顯示。 如需關於此項目的詳細資訊，請參閱此[頁面](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
+您也可以使用&#x200B;**[!UICONTROL Test]**&#x200B;物件來限制表單頁面的顯示。 如需關於此項目的詳細資訊，請參閱此[頁面](defining-web-forms-page-sequencing.md#conditional-page-display)。
 
-## 從現有表單{#importing-elements-from-an-existing-form}匯入元素
+## 從現有表單匯入元素 {#importing-elements-from-an-existing-form}
 
 可從其他網路表單匯入欄位或容器。 這可讓您建立可重複使用區塊的程式庫，這些區塊會插入表單中，例如位址區塊、電子報訂閱區域等。
 
