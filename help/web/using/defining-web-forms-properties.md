@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
@@ -21,21 +21,21 @@ Web表單可完全配置且可個性化，以滿足您的需求。 必須在屬�
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
-## 整體表單屬性{#overall-form-properties}
+## 整體表單屬性 {#overall-form-properties}
 
 在屬性窗口的&#x200B;**[!UICONTROL General]**&#x200B;頁簽中，可以修改表單的&#x200B;**標籤**。 強烈建議不要更改&#x200B;**內部名稱**。
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-表單建立期間會選擇表單範本。 以後無法更改。 有關建立和管理表單模板的詳細資訊，請參閱[使用Web表單模板](../../web/using/using-a-web-form-template.md)。
+表單建立期間會選擇表單範本。 以後無法更改。 有關建立和管理表單模板的詳細資訊，請參閱[使用Web表單模板](using-a-web-form-template.md)。
 
-## 表單資料儲存{#form-data-storage}
+## 表單資料儲存 {#form-data-storage}
 
 預設情況下，網路表單的欄位會儲存在收件者表格中。 您可以從&#x200B;**[!UICONTROL Document type]**&#x200B;欄位中選取新表格，以變更所使用的表格。 **[!UICONTROL Zoom]**&#x200B;圖示可讓您檢視所選表格的內容。
 
 預設情況下，答案儲存在&#x200B;**收件者表單**&#x200B;的回答表中。
 
-## 設定錯誤頁{#setting-up-an-error-page}
+## 設定錯誤頁面 {#setting-up-an-error-page}
 
 您可以設定錯誤頁面：在表單執行期間發生錯誤時，會顯示此頁面。
 
@@ -49,13 +49,13 @@ Web表單可完全配置且可個性化，以滿足您的需求。 必須在屬�
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
-## 表單本地化{#form-localization}
+## 表單本地化 {#form-localization}
 
 **[!UICONTROL Localization]**&#x200B;標籤可讓您選取網頁表單的設計和顯示語言。
 
-請參閱[轉譯網頁表單](../../web/using/translating-a-web-form.md)。
+請參閱[轉譯網頁表單](translating-a-web-form.md)。
 
-## 表單瀏覽和呈現{#form-browsing-and-rendering}
+## 表單瀏覽和轉譯 {#form-browsing-and-rendering}
 
 **[!UICONTROL Rendering]**&#x200B;索引標籤可讓您定義Web表單頁面之間的瀏覽類型和使用的呈現範本。
 
@@ -77,21 +77,21 @@ Web表單可完全配置且可個性化，以滿足您的需求。 必須在屬�
 
 **[!UICONTROL Rendering]**&#x200B;標籤的&#x200B;**[!UICONTROL Template]**&#x200B;欄位可讓您從可用的主題中選取主題。
 
-主題保存在樹的&#x200B;**[!UICONTROL Administration>Configuration>Form rendering]**&#x200B;節點中。 請參閱[選取表單呈現範本](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+主題保存在樹的&#x200B;**[!UICONTROL Administration>Configuration>Form rendering]**&#x200B;節點中。 請參閱[選取表單呈現範本](form-rendering.md#selecting-the-form-rendering-template)
 
 樣例呈現顯示在屬性窗口的下部。 **[!UICONTROL Edit link]**&#x200B;圖示可讓您檢視所選主題的設定。
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
-## 格式為{#texts-in-the-form}的文本
+## 格式文本 {#texts-in-the-form}
 
-**[!UICONTROL Page]**&#x200B;標籤可讓您定義表單頁首和頁尾的內容。 請參閱[定義頁眉和頁腳](../../web/using/form-rendering.md#defining-headers-and-footers)。
+**[!UICONTROL Page]**&#x200B;標籤可讓您定義表單頁首和頁尾的內容。 請參閱[定義頁眉和頁腳](form-rendering.md#defining-headers-and-footers)。
 
-您也可以管理翻譯。 請參閱[轉譯網頁表單](../../web/using/translating-a-web-form.md)。
+您也可以管理翻譯。 請參閱[轉譯網頁表單](translating-a-web-form.md)。
 
-## 表單{#accessibility-of-the-form}的輔助功能
+## 表單的協助工具 {#accessibility-of-the-form}
 
-如果網路表單&#x200B;**[!UICONTROL Online]**，且目前日期在有效期內，使用者便可存取該表單。 在發佈階段期間會修改表單的狀態（請參閱[發佈表單](../../web/using/publishing-a-web-form.md#publishing-a-form)）。 狀態顯示在屬性窗口&#x200B;**[!UICONTROL General]**&#x200B;頁簽的&#x200B;**Project**&#x200B;部分中。
+如果網路表單&#x200B;**[!UICONTROL Online]**，且目前日期在有效期內，使用者便可存取該表單。 在發佈階段期間會修改表單的狀態（請參閱[發佈表單](publishing-a-web-form.md#publishing-a-form)）。 狀態顯示在屬性窗口&#x200B;**[!UICONTROL General]**&#x200B;頁簽的&#x200B;**Project**&#x200B;部分中。
 
 有效期從&#x200B;**[!UICONTROL Start]**&#x200B;日期到&#x200B;**[!UICONTROL End date]**。 如果未在這些欄位中指定日期，表單將具有永久有效性。
 
@@ -101,7 +101,7 @@ Web表單可完全配置且可個性化，以滿足您的需求。 必須在屬�
 >
 >如果表單已關閉，且因此其有效期未達到或已過期，或者如果表單已由Adobe Campaign運算子關閉，則當使用者嘗試存取表單時，會顯示訊息。 您可以按一下&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;以個人化此訊息。
 
-## 表單訪問控制{#form-access-control}
+## 表單存取控制 {#form-access-control}
 
 依預設，會以匿名模式存取網路表單：所有存取表單的運算子都會獲派WebApp運算子權限。
 
@@ -119,13 +119,13 @@ Web表單可完全配置且可個性化，以滿足您的需求。 必須在屬�
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
-## 表單URL參數{#form-url-parameters}
+## 表單URL參數 {#form-url-parameters}
 
 您可以在表單的URL中新增其他參數，以個人化其內容並初始化內容（語言、加密的收件者ID、公司、儲存在變數中的計算公式等）。 這可讓您透過數個不同的URL存取一個表單，並根據URL中指出之參數的值個人化頁面內容。
 
 依預設，Adobe Campaign會提供參數以預覽表單和檢查錯誤。 您可以建立連結到表單的新設定，該設定可能會使用資料庫中某個欄位或本地變數的值。
 
-## 標準參數{#standard-parameters}
+## 標準參數 {#standard-parameters}
 
 預設可使用下列參數：
 
@@ -144,13 +144,13 @@ Web表單可完全配置且可個性化，以滿足您的需求。 必須在屬�
    >
    >透過具有&#x200B;**_uuid**&#x200B;參數的URL顯示表單時， **[!UICONTROL origin]**&#x200B;參數的值會強制為&#x200B;**Adobe Campaign**。
 
-## 添加參數{#adding-parameters}
+## 新增參數 {#adding-parameters}
 
 您可以透過表單「屬性」視窗的&#x200B;**[!UICONTROL Parameters...]**&#x200B;標籤來新增參數。 可強制使用，如下所示：
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-必須指定要從中檢索參數值的儲存位置。 要執行此操作，請選取其中一個儲存選項，然後按一下&#x200B;**[!UICONTROL Storage]**&#x200B;標籤以選取相關欄位或變數。 在[響應儲存欄位](../../web/using/web-forms-answers.md#response-storage-fields)中詳細說明了儲存選項。
+必須指定要從中檢索參數值的儲存位置。 要執行此操作，請選取其中一個儲存選項，然後按一下&#x200B;**[!UICONTROL Storage]**&#x200B;標籤以選取相關欄位或變數。 在[響應儲存欄位](web-forms-answers.md#response-storage-fields)中詳細說明了儲存選項。
 
 回應者狀態（0、1或任何其他值）隨後可新增至URL以存取表單。 此資訊可在表單的頁面或測試方塊中重複使用。 顯示的頁面可根據內容的值進行條件調整，如下所示：
 
