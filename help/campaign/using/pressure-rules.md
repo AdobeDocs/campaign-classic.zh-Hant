@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # 壓力規則{#pressure-rules}
 
-## 關於行銷疲勞{#about-marketing-fatigue}
+## 關於行銷疲勞 {#about-marketing-fatigue}
 
 實施銷售壓力管理可讓您避免在資料庫中過度索取人口，也稱為行銷疲勞。 若要這麼做，您可以定義每個收件者的訊息數量上限。 它也可讓您在促銷活動之間實作仲裁規則，以便傳送最佳訊息給目標對象。
 
@@ -37,7 +37,7 @@ ht-degree: 4%
 
 否則，收件者將為&#x200B;**[!UICONTROL Excluded by arbitration]**。 有關詳細資訊，請參閱[仲裁後排除](#exclusion-after-arbitration)。
 
-## 建立壓力規則{#creating-a-pressure-rule}
+## 建立壓力規則 {#creating-a-pressure-rule}
 
 若要使用Adobe Campaign在促銷活動之間設定仲裁，請從建立促銷活動類型和定義連結的類型規則（**Pressure**&#x200B;規則）開始。
 
@@ -91,9 +91,9 @@ ht-degree: 4%
 
 1. **[!UICONTROL Typologies]**&#x200B;標籤可讓您檢視套用此規則或將規則連結至一或多個現有類型的促銷活動類型。 如需詳細資訊，請參閱[套用類型](../../campaign/using/about-campaign-typologies.md#applying-typologies)。
 
-## 定義閾值和權重{#defining-thresholds-and-weights}
+## 定義臨界值和加權 {#defining-thresholds-and-weights}
 
-### 消息數上限{#maximum-number-of-messages}
+### 最大消息數 {#maximum-number-of-messages}
 
 每個壓力規則定義一個閾值，即在給定時間段內可以發送到一個接收者的最大消息數。 一旦達到此臨界值時，在考慮到該期間結束之前，將不再進行傳送。此程式可讓您在訊息超過設定的臨界值時，自動將收件者排除在傳送之外，以避免過度請求。
 
@@ -111,11 +111,11 @@ ht-degree: 4%
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-若要定義臨界值，您可以使用連結至目標維度的維度：例如，要包括傳送至儲存在訪客表格中的收件者設定檔的訊息（如需訪客表格的詳細資訊，請參閱[此區段](../../web/using/use-case--creating-a-refer-a-friend-form.md)），或避免每週傳送多則訊息至同一家庭（可能指數個電子郵件地址），此訊息是連結至收件者表格的維度中識別的。
+若要定義臨界值，您可以使用連結至目標維度的維度：例如，要包括傳送至儲存在訪客表格中的收件者設定檔的訊息（如需訪客表格的詳細資訊，請參閱[此區段](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)），或避免每週傳送多則訊息至同一家庭（可能指數個電子郵件地址），此訊息是連結至收件者表格的維度中識別的。
 
 若要這麼做，請選取&#x200B;**[!UICONTROL Count messages on a linked dimension]**&#x200B;選項，然後選取訪客或聯絡人表格。
 
-### 消息權重{#message-weight}
+### 訊息權重 {#message-weight}
 
 每個傳送都有一個權重，代表其優先順序等級。 依預設，傳送的權重會設為5。 壓力規則可讓您定義要套用傳送的重量。
 
@@ -137,7 +137,7 @@ ht-degree: 4%
 
 1. 將此規則套用至具有下列主題的訊息：電子報、特別優惠等。 這些傳送的權重，以及其優先順序等級，將取決於每個收件者的傾向分數。
 
-## 設定句點{#setting-the-period}
+## 設定期間 {#setting-the-period}
 
 壓力規則定義於&#x200B;**n**&#x200B;日滾動週期中。
 
@@ -198,7 +198,7 @@ ht-degree: 4%
 >
 >當您變更類型規則的定義時，可以建立&#x200B;**Simulation**&#x200B;以控制其對套用的傳送的影響，並監控傳送對彼此的影響。 如需詳細資訊，請參閱[促銷活動模擬](../../campaign/using/campaign-simulations.md)。
 
-## 仲裁後排除{#exclusion-after-arbitration}
+## 仲裁後排除 {#exclusion-after-arbitration}
 
 每晚都會透過&#x200B;**[!UICONTROL Forecasting]**&#x200B;技術工作流程和&#x200B;**[!UICONTROL Campaign jobs]**&#x200B;工作流程重新套用仲裁。
 
@@ -214,9 +214,9 @@ ht-degree: 4%
 >
 >如果數個傳送的分數相等，則會傳送排程為最早日期的促銷活動。
 
-## 壓力規則{#use-cases-on-pressure-rules}的使用案例
+## 壓力規則的使用案例 {#use-cases-on-pressure-rules}
 
-### 根據標準{#adapting-the-threshold-based-on-criterion}調整閾值
+### 根據標準調整閾值 {#adapting-the-threshold-based-on-criterion}
 
 我們想要建立類型規則，以防止每週傳送超過4則訊息給客戶，以及每週傳送2則訊息給潛在客戶。
 
@@ -286,7 +286,7 @@ ht-degree: 4%
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### 根據行為{#calculating-the-delivery-weight-based-on-behavior}計算傳送權重
+### 根據行為計算傳送權重 {#calculating-the-delivery-weight-based-on-behavior}
 
 您可以根據收件者行為定義壓力規則：因此，傳遞的重量可以適應從一個接收者到另一個接收者的不同的標準。 例如，您可以根據收件者是否造訪您的網際網路網站、按一下上次電子報的特定區段、訂閱資訊服務，或甚至根據調查的答案、線上遊戲等，決定傳送訊息。
 
@@ -312,7 +312,7 @@ ht-degree: 4%
 1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存此規則。
 1. 將規則連結至促銷活動類型，並在傳送中參考此類型以核准。
 
-### 僅發送加權最高的消息{#sending-only-the-highest-weighted-messages}
+### 僅傳送加權最高的訊息 {#sending-only-the-highest-weighted-messages}
 
 您想要在同一週內傳送不超過2則訊息，每天最多傳送2則訊息，且每個收件者最多只能傳送2則訊息，而且您只想要傳送權重較高的訊息。
 
