@@ -6,18 +6,18 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
 
 ---
 
-# 使用案例：顯示線上調查的答案報告{#use-case-displaying-report-on-answers-to-an-online-survey}
+# 使用案例：顯示線上意見調查的答案報告{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 您可使用專屬報告來收集和分析Adobe Campaign調查的答案。
 
-在以下範例中，我們想要收集線上調查的答案，並將其顯示在樞紐表格中
+在下列範例中，我們想要收集線上調查的答案，並將其顯示在樞紐表格中
 
 應用以下步驟：
 
@@ -31,11 +31,11 @@ ht-degree: 6%
 >
 >只有在您取得&#x200B;**調查管理員**&#x200B;選項時，才可實作此使用案例。 請檢查您的授權合約。
 
-## 步驟1 — 建立資料收集和儲存工作流程{#step-1---creating-the-data-collection-and-storage-workflow}
+## 步驟1 — 建立資料收集和儲存工作流程 {#step-1---creating-the-data-collection-and-storage-workflow}
 
 若要收集調查的答案，請套用下列步驟：
 
-1. 建立工作流程並放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活動。 有關使用此活動的詳細資訊，請參閱[此部分](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data)。
+1. 建立工作流程並放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活動。 有關使用此活動的詳細資訊，請參閱[此部分](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data)。
 1. 編輯活動，並選取您要分析其答案的調查。
 1. 啟用&#x200B;**[!UICONTROL Select all the answer data]**&#x200B;選項以收集所有資訊。
 
@@ -63,7 +63,7 @@ ht-degree: 6%
 
    **[!UICONTROL List update]**&#x200B;和&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動在中詳細說明。
 
-## 步驟2 — 建立多維資料集、其度量及其指標{#step-2---creating-the-cube--its-measures-and-its-indicators}
+## 第2步 — 建立多維資料集、其度量及其指標 {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
 然後，可以建立多維資料集並配置其測量：這些指標將用於建立將顯示在報告中的指標。 有關建立和配置多維資料集的詳細資訊，請參閱[關於多維資料集](../../reporting/using/about-cubes.md)。
 
@@ -77,7 +77,7 @@ ht-degree: 6%
 
 **[!UICONTROL Preview]**&#x200B;標籤可讓您控制報表的呈現。
 
-## 步驟3 — 建立報表並在表{#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}中設定資料配置
+## 步驟3 — 建立報表並在表格中設定資料配置 {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
 然後，您可以根據此多維資料集建立報告並處理資料和資訊。
 
