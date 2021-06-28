@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -25,9 +25,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您使用「促銷活動行銷資源管理」模組，您也可以管理可供數位使用者協作工作的行銷資源庫。 [瞭解更多](../../campaign/using/managing-marketing-resources.md)。
+>如果您使用「促銷活動行銷資源管理」模組，您也可以管理可供數位使用者協作工作的行銷資源庫。 [深入瞭解](../../mrm/using/managing-marketing-resources.md)。
 
-## 添加文檔{#adding-documents}
+## 添加文檔 {#adding-documents}
 
 可在促銷活動層級（內容檔案）或方案層級（一般檔案）將檔案建立關聯。
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 您也可以從此檢視編輯和修改這些量度。
 
-## 關聯並通過傳遞大綱{#associating-and-structuring-resources-linked-via-a-delivery-outline}連結的資源並建立其結構
+## 關聯並結構通過傳遞大綱連結的資源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 對於促銷活動，傳送大綱可讓您根據特定條件來建構要與傳送相關聯的外部元素：相關分支、已授予的促銷優惠、參加當地活動的邀請等。
 
-### 建立大綱{#creating-an-outline}
+### 建立大綱 {#creating-an-outline}
 
 若要建立大綱，請按一下相關促銷活動&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;標籤中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子標籤。
 
@@ -102,9 +102,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >如需行銷資源的詳細資訊，請參閱[此區段](../../campaign/using/managing-marketing-resources.md)。
+   >如需行銷資源的詳細資訊，請參閱[此區段](../../mrm/using/managing-marketing-resources.md)。
 
-### 選擇大綱{#selecting-an-outline}
+### 選擇大綱 {#selecting-an-outline}
 
 對於每個傳送，可以從為提取大綱保留的節中選擇要關聯的大綱，如下例所示：
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
-### 提取結果{#extraction-result}
+### 提取結果 {#extraction-result}
 
 在提取併發送到服務提供商的檔案中，大綱的名稱，並在適當時，其特徵（成本、說明等） 根據與服務提供者相關聯的匯出範本中的資訊，將其新增至內容。
 
