@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Adobe Campaign可讓您停止追蹤透過cookie或網站信標選擇退出行為
 >
 >指令碼執行時始終遵循[安全性和隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准則。
 
-## 配置橫幅{#configuring-the-banner-}
+## 設定橫幅 {#configuring-the-banner-}
 
 若要在Web應用程式或登陸頁面中顯示橫幅，必須進行設定。
 
@@ -33,7 +33,7 @@ Adobe Campaign會隨範例橫幅提供，您必須加以調整以符合自己的
 >
 >若要建立您自己的橫幅，您必須個人化現成可用的橫幅。
 
-要激活橫幅，必須配置Web應用程式屬性。 請參閱[設計Web應用程式](../../web/using/designing-a-web-application.md)部分。
+要激活橫幅，必須配置Web應用程式屬性。 請參閱[設計Web應用程式](designing-a-web-application.md)部分。
 
 如果已啟用網頁追蹤，您可以：
 
@@ -64,9 +64,9 @@ Adobe Campaign會隨範例橫幅提供，您必須加以調整以符合自己的
 
 您必須將&#x200B;**請在此處**&#x200B;插入包含追蹤資訊的區塊。 此取代應在與選擇退出橫幅相關的新個人化區塊中執行。
 
-橫幅會與特定CSS一起傳送。 不過，建立和設定網頁時，您可以覆寫樣式。 請參見[此頁面](../../web/using/content-editor-interface.md)。
+橫幅會與特定CSS一起傳送。 不過，建立和設定網頁時，您可以覆寫樣式。 請參見[此頁面](content-editor-interface.md)。
 
-## 使用API {#setting-the-opt-out-cookie-using-api}設定選擇退出Cookie
+## 使用API設定選擇退出Cookie {#setting-the-opt-out-cookie-using-api}
 
 Adobe Campaign隨API提供，可讓您管理Cookie值並擷取使用者偏好設定。
 
