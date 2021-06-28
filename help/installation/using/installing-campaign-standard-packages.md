@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # 安裝 Campaign Classic 內建套件{#installing-campaign-standard-packages}
 
-## 關於內建套件{#campaign-standard-packages}
+## 關於內建套件 {#campaign-standard-packages}
 
 內建套件包含一組功能，可根據您的需求並根據您的合約進行安裝。 下方提供Campaign內建套件的完整清單。
 
@@ -43,7 +43,7 @@ ht-degree: 6%
 
 現在已安裝套件。
 
-### 現成套件清單{#list-of-standard-packages}
+### 現成套件清單 {#list-of-standard-packages}
 
 下表列出所有Campaign內建套件。
 
@@ -58,7 +58,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 傳遞<br /> </td> 
-   <td> 監視傳送訊息時遇到的傳送及最終問題。 <a href="../../delivery/using/about-delivery-monitoring.md">瞭解更多</a><br /> </td> 
+   <td> 監視傳送訊息時遇到的傳送及最終問題。 <a href="../../delivery/using/about-delivery-monitoring.md">深入瞭解</a><br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -68,7 +68,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 行銷資源(MRM)<br /> </td> 
-   <td> 透過提供任務、預算和行銷資源的管理和追蹤，以協作模式控制行銷動作。 <a href="../../campaign/using/about-marketing-resource-management.md">更多詳情</a> <br /> </td> 
+   <td> 透過提供任務、預算和行銷資源的管理和追蹤，以協作模式控制行銷動作。 <a href="../../mrm/using/about-marketing-resource-management.md">更多詳情</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 
@@ -139,7 +139,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 線上調查（調查管理員）<br /> </td> 
-   <td> 建立並管理線上表單，以添加或修改配置檔案資訊、訂閱、取消訂閱或競爭項目表單。 選填。<a href="../../web/using/about-surveys.md">更多詳情</a> <br /> </td> 
+   <td> 建立並管理線上表單，以添加或修改配置檔案資訊、訂閱、取消訂閱或競爭項目表單。 選填。<a href="../../surveys/using/about-surveys.md">更多詳情</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -235,7 +235,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-### 消息中心包{#message-center-package}
+### 訊息中心套件 {#message-center-package}
 
 您必須安裝傳送通道（電子郵件、行動裝置通道、行動應用程式通道等） 安裝交易式訊息（訊息中心套件）之前。 如果您已啟動僅通過電子郵件發送的郵件中心項目，並且之後需要添加新通道，則必須執行以下步驟：
 
