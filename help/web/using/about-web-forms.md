@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Adobe Campaign整合了用於定義和發佈Web表單的圖形模組，以建立
 >
 >基於隱私權考量，我們建議對所有外部資源使用HTTPS。
 
-## 建立Web表單{#steps-for-creating-a-web-form}的步驟
+## 建立網路表單的步驟 {#steps-for-creating-a-web-form}
 
 本章詳細說明在Adobe Campaign中設計&#x200B;**webForm**&#x200B;類型表單所需的步驟，以及可用的選項和配置。 Adobe Campaign可讓您讓使用者取得此Web表單，並在資料庫中收集和封存答案。
 
@@ -57,22 +57,22 @@ Adobe Campaign整合了用於定義和發佈Web表單的圖形模組，以建立
 
 * 定義頁面排序並設定顯示條件。
 
-   此步驟在[定義網頁表單頁面排序](../../web/using/defining-web-forms-page-sequencing.md)中詳細說明。
+   此步驟在[定義網頁表單頁面排序](defining-web-forms-page-sequencing.md)中詳細說明。
 
 * 視需要翻譯內容。
 
-   在[轉譯Web表單](../../web/using/translating-a-web-form.md)中會詳細說明此步驟。
+   在[轉譯Web表單](translating-a-web-form.md)中會詳細說明此步驟。
 
-## 關於設計{#about-web-forms-designing}的Web表單
+## 關於網路表單設計 {#about-web-forms-designing}
 
-表單的頁面是透過特定編輯器建立，該編輯器可讓您定義並設定輸入區域（文字）、選取欄位（清單、核取方塊等） 和靜態元素（影像、HTLM內容等）。 它們可分組為容器，其版面配置會隨您的需求而改變（如需詳細資訊，請參閱[建立容器](../../web/using/defining-web-forms-layout.md#creating-containers)）。
+表單的頁面是透過特定編輯器建立，該編輯器可讓您定義並設定輸入區域（文字）、選取欄位（清單、核取方塊等） 和靜態元素（影像、HTLM內容等）。 它們可分組為容器，其版面配置會隨您的需求而改變（如需詳細資訊，請參閱[建立容器](defining-web-forms-layout.md#creating-containers)）。
 
 以下小節詳細說明如何定義表單畫面的內容和版面：
 
-* [新增欄位至網路表單](../../web/using/adding-fields-to-a-web-form.md),
-* [插入HTML內容](../../web/using/static-elements-in-a-web-form.md#inserting-html-content),
-* [網路表單中的靜態元素](../../web/using/static-elements-in-a-web-form.md),
-* [定義網路表單版面](../../web/using/defining-web-forms-layout.md).
+* [新增欄位至網路表單](adding-fields-to-a-web-form.md),
+* [插入HTML內容](static-elements-in-a-web-form.md#inserting-html-content),
+* [網路表單中的靜態元素](static-elements-in-a-web-form.md),
+* [定義網路表單版面](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Adobe Campaign整合了用於定義和發佈Web表單的圖形模組，以建立
 
 
 
-### 使用工具欄{#using-the-icons-in-the-toolbar}中的表徵圖
+### 使用工具列中的圖示 {#using-the-icons-in-the-toolbar}
 
 您也可以使用工具列中的圖示，或按一下滑鼠右鍵以插入輸入區域。
 
