@@ -4,9 +4,9 @@ title: 移轉至Adobe Analytics Connector
 description: Campaign - Analytics Connector常見問題集
 hide: true
 hidefromtoc: true
-source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
+source-git-commit: 41478c656ffd4e113788149e6cca9ed00602789e
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '836'
 ht-degree: 5%
 
 ---
@@ -71,9 +71,9 @@ ht-degree: 5%
 * 為用戶介面啟用詳細模式：以詳細模式重新運行`web`進程。
 * 若要為&#x200B;**webAnalytics**&#x200B;工作流程啟用詳細模式：從工作流屬性中選擇&#x200B;**在引擎中執行**&#x200B;選項，然後在詳細模式下重新運行`wfserver`。
 
-**「整合擁有者而非管理員」錯誤代表什麼？**
+**「整合擁有者非管理員」錯誤代表什麼？**
 
-深入了解[本頁面](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error)中的Data Connectors「整合擁有者非管理員」錯誤。
+深入了解[本頁面](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error)中的Data Connectors `Integration Owner Not Admin`錯誤。
 
 **移轉至新連接器後，舊資料和報表套裝會發生什麼事？**
 
