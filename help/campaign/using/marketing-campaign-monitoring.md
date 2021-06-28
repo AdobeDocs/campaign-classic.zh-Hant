@@ -6,14 +6,14 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
 
 ---
 
-# 監控行銷活動{#monitoring-marketing-campaigns}
+# 監控行銷活動 {#monitoring-marketing-campaigns}
 
 ## 追蹤行銷活動 {#tracking-a-campaign}
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* **[!UICONTROL Tasks]**&#x200B;子索引標籤會將連結至促銷活動的所有工作分組。 此檢視可讓您編輯或刪除它們。 MRM應用程式可以使用任務。 在[本節](../../campaign/using/creating-and-managing-tasks.md)中詳細介紹了這些規則。
+* **[!UICONTROL Tasks]**&#x200B;子索引標籤會將連結至促銷活動的所有工作分組。 此檢視可讓您編輯或刪除它們。 MRM應用程式可以使用任務。 在[本節](../../mrm/using/creating-and-managing-tasks.md)中詳細介紹了這些規則。
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
-## 傳遞追蹤{#delivery-tracking}
+## 傳遞追蹤 {#delivery-tracking}
 
 傳遞清單可透過Campaign節點的&#x200B;**[!UICONTROL Deliveries]**&#x200B;連結取得。
 
@@ -53,4 +53,4 @@ ht-degree: 2%
 
 您可以按一下可透過Adobe Campaign首頁存取的&#x200B;**[!UICONTROL Deliveries]**&#x200B;來查詢傳送狀態。 請參閱[傳送追蹤](#delivery-tracking)。
 
-行銷活動的&#x200B;**[!UICONTROL Edit > Audit]**&#x200B;標籤中會收集行銷活動中執行之程式的相關資訊。 您可以在此檢視促銷活動中的傳送清單。 [瞭解更多](#tracking-a-campaign)。
+行銷活動的&#x200B;**[!UICONTROL Edit > Audit]**&#x200B;標籤中會收集行銷活動中執行之程式的相關資訊。 您可以在此檢視促銷活動中的傳送清單。 [深入瞭解](#tracking-a-campaign)。
