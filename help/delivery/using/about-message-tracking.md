@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -71,7 +71,7 @@ Campaign Classic追蹤功能可讓您在可個人化且支援追蹤的電子郵�
 
 **追蹤 Web 應用程式**
 
-您也可以使用追蹤標籤來追蹤及測量網頁上的造訪次數。 此功能可用於所有Web應用程式類型，如表單和線上調查。 [深入瞭解](../../web/using/tracking-a-web-application.md)
+您也可以使用追蹤標籤來追蹤及測量網頁上的造訪次數。 此功能可用於所有Web應用程式類型，例如表單和登錄頁面。 [深入瞭解](../../web/using/tracking-a-web-application.md)
 
 **網站應用程式追蹤選擇退出**
 
