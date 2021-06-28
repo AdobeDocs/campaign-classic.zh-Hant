@@ -7,7 +7,7 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 96%
@@ -261,12 +261,6 @@ ht-degree: 96%
       + [設定及管理核准](campaign/using/marketing-campaign-approval.md)
       + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
       + [供應商、庫存和預算](campaign/using/providers--stocks-and-budgets.md)
-   + 任務、資源和預算 {#tasks--resources-and-budgets}
-      + [關於行銷資源管理](campaign/using/about-marketing-resource-management.md)
-      + [建立及管理設定檔](campaign/using/creating-and-managing-tasks.md)
-      + [控制成本](campaign/using/controlling-costs.md)
-      + [管理行銷資源](campaign/using/managing-marketing-resources.md)
-      + [論壇](campaign/using/discussion-forums.md)
    + Campaign 最佳化 {#campaign-optimization}
       + [關於行銷活動態樣](campaign/using/about-campaign-typologies.md)
       + [壓力規則](campaign/using/pressure-rules.md)
@@ -275,20 +269,26 @@ ht-degree: 96%
       + [篩選規則](campaign/using/filtering-rules.md)
       + [套用規則](campaign/using/applying-rules.md)
       + [Campaign 模擬](campaign/using/campaign-simulations.md)
-   + 分散式行銷 {#distributed-marketing}
-      + [關於分散式行銷](campaign/using/about-distributed-marketing.md)
-      + [建立本機行銷活動](campaign/using/creating-a-local-campaign.md)
-      + [建立協作行銷活動](campaign/using/creating-a-collaborative-campaign.md)
-      + [發佈行銷活動套件](campaign/using/publishing-the-campaign-package.md)
-      + [存取行銷活動](campaign/using/accessing-campaigns.md)
-      + [追蹤行銷活動](campaign/using/tracking-a-campaign.md)
-      + [使用案例](campaign/using/examples.md)
-   + 回應管理員{#response-manager}
-      + [開始使用回應管理員](campaign/using/about-response-manager.md)
-      + [設定](campaign/using/configuration.md)
-      + [假設範本](campaign/using/hypothesis-templates.md)
-      + [建立假設](campaign/using/creating-hypotheses.md)
-      + [假設追蹤](campaign/using/hypothesis-tracking.md)
++ 行銷資源管理 {#mrm}
+   + [關於行銷資源管理](mrm/using/about-marketing-resource-management.md)
+   + [建立及管理設定檔](mrm/using/creating-and-managing-tasks.md)
+   + [控制成本](mrm/using/controlling-costs.md)
+   + [管理行銷資源](mrm/using/managing-marketing-resources.md)
+   + [論壇](mrm/using/discussion-forums.md)
++ 分散式行銷 {#distributed-marketing}
+   + [關於分散式行銷](campaign/using/about-distributed-marketing.md)
+   + [建立本機行銷活動](campaign/using/creating-a-local-campaign.md)
+   + [建立協作行銷活動](campaign/using/creating-a-collaborative-campaign.md)
+   + [發佈行銷活動套件](campaign/using/publishing-the-campaign-package.md)
+   + [存取行銷活動](campaign/using/accessing-campaigns.md)
+   + [追蹤行銷活動](campaign/using/tracking-a-campaign.md)
+   + [使用案例](campaign/using/examples.md)
++ 回應管理員{#response-manager}
+   + [開始使用回應管理員](campaign/using/about-response-manager.md)
+   + [設定](campaign/using/configuration.md)
+   + [假設範本](campaign/using/hypothesis-templates.md)
+   + [建立假設](campaign/using/creating-hypotheses.md)
+   + [假設追蹤](campaign/using/hypothesis-tracking.md)
 + 設計及共用報吿{#reporting}
    + 開始使用報告功能 {#reporting-in-adobe-campaign}
       + [報告工具](reporting/using/about-adobe-campaign-reporting-tools.md)
@@ -326,7 +326,6 @@ ht-degree: 96%
       + [建立指標](reporting/using/creating-indicators.md)
       + [使用 cubes 來探索資料](reporting/using/using-cubes-to-explore-data.md)
       + [概念和方法](reporting/using/concepts-and-methodology.md)
-      + [使用案例：針對線上調查的回答顯示報吿](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 設計網頁內容{#designing-content}
    + 網站應用程式{#web-applications}
       + [開始使用網路應用程式](web/using/about-web-applications.md)
@@ -357,14 +356,15 @@ ht-degree: 96%
       + [定義網路表單屬性](web/using/defining-web-forms-properties.md)
       + [翻譯網路表單](web/using/translating-a-web-form.md)
       + [使用實例：網路表單](web/using/use-cases--web-forms.md)
-   + 線上意見調查 {#online-surveys}
-      + [開始使用意見調查](web/using/about-surveys.md)
-      + [建立調查的關鍵步驟](web/using/getting-started-with-surveys.md)
-      + [設計調查](web/using/building-a-survey.md)
-      + [管理答案](web/using/managing-answers.md)
-      + [發佈、追蹤及使用收集的資料](web/using/publish--track-and-use-collected-data.md)
-      + [設定調查](web/using/configuring-surveys.md)
-      + [使用實例：建立轉介表單](web/using/use-case--creating-a-refer-a-friend-form.md)
++ 建立線上調查{#online-surveys}
+   + [開始使用意見調查](surveys/using/about-surveys.md)
+   + [建立調查的關鍵步驟](surveys/using/getting-started-with-surveys.md)
+   + [設計調查](surveys/using/building-a-survey.md)
+   + [管理答案](surveys/using/managing-answers.md)
+   + [發佈、追蹤及使用收集的資料](surveys/using/publish--track-and-use-collected-data.md)
+   + [設定調查](surveys/using/configuring-surveys.md)
+   + [使用實例：建立轉介表單](surveys/using/use-case--creating-a-refer-a-friend-form.md)
+   + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 整合 Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
    + 對象分享 {#audience-sharing}
