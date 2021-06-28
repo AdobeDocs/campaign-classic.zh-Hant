@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,15 +17,15 @@ ht-degree: 2%
 
 表單可包含一或多個頁面。 它是透過圖表建置，可讓您排序頁面、測試、指令碼執行、頁面跳轉和記錄步驟。 全域圖表設計模式與Campaign工作流程的模式相同。
 
-## 關於上一頁和下一頁{#about-previous-page-and-next-page}
+## 關於上一頁和下一頁 {#about-previous-page-and-next-page}
 
 對於每個頁面，您可以刪除&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Previous]**&#x200B;按鈕。 若要這麼做，請選取相關頁面，然後選取選項&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disallow returning to the previous page]** 。
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-您可以用連結取代這些按鈕。 請參閱[插入HTML內容](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
+您可以用連結取代這些按鈕。 請參閱[插入HTML內容](static-elements-in-a-web-form.md#inserting-html-content)。
 
-## 插入跳轉{#inserting-a-jump}
+## 插入跳轉 {#inserting-a-jump}
 
 當使用者點按&#x200B;**[!UICONTROL Next]**&#x200B;時，**[!UICONTROL Jump]**&#x200B;物件可供存取其他頁面或其他表單。
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## 範例：根據URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}的參數訪問其他表單
+## 範例：根據URL的參數存取其他表單 {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
 在以下範例中，我們要設定Web表單，在核准後，該表單將顯示URL參數指定的其他表單。 若要這麼做，請套用下列步驟：
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. 在表單屬性中，新增儲存在本機變數(**next**)中的參數(**next**)。 在[將資料儲存在本地變數](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)中會詳細說明本地變數。
+1. 在表單屬性中，新增儲存在本機變數(**next**)中的參數(**next**)。 在[將資料儲存在本地變數](web-forms-answers.md#storing-data-in-a-local-variable)中會詳細說明本地變數。
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
@@ -71,13 +71,13 @@ ht-degree: 2%
 
    當使用者按一下&#x200B;**[!UICONTROL Approve]**&#x200B;按鈕時，會顯示表單&#x200B;**APP22**。
 
-## 插入到表單{#inserting-a-link-to-another-page-of-the-form}中其他頁的連結
+## 插入到表單的其他頁面的連結 {#inserting-a-link-to-another-page-of-the-form}
 
-您可以插入表單中其他頁面的連結。 若要這麼做，請將&#x200B;**[!UICONTROL Link]**&#x200B;類型靜態元素新增至頁面。 有關詳細資訊，請參閱[插入連結](../../web/using/static-elements-in-a-web-form.md#inserting-a-link)。
+您可以插入表單中其他頁面的連結。 若要這麼做，請將&#x200B;**[!UICONTROL Link]**&#x200B;類型靜態元素新增至頁面。 有關詳細資訊，請參閱[插入連結](static-elements-in-a-web-form.md#inserting-a-link)。
 
-## 條件式頁面顯示{#conditional-page-display}
+## 條件式頁面顯示 {#conditional-page-display}
 
-### 根據回應{#display-based-on-responses}顯示
+### 根據回應顯示 {#display-based-on-responses}
 
 **[!UICONTROL Test]**&#x200B;方塊可讓您條件表單中的頁面順序。 它可讓您根據測試結果定義各種分支線。 這可讓您根據使用者提供的答案，顯示不同的頁面。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在[響應儲存欄位](../../web/using/web-forms-answers.md#response-storage-fields)中詳細說明儲存模式。
+>在[響應儲存欄位](web-forms-answers.md#response-storage-fields)中詳細說明儲存模式。
 
 在我們的範例中，我們想使用變數：
 
@@ -105,15 +105,15 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_test_ex3.png)
 
-### 根據參數{#display-based-on-parameters}顯示
+### 根據參數顯示 {#display-based-on-parameters}
 
-您也可以根據Web表單的初始化參數或根據資料庫中儲存的值來個人化頁面排序。 請參閱[表單URL參數](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
+您也可以根據Web表單的初始化參數或根據資料庫中儲存的值來個人化頁面排序。 請參閱[表單URL參數](defining-web-forms-properties.md#form-url-parameters)。
 
-## 添加指令碼{#adding-scripts}
+## 新增指令碼 {#adding-scripts}
 
 **[!UICONTROL Script]**&#x200B;物件可讓您直接輸入JavaScript指令碼，例如修改欄位值、從資料庫擷取資料，或呼叫Adobe Campaign API。
 
-## 個人化結束頁面{#personalizing-the-end-page}
+## 個人化結束頁面 {#personalizing-the-end-page}
 
 必須在圖的結尾處放置結束頁。 當用戶按一下Web表單中的&#x200B;**[!UICONTROL Approve]**&#x200B;按鈕時，將顯示結束頁。
 
