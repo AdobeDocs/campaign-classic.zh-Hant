@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 4%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
    >
    >在伺服器端，指令碼可使用[Campaign JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中定義的函式。
 
-## 插入HTML內容{#inserting-html-content}
+## 插入HTML內容 {#inserting-html-content}
 
 您可以在表單頁面中加入HTML內容：超文本連結、影像、格式化段落、視頻等。
 
@@ -46,9 +46,9 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 >[!NOTE]
 >
->只有在&#x200B;**[!UICONTROL Texts]**&#x200B;子索引標籤中定義了HTML編輯器中輸入的字串，才會進行翻譯。 否則將不會收集。 有關詳細資訊，請參閱[轉譯Web表單](../../web/using/translating-a-web-form.md)。
+>只有在&#x200B;**[!UICONTROL Texts]**&#x200B;子索引標籤中定義了HTML編輯器中輸入的字串，才會進行翻譯。 否則將不會收集。 有關詳細資訊，請參閱[轉譯Web表單](translating-a-web-form.md)。
 
-### 插入連結{#inserting-a-link}
+### 插入連結 {#inserting-a-link}
 
 填寫編輯視窗中的欄位，如下列範例所示：
 
@@ -65,7 +65,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 * 您可以選擇將連結顯示為按鈕或影像。 要執行此操作，請在&#x200B;**[!UICONTROL Type]**&#x200B;欄位中選取顯示類型。
 
-### 連結類型{#types-of-links}
+### 連結類型 {#types-of-links}
 
 依預設，連結會與URL類型動作相關聯，以便在URL欄位中輸入連結目的地址。
 
@@ -85,7 +85,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   如果&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按鈕要由連結替換，則可以隱藏這些按鈕。 請參閱此[page](../../web/using/defining-web-forms-page-sequencing.md)。
+   如果&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按鈕要由連結替換，則可以隱藏這些按鈕。 請參閱此[page](defining-web-forms-page-sequencing.md)。
 
    該連結將替換預設使用的&#x200B;**[!UICONTROL Next]**&#x200B;按鈕。
 
@@ -107,68 +107,15 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
    >[!NOTE]
    >
-   >如需Web表單中頁面排序的詳細資訊，請參閱[定義網頁表單頁面排序](../../web/using/defining-web-forms-page-sequencing.md)。
+   >如需Web表單中頁面排序的詳細資訊，請參閱[定義網頁表單頁面排序](defining-web-forms-page-sequencing.md)。
 
-* 使用從Facebook設定檔擷取的資料預先載入表單欄位
-
-   >[!CAUTION]
-   >
-   >只有在安裝了&#x200B;**[!UICONTROL Social Marketing]**&#x200B;應用程式時，此函式才可用。 若要使用此選項，您需要建立Facebook應用程式，並輸入&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;外部帳戶。 有關詳細資訊，請參見[此頁面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
-
-   **[!UICONTROL Preload with Facebook]**&#x200B;選項可讓您將按鈕插入表單中，以使用Facebook設定檔資訊預先載入欄位。
-
-   ![](assets/web_social_webapp_037.png)
-
-   當使用者按一下&#x200B;**[!UICONTROL Fill in automatically]**&#x200B;按鈕時，會開啟Facebook的權限要求視窗。
-
-   ![](assets/web_social_webapp_029.png)
-
-   >[!NOTE]
-   >
-   >設定外部帳戶時，可以變更延伸權限清單。 如果您未輸入任何延伸權限，Facebook會依預設轉送基本設定檔資訊。\
-   >若要檢視擴充權限清單及其語法，請按一下這裡：[https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
-
-   如果使用者同意共用其資訊，表單的欄位會預先載入。
-
-   ![](assets/web_social_webapp_030.png)
-
-針對此使用案例，我們建立了由下列元素組成的Web應用程式：
-
-* 包含表單的頁面
-* **[!UICONTROL Record]** 活動
-* **[!UICONTROL End]**&#x200B;活動
-
-![](assets/social_webapp_031.png)
-
-要添加預載入按鈕，請應用以下步驟：
-
-1. 建立表單。
-
-   ![](assets/social_webapp_032.png)
-
-1. 移至表單中欄位的相同層級，並新增連結。
-
-   ![](assets/social_webapp_033.png)
-
-1. 輸入標籤並選擇&#x200B;**[!UICONTROL Button]**&#x200B;類型。
-
-   ![](assets/social_webapp_034.png)
-
-1. 轉到&#x200B;**[!UICONTROL Action]**&#x200B;欄位並選擇&#x200B;**[!UICONTROL Preload with Facebook]**。
-
-   ![](assets/social_webapp_035.png)
-
-1. 前往&#x200B;**[!UICONTROL Application]**&#x200B;欄位，並選取&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型先前建立的外部帳戶。 有關詳細資訊，請參見[此頁面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
-
-   ![](assets/social_webapp_036.png)
-
-### 個人化HTML內容{#personalizing-html-content}
+### 個人化HTML內容 {#personalizing-html-content}
 
 您可以使用上一頁記錄的資料，個人化表單頁面的HTML內容。 例如，您可以建立車險Web表單，其第一頁允許您提供聯繫資訊和車牌。
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-使用個人化欄位，將使用者名稱和選取的品牌重新插入至下一頁。 使用的語法取決於資訊儲存模式。 有關詳細資訊，請參閱[使用收集的資訊](../../web/using/web-forms-answers.md#using-collected-information)。
+使用個人化欄位，將使用者名稱和選取的品牌重新插入至下一頁。 使用的語法取決於資訊儲存模式。 有關詳細資訊，請參閱[使用收集的資訊](web-forms-answers.md#using-collected-information)。
 
 >[!NOTE]
 >
@@ -187,11 +134,11 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 ![](assets/s_ncs_admin_survey_tag_ctx_2.png)
 
-### 使用文本變數{#using-text-variables}
+### 使用文字變數 {#using-text-variables}
 
 **[!UICONTROL Text]**&#x200B;索引標籤可讓您建立變數欄位，這些欄位可用於&lt;%=和%>字元之間的HTML中，使用下列語法：**$（識別碼）**。
 
-使用此方法可輕鬆將字串本地化。 請參閱[轉譯網頁表單](../../web/using/translating-a-web-form.md)
+使用此方法可輕鬆將字串本地化。 請參閱[轉譯網頁表單](translating-a-web-form.md)
 
 例如，您可以建立&#x200B;**Contact**&#x200B;欄位，讓您將「上次連絡日期：」字串顯示到HTML內容。 要執行此操作，請遵循下列步驟：
 
@@ -214,9 +161,9 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-此作業模式可讓您僅定義一次網路表單的文字，並使用整合翻譯工具管理翻譯。 有關詳細資訊，請參閱[轉譯Web表單](../../web/using/translating-a-web-form.md)。
+此作業模式可讓您僅定義一次網路表單的文字，並使用整合翻譯工具管理翻譯。 有關詳細資訊，請參閱[轉譯Web表單](translating-a-web-form.md)。
 
-## 插入影像{#inserting-images}
+## 插入影像 {#inserting-images}
 
 若要將影像包含在表單中，必須將其儲存在可從外部存取的伺服器上。
 
