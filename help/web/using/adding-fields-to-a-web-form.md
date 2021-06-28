@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2371'
 ht-degree: 1%
 
 ---
@@ -36,13 +36,13 @@ ht-degree: 1%
 * 下載按鈕。 [上傳檔案](#uploading-a-file)。
 * 隱藏常數。 請參閱[插入隱藏常數](#inserting-a-hidden-constant)。
 
-請指定響應儲存模式：更新資料庫中的欄位（僅儲存最後儲存的值）或儲存在變數中（不儲存答案）。 有關詳細資訊，請參閱[響應儲存欄位](../../web/using/web-forms-answers.md#response-storage-fields)。
+請指定響應儲存模式：更新資料庫中的欄位（僅儲存最後儲存的值）或儲存在變數中（不儲存答案）。 有關詳細資訊，請參閱[響應儲存欄位](web-forms-answers.md#response-storage-fields)。
 
 >[!NOTE]
 >
 >預設情況下，欄位將插入當前樹的底部。 使用工具列中的箭頭將其上移或下移。
 
-## 欄位建立嚮導{#field-creation-wizard}
+## 欄位建立精靈 {#field-creation-wizard}
 
 對於表單的每個頁面，您可以透過工具列中的第一個按鈕新增欄位。 要執行此操作，請轉至&#x200B;**[!UICONTROL Add using the wizard]**&#x200B;菜單。
 
@@ -58,13 +58,13 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_webform_wz_insert_field.png)
 
-## 添加輸入欄位{#adding-input-fields}
+## 新增輸入欄位 {#adding-input-fields}
 
 要添加輸入欄位，請按一下&#x200B;**[!UICONTROL Input control]**&#x200B;按鈕，並選擇要添加的欄位類型。
 
 ![](assets/s_ncs_admin_webform_select_field.png)
 
-### 輸入欄位類型{#types-of-input-fields}
+### 輸入欄位的類型 {#types-of-input-fields}
 
 可將五種不同類型的文本欄位插入表單頁面中：
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 * **數字**:可讓使用者在一行中輸入數字。有關詳細資訊，請參閱[新增數字](#adding-numbers)。
 
-   核准頁面時，會檢查欄位內容，以確保輸入的值與欄位相容。 有關詳細資訊，請參閱[定義控制設定](../../web/using/form-rendering.md#defining-control-settings)。
+   核准頁面時，會檢查欄位內容，以確保輸入的值與欄位相容。 有關詳細資訊，請參閱[定義控制設定](form-rendering.md#defining-control-settings)。
 
 * **密碼**:可讓使用者在單行上輸入文字。文字輸入期間，字元會由句號取代：
 
@@ -90,9 +90,7 @@ ht-degree: 1%
 
    >[!CAUTION]
    >
-   >多行文本欄位是可包含歸位符的特定欄位。 其儲存空間必須與XML元素上映射的欄位相關聯，而不是XML屬性。 有關架構中資料類型的詳細資訊，請參閱[此區段](../../configuration/using/about-schema-reference.md)中的「架構參考」章節。
-   >   
-   >如果您使用&#x200B;**Survey**&#x200B;模組，則可將此類型的欄位儲存在封存的欄位中，而封存的欄位會自動調整為格式。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。
+   >多行文本欄位是可包含歸位符的特定欄位。 其儲存空間必須與XML元素上映射的欄位相關聯，而不是XML屬性。
 
 * **擴充多行文字**:可讓使用者輸入版面的文字，版面會以HTML格式儲存。
 
@@ -106,7 +104,7 @@ ht-degree: 1%
 
    ![](assets/webapp_enrich_text_max.png)
 
-### 配置輸入欄位{#configure-input-fields}
+### 設定輸入欄位 {#configure-input-fields}
 
 所有輸入欄位都是根據相同模式，使用下列選項：
 
@@ -118,11 +116,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在[響應儲存欄位](../../web/using/web-forms-answers.md#response-storage-fields)中詳細說明儲存模式
+>在[響應儲存欄位](web-forms-answers.md#response-storage-fields)中詳細說明儲存模式
 
-**[!UICONTROL Advanced]**&#x200B;索引標籤可讓您定義欄位的顯示參數（標籤位置、對齊方式等）。 請參閱[定義網路表單版面](../../web/using/defining-web-forms-layout.md)。
+**[!UICONTROL Advanced]**&#x200B;索引標籤可讓您定義欄位的顯示參數（標籤位置、對齊方式等）。 請參閱[定義網路表單版面](defining-web-forms-layout.md)。
 
-## 新增下拉式清單{#adding-drop-down-lists}
+## 新增下拉式清單 {#adding-drop-down-lists}
 
 您可以將下拉式清單插入調查頁面。 這可讓使用者從下拉式功能表中的選件上選取值。
 
@@ -154,7 +152,7 @@ ht-degree: 1%
 >
 >每當更新清單時，重複此操作，以重新整理選件上的值。
 
-## 添加複選框{#adding-checkboxes}
+## 添加複選框 {#adding-checkboxes}
 
 若要讓使用者選取選項，您需要使用核取方塊。
 
@@ -174,7 +172,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## 範例：如果勾選方塊{#example--assign-a-value-to-a-field-if-a-box-is-checked}，請將值指派給欄位
+## 範例：如果核取方塊，請將值指派給欄位 {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 我們想要在表單中插入核取方塊以傳送維護請求，如下所示：
 
@@ -188,7 +186,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
-## 添加單選按鈕{#adding-radio-buttons}
+## 添加單選按鈕 {#adding-radio-buttons}
 
 選項按鈕可讓您為使用者提供一系列可供選擇的專屬選項。 同一欄位的值不同。
 
@@ -200,15 +198,15 @@ ht-degree: 1%
 >
 >若要強制選取，您必須建立多個選取清單。
 
-### 添加單個按鈕{#add-single-buttons}
+### 新增單一按鈕 {#add-single-buttons}
 
 要向表單頁添加單選按鈕，請轉至頁面編輯器工具欄中的&#x200B;**[!UICONTROL Selection controls > Radio button]**&#x200B;菜單，然後選擇儲存模式。
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-選項按鈕的配置方式與複選框類似（請參閱[添加複選框](#adding-checkboxes)）。 但是，如果未選取選項，則不會指派任何值。 為了讓數個按鈕保持相依性，即，選取一個按鈕會自動取消選取其他按鈕，這些按鈕必須儲存在相同欄位中。 如果這些變數未儲存在資料庫中，則必須使用相同的本地變數進行臨時儲存。 請參閱[響應儲存欄位](../../web/using/web-forms-answers.md#response-storage-fields)。
+選項按鈕的配置方式與複選框類似（請參閱[添加複選框](#adding-checkboxes)）。 但是，如果未選取選項，則不會指派任何值。 為了讓數個按鈕保持相依性，即，選取一個按鈕會自動取消選取其他按鈕，這些按鈕必須儲存在相同欄位中。 如果這些變數未儲存在資料庫中，則必須使用相同的本地變數進行臨時儲存。 請參閱[響應儲存欄位](web-forms-answers.md#response-storage-fields)。
 
-### 添加按鈕清單{#add-a-list-of-buttons}
+### 新增按鈕清單 {#add-a-list-of-buttons}
 
 要通過清單添加單選按鈕，請轉至頁面編輯器工具欄中的&#x200B;**[!UICONTROL Selection controls>Multiple choice]**&#x200B;菜單。
 
@@ -218,10 +216,10 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->網路表單無法授權選取數個值。 只能為&#x200B;**調查**&#x200B;類型表單啟用多個選擇。 如需詳細資訊，請參閱[本章節](../../web/using/about-surveys.md)。\
->但是，可以將&#x200B;**[!UICONTROL Multiple choice]**&#x200B;類型欄位插入Web應用程式；但若未授權選取數個值：可使用選項按鈕來選擇提供的選項。
+>不能在Web應用程式中啟用多選。
+>但是，可以將&#x200B;**[!UICONTROL Multiple choice]**&#x200B;類型欄位插入Web應用程式，但這將不允許用戶選擇多個值。
 
-## 添加網格{#adding-grids}
+## 添加網格 {#adding-grids}
 
 網格用於設計Web應用程式中的投票頁。 這可讓您提供答卷調查或評估類型Web表單的選項按鈕清單，如下所示：
 
@@ -239,13 +237,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在本例中，網格的標籤被隱藏。 若要這麼做，請前往&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤， **[!UICONTROL Label position]**&#x200B;顯示會定義為&#x200B;**[!UICONTROL Hidden]** 。 請參閱[定義標籤的位置](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels)。
+>在本例中，網格的標籤被隱藏。 若要這麼做，請前往&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤， **[!UICONTROL Label position]**&#x200B;顯示會定義為&#x200B;**[!UICONTROL Hidden]** 。 請參閱[定義標籤的位置](defining-web-forms-layout.md#defining-the-position-of-labels)。
 
-## 新增日期和數字{#adding-dates-and-numbers}
+## 新增日期和數字 {#adding-dates-and-numbers}
 
 表單欄位的內容可以格式化以匹配儲存在資料庫中的資料或滿足特定要求。 您可以建立適合輸入數字和日期的欄位。
 
-### 新增日期{#adding-dates}
+### 新增日期 {#adding-dates}
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
@@ -265,7 +263,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->依預設，表單中使用的日期會透過日曆輸入。 對於多語言表單，請檢查日曆是否可用於所有使用的語言。 請參閱[轉譯網頁表單](../../web/using/translating-a-web-form.md)。
+>依預設，表單中使用的日期會透過日曆輸入。 對於多語言表單，請檢查日曆是否可用於所有使用的語言。 請參閱[轉譯網頁表單](translating-a-web-form.md)。
 
 但在某些情況下（例如輸入出生日期），下拉式清單的使用可能會較為容易。
 
@@ -279,7 +277,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_date_first_last_y.png)
 
-### 添加數字{#adding-numbers}
+### 添加數字 {#adding-numbers}
 
 您可以建立適合輸入數字的欄位。
 
@@ -301,7 +299,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_number_ex.png)
 
-## 訂閱複選框{#subscription-checkboxes}
+## 訂閱複選框 {#subscription-checkboxes}
 
 您可以新增控制項，讓使用者訂閱或取消訂閱一或多項資訊服務（電子報、警告、即時通知等）。 若要訂閱，使用者會檢查對應的服務。
 
@@ -323,9 +321,7 @@ ht-degree: 1%
 >
 >如果使用者已訂閱資訊服務，且在核准表單時未勾選連結至此服務的方塊，則會取消訂閱。
 
-[此區段](../../web/using/about-surveys.md)提供訂閱和反向連結的範例。
-
-## 插入驗證碼{#inserting-a-captcha}
+## 插入驗證碼 {#inserting-a-captcha}
 
 **captcha**&#x200B;測試的目的是防止欺詐性使用您的網路表單。
 
@@ -361,7 +357,7 @@ ht-degree: 1%
 >
 >Captchas長度一律為8個字元。 您無法修改此值。
 
-## 上傳檔案{#uploading-a-file}
+## 上傳檔案 {#uploading-a-file}
 
 您可以新增上傳欄位至頁面。 例如，此功能對於Intranet檔案共用非常有用。
 
@@ -384,7 +380,7 @@ ht-degree: 1%
 
 
 
-## 插入隱藏常數{#inserting-a-hidden-constant}
+## 插入隱藏常數 {#inserting-a-hidden-constant}
 
 當使用者驗證表單的其中一頁時，您可以將特定值設為其設定檔的欄位或變數。
 
