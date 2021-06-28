@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 建立登錄頁面{#creating-a-landing-page}
 
-## 關於建立{#about-landing-pages-creation}登錄頁面
+## 關於建立登錄頁面 {#about-landing-pages-creation}
 
 此使用案例顯示如何使用數位編輯器從Adobe Campaign主控台建立登錄頁面。
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 此使用案例的主要目的，是使用DCE中的函式，讓「著陸頁面」表單欄位與Adobe Campaign中的內部欄位對應。
 
-## 建立登錄頁面{#creating-the-landing-page}
+## 建立登錄頁面 {#creating-the-landing-page}
 
 若要建立新的著陸頁面類型Web應用程式，請使用下列步驟：
 
@@ -47,9 +47,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有關建立Web應用程式的詳細資訊，請參閱[此部分](../../web/using/creating-a-new-web-application.md)。
+>有關建立Web應用程式的詳細資訊，請參閱[此部分](creating-a-new-web-application.md)。
 
-## 步驟1 — 選擇和載入模板{#step-1---selecting-and-loading-templates}
+## 步驟1 — 選取和載入範本 {#step-1---selecting-and-loading-templates}
 
 在本節中，我們將探討如何為Web應用程式的每個頁面&#x200B;**匯入HTML內容**。
 
@@ -90,13 +90,13 @@ ht-degree: 3%
 >
 >**DCE會為載入的HTML頁面執行JavaScript程式碼。** HTML範本中可能出現在Adobe Campaign介面中的JavaScript錯誤。這些錯誤與編輯器無關。 若要檢查匯入的檔案中是否沒有錯誤，建議您先在瀏覽器(Internet Explorer/Firefox/Chrome)中測試這些檔案，再將檔案匯入DCE。
 
-## 步驟2 — 配置內容{#step-2---configuring-the-content}
+## 步驟2 — 設定內容 {#step-2---configuring-the-content}
 
 在本節中，我們將調整匯入的內容，並將資料庫的欄位連結至網頁的形式。 先前建立的Web應用程式為：
 
 ![](assets/dce_uc1_lp_enchainement.png)
 
-### 修改內容{#modifying-content}
+### 修改內容 {#modifying-content}
 
 讓我們從更改頁面的顏色開始。 操作步驟：
 
@@ -112,7 +112,7 @@ ht-degree: 3%
 
    ![](assets/dce_uc1_finalcolor.png)
 
-### 連結表單欄位{#linking-form-fields}
+### 連結表單欄位 {#linking-form-fields}
 
 我們將將頁面中的欄位連結至資料庫中的欄位，以儲存提供的資訊。
 
@@ -128,7 +128,7 @@ ht-degree: 3%
 
 ![](assets/dce_uc1_fieldmandatory.png)
 
-### 建立指向下一頁的連結{#creating-a-link-to-the-next-page}
+### 建立下一頁的連結 {#creating-a-link-to-the-next-page}
 
 此步驟為必要步驟，因為它將允許Web應用程式確定後續步驟的順序：將收集的資料儲存在資料庫中，然後顯示下一頁（**感謝**&#x200B;頁面）。
 
@@ -153,7 +153,7 @@ ht-degree: 3%
 
 ![](assets/dce_uc1_edit_champperso.png)
 
-## 步驟3 — 發佈內容{#step-3---publishing-content}
+## 步驟3 — 發佈內容 {#step-3---publishing-content}
 
 內容從Web應用程式控制面板發佈。 按一下&#x200B;**[!UICONTROL Publish]**&#x200B;按鈕以執行它。
 
