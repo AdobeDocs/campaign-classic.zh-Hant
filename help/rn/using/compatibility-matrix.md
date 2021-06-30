@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -189,7 +189,7 @@ ht-degree: 95%
 <table>
 <tbody>
 <tr>
-<td>韋爾蒂卡</td>
+<td>Vertica</td>
 <td> </td>
 </tr>
 <tr>
