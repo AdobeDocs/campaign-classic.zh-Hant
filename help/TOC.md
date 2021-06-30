@@ -10,7 +10,7 @@ type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 96%
          + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
          + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics 連接器](platform/using/adobe-analytics-connector.md)
       + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [說明與支援選項](support.md)
 + 建立及傳送訊息 {#sending-messages}
@@ -570,23 +570,23 @@ ht-degree: 96%
       + [簡報規則](interaction/using/presentation-rules.md)
       + [傳入頻道上的優惠](interaction/using/offers-on-an-inbound-channel.md)
       + [傳出頻道上的優惠](interaction/using/offers-on-an-outbound-channel.md)
-+ 交易式傳訊 {#transactional-messaging}
++ 異動訊息傳送 {#transactional-messaging}
    + [開始使用異動訊息](message-center/using/about-transactional-messaging.md)
-   + 配置交易式消息{#configure-transactional-messaging}
-      + [異動傳訊架構](message-center/using/transactional-messaging-architecture.md)
-      + [設定例項](message-center/using/configuring-instances.md)
-      + [其他配置](message-center/using/additional-configurations.md)
+   + 設定異動訊息{#configure-transactional-messaging}
+      + [異動訊息傳送架構](message-center/using/transactional-messaging-architecture.md)
+      + [設定執行個體](message-center/using/configuring-instances.md)
+      + [其他設定](message-center/using/additional-configurations.md)
    + 訊息範本 {#message-templates}
       + [建立事件類型](message-center/using/creating-event-types.md)
       + [設計訊息範本](message-center/using/creating-the-message-template.md)
       + [測試訊息範本](message-center/using/testing-message-templates.md)
       + [發佈訊息範本](message-center/using/publishing-message-templates.md)
-   + 交易式事件處理{#processing}
+   + 異動事件處理{#processing}
       + [事件說明](message-center/using/event-description.md)
       + [事件處理](message-center/using/about-event-processing.md)
       + [傳遞執行](message-center/using/delivery-execution.md)
    + 報告 {#reports}
-      + [存取交易式訊息報表](message-center/using/about-transactional-messaging-reports.md)
+      + [關於異動訊息傳送報告](message-center/using/about-transactional-messaging-reports.md)
       + [訊息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
       + [訊息中心服務層級](message-center/using/message-center-service-level.md)
       + [訊息中心處理時間](message-center/using/message-center-processing-time.md)
@@ -675,9 +675,9 @@ ht-degree: 96%
          + [最佳實務和限制](installation/using/fda-best-practices.md)
          + 設定指南 {#config-databases}
             + [設定步驟](installation/using/configure-fda.md)
-            + [配置Vertica](installation/using/configure-fda-vertica.md)
+            + [設定 Vertica](installation/using/configure-fda-vertica.md)
             + [設定 Snowflake](installation/using/configure-fda-snowflake.md)
-            + [設定Google BigQuery](installation/using/configure-fda-google-big-query.md)
+            + [設定 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [設定 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [設定 Hadoop](installation/using/configure-fda-hadoop.md)
             + [設定 Oracle](installation/using/configure-fda-oracle.md)
