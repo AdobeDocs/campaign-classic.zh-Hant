@@ -7,7 +7,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
 ht-degree: 100%
 
@@ -100,4 +100,4 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 
 * [[!DNL Gold Standard]發行說明](gold-standard.md)
 * [建置升級常見問答集](../../platform/using/faq-build-upgrade.md)
-* [[!DNL Gold Standard] 相容性對照表](compatibility-matrix-gs.md)
+* [[!DNL Gold Standard] 相容性矩陣](compatibility-matrix-gs.md)
