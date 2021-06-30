@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '4466'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -19,21 +19,21 @@ ht-degree: 97%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2021年6月 {#june-2021}
+## 2021 年 6月 {#june-2021}
 
-**異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型架構](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚了解此程式。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
+**異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型綱要](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚瞭解此流程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
 **21.1.3 版本隨附的其他文件更新**
 
-與AdobeJourney Orchestration整合 — [深入了解](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html)。 [此頁面](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)中提供逐步使用案例
+與 Adobe Journey Orchestration 整合 — [深入瞭解](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=zh-Hant)。 [此頁面](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=zh-Hant)中提供逐步使用案例
 
-LINE通道增強功能 — [更多詳情](../../delivery/using/line-channel.md)
+LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
-全新Vertica FDA連接器 — [深入了解](../../installation/using/configure-fda-vertica.md)
+全新 Vertica FDA 連接器 — [深入瞭解](../../installation/using/configure-fda-vertica.md)
 
-全新Google Big Query FDA連接器 — [深入了解](../../installation/using/configure-fda-google-big-query.md)
+全新 Google Big Query FDA 連接器 — [深入瞭解](../../installation/using/configure-fda-google-big-query.md)
 
-「計費（計費）」技術工作流描述現在包括最初由「活動計費配置檔案數(billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
+「帳單 (帳單)」技術工作流程描述現在包括最初由「活動帳單設定檔案數 (billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 5 月 {#may-2021}
 
@@ -468,7 +468,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 針對 Campaign Classic 追蹤功能，新增了新的疑難排解頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/classic-tracking-troubleshooting.html)。
 
-新增了 Adobe Analytics Connector 最佳實務頁面。[深入了解 Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
+新增了 Adobe Analytics 連接器最佳實務頁面。[深入瞭解 Adobe Analytics 連接器](../../platform/using/adobe-analytics-connector.md)
 
 移動並更新「傳遞最佳實務快速入門手冊」。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
@@ -546,7 +546,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 新增了有關 Campaign Classic 可以使用的不同外部帳戶，以及如何設定這些帳戶的相關資訊。
 [顯示全文](../../installation/using/external-accounts.md)
 
-更新「Analytics Connector 」章節，以反映介面變更。
+更新「Analytics 連接器 」章節，以反映介面變更。
 [顯示全文](../../platform/using/adobe-analytics-connector.md)
 
 新增了關於帳單報表的資訊。
