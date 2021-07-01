@@ -6,9 +6,9 @@ feature: 概覽
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '4466'
+source-wordcount: '4456'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 ## 2019 年 10 月 {#october-2019}
 
- Campaign 的錯誤訊息清單已更新。[顯示全文](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+ Campaign 的錯誤訊息清單已更新。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 改善並加強 GDPR 快速入門手冊。該手冊現在是包含 GDPR 及 CCPA 的隱私權管理文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy.html)
 
@@ -516,7 +516,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
 
-更新錯誤消息清單。[顯示全文](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](../../message-center/using/event-description.md)
 
