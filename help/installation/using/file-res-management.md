@@ -6,16 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
 # 檔案和資源管理{#file-and-resmanagement}
 
-## 限制上載檔案格式{#limiting-uploadable-files}
+## 限制上傳檔案格式 {#limiting-uploadable-files}
 
 使用&#x200B;**uploadWhiteList**&#x200B;屬性來限制可在Adobe Campaign伺服器上上載的檔案類型。
 
@@ -31,9 +31,9 @@ ht-degree: 1%
 >
 >在Internet Explorer中，完整的檔案路徑必須由規則運算式驗證。
 
-您也可以設定Web伺服器，以防止上傳重要檔案。 [瞭解更多](web-server-configuration.md)
+您也可以設定Web伺服器，以防止上傳重要檔案。 [深入瞭解](web-server-configuration.md)
 
-## 代理連接配置{#proxy-connection-configuration}
+## 代理連接配置 {#proxy-connection-configuration}
 
 例如，您可以使用&#x200B;**檔案傳輸**&#x200B;工作流程活動，將Campaign伺服器透過代理連線至外部系統。 為此，您需要通過特定命令配置&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**proxyConfig**&#x200B;部分。 **serverConf.xml**&#x200B;中可用的所有參數都列在此[節](../../installation/using/the-server-configuration-file.md)中。
 
@@ -103,9 +103,22 @@ FTP/FTPS連線會定義於proxyFTP參數中：
 
 如果要暫時禁用代理連接，請將enabled參數設定為&quot;false&quot;或&quot;0&quot;。
 
-## 管理公共資源{#managing-public-resources}
+如果您需要透過代理使用iOS HTTP/2連接器，則支援下列HTTP代理模式：
 
-若要公開使用，連結至促銷活動的電子郵件和公共資源中使用的影像必須存在於可外部存取的伺服器上。 然後，外部收件者或運算子就能使用這些ID。 [瞭解更多](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+* 不驗證的HTTP
+* HTTP基本驗證
+
+要激活代理模式，必須在`serverconf.xml`檔案中進行以下更改：
+
+```
+<nmac useHTTPProxy="true">
+```
+
+有關此iOS HTTP/2連接器的詳細資訊，請參閱此[page](../../delivery/using/about-mobile-app-channel.md)。
+
+## 管理公用資源 {#managing-public-resources}
+
+若要公開使用，連結至促銷活動的電子郵件和公共資源中使用的影像必須存在於可外部存取的伺服器上。 然後，外部收件者或運算子就能使用這些ID。 [深入瞭解](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
 公用資源儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
 
