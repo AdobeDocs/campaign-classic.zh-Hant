@@ -6,14 +6,18 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 46c8807a433d87a091a06fe60cf684919fddb5c6
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 7%
+source-wordcount: '240'
+ht-degree: 6%
 
 ---
 
 # 插入共用資產{#inserting-a-shared-asset}
+
+>[!CAUTION]
+>
+> Experience Cloud資產現在已終止服務。 若為新實作，您無法再將Experience Cloud資產與Adobe Campaign Classic整合。
 
 從Adobe Experience Cloud共用的資產可在電子郵件和登錄頁面中使用，如下所示：
 
