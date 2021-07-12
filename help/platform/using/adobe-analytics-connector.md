@@ -4,10 +4,10 @@ product: campaign
 title: Adobe Analytics 連接器
 description: 深入瞭解 Adobe Analytics 連接器
 feature: 概覽
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: c612b47463427751eff27d6092e371c918c87d93
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1551'
 ht-degree: 99%
