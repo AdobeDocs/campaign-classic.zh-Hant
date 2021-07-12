@@ -3,13 +3,13 @@ product: campaign
 title: Campaign Classic 相容性矩陣
 description: Campaign Classic 相容性矩陣
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -284,7 +284,7 @@ ht-degree: 96%
 
 ## 用戶端主控台 {#ClientConsoleoperatingsystems}
 
-:warning: 使用Campaign用戶端主控台需要下列作業系統和瀏覽器。
+:warning: 使用「Campaign 用戶端主控台」時，需要下列作業系統和瀏覽器。
 
 ### 作業系統
 
