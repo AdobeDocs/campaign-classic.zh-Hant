@@ -3,10 +3,10 @@ product: campaign
 title: Campaign Classic 已棄用和移除的功能
 description: 本頁列出 Adobe Campaign Classic 已過時和已移除的功能
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: c612b47463427751eff27d6092e371c918c87d93
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1634'
 ht-degree: 99%
@@ -178,7 +178,7 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 自 19.1 春季發行版本開始，Adobe Campaign 不再與下列工具相容。
 
 * Java JDK 7。[瞭解更多](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x，但內嵌於其他工具則除外。[瞭解更多](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x，但內嵌於其他工具則除外。[深入瞭解](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### 資料庫引擎 {#dbe-eol}
 
