@@ -3,10 +3,10 @@ product: campaign
 title: 關於設定檔
 description: 關於設定檔
 feature: 設定檔, 閱聽眾
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 60%
@@ -49,7 +49,7 @@ ht-degree: 60%
 
 ## 用戶檔案和目標 {#profiles-and-targets}
 
-**[!UICONTROL Profiles and targets]**&#x200B;連結可讓您顯示儲存在Adobe Campaign資料庫中的收件者。 您可以新建收件者、編輯現有的收件者以及存取其用戶檔案。有關詳細資訊，請參見[此頁面](../../platform/using/editing-a-profile.md)。
+**[!UICONTROL Profiles and targets]**&#x200B;連結可讓您顯示儲存在Adobe Campaign資料庫中的收件者。 您可以新建收件者、編輯現有的收件者以及存取其用戶檔案。如需詳細資訊，請參閱[此頁面](../../platform/using/editing-a-profile.md)。
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -67,7 +67,7 @@ ht-degree: 60%
 
 預設情況下，收件者儲存在樹的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;節點中。 由此畫面，您可以建立收件者以及以下各項：
 
-* 排序和篩選資料庫的設定檔 — [了解詳情](../../platform/using/filtering-options.md)
+* 排序並篩選資料庫的設定檔 — [了解詳情](../../platform/using/filtering-options.md)
 * 從資料庫移動、複製或刪除設定檔 — [了解更多](../../platform/using/managing-profiles.md)、
 * 更新設定檔 — [了解更多](../../platform/using/updating-data.md)
 * 匯出收件者 — [深入了解](../../platform/using/exporting-and-importing-profiles.md)
@@ -105,9 +105,9 @@ Adobe Campaign檔案總管的一般配置顯示在[此頁面](../../platform/usi
 >
 >您也可以直接從Campaign控制面板監控執行個體上作用中設定檔的數量。 有關詳細資訊，請參閱[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 
-## 教學課程影片{#create-profiles-video}
+## 教學課程影片 {#create-profiles-video}
 
-了解如何存取設定檔資料、排序和篩選設定檔，以及手動建立和管理設定檔。
+瞭解如何存取設定檔資料、排序和篩選設定檔，以及手動建立和管理設定檔。
 
 此影片也說明Adobe Campaign Classic是否符合一般資料保護規範。
 
