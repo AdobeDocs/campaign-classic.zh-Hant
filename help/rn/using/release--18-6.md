@@ -6,10 +6,10 @@ audience: rn
 content-type: reference
 topic-tags: latest-release-notes
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 7%
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # 第 18.6 發行版本{#release-18-6}
 
-## 發行版本 18.6.2 - 建置 8949{#release-18-6-3-build-8949}
+## 版本18.6.2 - Build 8949{#release-18-6-3-build-8949}
 
 2018年8月22日
 
@@ -74,7 +74,7 @@ ht-degree: 7%
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## 發行版本 18.6 - 建置 8947{#release-18-6-build-8947}
+## 版本18.6 - Build 8947{#release-18-6-build-8947}
 
 2018年6月25日
 
