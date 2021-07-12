@@ -3,10 +3,10 @@ product: campaign
 title: Campaign 20.3發行說明
 description: Campaign 20.3發行說明
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 98%
@@ -15,14 +15,14 @@ ht-degree: 98%
 
 # 第 20.3 發行版本{#release-20-3}
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.3 - 建置 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.3 - 版本編號 9234 {#release-20-3-3-build-9234}
 
 _2021年1月11日_
 
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正了與 broadlog 產生程序相關的迴歸問題，而此問題可能導致 MTA 程序當機。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.1 - 建置 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.1 - 版本編號 9228 {#release-20-3-1-build-9228}
 
 _2020 年 10 月 27 日_
 
