@@ -3,10 +3,10 @@ product: campaign
 title: 第 20.1 發行版本
 description: 第 20.1 發行版本
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1560'
 ht-degree: 20%
@@ -15,7 +15,7 @@ ht-degree: 20%
 
 # 第 20.1 發行版本{#release-20-1}
 
-## ![](assets/do-not-localize/limited_2.png) 發行版本 20.1.4 - 建置 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png) 發行版本 20.1.4 - 版本編號 9126 {#release-20-1-4-build-9126}
 
 _2021年 4 月 15 日_
 
@@ -44,25 +44,25 @@ _2020 年 12 月 23 日_
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。[深入瞭解](../../technotes/ims-updates.md)
    >
    > 
-* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+* 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.3 - 建置 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.3 - 版本編號 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.2 - 建置 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.2 - 版本編號 9123{#release-20-1-2-build-9123}
 
 _2020 年 3 月 13 日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.1 - 建置 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.1 - 版本編號 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
