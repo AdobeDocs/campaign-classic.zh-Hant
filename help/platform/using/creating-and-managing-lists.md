@@ -3,10 +3,10 @@ product: campaign
 title: 建立和管理清單
 description: 了解如何建立和管理清單
 feature: 設定檔
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 65%
@@ -15,7 +15,7 @@ ht-degree: 65%
 
 # 建立及管理清單{#creating-and-managing-lists}
 
-## 什麼是清單？{#about-lists-in-adobe-campaign}
+## 什麼是清單？ {#about-lists-in-adobe-campaign}
 
 清單 (list) 是一組靜態的用戶檔案，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。例如，透過查詢而從資料庫中摘取出的母體可形成一個清單。
 
@@ -35,7 +35,7 @@ Adobe Campaign 提供兩種類型的清單：
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-list-video)
 
-## 從組{#creating-a-profile-list-from-a-group}建立配置檔案清單
+## 從群組建立設定檔清單 {#creating-a-profile-list-from-a-group}
 
 **[!UICONTROL Group]** 透過連結建立的 **[!UICONTROL Profiles and targets]** 類型清單必須以預設的Adobe Campaign設定檔表格(nms:recipient)為基礎。
 
@@ -69,7 +69,7 @@ Adobe Campaign 提供兩種類型的清單：
 
 如同其他清單，您也可以調整用戶檔案清單的設定。請參閱[本節](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
-## 將資料連結到清單{#linking-data-to-a-list}
+## 將資料連結至清單 {#linking-data-to-a-list}
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Adobe Campaign 提供兩種類型的清單：
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
-## 從清單{#removing-a-profile-from-a-list}中刪除配置檔案
+## 從清單中移除設定檔 {#removing-a-profile-from-a-list}
 
 若要從清單中移除用戶檔案，您可以：
 
@@ -116,7 +116,7 @@ Adobe Campaign 提供兩種類型的清單：
 
    ![](assets/recipient_remove_a_list.png)
 
-## 刪除配置檔案清單{#deleting-a-list-of-profiles}
+## 刪除設定檔清單 {#deleting-a-list-of-profiles}
 
 您可以刪除 Adobe Campaign 樹狀結構清單的群組清單中的一或多個清單。若要執行此操作，請透過 Adobe Campaign 首頁中的 **[!UICONTROL Advanced > Explorer]** 連結編輯樹狀結構清單。選取相關的群組，然後按一下滑鼠右鍵。選取 **[!UICONTROL Delete]**。此時將顯示警告訊息，要求您確認是否刪除。
 
@@ -124,7 +124,7 @@ Adobe Campaign 提供兩種類型的清單：
 >
 >刪除清單時，清單上的用戶檔案不受影響，但是將更新用戶檔案中的資料。
 
-## 教學課程影片{#create-list-video}
+## 教學課程影片 {#create-list-video}
 
 ### 如何建立收件者清單
 
@@ -134,7 +134,7 @@ Adobe Campaign 提供兩種類型的清單：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### 如何使用工作流程建立收件者清單{#create-list-in-a-wf-video}
+### 如何使用工作流程建立收件者清單 {#create-list-in-a-wf-video}
 
 了解如何建立工作流程以鎖定收件者，以及如何在使用電子郵件定位中的清單之前讓工作流程重複執行。
 
