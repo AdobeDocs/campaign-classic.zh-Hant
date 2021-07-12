@@ -3,19 +3,19 @@ product: campaign
 title: Campaign 18.10發行說明
 description: Campaign 18.10發行說明
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2370'
 ht-degree: 7%
 
 ---
 
 # 第 18.10 發行版本{#release-18-10}
 
-## 發行版本 18.10.6 - 建置 8985{#release-18-10-6-build-8985}
+## 版本18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 * 改善使用內部帳戶時執行安全區域套件的權限。
 * 修正了可能導致母體記錄檔發生錯誤的問題。 (NEO-8978)
 
-## 發行版本 18.10.5 - 建置 8984{#release-18-10-5-build-8984}
+## 版本18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 * 移除「工作流程熱度圖」中的10,000筆記錄限制，以修正遺失的資料問題。 (NEO-12329)
 * 修正在擴充工作流程活動中使用「從主要集保留所有其他資料」選項的問題。 (NEO-13291)
 
-## 發行版本 18.10.4 - 建置 8983{#release-18-10-4-build-8983}
+## 版本18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
@@ -50,7 +50,7 @@ ht-degree: 7%
 * 在Analytics整合中，現在允許擷取包含%字元的AAM區段資料。 (NEO-12025)
 * 修正了使用HTTP2傳送推播通知時，發生Tomcat當機問題。 (NEO-12701)
 
-## 發行版本 18.10.3 - 建置 8981{#release-18-10-3-build-8981}
+## 版本18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
@@ -74,7 +74,7 @@ ht-degree: 7%
 * 修正在行動應用程式上傳送推播通知時的字元逸出問題。
 * 修正無法在中間來源外部帳戶中從FDA切換至SOAP同步方法的問題。
 
-## 發行版本 18.10.2 - 建置 8978{#release-18-10-2-build-8978}
+## 版本18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
@@ -96,7 +96,7 @@ ht-degree: 7%
 * 修正了在「工作流程熱度圖」中計算工作流程持續時間的問題。
 
 
-## 發行版本 18.10 - 建置 8977{#release-18-10-build-8977}
+## 版本18.10 - Build 8977{#release-18-10-build-8977}
 
 2018年11月5日
 
@@ -121,7 +121,7 @@ ht-degree: 7%
      <li> <p>在iOS中追蹤靜默通知 </p> </li> 
      <li> <p>在iOS中對註冊呼叫實作意見反應</p> </li> 
      <li> <p>改善iOS傳送準備速度</p> </li> 
-    </ul> <p>現在起，受到Google停用GCM的影響，Android V2連接器僅能連接FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">相關的文件</a>，以瞭解詳情。FCM的手動升級詳見本<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>。 </p> </td> 
+    </ul> <p>現在起，受到Google停用GCM的影響，Android V2連接器僅能連接FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細檔案</a>。 FCM的手動升級詳見本<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
@@ -138,7 +138,7 @@ ht-degree: 7%
 
 * 修正了可能導致伺服器端請求偽造(SSRF)攻擊和拒絕服務(DoS)攻擊漏洞的安全問題。 (NEO-11453)
 * 內容（追蹤重新導向、鏡像頁面、調查等） 現在由Campaign搭配X-Robots-Tag提供：無快取標題。 這防止了Internet搜索引擎對此內容進行索引。 (NEO-11101)
-* 修正訂閱API（nms:subscription:Unsubscribe和nms:subscription:Subscribe）中的XTK插入問題。
+* 修正了訂閱API（nms:subscription:取消訂閱和nms:subscription:訂閱）中的XTK插入問題。
 * 修正取消訂閱Web應用程式中的XTK插入問題。
 * 移除某些SMS記錄檔中無法安全顯示的密碼。
 
