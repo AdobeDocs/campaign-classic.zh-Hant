@@ -3,10 +3,10 @@ product: campaign
 title: 關於 Campaign 中的查詢
 description: 關於 Campaign 中的查詢
 feature: 查詢編輯器
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 83%
