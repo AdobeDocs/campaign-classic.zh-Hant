@@ -3,11 +3,11 @@ product: campaign
 title: 最新版本
 description: 最新的 Campaign Classic 發行說明
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
-workflow-type: ht
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+workflow-type: tm+mt
 source-wordcount: '1953'
 ht-degree: 100%
 
@@ -158,14 +158,14 @@ _2021 年 6 月 5 日_
 * 修正由於傳送個人化失敗的特定加入機制，您無法傳送包含一組校樣的傳送的問題。 (NEO-14391)
 * 修正了當查詢和擴充活動以傳送表格為目標時，無法連同警報活動傳送警報的問題。 (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.2 - 建置 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.2 - 版本編號 9282 {#release-21-1-2-build-9282}
 
 _2021年 4 月 15 日_
 
 * 密碼管理已經過改善，而可最佳化安全性。
 * 修正可能導致 MTA 當機的問題。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.1 - 版本 9277 {#release-21-1-1-build-9277}
+## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.1 - 版本編號 9277 {#release-21-1-1-build-9277}
 
 _2021 年 2 月 22 日_
 
