@@ -3,21 +3,21 @@ product: campaign
 title: 建立和管理運算子群組
 description: 了解如何授予運算子群組的存取權
 feature: 存取管理
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
-# 建立和管理運算子組{#operator-groups}
+# 建立和管理運算子群組 {#operator-groups}
 
 運算子組通過樹中的&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**&#x200B;節點建立。
 
-## 建立新的運算子組{#creating-a-new-operator-group}
+## 建立新運算子組 {#creating-a-new-operator-group}
 
 要建立新的運算子組，請應用以下步驟：
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕，將群組新增至清單。
 
-## 預設組{#default-groups}
+## 預設群組 {#default-groups}
 
 預設運算子組為：
 
