@@ -3,17 +3,17 @@ product: campaign
 title: 關於一般匯入和匯出
 description: 進一步了解一般匯入和匯出。
 feature: 概覽
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 5%
 
 ---
 
-# 開始使用匯入和匯出工作{#about-generic-imports-exports}
+# 開始使用匯入和匯出工作 {#about-generic-imports-exports}
 
 Adobe Campaign Classic提供一般匯入和匯出。 例如，它們允許您提取客戶或潛在客戶的清單，這些客戶或潛在客戶隨後將成為目標人口的一部分，或向您的資料庫提供來自外部檔案的資料。
 
