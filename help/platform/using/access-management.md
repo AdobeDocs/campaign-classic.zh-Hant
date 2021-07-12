@@ -3,13 +3,13 @@ product: campaign
 title: 開始使用權限
 description: 了解如何授與Campaign功能的存取權
 feature: 存取管理
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Campaign可讓您定義及管理指派給各種運算子的權限。 這�
 * [訪問權限矩陣](access-management-named-rights.md#access-rights-matrix)
 
 
-另請參閱：
+另請參閱:
 
 * [管理工作流程的權限](../../workflow/using/managing-rights.md)
 * [管理分散式行銷的權限](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
