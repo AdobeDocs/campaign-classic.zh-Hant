@@ -3,10 +3,10 @@ product: campaign
 title: 使用已命名的權限來設定權限
 description: 了解如何使用已命名的權限來設定權限
 feature: 存取管理
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 7%
@@ -65,7 +65,7 @@ ht-degree: 7%
 >
 >此清單會因平台上安裝的附加元件而異。
 
-## 訪問權限矩陣{#access-rights-matrix}
+## 訪問權限矩陣 {#access-rights-matrix}
 
 預設組和命名權限允許操作員訪問導航層次結構中的某些資料夾，並授予讀取、寫入和刪除權限。
 
