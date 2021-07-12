@@ -3,10 +3,10 @@ product: campaign
 title: 管理對Campaign資料夾的存取
 description: 了解如何授與Campaign資料夾的存取權並建立檢視
 feature: 應用程式設定
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 瀏覽器導航樹的每個資料夾都具有附加的讀取、寫入和刪除訪問權限。 若要存取檔案，運算子或運算子群組必須至少具有檔案的讀取存取權。
 
-## 資料夾和視圖{#folders-and-views}
+## 資料夾和檢視 {#folders-and-views}
 
-### 什麼是資料夾{#about-folders}
+### 什麼是資料夾 {#about-folders}
 
 資料夾是Adobe Campaign樹中的節點。 通過&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜單按一下右鍵樹可建立這些節點。 依預設，第一個功能表可讓您新增與目前內容對應的資料夾。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 您可以自訂Explorer導覽樹。 在本小節](adobe-campaign-workspace.md)中了解配置步驟和最佳實踐[。
 
-### 什麼是檢視{#about-views}
+### 什麼是檢視 {#about-views}
 
 此外，您可以建立檢視，以限制對資料的存取，並組織樹狀結構的內容以符合您的需求。 然後，您可以指派檢視的權限。
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_view_name_color.png)
 
-### 添加資料夾並建立視圖{#adding-folders-and-creating-views}
+### 添加資料夾和建立視圖 {#adding-folders-and-creating-views}
 
 在以下範例中，我們將建立新資料夾以顯示特定資料：
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 ## 資料夾的權限
 
-### 編輯資料夾{#edit-permissions-on-a-folder}的權限
+### 編輯資料夾的權限 {#edit-permissions-on-a-folder}
 
 要編輯樹的特定資料夾的權限，請執行以下步驟：
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### 修改權限{#modify-permissions}
+### 修改權限 {#modify-permissions}
 
 若要修改權限，您可以：
 
@@ -104,7 +104,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### 傳播權限{#propagate-permissions}
+### 傳播權限 {#propagate-permissions}
 
 您可以傳播授權和訪問權限。 要執行此操作，請在資料夾屬性中選取&#x200B;**[!UICONTROL Propagate]**&#x200B;選項。
 
@@ -114,7 +114,7 @@ ht-degree: 1%
 >
 >清除資料夾的此選項不會自動清除子資料夾的選項。 您必須為每個子資料夾明確清除它。
 
-### 授予所有運算子的訪問權限{#grant-access-to-all-operators}
+### 授予所有運算子的存取權 {#grant-access-to-all-operators}
 
 在&#x200B;**[!UICONTROL Security]**&#x200B;標籤中，如果選取&#x200B;**[!UICONTROL System folder]**&#x200B;選項，則所有運算子都將有權存取此資料，無論其權限為何。 如果清除了此選項，則必須將運算子（或其組）顯式添加到授權清單中，以便它們具有訪問權限。
 
