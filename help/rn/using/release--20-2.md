@@ -3,10 +3,10 @@ product: campaign
 title: 第 20.2 發行版本
 description: 第 20.2 發行版本
 feature: 概覽
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '2968'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 # 第 20.2 發行版本{#release-20-2}
 
-## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.5 - 建置 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/green_2.png) 發行版本 20.2.5 - 版本編號 9188 {#release-20-2-5-build-9188}
 
 _2021年 4 月 15 日_
 
@@ -44,7 +44,7 @@ _2021年 3 月 31 日_
 * 修正使用自訂目標對應時，帳單工作流程可能失敗的問題。 自訂架構的主索引鍵儲存在「sourceId」欄中，該欄僅允許整數值。 它現在允許整數和字串值。 （NEO-25914、NEO-28146）
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - 建置 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - 版本編號 9187 {#release-20-2-4-build-9187}
 
 _2021年 4 月 15 日_
 
@@ -62,7 +62,7 @@ _2020 年 12 月 22 日_
 >[!CAUTION]
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。[深入瞭解](../../technotes/ims-updates.md)
-> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
 
 
@@ -83,7 +83,7 @@ _2020 年 12 月 22 日_
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.3 - 建置 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.3 - 版本編號 9182 {#release-20-2-3-build-9182}
 
 _2020 年 9 月 11 日_
 
@@ -96,7 +96,7 @@ _2020 年 9 月 11 日_
 * 修正了升級後期間的迴歸，而導致 nlserver（錯誤記錄）錯誤啟動。
 * 已改善共用記憶體的更新管理。20.2 中所需的其他步驟已不再需要。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.2 - 建置 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.2 - 版本編號 9180 {#release-20-2-2-build-9180}
 
 _2020 年 7 月 22 日_
 
@@ -121,7 +121,7 @@ _2020 年 7 月 22 日_
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.1 - 建置 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.1 - 版本編號 9178 {#release-20-2-1-build-9178}
 
 _2020 年 6 月 8 日_
 
