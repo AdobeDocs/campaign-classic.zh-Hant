@@ -3,10 +3,10 @@ product: campaign
 title: 新增用戶檔案
 description: 新增用戶檔案
 feature: 設定檔
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 82%
