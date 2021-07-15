@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2415'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 
 因此，身為資料控制方的您，應負責確認提出要求之資料主體的身份，並確認傳回給要求者的資料與資料主體有關。
 
-### 安裝隱私套件 {#install-privacy-package}
+### 安裝隱私權套件 {#install-privacy-package}
 
 為了使用此功能，您需要透過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**&#x200B;功能表安裝&#x200B;**[!UICONTROL Privacy Data Protection Regulation]**&#x200B;套件。 有關如何安裝軟體套件的詳細資訊，請參閱[詳細文件](../../installation/using/installing-campaign-standard-packages.md)。
 
@@ -125,7 +125,7 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 >* Adobe 建議您建立 ETL 工作流程，在「隱私權存取」表格中新增要刪除的行，讓 **[!UICONTROL Delete privacy requests data]** 工作流程執行刪除。 出於效能方面的因素，我們建議每天限制刪除 200 個設定檔。
 
 
-### 隱私權要求狀態 {#privacy-request-statuses}
+### 隱私權請求狀態 {#privacy-request-statuses}
 
 隱私權要求的不同狀態如下：
 
