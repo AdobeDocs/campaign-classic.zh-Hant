@@ -1,16 +1,16 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classicv7檔案
+breadcrumb-title: Campaign v7 文件
 product: campaign
 title: Campaign Classic v7 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: 透過Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
-sub-product: adobe campaign classic
+user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
+sub-product: Adobe Campaign Classic
 type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2518'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ ht-degree: 97%
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
-   + [Adobe Analytics Connector常見問題集](technotes/aa-connector-migration.md)
+   + [Adobe Analytics 連接器常見問答集](technotes/aa-connector-migration.md)
    + [iOS 憑證更新](technotes/ios-certificate-update.md)
    + [Campaign 設定更新](technotes/acc-config-updates.md)
    + [已追蹤的 URL 更新](technotes/tracked-urls.md)
-   + [IMS更新](technotes/ims-updates.md)
+   + [IMS 更新](technotes/ims-updates.md)
 + 開始使用{#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
@@ -164,8 +164,8 @@ ht-degree: 97%
          + [針對 iOS 的設定步驟](delivery/using/configuring-the-mobile-application.md)
          + [針對 Android 的設定步驟](delivery/using/configuring-the-mobile-application-android.md)
       + 自訂推播通知{#create-a-push-msg}
-         + [為iOS建立推送訊息](delivery/using/create-notifications-ios.md)
-         + [為Android建立推送訊息](delivery/using/create-notifications-android.md)
+         + [為 iOS 建立推播訊息](delivery/using/create-notifications-ios.md)
+         + [為 Android 建立推播訊息](delivery/using/create-notifications-android.md)
       + [疑難排解](delivery/using/troubleshooting.md)
    + 傳送直接郵件 {#sending-direct-mail}
       + [關於直接郵件頻道](delivery/using/about-direct-mail-channel.md)
