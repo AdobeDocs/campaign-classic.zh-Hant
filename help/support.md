@@ -4,14 +4,14 @@ title: 'Campaign Classic的說明與支援選項 '
 description: 需要Campaign Classic支援嗎？ 您來對地方了！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
-# Campaign Classic{#help-support-options}的幫助和支援選項
+# Campaign Classic的說明與支援選項 {#help-support-options}
 
 需要Campaign Classic支援嗎？ 您來對地方了！
 
@@ -40,7 +40,7 @@ ht-degree: 70%
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">重要概念</a></li>
         <li><a href="platform/using/faq-campaign-config.md">行銷活動設定</a></li>
-        <li><a href="platform/using/faq-reporting.md">報告功能</a></li>
+        <li><a href="platform/using/faq-reporting.md">報告</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">版本編號升級</a></li>
         <li><a href="platform/using/faq-messages.md">測試、傳送和追蹤訊息</a></li>
         <li><a href="platform/using/faq-workflows.md">工作流程</a></li>
@@ -97,9 +97,9 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)。
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
 >
->請注意，您的執行個體必須托管在AWS上，並升級為最新的[Gold Standard](rn/using/gs-overview.md)組建或[最新的GA組建(21.1)](rn/using/latest-release.md)。 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須托管在AWS上，並升級為最新的[Gold Standard](rn/using/gs-overview.md)組建或[最新的GA組建(21.1.3)](rn/using/latest-release.md)。 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 
 ### 如何存取控制面板？
 
@@ -141,7 +141,7 @@ ht-degree: 70%
 ### 存取 Campaign 下載中心
 
 自2020年6月起，Experience Cloud解決方案Software Distribution將取代舊版Neolane下載中心，提供更有效率的軟體、套件和工具尋找和下載體驗。 [按一下此處](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)存取 Experience Cloud 軟體分送。
-了解更多有關此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)中新下載中心[的資訊。
+了解更多有關此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)中新下載中心[的資訊。
 
 ### 建立票證或開始聊天
 
