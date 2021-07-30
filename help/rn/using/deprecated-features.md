@@ -6,10 +6,10 @@ feature: 概覽
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 23d22283df418bb32eb7d2cb226bb7926e73bd0c
+source-git-commit: 4420aab0067048d1fb47b184ede579235dcd9819
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 100%
+source-wordcount: '1649'
+ht-degree: 99%
 
 ---
 
@@ -236,7 +236,7 @@ Adobe Campaign 與下列 SMS 連接器不相容：
 
 ### CRM 連接器 {#crm-connectors}
 
-下列 CRM 連接器自 Campaign 發行版本第 21.1 版起已棄用。
+自Campaign第21.1發行版本開始，下列CRM連接器不再與Campaign相容：
 
 * Soap API - 內部部署：2007、2015、2016 年
 * Soap API - 線上：2015、2016 年
