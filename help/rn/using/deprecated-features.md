@@ -6,10 +6,10 @@ feature: 概覽
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 23d22283df418bb32eb7d2cb226bb7926e73bd0c
 workflow-type: tm+mt
-source-wordcount: '1634'
-ht-degree: 99%
+source-wordcount: '1647'
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <td>Adobe Analytics 資料連接器<br></td>
    <td><p>自 Campaign 第 21.1.3 發行版本開始，已棄用 Adobe Analytics 資料連接器。</p>
    <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/adobe-analytics-connector.md">瞭解更多</a></p>
-  <p><em>目標移除日期：2022年3月1日</em></p>
+  <p><em>目標移除日期：2022 年 3 月 1 日</em></p>
   </td>
  </tr>
     <tr>
@@ -212,11 +212,6 @@ Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。
 * AsterData 5.0。AsterData 生命週期結束。[瞭解更多](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2、15.4、15.5 和 Sybase ASE 15.0。透過同盟資料存取 (FDA) 支援更新版本的 Sybase。[瞭解更多](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL：Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic 仍將透過同盟資料存取 (FDA) 支援所列的 Hadoop via HiveSQL 版本，但是這些版本與：HortonWorks (HDP 2.4.X、2.5.x、2.6.x) 及 HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6) 合併
-* Soap API - 內部部署：2007、2015、2016 年
-* Soap API - 線上：2015、2016 年
-* Web API – Microsoft Dynamics CRM 內部部署：2016、2016 更新 1
-* Web API – Microsoft Dynamics CRM 線上：2016、2016 更新 1
-* Oracle 隨選 API&lt;
 
 **RDBMS 伺服器**
 
@@ -228,7 +223,7 @@ Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。
 * MySQL 5.1
 * DB2 UDB 9.7
 
-### SMS 連接器 {#sms-eol}
+### 簡訊連接器 {#sms-eol}
 
 Adobe Campaign 與下列 SMS 連接器不相容：
 
@@ -238,3 +233,13 @@ Adobe Campaign 與下列 SMS 連接器不相容：
 * Tele2
 * O2
 * iOS
+
+### CRM 連接器 {#crm-connectors}
+
+下列 CRM 連接器自 Campaign 發行版本第 21.1 版起已棄用。
+
+* Soap API - 內部部署：2007、2015、2016 年
+* Soap API - 線上：2015、2016 年
+* Web API – Microsoft Dynamics CRM 內部部署：2016、2016 更新 1
+* Web API – Microsoft Dynamics CRM 線上：2016、2016 更新 1
+* Oracle On Demand API
