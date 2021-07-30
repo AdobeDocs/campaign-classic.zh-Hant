@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 20%
@@ -15,7 +15,7 @@ ht-degree: 20%
 
 # 監視指南 {#monitoring-guidelines}
 
-## 執行個體監控控制面板{#instance-monitoring-dashboard}
+## 執行個體監控控制面板 {#instance-monitoring-dashboard}
 
 **[!UICONTROL Monitoring]**&#x200B;標籤可從Campaign Classic首頁存取，是協助您監控執行個體的主要入口點。
 
@@ -25,7 +25,7 @@ ht-degree: 20%
 
 ![](assets/monitoring_tab.png)
 
-## 監控Campaign Classic進程{#monitoring-campaign-classic-processes}
+## 監控Campaign Classic流程 {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">監視您的執行個體</a></p></td>
@@ -36,7 +36,7 @@ ht-degree: 20%
 
 有其他方式可監控不同的促銷活動程式。 它們提供數種監視執行個體的方式，以確保您的系統運作正常，並最終疑難排解在設定工作流程、傳送傳遞等作業時可能發生的問題。
 
-### 監視實例{#monitoring-instance}
+### 監視您的執行個體 {#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
@@ -54,9 +54,9 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)中。
 >
->請注意，您的執行個體必須托管在AWS上，並升級為最新的[Gold Standard](../../rn/using/gs-overview.md)組建或[最新的GA組建(21.1)](../../rn/using/latest-release.md)。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須托管在AWS上，並升級為最新的[Gold Standard](../../rn/using/gs-overview.md)組建或[最新的GA組建(21.1.3)](../../rn/using/latest-release.md)。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 
 ### 監控工作流程 {#monitoring-workflows}
 
@@ -84,13 +84,13 @@ ht-degree: 20%
 * [使用工作流程時的最佳實務](../../workflow/using/workflow-best-practices.md)
 * [監控工作流程執行](../../workflow/using/monitoring-workflow-execution.md)
 
-### 監視傳遞{#monitoring-deliveries}
+### 監視傳遞 {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 **SMTP報表**
 
-SMTP報表會依網域顯示傳送統計資料和SMTP錯誤。 [瞭解更多](../../production/using/monitoring-processes.md)
+SMTP報表會依網域顯示傳送統計資料和SMTP錯誤。 [深入瞭解](../../production/using/monitoring-processes.md)
 
 **最佳實務**
 
@@ -103,7 +103,7 @@ SMTP報表會依網域顯示傳送統計資料和SMTP錯誤。 [瞭解更多](..
 * [傳遞效能問題](../../delivery/using/delivery-performances.md)
 * [臨時檔案問題](../../production/using/temporary-files.md)  — 僅限 *內部部署的托管模型*
 
-### 監視資料庫{#monitoring-database}
+### 監控資料庫 {#monitoring-database}
 
 <img src="assets/do-not-localize/icon_database.svg" width="60px">
 
@@ -127,7 +127,7 @@ SMTP報表會依網域顯示傳送統計資料和SMTP錯誤。 [瞭解更多](..
 
 備份是避免在電腦上出現問題（無論是物理或系統相關）時丟失資料的關鍵。 [按一下這裡](../../production/using/backup.md)以獲得更多資訊。[本節](../../production/using/restoration.md)中描述了恢復過程。
 
-## Campaign Classic技術原則{#campaign-classic-technical-principles}
+## Campaign Classic技術原則 {#campaign-classic-technical-principles}
 
 Campaign Classic檔案中提供技術資源。 建議您先熟悉這些主題，再對執行個體執行任何技術操作。
 
