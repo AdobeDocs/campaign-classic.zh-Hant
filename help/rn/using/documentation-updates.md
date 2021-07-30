@@ -6,10 +6,10 @@ feature: 概覽
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
-source-wordcount: '4456'
-ht-degree: 99%
+source-wordcount: '4465'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,12 @@ ht-degree: 99%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2021 年 6月 {#june-2021}
+## 2021 年 7 月 {#july-2021}
+
+[Campaign 21.1.3 版已移至](../../rn/using/latest-release.md#release-21-1-3-build-9330)「一般可用性」(GA)。
+
+
+## 2021 年 6 月 {#june-2021}
 
 **異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型綱要](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚瞭解此流程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
@@ -254,7 +259,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已將最佳實務新增至&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動區段。[顯示全文](../../workflow/using/scheduler.md)
 
-## 2020 年 6月 {#june-2020}
+## 2020 年 6 月 {#june-2020}
 
 更新「移除已隔離的位址」章節，內容包括釐清將位址自動從隔離清單移除的案例。[顯示全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
@@ -322,7 +327,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 更新 Adobe Campaign Enhanced MTA 文章。該文章現在只適用於 Campaign Classic。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## 2020 年 3月 {#march-2020}
+## 2020 年 3 月 {#march-2020}
 
 更新資料模型最佳實務，其中包括[序列](../../configuration/using/data-model-best-practices.md#sequences)、[效能](../../configuration/using/data-model-best-practices.md#performance)及[大型資料表](../../configuration/using/data-model-best-practices.md#large-tables)等。[顯示全文](../../configuration/using/data-model-best-practices.md)
 
@@ -408,7 +413,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 新增如何在工作流程使用執行個體變數的範例。[顯示全文](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019年12月 {#december-2019}
+## 2019 年 12 月 {#december-2019}
 
 Campaign 選項清單已新增「WdbcOptions_TempDbName」選項。[顯示全文](../../installation/using/configuring-campaign-options.md)
 
@@ -446,7 +451,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 現在「**與 Adobe Experience Cloud 整合**」指南已提及 Adobe Campaign 與 Adobe Real-time Customer Data Platform 之整合。[顯示全文](../../integrations/using/about-campaign-integrations.md)。
 
-## 2019 年11月 {#november-2019}
+## 2019 年 11 月 {#november-2019}
 
 「[多工處理中間來源伺服器](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server)」及「[支援數個控制執行個體](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances)」章節已新增警示訊息，說明這些部署不支援完全託管及混合型客戶。
 
@@ -462,7 +467,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 ## 2019 年 10 月 {#october-2019}
 
- Campaign 的錯誤訊息清單已更新。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+ Campaign 的錯誤訊息清單已更新。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)
 
 改善並加強 GDPR 快速入門手冊。該手冊現在是包含 GDPR 及 CCPA 的隱私權管理文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy.html)
 
