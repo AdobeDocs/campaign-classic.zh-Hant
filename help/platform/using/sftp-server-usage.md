@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 41%
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 # SFTP 伺服器最佳實務及疑難排解 {#sftp-server-usage}
 
-## SFTP伺服器全域建議{#global-recommendations}
+## SFTP伺服器全域建議 {#global-recommendations}
 
 管理用於 ETL 的檔案和資料時，這些檔案儲存在 Adobe 提供的代管 SFTP 伺服器上。使用SFTP伺服器時，請務必遵循下列建議。
 
@@ -31,7 +31,7 @@ ht-degree: 41%
 
 * 您嘗試起始SFTP連線的公用IP必須新增至Campaign執行個體的允許清單。 您可以透過[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)請求將IP位址新增至允許清單。
 
-## 資料庫使用最佳做法{#sftp-server-best-practices}
+## 資料庫使用最佳實務 {#sftp-server-best-practices}
 
 SFTP伺服器設計為臨時儲存空間，您可在其上控制檔案的保留和刪除。
 
@@ -43,9 +43,9 @@ SFTP伺服器設計為臨時儲存空間，您可在其上控制檔案的保留�
 >
 >如果您的執行個體託管在 AWS 上，則可以使用 Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html)監控 SFTP 伺服器儲存。若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 >
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)中。
 >
->請注意，您的執行個體必須升級為最新的[Gold Standard](../../rn/using/gs-overview.md)組建或[最新的GA組建(21.1)](../../rn/using/latest-release.md)。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
+>請注意，您的執行個體必須升級為最新的[Gold Standard](../../rn/using/gs-overview.md)組建或[最新的GA組建(21.1.3)](../../rn/using/latest-release.md)。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
 
 * 伺服器大小功能因許可證而異。在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 
@@ -55,7 +55,7 @@ SFTP伺服器設計為臨時儲存空間，您可在其上控制檔案的保留�
 
 * 請記住，SFTP 硬碟的管理主要是您的責任。
 
-## 外部SFTP伺服器使用{#external-SFTP-server}
+## 外部SFTP伺服器使用情況 {#external-SFTP-server}
 
 如果您使用自己的SFTP伺服器，請務必盡可能遵循上述建議。
 
@@ -64,7 +64,7 @@ SFTP伺服器設計為臨時儲存空間，您可在其上控制檔案的保留�
 * 如果您的SFTP伺服器位於&#x200B;**Windows**，請一律使用相對路徑。
 * 如果STP伺服器位於&#x200B;**Linux**，請始終使用相對於家庭的路徑（以&quot;~/&quot;開頭），或絕對路徑（以&quot;/&quot;開頭）。
 
-## Adobe托管的SFTP伺服器{#sftp-server-troubleshooting}出現連線問題
+## Adobe托管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
 下節列出當與Adobe托管的SFTP伺服器發生連線問題時，要透過[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)檢查並提供給Adobe支援團隊的資訊。
 
