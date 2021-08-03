@@ -6,20 +6,20 @@ feature: 概覽
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 98%
+source-wordcount: '545'
+ht-degree: 99%
 
 ---
 
-# 相容性矩陣{#compatibility-matrix}
+# 相容性比較表{#compatibility-matrix}
 
 本文件列出[最新建置版本](../../rn/using/latest-release.md)之 **Adobe Campaign Classic** 支援的所有系統及元件。不屬於此清單的產品和版本與 Adobe Campaign 不相容。
 
 如果您是 [!DNL Gold Standard] 使用者，請參閱 [[!DNL Gold Standard]  相容性矩陣](../../rn/using/compatibility-matrix-gs.md)。
 
-## 重要附註{#important-notes}
+## 重要備註{#important-notes}
 
 除非另有提及，否則支援所有次要版本。
 
@@ -155,7 +155,7 @@ ht-degree: 98%
 <p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。[深入了解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
+<p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。[深入瞭解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
 </td>
 </tr>
 </tbody>
@@ -178,7 +178,7 @@ ht-degree: 98%
 <tr>
 <td>Microsoft Dynamics 連接器</td>
 <td>
-<p>Web API：Dynamics 365 內部部署與線上</p>
+<p>網頁API</p>
 </td>
 </tr>
 </tbody>
