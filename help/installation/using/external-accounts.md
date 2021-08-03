@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 8%
+source-wordcount: '1636'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 技術流程（例如技術工作流程或宣傳工作流程）會使用外部帳戶。例如，在工作流程中設定檔案傳輸，或與任何其他應用程式(Adobe Target、Experience Manager等)進行資料交換時，您需要選取外部帳戶。
 
-## 建立外部帳戶{#creating-an-external-account}
+## 建立外部帳戶 {#creating-an-external-account}
 
 若要建立新外部帳戶，請遵循下列步驟。 詳細設定取決於外部帳戶的類型。
 
@@ -38,7 +38,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
    所需資訊通常由您所連接的伺服器提供者提供。
 
 1. 勾選&#x200B;**[!UICONTROL Enabled]**&#x200B;選項以啟用連線。
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Save]**。
 
 外部帳戶會建立並新增至外部帳戶清單。
 
@@ -93,7 +93,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 * [Android頻道](../../delivery/using/configuring-the-mobile-application-android.md)
 
 
-### 執行實例{#execution-instance-external-account}
+### 執行實例  {#execution-instance-external-account}
 
 如果您有劃分架構，則需要指定連結至控制執行個體的執行執行個體，並加以連結。 交易式訊息範本部署至執行例項
 
@@ -168,7 +168,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
    用於連線至SFTP伺服器的密碼。
 
-### 外部資料庫(FDA){#external-database-external-account}
+### 外部資料庫(FDA) {#external-database-external-account}
 
 使用&#x200B;**外部資料庫**&#x200B;鍵入外部帳戶以連接到外部資料庫。 深入了解同盟資料存取(FDA)選項，請參閱[本節](../../installation/using/about-fda.md)。
 
@@ -288,19 +288,17 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 如需詳細資訊，請參閱本[區段](../../integrations/using/about-adobe-experience-manager.md)。
 
-
-
 ## CRM連接器外部帳戶
 
 ### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
+>[!NOTE]
+>
+> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署類型現已過時。[深入瞭解](../../rn/using/deprecated-features.md)。
+
 **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帳戶可讓您將Microsoft Dynamics資料匯入和匯出至Adobe Campaign。
 
 在此[頁面](../../platform/using/crm-ms-dynamics.md)中深入了解Campaign - Microsoft Dynamics CRM連接器。
-
->[!NOTE]
->
-> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署類型現已過時。[瞭解更多](../../rn/using/deprecated-features.md)。
 
 使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份驗證時，您需要提供以下詳細資訊：
 
@@ -314,13 +312,15 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
    Microsoft CRM伺服器的URL。
 
+   若要尋找您的Microsoft CRM **[!UICONTROL Server URL]**，請存取您的Microsoft Dynamics CRM帳戶，然後按一下&#x200B;**Dynamics 365**&#x200B;並選取您的應用程式。 接著，您就可以在瀏覽器的位址列中找到您的&#x200B;**[!UICONTROL Server URL]**，例如`https://myserver.crm.dynamics.com/`。
+
 * **[!UICONTROL Client identifier]**
 
    可從&#x200B;**[!UICONTROL Update your code]**&#x200B;類別&#x200B;**[!UICONTROL Client ID]**&#x200B;欄位中的Microsoft Azure管理門戶找到的客戶端ID。
 
 * **[!UICONTROL CRM version]**
 
-   **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之間的CRM版本。
+   選擇&#x200B;**[!UICONTROL Dynamics CRM 365]** CRM版本。
 
 使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型和&#x200B;**[!UICONTROL Certificate]**&#x200B;身份驗證時，您需要提供以下詳細資訊：
 
@@ -330,9 +330,13 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
    Microsoft CRM伺服器的URL。
 
+   若要尋找您的Microsoft CRM **[!UICONTROL Server URL]**，請存取您的Microsoft Dynamics CRM帳戶，然後按一下&#x200B;**Dynamics 365**&#x200B;並選取您的應用程式。 接著，您就可以在瀏覽器的位址列中找到您的&#x200B;**[!UICONTROL Server URL]**，例如`https://myserver.crm.dynamics.com/`。
+
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   編碼為Base64的私鑰
+   請注意，私密金鑰需要編碼為Base64。
+
+   要執行此操作，可以使用Base64編碼器的幫助，或使用Linux的命令行`base64 -w0 private.key`。
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -348,7 +352,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 有關此配置的詳細資訊，請參閱此[page](../../platform/using/crm-connectors.md)。
 
-### Salesforce.com CRM {#salesforce-crm-external-account}
+### Salesforce.com CRM  {#salesforce-crm-external-account}
 
 **[!UICONTROL Salesforce CRM]**&#x200B;外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。
 
@@ -382,7 +386,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 ## 傳輸資料外部帳戶
 
-### Amazon簡單儲存服務(S3){#amazon-simple-storage-service--s3--external-account}
+### Amazon Simple Storage Service(S3) {#amazon-simple-storage-service--s3--external-account}
 
 Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe Campaign。 可在工作流程活動中設定。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
 
@@ -414,7 +418,7 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 若要了解在何處尋找存取金鑰ID和秘密存取金鑰，請參閱Amazon網站服務[檔案](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
-### Azure Blob儲存{#azure-blob-external-account}
+### Azure Blob儲存 {#azure-blob-external-account}
 
 **Azure Blob儲存體**&#x200B;外部帳戶可用來使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動將資料匯入或匯出至Adobe Campaign。 如需詳細資訊，請參閱本[區段](../../workflow/using/file-transfer.md)。
 
