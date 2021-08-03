@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 2%
+source-wordcount: '1049'
+ht-degree: 4%
 
 ---
 
@@ -17,13 +17,9 @@ ht-degree: 2%
 
 在本頁面中，您將學習如何將Campaign Classic連接到&#x200B;**Microsoft Dynamics CRM 365**。
 
-可能的部署包括：
+可能的部署是通過&#x200B;**Web API**（建議）。 請參閱[以下小節](#microsoft-dynamics-implementation-step)了解設定與Microsoft Dynamics連線的步驟。
 
-* 透過&#x200B;**Web API**（建議）。 請參閱[以下小節](#microsoft-dynamics-implementation-step)了解設定與Microsoft Dynamics連線的步驟。
-* **Office 365**。 請參閱[此影片](#microsoft-dynamics-office-365)以了解設定此整合的關鍵步驟。
-* 對於&#x200B;**內部部署**&#x200B;部署，請應用Office 365關鍵步驟。
-
-資料同步是透過專用的工作流程活動執行。 [瞭解更多](../../platform/using/crm-data-sync.md)。
+資料同步是透過專用的工作流程活動執行。 [深入瞭解](../../platform/using/crm-data-sync.md)。
 
 ## 實施步驟{#microsoft-dynamics-implementation-steps}
 
@@ -36,7 +32,7 @@ ht-degree: 2%
 1. 建立應用程式使用者
 1. 為私密金鑰編碼
 
-[了解更多資訊](#config-crm-microsoft)
+[在本節了解更多資訊](#config-crm-microsoft)
 
 Campaign Classic:
 1. 建立新的外部帳戶
@@ -44,16 +40,13 @@ Campaign Classic:
 1. 使用配置嚮導映射表並同步枚舉
 1. 建立同步工作流程
 
-[了解更多資訊](#configure-acc-for-microsoft)
+[在本節了解更多資訊](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
 > 將Adobe Campaign與Microsoft Dynamics連接時，您不能：
 > * 安裝可變更CRM行為並導致與Adobe Campaign相容問題的外掛程式
 > * 選擇多個枚舉
-
->
-
 
 
 ## 配置Microsoft Dynamics CRM {#config-crm-microsoft}
@@ -73,7 +66,7 @@ Campaign Classic:
 
 在[本頁](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)中瞭解更多。
 
-### 生成Microsoft Dynamics客戶端密碼{#config-client-secret-microsoft}
+### 生成Microsoft Dynamics客戶端密碼 {#config-client-secret-microsoft}
 
 用戶端密碼是用戶端ID專屬的金鑰。 若要取得憑證金鑰識別碼，請遵循下列步驟：
 
@@ -88,18 +81,43 @@ Campaign Classic:
    - openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout '<'private key name'>' -out '<'public certificate name'>
    ```
 
-1. 按一下&#x200B;**manifest**&#x200B;連結以取得&#x200B;**憑證金鑰識別碼**&#x200B;和&#x200B;**金鑰ID**。
+   >[!NOTE]
+   >
+   >您可以在程式碼範例中，針對較長的憑證有效期變更天數，請前往`-days 365`這裡。
 
-### 配置權限{#config-permissions-microsoft}
+1. 然後，您需要將其編碼為base64。 要執行此操作，可以使用Base64編碼器的幫助，或使用Linux的命令行`base64 -w0 private.key`。
 
-您必須為已建立的應用程式設定&#x200B;**必要權限**。
+1. 按一下&#x200B;**資訊清單**&#x200B;連結以取得&#x200B;**憑證金鑰識別碼(customKeyIdentifier)**&#x200B;和&#x200B;**金鑰ID(keyId)**。
+
+### 設定權限 {#config-permissions-microsoft}
+
+**步驟1**:為已建 **立** 的應用程式設定必要權限。
 
 1. 導航至&#x200B;**Azure Active Directory >應用註冊**&#x200B;並選擇先前建立的應用程式。
 1. 按一下左上角的&#x200B;**設定**。
 1. 在&#x200B;**必要權限**&#x200B;上，按一下&#x200B;**Add**&#x200B;和&#x200B;**Select an API > Dynamics CRM Online**。
-1. 然後按一下「**選擇**」，啟用「以組織用戶身份訪問Dynamics 365」複選框，然後按一下「**選擇**」。****
+1. 按一下&#x200B;**選擇**，啟用&#x200B;**以組織用戶身份訪問Dynamics 365複選框，然後按一下**&#x200B;選擇&#x200B;**。**
+1. 然後，從您的應用程式中，選取&#x200B;**管理**&#x200B;功能表下的&#x200B;**資訊清單**。
 
-### 建立應用程式使用者{#create-app-user-microsoft}
+1. 從&#x200B;**資訊清單**&#x200B;編輯器中，將`allowPublicClient`屬性從`null`設定為`true`，然後按一下&#x200B;**儲存**。
+
+**步驟2**:授予管理員同意
+
+1. 導航到&#x200B;**Azure Active Directory >企業應用程式**。
+
+1. 選取您要授予租用戶範圍管理員同意的應用程式。
+
+1. 從左窗格菜單中，選擇&#x200B;**Security**&#x200B;下的&#x200B;**Permissions**。
+
+1. 按一下「**授予管理員同意**」。
+
+有關詳細資訊，請參閱[Azure文檔](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
+
+### 建立應用程式使用者 {#create-app-user-microsoft}
+
+>[!NOTE]
+>
+> 此步驟對於&#x200B;**[!UICONTROL Password credentials]**&#x200B;驗證是可選的。
 
 應用程式使用者是上述註冊的應用程式將使用的使用者。 使用上述註冊的應用程式對Microsoft Dynamics所做的任何變更都將透過此使用者完成。
 
@@ -131,25 +149,25 @@ Campaign Classic:
 
 ## 設定 Campaign {#configure-acc-for-microsoft}
 
-若要連線Microsoft Dynamics 365和Campaign，您需要在Campaign中建立並設定專用的外部帳戶。
+>[!NOTE]
+>
+> 在從Microsoft](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8)?redirectedfrom=MSDN#microsoft-dynamics-crm-2011-endpoint)停用[RDS後，內部部署和Office 365類型的CRM部署將不再與Campaign相容。 Adobe Campaign現在僅支援CRM版本&#x200B;**動態CRM 365**&#x200B;的Web API部署。 [深入瞭解](../../rn/using/deprecated-features.md#crm-connectors)。
+
+若要連線Microsoft Dynamics 365和Campaign，您需要在Campaign中建立並設定專用的&#x200B;**[!UICONTROL External Account]**。
 
 1. 導覽至&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。
 
-1. 建立新外部帳戶，選擇類型&#x200B;**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;和&#x200B;**[!UICONTROL Enable]**&#x200B;選項。
+1. 選擇&#x200B;**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帳戶。 核取 **[!UICONTROL Enabled]** 選項。
 
-1. 選擇&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型：
-
-   Adobe Campaign Classic支援具有OAuth通訊協定的Dynamics 365 REST介面，以使用&#x200B;**[!UICONTROL Certificate]**&#x200B;或&#x200B;**[!UICONTROL Password Credentials]**&#x200B;進行驗證。
-
-   使用Azure目錄中先前定義的設定[來配置外部帳戶。](#get-client-id-microsoft)
-
-   ![](assets/crm-ms-dynamics-ext-account.png)
+1. 填寫連接Microsoft Dynamics 365和Campaign所需的資訊。
 
    >[!NOTE]
    >
-   >本節](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中詳細說明了Microsoft Dynamics CRM外部帳戶配置。[
+   >每個&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帳戶配置在本節](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中有詳細的[。
 
-1. 按一下&#x200B;**[!UICONTROL Microsoft CRM configuration wizard...]**&#x200B;連結：Adobe Campaign會自動從Microsoft Dynamics資料範本中偵測表格。
+   ![](assets/crm-ms-dynamics-ext-account.png)
+
+1. 按一下&#x200B;**[!UICONTROL Microsoft CRM configuration wizard...]**&#x200B;連結。Adobe Campaign會自動從Microsoft Dynamics資料範本中偵測表格。
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -175,14 +193,7 @@ Campaign Classic:
 
 Campaign與Microsoft Dynamics現已連線。 您可以在兩個系統之間設定資料同步。 了解更多[資料同步](../../platform/using/crm-data-sync.md)一節。
 
-## 配置Microsoft Dynamics CRM Office 365整合{#microsoft-dynamics-office-365}
-
-觀看此影片，了解如何在Office 365部署中整合Dynamics 365與Adobe Campaign Classic。
-
->[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
-
-
-## 支援的欄位資料類型{#ms-dyn-supported-types}
+## 支援的欄位資料類型 {#ms-dyn-supported-types}
 
 以下列出了Microsoft Dynamics 365支援/不支援的屬性類型：
 
