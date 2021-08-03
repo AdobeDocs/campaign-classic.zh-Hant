@@ -6,16 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
 
 # 測試移轉{#testing-the-migration}
 
-## 一般程式{#general-procedure}
+## 一般程式 {#general-procedure}
 
 根據您的設定，有數種方式可執行移轉測試。
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 >
 >Adobe Campaign update命令(**postupgrade**)可讓您同步資源，以及更新結構和資料庫。 此操作只能在應用程式伺服器上執行一次。 同步資源後， **postupgrade**&#x200B;命令允許您檢測同步是否生成任何錯誤或警告。
 
-## 遷移工具{#migration-tools}
+## 移轉工具 {#migration-tools}
 
 各種選項可讓您評估移轉的影響並找出潛在問題。 這些選項將執行：
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 >
 >您必須使用&#x200B;**-instance:`<instanceame>`**&#x200B;選項。 我們不建議使用&#x200B;**-allinstances**&#x200B;選項。
 
-### -showCustomEntities和 — showDeletedEntities選項{#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities和 — showDeletedEntities選項 {#showcustomentities-and--showdeletedentities-options}
 
 * **-showCustomEntities**&#x200B;選項顯示所有非標準對象的清單：
 
@@ -96,7 +96,7 @@ ht-degree: 1%
    Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
    ```
 
-### 驗證進程{#verification-process}
+### 驗證過程 {#verification-process}
 
 整合為後置升級命令中的標準，此程式可讓您顯示可能導致遷移失敗的警告和錯誤。 **如果顯示錯誤，則未執行移轉。** 如果發生此情況，請更正所有錯誤，然後重新啟動升級後。
 
@@ -156,14 +156,20 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> 這種錯誤會導致遷移失敗。 請參閱<a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>。 如果您收到概述類型的Web應用程式錯誤日誌（從v6.02遷移），請參閱<a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Web應用程式</a>。<br /> </td> 
+   <td> 這種錯誤會導致遷移失敗。 請參閱<a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>。 如果您收到概述類型的Web應用程式錯誤記錄（從v6.02遷移），請參閱<a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">設定Campaign</a>。<br /> </td> 
+  </tr>
+  <tr> 
+   <td> crmDeploymentType="onpremise"<br /> </td> 
+   <td> PU-0007<br /> </td> 
+   <td> 錯誤<br /> </td> 
+   <td> 不再支援此類型的部署。 Office 365和內部部署的Microsoft CRM連接器部署類型現已過時</a>。 要更改Web API部署，請參閱<a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Web應用程式</a>。<br /> </td>
   </tr> 
  </tbody> 
 </table>
 
 還進行了資料庫和方案一致性檢查。
 
-### 還原選項{#restoration-option}
+### 還原選項 {#restoration-option}
 
 此選項可讓您在對象已修改時還原現成可用的對象。 對於每個已還原的對象，更改的備份會儲存在所選資料夾中：
 
@@ -175,6 +181,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >強烈建議使用絕對資料夾路徑並保留資料夾樹結構。 例如：backupFolder\nms\srcSchema\billing.xml。
 
-### 繼續遷移{#resuming-migration}
+### 繼續移轉 {#resuming-migration}
 
 如果您在移轉失敗後重新啟動升級後，會從停止的相同位置繼續。
