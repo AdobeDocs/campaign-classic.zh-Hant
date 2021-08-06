@@ -6,10 +6,10 @@ feature: 概覽
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8a14afd25b03cea38cbfc2277fc9e51cf08658db
+source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
 workflow-type: tm+mt
-source-wordcount: '1959'
-ht-degree: 98%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ _2021 年 6 月 5 日_
 **棄用的功能**
 
 * 自 Campaign 第 21.1 發行版本開始，已棄用 Adobe Analytics 資料連接器。 如果您使用此連接器，則需使用新連接器 Adobe Analytics 連接器，據以調整實施。
-如需詳細資訊，請參閱[詳細文件](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-connector.html)。
+如需詳細資訊，請參閱[詳細文件](../../technotes/aa-connector-migration.md)。
 * 不再支援 Debian 8。
 * 在 20.3 版中淘汰 Oracle CRM 後，相關外部帳戶已從介面中移除。
 
