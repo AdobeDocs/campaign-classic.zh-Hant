@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+workflow-type: tm+mt
+source-wordcount: '2525'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 100%
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
-   + [Adobe Analytics 連接器常見問答集](technotes/aa-connector-migration.md)
    + [iOS 憑證更新](technotes/ios-certificate-update.md)
    + [Campaign 設定更新](technotes/acc-config-updates.md)
    + [已追蹤的 URL 更新](technotes/tracked-urls.md)
@@ -117,8 +116,10 @@ ht-degree: 100%
          + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
          + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
-      + [Adobe Analytics 連接器](platform/using/adobe-analytics-connector.md)
-      + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
+      + Adobe Analytics 連接器{#analytics-connector}
+         + [Adobe Analytics Connector整合](platform/using/adobe-analytics-connector.md)
+         + [如何移轉至Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [說明與支援選項](support.md)
 + 建立及傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
