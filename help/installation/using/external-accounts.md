@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 7%
@@ -92,7 +92,6 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 * [iOS頻道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android頻道](../../delivery/using/configuring-the-mobile-application-android.md)
 
-
 ### 執行實例  {#execution-instance-external-account}
 
 如果您有劃分架構，則需要指定連結至控制執行個體的執行執行個體，並加以連結。 交易式訊息範本部署至執行例項
@@ -112,7 +111,6 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
    運算子資料夾中定義的帳戶密碼。
 
 有關此配置的詳細資訊，請參閱此[page](../../message-center/using/configuring-instances.md#control-instance)。
-
 
 ## 訪問外部系統外部帳戶
 
