@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 4%
+source-wordcount: '1097'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 在Microsoft Dynamics CRM中：
 1. 獲取Microsoft Dynamics客戶端ID
-1. 生成Microsoft Dynamics客戶端密碼
+1. 生成Microsoft Dynamics證書密鑰標識符和密鑰ID
 1. 設定權限
 1. 建立應用程式使用者
 1. 為私密金鑰編碼
@@ -66,9 +66,9 @@ Campaign Classic:
 
 在[本頁](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)中瞭解更多。
 
-### 生成Microsoft Dynamics客戶端密碼 {#config-client-secret-microsoft}
+### 生成Microsoft Dynamics證書密鑰標識符和密鑰ID {#config-certificate-key-id}
 
-用戶端密碼是用戶端ID專屬的金鑰。 若要取得憑證金鑰識別碼，請遵循下列步驟：
+若要取得&#x200B;**憑證金鑰識別碼(customKeyIdentifier)**&#x200B;和&#x200B;**金鑰ID(keyId)**，請遵循下列步驟：
 
 1. 導航至&#x200B;**Azure Active Directory >應用註冊**&#x200B;並選擇先前建立的應用程式。
 1. 按一下&#x200B;**憑證和密碼**。
@@ -88,6 +88,8 @@ Campaign Classic:
 1. 然後，您需要將其編碼為base64。 要執行此操作，可以使用Base64編碼器的幫助，或使用Linux的命令行`base64 -w0 private.key`。
 
 1. 按一下&#x200B;**資訊清單**&#x200B;連結以取得&#x200B;**憑證金鑰識別碼(customKeyIdentifier)**&#x200B;和&#x200B;**金鑰ID(keyId)**。
+
+稍後將需要&#x200B;**Certificate key identifier(customKeyIdentifier)**&#x200B;和&#x200B;**Key ID(keyId)**，才能使用憑證&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;來設定您的Microsoft Dynamics CRM外部帳戶。
 
 ### 設定權限 {#config-permissions-microsoft}
 
@@ -192,6 +194,10 @@ Campaign Classic:
    ![](assets/crm_connectors_msdynamics_06.png)
 
 Campaign與Microsoft Dynamics現已連線。 您可以在兩個系統之間設定資料同步。 了解更多[資料同步](../../platform/using/crm-data-sync.md)一節。
+
+>[!NOTE]
+>
+> 您必須確定將兩個URL新增至允許清單：伺服器配置中的伺服器URL和`login.microsoftonline.com`。
 
 ## 支援的欄位資料類型 {#ms-dyn-supported-types}
 
