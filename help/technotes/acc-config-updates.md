@@ -5,7 +5,7 @@ description: 技術檔案
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 11%
@@ -29,7 +29,7 @@ ht-degree: 11%
 
 ## 安全性更新 {#acc-security-updates}
 
-最新的Campaign版本隨附安全性修正，加強針對伺服器端請求偽造(SSRF)問題的保護。 了解更多[資訊，請參閱本頁](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)。
+最新的Campaign版本隨附安全性修正，加強針對伺服器端請求偽造(SSRF)問題的保護。 在[本頁](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)中深入瞭解。
 
 **您有受到影響嗎？**
 
@@ -80,7 +80,7 @@ Adobe身分識別服務(IMS)將於2021年6月30日起停止支援舊版Internet 
 
 * 金標11。 [深入瞭解](../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [深入瞭解](../rn/using/latest-release.md)
-* Campaign 20.2.4版。 [深入瞭解](../rn/using/release--20-2.md)
+* Campaign 20.2.5版。 [深入瞭解](../rn/using/release--20-2.md)
 * Campaign 20.1.4版。 [深入瞭解](../rn/using/release--20-1.md)
 * Campaign 19.2.4版。 [深入瞭解](../rn/using/release--19-2.md)
 * Campaign 19.1.8版。 [深入瞭解](../rn/using/release--19-1.md)
