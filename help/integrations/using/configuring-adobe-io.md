@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 4%
@@ -19,21 +19,21 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果您透過oAuth驗證使用舊版Triggers整合，**您需要依照**&#x200B;下方所述移至Adobe I/O。 使用Campaign的舊版oAuth驗證模式(Campaign)將於2021年11月30日淘汰。 [瞭解更多](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您透過oAuth驗證使用舊版Triggers整合，**您需要依照**&#x200B;下方所述移至Adobe I/O。 使用Campaign的舊版oAuth驗證模式(Campaign)將於2021年11月30日淘汰。 [深入瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >請注意，在移至[!DNL Adobe I/O]期間，某些傳入的觸發器可能會遺失。
 
-## 必要條件 {#adobe-io-prerequisites}
+## 先決條件 {#adobe-io-prerequisites}
 
-此整合僅適用於&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和[!DNL Gold Standard] 11版**。
+此整合僅適用於&#x200B;**Campaign Classic20.3、19.1.8和[!DNL Gold Standard] 11版**。
 
 開始實施前，請檢查您有：
 
-* 有效的&#x200B;**組織標識符**:Identity Management系統(IMS)組織識別碼是Adobe Experience Cloud內的唯一識別碼，用於訪客ID服務和IMS單一登入(SSO)。 [瞭解更多](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* 有效的&#x200B;**組織標識符**:Identity Management系統(IMS)組織識別碼是Adobe Experience Cloud內的唯一識別碼，用於訪客ID服務和IMS單一登入(SSO)。 [深入瞭解](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **開發人員存取**&#x200B;至您的組織。 IMS組織的系統管理員需要遵循&#x200B;**將開發人員新增至單一產品設定檔**
 本頁面](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中詳細的[程式，提供與觸發器相關聯的Adobe Analytics產品之`Analytics - {tenantID}`產品設定檔的開發人員存取。
 
-## 步驟1:建立/更新Adobe I/O項目{#creating-adobe-io-project}
+## 步驟1:建立/更新Adobe I/O專案 {#creating-adobe-io-project}
 
 1. 存取[!DNL Adobe I/O]並使用IMS組織的開發人員存取權登入。
 
@@ -73,7 +73,7 @@ ht-degree: 4%
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. 按一下 **[!UICONTROL Next]**。
+1. 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
@@ -96,7 +96,7 @@ ht-degree: 4%
 >
 >Adobe I/O憑證將在12個月後到期。 您每年需要產生新的金鑰組。
 
-## 步驟2:在Adobe Campaign {#add-credentials-campaign}中新增專案認證
+## 步驟2:在Adobe Campaign中新增專案認證 {#add-credentials-campaign}
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ ht-degree: 4%
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-## 步驟3:更新流水線標籤{#update-pipelined-tag}
+## 步驟3:更新流水線標籤 {#update-pipelined-tag}
 
 >[!NOTE]
 >
