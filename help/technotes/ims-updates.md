@@ -4,7 +4,7 @@ title: 更新您的環境以使用IMS連線至Adobe Campaign
 description: 行銷活動 — IMS更新
 hide: true
 hidefromtoc: true
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 9%
@@ -39,7 +39,7 @@ Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安�
 
    * 金標11。 [深入瞭解](../rn/using/gold-standard.md)
    * Campaign 21.1.3版。 [深入瞭解](../rn/using/latest-release.md)
-   * Campaign 20.2.4版。 [深入瞭解](../rn/using/release--20-2.md)
+   * Campaign 20.2.5版。 [深入瞭解](../rn/using/release--20-2.md)
    * Campaign 20.1.4版。 [深入瞭解](../rn/using/release--20-1.md)
    * Campaign 19.2.4版。 [深入瞭解](../rn/using/release--19-2.md)
    * Campaign 19.1.8版。 [深入瞭解](../rn/using/release--19-1.md)
