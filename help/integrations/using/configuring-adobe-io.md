@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
+source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 4%
+source-wordcount: '682'
+ht-degree: 3%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果您透過oAuth驗證使用舊版Triggers整合，**您需要依照**&#x200B;下方所述移至Adobe I/O。 使用Campaign的舊版oAuth驗證模式(Campaign)將於2021年11月30日淘汰。 [深入瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
->
+>如果您透過oAuth驗證使用舊版Triggers整合，**您需要依照**下方所述移至Adobe I/O。
 >請注意，在移至[!DNL Adobe I/O]期間，某些傳入的觸發器可能會遺失。
+>
+>針對混合和內部部署環境，Campaign的舊版oAuth驗證模式將於2021年8月18日&#x200B;**淘汰，針對托管環境則於2021年11月30日**&#x200B;和&#x200B;**淘汰。**[深入瞭解](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+
 
 ## 先決條件 {#adobe-io-prerequisites}
 
