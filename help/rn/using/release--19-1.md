@@ -6,16 +6,16 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '3252'
-ht-degree: 26%
+source-wordcount: '3263'
+ht-degree: 25%
 
 ---
 
 # 第 19.1 發行版本{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) 發行版本 19.1.8 - 建置 9039 {#release-19-1-8-build-9039}
+## ![](assets/do-not-localize/limited_2.png) 發行版本 19.1.8 - 版本編號 9039 {#release-19-1-8-build-9039}
 
 _2021年 4 月 15 日_
 
@@ -41,9 +41,9 @@ _2020 年 12 月 16 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。[深入瞭解](../../technotes/ims-updates.md)
-> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/ims-updates.md)
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。針對混合和內部部署環境，Campaign的舊版oAuth驗證模式將於2021年8月18日&#x200B;**淘汰，針對托管環境則於2021年11月30日**&#x200B;和&#x200B;**淘汰。**
 
 
 
@@ -71,7 +71,7 @@ _2020 年 12 月 16 日_
 
 在Linux上，nlserver服務啟動現在使用系統單元，而非/etc/init.d/nlserver6指令碼。 安裝19.1.8套件時，會自動移轉至新的啟動方案。 仍提供/etc/init.d/nlserver6，但為了與nlserver服務（啟動、重新啟動、停止等）互動，我們建議您直接使用systemctl命令。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.7 - 建置 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.7 - 版本編號 9036 {#release-19-1-7-build-9036}
 
 _2020 年 9 月 15 日_
 
@@ -101,7 +101,7 @@ _2020 年 9 月 15 日_
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
 * 修正在&#x200B;**排程器**&#x200B;工作流程活動中設定時間時，導致挑選錯誤時區的回歸。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.6 - 建置 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.6 - 版本編號 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -117,7 +117,7 @@ _2019年10月3日_
 * 修正了可能導致Mid-Sourcing伺服器無法處理某些訊息的問題。 (NEO-12395)
 * 修正了無法完全使用SQL資料管理活動的問題（缺少「SQL資料管理」的名為權限）。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.5 - 建置 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.5 - 版本編號 9033{#release-19-1-5-build-9033}
 
 _2019 年 8 月 13 日_
 
@@ -132,14 +132,14 @@ _2019 年 8 月 13 日_
 * 修正Oracle上的回歸，導致在升級後後部分函式被視為無效。 (NEO-12759)
 * 修正了在排程器工作流程活動中設定時間時，導致挑選錯誤時區的回歸。
 
-## ![](assets/do-not-localize/green_2.png) 發行版本 19.1.4 - 建置 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) 發行版本 19.1.4 - 版本編號 9032{#release-19-1-4-build-9032}
 
 >[!NOTE]
 >
 >19.1.4 [!DNL Gold Standard]版本列在此[page](../../rn/using/gold-standard.md)中。
 
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.2 - 建置 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1.2 - 版本編號 9029{#release-19-1-2-build-9029}
 
 _2019年6月21日_
 
@@ -155,11 +155,11 @@ _2019年6月21日_
 * 現在，我們允許在匯入工作流程期間刪除在Microsoft Dynamics中建立的虛擬記錄。
 * 改善使用內部帳戶時執行安全區域套件的權限。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 19.1 - 建置 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.1 - 版本編號 9026{#release-19-1-build-9026}
 
 _2019年5月30日_
 
-**新增功能？**
+**有哪些新增功能？**
 
 <table> 
  <thead> 
