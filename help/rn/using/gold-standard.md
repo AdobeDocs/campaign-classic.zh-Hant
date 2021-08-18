@@ -6,10 +6,10 @@ feature: 概覽
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
+source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 95%
+source-wordcount: '1077'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ _2021年 4 月 14 日_
 >
 > * 如果您透過Adobe ID連線至Campaign，透過AdobeIdentity Management服務(IMS)，對於Campaign伺服器和用戶端主控台而言，必須進行升級，才能在2021年6月30日&#x200B;**之後連線至Campaign。** [深入瞭解](../../technotes/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。Campaign 的舊 oAuth 驗證模式將於&#x200B;**2021年 11 月 30 日**&#x200B;淘汰。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。針對混合和內部部署環境，Campaign的舊版oAuth驗證模式將於2021年8月18日&#x200B;**淘汰，針對托管環境則於2021年11月30日**&#x200B;和&#x200B;**淘汰。**
 
 >
 >
