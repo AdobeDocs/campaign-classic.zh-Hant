@@ -5,9 +5,9 @@ description: 了解如何設定管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 1%
 驗證參數（如客戶ID、私密金鑰和驗證端點）是在執行個體設定檔中設定。
 要處理的觸發器清單會以JSON格式的選項設定。
 觸發器用於傳送電子郵件的行銷活動工作流程鎖定目標。 已設定促銷活動，讓同時觸發事件的客戶收到電子郵件。
-
->[!CAUTION]
->
->若是混合部署，請確定管道是在中繼執行個體上設定。
 
 ## 先決條件 {#prerequisites}
 
