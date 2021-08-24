@@ -2,11 +2,8 @@
 product: campaign
 title: Campaign 18.4發行說明
 description: Campaign 18.4發行說明
-feature: null
-role: null
-level: null
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -15,7 +12,7 @@ ht-degree: 7%
 
 # 第 18.4 發行版本{#release-18-4}
 
-## 發行版本 18.4.5 - 建置 8937{#release-18-4-5-build-8937}
+## 發行版本 18.4.5 - 版本編號 8937{#release-18-4-5-build-8937}
 
 2018年11月21日
 
@@ -42,7 +39,7 @@ ht-degree: 7%
 * 改善子程式死機處理(MTA)期間的共用記憶體可用時間。
 * 修正Apache（追蹤）中的潛在鎖死。
 
-## 發行版本 18.4.4 - 建置 8936{#release-18-4-4-build-8936}
+## 發行版本 18.4.4 - 版本編號 8936{#release-18-4-4-build-8936}
 
 2018年8月1日
 
@@ -59,7 +56,7 @@ ht-degree: 7%
 * 修正了當&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流程活動未完全設定時，在升級後記錄中顯示無用錯誤的問題。
 * FDATeradata:修正SQL表格中自動增加欄位和索引的問題。
 
-## 發行版本 18.4.3 - 建置 8935{#release-18-4-3-build-8935}
+## 發行版本 18.4.3 - 版本編號 8935{#release-18-4-3-build-8935}
 
 2018年6月22日
 
@@ -73,7 +70,7 @@ ht-degree: 7%
 * 修正從行銷例項同步選件空間至互動例項的問題。 (NEO-11162)
 * 改善升級後期間長名稱索引的管理
 
-## 發行版本 18.4.2 - 建置 8932{#release-18-4-2-build-8932}
+## 發行版本 18.4.2 - 版本編號 8932{#release-18-4-2-build-8932}
 
 2018年5月22日
 
@@ -84,11 +81,11 @@ ht-degree: 7%
 * 修正了使用退信郵件伺服器時，inMail程式可能發生的效能問題。 (NEO-10641)
 * 修正了升級超過1000個結構時可能發生的資料庫升級問題。
 
-## 發行版本 18.4 - 建置 8931{#release-18-4-build-8931}
+## 發行版本 18.4 - 版本編號 8931{#release-18-4-build-8931}
 
 2018年4月24日
 
-**新增功能？**
+**有哪些新增功能？**
 
 <table> 
  <thead> 
@@ -104,15 +101,15 @@ ht-degree: 7%
     <ul> 
      <li> <p>訪問權限：可讓資料主體接收資料控制者擷取的其個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
      <li> <p>刪除權限：為資料主體賦予權利，讓資料控制者擷取的個人資料遭到清除，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
-    </ul> 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">相關的文件</a>，以瞭解詳情。<br /> </td> 
+    </ul> 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">詳細文件</a>，以瞭解詳情。<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用中的設定檔案<br /> </td> 
-   <td> <p>Adobe Campaign現在提供作用中設定檔的清單，並透過專用的工作流程每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">相關的文件</a>，以瞭解詳情。</p> </td> 
+   <td> <p>Adobe Campaign現在提供作用中設定檔的清單，並透過專用的工作流程每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">詳細文件</a>，以瞭解詳情。</p> </td> 
   </tr> 
   <tr> 
    <td> Android推播連接器增強功能<br /> </td> 
-   <td> <p>已增強Android連接器，以支援更高的吞吐量。 </p> <p>如需詳細資訊，請參閱<a href="../../delivery/using/configuring-the-mobile-application.md">相關的文件</a>，以瞭解詳情。</p> </td> 
+   <td> <p>已增強Android連接器，以支援更高的吞吐量。 </p> <p>如需詳細資訊，請參閱<a href="../../delivery/using/configuring-the-mobile-application.md">詳細文件</a>，以瞭解詳情。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -139,10 +136,10 @@ ht-degree: 7%
 * 對部署精靈SOAP呼叫(xtk:serverOptions#SaveOptions)強制存取限制。
 * weka.jar淘汰程式庫已移除，OpenSSL程式庫已更新，以最佳化安全性。
 * 改善帳單技術工作流程以保護執行個體效能。
-* 管理員設定或重設任何運算子密碼的功能已還原。 要執行此操作，請按一下右鍵某個運算子，選擇&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定該運算子的新密碼。 建議操作員在首次重新連線時變更其密碼。 如需詳細資訊，請參閱[相關的文件](../../production/using/lost-password.md)，以瞭解詳情。
-* 為了支援Adobe Target中的新多租用戶功能，現在當設定與Target整合的選項和外部帳戶時，可以將新的「at_property」參數新增至URL。 可在Adobe Target中找到此參數使用的值，且將供Campaign在對Target執行呼叫時使用。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
-* 您現在可以指定在按一下Adobe Target提供的影像時要開啟的預設登陸頁面。 過去，點按該影像會改為建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[相關的文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
-* 在外部帳戶中新增&#x200B;**啟用SMPP追蹤**&#x200B;核取方塊，以強制追蹤輸出。 如需詳細資訊，請參閱[相關的文件](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)，以瞭解詳情。
+* 管理員設定或重設任何運算子密碼的功能已還原。 要執行此操作，請按一下右鍵某個運算子，選擇&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定該運算子的新密碼。 建議操作員在首次重新連線時變更其密碼。 如需詳細資訊，請參閱[詳細文件](../../production/using/lost-password.md)，以瞭解詳情。
+* 為了支援Adobe Target中的新多租用戶功能，現在當設定與Target整合的選項和外部帳戶時，可以將新的「at_property」參數新增至URL。 可在Adobe Target中找到此參數使用的值，且將供Campaign在對Target執行呼叫時使用。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
+* 您現在可以指定在按一下Adobe Target提供的影像時要開啟的預設登陸頁面。 過去，點按該影像會改為建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
+* 在外部帳戶中新增&#x200B;**啟用SMPP追蹤**&#x200B;核取方塊，以強制追蹤輸出。 如需詳細資訊，請參閱[詳細文件](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)，以瞭解詳情。
 
 **技術演變**
 
