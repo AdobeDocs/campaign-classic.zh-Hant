@@ -2,11 +2,8 @@
 product: campaign
 title: 第 19.2 發行版本
 description: Campaign 19.2發行說明
-feature: null
-role: null
-level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 21%
@@ -15,7 +12,7 @@ ht-degree: 21%
 
 # 第 19.2 發行版本{#release-19-2}
 
-## ![](assets/do-not-localize/limited_2.png) 發行版本 19.2.4 - 建置 9082 {#release-19-2-4-build-9082}
+## ![](assets/do-not-localize/limited_2.png) 發行版本 19.2.4 - 版本編號 9082 {#release-19-2-4-build-9082}
 
 _2021年 4 月 15 日_
 
@@ -41,17 +38,17 @@ _2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。[深入瞭解](../../technotes/ims-updates.md)
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/ims-updates.md)
    >
    > 
-* 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+* 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 
 
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 19.2.3 - 建置 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.2.3 - 版本編號 9081 {#release-19-2-3-build-9081}
 
 _2020年2月7日_
 
@@ -60,11 +57,11 @@ _2020年2月7日_
 * 修正因實作SSL憑證而導致使用者連線在Windows伺服器上失敗的回歸問題。 (NEO-20629)
 * 修正&#x200B;**關於**&#x200B;功能表中顯示錯誤版本標籤編號的問題。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 19.2 - 建置 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) 發行版本 19.2 - 版本編號 9080 {#release-19-2-build-9080}
 
 _2019 年 12 月 2 日_
 
-**新增功能？**
+**有哪些新增功能？**
 
 <table> 
  <thead> 
@@ -92,7 +89,7 @@ _2019 年 12 月 2 日_
  <tbody> 
   <tr> 
    <td> <p>您現在可以使用預先定義的檢視，監控執行個體上所有工作流程的執行狀態。</p>
-   <p>如需詳細資訊，請參閱<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">相關的文件</a>，以瞭解詳情。</p></td> 
+   <p>如需詳細資訊，請參閱<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">詳細文件</a>，以瞭解詳情。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,7 +119,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>現在透過Extended Generic SMPP連接器支援安全SMS。 這允許與提供者的加密連線。</p> <p><strong></strong> 警告：所有伺服器上都需要最新憑證才能使用此功能。憑證無效、撤銷或過期將產生錯誤，影響整體SMS傳送功能。</p><p>如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html">相關的文件</a>，以瞭解詳情。 </p> </td> 
+<td> <p>現在透過Extended Generic SMPP連接器支援安全SMS。 這允許與提供者的加密連線。</p> <p><strong></strong> 警告：所有伺服器上都需要最新憑證才能使用此功能。憑證無效、撤銷或過期將產生錯誤，影響整體SMS傳送功能。</p><p>如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html">詳細文件</a>，以瞭解詳情。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
