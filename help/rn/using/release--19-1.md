@@ -3,20 +3,23 @@ product: campaign
 title: Campaign 19.1發行說明
 description: Campaign 19.1發行說明
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
+source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3308'
 ht-degree: 25%
 
 ---
 
 # 第 19.1 發行版本{#release-19-1}
 
+![](../../assets/v7-only.svg)
+
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 19.1.8 - 版本編號 9039 {#release-19-1-8-build-9039}
 
 _2021年 4 月 15 日_
 
 * 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
+* 修正了可封鎖工作流程資料匯出至FDA資料庫(Teradate,Snowflake)的回歸。
 
 **僅主控台升級為強制性。不需要升級伺服器。**
 
@@ -38,7 +41,7 @@ _2020 年 12 月 16 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/ims-updates.md)
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須提供[OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
 
