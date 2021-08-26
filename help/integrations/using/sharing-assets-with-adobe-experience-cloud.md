@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: eb630b29dba8cc34046e2f14e9ed6ba8c017ea5d
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ Experience Cloud資產提供單一、集中的存放庫，存放您可在各解�
 
 >[!NOTE]
 >
->在Adobe Campaign內部部署環境中，除非AEM Assets也是內部部署，否則無法與Assets核心服務及AEM Assets整合。
+>在Adobe Campaign內部部署環境中，除非AEM Assets也是內部部署，否則無法與Assets核心服務整合。

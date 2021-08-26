@@ -6,29 +6,29 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: eb630b29dba8cc34046e2f14e9ed6ba8c017ea5d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '524'
 ht-degree: 1%
 
 ---
 
 # 設定資產存取權{#configuring-access-to-assets}
 
-本節詳細說明Adobe Campaign中使用與Assets核心服務或Adobe Experience Manager Assets資料庫整合功能的必要設定步驟。
+本節詳細說明Adobe Campaign中使用與Assets核心服務或Adobe Experience Manager Assets(AEM Assets)程式庫整合功能的必要設定步驟。
 
 >[!CAUTION]
 >
 >這些整合是同時進行的。 進行任何配置前，請仔細閱讀以下資訊。
 
-* 與&#x200B;**Experience Cloud資產**&#x200B;整合：此整合可讓您從Adobe Experience Cloud資料庫插入影像。 此程式庫可以是資產核心服務或隨選資產，視您的設定和授權模式而定。 必須在Adobe Campaign中安裝&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;內建套件，才能設定此整合。
-* 與&#x200B;**AEM Assets**&#x200B;整合：此整合可讓您從Adobe Experience Manager資產資料庫插入影像。 必須在Adobe Campaign中安裝&#x200B;**[!UICONTROL AEM Integration]**&#x200B;內建套件，才能設定此整合。
+* 與&#x200B;**Experience Cloud資產**&#x200B;整合：此整合可讓您從Adobe Experience Cloud資料庫插入影像。 必須在Adobe Campaign中安裝&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;內建套件，才能設定此整合。
+* 與&#x200B;**AEM Assets**&#x200B;整合：此整合可讓您從Adobe Experience Manager Assets資料庫插入影像。 必須在Adobe Campaign中安裝&#x200B;**[!UICONTROL AEM Integration]**&#x200B;內建套件，才能設定此整合。 請注意，Adobe Experience Manager 6.5已不再提供此整合。
 
 >[!NOTE]
 >
 >如果安裝了兩個套件（**[!UICONTROL AEM Integration]**&#x200B;和&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**），則只能使用Adobe Experience Cloud資料庫中可用的資產。
 
-## 與Experience Cloud資產整合{#integrating-with-experience-cloud-assets}
+## 與Experience Cloud資產整合 {#integrating-with-experience-cloud-assets}
 
 若要使用Adobe Campaign與Experience Cloud資產之間的整合，您必須：
 
@@ -44,7 +44,12 @@ ht-degree: 1%
 >
 >連結至此整合的功能僅適用於透過IMS連結至其Adobe ID的使用者。
 
-## 與AEM Assets整合{#integrating-with-aem-assets}
+## 與AEM Assets整合 {#integrating-with-aem-assets}
+
+
+>[!CAUTION]
+>
+>自Adobe Experience Manager 6.5起，此功能已解除編譯。 [了解詳情](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=en#removed-features)
 
 若要整合AEM Assets與Adobe Campaign，您必須先設定Adobe Experience Manager與Adobe Campaign之間的整合。 此設定主要需要：
 
