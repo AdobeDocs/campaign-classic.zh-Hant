@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 供應商、庫存和預算{#providers-stocks-and-budgets}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您定義要參與行銷活動中執行之作業的服務提供者。 有關服務提供商和相關成本結構的資訊由Adobe Campaign管理員從主視圖中定義。 服務提供者從交付中被引用，其成本結構允許計算與此交付相關的成本以及有關庫存的管理。
 

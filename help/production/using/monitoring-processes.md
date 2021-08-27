@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 監控流程{#monitoring-processes}
 
+![](../../assets/v7-only.svg)
+
 可以手動或自動監視應用程式伺服器和重定向伺服器(**tracking**)。
 
-## 手動監視{#manual-monitoring}
+## 手動監控 {#manual-monitoring}
 
 前往&#x200B;**[!UICONTROL Monitoring]**，按一下&#x200B;**[!UICONTROL Overview]**&#x200B;連結以顯示Adobe Campaign程式監控頁面。
 
@@ -31,13 +33,13 @@ ht-degree: 0%
 
 監控不同促銷活動程式的其他方式顯示在[此頁面](../../production/using/monitoring-guidelines.md)中。
 
-### 日誌日誌{#log-journal}
+### 日誌日誌 {#log-journal}
 
 可以顯示與進程相關的日誌日誌。 若要這麼做，請按一下程式&#x200B;**mta**，然後按一下&#x200B;**[!UICONTROL Open the log journal]** 。
 
 ![](assets/d_ncs_monitoring2.png)
 
-### 系統指示器{#system-indicators}
+### 系統指標 {#system-indicators}
 
 系統指示器清單使您能夠顯示有關電腦的資訊，如其物理和虛擬記憶體、活動進程和可用磁碟空間。 Linux和Windows作業系統的指標不同。 前往&#x200B;**[!UICONTROL Instance Monitoring]**&#x200B;頁面，然後按一下&#x200B;**[!UICONTROL Display]**&#x200B;連結以開啟指標清單
 
@@ -207,7 +209,7 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** 當僵屍進程數達到2時，將顯示此指示器。
 
-#### 自定義指標{#customized-indicators}
+#### 自訂指標 {#customized-indicators}
 
 Adobe Campaign可讓您自訂指標。 操作步驟：
 
@@ -239,7 +241,7 @@ Adobe Campaign可讓您自訂指標。 操作步驟：
 
 此檔案將由Adobe Campaign呼叫。
 
-## SMTP報表{#smtp-reports}
+## SMTP報表 {#smtp-reports}
 
 SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台或使用Web存取來存取這些檔案。
 
@@ -259,8 +261,7 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 >
 
 
-
-### SMTP發送統計資料{#smtp-sending-statistics}
+### SMTP發送統計資訊 {#smtp-sending-statistics}
 
 **[!UICONTROL SMTP sending statistics]**&#x200B;報表可讓您控制伺服器活動。 它顯示每個匹配項的合成。
 
@@ -292,7 +293,7 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 >
 >此報表與電子郵件流量整形器元件的狀態有關。
 
-### 每個域{#smtp-errors-per-domain}的SMTP錯誤
+### 每個域的SMTP錯誤 {#smtp-errors-per-domain}
 
 此報告可讓您檢視依網域劃分的指定期間內的傳送錯誤。
 
@@ -336,7 +337,7 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 >
 >有關SMTP錯誤以及在Adobe Campaign中管理這些錯誤的詳細資訊，請參閱[本節](../../installation/using/email-deliverability.md)。
 
-## 帳單報告{#billing-report}
+## 帳單報告 {#billing-report}
 
 **[!UICONTROL Billing]**&#x200B;技術工作流程會透過電子郵件將系統活動報表傳送至「帳單」運算子。 預設會在行銷執行個體上每月25日觸發。
 
@@ -358,11 +359,11 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 * **[!UICONTROL Multiplier (x)]** :從報文的平均體積推導出乘數的值。
 * **[!UICONTROL Count]** :消息和乘數的乘法結果。
 
-## 自動監視{#automatic-monitoring}
+## 自動監控 {#automatic-monitoring}
 
 Adobe Campaign提供數種自動監控方法，如下所示。
 
-### 命令行{#command-line}
+### 命令列 {#command-line}
 
 命令
 
@@ -382,7 +383,7 @@ stat@prod
 wfserver@prod
 ```
 
-### 伺服器{#information-published-by-the-server}發佈的資訊
+### 伺服器發佈的資訊 {#information-published-by-the-server}
 
 #### /r/test {#r-test}
 
@@ -428,7 +429,7 @@ wfserver@prod
 
 此&#x200B;**jsp**&#x200B;代表Adobe Campaign應用程式API的入口點。 因此，它可以提供應用程式的詳細監控。 它也可用來監視Adobe Campaign Web服務。 它用於監控指令碼中，但請注意，它僅適用於高級用戶。
 
-### 基於部署類型{#monitoring-based-on-deployment-types}的監視
+### 根據部署類型進行監控 {#monitoring-based-on-deployment-types}
 
 Adobe Campaign會啟用各種部署設定（如需詳細資訊，請參閱[此區段](../../installation/using/hosting-models.md)）。 本節詳細說明根據安裝類型要應用的各種自動監視技術。
 
@@ -473,7 +474,7 @@ Adobe Campaign會啟用各種部署設定（如需詳細資訊，請參閱[此�
  </tbody> 
 </table>
 
-## 透過Adobe Campaign指令碼進行自動監控{#automatic-monitoring-via-adobe-campaign-scripts}
+## 透過Adobe Campaign指令碼自動監控 {#automatic-monitoring-via-adobe-campaign-scripts}
 
 Adobe Campaign可提供執行個體監控工具(netreport)，讓您透過電子郵件傳送關於偵測到異常的報表。
 
@@ -483,7 +484,7 @@ Adobe Campaign可提供執行個體監控工具(netreport)，讓您透過電子�
 >
 >此工具可用來監視您的執行個體，但Adobe Campaign不支援。 如需詳細資訊，請連絡您的Campaign管理員。
 
-### 所需元素{#required-elements}
+### 必要元素 {#required-elements}
 
 自動監控需要下列預安裝注意事項：
 
@@ -492,7 +493,7 @@ Adobe Campaign可提供執行個體監控工具(netreport)，讓您透過電子�
 * 它必須安裝在具有JRE或JDK的電腦上，
 * 在Linux中，要監視的電腦必須具有&#x200B;**bc**&#x200B;包。 如需詳細資訊，請參閱[本章節](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)。
 
-### 安裝過程{#installation-procedure}
+### 安裝程式 {#installation-procedure}
 
 安裝步驟如下：
 
@@ -502,7 +503,7 @@ Adobe Campaign可提供執行個體監控工具(netreport)，讓您透過電子�
 1. 更新&#x200B;**netconf.xml**&#x200B;配置檔案。
 1. 更新&#x200B;**netreport.bat**(Windows)或&#x200B;**netreport.sh**(Linux)檔案。
 
-### 配置netconf.xml檔案{#configuring-the-netconf-xml-file}
+### 配置netconf.xml檔案 {#configuring-the-netconf-xml-file}
 
 XML配置檔案包含以下元素：
 
@@ -547,7 +548,7 @@ XML配置檔案包含以下元素：
 >
 >要使&#x200B;**monitoring**&#x200B;運算子工作，執行Netreport的電腦必須位於處於&#x200B;**sessionTokenOnly**&#x200B;模式的安全區域中。 如果未為此運算子指定可信IP掩碼，則安全區域也必須處於&#x200B;**allowEmptyPassword**&#x200B;和&#x200B;**allowUserPassword**&#x200B;模式。
 
-#### 「Properties」元素{#properties--element}
+#### 「屬性」元素 {#properties--element}
 
 此元素用於填入電子郵件的設定，即
 
@@ -567,7 +568,7 @@ XML配置檔案包含以下元素：
 >
 >**`<property>`**&#x200B;元素上具有值「true」的&#x200B;**persistHtmlFile**&#x200B;屬性用於在檔案&#x200B;**netreport.md**&#x200B;中記錄最新的監控狀態。 此檔案將保存在安裝目錄中。
 
-#### 「Instance」元素{#instance--element}
+#### 「例項」元素 {#instance--element}
 
 此元素可讓您將數部電腦（主機）重新分組至相同的例項。 執行個體名稱會出現在監控電子郵件的第一部分。 您可以按一下執行個體的名稱，以存取有關每部電腦的詳細資訊。
 
@@ -585,7 +586,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **名稱**:會出現在電子郵件第一部分的執行個體名稱。
 * **recipientList** （選用）:可讓您透過電子郵件傳送有關特定例項的監控報告。
 
-#### 「Host」元素{#host--element}
+#### 「主機」元素 {#host--element}
 
 此元素會設定主機上指定伺服器的監控，即
 
@@ -600,7 +601,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **criticalLevel** （可選）:可讓您依嚴重性層級來排序錯誤。可能的值為「0」（顯示所有級別）、「1」（僅顯示高錯誤和嚴重錯誤）和「2」（僅顯示嚴重錯誤）。 如果未提供此屬性，則顯示所有錯誤級別。
 * **篩選** （選用）:可讓您排除某些工作流程錯誤， **例如filter=&quot;wkf;wkf1&quot;**。工作流程標籤必須以分號分隔。
 
-#### 子元素{#sub-elements}
+#### 子元素 {#sub-elements}
 
 * **tcp**:檢查伺服器是否處於開啟或關閉狀態。必須輸入埠號。
 * **http**:檢查Web伺服器是否存在（應用程式伺服器可運行）。
@@ -617,15 +618,15 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 
 在&#x200B;**ncs**、**redir**&#x200B;和&#x200B;**http**&#x200B;子元素中，可以添加&#x200B;**isSecure**&#x200B;屬性（可選）以選擇是否使用https協定（「true」或「false」值）。 如果未提供此屬性，則使用http通訊協定。
 
-### 配置netreport.bat或netreport.sh檔案{#configuring-the-netreport-bat-or-netreport-sh--file}
+### 配置netreport.bat或netreport.sh檔案 {#configuring-the-netreport-bat-or-netreport-sh--file}
 
 要配置它，請編輯此檔案並指明JRE或JDK安裝在哪個目錄中。
 
-### 正在啟動監視{#launching-monitoring}
+### 啟動監視 {#launching-monitoring}
 
 要啟動監視，請通過指令碼定期執行&#x200B;**netreport.bat**&#x200B;或&#x200B;**netreport.sh**&#x200B;檔案。 報表會在第一次執行後傳送，然後只會在狀態變更時傳送。
 
-### 測試監視{#testing-monitoring}
+### 測試監控 {#testing-monitoring}
 
 要測試監視，請執行&#x200B;**netreport.bat**&#x200B;或&#x200B;**netreport.sh**&#x200B;檔案。
 

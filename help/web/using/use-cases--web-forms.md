@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 使用實例：網路表單{#use-cases-web-forms}
 
-## 使用雙重加入{#create-a-subscription--form-with-double-opt-in}建立訂閱表單
+![](../../assets/common.svg)
+
+## 使用雙重加入建立訂閱表單 {#create-a-subscription--form-with-double-opt-in}
 
 當您提供資訊服務時，收件者需要訂閱才能接收所有連結的通訊。 為避免不當通訊並確保收件者有意訂閱，我們建議傳送訂閱確認請求以建立雙重加入。 只有當使用者按一下確認訊息中包含的連結時，訂閱才會生效。
 
@@ -24,7 +26,7 @@ ht-degree: 1%
 1. 在包含訂閱暫時服務核取方塊的網站上建立電子報訂閱表單。 此服務可讓您傳送訂閱確認訊息。
 1. 使用連結至Web表單的傳遞範本建立訂閱確認傳送。 它包含的確認連結會呼叫電子報訂閱的表單，並顯示訂閱核准訊息。
 
-### 步驟1 — 建立資訊服務{#step-1---creating-information-services}
+### 步驟1 — 建立資訊服務 {#step-1---creating-information-services}
 
 1. 建立要提供給收件者的電子報訂閱服務。 如需如何建立電子報的詳細資訊，請參閱[本區段](../../delivery/using/about-services-and-subscriptions.md)。
 
@@ -34,7 +36,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### 步驟2 — 建立確認消息{#step-2---creating-confirmation-messages}
+### 步驟2 — 建立確認訊息 {#step-2---creating-confirmation-messages}
 
 確認訊息會透過臨時服務層級參考的專用傳送範本傳送。
 
@@ -68,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### 步驟3 — 建立訂閱表單{#step-3---creating-the-subscription-form}
+### 步驟3 — 建立訂閱表單 {#step-3---creating-the-subscription-form}
 
 Web表單可啟用收件者訂閱和訂閱確認。
 
@@ -149,7 +151,7 @@ Web表單可啟用收件者訂閱和訂閱確認。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
-### 步驟4 — 發佈並測試表單{#step-4---publishing-and-testing-the-form}
+### 步驟4 — 發佈和測試表單 {#step-4---publishing-and-testing-the-form}
 
 您現在可以發佈表單，讓使用者可存取。
 
@@ -184,7 +186,7 @@ Web表單可啟用收件者訂閱和訂閱確認。
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
-## 根據所選值{#displaying-different-options-depending-on-the-selected-values}顯示不同的選項
+## 根據所選值顯示不同的選項 {#displaying-different-options-depending-on-the-selected-values}
 
 在以下範例中，會要求使用者選取車輛類型。 您可以根據所選類型顯示可用的車輛類別。 這表示右側欄中顯示的項目取決於使用者的選取項目：
 

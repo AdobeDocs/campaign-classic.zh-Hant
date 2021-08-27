@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 模擬追蹤{#simulation-tracking}
+
+![](../../assets/v7-only.svg)
 
 模擬完成後，您可以通過&#x200B;**[!UICONTROL Results]**&#x200B;頁簽分析其結果，該頁簽添加到模擬窗口中，並通過模擬儀表板中的&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;報告進行分析。
 

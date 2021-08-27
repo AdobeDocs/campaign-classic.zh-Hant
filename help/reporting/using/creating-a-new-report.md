@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 建立新報吿{#creating-a-new-report}
+
+![](../../assets/common.svg)
 
 若要建立報表，請套用下列步驟：
 
@@ -37,7 +39,7 @@ ht-degree: 1%
 
 1. 儲存此報表。
 
-## 建模圖表{#modelizing-the-chart}
+## 建模圖表 {#modelizing-the-chart}
 
 儲存報表後，應會顯示此訊息。 您現在可以建立報表的圖表。
 
@@ -87,7 +89,7 @@ ht-degree: 1%
 
 ![](assets/reporting_graph_sample_ok.png)
 
-## 建立頁面{#creating-a-page}
+## 建立頁面 {#creating-a-page}
 
 內容是透過放在圖表中的活動來設定。 有關詳細資訊，請參閱[建模圖表](#modelizing-the-chart)。
 
@@ -125,13 +127,13 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_wizard_08.png)
 
-### 靜態元素{#static-elements}
+### 靜態元素 {#static-elements}
 
 靜態元素可讓您在報表中顯示使用者不會與之互動的資訊，例如圖形元素或指令碼。 如需詳細資訊，請參閱[此區段](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
-### 篩選報表{#filtering-information-in-a-report}中的資訊
+### 篩選報表中的資訊 {#filtering-information-in-a-report}
 
 輸入和選取控制項可讓您篩選報表中顯示的資訊。 有關實作此類型篩選的詳細資訊，請參閱查詢](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries)中的[篩選選項。
 

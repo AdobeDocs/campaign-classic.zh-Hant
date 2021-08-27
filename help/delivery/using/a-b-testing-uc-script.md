@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # 建立指令碼 {#step-5--creating-the-script}
 
+![](../../assets/common.svg)
+
 以剩餘母體為目的地的傳送內容選擇，由指令碼計算。 此指令碼會以最高開啟率來復原有關傳送的資訊，並將內容複製到最終傳送。
 
-## 指令碼{#example-of-a-script}的示例
+## 指令碼範例 {#example-of-a-script}
 
 下列指令碼可如同在目標工作流程中使用。 如需詳細資訊，請參閱[本章節](#implementation)。
 
@@ -85,7 +87,7 @@ ht-degree: 4%
 1. 關閉&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
 1. 儲存您的工作流程。
 
-## 指令碼{#details-of-the-script}的詳細資訊
+## 指令碼的詳細資訊 {#details-of-the-script}
 
 本節詳細說明指令碼的各個部分及其操作模式。
 
@@ -156,7 +158,7 @@ ht-degree: 4%
    vars.deliveryId = delivery.id
    ```
 
-## 其他選擇標準{#other-selection-criteria}
+## 其他選擇標準 {#other-selection-criteria}
 
 上述範例可讓您根據電子郵件的開啟率來選取傳送的內容。 您可以調整它，以依據其他特定傳送指標：
 
@@ -168,4 +170,4 @@ ht-degree: 4%
 * 最低取消訂閱率：`[indicators/@optOutRatio]`,
 * 交易金額：`[indicators/@amount]`。
 
-您現在可以定義最終傳送。 [瞭解更多](a-b-testing-uc-final-delivery.md)。
+您現在可以定義最終傳送。 [深入瞭解](a-b-testing-uc-final-delivery.md)。

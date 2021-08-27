@@ -6,28 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 8%
 
 ---
 
-# compute-string元素{#compute-string--element}
+# compute-string元素 {#compute-string--element}
 
-## 內容模型{#content-model-1}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-1}
 
 compute-string:==EMPTY
 
-## 屬性{#attributes-1}
+## 屬性 {#attributes-1}
 
 @expr
 
-## 父級{#parents-1}
+## 父母 {#parents-1}
 
 `<element>`
 
-## 子項{#children-1}
+## 兒童 {#children-1}
 
 無
 
@@ -35,11 +37,11 @@ compute-string:==EMPTY
 
 `<compute-string>`元素可讓您根據XTK運算式產生字串，以根據數個值在介面中顯示「已建置」標籤。
 
-## 使用與使用內容{#use-and-context-of-use-1}
+## 使用與使用內容 {#use-and-context-of-use-1}
 
 未定義`<compute-string>`時，預設會輸入`<compute-string>`元素，並包含架構中主鍵的值。
 
-## 屬性說明{#attribute-description-1}
+## 屬性說明 {#attribute-description-1}
 
 * **expr（字串）**:XTK和/或Xpath運算式
 

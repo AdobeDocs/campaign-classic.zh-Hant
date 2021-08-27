@@ -2,18 +2,20 @@
 product: campaign
 title: '[!DNL Gold Standard]發行說明'
 description: Campaign Classic 發行說明 [!DNL Gold Standard]
-feature: 概覽
+feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1105'
 ht-degree: 90%
 
 ---
 
 # [!DNL Gold Standard] 發行說明{#gold-standard}
+
+![](../../assets/v7-only.svg)
 
 本頁面列出 [!DNL Gold Standard] 發行版本。在本頁中](gs-overview.md)進一步瞭解 Campaign [!DNL Gold Standard] [。
 
@@ -24,19 +26,18 @@ _2021年 4 月 14 日_
 建置 9032@d030c36 包含以下修正：
 
 * 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
-* 維護[IMS存取](../../technotes/ims-updates.md)需要此主控台組建。
+* 維護[IMS存取](../../technotes/using/ims-updates.md)需要此主控台組建。
 
 **僅主控台升級為強制性。不需要升級伺服器。**
 
 >[!CAUTION]
 >
-> * 如果您透過Adobe ID連線至Campaign，透過AdobeIdentity Management服務(IMS)，對於Campaign伺服器和用戶端主控台而言，必須進行升級，才能在2021年6月30日&#x200B;**之後連線至Campaign。** [深入瞭解](../../technotes/ims-updates.md)
+> * 如果您透過Adobe ID連線至Campaign，透過AdobeIdentity Management服務(IMS)，對於Campaign伺服器和用戶端主控台而言，必須進行升級，才能在2021年6月30日&#x200B;**之後連線至Campaign。** [深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須提供[OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
 
 >
->
-了解更多[[!DNL Gold Standard] 11升級常見問題集](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)
+>了解更多[[!DNL Gold Standard] 11升級常見問題集](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)
 
 _2021年 3 月 2 日_
 
@@ -55,7 +56,7 @@ _2020 年 12 月 22 日_
 <!--
 >[!CAUTION]
 >
-> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/ims-updates.md)
+> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/using/ims-updates.md)
 > * This release comes with a [security fix](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): upgrade is mandatory to reinforce your environment security. 
 > * If you are using the Experience Cloud Triggers integration through oAuth authentication, you need to move to Adobe I/O as described [in this page](../../integrations/using/configuring-adobe-io.md). Legacy oAuth authentication mode with Campaign will be retired on **November 30, 2021**.
 >

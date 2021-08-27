@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
-# 管理工作流權限{#managing-rights}
+# 管理工作流程權限{#managing-rights}
+
+![](../../assets/common.svg)
 
 如果Adobe Campaign運算子不是管理員，則需要存取權限才能建立、執行或修改工作流程。
 
@@ -23,7 +25,7 @@ ht-degree: 0%
 
 有關管理運算子和權限的詳細資訊，請參閱此[節](../../platform/using/access-management.md)。
 
-## 運算子組{#operator-groups-wf}
+## 運算元組 {#operator-groups-wf}
 
 下列運算子群組會與工作流程相關聯：
 
@@ -31,11 +33,11 @@ ht-degree: 0%
 * **[!UICONTROL Workflow supervisors]**&#x200B;群組可讓運算子管理工作流程核准。
 * 存取促銷活動工作流程的&#x200B;**[!UICONTROL Operation Managers]**&#x200B;群組。
 
-## 已命名權限{#named-rights}
+## 已命名的權限 {#named-rights}
 
 只有名為右側的工作流程專屬於工作流程：它可讓您建立、啟動和停止工作流程。 需要有工作流檔案的讀取權限才能適用已命名的權限。 對於目標工作流程，**[!UICONTROL Profiles and Targets]**&#x200B;檔案上需要右鍵的讀取。
 
-## 工作流執行帳戶{#workflow-execution-account}
+## 工作流執行帳戶 {#workflow-execution-account}
 
 您可以設定要在工作流程範本層級使用的執行帳戶。 執行帳戶可讓您直接將授權對應至工作流程，而不考慮開始執行的Adobe Campaign運算子。 依預設，每個工作流程都會以啟動該工作流程的運算子的權限執行。
 

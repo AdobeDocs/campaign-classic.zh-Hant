@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 方案結構{#schema-structure}
+
+![](../../assets/v7-only.svg)
 
 `<srcschema>`的基本結構如下：
 
@@ -145,7 +147,7 @@ ht-degree: 1%
 * **datetimenotz**:日期+時間（不含時區資料）。
 * **時間範圍**:持續時間。範例：資歷。
 * **備忘錄**:長文本欄位（多行）。範例：說明、注釋等。
-* **uuid**:用於支援GUID的&quot;uniqueidentifier&quot;欄位（僅Microsoft SQL Server中支援）。
+* **uuid**:支援GUID的&quot;uniqueidentifier&quot;欄位（僅Microsoft SQL Server支援）。
 
    >[!NOTE]
    >
@@ -166,7 +168,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-### 映射Adobe Campaign/DBMS資料{#mapping-the-types-of-adobe-campaign-dbms-data}的類型
+### 對應Adobe Campaign/DBMS資料的類型 {#mapping-the-types-of-adobe-campaign-dbms-data}
 
 下表列出Adobe Campaign為不同資料庫管理系統產生的資料類型的對應。
 
@@ -181,7 +183,7 @@ ht-degree: 1%
    <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> String<br /> </td> 
+   <td> 字串<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2（如果為unicode，則為NVARCHAR2）<br /> </td> 
    <td> VARCHAR（如果為Unicode，則為VARCHAR字元集UNICODE）<br /> </td> 
@@ -299,7 +301,7 @@ ht-degree: 1%
 
 資料架構的&#x200B;**`<elements>`**&#x200B;和&#x200B;**`<attributes>`**&#x200B;元素可以豐富各種屬性。 您可以填入標籤以說明目前的元素。
 
-### 標籤和說明{#labels-and-descriptions}
+### 標籤和說明 {#labels-and-descriptions}
 
 * **label**&#x200B;屬性可讓您輸入簡短說明。
 
@@ -331,7 +333,7 @@ ht-degree: 1%
    <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
    ```
 
-### 預設值{#default-values}
+### 預設值 {#default-values}
 
 **default**&#x200B;屬性可讓您定義在內容建立時傳回預設值的運算式。
 
@@ -356,7 +358,7 @@ ht-degree: 1%
 
 ### 分項清單 {#enumerations}
 
-#### 自由枚舉{#free-enumeration}
+#### 自由枚舉 {#free-enumeration}
 
 **userEnum**&#x200B;屬性可讓您定義自由枚舉，以記住並顯示通過此欄位輸入的值。 語法如下：
 
@@ -372,7 +374,7 @@ ht-degree: 1%
 >
 >在Adobe Campaign用戶端主控台中， **[!UICONTROL Administration > Enumerations]**&#x200B;節點用於管理列舉。
 
-#### 設定枚舉{#set-enumeration}
+#### 設定枚舉 {#set-enumeration}
 
 **enum**&#x200B;屬性可讓您定義預先知道可能值清單時所使用的固定分項清單。
 
@@ -406,7 +408,7 @@ ht-degree: 1%
 * **名稱**:內部儲存的值名稱，
 * **標籤**:標籤。
 
-#### dbenum枚舉{#dbenum-enumeration}
+#### dbenum枚舉 {#dbenum-enumeration}
 
 * **dbenum**&#x200B;屬性可讓您定義屬性與&#x200B;**enum**&#x200B;屬性相似的分項清單。
 
@@ -462,7 +464,7 @@ ht-degree: 1%
 <group label="Group2"/>
 ```
 
-## 使用XPath {#referencing-with-xpath}引用
+## 使用XPath引用 {#referencing-with-xpath}
 
 Adobe Campaign中使用XPath語言來參考屬於資料架構的元素或屬性。
 
@@ -488,7 +490,6 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 >
 
 
-
 您也可以定義複雜的運算式，例如下列運算：
 
 * **@gender+1**:將1新增至genderattribute的內 **** 容，
@@ -506,7 +507,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 * **年(@created)**:傳回「已建立」屬性中包含的日期年份。
 * **GetEmailDomain(@email)**:返回電子郵件地址的域。
 
-## 透過計算字串{#building-a-string-via-the-compute-string}建立字串
+## 透過計算字串建立字串 {#building-a-string-via-the-compute-string}
 
 **計算字串**&#x200B;是XPath表達式，用於構造表示與架構相關聯的表中的記錄的字串。 **計** 算字串主要用於圖形介面，以顯示所選記錄的標籤。
 

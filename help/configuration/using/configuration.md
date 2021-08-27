@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 設定Campaign Explorer導覽樹{#configuration}
+
+![](../../assets/v7-only.svg)
 
 作為專家用戶，您可以在資源管理器樹中添加資料夾並對其進行自定義。
 
@@ -49,7 +51,7 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 
 檔案類型的聲明在文檔中具有以下元素：**`<model>`**&#x200B;和&#x200B;**`<nodemodel>`**。
 
-## 全局命令{#global-commands}
+## 全局命令 {#global-commands}
 
 全域命令可讓您啟動動作。 此動作可以是輸入表單或SOAP呼叫。
 
@@ -131,7 +133,7 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
    </command>
    ```
 
-## 資料夾類型{#folder-type}
+## 資料夾類型 {#folder-type}
 
 資料夾類型可讓您存取結構的資料。 與資料夾關聯的視圖由清單和輸入表單組成。
 
@@ -224,7 +226,7 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 </view>  
 ```
 
-### 快捷方式命令{#shortcut-commands}
+### 快捷方式命令 {#shortcut-commands}
 
 快速鍵命令可讓您在選取清單時啟動動作。 動作可以是輸入表單或SOAP呼叫。
 
@@ -287,7 +289,7 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 </command>
 ```
 
-### 連結的資料夾{#linked-folder}
+### 連結的資料夾 {#linked-folder}
 
 資料夾管理操作有兩種類型：
 

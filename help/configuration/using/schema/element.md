@@ -6,30 +6,32 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '2012'
 ht-degree: 0%
 
 ---
 
-# 元素元素{#element--element}
+# 元素 {#element--element}
 
-## 內容模型{#content-model-4}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-4}
 
 元素：==(屬性 | compute-string | dbindex |預設 |元素 |幫助 |加入 |鍵 | sysFilter | translatedDefault)
 
-## 屬性{#attributes-4}
+## 屬性 {#attributes-4}
 
 _operation（字串）、advanced(boolean)、aggregate(string)、appliableIf(string)、autopk(boolean)、tellesTo(string)、convDate(string)、dataPolicy(string)、dataSource(string)、dbEnum(string)、defOnDuplicate(boolean)、desc(string)、displayAsField(boolean)、doesNotSupportDiff(boolen)、edit(string)、empty(string)、emptyKeyKeyEn(enum)、enum(en(enum)、en(emStringString)、enum(en(en(enum)、enum)SchemaTarget（字串）, expr（字串）, externalJoin(boolean), feature(string), featureDate(boolean), filterPath(string), folderLink(string), folderModel(string), fullLoad(boolean), hierarchPath(string), inout（字串）, integrity（字串）, label（字串）, labelSing(sing), length(length(sting), leng), leng), localablabereng(lacabeng), ler(lacalalable(locable), localled(localable), lonedNameng(locable), NARNEND索引鍵（布林值）、有序（布林值）、OVERFLOWTABLE（布林值）、PKSeQUENCE（字串）、PKGStatus（字串）、REF（字串）、必需（布林值）、REVAdvanced（布林值）、REVDESC（字串）、REVExtERNALJOIN（字串）、REVIntEGRITY（字串）、REVLaBEL（字串）、REVLink（字串）、REVTarget（字串）、REVViSIBLEIf（字串）、SQL（字串）、SQL(字串（字串）、SQL表)、SISIBLE(字串、SLEVISE（字串、SIBLE表）、STRE（STRING表）、STRING表、STRING表、STRING表、STRING表、SQLEX)SpaceIndex(STRING), TARGET(MNTOKEN)，範本(string), temporaryTable(boolean), translatedDefault(string), translatedExpr(string), type(MNTOKEN), unbound(boolean), user(boolean), userEnum(string), visibleIf(string), xml(boolean), xmlChildren(boolean)
 
-## 父級{#parents-4}
+## 父母 {#parents-4}
 
 `<srcschema>`
 
 `<element>`
 
-## 子項{#children-4}
+## 兒童 {#children-4}
 
 * `<attribute>`
 * `<compute-string>`
@@ -51,7 +53,7 @@ Adobe Campaign中有四種類型的`<element>`元素：
 * 連結`<element>` :定義連結。 這些元素必須包含&quot;@type=link&quot;屬性。
 * XML `<element>` :定義文字類型「mData」欄位。 此元素必須包含&quot;@type=xml&quot;屬性。
 
-## 屬性說明{#attribute-description-4}
+## 屬性說明 {#attribute-description-4}
 
 * **_operation(string)**:定義資料庫中的寫入類型。
 

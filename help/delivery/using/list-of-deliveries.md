@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 存取傳遞清單 {#list-of-deliveries}
+
+![](../../assets/common.svg)
 
 您可以透過樹狀結構的&#x200B;**[!UICONTROL Campaign Management > Deliveries]**&#x200B;節點，從傳遞清單存取傳遞。
 

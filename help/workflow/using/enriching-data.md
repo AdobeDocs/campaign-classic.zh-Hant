@@ -6,20 +6,22 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
 
 ---
 
-# 擴充資料{#enriching-data}
+# 豐富資料{#enriching-data}
 
-## 關於擴充資料{#about-enriching-data}
+![](../../assets/common.svg)
 
-此使用案例詳細資訊可能在目標工作流程中使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動。 有關使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動的詳細資訊，請參閱：[擴充](../../workflow/using/enrichment.md)。
+## 關於擴充資料 {#about-enriching-data}
 
-[此區段](../../workflow/using/email-enrichment-with-custom-date-fields.md)也提供如何以自訂日期豐富電子郵件傳送的使用案例。
+此使用案例詳細資訊可能在目標工作流程中使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動。 有關使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動的詳細資訊，請參閱：[擴充](enrichment.md)。
+
+[此區段](email-enrichment-with-custom-date-fields.md)也提供如何以自訂日期豐富電子郵件傳送的使用案例。
 
 通過Web應用程式向行銷資料庫中的聯繫人發送參加競爭的邀請。 在&#x200B;**[!UICONTROL Competition results]**&#x200B;表中恢復競爭結果。 此表連結到聯繫表(**[!UICONTROL Recipients]**)。 **[!UICONTROL Competition results]**&#x200B;表包含下列欄位：
 
@@ -46,7 +48,7 @@ ht-degree: 1%
 1. **[!UICONTROL Split]**&#x200B;類型活動使我們能夠根據分數建立收件人子集。
 1. 對於每個子集，將添加&#x200B;**[!UICONTROL Delivery]**&#x200B;類型活動。
 
-## 步驟1:定位{#step-1--targeting}
+## 步驟1:定位 {#step-1--targeting}
 
 第一個查詢可讓我們鎖定過去6個月內新增至資料庫的收件者。
 
@@ -58,7 +60,7 @@ ht-degree: 1%
 
 接著會新增&#x200B;**[!UICONTROL Intersection]**&#x200B;類型活動，以定位在過去6個月內新增至資料庫的收件者，以及加入上次競爭的收件者。
 
-## 步驟2:擴充{#step-2--enrichment}
+## 步驟2:擴充 {#step-2--enrichment}
 
 在此範例中，我們想根據&#x200B;**[!UICONTROL Competition results]**&#x200B;表格中儲存的&#x200B;**[!UICONTROL Score]**&#x200B;欄位來個人化傳送。 此表與收件者表具有1-n類型關係。 **[!UICONTROL Enrichment]**&#x200B;活動使我們能夠將資料從連結到篩選維的表中添加到工作流的工作表中。
 
@@ -70,19 +72,19 @@ ht-degree: 1%
 
    ![](assets/uc1_enrich_7.png)
 
-1. 輸入ID和標籤，並在&#x200B;**[!UICONTROL Data collected]**&#x200B;欄位中選擇&#x200B;**[!UICONTROL Limit the line count]**&#x200B;選項。 在&#x200B;**[!UICONTROL Lines to retrieve]**&#x200B;欄位中，選擇「1」作為值。 對於每個收件者，擴充活動會將單行從&#x200B;**[!UICONTROL Competition results]**&#x200B;表格新增至工作流程的工作表。 按一下 **[!UICONTROL Next]**。
+1. 輸入ID和標籤，並在&#x200B;**[!UICONTROL Data collected]**&#x200B;欄位中選擇&#x200B;**[!UICONTROL Limit the line count]**&#x200B;選項。 在&#x200B;**[!UICONTROL Lines to retrieve]**&#x200B;欄位中，選擇「1」作為值。 對於每個收件者，擴充活動會將單行從&#x200B;**[!UICONTROL Competition results]**&#x200B;表格新增至工作流程的工作表。 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_8.png)
 
-1. 在此範例中，我們想要復原收件者的最高分數，但僅針對上次競爭。 要執行此操作，請在&#x200B;**[!UICONTROL Competition name]**&#x200B;欄位中新增篩選器，以排除與先前競爭相關的所有行。 按一下 **[!UICONTROL Next]**。
+1. 在此範例中，我們想要復原收件者的最高分數，但僅針對上次競爭。 要執行此操作，請在&#x200B;**[!UICONTROL Competition name]**&#x200B;欄位中新增篩選器，以排除與先前競爭相關的所有行。 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_9.png)
 
-1. 前往&#x200B;**[!UICONTROL Sort]**&#x200B;畫面，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，選取&#x200B;**[!UICONTROL Score]**&#x200B;欄位並核取&#x200B;**[!UICONTROL descending]**&#x200B;欄中的方塊，以降序排序&#x200B;**[!UICONTROL Score]**&#x200B;欄位的項目。 對於每個收件者，擴充活動會新增一行，以符合上次遊戲的最高分數。 按一下 **[!UICONTROL Next]**。
+1. 前往&#x200B;**[!UICONTROL Sort]**&#x200B;畫面，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，選取&#x200B;**[!UICONTROL Score]**&#x200B;欄位並核取&#x200B;**[!UICONTROL descending]**&#x200B;欄中的方塊，以降序排序&#x200B;**[!UICONTROL Score]**&#x200B;欄位的項目。 對於每個收件者，擴充活動會新增一行，以符合上次遊戲的最高分數。 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_10.png)
 
-1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;視窗中，按兩下&#x200B;**[!UICONTROL Score]**&#x200B;欄位。 對於每個收件者，擴充活動只會新增&#x200B;**[!UICONTROL Score]**&#x200B;欄位。 按一下 **[!UICONTROL Finish]**。
+1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;視窗中，按兩下&#x200B;**[!UICONTROL Score]**&#x200B;欄位。 對於每個收件者，擴充活動只會新增&#x200B;**[!UICONTROL Score]**&#x200B;欄位。 按一下&#x200B;**[!UICONTROL Finish]**。
 
    ![](assets/uc1_enrich_11.png)
 
@@ -102,7 +104,7 @@ ht-degree: 1%
 
 ![](assets/uc1_enrich_14.png)
 
-## 步驟3:分割和傳送{#step-3--split-and-delivery}
+## 步驟3:分割和傳送 {#step-3--split-and-delivery}
 
 若要根據收件者的分數來排序，擴充後會新增&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 

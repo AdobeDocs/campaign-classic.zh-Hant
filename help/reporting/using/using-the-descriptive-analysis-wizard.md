@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 # 使用描述性分析精靈{#using-the-descriptive-analysis-wizard}
 
+![](../../assets/common.svg)
+
 若要建立描述性分析報表，請使用專用精靈。 設定取決於要分析的資料和所需的呈現。
 
-## 分析資料庫{#analyzing-data-in-the-database}中的資料
+## 分析資料庫中的資料 {#analyzing-data-in-the-database}
 
 描述性分析嚮導可通過&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜單啟動：在此情況下，分析預設與收件者有關(**nms:recipient**)。 它會套用至Adobe Campaign資料庫中的所有資料。
 
@@ -33,7 +35,7 @@ ht-degree: 1%
 
 這項分析將只涉及16歲及以上、居住在倫敦的資料庫接收者。
 
-## 分析資料集{#analyzing-a-set-of-data}
+## 分析一組資料 {#analyzing-a-set-of-data}
 
 您可以透過不同內容使用描述性分析精靈：清單、工作流程轉變、一或多個傳送、收件者選取等。
 
@@ -57,7 +59,7 @@ ht-degree: 1%
 
    以下提供傳送的描述性分析範例：[分析母體](../../reporting/using/use-cases.md#analyzing-a-population)和此處：[分析收件者追蹤記錄](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
 
-## 配置定性分佈模板{#configuring-the-qualitative-distribution-template}
+## 配置定性分佈模板 {#configuring-the-qualitative-distribution-template}
 
 **[!UICONTROL Qualitative distribution]**&#x200B;範本可讓您建立所有資料類型的統計資料（例如公司名稱、電子郵件網域）。
 
@@ -65,7 +67,7 @@ ht-degree: 1%
 
 使用描述性分析精靈分析資料時，可用的選項取決於所選的設定。 下文詳述。
 
-### 資料綁定{#data-binning}
+### 資料綁定 {#data-binning}
 
 選取要顯示的變數時，您可以定義資料捆綁，換句話說，就是為選取的資料設定分組條件。
 
@@ -106,7 +108,7 @@ ht-degree: 1%
 
    ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
-### 在表{#displaying-data-in-the-table}中顯示資料
+### 在表格中顯示資料 {#displaying-data-in-the-table}
 
 使用工具列來個人化表格中變數的顯示：刪除列、以行顯示資料而非以列顯示資料、將列向左或向右移動、查看或更改值計算。
 
@@ -116,7 +118,7 @@ ht-degree: 1%
 
 您可以顯示或隱藏統計資訊和子總計的名稱，並選擇統計資訊的方向。 如需詳細資訊，請參閱[分析報表顯示設定](../../reporting/using/processing-a-report.md#analysis-report-display-settings)。
 
-### 在圖表{#displaying-data-in-the-chart}中顯示資料
+### 在圖表中顯示資料 {#displaying-data-in-the-chart}
 
 在描述性分析精靈的第一個步驟中，您可以選擇只以圖表形式顯示資料，不使用表格。 在這種情況下，配置圖形時必須完成變數選擇。 您必須先選取要顯示的變數數，並從相關資料庫選取欄位。
 
@@ -136,7 +138,7 @@ ht-degree: 1%
 
 提供的選項取決於所選圖表的類型。 如需詳細資訊，請參閱[本頁面](../../reporting/using/creating-a-chart.md#chart-types-and-variants)。
 
-### 統計計算{#statistics-calculation}
+### 統計計算 {#statistics-calculation}
 
 描述性分析精靈可讓您計算資料的數種統計資料類型。 預設情況下，僅配置一個簡單計數。
 
@@ -180,7 +182,7 @@ ht-degree: 1%
 
       ![](assets/report_compute_data_sample4.png)
 
-### 顯示報表{#displaying-the-report}
+### 顯示報表 {#displaying-the-report}
 
 精靈的最後一個步驟可讓您顯示報表，亦即已設定的表格或圖表。
 
@@ -196,7 +198,7 @@ ht-degree: 1%
 
 ![](assets/report_display_data_in_graph.png)
 
-## 配置定量分佈模板{#configuring-the-quantitative-distribution-template}
+## 設定量化分佈範本 {#configuring-the-quantitative-distribution-template}
 
 若要自行產生描述性分析，請選取預設未設定的範本&#x200B;**選項中的**&#x200B;新增描述性分析。
 

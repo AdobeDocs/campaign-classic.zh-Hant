@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
 
 ---
 
-# 使用案例：傳送附件{#transactional-email-with-attachments}的交易式電子郵件
+# 使用案例：傳送含附件的交易式電子郵件 {#transactional-email-with-attachments}
+
+![](../../assets/v7-only.svg)
 
 此使用案例的目的是即時添加電子郵件附件到外寄派單。
 
@@ -75,7 +77,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;螢幕中，輸入SOAP附件參數：
 
    ```
-   <%= rtEvent.ctx.attachementUrl %>
+   <%= rtEvent.ctx.attachmentUrl %>
    ```
 
 1. 處理消息時，系統將從遠程位置（第三方伺服器）獲取該檔案，並將其附加到單個消息。

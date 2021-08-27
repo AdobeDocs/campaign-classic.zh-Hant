@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -15,20 +15,22 @@ ht-degree: 2%
 
 # 使用彙總{#using-aggregates}
 
+![](../../assets/common.svg)
+
 此使用案例詳細說明了如何自動識別上次新增至資料庫的收件者。
 
 使用以下過程，將資料庫中收件人的建立日期與上次使用匯總建立收件人的已知日期進行比較。 也會選取在同一天建立的所有收件者。
 
 若要對收件者執行&#x200B;**建立日期=最大值（建立日期）**&#x200B;類型篩選，您必須執行工作流程以遵循下列步驟：
 
-1. 使用基本查詢檢索資料庫收件人。 有關此步驟的詳細資訊，請參閱[建立查詢](../../workflow/using/query.md#creating-a-query)。
+1. 使用基本查詢檢索資料庫收件人。 有關此步驟的詳細資訊，請參閱[建立查詢](query.md#creating-a-query)。
 1. 使用從&#x200B;**max（建立日期）**&#x200B;匯總函式生成的結果計算建立收件人的最後已知日期。
 1. 將每個收件者連結至匯總函式會產生相同的架構。
 1. 透過編輯的結構，使用匯總來篩選收件者。
 
 ![](assets/datamanagement_usecase_1.png)
 
-## 步驟1:計算匯總結果{#step-1--calculating-the-aggregate-result}
+## 步驟1:計算匯總結果 {#step-1--calculating-the-aggregate-result}
 
 1. 建立查詢。 在此，目標是從資料庫中的所有收件者中計算最後已知的建立日期。 因此，查詢不包含篩選器。
 1. 選取 **[!UICONTROL Add data]**。
@@ -43,7 +45,7 @@ ht-degree: 2%
 
    保留 **[!UICONTROL Remove duplicate rows (DISTINCT)]** 選項為已核取狀態。
 
-## 步驟2:連結收件者和匯總函式結果{#step-2--linking-the-recipients-and-the-aggregation-function-result}
+## 步驟2:連結收件者和匯總函式結果 {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
 要將處理收件者的查詢連結到執行匯總函式計算的查詢，必須使用架構編輯活動。
 
@@ -58,7 +60,7 @@ ht-degree: 2%
 
 因此，聚合結果將連結到每個收件人。
 
-## 步驟3:使用匯總來篩選收件者。{#step-3--filtering-recipients-using-the-aggregate-}
+## 步驟3:使用匯總來篩選收件者。 {#step-3--filtering-recipients-using-the-aggregate-}
 
 建立連結後，匯總結果和收件者會組成相同暫時結構的一部分。 因此，可以在架構上建立篩選器，以比較收件者的建立日期和最後已知的建立日期，由匯總函式表示。 此篩選器是使用分割活動執行。
 

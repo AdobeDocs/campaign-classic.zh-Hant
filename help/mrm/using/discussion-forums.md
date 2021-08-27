@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 論壇{#discussion-forums}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各自的論壇：計畫，計畫，行銷，資源，模擬，股票。 每家運營商還有個人論壇。 所有討論都是公開的，甚至在個人論壇上。
 

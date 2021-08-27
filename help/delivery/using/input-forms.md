@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 輸入表單{#input-forms}
+
+![](../../assets/common.svg)
 
 以下是關於在Adobe Campaign使用輸入表格的一些一般原則。
 
@@ -77,11 +79,11 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 
 如需詳細資訊，請參閱[本章節](../../configuration/using/form-structure.md#formatting)。
 
-## 清單類型控制項{#list-type-controls}
+## 清單類型控制項 {#list-type-controls}
 
 若要編輯集合元素，您必須使用清單類型控制項。
 
-### 列清單{#column-list}
+### 欄清單 {#column-list}
 
 此控制項顯示可編輯的列清單，其工具欄包含「添加」和「刪除」按鈕。
 
@@ -119,7 +121,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 >
 >對於不要顯示在控制項左側的集合元素標籤，添加&#x200B;**nolabel=&quot;true&quot;**&#x200B;屬性。
 
-#### 放大清單{#zoom-in-a-list}
+#### 放大清單 {#zoom-in-a-list}
 
 清單資料的插入和編輯可以以單獨的編輯形式執行。
 
@@ -152,7 +154,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 >
 >新增&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;屬性會強制在插入清單的元素時呼叫編輯表單。
 
-### 標籤清單{#tab-list}
+### 索引標籤清單 {#tab-list}
 
 此清單以頁簽形式顯示集合元素的編輯。
 

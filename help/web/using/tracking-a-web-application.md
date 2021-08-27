@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 追蹤網站應用程式的瀏覽次數{#tracking-a-web-application}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造訪次數。 此功能可用於所有Web應用程式類型（表單、網頁等）。
 

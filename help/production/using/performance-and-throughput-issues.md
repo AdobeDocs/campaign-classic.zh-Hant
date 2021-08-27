@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 4%
@@ -15,11 +15,13 @@ ht-degree: 4%
 
 # 效能和輸送量的相關問題{#performance-and-throughput-issues}
 
+![](../../assets/v7-only.svg)
+
 首先，您應檢查是否已安裝最新的組建。 這可確保您擁有最新功能和錯誤修正。
 
 如需每個版本內容的詳細資訊，請參閱[發行說明](../../rn/using/latest-release.md) 。
 
-## 硬體和基礎架構{#hardware-and-infrastructure}
+## 硬體和基礎架構 {#hardware-and-infrastructure}
 
 本[page](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)中詳細說明內部部署Campaign Classic的硬體需求一般准則。
 
@@ -31,7 +33,7 @@ ht-degree: 4%
 
 Adobe Campaign也提供[tool](../../production/using/monitoring-processes.md#manual-monitoring)以檢查CPU和RAM的使用情況。 使用此工具並查看特定指標，例如：**記憶體**、**交換記憶體**、**磁碟**、**活動進程**。 如果值太高，您可以嘗試減少工作流程數量或排程在不同時間開始的工作流程。
 
-## 資料庫檢查{#database-performances}
+## 資料庫檢查 {#database-performances}
 
 大多數情況下，效能問題都與資料庫維護相關。 以下是要檢查的主要項目：
 
@@ -44,7 +46,7 @@ Adobe Campaign也提供[tool](../../production/using/monitoring-processes.md#man
 >
 >如需詳細資訊，請參閱本區段：[資料庫效能](../../production/using/database-performances.md)。
 
-## 應用程式配置{#application-configuration}
+## 應用程式配置 {#application-configuration}
 
 以下是與應用程式設定最佳實務相關的文章清單：
 
@@ -52,7 +54,7 @@ Adobe Campaign也提供[tool](../../production/using/monitoring-processes.md#man
 * TLS配置：不建議全域啟用TLS，因為這可能會降低總處理能力。 而是應視需要調整由傳遞團隊管理的每網域TLS設定。 如需詳細資訊，請參閱此[page](../../installation/using/email-deliverability.md#mx-configuration)。
 * DKIM:為確保DKIM的安全級別，建議的加密大小為1024b。 大多數訪問提供商將不認為較低的DKIM密鑰有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
-## 傳遞能力問題{#deliverability-issues}
+## 傳遞能力問題 {#deliverability-issues}
 
 以下是與傳遞能力相關的最佳實務和文章清單：
 

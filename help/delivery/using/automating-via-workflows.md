@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 使用工作流程自動化{#automating-via-workflows}
 
-## 內容管理活動{#content-management-activity}
+![](../../assets/common.svg)
+
+## 內容管理活動 {#content-management-activity}
 
 使用透過Adobe Campaign用戶端介面設定的工作流程，可自動建立、編輯和發佈內容。
 
@@ -48,7 +50,7 @@ ht-degree: 1%
 
    透過出版物範本建立新內容。 內容例項會儲存在填入的「字串」資料夾中。
 
-### 更新內容{#update-the-content}
+### 更新內容 {#update-the-content}
 
 * **主旨**
 
@@ -60,7 +62,7 @@ ht-degree: 1%
 
    XSL樣式表可用於轉換傳入的XML資料。
 
-### 要執行{#action-to-execute}的操作
+### 要執行的動作 {#action-to-execute}
 
 * **儲存**
 
@@ -76,7 +78,7 @@ ht-degree: 1%
 
 ## 範例 {#examples}
 
-### {#automating-content-creation-and-delivery}自動建立和傳送內容
+### 自動建立和傳遞內容 {#automating-content-creation-and-delivery}
 
 下列範例會自動建立和傳送內容區塊。
 
@@ -158,7 +160,7 @@ ht-degree: 1%
 
 完成活動的最後一個步驟是準備並啟動傳送。
 
-### 建立內容以供稍後發佈{#creating-content-and-publishing-it-later}
+### 建立內容以供稍後發佈 {#creating-content-and-publishing-it-later}
 
 此範例會建立內容區塊，並在特定時間延遲後啟動檔案發佈。
 
@@ -190,7 +192,7 @@ ht-degree: 1%
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### 建立傳送及其內容{#creating-the-delivery-and-its-content}
+### 建立傳遞及其內容 {#creating-the-delivery-and-its-content}
 
 此範例使用與第一個範例相同的概念，而只有它會在第一個步驟中建立傳送動作。
 
@@ -212,15 +214,15 @@ ht-degree: 1%
 
 活動的最終動作是準備並啟動傳送。
 
-### 從FTP匯入內容{#importing-content-from-ftp}
+### 從FTP匯入內容 {#importing-content-from-ftp}
 
 如果您的傳送內容以FTP或SFTP伺服器上的HTML檔案提供，您便可輕鬆將此內容載入Adobe Campaign傳送。 請參閱[此範例](../../workflow/using/loading-delivery-content.md)。
 
-### 從Amazon Simple Storage Service(S3)連接器{#importing-content-from-amazon-simple-storage-service--s3--connector}匯入內容
+### 從Amazon Simple Storage Service(S3)連接器匯入內容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
 如果您的傳送內容位於Amazon簡單儲存服務(S3)貯體上，您便可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[此範例](../../workflow/using/loading-delivery-content.md)。
 
-## 半自動更新{#semi-automatic-update}
+## 半自動更新 {#semi-automatic-update}
 
 內容資料可在「半自動」模式中更新。 資料會透過URL從XML摘要中復原。
 

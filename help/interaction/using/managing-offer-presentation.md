@@ -6,20 +6,22 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
 # 管理優惠方案簡報{#managing-offer-presentation}
 
-## 演示規則概述{#presentation-rules-overview}
+![](../../assets/v7-only.svg)
+
+## 簡報規則概觀 {#presentation-rules-overview}
 
 交互功能允許您使用演示規則控制優惠方案的流程。 這些是「互動」專屬的規則是類型規則。 它們可讓您根據已向收件者提出的主張的歷史，排除優惠方案。 環境會參考這些參數
 
-## 建立和參考優惠方案簡報規則{#creating-and-referencing-an-offer-presentation-rule}
+## 建立和參考優惠方案簡報規則 {#creating-and-referencing-an-offer-presentation-rule}
 
 1. 前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;節點。
 1. 建立類型規則，並選擇&#x200B;**[!UICONTROL Offer presentation]**&#x200B;類型。
@@ -43,9 +45,9 @@ ht-degree: 0%
 
    ![](assets/offer_typology_005.png)
 
-## 演示規則設定{#presentation-rule-settings}
+## 演示規則設定 {#presentation-rule-settings}
 
-### 應用程式標準{#application-criteria-}
+### 應用程式條件 {#application-criteria-}
 
 **[!UICONTROL General]**&#x200B;索引標籤中可用的應用程式條件可讓您指定要套用簡報規則的選件。 若要這麼做，您需要建立查詢並選擇相關選件，如下所述。
 
@@ -59,11 +61,11 @@ ht-degree: 0%
 
    ![](assets/offer_typology_008.png)
 
-### 選件維度{#offer-dimensions}
+### 選件維度 {#offer-dimensions}
 
 在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;標籤中，必須為演示規則指定與環境中配置的維相同的維。
 
-**[!UICONTROL Targeting dimension]**&#x200B;與收件者表重合(預設為：nms:recipients)，將接收優惠方案。 **[!UICONTROL Storage dimension]**&#x200B;與包含連結到目標維的主張歷史記錄（預設情況下：nms:postitionRcp）的表一致。
+**[!UICONTROL Targeting dimension]**&#x200B;與收件者表重合(預設為：nms:recipients)，將接收優惠方案。 **[!UICONTROL Storage dimension]**&#x200B;與包含連結到目標維的主張歷史記錄（預設情況下:nms:postipationRcp）的表重合。
 
 ![](assets/offer_typology_009.png)
 
@@ -84,7 +86,7 @@ ht-degree: 0%
 
 ![](assets/offer_typology_010.png)
 
-### 命題數{#number-of-propositions}
+### 命題數 {#number-of-propositions}
 
 可以設定在排除有關報價之前可以提出的最高數量的建議。
 
@@ -92,11 +94,11 @@ ht-degree: 0%
 
 ![](assets/offer_typology_011.png)
 
-## 定義命題和收件人{#defining-propositions-and-recipients}
+## 定義主張和收件人 {#defining-propositions-and-recipients}
 
 **[!UICONTROL Propositions to count]**&#x200B;部分允許您指定收件者和主張，如果&#x200B;**[!UICONTROL General]**&#x200B;頁簽中的選件在主張歷史記錄中出現特定次數，則它們將導致排除這些選件。
 
-### 篩選命題{#filtering-propositions}
+### 篩選命題 {#filtering-propositions}
 
 您可以根據渠道、相關選件或先前分配的命題的狀態選擇過濾標準以排除命題。
 
@@ -142,13 +144,13 @@ ht-degree: 0%
 
    **[!UICONTROL Rejected propositions]** :可讓您排除先前呈現且遭拒絕的選件。
 
-### 定義收件者{#defining-recipients}
+### 定義收件者 {#defining-recipients}
 
 若要指定收件者，請按一下&#x200B;**[!UICONTROL Edit the query from the targeting dimension...]**&#x200B;連結並選取規則所關注的收件者。
 
 ![](assets/offer_typology_012.png)
 
-### 建立對命題{#creating-a-query-on-propositions}的查詢
+### 建立關於命題的查詢 {#creating-a-query-on-propositions}
 
 要指定要通過查詢計算的主張，請按一下&#x200B;**[!UICONTROL Limit propositions...]**&#x200B;連結並指定要考慮的標準。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # 資料載入 (檔案){#data-loading-file}
+
+![](../../assets/common.svg)
 
 ## 使用 {#use}
 
@@ -35,7 +37,7 @@ ht-degree: 15%
 
 如需詳細資訊，請參閱本區段：[在處理](../../platform/using/unzip-decrypt.md)之前解壓或解密檔案。
 
-## 定義檔案格式{#defining-the-file-format}
+## 定義檔案格式 {#defining-the-file-format}
 
 載入檔案時，會自動偵測欄格式並使用每個資料類型的預設參數。 您可以修改這些預設參數，以指定要套用至資料的特定程式，尤其是當有錯誤或空值時。
 
@@ -78,7 +80,7 @@ ht-degree: 15%
 * **[!UICONTROL Default value]**：根據選取的錯誤處理指定預設值。
 * **[!UICONTROL Mapping]**:此欄位僅在欄詳細資料設定中可用（透過按兩下或欄清單右側的選項存取）。這會在匯入特定值時轉換這些值。 例如，您可將　&quot;three&quot;　轉換為　&quot;3&quot;。
 
-## 範例：收集資料並將其載入資料庫{#example--collecting-data-and-loading-it-in-the-database}
+## 範例：收集資料並將其載入資料庫 {#example--collecting-data-and-loading-it-in-the-database}
 
 以下範例可讓您每天在伺服器上收集檔案、載入其內容，以及根據資料庫中包含的資訊更新資料。 要收集的檔案包含可能已購買（價值3,000歐元以上）、要求購買退款或未購買任何商品就去商店的客戶資訊。 根據此資訊，各種程式將套用至資料庫中的設定檔。
 
@@ -88,7 +90,7 @@ ht-degree: 15%
 
    **[!UICONTROL Directory]**&#x200B;頁簽包含有關要恢復的檔案的資訊。 在本例中，所有文本格式的檔案（其名稱中包含「customers」字）以及儲存在伺服器的tmp/Adobe/Data/files目錄中的檔案都將被恢復。
 
-   在[檔案收集器](../../workflow/using/file-collector.md)部分中詳細說明使用&#x200B;**[!UICONTROL File collector]**。
+   在[檔案收集器](file-collector.md)部分中詳細說明使用&#x200B;**[!UICONTROL File collector]**。
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -100,7 +102,7 @@ ht-degree: 15%
 
    要執行此操作，請按一下編輯工具右下角的&#x200B;**[!UICONTROL Change...]**&#x200B;按鈕並配置計畫。
 
-   有關詳細資訊，請參閱[排程器](../../workflow/using/scheduler.md)。
+   有關詳細資訊，請參閱[排程器](scheduler.md)。
 
 1. 然後設定資料載入（檔案）活動，以指出應如何讀取收集的檔案。 要執行此操作，請選擇一個與要載入的檔案具有相同結構的示例檔案。
 
@@ -129,4 +131,4 @@ ht-degree: 15%
 
 1. 然後指定要針對每種母體類型執行的程式。 在我們的範例中，我們將前往資料庫中的&#x200B;**[!UICONTROL Update the data]**。 要執行此操作，請將&#x200B;**[!UICONTROL Update data]**&#x200B;活動放置在分割活動的每個出站轉變的結尾。
 
-   **[!UICONTROL Update data]**&#x200B;活動在[更新資料](../../workflow/using/update-data.md)區段中詳細說明。
+   **[!UICONTROL Update data]**&#x200B;活動在[更新資料](update-data.md)區段中詳細說明。

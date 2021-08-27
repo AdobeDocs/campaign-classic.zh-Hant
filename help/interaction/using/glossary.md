@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 字彙{#glossary}
+
+![](../../assets/v7-only.svg)
 
 以下是主要互動元素的定義。
 

@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
 
 ---
 
-# 架構引用{#schema-reference}
+# 結構參考 {#schema-reference}
+
+![](../../assets/v7-only.svg)
 
 編輯架構時，可使用以來源架構(xtk:srcSchema)為基礎的核准系統。 使用「資料庫結構更新……」更新資料庫時，也可能發現一些錯誤。 嚮導。
 

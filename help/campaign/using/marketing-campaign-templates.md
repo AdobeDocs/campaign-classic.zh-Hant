@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 建立及設定行銷活動範本 {#campaign-templates}
+
+![](../../assets/common.svg)
 
 所有行銷活動都以範本為基礎，範本會儲存主要特徵和功能。 促銷活動範本集中在&#x200B;**[!UICONTROL Resources > Templates > Campaign templates]**&#x200B;節點中。 預設範本為標準範本。 它可讓您使用所有可用模組（檔案、工作、種子地址等）建立新促銷活動，但提供的模組取決於您的權限和Adobe Campaign平台的設定。
 
@@ -27,7 +29,7 @@ ht-degree: 3%
 
 ![](assets/do-not-localize/how-to-video.png) 如需建立促銷活動的詳細資訊，請參 [閱此影片](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)。
 
-## 建立促銷活動範本{#creating-or-duplicating-a-campaign-template}
+## 建立行銷活動範本 {#creating-or-duplicating-a-campaign-template}
 
 若要建立促銷活動範本，請遵循下列步驟：
 
@@ -61,7 +63,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_new_op_template_duplicate.png)
 
-## 選擇模組{#select-modules}
+## 選擇模組 {#select-modules}
 
 **[!UICONTROL Advanced campaign settings...]**&#x200B;連結可讓您根據此範本啟用和停用促銷活動的工作。 在根據此範本建立的促銷活動中，選取您要啟用的功能。
 
@@ -91,7 +93,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_op_template_tab2.3ex.png)
 
-## 模組{#typology-of-enabled-modules}的類型
+## 模組的類型 {#typology-of-enabled-modules}
 
 * **控制組**
 
@@ -143,9 +145,9 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_op_template_activate_7.png)
 
-## 屬性和執行{#general-configuration}
+## 屬性和執行 {#general-configuration}
 
-### 模板屬性{#template-properties}
+### 範本屬性 {#template-properties}
 
 ![](assets/s_ncs_user_op_new_template.png)
 
@@ -165,7 +167,7 @@ ht-degree: 3%
 
 * 指定模板的&#x200B;**相關程式**:根據此範本的促銷活動將連結至選取的方案。
 
-### 模板執行參數{#template-execution-parameters}
+### 範本執行參數 {#template-execution-parameters}
 
 **[!UICONTROL Advanced campaign settings...]**&#x200B;連結可讓您設定範本的進階選項，以處理傳送目標（控制組、種子地址等） 以及行銷活動測量和工作流程執行的設定。
 

@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2784'
 ht-degree: 0%
 
 ---
 
 # 一般設定{#general-configurations}
+
+![](../../assets/v7-only.svg)
 
 如果您要從v5.11或v6.02移轉，本節將詳細說明要在Adobe Campaign v7中執行的設定。
 
@@ -22,9 +24,9 @@ ht-degree: 0%
 * 如果從v5.11遷移，您還必須完成[v5.11](../../migration/using/specific-configurations-in-v5-11.md)中的特定配置部分中詳述的配置。
 * 如果從v6.02遷移，您還必須完成[v6.02](../../migration/using/specific-configurations-in-v6-02.md)中的特定配置部分中詳述的配置。
 
-## 時區{#time-zones}
+## 時區 {#time-zones}
 
-### 多時區模式{#multi-time-zone-mode}
+### 多時區模式 {#multi-time-zone-mode}
 
 在v6.02中，「多時區」模式僅適用於PostgreSQL資料庫引擎。 現在，無論使用何種類型的資料庫引擎，都可提供此功能。 強烈建議您將基礎轉換為「多時區」基礎。
 
@@ -78,7 +80,7 @@ ht-degree: 0%
 
 ## 安全性 {#security}
 
-### 安全區域{#security-zones}
+### 安全區域 {#security-zones}
 
 >[!IMPORTANT]
 >
@@ -92,7 +94,7 @@ Adobe Campaign v7包含&#x200B;**安全區域**&#x200B;的概念。 每個用戶
 
 在[此部分](../../installation/using/security-zones.md)中找到安全區域配置。
 
-### 用戶密碼{#user-passwords}
+### 用戶密碼 {#user-passwords}
 
 在v7中，**internal**&#x200B;和&#x200B;**admin**&#x200B;運算子連接必須用密碼保護。 強烈建議在遷移&#x200B;**之前為這些帳戶和所有運算子帳戶分配密碼，**。 如果尚未為&#x200B;**internal**&#x200B;指定密碼，則無法連接。 要將密碼分配給&#x200B;**internal**，請輸入以下命令：
 
@@ -104,7 +106,7 @@ nlserver config -internalpassword
 >
 >所有追蹤伺服器的&#x200B;**內部**&#x200B;密碼必須相同。 有關詳細資訊，請參閱[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)和[此部分](../../platform/using/access-management.md)。
 
-### v7 {#new-features-in-v7}中的新功能
+### v7中的新功能 {#new-features-in-v7}
 
 * 沒有權限的使用者無法再連線至Adobe Campaign。 必須手動新增其權限，例如，建立名為&#x200B;**connect**&#x200B;的權限。
 
@@ -112,7 +114,7 @@ nlserver config -internalpassword
 
 * 如果密碼為空，則追蹤不再有效。 如果是這種情況，錯誤訊息會通知您並請您重新設定它。
 * 使用者密碼不再儲存在&#x200B;**xtk:sessionInfo**&#x200B;架構中。
-* 現在，使用&#x200B;**xtk:builder:EvaluateJavaScript**&#x200B;和&#x200B;**xtk:builder:EvaluateJavaScriptTemplate**&#x200B;函式時，需要管理權限。
+* 現在，使用&#x200B;**xtk:builder:EvaluateJavaScript**&#x200B;和&#x200B;**xtk:builder:EvaluateJavaScriptTemplate**&#x200B;函式時需要管理權限。
 
 某些現成可用的結構已修改，現在預設僅可透過具有&#x200B;**admin**&#x200B;權限的運算子的寫入存取存取來存取：
 
@@ -147,7 +149,7 @@ nlserver config -internalpassword
 * xtk:strings
 * xtk:xslt
 
-### Sessiontoken參數{#sessiontoken-parameter}
+### Sessiontoken參數 {#sessiontoken-parameter}
 
 在v5中，**sessiontoken**&#x200B;參數可在用戶端上運作（概述類型畫面清單、連結編輯器等） 和伺服器端（網頁應用程式、報表、jsp、jssp等）。 在v7中，它只能在伺服器端運作。 如果您想要恢復v5的完整功能，必須使用此參數修改連結，並透過連線頁面傳遞：
 
@@ -167,7 +169,7 @@ nlserver config -internalpassword
 >
 >如果您使用連結到受信任IP掩碼的運算子，請檢查該運算子是否具有最小權限，並且它處於&#x200B;**sessionTokenOnly**&#x200B;模式的安全區。
 
-### SQL函式{#sql-functions}
+### SQL函式 {#sql-functions}
 
 未知的SQL函式調用不再自然地發送到伺服器。 目前，必須將所有SQL函式添加到&#x200B;**xtk:funcList**&#x200B;架構（有關詳細資訊，請參閱[此部分](../../configuration/using/adding-additional-sql-functions.md)）。 遷移時，在升級後期間會添加一個選項，允許您與舊的未聲明SQL函式保持相容。 如果要繼續使用這些函式，請檢查&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;選項是否確實在&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;節點級別上定義。
 
@@ -419,7 +421,7 @@ allowSQLInjection="false"
 
 資源同步後， **postupgrade**&#x200B;命令允許您檢測同步是否生成錯誤或警告。
 
-### 查看同步結果{#view-the-synchronization-result}
+### 查看同步結果 {#view-the-synchronization-result}
 
 可以用兩種方式查看同步結果：
 
@@ -438,7 +440,7 @@ allowSQLInjection="false"
 
 * postupgrade`>`.log **檔案的** postupgrade_`<server version number>`_time包含同步結果。 預設可在下列目錄中使用：**安裝目錄/var/`<instance>`postupgrade**。 錯誤和警告由&#x200B;**error**&#x200B;和&#x200B;**warning**&#x200B;屬性指示。
 
-### 解決衝突{#resolve-a-conflict}
+### 解決衝突 {#resolve-a-conflict}
 
 只有高級運算子和那些已獲得「管理員」權限的運算子才能解決衝突。
 
@@ -495,7 +497,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### 選件內容{#offer-content}
+### 選件內容 {#offer-content}
 
 在v7中，選件內容已移動。 在v6.02中，內容位於每個表示方案(**nms:emailOfferView**)中。 在v7中，內容現在位於選件結構中。 升級後，內容因此不會顯示在介面中。 升級後，您必須重新建立選件內容，或開發指令碼，以自動將內容從表示結構移至選件結構。
 
@@ -575,7 +577,7 @@ xtk.session.Write(<srcSchema xtkschema="xtk:srcSchema" name="emailOfferView" nam
 logInfo("Done");
 ```
 
-### 測試和配置{#tests-and-configuration}
+### 測試和設定 {#tests-and-configuration}
 
 如果您只有一個環境，移動選件內容後，以下是應遵循的程式。 在此案例中，以「ENV」為例。
 
@@ -608,11 +610,11 @@ logInfo("Done");
 
 ## 報告 {#reports}
 
-### 標準報表{#standard-reports}
+### 標準報表 {#standard-reports}
 
 所有標準報表目前都使用轉譯引擎v6.x。如果您已將JavaScript新增至這些報表，則某些元素可能無法再運作。 事實上，舊版JavaScript與v6.x演算引擎不相容。 因此，您必須檢查JavaScript程式碼，之後再加以調整。 您應測試每個報表，尤其是匯出函式。
 
-### 個人化報表{#personalized-reports}
+### 個人化報表 {#personalized-reports}
 
 <!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
@@ -620,14 +622,14 @@ logInfo("Done");
 -->
 如果您想要受益於新的報表功能，則必須重新發佈報表。 要執行此操作，請編輯報表&#x200B;**[!UICONTROL Properties]**，按一下&#x200B;**[!UICONTROL Rendering]**&#x200B;並選取v.6.x呈現引擎。 在此情況下，請檢查所有指令碼，並視需要加以變更。 關於PDF匯出，如果您已新增Open Office的特定指令碼，則此指令碼將不再適用於新的PDF匯出引擎(PhantomJS)。
 
-## 網站應用程式{#web-applications}
+## 網站應用程式 {#web-applications}
 
 有兩個Web應用程式系列：
 
 * 確定的Web應用程式（一起查看，批准表，外聯網內部發展）,
 * 匿名的網路應用程式（網路或調查表表單）。
 
-### 已識別的Web應用程式{#identified-web-applications}
+### 已識別的Web應用程式 {#identified-web-applications}
 
 如同報表（[了解更多](#reports)），如果您已新增JavaScript，則必須視需要檢查並調整。 如果您想從v7藍色橫幅（包含藍色標籤）中獲益，則必須重新發佈Web應用程式。 如果您的JavaScript程式碼運作正常，您可以選取v6.x轉譯引擎。 若非如此，您可以在調整程式碼時使用v6.0轉譯引擎，然後使用v6.x轉譯引擎。
 
@@ -660,14 +662,14 @@ allowUserPassword="false"
 sessionTokenOnly="false"
 ```
 
-### 匿名Web應用程式{#anonymous-web-applications}
+### 匿名Web應用程式 {#anonymous-web-applications}
 
 如果您遇到任何問題，請重新發佈Web應用程式。 如果問題仍然存在，您可以選取v6.0轉譯引擎。 如果您尚未新增JavaScript，則可選取v6.x轉譯引擎，並受益於其新功能。
 
 >[!NOTE]
 選取呈現引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
 
-## 紅帽{#red-hat}
+## 紅帽 {#red-hat}
 
 如果v6.02或v5.11中已刪除現成可用的結構描述，則在升級後之後，您可能無法再編輯結構描述。 如果發生此情況，請執行以下命令：
 

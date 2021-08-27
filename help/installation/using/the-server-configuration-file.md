@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '7969'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # 伺服器設定檔{#the-server-configuration-file}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign的整體配置在安裝目錄&#x200B;**conf**&#x200B;目錄的&#x200B;**serverConf.xml**&#x200B;檔案中定義。 本節列出&#x200B;**serverConf.xml**&#x200B;檔案的所有不同節點和參數。
 
@@ -82,7 +84,7 @@ Adobe Campaign的整體配置在安裝目錄&#x200B;**conf**&#x200B;目錄的&#x
   <tr> 
    <td> defaultMode<br /> </td> 
    <td> 預設標識模式。<br /> </td> 
-   <td> String<br /> </td> 
+   <td> 字串<br /> </td> 
    <td> 'nl'<br /> </td> 
   </tr> 
   <tr> 
@@ -474,7 +476,7 @@ Adobe Campaign的整體配置在安裝目錄&#x200B;**conf**&#x200B;目錄的&#x
    <td> 字串<br /> </td> 
   </tr> 
   <tr> 
-   <td> 標籤<br /> </td> 
+   <td> label<br /> </td> 
    <td> 命令行標籤<br /> </td> 
    <td> 字串<br /> </td> 
   </tr> 
@@ -801,7 +803,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  <tbody> 
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
-   <td> 最大準備時間：持續的秒數，在此秒後傳送動作不應再準備中。<br /> </td> 
+   <td> 最大準備時間：持續的秒數，在此秒之後傳送動作不應再準備中。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -898,7 +900,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  </tbody> 
 </table>
 
-### HTTP代理/安全代理{#http-proxy---secure-proxy-}
+### HTTP代理/安全代理 {#http-proxy---secure-proxy-}
 
 在&#x200B;**proxyConfig > HTTP Proxy / Secure proxy**&#x200B;節點中，設定下列參數。
 
@@ -1986,7 +1988,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*」
  </tbody> 
 </table>
 
-### 中繼{#relay-1}
+### 中繼 {#relay-1}
 
 以下是&#x200B;**nmac > relay**&#x200B;節點的不同參數。 這會設定訊息傳送（ios http2連接器）的中繼使用。
 
@@ -3028,7 +3030,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*」
 
 **web > jsp > classpath**&#x200B;節點包含啟動JVM時要使用的所有類路徑的清單。
 
-### 中繼{#relay-2}
+### 中繼 {#relay-2}
 
 以下是&#x200B;**web > relay**&#x200B;節點的不同參數。 這是兩個區域之間HTTP請求的中繼設定。
 

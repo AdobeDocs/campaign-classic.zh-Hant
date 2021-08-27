@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 5%
@@ -15,21 +15,23 @@ ht-degree: 5%
 
 # 進階功能{#advanced-functionalities}
 
+![](../../assets/common.svg)
+
 身為技術使用者，除了[一般屬性](../../reporting/using/properties-of-the-report.md)，您還可以運用進階功能來設定報表，例如：
 
-* 建立複雜查詢以處理&#x200B;**Script**&#x200B;活動中的資料。 [瞭解更多](#script-activity)
+* 建立複雜查詢以處理&#x200B;**Script**&#x200B;活動中的資料。 [深入瞭解](#script-activity)
 
-* 新增要在伺服器端或用戶端上執行的外部指令碼。 [瞭解更多](#external-script)
+* 新增要在伺服器端或用戶端上執行的外部指令碼。 [深入瞭解](#external-script)
 
-* 呼叫具有&#x200B;**Jump**&#x200B;活動的報表。 [瞭解更多](#calling-up-another-report)
+* 呼叫具有&#x200B;**Jump**&#x200B;活動的報表。 [深入瞭解](#calling-up-another-report)
 
-* 新增URL參數至報表，使其更方便存取。 [瞭解更多](#calling-up-another-report)
+* 新增URL參數至報表，使其更方便存取。 [深入瞭解](#calling-up-another-report)
 
-* 新增要在報表內容中使用的變數。 [瞭解更多](#adding-variables)
+* 新增要在報表內容中使用的變數。 [深入瞭解](#adding-variables)
 
-## 使用指令碼{#adding-a-script}
+## 使用指令碼 {#adding-a-script}
 
-### 參考外部指令碼{#external-script}
+### 參考外部指令碼 {#external-script}
 
 您可以參考在呼叫報表頁面時，在用戶端和/或伺服器端執行的JavaScript程式碼。
 
@@ -45,7 +47,7 @@ ht-degree: 5%
 
 為了在用戶端正常執行，參考的指令碼必須以JavaScript寫入，且必須與一般瀏覽器相容。 如需詳細資訊，請參閱[本章節](../../web/using/web-forms-answers.md)。
 
-### 新增指令碼活動{#script-activity}
+### 新增指令碼活動 {#script-activity}
 
 當[設計您的報表](../../reporting/using/creating-a-new-report.md#modelizing-the-chart)時，請使用&#x200B;**[!UICONTROL Script]**&#x200B;活動來處理資料並輕鬆建立不啟用SQL語言的複雜查詢。 您可以直接在指令碼窗口中輸入查詢。
 
@@ -63,7 +65,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 否則，只會顯示目前的資料。
 
-## 新增URL參數{#defining-additional-settings}
+## 新增URL參數 {#defining-additional-settings}
 
 [報表屬性](../../reporting/using/properties-of-the-report.md)的&#x200B;**[!UICONTROL Parameters]**&#x200B;標籤可讓您定義報表的其他設定：這些設定會在呼叫期間傳遞至URL。
 
@@ -97,7 +99,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
-## 新增變數{#adding-variables}
+## 新增變數 {#adding-variables}
 
 **[!UICONTROL Variables]**&#x200B;標籤包含報表中設定的變數清單。 這些變數會在報表內容中公開，並可用於計算。
 
@@ -114,6 +116,6 @@ if( ctx.@_historyId.toString().length == 0 )
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
-## 呼叫另一個報表{#calling-up-another-report}
+## 呼叫其他報表 {#calling-up-another-report}
 
 **Jump**&#x200B;活動就像沒有箭頭的轉變：可讓您從一個活動移至另一個活動或存取其他報表。

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 關於服務與訂閱{#about-services-and-subscriptions}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您建立和管理資訊服務，例如電子報，以及管理這些服務的訂閱。 可同時定義多個服務，例如：特定產品類別、網站主題或區域的專家通訊、各種警報訊息的訂閱及即時通知。 請參閱[管理訂閱](managing-subscriptions.md)。
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 60%
@@ -15,11 +15,13 @@ ht-degree: 60%
 
 # 設定匯入作業 {#executing-import-jobs}
 
+![](../../assets/common.svg)
+
 Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案將資料匯入資料庫。 這些檔案與表 (主要或連結) 相關聯，並且源檔的每個欄位與資料庫的欄位相關聯。
 
 >[!NOTE]
 >
->您可以導入資料，而無需使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式將其與資料庫資料映射。 然後，資料便可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件專用於工作流程中。 有關詳細資訊，請參見[此頁面](../../workflow/using/read-list.md)。
+>您可以導入資料，而無需使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式將其與資料庫資料映射。 然後，資料便可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件專用於工作流程中。 如需詳細資訊，請參閱[此頁面](../../workflow/using/read-list.md)。
 
 匯入精靈可讓您設定匯入、定義其選項（例如資料轉換），以及啟動執行。 它是一系列屏幕，其內容取決於匯入類型 (簡單或多個) 和操作員權限。
 
@@ -29,11 +31,11 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 >
 >如果使用 IIS Web 伺服器，則可能需要配置以授權上載大檔案 (> 28 MB)。如需詳細資訊，請參閱[本區段](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit)。
 
-## 源檔案{#source-file}
+## 源檔案 {#source-file}
 
 在源檔中，每行與記錄重合。記錄中的資料由分隔符 (空格、製表符、字符等) 分隔。這意味著以行的形式檢索資料，並且每行與資料庫的欄位相關聯。
 
-## 步驟1 — 選擇導入模板{#step-1---choosing-the-import-template}
+## 步驟1 — 選擇匯入範本 {#step-1---choosing-the-import-template}
 
 啟動匯入精靈時，首先必須選擇範本。例如，要配置收到簡報的收件者的匯入，請按照以下步驟操作：
 
@@ -63,7 +65,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
    >
    >多次匯入應僅滿足特定需求，不建議使用。
 
-### 進階參數 {#advanced-parameters}
+### 高級參數 {#advanced-parameters}
 
 **[!UICONTROL Advanced parameters]**&#x200B;連結可讓您存取下列選項：
 
@@ -113,7 +115,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 * **[!UICONTROL Auto-detect format]** 可用來重新初始化資料來源的格式。此選項可讓您將原始格式重新應用於已通過&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;選項格式化的資料。
 * **[!UICONTROL Advanced parameters]**&#x200B;連結可讓您篩選來源資料並存取進階選項。 在此屏幕中，您可以選擇僅匯入部分檔案。您還可以定義篩選器，例如，根據相應行的值僅匯入「潛在客戶」或「客戶」類型的用戶。這些選項僅供專業 JavaScript 用戶使用。
 
-### 更改檔案格式{#changing-the-file-format}
+### 變更檔案格式 {#changing-the-file-format}
 
 **[!UICONTROL Click here to change the file format...]**&#x200B;選項可讓您格式化源檔案的資料，特別是指定列分隔符和每個欄位的資料類型。 此配置通過以下視窗執行：
 
@@ -242,7 +244,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 選項&#x200B;**[!UICONTROL Reject]**&#x200B;和&#x200B;**[!UICONTROL Ignore]**&#x200B;如上所示操作。
 
-### 發生錯誤{#behavior-in-the-event-of-an-error}時
+### 發生錯誤時 {#behavior-in-the-event-of-an-error}
 
 大多數資料傳輸操作會產生各種類型的錯誤 (不一致的行格式，無效的電子郵件地址等)。匯入引擎生成的所有錯誤和所有警告都將儲存並連結到匯入執行個體。
 
@@ -327,7 +329,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 按一下&#x200B;**[!UICONTROL Next]**&#x200B;驗證此步驟，並顯示下列步驟。
 
-## 步驟6 — 啟動匯入{#step-6---launching-the-import}
+## 步驟6 — 啟動匯入 {#step-6---launching-the-import}
 
 精靈的最後一步允許您啟動資料匯入。要執行此操作，請按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕。
 

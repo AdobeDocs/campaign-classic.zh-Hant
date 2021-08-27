@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: 其他配置
+title: 其他設定
 description: 了解如何在Adobe Campaign Classic中為交易式訊息設定其他設定。
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 7%
 
 ---
 
-# 其他配置 {#mc-additional-configurations}
+# 其他設定 {#mc-additional-configurations}
+
+![](../../assets/v7-only.svg)
 
 ## 監視臨界值 {#monitoring-thresholds}
 
@@ -58,7 +60,7 @@ ht-degree: 7%
 
 與交易式訊息傳送（訊息中心）相關的各種技術工作流程會在控制執行個體和執行執行個體之間劃分。
 
-### 控制實例工作流{#control-instance-workflows}
+### 控制執行個體工作流程 {#control-instance-workflows}
 
 在控制實例上，無論您註冊了一個或多個執行實例，都必須為每個&#x200B;**[!UICONTROL Message Center execution instance]**&#x200B;外部帳戶建立一個存檔工作流。 按一下&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按鈕以建立並啟動工作流。
 
@@ -72,7 +74,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ![](assets/messagecenter_archiving_001.png)-->
 
-### 執行實例工作流{#execution-instance-workflows}
+### 執行執行個體工作流程 {#execution-instance-workflows}
 
 在執行實例上，可從&#x200B;**管理>生產>消息中心**&#x200B;資料夾訪問交易式消息的技術工作流。 你只需要開始。 清單中的工作流程為：
 
@@ -101,7 +103,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 若要設定多品牌，您需要同時設定執行例項和控制例項。
 
-### 執行實例{#execution-instance}
+### 執行實例 {#execution-instance}
 
 在執行例項上，請遵循下列步驟：
 
@@ -152,7 +154,7 @@ Once the control and execution modules are installed on the same instance, you m
    >
    >這些變更在升級時可能會導致衝突。 您可能需要手動將這些公式與其新版本合併。
 
-### 控制實例{#control-instance}
+### 控制實例 {#control-instance}
 
 在控制執行個體上，您需要連結傳遞範本和外部帳戶。
 

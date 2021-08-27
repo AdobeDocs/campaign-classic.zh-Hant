@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 20%
@@ -14,6 +14,8 @@ ht-degree: 20%
 ---
 
 # 建立新的網站應用程式{#creating-a-new-web-application}
+
+![](../../assets/common.svg)
 
 建立期間會選取Web應用程式類型。
 
@@ -37,7 +39,7 @@ ht-degree: 20%
 
 1. 登錄頁面
 
-   登錄頁面是HTML頁面，其內容可在網站上使用，且可讓使用者輸入要儲存在Adobe Campaign資料庫設定檔中的資訊。 這類網頁的內容通常由專門的網站機構建立，然後再匯入Adobe Campaign以供出版、管理和跟進。 有關詳細資訊，請參見[此頁面](creating-a-landing-page.md)。
+   登錄頁面是HTML頁面，其內容可在網站上使用，且可讓使用者輸入要儲存在Adobe Campaign資料庫設定檔中的資訊。 這類網頁的內容通常由專門的網站機構建立，然後再匯入Adobe Campaign以供出版、管理和跟進。 如需詳細資訊，請參閱[此頁面](creating-a-landing-page.md)。
 
 1. 調查
 

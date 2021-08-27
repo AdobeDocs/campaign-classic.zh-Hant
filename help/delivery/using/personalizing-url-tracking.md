@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 12%
@@ -14,6 +14,8 @@ ht-degree: 12%
 ---
 
 # 設定 URL 追蹤選項{#personalizing-url-tracking}
+
+![](../../assets/common.svg)
 
 您可以透過傳遞精靈工具列的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;圖示，存取進階訊息追蹤設定。
 

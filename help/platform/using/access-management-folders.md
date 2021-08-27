@@ -2,18 +2,20 @@
 product: campaign
 title: 管理對Campaign資料夾的存取
 description: 了解如何授與Campaign資料夾的存取權並建立檢視
-feature: 應用程式設定
+feature: Application Settings
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
 
 # 管理對資料夾的存取{#folder-access-management}
+
+![](../../assets/common.svg)
 
 瀏覽器導航樹的每個資料夾都具有附加的讀取、寫入和刪除訪問權限。 若要存取檔案，運算子或運算子群組必須至少具有檔案的讀取存取權。
 

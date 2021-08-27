@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Power Booster 與 Power Cluster{#power-booster-and-power-cluster}
+
+![](../../assets/v7-only.svg)
 
 ## 概覽 {#overview}
 
@@ -29,7 +31,7 @@ Adobe Campaign提供兩組預先封裝的架構選項，讓您調整部署的尺
 
 ![](assets/architectural_options_diagram.png)
 
-## 符合條件的申請{#eligible-applications}
+## 合格申請 {#eligible-applications}
 
 Power Booster和Power Cluster選項可用於以下應用程式：
 
@@ -37,7 +39,7 @@ Power Booster和Power Cluster選項可用於以下應用程式：
 * 傳遞
 * 訊息中心
 
-## 架構建議矩陣{#matrix-of-architectural-recommendations}
+## 架構建議矩陣 {#matrix-of-architectural-recommendations}
 
 <table> 
  <tbody> 

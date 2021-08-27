@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 使用分組管理進行查詢 {#querying-using-grouping-management}
+
+![](../../assets/common.svg)
 
 在此範例中，我們想執行查詢，以尋找先前傳送中鎖定超過30次的所有電子郵件網域。
 
@@ -43,7 +45,7 @@ ht-degree: 4%
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;視窗中，以降序排序電子郵件網域。 要執行此操作，請檢查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 按一下 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;視窗中，以降序排序電子郵件網域。 要執行此操作，請檢查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 

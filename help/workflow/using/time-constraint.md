@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 1dc5de05-4d36-4393-8113-d1f97bb7f732
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 時間限制{#time-constraint}
+
+![](../../assets/common.svg)
 
 **時間限制**&#x200B;活動可讓您延遲執行任務或放棄任務。
 

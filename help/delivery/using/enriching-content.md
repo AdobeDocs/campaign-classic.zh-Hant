@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 豐富化內容{#enriching-content}
 
+![](../../assets/common.svg)
+
 整合器可讓您以外部資料豐富內容。 此資料來自一般查詢或連結的表格。
 
-## 一般查詢{#generic-queries}
+## 一般查詢 {#generic-queries}
 
 查詢是透過&#x200B;**[!UICONTROL Aggregator]**&#x200B;索引標籤中的發佈範本來設定。
 
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 **`<collection-recipient>`**&#x200B;元素表示查詢後生成的文檔的輸入元素。 擷取的資料會在此元素下傳回；在我們的範例中，是收件者清單。
 
-### 添加查詢{#adding-a-query}
+### 新增查詢 {#adding-a-query}
 
 查詢參數是使用精靈編輯。
 
@@ -61,7 +63,7 @@ ht-degree: 0%
 
    ![](assets/d_ncs_content_query4.png)
 
-## 連結的表{#linked-tables}
+## 連結的表 {#linked-tables}
 
 連結可讓您擷取連結至內容的外部資料。
 
@@ -70,7 +72,7 @@ ht-degree: 0%
 * 內容連結：這是本機內容管理模式。 連結的內容會自動整合到XML輸出文檔中。
 * 指向外部表的連結允許訪問資料庫中的所有其他表，約束是檢索具有聚合器的所選連結的資料。
 
-### 內容架構{#link-to-a-content-schema}的連結
+### 連結至內容結構 {#link-to-a-content-schema}
 
 資料結構中會依下列方式宣告內容連結：
 
@@ -102,7 +104,7 @@ ht-degree: 0%
 
 **[!UICONTROL Magnifier]**&#x200B;圖示可讓您開啟連結元素的編輯表單。
 
-#### 連結集合{#link-collection}
+#### 連結集合 {#link-collection}
 
 若要填入連結集合，請將&#x200B;**unbound=&quot;true&quot;**&#x200B;屬性新增至資料結構中連結元素的定義：
 
@@ -128,7 +130,7 @@ ht-degree: 0%
 
 顯示預設列，以便查看目標元素的&#x200B;**計算字串**。
 
-### 外部表{#links-to-external-tables}的連結
+### 外部表的連結 {#links-to-external-tables}
 
 在資料架構中，外部表的連結將聲明如下：
 
@@ -171,7 +173,7 @@ ht-degree: 0%
 >
 >此限制也適用於內容連結。
 
-#### 連結集合{#link-collection-1}
+#### 連結集合 {#link-collection-1}
 
 集合的定義與集合元素清單的定義相同：
 
@@ -202,7 +204,7 @@ ht-degree: 0%
 <contact id="11504982510" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/>
 ```
 
-#### 連結聚合{#link-aggregation}
+#### 連結匯總 {#link-aggregation}
 
 所參考的每個連結的內容僅限於目標元素的內部索引鍵和&#x200B;**計算字串**。
 

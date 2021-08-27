@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 建立iOS通知{#create-notifications-ios}
+
+![](../../assets/common.svg)
 
 本節詳細說明iOS通知傳送的特定元素。 傳遞建立的全域概念在[此小節](steps-about-delivery-creation-steps.md)中介紹。
 
@@ -105,7 +107,7 @@ ht-degree: 3%
 
 1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
-1. 按一下 **[!UICONTROL New]**。
+1. 按一下&#x200B;**[!UICONTROL New]**。
 
    ![](assets/nmac_android_3.png)
 

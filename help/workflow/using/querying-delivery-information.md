@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 查詢傳遞資訊 {#querying-delivery-information}
 
-## 特定傳送{#number-of-clicks-for-a-specific-delivery}的點按次數
+![](../../assets/common.svg)
+
+## 特定傳送的點按次數 {#number-of-clicks-for-a-specific-delivery}
 
 在此範例中，我們希望復原特定傳送的點按次數。 由於收件者追蹤記錄在指定時段內，因此會記錄這些點按。 收件者是透過其電子郵件地址識別。 此查詢使用&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表。
 
@@ -51,7 +53,7 @@ ht-degree: 1%
 
       ![](assets/query_editor_nveau_18.png)
 
-      按一下 **[!UICONTROL Next]**。
+      按一下&#x200B;**[!UICONTROL Next]**。
 
    * 選擇&#x200B;**[!UICONTROL Primary key (@id)]**&#x200B;欄位。 已配置&#x200B;**[!UICONTROL count (primary key)]**&#x200B;輸出列。
 
@@ -81,7 +83,7 @@ ht-degree: 1%
 
       選擇&#x200B;**[!UICONTROL greater than]**&#x200B;運算子。 在&#x200B;**[!UICONTROL Value]**&#x200B;列中，按一下&#x200B;**[!UICONTROL Edit expression]**，然後在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Process on dates]**。 最後，在&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;中輸入&quot;15&quot;。
 
-      按一下 **[!UICONTROL Finish]**。
+      按一下&#x200B;**[!UICONTROL Finish]**。
 
       ![](assets/query_editor_nveau_24.png)
 
@@ -89,7 +91,7 @@ ht-degree: 1%
 
       選擇&#x200B;**[!UICONTROL less than]**&#x200B;運算子。 在&#x200B;**[!UICONTROL Value]**&#x200B;欄中，按一下&#x200B;**[!UICONTROL Edit expression]**。 對於日期處理，請轉至&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口，在&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;中輸入&quot;1&quot;。
 
-      按一下 **[!UICONTROL Finish]**。
+      按一下&#x200B;**[!UICONTROL Finish]**。
 
       ![](assets/query_editor_nveau_65.png)
 
@@ -97,7 +99,7 @@ ht-degree: 1%
 
    * 按一下&#x200B;**[!UICONTROL Add]**&#x200B;函式以建立其他篩選條件。 在&#x200B;**[!UICONTROL Expression]**&#x200B;欄中，按一下&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Delivery]**&#x200B;節點中的&#x200B;**[!UICONTROL Label]**。
 
-      按一下 **[!UICONTROL Finish]**。
+      按一下&#x200B;**[!UICONTROL Finish]**。
 
       ![](assets/query_editor_nveau_66.png)
 
@@ -114,7 +116,7 @@ ht-degree: 1%
 
    此傳送的使用者最多記錄數為6。 5個不同的使用者開啟傳送電子郵件，或按一下電子郵件中的其中一個連結。
 
-## 未開啟任何傳遞的收件者{#recipients-who-did-not-open-any-delivery}
+## 未開啟任何傳遞的收件者 {#recipients-who-did-not-open-any-delivery}
 
 在此範例中，我們要篩選過去7天內未開啟電子郵件的收件者。
 
@@ -151,7 +153,7 @@ ht-degree: 1%
 
 ![](assets/query_open_5.png)
 
-## 已開啟傳遞{#recipients-who-have-opened-a-delivery}的收件者
+## 已開啟傳遞的收件者 {#recipients-who-have-opened-a-delivery}
 
 下列範例說明如何定位在過去2週內開啟傳送的設定檔：
 
@@ -177,7 +179,7 @@ ht-degree: 1%
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## 傳遞{#filtering-recipients--behavior-folllowing-a-delivery}後篩選收件者的行為
+## 傳遞後篩選收件者的行為 {#filtering-recipients--behavior-folllowing-a-delivery}
 
 在工作流程中， **[!UICONTROL Query]**&#x200B;和&#x200B;**[!UICONTROL Split]**&#x200B;方塊可讓您選取先前傳送後的行為。 此選取是透過&#x200B;**[!UICONTROL Delivery recipient]**&#x200B;篩選器執行。
 
@@ -202,7 +204,7 @@ ht-degree: 1%
    ![](assets/query_editor_ex_04.png)
 
 1. 在&#x200B;**[!UICONTROL Subsets]**&#x200B;標籤中，定義第一個拆分分支。 例如，輸入此分支的&#x200B;**Clicked**&#x200B;標籤。
-1. 選擇&#x200B;**[!UICONTROL Add a filtering condition on the incoming population]**&#x200B;選項。 按一下 **[!UICONTROL Edit]**。
+1. 選擇&#x200B;**[!UICONTROL Add a filtering condition on the incoming population]**&#x200B;選項。 按一下&#x200B;**[!UICONTROL Edit]**。
 1. 在&#x200B;**[!UICONTROL Targeting and filtering dimension]**&#x200B;視窗中，按兩下&#x200B;**[!UICONTROL Recipients of a delivery]**&#x200B;篩選器。
 
    ![](assets/query_editor_ex_05.png)

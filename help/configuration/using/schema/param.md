@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 6%
 
 ---
 
-# 參數元素{#param--element}
+# 參數元素 {#param--element}
 
-## 內容模型{#content-model-12}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-12}
 
 param:==幫助
 
-## 屬性{#attributes-12}
+## 屬性 {#attributes-12}
 
 * @_operation（字串）
 * @desc（字串）
@@ -31,11 +33,11 @@ param:==幫助
 * @namespace(MNTOKEN)
 * @type（字串）
 
-## 父級{#parents-12}
+## 父母 {#parents-12}
 
 `<parameters>`
 
-## 子項{#children-12}
+## 兒童 {#children-12}
 
 `<help>`
 
@@ -43,7 +45,7 @@ param:==幫助
 
 此元素可讓您定義呼叫SOAP方法的參數。
 
-## 屬性說明{#attribute-description-12}
+## 屬性說明 {#attribute-description-12}
 
 * **dsc（字串）**:與元素相關的 `<param>` 說明。
 * **inout（字串）**:此屬性定義參數是否在SOAP調用的輸入(in)或輸出(out)。如果未指定此屬性，則預設參數為輸入(&quot;@inout=in&quot;)。

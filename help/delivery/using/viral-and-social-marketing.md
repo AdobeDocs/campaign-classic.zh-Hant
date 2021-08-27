@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 病毒式行銷及社交行銷{#viral-and-social-marketing}
 
-## 關於病毒式行銷{#about-viral-marketing}
+![](../../assets/common.svg)
+
+## 關於病毒式行銷 {#about-viral-marketing}
 
 Adobe Campaign可讓您設定工具來鼓勵病毒式行銷。
 
@@ -27,7 +29,7 @@ Adobe Campaign可讓您設定工具來鼓勵病毒式行銷。
 >
 >為了新增連結才能正常運作，必須有相符的鏡像頁面可用。 若要這麼做，請在傳送中納入鏡像頁面的連結。
 
-## 社交網路：共用連結{#social-networks--sharing-a-link}
+## 社交網路：共用連結 {#social-networks--sharing-a-link}
 
 若要讓傳遞收件者與其網路成員共用訊息內容，您必須包含相符的個人化區塊。
 
@@ -49,7 +51,7 @@ Adobe Campaign可讓您設定工具來鼓勵病毒式行銷。
 >
 >此個人化區塊包含所有連結（用於訊息傳送以及與所有社交網路共用）。 可依您的需求加以變更。 不過，設定會保留給進階使用者。 若要編輯相符的個人化區塊，請前往Adobe Campaign樹狀結構清單的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;節點。
 
-## 病毒式行銷：轉發給朋友{#viral-marketing--forward-to-a-friend}
+## 病毒式行銷：轉告朋友 {#viral-marketing--forward-to-a-friend}
 
 病毒式服務可執行反向連結類型動作：這些動作可讓您將訊息轉送給朋友。 被推薦者的簡檔被暫時儲存在資料庫中（在專用表中）。 轉發的消息包括推薦者訂閱的連結：若有，則會將其新增至Adobe Campaign資料庫。
 
@@ -88,7 +90,7 @@ Adobe Campaign可讓您設定工具來鼓勵病毒式行銷。
 
    推薦者被添加到資料庫的&#x200B;**Recipients**&#x200B;資料夾中，並（預設）訂閱&#x200B;**Newsletter**&#x200B;資訊服務。
 
-## 追蹤社交網路共用{#tracking-social-network-sharing}
+## 追蹤社交網路分享 {#tracking-social-network-sharing}
 
 會追蹤共用資訊的共用和存取。 Adobe Campaign收集的這些資訊可在兩處存取：
 

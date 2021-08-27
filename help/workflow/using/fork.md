@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 分支{#fork}
+
+![](../../assets/common.svg)
 
 **[!UICONTROL Fork]**&#x200B;活動可讓您建立多個出站轉變，以便在相同的工作流程中獨立執行多個活動。
 
@@ -32,4 +34,4 @@ ht-degree: 1%
 
 ![](assets/s_user_segmentation_fork.png)
 
-接著，您可以設定每個出站轉變，然後視需要使用[AND-join](../../workflow/using/and-join.md)活動將它們連結在一起。 這樣，只有&#x200B;**[!UICONTROL Fork]**&#x200B;活動的出站轉變完成後，工作流程的其餘部分才會執行。
+接著，您可以設定每個出站轉變，然後視需要使用[AND-join](and-join.md)活動將它們連結在一起。 這樣，只有&#x200B;**[!UICONTROL Fork]**&#x200B;活動的出站轉變完成後，工作流程的其餘部分才會執行。

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 1da8b954f1ed8b3e1433b920149e968cb89a97c5
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 開始使用行動應用程式頻道{#about-mobile-app-channel}
+
+![](../../assets/common.svg)
 
 **行動應用程式頻道**&#x200B;可讓您使用Adobe Campaign平台，透過應用程式將個人化推播通知傳送至iOS和Android終端機。
 

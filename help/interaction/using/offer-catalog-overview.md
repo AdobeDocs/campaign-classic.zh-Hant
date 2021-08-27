@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 優惠目錄概覽{#offer-catalog-overview}
+
+![](../../assets/v7-only.svg)
 
 優惠方案目錄一律由類別組成，然後會有子類別或直接由優惠方案組成。
 

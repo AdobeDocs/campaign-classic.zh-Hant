@@ -6,19 +6,21 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
 
 # 查詢{#query}
 
-## 建立查詢{#creating-a-query}
+![](../../assets/common.svg)
+
+## 建立查詢 {#creating-a-query}
 
 查詢可讓您根據條件選取目標。 您可以將區段代碼與查詢結果建立關聯，並插入其他資料。
-有關查詢示例的詳細資訊，請參閱此[此部分](../../workflow/using/querying-recipient-table.md)。
+有關查詢示例的詳細資訊，請參閱此[此部分](querying-recipient-table.md)。
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ ht-degree: 0%
 
    篩選維度可讓收集這些元素，例如與目標人員相關的資訊（合約、完全和最終結算等）。
 
-   如需詳細資訊，請參閱[定位和篩選維度](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
+   如需詳細資訊，請參閱[定位和篩選維度](building-a-workflow.md#targeting-and-filtering-dimensions)。
 
    ![](assets/s_user_segmentation_query_edit.png)
 
@@ -52,7 +54,7 @@ ht-degree: 0%
 
 1. 如果您在步驟1選擇了&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;或使用&#x200B;**[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**&#x200B;選項，則以後必須手動添加篩選條件。
 
-   您也可以核取對應方塊，以新增資料分組條件。 若要這麼做，篩選維度必須與查詢的目標維度不同。 有關分組的詳細資訊，請參閱此[節](../../workflow/using/querying-using-grouping-management.md)。
+   您也可以核取對應方塊，以新增資料分組條件。 若要這麼做，篩選維度必須與查詢的目標維度不同。 有關分組的詳細資訊，請參閱此[節](querying-using-grouping-management.md)。
 
    您也可以使用運算式產生器來新增更多條件，並將其與邏輯選項AND、OR和EXCEPT結合。 然後，您可以預覽條件組合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 如需詳細資訊，請參閱此[區段](../../platform/using/defining-filter-conditions.md#building-expressions)。
 
@@ -60,7 +62,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
-## 添加資料{#adding-data}
+## 新增資料 {#adding-data}
 
 其他欄可讓您收集目標母體的其他資訊，例如合約編號、電子報訂閱或來源。 此資料可儲存在Adobe Campaign資料庫或外部資料庫中。
 
@@ -73,7 +75,7 @@ ht-degree: 0%
 ![](assets/wf_add_data_1st_option.png)
 
 * 選擇&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;以選擇Adobe Campaign資料庫中的資料。
-* 選擇&#x200B;**[!UICONTROL External data]**&#x200B;以從外部資料庫添加資料。 只有在您已購買&#x200B;**同盟資料存取**&#x200B;選項時，才可使用此選項。 有關詳細資訊，請參閱[存取外部資料庫(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
+* 選擇&#x200B;**[!UICONTROL External data]**&#x200B;以從外部資料庫添加資料。 只有在您已購買&#x200B;**同盟資料存取**&#x200B;選項時，才可使用此選項。 有關詳細資訊，請參閱[存取外部資料庫(FDA)](accessing-an-external-database--fda-.md)。
 * 選取&#x200B;**[!UICONTROL An offer proposition]**&#x200B;選項，以新增一組欄，讓您儲存優惠方案引擎產生的最佳主張。 只有在您已購買&#x200B;**Interaction**&#x200B;模組時，才可使用此選項。
 
 如果平台上未安裝可選模組，則不顯示此階段。 你會被帶到下一個階段。
@@ -90,10 +92,10 @@ ht-degree: 0%
 
    您可以新增：
 
-   * 根據從目標母體取得的資料或匯總（上個月的待定購買數、收據的平均金額等）計算的欄位。 例如，前往[選取資料](../../workflow/using/targeting-data.md#selecting-data)。
+   * 根據從目標母體取得的資料或匯總（上個月的待定購買數、收據的平均金額等）計算的欄位。 例如，前往[選取資料](targeting-data.md#selecting-data)。
    * 使用輸出列清單右側的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕建立的新欄位。
 
-      您也可以新增資訊集合，例如合約清單、最近5個傳送等。 集合與欄位一致，這些欄位可以有相同設定檔的多個值（1-N關係）。 有關詳細資訊，請參閱[編輯其他資料](../../workflow/using/targeting-data.md#editing-additional-data)。
+      您也可以新增資訊集合，例如合約清單、最近5個傳送等。 集合與欄位一致，這些欄位可以有相同設定檔的多個值（1-N關係）。 有關詳細資訊，請參閱[編輯其他資料](targeting-data.md#editing-additional-data)。
 
 若要新增連結至目標人口的資訊集合：
 
@@ -123,13 +125,13 @@ ht-degree: 0%
 
 1. 如果您已選取&#x200B;**[!UICONTROL Limit the line count]**&#x200B;選項，請定義要篩選收集資料的順序。 一旦收集的行數超過指定要保留的行數，篩選順序就允許您指定要保留的行。
 
-## 範例：對簡單收件者屬性{#example--targeting-on-simple-recipient-attributes}進行定位
+## 範例：對簡單收件者屬性進行定位 {#example--targeting-on-simple-recipient-attributes}
 
 在以下範例中，查詢旨在識別居住在法國的18至30歲男性。 此查詢將用於工作流程中，例如，旨在讓這些查詢成為專屬選件。
 
 >[!NOTE]
 >
->其他查詢示例顯示在[此部分](../../workflow/using/querying-recipient-table.md)中。
+>其他查詢示例顯示在[此部分](querying-recipient-table.md)中。
 
 1. 為查詢命名，然後選取&#x200B;**[!UICONTROL Edit query...]**&#x200B;連結。
 1. 在可用篩選器類型清單中選擇&#x200B;**[!UICONTROL Filtering conditions]**。
@@ -155,7 +157,7 @@ ht-degree: 0%
 
    ![](assets/query_example_result.png)
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要
@@ -165,11 +167,11 @@ ht-degree: 0%
 
 此值是工作表的架構。 此參數對於具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有轉變都有效。
 
-## 優化查詢{#optimizing-queries}
+## 最佳化查詢 {#optimizing-queries}
 
 以下章節提供最佳實務，以最佳化在Adobe Campaign上執行的查詢，以限制資料庫的工作負載並改善使用者體驗。
 
-### 連接和索引{#joins-and-indexes}
+### 聯接和索引 {#joins-and-indexes}
 
 * 有效的查詢依賴於索引。
 * 對所有聯接使用索引。
@@ -184,7 +186,11 @@ ht-degree: 0%
 
    請確定您知道查詢的執行計畫。 避免執行完整表掃描，特別是對於每分鐘運行的即時查詢或幾乎即時查詢。
 
-有關詳細資訊，請參閱[資料模型最佳實務](https://helpx.adobe.com/tw/campaign/kb/acc-data-model-best-practices.html)和[資料庫映射](../../configuration/using/database-mapping.md)區段。
+   如需詳細資訊，請視您的Campaign版本而定，參閱下列區段：
+
+   ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文件](../../configuration/using/database-mapping.md)
+
+   ![](assets/do-not-localize/v8.png)[  Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 函式 {#functions}
 
@@ -193,7 +199,7 @@ ht-degree: 0%
 
    有關函式的詳細資訊，請參閱[此部分](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
-### 篩選維度{#filtering-dimensions}
+### 篩選維度 {#filtering-dimensions}
 
 使用查詢的篩選維度，而非使用「exists sach」運算子。
 
@@ -211,7 +217,7 @@ SQL中的篩選維等效於內部連接：
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-有關篩選維度的詳細資訊，請參閱[此區段](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
+有關篩選維度的詳細資訊，請參閱[此區段](building-a-workflow.md#targeting-and-filtering-dimensions)。
 
 ### 架構 {#architecture}
 

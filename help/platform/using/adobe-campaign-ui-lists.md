@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 87%
@@ -15,9 +15,11 @@ ht-degree: 87%
 
 # 管理和自訂清單{#manage-and-customize-lists}
 
+![](../../assets/common.svg)
+
 您可以使用瀏覽器存取Campaign資料庫中的記錄清單。 您可以篩選這些清單、執行搜尋、新增資訊、篩選及排序資料。
 
-## 計數記錄{#counting-records}
+## 計數記錄 {#counting-records}
 
 根據預設，Adobe Campaign 會載入清單中的前 200 條記錄。這意味著將不一定顯示您正在檢視之表格中的所有記錄。您可以統計清單中的記錄計數，並載入更多記錄。
 
@@ -27,7 +29,7 @@ ht-degree: 87%
 
 如果右側出現「**?**」而非數字，請按一下計數器執行計算。
 
-### 載入更多記錄{#loading-more-records}
+### 載入更多記錄 {#loading-more-records}
 
 若要載入 (並顯示) 更多記錄 (預設為 200 條)，請按一下 **[!UICONTROL Continue loading]**。
 
@@ -49,7 +51,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## 配置清單{#configuring-lists}
+## 配置清單 {#configuring-lists}
 
 ### 新增欄 {#add-columns}
 
@@ -82,7 +84,7 @@ ht-degree: 87%
    >
    >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱[此部分](#sorting-a-list)。
    >
-   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[瞭解更多](#configuring-lists)。
+   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[深入瞭解](#configuring-lists)。
    >
    >您也可以排序和篩選資料。請參閱[本節](../../platform/using/filtering-options.md)。
 
@@ -120,7 +122,7 @@ ht-degree: 87%
 
 當清單作用中時，例如：選取了至少一行時，您可以使用 F9 來調整欄的寬度以便在螢幕上顯示所有欄。
 
-### 在子資料夾{#display-sub-folders-records}中顯示資料
+### 在子資料夾中顯示資料 {#display-sub-folders-records}
 
 清單可顯示：
 
@@ -131,7 +133,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
-## 保存清單配置{#saving-a-list-configuration}
+## 儲存清單設定 {#saving-a-list-configuration}
 
 清單設定是在工作站層級本機定義。清除本機快取時，會停用本機設定。
 
@@ -161,7 +163,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## 導出清單{#exporting-a-list}
+## 匯出清單 {#exporting-a-list}
 
 若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
 
@@ -171,7 +173,7 @@ ht-degree: 87%
 >
 >不可使用 [複製/貼上] 功能匯出清單中的元素。
 
-## 排序清單{#sorting-a-list}
+## 排序清單 {#sorting-a-list}
 
 清單中可包含大量資料。您可以對這些資料進行排序或套用簡單、進階篩選器。透過排序，您設定以遞增或遞減順序顯示資料。透過篩選，您可以定義和合併準則以僅顯示所選資料。
 
@@ -196,10 +198,10 @@ ht-degree: 87%
 
 1. 按一下 **[!UICONTROL Ok]** 確認此設定，並在清單中呈現結果。
 
-### 搜索元素{#running-a-search}
+### 搜尋元素 {#running-a-search}
 
 您可使用欄位清單上方的 **[!UICONTROL Search]** 欄位執行編輯器中可用欄位的搜尋。按下鍵盤上的 **Enter**，或瀏覽清單。符合搜尋文字的欄位將以粗體呈現。
 
 >[!NOTE]
 >
->您可以建立篩選器，只顯示清單中的部分資料。[瞭解更多](../../platform/using/creating-filters.md)。
+>您可以建立篩選器，只顯示清單中的部分資料。[深入瞭解](../../platform/using/creating-filters.md)。

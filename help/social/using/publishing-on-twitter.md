@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # 在 Twitter 上發佈{#publishing-on-twitter}
 
-## 在您的Twitter帳戶{#publishing-on-your-twitter-accounts}上發佈
+![](../../assets/v7-only.svg)
+
+## 在Twitter帳戶上發佈 {#publishing-on-your-twitter-accounts}
 
 完成設定後， Social Marketing可讓您傳送推文至您的Twitter帳戶。
 
@@ -32,7 +34,7 @@ ht-degree: 5%
 
 ![](assets/social_twitter_delivery_001.png)
 
-### 選擇主目標{#selecting-the-main-target}
+### 選取主要目標 {#selecting-the-main-target}
 
 選取您要傳送推文的帳戶。
 
@@ -52,7 +54,7 @@ ht-degree: 5%
 
    ![](assets/social_twitter_delivery_011.png)
 
-### 選擇校樣{#selecting-the-target-of-the-proof}的目標
+### 選取校樣的目標 {#selecting-the-target-of-the-proof}
 
 **[!UICONTROL Target of the proofs]**&#x200B;標籤可讓您定義Twitter帳戶，以在最終傳送前用於測試傳送。 因此，我們建議您建立專用於傳送證明的私人Twitter帳戶。 如需如何建立私人Twitter帳戶的詳細資訊，請參閱[在Twitter上建立測試帳戶](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 選取校樣目標的步驟與選取主要目標的步驟相同。 請參閱[在Twitter上建立測試帳戶](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。
 
@@ -62,13 +64,13 @@ ht-degree: 5%
 >
 >如果您對所有傳送使用相同的Twitter測試帳戶，可以在&#x200B;**[!UICONTROL Tweet]**&#x200B;傳送範本中儲存校樣目標，可透過&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點存取。 之後，系統會預設為每個新傳送輸入校樣目標。
 
-### 定義訊息內容{#defining-the-message-content}
+### 定義訊息內容 {#defining-the-message-content}
 
 在&#x200B;**[!UICONTROL Content]**&#x200B;標籤中輸入推文的內容。
 
 ![](assets/social_twitter_delivery_005.png)
 
-### 查看預覽{#viewing-the-preview}
+### 檢視預覽 {#viewing-the-preview}
 
 **[!UICONTROL Preview]**&#x200B;標籤可讓您檢視推文的呈現。
 
@@ -83,7 +85,7 @@ ht-degree: 5%
 >
 >預覽可能與最終推文稍有不同。 我們強烈建議在最終傳遞前傳送校樣，以檢視推文的確切轉譯。 請參閱[傳送校樣](#sending-the-proof)。
 
-### 配置跟蹤{#configuring-tracking}
+### 設定追蹤 {#configuring-tracking}
 
 您可以在傳送報告及傳送與服務的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;標籤中檢視追蹤。
 
@@ -97,13 +99,13 @@ ht-degree: 5%
 >
 >我們無法區分分析推文的機器人和實際點擊的用戶。
 
-### 傳送校樣{#sending-the-proof}
+### 傳送校樣 {#sending-the-proof}
 
 我們強烈建議您在最終傳送前先傳送出版物的證明，以在私人Twitter測試頁面上取得出版物的確切轉譯。 如需建立私人Twitter帳戶的詳細資訊，請參閱在Twitter上建立測試帳戶[。 ](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)在[選取校樣的目標中會詳細說明選取校樣目標的步驟。](#selecting-the-target-of-the-proof)
 
 校樣傳送與電子郵件傳送相同。 請參閱[本節](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-### 傳送訊息{#sending-the-message}
+### 傳送訊息 {#sending-the-message}
 
 1. 內容獲核准後，按一下&#x200B;**[!UICONTROL Send]**&#x200B;按鈕。
 1. 選擇&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;並按一下&#x200B;**[!UICONTROL Analyze]**&#x200B;按鈕。
@@ -119,7 +121,7 @@ ht-degree: 5%
 
 ![](assets/social_facebook_delivery_016.png)
 
-## 向訂閱者發送直接消息{#sending-direct-messages-to-subscribers}
+## 傳送直接訊息給訂閱者 {#sending-direct-messages-to-subscribers}
 
 ### 操作原則 {#operating-principle}
 
@@ -156,7 +158,7 @@ ht-degree: 5%
 
 ![](assets/social_twitter_delivery_010.png)
 
-### 選擇主目標{#selecting-the-main-target-1}
+### 選取主要目標 {#selecting-the-main-target-1}
 
 選擇要向其發送直接消息的追隨者。
 
@@ -182,7 +184,7 @@ ht-degree: 5%
 
       ![](assets/social_twitter_delivery_018.png)
 
-### 選擇校樣{#selecting-the-target-of-the-proof-1}的目標
+### 選取校樣的目標 {#selecting-the-target-of-the-proof-1}
 
 **[!UICONTROL Target of the proofs]**&#x200B;索引標籤可讓您選取將接收直接訊息校樣的追隨者。 選擇過程與主目標的選擇過程相同。 請參閱[選取主要目標](#selecting-the-main-target)。
 
@@ -192,7 +194,7 @@ ht-degree: 5%
 >
 >如果您想要將所有直接訊息校樣傳送至相同的Twitter追隨者，可將校樣目標儲存在&#x200B;**[!UICONTROL Tweet (Direct Message)]**&#x200B;傳遞範本中，該範本可透過&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點存取。 之後，系統會預設為每個新傳送輸入校樣目標。
 
-### 定義訊息內容{#defining-message-content-}
+### 定義訊息內容 {#defining-message-content-}
 
 在&#x200B;**[!UICONTROL Content]**&#x200B;標籤中輸入推文的內容。
 

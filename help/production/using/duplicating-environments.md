@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 複製環境{#duplicating-environments}
+
+![](../../assets/v7-only.svg)
 
 ## 簡介 {#introduction}
 
@@ -47,7 +49,7 @@ ht-degree: 1%
    >一個環境可包含數個例項。 每個Adobe Campaign執行個體都需遵守授權合約。 檢查您的授權合約，了解您可擁有的環境數量。\
    >以下過程允許您傳輸環境，而不影響已安裝的環境和實例的數量。
 
-### 開始之前{#before-you-start}
+### 開始之前 {#before-you-start}
 
 >[!IMPORTANT]
 >
@@ -57,7 +59,7 @@ ht-degree: 1%
 
 ## 實作 {#implementation}
 
-### 轉移過程{#transfer-procedure}
+### 轉移程式 {#transfer-procedure}
 
 本節將通過案例研究幫助您了解將源環境傳輸到目標環境所需的步驟：我們的目標是將生產環境（**prod**&#x200B;例項）還原至開發環境（**dev**&#x200B;例項），以便在盡可能接近「即時」平台的環境中運作。
 
@@ -71,8 +73,7 @@ ht-degree: 1%
 >
 
 
-
-### 步驟1 — 備份源環境(prod)資料{#step-1---make-a-backup-of-the-source-environment--prod--data}
+### 步驟1 — 備份源環境(prod)資料 {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 複製資料庫
 
@@ -84,7 +85,7 @@ ht-degree: 1%
 pg_dump mydatabase > mydatabase.sql
 ```
 
-### 步驟2 — 匯出目標環境配置(dev){#step-2---export-the-target-environment-configuration--dev-}
+### 步驟2 — 匯出目標環境設定（開發） {#step-2---export-the-target-environment-configuration--dev-}
 
 每個環境的大部分設定元素都不同：外部帳戶（中間來源、路由等）、技術選項（平台名稱、資料庫ID、電子郵件地址和預設URL等）。
 
@@ -109,7 +110,7 @@ pg_dump mydatabase > mydatabase.sql
 >
 >導出nmsexaccount表時，與外部帳戶（例如，中間來源、Message Center Execution、SMPP、IMS和其他外部帳戶的密碼）相關的密碼將不導出。 請務必事先存取正確的密碼，因為外部帳戶匯入回環境後，可能需要重新輸入這些密碼。
 
-### 步驟3 — 停止目標環境(dev){#step-3---stop-the-target-environment--dev-}
+### 步驟3 — 停止目標環境（開發） {#step-3---stop-the-target-environment--dev-}
 
 您需要在所有目標環境伺服器上停止Adobe Campaign程式。 此操作取決於您的作業系統。
 
@@ -146,7 +147,7 @@ nlserver pdump
 * 在Windows中：開啟&#x200B;**任務管理器**&#x200B;並檢查是否沒有&#x200B;**nlserver.exe**&#x200B;進程。
 * 在Linux中：運行&#x200B;**ps aux | grep nlserver**&#x200B;命令，並檢查是否沒有&#x200B;**nlserver**&#x200B;進程。
 
-### 步驟4 — 在目標環境中還原資料庫(dev){#step-4---restore-the-databases-in-the-target-environment--dev-}
+### 步驟4 — 在目標環境中還原資料庫（開發） {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
 要在目標環境中恢復源資料庫，請使用以下命令：
 
@@ -154,7 +155,7 @@ nlserver pdump
 psql mydatabase < mydatabase.sql
 ```
 
-### 步驟5 — 警告目標環境(dev){#step-5---cauterize-the-target-environment--dev-}
+### 步驟5 — 警告目標環境（開發） {#step-5---cauterize-the-target-environment--dev-}
 
 為避免故障，在目標環境啟動時，不得自動執行連結至傳送傳送和工作流程執行的程式。
 
@@ -164,7 +165,7 @@ psql mydatabase < mydatabase.sql
 nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 ```
 
-### 步驟6 — 檢查燒灼{#step-6---check-cauterization}
+### 步驟6 — 檢查燒灼 {#step-6---check-cauterization}
 
 1. 檢查唯一的deliverypart是ID設為0的傳送部分：
 
@@ -185,7 +186,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### 步驟7 — 重新啟動目標環境Web進程（開發）{#step-7---restart-the-target-environment-web-process--dev-}
+### 步驟7 — 重新啟動目標環境Web進程（開發） {#step-7---restart-the-target-environment-web-process--dev-}
 
 在目標環境中，重新啟動所有伺服器的Adobe Campaign程式。
 
@@ -209,7 +210,7 @@ nlserver pdump
 
 檢查對客戶端控制台功能的訪問。
 
-### 步驟8 — 將選項和外部帳戶匯入目標環境(dev){#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
+### 步驟8 — 將選項和外部帳戶匯入目標環境（開發） {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
 >[!IMPORTANT]
 >
@@ -228,7 +229,7 @@ nlserver pdump
 
    檢查外部資料庫是否確實已匯入&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中。
 
-### 步驟9 — 重新啟動所有進程並更改用戶(dev){#step-9---restart-all-processes-and-change-users--dev-}
+### 步驟9 — 重新啟動所有程式並變更使用者（開發） {#step-9---restart-all-processes-and-change-users--dev-}
 
 若要啟動Adobe Campaign程式，請使用下列命令：
 

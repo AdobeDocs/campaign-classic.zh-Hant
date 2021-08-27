@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
@@ -15,9 +15,11 @@ ht-degree: 100%
 
 # 開發人員常見問題集 {#dev-faq}
 
+![](../../assets/common.svg)
+
 作為一個開放式解決方案，Adobe Campaign 可進行自訂，以及供進階應用程式開發使用。
 
-## 什麼是 Campaign 資料模型？{#what-is-the-campaign-data-model}
+## 什麼是 Campaign 資料模型？ {#what-is-the-campaign-data-model}
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。如需 Adobe Campaign 綱要的詳細資料，[請參閱本節](../../configuration/using/about-schema-edition.md)。
 
@@ -25,7 +27,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 [本文](https://helpx.adobe.com/tw/campaign/kb/acc-data-model-best-practices.html)列出最佳實務。
 
-## 如何使用 Campaign 綱要？{#how-to-work-with-campaign-schemas-}
+## 如何使用 Campaign 綱要？ {#how-to-work-with-campaign-schemas-}
 
 在 Adobe Campaign 中，資料綱要用於：
 
@@ -35,13 +37,13 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 閱讀[資料表及綱要使用入門](../../configuration/using/about-schema-edition.md)瞭解如何使用資料綱要、擴充和自訂 Campaign，以滿足您的需求。
 
-## 如何使用自訂的收件者表格？{#how-to-use-a-custom-recipient-table-}
+## 如何使用自訂的收件者表格？ {#how-to-use-a-custom-recipient-table-}
 
 您可以在 Campaign 中建立和實施非標準式收件者表格，以傳送訊息。
 
 [按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 
-## 在 Campaign 定義查詢的最佳實務是什麼？{#what-are-the-best-practices-to-define-queries-in-campaign-}
+## 在 Campaign 定義查詢的最佳實務是什麼？ {#what-are-the-best-practices-to-define-queries-in-campaign-}
 
 Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料和建立區段。
 
@@ -53,7 +55,7 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 [按一下這裡](../../workflow/using/query.md) ，以探索 Campaign 查詢編輯器。
 
-## 如何匯入資料包？{#how-can-i-import-a-data-package-}
+## 如何匯入資料包？ {#how-can-i-import-a-data-package-}
 
 使用 Adobe Campaign，您可以透過資料包系統匯出或匯入平台配置和資料。資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
 
@@ -61,6 +63,6 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 [按一下這裡](../../platform/using/working-with-data-packages.md)瞭解如何使用資料包匯入和匯出 Campaign 配置。
 
-## 我可以在哪裡找到 Campaign Classic API 清單？{#where-can-i-find-the-list-of-campaign-classic-apis}
+## 我可以在哪裡找到 Campaign Classic API 清單？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
 [本專屬文件](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)提供所有 Campaign API，及個別完整說明。

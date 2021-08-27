@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -14,6 +14,8 @@ ht-degree: 14%
 ---
 
 # 瞭解傳遞故障{#understanding-delivery-failures}
+
+![](../../assets/common.svg)
 
 ## 瞭解傳送故障 {#about-delivery-failures}
 
@@ -228,12 +230,10 @@ Adobe Campaign平台可讓您透過退信功能管理電子郵件傳送失敗。
 >對於托管或混合安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md):
 >
 >* **[!UICONTROL Delivery log qualification]**&#x200B;表格中的退信限定不再用於&#x200B;**synchronous**&#x200B;傳送失敗錯誤訊息。 Enhanced MTA會決定退信類型和資格，並將該資訊傳回至Campaign。
-   >
-   >
-* **** inMail 程序仍會透過 **[!UICONTROL Inbound email]** 規則來限定非同步退信。如需詳細資訊，請參閱[電子郵件管理規則](#email-management-rules)。
-   >
-   >
-* 對於使用Enhanced MTA **而不使用Webhook/EFS**&#x200B;的例項， **[!UICONTROL Inbound email]**&#x200B;規則也將用於處理來自Enhanced MTA的同步退信電子郵件，使用與非同步退信電子郵件相同的電子郵件地址。
+>
+>* **** inMail 程序仍會透過 **[!UICONTROL Inbound email]** 規則來限定非同步退信。如需詳細資訊，請參閱[電子郵件管理規則](#email-management-rules)。
+>
+>* 對於使用Enhanced MTA **而不使用Webhook/EFS**&#x200B;的例項， **[!UICONTROL Inbound email]**&#x200B;規則也將用於處理來自Enhanced MTA的同步退信電子郵件，使用與非同步退信電子郵件相同的電子郵件地址。
 
 
 若為使用舊版Campaign MTA的內部部署安裝和托管/混合式安裝，當電子郵件傳送失敗時，Adobe Campaign傳送伺服器會收到來自傳訊伺服器或遠端DNS伺服器的錯誤訊息。 錯誤清單由遠程伺服器返回的消息中包含的字串組成。 會為每個錯誤訊息指派失敗類型和原因。

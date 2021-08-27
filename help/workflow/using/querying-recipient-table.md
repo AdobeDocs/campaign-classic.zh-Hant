@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 查詢收件人資料表 {#querying-recipient-table}
+
+![](../../assets/common.svg)
 
 在此範例中，我們想要復原電子郵件網域為「orange.co.uk」且未居住在倫敦的收件者的姓名和電子郵件。
 

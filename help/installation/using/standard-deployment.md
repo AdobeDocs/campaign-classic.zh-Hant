@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 標準部署{#standard-deployment}
+
+![](../../assets/v7-only.svg)
 
 此配置需要三台電腦：
 
@@ -39,7 +41,7 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 * 故障切換功能：在另一台電腦出現硬體問題時，將進程切換到一台電腦的能力。
 * 總體效能更好，因為MTA和重定向功能可以部署在負載平衡器後面的兩台電腦上。 有了兩個活動的MTA和足夠的頻寬，在每小時100,000封郵件的區域內可以實現廣播速率。
 
-## 安裝和配置步驟{#installation-and-configuration-steps}
+## 安裝和配置步驟 {#installation-and-configuration-steps}
 
 ### 先決條件 {#prerequisites}
 
@@ -54,7 +56,7 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 
 * 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521(Oracle)、5432(PostgreSQL)等 埠。 有關詳細資訊，請參閱[資料庫訪問](../../installation/using/network-configuration.md#database-access)部分。
 
-### 安裝應用程式伺服器{#installing-the-application-server}
+### 安裝應用程式伺服器 {#installing-the-application-server}
 
 請依照步驟從Adobe Campaign應用程式伺服器安裝獨立執行個體，以建立資料庫（步驟12）。 請參閱[安裝和配置（單台電腦）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
 
@@ -67,7 +69,7 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 * 語言：英文
 * 資料庫：**campaign:demo@dbsrv**
 
-### 安裝兩個前端伺服器{#installing-the-two-frontal-servers}
+### 安裝兩個前端伺服器 {#installing-the-two-frontal-servers}
 
 安裝和配置過程在兩台電腦上相同。
 

@@ -6,20 +6,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1677'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
 # 設定簡訊頻道 {#setting-up-sms-channel}
 
+![](../../assets/common.svg)
+
 若要傳送至行動電話，您需要：
 
 1. 指定連接器和訊息類型的外部帳戶。
 
-   請注意，舊連接器現已過時。 已棄用的功能仍可使用，但將不會進一步增強或支援。 了解更多[資訊，請參閱本頁](../../rn/using/deprecated-features.md)。
+   請注意，舊連接器現已過時。 已棄用的功能仍可使用，但將不會進一步增強或支援。 在[本頁](../../rn/using/deprecated-features.md)中深入瞭解。
 
 1. 參考此外部帳戶的傳遞範本。
 
@@ -362,7 +364,7 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此模板在&#x200B;**[
 
    ![](assets/s_user_mobile_template_change_02.png)
 
-1. 按一下 **[!UICONTROL Properties]**。
+1. 按一下&#x200B;**[!UICONTROL Properties]**。
 1. 在&#x200B;**[!UICONTROL General]**&#x200B;頁簽中，選擇與在前面步驟中建立的外部帳戶相對應的路由模式。
 
    ![](assets/s_user_mobile_template_change_03.png)

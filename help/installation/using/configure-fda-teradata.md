@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
 
 ---
 
-# 配置對Teradata{#configure-access-to-teradata}的訪問
+# 配置對Teradata的訪問 {#configure-access-to-teradata}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign [同盟資料存取](../../installation/using/about-fda.md)(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定對Teradata的存取權。
 
@@ -21,7 +23,7 @@ ht-degree: 0%
 1. 在Campaign中設定Teradata[外部帳戶](#teradata-external)
 1. 設定[其他設定](#teradata-additional-configurations)以用於Teradata和Campaign伺服器
 
-## Teradata配置{#teradata-config}
+## Teradata配置 {#teradata-config}
 
 您需要安裝Teradata的驅動程式，才能實作與Campaign的連線。
 
@@ -66,8 +68,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在FDA中連線至Teradata外部資料庫需要在Adobe Campaign伺服器上執行額外的設定步驟。 [瞭解更多](#teradata-additional-configurations)。
-
+>在FDA中連線至Teradata外部資料庫需要在Adobe Campaign伺服器上執行額外的設定步驟。 [深入瞭解](#teradata-additional-configurations)。
 
 ## Teradata外部帳戶{#teradata-external}
 
@@ -93,7 +94,7 @@ teradata外部帳戶可讓您將Campaign執行個體連結至Teradata外部資�
 
    * **[!UICONTROL Options]**:要傳遞的選項Teradata。使用下列格式：&#39;parameter=value&#39;。 使用半欄作為值之間的分隔符。
 
-   * **[!UICONTROL Timezone]**:teradata中設定的時區。[瞭解更多](#timezone)
+   * **[!UICONTROL Timezone]**:teradata中設定的時區。[深入瞭解](#timezone)
 
 ### 查詢區
 
@@ -115,7 +116,7 @@ teradata外部帳戶可讓您將Campaign執行個體連結至Teradata外部資�
 
 1. 勾選&#x200B;**[!UICONTROL Active]**&#x200B;方塊以啟用此功能
 
-#### 外部帳戶疑難排解{#external-account-troubleshooting}
+#### 外部帳戶疑難排解 {#external-account-troubleshooting}
 
 如果在測試連接&#x200B;**TIM-030008日期&#39;2&#39;時出現以下錯誤：缺少字元(iRc=-53)**&#x200B;請確保正確安裝ODBC驅動程式，並為Campaign伺服器設定LD_LIBRARY_PATH(Linux)/ PATH(Windows)。
 
@@ -125,7 +126,7 @@ teradata外部帳戶可讓您將Campaign執行個體連結至Teradata外部資�
 
 * 如果您使用的是舊版Campaign，則必須將驅動程式安裝所建立的odbcinst.ini的Teradata區段複製到名為Teradata的新區段。 Regedit可用於此情況。 如果您的基本位於latin1，則必須在選項中添加&#x200B;**APICharSize=1**。
 
-## 其他配置 {#teradata-additional-configurations}
+## 其他設定 {#teradata-additional-configurations}
 
 <!--
 ### Compatibility {#teradata-compatibility}
@@ -148,7 +149,7 @@ Starting from Adobe Campaign Classic 17.9, we now support by default Teradata da
 Customers with a Latin-1 Teradata database migrating to a recent Campaign Classic release will have to add the parameter APICharSize=1 in the options of the external account.
 -->
 
-### 用戶配置{#user-configuration}
+### 使用者設定 {#user-configuration}
 
 外部資料庫需要以下權限：建立/刪除/執行自定義過程，建立/刪除/插入/選擇表。 如果您想在Adobe Campaign執行個體上使用md5和sha2函式，也可能必須建立使用者模式函式。
 
@@ -160,7 +161,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
 | :-: |
 | ```MODIFY USER $login$ AS NO FALLBACK;``` |
 
-### MD5安裝{#md5-installation}
+### MD5安裝 {#md5-installation}
 
 如果您想在Adobe Campaign執行個體中使用md5函式，則必須從此[page](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf)(md5_20080530.zip)在您的Teradata資料庫上安裝使用者模式函式。
 
@@ -180,7 +181,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
    .run file = hash_md5.btq
    ```
 
-### SHA2安裝{#sha2-installation}
+### SHA2安裝 {#sha2-installation}
 
 如果您想在Adobe Campaign例項中使用sha2函式，必須從此[page](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip)(teradata-udf-sha2-1.0.zip)在您的Teradata資料庫上安裝使用者模式函式。
 
@@ -201,7 +202,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
    .run file = hash_sha512.sql
    ```
 
-### UDF_UTF16TO8安裝{#UDF-UTF16TO8-installation}
+### UDF_UTF16TO8安裝 {#UDF-UTF16TO8-installation}
 
 如果您想在Adobe Campaign例項中使用udf_utf16to8函式，則必須從此[page](https://downloads.teradata.com/download/tools/unicode-tool-kit)的&#x200B;**Teradataunicode工具套件**(utk_release1.7.0.zip)，在Teradata資料庫上安裝使用者模式函式。
 
@@ -230,7 +231,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
    SELECT CAST(Char2HexInt(UDF_UTF16to8(_UNICODE'004100000042'XC)) AS VARCHAR(100));
    ```
 
-## 適用於Linux {#campaign-server-linux}的Campaign伺服器設定
+## 適用於Linux的Campaign伺服器設定 {#campaign-server-linux}
 
 安裝驅動程式時需要：
 
@@ -246,7 +247,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
 
 如果您的Linux發佈沒有套件，您可以依照CentOS 7上所述（例如使用docker）安裝，然後複製Adobe Campaign伺服器上/opt/teradata的內容。
 
-### ODBC驅動程式安裝{#odbc-installation}
+### ODBC驅動程式安裝 {#odbc-installation}
 
 安裝ODBC驅動程式：
 
@@ -262,7 +263,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
 
 1. 運行setup_wrapper.sh。
 
-### Teradata工具和實用程式安裝{#teradata-tools-installation}
+### Teradata工具和實用程式安裝 {#teradata-tools-installation}
 
 安裝工具：
 
@@ -282,7 +283,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
 
 1. libtelapi.so檔案應可在/opt/teradata/client/16.20/lib64中使用。
 
-## 適用於Windows {#campaign-server-windows}的Campaign伺服器設定
+## 適用於Windows的Campaign伺服器設定 {#campaign-server-windows}
 
 您首先需要下載Windows適用的Teradata工具和實用程式。 您可以從此[page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)下載
 
@@ -294,7 +295,7 @@ Adobe Campaign不會針對將在資料庫中建立的物件設定保護模式（
 
 Teradata使用非標準的時區名稱，您可以在[Teradata網站](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)上找到清單。 Adobe Campaign會嘗試將外部設定中指定的時區轉換為Teradata了解的時區。 如果找不到通信，則會找到工作階段的壁櫥GMT+X（或GMT-X）時區，記錄中會出現警告。
 
-轉換完成，會讀取檔名為「teradata時區.txt」的檔案，該檔案應位於下列datakit目錄中：在linux下/usr/local/neolane/nl6/datakit。 如果您編輯此檔案，請務必聯絡Adobe Campaign團隊，在原始碼中進行變更，否則下次促銷活動更新時將會覆寫此檔案。
+轉換完成，會讀取檔名為「teradata時區.txt」的檔案，該檔案應位於下列datakit目錄中：在linux下/usr/local/neolane/nl6/datakit。 如果您編輯此檔案，請務必聯絡Adobe Campaign團隊，在原始碼中進行變更，否則下次促銷活動更新時，會覆寫此檔案。
 
 使用 — verbose開關運行nlserver時，將指示用於連接的時區，例如：
 

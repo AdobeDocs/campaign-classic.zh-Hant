@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 針對 iOS 的設定步驟 {#configuring-the-mobile-application-in-adobe-campaign-ios}
+
+![](../../assets/common.svg)
 
 安裝套件後，您就可以在Adobe Campaign Classic中定義iOS應用程式設定。
 
@@ -42,7 +44,7 @@ ht-degree: 5%
 
    ![](assets/nmac_connectors.png)
 
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Save]**。
 
 您的iOS連接器現在已設定完畢。 您可以開始建立服務。
 
@@ -124,6 +126,6 @@ ht-degree: 5%
 
    ![](assets/nmac_ios_5.png)
 
-1. 按一下 **[!UICONTROL Finish]**。
+1. 按一下&#x200B;**[!UICONTROL Finish]**。
 
 您的iOS應用程式現在已可用於Campaign Classic。

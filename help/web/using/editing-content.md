@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 編輯內容{#editing-content}
+
+![](../../assets/common.svg)
 
 ## 定義可見性條件 {#defining-a-visibility-condition}
 
@@ -100,7 +102,7 @@ ht-degree: 1%
 可用的動作如下：
 
 * **[!UICONTROL Refresh]** :重新整理目前的頁面。
-* **[!UICONTROL Next page]** :會建立指向Web應用程式中下一頁的連結。
+* **[!UICONTROL Next page]** :建立指向Web應用程式中的下一頁的連結。
 * **[!UICONTROL Previous page]** :建立指向Web應用程式中上一頁的連結。
 
 >[!NOTE]
@@ -137,7 +139,6 @@ ht-degree: 1%
 >* 預設瀏覽器行為
 
 >
-
 
 
 ### 連結至URL {#link-to-a-url}
@@ -201,9 +202,8 @@ ht-degree: 1%
 >[!NOTE]
 >
 >* **** 刪除圖示：刪除區塊及其所有內容。
-   >
-   >
-* **** 重複圖示：複製區塊以及與區塊相關的所有樣式。
+>
+>* **** 重複圖示：複製區塊以及與區塊相關的所有樣式。
 
 
 ## 管理影像和動畫 {#managing-images-and-animations}

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 傳入簡訊{#inbound-sms}
+
+![](../../assets/common.svg)
 
 **傳入SMS**&#x200B;活動可讓您下載及處理來自外部帳戶的文字訊息。
 
@@ -31,4 +33,4 @@ ht-degree: 4%
 
 1. **[!UICONTROL Expiration]**
 
-**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;標籤在[入站電子郵件](../../workflow/using/inbound-emails.md)中有詳細說明。
+**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;標籤在[入站電子郵件](inbound-emails.md)中有詳細說明。

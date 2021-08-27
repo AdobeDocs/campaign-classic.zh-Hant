@@ -5,7 +5,7 @@ description: 配置整合
 audience: integrations
 content-type: reference
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 管線監視 {#pipeline-monitoring}
+
+![](../../assets/common.svg)
 
 [!DNL pipelined]狀態Web服務提供有關[!DNL pipelined]進程狀態的資訊。
 
@@ -69,7 +71,7 @@ REST格式，說明如下。
    * retry-validity-duration-ms:會重試處理時間的持續時間，直到消息被丟棄為止。
    * 管道訊息報表
 
-## 管道消息報告{#pipeline-report}
+## 管道訊息報表 {#pipeline-report}
 
 此報表顯示過去五天內每小時的訊息數量。
 

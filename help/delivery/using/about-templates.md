@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 關於範本{#about-templates}
+
+![](../../assets/common.svg)
 
 傳遞設定可儲存在傳遞範本中以供重複使用。 範本可能包含傳送的完整或部分設定。
 

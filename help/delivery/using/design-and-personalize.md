@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 6%
@@ -13,6 +13,8 @@ ht-degree: 6%
 ---
 
 # 建置個人化內容 {#build-personalized-content}
+
+![](../../assets/common.svg)
 
 在設計訊息內容時，請嘗試避免可能妨礙您執行傳送的常見問題。 大多數情況下，可能的錯誤都與[personalization](about-personalization.md)、[formatting](defining-the-email-content.md#message-content)和[images](defining-the-email-content.md#adding-images)有關。
 

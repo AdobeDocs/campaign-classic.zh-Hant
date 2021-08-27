@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # JavaScript 指令碼和範本{#javascript-scripts-and-templates}
+
+![](../../assets/common.svg)
 
 指令碼使得可以計算值、在進程中的不同任務之間交換資料，以及使用SOAP調用執行特定操作。
 
@@ -26,7 +28,7 @@ ht-degree: 2%
 
    ![](assets/script-button.png)
 
-## 公開的{#objects-exposed}對象
+## 公開的物件 {#objects-exposed}
 
 在工作流程內容中執行的JavaScripts會存取一系列其他全域物件。
 
@@ -65,31 +67,31 @@ logInfo("Start date: " + task.creationDate)
 
 變數是&#x200B;**[!UICONTROL instance]**、**[!UICONTROL task]**&#x200B;和&#x200B;**[!UICONTROL event]**&#x200B;對象的自由屬性。 為這些變數授權的JavaScript類型為&#x200B;**[!UICONTROL string]**、**[!UICONTROL number]**&#x200B;和&#x200B;**[!UICONTROL Date]**。
 
-### 實例變數{#instance-variables}
+### 例項變數 {#instance-variables}
 
 例項變數(**[!UICONTROL instance.vars.xxx]**)可與全域變數比較。 所有活動都會共用。
 
-### 任務變數{#task-variables}
+### 任務變數 {#task-variables}
 
 任務變數(**[!UICONTROL task.vars.xxx]**)可與本地變數相比。 它們僅供當前任務使用。 這些變數供持續性活動用來保留資料，有時也用於在相同活動的不同指令碼之間交換資料。
 
-### 事件變數{#event-variables}
+### 事件變數 {#event-variables}
 
 事件變數(**[!UICONTROL vars.xxx]**)允許在工作流進程的基本任務之間交換資料。 這些變數由激活正在進行的任務的任務傳遞。 可以修改它們並定義新的。 然後會將它們傳遞至下列活動。
 
 >[!CAUTION]
 >
->若為[AND-join](../../workflow/using/and-join.md)類型活動，則會合併變數，但如果同一個變數定義兩次，則會發生衝突，值仍未確定。
+>若為[AND-join](and-join.md)類型活動，則會合併變數，但如果同一個變數定義兩次，則會發生衝突，值仍未確定。
 
 事件是最常使用的變數，其使用方式應優先於例項變數。
 
-各種活動會修改或讀取某些事件變數。 這些都是字串類型變數。 例如，匯出會以剛匯出的檔案的完整名稱設定&#x200B;**[!UICONTROL vars.filename]**&#x200B;變數。 所有這些讀取或修改的變數都記錄在活動的[About activities](../../workflow/using/about-activities.md)各節的&#x200B;**Input parameters**&#x200B;和&#x200B;**Output parameters**&#x200B;中。
+各種活動會修改或讀取某些事件變數。 這些都是字串類型變數。 例如，匯出會以剛匯出的檔案的完整名稱設定&#x200B;**[!UICONTROL vars.filename]**&#x200B;變數。 所有這些讀取或修改的變數都記錄在活動的[About activities](about-activities.md)各節的&#x200B;**Input parameters**&#x200B;和&#x200B;**Output parameters**&#x200B;中。
 
 ### 使用案例 {#example}
 
 >[!NOTE]
 >
->[此部分](../../workflow/using/about-workflow-use-cases.md)提供了其他工作流使用案例。
+>[此部分](about-workflow-use-cases.md)提供了其他工作流使用案例。
 
 **範例1**
 
@@ -187,7 +189,7 @@ logInfo("Start date: " + task.creationDate)
 
 **[!UICONTROL logError(message)]** 將錯誤訊息新增至記錄檔。指令碼會中斷其執行，而工作流程會變更為錯誤狀態（依預設，執行個體會暫停）。
 
-## 初始化指令碼{#initialization-script}
+## 初始化指令碼 {#initialization-script}
 
 在特定條件下，您可以在執行時修改活動的屬性。
 

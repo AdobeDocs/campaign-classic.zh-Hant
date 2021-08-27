@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # 開始使用訊息追蹤 {#get-started-tracking}
+
+![](../../assets/common.svg)
 
 有了Adobe Campaign的追蹤功能，您便能追蹤傳送的訊息，並檢查收件者的行為：開啟、點按連結、取消訂閱等。
 

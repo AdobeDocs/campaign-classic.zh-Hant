@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # 關於方案版本{#about-schema-edition}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign採用資料結構：
 
@@ -23,7 +25,7 @@ Adobe Campaign採用資料結構：
 
 如需深入了解Campaign內建表格及其互動，請參閱[此區段](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
-## 擴展或建立架構{#extending-or-creating-schemas}
+## 擴充或建立結構 {#extending-or-creating-schemas}
 
 若要將欄位、索引或其他元素新增至Campaign中的其中一個核心資料結構，例如收件者表格(nms:recipient)，您必須擴充該結構。 有關詳細資訊，請參閱[擴展架構](../../configuration/using/extending-a-schema.md)區段。
 
@@ -111,7 +113,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 要了解有關鍵的詳細資訊，請參閱[鍵的管理](../../configuration/using/database-mapping.md#management-of-keys)部分。
 
-## 屬性（欄位）{#attributes--fields-}
+## 屬性（欄位） {#attributes--fields-}
 
 屬性可讓您定義組成資料物件的欄位。 您可以使用方案版工具欄中的&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕，將空屬性模板放置到游標所在的XML中。 如需詳細資訊，請參閱[資料結構](../../configuration/using/data-schemas.md)區段。
 

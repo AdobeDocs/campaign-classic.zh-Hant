@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 人員與收件者 {#person-people-and-recipients}
+
+![](../../assets/common.svg)
 
 此範例可協助您了解Adobe Campaign中人員與收件者之間的差異。 我們會傳送訊息給數個人，強調人員與收件者之間的差異，同時詳細說明下列指標的計算方法：
 
@@ -42,7 +44,7 @@ ht-degree: 6%
 
 為了更清楚了解人員和收件者的計算方式，我們將分析每個設定檔的記錄。
 
-## 步驟1:約翰{#step-1--john}
+## 步驟1:約翰 {#step-1--john}
 
 **[!UICONTROL John Davis]** 不會開啟電子郵件（因此不會點按任何連結）。
 
@@ -57,7 +59,7 @@ ht-degree: 6%
 | 約翰 | - | - | - |
 | 中間總計 | 0 | 0 | 0 |
 
-## 步驟2:瑪麗{#step-2--marie}
+## 步驟2:瑪麗 {#step-2--marie}
 
 **[!UICONTROL Marie Stuart]** 開啟電子郵件，但未點按任何連結。
 
@@ -77,7 +79,7 @@ Marie的開啟顯示在以下日誌中：
 | 瑪麗 | - | - | +1 |
 | 中間總計 | 0 | 0 | 1 |
 
-## 步驟3:弗洛里安{#step-3--florian}
+## 步驟3:弗洛里安 {#step-3--florian}
 
 **[!UICONTROL Florian David]** 開啟電子郵件並點按連結9次。他還會將電子郵件轉發給開啟並點擊兩次的人。
 
@@ -122,7 +124,7 @@ Florian的動作（一次開啟，9次點按）會顯示在下列記錄中：
 | 未知人員 | - | +1 | - |
 | 中間總計 | 3 | 2 | 2 |
 
-## 步驟4:亨利{#step-4--henry}
+## 步驟4:亨利 {#step-4--henry}
 
 **[!UICONTROL Henry Macdonald]** 已將其internet瀏覽器配置為拒絕cookie。他開啟電子郵件並點按連結4次。
 

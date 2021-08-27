@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 # 交集{#intersection}
 
+![](../../assets/common.svg)
+
 **交集**&#x200B;類型活動從接收的目標的交集建立目標。
 
 交集可讓您僅擷取所有入站活動結果共同的母體。 目標建立時會收到所有結果：因此，必須先完成所有先前的活動，才能執行交集。 若要設定此活動，您必須輸入該活動的標籤以及與結果相關的選項。
 
 ![](assets/s_user_segmentation_inter.png)
 
-有關配置和使用交叉點活動的詳細資訊，請參閱[提取聯合資料（交叉點）](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-)。
+有關配置和使用交叉點活動的詳細資訊，請參閱[提取聯合資料（交叉點）](targeting-data.md#extracting-joint-data--intersection-)。
 
 如果要處理剩餘母體，請核取&#x200B;**[!UICONTROL Generate complement]**&#x200B;選項。 補充將包含所有入站活動結果的聯合，減去交集。 接著，會新增其他出站轉變至活動，如下所示：
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
-## 交集示例{#intersection-example}
+## 交集範例 {#intersection-example}
 
 在以下範例中，交集的目的是計算三個簡單查詢的共同收件者，以建立清單。
 
@@ -45,14 +47,14 @@ ht-degree: 0%
 
    ![](assets/intersection_example.png)
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * tableName
 * 綱要
 
 每個入站事件都必須指定由這些參數定義的目標。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要

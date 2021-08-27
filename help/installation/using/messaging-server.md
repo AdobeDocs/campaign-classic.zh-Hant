@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: d9ffa58d-81e3-4291-8502-3cb7c326b666
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 傳訊伺服器{#messaging-server}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign會以原生方式處理傳出電子郵件，但傳統電子郵件伺服器需要用來接收連結至傳回電子郵件（從郵件程式守護程式）的傳入訊息。 應用程式將自動處理在此伺服器上配置的郵箱。
 

@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
 
 ---
 
-# 配置對Sybase IQ{#configure-access-to-sybase-iq}的訪問
+# 配置對Sybase IQ的訪問 {#configure-access-to-sybase-iq}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign **同盟資料存取**(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定對Sybase IQ的存取權。
 
 1. 配置[Sybase IQ資料庫](#configuring-sybase)
 1. 在Campaign中設定Sybase IQ[外部帳戶](#sybase-external)
 
-## sybase IQ配置{#configuring-sybase}
+## sybase IQ配置 {#configuring-sybase}
 
 在FDA中連線至Sybase IQ外部資料庫需要Adobe Campaign伺服器下方的其他設定。
 
@@ -64,7 +66,7 @@ ht-degree: 0%
    * 如果您使用customer.sh檔案來宣告路徑：為LD_LIBRARY_PATH變數添加路徑/opt/sybase/IQ-16_0/lib64。
    * 否則，請使用Unix命令。
 
-## sybase IQ外部帳戶{#sybase-external}
+## sybase IQ外部帳戶 {#sybase-external}
 
 Sybase IQ外部帳戶可讓您將Campaign執行個體連結至Sybase IQ外部資料庫。
 

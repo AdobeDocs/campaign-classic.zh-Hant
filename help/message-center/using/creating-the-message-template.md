@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
-# 設計交易式訊息範本{#creating-the-message-template}
+# 設計交易式訊息範本 {#creating-the-message-template}
+
+![](../../assets/v7-only.svg)
 
 若要確保每個事件都可變更為個人化訊息，您需要建立訊息範本，以符合每個事件類型。
 
@@ -51,7 +53,7 @@ ht-degree: 0%
 
    ![](assets/messagecenter_create_model_004.png)
 
-## 建立訊息內容{#creating-message-content}
+## 建立訊息內容 {#creating-message-content}
 
 交易式訊息內容的定義與Adobe Campaign中定期傳送的定義相同。 例如，對於電子郵件傳送，您可以建立HTML或文字格式的內容、新增附件或個人化傳送物件。 如需詳細資訊，請參閱[電子郵件傳送](../../delivery/using/about-email-channel.md)章節。
 

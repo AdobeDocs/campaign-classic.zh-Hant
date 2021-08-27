@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -15,20 +15,21 @@ ht-degree: 4%
 
 # 開始使用意見調查{#about-surveys}
 
+![](../../assets/v7-only.svg)
+
 Adobe Campaign包含圖形模組，可定義及發佈Web應用程式。 它用於建立頁面，如外聯網上的編輯表單或通知表單，包括資料庫中的資料，包括表、圖表、輸入表單等。 使用此功能來設計和發佈用戶可以查找或輸入資訊的網頁。
 
 可選的&#x200B;**Survey**&#x200B;附加元件可讓您建立新類型的Web應用程式，以建立和管理線上調查表，例如添加或修改配置檔案資訊的表單、訂閱或取消訂閱資訊服務或競爭參加表單。 收集到答案後，答案會儲存在資料庫或本機變數中。 資料模型可通過對問卷的回答動態擴展。 您可以即時檢視結果、篩選回應，並使用專用圖表加以分析。
 
 本章詳細說明如何建立和管理&#x200B;**調查**、欄位和頁面管理、儲存模式和記錄。
 
-[!DNL :bulb:] 在本頁面中了解如何建立您的第 [一個調查](getting-started-with-surveys.md)。
+了解如何在[本頁面](getting-started-with-surveys.md)中建立您的第一個調查。
 
 >[!NOTE]
 >
 >* 有關建立標準Web表單的詳細步驟，請參見[本文檔](../../web/using/about-web-forms.md)。
-   >
-   >
-* 在[本文檔](../../web/using/about-web-applications.md)中詳細介紹了Web應用程式管理。 如需詳細資訊，請參閱本章。
+>
+>* 在[本文檔](../../web/using/about-web-applications.md)中詳細介紹了Web應用程式管理。 如需詳細資訊，請參閱本章。
 
 
 ## 功能範圍 {#campaign-surveys-scope}

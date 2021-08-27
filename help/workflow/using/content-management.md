@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 內容管理{#content-management}
+
+![](../../assets/common.svg)
 
 **內容管理**&#x200B;活動可讓您建立和操控內容，並根據此內容產生檔案。 然後，此內容便可透過「傳送」活動傳送。
 
@@ -83,13 +85,13 @@ ht-degree: 2%
 
       系統會為每個產生的檔案啟動出站轉變，這些檔案的識別碼儲存在&#x200B;**[!UICONTROL contentId]**&#x200B;變數中，作為其參數，檔案名位於&#x200B;**[!UICONTROL filename]**&#x200B;變數中。
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * contentId
 
 啟用&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;選項時要使用的內容識別碼。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * contentId
 

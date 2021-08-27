@@ -5,7 +5,7 @@ description: 了解如何設定管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
+source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 設定管線 {#configuring-pipeline}
+
+![](../../assets/common.svg)
 
 驗證參數（如客戶ID、私密金鑰和驗證端點）是在執行個體設定檔中設定。
 要處理的觸發器清單會以JSON格式的選項設定。

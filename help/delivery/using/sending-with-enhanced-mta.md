@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 使用增強的 MTA 傳送 {#sending-with-enhanced-mta}
+
+![](../../assets/common.svg)
 
 **Adobe Campaign Enhanced MTA**（郵件傳輸代理）提供了升級的發送基礎架構，可改善傳遞能力、信譽、吞吐量、報告、退信處理、IP升級和連接設定管理。
 
@@ -113,7 +115,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 >
 >應謹慎遵循Adobe Campaign團隊提供的&#x200B;**[!UICONTROL Typology]**&#x200B;套件安裝說明。 否則，您傳送電子郵件時所使用的IP可能會遇到重大問題。
 
-有關類型的詳細資訊，請參閱[此部分](../../campaign/using/about-campaign-typologies.md)。
+有關類型的詳細資訊，請參閱[此部分](../../campaign-opt/using/about-campaign-typologies.md)。
 
 ### 新MX規則
 

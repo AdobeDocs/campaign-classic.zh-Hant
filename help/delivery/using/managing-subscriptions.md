@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 管理訂閱{#managing-subscriptions}
+
+![](../../assets/common.svg)
 
 ## 關於資訊服務 {#about-information-services}
 

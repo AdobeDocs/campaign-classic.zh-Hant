@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 管理用戶檔案
-description: 管理用戶檔案
+title: 管理設定檔
+description: 管理設定檔
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 94%
@@ -14,6 +14,8 @@ ht-degree: 94%
 ---
 
 # 管理設定檔{#managing-profiles}
+
+![](../../assets/common.svg)
 
 ## 收件者樹狀結構清單 {#recipient-tree}
 
@@ -27,15 +29,15 @@ ht-degree: 94%
 >
 >若要顯示資料庫中所有收件者的清單，您必須建立一個檢視畫面。了解更多[資料夾和檢視](../../platform/using/access-management-folders.md)。
 
-## 移動收件者{#moving-recipients}
+## 移動收件者 {#moving-recipients}
 
 您可以選取一位或多位收件者，從收件者清單拖曳收件者，並將它們放在想要的資料夾中。將顯示一條警告訊息，要求您確認此動作。
 
-## 複製收件者{#copying-a-recipient}
+## 複製收件者 {#copying-a-recipient}
 
 您可以複製同一資料夾中的收件者，方法是在所需的收件者上按一下滑鼠右鍵，然後選取 **[!UICONTROL Copy]**。
 
-## 刪除收件人{#deleting-recipients}
+## 刪除收件者 {#deleting-recipients}
 
 若要刪除收件者，請將它們移至特定資料夾，然後清除此資料夾的內容。**強烈建議您不要使用** 此處的 **[!UICONTROL Delete]** 選項。
 

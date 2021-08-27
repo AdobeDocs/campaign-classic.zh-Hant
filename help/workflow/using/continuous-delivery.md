@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
 # 持續傳遞{#continuous-delivery}
+
+![](../../assets/common.svg)
 
 **連續傳送**&#x200B;類型動作可讓您將新收件者新增至現有傳送。 此傳送類型可避免您每次都需建立新傳送：此模式通常更有效率，尤其是對於需要時發送的低流量警報或通知。
 
@@ -29,7 +31,7 @@ ht-degree: 6%
 
 此選項不會處理與活動配置相關的錯誤，即無效值。
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * tableName
 * 綱要
@@ -38,7 +40,7 @@ ht-degree: 6%
 
 僅當選取&#x200B;**[!UICONTROL Specified by the inbound event]**&#x200B;選項時。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要
@@ -58,9 +60,9 @@ ht-degree: 6%
 
 ![持續傳遞](assets/delivery_continuous.jpg)
 
-## 教學課程影片{#continuous-delivery-video}
+## 教學課程影片 {#continuous-delivery-video}
 
-此影片說明如何使用增量查詢來設定連續傳送。
+此影片說明如何使用增量查詢來設定持續傳送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 

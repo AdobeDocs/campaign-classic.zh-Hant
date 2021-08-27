@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 9500a7ba-263d-425b-8cc3-b111c6b9108f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 53%
@@ -14,6 +14,8 @@ ht-degree: 53%
 ---
 
 # 存取外部資料庫 (FDA){#accessing-an-external-database-fda}
+
+![](../../assets/common.svg)
 
 Adobe Campaign 提供同盟資料存取 (FDA) 選項，以處理儲存在一或多個外部資料庫中的資訊：您不需要變更 Adobe Campaign 資料的結構就可以存取外部資料。
 

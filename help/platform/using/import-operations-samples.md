@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 64%
@@ -14,6 +14,8 @@ ht-degree: 64%
 ---
 
 # 一般匯入範例 {#import-operations-samples}
+
+![](../../assets/common.svg)
 
 ## 從收件者清單匯入 {#example--import-from-a-list-of-recipients}
 
@@ -42,7 +44,7 @@ ht-degree: 64%
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
-## 從文本檔案{#example--import-new-records-from-a-text-file-}導入新記錄
+## 從文本檔案導入新記錄 {#example--import-new-records-from-a-text-file-}
 
 要將儲存在文字檔中的新收件者設定檔匯入 Adobe Campaign 資料庫，請使用以下步驟：
 
@@ -82,7 +84,7 @@ ht-degree: 64%
 
 1. 啟動匯入
 
-   * 按一下 **[!UICONTROL Start]**。
+   * 按一下&#x200B;**[!UICONTROL Start]**。
 
       在編輯器的中心區欄位，您可以檢查匯入操作是否成功並查看已處理的記錄數。
 
@@ -128,7 +130,7 @@ ht-degree: 64%
 
 1. 啟動匯入
 
-   * 按一下 **[!UICONTROL Start]**。
+   * 按一下&#x200B;**[!UICONTROL Start]**。
 
       在追蹤視窗中，您可以檢查匯入是否成功並查看已處理的記錄數。
 
@@ -181,7 +183,7 @@ ht-degree: 64%
 
 1. 啟動匯入
 
-   按一下 **[!UICONTROL Start]**。
+   按一下&#x200B;**[!UICONTROL Start]**。
 
    查看收件者表以檢查匯入已修改記錄。
 
@@ -229,7 +231,7 @@ ht-degree: 64%
 
 1. 啟動匯入
 
-   * 按一下 **[!UICONTROL Start]**。
+   * 按一下&#x200B;**[!UICONTROL Start]**。
    * 查看收件者表以檢查操作已修改記錄。
 
       ![](assets/s_ncs_user_import_example06_06.png)

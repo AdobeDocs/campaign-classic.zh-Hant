@@ -2,20 +2,22 @@
 product: campaign
 title: Campaign 18.10發行說明
 description: Campaign 18.10發行說明
-feature: 概覽
+feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2369'
 ht-degree: 7%
 
 ---
 
 # 第 18.10 發行版本{#release-18-10}
 
-## 版本18.10.6 - Build 8985{#release-18-10-6-build-8985}
+![](../../assets/v7-only.svg)
+
+## 發行版本 18.10.6 - 版本編號 8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
@@ -27,7 +29,7 @@ ht-degree: 7%
 * 改善使用內部帳戶時執行安全區域套件的權限。
 * 修正了可能導致母體記錄檔發生錯誤的問題。 (NEO-8978)
 
-## 版本18.10.5 - Build 8984{#release-18-10-5-build-8984}
+## 發行版本 18.10.5 - 版本編號 8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
@@ -37,7 +39,7 @@ ht-degree: 7%
 * 移除「工作流程熱度圖」中的10,000筆記錄限制，以修正遺失的資料問題。 (NEO-12329)
 * 修正在擴充工作流程活動中使用「從主要集保留所有其他資料」選項的問題。 (NEO-13291)
 
-## 版本18.10.4 - Build 8983{#release-18-10-4-build-8983}
+## 發行版本 18.10.4 - 版本編號 8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
@@ -50,7 +52,7 @@ ht-degree: 7%
 * 在Analytics整合中，現在允許擷取包含%字元的AAM區段資料。 (NEO-12025)
 * 修正了使用HTTP2傳送推播通知時，發生Tomcat當機問題。 (NEO-12701)
 
-## 版本18.10.3 - Build 8981{#release-18-10-3-build-8981}
+## 發行版本 18.10.3 - 版本編號 8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
@@ -74,7 +76,7 @@ ht-degree: 7%
 * 修正在行動應用程式上傳送推播通知時的字元逸出問題。
 * 修正無法在中間來源外部帳戶中從FDA切換至SOAP同步方法的問題。
 
-## 版本18.10.2 - Build 8978{#release-18-10-2-build-8978}
+## 發行版本 18.10.2 - 版本編號 8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
@@ -96,7 +98,7 @@ ht-degree: 7%
 * 修正了在「工作流程熱度圖」中計算工作流程持續時間的問題。
 
 
-## 版本18.10 - Build 8977{#release-18-10-build-8977}
+## 發行版本 18.10 - 版本編號 8977{#release-18-10-build-8977}
 
 2018年11月5日
 
@@ -104,7 +106,7 @@ ht-degree: 7%
 >
 >這棟建築已召回。 請[升級至最新的組建版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-**新增功能？**
+**有哪些新增功能？**
 
 <table> 
  <thead> 
@@ -121,15 +123,15 @@ ht-degree: 7%
      <li> <p>在iOS中追蹤靜默通知 </p> </li> 
      <li> <p>在iOS中對註冊呼叫實作意見反應</p> </li> 
      <li> <p>改善iOS傳送準備速度</p> </li> 
-    </ul> <p>現在起，受到Google停用GCM的影響，Android V2連接器僅能連接FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細檔案</a>。 FCM的手動升級詳見本<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>。 </p> </td> 
+    </ul> <p>現在起，受到Google停用GCM的影響，Android V2連接器僅能連接FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細文件</a>，以瞭解詳情。FCM的手動升級詳見本<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
-   <td> <p>已新增新的資料管理工作流程活動。 <strong>SQL資料管理</strong>活動可讓您撰寫或複製貼上自己的SQL指令碼，以建立和填入工作表格（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">相關的文件</a>，以瞭解詳情。</p></td> 
+   <td> <p>已新增新的資料管理工作流程活動。 <strong>SQL資料管理</strong>活動可讓您撰寫或複製貼上自己的SQL指令碼，以建立和填入工作表格（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">詳細文件</a>，以瞭解詳情。</p></td> 
   </tr> 
   <tr> 
    <td> 監視工作流程<br /> </td> 
-   <td> <p>透過新的Adobe Campaign工作流程熱度圖，平台管理員可快速以圖形化方式呈現所有同時進行的工作流程，借此監控執行個體的負載並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">相關的文件</a>，以瞭解詳情。</p> <p>8977之前（從組建8700開始）的組建版本，也可依需求提供工作流程熱度圖套件。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此頁</a>。</p> </td> 
+   <td> <p>透過新的Adobe Campaign工作流程熱度圖，平台管理員可快速以圖形化方式呈現所有同時進行的工作流程，借此監控執行個體的負載並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">詳細文件</a>，以瞭解詳情。</p> <p>8977之前（從組建8700開始）的組建版本，也可依需求提供工作流程熱度圖套件。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此頁</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>

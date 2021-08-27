@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 關於傳遞報表{#reports-on-deliveries}
+
+![](../../assets/common.svg)
 
 Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路瀏覽器存取。
 
@@ -25,7 +27,7 @@ Adobe Campaign提供數種報表類型，可透過客戶主控台或網際網路
 
 您可以從用戶端主控台首頁、報表控制面板或傳送清單存取報表。 報表的顯示模式取決於其內容。 首頁上提供主要報表的清單，可讓您快速存取傳送資料。 您可以變更此清單以符合您的需求。 如需詳細資訊，請參閱[此區段](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-## 使用報表{#using-reports}
+## 使用報表 {#using-reports}
 
 可透過報表控制面板使用搜尋欄位，以快速存取清單上的其中一個報表。
 

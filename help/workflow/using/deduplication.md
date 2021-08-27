@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 去重複化{#deduplication}
+
+![](../../assets/common.svg)
 
 重複資料刪除來自入站活動結果的重複項目。 您可以在電子郵件地址、電話號碼或其他欄位上執行重複資料刪除。
 
@@ -139,7 +141,7 @@ ht-degree: 10%
 
 例如，使用一組重複記錄時，您可以選擇保留最舊的電話號碼或最新名稱。
 
-[此區段](../../workflow/using/deduplication-merge.md)提供運用此功能的使用案例。
+[此區段](deduplication-merge.md)提供運用此功能的使用案例。
 
 要執行此操作，請依照下列步驟執行：
 
@@ -155,7 +157,7 @@ ht-degree: 10%
 
 1. 啟用功能後， **[!UICONTROL Merge]**&#x200B;標籤會新增至&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。 它可讓您定義要合併的欄位群組及其相關規則。
 
-   有關詳細資訊，請參閱[此部分](../../workflow/using/deduplication-merge.md)中提供的專用使用案例。
+   有關詳細資訊，請參閱[此部分](deduplication-merge.md)中提供的專用使用案例。
 
    ![](assets/dedup3.png)
 

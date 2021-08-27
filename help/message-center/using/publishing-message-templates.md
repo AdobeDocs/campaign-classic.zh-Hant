@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 發佈消息模板{#publishing-template-messages}
+# 發佈訊息範本 {#publishing-template-messages}
+
+![](../../assets/v7-only.svg)
 
 ## 範本發佈 {#template-publication}
 
@@ -31,7 +33,7 @@ ht-degree: 1%
 
 1. 在控制實例上，轉到樹的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;資料夾。
 1. 選取要在執行執行個體上發佈的範本。
-1. 按一下 **[!UICONTROL Publish]**。
+1. 按一下&#x200B;**[!UICONTROL Publish]**。
 
    ![](assets/messagecenter_publish_model_008.png)
 
@@ -65,11 +67,11 @@ ht-degree: 1%
 
 1. 在控制實例上，轉到樹的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;資料夾。
 1. 選取您要取消發佈的範本。
-1. 按一下 **[!UICONTROL Unpublish]**。
+1. 按一下&#x200B;**[!UICONTROL Unpublish]**。
 
    <!--1. Fill in the **[!UICONTROL Log of the process]** field.-->
 
-1. 按一下 **[!UICONTROL Start]**。
+1. 按一下&#x200B;**[!UICONTROL Start]**。
 
 ![](assets/message-center-unpublish.png)
 

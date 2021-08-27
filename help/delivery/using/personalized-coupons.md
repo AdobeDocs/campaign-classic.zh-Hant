@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 個人化優惠券{#personalized-coupons}
+
+![](../../assets/v7-only.svg)
 
 將抵用券加到您的傳遞，可讓收件者獲得更高的產品和服務價值。 您可以使用「促銷活動抵用券」模組，建立一組您預期要新增至即將推出之行銷活動的抵用券。 當您準備好建立傳遞時，請指派適用的抵用券。 由於抵用券對於選取的期間有效，所指派的抵用券會唯一連結至其傳送訊息。 此外，Campaign會確認在傳送訊息之前，有足夠的抵用券數量。
 
@@ -76,7 +78,7 @@ ht-degree: 1%
 在以下範例中，傳遞是從首頁建立。 如需如何建立傳送的詳細指示，請參閱[本區段](about-email-channel.md)。 您也可以在工作流程中將抵用券新增至傳送。
 
 1. 轉至&#x200B;**[!UICONTROL Campaigns]**，然後選擇&#x200B;**[!UICONTROL Deliveries]**。
-1. 按一下 **[!UICONTROL Create]**。
+1. 按一下&#x200B;**[!UICONTROL Create]**。
 
    ![](assets/deliv_coup_04.png)
 
@@ -154,7 +156,7 @@ ht-degree: 1%
 如果抵用券數少於訊息數，傳遞分析就會停止。 在這種情況下，您可以匯入更多抵用券或限制訊息的數量。 如果要限制訊息數量，請依照下列指示操作。
 
 1. 前往電子郵件傳送視窗。
-1. 按一下 **[!UICONTROL To]**。
+1. 按一下&#x200B;**[!UICONTROL To]**。
 1. 在&#x200B;**[!UICONTROL Select target]**&#x200B;中，前往&#x200B;**[!UICONTROL Exclusions]**&#x200B;標籤。
 
    ![](assets/deliv_coup_18.png)

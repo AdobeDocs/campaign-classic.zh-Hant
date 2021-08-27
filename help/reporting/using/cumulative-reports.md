@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 累積報告 {#cumulative-reports}
+
+![](../../assets/common.svg)
 
 您可以顯示傳遞的累積報表。 若要這麼做，請選取要比較的傳送，以取得這些傳送的報表清單。
 

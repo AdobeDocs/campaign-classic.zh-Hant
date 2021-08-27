@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 本地核准{#local-approval}
+
+![](../../assets/common.svg)
 
 整合至目標工作流程後，**[!UICONTROL Local approval]**&#x200B;活動可讓您在傳送傳遞之前設定收件者核准程式。
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 >
 >若要使用此活動，您必須已購買「分散式行銷」模組（此為「促銷活動」選項）。 請檢查您的授權合約。
 
-如需具有發佈範本的&#x200B;**[!UICONTROL Local approval]**&#x200B;活動範例，請參閱[使用本機核准活動](../../workflow/using/using-the-local-approval-activity.md)。
+如需具有發佈範本的&#x200B;**[!UICONTROL Local approval]**&#x200B;活動範例，請參閱[使用本機核准活動](using-the-local-approval-activity.md)。
 
 首先，輸入活動的標籤和&#x200B;**[!UICONTROL Action to execute]**&#x200B;欄位：
 
@@ -33,11 +35,11 @@ ht-degree: 1%
 
    ![](assets/local_validation_intro_2.png)
 
-* **增量查詢**:可讓您執行查詢並規劃其執行。請參閱[增量查詢](../../workflow/using/incremental-query.md)區段。
+* **增量查詢**:可讓您執行查詢並規劃其執行。請參閱[增量查詢](incremental-query.md)區段。
 
    ![](assets/local_validation_intro_3.png)
 
-## 目標批准通知{#target-approval-notification}
+## Target核准通知 {#target-approval-notification}
 
 在此情況下，**[!UICONTROL Local approval]**&#x200B;活動會放置在上游定位與傳送之間：
 
@@ -49,7 +51,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Distribution context]**:如果您 **[!UICONTROL Specified in the transition]** 使用類型活動來限 **[!UICONTROL Split]** 制目標母體，請選取選項。在這種情況下，分配模板將輸入到拆分活動中。 如果不限制目標母體，請在此處選擇&#x200B;**[!UICONTROL Explicit]**&#x200B;選項，然後在&#x200B;**[!UICONTROL Data distribution]**&#x200B;欄位中輸入分發模板。
 
-   有關建立資料分發模板的詳細資訊，請參閱[限制每個資料分發的子集記錄數](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution)。
+   有關建立資料分發模板的詳細資訊，請參閱[限制每個資料分發的子集記錄數](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
 
 * **[!UICONTROL Approval management]**
 
@@ -68,7 +70,7 @@ ht-degree: 1%
    >
    >預設會停用此選項。
 
-## 傳遞反饋報告{#delivery-feedback-report}
+## 傳遞意見報告 {#delivery-feedback-report}
 
 在此情況下， **[!UICONTROL Local approval]**&#x200B;活動會放在傳送之後：
 
@@ -81,9 +83,9 @@ ht-degree: 1%
 * 如果傳送是在先前的活動期間輸入，請選取&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;選項。 選取&#x200B;**[!UICONTROL Explicit]**&#x200B;以指定本機核准活動中的傳送。
 * 選取傳送範本和通知電子郵件的物件。 預設範本如下：**[!UICONTROL Local approval notification]**。
 
-## 範例：批准工作流傳送{#example--approving-a-workflow-delivery}
+## 範例：核准工作流程傳送 {#example--approving-a-workflow-delivery}
 
-此範例說明如何設定工作流程傳送的核准程式。 如需建立傳送工作流程的詳細資訊，請參閱[範例：傳送工作流程](../../workflow/using/delivery.md#example--delivery-workflow)區段。
+此範例說明如何設定工作流程傳送的核准程式。 如需建立傳送工作流程的詳細資訊，請參閱[範例：傳送工作流程](delivery.md#example--delivery-workflow)區段。
 
 運算子可透過下列兩種方式之一核准傳送：使用電子郵件中連結的網頁，或透過主控台。
 

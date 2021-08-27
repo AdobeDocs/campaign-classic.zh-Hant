@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 建立優惠方案空間{#creating-offer-spaces}
+
+![](../../assets/v7-only.svg)
 
 只能由&#x200B;**技術管理員**&#x200B;執行建立優惠方案空間的操作，該管理員具有對優惠方案空間子資料夾的訪問權限。 優惠方案空間只能在設計環境中建立，並會在優惠方案核准期間自動複製至即時環境。
 
@@ -69,7 +71,7 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 
 如有必要，您可以為入站互動過載XML呈現函式。 您也可以為對外互動過載HTML和文字轉譯功能。 有關詳細資訊，請參閱[關於入站通道](../../interaction/using/about-inbound-channels.md)。
 
-## 優惠方案主張狀態{#offer-proposition-statuses}
+## 優惠方案主張狀態 {#offer-proposition-statuses}
 
 優惠方案主張可能會根據與目標母體的互動而有各種狀態。 互動隨附一組值，可在優惠方案主張的整個生命週期中套用。 不過，您需要設定平台，以便在建立並接受優惠方案主張時變更狀態。
 
@@ -77,7 +79,7 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 >
 >優惠方案主張的狀態不會立即更新。 這會由每小時觸發的追蹤工作流程執行。
 
-### 狀態清單{#status-list}
+### 狀態清單 {#status-list}
 
 互動會提供下列值，可用來限定優惠方案主張的狀態：
 
@@ -94,7 +96,7 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 >
 >如果優惠方案連結至狀態為「已傳送」的傳送，優惠方案主張的狀態會自動變更為「已呈現」。
 
-### 配置建立命題時的狀態{#configuring-the-status-when-the-proposition-is-created}
+### 在建立主張時配置狀態 {#configuring-the-status-when-the-proposition-is-created}
 
 當互動引擎建立優惠方案主張時，其狀態會變更，無論是入站或出站互動。 這兩個值之間的選擇取決於&#x200B;**[!UICONTROL Design]**&#x200B;環境中選件空格的設定方式
 
@@ -107,7 +109,7 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 
    ![](assets/offer_update_status_001.png)
 
-### 配置接受主張時的狀態{#configuring-the-status-when-the-proposition-is-accepted}
+### 在接受主張時設定狀態 {#configuring-the-status-when-the-proposition-is-accepted}
 
 接受優惠方案主張後，您可以使用預設提供的其中一個值來設定該主張的新狀態。 當收件者點按選件中的連結，並呼叫互動引擎時，更新即有效。
 
@@ -138,7 +140,7 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 >
 >如果您想在URL中指定其他狀態（例如，如果優惠方案主張遭拒），請使用與所需狀態對應的值。 範例：**[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot;等。
 >
->在&#x200B;**[!UICONTROL Offer propositions (nms)]**&#x200B;資料架構中可擷取狀態及其值。 有關詳細資訊，請參見[此頁面](../../configuration/using/data-schemas.md)。
+>在&#x200B;**[!UICONTROL Offer propositions (nms)]**&#x200B;資料架構中可擷取狀態及其值。 如需詳細資訊，請參閱[此頁面](../../configuration/using/data-schemas.md)。
 
 **傳出互動**
 
@@ -148,7 +150,7 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## 每個空間的選件預覽{#offer-preview-per-space}
+## 每個空間的選件預覽 {#offer-preview-per-space}
 
 在此索引標籤中，您可以透過所選方法來檢視收件者符合資格的優惠方案。 在以下範例中，收件者可透過郵件取得三份優惠方案。
 

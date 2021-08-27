@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '292'
 ht-degree: 8%
 
 ---
 
 # 跨頻道傳遞{#cross-channel-deliveries}
+
+![](../../assets/common.svg)
 
 跨通道傳送可在促銷活動工作流程活動的&#x200B;**[!UICONTROL Deliveries]**&#x200B;標籤中使用。
 
@@ -22,8 +24,8 @@ ht-degree: 8%
 * [電子郵件](../../delivery/using/about-email-channel.md)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [行動裝置](../../delivery/using/sms-channel.md)
-* [Twitter](../../social/using/publishing-on-twitter.md)
-* [Facebook](../../social/using/publishing-on-facebook.md)
+* [Twitter](../../social/using/publishing-on-twitter.md) (僅限Campaign Classicv7)
+* [Facebook](../../social/using/publishing-on-facebook.md) (僅限Campaign Classicv7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 

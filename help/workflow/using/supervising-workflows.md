@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
-# 使用案例：監督工作流{#supervising-workflows}
+# 使用案例：監控工作流程{#supervising-workflows}
+
+![](../../assets/common.svg)
 
 此使用案例詳細說明了如何建立工作流程，讓您監控「暫停」、「停止」或「有錯誤」之工作流程集的狀態。
 
@@ -31,11 +33,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->除了工作流程外，Campaign **Workflow Heatmap**&#x200B;還可讓您詳細分析目前執行的工作流程。 有關詳細資訊，請參閱[專用區段](../../workflow/using/heatmap.md)。
+>除了工作流程外，Campaign **Workflow Heatmap**&#x200B;還可讓您詳細分析目前執行的工作流程。 有關詳細資訊，請參閱[專用區段](heatmap.md)。
 >
->有關如何&#x200B;**監視工作流程的執行**&#x200B;的詳細資訊，請參閱[此區段](../../workflow/using/monitoring-workflow-execution.md)。
+>有關如何&#x200B;**監視工作流程的執行**&#x200B;的詳細資訊，請參閱[此區段](monitoring-workflow-execution.md)。
 
-## 步驟1:建立監視工作流{#step-1--creating-the-monitoring-workflow}
+## 步驟1:建立監控工作流程 {#step-1--creating-the-monitoring-workflow}
 
 我們要監控的工作流程資料夾是儲存在&#x200B;**管理>生產>技術工作流程**&#x200B;節點中的&#x200B;**&quot;CustomWorkflows&quot;**&#x200B;資料夾。 此資料夾包含一組業務工作流程。
 
@@ -53,7 +55,7 @@ ht-degree: 0%
 * a **&quot;傳遞&quot;**&#x200B;活動，負責訊息配置。
 * a **&quot;wait&quot;**&#x200B;活動，控制工作流迭代之間的提前期。
 
-## 步驟2:編寫JavaScript {#step-2--writing-the-javascript}
+## 步驟2:撰寫JavaScript {#step-2--writing-the-javascript}
 
 JavaScript程式碼的第一部分與&#x200B;**查詢(queryDef)**&#x200B;一致，可讓您識別具有「pause」(@state == 13)、「error」(@failed == 1)或「stopped」(@state == 20)狀態的工作流程。
 
@@ -115,7 +117,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## 步驟3:建立「測試」活動{#step-3--creating-the--test--activity}
+## 步驟3:建立「測試」活動 {#step-3--creating-the--test--activity}
 
 「測試」活動可讓您判斷是否需要傳送傳送，或監控工作流程是否需要根據「等待」活動執行其他週期。
 
@@ -127,7 +129,7 @@ vars.strWorkflowStop = strStop;
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## 步驟4:準備傳送{#step-4--preparing-the-delivery}
+## 步驟4:準備傳送 {#step-4--preparing-the-delivery}
 
 「傳送」活動以儲存在&#x200B;**資源>範本>傳送範本**&#x200B;節點中的&#x200B;**傳送範本**&#x200B;為基礎。
 

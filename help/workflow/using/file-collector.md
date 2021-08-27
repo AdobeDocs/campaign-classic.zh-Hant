@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 檔案收集器{#file-collector}
+
+![](../../assets/common.svg)
 
 **檔案收集器**&#x200B;監視目錄中一個或多個檔案的到達，並為收到的每個檔案激活其轉變。 對於每個事件， **[!UICONTROL filename]**&#x200B;變數包含收到的檔案的完整名稱。 收集的檔案會移至其他目錄以用於封存，並確保只計算一次。
 
@@ -23,7 +25,7 @@ ht-degree: 0%
 
 ## 屬性 {#properties}
 
-**[!UICONTROL File collector]**&#x200B;活動的第一個索引標籤可讓您選取來源目錄，並視需要篩選收集的檔案。 其他標籤在[傳入電子郵件](../../workflow/using/inbound-emails.md)(**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;標籤中詳細說明。
+**[!UICONTROL File collector]**&#x200B;活動的第一個索引標籤可讓您選取來源目錄，並視需要篩選收集的檔案。 其他標籤在[傳入電子郵件](inbound-emails.md)(**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;標籤中詳細說明。
 
 ![](assets/file_collect_edit.png)
 
@@ -67,12 +69,12 @@ ht-degree: 0%
 
 1. **歷史化**
 
-   請參閱以下的&#x200B;**[!UICONTROL File historization]**&#x200B;步驟：[Web下載](../../workflow/using/web-download.md)。
+   請參閱以下的&#x200B;**[!UICONTROL File historization]**&#x200B;步驟：[Web下載](web-download.md)。
 
 無法確定檔案處理順序。 要按順序處理一組檔案，請使用&#x200B;**[!UICONTROL Stop as soon as a file has been processed]**&#x200B;選項並建立循環。 在這種情況下，會以字母順序處理檔案。 **[!UICONTROL Process file nonexistence]**&#x200B;選項可讓您完成迭代。
 
 ![](assets/file_collect_loop.png)
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * 檔案名：完整的檔案名。 這是檔案名稱移至歷史化目錄後的檔案名稱。 因此，路徑不同，但如果目錄中已存在另一個同名檔案，則名稱也不同。 會保留擴充功能。

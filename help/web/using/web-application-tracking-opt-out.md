@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 網站應用程式追蹤選擇退出{#web-application-tracking-opt-out}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您停止追蹤透過cookie或網站信標選擇退出行為追蹤之使用者的網站行為。 此功能包括顯示橫幅以向使用者呈現該選項的功能；您可以將這些橫幅新增至網頁應用程式或登陸頁面。
 

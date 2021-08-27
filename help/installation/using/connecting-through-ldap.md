@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # 透過 LDAP 連線{#connecting-through-ldap}
 
-## 配置促銷活動和LDAP {#configuring-campaign-and-ldap}
+![](../../assets/v7-only.svg)
+
+## 設定促銷活動和LDAP {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
@@ -92,7 +94,7 @@ LDAP配置在部署嚮導中執行。 在第一個配置步驟中必須選擇&#x
  </tbody> 
 </table>
 
-## 可分辨名稱計算{#distinguished-name-calculation}
+## 可分辨名稱計算 {#distinguished-name-calculation}
 
 如果要計算可分辨名稱(DN)標識符，則部署嚮導的下一步允許您配置計算模式。
 
@@ -112,7 +114,7 @@ LDAP配置在部署嚮導中執行。 在第一個配置步驟中必須選擇&#x
 
    如果填入這兩個欄位，Adobe Campaign會使用自己的登入和密碼連線至LDAP伺服器。 如果空白，Adobe Campaign會以匿名方式連線至伺服器。
 
-## 搜索標識符{#searching-for-identifiers}
+## 搜尋識別碼 {#searching-for-identifiers}
 
 如果您選擇搜尋識別碼，部署精靈可讓您設定搜尋。
 
@@ -137,7 +139,7 @@ LDAP配置在部署嚮導中執行。 在第一個配置步驟中必須選擇&#x
 
 * **[!UICONTROL Filter]**&#x200B;欄位可讓您指定元素以縮小搜尋範圍。
 
-## 配置LDAP授權{#configuring-ldap-authorizations}
+## 配置LDAP授權 {#configuring-ldap-authorizations}
 
 選擇&#x200B;**[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]**&#x200B;選項時，將顯示此窗口。
 
@@ -159,7 +161,7 @@ LDAP配置在部署嚮導中執行。 在第一個配置步驟中必須選擇&#x
 
 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以完成執行個體的設定。
 
-## 管理運算子{#managing-operators}
+## 管理運算子 {#managing-operators}
 
 確認配置後，必須定義哪些Adobe Campaign運算子是通過LDAP目錄管理的。
 
@@ -167,7 +169,7 @@ LDAP配置在部署嚮導中執行。 在第一個配置步驟中必須選擇&#x
 
 ![](assets/s_ncs_install_operator_in_ldap.png)
 
-## 使用實例 {#use-cases}
+## 使用案例 {#use-cases}
 
 本節提供一些簡單的使用案例，協助您根據需求完成最適當的設定。
 

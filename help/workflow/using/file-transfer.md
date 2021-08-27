@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 檔案傳輸{#file-transfer}
+
+![](../../assets/common.svg)
 
 **檔案傳輸**活動可讓您接收或發送檔案、測試檔案是否存在，或列出伺服器上的檔案。 使用的通訊協定為Azure Blob儲存、Amazon簡單儲存服務(S3)、FTP或SFTP。
 有了S3、Azure Blob儲存或SFTP連線，您也可以使用Adobe即時客戶資料平台，將區段資料匯入Adobe Campaign。 有關詳細資訊，請參閱此[文檔](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
@@ -71,7 +73,7 @@ ht-degree: 1%
 所有檔案傳輸選項有兩個可能的選項：
 
 * **[!UICONTROL Process missing file]**&#x200B;選項添加在指定目錄中找不到檔案時激活的轉變。
-* **[!UICONTROL Process errors]**&#x200B;選項在[處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)中詳細說明。
+* **[!UICONTROL Process errors]**&#x200B;選項在[處理錯誤](monitoring-workflow-execution.md#processing-errors)中詳細說明。
 
 **[!UICONTROL Advanced parameters...]**&#x200B;連結可讓您存取下列選項：
 
@@ -93,15 +95,15 @@ ht-degree: 1%
 
    允許指定用於資料傳輸的連接埠。
 
-**[!UICONTROL File historization settings...]**&#x200B;連結可讓您存取[Web下載](../../workflow/using/web-download.md)（**[!UICONTROL File historization]**&#x200B;步驟）中詳述的選項。
+**[!UICONTROL File historization settings...]**&#x200B;連結可讓您存取[Web下載](web-download.md)（**[!UICONTROL File historization]**&#x200B;步驟）中詳述的選項。
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * 檔案名
 
    已傳送檔案的完整名稱。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * 檔案名
 

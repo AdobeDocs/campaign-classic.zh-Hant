@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
 
 ---
 
-# 關鍵元素{#key--element}
+# 鍵元素 {#key--element}
 
-## 內容模型{#content-model-8}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-8}
 
 索引鍵： ==keyfield
 
-## 屬性{#attributes-8}
+## 屬性 {#attributes-8}
 
 * @allowEmptyPart（布林值）
 * @applicableIf（字串）
@@ -28,11 +30,11 @@ ht-degree: 2%
 * @name(MNTOKEN)
 * @noDbIndex（布林值）
 
-## 父級{#parents-8}
+## 父母 {#parents-8}
 
 `<element>`
 
-## 子項{#children-8}
+## 兒童 {#children-8}
 
 `<keyfield>`
 
@@ -42,7 +44,7 @@ ht-degree: 2%
 
 表必須至少包含一個鍵。
 
-## 使用與使用內容{#use-and-context-of-use-6}
+## 使用與使用內容 {#use-and-context-of-use-6}
 
 規則是在架構的主要元素和索引之後宣告索引鍵。
 
@@ -52,7 +54,7 @@ ht-degree: 2%
 
 保留前1000個標識符，因此，如果需要為密鑰定義一系列值，則從1000開始。
 
-## 屬性說明{#attribute-description-8}
+## 屬性說明 {#attribute-description-8}
 
 * **allowEmptyPart(boolean)**:在複合鍵的情況下，如果激活了此屬性，則如果其至少一個鍵不為空，則它們被視為有效。如果是這種情況，空的概念值是&quot;0&quot;（布林值或所有數值資料類型）。 依預設，需要輸入組成複合鍵的所有鍵。
 * **applicableIf（字串）**:此屬性可讓您將索引鍵設為選用。它定義將根據其套用鍵定義的條件。 此屬性會接收XTK運算式。

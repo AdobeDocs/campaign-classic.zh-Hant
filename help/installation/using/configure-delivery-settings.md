@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # 設定傳遞設定 {#delivery-settings}
+
+![](../../assets/v7-only.svg)
 
 傳送參數必須在&#x200B;**serverConf.xml**&#x200B;資料夾中設定。
 
@@ -29,7 +31,7 @@ ht-degree: 3%
 
 您也可以根據需求和設定執行下列設定：配置[SMTP中繼](#smtp-relay)，調整[MTA子進程數](#mta-child-processes)、[管理出站SMTP通信](#managing-outbound-smtp-traffic-with-affinities)。
 
-## SMTP中繼{#smtp-relay}
+## SMTP中繼 {#smtp-relay}
 
 MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
 
@@ -45,7 +47,7 @@ MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
 >
 >此操作模式意味著傳送受到嚴重限制，因為由於中繼伺服器的固有效能（延遲、頻寬……），它可以大大降低吞吐量。 此外，限定同步傳送錯誤（通過分析SMTP流量檢測到）的容量將受到限制，如果中繼伺服器不可用，則無法發送。
 
-## MTA子進程{#mta-child-processes}
+## MTA子進程 {#mta-child-processes}
 
 可以控制子進程（預設情況下為maxSpareServers 2）的數量，以根據伺服器的CPU功率和可用網路資源來優化廣播效能。 此配置將在每個單台電腦的MTA配置的&#x200B;**`<master>`**&#x200B;部分進行。
 
@@ -55,7 +57,7 @@ MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
 
 另請參閱[電子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization)。
 
-## 使用相關性{#managing-outbound-smtp-traffic-with-affinities}管理出站SMTP流量
+## 使用相關性管理傳出SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >

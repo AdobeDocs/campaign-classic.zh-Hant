@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
@@ -15,23 +15,25 @@ ht-degree: 10%
 
 # 排程器 {#scheduler}
 
+![](../../assets/common.svg)
+
 **排程器**&#x200B;是一項持久性任務，在其調度指定的時間激活其轉變。
 
 **[!UICONTROL Scheduler]** 活動應視為已排程的開始。圖表中的活動定位規則與活動 **[!UICONTROL Start]** 的定位規則相同。此活動不得具有入站轉變。
 
-## 最佳實務{#best-practices}
+## 最佳實務 {#best-practices}
 
 * 不要將工作流安排為每15分鐘運行多一次，因為它可能會阻礙整體系統效能並在資料庫中建立塊。
 
-* 在工作流程中，每個分支使用的活動絕不超過一個&#x200B;**[!UICONTROL Scheduler]**。 請參閱[使用活動](../../workflow/using/workflow-best-practices.md#using-activities)。
+* 在工作流程中，每個分支使用的活動絕不超過一個&#x200B;**[!UICONTROL Scheduler]**。 請參閱[使用活動](workflow-best-practices.md#using-activities)。
 
 * 使用排程器活動可能會導致同時執行多個工作流程。 例如，您可以讓排程器每小時觸發工作流程執行一次，但有時整個工作流程的執行需要超過一小時。
 
-   如果工作流已運行，則可能要跳過執行。 有關如何防止同時執行工作流的詳細資訊，請參閱[此頁](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)。
+   如果工作流已運行，則可能要跳過執行。 有關如何防止同時執行工作流的詳細資訊，請參閱[此頁](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)。
 
 * 請注意，如果工作流程執行長期任務（例如匯入），或wfserver模組已停止一段時間，則可在數小時後啟動轉變。 在這種情況下，可能需要將調度程式激活的任務的執行限制到特定的時間範圍。
 
-## 配置調度程式活動{#configuring-scheduler-activity}
+## 設定排程器活動 {#configuring-scheduler-activity}
 
 排程器定義轉變的啟動排程。 要配置，請按兩下圖形對象，然後按一下&#x200B;**[!UICONTROL Change...]**
 

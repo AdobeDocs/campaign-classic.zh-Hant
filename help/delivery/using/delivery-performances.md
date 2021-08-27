@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 傳遞效能最佳實務 {#delivery-performances}
+
+![](../../assets/common.svg)
 
 建議您遵循下列准則，確保您的傳送順利執行，並在您遇到傳送問題時檢查執行。
 
@@ -53,4 +55,4 @@ ht-degree: 6%
 * **傳送的目標**:傳送效能禁止受軟退信錯誤影響，這些錯誤會根據重試配置處理。錯誤數越多，重試次數就越多。
 * **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。您也可以檢查IP信譽和傳遞能力問題。 有關詳細資訊，請參閱[此部分](about-deliverability.md)和[Adobe傳遞能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
-平台和資料庫維護也會影響傳遞傳送效能。 有關詳細資訊，請參見[此頁面](../../production/using/database-performances.md)。
+平台和資料庫維護也會影響傳遞傳送效能。 如需詳細資訊，請參閱[此頁面](../../production/using/database-performances.md)。

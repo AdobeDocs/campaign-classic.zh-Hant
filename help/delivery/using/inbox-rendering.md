@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 收件匣轉譯{#inbox-rendering}
+
+![](../../assets/common.svg)
 
 ## 關於收件匣轉譯 {#about-inbox-rendering}
 
@@ -84,7 +86,6 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 >* 對於相同的傳送，如果您再次產生收件匣轉譯，可用代號的數量會再次減少為產生的轉譯數量。
 
 >
-
 
 
 剩餘的可用令牌數顯示在[收件箱呈現報告](#inbox-rendering-report)的&#x200B;**[!UICONTROL General summary]**&#x200B;中。

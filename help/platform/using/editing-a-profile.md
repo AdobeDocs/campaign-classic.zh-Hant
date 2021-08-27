@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 87%
@@ -14,6 +14,8 @@ ht-degree: 87%
 ---
 
 # 編輯設定檔{#editing-a-profile}
+
+![](../../assets/common.svg)
 
 若要檢視與用戶檔案相關的資訊，請在用戶檔案清單中按一下其名稱。
 
@@ -39,7 +41,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->選取&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;選項時，這表示設定檔位於封鎖清單上，亦即設定檔已表示不希望聯絡（例如按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。有關詳細資訊，請參見[此頁面](../../delivery/using/understanding-quarantine-management.md)。
+>選取&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;選項時，這表示設定檔位於封鎖清單上，亦即設定檔已表示不希望聯絡（例如按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。如需詳細資訊，請參閱[此頁面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## 聯絡資訊索引標籤 {#contact-information-tab}
 
@@ -75,7 +77,7 @@ ht-degree: 87%
 
 **[!UICONTROL Detail]** 按鈕會顯示所選訂閱的屬性。**[!UICONTROL Add]** 按鈕可用來手動新增新訂閱。
 
-有關詳細資訊，請參見[此頁面](../../delivery/using/managing-subscriptions.md)。
+如需詳細資訊，請參閱[此頁面](../../delivery/using/managing-subscriptions.md)。
 
 ## 傳遞索引標籤 {#deliveries-tab}
 

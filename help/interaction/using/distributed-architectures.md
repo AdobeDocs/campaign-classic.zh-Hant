@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 分佈式架構{#distributed-architectures}
+
+![](../../assets/v7-only.svg)
 
 ## 原則 {#principle}
 
@@ -28,7 +30,7 @@ ht-degree: 1%
 >
 >控制執行個體專用於入站通道，並包含目錄的線上版本。 每個執行例項都是獨立的，專屬於一個連絡人區段（例如，每個國家/地區一個執行例項）。 必須直接在執行時執行選件引擎呼叫（每個執行例項一個特定URL）。 由於執行個體之間的同步並非自動，因此來自相同聯絡人的互動必須透過相同執行個體傳送。
 
-## 命題同步{#proposition-synchronization}
+## 命題同步 {#proposition-synchronization}
 
 選件同步是透過套件執行。 在執行例項上，所有目錄物件都會加上外部帳戶名稱的前置詞。 這表示同一個執行例項可支援數個控制例項（例如開發和生產例項）。
 
@@ -52,7 +54,7 @@ ht-degree: 1%
 * 命題同步只由FDA連線執行。
 * 若您在相同例項上使用互動和訊息中心，這兩種情況都會透過FDA通訊協定進行同步。
 
-## 包配置{#packages-configuration}
+## 包配置 {#packages-configuration}
 
 直接連結到&#x200B;**Interaction**&#x200B;的任何架構擴展（選件、主張、收件人等） 必須部署在執行執行個體上。
 
@@ -76,7 +78,7 @@ Interaction包必須安裝在所有實例（控制和執行）上。 另外提�
    * 完成執行實例的連接參數。
    * 每個執行例項都必須連結至ID。 按一下&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按鈕時，會指派此ID。
    * 檢查所使用的應用程式類型：**[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或兩者。
-   * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須在有關實例的資料庫上具有以下讀和寫權限：
+   * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須在有關實例的資料庫上具有以下讀寫權限：
 
       ```
       grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
@@ -101,7 +103,7 @@ Interaction包必須安裝在所有實例（控制和執行）上。 另外提�
 
 ![](assets/ita_filtering.png)
 
-## 維護選項{#maintenance-options}
+## 維護選項 {#maintenance-options}
 
 以下是控制實例上可用的維護選項清單：
 
@@ -117,7 +119,7 @@ Interaction包必須安裝在所有實例（控制和執行）上。 另外提�
 
 **NmsExecutionInstanceId**:包含例項ID的選項。
 
-## 軟體包安裝{#packages-installation}
+## 軟體包安裝 {#packages-installation}
 
 如果您的執行個體先前沒有互動套件，則不需要移轉。 預設情況下，主張表將在安裝軟體包後以64位元顯示。
 

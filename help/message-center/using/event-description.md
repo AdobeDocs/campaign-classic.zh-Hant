@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # 事件說明 {#event-description}
 
-## 交易式訊息資料模型{#about-transactional-messaging-datamodel}
+![](../../assets/v7-only.svg)
+
+## 交易式訊息資料模型 {#about-transactional-messaging-datamodel}
 
 交易式訊息需仰賴Adobe Campaign資料模型，並使用其他兩個不同的表格。 這些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的欄位，允許您管理即時事件和批次事件。
 
-## SOAP方法{#soap-methods}
+## SOAP方法 {#soap-methods}
 
 本節詳細說明與交易式訊息模組結構相關聯的SOAP方法。
 
@@ -152,7 +154,7 @@ ht-degree: 0%
     </ctx>
 ```
 
-## SOAP調用{#information-returned-by-the-soap-call}返回的資訊
+## SOAP呼叫傳回的資訊 {#information-returned-by-the-soap-call}
 
 Adobe Campaign在收到事件時會產生唯一傳回ID。 這是封存版本的事件ID。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 內容管理員資源與原則{#content-manager-resources-and-principles}
+
+![](../../assets/common.svg)
 
 您需要定義發佈範本，其中包含每個內容的轉換範本。
 

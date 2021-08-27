@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 1%
@@ -15,13 +15,15 @@ ht-degree: 1%
 
 # 建立篩選器{#creating-filters}
 
+![](../../assets/common.svg)
+
 在Adobe Campaign樹中導航時（從首頁的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜單），資料庫中包含的資料將顯示在清單中。 這些清單可設定為只顯示運算子所需的資料。 接著，即可對篩選的資料啟動動作。 篩選器設定可讓您從清單&#x200B;**[!UICONTROL dynamically]**&#x200B;中選取資料。 如果修改了資料，則更新篩選的資料。
 
 >[!NOTE]
 >
 >用戶介面配置設定是在本地設備級別定義的。 有時可能需要清除此資料，尤其是在重新整理資料時出現問題時。 要執行此操作，請使用&#x200B;**[!UICONTROL File > Clear the local cache]**&#x200B;功能表。
 
-## 可用篩選器的類型{#typology-of-available-filters}
+## 可用篩選器的類型 {#typology-of-available-filters}
 
 Adobe Campaign可讓您將篩選器套用至資料清單。
 
@@ -69,7 +71,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
 
    清單上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕提供了一組應用程式篩選器，可以結合這些篩選器來調整篩選。 建立這些篩選器的方法顯示在[儲存篩選器](#saving-a-filter)中。
 
-## 更改預設篩選器{#altering-the-default-filter}
+## 變更預設篩選 {#altering-the-default-filter}
 
 要更改收件人清單的預設篩選器，請按一下樹的&#x200B;**[!UICONTROL Profiles and Targets > Pre-defined filters]**&#x200B;節點。
 
@@ -92,7 +94,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
    >
    >在[建立進階篩選器](#creating-an-advanced-filter)和[儲存篩選器](#saving-a-filter)中詳細說明篩選器定義窗口。
 
-## 建立簡單篩選器{#creating-a-simple-filter}
+## 建立簡單篩選 {#creating-a-simple-filter}
 
 若要建立&#x200B;**簡單篩選器**，請套用下列步驟：
 
@@ -126,7 +128,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
 
    ![](assets/s_ncs_user_delete_filter.png)
 
-## 建立進階篩選器{#creating-an-advanced-filter}
+## 建立進階篩選 {#creating-an-advanced-filter}
 
 若要建立&#x200B;**進階篩選器**，請套用下列步驟：
 
@@ -168,7 +170,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
 
 您可以儲存進階篩選器以保留供日後使用。 有關此類型篩選器的詳細資訊，請參閱[保存篩選器](#saving-a-filter)。
 
-### 使用函式{#creating-an-advanced-filter-with-functions}建立進階篩選器
+### 建立含有函式的進階篩選器 {#creating-an-advanced-filter-with-functions}
 
 進階篩選器可使用函式；**具有函式**&#x200B;的篩選器是透過運算式編輯器建立的，該編輯器可讓您使用資料庫資料和進階函式建立公式。 若要建立具有函式的篩選器，請重複進階篩選器建立步驟1、2和3，然後繼續如下：
 
@@ -194,7 +196,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
       >
       >如需根據運算式建立篩選器的範例，請參閱[此區段](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is)。
 
-## 儲存篩選器{#saving-a-filter}
+## 儲存篩選器 {#saving-a-filter}
 
 篩選器是每個運算子專屬的，且每次運算子清除其用戶端主控台的快取時，都會重新初始化篩選器。
 
@@ -218,7 +220,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## 篩選收件者{#filtering-recipients}
+## 篩選收件者 {#filtering-recipients}
 
 預先定義的篩選器（請參閱[儲存篩選器](#saving-a-filter)）可讓您篩選資料庫中包含之收件者的設定檔。 您可以從樹的&#x200B;**[!UICONTROL Profiles and Targets > Predefined filters]**&#x200B;節點編輯篩選器。 篩選器會透過&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕列在工作區的上方區段。
 
@@ -355,7 +357,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
 
    ![](assets/predefined_filters_02.png)
 
-## 資料篩選器{#advanced-settings-for-data-filters}的進階設定
+## 資料篩選器的進階設定 {#advanced-settings-for-data-filters}
 
 按一下&#x200B;**[!UICONTROL Settings]**&#x200B;標籤以存取下列選項：
 

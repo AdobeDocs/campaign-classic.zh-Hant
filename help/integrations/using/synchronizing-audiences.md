@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 同步受眾{#synchronizing-audiences}
+
+![](../../assets/v7-only.svg)
 
 您可以使用Campaign v7進階功能來建立複雜的清單，並以順暢的方式直接與Campaign Standard（包括其他資料）即時共用此清單作為對象。 然後您的Campaign Standard使用者就可以在Adobe Campaign Standard中使用對象。
 

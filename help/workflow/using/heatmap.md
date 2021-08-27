@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # 工作流程熱度圖 {#workflow-heatmap}
 
+![](../../assets/common.svg)
+
 促銷活動工作流程熱度圖包含目前執行之所有工作流程的色彩編碼圖形表示法。 它僅適用於&#x200B;**Campaign管理員**。
 
 在[本頁面](../../production/using/monitoring-guidelines.md)中探索其他監控促銷活動程式的方式。
 
-## 開始使用工作流熱度圖{#about-the-workflow-heatmap}
+## 開始使用工作流程熱度圖 {#about-the-workflow-heatmap}
 
 透過提供並行工作流程數目的快速概覽，Adobe Campaign平台管理員可監控執行個體的負載，並據此規劃工作流程。
 
@@ -29,16 +31,16 @@ ht-degree: 3%
 * 依期間篩選工作流程，以查看哪些工作流程可能遇到問題
 * 依持續時間篩選活動，以查看哪些活動可能遇到問題
 * 輕易尋找個別的工作流程及所有的相關活動 (包括其持續時間)
-* 按工作流類型篩選：[技術工作流程](../../workflow/using/building-a-workflow.md#technical-workflows)或[促銷活動工作流程](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* 按工作流類型篩選：[技術工作流程](building-a-workflow.md#technical-workflows)或[促銷活動工作流程](building-a-workflow.md#campaign-workflows)
 * 尋找特定工作流程並加以分析
 
 >[!NOTE]
 >
->除了&#x200B;**工作流程熱度圖**&#x200B;之外，您還可以建立工作流程，讓您監控一組工作流程的狀態並傳送週期性訊息給主管。 有關詳細資訊，請參閱[專用區段](../../workflow/using/supervising-workflows.md)。
+>除了&#x200B;**工作流程熱度圖**&#x200B;之外，您還可以建立工作流程，讓您監控一組工作流程的狀態並傳送週期性訊息給主管。 有關詳細資訊，請參閱[專用區段](supervising-workflows.md)。
 
-使用「工作流熱度圖」需要熟悉下列概念：[工作流](../../workflow/using/about-workflows.md)、[活動](../../workflow/using/about-activities.md)和[工作流最佳實踐](../../workflow/using/workflow-best-practices.md)。
+使用「工作流熱度圖」需要熟悉下列概念：[工作流](about-workflows.md)、[活動](about-activities.md)和[工作流最佳實踐](workflow-best-practices.md)。
 
-## 自定義工作流熱度圖{#using-the-heatmap}
+## 自訂工作流程熱度圖 {#using-the-heatmap}
 
 >[!NOTE]
 >
@@ -75,14 +77,14 @@ ht-degree: 3%
 
 1. 您也可以篩選&#x200B;**[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]** :僅 [顯示現成可用的技術](../../workflow/using/building-a-workflow.md#technical-workflows) 工作流程 [和資料](../../workflow/using/targeting-data.md#data-management) 管理工作流程。
-   * **[!UICONTROL Marketing]** :只會顯示連結至行銷活動的工作流程(稱為行 [銷活動工作流程](../../workflow/using/building-a-workflow.md#campaign-workflows))。
+   * **[!UICONTROL Technical]** :僅 [顯示現成可用的技術](building-a-workflow.md#technical-workflows) 工作流程 [和資料](targeting-data.md#data-management) 管理工作流程。
+   * **[!UICONTROL Marketing]** :只會顯示連結至行銷活動的工作流程(稱為行 [銷活動工作流程](building-a-workflow.md#campaign-workflows))。
 
 1. 要按名稱搜索特定的工作流，還可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;欄位。
 
 1. 如果您在兩者之間的時間編輯了某些工作流程，請按一下&#x200B;**[!UICONTROL Reload data]**&#x200B;按鈕以重新整理顯示在格線中的資料。
 
-## 解譯工作流熱度圖{#reading-the-heatmap}
+## 解譯工作流程熱度圖 {#reading-the-heatmap}
 
 促銷活動工作流程熱度圖是自然可從左上至右下閱讀的格線，可讓您尋找具有綠色至紅色色彩編碼範圍的「熱區」。
 
@@ -110,11 +112,11 @@ ht-degree: 3%
 1. 按一下工作流程ID或名稱，直接開啟工作流程。
 1. 若要返回&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;檢視，請按一下&#x200B;**[!UICONTROL Home]**&#x200B;按鈕。
 
-## 使用案例：使用熱度圖執行{#use-cases--using-the-heatmap-to-take-actions}操作
+## 使用案例：使用熱度圖執行操作 {#use-cases--using-the-heatmap-to-take-actions}
 
 促銷活動工作流程熱度圖有兩個主要用途。
 
-### 減少併發工作流的數量{#reducing-the-number-of-concurrent-workflows}
+### 減少並行工作流程的數量 {#reducing-the-number-of-concurrent-workflows}
 
 身為Campaign管理員，工作流程熱度圖可協助您了解執行個體的負載，並在適當時間規劃現有或新的工作流程。
 
@@ -129,7 +131,7 @@ ht-degree: 3%
    * 如果您遇到效能問題，且格線中顯示一或多個紅色儲存格，請考慮變更數個工作流程的開始時間。 請行銷使用者手動將工作流程從繁忙（「熱」）時段移至更多可用時段。 這應該會維持一天中穩定的活動水準。
    * 為避免出現峰值並防止實例過載，請在規劃新工作流之前查看熱度圖，並選擇最佳時間。 請考慮格線中與灰色或綠色儲存格對應的時槽，以開始新的工作流程。
 
-### 查找影響效能的長時間運行的工作流{#finding-long-running-workflows-that-impact-performance}
+### 尋找影響效能的長時間執行的工作流程 {#finding-long-running-workflows-that-impact-performance}
 
 身為Campaign管理員，工作流程熱度圖可協助您尋找可能減緩活動的最長工作流程。
 
@@ -145,7 +147,7 @@ ht-degree: 3%
    * 建議行銷使用者分割最長的工作流程，以縮短處理時間。
    * 開始對特定工作流程和特定活動（例如JavaScript、匯入、匯出等）進行更深入的分析，以隔離問題並更輕鬆地解決問題。
 
-## 使用熱度圖改善工作流規劃{#example--using-the-heatmap-to-improve-workflow-planning}
+## 使用熱度圖改進工作流規劃 {#example--using-the-heatmap-to-improve-workflow-planning}
 
 以下範例說明使用Adobe Campaign Workflow HeatMap時，如何提高規劃的效率，以及如何改善效能。
 

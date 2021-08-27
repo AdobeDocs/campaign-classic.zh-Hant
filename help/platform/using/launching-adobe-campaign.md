@@ -6,17 +6,18 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 47%
+source-wordcount: '532'
+ht-degree: 49%
 
 ---
 
 # 啟動 Adobe Campaign {#launching-adobe-campaign}
 
-Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Campaign應用程式伺服器。 了解如何在[此頁面](../../installation/using/installing-the-client-console.md)下載和配置用戶端主控台。
+![](../../assets/v7-only.svg)
 
+Campaign用戶端主控台為
 
 >[!CAUTION]
 >
@@ -32,7 +33,7 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 
 ## 連線至Adobe Campaign {#connecting-to-adobe-campaign}
 
-您可以使用 Adobe ID 連線至 Adobe Campaign。有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
+您可以使用 Adobe ID 連線至 Adobe Campaign。如需詳細資訊，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
 
 您也可以使用專用登入名/密碼進行連線：
 
@@ -53,7 +54,7 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 * 若要啟動連線，您也可以按&#x200B;**Enter**&#x200B;鍵。
 * 您可以使用&#x200B;**Escape**&#x200B;鍵將&#x200B;**[!UICONTROL Login]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;欄位重設為上次成功的連線值。
 
-## 設定連接{#setting-up-connections}
+## 設定連線 {#setting-up-connections}
 
 您可以透過輸入區域上方的連結存取伺服器連線設定。
 
@@ -67,7 +68,7 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 
 1. 在 **[!UICONTROL URL]** 欄位中，新增應用程式伺服器的位址。如果您不知道連線 URL，請連絡管理員。
 
-1. 檢查&#x200B;**[!UICONTROL Connect with an Adobe ID]** ，讓運算子使用其Adobe ID連線至主控台。 有關詳細資訊，請參見[此頁面](../../integrations/using/about-adobe-id.md)。
+1. 檢查&#x200B;**[!UICONTROL Connect with an Adobe ID]** ，讓運算子使用其Adobe ID連線至主控台。 如需詳細資訊，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
 
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;進行驗證。
 
@@ -77,7 +78,7 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 
 在[訪問管理](../../platform/using/access-management.md)部分中詳細介紹了此功能。
 
-## 斷開與Adobe Campaign {#disconnecting-from-adobe-campaign}的連接
+## 斷開與Adobe Campaign的連接 {#disconnecting-from-adobe-campaign}
 
 若要中斷 Adobe Campaign 的連線，請使用圖示列的第一個圖示。
 
@@ -87,7 +88,7 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 >
 >您也可以不先登出，而直接關閉應用程式。
 
-## 取得您的Adobe Campaign版本{#getting-your-campaign-version}
+## 取得Adobe Campaign版本 {#getting-your-campaign-version}
 
 **[!UICONTROL Help > About...]**&#x200B;功能表可讓您存取下列資訊：
 

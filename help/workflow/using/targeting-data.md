@@ -6,26 +6,28 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1924'
 ht-degree: 3%
 
 ---
 
 # 目標定位資料{#targeting-data}
 
-## 建立查詢{#creating-queries}
+![](../../assets/common.svg)
 
-### 選擇資料{#selecting-data}
+## 建立查詢 {#creating-queries}
 
-**[!UICONTROL Query]**&#x200B;活動可讓您選取基本資料以建立目標母體。 有關詳細資訊，請參閱[建立查詢](../../workflow/using/query.md#creating-a-query)。
+### 選取資料 {#selecting-data}
 
-您也可以使用下列活動來查詢和調整資料庫中的資料：[增量查詢](../../workflow/using/incremental-query.md), [讀取清單](../../workflow/using/read-list.md)。
+**[!UICONTROL Query]**&#x200B;活動可讓您選取基本資料以建立目標母體。 有關詳細資訊，請參閱[建立查詢](query.md#creating-a-query)。
 
-可以收集要在整個工作流生命週期中轉發和處理的其他資料。 有關詳細資訊，請參閱[新增資料](../../workflow/using/query.md#adding-data)和[編輯其他資料](#editing-additional-data)。
+您也可以使用下列活動來查詢和調整資料庫中的資料：[增量查詢](incremental-query.md), [讀取清單](read-list.md)。
 
-### 編輯其他資料{#editing-additional-data}
+可以收集要在整個工作流生命週期中轉發和處理的其他資料。 有關詳細資訊，請參閱[新增資料](query.md#adding-data)和[編輯其他資料](#editing-additional-data)。
+
+### 編輯其他資料 {#editing-additional-data}
 
 新增其他資料後，您可以編輯該資料，或使用該資料來調整查詢活動中定義的目標。
 
@@ -51,25 +53,25 @@ ht-degree: 3%
 
 ![](assets/query_add_columns_collection.png)
 
-### 使用其他資料{#refining-the-target-using-additional-data}縮小目標範圍
+### 使用其他資料縮小目標範圍 {#refining-the-target-using-additional-data}
 
 收集的其他資料可讓您調整資料庫中的資料篩選。 要執行此操作，請按一下&#x200B;**[!UICONTROL Refine the target using additional data...]**&#x200B;連結：這可讓您對新增的資料進行過度篩選。
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### 均勻化資料{#homogenizing-data}
+### 均質化資料 {#homogenizing-data}
 
 在&#x200B;**[!UICONTROL Union]**&#x200B;或&#x200B;**[!UICONTROL Intersection]**&#x200B;類型活動中，您可以選擇僅保留共用的其他資料以保持資料的一致性。 在這種情況下，此活動的臨時輸出工作表將僅包含所有入站集中找到的其他資料。
 
 ![](assets/option-common_additionnal_col_only.png)
 
-### 與其他資料{#reconciliation-with-additional-data}進行調解
+### 與其他資料調解 {#reconciliation-with-additional-data}
 
 在資料協調階段（**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等）期間。 活動)，則可以從其他欄選取要用於資料協調的欄。 要執行此操作，請對選定的列配置協調並指定主集。 然後選取視窗下方欄中的欄，如下列範例所示：
 
 ![](assets/select-column-and-join.png)
 
-### 建立子集{#creating-subsets}
+### 建立子集 {#creating-subsets}
 
 **[!UICONTROL Split]**&#x200B;活動可讓您根據透過擷取查詢定義的條件建立子集。 對於每個子集，當您編輯母體上的篩選條件時，將會存取標準查詢活動，該活動可讓您定義目標分段條件。
 
@@ -77,9 +79,9 @@ ht-degree: 3%
 
 有關詳細資訊，請參閱[使用分割活動建立子集](#creating-subsets-using-the-split-activity)。
 
-## 將資料{#segmenting-data}分段
+## 將資料分段 {#segmenting-data}
 
-### 合併多個目標（聯合）{#combining-several-targets--union-}
+### 合併多個目標（聯合） {#combining-several-targets--union-}
 
 聯合活動可讓您在一個轉變中結合數個活動的結果。 集不一定必須是同質的。
 
@@ -117,7 +119,7 @@ ht-degree: 3%
 
    ![](assets/join_limit_nb_priority.png)
 
-### 提取聯合資料（交集）{#extracting-joint-data--intersection-}
+### 提取聯合資料（交集） {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -125,9 +127,9 @@ ht-degree: 3%
 
 此外，您也可以僅保留一系列欄，或僅保留入站母體共用的欄。
 
-交集活動在[交集](../../workflow/using/intersection.md)部分中詳細說明。
+交集活動在[交集](intersection.md)部分中詳細說明。
 
-### 排除母體（排除）{#excluding-a-population--exclusion-}
+### 排除母體（排除） {#excluding-a-population--exclusion-}
 
 排除活動可讓您從不同的目標母體中排除目標的元素。 此活動的輸出目標維度將是主要集的目標維度。
 
@@ -137,7 +139,7 @@ ht-degree: 3%
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### 使用剝離活動{#creating-subsets-using-the-split-activity}建立子集
+### 使用分割活動建立子集 {#creating-subsets-using-the-split-activity}
 
 **[!UICONTROL Split]**&#x200B;活動是標準活動，可讓您透過一或多個篩選維度，視需要建立任意數量的集，以及為每個子集產生一個輸出轉變或一個唯一轉變。
 
@@ -157,7 +159,7 @@ ht-degree: 3%
 
    ![](assets/split-subset-config-all-data.png)
 
-   [此區段](../../workflow/using/cross-channel-delivery-workflow.md)說明如何使用&#x200B;**[!UICONTROL Split]**&#x200B;活動中的篩選條件將目標細分為不同母體的範例。
+   [此區段](cross-channel-delivery-workflow.md)說明如何使用&#x200B;**[!UICONTROL Split]**&#x200B;活動中的篩選條件將目標細分為不同母體的範例。
 
    **[!UICONTROL Label]**&#x200B;欄位可讓您為新建立的子集指定名稱，該名稱將與出站轉變相符。
 
@@ -175,7 +177,11 @@ ht-degree: 3%
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   如需詳細資訊，請參閱本[區段](../../installation/using/about-fda.md)。
+   如需詳細資訊，請視您的Campaign版本而定，參閱下列區段：
+
+   ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文件](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
 
 然後，我們需要添加新的子集：
 
@@ -193,7 +199,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >如果已獲得&#x200B;**聯合資料訪問**&#x200B;選項，則可以根據外部基中的資訊建立子集。 要執行此操作，請在&#x200B;**[!UICONTROL Targeting dimension]**&#x200B;欄位中選取外部表的架構。 有關詳細資訊，請參閱[存取外部資料庫(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
+   >如果已獲得&#x200B;**聯合資料訪問**&#x200B;選項，則可以根據外部基中的資訊建立子集。 要執行此操作，請在&#x200B;**[!UICONTROL Targeting dimension]**&#x200B;欄位中選取外部表的架構。 有關詳細資訊，請參閱[存取外部資料庫(FDA)](accessing-an-external-database--fda-.md)。
 
 建立子集後，預設情況下，拆分活動顯示的輸出轉變數與有子集數相同：
 
@@ -207,25 +213,25 @@ ht-degree: 3%
 
 ![](assets/wf_split_single_output.png)
 
-也可以使用&#x200B;**[!UICONTROL Cells]**&#x200B;活動建立子集。 有關詳細資訊，請參閱[儲存格](../../workflow/using/cells.md)區段。
+也可以使用&#x200B;**[!UICONTROL Cells]**&#x200B;活動建立子集。 有關詳細資訊，請參閱[儲存格](cells.md)區段。
 
-### 使用目標資料{#using-targeted-data}
+### 使用目標資料 {#using-targeted-data}
 
 識別並準備資料後，即可在下列內容中使用：
 
 * 在各種工作流程階段中進行資料操作之後，您可以更新資料庫中的資料。
 
-   有關詳細資訊，請[更新資料](../../workflow/using/update-data.md)。
+   有關詳細資訊，請[更新資料](update-data.md)。
 
 * 您也可以重新整理現有清單的內容。
 
-   有關詳細資訊，請參閱[清單更新](../../workflow/using/list-update.md)。
+   有關詳細資訊，請參閱[清單更新](list-update.md)。
 
 * 您可以直接在工作流程中準備或開始傳送。
 
-   如需詳細資訊，請參閱[傳送](../../workflow/using/delivery.md)、[傳送控制項](../../workflow/using/delivery-control.md)和[連續傳送](../../workflow/using/continuous-delivery.md)。
+   如需詳細資訊，請參閱[傳送](delivery.md)、[傳送控制項](delivery-control.md)和[連續傳送](continuous-delivery.md)。
 
-## 資料管理{#data-management}
+## 資料管理 {#data-management}
 
 在Adobe Campaign中，資料管理結合了一組活動，透過提供更有效率、更靈活的工具來解決複雜的鎖定問題。 這可讓您使用與合約、訂閱、傳送再活動等相關的資訊，對與聯絡人的所有通訊進行一致的管理。 「資料管理」可讓您在細分操作期間追蹤資料生命週期，尤其是：
 
@@ -235,9 +241,9 @@ ht-degree: 3%
 
 為了實作這些操作，Adobe Campaign提供：
 
-* 資料收集活動：[檔案傳輸](../../workflow/using/file-transfer.md)、[資料載入（檔案）](../../workflow/using/data-loading--file-.md)、[資料載入(RDBMS)](../../workflow/using/data-loading--rdbms-.md)、[更新資料](../../workflow/using/update-data.md)。 收集資料的第一步會準備資料，以便在其他活動中處理資料。 需要監控數個參數，以確保工作流程正確執行並提供預期的結果。 例如，匯入資料時，此資料的主索引鍵(Pkey)對於每個記錄都必須是唯一的。
-* 已使用「資料管理」選項擴充目標定位活動：[Query](../../workflow/using/query.md)、[Union](../../workflow/using/union.md)、[Intersection](../../workflow/using/intersection.md)、[Split](../../workflow/using/split.md)。 這可讓您設定來自數個不同目標維度之資料之間的聯合或交集，只要可進行資料協調即可。
-* 資料轉換活動：[擴充](../../workflow/using/enrichment.md), [變更維度](../../workflow/using/change-dimension.md)。
+* 資料收集活動：[檔案傳輸](file-transfer.md)、[資料載入（檔案）](data-loading--file-.md)、[資料載入(RDBMS)](data-loading--rdbms-.md)、[更新資料](update-data.md)。 收集資料的第一步會準備資料，以便在其他活動中處理資料。 需要監控數個參數，以確保工作流程正確執行並提供預期的結果。 例如，匯入資料時，此資料的主索引鍵(Pkey)對於每個記錄都必須是唯一的。
+* 已使用「資料管理」選項擴充目標定位活動：[Query](query.md)、[Union](union.md)、[Intersection](intersection.md)、[Split](split.md)。 這可讓您設定來自數個不同目標維度之資料之間的聯合或交集，只要可進行資料協調即可。
+* 資料轉換活動：[擴充](enrichment.md), [變更維度](change-dimension.md)。
 
 >[!CAUTION]
 >
@@ -245,12 +251,12 @@ ht-degree: 3%
 >  
 >例如，透過工作流程刪除收件者不會導致刪除所有收件者的傳送歷史記錄。 不過，直接在「收件者」資料夾中刪除收件者，確實會導致刪除與此收件者連結的所有資料。
 
-### 擴充和修改資料{#enriching-and-modifying-data}
+### 擴充和修改資料 {#enriching-and-modifying-data}
 
-除了目標維度，篩選維度還可讓您指定收集資料的性質。 請參閱[目標定位和篩選維度](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
+除了目標維度，篩選維度還可讓您指定收集資料的性質。 請參閱[目標定位和篩選維度](building-a-workflow.md#targeting-and-filtering-dimensions)。
 
 識別和收集的資料可以被豐富、聚合和操作以優化目標構造。 若要這麼做，除了[劃分資料](#segmenting-data)區段中詳述的資料操作活動外，請使用下列項目：
 
-* **[!UICONTROL Enrichment]**&#x200B;活動可讓您暫時將欄新增至架構，以及新增資訊至特定元素。 在活動存放庫的[ Excrent](../../workflow/using/enrichment.md)區段中會詳細說明。
-* **[!UICONTROL Edit schema]**&#x200B;活動可讓您修改架構的結構。 在活動存放庫的[編輯結構](../../workflow/using/edit-schema.md)區段中會詳細說明。
-* **[!UICONTROL Change dimension]**&#x200B;活動可讓您在目標建構週期期間變更目標維度。 在[Change dimension](../../workflow/using/change-dimension.md)區段中會詳細說明。
+* **[!UICONTROL Enrichment]**&#x200B;活動可讓您暫時將欄新增至架構，以及新增資訊至特定元素。 在活動存放庫的[ Excrent](enrichment.md)區段中會詳細說明。
+* **[!UICONTROL Edit schema]**&#x200B;活動可讓您修改架構的結構。 在活動存放庫的[編輯結構](edit-schema.md)區段中會詳細說明。
+* **[!UICONTROL Change dimension]**&#x200B;活動可讓您在目標建構週期期間變更目標維度。 在[Change dimension](change-dimension.md)區段中會詳細說明。

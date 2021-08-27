@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 20%
@@ -14,6 +14,8 @@ ht-degree: 20%
 ---
 
 # 監視指南 {#monitoring-guidelines}
+
+![](../../assets/v7-only.svg)
 
 ## 執行個體監控控制面板 {#instance-monitoring-dashboard}
 

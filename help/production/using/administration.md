@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 管理{#administration}
+
+![](../../assets/v7-only.svg)
 
 自動啟動Adobe Campaign模組（**web**、**mta**、**wfserver**&#x200B;等） 由&#x200B;**nlserver**&#x200B;伺服器提供。
 
@@ -80,17 +82,13 @@ ht-degree: 1%
    >* 使用&#x200B;**-verbose**&#x200B;選項可顯示有關進程操作的其他資訊。
 
       >
-      >   
-      範例:
+      >   範例:
       >
-      >   
-      **nlserver重新啟動web -verbose**
+      >   **nlserver重新啟動web -verbose**
       >
-      >   
-      **nlserver開始mta@myinstance -verbose**
+      >   **nlserver開始mta@myinstance -verbose**
       >
-      >   
-      此選項會新增其他記錄檔。 建議您在找到所需資訊後，不使用&#x200B;**-verbose**&#x200B;選項重新啟動進程，以避免發生超載記錄。
+      >   此選項會新增其他記錄檔。 建議您在找到所需資訊後，不使用&#x200B;**-verbose**&#x200B;選項重新啟動進程，以避免發生超載記錄。
 
 
 * 啟動所有Adobe Campaign進程（等於啟動&#x200B;**nlserver6**&#x200B;服務）:

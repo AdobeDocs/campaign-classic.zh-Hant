@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 資料庫{#database}
+
+![](../../assets/v7-only.svg)
 
 資料庫伺服器可以在任何給定的作業系統上運行，而不管應用伺服器或伺服器使用的作業系統為何，只要它們之間有網路連接。
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 1%
@@ -16,20 +16,21 @@ ht-degree: 1%
 
 # 定義安全區域（內部部署）{#defining-security-zones}
 
+![](../../assets/v7-only.svg)
+
 每個運算子都需要連結到區域才能登錄到實例，並且運算子IP必須包含在安全區域中定義的地址或地址集中。 安全區配置在Adobe Campaign伺服器的配置檔案中執行。
 
-操作員從控制台中的配置檔案連結到安全區域，可在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中訪問。 [瞭解更多](#linking-a-security-zone-to-an-operator)。
+操作員從控制台中的配置檔案連結到安全區域，可在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中訪問。 [深入瞭解](#linking-a-security-zone-to-an-operator)。
 
 >[!NOTE]
 >
 >此程式僅限於&#x200B;**內部部署**&#x200B;部署。
 >
->身為&#x200B;**托管**&#x200B;客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，則可以使用安全區自助服務介面。 [瞭解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)
+>身為&#x200B;**托管**&#x200B;客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，則可以使用安全區自助服務介面。 [深入瞭解](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)
 >
 >其他&#x200B;**混合/托管**&#x200B;客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
 
-
-## 建立安全區域{#creating-security-zones}
+## 建立安全區域 {#creating-security-zones}
 
 區域由以下項定義：
 
@@ -98,7 +99,7 @@ ht-degree: 1%
 
 使用Message Center時，如果有多個執行實例，則需要使用定義為&#x200B;**true**&#x200B;的&#x200B;**sessionTokenOnly**&#x200B;屬性建立附加安全區域，其中僅添加必要的IP地址。 有關配置實例的詳細資訊，請參閱[本文檔](../../message-center/using/configuring-instances.md)。
 
-## 安全區域{#best-practices-for-security-zones}的最佳實踐
+## 安全區域最佳實務 {#best-practices-for-security-zones}
 
 在&#x200B;**lan**&#x200B;安全區的定義中，可以添加定義技術訪問的IP地址掩碼。 此新增功能將啟用對伺服器上托管的所有執行個體的存取。
 
@@ -130,7 +131,7 @@ ht-degree: 1%
       <subNetwork id="cus1" mask="a.b.c.d/xx"/>
 ```
 
-## 安全區域{#sub-networks-and-proxies-in-a-security-zone}中的子網和代理
+## 安全區域中的子網和代理 {#sub-networks-and-proxies-in-a-security-zone}
 
 **proxy**&#x200B;參數可用於&#x200B;**subNetwork**&#x200B;元素中，以指定在安全區域中使用的proxy。
 
@@ -181,7 +182,7 @@ ht-degree: 1%
 </securityZone>
 ```
 
-## 將安全區域連結到運算子{#linking-a-security-zone-to-an-operator}
+## 將安全區域連結到操作員 {#linking-a-security-zone-to-an-operator}
 
 定義區域後，每個運算子必須連結到其中一個運算子才能登錄到實例，並且運算子的IP地址必須包含在區域中引用的地址或地址範圍中。
 

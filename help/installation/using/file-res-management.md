@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 檔案和資源管理{#file-and-resmanagement}
+
+![](../../assets/v7-only.svg)
 
 ## 限制上傳檔案格式 {#limiting-uploadable-files}
 
@@ -44,7 +46,6 @@ ht-degree: 0%
 >僅支援基本驗證模式。 不支援NTLM身份驗證。
 >
 >不支援SOCKS代理。
-
 
 您可以使用下列命令：
 

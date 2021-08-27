@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 開始使用安全性和隱私權 {#get-started-security-privacy}
+
+![](../../assets/v7-only.svg)
 
 本節將介紹有關安全性和隱私權需要檢查的關鍵元素。 某些設定只能由內部部署客戶執行。
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 建立和設定資料庫{#creating-and-configuring-the-database}
+
+![](../../assets/v7-only.svg)
 
 建立資料庫時，Adobe Campaign提供兩種不同的選項：
 
@@ -28,7 +30,7 @@ ht-degree: 1%
 >
 >只有&#x200B;**內部**&#x200B;標識符可以執行這些操作。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-## 案例1:建立/循環使用資料庫{#case-1--creating-recycling-a-database}
+## 案例1:建立/循環使用資料庫 {#case-1--creating-recycling-a-database}
 
 建立資料庫或回收現有資料庫的步驟如下。 某些配置取決於使用的資料庫引擎：
 
@@ -41,7 +43,7 @@ ht-degree: 1%
 * [步驟5 — 建立步驟](#step-5---creation-steps)、
 * [步驟6 — 建立資料庫](#step-6---creating-the-database)。
 
-### 步驟1 — 選擇資料庫引擎{#step-1---selecting-the-database-engine}
+### 步驟1 — 選擇資料庫引擎 {#step-1---selecting-the-database-engine}
 
 從下拉式清單中選取資料庫引擎。
 
@@ -65,7 +67,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 
-### 步驟2 — 連接到伺服器{#step-2---connecting-to-the-server}
+### 步驟2 — 連接到伺服器 {#step-2---connecting-to-the-server}
 
 在&#x200B;**[!UICONTROL Server access]**&#x200B;窗口中，定義資料庫伺服器訪問。
 
@@ -78,7 +80,7 @@ ht-degree: 1%
 * **** PostgreSQL資料庫的postgresers,
 * **db2inst1** （用於DB2資料庫）。
 
-### 步驟3 — 資料庫{#step-3---connection-and-characteristics-of-the-database}的連接和特性
+### 步驟3 — 資料庫的連接和特性 {#step-3---connection-and-characteristics-of-the-database}
 
 下列步驟可讓您配置登入資料庫的設定。
 
@@ -107,7 +109,7 @@ ht-degree: 1%
 
    有關詳細資訊，請參閱[時區管理](../../installation/using/time-zone-management.md)。
 
-### 步驟4 — 安裝{#step-4---packages-to-install}的軟體包
+### 步驟4 — 要安裝的軟體包 {#step-4---packages-to-install}
 
 選擇要安裝的包。
 
@@ -115,7 +117,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_modules.png)
 
-### 步驟5 — 建立步驟{#step-5---creation-steps}
+### 步驟5 — 建立步驟 {#step-5---creation-steps}
 
 通過&#x200B;**[!UICONTROL Creation steps]**&#x200B;窗口，可以顯示和編輯用於建立表的SQL指令碼。
 
@@ -135,7 +137,7 @@ ht-degree: 1%
 
    建議您為安全起見定義Adobe Campaign帳戶管理員密碼。
 
-### 步驟6 — 建立資料庫{#step-6---creating-the-database}
+### 步驟6 — 建立資料庫 {#step-6---creating-the-database}
 
 嚮導的最後階段允許您建立資料庫。 按一下&#x200B;**[!UICONTROL Start]**&#x200B;以確認。
 
@@ -153,7 +155,7 @@ ht-degree: 1%
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## 案例2:使用現有資料庫{#case-2--using-an-existing-database}
+## 案例2:使用現有資料庫 {#case-2--using-an-existing-database}
 
 資料庫以及用戶必須由資料庫管理員建立，並正確配置訪問權限。
 
@@ -167,7 +169,7 @@ ht-degree: 1%
 * [步驟4 — 建立步驟](#step-4---creation-steps)、
 * [步驟5 — 建立資料庫](#step-5---creating-the-database)。
 
-### 步驟1 — 選擇資料庫引擎{#step-1---choosing-the-database-engine}
+### 步驟1 — 選擇資料庫引擎 {#step-1---choosing-the-database-engine}
 
 從下拉清單中選擇資料庫引擎。
 
@@ -188,7 +190,7 @@ ht-degree: 1%
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
-### 步驟2 — 資料庫連接設定{#step-2---database-connection-settings}
+### 步驟2 — 資料庫連接設定 {#step-2---database-connection-settings}
 
 在&#x200B;**[!UICONTROL Database]**&#x200B;窗口中，定義資料庫連接設定。
 
@@ -206,7 +208,7 @@ ht-degree: 1%
 
 * 指定資料庫是否應為Unicode。
 
-### 步驟3 — 安裝{#step-3---packages-to-install}的軟體包
+### 步驟3 — 要安裝的軟體包 {#step-3---packages-to-install}
 
 選擇要安裝的包。
 
@@ -214,7 +216,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_modules.png)
 
-### 步驟4 — 建立步驟{#step-4---creation-steps}
+### 步驟4 — 建立步驟 {#step-4---creation-steps}
 
 通過&#x200B;**[!UICONTROL Creation steps]**&#x200B;窗口，可以顯示和編輯用於建立表的SQL指令碼。
 
@@ -226,7 +228,7 @@ ht-degree: 1%
 
    建議您為安全起見定義Adobe Campaign帳戶管理員密碼。
 
-### 步驟5 — 建立資料庫{#step-5---creating-the-database}
+### 步驟5 — 建立資料庫 {#step-5---creating-the-database}
 
 嚮導的最後階段允許您建立資料庫。 按一下&#x200B;**[!UICONTROL Start]**&#x200B;以確認。
 

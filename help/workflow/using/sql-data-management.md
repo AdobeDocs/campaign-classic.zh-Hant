@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 4%
 
 ---
 
 # SQL 資料管理{#sql-data-management}
+
+![](../../assets/common.svg)
 
 **SQL資料管理**&#x200B;活動允許您編寫自己的SQL指令碼以建立和填充工作表。
 
@@ -21,11 +23,18 @@ ht-degree: 3%
 
 設定活動之前，請確定已符合下列必要條件：
 
-* 活動僅適用於遠端資料來源。 因此，您的執行個體上必須安裝&#x200B;**[!UICONTROL FDA]**（同盟資料存取）套件。 [瞭解更多](../../installation/using/about-fda.md)。
-* 輸出結構必須存在於資料庫中且連結至FDA資料庫。 [瞭解更多](../../configuration/using/about-schema-reference.md)。
-* 執行工作流程的運算子必須具有名為&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;的權限。 [瞭解更多](../../platform/using/access-management-named-rights.md)。
+* 活動僅適用於遠端資料來源。 因此，您的執行個體上必須安裝&#x200B;**[!UICONTROL FDA]**（同盟資料存取）套件。 [深入瞭解](../../installation/using/about-fda.md)。
 
-## 配置SQL資料管理活動{#configuring-the-sql-data-management-activity}
+   如需詳細資訊，請視您的Campaign版本而定，參閱下列區段：
+
+   ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文件](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+
+* 輸出結構必須存在於資料庫中且連結至FDA資料庫。
+* 執行工作流程的運算子必須具有名為&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;的權限。 [深入瞭解](../../platform/using/access-management-named-rights.md)。
+
+## 配置SQL資料管理活動 {#configuring-the-sql-data-management-activity}
 
 1. 指定活動&#x200B;**[!UICONTROL Label]**。
 1. 選取要使用的&#x200B;**[!UICONTROL External account]**，然後選取連結至此外部帳戶的&#x200B;**[!UICONTROL Outbound schema]**。
@@ -66,7 +75,7 @@ ht-degree: 3%
 >  
 >如果活動重新啟動，則會從其開頭執行整個指令碼，而不論其執行狀態為何。
 
-## SQL指令碼示例{#sql-script-samples}
+## SQL指令碼示例 {#sql-script-samples}
 
 >[!NOTE]
 >

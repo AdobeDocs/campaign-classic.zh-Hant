@@ -2,26 +2,31 @@
 product: campaign
 title: 關於 Adobe Campaign Classic
 description: 探索重要功能、使用者介面和全域準則。
-feature: 概覽
+feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 95%
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
 # 開始使用Campaign Classic{#about-adobe-campaign-classic}
 
+![](../../assets/v7-only.svg)
+
 為了實現高水準的客戶參與度並打造精彩的體驗，企業必須在所有接觸點建立一致的客戶歷程。現在，行銷人員可以有效地設計、規劃、執行、管理以及最佳化跨通路行銷活動，為行銷投資帶來更高的投資報酬，並且提高客戶的忠誠度。
 
 您可以使用 Adobe Campaign 協調建立對話式的行銷活動。Adobe Campaign 提供創新功能，用於模型化、簡化和自動化行銷和客戶通訊流程。
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Adobe Campaign Classic 現提供 v6.11 和 v7 兩個版本。除非另有提及，否則說明資料適用於[最新組建版本](../../rn/using/latest-release.md)中的兩個版本。 螢幕截圖為 Campaign Classic v7 使用者介面。
+>* 此集合中的說明資料適用於[最新組建版本](../../rn/using/latest-release.md)中的Campaign Classicv7。 當區段也套用至Campaign v8時，即可使用特定徽章。
+>
+>* Adobe Campaign v8檔案可在[此處](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html)取得。
+
 
 ![](assets/do-not-localize/how-to-video.png) [探索視訊的主要功能](#video)
 
@@ -79,8 +84,8 @@ Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行�
 * [網路應用程式](../../web/using/about-web-applications.md) -建立網頁和表單
 * [意見調查管理員](../../surveys/using/about-surveys.md) -建立線上意見調查和投票
 * [內容管理員](../../delivery/using/about-content-management.md) -管理電子郵件內容
-* [分散式行銷](../../campaign/using/about-distributed-marketing.md) -協調中央/地方機關的行銷活動
-* [回應管理員](../../campaign/using/about-response-manager.md) -管理客戶回應
+* [分散式行銷](../../distributed/using/about-distributed-marketing.md) -協調中央/地方機關的行銷活動
+* [回應管理員](../../response/using/about-response-manager.md) -管理客戶回應
 * [連接器](../../platform/using/about-connectors.md) -利用連接器與外部解決方案和資料庫引擎通訊
 * [網路服務](../../configuration/using/about-web-services.md) -透過 API/網路服務使用 Campaign
 * [報告](../../reporting/using/about-adobe-campaign-reporting-tools.md) -存取內建報表，分析資料及設計您自己的報告

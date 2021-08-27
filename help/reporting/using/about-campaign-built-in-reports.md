@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 關於 Campaign 內建的報表{#about-campaign-built-in-reports}
+
+![](../../assets/common.svg)
 
 本章提供Adobe Campaign內建報表的清單、其內容及其內容。 以下資訊可讓您避免建立平台中已有的報表。
 

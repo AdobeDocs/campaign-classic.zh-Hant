@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 設定您的平台{#configuring-your-platform}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作。 在移轉前或之後，可能需要這些參數。 本節將介紹相關更改及其配置模式。
 
@@ -27,7 +29,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
 此警告也與Oracle使用者有關：如果您在後期升級期間新增了&#x200B;**usetimestamptz:1**&#x200B;選項（請參閱[時區](../../migration/using/general-configurations.md#time-zones)），則會重建至少包含一個&#x200B;**date+time**&#x200B;欄位的所有表。
 
-## 遷移前{#before-the-migration}
+## 移轉前 {#before-the-migration}
 
 移轉至Adobe Campaign v7時，必須設定下列元素。 在啟動&#x200B;**postupgrade**&#x200B;之前，必須處理這些元素。
 
@@ -63,7 +65,7 @@ Adobe Campaign v7中的某些重大變更需要設定，以確保其有效運作
 
    如果您使用&#x200B;**Interaction**，則必須刪除v7中已不存在的所有6.02架構參考。 如需詳細資訊，請參閱[Interaction](../../migration/using/general-configurations.md#interaction)區段。
 
-## 移轉{#after-the-migration}後
+## 移轉後 {#after-the-migration}
 
 執行&#x200B;**postupgrade**&#x200B;後，必須考慮下列元素並執行相應的配置。
 

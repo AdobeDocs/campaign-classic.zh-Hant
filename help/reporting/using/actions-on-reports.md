@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 針對報吿的動作{#actions-on-reports}
+
+![](../../assets/common.svg)
 
 檢視報表時，工具列可讓您執行特定數量的動作。 下文詳述。
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## 匯出報表{#exporting-a-report}
+## 匯出報表 {#exporting-a-report}
 
 從下拉式清單中選取您要匯出報表的格式。 (.xls、.pdf或.ods)。
 
@@ -39,7 +41,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
-### 導出到Microsoft Excel {#exporting-into-microsoft-excel}
+### 匯出至Microsoft Excel {#exporting-into-microsoft-excel}
 
 若為&#x200B;**[!UICONTROL List with group]**&#x200B;類型報表，且會匯出至Excel，則會套用下列建議和限制：
 
@@ -56,7 +58,7 @@ ht-degree: 1%
 * 如果報表包含數個表格、圖表等 類型元素，它們將一個導出到另一個下。
 * 可以強制單元格中的回車：此設定將保留在Excel中。 有關詳細資訊，請參閱此[定義單元格格式](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
-### 延遲導出{#postpone-the-export}
+### 延遲出口 {#postpone-the-export}
 
 您可以延遲匯出報表，例如等待非同步呼叫。 要執行此操作，請在頁面的初始化指令碼中輸入以下參數：
 
@@ -66,7 +68,7 @@ document.nl_waitBeforeRender = true;
 
 要激活導出並開始轉換為PDF，請使用&#x200B;**document.nl_renderToPdf()**&#x200B;函式，不使用任何參數。
 
-### 記憶體分配{#memory-allocation}
+### 記憶體分配 {#memory-allocation}
 
 導出某些大型報告時，可能會發生記憶體分配錯誤。
 
@@ -82,7 +84,7 @@ document.nl_waitBeforeRender = true;
 
 要了解有關&#x200B;**nlserver**&#x200B;服務的更多資訊，請參閱[此部分](../../production/using/administration.md)。
 
-## 列印報表{#printing-a-report}
+## 列印報表 {#printing-a-report}
 
 您可以列印報表：要執行此操作，請按一下打印機表徵圖：這會開啟對話方塊。
 
@@ -90,7 +92,7 @@ document.nl_waitBeforeRender = true;
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## 建立報表封存檔{#creating-report-archives}
+## 建立報表封存檔 {#creating-report-archives}
 
 封存報表可讓您建立不同時段的報表檢視，例如顯示指定時段的統計資料。
 

@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '551'
 ht-degree: 1%
 
 ---
 
 # 工作流程屬性{#workflow-properties}
 
-## 執行頁簽{#execution-tab}
+![](../../assets/common.svg)
+
+## 「執行」頁簽 {#execution-tab}
 
 工作流程中&#x200B;**[!UICONTROL Properties]**&#x200B;視窗的&#x200B;**[!UICONTROL Execution]**&#x200B;標籤分為3個區段：
 
@@ -39,7 +41,7 @@ ht-degree: 1%
 
    如果您的安裝包含數個工作流程伺服器，請使用此欄位來選擇要執行工作流程的電腦。 如果此欄位中定義的值在任何伺服器上都不存在，工作流程將保持擱置狀態。
 
-   請參閱此[節](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
+   請參閱本[Campaign Classicv7安裝指南](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
 
 * **[!UICONTROL History in days]**
 
@@ -57,7 +59,7 @@ ht-degree: 1%
 
    此選項只能用於除錯，絕不能用於生產。 啟用後，工作流程會優先處理，而所有其他工作流程會停止，直到完成此工作流程為止。
 
-### 錯誤管理{#error-management}
+### 錯誤管理 {#error-management}
 
 * **[!UICONTROL Troubleshooting]**
 

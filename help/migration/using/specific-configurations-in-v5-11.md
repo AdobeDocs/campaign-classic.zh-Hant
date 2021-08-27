@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # v5.11 中的特定設定{#specific-configurations-in-v5-11}
 
+![](../../assets/v7-only.svg)
+
 本節詳細說明從v5.11遷移時需要的其他配置。您也應配置[常規配置](../../migration/using/general-configurations.md)部分中詳述的設定。
 
-## 網站應用程式{#web-applications}
+## 網站應用程式 {#web-applications}
 
 移轉期間會自動顯示下列警告：
 
@@ -44,7 +46,7 @@ FROM XtkWorkflow
 WHERE mData LIKE '%nl5%';
 ```
 
-## 用戶友好性{#user-friendliness}
+## 用戶友好性 {#user-friendliness}
 
 不再提供Adobe Campaign v5.11首頁。
 
@@ -104,7 +106,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 >
 >有關這三種模式的詳細資訊，請參閱[此部分](../../configuration/using/about-web-tracking.md)。
 
-## Adobe Campaign v7樹結構{#campaign-vseven-tree-structure}
+## Adobe Campaign v7樹結構 {#campaign-vseven-tree-structure}
 
 在移轉期間，會根據v7標準自動重新組織樹狀結構。 新資料夾將被添加，過時資料夾將被刪除，其內容將放在「移動」資料夾中。 移轉後，必須檢查此資料夾中的所有項目，顧問必須決定保留或刪除每個項目。 然後，要保留的物品必須移至正確位置。
 

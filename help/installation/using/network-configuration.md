@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -15,13 +15,15 @@ ht-degree: 3%
 
 # 網路設定{#network-configuration}
 
-## 進程{#communication-between-processes}之間的通信
+![](../../assets/v7-only.svg)
+
+## 進程之間的通信 {#communication-between-processes}
 
 應用程式的某些進程需要與他人通信或訪問區域網路和網際網路。 這意味著需要為這些進程開啟某些TCP埠。
 
 將內嵌的Apache Tomcat埠作為優先順序（預設為8080），用於Adobe Campaign平台的各種應用程式伺服器之間的內部通信。
 
-### 傳送伺服器{#delivery-server}
+### 傳送伺服器 {#delivery-server}
 
 對於傳送伺服器(**nlserver mta**)，必須開啟以下埠：
 
@@ -55,7 +57,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 傳入郵件{#inbound-mail}
+### 傳入郵件 {#inbound-mail}
 
 對於入站郵件恢復進程(**nlserver inMail**)，必須開啟以下埠：
 
@@ -100,7 +102,7 @@ ht-degree: 3%
 
 當Adobe Campaign平台的多個應用程式伺服器需要彼此通訊時，建議使用Apache Tomcat伺服器的埠(預設為：8080)，而非執行重定向模組整合的Web伺服器的HTTP埠。 這表示這些伺服器之間需要開啟埠。
 
-### SMS傳送狀態{#sms-delivery-status}
+### 簡訊傳送狀態 {#sms-delivery-status}
 
 若要追蹤SMS傳送(**nlserver sms**)，必須開啟下列連接埠：
 
@@ -119,7 +121,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 富客戶端{#rich-client}
+### 富客戶端 {#rich-client}
 
 對於Adobe Campaign rich client(**nlclient**)，必須開啟以下埠：
 
@@ -138,7 +140,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 資料庫訪問{#database-access}
+## 資料庫存取 {#database-access}
 
 使用資料庫的所有元件都必須能夠連接到該資料庫。 大多數元件都是這樣，但重定向伺服器可單獨工作除外，瘦Win32客戶端僅使用HTTP（或HTTPS）與應用程式伺服器通信。
 
@@ -171,11 +173,11 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 外部訪問{#external-access}
+## 外部訪問 {#external-access}
 
 此外，某些元件必須可從公開網際網路存取，才能檢視直接從Adobe Campaign執行的電子郵件促銷活動。 這表示某些埠需要為元件開啟。
 
-### 重定向伺服器{#redirection-server}
+### 重定向伺服器 {#redirection-server}
 
 <table> 
  <tbody> 
@@ -190,7 +192,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 外部Web伺服器{#external-web-server}
+### 外部Web伺服器 {#external-web-server}
 
 此伺服器托管Web表單、鏡像頁面等。 需要開啟以下埠：
 
@@ -207,7 +209,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 內部應用程式伺服器(Web){#internal-application-server--web-}
+### 內部應用程式伺服器(Web) {#internal-application-server--web-}
 
 <table> 
  <tbody> 
@@ -222,7 +224,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 與Adobe Experience Manager的整合{#integration-with-adobe-experience-manager}
+## 與Adobe Experience Manager整合 {#integration-with-adobe-experience-manager}
 
 如果安裝為「內部部署」，Adobe Campaign和Adobe Experience Manager之間的整合需要開啟數個埠。 如需設定此整合的詳細資訊，請參閱[詳細檔案](../../integrations/using/about-adobe-experience-manager.md)。
 

@@ -5,7 +5,7 @@ description: 進一步了解預設傳送工作流程
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 
 
 # 傳遞{#deliveries}
+
+![](../../assets/common.svg)
 
 依預設，下列詳細的工作流程會與&#x200B;**Deliveries**&#x200B;模組一起安裝。
 
@@ -57,7 +59,7 @@ ht-degree: 15%
   <tr> 
    <td> <span class="uicontrol">暫停的工作流程清除</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>此工作流程會分析嚴重性設為正常的暫停工作流程，並在暫停太久時觸發警告和通知。 一個月後，暫停的技術工作流程會無條件停止。 預設會每週一早上5點觸發。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">處理暫停的工作流程</a>。</p></td> 
+   <td> <p>此工作流程會分析嚴重性設為正常的暫停工作流程，並在暫停太久時觸發警告和通知。 一個月後，暫停的技術工作流程會無條件停止。 預設會每週一早上5點觸發。</p> <p>如需詳細資訊，請參閱<a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">處理暫停的工作流程</a>。</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">優惠方案通知</span> <br /> </td> 

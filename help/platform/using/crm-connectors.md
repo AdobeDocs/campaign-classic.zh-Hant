@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 56%
@@ -15,7 +15,9 @@ ht-degree: 56%
 
 # CRM 連接器{#crm-connectors}
 
-## 開始使用CRM連接器{#about-crm-connectors}
+![](../../assets/common.svg)
+
+## 開始使用CRM連接器 {#about-crm-connectors}
 
 Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平台連結至您的協力廠商系統。透過這些 CRM 連接器，您可同步處理連絡人、帳戶、購買等。有了這些 CRM 連接器，您可以將您的應用程式與各協力廠商和企業應用程式輕鬆整合。
 

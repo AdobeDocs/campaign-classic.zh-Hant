@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 透過 JavaScript 進行整合 (用戶端){#integration-via-javascript-client-side}
+
+![](../../assets/v7-only.svg)
 
 若要在網頁中呼叫互動引擎，請將對JavaScript程式碼的呼叫直接插入頁面中。 此呼叫會傳回目標中的選件內容
 
@@ -33,9 +35,9 @@ Adobe建議使用JavaScript整合方法。
 
 下列使用案例詳細說明透過JavaScript整合優惠方案的可能選項。
 
-## HTML模式{#html-mode}
+## HTML模式 {#html-mode}
 
-### 呈現匿名選件{#presenting-an-anonymous-offer}
+### 呈現匿名選件 {#presenting-an-anonymous-offer}
 
 1. **準備互動引擎**
 
@@ -98,7 +100,7 @@ Adobe建議使用JavaScript整合方法。
    </div>
    ```
 
-### 呈現已識別的選件{#presenting-an-identified-offer}
+### 呈現已識別的優惠方案 {#presenting-an-identified-offer}
 
 若要向已識別的聯絡人呈現優惠方案，程式與此處詳述的程式類似：[呈現匿名選件](#presenting-an-anonymous-offer)。 在網頁的內容中，您需要新增下列指令碼，以在呼叫引擎期間識別連絡人：
 
@@ -124,7 +126,7 @@ Adobe建議使用JavaScript整合方法。
    </script>
    ```
 
-### 使用HTML呈現函式{#using-an-html-rendering-function}
+### 使用HTML呈現函式 {#using-an-html-rendering-function}
 
 若要自動產生HTML選件表示法，您可以使用呈現函式。
 
@@ -136,9 +138,9 @@ Adobe建議使用JavaScript整合方法。
 
    在此範例中，選件會以網頁中橫幅的形式顯示，由可點按的影像和標題組成，標題與選件內容中定義的欄位相符。
 
-## XML模式{#xml-mode}
+## XML模式 {#xml-mode}
 
-### 呈現選件{#presenting-an-offer}
+### 呈現優惠方案 {#presenting-an-offer}
 
 互動可讓您將XML節點傳回至呼叫選件引擎的HTML頁面。 此XML節點可由客戶端開發的函式進行處理。
 
@@ -287,7 +289,7 @@ Adobe建議使用JavaScript整合方法。
 
    「**env**」參數的值是即時環境的內部名稱。
 
-   &quot;**cb**&quot;參數的值是函式的名稱，該名稱需要解譯引擎返回的XML節點。 在我們的範例中，呼叫的函式會開啟一個模組視窗(alert()函式)。
+   &quot;**cb**&quot;參數的值是需要解譯引擎返回的XML節點的函式的名稱。 在我們的範例中，呼叫的函式會開啟一個模組視窗(alert()函式)。
 
    交互引擎返回的XML節點如下所示：
 
@@ -307,7 +309,7 @@ Adobe建議使用JavaScript整合方法。
    </propositions>
    ```
 
-### 使用呈現函式{#using-a-rendering-function-}
+### 使用呈現函式 {#using-a-rendering-function-}
 
 可以使用XML呈現函式來建立優惠方案簡報。 此函式將修改在呼叫引擎期間傳回至HTML頁面的XML節點。
 

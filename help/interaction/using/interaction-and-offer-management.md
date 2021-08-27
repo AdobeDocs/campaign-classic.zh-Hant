@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 互動與優惠管理{#interaction-and-offer-management}
+
+![](../../assets/v7-only.svg)
 
 互動可讓您在與指定連絡人（客戶或目標）的互動期間，透過讓他們成為單一或數個經過調整的優惠方案來即時回應。 例如，這些可以是簡單的通訊訊息、一或多項產品或服務的特殊優惠。
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 指令碼和程式碼指南 {#scripting-coding-guidelines}
+
+![](../../assets/v7-only.svg)
 
 ## 指令碼
 
@@ -92,7 +94,7 @@ ht-degree: 5%
    </method>
    ```
 
-   有關詳細資訊，請參見[此頁面](../../configuration/using/implementing-soap-methods.md)。
+   如需詳細資訊，請參閱[此頁面](../../configuration/using/implementing-soap-methods.md)。
 
 >[!IMPORTANT]
 >

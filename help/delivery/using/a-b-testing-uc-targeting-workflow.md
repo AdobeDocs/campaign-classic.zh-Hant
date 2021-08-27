@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 建立目標定位工作流程 {#step-1--creating-a-targeting-workflow}
+
+![](../../assets/common.svg)
 
 您需要在促銷活動的&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;標籤中建立工作流程。 它由&#x200B;**[!UICONTROL Query]**&#x200B;活動、連結至兩個&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動的&#x200B;**[!UICONTROL Split]**&#x200B;活動、**[!UICONTROL Wait]**&#x200B;活動、**[!UICONTROL JavaScript code]**&#x200B;活動和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動組成。
 
@@ -33,4 +35,4 @@ ht-degree: 10%
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-您現在可以設定母體範例。 [瞭解更多](a-b-testing-uc-population-samples.md)。
+您現在可以設定母體範例。 [深入瞭解](a-b-testing-uc-population-samples.md)。

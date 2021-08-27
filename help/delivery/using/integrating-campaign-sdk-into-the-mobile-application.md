@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 0%
@@ -15,6 +15,8 @@ ht-degree: 0%
 ---
 
 # 將Campaign SDK與您的應用程式整合 {#integrating-campaign-sdk-into-the-mobile-application}
+
+![](../../assets/common.svg)
 
 iOS和Android適用的Campaign SDK是行動應用程式頻道模組的其中一個元件。
 

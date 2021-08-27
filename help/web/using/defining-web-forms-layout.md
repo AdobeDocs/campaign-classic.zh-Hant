@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 定義網路表單版面{#defining-web-forms-layout}
 
-## 建立容器{#creating-containers}
+![](../../assets/common.svg)
+
+## 建立容器 {#creating-containers}
 
 容器可讓您結合頁面的欄位並設定其配置；來組織頁面中的元素。
 
@@ -35,7 +37,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_containers_std_ex.png)
 
-## 定位頁面{#positioning-the-fields-on-the-page}上的欄位
+## 定位頁面上的欄位 {#positioning-the-fields-on-the-page}
 
 Web表單的版面配置是依頁面在每個容器中定義，並且可視需要超載。
 
@@ -71,7 +73,7 @@ Web表單的版面配置是依頁面在每個容器中定義，並且可視需�
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
-## 定義標籤的位置{#defining-the-position-of-labels}
+## 定義標籤的位置 {#defining-the-position-of-labels}
 
 您可以定義表單中欄位和標籤的對齊方式。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 啟動工作流程 {#starting-a-workflow}
 
-工作流程一律手動啟動。 不過，啟動後，視透過排程器指定的資訊（請參閱[排程器](../../workflow/using/scheduler.md)）或活動排程而定，它可能會維持非作用中狀態。
+![](../../assets/common.svg)
+
+工作流程一律手動啟動。 不過，啟動後，視透過排程器指定的資訊（請參閱[排程器](scheduler.md)）或活動排程而定，它可能會維持非作用中狀態。
 
 與目標工作流程執行（啟動、停止、暫停等）相關的動作 是&#x200B;**非同步**&#x200B;程式：訂單會記錄下來，當伺服器可供套用時，訂單就會生效。
 
@@ -25,9 +27,9 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->請記住，當運算子對工作流程（開始、停止、暫停等）執行動作時，該動作不會立即執行，而會置於佇列中，以便由[工作流程模組](../../workflow/using/architecture.md)處理。
+>請記住，當運算子對工作流程（開始、停止、暫停等）執行動作時，該動作不會立即執行，而會置於佇列中，以便由[工作流程模組](architecture.md)處理。
 
-## 操作工具欄{#actions-toolbar}
+## 動作工具列 {#actions-toolbar}
 
 在此[節](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)中詳細說明工具欄按鈕。 **[!UICONTROL Actions]**&#x200B;按鈕可讓您存取其他執行選項，以便對選取的工作流程執行動作。 您也可以使用&#x200B;**[!UICONTROL File > Actions]**&#x200B;功能表，或以滑鼠右鍵按一下工作流程並選取&#x200B;**[!UICONTROL Actions]**。
 
@@ -57,7 +59,7 @@ ht-degree: 2%
 
 * **[!UICONTROL Purge history]**
 
-   此動作可讓您清除工作流程歷史記錄。 有關詳細資訊，請參閱[清除日誌](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs)。
+   此動作可讓您清除工作流程歷史記錄。 有關詳細資訊，請參閱[清除日誌](monitoring-workflow-execution.md#purging-the-logs)。
 
 * **[!UICONTROL Start in simulation mode]**
 
@@ -81,7 +83,7 @@ ht-degree: 2%
 
    **[!UICONTROL Mass update of selected lines]**&#x200B;和&#x200B;**[!UICONTROL Merge selected lines]**&#x200B;選項是所有&#x200B;**[!UICONTROL Actions]**&#x200B;功能表中可用的通用平台選項。 如需詳細資訊，請參閱本[區段](../../platform/using/updating-data.md)。
 
-## 按一下右鍵菜單{#right-click-menu}
+## 右鍵功能表 {#right-click-menu}
 
 選取一或多個工作流程活動時，您可以按一下滑鼠右鍵，以對您選取的項目採取動作。
 
@@ -91,7 +93,7 @@ ht-degree: 2%
 
 **[!UICONTROL Open]**:此選項可讓您存取活動屬性。
 
-**[!UICONTROL Display logs:]** 此選項可讓您查看所選活動的任務執行日誌。請參閱[顯示日誌](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)。
+**[!UICONTROL Display logs:]** 此選項可讓您查看所選活動的任務執行日誌。請參閱[顯示日誌](monitoring-workflow-execution.md#displaying-logs)。
 
 **[!UICONTROL Execute pending task(s) now:]** 此動作可讓您盡快開始待定任務。
 
@@ -101,7 +103,7 @@ ht-degree: 2%
 
 **[!UICONTROL Copy as bitmap:]** 此選項可讓您擷取所有活動的螢幕擷取畫面。
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** 活動屬性的索引標籤 **[!UICONTROL Advanced]** 中也提供這些選項。在[Execution](../../workflow/using/advanced-parameters.md#execution)中詳細說明。
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** 活動屬性的索引標籤 **[!UICONTROL Advanced]** 中也提供這些選項。在[Execution](advanced-parameters.md#execution)中詳細說明。
 
 **[!UICONTROL Save / Cancel:]** 可讓您儲存或取消對工作流程所做的變更。
 

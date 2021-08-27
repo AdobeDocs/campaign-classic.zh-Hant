@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 387bc362-4064-4181-9385-8e0c3423ba3e
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 設定線上意見調查{#configuring-surveys}
+
+![](../../assets/v7-only.svg)
 
 ## 調查屬性 {#survey-properties}
 

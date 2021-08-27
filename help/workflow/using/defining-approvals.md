@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # 定義核准 {#defining-approvals}
 
-通過批准，操作員可以做出管理工作流的決策或確認其繼續執行。
+![](../../assets/common.svg)
+
+透過核准，操作人員可以決定管理工作流程決策，或確認繼續執行。
 
 訊息會傳送至一組運算子，而工作流程會等待回應再繼續。 工作流程不會停止，且可進行其他操作。 例如，可能有多個同時待批准。
 
@@ -35,7 +37,7 @@ ht-degree: 0%
 >
 >儲存回應後，即無法修改回應。
 
-## 傳送電子郵件{#sending-emails}
+## 傳送電子郵件 {#sending-emails}
 
 可以接收包含到網頁的連結的批准消息，通過該連結可以進行響應。 目標運算子若要接收核准電子郵件，運算子電子郵件地址必須完整。 若非如此，運算子必須使用主控台來回應
 
@@ -45,7 +47,7 @@ ht-degree: 0%
 
 透過此範本建立的傳送會儲存在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**&#x200B;資料夾中。
 
-## 通過控制台{#approval-via-the-console}進行批准
+## 透過主控台核准 {#approval-via-the-console}
 
 在操作中，要核准的元素會顯示在促銷活動控制面板上。
 
@@ -98,13 +100,13 @@ ht-degree: 0%
    return expiration
    ```
 
-## 多個批准{#multiple-approval}
+## 多重核准 {#multiple-approval}
 
 多項核准是一種機制，可讓所有核准運算子回應。 會針對每個回應啟動轉變。
 
 多重核准對投票或調查機制有用。 您可以計算答案，並在指定期間後借由增加截止時間來處理結果。
 
-## 所需權限{#required-rights}
+## 必要權限 {#required-rights}
 
 群組中的運算子必須至少具備下列權利，才能回應核准請求：
 

@@ -5,7 +5,7 @@ description: 了解如何為自訂實作設定事件
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # 配置自訂實施事件 {#events}
+
+![](../../assets/common.svg)
 
 此設定的部分是自訂開發，需要下列項目：
 
@@ -22,9 +24,9 @@ ht-degree: 0%
 
 由於編輯Javascript程式碼需要技術技能，因此若未適當了解，請勿嘗試。
 
-## 處理JavaScript {#events-javascript}中的事件
+## 在JavaScript中處理事件 {#events-javascript}
 
-### JavaScript檔案{#file-js}
+### JavaScript檔案 {#file-js}
 
 管道使用JavaScript函式來處理每則訊息。 此函式由使用者定義。
 
@@ -32,7 +34,7 @@ ht-degree: 0%
 
 範例Javascript檔案為cus:triggers.js。
 
-### JavaScript函式{#function-js}
+### JavaScript函式 {#function-js}
 
 [!DNL pipelined] Javascript必須以特定函式開頭。
 
@@ -50,7 +52,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 編輯Javascript後，應該重新啟動[!DNL pipelined]。
 
-### 觸發資料格式{#trigger-format}
+### 觸發資料格式 {#trigger-format}
 
 [!DNL trigger]資料會以XML格式傳遞至JS函式。
 
@@ -68,7 +70,7 @@ function processPipelineMessage(xmlTrigger) {}
  </trigger>
 ```
 
-### 資料格式擴充{#enrichment-format}
+### 資料格式擴充 {#enrichment-format}
 
 >[!NOTE]
 >
@@ -117,14 +119,14 @@ function processPipelineMessage(xmlTrigger) {}
 
 目前，無法為「測試」或「開發」等不同環境設定不同的佇列。
 
-### 記錄和錯誤處理{#logging-error-handling}
+### 記錄和錯誤處理 {#logging-error-handling}
 
 日誌(如logInfo())被導向到[!DNL pipelined]日誌。 將logError()等錯誤寫入[!DNL pipelined]日誌中，並導致將事件放入重試隊列。 在這種情況下，您應檢查管道記錄。
 在[!DNL pipelined]選項中設定的持續時間內，錯誤消息會重試多次。
 
 為了偵錯和監控目的，完整的觸發程式資料會以XML格式寫入「資料」欄位的觸發程式表格中。 或者，包含觸發程式資料的logInfo()也有相同的用途。
 
-### 正在解析資料{#data-parsing}
+### 剖析資料 {#data-parsing}
 
 此範例Javascript程式碼會剖析擴充功能中的eVar01。
 
@@ -148,7 +150,7 @@ function processPipelineMessage(xmlTrigger)
 剖析時請務必小心，以避免錯誤。
 由於此程式碼用於所有觸發器，因此不需要大部分資料。 因此，若不存在，則可保留空白。
 
-### 儲存觸發器{#storing-triggers-js}
+### 儲存觸發器 {#storing-triggers-js}
 
 >[!NOTE]
 >
@@ -184,13 +186,13 @@ function processPipelineMessage(xmlTrigger)
 
 為了加快處理速度，此指令碼的多個執行緒會同時執行。 程式碼必須是執行緒安全狀態。
 
-## 儲存事件{#store-events}
+## 儲存事件 {#store-events}
 
 >[!NOTE]
 >
 >這是各種可能實施的特定範例。
 
-### 管道事件架構{#pipeline-event-schema}
+### 管道事件結構 {#pipeline-event-schema}
 
 事件儲存在資料庫表中。 行銷活動使用它來鎖定客戶，並使用觸發器讓電子郵件更豐富。
 雖然每個觸發器可以有不同的資料結構，但所有觸發器都可放在單一表格中。
@@ -209,7 +211,7 @@ triggerType欄位標識資料的觸發源。
 | lastModified | 日期時間 | 上次修改時間 | 上次在Adobe中修改事件的時間。 |
 | timeGMT | 日期時間 | 時間戳記 | 在Analytics中產生事件的時間。 |
 
-### 顯示事件{#display-events}
+### 顯示事件 {#display-events}
 
 事件可根據事件結構以簡單的形式顯示。
 
@@ -219,26 +221,26 @@ triggerType欄位標識資料的觸發源。
 
 ![](assets/triggers_7.png)
 
-## 處理事件{#processing-the-events}
+## 處理事件 {#processing-the-events}
 
-### 調解工作流{#reconciliation-workflow}
+### 調解工作流程 {#reconciliation-workflow}
 
 調解是將客戶從Adobe Analytics比對至Adobe Campaign資料庫的程式。 例如，比對的條件可以是shopper_id。
 
 基於效能原因，必須使用工作流在批處理模式下完成匹配。
 頻率必須設定為15分鐘才能優化工作負載。 因此，Adobe Campaign中的事件接收與行銷工作流程處理之間的延遲最多為15分鐘。
 
-### JavaScript {#options-unit-reconciliation}中的單元協調選項
+### JavaScript中的單元協調選項 {#options-unit-reconciliation}
 
 可以在JavaScript中為每個觸發器執行調解查詢。 它對效能的影響更大，而且效果更快。 當需要再活動時，可能需要它。
 
 如果未在shopper_id上設定索引，則實施可能會很困難。 如果條件位於與市場營銷伺服器不同的單獨的資料庫伺服器上，則它使用資料庫連結，這會導致效能不佳。
 
-### 清除工作流{#purge-workflow}
+### 清除工作流 {#purge-workflow}
 
 觸發器會在一小時內處理。 音量可以是每小時100萬個觸發器。 它說明了清除工作流程必須到位的原因。 清除每天執行一次，並刪除超過三天的所有觸發器。
 
-### 促銷活動工作流程{#campaign-workflow}
+### 行銷活動工作流程 {#campaign-workflow}
 
 觸發促銷活動工作流程通常類似於已使用的其他循環促銷活動。
 例如，它可以從觸發器上的查詢開始，在最後一天尋找特定事件。 該目標用於傳送電子郵件。 擴充功能或資料可能來自觸發器。 行銷可安全地使用，因為不需要設定。

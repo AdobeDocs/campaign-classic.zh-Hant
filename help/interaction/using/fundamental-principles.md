@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 基本原則{#fundamental-principles}
 
-## 部署環境{#deploying-environments}
+![](../../assets/v7-only.svg)
+
+## 部署環境 {#deploying-environments}
 
 管理選件時，每個目標維度會使用兩個環境：
 
@@ -31,7 +33,7 @@ ht-degree: 1%
 
 ![](assets/architecture_interaction1.png)
 
-## 交互類型和聯繫方法{#interaction-types-and-contact-methods}
+## 互動類型與聯絡方法 {#interaction-types-and-contact-methods}
 
 互動有兩種可能的類型：入站互動（由聯絡人起始）和出站互動（由優惠方案製作人起始）。
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 安裝 Campaign Classic 內建套件{#installing-campaign-standard-packages}
+
+![](../../assets/v7-only.svg)
 
 ## 關於內建套件 {#campaign-standard-packages}
 
@@ -149,7 +151,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 回應管理員<br /> </td> 
-   <td> 衡量營銷活動的成功和盈利能力，或為所有通信渠道提供建議。  選填。<a href="../../campaign/using/about-response-manager.md">更多詳情</a> <br /> </td> 
+   <td> 衡量營銷活動的成功和盈利能力，或為所有通信渠道提供建議。  選填。<a href="../../response/using/about-response-manager.md">更多詳情</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -159,7 +161,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 行銷活動最佳化<br /> </td> 
-   <td> 控制、篩選及監控傳送的傳送，讓傳送的訊息最符合客戶的需求和期望，並符合公司通訊原則。 選填。<a href="../../campaign/using/about-campaign-typologies.md">更多詳情</a> <br /> </td> 
+   <td> 控制、篩選及監控傳送的傳送，讓傳送的訊息最符合客戶的需求和期望，並符合公司通訊原則。 選填。<a href="../../campaign-opt/using/about-campaign-typologies.md">更多詳情</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -179,7 +181,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 中央/地方行銷（分散式行銷）<br /> </td> 
-   <td> 在中央實體（總部、行銷部門等）之間實施合作行銷活動 和地方實體（銷售點、地區代理等）。 選填。<a href="../../campaign/using/about-distributed-marketing.md">更多詳情</a><br /> </td> 
+   <td> 在中央實體（總部、行銷部門等）之間實施合作行銷活動 和地方實體（銷售點、地區代理等）。 選填。<a href="../../distributed/using/about-distributed-marketing.md">更多詳情</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 

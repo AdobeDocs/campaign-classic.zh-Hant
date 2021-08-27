@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: bdc19e80744643097463e4e721b05a2ac8e51a2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 34%
 
 ---
 
-# 使用Adobe Campaign explorer {#using-adobe-campaign-explorer}
+# 使用Adobe Campaign Explorer {#using-adobe-campaign-explorer}
+
+![](../../assets/common.svg)
 
 可透過工具列圖示存取 Adobe Campaign 探索器。使用工具列圖示，您可以存取 Adobe Campaign、所有 Adobe Campaign 功能、設定畫面以及部分平台元素的更詳細視圖。
 
@@ -23,7 +25,7 @@ ht-degree: 34%
 
 **1 - 樹狀結構清單**：您可以個人化樹狀結構的內容 (新增、移動或刪除節點)。此程序僅適用於資深使用者。有關詳細資訊，請參閱[此部分](#about-navigation-hierarchy)。)
 
-**2 - 清單**：您可以篩選清單、執行搜尋、新增資訊或排序資料。[瞭解更多](adobe-campaign-ui-lists.md)。
+**2 - 清單**：您可以篩選清單、執行搜尋、新增資訊或排序資料。[深入瞭解](adobe-campaign-ui-lists.md)。
 
 **3 - 詳情**：您可以顯示所選元素的詳細資訊。透過右上角的圖示，您可以全螢幕顯示這項資訊。
 

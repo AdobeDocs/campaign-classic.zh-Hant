@@ -5,7 +5,7 @@ description: 本節介紹隨收件箱呈現包安裝的技術工作流
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 
 
 # 收件箱呈現(IR){#inbox-rendering}
+
+![](../../assets/common.svg)
 
 下面詳述的工作流預設與&#x200B;**收件箱呈現(IR)**&#x200B;模組一起安裝。 有關收件箱呈現的詳細資訊，請參閱此[節](../../delivery/using/inbox-rendering.md)。
 

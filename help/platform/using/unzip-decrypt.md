@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # 解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔案）](../../workflow/using/data-loading--file-.md)活動中讀取資料之前，您可以定義要解壓縮或解密檔案的預先處理。
 

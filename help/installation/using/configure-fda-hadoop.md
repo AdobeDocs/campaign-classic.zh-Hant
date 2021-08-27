@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
 
 ---
 
-# 配置對Hadoop{#configure-access-to-hadoop}的訪問
+# 配置訪問Hadoop {#configure-access-to-hadoop}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign **同盟資料存取**(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定存取Hadoop。
 
@@ -37,13 +39,13 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您接著可以設定[!DNL Hadoop]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#hadoop-external)。
 
-## Hadoop外部帳戶{#hadoop-external}
+## Hadoop外部帳戶 {#hadoop-external}
 
 [!DNL Hadoop]外部帳戶可讓您將Campaign執行個體連結至Hadoop外部資料庫。
 
 1. 在Campaign Classic中，設定您的[!DNL Hadoop]外部帳戶。 從&#x200B;**[!UICONTROL Explorer]**&#x200B;中，按一下&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
-1. 按一下 **[!UICONTROL New]**。
+1. 按一下&#x200B;**[!UICONTROL New]**。
 
 1. 選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
@@ -100,7 +102,7 @@ ht-degree: 1%
 
 1. 建立Hadoop外部帳戶，如[此部分](#hadoop-external)中所述。
 
-### Hadoop2.1 for Linux {#for-linux}
+### Hadoop2.1 Linux {#for-linux}
 
 1. 安裝Linux適用的unixodbc。
 

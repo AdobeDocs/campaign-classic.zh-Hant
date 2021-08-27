@@ -2,18 +2,20 @@
 product: campaign
 title: 開始升級
 description: 瞭解更多 Campaign Classic 升級
-feature: 概觀
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '412'
 ht-degree: 100%
 
 ---
 
 # 開始升級{#rn-overview}
+
+![](../../assets/v7-only.svg)
 
 定期更新 Adobe Campaign。每年平均發行二或三個具有新功能、改善和修正的次要版本。此外，我們定期發行只累積修正的版本編號。
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 模擬範圍{#simulation-scope}
 
-## 範圍{#definition-of-the-scope}的定義
+![](../../assets/v7-only.svg)
+
+## 範圍的定義 {#definition-of-the-scope}
 
 開啟&#x200B;**[!UICONTROL Scope]**&#x200B;標籤以選擇您的設定。
 
@@ -42,7 +44,7 @@ ht-degree: 2%
 >
 >必須指定聯繫日期。 這可讓互動引擎對所選環境或類別中的選件進行排序。 如果未設定任何日期，則模擬會引發錯誤。
 
-## 新增報表軸{#adding-reporting-axes}
+## 新增報表軸 {#adding-reporting-axes}
 
 您可以透過&#x200B;**[!UICONTROL Calculations]**&#x200B;標籤在目標或選件本身上新增報表軸，以增強模擬分析。
 

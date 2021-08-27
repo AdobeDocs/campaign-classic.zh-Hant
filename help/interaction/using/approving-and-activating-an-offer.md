@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # 核准和啟用優惠方案{#approving-and-activating-an-offer}
 
+![](../../assets/v7-only.svg)
+
 優惠方案內容完成後，您必須核准該優惠方案，才能複製至即時環境並傳送。 核准與優惠方案內容及其資格有關。
 
 優惠方案控制面板上的橫幅會告訴您是否需要完成核准週期。
 
 ![](assets/offer_validate_001.png)
 
-## 核准優惠方案內容{#approving-offer-content}
+## 核准優惠方案內容 {#approving-offer-content}
 
 核准優惠方案內容表示要選取要在即時環境中使用的表示法。
 
@@ -51,7 +53,7 @@ ht-degree: 2%
    >
    >**[!UICONTROL Content approved]**&#x200B;提及並不表示所有優惠方案表示皆已啟用且已核准。 它表示內容核准程式已完成，無論所有選件是否已啟用/核准。
 
-## 批准優惠方案資格{#approving-offer-eligibility}
+## 核准優惠方案資格 {#approving-offer-eligibility}
 
 核准優惠方案資格是指接受或拒絕優惠方案權重，以及優惠方案中也設定或繼承自父類別中建立之規則的適用性規則。
 
@@ -83,7 +85,7 @@ ht-degree: 2%
 
    ![](assets/offer_validate_010.png)
 
-## 核准追蹤{#approval-tracking}
+## 核准追蹤 {#approval-tracking}
 
 優惠方案控制面板上提供核准追蹤功能。 按一下&#x200B;**[!UICONTROL Hide/display logs]**&#x200B;以訪問它。
 
@@ -93,7 +95,7 @@ ht-degree: 2%
 >
 >優惠方案的&#x200B;**[!UICONTROL Audit]**&#x200B;標籤中也提供追蹤功能，內含審核者意見的詳細資訊。
 
-## 重新啟動批准{#restart-the-approval}
+## 重新啟動核准 {#restart-the-approval}
 
 核准一經啟動，即可重新啟動。 要執行此操作，請遵循下列指示：
 
@@ -103,7 +105,7 @@ ht-degree: 2%
 
 ![](assets/offer_validate_013.png)
 
-## 發佈選件{#publishing-the-offer}
+## 發佈優惠方案 {#publishing-the-offer}
 
 一旦優惠方案的內容和資格皆獲核准後，優惠方案就會由工作流程發佈，該工作流程會針對每個已完成核准週期的優惠方案自動執行。 **[!UICONTROL Offer notification]**&#x200B;工作流程也每小時執行一次，以便從設計環境同步選件目錄中包含的空格和類別（如有必要）至即時環境。
 
@@ -115,7 +117,7 @@ ht-degree: 2%
 
 ![](assets/offer_golive_002.png)
 
-## 停用選件{#disabling-an-offer}
+## 停用選件 {#disabling-an-offer}
 
 優惠方案一經核准，即可加以停用。
 

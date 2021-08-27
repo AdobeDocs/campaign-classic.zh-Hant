@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 合併連結{#and-join}
+
+![](../../assets/common.svg)
 
 只有在啟動所有入站轉變（即完成所有先前的活動）時，連接才會觸發其出站轉變。 這可讓您在繼續執行工作流程之前，確定某些活動已完成。
 
@@ -31,4 +33,4 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->若為&#x200B;**AND-join**&#x200B;類型活動，會合併事件變數，但如果同一個變數定義兩次，則會發生衝突，值仍未確定。 如需詳細資訊，請參閱[本章節](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
+>若為&#x200B;**AND-join**&#x200B;類型活動，會合併事件變數，但如果同一個變數定義兩次，則會發生衝突，值仍未確定。 如需詳細資訊，請參閱[本章節](javascript-scripts-and-templates.md#event-variables)。

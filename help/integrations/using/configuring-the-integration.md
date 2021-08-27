@@ -5,7 +5,7 @@ description: 了解如何設定Campaign-AEM整合
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 4%
@@ -14,7 +14,9 @@ ht-degree: 4%
 
 # 配置整合{#configuring-the-integration}
 
-## 在Adobe Campaign中進行配置{#configuring-in-adobe-campaign}
+![](../../assets/common.svg)
+
+## 在Adobe Campaign中設定 {#configuring-in-adobe-campaign}
 
 若要同時使用這兩個解決方案，您必須將它們設定為彼此連線。
 
@@ -26,7 +28,7 @@ ht-degree: 4%
 
 用於進階設定，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
 
-### 在Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}中安裝AEM整合套件
+### 在Adobe Campaign中安裝AEM整合套件 {#install-the-aem-integration-package-in-adobe-campaign}
 
 首先需要安裝&#x200B;**[!UICONTROL AEM integration]**&#x200B;包。
 
@@ -42,7 +44,7 @@ ht-degree: 4%
 
 1. 在下一個窗口中，按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕以開始安裝軟體包。 安裝完成後，關閉視窗。
 
-### 為AEM運算子{#configure-the-security-zone-for-aem-operator}配置安全區域
+### 為AEM運算子設定安全區域 {#configure-the-security-zone-for-aem-operator}
 
 **[!UICONTROL AEM integration]**&#x200B;套件會在Campaign中設定&#x200B;**[!UICONTROL aemserver]**&#x200B;運算子。 此運算子將用來將Adobe Experience Manager伺服器連線至Adobe Campaign。
 
@@ -59,7 +61,7 @@ ht-degree: 4%
 
    這可讓Adobe Experience Manager透過登入/密碼連線Adobe Campaign。
 
-### 配置外部帳戶{#configure-the-external-account}
+### 設定外部帳戶 {#configure-the-external-account}
 
 **[!UICONTROL AEM integration]**&#x200B;套件已建立Adobe Experience Cloud的外部帳戶。 您現在需要將其設定為與Adobe Experience Manager執行個體連線。
 
@@ -86,7 +88,7 @@ ht-degree: 4%
 1. 勾選&#x200B;**[!UICONTROL Enabled]**&#x200B;方塊。
 1. 按一下 **[!UICONTROL Save]** 按鈕。
 
-### 配置AEM資源篩選{#configure-aem-resources-filtering}
+### 設定AEM資源篩選 {#configure-aem-resources-filtering}
 
 **AEMResourceTypeFilter**&#x200B;選項用於篩選可在Adobe Campaign中使用的Experience Manager資源類型。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的Experience Manager內容。
 
@@ -109,7 +111,7 @@ ht-degree: 4%
 
    ![](assets/aem_config_5.png)
 
-## 在Adobe Experience Manager中進行配置{#configuring-in-adobe-experience-manager}
+## 在Adobe Experience Manager中設定 {#configuring-in-adobe-experience-manager}
 
 請依照下列步驟，開始在Adobe Experience Manager中進行設定：
 

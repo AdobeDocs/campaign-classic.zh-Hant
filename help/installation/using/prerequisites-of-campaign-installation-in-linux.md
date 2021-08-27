@@ -6,16 +6,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 1%
 
 ---
 
-# 在Linux{#prerequisites-of-campaign-installation-in-linux}上安裝Campaign的必要條件
+# 在Linux上安裝Campaign的必要條件{#prerequisites-of-campaign-installation-in-linux}
 
-## 軟體必備條件{#software-prerequisites}
+![](../../assets/v7-only.svg)
+
+## 軟體必備條件 {#software-prerequisites}
 
 本節詳細說明安裝Adobe Campaign前所需的初步設定步驟。
 
@@ -96,7 +98,7 @@ echo 0 >/selinux/enforce
 SELINUX=disabled
 ```
 
-### MTA統計資料字型{#fonts-for-mta-statistics}
+### MTA統計資訊字型 {#fonts-for-mta-statistics}
 
 為了正確顯示MTA統計資料報表(nms/fra/jsp/stat.jsp)，請新增字型。
 
@@ -112,7 +114,7 @@ aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
 ```
 
-### 日文實例的字型{#fonts-for-japanese-instances}
+### 日文實例的字型 {#fonts-for-japanese-instances}
 
 日文執行個體需要特定字元的字型，才能將報表匯出為PDF格式。
 
@@ -144,7 +146,7 @@ yum install ipa-gothic-fonts ipa-mincho-fonts
    apt-get install fonts-ipafont
    ```
 
-### 安裝CentOS適用的LibreOffice {#installing-libreoffice-for-centos}
+### 安裝CentOS專用的LibreOffice {#installing-libreoffice-for-centos}
 
 CentOS需要下列配置：
 
@@ -160,7 +162,7 @@ CentOS需要下列配置：
    yum install ipa-gothic-fonts ipa-mincho-fonts
    ```
 
-## 資料庫訪問層{#database-access-layers}
+## 資料庫訪問層 {#database-access-layers}
 
 您使用的資料庫引擎的存取層必須安裝在伺服器上，並可透過Adobe Campaign帳戶存取。 版本和安裝模式可能會因所使用的資料庫引擎而異。
 

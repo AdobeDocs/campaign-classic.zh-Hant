@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 建立優惠方案類別{#creating-offer-categories}
+
+![](../../assets/v7-only.svg)
 
 選件類別的建立只能在&#x200B;**[!UICONTROL Design]**&#x200B;環境中進行。 核准所建立/修改的選件時，系統會自動部署在&#x200B;**[!UICONTROL Live]**&#x200B;環境中（即可供使用）。 依預設，**[!UICONTROL Design]**&#x200B;環境包含接收所有選件的類別。 可以建立子類別，將階層新增至目錄選件。
 

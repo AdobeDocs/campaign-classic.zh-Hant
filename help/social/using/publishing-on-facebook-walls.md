@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 在 Facebook 塗鴉牆上發佈{#publishing-on-facebook-walls}
+
+![](../../assets/v7-only.svg)
 
 為了讓Adobe Campaign能夠將出版物傳送至Facebook塗鴉牆，您需要將這些頁面的寫入存取權委派給Adobe Campaign。 這包括下列設定步驟：
 
@@ -33,7 +35,7 @@ ht-degree: 2%
 
    ![](assets/social_diagram_fb_external_account.png)
 
-## 建立測試Facebook頁面{#creating-a-test-facebook-page}
+## 建立測試Facebook頁面 {#creating-a-test-facebook-page}
 
 建議您建立私人Facebook頁面以傳送發佈校樣(如需詳細資訊，請參閱[傳送校樣](../../social/using/publishing-on-facebook.md#sending-the-proof)。
 
@@ -74,7 +76,7 @@ ht-degree: 2%
 
    ![](assets/social_create_facebook_app_004.png)
 
-## 委派對Adobe Campaign的寫入存取{#delegating-write-access-to-adobe-campaign}
+## 委派寫入存取權至Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 若要委派Adobe Campaign的寫入存取權以張貼至頁面的塗鴉牆上，您必須輸入先前建立之Facebook應用程式的參數。
 
@@ -143,7 +145,7 @@ ht-degree: 2%
 
 **[!UICONTROL Synchronization of Facebook pages]**&#x200B;工作流程會同步由Facebook帳戶管理的所有頁面，讓您透過Adobe Campaign直接張貼在其塗鴉牆上。 有關詳細資訊，請參閱[同步Facebook頁面](#synchronizing-facebook-pages)。
 
-## 同步Facebook頁面{#synchronizing-facebook-pages}
+## 同步Facebook頁面 {#synchronizing-facebook-pages}
 
 透過&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**&#x200B;節點存取的&#x200B;**[!UICONTROL Synchronization of Facebook pages]**&#x200B;工作流程可讓您同步(在Adobe Campaign中)先前設定之Facebook帳戶的頁面。 預設情況下，此工作流配置為每天或每當管理員按一下服務配置螢幕中的&#x200B;**[!UICONTROL Request an authorization from the application]**&#x200B;連結時運行一次(請參閱[將寫訪問權委派到Adobe Campaign](#delegating-write-access-to-adobe-campaign))。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 發佈範本{#publication-templates}
+
+![](../../assets/common.svg)
 
 ## 關於發佈範本 {#about-publication-templates}
 

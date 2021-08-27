@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # 使用案例{#use-cases}
 
-## 分析母體{#analyzing-a-population}
+![](../../assets/common.svg)
+
+## 分析人口 {#analyzing-a-population}
 
 以下範例可讓您使用描述性分析精靈，探索由一組電子報鎖定的母體。
 
 實作步驟於下文詳細說明，而本章其他章節則提供選項和說明的完整清單。
 
-### 識別要分析{#identifying-the-population-to-analyze}的母體
+### 識別要分析的人口 {#identifying-the-population-to-analyze}
 
 在此範例中，我們想探索&#x200B;**Newsletters**&#x200B;資料夾中所包含傳送的目標母體。
 
@@ -29,7 +31,7 @@ ht-degree: 0%
 
 ![](assets/reporting_quick_start_1.png)
 
-### 選擇分析類型{#selecting-a-type-of-analysis}
+### 選取分析類型 {#selecting-a-type-of-analysis}
 
 在助理的第一個步驟中，您可以選取要使用的描述性分析範本。 依預設，Adobe Campaign提供兩個範本：**[!UICONTROL Qualitative distribution]**&#x200B;和&#x200B;**[!UICONTROL Quantitative distribution]**。 有關詳細資訊，請參閱[設定定性分佈範本](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template)區段。 各種呈現在[關於描述性分析](../../reporting/using/about-descriptive-analysis.md)部分。
 
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
-### 選擇要顯示{#selecting-the-variables-to-display}的變數
+### 選取要顯示的變數 {#selecting-the-variables-to-display}
 
 下一個步驟可讓您選取要顯示在表格中的資料。
 
@@ -57,7 +59,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quickstart_step_2b.png)
 
-### 定義顯示格式{#defining-the-display-format}
+### 定義顯示格式 {#defining-the-display-format}
 
 精靈的下一個步驟可讓您選取要產生的圖表類型。
 
@@ -67,7 +69,7 @@ ht-degree: 0%
 
 在[分析報表圖表選項](../../reporting/using/processing-a-report.md#analysis-report-chart-options)部分中詳細說明了不同圖形的可能配置。
 
-### 配置統計值以計算{#configuring-the-statistic-to-calculate}
+### 設定統計值以計算 {#configuring-the-statistic-to-calculate}
 
 然後指定要套用至收集資料的計算。 依預設，描述性分析精靈會執行值的簡單計數。
 
@@ -77,7 +79,7 @@ ht-degree: 0%
 
 若要建立新的統計資料，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。 有關詳細資訊，請參閱[統計計算](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation)。
 
-### 檢視及使用報表{#viewing-and-using-the-report}
+### 檢視及使用報表 {#viewing-and-using-the-report}
 
 精靈的最後一個步驟會顯示表格和圖表。
 
@@ -85,9 +87,9 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quickstart_step_5.png)
 
-## 定性資料分析{#qualitative-data-analysis}
+## 定性資料分析 {#qualitative-data-analysis}
 
-### 圖表顯示範例{#example-of-a-chart-display}
+### 圖表顯示範例 {#example-of-a-chart-display}
 
 **目標**:生成潛在客戶或客戶所在位置的分析報告。
 
@@ -113,7 +115,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_06png.png)
 
-### 表格顯示範例{#example-of-a-table-display}
+### 表格顯示範例 {#example-of-a-table-display}
 
 **目標**:分析公司電子郵件網域。
 
@@ -150,7 +152,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_07a.png)
 
-## 定量資料分析{#quantitative-data-analysis}
+## 定量資料分析 {#quantitative-data-analysis}
 
 **目標**:生成收件年齡的量化分析報告
 
@@ -172,7 +174,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_013.png)
 
-## 在工作流{#analyzing-a-transition-target-in-a-workflow}中分析轉變目標
+## 在工作流程中分析轉變目標 {#analyzing-a-transition-target-in-a-workflow}
 
 **目標**:生成目標工作流母體的報告
 
@@ -186,7 +188,7 @@ ht-degree: 0%
 
    其餘的設定與所有描述性分析的設定相同。
 
-### Target分析建議{#target-analyze-recommendations}
+### Target分析建議 {#target-analyze-recommendations}
 
 在工作流程中分析母體時，母體仍須存在於轉變中。 如果啟動工作流程，則可能會從轉變中清除關於母體的結果。 若要執行分析，您可以執行下列任一動作：
 
@@ -207,7 +209,7 @@ ht-degree: 0%
 >**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;選項只能在開發階段使用，不能用於生產環境。\
 >當達到保留期限時，系統會自動清除臨時人口。 此截止日期在工作流屬性&#x200B;**[!UICONTROL Execution]**&#x200B;頁簽中指定。
 
-## 分析收件者追蹤記錄{#analyzing-recipient-tracking-logs}
+## 分析收件者追蹤記錄 {#analyzing-recipient-tracking-logs}
 
 描述性分析嚮導可以生成其他工作表的報告。 這表示您可以建立專用報表來分析傳送記錄。
 
@@ -269,7 +271,7 @@ ht-degree: 0%
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
-## 分析傳送排除記錄{#analyzing-delivery-exclusion-logs}
+## 分析傳送排除記錄檔 {#analyzing-delivery-exclusion-logs}
 
 如果分析與傳送有關，您可以分析排除的母體。 若要這麼做，請選取要分析的傳送，然後按一下滑鼠右鍵以存取&#x200B;**[!UICONTROL Action > Explore exclusions]**&#x200B;功能表。
 

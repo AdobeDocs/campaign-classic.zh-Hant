@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 # 追蹤疑難排解 {#tracking-troubleshooting}
 
+![](../../assets/common.svg)
+
 在本節中，您會在Adobe Campaign Classic中找到與追蹤設定和實作相關的常見問題。
 
-## 追蹤工作流程失敗{#tracking-workflow-failing}
+## 追蹤工作流程失敗 {#tracking-workflow-failing}
 
 我的追蹤工作流程失敗，如何偵測追蹤檔案中損毀的行？
 
@@ -79,7 +81,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 然後，您可以停止追蹤工作流程、刪除損毀的行並重新啟動工作流程。
 
-## 追蹤連結間歇性失敗{#tracking-links-fail-intermittently}
+## 追蹤連結間歇性失敗 {#tracking-links-fail-intermittently}
 
 嘗試存取追蹤連結時，會顯示下列訊息：
 
@@ -112,7 +114,7 @@ $ grep -Rn 50x000000000FD7EC86
 
    他們應至少擁有644個權限，讓Apache可以讀取追蹤url，以重新導向要求的連結。
 
-## 是否更新NmsTracking_Pointer選項？{#updating-option}
+## 是否更新NmsTracking_Pointer選項？ {#updating-option}
 
 更新NmsTracking_Pointer選項時，請遵循下列步驟：
 
@@ -203,15 +205,15 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 ```
 
-## 追蹤記錄擷取速度太慢{#slow-retrieval}
+## 追蹤記錄擷取速度太慢 {#slow-retrieval}
 
-當例項未直接擷取追蹤記錄，但從遠距Adobe Campaign Classic伺服器擷取記錄時，會透過GetTrackingLogs SOAP呼叫（在remoteTracking結構中定義）擷取記錄。
+當例項不會直接擷取追蹤記錄，但從遠距Adobe Campaign Classic伺服器擷取記錄時，會透過GetTrackingLogs SOAP呼叫（在remoteTracking結構中定義）擷取記錄。
 
 serverConf.xml檔案中的選項可讓您設定透過此方法一次擷取的記錄數：logCountPerRequest。
 
 logCountPerRequest的預設值為1000，在某些情況下，它可能證明為太小。 接受的值必須介於0和10.000之間。
 
-## 無法將跟蹤日誌連結到收件者{#link-recipients}
+## 無法將跟蹤日誌連結到收件人 {#link-recipients}
 
 在Adobe Campaign Classic中，就收件者結構描述與broadlog/trackinglog結構描述而言，目標對應應是唯一的。
 

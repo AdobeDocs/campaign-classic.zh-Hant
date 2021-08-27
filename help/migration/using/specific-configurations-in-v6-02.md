@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7e8f8488-f3ef-4b64-9981-335d67caf372
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # v6.02 中的特定設定{#specific-configurations-in-v6-02}
 
+![](../../assets/v7-only.svg)
+
 下節詳細說明從v6.02遷移時需要的其他配置。您還應配置[常規配置](../../migration/using/general-configurations.md)部分中詳述的設定。
 
-## 網站應用程式{#web-applications}
+## 網站應用程式 {#web-applications}
 
 如果您要從v6.02移轉，可能會出現關於概述類型Web應用程式的錯誤記錄。 錯誤訊息範例：
 
@@ -37,11 +39,11 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 如果您修改了這些Web應用程式，並希望在v7中繼續使用它們，則必須在不同的安全區域中激活&#x200B;**allowSQLInjection**&#x200B;選項，然後重新啟動升級後。 有關詳細資訊，請參閱[SQLData](../../migration/using/general-configurations.md#sqldata)部分。
 
-## 用戶友好性：首頁和導航{#user-friendliness--home-page-and-navigation}
+## 用戶友好性：首頁和導覽 {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->如果要繼續使用v6.02 overview-type Web應用程式，必須在升級後之前，在不同的安全區域中激活&#x200B;**allowSQLInjeption**&#x200B;選項。 請參閱[Web應用程式](#web-applications)。
+>如果要繼續使用v6.02 overview-type Web應用程式，必須在升級後之前，在不同的安全區域中激活&#x200B;**allowSQLInjept**&#x200B;選項。 請參閱[Web應用程式](#web-applications)。
 
 從6.02版移轉後，Adobe Campaign v6.02首頁不再顯示，但仍可存取，且與Adobe Campaign v7相容。
 
@@ -73,7 +75,7 @@ sessionTokenOnly="true"
 >
 >請記得中斷連線，然後重新連線主控台以註冊修改。
 
-## 消息中心{#message-center}
+## 訊息中心 {#message-center}
 
 在Message Center控制實例遷移後，必須重新發佈交易式消息模板，以便它們正常工作。
 

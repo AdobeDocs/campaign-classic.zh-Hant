@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 監視傳遞能力{#monitoring-deliverability}
+
+![](../../assets/common.svg)
 
 以下提供Adobe Campaign所提供不同監控工具的詳細資訊，以及運用Adobe Campaign所提供功能監控平台傳遞能力的其他指引。
 

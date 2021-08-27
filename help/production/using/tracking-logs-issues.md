@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
@@ -14,6 +14,8 @@ ht-degree: 13%
 ---
 
 # 追蹤記錄檔問題{#tracking-logs-issues}
+
+![](../../assets/v7-only.svg)
 
 追蹤記錄檔無法轉送的原因有多種。 建議您檢查下列資訊：
 

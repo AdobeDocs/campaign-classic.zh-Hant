@@ -6,21 +6,23 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # 條件式內容{#conditional-content}
+
+![](../../assets/common.svg)
 
 例如，您可以透過設定條件式內容欄位，根據收件者的設定檔建立動態個人化。 當滿足特定條件時，將替代文字塊和/或影像。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#conditionnal-content-video)
 
 
-## 在電子郵件{#using-conditions-in-an-email}中使用條件
+## 在電子郵件中使用條件 {#using-conditions-in-an-email}
 
 在以下範例中，您將學習如何建立訊息，並根據收件者的性別和興趣，以動態方式個人化。
 
@@ -75,7 +77,7 @@ ht-degree: 4%
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
-## 建立多語言電子郵件{#creating-multilingual-email}
+## 建立多語言電子郵件 {#creating-multilingual-email}
 
 在以下範例中，您將學習如何建立多語言電子郵件。 內容會根據收件者的偏好語言，以一種或另一種語言顯示。
 
@@ -107,9 +109,9 @@ ht-degree: 4%
    >
    >由於電子郵件內容中未定義任何替代版本，因此請務必在傳送電子郵件前篩選目標母體。
 
-## 教學課程影片{#conditionnal-content-video}
+## 教學課程影片 {#conditionnal-content-video}
 
-透過多語言電子報範例，了解如何將條件式內容新增至傳遞。
+此影片以多語言電子報為範例，示範如何新增條件式內容至傳遞。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 

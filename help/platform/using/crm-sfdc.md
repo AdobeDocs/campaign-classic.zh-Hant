@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 連接Campaign和Salesforce.com{#connect-to-sfdc}
 
+![](../../assets/common.svg)
+
 在本頁面中，您將學習如何將Campaign Classic連接到&#x200B;**Salesforce**。
 
-資料同步是透過專用的工作流程活動執行。 [瞭解更多](../../platform/using/crm-data-sync.md)。
+資料同步是透過專用的工作流程活動執行。 [深入瞭解](../../platform/using/crm-data-sync.md)。
 
 
 外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。

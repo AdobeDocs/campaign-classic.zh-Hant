@@ -5,7 +5,7 @@ description: 開始使用Adobe Experience Cloud Triggers實作
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 11%
@@ -13,6 +13,8 @@ ht-degree: 11%
 ---
 
 # 開始使用Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
+
+![](../../assets/common.svg)
 
 [!DNL Triggers] 是Adobe Campaign與Adobe Analytics之間，使用管道的整合。管道會從您的網站擷取使用者的動作或觸發器。 放棄購買是觸發的範例。 觸發器會在Adobe Campaign中處理，以近乎即時傳送電子郵件。
 
@@ -25,7 +27,7 @@ ht-degree: 11%
 它可提供更靈活的整合，因為設定極低，不涉及協力廠商。
 它也支援高流量，而不會影響行銷活動的效能。 例如，整合每小時可處理100萬個觸發器。
 
-## [!DNL Triggers] 架構  {#triggers-architecture}
+## [!DNL Triggers] 架構 {#triggers-architecture}
 
 [!DNL pipelined]程式一律在Adobe Campaign行銷伺服器上執行。 它會連線至管道、擷取事件並立即處理。
 

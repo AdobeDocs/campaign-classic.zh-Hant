@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 1%
 
 ---
 
-# 使用多對多關係{#querying-using-a-many-to-many-relationship}進行查詢
+# 使用多對多關係進行查詢 {#querying-using-a-many-to-many-relationship}
+
+![](../../assets/common.svg)
 
 在此範例中，我們想要復原過去7天未聯絡的收件者。 此查詢涉及所有傳送。
 

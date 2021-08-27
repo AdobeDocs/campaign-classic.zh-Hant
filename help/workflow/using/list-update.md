@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 清單更新{#list-update}
+
+![](../../assets/common.svg)
 
 **清單更新**&#x200B;活動將轉變中指定的母體儲存在收件者清單中。
 
@@ -35,13 +37,13 @@ ht-degree: 2%
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何從影片中的檔案總管建立收件者清單](#video)
 
-## 範例：清單更新{#example--list-update}
+## 範例：清單更新 {#example--list-update}
 
 在下列範例中，清單更新活動會依循查詢，鎖定居住在法國超過30歲的男性。 清單最初將從查詢結果中建立。 然後，每當從工作流程啟動時，就會更新它。 例如，它可定期用於促銷活動的目標促銷優惠。
 
 1. 直接在查詢後新增&#x200B;**[!UICONTROL list update activity]**，然後開啟它以進行編輯。
 
-   有關在工作流中建立查詢的詳細資訊，請參閱[Query](../../workflow/using/query.md)。
+   有關在工作流中建立查詢的詳細資訊，請參閱[Query](query.md)。
 
 1. 您可以為活動選取標籤。
 1. 選取&#x200B;**[!UICONTROL Create the list if necessary (Calculated name)]**&#x200B;選項，顯示第一個工作流程執行完畢後將建立清單，然後以下列執行更新。
@@ -56,14 +58,14 @@ ht-degree: 2%
 
    然後會建立或更新相符的收件者清單。
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * tableName
 * 綱要
 
 識別要儲存在群組中的母體。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * groupId:群組識別碼。
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 實施步驟{#implementation-steps}
 
-## 配置交互{#configuring-interaction}
+![](../../assets/v7-only.svg)
+
+## 設定互動 {#configuring-interaction}
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ ht-degree: 3%
    >
    >在入站Web頻道上建立空間時，也需要在將顯示選件的網站上進行設定。
 
-## 管理優惠方案目錄{#managing-the-offer-catalog-}
+## 管理優惠方案目錄 {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
@@ -48,7 +50,7 @@ ht-degree: 3%
 1. 在設計環境中建立優惠方案。 如需詳細資訊，請參閱[建立選件](../../interaction/using/creating-an-offer.md)。
 1. 在一或多個空間核准和發佈優惠方案，以便供傳遞管理員在即時環境中使用。 如需詳細資訊，請參閱[核准和啟用優惠方案](../../interaction/using/approving-and-activating-an-offer.md)。
 
-## 使用優惠方案目錄{#using-the-offer-catalog-}
+## 使用優惠方案目錄 {#using-the-offer-catalog-}
 
 >[!NOTE]
 >

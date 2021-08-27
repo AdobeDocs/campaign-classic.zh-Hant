@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 個人化區塊{#personalization-blocks}
+
+![](../../assets/common.svg)
 
 個人化區塊是動態、個人化的區塊，並包含您可插入至傳送的特定轉譯。 例如，您可以新增標誌、問候訊息或鏡像頁面的連結。 請參閱[插入個人化區塊](#inserting-personalization-blocks)。
 
@@ -25,7 +27,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->個人化區塊也可從&#x200B;**[!UICONTROL Digital Content Editor (DCE)]**&#x200B;取得。 有關詳細資訊，請參見[此頁面](../../web/using/editing-content.md#inserting-a-personalization-block)。
+>個人化區塊也可從&#x200B;**[!UICONTROL Digital Content Editor (DCE)]**&#x200B;取得。 如需詳細資訊，請參閱[此頁面](../../web/using/editing-content.md#inserting-a-personalization-block)。
 
 ## 插入個人化區塊 {#inserting-personalization-blocks}
 

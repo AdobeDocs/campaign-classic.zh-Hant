@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 使用自訂日期欄位擴充電子郵件{#email-enrichment-with-custom-date-fields}
+
+![](../../assets/common.svg)
 
 在此範例中，我們想傳送包含自訂資料欄位的電子郵件給將於本月慶祝生日的收件者。 電子郵件將包含優惠券，其有效期限為生日前後一週。
 
@@ -107,7 +109,7 @@ ht-degree: 3%
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. 按一下 ![](assets/uc_enrichment_16.png)。選取&#x200B;**[!UICONTROL Target extension]** ，然後選取先前建立的具有&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動的自訂有效日期，將您的擴充功能新增至formatDate運算式。
+1. 按一下![](assets/uc_enrichment_16.png)。選取&#x200B;**[!UICONTROL Target extension]** ，然後選取先前建立的具有&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動的自訂有效日期，將您的擴充功能新增至formatDate運算式。
 
    ![](assets/uc_enrichment_19.png)
 

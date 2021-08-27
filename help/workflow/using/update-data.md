@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
@@ -15,9 +15,11 @@ ht-degree: 2%
 
 # 更新資料{#update-data}
 
+![](../../assets/common.svg)
+
 **更新資料**&#x200B;類型活動執行對資料庫中欄位的成批更新。
 
-## 操作類型{#operation-type}
+## 操作類型 {#operation-type}
 
 **[!UICONTROL Operation type]**&#x200B;欄位可讓您選擇要對資料庫中的資料執行的程式：
 
@@ -31,7 +33,7 @@ ht-degree: 2%
 
 **[!UICONTROL Batch size]**&#x200B;欄位可讓您選取要更新的入站轉變元素數量。 例如，如果您指出500，則處理的前500筆記錄將會更新。
 
-## 記錄標識{#record-identification}
+## 記錄標識 {#record-identification}
 
 指定如何標識資料庫中的記錄：
 
@@ -43,7 +45,7 @@ ht-degree: 2%
 
 ![](assets/s_advuser_update_data_2.png)
 
-## 選擇要更新的欄位{#selecting-the-fields-to-be-updated}
+## 選取要更新的欄位 {#selecting-the-fields-to-be-updated}
 
 使用&#x200B;**[!UICONTROL Automatically associate fields with the same name]**&#x200B;選項，讓Adobe Campaign自動識別要更新的欄位。
 
@@ -82,7 +84,7 @@ ht-degree: 2%
 
 建立出站轉變，其中包含更新後未正確處理的記錄（例如，如果有重複記錄）。 更新通常會標籤目標工作流程的結尾，因此預設不會啟動選項。
 
-## 更新和合併集合{#updating-and-merging-collections}
+## 更新和合併集合 {#updating-and-merging-collections}
 
 更新資料並合併集合可讓您使用來自一或多個次要記錄的資料來更新記錄中包含的資料，以便只保留一個記錄（如果您想要的話）。 這些更新由一組規則管理。
 
@@ -114,11 +116,11 @@ ht-degree: 2%
 
 如果定義的規則適用，則輔助記錄的資料與主記錄相關聯。 根據所選更新的類型，可以刪除次記錄。
 
-## 範例：在擴充{#example--update-data-following-an-enrichment}後更新資料
+## 範例：擴充後更新資料 {#example--update-data-following-an-enrichment}
 
-[步驟2:將擴充資料寫入使用案例的「購買」表](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table)區段，其中詳細說明如何建立重新命名清單，提供擴充活動後資料更新的範例。
+[步驟2:將擴充資料寫入使用案例的「購買」表](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table)區段，其中詳細說明如何建立重新命名清單，提供擴充活動後資料更新的範例。
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * tableName
 * 綱要

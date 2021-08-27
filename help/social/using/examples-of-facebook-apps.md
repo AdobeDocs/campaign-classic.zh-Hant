@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Facebook 應用程式範例{#examples-of-facebook-apps}
+
+![](../../assets/v7-only.svg)
 
 使用者按一下Facebook應用程式的標籤時，該標籤會以810像素寬的空間顯示。 Adobe Campaign使用Facebook類型的網頁應用程式，讓您定義及個人化Facebook應用程式中顯示的內容，以便更輕鬆取得設定檔。
 
@@ -354,7 +356,7 @@ ht-degree: 1%
 
    ![](assets/social_webapp_035.png)
 
-1. 前往&#x200B;**[!UICONTROL Application]**&#x200B;欄位，並選取&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型先前建立的外部帳戶。 有關詳細資訊，請參見[此頁面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
+1. 前往&#x200B;**[!UICONTROL Application]**&#x200B;欄位，並選取&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型先前建立的外部帳戶。 如需詳細資訊，請參閱[此頁面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
    ![](assets/social_webapp_036.png)
 

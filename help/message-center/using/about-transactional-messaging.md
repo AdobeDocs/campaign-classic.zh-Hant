@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 
 # 開始使用異動訊息 {#about-transactional-messaging}
+
+![](../../assets/v7-only.svg)
 
 ## 概覽 {#overview}
 
@@ -87,7 +89,7 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 
 ## 相關主題 {#related-topics}
 
-* [開始使用通訊管道](../../delivery/using/communication-channels.md)
+* [開始使用通訊頻道](../../delivery/using/communication-channels.md)
 * [傳遞建立關鍵步驟](../../delivery/using/steps-about-delivery-creation-steps.md)
-* [異動傳訊架構](../../message-center/using/transactional-messaging-architecture.md)
-* [存取交易式訊息報表](../../message-center/using/about-transactional-messaging-reports.md)
+* [異動訊息傳送架構](../../message-center/using/transactional-messaging-architecture.md)
+* [關於異動訊息傳送報告](../../message-center/using/about-transactional-messaging-reports.md)

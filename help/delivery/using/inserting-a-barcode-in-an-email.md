@@ -5,7 +5,7 @@ description: 在電子郵件中插入條形碼
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -13,7 +13,9 @@ ht-degree: 0%
 ---
 
 
-# 在電子郵件{#inserting-a-barcode-in-an-email}中插入條形碼
+# 在電子郵件中插入條形碼{#inserting-a-barcode-in-an-email}
+
+![](../../assets/common.svg)
 
 條碼產生模組可讓您建立符合許多常見標準的數種條碼，包括2D條碼。
 

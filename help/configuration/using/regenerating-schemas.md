@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # 重新產生方案{#regenerating-schemas}
+
+![](../../assets/v7-only.svg)
 
 修改架構並儲存修改時，會自動產生擴充架構。 不過，您可能需要手動重新產生結構以套用修改。 操作步驟：
 

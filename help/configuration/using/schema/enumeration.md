@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 5%
 
 ---
 
-# 枚舉元素{#enumeration--element}
+# 分項清單 {#enumeration--element}
 
-## 內容模型{#content-model-5}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-5}
 
 枚舉：==（help|值）
 
-## 屬性{#attributes-5}
+## 屬性 {#attributes-5}
 
 * @basetype（字串）
 * @default（字串）
@@ -28,11 +30,11 @@ ht-degree: 5%
 * @name（字串）
 * @template（字串）
 
-## 父級{#parents-5}
+## 父母 {#parents-5}
 
 `<srcschema>`
 
-## 子項{#children-5}
+## 兒童 {#children-5}
 
 * `<help>`
 * `<value>`
@@ -41,11 +43,11 @@ ht-degree: 5%
 
 此元素可讓我們定義值列舉。 枚舉屬於它在中定義的架構，但可通過其他架構訪問。
 
-## 使用與使用內容{#use-and-context-of-use-4}
+## 使用與使用內容 {#use-and-context-of-use-4}
 
 列舉會在架構開始時（在定義主要元素之前）定義。
 
-## 屬性說明{#attribute-description-5}
+## 屬性說明 {#attribute-description-5}
 
 * **basetype（字串）**:枚舉中儲存的值的類型。
 

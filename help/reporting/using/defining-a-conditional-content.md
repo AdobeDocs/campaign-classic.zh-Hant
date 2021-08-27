@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 8%
@@ -15,13 +15,15 @@ ht-degree: 8%
 
 # 定義條件式內容{#defining-a-conditional-content}
 
+![](../../assets/common.svg)
+
 您可以限制特定報表項目或頁面的顯示。
 
 若要將特定項目設為條件式，請調整其可見度設定。 有關詳細資訊，請參閱[條件項目display](#conditioning-item-display)。
 
 若要讓一或多個頁面的顯示成為條件式，請使用&#x200B;**[!UICONTROL Test]**&#x200B;類型活動。 有關詳細資訊，請參閱[條件頁面顯示](#conditioning-page-display)。
 
-## 條件項顯示{#conditioning-item-display}
+## 調節項顯示 {#conditioning-item-display}
 
 若要讓報表的部分顯示成為條件式，需要定義其可見性條件：如果不符合這些條件，則不會顯示項目。
 
@@ -33,7 +35,7 @@ ht-degree: 8%
 
 ![](assets/reporting_display_condition.png)
 
-## 調整頁面顯示{#conditioning-page-display}
+## 調整頁面顯示 {#conditioning-page-display}
 
 在報表圖表中，**[!UICONTROL Test]**&#x200B;活動可讓您根據一或多個條件變更頁面順序。
 

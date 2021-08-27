@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
@@ -15,13 +15,15 @@ ht-degree: 5%
 
 # 轉譯 Web 應用程式{#translating-a-web-application}
 
+![](../../assets/common.svg)
+
 您可以翻譯使用Adobe Campaign數字內容編輯器(DCE)建立的Web應用程式頁面。
 
 如果通過Web應用程式&#x200B;**[!UICONTROL Properties]**&#x200B;中的&#x200B;**[!UICONTROL Localization]**&#x200B;頁簽至少選擇一種其他語言，則在使用DCE編輯的頁面中添加HTML內容塊時，將可使用新選項。
 
 此選項可讓您指出區塊內容是否必須翻譯。
 
-要翻譯的字串是透過應用程式的&#x200B;**[!UICONTROL Translations]**&#x200B;標籤，以與Web應用程式的其他字串相同的方式收集。 有關詳細資訊，請參見[此頁面](translating-a-web-form.md)。
+要翻譯的字串是透過應用程式的&#x200B;**[!UICONTROL Translations]**&#x200B;標籤，以與Web應用程式的其他字串相同的方式收集。 如需詳細資訊，請參閱[此頁面](translating-a-web-form.md)。
 
 若要標籤要翻譯的字串：
 

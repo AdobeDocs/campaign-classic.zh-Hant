@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # 關於種子地址{#about-seed-addresses}
+
+![](../../assets/common.svg)
 
 種子地址用於鎖定不符合所定義的目標準則的收件者。這樣，超出傳遞範圍的收件者就可以收到傳遞，如同任何其他目標收件者一樣。
 
@@ -45,7 +47,5 @@ ht-degree: 9%
 >
 >* 它不得使用&#x200B;**[!UICONTROL Handle groupings (GROUP BY+HAVING)]**&#x200B;選項。
 >* 如果提取元素集合，則這些欄位的種子地址將具有空值，除非選擇了&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;選項。 如需詳細資訊，請參閱[本章節](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
-
 >
-
 

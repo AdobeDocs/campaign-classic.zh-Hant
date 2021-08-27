@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -15,7 +15,9 @@ ht-degree: 4%
 
 # 關於 Web 服務{#about-web-services}
 
-## Adobe Campaign API的定義{#definition-of-adobe-campaign-apis}
+![](../../assets/v7-only.svg)
+
+## Adobe Campaign API的定義 {#definition-of-adobe-campaign-apis}
 
 Adobe Campaign應用程式伺服器旨在實現開放性，與日益多樣化和複雜的公司資訊系統輕鬆整合。
 
@@ -23,7 +25,7 @@ Adobe Campaign API用於應用程式內的JavaScript中，以及其外部的SOAP
 
 >[!IMPORTANT]
 >
->每日授權的引擎呼叫數視您的授權合約而定。 有關詳細資訊，請參見[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
+>每日授權的引擎呼叫數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
 >[此專屬檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中提供所有API（包括其完整說明）的清單。
 
 ## 先決條件 {#prerequisites}
@@ -43,7 +45,7 @@ Adobe Campaign使用兩種API:
 
 若要開發API並與Adobe Campaign互動，您必須熟悉資料模型。 Adobe Campaign可讓您產生基礎的完整說明。 請參閱[模型說明](../../configuration/using/data-oriented-apis.md#description-of-the-model)。
 
-## SOAP調用{#soap-calls}
+## SOAP調用 {#soap-calls}
 
 SOAP協定可讓您透過rich用戶端、使用webservices的協力廠商應用程式或原生使用這些方法的JSP來叫用API方法。
 
@@ -56,13 +58,13 @@ SOAP消息的結構如下：
 * 包含呼叫和回應資訊的內文，
 * 定義錯誤條件的錯誤管理。
 
-## 資源和交換{#resources-and-exchanges}
+## 資源和交流 {#resources-and-exchanges}
 
 下列結構顯示使用Adobe Campaign API時涉及的各種資源：
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
-## {#example-of-a-soap-message-on-the--executequery--method--}的「ExecuteQuery」方法的SOAP消息示例
+## 關於&#39;ExecuteQuery&#39;方法的SOAP消息示例 {#example-of-a-soap-message-on-the--executequery--method--}
 
 在此示例中，SOAP查詢調用「ExecuteQuery」方法，該方法將字元字串作為驗證（會話令牌）的參數，並將XML內容作為要執行的查詢的說明。
 
@@ -72,7 +74,7 @@ SOAP消息的結構如下：
 >
 >此服務的WSDL描述已完成，如下所示：[Web服務描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl)。
 
-### SOAP查詢{#soap-query}
+### SOAP查詢 {#soap-query}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -98,7 +100,7 @@ SOAP消息的結構如下：
 
 在SOAP中，參數是按外觀順序識別的。 第一個參數`<__sessiontoken>`取用驗證鏈，第二個參數是`<querydef>`元素中查詢的XML說明。
 
-### SOAP響應{#soap-response}
+### SOAP響應 {#soap-response}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -115,7 +117,7 @@ SOAP消息的結構如下：
 
 查詢結果從`<pdomoutput>`元素中輸入。
 
-## 錯誤管理{#error-management}
+## 錯誤管理 {#error-management}
 
 SOAP錯誤響應示例：
 

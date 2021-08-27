@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Linux 中的堆疊追蹤{#stack-trace-in-linux}
+
+![](../../assets/v7-only.svg)
 
 **堆棧跟蹤**&#x200B;表示&#x200B;**core**&#x200B;類型檔案中包含的跟蹤。 系統會在發生電腦錯誤時產生此檔案。 它可識別錯誤的來源。
 
@@ -23,7 +25,6 @@ ht-degree: 11%
 >* **gdb — 必須** 在電腦上安裝GNU調試程式。
 
 >
-
 
 
 Adobe Campaign技術支援可要求您提供此&#x200B;**堆疊追蹤**。 要獲取，請在Linux中輸入以下命令：

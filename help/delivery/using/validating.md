@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 驗證{#validating}
+
+![](../../assets/common.svg)
 
 驗證傳送時的全域概念會顯示在[此區段](steps-validating-the-delivery.md)中。
 

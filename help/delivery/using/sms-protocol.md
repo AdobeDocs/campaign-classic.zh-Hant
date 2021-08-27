@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -15,10 +15,11 @@ ht-degree: 0%
 
 # 簡訊連接器通訊協定及設定 {#sms-connector-protocol}
 
+![](../../assets/common.svg)
+
 >[!NOTE]
 >
 >通過本文檔，對協定、欄位名稱和值的詳細資訊的所有引用都引用了[SMPP 3.4規範](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
-
 
 ## 概覽 {#overview}
 

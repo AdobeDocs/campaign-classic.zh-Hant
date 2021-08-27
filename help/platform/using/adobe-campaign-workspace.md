@@ -2,20 +2,22 @@
 product: campaign
 title: Adobe Campaign 工作區
 description: 了解如何使用和自訂Campaign工作區
-feature: 概覽
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 79%
+source-wordcount: '825'
+ht-degree: 80%
 
 ---
 
 # Adobe Campaign 工作區{#adobe-campaign-workspace}
 
-## 探索Adobe Campaign介面{#about-adobe-campaign-interface}
+![](../../assets/common.svg)
+
+## 探索Adobe Campaign介面 {#about-adobe-campaign-interface}
 
 連線資料庫之後，您就可以存取 Adobe Campaign 首頁了，Adobe Campaign 首頁是一個儀表板，其中包含了可用於存取功能的連結和捷徑，顯示的連結和捷徑具體取決於安裝以及一般平台設定。
 
@@ -53,8 +55,8 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 您可以選擇五種不同語言：
 
-* 英語（英國）
-* 英文 (US)
+* 英文 (英國)
+* 英文 (美國)
 * 法文
 * 德文
 * 日文
@@ -69,7 +71,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ## 基本的導覽功能 {#navigation-basics}
 
-### 瀏覽頁面{#browsing-pages}
+### 瀏覽頁面 {#browsing-pages}
 
 平台功能各式各樣，可歸類為幾大核心功能，您可使用介面上方的連結來存取這些功能。
 
@@ -83,7 +85,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 ![](assets/recipient_list_overview.png)
 
-### 使用頁簽{#using-tabs}
+### 使用索引標籤 {#using-tabs}
 
 * 當您按一下核心功能或連結時，相關頁面會取代當前頁面。若要返回到上一頁，請按一下工具列上的 **[!UICONTROL Back]** 按鈕。若要返回到首頁，請按一下 **[!UICONTROL Home]** 按鈕。
 
@@ -93,7 +95,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
    ![](assets/d_ncs_user_interface_tabs.png)
 
-### 建立元素{#creating-an-element}
+### 建立元素 {#creating-an-element}
 
 使用每個核心功能區段，您可以瀏覽可用的元素。若要瀏覽可用元素，請使用 **[!UICONTROL Browsing]** 區段中的捷徑。使用 **[!UICONTROL Other choices]** 連結，您可存取其他所有頁面，不受環境影響。
 
@@ -110,7 +112,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 您的 Adobe Campaign Classic 實例的語言將會影響日期和時間格式。
 
-您無法在之後變更安裝 Campaign 時選取的語言。您可以選取：英文 (US)、英文 (EN)、法文、德文或日文。有關詳細資訊，請參見[此頁面](../../installation/using/creating-an-instance-and-logging-on.md)。
+您無法在之後變更安裝 Campaign 時選取的語言。您可以選取：英文 (US)、英文 (EN)、法文、德文或日文。如需詳細資訊，請參閱[此頁面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
 英文 (US) 和英文 (EN) 的主要差異如下：
 
@@ -118,7 +120,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
  <thead> 
   <tr> 
    <th> 格式<br /> </th> 
-   <th> 英文 (US)<br /> </th> 
+   <th> 英文 (美國)<br /> </th> 
    <th> 英文 (EN)<br /> </th> 
   </tr> 
  </thead> 
@@ -135,8 +137,8 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
   </tr> 
   <tr> 
    <td> 帶時間的簡短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>範例：09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>範例：25/09/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：09/25/2018 10:47:25 PM</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：25/09/2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>

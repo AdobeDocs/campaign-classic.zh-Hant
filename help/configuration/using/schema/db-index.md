@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
 
 ---
 
-# dbindex元素{#dbindex--element}
+# dbindex元素 {#dbindex--element}
 
-## 內容模型{#content-model-3}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-3}
 
 dbindex:==keyfield
 
-## 屬性{#attributes-3}
+## 屬性 {#attributes-3}
 
 * @_operation（字串）
 * @applicableIf（字串）
@@ -27,11 +29,11 @@ dbindex:==keyfield
 * @name(MNTOKEN)
 * @unique（布林值）
 
-## 父級{#parents-3}
+## 父母 {#parents-3}
 
 `<element>`
 
-## 子項{#children-3}
+## 兒童 {#children-3}
 
 `<keyfield>`
 
@@ -39,7 +41,7 @@ dbindex:==keyfield
 
 此元素可讓您定義連結至表格的索引。
 
-## 使用與使用內容{#use-and-context-of-use-3}
+## 使用與使用內容 {#use-and-context-of-use-3}
 
 可以定義多個索引。 一個索引可以引用表的一個或多個欄位。 索引聲明通常遵循主架構元素的定義。
 
@@ -47,7 +49,7 @@ dbindex:==keyfield
 
 通過串連表的名稱和索引的名稱來計算資料庫中索引的名稱。 例如：表名「Sample」、命名空間「Cus」、索引名「MyIndex」 — >索引建立查詢期間索引欄位的名稱：&quot;CusSample_myIndex&quot;。
 
-## 屬性說明{#attribute-description-3}
+## 屬性說明 {#attribute-description-3}
 
 * **_operation(string)**:定義資料庫中的寫入類型。
 

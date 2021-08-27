@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 開始移轉前{#before-starting-migration}
+
+![](../../assets/v7-only.svg)
 
 >[!NOTE]
 >
@@ -28,13 +30,13 @@ ht-degree: 1%
 * 移轉程式可能需要數天才能完成。
 * Adobe Campaign v7的設定比5.11和6.02版更嚴格。 這主要是為了避免資料損壞等問題，並維護資料庫中的資料完整性。 因此，v5.11和v6.02中提供的某些功能在v7中可能不再有效，因此在遷移後可能需要調整。 在投入生產之前，建議您系統性測試所有設定，尤其是使用Adobe Campaign所需的工作流程。
 
-### 已安裝版本{#installed-version}
+### 已安裝版本 {#installed-version}
 
 移轉之前，您應安裝目前使用之版本的最新組建。
 
 使用&#x200B;**nlserver pdump**&#x200B;命令，前往用戶端主控台上的&#x200B;**[!UICONTROL Help> About]**&#x200B;功能表，檢查伺服器上的版本。
 
-### 資料備份{#data-backup}
+### 資料備份 {#data-backup}
 
 開始移轉程式之前，您&#x200B;**必須**&#x200B;備份資料。
 
@@ -47,7 +49,7 @@ ht-degree: 1%
 
 由於移轉程式非常敏感，因此強烈建議您在開始此程式之前先徹底閱讀本檔案。
 
-## 遷移步驟{#migration-steps}
+## 移轉步驟 {#migration-steps}
 
 遷移過程必須在&#x200B;**all**&#x200B;伺服器上按特定順序執行。
 
@@ -65,7 +67,7 @@ ht-degree: 1%
    1. 遷移Power Booster/Cluster伺服器。
    1. 移轉行銷伺服器。
 
-## 用戶密碼{#user-passwords}
+## 用戶密碼 {#user-passwords}
 
 在v7中，**internal**&#x200B;和&#x200B;**admin**&#x200B;運算子連接必須用密碼保護。 強烈建議在遷移&#x200B;**之前為這些帳戶和所有運算子帳戶分配密碼，**。 如果尚未為&#x200B;**internal**&#x200B;指定密碼，則無法連接。 要將密碼分配給&#x200B;**internal**，請輸入以下命令：
 

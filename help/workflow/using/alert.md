@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 21698e85-7b58-4bde-bbd2-0ee06ac90307
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 警報{#alert}
+
+![](../../assets/common.svg)
 
 **警報**&#x200B;活動向一組運算子發送消息。 其運作方式與核准活動相同，但在此情況下不會預期有任何回應。
 

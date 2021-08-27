@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 跨頻道傳遞工作流程{#cross-channel-delivery-workflow}
 
-此使用案例提供跨通道傳送工作流程的範例。 在[本節](../../workflow/using/cross-channel-deliveries.md)中介紹跨通道傳送的一般概念。
+![](../../assets/common.svg)
+
+此使用案例提供跨通道傳送工作流程的範例。 在[本節](cross-channel-deliveries.md)中介紹跨通道傳送的一般概念。
 
 目標是將受眾從資料庫的收件者細分為不同的群組，以便傳送電子郵件至群組，並傳送簡訊至其他群組。
 
@@ -31,12 +33,12 @@ ht-degree: 3%
 
 ![](assets/wkf_cross-channel_7.png)
 
-## 步驟1:定位對象{#step-1--targeting-the-audience}
+## 步驟1:鎖定對象 {#step-1--targeting-the-audience}
 
 若要定義目標，請建立查詢以識別收件者。
 
 1. 建立促銷活動. 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
-1. 在促銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;標籤中，將&#x200B;**Query**&#x200B;活動新增至工作流程。 有關使用此活動的詳細資訊，請參閱[此部分](../../workflow/using/query.md)。
+1. 在促銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;標籤中，將&#x200B;**Query**&#x200B;活動新增至工作流程。 有關使用此活動的詳細資訊，請參閱[此部分](query.md)。
 1. 定義將接收您傳遞內容的收件者。 例如，選擇「金」成員作為目標維。
 1. 新增篩選條件至查詢。 在此範例中，選取具有電子郵件地址和行動電話號碼的收件者。
 
@@ -44,7 +46,7 @@ ht-degree: 3%
 
 1. 儲存您的變更。
 
-## 步驟2:建立包含選件{#step-2--creating-an-email-including-an-offer}的電子郵件
+## 步驟2:建立包含優惠方案的電子郵件 {#step-2--creating-an-email-including-an-offer}
 
 1. 建立&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動，並在工作流程中連按兩下該活動以進行編輯。 如需建立電子郵件的詳細資訊，請參閱[此區段](../../delivery/using/about-email-channel.md)。
 1. 設計訊息並將包含選件的連結插入內容中。
@@ -65,11 +67,11 @@ ht-degree: 3%
 
    ![](assets/wkf_cross-channel_4.png)
 
-## 步驟3:將產生的對象{#step-3--segmenting-the-resulting-audience}分段
+## 步驟3:將產生的對象分段 {#step-3--segmenting-the-resulting-audience}
 
 識別目標並建立第一次傳遞後，您需要使用篩選條件將目標細分為不同的母體。
 
-1. 將&#x200B;**Split**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[此部分](../../workflow/using/split.md)。
+1. 將&#x200B;**Split**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[此部分](split.md)。
 1. 從查詢上游的母體計算中建立三個區段。
 
    ![](assets/wkf_cross-channel_6.png)
@@ -82,7 +84,7 @@ ht-degree: 3%
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. 在篩選設定中，從&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Recipients who have not opened or clicked (email)]**，然後從傳送清單中選取包含您要傳送之優惠方案的電子郵件。 按一下 **[!UICONTROL Finish]**。
+1. 在篩選設定中，從&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Recipients who have not opened or clicked (email)]**，然後從傳送清單中選取包含您要傳送之優惠方案的電子郵件。 按一下&#x200B;**[!UICONTROL Finish]**。
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -101,7 +103,7 @@ ht-degree: 3%
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存變更。
 
-## 步驟4:正在完成工作流{#step-4--finalizing-the-workflow}
+## 步驟4:完成工作流程 {#step-4--finalizing-the-workflow}
 
 1. 在&#x200B;**[!UICONTROL Split]**&#x200B;活動產生的三個子集之後，將相關活動新增至您的工作流程：
 

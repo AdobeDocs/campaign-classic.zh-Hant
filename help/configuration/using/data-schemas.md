@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 資料方案{#data-schemas}
+
+![](../../assets/v7-only.svg)
 
 ## 原則 {#principles}
 
@@ -43,7 +45,7 @@ ht-degree: 1%
 
 如果需要檢查架構的完整結構，可以使用預覽頁簽。 如果結構已擴充，您便能將其所有擴充功能視覺化。 作為補充，「文檔」頁簽顯示所有架構屬性和元素及其屬性（SQL欄位、類型/長度、標籤、說明）。 「檔案」索引標籤僅適用於產生的結構。 有關詳細資訊，請參閱[重新生成結構](../../configuration/using/regenerating-schemas.md)部分。
 
-## 範例：建立合同表{#example--creating-a-contract-table}
+## 範例：建立合同表 {#example--creating-a-contract-table}
 
 在以下示例中，我們想在Adobe Campaign資料庫的資料庫模型中為&#x200B;**contracts**&#x200B;建立新表。 此表格可讓您儲存每個合約的持有人和共同持有人的名字和姓氏以及電子郵件地址。
 

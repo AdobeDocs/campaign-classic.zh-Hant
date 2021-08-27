@@ -5,20 +5,22 @@ description: Campaign 18.6發行說明
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: 概覽
+feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 7%
 
 ---
 
 # 第 18.6 發行版本{#release-18-6}
 
-## 版本18.6.2 - Build 8949{#release-18-6-3-build-8949}
+![](../../assets/v7-only.svg)
+
+## 發行版本 18.6.2 - 版本編號 8949{#release-18-6-3-build-8949}
 
 2018年8月22日
 
@@ -26,7 +28,7 @@ ht-degree: 7%
 >
 >這棟建築已召回。 請[升級至最新的組建版本](../../production/using/build-upgrade.md)或聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-**新增功能？**
+**有哪些新增功能？**
 
 <table> 
  <thead> 
@@ -38,7 +40,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 查詢段落<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">相關的文件</a>，以瞭解詳情。</p> </td>
+   <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>，以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -74,7 +76,7 @@ ht-degree: 7%
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## 版本18.6 - Build 8947{#release-18-6-build-8947}
+## 發行版本 18.6 - 版本編號 8947{#release-18-6-build-8947}
 
 2018年6月25日
 
@@ -82,7 +84,7 @@ ht-degree: 7%
 >
 >這棟建築已召回。 請[升級至最新版本編號](../../production/using/build-upgrade.md)或聯繫[技術支援](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-**新增功能？**
+**有哪些新增功能？**
 
 <table> 
  <thead> 

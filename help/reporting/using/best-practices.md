@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 報告最佳實務{#best-practices-reporting}
+
+![](../../assets/common.svg)
 
 ## 分析需求{#analyzing-needs}
 
@@ -62,7 +64,7 @@ ht-degree: 0%
 
 ## 最佳化報表建立{#optimizing-report-creation}
 
-### 資料卷{#data-volume}
+### 資料卷 {#data-volume}
 
 為保證最佳效能，操作資料量不得過大。
 
@@ -110,6 +112,6 @@ if(string(ctx@_historyId)!==""))
 
    如需清理和資料保留的詳細資訊，請參閱[此區段](../../configuration/using/data-model-best-practices.md#data-retention)。
 
-### 匯出報表{#exporting-reports}
+### 匯出報表 {#exporting-reports}
 
 匯出報表專用的Recommendations在[本區段](../../reporting/using/actions-on-reports.md#exporting-a-report)中詳細說明。

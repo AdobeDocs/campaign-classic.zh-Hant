@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 8%
 
 ---
 
-# 壓縮或加密檔案{#zipping-or-encrypting-a-file}
+# 壓縮或加密檔案 {#zipping-or-encrypting-a-file}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動定義匯出時，您可以定義要壓縮或加密檔案的後置處理。
 
@@ -23,7 +25,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 
    >[!NOTE]
    >
-   >「控制面板」僅限管理員使用者使用，僅適用於特定Campaign版本。 [瞭解更多](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)
+   >「控制面板」僅限管理員使用者使用，僅適用於特定Campaign版本。 [深入瞭解](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)
 
 1. 如果您的Adobe Campaign安裝是由Adobe托管，請連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以在伺服器上安裝必要的公用程式。
 1. 如果您安裝的Adobe Campaign為內部部署，請安裝您要使用的公用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。
@@ -35,7 +37,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 * [在處理前先解壓縮或解密檔案](../../platform/using/unzip-decrypt.md)
 * [資料擷取（檔案）活動](../../workflow/using/extraction--file-.md)。
 
-## 使用案例：使用安裝在控制面板{#use-case-gpg-encrypt}上的金鑰加密和匯出資料
+## 使用案例：使用控制面板上安裝的金鑰加密和匯出資料 {#use-case-gpg-encrypt}
 
 在此使用案例中，我們將建置工作流程，使用「控制面板」上安裝的金鑰來加密和匯出資料。
 

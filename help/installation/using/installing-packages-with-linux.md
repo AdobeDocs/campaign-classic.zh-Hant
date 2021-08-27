@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 使用 Linux 安裝軟體套件{#installing-packages-with-linux}
+
+![](../../assets/v7-only.svg)
 
 若為Linux 32位元平台，請安裝Adobe Campaign 32位元。 對於Linux 64位元平台，請安裝Adobe Campaign 64位元。
 
@@ -33,7 +35,7 @@ Adobe Campaign針對每個版本都隨附一個套件：**nlserver**。 此套�
 
 您可以執行&#x200B;**ping`hostname`**&#x200B;命令，確保伺服器可以到達自己。
 
-## 基於RPM包{#distribution-based-on-rpm--packages}的分配
+## 基於RPM包的分發 {#distribution-based-on-rpm--packages}
 
 要將Adobe Campaign安裝到RPM（RHEL、CentOS和SUSE）作業系統上，請應用以下步驟：
 
@@ -68,9 +70,9 @@ Adobe Campaign針對每個版本都隨附一個套件：**nlserver**。 此套�
 yum install bc.x86_64
 ```
 
-## 基於APT(Debian){#distribution-based-on-apt--debian-}的分發
+## 根據APT(Debian)進行分發 {#distribution-based-on-apt--debian-}
 
-### 在Debian 64位{#in-debian-64-bits}中
+### Debian 64位元 {#in-debian-64-bits}
 
 若要在Debian 64位元作業系統上安裝Adobe Campaign 64位元，請套用下列步驟：
 
@@ -126,7 +128,7 @@ yum install bc.x86_64
    aptitude install openjdk-7-jdk (Debian 9)
    ```
 
-## 個人化參數{#personalizing-parameters}
+## 個人化參數 {#personalizing-parameters}
 
 有些參數可透過&#x200B;**customer.sh**&#x200B;檔案個人化
 
@@ -136,7 +138,7 @@ yum install bc.x86_64
 chmod +x /usr/local/neolane/nl6/customer.sh
 ```
 
-### 伺服器編碼{#server-encoding}
+### 伺服器編碼 {#server-encoding}
 
 預設情況下，伺服器在iso8859-15環境中啟動。 不過，伺服器可以在UTF-8環境中啟動。
 
@@ -153,7 +155,7 @@ mkdir -p /usr/local/neolane/nl6
 touch /usr/local/neolane/nl6/unicodeenv
 ```
 
-### 伺服器{#default-language-for-the-server}的預設語言
+### 伺服器的預設語言 {#default-language-for-the-server}
 
 安裝支援英文和法文。 預設會使用英文。
 
@@ -172,7 +174,7 @@ export neolane_LANG=fra
 
 為確保系統消息被正確讀取，控制台必須位於與語言對應的代碼頁中（法文為ISO-8859-1或–15）。
 
-### 環境變數{#environment-variables}
+### 環境變數 {#environment-variables}
 
 必須正確定義下列環境變數。
 
@@ -250,7 +252,7 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### OracleLinux {#oracle-client-in-linux}中的客戶端
+### OracleLinux中的客戶端 {#oracle-client-in-linux}
 
 將Oracle與Adobe Campaign搭配使用時，您需要在Linux中設定Oracle用戶端層。
 
@@ -283,7 +285,7 @@ systemctl start nlserver
 
 如果您遇到問題，請確保[Oracle安裝文檔](https://www.oracle.com/pls/db112/portal.portal_db?selected=11)中列出的包已正確安裝。
 
-## 安裝檢查{#installation-checks}
+## 安裝檢查 {#installation-checks}
 
 您現在可以使用以下命令執行初始安裝測試：
 
@@ -298,7 +300,7 @@ nlserver pdump
 no task
 ```
 
-## 伺服器{#first-start-up-of-the-server}的首次啟動
+## 伺服器的首次啟動 {#first-start-up-of-the-server}
 
 安裝測試完成後，輸入以下命令：
 
@@ -353,7 +355,7 @@ nlserver stop web
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## 內部標識符{#password-for-the-internal-identifier}的密碼
+## 內部標識符的密碼 {#password-for-the-internal-identifier}
 
 Adobe Campaign伺服器定義名為&#x200B;**internal**&#x200B;的技術登入，該登入在所有執行個體上都具有所有權限。 安裝後登錄名沒有密碼。 必須定義一個。
 

@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # IMS 疑難排解{#ims-troubleshooting}
+
+![](../../assets/common.svg)
 
 下列疑難排解秘訣可協助&#x200B;**內部部署**&#x200B;客戶解決使用IMS整合時最常見的問題。 對於托管的&#x200B;****&#x200B;客戶，請聯繫Adobe。
 

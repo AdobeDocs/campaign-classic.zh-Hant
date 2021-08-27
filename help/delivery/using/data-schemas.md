@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 資料方案{#data-schemas}
+
+![](../../assets/common.svg)
 
 以下是關於在Adobe Campaign中使用資料結構的一些一般原則。
 
@@ -104,7 +106,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-## 集合元素{#collection-elements}
+## 集合元素 {#collection-elements}
 
 集合是具有相同名稱和相同階層層級的元素清單。
 
@@ -122,7 +124,7 @@ ht-degree: 2%
 >
 >**ordered=&quot;true&quot;**&#x200B;屬性的存在可讓您排序插入的集合元素。
 
-## 引用{#element-referencing}的元素
+## 元素參考 {#element-referencing}
 
 元素參考在內容結構中很常使用。 它使您可以對&#x200B;**`<element>`**&#x200B;元素的定義進行分解，以便在具有相同結構的其他元素上引用它。
 

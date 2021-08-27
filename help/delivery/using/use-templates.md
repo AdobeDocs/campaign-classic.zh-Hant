@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # 使用範本 {#use-templates}
+
+![](../../assets/common.svg)
 
 傳遞範本可為最常見的活動類型提供現成的案例，借此提高效率。 透過範本，行銷人員可以在較短的時間內以最少的自訂方式部署新的行銷活動。
 
@@ -66,4 +68,4 @@ ht-degree: 0%
 
 例如，為了更妥善地控制傳出流量，您可以定義可使用的IP位址，方法是為每個子網域定義一個相關性，並為每個相關性建立一個類型。 相關性會在執行個體的設定檔案中定義。 請連絡您的Adobe Campaign管理員。
 
-有關類型的詳細資訊，請參閱[此區段](../../campaign/using/about-campaign-typologies.md)。
+有關類型的詳細資訊，請參閱[此區段](../../campaign-opt/using/about-campaign-typologies.md)。

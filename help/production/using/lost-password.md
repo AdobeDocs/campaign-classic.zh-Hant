@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 7%
@@ -15,13 +15,15 @@ ht-degree: 7%
 
 # 遺失密碼{#lost-password}
 
+![](../../assets/v7-only.svg)
+
 您可以更改或恢復丟失的密碼。
 有兩種可能的情況：
 
 * [Adobe Campaign運算子遺失密碼](#password-lost-by-campaign-operator)
 * [內部密碼遺失](#internal-password-lost) （僅限內部部署客戶）
 
-## Campaign運算子{#password-lost-by-campaign-operator}遺失密碼
+## Campaign運算子遺失密碼 {#password-lost-by-campaign-operator}
 
 如果Adobe Campaign運算子遺失其密碼，您可以加以變更。
 要執行此操作，請遵循下列步驟：
@@ -34,7 +36,7 @@ ht-degree: 7%
 
 1. 設定運算子的新密碼。 建議運算子在首次重新連線時變更其密碼。
 
-## 內部密碼丟失{#internal-password-lost}
+## 內部密碼丟失 {#internal-password-lost}
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 事件處理 {#about-event-processing}
+
+![](../../assets/v7-only.svg)
 
 在交易式訊息傳送的內容中，事件由外部資訊系統產生，並透過&#x200B;**[!UICONTROL PushEvent]**&#x200B;和&#x200B;**[!UICONTROL PushEvents]**&#x200B;方法傳送至Adobe Campaign（請參閱[事件說明](../../message-center/using/event-description.md)）。
 
@@ -23,7 +25,7 @@ ht-degree: 2%
 
 ![](assets/messagecenter_events_request_001.png)
 
-## 事件處理步驟{#event-processing}
+## 事件處理步驟 {#event-processing}
 
 若要處理交易式訊息事件，會對執行例項套用下列步驟：
 
@@ -76,7 +78,7 @@ ht-degree: 2%
 * 要使用的通道(預設為：電子郵件)
 * 根據發佈日期的最新傳送範本
 
-## 事件狀態{#event-statuses}
+## 事件狀態 {#event-statuses}
 
 **事件歷史記錄**&#x200B;位於&#x200B;**[!UICONTROL Message Center]** > **[!UICONTROL Event history]**&#x200B;下方，將所有已處理的事件分組為單一檢視。 可依事件類型或&#x200B;**status**&#x200B;來分類。 這些狀態包括：
 
@@ -90,7 +92,7 @@ ht-degree: 2%
 * **未涵蓋的事件**:事務報文傳送路由階段失敗。例如，Adobe Campaign找不到可作為事件範本的電子郵件。
 * **事件已過期**:已達到傳送嘗試次數上限。該事件被視為null。
 
-## 事件循環{#event-recycling}
+## 事件回收 {#event-recycling}
 
 如果在特定通道上傳送訊息失敗，Adobe Campaign可以使用不同通道重新傳送訊息。 例如，如果SMS通道上的傳送失敗，會使用電子郵件通道重新傳送訊息。
 

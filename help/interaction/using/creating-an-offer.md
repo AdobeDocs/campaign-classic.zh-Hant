@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 建立優惠方案{#creating-an-offer}
 
-## 建立選件{#creating-the-offer}
+![](../../assets/v7-only.svg)
+
+## 建立優惠方案 {#creating-the-offer}
 
 若要建立優惠方案，請套用下列步驟：
 
@@ -39,11 +41,11 @@ ht-degree: 2%
 
    ![](assets/offer_create_004.png)
 
-## 配置優惠方案資格{#configuring-offer-eligibility}
+## 配置優惠方案資格 {#configuring-offer-eligibility}
 
 在&#x200B;**[!UICONTROL Eligibility]**&#x200B;索引標籤中，定義選件對有效的期間，以及可以顯示的期間、要套用至目標的篩選器以及選件加權。
 
-### 定義優惠方案的資格期{#defining-the-eligibility-period-of-an-offer}
+### 定義優惠方案的資格期 {#defining-the-eligibility-period-of-an-offer}
 
 若要定義優惠方案的資格期間，請使用下拉式清單，並在日曆中選取開始和結束日期。
 
@@ -51,7 +53,7 @@ ht-degree: 2%
 
 在這些日期以外，互動引擎將不會選取選件。 如果您也已設定優惠方案類別的資格日期，則會套用限制最嚴格的期間。
 
-### 目標{#filters-on-the-target}上的篩選器
+### 目標上的篩選 {#filters-on-the-target}
 
 您可以將篩選器套用至選件目標。
 
@@ -63,7 +65,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 選件權重{#offer-weight}
+### 選件權重 {#offer-weight}
 
 若要讓引擎在目標符合資格的多個選件之間做出決定，您需要為選件指派一或多個加權。 您也可以視需要將篩選器套用至目標，或限制權數要套用的選件空間。 較重量較輕的優惠方案，更偏好權重較重的優惠方案。
 
@@ -77,7 +79,7 @@ ht-degree: 2%
 
 若要在選件中建立權重，請套用下列步驟：
 
-1. 按一下 **[!UICONTROL Add]**。
+1. 按一下&#x200B;**[!UICONTROL Add]**。
 
    ![](assets/offer_weight_create_001.png)
 
@@ -109,7 +111,7 @@ ht-degree: 2%
    >
    >如果目標符合所選選件的多個加權，引擎會保留最佳（最高）加權。 呼叫優惠方案引擎時，每個連絡最多會選取一次優惠方案。
 
-### 優惠方案適用性規則摘要{#a-summary-of-offer-eligibility-rules}
+### 優惠方案適用性規則摘要 {#a-summary-of-offer-eligibility-rules}
 
 完成設定後，優惠方案控制面板就會提供資格規則的摘要。
 
@@ -117,7 +119,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_005.png)
 
-## 建立選件內容{#creating-the-offer-content}
+## 建立優惠方案內容 {#creating-the-offer-content}
 
 1. 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Content]**&#x200B;標籤。
 
@@ -155,7 +157,7 @@ ht-degree: 2%
 
    在此範例中，選件必須包含標題、影像、HTML內容和目的地URL。
 
-## 預覽選件{#previewing-the-offer}
+## 預覽選件 {#previewing-the-offer}
 
 設定優惠方案內容後，您就可以預覽優惠方案的收件者外觀。 操作步驟：
 
@@ -171,7 +173,7 @@ ht-degree: 2%
 
    ![](assets/offer_preview_create_003.png)
 
-## 在選件{#creating-a-hypothesis-on-an-offer}上建立假設
+## 對優惠方案建立假設 {#creating-a-hypothesis-on-an-offer}
 
 您可以對您的優惠方案提出假設。 這可讓您判斷優惠方案對針對相關產品執行的購買所產生的影響。
 
@@ -181,6 +183,6 @@ ht-degree: 2%
 
 對優惠方案主張執行的假設會在其&#x200B;**[!UICONTROL Measure]**&#x200B;標籤中參考。
 
-在[本頁](../../campaign/using/about-response-manager.md)中會詳細說明建立假設。
+在[本頁](../../response/using/about-response-manager.md)中會詳細說明建立假設。
 
 ![](assets/offer_hypothesis_001.png)

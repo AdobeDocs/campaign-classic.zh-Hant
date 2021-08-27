@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # 資料載入 (RDBMS){#data-loading-rdbms}
 
+![](../../assets/common.svg)
+
 **[!UICONTROL Data loading (RDBMS)]**&#x200B;活動可讓您直接存取此外部資料庫，並僅收集鎖定目標所需的資料。
 
-為了改善效能，建議使用查詢活動（可使用外部資料庫的資料）。 有關詳細資訊，請參閱[存取外部資料庫(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
+為了改善效能，建議使用查詢活動（可使用外部資料庫的資料）。 有關詳細資訊，請參閱[存取外部資料庫(FDA)](accessing-an-external-database--fda-.md)。
 
 操作如下：
 

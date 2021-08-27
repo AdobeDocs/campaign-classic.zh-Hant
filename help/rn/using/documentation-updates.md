@@ -2,18 +2,20 @@
 product: campaign
 title: Adobe Campaign Classic 文件更新
 description: 本頁列出了 Adobe Campaign Classic 文件中的所有新功能和更新
-feature: 概覽
+feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '4465'
+source-wordcount: '4464'
 ht-degree: 100%
 
 ---
 
 # 文件更新{#documentation-updates}
+
+![](../../assets/v7-only.svg)
 
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
@@ -48,7 +50,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 改善並釐清 Campaign 用戶端主控台安裝的步驟。 [顯示全文](../../installation/using/installing-the-client-console.md)
 
-已建立有關追蹤 URL 簽名問題的新技術。 [顯示全文](../../technotes/tracked-urls.md)
+已建立有關追蹤 URL 簽名問題的新技術。 [顯示全文](../../technotes/using/tracked-urls.md)
 
 ## 2021 年 4 月 {#april-2021}
 
@@ -210,7 +212,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 現在已提供有關下列主題的教學影片：
 
-* [如何使用類型規則和預先定義的篩選器來設定疲勞管理](../../campaign/using/about-campaign-typologies.md)
+* [如何使用類型規則和預先定義的篩選器來設定疲勞管理](../../campaign-opt/using/about-campaign-typologies.md)
 
 * [如何在行銷活動中建立電子郵件](../../campaign/using/marketing-campaign-deliveries.md)
 

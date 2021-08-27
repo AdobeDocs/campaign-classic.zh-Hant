@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 建立LINE傳送{#line-channel}
+
+![](../../assets/common.svg)
 
 >[!NOTE]
 >
@@ -56,7 +58,7 @@ ht-degree: 2%
 
    ![](assets/line_service_2.png)
 
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Save]**。
 
 如需訂閱與服務的詳細資訊，請參閱[管理訂閱](managing-subscriptions.md)。
 

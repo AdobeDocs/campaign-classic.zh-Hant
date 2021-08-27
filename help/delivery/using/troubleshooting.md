@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 疑難排解{#troubleshooting}
+
+![](../../assets/common.svg)
 
 如果您的行動裝置已連線至Wi-Fi，而您未收到通知，請檢查防火牆是否未封鎖FCM/APN埠。
 

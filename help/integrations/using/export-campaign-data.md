@@ -5,7 +5,7 @@ description: 了解如何將資料從Campaign Classic匯出至Adobe Experience P
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 ---
 
 # 將資料從 Campaign 匯出至 Adobe Experience Platform {#sources}
+
+![](../../assets/common.svg)
 
 若要將Campaign Classic資料匯出至Adobe即時客戶資料平台(RTCDP)，您必須先在Campaign Classic中建置工作流程，以將您要共用的資料匯出至S3或Azure Blob儲存位置。
 

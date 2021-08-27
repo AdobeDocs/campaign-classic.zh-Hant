@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 記錄檔精確度{#log-precision}
+
+![](../../assets/v7-only.svg)
 
 您可以將此程式套用至所有Adobe Campaign模組，以提高記錄精度。
 

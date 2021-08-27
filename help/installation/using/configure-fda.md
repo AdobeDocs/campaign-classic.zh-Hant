@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 配置 FDA 連接器 {#specific-configurations-by-database-type}
+
+![](../../assets/v7-only.svg)
 
 您需要執行特定設定，這取決於您要從Adobe Campaign存取的外部資料庫。 這些設定主要涉及安裝驅動程式和聲明屬於Adobe Campaign伺服器上每個RDBMS的環境變數。
 
@@ -23,19 +25,18 @@ ht-degree: 5%
 >
 >相容版本列在[Campaign相容性矩陣](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)中。
 
-
 ## 設定步驟 {#fda-configuration-steps}
 
 若要使用FDA設定外部資料庫的存取權，設定步驟為：
 
 1. 安裝驅動程式，並設定與Adobe Campaign伺服器上的資料庫相對應的外部帳戶。 請參閱下方所列的資料庫特定頁面[](#fda-specific-configuration)
-1. 測試外部帳戶或在Adobe Campaign和外部資料庫之間建立臨時連線。 [瞭解更多](../../installation/using/connecting-to-database.md)
-1. 在Adobe Campaign中建立外部資料庫的架構。 這可讓您識別外部資料庫的資料結構。 [瞭解更多](../../installation/using/creating-data-schema.md)
-1. 如有需要，從先前建立的架構建立新的目標對應。 如果傳送的收件者來自外部資料庫，則此為必要項目。 此實施隨附與訊息個人化相關的限制。 [瞭解更多](../../installation/using/defining-data-mapping.md)
+1. 測試外部帳戶或在Adobe Campaign和外部資料庫之間建立臨時連線。 [深入瞭解](../../installation/using/connecting-to-database.md)
+1. 在Adobe Campaign中建立外部資料庫的架構。 這可讓您識別外部資料庫的資料結構。 [深入瞭解](../../installation/using/creating-data-schema.md)
+1. 如有需要，從先前建立的架構建立新的目標對應。 如果傳送的收件者來自外部資料庫，則此為必要項目。 此實施隨附與訊息個人化相關的限制。 [深入瞭解](../../installation/using/defining-data-mapping.md)
 
 建立資料結構後，即可在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本章節](../../workflow/using/accessing-an-external-database--fda-.md)。
 
-## 資料庫特定配置{#fda-specific-configuration}
+## 資料庫特定配置 {#fda-specific-configuration}
 
 您需要執行特定設定，這取決於您要從Adobe Campaign存取的外部資料庫。 這些設定主要涉及安裝驅動程式和聲明屬於Adobe Campaign伺服器上每個RDBMS的環境變數，以及配置外部帳戶。
 

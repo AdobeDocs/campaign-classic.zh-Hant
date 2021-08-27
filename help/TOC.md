@@ -5,11 +5,11 @@ product: campaign
 title: Campaign Classic v7 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
-sub-product: Adobe Campaign Classic
+sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+source-git-commit: a066eedd2ba7848f6dcefcb1476a0b834cb1d49a
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
@@ -37,11 +37,11 @@ ht-degree: 99%
       + [第 18.4 發行版本](rn/using/release--18-4.md)
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
-   + [Technotes](technotes/technote.md)
-   + [iOS 憑證更新](technotes/ios-certificate-update.md)
-   + [Campaign 設定更新](technotes/acc-config-updates.md)
-   + [已追蹤的 URL 更新](technotes/tracked-urls.md)
-   + [IMS 更新](technotes/ims-updates.md)
+   + [Technotes](technotes/using/technote.md)
+   + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
+   + [Campaign 設定更新](technotes/using/acc-config-updates.md)
+   + [已追蹤的 URL 更新](technotes/using/tracked-urls.md)
+   + [IMS 更新](technotes/using/ims-updates.md)
 + 開始使用{#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
@@ -118,7 +118,7 @@ ht-degree: 99%
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + Adobe Analytics 連接器{#analytics-connector}
          + [Adobe Analytics Connector整合](platform/using/adobe-analytics-connector.md)
-         + [如何移轉至Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [如何移轉至Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [說明與支援選項](support.md)
 + 建立及傳送訊息 {#sending-messages}
@@ -263,13 +263,13 @@ ht-degree: 99%
       + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
       + [供應商、庫存和預算](campaign/using/providers--stocks-and-budgets.md)
    + Campaign 最佳化 {#campaign-optimization}
-      + [關於行銷活動態樣](campaign/using/about-campaign-typologies.md)
-      + [壓力規則](campaign/using/pressure-rules.md)
-      + [一致性規則](campaign/using/consistency-rules.md)
-      + [控制規則](campaign/using/control-rules.md)
-      + [篩選規則](campaign/using/filtering-rules.md)
-      + [套用規則](campaign/using/applying-rules.md)
-      + [Campaign 模擬](campaign/using/campaign-simulations.md)
+      + [關於行銷活動態樣](campaign-opt/using/about-campaign-typologies.md)
+      + [壓力規則](campaign-opt/using/pressure-rules.md)
+      + [一致性規則](campaign-opt/using/consistency-rules.md)
+      + [控制規則](campaign-opt/using/control-rules.md)
+      + [篩選規則](campaign-opt/using/filtering-rules.md)
+      + [套用規則](campaign-opt/using/applying-rules.md)
+      + [Campaign 模擬](campaign-opt/using/campaign-simulations.md)
 + 行銷資源管理 {#mrm}
    + [關於行銷資源管理](mrm/using/about-marketing-resource-management.md)
    + [建立及管理設定檔](mrm/using/creating-and-managing-tasks.md)
@@ -277,19 +277,19 @@ ht-degree: 99%
    + [管理行銷資源](mrm/using/managing-marketing-resources.md)
    + [論壇](mrm/using/discussion-forums.md)
 + 分散式行銷 {#distributed-marketing}
-   + [關於分散式行銷](campaign/using/about-distributed-marketing.md)
-   + [建立本機行銷活動](campaign/using/creating-a-local-campaign.md)
-   + [建立協作行銷活動](campaign/using/creating-a-collaborative-campaign.md)
-   + [發佈行銷活動套件](campaign/using/publishing-the-campaign-package.md)
-   + [存取行銷活動](campaign/using/accessing-campaigns.md)
-   + [追蹤行銷活動](campaign/using/tracking-a-campaign.md)
-   + [使用案例](campaign/using/examples.md)
+   + [關於分散式行銷](distributed/using/about-distributed-marketing.md)
+   + [建立本機行銷活動](distributed/using/creating-a-local-campaign.md)
+   + [建立協作行銷活動](distributed/using/creating-a-collaborative-campaign.md)
+   + [發佈行銷活動套件](distributed/using/publishing-the-campaign-package.md)
+   + [存取行銷活動](distributed/using/accessing-campaigns.md)
+   + [追蹤行銷活動](distributed/using/tracking-a-campaign.md)
+   + [使用案例](distributed/using/examples.md)
 + 回應管理員{#response-manager}
-   + [開始使用回應管理員](campaign/using/about-response-manager.md)
-   + [設定](campaign/using/configuration.md)
-   + [假設範本](campaign/using/hypothesis-templates.md)
-   + [建立假設](campaign/using/creating-hypotheses.md)
-   + [假設追蹤](campaign/using/hypothesis-tracking.md)
+   + [開始使用回應管理員](response/using/about-response-manager.md)
+   + [設定](response/using/configuration.md)
+   + [假設範本](response/using/hypothesis-templates.md)
+   + [建立假設](response/using/creating-hypotheses.md)
+   + [假設追蹤](response/using/hypothesis-tracking.md)
 + 設計及共用報吿{#reporting}
    + 開始使用報告功能 {#reporting-in-adobe-campaign}
       + [報告工具](reporting/using/about-adobe-campaign-reporting-tools.md)

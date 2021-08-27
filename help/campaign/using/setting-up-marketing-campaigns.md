@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 6%
@@ -15,27 +15,29 @@ ht-degree: 6%
 
 # 開始使用行銷活動{#setting-up-marketing-campaigns}
 
+![](../../assets/common.svg)
+
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
 ![](assets/do-not-localize/how-to-video.png) 了解如何在影片中建立行銷計畫、計畫和行 [銷活動](#video)
 
 若要建立行銷活動：
 
-1. 建立促銷活動：探索行銷活動及其特點：標籤、類型、開始和結束日期、預算、關聯資源、經理和參與者。 [瞭解更多](#creating-a-campaign)。
+1. 建立促銷活動：探索行銷活動及其特點：標籤、類型、開始和結束日期、預算、關聯資源、經理和參與者。 [深入瞭解](#creating-a-campaign)。
 
-1. 定義目標人口：使用定位查詢建立工作流程。 [瞭解更多](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
+1. 定義目標人口：使用定位查詢建立工作流程。 [深入瞭解](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 建立傳送：選取頻道並定義要傳送的內容。 [瞭解更多](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
+1. 建立傳送：選取頻道並定義要傳送的內容。 [深入瞭解](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
-1. 核准傳遞。 [瞭解更多](../../campaign/using/marketing-campaign-approval.md)。
+1. 核准傳遞。 [深入瞭解](../../campaign/using/marketing-campaign-approval.md)。
 
-1. 監視傳遞。 [瞭解更多](../../campaign/using/marketing-campaign-monitoring.md)。
+1. 監視傳遞。 [深入瞭解](../../campaign/using/marketing-campaign-monitoring.md)。
 
-1. 規劃促銷活動和相關成本。 [瞭解更多](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+1. 規劃促銷活動和相關成本。 [深入瞭解](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
 完成這些步驟後，您可以開始傳送（請參閱[此區段](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)），檢查與傳送相關的資料、流程和資訊，並視需要管理相關檔案（請參閱[此區段](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)）。 您也可以追蹤促銷活動和傳送的處理階段的執行（請參閱[此區段](../../campaign/using/marketing-campaign-monitoring.md)）。
 
-## 建立計畫和方案層次結構{#creating-plan-and-program-hierarchy}
+## 建立計畫和方案層次結構 {#creating-plan-and-program-hierarchy}
 
 要為市場營銷計畫和方案配置資料夾層次結構：
 
@@ -57,7 +59,7 @@ ht-degree: 6%
 
 ## 建立促銷活動 {#creating-a-campaign}
 
-### 新增促銷活動{#adding-a-campaign}
+### 新增行銷活動 {#adding-a-campaign}
 
 您可以透過促銷活動清單建立促銷活動。 若要顯示此檢視，請選取&#x200B;**[!UICONTROL Campaigns]**&#x200B;控制面板中的&#x200B;**[!UICONTROL Campaigns]**&#x200B;功能表。
 
@@ -85,7 +87,7 @@ ht-degree: 6%
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
-### 編輯和設定促銷活動{#editing-and-configuring-a-campaign}
+### 編輯和設定促銷活動 {#editing-and-configuring-a-campaign}
 
 然後，您可以編輯您剛建立的促銷活動並定義其參數。
 
@@ -95,17 +97,17 @@ ht-degree: 6%
 
 這會帶您前往促銷活動控制面板。
 
-## 循環和定期促銷活動{#recurring-and-periodic-campaigns}
+## 週期性和定期的促銷活動 {#recurring-and-periodic-campaigns}
 
 循環促銷活動是根據特定範本的促銷活動，其工作流程設定為根據關聯的排程執行。 因此，工作流程將會在促銷活動中重複執行。 目標定位會在每次執行時重複，且會追蹤各種程式和目標母體。 您也可以在自動工作流程建立期間，透過涵蓋期間預先執行未來目標設定，以便使用目標估計啟動模擬。
 
 定期促銷活動是根據其範本的執行排程自動建立的促銷活動。
 
-### 建立循環促銷活動{#creating-a-recurring-campaign}
+### 建立循環促銷活動 {#creating-a-recurring-campaign}
 
 循環促銷活動是從定義要執行的工作流程範本和執行排程的特定範本建立。
 
-#### 建立循環促銷活動的範本{#creating-the-campaign-template}
+#### 為循環促銷活動建立範本 {#creating-the-campaign-template}
 
 1. 建立&#x200B;**[!UICONTROL Recurring]**&#x200B;促銷活動範本。
 
@@ -140,7 +142,7 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
-#### 建立循環促銷活動{#create-the-recurring-campaign}
+#### 建立循環促銷活動 {#create-the-recurring-campaign}
 
 若要根據範本中定義的排程建立週期性促銷活動並執行其工作流程，請套用下列程式：
 
@@ -179,11 +181,11 @@ ht-degree: 6%
    >與工作流關聯的計畫行的開始日期可通過工作流的變數使用以下語法：\
    >`$date(instance/vars/@startPlanningDate)`
 
-### 建立定期促銷活動{#creating-a-periodic-campaign}
+### 建立定期促銷活動 {#creating-a-periodic-campaign}
 
 定期促銷活動是根據特定範本的促銷活動，可讓您根據執行排程建立促銷活動例項。 根據範本排程中定義的頻率，會根據定期促銷活動範本自動建立促銷活動例項。
 
-#### 建立促銷活動範本{#creating-the-campaign-template-1}
+#### 建立促銷活動範本 {#creating-the-campaign-template-1}
 
 1. 建立&#x200B;**[!UICONTROL Periodic]**&#x200B;促銷活動範本，最好複製現有的促銷活動範本。
 

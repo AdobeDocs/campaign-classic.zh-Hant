@@ -6,16 +6,18 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
-# 在日文行動裝置上傳送電子郵件{#sending-emails-on-japanese-mobiles}
+# 在日文行動裝置上傳送電子郵件 {#sending-emails-on-japanese-mobiles}
 
-## 日文行動裝置的電子郵件格式{#email-formats-for-japanese-mobiles}
+![](../../assets/common.svg)
+
+## 日文行動裝置的電子郵件格式 {#email-formats-for-japanese-mobiles}
 
 Adobe Campaign管理行動裝置上電子郵件的三種特定日文格式：**Deco-mail**（DoCoMo行動裝置）、**Decore Mail**（軟體銀行行動裝置）和&#x200B;**Decoration Mail**（KDDI AU行動裝置）。 這些格式會施加特定的編碼、結構和大小限制。 進一步了解[本節](#limitations-and-recommendations)中的限制和建議。
 
@@ -27,7 +29,7 @@ Adobe Campaign管理行動裝置上電子郵件的三種特定日文格式：**D
 
 該自動檢測系統基於&#x200B;**[!UICONTROL Management of Email Formats]**&#x200B;郵件規則集中定義的預定義域清單。 有關管理電子郵件格式的詳細資訊，請參閱[本頁](../../installation/using/email-deliverability.md#managing-email-formats)。
 
-## 限制與建議{#limitations-and-recommendations}
+## 限制和建議 {#limitations-and-recommendations}
 
 對於發送將在由日本提供商（軟體銀行、 DoCoMo、KDDI AU）運營的移動設備上讀取的電子郵件，應使用一定數量的限制。
 
@@ -48,9 +50,9 @@ Adobe Campaign管理行動裝置上電子郵件的三種特定日文格式：**D
 >* 有關軟體庫，請參閱[此頁](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
 
 
-## 測試電子郵件內容{#testing-the-email-content}
+## 測試電子郵件內容 {#testing-the-email-content}
 
-### 預覽訊息{#previewing-the-message}
+### 預覽訊息 {#previewing-the-message}
 
 Adobe Campaign可讓您檢查訊息格式是否適合傳送至日文行動裝置。
 
@@ -64,7 +66,7 @@ Adobe Campaign可讓您檢查訊息格式是否適合傳送至日文行動裝置
 
    ![](assets/deco-mail_06.png)
 
-### 執行類型規則{#running-typology-rule}
+### 執行類型規則 {#running-typology-rule}
 
 除了預覽診斷外，在傳送校樣或傳送時還會執行第二次檢查：分析期間會啟動特定類型規則&#x200B;**[!UICONTROL Deco-mail check]**。
 
@@ -89,7 +91,7 @@ Adobe Campaign可讓您檢查訊息格式是否適合傳送至日文行動裝置
 * 建立兩個傳送：一個僅適用於日文收件者，另一個僅適用於其他收件者 — 請參閱[本區段](#designing-a-specific-delivery-for-japanese-formats)。
 * 建立單一傳送，Adobe Campaign會自動偵測要使用的格式 — 請參閱[此區段](#designing-a-delivery-for-all-formats)。
 
-### 設計日文格式的特定傳送{#designing-a-specific-delivery-for-japanese-formats}
+### 為日文格式設計特定傳送 {#designing-a-specific-delivery-for-japanese-formats}
 
 您可以建立包含兩個傳送的工作流程：一個在日文行動裝置上讀取，另一個在標準電子郵件格式的收件者閱讀。
 
@@ -99,7 +101,7 @@ Adobe Campaign可讓您檢查訊息格式是否適合傳送至日文行動裝置
 
 ![](assets/deco-mail_07.png)
 
-### 設計所有格式的傳送{#designing-a-delivery-for-all-formats}
+### 設計所有格式的傳送 {#designing-a-delivery-for-all-formats}
 
 當Adobe Campaign根據網域（具有定義為&#x200B;**[!UICONTROL Unknown]**、**[!UICONTROL HTML]**&#x200B;或&#x200B;**[!UICONTROL Text]**&#x200B;之電子郵件格式的設定檔）動態管理格式時，您可以傳送相同的傳送給所有收件者。
 

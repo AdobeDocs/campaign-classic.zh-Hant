@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # 應用程式物件{#application-objects}
 
+![](../../assets/v7-only.svg)
+
 應監控內建物件，並防止其過量成長，這很重要。
 
-## ID序列{#sequence-of-ids}
+## ID順序 {#sequence-of-ids}
 
 Adobe Campaign會使用必須據以使用的ID序列：**xtkNewId**。 如果快速使用序列（即每天100,000個序列），您必須確認其符合您的業務需求，例如每天傳送數百萬封電子郵件。 可以為特定表定義專用序列。 您可以設定工作流程以監控ID使用情形。
 
@@ -49,7 +51,7 @@ Adobe Campaign會使用必須據以使用的ID序列：**xtkNewId**。 如果快
 
 如果工作流導入了檔案，但未使用標準功能，則需要清除它，以將磁碟空間保持在最小。
 
-## 交易資料和日誌{#transactional-data-and-logs}
+## 交易資料和記錄檔 {#transactional-data-and-logs}
 
 將資料匯入Adobe Campaign的每個[工作流程](../../workflow/using/data-life-cycle.md#work-table)都會導致資料庫的大小增加。
 

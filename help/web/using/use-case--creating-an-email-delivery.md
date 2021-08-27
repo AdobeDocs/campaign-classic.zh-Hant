@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # 使用案例：建立電子郵件傳遞{#use-case-creating-an-email-delivery}
 
-在此使用案例中，您將學習使用Adobe Campaign數位內容編輯器(DCE)設計電子郵件傳送的步驟。
+![](../../assets/common.svg)
+
+在此使用案例中，您將學習使用Adobe Campaign數位內容編輯器(DCE)來設計電子郵件傳送的步驟。
 
 我們的最終目標是使用包含下列內容的個人化範本建立傳遞：
 
@@ -38,7 +40,7 @@ ht-degree: 0%
 
 ## 步驟2 — 選取範本 {#step-2---selecting-a-template}
 
-選取傳送範本，然後為您的傳送命名。 此名稱只會顯示給Adobe Campaign Console的使用者，而不會顯示給收件者，不過傳送清單中會顯示此標題。 按一下 **[!UICONTROL Continue]**。
+選取傳送範本，然後為您的傳送命名。 此名稱只會顯示給Adobe Campaign Console的使用者，而不會顯示給收件者，不過傳送清單中會顯示此標題。 按一下&#x200B;**[!UICONTROL Continue]**。
 
 ![](assets/dce_delivery_model.png)
 

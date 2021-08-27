@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # 子工作流程{#sub-workflow}
 
+![](../../assets/common.svg)
+
 **[!UICONTROL Sub-workflow]**&#x200B;活動可讓您觸發另一個工作流程的執行並復原結果。 此活動可讓您使用簡化的介面，同時使用複雜的工作流程。
 
 您可以在單一工作流程中呼叫多個子工作流程。 子工作流程會同步執行。
 
-在以下範例中，主要工作流程使用跳轉呼叫子工作流程。 有關跳轉類型圖形對象的詳細資訊，請參見[此部分](../../workflow/using/jump--start-point-and-end-point-.md)。
+在以下範例中，主要工作流程使用跳轉呼叫子工作流程。 有關跳轉類型圖形對象的詳細資訊，請參見[此部分](jump--start-point-and-end-point-.md)。
 
 1. 建立要作為另一個工作流程中子工作流程的工作流程。
 1. 在工作流程的開頭插入優先順序為1的&#x200B;**[!UICONTROL Jump (end point)]**&#x200B;活動。 如果您有多個「端點」類型跳轉，Adobe Campaign將使用「端點」跳轉，且數字最低。
@@ -59,14 +61,14 @@ ht-degree: 0%
 >
 >如果子工作流中發生任何錯誤，則主要工作流將暫停，並建立子工作流的副本。
 
-## 輸入參數（可選）{#input-parameters--optional-}
+## 輸入參數（可選） {#input-parameters--optional-}
 
 * tableName
 * 綱要
 
 每個入站事件都必須指定由這些參數定義的目標。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要

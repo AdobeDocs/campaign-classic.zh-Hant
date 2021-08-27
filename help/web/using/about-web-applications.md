@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
@@ -14,6 +14,8 @@ ht-degree: 20%
 ---
 
 # 開始使用網路應用程式{#about-web-applications}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您使用資料庫中的資料和符合連線使用者權限的內容，來建立和發佈動態和互動式Web應用程式。
 
@@ -80,7 +82,7 @@ Adobe Campaign中的Web應用程式可存取下列功能：
 
 Web應用程式儲存在Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;節點中。 設定在下列資料夾中劃分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**:包含用於Web表單演示（應用程式和調查）的呈現模板。範本可讓您產生表單。 它也使用CSS樣式表。 在模板級別，此樣式表可以超載。 有關詳細資訊，請參見[此頁面](form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Administration > Configuration > Form renderings]**:包含用於Web表單演示（應用程式和調查）的呈現模板。範本可讓您產生表單。 它也使用CSS樣式表。 在模板級別，此樣式表可以超載。 如需詳細資訊，請參閱[此頁面](form-rendering.md#selecting-the-form-rendering-template)。
 * **[!UICONTROL Resources > Templates > Web application templates]**:包含表單範本。要建立表單或Web應用程式，必須從模板開始。
 
 ## Web應用程式模板 {#web-application-templates}

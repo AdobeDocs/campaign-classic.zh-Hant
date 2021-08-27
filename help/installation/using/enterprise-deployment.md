@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 企業部署{#enterprise-deployment}
+
+![](../../assets/v7-only.svg)
 
 這是最完整的設定。 它以標準配置為基礎，提供更高的安全性和可用性：
 
@@ -37,7 +39,7 @@ ht-degree: 3%
 
 硬體和管理成本更高。
 
-### 推薦設備{#recommended-equipment}
+### 推薦設備 {#recommended-equipment}
 
 * 應用程式伺服器：2 Ghz四核CPU,4 GB RAM，軟體RAID 1 80 GB SATA硬碟。
 * 重定向伺服器：2 Ghz四核CPU,4 GB RAM，軟體RAID 1 80 GB SATA硬碟。
@@ -46,7 +48,7 @@ ht-degree: 3%
 >
 >可以對到重定向伺服器的流量重複使用現有負載平衡器。
 
-## 安裝和配置步驟{#installation-and-configuration-steps}
+## 安裝和配置步驟 {#installation-and-configuration-steps}
 
 ### 先決條件 {#prerequisites}
 
@@ -163,7 +165,7 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱[Campaign伺服器設定](../../installation/using/configuring-campaign-server.md)。
 
-1. 將客戶端控制台安裝程式（**setup-client-7.XX**、v7的&#x200B;**YYYY.exe**&#x200B;或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**YYYY.exe**）複製到&#x200B;**/datakit/nl/eng/jsp/**&#x200B;資料夾。 [瞭解更多](../../installation/using/client-console-availability-for-windows.md)。
+1. 將客戶端控制台安裝程式（**setup-client-7.XX**、v7的&#x200B;**YYYY.exe**&#x200B;或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**YYYY.exe**）複製到&#x200B;**/datakit/nl/eng/jsp/**&#x200B;資料夾。 [深入瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 啟動Adobe Campaign伺服器(**net start nlserver6**，在Windows中，**/etc/init.d/nlserver6 start**)，再次運行命令&#x200B;**nlserver pdump**&#x200B;以檢查是否存在所有已啟用的模組。
 
@@ -187,7 +189,7 @@ ht-degree: 3%
 
 1. 使用URL測試&#x200B;**nlserver web**&#x200B;模組：[https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)。
 
-   此URL可讓您存取用戶端設定程式的下載頁面。 [瞭解更多](../../installation/using/client-console-availability-for-windows.md)。
+   此URL可讓您存取用戶端設定程式的下載頁面。 [深入瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
    進入訪問控制頁時，輸入&#x200B;**內部**&#x200B;登錄和相關密碼。
 
@@ -248,7 +250,7 @@ ht-degree: 3%
    * Linux:[伺服器的首次啟動](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
    * 對於Windows:[伺服器的首次啟動](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
-### 安裝和配置前端伺服器{#installing-and-configuring-the-frontal-servers}
+### 安裝和配置前端伺服器 {#installing-and-configuring-the-frontal-servers}
 
 安裝和配置過程在兩台電腦上都相同。
 

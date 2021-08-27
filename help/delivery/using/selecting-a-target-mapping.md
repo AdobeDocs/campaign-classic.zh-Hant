@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 選擇目標對應{#selecting-a-target-mapping}
+
+![](../../assets/common.svg)
 
 預設情況下，傳遞範本目標為&#x200B;**[!UICONTROL Recipients]**。 因此，其目標映射使用&#x200B;**nms:recipient**&#x200B;表的欄位。 Adobe Campaign為您的傳送提供其他目標對應，以根據您的需求使用。
 

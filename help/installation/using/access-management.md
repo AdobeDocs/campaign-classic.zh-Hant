@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 8%
@@ -15,13 +15,15 @@ ht-degree: 8%
 
 # 存取管理 {#access-management}
 
+![](../../assets/v7-only.svg)
+
 ## 網頁應用程式運算子
 
 WebApp運算子是立即可用的管理員。 要提高安全性，請遵循以下准則：
 
 * 以新運算子取代此運算子中直接命名為的管理員（可命名為「webapp」）。 如需詳細資訊，請參閱[本頁面](../../platform/using/access-management.md)。
 
-* 在資料夾（主要是收件者資料夾）中新增webApp運算子，以授與收件者的讀/寫存取權。 有關詳細資訊，請參見[此頁面](../../platform/using/access-management.md)。
+* 在資料夾（主要是收件者資料夾）中新增webApp運算子，以授與收件者的讀/寫存取權。 如需詳細資訊，請參閱[此頁面](../../platform/using/access-management.md)。
 
 * 如果使用多品牌（或多地理）例項，您可能會想要將Web應用程式存取權分割為不同的收件者資料夾。 若要這麼做：
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 7%
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # 設定母體樣本 {#step-2--configuring-population-samples}
 
-## 配置查詢活動{#configuring-the-query-activity}
+![](../../assets/common.svg)
+
+## 設定「查詢」活動 {#configuring-the-query-activity}
 
 * 連按兩下&#x200B;**[!UICONTROL Query]**&#x200B;活動。
 
@@ -29,7 +31,7 @@ ht-degree: 7%
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## 配置拆分活動{#configuring-the-split-activity}
+## 設定分割活動 {#configuring-the-split-activity}
 
 此活動可讓您建立數個母體：接收傳送A的傳送B的傳送B的傳送B，以及剩餘的母體。 使用隨機選取可讓您只鎖定每個傳送的一部分母體。
 
@@ -79,4 +81,4 @@ ht-degree: 7%
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您現在可以建立兩個傳送範本。 [瞭解更多](a-b-testing-uc-delivery-templates.md)).
+您現在可以建立兩個傳送範本。 [深入瞭解](a-b-testing-uc-delivery-templates.md)).

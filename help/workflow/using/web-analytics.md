@@ -5,7 +5,7 @@ description: 深入了解網頁分析套件
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 
 
 # 網站分析{#web-analytics}
+
+![](../../assets/common.svg)
 
 依預設，下列詳細的工作流程會與&#x200B;**Web Analytics連接器**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../platform/using/adobe-analytics-connector.md)。
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 優惠分析報告{#offer-analysis-report}
+
+![](../../assets/v7-only.svg)
 
 **[!UICONTROL Offer analysis]**&#x200B;報告提供了接受或拒絕命題的概述。
 

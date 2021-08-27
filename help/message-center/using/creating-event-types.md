@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 建立事件類型 {#creating-event-types}
+
+![](../../assets/v7-only.svg)
 
 若要確保每個事件都可變更為個人化訊息，您必須先建立&#x200B;**事件類型**。
 

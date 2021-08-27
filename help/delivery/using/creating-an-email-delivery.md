@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 21%
@@ -14,6 +14,8 @@ ht-degree: 21%
 ---
 
 # 建立電子郵件傳遞{#creating-an-email-delivery}
+
+![](../../assets/common.svg)
 
 若要建立新的電子郵件傳送，請遵循下列步驟：
 

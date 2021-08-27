@@ -5,17 +5,26 @@ description: 互動
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 6%
 
 ---
 
 
 # 互動{#interaction}
 
-依預設，下列詳細的工作流程會與&#x200B;**選件引擎（互動）**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../interaction/using/interaction-and-offer-management.md)。
+![](../../assets/common.svg)
+
+依預設，下列詳細的工作流程會與&#x200B;**選件引擎（互動）**&#x200B;附加元件一起安裝。
+
+如需詳細資訊，請視您的Campaign版本而定，參閱下列區段：
+
+![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文件](../../interaction/using/interaction-and-offer-management.md)
+
+![](assets/do-not-localize/v8.png)[  Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+
 
 <table> 
  <tbody> 

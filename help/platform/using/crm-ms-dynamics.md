@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 連接Campaign和Microsoft Dynamics 365{#connect-to-msdyn}
+
+![](../../assets/common.svg)
 
 在本頁面中，您將學習如何將Campaign Classic連接到&#x200B;**Microsoft Dynamics CRM 365**。
 

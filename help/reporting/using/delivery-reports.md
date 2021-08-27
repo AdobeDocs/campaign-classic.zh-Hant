@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 傳遞報告 {#delivery-reports}
+
+![](../../assets/common.svg)
 
 您可以透過各種可從傳送概述存取的報表來追蹤傳送的執行。 要顯示報告，請應用以下過程：
 
@@ -116,7 +118,7 @@ ht-degree: 2%
 
 本節顯示每個社交網路上共用的訊息數量。 如需詳細資訊，請參閱[分享至社交網路](../../reporting/using/global-reports.md#sharing-to-social-networks)。
 
-## URL 和點按流 {#urls-and-click-streams}
+## URL 和點擊流量 {#urls-and-click-streams}
 
 此報表顯示傳送後所造訪的頁面清單。
 
@@ -146,7 +148,7 @@ ht-degree: 2%
 
 此圖表顯示每日累積點按次數的劃分。
 
-## 傳送摘要 {#delivery-summary}
+## 傳遞摘要 {#delivery-summary}
 
 此報告提供傳送的所有主要資訊。
 
@@ -172,9 +174,9 @@ ht-degree: 2%
 * **[!UICONTROL Errors]** :傳遞和自動反彈處理期間累積的錯誤總數。關聯速率是要傳遞的報文數的比率。
 * **[!UICONTROL New quarantines]** :傳送失敗後隔離的地址數（用戶未知、無效域）。關聯速率是要傳遞的報文數的比率。
 
-## 熱點點按 {#hot-clicks}
+## 熱點點擊 {#hot-clicks}
 
-此報表顯示每個連結上含有點按百分比的訊息內容（HTML和/或文字）。 個人化區塊取消訂閱連結、鏡像頁面連結和選件連結會納入累積點按總次數中，但不會顯示在報表中。
+此報表顯示每個連結上含有點按百分比的訊息內容（HTML和/或文字）。 個人化區塊取消訂閱連結、鏡像頁面連結和選件連結會納入累積點按總數中，但不會顯示在報表中。
 
 >[!NOTE]
 >
@@ -182,7 +184,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_clic_report.png)
 
-## 跟蹤統計資料{#tracking-statistics}
+## 追蹤統計資料 {#tracking-statistics}
 
 此報表提供開啟、點按和交易的統計資料。
 

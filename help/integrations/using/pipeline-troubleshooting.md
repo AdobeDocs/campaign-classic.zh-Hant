@@ -5,7 +5,7 @@ description: 配置整合
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 管線疑難排解 {#pipeline-troubleshooting}
+
+![](../../assets/common.svg)
 
 **流水線失敗，錯誤為「沒有任務與掩碼流水線@&lt;>」**
 

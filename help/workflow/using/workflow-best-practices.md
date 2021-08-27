@@ -6,20 +6,22 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1612'
 ht-degree: 6%
 
 ---
 
 # 工作流程最佳實務{#workflow-best-practices}
 
-## 執行和效能{#execution-and-performance}
+![](../../assets/common.svg)
+
+## 執行與效能 {#execution-and-performance}
 
 以下列出關於最佳化Campaign效能的一般准則，包括套用至工作流程的最佳實務。
 
-[本節](../../production/using/workflow-execution.md)也提供與工作流程執行相關的疑難排解准則。
+[Campaign Classicv7生產指南](../../production/using/workflow-execution.md)中也提供與工作流程執行相關的疑難排解准則。
 
 ### 記錄檔 {#logs}
 
@@ -42,9 +44,9 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是偵錯工作流程�
    在工作流屬性的&#x200B;**[!UICONTROL Execution]**&#x200B;標籤中可用，此選項將記錄工具從不同活動生成的所有SQL查詢。 這是檢視平台實際執行內容的好方法。 不過，此選項僅應在開發期間暫時使用，而不應在生產時啟動。
 
 不再需要記錄檔時，請加以清除。 不會自動清除工作流歷史記錄：預設會保留所有訊息。 您可以透過&#x200B;**[!UICONTROL File > Actions]**功能表或按一下清單上方工具列中的「動作」按鈕來清除歷史記錄。 選擇清除歷史記錄。
-若要了解如何清除記錄檔，請參閱本[檔案](../../workflow/using/starting-a-workflow.md)。
+若要了解如何清除記錄檔，請參閱本[檔案](starting-a-workflow.md)。
 
-### 工作流計畫{#workflow-planning}
+### 工作流程規劃 {#workflow-planning}
 
 * 嘗試在一天中維持穩定的活動水準，並避免達到尖峰，以防止執行個體過載。 若要這麼做，請在一整天內平均分配工作流程開始時間。
 * 安排隔夜資料載入以減少資源爭用。
@@ -68,7 +70,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是偵錯工作流程�
 
 在最少情況下，只使用無條件停止。 請勿定期使用此動作。 未對工作流生成到資料庫的連接執行清理關閉會影響效能。
 
-### 在引擎選項{#execute-in-the-engine-option}中執行
+### 在引擎選項中執行 {#execute-in-the-engine-option}
 
 在&#x200B;**[!UICONTROL Workflow properties]**&#x200B;視窗中，永不勾選&#x200B;**[!UICONTROL Execute in the engine]**&#x200B;選項。 啟用此選項時，工作流程會優先，而所有其他工作流程會由工作流程引擎停止，直到此工作流程完成為止。
 
@@ -76,13 +78,13 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是偵錯工作流程�
 
 ## 工作流程屬性 {#workflow-properties}
 
-### 工作流資料夾{#workflow-folders}
+### 工作流程資料夾 {#workflow-folders}
 
 Adobe建議您在專用資料夾中建立工作流程。
 
 如果工作流影響整個平台（例如清理過程），您可以考慮在內建&#x200B;**[!UICONTROL Technical Workflows]**&#x200B;資料夾中添加子資料夾。
 
-### 工作流命名{#workflow-naming}
+### 工作流程命名 {#workflow-naming}
 
 由於若未以預期方式執行，可讓工作流程更容易找到並疑難排解，Adobe建議您為工作流程指定適當的名稱和標籤：填寫工作流程的說明欄位，彙總要執行的程式，讓運算子輕鬆瞭解。
 
@@ -96,7 +98,7 @@ Adobe建議您在專用資料夾中建立工作流程。
 * 010 — 匯出 — 匯出傳送記錄檔
 * 011 — 匯出 — 匯出追蹤記錄檔
 
-### 工作流嚴重性{#workflow-severity}
+### 工作流程嚴重性 {#workflow-severity}
 
 您可以在&#x200B;**[!UICONTROL Execution]**&#x200B;標籤的工作流屬性中配置工作流的嚴重性：
 
@@ -116,34 +118,34 @@ Adobe建議您在專用資料夾中建立工作流程。
 
 在工作流屬性中，選擇預設&#x200B;**[!UICONTROL Workflow supervisors]**&#x200B;或自定義組。 請確定至少有一個運算子屬於此群組，並設定了電子郵件。
 
-開始建立工作流之前，請記得定義工作流主管。 若發生錯誤，將會以電子郵件通知他們。 有關詳細資訊，請參閱[管理錯誤](../../workflow/using/monitoring-workflow-execution.md#managing-errors)。
+開始建立工作流之前，請記得定義工作流主管。 若發生錯誤，將會以電子郵件通知他們。 有關詳細資訊，請參閱[管理錯誤](monitoring-workflow-execution.md#managing-errors)。
 
-定期檢查&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤，以檢視作用中工作流程的整體狀態。 有關詳細資訊，請參閱[實例監督](../../workflow/using/monitoring-workflow-execution.md#instance-supervision)。
+定期檢查&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤，以檢視作用中工作流程的整體狀態。 有關詳細資訊，請參閱[實例監督](monitoring-workflow-execution.md#instance-supervision)。
 
-工作流程熱度圖可讓Adobe Campaign平台管理員監控執行個體的負載，並據此規劃工作流程。 有關詳細資訊，請參閱[工作流監視](../../workflow/using/heatmap.md)。
+工作流程熱度圖可讓Adobe Campaign平台管理員監控執行個體的負載，並據此規劃工作流程。 有關詳細資訊，請參閱[工作流監視](heatmap.md)。
 
-## 使用活動{#using-activities}
+## 使用活動 {#using-activities}
 
 >[!CAUTION]
 >
->您可以在相同的工作流程中複製和貼上活動。 不過，我們不建議跨不同的工作流程複製貼上活動。 某些附加至活動（例如傳送和排程器）的設定在執行目標工作流程時可能會導致衝突和錯誤。 反之，我們建議您&#x200B;**複製**&#x200B;工作流程。 如需詳細資訊，請參閱[複製工作流程](../../workflow/using/building-a-workflow.md#duplicating-workflows)。
+>您可以在相同的工作流程中複製和貼上活動。 不過，我們不建議跨不同的工作流程複製貼上活動。 某些附加至活動（例如傳送和排程器）的設定在執行目標工作流程時可能會導致衝突和錯誤。 反之，我們建議您&#x200B;**複製**&#x200B;工作流程。 如需詳細資訊，請參閱[複製工作流程](building-a-workflow.md#duplicating-workflows)。
 
-### 活動的名稱{#name-of-the-activity}
+### 活動名稱 {#name-of-the-activity}
 
 開發工作流程時，所有活動都會有名稱，所有Adobe Campaign物件也一樣。 由工具產生名稱時，建議您在設定名稱時以明確的名稱重新命名。 稍後執行該操作的風險在於，它可能會使用另一個先前活動的名稱來中斷使用活動的工作流程。 因此，要更新名稱將是一項困難的工作。
 
 可在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中找到活動名稱。 請勿將其命名為&#x200B;**[!UICONTROL query]**、**[!UICONTROL query1]**、**[!UICONTROL query11]**，但請為它們指定明確的名稱，例如&#x200B;**[!UICONTROL querySubscribedRecipients]**。 此名稱將顯示在日誌中，如果SQL日誌中適用，這將有助於在配置工作流時調試該工作流。
 
-### 第一個和最後一個活動{#first-and-last-activities}
+### 首次和最後一次活動 {#first-and-last-activities}
 
 * 一律以&#x200B;**[!UICONTROL Start]**&#x200B;活動或&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動啟動工作流程。 相關時，您也可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活動。
-* 在建立工作流程時，每個分支僅使用一個&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動。 如果工作流程的同一分支有多個排程器（相互連結），則要執行的任務數量將呈指數倍增，這將使得資料庫大幅超載。此規則也適用於具有&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;索引標籤的所有活動。 深入了解[排程](../../workflow/using/scheduler.md)。
+* 在建立工作流程時，每個分支僅使用一個&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動。 如果工作流程的同一分支有多個排程器（相互連結），則要執行的任務數量將呈指數倍增，這將使得資料庫大幅超載。此規則也適用於具有&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;索引標籤的所有活動。 深入了解[排程](scheduler.md)。
 
    ![](assets/wf-scheduler.png)
 
-* 對每個工作流使用&#x200B;**[!UICONTROL End]**&#x200B;活動。 這可讓Adobe Campaign釋出工作流程中用於計算的暫存空間。 有關詳細資訊，請參閱：[開始和結束](../../workflow/using/start-and-end.md)。
+* 對每個工作流使用&#x200B;**[!UICONTROL End]**&#x200B;活動。 這可讓Adobe Campaign釋出工作流程中用於計算的暫存空間。 有關詳細資訊，請參閱：[開始和結束](start-and-end.md)。
 
-### 活動{#javascript-within-an-activity}內的Javascript
+### 活動內的Javascript {#javascript-within-an-activity}
 
 初始化工作流程活動時，您可能想要新增JavaScript。 您可以在活動的&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤中完成此作業。
 
@@ -155,7 +157,7 @@ Adobe建議您在專用資料夾中建立工作流程。
 
 ![](assets/workflow-signal-bp.png)
 
-## 工作流更新{#workflow-update}
+## 工作流程更新 {#workflow-update}
 
 生產工作流程不應直接更新。 除非此程式包含使用範本工作流程建立行銷活動，否則應先在開發環境中測試程式。 經過此驗證後，工作流程便可部署並在生產環境中啟動。
 

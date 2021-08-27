@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 建立 Facebook 應用程式{#creating-a-facebook-application}
+
+![](../../assets/v7-only.svg)
 
 有了網路應用程式， Social Marketing可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更輕鬆。 如需Facebook類型Web應用程式的詳細範例，請參閱[Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
 
@@ -90,7 +92,7 @@ ht-degree: 1%
 
    ![](assets/social_webapp_fb_013.png)
 
-## 輸入服務條款和隱私策略連結{#entering-the-terms-of-service-and-privacy-policy-links}
+## 輸入服務條款和隱私權政策連結 {#entering-the-terms-of-service-and-privacy-policy-links}
 
 強烈建議新增&#x200B;**[!UICONTROL Terms of service]**&#x200B;和&#x200B;**[!UICONTROL Privacy policy]**&#x200B;連結，以顯示在Facebook權限請求畫面上。
 
@@ -103,7 +105,7 @@ ht-degree: 1%
 
    ![](assets/social_fb_terms_of_services.png)
 
-## 建立Facebook類型Web應用程式{#creating-a-facebook-type-web-application}
+## 建立Facebook類型Web應用程式 {#creating-a-facebook-type-web-application}
 
 Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個人化內容。 對於每個Facebook應用程式，您都需在Adobe Campaign中建立Web應用程式。 若要建立Facebook Web應用程式，請繼續如下：
 
@@ -137,7 +139,7 @@ Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個�
 
    ![](assets/social_webapp_004.png)
 
-## 配置Facebook頁簽{#configuring-facebook-tabs}
+## 設定Facebook標籤 {#configuring-facebook-tabs}
 
 您可以設定Facebook應用程式，使其在Facebook頁面上顯示為標籤。 若要這麼做，請套用下列步驟：
 

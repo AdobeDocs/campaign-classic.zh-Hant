@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 ---
 
 # 在發送前執行所有檢查 {#perform-all-checks}
+
+![](../../assets/common.svg)
 
 在您的訊息準備就緒後，請確定其內容在所有裝置上皆正確顯示，且不會包含任何錯誤，例如錯誤的個人化或中斷的連結。
 
@@ -90,7 +92,7 @@ ht-degree: 4%
 
 * 對於每個IPAfinity元素，聲明可使用的IP地址。 [深入瞭解](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您選擇的[類型](../../campaign/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理上述相關性的傳送伺服器(MTA)。 [深入瞭解](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在您選擇的[類型](../../campaign-opt/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理上述相關性的傳送伺服器(MTA)。 [深入瞭解](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 傳送電子郵件後，檢查標題以確認傳送的來源IP位址。 您的電子郵件管理員應可協助您取得標題資訊。
 
@@ -100,7 +102,7 @@ ht-degree: 4%
 
 ### 使用類型
 
-您可以使用類型規則，根據特定條件排除部分目標。 這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。例如，您可以篩選未到電子報目標的收件者。 了解更多[，請參閱此範例](../../campaign/using/filtering-rules.md)。
+您可以使用類型規則，根據特定條件排除部分目標。 這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。例如，您可以篩選未到電子報目標的收件者。 了解更多[，請參閱此範例](../../campaign-opt/using/filtering-rules.md)。
 
 ### 避免附件
 

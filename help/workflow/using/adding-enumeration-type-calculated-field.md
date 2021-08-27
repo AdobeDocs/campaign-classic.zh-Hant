@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 1%
 
 ---
 
-# 添加枚舉類型計算欄位{#adding-an-enumeration-type-calculated-field}
+# 添加枚舉類型計算欄位 {#adding-an-enumeration-type-calculated-field}
+
+![](../../assets/common.svg)
 
 在此處，我們要建立具有&#x200B;**[!UICONTROL Enumerations]**&#x200B;類型計算欄位的查詢。 此欄位將在資料預覽視窗中產生額外的欄。 此欄將為每個收件者（0、1和2）指定結果傳回的數值。 新欄中的每個值都會指派性別：&quot;Male&quot;代表&quot;1&quot;,&quot;Femole&quot;代表&quot;2&quot;，如果值等於&quot;0&quot;則代表&quot;Not indiced&quot;。
 
@@ -76,7 +78,7 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_78.png)
 
-   例如，如果您未在&#x200B;**[!UICONTROL List of enumeration values]**&#x200B;中輸入性別&quot;2&quot;，且已選取&#x200B;**[!UICONTROL In other cases]**&#x200B;欄位的&#x200B;**[!UICONTROL Generate a warning and continue]**&#x200B;函式，則會收到警告記錄。 此日誌指示未輸入性別&quot;2&quot;（女性）。 它顯示在資料預覽窗口的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;欄位中。
+   例如，如果您未在&#x200B;**[!UICONTROL List of enumeration values]**&#x200B;中輸入性別&quot;2&quot;，且已選取&#x200B;**[!UICONTROL In other cases]**&#x200B;欄位的&#x200B;**[!UICONTROL Generate a warning and continue]**&#x200B;函式，則會收到警告記錄。 此日誌表示未輸入性別&quot;2&quot;（女性）。 它顯示在資料預覽窗口的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;欄位中。
 
    ![](assets/query_editor_nveau_79.png)
 

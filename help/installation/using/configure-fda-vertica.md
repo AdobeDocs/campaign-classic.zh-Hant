@@ -6,7 +6,7 @@ description: 了解如何在FDA中設定Vertica的存取權
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: a7c080fe4db72f659659c7cac8f2c02031822e04
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
@@ -14,7 +14,9 @@ ht-degree: 2%
 ---
 
 
-# 配置對Vertica {#configure-fda-vertica}的訪問
+# 設定Vertica的存取權 {#configure-fda-vertica}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign **同盟資料存取**(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照以下步驟配置[!DNL Vertica]的訪問。
 
@@ -24,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Vertica] 連接器適用於混合部署和內部部署。有關詳細資訊，請參見[此頁面](../../installation/using/capability-matrix.md)。
+>[!DNL Vertica] 連接器適用於混合部署和內部部署。如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
 
 ![](assets/snowflake_3.png)
 
@@ -90,7 +92,7 @@ ht-degree: 2%
 
 1. 在Adobe Campaign中，您接著可以設定[!DNL Vertica]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#vertical-external)。
 
-## Debian上的Vertica {#vertica-debian}
+## Vertica on Debian {#vertica-debian}
 
 1. 下載[!DNL Vertica]的ODBC驅動程式。 [按一下](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 這裡開始下載。
 
@@ -144,13 +146,13 @@ ht-degree: 2%
 
 1. 在Adobe Campaign中，您接著可以設定[!DNL Vertica]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#vertica-external)。
 
-## Vertica外部帳戶{#vertica-external}
+## Vertica外部帳戶 {#vertica-external}
 
 您需要建立[!DNL Vertica]外部帳戶，將您的Campaign執行個體連結至您的[!DNL Vertica]外部資料庫。
 
 1. 在促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，按一下&#x200B;**[!UICONTROL Administration]**「>」 **[!UICONTROL Platform]**「>」 **[!UICONTROL External accounts]**。
 
-1. 按一下 **[!UICONTROL New]**。
+1. 按一下&#x200B;**[!UICONTROL New]**。
 
 1. 選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 

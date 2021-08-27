@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 新增其他 SQL 函式{#adding-additional-sql-functions}
+
+![](../../assets/v7-only.svg)
 
 ## 簡介 {#introduction}
 
@@ -37,7 +39,7 @@ Adobe Campaign允許用戶定義其自己的函式&#x200B;**可訪問SQL函式�
 >
 >警告：即使匯入的函式清單直接出現在函式編輯器中，但在Adobe Campaign重新啟動前，這些函式將無法使用。
 
-## 要導入的包的一般結構{#general-structure-of-package-to-import}
+## 要導入的包的一般結構 {#general-structure-of-package-to-import}
 
 可在&#x200B;**&quot;package&quot;檔案**&#x200B;中以XML格式找到要新增的函式。 以下是範例：
 
@@ -131,7 +133,7 @@ Adobe Campaign允許用戶定義其自己的函式&#x200B;**可訪問SQL函式�
    >
    >如果定義的函式可能只查詢一個或兩個資料庫，則我們始終只能提供與這些資料庫對應的定義。
 
-## &#39;傳遞&#39;函式描述符{#pass-through--function-descriptor}
+## &#39;傳遞&#39;函式描述符 {#pass-through--function-descriptor}
 
 特殊函式描述符是&#x200B;**&quot;傳遞&quot;**&#x200B;塊，帶有未指定的&quot;provider&quot;資料庫系統。 在此情況下，「body」實作只能包含單一函式呼叫，其語法與使用的資料庫無關。 同時，「ProviderPart」塊是唯一的。
 

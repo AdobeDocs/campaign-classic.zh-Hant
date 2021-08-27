@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 定義目標人口 {#defining-the-target-population}
+
+![](../../assets/common.svg)
 
 ## 關於目標人口 {#about-target-populations}
 
@@ -223,7 +225,7 @@ ht-degree: 3%
 
 您可以使用&#x200B;**[!UICONTROL Specific target and Seed addresses]**&#x200B;選項結合特定校樣目標的定義和使用種子地址。 然後，在兩個不同的子標籤中定義相關配置。
 
-另請參閱：
+另請參閱:
 
 * [選取校樣目標](#selecting-the-proof-target)
 * [關於種子地址](about-seed-addresses.md)

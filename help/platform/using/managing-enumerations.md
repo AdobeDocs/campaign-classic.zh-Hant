@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
-# 管理枚舉{#managing-enumerations}
+# 管理分項清單{#managing-enumerations}
+
+![](../../assets/common.svg)
 
 列舉（也稱為「分項清單」）是系統建議填入特定欄位的值清單。 列舉可讓您標準化這些欄位的值，並協助輸入資料或在查詢內使用。
 
@@ -21,7 +23,7 @@ ht-degree: 0%
 
 已使用此類型的列舉定義了某些主控台欄位。 如果您可以在對應欄位中直接輸入來新增值，則列舉稱為「開啟」。
 
-## 存取值{#access-to-values}
+## 存取值 {#access-to-values}
 
 定義此類型欄位的值，並透過樹狀結構的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;節點對這些欄位（新增/刪除值）執行整體管理。
 
@@ -42,9 +44,9 @@ ht-degree: 0%
 
 * 如果選取&#x200B;**[!UICONTROL Closed]**&#x200B;選項，使用者將無法建立新值，而僅能從可用值中選擇。
 
-## 標準化資料{#standardizing-data}
+## 標準化資料 {#standardizing-data}
 
-### 關於別名清除{#about-alias-cleansing}
+### 關於別名清除 {#about-alias-cleansing}
 
 在分項清單欄位中，您可以輸入除分項清單值之外的值。 這些檔案可以按原樣儲存，也可以清理。
 
@@ -62,13 +64,13 @@ ht-degree: 0%
    >
    >如果您需要使用資料清除功能，請在分項清單中選取&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;選項。
 
-### 使用別名{#using-aliases}
+### 使用別名 {#using-aliases}
 
 選項&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;使所選分項清單可以使用別名。 選取此選項時， **[!UICONTROL Alias]**&#x200B;頁簽將顯示在窗口底部。
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
-#### 建立別名{#creating-an-alias}
+#### 建立別名 {#creating-an-alias}
 
 要建立別名，請按一下&#x200B;**[!UICONTROL Add]**。
 
@@ -90,7 +92,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
-#### 將值轉換為別名{#converting-values-into-aliases}
+#### 將值轉換為別名 {#converting-values-into-aliases}
 
 要將枚舉值轉換為別名，請在值清單中按一下右鍵並選擇&#x200B;**[!UICONTROL Convert values into aliases...]**。
 
@@ -108,7 +110,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### 擷取別名點擊{#retrieving-alias-hits}
+#### 擷取別名點擊 {#retrieving-alias-hits}
 
 用戶輸入的值可以轉換為別名。 實際上，當用戶輸入未包含在分項清單中的值時，該值將儲存在&#x200B;**[!UICONTROL Alias]**&#x200B;頁簽中。
 
@@ -116,7 +118,7 @@ ht-degree: 0%
 
 如有必要，**[!UICONTROL Hits]**&#x200B;欄可顯示輸入此值的次數。 計算此值可能既耗時又耗時。 有關詳細資訊，請參閱[計算登入發生次數](#calculating-entry-occurrences)。
 
-### 運行資料清理{#running-data-cleansing}
+### 執行資料清理 {#running-data-cleansing}
 
 資料清理由&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;技術工作流程執行。 為枚舉定義的配置在執行期間應用。 請參閱[別名清除工作流](#alias-cleansing-workflow)。
 
@@ -130,7 +132,7 @@ ht-degree: 0%
 
 按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕以執行資料清理。
 
-#### 計算條目發生次數{#calculating-entry-occurrences}
+#### 計算登入次數 {#calculating-entry-occurrences}
 
 明細清單的&#x200B;**[!UICONTROL Alias]**&#x200B;子索引標籤可顯示所有輸入值中別名的發生次數。 此資訊是估計值，將顯示在&#x200B;**[!UICONTROL Hits]**&#x200B;欄中。
 
@@ -152,7 +154,7 @@ ht-degree: 0%
 * **-** updateHits以更新別名點擊數，
 * **-updateHits:** full，重新計算所有別名點擊。
 
-#### 別名清除工作流{#alias-cleansing-workflow}
+#### 別名清除工作流程 {#alias-cleansing-workflow}
 
 **別名清除**&#x200B;工作流運行枚舉值清除。 預設會每天執行。
 

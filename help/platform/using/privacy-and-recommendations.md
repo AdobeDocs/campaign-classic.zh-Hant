@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
 
 ---
 
 # 隱私權與同意{#privacy-and-recommendations}
+
+![](../../assets/common.svg)
 
 ## 一般性建議 {#general-recommendations}
 
@@ -85,7 +87,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 
 因此，身為收集和分享個人資料的公司，您是資料控制方、客戶是資料主體，而 Adobe Campaign 在依您的指示處理個人資料時，會作為資料處理方。請注意，身為資料控制方，您有責任處理與資料主體的關係，例如管理[隱私權要求](#privacy-requests)。
 
-### 使用案例情境{#use-case-scenario}
+### 使用案例情境 {#use-case-scenario}
 
 為了說明不同角色如何互動，以下是 GDPR 客戶體驗的高階使用案例。
 
@@ -122,7 +124,7 @@ Adobe Campaign 可讓您收集資料，包括個人和敏感資訊。因此，�
 
 ## 隱私權管理 {#privacy-management}
 
-隱私權管理是指可協助您遵守隱私權法規（GDPR、CCPA等）的所有程序及工具。取得[本頁面](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html)隱私權管理內容的概觀。
+隱私權管理是指可協助您遵守隱私權法規 (GDPR、CCPA等) 的所有流程及工具。取得[本頁面](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html)隱私權管理內容的概觀。
 
 Adobe Campaign 提供專屬於隱私權管理的各種功能：
 * 同意管理、資料保留和使用者角色。請參閱[本節](#consent)。
@@ -141,7 +143,7 @@ Adobe Campaign 提供專屬於隱私權管理的各種功能：
 
 如需這些功能及如何在 Adobe Campaign 中管理這些功能的詳細資訊，請參閱[本節](../../platform/using/privacy-management.md#consent-retention-roles)。
 
-### 隱私權要求 {#privacy-requests}
+### 隱私權請求 {#privacy-requests}
 
 Adobe Campaign 提供其他功能，協助您作為資料控制方，針對特定隱私權要求預作準備：
 
@@ -176,7 +178,7 @@ Adobe Campaign 可讓您追蹤已傳送的電子郵件和傳遞收件者的行�
 
 若要這麼做，請將[追蹤連結](../../delivery/using/how-to-configure-tracked-links.md)新增至您的訊息，以便在傳遞儀表板的[追蹤](../../delivery/using/delivery-dashboard.md#tracking-logs)標籤中測量傳遞和收件者行為的影響。 追蹤資料會在[追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)報吿中詮釋。
 
-### 網站追蹤 {#web-tracking}
+### 網路追蹤 {#web-tracking}
 
 Adobe Campaign 也可讓您監視收件者瀏覽網站的方式：插入追蹤標籤，以收集資訊並測量網站應用程式頁面上的瀏覽。 如需詳細資訊，請參閱[追蹤網站應用程式](../../web/using/tracking-a-web-application.md)。
 

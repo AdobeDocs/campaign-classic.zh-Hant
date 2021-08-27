@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 在Adobe Campaign中設定共用受眾整合{#configuring-shared-audiences-integration-in-adobe-campaign}
+
+![](../../assets/common.svg)
 
 提交此請求後，Adobe將繼續為您布建整合，並聯繫您以提供詳細資訊和資訊，以便您完成配置：
 
@@ -26,7 +28,7 @@ ht-degree: 2%
 >
 >如果您使用Demdex網域，並針對匯入外部帳戶遵循語法&#x200B;**ftp-out.demdex.com**&#x200B;及針對匯出外部帳戶遵循&#x200B;**ftp-in.demdex.com**，則需據此調整實施，並移至Amazon Simple Storage Service(S3)連接器以匯入或匯出資料。 如需如何使用Amazon S3設定外部帳戶的詳細資訊，請參閱此[區段](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)。
 
-## 步驟1:在Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}中設定或檢查外部帳戶
+## 步驟1:在Adobe Campaign中設定或檢查外部帳戶 {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 首先，我們需要設定或檢查Adobe Campaign中的外部帳戶，如下所示：
 
@@ -65,7 +67,7 @@ ht-degree: 2%
 
 您的外部帳戶現在已設定完畢。
 
-## 步驟2:配置資料源{#step-2--configure-the-data-source}
+## 步驟2:設定資料來源 {#step-2--configure-the-data-source}
 
 **Recipient - Visitor ID**&#x200B;是在Audience Manager內建立。 這是預設為訪客ID設定的現成可用資料來源。 從Campaign建立的區段將屬於此資料來源。
 
@@ -77,13 +79,13 @@ ht-degree: 2%
 
    ![](assets/aam_config_3.png)
 
-## 步驟3:設定促銷活動追蹤伺服器{#step-3--configure-campaign-tracking-server}
+## 步驟3:設定促銷活動追蹤伺服器 {#step-3--configure-campaign-tracking-server}
 
 若要設定與People核心服務或Audience Manager的整合，我們也需要設定Campaign追蹤伺服器。
 
 您必須確定已在網域(CNAME)上註冊促銷活動追蹤伺服器。 您可以在[本文](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)中找到有關域名委派的更多資訊。
 
-## 步驟4:設定訪客ID服務{#step-4--configure-the-visitor-id-service}
+## 步驟4:設定訪客ID服務 {#step-4--configure-the-visitor-id-service}
 
 如果您的訪客ID服務從未在您的Web屬性或網站上設定，請參閱下列[document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以了解如何設定您的服務或下列[video](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two) 。
 

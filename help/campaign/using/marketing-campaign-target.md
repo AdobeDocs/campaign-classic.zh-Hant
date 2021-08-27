@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 選取行銷活動的對象 {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 在行銷活動中，您可以針對每個傳送定義：
 
@@ -39,7 +41,7 @@ ht-degree: 2%
 
 ![](assets/s_user_target_group_next.png)
 
-## 在促銷活動工作流程{#building-the-main-target-in-a-workflow}中建立對象
+## 在行銷活動工作流程中建立對象 {#building-the-main-target-in-a-workflow}
 
 傳遞的主要目標也可以在促銷活動工作流程中定義：此圖形環境可讓您使用查詢、測試和運算子來建立目標：聯合、重複資料刪除、共用等。
 
@@ -47,7 +49,7 @@ ht-degree: 2%
 >
 >行銷活動中不得新增超過28個工作流程。 若超過此限制，介面中將不會顯示其他工作流程，且可能會產生錯誤。
 
-### 建立工作流{#creating-a-targeting-workflow}
+### 建立工作流程 {#creating-a-targeting-workflow}
 
 您可以透過工作流程中圖形順序的篩選條件組合來建立定位。 您可以建立人口和子人口，並根據您的需求進行定位。 若要顯示工作流程編輯器，請按一下促銷活動控制面板中的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;標籤。
 
@@ -86,7 +88,7 @@ ht-degree: 2%
 1. 選取&#x200B;**[!UICONTROL New workflow]**&#x200B;範本，並為此工作流程命名。
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;確認建立工作流，然後建立此工作流的圖。
 
-### 執行工作流{#executing-a-workflow}
+### 執行工作流程 {#executing-a-workflow}
 
 若您具有適當的權限，則可透過工具列的&#x200B;**[!UICONTROL Start]**&#x200B;按鈕手動啟動目標工作流程。
 
@@ -167,18 +169,18 @@ ht-degree: 2%
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-## 添加控制組{#defining-a-control-group}
+## 新增控制組 {#defining-a-control-group}
 
 控制組是不會收到傳遞的母體；它可用來透過與已接收傳送的目標母體行為比較，來追蹤傳送後行為和促銷活動影響。
 
 可從主目標中提取控制組和/或來自特定組或查詢。
 
-### 啟動促銷活動{#activating-the-control-group-for-a-campaign}的控制組
+### 為促銷活動啟動控制組 {#activating-the-control-group-for-a-campaign}
 
 您可以在促銷活動層級定義控制組，在這種情況下，控制組將套用至相關促銷活動的每個傳送。
 
 1. 編輯相關促銷活動，然後按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤。
-1. 按一下 **[!UICONTROL Advanced campaign settings]**。
+1. 按一下&#x200B;**[!UICONTROL Advanced campaign settings]**。
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
@@ -189,7 +191,7 @@ ht-degree: 2%
 
 配置過程顯示在[從主目標](#extracting-the-control-group-from-the-main-target)提取控制組和[添加控制組](#adding-a-population)中。
 
-### 啟用傳送{#activating-the-control-group-for-a-delivery}的控制組
+### 啟動傳送的控制組 {#activating-the-control-group-for-a-delivery}
 
 您可以在傳送層級定義控制組，在此情況下，控制組將套用至相關促銷活動的每個傳送。
 
@@ -208,7 +210,7 @@ ht-degree: 2%
 
 配置過程顯示在[從主目標](#extracting-the-control-group-from-the-main-target)提取控制組和[添加控制組](#adding-a-population)中。
 
-### 從主目標{#extracting-the-control-group-from-the-main-target}中提取控制組
+### 從主目標中提取控制組 {#extracting-the-control-group-from-the-main-target}
 
 您可以從傳送的主要目標擷取收件者。 在此情況下，收件者將從受此設定影響之傳送動作的目標中取得。 此提取可以是隨機的，也可以是排序收件者的結果。
 
@@ -225,7 +227,7 @@ ht-degree: 2%
 
 此設定等同於工作流程中的共用活動，可讓您將目標細分為子集。 控制組是這些子集之一。 如需詳細資訊，請參閱[此區段](../../workflow/using/architecture.md)。
 
-### 使用新母體作為控制組{#adding-a-population}
+### 使用新母體作為控制組 {#adding-a-population}
 
 您可以定義新母體以用作控制組。 此母體可以來自一組收件者，或者您可以透過特定查詢建立。
 
@@ -236,7 +238,7 @@ ht-degree: 2%
 >Adobe Campaign查詢編輯器顯示在[此區段](../../workflow/using/query.md)中。
 
 
-#### 教學課程影片{#create-email-video}
+#### 教學課程影片 {#create-email-video}
 
 此影片說明如何在Adobe Campaign中建立行銷活動和電子郵件。
 

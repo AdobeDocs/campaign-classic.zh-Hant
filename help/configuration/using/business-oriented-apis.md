@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 商業導向 API{#business-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 業務API是每種物件類型專屬的。 它們對以下方面有影響：
 
@@ -40,7 +42,7 @@ ht-degree: 3%
 >
 >[Campaign JSAPI檔](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 案包含Adobe Campaign中SOAP呼叫與使用Javascript的其他資訊，以及應用程式中所使用所有方法和函式的完整參考。
 
-## 訂閱(nms:subscription){#subscribe--nms-subscription-}
+## 訂閱(nms:subscription) {#subscribe--nms-subscription-}
 
 此服務可讓您訂閱資訊服務的收件者，並更新收件者設定檔。
 
@@ -81,7 +83,7 @@ ht-degree: 3%
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
 ```
 
-### SOAP消息{#example-of-soap-messages}示例
+### SOAP消息的示例 {#example-of-soap-messages}
 
 * 查詢:
 
@@ -113,7 +115,7 @@ ht-degree: 3%
    </SOAP-ENV:Envelope>
    ```
 
-## 取消訂閱(nms:subscription){#unsubscribe--nms-subscription-}
+## 取消訂閱(nms:subscription) {#unsubscribe--nms-subscription-}
 
 此服務可讓您從資訊服務中取消訂閱收件者，並更新收件者設定檔。
 
@@ -144,7 +146,7 @@ ht-degree: 3%
 
 除錯誤外，此呼叫不會傳回任何資料。
 
-### SOAP消息{#example-of-soap-messages-1}示例
+### SOAP消息的示例 {#example-of-soap-messages-1}
 
 查詢:
 
@@ -174,7 +176,7 @@ ht-degree: 3%
 </SOAP-ENV:Envelope>
 ```
 
-## SubmitDelivery(nms:delivery){#submitdelivery--nms-delivery-}
+## SubmitDelivery(nms:delivery) {#submitdelivery--nms-delivery-}
 
 此服務可讓您建立和提交傳送動作。
 
@@ -203,7 +205,7 @@ ht-degree: 3%
 
 除錯誤外，此呼叫不會傳回任何資料。
 
-### XML文檔示例{#xml-document-example}
+### XML文檔示例 {#xml-document-example}
 
 此範例以來自外部資料來源的自訂傳送範本為基礎（此為檔案）。 傳遞範本中會詳細說明設定，因此呼叫發生時所有仍待傳送的內容，都是`<externalsource>`元素中的檔案內容。
 

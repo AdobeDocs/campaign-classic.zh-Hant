@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 6ccda57d-f7a3-4501-b2f4-59fcb05f9013
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 影像遺失{#images-missing}
+
+![](../../assets/v7-only.svg)
 
 在17.9版中，已移動數個檔案（尤其是圖示）。
 

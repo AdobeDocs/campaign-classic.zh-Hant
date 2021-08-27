@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
 
 ---
 
-# 進階參數{#advanced-parameters}
+# 高級參數{#advanced-parameters}
+
+![](../../assets/common.svg)
 
 活動的屬性畫面有一個&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤，可讓您定義發生錯誤時的行為，即活動的執行期間；和可讓您輸入初始化指令碼。 此標籤有兩個版本：
 
@@ -33,7 +35,7 @@ ht-degree: 2%
 
 ## 影像 {#image}
 
-此欄位可讓您變更連結至活動的影像。 有關詳細資訊，請參閱：[管理活動影像](../../workflow/using/managing-activity-images.md)。
+此欄位可讓您變更連結至活動的影像。 有關詳細資訊，請參閱：[管理活動影像](managing-activity-images.md)。
 
 ## 執行 {#execution}
 
@@ -52,7 +54,7 @@ ht-degree: 2%
 在此[節](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)中詳細說明了高可用性工作流配置。
 
 
-## Max。 執行期&lt;a0/{#max--execution-period}
+## Max。 執行期間 {#max--execution-period}
 
 此欄位可讓您在任務過長時設定警告。 它不會影響工作流程操作。 如果&#x200B;**[!UICONTROL Max. execution period]**&#x200B;結束前未完成該任務，則&#x200B;**[!UICONTROL Instance monitoring]**&#x200B;頁面將顯示此工作流的警告。 此頁面可透過首頁的&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤存取。
 
@@ -65,18 +67,18 @@ ht-degree: 2%
 
 ## 時區 {#time-zone}
 
-此欄位可讓您選取活動的時區。 如需詳細資訊：[管理時區](../../workflow/using/managing-time-zones.md)。
+此欄位可讓您選取活動的時區。 如需詳細資訊：[管理時區](managing-time-zones.md)。
 
-## 如果出現錯誤{#in-case-of-errors}
+## 發生錯誤時 {#in-case-of-errors}
 
 此欄位可讓您定義當活動發生錯誤時要執行的動作。 有兩種可能的選項：
 
 * **[!UICONTROL Stop the process]**:工作流程會自動停止。其狀態變更為&#x200B;**[!UICONTROL Failed]**。 問題解決後，重新啟動工作流。
 * **[!UICONTROL Ignore]**:不會執行此任務和以下所有任務（在同一分支中）。這對循環任務非常有用。 如果分支有上游的排程器，則會照常在下一個執行日期開始。
 
-## 初始化指令碼{#initialization-script}
+## 初始化指令碼 {#initialization-script}
 
-此欄位可讓您初始化變數或修改活動屬性。 有關詳細資訊，請參閱：[JavaScript指令碼和模板](../../workflow/using/javascript-scripts-and-templates.md)。
+此欄位可讓您初始化變數或修改活動屬性。 有關詳細資訊，請參閱：[JavaScript指令碼和模板](javascript-scripts-and-templates.md)。
 
 ## 註解 {#comment}
 

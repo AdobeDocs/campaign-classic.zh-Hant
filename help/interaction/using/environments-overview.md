@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: ba588591-5171-4c35-bc8c-3979274e21b2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 環境概覽{#environments-overview}
+
+![](../../assets/v7-only.svg)
 
 本章詳細說明如何在互動中管理優惠方案環境。
 

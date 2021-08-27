@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
 
 # 常用指令{#usual-commands}
+
+![](../../assets/v7-only.svg)
 
 本節列出Adobe Campaign中的常用命令。
 
@@ -31,8 +33,7 @@ ht-degree: 3%
 >
 
 
-
-## 監視命令{#monitoring-commands-}
+## 監視命令 {#monitoring-commands-}
 
 >[!NOTE]
 >
@@ -74,7 +75,7 @@ wfserver@test
 
 這對應於具有自動啟動但尚未啟動的模組。
 
-## 模組啟動命令{#module-launch-commands}
+## 模組啟動命令 {#module-launch-commands}
 
 啟動模組的語法仍會有下列格式：
 
@@ -90,7 +91,7 @@ nlserver stop <module>@<INSTANCE>
 >
 >**`<instance>`** 與配置檔案中輸入的實例名稱相對應，或與單實例模 **** 組的預設值相對應。
 
-## 關閉服務{#shut-down-services}
+## 關閉服務 {#shut-down-services}
 
 若要停止Adobe Campaign服務，請使用下列其中一個命令：
 
@@ -118,7 +119,7 @@ nlserver stop <module>@<INSTANCE>
    nlserver shutdown 
    ```
 
-## 重新啟動服務{#restart-services}
+## 重新啟動服務 {#restart-services}
 
 同樣地，若要重新啟動Adobe Campaign，您可以使用下列其中一個命令：
 
@@ -134,7 +135,7 @@ nlserver stop <module>@<INSTANCE>
 
 * 否則，在Adobe Campaign帳戶中：**nlserver watchdog -svc -noconsole**
 
-## 配置命令{#the-config-command}
+## config命令 {#the-config-command}
 
 **config**&#x200B;命令允許您管理伺服器配置，包括重新配置資料庫連接。
 
@@ -161,8 +162,5 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 通常，您可以使用&#x200B;**config**&#x200B;命令，而不是手動修改配置檔案
 >* 要獲取參數清單，請使用&#x200B;**-?** 參數： **nlserver配置 — ?**
 >* 若是Oracle資料庫，則不得指定帳戶。 語法如下：
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
-
+>  nlserver配置 — setdblogin&lt;a0/test6@dbserver:Oracle:

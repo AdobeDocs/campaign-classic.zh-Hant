@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 設定和傳送傳遞 {#configuring-and-sending-the-delivery}
+
+![](../../assets/common.svg)
 
 >[!NOTE]
 >
@@ -139,7 +141,7 @@ ht-degree: 5%
    >
    >配置最後一波時，您也必須有足夠的時間重試。 請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 若要監控您的傳送，請前往傳送記錄檔。 請參閱[本頁](delivery-dashboard.md#delivery-logs-and-history)。
+1. 若要監控您的傳送，請前往傳送記錄檔。 請參閱[此頁面](delivery-dashboard.md#delivery-logs-and-history)。
 
    您可以看到已在處理波次（**[!UICONTROL Sent]**&#x200B;狀態）中傳送的傳送，以及將在剩餘波次（**[!UICONTROL Pending]**&#x200B;狀態）中傳送的傳送。
 

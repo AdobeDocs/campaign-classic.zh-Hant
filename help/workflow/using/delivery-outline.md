@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
@@ -15,13 +15,15 @@ ht-degree: 1%
 
 # 傳遞大綱{#delivery-outline}
 
+![](../../assets/common.svg)
+
 **傳遞大綱**&#x200B;可讓您在促銷活動工作流程中使用大綱。 大綱必須預先在促銷活動中建立。
 
 如需Adobe Campaign中傳送大綱的詳細資訊，請參閱此[區段](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 要配置活動，您只需選擇所需的大綱以及計畫的聯繫日期。 您可以新增類型或類型規則，以新增篩選規則。
 
-## 範例：透過傳送大綱{#example--inserting-an-offer-via-a-delivery-outline}插入優惠方案
+## 範例：透過傳遞大綱插入優惠方案 {#example--inserting-an-offer-via-a-delivery-outline}
 
 **傳遞大綱**&#x200B;活動可在促銷活動工作流程中使用，讓您呈現在傳遞大綱中參考且來自目前進行中的促銷活動的選件。
 

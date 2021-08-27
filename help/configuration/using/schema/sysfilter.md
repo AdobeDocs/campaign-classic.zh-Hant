@@ -6,28 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: a0069688-fd05-42e9-91dd-adc10bea3461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 18%
 
 ---
 
-# sysfilter元素{#sysfilter--element}
+# sysfilter元件 {#sysfilter--element}
 
-## 內容模型{#content-model-15}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-15}
 
 sysFilter:==條件
 
-## 屬性{#attributes-15}
+## 屬性 {#attributes-15}
 
 無
 
-## 父級{#parents-15}
+## 父母 {#parents-15}
 
 `<element>`
 
-## 子項{#children-15}
+## 兒童 {#children-15}
 
 `<condition>`
 
@@ -35,7 +37,7 @@ sysFilter:==條件
 
 此元素可讓您定義篩選器。
 
-## 屬性說明{#attribute-description-15}
+## 屬性說明 {#attribute-description-15}
 
 此元素沒有屬性。
 

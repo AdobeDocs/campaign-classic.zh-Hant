@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 建立預先定義的篩選{#creating-predefined-filters}
+
+![](../../assets/v7-only.svg)
 
 預先定義的篩選條件可讓您建立目標母體的適用性規則，以便在建立優惠方案時輕鬆重複使用。 它們是每個環境專屬的，且會將優惠方案參數納入考量。
 
@@ -23,7 +25,7 @@ ht-degree: 8%
 
    ![](assets/offer_filter_create_005.png)
 
-1. 按一下 **[!UICONTROL New]**。
+1. 按一下&#x200B;**[!UICONTROL New]**。
 
    ![](assets/offer_filter_create_001.png)
 

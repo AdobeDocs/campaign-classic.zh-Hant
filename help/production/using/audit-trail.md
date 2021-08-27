@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 稽核軌跡{#audit-trail}
+
+![](../../assets/v7-only.svg)
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可讓您存取在執行個體中所做變更的完整歷史記錄。
 
@@ -49,7 +51,7 @@ ht-degree: 3%
 
    有關選項的詳細資訊，請參閱此[page](../../installation/using/configuring-campaign-options.md)。
 
-## 訪問審核跟蹤{#accessing-audit-trail}
+## 存取稽核軌跡 {#accessing-audit-trail}
 
 若要存取執行個體的&#x200B;**[!UICONTROL Audit trail]** :
 
@@ -80,7 +82,7 @@ ht-degree: 3%
 >
 >根據預設，**[!UICONTROL Audit logs]**&#x200B;的保留期間設為180天。 若要進一步了解如何變更保留期，請參閱此[page](../../production/using/database-cleanup-workflow.md#deployment-wizard)。
 
-## 啟用/禁用審核跟蹤{#enable-disable-audit-trail}
+## 啟用/停用稽核軌跡 {#enable-disable-audit-trail}
 
 例如，如果您想要在資料庫中儲存一些空間，則可以輕鬆啟動或停用特定活動的稽核軌跡。
 
@@ -104,4 +106,4 @@ ht-degree: 3%
 
    ![](assets/audit_trail_6.png)
 
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Save]**。

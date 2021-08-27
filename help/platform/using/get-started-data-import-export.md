@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 12%
@@ -14,6 +14,8 @@ ht-degree: 12%
 ---
 
 # 開始使用匯入及匯出資料 {#get-started-data-import-export}
+
+![](../../assets/common.svg)
 
 Adobe Campaign Classic提供資料管理功能，可讓您匯入和匯出資料。 這些操作可使用工作流程或一般匯入和匯出來執行。
 
@@ -44,7 +46,7 @@ Adobe Campaign Classic提供資料管理功能，可讓您匯入和匯出資料�
 >[!IMPORTANT]
 >一般匯入和匯出應僅用於偶爾作業。 為確保資料一致性並提高效率，建議您使用工作流程執行匯入和匯出操作。
 
-## 資料加密和壓縮{#data-encryption-compression}
+## 資料加密和壓縮 {#data-encryption-compression}
 
 <img src="assets/do-not-localize/icon_encrypt.svg" width="60px">
 

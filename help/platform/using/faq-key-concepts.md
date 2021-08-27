@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 97%
@@ -14,6 +14,8 @@ ht-degree: 97%
 ---
 
 # 重要概念 {#key-concepts}
+
+![](../../assets/common.svg)
 
 瞭解開始使用 Adobe Campaign 的關鍵步驟。
 
@@ -114,7 +116,7 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 ## 如何翻譯錯誤訊息？ {#how-to-translate-an-error-message-}
 
-出現了以外文顯示的錯誤訊息？[本頁面](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)列出所有錯誤訊息及其翻譯。
+出現了以外文顯示的錯誤訊息？[本頁面](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)列出所有錯誤訊息及其翻譯。
 
 ## 我可以在 Campaign 中製作網頁表單和收集回答嗎？ {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 

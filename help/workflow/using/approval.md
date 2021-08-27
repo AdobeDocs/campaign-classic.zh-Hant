@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 核准{#approval}
 
+![](../../assets/common.svg)
+
 **Approval**&#x200B;任務需要運算子的參與。 運算子會獲派任務，並可使用電子郵件中連結的網頁或透過主控台以電子郵件回應。
 
-## 任務分配{#task-assignment}
+## 任務分配 {#task-assignment}
 
 依預設，會將核准指派給一組運算子。 此群組代表角色，例如「電子報內容群組」或「電子報目標群組」。 群組中的每個運算子都可以回答，但只考慮第一個回覆（若發生多次核准則除外）。
 
@@ -63,9 +65,9 @@ ht-degree: 0%
 
 此範本可修改為個人化訊息配置，但最好複製。 不得修改目標定位機制（外部檔案、目標對應），因為通知必須正確運作。
 
-[Defining approvals](../../workflow/using/defining-approvals.md)中顯示了批准示例。
+[Defining approvals](defining-approvals.md)中顯示了批准示例。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * **[!UICONTROL response]**
 

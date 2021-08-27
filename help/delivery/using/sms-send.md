@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 傳送、監視及追蹤SMS傳遞{#sms-properties}
+
+![](../../assets/common.svg)
 
 ## 傳送SMS訊息 {#sending-sms-messages}
 
@@ -167,4 +169,4 @@ InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些�
 >
 >這類自動訊息不會保留歷史記錄。 因此，傳送控制面板中不會顯示這些字元。 [深入瞭解](delivery-dashboard.md)。
 >
->商業壓力規則沒有考慮這些報文。 [深入瞭解](../../campaign/using/pressure-rules.md)。
+>商業壓力規則沒有考慮這些報文。 [深入瞭解](../../campaign-opt/using/pressure-rules.md)。

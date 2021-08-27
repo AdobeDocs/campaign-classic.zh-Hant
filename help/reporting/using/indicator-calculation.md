@@ -6,16 +6,18 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2972'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 指標計算 {#indicator-calculation}
 
-## 用戶活動{#user-activities-1}
+![](../../assets/common.svg)
+
+## 使用者活動 {#user-activities-1}
 
 <table> 
  <thead> 
@@ -28,7 +30,7 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 開啟的郵件<br /> </td> 
+   <td> 開啟次數<br /> </td> 
    <td> @opens<br /> </td> 
    <td> URL主鍵@totalClicks為1的全部總和。<br /> </td> 
    <td> sum(Iif([@url-id]=1, @totalClicks, 0))<br /> </td> 
@@ -50,7 +52,7 @@ ht-degree: 1%
 
 此報表以&#x200B;**[!UICONTROL Consolidated tracking]**&#x200B;表格(nms:trackingStats)為基礎。 此匯總表用於顯示報表時的效能原因，取代&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表(nms:trackingLogRcp)，且不會即時計算。 系統會在擷取追蹤記錄數後幾分鐘產生表格。 如果指標是最新的，則結果與&#x200B;**追蹤指標**&#x200B;報告的指標相同。 @totalclicks指示器表示在5分鐘期間的點按總數。
 
-## 傳送失敗和退回的郵件 {#non-deliverables-and-bounces-1}
+## 傳遞失敗和退回次數 {#non-deliverables-and-bounces-1}
 
 **按錯誤類型劃分**
 
@@ -203,7 +205,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 共用至社交網路{#sharing-to-social-networks-1}
+## 分享至社交網路 {#sharing-to-social-networks-1}
 
 此報表以&#x200B;**[!UICONTROL Delivery]**(nms:delivery)、**[!UICONTROL Consolidated tracking]**(nms:trackingStats)和&#x200B;**[!UICONTROL Web tracking]**(nms:webTrackingLog)表格為基礎。
 
@@ -340,7 +342,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 共用活動統計資料{#statistics-on-sharing-activities-1}
+## 共用活動統計 {#statistics-on-sharing-activities-1}
 
 此報表以&#x200B;**[!UICONTROL Delivery]**(nms:delivery)、**[!UICONTROL Consolidated tracking]**(nms:trackingStats)和&#x200B;**[!UICONTROL Web tracking]**(nms:webTrackingLog)表格為基礎。
 
@@ -361,7 +363,7 @@ ht-degree: 1%
    <td> 公式：count(@id)<br />篩選器：@recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
-   <td> 開啟的郵件<br /> </td> 
+   <td> 開啟次數<br /> </td> 
    <td> @opened<br /> </td> 
    <td> URL類型等於「Open」@ids的所有計數。<br /> </td> 
    <td> count(Iif([url/@type] = 2, @id, 0))<br /> </td> 
@@ -445,7 +447,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 訂閱追蹤{#subscription-tracking-1}
+## 訂閱追蹤 {#subscription-tracking-1}
 
 此報告以&#x200B;**[!UICONTROL Services]**&#x200B;表(nms:service)為基礎。
 
@@ -561,7 +563,7 @@ ht-degree: 1%
    <td> Count(@status=2和msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 開啟的郵件<br /> </td> 
+   <td> 開啟次數<br /> </td> 
    <td> @recipientOpen<br /> </td> 
    <td> 所有追@broadLog-ids記錄檔中的所有計數。<br /> </td> 
    <td> Countdistinct([@broadLog-id])<br /> </td> 
@@ -689,7 +691,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## URL 和點按流 {#urls-and-click-streams-1}
+## URL 和點擊流量 {#urls-and-click-streams-1}
 
 此報表以&#x200B;**[!UICONTROL Delivery]**&#x200B;表格(nms:delivery)為基礎。
 
@@ -736,7 +738,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 傳送摘要 {#delivery-summary-1}
+## 傳遞摘要 {#delivery-summary-1}
 
 此報表以&#x200B;**[!UICONTROL Delivery]**&#x200B;表格(nms:delivery)為基礎。
 
@@ -789,13 +791,13 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 熱點點按 {#hot-clicks-1}
+## 熱點點擊 {#hot-clicks-1}
 
 此報告以「傳送」(nms:delivery)和&#x200B;**[!UICONTROL Consolidated tracking]**(nms:trackingStats)表格為基礎。
 
 此報表顯示每個連結上含有點按百分比的訊息內容（HTML和/或文字）。 個人化區塊取消訂閱連結和鏡像頁面連結會納入累積點按總數中，但不會顯示在報表中。
 
-## 跟蹤統計資料{#tracking-statistics-1}
+## 追蹤統計資料 {#tracking-statistics-1}
 
 此報表以&#x200B;**[!UICONTROL Delivery]**&#x200B;表格(nms:delivery)為基礎。
 
@@ -830,7 +832,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 傳送統計資料{#delivery-statistics-1}
+## 傳送統計資料 {#delivery-statistics-1}
 
 此報表以&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表格(nms:deliveryLogStats)為基礎。
 
@@ -869,7 +871,7 @@ ht-degree: 1%
    <td> @unreachable + @mailBoxFull + @invalidDomain + @disabled + @notConnected + @refused<br /> </td> 
   </tr> 
   <tr> 
-   <td> 開啟的郵件<br /> </td> 
+   <td> 開啟次數<br /> </td> 
    <td> @recipientOpen<br /> </td> 
    <td> 追蹤記錄@broadLog-ids的總數。<br /> </td> 
    <td> Countdistinct([@broadLog-id])<br /> </td> 
@@ -889,7 +891,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 開啟次數{#breakdown-of-opens-1}
+## 開啟次數劃分 {#breakdown-of-opens-1}
 
 此報告以&#x200B;**Deliversions**(nms:delivery)和&#x200B;**Tracking logs**(nms:trackingLogRcp)表格為基礎。
 
@@ -904,7 +906,7 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 開啟的郵件<br /> </td> 
+   <td> 開啟次數<br /> </td> 
    <td> @totalRecipientOpen<br /> </td> 
    <td> URL主鍵@id等於1（開啟）的所有加總。<br /> </td> 
    <td> count(Iif([@url-id] = 1, @id, 0))<br /> </td> 
@@ -912,21 +914,21 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 其他指標{#other-indicators}
+## 其他指標 {#other-indicators}
 
 **已傳送**&#x200B;指示器(@sent)，經由&#x200B;**傳送(nms:delivery)>指示器**&#x200B;節點存取，對應於傳送至服務提供者的SMS總數。 此指標僅用於SMS傳送，不得用於其他類型的傳送(不得與&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指標混淆)。
 
-## 指示器同步{#indicator-synchronization}
+## 指示器同步 {#indicator-synchronization}
 
 如果您遇到某些指標的取消同步或不一致，請在Adobe Campaign檔案總管中選取相關傳送，按一下滑鼠右鍵並選擇&#x200B;**[!UICONTROL Action>Recompute delivery and tracking indicators]**。 按一下&#x200B;**[!UICONTROL Next]**，然後按一下&#x200B;**[!UICONTROL Finish]**。
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
-## 追蹤開啟{#tracking-opens-}
+## 追蹤開啟 {#tracking-opens-}
 
 為了讓Adobe Campaign偵測開啟的訊息，收件者必須下載電子郵件中的影像。 HTML和多部分/替代電子郵件包含0像素影像，可讓您偵測已開啟的訊息。 由於文本格式的消息不包含任何影像，因此無法檢測它們是否已開啟。 根據訊息開啟次數計算的值一律會經過估計，因為連結至影像顯示的誤差範圍。
 
-## 目標人員/收件者{#targeted-persons---recipients}
+## 目標人員/收件者 {#targeted-persons---recipients}
 
 在某些報表中，Adobe Campaign會區分目標人員和目標收件者。
 

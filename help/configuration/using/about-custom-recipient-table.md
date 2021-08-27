@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 使用自訂收件者表格{#about-custom-recipient-table}
+
+![](../../assets/v7-only.svg)
 
 本節詳細說明使用非標準收件者表格的原則。
 
@@ -34,7 +36,7 @@ ht-degree: 2%
 
 本節說明可讓您映射Adobe Campaign中現有表格的關鍵點，以及要套用以根據任何表格執行傳送的設定。 最後，介紹了如何向用戶提供與標準收件人表可用的介面一樣實用的查詢介面。 要了解本節中介紹的材料，需要對螢幕和方案設計原則有充分的了解。
 
-## Recommendations和限制{#recommendations-and-limitations}
+## Recommendations和限制 {#recommendations-and-limitations}
 
 使用外部收件者表格有下列限制：
 

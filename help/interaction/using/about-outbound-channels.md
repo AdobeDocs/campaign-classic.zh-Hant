@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 關於傳出頻道{#about-outbound-channels}
+
+![](../../assets/v7-only.svg)
 
 優惠方案可使用傳入或傳出頻道，以各種空格呈現。 本章詳細說明傳出通道。
 

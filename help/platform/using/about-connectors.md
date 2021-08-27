@@ -2,18 +2,20 @@
 product: campaign
 title: 關於連接器
 description: 關於連接器
-feature: 概覽
+feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 8%
 
 ---
 
 # 開始使用連接器{#about-connectors}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign提供數個連接器，可讓您與外部應用程式通訊、連線至資料庫引擎，以及與Adobe Analytics整合以共用資料。
 

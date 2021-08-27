@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 一般架構{#general-architecture}
 
-## 最小體系結構{#minimum-architecture}
+![](../../assets/v7-only.svg)
+
+## 最小架構 {#minimum-architecture}
 
 在最低設定中，Adobe Campaign的運作方式為：
 
@@ -29,7 +31,7 @@ ht-degree: 3%
 1. 透過網際網路傳送HTTP通訊協定至Adobe Campaign伺服器，
 1. 透過網際網路從Adobe Campaign伺服器傳送和傳送至SMTP通訊協定的流量。
 
-## 分佈式架構{#distributed-architecture}
+## 分佈式架構 {#distributed-architecture}
 
 Adobe Campaign由多個模組組成，可在數部電腦上劃分。 此操作模式有以下幾項優點：
 
@@ -45,7 +47,7 @@ Adobe Campaign由多個模組組成，可在數部電腦上劃分。 此操作�
 >
 >有關各種體系結構的詳細資訊，請參閱[此部分](../../installation/using/general-architecture.md)。
 
-## 開啟的埠清單{#list-of-open-ports}
+## 開啟埠的清單 {#list-of-open-ports}
 
 | 埠號 | 相關Adobe Campaign模組或應用程式 | 可設定 |
 |---|---|---|

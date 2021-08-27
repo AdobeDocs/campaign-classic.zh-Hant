@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # 網路追蹤標籤：定義{#web-tracking-tag-definition}
 
+![](../../assets/v7-only.svg)
+
 Web追蹤標籤只是使用適當參數建構的URL，會透過HTTP查詢傳送至重新導向伺服器。
 
-## 要發送的資料格式{#format-of-the-data-to-be-sent}
+## 要傳送的資料格式 {#format-of-the-data-to-be-sent}
 
 網頁追蹤URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
@@ -125,7 +127,7 @@ Web追蹤標籤只是使用適當參數建構的URL，會透過HTTP查詢傳送�
 >
 >所有透過URL參數傳送至重新導向伺服器的值都必須經過URL編碼。 在給定的示例中，請注意字元「=」和「|」分別編碼為「%3D」和「%7C」。
 
-## 資料傳輸方法{#data-transmission-methods}
+## 資料傳輸方法 {#data-transmission-methods}
 
 可採用下列方法：
 

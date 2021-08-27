@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 12%
@@ -14,6 +14,8 @@ ht-degree: 12%
 ---
 
 # 關於社交行銷{#about-social-marketing}
+
+![](../../assets/v7-only.svg)
 
 專為管理社交網路而設計的&#x200B;**管理社交網路**（社交行銷）應用程式可讓您透過Facebook和Twitter與客戶和潛在客戶互動。
 

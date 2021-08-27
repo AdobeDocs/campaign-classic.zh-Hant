@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 自訂表情符號清單 {#customize-emoticons}
+
+![](../../assets/common.svg)
 
 彈出式視窗中顯示的表情符號清單由列舉排定，可讓您在清單中顯示值，以限制使用者對指定欄位的選擇。
 您可以自訂表情符號清單順序，也可以將其他表情符號新增至清單。
@@ -35,7 +37,7 @@ ht-degree: 3%
 
    ![](assets/emoticon_1.png)
 
-1. 按一下 **[!UICONTROL Add]**。
+1. 按一下&#x200B;**[!UICONTROL Add]**。
 
 1. 填寫欄位：
 

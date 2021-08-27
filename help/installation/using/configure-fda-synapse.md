@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
 
 ---
 
-# 配置對Azure synapse{#configure-access-to-azure-synapse}的訪問
+# 配置訪問Azure synapse {#configure-access-to-azure-synapse}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign [同盟資料存取](../../installation/using/about-fda.md)(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定Microsoft Analytics的存取權限。Azure synapse分析
 
@@ -108,7 +110,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->這是ODBC驅動程式13版獨有的，但Adobe Campaign Classic還可以使用SQL Server本機客戶端驅動程式11.0和10.0。
+>這是ODBC驅動程式13版獨有的，但Adobe Campaign Classic也可以使用SQL Server本機客戶端驅動程式11.0和10.0。
 
 要在Windows上配置Azure synapse:
 
@@ -190,7 +192,7 @@ ht-degree: 1%
    >若要允許來自Azure synapseAnalytics端的通訊，您可能需要將公用IP新增至允許清單。 要執行此操作，請參閱[Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 
-## azure synapse外部帳戶{#azure-external}
+## azure synapse外部帳戶 {#azure-external}
 
 [!DNL Azure Synapse]外部帳戶可讓您將Campaign執行個體連結至Azure synapse外部資料庫。
 
@@ -198,7 +200,7 @@ ht-degree: 1%
 
 1. 在促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，按一下&#x200B;**[!UICONTROL Administration]**「>」 **[!UICONTROL Platform]**「>」 **[!UICONTROL External accounts]**。
 
-1. 按一下 **[!UICONTROL New]**。
+1. 按一下&#x200B;**[!UICONTROL New]**。
 
 1. 選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 

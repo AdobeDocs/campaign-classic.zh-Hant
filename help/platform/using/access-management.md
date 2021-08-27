@@ -2,18 +2,20 @@
 product: campaign
 title: 開始使用權限
 description: 了解如何授與Campaign功能的存取權
-feature: 存取管理
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '253'
 ht-degree: 6%
 
 ---
 
 # 開始使用權限{#access-management}
+
+![](../../assets/common.svg)
 
 Adobe Campaign可讓您定義及管理指派給各種運算子的權限。 這些是授權或拒絕的一組權限和限制：
 
@@ -51,7 +53,7 @@ Adobe Campaign可讓您定義及管理指派給各種運算子的權限。 這�
 另請參閱:
 
 * [管理工作流程的權限](../../workflow/using/managing-rights.md)
-* [管理分散式行銷的權限](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
+* [管理分散式行銷的權限](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
 * [管理互動模組的權限](../../interaction/using/operator-profiles.md)
 * [篩選結構存取權](../../configuration/using/filtering-schemas.md)
 * [限制PI檢視](../../configuration/using/restricting-pii-view.md)

@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
 
 ---
 
-# 測試交易式訊息範本{#testing-message-templates}
+# 測試交易式訊息範本 {#testing-message-templates}
+
+![](../../assets/v7-only.svg)
 
 在[訊息範本](../../message-center/using/creating-the-message-template.md)準備就緒後，請依照下列步驟預覽並測試。
 
@@ -73,7 +75,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_custo_001.png)
 
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Save]**。
 
 ## 異動訊息預覽 {#transactional-message-preview}
 

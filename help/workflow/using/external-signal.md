@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 外部訊號{#external-signal}
+
+![](../../assets/common.svg)
 
 **外部訊號**&#x200B;活動可讓您觸發在工作流程中對排程執行一組任務。
 
@@ -25,9 +27,9 @@ ht-degree: 2%
 
 ![](assets/edit_signal.png)
 
-有效期的設定在[有效期](../../workflow/using/defining-approvals.md)中詳細說明。
+有效期的設定在[有效期](defining-approvals.md)中詳細說明。
 
-**Delay**&#x200B;欄位可讓您以所選單位指定到期延遲。 請參閱[Wait](../../workflow/using/wait.md)。
+**Delay**&#x200B;欄位可讓您以所選單位指定到期延遲。 請參閱[Wait](wait.md)。
 
 每行代表過期類型，並與轉變一致。
 

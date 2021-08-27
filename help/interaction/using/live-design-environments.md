@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 即時/設計環境{#live-design-environments}
+
+![](../../assets/v7-only.svg)
 
 ## 操作原則 {#operating-principle}
 
@@ -36,7 +38,7 @@ ht-degree: 2%
 
 選件管理員和傳送管理員可存取不同的環境檢視。 傳遞管理員只能檢視&#x200B;**[!UICONTROL Live]**&#x200B;選件環境，並使用選件來傳送。 選件管理員可以檢視和變更&#x200B;**[!UICONTROL Design]**&#x200B;環境，以及檢視&#x200B;**[!UICONTROL Live]**&#x200B;環境。 有關詳細資訊，請參閱[運算子描述檔](../../interaction/using/operator-profiles.md)。
 
-## 建立優惠方案環境{#creating-an-offer-environment}
+## 建立優惠方案環境 {#creating-an-offer-environment}
 
 依預設，互動會隨預先設定的環境提供，以鎖定收件者表格（已識別的選件）。 如果您想要鎖定另一個表格（匿名選件的訪客表格或特定收件者表格），則需套用下列設定：
 

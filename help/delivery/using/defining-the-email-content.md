@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f2300b265fa97e5b208519ab2446927d14f5f91c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 定義電子郵件內容 {#defining-the-email-content}
+
+![](../../assets/common.svg)
 
 ## 寄件者 {#sender}
 
@@ -187,9 +189,8 @@ HTML格式的電子郵件傳遞可包含影像。 從傳送精靈，您可以透
 >[!IMPORTANT]
 >
 >* 在手動上傳或傳送訊息時修改影像存取路徑。
-   > 
-   >
-* 為避免效能問題，如果您將從個人化URL即時下載的影像納入[attachment](attaching-files.md)，則每個影像大小預設不應超過100,000位元組。 可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置此建議閾值。
+> 
+>* 為避免效能問題，如果您將從個人化URL即時下載的影像納入[attachment](attaching-files.md)，則每個影像大小預設不應超過100,000位元組。 可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置此建議閾值。
 
 
 **使用案例：傳送含有影像的訊息**

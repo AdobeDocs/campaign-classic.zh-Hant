@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 測試{#test}
+
+![](../../assets/common.svg)
 
 **Test**&#x200B;類型活動激活滿足與其相關的條件的第一轉變。 如果未滿足任何條件，並且激活了&#x200B;**[!UICONTROL Use the default fork]**&#x200B;選項，則將激活預設轉變。
 
@@ -23,7 +25,7 @@ ht-degree: 5%
 
 有關可通過工作流JavaScript訪問的應用程式伺服器的所有其他JavaScript函式和SOAP方法的詳細資訊，請參閱[JSAPI文檔](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
-您也可以直接從此編輯器插入變數。 有關如何使用變數的詳細資訊，請參閱[此區段](../../workflow/using/javascript-scripts-and-templates.md#variables)。
+您也可以直接從此編輯器插入變數。 有關如何使用變數的詳細資訊，請參閱[此區段](javascript-scripts-and-templates.md#variables)。
 
 您可以從活動屬性編輯視窗新增、刪除或排序條件，也可以從轉變中修改條件。
 

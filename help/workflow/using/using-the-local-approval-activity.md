@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 使用本機核准活動{#using-the-local-approval-activity}
+
+![](../../assets/common.svg)
 
 整合至目標工作流程的&#x200B;**[!UICONTROL Local approval]**&#x200B;活動可讓您在傳送傳遞之前設定收件者核准程式。
 
@@ -47,11 +49,11 @@ ht-degree: 2%
 
    ![](assets/local_validation_intro_5.png)
 
-## 步驟1:建立資料分發模板{#step-1--creating-the-data-distribution-template-}
+## 步驟1:建立資料分送範本 {#step-1--creating-the-data-distribution-template-}
 
 通過資料分發模板，您可以限制根據資料分組進行目標定位而生成的母體，同時允許您將每個值分配給本地主管。 在本示例中，我們將&#x200B;**[!UICONTROL Email address domain]**&#x200B;欄位定義為分發欄位，並為每個本地主管分配了一個域
 
-有關建立資料分發模板的詳細資訊，請參閱[限制每個資料分發的子集記錄數](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution)。
+有關建立資料分發模板的詳細資訊，請參閱[限制每個資料分發的子集記錄數](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
 
 1. 要建立資料分發模板，請轉至&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]**。
 
@@ -85,7 +87,7 @@ ht-degree: 2%
       >
       >請確定已為運算子指派適當的權限。
 
-## 步驟2:建立目標工作流程{#step-2--creating-the-targeting-workflow}
+## 步驟2:建立目標工作流程 {#step-2--creating-the-targeting-workflow}
 
 為了設定此使用案例，我們建立了下列目標工作流程：
 
@@ -102,11 +104,11 @@ ht-degree: 2%
 * 第二個&#x200B;**[!UICONTROL Local approval]**&#x200B;活動，
 * 一個&#x200B;**[!UICONTROL End]**&#x200B;活動。
 
-### 查詢、交集和拆分{#queries--intersection-and-split}
+### 查詢、交集和拆分 {#queries--intersection-and-split}
 
 上游定位由兩個查詢組成，一個交集和一個分割。 目標定位產生的母體可使用資料分發範本的&#x200B;**[!UICONTROL Split]**&#x200B;活動來限制。
 
-有關配置拆分活動的詳細資訊，請參閱[Split](../../workflow/using/split.md)。 [限制每個資料分發的子集記錄數](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution)中詳細說明了資料分發模板的建立。
+有關配置拆分活動的詳細資訊，請參閱[Split](split.md)。 [限制每個資料分發的子集記錄數](split.md#limiting-the-number-of-subset-records-per-data-distribution)中詳細說明了資料分發模板的建立。
 
 如果您不想限制查詢中的母體，則不必使用&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Intersection]**&#x200B;和&#x200B;**[!UICONTROL Split]**&#x200B;活動。 在此情況下，請完成第一個&#x200B;**[!UICONTROL Local approval]**&#x200B;活動中的資料分發範本。
 
@@ -118,7 +120,7 @@ ht-degree: 2%
 
    ![](assets/local_validation_split_1bis.png)
 
-1. 在&#x200B;**[!UICONTROL Sort columns]**&#x200B;區段中，新增套用排序的欄位。 在此，我們已選擇&#x200B;**[!UICONTROL Email]**&#x200B;欄位。 按一下 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sort columns]**&#x200B;區段中，新增套用排序的欄位。 在此，我們已選擇&#x200B;**[!UICONTROL Email]**&#x200B;欄位。 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/local_validation_split_2.png)
 
@@ -130,11 +132,11 @@ ht-degree: 2%
 
 ![](assets/local_validation_intro_1.png)
 
-### 批准通知{#approval-notification}
+### 核准通知 {#approval-notification}
 
 **[!UICONTROL Local approval]**&#x200B;活動可讓您向每個本地主管發送通知。
 
-有關配置&#x200B;**[!UICONTROL Local approval]**&#x200B;活動的詳細資訊，請參閱[本地批准](../../workflow/using/local-approval.md)。
+有關配置&#x200B;**[!UICONTROL Local approval]**&#x200B;活動的詳細資訊，請參閱[本地批准](local-approval.md)。
 
 ![](assets/local_validation_workflow_2.png)
 
@@ -158,7 +160,7 @@ ht-degree: 2%
 
 ![](assets/local_validation_workflow_3.png)
 
-### 反饋通知{#feedback-notification}
+### 意見通知 {#feedback-notification}
 
 第二個&#x200B;**[!UICONTROL Local approval]**&#x200B;活動可讓您向每個本地主管發送傳遞反饋通知。
 
@@ -174,7 +176,7 @@ ht-degree: 2%
 
 ![](assets/local_validation_intro_3.png)
 
-### 管理員{#approval-tracking-by-the-administrator}的批准跟蹤
+### 管理員的核准追蹤 {#approval-tracking-by-the-administrator}
 
 每次本機核准活動開始時，都會建立核准任務。 管理員可以控制這些核准任務中的每個。
 

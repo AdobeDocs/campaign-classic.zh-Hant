@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 開始使用 A/B 測試 {#get-started-a-b-testing}
+
+![](../../assets/common.svg)
 
 A/B測試可讓您比較多個傳送版本，以識別哪個版本對目標母體影響最大。
 

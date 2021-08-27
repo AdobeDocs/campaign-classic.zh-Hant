@@ -3,18 +3,20 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Analytics 連接器
 description: 深入瞭解 Adobe Analytics 連接器
-feature: 概覽
+feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 99%
+source-wordcount: '1550'
+ht-degree: 100%
 
 ---
 
 # Adobe Analytics 連接器{#adobe-analytics-connector}
+
+![](../../assets/common.svg)
 
 ## 關於 Adobe Analytics 連接器整合 {#about-analytics-connector-integration}
 
@@ -23,9 +25,8 @@ Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UI
 >[!CAUTION]
 >
 >* Adobe Analytics 連接器與異動訊息 (訊息中心) 不相容。
-   >
-   >
-* 開始之前，請確定已在Campaign中實作AdobeIdentity Management系統(IMS)。 [在本頁](../../integrations/using/about-adobe-id.md)中深入瞭解。
+>
+>* 開始之前，請確定已在 Campaign 中實施 Adobe Identity Management 系統 (IMS)。 [在本頁中深入瞭解](../../integrations/using/about-adobe-id.md)。
 
 
 Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web Analytics)。 有了這些整合，Adobe Campaign 便能復原行銷活動後一或多個網站的訪客行為資料，並 (在分析後) 使用視圖執行再次行銷活動，以便將其轉換為購買者。 反之，Adobe Campaign 的網頁分析工具可將指標和行銷活動屬性轉送至其平台。
@@ -246,8 +247,7 @@ Adobe Campaign 和 Adobe Analytics 之間的資料交換由四個技術工作流
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
 
 
-
-## 在 Adobe Campaign 中追蹤傳送 {#tracking-deliveries-in-adobe-campaign}
+## 在 Adobe Campaign 中追蹤傳遞 {#tracking-deliveries-in-adobe-campaign}
 
 為了讓 Adobe Experience Cloud 在 Adobe Campaign 傳送後能夠追蹤網站上的活動，您必須在傳送屬性中參考相符的連接器。 若要這麼做，請套用下列步驟：
 
@@ -262,7 +262,7 @@ Adobe Campaign 和 Adobe Analytics 之間的資料交換由四個技術工作流
 
 1. 您現在可以傳送傳遞內容，並在 Adobe Analytics 中存取報告。
 
-## 建立再次行銷活動 {#creating-a-re-marketing-campaign}
+## 建立再行銷活動 {#creating-a-re-marketing-campaign}
 
 若要準備再次行銷活動，只需建立要用於再次行銷類型行銷活動的傳送範本。 然後設定再次行銷活動，並將其連結至區段。 每個區段必須有不同的再次行銷活動。
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 開始使用 cubes{#about-cubes}
+
+![](../../assets/common.svg)
 
 透過&#x200B;**Marketing Analytics**&#x200B;模組可探索資料庫中的資料。 它可讓您分析和測量資料、計算統計資料、簡化並最佳化報表建立和計算。 除此之外，Marketing Analytics還可讓您建立報表和建立目標母體。 識別完這些值後，就會儲存在可用於Adobe Campaign（鎖定目標、細分等）的清單中。
 
@@ -79,7 +81,7 @@ ht-degree: 10%
 
    可以計算度量：例如，要約的接受率是其被呈現的次數與被接受的次數之比。
 
-## 多維資料集工作區{#cube-workspace}
+## 多維資料集工作區 {#cube-workspace}
 
 多維資料集儲存在&#x200B;**[!UICONTROL Administration > Configuration > Cubes]**&#x200B;節點中。
 

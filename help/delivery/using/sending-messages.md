@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 傳送電子郵件的主要步驟 {#confirming-email-delivery}
+
+![](../../assets/common.svg)
 
 建立並設定您的電子郵件後，您就可以將其傳送至主要目標。 本節介紹檢查及確認電子郵件傳送的主要步驟。
 

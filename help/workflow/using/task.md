@@ -6,20 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 2%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 
 # 任務{#task}
 
+![](../../assets/common.svg)
+
+>[!AVAILABILITY]
+>
+>:warning: 此功能僅適用於Campaign Classicv7。[深入瞭解](../../mrm/using/creating-and-managing-tasks.md)
+
 在促銷活動工作流程中，**[!UICONTROL Task]**&#x200B;活動可讓您指定兩種情況：第一個是任務完成時，第二個是任務未完成時（如果手動將任務標籤為未完成或任務過期）。
 
 ![](assets/mrm_task_in_workflow.png)
 
-如何配置和操作任務在[節](../../mrm/using/creating-and-managing-tasks.md)中有詳細說明。
+[Campaign Classicv7檔案](../../mrm/using/creating-and-managing-tasks.md)中詳細說明了如何配置和操作任務。
 
 ![](assets/wkf_task_activity.png)
 

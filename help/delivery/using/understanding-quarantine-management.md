@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # 瞭解隔離管理{#understanding-quarantine-management}
+
+![](../../assets/common.svg)
 
 ## 關於隔離 {#about-quarantines}
 
@@ -255,7 +257,6 @@ HTTP/V2通訊協定可針對每個推送傳送提供直接意見和狀態。 如
 * 傳送開始時發生連線問題：失敗類型&#x200B;**[!UICONTROL Undefined]**，失敗原因&#x200B;**[!UICONTROL Unreachable]**，請執行重試。
 * 傳送期間連線遺失：軟錯誤，故障原因&#x200B;**[!UICONTROL Refused]**，請執行重試。
 * Baidu在傳送期間傳回的同步錯誤：硬錯誤，故障原因&#x200B;**[!UICONTROL Refused]**，未執行重試。
-
 Adobe Campaign每10分鐘連絡Baidu伺服器以擷取已傳送訊息的狀態，並更新broadlog。 如果訊息宣告為已傳送，則broadlogs中訊息的狀態會設為&#x200B;**[!UICONTROL Received]**。 如果Baidu聲明錯誤，則狀態設定為&#x200B;**[!UICONTROL Failed]**。
 
 **針對Android V2**
@@ -542,13 +543,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * 所有錯誤訊息都以&#x200B;**SR**&#x200B;開頭，以區分SMS錯誤碼和電子郵件錯誤碼。
-* 錯誤訊息的第二部分（此範例中的&#x200B;**一般**）參照SMS外部帳戶的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;欄位中定義的SMSC實作名稱。 請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
+* 錯誤訊息的第二部分（此範例中的&#x200B;**一般**）參照SMS外部帳戶的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;欄位中定義的SMSC實作名稱。 請參閱[此頁面](sms-set-up.md#creating-an-smpp-external-account)。
 
    因為相同的錯誤代碼可能對每個提供程式具有不同的含義，所以此欄位允許您了解生成錯誤代碼的提供程式。 然後，您可以在相關提供者的檔案中找到錯誤。
 
 * 此範例中，錯誤訊息的第三部分(**DELIVRD**)與使用SMS外部帳戶中定義的狀態擷取規則運算式從SR擷取的狀態代碼相對應。
 
-   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
+   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[此頁面](sms-set-up.md#creating-an-smpp-external-account)。
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -556,7 +557,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 錯誤訊息的第四部分（此範例中為&#x200B;**000**）對應於使用SMS外部帳戶中定義的錯誤碼擷取規則運算式從SR擷取的錯誤碼。
 
-   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
+   此規則運算式在外部帳戶的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;標籤中指定。 請參閱[此頁面](sms-set-up.md#creating-an-smpp-external-account)。
 
    依預設，規則運算式會擷取&#x200B;**err:**&#x200B;欄位，如&#x200B;**SMPP 3.4規格**&#x200B;的&#x200B;**附錄B**&#x200B;區段所定義。
 

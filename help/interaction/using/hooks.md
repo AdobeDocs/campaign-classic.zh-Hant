@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 勾點{#hooks}
+
+![](../../assets/v7-only.svg)
 
 互動中的鈎點可讓您修改&#x200B;**標準引擎行為**。
 
@@ -25,7 +27,7 @@ ht-degree: 1%
 
 ![](assets/interaction_hooks_2.png)
 
-## 目標載入{#target-loading}
+## 目標載入 {#target-loading}
 
 此連結可讓您以來自外部系統的其他資料，豐富連絡人的設定檔（由現成查詢載入）。
 
@@ -55,7 +57,7 @@ ht-degree: 1%
   interaction.@additionalData = additionalData;
 ```
 
-## 命題後處理{#proposition-post-processing-}
+## 主張後處理 {#proposition-post-processing-}
 
 此掛接允許您檢查給定交互中合格命題的一致性和相容性。 它也可讓您定義新的分數或機率計算功能。
 
@@ -113,7 +115,7 @@ if( aProposition.length > 0 )
 return aReturnedProps;
 ```
 
-## 動態選件{#dynamic-offer}
+## 動態選件 {#dynamic-offer}
 
 此連結可讓您呼叫外部引擎，以選取連結至選件的產品清單。 這是在優惠方案中針對適用性規則和類型規則應用程式進行設定的。
 

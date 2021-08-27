@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 17%
@@ -14,6 +14,8 @@ ht-degree: 17%
 ---
 
 # 建立直接郵件傳遞{#creating-a-direct-mail-delivery}
+
+![](../../assets/common.svg)
 
 若要建立新的直接郵件傳送，請遵循下列步驟：
 

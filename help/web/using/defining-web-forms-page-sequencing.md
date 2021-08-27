@@ -6,14 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 定義網路表單頁面排序{#defining-web-forms-page-sequencing}
+
+![](../../assets/common.svg)
 
 表單可包含一或多個頁面。 它是透過圖表建置，可讓您排序頁面、測試、指令碼執行、頁面跳轉和記錄步驟。 全域圖表設計模式與Campaign工作流程的模式相同。
 

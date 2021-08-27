@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 安裝和更新Campaign用戶端主控台{#installing-the-client-console}
+
+![](../../assets/v7-only.svg)
 
 Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Campaign應用程式伺服器。
 
@@ -32,7 +34,7 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 >
 >Campaign用戶端主控台和Campaign應用程式伺服器必須在相同產品版本&#x200B;**上執行**。 Adobe也強烈建議使用&#x200B;**相同的產品組建**。 了解如何在[本區段](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中檢查您的Campaign用戶端和伺服器版本。
 
-## Adobe托管實施{#hosted-customers}
+## Adobe托管實作 {#hosted-customers}
 
 廣告代管客戶後，您有兩個選項可安裝或更新用戶端主控台：
 
@@ -42,11 +44,11 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 
    **使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，則系統管理員需要部署到所有客戶端控制台**
 
-## 混合式與內部部署實作{#hybrid-onprem-customers}
+## 混合式與內部部署實作 {#hybrid-onprem-customers}
 
 Adobe Campaign使用者若想登入您建立和設定的執行個體，必須使用用戶端主控台。
 
-### 使控制台可供用戶{#make-console-available}使用
+### 讓使用者能使用主控台 {#make-console-available}
 
 用來啟動Adobe Campaign應用程式伺服器(nlserver web)的電腦從用戶端主控台接收使用者連線時，您可以加以設定，讓Adobe Campaign豐富用戶端的設定程式可透過HTML介面使用。 每當有新版本的用戶端主控台可用時，就會邀請使用者在啟動其用戶端主控台時下載。
 
@@ -88,7 +90,7 @@ Adobe建議取消選取&#x200B;**[!UICONTROL No longer ask this question]**&#x20
 **使用者需要管理員存取權才能完成更新。如果用戶沒有管理員權限，則系統管理員需要部署到所有客戶端控制台**
 
 
-### 下載新實作的主控台{#download-the-client-console}
+### 下載主控台以進行新實作{#download-the-client-console}
 
 使用者現在應依照下列步驟下載並安裝主控台：
 
@@ -106,7 +108,7 @@ Adobe建議取消選取&#x200B;**[!UICONTROL No longer ask this question]**&#x20
 1. 下載並保存客戶端安裝檔案。
 1. 在Windows上執行下載的檔案：安裝程式隨即啟動。 根據您的Adobe Campaign版本，客戶端控制台的預設安裝路徑為&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX客戶端**，其中「X」為「6」或「7」。
 
-### 建立連線 — 首次使用者僅{#create-the-connection}
+### 建立連線 — 僅限首次使用者{#create-the-connection}
 
 安裝客戶端控制台後，請按照以下步驟建立與應用程式伺服器的連接：
 
@@ -124,7 +126,7 @@ Adobe建議取消選取&#x200B;**[!UICONTROL No longer ask this question]**&#x20
 
    例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)類型URL。
 
-1. 如果已為您的組織設定AdobeIMS，請核取選項&#x200B;**[!UICONTROL Connect with an Adobe ID]**
+1. 如果貴組織已設定Adobe IMS，請核取選項&#x200B;**[!UICONTROL Connect with an Adobe ID]**
 
 1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以儲存設定。
 

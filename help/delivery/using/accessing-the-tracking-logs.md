@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -14,6 +14,8 @@ ht-degree: 17%
 ---
 
 # 存取追蹤記錄{#accessing-the-tracking-logs}
+
+![](../../assets/common.svg)
 
 傳送並啟動追蹤後，**[!UICONTROL Tracking]**&#x200B;技術工作流程將負責擷取追蹤資料。 預設會每小時執行一次。
 

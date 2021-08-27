@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # 建立圖表{#creating-a-chart}
 
+![](../../assets/common.svg)
+
 資料庫中的資料也可以收集並顯示在圖表中。 Adobe Campaign提供一組圖形表示法。 其設定於下文詳細說明。
 
 圖表會透過滑鼠右鍵功能表或工具列，直接插入報表頁面中。
 
-## 建立步驟{#creation-steps}
+## 建立步驟 {#creation-steps}
 
 若要在報表中建立圖表，請套用下列步驟：
 
@@ -47,7 +49,7 @@ ht-degree: 2%
 
       ![](assets/reporting_graph_select-from_context.png)
 
-## 圖表類型和變體{#chart-types-and-variants}
+## 圖表類型和變體 {#chart-types-and-variants}
 
 Adobe Campaign提供各種類型的圖形表示法。 下文詳細說明。
 
@@ -61,7 +63,7 @@ Adobe Campaign提供各種類型的圖形表示法。 下文詳細說明。
 
 變體取決於所選圖表類型。 可透過&#x200B;**[!UICONTROL Variants...]**&#x200B;連結選取。
 
-### 劃分：圓形圖{#breakdown--pie-charts}
+### 劃分：圓形圖 {#breakdown--pie-charts}
 
 這種圖形表示方式可讓您顯示測量元素的概觀。
 
@@ -89,13 +91,13 @@ Adobe Campaign提供各種類型的圖形表示法。 下文詳細說明。
 
 ![](assets/s_ncs_advuser_report_sector_exple3.png)
 
-### 進化：曲線和區域{#evolution--curves-and-areas}
+### 進化：曲線和區域 {#evolution--curves-and-areas}
 
 此類型的圖形表示可讓您及時了解一個或多個測量的演化。
 
 ![](assets/reporting_graph_type_curve.png)
 
-### 比較：直方圖{#comparison--histograms}
+### 比較：直方圖 {#comparison--histograms}
 
 色階分佈圖可讓您比較一或多個變數的值。
 
@@ -113,11 +115,11 @@ Adobe Campaign提供各種類型的圖形表示法。 下文詳細說明。
 
 如有必要，您可以反轉值顯示順序。 要執行此操作，請選取&#x200B;**[!UICONTROL Reverse stacking]**&#x200B;選項。
 
-### 轉換：漏斗{#conversion--funnel}
+### 轉換：漏斗 {#conversion--funnel}
 
 此類型的圖表可讓您追蹤測量元素的對話率。
 
-### 進度：儀表{#progress--gauge}
+### 進度：儀表 {#progress--gauge}
 
 此類型的圖表可讓您顯示值與定義目標相比的進度。 在以下範例中，黑色撥號顯示成功傳送(76)的次數，超出100個傳送的目標。 量規被分成三個範圍，這些範圍對應於特定狀態。
 
@@ -143,7 +145,7 @@ Adobe Campaign提供各種類型的圖形表示法。 下文詳細說明。
 
 **[!UICONTROL Width]**&#x200B;欄位可讓您編輯圖表大小。
 
-## 與圖表{#interaction-with-the-chart}的交互
+## 與圖表的互動 {#interaction-with-the-chart}
 
 您可以在使用者點按圖表時定義動作。 開啟&#x200B;**[!UICONTROL Interaction events]**&#x200B;視窗，並選取您要執行的動作。
 
@@ -151,7 +153,7 @@ Adobe Campaign提供各種類型的圖形表示法。 下文詳細說明。
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## 計算統計資料{#calculating-statistics}
+## 計算統計資訊 {#calculating-statistics}
 
 圖表可讓您顯示所收集資料的統計資料。
 

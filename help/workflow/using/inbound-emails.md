@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 傳入電子郵件{#inbound-emails}
+
+![](../../assets/common.svg)
 
 **傳入電子郵件**&#x200B;活動可讓您從POP3郵件伺服器下載及處理電子郵件。
 
@@ -68,7 +70,7 @@ ht-degree: 1%
 
    若要定義活動的排程，請按一下&#x200B;**[!UICONTROL Scheduling]**&#x200B;標籤並勾選&#x200B;**[!UICONTROL Plan execution]**。 按一下&#x200B;**[!UICONTROL Change]**&#x200B;按鈕以設定排程。
 
-   排程設定與排程活動的相同。 請參閱[排程器](../../workflow/using/scheduler.md)。
+   排程設定與排程活動的相同。 請參閱[排程器](scheduler.md)。
 
 1. **[!UICONTROL Expiration]**
 
@@ -76,4 +78,4 @@ ht-degree: 1%
 
    ![](assets/email_rec_edit_3.png)
 
-   設定與排程活動的設定相同。 請參閱[過期](../../workflow/using/defining-approvals.md)。
+   設定與排程活動的設定相同。 請參閱[過期](defining-approvals.md)。

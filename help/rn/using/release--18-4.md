@@ -3,7 +3,7 @@ product: campaign
 title: Campaign 18.4發行說明
 description: Campaign 18.4發行說明
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
+source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # 第 18.4 發行版本{#release-18-4}
+
+![](../../assets/v7-only.svg)
 
 ## 發行版本 18.4.5 - 版本編號 8937{#release-18-4-5-build-8937}
 

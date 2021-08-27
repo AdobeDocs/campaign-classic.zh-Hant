@@ -5,7 +5,7 @@ description: 深入了解隱私權資料保護規範工作流程
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 
 
 # 隱私權資料保護法規{#general-data-protection-regulation-gdpr}
+
+![](../../assets/common.svg)
 
 依預設，下列詳細的工作流程會與&#x200B;**隱私權資料保護規範**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[文章](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)。
 

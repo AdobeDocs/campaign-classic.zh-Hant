@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 設定例項
+title: 設定執行個體
 description: 了解如何在Adobe Campaign Classic中設定交易式訊息控制和執行例項。
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -14,7 +14,9 @@ ht-degree: 1%
 ---
 
 
-# 配置實例{#creating-a-shared-connection}
+# 設定執行個體 {#creating-a-shared-connection}
+
+![](../../assets/v7-only.svg)
 
 若要使用交易式訊息功能，您需要設定控制和執行例項。 您可以使用下列任一項：
 * [與一個或多個](#control-instance) 執行實例相關聯的一個控制實例
@@ -32,7 +34,7 @@ ht-degree: 1%
 >
 >控制實例和執行實例必須安裝在不同的電腦上。 他們無法共用相同的Campaign執行個體。
 
-## 配置控制實例{#control-instance}
+## 配置控制實例 {#control-instance}
 
 要連接控制實例和執行實例，首先需要在控制實例&#x200B;**上建立並配置&#x200B;**[!UICONTROL Execution instance]**類型外部帳戶**。 因此，一旦[發佈](../../message-center/using/publishing-message-templates.md#template-publication)，交易式訊息範本即可部署至執行例項。
 
@@ -117,7 +119,7 @@ ht-degree: 1%
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## 配置執行實例{#execution-instance}
+## 設定執行例項 {#execution-instance}
 
 >[!NOTE]
 >
@@ -148,7 +150,7 @@ ht-degree: 1%
 
 使用數個執行例項時，請對每個執行例項重複這些步驟。
 
-## 使用多個控制實例{#using-several-control-instances}
+## 使用數個控制例項 {#using-several-control-instances}
 
 您可以與各種控制實例共用執行群集。 此類型的架構需要下列設定。
 
@@ -156,7 +158,7 @@ ht-degree: 1%
 
 在所有執行實例的樹中，為每個運算子建立一個資料夾（**資料夾1**&#x200B;和&#x200B;**資料夾2**），並限制每個運算子對其資料夾的資料訪問。
 
-### 配置控制實例{#configuring-control-instances}
+### 配置控制實例 {#configuring-control-instances}
 
 >[!NOTE]
 >
@@ -174,7 +176,7 @@ ht-degree: 1%
    >
    >有關配置控制實例的詳細資訊，請參閱[此部分](#control-instance)。
 
-### 配置執行實例{#configuring-execution-instances}
+### 配置執行實例 {#configuring-execution-instances}
 
 >[!NOTE]
 >

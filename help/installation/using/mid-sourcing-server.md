@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 中間來源伺服器{#mid-sourcing-server}
+
+![](../../assets/v7-only.svg)
 
 本節詳細說明中間來源伺服器的安裝和配置，以及執行個體的部署，該執行個體可讓第三方在&#x200B;**中間來源**&#x200B;模式中傳送訊息。
 
@@ -25,9 +27,9 @@ ht-degree: 1%
 >
 >設定中間來源伺服器且首次執行[同步工作流程](../../workflow/using/about-technical-workflows.md)後，請務必不要更新中間來源外部帳戶的內部名稱。
 
-## 安裝和配置實例{#steps-for-installing-and-configuring-an-instance}的步驟
+## 安裝和設定執行個體的步驟 {#steps-for-installing-and-configuring-an-instance}
 
-### 安裝和配置實例{#prerequisites-for-installing-and-configuring-an-instance}的先決條件
+### 安裝和設定執行個體的必要條件 {#prerequisites-for-installing-and-configuring-an-instance}
 
 * 應用程式伺服器上的JDK。
 * 訪問應用程式伺服器上的資料庫伺服器。
@@ -35,7 +37,7 @@ ht-degree: 1%
 
 下列程式詳細說明使用單一中間來源伺服器的設定。 也可以使用多台伺服器。 同樣，也可以從內部設定傳送特定訊息（例如工作流程通知）。
 
-### 安裝和配置用於中間來源部署的應用程式伺服器{#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
+### 安裝和配置用於中間來源部署的應用程式伺服器 {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
 安裝過程與獨立實例的安裝過程相同。 請參閱[安裝和配置（單台電腦）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
 
@@ -70,7 +72,7 @@ ht-degree: 1%
    >
    >技術傳送的預設路由會自動取代為透過中間來源的電子郵件路由。
 
-### 安裝和配置中間來源伺服器{#installing-and-configuring-the-mid-sourcing-server}
+### 安裝和配置中間來源伺服器 {#installing-and-configuring-the-mid-sourcing-server}
 
 在用戶端主控台中，使用中間來源&#x200B;**中間來源帳戶找到**&#x200B;電子郵件路由（在&#x200B;**/管理/外部帳戶/**&#x200B;資料夾中）。 將伺服器&#x200B;**、**&#x200B;帳戶&#x200B;**、**&#x200B;密碼&#x200B;**和**&#x200B;鏡像頁面URL **的** URL填入為中間來源伺服器的伺服器供應商提供的資訊。 測試連線。
 
@@ -78,7 +80,7 @@ ht-degree: 1%
 >
 >**mid-sourcingEmitter**&#x200B;選項會建立兩個&#x200B;**Mid-sourcing**&#x200B;工作流程。 此程式預設每1小時20分鐘執行一次，並在中間來源伺服器上收集傳送資訊。
 
-## 部署中間來源伺服器{#deploying-a-mid-sourcing-server}
+## 部署中間來源伺服器 {#deploying-a-mid-sourcing-server}
 
 1. 安裝應用程式伺服器：
 
@@ -96,7 +98,7 @@ ht-degree: 1%
 
    **中間來源平台**&#x200B;選項建立用於儲存已提交傳送的預設資料夾，以及執行提交的預設運算子。
 
-## 復用中間來源伺服器{#multiplexing-the-mid-sourcing-server}
+## 復用中間來源伺服器 {#multiplexing-the-mid-sourcing-server}
 
 >[!CAUTION]
 >
@@ -141,7 +143,7 @@ ht-degree: 1%
 
 您必須停止，然後重新啟動伺服器，才能考慮修改。
 
-## 在中間來源伺服器{#configuring-tracking-on-a-mid-sourcing-server}上配置追蹤
+## 在中間來源伺服器上設定追蹤 {#configuring-tracking-on-a-mid-sourcing-server}
 
 **配置中間來源伺服器**
 

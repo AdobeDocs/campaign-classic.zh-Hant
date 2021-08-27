@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3022'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 技術電子郵件設定{#email-deliverability}
+
+![](../../assets/v7-only.svg)
 
 ## 概覽 {#overview}
 
@@ -40,7 +42,7 @@ ht-degree: 0%
 * 統計伺服器(**stat**)連結到Adobe Campaign基，以載入其配置。
 * 傳送伺服器(**mta**)使用UDP聯繫並不總是屬於自己實例的統計伺服器。
 
-### 傳送伺服器{#delivery-servers}
+### 傳送伺服器 {#delivery-servers}
 
 **mta**&#x200B;模組將消息分發到其&#x200B;**mtachild**&#x200B;子模組。 每個&#x200B;**mtachild**&#x200B;在向統計伺服器請求授權併發送之前準備消息。
 
@@ -52,7 +54,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
 
-### 電子郵件伺服器統計資訊和限制{#email-server-statistics-and-limitations}
+### 電子郵件伺服器統計資料和限制 {#email-server-statistics-and-limitations}
 
 統計伺服器為每個接收消息的電子郵件伺服器維護以下統計資訊：
 
@@ -67,7 +69,7 @@ ht-degree: 0%
 * 每小時最大消息數，
 * 每個連接的最大消息數。
 
-### 管理IP地址{#managing-ip-addresses}
+### 管理IP位址 {#managing-ip-addresses}
 
 統計伺服器可以組合具有相同公共IP地址的多個實例或多台電腦。 因此，它並未連結至特定例項，但必須連絡例項才能復原每個網域的限制。
 
@@ -75,7 +77,7 @@ ht-degree: 0%
 
 源IP地址與公用IP地址匹配，即遠程電子郵件伺服器所看到的地址。 如果提供了NAT路由器，則此IP地址可能與承載&#x200B;**mta**&#x200B;的電腦的地址不同。 這就是為什麼統計伺服器使用與公用IP(**publicId**)匹配的標識符。 本地地址與此標識符之間的關聯在&#x200B;**serverConf.xml**&#x200B;配置檔案中聲明。 **serverConf.xml**&#x200B;中所有可用的參數都列在此[節](../../installation/using/the-server-configuration-file.md)中。
 
-## 傳遞輸出控制{#delivery-output-controlling}
+## 傳遞輸出控制 {#delivery-output-controlling}
 
 若要傳送訊息至電子郵件伺服器，**電子郵件流量Shaper**&#x200B;元件會請求來自統計伺服器的連線。 接受請求後，會開啟連線。
 
@@ -85,7 +87,7 @@ ht-degree: 0%
 
 以下各節說明&#x200B;**電子郵件流量Shaper**&#x200B;元件處理訊息的方式。
 
-### 消息傳送{#message-delivery}
+### 訊息傳送 {#message-delivery}
 
 傳送訊息時，可能會有3個結果：
 
@@ -97,29 +99,29 @@ ht-degree: 0%
    >
    >**path**&#x200B;是Adobe Campaign **mta**&#x200B;與目標&#x200B;**mta**&#x200B;之間的連接。 Adobe Campaign **mta**&#x200B;可從多個起始IP和多個目標網域IP中選擇。
 
-### 消息放棄{#message-abandonment}
+### 消息放棄 {#message-abandonment}
 
 放棄的訊息會傳回至&#x200B;**mta**，不再由&#x200B;**mtachild**&#x200B;管理。
 
 **mta**&#x200B;決定此訊息的程式（恢復、放棄、隔離等） 視回應程式碼和規則而定。
 
-### 消息掛起{#message-pending}
+### 消息掛起 {#message-pending}
 
 當消息到達活動隊列且沒有可用路徑時，將會附加該消息。
 
 在連接錯誤後，路徑通常被標籤為不可用於可變時間量。 不可用時間取決於錯誤的頻率和年齡。
 
-## 統計伺服器配置{#statistics-server-configuration}
+## 統計伺服器配置 {#statistics-server-configuration}
 
 統計伺服器可用於多個實例：它必須與將使用它的執行個體分開設定。
 
 首先，定義將托管配置的Adobe Campaign資料庫。
 
-### 啟動配置{#start-configuration}
+### 啟動配置 {#start-configuration}
 
 預設會為每個執行個體啟動&#x200B;**stat**&#x200B;模組。 在同一台電腦上共用實例，或在實例共用相同的IP地址時，使用單個統計伺服器：其他人必須是殘疾人。
 
-### 伺服器埠{#definition-of-the-server-port}的定義
+### 伺服器埠的定義 {#definition-of-the-server-port}
 
 預設情況下，統計伺服器偵聽埠7777。 可在&#x200B;**serverConf.xml**&#x200B;檔案中修改此埠。 **serverConf.xml**&#x200B;中所有可用的參數都列在此[節](../../installation/using/the-server-configuration-file.md)中。
 
@@ -127,13 +129,13 @@ ht-degree: 0%
 <stat port="1234"/>
 ```
 
-## MX配置{#mx-configuration}
+## MX配置 {#mx-configuration}
 
 >[!IMPORTANT]
 >
 >對於托管或混合安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，則不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;傳送吞吐量規則。 Enhanced MTA使用其專屬的MX規則，可讓它根據您過去的電子郵件信譽，以及您傳送電子郵件之網域所提供的即時意見，依網域自訂您的輸送量。
 
-### 關於MX規則{#about-mx-rules}
+### 關於MX規則 {#about-mx-rules}
 
 >[!NOTE]
 >
@@ -208,7 +210,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 ![](assets/s_ncs_traffic_shaping.png)
 
-### 配置MX管理{#configuring-mx-management}
+### 配置MX管理 {#configuring-mx-management}
 
 要為MX遵守的規則在樹的&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;節點的&#x200B;**[!UICONTROL MX management]**&#x200B;文檔中定義。
 
@@ -229,7 +231,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 >
 >此命令行比&#x200B;**nlserver restart**&#x200B;更好。 它防止在重新啟動丟失之前收集的統計資訊，並避免使用中的高峰，這些高峰可能會違反MX規則中定義的配額。
 
-### 配置MX規則{#configuring-mx-rules}
+### 配置MX規則 {#configuring-mx-rules}
 
 **[!UICONTROL MX management]**&#x200B;文檔列出連結到MX規則的所有域。
 
@@ -306,7 +308,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 >
 >有關將MX伺服器與Adobe Campaign搭配使用的詳細資訊，請參閱[本節](../../installation/using/using-mx-servers.md)。
 
-### 管理電子郵件格式{#managing-email-formats}
+### 管理電子郵件格式 {#managing-email-formats}
 
 您可以定義已傳送訊息的格式，讓顯示的內容能根據每個收件者位址的網域自動調整。
 
@@ -333,13 +335,13 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 >
 >在電子郵件中插入影像會大幅增加其大小。
 
-## 傳遞伺服器配置{#delivery-server-configuration}
+## 傳送伺服器設定 {#delivery-server-configuration}
 
-### 時鐘同步{#clock-synchronization}
+### 時鐘同步 {#clock-synchronization}
 
 組成Adobe Campaign平台（包括資料庫）的所有伺服器的時鐘必須同步，且其系統設定為相同時區。
 
-### 統計伺服器{#coordinates-of-the-statistics-server}的坐標
+### 統計伺服器的坐標 {#coordinates-of-the-statistics-server}
 
 統計伺服器的地址必須在&#x200B;**mta**&#x200B;中提供。
 
@@ -361,7 +363,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 >
 >如果未填入此欄位，則&#x200B;**mta**&#x200B;將不會啟動。
 
-### 要使用{#list-of-ip-addresses-to-use}的IP地址清單
+### 要使用的IP位址清單 {#list-of-ip-addresses-to-use}
 
 有關流量管理的配置位於配置檔案的&#x200B;**mta/child/smtp**&#x200B;元素中。
 
@@ -408,11 +410,11 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-## 電子郵件傳送最佳化{#email-sending-optimization}
+## 電子郵件傳送最佳化 {#email-sending-optimization}
 
 Adobe Campaign **mta**&#x200B;的內部架構對最佳化電子郵件傳送的設定有影響。 以下提供改善傳遞的一些秘訣。
 
-### 調整maxWaitingMessages參數{#adjust-the-maxwaitingmessages-parameter}
+### 調整maxWaitingMessages參數 {#adjust-the-maxwaitingmessages-parameter}
 
 **maxWaitingMessages**&#x200B;參數指示預先由&#x200B;**mtachild**&#x200B;準備的最大消息數。 只有在發送或放棄郵件後，才會從此清單中刪除這些郵件。
 
@@ -422,6 +424,6 @@ Adobe Campaign **mta**&#x200B;的內部架構對最佳化電子郵件傳送的�
 
 **maxWorkingSetMb**&#x200B;參數是經驗計算的，方法是將最大消息數乘以平均消息大小並將結果乘以2.5。例如，如果消息的平均大小為50 kB，而&#x200B;**maxWaitingMessages**&#x200B;參數等於1,000，則使用的記憶體將平均125 MB。
 
-### 調整匹配欄位{#adjust-the-number-of-mtachild}的數量
+### 調整母體欄位數 {#adjust-the-number-of-mtachild}
 
 子代數不應超過機器中的處理器數(約 1000屆)。 建議您不要超過8 **mtachild**。 然後，您可以增加每個&#x200B;**child**(**maxMsgPerChild**)的消息數，以實現足夠的壽命。

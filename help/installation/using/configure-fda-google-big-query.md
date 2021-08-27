@@ -6,7 +6,7 @@ description: 了解如何在FDA中設定Google BigQuery的存取權
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 911302475b5ece96d527575148ee611fdb839753
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
@@ -14,7 +14,9 @@ ht-degree: 2%
 ---
 
 
-# 設定Google BigQuery {#configure-fda-google-big-query}的存取權
+# 設定Google BigQuery的存取權 {#configure-fda-google-big-query}
+
+![](../../assets/v7-only.svg)
 
 使用Adobe Campaign Classic **同盟資料存取**(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照以下步驟配置[!DNL Google BigQuery]的訪問。
 
@@ -24,17 +26,17 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] 連接器適用於混合部署和內部部署。有關詳細資訊，請參見[此頁面](../../installation/using/capability-matrix.md)。
+> [!DNL Google BigQuery] 連接器適用於混合部署和內部部署。如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
 
 ![](assets/snowflake_3.png)
 
-## Windows上的Google BigQuery {#google-windows}
+## 在Windows上使用Google BigQuery {#google-windows}
 
-### 在Windows {#driver-window}上設定的驅動程式
+### 在Windows上設定的驅動程式 {#driver-window}
 
 1. 下載Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的[ODBC驅動程式。
 
-1. 在Windows中配置ODBC驅動程式。 有關詳細資訊，請參見[此頁面](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf)。
+1. 在Windows中配置ODBC驅動程式。 如需詳細資訊，請參閱[此頁面](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf)。
 
 1. 為了讓[!DNL Google BigQuery]連接器正常運作，Adobe Campaign Classic需要下列參數才能連線：
 
@@ -56,7 +58,7 @@ ht-degree: 2%
 
 1. 在Adobe Campaign Classic中，您接著可以設定[!DNL Google BigQuery]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#google-external)。
 
-### 在Windows {#bulk-load-window}上設定的批量載入
+### 在Windows上設定大量載入 {#bulk-load-window}
 
 >[!NOTE]
 >
@@ -82,7 +84,7 @@ ht-degree: 2%
 
 ## Linux上的Google BigQuery {#google-linux}
 
-### 在Linux {#driver-linux}上設定的驅動程式
+### 在Linux上設定的驅動程式 {#driver-linux}
 
 1. 安裝ODBC驅動程式之前，需要更新系統。 在Linux或CentOS上，執行下列命令：
 
@@ -204,7 +206,7 @@ ht-degree: 2%
 
 1. 在Adobe Campaign Classic中，您接著可以設定[!DNL Google BigQuery]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#google-external)。
 
-### 在Linux {#bulk-load-linux}上設定的批量載入
+### 在Linux上設定的大量載入 {#bulk-load-linux}
 
 >[!NOTE]
 >
@@ -224,13 +226,13 @@ ht-degree: 2%
 
 1. 重新啟動Adobe Campaign Classic，以便考慮變更。
 
-## Google BigQuery外部帳戶{#google-external}
+## Google BigQuery外部帳戶 {#google-external}
 
 您需要建立[!DNL Google BigQuery]外部帳戶，將您的Adobe Campaign Classic執行個體連接至[!DNL Google BigQuery]外部資料庫。
 
 1. 在Adobe Campaign Classic **[!UICONTROL Explorer]**&#x200B;中，按一下「**[!UICONTROL Administration]** 」>「 **[!UICONTROL Platform]** 」>「 **[!UICONTROL External accounts]**」。
 
-1. 按一下 **[!UICONTROL New]**。
+1. 按一下&#x200B;**[!UICONTROL New]**。
 
 1. 選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 

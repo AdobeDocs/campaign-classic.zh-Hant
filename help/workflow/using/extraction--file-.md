@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 資料擷取 (檔案){#extraction-file}
+
+![](../../assets/common.svg)
 
 您可以使用&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動從外部檔案的工作流表中擷取資料。
 
@@ -48,11 +50,11 @@ ht-degree: 1%
 
 您可以定義要在資料擷取期間執行的後續程式，讓您壓縮或加密檔案。 要執行此操作，必須在活動的&#x200B;**[!UICONTROL Script]**&#x200B;索引標籤中新增所需的命令。
 
-如需詳細資訊，請參閱本區段：[壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+如需詳細資訊，請參閱本區段：[壓縮或加密檔案](how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
 
 ![](assets/postprocessing_dataextraction.png)
 
-## 匯總函式清單{#list-of-aggregate-functions}
+## 匯總函式清單 {#list-of-aggregate-functions}
 
 以下是可用匯總函式的清單：
 

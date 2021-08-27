@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 維護類型{#types-of-maintenance}
 
-## 應用程式維護{#application-maintenance}
+![](../../assets/v7-only.svg)
+
+## 應用程式維護 {#application-maintenance}
 
 Adobe Campaign提供內建的工作流程，可讓您排程特定資料庫維護任務：**資料庫清理工作流**。 此工作流程會執行下列工作：
 
@@ -27,7 +29,7 @@ Adobe Campaign提供內建的工作流程，可讓您排程特定資料庫維護
 >
 >請注意，清理任務主要涉及應用程式級維護，而非RDBMS級維護（統計資訊更新除外）。 但是，資料庫上需要維護操作。 即使資料庫清理工作流成功運行，這並不意味著資料庫已得到最佳調整。
 
-## 技術維護{#technical-maintenance}
+## 技術維護 {#technical-maintenance}
 
 資料庫清理工作流不包含任何資料庫維護工具：維護由您負責。 若要這麼做，您可以：
 
@@ -39,7 +41,7 @@ Adobe Campaign提供內建的工作流程，可讓您排程特定資料庫維護
 * 重新索引頻繁更新的表，
 * 精簡/重建表以避免碎片。
 
-### 維護計畫{#maintenance-schedule}
+### 維護計畫 {#maintenance-schedule}
 
 您需要找到執行這些維護活動的適當位置。 它們在運行時可能會嚴重影響資料庫效能，甚至會阻止應用程式（由於鎖定）。
 
@@ -47,7 +49,7 @@ Adobe Campaign提供內建的工作流程，可讓您排程特定資料庫維護
 
 更深入的維護（如完整表重建）可以每月執行一次，最好在應用程式完全停止的情況下執行，因為系統無論如何都不可用。
 
-### 重建表{#rebuilding-a-table}
+### 重建表 {#rebuilding-a-table}
 
 有數種策略可供使用：
 

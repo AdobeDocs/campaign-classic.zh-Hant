@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 資料導向 API{#data-oriented-apis}
 
+![](../../assets/v7-only.svg)
+
 資料導向API可讓您處理整個資料模型。
 
-## 資料模型{#overview-of-the-datamodel}概述
+## 資料模型概觀 {#overview-of-the-datamodel}
 
 Adobe Campaign不為每個實體提供專用的讀取API（沒有getRecipient或getDelivery函式等）。 使用QUERY和WRITER資料讀取和修改方法訪問模型的資料。
 
@@ -27,7 +29,7 @@ Adobe Campaign可讓您管理集合：查詢使您能夠恢復整個資料庫中
 
 XML文檔儲存在資料庫的MEMO類型欄位中。
 
-## 模型{#description-of-the-model}的說明
+## 模型說明 {#description-of-the-model}
 
 您必須熟悉Adobe Campaign資料模型，才能處理指令碼中資料庫的欄位。
 
@@ -35,7 +37,7 @@ XML文檔儲存在資料庫的MEMO類型欄位中。
 
 若要產生其結構，請參閱本文章：[如何產生資料模型或資料字典](https://helpx.adobe.com/campaign/kb/generate-data-model.html)。
 
-## 查詢和寫入程式{#query-and-writer}
+## 查詢和寫入程式 {#query-and-writer}
 
 以下介紹結構詳細說明了資料庫和客戶(網頁或Adobe Campaign客戶端控制台)之間的讀取(ExecuteQuery)和寫入（寫入器）的低級交換。
 
@@ -61,7 +63,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollection--xtk-session-)中。
 
-## ExecuteQuery(xtk:queryDef){#executequery--xtk-querydef-}
+## ExecuteQuery(xtk:queryDef) {#executequery--xtk-querydef-}
 
 此方法可讓您從與架構相關聯的資料執行查詢。 它會使用驗證字串（必須登入）和XML檔案，以描述要提交的查詢為參數。 返回參數是XML文檔，包含查詢結果的格式為查詢引用的架構。
 
@@ -79,7 +81,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 >
 >這是「const」方法。 輸入參數以&quot;xtk:queryDef&quot;架構的格式包含在XML文檔中。
 
-### 輸入查詢{#format-of-the-xml-document-of-the-input-query}的XML文檔格式
+### 輸入查詢的XML文檔格式 {#format-of-the-xml-document-of-the-input-query}
 
 查詢的XML文檔結構在「xtk:queryDef」架構中描述。 本文檔描述SQL查詢的子句：&quot;select&quot;、&quot;where&quot;、&quot;order by&quot;、&quot;group by&quot;、&quot;having&quot;。
 
@@ -142,7 +144,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 
 **XPath**&#x200B;語法用於根據輸入架構查找資料。 有關XPaths的詳細資訊，請參閱[資料架構](../../configuration/using/data-schemas.md)。
 
-#### 「get」操作{#example-with-the--get--operation}的示例
+#### &#39;get&#39;操作的範例 {#example-with-the--get--operation}
 
 在電子郵件上使用篩選器檢索收件者的姓氏和名字（「nms:recipient」方案）。
 
@@ -161,7 +163,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 </queryDef>
 ```
 
-#### 「select」操作{#example-with-the--select--operation}的示例
+#### 「select」操作的示例 {#example-with-the--select--operation}
 
 傳回在資料夾和電子郵件網域上篩選的收件者清單，其排序依出生日期的遞減順序。
 
@@ -204,7 +206,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 ...
 ```
 
-#### 「count」操作{#example-with-the--count--operation}的示例
+#### 「count」操作的範例 {#example-with-the--count--operation}
 
 要計算查詢上的記錄數：
 
@@ -221,7 +223,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 >
 >我們再次使用上一個範例中的條件。 未使用`<select>`和子句。`</select>`
 
-#### 資料分組{#data-grouping}
+#### 資料分組 {#data-grouping}
 
 要檢索引用多次的電子郵件地址：
 
@@ -257,7 +259,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 >
 >不再需要填入`<groupby>`元素。
 
-#### 條件{#bracketing-in-conditions}中的括弧
+#### 條件中的括弧 {#bracketing-in-conditions}
 
 以下是兩個在相同條件下加括弧的範例。
 
@@ -297,7 +299,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 
 條件中使用超過兩個資料時，此語法可簡化查詢。
 
-#### 連結{#examples-on-links}的範例
+#### 連結範例 {#examples-on-links}
 
 * 連結1-1或N1:當表具有外鍵時（連結從表開始），可以篩選或直接檢索連結表的欄位。
 
@@ -368,7 +370,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
    </queryDef>
    ```
 
-#### 綁定&#39;where&#39;和&#39;select&#39;子句{#binding-the-parameters-of-the--where--and--select--clause}的參數
+#### 綁定&#39;where&#39;和&#39;select&#39;子句的參數 {#binding-the-parameters-of-the--where--and--select--clause}
 
 參數的捆綁可讓引擎設定查詢中使用的參數的值。 這非常有用，因為引擎負責值的逸出，而且快取對於要擷取的參數有額外的好處。
 
@@ -389,7 +391,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 >
 >如果查詢包含「order-by」或「group-by」指令，則資料庫引擎將無法「綁定」值。 必須將@noSqlBind=&quot;true&quot;屬性放置在查詢的&quot;select&quot;和/或&quot;where&quot;指示上。
 
-#### 查詢建立提示：{#query-building-tip-}
+#### 查詢建立提示： {#query-building-tip-}
 
 若要協助處理查詢的語法，您可以使用Adobe Campaign用戶端主控台（**[!UICONTROL Tools/ Generic query editor...]**&#x200B;功能表）中的一般查詢編輯器來撰寫查詢。 操作步驟：
 
@@ -405,7 +407,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### 輸出文檔格式{#output-document-format}
+### 輸出文檔格式 {#output-document-format}
 
 返回參數是與查詢關聯的架構格式的XML文檔。
 
@@ -460,7 +462,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 </recipient>
 ```
 
-### SOAP消息{#example-of-soap-messages}示例
+### SOAP消息的示例 {#example-of-soap-messages}
 
 * 查詢:
 
@@ -502,7 +504,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
    </SOAP-ENV:Envelope>
    ```
 
-## Write/WriteCollection(xtk:session){#write---writecollection--xtk-session-}
+## Write/WriteCollection(xtk:session) {#write---writecollection--xtk-session-}
 
 這些服務用於插入、更新或刪除實體（「寫入」方法）或實體集合（「寫入收集」方法）。
 
@@ -547,7 +549,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 * **刪除**:刪除記錄，
 * **無**:僅用於連結調解，不需更新或插入。
 
-### 「寫入」方法{#example-with-the--write--method}的示例
+### 「Write」方法的範例 {#example-with-the--write--method}
 
 使用電子郵件地址、出生日期和城鎮更新或插入收件人（隱含的「insertOrUpdate」操作）:
 
@@ -567,7 +569,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 >
 >對於刪除操作，輸入文檔只能包含構成調解密鑰的欄位。
 
-### 「WriteCollection」方法{#example-with-the--writecollection--method}的示例
+### &#39;WriteCollection&#39;方法的範例 {#example-with-the--writecollection--method}
 
 更新或插入多個收件者：
 
@@ -579,7 +581,7 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 </recipient-collection>
 ```
 
-### 連結{#example-on-links}的範例
+### 連結範例 {#example-on-links}
 
 #### 範例1 {#example-1}
 
@@ -625,11 +627,11 @@ Write方法顯示在[Write/WriteCollection(xtk:session)](#write---writecollectio
 >
 >在`<rcpgroup>`元素中未輸入鍵的定義，因為基於組名的隱式鍵在「nms:group」架構中定義。
 
-### XML集合元素{#xml-collection-elements}
+### XML集合元素 {#xml-collection-elements}
 
 預設情況下，必須填入所有集合元素，才能更新XML集合元素。 來自資料庫的資料將替換為來自輸入文檔的資料。 如果文檔僅包含要更新的元素，則必須在要更新的所有收集元素上填充「_operation」屬性，以強制與資料庫的XML資料合併。
 
-### SOAP消息{#example-of-soap-messages-1}示例
+### SOAP消息的示例 {#example-of-soap-messages-1}
 
 * 查詢:
 

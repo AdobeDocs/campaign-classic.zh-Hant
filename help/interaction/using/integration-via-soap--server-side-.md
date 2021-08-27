@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # 透過SOAP整合（伺服器端）{#integration-via-soap-server-side}
 
+![](../../assets/v7-only.svg)
+
 為選件管理提供的SOAP Web服務與Adobe Campaign中通常使用的服務不同。 您可以透過前一節所述的互動URL來存取這些選件，並讓您為特定連絡人呈現或更新選件。
 
-## 優惠方案主張{#offer-proposition}
+## 優惠方案主張 {#offer-proposition}
 
 如需透過SOAP的優惠方案主張，請新增&#x200B;**nms:composition#Propose**&#x200B;命令，後面接著下列參數：
 
@@ -39,7 +41,7 @@ ht-degree: 3%
 * **interactionId**:互動的ID。
 * **主張**:XML元素，包含命題的清單，每個命題都有自己的ID和HTML表示。
 
-## 選件更新{#offer-update}
+## 選件更新 {#offer-update}
 
 將&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令添加到URL，然後添加以下參數：
 
@@ -47,7 +49,7 @@ ht-degree: 3%
 * **狀態**:字串類型，它會指定選件的新狀態。可能的值列在&#x200B;**命題狀態**&#x200B;枚舉中，位於&#x200B;**nms:common**&#x200B;方案中。 例如，現成可用，數字3對應於&#x200B;**接受**&#x200B;狀態。
 * **內容**:XML元素，可讓您在空間架構中添加上下文資訊。如果使用的架構為&#x200B;**nms:interaction**，則應新增&#x200B;**`<empty>`**。
 
-## 使用SOAP呼叫{#example-using-a-soap-call}的範例
+## 使用SOAP呼叫的範例 {#example-using-a-soap-call}
 
 以下是SOAP呼叫的程式碼範例：
 

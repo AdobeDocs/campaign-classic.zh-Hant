@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 執行彙總計算 {#performing-aggregate-computing}
+
+![](../../assets/common.svg)
 
 在此範例中，我們想根據性別來計算住在倫敦的收件者人數。
 

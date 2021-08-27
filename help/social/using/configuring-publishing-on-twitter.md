@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 在 Twitter 上設定發佈{#configuring-publishing-on-twitter}
+
+![](../../assets/v7-only.svg)
 
 為了讓Adobe Campaign能夠傳送推文至您的Twitter帳戶，您需要為這些帳戶委派對Adobe Campaign的寫入存取權。 要執行此操作，請套用下列設定步驟：
 
@@ -30,7 +32,7 @@ ht-degree: 2%
 
 若要建立Twitter帳戶，請前往[https://twitter.com](https://twitter.com)。
 
-## 在Twitter {#creating-a-test-account-on-twitter}上建立測試帳戶
+## 在Twitter上建立測試帳戶 {#creating-a-test-account-on-twitter}
 
 我們也建議建立私人Twitter帳戶，以用於傳送推文校樣（如需詳細資訊，請參閱[傳送校樣](../../social/using/publishing-on-twitter.md#sending-the-proof)）:
 
@@ -41,7 +43,7 @@ ht-degree: 2%
 
 ![](assets/social_twitter_test_page.png)
 
-## 在Twitter上建立應用程式{#creating-an-application-on-twitter}
+## 在Twitter上建立應用程式 {#creating-an-application-on-twitter}
 
 為了讓Adobe Campaign能夠將推文傳送至您的Twitter帳戶，您需要為每個Twitter帳戶建立一個Twitter應用程式。 若要這麼做，請套用下列步驟：
 
@@ -57,7 +59,7 @@ ht-degree: 2%
 
    ![](assets/social_create_twitter_app_002.png)
 
-## 委派對Adobe Campaign的寫入存取{#delegating-write-access-to-adobe-campaign}
+## 委派寫入存取權至Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 對於每個Twitter應用程式，您需要建立不同的&#x200B;**[!UICONTROL Twitter]**&#x200B;類型服務，其中將包含應用程式設定。
 
@@ -115,7 +117,7 @@ ht-degree: 2%
 
 **[!UICONTROL Twitter account Synchronization]**&#x200B;工作流程會同步Adobe Campaign中的Twitter帳戶。 有關詳細資訊，請參閱[同步Facebook頁面](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages)。
 
-## 同步Twitter帳戶{#synchronizing-twitter-accounts}
+## 同步Twitter帳戶 {#synchronizing-twitter-accounts}
 
 >[!IMPORTANT]
 >

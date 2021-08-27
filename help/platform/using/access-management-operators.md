@@ -2,18 +2,20 @@
 product: campaign
 title: 開始使用Campaign運算子
 description: 了解如何建立和管理行銷活動使用者
-feature: 存取管理
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1146'
 ht-degree: 2%
 
 ---
 
 # 建立及管理操作者 {#operators}
+
+![](../../assets/common.svg)
 
 ## 開始使用Campaign運算子  {#about-operators}
 
@@ -45,7 +47,7 @@ ht-degree: 2%
 
 1. 指定用戶的&#x200B;**[!UICONTROL Identification parameters]**:其登錄名、密碼和名稱。 運算子將使用登入和密碼來登入Adobe Campaign。 用戶登錄後，他們可以通過&#x200B;**[!UICONTROL Tools > Change password]**&#x200B;菜單更改其密碼。 運算子的電子郵件至關重要，因為它可讓運算子接收通知，例如在處理核準時。
 
-   本節也可讓您將運算子連結至組織實體。 有關詳細資訊，請參閱[此頁](../../campaign/using/about-distributed-marketing.md)。
+   本節也可讓您將運算子連結至組織實體。 有關詳細資訊，請參閱[此頁](../../distributed/using/about-distributed-marketing.md)。
 
 1. 在&#x200B;**[!UICONTROL Operator access rights]**&#x200B;區段中選取授予運算子的權限。
 

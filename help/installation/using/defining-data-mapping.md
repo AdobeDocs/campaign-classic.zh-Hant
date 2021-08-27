@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
 # 定義資料對應 {#defining-data-mapping}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign可讓您定義外部表格中資料的對應。
 

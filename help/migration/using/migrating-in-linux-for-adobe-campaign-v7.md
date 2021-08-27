@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 在 Linux 中移轉 Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
 
-## 一般程式{#general-procedure}
+![](../../assets/v7-only.svg)
+
+## 一般程式 {#general-procedure}
 
 在Linux中的移轉步驟如下：
 
@@ -25,7 +27,7 @@ ht-degree: 1%
 1. 移轉平台：請參閱[部署Adobe Campaign v7](#deploying-adobe-campaign-v7)。
 1. 重新啟動服務：請參閱[重新啟動服務](#re-starting-services)。
 
-## 服務停止{#service-stop}
+## 服務停止 {#service-stop}
 
 首先，停止所有相關電腦上具有資料庫訪問權限的所有進程。
 
@@ -69,11 +71,11 @@ ht-degree: 1%
    killall -9 nlserver
    ```
 
-## 備份資料庫和現有安裝{#back-up-the-database-and-the-existing-installation}
+## 備份資料庫和現有安裝 {#back-up-the-database-and-the-existing-installation}
 
 程式取決於您的Adobe Campaign舊版。
 
-### 從Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}移轉
+### 從Adobe Campaign v5.11移轉 {#migrating-from-adobe-campaign-v5-11}
 
 1. 備份Adobe Campaign資料庫。
 1. 以&#x200B;**neolane**&#x200B;登錄，並使用以下命令備份&#x200B;**nl5**&#x200B;目錄：
@@ -108,7 +110,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-### 從Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}移轉
+### 從Adobe Campaign v6.02移轉 {#migrating-from-adobe-campaign-v6-02}
 
 1. 備份Adobe Campaign資料庫。
 1. 以&#x200B;**neolane**&#x200B;登錄，並使用以下命令備份&#x200B;**nl6**&#x200B;目錄：
@@ -143,7 +145,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-### 從Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}移轉
+### 從Adobe Campaign v6.1移轉 {#migrating-from-adobe-campaign-v6-1}
 
 1. 備份Adobe Campaign資料庫。
 1. 以&#x200B;**neolane**&#x200B;登錄，並使用以下命令備份&#x200B;**nl6**&#x200B;目錄：
@@ -157,11 +159,11 @@ ht-degree: 1%
    >
    >為了防患於未然，建議您壓縮&#x200B;**nl6.back**&#x200B;資料夾，並將其儲存至伺服器以外的安全位置。
 
-## 卸載Adobe Campaign舊版軟體包{#uninstalling-adobe-campaign-previous-version-packages}
+## 解除安裝Adobe Campaign舊版套件 {#uninstalling-adobe-campaign-previous-version-packages}
 
 程式取決於您的Adobe Campaign舊版。
 
-### 卸載Adobe Campaign v5包{#uninstalling-adobe-campaign-v5-packages}
+### 解除安裝Adobe Campaign v5套件 {#uninstalling-adobe-campaign-v5-packages}
 
 1. 以&#x200B;**root**&#x200B;登入。
 1. 使用下列命令識別安裝的Adobe Campaign套件。
@@ -199,7 +201,7 @@ ht-degree: 1%
       rprm -ev nlserver5 nlthirdparty5
       ```
 
-### 卸載Adobe Campaign v6軟體包{#uninstalling-adobe-campaign-v6-packages}
+### 解除安裝Adobe Campaign v6套件 {#uninstalling-adobe-campaign-v6-packages}
 
 本節說明如何解除安裝Adobe Campaign v6.02或v6.1套件。
 
@@ -243,7 +245,7 @@ ht-degree: 1%
 
 程式取決於您的Adobe Campaign舊版。
 
-### 從Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}移轉
+### 從Adobe Campaign v5.11移轉 {#migrating-from-adobe-campaign-v5_11-1}
 
 部署Adobe Campaign需要兩個階段：
 
@@ -370,7 +372,7 @@ ht-degree: 1%
 >
 >尚未啟動Adobe Campaign服務：仍需在Apache中進行變更。
 
-### 從Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}移轉
+### 從Adobe Campaign v6.02移轉 {#migrating-from-adobe-campaign-v6_02-1}
 
 部署Adobe Campaign需要兩個階段：
 
@@ -448,7 +450,7 @@ ht-degree: 1%
    >
    >「多時區」模式僅在v6.02中可用於PostgreSQL資料庫引擎。 現在，無論使用哪個版本的資料庫引擎，都可使用它。 強烈建議您將基礎升級為「多時區」。 有關時區選項的詳細資訊，請參閱[時區](../../migration/using/general-configurations.md#time-zones)區段。
 
-### 從Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}移轉
+### 從Adobe Campaign v6.1移轉 {#migrating-from-adobe-campaign-v6_1-1}
 
 部署Adobe Campaign需要兩個階段：
 
@@ -512,7 +514,7 @@ ht-degree: 1%
    nlserver config -postupgrade -instance:<instance name>
    ```
 
-## 遷移重定向伺服器(Apache){#migrating-the-redirection-server--apache-}
+## 遷移重定向伺服器(Apache) {#migrating-the-redirection-server--apache-}
 
 >[!NOTE]
 >
@@ -570,15 +572,15 @@ ht-degree: 1%
    vi /etc/apache2/mods-available/alias.conf
    ```
 
-## 安全區域{#security-zones}
+## 安全區域 {#security-zones}
 
 如果您要從v6.02或更舊版本移轉，則必須先配置安全區域，才能啟動服務。 有關詳細資訊，請參閱[安全](../../migration/using/general-configurations.md#security)。
 
-## 重新啟動服務{#re-starting-services}
+## 重新啟動服務 {#re-starting-services}
 
 程式取決於您的Adobe Campaign舊版。
 
-### 從Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-2}移轉
+### 從Adobe Campaign v5.11移轉 {#migrating-from-adobe-campaign-v5_11-2}
 
 在&#x200B;**config-`<instance name>`.xml**&#x200B;檔案中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自動啟動。 服務。
 
@@ -609,7 +611,7 @@ ht-degree: 1%
 
 在繼續下一步之前，請對新安裝運行完整測試，確保沒有回歸，並且所有操作都可以按照[常規配置](../../migration/using/general-configurations.md)部分中的所有建議運行。
 
-### 從Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}移轉
+### 從Adobe Campaign v6.02移轉 {#migrating-from-adobe-campaign-v6_02-2}
 
 在&#x200B;**config-`<instance name>`.xml**&#x200B;檔案中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自動啟動。 服務。
 
@@ -640,7 +642,7 @@ ht-degree: 1%
 
 請依照[一般設定](../../migration/using/general-configurations.md)區段中的所有建議，完全測試新安裝，檢查其是否未回復，並確認一切皆正常運作。
 
-### 從Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}移轉
+### 從Adobe Campaign v6.1移轉 {#migrating-from-adobe-campaign-v6_1-2}
 
 在下列各伺服器上啟動Apache和Adobe Campaign服務：
 

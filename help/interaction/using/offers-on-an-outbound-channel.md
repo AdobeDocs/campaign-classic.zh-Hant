@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 傳出頻道上的優惠{#offers-on-an-outbound-channel}
 
-## 電子郵件選件傳送{#email-offer-delivery}
+![](../../assets/v7-only.svg)
+
+## 電子郵件選件傳送 {#email-offer-delivery}
 
 在我們的資料庫中，有一類前往非洲的旅行優惠。 已設定每個優惠方案的資格、內容和表示法。 我們現在想要建立行銷活動，透過電子郵件呈現優惠方案。
 
@@ -60,7 +62,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_010.png)
 
-## 執行優惠方案模擬{#perform-an-offer-simulation}
+## 執行優惠方案模擬 {#perform-an-offer-simulation}
 
 1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Simulations]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 

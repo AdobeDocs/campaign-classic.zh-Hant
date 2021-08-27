@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 5%
@@ -22,11 +22,13 @@ ht-degree: 5%
 
 # 使用重複資料刪除活動的合併功能 {#deduplication-merge}
 
+![](../../assets/common.svg)
+
 ## 關於此使用實例 {#about-this-use-case}
 
 此使用案例說明如何在&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動中使用&#x200B;**[!UICONTROL Merge]**&#x200B;功能。
 
-有關此功能的詳細資訊，請參閱[此部分](../../workflow/using/deduplication.md#merging-fields-into-single-record)。
+有關此功能的詳細資訊，請參閱[此部分](deduplication.md#merging-fields-into-single-record)。
 
 **[!UICONTROL Deduplication]**&#x200B;活動用於從資料集中刪除重複行。 在此使用案例中，下方顯示的資料會根據「電子郵件」欄位重複。
 

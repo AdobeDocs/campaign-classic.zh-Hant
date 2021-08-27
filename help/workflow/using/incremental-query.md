@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 增量查詢{#incremental-query}
+
+![](../../assets/common.svg)
 
 增量查詢允許您根據條件定期選擇目標，同時排除已針對此條件定位的人員。
 
@@ -23,8 +25,8 @@ ht-degree: 3%
 
 **相關主題：**
 
-* [使用案例：使用增量查詢更新每季清單](../../workflow/using/quarterly-list-update.md)
-* [建立查詢](../../workflow/using/query.md#creating-a-query)
+* [使用案例：使用增量查詢更新每季清單](quarterly-list-update.md)
+* [建立查詢](query.md#creating-a-query)
 
 >[!CAUTION]
 >
@@ -59,7 +61,7 @@ ht-degree: 3%
 
       此參數可讓您過載包含歷史記錄資料的預設SQL表。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要

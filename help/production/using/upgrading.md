@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 升級至新組建（內部部署）{#upgrading}
+
+![](../../assets/v7-only.svg)
 
 開始升級程式之前，請判斷並確認要升級至哪個Adobe Campaign版本，並參閱[發行說明](../../rn/using/latest-release.md) 。
 
@@ -24,7 +26,6 @@ ht-degree: 2%
 >* 開始之前，請閱讀[本節](../../installation/using/general-architecture.md)和[build upgrade](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)章節。
 
 >
-
 
 
 ## Windows {#in-windows}
@@ -38,7 +39,7 @@ ht-degree: 2%
 
 要了解如何更新客戶端控制台，請參閱[此部分](../../installation/using/client-console-availability-for-windows.md)。
 
-### 關閉服務{#shut-down-services}
+### 關閉服務 {#shut-down-services}
 
 若要以新版本取代所有檔案，您需要關閉nlserver服務的所有執行個體。
 
@@ -63,23 +64,23 @@ ht-degree: 2%
 
    您可以使用Windows任務管理器來確保所有進程都已停止。
 
-### 升級Adobe Campaign伺服器應用程式{#upgrade-the-adobe-campaign-server-application}
+### 升級Adobe Campaign伺服器應用程式 {#upgrade-the-adobe-campaign-server-application}
 
 要運行升級檔案，請應用以下步驟：
 
 1. 運行&#x200B;**setup.exe**。
 
-   若要下載此檔案，請使用您的用戶憑據連接到[軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 了解更多[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中的軟體分發。
+   若要下載此檔案，請使用您的用戶憑據連接到[軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 了解更多[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant?lang=en)中的軟體分發。
 
 1. 選擇安裝模式：選擇&#x200B;**[!UICONTROL Update or repair]**
-1. 按一下 **[!UICONTROL Next]**。
-1. 按一下 **[!UICONTROL Finish]**。
+1. 按一下&#x200B;**[!UICONTROL Next]**。
+1. 按一下&#x200B;**[!UICONTROL Finish]**。
 
    然後，安裝程式將複製新檔案。
 
 1. 操作完成後，按一下&#x200B;**[!UICONTROL Finish]** 。
 
-### 同步資源{#synchronize-resources}
+### 同步資源 {#synchronize-resources}
 
 使用下列命令列：
 
@@ -97,7 +98,7 @@ ht-degree: 2%
 
 然後檢查同步是否生成錯誤或警告。 有關詳細資訊，請參閱[解決升級衝突](#resolving-upgrade-conflicts)。
 
-### 重新啟動服務{#restart-services}
+### 重新啟動服務 {#restart-services}
 
 要重新啟動的服務包括：
 
@@ -121,13 +122,13 @@ ht-degree: 2%
 >
 >從8757組建版本開始，就不再需要協力廠商程式庫。
 
-### 獲取更新的包{#obtain-updated-packages}
+### 取得更新的套件 {#obtain-updated-packages}
 
 首先，請恢復Adobe Campaign的兩個更新套件：使用您的用戶憑據連接到[Software distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 了解更多[本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中的軟體分發。
 
 檔案為&#x200B;**nlserver6-v7-XXX.rpm**
 
-### 執行更新{#perform-an-update}
+### 執行更新 {#perform-an-update}
 
 * 基於RPM的分發(RedHat、SuSe)
 
@@ -157,7 +158,7 @@ ht-degree: 2%
 >
 >[本節](../../installation/using/installing-campaign-standard-packages.md)中詳細說明了完整的安裝過程。 資源會自動同步，但您必須確定未發生任何錯誤。 有關詳細資訊，請參閱[解決升級衝突](#resolving-upgrade-conflicts)。
 
-### 重新啟動Web伺服器{#reboot-the-web-server}
+### 重新啟動Web伺服器 {#reboot-the-web-server}
 
 您必須關閉Apache，新程式庫才可適用。
 
@@ -173,8 +174,7 @@ ht-degree: 2%
 >* 您必須執行此命令，直到獲得以下答復：
 
    >
-   >   
-   若要讓Apache套用新程式庫，必須執行此操作。
+   >   若要讓Apache套用新程式庫，必須執行此操作。
 
 
 然後重新啟動Apache:
@@ -183,11 +183,11 @@ ht-degree: 2%
 /etc/init.d/apache start
 ```
 
-## 解決升級衝突{#resolving-upgrade-conflicts}
+## 解決升級衝突 {#resolving-upgrade-conflicts}
 
 在資源同步期間， **postupgrade**&#x200B;命令允許您檢測同步是否生成了錯誤或警告。
 
-### 查看同步結果{#view-the-synchronization-result}
+### 查看同步結果 {#view-the-synchronization-result}
 
 查看同步結果有兩種方式：
 
@@ -206,7 +206,7 @@ ht-degree: 2%
 
 * **postupgrade_`<server version number>_<time of postupgrade>`.log**&#x200B;日誌檔案包含同步結果。 預設可在下列目錄中使用：**`<installation directory>/var/<instance/postupgrade`**。 錯誤和警告由錯誤和警告屬性指示。
 
-### 解決衝突{#resolving-conflicts}
+### 解決衝突 {#resolving-conflicts}
 
 要解決衝突，請應用以下進程：
 
@@ -236,13 +236,13 @@ ht-degree: 2%
 1. 轉到已解決的衝突。 按一下&#x200B;**[!UICONTROL Actions]**&#x200B;圖示並選取&#x200B;**[!UICONTROL Declare as resolved]** 。
 1. 儲存您的變更：衝突現在已經解決。
 
-### 最佳實務{#best-practices}
+### 最佳實務 {#best-practices}
 
 更新失敗可能連結到資料庫配置。 確保技術管理員和資料庫管理員執行的配置相容。
 
 例如，Unicode資料庫不僅必須授權儲存LATIN1資料等。
 
-## 警告客戶端控制台可用更新{#warn-the-client-consoles-of-the-available-update}
+## 警告客戶端控制台可用更新 {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 

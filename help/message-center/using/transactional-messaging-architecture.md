@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: 異動傳訊架構
+title: 異動訊息傳送架構
 description: 本節說明Adobe Campaign Classic交易式訊息架構，以及傳遞交易式訊息的可用通道。
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
 
 ---
 
-# 異動傳訊架構 {#transactional-messaging-architecture}
+# 異動訊息傳送架構 {#transactional-messaging-architecture}
+
+![](../../assets/v7-only.svg)
 
 交易式訊息需仰賴由數個執行個體組成的特定架構：
 
@@ -27,7 +29,7 @@ ht-degree: 1%
 |--- |--- |
 | Adobe Campaign使用者登入控制例項以： <ul><li>建立交易式訊息範本</li><li>使用種子清單生成消息預覽</li><li>顯示報表</li><li>監視執行實例</li></ul> | 執行例項的功能如下： <ul><li>接收事件</li><li>將它們連結至交易式訊息範本</li><li>傳送個人化訊息給每個收件者</li></ul> |
 
-## 安裝實例{#installing-instances}
+## 安裝執行個體 {#installing-instances}
 
 安裝交易式訊息套件時，需採取數項預防措施。 Adobe建議您先在測試環境中工作，再投入生產。 您也需要有相容的Adobe Campaign授權。 如需詳細資訊，請連絡您的Adobe帳戶主管。
 
@@ -37,7 +39,7 @@ ht-degree: 1%
 
 如果您需要使用多個通道，則必須先安裝並配置相關包，然後才能安裝交易式消息包。 如需詳細資訊，請參閱[新增傳送通道](#adding-a-delivery-channel)。
 
-## 控制實例{#control-instance}
+## 控制實例 {#control-instance}
 
 要在電腦上安裝控制實例，請通過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜單選擇&#x200B;**[!UICONTROL Transactional message control]**&#x200B;包。 有關詳細資訊，請參閱[安裝Campaign Classic標準包](../../installation/using/installing-campaign-standard-packages.md)。
 
@@ -45,7 +47,7 @@ ht-degree: 1%
 
 配置控制實例的詳細步驟在[本節](../../message-center/using/configuring-instances.md#control-instance)中介紹。
 
-### 支援多個控制實例{#supporting-several-control-instances}
+### 支援多個控制實例 {#supporting-several-control-instances}
 
 >[!IMPORTANT]
 >
@@ -59,7 +61,7 @@ ht-degree: 1%
 >
 >有關必要配置的詳細資訊，請參閱[使用多個控制實例](../../message-center/using/configuring-instances.md#using-several-control-instances)。
 
-## 執行實例{#execution-instance}
+## 執行實例 {#execution-instance}
 
 要在電腦上安裝執行實例，請通過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜單選擇&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;包。 有關詳細資訊，請參閱[安裝Campaign Classic標準包](../../installation/using/installing-campaign-standard-packages.md)。
 
@@ -75,7 +77,7 @@ ht-degree: 1%
 >
 >新增傳送通道（行動裝置通道、行動應用程式通道等） 必須先執行，才能安裝交易式訊息套件。
 
-### 新增傳送通道{#adding-a-delivery-channel}
+### 新增傳遞通道 {#adding-a-delivery-channel}
 
 Adobe建議您在安裝交易式訊息套件&#x200B;**之前，一律新增傳送通道套件。**
 
@@ -126,7 +128,7 @@ Create your delivery templates the way you would for an email campaign:
 
 You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
-### 異動推播通知 {#transactional-messaging-and-push-notifications}
+### 異動推送通知 {#transactional-messaging-and-push-notifications}
 
 與行動應用程式通道模組結合時，交易式訊息可讓您透過行動裝置上的通知推送交易式訊息。
 

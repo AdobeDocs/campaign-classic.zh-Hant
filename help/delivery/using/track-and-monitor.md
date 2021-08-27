@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 ---
 
 # 追蹤和監視 {#track-and-monitor}
+
+![](../../assets/common.svg)
 
 您是否按一下了&#x200B;**Send**&#x200B;按鈕？ 讓我們看看會發生什麼。 傳送後，Adobe Campaign可讓您追蹤已傳送的訊息，並探索收件者對您傳送的反應。 這可協助您改善未來的傳送，並最佳化您的下一個促銷活動。
 

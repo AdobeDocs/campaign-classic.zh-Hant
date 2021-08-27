@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 2%
+source-wordcount: '1305'
+ht-degree: 3%
 
 ---
 
-# 電子郵件密件副本{#email-archiving}
+# 設定電子郵件密件副本 {#email-archiving}
+
+![](../../assets/v7-only.svg)
 
 您可以設定Adobe Campaign以保留從您的平台傳送的電子郵件副本。
 
@@ -21,7 +23,7 @@ ht-degree: 2%
 
 要執行此操作，與已傳送電子郵件對應的.eml檔案會傳輸至遠端伺服器，例如SMTP電子郵件伺服器。 封存目的地是您必須指定的密件副本電子郵件地址（不會顯示給傳送收件者）。
 
-## Recommendations和限制{#recommendations-and-limitations}
+## Recommendations和限制 {#recommendations-and-limitations}
 
 * 電子郵件密件副本功能為選用。 請檢查您的授權合約。
 * 對於&#x200B;**托管和混合體系結構**，請聯繫您的客戶經理以激活它。 您選擇的密件副本電子郵件地址必須提供給Adobe團隊，由團隊為您進行配置。
@@ -31,11 +33,11 @@ ht-degree: 2%
 * 系統只會考慮成功傳送的電子郵件，不會考慮退信。
 * 電子郵件封存系統已隨Adobe Campaign 17.2（版本編號8795）變更。 如果您已使用電子郵件封存，則必須手動升級至新的電子郵件密件副本系統。 如需詳細資訊，請參閱[移至新的電子郵件密件副本](#updated-email-archiving-system--bcc-)區段。
 
-## 啟用電子郵件密件副本（內部部署）{#activating-email-archiving--on-premise-}
+## 啟用電子郵件密件副本（內部部署） {#activating-email-archiving--on-premise-}
 
 若要在內部部署Adobe Campaign時啟用BCC電子郵件封存，請遵循下列步驟。
 
-### 本地資料夾{#local-folder}
+### 本機資料夾 {#local-folder}
 
 若要啟用將已傳送電子郵件傳輸至密件副本電子郵件地址，必須先將已傳送電子郵件的確切原始副本儲存為.eml檔案，並儲存至本機資料夾。
 
@@ -98,7 +100,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 請務必根據電子郵件傳送的輸送量調整這些參數。 例如，在MTA每小時傳送30,000封電子郵件的設定中，您可以將&#x200B;**pollDelay**&#x200B;參數設為600，將&#x200B;**acquireLimit**&#x200B;參數設為5000，將&#x200B;**smtpNbConnection**&#x200B;參數設為2。 這表示使用2個SMTP連線時，每10分鐘會傳送5,000封電子郵件至密件副本地址。
 
-## 配置BCC電子郵件地址（內部部署）{#configuring-the-bcc-email-address--on-premise-}
+## 設定BCC電子郵件地址（內部部署） {#configuring-the-bcc-email-address--on-premise-}
 
 >[!IMPORTANT]
 >
@@ -121,7 +123,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >此外，中繼會為所有電子郵件（包括未發送的電子郵件）指派&#x200B;**[!UICONTROL Sent]**&#x200B;狀態。 因此，會封存所有訊息。
 
-## 移至新的電子郵件密件副本{#updated-email-archiving-system--bcc-}
+## 移至新的電子郵件密件副本 {#updated-email-archiving-system--bcc-}
 
 >[!IMPORTANT]
 >
@@ -135,7 +137,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 設定電子郵件密件副本後，請務必在傳送範本或傳送中選取&#x200B;**[!UICONTROL Email BCC]**&#x200B;選項。 如需詳細資訊，請參閱[本節](../../delivery/using/sending-messages.md#archiving-emails)。
 
-## 電子郵件密件副本最佳實務{#best-practices}
+## 電子郵件密件副本最佳作法 {#best-practices}
 
 * **密件副本地址郵箱**:請確定其接收容量足以封存MTA所傳送的所有電子郵件。
 * **MTA共同化**:密件副本封存功能可在MTA層級運作。它可讓您複製MTA傳送的每封電子郵件。 由於MTA可在多個執行個體（例如開發、測試或生產）或甚至多個用戶端（在中間來源環境中）共同化，因此設定此功能會影響安全性：
@@ -145,3 +147,31 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 * **每個連線的電子郵件**:BCC電子郵件封存的運作方式是開啟連線，並嘗試透過該連線傳送所有電子郵件。Adobe建議您與內部技術聯絡人檢查指定連線上接受的電子郵件數量。 增加此數量可能會對BCC吞吐量產生很大影響。
 * **密件副本傳送IP**:目前，不會透過一般MTA代理傳送密件副本電子郵件。而是會開啟從MTA伺服器到目的地電子郵件伺服器的直接連線。 這表示您可能需要根據電子郵件伺服器配置，將其他IP新增至網路上的允許清單。
+
+<!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
+
+For **hosted and hybrid architectures**, if you have the latest instance of Adobe Campaign, or if you have upgraded to the Enhanced MTA and using Adobe Campaign 19.2 or later, you can use Email BCC with Enhanced MTA, which is more reliable, efficient, and has lower latency.
+
+### Activating Email BCC with Enhanced MTA
+
+To activate this feature, you must contact your account executive to communicate the BCC email address to be used for archiving.
+
+>[!NOTE]
+>
+>If you were already using BCC email archiving, you can provide the same address as you were using before or use a new one. If you keep the same, you still have to contact your account executive to set it up for you.
+
+### Specificities and recommendations
+
+Email BCC with Enhanced MTA is not activated at the delivery level: once this feature is enabled, **all sent deliveries** are sent to the BCC email address. There is no need to select the **[!UICONTROL Email BCC]** option in the delivery template or in the delivery.
+
+If you were already using BCC and if you keep the same address, you could see a significant increase in the volumes sent to the BCC address.
+
+Consequently, make sure:
+* The BCC address has enough reception capacity to archive all the emails that are sent.
+* You have the required MTA infrastructure capacity to receive 100% of your email volume delivered to a single address.
+
+### Limitations
+
+* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/understanding-delivery-failures.md).
+
+* There is no reporting available on the delivery status of the emails sent to the BCC email address.-->

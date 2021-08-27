@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 使用案例：依條件選取種子地址{#use-case-selecting-seed-addresses-on-criteria}
+
+![](../../assets/common.svg)
 
 在傳遞或促銷活動的架構中，**[!UICONTROL Edit the dynamic condition...]**&#x200B;連結可讓您根據特定選擇標準選擇種子地址。
 
@@ -53,7 +55,7 @@ ht-degree: 3%
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 在架構編輯視窗中，複製下方的線條，並貼到螢幕擷取畫面所示的區域中。
 
    ```
@@ -78,7 +80,7 @@ ht-degree: 3%
 
    在此情況下，您將指定已在種子地址表中建立名為&#x200B;**[!UICONTROL Department]**&#x200B;的新枚舉，該枚舉基於標準&#x200B;**[!UICONTROL @company]**&#x200B;枚舉模板（在種子地址表單中的名稱&#x200B;**公司**&#x200B;下標籤）。
 
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 在&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;菜單中，選擇&#x200B;**[!UICONTROL Update database structure]**&#x200B;選項。
 
    ![](assets/dlv_seeds_usecase_12.png)
@@ -176,7 +178,7 @@ ht-degree: 3%
    >
    >先前建立的架構擴充功能來自&#x200B;**recipient**&#x200B;架構。 上方畫面上顯示的值來自&#x200B;**recipient**&#x200B;架構的列舉。
 
-1. 按一下 **[!UICONTROL Ok]**。
+1. 按一下&#x200B;**[!UICONTROL Ok]**。
 
    查詢將顯示在&#x200B;**[!UICONTROL Select target]**&#x200B;窗口中。
 

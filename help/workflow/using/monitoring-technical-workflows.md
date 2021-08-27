@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -15,11 +15,13 @@ ht-degree: 8%
 
 # 監控技術工作流程 {#monitoring-technical-workflows}
 
+![](../../assets/common.svg)
+
 需要監控技術工作流程，並在工作流程失敗時採取動作。
 
 監控不同促銷活動程式的其他方式顯示在[此頁面](../../production/using/monitoring-guidelines.md)中。
 
-## 執行個體監控控制面板{#instance-monitoring-dashboard}
+## 執行個體監控控制面板 {#instance-monitoring-dashboard}
 
 您可透過&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤存取執行個體監控控制面板。
 
@@ -37,29 +39,29 @@ ht-degree: 8%
 
 視技術工作流程而定，請依照下列詳細步驟操作，以確保一切皆如預期般運作。
 
-若要更清楚了解每個技術工作流程應執行的動作，請參閱此[區段](../../workflow/using/about-technical-workflows.md)。
+若要更清楚了解每個技術工作流程應執行的動作，請參閱此[區段](about-technical-workflows.md)。
 
 對於&#x200B;**[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 檢查&#x200B;**[!UICONTROL Database Cleanup]**&#x200B;工作流程是否每天成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/delivery.md)。
+1. 檢查&#x200B;**[!UICONTROL Database Cleanup]**&#x200B;工作流程是否每天成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](delivery.md)。
 1. 查看日誌，驗證經過的時間隨時間相對恆定，並且不會干擾其他工作流。
 1. 如需詳細資訊，請查看此[page](../../production/using/database-cleanup-workflow.md)。
 
 對於&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-檢查「追蹤」工作流程是否如計畫（預設為每小時）執行，以及日記帳是否不會反覆標示經常發生的錯誤。 如需詳細資訊，請參閱本[區段](../../workflow/using/delivery.md)。
+檢查「追蹤」工作流程是否如計畫（預設為每小時）執行，以及日記帳是否不會反覆標示經常發生的錯誤。 如需詳細資訊，請參閱本[區段](delivery.md)。
 
 對於&#x200B;**[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. 檢查&#x200B;**[!UICONTROL Deliverability update]**&#x200B;工作流程是否每天成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/delivery.md)。
+1. 檢查&#x200B;**[!UICONTROL Deliverability update]**&#x200B;工作流程是否每天成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](delivery.md)。
 1. 在日誌中驗證規則是否定期更新。
 
 對於&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;資料夾下方的所有工作流。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/about-technical-workflows.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;資料夾下方的所有工作流。 如需關於此項目的詳細資訊，請參閱此[頁面](about-technical-workflows.md)。
 1. 檢查工作流程是否如計畫運行，以及日誌是否不會突出顯示經常性錯誤。
 
-## 工作流監督{#workflow-supervision}
+## 工作流程監控 {#workflow-supervision}
 
 **[!UICONTROL Workflow supervisors]**&#x200B;組應包含需要不斷通知故障以及哪些人可以及時採取行動的運算子。
 
@@ -71,7 +73,7 @@ ht-degree: 8%
 
 為了讓平台持續運作而應執行的任何工作流程（例如每日資料匯入）都應宣告為「生產」（核取方塊），並以粗體顯示。
 
-## 工作流維護清單{#workflow-maintenance-list}
+## 工作流程維護清單 {#workflow-maintenance-list}
 
 所有自訂技術工作流程都應記錄在包含下列項目的工作表中：
 
@@ -83,7 +85,7 @@ ht-degree: 8%
 
 ![](assets/monitoring_technical_workflows4.png)
 
-## {#planning-and-automation-of-monitoring}監控的規劃和自動化
+## 監控的規劃和自動化 {#planning-and-automation-of-monitoring}
 
 規劃工作流監視提高了其效率。 某些任務需要每天執行，而其他任務可以每週或每月執行。
 

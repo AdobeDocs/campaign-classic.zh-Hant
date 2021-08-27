@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 移轉至Campaign Classic{#about-migration}
+
+![](../../assets/v7-only.svg)
 
 本檔案詳細說明移轉的必要條件、移轉至Adobe Campaign Classic(v7)的步驟，以及其他必要和選用的設定（視您的設定而定）。
 

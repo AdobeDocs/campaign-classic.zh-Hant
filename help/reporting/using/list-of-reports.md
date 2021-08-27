@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 報告清單{#list-of-reports}
+
+![](../../assets/common.svg)
 
 ## 傳遞報表 {#reports-on-deliveries}
 
@@ -116,7 +118,7 @@ Adobe Campaign提供的內建報表位於下表。
  </tbody> 
 </table>
 
-## 促銷活動報表{#reports-on-campaigns}
+## 行銷活動報表 {#reports-on-campaigns}
 
 有關促銷活動的報表與&#x200B;**nms:operation**&#x200B;表格中的資料有關。
 
@@ -177,7 +179,7 @@ Adobe Campaign提供的內建報表位於下表。
  </tbody> 
 </table>
 
-## 服務報告{#reports-on-services}
+## 服務報告 {#reports-on-services}
 
 服務報告與&#x200B;**nms:service**&#x200B;表中的資料有關。
 
@@ -214,7 +216,7 @@ Adobe Campaign提供的內建報表位於下表。
  </tbody> 
 </table>
 
-## 預算報告{#budget-reports}
+## 預算報表 {#budget-reports}
 
 Adobe Campaign提供的內建報表位於下表。
 
@@ -270,7 +272,7 @@ Adobe Campaign提供的內建報表位於下表。
  </tbody> 
 </table>
 
-## 模擬報告{#reports-on-simulations}
+## 模擬報告 {#reports-on-simulations}
 
 模擬報告涉及&#x200B;**nms:simulation**&#x200B;表中的資料。
 
@@ -307,7 +309,7 @@ Adobe Campaign提供的內建報表位於下表。
  </tbody> 
 </table>
 
-## Web應用程式報告{#reports-on-web-applications}
+## 網路應用程式報告 {#reports-on-web-applications}
 
 有關Web應用程式的報告涉及&#x200B;**nms:WebApp**&#x200B;表中的資料。
 
@@ -336,7 +338,7 @@ Adobe Campaign提供的內建報表位於下表。
  </tbody> 
 </table>
 
-## 其他ootb報告{#other-ootb-reports}
+## 其他ootb報告 {#other-ootb-reports}
 
 也提供下列內建報表。 有關詳細資訊，請參閱相關功能的文檔。
 

@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
 
-# 在Campaign和CRM {#data-synchronization}之間同步資料
+# 在Campaign和CRM之間同步資料 {#data-synchronization}
+
+![](../../assets/common.svg)
 
 Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執行：[CRM連接器](../../workflow/using/crm-connector.md)。
 
@@ -42,7 +44,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 
 此活動的設定取決於要執行的程式。 以下詳細說明各種配置。
 
-## 從CRM {#importing-from-the-crm}導入
+## 從CRM匯入 {#importing-from-the-crm}
 
 若要透過Adobe Campaign中的CRM匯入資料，您需要建立下列類型的工作流程：
 
@@ -80,7 +82,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 
    有關詳細資訊，請參閱[變數管理](#variable-management)。
 
-### 管理變數{#variable-management}
+### 管理變數 {#variable-management}
 
 啟用&#x200B;**[!UICONTROL Automatic index]**&#x200B;選項，僅收集自上次導入以來修改的對象。
 
@@ -131,7 +133,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 
 ![](assets/crm_import_wrong_filter.png)
 
-### 按{#order-by}排序
+### 訂購依據 {#order-by}
 
 在Microsoft Dynamics和Salesforce.com中，您可以按升序或降序排序要導入的遠程欄位。
 
@@ -141,7 +143,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 
 ![](assets/crm_import_order.png)
 
-### 記錄標識{#record-identification}
+### 記錄標識 {#record-identification}
 
 與其匯入CRM中包含的元素（且可能經過篩選），您可以使用工作流程中預先計算的母體。
 
@@ -151,7 +153,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 
 ![](assets/crm_wf_import_calculated_population.png)
 
-## 導出到CRM {#exporting-to-the-crm}
+## 匯出至CRM {#exporting-to-the-crm}
 
 將Adobe Campaign資料匯出至CRM可讓您將整個內容複製至CRM資料庫。
 
@@ -184,9 +186,9 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
    >
    >要導出的記錄清單和導出結果將保存在臨時檔案中，該檔案在工作流完成或重新啟動之前始終可訪問。 這可讓您在發生錯誤時重新啟動程式，而不會執行多次匯出相同記錄或遺失資料的風險。
 
-## 其他配置 {#additional-configurations}
+## 其他設定 {#additional-configurations}
 
-### 資料格式{#data-format}
+### 資料格式 {#data-format}
 
 將資料格式匯入CRM時或從CRM匯入時，您可以即時轉換資料格式。
 
@@ -202,7 +204,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 * **[!UICONTROL Without time offset]**:此模式取消在預設模式中應用的時區管理。
 * **[!UICONTROL Copy/Paste]**:此模式使用字串等原始資料（無轉換）。
 
-### 處理{#error-processing}時出錯
+### 錯誤處理 {#error-processing}
 
 在資料匯入或匯出的架構中，您可以將特定程式套用至錯誤和拒絕。 要執行此操作，請在&#x200B;**[!UICONTROL Behavior]**&#x200B;標籤中選取&#x200B;**[!UICONTROL Process rejects]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;選項。
 
@@ -224,7 +226,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 
 **[!UICONTROL Reject]**&#x200B;輸出轉變可讓您存取包含與錯誤訊息和程式碼相關的特定欄的輸出架構。 對於Salesforce.com，此列為&#x200B;**errorSymbol**（錯誤符號，與錯誤代碼不同）, **errorMessage**（錯誤上下文的說明）。
 
-## 導入在CRM {#importing-objects-deleted-in-the-crm}中刪除的對象
+## 導入在CRM中刪除的對象 {#importing-objects-deleted-in-the-crm}
 
 若要啟用廣泛資料同步程式的設定，您可以將CRM中刪除的物件匯入Adobe Campaign。
 
@@ -240,7 +242,7 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
    >
    >元素刪除期間必須符合CRM的特定限制。 例如，對於Salesforce.com，這表示在30天前刪除的元素無法復原。
 
-## 刪除CRM {#deleting-objects-in-the-crm}中的對象
+## 刪除CRM中的對象 {#deleting-objects-in-the-crm}
 
 要刪除CRM端的對象，需要指定要刪除的遠程元素的主鍵。
 
@@ -251,4 +253,3 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
 >[!NOTE]
 >
 >即使&#x200B;**[!UICONTROL Process rejects]**&#x200B;選項被禁用，也會為每個已拒絕列生成警告。
-

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 # 與 Windows 版 Web 伺服器整合{#integration-into-a-web-server-for-windows}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）作為應用程式伺服器中的入口點。
 
@@ -145,7 +147,7 @@ webmdl@default (1644) - 18.2 Mo
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
 
-## 其他配置 {#additional-configurations}
+## 其他設定 {#additional-configurations}
 
 ### 變更上傳檔案大小限制 {#changing-the-upload-file-size-limit}
 

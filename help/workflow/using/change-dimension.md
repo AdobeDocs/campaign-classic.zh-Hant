@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # 變更維度{#change-dimension}
 
+![](../../assets/common.svg)
+
 變更維度活動可讓您在目標建構週期期間變更目標維度。 軸移取決於資料範本和輸入維度。 例如，這可讓您從「合約」維度切換至「用戶端」維度。
 
 您也可以使用此活動來定義新目標的其他欄。
 
 可以定義重複資料刪除標準。
 
-## 配置模式{#configuration-mode}
+## 配置模式 {#configuration-mode}
 
 若要設定變更維度活動，請套用下列步驟：
 
@@ -55,7 +57,7 @@ ht-degree: 2%
 
       >[!NOTE]
       >
-      >有關建立和管理其他列的資訊，請參閱[Adding data](../../workflow/using/query.md#adding-data)。
+      >有關建立和管理其他列的資訊，請參閱[Adding data](query.md#adding-data)。
 
    * 選取先前的目標維度（軸切換前），並在收件者的&#x200B;**[!UICONTROL Location]**&#x200B;子樹中選取&#x200B;**[!UICONTROL Zip Code]**，然後按一下&#x200B;**[!UICONTROL Edit expression]**。
 

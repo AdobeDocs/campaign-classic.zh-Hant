@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 遠端資料庫存取權限 {#remote-database-access-rights}
+
+![](../../assets/v7-only.svg)
 
 首先，為使用者能透過FDA對外部資料庫執行操作，後者在Adobe Campaign中必須具有指定的權限。
 
@@ -45,7 +47,7 @@ ht-degree: 1%
 
 資料庫管理員需要使這些權限與每個資料庫引擎的特定權限相匹配。 如需詳細資訊，請參閱下方的一節。
 
-## FDA權利{#fda-rights}
+## FDA權利 {#fda-rights}
 
 |   | Snowflake | 紅移 | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|

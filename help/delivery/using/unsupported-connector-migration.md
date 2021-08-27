@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 ---
 
 # 將不支援的SMS連接器移轉至Extended Generic SMPP連接器{#unsupported-connector-migration}
+
+![](../../assets/v7-only.svg)
 
 舊版連接器自20.2版起將不再使用。 本文檔將幫助您將仍在舊系統上運行的連接器遷移到推薦的SMPP連接器。
 

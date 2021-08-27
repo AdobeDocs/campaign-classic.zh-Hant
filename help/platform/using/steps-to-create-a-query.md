@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 建立查詢的步驟{#steps-to-create-a-query}
+
+![](../../assets/common.svg)
 
 在Adobe Campaign中建立查詢的步驟如下：
 
@@ -29,13 +31,13 @@ ht-degree: 2%
 >所有這些步驟都可在一般查詢編輯器中使用。 在另一個上下文中建立查詢時，可遺漏一些步驟。\
 >「查詢」活動顯示在[此部分](../../workflow/using/query.md)中。
 
-## 步驟1 — 選擇表{#step-1---choose-a-table}
+## 步驟1 — 選擇表格 {#step-1---choose-a-table}
 
 在&#x200B;**[!UICONTROL Document type]**&#x200B;窗口中選擇包含要查詢的資料的表。 如有必要，請使用篩選欄位或&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕篩選資料。
 
 ![](assets/query_editor_nveau_21.png)
 
-## 步驟2 — 選擇要提取{#step-2---choose-data-to-extract}的資料
+## 步驟2 — 選擇要擷取的資料 {#step-2---choose-data-to-extract}
 
 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;視窗中，選取要顯示的資料：這些欄位將構成輸出欄。
 
@@ -57,7 +59,7 @@ ht-degree: 2%
 
 * **[!UICONTROL Remove duplicate rows (DISTINCT)]**&#x200B;函式可讓您刪除輸出列中獲得的重複結果。 例如，如果您在輸出列中選擇姓氏、名字和電子郵件欄位進行人口普查，則具有相同資料的欄位將被刪除，因為這意味著在資料庫中已多次輸入同一聯繫人：只考慮一個結果。
 
-## 步驟3 — 對資料{#step-3---sort-data}排序
+## 步驟3 — 排序資料 {#step-3---sort-data}
 
 **[!UICONTROL Sorting]**&#x200B;視窗可讓您排序欄內容。 使用箭頭更改列順序：
 
@@ -68,7 +70,7 @@ ht-degree: 2%
 
 ![](assets/query_editor_nveau_57.png)
 
-## 步驟4 — 篩選資料{#step-4---filter-data}
+## 步驟4 — 篩選資料 {#step-4---filter-data}
 
 查詢編輯器可讓您篩選資料以調整搜尋範圍。
 
@@ -105,7 +107,7 @@ ht-degree: 2%
 
 ![](assets/query_editor_nveau_99.png)
 
-## 步驟5 — 將資料格式化{#step-5---format-data}
+## 步驟5 — 設定資料格式 {#step-5---format-data}
 
 配置了限制篩選器後，您將訪問&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口。 此視窗可讓您重新排列輸出欄、轉換資料，以及變更欄標籤的上/下大小寫。 它也可讓您使用計算欄位將公式套用至最終結果。
 
@@ -125,7 +127,7 @@ ht-degree: 2%
 
 ![](assets/query_editor_nveau_42.png)
 
-## 步驟6 — 預覽資料{#step-6---preview-data}
+## 步驟6 — 預覽資料 {#step-6---preview-data}
 
 **[!UICONTROL Data preview]**&#x200B;視窗是最後一個階段。 按一下&#x200B;**[!UICONTROL Start the preview of the data]**&#x200B;以取得查詢結果。 它以列或XML格式提供。 按一下&#x200B;**[!UICONTROL Generated SQL queries]**&#x200B;標籤以SQL格式查看查詢。
 

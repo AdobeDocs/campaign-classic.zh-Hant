@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -15,6 +15,8 @@ ht-degree: 0%
 
 # 需維護的表格{#tables-to-maintain}
 
+![](../../assets/v7-only.svg)
+
 要維護的表格清單取決於您的Adobe Campaign版本、使用方式和資料模型設定。
 
 以下清單僅包含最易碎的表。 影響如下：
@@ -22,7 +24,7 @@ ht-degree: 0%
 * 磁碟空間消耗過多，從而影響資料庫訪問，
 * 未定期更新的索引，這會降低查詢效能。
 
-## Adobe Campaign表{#adobe-campaign-tables}
+## Adobe Campaign表 {#adobe-campaign-tables}
 
 <table> 
  <thead> 
@@ -199,6 +201,6 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 客戶表{#customer-tables}
+## 客戶表 {#customer-tables}
 
 除了上述清單外，在平台設定期間包含客戶建立(Adobe Campaign資料模型中不存在)的表格也可能會遭到分割，尤其是當資料載入或同步程式期間經常更新時。 這些表格可以是預設Adobe Campaign資料模型的一部分（例如&#x200B;**NmsRecipient**）。 在這種情況下，由Adobe Campaign平台的管理員對其特定資料庫模型進行審核，以查找這些自定義表。 這些表不一定在我們的維護過程中明確提及。

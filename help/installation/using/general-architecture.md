@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 一般架構{#general-architecture}
+
+![](../../assets/v7-only.svg)
 
 一般的Adobe Campaign解決方案部署包含下列元件：
 
@@ -41,7 +43,7 @@ Adobe Campaign以面向服務的架構(SOA)為基礎，包含多個功能模組�
 >
 >若未另有明確說明，Adobe Campaign平台所有元件的安裝、更新和維護應由托管這些元件的電腦管理員負責。 這包括實作Adobe Campaign應用程式的必要條件，以及遵循元件之間的Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
-## 展示層{#presentation-layer}
+## 展示層 {#presentation-layer}
 
 根據使用者的需求，可以以不同方式存取應用程式：富客戶端、瘦客戶端或API整合。
 
@@ -49,7 +51,7 @@ Adobe Campaign以面向服務的架構(SOA)為基礎，包含多個功能模組�
 * **瘦客戶端**:應用程式的某些部分可使用HTML用戶介面通過簡單的Web瀏覽器進行訪問，包括報告模組、傳遞批准階段、Distributed Marketing模組（中央/本地）的功能、實例監視等。此模式可將Adobe Campaign功能納入內聯網或外聯網。
 * **透過API進行整合**:在某些情況下，可使用透過SOAP通訊協定公開的Web服務API，從外部應用程式呼叫系統。
 
-## 邏輯應用層{#logical-application-layer}
+## 邏輯應用層 {#logical-application-layer}
 
 Adobe Campaign是具有不同應用程式的單一平台，可結合以建立開放且可擴充的架構。 Adobe Campaign平台是在彈性的應用程式層上撰寫，可輕鬆設定以符合公司的業務需求。 這從功能和技術角度適應企業不斷增長的需求。 分佈式體系結構確保線性系統可擴充性，從數千條報文擴展到數百萬條報文。
 
@@ -119,7 +121,7 @@ Adobe Campaign具有原生電子郵件廣播功能。 此程式可作為SMTP郵�
 >
 >[本檔案](../../production/using/operating-principle.md)中提供Adobe Campaign模組的完整清單。
 
-## 持久層{#persistence-layer}
+## 持久層 {#persistence-layer}
 
 資料庫用作持久層，包含幾乎所有由Adobe Campaign管理的資訊。 這包括功能資料（設定檔、訂閱、內容等）、技術資料（傳送工作和記錄、追蹤記錄等） 和工作資料（購買、銷售機會）。
 

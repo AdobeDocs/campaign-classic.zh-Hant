@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 網頁下載{#web-download}
+
+![](../../assets/common.svg)
 
 **Web下載**&#x200B;活動會啟動在明確URL、外部帳戶或Adobe Campaign例項上的檔案下載。 已使用HTTP通訊協定。 這可以是GET或POST下載。
 
@@ -61,8 +63,8 @@ ht-degree: 2%
 
    ![](assets/download_web_edit_advanced.png)
 
-   **[!UICONTROL Process errors]**&#x200B;選項在[處理錯誤](../../workflow/using/monitoring-workflow-execution.md#processing-errors)中詳細說明。
+   **[!UICONTROL Process errors]**&#x200B;選項在[處理錯誤](monitoring-workflow-execution.md#processing-errors)中詳細說明。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * 檔案名：下載檔案的完整名稱。

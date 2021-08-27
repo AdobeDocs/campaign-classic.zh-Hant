@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 轉譯網路表單{#translating-a-web-form}
+
+![](../../assets/common.svg)
 
 將Web應用程式本地化為多種語言是可能的。
 
@@ -69,7 +71,7 @@ Adobe Campaign會收集所有靜態元素之&#x200B;**[!UICONTROL Texts]**&#x200
 
 ### 篩選字串 {#filtering-strings}
 
-預設情況下，將顯示Web應用程式的每種翻譯語言。 有兩個預設篩選器：語言和狀態。 按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕，然後按一下&#x200B;**[!UICONTROL By language or status]**&#x200B;以顯示相符的下拉式方塊。 您也可以建立進階篩選。 有關詳細資訊，請參見[此頁面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+預設情況下，將顯示Web應用程式的每種翻譯語言。 有兩個預設篩選器：語言和狀態。 按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕，然後按一下&#x200B;**[!UICONTROL By language or status]**&#x200B;以顯示相符的下拉式方塊。 您也可以建立進階篩選。 如需詳細資訊，請參閱[此頁面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 

@@ -5,7 +5,7 @@ description: 行銷活動
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 
 
 # 行銷活動{#campaign}
+
+![](../../assets/common.svg)
 
 依預設，下列詳細的工作流程會與&#x200B;**Campaign**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../campaign/using/designing-marketing-campaigns.md)。
 

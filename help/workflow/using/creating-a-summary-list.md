@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 建立摘要清單{#creating-a-summary-list}
+
+![](../../assets/common.svg)
 
 此使用案例詳細說明了如何建立工作流程，此工作流程在收集檔案並執行數個擴充後，可讓您建立摘要清單。 此示例基於在商店中進行購買的聯繫人清單。
 
@@ -37,7 +39,7 @@ ht-degree: 2%
 1. 從「購買」表中使用匯總計算豐富「聯繫人」資料
 1. 建立摘要清單
 
-## 步驟1:載入檔案並調解匯入的資料{#step-1--loading-the-file-and-reconciling-the-imported-data}
+## 步驟1:載入檔案並調解匯入的資料 {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 要載入的資料為「購買」相關資料，其格式如下：
 
@@ -92,7 +94,7 @@ Phone;500;London 5
 
    ![](assets/uc2_enrich_enrich3.png)
 
-有關各種類型連結的詳細資訊，請參閱[擴充和修改資料](../../workflow/using/targeting-data.md#enriching-and-modifying-data)。
+有關各種類型連結的詳細資訊，請參閱[擴充和修改資料](targeting-data.md#enriching-and-modifying-data)。
 
 在以下窗口中，您需要通過選擇源欄位（在主集中）和目標欄位（屬於「儲存」架構）來建立聯接條件，以配置資料協調。
 
@@ -101,7 +103,7 @@ Phone;500;London 5
 現在，連結已建立，我們將從「商店」結構新增欄至工作流程的工作表：「郵遞區號參考」欄位。
 
 1. 開啟擴充活動。
-1. 按一下 **[!UICONTROL Edit additional data]**。
+1. 按一下&#x200B;**[!UICONTROL Edit additional data]**。
 1. 將「郵遞區號參考」欄位新增至&#x200B;**[!UICONTROL Output columns]**。
 
 ![](assets/uc2_enrich_enrich5.png)
@@ -110,7 +112,7 @@ Phone;500;London 5
 
 ![](assets/uc2_enrich_population1.png)
 
-## 步驟2:將擴充資料寫入「購買」表{#step-2--writing-enriched-data-to-the--purchases--table}
+## 步驟2:將擴充資料寫入「購買」表格 {#step-2--writing-enriched-data-to-the--purchases--table}
 
 此步驟詳細說明如何將匯入和擴充資料寫入「購買」表格。 為此，我們需要使用&#x200B;**更新資料**&#x200B;活動。
 
@@ -134,7 +136,7 @@ Phone;500;London 5
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## 步驟3:豐富「聯繫人」資料{#step-3--enriching--contact--data-}
+## 步驟3:豐富「聯繫人」資料 {#step-3--enriching--contact--data-}
 
 「連絡人」架構實際上連結至「購買」架構。 這表示您可以使用「擴充」選項的其他選項：新增連結至篩選維度的資料。
 
@@ -153,7 +155,7 @@ Phone;500;London 5
 
    ![](assets/uc2_enrich_enrich10.png)
 
-1. 按一下 **[!UICONTROL Next]**。
+1. 按一下&#x200B;**[!UICONTROL Next]**。
 1. 新增下列運算式，以計算每個連絡人的購買總計：&quot;Sum(@prodprice)&quot;。
 
    ![](assets/uc2_enrich_enrich6.png)
@@ -170,7 +172,7 @@ Phone;500;London 5
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## 步驟4:建立並添加到摘要清單{#step-4--creating-and-adding-to-a-summary-list}
+## 步驟4:建立並添加到摘要清單 {#step-4--creating-and-adding-to-a-summary-list}
 
 最後一個步驟是將所有擴充資料寫入清單。
 

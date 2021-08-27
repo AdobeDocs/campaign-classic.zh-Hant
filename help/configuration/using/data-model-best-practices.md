@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 資料模型最佳實務{#data-model-best-practices}
+
+![](../../assets/v7-only.svg)
 
 本檔案概述設計Adobe Campaign資料模型時的主要建議。
 
@@ -27,11 +29,11 @@ Adobe Campaign系統極具彈性，可擴充至初次實作以外。 不過，�
 
 本檔案提供常見使用案例和最佳實務，協助您了解如何正確架構您的Adobe Campaign工具。
 
-## 資料模型架構{#data-model-architecture}
+## 資料模型架構 {#data-model-architecture}
 
 Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可協助您協調線上和離線策略，以建立個人化的客戶體驗。
 
-### 以客戶為中心的方法{#customer-centric-approach}
+### 以客戶為中心的方法 {#customer-centric-approach}
 
 雖然大部分的電子郵件服務提供者都透過清單導向方法與客戶通訊，但Adobe Campaign需仰賴關係資料庫，才能運用客戶及其屬性的更廣泛檢視。
 
@@ -47,7 +49,7 @@ Adobe Campaign預設資料模型顯示在[本檔案](../../configuration/using/d
 >
 >Adobe Campaign Classic可建立自訂客戶表格。 但是，在大多數情況下，建議使用標準[收件者表](../../configuration/using/about-data-model.md#default-recipient-table)，該表已預先建立其他表和功能。
 
-### Adobe Campaign的資料{#data-for-campaign}
+### Adobe Campaign的資料 {#data-for-campaign}
 
 哪些資料應傳送至Adobe Campaign? 判斷行銷活動所需的資料至關重要。
 
@@ -63,7 +65,7 @@ Adobe Campaign預設資料模型顯示在[本檔案](../../configuration/using/d
 
 若未落入其中任何一個，您很可能在Adobe Campaign中不需要此屬性。
 
-### 資料類型選擇{#data-types}
+### 資料類型選擇 {#data-types}
 
 若要確保系統的良好架構和效能，請遵循下列最佳實務，在Adobe Campaign中設定資料。
 
@@ -74,13 +76,13 @@ Adobe Campaign預設資料模型顯示在[本檔案](../../configuration/using/d
 * **string**&#x200B;欄位的長度應一律以欄定義。 依預設，Adobe Campaign中的最大長度為255，但如果您已知道大小不會超過較短的長度，則Adobe建議將欄位保持在較短的長度。
 * 如果您確定源系統中的欄位被高估且無法達到，則可以接受在Adobe Campaign中的欄位比在源系統中的欄位短。 這可能表示Adobe Campaign中字串較短或整數較小。
 
-### 欄位選擇{#choice-of-fields}
+### 欄位選擇 {#choice-of-fields}
 
 如果欄位具有定位或個人化目的，則必須將其儲存在表格中。 換句話說，如果欄位未用來傳送個人化電子郵件，或用作查詢中的標準，則會佔用磁碟空間，但是沒用。
 
 針對混合式和內部部署例項，FDA（同盟資料存取，此選用功能可存取外部資料）涵蓋在行銷活動程式期間需要新增「即時」欄位。 如果您有FDA，則不需要匯入所有項目。 有關詳細資訊，請參閱[關於同盟資料存取](../../installation/using/about-fda.md)。
 
-### 鍵的選擇{#choice-of-keys}
+### 密鑰選擇 {#choice-of-keys}
 
 除了大多數表中預設定義的&#x200B;**autopk**&#x200B;之外，您還應考慮添加一些邏輯或業務密鑰（帳號、客戶端編號等）。 它稍後可用於匯入/調解或資料包。 有關詳細資訊，請參閱[標識符](#identifiers)。
 
@@ -88,7 +90,7 @@ Adobe Campaign預設資料模型顯示在[本檔案](../../configuration/using/d
 
 對於SQLServer資料庫，如果需要效能，可以考慮使用「群集索引」。 由於Adobe不處理此問題，因此需要在SQL中建立它。
 
-### 專用表空間{#dedicated-tablespaces}
+### 專用表空間 {#dedicated-tablespaces}
 
 方案中的表空間屬性允許您為表指定專用表空間。
 
@@ -108,7 +110,7 @@ Adobe Campaign資源有三個識別碼，且可以新增其他識別碼。
 | 名稱（或內部名稱） | <ul><li>此資訊是表中記錄的唯一標識符。 此值可手動更新，通常具有產生的名稱。</li><li>此識別碼會在部署至不同的Adobe Campaign例項時保留其值，且不應為空。</li></ul> | <ul><li>如果要將物件從環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當對象具有命名空間屬性（例如&#x200B;*schema*）時，此通用命名空間將用於所有建立的自定義對象。 不應使用某些保留的命名空間：*nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*。</li><li>當物件沒有任何命名空間時（例如&#x200B;*workflow*&#x200B;或&#x200B;*delivery*），此命名空間概念將新增為內部名稱物件的前置詞：*namespaceMyObjectName*。</li><li>請勿使用特殊字元，例如空格&quot; &quot;、半欄&quot;:&quot;或連字型大小&quot;-&quot;。 所有這些字元都將替換為底線「_」（允許的字元）。 例如，「abc-def」和「abc:def」會儲存為「abc_def」並互相覆寫。</li></ul> |
 | 標籤 | <ul><li>標籤是Adobe Campaign中物件或記錄的業務識別碼。</li><li>此對象允許空格和特殊字元。</li><li>它不能保證記錄的獨特性。</li></ul> | <ul><li>建議您判斷物件標籤的結構。</li><li>這是最方便使用者為Adobe Campaign使用者識別記錄或物件的解決方案。</li></ul> |
 
-## 自訂內部索引鍵{#custom-internal-keys}
+## 自訂內部索引鍵 {#custom-internal-keys}
 
 在Adobe Campaign中建立的每個表格都需要主鍵。
 
@@ -206,7 +208,7 @@ Adobe建議定義其他索引，因為這可能改善效能。
 | 名字包含「John」 | 未使用 | 未使用 | 未使用 | 這是「左」和「右」搜尋的組合。 因為後者，它將禁用索引，並執行完整掃描。 |
 | 名字等於「john」 | 未使用 | 未使用 | 未使用 | 索引區分大小寫。 要使其不區分大小寫，應建立包含SQL函式(如&quot;upper(firstname)&quot;)的特定索引。 您應該對其他資料轉換(例如「unaccent(firstname)」)執行相同操作。 |
 
-## 連結和基數{#links-and-cardinality}
+## 連結和基數 {#links-and-cardinality}
 
 ### 連結 {#links}
 
@@ -240,7 +242,7 @@ Adobe建議定義其他索引，因為這可能改善效能。
 
 執行外部聯接的連結(1-0..1)應謹慎使用，因為它將影響系統效能。
 
-## 資料保留 — 清除和清除{#data-retention}
+## 資料保留 — 清除和清除 {#data-retention}
 
 Adobe Campaign既非資料倉庫，也非報表工具。 因此，為確保Adobe Campaign解決方案的良好效能，應控制資料庫的增長。 為達成此目標，遵循下列一些最佳實務可能有所幫助。
 
@@ -278,13 +280,13 @@ Adobe Campaign既非資料倉庫，也非報表工具。 因此，為確保Adobe
 * 使用一個或多個引用表，而不是在每行中重複一個欄位。 使用索引鍵/值組時，最好選擇數值索引鍵。
 * 短字串仍可接受。 如果外部系統中已有參考表格，則重複使用這些表格將有助於與Adobe Campaign的資料整合。
 
-### 一對多關係{#one-to-many-relationships}
+### 一對多關係 {#one-to-many-relationships}
 
 * 資料設計會影響可用性和功能。 如果您設計的資料模型具有許多一對多關係，則會讓使用者更難在應用程式中建構有意義的邏輯。 非技術行銷人員可能難以正確建構及了解一對多篩選邏輯。
 * 將所有必要欄位放在一個表格中是件好事，因為這可讓使用者更輕鬆地建立查詢。 有時，如果可以避免加入，則跨表複製某些欄位對效能也有好處。
 * 某些內建功能將無法參考一對多關係，例如選件加權公式和傳送。
 
-## 大表{#large-tables}
+## 大表 {#large-tables}
 
 Adobe Campaign仰賴協力廠商資料庫引擎。 根據提供程式，為較大表優化效能可能需要特定設計。
 
@@ -296,7 +298,7 @@ Adobe Campaign仰賴協力廠商資料庫引擎。 根據提供程式，為較�
 * 對於聯接鍵，請始終使用數字資料，而不是字元字串。
 * 盡量減少記錄保留的深度。 如果您需要更深入的歷史記錄，則可以匯總計算和/或處理自定義日誌表以儲存較大的歷史記錄。
 
-### 表大小{#size-of-tables}
+### 表的大小 {#size-of-tables}
 
 表大小是記錄數和每個記錄的列數的組合。 兩者都會影響查詢的效能。
 

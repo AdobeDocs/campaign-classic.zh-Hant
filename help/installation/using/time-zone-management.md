@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 時區管理{#time-zone-management}
+
+![](../../assets/v7-only.svg)
 
 ## 操作原則 {#operating-principle}
 
@@ -56,7 +58,7 @@ Adobe Campaign可讓您以UTC（協調通用時間）格式儲存日期/時間�
 >
 >請注意，此修改可能會導致資料一致性和同步問題。
 
-### 建立新實例{#creating-a-new-instance}
+### 建立新執行個體 {#creating-a-new-instance}
 
 若要讓數個國際使用者處理同一個執行個體，您必須在建立執行個體時設定時區，以管理國家/地區之間的時差。 在建立實例期間，在資料庫配置階段的&#x200B;**[!UICONTROL Time zone]**&#x200B;部分中選擇日期和時間管理模式。
 

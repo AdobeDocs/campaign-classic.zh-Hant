@@ -6,41 +6,43 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
 
 ---
 
-# 配置IMS{#configuring-ims}
+# 設定IMS{#configuring-ims}
+
+![](../../assets/common.svg)
 
 >[!IMPORTANT]
 >
->AdobeIMS實作嚴格保留給Adobe技術管理員。 請連絡您的Adobe主管，以開始實作程式。
+>Adobe IMS實作嚴格保留給Adobe技術管理員。 請連絡您的Adobe主管，以開始實作程式。
 
 ## 先決條件 {#prerequisites}
 
 若要使用與IMS的整合：
 
 * 您必須有Adobe Experience Cloud組織和IMS ID(在您首次連線至Adobe Experience Cloud時提供)。
-* 您必須在Experience Cloud中新增使用者。 有關詳細資訊，請參見[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+* 您必須在Experience Cloud中新增使用者。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 >[!NOTE]
 >
 >請確定您的使用者已連結至將與Adobe Campaign同步的Adobe Experience Cloud群組。 請參閱[設定外部帳戶](#configuring-the-external-account)。
 
-## 更新控制台{#updating-the-console}
+## 更新主控台 {#updating-the-console}
 
 若要使用此功能，您必須安裝最新版本的主控台。
 
-## 安裝軟體包{#installing-the-package}
+## 安裝套件 {#installing-the-package}
 
 必須安裝&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包。 安裝整合套件與安裝標準套件相同，有關詳情請參閱[本頁](../../installation/using/installing-campaign-standard-packages.md)。
 
 ![](assets/ims_6.png)
 
-## 配置外部帳戶{#configuring-the-external-account}
+## 設定外部帳戶 {#configuring-the-external-account}
 
 在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中配置&#x200B;**Adobe Experience Cloud**&#x200B;外部帳戶。
 

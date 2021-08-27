@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '3972'
+source-wordcount: '3991'
 ht-degree: 0%
 
 ---
 
 # Campaign Classic 選項清單{#configuring-campaign-options}
+
+![](../../assets/v7-only.svg)
 
 **[!UICONTROL Administration / Platform / Options]**&#x200B;節點可讓您設定Adobe Campaign選項。 其中有些是內建的Campaign，有些則可視需要手動新增。 可用選項會依執行個體所安裝的套件而有所不同。
 
@@ -21,9 +23,8 @@ ht-degree: 0%
 >[!CAUTION]
 >
 >* 此頁中未列出的選項僅為內部選項，且&#x200B;**不得修改**。
-   >
-   >
-* 修改或更新Adobe Campaign選項只能由專家使用者執行。
+>
+>* 修改或更新Adobe Campaign選項只能由專家使用者執行。
 
 
 ## 傳遞 {#delivery}
@@ -52,6 +53,10 @@ ht-degree: 0%
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> 要將測試地址用於收件箱呈現的結構清單。 （元素名稱以逗號分隔）例如：custom_nms_recipient.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> Enhanced MTA將傳送已傳送電子郵件原始副本的密件副本電子郵件地址。<br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> 如果指定特定運算子或運算子群組，以在傳送的屬性中開始傳送，則可讓您允許負責傳送的運算子確認傳送。</p><p> 若要這麼做，請輸入"1"作為值，以啟動選項。 要停用此選項，請輸入"0"。</p><p> 接著，傳送確認程式將依預設運作：在傳送屬性（或管理員）中，只有為傳送指定的運算子或運算子群組才能確認和執行傳送。 請參閱<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">本節</a>。</p> </td> 
@@ -337,7 +342,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 促銷活動與工作流程管理{#campaign-e-workflow-management}
+## 行銷活動與工作流程管理 {#campaign-e-workflow-management}
 
 <table> 
  <thead> 
@@ -443,7 +448,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 消息中心{#message-center}
+## 訊息中心 {#message-center}
 
 <table> 
  <thead> 
@@ -732,7 +737,7 @@ ht-degree: 0%
    <td> 透過CRM連接器從協力廠商系統匯入資料時，會使用此選項。 啟用選項可讓您僅收集自上次匯入後修改的物件。 此選項必須手動建立並填入，如下所示： 
     <ul> 
      <li> <p> <span class="uicontrol">內部名稱</span> :LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">值（欄位）</span> :上次匯入的日期，格式為yyyy/MM/dd hh:mm:ss。 </p> </li> 
+     <li> <p> <span class="uicontrol">值（欄位）</span> :上次匯入的日期，格式為yyyy/MM/:mm:dd hhss。 </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 

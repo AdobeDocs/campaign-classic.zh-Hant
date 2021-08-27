@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 開始使用網路表單{#about-web-forms}
+
+![](../../assets/common.svg)
 
 Adobe Campaign整合了用於定義和發佈Web表單的圖形模組，以建立包含輸入和選擇欄位的頁面，並且這些頁面可能包括資料庫中的資料。 這可讓您設計和發佈使用者可存取的網頁，以檢視或輸入資訊。
 
@@ -80,7 +82,6 @@ Adobe Campaign整合了用於定義和發佈Web表單的圖形模組，以建立
 >* 若要確保頁面顯示和資訊儲存以適當順序發生，請在Web表單中啟用除錯模式。 要執行此操作，請轉至&#x200B;**[!UICONTROL Preview]**&#x200B;子頁簽並選中&#x200B;**[!UICONTROL Enable debug mode]**&#x200B;框：所有收集的資訊和可能的執行錯誤都會顯示在每個頁面底部。
 
 >
-
 
 
 ### 使用工具列中的圖示 {#using-the-icons-in-the-toolbar}

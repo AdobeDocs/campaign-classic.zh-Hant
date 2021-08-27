@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 工作流程執行{#workflow-execution}
+
+![](../../assets/v7-only.svg)
 
 以下章節提供與工作流程執行相關的常見問題以及如何疑難排解的資訊。
 
@@ -24,7 +26,7 @@ ht-degree: 3%
 * [工作流程生命週期](../../workflow/using/workflow-life-cycle.md)
 * [使用工作流程時的最佳實務](../../workflow/using/workflow-best-practices.md)
 
-## 在促銷活動{#start-as-soon-as-possible-in-campaigns}中盡快開始
+## 在行銷活動中盡快開始 {#start-as-soon-as-possible-in-campaigns}
 
 在某些情況下，按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕時，從促銷活動執行的工作流程不會開始。 它不會開始，而會進入「盡快開始」狀態。
 
@@ -77,7 +79,7 @@ ht-degree: 3%
 
 有關如何監視工作流的詳細資訊，請參閱[此部分](../../workflow/using/monitoring-workflow-execution.md)。
 
-## 正在啟動{#start-in-progress}
+## 正在啟動 {#start-in-progress}
 
 如果工作流程未執行，且其狀態為&#x200B;**開始進行**，這可能表示工作流程模組未啟動。
 
@@ -110,7 +112,7 @@ ht-degree: 3%
 
    有關如何重新啟動模組的詳細資訊，請參閱[此部分](../../production/using/usual-commands.md#module-launch-commands)。
 
-## 工作流{#failed-workflow}失敗
+## 失敗的工作流 {#failed-workflow}
 
 如果工作流程失敗，請執行下列步驟：
 

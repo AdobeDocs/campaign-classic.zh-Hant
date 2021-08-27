@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '905'
 ht-degree: 8%
 
 ---
 
 # 電子郵件參數 {#email-parameters}
+
+![](../../assets/common.svg)
 
 本節提供電子郵件傳送專屬的選項和參數。
 
@@ -30,6 +32,10 @@ Adobe Campaign可讓您透過密件副本，將密件副本電子郵件地址新
 >電子郵件密件副本是一項可選功能。 請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
 
 建立新的傳送或傳送範本時，預設不會啟用電子郵件密件副本。 您必須在電子郵件傳遞或傳遞範本層級手動啟用。
+
+>[!NOTE]
+>
+>如果您使用具有增強MTA的電子郵件密件副本，系統會為所有傳送自動啟用此選項。
 
 若要為電子郵件傳送範本啟用電子郵件密件副本，請遵循下列步驟：
 

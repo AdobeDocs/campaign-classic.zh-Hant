@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# 配置對SAP HANA{#configure-access-to-sap-hana}的訪問
+# 配置訪問SAP HANA {#configure-access-to-sap-hana}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign [同盟資料存取](../../installation/using/about-fda.md)(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定存取SAP HANA。
 
 1. 配置[SAP HANA資料庫](#sap-config)
 1. 在Campaign中設定SAP HANA[外部帳戶](#sap-external)
 
-## SAP HANA驅動程式{#sap-config}
+## SAP HANA驅動程式 {#sap-config}
 
 在FDA中連線至SAP HANA外部資料庫需要Adobe Campaign伺服器上某些額外設定：
 

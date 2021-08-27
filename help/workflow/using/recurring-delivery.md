@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
 # 重複傳送{#recurring-delivery}
+
+![](../../assets/common.svg)
 
 **[!UICONTROL Recurring delivery]**&#x200B;活動可讓您設定促銷活動專屬的傳送範本發生次數。
 
@@ -31,13 +33,13 @@ ht-degree: 11%
 
 此活動的設定程式與根據可用選項建立傳送範本的程式類似。 如需詳細資訊，請參閱本[區段](../../delivery/using/about-templates.md)。
 
-如需所使用此活動的範例，請參閱此[區段](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
+如需所使用此活動的範例，請參閱此[區段](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
 
 ## 如何設定循環傳送
 
-每次執行&#x200B;**循環傳送**&#x200B;時，都會建立新的傳送例項。 例如，如果排程每週執行一次工作流程，則在一年後會產生52個傳送。 這也表示廣泛的記錄檔和追蹤記錄檔將依每個傳送例項加以區隔。
+每次執行&#x200B;**循環傳送**&#x200B;時，都會建立新的傳送例項。 例如，如果排程每週執行一次工作流程，則在一年後會產生 52 項傳遞。 這也表示廣泛的記錄檔和追蹤記錄檔將依每個傳送例項加以區隔。
 
-![循環傳送](assets/delivery_recurring.jpg)
+![循環傳遞](assets/delivery_recurring.jpg)
 
 >[!NOTE]
 >

@@ -1,21 +1,23 @@
 ---
 product: campaign
-title: 使用實例
-description: 使用實例
+title: 使用案例
+description: 使用案例
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 3%
 
 ---
 
-# 使用實例{#use-case}
+# 使用案例{#use-case}
 
-## 對訂閱者{#creating-a-filter-on-the-email-format-of-subscribers}的電子郵件格式建立篩選器
+![](../../assets/common.svg)
+
+## 對訂閱者的電子郵件格式建立篩選 {#creating-a-filter-on-the-email-format-of-subscribers}
 
 此使用案例將示範如何建立篩選器，以根據收件者電子郵件格式來排序電子報訂閱。
 

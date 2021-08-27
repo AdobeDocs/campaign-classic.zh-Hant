@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 7%
@@ -15,11 +15,13 @@ ht-degree: 7%
 
 # 使用網路表單範本{#using-a-web-form-template}
 
+![](../../assets/common.svg)
+
 表單範本是可重複使用的設定，可讓您建立新表單。 預設情況下，表單模板與Web應用程式模板一起儲存在&#x200B;**[!UICONTROL Resources > Templates > Web application templates]**&#x200B;節點中。
 
 從這裡，您可以建立新範本，或將現有表單轉換為範本。
 
-## 將現有表單轉換為模板{#convert-an-existing-form-into-a-template}
+## 將現有表單轉換為範本 {#convert-an-existing-form-into-a-template}
 
 表單可變更為範本，並重複使用其設定。 要執行此操作，請選擇表單，按一下右鍵並選擇&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
@@ -27,7 +29,7 @@ ht-degree: 7%
 
 此操作將開啟建立Web應用程式的窗口。 您可以輸入範本的名稱和說明，並選取要儲存該範本的資料夾。
 
-## 建立新表單模板{#create-a-new-form-template}
+## 建立新表單範本 {#create-a-new-form-template}
 
 要建立Web表單模板，請按一下右鍵Web應用程式模板清單，然後選擇&#x200B;**[!UICONTROL New]**。 您也可以使用範本清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
 

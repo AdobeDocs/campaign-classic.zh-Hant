@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 86%
@@ -15,13 +15,15 @@ ht-degree: 86%
 
 # 更新資料{#updating-data}
 
+![](../../assets/common.svg)
+
 可以手動或自動更新連結至收件者用戶檔案的資料。
 
-## 設定自動更新{#setting-up-an-automatic-update}
+## 設定自動更新 {#setting-up-an-automatic-update}
 
 可透過工作流程設定自動更新。如需詳細資訊，請參閱[本章節](../../workflow/using/update-data.md)。
 
-## 執行大量更新{#performing-a-mass-update}
+## 執行成批更新 {#performing-a-mass-update}
 
 若要執行手動更新，請在所選收件者上按一下滑鼠右鍵，以使用 **[!UICONTROL Actions]** 快捷選單，或使用 **[!UICONTROL Actions]** 圖示。
 
@@ -77,7 +79,7 @@ ht-degree: 86%
 
 檢查視窗兩個區域中的 **[!UICONTROL Result]** 欄，然後按一下 **[!UICONTROL Finish]** 執行合併。
 
-## 導出資料{#exporting-data}
+## 匯出資料 {#exporting-data}
 
 清單內容可以匯出。若要設定並執行匯出：
 
@@ -92,7 +94,7 @@ ht-degree: 86%
 
    有關如何配置導出嚮導的詳細資訊，請參閱[此部分](../../platform/using/executing-export-jobs.md)。
 
-## 訂閱服務{#subscribing-to-a-service}
+## 訂閱服務 {#subscribing-to-a-service}
 
 在大多數情況下，收件者可以透過專用登陸頁面訂閱新聞稿，如[本節](../../delivery/using/managing-subscriptions.md)所述。不過，已篩選之收件者的用戶檔案可以手動設定訂閱服務 (電子報或病毒服務)。操作步驟：
 

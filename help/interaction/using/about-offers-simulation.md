@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 關於優惠方案模擬{#about-offers-simulation}
+
+![](../../assets/v7-only.svg)
 
 **Simulation**&#x200B;模組可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的選件之分佈。
 
@@ -23,7 +25,7 @@ ht-degree: 5%
 
 ![](assets/do-not-localize/how-to-video.png)[您也可以觀看此短片](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
-## 建立模擬{#main-steps-for-creating-a-simulation}的主要步驟
+## 建立模擬的主要步驟 {#main-steps-for-creating-a-simulation}
 
 若要執行選件模擬，請套用下列步驟：
 

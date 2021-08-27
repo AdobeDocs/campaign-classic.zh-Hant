@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 表單結構{#form-structure}
+
+![](../../assets/v7-only.svg)
 
 表單的描述是一種結構化XML文檔，它觀察表單架構&#x200B;**xtk:form**&#x200B;的語法。
 
@@ -156,11 +158,11 @@ ht-degree: 0%
 </container>
 ```
 
-### 容器類型{#types-of-container}
+### 容器類型 {#types-of-container}
 
 容器可用來使用頁面格式的一組欄位來建構複雜的控制項。
 
-#### 標籤容器{#tab-container}
+#### 標籤容器 {#tab-container}
 
 索引標籤容器會將資料格式化為可從索引標籤存取的頁面。
 
@@ -187,7 +189,7 @@ ht-degree: 0%
 >![](assets/d_ncs_integration_form_exemple7.png)
 >`<container style="down" type="notebook">  ... </container>`
 
-#### 表徵圖清單{#icon-list}
+#### 圖示清單 {#icon-list}
 
 此容器會顯示一個垂直圖示列，可讓您選取要顯示的頁面。
 
@@ -212,7 +214,7 @@ ht-degree: 0%
 
 這些影像可從&#x200B;**[!UICONTROL Administration > Configuration > Images]**&#x200B;節點取得。
 
-#### 可見性容器{#visibility-container}
+#### 可見性容器 {#visibility-container}
 
 您可以透過動態條件來遮罩一組控制項。
 
@@ -235,7 +237,7 @@ ht-degree: 0%
 * **visibleIf=&quot;@gender >= 1和@gender!= 2&quot;**:條件。
 * **visibleIf=&quot;@boolean1=true或@boolean2=false&quot;**:測試布林欄位。
 
-#### 啟用容器{#enabling-container}
+#### 啟用容器 {#enabling-container}
 
 此容器可讓您啟用或停用動態條件中的資料集。 禁用控制項會阻止其編輯。 以下範例說明如何從「性別」欄位的值啟用控制：
 
@@ -250,7 +252,7 @@ ht-degree: 0%
 
 啟用容器由&#x200B;**type=&quot;enabledGroup&quot;**&#x200B;屬性定義。 **enabledIf**&#x200B;屬性包含啟用條件。
 
-## 編輯連結{#editing-a-link}
+## 編輯連結 {#editing-a-link}
 
 請記住，資料結構中已宣告連結，如下所示：
 
@@ -296,7 +298,7 @@ ht-degree: 0%
 </input>
 ```
 
-### 控制屬性{#control-properties}
+### 控制屬性 {#control-properties}
 
 * **noAutoComplete**:停用預先類型（值為「true」）
 * **createMode**:如果連結不存在，則會即時建立連結。可能的值包括：
@@ -308,7 +310,7 @@ ht-degree: 0%
 * **無縮放**:連結上沒有編輯表單（且值為「true」）
 * **表單**:覆寫目標元素的編輯表單
 
-## 連結清單{#list-of-links}
+## 連結清單 {#list-of-links}
 
 在資料結構中以收集元素形式輸入的連結(unbound=&quot;true&quot;)必須瀏覽清單，才能檢視與其相關聯的所有元素。
 
@@ -360,7 +362,7 @@ ht-degree: 0%
 </input>
 ```
 
-### 關係表{#relationship-table}
+### 關係表 {#relationship-table}
 
 關係表允許您將兩個表連結為N-N基數。 關係表僅包含指向兩個表的連結。
 
@@ -392,7 +394,7 @@ ht-degree: 0%
 >
 >**xpathEditTarget**&#x200B;屬性可讓您在輸入的連結上強制編輯所選行。
 
-### 清單屬性{#list-properties}
+### 清單屬性 {#list-properties}
 
 * **noToolbar**:隱藏工具列（含「true」值）
 * **工具欄標題**:重新載入工具列標籤
@@ -403,13 +405,13 @@ ht-degree: 0%
 * **xpathEditTarget**:在輸入的連結上設定編輯
 * **xpathChoiceTarget**:此外，在輸入的連結上啟動選擇表單
 
-## 記憶體清單控制項{#memory-list-controls}
+## 記憶體清單控制項 {#memory-list-controls}
 
 記憶體清單可讓您使用清單資料預先載入來編輯收集元素。 無法篩選或設定此清單。
 
 這些清單用於XML映射的集合元素或低卷連結。
 
-### 列清單{#column-list}
+### 欄清單 {#column-list}
 
 此控制項顯示可編輯的列清單，其工具欄包含「添加」和「刪除」按鈕。
 
@@ -443,7 +445,7 @@ ht-degree: 0%
 
 **toolbarCaption**&#x200B;屬性強制工具欄的水準對齊方式並在清單上方輸入標題。
 
-#### 放大清單{#zoom-in-a-list}
+#### 放大清單 {#zoom-in-a-list}
 
 在單獨的編輯表單中可以輸入資料的插入和編輯。
 
@@ -467,7 +469,7 @@ ht-degree: 0%
 >
 >新增&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;屬性會強制在插入清單元素時呼叫編輯表單。
 
-### 清單屬性{#list-properties-1}
+### 清單屬性 {#list-properties-1}
 
 * **noToolbar**:隱藏工具列（含「true」值）
 * **工具欄標題**:重新載入工具列標籤
@@ -478,7 +480,7 @@ ht-degree: 0%
 * **zoomOnAdd**:在新增項目上啟動編輯表單
 * **xpathChoiceTarget**:此外，在輸入的連結上啟動選擇表單
 
-## 不可編輯的欄位{#non-editable-fields}
+## 不可編輯的欄位 {#non-editable-fields}
 
 若要顯示欄位並防止其編輯，請使用&#x200B;**`<value>`**&#x200B;標籤，或在&#x200B;**`<input>`**&#x200B;標籤上填入&#x200B;**readOnly=&quot;true&quot;**&#x200B;屬性。
 
@@ -491,7 +493,7 @@ ht-degree: 0%
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## 單選按鈕{#radio-button}
+## 選項按鈕 {#radio-button}
 
 選項按鈕可讓您從數個選項中選擇。 **`<input>`**&#x200B;標籤用於列出可能的選項，而&#x200B;**checkedValue**&#x200B;屬性指定與選項關聯的值。
 
@@ -516,7 +518,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## 導航層次結構編輯{#navigation-hierarchy-edit}
+## 導覽階層編輯 {#navigation-hierarchy-edit}
 
 此控制項會在要編輯的一組欄位上建立樹狀結構。
 
@@ -537,7 +539,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple18.png)
 
-## 表達式欄位{#expression-field}
+## 運算式欄位 {#expression-field}
 
 運算式欄位會從運算式動態更新欄位；**`<input>`**&#x200B;標籤與&#x200B;**xpath**&#x200B;屬性一起使用，以輸入要更新的欄位的路徑，以及包含更新表達式的&#x200B;**expr**&#x200B;屬性。
 
@@ -547,11 +549,11 @@ ht-degree: 0%
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
 ```
 
-## 表單內容{#context-of-forms}
+## 表單內容 {#context-of-forms}
 
 輸入表單的執行初始化包含被編輯實體的資料的XML文檔。 本檔案代表表單的內容，可作為工作區使用。
 
-### 更新上下文{#updating-the-context}
+### 更新內容 {#updating-the-context}
 
 要修改表單的上下文，請使用`<set expr="<value>" xpath="<field>"/>`標籤，其中`<field>`是目標欄位，`<value>`是更新表達式或值。
 
@@ -580,7 +582,7 @@ ht-degree: 0%
 >
 >`<enter>`和`<leave>`   標籤可用於`<container>`的頁面（「notebook」和「iconbox」類型）。
 
-### 表達式語言{#expression-language-}
+### 運算式語言 {#expression-language-}
 
 可在表單定義中使用宏語言，以執行條件式測試。
 
@@ -627,7 +629,7 @@ ht-degree: 0%
 
 **[!UICONTROL Finish]**&#x200B;按鈕保存輸入的資料並關閉表單。
 
-### SOAP方法{#soap-methods}
+### SOAP方法 {#soap-methods}
 
 可從頁面結尾的填入&#x200B;**`<leave>`**&#x200B;標籤中啟動SOAP方法執行。
 

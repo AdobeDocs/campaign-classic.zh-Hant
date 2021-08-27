@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 20%
@@ -14,6 +14,8 @@ ht-degree: 20%
 ---
 
 # 建立傳遞範本 {#step-3--creating-two-delivery-templates}
+
+![](../../assets/common.svg)
 
 我們現在想要建立兩個傳遞範本。 連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動中會參考每個範本。 如需詳細資訊，請參閱[本章節](about-templates.md)。
 
@@ -30,4 +32,4 @@ ht-degree: 20%
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-您現在可以在工作流程中設定傳送。 [瞭解更多](a-b-testing-uc-configuring-deliveries.md)。
+您現在可以在工作流程中設定傳送。 [深入瞭解](a-b-testing-uc-configuring-deliveries.md)。

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 19%
@@ -15,7 +15,9 @@ ht-degree: 19%
 
 # 設計並執行行銷活動{#designing-marketing-campaigns}
 
-Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動。 Adobe Campaign就像是行銷策略的統一訂單與執行中心。 如需詳細資訊，請參閱[存取促銷活動](../../campaign/using/accessing-campaigns.md)和[建立行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
+![](../../assets/common.svg)
+
+Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動。 Adobe Campaign就像是行銷策略的統一訂單與執行中心。 如需詳細資訊，請參閱[存取促銷活動](../../distributed/using/accessing-campaigns.md)和[建立行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 此外，**行銷資源管理(MRM)**&#x200B;模組可讓您以協作模式控制行銷動作，提供對相關任務、預算和行銷資源的完整管理和即時追蹤。 「行銷資源管理」可讓您最佳化和規範內部和外部流程、資源和行銷活動以及第三方關係（代理商、打印機等）的管理。 如需詳細資訊，請參閱[本章節](../../mrm/using/about-marketing-resource-management.md)。
 

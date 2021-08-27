@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 備份{#backup}
+
+![](../../assets/v7-only.svg)
 
 備份是避免在電腦上出現問題（無論是物理或系統相關）時丟失資料的關鍵。
 
@@ -24,7 +26,7 @@ ht-degree: 2%
 
 大部分資料都在資料庫中。 這表示要備份的資訊的99%。
 
-## 物理檔案{#physical-files}
+## 物理檔案 {#physical-files}
 
 檔案分為幾類：
 

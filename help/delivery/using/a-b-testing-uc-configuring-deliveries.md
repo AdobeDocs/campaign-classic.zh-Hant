@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-# 在工作流程{#step-4--configuring-the-deliveries-in-the-workflow}中設定傳送
+# 在工作流程中設定傳送 {#step-4--configuring-the-deliveries-in-the-workflow}
+
+![](../../assets/common.svg)
 
 一旦建立[母體](a-b-testing-uc-population-samples.md)後，您就可以設定傳送。 在此使用案例中，前兩個傳送可讓您將不同的內容傳送至母體A和B。第三個傳送是後退傳送：它會傳送給不屬於A或B的收件者。其內容將由指令碼計算，且會與A或B相同，視哪個開啟率最高者而定。 我們需要設定第三個傳送的等待期，以了解傳送A和B的結果。這就是為什麼第三個傳送包含&#x200B;**[!UICONTROL Wait]**&#x200B;活動。
 
@@ -50,4 +52,4 @@ ht-degree: 0%
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-您現在可以建立指令碼。 [瞭解更多](a-b-testing-uc-script.md)。
+您現在可以建立指令碼。 [深入瞭解](a-b-testing-uc-script.md)。

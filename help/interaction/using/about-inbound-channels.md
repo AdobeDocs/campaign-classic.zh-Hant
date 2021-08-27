@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 關於傳入頻道{#about-inbound-channels}
+
+![](../../assets/v7-only.svg)
 
 優惠方案可使用傳入或傳出頻道，顯示於各種優惠方案空間。 本章詳細說明傳入頻道的某些特定功能。
 

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
 
 ---
 
-# 配置和部署實例的關鍵步驟{#about-initial-configuration}
+# 設定和部署執行個體的關鍵步驟{#about-initial-configuration}
+
+![](../../assets/v7-only.svg)
 
 完成Adobe Campaign安裝後，您必須加以設定，以確保在您受到限制和技術架構的情況下，能有效運作。 本章會依下列順序詳細說明設定Adobe Campaign例項的步驟：
 

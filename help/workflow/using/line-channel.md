@@ -5,7 +5,7 @@ description: LINE 頻道
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 
 
 # LINE 頻道{#line-channel}
+
+![](../../assets/common.svg)
 
 預設情況下，下面詳述的工作流將與&#x200B;**LINE channel**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../delivery/using/line-channel.md)。
 

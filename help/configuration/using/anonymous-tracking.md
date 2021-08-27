@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 匿名追蹤{#anonymous-tracking}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign可讓您在收集到的網頁追蹤資訊以匿名方式瀏覽您的網站時，將其連結至收件者。 當使用者瀏覽您網站的已標籤頁面時，會收集此瀏覽資訊，以便在使用者點按Adobe Campaign所傳送的電子郵件後，即可識別他們，並自動將資訊連結至他們。
 

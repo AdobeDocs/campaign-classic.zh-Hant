@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 方案特性{#schema-characteristics}
+
+![](../../assets/v7-only.svg)
 
 引用現有表的架構的特點如下：
 
@@ -25,13 +27,13 @@ ht-degree: 2%
 >
 >請勿刪除標準收件者表格中的欄位，即使這些欄位毫無用處。 這可能會在Adobe Campaign資料庫中造成行為錯誤。
 
-## 視圖屬性{#the-view-attribute}
+## 檢視屬性 {#the-view-attribute}
 
 源架構接受&#x200B;**srcSchema**&#x200B;根元素的&#x200B;**view**&#x200B;屬性。 在自訂表格中操作Adobe Campaign時，必須使用它。 **view=&quot;true&quot;**&#x200B;屬性告知資料庫結構更新嚮導忽略此架構。 因此，禁止應用程式將表、其列及其索引與相應模式同步。
 
 當此屬性設定為&#x200B;**true**&#x200B;時，該架構僅用於生成SQL查詢以訪問此表的資料。
 
-## 表和列的名稱{#names-of-tables-and-columns}
+## 表和列的名稱 {#names-of-tables-and-columns}
 
 當表由表更新嚮導建立時，表和列的名稱將根據各個結構和屬性的名稱自動生成。 但可以通過輸入以下屬性來強制使用SQL名稱：
 
@@ -57,7 +59,7 @@ ht-degree: 2%
 
 在結構中，只能填入現有表格的一部分欄。 未填入的欄將無法供使用者存取。
 
-## 索引欄位{#indexed-fields}
+## 索引欄位 {#indexed-fields}
 
 從客戶端控制台對清單的記錄進行排序時，通過對索引欄位進行排序可獲得更好的效能。 在架構中聲明索引，使控制台在列標籤左側的排序順序箭頭下顯示索引欄位，並顯示紅線，如下所示：
 

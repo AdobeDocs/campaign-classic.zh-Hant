@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 # 分割{#split}
 
+![](../../assets/common.svg)
+
 **Split**-type活動可讓您將目標分割為數個子集。 目標是用所有接收結果構建的：因此，所有先前的活動必須已完成，才能執行此活動。
 
 此活動不會觸發入站母體的聯合。 如果數個轉變落在一個分割活動中，建議在該活動前面插入&#x200B;**[!UICONTROL Union]**&#x200B;活動。
 
-有關所使用的拆分活動的示例，請參閱[使用拆分活動建立子集](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity)。
+有關所使用的拆分活動的示例，請參閱[使用拆分活動建立子集](targeting-data.md#creating-subsets-using-the-split-activity)。
 
-[此區段](../../workflow/using/cross-channel-delivery-workflow.md)中有一個範例，說明如何使用分割活動來使用篩選條件將目標細分為不同母體。
+[此區段](cross-channel-delivery-workflow.md)中有一個範例，說明如何使用分割活動來使用篩選條件將目標細分為不同母體。
 
-[此區段](../../workflow/using/javascript-scripts-and-templates.md)提供如何在分割活動中使用例項變數的範例。
+[此區段](javascript-scripts-and-templates.md)提供如何在分割活動中使用例項變數的範例。
 
 要配置此活動，請在&#x200B;**[!UICONTROL Subsets]**&#x200B;頁簽中定義子集內容和標籤，然後在&#x200B;**[!UICONTROL General]**&#x200B;頁簽中選擇目標維。
 
-## 建立子集{#creating-subsets}
+## 建立子集 {#creating-subsets}
 
 要建立子集：
 
@@ -64,7 +66,7 @@ ht-degree: 0%
 
    如果完成，則每個子集的區段代碼會自動儲存在另一欄中。 您可以在傳送層級的個人化欄位中存取此欄。
 
-## 限制子集記錄數{#limiting-the-number-of-subset-records}
+## 限制子集記錄數 {#limiting-the-number-of-subset-records}
 
 如果您不想使用子集中包含的整個母體，則可以限制其將包含的記錄數。
 
@@ -100,7 +102,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以批准記錄選擇標準。 定義的設定隨後會顯示在編輯器的中間視窗中。
 
-## 通過資料分組{#limiting-the-number-of-subset-records-by-data-grouping}限制子集記錄的數量
+## 按資料分組限制子集記錄數 {#limiting-the-number-of-subset-records-by-data-grouping}
 
 您可以依資料分組來限制記錄數。 此限制可使用固定值或百分比執行。
 
@@ -120,11 +122,11 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以核准限制並返回編輯分割活動。
 
-## 限制每個資料分發的子集記錄數{#limiting-the-number-of-subset-records-per-data-distribution}
+## 限制每個資料分發的子集記錄數 {#limiting-the-number-of-subset-records-per-data-distribution}
 
 如果您的分組欄位包含的值過多，或您不想重設每個新分割活動的值，Adobe Campaign可讓您針對資料分送建立限制。 選擇資料限制值時（有關此主題的詳細資訊，請參閱[建立子集](#creating-subsets)部分），選擇&#x200B;**[!UICONTROL By data distribution]**&#x200B;選項，然後從下拉菜單中選擇模板。 以下示範如何建立資料分送範本。
 
-如需具有發佈範本的&#x200B;**[!UICONTROL Local approval]**&#x200B;活動範例，請參閱[使用本機核准活動](../../workflow/using/using-the-local-approval-activity.md)。
+如需具有發佈範本的&#x200B;**[!UICONTROL Local approval]**&#x200B;活動範例，請參閱[使用本機核准活動](using-the-local-approval-activity.md)。
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -148,12 +150,12 @@ ht-degree: 0%
    * **[!UICONTROL Targeting dimension]**:輸入要套用資料分送的目標維度， **[!UICONTROL Recipient]** 例如。此結構必須始終與目標工作流程中使用的資料相容。
    * **[!UICONTROL Distribution field]**:透過目標維度選取欄位。例如，如果您選取&#x200B;**[!UICONTROL Email domain]**&#x200B;欄位，收件者清單將依網域劃分。
    * **[!UICONTROL Distribution type]**:在索引標籤中選取目標限制值劃分的方 **[!UICONTROL Distribution]** 式： **[!UICONTROL Percentage]** 或 **[!UICONTROL Set]**。
-   * **[!UICONTROL Assignment type]**:選擇資料分發分配類型。您可以按組或運算子或按本地實體分配來選擇分配。 在&#x200B;**Distributed Marketing**&#x200B;中使用由本地實體分配。 如需詳細資訊，請參閱此[區段](../../campaign/using/about-distributed-marketing.md)。
-   * **[!UICONTROL Approval storage]**:如果您在目 **[!UICONTROL Local approval]** 標定位工作流程中使用活動(請參 [閱本機核准](../../workflow/using/local-approval.md))，請輸入要儲存核准結果的結構。必須為每個目標架構指定一個儲存架構。 如果使用&#x200B;**[!UICONTROL Recipients]**&#x200B;目標定位架構，請輸入預設的&#x200B;**[!UICONTROL Local approval of recipients]**&#x200B;儲存架構。
+   * **[!UICONTROL Assignment type]**:選擇資料分發分配類型。您可以按組或運算子或按本地實體分配來選擇分配。 在&#x200B;**Distributed Marketing**&#x200B;中使用由本地實體分配。 如需詳細資訊，請參閱此[區段](../../distributed/using/about-distributed-marketing.md)。
+   * **[!UICONTROL Approval storage]**:如果您在目 **[!UICONTROL Local approval]** 標定位工作流程中使用活動(請參 [閱本機核准](local-approval.md))，請輸入要儲存核准結果的結構。必須為每個目標架構指定一個儲存架構。 如果使用&#x200B;**[!UICONTROL Recipients]**&#x200B;目標定位架構，請輸入預設的&#x200B;**[!UICONTROL Local approval of recipients]**&#x200B;儲存架構。
 
       如果資料分組不經本地批准而簡單限制，則無需輸入&#x200B;**[!UICONTROL Approvals storage]**&#x200B;欄位。
 
-1. 如果您使用&#x200B;**[!UICONTROL Local approval]**&#x200B;活動（請參閱[本地批准](../../workflow/using/local-approval.md)），請為分發模板輸入&#x200B;**[!UICONTROL Advanced settings]**:
+1. 如果您使用&#x200B;**[!UICONTROL Local approval]**&#x200B;活動（請參閱[本地批准](local-approval.md)），請為分發模板輸入&#x200B;**[!UICONTROL Advanced settings]**:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -189,7 +191,7 @@ ht-degree: 0%
       此列由&#x200B;**[!UICONTROL General]**&#x200B;標籤內的&#x200B;**[!UICONTROL Distribution type]**&#x200B;欄位定義。
 
    * **[!UICONTROL Label]**:輸入連結到每個值的標籤。
-   * **[!UICONTROL Group or operator]**:如果您使用活 **[!UICONTROL Local approval]** 動(請參閱本 [機核准](../../workflow/using/local-approval.md))，請選取指派給每個分配值的運算子或運算子群組。
+   * **[!UICONTROL Group or operator]**:如果您使用活 **[!UICONTROL Local approval]** 動(請參閱本 [機核准](local-approval.md))，請選取指派給每個分配值的運算子或運算子群組。
 
       如果資料分組不經本地批准而簡單限制，則無需輸入&#x200B;**[!UICONTROL Group or operator]**&#x200B;欄位。
 
@@ -197,9 +199,9 @@ ht-degree: 0%
       >
       >請確定已為運算子指派適當的權限。
 
-   * **[!UICONTROL Local entity]**:選擇分配給每個分配值的本地實體。本機實體用於&#x200B;**Distributed Marketing**。 如需詳細資訊，請參閱此[區段](../../campaign/using/about-distributed-marketing.md)。
+   * **[!UICONTROL Local entity]**:選擇分配給每個分配值的本地實體。本機實體用於&#x200B;**Distributed Marketing**。 如需詳細資訊，請參閱此[區段](../../distributed/using/about-distributed-marketing.md)。
 
-## 篩選參數{#filtering-parameters}
+## 篩選參數 {#filtering-parameters}
 
 按一下&#x200B;**[!UICONTROL General]**&#x200B;標籤以輸入活動標籤。 為此分割選取目標維度並篩選維度。 如有必要，您可以為指定子集更改這些維。
 
@@ -220,14 +222,14 @@ ht-degree: 0%
 * 未核取方塊時，分割活動會確保收件者無法出現在數個輸出轉變中，即使符合數個子集的准則亦然。 它們會位於第一個索引標籤的目標中，且具有相符的條件。
 * 核取方塊後，如果收件者符合其篩選准則，即可在數個子集中找到收件者。 Adobe Campaign建議使用獨家條件。
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 * tableName
 * 綱要
 
 每個入站事件都必須指定由這些參數定義的目標。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要

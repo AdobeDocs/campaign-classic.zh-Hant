@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 使用分析報表{#processing-a-report}
 
-## 保存分析報告{#saving-an-analysis-report}
+![](../../assets/common.svg)
+
+## 儲存分析報表 {#saving-an-analysis-report}
 
 如果您有適當的權限，則可以保存從模板建立的分析報告，或以Excel、PDF或OpenOffice格式導出。
 
@@ -33,7 +35,7 @@ ht-degree: 2%
 
 若要變更此報表，請編輯Adobe Campaign樹的&#x200B;**[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]**&#x200B;節點（或運算子具有編輯權限的第一個「Reports」類型資料夾）。 如需詳細資訊，請參閱[設定描述性分析報表的配置](#configuring-the-layout-of-a-descriptive-analysis-report)。
 
-## 分析報告其他設定{#analysis-report-additional-settings}
+## 分析報告其他設定 {#analysis-report-additional-settings}
 
 儲存描述性分析報表後，您可以編輯其屬性並存取其他選項。
 
@@ -41,11 +43,11 @@ ht-degree: 2%
 
 這些選項與標準報表相同，在[本頁](../../reporting/using/properties-of-the-report.md)中有詳細說明。
 
-## 配置描述性分析報表的佈局{#configuring-the-layout-of-a-descriptive-analysis-report}
+## 設定描述性分析報表的配置 {#configuring-the-layout-of-a-descriptive-analysis-report}
 
 您可以在描述性分析的圖表和表格中個人化資料的顯示和配置。 所有選項都可透過Adobe Campaign樹狀結構存取，位於每個報表的&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中。
 
-### 分析報表顯示模式{#analysis-report-display-mode}
+### 分析報表顯示模式 {#analysis-report-display-mode}
 
 使用&#x200B;**[!UICONTROL qualitative distribution]**&#x200B;範本建立報表時，預設會選取表格和圖表顯示模式。 如果您只想要一個顯示模式，請取消勾選適當的方塊。 這表示只有已勾選顯示模式的索引標籤可供使用。
 
@@ -55,7 +57,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
-### 分析報表顯示設定{#analysis-report-display-settings}
+### 分析報表顯示設定 {#analysis-report-display-settings}
 
 您可以隱藏或顯示統計資料和子總計，以及選擇統計資料的方向。
 
@@ -81,7 +83,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_advuser_report_wizard_035.png)
 
-### 分析報告資料佈局{#analysis-report-data-layout}
+### 分析報表資料配置 {#analysis-report-data-layout}
 
 您可以直接在描述性分析表格中個人化資料配置。 若要這麼做，請以滑鼠右鍵按一下您要使用的變數。 從下拉式選單中選取可用選項：
 
@@ -96,7 +98,7 @@ ht-degree: 2%
 
 要返回初始顯示，請刷新視圖。
 
-### 分析報表圖表選項{#analysis-report-chart-options}
+### 分析報表圖表選項 {#analysis-report-chart-options}
 
 您可以個人化圖表中資料的顯示。 要執行此操作，請按一下圖表類型選擇階段期間可用的&#x200B;**[!UICONTROL Variables...]**&#x200B;連結。
 
@@ -115,15 +117,15 @@ ht-degree: 2%
 
    ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
-## 匯出分析報表{#exporting-an-analysis-report}
+## 匯出分析報表 {#exporting-an-analysis-report}
 
 若要從分析報表匯出資料，請按一下下拉式清單，然後選取所需的輸出格式。
 
 ![](assets/s_ncs_user_report_wizard_09.png)
 
-有關詳細資訊，請參見[此頁面](../../reporting/using/actions-on-reports.md)。
+如需詳細資訊，請參閱[此頁面](../../reporting/using/actions-on-reports.md)。
 
-## 重新使用現有報告並分析{#re-using-existing-reports-and-analyses}
+## 重新使用現有報告和分析 {#re-using-existing-reports-and-analyses}
 
 您可以使用已儲存在Adobe Campaign中的現有報表，針對資料建立描述性分析報表。 當已儲存分析或已建立報表並設定為透過描述性分析精靈存取時，即可使用此模式。
 
@@ -136,7 +138,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## 存檔分析報告{#archiving-analysis-reports}
+## 封存分析報表 {#archiving-analysis-reports}
 
 當您根據現有分析建立描述性分析時，可以建立封存檔以儲存資料並比較報表結果。
 

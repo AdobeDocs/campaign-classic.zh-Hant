@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 46b46fc9-c7c9-4c74-b5f3-7935d5368520
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 移轉警告{#migration-warnings}
+
+![](../../assets/v7-only.svg)
 
 * 移轉程式會保留給專家使用者。 您至少必須得到Adobe Campaign的資料庫專家、系統管理員和應用程式開發人員的協助。
 * 開始移轉之前，請先檢查您使用的系統和系統元件是否實際與v7相容。 請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md)。

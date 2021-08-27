@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 設定介面{#configuring-the-interface}
+
+![](../../assets/v7-only.svg)
 
 若要在Adobe Campaign介面中檢視新收件者表格並與其對話，請套用下列步驟：
 
@@ -27,7 +29,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數來與預設收件者�
 1. 更改&#x200B;**Nms_DefaultRcpSchema**&#x200B;變數的值，其名稱與外部收件人表匹配的架構(在本例中：cus:indival)。
 1. 儲存變更。
 
-## 建立新表單{#creating-a-new-form-}
+## 建立新表單 {#creating-a-new-form-}
 
 建立新表單可讓您檢視及編輯外部收件者表格的資料。
 
@@ -60,7 +62,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數來與預設收件者�
 
 1. 儲存建立。
 
-## 在導航層次結構{#creating-a-new-type-of-folder-in-the-navigation-hierarchy}中建立新類型的資料夾
+## 在導覽階層中建立新類型的資料夾 {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. 轉至&#x200B;**[!UICONTROL Administration>Configuration>Navigation hierarchies]**&#x200B;節點。
 1. 建立新的&#x200B;**xtk:navtree**&#x200B;類型&#x200B;**navtree**&#x200B;文檔。

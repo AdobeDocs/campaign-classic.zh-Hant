@@ -6,18 +6,20 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 96%
 
 ---
 
-# Campaign 設定常見問題集{#settings-faq}
+# Campaign 設定常見問題集 {#settings-faq}
+
+![](../../assets/common.svg)
 
 瞭解主要設定，以配置符合您需求的 Campaign 執行個體。
 
-## 我可以變更 Campaign 介面的語言嗎？{#can-i-change-the-language-of-campaign-interface-}
+## 我可以變更 Campaign 介面的語言嗎？ {#can-i-change-the-language-of-campaign-interface-}
 
 在建立執行個體時可以選取 Campaign 語言。之後您將無法進行變更。如需詳細資訊，請參閱[本章節](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -25,47 +27,47 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 如果是英文，在安裝 Campaign 時，您可以選取美式英文或英式英文：它們的日期和時間格式有所不同。如需這些差異的詳細資訊，請參閱[本小節](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
-## 我可以將 Campaign Classic 搭配其他 Adobe 解決方案結合使用嗎？{#can-i-use-campaign-classic-with-other-adobe-solutions-}
+## 我可以將 Campaign Classic 搭配其他 Adobe 解決方案結合使用嗎？ {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
 您可以將 Adobe Campaign 的傳遞功能和進階行銷活動管理功能與協助您個人化使用者體驗的解決方案結合使用。
 
 按一下這裡瞭解[如何使用其他 Adobe 解決方案](../../integrations/using/about-campaign-integrations.md)以及[如何在 Campaign 中設定 IMS](../../integrations/using/about-adobe-id.md)。
 
-## 如何在 Campaign 執行個體上設定追蹤功能？{#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
+## 如何在 Campaign 執行個體上設定追蹤功能？ {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
 
 身為資深使用者，您可以在 Campaign 執行個體上配置追蹤功能。
 
 [按一下這裡以瞭解更多](../../installation/using/deploying-an-instance.md#tracking-configuration)。
 
-## 如何配置電子郵件傳遞機制？{#how-to-configure-email-deliverability-}
+## 如何配置電子郵件傳遞機制？ {#how-to-configure-email-deliverability-}
 
 除了[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)之外，請閱讀傳遞能力技術建議，以了解如何設定執行個體，以充份發揮Campaign傳遞功能。
 
-[按一下這裡以瞭解更多](../../delivery/using/about-deliverability.md)。
+[按一下這裡以瞭解更多資訊](../../delivery/using/about-deliverability.md)。
 
-## 如何實施內容核准？{#how-can-i-implement-content-approval-}
+## 如何實施內容核准？ {#how-can-i-implement-content-approval-}
 
 Campaign 可以讓您以協作模式，針對行銷活動的主要步驟設定核准流程。您可以針對每個行銷活動，核准傳遞目標、內容和成本。可以以電子郵件的形式通知負責核准的 Adobe Campaign 操作者，然後他們可透過主控台或網路連線核准或拒絕核准。
 
 [按一下這裡以瞭解更多](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)，並探索在 Campaign 中實施傳遞內容核准的步驟。
 
-## 如何存取儲存在外部資料庫的資料？{#how-can-i-access-data-stored-in-an-external-database-}
+## 如何存取儲存在外部資料庫的資料？ {#how-can-i-access-data-stored-in-an-external-database-}
 
 Adobe Campaign 提供同盟資料存取 (FDA) 選項，以處理儲存在一或多個外部資料庫中的資訊：您不需要變更 Adobe Campaign 資料的結構就可以存取外部資料。
 
 [按一下這裡以瞭解更多](../../installation/using/connecting-to-database.md)。
 
-## 我可以將 Campaign 連線到哪些外部資料庫？{#which-external-databases-can-i-connect-campaign-to-}
+## 我可以將 Campaign 連線到哪些外部資料庫？ {#which-external-databases-can-i-connect-campaign-to-}
 
 [相容性矩陣](../../rn/using/compatibility-matrix.md)中列有透過同盟資料存取 (FDA) 與 Campaign 相容的外部資料庫。
 
-## Adobe Campaign 可以與輕型目錄存取協定 (LDAP) 整合嗎？{#can-adobe-campaign-integrate-with-ldap-}
+## Adobe Campaign 可以與輕型目錄存取協定 (LDAP) 整合嗎？ {#can-adobe-campaign-integrate-with-ldap-}
 
 身為內部部署/混合部署客戶，您可以將 Campaign Classic 與 LDAP 目錄整合。
 
 [按一下這裡以瞭解如何操作](../../installation/using/connecting-through-ldap.md)。
 
-## 如何在 Campaign 設定 CRM 連接器？{#how-can-i-set-up-crm-connectors-in-campaign-}
+## 如何在 Campaign 設定 CRM 連接器？ {#how-can-i-set-up-crm-connectors-in-campaign-}
 
 Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平台連結至您的協力廠商系統。透過這些 CRM 連接器，您可同步處理連絡人、帳戶、購買等。有了這些 CRM 連接器，您可以將您的應用程式與各協力廠商和企業應用程式輕鬆整合。
 
@@ -75,7 +77,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 ![](assets/do-not-localize/how-to-video.png)觀看有關 [Adobe Campaign 和 Microsoft Dynamics 365 整合](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的使用案例短片。
 
-## 如果是特定於電腦的問題或特定於使用者的問題時，如何執行軟快取清除？{#perform-soft-cache-clear}
+## 如果是特定於電腦的問題或特定於使用者的問題時，如何執行軟快取清除？ {#perform-soft-cache-clear}
 
 如果您有新商標正確反映的問題，需要成功匯出特定於電腦/使用者的資料，則可能需要運用 Windows（Windows 7、Windows XP、Windows 10）執行軟快取清除。
 
@@ -85,7 +87,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 如果仍沒有幫助，請嘗試透過下列步驟來清除硬快取。
 
-## 如果是特定於電腦的問題或特定於使用者的問題時，如何執行硬快取清除？{#perform-hard-cache-clear}
+## 如果是特定於電腦的問題或特定於使用者的問題時，如何執行硬快取清除？ {#perform-hard-cache-clear}
 
 如果您有新商標正確反映的問題，需要成功匯出特定於電腦/使用者的資料，則可能需要運用 Windows（Windows 7、Windows XP、Windows 10）執行硬快取清除。
 

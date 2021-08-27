@@ -4,7 +4,7 @@ title: 配置整合
 description: 配置整合
 audience: integrations
 content-type: reference
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 
 
 # 管線選項 NmsPipeline_Config {#nmspipeline_config}
+
+![](../../assets/common.svg)
 
 驗證一旦運作，[!DNL pipelined]就可以檢索事件並處理它們。 它只會處理在Adobe Campaign中設定的觸發器，而忽略其他觸發器。 觸發器必須從Analytics產生，並預先推送至管道。
 選項也可以設定萬用字元來擷取所有觸發器（無論名稱為何）。
@@ -66,13 +68,13 @@ ht-degree: 2%
 >
 >在Analytics介面中，特定觸發器名稱的[!DNL Trigger] UID值可作為Triggers介面中URL查詢字串參數的一部分找到。 triggerType UID會傳入管道資料流，且程式碼可寫入pipeline.JS中，以將觸發器UID對應至使用者易記標籤，該標籤可儲存在pipelineEvents架構的「觸發器名稱」欄中。
 
-## 消費者參數{#consumer-parameter}
+## 消費者參數 {#consumer-parameter}
 
 管道與「供應商和消費者」模式搭配使用。 同一隊列中可能有許多消費者。 訊息只會「使用」給個別消費者。 每個消費者都有自己的訊息「副本」。
 
 「消費者」參數會將執行個體識別為其中一個消費者。 此為呼叫管道之執行個體的身分。 您可以以執行個體名稱填入。 管道服務可追蹤每個消費者擷取的訊息。 針對不同的例項使用不同的使用者，可確保將每則訊息傳送至每個例項。
 
-## 如何配置管道選項{#configure-pipeline-option}
+## 如何配置管道選項 {#configure-pipeline-option}
 
 在「觸發器」陣列下新增或編輯Experience Cloud觸發器；請勿編輯其餘內容。
 請透過此[website](http://jsonlint.com/)確認JSON有效。

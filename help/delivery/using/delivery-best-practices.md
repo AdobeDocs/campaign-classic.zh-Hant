@@ -5,14 +5,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
 # 關於傳遞的最佳實務 {#delivery-best-practices}
+
+![](../../assets/common.svg)
 
 了解與傳送內容設計和使用Adobe Campaign傳送相關的最佳實務。 使用下列連結來導覽主題和尋找指引。
 
@@ -101,7 +103,7 @@ ht-degree: 24%
 </tr>
 </table>
 
-另請參閱：
+另請參閱:
 
 * [開始使用傳遞能力](about-deliverability.md)
 

@@ -2,18 +2,20 @@
 product: campaign
 title: 最新版本
 description: 最新的 Campaign Classic 發行說明
-feature: 概覽
+feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 99%
 
 ---
 
 # 最新發行版本{#latest-release}
+
+![](../../assets/v7-only.svg)
 
 本頁列出&#x200B;**最新Campaign Classic版本**&#x200B;的新功能、改善和修正。
 
@@ -115,7 +117,7 @@ _2021 年 6 月 5 日_
 **棄用的功能**
 
 * 自 Campaign 第 21.1 發行版本開始，已棄用 Adobe Analytics 資料連接器。 如果您使用此連接器，則需使用新連接器 Adobe Analytics 連接器，據以調整實施。
-如需詳細資訊，請參閱[詳細文件](../../technotes/aa-connector-migration.md)。
+如需詳細資訊，請參閱[詳細文件](../../technotes/using/aa-connector-migration.md)。
 * 不再支援 Debian 8。
 * 在 20.3 版中淘汰 Oracle CRM 後，相關外部帳戶已從介面中移除。
 

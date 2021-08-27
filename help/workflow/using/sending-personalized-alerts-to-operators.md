@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 傳送個人化警報給營運商{#sending-personalized-alerts-to-operators}
+
+![](../../assets/common.svg)
 
 在此範例中，我們想傳送警報給運算子，運算子將包含開啟電子報但未點按其所包含連結之設定檔的名稱。
 
@@ -28,7 +30,7 @@ ht-degree: 2%
 
 ![](assets/uc_operator_1.png)
 
-## 將母體儲存至執行個體變數{#saving-the-population-to-the-instance-variable}
+## 將母體儲存至執行個體變數 {#saving-the-population-to-the-instance-variable}
 
 將以下代碼新增至&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
 
@@ -65,7 +67,7 @@ var query = xtk.queryDef.create(
 
    ![](assets/uc_operator_6.png)
 
-## 測試母體計數{#testing-the-population-count}
+## 測試人口計數 {#testing-the-population-count}
 
 將下列程式碼新增至&#x200B;**[!UICONTROL Test]**&#x200B;活動，以檢查目標母體是否至少包含1個設定檔。
 
@@ -75,7 +77,7 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## 設定警報{#setting-up-the-alert}
+## 設定警報 {#setting-up-the-alert}
 
 現在，填入內容已新增至包含所需欄位的執行個體變數中，您可以將這些資訊新增至&#x200B;**[!UICONTROL Alert]**&#x200B;活動。
 

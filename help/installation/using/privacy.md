@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 隱私權 {#privacy}
+
+![](../../assets/v7-only.svg)
 
 ## 隱私權要求
 
@@ -37,7 +39,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 範例:
 
-1. 建立工作流程並新增「查詢」活動。 深入瞭解。
+1. 建立工作流程並新增「查詢」活動。 深入瞭解.
 
 1. 開啟「查詢」活動，並依照下列方式在nmsTrackingUrl表格上建立篩選器：源URL以http://&lt;%開頭，或源URL以https://&lt;%開頭。
 

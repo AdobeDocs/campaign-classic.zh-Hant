@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 測試追蹤{#testing-tracking}
+
+![](../../assets/common.svg)
 
 您可以測試鏡像頁面、電子郵件記錄和連結上的追蹤。 操作步驟：
 

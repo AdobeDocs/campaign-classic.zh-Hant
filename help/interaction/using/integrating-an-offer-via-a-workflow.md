@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
@@ -15,6 +15,8 @@ ht-degree: 3%
 
 # 透過工作流程整合優惠方案{#integrating-an-offer-via-a-workflow}
 
+![](../../assets/v7-only.svg)
+
 在傳送活動本身之外，數個工作流程活動可讓您定義顯示選件的方式：
 
 * 傳遞大綱
@@ -22,7 +24,7 @@ ht-degree: 3%
 * 優惠引擎
 * 依儲存格列出的優惠
 
-## 傳遞大綱  {#delivery-outline}
+## 傳遞大綱 {#delivery-outline}
 
 行銷活動工作流程中可用的傳遞大綱活動可讓您呈現在傳遞大綱中參考，且來自目前進行中之行銷活動的選件。
 
@@ -62,7 +64,7 @@ ht-degree: 3%
 * 指定優惠方案或優惠方案引擎呼叫。
 * 參考選件的連結。
 
-### 指定優惠方案或對優惠方案引擎的呼叫{#specifying-an-offer-or-a-call-to-the-offer-engine}
+### 指定優惠方案或對優惠方案引擎的呼叫 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 設定查詢後（請參閱[工作流程手冊](../../workflow/using/query.md)）:
 
@@ -89,7 +91,7 @@ ht-degree: 3%
    >
    >可用於預覽的建議數取決於擴充活動中執行的配置，而不是直接在傳送中執行的任何可能配置。
 
-### 參考選件{#referencing-a-link-to-an-offer}的連結
+### 參考選件的連結 {#referencing-a-link-to-an-offer}
 
 您也可以參考擴充活動中選件的連結。
 
@@ -111,7 +113,7 @@ ht-degree: 3%
    >
    >預覽的可用建議數取決於傳送中執行的配置。
 
-### 儲存優惠方案排名和權重{#storing-offer-rankings-and-weights}
+### 儲存優惠方案排名和權重 {#storing-offer-rankings-and-weights}
 
 依預設，當使用&#x200B;**excrient**&#x200B;活動來傳送選件時，其排名和權重不會儲存在主張表格中。
 

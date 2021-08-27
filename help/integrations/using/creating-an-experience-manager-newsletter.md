@@ -5,7 +5,7 @@ description: 建立Experience Manager電子報
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 建立Experience Manager電子報{#creating-an-experience-manager-newsletter}
+
+![](../../assets/common.svg)
 
 例如，此整合可用來在Adobe Experience Manager中建立電子報，然後用於Adobe Campaign，作為電子郵件促銷活動的一部分。
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 傳遞{#delivery}
+
+![](../../assets/common.svg)
 
 **傳送**-type活動可讓您建立傳送動作。 可使用輸入元素來建構。
 
@@ -81,7 +83,7 @@ ht-degree: 0%
    * **[!UICONTROL Send a proof]**:此選項可讓您傳送傳遞的校樣。此動作等同於使用&#x200B;**Delivery**&#x200B;按一下傳送工具列中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按鈕
    * **[!UICONTROL Prepare and start]**:此選項會啟動完整分析程式（目標計算和內容準備）並傳送傳遞。此動作等同於使用&#x200B;**傳送**&#x200B;傳送傳送至主要目標時，按一下&#x200B;**[!UICONTROL Deliver as soon as possible]**、**[!UICONTROL Analyze]**&#x200B;和&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;選項。
 
-   工作流程中進一步使用的&#x200B;**[!UICONTROL Act on a delivery]**&#x200B;活動可讓您啟動開始傳送所需的所有剩餘步驟（目標計算、內容準備、傳送）。 有關詳細資訊，請參閱[傳送控制項](../../workflow/using/delivery-control.md)。
+   工作流程中進一步使用的&#x200B;**[!UICONTROL Act on a delivery]**&#x200B;活動可讓您啟動開始傳送所需的所有剩餘步驟（目標計算、內容準備、傳送）。 有關詳細資訊，請參閱[傳送控制項](delivery-control.md)。
 
    也提供下列選項：
 
@@ -95,12 +97,12 @@ ht-degree: 0%
 
    * **[!UICONTROL Processing errors]**
 
-      請參閱[傳送控制項](../../workflow/using/delivery-control.md)。
+      請參閱[傳送控制項](delivery-control.md)。
    **Script**&#x200B;標籤可讓您修改傳送參數。
 
    ![](assets/edit_diffusion_fil_script.png)
 
-## 範例：傳遞工作流程{#example--delivery-workflow}
+## 範例：傳遞工作流程 {#example--delivery-workflow}
 
 建立新工作流程並新增活動，如下圖所示：
 
@@ -125,13 +127,13 @@ ht-degree: 0%
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   此訊息包含以JavaScript撰寫的運算式：**[!UICONTROL vars.recCount]**&#x200B;表示上一任務的傳送所定位的收件者人數。 有關JavaScript運算式的詳細資訊，請參閱[JavaScript指令碼和範本](../../workflow/using/javascript-scripts-and-templates.md)。
+   此訊息包含以JavaScript撰寫的運算式：**[!UICONTROL vars.recCount]**&#x200B;表示上一任務的傳送所定位的收件者人數。 有關JavaScript運算式的詳細資訊，請參閱[JavaScript指令碼和範本](javascript-scripts-and-templates.md)。
 
    ![](assets/new-workflow-param-validation.png)
 
-   在[Approval](../../workflow/using/approval.md)中詳細說明了「批准」任務。
+   在[Approval](approval.md)中詳細說明了「批准」任務。
 
-## 輸入參數{#input-parameters}
+## 輸入參數 {#input-parameters}
 
 傳送識別碼，如果在&#x200B;**[!UICONTROL Delivery]**&#x200B;區段中選取了&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;選項。
 
@@ -153,7 +155,7 @@ ht-degree: 0%
 
    如果在&#x200B;**[!UICONTROL Content]**&#x200B;區段中選取了&#x200B;**[!UICONTROL Specified by inbound events]**&#x200B;選項，則內容識別碼。
 
-## 輸出參數{#output-parameters}
+## 輸出參數 {#output-parameters}
 
 * tableName
 * 綱要

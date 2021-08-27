@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 45%
@@ -14,6 +14,8 @@ ht-degree: 45%
 ---
 
 # 設定匯出作業 {#executing-export-jobs}
+
+![](../../assets/common.svg)
 
 匯出作業可讓您存取及擷取資料庫中的資料：聯繫人、客戶、清單、段等
 
@@ -23,7 +25,7 @@ ht-degree: 45%
 
 建立新的導出作業後，將顯示導出嚮導(請參閱[建立導入和導出作業](../../platform/using/creating-import-export-jobs.md)。
 
-## 步驟1 — 選擇導出模板{#step-1---choosing-the-export-template}
+## 步驟1 — 選擇匯出範本 {#step-1---choosing-the-export-template}
 
 啟動匯出精靈時，首先必須選擇範本。例如，要配置最近註冊的收件者的匯出，請按照以下步驟操作：
 
@@ -61,7 +63,7 @@ ht-degree: 45%
 
    您必須輸入上次修改的日期。它可以從欄位中檢索或計算。
 
-## 步驟3 — 定義輸出格式{#step-3---defining-the-output-format}
+## 步驟3 — 定義輸出格式 {#step-3---defining-the-output-format}
 
 選擇匯出檔案的輸出格式。可以使用以下格式：文字、固定行文字、CSV 和 XML。
 
@@ -83,7 +85,7 @@ ht-degree: 45%
 
 1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以呼叫函式。 有關詳細資訊，請參閱[函式清單](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
-## 步驟5 — 對列{#step-5---sorting-columns}排序
+## 步驟5 — 排序欄 {#step-5---sorting-columns}
 
 選擇行的排序順序。
 
@@ -123,7 +125,7 @@ ht-degree: 45%
 
 點擊精靈底部的標籤，從行中結果的預覽切換到 XML 中的結果。您還可以查看生成的 SQL 查詢。
 
-## 步驟9 — 啟動匯出{#step-9---launching-the-export}
+## 步驟9 — 啟動匯出 {#step-9---launching-the-export}
 
 按一下&#x200B;**[!UICONTROL Start]**&#x200B;啟動資料匯出。
 

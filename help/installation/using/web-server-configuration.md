@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Web伺服器配置{#web-server-configuration}
+# Web伺服器配置 {#web-server-configuration}
+
+![](../../assets/v7-only.svg)
 
 您將在下方找到一些與Web伺服器(Apache/IIS)配置相關的主要最佳做法。
 

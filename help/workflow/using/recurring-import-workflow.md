@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 設定循環匯入工作流程 {#setting-up-a-recurring-import}
 
+![](../../assets/common.svg)
+
 如果您需要定期匯入具有相同結構的檔案，則使用工作流程範本是最佳作法。
 
-此範例說明如何預先設定可重複用於匯入來自Adobe Campaign資料庫中CRM之設定檔的工作流程。 有關每個活動的所有可能設定的詳細資訊，請參閱此[節](../../workflow/using/about-activities.md)。
+此範例說明如何預先設定可重複用於匯入來自Adobe Campaign資料庫中CRM之設定檔的工作流程。 有關每個活動的所有可能設定的詳細資訊，請參閱此[節](about-activities.md)。
 
 1. 從&#x200B;**[!UICONTROL Resources > Templates > Workflow templates]**&#x200B;建立新的工作流模板。
 1. 新增下列活動：

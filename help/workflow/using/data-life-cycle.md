@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # 資料生命週期 {#data-life-cycle}
 
-## 工作表{#work-table}
+![](../../assets/common.svg)
+
+## 工作表 {#work-table}
 
 在工作流中，從一個活動傳輸到另一個活動的資料儲存在臨時工作表中。
 
@@ -31,7 +33,7 @@ ht-degree: 5%
 
    ![](assets/wf-right-click-display.png)
 
-   有關詳細資訊，請參閱[工作表和工作流架構](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema)。
+   有關詳細資訊，請參閱[工作表和工作流架構](monitoring-workflow-execution.md#worktables-and-workflow-schema)。
 
 * 分析目標
 

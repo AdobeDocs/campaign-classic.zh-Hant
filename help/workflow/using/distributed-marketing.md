@@ -5,7 +5,7 @@ description: 深入了解分散式行銷套件
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 8%
@@ -15,7 +15,9 @@ ht-degree: 8%
 
 # 分散式行銷{#distributed-marketing}
 
-依預設，下列詳細的工作流程會與&#x200B;**Distributed Marketing**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../campaign/using/about-distributed-marketing.md)。
+![](../../assets/common.svg)
+
+依預設，下列詳細的工作流程會與&#x200B;**Distributed Marketing**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../distributed/using/about-distributed-marketing.md)。
 
 <table> 
  <tbody> 

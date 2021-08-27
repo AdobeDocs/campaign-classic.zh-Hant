@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 # 運算子設定檔{#operator-profiles}
 
+![](../../assets/v7-only.svg)
+
 使用「互動」的運算子類型有兩種：優惠方案經理和傳遞經理。 它們每個都具有特定權限，只允許它們訪問樹和平台的某些部分。
 
 * **[!UICONTROL Offer manager]** :建立和維護選件。請注意，如果工作流程中使用選件，運算子必須位於&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;運算子群組中，才能執行工作流程。
@@ -22,7 +24,7 @@ ht-degree: 5%
 
 建立「互動」專用運算子的步驟與建立平台上所有其他運算子的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md)。權限是在建立運算子期間設定的。
 
-## 優惠方案管理員{#offer-manager}
+## 優惠方案管理員 {#offer-manager}
 
 1. 建立新運算子。
 1. 轉至&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，按一下&#x200B;**[!UICONTROL Add]**&#x200B;並選擇&#x200B;**[!UICONTROL Offer manager]**&#x200B;組。
@@ -43,7 +45,7 @@ ht-degree: 5%
    >
    >優惠方案管理員只能在兩種情況下核准優惠方案。 第一個是，如果沒有人特別指定為審核者，第二個是，負責建立範本（有權指派審核者）的運算子在優惠方案所依據的優惠方案範本中指定其為審核者。
 
-## 傳遞管理器{#delivery-manager}
+## 傳送管理員 {#delivery-manager}
 
 1. 建立新運算子。
 1. 轉至&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，按一下&#x200B;**[!UICONTROL Add]**&#x200B;並選擇&#x200B;**[!UICONTROL Delivery manager]**&#x200B;組。
@@ -60,7 +62,7 @@ ht-degree: 5%
    >
    >只有在優惠方案設定期間已定義為審核者時，傳送管理員才能核准優惠方案。
 
-## 根據運算子{#recap-of-rights-according-to-operator}重述權利
+## 根據操作員重新評估權利 {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 

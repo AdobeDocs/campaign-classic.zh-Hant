@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 驗證傳遞 {#validating-the-delivery}
+
+![](../../assets/common.svg)
 
 建立並設定傳送後，您必須先驗證傳送，才能將其傳送至主要目標。
 
@@ -137,7 +139,6 @@ ht-degree: 5%
 >
 
 
-
 若要傳送校樣，請遵循下列步驟：
 
 1. 請確定校樣目標已如[定義特定校樣目標](steps-defining-the-target-population.md#defining-a-specific-proof-target)中所述設定。
@@ -195,7 +196,7 @@ ht-degree: 5%
 
 您可以從此節點建立新規則並定義新類型。 不過，這些工作會保留給熟悉JavaScript的專家使用者。
 
-如需類型規則的詳細資訊，請參閱[此頁面](../../campaign/using/about-campaign-typologies.md)。
+如需類型規則的詳細資訊，請參閱[此頁面](../../campaign-opt/using/about-campaign-typologies.md)。
 
 若要編輯目前的類型，請按一下&#x200B;**[!UICONTROL Typology]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示。
 

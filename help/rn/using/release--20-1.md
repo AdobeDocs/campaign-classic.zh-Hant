@@ -2,18 +2,20 @@
 product: campaign
 title: 第 20.1 發行版本
 description: 第 20.1 發行版本
-feature: 概覽
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 20%
+source-wordcount: '1559'
+ht-degree: 19%
 
 ---
 
 # 第 20.1 發行版本{#release-20-1}
+
+![](../../assets/v7-only.svg)
 
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 20.1.4 - 版本編號 9126 {#release-20-1-4-build-9126}
 
@@ -41,10 +43,9 @@ _2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在&#x200B;**2021 年 6 月 30 日**&#x200B;後連線 Campaign。[深入瞭解](../../technotes/ims-updates.md)
-   >
-   > 
-* 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
+>
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
@@ -66,7 +67,7 @@ _2020 年 3 月 13 日_
 
 _2020年2月17日_
 
-**新增功能？**
+**有哪些新增功能？**
 
 <table> 
  <thead> 
@@ -92,7 +93,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>hadoopFDA Connector已經過改良，可支援Hadoop3.0和Cloudera。</p>
-    <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-hadoop.md">相關的文件</a>，以瞭解詳情。</p>
+    <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-hadoop.md">詳細文件</a>，以瞭解詳情。</p>
    </td> 
   </tr> 
  </tbody> 

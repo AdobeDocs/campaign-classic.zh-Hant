@@ -6,18 +6,20 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
 
 # 匯入和匯出最佳實務 {#import-export-best-practices}
 
+![](../../assets/common.svg)
+
 謹慎並遵循以下所述的幾個簡單規則，將有助於確保資料庫內的資料一致性，並避免在資料庫更新或資料匯出期間出現常見錯誤。
 
-## 使用工作流模板{#using-import-templates}
+## 使用工作流程範本 {#using-import-templates}
 
 以匯入資料為目標的大部分工作流程應包含下列活動：**[!UICONTROL Load file]**、**[!UICONTROL Reconciliation]**、**[!UICONTROL Segmentation]**、**[!UICONTROL Deduplication]**、**[!UICONTROL Update data]**。
 
@@ -29,7 +31,7 @@ ht-degree: 2%
 
 [示例中提供了為導入資料而設計的通用工作流模板的示例：匯入資料](../../platform/using/creating-import-export-templates.md)區段的工作流程範本。
 
-## 使用平面檔案格式{#using-flat-file-formats}
+## 使用一般檔案格式 {#using-flat-file-formats}
 
 匯入的最有效格式是平面檔案。 可在資料庫級別以批量模式導入普通檔案。
 
@@ -50,7 +52,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## 使用壓縮{#using-compression}
+## 使用壓縮 {#using-compression}
 
 盡可能使用壓縮檔案進行匯入和匯出。 預設支援GZIP。 您可以分別在&#x200B;**[!UICONTROL Load file]**&#x200B;和&#x200B;**[!UICONTROL Extract file]**&#x200B;工作流程活動中，在匯入檔案時新增預處理，或在擷取資料時新增後處理。
 
@@ -59,13 +61,13 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 * [資料載入（檔案）活動](../../workflow/using/data-loading--file-.md)
 * [資料擷取（檔案）活動](../../workflow/using/extraction--file-.md)
 
-## 在增量模式{#importing-in-delta-mode}中導入
+## 在增量模式中導入 {#importing-in-delta-mode}
 
 常規導入必須在增量模式下完成。 這表示每次只會傳送已修改或新資料至Adobe Campaign，而非整個表格。
 
 完整匯入應僅用於初始載入。
 
-## 維護一致性{#maintaining-consistency}
+## 維護一致性 {#maintaining-consistency}
 
 若要維持Adobe Campaign資料庫中的資料一致性，請遵循下列原則：
 

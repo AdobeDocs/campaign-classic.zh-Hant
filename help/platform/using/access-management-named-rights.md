@@ -2,18 +2,20 @@
 product: campaign
 title: 使用已命名的權限來設定權限
 description: 了解如何使用已命名的權限來設定權限
-feature: 存取管理
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '503'
 ht-degree: 7%
 
 ---
 
 # 使用已命名的權限來設定權限{#named-rights}
+
+![](../../assets/common.svg)
 
 依預設，Adobe Campaign會提出一組命名權限，可讓您定義指派給運算子和運算子群組的授權。 可以從樹的&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;節點編輯這些權限。
 

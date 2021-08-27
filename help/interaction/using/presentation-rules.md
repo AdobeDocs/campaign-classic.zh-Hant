@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 簡報規則{#presentation-rules}
 
-## 建立演示規則{#creating-a-presentation-rule}
+![](../../assets/v7-only.svg)
+
+## 建立簡報規則 {#creating-a-presentation-rule}
 
 在我們的資料庫中，有幾個旅行優惠，分別是歐洲、非洲、美國和加拿大。 我們想要傳送前往加拿大的優惠方案，但如果收件者拒絕此類優惠方案，我們就不想再傳送給他們
 
@@ -76,7 +78,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_014.png)
 
-## 應用演示規則{#applying-the-presentation-rule}
+## 應用演示規則 {#applying-the-presentation-rule}
 
 以下是先前建立的類型規則的應用程式範例。
 

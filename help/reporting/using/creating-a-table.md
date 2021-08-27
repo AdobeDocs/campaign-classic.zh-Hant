@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # 建立資料表{#creating-a-table}
 
+![](../../assets/common.svg)
+
 您可以新增表格至報表以顯示資料。 這可以是根據多維資料集測量建立的透視表、具有組的清單或包含值劃分的表。
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## 建立組{#creating-a-list-with-group}的清單
+## 建立包含群組的清單 {#creating-a-list-with-group}
 
 **[!UICONTROL List with group]**&#x200B;類型表可讓您對表格中的資料進行分組，並產生統計資料。 例如，您可以建立資料的總計和子總計。 每個群組都有其專屬的頁首、詳細資料和頁尾行。
 
@@ -54,7 +56,7 @@ ht-degree: 1%
 1. 建立表格及其內容。
 1. 在&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中顯示已完成的報表。 接著，您可以發佈報表，並視需要將其匯出為不同格式。 有關詳細資訊，請參閱[匯出報表](../../reporting/using/actions-on-reports.md#exporting-a-report)。
 
-### 添加行和列{#adding-lines-and-columns}
+### 添加行和列 {#adding-lines-and-columns}
 
 預設情況下，**[!UICONTROL List with group]**&#x200B;類型表包括頁眉、明細行和頁腳行。
 
@@ -92,7 +94,7 @@ ht-degree: 1%
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
-### 定義單元格內容{#defining-cell-content}
+### 定義儲存格內容 {#defining-cell-content}
 
 若要編輯表格的儲存格並定義其內容和格式，請移至儲存格，然後使用滑鼠右鍵功能表。
 
@@ -116,7 +118,7 @@ ht-degree: 1%
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### 定義單元格格式{#defining-cell-format}
+### 定義儲存格格式 {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
@@ -195,13 +197,13 @@ ht-degree: 1%
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
-## 使用案例：建立包含組清單{#use-case--create-a-report-with-a-group-list}的報告
+## 使用案例：建立包含群組清單的報表 {#use-case--create-a-report-with-a-group-list}
 
 在此範例中，我們將建立兩頁報表：第一個頁面會包含清單、每個促銷活動的傳送總數，以及傳送的訊息數量。 傳送名稱將可點按連結，且可讓您前往報表的第二頁，透過表格和圖表檢視所選傳送之每個電子郵件網域的傳送劃分。 在第二頁，表格將作為圖表的圖例。
 
 ![](assets/reporting_quick_start_report-final.png)
 
-### 步驟1 — 建立報表{#step-1---create-a-report}
+### 步驟1 — 建立報表 {#step-1---create-a-report}
 
 建立與促銷活動結構&#x200B;**[!UICONTROL Campaigns (nms)]**&#x200B;相關的新報表。
 
@@ -213,7 +215,7 @@ ht-degree: 1%
 
 ![](assets/reporting_quick_start_diagram.png)
 
-### 步驟2 — 建立第一個查詢{#step-2---create-the-first-query}
+### 步驟2 — 建立第一個查詢 {#step-2---create-the-first-query}
 
 第一個查詢可讓您收集連結至每個促銷活動的傳遞。 目標是顯示連結至每個促銷活動之Adobe Campaign資料庫的各種傳送報表。
 
@@ -257,7 +259,7 @@ ht-degree: 1%
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存這些條件，然後按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以關閉查詢編輯器。
 
-### 步驟3:建立第一頁{#step-3--create-the-first-page}
+### 步驟3:建立第一頁 {#step-3--create-the-first-page}
 
 在此步驟中，我們將設定報表的第一頁。 若要設定，請套用下列步驟：
 
@@ -357,7 +359,7 @@ ht-degree: 1%
    >
    >建議您等到報表建置完成，再合併儲存格，因為合併是不可復原的。
 
-### 步驟4 — 建立第二個查詢{#step-4---create-the-second-query}
+### 步驟4 — 建立第二個查詢 {#step-4---create-the-second-query}
 
 我們想新增第二個查詢和第二個頁面，以在報表的使用者點按時顯示傳送的詳細資料。 新增查詢前，請編輯您建立的頁面並啟用傳出轉變，以便將其連結至查詢。
 
@@ -393,7 +395,7 @@ ht-degree: 1%
 
 1. 關閉查詢配置窗口，並在第二個查詢後添加頁到圖表。
 
-### 步驟5 — 建立第二頁{#step-5---create-the-second-page}
+### 步驟5 — 建立第二頁 {#step-5---create-the-second-page}
 
 1. 編輯頁面並輸入其標籤：**電子郵件網域**。
 1. 取消選中&#x200B;**[!UICONTROL Enable output transitions]**&#x200B;選項：這是報表的最後一頁，後面不會有其他活動。
@@ -446,7 +448,7 @@ ht-degree: 1%
 
    您的頁面現在已設定完畢。
 
-### 步驟6 — 檢視報表{#step-6---viewing-the-report}
+### 步驟6 — 檢視報表 {#step-6---viewing-the-report}
 
 要查看此配置的結果，請按一下&#x200B;**[!UICONTROL Preview]**&#x200B;頁簽並選擇&#x200B;**[!UICONTROL Global]**&#x200B;選項。
 
@@ -458,10 +460,10 @@ ht-degree: 1%
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## 建立劃分或樞紐表{#creating-a-breakdown-or-pivot-table}
+## 建立劃分或樞紐表格 {#creating-a-breakdown-or-pivot-table}
 
 此類型的表格可讓您顯示根據資料庫中資料計算的統計資料。
 
-這些類型的報表的設定與描述性分析精靈所使用的報表類似。 有關詳細資訊，請參見[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
+這些類型的報表的設定與描述性分析精靈所使用的報表類似。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 
 有關建立透視表的詳細資訊，請參閱[此部分](../../reporting/using/using-cubes-to-explore-data.md)。

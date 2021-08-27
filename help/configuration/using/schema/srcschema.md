@@ -6,28 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
 
 ---
 
-# srschema元素{#srcschema--element}
+# srschema元素 {#srcschema--element}
 
-## 內容模型{#content-model-14}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-14}
 
 srcSchema:==(attribute) | createdBy |資料 |元素 |枚舉 |幫助 |介面 |方法 | modifiedBy)
 
-## 屬性{#attributes-14}
+## 屬性 {#attributes-14}
 
 created(datetime), createdBy-id(long), desc(string), entitySchema(string), extendedSchema(string), img(string), implements(string), label(string), lastModified(string), library(boolean), mappingType(string), modifiedBy-id(long), name(string), namespace(string), useRecycleBin(boolean), view(boolean), xtkschema(string)
 
-## 父級{#parents-14}
+## 父母 {#parents-14}
 
 無
 
-## 子項{#children-14}
+## 兒童 {#children-14}
 
 * `<attribute>`
 * `<createdby>`
@@ -43,11 +45,11 @@ created(datetime), createdBy-id(long), desc(string), entitySchema(string), exten
 
 `<srcschema>`是架構的根元素。 它是架構定義的輸入點。
 
-## 使用與使用內容{#use-and-context-of-use-9}
+## 使用與使用內容 {#use-and-context-of-use-9}
 
 [關於架構引用](../../../configuration/using/about-schema-reference.md)和[架構結構](../../../configuration/using/schema-structure.md)中提供了架構演示。
 
-## 屬性說明{#attribute-description-14}
+## 屬性說明 {#attribute-description-14}
 
 * **已建立(datetime)**:此屬性提供有關架構建立日期和時間的資訊。有「日期時間」表單。 顯示的值取自伺服器。 時間以UTC格式顯示。
 * **createdBy-id(long)**:是建立架構的運算子的識別碼。

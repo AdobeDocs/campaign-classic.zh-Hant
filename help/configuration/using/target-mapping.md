@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # 目標對應{#target-mapping}
+
+![](../../assets/v7-only.svg)
 
 建立目標對應有兩種必要：
 
@@ -22,7 +24,7 @@ ht-degree: 0%
 
 目標映射建立嚮導將幫助您建立使用自定義表所需的所有架構。
 
-## 建立和配置連結到自定義表{#creating-and-configuring-schemas-linked-to-the-custom-table}的結構
+## 建立和設定連結至自訂表格的結構 {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
 建立目標對應之前，Adobe Campaign若要與新的收件者資料結構搭配運作，需進行數項設定。
 
@@ -112,7 +114,7 @@ ht-degree: 0%
 
    ![](assets/mapping_schema_list.png)
 
-## 使用目標映射{#using-target-mapping}
+## 使用目標對應 {#using-target-mapping}
 
 使用新結構作為傳送目標有兩種方式：
 

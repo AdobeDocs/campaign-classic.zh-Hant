@@ -3,7 +3,7 @@ product: campaign
 title: 第 19.2 發行版本
 description: Campaign 19.2發行說明
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
+source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 21%
@@ -11,6 +11,8 @@ ht-degree: 21%
 ---
 
 # 第 19.2 發行版本{#release-19-2}
+
+![](../../assets/v7-only.svg)
 
 ## ![](assets/do-not-localize/limited_2.png) 發行版本 19.2.4 - 版本編號 9082 {#release-19-2-4-build-9082}
 
@@ -38,10 +40,9 @@ _2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/ims-updates.md)
-   >
-   > 
-* 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
+>
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 
 
 

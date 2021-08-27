@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # 建立傳遞範本{#creating-a-delivery-template}
+
+![](../../assets/common.svg)
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#delivery-template-video)
 

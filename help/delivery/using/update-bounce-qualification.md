@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,6 +15,8 @@ ht-degree: 3%
 ---
 
 # 在Apple中斷{#update-bounce-qualification.md}後更新不正確的硬退信
+
+![](../../assets/common.svg)
 
 ## 內容
 

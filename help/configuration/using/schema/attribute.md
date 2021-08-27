@@ -6,22 +6,24 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
 
 ---
 
-# 屬性元素{#attribute--element}
+# 屬性元素 {#attribute--element}
 
-## 內容模型{#content-model}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model}
 
 屬性：==幫助
 
 ## 屬性 {#attributes}
 
-_operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement(boolean)、tellesTo(string)、dataPolicy(string)、dbEnum(string)、defOnDuplicate(boolean)、default(string)、desc(string)、edit(string)、enum(string)、expr(string)、featureDate(boolean)、img(string)、lel(string)、lacable(bol)、Nnen(bolen)、NOLN(boolname)string)、ref（字串）、必要（布林值）、sql（布林值）、sqlDefault（字串）、sqlname（字串）、sqltable（字串）、target(MNTOKEN)、範本（字串）、translatedDefault（字串）、translatedExpr（字串）、類型(MNTOKEN)、用戶（布林值）、userEnum（字串）、visibleIf（字串）、xml（布林值）
+_operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement(boolean)、tellesTo(string)、dataPolicy(string)、dbEnum(string)、defOnDuplicate(boolean)、default(string)、desc(string)、edit(string)、enum(string)、expr(string)、featureDate(boolean)、inut(string)、legng(string)、lableng(locable)、lalated(be)、NOL(ben)、NEN(NOT)STRING)、REF（字串）、必要（布林值）、SQL（布林值）、SQLDefault（字串）、SQLNAME（字串）、SQLTABLE（字串）、TARGET(MNTOKEN)、範本（字串）、translatedDefault（字串）、translatedExpr（字串）、類型(MNTOKEN)、用戶（布林值）、userEnum（字串）、visibleIf（字串）、xml（布林值）
 
 ## 父母 {#parents}
 
@@ -35,13 +37,13 @@ _operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement
 
 `<attribute>` 元素可讓您定義資料庫中的欄位。
 
-## 使用與使用內容{#use-and-context-of-use}
+## 使用與使用內容 {#use-and-context-of-use}
 
 `<attribute>` 元素中必須宣告 `<element>` 元素。
 
 在`<srcschema>`中定義`<attribute>`元素的序列不會影響資料庫中的欄位建立序列。 建立順序將按字母順序排列。
 
-## 屬性說明{#attribute-description}
+## 屬性說明 {#attribute-description}
 
 * **_operation(string)**:定義資料庫中的寫入類型。
 

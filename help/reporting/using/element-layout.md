@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -15,13 +15,15 @@ ht-degree: 1%
 
 # 元素版面{#element-layout}
 
+![](../../assets/common.svg)
+
 除了此處詳述的各種圖表以外：[圖表類型和變體](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以調整顯示並新增元素至報表頁面。
 
 您可以使用容器：這些功能可讓您連結頁面的數個元素，並在欄和/或儲存格中設定其配置。 [本節](../../web/using/defining-web-forms-layout.md#creating-containers)中會詳細說明如何使用它們。
 
 您可以在樹狀結構的根位置設定報表配置，並針對每個容器將其過載。 頁面會依欄排序。 容器也會分類為欄。 只有靜態和圖形項目會排序成儲存格。
 
-## 定義每個頁面{#defining-the-options-for-each-page}的選項
+## 定義每個頁面的選項 {#defining-the-options-for-each-page}
 
 您可以在報表的每個頁面上使用選項。
 
@@ -35,7 +37,7 @@ ht-degree: 1%
 
 在&#x200B;**[!UICONTROL Browse]**&#x200B;區段中選取各種選項，授權從一個報表頁面瀏覽至另一個報表頁面。 如果選取了&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disable previous page]**&#x200B;選項， **[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Previous]**&#x200B;按鈕將從報告頁面中消失。
 
-## 新增頁首和頁尾{#adding-a-header-and-a-footer}
+## 新增頁首和頁尾 {#adding-a-header-and-a-footer}
 
 報表屬性視窗也可讓您定義配置元素，例如：視窗的標題、頁首和頁尾的HTML內容。
 

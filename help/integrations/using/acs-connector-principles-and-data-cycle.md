@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
 
 ---
 
-# ACS連接器原理和資料週期{#acs-connector-principles-and-data-cycle}
+# ACS Connector原理和資料週期{#acs-connector-principles-and-data-cycle}
+
+![](../../assets/v7-only.svg)
 
 ## 簡介 {#introduction}
 
@@ -77,7 +79,7 @@ ACS Connector會定期從Campaign Standard複製到Campaign v7:
 >
 >只有電子郵件廣播和追蹤記錄會從Campaign Standard複製到Campaign v7。
 
-### 資料同步{#data-synchronization}
+### 資料同步 {#data-synchronization}
 
 ![](assets/acs_connect_flows_02.png)
 
@@ -85,7 +87,7 @@ ACS連接器會同步Campaign v7和Campaign Standard之間的隔離。
 
 例如，從Campaign v7複製到Campaign Standard的設定檔包含電子郵件地址。 如果電子郵件地址被Campaign Standard隔離，則資料會在下次同步期間傳遞至Campaign v7。 有關隔離的詳細資訊，請參閱[隔離管理](../../delivery/using/understanding-quarantine-management.md)和[Campaign Standard隔離](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)。
 
-### 使用複製的配置檔案{#using-replicated-profiles}
+### 使用複製的配置檔案 {#using-replicated-profiles}
 
 Campaign Standard和促銷活動v7可使用復寫的設定檔來定位行銷活動中的工作流程。
 
@@ -120,13 +122,13 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
 
 **進階實作**&#x200B;可讓您執行更複雜的使用案例，例如，如果您有其他收件者欄位或自訂收件者表格（例如交易表）。 請參閱[進階實作](#advanced-implementation)。
 
-### 安裝軟體包{#installing-the-package}
+### 安裝套件 {#installing-the-package}
 
 若要使用此功能，需要安裝&#x200B;**[!UICONTROL ACS Connector]**&#x200B;套件。 這一律由Adobe技術管理員或顧問執行。
 
 與ACS連接器相關的所有技術元素都可在瀏覽器的&#x200B;**[!UICONTROL Administration > ACS Connector]**&#x200B;節點中使用。
 
-### 技術和復寫工作流程{#technical-and-replication-workflows}
+### 技術和復寫工作流程 {#technical-and-replication-workflows}
 
 安裝套件後，**[!UICONTROL Administration > ACS Connector > Process]**&#x200B;底下提供兩個技術工作流程。
 
@@ -151,7 +153,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流程會將傳送ID、電子郵件廣泛記錄和電子郵件追蹤記錄檔從Campaign Standard複製到Campaign v7。它只會考量從Campaign Standard傳送至屬於Campaign v7之nms:recipients表格一部分之設定檔的傳送。
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流程會將傳送ID、電子郵件廣泛記錄和電子郵件追蹤記錄檔從Campaign Standard複製到Campaign v7。它只考慮從Campaign Standard傳送至屬於Campaign v7特定表格一部分的設定檔（以定義nms:recipients以外的內容）的傳送。
 
-### 預設收件者欄位{#default-recipient-fields}
+### 預設收件者欄位 {#default-recipient-fields}
 
 如果您有任何其他欄位或自訂表（例如，交易表），預設情況下將不會複製這些欄位或自訂表。 需要執行進階設定。 請參閱[進階實作](#advanced-implementation)。
 
@@ -262,7 +264,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
  </tbody> 
 </table>
 
-### 權限轉換{#rights-conversion}
+### 權限轉換 {#rights-conversion}
 
 在Campaign v7和Campaign Standard中，權限的處理方式不同。 在Campaign v7中，權限管理是以資料夾為基礎，而在Campaign Standard中，權限管理則是以單位存取（組織/地理單位）為基礎。 Campaign Standard用戶屬於包含限制上下文的安全組。 因此，必須轉換Campaign v7權限系統，才能符合Campaign Standard。 執行權限轉換有數種方式。 您會在下方找到實作的範例。
 
@@ -276,7 +278,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
 
 1. 然後，復寫工作流程將使用此資訊，並將對應的組織/地理單位新增至要復寫的每個物件。
 
-### 進階實作{#advanced-implementation}
+### 進階實作 {#advanced-implementation}
 
 本節將說明進階實作的一些可能性。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
@@ -15,14 +15,16 @@ ht-degree: 7%
 
 # 開始使用個人化連結追蹤 {#tracking-personalized-links}
 
+![](../../assets/common.svg)
+
 包含個人化的電子郵件內容中的連結需要追蹤特定語法。
 
 在電子郵件內容（HTML或文字）中使用JavaScript，可讓您產生動態內容並傳送給收件者，但有兩個限制：
 
 * 指令碼無法直接訪問資料庫（SQL函式和API函式不可用）,
-* Adobe Campaign必須能夠偵測URL，才能追蹤連結。 [瞭解更多](detecting-tracking-urls.md)
+* Adobe Campaign必須能夠偵測URL，才能追蹤連結。 [深入瞭解](detecting-tracking-urls.md)
 
-您可以新增特定的預先處理指示，以編寫URL的指令碼並加以追蹤。 [瞭解更多](pre-processing-instructions.md)
+您可以新增特定的預先處理指示，以編寫URL的指令碼並加以追蹤。 [深入瞭解](pre-processing-instructions.md)
 
 為了追蹤偵測，Adobe Campaign內嵌[Tidy](http://www.html-tidy.org/)以剖析HTML來源並偵測模式。 它會列出內容的所有URL，以便個別追蹤。 Adobe Campaign再次使用「整齊」，將URL(`http://myurl.com`)取代為指向Adobe Campaign重新導向伺服器的URL。
 

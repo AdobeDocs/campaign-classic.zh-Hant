@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 使用實例：建立轉介表單{#use-case-creating-a-refer-a-friend-form}
+
+![](../../assets/v7-only.svg)
 
 在此範例中，我們想向資料庫中的收件者提供競爭。 網路表單中會有一個輸入答案的區段，另一個則會輸入朋友的電子郵件地址來引用朋友。
 

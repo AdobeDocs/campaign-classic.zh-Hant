@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -15,7 +15,9 @@ ht-degree: 37%
 
 # 定義篩選條件{#defining-filter-conditions}
 
-## 選擇運算子{#choosing-the-operator}
+![](../../assets/common.svg)
+
+## 選擇運算子 {#choosing-the-operator}
 
 在篩選條件中，您需要使用運算子將兩個值連結在一起。
 
@@ -115,7 +117,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-## 使用和或，但{#using-and--or--except}除外
+## 使用和或，除外 {#using-and--or--except}
 
 對於使用多個篩選條件的查詢，您需要定義條件之間的連結。 有三個可能的連結：
 
@@ -144,7 +146,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_31.png)
 
-## 排定條件的優先順序{#prioritizing-conditions}
+## 排定條件的優先順序 {#prioritizing-conditions}
 
 本節說明如何借由工具列中的藍色箭頭，排列條件的優先順序。
 
@@ -163,7 +165,7 @@ ht-degree: 37%
 
 **[!UICONTROL Gender (@gender) equal to Male]**&#x200B;條件已取出其括弧中。 它已經達到與「倫敦等於倫敦金融城」的水準。 這些條件連結在一起(**[!UICONTROL And]**)。
 
-## 選擇要提取{#selecting-data-to-extract}的資料
+## 選擇要提取的資料 {#selecting-data-to-extract}
 
 可用欄位因表格而異。 所有欄位都儲存在稱為&#x200B;**[!UICONTROL Main element]**&#x200B;的主節點中。 在以下範例中，可用欄位位於收件者表格中。 欄位一律按字母順序顯示。
 
@@ -263,9 +265,9 @@ ht-degree: 37%
 >* **[!UICONTROL Distribution of values]**&#x200B;可用來檢視所選欄位值的分佈（例如連結至收件者城鎮、收件者語言等的分佈）。
 
 
-## 建立計算欄位{#creating-calculated-fields}
+## 建立計算欄位 {#creating-calculated-fields}
 
-如有必要，請在資料格式化期間新增欄。 計算欄位會將欄新增至資料預覽區段。 按一下 **[!UICONTROL Add a calculated field]**。
+如有必要，請在資料格式化期間新增欄。 計算欄位會將欄新增至資料預覽區段。 按一下&#x200B;**[!UICONTROL Add a calculated field]**。
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -304,7 +306,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_58.png)
 
-## 生成表達式{#building-expressions}
+## 建立運算式 {#building-expressions}
 
 運算式編輯工具可讓您使用運算式計算匯總、產生函式或編輯公式。
 
@@ -316,7 +318,7 @@ ht-degree: 37%
 
    可用的公式有幾種類型：**[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
 
-   選擇&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。按一下&#x200B;**[!UICONTROL Next]**。
+   選擇&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -407,7 +409,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-**String**
+**字串**
 
 <table> 
  <tbody> 

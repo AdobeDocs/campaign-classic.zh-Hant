@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 63e515c8-4391-412e-a1ba-2444f47aa7fd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 12%
@@ -15,9 +15,11 @@ ht-degree: 12%
 
 # v6.10 中的特定設定{#specific-configurations-in-v6-10}
 
+![](../../assets/v7-only.svg)
+
 已在Adobe Campaign v7中執行某些改善，以最佳化安全性。
 
-如果您從6.10平台移轉，而用戶端主控台的版本比8104版本編號舊，則必須更新它。 如果在移轉前未執行此操作，則在重新連接時，系統會提示您更新客戶端控制台。 按一下 **[!UICONTROL Yes]**。
+如果您從6.10平台移轉，而用戶端主控台的版本比8104版本編號舊，則必須更新它。 如果在移轉前未執行此操作，則在重新連接時，系統會提示您更新客戶端控制台。 按一下&#x200B;**[!UICONTROL Yes]**。
 
 >[!IMPORTANT]
 >

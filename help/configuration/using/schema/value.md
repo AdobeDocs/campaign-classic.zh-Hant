@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
 
 ---
 
-# 值元素{#value--element}
+# 值元素 {#value--element}
 
-## 內容模型{#content-model-16}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-16}
 
 值：==幫助
 
-## 屬性{#attributes-16}
+## 屬性 {#attributes-16}
 
 * @applicableIf（字串）
 * @desc（字串）
@@ -29,11 +31,11 @@ ht-degree: 5%
 * @name（字串）
 * @value（字串）
 
-## 父級{#parents-16}
+## 父母 {#parents-16}
 
 `<enumeration>`
 
-## 子項{#children-16}
+## 兒童 {#children-16}
 
 `<help>`
 
@@ -41,7 +43,7 @@ ht-degree: 5%
 
 此元素可讓您定義枚舉中儲存的值。
 
-## 屬性說明{#attribute-description-16}
+## 屬性說明 {#attribute-description-16}
 
 * **applicableIf（字串）**:此屬性可讓您將分項清單設為選用值。它接收XTK運算式。
 * **dsc（字串）**:枚舉值的說明。

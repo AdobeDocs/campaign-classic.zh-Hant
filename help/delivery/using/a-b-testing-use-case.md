@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 關於此使用實例 {#about-use-case}
+
+![](../../assets/common.svg)
 
 在此使用案例中，我們將透過目標工作流程來比較兩個電子郵件傳送內容。 訊息和文字在兩個傳送中都相同：只有版面會變更。
 

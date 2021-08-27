@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 ---
 
 # 定義正確對象 {#define-the-right-audience}
+
+![](../../assets/common.svg)
 
 目標人口是關鍵：請謹慎建立清單，在熱門的電子郵件用戶端和行動裝置上測試您的電子郵件，並確保您的電子郵件清單為最新狀態（沒有未知或過時的地址）。 您也可以傳送校樣，協助您設定完整的驗證週期。
 

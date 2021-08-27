@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 傳遞能力疑難排解{#deliverability-faq}
+
+![](../../assets/common.svg)
 
 您是否遇到傳遞能力問題？ 你可以在這裡找到解決方案。
 

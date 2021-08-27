@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814,6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 28%
@@ -14,6 +14,8 @@ ht-degree: 28%
 ---
 
 # 設定URL權限（內部部署）{#url-permissions}
+
+![](../../assets/v7-only.svg)
 
 可由您的 Campaign Classic 執行個體的 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。這些是可讓您的執行個體正常運作的 URL。
 
@@ -23,10 +25,9 @@ ht-degree: 28%
 >
 >此程式僅限於&#x200B;**內部部署**&#x200B;部署。
 >
->身為&#x200B;**托管**&#x200B;客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，則可以使用URL權限自助服務介面。 [瞭解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+>身為&#x200B;**托管**&#x200B;客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，則可以使用URL權限自助服務介面。 [深入瞭解](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
 >
 >其他&#x200B;**混合/托管**&#x200B;客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
-
 
 對於&#x200B;**Hybrid**&#x200B;和&#x200B;**內部部署**&#x200B;部署，管理員需要在&#x200B;**serverConf.xml**&#x200B;檔案中參考新的&#x200B;**urlPermission**。
 

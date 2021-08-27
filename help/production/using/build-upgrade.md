@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2353'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 執行版本編號升級{#performing-a-build-upgrade}
+
+![](../../assets/v7-only.svg)
 
 本節將提供升級流程的深入逐步說明，以及識別和解決衝突的步驟。
 
@@ -82,7 +84,7 @@ ht-degree: 2%
 
 1. 獲取[伺服器配置檔案](../../installation/using/the-server-configuration-file.md)的最新版本。
 
-1. [下載最新版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。[瞭解更多](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+1. [下載最新版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。[深入瞭解](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
 
 在開始版本編號升級之前，您還需要知道所有的[有用的命令行](../../installation/using/command-lines.md):
 
@@ -255,7 +257,6 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 >
 >中間來源伺服器必須一律執行與行銷伺服器相同的版本（或更新版本）。
 
-
 ## 發生衝突
 
 ### 識別衝突
@@ -343,7 +344,6 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 >[!IMPORTANT]
 >強烈建議解決衝突。
 
-
 ### 執行合併{#perform-a-merge}
 
 合併的類型不同：
@@ -406,7 +406,6 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 >[!IMPORTANT]
 >執行複雜合併需要開發技能。
-
 
 **相關主題**
 

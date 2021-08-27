@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
 
 ---
 
-# 預處理指令{#pre-processing-instructions}
+# 預處理指令 {#pre-processing-instructions}
+
+![](../../assets/common.svg)
 
 您可以在傳送內容中使用特定語法，以新增指示並編寫追蹤電子郵件的URL指令碼。 &lt;%@指示不是JavaScript:此語法是Adobe Campaign專屬的。
 
@@ -21,9 +23,9 @@ ht-degree: 1%
 
 指示有三種類型：
 
-* **[!DNL include]**:主要用於將選項、個人化區塊、外部檔案或頁面中的某些程式碼分成因素。[瞭解更多](#include)
-* **[!DNL value]**:提供傳送、傳送變數和傳送中載入之自訂物件的欄位存取權。[瞭解更多](#value)
-* **[!DNL foreach]**:以循環載入為自訂物件的陣列。[瞭解更多](#foreach)
+* **[!DNL include]**:主要用於將選項、個人化區塊、外部檔案或頁面中的某些程式碼分成因素。[深入瞭解](#include)
+* **[!DNL value]**:提供傳送、傳送變數和傳送中載入之自訂物件的欄位存取權。[深入瞭解](#value)
+* **[!DNL foreach]**:以循環載入為自訂物件的陣列。[深入瞭解](#foreach)
 
 可直接從傳遞精靈測試。 它們會套用在內容預覽中，當您按一下追蹤按鈕以查看URL清單時。
 
@@ -112,7 +114,7 @@ ht-degree: 1%
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] 在Javascript區段中  {#value-in-javascript}
+### [!DNL value] 在Javascript區段中 {#value-in-javascript}
 
 若要允許在Javascript區段中使用&lt;%@值，兩個特殊物件會取代為&lt;%和%>:
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 建立工作流程 {#building-a-workflow}
+
+![](../../assets/common.svg)
 
 本節詳細說明在Campaign中建立工作流程的主要原則和最佳實務。
 
@@ -25,7 +27,7 @@ ht-degree: 3%
 * 存取並建立技術工作流程，請參閱[技術工作流程](#technical-workflows)
 * 使用模板建立工作流，請參閱[工作流模板](#workflow-templates)
 
-## 建立新工作流{#creating-a-new-workflow}
+## 建立新工作流程 {#creating-a-new-workflow}
 
 從&#x200B;**[!UICONTROL Explorer]**，訪問工作流資料夾。 依預設，您可以使用&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**。
 
@@ -55,10 +57,10 @@ ht-degree: 3%
 
 活動會依浮動視窗不同標籤內的類別分組。 可用的標籤和活動可能會依工作流程類型（技術、鎖定目標或行銷活動工作流程）而有所不同。
 
-* 第一個標籤包含定位和資料操控活動。 在[目標活動](../../workflow/using/about-targeting-activities.md)中會詳細說明這些活動。
-* 第二個索引標籤包含排程活動，主要用於協調其他活動。 在[流量控制活動](../../workflow/using/about-flow-control-activities.md)中詳細介紹了這些活動。
-* 第三個索引標籤包含可在工作流程中使用的工具和動作。 在[動作活動](../../workflow/using/about-action-activities.md)中會詳細說明這些活動。
-* 第四個索引標籤包含依賴指定事件的活動，例如收到電子郵件或檔案到達伺服器。 在[事件活動](../../workflow/using/about-event-activities.md)中會詳細說明這些活動。
+* 第一個標籤包含定位和資料操控活動。 在[目標活動](about-targeting-activities.md)中會詳細說明這些活動。
+* 第二個索引標籤包含排程活動，主要用於協調其他活動。 在[流量控制活動](about-flow-control-activities.md)中詳細介紹了這些活動。
+* 第三個索引標籤包含可在工作流程中使用的工具和動作。 在[動作活動](about-action-activities.md)中會詳細說明這些活動。
+* 第四個索引標籤包含依賴指定事件的活動，例如收到電子郵件或檔案到達伺服器。 在[事件活動](about-event-activities.md)中會詳細說明這些活動。
 
 建立圖表的方式
 
@@ -104,7 +106,7 @@ ht-degree: 3%
 
 * **影像管理**
 
-   您可以自訂圖表的背景影像，以及與各種活動相關的背景影像。 請參閱[管理活動影像](../../workflow/using/managing-activity-images.md)。
+   您可以自訂圖表的背景影像，以及與各種活動相關的背景影像。 請參閱[管理活動影像](managing-activity-images.md)。
 
 ## 設定活動 {#configuring-activities}
 
@@ -112,7 +114,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[此區段](../../workflow/using/about-activities.md)中會詳細說明促銷活動工作流程活動。
+>[此區段](about-activities.md)中會詳細說明促銷活動工作流程活動。
 
 第一個索引標籤包含基本設定。 **[!UICONTROL Advanced]**&#x200B;索引標籤包含其他參數，這些參數尤其用於定義發生錯誤時的行為、指定活動的執行持續時間以及輸入初始化指令碼。
 
@@ -120,17 +122,17 @@ ht-degree: 3%
 
 ![](assets/example1-comment.png)
 
-## 目標工作流程{#targeting-workflows}
+## 目標工作流程 {#targeting-workflows}
 
 目標工作流程可讓您建立數個傳送目標。 由於工作流活動，您可以建立查詢、根據特定條件定義聯合或排除、新增排程。 此定位的結果可自動轉移至清單，作為傳送動作的目標
 
-除了這些活動，資料管理選項還可讓您控制資料並存取進階功能，以滿足複雜的鎖定目標問題。 有關詳細資訊，請參閱[資料管理](../../workflow/using/targeting-data.md#data-management)。
+除了這些活動，資料管理選項還可讓您控制資料並存取進階功能，以滿足複雜的鎖定目標問題。 有關詳細資訊，請參閱[資料管理](targeting-data.md#data-management)。
 
 您可以在第一個工作流程索引標籤中找到所有這些活動。
 
 >[!NOTE]
 >
->在[此區段](../../workflow/using/about-activities.md)中會詳細說明鎖定目標活動。
+>在[此區段](about-activities.md)中會詳細說明鎖定目標活動。
 
 您可以透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]**&#x200B;節點或首頁的&#x200B;**[!UICONTROL Profiles and Targets > Targeting workflows]**&#x200B;功能表，建立及編輯目標工作流程。
 
@@ -138,17 +140,17 @@ ht-degree: 3%
 
 所有行銷活動工作流程都會儲存行銷活動架構內的目標工作流程。
 
-### 建立目標工作流{#implementation-steps-}的關鍵步驟
+### 建立目標工作流程的關鍵步驟 {#implementation-steps-}
 
 建立目標工作流程的步驟在以下章節中詳細說明：
 
-1. **** 識別資料庫中的資料 — 請參閱 [建立查詢](../../workflow/using/targeting-data.md#creating-queries)
-1. **** 滿足傳遞需求的Preparedata — 請參閱 [豐富和修改資料](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **** 使用資料執行更新或傳送內 — 請參閱 [更新資料庫](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **** 識別資料庫中的資料 — 請參閱 [建立查詢](targeting-data.md#creating-queries)
+1. **** 滿足傳遞需求的Preparedata — 請參閱 [豐富和修改資料](targeting-data.md#enriching-and-modifying-data)
+1. **** 使用資料執行更新或傳送內 — 請參閱 [更新資料庫](how-to-use-workflow-data.md#updating-the-database)
 
-鎖定目標期間執行的所有擴充和所有處理結果都會儲存在個人化欄位中，且可供存取，尤其是用於建立個人化訊息時。 如需詳細資訊，請參閱[Target資料](../../workflow/using/data-life-cycle.md#target-data)
+鎖定目標期間執行的所有擴充和所有處理結果都會儲存在個人化欄位中，且可供存取，尤其是用於建立個人化訊息時。 如需詳細資訊，請參閱[Target資料](data-life-cycle.md#target-data)
 
-### 定位和篩選維度{#targeting-and-filtering-dimensions}
+### 定位和篩選維度 {#targeting-and-filtering-dimensions}
 
 在資料分段作業期間，目標索引鍵會對應至篩選維度。 目標維度可讓您定義作業鎖定的母體：收件者、合約受益人、營運商、訂閱者等。 篩選維度可讓您根據特定條件選取母體：合約持有者、電子報訂閱者等
 
@@ -166,15 +168,15 @@ ht-degree: 3%
 
 ![](assets/query_filter_target_dimensions_2.png)
 
-## 促銷活動工作流程{#campaign-workflows}
+## 行銷活動工作流程 {#campaign-workflows}
 
 對於每個促銷活動，您可以建立要從&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;標籤執行的工作流程。 這些工作流程是行銷活動專屬的。
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-此索引標籤包含與所有工作流程相同的活動。 [瞭解更多](#implementation-steps-)
+此索引標籤包含與所有工作流程相同的活動。 [深入瞭解](#implementation-steps-)
 
-除了鎖定目標促銷活動，促銷活動工作流程還可讓您建立和設定所有可用管道的傳送。 在工作流程中建立後，這些傳送即可從促銷活動的控制面板中使用。 [瞭解更多](../../campaign/using/marketing-campaign-deliveries.md)
+除了鎖定目標促銷活動，促銷活動工作流程還可讓您建立和設定所有可用管道的傳送。 在工作流程中建立後，這些傳送即可從促銷活動的控制面板中使用。 [深入瞭解](../../campaign/using/marketing-campaign-deliveries.md)
 
 所有促銷活動工作流程都集中在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**&#x200B;節點下。
 
@@ -194,13 +196,13 @@ Adobe Campaign提供立即可用的技術工作流程。 這些操作或作業�
 
 >[!NOTE]
 >
->隨每個模組安裝的技術工作流程清單可在專用區段[中取得。](../../workflow/using/about-technical-workflows.md)
+>隨每個模組安裝的技術工作流程清單可在專用區段[中取得。](about-technical-workflows.md)
 
 您可以在樹結構的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;節點中建立其他技術工作流。 不過，此程式會保留給專家使用者。
 
-提供的活動與目標工作流程的相同。 [瞭解更多](#implementation-steps-)
+提供的活動與目標工作流程的相同。 [深入瞭解](#implementation-steps-)
 
-## 工作流模板{#workflow-templates}
+## 工作流程範本 {#workflow-templates}
 
 工作流程範本包含屬性的整體設定，以及圖表中串連的可能範圍活動。 此設定可重複用於建立包含特定數量之預先設定元素的新工作流程
 

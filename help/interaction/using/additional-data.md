@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # 其他資料{#additional-data}
 
+![](../../assets/v7-only.svg)
+
 在呼叫互動引擎期間，您可以傳輸內容相關的其他資訊。 此資料可來自儲存在工作流程（傳出通道）工作表中的目標資料，或網站在呼叫（傳入通道）期間傳送的呼叫資料。 您可以在適用性規則、優惠方案個人化中使用此額外資料，也可以將其儲存在主張表格中。
 
 對於入站通道，例如恢復咨詢優惠方案的人員的瀏覽器語言或呼叫中心代理的名稱等資訊可能很有用。 然後，您可以在適用性規則中使用此呼叫資料，只向以法文或英文檢視網頁的使用者提供優惠方案。
 
 在目標工作流程（傳出通道）中，您可以在呼叫引擎期間使用目標資料。 例如，您可以透過FDA，以收件者連結交易或外部資料庫的資料來擴充目標。
 
-## 其他資料配置{#additional-data-configuration}
+## 其他資料配置 {#additional-data-configuration}
 
 您必須擴展連結到環境的&#x200B;**nms:interaction**&#x200B;架構，並聲明在調用交互引擎期間將使用的附加欄位清單。 建立適用性規則或個人化優惠方案時，可從&#x200B;**Interaction**&#x200B;節點存取這些欄位（請參閱[使用其他資料](#using-additional-data)）。
 
@@ -60,9 +62,9 @@ ht-degree: 0%
 </element>
 ```
 
-## 其他資料實施{#additional-data-implementation}
+## 其他資料實作 {#additional-data-implementation}
 
-### 輸入通道（網頁）{#input-channel--web-page-}
+### 輸入通道（網頁） {#input-channel--web-page-}
 
 若要在呼叫引擎時傳輸其他資料，您必須將&#x200B;**interactionGlobalCtx**&#x200B;變數新增至網頁的JavaScript程式碼中。 將包含呼叫資料的&#x200B;**Interaction**&#x200B;節點插入此變數。 您必須遵循&#x200B;**nms:interaction**&#x200B;架構中的相同xml結構。 請參閱：[其他資料配置](#additional-data-configuration)。
 
@@ -70,13 +72,13 @@ ht-degree: 0%
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 ```
 
-### 輸出通道{#output-channel}
+### 輸出通道 {#output-channel}
 
 您必須通過遵循與&#x200B;**nms:interaction**&#x200B;架構中相同的xml結構和相同的內部名稱，建立載入工作表中其他資料的目標工作流。 請參閱：[其他資料配置](#additional-data-configuration)。
 
-## 使用其他資料{#using-additional-data}
+## 使用其他資料 {#using-additional-data}
 
-### 適用性規則{#eligibility-rules}
+### 適用性規則 {#eligibility-rules}
 
 您可以在優惠方案、類別和權重的適用性規則中使用其他資料。
 

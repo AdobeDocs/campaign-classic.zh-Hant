@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 使用立方體來探索資料{#using-cubes-to-explore-data}
+
+![](../../assets/common.svg)
 
 Marketing Analytics可讓您更輕鬆建立報表，以及透過立方體從資料庫中識別和選取資料。 這可讓您：
 
@@ -25,15 +27,15 @@ Marketing Analytics可讓您更輕鬆建立報表，以及透過立方體從資�
 >
 >建立或修改多維度資料集時，必須使用Marketing Analytics。 有關詳細資訊，請參閱[關於立方體](../../reporting/using/about-cubes.md)。
 
-## 探索報表{#exploring-the-data-in-a-report}中的資料
+## 探索報表中的資料 {#exploring-the-data-in-a-report}
 
-### 步驟1 — 根據多維資料集{#step-1---creating-a-report-based-on-a-cube}建立報表
+### 步驟1 — 根據多維資料集建立報表 {#step-1---creating-a-report-based-on-a-cube}
 
 要根據多維資料集建立報表，請按一下&#x200B;**[!UICONTROL Reports]**&#x200B;頁簽中的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，並選擇要使用的多維資料集。
 
 此程式的詳細說明如下：[根據多維資料集](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)建立報表。
 
-### 步驟2 — 選擇行和列{#step-2---selecting-lines-and-columns}
+### 步驟2 — 選擇行和列 {#step-2---selecting-lines-and-columns}
 
 預設顯示會顯示多維資料集的前兩個維度（在此例中是年齡和城市）。
 
@@ -72,7 +74,7 @@ Marketing Analytics可讓您更輕鬆建立報表，以及透過立方體從資�
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### 步驟3 — 將測量配置為顯示{#step-3---configuring-the-measures-to-display}
+### 步驟3 — 設定顯示的測量 {#step-3---configuring-the-measures-to-display}
 
 行和列就位後，指明要顯示的測量及其顯示模式。
 
@@ -118,7 +120,7 @@ Marketing Analytics可讓您更輕鬆建立報表，以及透過立方體從資�
 
    然後按一下&#x200B;**[!UICONTROL Edit the dynamic measure]**&#x200B;以存取設定功能表。
 
-## 建立目標人口{#building-a-target-population}
+## 建立目標人口 {#building-a-target-population}
 
 使用立方體建立報表，可讓您從表格收集資料並儲存在清單中。
 
@@ -154,11 +156,11 @@ Marketing Analytics可讓您更輕鬆建立報表，以及透過立方體從資�
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## 在報表{#inserting-a-pivot-table-into-a-report}中插入透視表
+## 在報表中插入樞紐表格 {#inserting-a-pivot-table-into-a-report}
 
 要建立表並瀏覽多維資料集中的資料，請應用以下步驟：
 
-1. 使用單頁建立新報表，並插入樞紐表格。 有關詳細資訊，請參見[此頁面](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)。
+1. 使用單頁建立新報表，並插入樞紐表格。 如需詳細資訊，請參閱[此頁面](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)。
 
    ![](assets/s_advuser_cube_in_report_01.png)
 

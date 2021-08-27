@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # 關於方案參考{#about-schema-reference}
+
+![](../../assets/v7-only.svg)
 
 本章說明如何設定擴充功能結構，以擴充Adobe Campaign資料庫的概念資料模型。
 
@@ -42,7 +44,7 @@ ht-degree: 7%
 
 ![](assets/reference_schema_intro.png)
 
-## 架構的語法{#syntax-of-schemas}
+## 結構的語法 {#syntax-of-schemas}
 
 架構的根元素為&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
 
@@ -68,7 +70,7 @@ ht-degree: 7%
 
 **`<element>`**&#x200B;標籤定義實體元素的名稱。 **`<attribute>`** 架構的標籤定義了已連結的標 **`<element>`** 簽中的屬性名稱。
 
-## 架構{#identification-of-a-schema}的標識
+## 方案的標識 {#identification-of-a-schema}
 
 資料結構以其名稱及其命名空間來識別。
 

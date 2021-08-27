@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 資料庫效能{#database-performances}
+
+![](../../assets/v7-only.svg)
 
 大多數效能問題都與資料庫維護相關。 以下是四個主要線索，可幫助您找出效能下降的原因：
 
@@ -30,7 +32,7 @@ ht-degree: 8%
 >
 >如需深入分析，請參閱[Adobe Campaign硬體調整指南](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)。
 
-## 平台配置{#platform-configuration}
+## 平台配置 {#platform-configuration}
 
 不適當的配置可能會影響平台效能。 建議您在&#x200B;**serverConf.xml**&#x200B;檔案中檢查網路配置、平台傳遞選項以及MTA配置。
 

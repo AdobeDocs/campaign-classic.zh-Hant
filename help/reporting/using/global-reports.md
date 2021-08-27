@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 全域報告 {#global-reports}
+
+![](../../assets/common.svg)
 
 這些報告涉及整個資料庫中資料的活動。 若要檢視報表控制面板，請前往&#x200B;**[!UICONTROL Reports]**&#x200B;標籤。
 
@@ -41,7 +43,7 @@ ht-degree: 2%
 * **[!UICONTROL Delivery statistics]** :請參閱傳 [送統計資料](#delivery-statistics)。
 * **[!UICONTROL Breakdown of opens]** :請參閱 [開啟次數劃分](#breakdown-of-opens)。
 
-## 傳送總處理能力 {#delivery-throughput}
+## 傳遞總處理能力 {#delivery-throughput}
 
 此報表包含指定期間整個平台的傳送輸送量資訊。 為了測量傳送訊息的速度，標準是每小時傳送的訊息數量和訊息的大小（以位元/秒為單位）。 在以下範例中，第一個圖表以藍色顯示成功的傳送，以橘色顯示錯誤傳送的次數。
 
@@ -49,7 +51,7 @@ ht-degree: 2%
 
 您可以透過變更時標來設定顯示的值：1小時檢視、3小時檢視、24小時檢視等。 按一下 **[!UICONTROL Refresh]** 以確認您的選取。
 
-## 用戶活動{#user-activities}
+## 使用者活動 {#user-activities}
 
 此報表以圖表形式顯示每半小時、小時或每天開啟、點按和交易的劃分。
 
@@ -61,7 +63,7 @@ ht-degree: 2%
 * **[!UICONTROL Clicks]** :傳遞中連結的點按總次數。取消訂閱連結和鏡像頁面的點按次數並未納入考量。
 * **[!UICONTROL Transactions]** :接收消息後的事務總數。為了考慮事務，必須將事務類型Web追蹤標籤插入到匹配的網頁中。 網路追蹤設定顯示在[此小節](../../configuration/using/about-web-tracking.md)中。
 
-## 傳送失敗和退回的郵件 {#non-deliverables-and-bounces}
+## 傳遞失敗和退回次數 {#non-deliverables-and-bounces}
 
 此報表顯示無法交付項的劃分，以及每個網際網路網域的退信的劃分。
 
@@ -156,7 +158,7 @@ ht-degree: 2%
 * **[!UICONTROL Global rate]** :此比率代表每個版本的訪客劃分，與訪客總數（在所有瀏覽器上）比較。
 * **[!UICONTROL Relative rate]** :此比率代表每個版本的訪客劃分，與訪客總數（在此瀏覽器上）比較。
 
-### 共用至社交網路{#sharing-to-social-networks}
+### 分享至社交網路 {#sharing-to-social-networks}
 
 病毒式行銷可讓傳遞收件者與其聯絡網路共用資訊：他們可以將連結新增至其設定檔(Facebook、Twitter等) 或者給朋友發個資訊。 傳送內會追蹤每個共用和每個對共用資訊的存取。 如需病毒式行銷的詳細資訊，請參閱[此區段](../../delivery/using/viral-and-social-marketing.md)。
 
@@ -191,7 +193,7 @@ ht-degree: 2%
 
 本節包含兩個圖表，分別代表分享活動的劃分和每個社交網路開啟的次數。
 
-## 共用活動統計資料{#statistics-on-sharing-activities}
+## 共用活動統計 {#statistics-on-sharing-activities}
 
 此報表顯示分享至社交網路(Facebook、Twitter、電子郵件等)的演變 及時。
 
@@ -244,7 +246,7 @@ ht-degree: 2%
 * **[!UICONTROL Global rate]** :此比率代表訪客（每個版本）與整個作業系統中訪客總數的劃分。
 * **[!UICONTROL Relative rate]** :此比率代表訪客（每個版本）與此作業系統的訪客總數之比較。
 
-## 訂閱追蹤{#subscription-tracking}
+## 訂閱追蹤 {#subscription-tracking}
 
 此報告可讓您監視資訊服務的訂閱。 它會顯示訂閱和取消訂閱。
 
@@ -270,7 +272,7 @@ ht-degree: 2%
 
 此圖表顯示相關期間訂閱和取消訂閱的演變。
 
-## 傳送統計資料{#delivery-statistics}
+## 傳送統計資料 {#delivery-statistics}
 
 此報表依網際網路網域、處理及傳送的所有訊息、硬退信、開啟、點按和取消訂閱顯示劃分。
 
@@ -291,7 +293,7 @@ ht-degree: 2%
 * **[!UICONTROL Clicks]** :至少按一下傳送一次的人數百分比，與成功處理的訊息數量相比。
 * **[!UICONTROL Unsubscription]** :取消訂閱連結的點按次數與成功處理的訊息次數的百分比。
 
-## 開啟次數{#breakdown-of-opens}
+## 開啟次數劃分 {#breakdown-of-opens}
 
 此報表依作業系統、裝置和瀏覽器顯示相關期間的開啟次數劃分。 對於每個類別，會使用兩個圖表。 第一個會顯示有關電腦和行動裝置上開啟的統計資料。 第二個則只顯示與行動裝置上開啟次數相關的統計資料。
 

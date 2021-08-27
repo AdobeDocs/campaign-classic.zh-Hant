@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # 在您的網站中插入標籤{#inserting-tags-in-your-site}
 
-## 簡單方法{#simple-method}
+![](../../assets/v7-only.svg)
+
+## 簡單方法 {#simple-method}
 
 此方法包括透過在您要追蹤之網頁的HTML原始碼中插入&#x200B;**`<img>`** HTML標籤，將HTTP呼叫傳送至重新導向伺服器。
 
@@ -37,7 +39,7 @@ ht-degree: 5%
 
 但是，使用TRANSACTION類型標籤時，必須使用JavaScript修改示例標籤，以插入事務資訊（金額、項目數）和擴展架構定義的任何資訊。
 
-### 標籤{#static-insertion-of-tags}的靜態插入
+### 標籤的靜態插入 {#static-insertion-of-tags}
 
 若要執行靜態標籤插入，只需將主控台產生或手動建構的標籤複製並貼到網頁來源即可。
 
@@ -85,7 +87,7 @@ ht-degree: 5%
 </html>
 ```
 
-### 動態產生網頁追蹤標籤{#dynamic-generation-of-web-tracking-tags}
+### 動態產生網頁追蹤標籤 {#dynamic-generation-of-web-tracking-tags}
 
 動態產生網頁時，您可以在頁面產生時新增網頁追蹤標籤。
 
@@ -122,7 +124,7 @@ ht-degree: 5%
 </html>
 ```
 
-## 最佳方法{#optimum-method-}
+## 最佳化方法 {#optimum-method-}
 
 如果您希望控制發送到重定向伺服器的資訊，最可靠的方法是使用頁面生成語言自行同步執行HTTP查詢。
 

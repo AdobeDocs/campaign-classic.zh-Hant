@@ -6,28 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 17%
 
 ---
 
-# 參數元素{#parameters--element}
+# 參數元素 {#parameters--element}
 
-## 內容模型{#content-model-13}
+![](../../../assets/v7-only.svg)
+
+## 內容模型 {#content-model-13}
 
 參數：==param
 
-## 屬性{#attributes-13}
+## 屬性 {#attributes-13}
 
 無
 
-## 父級{#parents-13}
+## 父母 {#parents-13}
 
 `<method>`
 
-## 子項{#children-13}
+## 兒童 {#children-13}
 
 `<param>`
 
@@ -35,11 +37,11 @@ ht-degree: 17%
 
 此元素定義一組`<parameter>`元素。
 
-## 使用與使用內容{#use-and-context-of-use-8}
+## 使用與使用內容 {#use-and-context-of-use-8}
 
 此元素是強制元素，即使是`<method>`元素的單一`<param>`子元素亦然。
 
-## 屬性說明{#attribute-description-13}
+## 屬性說明 {#attribute-description-13}
 
 無
 

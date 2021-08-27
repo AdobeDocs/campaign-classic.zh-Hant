@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 46801f78-706c-4dfa-bce7-3d15f569f222
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 架構 {#architecture}
+
+![](../../assets/common.svg)
 
 工作流程由特定模組處理。 此模組可在多個伺服器上啟動，以共用處理負載。
 

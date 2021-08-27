@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 更新資料庫結構{#updating-the-database-structure}
+
+![](../../assets/v7-only.svg)
 
 若要將修改套用至結構，請啟動資料庫更新精靈。 可透過&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;存取此精靈。 它檢查資料庫的物理結構是否與其邏輯描述匹配，並執行SQL更新指令碼。
 

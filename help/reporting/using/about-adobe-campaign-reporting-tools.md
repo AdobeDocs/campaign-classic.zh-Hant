@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 19%
@@ -14,6 +14,8 @@ ht-degree: 19%
 ---
 
 # 開始使用報告功能 {#about-adobe-campaign-reporting-tools}
+
+![](../../assets/common.svg)
 
 除了[內建報表](../../reporting/using/about-campaign-built-in-reports.md),Adobe Campaign還可讓您在不同內容中產生報表，以符合不同的需求。 本檔案詳細說明了使用原則和實施模式。
 

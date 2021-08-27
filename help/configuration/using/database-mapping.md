@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 資料庫對應{#database-mapping}
+
+![](../../assets/v7-only.svg)
 
 我們示例架構的SQL映射提供了以下XML文檔：
 
@@ -81,7 +83,7 @@ SQL欄位約束如下：
 * 數值和日期欄位中沒有空值，
 * 數值欄位已初始化為0。
 
-## XML欄位{#xml-fields}
+## XML欄位 {#xml-fields}
 
 預設情況下，任何類型的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素都映射到資料架構表的SQL欄位。 但是，您可以在XML中引用此欄位，而不是SQL，這意味著資料儲存在包含所有XML欄位值的表的備忘錄欄位(&quot;mData&quot;)中。 這些資料的儲存是一個XML文檔，用於觀察架構結構。
 
@@ -107,7 +109,7 @@ SQL欄位約束如下：
 
 主要缺點是無法對XML欄位進行索引或篩選。
 
-## 索引欄位{#indexed-fields}
+## 索引欄位 {#indexed-fields}
 
 索引可讓您最佳化應用程式中使用的SQL查詢的效能。
 
@@ -174,7 +176,7 @@ SQL欄位約束如下：
    </srcSchema>
    ```
 
-## 密鑰管理{#management-of-keys}
+## 密鑰管理 {#management-of-keys}
 
 表必須至少具有一個用於標識表中記錄的鍵。
 
@@ -287,7 +289,7 @@ SQL欄位約束如下：
    </schema>
    ```
 
-### 自動增量鍵{#auto-incremental-key}
+### 自動增量密鑰 {#auto-incremental-key}
 
 大部分Adobe Campaign表的主鍵是資料庫引擎自動生成的32位長整數。 鍵值的計算取決於一個序列（預設情況下，**XtkNewId** SQL函式），該序列生成的數字在整個資料庫中是唯一的。 在插入記錄時自動輸入密鑰的內容。
 
@@ -343,7 +345,7 @@ SQL欄位約束如下：
 >
 >在建立表時自動插入主鍵設定為0的記錄。 此記錄用於避免對卷表無效的外連接。 預設情況下，所有外鍵都使用值0初始化，以便在資料項未填充時始終在連接時返回結果。
 
-## 連結：表{#links--relation-between-tables}的關係
+## 連結：表之間的關係 {#links--relation-between-tables}
 
 連結描述了一個表和另一個表之間的關聯。
 
@@ -504,7 +506,7 @@ SQL欄位約束如下：
 
 預設值返回在「DefaultFolder(&#39;nmsFolder&#39;)」函式中輸入的第一個合格參數類型檔案的標識符。
 
-### 範例4 {#example-5}
+### 範例5 {#example-5}
 
 在此範例中，我們想在連結（「company」至「cus:company」架構）上建立索引鍵，其中包含&#x200B;**xlink**&#x200B;屬性，以及(「email」)表格的欄位：
 

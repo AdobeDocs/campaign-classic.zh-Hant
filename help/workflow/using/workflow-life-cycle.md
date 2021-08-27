@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 工作流程生命週期 {#workflow-life-cycle}
+
+![](../../assets/common.svg)
 
 工作流程週期有三個主要步驟。
 
@@ -41,4 +43,4 @@ ht-degree: 2%
 
 運算子管理在此[節](../../platform/using/access-management.md)中有詳細說明。
 
-有關如何監視工作流的詳細資訊，請參閱[此部分](../../workflow/using/monitoring-workflow-execution.md)。
+有關如何監視工作流的詳細資訊，請參閱[此部分](monitoring-workflow-execution.md)。

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # 篩選結構{#filtering-schemas}
 
-## 系統篩選器{#system-filters}
+![](../../assets/v7-only.svg)
+
+## 系統篩選器 {#system-filters}
 
 您可以根據特定使用者的權限，篩選結構存取權。 系統篩選器可讓您使用&#x200B;**readAccess**&#x200B;和&#x200B;**writeAccess**&#x200B;參數，管理結構中詳細實體的讀取和寫入權限。
 
@@ -61,7 +63,7 @@ ht-degree: 0%
 >
 >如果未指定篩選器，則所有運算子都具有架構的讀取和寫入權限。
 
-## Protect內建結構{#protecting-built-in-schemas}
+## Protect內建結構 {#protecting-built-in-schemas}
 
 預設情況下，內建結構僅可對具有「管理」權限的操作員使用「寫入」權限進行訪問：
 
@@ -100,7 +102,7 @@ ht-degree: 0%
 >
 >**xtk:sessionInfo**&#x200B;架構的讀取和寫入權限僅可由Adobe Campaign例項的內部帳戶存取。
 
-## 修改內置架構{#modifying-system-filters-of-built-in-schemas}的系統篩選器
+## 修改內建結構的系統篩選器 {#modifying-system-filters-of-built-in-schemas}
 
 您仍可以修改現成可用結構的系統篩選器，這些架構預設會因與舊版的相容性問題而受到保護。
 

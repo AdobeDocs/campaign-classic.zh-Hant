@@ -5,17 +5,23 @@ description: 進一步了解社交行銷技術工作流程
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 5%
+source-wordcount: '118'
+ht-degree: 6%
 
 ---
 
 
 # 社交行銷{#social-marketing}
 
-依預設，下列詳細的工作流程會與&#x200B;**Social Marketing**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../social/using/starting-workflows.md)。
+![](../../assets/common.svg)
+
+>[!AVAILABILITY]
+>
+>:warning: 此功能僅適用於Campaign Classicv7。[深入瞭解](../../social/using/about-social-marketing.md)
+
+依預設，下列詳細的工作流程會與&#x200B;**Social Marketing**&#x200B;模組一起安裝。
 
 <table> 
  <tbody> 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 其他參數{#additional-parameters}
 
-## 參數{#definition-of-parameters}的定義
+![](../../assets/v7-only.svg)
+
+## 參數定義 {#definition-of-parameters}
 
 您的Adobe Campaign平台提供兩個TRANSACTION類型的網頁追蹤參數作為標準：
 
@@ -42,7 +44,7 @@ ht-degree: 1%
 
 您可以設定追蹤記錄清單（傳遞者或收件者），以顯示這些參數的值。
 
-## 重定向伺服器配置{#redirection-server-configuration}
+## 重定向伺服器配置 {#redirection-server-configuration}
 
 在伺服器設定中，您可以定義要納入網頁追蹤參數的字元數上限。
 

@@ -5,7 +5,7 @@ description: 了解如何將Adobe Experience Platform受眾內嵌至Campaign Cla
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # 將Adobe Experience Platform區段內嵌至Campaign {#destinations}
+
+![](../../assets/common.svg)
 
 若要將Adobe Experience Platform內嵌至Campaign並在工作流程中使用，您必須先以Adobe Experience Platform **Destination**&#x200B;的形式連線Adobe Campaign，並以要匯出的區段來設定它。
 

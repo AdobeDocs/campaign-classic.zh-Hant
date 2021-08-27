@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # 開始使用Campaign伺服器設定{#gs-campaign-server-config}
 
+![](../../assets/v7-only.svg)
+
 本章詳細說明可執行以符合您的需求和環境特異性的伺服器端配置。
 
 ## 限制
 
 這些程式限制為&#x200B;**內部部署**/**混合**&#x200B;部署，並需要管理權限。
 
-對於&#x200B;**托管**&#x200B;部署，伺服器端設定僅能由Adobe設定。 不過，有些設定可在[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)內設定，例如IP允許清單管理或URL權限。 [瞭解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)。
+對於&#x200B;**托管**&#x200B;部署，伺服器端設定僅能由Adobe設定。 不過，有些設定可在[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)內設定，例如IP允許清單管理或URL權限。 [深入瞭解](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)。
 
 如需詳細資訊，請參閱下列章節：
 
@@ -57,7 +59,7 @@ Campaign Classic配置檔案儲存在Adobe Campaign安裝資料夾的&#x200B;**c
 * [自動處理重新啟動](#automatic-process-restart)
 
 
-## 內部標識符{#internal-identifier}
+## 內部識別碼 {#internal-identifier}
 
 **internal**&#x200B;標識符是用於安裝、管理和維護目的的技術登錄。 此登入不與執行個體相關聯。
 
@@ -81,7 +83,7 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## 啟用進程{#enabling-processes}
+## 啟用流程 {#enabling-processes}
 
 伺服器上的Adobe Campaign程式會透過&#x200B;**config-default.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**&#x200B;檔案啟用（和停用）。
 
@@ -136,7 +138,7 @@ Confirmation: XXXX
    有關詳細資訊，請參閱[個人化參數](../../installation/using/installing-packages-with-linux.md#personalizing-parameters)。
 
 
-## 動態頁面安全性和中繼{#dynamic-page-security-and-relays}
+## 動態頁面安全性和中繼 {#dynamic-page-security-and-relays}
 
 預設情況下，所有動態頁都自動與啟動Web模組的電腦的&#x200B;**local** Tomcat伺服器相關。 此配置在&#x200B;**ServerConf.xml**&#x200B;檔案的查詢中繼配置的&#x200B;**`<url>`**&#x200B;部分中輸入。
 
@@ -188,7 +190,7 @@ Adobe Campaign使用下列JSP頁：
 >
 >值應根據您的配置和網路限制進行調整，尤其是如果已為您的安裝開發了特定配置。
 
-### 管理HTTP標題{#managing-http-headers}
+### 管理HTTP標題 {#managing-http-headers}
 
 依預設，不會中繼所有HTTP標題。 您可以在中繼傳送的回覆中新增特定標題。 操作步驟：
 
@@ -205,7 +207,7 @@ Adobe Campaign使用下列JSP頁：
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## 限制授權的外部命令{#restricting-authorized-external-commands}
+## 限制授權的外部命令 {#restricting-authorized-external-commands}
 
 從8780組建版本，技術管理員可限制可在Adobe Campaign中使用的授權外部命令清單。
 
@@ -251,7 +253,7 @@ sh
 >您不應使用自訂sudo。 需要在系統上安裝標準sudo。
 
 
-## 冗餘跟蹤{#redundant-tracking}
+## 冗餘跟蹤 {#redundant-tracking}
 
 當使用多個伺服器進行重新導向時，它們必須能夠通過SOAP呼叫彼此通信，以便共用要重新導向的URL中的資訊。 在發送啟動時，可能並非所有重定向伺服器都可用；因此，他們可能沒有相同層級的資訊。
 
@@ -274,7 +276,7 @@ sh
 
 
 
-## 高可用性工作流程和相關性{#high-availability-workflows-and-affinities}
+## 高可用性工作流程和相關性 {#high-availability-workflows-and-affinities}
 
 您可以配置多個工作流伺服器(wfserver)，並在兩台或多台電腦上分發它們。 如果您選擇此類型的架構，請根據Adobe Campaign存取權設定負載平衡器的連線模式。
 
@@ -315,7 +317,7 @@ sh
    <wfserver autoStart="true" affinity="XXX"/>
    ```
 
-## 自動重新啟動{#automatic-process-restart}
+## 自動重新啟動 {#automatic-process-restart}
 
 依預設，不同的Adobe Campaign程式會每天早上6:00（伺服器時間）自動重新啟動。
 

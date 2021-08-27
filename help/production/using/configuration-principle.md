@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 設定原則{#configuration-principle}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign平台以例項概念為基礎，與Apache使用的虛擬主機概念類似。 此操作模式可讓您指派數個執行個體來共用伺服器。 實例之間完全分離，並使用其自己的資料庫和配置檔案操作。
 

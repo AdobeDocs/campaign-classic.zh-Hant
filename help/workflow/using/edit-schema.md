@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: d26966a8-b5db-4fa4-85ec-7ebd770c4ef3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 編輯方案{#edit-schema}
+
+![](../../assets/common.svg)
 
 可使用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活動來轉換、標準化資料，並在必要時擴充工作流程。 它通常用於標準化資料結構：例如，您可以計算欄位或匯總的平均值，以重新命名輸出欄或修改其內容。
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # 使用內容{#using-the-context}
 
+![](../../assets/common.svg)
+
 當您想以&#x200B;**[!UICONTROL tables]**&#x200B;或&#x200B;**[!UICONTROL charts]**&#x200B;的形式表示資料時，可從兩個來源獲取資料：新查詢（請參閱[定義資料的直接篩選](#defining-a-direct-filter-on-data)）或報表內容（請參閱[使用內容資料](#using-context-data)）。
 
-## 定義資料{#defining-a-direct-filter-on-data}的直接篩選
+## 定義資料的直接篩選 {#defining-a-direct-filter-on-data}
 
-### 篩選資料{#filtering-data}
+### 篩選資料 {#filtering-data}
 
 建置報表時，使用&#x200B;**[!UICONTROL Query]**&#x200B;類型活動並非必要項目。 您可以直接在組成報表的表格和圖表中篩選資料。
 
@@ -29,7 +31,7 @@ ht-degree: 3%
 
 ![](assets/reporting_filter_data_from_page.png)
 
-### 範例：在圖表{#example--use-a-filter-in-a-chart}中使用篩選器
+### 範例：在圖表中使用篩選器 {#example--use-a-filter-in-a-chart}
 
 在下列範例中，我們希望圖表只顯示居住在法國的收件者設定檔，以及當年購買的收件者設定檔。
 
@@ -45,7 +47,7 @@ ht-degree: 3%
 
 ![](assets/reporting_graph_with_2vars_preview.png)
 
-### 範例：在透視表{#example--use-a-filter-in-a-pivot-table}中使用篩選器
+### 範例：在透視表中使用篩選器 {#example--use-a-filter-in-a-pivot-table}
 
 在此範例中，篩選器可讓您在樞紐表格中僅顯示非巴黎客戶，而不預先使用其他查詢。
 
@@ -62,7 +64,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## 使用上下文資料{#using-context-data}
+## 使用內容資料 {#using-context-data}
 
 若要以&#x200B;**[!UICONTROL table]**&#x200B;或&#x200B;**[!UICONTROL chart]**&#x200B;的形式呈現資料，資料可來自報表內容。
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 互動最佳實務{#interaction-best-practices}
+
+![](../../assets/v7-only.svg)
 
 ## 一般性建議 {#general-recommendations}
 
@@ -30,7 +32,7 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 * 優惠方案目錄設計對Adobe Campaign Classic效能有重大影響。
 * 當有許多優惠方案時，將它們分割為數個優惠方案目錄。
 
-### 適用性規則{#eligibility-rules}
+### 適用性規則 {#eligibility-rules}
 
 以下列出資格規則的一些最佳實務。
 
@@ -44,7 +46,7 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 * 建議每個優惠方案空間的優惠方案數量有限。 這可確保更快速地擷取任何指定空間中的選件。
 * 使用索引，尤其是常用的查詢欄。
 
-### 主張表{#proposition-table}
+### 主張表 {#proposition-table}
 
 以下列出有關主張表格的一些最佳實務。
 
@@ -54,11 +56,11 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 * 限制每個目標所請求的主張數。 請勿設定超出您實際要使用的項目。
 * 盡可能避免在規則條件中加入。
 
-## 管理優惠方案的秘訣與技巧{#tips-managing-offers}
+## 管理優惠方案的秘訣與技巧 {#tips-managing-offers}
 
 本節包含管理優惠方案和使用Adobe Campaign Classic中互動模組的更詳細建議。
 
-### 在電子郵件傳送{#multiple-offer-spaces}中使用多個優惠方案空間
+### 在電子郵件傳送中使用多個優惠方案空間 {#multiple-offer-spaces}
 
 將選件納入傳送時，通常會透過擴充活動（或其他類似活動），在促銷活動工作流程的上游選取選件。
 
@@ -84,7 +86,7 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 
 因此，為避免任何問題，建議所有選件空間都定義HTML呈現函式，即使您的選件空間僅需要HTML內容亦然。
 
-### 在命題日誌表{#rank-proposition-log-table}中設定排名
+### 在命題日誌表中設定排名 {#rank-proposition-log-table}
 
 當生成或接受命題時，選件空間能夠將資料儲存在命題表中：
 
@@ -118,7 +120,7 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### 擴展nms:offer方案{#extending-nms-offer-schema}
+### 擴充nms:offer方案 {#extending-nms-offer-schema}
 
 擴充nms:offer結構時，請務必遵循已設定的現成結構：
 * 在`<element name="view">`下為內容儲存定義任何新欄位。

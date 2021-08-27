@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -16,9 +16,11 @@ ht-degree: 1%
 
 # 以 Campaign 使用 MX 伺服器 {#using-mx-servers}
 
+![](../../assets/v7-only.svg)
+
 了解MX伺服器如何與Adobe Campaign Classic搭配運作。
 
-## MX伺服器{#mx-servers}
+## MX伺服器 {#mx-servers}
 
 ### 什麼是MX伺服器？
 

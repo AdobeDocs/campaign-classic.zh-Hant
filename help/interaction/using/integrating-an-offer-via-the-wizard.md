@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -15,12 +15,14 @@ ht-degree: 2%
 
 # 透過精靈整合優惠方案{#integrating-an-offer-via-the-wizard}
 
+![](../../assets/v7-only.svg)
+
 建立傳遞時，有兩種可能的方法可整合選件：
 
 * 在傳送內文中呼叫優惠方案引擎。
 * 透過促銷活動的傳送大綱參考優惠方案。 此方法通常用於紙張促銷活動。
 
-## 呼叫優惠方案引擎{#delivering-with-a-call-to-the-offer-engine}進行傳送
+## 呼叫優惠方案引擎並傳送 {#delivering-with-a-call-to-the-offer-engine}
 
 若要在行銷活動期間呈現優惠方案，只需根據所選管道建立傳統的傳送動作即可。 定義傳送內容時，會按一下工具列中可用的&#x200B;**[!UICONTROL Offers]**&#x200B;圖示來呼叫選件引擎。
 
@@ -28,7 +30,7 @@ ht-degree: 2%
 
 了解更多有關直接郵件傳送[的資訊，請參閱本節](../../delivery/using/about-direct-mail-channel.md)。 在本小節](../../campaign/using/setting-up-marketing-campaigns.md)中深入了解行銷活動[。
 
-### 將選件插入傳送{#main-steps-for-inserting-an-offer-into-a-delivery}的主要步驟
+### 將選件插入傳送的主要步驟 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
 若要將優惠方案主張插入傳遞，請套用下列步驟：
 
@@ -66,7 +68,7 @@ ht-degree: 2%
 
    ![](assets/offer_delivery_010.png)
 
-### 呼叫優惠方案引擎{#parameters-for-calling-offer-engine}的參數
+### 呼叫優惠方案引擎的參數 {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Space]** :選件環境的空間，必須選取該空間才能啟用選件引擎。
 * **[!UICONTROL Category]** :選件排序的特定資料夾。如果未指定類別，除非選取主題，否則選件引擎會考量環境中包含的所有選件。
@@ -75,7 +77,7 @@ ht-degree: 2%
 * **[!UICONTROL Exclude non-eligible recipients]** :此選項可讓您啟用或停用排除沒有足夠合格優惠方案的收件者。合格命題的數量可能低於請求的命題數量。 如果選中此框，則沒有足夠建議的收件者將被排除在傳遞之外。 如果您未選擇此選項，則這些收件者將不會被排除，但他們將沒有請求的數量的建議。
 * **[!UICONTROL Do not display anything if no offer is selected]** :此選項可讓您選擇在其中一個命題不存在時如何處理訊息。核取此方塊時，不會顯示遺漏主張的表示，且此主張的訊息中不會顯示任何內容。 如果未核取方塊，則訊息本身會在傳送期間取消，而收件者將不會再收到任何訊息。
 
-### 在傳送{#inserting-an-offer-proposition-into-a-delivery}中插入優惠方案主張
+### 在傳送中插入優惠方案主張 {#inserting-an-offer-proposition-into-a-delivery}
 
 要呈現的選件表示會透過合併欄位插入傳遞內文。 優惠方案數量在優惠方案引擎呼叫的參數中定義。
 
@@ -83,7 +85,7 @@ ht-degree: 2%
 
 ![](assets/offer_delivery_011.png)
 
-## 使用傳遞大綱{#delivering-with-delivery-outlines}進行傳遞
+## 使用傳遞大綱傳送 {#delivering-with-delivery-outlines}
 
 您也可以使用傳遞大綱在傳遞中呈現選件。
 

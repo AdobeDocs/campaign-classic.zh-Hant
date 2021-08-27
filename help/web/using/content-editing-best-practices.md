@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 內容編輯最佳實務{#content-editing-best-practices}
+
+![](../../assets/common.svg)
 
 為確保編輯者的最佳操作，建議您遵循下列准則：
 
@@ -40,7 +42,7 @@ ht-degree: 6%
 * 確定頁面中只有一個`<body> </body>`。
 * 上傳CSS或JS檔案時，不會上傳.zip檔案中包含的影像。 因此，CSS中對這些影像的參考不會更新。
 
-## 內容編輯器支援的格式{#content-editor-supported-formats}
+## 內容編輯器支援的格式 {#content-editor-supported-formats}
 
 數位內容編輯器支援HTML格式：您可以隨時切換到&#x200B;**source**&#x200B;模式。
 
@@ -69,7 +71,7 @@ ht-degree: 6%
 >
 >HTML代碼頁必須在元標籤（HTML 4或HTML 5）或物料清單中定義。 如果沒有可用的代碼頁，請開啟latin1中的檔案。
 
-## HTML內容狀態{#html-content-statuses}
+## HTML內容狀態 {#html-content-statuses}
 
 編輯器的上方區段顯示與內容狀態相關的訊息。 訊息的顏色代碼如下：
 
@@ -77,7 +79,7 @@ ht-degree: 6%
 * **藍色訊息**:與正在編輯的內容相關的資訊消息。
 * **黃色訊息**:需要代表使用者採取動作的警告或錯誤訊息。
 
-### 編輯Web應用程式{#list-of-messages-when-editing-a-web-application}時的消息清單
+### 編輯Web應用程式時的消息清單 {#list-of-messages-when-editing-a-web-application}
 
 * HTML內容可正常運作。
 * Web應用程式尚未發佈，無法聯機訪問。
@@ -86,7 +88,7 @@ ht-degree: 6%
 * 沒有要配置的輸入區域或按鈕。
 * 若要啟用轉變至下一頁，您必須將「下一頁」動作連結至目前頁面上的按鈕或連結。
 
-### 編輯傳送{#list-of-messages-when-editing-a-delivery}時的訊息清單
+### 編輯傳送時的訊息清單 {#list-of-messages-when-editing-a-delivery}
 
 * 傳遞內容可正常運作
 * 沒有要設定的欄位或個人化區塊。

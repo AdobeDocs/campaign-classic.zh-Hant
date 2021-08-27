@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 獨立部署{#standalone-deployment}
+
+![](../../assets/v7-only.svg)
 
 此配置包括同一電腦上的所有元件：
 
@@ -55,7 +57,7 @@ ht-degree: 3%
 * 廣播時應用程式可能會變慢。
 * 應用程式伺服器必須可從外部（例如位於DMZ中）使用，因為它承載重定向伺服器。
 
-## 安裝和配置步驟{#installation-and-configuration-steps}
+## 安裝和配置步驟 {#installation-and-configuration-steps}
 
 ### 先決條件 {#prerequisites}
 
@@ -76,7 +78,7 @@ ht-degree: 3%
 * DNS掩碼：**console.campaign.net***（僅用於用戶端主控台連線和報表）
 * 資料庫：**campaign:demo@dbsrv**
 
-### 安裝和配置（單台電腦）{#installing-and-configuring--single-machine-}
+### 安裝和配置（單台電腦） {#installing-and-configuring--single-machine-}
 
 應用以下步驟：
 
@@ -162,7 +164,7 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱[Campaign伺服器設定](../../installation/using/configuring-campaign-server.md)。
 
-1. 將客戶端控制台安裝程式（**setup-client-7.XX**、v7的&#x200B;**YYYY.exe**&#x200B;或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**YYYY.exe**）複製到&#x200B;**/datakit/nl/eng/jsp/**&#x200B;資料夾。 [瞭解更多](../../installation/using/client-console-availability-for-windows.md)。
+1. 將客戶端控制台安裝程式（**setup-client-7.XX**、v7的&#x200B;**YYYY.exe**&#x200B;或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**YYYY.exe**）複製到&#x200B;**/datakit/nl/eng/jsp/**&#x200B;資料夾。 [深入瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 按照以下各節所述的Web伺服器整合過程(IIS、Apache)操作：
 
@@ -205,7 +207,7 @@ ht-degree: 3%
 
    此URL可讓您存取用戶端設定程式的下載頁面。
 
-   進入訪問控制頁時，輸入&#x200B;**內部**&#x200B;登錄和相關密碼。 [瞭解更多](../../installation/using/client-console-availability-for-windows.md)。
+   進入訪問控制頁時，輸入&#x200B;**內部**&#x200B;登錄和相關密碼。 [深入瞭解](../../installation/using/client-console-availability-for-windows.md)。
 
    ![](assets/s_ncs_install_access_client.png)
 

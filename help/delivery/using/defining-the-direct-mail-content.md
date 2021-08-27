@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 14%
@@ -15,7 +15,9 @@ ht-degree: 14%
 
 # 定義直接郵件內容{#defining-the-direct-mail-content}
 
-## 解壓縮檔案{#extraction-file}
+![](../../assets/common.svg)
+
+## 擷取檔案 {#extraction-file}
 
 在&#x200B;**[!UICONTROL File]**&#x200B;欄位中定義包含已提取資料的檔案的名稱。 欄位右側的按鈕可讓您使用個人化欄位來建立檔案名稱。
 

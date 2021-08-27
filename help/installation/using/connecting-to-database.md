@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 連接到資料庫 {#connecting-to-the-database}
+
+![](../../assets/v7-only.svg)
 
 要啟用與外部資料庫的連接，必須指明連接參數，即目標資料源和表的名稱，以及需要載入的資料。
 
@@ -44,7 +46,7 @@ ht-degree: 2%
 
 您可以在&#x200B;**[!UICONTROL Parameters]**&#x200B;頁簽中為表和索引定義特定的工作表空間。
 
-## 建立臨時連接{#creating-a-temporary-connection}
+## 建立臨時連接 {#creating-a-temporary-connection}
 
 您可以從工作流程活動直接定義外部資料庫的連線。 在此情況下，它將位於本地外部資料庫上，保留用於當前工作流中：不會儲存在外部帳戶上。 可以在工作流的不同活動上建立此類準時連接，特別是&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Data loading (RDBMS)]**、**[!UICONTROL Enrichment]**&#x200B;活動或&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 
@@ -84,7 +86,7 @@ ht-degree: 2%
 
    按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以確認此配置。
 
-## 安全連接{#secure-connection}
+## 安全連接 {#secure-connection}
 
 >[!NOTE]
 >
@@ -96,7 +98,7 @@ ht-degree: 2%
 
 然後，資料會透過安全SSL通訊協定傳送。
 
-## 其他配置 {#additional-configurations}
+## 其他設定 {#additional-configurations}
 
 如有必要，您可以建立用於處理外部資料庫中資料的架構。 同樣地，Adobe Campaign可讓您定義外部表格中資料的對應。 這些設定為一般設定，不專用於工作流程。
 

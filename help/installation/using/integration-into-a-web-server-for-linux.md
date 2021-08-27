@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 與 Linux 網頁伺服器整合{#integration-into-a-web-server-for-linux}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）作為應用程式伺服器中的入口點。
 
@@ -38,7 +40,7 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
 >
 >如果您未使用追蹤功能，則可執行Apache或IIS的標準安裝，並重新導向至Campaign。 不需要追蹤Web伺服器擴充模組。
 
-## 使用Debian {#configuring-the-apache-web-server-with-debian}設定Apache Web伺服器
+## 使用Debian設定Apache Web伺服器 {#configuring-the-apache-web-server-with-debian}
 
 如果您已根據APT在發佈下安裝Apache，則此程式適用。
 
@@ -105,7 +107,7 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
    invoke-rc.d apache2 restart
    ```
 
-## 在RHEL {#configuring-apache-web-server-in-rhel}中配置Apache Web伺服器
+## 在RHEL中配置Apache Web伺服器 {#configuring-apache-web-server-in-rhel}
 
 如果您已在基於RPM（RHEL、CentOS和Suse）的包下安裝並保護Apache，則此過程適用。
 

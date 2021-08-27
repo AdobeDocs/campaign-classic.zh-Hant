@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 同步設定檔{#synchronizing-profiles}
+
+![](../../assets/v7-only.svg)
 
 ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7收到的資料可用於Campaign Standard以建立傳送。 您可以執行下列操作，了解設定檔的同步方式。
 
@@ -73,9 +75,9 @@ ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7�
 
 1. 前往Campaign Standard，然後按一下&#x200B;**[!UICONTROL Marketing Activities]**。
 1. 按一下右上角的&#x200B;**[!UICONTROL Create]**。
-1. 按一下 **[!UICONTROL Workflow]**。
+1. 按一下&#x200B;**[!UICONTROL Workflow]**。
 1. 按一下&#x200B;**[!UICONTROL New workflow]**&#x200B;和&#x200B;**[!UICONTROL Next]**。
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入工作流的名稱，並視需要輸入其他資訊。 按一下 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入工作流的名稱，並視需要輸入其他資訊。 按一下&#x200B;**[!UICONTROL Next]**。
 1. 從左側的&#x200B;**[!UICONTROL Targeting]**，將&#x200B;**[!UICONTROL Query]**&#x200B;目標拖曳至工作區。
 
    ![](assets/acs_connect_profile_sync_05.png)
@@ -109,7 +111,7 @@ ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7�
 
    ![](assets/acs_connect_profile_sync_08.png)
 
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入傳送的名稱，並視需要輸入其他資訊。 按一下 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入傳送的名稱，並視需要輸入其他資訊。 按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/acs_connect_profile_sync_09.png)
 
@@ -118,7 +120,7 @@ ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7�
 
    ![](assets/acs_connect_profile_sync_10.png)
 
-1. 選擇包含要取消訂閱服務的連結的內容。 按一下 **[!UICONTROL Confirm]**。
+1. 選擇包含要取消訂閱服務的連結的內容。 按一下&#x200B;**[!UICONTROL Confirm]**。
 
    ![](assets/acs_connect_profile_sync_11.png)
 
@@ -131,7 +133,7 @@ ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7�
    ![](assets/acs_connect_profile_sync_13.png)
 
 1. 用游標突出顯示文本，然後按一下鏈表徵圖。
-1. 按一下 **[!UICONTROL Link to a landing page]**。
+1. 按一下&#x200B;**[!UICONTROL Link to a landing page]**。
 
    ![](assets/acs_connect_profile_sync_14.png)
 
@@ -143,7 +145,7 @@ ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7�
 
    ![](assets/acs_connect_profile_sync_16.png)
 
-1. 按一下 **[!UICONTROL Create]**。
+1. 按一下&#x200B;**[!UICONTROL Create]**。
 1. 按一下傳送名稱以返回工作流程。
 
    ![](assets/acs_connect_profile_sync_17.png)
