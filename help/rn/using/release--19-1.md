@@ -3,7 +3,7 @@ product: campaign
 title: Campaign 19.1發行說明
 description: Campaign 19.1發行說明
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '3308'
 ht-degree: 25%
@@ -19,7 +19,7 @@ ht-degree: 25%
 _2021年 4 月 15 日_
 
 * 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
-* 修正了可封鎖工作流程資料匯出至FDA資料庫(Teradate,Snowflake)的回歸。
+* 修正了可封鎖工作流程資料匯出至FDA資料庫(Teradata、Snowflake)的回歸。
 
 **僅主控台升級為強制性。不需要升級伺服器。**
 

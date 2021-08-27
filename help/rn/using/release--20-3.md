@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 95%
@@ -169,4 +169,4 @@ _2020 年 10 月 27 日_
 * 修正了在工作流程&#x200B;**「分割」**&#x200B;活動中顯示目標資料餘數時，而造成伺服器當機的問題。
 * 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。(NEO-26856)
 * 修正了在非管理員使用者定義的執行個體變數的擴充活動時所產生的問題。(NEO-25653)
-* 修正了可封鎖工作流程資料匯出至FDA資料庫(Teradate,Snowflake)的回歸。
+* 修正了可封鎖工作流程資料匯出至FDA資料庫(Teradata、Snowflake)的回歸。
