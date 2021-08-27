@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 90%
+source-wordcount: '1160'
+ht-degree: 86%
 
 ---
 
@@ -18,6 +18,15 @@ ht-degree: 90%
 ![](../../assets/v7-only.svg)
 
 本頁面列出 [!DNL Gold Standard] 發行版本。在本頁中](gs-overview.md)進一步瞭解 Campaign [!DNL Gold Standard] [。
+
+## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 第 12 發行版本{#gs-12}
+
+_2021年8月27日_
+
+建置9032@99a3894包含下列修正：
+
+* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具（電子郵件用戶端、網際網路瀏覽器等）的錯誤 處理特殊字元。 URL參數現在已編碼。
+* 修正日期選擇器可能導致控制台顯示封鎖程式錯誤訊息的問題。 (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 第 11 發行版本{#gs-11}
 
