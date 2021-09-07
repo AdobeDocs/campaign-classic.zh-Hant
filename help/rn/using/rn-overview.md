@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後&#x200B;**一個 GA 建置版本** : [[!DNL Gold Standard]  第 11 發行版本](../../rn/using/gold-standard.md)及[ Campaign 21.1.3 版本](../../rn/using/latest-release.md#release-21-1-3-build-9330).
+最後&#x200B;**一個 GA 建置版本** : [[!DNL Gold Standard]  第 12 發行版本](../../rn/using/gold-standard.md)及[ Campaign 21.1.4 版本](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-作為託管 [!DNL Gold Standard] 使用者，您無需採取任何操作，便可自動透過 [!DNL Gold Standard] 升級與 [最新的 GA [!DNL Gold Standard] 建置](../../rn/using/gold-standard.md#gs-11)受益。[了解更多](../../rn/using/gs-overview.md)。
+作為託管 [!DNL Gold Standard] 使用者，您無需採取任何操作，便可自動透過 [!DNL Gold Standard] 升級與 [最新的 GA [!DNL Gold Standard] 建置](../../rn/using/gold-standard.md#gs-12)受益。[了解更多](../../rn/using/gs-overview.md)。
 
 >[!NOTE]
 >在[ GA 相容性矩陣](../../rn/using/compatibility-matrix-gs.md)中提供 [!DNL Gold Standard] 相容性矩陣。

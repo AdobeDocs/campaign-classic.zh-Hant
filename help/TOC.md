@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a066eedd2ba7848f6dcefcb1476a0b834cb1d49a
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 99%
 
 ---
@@ -438,6 +438,7 @@ ht-degree: 99%
       + [訂閱服務](workflow/using/subscription-services.md)
       + [更新資料](workflow/using/update-data.md)
       + [CRM 連結器](workflow/using/crm-connector.md)
+      + [更改資料源](workflow/using/change-data-source.md)
    + 流量控制活動 {#flow-control-activities}
       + [關於流量控制活動](workflow/using/about-flow-control-activities.md)
       + [開始和結束](workflow/using/start-and-end.md)

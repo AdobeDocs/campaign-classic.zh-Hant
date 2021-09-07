@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
+source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 86%
+source-wordcount: '1191'
+ht-degree: 84%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 86%
 本頁面列出 [!DNL Gold Standard] 發行版本。在本頁中](gs-overview.md)進一步瞭解 Campaign [!DNL Gold Standard] [。
 
 ## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 第 12 發行版本{#gs-12}
+
+_2021年9月7日_
+
+建置9032@554dbcd包含以下修正：
+
+* 修正在啟用追蹤的行傳送中開啟連結至Web應用程式時，導致500錯誤的問題。
 
 _2021年8月27日_
 

@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 關於可變PDF文檔 {#about-variable-pdf-documents}
 
-Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案產生變數PDF檔案（適用於電子郵件附件、直接郵件傳送）。
+Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案為電子郵件附件產生變數PDF檔案。
 
 支援下列擴充功能：&quot;。docx&quot;、&quot;。doc&quot;和&quot;。odt&quot;。
 

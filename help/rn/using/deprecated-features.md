@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 98%
+source-wordcount: '1664'
+ht-degree: 97%
 
 ---
 
@@ -80,12 +80,16 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>取代的功能</strong></td> 
   </tr>
   <tr>  
+   <td>報告<br></td>
+   <td><p>在AdobeFlash PlayerEOL後，量規報表和圖表呈現引擎將不再可用。 <a href="../../reporting/using/creating-a-new-report.md">深入瞭解</a></p>
+  </tr>
+  <tr>  
    <td>傳真頻道<br></td>
    <td><p>自 Campaign 21.1.3 版開始，不再提供傳真頻道。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">瞭解更多</a></p>
+  </tr>
   <tr>
   <td>Demdex 網域<br></td>
   <td><p> 自 Campaign 第 21.1.3 發行版本開始，已棄用使用於匯入和匯出對象至 Adobe Experience Cloud 的 Demdex 網域。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">瞭解更多</a></p> 
-  </td>
   </td>
   </tr>
    <tr> 

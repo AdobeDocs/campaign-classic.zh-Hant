@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2403'
+ht-degree: 83%
 
 ---
 
@@ -19,15 +19,65 @@ ht-degree: 99%
 
 本頁列出&#x200B;**最新Campaign Classic版本**&#x200B;的新功能、改善和修正。
 
->[!NOTE]
->
->Campaign **一般可用性 (GA) 版本**&#x200B;包括：[[!DNL Gold Standard] 11 版本](../../rn/using/gold-standard.md#gs-11)和[Campaign 21.1.3 版本](../../rn/using/latest-release.md#release-21-1-3-build-9330)。
+了解[此頁面](rn-overview.md)中的Campaign建置狀態。
 
-## ![](assets/do-not-localize/green_2.png) 發行版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) 發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
+
+_2021年9月7日_
+
+**安全性增強功能**
+
+* 修正了安全性問題，以針對目錄周遊攻擊加強保護。 (NEO-28547)
+
+**功能改善**
+
+* 生命週期結束後，Flash已從所有相關的Campaign功能和元件中移除，並更換為HTML5。 已移除圖表的&#x200B;**儀表**&#x200B;類型。 (NEO-30330)[了解詳情](../../reporting/using/creating-a-chart.md)
+* 在Windows上安裝客戶端控制台時，安裝程式現在會檢查是否有父註冊表節點，如果缺少，則會建立一個。 這可防止啟動主控台時發生潛在問題。 (NEO-34854)
+* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具（電子郵件用戶端、網際網路瀏覽器等）的錯誤 處理特殊字元。 URL參數現在已編碼。
+
+**其他變更**
+
+* 先前已棄用的Microsoft CRM連接器（Office 365和內部部署）已從介面中移除。 [顯示全文](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* 遷移到Tomcat 8後，已更新IIS安裝指令碼，以修正IIS整合問題。 (NEO-31019)
+* 已新增護欄，僅允許[帳單技術工作流程](../../production/using/monitoring-processes.md#billing-report)在行銷執行個體上執行。
+* 已在工作流程轉變「 **檢視母體**」視窗的資料和架構標籤中改善資料來源識別。
+* 已將缺少的資料庫索引添加到以下架構中，以防止出現資料庫更新問題：xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+
+**修補程式**
+
+* 修正當選件連結至傳送時，「熱點點按」報表無法運作的問題。 (NEO-26295)
+* 修正了&#x200B;**Sub-worklow**&#x200B;活動執行未產生輸出表格時的問題。 (NEO-36242)
+* 修正將&#x200B;**描述性分析**&#x200B;報表匯出為PDF時的各種問題。 (NEO-25847)
+* 修正使用外部郵件傳送時，可能導致傳送失敗的問題。 (NEO-37435)
+* 修正使用Web API連線至Microsoft CRM時的錯誤。 由於功能未受影響，因此錯誤訊息已移除。
+* 修正了當mid伺服器設為追蹤和行銷伺服器之間的中繼時，追蹤記錄重複資料刪除的問題。 (NEO-36285)
+* 修正了無法將Vault用作特定代碼儲存區的回歸。
+* 修正當傳入轉變來自FDA資料來源時，無法在&#x200B;**Excrent**&#x200B;工作流程活動中使用變數的問題。
+* 修正可能導致電子郵件訊息中URL損毀的問題。
+
+## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
 
 _2021 年 6 月 5 日_
 
-**新增功能？**
+**有哪些新增功能？**
+
+
+<table>
+<thead>
+<tr>
+<th><strong>新工作流程活動：變更資料來源</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>新的<b>變更資料來源</b>工作流程活動可讓您變更工作流程工作表格的資料來源。 這為管理不同資料來源（FDA和本機資料庫）的資料提供更強大的彈性。</p>
+<p>在 Adobe Campaign 工作流程中，使用工作 (或暫時) 表格來管理資料。 工作流程執行時，工作表格會在各工作流程活動中共用資料。 在預設情況下，工作表格與我們查詢的資料來源建立在同一資料庫上。</p>
+<p>如需詳細資訊，請參閱<a href="../../workflow/using/change-data-source.md">詳細文件</a>，以瞭解詳情。</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
