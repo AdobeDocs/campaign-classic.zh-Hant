@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 97%
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 # 工作流程常見問題集 {#workflows-faq}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 瞭解如何使用 Adobe Campaign 工作流程策劃流程和任務。
 

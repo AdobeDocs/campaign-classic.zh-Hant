@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 96%
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 # Campaign 設定常見問題集 {#settings-faq}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 瞭解主要設定，以配置符合您需求的 Campaign 執行個體。
 

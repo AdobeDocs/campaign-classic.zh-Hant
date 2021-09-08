@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # 開發人員常見問題集 {#dev-faq}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 作為一個開放式解決方案，Adobe Campaign 可進行自訂，以及供進階應用程式開發使用。
 
