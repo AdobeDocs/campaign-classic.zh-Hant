@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 661a53b19e0fd8c6038c0957dbe2656152b0814c
+source-git-commit: a53ad78121c530469dc1fdc1aadd71d7d4426890
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 56%
+source-wordcount: '257'
+ht-degree: 59%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 56%
 
 * **[9月發行版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
 
-* **[Apple Mail 隱私保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/using/apple-mail-privacy-faq.html)**<br/> 回應 Apple iOS 15 發佈的最初指南
+* **[Apple Mail 隱私保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)**<br/> 回應 Apple iOS 15 發佈的最初指南
 
 * **[透過IMS/Adobe ID連線？升級至最新組建](technotes/using/ims-updates.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至在2021年6月30日**&#x200B;之後能夠連線至Campaign **
 
