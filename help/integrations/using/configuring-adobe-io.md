@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >如果您透過oAuth驗證使用舊版Triggers整合，**您需要依照**下方所述移至Adobe I/O。
 >請注意，在移至[!DNL Adobe I/O]期間，某些傳入的觸發器可能會遺失。
 >
->**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須提供[OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
+>**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須[提供OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
 
 ## 先決條件 {#adobe-io-prerequisites}
 
@@ -32,9 +32,8 @@ ht-degree: 3%
 
 開始實施前，請檢查您有：
 
-* 有效的&#x200B;**組織標識符**:Identity Management系統(IMS)組織識別碼是Adobe Experience Cloud內的唯一識別碼，用於訪客ID服務和IMS單一登入(SSO)。 [深入瞭解](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **開發人員存取**&#x200B;至您的組織。 IMS組織的系統管理員需要遵循&#x200B;**將開發人員新增至單一產品設定檔**
-本頁面](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中詳細的[程式，提供與觸發器相關聯的Adobe Analytics產品之`Analytics - {tenantID}`產品設定檔的開發人員存取。
+* 有效的&#x200B;**組織標識符**:Identity Management系統(IMS)組織識別碼是Adobe Experience Cloud內的唯一識別碼，用於訪客ID服務和IMS單一登入(SSO)。 [瞭解更多](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **開發人員存取**&#x200B;至您的組織。 IMS組織的系統管理員需要遵循本頁](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中詳細說明的[程式，將開發人員新增至單一產品設定檔&#x200B;**，以提供與觸發器相關聯的Adobe Analytics產品`Analytics - {tenantID}`產品設定檔的開發人員存取權。**
 
 ## 步驟1:建立/更新Adobe I/O專案 {#creating-adobe-io-project}
 
