@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
 ht-degree: 83%
@@ -55,7 +55,7 @@ _2021年9月7日_
 * 修正當傳入轉變來自FDA資料來源時，無法在&#x200B;**Excrent**&#x200B;工作流程活動中使用變數的問題。
 * 修正可能導致電子郵件訊息中URL損毀的問題。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/orange_2.png) 發行版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
 
 _2021 年 6 月 5 日_
 
