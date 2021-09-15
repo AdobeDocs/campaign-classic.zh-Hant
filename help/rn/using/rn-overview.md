@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 0c6e328087135fd9b35ca6cf0669090be0c93957
+source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 95%
@@ -29,7 +29,7 @@ ht-degree: 95%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後&#x200B;**一個 GA 建置版本** : [[!DNL Gold Standard]  第 12 發行版本](../../rn/using/gold-standard.md)及[ Campaign 21.1.4 版本](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+最後&#x200B;**一個 GA 建置版本** : [[!DNL Gold Standard]  第 11 發行版本](../../rn/using/gold-standard.md#gs-11)及[ Campaign 21.1.4 版本](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
