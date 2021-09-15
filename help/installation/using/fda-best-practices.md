@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 7%
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # 最佳實務和限制
 
-## 使用外部資料{#optimizing-email-personalization-with-external-data}最佳化電子郵件個人化
+![](../../assets/v7-only.svg)
+
+## 使用外部資料最佳化電子郵件個人化 {#optimizing-email-personalization-with-external-data}
 
 您可以在專用的工作流程中預先處理訊息個人化。 若要執行此操作，請使用傳送屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤中提供的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。
 
@@ -23,13 +25,13 @@ ht-degree: 7%
 
 此選項可大幅改善執行個人化步驟時的效能。
 
-## 在工作流{#using-data-from-an-external-database-in-a-workflow}中使用來自外部資料庫的資料
+## 在工作流程中使用來自外部資料庫的資料 {#using-data-from-an-external-database-in-a-workflow}
 
 在多個Adobe Campaign工作流程活動中，您可以使用儲存在外部資料庫中的資料。
 
-* **篩選外部資料**  — 查詢 [](../../workflow/using/targeting-data.md#selecting-data) 活動可讓您新增外部資料，並在定義的篩選設定中使用它。有關詳細資訊，請參見[此頁面](../../workflow/using/targeting-data.md#selecting-data)。
+* **篩選外部資料**  — 查詢 [](../../workflow/using/targeting-data.md#selecting-data) 活動可讓您新增外部資料，並在定義的篩選設定中使用它。如需詳細資訊，請參閱[此頁面](../../workflow/using/targeting-data.md#selecting-data)。
 
-* **建立子集**  — 「拆分」 [](../../workflow/using/split.md) 活動允許您建立子集。您可以使用外部資料來定義要使用的篩選條件。 有關詳細資訊，請參見[此頁面](../../workflow/using/split.md)。
+* **建立子集**  — 「拆分」 [](../../workflow/using/split.md) 活動允許您建立子集。您可以使用外部資料來定義要使用的篩選條件。 如需詳細資訊，請參閱[此頁面](../../workflow/using/split.md)。
 
 * **載入外部資料庫**  — 您可以在資料載入 [](../../workflow/using/data-loading--rdbms-.md) (RDBMS)活動中使用外部資料。在[本頁](../../workflow/using/data-loading--rdbms-.md)中瞭解更多。
 

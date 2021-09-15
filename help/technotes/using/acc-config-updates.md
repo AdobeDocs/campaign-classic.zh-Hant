@@ -5,14 +5,14 @@ description: 技術檔案
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1130'
 ht-degree: 11%
 
 ---
 
-# Adobe Campaign設定更新 — 2021年3月 {#acc-config-updates}
+# Adobe Campaign配置更新2021年 {#acc-config-updates}
 
 ![](../../assets/v7-only.svg)
 
@@ -36,12 +36,12 @@ ht-degree: 11%
 
 如果您的環境的組建比下列的低，您會受到影響：
 
-* 金標11。 [深入瞭解](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版。 [深入瞭解](../../rn/using/latest-release.md)
-* Campaign 20.2.4版。 [深入瞭解](../../rn/using/release--20-2.md)
-* Campaign 20.1.4版。 [深入瞭解](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版。 [深入瞭解](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版。 [深入瞭解](../../rn/using/release--19-1.md)
+* 金標11。 [瞭解更多](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版。 [瞭解更多](../../rn/using/latest-release.md)
+* Campaign 20.2.4版。 [瞭解更多](../../rn/using/release--20-2.md)
+* Campaign 20.1.4版。 [瞭解更多](../../rn/using/release--20-1.md)
+* Campaign 19.2.4版。 [瞭解更多](../../rn/using/release--19-2.md)
+* Campaign 19.1.8版。 [瞭解更多](../../rn/using/release--19-1.md)
 
 在本小節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何檢查您的版本[。
 
@@ -63,10 +63,10 @@ ht-degree: 11%
 
 應安裝下方的&#x200B;**現在可用的**&#x200B;主控台版本，以解析最近識別的回歸。 此回歸會阻止使用用戶端主控台的某些元件，例如傳送中的日期選擇器和影像管理。 **主控** 台升級是必要的。
 
-* 最新Gold Standard 11組建版本9032@10c2709。 [深入瞭解](../../rn/using/gold-standard.md)
-* Campaign 20.1.4版。 [深入瞭解](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版。 [深入瞭解](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版。 [深入瞭解](../../rn/using/release--19-1.md)
+* 最新Gold Standard 11組建版本9032@10c2709。 [瞭解更多](../../rn/using/gold-standard.md)
+* Campaign 20.1.4版。 [瞭解更多](../../rn/using/release--20-1.md)
+* Campaign 19.2.4版。 [瞭解更多](../../rn/using/release--19-2.md)
+* Campaign 19.1.8版。 [瞭解更多](../../rn/using/release--19-1.md)
 
 ## AdobeIdentity Management系統(IMS)更新
 
@@ -78,12 +78,12 @@ Adobe身分識別服務(IMS)將於2021年6月30日起停止支援舊版Internet 
 
 如果您透過Adobe ID](../../integrations/using/about-adobe-id.md)連線至Campaign [，透過AdobeIdentity Management服務(IMS)，必須升級至下列其中一個新版本：
 
-* 金標11。 [深入瞭解](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版。 [深入瞭解](../../rn/using/latest-release.md)
-* Campaign 20.2.5版。 [深入瞭解](../../rn/using/release--20-2.md)
-* Campaign 20.1.4版。 [深入瞭解](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版。 [深入瞭解](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版。 [深入瞭解](../../rn/using/release--19-1.md)
+* 金標11。 [瞭解更多](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版。 [瞭解更多](../../rn/using/latest-release.md)
+* Campaign 20.2.5版。 [瞭解更多](../../rn/using/release--20-2.md)
+* Campaign 20.1.4版。 [瞭解更多](../../rn/using/release--20-1.md)
+* Campaign 19.2.4版。 [瞭解更多](../../rn/using/release--19-2.md)
+* Campaign 19.1.8版。 [瞭解更多](../../rn/using/release--19-1.md)
 
 這些版本隨附新的連線通訊協定：在&#x200B;**2021年6月30日**&#x200B;之後，Campaign伺服器和用戶端主控台必須升級才能連線至Campaign。
 
@@ -111,10 +111,10 @@ Adobe身分識別服務(IMS)將於2021年6月30日起停止支援舊版Internet 
 
 必須升級至下列其中一個新版本：
 
-* 金標11。 [深入瞭解](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版。 [深入瞭解](../../rn/using/latest-release.md)
-* Campaign 20.2.5版。 [深入瞭解](../../rn/using/release--20-2.md)
-* Campaign 19.1.8版。 [深入瞭解](../../rn/using/release--19-1.md)
+* 金標11。 [瞭解更多](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版。 [瞭解更多](../../rn/using/latest-release.md)
+* Campaign 20.2.5版。 [瞭解更多](../../rn/using/release--20-2.md)
+* Campaign 19.1.8版。 [瞭解更多](../../rn/using/release--19-1.md)
 
 在本小節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何檢查您的版本[。
 
