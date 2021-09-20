@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 2%
@@ -301,7 +301,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ## 匯入套件 {#importing-packages}
 
-可透過Adobe Campaign用戶端主控台的主功能表&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;存取套件匯入精靈。
+可透過Adobe Campaign用戶端主控台的主功能表&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取套件匯入精靈。
 
 您可以根據您的授權條款，從先前執行的匯出匯入套件，例如從其他Adobe Campaign例項匯入，或從[內建套件](../../installation/using/installing-campaign-standard-packages.md)匯入。
 

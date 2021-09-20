@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 要安裝內置軟體包：
 
-1. 從Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;存取套件匯入精靈。
+1. 從Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取套件匯入精靈。
 1. 選取 **[!UICONTROL Install a standard package]**。
 1. 在包清單中，檢查要安裝的包。
    >[!NOTE]
@@ -60,7 +60,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 傳遞<br /> </td> 
-   <td> 監視傳送訊息時遇到的傳送及最終問題。 <a href="../../delivery/using/about-delivery-monitoring.md">深入瞭解</a><br /> </td> 
+   <td> 監視傳送訊息時遇到的傳送及最終問題。 <a href="../../delivery/using/about-delivery-monitoring.md">了解更多</a><br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
