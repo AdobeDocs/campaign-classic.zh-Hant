@@ -7,13 +7,12 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
+source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 99%
+source-wordcount: '2546'
+ht-degree: 98%
 
 ---
-
 
 # Adobe Campaign Classic v7 文件 {#using}
 
@@ -850,3 +849,7 @@ ht-degree: 99%
       + [v6.02 中的特定設定](migration/using/specific-configurations-in-v6-02.md)
       + [v6.10 中的特定設定](migration/using/specific-configurations-in-v6-10.md)
    + [反轉程序](migration/using/about-rollback.md)
++ Technotes {#technotes}
+   + 移轉至Adobe Managed Services{#dc-migration}
+      + [移轉至公用雲端](technotes/using/dc-migration.md)
+      + [常見問答集](technotes/using/dc-migration-faq.md)
