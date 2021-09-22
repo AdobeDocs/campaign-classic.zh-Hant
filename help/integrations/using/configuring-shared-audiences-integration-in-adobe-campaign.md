@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 2%
 
 ---
@@ -83,10 +83,10 @@ ht-degree: 2%
 
 若要設定與People核心服務或Audience Manager的整合，我們也需要設定Campaign追蹤伺服器。
 
-您必須確定已在網域(CNAME)上註冊促銷活動追蹤伺服器。 您可以在[本文](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)中找到有關域名委派的更多資訊。
+您必須確定已在網域(CNAME)上註冊促銷活動追蹤伺服器。 您可以在[本文](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant)中找到有關域名委派的更多資訊。
 
 ## 步驟4:設定訪客ID服務 {#step-4--configure-the-visitor-id-service}
 
-如果您的訪客ID服務從未在您的Web屬性或網站上設定，請參閱下列[document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以了解如何設定您的服務或下列[video](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two) 。
+如果您的訪客ID服務從未在您的Web屬性或網站上設定，請參閱下列[document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以了解如何設定您的服務或下列[video](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two)。
 
 您的設定和布建已完成，現在可以使用整合來匯入和匯出對象或區段。

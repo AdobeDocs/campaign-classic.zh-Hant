@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
@@ -41,23 +41,23 @@ ht-degree: 6%
 1. 編輯活動，並選取您要分析其答案的調查。
 1. 啟用&#x200B;**[!UICONTROL Select all the answer data]**&#x200B;選項以收集所有資訊。
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
 1. 選取要擷取的欄(在此例中為：選擇：所有已封存欄位。 這些欄位包含答案。
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
 1. 設定答案收集方塊後，請放置&#x200B;**[!UICONTROL List update]**&#x200B;類型活動以儲存資料。
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
    在此活動中，指定要更新的清單並取消勾選&#x200B;**[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**&#x200B;選項：答案會新增至現有表格。 此選項可讓您參考多維資料集中的清單。 連結到清單的架構將不會為每次更新重新生成，這保證了使用此清單的多維資料集的完整性。
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_03.png)
 
 1. 啟動工作流程以確認其設定。
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_05.png)
 
    系統會建立指定清單，並包含調查之答案的結構。
 
@@ -71,11 +71,11 @@ ht-degree: 6%
 
 在此範例中，多維資料集以先前建立之工作流程饋送清單中的資料為基礎。
 
-![](assets/reporting_usecase_2_01.png)
+![](../../surveys/using/assets/reporting_usecase_2_01.png)
 
 定義要在報表中顯示的維和測量。 在此，我們要顯示合約日期和回應者的國家。
 
-![](assets/reporting_usecase_2_02.png)
+![](../../surveys/using/assets/reporting_usecase_2_02.png)
 
 **[!UICONTROL Preview]**&#x200B;標籤可讓您控制報表的呈現。
 
@@ -83,8 +83,8 @@ ht-degree: 6%
 
 然後，您可以根據此多維資料集建立報告並處理資料和資訊。
 
-![](assets/reporting_usecase_3_01.png)
+![](../../surveys/using/assets/reporting_usecase_3_01.png)
 
 根據您的需求調整資訊以顯示。
 
-![](assets/reporting_usecase_3_02.png)
+![](../../surveys/using/assets/reporting_usecase_3_02.png)

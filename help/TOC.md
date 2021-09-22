@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2535'
 ht-degree: 99%
 
 ---
@@ -118,6 +118,7 @@ ht-degree: 99%
          + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + Adobe Analytics 連接器{#analytics-connector}
+         + [Adobe Analytics Connector布建](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics Connector整合](platform/using/adobe-analytics-connector.md)
          + [如何移轉至Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)

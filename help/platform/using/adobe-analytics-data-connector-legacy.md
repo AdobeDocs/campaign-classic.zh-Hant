@@ -8,9 +8,9 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1658'
 ht-degree: 100%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 100%
 資料連接器 (先前稱為 Adobe Genesis) 可讓 Adobe Campaign 和 Adobe Analytics 透過 **Web Analytics 連接器**&#x200B;套件互動。 它會以關於電子郵件行銷活動後使用者行為的區段形式，將資料轉送至 Adobe Campaign。 相反地，它會將 Adobe Campaign 傳送之電子郵件行銷活動的指標和屬性傳送至 Adobe Analytics - 資料連接器。
 
 Adobe Campaign 可使用資料連接器來測量網際網路對象 (Web Analytics)。 有了這些整合，Adobe Campaign 便能復原行銷活動後一或多個網站的訪客行為資料，並 (在分析後) 使用視圖執行再次行銷活動，以便將其轉換為購買者。 反之，Adobe Campaign 的網頁分析工具可將指標和行銷活動屬性轉送至其平台。
-
-如需實施 Adobe Analytics 與 Adobe Campaign 整合的詳細資訊，請參閱本[文件](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
 
 每個工具的動作欄位如下：
 

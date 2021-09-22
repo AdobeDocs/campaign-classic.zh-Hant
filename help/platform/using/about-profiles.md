@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 60%
+source-wordcount: '836'
+ht-degree: 61%
 
 ---
 
@@ -93,13 +93,11 @@ Adobe Campaign檔案總管的一般配置顯示在[此頁面](../../platform/usi
 
 計費帳單僅會考慮&#x200B;**有效** 的用戶檔案。如果在過去 12 個月透過任何通路鎖定過用戶檔案或與其進行過通訊，那麼則該用戶檔案被視為有效。
 
-在傳遞準備期間 (類型規則，隔離) 被排除的用戶檔案不包含在內。被多個傳遞項目鎖定的用戶檔案將只計算一次。
+已由數個傳送定位的設定檔只會計算一次。
 
 >[!NOTE]
 >
 >Facebook 和 Twitter 通路不包含在內。
-
-從促銷活動總管，瀏覽&#x200B;**[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;以概略了解作用中設定檔的數量。 實際計數由&#x200B;**[!UICONTROL Number of active billing profiles]**([!UICONTROL billingActiveContactCount])[技術工作流程](../../workflow/using/about-technical-workflows.md)執行。 此工作流程每天執行，並將新資料新增至&#x200B;**[!UICONTROL Customer metrics]**&#x200B;資料夾中目前期間的現有報表。
 
 作用中設定檔計數僅適用於&#x200B;**行銷例項**。 它不適用於執行例項，亦即MID（中間來源）和RT（訊息中心/即時訊息）例項。
 

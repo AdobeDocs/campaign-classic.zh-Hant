@@ -5,11 +5,11 @@ description: 深入瞭解 Adobe Analytics 連接器
 feature: Overview
 role: User, Admin
 level: Beginner
-exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 100%
+source-wordcount: '1515'
+ht-degree: 93%
 
 ---
 
@@ -45,33 +45,37 @@ Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web 
 
 ## 設定整合 {#setting-up-the-integration}
 
+>[!IMPORTANT]
+>
+> 針對混合部署和內部部署實作，請務必遵循本[page](../../platform/using/adobe-analytics-provisioning.md)中詳述的布建步驟。
+
 若要設定資料連接器，您必須連線至 Adobe Campaign 執行個體並執行下列操作：
 
-1. [在 Adobe Analytics 中建立報告套裝](#report-suite-analytics)
 1. [設定轉換變數和成功事件](#configure-conversion-success)
 1. [在 Adobe Campaign Classic 中設定您的外部帳戶](#external-account-classic)
 
-### 在 Adobe Analytics 中建立報告套裝 {#report-suite-analytics}
+<!--
+### Create your Report suite in Adobe Analytics {#report-suite-analytics}
 
-若要設定 Adobe Analytics/Adobe Campaign Classic 整合，您必須連線至您的 [!DNL Adobe Analytics] 執行個體並執行下列操作：
+To set up the Adobe Analytics/Adobe Campaign Classic integration, you must connect to your [!DNL Adobe Analytics] instance and perform the following operations:
 
-1. 從 [!DNL Adobe Analytics] 中，選擇&#x200B;**[!UICONTROL Admin tab]**，然後按一下&#x200B;**[!UICONTROL All admin]**。
+1. From [!DNL Adobe Analytics], select the **[!UICONTROL Admin tab]** then click **[!UICONTROL All admin]**.
 
    ![](assets/analytics_connnector_1.png)
 
-1. 按一下&#x200B;**[!UICONTROL Report suites]**。
+1. Click **[!UICONTROL Report suites]**.
 
    ![](assets/analytics_connnector_2.png)
 
-1. 從&#x200B;**[!UICONTROL Report suite manager]**&#x200B;頁面，按一下&#x200B;**[!UICONTROL Create new]**，然後按一下&#x200B;**[!UICONTROL Report suite]**。
+1. From the **[!UICONTROL Report suite manager]** page, click **[!UICONTROL Create new]** then **[!UICONTROL Report suite]**.
 
-   有關建立&#x200B;**[!UICONTROL Report suite]**&#x200B;的詳細過程，請參閱本[節](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=zh-Hant#prerequisites)。
+   For the detailed procedure on **[!UICONTROL Report suite]** creation, refer to this [section](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#prerequisites).
 
    ![](assets/analytics_connnector_3.png)
 
-1. 選取範本。
+1. Select a template. 
 
-1. 使用下列資訊設定您的新報告套裝：
+1. Configure your new report suite with the following information:
 
    * **[!UICONTROL Report Suite ID]**
    * **[!UICONTROL Site Title]**
@@ -81,13 +85,14 @@ Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web 
 
    ![](assets/analytics_connnector_4.png)
 
-1. 設定後，按一下&#x200B;**[!UICONTROL Create report suite]**。
+1. When configured, click **[!UICONTROL Create report suite]**.
+-->
 
 ### 設定轉換變數和成功事件 {#configure-conversion-success}
 
-建立&#x200B;**[!UICONTROL Report suite]**&#x200B;後，您需要依照以下方式設定&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**:
+您需要依下列方式設定&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**:
 
-1. 選取您先前設定的&#x200B;**[!UICONTROL Report suite]**。
+1. 選取您要連結至Adobe Campaign的&#x200B;**[!UICONTROL Report suite]**。
 
 1. 從&#x200B;**[!UICONTROL Edit settings]**&#x200B;按鈕中選取&#x200B;**[!UICONTROL Conversion]** >  **[!UICONTROL Conversion variables]**。
 
@@ -118,13 +123,19 @@ Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web 
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   若要瞭解如何設定&#x200B;**[!UICONTROL Success events]**，請參閱本[節](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=zh-Hant#admin-tools)
+   若要瞭解如何設定&#x200B;**[!UICONTROL Success events]**，請參閱本[節](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=zh-Hant#admin-tools).
+
+   >[!NOTE]
+   >
+   > 僅支援數值類型的&#x200B;**[!UICONTROL Success events]**。
 
    ![](assets/analytics_connnector_8.png)
 
 1. 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 
-設定報高套裝後，您需要在 Adobe Campaign Classic 中設定 **[!UICONTROL External accounts]**。
+設定&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**&#x200B;後，請確定變數包含在為Analytics連接器建立的&#x200B;**[!UICONTROL Product Profile]**&#x200B;中。 如需詳細資訊，請參閱[建立Adobe Analytics產品設定檔](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile)。
+
+然後，您需要在Adobe Campaign Classic中設定&#x200B;**[!UICONTROL External accounts]**。
 
 ### 在 Adobe Campaign Classic 中設定您的外部帳戶 {#external-account-classic}
 
@@ -150,7 +161,7 @@ Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web 
 
 1. 按一下 **[!UICONTROL Integration]** 下拉式清單旁的 **[!UICONTROL Configure]** 。
 
-1. 從 **[!UICONTROL Configure Analytics integration]** 視窗，將外部帳戶與先前建立的報告套裝對應，並提供下列資訊：
+1. 從&#x200B;**[!UICONTROL Configure Analytics integration]**&#x200B;視窗，將外部帳戶對應至您的報表套裝，並提供下列資訊：
 
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**

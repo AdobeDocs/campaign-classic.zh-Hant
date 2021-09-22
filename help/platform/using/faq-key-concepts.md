@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '866'
 ht-degree: 97%
 
 ---
@@ -56,7 +56,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組及其配置
 
 Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、CCPA 等）。
 
-請參閱[本文件](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html)了解 Adobe Campaign 提供的工具、功能以及最佳實務，以協助您在使用我們的服務時能符合 GDPR 規定。[本文章](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)將說明 Campaign Classic 的實施步驟。
+請參閱[本文件](privacy-and-recommendations.md)了解 Adobe Campaign 提供的工具、功能以及最佳實務，以協助您在使用我們的服務時能符合 GDPR 規定。[本文章](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)將說明 Campaign Classic 的實施步驟。
 
 ## 我應該瞭解哪些 Campaign 使用者介面概念？ {#what-are-campaign-user-interface-concepts-i-should-know-}
 
@@ -126,7 +126,7 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 Adobe 會持續評估產品功能，不斷使用更強大的版本進行替換，也可能決定重新推出部分組件，以滿足未來期望或外掛程式。由於 Campaign 與協力廠商工具合作，產品相容性將定期更新以僅實施所支援的版本。
 
-[按一下這裡以瞭解更多](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)。
+[按一下這裡以瞭解更多](../../rn/using/deprecated-features.md)。
 
 ## 是否發行新的文件更新和說明資料？ {#are-there-new-documentation-updates-and-help-materials-released-}
 

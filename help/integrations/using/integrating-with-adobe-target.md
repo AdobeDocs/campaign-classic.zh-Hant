@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe Campaign與Adobe Target（Classic和Standard版）在Adobe Experience Clou
 
 其工作原則如下：收件者開啟透過Adobe Campaign傳送的電子郵件時，對Adobe Target的呼叫可讓您顯示內容的動態版本。 此動態版本的計算方式取決於建立電子郵件時預先指定的規則。
 
-透過[這四個秘訣和技巧](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)進一步了解Adobe Campaign和Adobe Target整合。
+透過[這四個秘訣和技巧](https://business.adobe.com/content/dam/dx/us/en/products/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)進一步了解Adobe Campaign和Adobe Target整合。
 >[!NOTE]
 >
 >整合僅支援靜態影像。 其餘內容無法個人化。

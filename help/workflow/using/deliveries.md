@@ -5,10 +5,10 @@ description: 進一步了解預設傳送工作流程
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 794be3d196ea8292699bbf29c8a7038177763e31
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 15%
+source-wordcount: '323'
+ht-degree: 5%
 
 ---
 
@@ -35,11 +35,6 @@ ht-degree: 15%
    <td> <span class="uicontrol">帳單</span> <br /> </td> 
    <td> <span class="uicontrol">帳單</span> <br /> </td> 
    <td> 此工作流程會透過電子郵件將系統活動報表傳送至「帳單」運算子。 預設會在每月25日觸發。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">帳單（作用中設定檔）</span> <br /> </td> 
-   <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>此工作流程會計算作用中設定檔的數量。 預設會在每晚凌晨1:00觸發。</p> <p><strong>Profile</strong> 是指一筆代表終端客戶或潛在客戶之資訊的紀錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。帳單只與「作用中」的設定檔有關。 如果設定檔在過去12個月內已透過任何通道鎖定目標或通訊，則該設定檔會視為「作用中」。</p> <p>Facebook 和 Twitter 通路不包含在內。</p> <p>您可以從<span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Campaign Management</span> &gt; <span class="uicontrol">Customer metrics</span>功能表，概略了解<span class="uicontrol">作用中設定檔數</span>。</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">別名清除</span> <br /> </td> 

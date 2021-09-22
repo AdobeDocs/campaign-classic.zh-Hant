@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4542'
+source-wordcount: '4513'
 ht-degree: 98%
 
 ---
@@ -268,7 +268,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已更新 Campaign Classic 頁面的「隱私權管理」，其中包含「規範」欄位資訊，當您使用 API 允許設定自動隱私權要求流程時，便可使用此欄位。[顯示全文](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 和巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 和巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[顯示全文](../../platform/using/privacy-and-recommendations.md)
 
 已將資訊新增至子工作流程記錄和行為中，以防發生錯誤。[顯示全文](../../workflow/using/sub-workflow.md)
 
@@ -520,9 +520,9 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 建立了新的「組建版本升級常見問題集」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)
 
-更新[相容性矩陣](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存[ 19.0 相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix-19-0.html)。
+更新[相容性矩陣](compatibility-matrix.md)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存 19.0 相容性矩陣。
 
-更新「已棄用和已移除的 Campaign Classic 功能」頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)
+更新「已棄用和已移除的 Campaign Classic 功能」頁面。[顯示全文](deprecated-features.md)
 
 《安裝指南》新增伺服器設定檔的說明。[顯示全文](../../installation/using/the-server-configuration-file.md)
 
@@ -579,7 +579,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
-改善並更新「Campaign 網域名稱設定程序」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)
+改善並更新「Campaign 網域名稱設定程序」。
 
 更新 Android應用程式從 Google 雲端傳訊 (GCM) 移轉至 Firebase 雲端傳訊 (FCM) 的移轉程序。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html)
 

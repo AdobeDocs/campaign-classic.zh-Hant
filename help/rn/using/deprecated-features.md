@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 97%
+source-wordcount: '1657'
+ht-degree: 95%
 
 ---
 
@@ -81,7 +81,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
   <tr>  
    <td>報告<br></td>
-   <td><p>在AdobeFlash PlayerEOL後，量規報表和圖表呈現引擎將不再可用。 <a href="../../reporting/using/creating-a-new-report.md">深入瞭解</a></p>
+   <td><p>在AdobeFlash PlayerEOL後，量規報表和圖表呈現引擎將不再可用。 <a href="../../reporting/using/creating-a-new-report.md">了解更多</a></p>
   </tr>
   <tr>  
    <td>傳真頻道<br></td>
@@ -114,7 +114,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr> 
   <tr> 
    <td>網頁應用程式 - Microsites</td>
-   <td>自 Campaign 18.10 發行版本開始，已不再提供 Microsites。您可以在 Adobe Campaign 配置檔案，限制僅能存取專屬網存取，並使用 DNS 別名在 Campaign 中使用個人化 URL，藉此提高安全性。<a href="https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html">瞭解更多</a></td>
+   <td>自 Campaign 18.10 發行版本開始，已不再提供 Microsites。您可以在 Adobe Campaign 配置檔案，限制僅能存取專屬網存取，並使用 DNS 別名在 Campaign 中使用個人化 URL，藉此提高安全性。</td>
   </tr> 
   <tr> 
    <td>推播通知 - iOS Binary Connector</td>
@@ -183,7 +183,7 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 
 自 19.1 春季發行版本開始，Adobe Campaign 不再與下列工具相容。
 
-* Java JDK 7。[瞭解更多](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Java JDK 7。[瞭解更多](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
 * Libre Office 3.5 / 4.3 / 5.x，但內嵌於其他工具則除外。[深入瞭解](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### 資料庫引擎 {#dbe-eol}
@@ -201,14 +201,14 @@ Adobe 不支援下列資料庫引擎，因為其編輯者已不建議使用這�
 自第 19.1 春季發行版本開始，Adobe Campaign 不再與下列 FDA 伺服器相容：
 
 * PostgreSQL 9.3。[瞭解更多](https://www.postgresql.org/support/versioning)
-* MySQL 5.5。[瞭解更多](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5。[瞭解更多](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* MySQL 5.5。[瞭解更多](https://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5。[瞭解更多](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Teradata 14 - 14.1。[瞭解更多](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。
 
-* DB2 UDB 9.5、9.7。透過同盟資料存取 (FDA) 支援更新版本的 DB2。[瞭解更多](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i、10G R2。透過同盟資料存取 (FDA) 支援更新版本的 Oracle。[瞭解更多](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* DB2 UDB 9.5、9.7。透過同盟資料存取 (FDA) 支援更新版本的 DB2。[瞭解更多](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i、10G R2。透過同盟資料存取 (FDA) 支援更新版本的 Oracle。[瞭解更多](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
 * PostgreSQL 8.3、8.4、9.0、9.1、9.2。透過同盟資料存取 (FDA) 支援更新版本的 PostgreSQL。[瞭解更多](https://www.postgresql.org/support/versioning)
 * MSSQL 2000、2005、2008 R2。透過同盟資料存取 (FDA) 支援更新版本的 SQL Server。[瞭解更多](https://support.microsoft.com/en-us/lifecycle/search/1044)
 * MySQL 5.1。透過同盟資料存取 (FDA) 支援更新版本的 MySQL。[瞭解更多](https://en.wikipedia.org/wiki/InfiniDB)

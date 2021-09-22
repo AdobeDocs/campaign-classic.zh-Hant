@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -96,7 +96,9 @@ ht-degree: 2%
 
    按一下&#x200B;**[!UICONTROL Define new additional fields]**&#x200B;以選取您要在傳送中定位的維度。
 
-   依預設，排除管理會儲存在與訊息相同的表格中。 如果要為連結到目標映射的跟蹤配置儲存，請選中&#x200B;**生成用於跟蹤的儲存架構**&#x200B;框。
+   依預設，排除管理會儲存在與訊息相同的表格中。
+
+   如果要為連結到目標映射的跟蹤配置儲存，請選中&#x200B;**生成用於跟蹤的儲存架構**&#x200B;框。
 
    ![](assets/mapping_diffusion_wizard_3.png)
 

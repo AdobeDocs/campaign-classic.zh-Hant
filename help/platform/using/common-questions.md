@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 97%
 
 ---
@@ -73,4 +73,4 @@ Adobe Campaign 提供一組可監視電子郵件傳遞的儀表板和工具。
 
 子網域是您網域的分區，可用來隔離您的名稱或各類流量（交易訊息、行銷資訊等等）。Adobe 使用網域名稱系統 (DNS) 的帳戶進行電子郵件傳遞，允許用戶端使用網域名稱的 DNS 別名維護品牌形象，允許 Adobe 自主實行所有技術最佳實務，以利傳送電子郵件期間最佳化傳遞。
 
-[按一下這裡以瞭解更多資訊](https://helpx.adobe.com/tw/campaign/kb/domain-name-delegation.html)。
+[按一下這裡以瞭解更多資訊](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant)。

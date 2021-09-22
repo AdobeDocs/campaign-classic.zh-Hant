@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2033'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Adobe Campaign 可讓您收集資料，包括個人和敏感資訊。因此，�
 
 ## 隱私權管理 {#privacy-management}
 
-隱私權管理是指可協助您遵守隱私權法規 (GDPR、CCPA等) 的所有流程及工具。取得[本頁面](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-overview.html)隱私權管理內容的概觀。
+隱私權管理是指可協助您遵守隱私權法規 (GDPR、CCPA等) 的所有流程及工具。取得[本頁面](privacy-and-recommendations.md)隱私權管理內容的概觀。
 
 Adobe Campaign 提供專屬於隱私權管理的各種功能：
 * 同意管理、資料保留和使用者角色。請參閱[本節](#consent)。

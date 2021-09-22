@@ -4,9 +4,9 @@ title: 'Campaign Classic的說明與支援選項 '
 description: 需要Campaign Classic支援嗎？ 您來對地方了！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '801'
 ht-degree: 71%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 71%
 
 ### 如何存取控制面板？
 
-控制面板可直接從 Adobe Experience Cloud 存取。 僅供管理員使用者存取。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hant)以獲得更多資訊。
+控制面板可直接從 Adobe Experience Cloud 存取。 僅供管理員使用者存取。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html)以獲得更多資訊。
 
 ### 「控制面板」常見問答集
 
@@ -136,7 +136,7 @@ ht-degree: 71%
 
 ### 詢問專家！
 
-加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入對話](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入對話](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
 ### 存取 Campaign 下載中心
 

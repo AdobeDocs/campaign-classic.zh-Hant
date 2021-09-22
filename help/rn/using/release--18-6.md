@@ -9,9 +9,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '794'
 ht-degree: 7%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 查詢段落<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>，以瞭解詳情。</p> </td>
+   <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -105,11 +105,11 @@ ht-degree: 7%
  </tbody> 
 </table>
 
-**安全性增強功能**
+**安全性改善功能**
 
 decryptString
 
-已棄用&#x200B;**decryptString**&#x200B;函式。 請參閱[已棄用和已移除的功能](https://helpx.adobe.com/tw/campaign/kb/deprecated-and-removed-features.html)文章。
+已棄用&#x200B;**decryptString**&#x200B;函式。 請參閱[已棄用和已移除的功能](deprecated-features.md)文章。
 
 若為新客戶，此函式現在僅用於解密登錄頁面中收件者的加密ID。 要解密儲存在外部帳戶中的密碼，請使用新的&#x200B;**decryptPassword**&#x200B;函式。
 

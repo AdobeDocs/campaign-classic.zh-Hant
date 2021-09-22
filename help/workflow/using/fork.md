@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -17,21 +17,69 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**[!UICONTROL Fork]**&#x200B;活動可讓您建立多個出站轉變，以便在相同的工作流程中獨立執行多個活動。
-
-例如，您可以在查詢後使用活動，以便同時執行兩個動作：
-
-* 將查詢結果儲存至對象中，
-* 對結果執行分段，以傳送多個傳送。
-
-您也可以在內容建立和傳送自動化的內容中使用活動，以便同時啟動目標計算和內容建立。 [此部分](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中提供專用的使用案例。
+您可以使用&#x200B;**[!UICONTROL Fork]**&#x200B;活動來建立多個出站轉變，以及在相同的工作流程內獨立執行多個活動。
 
 >[!IMPORTANT]
 >
->在&#x200B;**[!UICONTROL Fork]**&#x200B;活動&#x200B;**後新增的出站轉變不會**&#x200B;同時執行。 此行為可能會影響工作流程的效能。 如果您需要獨立執行數個活動，並最終在執行其餘工作流程之前將其結合，請使用此活動。
+>您在&#x200B;**[!UICONTROL Fork]**&#x200B;活動之後新增的出站轉變不會同時執行。 此行為可能會影響工作流程效能。 如果您需要獨立執行數個活動，請使用&#x200B;**[!UICONTROL Fork]**&#x200B;活動。 您可以視需要在工作流程的後續部分之前加入傳出活動。
 
-若要設定&#x200B;**[!UICONTROL Fork]**&#x200B;活動，請開啟該活動，以定義出站轉變的數字和標籤。
+若要設定&#x200B;**[!UICONTROL Fork]**&#x200B;活動及其相關活動，請遵循下列步驟：
 
-![](assets/s_user_segmentation_fork.png)
+1. 開啟&#x200B;**[!UICONTROL Fork]**&#x200B;活動，並定義出站轉變的名稱和標籤。
+
+   ![](assets/s_user_segmentation_fork.png)
+
+1. 開啟每個出站轉變並加以設定。
+1. （可選）要加入出站轉變，請添加AND-join活動。 [深入瞭解](and-join.md)。
+
+   工作流程的後續部分僅在已加入的出站轉變完成後才會執行。
+
+## 範例：細分
+
+在此範例中，會傳送不同的電子郵件給不同的母體群組。 **[!UICONTROL Fork]**&#x200B;活動用於查詢後，以並行執行兩個動作：
+
+* 保存查詢結果
+* 將結果分段以傳送多個傳送
+
+   ![分支活動會遵循兩個查詢的交集，並在清單更新活動和分割活動之前。](assets/wkf_fork_example.png)
+
+工作流程包含下列活動：
+
+1. **[!UICONTROL Query]** 活動
+
+   已選取兩個母體群組：女人和巴黎人。
+
+1. **[!UICONTROL Intersection]** 活動
+
+   選取查詢結果的交集，即巴黎女性。
+
+1. **[!UICONTROL Fork]** 活動
+
+   計算的母體會儲存，並且並行分割為兩個群組：
+
+   1. 18至40歲的巴黎女性
+   1. 40歲以上巴黎女性
+
+1. **[!UICONTROL Delivery]** 活動
+
+   會傳送不同的電子郵件給每個母體群組。
+
+## 使用案例：傳送生日電子郵件
+
+循環電子郵件會在收件者生日當天傳送至其清單。 **[!UICONTROL Fork]**&#x200B;活動用於包含閏年2月29日出生的收件者。 [進一步](sending-a-birthday-email.md) 了解此使用案例。
+
+![分支活動會遵循測試活動，並在兩個查詢活動之前。](assets/birthday-workflow_usecase_1.png)
+
+## 使用案例：使用工作流程自動化內容
+
+內容區塊的建立和傳送會自動進行。 **[!UICONTROL Fork]**&#x200B;活動可用來計算目標，並行建立內容。 [進一步](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) 了解此使用案例。
+
+![分支活動會遵循傳送活動，並在查詢活動和內容管理活動之前，兩者皆透過AND-join活動連結。](../../delivery/using/assets/d_ncs_content_workflow10.png)
 
 接著，您可以設定每個出站轉變，然後視需要使用[AND-join](and-join.md)活動將它們連結在一起。 這樣，只有&#x200B;**[!UICONTROL Fork]**&#x200B;活動的出站轉變完成後，工作流程的其餘部分才會執行。
+
+## 相關主題
+
+* [與加入活動](and-join.md)
+* [使用案例：生日電子郵件](sending-a-birthday-email.md)
+* [使用案例：內容建立與傳遞](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)

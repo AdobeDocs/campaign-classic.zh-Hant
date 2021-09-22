@@ -2,18 +2,19 @@
 product: campaign
 title: 移轉至Adobe Analytics Connector
 description: Campaign - Analytics Connector常見問題集
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
+source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '850'
 ht-degree: 5%
 
 ---
 
-# 如何移轉至Adobe Analytics Connector {#acc-aa-faq}
+# 如何將現有Genesis整合移轉至Adobe Analytics Connector {#acc-aa-faq}
 
 ![](../../assets/v7-only.svg)
 
-自Campaign Classicv7 21.1.3發行版本開始，已棄用Adobe Analytics Data Connector。 [深入瞭解](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
+自Campaign Classicv7 21.1.3發行版本開始，已棄用Adobe Analytics Data Connector。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
 2021年8月1日起，Adobe Campaign Classic已從舊版Data Connectors UI中移除，不過現有的Campaign整合將持續收集資料，並將資料傳遞至Adobe Analytics，直到2022年3月1日為止。 在當天以後，整合將停止收集資料並傳遞至Adobe Analytics。
 
@@ -37,7 +38,7 @@ ht-degree: 5%
 
 * 請注意，`nlserver`程式應以IMS技術帳戶使用者設定，新連接器才能運作。 此變更必須由Adobe完成。 若要實作此功能，請連絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-* 如果您是Adobe Genesis API，且工作流程自訂可從Adobe Analytics提取和推送資料，現在需要使用新的Adobe Analytics 1.4/2.0 API。 [深入瞭解](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
+* 如果您是Adobe Genesis API，且工作流程自訂可從Adobe Analytics提取和推送資料，現在需要使用新的Adobe Analytics 1.4/2.0 API。 [了解更多](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
 ## 您有受到影響嗎？
 
@@ -49,12 +50,10 @@ ht-degree: 5%
 
 在2022年3月1日之前，您需要升級至Campaign 21.1.3（或更新版本）**。**
 
-身為托管客戶，Adobe會與您合作，將您的執行個體升級至較新版本。
+身為托管客戶，Adobe會與您合作，將您的執行個體升級至較新版本。 然後，您就能使用[Adobe Analytics連接器](../../platform/using/adobe-analytics-connector.md)。
 
 身為內部部署/混合部署客戶，您需要升級至其中一個較新版本，才能從新整合中獲益。
-
-升級所有執行個體後，您將能[實作新的整合](../../platform/using/adobe-analytics-connector.md)至Adobe Analytics Connector，並確保順暢轉換。
-
+升級所有執行個體後，您將能[實作新的整合](../../platform/using/adobe-analytics-provisioning.md)至Adobe Analytics Connector，並確保順暢轉換。
 
 ## 常見問答集{#faq-aa}
 

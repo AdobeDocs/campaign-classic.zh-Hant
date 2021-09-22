@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1092'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Campaign Classic:
 
 儲存後，您會得到&#x200B;**應用程式ID**，此為促銷活動的用戶端識別碼。
 
-在[本頁](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)中瞭解更多。
+在[本頁](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)中瞭解更多。
 
 ### 生成Microsoft Dynamics證書密鑰標識符和密鑰ID {#config-certificate-key-id}
 
@@ -115,7 +115,7 @@ Campaign Classic:
 
 1. 按一下「**授予管理員同意**」。
 
-有關詳細資訊，請參閱[Azure文檔](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
+有關詳細資訊，請參閱[Azure文檔](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
 
 ### 建立應用程式使用者 {#create-app-user-microsoft}
 
@@ -155,7 +155,7 @@ Campaign Classic:
 
 >[!NOTE]
 >
-> 在從Microsoft](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8)?redirectedfrom=MSDN#microsoft-dynamics-crm-2011-endpoint)停用[RDS後，內部部署和Office 365類型的CRM部署將不再與Campaign相容。 Adobe Campaign現在僅支援CRM版本&#x200B;**動態CRM 365**&#x200B;的Web API部署。 [深入瞭解](../../rn/using/deprecated-features.md#crm-connectors)。
+> 在從Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用[RDS後，內部部署和Office 365類型的CRM部署將不再與Campaign相容。 Adobe Campaign現在僅支援CRM版本&#x200B;**動態CRM 365**&#x200B;的Web API部署。 [深入瞭解](../../rn/using/deprecated-features.md#crm-connectors)。
 
 若要連線Microsoft Dynamics 365和Campaign，您需要在Campaign中建立並設定專用的&#x200B;**[!UICONTROL External Account]**。
 

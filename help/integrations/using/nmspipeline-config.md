@@ -4,9 +4,9 @@ title: 配置整合
 description: 配置整合
 audience: integrations
 content-type: reference
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 2%
 ## 如何配置管道選項 {#configure-pipeline-option}
 
 在「觸發器」陣列下新增或編輯Experience Cloud觸發器；請勿編輯其餘內容。
-請透過此[website](http://jsonlint.com/)確認JSON有效。
+請透過此[website](https://jsonlint.com/)確認JSON有效。
 
 * &quot;name&quot;是觸發器ID。 萬用字元「*」會擷取所有觸發器。
 * &quot;Consumer&quot;是唯一識別nlserver例項的任何唯一字串。 通常可以是例項名稱本身。 對於多個環境(dev/stage/prod)，請確定每個環境都是唯一的，以便每個執行個體都能收到訊息的副本。

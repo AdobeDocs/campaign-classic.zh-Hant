@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '377'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 種子地址用於鎖定不符合所定義的目標準則的收件者。這樣，超出傳遞範圍的收件者就可以收到傳遞，如同任何其他目標收件者一樣。
 
-使用它們的主要原因之一是&#x200B;**您的郵件清單保護**。 在郵寄清單中插入種子地址可讓您在第三方使用時留意，因為其所包含的種子地址將接收發送到郵寄清單的傳送。
+使用它們的主要原因之一是&#x200B;**您的郵件清單保護**。 在郵寄清單中插入種子地址可讓您在第三方使用時注意，因為其包含的種子地址將接收發送到郵寄清單的傳送。
 
 此外，種子地址可讓您透過傳送校樣，在傳送前&#x200B;**預覽並測試傳送個人化和呈現**（請參閱[使用種子地址作為校樣](steps-defining-the-target-population.md#using-seed-addresses-as-proof)）。
 
@@ -37,7 +37,7 @@ ht-degree: 9%
 >
 >種子地址不屬於收件者表，它們將建立在單獨的表中。 如果使用新資料擴展收件者表，則必須擴展種子地址表以及使用相同資料擴展種子地址表。 否則，種子地址將不考慮這些擴展欄位。
 >
->本節提供如何擴充種子地址表的範例：[使用案例：選擇條件](use-case--selecting-seed-addresses-on-criteria.md)上的種子地址
+>本節提供如何擴充種子地址表的範例：[使用案例：按條件](use-case--selecting-seed-addresses-on-criteria.md)選擇種子地址。
 
 對於直接郵件傳送，種子地址會在提取期間新增，並在輸出檔案中混合。
 
