@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56470602e3acf777d5b00c293060c644c1fbbc37
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1712'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 3%
 本節中詳述的工作流程會與不同的Adobe Campaign內建套件一起安裝。 這些套件和相關技術工作流程取決於您的授權合約。 在[此部分](../../installation/using/installing-campaign-standard-packages.md)中詳細介紹了內置軟體包。
 
 依預設，技術工作流程可在下列節點的子資料夾中使用：**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
+
+請注意，只有具有管理權限的運算子才能啟動和修改技術工作流程。 有關權限的詳細資訊，請參閱此[節](../../platform/using/access-management-groups.md#default-groups)。
 
 >[!NOTE]
 >
