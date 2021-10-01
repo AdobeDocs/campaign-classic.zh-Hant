@@ -7,7 +7,7 @@ version: Classic v7
 feature-set: Campaign
 index: true
 source-git-commit: 5bd99d531aa54349187ef104b7a5d51ffa860354
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '12'
 ht-degree: 100%
 
