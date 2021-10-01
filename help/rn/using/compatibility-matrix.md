@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ![](../../assets/v7-only.svg)
 
-本檔案列出[最新&#x200B;**Adobe Campaign Classic v7**&#x200B;版本編號](../../rn/using/latest-release.md)支援的所有系統和元件。 此清單上未列出的產品和版本即與 Adobe Campaign 不相容。
+本文件列出 [最新版本編號](../../rn/using/latest-release.md)之 **Adobe Campaign Classic v7** 支援的所有系統及元件。此清單上未列出的產品和版本即與 Adobe Campaign 不相容。
 
 如果您是 [!DNL Gold Standard] 使用者，請參閱 [[!DNL Gold Standard]  相容性矩陣](../../rn/using/compatibility-matrix-gs.md)。
 
@@ -154,7 +154,7 @@ ht-degree: 96%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。[深入瞭解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
@@ -180,7 +180,7 @@ ht-degree: 96%
 <tr>
 <td>Microsoft Dynamics 連接器</td>
 <td>
-<p>網頁API</p>
+<p>Web API</p>
 </td>
 </tr>
 </tbody>
@@ -230,10 +230,10 @@ ht-degree: 96%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -295,8 +295,8 @@ ht-degree: 96%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
