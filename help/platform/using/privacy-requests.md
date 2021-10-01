@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2415'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 Adobe Campaign 為資料控制方執行隱私權存取和刪除請求提供兩種可能性：
 
 * 透過 **Adobe Campaign 介面**：針對每個隱私權請求，資料控制方會在 Adobe Campaign 建立新的隱私權請求。請參閱[本節](#create-privacy-request-ui)。
-* 透過  **API**：Adobe Campaign 提供 API，允許使用 SOAP 自動處理隱私權請求。請參閱[本節](#automatic-privacy-request-api)。
+* 透過&#x200B;**API**：Adobe Campaign 提供 API允許使用 SOAP 自動處理隱私權請求。請參閱[本節](#automatic-privacy-request-api)。
 
 >[!NOTE]
 >
