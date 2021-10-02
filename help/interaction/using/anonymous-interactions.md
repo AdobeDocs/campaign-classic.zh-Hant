@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 當匿名訪客連線時，可將其提交至Cookie識別程式。 此隱含識別是根據訪客的瀏覽器記錄。
 
-在此步驟中，會比較由Cookie復原的資料與資料庫中的資料。 在某些情況下，會識別訪客（接著以隱含方式識別），而在其他情況下，則無法識別訪客（因此保持匿名）。
+在此步驟中，會比較由Cookie復原的資料與資料庫中的資料。 在某些情況下，訪客會被識別（接著會以隱含方式識別），而在其他情況下，訪客不會被識別（因此會保持匿名）。
 
 若要執行此分析，請針對優惠方案空間核取&#x200B;**[!UICONTROL Implicitly identify the individual based on their browser history]**&#x200B;選項。
 

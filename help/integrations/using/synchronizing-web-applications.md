@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_5.png)
 
-1. 前往&#x200B;**[!UICONTROL Profiles and Targets > Recipient]**&#x200B;並選取收件者。 您可以看到他尚未訂閱服務。
+1. 前往&#x200B;**[!UICONTROL Profiles and Targets > Recipient]**&#x200B;並選取收件者。 您可以看到此設定檔尚未訂閱服務。
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_7.png)
 
-1. 搜尋您的Campaign v7收件者，並檢查他是否出現在Campaign Standard中。
+1. 搜尋您的Campaign v7收件者，並檢查此收件者是否出現在Campaign Standard中。
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_14.png)
 
-1. 他添加一個電話號碼並檢查電子報訂閱框。
+1. 此收件者新增電話號碼並勾選電子報訂閱方塊。
 
    ![](assets/acs_connect_lp_15.png)
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_17.png)
 
-1. 在&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤中，我們也可以看到他已訂閱電子報服務。
+1. 在&#x200B;**[!UICONTROL Subscriptions]**&#x200B;索引標籤中，我們也可以看到此收件者已訂閱電子報服務。
 
    ![](assets/acs_connect_lp_18.png)
 

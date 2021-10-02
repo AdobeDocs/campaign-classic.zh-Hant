@@ -5,14 +5,12 @@ description: 了解如何配置安全區域
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 1%
 
 ---
-
 
 # 定義安全區域（內部部署）{#defining-security-zones}
 
@@ -26,7 +24,7 @@ ht-degree: 1%
 >
 >此程式僅限於&#x200B;**內部部署**&#x200B;部署。
 >
->身為&#x200B;**托管**&#x200B;客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，則可以使用安全區自助服務介面。 [深入瞭解](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)
+>身為&#x200B;**托管**&#x200B;客戶，如果您可以存取[促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，則可以使用安全區自助服務介面。 [瞭解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)
 >
 >其他&#x200B;**混合/托管**&#x200B;客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
 

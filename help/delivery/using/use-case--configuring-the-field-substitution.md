@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 在此使用案例中，網站&#x200B;**我的線上資料庫**&#x200B;會根據客戶最喜愛的文學類型，向客戶傳送折扣。
 
-傳送管理員已將與最喜愛類型連結的個人化欄位整合至其電子郵件。 他想用一些種子地址。 這些種子地址的表格中有個人化欄位，但沒有儲存任何值。
+傳送管理員已將與最喜愛類型連結的個人化欄位整合至其電子郵件。 目的是使用一些種子地址：這些種子地址的表格中有「個人化」欄位，但沒有儲存任何值。
 
 若要使用隨機欄位替代，您必須具備：
 

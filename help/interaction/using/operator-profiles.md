@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 5%
 
 ---
@@ -52,15 +52,15 @@ ht-degree: 5%
 
    ![](assets/offer_operators_create_002.png)
 
-指派給傳送管理員的權限是/讓他們執行下列工作：
+指派給傳送管理員的權限可讓他們執行下列工作：
 
 * 顯示&#x200B;**[!UICONTROL Live]**&#x200B;環境。
 * 顯示和修改優惠方案類別。
-* 如果指定其審核者之一，則核准優惠方案。
+* 如果此傳遞管理員指定為其審核者之一，則核准優惠方案。
 
    >[!NOTE]
    >
-   >只有在優惠方案設定期間已定義為審核者時，傳送管理員才能核准優惠方案。
+   >傳送管理員只有在在選件設定期間定義為審核者時，才能核准選件。
 
 ## 根據操作員重新評估權利 {#recap-of-rights-according-to-operator}
 

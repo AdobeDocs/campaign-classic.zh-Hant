@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -60,7 +60,7 @@ ht-degree: 2%
 
    此選項可讓您啟用匿名互動的特定功能，尤其是在設定環境提供空間時。 您也可以配置選項，讓您從「已識別」環境切換至「匿名」環境。
 
-   例如，您可以將收件者環境選件空間（已識別的連絡人）與符合訪客環境（未識別的連絡人）的選件空間連結。 如此一來，聯絡人就能根據是否識別出來，獲得不同的優惠方案。 如需詳細資訊，請參閱[建立優惠方案空間](../../interaction/using/creating-offer-spaces.md)。
+   例如，您可以將收件者環境選件空間（已識別的連絡人）與符合訪客環境（未識別的連絡人）的選件空間連結。 如此一來，根據是否識別此連絡人，聯絡人將可使用不同的優惠方案。 如需詳細資訊，請參閱[建立優惠方案空間](../../interaction/using/creating-offer-spaces.md)。
 
    ![](assets/offer_env_anonymous_003.png)
 

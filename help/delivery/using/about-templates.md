@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 1. 預先定義的傳遞範本
 
-   Adobe Campaign管理員可以建立新的傳遞範本。 操作員（具有適當訪問權限的操作員）或伺服器進程可自動重複使用它們。 例如，您可以設定電子郵件傳送範本，當使用者使用此範本建立傳送時，他只需輸入文字或HTML內容，然後傳送即可；管理員已定義了其他選項。
+   Adobe Campaign管理員可以建立新的傳遞範本。 操作員（具有適當訪問權限的操作員）或伺服器進程可自動重複使用它們。 例如，您可以設定電子郵件傳送範本，而當使用者使用此範本建立傳送時，他們只需輸入文字或HTML內容，然後傳送即可；管理員已定義了其他選項。
 
 >[!NOTE]
 >

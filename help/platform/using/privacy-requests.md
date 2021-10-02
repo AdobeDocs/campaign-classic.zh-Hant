@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '2415'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '2413'
+ht-degree: 99%
 
 ---
 
@@ -384,7 +384,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
 除了 Adobe Campaign 提供的[同意管理](../../platform/using/privacy-management.md#consent-management)工具以外，您還可以追蹤消費者是否選擇退出個人資訊銷售。
 
-消費者透過您的系統決定其不允許將個人資訊銷售給第三方。在 Adobe Campaign 中，您將能儲存及追蹤此資訊。
+聯絡人可以透過您的系統決定不允許將其個人資訊銷售給第三方。 在 Adobe Campaign 中，您將能儲存及追蹤此資訊。
 
 為了達到此目的，您需要延伸「設定檔」表格並新增&#x200B;**[!UICONTROL Opt-Out for CCPA]**&#x200B;欄位。
 

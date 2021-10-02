@@ -6,9 +6,9 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 2%
 
 **[!UICONTROL Edit the access parameters...]**&#x200B;連結可讓您存取下列選項：
 
-* **[!UICONTROL Disable account]**&#x200B;選項可讓您停用運算子的帳戶：他將不再訪問Adobe Campaign。
+* **[!UICONTROL Disable account]**&#x200B;選項可讓您停用運算子的帳戶：此使用者將不再存取Adobe Campaign。
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >這是非常嚴格的限制，必須小心使用。 以此類權限登錄的運算子只能查看指定資料夾的內容，並且無法通過資源管理器訪問樹的任何其他節點。 不過，視他可存取的功能而定(例如：工作流程)，他可以顯示通常儲存在他看不到的節點中的資料。
+   >這是非常嚴格的限制，必須小心使用。 以此類權限登錄的運算子只能查看指定資料夾的內容，並且無法通過資源管理器訪問樹的任何其他節點。 不過，根據此運算子可存取的功能(例如：工作流程)，則使用者可顯示通常儲存在無法存取之節點中的資料。
 
 ### 檢查設定 {#check-settings}
 
