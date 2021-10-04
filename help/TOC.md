@@ -3,11 +3,10 @@ audience: end-user
 breadcrumb-title: Campaign v7 文件
 product: campaign
 title: Campaign Classic v7 指南
-breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 37115de5871d773dc7b97c5150ef1eab583e3104
+source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 98%
