@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '621'
 ht-degree: 4%
 
 ---
@@ -49,8 +49,8 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 存在三種連接保護模式：
 
 * **阻止** :所有不屬於允許清單的URL都會遭到封鎖，並顯示錯誤訊息。這是升級後的預設模式。
-* **許可** :允許所有不屬於允許清單的URL。
-* **警告** :允許清單上不是的所有URL，但JS解釋器會發出警告，以便管理員可以收集這些URL。此模式添加JST-310027警告消息。
+* **許可** :允許屬於允許清單的所有URL。
+* **警告** :允許所有未列在允許清單上的URL，但JS解釋器會發出警告，以便管理員可以收集這些URL。此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -60,7 +60,7 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 </urlPermission>
 ```
 
-新客戶端將使用阻塞模式。 如果他們想要允許新URL，則需要聯絡其管理員以將其新增至允許清單。
+新客戶端將使用阻塞模式。 如果他們想要允許新的URL，則需要聯絡管理員以將其新增至允許清單。
 
 來自移轉的現有客戶可能會使用警告模式一段時間。 同時，在授權URL之前，他們需要分析傳出流量。
 

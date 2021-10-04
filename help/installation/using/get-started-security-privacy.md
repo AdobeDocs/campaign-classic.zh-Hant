@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: 開始使用安全性和隱私權
+title: 安全性與隱私權檢查清單
 description: 進一步了解有關安全性和隱私權需要檢查的關鍵元素。
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 8%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
-# 開始使用安全性和隱私權 {#get-started-security-privacy}
+# 安全性與隱私權檢查清單{#get-started-security-privacy}
 
 ![](../../assets/v7-only.svg)
 
@@ -67,6 +67,10 @@ ht-degree: 8%
 您也必須遵循資料庫引擎的安全性。
 
 [顯示全文](../../installation/using/network-database.md)
+
+>[!CAUTION]
+>
+>自2021年7月14日起，任何不支援TLS 1.2通訊協定的用戶端系統都將失去所有Adobe產品和服務的存取權。 在此日期之前，請確定所有使用者和用戶端系統均符合TLS 1.2規範。 [瞭解更多](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
 
 ## 伺服器配置
 

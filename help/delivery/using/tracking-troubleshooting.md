@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -132,7 +132,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 您可以自訂點擊追蹤公式，並指定自訂Adobe Analytics追蹤公式。
 
-這種自訂需要謹慎進行，以避免增加額外的換行字元。 javascript運算式外部出現的所有換行字元都會出現在最終公式中。
+這種自訂需要謹慎進行，以避免增加額外的換行字元。 在JavaScript運算式之外出現的所有換行字元都將出現在最終公式中。
 
 追蹤URL中這類額外的換行字元會導致某些WebMail（AOL、GMail等）發生問題。
 
@@ -159,7 +159,7 @@ $ grep -Rn 50x000000000FD7EC86
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-若要了解額外換行的位置，您可以以固定字串STRING取代javascript運算式。
+若要了解額外換行的位置，您可以以固定字串STRING取代JavaScript運算式。
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-若要了解額外換行的位置，您可以以固定字串STRING取代javascript運算式。
+若要了解額外換行的位置，您可以以固定字串STRING取代JavaScript運算式。
 
 ```
 // Incorrect

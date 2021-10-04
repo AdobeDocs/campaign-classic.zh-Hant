@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 移轉期間會自動顯示下列警告：
 
 ```
-The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side javascript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
+The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side JavaScript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
 ```
 
 Web應用程式的某些元件（例如各種公式欄位）具有@id屬性。 這些用於Web應用程式的XML代碼中，不再以相同方式生成。 它們不會顯示在介面中，而您通常不得使用它們。 但是，在某些情況下，可能@id用屬性來個性化Web應用程式的呈現，例如通過樣式表或使用JavaScript代碼。
@@ -114,7 +114,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 * 內部名稱：NlMigration_KeepFolderStructure
 * 資料類型：整數
-* 值（文本）:3
+* 值（文本）:1
 
 如果使用此選項，則遷移後必須刪除過時的資料夾，添加新資料夾並運行所有必要的檢查。
 

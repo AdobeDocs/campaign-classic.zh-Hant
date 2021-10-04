@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 0%
@@ -411,7 +411,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">RestrictEditingOOTBJavascript</span> <br /> </td> 
-   <td> （從21.1.3版開始）如果選取1（預設值），此選項會停用內建javascript程式碼的版本。<br /> </td> 
+   <td> （從21.1.3版開始）如果選取1（預設值），此選項會停用內建JavaScript程式碼的版本。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
@@ -423,7 +423,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> 如果選取1，則此選項可允許javascript中的privilegeEscalation。<br /> </td> 
+   <td> 如果選取1，則此選項可允許JavaScript中的privilegeEscalation。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
@@ -696,7 +696,7 @@ ht-degree: 0%
    <td> 在移轉期間，樹狀結構會根據新版本標準自動重新組織。<br /> 此選項可讓您停用導覽樹的自動移轉。如果使用它，則遷移後必須刪除過時的資料夾，添加新資料夾並運行所有必要的檢查。<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">資料類型： </span> 整數</p> </li> 
-     <li> <p> <span class="uicontrol">值（文字）</span> :3 </p> </li> 
+     <li> <p> <span class="uicontrol">值（文字）</span> :1 </p> </li> 
     </ul> 只有在現成可用的導覽樹已進行太多變更時，才應使用此選項。<br /> 如需詳細資訊，請參閱 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">本區段</a>。<br /> </td> 
   </tr> 
   <tr> 

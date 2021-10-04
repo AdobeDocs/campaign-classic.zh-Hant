@@ -5,7 +5,7 @@ description: 了解如何為自訂實作設定事件
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 管道使用JavaScript函式來處理每則訊息。 此函式由使用者定義。
 
-它配置在「JSConnector」屬性下的&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;選項中。 每次收到事件時都會呼叫此javascript。 由[!DNL pipelined]進程運行。
+它配置在「JSConnector」屬性下的&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;選項中。 每次收到事件時，都會呼叫此JavaScript。 由[!DNL pipelined]進程運行。
 
 範例Javascript檔案為cus:triggers.js。
 

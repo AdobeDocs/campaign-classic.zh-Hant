@@ -2,9 +2,8 @@
 product: campaign
 title: 更新您的環境以使用IMS連線至Adobe Campaign
 description: 行銷活動 — IMS更新
-hide: true
-hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 9%
@@ -39,12 +38,12 @@ Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安�
 
    必須升級至下列其中一個新版本：
 
-   * 金標11。 [深入瞭解](../../rn/using/gold-standard.md)
-   * Campaign 21.1.3版。 [深入瞭解](../../rn/using/latest-release.md)
-   * Campaign 20.2.5版。 [深入瞭解](../../rn/using/release--20-2.md)
-   * Campaign 20.1.4版。 [深入瞭解](../../rn/using/release--20-1.md)
-   * Campaign 19.2.4版。 [深入瞭解](../../rn/using/release--19-2.md)
-   * Campaign 19.1.8版。 [深入瞭解](../../rn/using/release--19-1.md)
+   * 金標11。 [瞭解更多](../../rn/using/gold-standard.md)
+   * Campaign 21.1.3版。 [瞭解更多](../../rn/using/latest-release.md)
+   * Campaign 20.2.5版。 [瞭解更多](../../rn/using/release--20-2.md)
+   * Campaign 20.1.4版。 [瞭解更多](../../rn/using/release--20-1.md)
+   * Campaign 19.2.4版。 [瞭解更多](../../rn/using/release--19-2.md)
+   * Campaign 19.1.8版。 [瞭解更多](../../rn/using/release--19-1.md)
 
    這些版本隨附新的連線通訊協定。 升級對於Campaign伺服器和用戶端主控台都是強制性的：升級所有執行個體後，用戶端主控台必須升級至此版本，並且在2021年6月30日&#x200B;**之後，還能連線至Campaign。**
 
@@ -61,7 +60,7 @@ Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安�
 
 若要檢查連線模式，您可以：
 
-* 啟動Campaign用戶端主控台並存取您的執行個體連線設定。 如果選取&#x200B;**連線Adobe ID**&#x200B;選項，表示您使用的是AdobeIMS。
+* 啟動Campaign用戶端主控台並存取您的執行個體連線設定。 如果選取&#x200B;**連線Adobe ID**&#x200B;選項，表示您使用的是Adobe IMS。
 
    ![](../../integrations/using/assets/ims_1.png)
 
@@ -77,7 +76,7 @@ Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安�
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-如果出現此類警告，請確保安裝所用作業系統的最新更新。 [深入瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+如果出現此類警告，請確保安裝所用作業系統的最新更新。 [瞭解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 **2021年6月30日後**，您會看到下列訊息，且將無法再連線至Adobe Campaign:
 

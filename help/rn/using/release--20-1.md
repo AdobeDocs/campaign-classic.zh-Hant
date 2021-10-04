@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 19%
@@ -17,7 +17,7 @@ ht-degree: 19%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/limited_2.png) 發行版本 20.1.4 - 版本編號 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png)發行版本 20.1.4 - 版本編號 9126 {#release-20-1-4-build-9126}
 
 _2021年 4 月 15 日_
 
@@ -51,19 +51,19 @@ _2020 年 12 月 23 日_
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.3 - 版本編號 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.1.3 - 版本編號 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.1.2 - 版本編號 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.1.2 - 版本編號 9123{#release-20-1-2-build-9123}
 
 _2020 年 3 月 13 日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.1 - 版本編號 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.1 - 版本編號 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
@@ -93,13 +93,13 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>hadoopFDA Connector已經過改良，可支援Hadoop3.0和Cloudera。</p>
-    <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-hadoop.md">詳細文件</a>，以瞭解詳情。</p>
+    <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-hadoop.md">詳細文件</a>以瞭解詳情。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-**安全性增強功能**
+**安全性改善功能**
 
 * 改善報表設定的安全性，以防止點按劫持。 這適用於新報表。 對於舊報表，您必須重新發佈以套用變更。 (NEO-13282)
 
@@ -119,7 +119,7 @@ _2020年2月17日_
 
 * 改善推播通知功能（nms:address和nms:appSubscriptionRcp）所使用表格的隔離管理和清除。 若為iOS（僅限HTTP2連接器），已停用的Token處理方式與Android相同。 NmsAppSubscriptionRcp表中現在設定了禁用標誌。 [顯示全文](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* 已在&#x200B;**JavaScript程式碼**&#x200B;和&#x200B;**進階JavaScript程式碼**&#x200B;工作流程活動中新增選項，以定義逾時期間。 這可防止javascript執行階段執行太久。 如果經過逾時期間，工作流程就會停止。 預設逾時為1小時。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md)
+* 已在&#x200B;**JavaScript程式碼**&#x200B;和&#x200B;**進階JavaScript程式碼**&#x200B;工作流程活動中新增選項，以定義逾時期間。 這可防止JavaScript執行階段執行太長。 如果經過逾時期間，工作流程就會停止。 預設逾時為1小時。 [顯示全文](../../workflow/using/sql-code-and-javascript-code.md)
 
 * 在中間來源伺服器上找不到相符的相關性時，現在會停止傳送分析，並顯示對應的錯誤訊息。
 

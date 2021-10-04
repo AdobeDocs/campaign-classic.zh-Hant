@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -174,7 +174,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和/或純文字，AMP版�
 
 ### 向電子郵件提供者註冊以傳送AMP電子郵件 {#delivering-amp-emails-by-registering}
 
-您可以向支援的電子郵件提供者註冊，以將您的寄件者網域新增至允許清單，借此試驗傳送動態電子郵件。
+您可以向支援的電子郵件提供者註冊，以便將您的寄件者網域新增至允許清單，借此試驗傳送動態電子郵件。
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和/或純文字，AMP版�
 
 ## 教學課程影片 {#amp-email-video}
 
-以下影片說明如何在Adobe Campaign 啟動 AMP，並展示其使用情形。
+以下影片說明如何在 Adobe Campaign 啟動 AMP，並展示其使用情形。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
