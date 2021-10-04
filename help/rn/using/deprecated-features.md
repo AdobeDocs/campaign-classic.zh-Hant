@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
   <tr>  
    <td>報告<br></td>
-   <td><p>在AdobeFlash PlayerEOL後，量規報表和圖表呈現引擎將不再可用。 <a href="../../reporting/using/creating-a-new-report.md">了解更多</a></p>
+   <td><p>在 Adobe Flash Player 終結壽命後，量規報告和圖表轉譯引擎將不再可用。 <a href="../../reporting/using/creating-a-new-report.md">瞭解更多</a></p>
   </tr>
   <tr>  
    <td>傳真頻道<br></td>
@@ -242,10 +242,10 @@ Adobe Campaign 與下列 SMS 連接器不相容：
 
 ### CRM 連接器 {#crm-connectors}
 
-自Campaign第21.1發行版本開始，下列CRM連接器不再與Campaign相容：
+下列 CRM 連接器自 Campaign 發行版本第 21.1 版起已棄用。
 
 * Soap API - 內部部署：2007、2015、2016 年
 * Soap API - 線上：2015、2016 年
 * Web API - Microsoft Dynamics CRM 2016
-* Web API - Microsoft Dynamics CRM 2016更新1
+* Web API – Microsoft Dynamics CRM 2016 更新第 1 版
 * Oracle On Demand API

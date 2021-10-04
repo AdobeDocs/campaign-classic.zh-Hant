@@ -10,7 +10,7 @@ type: Documentation
 source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
 workflow-type: tm+mt
 source-wordcount: '2546'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -118,8 +118,8 @@ ht-degree: 98%
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + Adobe Analytics 連接器{#analytics-connector}
          + [Adobe Analytics Connector布建](platform/using/adobe-analytics-provisioning.md)
-         + [Adobe Analytics Connector整合](platform/using/adobe-analytics-connector.md)
-         + [如何移轉至Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
+         + [Adobe Analytics 連接器整合](platform/using/adobe-analytics-connector.md)
+         + [如何移轉至 Adobe Analytics 連接器](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [說明與支援選項](support.md)
 + 建立及傳送訊息 {#sending-messages}
@@ -439,7 +439,7 @@ ht-degree: 98%
       + [訂閱服務](workflow/using/subscription-services.md)
       + [更新資料](workflow/using/update-data.md)
       + [CRM 連結器](workflow/using/crm-connector.md)
-      + [更改資料源](workflow/using/change-data-source.md)
+      + [變更資料來源](workflow/using/change-data-source.md)
    + 流量控制活動 {#flow-control-activities}
       + [關於流量控制活動](workflow/using/about-flow-control-activities.md)
       + [開始和結束](workflow/using/start-and-end.md)

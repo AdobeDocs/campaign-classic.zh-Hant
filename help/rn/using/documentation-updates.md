@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,20 +23,20 @@ ht-degree: 98%
 
 ## 2021 年 8 月{#aug-2021}
 
-新增工作流程活動：變更資料來源 — [了解更多](../../workflow/using/change-data-source.md)
+新增新的工作流程活動：變更資料來源 — [了解更多](../../workflow/using/change-data-source.md)
 
-適用性徽章已新增至檔案頁面：**僅適用於v7**&#x200B;的Campaign Classicv7功能，而&#x200B;**適用於v7和v8**&#x200B;的常見功能。
+可用性徽章已新增至文件頁面： **僅適用於 v7**&#x200B;的 Campaign Classic v7 功能，而&#x200B;**適用於 v7 和 v8** 的常見功能。
 
-已新增有關Campaign與AEM Assets之間整合的附註，此整合已從Adobe Experience Manager 6.4開始解壓縮。 [了解更多](../../integrations/using/configuring-access-to-assets.md)
+已新增關於 Campaign 與 AEM Assets 之間整合的附註，此整合已從 Adobe Experience Manager 6.4 開始解壓縮。 [了解更多](../../integrations/using/configuring-access-to-assets.md)
 
-移除AdobeFlash後，報表和Web應用程式螢幕擷取畫面和參數已更新。
+移除 Adobe Flash 後，已更新報表和 Web 應用程式螢幕擷取畫面和參數。
 
-**儀表**&#x200B;圖表類型已刪除。
+已刪除&#x200B;**儀表**&#x200B;圖表類型。
 
 
 ## 2021 年 7 月 {#july-2021}
 
-[Campaign 21.1.3 版已移至](../../rn/using/latest-release.md#release-21-1-3-build-9330)「一般可用性」(GA)。
+[Campaign 21.1.3 版本已移至](../../rn/using/latest-release.md#release-21-1-3-build-9330)「一般可用性」(GA)。
 
 
 ## 2021 年 6 月 {#june-2021}

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
+source-git-commit: 86eb9814fae42992b5ca0ce233f88ad90086007d
 workflow-type: tm+mt
 source-wordcount: '1191'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 84%
 
 ## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 第 12 發行版本{#gs-12}
 
-_2021年9月7日_
+_2021 年 9 月 7 日_
 
-建置9032@554dbcd包含以下修正：
+建置 9032@554dbcd 包含以下修正：
 
-* 修正在啟用追蹤的行傳送中開啟連結至Web應用程式時，導致500錯誤的問題。
+* 修正在啟用追蹤的 Line 傳遞中開啟連結至 Web 應用程式時，導致錯誤 500 的問題。
 
-_2021年8月27日_
+_2021 年 8 月 27 日_
 
-建置9032@99a3894包含下列修正：
+建置 9032@99a3894 包含以下修正：
 
-* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具（電子郵件用戶端、網際網路瀏覽器等）的錯誤 處理特殊字元。 URL參數現在已編碼。
-* 修正日期選擇器可能導致控制台顯示封鎖程式錯誤訊息的問題。 (NEO-36345)
+* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 處理特殊字元。 URL 參數現在已編碼。
+* 修正日期選擇器可能導致主控台顯示封鎖程式錯誤訊息的問題。 (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 第 11 發行版本{#gs-11}
 
@@ -41,18 +41,18 @@ _2021年 4 月 14 日_
 建置 9032@d030c36 包含以下修正：
 
 * 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
-* 維護[IMS存取](../../technotes/using/ims-updates.md)需要此主控台組建。
+* 維護 [IMS 存取](../../technotes/using/ims-updates.md)需要此主控台建置。
 
 **僅主控台升級為強制性。不需要升級伺服器。**
 
 >[!CAUTION]
 >
-> * 如果您透過Adobe ID連線至Campaign，透過AdobeIdentity Management服務(IMS)，對於Campaign伺服器和用戶端主控台而言，必須進行升級，才能在2021年6月30日&#x200B;**之後連線至Campaign。** [深入瞭解](../../technotes/using/ims-updates.md)
+> * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須提供[OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年9月**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2022年2月23日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 >
->了解更多[[!DNL Gold Standard] 11升級常見問題集](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)
+>進一步瞭解[[!DNL Gold Standard] 第 11 版升級常見問題](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)
 
 _2021年 3 月 2 日_
 
@@ -68,15 +68,6 @@ _2021年 3 月 2 日_
 
 _2020 年 12 月 22 日_
 
-<!--
->[!CAUTION]
->
-> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/using/ims-updates.md)
-> * This release comes with a [security fix](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): upgrade is mandatory to reinforce your environment security. 
-> * If you are using the Experience Cloud Triggers integration through oAuth authentication, you need to move to Adobe I/O as described [in this page](../../integrations/using/configuring-adobe-io.md). Legacy oAuth authentication mode with Campaign will be retired on **November 30, 2021**.
->
->Learn more in the [[!DNL Gold Standard] 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
--->
 版本編號 9032@d3b452f 包含下列增強功能及修正檔：
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。

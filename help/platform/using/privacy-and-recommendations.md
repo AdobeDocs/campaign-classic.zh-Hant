@@ -87,7 +87,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 
 因此，身為收集和分享個人資料的公司，您是資料控制方、客戶是資料主體，而 Adobe Campaign 在依您的指示處理個人資料時，會作為資料處理方。請注意，身為資料控制方，您有責任處理與資料主體的關係，例如管理[隱私權要求](#privacy-requests)。
 
-### 使用案例情境 {#use-case-scenario}
+### 使用實例情境 {#use-case-scenario}
 
 為了說明不同角色如何互動，以下是 GDPR 客戶體驗的高階使用案例。
 

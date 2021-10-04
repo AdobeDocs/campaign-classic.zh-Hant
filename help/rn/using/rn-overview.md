@@ -29,7 +29,7 @@ ht-degree: 95%
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
-最後&#x200B;**一個 GA 建置版本** : [[!DNL Gold Standard]  第 11 發行版本](../../rn/using/gold-standard.md#gs-11)及[ Campaign 21.1.4 版本](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+最後&#x200B;**一個 GA 版本編號**&#x200B;為：[[!DNL Gold Standard]  第 11 發行版本](../../rn/using/gold-standard.md#gs-11)及[ Campaign 21.1.4 版本](../../rn/using/latest-release.md#release-21-1-4-build-9340)。
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
@@ -45,7 +45,7 @@ ht-degree: 95%
 
 此外，客戶端控制台應與伺服器實例位於同一個版本。
 
-若要保持最新的實施，請務必閱讀每個新發行版本的[已棄用和已移除功能](../../rn/using/deprecated-features.md)和[相容性矩陣](../../rn/using/compatibility-matrix.md)頁面。
+若要保持最新的實施，請務必閱讀每個新發行版本的[已棄用和已移除功能](../../rn/using/deprecated-features.md)和[相容性對照表](../../rn/using/compatibility-matrix.md)頁面。
 
 ## 升級流程{#process-upgrade}
 
