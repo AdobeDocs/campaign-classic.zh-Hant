@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
+source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 85%
+source-wordcount: '600'
+ht-degree: 79%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 85%
 </tbody>
 </table>
 
-## RDBMS 伺服器{#RDBMSservers}
+## 關係資料庫管理系統(RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -133,10 +133,7 @@ ht-degree: 85%
 </td>
 </tr>
 <tr>
-<td>
-<p>PostgreSQL</p>
-<p>托管環境的預設資料庫伺服器</p>
-</td>
+<td>PostgreSQL</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -145,7 +142,7 @@ ht-degree: 85%
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p>注意：您也可以將 Amazon RDS for PostgreSQL 與上述指定版本搭配使用。</p>
+<p><strong>注意：</strong> 您也可以將Amazon RDS for PostgreSQL與上述指定的版本搭配使用。</p>
 </td>
 </tr>
 <tr>
@@ -156,7 +153,7 @@ ht-degree: 85%
 <p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。[深入瞭解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
+<p><strong>重要：</strong> 當Campaign伺服器在Linux上執行時，不支援將Microsoft SQL Server作為主要資料庫。[深入瞭解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
 </td>
 </tr>
 </tbody>
@@ -164,7 +161,10 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->RDBM S驅動程式必須與 RDBMS 伺服器版本相符。
+>* RDBM S驅動程式必須與 RDBMS 伺服器版本相符。
+>
+>* PostgreSQL是托管環境的RDBMS。
+
 
 ## CRM 連接器{#CRMconnectors}
 
