@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 12%
+source-wordcount: '326'
+ht-degree: 11%
 
 ---
 
@@ -63,6 +63,6 @@ Campaign Classic可讓您匯入壓縮或加密的檔案，以及匯出壓縮或�
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-執行匯入和匯出作業時，應遵循數個[最佳實務](../../platform/using/import-export-best-practices.md)，以確保資料庫內的資料一致，並避免在更新或匯出期間發生常見錯誤。
+執行匯入和匯出作業時，您應遵循數個[最佳實務](../../platform/using/import-export-best-practices.md)，以確保資料庫內的資料一致性，並避免在更新或匯出作業期間出現常見錯誤。
 
 此外，[本區段](../../platform/using/sftp-server-usage.md)也提供與SFTP伺服器使用相關的建議和常見問題。

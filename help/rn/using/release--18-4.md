@@ -3,7 +3,7 @@ product: campaign
 title: Campaign 18.4發行說明
 description: Campaign 18.4發行說明
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -103,20 +103,20 @@ ht-degree: 7%
     <ul> 
      <li> <p>訪問權限：可讓資料主體接收資料控制者擷取的其個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
      <li> <p>刪除權限：為資料主體賦予權利，讓資料控制者擷取的個人資料遭到清除，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
-    </ul> 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">詳細文件</a>，以瞭解詳情。<br /> </td> 
+    </ul> 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">詳細文件</a>以瞭解詳情。<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用中的設定檔案<br /> </td> 
-   <td> <p>Adobe Campaign現在提供作用中設定檔的清單，並透過專用的工作流程每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">詳細文件</a>，以瞭解詳情。</p> </td> 
+   <td> <p>Adobe Campaign現在提供作用中設定檔的清單，並透過專用的工作流程每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">詳細文件</a>以瞭解詳情。</p> </td> 
   </tr> 
   <tr> 
    <td> Android推播連接器增強功能<br /> </td> 
-   <td> <p>已增強Android連接器，以支援更高的吞吐量。 </p> <p>如需詳細資訊，請參閱<a href="../../delivery/using/configuring-the-mobile-application.md">詳細文件</a>，以瞭解詳情。</p> </td> 
+   <td> <p>已增強Android連接器，以支援更高的吞吐量。 </p> <p>如需詳細資訊，請參閱<a href="../../delivery/using/configuring-the-mobile-application.md">詳細文件</a>以瞭解詳情。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**安全性增強功能**
+**安全性改善功能**
 
 * 現在已停用外部實體的擴充，以防止未驗證使用者發生潛在攻擊。 (NEO-10173)
 * 強化權限，以防止標準使用者變更執行個體設定參數，例如應用程式存取URL、LDAP設定等。 (NEO-10171)
@@ -138,10 +138,10 @@ ht-degree: 7%
 * 對部署精靈SOAP呼叫(xtk:serverOptions#SaveOptions)強制存取限制。
 * weka.jar淘汰程式庫已移除，OpenSSL程式庫已更新，以最佳化安全性。
 * 改善帳單技術工作流程以保護執行個體效能。
-* 管理員設定或重設任何運算子密碼的功能已還原。 要執行此操作，請按一下右鍵某個運算子，選擇&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定該運算子的新密碼。 建議操作員在首次重新連線時變更其密碼。 如需詳細資訊，請參閱[詳細文件](../../production/using/lost-password.md)，以瞭解詳情。
-* 為了支援Adobe Target中的新多租用戶功能，現在當設定與Target整合的選項和外部帳戶時，可以將新的「at_property」參數新增至URL。 可在Adobe Target中找到此參數使用的值，且將供Campaign在對Target執行呼叫時使用。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
-* 您現在可以指定在按一下Adobe Target提供的影像時要開啟的預設登陸頁面。 過去，點按該影像會改為建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)，以瞭解詳情。
-* 在外部帳戶中新增&#x200B;**啟用SMPP追蹤**&#x200B;核取方塊，以強制追蹤輸出。 如需詳細資訊，請參閱[詳細文件](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)，以瞭解詳情。
+* 管理員設定或重設任何運算子密碼的功能已還原。 要執行此操作，請按一下右鍵某個運算子，選擇&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;並設定該運算子的新密碼。 建議操作員在首次重新連線時變更其密碼。 如需詳細資訊，請參閱[詳細文件](../../production/using/lost-password.md)以瞭解詳情。
+* 為了支援Adobe Target中的新多租用戶功能，現在當設定與Target整合的選項和外部帳戶時，可以將新的「at_property」參數新增至URL。 可在Adobe Target中找到此參數使用的值，且將供Campaign在對Target執行呼叫時使用。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)以瞭解詳情。
+* 您現在可以指定在按一下Adobe Target提供的影像時要開啟的預設登陸頁面。 過去，點按該影像會改為建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)以瞭解詳情。
+* 在外部帳戶中新增&#x200B;**啟用SMPP追蹤**&#x200B;核取方塊，以強制追蹤輸出。 如需詳細資訊，請參閱[詳細文件](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)以瞭解詳情。
 
 **技術演變**
 
@@ -171,7 +171,7 @@ queryDef
    </select>
    <orderBy>
       <node expr="@logDate"/>
-      <node expr="@id"/> <!-- implicitely added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
+      <node expr="@id"/> <!-- implicitly added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
    </orderBy>
 </queryDef>
 ```

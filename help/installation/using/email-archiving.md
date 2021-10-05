@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 3%
@@ -140,7 +140,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 ## 電子郵件密件副本最佳作法 {#best-practices}
 
 * **密件副本地址郵箱**:請確定其接收容量足以封存MTA所傳送的所有電子郵件。
-* **MTA共同化**:密件副本封存功能可在MTA層級運作。它可讓您複製MTA傳送的每封電子郵件。 由於MTA可在多個執行個體（例如開發、測試或生產）或甚至多個用戶端（在中間來源環境中）共同化，因此設定此功能會影響安全性：
+* **MTA集區**:密件副本封存功能可在MTA層級運作。它可讓您複製MTA傳送的每封電子郵件。 由於MTA可以匯集於多個執行個體（例如開發、測試或生產），甚至可匯集於多個用戶端（在中間來源環境中），因此設定此功能會影響安全性：
 
    * 如果您與多個用戶端共用MTA，且其中一個用戶端已啟用此選項，則此用戶端將會存取共用相同MTA之其他用戶端的所有電子郵件。 若要避免這種情況，請對每個用戶端使用不同的MTA。
    * 如果您對單一用戶端在多個執行個體（開發、測試、生產）間使用相同的MTA，則從所有三個執行個體傳送的訊息將會由dataLogPath選項重複。

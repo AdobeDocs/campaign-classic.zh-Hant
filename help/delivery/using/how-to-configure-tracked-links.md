@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -49,7 +49,7 @@ ht-degree: 10%
 
    >[!IMPORTANT]
    >
-   >將連結的URL用作標籤時，建議取消激活跟蹤以避免因網路釣魚而遭拒的風險。
+   >當連結的URL用作標籤時，建議停用追蹤以避免因網路釣魚而遭拒的風險。
    >
    >例如，如果將www.adobe.com URL插入訊息中並啟動追蹤，則超文字連結的內容將修改為https://nlt.adobe.net/r/?id=xxxxxx。 這表示收件者訊息用戶端可將其視為欺詐性。
 

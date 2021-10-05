@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9b914099f6755d6ae83f98697a3a38f8cfa625e1
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 選取表單呈現範本 {#selecting-the-form-rendering-template}
 
-表單設定可讓您選取用來產生頁面的範本。 要訪問它們，請按一下表單詳細資訊工具欄中的&#x200B;**[!UICONTROL Settings]**&#x200B;按鈕，然後選擇&#x200B;**[!UICONTROL Rendering]**&#x200B;頁簽。 預設提供許多範本（樣式表）。
+表單設定可讓您選取用來產生頁面的範本。 要訪問它們，請按一下表單詳細資訊工具欄中的&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕，然後選擇&#x200B;**[!UICONTROL Rendering]**&#x200B;頁簽。 預設提供許多範本（樣式表）。
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 

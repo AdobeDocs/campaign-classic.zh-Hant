@@ -2,14 +2,14 @@
 product: campaign
 title: Campaign Classicv7的硬體大小調整建議
 description: Campaign Classicv7的硬體大小調整建議
-source-git-commit: 3912874210ab16a132e51d9bb71508c8d244fe22
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Campaign Classicv7的硬體大小調整建議 {#hardware-sizing-reco}
+# 硬體調整建議{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->本指南僅供一般範例指南之用。 您必須先與Adobe Campaign Customer Success Manager互動，以測量部署的確切大小，再開始您的Campaign專案。 **在完** 成此操作之前，不要獲取或部署任何基礎架構或硬體。
+>本文僅提供一般範例指南。 您必須先與Adobe Campaign Customer Success Manager互動，以測量部署的確切大小，再開始您的Campaign專案。 **在完** 成此操作之前，不要獲取或部署任何基礎架構或硬體。
 
-本檔案提供在內部部署資料中心或虛擬化雲環境中部署Adobe Campaign Classic v7的一般准則。 這種類型的部署（稱為&#x200B;**混合**&#x200B;或&#x200B;**中間來源**）會將Campaign行銷例項和行銷資料庫置於您的操作控制之下，同時使用Adobe雲端傳訊服務來傳送電子郵件、簡訊或SMPP訊息，並收集電子郵件開啟、退信及點擊追蹤資料。
+本檔案提供在內部部署資料中心或虛擬化雲環境中部署Adobe Campaign Classic v7的一般建議。 這種類型的部署（稱為&#x200B;**混合**&#x200B;或&#x200B;**中間來源**）會將Campaign行銷例項和行銷資料庫置於您的操作控制之下，同時使用Adobe雲端傳訊服務來傳送電子郵件、簡訊或SMPP訊息，並收集電子郵件開啟、退信及點擊追蹤資料。
 
 行銷例項是Adobe Campaign架構中推動所有行銷活動，並儲存行銷活動傳回的所有收件者資料和分析資料的部分。 行銷執行個體是一組執行Adobe Campaign服務的內部部署伺服器，以及關係資料庫。
 
@@ -258,5 +258,6 @@ Adobe建議在將系統投入生產之前，對Adobe Campaign的任何虛擬化�
 ## 相關主題
 
 * [促銷活動監控程式](../../production/using/monitoring-processes.md)
+* [行銷活動一般架構](../../installation/using/general-architecture.md)
 * [效能和輸送量問題](../../production/using/performance-and-throughput-issues.md)
 * [安全性與隱私權檢查清單](../../installation/using/get-started-security-privacy.md)

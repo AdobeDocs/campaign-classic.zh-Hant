@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL From]**&#x200B;欄位中，使用可供收件者輕鬆識別的名稱（例如您的品牌名稱），以提高傳送的開始率。 若要進一步改善收件者的體驗，您可以新增人員名稱，例如「Emma from Megastore」。
 
-1. 在&#x200B;**[!UICONTROL Reply address text]**&#x200B;欄位中，預設會使用寄件者的地址進行回覆。 不過，Adobe建議使用現有的實際位址，例如您的品牌客戶服務。 在此情況下，如果收件者傳送回覆，客戶服務將能處理。
+1. 在&#x200B;**[!UICONTROL Reply address text]**&#x200B;欄位中，預設會使用發件人地址進行回覆。 不過，Adobe建議使用現有的實際位址，例如您的品牌客戶服務。 在此情況下，如果收件者傳送回覆，客戶服務將能處理。
 
 ### 設定控制組
 

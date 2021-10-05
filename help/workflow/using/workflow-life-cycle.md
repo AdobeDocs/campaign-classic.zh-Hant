@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
    當不再進行任何任務或運算子明確停止執行個體時，工作流程為「已完成」。
 
-例如，**Start**&#x200B;和&#x200B;**Delivery**&#x200B;活動概述，而&#x200B;**Approval**&#x200B;活動在下方的工作流程中閃爍。
+例如，**Start**&#x200B;和&#x200B;**Delivery**&#x200B;活動已概述，而&#x200B;**Approval**&#x200B;活動在以下工作流程中閃爍。
 
 ![](assets/new-workflow-6.png)
 

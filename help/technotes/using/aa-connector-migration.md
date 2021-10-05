@@ -3,7 +3,7 @@ product: campaign
 title: 移轉至Adobe Analytics Connector
 description: Campaign - Analytics Connector常見問題集
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 6d3e21fa00771a47d846d502e2d4d5971aa39b29
+source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-自Campaign Classicv7 21.1.3發行版本開始，已棄用Adobe Analytics Data Connector。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
+自Campaign Classicv7 21.1.3發行版本開始，已棄用Adobe Analytics Data Connector。 [瞭解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
 2021年8月1日起，Adobe Campaign Classic已從舊版Data Connectors UI中移除，不過現有的Campaign整合將持續收集資料，並將資料傳遞至Adobe Analytics，直到2022年3月1日為止。 在當天以後，整合將停止收集資料並傳遞至Adobe Analytics。
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 現已推出Campaign Classicv7與Adobe Analytics之間的新整合。 主要變更列於下方。
 
-* Adobe Campaign Classic與Adobe Analytics驗證的整合已從使用者/密碼移至AdobeIdentity Management服務(IMS)。 因此，您必須實作AdobeIMS，並透過Adobe ID](../../integrations/using/about-adobe-id.md)連線至促銷活動[，再開始實作Analytics Connector。
+* Adobe Campaign Classic與Adobe Analytics驗證的整合已從使用者/密碼移至AdobeIdentity Management服務(IMS)。 因此，您必須先實作Adobe IMS，並透過Adobe ID](../../integrations/using/about-adobe-id.md)連線至Campaign [，再開始實作Analytics Connector。
 
 * **連絡日期**&#x200B;分類（原為日期類型）已由Adobe Analytics淘汰。 對於移轉的整合，仍會維持相同類型。 對於Campaign建立的任何&#x200B;**連絡日期**，類型將為&#x200B;**字串**。
 
@@ -38,7 +38,7 @@ ht-degree: 5%
 
 * 請注意，`nlserver`程式應以IMS技術帳戶使用者設定，新連接器才能運作。 此變更必須由Adobe完成。 若要實作此功能，請連絡[Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-* 如果您是Adobe Genesis API，且工作流程自訂可從Adobe Analytics提取和推送資料，現在需要使用新的Adobe Analytics 1.4/2.0 API。 [了解更多](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
+* 如果您是Adobe Genesis API，且工作流程自訂可從Adobe Analytics提取和推送資料，現在需要使用新的Adobe Analytics 1.4/2.0 API。 [瞭解更多](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
 ## 您有受到影響嗎？
 

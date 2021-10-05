@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
+source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 98%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 98%
          + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
          + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
          + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
-         + [與 CRM 同步資料](platform/using/crm-data-sync.md)
+         + [將資料與CRM同步](platform/using/crm-data-sync.md)
       + Adobe Analytics 連接器{#analytics-connector}
          + [Adobe Analytics Connector布建](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics 連接器整合](platform/using/adobe-analytics-connector.md)
@@ -213,7 +213,6 @@ ht-degree: 98%
       + [傳遞疑難排解](delivery/using/delivery-troubleshooting.md)
       + [傳遞狀態](delivery/using/delivery-statuses.md)
       + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
-      + [在 ISP 中斷後更新跳出資格](delivery/using/update-bounce-qualification.md)
       + [認識隔離管理](delivery/using/understanding-quarantine-management.md)
    + 追蹤訊息 {#tracking-messages}
       + [關於訊息追蹤](delivery/using/about-message-tracking.md)
@@ -852,6 +851,7 @@ ht-degree: 98%
    + 電子郵件和推播通知{#technotes-email}
       + [Apple iOS上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
       + [Apple Mail隱私保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [如何更新錯誤的硬退信](delivery/using/update-bounce-qualification.md)
       + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
       + [已追蹤的 URL 更新](technotes/using/tracked-urls.md)
    + 移轉至Adobe Managed Services{#dc-migration}

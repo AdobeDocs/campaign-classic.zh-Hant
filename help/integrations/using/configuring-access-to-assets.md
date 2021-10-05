@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 若要使用Adobe Campaign與Experience Cloud資產之間的整合，您必須：
 
 * Adobe Experience Cloud組織
-* 已啟用AdobeIMS驗證模式
+* 已啟用Adobe IMS驗證模式
 
 若要啟用Adobe Campaign與Adobe Experience Cloud之間的連線，請透過IMS(Adobe ID連線服務)設定連線。 在[透過Adobe ID](../../integrations/using/about-adobe-id.md)連線檔案中會詳細說明此設定。 它涉及：
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->自Adobe Experience Manager 6.4起，此功能已解除編譯。 [了解詳情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=en#removed-features)
+>自Adobe Experience Manager 6.4起，此功能已停止服務。 [了解詳情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=en#removed-features)
 
 若要整合AEM Assets與Adobe Campaign，您必須先設定Adobe Experience Manager與Adobe Campaign之間的整合。 此設定主要需要：
 

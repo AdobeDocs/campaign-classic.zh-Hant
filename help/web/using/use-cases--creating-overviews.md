@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ ht-degree: 0%
 
 1. 套用&#x200B;**dottedFilter**。
 
-   此樣式在先前選擇的&#x200B;**[!UICONTROL Single-page Web applicatio]** n模板中引用。
+   此樣式在先前選擇的&#x200B;**[!UICONTROL Single-page Web application]**&#x200B;模板中引用。
 
    ![](assets/s_ncs_configuration_webapp_container002.png)
 

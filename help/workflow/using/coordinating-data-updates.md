@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-此使用案例詳細說明了如何建立工作流程，當您使用工作流程的數個執行時，該工作流程可讓您管理伴隨更新。
+此使用案例詳細說明了如何建立工作流程，讓您在使用工作流程的數個執行時管理伴隨的更新。
 
 目的是在執行另一更新操作之前檢查更新過程是否已結束。 為此，我們將設定一個實例變數，並讓工作流測試是否正在運行實例以決定是否繼續執行工作流並執行更新。
 

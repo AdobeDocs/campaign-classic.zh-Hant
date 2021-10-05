@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 範例:
 
-1. 建立工作流程並新增「查詢」活動。 深入瞭解.
+1. 建立工作流程並新增「查詢」活動。 瞭解更多.
 
 1. 開啟「查詢」活動，並依照下列方式在nmsTrackingUrl表格上建立篩選器：源URL以http://&lt;%開頭，或源URL以https://&lt;%開頭。
 
@@ -152,7 +152,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
    >[!NOTE]
    >
-   >您可以透過`hasNamedRight('admin')`移除`$(loginId) = 0 or $(login) = 'admin'`，讓所有具有管理員權限的使用者看到這些密碼。
+   >您可以將`$(loginId) = 0 or $(login) = 'admin'`取代為`hasNamedRight('admin')` ，讓所有具有管理員權限的使用者都能查看這些密碼。
 
 ## 保護包含PII的頁面
 

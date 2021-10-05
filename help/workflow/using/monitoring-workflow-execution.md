@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [本區段](supervising-workflows.md#supervising-workflows)也提供如何建立工作流程以監控「暫停」、「停止」或「有錯誤」之工作流程集的狀態的使用案例。
 
-此外，執行個體的管理員可以使用&#x200B;**稽核軌跡**&#x200B;來檢查活動，以及上次對工作流程完成的修改，工作流程的狀態。 有關詳細資訊，請參閱[Campaign Classicv7生產指南](../../production/using/audit-trail.md)。
+此外，執行個體的管理員可使用&#x200B;**稽核軌跡**&#x200B;來檢查活動，以及上次對工作流程完成的修改，工作流程的狀態。 有關詳細資訊，請參閱[Campaign Classicv7生產指南](../../production/using/audit-trail.md)。
 
 監控不同Campaign流程的其他方式見[Campaign Classicv7生產指南](../../production/using/monitoring-guidelines.md)。
 

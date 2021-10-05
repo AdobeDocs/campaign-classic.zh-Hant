@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
@@ -49,7 +49,7 @@ ht-degree: 6%
 數位內容編輯器的匯入功能可搭配下列支援的格式運作：
 
 * CSS:系統不會匯入.zip檔案中顯示的影像。 CSS中對這些影像的參考不會更新。
-* JS:系統不會匯入.zip檔案中顯示的影像。 JS中對這些影像的參照不會更新。
+* JS:系統不會匯入.zip檔案中顯示的影像。 JS中對這些影像的參考不會更新。
 * Iframe:連結的頁面不會匯入。
 * 登錄頁面和網頁應用程式：如果缺少&#x200B;**form**&#x200B;標籤，則會出現警告。 `<form> </form>`必須始終出現在消息正文中。
 

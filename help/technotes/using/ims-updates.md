@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: 更新您的環境以使用IMS連線至Adobe Campaign
+title: Technote — 更新您的環境以使用IMS連線至Adobe Campaign
 description: 行銷活動 — IMS更新
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '591'
 ht-degree: 9%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 9%
 
 ![](../../assets/v7-only.svg)
 
-2021年6月30日起，將變更[AdobeIdentity Management系統](https://helpx.adobe.com/enterprise/using/identity.html)(IMS)登入功能，這可能影響您繼續使用Adobe Campaign的能力。 了解如何確保您能持續使用Adobe Campaign Classic v7而不中斷。
+2021年6月30日起，[AdobeIdentity Management系統](https://helpx.adobe.com/enterprise/using/identity.html)(IMS)登入功能將有所變更，這可能會影響您繼續使用Adobe Campaign的能力。 了解如何確保您能持續使用Adobe Campaign Classic v7而不中斷。
 
 ## 有什麼改變？
 
-AdobeIdentity Management服務(IMS)將於2021年6月30日起停止支援舊版Internet Explorer。**** [深入瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+AdobeIdentity Management服務(IMS)於2021年6月30日&#x200B;**停止支援舊版Internet Explorer**。 [深入瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安全架構的一部分，可讓使用者登入用戶端主控台，進而登入Adobe Campaign。
 
@@ -78,7 +78,7 @@ Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安�
 
 如果出現此類警告，請確保安裝所用作業系統的最新更新。 [瞭解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
-**2021年6月30日後**，您會看到下列訊息，且將無法再連線至Adobe Campaign:
+如果您未更新Internet Explorer版本，會看到下列訊息，且無法再連線至Adobe Campaign:
 
 ![](../../integrations/using/assets/do-not-localize/errorUpdateReq.png)
 

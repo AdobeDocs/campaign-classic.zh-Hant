@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -55,7 +55,7 @@ var query = xtk.queryDef.create(
 
 若要擷取這些資訊，請遵循下列步驟：
 
-1. 從&#x200B;**[!UICONTROL Query]**&#x200B;活動按一下右鍵出站轉變，然後選擇&#x200B;**[!UICONTROL Display the target]**。
+1. 以滑鼠右鍵按一下&#x200B;**[!UICONTROL Query]**&#x200B;活動的出站轉變，然後選取&#x200B;**[!UICONTROL Display the target]**。
 
    ![](assets/uc_operator_4.png)
 

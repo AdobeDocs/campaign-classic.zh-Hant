@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '3007'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/limited_2.png) 發行版本 20.2.5 - 版本編號 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/limited_2.png)發行版本 20.2.5 - 版本編號 9188 {#release-20-2-5-build-9188}
 
 _2021年 4 月 15 日_
 
@@ -46,7 +46,7 @@ _2021年 3 月 31 日_
 * 修正使用自訂目標對應時，帳單工作流程可能失敗的問題。 自訂架構的主索引鍵儲存在「sourceId」欄中，該欄僅允許整數值。 它現在允許整數和字串值。 （NEO-25914、NEO-28146）
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.4 - 版本編號 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.2.4 - 版本編號 9187 {#release-20-2-4-build-9187}
 
 _2021年 4 月 15 日_
 
@@ -65,7 +65,7 @@ _2020 年 12 月 22 日_
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須提供[OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年9月**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2022年2月23日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **功能改善**
@@ -85,20 +85,20 @@ _2020 年 12 月 22 日_
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.3 - 版本編號 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.2.3 - 版本編號 9182 {#release-20-2-3-build-9182}
 
 _2020 年 9 月 11 日_
 
 * 修正了由於傳送組件上單一錯誤功能導致記憶體過載，導致傳送準備遭到封鎖的迴歸。(NEO-27346)
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
-* 修正了 HTML 範本管理上的迴歸，導致追蹤 URL 因索引錯誤表示而變得可見。(NEO-25909)
+* 修正HTML範本管理上的回歸，導致追蹤URL因索引標籤誤譯而變得可見。 (NEO-25909)
 * 修正了資料庫清除工作流程因非受管理資料來源而可能失敗的問題。(NEO-23160、NEO-23364)
 * 清除工作流程現在會依 100 的批次清除過期清單，而非逐一清除。
 * 修正了導致無法修改外部帳戶內部名稱的迴歸。(NEO-27323)
 * 修正了升級後期間的迴歸，而導致 nlserver（錯誤記錄）錯誤啟動。
 * 已改善共用記憶體的更新管理。20.2 中所需的其他步驟已不再需要。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.2 - 版本編號 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.2.2 - 版本編號 9180 {#release-20-2-2-build-9180}
 
 _2020 年 7 月 22 日_
 
@@ -123,7 +123,7 @@ _2020 年 7 月 22 日_
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.2.1 - 版本編號 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.2.1 - 版本編號 9178 {#release-20-2-1-build-9178}
 
 _2020 年 6 月 8 日_
 
@@ -321,7 +321,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修正了造成清理工作流程當機的迴歸。
 * 修正了在執行實例發佈範本時可能發生的問題。
 * 修正了 collectPrivacyRequests 技術工作流程無法執行的問題。(NEO-20513、NEO-25169)
-* 修正了更新至 9080 組建版本後，嘗試連線至 Audience Manager 時可能發生的問題。(NEO-20511、NEO-25167)
+* 修正了在升級至9080組建版本後，嘗試連線至Audience Manager時可能發生的問題。 (NEO-20511、NEO-25167)
 * 修正了匯出 PDF 或 XLS 格式報表時可能發生的問題。(NEO-20982、NEO-23493、NEO-23348)
 * 修正了傳送傳遞後，傳遞清單可能顯示傳送兩次的問題。
 * 修正了傳遞準備問題，路由設定設為透過中間來源傳送傳遞時，可能會發生此問題。

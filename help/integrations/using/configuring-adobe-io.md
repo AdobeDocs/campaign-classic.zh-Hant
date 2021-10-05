@@ -8,23 +8,23 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 5eea976f86b62987c38c0fcd893bf3532a2cf301
+source-git-commit: ca2349abce07c890e9d87d07e26dbca4f13d2fb6
 workflow-type: tm+mt
 source-wordcount: '707'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 為 Adobe Experience Cloud 觸發器配置 Adobe I/O {#configuring-adobe-io}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 >[!CAUTION]
 >
 >如果您透過oAuth驗證使用舊版Triggers整合，**您需要依照**下方所述移至Adobe I/O。
 >請注意，在移至[!DNL Adobe I/O]期間，某些傳入的觸發器可能會遺失。
 >
->**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須[提供OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
+>**2021年10月20日**&#x200B;已淘汰Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2022年2月23日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須[提供OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
 
 ## 先決條件 {#adobe-io-prerequisites}
 

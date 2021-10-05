@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 1. 儲存此報表。
 
-## 建模圖表 {#modelizing-the-chart}
+## 為圖表建模 {#modelizing-the-chart}
 
 儲存報表後，應會顯示此訊息。 您現在可以建立報表的圖表。
 

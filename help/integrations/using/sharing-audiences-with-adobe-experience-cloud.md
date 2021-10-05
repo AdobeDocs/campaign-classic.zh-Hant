@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 6%
@@ -34,8 +34,8 @@ ht-degree: 6%
 
 此整合支援兩種類型的Adobe Experience Cloud ID:
 
-* **訪客ID**:此類型的識別碼可調解Adobe Experience Cloud訪客與Adobe Campaign收件者。
-* **宣告ID**:此類型的識別碼會與Adobe Campaign資料庫中的元素調解所有類型的資料。在Adobe Campaign中以預先定義的調解金鑰呈現。
+* **訪客ID**:此類型的識別碼可協調Adobe Experience Cloud訪客與Adobe Campaign收件者。
+* **宣告ID**:此類型的識別碼可協調所有類型的資料與Adobe Campaign資料庫中的元素。在Adobe Campaign中以預先定義的調解金鑰呈現。
 
    >[!NOTE]
    >

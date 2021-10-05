@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
@@ -43,7 +43,7 @@ ht-degree: 2%
 主要屬性為：
 
 * **[!UICONTROL visibleIf]** :會隱藏中繼資料中的欄位，因此無法在結構檢視、欄選取項目或運算式產生器中存取這些欄位。但這不會隱藏任何資料，如果在運算式中手動輸入欄位名稱，則會顯示值。
-* **[!UICONTROL accessibleIf]** :會隱藏資料（以空值取代），使其不會產生查詢。如果visibleIf為空，則會獲得與&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的運算式。
+* **[!UICONTROL accessibleIf]** :會隱藏資料（以空值取代），使其不會產生查詢。如果visibleIf為空，則會取得與&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的運算式。
 
 以下是在Campaign中使用此屬性的後果：
 

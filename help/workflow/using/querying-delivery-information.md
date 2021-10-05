@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -179,7 +179,7 @@ ht-degree: 1%
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## 傳遞後篩選收件者的行為 {#filtering-recipients--behavior-folllowing-a-delivery}
+## 篩選傳送後的收件者行為 {#filtering-recipients--behavior-folllowing-a-delivery}
 
 在工作流程中， **[!UICONTROL Query]**&#x200B;和&#x200B;**[!UICONTROL Split]**&#x200B;方塊可讓您選取先前傳送後的行為。 此選取是透過&#x200B;**[!UICONTROL Delivery recipient]**&#x200B;篩選器執行。
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 ### 啟動配置 {#start-configuration}
 
-預設會為每個執行個體啟動&#x200B;**stat**&#x200B;模組。 在同一台電腦上共用實例，或在實例共用相同的IP地址時，使用單個統計伺服器：其他人必須是殘疾人。
+預設會為每個執行個體啟動&#x200B;**stat**&#x200B;模組。 當實例在同一台電腦上儲存，或當實例共用相同的IP地址時，使用單個統計伺服器：其他人必須是殘疾人。
 
 ### 伺服器埠的定義 {#definition-of-the-server-port}
 

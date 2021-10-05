@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2369'
 ht-degree: 7%
@@ -91,7 +91,7 @@ ht-degree: 7%
 * 修正了在傳送中使用種子地址時，ID耗盡的問題。 (NEO-11842)
 * 修正使用複雜工作流程時可能發生的用戶端凍結問題。 (NEO-11847)
 * 修正搭配1:N連結使用值分佈時的顯示問題。 (NEO-11820)
-* 修正工作流程熱度圖中的Oracle錯誤。
+* 修正「工作流程熱度圖」的Oracle錯誤。
 * 修正在擴充活動中新增優惠方案主張時的正確問題。
 * 修正SQL資料管理連線問題。
 * 修正了若為負ID，會產生暫時工作流程表格名稱的問題。
@@ -123,20 +123,20 @@ ht-degree: 7%
      <li> <p>在iOS中追蹤靜默通知 </p> </li> 
      <li> <p>在iOS中對註冊呼叫實作意見反應</p> </li> 
      <li> <p>改善iOS傳送準備速度</p> </li> 
-    </ul> <p>現在起，受到Google停用GCM的影響，Android V2連接器僅能連接FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細文件</a>，以瞭解詳情。FCM的手動升級詳見本<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>。 </p> </td> 
+    </ul> <p>現在起，受到Google停用GCM的影響，Android V2連接器僅能連接FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細文件</a>以瞭解詳情。FCM的手動升級詳見本<a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
-   <td> <p>已新增新的資料管理工作流程活動。 <strong>SQL資料管理</strong>活動可讓您撰寫或複製貼上自己的SQL指令碼，以建立和填入工作表格（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">詳細文件</a>，以瞭解詳情。</p></td> 
+   <td> <p>已新增新的資料管理工作流程活動。 <strong>SQL資料管理</strong>活動可讓您撰寫或複製貼上自己的SQL指令碼，以建立和填入工作表格（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">詳細文件</a>以瞭解詳情。</p></td> 
   </tr> 
   <tr> 
    <td> 監視工作流程<br /> </td> 
-   <td> <p>透過新的Adobe Campaign工作流程熱度圖，平台管理員可快速以圖形化方式呈現所有同時進行的工作流程，借此監控執行個體的負載並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">詳細文件</a>，以瞭解詳情。</p> <p>8977之前（從組建8700開始）的組建版本，也可依需求提供工作流程熱度圖套件。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此頁</a>。</p> </td> 
+   <td> <p>透過新的Adobe Campaign工作流程熱度圖，平台管理員可快速以圖形化方式呈現所有同時進行的工作流程，借此監控執行個體的負載並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">詳細文件</a>以瞭解詳情。</p> <p>8977之前（從組建8700開始）的組建版本，也可依需求提供工作流程熱度圖套件。 有關請求和安裝它的詳細資訊，請參閱<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此頁</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**安全性增強功能**
+**安全性改善功能**
 
 * 修正了可能導致伺服器端請求偽造(SSRF)攻擊和拒絕服務(DoS)攻擊漏洞的安全問題。 (NEO-11453)
 * 內容（追蹤重新導向、鏡像頁面、調查等） 現在由Campaign搭配X-Robots-Tag提供：無快取標題。 這防止了Internet搜索引擎對此內容進行索引。 (NEO-11101)

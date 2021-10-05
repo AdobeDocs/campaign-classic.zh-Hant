@@ -9,7 +9,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 7%
@@ -40,7 +40,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 查詢段落<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>。</p> </td>
+   <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
 </table>

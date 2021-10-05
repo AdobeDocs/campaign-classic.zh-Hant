@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 0%
@@ -685,7 +685,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
-   <td> 在此之後建立的所有自訂結構（使用autopk="true"而不使用屬性"pkSequence"）將獲得自動生成的序列"auto_ 
+   <td> 在此之後建立的所有自訂結構（使用autopk="true"且不使用屬性"pkSequence"）將獲得自動生成的序列"auto_ 
     &lt;schemanamespace&gt; 
      &lt;schemaname&gt;
        _seq。 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: f232588b981d262ef67ff8b7a6f39ff3ea2505d3
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -579,7 +579,7 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
 DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
 ```
 
-其中&#x200B;**$(tsDate)**&#x200B;是為&#x200B;**XtkCleanup_AuditTrailPurgeDelay**&#x200B;選項定義的期間從哪個當前伺服器日期訂閱。
+其中&#x200B;**$(tsDate)**&#x200B;是為&#x200B;**XtkCleanup_AuditTrailPurgeDelay**&#x200B;選項定義的期間減去的當前伺服器日期。
 
 ### 清除Nmsaddress {#cleanup-of-nmsaddress}
 

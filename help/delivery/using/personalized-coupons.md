@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->依預設，抵用券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 有關如何使用其他表的說明，請參閱[編輯結構](../../configuration/using/data-schemas.md)。
+>依預設，抵用券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [深入瞭解](../../configuration/using/about-data-model.md#default-recipient-table)。
+>
+>了解如何在本頁](../../configuration/using/about-custom-recipient-table.md)中使用自訂收件者表格[。
 
 ## 管理抵用券不足 {#managing-insufficient-coupons}
 

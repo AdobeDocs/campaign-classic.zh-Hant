@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
    </sysFilter>
    ```
 
-* 限制讀取和寫入權限：
+* 限制讀和寫權限：
 
    在此，該篩選器用於禁止所有運算子對架構的「讀取」和「寫入」權限。 僅&#x200B;**internal**&#x200B;帳戶，以運算式&quot;$(loginId)!=0」，則具有這些權限。
 

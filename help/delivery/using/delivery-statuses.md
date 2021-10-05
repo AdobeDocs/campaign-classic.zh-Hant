@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 4%
 
 ---
@@ -97,7 +97,7 @@ ajouter screenshot -->
 
 如果您的傳送未傳送，且其狀態維持&#x200B;**[!UICONTROL Pending]**，則可能是下列結果：
 
-* 在傳送伺服器上執行模組和程式以及管理電子郵件傳送的MTA(Message Transfert Agent)可能尚未啟動或需要重新啟動。
+* 在傳送伺服器上執行模組和程式並管理電子郵件傳送的MTA(Message Transfer Agent)可能尚未啟動，或者可能需要重新啟動。
 
    若要檢查此項並視需要啟動模組，請套用下列步驟：
 

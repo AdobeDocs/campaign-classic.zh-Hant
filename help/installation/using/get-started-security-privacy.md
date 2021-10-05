@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->自2021年7月14日起，任何不支援TLS 1.2通訊協定的用戶端系統都將失去所有Adobe產品和服務的存取權。 在此日期之前，請確定所有使用者和用戶端系統均符合TLS 1.2規範。 [瞭解更多](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
+>自2021年7月14日起，任何不支援TLS 1.2通訊協定的用戶端系統都將失去所有Adobe產品和服務的存取權。 在此日期之前，請確定所有使用者和用戶端系統均符合TLS 1.2規範。 [瞭解更多](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## 伺服器配置
 

@@ -1,14 +1,12 @@
 ---
 product: campaign
-title: 技術檔案
-description: 技術檔案
-hide: true
-hidefromtoc: true
+title: Technote - Adobe Campaign組態更新
+description: Adobe Campaign組態更新
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 11%
+source-wordcount: '1137'
+ht-degree: 12%
 
 ---
 
@@ -72,7 +70,7 @@ ht-degree: 11%
 
 Adobe身分識別服務(IMS)將於2021年6月30日起停止支援舊版Internet Explorer。 ****[深入瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
-需要升級Campaign用戶端主控台，以確保與AdobeIMS相容。
+必須升級Campaign用戶端主控台，以確保與Adobe IMS相容。
 
 **您有受到影響嗎？**
 
@@ -103,7 +101,7 @@ Adobe身分識別服務(IMS)將於2021年6月30日起停止支援舊版Internet 
 
 ## 與Experience Cloud觸發器整合 {#acc-triggers-updates}
 
-舊版oAuth驗證服務已終止。 已將觸發整合驗證（原本以oAUTH驗證設定為基礎，用於存取管道）移至Adobe I/O。**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須提供[OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
+舊版oAuth驗證服務已終止。 已將觸發整合驗證（原本以oAUTH驗證設定為基礎，用於存取管道）移至Adobe I/O。**2021年9月**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2022年2月23日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 **您有受到影響嗎？**
 

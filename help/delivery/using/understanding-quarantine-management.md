@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2614'
 ht-degree: 15%
 
 ---
@@ -261,7 +261,7 @@ Adobe Campaign每10分鐘連絡Baidu伺服器以擷取已傳送訊息的狀態�
 
 **針對Android V2**
 
-Android V2隔離機制使用的程式與Android V1相同，適用於訂閱和排除更新的程式也相同。 如需詳細資訊，請參閱[Android V1](#android-quarantine)區段。
+Android V2隔離機制使用的程式與Android V1相同，也同樣適用於訂閱和排除更新。 如需詳細資訊，請參閱[Android V1](#android-quarantine)區段。
 
 <table> 
  <tbody> 
@@ -528,7 +528,7 @@ SMS訊息的隔離機制與一般程式全域相同。 請參閱[關於隔離](#
 
 使用SMPP通訊協定傳送SMS訊息時，錯誤管理的處理方式不同。 有關Extended generic SMPP連接器的詳細資訊，請參閱[本頁](sms-set-up.md#creating-an-smpp-external-account)。
 
-SMPP連接器會從SR（狀態報表）訊息中擷取資料，該訊息使用規則運算式(regexes)傳回以篩選其內容。 然後，此資料將與&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表中的資訊（可通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;菜單獲得）匹配。
+SMPP連接器會從SR（狀態報表）訊息中擷取資料，該訊息是使用規則運算式(regexes)傳回以篩選其內容。 然後，此資料將與&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表中的資訊（可通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;菜單獲得）匹配。
 
 在限定新類型的錯誤之前，預設情況下，失敗原因始終設定為&#x200B;**Recommended**。
 

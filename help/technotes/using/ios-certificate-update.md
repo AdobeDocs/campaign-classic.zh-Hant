@@ -1,13 +1,11 @@
 ---
 product: campaign
-title: 技術檔案
-description: 技術檔案
-hide: false
-hidefromtoc: true
+title: Technote - Apple推播通知服務伺服器憑證更新
+description: Apple推播通知服務伺服器憑證更新
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -16,7 +14,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-2021年3月29日起，Apple推播通知服務(APN)基礎架構更新將影響Adobe Campaign Classic iOS通道。 作業系統組態變更為&#x200B;**強制**，以避免iOS推播通道中斷。
+2021年3月29日，Apple推播通知服務(APN)基礎架構更新影響了Adobe Campaign Classic iOS通道。 作業系統組態變更為&#x200B;**強制**，以避免iOS推播通道中斷。
 
 了解更多有關APN更改[的資訊，請參閱本頁](https://developer.apple.com/news/?id=7gx0a2lp)。
 

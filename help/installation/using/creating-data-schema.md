@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d2d0ff575edbee18febb5ec895fcec1e0ae34de7
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 9%
+source-wordcount: '180'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 9%
 
    ![](assets/wf_new_schema_fda.png)
 
-1. 輸入方案的名稱和說明，並選擇將啟用與資料庫連接的外部帳戶。 這允許訪問外部資料庫中可用的表清單。 選擇包含要收集的資料的表。
+1. 為架構輸入&#x200B;**[!UICONTROL Namespace]**&#x200B;和&#x200B;**[!UICONTROL Name]**，並選擇&#x200B;**[!UICONTROL External account]**，以啟用與資料庫的連接。 這允許訪問外部資料庫中可用的表清單。
+
+   ![](assets/wf_new_schema_select_table_fda.png)
+
+1. 從&#x200B;**[!UICONTROL Table name]**&#x200B;欄位中，選擇包含要收集的資料的表。
+
+   使用Snowflake，如果資料庫用戶已獲得正確權限，則可以在此處選擇視圖。 請注意，使用檢視時，Adobe Campaign無法自動產生XML架構，您必須自行建立。 如需檢視的詳細資訊，請參閱[Snowflake檔案](https://docs.snowflake.com/en/user-guide/views-introduction.html)。
 
    ![](assets/wf_new_schema_select_table_fda.png)
 

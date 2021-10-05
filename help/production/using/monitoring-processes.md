@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Pending events queued]** :訊息中心專 **用的指標**。如需詳細資訊，請參閱[此區段](../../message-center/using/additional-configurations.md#monitoring-thresholds)。
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** :有關負載的資訊，即在機器上運行的進程在最後一分鐘、五分鐘或十五分鐘內的使用率
+* **[!UICONTROL Load average (1/5/15 minutes)]** :有關負載的資訊，即在最後一分鐘、五分鐘或十五分鐘內在電腦上運行的進程對處理器的使用率
 
    **[!UICONTROL Current value]** :機器的實際負載。
 
@@ -341,11 +341,11 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
 **[!UICONTROL Billing]**&#x200B;技術工作流程會透過電子郵件將系統活動報表傳送至「帳單」運算子。 預設會在行銷執行個體上每月25日觸發。
 
-可在以下節點的子資料夾中找到技術工作流程：**管理** > **生產** > **技術工作流程**。
+技術工作流程可在以下節點的子資料夾中找到：**管理** > **生產** > **技術工作流程**。
 
 ![](assets/billing.png)
 
-一旦每月25日開始工作流程，您的帳單營運商將會在其收件匣中收到下列報表。
+一旦每月25日開始工作流程，您的帳單營運商便會在其收件匣中收到下列報表。
 
 ![](assets/billing_2.png)
 
@@ -605,7 +605,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 
 * **tcp**:檢查伺服器是否處於開啟或關閉狀態。必須輸入埠號。
 * **http**:檢查Web伺服器是否存在（應用程式伺服器可運行）。
-* **ncs**:檢查在「執行個體」屬性中輸入的執行個體的程式（工作流程錯誤、記憶體使用情況等）。**includead**（必填）屬性可讓您選擇顯示無效進程（「true」或「false」值）。
+* **ncs**:檢查在「執行個體」屬性中輸入的執行個體的程式（工作流程錯誤、記憶體使用情況等）。**included**（必要）屬性可讓您選擇顯示無效進程（「true」或「false」值）。
 * **redir**:檢查追蹤。
 
 在大多數情況下，只能保留&#x200B;**ncs**&#x200B;和&#x200B;**redir**&#x200B;子元素。

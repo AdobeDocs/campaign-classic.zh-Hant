@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -305,7 +305,7 @@ SQL欄位約束如下：
 
 >[!NOTE]
 >
->Adobe Campaign架構(**NmsTrackingLogId**)中參考的序列必須與傳回參數中ID數的SQL函式相關聯，並以逗號分隔。 此函式必須稱為&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名稱（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看&#x200B;**postgres-nms.sql**、**mssql-nms.sql**&#x200B;或&#x200B;**oracle-nms.sql**&#x200B;檔案，這些檔案隨&#x200B;**datakit/nms/eng/sql/**&#x200B;目錄中的應用程式一起提供，以恢復為每個資料庫引擎建立「NmsTrackingLogId」序列的示例。
+>Adobe Campaign架構(**NmsTrackingLogId**)中參考的序列必須與傳回參數中ID數的SQL函式相關聯，並以逗號分隔。 此函式必須稱為&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名稱（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看&#x200B;**postgres-nms.sql**、**mssql-nmssql**&#x200B;或&#x200B;**&lt;datakit/nms/eng/sql/**&#x200B;目錄中隨應用程式提供的&#x200B;**oracle-nms.sql**&#x200B;檔案，以恢復為每個資料庫引擎建立「NmsTrackingLogId」序列的示例。
 
 若要宣告唯一索引鍵，請在資料結構的主要元素上填入&#x200B;**autopk**&#x200B;屬性（以「true」值表示）。
 
@@ -361,7 +361,7 @@ SQL欄位約束如下：
 
 * ![](assets/join_with_campaign11.png) :基數1-1。例如，收件者與目前訂單之間。 收件者一次只能與目前訂單表的一個出現次數相關。
 * ![](assets/externaljoin11.png) :基數1-1，外部連接。例如，在收件者與其國家之間。 收件者只能與表國家/地區的一個出現次數相關。 不會儲存國家/地區表格的內容。
-* ![](assets/join_with_campaign1n.png) :基數1-N。例如，在收件者和訂閱表格之間。收件者可與訂閱表格上的數個項目相關。
+* ![](assets/join_with_campaign1n.png) :基數1-N。例如，在收件者和訂閱表格之間。收件者可與訂閱表格上的數個發生次數相關聯。
 
 對於使用聯合資料庫訪問的連接關係：
 

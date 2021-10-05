@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 3%
@@ -120,7 +120,7 @@ Android提供兩個連接器：
 
 1. 在&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL API version]**&#x200B;下拉式清單中的&#x200B;**[!UICONTROL HTTPV1]** 。
 
-1. 按一下&#x200B;**[!UICONTROL Load project json file to extract projet details...]**&#x200B;以直接載入您的JSON索引鍵檔案。 如需如何擷取JSON檔案的詳細資訊，請參閱[本頁](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
+1. 按一下&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;以直接載入您的JSON索引鍵檔案。 如需如何擷取JSON檔案的詳細資訊，請參閱[本頁](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
    您也可以手動輸入下列詳細資訊：
    * **[!UICONTROL Project Id]**

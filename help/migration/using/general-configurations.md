@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -620,7 +620,7 @@ logInfo("Done");
 
 ![](assets/migration_reports_1.png)
 -->
-如果您想要受益於新的報表功能，則必須重新發佈報表。 要執行此操作，請編輯報表&#x200B;**[!UICONTROL Properties]**，按一下&#x200B;**[!UICONTROL Rendering]**&#x200B;並選取v.6.x呈現引擎。 在此情況下，請檢查所有指令碼，並視需要加以變更。 關於PDF匯出，如果您已新增Open Office的特定指令碼，則此指令碼將不再適用於新的PDF匯出引擎(PhantomJS)。
+如果您想要受益於新的報表功能，則必須重新發佈報表。 在此情況下，請檢查所有指令碼，並視需要加以變更。 關於PDF匯出，如果您已新增Open Office的特定指令碼，則此指令碼將不再適用於新的PDF匯出引擎(PhantomJS)。
 
 ## 網站應用程式 {#web-applications}
 
@@ -631,10 +631,7 @@ logInfo("Done");
 
 ### 已識別的Web應用程式 {#identified-web-applications}
 
-如同報表（[了解更多](#reports)），如果您已新增JavaScript，則必須視需要檢查並調整。 如果您想從v7藍色橫幅（包含藍色標籤）中獲益，則必須重新發佈Web應用程式。 如果您的JavaScript程式碼運作正常，您可以選取v6.x轉譯引擎。 若非如此，您可以在調整程式碼時使用v6.0轉譯引擎，然後使用v6.x轉譯引擎。
-
->[!NOTE]
-選取呈現引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
+如同報表（[了解更多](#reports)），如果您已新增JavaScript，則必須視需要檢查並調整。 如果您想從v7藍色橫幅（包含藍色標籤）中獲益，則必須重新發佈Web應用程式。
 
 v7中的Web應用程式連接方法已更改。 如果您在已識別的Web應用程式中遇到任何連線問題，必須暫時啟用&#x200B;**serverConf.xml**&#x200B;檔案中的&#x200B;**allowUserPassword**&#x200B;和&#x200B;**sessionTokenOnly**&#x200B;選項。 升級後，修改下列選項值：
 
@@ -664,10 +661,7 @@ sessionTokenOnly="false"
 
 ### 匿名Web應用程式 {#anonymous-web-applications}
 
-如果您遇到任何問題，請重新發佈Web應用程式。 如果問題仍然存在，您可以選取v6.0轉譯引擎。 如果您尚未新增JavaScript，則可選取v6.x轉譯引擎，並受益於其新功能。
-
->[!NOTE]
-選取呈現引擎的步驟與選取報表的步驟相同。 請參閱[個人化報表](#personalized-reports)。
+如果您遇到任何問題，請重新發佈Web應用程式。
 
 ## 紅帽 {#red-hat}
 

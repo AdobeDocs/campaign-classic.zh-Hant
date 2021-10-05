@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 8%
@@ -64,7 +64,7 @@ ht-degree: 8%
 
 * 如果您有無效地址的清單，Adobe建議通過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;將其導入隔離表。
 
-* 在傳送分析期間，預設會排除被隔離的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [深入瞭解](#identifying-quarantined-addresses-for-a-delivery)
+* 在傳送分析期間，預設會排除被隔離的收件者：它們不是目標。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。例如，收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [瞭解更多](#identifying-quarantined-addresses-for-a-delivery)
 
 * Adobe Campaign會根據傳回的錯誤類型來管理錯誤位址。 如需詳細資訊，請參閱[本章節](understanding-quarantine-management.md)。
 

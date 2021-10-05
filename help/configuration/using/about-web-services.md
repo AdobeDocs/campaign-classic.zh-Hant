@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -30,7 +30,7 @@ Adobe Campaign API用於應用程式內的JavaScript中，以及其外部的SOAP
 
 ## 先決條件 {#prerequisites}
 
-使用Adobe Campaign API之前，您必須熟悉下列主題：
+使用Adobe Campaign API之前，您需先熟悉下列主題：
 
 * Javascript
 * SOAP協定
@@ -40,7 +40,7 @@ Adobe Campaign API用於應用程式內的JavaScript中，以及其外部的SOAP
 
 Adobe Campaign使用兩種API:
 
-* 一般資料會存取API以查詢資料模型資料。 請參閱[資料導向API](../../configuration/using/data-oriented-apis.md)。
+* 查詢資料模型資料的一般資料存取API。 請參閱[資料導向API](../../configuration/using/data-oriented-apis.md)。
 * 可讓您對每個物件採取動作的業務專屬API:傳遞、工作流程、訂閱等。 請參閱[商業導向API](../../configuration/using/business-oriented-apis.md)。
 
 若要開發API並與Adobe Campaign互動，您必須熟悉資料模型。 Adobe Campaign可讓您產生基礎的完整說明。 請參閱[模型說明](../../configuration/using/data-oriented-apis.md#description-of-the-model)。

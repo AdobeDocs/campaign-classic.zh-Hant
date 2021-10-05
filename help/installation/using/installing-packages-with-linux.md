@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 1%
@@ -93,7 +93,7 @@ yum install bc.x86_64
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-   如果缺少相關性，請運行以下命令：
+   如果缺少依賴項，請運行以下命令：
 
    ```
    apt-get install -f

@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 56470602e3acf777d5b00c293060c644c1fbbc37
+source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1714'
 ht-degree: 3%
 
 ---
@@ -80,4 +80,4 @@ ht-degree: 3%
 | **任務通知** (taskMgt) | 行銷資源(MRM) — 僅限Campaign v7 | 此工作流程可讓您傳送與行銷活動中的任務相關的通知訊息。 |
 | **追蹤** (追蹤 | 傳遞 | 此工作流程會執行追蹤資訊的復原和整合。 它還可確保重新計算跟蹤和傳遞統計資料，特別是報文中心存檔工作流所使用的統計資料。 預設會每小時觸發一次。 |
 | **更新事件狀態** (updateEventsStatus) | 交易式訊息執行（Message Center — 執行） | 此工作流程可讓您指派狀態給事件。 事件狀態如下：<ul><li>待定：事件在佇列中。 尚未與其關聯任何消息模板。</li><li>待定傳送：事件在佇列中，且訊息範本已與其相關聯，且目前由傳送處理。</li><li>已發送：此狀態是從傳送記錄檔複製而來。 這表示已傳送傳遞。</li><li>由傳送忽略：此狀態是從傳送記錄檔複製而來。 這表示已忽略傳送。</li><li>傳送錯誤：此狀態是從傳送記錄檔複製而來。 這表示傳送失敗。</li><li>未涵蓋的事件：事件無法與消息模板關聯。 將不會重新處理事件。</li></ul> |
-| **傳遞能力更新** (deliverabilityUpdate) | 傳遞 | 安裝「傳遞能力監控（電子郵件傳遞）」套件後，此工作流程會在夜間執行，並管理退信電子郵件資格規則，以及網域和MX的清單。 這需要在平台上開啟HTTPS埠 |
+| **傳遞能力更新** (deliverabilityUpdate) | 傳遞 | 安裝「傳遞能力監控（電子郵件傳遞）」套件後，此工作流程會在夜間執行，並管理退信電子郵件資格規則，以及網域和MX清單。 這需要在平台上開啟HTTPS埠。 |
