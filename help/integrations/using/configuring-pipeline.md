@@ -5,7 +5,7 @@ description: 了解如何設定管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -127,7 +127,7 @@ Marketing Cloud支援透過Adobe I/O專案進行驗證。
 
 | 選項 | 說明 |
 |:-:|:-:|
-| appName（舊版） | 在上傳公開金鑰的舊版Oath應用程式中註冊的OAuth應用程式的AppID。 如需關於此項目的詳細資訊，請參閱此[頁面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
+| appName（舊版） | 在上傳公開金鑰的舊版Oath應用程式中註冊的OAuth應用程式的AppID。 如需關於此項目的詳細資訊，請參閱此[頁面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint（舊版） | 取得閘道權杖的URL。 預設值：```https://api.omniture.com``` |
 | authPrivateKey（舊版） | 私密金鑰（舊版Oath應用程式中上傳的公開部分）AES使用XtkKey選項加密：```cryptString("PRIVATE_KEY")``` |
 | disableAuth（舊版） | 停用驗證，不使用閘道權杖進行連線只會被某些開發管道端點接受。 |
