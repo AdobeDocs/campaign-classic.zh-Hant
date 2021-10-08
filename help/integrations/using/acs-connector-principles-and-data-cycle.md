@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
@@ -89,19 +89,19 @@ ACS連接器會同步Campaign v7和Campaign Standard之間的隔離。
 
 ### 使用複製的配置檔案 {#using-replicated-profiles}
 
-Campaign Standard和促銷活動v7可使用復寫的設定檔來定位行銷活動中的工作流程。
+Replicated profiles can be used by Campaign Standard and Campaign v7 for targeting workflows in marketing campaigns.
 
-有關如何使用已複製配置檔案在Campaign Standard中發送傳送的說明，請參閱[同步配置檔案](../../integrations/using/synchronizing-profiles.md)。 提供其他指示，說明如何在Campaign v7和Campaign Standard之間共用取消訂閱資料。
+For instruction on how to send a delivery in Campaign Standard using replicated profiles, see [Synchronizing profiles](../../integrations/using/synchronizing-profiles.md). 提供其他指示，說明如何在Campaign v7和Campaign Standard之間共用取消訂閱資料。
 
 ### 限制 {#limitations}
 
 複製的設定檔可供傳送，但Campaign Standard有特定限制。 請檢閱下列項目，了解如何妥善管理這些項目。
 
 * **Campaign Standard的唯讀設定檔**:複製的配置檔案在Campaign Standard中為只讀。不過，您可以在Campaign v7中編輯收件者，修改會由ACS Connector以Campaign Standard方式自動更新。
-* **在Campaign Standard中建立的設定檔**:ACS Connector將收件者資料從Campaign v7複製到Campaign Standard。因此，源自Campaign Standard的設定檔不會復寫至Campaign v7。
-* **Campaign Standard的基本收件者資料**:ACS Connector會複製適合Campaign Standard的收件者資料。它包括收件者的姓名、地址、電子郵件地址、行動電話號碼、家庭電話號碼，以及其他相關聯繫資訊。 如果Campaign v7中可用的其他收件者欄位和自訂定位表格對您的工作流程至關重要，請洽詢您的顧問。
-* **匯入隔離的設定檔**:不想聯絡的設定檔清單可匯入至Campaign v7，或以隔離的設定檔Campaign Standard。設定檔的狀態會包含在應用程式之間的隔離同步中，且不會用於傳送。
-* **取消訂閱Campaign Standard中的服務**:從Campaign Standard到Campaign v7不會同步選擇取消訂閱傳送。不過，您可以設定Campaign Standard傳送，將其取消訂閱連結導向至Campaign v7。 按一下取消訂閱連結的收件者的設定檔會在Campaign v7中更新，且資料會複製到Campaign Standard。 請參閱[變更取消訂閱連結](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link)。
+* **Profiles created in Campaign Standard**: ACS Connector replicates recipient data in one direction, from Campaign v7 to Campaign Standard. 因此，源自Campaign Standard的設定檔不會復寫至Campaign v7。
+* **Basic recipient data for Campaign Standard**: ACS Connector replicates recipient data that is suitable for Campaign Standard. It includes recipients&#39; names, addresses, email addresses, mobile phone numbers, home phone numbers, and other pertinent contact information. If additional recipient fields and custom targeting tables available in Campaign v7 are critical to your workflow, please speak to your consultant.
+* **Importing quarantined profiles**: Lists of profiles who do not want to be contacted can be imported into Campaign v7 or Campaign Standard as quarantined profiles. The status for the profiles is included in the quarantine synchronization between the applications and they will not be used in deliveries.
+* **取消訂閱Campaign Standard中的服務**:從Campaign Standard到Campaign v7不會同步選擇取消訂閱傳送。However, you can configure a Campaign Standard delivery to direct its unsubscription link to Campaign v7. 按一下取消訂閱連結的收件者的設定檔會在Campaign v7中更新，且資料會複製到Campaign Standard。 See [Changing the unsubscription link](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * 只有電子郵件廣播和追蹤記錄會從Campaign Standard複製到Campaign v7。
 
 ### 帳單 {#billing}
@@ -170,7 +170,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
    <td> @sourceId<br /> </td> 
   </tr> 
   <tr> 
-   <td> 建立日期<br /> </td> 
+   <td> Creation date<br /> </td> 
    <td> @created<br /> </td> 
   </tr> 
   <tr> 
@@ -190,7 +190,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
    <td> @firstName<br /> </td> 
   </tr> 
   <tr> 
-   <td> 中間名稱<br /> </td> 
+   <td> Middle name<br /> </td> 
    <td> @middleName<br /> </td> 
   </tr> 
   <tr> 
@@ -266,7 +266,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
 
 ### 權限轉換 {#rights-conversion}
 
-在Campaign v7和Campaign Standard中，權限的處理方式不同。 在Campaign v7中，權限管理是以資料夾為基礎，而在Campaign Standard中，權限管理則是以單位存取（組織/地理單位）為基礎。 Campaign Standard用戶屬於包含限制上下文的安全組。 因此，必須轉換Campaign v7權限系統，才能符合Campaign Standard。 執行權限轉換有數種方式。 您會在下方找到實作的範例。
+在Campaign v7和Campaign Standard中，權限的處理方式不同。 在Campaign v7中，權限管理是以資料夾為基礎，而在Campaign Standard中，權限管理則是以單位存取（組織/地理單位）為基礎。 Campaign Standard用戶屬於包含限制上下文的安全組。 Therefore, the Campaign v7 rights system needs to be converted to match the Campaign Standard one. 執行權限轉換有數種方式。 您會在下方找到實作的範例。
 
 1. 在&#x200B;**[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**&#x200B;下，使用&#x200B;**[!UICONTROL Synchronize]**&#x200B;按鈕檢索所有Campaign Standard安全組。 會排除現成可用的Campaign Standard群組。
 
@@ -286,28 +286,28 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
 >
 >此資訊只能用作一般准則。 請洽詢您的Adobe Campaign顧問以進行實作。
 
-進階實作會根據客戶需求，新增自訂復寫工作流程。 以下是一些範例：
+The advanced implementation will add custom replication workflows, depending on the customer&#39;s needs. 以下是一些範例：
 
 * 傳遞復寫
 * 行銷活動復寫
-* 程式複製
+* Program replication
 * 種子成員複製
 * 異動復寫
 * 等。
 
-**在收件者上復寫延伸欄位**
+**Replicating extended fields on recipients**
 
-在基本實作中，會複製現成可用的收件者欄位。 如果要複製已新增至收件者結構的自訂欄位，則需加以識別。
+With the basic implementation, the out-of-the-box recipient fields are replicated. If you want to replicate custom fields that you added to the recipient schema, you need to identify them.
 
 1. 在&#x200B;**[!UICONTROL Administration > ACS Connector > Data mapping]**&#x200B;下，在&#x200B;**[!UICONTROL nms:recipient]**&#x200B;表格上建立定位對應。
 
    ![](assets/acs_connect_implementation_6.png)
 
-1. 選擇要複製的其他欄位和其他需要的資訊（索引、連結、標識鍵）。
+1. Select the additional fields you want to replicate and other needed information (index, links, identification keys).
 
    ![](assets/acs_connect_implementation_7.png)
 
-1. 開啟專用的設定檔復寫工作流程（不是範本，而是工作流程例項本身）。 修改&#x200B;**[!UICONTROL Query]**&#x200B;和&#x200B;**[!UICONTROL Update data]**&#x200B;活動以包含這些欄位。 請參閱[技術和復寫工作流程](#technical-and-replication-workflows)。
+1. 開啟專用的設定檔復寫工作流程（不是範本，而是工作流程例項本身）。 Modify the **[!UICONTROL Query]** and **[!UICONTROL Update data]** activities to include these fields. 請參閱[技術和復寫工作流程](#technical-and-replication-workflows)。
 
    ![](assets/acs_connect_implementation_8.png)
 
@@ -317,7 +317,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
 
 在基本實作中，會複製現成可用的收件者表格。 如果您新增自訂收件者表格，以下是您識別表格的方式。
 
-1. 在&#x200B;**[!UICONTROL Administration > ACS Connector > Data mapping]**&#x200B;下，在自訂設定檔表格上建立定位對應。
+1. Under **[!UICONTROL Administration > ACS Connector > Data mapping]**, create a targeting mapping on your custom profile table.
 
    ![](assets/acs_connect_implementation_10.png)
 

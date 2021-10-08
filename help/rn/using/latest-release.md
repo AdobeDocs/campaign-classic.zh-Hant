@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
+source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
 workflow-type: tm+mt
-source-wordcount: '2403'
-ht-degree: 100%
+source-wordcount: '2457'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 100%
 
 了解[此頁面](rn-overview.md)中的 Campaign 建置狀態。
 
-## ![](assets/do-not-localize/green_2.png)發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
+
+## ![](assets/do-not-localize/green_2.png)發行版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
+
+_2021年10月8日_
+
+**修補程式**
+
+* 修正了將&#x200B;**Interaction**&#x200B;模組與[Power Booster](../../installation/using/power-booster-and-power-cluster.md)選項搭配使用時，無法儲存優惠方案主張的問題。 (NEO-39263)
+
+* 修正了在中間來源執行個體上使用多個IP相關性時，可能會發生的「在mid伺服器xxx上找不到ipaffinity xxx 」錯誤。 (NEO-37514)
+
+
+## ![](assets/do-not-localize/orange_2.png)發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
 
 _2021 年 9 月 7 日_
 

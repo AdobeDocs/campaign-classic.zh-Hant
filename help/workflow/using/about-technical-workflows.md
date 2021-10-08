@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
+source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 3%
@@ -51,10 +51,10 @@ ht-degree: 3%
 | **事件清除** (webAnalyticsPurgeWebEvents) | 網站分析連接器 | 此工作流允許您根據「有效期限」欄位中配置的期間從資料庫欄位中刪除每個事件。 |
 | **將受眾匯出至Adobe Experience Cloud** (exportSharedAudience) | 與Adobe Experience Cloud整合 | 此工作流程會將受眾匯出為共用受眾/區段。 這些對象可用於您所使用的不同Adobe Experience Cloud解決方案。 |
 | **預測** （預測） | 傳遞 | 此工作流程會分析儲存在臨時日曆中的傳送（建立臨時記錄）。 預設會每天凌晨1:00觸發。 |
-| **完整聚合計算(propositrcp多維資料集** )(agg_nmspropositrcp_full) | 優惠方案引擎（互動） | 此工作流程會更新選件主張多維度資料集的完整匯總。 預設會每天早上6點觸發。 此匯總會擷取下列維度：管道、傳送、行銷活動和日期。 然後會使用優惠方案主張多維度資料集來根據優惠方案產生報表。 您可以在[此小節](../../reporting/using/about-cubes.md)中了解更多立方體。 |
-| **轉換的聯絡人的標識** (webAnalyticsFindConverted) | 網站分析連接器 | 此工作流程會為在再行銷活動後完成購買的網站訪客建立索引。 您可以在「再行銷效率」報表（請參閱本頁面）中存取此工作流程所復原的資料。 |
+| **完整聚合計算(propositrcp多維資料集** )(agg_nmspropositrcp_full) | 優惠方案引擎（互動） | 此工作流程會更新選件主張多維度資料集的完整匯總。 預設會每天早上6點觸發。 This aggregate captures the following dimensions: Channel, Delivery, Marketing Offer and Date. 然後會使用優惠方案主張多維度資料集來根據優惠方案產生報表。 您可以在[此小節](../../reporting/using/about-cubes.md)中了解更多立方體。 |
+| **轉換的聯絡人的標識** (webAnalyticsFindConverted) | 網站分析連接器 | This workflow indexes site visitors that have completed their purchase after a re-marketing campaign. 您可以在「再行銷效率」報表（請參閱本頁面）中存取此工作流程所復原的資料。 |
 | **從Adobe Experience Cloud匯入對象** (importSharedAudience) | 與Adobe Experience Cloud整合 | 此工作流程可讓您將不同Adobe Experience Cloud解決方案的對象/區段匯入Adobe Campaign。 |
-| **行銷活動中傳送的工作** (deliveryMgt) | 行銷活動（行銷活動） | 此工作流程會觸發已核准的傳送，並開始對外部傳送的服務提供者進行後續處理。 也會傳送核准通知和提醒。 |
+| **行銷活動中傳送的工作** (deliveryMgt) | 行銷活動（行銷活動） | This workflow triggers the approved deliveries and starts post-processing the service provider for an external delivery. 也會傳送核准通知和提醒。 |
 | **服務提供者上的作業** (supplierMgt) | 行銷活動（行銷活動） | 傳遞經核准後，此工作流程就會開始處理提供者（傳送電子郵件給路由器及後續處理）。 |
 | **LINE V2存取權杖更新** (updateLineV2AccessToken) | LINE頻道 — 僅限Campaign v7 | 此工作流程會將存取權杖重新整理為LINE V2。 |
 | **MID到LineUserID遷移** (MIDoUserIDMigration) | LINE 頻道 | 此工作流將生成LINE V2用戶的ID，以便從LINE V1遷移到LINE V2。 |
@@ -67,13 +67,13 @@ ht-degree: 3%
 | **選件通知** (offerMgt) | 傳遞 | 此工作流程會將已核准的優惠方案部署至線上環境，以及優惠方案目錄中包含的每個類別。 |
 | **暫停的工作流程清除** (cleanupPausedWorkflows) | 傳遞 | 此工作流程會分析嚴重性設為正常的暫停工作流程，並在暫停太久時觸發警告和通知。 一個月後，暫停的技術工作流程會無條件停止。 預設會每週一早上5點觸發。 如需詳細資訊，請參閱[處理暫停的工作流程](monitoring-workflow-execution.md#handling-of-paused-workflows)。 |
 | **隱私權要求清除** (cleanupPrivacyRequests) | 隱私權資料保護法規 | 此工作流程會清除90天以前的存取要求檔案。 |
-| **處理批次事件** (batchEventsProcessing) | 交易式訊息執行（Message Center — 執行） | 此工作流程可讓您先將批次事件放入佇列，再將其與訊息範本建立關聯。 |
-| **處理即時事件** (rtEventsProcessing) | 交易式訊息執行（Message Center — 執行） | 此工作流程可讓您在將即時事件與訊息範本建立關聯之前，將其放入佇列中。 |
-| **主張同步** （主張同步） | 具有執行實例的選件引擎的控制 | 此工作流程會在用於互動的行銷執行個體與執行執行個體之間同步建議。 |
-| **Web事件的恢復** (webAnalyticsGetWebEvents) | 網站分析連接器 | 此工作流程會每小時下載指定網站上網際網路使用者行為的區段，並將其放入Adobe Campaign資料庫並啟動再行銷工作流程。 |
+| **處理批次事件** (batchEventsProcessing) | Transactional message execution (Message Center - Execution) | This workflow lets you put batch events into a queue before associating them with a message template. |
+| **Processing real time events** (rtEventsProcessing) | Transactional message execution (Message Center - Execution) | 此工作流程可讓您在將即時事件與訊息範本建立關聯之前，將其放入佇列中。 |
+| **主張同步** （主張同步） | 具有執行實例的選件引擎的控制 | This workflow synchronizes propositions between the marketing instance and the execution instance used for interactions. |
+| **Web事件的恢復** (webAnalyticsGetWebEvents) | Web Analytics connectors | 此工作流程會每小時下載指定網站上網際網路使用者行為的區段，並將其放入Adobe Campaign資料庫並啟動再行銷工作流程。 |
 | **報表匯總** (reportingAggregates) | 傳遞 | 此工作流程會更新報表中使用的匯總。 預設會每天凌晨2:00觸發。 |
-| **傳送指標和促銷活動屬性** (webAnalyticsSendMetrics) | 網站分析連接器 | 此工作流程可讓您透過Adobe Campaign® Analytics連接器，將電子郵件促銷活動指標從Adobe傳送至Adobe Experience Cloud套裝。 相關指標如下：已傳送(iSent)、開啟總數(iTotalRecipientOpen)、已點按的收件者總數(iTotalRecipientClick)、錯誤(iError)、選擇退出（選擇退出）(iOptOut)。 |
-| **庫存：訂購與警報** (stockMgt) | 行銷活動（行銷活動） | 此工作流將啟動訂單行上的庫存計算，並管理警告警報閾值。 |
+| **傳送指標和促銷活動屬性** (webAnalyticsSendMetrics) | 網站分析連接器 | 此工作流程可讓您透過Adobe Campaign® Analytics連接器，將電子郵件促銷活動指標從Adobe傳送至Adobe Experience Cloud套裝。 The indicators concerned are as follows: Sent (iSent), Total count of opens (iTotalRecipientOpen), Total number of recipients who clicked (iTotalRecipientClick), Errors (iError), Opt-Out (opt-out) (iOptOut). |
+| **庫存：訂購與警報** (stockMgt) | 行銷活動（行銷活動） | This workflow launches stock calculation on the order lines and manages warning alerts thresholds. |
 | **同步Facebook粉絲** (syncFacebookFans) | 社交網路（社交行銷） — 僅限行銷活動v7 | 此工作流程會每天早上7:00將Facebook粉絲匯入Adobe Campaign。 |
 | **同步Facebook頁面** (syncFacebook) | 社交網路（社交行銷） — 僅限行銷活動v7 | 此工作流程會每天早上7:00將Facebook頁面與Adobe Campaign同步。 |
 | **同步Twitter頁面** (syncTwitter) | 社交網路（社交行銷） — 僅限行銷活動v7 | 此工作流程會每天早上7:00將Twitter追隨者匯入Adobe Campaign。 |

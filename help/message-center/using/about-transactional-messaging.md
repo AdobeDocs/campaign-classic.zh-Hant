@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->交易式訊息需要特定授權。 請檢查您的許可協定。
+>交易式訊息需要特定授權。 請檢查您的授權合約。
 
 <!--Before starting with transactional messaging, make sure you read the corresponding [best practices and limitations]().-->
 
