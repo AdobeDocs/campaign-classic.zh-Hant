@@ -7,9 +7,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
 source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1515'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web 
 
 >[!IMPORTANT]
 >
-> 針對混合部署和內部部署實作，請務必遵循本[page](../../platform/using/adobe-analytics-provisioning.md)中詳述的布建步驟。
+> 針對混合部署和內部部署實作，請務必遵循此[頁面](../../platform/using/adobe-analytics-provisioning.md)中詳述的佈建步驟。
 
 若要設定資料連接器，您必須連線至 Adobe Campaign 執行個體並執行下列操作：
 
@@ -90,9 +90,9 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
 ### 設定轉換變數和成功事件 {#configure-conversion-success}
 
-您需要依下列方式設定&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**:
+您需要依照以下方式對您的 **[!UICONTROL Conversion variables]** 和 **[!UICONTROL Success events]** 進行設定:
 
-1. 選取您要連結至Adobe Campaign的&#x200B;**[!UICONTROL Report suite]**。
+1. 選取您要連結至 Adobe Campaign 的&#x200B;**[!UICONTROL Report suite]**。
 
 1. 從&#x200B;**[!UICONTROL Edit settings]**&#x200B;按鈕中選取&#x200B;**[!UICONTROL Conversion]** >  **[!UICONTROL Conversion variables]**。
 
@@ -133,9 +133,9 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
 1. 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 
-設定&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**&#x200B;後，請確定變數包含在為Analytics連接器建立的&#x200B;**[!UICONTROL Product Profile]**&#x200B;中。 如需詳細資訊，請參閱[建立Adobe Analytics產品設定檔](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile)。
+設定&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**&#x200B;後，請確定變數包含在為 Analytics 連接器建立的&#x200B;**[!UICONTROL Product Profile]**&#x200B;中。 如需詳細資訊，請參閱[建立 Adobe Analytics 產品設定檔](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile)。
 
-然後，您需要在Adobe Campaign Classic中設定&#x200B;**[!UICONTROL External accounts]**。
+然後，您需要在 Adobe Campaign Classic 中設定&#x200B;**[!UICONTROL External accounts]**。
 
 ### 在 Adobe Campaign Classic 中設定您的外部帳戶 {#external-account-classic}
 
@@ -161,7 +161,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
 1. 按一下 **[!UICONTROL Integration]** 下拉式清單旁的 **[!UICONTROL Configure]** 。
 
-1. 從&#x200B;**[!UICONTROL Configure Analytics integration]**&#x200B;視窗，將外部帳戶對應至您的報表套裝，並提供下列資訊：
+1. 從 **[!UICONTROL Configure Analytics integration]** 視窗，將外部帳戶與報告套裝對應，並提供下列資訊：
 
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
