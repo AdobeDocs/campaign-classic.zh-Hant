@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr> 
   <tr> 
    <td>網頁應用程式 - Microsites</td>
-   <td>自 Campaign 18.10 發行版本開始，已不再提供 Microsites。您可以在 Adobe Campaign 配置檔案，限制僅能存取專屬網存取，並使用 DNS 別名在 Campaign 中使用個人化 URL，藉此提高安全性。</td>
+   <td>自 Campaign 18.10 發行版本開始，已不再提供 Microsites。若要提高安全性，您可以在 Adobe Campaign 設定檔案限制僅能存取專屬網域，並使用 DNS 別名在 Campaign 中使用個人化 URL。</td>
   </tr> 
   <tr> 
    <td>推播通知 - iOS Binary Connector</td>
