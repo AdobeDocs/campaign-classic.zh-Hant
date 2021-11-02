@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 95%
 
 ![](assets/do-not-localize/blue3.png) **發行候選版本** (RC) - 具有新功能的最新版本。
 
-![](assets/do-not-localize/orange3.png) **不再可用**  — 無部署。無錯誤修正。 建議更新至較新的組建版本。
+![](assets/do-not-localize/orange3.png) **不再可用** — 無部署。無錯誤修正。 建議更新至較新的版本編號。
 
-![](assets/do-not-localize/red3.png) **已過時** -無部署。無錯誤修正。 現有實施必須升級。
+![](assets/do-not-localize/red3.png) **已棄用** － 無部署。無錯誤修正。 現有實施必須升級。
 
 ## 建議{#recommendations}
 
