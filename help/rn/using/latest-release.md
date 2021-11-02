@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2459'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 97%
 
 ## ![](assets/do-not-localize/green_2.png)發行版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
 
-_2021年10月8日_
+_2021 年 10 月 8 日_
 
 **修補程式**
 
-* 修正了將&#x200B;**Interaction**&#x200B;模組與[Power Booster](../../installation/using/power-booster-and-power-cluster.md)選項搭配使用時，無法正確管理優惠方案的問題。 (NEO-39263)
+* 修正了將 **互動** 模組與 [Power Booster](../../installation/using/power-booster-and-power-cluster.md) 選項搭配使用時，無法正確管理優惠的問題。 (NEO-39263)
 
-* 修正了在多中間來源執行個體上使用多個IP相關性時，傳送傳送時可能會發生的「在mid伺服器xxx上找不到ipaffinity xxx」錯誤。 (NEO-37514)
+* 修正了在多中間來源執行個體上使用多個 IP 相似性時，傳遞傳送時可能會發生「在 mid 伺服器 xxx 上找不到 ipaffinity xxx」的錯誤。 (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png)發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
