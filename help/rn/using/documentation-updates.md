@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Adobe Campaign Classic v7檔案更新
+title: Adobe Campaign Classic v7 文件更新
 description: 本頁列出了 Adobe Campaign Classic 文件中的所有新功能和更新
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4560'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 98%
 
 ## 2021 年 10 月{#oct-2021}
 
-現有技術已分組到新的&#x200B;**Technote**&#x200B;部分。
+現有技術已分組到新的 **Technote** 部分。
 
-更新「**硬體調整建議**」頁面，並將其新增至「**Technotes**」區段。 [顯示全文](../../technotes/using/hardware-sizing.md)
+更新「**硬體調整建議**」頁面，並將其新增至「**技術備註**」段落。 [閱讀全文](../../technotes/using/hardware-sizing.md)
 
 ## 2021 年 9 月{#sept-2021}
 
@@ -282,7 +282,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 和巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[顯示全文](../../platform/using/privacy-and-recommendations.md)
 
-已在子工作流程記錄檔和行為中新增資訊，以防發生錯誤。 [顯示全文](../../workflow/using/sub-workflow.md)
+已將資訊新增至子工作流程記錄和行為中，以防發生錯誤。[顯示全文](../../workflow/using/sub-workflow.md)
 
 已將最佳實務新增至&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動區段。[顯示全文](../../workflow/using/scheduler.md)
 
@@ -392,9 +392,9 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新「[安裝](../../installation/using/general-architecture.md)、[生產](../../production/using/foreword.md)及[設定](../../configuration/using/additional-parameters.md)」指南，其中包含 nlserver 服務啟動使用的新系統單元。您仍然可以使用 /etc/init.d/nlserver6，但 Adobe 建議您現在使用 systemctl 命令與 nlserver 服務互動。
 
-更新安裝指南，並與最新版相容性矩陣同步。 新增了新支援的系統。已移除已棄用和不支援的系統的發生次數。 [顯示全文](../../installation/using/general-architecture.md)
+已更新安裝指南，並與最新版本的相容性比較表同步。新增了新的可支援系統。移除已棄用及不支援的系統。[顯示全文](../../installation/using/general-architecture.md)
 
-更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 安裝指南新增了有關 IP 相似性的最佳實務。[顯示全文](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -412,7 +412,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
-更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 [此處](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)記錄新的 **[!UICONTROL Cleanup of Nmsaddress]** 工作流程。
 
@@ -462,7 +462,7 @@ AMP 互動式內容 - [顯示全文](../../delivery/using/defining-interactive-c
 
 **此版本隨附的其他文件更新**
 
-推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增章節，說明如何疑難排解行銷活動中，持續顯示「盡快開始」狀態的工作流程。[顯示全文](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -524,7 +524,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
@@ -548,7 +548,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
 
-更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)
 
 新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](../../message-center/using/event-description.md)
 
@@ -587,7 +587,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
