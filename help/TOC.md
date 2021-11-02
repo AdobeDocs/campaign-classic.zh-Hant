@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,9 +109,9 @@ ht-degree: 97%
          + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
          + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
          + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
-         + [將資料與CRM同步](platform/using/crm-data-sync.md)
+         + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + Adobe Analytics 連接器{#analytics-connector}
-         + [Adobe Analytics Connector布建](platform/using/adobe-analytics-provisioning.md)
+         + [Adobe Analytics 連接器佈建](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics 連接器整合](platform/using/adobe-analytics-connector.md)
          + [如何移轉至 Adobe Analytics 連接器](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
@@ -842,18 +842,18 @@ ht-degree: 97%
       + [v6.02 中的特定設定](migration/using/specific-configurations-in-v6-02.md)
       + [v6.10 中的特定設定](migration/using/specific-configurations-in-v6-10.md)
    + [反轉程序](migration/using/about-rollback.md)
-+ Technotes {#technotes}
-   + [硬體調整建議](technotes/using/hardware-sizing.md)
-   + 升級和遷移{#technote-migration}
-      + [Technotes](technotes/using/technote.md)
++ 技術備註{#technotes}
+   + [硬體尺寸建議](technotes/using/hardware-sizing.md)
+   + 升級和移轉{#technote-migration}
+      + [技術備註](technotes/using/technote.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
    + 電子郵件和推播通知{#technotes-email}
-      + [Apple iOS上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Apple Mail隱私保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
-      + [如何更新錯誤的硬退信](delivery/using/update-bounce-qualification.md)
+      + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Apple 郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)
+      + [如何更新錯誤的硬退件](delivery/using/update-bounce-qualification.md)
       + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
-      + [已追蹤的 URL 更新](technotes/using/tracked-urls.md)
-   + 移轉至Adobe Managed Services{#dc-migration}
+      + [已追蹤 URL 更新](technotes/using/tracked-urls.md)
+   + 移轉至 Adobe Managed Services{#dc-migration}
       + [移轉至公用雲端](technotes/using/dc-migration.md)
       + [常見問答集](technotes/using/dc-migration-faq.md)
