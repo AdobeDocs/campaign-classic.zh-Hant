@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 79%
 </tbody>
 </table>
 
-## 關係資料庫管理系統(RDBMS){#RDBMSservers}
+## 關係資料庫管理系統 (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -142,7 +142,7 @@ ht-degree: 79%
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p><strong>注意：</strong> 您也可以將Amazon RDS for PostgreSQL與上述指定的版本搭配使用。</p>
+<p><strong>請注意：</strong>您也可以將 Amazon RDS for PostgreSQL 與上述指定版本搭配使用。</p>
 </td>
 </tr>
 <tr>
@@ -150,10 +150,10 @@ ht-degree: 79%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p><strong>重要：</strong> 當Campaign伺服器在Linux上執行時，不支援將Microsoft SQL Server作為主要資料庫。[深入瞭解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
+<p><strong>警告：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。[深入瞭解](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
 </td>
 </tr>
 </tbody>
@@ -161,14 +161,14 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->* RDBM S驅動程式必須與 RDBMS 伺服器版本相符。
+>* RDBMS 驅動程式必須與 RDBMS 伺服器版本相符。
 >
->* PostgreSQL是托管環境的RDBMS。
+>* PostgreSQL 是托管環境的 RDBMS。
 
 
 ## CRM 連接器{#CRMconnectors}
 
-與Adobe Campaign相容的客戶關係管理(CRM)系統列於下方。 [進一](../../platform/using/crm-connectors.md) 步了解Campaign CRM連接器。
+與 Adobe Campaign 相容的客戶關係管理 (CRM) 系統列於下方。 [進一步瞭解](../../platform/using/crm-connectors.md) Campaign CRM 連接器。
 
 <table>
 <tbody>
@@ -189,7 +189,7 @@ ht-degree: 79%
 
 ## 同盟資料存取 (FDA){#FederatedDataAccessFDA}
 
-與Adobe Campaign [同盟資料存取模組](../../installation/using/about-fda.md)相容的外部資料庫如下所列。
+與 Adobe Campaign [同盟資料存取模組](../../installation/using/about-fda.md)相容的外部資料庫如下所列。
 
 <table>
 <tbody>
@@ -233,10 +233,10 @@ ht-degree: 79%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -289,7 +289,7 @@ ht-degree: 79%
 
 ## 用戶端主控台 {#ClientConsoleoperatingsystems}
 
-下列作業系統和瀏覽器為使用[Campaign用戶端主控台](../../installation/using/installing-the-client-console.md)所需的&#x200B;**。**
+使用 [Campaign 用戶端主控台](../../installation/using/installing-the-client-console.md)時，需要&#x200B;**使用**&#x200B;下列作業系統和瀏覽器。
 
 ### 作業系統
 
@@ -298,8 +298,8 @@ ht-degree: 79%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ ht-degree: 79%
 
 ## 行動 SDK{#MobileSDK}
 
-您可以在下列作業系統上使用Campaign來傳送推播通知[，使用相關聯的[行動SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。](../../delivery/using/about-mobile-app-channel.md)
+您可以在下列作業系統上使用 Campaign 來傳送推播通知[，使用相關聯的[行動 SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。](../../delivery/using/about-mobile-app-channel.md)
 
 <table>
 <tbody>
@@ -353,7 +353,7 @@ ht-degree: 79%
 
 ## 瀏覽器{#Browsers}
 
-下列瀏覽器與[Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-)的Campaign相容。
+下列瀏覽器與 Campaign for [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) 相容。
 
 <table>
 <tbody>
@@ -404,7 +404,7 @@ ht-degree: 79%
 ## 更多相關資訊{#Morelikethis}
 
 * [Campaign Classic 發行說明](../../rn/using/latest-release.md)
-* [Campaign一般架構](../../installation/using/general-architecture.md)
-* [硬體調整建議](../../technotes/using/hardware-sizing.md)
+* [Campaign 一般架構](../../installation/using/general-architecture.md)
+* [硬體尺寸建議](../../technotes/using/hardware-sizing.md)
 * [已棄用的功能及系統](../../rn/using/deprecated-features.md)
 * [組建升級程序](../../production/using/build-upgrade.md)
