@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
+source-git-commit: 9d019109e51f4c579ef775e17ccbb10f7e30a2e2
 workflow-type: tm+mt
 source-wordcount: '2006'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 95%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.3 - 版本編號 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.3.3 - 版本編號 9234 {#release-20-3-3-build-9234}
 
 _2021年1月11日_
 
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正了與 broadlog 產生程序相關的迴歸問題，而此問題可能導致 MTA 程序當機。
 
-## ![](assets/do-not-localize/red_2.png) 發行版本 20.3.1 - 版本編號 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png)發行版本 20.3.1 - 版本編號 9228 {#release-20-3-1-build-9228}
 
 _2020 年 10 月 27 日_
 
@@ -32,7 +32,7 @@ _2020 年 10 月 27 日_
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年8月18日**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2021年11月30日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2021年11月30日。 您必須提供[OAuth應用程式](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID以Adobe。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。使用Campaign的舊版oAuth驗證模式 [已經退休了](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **2021年9月**. 托管環境可從擴充功能中獲益，直到  **2022年2月23日**. 身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **新增功能？**

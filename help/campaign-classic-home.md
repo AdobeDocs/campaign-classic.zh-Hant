@@ -6,7 +6,7 @@ exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 50%
+ht-degree: 53%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 50%
 
 * **[9月發行版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
 
-* **[Apple Mail隱私保護常](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** 見問題 **[](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 集和技術針對Apple發佈的iOS 15相關資訊，尋找初始指引
+* **[Apple郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)** 和 **[技術檔案](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 請參閱針對Apple關於iOS 15的公告所提供的初始指引
 
-* **[透過IMS/Adobe ID連線？升級至最新組建](technotes/using/ims-updates.md)**<br/>如果您使用IMS連線至Campaign，則必須升級至在2021年6月30日**&#x200B;之後能夠連線至Campaign **
+* **[透過IMS/Adobe ID連線？ 升級至最新組建版本](technotes/using/ims-updates.md)**<br/> 如果您使用IMS連線至Campaign，您必須升級，才能在** 2021年6月30日&#x200B;**
 
-* **[移除不正確的](delivery/using/update-bounce-qualification.md)**<br/> 硬退信了解如何在Apple中斷後更新不正確的硬退信
+* **[移除不正確的硬退信](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中斷後更新不正確的硬退信
 
-* **[保護您的促銷活](technotes/using/acc-config-updates.md)**<br/> 動執行個體更新至最新組建，以保護您的促銷活動平台
+* **[保護您的Campaign執行個體](technotes/using/acc-config-updates.md)**<br/> 更新至最新組建版本，以保護您的Campaign平台
 
-* **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 整合舊版oAuth驗證服務已終止：您需要移轉至Adobe I/O。
+* **[更新Adobe Experience Cloud Triggers整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth驗證服務已終止：您需要移轉至Adobe I/O。
 
 [更多更新](rn/using/documentation-updates.md)
 

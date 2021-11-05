@@ -40,7 +40,7 @@ _2021年 3 月 31 日_
 * 修正導致每日wfserver重新啟動停止執行工作流程的問題。 (NEO-30047)
 * 修正了在非管理員使用者嘗試同步 Adobe Experience Manager 範本時，使用 API 調用的安全性問題。（NEO-32389、NEO-23487）
 * 修正在透過範本建立的傳送上，關閉傳送對話方塊時，造成主控台當機的問題。 (NEO-31547)
-* 修正在促銷活動的&#x200B;**目標與工作流程**&#x200B;標籤內建立和儲存傳送時發生的問題：預覽會失敗，並出現下列錯誤。(NEO-29440)
+* 修正在 **目標定位與工作流程** 行銷活動的標籤：預覽會失敗，並出現下列錯誤。(NEO-29440)
 * 修正Tomcat 8.5傳送無效答案，而導致「交易式傳訊」記錄檔發生錯誤的問題。 (NEO-30858)
 * 修正了導致外部執行緒管理中記憶體損毀並影響效能的回歸問題。
 * 修正使用自訂目標對應時，帳單工作流程可能失敗的問題。 自訂架構的主索引鍵儲存在「sourceId」欄中，該欄僅允許整數值。 它現在允許整數和字串值。 （NEO-25914、NEO-28146）
@@ -65,13 +65,13 @@ _2020 年 12 月 22 日_
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021年9月**&#x200B;已淘汰具有Campaign [的舊版oAuth驗證模式](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管環境可從延伸功能中獲益，直到2022年2月23日&#x200B;**。**&#x200B;身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。使用Campaign的舊版oAuth驗證模式 [已經退休了](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **2021年9月**. 托管環境可從擴充功能中獲益，直到  **2022年2月23日**. 身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **功能改善**
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
-* 已變更原本以oAUTH驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移至Adobe I/O。 [了解更多](../../integrations/using/configuring-adobe-io.md)
+* 已變更原本以oAUTH驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移至Adobe I/O。 [深入了解](../../integrations/using/configuring-adobe-io.md)
 * [在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，](https://developer.apple.com/news/?id=c88acm2b)使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正了在連線錯誤後導致SMPP連接器停用、無法傳送其他SMS傳遞並導致效能問題的問題。 (NEO-28609)
@@ -91,7 +91,7 @@ _2020 年 9 月 11 日_
 
 * 修正了由於傳送組件上單一錯誤功能導致記憶體過載，導致傳送準備遭到封鎖的迴歸。(NEO-27346)
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
-* 修正HTML範本管理上的回歸，導致追蹤URL因索引標籤誤譯而變得可見。 (NEO-25909)
+* 修正了HTML範本管理上的回歸，導致追蹤URL因索引標籤誤譯而變得可見。 (NEO-25909)
 * 修正了資料庫清除工作流程因非受管理資料來源而可能失敗的問題。(NEO-23160、NEO-23364)
 * 清除工作流程現在會依 100 的批次清除過期清單，而非逐一清除。
 * 修正了導致無法修改外部帳戶內部名稱的迴歸。(NEO-27323)
