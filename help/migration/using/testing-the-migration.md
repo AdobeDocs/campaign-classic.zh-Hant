@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 1. 備份開發環境資料庫。
 1. 停止開發執行個體上的所有Adobe Campaign程式。
 1. 備份生產環境資料庫，並將其還原為開發環境。
-1. 在啟動Adobe Campaign服務之前，請運行&#x200B;**freezeInstance.js**&#x200B;燒錄指令碼，該指令碼允許您清除啟動備份時運行的任何對象的資料庫。
+1. 開始Adobe Campaign服務之前，請執行 **freezeInstance.js** 燒灼指令碼，該指令碼允許您清除啟動備份時運行的任何對象的資料庫。
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >預設情況下，該命令將在&#x200B;**dry**&#x200B;模式中啟動，並列出該命令執行的所有請求，而不啟動這些請求。 要執行燒灼請求，請在命令中使用&#x200B;**run**。
+   >命令預設會在 **乾燥** 模式，並列出該命令執行的所有請求，而不啟動這些請求。 若要執行燒灼請求，請使用 **執行** 中。
 
 1. 嘗試還原備份，以確保備份正確。 請務必訪問資料庫、表、資料等。
 1. 在開發環境中測試移轉程式。
 
-   [移轉至Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)的必要條件一節中會詳細說明完整程式。
+   完整程式於 [移轉至Adobe Campaign 7的必要條件](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) 區段。
 
 1. 如果開發環境的移轉成功，您可以移轉生產環境。
 
@@ -50,13 +50,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Campaign update命令(**postupgrade**)可讓您同步資源，以及更新結構和資料庫。 此操作只能在應用程式伺服器上執行一次。 同步資源後， **postupgrade**&#x200B;命令允許您檢測同步是否生成任何錯誤或警告。
+>Adobe Campaign更新命令(**postugrade**)可讓您同步資源，以及更新結構和資料庫。 此操作只能在應用程式伺服器上執行一次。 同步資源後， **postugrade** 命令可讓您檢測同步是否生成任何錯誤或警告。
 
 ## 移轉工具 {#migration-tools}
 
 各種選項可讓您評估移轉的影響並找出潛在問題。 這些選項將執行：
 
-* 在&#x200B;**config**&#x200B;命令中：
+* 在 **設定** 命令：
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,11 +70,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您必須使用&#x200B;**-instance:`<instanceame>`**&#x200B;選項。 我們不建議使用&#x200B;**-allinstances**&#x200B;選項。
+>您必須使用 **-instance:`<instanceame>`** 選項。 我們不建議使用 **-allinstances** 選項。
 
 ### -showCustomEntities和 — showDeletedEntities選項 {#showcustomentities-and--showdeletedentities-options}
 
-* **-showCustomEntities**&#x200B;選項顯示所有非標準對象的清單：
+* 此 **-showCustomEntities** 選項顯示所有非標準對象的清單：
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -86,7 +86,7 @@ ht-degree: 1%
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* **-showDeletedEntities**&#x200B;選項顯示資料庫或檔案系統中缺少的所有標準對象的清單。 對於每個缺少的對象，指定路徑。
+* 此 **-showDeletedEntities** 選項顯示資料庫或檔案系統中缺少的所有標準對象的清單。 對於每個缺少的對象，指定路徑。
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
@@ -117,10 +117,10 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 <table> 
  <thead> 
   <tr> 
-   <th> 表達式<br /> </th> 
+   <th> 運算式<br /> </th> 
    <th> 錯誤代碼<br /> </th> 
-   <th> 日誌類型<br /> </th> 
-   <th> 注釋<br /> </th> 
+   <th> 記錄類型<br /> </th> 
+   <th> 註解<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -128,43 +128,45 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 傳遞個人化不再支援此類語法。 請參閱<a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>。 否則，檢查值類型是否正確。<br /> </td> 
+   <td> 傳遞個人化不再支援此類語法。 請參閱 <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. 否則，檢查值類型是否正確。<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
    <td> PU-0002<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 不得使用此庫。<br /> </td> 
+   <td> 此程式庫不得使用。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 登錄(<br /> </td> 
+   <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 此連接方法不得再使用。 請參閱<a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">已識別的Web應用程式</a>。<br /> </td> 
+   <td> 此連接方法不得再使用。 請參閱 <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">已識別的Web應用程式</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 只有在從<strong>sessionTokenOnly</strong>模式的安全區域執行的JavaScript代碼中使用此函式時，才支援該函式。<br /> </td> 
+   <td> 只有當此函式用於從 <strong>sessionTokenOnly</strong> 模式。<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> 這種錯誤會導致遷移失敗。 請參閱<a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>。<br /> </td> 
+   <td> 這種錯誤會導致遷移失敗。 請參閱 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> 這種錯誤會導致遷移失敗。 請參閱<a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>。 如果您收到概述類型的Web應用程式錯誤記錄（從v6.02遷移），請參閱<a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">設定Campaign</a>。<br /> </td> 
+   <td> 這種錯誤會導致遷移失敗。 請參閱 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. 如果您收到概述類型的Web應用程式錯誤記錄（從v6.02遷移），請參閱 <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">設定Campaign</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> 不再支援此類型的部署。 Office 365和內部部署的Microsoft CRM連接器部署類型現已過時</a>。 要更改Web API部署，請參閱<a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Web應用程式</a>。<br /> </td>
+   <td> 不再支援此類型的部署。 Office 365和內部部署的Microsoft CRM連接器部署類型現已過時。 
+   </br>如果您在外部帳戶中使用其中一種已棄用的部署類型，則應刪除此外部帳戶，然後您應執行 <b>postugrade</b> 命令。 
+   </br>若要變更Web API部署，請參閱 <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">網路應用程式</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>
