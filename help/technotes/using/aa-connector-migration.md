@@ -3,7 +3,7 @@ product: campaign
 title: 移轉至Adobe Analytics Connector
 description: Campaign - Analytics Connector常見問題集
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
+source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 ## 如何更新？
 
-您需要升級至Campaign 21.1.3（或更新版本） **2022年3月1日前**.
+您需要升級至Campaign 21.1.3（或更新版本） **2022年8月前**.
 
 身為托管客戶，Adobe會與您合作，將您的執行個體升級至較新版本。 之後，您便能使用 [Adobe Analytics連接器](../../platform/using/adobe-analytics-connector.md).
 
