@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 傳遞:
 
-   * 建立傳送動作，請參閱[SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
+   * 建立傳送動作，請參閱 [SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
    * 傳送促銷活動（開始、暫停、停止、傳送校樣）,
    * 正在恢復傳送記錄。
 
@@ -30,17 +30,17 @@ ht-degree: 3%
    * 啟動工作流，
    * 驗證流程等
 
-      請參閱JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
+      請參閱 [JavaScript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
 
 * 內容管理
-* 訂閱管理，請參閱[訂閱(nms:subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
+* 訂閱管理，請參閱 [訂閱(nms:subscription)](#subscribe--nms-subscription-) 和 [取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-).
 * 資料流程：進口，出口。
 
 本節詳細說明「訂閱」、「取消訂閱」和「提交交付」服務的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI檔](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 案包含Adobe Campaign中SOAP呼叫與使用Javascript的其他資訊，以及應用程式中所使用所有方法和函式的完整參考。
+>[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) 包含有關Adobe Campaign中SOAP呼叫與使用Javascript的其他資訊，以及應用程式中所用所有方法和函式的完整參考。
 
 ## 訂閱(nms:subscription) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 </method>
 ```
 
-調解金鑰的定義必須通過XML文檔的`<recipient>`元素上的_**key**&#x200B;屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
+調解金鑰的定義必須透過_輸入&#x200B;**key** 屬性 `<recipient>` 元素。 此屬性的內容是逗號分隔的XPath清單。
 
 除錯誤外，此呼叫不會傳回任何資料。
 
@@ -136,9 +136,9 @@ ht-degree: 3%
 </method>
 ```
 
-調解金鑰的定義必須透過XML檔案`<recipient>`元素上的_key屬性輸入。 此屬性的內容是逗號分隔的XPath清單。
+調解金鑰的定義必須透過 `<recipient>` 元素。 此屬性的內容是逗號分隔的XPath清單。
 
-如果收件者不在資料庫中或未訂閱相關資訊服務，則服務不會執行任何動作且不會產生錯誤。
+如果收件者不在資料庫中或未訂閱相關資訊服務，則服務不執行任何操作，也不會產生錯誤。
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ ht-degree: 3%
 
 ### XML文檔示例 {#xml-document-example}
 
-此範例以來自外部資料來源的自訂傳送範本為基礎（此為檔案）。 傳遞範本中會詳細說明設定，因此呼叫發生時所有仍待傳送的內容，都是`<externalsource>`元素中的檔案內容。
+此範例以來自外部資料來源的自訂傳送範本為基礎（此為檔案）。 傳送範本中會完整說明設定，因此呼叫發生時所有仍待傳送的內容，都是 `<externalsource>` 元素。
 
 ```
 <delivery>

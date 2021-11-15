@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -146,7 +146,7 @@ ht-degree: 7%
 
 **功能改善**
 
-* 現在針對 Campaign Classic API 推出[專屬頁 面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
+* 現在針對 Campaign Classic API 推出[專屬頁 面](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
 * 現在支援PostgreSQL 10、Debian 9和Teradata16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
 * 建立SFTP連線時，您現在可以使用Proxy驗證。 如需詳細資訊，請參閱 [詳細檔案](../../installation/using/file-res-management.md) (NEO-9868)
 * 此 **日期計算公式** 使用直接郵件傳送範本建立單一傳送時，「傳送」屬性中現在可使用選項。 (NEO-9792)
@@ -155,7 +155,7 @@ ht-degree: 7%
 * 行動通道外部帳戶中有新的核取方塊，可在記錄檔中啟用詳細的SMPP追蹤，如此便能直接從Adobe Campaign介面存取輸出。
 * 在broadlogs中，現在會區分每小時的連線數量上限和訊息數量上限。 當達到限制時，就可以知道吞吐量為何受到限制。 以前，這兩種情況都會套用相同的訊息（「符合配額」）。
 * 現在，可以指定從池獲取連接時要執行的SQL指令碼。 此指令碼可用於設定預設架構。 此指令碼將在查詢段落後應用。 (NEO-11256)
-* Campaign SDK不再儲存使用者ID以符合我們的PII法規。 資料現在會以雜湊形式儲存。
+* Campaign SDK不再儲存使用者ID以符合PII法規。 資料現在會以雜湊形式儲存。
 * 匯入套件匯出XML檔案時，Campaign現在支援檔案中是否存在BOM，即使已明確宣告編碼亦然。
 
 **技術演變**

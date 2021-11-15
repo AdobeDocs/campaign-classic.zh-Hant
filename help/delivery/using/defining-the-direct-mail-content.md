@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 14%
 
 ## 擷取檔案 {#extraction-file}
 
-在&#x200B;**[!UICONTROL File]**&#x200B;欄位中定義包含已提取資料的檔案的名稱。 欄位右側的按鈕可讓您使用個人化欄位來建立檔案名稱。
+包含擷取資料的檔案名稱會定義於 **[!UICONTROL File]** 欄位。 欄位右側的按鈕可讓您使用個人化欄位來建立檔案名稱。
 
-依預設，會建立解壓縮檔案並儲存在伺服器上。 您可以將其儲存在電腦上。 要執行此操作，請檢查&#x200B;**[!UICONTROL Download the generated file after the analysis of the delivery]**。 在這種情況下，您需要指示本地儲存目錄的訪問路徑以及檔案名。
+依預設，會建立解壓縮檔案並儲存在伺服器上。 您可以將其儲存在電腦上。 若要這麼做，請檢查 **[!UICONTROL Download the generated file after the analysis of the delivery]**. 在這種情況下，您需要指示本地儲存目錄的訪問路徑以及檔案名。
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-對於直接郵件傳送，提取的內容定義在&#x200B;**[!UICONTROL Edit the extraction file format...]**&#x200B;連結中。
+對於直接郵件傳送，擷取的內容定義於 **[!UICONTROL Edit the extraction file format...]** 連結。
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -37,4 +37,4 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->此嚮導包括導出嚮導的步驟，詳見[Getting Started](../../platform/using/executing-export-jobs.md)部分。
+>此精靈包含匯出精靈的步驟，如 [快速入門](../../platform/using/executing-export-jobs.md) 區段。

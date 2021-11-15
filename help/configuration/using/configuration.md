@@ -6,22 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 0%
 
 ---
 
-# 設定Campaign Explorer導覽樹{#configuration}
+# Configure Campaign Explorer navigation tree{#configuration}
 
 ![](../../assets/v7-only.svg)
 
 作為專家用戶，您可以在資源管理器樹中添加資料夾並對其進行自定義。
 
-在本小節](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中進一步了解Campaign瀏覽器和導覽階層[。
+進一步了解Campaign瀏覽器和導覽階層 [在本節](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-導航清單使用的資料夾類型在遵循&#x200B;**xtk:navtree**&#x200B;架構文法的XML文檔中描述。
+導航清單使用的資料夾類型在遵循以下文法的XML文檔中進行描述 **xtk:navtree** 綱要。
 
 XML文檔的結構如下：
 
@@ -45,17 +45,17 @@ XML文檔的結構如下：
 </navtree>
 ```
 
-XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬性的&#x200B;**`<navtree>`**&#x200B;根元素，以指定文檔名和命名空間。 名稱和命名空間構成文檔標識密鑰。
+The XML document contains the **`<navtree>`** root element with the **name** and **namespace** attributes to specify the document name and namespace. 名稱和命名空間構成文檔標識密鑰。
 
-應用程式的全局命令在文檔中從&#x200B;**`<commands>`**&#x200B;元素聲明。
+應用程式的全局命令在文檔中聲明，來自 **`<commands>`** 元素。
 
-檔案類型的聲明在文檔中具有以下元素：**`<model>`**&#x200B;和&#x200B;**`<nodemodel>`**。
+The declaration of file types is structured in the document with the following elements: **`<model>`** and **`<nodemodel>`**.
 
 ## 全局命令 {#global-commands}
 
 全域命令可讓您啟動動作。 此動作可以是輸入表單或SOAP呼叫。
 
-可從主&#x200B;**[!UICONTROL Tools]**&#x200B;菜單訪問全局命令。
+Global commands are accessible from the main **[!UICONTROL Tools]** menu.
 
 命令配置結構如下：
 
@@ -80,24 +80,24 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 </commands>
 ```
 
-在&#x200B;**`<command>`**&#x200B;元素中輸入全局命令的說明，其屬性如下：
+全局命令的說明在 **`<command>`** 元素，具有下列屬性：
 
 * **名稱**:命令的內部名稱：名稱必須輸入且唯一
-* **標籤**:命令的標籤。
-* **desc**:從主螢幕的狀態欄中可見的說明。
+* **label**: label of the command.
+* **desc**: description visible from the status bar of the main screen.
 * **表單**:要啟動的表單：要輸入的值是輸入表單的標識鍵(例如&quot;cus:recipient&quot;)
-* **權限**:允許訪問此命令的命名權限清單（以逗號分隔）。可從&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;資料夾訪問可用權限清單。
+* **權利**:允許訪問此命令的命名權限清單（以逗號分隔）。 可從 **[!UICONTROL Administration > Access management > Named rights]** 檔案夾。
 * **promptLabel**:在執行命令之前顯示一個確認框。
 
-**`<command>`**&#x200B;元素可以包含&#x200B;**`<command>`**&#x200B;子元素。 在這種情況下，父元素可讓您顯示由這些子元素組成的子菜單。
+A **`<command>`** 元素可包含 **`<command>`** 子元素。 在這種情況下，父元素可讓您顯示由這些子元素組成的子菜單。
 
 命令的顯示順序與在XML文檔中聲明的順序相同。
 
-命令分隔符允許您顯示命令之間的分隔條。 它由命令標籤中包含的&#x200B;**&#39;-&#39;**&#x200B;值標識。
+命令分隔符允許您顯示命令之間的分隔條。 會由 **&#39;-&#39;** 命令標籤中包含的值。
 
-**`<soapcall>`**&#x200B;標籤及其輸入參數的可選存在定義要執行的SOAP方法的調用。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
+可選的 **`<soapcall>`** 標籤及其輸入參數定義要執行的SOAP方法的呼叫。 有關SOAP API的詳細資訊，請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
-從&#x200B;**`<enter>`**&#x200B;標籤初始化時，可更新表單內容。 如需此標籤的詳細資訊，請參閱輸入表單的相關檔案。
+從 **`<enter>`** 標籤。 如需此標籤的詳細資訊，請參閱輸入表單的相關檔案。
 
 **範例**:
 
@@ -107,7 +107,7 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
    <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
    ```
 
-   在命令標籤中存在&#x200B;**&amp;**，將在「I」字元上聲明鍵盤快捷鍵。
+   在「I」字元上，出現 **&amp;** 在命令標籤中。
 
 * 具有分隔符的子菜單示例：
 
@@ -157,35 +157,35 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 </model>
 ```
 
-必須在&#x200B;**`<model>`**&#x200B;元素下輸入資料夾類型聲明。 此元素可讓您定義可從&#x200B;**[!UICONTROL Add new folder]**&#x200B;功能表看到的階層組織。 **`<model>`**&#x200B;元素必須包含&#x200B;**`<nodemodel>`**&#x200B;元素和其他&#x200B;**`<model>`**&#x200B;元素。
+必須在 **`<model>`** 元素。 此元素可讓您定義可從 **[!UICONTROL Add new folder]** 功能表。 A **`<model>`** 元素必須包含 **`<nodemodel>`** 元素和其他 **`<model>`** 元素。
 
-**name**&#x200B;和&#x200B;**label**&#x200B;屬性會填入元素的內部名稱以及&#x200B;**[!UICONTROL Add new folder]**&#x200B;功能表中顯示的標籤。
+此 **名稱** 和 **標籤** 屬性會填入元素的內部名稱，以及 **[!UICONTROL Add new folder]** 功能表。
 
-**`<nodemodel>`**&#x200B;元素包含資料夾類型的說明，其屬性如下：
+此 **`<nodemodel>`** 元素包含資料夾類型的說明，其屬性如下：
 
 * **名稱**:內部名稱
-* **標籤**:在功能表中使 **[!UICONTROL Add new folder]** 用的標籤，在插入資料夾時作為預設標籤。
+* **標籤**:標籤 **[!UICONTROL Add new folder]** 功能表和預設標籤。
 * **img**:插入資料夾時的預設影像。
-* **hiddenCommands**:要遮罩的命令清單（以逗號分隔）。可能的值：&quot;adbnew&quot;、&quot;adbsave&quot;、&quot;adbcancel&quot;和&quot;adbdup&quot;。
-* **newFolderShortCuts**:建立資料夾時模型&#x200B;**`<nodemodel>`** 的捷徑清單（以逗號分隔）。
-* **插入右**、 **編輯右**、 **刪除右**:插入、編輯和刪除資料夾的權限。
+* **hiddenCommands**: list of commands (separated by a comma) to be masked. 可能的值：&quot;adbnew&quot;、&quot;adbsave&quot;、&quot;adbcancel&quot;和&quot;adbdup&quot;。
+* **newFolderShortCuts**: list of shortcuts on models (**`<nodemodel>`** separated by a comma) in folder creation.
+* **insertRight**, **editRight**, **deleteRight**:插入、編輯和刪除資料夾的權限。
 
-**`<nodemodel>`**&#x200B;元素下的&#x200B;**`<view>`**&#x200B;元素包含與檢視相關聯的清單的設定。 清單的架構輸入在&#x200B;**`<view>`**&#x200B;元素的&#x200B;**schema**&#x200B;屬性中。
+此 **`<view>`** 元素下方 **`<nodemodel>`** 元素包含與檢視相關聯的清單的設定。 清單的架構會在 **綱要** 屬性 **`<view>`** 元素。
 
-要編輯清單的記錄，將隱式使用與清單架構同名的輸入表單。 **`<view>`**&#x200B;元素上的&#x200B;**type**&#x200B;屬性會影響表單的顯示。 可能的值包括：
+要編輯清單的記錄，將隱式使用與清單架構同名的輸入表單。 此 **type** 屬性 **`<view>`** 元素會影響表單的顯示。 可能的值包括：
 
 * **listdet**:在清單底部顯示表單。
-* **清單**:單獨顯示清單。表單會以連按兩下或透過選取清單功能表中的「開啟」來啟動。
+* **清單**:單獨顯示清單。 表單會以連按兩下或透過選取清單功能表中的「開啟」來啟動。
 * **表單**:顯示只讀表單。
 * **editForm**:以編輯模式顯示表單。
 
 >[!NOTE]
 >
->在&#x200B;**`<view>`**&#x200B;元素中輸入&#x200B;**form**&#x200B;屬性，可以超載輸入表單的名稱。
+>輸入表單的名稱可以多載，方法是輸入 **表單** 屬性 **`<view>`** 元素。
 
-清單列的預設配置是通過&#x200B;**`<columns>`**&#x200B;元素輸入的。 在包含&#x200B;**xpath**&#x200B;屬性的&#x200B;**`<node>`**&#x200B;元素上聲明列，該欄位將在其架構中引用的欄位作為其值。
+清單欄的預設設定會透過 **`<columns>`** 元素。 A column is declared on a **`<node>`** element containing the **xpath** attribute with the field to be referenced in its schema as its value.
 
-**範例**:「nms:recipient」架構上資料夾類型的聲明。
+**Example**: declaration of a folder type on the &quot;nms:recipient&quot; schema.
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -228,11 +228,11 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 
 ### 快捷方式命令 {#shortcut-commands}
 
-快速鍵命令可讓您在選取清單時啟動動作。 動作可以是輸入表單或SOAP呼叫。
+快速鍵命令可讓您在選取清單時啟動動作。 The action can be an input form or a SOAP call.
 
-可從清單的&#x200B;**[!UICONTROL Action]**&#x200B;菜單或相關菜單按鈕訪問命令。
+可從 **[!UICONTROL Action]** 清單的菜單或相關菜單按鈕。
 
-命令配置結構如下：
+The command configuration structure is as follows:
 
 ```
 <nodeModel...
@@ -249,28 +249,28 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 </nodeModel>
 ```
 
-在&#x200B;**`<command>`**&#x200B;元素上輸入命令的說明，其屬性如下：
+在 **`<command>`** 元素，具有下列屬性：
 
 * **名稱**:命令的內部名稱：名稱必須輸入且唯一。
 * **標籤**:命令的標籤。
 * **desc**:從主螢幕的狀態欄中可見的說明。
 * **表單**:要啟動的表單：要輸入的值是輸入表單的標識鍵(例如&quot;cus:recipient&quot;)。
-* **權限**:允許訪問此命令的命名權限清單（以逗號分隔）。可從&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;資料夾訪問可用權限清單。
+* **權利**:允許訪問此命令的命名權限清單（以逗號分隔）。 可從 **[!UICONTROL Administration > Access management > Named rights]** 檔案夾。
 * **promptLabel**:在執行命令之前顯示確認框
 * **monoSelection**:強制單選（預設為多個選取）。
 * **refreshView**:執行命令後強制重新載入清單。
-* **enabledIf**:根據輸入的表達式激活該命令。
+* **enabledIf**: activates the command depending on the expression entered.
 * **img**:輸入允許從清單工具欄訪問命令的影像。
 
-**`<command>`**&#x200B;元素可以包含&#x200B;**`<command>`**&#x200B;子元素。 在這種情況下，父元素可讓您顯示由這些子元素組成的子菜單。
+A **`<command>`** 元素可包含 **`<command>`** 子元素。 In this case, the parent element lets you display a sub-menu made up of these child elements.
 
 命令的顯示順序與在XML文檔中聲明的順序相同。
 
-命令分隔符允許您顯示命令之間的分隔條。 它由命令標籤中包含的&#x200B;**&#39;-&#39;**&#x200B;值標識。
+命令分隔符允許您顯示命令之間的分隔條。 會由 **&#39;-&#39;** 命令標籤中包含的值。
 
-**`<soapcall>`**&#x200B;標籤及其輸入參數的可選存在定義要執行的SOAP方法的調用。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
+可選的 **`<soapcall>`** 標籤及其輸入參數定義要執行的SOAP方法的呼叫。 有關SOAP API的詳細資訊，請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
-可透過&#x200B;**`<enter>`**&#x200B;標籤在初始化時更新表單內容。 如需此標籤的詳細資訊，請參閱輸入表單檔案。
+可透過 **`<enter>`** 標籤。 如需此標籤的詳細資訊，請參閱輸入表單檔案。
 
 **範例**:
 
@@ -296,7 +296,7 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 1. 資料夾為檢視：該清單顯示與架構關聯的所有記錄，並且有可能在資料夾屬性中輸入系統篩選。
 1. 資料夾已連結：清單中的記錄會以隱含方式篩選在資料夾連結上。
 
-對於連結的資料夾，必須填入&#x200B;**`<nodemodel>`**&#x200B;元素上的&#x200B;**folderLink**&#x200B;屬性。 此屬性包含資料架構中配置的資料夾上的連結名稱。
+對於連結的資料夾， **folderLink** 屬性 **`<nodemodel>`** 元素。 此屬性包含資料架構中配置的資料夾上的連結名稱。
 
 資料結構中連結資料夾的聲明範例：
 
@@ -304,7 +304,7 @@ XML文檔包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬
 <element default="DefaultFolder('nmsFolder', [@_folder-id])" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="define" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-資料夾「folder」連結上的&#x200B;**`<nodemodel>`**&#x200B;配置如下：
+的設定 **`<nodemodel>`** 在名為「folder」的資料夾的連結上，如下所示：
 
 ```
 <nodeModel deleteRight="folderDelete" editRight="folderEdit" folderLink="folder"

@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 4%
+source-wordcount: '655'
+ht-degree: 3%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 4%
 
 Adobe Campaign應用程式伺服器旨在實現開放性，與日益多樣化和複雜的公司資訊系統輕鬆整合。
 
-Adobe Campaign API用於應用程式內的JavaScript中，以及其外部的SOAP中。 它們組成可擴充的通用函式程式庫。 有關詳細資訊，請參閱[實作SOAP方法](../../configuration/using/implementing-soap-methods.md)。
+Adobe Campaign API用於應用程式內的JavaScript中，以及其外部的SOAP中。 它們組成可擴充的通用函式程式庫。 有關詳細資訊，請參閱 [實作SOAP方法](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >每日授權的引擎呼叫數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此專屬檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中提供所有API（包括其完整說明）的清單。
+>所有API的清單，包括其完整說明，請參閱 [本專屬檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)。
 
 ## 先決條件 {#prerequisites}
 
@@ -40,10 +40,10 @@ Adobe Campaign API用於應用程式內的JavaScript中，以及其外部的SOAP
 
 Adobe Campaign使用兩種API:
 
-* 查詢資料模型資料的一般資料存取API。 請參閱[資料導向API](../../configuration/using/data-oriented-apis.md)。
-* 可讓您對每個物件採取動作的業務專屬API:傳遞、工作流程、訂閱等。 請參閱[商業導向API](../../configuration/using/business-oriented-apis.md)。
+* 查詢資料模型資料的一般資料存取API。 請參閱 [資料導向API](../../configuration/using/data-oriented-apis.md).
+* 可讓您對每個物件採取動作的業務專屬API:傳遞、工作流程、訂閱等。 請參閱 [商業導向API](../../configuration/using/business-oriented-apis.md).
 
-若要開發API並與Adobe Campaign互動，您必須熟悉資料模型。 Adobe Campaign可讓您產生基礎的完整說明。 請參閱[模型說明](../../configuration/using/data-oriented-apis.md#description-of-the-model)。
+若要開發API並與Adobe Campaign互動，您必須熟悉資料模型。 Adobe Campaign可讓您產生基礎的完整說明。 請參閱 [模型說明](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP調用 {#soap-calls}
 
@@ -68,11 +68,11 @@ SOAP消息的結構如下：
 
 在此示例中，SOAP查詢調用「ExecuteQuery」方法，該方法將字元字串作為驗證（會話令牌）的參數，並將XML內容作為要執行的查詢的說明。
 
-有關詳細資訊，請參閱[ExecuteQuery(xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
+有關詳細資訊，請參閱 [ExecuteQuery(xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >
->此服務的WSDL描述已完成，如下所示：[Web服務描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl)。
+>此服務的WSDL描述已完成，如下所示： [Web服務描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP查詢 {#soap-query}
 
@@ -92,13 +92,13 @@ SOAP消息的結構如下：
 </SOAP-ENV:Envelope>
 ```
 
-`<soap-env:envelope>`元素是代表SOAP信封的消息的第一個元素。
+此 `<soap-env:envelope>` 元素是表示SOAP信封的消息的第一個元素。
 
-`<soap-env:body>`元素是信封的第一個子元素。 它包含訊息的說明，即查詢或回應的內容。
+此 `<soap-env:body>` element是信封的第一個子元素。 它包含訊息的說明，即查詢或回應的內容。
 
-要調用的方法是在SOAP消息正文的`<executequery>`元素中輸入的。
+在 `<executequery>` 元素。
 
-在SOAP中，參數是按外觀順序識別的。 第一個參數`<__sessiontoken>`取用驗證鏈，第二個參數是`<querydef>`元素中查詢的XML說明。
+在SOAP中，參數是按外觀順序識別的。 第一個參數， `<__sessiontoken>`，會取用驗證鏈，第二個參數是 `<querydef>` 元素。
 
 ### SOAP響應 {#soap-response}
 
@@ -115,7 +115,7 @@ SOAP消息的結構如下：
 </SOAP-ENV:Envelope>
 ```
 
-查詢結果從`<pdomoutput>`元素中輸入。
+查詢的結果從 `<pdomoutput>` 元素。
 
 ## 錯誤管理 {#error-management}
 
@@ -135,9 +135,9 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-SOAP消息正文中的`<soap-env:fault>`元素用於傳送在處理Web服務期間產生的錯誤信號。 這由下列子元素組成：
+此 `<soap-env:fault>` SOAP消息正文中的元素用於傳送在處理Web服務期間產生的錯誤信號。 這由下列子元素組成：
 
-* `<faultcode>` :指示錯誤的類型。錯誤類型為：
+* `<faultcode>` :指示錯誤的類型。 錯誤類型為：
 
    * 若與使用的SOAP版本不相容，則為「VersionMismatch」，
    * 如果郵件標題出現問題，
@@ -147,7 +147,7 @@ SOAP消息正文中的`<soap-env:fault>`元素用於傳送在處理Web服務期�
 * `<faultstring>` :描述錯誤的消息
 * `<detail>` :長錯誤消息
 
-驗證`<faultcode>`元素時，識別服務調用的成功或失敗。
+識別服務呼叫的成功或失敗，當 `<faultcode>` 元素已驗證。
 
 >[!IMPORTANT]
 >
@@ -177,4 +177,4 @@ catch (SoapException e)
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-使用&#x200B;**`<server>`**&#x200B;時，Adobe Campaign應用程式伺服器(**nlserver web**)。
+使用 **`<server>`** Adobe Campaign應用程式伺服器(**nlserver web**)。

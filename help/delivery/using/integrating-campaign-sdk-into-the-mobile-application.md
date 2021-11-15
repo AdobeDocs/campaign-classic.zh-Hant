@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: c58daacb76f90478e218fe97008f3e263d8c76a1
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 0%
+source-wordcount: '1016'
+ht-degree: 1%
 
 ---
 
@@ -18,19 +18,25 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-iOS和Android適用的Campaign SDK是行動應用程式頻道模組的其中一個元件。
+適用於iOS和Android的Campaign SDK是行動應用程式頻道模組的其中一個元件。
 
 >[!NOTE]
 >
->若要取得Campaign SDK（先前稱為Neolane SDK），請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>若要取得Campaign SDK（先前稱為Neolane SDK），請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}。
 
 SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
 
-若要進一步了解支援的不同Android和iOS版本，請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md#MobileSDK) 。
+若要進一步了解支援的不同Android和iOS版本，請參閱 [相容性矩陣](../../rn/using/compatibility-matrix.md#MobileSDK).
+
+>[!NOTE]
+>
+>您也可以在Launch中設定Adobe Experience Platform擴充功能，以使用Adobe Campaign行動SDK。 [進一步了解Adobe Experience Platform檔案](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}。
+>
+>了解如何配置和安裝Adobe Experience Platform Mobile SDK [在此視頻中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target=&quot;_blank&quot;}。
 
 ## 載入Campaign SDK {#loading-campaign-sdk}
 
-* **在Android中**: **neolane_sdk-release.** aarfile必須連結至專案。
+* **在Android中**:the **neolane_sdk-release.aar** 檔案必須連結至專案。
 
    下列權限會授予Adobe Campaign伺服器的存取權：
 
@@ -50,11 +56,11 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
 
    從SDK 1.0.26版開始，將不再使用此權限。
 
-* **在iOS中**: **libNeolaneSDK.** 和 **Neolane_SDK.** 檔案必須連結至專案。從SDK 1.0.24版啟動&#x200B;**ENABLE_BITCODE**&#x200B;選項。
+* **在iOS**:the **libNeolaneSDK.a** 和 **Neolane_SDK.h** 檔案必須連結至專案。 從SDK 1.0.24版開始， **ENABLE_BITCODE** 已啟用。
 
    >[!NOTE]
    >
-   >對於SDK 1.0.25版，**Neolane_SDK.h**&#x200B;檔案中提供這四種架構。
+   >若為SDK 1.0.25版，可在 **Neolane_SDK.h** 檔案。
 
 ## 聲明整合設定 {#declaring-integration-settings}
 
@@ -64,7 +70,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
 
    >[!NOTE]
    >
-   >此整合金鑰會在Adobe Campaign主控台的行動應用程式專用服務&#x200B;**[!UICONTROL Information]**&#x200B;標籤中輸入。 請參閱[在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md)。
+   >此整合金鑰會在Adobe Campaign主控台中，於 **[!UICONTROL Information]** 行動應用程式專用的服務索引標籤。 請參閱 [在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md).
 
 * **追蹤URL**:符合Adobe Campaign追蹤伺服器的位址。
 * **行銷URL**:啟用訂閱集合。
@@ -77,7 +83,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
    Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
    ```
 
-* **在iOS中**:
+* **在iOS**:
 
    ```
    Neolane_SDK *nl = [Neolane_SDK getInstance];
@@ -90,7 +96,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
 
 註冊功能允許您：
 
-* 傳送通知ID或推播ID（iOS為deviceToken,Android為registrationID）至Adobe Campaign。
+* 傳送通知ID或推播ID(iOS的deviceToken和Android的registrationID)至Adobe Campaign。
 * 恢復調解金鑰或userKey（例如，電子郵件或帳號）
 
 * **在Android中**:
@@ -108,7 +114,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
    }
    ```
 
-   若您使用FCM（Firebase雲端傳訊），建議您在呼叫&#x200B;**onTokenRefresh**&#x200B;函式時使用&#x200B;**registerDevice**&#x200B;函式，通知Adobe Campaign使用者行動裝置Token中的變更。
+   若您使用FCM（Firebase雲端訊息），我們建議您使用 **registerDevice** 函式 **onTokenRefresh** 函式，通知Adobe Campaign使用者行動裝置代號的變更。
 
    ```
    public class NeoTripFirebaseInstanceIDService extends FirebaseInstanceIdService {
@@ -130,7 +136,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
    }
    ```
 
-* **在iOS中**:
+* **在iOS**:
 
    ```
    // Callback called on successful registration to the APNs
@@ -148,7 +154,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
 
    追蹤函式可讓您追蹤通知啟動（開啟）和通知顯示（螢幕擷取）。
 
-   若要追蹤通知顯示（透過呼叫SDK的&#x200B;**notifyReceive**&#x200B;函式完成），請遵循下列實作。 請注意，若您使用FCM（Firebase雲端傳訊），建議您在Android系統呼叫&#x200B;**onMessageReceived**&#x200B;函式時使用&#x200B;**notifyReceive**&#x200B;函式。
+   若要追蹤通知顯示(透過呼叫 **notifyReceive** 函式)，請遵循下列實作。 請注意，若您使用FCM（Firebase雲端傳訊），我們建議您使用 **notifyReceive** 函式 **onMessageReceived** 函式由Android系統呼叫。
 
    ```
    package com.android.YourApplication;
@@ -244,7 +250,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
    }
    ```
 
-   以下是追蹤開啟通知的實作範例（透過呼叫SDK的&#x200B;**notifyOpening**&#x200B;函式來執行）。 **NotificationActivity**&#x200B;類與上一個示例中用於建立&#x200B;**notifIntent**&#x200B;對象的類對應。
+   以下是追蹤已開啟通知的實作範例(透過呼叫 **notifyOpening** 函式)。 此 **NotificationActivity** 類與用來建立 **notifIntent** 物件。
 
    ```
    public class NotificationActivity extends Activity {
@@ -275,7 +281,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
    }
    ```
 
-* **在iOS中**:
+* **在iOS**:
 
    追蹤函式可讓您追蹤通知啟動（開啟）的時間。
 
@@ -292,7 +298,7 @@ SDK的目標是促進行動應用程式整合至Adobe Campaign平台。
 
    >[!NOTE]
    >
-   >從7.0版開始，一旦實作&#x200B;**application:didReceiveRemoteNotification:fetchCompletionHandler**&#x200B;函式，作業系統只會呼叫此函式。 因此，不會呼叫&#x200B;**application:didReceiveRemoteNotification**&#x200B;函式。
+   >從7.0版開始， **應用程式:didReceiveRemoteNotification:fetchCompletionHandler** 函式已實現，作業系統僅調用此函式。 此 **application:didReceiveRemoteNotification** 因此不會呼叫函式。
 
 ## 無提示通知追蹤 {#silent-notification-tracking}
 
@@ -338,19 +344,19 @@ iOS可讓您傳送無提示通知、通知或資料，這些通知或資料將�
 
 >[!NOTE]
 >
->請注意，這是iOS專屬的。
+>請注意，此為iOS專屬。
 
-在iOS中，委派通訊協定可讓您取得&#x200B;**registerDevice**&#x200B;呼叫的結果，並可用來知道註冊期間是否發生錯誤。
+在iOS中，委派通訊協定可讓您取得 **registerDevice** 呼叫和，可用來知道註冊期間是否發生錯誤。
 
-**registerDeviceStatus**&#x200B;原型為：
+此 **registerDeviceStatus** 原型為：
 
 ```
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**** 狀態可讓您知道註冊是否成功或是否發生錯誤。
+**狀態** 可讓您知道註冊是否成功或是否發生錯誤。
 
-**** ErrorReason會提供您有關所發生錯誤的詳細資訊。有關可用錯誤及其說明的詳細資訊，請參閱下表。
+**ErrorReason** 提供您所發生錯誤的詳細資訊。 有關可用錯誤及其說明的詳細資訊，請參閱下表。
 
 <table> 
  <thead>
@@ -364,37 +370,37 @@ iOS可讓您傳送無提示通知、通知或資料，這些通知或資料將�
   <tr>
    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
    <td> 註冊成功<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 空白<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
    <td> ACC行銷伺服器主機名稱空白或未設定。<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 空白<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
-   <td> 整合密鑰為空或未設定。<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 整合金鑰為空或未設定。<br /> </td>
+   <td> 空白<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
-   <td> ACC<br />的連線問題 </td>
-   <td> 更多資訊（作業系統當前語言）<br /> </td>
+   <td> ACC的連線問題<br /> </td>
+   <td> 更多資訊（使用作業系統當前語言）<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
    <td> 提供的UUID（整合金鑰）未知。<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 空白<br /> </td>
   </tr>
   <tr> 
-   <td> ACCRegisterDeviceStatusFailureUnexceptedError<br /> </td>
+   <td> ACCRegisterDeviceStatusFailureUnexcipedError<br /> </td>
    <td> 傳回到ACC伺服器的錯誤。<br /> </td>
    <td> 傳回至ACC的錯誤訊息。<br /> </td>
   </tr>
  </tbody>
 </table>
 
-**Neolane_** SDKDelegateprotocol和registerDeviceStatusdelegate定 **** 義如下：
+**Neolane_SDKDelegate** 協定和 **registerDeviceStatus** 委派定義如下：
 
 ```
 //  Neolane_SDK.h
@@ -426,9 +432,9 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 @end
 ```
 
-若要實作&#x200B;**registerDeviceStatus**&#x200B;委派，請遵循下列步驟：
+實作 **registerDeviceStatus** 委派，請遵循下列步驟：
 
-1. 在SDK初始化期間實作&#x200B;**setDelegate**。
+1. 實作 **setDelegate** 在SDK初始化期間。
 
    ```
    // AppDelegate.m
@@ -457,7 +463,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
    }
    ```
 
-1. 在類的&#x200B;**@interface**&#x200B;中添加協定。
+1. 在 **@interface** 你班的。
 
    ```
    //  AppDelegate.h
@@ -479,7 +485,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
    }
    ```
 
-1. 在&#x200B;**AppDelegate**&#x200B;中實作委派。
+1. 在 **AppDelegate**.
 
    ```
    //  AppDelegate.m
@@ -532,7 +538,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 ## 變數 {#variables}
 
-變數可讓您在收到通知後定義行動應用程式行為。 這些變數必須在行動應用程式程式碼和Adobe Campaign主控台中，於專用行動應用程式服務的&#x200B;**[!UICONTROL Variables]**&#x200B;標籤中定義(請參閱在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md))。 [以下是程式碼的範例，可讓行動應用程式收集通知中任何新增的變數。 在範例中，我們使用「VAR」變數。
+變數可讓您在收到通知後定義行動應用程式行為。 這些變數必須在行動應用程式程式碼和Adobe Campaign主控台中，於 **[!UICONTROL Variables]** 標籤(請參閱 [在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md))。 以下是程式碼的範例，可讓行動應用程式收集通知中任何新增的變數。 在範例中，我們使用「VAR」變數。
 
 * **在Android中**:
 
@@ -544,7 +550,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
    }
    ```
 
-* **在iOS中**:
+* **在iOS**:
 
    ```
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -580,7 +586,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 ## 通知服務擴充功能 {#notification-service-extension}
 
-**適用於iOS**
+**針對iOS**
 
 必須在通知服務擴充層級下載媒體。
 
@@ -614,17 +620,17 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 ## 通知內容擴充功能 {#notification-content-extension}
 
-**適用於iOS**
+**針對iOS**
 
 在此層級，您需要：
 
 * 將內容擴充功能與Adobe Campaign傳送的類別建立關聯：
 
-   如果您希望行動應用程式顯示影像，可在Adobe Campaign中將類別值設為「image」，並在行動應用程式中，使用&#x200B;**UNNotificationExtensionCategory**&#x200B;參數設為「image」來建立通知擴充功能。 在裝置上收到推播通知時，會根據定義的類別值呼叫擴充功能。
+   如果您希望行動應用程式顯示影像，您可以在Adobe Campaign中將類別值設為「image」，並在行動應用程式中，使用建立通知擴充功能 **UNNotificationExtensionCategory** 參數設為「影像」。 在裝置上收到推播通知時，會根據定義的類別值呼叫擴充功能。
 
 * 定義通知配置
 
-   您需要使用相關介面工具集來定義配置。 對於影像，該小部件的名稱為&#x200B;**UIImageView**。
+   您需要使用相關介面工具集來定義配置。 對於影像，介面工具集的名稱為 **UIImageView**.
 
 * 顯示您的媒體
 

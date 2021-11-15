@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
-workflow-type: ht
-source-wordcount: '1657'
-ht-degree: 100%
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+workflow-type: tm+mt
+source-wordcount: '1651'
+ht-degree: 99%
 
 ---
 
@@ -106,7 +106,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    </tr>
    <tr>
    <td>Campaign API 文件 - jsapi.chm 檔案</td>
-   <td>自 Campaign 第 19.1 發行版本開始，可以透過專屬頁面使用 Campaign Classic API。如果您使用舊版 jsapi.chm 檔案，現在應參考<a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">新的線上版本</a>。</td>
+   <td>自 Campaign 第 19.1 發行版本開始，可以透過專屬頁面使用 Campaign Classic API。如果您使用舊版 jsapi.chm 檔案，現在應參考<a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">新的線上版本</a>。</td>
   </tr> 
   <tr> 
    <td>Campaign Orchestration - 預測式行銷</td>
@@ -123,7 +123,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <tr> 
    <td>decryptString API</td>
    <td><p>出於安全原因，自 Campaign 18.6 發行版本起，新的安裝已不再預設提供 <em>decryptString</em> API。</p> 
-   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。<a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">瞭解更多</a></p></td>
+   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。<a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">瞭解更多</a></p></td>
   </tr> 
    <tr> 
    <td>行動裝置頻道 - MMS 和 WAP 推播訊息</td>

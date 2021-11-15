@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 98%
 
 ---
 
@@ -65,4 +65,4 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 ## 我可以在哪裡找到 Campaign Classic API 清單？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-[本專屬文件](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)提供所有 Campaign API，及個別完整說明。
+[本專屬文件](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)提供所有 Campaign API，及個別完整說明。

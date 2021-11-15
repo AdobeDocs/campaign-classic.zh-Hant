@@ -5,7 +5,7 @@ description: 在電子郵件中插入條形碼
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 在電子郵件中插入條形碼{#inserting-a-barcode-in-an-email}
+# 在電子郵件中插入條形碼{#insert-a-barcode-in-an-email}
 
 ![](../../assets/common.svg)
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
       ![](assets/barcode_insert_09.png)
 
-   * 若要插入QR碼，請選取此類型並輸入要套用的糾錯率。 該速率定義了重複資訊的數量和退化的容限。
+   * 若要插入QR碼，請選取此類型並輸入要套用的糾錯率。 This rate defines the quantity of information repeated and the tolerance to deterioration.
 
       ![](assets/barcode_insert_06.png)
 
@@ -50,25 +50,25 @@ ht-degree: 0%
       ![](assets/barcode_insert_12.png)
 
 1. 輸入要插入電子郵件的條形碼的大小：配置刻度可以從x1增加或縮小條形碼的大小，從x1增加到x10。
-1. **[!UICONTROL Value]**&#x200B;欄位允許您定義條形碼的值。 值可以符合特殊選件，也可以是條件的函式，也可以是連結至客戶之資料庫欄位的值。
+1. 此 **[!UICONTROL Value]** 欄位可讓您定義條碼的值。 值可以符合特殊選件，也可以是條件的函式，也可以是連結至客戶之資料庫欄位的值。
 
-   此示例顯示了EAN-8類型的條形碼，該條形碼已添加到收件者的帳號。 要添加此帳號，請按一下&#x200B;**[!UICONTROL Value]**&#x200B;欄位右側的個性化按鈕，然後選擇&#x200B;**[!UICONTROL Recipient > Account number]**。
+   此示例顯示了EAN-8類型的條形碼，該條形碼已添加到收件者的帳號。 若要新增此帳號，請按一下 **[!UICONTROL Value]** 欄位和選取 **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. **[!UICONTROL Height]**&#x200B;欄位可讓您通過改變每條之間的空間量來配置條形碼的高度，而不更改其寬度。
+1. 此 **[!UICONTROL Height]** 欄位可讓您變更每個列之間的空間量，以設定條碼的高度，而不變更其寬度。
 
-   根據條碼類型，沒有限制的輸入控制項。 如果條碼值不正確，則只會在&#x200B;**預覽**&#x200B;模式中顯示，在該模式中，條碼將以紅色交叉。
+   根據條碼類型，沒有限制的輸入控制項。 如果條碼值不正確，則只會顯示在 **預覽** 以紅色將條形碼交叉的模式。
 
    >[!NOTE]
    >
    >分配給條形碼的值取決於其類型。 例如，EAN-8類型應正好有8個數字。
    >
-   >**[!UICONTROL Value]**&#x200B;欄位右側的個人化按鈕可讓您除了值本身之外新增資料。 這豐富了條碼，前提是條碼標準接受它。
+   >The personalization button to the right of the **[!UICONTROL Value]** field lets you add data in addition to the value itself. 這豐富了條碼，前提是條碼標準接受它。
    >
-   >例如，如果您使用GS1-128類型條形碼，並且除了要輸入值之外還要輸入收件人的帳號，請按一下個性化按鈕並選擇&#x200B;**[!UICONTROL Recipient > Account number]**。 如果正確輸入了所選收件人的帳號，則條形碼會將其考慮在內。
+   >例如，如果您使用GS1-128類型條形碼，並且除了要輸入值之外還要輸入收件人的帳戶號，請按一下個性化按鈕並選擇 **[!UICONTROL Recipient > Account number]**. 如果正確輸入了所選收件人的帳號，則條形碼會將其考慮在內。
 
-設定這些元素後，您就可以完成電子郵件並傳送。 若要避免錯誤，請在按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤執行傳送前，一律確認內容正確顯示。
+設定這些元素後，您就可以完成電子郵件並傳送。 若要避免錯誤，請一律確定您的內容在執行傳送前，按一下 **[!UICONTROL Preview]** 標籤。
 
 ![](assets/barcode_insert_10.png)
 

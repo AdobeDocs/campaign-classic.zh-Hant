@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 5%
+source-wordcount: '748'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## 指令碼
 
-如需詳細資訊，請參閱[Campaign JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
+如需詳細資訊，請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 如果您使用工作流程、網頁應用程式、工作流程編寫指令碼，請遵循以下最佳實務：
 
@@ -54,9 +54,9 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->如果您使用的組建版本早於8140,**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;選項可能會設為「1」。 如果要保護資料庫的安全，請刪除此選項（或將其設定為&#39;0&#39;）。
+>如果您使用的組建版本早於8140，則 **XtkPassUnknownSQLFunctionsToRDBMS** 選項可設為「1」。 如果要保護資料庫的安全，請刪除此選項（或將其設定為&#39;0&#39;）。
 
-如果您使用使用者輸入在查詢或SQL陳述式中建置篩選器，則一律必須將其逸出(請參閱[Campaign JSAPI檔案](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) — 資料保護：逸出函式)。 這些函式為：
+如果您使用用戶輸入在查詢或SQL陳述式中構建篩選器，則始終必須將其逸出(請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)  — 資料保護：逸出函式)。 這些函式為：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -76,7 +76,7 @@ ht-degree: 5%
 
 除了資料夾型安全模型外，您還可以使用命名權限來限制運算子動作：
 
-* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料（請參閱[此頁](../../configuration/using/filtering-schemas.md)）。
+* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱 [本頁](../../configuration/using/filtering-schemas.md))。
 
    ```
    <sysFilter name="writeAccess">    
@@ -104,23 +104,23 @@ ht-degree: 5%
 
 如果需要根據操作員訪問級別保護機密資料（結構的一部分），請勿在表單定義中隱藏機密資料（enabledIf/visibleIf條件）。
 
-整個實體由螢幕載入，您也可以在欄定義中顯示。 要執行此操作，必須建立溢出表。 請參閱[此頁面](../../configuration/using/examples-of-schemas-edition.md#overflow-table)。
+整個實體由螢幕載入，您也可以在欄定義中顯示。 要執行此操作，必須建立溢出表。 請參閱 [本頁](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## 在Web應用程式中新增擷取
 
 在公開登錄頁面/訂閱頁面中新增驗證碼是很好的作法。 很可惜，在DCE（數位內容編輯器）頁面中新增驗證碼並非易事。 我們會示範如何新增v5驗證碼或Google reCAPTCHA。
 
-在DCE中新增驗證碼的一般方式是建立個人化區塊，以便輕鬆將其納入頁面內容中。 您必須新增&#x200B;**Script**&#x200B;活動和&#x200B;**Test**。
+在DCE中新增驗證碼的一般方式是建立個人化區塊，以便輕鬆將其納入頁面內容中。 您必須新增 **指令碼** 活動與 **測試**.
 
 ### 個人化區塊
 
-1. 前往&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]**&#x200B;並建立新的。
+1. 前往 **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** 並建立新的。
 
-1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;內容類型並檢查&#x200B;**[!UICONTROL Visible in the customization menus]**。
+1. 使用 **[!UICONTROL Web application]** 內容類型和檢查 **[!UICONTROL Visible in the customization menus]**.
 
    如需詳細資訊，請參閱[本頁面](../../delivery/using/personalization-blocks.md)。
 
-   以下是&#x200B;**促銷活動驗證碼**&#x200B;的範例：
+   以下是 **行銷活動驗證碼**:
 
    ```javascript
    <%
@@ -146,27 +146,27 @@ ht-degree: 5%
    * 使用Google reCAPTCHA之前，您必須先在Google上註冊，然後建立新的reCAPTCHA網站。
 
       `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
-   您應該可以停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，因此最好在HTML本身中停用。 若要了解如何執行，請參閱[此頁面](https://developers.google.com/recaptcha/)。
+   您應該可以停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，因此最好在HTML本身中停用。 若要了解如何執行，請參閱 [本頁](https://developers.google.com/recaptcha/).
 
 ### 更新Web應用程式
 
-1. 存取Web應用程式的屬性，以新增名為&#x200B;**captchaValid**&#x200B;的布林變數。
+1. 存取Web應用程式的屬性，以新增布林值變數，名為 **captchaValid**.
 
    ![](assets/scripting-captcha.png)
 
-1. 在最後一頁和&#x200B;**[!UICONTROL Storage]**&#x200B;活動之間，新增&#x200B;**[!UICONTROL Script]**&#x200B;和&#x200B;**[!UICONTROL Test]**。
+1. 在最後一頁和 **[!UICONTROL Storage]** 活動，新增 **[!UICONTROL Script]** 和 **[!UICONTROL Test]**.
 
-   將分支&#x200B;**[!UICONTROL True]**&#x200B;插入&#x200B;**[!UICONTROL Storage]**，並將另一個分支插入具有驗證碼的頁面。
+   插入分支 **[!UICONTROL True]** 到 **[!UICONTROL Storage]** 另一個會有驗證碼的頁面。
 
    ![](assets/scripting-captcha2.png)
 
-1. 編輯分支True的條件，其中`"[vars/captchaValid]"`等於True。
+1. 使用編輯分支True的條件 `"[vars/captchaValid]"` 等於True。
 
    ![](assets/scripting-captcha3.png)
 
-1. 編輯&#x200B;**[!UICONTROL Script]**&#x200B;活動。 內容取決於選擇的驗證碼引擎。
+1. 編輯 **[!UICONTROL Script]** 活動。 內容取決於選擇的驗證碼引擎。
 
-1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](../../web/using/editing-content.md)。
+1. 最後，您可以在頁面中新增個人化區塊：請參閱 [本頁](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 
@@ -174,7 +174,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->若要進行reCAPTCHA整合，您必須在HTML中新增用戶端JavaScript（在`<head>...</head>`中）:
+>若要進行reCAPTCHA整合，您必須在HTML中新增用戶端JavaScript(在 `<head>...</head>`):
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
@@ -196,9 +196,9 @@ else
 
 第6行：你可以發出任何錯誤資訊。
 
-### Google recaptcha
+### Google recapcha
 
-請參閱[官方檔案](https://developers.google.com/recaptcha/docs/verify)。
+請參閱 [官方檔案](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false

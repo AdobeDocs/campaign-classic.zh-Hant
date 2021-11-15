@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '2566'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
