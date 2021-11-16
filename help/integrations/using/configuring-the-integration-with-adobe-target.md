@@ -6,32 +6,28 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '192'
 ht-degree: 2%
 
 ---
 
 # 設定與Adobe Target的整合{#configuring-the-integration-with-adobe-target}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 
 >[!CAUTION]
 >
 > 身為托管或混合客戶，請聯絡您的Adobe代表以設定此整合。 下列步驟僅適用於內部部署客戶。
 
-## 先決條件 {#prerequisites}
-
-若要使用Adobe Campaign與Adobe Target之間的整合，您必須具備：
+此整合需要：
 
 * Adobe Experience Cloud和Adobe Target組織
 * 指定用來建立與Adobe Campaign連線的Adobe Target rawbox
 
-## 設定Adobe Campaign {#configuring-adobe-campaign}
-
-若要設定Adobe Campaign:
+若要在Adobe Campaign中設定此整合，請遵循下列步驟：
 
 1. 安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** 內建套件。 [了解更多](../../platform/using/working-with-data-packages.md#importing-packages)
 

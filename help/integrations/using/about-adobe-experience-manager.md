@@ -5,20 +5,20 @@ description: 關於Adobe Experience Manager
 audience: integrations
 content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
-# 關於Adobe Experience Manager{#about-adobe-experience-manager}
+# 使用Campaign與Experience Manager{#about-adobe-experience-manager}
 
 ![](../../assets/common.svg)
 
 Adobe Campaign與Adobe Experience Manager的整合可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單。
 
-您也可以在AEM Assets中編輯電子郵件或登錄頁面時，直接從Adobe Campaign資料庫插入資產。 在[Assets](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)章節中會詳細說明此功能。
+您也可以在AEM Assets中編輯電子郵件或登錄頁面時，直接從Adobe Campaign資料庫插入資產。 此功能在 [資產](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md) 章節。
 
 這表示您可充份運用AEM內容編輯功能以及Adobe Campaign的傳送能力。
 
@@ -26,8 +26,8 @@ Adobe Campaign與Adobe Experience Manager的整合可讓您直接在Adobe Experi
 
 您必須有下列元素：
 
-* Adobe Experience Manager **authoring**&#x200B;例項。
-* Adobe Experience Manager **publishing**&#x200B;例項。
+* 安Adobe Experience Manager **製作** 例項。
+* 安Adobe Experience Manager **發佈** 例項。
 * Adobe Campaign例項。
 
 Adobe Campaign與Adobe Experience Manager 6.1、6.2、6.3、6.4和6.5相容。以下章節概述整合。
@@ -36,4 +36,4 @@ Adobe Campaign與Adobe Experience Manager 6.1、6.2、6.3、6.4和6.5相容。�
 >
 >Adobe Experience Manager 6.5不再提供Adobe Campaign Classic範本。
 
-如需詳細資訊，請參閱[Adobe Experience Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+如需詳細資訊，請參閱 [Adobe Experience Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)

@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2565'
 ht-degree: 99%
 
 ---
@@ -373,11 +373,11 @@ ht-degree: 99%
       + [設定存取權至 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [關於 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [使用 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [設定整合](integrations/using/configuring-the-integration.md)
       + [建立 [!DNL Experience Manager] 電子報](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [整合 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [使用 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 連結器 {#acs-connector}
@@ -387,14 +387,14 @@ ht-degree: 99%
       + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
       + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Adobe Experience Cloud 觸發因子 {#experience-triggers}
-      + [開始使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [設定管線](integrations/using/configuring-pipeline.md)
       + [設定 Adobe I/O，用於 [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [設定自訂實施的事件](integrations/using/events.md)
       + [管線監視](integrations/using/pipeline-monitoring.md)
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
    + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
-      + [開始使用來源和目標](integrations/using/get-started-sources-destinations.md)
+      + [使用來源和目的地](integrations/using/get-started-sources-destinations.md)
       + [將 Adobe Experience Platform 對象內嵌至 Campaign](integrations/using/ingest-aep-data.md)
       + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流程自動化{#automating-with-workflows}
