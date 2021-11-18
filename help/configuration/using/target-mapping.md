@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 1. 建立新資料架構，整合您要使用的自訂表格欄位。
 
-   如需詳細資訊，請參閱[結構參考(xtk:srcSchema)](../../configuration/using/about-schema-reference.md)。
+   有關詳細資訊，請參閱 [架構參考(xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
    在我們的範例中，我們將建立客戶結構，一個包含下列欄位且非常簡單的表格：ID，名字，姓氏，電子郵件地址，行動電話號碼。 其目的是能夠向儲存在此表中的個人發送電子郵件或簡訊警報。
 
@@ -53,7 +53,7 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-1. 使用=&quot;true&quot;屬性將結構宣告為外部檢視。 請參閱[檢視屬性](../../configuration/using/schema-characteristics.md#the-view-attribute)。
+1. 使用=&quot;true&quot;屬性將結構宣告為外部檢視。 請參閱 [檢視屬性](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -82,35 +82,35 @@ ht-degree: 2%
       </element>
    ```
 
-1. 按一下&#x200B;**[!UICONTROL Administration > Campaign management > Target mappings]**&#x200B;節點。
-1. 按一下&#x200B;**新建**&#x200B;按鈕以開啟目標映射建立嚮導。
-1. 輸入&#x200B;**Label**&#x200B;欄位，然後選擇您剛在&#x200B;**Targeting dimension**&#x200B;欄位中建立的架構。
+1. 按一下 **[!UICONTROL Administration > Campaign management > Target mappings]** 節點。
+1. 按一下 **新增** 按鈕，開啟目標映射建立嚮導。
+1. 輸入 **標籤** 欄位，然後選取您剛在 **目標維度** 欄位。
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. 在&#x200B;**編輯地址表單**&#x200B;窗口中，選擇與各種傳送地址匹配的架構欄位。 在此，我們可以映射&#x200B;**@email**&#x200B;和&#x200B;**@mobile**&#x200B;欄位。
+1. 在 **編輯地址表單** 窗口，選擇與各種傳送地址匹配的架構欄位。 在此，我們可以將 **@email** 和 **@mobile** 欄位。
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. 在以下&#x200B;**Storage**&#x200B;視窗中，輸入擴充架構&#x200B;**的尾碼欄位，以區分新架構與Adobe Campaign提供的現成架構。**
+1. 在以下 **儲存** ，輸入 **擴充功能結構的尾碼** 欄位，區分新結構和Adobe Campaign提供的現成結構。
 
-   按一下&#x200B;**[!UICONTROL Define new additional fields]**&#x200B;以選取您要在傳送中定位的維度。
+   按一下 **[!UICONTROL Define new additional fields]** ，以選取您要在傳送中鎖定的維度。
 
    依預設，排除管理會儲存在與訊息相同的表格中。
 
-   如果要為連結到目標映射的跟蹤配置儲存，請選中&#x200B;**生成用於跟蹤的儲存架構**&#x200B;框。
+   檢查 **產生儲存架構以進行追蹤** 方塊，以便為連結至目標對應的追蹤設定儲存空間。
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign不支援連結至相同broadlog和/或trackinglog結構的多個收件者結構，也稱為目標結構。 否則，之後資料協調可能會導致異常。 如需詳細資訊，請參閱[建議和限制](../../configuration/using/about-custom-recipient-table.md)頁面。
+   >Adobe Campaign不支援連結至相同broadlog和/或trackinglog結構的多個收件者結構，也稱為目標結構。 否則，之後資料協調可能會導致異常。 如需詳細資訊，請參閱 [建議和限制](../../configuration/using/about-custom-recipient-table.md) 頁面。
 
-1. 在&#x200B;**擴充功能**&#x200B;視窗中，選取您要產生的選用結構(可用結構的清單取決於Adobe Campaign平台上安裝的模組)。
+1. 在 **擴充功能** 視窗中，選取您要產生的選用結構(可用結構的清單取決於Adobe Campaign平台上安裝的模組)。
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. 按一下&#x200B;**Save**&#x200B;按鈕以關閉嚮導。
+1. 按一下 **儲存** 按鈕關閉嚮導。
 
    嚮導使用啟動架構建立新目標映射工作所需的所有其他架構。
 

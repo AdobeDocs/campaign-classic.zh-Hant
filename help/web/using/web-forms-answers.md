@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 回應儲存欄位 {#response-storage-fields}
 
-表單的答案可儲存在資料庫的欄位中，或暫時儲存在本機變數中。 欄位建立期間會選擇答案的儲存模式。 可透過&#x200B;**[!UICONTROL Edit storage...]**&#x200B;連結編輯。
+表單的答案可儲存在資料庫的欄位中，或暫時儲存在本機變數中。 欄位建立期間會選擇答案的儲存模式。 您可以透過 **[!UICONTROL Edit storage...]** 連結。
 
 對於表單中的每個輸入欄位，可使用下列儲存選項：
 
@@ -27,21 +27,21 @@ ht-degree: 1%
 
 * **[!UICONTROL Edit a recipient]**
 
-   您可以選取資料庫的欄位：用戶的答案將儲存在此欄位中。 對於每個使用者，只會儲存最後輸入的值：會新增至其設定檔：請參閱[在資料庫中儲存資料](#storing-data-in-the-database)。
+   您可以選取資料庫的欄位：用戶的答案將儲存在此欄位中。 對於每個使用者，只會儲存最後輸入的值：會新增至其設定檔：請參閱 [將資料儲存在資料庫中](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   如果您不想將資訊儲存在資料庫中，則可以使用變數。 局部變數可在上游宣告。 請參閱[將資料儲存在本地變數](#storing-data-in-a-local-variable)。
+   如果您不想將資訊儲存在資料庫中，則可以使用變數。 局部變數可在上游宣告。 請參閱 [將資料儲存在本機變數中](#storing-data-in-a-local-variable).
 
 ### 將資料儲存在資料庫中 {#storing-data-in-the-database}
 
-要將資料保存在資料庫的現有欄位中，請按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;表徵圖，然後從可用欄位清單中選擇它。
+若要將資料儲存在資料庫的現有欄位中，請按一下 **[!UICONTROL Edit expression]** 表徵圖並從可用欄位清單中選取它。
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->預設參考文檔為&#x200B;**nms:recipient**&#x200B;方案。 要查看表單或選擇新表單，請從清單中選擇表單，然後按一下&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。
+>預設的參考文檔為 **nms:recipient** 綱要。 要查看或選擇新表單，請從清單中選擇表單，然後按一下 **[!UICONTROL Properties]** 按鈕。
 
 ### 將資料儲存在本機變數中 {#storing-data-in-a-local-variable}
 
@@ -51,11 +51,11 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-它儲存在建立下拉式方塊時必須選取的變數中，或透過&#x200B;**[!UICONTROL Edit storage...]**&#x200B;連結。
+它會儲存在建立下拉式方塊時必須選取的變數中，或透過 **[!UICONTROL Edit storage...]** 連結。
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-您可以顯示現有變數，並透過&#x200B;**[!UICONTROL Edit variables...]**&#x200B;連結建立新變數。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以建立新變數。
+您可以顯示現有變數，並透過 **[!UICONTROL Edit variables...]** 連結。 按一下 **[!UICONTROL Add]** 按鈕以建立新變數。
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -63,11 +63,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您可以對每個表單上游建立變數。 要執行此操作，請選取表單並按一下&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。 **[!UICONTROL Variables]**&#x200B;標籤包含表單的本地變數。
+>您可以對每個表單上游建立變數。 要執行此操作，請選取表單並按一下 **[!UICONTROL Properties]** 按鈕。 此 **[!UICONTROL Variables]** 索引標籤包含表單的本機變數。
 
 **帶調節的本地儲存示例**
 
-在上述範例中，只有從下拉式清單中選取&#x200B;**[!UICONTROL Private]**&#x200B;選項時，才會顯示包含私人車輛相關資料的容器，如可見性條件所示：
+在上述範例中，只有在 **[!UICONTROL Private]** 選項，如可見性條件中所示：
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >與其他將`<%=`字元取代為逸出字元的欄位不同，HTML內容會使用`<%==`語法以原樣儲存。
+   >不同於 `<%=` 字元會被逸出字元取代，而HTML內容會使用 `<%==` 語法。
 
 ## 保存網路表單答案 {#saving-web-forms-answers}
 
@@ -117,9 +117,9 @@ ht-degree: 1%
 
 使用此方塊有兩種方式：
 
-* 如果通過電子郵件中發送的連結訪問Web表單，並且訪問應用程式的用戶已在資料庫中，則可以檢查&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;選項。 如需詳細資訊，請參閱[透過電子郵件傳送表單](publishing-a-web-form.md#delivering-a-form-via-email)。
+* 如果Web表單是通過電子郵件中發送的連結訪問的，並且如果訪問應用程式的用戶已在資料庫中，則可以檢查 **[!UICONTROL Update the preloaded record]** 選項。 有關詳細資訊，請參閱 [透過電子郵件傳送表單](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   在此情況下，Adobe Campaign會使用使用者設定檔的加密主要金鑰，這是Adobe Campaign為每個設定檔指派的唯一識別碼。 您需要透過預先載入方塊來設定要預先載入的資訊。 如需詳細資訊，請參閱[預先載入表單資料](publishing-a-web-form.md#pre-loading-the-form-data)。
+   在此情況下，Adobe Campaign會使用使用者設定檔的加密主要金鑰，這是Adobe Campaign為每個設定檔指派的唯一識別碼。 您需要透過預先載入方塊來設定要預先載入的資訊。 有關詳細資訊，請參閱 [預先載入表單資料](publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
@@ -129,7 +129,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-預設情況下，資料通過&#x200B;**[!UICONTROL Update or insertion]**&#x200B;操作導入到資料庫中：如果元素存在於資料庫中，則會更新該元素（例如，所選電子報或輸入的電子郵件地址）。 如果不存在，則會新增資訊。
+依預設，資料會由 **[!UICONTROL Update or insertion]** 操作：如果元素存在於資料庫中，則會更新該元素（例如，選取的電子報或輸入的電子郵件地址）。 如果不存在，則會新增資訊。
 
 不過，您可以變更此行為。 要執行此操作，請選取元素的根，然後從下拉式清單中選取要執行的操作：
 
@@ -139,6 +139,6 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->可能的操作包括：**[!UICONTROL Simple reconciliation]**、**[!UICONTROL Update or insertion]**、**[!UICONTROL Insertion]**、**[!UICONTROL Update]**、**[!UICONTROL Deletion]**。\
+>可能的操作包括： **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >運算子的預設資料夾是運算子具有寫入權限的第一個資料夾。\
 >請參閱[本節](../../platform/using/access-management.md)。

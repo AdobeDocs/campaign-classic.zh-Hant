@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -19,11 +19,11 @@ ht-degree: 8%
 
 需要監控技術工作流程，並在工作流程失敗時採取動作。
 
-監控不同促銷活動程式的其他方式顯示在[此頁面](../../production/using/monitoring-guidelines.md)中。
+監控不同促銷活動程式的其他方式，請參閱 [本頁](../../production/using/monitoring-guidelines.md).
 
 ## 執行個體監控控制面板 {#instance-monitoring-dashboard}
 
-您可透過&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤存取執行個體監控控制面板。
+例項監控控制面板可透過 **[!UICONTROL Monitoring]** 標籤。
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -35,35 +35,35 @@ ht-degree: 8%
 
 ## 技術工作流程 {#technical-workflows}
 
-**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**&#x200B;提供技術工作流程。
+技術工作流程可從以下網址取得： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 視技術工作流程而定，請依照下列詳細步驟操作，以確保一切皆如預期般運作。
 
-若要更清楚了解每個技術工作流程應執行的動作，請參閱此[區段](about-technical-workflows.md)。
+若要深入了解每個技術工作流程應執行的動作，請參閱此 [節](about-technical-workflows.md).
 
-對於&#x200B;**[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
+針對 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 檢查&#x200B;**[!UICONTROL Database Cleanup]**&#x200B;工作流程是否每天成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](delivery.md)。
+1. 檢查 **[!UICONTROL Database Cleanup]** 工作流程每天都成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](delivery.md)。
 1. 查看日誌，驗證經過的時間隨時間相對恆定，並且不會干擾其他工作流。
-1. 如需詳細資訊，請查看此[page](../../production/using/database-cleanup-workflow.md)。
+1. 如需詳細資訊，請查看此 [頁面](../../production/using/database-cleanup-workflow.md).
 
-對於&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**:
+針對 **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
 檢查「追蹤」工作流程是否如計畫（預設為每小時）執行，以及日記帳是否不會反覆標示經常發生的錯誤。 如需詳細資訊，請參閱本[區段](delivery.md)。
 
-對於&#x200B;**[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+針對 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. 檢查&#x200B;**[!UICONTROL Deliverability update]**&#x200B;工作流程是否每天成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](delivery.md)。
+1. 檢查 **[!UICONTROL Deliverability update]** 工作流程每天都成功執行並完成。 如需關於此項目的詳細資訊，請參閱此[頁面](delivery.md)。
 1. 在日誌中驗證規則是否定期更新。
 
-對於&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
+針對 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;資料夾下方的所有工作流。 如需關於此項目的詳細資訊，請參閱此[頁面](about-technical-workflows.md)。
+1. 查看位於 **[!UICONTROL Campaign process]** 檔案夾。 如需關於此項目的詳細資訊，請參閱此[頁面](about-technical-workflows.md)。
 1. 檢查工作流程是否如計畫運行，以及日誌是否不會突出顯示經常性錯誤。
 
 ## 工作流程監控 {#workflow-supervision}
 
-**[!UICONTROL Workflow supervisors]**&#x200B;組應包含需要不斷通知故障以及哪些人可以及時採取行動的運算子。
+此 **[!UICONTROL Workflow supervisors]** 群組應包含需要隨時通知失敗的運算子，以及可及時採取動作的運算子。
 
 ![](assets/monitoring_technical_workflows3.png)
 
@@ -93,7 +93,7 @@ ht-degree: 8%
 
 監控的自動化降低了資源開銷並確保任務以適當的頻率進行調度。
 
-您可以構建監控工作流，以便在某些任務失敗或關鍵表太大時發送電子郵件。
+您可以建立監控工作流程，以在某些任務失敗或關鍵表過大時傳送電子郵件。
 
 您可以建立檢視，以便監控功能區域或系統範圍內的所有工作流程。
 

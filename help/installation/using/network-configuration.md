@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -25,19 +25,19 @@ ht-degree: 3%
 
 ### 傳送伺服器 {#delivery-server}
 
-對於傳送伺服器(**nlserver mta**)，必須開啟以下埠：
+對於傳送伺服器(**nlserver mta**)，則必須開啟以下埠：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 埠<br /> </td> 
-   <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> 目的地<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
-   <td> Anywhere<br /> </td> 
-   <td> 電子郵件廣播的SMTP通信。<br /> </td> 
+   <td> 隨處皆可<br /> </td> 
+   <td> 電子郵件廣播的SMTP流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp（域）<br /> </td> 
@@ -46,7 +46,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 38000/tcp（預設埠）<br /> </td> 
-   <td> SMS網關<br /> </td> 
+   <td> SMS閘道<br /> </td> 
    <td> 用於將SMS通信發送到NetSize SMS路由器[option]。<br /> </td> 
   </tr> 
   <tr> 
@@ -59,42 +59,42 @@ ht-degree: 3%
 
 ### 傳入郵件 {#inbound-mail}
 
-對於入站郵件恢復進程(**nlserver inMail**)，必須開啟以下埠：
+對於入站郵件恢復進程(**nlserver inMail**)，則必須開啟以下埠：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 埠<br /> </td> 
-   <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> 目的地<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp(pop3)<br /> </td> 
    <td> 內部郵件伺服器<br /> </td> 
-   <td> POP3流量以提取退信。<br /> </td> 
+   <td> POP3流量，用於提取退信。<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
    <td> 內部郵件伺服器<br /> </td> 
-   <td> SMTP流量，用於發送未由預先定義的規則自動處理的剩餘退信。<br /> </td> 
+   <td> SMTP流量，用於傳送未由預先定義的規則自動處理的剩餘退信。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 應用程式伺服器 {#application-server}
 
-對於應用程式伺服器(**nlserver web**)，必須開啟以下埠：
+對於應用程式伺服器(**nlserver web**)，則必須開啟以下埠：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 埠<br /> </td> 
-   <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> 目的地<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp(http)<br /> 443/tcp(https)<br /> </td> 
-   <td> Anywhere<br /> </td> 
+   <td> 隨處皆可<br /> </td> 
    <td> HTTP或HTTPS流量（包括傳遞能力選件）。<br /> </td> 
   </tr> 
  </tbody> 
@@ -104,33 +104,33 @@ ht-degree: 3%
 
 ### 簡訊傳送狀態 {#sms-delivery-status}
 
-若要追蹤SMS傳送(**nlserver sms**)，必須開啟下列連接埠：
+追蹤SMS傳送(**nlserver sms**)，則必須開啟以下埠：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 埠<br /> </td> 
-   <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> 目的地<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp（預設埠）<br /> </td> 
-   <td> SMS網關<br /> </td> 
-   <td> 查詢由NetSize SMS網關[option]管理的傳送隊列狀態。<br /> </td> 
+   <td> SMS閘道<br /> </td> 
+   <td> 查詢由NetSize SMS網關[選項]管理的傳送隊列狀態。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 富客戶端 {#rich-client}
 
-對於Adobe Campaign rich client(**nlclient**)，必須開啟以下埠：
+針對Adobe Campaign Rich用戶端(**nlclient**)，則必須開啟以下埠：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 埠<br /> </td> 
-   <td> 目標<br /> </td> 
-   <td> 注釋<br /> </td> 
+   <td> 目的地<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p>443/tcp(https)</p><br /> </td> 
@@ -151,7 +151,7 @@ ht-degree: 3%
   <tr> 
    <td> 資料庫類型<br /> </td> 
    <td> 埠（預設）<br /> </td> 
-   <td> 目標<br /> </td> 
+   <td> 目的地<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Oracle</strong><br /> </td> 
@@ -182,12 +182,12 @@ ht-degree: 3%
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 監聽埠<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 隨處皆可。 每個點擊追蹤的連結都會在伺服器上產生HTTP要求。<br /> </td> 
+   <td> 隨處皆可。 追蹤連結上的每次點按都會在伺服器上產生HTTP要求。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -199,7 +199,7 @@ ht-degree: 3%
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 監聽埠<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
@@ -214,7 +214,7 @@ ht-degree: 3%
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 監聽埠<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
@@ -226,12 +226,12 @@ ht-degree: 3%
 
 ## 與Adobe Experience Manager整合 {#integration-with-adobe-experience-manager}
 
-如果安裝為「內部部署」，Adobe Campaign和Adobe Experience Manager之間的整合需要開啟數個埠。 如需設定此整合的詳細資訊，請參閱[詳細檔案](../../integrations/using/about-adobe-experience-manager.md)。
+如果安裝為「內部部署」，Adobe Campaign和Adobe Experience Manager之間的整合需要開啟數個埠。 如需設定此整合的詳細資訊，請參閱 [詳細檔案](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 監聽埠<br /> </td> 
    <td> 說明<br /> </td> 
   </tr> 
   <tr> 
@@ -247,7 +247,7 @@ ht-degree: 3%
 
 ## 頻寬 {#bandwidth}
 
-要考慮的網路配置的另一個關鍵參數。 電子郵件廣播中，它幾乎總是出站，而且需求很大。 以下是根據我們經驗進行的幾個設定範例：
+要考慮的網路配置的另一個關鍵參數。 它幾乎總是在外站，在電子郵件廣播期間有很多需求。 以下是根據我們經驗進行的幾個設定範例：
 
 * 每小時10,000封電子郵件為1 Mb/s（平均大小為30 Kb）
 * 每小時100,000封電子郵件為8至10 Mb/s（平均大小30 Kb）

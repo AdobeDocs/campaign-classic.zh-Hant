@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -17,9 +17,9 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-除了顯示網際網路使用者點按電子郵件中連結之行為的標準追蹤外，Adobe Campaign平台還可讓您收集網際網路使用者如何瀏覽您網站的相關資訊。 此資料收集由Web追蹤模組執行。
+除了顯示網際網路使用者點按電子郵件訊息中連結之行為的標準追蹤以外，Adobe Campaign平台還可讓您收集網際網路使用者如何瀏覽您網站的相關資訊。 此資料收集由Web追蹤模組執行。
 
-當網際網路使用者從指定的傳送點按電子郵件中的追蹤連結時，重新導向伺服器連絡的會話Cookie會儲存包含broadlog識別碼(broadlogId)和傳送識別碼(deliveryId)。
+當網際網路使用者按一下來自指定傳送之電子郵件中的追蹤連結時，重新導向伺服器聯絡的會話Cookie會儲存包含broadlog識別碼(broadlogId)和傳送識別碼(deliveryId)。
 
 然後，當使用者每次造訪包含網頁追蹤標籤的頁面時，Web用戶端就會將此Cookie傳送至伺服器。 這會持續到整個工作階段，即直到Web用戶端關閉為止。
 

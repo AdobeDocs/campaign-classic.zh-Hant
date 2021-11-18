@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -29,11 +29,11 @@ Adobe Campaign提供的網頁追蹤模組可讓您收集收件者在追蹤網站
 
 ## 伺服器配置 {#server-configuration}
 
-伺服器是透過超載&#x200B;**serverConf.xml**&#x200B;檔案的某些元素來設定。 這些檔案儲存在Adobe Campaign安裝目錄的&#x200B;**conf**&#x200B;子目錄中。
+伺服器的設定方式，是透過 **serverConf.xml** 檔案。 這些檔案會儲存在 **conf** Adobe Campaign安裝目錄的子目錄。
 
 ### 重定向伺服器 {#redirection-server}
 
-對於重定向伺服器，將&#x200B;**redirection**&#x200B;元素的&#x200B;**trackWebVisitors**&#x200B;屬性設定為&#x200B;**true**。
+對於重定向伺服器，設定 **trackWebVisitors** 屬性 **重定向** 元素 **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 若要透過用戶端主控台檢視追蹤資訊，您必須：
 
-* 建立&#x200B;**虛擬傳送**（傳送對應必須與目標架構的對應相同）,
-* 在&#x200B;**NmsTracking_WebTrackingDelivery**&#x200B;選項中輸入此傳送的&#x200B;**內部名稱**。
+* 建立 **虛擬傳送** （傳送對應必須與目標架構的對應相同）,
+* 輸入 **內部名稱** 在 **NmsTracking_WebTrackingDelivery** 選項。
 
-並非直接在電子郵件中的點按後顯示的所有網站追蹤資訊，都可在建立的虛擬傳送中檢視。
+並非直接在電子郵件中點按後顯示的所有網站追蹤資訊，都可在建立的虛擬傳送中檢視。

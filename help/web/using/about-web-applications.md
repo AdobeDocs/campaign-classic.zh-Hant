@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
@@ -29,7 +29,7 @@ Adobe Campaign可讓您使用資料庫中的資料和符合連線使用者權限
 
 >[!NOTE]
 >
->請參閱[安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html) ，了解如何最佳化Web應用程式的安全性。
+>請參閱 [安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html) 了解如何最佳化網頁應用程式的安全性。
 
 >[!CAUTION]
 >
@@ -46,13 +46,13 @@ Adobe Campaign中的Web應用程式可存取下列功能：
 * 根據答案有條件顯示調查欄位。 如需關於此項目的詳細資訊，請參閱此[頁面](form-rendering.md#defining-fields-conditional-display)。
 * 隨機顯示問題。 如需關於此項目的詳細資訊，請參閱此[頁面](../../surveys/using/building-a-survey.md#adding-questions)。
 * 條件式頁面顯示。 如需關於此項目的詳細資訊，請參閱此[頁面](defining-web-forms-page-sequencing.md#conditional-page-display)。
-* 驗證前的資訊檢查取決於預期的資料類型（編號、電子郵件地址、日期等） 和必填欄位。 如需關於此項目的詳細資訊，請參閱此[頁面](form-rendering.md#defining-control-settings)。
+* 驗證前的資訊檢查取決於預期的資料類型（號碼、電子郵件地址、日期等） 和必填欄位。 如需關於此項目的詳細資訊，請參閱此[頁面](form-rendering.md#defining-control-settings)。
 * 電子郵件邀請或通知。 如需關於此項目的詳細資訊，請參閱此[頁面](publishing-a-web-form.md#delivering-a-form-via-email)。
 * 錯誤和結束訊息的個人化。 如需關於此項目的詳細資訊，請參閱此[頁面](defining-web-forms-properties.md#setting-up-an-error-page)。
 * 影像、影片、超文字連結、驗證碼等的使用。 如需關於此項目的詳細資訊，請參閱此[頁面](editing-content.md)。
 * 即時監控回應。 如需關於此項目的詳細資訊，請參閱此[頁面](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking)。
 
-選用的&#x200B;**Survey**&#x200B;建立模組提供下列額外功能：
+選填 **調查** 建立模組提供下列其他功能：
 
 * 資料庫的動態擴展：建立不包含在初始資料範本中的回應。 如需關於此項目的詳細資訊，請參閱此[頁面](../../surveys/using/managing-answers.md#storing-collected-answers)。
 * 產生專用報表。 如需關於此項目的詳細資訊，請參閱此[頁面](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys)。
@@ -61,9 +61,9 @@ Adobe Campaign中的Web應用程式可存取下列功能：
 
 >[!NOTE]
 >
->調查在[本區段](../../surveys/using/about-surveys.md)中詳細說明。
+>調查在 [本節](../../surveys/using/about-surveys.md).
 >
->在[本節](about-web-forms.md)中詳細說明Adobe Campaign中網路表單的整體功能。
+>Adobe Campaign中網路表單的整體功能於 [本節](about-web-forms.md).
 
 ## Web應用程式實作 {#web-application-implementation}
 
@@ -71,19 +71,19 @@ Adobe Campaign中的Web應用程式可存取下列功能：
 
 1. 建立內容（欄位、清單、表格、圖形等）。
 
-   您也可以檢視區段，其中詳細說明表單的可用欄位：這些欄位也適用於Web應用程式。 此資訊可在[此頁面](adding-fields-to-a-web-form.md)中找到。
+   您也可以檢視區段，其中詳細說明表單的可用欄位：這些欄位也適用於Web應用程式。 此資訊可在 [本頁](adding-fields-to-a-web-form.md).
 
 1. 根據需要，您可以添加預載、測試和保存步驟，並配置訪問控制系統（主要在外聯網發佈的框架內）。
 1. 發佈Web應用程式，以便在外聯網或Adobe Campaign上提供。
 
 ## Web應用程式初始配置 {#web-application-initial-configuration}
 
-通過&#x200B;**[!UICONTROL Campaigns]**&#x200B;和&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;頁簽中的&#x200B;**[!UICONTROL Web Applications]**&#x200B;連結建立Web應用程式。
+Web應用程式是透過 **[!UICONTROL Web Applications]** 連結 **[!UICONTROL Campaigns]** 和 **[!UICONTROL Profiles and targets]** 頁簽。
 
-Web應用程式儲存在Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;節點中。 設定在下列資料夾中劃分：
+Web應用程式儲存在 **[!UICONTROL Resources > Online > Web Applications]** Adobe Campaign樹的節點。 設定在下列資料夾中劃分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**:包含用於Web表單演示（應用程式和調查）的呈現模板。範本可讓您產生表單。 它也使用CSS樣式表。 在模板級別，此樣式表可以超載。 如需詳細資訊，請參閱[此頁面](form-rendering.md#selecting-the-form-rendering-template)。
-* **[!UICONTROL Resources > Templates > Web application templates]**:包含表單範本。要建立表單或Web應用程式，必須從模板開始。
+* **[!UICONTROL Administration > Configuration > Form renderings]**:包含用於Web表單演示（應用程式和調查）的呈現模板。 範本可讓您產生表單。 它也使用CSS樣式表。 在模板級別，此樣式表可以超載。 如需詳細資訊，請參閱[此頁面](form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Resources > Templates > Web application templates]**:包含表單範本。 要建立表單或Web應用程式，必須從模板開始。
 
 ## Web應用程式模板 {#web-application-templates}
 
@@ -93,7 +93,7 @@ Web應用程式儲存在Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > On
 >
 >您可以將現有的Web應用程式轉換為範本。 要執行此操作，請選取表單並按一下右鍵。 選取 **[!UICONTROL Actions > Save as template...]**。
 
-您可以透過Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > Templates > Web Application templates]**&#x200B;節點建立新範本。
+您可以透過 **[!UICONTROL Resources > Templates > Web Application templates]** Adobe Campaign樹的節點。
 
 建立精靈可讓您選取要啟用的選項，如下所示。
 

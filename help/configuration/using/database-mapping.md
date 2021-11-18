@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
   </enumeration>  
 
   <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient e-mail address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
     <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
     <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
     <element label="Location" name="location">      
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## 說明 {#description}
 
-架構的根元素不再是&#x200B;**`<srcschema>`**，而是&#x200B;**`<schema>`**。
+架構的根元素不再是 **`<srcschema>`**，但 **`<schema>`**.
 
 這將我們帶到另一種類型的文檔，它自動從源架構生成，只稱為架構。 此結構將用於Adobe Campaign應用程式。
 
@@ -50,7 +50,7 @@ SQL命名規則如下：
 
 * 表格：架構命名空間和名稱的連接
 
-   在本例中，表的名稱是通過&#x200B;**sqltable**&#x200B;屬性中架構的主要元素輸入的：
+   在我們的範例中，表格的名稱是透過 **sqltable** 屬性：
 
    ```
    <element name="recipient" sqltable="CusRecipient">
@@ -58,10 +58,10 @@ SQL命名規則如下：
 
 * 欄位：元素的名稱，前面加上根據類型定義的前置詞（「i」代表整數，「d」代表雙重，「s」代表字串，「ts」代表日期等）
 
-   通過&#x200B;**sqlname**&#x200B;屬性為每個類型&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;輸入欄位名稱：
+   欄位名稱是透過 **sqlname** 屬性 **`<attribute>`** 和 **`<element>`**:
 
    ```
-   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
    ```
 
 >[!NOTE]
@@ -85,9 +85,9 @@ SQL欄位約束如下：
 
 ## XML欄位 {#xml-fields}
 
-預設情況下，任何類型的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素都映射到資料架構表的SQL欄位。 但是，您可以在XML中引用此欄位，而不是SQL，這意味著資料儲存在包含所有XML欄位值的表的備忘錄欄位(&quot;mData&quot;)中。 這些資料的儲存是一個XML文檔，用於觀察架構結構。
+依預設，任何類型 **`<attribute>`** 和 **`<element>`** 元素會對應到資料架構表的SQL欄位。 但是，您可以在XML中引用此欄位，而不是SQL，這意味著資料儲存在包含所有XML欄位值的表的備忘錄欄位(&quot;mData&quot;)中。 這些資料的儲存是一個XML文檔，用於觀察架構結構。
 
-若要在XML中填入欄位，必須將&#x200B;**xml**&#x200B;屬性以「true」值新增至相關元素。
+若要以XML填入欄位，您必須新增 **xml** 屬性，且值為「true」。
 
 **範例**:以下是兩個XML欄位使用範例。
 
@@ -103,7 +103,7 @@ SQL欄位約束如下：
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   「html」類型可讓您將HTML內容儲存在CDATA標籤中，並在Adobe Campaign用戶端介面中顯示特殊的HTML編輯檢查。
+   「html」類型可讓您將HTML內容儲存在CDATA標籤中，並在Adobe Campaign用戶端介面中顯示特殊HTML編輯檢查。
 
 使用XML欄位可讓您添加欄位，而無需修改資料庫的物理結構。 另一個優點是，您使用的資源更少（分配給SQL欄位的大小、每個表的欄位數限制等）。
 
@@ -126,7 +126,7 @@ SQL欄位約束如下：
 索引遵循下列規則：
 
 * 索引可以引用表中的一個或多個欄位。
-* 如果&#x200B;**unique**&#x200B;屬性包含「true」值，則所有欄位中的索引都可以是唯一的（以避免重複）。
+* 索引在所有欄位中都可以是唯一的（以避免重複），如果 **唯一** 屬性包含「true」值。
 * 索引的SQL名稱由表的SQL名稱和索引的名稱確定。
 
 >[!NOTE]
@@ -139,7 +139,7 @@ SQL欄位約束如下：
 
 **範例**:
 
-* 向電子郵件地址和城市添加索引：
+* 將索引新增至電子郵件地址和城市：
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -149,7 +149,7 @@ SQL欄位約束如下：
          <keyfield xpath="location/@city"/> 
        </dbindex>
    
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
        <element name="location" label="Location">
          <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
        </element>
@@ -171,7 +171,7 @@ SQL欄位約束如下：
        </dbindex>
    
        <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
      </element>
    </srcSchema>
    ```
@@ -193,8 +193,8 @@ SQL欄位約束如下：
 鍵遵循下列規則：
 
 * 鍵可以引用表中的一個或多個欄位。
-* 當鍵是要填入的架構中的第一個鍵，或者它包含&#x200B;**internal**&#x200B;屬性且值為「true」時，該鍵稱為「primary」（或「priority」）。
-* 每個鍵定義隱式聲明一個唯一索引。 通過將&#x200B;**noDbIndex**&#x200B;屬性添加為「true」，可以阻止在鍵上建立索引。
+* 當鍵是要填入的架構中的第一個鍵，或其包含時，即稱為「primary」（或「priority」） **內部** 屬性，且值為「true」。
+* 每個鍵定義隱式聲明一個唯一索引。 通過添加 **noDbIndex** 屬性，且值為「true」。
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ SQL欄位約束如下：
 
 **範例**:
 
-* 向電子郵件地址和城市添加密鑰：
+* 新增金鑰至電子郵件地址和城市：
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -216,7 +216,7 @@ SQL欄位約束如下：
          <keyfield xpath="location/@city"/> 
        </key>
    
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
        <element name="location" label="Location">
          <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
        </element>
@@ -239,7 +239,7 @@ SQL欄位約束如下：
        <keyfield xpath="location/@city"/>    
       </key>    
    
-      <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
       <element label="Location" name="location">      
         <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
       </element>  
@@ -261,7 +261,7 @@ SQL欄位約束如下：
        </key>
    
        <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
      </element>
    </srcSchema>
    ```
@@ -284,20 +284,20 @@ SQL欄位約束如下：
        </key>    
    
        <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+       <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
      </element>
    </schema>
    ```
 
 ### 自動增量密鑰 {#auto-incremental-key}
 
-大部分Adobe Campaign表的主鍵是資料庫引擎自動生成的32位長整數。 鍵值的計算取決於一個序列（預設情況下，**XtkNewId** SQL函式），該序列生成的數字在整個資料庫中是唯一的。 在插入記錄時自動輸入密鑰的內容。
+大部分Adobe Campaign表的主鍵是資料庫引擎自動生成的32位長整數。 鍵值的計算取決於序列(依預設， **XtkNewId** SQL函式)生成在整個資料庫中唯一的編號。 在插入記錄時自動輸入密鑰的內容。
 
 增量密鑰的優點在於，它為表之間的連接提供了不可修改的技術密鑰。 此外，此鍵不會佔用太多記憶體，因為它使用雙位元組整數。
 
-可以在源架構中指定要與&#x200B;**pkSequence**&#x200B;屬性一起使用的序列的名稱。 如果未在源架構中提供此屬性，則將使用&#x200B;**XtkNewId**&#x200B;預設序列。 應用程式使用專用序列&#x200B;**nms:broadLog**&#x200B;和&#x200B;**nms:trackingLog**&#x200B;架構（分別為&#x200B;**NmsBroadLogId**&#x200B;和&#x200B;**NmsTrackingLogId**），因為這些表包含最多記錄。
+您可以在來源架構中指定要與搭配使用之序列的名稱 **pkSequence** 屬性。 如果未在源架構中指定此屬性，則 **XtkNewId** 將使用預設序列。 應用程式會針對 **nms:broadLog** 和 **nms:trackingLog** 結構(**NmsBroadLogId** 和 **NmsTrackingLogId** )，因為這些表包含最多記錄。
 
-從ACC 18.10開始，**XtkNewId**&#x200B;不再是現成可用結構中序列的預設值。 您現在可以建立架構，或以專用順序擴充現有架構。
+從ACC 18.10開始， **XtkNewId** 已不是現成可用結構中序列的預設值。 您現在可以建立架構，或以專用順序擴充現有架構。
 
 >[!IMPORTANT]
 >
@@ -305,9 +305,9 @@ SQL欄位約束如下：
 
 >[!NOTE]
 >
->Adobe Campaign架構(**NmsTrackingLogId**)中參考的序列必須與傳回參數中ID數的SQL函式相關聯，並以逗號分隔。 此函式必須稱為&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名稱（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看&#x200B;**postgres-nms.sql**、**mssql-nmssql**&#x200B;或&#x200B;**&lt;datakit/nms/eng/sql/**&#x200B;目錄中隨應用程式提供的&#x200B;**oracle-nms.sql**&#x200B;檔案，以恢復為每個資料庫引擎建立「NmsTrackingLogId」序列的示例。
+>Adobe Campaign結構中參考的序列(**NmsTrackingLogId** 例如，)必須與傳回參數中ID數的SQL函式相關聯，並以逗號分隔。 必須呼叫此函式 **GetNew** XXX **Id**，其中 **XXX** 是序列的名稱(**GetNewNmsTrackingLogIds** 例如)。 檢視 **postgres-nms.sql**, **mssql-nms.sql** 或 **oracle-nms.sql** 在 **datakit/nms/eng/sql/** 目錄，以恢復每個資料庫引擎的「NmsTrackingLogId」序列建立示例。
 
-若要宣告唯一索引鍵，請在資料結構的主要元素上填入&#x200B;**autopk**&#x200B;屬性（以「true」值表示）。
+若要宣告唯一金鑰，請填入 **奧托普** 屬性（值為「true」）。
 
 **範例**:
 
@@ -359,16 +359,16 @@ SQL欄位約束如下：
 
 要連接與促銷活動表/資料庫的關係：
 
-* ![](assets/join_with_campaign11.png) :基數1-1。例如，收件者與目前訂單之間。 收件者一次只能與目前訂單表的一個出現次數相關。
-* ![](assets/externaljoin11.png) :基數1-1，外部連接。例如，在收件者與其國家之間。 收件者只能與表國家/地區的一個出現次數相關。 不會儲存國家/地區表格的內容。
-* ![](assets/join_with_campaign1n.png) :基數1-N。例如，在收件者和訂閱表格之間。收件者可與訂閱表格上的數個發生次數相關聯。
+* ![](assets/join_with_campaign11.png) :基數1-1。 例如，收件者與目前訂單之間。 收件者一次只能與目前訂單表的一個出現次數相關。
+* ![](assets/externaljoin11.png) :基數1-1，外部連接。 例如，在收件者與其國家之間。 收件者只能與表國家/地區的一個出現次數相關。 不會儲存國家/地區表格的內容。
+* ![](assets/join_with_campaign1n.png) :基數1-N。例如，在收件者和訂閱表格之間。 收件者可與訂閱表格上的數個發生次數相關聯。
 
 對於使用聯合資料庫訪問的連接關係：
 
 * ![](assets/join_fda_11.png) :基數1-1
 * ![](assets/join_fda_1m.png) :基數1-N
 
-有關FDA表格的詳細資訊，請參閱[存取外部資料庫](../../installation/using/about-fda.md)。
+如需FDA表格的詳細資訊，請參閱 [訪問外部資料庫](../../installation/using/about-fda.md).
 
 必須在包含透過主要元素連結之表格的外鍵的架構中宣告連結：
 
@@ -382,18 +382,18 @@ SQL欄位約束如下：
 
 連結遵循下列規則：
 
-* 連結的定義是在&#x200B;**link**-type **`<element>`**&#x200B;上輸入的，具有以下屬性：
+* 連結的定義是在 **連結**-type **`<element>`** 搭配下列屬性：
 
    * **名稱**:源表中的連結名稱，
    * **目標**:目標架構的名稱，
    * **標籤**:連結標籤，
    * **revLink** （可選）:來自目標架構的反向連結名稱（預設會自動推斷）,
-   * **完整性** （可選）:源表實例與目標表實例的參考完整性。可能的值如下：
+   * **完整性** （可選）:源表實例與目標表實例的參考完整性。 可能的值如下：
 
       * **定義**:如果源實例不再被目標實例引用，則可以刪除該源實例，
       * **正常**:刪除源出現器將初始化指向目標出現器的連結的密鑰（預設模式），此類型的完整性將初始化所有外鍵，
-      * **擁有**:刪除源事件會導致刪除目標事件，
-      * **下載**:與 **own** （若是刪除）或重複發生次數（若是重複）,
+      * **自有**:刪除源事件會導致刪除目標事件，
+      * **下副本**:與 **自有** （若是刪除）或重複發生次數（若是重複）,
       * **中性**:什麼都不做。
    * **revIntegrity** （可選）:目標架構的完整性（預設為「正常」）,
    * **revCardinality** （可選）:若值為「single」，則會以類型1-1填入基數（預設為1-N）。
@@ -401,10 +401,10 @@ SQL欄位約束如下：
    * **revExternalJoin** （可選）:強制反向連接上的外連接
 
 
-* 連結將從源表引用一個或多個欄位到目標表。 組成連接（`<join>`元素）的欄位無需填充，因為預設情況下，會使用目標架構的內部鍵自動推斷這些欄位。
+* 連結將從源表引用一個或多個欄位到目標表。 組成連接的欄位( `<join>`  元素)，因為預設會使用目標架構的內部索引鍵自動推斷這些元素。
 * 索引會自動新增至延伸架構中連結的外鍵。
 * 連結由兩個半連結組成，其中第一個連結從源架構中聲明，第二個連結在目標架構的擴展架構中自動建立。
-* 如果添加了&#x200B;**externalJoin**&#x200B;屬性，且值為「true」（在PostgreSQL中支援），則連接可以是外連接。
+* 如果 **externalJoin** 新增屬性，並加上「true」值（PostgreSQL支援）。
 
 >[!NOTE]
 >
@@ -442,7 +442,7 @@ SQL欄位約束如下：
 
 連結定義由組成連接的欄位補充，即目標架構中包含其XPath(&quot;@id&quot;)的主鍵，以及架構中包含其XPath(&quot;@company-id&quot;)的外鍵。
 
-外鍵會自動添加到與目標表中關聯欄位具有相同特性的元素中，並具有以下命名慣例：目標架構的名稱，後面接著關聯欄位的名稱（在此範例中為「company-id」）。
+外鍵會自動添加到與目標表中關聯欄位具有相同特性的元素中，並具有以下命名慣例：目標結構的名稱，後面接著關聯欄位的名稱（在此範例中為「company-id」）。
 
 目標的延伸架構(「cus:company」):
 
@@ -508,7 +508,7 @@ SQL欄位約束如下：
 
 ### 範例5 {#example-5}
 
-在此範例中，我們想在連結（「company」至「cus:company」架構）上建立索引鍵，其中包含&#x200B;**xlink**&#x200B;屬性，以及(「email」)表格的欄位：
+在此範例中，我們想使用 **xlink** 屬性和（「電子郵件」）表格的欄位：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -543,7 +543,7 @@ SQL欄位約束如下：
       <keyfield xpath="@company-id"/>    
     </key>
 
-    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>
+    <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>
     <element label="Company" name="company" revLink="recipient" target="sfa:company" type="link">      
       <join xpath-dst="@id" xpath-src="@company-id"/>    
     </element>    
