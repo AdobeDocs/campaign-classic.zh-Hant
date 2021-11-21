@@ -26,9 +26,9 @@ Experience Cloud資產提供單一、集中的存放庫，存放您可在各解�
 
 在Adobe Campaign中編輯電子郵件傳送或登錄頁面時，您可以從Adobe Experience Cloud資料庫中放置資產。 這些資產可儲存在「資產」核心服務或「Adobe Experience Manager資產」中，端視您使用的解決方案而定。
 
-[本檔案](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html)中詳細說明了不同的可用庫。
+以下章節詳細說明不同的可用程式庫： [此文檔](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
 
-請參閱[設定資產存取權](../../integrations/using/configuring-access-to-assets.md)區段，深入了解連結至每個程式庫的詳細資訊。
+請參閱 [設定資產存取權](../../integrations/using/configuring-access-to-assets.md) 區段，以了解連結至每個程式庫的詳細資訊。
 
 >[!NOTE]
 >

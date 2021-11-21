@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-**檔案收集器**&#x200B;監視目錄中一個或多個檔案的到達，並為收到的每個檔案激活其轉變。 對於每個事件， **[!UICONTROL filename]**&#x200B;變數包含收到的檔案的完整名稱。 收集的檔案會移至其他目錄以用於封存，並確保只計算一次。
+此 **檔案收集器** 監視一個或多個檔案到達目錄中，並為收到的每個檔案激活其轉變。 對於每個事件， **[!UICONTROL filename]** 變數包含收到的檔案完整名稱。 收集的檔案會移至其他目錄以用於封存，並確保只計算一次。
 
 預設情況下，檔案收集器是一項持久性任務，用於在調度指定的時間測試檔案是否存在。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 屬性 {#properties}
 
-**[!UICONTROL File collector]**&#x200B;活動的第一個索引標籤可讓您選取來源目錄，並視需要篩選收集的檔案。 其他標籤在[傳入電子郵件](inbound-emails.md)(**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;標籤中詳細說明。
+的第一個標籤 **[!UICONTROL File collector]** 活動可讓您選取來源目錄，並視需要篩選收集的檔案。 其他標籤在 [傳入電子郵件](inbound-emails.md) (**[!UICONTROL Schedule]** 和 **[!UICONTROL Expiry]** 標籤)。
 
 ![](assets/file_collect_edit.png)
 
@@ -37,17 +37,17 @@ ht-degree: 0%
 
    * **[!UICONTROL Filter]**
 
-      只考慮與此篩選器匹配的檔案。 目錄中的其他檔案會被忽略。 如果篩選器為空，則會考慮目錄中的所有檔案。 篩選範例：***.zip**, **import-*.txt**。
+      只考慮與此篩選器匹配的檔案。 目錄中的其他檔案會被忽略。 如果篩選器為空，則會考慮目錄中的所有檔案。 篩選範例： ***.zip**, **import-*.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
       如果啟用此選項，則任務在接收到第一個檔案後結束。 如果目錄中存在與篩選器對應的數個檔案，則只會考慮一個檔案。 此選項保證只會傳送一個事件。 已考慮的檔案是清單中按字母順序排列的第一個檔案。
 
-      對於未調度的活動，如果在指定目錄中未找到與篩選器匹配的檔案，並且未啟用&#x200B;**[!UICONTROL Process file nonexistence]**&#x200B;選項，則將引發錯誤。
+      對於未調度的活動，如果在指定目錄中找不到與篩選器匹配的檔案，以及 **[!UICONTROL Process file nonexistence]** 選項，則會引發錯誤。
 
    * **[!UICONTROL Execution schedule]**
 
-      通過&#x200B;**[!UICONTROL Schedule]**&#x200B;頁簽的參數確定檔案是否存在檢查的頻率。
+      透過 **[!UICONTROL Schedule]** 標籤。
 
 1. **錯誤處理**
 
@@ -69,9 +69,9 @@ ht-degree: 0%
 
 1. **歷史化**
 
-   請參閱以下的&#x200B;**[!UICONTROL File historization]**&#x200B;步驟：[Web下載](web-download.md)。
+   請參閱 **[!UICONTROL File historization]** 步驟如下： [網頁下載](web-download.md).
 
-無法確定檔案處理順序。 要按順序處理一組檔案，請使用&#x200B;**[!UICONTROL Stop as soon as a file has been processed]**&#x200B;選項並建立循環。 在這種情況下，會以字母順序處理檔案。 **[!UICONTROL Process file nonexistence]**&#x200B;選項可讓您完成迭代。
+無法確定檔案處理順序。 若要依序處理一組檔案，請使用 **[!UICONTROL Stop as soon as a file has been processed]** 選項並建立回圈。 在這種情況下，會以字母順序處理檔案。 此 **[!UICONTROL Process file nonexistence]** 選項，即可完成小版本。
 
 ![](assets/file_collect_loop.png)
 

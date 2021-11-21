@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-在本頁面中，您將學習如何將Campaign Classic連接到&#x200B;**Salesforce**。
+在本頁面中，您將學習如何將Campaign Classic連結至 **Salesforce**.
 
 資料同步是透過專用的工作流程活動執行。 [深入瞭解](../../platform/using/crm-data-sync.md)。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。
 要配置Salesforce的CRM連接器，請執行以下步驟：
 
-1. 透過Adobe Campaign樹的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;節點建立新的外部帳戶。
+1. 透過 **[!UICONTROL Administration > Platform > External accounts]** Adobe Campaign樹的節點。
 1. 選取 **[!UICONTROL Salesforce.com]**。
 1. 輸入啟用連接的設定。
 
@@ -40,10 +40,10 @@ ht-degree: 0%
 用於登入Salesforce CRM的密碼。
 
    * **[!UICONTROL Client identifier]**
-若要了解在何處尋找用戶端識別碼，請參閱本 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+若要了解在何處尋找用戶端識別碼，請參閱 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL Security token]**
-若要了解在何處尋找您的安全性代號，請參閱本 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+若要了解在何處尋找您的安全代號，請參閱 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL API version]**
 選取API的版本。
@@ -55,15 +55,15 @@ ht-degree: 0%
    >
    >若要核准設定，您必須註銷並返回Adobe Campaign主控台。
 
-1. 檢查&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點中Adobe Campaign中產生的架構。
+1. 檢查在Adobe Campaign中產生的結構 **[!UICONTROL Administration > Configuration > Data schemas]** 節點。
 
-   **Salesforce**&#x200B;架構的範例：
+   範例 **Salesforce** 方案：
 
    ![](assets/crm_connectors_sfdc_table.png)
 
 1. 建立結構後，您就可以自動將列舉從Salesforce同步至Adobe Campaign。
 
-   要執行此操作，請按一下&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;連結，並選取符合Salesforce分項的Adobe Campaign分項清單。
+   若要這麼做，請按一下 **[!UICONTROL Synchronizing enumerations...]** 連結，並選取符合Salesforce分項的Adobe Campaign分項清單。
 
 
 
@@ -71,12 +71,12 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可以將Adobe Campaign分項清單的所有值取代為CRM的值：要執行此操作，請在&#x200B;**[!UICONTROL Replace]**&#x200B;欄中選取&#x200B;**[!UICONTROL Yes]** 。
+   >您可以將Adobe Campaign分項清單的所有值取代為CRM的值：要執行此操作，請選取 **[!UICONTROL Yes]** 在 **[!UICONTROL Replace]** 欄。
 
 
-   按一下&#x200B;**[!UICONTROL Next]**，然後按一下&#x200B;**[!UICONTROL Start]**&#x200B;開始匯入清單。
+   按一下 **[!UICONTROL Next]** 然後 **[!UICONTROL Start]** 以開始導入清單。
 
-1. 檢查&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;功能表中的匯入值。
+1. 檢查 **[!UICONTROL Administration > Platform > Enumerations]** 功能表。
 
    ![](assets/crm_connectors_sfdc_exe.png)
 
@@ -86,8 +86,8 @@ ht-degree: 0%
 
 Campaign和Salesforce.com現已連接。 您可以在兩個系統之間設定資料同步。
 
-若要同步Adobe Campaign資料與SFDC之間的資料，您需要建立工作流程並使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活動。
+若要同步Adobe Campaign資料和SFDC之間的資料，您需要建立工作流程，並使用 **[!UICONTROL CRM connector]** 活動。
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-了解更多有關資料同步[的資訊，請參閱本頁](../../platform/using/crm-data-sync.md)。
+深入了解資料同步 [在本頁](../../platform/using/crm-data-sync.md).

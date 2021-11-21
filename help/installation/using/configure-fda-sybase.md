@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-使用Campaign **同盟資料存取**(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定對Sybase IQ的存取權。
+使用Campaign **同盟資料存取** (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定對Sybase IQ的存取權。
 
-1. 配置[Sybase IQ資料庫](#configuring-sybase)
-1. 在Campaign中設定Sybase IQ[外部帳戶](#sybase-external)
+1. 設定 [sybase IQ資料庫](#configuring-sybase)
+1. 設定Sybase IQ [外部帳戶](#sybase-external) 在Campaign
 
 ## sybase IQ配置 {#configuring-sybase}
 
@@ -28,15 +28,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->開始之前，請確保伺服器上有&#x200B;**unixodbc**&#x200B;包。
+>開始之前，請確定 **unixodbc** 包在伺服器上。
 
-1. 安裝&#x200B;**iq_odbc**。 安裝結束時可能會發生錯誤。 可忽略此錯誤。
+1. 安裝 **iq_odbc**. 安裝結束時可能會發生錯誤。 可忽略此錯誤。
 
-1. 安裝&#x200B;**iq_client_common**。 安裝結束時可能會發生Java錯誤。 可忽略此錯誤。
+1. 安裝 **iq_client_common**. 安裝結束時可能會發生Java錯誤。 可忽略此錯誤。
 
 1. 配置ODBC驅動程式。 可在標準檔案中執行設定：/etc/odbc.ini用於常規參數，/etc/odbcinst.ini用於聲明驅動程式：
 
-   * **/etc/odbc.ini** (將字元等值 `<server_alias>` 取代為您自己的):
+   * **/etc/odbc.ini** (取代值如 `<server_alias>` ):
 
       ```
       [ODBC Data Sources]
@@ -70,15 +70,15 @@ ht-degree: 0%
 
 Sybase IQ外部帳戶可讓您將Campaign執行個體連結至Sybase IQ外部資料庫。
 
-1. 在促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，按一下&#x200B;**[!UICONTROL Administration]**「>」 **[!UICONTROL Platform]**「>」 **[!UICONTROL External accounts]**。
+1. 從促銷活動 **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. 按一下&#x200B;**[!UICONTROL New]**&#x200B;並選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為&#x200B;**[!UICONTROL Type]**。
+1. 按一下 **[!UICONTROL New]** 選取 **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. 要配置&#x200B;**[!UICONTROL Sybase IQ]**&#x200B;外部帳戶，必須指定：
+1. 若要設定 **[!UICONTROL Sybase IQ]** 外部帳戶，您必須指定：
 
    * **[!UICONTROL Type]**:ODBC(Sybase ASE,Sybase IQ)
 
-   * **[!UICONTROL Server]**:與步驟5中定義的ODBC連接(`<server_alias>`)相對應。不一定是伺服器本身的名稱。
+   * **[!UICONTROL Server]**:與ODBC連接(`<server_alias>`)。 不一定是伺服器本身的名稱。
 
    * **[!UICONTROL Account]**:使用者名稱
 

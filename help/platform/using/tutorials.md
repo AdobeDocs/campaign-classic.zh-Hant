@@ -26,8 +26,8 @@ ht-degree: 70%
 * [整合電子郵件中的動態內容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
 * [管理傳遞機制](../../delivery/using/about-deliverability.md)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
 * [傳遞最佳做法](../../delivery/using/delivery-best-practices.md)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
-* [執行組建升級](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)：本指南會顯示執行 Campaign Classic 組建升級的重要步驟和最佳做法。
-* [安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)：探索設定安全性及強化內部部署時要檢查的關鍵元素
+* [執行組建升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)：本指南會顯示執行 Campaign Classic 組建升級的重要步驟和最佳做法。
+* [安全性設定檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html)：探索設定安全性及強化內部部署時要檢查的關鍵元素
 
 透過檢查下列使用案例和範例，進一步了解 Adobe Campaign：
 
@@ -43,12 +43,12 @@ ht-degree: 70%
 
 ### 教學課程影片
 
-探索Adobe Campaign的影片主要功能。 [深入瞭解](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)
+探索Adobe Campaign的影片主要功能。 [了解更多](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)
 
 ### 訓練課程與影片
 
-除了這些簡短詳細的影片，您還可以找到[培訓課程](https://learning.adobe.com/catalog.html)並在Adobe.com上觀看功能[演示影片](https://www.adobe.com/training/video.html)。
+除了這些短片和詳細的視頻，您還可以 [培訓課程](https://learning.adobe.com/catalog.html) 和監視功能 [簡報影片](https://www.adobe.com/training/video.html) 在Adobe.com上。
 
 ### Experience League課程
 
-您也可以造訪[建議課程](https://experienceleague.adobe.com/?lang=en#dashboard/learning) Adobe Campaign Classic:課程是精心策劃的課程集合，可快速幫助您獲得技能和知識。
+您也可以造訪 [建議課程](https://experienceleague.adobe.com/?lang=en#dashboard/learning) Adobe Campaign Classic:課程是精心策劃的課程集合，可快速幫助您獲得技能和知識。

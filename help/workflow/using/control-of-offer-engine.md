@@ -17,7 +17,7 @@ ht-degree: 26%
 
 ![](../../assets/common.svg)
 
-依預設，下列詳細的工作流程會與&#x200B;**具有執行例項**&#x200B;模組的選件引擎控制一起安裝。
+以下詳述的工作流程會與 **具有執行實例的選件引擎的控制** 模組。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 26%
   <tr> 
    <td> <span class="uicontrol">命題同步</span> <br /> </td> 
    <td> <span class="uicontrol">主張同步</span> <br /> </td> 
-   <td> 此工作流程會在用於互動的行銷執行實例和執行執行實例之間同步建議。<br /> </td> 
+   <td> 此工作流程會在用於互動的行銷執行個體與執行執行個體之間同步建議。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

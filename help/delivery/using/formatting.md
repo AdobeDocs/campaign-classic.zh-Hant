@@ -23,11 +23,11 @@ JavaScript範本是包含JavaScript程式碼的HTML或文字檔案。 其建構�
 
 ### JavaScript範本的識別 {#identification-of-a-javascript-template}
 
-JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建議將&#x200B;**.js**&#x200B;選項新增至範本名稱。
+JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建議將 **.js** 選項。
 
 ### JavaScript範本的結構 {#structure-of-a-javascript-template}
 
-以「cus:book」架構為基礎的JavaScript HTML格式範本範例：
+以「cus:book」架構為基礎的JavaScriptHTML格式範本範例：
 
 ```
 <html>
@@ -45,10 +45,10 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 各種JavaScript指令會以下列形式顯示：
 
-* 合併欄位：使用&#x200B;**`<%= <source> %>`**&#x200B;語法顯示資料的內容，其中`<source>`是要顯示的資料的源欄位。
+* 合併欄位：使用 **`<%= <source> %>`** 語法 `<source>`是要顯示的資料的來源欄位。
 * 指令塊：會執行&lt;%和%>標籤之間包含的一系列JavaScript指示。
 
-**content**&#x200B;對象表示輸入XML文檔的主要元素。
+此 **內容** 對象表示輸入XML文檔的主要元素。
 
 在我們的範例中，下列行顯示名稱帳簿名稱的內容：
 
@@ -56,7 +56,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 <h1><%= content.@name %></h1>
 ```
 
-下列程式碼會反覆顯示`<chapter>`集合元素：
+下列程式碼會反覆在 `<chapter>` 集合元素：
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -69,17 +69,17 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 **範例**:
 
 * **內容。@name**:擷取主要元素的「name」屬性值
-* **內容。@`['name']`**:與&#x200B;**內容相同。@name**&#x200B;語法
-* **content.chapter.length**:傳回集合元素上的元 `<chapter` 素數
-* **content.chapter`[0]`。@name**:擷取第一個`<chapter>`元素的名稱
-* **chapter.name()**:傳回元素的名 `<chapter>` 稱
-* **chapter.parent()。name()**:傳回的父元素名稱  `<chapter>`
+* **內容。@`['name']`**:與相同 **內容。@name** 語法
+* **content.chapter.length**:傳回 `<chapter` 集合元素
+* **content.chapter`[0]`.@name**:擷取第一個 `<chapter>` 元素
+* **chapter.name()**:傳回的名稱 `<chapter>` 元素
+* **chapter.parent()。name()**:傳回的父元素名稱 `<chapter>`
 
 >[!CAUTION]
 >
->由於「 — 」字元是以JavaScript語言保留的，因此必須透過`['<field>']`語法來恢復包含此字元的任何屬性或元素的值。
+>由於「 — 」字元是以JavaScript語言保留，因此必須透過 `['<field>']` 語法。
 >
->例如：`content.@['offer-id']`。
+>例如： `content.@['offer-id']`.
 
 寫程式語言（變數、循環、條件測試、函式等）的所有力量。 )可用來建構輸出檔案。 SOAP API可供存取，以豐富輸出檔案。
 
@@ -159,9 +159,9 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 ### 包含JavaScript範本 {#including-a-javascript-template}
 
-您可以建立函式或變數的程式庫，以供日後使用。 要執行此操作，請使用&#x200B;**eval**&#x200B;函式匯入JavaScript範本。 這可讓您透過在其他JavaScript範本中宣告的其他函式來擴充內容。
+您可以建立函式或變數的程式庫，以供日後使用。 若要這麼做，請使用匯入JavaScript範本 **eval** 函式。 這可讓您透過在其他JavaScript範本中宣告的其他函式來擴充內容。
 
-**範例**:匯入 **common.** jsptemplate。
+**範例**:匯入 **common.jsp** 範本。
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -177,7 +177,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 >
 >必須填入關聯的資料模型架構，以初始化JavaScript物件。
 
-要隨時生成輸出文檔的預覽，請選擇內容和輸出格式（HTML、文本、XML），然後按一下&#x200B;**[!UICONTROL Generate]** :
+要隨時生成輸出文檔的預覽，請選擇內容和輸出格式(HTML、文本、XML)，然後按一下 **[!UICONTROL Generate]** :
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -193,7 +193,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 此範例包含下列步驟：
 
-1. 建立下列結構(在此例中為：**neo:news**:
+1. 建立下列結構(在此例中為： **neo：新聞**):
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -232,7 +232,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
    </srcSchema>
    ```
 
-1. 建立連結的&#x200B;**[!UICONTROL Content management]**&#x200B;類型表單(**neo:news**)
+1. 建立連結的 **[!UICONTROL Content management]** 類型表單(**neo：新聞**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -264,7 +264,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
    </form>
    ```
 
-1. 使用HTML和文字格式的訊息內容建立JavaScript範本。
+1. 以HTML和文字格式建立包含訊息內容的JavaScript範本。
 
    * 在我們的範例中，針對HTML:
 
@@ -356,7 +356,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 1. 現在，建立用於兩種格式的發佈模板：
 
-   * 對於HTML:
+   * HTML:
 
       ![](assets/d_ncs_content_sample_2.png)
 
@@ -366,7 +366,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 1. 然後，您可以在傳送中使用此內容範本。
 
-   有關詳細資訊，請參閱[使用內容範本](using-a-content-template.md)。
+   有關詳細資訊，請參閱 [使用內容範本](using-a-content-template.md).
 
 ## XSL樣式表 {#xsl-stylesheets}
 
@@ -376,13 +376,13 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 ### 標識樣式表 {#identifying-a-stylesheet}
 
-樣式表由其名稱和命名空間來識別，就像結構和表單一樣。 但是，建議將&#x200B;**.xsl**&#x200B;擴展添加到樣式表的名稱中。
+樣式表由其名稱和命名空間來識別，就像結構和表單一樣。 不過，建議您新增 **.xsl** 樣式表名稱的擴展。
 
-樣式表的標識鍵是由命名空間和冒號分隔的名稱組成的字串；例如：**cus:book.xsl**。
+樣式表的標識鍵是由命名空間和冒號分隔的名稱組成的字串；例如： **cus:book.xsl**.
 
 ### 樣式表的結構 {#structure-of-a-stylesheet}
 
-基於示例架構&quot;cus:book&quot;的HTML格式樣式表的示例：
+基於示例架構「cus:book」的HTML格式樣式表的示例：
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -410,16 +410,16 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 * 屬性值在引號之間，
 * 元素必須具有開頭標籤和結尾標籤，
-* 將「&lt;」或「&amp;」字元替換為&#x200B;**」**&#x200B;或&#x200B;**」&amp;「**&#x200B;實體，
-* 每個XSL元素都必須使用&#x200B;**xsl**&#x200B;命名空間。
+* 將「&lt;」或「&amp;」字元替換為 **&#39;&lt;&#39;** 或 **&#39;&amp;&#39;** 實體，
+* 每個XSL元素都必須使用 **xsl** 命名空間。
 
-樣式表必須以XSL根元素標籤&#x200B;**`<xsl:stylesheet>`**&#x200B;開頭，並以&#x200B;**`</xsl:stylesheet>`**&#x200B;標籤結尾。 XSL命名空間必須定義在開頭標籤中，如下所示：
+樣式表必須以XSL根元素標籤開頭 **`<xsl:stylesheet>`** 結尾是 **`</xsl:stylesheet>`** 標籤。 XSL命名空間必須定義在開頭標籤中，如下所示：
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-**`<xsl:output>`**&#x200B;元素指定生成的文檔的格式。 指定所需的字元集和輸出格式。
+此 **`<xsl:output>`** 元素指定生成的文檔的格式。 指定所需的字元集和輸出格式。
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -444,9 +444,9 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 </xsl:template>
 ```
 
-預設情況下，XSLT處理器將搜索應用於輸入XML文檔的根或主節點的&#x200B;**模板**。 輸出文檔的構建以此&#x200B;**template**&#x200B;開始。
+預設情況下，XSLT處理器將搜索 **範本** 應用於輸入XML文檔的根或主節點。 輸出文檔的構建從以下內容開始 **範本**.
 
-在我們的範例中，會顯示書籍名稱和章節清單，從「cus:book」架構產生HTML頁面。
+在我們的範例中，透過顯示書籍名稱和章節清單，從「cus:book」架構產生HTML頁面。
 
 >[!NOTE]
 >
@@ -454,9 +454,9 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 ### 顯示HTML/XML {#displaying-html-xml}
 
-若要顯示&#x200B;**html**&#x200B;欄位，請使用&#x200B;**`<xsl:value-of>`**&#x200B;指令中的&#x200B;**disable-output-escepine=&quot;yes&quot;**&#x200B;選項。 這可讓您避免以其XML實體取代字元（例如，&lt;為&lt;）。
+若要顯示 **html** 欄位，使用 **disable-output-escine=&quot;yes&quot;** 選項 **`<xsl:value-of>`** 指令。 這可讓您避免以其XML實體取代字元（例如，&lt;為&lt;）。
 
-具有&#x200B;**disable-output-escebine=&quot;yes&quot;**&#x200B;選項的&#x200B;**`<xsl:text>`**&#x200B;指令可讓您為個人化欄位或條件測試插入JavaScript標籤。
+此 **`<xsl:text>`** 指令 **disable-output-escine=&quot;yes&quot;** 選項可讓您插入個人化欄位或條件測試的JavaScript標籤。
 
 範例:
 
@@ -466,13 +466,13 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
    <xsl:value-of select="summary" disable-output-escaping="yes"/>
    ```
 
-* 插入個人化欄位&#x200B;**&lt;%= recipient.email %>**:
+* 插入個人化欄位 **&lt;%= recipient.email %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* 新增條件測試&#x200B;**&lt;% if(recipient.language == &#39;en&#39;)`{` %>**:
+* 新增條件式測試 **&lt;% if(recipient.language == &#39;en&#39;) `{` %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -480,9 +480,9 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 ### 包括樣式表 {#including-stylesheets}
 
-可以建立要在多個樣式表之間共用的模板或變數庫。 上面顯示的&quot;longMonth&quot; **template**&#x200B;是一個典型示例，說明了在樣式表中遠程定位模板以便以後可以重複使用的優點。
+可以建立要在多個樣式表之間共用的模板或變數庫。 「longMonth」 **範本**，上面介紹的是一個典型示例，說明了在樣式表中遠程定位模板以便以後可以重複使用的優點。
 
-**`<xsl:include>`**&#x200B;指令指示要包含在文檔中的樣式表的名稱。
+此 **`<xsl:include>`** 指令指明要包含在文檔中的樣式表的名稱。
 
 **範例**:包括「common.xsl」樣式表。
 
@@ -505,7 +505,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 ![](assets/d_ncs_content_form14.png)
 
-要隨時生成輸出文檔的預覽，請選擇內容實例和格式（HTML、文本、XML），然後按一下&#x200B;**[!UICONTROL Generate]** :
+要隨時生成輸出文檔的預覽，請選擇內容實例和格式(HTML、文本、XML)，然後按一下 **[!UICONTROL Generate]** :
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -517,18 +517,18 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 ### 影像參考 {#image-referencing}
 
-在HTML輸出文檔中輸入的影像可以用絕對參照或相對參照參照。
+輸入在HTML輸出文檔中的影像可以用絕對參照或相對參照參照。
 
-相對引用允許您在&#x200B;**NcmRessourcesDir**&#x200B;和&#x200B;**NcmRessourcesDirPreview**&#x200B;選項中輸入包含影像的伺服器的URL。 這些選項包含要發佈和在Adobe Campaign用戶端主控台中預覽的影像位置。
+相對引用可讓您輸入包含 **NcmRessourcesDir** 和 **NcmRessourcesDirPreview** 選項。 這些選項包含要發佈和在Adobe Campaign用戶端主控台中預覽的影像位置。
 
-可透過&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;資料夾中的選項管理畫面存取這兩個選項。
+可透過 **[!UICONTROL Administration > Platform > Options]** 檔案夾。
 
 **範例**:
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x:/images/&quot;
 
-在樣式表處理期間，輸入XML文檔的主要元素上的&#x200B;**_resPath**&#x200B;屬性會根據上下文（預覽或發佈）自動填入一個或多個選項。
+在樣式表處理期間， **_resPath** 根據上下文（預覽或發佈），輸入XML文檔的主要元素上的屬性將自動填充一個或多個選項。
 
 如何使用影像放置選項及其與影像搭配使用的範例：
 
@@ -542,7 +542,7 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 ### 使用公共資源 {#using-public-resources}
 
-您也可以使用&#x200B;**[!UICONTROL Public resources]**&#x200B;來聲明影像，並根據在部署嚮導中輸入的實例設定將其上傳到伺服器。
+您也可以使用 **[!UICONTROL Public resources]** 根據在部署嚮導中輸入的實例設定來聲明映像並將其上傳到伺服器。
 
 然後，您可以在內容中呼叫這些影像。 要執行此操作，請在內容管理架構中使用下列語法：
 
@@ -562,27 +562,27 @@ JavaScript範本的名稱和命名空間與結構和表單相同。 不過，建
 
 >[!NOTE]
 >
->有關&#x200B;**[!UICONTROL Public resources]**&#x200B;以及如何配置和使用它們的詳細資訊，請參閱[此部分](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+>如需詳細資訊 **[!UICONTROL Public resources]** 以及如何設定及使用，請參閱 [本節](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## 日期顯示 {#date-display}
 
-在XML輸入文檔中，日期以內部XML格式儲存：**YYYY/MM/DD HH:MM:SS**(範例2018/10/01 12:23:30)。
+在XML輸入文檔中，日期以內部XML格式儲存： **YYYY/MM/DD HH:MM:SS** (範例2018/10/01 12:23:30)。
 
 Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能，如下所述。
 
 ### JavaScript日期格式 {#javascript-date-formatting}
 
-若要以所需格式顯示日期，Adobe Campaign提供&#x200B;**formatDate**&#x200B;函式，作為日期內容的輸入，並提供字串，用下列語法指定輸出格式：**%4Y/%2M/%2D %2H%2N%2S**
+若要以所需格式顯示日期，Adobe Campaign提供 **formatDate** 函式，此函式會作為日期內容的輸入，以及使用下列語法指定輸出格式的字串： **%4Y/%2M/%2D %2H%2N%2S**
 
 範例:
 
-* 以&#x200B;**31/10/2018**&#x200B;格式顯示日期：
+* 在 **31/10/2018** 格式：
 
    ```
     <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
    ```
 
-* 以&#x200B;**2018年7月**&#x200B;格式顯示日期：
+* 在 **2018年7月** 格式：
 
    ```
    <%
@@ -603,17 +603,17 @@ Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能，如�
 
 ### XSL日期格式 {#xsl-date-formatting}
 
-XSLT語法中沒有標準日期管理功能。 若要以所需格式顯示日期，Adobe Campaign提供外部函式&#x200B;**date-format**。 此函式會作為其輸入，並使用下列語法指定輸出格式的字串：**%4Y/%2M/%2D %2H%2N%2S**
+XSLT語法中沒有標準日期管理功能。 若要以所需格式顯示日期，Adobe Campaign提供外部功能 **日期格式**. 此函式會作為其輸入，並使用下列語法指定輸出格式的字串： **%4Y/%2M/%2D %2H%2N%2S**
 
 範例:
 
-* 若要以&#x200B;**01/10/2018**&#x200B;格式顯示日期：
+* 若要在 **01/10/2018** 格式：
 
    ```
    <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
    ```
 
-* 若要以&#x200B;**2018年7月**&#x200B;格式顯示日期：
+* 若要在 **2018年7月** 格式：
 
    ```
    <!-- Returns the month in the form of a string with the month number as input -->

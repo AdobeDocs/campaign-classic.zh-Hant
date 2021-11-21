@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-A **測試** 類型活動會啟動滿足與其相關的條件的第一個轉變。 If no condition is satisfied and if the **[!UICONTROL Use the default fork]** option is activated, the default transition will be activated.
+A **測試** 類型活動會啟動滿足與其相關的條件的第一個轉變。 若未滿足任何條件，且 **[!UICONTROL Use the default fork]** 選項，則會啟動預設轉變。
 
-A condition is a JavaScript expression that must be evaluated to &#39;true&#39; or &#39;false&#39;. 若要輸入運算式，請按一下條件名稱右側的圖示，然後選取 **[!UICONTROL Edit...]**.
+條件是必須評估為「true」或「false」的JavaScript運算式。 若要輸入運算式，請按一下條件名稱右側的圖示，然後選取 **[!UICONTROL Edit...]**.
 
 ![](assets/edit_test.png)
 
@@ -27,6 +27,6 @@ A condition is a JavaScript expression that must be evaluated to &#39;true&#39; 
 
 您也可以直接從此編輯器插入變數。 如需如何使用變數的詳細資訊，請參閱 [本節](javascript-scripts-and-templates.md#variables).
 
-Conditions can be added, deleted, or ordered from the activity property edit window, but can also be modified from the transition.
+您可以從活動屬性編輯視窗新增、刪除或排序條件，也可以從轉變中修改條件。
 
-If the result of a calculation is to be reused by different conditions, it is possible to calculate it in the initialization script of the activity. 結果必須儲存在要由條件指令碼(task.vars.xxx)存取之任務的變數中。
+如果計算結果要被不同條件重複使用，則可以在活動的初始化指令碼中計算它。 結果必須儲存在要由條件指令碼(task.vars.xxx)存取之任務的變數中。

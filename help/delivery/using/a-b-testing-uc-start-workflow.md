@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-1. 按一下工作流&#x200B;**[!UICONTROL Start]**。
+1. 按一下 **[!UICONTROL Start]** 工作流程。
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 

@@ -17,10 +17,10 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-**時間限制**&#x200B;活動可讓您延遲執行任務或放棄任務。
+A **時間限制** 活動可讓您延遲或放棄工作的執行。
 
 輸入活動的標籤，並指定必須暫停工作流任務的時間範圍。
 
-選取&#x200B;**[!UICONTROL Try again later if outside of execution period]**&#x200B;選項後，可讓您在執行時間範圍之外重新啟動任務。 如果希望在暫停後永久放棄工作流操作，請取消選擇此選項。
+當 **[!UICONTROL Try again later if outside of execution period]** 選項，它可讓您在執行時間範圍之外重新啟動任務。 如果希望在暫停後永久放棄工作流操作，請取消選擇此選項。
 
 ![](assets/s_user_scheduled_wait.png)

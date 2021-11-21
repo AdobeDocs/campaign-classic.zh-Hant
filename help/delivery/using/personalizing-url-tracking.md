@@ -17,11 +17,11 @@ ht-degree: 12%
 
 ![](../../assets/common.svg)
 
-您可以透過傳遞精靈工具列的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;圖示，存取進階訊息追蹤設定。
+進階訊息追蹤設定可透過 **[!UICONTROL Tracking & Images]** 圖示。
 
 >[!NOTE]
 >
->此視窗中也會設定電子郵件中影像的管理。 請參閱[新增影像](defining-the-email-content.md#adding-images)。
+>此視窗中也會設定電子郵件中影像的管理。 請參閱 [新增影像](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -31,7 +31,7 @@ ht-degree: 12%
 
    >[!CAUTION]
    >
-   >未在傳送上啟動追蹤時(即&#x200B;**[!UICONTROL Activate tracking]**&#x200B;選項未選取)，與追蹤相關的報表和資料無法使用：開啟、熱點點按和追蹤的URL報表不會顯示任何資料，且此傳送不會顯示&#x200B;**[!UICONTROL Tracking logs]**&#x200B;標籤。
+   >未在傳送上啟動追蹤時(即 **[!UICONTROL Activate tracking]** 選項)，則與追蹤相關的報表和資料將無法使用：開啟、熱點點按和追蹤的URL報表不會顯示任何資料，而且 **[!UICONTROL Tracking logs]** 此傳送不會顯示標籤。
 
 * 開啟訊息的啟用/停用追蹤。
 
@@ -41,7 +41,7 @@ ht-degree: 12%
 
 您可以針對訊息的每個URL個別啟用或停用追蹤。 如需詳細資訊，請參閱[本章節](how-to-configure-tracked-links.md)。
 
-**[!UICONTROL Advanced]**&#x200B;標籤可讓您個人化追蹤URL和開頭URL的計算公式。
+此 **[!UICONTROL Advanced]** 索引標籤可讓您個人化追蹤URL和開頭URL的計算公式。
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 

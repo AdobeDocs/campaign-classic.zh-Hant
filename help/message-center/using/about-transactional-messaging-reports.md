@@ -19,6 +19,6 @@ ht-degree: 15%
 
 Adobe Campaign提供數個報表，可讓您控制活動並順利執行執行個體。
 
-您可以從&#x200B;**控制實例**&#x200B;的&#x200B;**[!UICONTROL Reports]**&#x200B;頁簽訪問這些Message Center報告。
+這些訊息中心報告可從 **[!UICONTROL Reports]** 的 **控制實例**.
 
 ![](assets/messagecenter_reporting_002.png)

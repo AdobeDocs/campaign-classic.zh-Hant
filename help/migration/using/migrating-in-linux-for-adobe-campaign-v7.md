@@ -21,24 +21,24 @@ ht-degree: 1%
 
 在Linux中的移轉步驟如下：
 
-1. 停止服務：請參閱[服務停止](#service-stop)。
-1. 保存資料庫：請參閱[備份資料庫和現有安裝](#back-up-the-database-and-the-existing-installation)。
-1. 解除安裝先前的Adobe Campaign版本套件：請參閱[解除安裝Adobe Campaign舊版套件](#uninstalling-adobe-campaign-previous-version-packages)。
-1. 移轉平台：請參閱[部署Adobe Campaign v7](#deploying-adobe-campaign-v7)。
-1. 重新啟動服務：請參閱[重新啟動服務](#re-starting-services)。
+1. 停止服務：請參閱 [服務停止](#service-stop).
+1. 保存資料庫：請參閱 [備份資料庫和現有安裝](#back-up-the-database-and-the-existing-installation).
+1. 解除安裝先前的Adobe Campaign版本套件：請參閱 [解除安裝Adobe Campaign舊版套件](#uninstalling-adobe-campaign-previous-version-packages).
+1. 移轉平台：請參閱 [部署Adobe Campaign v7](#deploying-adobe-campaign-v7).
+1. 重新啟動服務：請參閱 [重新啟動服務](#re-starting-services).
 
 ## 服務停止 {#service-stop}
 
 首先，停止所有相關電腦上具有資料庫訪問權限的所有進程。
 
-1. 以&#x200B;**root**&#x200B;登入。
-1. 需要停止使用重定向模組（**webmdl**&#x200B;服務）的所有伺服器。 對於Apache，請運行以下命令：
+1. 登入方式 **根**.
+1. 使用重定向模組(**webmdl** 服務)。 對於Apache，請運行以下命令：
 
    ```
    /etc/init.d/apache2 stop
    ```
 
-1. 以&#x200B;**root**&#x200B;重新登入。
+1. 重新登入為 **根**.
 1. 在所有伺服器上停止Adobe Campaign舊版服務。
 
    ```
@@ -78,7 +78,7 @@ ht-degree: 1%
 ### 從Adobe Campaign v5.11移轉 {#migrating-from-adobe-campaign-v5-11}
 
 1. 備份Adobe Campaign資料庫。
-1. 以&#x200B;**neolane**&#x200B;登錄，並使用以下命令備份&#x200B;**nl5**&#x200B;目錄：
+1. 登入方式 **奈羅蘭** 並備份 **nl5** 目錄（使用以下命令）:
 
    ```
    su - neolane
@@ -87,9 +87,9 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >為了防患於未然，建議您將&#x200B;**nl5.back**&#x200B;資料夾壓縮並儲存至伺服器以外的安全位置。
+   >為了防患於未然，建議您將 **nl5.back** 資料夾並儲存至伺服器以外的安全位置。
 
-1. 編輯&#x200B;**config-`<instance name>`.xml**（在&#x200B;**nl5.back**&#x200B;資料夾中），以防止&#x200B;**mta**、**wfserver**、**stat**&#x200B;等。 服務自動啟動。 例如，將&#x200B;**autoStart**&#x200B;替換為&#x200B;**_autoStart**（仍為&#x200B;**neolane**）。
+1. 編輯 **config-`<instance name>`.xml** (在 **nl5.back** 資料夾)，以防止 **mta**, **wfserver**, **stat** 等。 服務自動啟動。 例如，取代 **autoStart** with **_autoStart** (仍為 **奈羅蘭**)。
 
    ```
    <?xml version='1.0'?>
@@ -113,7 +113,7 @@ ht-degree: 1%
 ### 從Adobe Campaign v6.02移轉 {#migrating-from-adobe-campaign-v6-02}
 
 1. 備份Adobe Campaign資料庫。
-1. 以&#x200B;**neolane**&#x200B;登錄，並使用以下命令備份&#x200B;**nl6**&#x200B;目錄：
+1. 登入方式 **奈羅蘭** 並備份 **nl6** 目錄（使用以下命令）:
 
    ```
    su - neolane
@@ -122,9 +122,9 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >為了防患於未然，建議您壓縮&#x200B;**nl6.back**&#x200B;資料夾，並將其儲存至伺服器以外的安全位置。
+   >為了防患於未然，建議您將 **nl6.back** 資料夾並儲存至伺服器以外的安全位置。
 
-1. 編輯&#x200B;**config-`<instance name>`.xml**（在&#x200B;**nl6.back**&#x200B;資料夾中）以防止&#x200B;**mta**、**wfserver**、**stat**&#x200B;等。 服務自動啟動。 例如，將&#x200B;**autoStart**&#x200B;替換為&#x200B;**_autoStart**(仍為&#x200B;**Adobe Campaign**)。
+1. 編輯 **config-`<instance name>`.xml** (在 **nl6.back** 資料夾)，以防止 **mta**, **wfserver**, **stat**、等 服務自動啟動。 例如，取代 **autoStart** with **_autoStart** (仍為 **Adobe Campaign**)。
 
    ```
    <?xml version='1.0'?>
@@ -148,7 +148,7 @@ ht-degree: 1%
 ### 從Adobe Campaign v6.1移轉 {#migrating-from-adobe-campaign-v6-1}
 
 1. 備份Adobe Campaign資料庫。
-1. 以&#x200B;**neolane**&#x200B;登錄，並使用以下命令備份&#x200B;**nl6**&#x200B;目錄：
+1. 登入方式 **奈羅蘭** 並備份 **nl6** 目錄（使用以下命令）:
 
    ```
    su - neolane
@@ -157,7 +157,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >為了防患於未然，建議您壓縮&#x200B;**nl6.back**&#x200B;資料夾，並將其儲存至伺服器以外的安全位置。
+   >為了防患於未然，建議您將 **nl6.back** 資料夾並儲存至伺服器以外的安全位置。
 
 ## 解除安裝Adobe Campaign舊版套件 {#uninstalling-adobe-campaign-previous-version-packages}
 
@@ -165,10 +165,10 @@ ht-degree: 1%
 
 ### 解除安裝Adobe Campaign v5套件 {#uninstalling-adobe-campaign-v5-packages}
 
-1. 以&#x200B;**root**&#x200B;登入。
+1. 登入方式 **根**.
 1. 使用下列命令識別安裝的Adobe Campaign套件。
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       dpkg -l | grep nl
@@ -181,7 +181,7 @@ ht-degree: 1%
       ii  nlthirdparty5                   5660                     nlthirdparty5-5660
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       rpm -qa | grep nl
@@ -189,13 +189,13 @@ ht-degree: 1%
 
 1. 解除安裝Adobe Campaign v5套件。
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       dpkg --purge nlserver5 nlthirdparty5
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       rprm -ev nlserver5 nlthirdparty5
@@ -205,10 +205,10 @@ ht-degree: 1%
 
 本節說明如何解除安裝Adobe Campaign v6.02或v6.1套件。
 
-1. 以&#x200B;**root**&#x200B;登入。
+1. 登入方式 **根**.
 1. 使用下列命令識別安裝的Adobe Campaign套件。
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       dpkg -l | grep nl
@@ -221,7 +221,7 @@ ht-degree: 1%
       ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       rpm -qa | grep nl
@@ -229,13 +229,13 @@ ht-degree: 1%
 
 1. 解除安裝Adobe Campaign v6套件。
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       dpkg --purge nlserver6 nlthirdparty6
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       rprm -ev nlserver6 nlthirdparty6
@@ -256,13 +256,13 @@ ht-degree: 1%
 
 1. 使用下列命令安裝最新的Adobe Campaign v7套件：
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       dpkg -i nlserver6-XXXX-linux-2.6-intel.deb
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       rpm -Uvh nlserver6-XXXX-0.x86_64.rpm
@@ -273,9 +273,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >從v5.11移轉時，預設情況下，Adobe Campaign會安裝在&#x200B;**/usr/local/neolane/nl6/**&#x200B;目錄中。
+   >從v5.11移轉時，Adobe Campaign會安裝在 **/usr/local/neolane/nl6/** 目錄。
    >
-   >安裝套件後，會顯示下列訊息：**&#39;WdbcTimeZone&#39;選項缺少**。 這是正常的。
+   >安裝套件後，會顯示下列訊息： **缺少「WdbcTimeZone」選項**. 這是正常的。
 
 1. 若要讓用戶端主控台安裝程式可供使用，請將其複製至Adobe Campaign安裝目錄：
 
@@ -285,9 +285,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >有關如何在Linux中安裝Adobe Campaign的詳細資訊，請參閱[本區段](../../installation/using/installing-campaign-standard-packages.md)。
+   >有關如何在Linux安裝Adobe Campaign的詳細資訊，請參閱 [本節](../../installation/using/installing-campaign-standard-packages.md).
 
-1. 修改與&#x200B;**neolane**&#x200B;使用者相符的&#x200B;**.bashrd**&#x200B;檔案。 以&#x200B;**neolane**&#x200B;登錄，並運行以下命令：
+1. 修改 **.bashrd** 符合 **奈羅蘭** 使用者。 登入方式 **奈羅蘭** 並運行以下命令：
 
    ```
    su - neolane
@@ -296,11 +296,11 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >當您以&#x200B;**neolane**&#x200B;登入時，會顯示下列訊息：**nl5/env.sh :沒有此類檔案或目錄**。 這是正常的。
+   >當您登入為 **奈羅蘭**，會顯示下列訊息： **nl5/env.sh :沒有此類檔案或目錄**. 這是正常的。
 
-   在檔案結尾處，將&#x200B;**nl5/env.sh**&#x200B;替換為&#x200B;**nl6/env.sh**。
+   在檔案結尾處，取代 **nl5/env.sh** with **nl6/env.sh**.
 
-1. 以&#x200B;**root**&#x200B;登入，並使用下列命令準備執行個體：
+1. 登入方式 **根** 並使用以下命令準備實例：
 
    ```
    /etc/init.d/nlserver6 start   
@@ -314,13 +314,13 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >以下命令可讓您建立Adobe Campaign v6內部檔案系統：**conf**&#x200B;目錄（含&#x200B;**config-default.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;檔案）、**var**&#x200B;目錄。
+   >以下命令可讓您建立Adobe Campaign v6內部檔案系統： **conf** 目錄(使用 **config-default.xml** 和 **serverConf.xml** 檔案), **var** 目錄。
 
-1. 轉到&#x200B;**nl5.back**&#x200B;備份資料夾，並複製（覆寫）每個實例的配置檔案和子資料夾。 以&#x200B;**neolane**&#x200B;登錄，然後運行以下命令：
+1. 前往 **nl5.back** 備份資料夾，並複製（覆寫）每個實例的配置檔案和子資料夾。 登入方式 **奈羅蘭** 並運行以下命令：
 
    >[!IMPORTANT]
    >
-   >對於下面的第一個命令，請勿複製&#x200B;**config-default.xml**&#x200B;檔案。
+   >對於下面的第一個命令，請勿複製 **config-default.xml** 檔案。
 
    ```
    su - neolane
@@ -331,13 +331,13 @@ ht-degree: 1%
    cp -r nl5.back/var/* nl6/var/
    ```
 
-1. 在Adobe Campaign v7 **serverConf.xml**&#x200B;和&#x200B;**config-default.xml**&#x200B;檔案中，套用您針對Adobe Campaign v5的特定設定。 對於&#x200B;**serverConf.xml**&#x200B;檔案，請使用&#x200B;**nl5/conf/serverConf.xml.diff**&#x200B;檔案。
+1. 在Adobe Campaign v7中 **serverConf.xml** 和 **config-default.xml** 檔案，套用您針對Adobe Campaign v5所具備的特定設定。 若 **serverConf.xml** 檔案，使用 **nl5/conf/serverConf.xml.diff** 檔案。
 
    >[!NOTE]
    >
    >報告從Adobe Campaign v5到Adobe Campaign v7的設定時，請確定通往物理目錄的路徑會導向Adobe Campaign v7，而非Adobe Campaign v5。
 
-1. 由於遷移不是一般安裝，因此您需要強制重新啟動&#x200B;**trackinglogd**&#x200B;服務。 要執行此操作，請開啟&#x200B;**nl6/conf/config-default.xml**&#x200B;檔案，並確認&#x200B;**trackinglogd**&#x200B;服務已啟動（僅在追蹤/重新導向伺服器上）:
+1. 由於遷移不是一般安裝，因此您需要強制重新啟動 **trackinglogd** 服務。 若要這麼做，請開啟 **nl6/conf/config-default.xml** 檔案，確保 **trackinglogd** 服務已啟動（僅在追蹤/重新導向伺服器上）:
 
    ```
    <trackinglogd autoStart="true"/>
@@ -345,7 +345,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >如果未在追蹤伺服器上啟動&#x200B;**trackinglogd**&#x200B;服務，則不會轉送追蹤資訊。
+   >若 **trackinglogd** 追蹤伺服器上未啟動服務，將不會轉送追蹤資訊。
 
 1. 使用下列命令重新載入Adobe Campaign v7設定：
 
@@ -353,7 +353,7 @@ ht-degree: 1%
    nlserver config -reload
    ```
 
-1. 使用以下命令（仍為&#x200B;**neolane**）啟動升級後進程：
+1. 使用以下命令啟動升級後進程(仍為 **奈羅蘭**):
 
    ```
    su - neolane
@@ -362,11 +362,11 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >您必須指定在升級後期間要用作參考的時區（使用&#x200B;**-timezone**&#x200B;選項）。 在此案例中，我們使用歐洲/巴黎時區&#x200B;**— 時區：&quot;Europe/Paris&quot;**。
+   >您必須指定在升級後期間要作為參考使用的時區(使用 **-timezone** 選項)。 在此案例中，我們使用歐洲/巴黎時區 **-timezone:&quot;歐洲/巴黎&quot;**.
 
    >[!NOTE]
    >
-   >強烈建議您將基礎升級為「多時區」。 有關時區選項的詳細資訊，請參閱[時區](../../migration/using/general-configurations.md#time-zones)區段。
+   >強烈建議您將基礎升級為「多時區」。 有關時區選項的詳細資訊，請參閱 [時區](../../migration/using/general-configurations.md#time-zones) 區段。
 
 >[!IMPORTANT]
 >
@@ -383,13 +383,13 @@ ht-degree: 1%
 
 1. 使用下列命令安裝最新的Adobe Campaign v7套件：
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
@@ -400,7 +400,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >Adobe Campaign v7預設會安裝在與Adobe Campaign v6.02相同的目錄中：**/usr/local/neolane/nl6/**。
+   >Adobe Campaign v7預設會安裝在與Adobe Campaign v6.02相同的目錄中： **/usr/local/neolane/nl6/**.
 
 1. 若要讓用戶端主控台安裝程式可供使用，請將其複製至Adobe Campaign安裝目錄：
 
@@ -410,9 +410,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >有關如何在Linux中安裝Adobe Campaign的詳細資訊，請參閱[本區段](../../installation/using/installing-campaign-standard-packages.md)。
+   >有關如何在Linux安裝Adobe Campaign的詳細資訊，請參閱 [本節](../../installation/using/installing-campaign-standard-packages.md).
 
-1. 由於遷移不是一般安裝，因此您需要強制重新啟動&#x200B;**trackinglogd**&#x200B;服務。 要執行此操作，請開啟&#x200B;**nl6/conf/config-default.xml**&#x200B;檔案，並確認&#x200B;**trackinglogd**&#x200B;服務已啟動（僅在追蹤/重新導向伺服器上）:
+1. 由於遷移不是一般安裝，因此您需要強制重新啟動 **trackinglogd** 服務。 若要這麼做，請開啟 **nl6/conf/config-default.xml** 檔案，確保 **trackinglogd** 服務已啟動（僅在追蹤/重新導向伺服器上）:
 
    ```
    <trackinglogd autoStart="true"/>
@@ -420,9 +420,9 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >如果未在追蹤伺服器上啟動&#x200B;**trackinglogd**&#x200B;服務，則不會轉送追蹤資訊。
+   >若 **trackinglogd** 追蹤伺服器上未啟動服務，將不會轉送追蹤資訊。
 
-1. 轉到&#x200B;**nl6.back**&#x200B;備份資料夾，並複製（覆寫）每個實例的配置檔案和子資料夾。 以&#x200B;**neolane**&#x200B;登錄，然後運行以下命令：
+1. 前往 **nl6.back** 備份資料夾，並複製（覆寫）每個實例的配置檔案和子資料夾。 登入方式 **奈羅蘭** 並運行以下命令：
 
    ```
    su - neolane
@@ -439,7 +439,7 @@ ht-degree: 1%
    nlserver config -reload
    ```
 
-1. 使用以下命令（仍為&#x200B;**neolane**）啟動升級後進程：
+1. 使用以下命令啟動升級後進程(仍為 **奈羅蘭**):
 
    ```
    su - neolane
@@ -448,7 +448,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >「多時區」模式僅在v6.02中可用於PostgreSQL資料庫引擎。 現在，無論使用哪個版本的資料庫引擎，都可使用它。 強烈建議您將基礎升級為「多時區」。 有關時區選項的詳細資訊，請參閱[時區](../../migration/using/general-configurations.md#time-zones)區段。
+   >「多時區」模式僅在v6.02中可用於PostgreSQL資料庫引擎。 現在，無論使用哪個版本的資料庫引擎，都可使用它。 強烈建議您將基礎升級為「多時區」。 有關時區選項的詳細資訊，請參閱 [時區](../../migration/using/general-configurations.md#time-zones) 區段。
 
 ### 從Adobe Campaign v6.1移轉 {#migrating-from-adobe-campaign-v6_1-1}
 
@@ -461,13 +461,13 @@ ht-degree: 1%
 
 1. 使用下列命令安裝最新的Adobe Campaign v7套件：
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
@@ -478,7 +478,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >Adobe Campaign v7預設安裝在&#x200B;**/usr/local/neolane/nl6/**&#x200B;目錄中。
+   >Adobe Campaign v7安裝在 **/usr/local/neolane/nl6/** 目錄。
 
 1. 若要讓用戶端主控台安裝程式可供使用，請將其複製至Adobe Campaign安裝目錄：
 
@@ -488,9 +488,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >有關如何在Linux中安裝Adobe Campaign的詳細資訊，請參閱[本區段](../../installation/using/installing-campaign-standard-packages.md)。
+   >有關如何在Linux安裝Adobe Campaign的詳細資訊，請參閱 [本節](../../installation/using/installing-campaign-standard-packages.md).
 
-1. 轉到&#x200B;**nl6.back**&#x200B;備份資料夾，並複製（覆寫）每個實例的配置檔案和子資料夾。 以&#x200B;**neolane**&#x200B;登錄，然後運行以下命令：
+1. 前往 **nl6.back** 備份資料夾，並複製（覆寫）每個實例的配置檔案和子資料夾。 登入方式 **奈羅蘭** 並運行以下命令：
 
    ```
    su - neolane
@@ -507,7 +507,7 @@ ht-degree: 1%
    nlserver config -reload
    ```
 
-1. 使用以下命令（仍為&#x200B;**neolane**）啟動升級後進程：
+1. 使用以下命令啟動升級後進程(仍為 **奈羅蘭**):
 
    ```
    su - neolane
@@ -520,18 +520,18 @@ ht-degree: 1%
 >
 >本節內容僅適用於從Adobe Campaign v5.11移轉時。
 
-此階段需要停止Apache。 請參閱：[服務停止](#service-stop)。
+此階段需要停止Apache。 請參閱： [服務停止](#service-stop).
 
-1. 以&#x200B;**root**&#x200B;登入。
-1. 更改Apache環境變數，使其連結到&#x200B;**nl6**&#x200B;目錄。
+1. 登入方式 **根**.
+1. 變更Apache環境變數，使其連結至 **nl6** 目錄。
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
       ```
       vi /etc/apache2/envvars
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
       ```
       vi /usr/local/apache2/bin/envvars
@@ -539,15 +539,15 @@ ht-degree: 1%
 
 1. 然後運行以下命令：
 
-   * 在&#x200B;**Debian**&#x200B;中：
+   * 在 **Debian**:
 
-      在&#x200B;**nlsrv.load**&#x200B;檔案中，將&#x200B;**nl5**&#x200B;替換為&#x200B;**nl6**。
+      在 **nlsrv.load** 檔案，替換 **nl5** with **nl6**.
 
       ```
       vi /etc/apache2/mods-available/nlsrv.load
       ```
 
-      刪除&#x200B;**nlsrv.conf**&#x200B;檔案的連結並建立新的連結。
+      刪除的連結 **nlsrv.conf** 並建立新檔案。
 
       ```
       rm /etc/apache2/mods-available/nlsrv.conf 
@@ -555,18 +555,18 @@ ht-degree: 1%
       mods-available/nlsrv.conf
       ```
 
-   * 在&#x200B;**Red Hat**&#x200B;中：
+   * 在 **紅帽**:
 
-      前往&#x200B;**/usr/local/apache2/conf**&#x200B;目錄，編輯&#x200B;**http.conf**&#x200B;檔案，並在下列各行中將&#x200B;**nl5**&#x200B;取代為&#x200B;**nl6**。
+      前往 **/usr/local/apache2/conf** 目錄，編輯 **http.conf** 檔案和取代 **nl5** with **nl6** 在下列行中。
 
-      在&#x200B;**RHEL 7/Debian 8**&#x200B;中：
+      在 **RHEL 7/Debian 8**:
 
       ```
       LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
       Include /usr/local/neolane/nl6/tomcat-6/conf/apache_neolane.conf
       ```
 
-1. 前往&#x200B;**alias.conf**&#x200B;檔案，並將所有&#x200B;**nl5**&#x200B;取代為&#x200B;**nl6**。 若要在Debian中執行此動作，請執行下列命令：
+1. 前往 **alias.conf** 檔案和全部替換 **nl5** with **nl6**. 若要在Debian中執行此動作，請執行下列命令：
 
    ```
    vi /etc/apache2/mods-available/alias.conf
@@ -574,7 +574,7 @@ ht-degree: 1%
 
 ## 安全區域 {#security-zones}
 
-如果您要從v6.02或更舊版本移轉，則必須先配置安全區域，才能啟動服務。 有關詳細資訊，請參閱[安全](../../migration/using/general-configurations.md#security)。
+如果您要從v6.02或更舊版本移轉，則必須先配置安全區域，才能啟動服務。 如需詳細資訊，請參閱 [安全性](../../migration/using/general-configurations.md#security).
 
 ## 重新啟動服務 {#re-starting-services}
 
@@ -582,7 +582,7 @@ ht-degree: 1%
 
 ### 從Adobe Campaign v5.11移轉 {#migrating-from-adobe-campaign-v5_11-2}
 
-在&#x200B;**config-`<instance name>`.xml**&#x200B;檔案中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自動啟動。 服務。
+在 **config-`<instance name>`.xml** 檔案，重新激活 **mta**, **wfserver**, **stat**、等 服務。
 
 ```
 <?xml version='1.0'?>
@@ -609,11 +609,11 @@ ht-degree: 1%
 1. 中間來源伺服器.
 1. 行銷伺服器。
 
-在繼續下一步之前，請對新安裝運行完整測試，確保沒有回歸，並且所有操作都可以按照[常規配置](../../migration/using/general-configurations.md)部分中的所有建議運行。
+繼續進行下一步之前，請對新安裝執行完整測試，確定沒有回歸，而且所有項目都能依照 [一般配置](../../migration/using/general-configurations.md) 區段。
 
 ### 從Adobe Campaign v6.02移轉 {#migrating-from-adobe-campaign-v6_02-2}
 
-在&#x200B;**config-`<instance name>`.xml**&#x200B;檔案中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自動啟動。 服務。
+在 **config-`<instance name>`.xml** 檔案，重新激活 **mta**, **wfserver**, **stat**、等 服務。
 
 ```
 <?xml version='1.0'?>
@@ -640,7 +640,7 @@ ht-degree: 1%
 1. 中間來源伺服器.
 1. 行銷伺服器。
 
-請依照[一般設定](../../migration/using/general-configurations.md)區段中的所有建議，完全測試新安裝，檢查其是否未回復，並確認一切皆正常運作。
+請依照 [一般配置](../../migration/using/general-configurations.md) 區段。
 
 ### 從Adobe Campaign v6.1移轉 {#migrating-from-adobe-campaign-v6_1-2}
 
@@ -650,7 +650,7 @@ ht-degree: 1%
 1. 中間來源伺服器.
 1. 行銷伺服器。
 
-請依照[一般設定](../../migration/using/general-configurations.md)區段中的所有建議，完全測試新安裝，檢查其是否未回復，並確認一切皆正常運作。
+請依照 [一般配置](../../migration/using/general-configurations.md) 區段。
 
 ## 刪除和清除Adobe Campaign v5 {#deleting-and-cleansing-adobe-campaign-v5}
 
@@ -663,7 +663,7 @@ ht-degree: 1%
 * 請功能團隊對新安裝執行完整檢查。
 * 只有在您確定不需要回滾時，才解除安裝Adobe Campaign v5。
 
-刪除&#x200B;**nl5.back**&#x200B;目錄。 以&#x200B;**neolane**&#x200B;登錄，然後運行以下命令：
+刪除 **nl5.back** 目錄。 登入方式 **奈羅蘭** 並運行以下命令：
 
 ```
 su - neolane

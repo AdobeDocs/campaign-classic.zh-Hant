@@ -17,45 +17,45 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-有了網路應用程式， Social Marketing可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更輕鬆。 如需Facebook類型Web應用程式的詳細範例，請參閱[Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
+有了網路應用程式， Social Marketing可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更輕鬆。 如需Facebook類型Web應用程式的更多範例，請參閱 [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
 
 >[!NOTE]
 >
->您也可以將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在此情況下，不需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 有關詳細資訊，請參閱[設定外部帳戶](#configuring-external-accounts)。
+>您也可以將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在此情況下，不需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 有關詳細資訊，請參閱 [設定外部帳戶](#configuring-external-accounts).
 
 ![](assets/social_webapp_fb_000.png)
 
 套用下列設定步驟：
 
-1. 建立一或多個Facebook應用程式。 有關詳細資訊，請參閱：[建立Facebook應用程式](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)。
-1. 輸入要在Facebook權限請求畫面上顯示的&#x200B;**[!UICONTROL terms of service]**&#x200B;和&#x200B;**[!UICONTROL Privacy policy]**&#x200B;連結。 有關詳細資訊，請參閱：[輸入服務條款和隱私權政策連結](#entering-the-terms-of-service-and-privacy-policy-links)。
-1. 對於每個Facebook應用程式，建立&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型外部帳戶。 有關詳細資訊，請參閱：[配置外部帳戶](#configuring-external-accounts)。
-1. 針對每個Facebook應用程式，在Adobe Campaign中建立Facebook類型的Web應用程式。 有關詳細資訊，請參閱：[建立Facebook類型web應用程式](#creating-a-facebook-type-web-application)。
-1. 設定您的Facebook應用程式，使其在Facebook頁面上顯示為標籤。 有關詳細資訊，請參閱：[設定Facebook標籤](#configuring-facebook-tabs)。
+1. 建立一或多個Facebook應用程式。 有關詳細資訊，請參閱： [建立Facebook應用程式](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
+1. 輸入 **[!UICONTROL terms of service]** 和 **[!UICONTROL Privacy policy]** 「Facebook權限請求」畫面上顯示的連結。 有關詳細資訊，請參閱： [輸入服務條款和隱私權政策連結](#entering-the-terms-of-service-and-privacy-policy-links).
+1. 針對每個Facebook應用程式，建立 **[!UICONTROL Facebook Connect]** 輸入外部帳戶。 有關詳細資訊，請參閱： [設定外部帳戶](#configuring-external-accounts).
+1. 針對每個Facebook應用程式，在Adobe Campaign中建立Facebook類型的Web應用程式。 有關詳細資訊，請參閱： [建立Facebook類型Web應用程式](#creating-a-facebook-type-web-application).
+1. 設定您的Facebook應用程式，使其在Facebook頁面上顯示為標籤。 有關詳細資訊，請參閱： [設定Facebook標籤](#configuring-facebook-tabs).
 
 ## 設定外部帳戶 {#configuring-external-accounts}
 
-對於每個Facebook應用程式，您需要建立&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型外部帳戶。
+對於每個Facebook應用程式，您需要 **[!UICONTROL Facebook Connect]** 輸入外部帳戶。
 
 此步驟需要同時存取您的Adobe Campaign主控台和登入Facebook帳戶（您用於頁面管理）的網際網路瀏覽器：
 
-* **Facebook**:選取先前建立的應用程 [式(https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選取「 >  **[!UICONTROL Settings]** 」索 **[!UICONTROL Basic]** 引標籤。
+* **Facebook**:選取先前建立的應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選取 **[!UICONTROL Settings]** > **[!UICONTROL Basic]** 標籤。
 
    ![](assets/social_webapp_fb_008.png)
 
    >[!NOTE]
    >
-   >如果未顯示&#x200B;**[!UICONTROL Facebook Web Games]**&#x200B;部分，請按一下位於頁面底部的&#x200B;**[!UICONTROL Add Platform]**&#x200B;按鈕，然後選擇&#x200B;**[!UICONTROL Facebook Web Games]**。
+   >若 **[!UICONTROL Facebook Web Games]** 區段，請按一下 **[!UICONTROL Add Platform]** 按鈕，然後選擇 **[!UICONTROL Facebook Web Games]**.
 
-* **Adobe Campaign**:轉至樹 **[!UICONTROL Administration > Platform > External accounts]** 的節點，然後按一 **[!UICONTROL New]**&#x200B;下。
+* **Adobe Campaign**:前往 **[!UICONTROL Administration > Platform > External accounts]** 樹的節點，然後按一下 **[!UICONTROL New]**.
 
    ![](assets/social_webapp_fb_005.png)
 
-1. 輸入標籤和內部名稱，然後選擇&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型。
+1. 輸入標籤和內部名稱，然後選取 **[!UICONTROL Facebook Connect]** 類型。
 
    ![](assets/social_webapp_fb_006.png)
 
-1. 為應用程式選擇托管模式：**[!UICONTROL hosted by a partner]**&#x200B;或&#x200B;**[!UICONTROL hosted by this instance]**。
+1. 為應用程式選擇托管模式： **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**.
 
    ![](assets/social_webapp_fb_012.png)
 
@@ -65,17 +65,17 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >此處提供的WSDL檔案中詳細說明了Web服務的參數：**`https://<Instance name>/nl/jsp/schemawsdl.jsp?schema=nms:visitor`**
+   >此處提供的WSDL檔案中詳細說明了Web服務的參數： **`https://<Instance name>/nl/jsp/schemawsdl.jsp?schema=nms:visitor`**
 
-   若要將協力廠商應用程式整合至Adobe Campaign，您需要複製&#x200B;**[!UICONTROL App ID]**&#x200B;和&#x200B;**[!UICONTROL App Secret]** Facebook欄位的內容，並貼到主控台的&#x200B;**[!UICONTROL Application ID]**&#x200B;和&#x200B;**[!UICONTROL Application secret]**&#x200B;欄位中。
+   若要將協力廠商應用程式整合至Adobe Campaign，您必須複製 **[!UICONTROL App ID]** 和 **[!UICONTROL App Secret]** Facebook欄位並貼入 **[!UICONTROL Application ID]** 和 **[!UICONTROL Application secret]** 欄位。
 
    ![](assets/social_facebook_external_account_013.png)
 
    **由此實例托管的應用程式**
 
-   如果您想要在此執行個體上托管應用程式（如果您沒有協力廠商應用程式），則需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 如需詳細資訊，請參閱[Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
+   如果您想要在此執行個體上托管應用程式（如果您沒有協力廠商應用程式），則需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 有關詳細資訊，請參閱 [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
 
-   在Adobe Campaign主控台中，複製&#x200B;**[!UICONTROL Secure Canvas URL]**&#x200B;欄位中包含的位址，並貼到Facebook上的&#x200B;**[!UICONTROL Facebook Web games (https)]**&#x200B;欄位（位於&#x200B;**[!UICONTROL Facebook Web Games]**&#x200B;區段中）。
+   在Adobe Campaign主控台中，複製 **[!UICONTROL Secure Canvas URL]** 欄位並貼入 **[!UICONTROL Facebook Web games (https)]** facebook欄位(在 **[!UICONTROL Facebook Web Games]** 區段)。
 
    ![](assets/social_facebook_external_account_009.png)
 
@@ -83,25 +83,25 @@ ht-degree: 2%
    >
    >您在任何情況下都不得使用不安全的URL。
 
-   在Facebook上，複製&#x200B;**[!UICONTROL App ID]**&#x200B;和&#x200B;**[!UICONTROL App Secret]**&#x200B;欄位的內容，並貼到主控台的&#x200B;**[!UICONTROL Application ID]**&#x200B;和&#x200B;**[!UICONTROL Application secret]**&#x200B;欄位中。
+   在Facebook上，複製 **[!UICONTROL App ID]** 和 **[!UICONTROL App Secret]** 欄位並貼入 **[!UICONTROL Application ID]** 和 **[!UICONTROL Application secret]** 欄位。
 
    ![](assets/social_facebook_external_account_008.png)
 
-1. 在Facebook上，按一下頁面底部的&#x200B;**[!UICONTROL Save Changes]**&#x200B;按鈕。
-1. 在Adobe Campaign主控台中，按一下&#x200B;**[!UICONTROL Subscribe]**&#x200B;按鈕，讓Adobe Campaign每次風扇透過此應用程式簽入時即時復原資料。 有關詳細資訊，請參閱：[Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
+1. 在Facebook上，按一下 **[!UICONTROL Save Changes]** 按鈕。
+1. 在Adobe Campaign主控台中，按一下 **[!UICONTROL Subscribe]** 按鈕，讓Adobe Campaign在每次粉絲透過此應用程式簽入時即時復原資料。 有關詳細資訊，請參閱： [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
 
    ![](assets/social_webapp_fb_013.png)
 
 ## 輸入服務條款和隱私權政策連結 {#entering-the-terms-of-service-and-privacy-policy-links}
 
-強烈建議新增&#x200B;**[!UICONTROL Terms of service]**&#x200B;和&#x200B;**[!UICONTROL Privacy policy]**&#x200B;連結，以顯示在Facebook權限請求畫面上。
+強烈建議將 **[!UICONTROL Terms of service]** 和 **[!UICONTROL Privacy policy]** 連結，以顯示在Facebook權限請求畫面上。
 
 ![](assets/social_fb_terms_of_services_001.png)
 
 配置階段如下：
 
-1. 輸入以下地址：[https://developers.facebook.com/apps](https://developers.facebook.com/apps)，然後選取Facebook應用程式。
-1. 選擇&#x200B;**[!UICONTROL Settings > Basic]**&#x200B;頁簽並輸入&#x200B;**[!UICONTROL Privacy Policy URL]**&#x200B;和&#x200B;**[!UICONTROL Terms of Service URL]**&#x200B;欄位。
+1. 輸入以下地址： [https://developers.facebook.com/apps](https://developers.facebook.com/apps)，然後選取Facebook應用程式。
+1. 選取 **[!UICONTROL Settings > Basic]** ，然後輸入 **[!UICONTROL Privacy Policy URL]** 和 **[!UICONTROL Terms of Service URL]** 欄位。
 
    ![](assets/social_fb_terms_of_services.png)
 
@@ -109,7 +109,7 @@ ht-degree: 2%
 
 Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個人化內容。 對於每個Facebook應用程式，您都需在Adobe Campaign中建立Web應用程式。 若要建立Facebook Web應用程式，請繼續如下：
 
-1. 前往&#x200B;**[!UICONTROL Social networks]**&#x200B;標籤，按一下&#x200B;**[!UICONTROL Applications]**&#x200B;連結，然後按&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
+1. 前往 **[!UICONTROL Social networks]** ，按一下 **[!UICONTROL Applications]** 連結，然後 **[!UICONTROL Create]** 按鈕。
 
    ![](assets/social_webapp_001.png)
 
@@ -122,20 +122,20 @@ Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個�
    >預設提供四個Facebook Web應用程式範本：
    >
    >* **[!UICONTROL New Facebook application]**:如果要從空白應用程式啟動，請選擇此模板。
-   >* **[!UICONTROL Pre-entered form]**:Facebook應用程式（含表單）和「Facebook登入」按鈕，讓使用者能使用其設定檔的資料自動填寫表單欄位。這可讓使用者更快完成表單，讓品牌取得更優質的資訊。
+   >* **[!UICONTROL Pre-entered form]**:Facebook應用程式（含表單）和「Facebook登入」按鈕，讓使用者能使用其設定檔的資料自動填寫表單欄位。 這可讓使用者更快完成表單，讓品牌取得更優質的資訊。
    >* **[!UICONTROL "Canvas page" competition]**:Facebook應用程式，會顯示在畫面上，為使用者提供更理想的視覺體驗。
    >* **[!UICONTROL "Page Tab" competition]**:Facebook應用程式已完全整合至品牌頁面索引標籤。
 
 
-1. 在&#x200B;**[!UICONTROL Application]**&#x200B;欄位中，輸入連結至Facebook應用程式的外部帳戶。 有關詳細資訊，請參閱：[配置外部帳戶](#configuring-external-accounts)。
+1. 在 **[!UICONTROL Application]** 欄位中，輸入連結至Facebook應用程式的外部帳戶。 有關詳細資訊，請參閱： [設定外部帳戶](#configuring-external-accounts).
 
    ![](assets/social_webapp_005.png)
 
-1. 選擇&#x200B;**[!UICONTROL Edit]**&#x200B;頁簽，然後編輯Web應用程式。 有關詳細資訊，請參閱：[Facebook應用程式範例](../../social/using/examples-of-facebook-apps.md)。
+1. 選取 **[!UICONTROL Edit]** 頁簽，然後編輯Web應用程式。 有關詳細資訊，請參閱： [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
 
    ![](assets/social_webapp_003.png)
 
-1. 完成Web應用程式後，選擇&#x200B;**[!UICONTROL Dashboard]**&#x200B;頁簽，然後按一下&#x200B;**[!UICONTROL Publish]**&#x200B;以聯機發佈。
+1. 完成Web應用程式後，請選取 **[!UICONTROL Dashboard]** ，然後按一下 **[!UICONTROL Publish]** 線上發佈。
 
    ![](assets/social_webapp_004.png)
 
@@ -143,26 +143,26 @@ Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個�
 
 您可以設定Facebook應用程式，使其在Facebook頁面上顯示為標籤。 若要這麼做，請套用下列步驟：
 
-1. 選取Facebook應用程式([https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選取&#x200B;**[!UICONTROL Settings > Basic]**&#x200B;標籤。
+1. 選取Facebook應用程式([https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選取 **[!UICONTROL Settings > Basic]** 標籤。
 
    ![](assets/social_webapp_fb_008.png)
 
-1. 在頁面底部，按一下&#x200B;**[!UICONTROL Add Platform]**&#x200B;按鈕，然後選擇&#x200B;**[!UICONTROL Page Tab]**。
+1. 在頁面底部，按一下 **[!UICONTROL Add Platform]** 按鈕，然後選擇 **[!UICONTROL Page Tab]**.
 
    ![](assets/social_webapp_fb_008bis.png)
 
-1. 在&#x200B;**[!UICONTROL Page Tab]**&#x200B;區段的&#x200B;**[!UICONTROL Page Tab Name]**&#x200B;欄位中，輸入您要其顯示在Facebook頁面上的標籤。
+1. 在 **[!UICONTROL Page Tab Name]** 欄位 **[!UICONTROL Page Tab]** 區段中，輸入您要其顯示在Facebook頁面上的標籤。
 
    ![](assets/social_webapp_fb_001.png)
 
-1. 在&#x200B;**[!UICONTROL Secure Page Tab URL]**&#x200B;欄位中，輸入Web應用程式的公用URL，該URL可通過Web應用程式的&#x200B;**[!UICONTROL Dashboard]**&#x200B;頁簽訪問。 有關建立Facebook類型Web應用程式的詳細資訊，請參閱[建立Facebook類型Web應用程式](#creating-a-facebook-type-web-application)。
+1. 在 **[!UICONTROL Secure Page Tab URL]** 欄位，輸入web應用程式的公用URL，可透過 **[!UICONTROL Dashboard]** 頁簽。 如需建立Facebook類型網頁應用程式的詳細資訊，請參閱 [建立Facebook類型Web應用程式](#creating-a-facebook-type-web-application).
 
    ![](assets/social_webapp_fb_002.png)
 
-1. 在Web應用程式的&#x200B;**[!UICONTROL Dashboard]**&#x200B;上，按一下&#x200B;**[!UICONTROL Add a page tab]**&#x200B;連結。
+1. 在 **[!UICONTROL Dashboard]** ，按一下 **[!UICONTROL Add a page tab]** 連結。
 
    ![](assets/social_webapp_fb_0010.png)
 
-1. 選取您要新增索引標籤的Facebook頁面，然後按一下&#x200B;**[!UICONTROL Add Page Tab]**。
+1. 選取您要新增索引標籤的Facebook頁面，然後按一下 **[!UICONTROL Add Page Tab]**.
 
    ![](assets/social_webapp_fb_0011.png)

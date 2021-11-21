@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ![](../../assets/common.svg)
 
-依預設，下文詳述的工作流程會與&#x200B;**Mid-Sourcing平台**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../installation/using/mid-sourcing-deployment.md)。
+以下詳述的工作流程會與 **中間來源平台** 模組。 有關此模組的詳細資訊，請參閱 [節](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

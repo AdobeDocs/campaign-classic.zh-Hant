@@ -31,7 +31,7 @@ ht-degree: 1%
 
 Adobe Campaign應用程式伺服器上實作的Web服務定義，可從資料結構中取得。
 
-資料結構的語法中描述了Web服務，可從&#x200B;**`<methods>`**&#x200B;元素中使用。
+資料結構的語法中會說明Web服務，可從 **`<methods>`** 元素。
 
 ```
 <methods>
@@ -46,15 +46,15 @@ Adobe Campaign應用程式伺服器上實作的Web服務定義，可從資料結
 </methods>
 ```
 
-以下是名為&#x200B;**GenerateForm**&#x200B;的方法定義的示例。
+以下範例說明方法的定義，稱為 **生成表單**.
 
-服務的說明以`<method>`元素開頭。 方法的參數清單從`<parameters>`元素中完成。 每個參數都由名稱、類型（布林值、字串、DOMElement等）指定 和描述。 具有「out」值的「inout」屬性可讓您指定「result」參數位於SOAP呼叫輸出。
+服務的說明以 `<method>` 元素。 方法的參數清單可從  `<parameters>` 元素。 每個參數都由名稱、類型（布林值、字串、DOMElement等）指定 和描述。 具有「out」值的「inout」屬性可讓您指定「result」參數位於SOAP呼叫輸出。
 
 存在「static」屬性（值為「true」）將此方法描述為靜態，這表示必須聲明方法的所有參數。
 
 「const」方法隱式地將XML文檔作為其輸入，其格式為其關聯架構。
 
-[Method](../../configuration/using/schema/method.md)下的「架構參考」章節提供Adobe Campaign架構的`<method>`元素的完整說明
+的完整說明 `<method>` Adobe Campaign架構的元素可在以下的「架構參考」章節中取得 [方法](../../configuration/using/schema/method.md)
 
 來自&quot;xtk:queryDef&quot;架構的&quot;const&quot;-type &quot;ExecuteQuery&quot;方法的示例：
 
@@ -94,7 +94,7 @@ WSDL描述首先定義用於形成消息的類型，這些類型與「埠」關�
 
 #### 類型 {#types}
 
-類型定義以XML結構為基礎。 在我們的範例中，「ExecuteQuery」方法以「s:string」字串和XML檔案(`<s:complextype>`)作為參數。 方法的返回值(&quot;ExecuteQueryResponse&quot;)是XML文檔(`<s:complextype>`)。
+類型定義以XML結構為基礎。 在我們的範例中，「ExecuteQuery」方法會採用「s:string」字串和XML檔案(`<s:complextype>`)作為參數。 方法的返回值(&quot;ExecuteQueryResponse&quot;)是XML文檔(  `<s:complextype>`)。
 
 ```
 <types>
@@ -130,7 +130,7 @@ WSDL描述首先定義用於形成消息的類型，這些類型與「埠」關�
 
 #### 訊息 {#messages}
 
-`<message>`描述了要發送的一組欄位的名稱和類型。 方法使用兩條消息作為參數(&quot;ExecuteQueryIn&quot;)和返回值(&quot;ExecuteQueryOut&quot;)傳遞。
+此 `<message>` 說明要傳送的一組欄位的名稱和類型。 方法使用兩條消息作為參數(&quot;ExecuteQueryIn&quot;)和返回值(&quot;ExecuteQueryOut&quot;)傳遞。
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ WSDL描述首先定義用於形成消息的類型，這些類型與「埠」關�
 
 #### 埠類型 {#porttype}
 
-`<porttype>`將查詢(&quot;input&quot;)觸發的&quot;ExecuteQuery&quot;操作上的消息關聯，以生成響應(&quot;output&quot;)。
+此 `<porttype>` 關聯由查詢（「輸入」）觸發的「執行查詢」操作（「輸出」）上的消息，以生成響應（「輸出」）。
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ WSDL描述首先定義用於形成消息的類型，這些類型與「埠」關�
 
 #### 綁定 {#binding}
 
-`<binding>`部分指定SOAP通信協定(`<soap:binding>`)、HTTP中的資料傳輸（&quot;transport&quot;屬性的值）和&quot;ExecuteQuery&quot;操作的資料格式。 SOAP信封的正文直接包含消息段，無需轉換。
+此 `<binding>` part指定SOAP通信協定( `<soap:binding>` )、HTTP格式的資料傳輸（「傳輸」屬性的值）和「執行查詢」操作的資料格式。 SOAP信封的正文直接包含消息段，無需轉換。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ WSDL描述首先定義用於形成消息的類型，這些類型與「埠」關�
 
 #### 服務 {#service}
 
-`<service>`部分在Adobe Campaign應用程式伺服器的URL上描述了「XtkQueryDef」服務及其URI。
+此 `<service>` 部分說明「XtkQueryDef」服務及其URI(位於Adobe Campaign應用程式伺服器的URL上)。
 
 ```
 <service name="XtkQueryDef">
@@ -188,15 +188,15 @@ WSDL描述首先定義用於形成消息的類型，這些類型與「埠」關�
 
 ## 連接 {#connectivity}
 
-Adobe Campaign已引入[安全區域](../../installation/using/security-zones.md)和工作階段管理設定，借此提高驗證機制的安全性。
+Adobe Campaign推出認證機制，提高安全性 [安全區](../../installation/using/security-zones.md) 和工作階段管理設定。
 
 可用的驗證模式有兩種：
 
-* **透過對logon方法()的呼叫**。此模式會產生工作階段代號和安全代號。 這是最安全的模式，因此也是最建議的模式。
+* **通過對logon方法()的調用**. 此模式會產生工作階段代號和安全代號。 這是最安全的模式，因此也是最建議的模式。
 
 或
 
-* **透過Adobe Campaign登入+** 密碼建立工作階段Token。工作階段代號會在設定的時段後自動過期。 不建議使用此模式，因此需要減少某些區域設定的應用程式安全設定（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
+* **透過Adobe Campaign登入+密碼** 會建立工作階段代號。 工作階段代號會在設定的時段後自動過期。 不建議使用此模式，因此需要減少某些區域設定的應用程式安全設定（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
 
 ### 工作階段代號特性 {#session-token-characteristics}
 
@@ -240,7 +240,7 @@ Adobe Campaign已引入[安全區域](../../installation/using/security-zones.md
 
 ### 呼叫範例 {#call-examples}
 
-* 使用&#x200B;**HttpSoapConnection/SoapService**:
+* 使用 **HttpSoapConnection/SoapService**:
 
 ```
   
@@ -273,11 +273,11 @@ Adobe Campaign已引入[安全區域](../../installation/using/security-zones.md
   logInfo(queryRes[0].toXMLString())
 ```
 
-* 使用&#x200B;**HttpServletRequest**:
+* 使用 **HttpServletRequest**:
 
 >[!NOTE]
 >
->下列&#x200B;**HttpServletRequest**&#x200B;呼叫中使用的URL必須位於&#x200B;**serverConf.xml**&#x200B;檔案的url權限區段中的允許清單中。 伺服器本身的URL也是如此。
+>下列項目使用的URL **HttpServletRequest** 呼叫必須位於 **serverConf.xml** 檔案。 伺服器本身的URL也是如此。
 
 登錄執行():
 

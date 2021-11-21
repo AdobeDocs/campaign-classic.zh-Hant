@@ -54,20 +54,20 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
    * 首先公開，用於追蹤並指向虛擬IP位址(VIP)上的負載平衡器，然後分配給兩個前端伺服器，
    * 第二個會公開給內部使用者，供他們透過主控台存取，並指向相同的應用程式伺服器。
 
-* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521(Oracle)、5432(PostgreSQL)等 埠。 有關詳細資訊，請參閱[資料庫訪問](../../installation/using/network-configuration.md#database-access)部分。
+* 防火牆配置為開啟STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521(Oracle)、5432(PostgreSQL)等 埠。 如需詳細資訊，請參閱區段 [資料庫存取](../../installation/using/network-configuration.md#database-access).
 
 ### 安裝應用程式伺服器 {#installing-the-application-server}
 
-請依照步驟從Adobe Campaign應用程式伺服器安裝獨立執行個體，以建立資料庫（步驟12）。 請參閱[安裝和配置（單台電腦）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
+請依照步驟從Adobe Campaign應用程式伺服器安裝獨立執行個體，以建立資料庫（步驟12）。 請參閱 [安裝和配置（單台電腦）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 由於電腦不是追蹤伺服器，因此請勿將與Web伺服器的整合列入考量。
 
 在下列範例中，例項的參數為：
 
-* 執行個體的名稱：**demo**
-* DNS掩碼：**console.campaign.net***（僅用於用戶端主控台連線和報表）
+* 執行個體的名稱： **示範**
+* DNS掩碼： **console.campaign.net*** (僅用於客戶端控制台連接和報告。
 * 語言：英文
-* 資料庫：**campaign:demo@dbsrv**
+* 資料庫： **campaign:demo@dbsrv**
 
 ### 安裝兩個前端伺服器 {#installing-the-two-frontal-servers}
 
@@ -77,20 +77,20 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 
 1. 安裝Adobe Campaign伺服器。
 
-   如需詳細資訊，請參閱[在Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)(Linux)中安裝Campaign的必要條件和[在Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)(Windows)中安裝Campaign的必要條件。
+   有關詳細資訊，請參閱 [在Linux安裝Campaign的必要條件](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux)和 [在Windows安裝Campaign的必要條件](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows)。
 
 1. 按照以下各節所述的Web伺服器整合過程(IIS、Apache)操作：
 
-   * Linux:[整合至Linux的Web伺服器](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * 對於Windows:[整合至Windows適用的Web伺服器](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * Linux: [與Linux網頁伺服器整合](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * 對於Windows: [與Windows版Web伺服器整合](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. 建立&#x200B;**demo**&#x200B;例項。 執行此作業有兩種方式：
+1. 建立 **示範** 例項。 執行此作業有兩種方式：
 
    * 透過主控台建立執行個體：
 
       ![](assets/install_create_new_connexion.png)
 
-      有關詳細資訊，請參閱[建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md)。
+      有關詳細資訊，請參閱 [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
 
       或
 
@@ -100,12 +100,12 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
       nlserver config -addinstance:demo/tracking.campaign.net*
       ```
 
-      有關詳細資訊，請參閱[建立實例](../../installation/using/command-lines.md#creating-an-instance)。
+      有關詳細資訊，請參閱 [建立例項](../../installation/using/command-lines.md#creating-an-instance).
    實例的名稱與應用程式伺服器的名稱相同。
 
-   將從負載平衡器的URL(tracking.campaign.net)與&#x200B;**nlserver web**&#x200B;模組（鏡像頁面，取消訂閱）連線至伺服器。
+   與伺服器的連線 **nlserver web** 模組（鏡像頁面，取消訂閱）會從負載平衡器(tracking.campaign.net)的URL進行。
 
-1. 將&#x200B;**內部**&#x200B;更改為與應用程式伺服器相同。
+1. 變更 **內部** 與應用程式伺服器相同。
 
    如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
@@ -115,11 +115,11 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. 在&#x200B;**config-default.xml**&#x200B;和&#x200B;**config-demo.xml**&#x200B;檔案中，啟用&#x200B;**web**、**trackinglogd**&#x200B;和&#x200B;**mta**&#x200B;模組。
+1. 在 **config-default.xml** 和 **config-demo.xml** 檔案，啟用 **web**, **trackinglogd** 和 **mta** 模組。
 
    如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
-1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案並填入：
+1. 編輯 **serverConf.xml** 檔案並填入：
 
    * MTA模組的DNS設定：
 
@@ -129,9 +129,9 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 
       >[!NOTE]
       >
-      >**nameServers**&#x200B;參數僅用於Windows。
+      >此 **nameServers** 參數僅用於Windows。
 
-      如需詳細資訊，請參閱[傳送設定](configure-delivery-settings.md)。
+      有關詳細資訊，請參閱 [傳送設定](configure-delivery-settings.md).
 
    * 重定向參數中的冗餘跟蹤伺服器：
 
@@ -140,9 +140,9 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      如需詳細資訊，請參閱[備援追蹤](configuring-campaign-server.md#redundant-tracking)。
+      有關詳細資訊，請參閱 [冗餘跟蹤](configuring-campaign-server.md#redundant-tracking).
 
-1. 啟動網站並從URL測試重新導向：[https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)。
+1. 啟動網站並從URL測試重新導向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
    瀏覽器應顯示下列訊息（視負載平衡器重新導向的URL而定）:
 
@@ -158,22 +158,22 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 
    如需詳細資訊，請參閱下列章節：
 
-   * Linux:[啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * 對於Windows:[啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Linux: [啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * 對於Windows: [啟動Web伺服器並測試配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. 啟動Adobe Campaign伺服器。
-1. 在Adobe Campaign主控台中，使用&#x200B;**admin**&#x200B;登入（不使用密碼）連線，然後啟動部署精靈。
+1. 在Adobe Campaign主控台中，使用 **管理員** 不使用密碼登錄並啟動部署嚮導。
 
-   有關詳細資訊，請參閱[部署執行個體](../../installation/using/deploying-an-instance.md)。
+   有關詳細資訊，請參閱 [部署執行個體](../../installation/using/deploying-an-instance.md).
 
    除了追蹤模組的設定外，設定與獨立執行個體相同。
 
 1. 填入用於重新導向的外部URL（負載平衡器的URL），以及兩個前端伺服器的內部URL。
 
-   如需詳細資訊，請參閱[追蹤設定](../../installation/using/deploying-an-instance.md#tracking-configuration)。
+   有關詳細資訊，請參閱 [追蹤設定](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
    ![](assets/d_ncs_install_tracking2.png)
 
    >[!NOTE]
    >
-   >我們使用先前建立之兩個追蹤伺服器的現有例項，並使用&#x200B;**內部**&#x200B;登入。
+   >我們使用先前建立之兩個追蹤伺服器的現有例項，並使用 **內部** 登入。

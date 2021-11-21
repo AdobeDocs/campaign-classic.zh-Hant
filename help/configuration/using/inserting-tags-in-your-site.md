@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## 簡單方法 {#simple-method}
 
-此方法包括透過在您要追蹤之網頁的HTML原始碼中插入&#x200B;**`<img>`** HTML標籤，將HTTP呼叫傳送至重新導向伺服器。
+此方法包括透過插入 **`<img>`** HTML標籤。
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ ht-degree: 5%
 
 如果您希望控制發送到重定向伺服器的資訊，最可靠的方法是使用頁面生成語言自行同步執行HTTP查詢。
 
-您建構的URL必須遵循[Web追蹤標籤中定義的語法規則：definition](../../configuration/using/web-tracking-tag--definition.md)。
+您建構的URL必須遵循 [網頁追蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

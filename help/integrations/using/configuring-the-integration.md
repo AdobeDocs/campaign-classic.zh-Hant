@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 設定Adobe Experience Manager整合
-description: 了解如何設定Campaign-AEM整合
+title: Configure Adobe Experience Manager integration
+description: Learn how to configure Campaign-AEM integration
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-## 在Adobe Campaign中設定步驟 {#configuring-in-adobe-campaign}
+## Configuration steps in Adobe Campaign {#configuring-in-adobe-campaign}
 
 若要同時使用這兩個解決方案，您必須將它們設定為彼此連線。
 
@@ -38,26 +38,26 @@ ht-degree: 3%
    ![](assets/aem_config_1.png)
 
 1. 選取 **[!UICONTROL Install a standard package]**。
-1. 檢查 **[!UICONTROL AEM integration]** 然後按一下 **[!UICONTROL Next]** 按鈕。
+1. Check **[!UICONTROL AEM integration]** then click the **[!UICONTROL Next]** button.
 
    ![](assets/aem_config_2.png)
 
-1. 在下一個視窗中，按一下 **[!UICONTROL Start]** 按鈕，開始安裝軟體包。 安裝完成後，關閉視窗。
+1. In the next window, click the **[!UICONTROL Start]** button to start the installation of your package. Close the window once the installation is finished.
 
-### 為AEM運算子設定安全區域 {#configure-the-security-zone-for-aem-operator}
+### Configure the security zone for AEM operator {#configure-the-security-zone-for-aem-operator}
 
-此 **[!UICONTROL AEM integration]** 套件會設定 **[!UICONTROL aemserver]** 運算元。 此運算子將用來將Adobe Experience Manager伺服器連線至Adobe Campaign。
+The **[!UICONTROL AEM integration]** package sets the **[!UICONTROL aemserver]** operator in Campaign. 此運算子將用來將Adobe Experience Manager伺服器連線至Adobe Campaign。
 
-您需要為此運算子設定安全區域，以透過Adobe Experience Manager連線至Adobe Campaign。
+You need to configure a security zone for this operator to connect to Adobe Campaign via Adobe Experience Manager.
 
 >[!CAUTION]
 >
->強烈建議建立專用於AEM的安全區域，以避免任何安全性問題。 有關詳細資訊，請參閱安裝 [指南](../../installation/using/security-zones.md).
+>We strongly recommend creating a security zone dedicated to AEM to avoid any security problems. For more on this, refer to the Installation [guide](../../installation/using/security-zones.md).
 
-如果您的Campaign執行個體是由Adobe托管，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。 如果您使用內部部署的Campaign，請遵循下列步驟：
+如果您的Campaign執行個體是由Adobe托管，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。 If you are using Campaign on-premise, follow the steps below:
 
-1. 開啟 **serverConf.xml** 設定檔。
-1. 存取 **allowUserPassword** 屬性，並將其設定為 **true**.
+1. Open the **serverConf.xml** configuration file.
+1. Access the **allowUserPassword** attribute of the selected security zone and set it to **true**.
 
    這可讓Adobe Experience Manager透過登入/密碼連線Adobe Campaign。
 
@@ -88,9 +88,9 @@ ht-degree: 3%
 1. 檢查 **[!UICONTROL Enabled]** 框。
 1. 按一下 **[!UICONTROL Save]** 按鈕。
 
-### 設定AEM資源篩選 {#configure-aem-resources-filtering}
+### Configure AEM resources filtering {#configure-aem-resources-filtering}
 
-此 **AEMResourceTypeFilter** 選項，可用來篩選可在Adobe Campaign中使用的Experience Manager資源類型。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的Experience Manager內容。
+The **AEMResourceTypeFilter** option is used to filter types of Experience Manager resources that can be used in Adobe Campaign. This allows Adobe Campaign to retrieve Experience Manager contents that are specifically designed to be used in Adobe Campaign only.
 
 檢查 **[!UICONTROL AEMResourceTypeFilter]** 選項：
 
@@ -125,8 +125,8 @@ ht-degree: 3%
 
 1. 透過設定專用的 **Cloud Service**.
 
-   若要了解如何透過Cloud Services連線這兩個解決方案，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
+   To learn how to connect both solutions via Cloud Services, refer to Adobe Experience Manager [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. 設定 **外部化程式服務**.
 
-   若要了解如何設定，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).
+   To learn how to configure it, refer to Adobe Experience Manager [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).

@@ -19,17 +19,17 @@ ht-degree: 8%
 
 ## 關於收件匣轉譯 {#about-inbox-rendering}
 
-在按&#x200B;**Send**&#x200B;按鈕之前，請確定您的郵件會以最佳方式顯示在各種Web用戶端、網頁郵件和裝置上。
+在點擊 **傳送** 按鈕，確保您的郵件將以最佳方式顯示在各種Web客戶端、Web郵件和設備上。
 
-為此，Adobe Campaign會運用[Litmus](https://litmus.com/email-testing)網頁型電子郵件測試解決方案來擷取呈現，並在專用報表中提供。 這使您能夠在可能接收郵件的不同上下文中預覽所發送的郵件，並檢查主要案頭和應用程式的相容性。
+為了允許此情況，Adobe Campaign會運用 [利特穆斯](https://litmus.com/email-testing) 網頁型電子郵件測試解決方案，可擷取呈現內容，並在專屬報表中提供。 這使您能夠在可能接收郵件的不同上下文中預覽所發送的郵件，並檢查主要案頭和應用程式的相容性。
 
-Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電子郵件內容建立者在超過70個電子郵件轉譯器（例如Gmail收件匣或Apple Mail用戶端）中預覽其郵件內容。
+Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電子郵件內容建立者在超過70個電子郵件轉譯器中預覽其郵件內容，例如Gmail收件匣或Apple Mail用戶端。
 
-[Litmus網站](https://litmus.com/email-testing)上列有可用於Adobe Campaign中&#x200B;**收件匣轉譯**&#x200B;的行動裝置、傳訊和網頁郵件用戶端（按一下&#x200B;**檢視所有電子郵件用戶端**）。
+可用於的移動、郵件和Web郵件客戶端 **收件匣轉譯** 在Adobe Campaign中， [Litmus網站](https://litmus.com/email-testing) (按一下 **查看所有電子郵件客戶端**)。
 
 >[!NOTE]
 >
->在傳送中測試個人化不需要收件匣轉譯。 您可以使用Adobe Campaign工具（例如&#x200B;**[!UICONTROL Preview]**&#x200B;和[Doods](steps-validating-the-delivery.md#sending-a-proof)）來檢查個人化。
+>在傳送中測試個人化不需要收件匣轉譯。 您可以使用Adobe Campaign工具(例如 **[!UICONTROL Preview]** 和 [校樣](steps-validating-the-delivery.md#sending-a-proof).
 
 ## 啟用收件匣轉譯 {#activating-inbox-rendering}
 
@@ -37,8 +37,8 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 若為內部部署安裝，請依照下列步驟設定收件匣轉譯。
 
-1. 透過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;功能表安裝&#x200B;**[!UICONTROL Inbox rendering (IR)]**&#x200B;套件。 有關詳細資訊，請參閱[安裝Campaign Classic標準包](../../installation/using/installing-campaign-standard-packages.md)。
-1. 透過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**&#x200B;節點設定HTTP類型的外部帳戶。 有關詳細資訊，請參閱[建立外部帳戶](../../installation/using/external-accounts.md#creating-an-external-account)。
+1. 安裝 **[!UICONTROL Inbox rendering (IR)]** 透過 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** 功能表。 有關詳細資訊，請參閱 [安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md).
+1. 透過 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** 節點。 有關詳細資訊，請參閱 [建立外部帳戶](../../installation/using/external-accounts.md#creating-an-external-account).
 1. 按如下方式設定外部帳戶參數：
    * **[!UICONTROL Label]**:傳遞能力伺服器資訊
    * **[!UICONTROL Internal name]**:deliverabilityInstance
@@ -49,8 +49,8 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. 前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;節點。 搜尋&#x200B;**[!UICONTROL DmRendering_cuid]**&#x200B;選項並聯絡支援，取得您需要複製到&#x200B;**[!UICONTROL Value (text)]**&#x200B;欄位的傳送報表識別碼。
-1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案以允許呼叫Litmus伺服器。 將下列行新增至`<urlPermission>`區段：
+1. 前往 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** 節點。 搜尋 **[!UICONTROL DmRendering_cuid]** 選項和聯絡支援，取得需要複製到的傳送報表識別碼 **[!UICONTROL Value (text)]** 欄位。
+1. 編輯 **serverConf.xml** 檔案，允許呼叫Litmus伺服器。 將下列行新增至 `<urlPermission>` 小節：
 
    ```
    <url dnsSuffix="deliverability-app.neolane.net" urlRegEx="https://.*"/>
@@ -76,19 +76,19 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 >
 >可用的Litmus權杖數量取決於您購買的Campaign授權。 檢查您的授權合約。
 
-每次您在傳送中使用&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;功能時，產生的每次呈現都會將可用代號減少一。
+每次您使用 **[!UICONTROL Inbox rendering]** 功能，每次產生的呈現都會將可用的Token減少一。
 
 >[!IMPORTANT]
 >
 >代號會用於每個個別呈現，而非整個收件匣呈現報表，這表示：
 >
->* 每次產生收件匣呈現報表時，每個傳訊用戶端會扣除一個代號：一個Outlook 2000呈現的代號、一個Outlook 2010呈現的代號、一個Apple Mail 9呈現的代號等。
+>* 每次產生收件匣呈現報表時，每個傳訊用戶端會扣除一個代號：一個Outlook 2000呈現的代號、一個Outlook 2010呈現的代號、一個Apple Mail 9呈現的代號，以此類推。
 >* 對於相同的傳送，如果您再次產生收件匣轉譯，可用代號的數量會再次減少為產生的轉譯數量。
 
 >
 
 
-剩餘的可用令牌數顯示在[收件箱呈現報告](#inbox-rendering-report)的&#x200B;**[!UICONTROL General summary]**&#x200B;中。
+剩餘的可用權杖數量會顯示在 **[!UICONTROL General summary]** 的 [收件匣呈現報告](#inbox-rendering-report).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -98,20 +98,20 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 在您建立電子郵件傳送並定義其內容以及目標定位人口族群後，請遵循下列步驟。
 
-如需建立、設計和定位傳送的詳細資訊，請參閱[此區段](about-email-channel.md)。
+如需建立、設計和鎖定傳送的詳細資訊，請參閱 [本節](about-email-channel.md).
 
-1. 在傳送的頂端列上，按一下&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;按鈕。
-1. 選擇&#x200B;**[!UICONTROL Analyze]**&#x200B;以啟動捕獲進程。
+1. 在傳送的頂端列上，按一下 **[!UICONTROL Inbox rendering]** 按鈕。
+1. 選擇 **[!UICONTROL Analyze]** 以啟動捕獲進程。
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   已傳送校樣。 傳送電子郵件後幾分鐘，即可在該校樣中存取呈現的縮圖。 如需傳送校樣的詳細資訊，請參閱[此區段](steps-validating-the-delivery.md#sending-a-proof)。
+   已傳送校樣。 傳送電子郵件後幾分鐘，即可在該校樣中存取呈現的縮圖。 如需傳送校樣的詳細資訊，請參閱 [本節](steps-validating-the-delivery.md#sending-a-proof).
 
 1. 傳送後，校樣會顯示在傳送清單中。 按兩下。
 
    ![](assets/s_tn_inbox_rendering_delivery_list.png)
 
-1. 前往校樣的&#x200B;**收件匣轉譯**&#x200B;標籤。
+1. 前往 **收件匣轉譯** 校樣的標籤。
 
    ![](assets/s_tn_inbox_rendering_tab.png)
 
@@ -121,13 +121,13 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 此報表會以收件者看到的方式顯示收件匣呈現。 呈現會因收件者開啟電子郵件傳送的方式而異：在瀏覽器、行動裝置或透過電子郵件應用程式。
 
-**[!UICONTROL General summary]**&#x200B;將接收、不想要（垃圾郵件）、未接收或待接收的消息數作為清單並通過圖形的彩色編碼表示顯示。
+此 **[!UICONTROL General summary]** 以清單和圖形顏色編碼表示方式呈現接收、不想要（垃圾郵件）、未接收或待接收的郵件數。
 
 ![](assets/s_tn_inbox_rendering_summary.png)
 
 將滑鼠指標暫留在圖表上，可顯示每種顏色的詳細資訊。
 
-報告正文分為三部分：**[!UICONTROL Mobile]**、**[!UICONTROL Messaging clients]**&#x200B;和&#x200B;**[!UICONTROL Webmails]**。 向下捲動報告，以顯示分為這三種類別的所有呈現。
+報告正文分為三部分： **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]**，和 **[!UICONTROL Webmails]**. 向下捲動報告，以顯示分為這三種類別的所有呈現。
 
 ![](assets/s_tn_inbox_rendering_report.png)
 

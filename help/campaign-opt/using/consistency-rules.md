@@ -47,7 +47,7 @@ Adobe Campaign提供行銷活動類型中的一套規則，確保持續的通訊
    >可用性行僅供參考。 如果您需要在達到容量限制時排除訊息，請參閱 [本節](#exclude-messages-when-capacity-limit-reached).
 
 1. 將此規則與類型相關聯，然後將類型參考至您的傳送，以套用此容量規則。 如需詳細資訊，請參閱[本章節](applying-rules.md#applying-a-typology-to-a-delivery)。
-1. 您可以監控規則的耗用量 **[!UICONTROL Consumptions]** 和 **[!UICONTROL Capacity]** 標籤。
+1. 您可以監控規則的耗用量 **[!UICONTROL Consumptions]** 和 **[!UICONTROL Capacity]** 頁簽。
 
    若在傳送中使用規則， **[!UICONTROL Consumed]** 和 **[!UICONTROL Remaining]** 欄會提供有關載入的資訊，如下所示：
 

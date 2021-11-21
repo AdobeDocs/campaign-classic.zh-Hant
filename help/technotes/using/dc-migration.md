@@ -19,25 +19,25 @@ ht-degree: 2%
 
 ## 內容
 
-作為尊貴的Adobe Campaign Classic客戶，我們致力提供您最佳體驗和價值。 多年來，我們已認識到在雲中托管客戶的價值和可靠性。  作為[Gold Standard計畫](../../rn/using/gold-standard.md)的一部分，我們將所有客戶轉移至Adobe Managed Services（AWS上的Public Cloud），以提供更好、更可靠的服務。
+作為尊貴的Adobe Campaign Classic客戶，我們致力提供您最佳體驗和價值。 多年來，我們已認識到在雲中托管客戶的價值和可靠性。  作為 [金標計畫](../../rn/using/gold-standard.md)，我們將所有客戶移至Adobe Managed Services(AWS上的Public Cloud)，以提供更好、更可靠的服務。
 
 該計畫有三個主要目標：
 
-* 通過將基礎設施移至安全且現代的環境(AWS)來解決已識別的安全漏洞。
-* 消除可能繁瑣的擴展過程，提供對[增強MTA](../../delivery/using//sending-with-enhanced-mta.md)的訪問，並改善所有維護服務級別。
+* 通過將基礎設施移至安全而現代的環境來解決已查明的安全漏洞(AWS)。
+* 消除可能繁瑣的擴展過程，提供對 [增強的MTA](../../delivery/using//sending-with-enhanced-mta.md) 提高所有維護服務水準。
 * 為未來的Adobe Campaign Classic做好準備，包括更自動化、定期的升級，不需要那麼多的資源，也不需要太多的時間。
 
 ### 字彙
 
-* **建置升級**  — 當Adobe Campaign Classic軟體更新至最新的安全組建編號，但仍維持相同的主要/次要組建層級。例如：Campaign v7 20.2.3版本編號9182至Campaign v7 21.2.5版本編號9188。 [深入瞭解](../../platform/using/faq-build-upgrade.md)。
-* **MID/RT**  — 在Experience Cloud上托管的訊息執行伺服器（批次促銷活動為MID，即時單一訊息為RT）
-* **Gold Standard升級**  — 此計畫提供改進的安全性、改進的支援、增強的維護和穩定性。它也可讓日後的升級更輕鬆，並可存取Campaign中的新功能。  [深入瞭解](../../rn/using/gs-overview.md)。
-* **AWS**  - Amazon Web Services(Amazon Public Cloud)
-* **SFTP**  — 安全檔案傳輸通訊協定。[深入瞭解](../../platform/using/sftp-server-usage.md)。
+* **版本編號升級**  — 當Adobe Campaign Classic軟體更新為最新的安全版本編號，但仍維持相同的主要/次要版本編號。 例如：Campaign v7 20.2.3版本編號9182至Campaign v7 21.2.5版本編號9188。 [深入瞭解](../../platform/using/faq-build-upgrade.md)。
+* **MID/RT**  — 托管於Analytics Cloud的訊息執行伺服器（批次促銷活動為MID，即時單一訊息為RT）
+* **Gold Standard升級**  — 該方案提供改進的安全、改進的支援、增強的維護和穩定性。 它也可讓日後的升級更輕鬆，並可存取Campaign中的新功能。  [深入瞭解](../../rn/using/gs-overview.md)。
+* **AWS** - Amazon Web Services(Amazon Public Cloud)
+* **SFTP**  — 安全檔案傳輸協定。 [深入瞭解](../../platform/using/sftp-server-usage.md)。
 
 
 >[!NOTE]
->Campaign Classicv7移轉至Public Cloud只會影響使用&#x200B;**Adobe Managed Services**&#x200B;的客戶。
+>Campaign Classicv7移轉至Public Cloud可影響客戶使用 **Adobe Managed Services** 只有。
 
 
 ## 好處
@@ -78,26 +78,26 @@ ht-degree: 2%
 
 受影響帳戶的移轉至Adobe Managed Services(Public Cloud)將於2020/2021年完成。 Adobe將引導您的組織完成此歷程。
 
-為了開始此工作，需要進行此移轉的帳戶會收到來自Adobe的電子郵件通訊，提供時間表和檔案存取權。 這會是您排程移轉帳戶的通知。
+為了開始此工作，需要進行此移轉的帳戶會收到Adobe寄來的電子郵件通訊，提供時間表和檔案存取權。 這會是您排程移轉帳戶的通知。
 
-移轉可以透過[開啟新的客戶服務支援票證](https://experienceleague.adobe.com/?support-solution=Campaign#support)來啟動。 使用主題行「遷移至AWS」。
+移轉可由 [開啟新的客戶服務支援票證](https://experienceleague.adobe.com/?support-solution=Campaign#support). 使用主旨行「移轉至AWS」。
 
 ### 此移轉是否為強制性？
 
-此移轉至雲端作業是您Adobe Campaign執行個體[Gold Standard認證&#x200B;](../../rn/using/gs-overview.md)**的第一步。**&#x200B;如果您托管在非公用雲(AWS)的資料中心，則此遷移是強制性的。
+此移轉至雲端的步驟為 **前往 [Gold Standard認證](../../rn/using/gs-overview.md)** Adobe Campaign實例。 如果您托管於非公用雲端(AWS)的資料中心，則此移轉為必要。
 
-Adobe Managed Services雲端托管於Amazon Web Services(AWS)，這是一個現代、安全且最佳化的環境。 [了解更多AWS](https://aws.amazon.com/application-hosting/benefits/)。
+Amazon Web Services(AWS)是一個現代化、安全且最佳化的環境，是Adobe Managed Services雲端的托管場所。 [深入了解AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe計畫解除舊版資料中心的運行，必須將運行在舊版資料中心的Adobe Campaign實例傳輸到新的參考資料中心AWS。
 
-這是前進的關鍵路徑，因為您的當前位置可能會暴露在&#x200B;**安全和效能漏洞**&#x200B;中。
+這是前進的關鍵路徑，因為您的當前位置可能會暴露在 **安全性和效能漏洞**.
 
-此外，此移轉現在是您未來任何Adobe Campaign版本編號升級&#x200B;**的**&#x200B;先決條件。 舊版資料中心不再提供組建升級功能。
+此外，此移轉現在是 **未來任何版本編號升級的先決條件** 你的Adobe Campaign。 舊版資料中心不再提供組建升級功能。
 
 Adobe致力於保護您的資料，並協助您邁向Adobe Campaign未來的正軌。 我們需要你們的合作，使它成為共同的成功！
 
 
-**我們已組織了一** 個專責的客戶服務代表、客戶成功經理、產品經理、工程師、TechOps專家和產品顧問團隊，以協助並確保體驗順暢無礙。我們致力確保您具有相關專案和聯絡資訊。
+**我們組織了一個小組** 專門的客戶服務代表、客戶成功經理、產品經理、工程師、 TechOps專家和產品顧問，協助並確保體驗順暢無礙。 我們致力確保您具有相關專案和聯絡資訊。
 
 我們投入巨大精力開發技術，使此遷移快速、無縫且安全。
 
@@ -105,9 +105,9 @@ Adobe致力於保護您的資料，並協助您邁向Adobe Campaign未來的正�
 
 * 遷移過程將伴隨不可避免的平台停機。 此計畫的目的是引導最大限度地減少此停機時間。
 * 資料整合的IP變更。
-* 新傳送IP的傳遞能力提升。 不過，該計畫是讓這項業務透明化，這與上線期間最初的升級不同。
+* 新傳送IP的傳遞能力提升。 不過，該計畫是讓這項業務對企業而言透明，而不像在上線期間所做的最初升級。
 
-進一步了解Campaign移轉至[Public Cloud常見問題集](dc-migration-faq.md)。
+進一步了解Campaign移轉至 [Public Cloud常見問題集](dc-migration-faq.md).
 
 
 ## Gold Standard認證歷程
@@ -128,7 +128,7 @@ Adobe會處理大部分動作。 我們需要您進行驗證和簽核。
 
 **資料庫**
 
-資料庫將從舊式資料中心轉儲，並在Public Cloud(AWS)中恢復。 在新資料中心重新啟動後，應用程式將從關閉前的確切狀態恢復。 除了某些已排程的工作會延遲外，使用者不會看到任何差異。
+資料庫將從舊版資料中心傾棄，並在Public Cloud(AWS)還原。 在新資料中心重新啟動後，應用程式將從關閉前的確切狀態恢復。 除了某些已排程的工作會延遲外，使用者不會看到任何差異。
 
 **電子郵件傳送IP**
 
@@ -147,7 +147,7 @@ Adobe會處理大部分動作。 我們需要您進行驗證和簽核。
 
 **Campaign伺服器**
 
-現有Campaign伺服器（實際上是容器）將以「提升並轉移」方法移至Public Cloud(AWS)。 也就是說，不需要安裝新伺服器，但整個伺服器將傳輸到新資料中心。 操作只需要低級技術重新配置即可完成。
+現有的Campaign伺服器（實際上是容器）將以「提升並轉移」方法移至Public Cloud(AWS)。 也就是說，不需要安裝新伺服器，但整個伺服器將傳輸到新資料中心。 操作只需要低級技術重新配置即可完成。
 
 **伺服器名稱**
 
@@ -170,8 +170,8 @@ Adobe將在新資料中心上配置相同數量的IP。
 
 一旦布建新IP，新IP的數量就會開始增加。
 
-**應用程式清**
-理資料中心之間的資料傳輸處於停機的關鍵路徑。
+**應用程式清理**
+資料中心之間的資料傳輸處於停機的關鍵路徑。
 
 資料的儲存方式有兩種：
 
@@ -189,7 +189,7 @@ Adobe將在新資料中心上配置相同數量的IP。
 
 **暫停執行**
 
-建議您放慢速度，最好在舊式資料中心關閉應用程式之前暫停所有執行：傳遞和工作流程。 這將簡化Public Cloud(AWS)上的重啟，因為流程將有時間「優雅」暫停並保存任何正在進行的執行狀態。
+建議您放慢速度，最好在舊式資料中心關閉應用程式之前暫停所有執行：傳遞和工作流程。 這樣便於在Public Cloud(AWS)上重新啟動，因為程式將有時間「優雅」暫停並儲存任何進行中的執行狀態。
 
 **移轉期間**
 
@@ -206,11 +206,11 @@ Adobe將在新資料中心上配置相同數量的IP。
 
 **刪除舊式資料中心上的實例**
 
-應用程式遷移完成後，將無計畫在舊式資料中心再次運行任何進程。 我們希望，除了臨時備份外，舊式資料中心上的所有資料都可以被擦除，直到定時備份過程在Public Cloud(AWS)上運行。
+應用程式遷移完成後，將無計畫在舊式資料中心再次運行任何進程。 我們希望，除了臨時備份之外，舊式資料中心上的所有資料都可以擦除，直到定時備份過程在Public Cloud(AWS)上運行。
 
 **DNS委派**
 
-通常，從Campaign傳送電子郵件（錯誤地址中@符號右側的部分）的網域已委派給Adobe。 可以更改委派並實施到AWS DNS伺服器。
+通常，從Campaign傳送電子郵件（錯誤地址中@符號右側的部分）的網域已委派給Adobe。 可將委派變更並實作至AWS DNS伺服器。
 
 
 ## 支援和其他有效連結{#support}

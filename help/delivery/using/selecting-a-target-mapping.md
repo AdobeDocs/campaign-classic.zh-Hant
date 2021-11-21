@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-預設情況下，傳遞範本目標為&#x200B;**[!UICONTROL Recipients]**。 因此，其目標映射使用&#x200B;**nms:recipient**&#x200B;表的欄位。 Adobe Campaign為您的傳送提供其他目標對應，以根據您的需求使用。
+依預設，傳遞範本目標為 **[!UICONTROL Recipients]**. 因此，其目標對應會使用 **nms:recipient** 表格。 Adobe Campaign為您的傳送提供其他目標對應，以根據您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -35,4 +35,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您也可以建立新的目標對應。 此操作為專家用戶保留。 有關詳細資訊，請參閱[配置指南](../../configuration/using/target-mapping.md)。
+>您也可以建立新的目標對應。 此操作為專家用戶保留。 如需詳細資訊，請參閱 [設定指南](../../configuration/using/target-mapping.md).

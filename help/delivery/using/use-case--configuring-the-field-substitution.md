@@ -23,18 +23,18 @@ ht-degree: 4%
 
 ## 內容 {#context}
 
-在此使用案例中，網站&#x200B;**我的線上資料庫**&#x200B;會根據客戶最喜愛的文學類型，向客戶傳送折扣。
+在此使用案例中，網站 **我的線上圖書館** 想根據客戶喜愛的文學類型，給客戶打折。
 
 傳送管理員已將與最喜愛類型連結的個人化欄位整合至其電子郵件。 目的是使用一些種子地址：這些種子地址的表格中有「個人化」欄位，但沒有儲存任何值。
 
 若要使用隨機欄位替代，您必須具備：
 
 * 包含一或多個個人化欄位的傳送，
-* 根據傳送中使用的個人化欄位修改&#x200B;**資料結構**&#x200B;的種子地址。
+* 種子地址 **資料結構** 會根據傳送中使用的個人化欄位來修改。
 
 ## 建立傳遞 {#step-1---creating-a-delivery}
 
-在[建立電子郵件傳送](creating-an-email-delivery.md)區段中會詳細說明建立傳送的步驟。
+建立傳送的步驟在 [建立電子郵件傳送](creating-an-email-delivery.md) 區段。
 
 在此範例中，傳送管理員已建立電子報。
 
@@ -53,19 +53,19 @@ ht-degree: 4%
 
 此列舉可讓使用者指定其客戶的最喜愛文學類型。
 
-要在種子地址&#x200B;**輸入表單**&#x200B;中查看此資料架構修改，必須更新它。 請參閱[更新輸入表單](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form)區段。
+要在種子地址中查看此資料架構修改 **輸入表單**，您必須更新。 請參閱 [更新輸入表單](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) 區段。
 
 ## 設定個人化 {#configuring-personalization}
 
 1. 開啟傳遞。
 
-   在此範例中，傳送有兩個個人化欄位：收件者的&#x200B;**名字**&#x200B;和收件者的&#x200B;**最喜愛的文學類型**。
+   在此範例中，傳送有兩個個人化欄位：收件者的 **名字** 和收件者的 **最喜愛的文學類型**.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 設定您的傳送清單和種子地址。 請參閱[識別目標母體](steps-defining-the-target-population.md)。
+1. 設定您的傳送清單和種子地址。 請參閱 [識別目標人口](steps-defining-the-target-population.md).
 
-   在此範例中，使用者選取其&#x200B;**最喜愛的文學類型**&#x200B;為Sci-Fi的使用者作為主要目標母體。
+   在此範例中，使用者會選取 **最喜愛的文學類型** 是Sci-Fi作為主要目標群體。
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -75,18 +75,18 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >有關&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;連結的詳細資訊，請參閱[使用案例：依條件](use-case--selecting-seed-addresses-on-criteria.md)選取種子地址。
+   >如需 **[!UICONTROL Edit the dynamic condition...]** 連結，請參閱 [使用案例：選擇條件中的種子地址](use-case--selecting-seed-addresses-on-criteria.md).
 
-1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤，然後選取種子地址以測試個人化。
+1. 按一下 **[!UICONTROL Preview]** 標籤，然後選取種子地址以測試個人化。
 
    ![](assets/dlv_seeds_usecase_28.png)
 
    您可以看到其中一個個人化欄位空白。 由於種子地址沒有此欄位的資料，因此HTML內容預覽無法顯示值。
 
-   在傳送&#x200B;**時執行**&#x200B;欄位的隨機替代。
+   執行欄位的隨機替代 **傳送時**.
 
 1. 按一下 **[!UICONTROL Send]** 按鈕。
-1. 分析您的傳送，然後&#x200B;**確認傳送**。
+1. 然後分析您的傳遞 **確認傳送**.
 
    種子地址會在其收件匣中接收傳遞。
 

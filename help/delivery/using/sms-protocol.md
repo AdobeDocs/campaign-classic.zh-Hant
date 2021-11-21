@@ -195,7 +195,7 @@ Adobe Campaign支援下列選用欄位：
 >
 >許多提供程式以十六進位傳輸MT ID。 請確定您已設定 **MT確認中的ID格式** 正確設定。
 
-有些提供者會傳送 `SUBMIT_SM_RESP` 發送SR後。 若要說明該行為，Adobe Campaign會等待30秒再回覆 **消息ID無效** 到ID未知的SR。
+有些提供者會傳送 `SUBMIT_SM_RESP` 發送SR之後。 若要說明該行為，Adobe Campaign會等待30秒再回覆 **消息ID無效** 到ID未知的SR。
 
 #### DELIVER_SM {#delivery-sm}
 
@@ -306,7 +306,7 @@ id:1234567890 sub:001 dlvrd:001 submit date:1608011415 done date:1608011417 stat
 
 然後， `status extraction` regex與 `error code extraction` regex會套用以擷取這些欄位，並附加至字串。
 
-broadlog訊息是使用此資訊所建構，並附加原始未更改的字串以供參考：
+broadlog訊息是使用此資訊建構，並附加原始未更改字串以供參考：
 
 ```
 SR ExampleProvider DELIVRD 000|MESSAGE=id:1234567890 sub:001 dlvrd:001 submit date:1608011415 done date:1608011417 stat:DELIVRD err:000 Text:Hello Adobe world
@@ -549,7 +549,7 @@ TCP連接嘗試與 `BIND_*_RESP` 回覆。 逾時時，Adobe Campaign連接器�
 
 ### SMSC 細節 {#SMSC-specifics}
 
-這些設定是進階設定，可讓Adobe Campaign連接器符合大部分SMPP實作特性。
+這些設定是進階設定，可讓Adobe Campaign連接器符合大部分SMPP實施特性。
 
 **定義編碼的特定對應**
 
@@ -786,7 +786,7 @@ SMPP協定規範未嚴格強制執行SR格式。 這只是 [附錄B](sms-protoco
 
 傳送傳遞部件時，MTA會產生MTA子項。 MTA子程式的數量是動態的，且取決於serverConf.xml中的設定。 每個MTA子項將連接器實例化 `CSmppConnectorWorker` 連接到SMPP提供程式。 只要MTA子項保持活動（也可在serverConf.xml中設定），連線就會保持活動。
 
-SMS程式只會處理SR，會連線至提供者並保持連線開啟。 程式每10分鐘重新連線一次以重新載入新設定，這是正常操作。
+SMS程式只會處理SR，會連線至提供者並保持連線開啟。 程式每10分鐘重新連接一次以重新載入新設定，這是正常操作。
 
 ### 匹配MT、SR和broadlog條目 {#matching-mt}
 

@@ -17,27 +17,27 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-運算子組通過樹中的&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**&#x200B;節點建立。
+運算子群組是透過 **[!UICONTROL Administration > Access management > Operator groups]** 節點。
 
 ## 建立新運算子組 {#creating-a-new-operator-group}
 
 要建立新的運算子組，請應用以下步驟：
 
-1. 按一下組清單右側的&#x200B;**[!UICONTROL New]**&#x200B;按鈕，或按一下右鍵該清單並選擇&#x200B;**[!UICONTROL New]**。
-1. 在下面的部分窗口的&#x200B;**[!UICONTROL General]**&#x200B;頁簽中，在相應欄位中輸入此組的名稱和說明。
+1. 按一下 **[!UICONTROL New]** 按鈕，或按一下右鍵該清單並選擇 **[!UICONTROL New]**.
+1. 在下部窗口中，從 **[!UICONTROL General]** 頁簽，在相應欄位中輸入此組的名稱和說明。
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. 按一下&#x200B;**[!UICONTROL Content]**&#x200B;頁簽以定義此組的授權。
-1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以選擇指定的右鍵或要與組關聯的運算子。
-1. 按一下下拉清單或&#x200B;**[!UICONTROL Folder]**&#x200B;欄位右側的資料夾，以找到要與此組關聯的指定權限或運算子。
-1. 選擇要添加的權限或運算子，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;進行驗證。
+1. 按一下 **[!UICONTROL Content]** 頁簽，定義此組的授權。
+1. 按一下 **[!UICONTROL Add]** 按鈕，選擇要與組關聯的指定權限或運算子。
+1. 按一下下拉式清單，或位於 **[!UICONTROL Folder]** 欄位，以找到要與此組關聯的指定權限或操作員。
+1. 選取要新增的權限或運算子，然後按一下 **[!UICONTROL OK]** 以驗證。
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
    重複此操作以添加其他權限或運算子。
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕，將群組新增至清單。
+1. 按一下 **[!UICONTROL Save]** 按鈕將組添加到清單中。
 
 ## 預設群組 {#default-groups}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Administrator]**
 
-   此群組中的運算子可完整存取執行個體。 管理員是可存取介面中最技術部分的使用者。 他們負責&#x200B;**[!UICONTROL Administration]**&#x200B;角色，並確定平台皆已設定。
+   此群組中的運算子可完整存取執行個體。 管理員是可存取介面中最技術部分的使用者。 他們拿著 **[!UICONTROL Administration]** 角色，並確定平台皆已設定。
 
    此群組包含下列命名權限：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Campaign managers]**
 
-   此群組中的運算子可以管理行銷活動：它可讓您存取連結至促銷活動（計畫、方案、工作流程、預算等）的物件 在&#x200B;**[!UICONTROL Campaign]**&#x200B;的架構內(選用的Adobe Campaign模組)。
+   此群組中的運算子可以管理行銷活動：它可讓您存取連結至促銷活動（計畫、方案、工作流程、預算等）的物件 在 **[!UICONTROL Campaign]** (選用的Adobe Campaign模組)。
 
    此組包含以下命名權限：
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Content contributors]**
 
-   此群組中的運算子可在&#x200B;**[!UICONTROL Content management]**(選用的Adobe Campaign模組)的架構記憶體取「內容」資料夾。 此組不授予任何附加權利。
+   此群組中的運算子可以在 **[!UICONTROL Content management]** (選用的Adobe Campaign模組)。 此組不授予任何附加權利。
 
 1. **[!UICONTROL Access to reports]**
 
@@ -90,11 +90,11 @@ ht-degree: 0%
 
 1. 本地/中央管理
 
-   這些群組可讓您使用&#x200B;**[!UICONTROL Distributed marketing]**(選用的Adobe Campaign模組)。
+   這些群組可讓您使用 **[!UICONTROL Distributed marketing]** (選用的Adobe Campaign模組)。
 
 1. **[!UICONTROL Offer managers]**
 
-   此群組中的運算子可以建立及維護選件。 有關詳細資訊，請參閱此[page](../../interaction/using/operator-profiles.md)。
+   此群組中的運算子可以建立及維護選件。 有關詳細資訊，請參閱 [頁面](../../interaction/using/operator-profiles.md).
 此組包含以下命名權限：
 
    * **[!UICONTROL INSERT FOLDERS]**:將資料夾插入Adobe Campaign樹的權利（前提是您擁有相關分支的編輯權利）,

@@ -17,17 +17,17 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**傳入電子郵件**&#x200B;活動可讓您從POP3郵件伺服器下載及處理電子郵件。
+此 **傳入電子郵件** 活動可讓您從POP3郵件伺服器下載及處理電子郵件訊息。
 
 ![](assets/email_rec_edit_1.png)
 
-**入站電子郵件**&#x200B;活動的第一個頁簽允許您輸入POP3伺服器的參數，並輸入在收到每條消息時要執行的指令碼。 第二個索引標籤可讓您指派排程給活動，第三個索引標籤則定義活動過期條件。
+的第一個標籤 **傳入電子郵件** 活動可讓您輸入POP3伺服器的參數，並輸入在收到每條消息時要執行的指令碼。 第二個索引標籤可讓您指派排程給活動，第三個索引標籤則定義活動過期條件。
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-      激活此選項時，您可以選擇外部POP3帳戶，而不輸入連接參數。 **[!UICONTROL External account]**&#x200B;欄位指定用於連接到電子郵件服務的外部POP3帳戶。 只有在啟用「使用外部帳戶」選項時，此欄位才會顯示。
+      激活此選項時，您可以選擇外部POP3帳戶，而不輸入連接參數。 此 **[!UICONTROL External account]** 欄位指定要用於連接到電子郵件服務的外部POP3帳戶。 只有在啟用「使用外部帳戶」選項時，此欄位才會顯示。
 
       如果未選取此選項，則必須指定以下參數：
 
@@ -64,18 +64,18 @@ ht-degree: 1%
    * 3 — 從伺服器刪除訊息。
    * 4 — 將訊息留在伺服器上。
 
-   可從全域&#x200B;**[!UICONTROL mailMessage]**&#x200B;變數存取訊息的內容。
+   可從全域存取訊息的內容 **[!UICONTROL mailMessage]** 變數。
 
 1. **[!UICONTROL Schedule]**
 
-   若要定義活動的排程，請按一下&#x200B;**[!UICONTROL Scheduling]**&#x200B;標籤並勾選&#x200B;**[!UICONTROL Plan execution]**。 按一下&#x200B;**[!UICONTROL Change]**&#x200B;按鈕以設定排程。
+   若要定義活動的排程，請按一下 **[!UICONTROL Scheduling]** 標籤和檢查 **[!UICONTROL Plan execution]**. 按一下 **[!UICONTROL Change]** 按鈕來設定排程。
 
-   排程設定與排程活動的相同。 請參閱[排程器](scheduler.md)。
+   排程設定與排程活動的相同。 請參閱 [排程器](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
-   您可以透過&#x200B;**[!UICONTROL Expiration]**&#x200B;標籤定義到期延遲。
+   您可以透過 **[!UICONTROL Expiration]** 標籤。
 
    ![](assets/email_rec_edit_3.png)
 
-   設定與排程活動的設定相同。 請參閱[過期](defining-approvals.md)。
+   設定與排程活動的設定相同。 請參閱 [過期](defining-approvals.md).

@@ -21,7 +21,7 @@ Web追蹤標籤只是使用適當參數建構的URL，會透過HTTP查詢傳送�
 
 ## 要傳送的資料格式 {#format-of-the-data-to-be-sent}
 
-網頁追蹤URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+網頁追蹤URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
@@ -79,8 +79,7 @@ Web追蹤標籤只是使用適當參數建構的URL，會透過HTTP查詢傳送�
                               <p>URL參數</p> 
                            </td>
                            <td>
-                              <p>沒有工作階段Cookie時要使用的傳送識別碼。 此值將是
-                                 以十六進位表示。
+                              <p>沒有工作階段Cookie時要使用的傳送識別碼。 此值將以十六進位表示。
                               </p> 
                            </td> 
                         </tr>
@@ -92,9 +91,7 @@ Web追蹤標籤只是使用適當參數建構的URL，會透過HTTP查詢傳送�
                               <p>URL參數</p> 
                            </td>
                            <td>
-                              <p>用於識別網際網路使用者的參數。 此參數的格式為"name=value",
-                                 其中， name是收件者架構的欄位。 此參數優先順序高於
-                                 工作階段cookie中包含的識別碼。
+                              <p>用於識別網際網路使用者的參數。 此參數的格式為"name=value"，其中name是收件者架構的欄位。 此參數的優先順序高於工作階段Cookie中包含的識別碼。
                               </p> 
                            </td> 
                         </tr> 
@@ -131,5 +128,5 @@ Web追蹤標籤只是使用適當參數建構的URL，會透過HTTP查詢傳送�
 
 可採用下列方法：
 
-* 在您要追蹤的網頁中納入之HTML **`<img>`**&#x200B;標籤的&#x200B;**&quot;src&quot;**&#x200B;屬性中插入URL。
+* 在 **&quot;src&quot;** 屬性的HTML **`<img>`** 標籤併入您要追蹤的網頁中。
 * 在您要追蹤的網頁產生時，直接呼叫重新導向伺服器。

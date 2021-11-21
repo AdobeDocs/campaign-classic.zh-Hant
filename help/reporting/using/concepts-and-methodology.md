@@ -23,9 +23,9 @@ ht-degree: 1%
 
 總的來說，有三種類型的捆綁：
 
-1. 使用手動定義的值範圍。 例如年齡、平均購物車、已開啟的傳送數量等)。 有關詳細資訊，請參閱[定義每個bin](#defining-each-bin)。
-1. 動態，視列舉的值而定：只顯示枚舉中包含的值，所有其他值將分組到「其他」中。 有關詳細資訊，請參閱[動態管理Bin](#dynamically-managing-bins)。
-1. 使用值範圍，將所有其他項目分組在一起。 例如，18到25歲，26到59歲，以及其他。 有關詳細資訊，請參閱[建立值範圍](#creating-value-ranges)。
+1. 使用手動定義的值範圍。 例如年齡、平均購物車、已開啟的傳送數量等)。 有關詳細資訊，請參閱 [定義每個儲存箱](#defining-each-bin).
+1. 動態，視列舉的值而定：只顯示枚舉中包含的值，所有其他值將分組到「其他」中。 有關詳細資訊，請參閱 [動態管理Bin](#dynamically-managing-bins).
+1. 使用值範圍，將所有其他項目分組在一起。 例如，18到25歲，26到59歲，以及其他。 有關詳細資訊，請參閱 [建立值範圍](#creating-value-ranges).
 
 要啟用綁定，請在建立維時選中相應的框。
 
@@ -33,15 +33,15 @@ ht-degree: 1%
 
 您可以手動建立Bin，或將其連結至現有的分項清單。
 
-Adobe Campaign也提供自動二進位助理：值可以劃分為N個組，或根據資料庫中最頻繁的值分組。
+Adobe Campaign也提供自動二進位助理：值可以劃分為N個群組，或根據資料庫中最頻繁的值分組。
 
 ### 定義每個儲存箱 {#defining-each-bin}
 
-要單獨建立每個包，請選擇&#x200B;**[!UICONTROL Define each bin]**&#x200B;選項，然後使用表來建立各種包。
+若要個別建立每個儲存箱，請選取 **[!UICONTROL Define each bin]** 選項，然後使用表格建立各種框。
 
 ![](assets/s_advuser_cube_class_01.png)
 
-按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以建立新的bin，並列出將分組到bin中的值。
+按一下 **[!UICONTROL Add]** 按鈕建立新的框，並列出將分組到框中的值。
 
 ![](assets/s_advuser_cube_class_02.png)
 
@@ -49,9 +49,9 @@ Adobe Campaign也提供自動二進位助理：值可以劃分為N個組，或�
 
 ![](assets/s_advuser_cube_class_03.png)
 
-您可以使用SQL掩碼將多個值合併到篩選器中。 要執行此操作，請檢查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]** ，並輸入要在&#x200B;**[!UICONTROL Value or expression]**&#x200B;列中應用的SQL篩選器。
+您可以使用SQL掩碼將多個值合併到篩選器中。 要執行此操作，請檢查 **[!UICONTROL Yes]** 在 **[!UICONTROL Use an SQL mask]** 欄，並輸入要在 **[!UICONTROL Value or expression]** 欄。
 
-在以下範例中，所有以&#x200B;**yahoo**（yahoo.fr、yahoo.com、yahoo.be等）開頭，或以&#x200B;**ymail**（ymail.com、ymail.eu等）開頭的電子郵件網域 將分組在標籤&#x200B;**YAHOO！下**，以及含有rocketmail.comdomain **的地** 址。
+在以下範例中，所有以 **yahoo** （yahoo.fr、yahoo.com、yahoo.be等），或 **郵件** （ymail.com、ymail.eu等） 將在標籤下分組 **YAHOO!**，以及地址 **rocketmail.com** 網域。
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -62,7 +62,7 @@ Adobe Campaign也提供自動二進位助理：值可以劃分為N個組，或�
 要建立此類型的值綁定，請應用以下步驟：
 
 1. 建立新維並啟用綁定。
-1. 選擇&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**&#x200B;選項，然後選擇匹配的枚舉。
+1. 選取 **[!UICONTROL Dynamically link the values to an enumeration]** 選項，然後選取相符的分項清單。
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -72,15 +72,15 @@ Adobe Campaign也提供自動二進位助理：值可以劃分為N個組，或�
 
 您可以根據所需的間隔將值分組為範圍。
 
-若要手動定義範圍，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並選取&#x200B;**[!UICONTROL Define a range]** :
+若要手動定義範圍，請按一下 **[!UICONTROL Add]** 按鈕並選取 **[!UICONTROL Define a range]** :
 
 ![](assets/s_advuser_cube_class_05.png)
 
-然後指定上下限，然後按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認。
+然後指定上下限，然後按一下 **[!UICONTROL Ok]** 確認。
 
 ### 自動生成倉 {#generating-bins-automatically}
 
-還可以自動生成垃圾箱。 要執行此操作，請按一下&#x200B;**[!UICONTROL Generate bins...]**&#x200B;連結。
+還可以自動生成垃圾箱。 若要這麼做，請按一下 **[!UICONTROL Generate bins...]** 連結。
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -94,7 +94,7 @@ Adobe Campaign也提供自動二進位助理：值可以劃分為N個組，或�
 
    在下列範例中，Adobe Campaign會自動建立4個相同大小的值槽，以顯示資料庫中的值。
 
-在這種情況下，會忽略在事實架構中選取的篩選器。
+在這種情況下，會忽略事實架構中選取的篩選器。
 
 ### 分項清單 {#enumerations}
 
@@ -108,17 +108,17 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
 
 ![](assets/nmx_enum_domain.png)
 
-要使用此枚舉建立報告，請使用&#x200B;**[!UICONTROL Email domain]**&#x200B;維建立多維資料集。 依次選擇&#x200B;**[!UICONTROL Enable binning]**&#x200B;選項和&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**。 接著，選取&#x200B;**Domains**&#x200B;列舉，如上所示。 所有沒有指定別名的值將在&#x200B;**Others**&#x200B;標籤下重新分組。
+若要使用此列舉建立報表，請使用 **[!UICONTROL Email domain]** 維度。 選擇 **[!UICONTROL Enable binning]** 選項，然後 **[!UICONTROL Dynamically link the values to an enumeration]**. 然後選取 **網域** 列舉，如上所示。 所有沒有指定別名的值將在 **其他** 標籤。
 
 ![](assets/nmx_add_dimension.png)
 
 接下來，根據此多維資料集建立報告以顯示值。
 
-您只需要修改列舉即可更新相關報表。 例如，建立&#x200B;**Adobe**&#x200B;值並新增&#x200B;**adobe.com**&#x200B;別名，報表就會以列舉層級的Adobe值自動更新。
+您只需要修改列舉即可更新相關報表。 例如，建立 **Adobe** 值並新增 **adobe.com** 別名，則報表會以分項清單層級的Adobe值自動更新。
 
 ![](assets/nmx_add_alias.png)
 
-**[!UICONTROL Domains]**&#x200B;枚舉用於生成顯示域清單的內置報告。 若要調整這些報表的內容，您可以編輯此清單。
+此 **[!UICONTROL Domains]** 分項清單可用來產生內建報表，以顯示網域清單。 若要調整這些報表的內容，您可以編輯此清單。
 
 您可以建立保留用於綁定的其他枚舉，並在其他多維資料集中使用這些枚舉：所有別名值將在第一個枚舉標籤中指定的bin中重新分組。
 
@@ -138,7 +138,7 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
 
 要建立新聚合，請應用以下步驟：
 
-1. 按一下多維資料集的&#x200B;**[!UICONTROL Aggregates]**&#x200B;頁簽，然後按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
+1. 按一下 **[!UICONTROL Aggregates]** 索引標籤，然後按一下 **[!UICONTROL Add]** 按鈕。
 
    ![](assets/s_advuser_cube_agregate_02.png)
 
@@ -147,12 +147,12 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
    ![](assets/s_advuser_cube_agregate_03.png)
 
 1. 選取維度和層級。 對每個維度和每個層級重複執行此程式。
-1. 按一下&#x200B;**[!UICONTROL Workflow]**&#x200B;標籤以建立匯總工作流程。
+1. 按一下 **[!UICONTROL Workflow]** 頁簽，以建立匯總工作流。
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * **[!UICONTROL Scheduler]**&#x200B;活動可讓您定義計算更新的頻率。 在[此部分](../../workflow/using/scheduler.md)中詳細介紹了調度程式。
-   * **[!UICONTROL Aggregate update]**&#x200B;活動可讓您選取要套用的更新模式：完整或部分。
+   * 此 **[!UICONTROL Scheduler]** 活動可讓您定義計算更新的頻率。 排程器在 [本節](../../workflow/using/scheduler.md).
+   * 此 **[!UICONTROL Aggregate update]** 活動可讓您選取要套用的更新模式：完整或部分。
 
       依預設，會在每次計算期間執行完整更新。 要啟用部分更新，請選擇相關選項並定義更新條件。
 
@@ -160,39 +160,39 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
 
 ## 定義度量 {#defining-measures}
 
-度量類型在多維資料集的&#x200B;**[!UICONTROL Measures]**&#x200B;頁簽中定義。 您可以計算和、平均值、偏差等。
+測量類型定義於 **[!UICONTROL Measures]** 多維資料集的頁簽。 您可以計算和、平均值、偏差等。
 
-您可以視需要建立任意數量的測量：然後，選擇要在表中顯示或隱藏的度量。 有關詳細資訊，請參閱[顯示測量](#displaying-measures)。
+您可以視需要建立任意數量的測量：然後，選擇要在表中顯示或隱藏的度量。 有關詳細資訊，請參閱 [顯示度量](#displaying-measures).
 
 要定義新測量，請應用以下步驟：
 
-1. 按一下度量清單上方的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，並選擇要計算的度量類型和公式。
+1. 按一下 **[!UICONTROL Add]** 按鈕（位於度量清單上），並選擇要計算的度量類型和公式。
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
 1. 如有必要，並根據運算子，選擇操作所關注的運算式。
 
-   **[!UICONTROL Advanced selection]**&#x200B;按鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本章節](../../platform/using/about-queries-in-campaign.md)。
+   此 **[!UICONTROL Advanced selection]** 按鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本章節](../../platform/using/about-queries-in-campaign.md)。
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
-1. **[!UICONTROL Filter the measure data...]**&#x200B;連結可讓您限制計算欄位，並僅將其套用至資料庫中的特定資料。
+1. 此 **[!UICONTROL Filter the measure data...]** 連結可讓您限制計算欄位，並僅將其套用至資料庫中的特定資料。
 
    ![](assets/s_advuser_cube_create_a_measure_02.png)
 
-1. 輸入度量的標籤並添加說明，然後按一下&#x200B;**[!UICONTROL Finish]**&#x200B;建立它。
+1. 輸入度量的標籤並添加說明，然後按一下 **[!UICONTROL Finish]** 來建立。
 
 ## 顯示度量 {#displaying-measures}
 
 您可以視需要設定表格中測量的顯示：
 
-* 度量的顯示順序（請參閱[顯示順序](#display-sequence)）,
-* 要在報表中顯示/隱藏的資訊（請參閱[設定顯示](#configuring-the-display)）
-* 顯示哪些度量：百分比、總計、小數位數等。 （請參閱[變更顯示的測量類型](#changing-the-type-of-measure-displayed)）。
+* 度量的顯示順序(請參閱 [顯示順序](#display-sequence)),
+* 要在報表中顯示/隱藏的資訊(請參閱 [配置顯示](#configuring-the-display))
+* 顯示哪些度量：百分比、總計、小數位數等。 (請參閱 [更改顯示的測量類型](#changing-the-type-of-measure-displayed))。
 
 ### 顯示順序 {#display-sequence}
 
-多維資料集中計算的度量是通過&#x200B;**[!UICONTROL Measures]**&#x200B;按鈕配置的。
+多維資料集中計算的度量會透過 **[!UICONTROL Measures]** 按鈕。
 
 移動行以更改顯示順序。 在下列範例中，法文資料會移至清單底部：這表示它會顯示在最後一欄中。
 
@@ -202,7 +202,7 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
 
 可針對每個測量或整體分別執行測量、行和列的配置。 特定圖示可讓您存取顯示模式選取視窗。
 
-* 按一下&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;圖示以存取設定視窗。
+* 按一下 **[!UICONTROL Edit the configuration of the pivot table]** 圖示來存取設定視窗。
 
    您可以選擇是否顯示度量的標籤並配置其佈局（行或列）。
 
@@ -222,11 +222,11 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
 
 設定報表後，您就可以儲存報表，並與其他運算子共用。
 
-要執行此操作，請按一下&#x200B;**[!UICONTROL Show the report properties]**&#x200B;圖示並啟用&#x200B;**[!UICONTROL Share this report]**&#x200B;選項。
+若要這麼做，請按一下 **[!UICONTROL Show the report properties]** 圖示並啟用 **[!UICONTROL Share this report]** 選項。
 
 ![](assets/cube_share_option.png)
 
-指定報表所屬的類別及其相關性。 有關詳細資訊，請參閱[此頁](../../reporting/using/configuring-access-to-the-report.md#report-display-context)中的&#x200B;**顯示序列**&#x200B;和&#x200B;**定義篩選選項**&#x200B;部分。
+指定報表所屬的類別及其相關性。 有關詳細資訊，請參閱 [本頁](../../reporting/using/configuring-access-to-the-report.md#report-display-context) 到 **顯示順序**&#x200B;和 **定義篩選選項** 區段。
 
 若要確認這些變更，您需要儲存報表。
 
@@ -238,7 +238,7 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
 
 操作步驟：
 
-1. 按一下&#x200B;**[!UICONTROL Add a filter]**&#x200B;圖示。
+1. 按一下 **[!UICONTROL Add a filter]** 表徵圖。
 
    ![](assets/neolap_add_filter.png)
 
@@ -264,7 +264,7 @@ Adobe Campaign也提供網域分項清單，讓您顯示資料庫中所有連絡
 
 每次修改篩選器（新增、移除、變更）時，都必須重新計算報表。
 
-您也可以根據選取項目來建立篩選。 要執行此操作，請選擇源單元格、行和列，然後按一下&#x200B;**[!UICONTROL Add a filter]**&#x200B;表徵圖。
+您也可以根據選取項目來建立篩選。 若要這麼做，請選取來源儲存格、行和欄，然後按一下 **[!UICONTROL Add a filter]** 表徵圖。
 
 要選擇行、列或單元格，請按一下左鍵。 若要取消選取，請再按一下。
 

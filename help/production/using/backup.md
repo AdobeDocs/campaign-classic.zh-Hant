@@ -30,7 +30,7 @@ ht-degree: 2%
 
 檔案分為幾類：
 
-* 配置檔案，位於&#x200B;**nl6/conf**
+* 組態檔，位於 **nl6/conf**
 
    這可讓您快速重新設定Adobe Campaign。
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
    這些位於追蹤（通常稱為「正面」）伺服器，且包含先前所有的促銷活動重新導向。 它們仍用於先前的促銷活動。
 
-* 日誌檔案：**nl6/var/`<instancename>`/log**
+* 日誌檔案： **nl6/var/`<instancename>`/log**
 
    這些可用於追蹤問題。
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 * nl6/conf
 
-* nl6/var/`<instanceName>`/redir（適用於每個例項）
+* nl6/var/`<instanceName>`/redir（針對每個實例）
 
 * nl6/var/`<instanceName>`/log（可選）
 

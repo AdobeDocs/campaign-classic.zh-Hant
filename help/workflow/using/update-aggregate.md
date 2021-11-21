@@ -17,16 +17,16 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-匯總是在多維資料集層級定義，以用於報告用途。 設定匯總時，**[!UICONTROL Workflow]**&#x200B;索引標籤可供使用。
+匯總是在多維資料集層級定義，以用於報告用途。 A **[!UICONTROL Workflow]** 標籤。
 
-如需Adobe Campaign中多維資料集和使用匯總的詳細資訊，請參閱專用的[section](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)。
+如需Adobe Campaign中多維度資料集和使用匯總的詳細資訊，請參閱專用 [節](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
-**[!UICONTROL Update aggregate]**&#x200B;活動可讓您選取要套用的更新模式：完整或部分。
+此 **[!UICONTROL Update aggregate]** 活動可讓您選取要套用的更新模式：完整或部分。
 
 依預設，會在每次計算期間執行完整更新。 要啟用部分更新，請選擇相關選項並定義更新條件。
 
 ![](assets/s_advuser_cube_agregate_05.png)
 
-**良好做法**:活 **[!UICONTROL Scheduler]** 動可用來指定計算更新的頻率。
+**良好做法**:a **[!UICONTROL Scheduler]** 活動可用來指定計算更新的頻率。
 
 ![](assets/s_advuser_cube_agregate_04.png)

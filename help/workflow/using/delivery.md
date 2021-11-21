@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**傳送**-type活動可讓您建立傳送動作。 可使用輸入元素來建構。
+A **傳送**-type活動可讓您建立傳送動作。 可使用輸入元素來建構。
 
 若要設定，請編輯活動並輸入傳送選項。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
    您可以：
 
-   * 對入站轉變中指定的傳送採取行動。 要執行此操作，請選取視窗&#x200B;**[!UICONTROL Delivery]**&#x200B;區段的第一個選項。
+   * 對入站轉變中指定的傳送採取行動。 若要這麼做，請選取 **[!UICONTROL Delivery]** 的下限。
 
       當先前的工作流程活動已建立或指定傳送時，可使用此選項。 如下列範例所示，同一類型的活動可能已產生出站轉變，因此可以執行此操作。
 
@@ -35,27 +35,27 @@ ht-degree: 1%
 
       ![](assets/specified_transition_option_exemple.png)
 
-   * 直接選取相關的傳送。 要執行此操作，請選取&#x200B;**[!UICONTROL Explicit]**&#x200B;選項，然後從&#x200B;**[!UICONTROL Delivery]**&#x200B;欄位的下拉式清單中選取傳送。
+   * 直接選取相關的傳送。 若要這麼做，請選取 **[!UICONTROL Explicit]** 選項，然後從 **[!UICONTROL Delivery]** 欄位。
 
-      清單預設會顯示&#x200B;**Deliveries**&#x200B;資料夾中包含的未完成傳送。 若要存取其他促銷活動，請按一下&#x200B;**[!UICONTROL Select link]**&#x200B;圖示。
+      清單會顯示 **傳遞** 檔案夾。 若要存取其他促銷活動，請按一下 **[!UICONTROL Select link]** 表徵圖。
 
       ![](assets/diffusion_edit_1.png)
 
-      從&#x200B;**[!UICONTROL Folder]**&#x200B;欄位的下拉式清單中選取促銷活動，或按一下&#x200B;**[!UICONTROL Display sub-levels]**&#x200B;以顯示子資料夾中包含的所有傳送：
+      從 **[!UICONTROL Folder]** 欄位，或按一下 **[!UICONTROL Display sub-levels]** 若要顯示子資料夾中包含的所有傳送：
 
       ![](assets/diffusion_edit_2.png)
 
-      選取傳送動作後，按一下&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示即可顯示內容。
+      選取傳送動作後，您可以按一下 **[!UICONTROL Edit link]** 表徵圖。
 
-   * 建立指令碼以計算傳送。 要執行此操作，請選取&#x200B;**[!UICONTROL Computed by a script]**&#x200B;選項並輸入指令碼。 您可以按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;選項以開啟輸入視窗。 下列範例會復原傳送的識別碼：
+   * 建立指令碼以計算傳送。 若要這麼做，請選取 **[!UICONTROL Computed by a script]** 選項並輸入指令碼。 您可以按一下 **[!UICONTROL Edit...]** 選項。 下列範例會復原傳送的識別碼：
 
       ![](assets/diffusion_edit_3.png)
 
-   * 建立新傳送。 若要這麼做，請選取&#x200B;**[!UICONTROL New, created from a template]**&#x200B;選項，並選取傳送將依據的傳送範本。
+   * 建立新傳送。 若要這麼做，請選取 **[!UICONTROL New, created from a template]** 選項，並選取傳送將依據的傳送範本。
 
       ![](assets/diffusion_edit_4.png)
 
-      按一下&#x200B;**[!UICONTROL Select link]**&#x200B;圖示以瀏覽資料夾，如果要檢視所選範本的內容，請按一下&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示。
+      按一下 **[!UICONTROL Select link]** 圖示來瀏覽資料夾，然後按一下 **[!UICONTROL Edit link]** 表徵圖。
 
 1. **收件者**
 
@@ -77,13 +77,13 @@ ht-degree: 1%
 
    選取要執行的動作類型：
 
-   * **[!UICONTROL Save]**:此選項可讓您建立傳送並儲存。它不會分析或傳送。
-   * **[!UICONTROL Estimate the target]**:此選項可讓您計算傳送目標以評估其潛在（第一個分析階段）。此動作等同於透過&#x200B;**傳送**&#x200B;傳送至主要目標時，選取&#x200B;**[!UICONTROL Estimate the population to be targeted]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Analyze]**。
-   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。未傳送傳遞。 此動作等同於使用&#x200B;**傳送**&#x200B;傳送至主要目標時，選取&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Analyze]**。
-   * **[!UICONTROL Send a proof]**:此選項可讓您傳送傳遞的校樣。此動作等同於使用&#x200B;**Delivery**&#x200B;按一下傳送工具列中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按鈕
-   * **[!UICONTROL Prepare and start]**:此選項會啟動完整分析程式（目標計算和內容準備）並傳送傳遞。此動作等同於使用&#x200B;**傳送**&#x200B;傳送傳送至主要目標時，按一下&#x200B;**[!UICONTROL Deliver as soon as possible]**、**[!UICONTROL Analyze]**&#x200B;和&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;選項。
+   * **[!UICONTROL Save]**:此選項可讓您建立傳送並儲存。 它不會分析或傳送。
+   * **[!UICONTROL Estimate the target]**:此選項可讓您計算傳送目標以評估其潛在（第一個分析階段）。 此動作等同於選取 **[!UICONTROL Estimate the population to be targeted]** 選項，按一下 **[!UICONTROL Analyze]** 透過將傳遞傳送至主要目標時 **傳送**.
+   * **[!UICONTROL Prepare]**:此選項可讓您執行完整的分析程式（目標計算和內容準備）。 未傳送傳遞。 此動作等同於選取 **[!UICONTROL Deliver as soon as possible]** 選項，按一下 **[!UICONTROL Analyze]** 傳送傳遞至主要目標時， **傳送**.
+   * **[!UICONTROL Send a proof]**:此選項可讓您傳送傳遞的校樣。 此動作等同於按一下 **[!UICONTROL Send a proof]** 按鈕(位於傳遞工具列的 **傳送**
+   * **[!UICONTROL Prepare and start]**:此選項會啟動完整分析程式（目標計算和內容準備）並傳送傳遞。 此動作等同於按一下 **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]**，和 **[!UICONTROL Confirm delivery]** 選項 **傳送**.
 
-   工作流程中進一步使用的&#x200B;**[!UICONTROL Act on a delivery]**&#x200B;活動可讓您啟動開始傳送所需的所有剩餘步驟（目標計算、內容準備、傳送）。 有關詳細資訊，請參閱[傳送控制項](delivery-control.md)。
+   此 **[!UICONTROL Act on a delivery]** 工作流程中進一步使用的活動可讓您啟動傳送（target計算、內容準備、傳送）所需的所有其餘步驟。 有關詳細資訊，請參閱 [傳遞控制](delivery-control.md).
 
    也提供下列選項：
 
@@ -97,8 +97,8 @@ ht-degree: 1%
 
    * **[!UICONTROL Processing errors]**
 
-      請參閱[傳送控制項](delivery-control.md)。
-   **Script**&#x200B;標籤可讓您修改傳送參數。
+      請參閱 [傳遞控制](delivery-control.md).
+   此 **指令碼** 索引標籤可讓您修改傳送參數。
 
    ![](assets/edit_diffusion_fil_script.png)
 
@@ -108,34 +108,34 @@ ht-degree: 1%
 
 ![](assets/new-workflow-5.png)
 
-開啟&#x200B;**Delivery**&#x200B;活動，並定義如下屬性：
+開啟 **傳送** 活動並定義屬性，如下所示：
 
-* 在&#x200B;**[!UICONTROL Delivery]**&#x200B;區段中，選取&#x200B;**[!UICONTROL New, created from a template]**&#x200B;並選取傳送範本。
-* 在&#x200B;**[!UICONTROL Recipients]**&#x200B;部分，選擇&#x200B;**[!UICONTROL Specified in the delivery]**。
-* 在&#x200B;**[!UICONTROL Action to execute]**&#x200B;區段中，保留&#x200B;**[!UICONTROL Prepare]**&#x200B;選項。
+* 在 **[!UICONTROL Delivery]** 部分，選擇 **[!UICONTROL New, created from a template]** 和選取傳遞範本。
+* 在 **[!UICONTROL Recipients]** 部分，選擇 **[!UICONTROL Specified in the delivery]**.
+* 在 **[!UICONTROL Action to execute]** 區段，保留 **[!UICONTROL Prepare]** 選項。
 
 ![](assets/new-workflow-param-delivery.png)
 
-按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉屬性窗口。 您剛剛設定了活動，包括根據要在其中指定目標的傳送範本建立和準備新傳送。
+按一下 **[!UICONTROL OK]** 以關閉屬性窗口。 您剛剛設定了活動，包括根據要在其中指定目標的傳送範本建立和準備新傳送。
 
-開啟&#x200B;**Approval**&#x200B;活動，並定義如下屬性：
+開啟 **核准** 活動並定義屬性，如下所示：
 
-1. 在&#x200B;**[!UICONTROL Assignment type]**&#x200B;欄位中，選擇要註冊的組。 如果您是使用「管理員」帳戶連線，請選取「管理」群組。
+1. 在 **[!UICONTROL Assignment type]** 欄位中，選擇要註冊的組。 如果您是使用「管理員」帳戶連線，請選取「管理」群組。
 1. 接下來，輸入標題，並在訊息內文中插入下列文字：
 
    ```
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   此訊息包含以JavaScript撰寫的運算式：**[!UICONTROL vars.recCount]**&#x200B;表示上一任務的傳送所定位的收件者人數。 有關JavaScript運算式的詳細資訊，請參閱[JavaScript指令碼和範本](javascript-scripts-and-templates.md)。
+   此訊息包含以JavaScript撰寫的運算式： **[!UICONTROL vars.recCount]** 代表上一任務傳送所定位的收件者人數。 如需JavaScript運算式的詳細資訊，請參閱 [JavaScript指令碼和範本](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   在[Approval](approval.md)中詳細說明了「批准」任務。
+   「核准」任務在 [核准](approval.md).
 
 ## 輸入參數 {#input-parameters}
 
-傳送識別碼，如果在&#x200B;**[!UICONTROL Delivery]**&#x200B;區段中選取了&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;選項。
+傳送識別碼(若 **[!UICONTROL Specified in the transition]** 選項 **[!UICONTROL Delivery]** 區段。
 
 * deliveryId
 * tableName
@@ -145,15 +145,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->只有在&#x200B;**[!UICONTROL Recipients]**&#x200B;區段中選取了&#x200B;**[!UICONTROL Specified by inbound event(s)]**&#x200B;選項時，才會顯示此參數。
+>只有在 **[!UICONTROL Specified by inbound event(s)]** 選項 **[!UICONTROL Recipients]** 區段。
 
 * 檔案名
 
-   在&#x200B;**[!UICONTROL Recipients]**&#x200B;區段中選取&#x200B;**[!UICONTROL File(s) specified by inbound event(s)]**&#x200B;選項時，產生的檔案完整名稱。
+   若 **[!UICONTROL File(s) specified by inbound event(s)]** 選項 **[!UICONTROL Recipients]** 區段。
 
 * contentId
 
-   如果在&#x200B;**[!UICONTROL Content]**&#x200B;區段中選取了&#x200B;**[!UICONTROL Specified by inbound events]**&#x200B;選項，則內容識別碼。
+   內容識別碼(若 **[!UICONTROL Specified by inbound events]** 選項 **[!UICONTROL Content]** 區段。
 
 ## 輸出參數 {#output-parameters}
 
@@ -161,10 +161,10 @@ ht-degree: 1%
 * 綱要
 * recCount
 
-這組三個值可識別傳送產生的目標。 **[!UICONTROL tableName]** 是儲存目標標識符的表的名稱，是 **[!UICONTROL schema]** 母體的模式（通常是nms:recipient）, **[!UICONTROL recCount]** 是表中的元素數。
+這組三個值可識別傳送產生的目標。 **[!UICONTROL tableName]** 是儲存目標標識符的表的名稱， **[!UICONTROL schema]** 是母體的綱要（通常為nms:recipient）和 **[!UICONTROL recCount]** 是表格中的元素數。
 
 與補體相關聯的轉變具有相同的參數。
 
 >[!NOTE]
 >
->選擇&#x200B;**[!UICONTROL Do not recover target]**&#x200B;選項時沒有輸出參數。
+>若 **[!UICONTROL Do not recover target]** 選項。

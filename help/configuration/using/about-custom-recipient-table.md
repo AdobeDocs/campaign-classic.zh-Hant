@@ -47,33 +47,33 @@ ht-degree: 2%
 
    我們建議：
 
-   * 將&#x200B;**[!UICONTROL nms:BroadLogRcp]**&#x200B;和&#x200B;**[!UICONTROL nms:TrackingLogRcp]**&#x200B;結構指定至現成可用的&#x200B;**[!UICONTROL nms:Recipientschema]**。 這兩個記錄表不應連結至任何其他自訂收件者表格。
-   * 為每個新的自訂收件者結構定義專用的自訂broadlog和追蹤記錄結構。 設定目標對應時，可以自動完成此操作，請參閱[目標對應](../../configuration/using/target-mapping.md)。
+   * 將 **[!UICONTROL nms:BroadLogRcp]** 和 **[!UICONTROL nms:TrackingLogRcp]** 結構至現成可用的結構 **[!UICONTROL nms:Recipientschema]**. 這兩個記錄表不應連結至任何其他自訂收件者表格。
+   * 為每個新的自訂收件者結構定義專用的自訂broadlog和追蹤記錄結構。 設定目標對應時，可自動完成此操作，請參閱 [目標對應](../../configuration/using/target-mapping.md).
 
-* 您無法使用產品中提供的標準&#x200B;**[!UICONTROL Services and Subscriptions]**。
+* 您無法使用標準 **[!UICONTROL Services and Subscriptions]** 在產品中提供。
 
-   這表示[此部分](../../delivery/using/managing-subscriptions.md)中詳述的整體操作不適用。
+   這表示中詳述的整體操作 [本節](../../delivery/using/managing-subscriptions.md) 不適用。
 
-* 與&#x200B;**[!UICONTROL visitor]**&#x200B;表格的連結無法運作。
+* 與 **[!UICONTROL visitor]** 表格無法運作。
 
-   因此，要使用&#x200B;**[!UICONTROL Social Marketing]**&#x200B;模組，必須配置儲存步驟以參考正確的表。
+   因此，若要使用 **[!UICONTROL Social Marketing]** 模組必須配置儲存步驟以參考正確的表。
 
    同樣，在使用轉介函式時，必須調整標準初始報文傳輸模板。
 
 * 您無法手動在清單中新增設定檔。
 
-   因此，如果沒有其他配置，[本節](../../platform/using/creating-and-managing-lists.md)中詳述的過程將不適用。
+   因此， [本節](../../platform/using/creating-and-managing-lists.md) 若沒有其他設定則不適用。
 
    >[!NOTE]
    >
-   >您仍可以使用工作流程建立收件者清單。 有關詳細資訊，請參閱[使用工作流建立配置檔案清單](../../configuration/using/creating-a-profile-list-with-a-workflow.md)。
+   >您仍可以使用工作流程建立收件者清單。 有關詳細資訊，請參閱 [使用工作流程建立設定檔清單](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 我們也建議核取不同現成可用設定中使用的預設值：必鬚根據所使用的功能進行若干適應。
 
 例如：
 
-* 某些標準報表，尤其是&#x200B;**Interaction**&#x200B;和&#x200B;**行動應用程式**&#x200B;所提供的報表，必須重新開發。 請參閱[管理報表](../../configuration/using/managing-reports.md)區段。
-* 某些工作流程活動的預設設定會參考標準收件者表格(**[!UICONTROL nms:recipient]**):當用於外部收件者表格時，必須變更這些設定。 請參閱[管理工作流程](../../configuration/using/managing-workflows.md)區段。
-* 必須調整標準&#x200B;**[!UICONTROL Unsubscription link]**&#x200B;個人化區塊。
+* 某些標準報告，特別是 **互動** 和 **行動應用程式** 必須重新開發。 請參閱 [管理報表](../../configuration/using/managing-reports.md) 區段。
+* 某些工作流程活動的預設設定會參考標準收件者表格(**[!UICONTROL nms:recipient]**):當用於外部收件者表格時，必須變更這些設定。 請參閱 [管理工作流程](../../configuration/using/managing-workflows.md) 區段。
+* 標準 **[!UICONTROL Unsubscription link]** 必須調整個人化區塊。
 * 必須修改標準傳遞範本的目標對應。
 * V4表單與外部收件者表格不相容：您必須使用Web應用程式。

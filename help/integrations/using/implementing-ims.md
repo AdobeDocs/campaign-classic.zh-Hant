@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 啟用IMS連線 {#enabling-the-ims-connection}
 
-1. 若要啟用透過IMS連線，請在主控台的連線視窗中檢查&#x200B;**[!UICONTROL Connect with an Adobe ID]**。
+1. 若要啟用透過IMS的連線，請核取 **[!UICONTROL Connect with an Adobe ID]** 在控制台的「連接」窗口中。
 
    ![](assets/ims_1.png)
 
@@ -29,6 +29,6 @@ ht-degree: 0%
 
 ## 停用IMS連線 {#disabling-the-ims-connection}
 
-要禁用通過Adobe ID的連接，請斷開連接，按一下&#x200B;**[!UICONTROL File > Connections]**&#x200B;並取消選中&#x200B;**[!UICONTROL Connect with an Adobe ID]**。
+若要停用透過Adobe ID的連線，請中斷連線，按一下 **[!UICONTROL File > Connections]** 取消勾選 **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)

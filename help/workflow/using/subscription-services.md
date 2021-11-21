@@ -17,19 +17,19 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-**訂閱服務**&#x200B;類型活動可讓您為轉變中指定的母體建立或刪除資訊服務訂閱。
+A **訂閱服務**-type活動可讓您為轉變中指定的母體建立或刪除資訊服務的訂閱。
 
 若要設定，請編輯活動並輸入其標籤，然後選取要執行的動作（訂閱或取消訂閱）和相關服務，如下列範例所示：
 
 ![](assets/edit_service_inscription.png)
 
 1. 輸入活動的標籤。
-1. 如果要在執行結束時建立轉變，請選擇&#x200B;**[!UICONTROL Generate an outbound transition]**。
+1. 選擇 **[!UICONTROL Generate an outbound transition]** 如果要在執行結束時建立轉變。
 
    一般而言，目標對資訊服務的訂閱會標籤目標工作流程的結尾，因此預設不會啟用選項。
 
-1. 如果要訂閱或取消訂閱選定資訊服務的指定母體，請按一下&#x200B;**[!UICONTROL Subscription]**&#x200B;或&#x200B;**[!UICONTROL Unsubscription]**。
-1. 選擇&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;以通知收件者他們已訂閱或取消訂閱服務。
+1. 按一下 **[!UICONTROL Subscription]** 或 **[!UICONTROL Unsubscription]** 如果您希望向所選資訊服務訂閱或取消訂閱指定的母體。
+1. 選擇 **[!UICONTROL Send a confirmation message]** 通知收件者已訂閱或取消訂閱服務。
 
    此訊息的內容在與資訊服務相關的傳遞範本中指定。 如需詳細資訊，請參閱本[區段](../../delivery/using/managing-subscriptions.md)。
 
@@ -54,16 +54,16 @@ ht-degree: 2%
 1. 新增交叉點活動以交叉參考不同的結果。
 1. 您也可以插入清單更新，讓最新訂閱者的清單保持最新。
 1. 插入訂閱服務活動，然後按兩下此活動進行配置。
-1. 輸入活動標籤，然後選擇&#x200B;**[!UICONTROL Subscription]**。
+1. 輸入活動標籤並選取 **[!UICONTROL Subscription]**.
 
-   您也可以勾選&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;方塊，通知收件者電子報訂閱。
+   您也可以檢查 **[!UICONTROL Send a confirmation message]** 框。
 
-1. 選取新聞稿所在的資料夾，然後從顯示的清單中選取新聞稿。
-1. 保留&#x200B;**[!UICONTROL Generate outbound transition]**&#x200B;未勾選，讓此活動會標籤工作流程的結尾，然後按一下&#x200B;**[!UICONTROL Ok]**。
+1. 選擇新聞稿所在的資料夾，然後從顯示的清單中選擇新聞稿。
+1. 保留 **[!UICONTROL Generate outbound transition]** 取消勾選，讓此活動會標籤工作流程的結尾，然後按一下 **[!UICONTROL Ok]**.
 
 在工作流程執行期間，與所有三個查詢對應的收件者會新增至清單，並訂閱電子報。
 
-您可以前往收件者的&#x200B;**[!UICONTROL Subscription]**&#x200B;標籤，以檢查訂閱是否成功。
+您可以前往 **[!UICONTROL Subscription]** 頁簽。
 
 ## 輸入參數 {#input-parameters}
 

@@ -17,11 +17,11 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-下列疑難排解秘訣可協助&#x200B;**內部部署**&#x200B;客戶解決使用IMS整合時最常見的問題。 對於托管的&#x200B;****&#x200B;客戶，請聯繫Adobe。
+下列疑難排解提示將有所幫助 **內部部署** 客戶可解決使用IMS整合時最常發生的問題。 針對 **托管** 客戶，請聯絡Adobe。
 
 **外部帳戶**
 
-只有&#x200B;**一個**&#x200B;外部帳戶應具有下列設定：
+應該只有 **one** 具有下列設定的外部帳戶：
 
 * **內部名稱**:Adobe_Marketing_Cloud
 * **類型**:Adobe Marketing Cloud
@@ -30,20 +30,20 @@ ht-degree: 1%
 
 **產品內容**
 
-如果外部帳戶有&#x200B;**產品內容**&#x200B;欄位，請檢查其值是否設為：**dma_campaign_classic**
+如果外部帳戶具有 **產品內容** 欄位中，檢查其值設為： **dma_campaign_classic**
 
 請確定您的產品內容與Campaign和Experience Cloud相同。
 
-例如，如果未顯示&#x200B;**產品內容**，則在促銷活動和Experience Cloud中，預設產品內容應為&#x200B;**dma_campaign**。 如果顯示「**產品內容**」欄位，則「促銷活動」和「Experience Cloud」中的預設產品內容應為&#x200B;**dma_campaign_classic**。
+例如，若 **產品內容** 未顯示，預設產品內容應為 **dma_campaign** 在Campaign和Experience Cloud中。 若 **產品內容** 欄位，預設產品內容應為 **dma_campaign_classic** 在Campaign和Experience Cloud中。
 
 **[!UICONTROL IMS Server URL]**
 
-在Campaign **Adobe Marketing Cloud**&#x200B;外部帳戶中，檢查&#x200B;**[!UICONTROL IMS Server URL]**&#x200B;是否為[adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/)或[ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/)。 請確定預備和生產執行個體都指向相同的IMS生產端點。
+在促銷活動中 **Adobe Marketing Cloud** 外部帳戶，檢查 **[!UICONTROL IMS Server URL]** 為 [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) 或 [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). 請確定預備和生產執行個體都指向相同的IMS生產端點。
 
 **關聯掩碼**
 
 * 檢查嘗試登入的使用者是否屬於Enterprise Dashboard中的運算子群組。
-* 檢查&#x200B;**[!UICONTROL Association Mask]**&#x200B;是否為Enterprise Dashboard中用戶運算子組名稱的前置詞。
+* 檢查 **[!UICONTROL Association Mask]** 是Enterprise Dashboard中使用者運算子群組名稱的前置詞。
 * 請確定沒有空格和拼字錯誤。
 * 檢查Campaign中運算子群組的名稱是否未變更，並遵循下列語法：
 
@@ -57,7 +57,7 @@ Campaign外部帳戶中定義的範圍必須是IMS布建的範圍的子集。
 
 **回呼URL**
 
-應將&#x200B;**回呼URL**&#x200B;新增至允許清單，並以「https://」開頭。 檢查&#x200B;**回呼URL**&#x200B;是否已連結至對應的例項。 例如，生產執行個體應重新導向至生產URL。
+此 **回呼URL** 應新增至允許清單，並以「https://」開頭。 檢查 **回呼URL** 連結至對應的例項。 例如，生產執行個體應重新導向至生產URL。
 
 **用戶端ID與密碼**
 
@@ -73,11 +73,11 @@ Campaign外部帳戶中定義的範圍必須是IMS布建的範圍的子集。
 
 * 系統會將使用者重新導向至adobe.com頁面：
 
-   **[!UICONTROL Callback URL]**&#x200B;有問題。 請參閱前面的步驟以檢查&#x200B;**[!UICONTROL Callback URL]**&#x200B;配置。
+   有問題 **[!UICONTROL Callback URL]**. 請參閱先前的步驟以檢查 **[!UICONTROL Callback URL]** 設定。
 
 * 訊息「登入沒有任何符合運算式的權利」：
 
-   請參閱上述步驟，檢查&#x200B;**[!UICONTROL Association Mask]**&#x200B;和運算子群組組態。
+   請參閱先前的步驟以檢查 **[!UICONTROL Association Mask]** 和運算子群組設定。
 
 * 使用者無法存取Adobe ID登入頁面：
 

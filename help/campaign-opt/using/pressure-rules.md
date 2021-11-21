@@ -19,27 +19,27 @@ ht-degree: 4%
 
 ## 關於行銷疲勞 {#about-marketing-fatigue}
 
-實施銷售壓力管理可讓您避免在資料庫中過度索取人口，也稱為行銷疲勞。 若要這麼做，您可以定義每個收件者的訊息數量上限。 它也可讓您在促銷活動之間實作仲裁規則，以便傳送最佳訊息給目標對象。
+實施銷售壓力管理可讓您避免在資料庫中過度索取人口，也稱為行銷疲勞。 To do this, you can define a maximum number of messages per recipient. 它也可讓您在促銷活動之間實作仲裁規則，以便傳送最佳訊息給目標對象。
 
 **壓力** 規則，例如管理行銷疲勞，將要傳送給母體的信函式量限制為2，選取最符合一組訂閱者利益的通訊，以避免傳送簡訊給不滿意的客戶等。
 
-促銷活動是根據定義的臨界值和訊息權重而選取。
+Campaigns are selected based on defined thresholds and message weight.
 
 * 臨界值是指定收件者在指定期間內所授權的最高傳送數量。 可設定或變數。 可在類型規則設定中設定或計算。 請參閱 [最大消息數](#maximum-number-of-messages).
 * 傳遞權重可讓您識別壓力管理框架內的最優先傳送。 權重最高的報文具有優先順序。 請參閱 [訊息權重](#message-weight).
 
 仲裁的目的在於確保其權重大於進行中促銷活動的已排程促銷活動不會導致過度的設定檔請求：若是如此，則會從傳送中排除設定檔。
 
-仲裁標準（消息權重和/或閾值）可能因兩種資訊而有所不同：
+Arbitration criteria (message weight and/or threshold) can vary based on two types of information:
 
 * 收件者偏好，即聲明資訊：電子報訂閱、收件者狀態（客戶或潛在客戶）、
 * 收件者行為：購買、已瀏覽的連結等。
 
-在分析階段應用用於定義合格消息的仲裁規則。 對於每個收件者及相關期間，如果下列公式為true，則會傳送訊息： **（傳送的訊息數）+（權重較大的訊息數）&lt;臨界值**.
+The arbitration rule for defining eligible messages is applied during the analysis stage. 對於每個收件者及相關期間，如果下列公式為true，則會傳送訊息： **（傳送的訊息數）+（權重較大的訊息數）&lt;臨界值**.
 
-否則，收件者將 **[!UICONTROL Excluded by arbitration]**. 有關詳細資訊，請參閱 [仲裁後排除](#exclusion-after-arbitration).
+否則，收件者將 **[!UICONTROL Excluded by arbitration]**. For more on this, refer to [Exclusion after arbitration](#exclusion-after-arbitration).
 
-## 建立壓力規則 {#creating-a-pressure-rule}
+## Creating a pressure rule {#creating-a-pressure-rule}
 
 若要使用Adobe Campaign設定促銷活動之間的仲裁，請從建立促銷活動類型和定義連結的類型規則開始(**壓力** 規則)。
 
@@ -119,9 +119,9 @@ ht-degree: 4%
 
 ### 訊息權重 {#message-weight}
 
-每個傳送都有一個權重，代表其優先順序等級。 依預設，傳送的權重會設為5。 壓力規則可讓您定義要套用傳送的重量。
+每個傳送都有一個權重，代表其優先順序等級。 依預設，傳送的權重會設為5。 Pressure rules let you define the weight of the deliveries which they will be applied to.
 
-您可以透過公式來設定或計算加權，以適合收件者。 例如，您可以根據收件者興趣定義傳送的權重。
+Weights can be either set or calculated via a formula to suit recipients. 例如，您可以根據收件者興趣定義傳送的權重。
 
 >[!CAUTION]
 >
@@ -137,9 +137,9 @@ ht-degree: 4%
 
    ![](assets/campaign_opt_pressure_weight_sample.png)
 
-1. 將此規則套用至具有下列主題的訊息：電子報、特別優惠等。 這些傳送的權重，以及其優先順序等級，將取決於每個收件者的傾向分數。
+1. 將此規則套用至具有下列主題的訊息：電子報、特別優惠等。 The weight of these deliveries, and therefore their level of priority, will depend on each recipients&#39; propensity score.
 
-## 設定期間 {#setting-the-period}
+## Setting the period {#setting-the-period}
 
 壓力規則定義於 **n**-day滾動期間。
 
@@ -147,14 +147,14 @@ ht-degree: 4%
 
 分組類型可讓您擴充 **[!UICONTROL Period considered]** 欄位，指向該期間日期的整日、日曆周、日曆月或日曆年。
 
-例如，壓力規則定義每週2則訊息的臨界值，並將分組至每個日曆月，將防止在同一週內傳送超過2則訊息，而且在同一日曆月內傳送超過2則訊息。 警告：如果期間與兩個月重疊，則計算臨界值將考慮這兩個日曆月的傳送，因此可能會阻止第二個月內的所有新傳送。
+例如，壓力規則定義每週2則訊息的臨界值，並將分組至每個日曆月，將防止在同一週內傳送超過2則訊息，而且在同一日曆月內傳送超過2則訊息。 Warning, if the period overlaps two months, the calculation threshold will take into account deliveries from these two calendar months and could therefore prevent all new deliveries during the second month.
 
 >[!NOTE]
 >
 >依預設，計算臨界值時只會考慮已傳送的傳送。 檢查 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 選項。 在此情況下，考慮的期間會加倍，以便將未來傳送與先前傳送整合。\
->若要將已考慮的傳送限制在2週期間，您可以：
+>To restrict the deliveries taken into account to a 2-week period, you can either:
 >
->* 輸入 **15天** 在 **[!UICONTROL Concerned period]** 欄位：在計算時，會考慮在套用規則的傳送日期前最多兩週傳送的傳送。
+>* Enter **15d** in the **[!UICONTROL Concerned period]** field: deliveries sent up to two weeks before the date of the delivery which the rule is applied to will be taken into account in the calculation,
 >
 >  或
 >
@@ -257,14 +257,14 @@ ht-degree: 4%
 
 現在將您剛建立的規則連結至類型，以便套用至傳送。 操作步驟：
 
-1. 建立行銷活動類型。
+1. Create a campaign typology.
 1. 前往 **[!UICONTROL Rules]** ，按一下 **[!UICONTROL Add]** 按鈕，然後選擇剛建立的規則。
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. 儲存類型：會新增至現有類型清單中。
 
-若要在您的傳送中使用此類型，請在傳送屬性中選取，位於 **[!UICONTROL Typology]** 標籤，如下所示：
+To use this typology in your deliveries, select it in the delivery properties, in the **[!UICONTROL Typology]** tab as shown below:
 
 ![](assets/campaign_opt_pressure_sample_1_7.png)
 
@@ -272,13 +272,13 @@ ht-degree: 4%
 >
 >可以在傳遞範本中定義類型，以便自動套用至使用此範本建立的所有傳送。
 
-在傳送分析期間，傳送收件者會視情況從傳送中排除，具體取決於已傳送給他們的傳送數量。 若要檢視此資訊，您可以：
+在傳送分析期間，傳送收件者會視情況從傳送中排除，具體取決於已傳送給他們的傳送數量。 To view this information, you can:
 
 * 查看分析結果：
 
    ![](assets/campaign_opt_pressure_sample_1_8.png)
 
-* 編輯傳送，然後按一下 **[!UICONTROL Delivery]** 標籤和 **[!UICONTROL Exclusions]** 子頁簽：
+* Edit the delivery and click the **[!UICONTROL Delivery]** tab and the **[!UICONTROL Exclusions]** sub-tab:
 
    ![](assets/campaign_opt_pressure_sample_1_9.png)
 
@@ -292,12 +292,12 @@ ht-degree: 4%
 
 在下列範例中，我們想要建立權重為5的傳送。 此加權會根據收件者行為以傾向分數加以豐富：已從此網站訂購的客戶的分數為5，而從未線上訂購的客戶的分數為4。
 
-若要執行此類型的設定，您需要使用公式來定義訊息權重。 必須可在資料模型中存取傾向分數和調查答案的相關資訊。 在我們的範例中， **傾向** 欄位已新增。
+若要執行此類型的設定，您需要使用公式來定義訊息權重。 必須可在資料模型中存取傾向分數和調查答案的相關資訊。 In our example, the **Propensity** field has been added.
 
 套用下列設定步驟：
 
 1. 建立新 **壓力** 類型類型規則。
-1. 編輯 **[!UICONTROL Pressure]** 標籤。 我們想要建立以每個個別收件者為基礎的臨界值公式：按一下 **[!UICONTROL Edit expression]** 表徵圖 **[!UICONTROL Weight formula]** 欄位。
+1. Edit the **[!UICONTROL Pressure]** tab. 我們想要建立以每個個別收件者為基礎的臨界值公式：按一下 **[!UICONTROL Edit expression]** 表徵圖 **[!UICONTROL Weight formula]** 欄位。
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
@@ -372,10 +372,10 @@ ht-degree: 4%
    <th> 傳遞<br /> </th> 
    <th> 核准<br /> </th> 
    <th> 寬度<br /> </th> 
-   <th> 提取日期/時間<br /> </th> 
-   <th> 聯繫日期<br /> </th> 
+   <th> Extraction date/time<br /> </th> 
+   <th> Contact date<br /> </th> 
    <th> 傳送開始日期/時間<br /> </th> 
-   <th> 仲裁工作流執行日期/時間<br /> </th> 
+   <th> Arbitration workflow execution date/time<br /> </th> 
    <th> 傳送狀態<br /> </th> 
    <th> 傳送（日期/時間）<br /> </th> 
   </tr> 
@@ -383,14 +383,14 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td> 傳送1<br /> </td> 
-   <td> 已停用<br /> </td> 
+   <td> Disabled<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 下午3:00<br /> </td> 
+   <td> 3pm<br /> </td> 
    <td> 早8點（隔天）<br /> </td> 
    <td> 下午2:00<br /> </td> 
    <td> 夜間<br /> </td> 
-   <td> 已排除<br /> </td> 
-   <td> 已排除<br /> </td> 
+   <td> Excluded<br /> </td> 
+   <td> Excluded<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳送2<br /> </td> 

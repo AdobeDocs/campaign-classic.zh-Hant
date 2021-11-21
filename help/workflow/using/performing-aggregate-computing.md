@@ -33,11 +33,11 @@ ht-degree: 2%
 
 若要建立此範例，請套用下列步驟：
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定義主鍵的計數（如上例所示）。 在輸出欄中新增&#x200B;**[!UICONTROL Gender]**&#x200B;欄位。 檢查&#x200B;**[!UICONTROL Gender]**&#x200B;欄中的&#x200B;**[!UICONTROL Group]**&#x200B;選項。 這樣，收件者就會依性別分組。
+1. 在 **[!UICONTROL Data to extract]**，定義主要金鑰的計數（如上個範例所示）。 新增 **[!UICONTROL Gender]** 欄位。 檢查 **[!UICONTROL Group]** 選項 **[!UICONTROL Gender]** 欄。 這樣，收件者就會依性別分組。
 
    ![](assets/query_editor_nveau_27.png)
 
-1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Next]**:此處不需要排序。
+1. 在 **[!UICONTROL Sorting]** 按一下 **[!UICONTROL Next]**:此處不需要排序。
 1. 設定資料篩選。 在此，您希望將選擇限制為居住在倫敦的聯繫人。
 
    ![](assets/query_editor_22.png)
@@ -46,9 +46,9 @@ ht-degree: 2%
    >
    >值區分大小寫。 如果在條件中輸入的「倫敦」值沒有大寫字母，且收件者清單中包含帶大寫字母的「倫敦」一詞，則查詢將失敗。
 
-1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Next]**:此示例不需要格式設定。
-1. 在預覽視窗中，按一下&#x200B;**[!UICONTROL Launch data preview]**。
+1. 在 **[!UICONTROL Data formatting]** 按一下 **[!UICONTROL Next]**:此示例不需要格式設定。
+1. 在預覽視窗中，按一下 **[!UICONTROL Launch data preview]**.
 
-   依性別分類的每個排序有三個不同的值：女性為&#x200B;**2**，男性為&#x200B;**1**，性別未知時為&#x200B;**0**。 在本例中，該清單包含10名婦女、16名男子和2名性別不詳的人。
+   每個排序依性別有三個不同的值： **2** 對於女性， **1** 為男性和 **0** 當性別未知時。 在本例中，該清單包含10名婦女、16名男子和2名性別不詳的人。
 
    ![](assets/query_editor_agregat_04.png)

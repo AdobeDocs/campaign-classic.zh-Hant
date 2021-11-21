@@ -50,40 +50,40 @@ Power Booster和Power Cluster選項可用於以下應用程式：
    <td> <strong>電源群集</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 電子郵件促銷活動和對外互動<br /> </td> 
-   <td> 每月最多可達3000萬封電子郵件<br /> </td> 
-   <td> 每月3000萬到1億封電子郵件<br /> </td> 
+   <td> 電子郵件行銷活動和對外互動<br /> </td> 
+   <td> 每月最多可達3,000萬封電子郵件<br /> </td> 
+   <td> 每月3000萬至1億封電子郵件<br /> </td> 
    <td> 每月超過1億封電子郵件<br /> </td> 
   </tr> 
   <tr> 
    <td> 異動訊息<br /> </td> 
-   <td> 每執行伺服器每小時50,000個<br /> </td> 
-   <td> 每執行伺服器每小時50,000個<br /> </td> 
-   <td> 每執行伺服器每小時50,000個<br /> </td> 
+   <td> 每執行伺服器每小時50,000<br /> </td> 
+   <td> 每執行伺服器每小時50,000<br /> </td> 
+   <td> 每執行伺服器每小時50,000<br /> </td> 
   </tr> 
   <tr> 
    <td> 可用性<br /> </td> 
    <td> 主資料庫的資料庫<br /> </td> 
-   <td> 24/7，除了執行實例<br />的維護窗口和下載時間之外 </td> 
+   <td> 24/7，除了執行實例的維護窗口和下載時間之外<br /> </td> 
    <td> 24/7/365服務可能<br /> </td> 
   </tr> 
   <tr> 
    <td> 安全性<br /> </td> 
-   <td> 資料集市可從公共網際網路<br />訪問 </td> 
-   <td> 資料集市與正面、面向網際網路的元件隔離<br /> </td> 
-   <td> 資料集市與正面、面向網際網路的元件隔離<br /> </td> 
+   <td> 資料集市可從公共網際網路訪問<br /> </td> 
+   <td> 資料集市與面向網際網路的正面元件隔離<br /> </td> 
+   <td> 資料集市與面向網際網路的正面元件隔離<br /> </td> 
   </tr> 
   <tr> 
    <td> 部署模板<br /> </td> 
    <td> 所有內容都放在一個網站上（可位於內部部署或雲端中）<br /> </td> 
    <td> 可在雲端執行內部部署行銷<br /> </td> 
-   <td> 在雲端執行內部部署行銷；在不同的geos可能執行<br /> </td> 
+   <td> 在雲端執行內部部署行銷；在不同地理上執行<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 建議 {#recommendations}
 
-* 執行實例必須專用於服務。 無法為尚未訂閱的服務安裝包。 例如，如果訂閱&#x200B;**Message Center**&#x200B;服務的&#x200B;**Power Booster**&#x200B;選項，則只能在專用的執行實例上安裝&#x200B;**[!UICONTROL Execution of transactional messages]**&#x200B;包。 請檢查您的授權合約。
-* 由於專用例項（或叢集）是Adobe Campaign例項，因此建議與主要例項的建議相同。 有關詳細資訊，請參閱[本文檔](../../production/using/foreword.md)。
+* 執行實例必須專用於服務。 無法為尚未訂閱的服務安裝包。 例如，如果您訂閱 **Power Booster** 選項 **訊息中心** 服務，您只能安裝 **[!UICONTROL Execution of transactional messages]** 包。 請檢查您的授權合約。
+* 由於專用例項（或叢集）是Adobe Campaign例項，因此建議與主要例項的建議相同。 有關詳細資訊，請參閱 [此文檔](../../production/using/foreword.md).
 * 若要從資料庫/硬體元件的觀點正確配置執行個體，請聯絡Adobe Campaign Professional Services。

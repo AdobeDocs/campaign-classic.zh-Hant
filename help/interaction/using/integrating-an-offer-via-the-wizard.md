@@ -24,11 +24,11 @@ ht-degree: 2%
 
 ## 呼叫優惠方案引擎並傳送 {#delivering-with-a-call-to-the-offer-engine}
 
-若要在行銷活動期間呈現優惠方案，只需根據所選管道建立傳統的傳送動作即可。 定義傳送內容時，會按一下工具列中可用的&#x200B;**[!UICONTROL Offers]**&#x200B;圖示來呼叫選件引擎。
+若要在行銷活動期間呈現優惠方案，只需根據所選管道建立傳統的傳送動作即可。 定義傳送內容時，會按一下 **[!UICONTROL Offers]** 表徵圖。
 
 ![](assets/offer_delivery_009.png)
 
-了解更多有關直接郵件傳送[的資訊，請參閱本節](../../delivery/using/about-direct-mail-channel.md)。 在本小節](../../campaign/using/setting-up-marketing-campaigns.md)中深入了解行銷活動[。
+進一步了解直接郵件傳送 [在本節](../../delivery/using/about-direct-mail-channel.md). 深入了解行銷活動 [在本節](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### 將選件插入傳送的主要步驟 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -52,11 +52,11 @@ ht-degree: 2%
 
    ![](assets/offer_delivery_005.png)
 
-1. 視需要選取&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;選項。 如需詳細資訊，請參閱[呼叫優惠方案引擎](#parameters-for-calling-offer-engine)的參數。
+1. 選取 **[!UICONTROL Exclude non-eligible recipients]** 選項。 有關詳細資訊，請參閱 [呼叫優惠方案引擎的參數](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有必要，請選取&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;選項。 如需詳細資訊，請參閱[呼叫優惠方案引擎](#parameters-for-calling-offer-engine)的參數。
+1. 如有必要，請選取 **[!UICONTROL Do not display anything if no offers are selected]** 選項。 有關詳細資訊，請參閱 [呼叫優惠方案引擎的參數](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
@@ -71,11 +71,11 @@ ht-degree: 2%
 ### 呼叫優惠方案引擎的參數 {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Space]** :選件環境的空間，必須選取該空間才能啟用選件引擎。
-* **[!UICONTROL Category]** :選件排序的特定資料夾。如果未指定類別，除非選取主題，否則選件引擎會考量環境中包含的所有選件。
-* **[!UICONTROL Themes]** :類別中定義上游的關鍵字。這些功能可作為篩選器，讓您透過在一組類別中選取來調整要顯示的選件數量。
-* **[!UICONTROL Number of propositions]** :引擎傳回可插入傳遞內文的選件數。如果未將選件插入訊息中，選件仍會產生，但不會顯示。
-* **[!UICONTROL Exclude non-eligible recipients]** :此選項可讓您啟用或停用排除沒有足夠合格優惠方案的收件者。合格命題的數量可能低於請求的命題數量。 如果選中此框，則沒有足夠建議的收件者將被排除在傳遞之外。 如果您未選擇此選項，則這些收件者將不會被排除，但他們將沒有請求的數量的建議。
-* **[!UICONTROL Do not display anything if no offer is selected]** :此選項可讓您選擇在其中一個命題不存在時如何處理訊息。核取此方塊時，不會顯示遺漏主張的表示，且此主張的訊息中不會顯示任何內容。 如果未核取方塊，則訊息本身會在傳送期間取消，而收件者將不會再收到任何訊息。
+* **[!UICONTROL Category]** :選件排序的特定資料夾。 如果未指定類別，除非選取主題，否則選件引擎會考量環境中包含的所有選件。
+* **[!UICONTROL Themes]** :類別中定義上游的關鍵字。 這些功能可作為篩選器，讓您透過在一組類別中選取來調整要顯示的選件數量。
+* **[!UICONTROL Number of propositions]** :引擎傳回可插入傳遞內文的選件數。 如果未將選件插入訊息中，選件仍會產生，但不會顯示。
+* **[!UICONTROL Exclude non-eligible recipients]** :此選項可讓您啟用或停用排除沒有足夠合格優惠方案的收件者。 合格命題的數量可能低於請求的命題數量。 如果選中此框，則沒有足夠建議的收件者將被排除在傳遞之外。 如果您未選擇此選項，則這些收件者將不會被排除，但他們將沒有請求的數量的建議。
+* **[!UICONTROL Do not display anything if no offer is selected]** :此選項可讓您選擇在其中一個命題不存在時如何處理訊息。 核取此方塊時，不會顯示遺漏主張的表示，且此主張的訊息中不會顯示任何內容。 如果未核取方塊，則訊息本身會在傳送期間取消，而收件者將不會再收到任何訊息。
 
 ### 在傳送中插入優惠方案主張 {#inserting-an-offer-proposition-into-a-delivery}
 
@@ -89,28 +89,28 @@ ht-degree: 2%
 
 您也可以使用傳遞大綱在傳遞中呈現選件。
 
-如需傳送大綱的詳細資訊，請參閱[Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)指南。
+如需傳送大綱的詳細資訊，請參閱 [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) 指南。
 
 1. 建立新促銷活動或存取現有促銷活動。
-1. 透過促銷活動的&#x200B;**[!UICONTROL Edit]** > **[!UICONTROL Documents]**&#x200B;標籤存取傳送大綱。
-1. 新增大綱，然後以滑鼠右鍵按一下大綱並選取&#x200B;**[!UICONTROL New]** > **[!UICONTROL Offer]**，然後儲存促銷活動，將任意數量的選件插入該大綱。
+1. 透過促銷活動的 **[!UICONTROL Edit]** > **[!UICONTROL Documents]** 標籤。
+1. 添加大綱，然後按一下右鍵大綱並選擇，將任意數量的選件插入到大綱中 **[!UICONTROL New]** > **[!UICONTROL Offer]**，然後儲存促銷活動。
 
    ![](assets/int_compo_offre1.png)
 
 1. 建立您有權存取的傳送外框（例如直接郵件傳送）的傳送。
-1. 編輯傳送時，按一下&#x200B;**[!UICONTROL Select a delivery outline]**。
+1. 編輯傳送時，按一下 **[!UICONTROL Select a delivery outline]**.
 
    >[!NOTE]
    >
-   >視傳送類型而定，此選項可在&#x200B;**[!UICONTROL Properties]** > **[!UICONTROL Advanced]**&#x200B;功能表中找到（例如，電子郵件傳送）。
+   >視傳送類型而定，此選項可在 **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** 功能表（例如，電子郵件傳送）。
 
    ![](assets/int_compo_offre2.png)
 
-1. 然後，您可以使用&#x200B;**[!UICONTROL Offers]**&#x200B;按鈕，設定要在傳送中顯示的選件空間及數量。
+1. 使用 **[!UICONTROL Offers]** 按鈕，您就可以設定選件空間以及要呈現在傳送中的選件數量。
 
    ![](assets/int_compo_offre3.png)
 
-1. 使用個人化欄位將主張新增至傳遞內文（如需詳細資訊，請參閱[將優惠方案主張插入傳遞](#inserting-an-offer-proposition-into-a-delivery)區段），或如果是直接郵件傳送，則編輯解壓縮檔案格式。
+1. 使用個人化欄位將主張新增至傳遞內文(如需詳細資訊，請參閱 [在傳送中插入優惠方案主張](#inserting-an-offer-proposition-into-a-delivery) 區段)，或如果是直接郵件傳送，則編輯解壓縮檔案格式。
 
    將從傳遞大綱中引用的選件中選擇命題。
 

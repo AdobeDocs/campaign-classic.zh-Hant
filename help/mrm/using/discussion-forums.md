@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各自的論壇：計畫，計畫，行銷，資源，模擬，股票。 每家運營商還有個人論壇。 所有討論都是公開的，甚至在個人論壇上。
 
-操作員可以訂閱論壇，以在每次發佈消息時接收通知電子郵件。
+操作員可以訂閱論壇，以在每次發送郵件時接收通知電子郵件。
 
 ## 存取論壇 {#accessing-a-forum}
 
-若要造訪促銷活動論壇、運算子等，請前往其控制面板，按一下右上角的&#x200B;**[!UICONTROL Forum]**&#x200B;連結。 此連結也提供論壇中的訊息總數。
+若要造訪促銷活動的論壇、運算子等，請前往其控制面板，然後按一下 **[!UICONTROL Forum]** 連結。 此連結也提供論壇中的訊息總數。
 
 ![](assets/mrm_forum_access_link.png)
 
@@ -37,13 +37,13 @@ Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各�
 
 **開始新的討論**
 
-要啟動新討論，請按一下右上角的&#x200B;**[!UICONTROL Add a discussion]**&#x200B;按鈕。 **[!UICONTROL Discussion forum]**&#x200B;方塊隨即出現（請參閱下方）。
+要啟動新討論，請按一下 **[!UICONTROL Add a discussion]** 按鈕。 此 **[!UICONTROL Discussion forum]** 框（請參閱下面）。
 
 ![](assets/mrm_forum_new_thread.png)
 
 **向現有討論發佈消息**
 
-要向現有討論發佈消息，請開啟要應答的消息，然後按一下左上角的&#x200B;**[!UICONTROL Reply]**&#x200B;連結。 **[!UICONTROL Discussion forum]**&#x200B;方塊隨即出現（請參閱下方）。
+要向現有討論發佈消息，請開啟要應答的消息，然後按一下 **[!UICONTROL Reply]** 左上角的連結。 此 **[!UICONTROL Discussion forum]** 框（請參閱下面）。
 
 ![](assets/mrm_forum_answer_msg.png)
 
@@ -51,18 +51,18 @@ Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各�
 
 **撰寫訊息**
 
-在&#x200B;**[!UICONTROL Discussion forum]**&#x200B;方塊中：
+在 **[!UICONTROL Discussion forum]** 框：
 
-1. 在&#x200B;**[!UICONTROL Message]**&#x200B;欄位中輸入文本，在&#x200B;**[!UICONTROL Subject]**&#x200B;欄位中輸入討論標題。
+1. 在 **[!UICONTROL Message]** 欄位與討論標題 **[!UICONTROL Subject]** 欄位。
 
    ![](assets/mrm_forum_edit_msg.png)
 
 1. 如有必要：
 
-   * 如果希望某人參加未訂閱論壇的討論，請使用&#x200B;**[!UICONTROL Operator to notify]**&#x200B;欄位。 運算子會收到此特定訊息的通知電子郵件（不會訂閱論壇）。 要通知多個運算子，請選擇一組運算子。
-   * 要向郵件添加附件，請按一下&#x200B;**[!UICONTROL Browse]**。 通知電子郵件也會包含附件。 附件只能單獨發送：若要傳送數個檔案，您需要壓縮這些檔案。
+   * 如果您希望未訂閱論壇的人參與討論，請使用 **[!UICONTROL Operator to notify]** 欄位。 運算子會收到此特定訊息的通知電子郵件（不會訂閱論壇）。 要通知多個運算子，請選擇一組運算子。
+   * 若要將附件新增至訊息，請按一下 **[!UICONTROL Browse]**. 通知電子郵件也會包含附件。 附件只能單獨發送：若要傳送數個檔案，您需要壓縮這些檔案。
 
-1. 按一下&#x200B;**[!UICONTROL Create the message]**&#x200B;將其張貼至論壇。
+1. 按一下 **[!UICONTROL Create the message]** 發佈到論壇。
 
 >[!NOTE]
 >
@@ -74,30 +74,30 @@ Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各�
 
 要訪問操作員的論壇：
 
-* 如果您擁有訪問瀏覽器的&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點的必要權限，請開啟所需運算子的控制面板，然後按一下右上角的&#x200B;**[!UICONTROL Forum]**&#x200B;連結。
+* 如果您有必要的存取權限 **[!UICONTROL Administration > Access management > Operators]** 瀏覽器的節點，開啟所需運算子的控制面板，然後按一下 **[!UICONTROL Forum]** 連結。
 * 如果沒有，請在Adobe Campaign中尋找運算子的名稱（透過此運算子張貼至論壇的訊息，指派給他的任務），然後按一下該名稱以存取其控制面板。 您也可以要求管理員建立運算子資料夾的檢視。
 
 ## 訂閱論壇 {#subscribing-to-a-forum}
 
 訂閱論壇可讓您關注討論。 每次將訊息張貼至論壇時，您都會收到電子郵件通知。 此電子郵件將包含郵件正文和任何附件。 若要回答訊息，請按一下電子郵件內文，然後登入Adobe Campaign網頁介面。 當您訂閱論壇時，所有人都能看到此資訊。
 
-* 若要訂閱論壇，請按一下訊息清單上方右上方區段的&#x200B;**[!UICONTROL Follow discussions]**&#x200B;按鈕。
+* 若要訂閱論壇，請按一下 **[!UICONTROL Follow discussions]** 按鈕（位於消息清單的右上角）。
 
    ![](assets/mrm_forum_subscribe.png)
 
    區段顯示為藍色，顯示您已訂閱論壇。
 
-* 要取消訂閱論壇，請按一下&#x200B;**[!UICONTROL Unsubscribe]**&#x200B;按鈕。
+* 若要取消訂閱論壇，請按一下 **[!UICONTROL Unsubscribe]** 按鈕。
 
    ![](assets/mrm_forum_unsubscribe.png)
 
-* 您的個人儀表板會列出您訂閱的論壇。 按一下&#x200B;**[!UICONTROL Subscription to discussion forums]**&#x200B;連結以顯示清單，然後按一下您感興趣的項目以存取其論壇。
+* 您的個人儀表板會列出您訂閱的論壇。 按一下 **[!UICONTROL Subscription to discussion forums]** 連結以顯示清單，然後按一下您感興趣的項目以存取其論壇。
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   有關個人儀表板的詳細資訊，請參閱[此部分](../../platform/using/access-management-operators.md)。
+   有關個人儀表板的詳細資訊，請參閱 [本節](../../platform/using/access-management-operators.md).
 
-* 若要查看訂閱論壇的人，請按一下訊息清單上方的&#x200B;**[!UICONTROL List of subscribers to this discussion forum]**&#x200B;連結。
+* 若要查看訂閱論壇的人，請按一下 **[!UICONTROL List of subscribers to this discussion forum]** 郵件清單上方的連結。
 
    ![](assets/mrm_forum_subscribers.png)
 
@@ -106,9 +106,9 @@ Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各�
 如果訂閱論壇的運算子未如預期般收到通知：
 
 * 檢查是否在運算子的設定檔中輸入電子郵件地址。
-* 轉到&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Campaign processes]**&#x200B;節點，檢查&#x200B;**[!UICONTROL Jobs in discussion forums]**&#x200B;工作流是否已啟動且沒有錯誤。
+* 前往 **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** 並檢查 **[!UICONTROL Jobs in discussion forums]** 工作流程已啟動，且沒有錯誤。
 * 檢視傳送記錄檔：
 
-   * 在Adobe Campaign首頁，前往&#x200B;**[!UICONTROL Campaigns > Navigation > Deliveries]**，然後開啟&#x200B;**[!UICONTROL Discussion forum notification]**&#x200B;傳送。
-   * 在瀏覽器中，前往&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然後按一下&#x200B;**[!UICONTROL Discussion forum notifications]**。
-   在&#x200B;**[!UICONTROL Discussion forum notifications]**&#x200B;方塊中，在&#x200B;**[!UICONTROL Edit > Delivery]**&#x200B;索引標籤中找到傳送記錄。 您也可以檢視&#x200B;**[!UICONTROL Tracking > Log]**&#x200B;和&#x200B;**[!UICONTROL Exclusion causes]**&#x200B;標籤。
+   * 在Adobe Campaign首頁上，前往 **[!UICONTROL Campaigns > Navigation > Deliveries]**，然後開啟 **[!UICONTROL Discussion forum notification]** 傳遞。
+   * 在瀏覽器中，前往 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然後按一下 **[!UICONTROL Discussion forum notifications]**.
+   在 **[!UICONTROL Discussion forum notifications]** 框中，則在 **[!UICONTROL Edit > Delivery]** 標籤。 您也可以檢視 **[!UICONTROL Tracking > Log]** 和 **[!UICONTROL Exclusion causes]** 頁簽。

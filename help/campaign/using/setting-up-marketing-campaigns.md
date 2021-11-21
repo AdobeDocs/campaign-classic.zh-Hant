@@ -19,7 +19,7 @@ ht-degree: 6%
 
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
-![](assets/do-not-localize/how-to-video.png) 了解如何在影片中建立行銷計畫、計畫和行 [銷活動](#video)
+![](assets/do-not-localize/how-to-video.png) 探索如何建立行銷計畫、方案和行銷活動 [在視訊中](#video)
 
 若要建立行銷活動：
 
@@ -35,55 +35,55 @@ ht-degree: 6%
 
 1. 規劃促銷活動和相關成本。 [深入瞭解](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
-完成這些步驟後，您可以開始傳送（請參閱[此區段](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)），檢查與傳送相關的資料、流程和資訊，並視需要管理相關檔案（請參閱[此區段](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)）。 您也可以追蹤促銷活動和傳送的處理階段的執行（請參閱[此區段](../../campaign/using/marketing-campaign-monitoring.md)）。
+完成這些步驟後，您就可以開始傳送(請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，檢查與傳送相關的資料、程式和資訊，並在必要時管理相關檔案(請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您也可以追蹤促銷活動和傳送的處理階段的執行(請參閱 [本節](../../campaign/using/marketing-campaign-monitoring.md))。
 
 ## 建立計畫和方案層次結構 {#creating-plan-and-program-hierarchy}
 
 要為市場營銷計畫和方案配置資料夾層次結構：
 
-1. 按一下首頁上的&#x200B;**瀏覽器**&#x200B;表徵圖。
+1. 按一下 **瀏覽器** 表徵圖。
 1. 以滑鼠右鍵按一下您要建立計畫的資料夾。
-1. 選取&#x200B;**新增資料夾>促銷活動管理>計畫**。
+1. 選擇 **新增資料夾>促銷活動管理>計畫**.
 
    ![](assets/create_plan_1.png)
 
 1. 更名計畫。
-1. 按一下右鍵新建立的計畫，然後選擇&#x200B;**屬性……**。
+1. 按一下右鍵新建立的計畫並選擇 **屬性……**.
 
    ![](assets/create_plan_2.png)
 
-1. 在&#x200B;**General**&#x200B;標籤中，修改&#x200B;**內部名稱**&#x200B;以避免在包導出期間出現重複。
-1. 按一下「**儲存**」。
-1. 按一下右鍵新建立的計畫，然後選擇&#x200B;**建立新的&#39;Program&#39;資料夾**。
+1. 在 **一般** 頁簽，修改 **內部名稱** 以在套件匯出期間避免重複。
+1. 按一下 **儲存**.
+1. 按一下右鍵新建立的計畫並選擇 **建立新的「程式」資料夾**.
 1. 重複上述步驟，更名新程式資料夾及其內部名稱。
 
 ## 建立促銷活動 {#creating-a-campaign}
 
 ### 新增行銷活動 {#adding-a-campaign}
 
-您可以透過促銷活動清單建立促銷活動。 若要顯示此檢視，請選取&#x200B;**[!UICONTROL Campaigns]**&#x200B;控制面板中的&#x200B;**[!UICONTROL Campaigns]**&#x200B;功能表。
+您可以透過促銷活動清單建立促銷活動。 若要顯示此檢視，請選取 **[!UICONTROL Campaigns]** 功能表 **[!UICONTROL Campaigns]** 控制面板。
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
-**[!UICONTROL Program]**&#x200B;欄位可讓您選取要附加促銷活動的方案。 此資訊是強制性的。
+此 **[!UICONTROL Program]** 欄位可讓您選取要附加促銷活動的方案。 此資訊是強制性的。
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-您也可以透過方案建立促銷活動。 要執行此操作，請按一下相關程式&#x200B;**[!UICONTROL Schedule]**&#x200B;頁簽中的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
+您也可以透過方案建立促銷活動。 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕 **[!UICONTROL Schedule]** 頁簽。
 
 ![](assets/s_ncs_user_add_an_op.png)
 
-當您透過方案的&#x200B;**[!UICONTROL Schedule]**&#x200B;標籤建立促銷活動時，促銷活動會自動連結至相關的方案。 在此情況下， **[!UICONTROL Program]**&#x200B;欄位是隱藏的。
+當您透過 **[!UICONTROL Schedule]** 頁簽，則促銷活動會自動連結至相關方案。 此 **[!UICONTROL Program]** 欄位在此情況下會隱藏。
 
 在促銷活動建立視窗中，選取促銷活動範本並新增促銷活動的名稱和說明。 您也可以指定促銷活動的開始和結束日期。
 
-按一下&#x200B;**[!UICONTROL OK]**&#x200B;以建立促銷活動。 它會新增至方案排程。
+按一下 **[!UICONTROL OK]** 來建立促銷活動。 它會新增至方案排程。
 
 ![](assets/s_ncs_user_program_planning_with_op.png)
 
 >[!NOTE]
 >
->若要篩選要顯示的促銷活動，請按一下&#x200B;**[!UICONTROL Filter]**&#x200B;連結，並選取要顯示的促銷活動狀態。
+>若要篩選要顯示的促銷活動，請按一下 **[!UICONTROL Filter]** 連結，並選取要顯示的促銷活動狀態。
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
@@ -91,7 +91,7 @@ ht-degree: 6%
 
 然後，您可以編輯您剛建立的促銷活動並定義其參數。
 
-若要開啟並設定促銷活動，請從排程中選取促銷活動，然後按一下&#x200B;**[!UICONTROL Open]**。
+若要開啟和設定促銷活動，請從排程中選取促銷活動，然後按一下 **[!UICONTROL Open]**.
 
 ![](assets/s_ncs_user_new_op_edit.png)
 
@@ -109,7 +109,7 @@ ht-degree: 6%
 
 #### 為循環促銷活動建立範本 {#creating-the-campaign-template}
 
-1. 建立&#x200B;**[!UICONTROL Recurring]**&#x200B;促銷活動範本。
+1. 建立 **[!UICONTROL Recurring]** 行銷活動範本。
 
    >[!NOTE]
    >
@@ -121,24 +121,24 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_template_recur_duplicate.png)
 
-1. 針對此類型的促銷活動，會新增&#x200B;**[!UICONTROL Schedule]**&#x200B;標籤以建立範本執行排程。
+1. 對於此類型的促銷活動， **[!UICONTROL Schedule]** 標籤，以建立範本執行排程。
 
 在此標籤中，根據此範本指定促銷活動的計畫執行日期。
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-執行調度的配置模式與工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;對象一致。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。
+執行計畫的配置模式與 **[!UICONTROL Scheduler]** 工作流程的物件。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。
 
 >[!IMPORTANT]
 >
 >必須小心執行執行計畫配置，以避免資料庫過載。 根據指定的排程，循環促銷活動會複製其範本的工作流程。 執行過頻繁的工作流建立會阻礙資料庫的操作。
 
-1. 在&#x200B;**[!UICONTROL Create in advance for]**&#x200B;欄位中指定值，以便為所指示的期間建立對應的工作流程。
+1. 在 **[!UICONTROL Create in advance for]** 欄位，以針對所指出的期間建立對應的工作流程。
 1. 根據此範本，建立要用於促銷活動的工作流程範本，並搭配目標參數和一或多個一般傳送。
 
    >[!NOTE]
    >
-   >此工作流程必須儲存為循環工作流程範本。 要執行此操作，請編輯工作流屬性，並在&#x200B;**[!UICONTROL Execution]**&#x200B;頁簽中選擇&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;選項。
+   >此工作流程必須儲存為循環工作流程範本。 要執行此操作，請編輯工作流屬性並選取 **[!UICONTROL Recurring workflow template]** 選項 **[!UICONTROL Execution]** 標籤。
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -158,17 +158,17 @@ ht-degree: 6%
    * **[!UICONTROL To be approved]** :可讓您在工作流程中強制傳送核准請求。
    * **[!UICONTROL To be started]** :可讓您在達到開始日期時啟動工作流程。
 
-   **[!UICONTROL Create in advance for]**&#x200B;欄位可讓您建立涵蓋所輸入期間的所有工作流程。
+   此 **[!UICONTROL Create in advance for]** 欄位可讓您建立涵蓋所輸入期間的所有工作流程。
 
-   執行&#x200B;**[!UICONTROL Jobs on campaigns]**&#x200B;工作流程時，會根據促銷活動排程中定義的發生次數，建立專用的工作流程。 因此，會為每個執行日期建立工作流程。
+   於 **[!UICONTROL Jobs on campaigns]** 工作流程，則會根據行銷活動排程中定義的發生次數，建立專用的工作流程。 因此，會為每個執行日期建立工作流程。
 
-1. 循環工作流程會從行銷活動中出現的工作流程範本自動建立。 它們會從促銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;標籤中顯示。
+1. 循環工作流程會從行銷活動中出現的工作流程範本自動建立。 它們可從 **[!UICONTROL Targeting and workflows]** 標籤。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs.png)
 
    循環工作流實例的標籤由其模板標籤和工作流編號組成，其中的#字元介於兩者之間。
 
-   從排程建立的工作流程會自動與其在&#x200B;**[!UICONTROL Schedule]**&#x200B;標籤的&#x200B;**[!UICONTROL Workflow]**&#x200B;欄中相關聯。
+   從排程建立的工作流程會自動與 **[!UICONTROL Workflow]** 欄 **[!UICONTROL Schedule]** 標籤。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
@@ -187,7 +187,7 @@ ht-degree: 6%
 
 #### 建立促銷活動範本 {#creating-the-campaign-template-1}
 
-1. 建立&#x200B;**[!UICONTROL Periodic]**&#x200B;促銷活動範本，最好複製現有的促銷活動範本。
+1. 建立 **[!UICONTROL Periodic]** 行銷活動範本，最好複製現有的行銷活動範本。
 
    ![](assets/s_ncs_user_op_template_period_create.png)
 
@@ -205,13 +205,13 @@ ht-degree: 6%
    >
    >此工作流程是工作流程範本。 無法從促銷活動範本執行。
 
-1. 完成循環促銷活動範本的執行排程：按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並定義開始和結束日期，或透過連結填入執行排程。
+1. 完成循環促銷活動範本的執行排程：按一下 **[!UICONTROL Add]** 按鈕並定義開始和結束日期，或透過連結填入執行排程。
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
    >[!IMPORTANT]
    >
-   >定期促銷活動範本會根據上述定義的排程建立新促銷活動。 因此，必須小心完成，以避免超載Adobe Campaign資料庫。
+   >定期促銷活動範本會根據上述定義的排程建立新促銷活動。 因此，必須謹慎完成，以避免超載Adobe Campaign資料庫。
 
 1. 一旦達到執行開始日期，就會自動建立相符的促銷活動。 它具有其模板的所有特性。
 
@@ -227,4 +227,4 @@ ht-degree: 6%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-您可以在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得其他促銷活動作法影片。
+提供其他Campaign作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

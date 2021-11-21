@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 傳送SMS訊息 {#sending-sms-messages}
 
-若要核准您的訊息，並將其傳送給所建立傳送的收件者，請按一下&#x200B;**[!UICONTROL Send]**。
+若要核准您的訊息，並將其傳送給所建立傳送的收件者，請按一下 **[!UICONTROL Send]**.
 
 驗證和傳送傳遞的詳細程式會顯示在以下章節：
 
@@ -28,11 +28,11 @@ ht-degree: 3%
 
 ## 高級參數 {#advanced-parameters}
 
-**[!UICONTROL Properties]**&#x200B;按鈕可提供進階傳送參數的存取權。 SMS傳送的特定參數位於&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤的&#x200B;**[!UICONTROL SMS parameters]**&#x200B;區段中。
+此 **[!UICONTROL Properties]** 按鈕可提供進階傳送參數的存取權。 SMS傳送的特定參數位於 **[!UICONTROL SMS parameters]** 區段 **[!UICONTROL Delivery]** 標籤。
 
 可以使用以下選項：
 
-* **寄件者地址**:可讓您使用字串以十一個字元為上限的英數字元，個人化傳送者的名稱。欄位不能只由數字組成。 您可以定義一個條件，以根據收件者的區域代碼顯示不同的名稱：
+* **寄件者地址**:可讓您使用字串以十一個字元為上限的英數字元，個人化傳送者的名稱。 欄位不能只由數字組成。 您可以定義一個條件，以根據收件者的區域代碼顯示不同的名稱：
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -43,8 +43,8 @@ ht-degree: 3%
    >檢查您所在國家/地區有關編輯寄件者名稱的法律。 您也應洽詢運算子，確定它們是否提供此功能。
 
 * **傳輸模式**:簡訊傳輸
-* **優先順序**:指派給訊息的重要性層級。**[!UICONTROL Normal]** 預設會選取優先順序。向服務提供商詢問與&#x200B;**[!UICONTROL High]**&#x200B;優先順序一起發送的簡訊的成本。
-* **應用程式類型**:選擇您要指派給SMS傳送的應用程式。預設會選取&#x200B;**[!UICONTROL Direct Marketing]**&#x200B;選項，這是最常用的選項。
+* **優先順序**:指派給訊息的重要性層級。 **[!UICONTROL Normal]** 預設會選取優先順序。 詢問您的服務提供者，與 **[!UICONTROL High]** 優先順序。
+* **應用程式類型**:選擇您要指派給SMS傳送的應用程式。 此 **[!UICONTROL Direct Marketing]** 選項預設為選取，且是最常用的選項。
 
 **NetSize連接器的特定參數**
 
@@ -56,7 +56,7 @@ ht-degree: 3%
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **每條訊息的SMS最大數量**:此選項可讓您設定用於傳送訊息的SMS數量。如果數字設為0，您可以使用SMS來傳送訊息。 如果例項的SMS數量設為1或2，而訊息超過此臨界值，則不會傳送訊息。
+* **每條訊息的最大簡訊數**:此選項可讓您設定用於傳送訊息的SMS數量。 如果數字設為0，您可以使用SMS來傳送訊息。 如果例項的SMS數量設為1或2，而訊息超過此臨界值，則不會傳送訊息。
 
 ## 監控及追蹤簡訊 {#monitoring-and-tracking-sms-deliveries}
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 ## 處理傳入訊息 {#processing-inbound-messages}
 
-**nlserver sms**&#x200B;模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤傳送進度，並處理狀態報表和收件者取消訂閱請求。
+此 **nlserver sms** 模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤傳送進度，並處理狀態報表和收件者取消訂閱請求。
 
 * **狀態報表**:檢視傳送記錄，以檢查訊息的狀態。
 
@@ -80,9 +80,9 @@ ht-degree: 3%
    > * SMS帳戶只能連結至單一外部帳戶，以確保狀態報表可歸屬於正確的帳戶
 
 
-* **取消訂閱**:想要停止接收SMS傳送的收件者可傳回包含STOP字詞的訊息。如果您的提供者根據合約條款允許它，您可以透過&#x200B;**傳入SMS**&#x200B;工作流程活動擷取訊息，然後建立查詢以啟用&#x200B;**不再聯絡相關收件者的此收件者**&#x200B;選項。
+* **取消訂閱**:想要停止接收SMS傳送的收件者可傳回包含STOP字詞的訊息。 如果您的提供者根據合約條款允許，您可以透過 **傳入SMS** 工作流程活動，然後建立查詢以啟用 **不再聯繫此收件人** 接受者的選擇。
 
-   請參閱[工作流程](../../workflow/using/architecture.md)指南。
+   請參閱 [工作流程](../../workflow/using/architecture.md) 指南。
 
 ## InSMS結構 {#insms-schema}
 
@@ -101,7 +101,7 @@ InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些�
    >如果使用的運算子不是NetSize，則這些欄位被視為空。
 
 * **別名**:傳入消息的別名。
-* **分隔符**:別名和訊息內文之間的分隔符號。
+* **分隔符號**:別名和訊息內文之間的分隔符號。
 * **messageDate**:由運算子提供的訊息日期。
 * **receivalDate**:SMSC（報文中心）接收了來自操作員的日期消息。
 * **deliveryDate**:由SMSC（訊息中心）傳送的日期訊息。
@@ -120,7 +120,7 @@ InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些�
 
 >[!IMPORTANT]
 >
->下列詳細過程僅對SMPP連接器有效，但擴展通用SMPP連接器除外。 有關詳細資訊，請參閱[建立SMPP外部帳戶](sms-set-up.md#creating-an-smpp-external-account)區段。
+>下列詳細過程僅對SMPP連接器有效，但擴展通用SMPP連接器除外。 有關詳細資訊，請參閱 [建立SMPP外部帳戶](sms-set-up.md#creating-an-smpp-external-account) 區段。
 >
 >這是美國運營商在美國開展營銷活動的認證過程的一部分。 這些對包含關鍵字的訂閱者SMS消息的回復必須在收到來自他們的消息後立即發回給訂閱者。
 
@@ -142,9 +142,9 @@ InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些�
    </autoreply>
    ```
 
-1. 對於&#x200B;**`<shortcode>`**&#x200B;標籤的&#x200B;**name**&#x200B;屬性，指定將顯示在郵件發件人名稱位置的短代碼。
+1. 若 **名稱** 屬性 **`<shortcode>`** 標籤，指定要在郵件寄件者名稱的位置顯示的簡短代碼。
 
-   在每個&#x200B;**`<reply>`**&#x200B;標籤中，輸入包含關鍵字的&#x200B;**keyword**&#x200B;屬性，以及包含要為此關鍵字發送的消息的&#x200B;**text**&#x200B;屬性。
+   在 **`<reply>`** 標籤，輸入 **關鍵字** 屬性 **文字** 屬性，並包含您要針對此關鍵字傳送的訊息。
 
    >[!NOTE]
    >
@@ -159,11 +159,11 @@ InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些�
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. 完成後，以名稱&#x200B;**smsAutoReply.xml**&#x200B;儲存此檔案。
+1. 完成後，以名稱儲存此檔案 **smsAutoReply.xml**.
 
    請注意，在Linux中，檔案名稱須區分大小寫。
 
-1. 將此檔案複製到Adobe Campaign中與Web伺服器相同的&#x200B;**conf**&#x200B;目錄。
+1. 將此檔案複製到 **conf** 目錄(位於Adobe Campaign中與Web伺服器相同的位置)。
 
 >[!IMPORTANT]
 >

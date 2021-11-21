@@ -17,10 +17,10 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-使用Campaign [同盟資料存取](../../installation/using/about-fda.md)(FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟來設定Microsoft Analytics的存取權限。Azure synapse分析
+使用Campaign [同盟資料存取](../../installation/using/about-fda.md) (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定MicrosoftAzure synapse分析的存取權。
 
-1. 在[CentOS](#azure-centos)、[Windows](#azure-windows)或[Debian](#azure-debian)上配置Azure synapse
-1. 在Campaign中設定Azure synapse[外部帳戶](#azure-external)
+1. 在上配置Azure synapse [CentOS](#azure-centos), [Windows](#azure-windows) 或 [Debian](#azure-debian)
+1. 設定Azure synapse [外部帳戶](#azure-external) 在Campaign
 
 ## azure synapseCentOS {#azure-centos}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 若要在CentOS上設定Azure synapse，請遵循下列步驟：
 
-1. 首先，安裝ODBC驅動程式。 您可以在此[page](https://www.microsoft.com/en-us/download/details.aspx?id=50420)中找到。
+1. 首先，安裝ODBC驅動程式。 你可以在這裡找到 [頁面](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
    >[!NOTE]
    >
@@ -87,7 +87,7 @@ ht-degree: 1%
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. 在Campaign中，您可以接著設定[!DNL Azure Synapse]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#azure-external)。
+1. 然後，您可以在Campaign中設定 [!DNL Azure Synapse] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱 [本節](#azure-external).
 
 1. 由於Azure synapse分析通過TCP 1433埠進行通信，因此您需要在防火牆上開啟此埠。 使用下列命令：
 
@@ -98,7 +98,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >若要允許來自Azure synapseAnalytics端的通訊，您可能需要將公用IP新增至允許清單。 要執行此操作，請參閱[Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >若要允許來自Azure synapseAnalytics端的通訊，您可能需要將公用IP新增至允許清單。 要執行此操作，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. 如果是iptables，請運行以下命令：
 
@@ -110,11 +110,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->這是ODBC驅動程式13版獨有的，但Adobe Campaign Classic也可以使用SQL Server本機客戶端驅動程式11.0和10.0。
+>這是ODBC驅動程式13版獨有的，但Adobe Campaign Classic還可以使用SQL Server本機客戶端驅動程式11.0和10.0。
 
 要在Windows上配置Azure synapse:
 
-1. 首先，安裝Microsoft ODBC驅動程式。 您可以在[此頁](https://www.microsoft.com/en-us/download/details.aspx?id=50420)中找到它。
+1. 首先，安裝Microsoft ODBC驅動程式。 您可以在 [本頁](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
 1. 選擇要安裝的檔案：
 
@@ -124,9 +124,9 @@ ht-degree: 1%
 
 1. 安裝ODBC驅動程式後，您就可以根據需要進行測試。 如需關於此項目的詳細資訊，請參閱此[頁面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
 
-1. 在Campaign Classic中，您接著可以設定[!DNL Azure Synapse]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#azure-external)。
+1. 在Campaign Classic中，接著您可以設定 [!DNL Azure Synapse] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱 [本節](#azure-external).
 
-1. 由於Azure synapse分析通過TCP 1433埠進行通信，因此您需要在Windows Defender防火牆上開啟此埠。 有關詳細資訊，請參閱[Windows文檔](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)。
+1. 由於Azure synapse分析通過TCP 1433埠進行通信，因此您需要在Windows Defender防火牆上開啟此埠。 有關詳細資訊，請參閱 [Windows檔案](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ## azure synapseDebian {#azure-debian}
 
@@ -152,7 +152,7 @@ ht-degree: 1%
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. 如果在調用&#x200B;**sudo apt-get update**&#x200B;時出現以下錯誤&#x200B;**&quot;找不到方法驅動程式/usr/lib/apt/methods/https&quot;**，則應運行該命令：
+1. 如果您收到下列錯誤 **&quot;找不到方法驅動程式/usr/lib/apt/methods/https&quot;** 呼叫 **sudo apt-get更新**，您應執行命令：
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
@@ -179,7 +179,7 @@ ht-degree: 1%
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. 在Campaign Classic中，您現在可以設定[!DNL Azure Synapse]外部帳戶。 有關如何配置外部帳戶的詳細資訊，請參閱[此部分](#azure-external)。
+1. 在Campaign Classic中，您現在可以設定 [!DNL Azure Synapse] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱 [本節](#azure-external).
 
 1. 要在Debian上配置iptables以確保與Azure synapse分析的連接，請使用以下命令為主機名啟用出站TCP 1433埠：
 
@@ -189,24 +189,24 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >若要允許來自Azure synapseAnalytics端的通訊，您可能需要將公用IP新增至允許清單。 要執行此操作，請參閱[Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >若要允許來自Azure synapseAnalytics端的通訊，您可能需要將公用IP新增至允許清單。 要執行此操作，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 
 ## azure synapse外部帳戶 {#azure-external}
 
-[!DNL Azure Synapse]外部帳戶可讓您將Campaign執行個體連結至Azure synapse外部資料庫。
+此 [!DNL Azure Synapse] 外部帳戶可讓您將Campaign執行個體連線至Azure synapse外部資料庫。
 
-要建立[!DNL Azure Synapse]外部帳戶，請執行以下步驟：
+若要建立 [!DNL Azure Synapse] 外部帳戶遵循下列步驟：
 
-1. 在促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，按一下&#x200B;**[!UICONTROL Administration]**「>」 **[!UICONTROL Platform]**「>」 **[!UICONTROL External accounts]**。
+1. 從促銷活動 **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. 按一下&#x200B;**[!UICONTROL New]**。
 
-1. 選擇&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
+1. 選擇 **[!UICONTROL External database]** 作為外部帳戶 **[!UICONTROL Type]**.
 
    ![](assets/azure_1.png)
 
-1. 配置[!DNL Azure Synapse]外部帳戶，必須指定：
+1. 設定 [!DNL Azure Synapse] 外部帳戶，您必須指定：
 
    * **[!UICONTROL Type]**:azure synapse分析
 

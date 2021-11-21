@@ -25,21 +25,21 @@ ht-degree: 0%
 
 1. 確定需要
 
-   第一步是明確確定需求：您要在報表中顯示的項目及其目標（監控、分析、資料匯出等）。
+   第一步是明確確定需要：您要在報表中顯示的項目及其目標（監控、分析、資料匯出等）。
 
    Adobe Campaign提供多種報告功能。 必須分析您確定最合適功能的需求。
 
    例如，您可以：
 
-   * 探索資料庫中的資料並定義測量。 了解更多[，請參閱本節](../../reporting/using/about-cubes.md)
-   * 新增指標至現有報表。 了解更多[，請參閱本節](../../reporting/using/about-reports-creation-in-campaign.md)
-   * 在資料庫中查看資料。 了解更多[，請參閱本節](../../reporting/using/about-descriptive-analysis.md)
-   * 建立新的傳送報表。 了解更多[，請參閱本節](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱[此區段](../../workflow/using/about-workflows.md)
-   * 建立樞紐分析表。 了解更多[，請參閱本節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * 探索匯總的資料。 了解更多[，請參閱本節](../../reporting/using/about-cubes.md)
-   * 使用精靈分析資料。 了解更多[，請參閱本節](../../reporting/using/about-descriptive-analysis.md)
-   * 分析大量資料。 了解更多[，請參閱本節](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 探索資料庫中的資料並定義測量。 深入了解 [在本節](../../reporting/using/about-cubes.md)
+   * 新增指標至現有報表。 深入了解 [在本節](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 在資料庫中查看資料。 深入了解 [在本節](../../reporting/using/about-descriptive-analysis.md)
+   * 建立新的傳送報表。 深入了解 [在本節](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱 [本節](../../workflow/using/about-workflows.md)
+   * 建立樞紐分析表。 深入了解 [在本節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * 探索匯總的資料。 深入了解 [在本節](../../reporting/using/about-cubes.md)
+   * 使用精靈分析資料。 深入了解 [在本節](../../reporting/using/about-descriptive-analysis.md)
+   * 分析大量資料。 深入了解 [在本節](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. 識別目標人口
 
@@ -102,7 +102,7 @@ if(string(ctx@_historyId)!==""))
 
    若要快速找到索引欄位，請查看Adobe Campaign介面中的欄名稱：如果欄位已編列索引，排序箭頭會以紅色加底線。
 
-   有關索引的詳細資訊，請參閱[此部分](../../configuration/using/data-model-best-practices.md#indexes)。
+   有關索引的詳細資訊，請參閱 [本節](../../configuration/using/data-model-best-practices.md#indexes).
 
 * 確認報表可擴充：資料量可能會隨著時間而顯著增加。
 
@@ -110,8 +110,8 @@ if(string(ctx@_historyId)!==""))
 
    最後，需要知道資料清除延遲並在必要時調整以便於資料操作。
 
-   如需清理和資料保留的詳細資訊，請參閱[此區段](../../configuration/using/data-model-best-practices.md#data-retention)。
+   如需清理和資料保留的詳細資訊，請參閱 [本節](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### 匯出報表 {#exporting-reports}
 
-匯出報表專用的Recommendations在[本區段](../../reporting/using/actions-on-reports.md#exporting-a-report)中詳細說明。
+Recommendations專用於匯出報表，其詳細說明於 [本節](../../reporting/using/actions-on-reports.md#exporting-a-report).

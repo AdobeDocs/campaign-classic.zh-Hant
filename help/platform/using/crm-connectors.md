@@ -25,12 +25,12 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 >[!NOTE]
 >
->此功能可在Adobe Campaign中透過&#x200B;**CRM連接器**&#x200B;專用套件取得。
+>此功能可在Adobe Campaign中透過 **CRM連接器** 專屬套件。
 
 
 ### 相容系統 {#compatible-crm-systems-and-limitations}
 
-支援的CRM和版本在Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md)中詳細說明。
+支援的CRM和版本在Campaign中詳細說明 [相容性矩陣](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 ### 實施步驟 {#crm-implementation-steps}
 
-在本小節](../../platform/using/crm-ms-dynamics.md)中了解連接Campaign和Microsoft Dynamics [的逐步程式
+了解連接Campaign和Microsoft Dynamics的逐步程式 [在本節](../../platform/using/crm-ms-dynamics.md)
 
 
-在本小節](../../platform/using/crm-sfdc.md)中了解連接Campaign和Salesforce [的逐步程式
+了解連結Campaign和Salesforce的逐步程式 [在本節](../../platform/using/crm-sfdc.md)

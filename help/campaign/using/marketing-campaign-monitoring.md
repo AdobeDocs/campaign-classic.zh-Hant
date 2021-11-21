@@ -19,27 +19,27 @@ ht-degree: 2%
 
 ## 追蹤行銷活動 {#tracking-a-campaign}
 
-對於每個促銷活動，**[!UICONTROL Tracking]**&#x200B;標籤可讓您檢視所有作業及其狀態。 可透過此子標籤存取下列資訊：
+對於每個促銷活動， **[!UICONTROL Tracking]** 索引標籤可讓您檢視所有作業及其狀態。 可透過此子標籤存取下列資訊：
 
 * 活動日記帳一般會顯示在促銷活動上執行的工作：工作流程建立或啟動、核准、提取等。
 
    ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
-* **[!UICONTROL Deliveries]**&#x200B;子索引標籤包含可從此檢視編輯的促銷活動的所有傳送。 若要這麼做，請選取傳送並按一下&#x200B;**[!UICONTROL Detail]**&#x200B;圖示。
+* 此 **[!UICONTROL Deliveries]** 子索引標籤包含可從此檢視編輯的促銷活動的所有傳送。 若要這麼做，請選取傳送，然後按一下 **[!UICONTROL Detail]** 表徵圖。
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* **[!UICONTROL Tasks]**&#x200B;子索引標籤會將連結至促銷活動的所有工作分組。 此檢視可讓您編輯或刪除它們。 MRM應用程式可以使用任務。 在[本節](../../mrm/using/creating-and-managing-tasks.md)中詳細介紹了這些規則。
+* 此 **[!UICONTROL Tasks]** 子索引標籤會將連結至促銷活動的所有工作分組。 此檢視可讓您編輯或刪除它們。 MRM應用程式可以使用任務。 詳細資訊於 [本節](../../mrm/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* 為生成服務提供商的消息而建立的工作流顯示在&#x200B;**[!UICONTROL Jobs on service providers]**&#x200B;子頁簽中。 按一下&#x200B;**[!UICONTROL Detail]**&#x200B;圖示以顯示選取的工作流程。
+* 為產生服務提供者訊息而建立的工作流程顯示在 **[!UICONTROL Jobs on service providers]** 頁簽。 按一下 **[!UICONTROL Detail]** 圖示來顯示選取的工作流程。
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## 傳遞追蹤 {#delivery-tracking}
 
-傳遞清單可透過Campaign節點的&#x200B;**[!UICONTROL Deliveries]**&#x200B;連結取得。
+傳遞清單可透過 **[!UICONTROL Deliveries]** 行銷活動節點的連結。
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -49,10 +49,10 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有關傳送詳細資料的資訊，請參閱[本區段](../../delivery/using/about-message-tracking.md)。
+>有關傳送詳細資料的資訊，請參閱 [本節](../../delivery/using/about-message-tracking.md) 區段。
 
 ## 執行追蹤 {#execution-tracking}
 
-您可以按一下可透過Adobe Campaign首頁存取的&#x200B;**[!UICONTROL Deliveries]**&#x200B;來查詢傳送狀態。 請參閱[傳送追蹤](#delivery-tracking)。
+您可以按一下 **[!UICONTROL Deliveries]**，可透過Adobe Campaign首頁存取。 請參閱 [傳遞追蹤](#delivery-tracking).
 
-行銷活動的&#x200B;**[!UICONTROL Edit > Audit]**&#x200B;標籤中會收集行銷活動中執行之程式的相關資訊。 您可以在此檢視促銷活動中的傳送清單。 [深入瞭解](#tracking-a-campaign)。
+行銷活動中執行之程式的相關資訊，會收集在 **[!UICONTROL Edit > Audit]** 標籤。 您可以在此檢視促銷活動中的傳送清單。 [深入瞭解](#tracking-a-campaign)。

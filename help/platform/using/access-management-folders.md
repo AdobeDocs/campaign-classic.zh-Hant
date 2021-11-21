@@ -23,11 +23,11 @@ ht-degree: 1%
 
 ### 什麼是資料夾 {#about-folders}
 
-資料夾是Adobe Campaign樹中的節點。 通過&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜單按一下右鍵樹可建立這些節點。 依預設，第一個功能表可讓您新增與目前內容對應的資料夾。
+資料夾是Adobe Campaign樹中的節點。 這些節點是透過以滑鼠右鍵按一下樹狀結構，即可建立 **[!UICONTROL Add new folder]** 功能表。 依預設，第一個功能表可讓您新增與目前內容對應的資料夾。
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以自訂Explorer導覽樹。 在本小節](adobe-campaign-workspace.md)中了解配置步驟和最佳實踐[。
+您可以自訂Explorer導覽樹。 了解設定步驟和最佳實務 [在本節](adobe-campaign-workspace.md).
 
 ### 什麼是檢視 {#about-views}
 
@@ -51,8 +51,8 @@ ht-degree: 1%
 
 在以下範例中，我們將建立新資料夾以顯示特定資料：
 
-1. 建立新的&#x200B;**[!UICONTROL Deliveries]**&#x200B;類型資料夾，並將其命名為&#x200B;**Deliveries France**。
-1. 按一下右鍵此資料夾，然後選擇&#x200B;**[!UICONTROL Properties...]**。
+1. 建立新 **[!UICONTROL Deliveries]** 輸入資料夾，並將其命名 **法國**.
+1. 按一下右鍵此資料夾並選擇 **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >查詢編輯器顯示在[此部分](../../platform/using/about-queries-in-campaign.md)中。
+   >查詢編輯器顯示在 [本節](../../platform/using/about-queries-in-campaign.md).
 
    具有下列篩選條件：
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->管理[交易式訊息](../../message-center/using/about-transactional-messaging.md)事件時，不能將&#x200B;**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾設定為執行例項的檢視，因為這可能導致存取權限問題。 如需事件集合的詳細資訊，請參閱[此區段](../../message-center/using/about-event-processing.md#event-collection)。
+>管理 [異動訊息](../../message-center/using/about-transactional-messaging.md) 事件、 **[!UICONTROL Real time events]** 或 **[!UICONTROL Batch events]** 資料夾不得設為執行例項的檢視，因為這可能導致存取正確問題。 如需事件集合的詳細資訊，請參閱 [本節](../../message-center/using/about-event-processing.md#event-collection).
 
 ## 資料夾的權限
 
@@ -84,11 +84,11 @@ ht-degree: 1%
 
 要編輯樹的特定資料夾的權限，請執行以下步驟：
 
-1. 按一下右鍵資料夾，然後選擇&#x200B;**[!UICONTROL Properties...]**。
+1. 按一下右鍵資料夾，然後選取 **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. 按一下&#x200B;**[!UICONTROL Security]**&#x200B;頁簽查看此資料夾上的授權。
+1. 按一下 **[!UICONTROL Security]** 頁簽查看此資料夾上的授權。
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -96,19 +96,19 @@ ht-degree: 1%
 
 若要修改權限，您可以：
 
-* **取代群組或運算子**。要執行此操作，請按一下其中一個具有資料夾權限的群組（或運算子），然後從下拉式清單中選取新群組（或新運算子）:
+* **替換組或運算子**. 要執行此操作，請按一下其中一個具有資料夾權限的群組（或運算子），然後從下拉式清單中選取新群組（或新運算子）:
 
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **授權群組或運算子**。要執行此操作，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並選擇要為此資料夾分配授權的組或運算子。
-* **禁止組或操作員**。要執行此操作，請按一下&#x200B;**[!UICONTROL Delete]**&#x200B;並選擇要從中刪除此資料夾授權的組或運算子。
-* **選取指派給群組或運算子的權限**。要執行此操作，請按一下相關的組或運算子，然後選擇要授予的訪問權限並取消選擇其他訪問權限。
+* **授權群組或運算子**. 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕，然後選擇要為此資料夾分配授權的組或運算子。
+* **禁止組或操作員**. 要執行此操作，請按一下 **[!UICONTROL Delete]** 並選擇要從中刪除此資料夾授權的組或運算子。
+* **選取指派給群組或運算子的權限**. 要執行此操作，請按一下相關的組或運算子，然後選擇要授予的訪問權限並取消選擇其他訪問權限。
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### 傳播權限 {#propagate-permissions}
 
-您可以傳播授權和訪問權限。 要執行此操作，請在資料夾屬性中選取&#x200B;**[!UICONTROL Propagate]**&#x200B;選項。
+您可以傳播授權和訪問權限。 若要這麼做，請選取 **[!UICONTROL Propagate]** 選項。
 
 然後，此窗口中定義的授權將應用於當前節點的所有子資料夾。 然後，您就可以為每個子資料夾過載這些授權。
 
@@ -118,6 +118,6 @@ ht-degree: 1%
 
 ### 授予所有運算子的存取權 {#grant-access-to-all-operators}
 
-在&#x200B;**[!UICONTROL Security]**&#x200B;標籤中，如果選取&#x200B;**[!UICONTROL System folder]**&#x200B;選項，則所有運算子都將有權存取此資料，無論其權限為何。 如果清除了此選項，則必須將運算子（或其組）顯式添加到授權清單中，以便它們具有訪問權限。
+在 **[!UICONTROL Security]** ，如果 **[!UICONTROL System folder]** 選項，則所有運算子都有權存取此資料，無論其權限為何。 如果清除了此選項，則必須將運算子（或其組）顯式添加到授權清單中，以便它們具有訪問權限。
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)

@@ -21,10 +21,10 @@ ht-degree: 55%
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* **[!UICONTROL Journal]**&#x200B;標籤可讓您查看有關執行的記錄訊息。
-* **[!UICONTROL Rejects]**&#x200B;頁簽包含拒絕的記錄。 請參閱[本節](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* 此 **[!UICONTROL Journal]** 索引標籤可讓您查看有關執行的記錄訊息。
+* 此 **[!UICONTROL Rejects]** 頁簽包含拒絕的記錄。 請參閱[本節](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
-在&#x200B;**[!UICONTROL General]**&#x200B;頁簽中， **[!UICONTROL Status]**&#x200B;欄位指示作業的當前狀態。
+在 **[!UICONTROL General]** 標籤 **[!UICONTROL Status]** 欄位指示作業的當前狀態。
 
 每個狀態都由一個特殊的圖示和標籤表示。狀態及其圖示如下：
 
@@ -40,7 +40,7 @@ ht-degree: 55%
 
 * **取消**
 
-   按一下&#x200B;**[!UICONTROL Cancel]**&#x200B;按鈕：正在執行的作業被取消。
+   按一下 **[!UICONTROL Cancel]** 按鈕：正在執行的作業被取消。
 
 * **取消正在進行中**
 
@@ -48,11 +48,11 @@ ht-degree: 55%
 
 * **暫停進行中**
 
-   按一下&#x200B;**[!UICONTROL Pause]**:作業正在暫停。
+   按一下 **[!UICONTROL Pause]**:作業正在暫停。
 
 * **已暫停**
 
-   按一下&#x200B;**[!UICONTROL Pause]**:作業已暫停。 按一下&#x200B;**[!UICONTROL Start]**&#x200B;即可重新啟動。
+   按一下 **[!UICONTROL Pause]**:作業已暫停。 您可以按一下「 」以重新啟動 **[!UICONTROL Start]**.
 
 * **已完成**
 

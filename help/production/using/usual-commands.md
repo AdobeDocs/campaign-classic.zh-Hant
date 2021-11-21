@@ -19,16 +19,16 @@ ht-degree: 3%
 
 本節列出Adobe Campaign中的常用命令。
 
-命令&#x200B;**nlserver**&#x200B;是整個Adobe Campaign應用程式的輸入命令。
+命令 **nlserver** 是整個Adobe Campaign應用程式的input命令。
 
-此命令的語法如下：**nlserver **`<command>`****`<arguments>`****
+此命令的語法如下： **nlserver **`<command>`****`<arguments>`****
 
-參數&#x200B;**`<command>`**&#x200B;對應於模組。
+參數 **`<command>`** 對應至模組。
 
 >[!NOTE]
 >
->* 在任何情況下，您都可以新增&#x200B;**-noconsole**&#x200B;引數，以刪除模組啟動後顯示的註解。
->* 反之，您可以新增引數&#x200B;**-verbose**&#x200B;以顯示更多資訊。
+>* 在任何情況下，您都可以新增 **-noconsole** 用於刪除模組啟動後顯示的注釋的參數。
+>* 反之，您可以新增引數 **-verbose** 以顯示更多資訊。
 
 >
 
@@ -37,9 +37,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要列出所有模組，需要使用&#x200B;**nlserver pdump**&#x200B;命令。
+>若要列出所有模組，您必須使用 **nlserver pdump** 命令。
 
-您可以新增參數&#x200B;**-who**&#x200B;以列出正在進行的連線（資料庫和應用程式）。
+您可以新增參數 **-who** 列出正在進行的連接（資料庫和應用程式）。
 
 ```
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一個有用的命令是&#x200B;**nlserver監視器**。 它列出監視XML檔案(在Adobe Campaign客戶端中獲取，或通過&#x200B;**monitor.jsp**&#x200B;網頁獲取)。
+另一個有用的命令是 **nlserver監視器**. 它會列出監控XML檔案(在Adobe Campaign用戶端中取得，或透過 **monitor.jsp** 網頁)。
 
-您可以新增參數&#x200B;**-missing**&#x200B;以列出缺少的模組（模組錯誤、模組關閉等）
+您可以新增參數 **-missing** 列出缺少的模組（模組、模組關閉等錯誤）
 
 ```
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** 與配置檔案中輸入的實例名稱相對應，或與單實例模 **** 組的預設值相對應。
+>**`<instance>`** 與設定檔案中輸入之執行個體的名稱相對應，或 **預設** 用於單實例模組。
 
 ## 關閉服務 {#shut-down-services}
 
@@ -105,7 +105,7 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >從20.1開始，建議改用下列命令（Linux適用）:**systemctl停止nlserver**
+      >從20.1開始，建議改用下列命令（Linux適用）: **systemctl停止nlserver**
 
    * 在Windows中：
 
@@ -129,17 +129,17 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >從20.1開始，建議改用下列命令（Linux適用）:**systemctl啟動nlserver**
+      >從20.1開始，建議改用下列命令（Linux適用）: **systemctl啟動nlserver**
 
    * 在Windows中：net start nlserver6
 
-* 否則，在Adobe Campaign帳戶中：**nlserver watchdog -svc -noconsole**
+* 否則，在Adobe Campaign帳戶中： **nlserver watchgd -svc -noconsole**
 
 ## config命令 {#the-config-command}
 
-**config**&#x200B;命令允許您管理伺服器配置，包括重新配置資料庫連接。
+此 **設定** 命令允許您管理伺服器配置，包括重新配置資料庫連接。
 
-使用&#x200B;**-setdblogin**&#x200B;參數&#x200B;**nlserver**&#x200B;執行檔的&#x200B;**config**&#x200B;命令。
+使用 **設定** 命令 **nlserver** 可執行檔案 **-setdblogin** 參數。
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,16 +151,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 輸入密碼。
 
-要更改&#x200B;**internal**&#x200B;密碼，請執行以下操作：**nlserver config -internalpassword**
+若要變更 **內部** 密碼： **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->若要使用&#x200B;**Internal**&#x200B;標識符登錄，您必須預先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>若要使用 **內部** 識別碼，您必須預先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 >[!NOTE]
 >
->* 通常，您可以使用&#x200B;**config**&#x200B;命令，而不是手動修改配置檔案
->* 要獲取參數清單，請使用&#x200B;**-?** 參數： **nlserver配置 — ?**
+>* 一般而言，您可以使用，而不是手動修改組態檔 **設定** 命令
+>* 若要取得參數清單，請使用 **-?** 參數： **nlserver配置 — ?**
 >* 若是Oracle資料庫，則不得指定帳戶。 語法如下：
 >
->  nlserver配置 — setdblogin&lt;a0/test6@dbserver:Oracle:
+>  nlserver配置 — setdblogin:Oracle:test6@dbserver

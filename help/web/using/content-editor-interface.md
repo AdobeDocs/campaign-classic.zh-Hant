@@ -23,9 +23,9 @@ DCE編輯窗口可分為三個不同部分。 它們可讓您檢視、修改及�
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. **top**&#x200B;區段是傳送給使用者之訊息的顯示區域。 這些訊息會指出Web應用程式狀態或正在建立的傳送狀態，以及與內容相關的警告和錯誤訊息。 有關詳細資訊，請參閱[HTML內容狀態](content-editing-best-practices.md#html-content-statuses)。
-1. 窗口的&#x200B;**left**&#x200B;的部分是編輯內容的區域。 在此區域中，使用者可使用快顯工具列直接與內容互動：將連結插入影像、變更字型、刪除欄位等。 有關詳細資訊，請參閱[編輯表單](editing-content.md#editing-forms)。
-1. 窗口&#x200B;**right**&#x200B;的部分是控制面板區域。 此區域會為編輯器分組不同的選項，尤其是與設定頁面標題和區塊一般選項相關的選項：添加邊框、將資料庫欄位與輸入區域連結、訪問Web頁屬性等。 有關詳細資訊，請參閱[全域選項](#global-options)和[編輯內容](editing-content.md)區段。
+1. 此 **top** section是傳送給使用者的訊息顯示區域。 這些訊息會指出Web應用程式狀態或正在建立的傳送狀態，以及與內容相關的警告和錯誤訊息。 有關詳細資訊，請參閱 [HTML內容狀態](content-editing-best-practices.md#html-content-statuses).
+1. 區段 **lef** 窗口的是編輯內容的區域。 在此區域中，使用者可使用快顯工具列直接與內容互動：將連結插入影像、變更字型、刪除欄位等。 如需詳細資訊，請參閱 [編輯表單](editing-content.md#editing-forms).
+1. 區段 **右** 窗口是控制面板區域。 此區域會為編輯器分組不同的選項，尤其是與設定頁面標題和區塊一般選項相關的選項：添加邊框、將資料庫欄位與輸入區域連結、訪問Web頁屬性等。 有關詳細資訊，請參閱 [全域選項](#global-options) 和 [編輯內容](editing-content.md) 區段。
 
 ## 全域選項 {#global-options}
 
@@ -37,9 +37,9 @@ DCE編輯窗口可分為三個不同部分。 它們可讓您檢視、修改及�
 
 ![](assets/dce_icons_sidebar.png)
 
-* **顯示/隱藏區塊**&#x200B;圖示可讓您在內容區塊周圍顯示藍格（與`<div>` HTML標籤相對應）。
+* 此 **顯示/隱藏區塊** 圖示可讓您在內容區塊周圍顯示藍格(對應至 `<div>` HTML標籤)。
 
-* **選擇其他內容**&#x200B;圖示可讓使用者從範本（現有範本或現成範本）載入新內容。
+* 此 **選擇其他內容** 圖示可讓使用者從範本（現有範本或現成可用的範本）載入新內容。
 
    ![](assets/dce_popup_templatechoice.png)
 
@@ -47,7 +47,7 @@ DCE編輯窗口可分為三個不同部分。 它們可讓您檢視、修改及�
    >
    >選取的內容會取代目前的內容。
 
-* **另存為範本**&#x200B;圖示可讓您將目前的內容儲存為範本。 您必須輸入範本的標籤和內部名稱。 模板儲存在&#x200B;**[!UICONTROL Resources > Templates > Content templates]**&#x200B;節點中。
+* 此 **另存為範本** 圖示可讓您將目前的內容儲存為範本。 您必須輸入範本的標籤和內部名稱。 範本儲存在 **[!UICONTROL Resources > Templates > Content templates]** 節點。
 
    ![](assets/dce_popup_savetemplate.png)
 
@@ -55,13 +55,13 @@ DCE編輯窗口可分為三個不同部分。 它們可讓您檢視、修改及�
 
    ![](assets/dce_create_fromtemplate.png)
 
-* **頁面屬性**&#x200B;圖示可讓您選取HTML頁面頂端的內容資訊。
+* 此 **頁面屬性** 圖示可讓您選取HTML頁面頂端的內容資訊。
 
    ![](assets/dce_popup_headerhtml.png)
 
    >[!NOTE]
    >
-   >此資訊對應至頁面上的&#x200B;**`<title>`**&#x200B;和&#x200B;**`<meta>`** HTML標籤。
+   >此資訊對應至 **`<title>`** 和 **`<meta>`** HTML頁面上的標籤。
    >
    >關鍵字必須以逗號分隔。
 
@@ -73,17 +73,17 @@ DCE編輯窗口可分為三個不同部分。 它們可讓您檢視、修改及�
 
 您可以：
 
-* 確定一個或多個塊的顯示，請參閱[定義可見性條件](editing-content.md#defining-a-visibility-condition),
-* 定義邊框和框架，請參閱[添加邊框和背景](editing-content.md#adding-a-border-and-background),
-* 定義影像屬性（大小、標題），請參閱[編輯影像屬性](editing-content.md#editing-image-properties),
-* 將資料庫連結到表單元素（輸入區域、複選框），請參閱[更改表單的資料屬性](editing-content.md#changing-the-data-properties-for-a-form),
-* 將表單的一部分設為必填，請參閱[更改表單](editing-content.md#changing-the-data-properties-for-a-form)的資料屬性，
-* 定義按鈕的動作，請參閱[將動作新增至按鈕](editing-content.md#adding-an-action-to-a-button)。
+* 確定一個或多個塊的顯示，請參閱 [定義可見性條件](editing-content.md#defining-a-visibility-condition),
+* 定義邊框和框架，請參閱 [新增邊框和背景](editing-content.md#adding-a-border-and-background),
+* 定義影像屬性（大小、註解），請參閱 [編輯影像屬性](editing-content.md#editing-image-properties),
+* 將資料庫連結到表單元素（輸入區域、核取方塊），請參閱 [變更表單的資料屬性](editing-content.md#changing-the-data-properties-for-a-form),
+* 將表單的一部分設為強制項目，請參閱 [變更表單的資料屬性](editing-content.md#changing-the-data-properties-for-a-form),
+* 定義按鈕的動作，請參閱 [新增動作至按鈕](editing-content.md#adding-an-action-to-a-button).
 
 ## 內容工具列 {#content-toolbar}
 
-工具欄是DCE介面的&#x200B;**彈出元素**，它根據所選塊顯示不同的功能。
+工具列是 **快顯元素** DCE介面的介面，該介面根據所選塊顯示不同的功能。
 
 >[!CAUTION]
 >
->特定工具列功能可讓您設定 HTML 內容的格式。但是，如果頁面包含CSS樣式表，則樣式表中的&#x200B;**指示**&#x200B;可能證明其比工具列所指定的指示具有&#x200B;**優先順序**。
+>特定工具列功能可讓您設定 HTML 內容的格式。不過，如果頁面包含CSS樣式表，則 **說明** 從樣式表上可以看出 **優先順序** 在工具列中指定的指示上。

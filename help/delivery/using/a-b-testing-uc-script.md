@@ -67,16 +67,16 @@ ht-degree: 4%
    vars.deliveryId = delivery.id
 ```
 
-有關指令碼的詳細說明，請參閱[此部分](#details-of-the-script)。
+有關指令碼的詳細說明，請參閱 [本節](#details-of-the-script).
 
 ## 實作 {#implementation}
 
-1. 開啟您的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
-1. 將[指令碼](#example-of-a-script)範例中提供的指令碼複製到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;視窗中。
+1. 開啟 **[!UICONTROL JavaScript code]** 活動。
+1. 複製中提供的指令碼 [指令碼範例](#example-of-a-script) 進入 **[!UICONTROL JavaScript code]** 窗口。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中，輸入指令碼的名稱，即
+1. 在 **[!UICONTROL Label]** 欄位，輸入指令碼的名稱，即
 
    ```
    <%= vars.deliveryId %>
@@ -84,14 +84,14 @@ ht-degree: 4%
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. 關閉&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
+1. 關閉 **[!UICONTROL JavaScript code]** 活動。
 1. 儲存您的工作流程。
 
 ## 指令碼的詳細資訊 {#details-of-the-script}
 
 本節詳細說明指令碼的各個部分及其操作模式。
 
-* 指令碼的第一部分是查詢。 **queryDef**&#x200B;命令允許您從&#x200B;**NmsDelivery**&#x200B;表中恢復通過執行目標工作流建立的傳送，並根據其估計的開啟率對其進行排序，然後恢復來自具有最高開啟率的傳送的資訊。
+* 指令碼的第一部分是查詢。 此 **queryDef** 命令可讓您從 **NmsDelivery** 表格執行目標工作流程所建立的傳送，並根據其預估開啟率來排序傳送，然後會復原來自開啟率最高之傳送的資訊。
 
    ```
    // query the database to find the winner (best open rate)
@@ -120,7 +120,7 @@ ht-degree: 4%
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* 修改重複傳送的標籤，並將字詞&#x200B;**final**&#x200B;新增至該標籤。
+* 已修改重複傳送的標籤，並修改字詞 **fal** 即會新增。
 
    ```
    // append 'final' to the delivery label
@@ -162,12 +162,12 @@ ht-degree: 4%
 
 上述範例可讓您根據電子郵件的開啟率來選取傳送的內容。 您可以調整它，以依據其他特定傳送指標：
 
-* 最佳點擊吞吐量：`[indicators/@recipientClickRatio]`,
-* 最高反應率（電子郵件開啟和郵件中的點按次數）:`[indicators/@reactivity]`,
-* 最低投訴率：`[indicators/@refusedRatio]`（對sortDesc屬性使用false值）,
-* 最高轉換率：`[indicators/@transactionRatio]`,
-* 接收訊息後瀏覽的頁數：`[indicators/@totalWebPage]`,
-* 最低取消訂閱率：`[indicators/@optOutRatio]`,
-* 交易金額：`[indicators/@amount]`。
+* 最佳點擊吞吐量： `[indicators/@recipientClickRatio]`,
+* 最高反應率（電子郵件開啟和郵件中的點按次數）: `[indicators/@reactivity]`,
+* 最低投訴率： `[indicators/@refusedRatio]` （對sortDesc屬性使用false值）,
+* 最高轉換率： `[indicators/@transactionRatio]`,
+* 接收訊息後瀏覽的頁數： `[indicators/@totalWebPage]`,
+* 最低取消訂閱率： `[indicators/@optOutRatio]`,
+* 交易金額： `[indicators/@amount]`.
 
 您現在可以定義最終傳送。 [深入瞭解](a-b-testing-uc-final-delivery.md)。

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-本節詳細說明從v5.11遷移時需要的其他配置。您也應配置[常規配置](../../migration/using/general-configurations.md)部分中詳述的設定。
+本節詳細說明從v5.11遷移時需要的其他配置。您也應配置 [一般配置](../../migration/using/general-configurations.md) 區段。
 
 ## 網站應用程式 {#web-applications}
 
@@ -29,16 +29,16 @@ The webApp ids have been modified during the migration process. Please make sure
 
 Web應用程式的某些元件（例如各種公式欄位）具有@id屬性。 這些用於Web應用程式的XML代碼中，不再以相同方式生成。 它們不會顯示在介面中，而您通常不得使用它們。 但是，在某些情況下，可能@id用屬性來個性化Web應用程式的呈現，例如通過樣式表或使用JavaScript代碼。
 
-在遷移期間，您必須&#x200B;**檢查警告中指定的日誌檔案路徑：**
+在移轉期間，您 **必須** 檢查警告中指定的日誌檔案路徑：
 
-* **檔案不為空**:其中包含的警告涉及遷移前記錄的不一致，且仍然存在。這可以是參考不存在ID之Web應用程式中的JavaScript程式碼。 必須檢查並更正每個錯誤。
+* **檔案不為空**:其中包含的警告涉及遷移前記錄的不一致，且仍然存在。 這可以是參考不存在ID之Web應用程式中的JavaScript程式碼。 必須檢查並更正每個錯誤。
 * **檔案為空**:這表示Adobe Campaign未偵測到任何問題。
 
 無論檔案是否空白，您都必須檢查這些ID是否未用於其他位置的設定（若是如此，請調整設定）。
 
 ## 工作流程 {#workflows}
 
-由於Adobe Campaign安裝目錄的名稱已變更，因此移轉後某些工作流程可能無法運作。 如果工作流程在其其中一個活動中參考nl5目錄，則會引發錯誤。 將此參考替換為&#x200B;**build**。 您可以運行SQL查詢來標識這些工作流（PostgreSQL示例）:
+由於Adobe Campaign安裝目錄的名稱已變更，因此移轉後某些工作流程可能無法運作。 如果工作流程在其其中一個活動中參考nl5目錄，則會引發錯誤。 用替換此引用 **建置**. 您可以運行SQL查詢來標識這些工作流（PostgreSQL示例）:
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -66,19 +66,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html)頁面。
+>如需詳細資訊，請參閱 [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) 頁面。
 
-如果對資料庫結構進行了修改，在配置期間（例如建立特定索引、建立SQL視圖等），則遷移時應採取某些預防措施。 事實上，某些修改可能會因與移轉程式不相容而產生。 例如，建立包含&#x200B;**Timestamp**&#x200B;欄位的SQL視圖與&#x200B;**usetimestamptz**&#x200B;選項不相容。 因此，我們建議您遵循以下建議：
+如果對資料庫結構進行了修改，在配置期間（例如建立特定索引、建立SQL視圖等），則遷移時應採取某些預防措施。 事實上，某些修改可能會因與移轉程式不相容而產生。 例如，建立包含 **時間戳記** 欄位與不相容 **usetimestamtz** 選項。 因此，我們建議您遵循以下建議：
 
 1. 開始遷移之前，請備份資料庫。
 1. 刪除SQL更改。
-1. 根據[移轉至Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)的必要條件一節中詳述的程式執行升級後。
+1. 根據  [移轉至Adobe Campaign 7的必要條件](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) 區段。
    >[!NOTE]
    >
-   >請務必遵循[移轉至Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)的必要條件一節中提供的移轉步驟。
+   >您必須遵循 [移轉至Adobe Campaign 7的必要條件](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) 區段。
 1. 重新整合SQL更改。
 
-在此範例中，已建立&#x200B;**NmcTrackingLogMessages**&#x200B;檢視，且此檢視具有&#x200B;**Timestamp**&#x200B;欄位，名為&#x200B;**tslog**。 在這種情況下，遷移過程會失敗，並出現以下錯誤消息：
+在此範例中， **NmcTrackingLogMessages** 已建立視圖，並且 **時間戳記** 欄位已命名 **tslog**. 在這種情況下，遷移過程會失敗，並出現以下錯誤消息：
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -90,7 +90,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 ## 追蹤 {#tracking}
 
-追蹤公式已修改。 移轉時，舊公式(v5)會取代為新公式(v7)。 如果您在Adobe Campaign v5中使用個人化公式，則必須在Adobe Campaign v7中調整此設定（**NmsTracking_ClickFormula**&#x200B;和&#x200B;**NmsTracking_OpenFormula**&#x200B;選項）。
+追蹤公式已修改。 移轉時，舊公式(v5)會取代為新公式(v7)。 如果您在Adobe Campaign v5中使用個人化公式，此設定必須在Adobe Campaign v7中調整(**NmsTracking_ClickFormula** 和 **NmsTracking_OpenFormula** 選項)。
 
 網站追蹤管理也已修改。 執行v7移轉後，您必須啟動部署精靈以完成Web追蹤的設定。
 
@@ -98,19 +98,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 提供三種模式：
 
-* **工作階段網頁追蹤**:如果尚 **[!UICONTROL Leads]** 未安裝軟體包，則預設會選取此選項。此選項是效能上最理想的選項，可讓您限制追蹤記錄檔的大小。
+* **工作階段網路追蹤**:若 **[!UICONTROL Leads]** 尚未安裝軟體包，預設情況下會選擇此選項。 此選項是效能上最理想的選項，可讓您限制追蹤記錄檔的大小。
 * **永久性網頁追蹤**
-* **匿名網路追蹤**:如果安 **[!UICONTROL Leads]** 裝了軟體包，預設會選取此選項。這是最耗用資源的選項。 如上所述，必須對&#x200B;**sSourceId**&#x200B;欄建立索引（在追蹤表格和&#x200B;**CrmIncomingLead**&#x200B;表格中）。
+* **匿名網路追蹤**:若 **[!UICONTROL Leads]** 已安裝套件，預設會選取此選項。 這是最耗用資源的選項。 如上所述， **sSourceId** 欄必須已編列索引(在追蹤表格和 **CrmIncomingLead** 表格)。
 
 >[!NOTE]
 >
->有關這三種模式的詳細資訊，請參閱[此部分](../../configuration/using/about-web-tracking.md)。
+>有關這三種模式的詳細資訊，請參閱 [本節](../../configuration/using/about-web-tracking.md).
 
 ## Adobe Campaign v7樹結構 {#campaign-vseven-tree-structure}
 
 在移轉期間，會根據v7標準自動重新組織樹狀結構。 新資料夾將被添加，過時資料夾將被刪除，其內容將放在「移動」資料夾中。 移轉後，必須檢查此資料夾中的所有項目，顧問必須決定保留或刪除每個項目。 然後，要保留的物品必須移至正確位置。
 
-已新增選項，以停用導覽樹的自動移轉。 此操作現在為手動操作。 不會刪除過時的資料夾，也不會新增新資料夾。 只有在現成的v5導覽樹狀結構發生太多變更時，才應使用此選項。 在移轉前，在&#x200B;**[!UICONTROL Administration > Options]**&#x200B;節點中將選項新增至主控台：
+已新增選項，以停用導覽樹的自動移轉。 此操作現在為手動操作。 不會刪除過時的資料夾，也不會新增新資料夾。 只有在現成的v5導覽樹狀結構發生太多變更時，才應使用此選項。 在移轉前，將選項新增至主控台，位於 **[!UICONTROL Administration > Options]** 節點：
 
 * 內部名稱：NlMigration_KeepFolderStructure
 * 資料類型：整數

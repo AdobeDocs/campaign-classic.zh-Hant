@@ -27,7 +27,7 @@ ht-degree: 2%
 
 若要設定變更維度活動，請套用下列步驟：
 
-1. 透過&#x200B;**[!UICONTROL Change dimension]**&#x200B;欄位選取新的目標維度。
+1. 透過 **[!UICONTROL Change dimension]** 欄位。
 
    ![](assets/s_user_change_dimension_param1.png)
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
    當您選擇僅保留一條記錄時，工作架構中會顯示一個集合：此集合表示在最終結果中不會定位的所有記錄（因為只保留一個記錄）。 與所有其他集合一樣，此集合可讓您計算欄中的匯總或復原資訊。
 
-   例如，如果您將&#x200B;**[!UICONTROL Customers]**&#x200B;維度變更為&#x200B;**[!UICONTROL Recipients]**&#x200B;維度，則可在新增購買次數時鎖定特定商店的客戶。
+   例如，如果您變更 **[!UICONTROL Customers]** 維度 **[!UICONTROL Recipients]** 維度中，則可以在新增購買次數時，鎖定特定商店的客戶。
 
 1. 如果您選擇不保留所有這些資訊，則可以配置重複管理模式。
 
@@ -47,23 +47,23 @@ ht-degree: 2%
 
    在上述範例中，收件者的電子郵件地址會先刪除重複項目，然後視需要刪除其帳號。
 
-1. **[!UICONTROL Result]**&#x200B;標籤可讓您新增其他資訊。
+1. 此 **[!UICONTROL Result]** 標籤可讓您新增其他資訊。
 
-   例如，您可以使用&#x200B;**Substring**&#x200B;類型函式，根據郵遞區號來復原縣。 操作步驟：
+   例如，您可以使用 **子字串** 類型函式。 操作步驟：
 
-   * 按一下&#x200B;**[!UICONTROL Add data...]**&#x200B;連結並選取&#x200B;**[!UICONTROL Data linked to the filtering dimension]**。
+   * 按一下 **[!UICONTROL Add data...]** 連結和選取 **[!UICONTROL Data linked to the filtering dimension]**.
 
       ![](assets/wf_change-dimension_sample_01.png)
 
       >[!NOTE]
       >
-      >有關建立和管理其他列的資訊，請參閱[Adding data](query.md#adding-data)。
+      >有關建立和管理其他列的資訊，請參閱 [新增資料](query.md#adding-data).
 
-   * 選取先前的目標維度（軸切換前），並在收件者的&#x200B;**[!UICONTROL Location]**&#x200B;子樹中選取&#x200B;**[!UICONTROL Zip Code]**，然後按一下&#x200B;**[!UICONTROL Edit expression]**。
+   * 選取上一個目標維度（軸切換前），然後選取 **[!UICONTROL Zip Code]** 收件者 **[!UICONTROL Location]** 子樹，然後按一下 **[!UICONTROL Edit expression]**.
 
       ![](assets/wf_change-dimension_sample_02.png)
 
-   * 按一下&#x200B;**[!UICONTROL Advanced selection]**&#x200B;並選擇&#x200B;**[!UICONTROL Edit the formula using an expression]**。
+   * 按一下 **[!UICONTROL Advanced selection]** 選擇 **[!UICONTROL Edit the formula using an expression]**.
 
       ![](assets/wf_change-dimension_sample_03.png)
 

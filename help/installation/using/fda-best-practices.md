@@ -19,7 +19,7 @@ ht-degree: 7%
 
 ## 使用外部資料最佳化電子郵件個人化 {#optimizing-email-personalization-with-external-data}
 
-您可以在專用的工作流程中預先處理訊息個人化。 若要執行此操作，請使用傳送屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤中提供的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。
+您可以在專用的工作流程中預先處理訊息個人化。 若要執行此作業，請使用 **[!UICONTROL Prepare the personalization data with a workflow]** 選項，可在 **[!UICONTROL Analysis]** 標籤。
 
 在傳遞分析期間，此選項會自動建立並執行工作流程，該工作流程會將連結到目標的所有資料儲存在臨時表中，包括來自連結到外部資料庫的表的資料。
 
@@ -29,13 +29,13 @@ ht-degree: 7%
 
 在多個Adobe Campaign工作流程活動中，您可以使用儲存在外部資料庫中的資料。
 
-* **篩選外部資料**  — 查詢 [](../../workflow/using/targeting-data.md#selecting-data) 活動可讓您新增外部資料，並在定義的篩選設定中使用它。如需詳細資訊，請參閱[此頁面](../../workflow/using/targeting-data.md#selecting-data)。
+* **篩選外部資料** - [查詢](../../workflow/using/targeting-data.md#selecting-data) 活動可讓您新增外部資料，並在定義的篩選設定中使用。 如需詳細資訊，請參閱[此頁面](../../workflow/using/targeting-data.md#selecting-data)。
 
-* **建立子集**  — 「拆分」 [](../../workflow/using/split.md) 活動允許您建立子集。您可以使用外部資料來定義要使用的篩選條件。 如需詳細資訊，請參閱[此頁面](../../workflow/using/split.md)。
+* **建立子集** - [分割](../../workflow/using/split.md) 活動可讓您建立子集。 您可以使用外部資料來定義要使用的篩選條件。 如需詳細資訊，請參閱[此頁面](../../workflow/using/split.md)。
 
-* **載入外部資料庫**  — 您可以在資料載入 [](../../workflow/using/data-loading--rdbms-.md) (RDBMS)活動中使用外部資料。在[本頁](../../workflow/using/data-loading--rdbms-.md)中瞭解更多。
+* **載入外部資料庫**  — 您可以在 [資料載入](../../workflow/using/data-loading--rdbms-.md) (RDBMS)活動。 在[本頁](../../workflow/using/data-loading--rdbms-.md)中瞭解更多。
 
-* **新增資訊和連結**  — 擴充 [](../../workflow/using/enrichment.md) 活動可讓您新增其他資料至工作流程的工作表，以及連結至外部表格。在此內容中，它可使用外部資料庫的資料。 在[本頁](../../workflow/using/enrichment.md)中瞭解更多。
+* **新增資訊和連結** - [擴充](../../workflow/using/enrichment.md) 活動可讓您新增其他資料至工作流程的工作表，以及連結至外部表格。 在此內容中，它可使用外部資料庫的資料。 在[本頁](../../workflow/using/enrichment.md)中瞭解更多。
 
 ## FDA限制 {#limitations}
 

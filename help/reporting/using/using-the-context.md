@@ -17,17 +17,17 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-當您想以&#x200B;**[!UICONTROL tables]**&#x200B;或&#x200B;**[!UICONTROL charts]**&#x200B;的形式表示資料時，可從兩個來源獲取資料：新查詢（請參閱[定義資料的直接篩選](#defining-a-direct-filter-on-data)）或報表內容（請參閱[使用內容資料](#using-context-data)）。
+若您想以 **[!UICONTROL tables]** 或 **[!UICONTROL charts]**，可從兩個來源取用：新查詢(請參閱 [定義資料的直接篩選](#defining-a-direct-filter-on-data))或報表內容(請參閱 [使用內容資料](#using-context-data))。
 
 ## 定義資料的直接篩選 {#defining-a-direct-filter-on-data}
 
 ### 篩選資料 {#filtering-data}
 
-建置報表時，使用&#x200B;**[!UICONTROL Query]**&#x200B;類型活動並非必要項目。 您可以直接在組成報表的表格和圖表中篩選資料。
+使用 **[!UICONTROL Query]** 建立報表時，「類型活動」不是必填項目。 您可以直接在組成報表的表格和圖表中篩選資料。
 
-這可讓您透過報表的&#x200B;**[!UICONTROL Page]**&#x200B;活動直接選取要顯示在報表中的資料。
+這可讓您選取要直接透過 **[!UICONTROL Page]** 報表的活動。
 
-要執行此操作，請按一下&#x200B;**[!UICONTROL Data]**&#x200B;標籤中的&#x200B;**[!UICONTROL Filter data...]**&#x200B;連結：此連結可讓您存取運算式編輯器，以定義要分析之資料的查詢。
+若要這麼做，請按一下 **[!UICONTROL Filter data...]** 連結 **[!UICONTROL Data]** 標籤：此連結可讓您存取運算式編輯器，以定義要分析之資料的查詢。
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 在下列範例中，我們希望圖表只顯示居住在法國的收件者設定檔，以及當年購買的收件者設定檔。
 
-若要定義此篩選器，請在圖表中放置頁面並加以編輯。 按一下&#x200B;**[!UICONTROL Filter data]**&#x200B;連結，然後建立符合您要顯示之資料的篩選器。 如需在Adobe Campaign中建立查詢的詳細資訊，請參閱[此區段](../../platform/using/about-queries-in-campaign.md)。
+若要定義此篩選器，請在圖表中放置頁面並加以編輯。 按一下 **[!UICONTROL Filter data]** 連結，並建立符合您要顯示之資料的篩選器。 如需在Adobe Campaign中建立查詢的詳細資訊，請參閱 [本節](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -55,8 +55,8 @@ ht-degree: 3%
 
 1. 將頁面放入圖表中並進行編輯。
 1. 建立樞紐分析表。
-1. 轉到&#x200B;**[!UICONTROL Data]**&#x200B;頁簽，並選擇要使用的多維資料集。
-1. 按一下&#x200B;**[!UICONTROL Filter data...]**&#x200B;連結並定義下列查詢，以從公司清單中移除Adobe。
+1. 前往 **[!UICONTROL Data]** 頁簽，然後選擇要使用的多維資料集。
+1. 按一下 **[!UICONTROL Filter data...]** 連結並定義下列查詢，以從公司清單中移除Adobe。
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -66,20 +66,20 @@ ht-degree: 3%
 
 ## 使用內容資料 {#using-context-data}
 
-若要以&#x200B;**[!UICONTROL table]**&#x200B;或&#x200B;**[!UICONTROL chart]**&#x200B;的形式呈現資料，資料可來自報表內容。
+以 **[!UICONTROL table]** 或 **[!UICONTROL chart]**，資料可來自報表內容。
 
-在包含表格或圖表的頁面中， **[!UICONTROL Data]**&#x200B;標籤可讓您選取資料來源。
+在包含表格或圖表的頁面中， **[!UICONTROL Data]** 索引標籤可讓您選取資料來源。
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* **[!UICONTROL New query]**&#x200B;選項可讓您建立查詢以收集資料。 有關詳細資訊，請參閱[定義資料的直接篩選](#defining-a-direct-filter-on-data)。
-* **[!UICONTROL Context data]**&#x200B;選項可讓您使用輸入資料：報表的上下文與包含圖表或表格之頁面的入站轉變中包含的資訊一致。 例如，此內容可能包含透過&#x200B;**[!UICONTROL Query]**&#x200B;活動收集的資料，該活動放置在&#x200B;**[!UICONTROL Page]**&#x200B;活動之前，且您需要指定報表所關注的表格和欄位。
+* 此 **[!UICONTROL New query]** 選項可讓您建立查詢以收集資料。 有關詳細資訊，請參閱 [定義資料的直接篩選](#defining-a-direct-filter-on-data).
+* 此 **[!UICONTROL Context data]** 選項可讓您使用輸入資料：報表的上下文與包含圖表或表格之頁面的入站轉變中包含的資訊一致。 例如，此內容可能包含透過 **[!UICONTROL Query]** 放在 **[!UICONTROL Page]** 活動，而您需要指定報表所關注的表格和欄位。
 
 例如，在查詢方塊中，為收件者建立下列查詢：
 
 ![](assets/s_ncs_advuser_report_datasource_2.png)
 
-然後在報表中指出資料的來源，在此情況下：**[!UICONTROL Data from the context]**。
+然後在報表中指出資料的來源，在此情況下： **[!UICONTROL Data from the context]**.
 
 資料位置會自動推斷。 如有必要，您可以強制資料路徑。
 

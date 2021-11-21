@@ -19,9 +19,9 @@ ht-degree: 7%
 
 本章說明如何設定擴充功能結構，以擴充Adobe Campaign資料庫的概念資料模型。
 
-如需深入了解Campaign內建表格及其互動，請參閱[Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
+如需深入了解Campaign內建表格及其互動，請參閱 [Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html).
 
-並以 XML 描述了應用程式中資料的實體和邏輯結構。它遵循Adobe Campaign特有的語法，稱為&#x200B;**schema**。
+並以 XML 描述了應用程式中資料的實體和邏輯結構。它遵循Adobe Campaign特有的語法，稱為 **綱要**.
 
 架構是與資料庫表關聯的XML文檔。 它定義了資料結構並描述了表的SQL定義：
 
@@ -46,9 +46,9 @@ ht-degree: 7%
 
 ## 結構的語法 {#syntax-of-schemas}
 
-架構的根元素為&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
+架構的根元素為 **`<srcschema>`**. 它包含 **`<element>`** 和 **`<attribute>`** 子元素。
 
-第一個&#x200B;**`<element>`**&#x200B;子元素與實體的根重合。
+第一個 **`<element>`** 子元素與實體的根重合。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,15 +68,15 @@ ht-degree: 7%
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-**`<element>`**&#x200B;標籤定義實體元素的名稱。 **`<attribute>`** 架構的標籤定義了已連結的標 **`<element>`** 簽中的屬性名稱。
+此 **`<element>`** 標籤定義實體元素的名稱。 **`<attribute>`** 架構的標籤定義 **`<element>`** 已連結的標籤。
 
 ## 方案的標識 {#identification-of-a-schema}
 
 資料結構以其名稱及其命名空間來識別。
 
-命名空間可讓您依感興趣區域對一組結構進行分組。 例如， **cus**&#x200B;命名空間用於客戶特定配置(**customers**)。
+命名空間可讓您依感興趣區域對一組結構進行分組。 例如， **cus** 命名空間用於客戶專屬設定(**客戶**)。
 
-架構的識別索引鍵是使用命名空間建立的字串，以及以冒號分隔的名稱；例如：**cus:recipient**。
+架構的識別索引鍵是使用命名空間建立的字串，以及以冒號分隔的名稱；例如： **cus:recipient**.
 
 >[!IMPORTANT]
 >
@@ -84,5 +84,5 @@ ht-degree: 7%
 >
 >識別碼不得以數字字元開頭。
 >
->系統會保留下列命名空間，以供Adobe Campaign應用程式作業所需之系統實體的說明使用，且不得使用：**xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**。
+>系統會保留下列命名空間，以供Adobe Campaign應用程式作業所需之系統實體的說明使用，且不得使用： **xtk**, **nl**, **nms**, **ncm**, **溫度**, **ncl**, **crm**, **xxl**.
 

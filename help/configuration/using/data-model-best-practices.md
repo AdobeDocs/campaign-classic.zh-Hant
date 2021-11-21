@@ -19,9 +19,9 @@ ht-degree: 1%
 
 本檔案概述設計Adobe Campaign資料模型時的主要建議。
 
-如需深入了解Campaign內建表格及其互動，請參閱[此區段](../../configuration/using/about-data-model.md)區段。
+如需深入了解Campaign內建表格及其互動，請參閱 [本節](../../configuration/using/about-data-model.md) 區段。
 
-請閱讀[本檔案](../../configuration/using/about-schema-reference.md)，以開始使用Campaign綱要。 了解如何設定擴充功能結構，以在[本檔案](../../configuration/using/about-schema-edition.md)中擴充Adobe Campaign資料庫的概念資料模型。
+閱讀 [本檔案](../../configuration/using/about-schema-reference.md) 以開始使用Campaign綱要。 了解如何設定擴充功能結構，以擴充Adobe Campaign資料庫的概念資料模型，位於 [此文檔](../../configuration/using/about-schema-edition.md).
 
 ## 概覽 {#overview}
 
@@ -37,17 +37,17 @@ Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可協助您
 
 雖然大部分的電子郵件服務提供者都透過清單導向方法與客戶通訊，但Adobe Campaign需仰賴關係資料庫，才能運用客戶及其屬性的更廣泛檢視。
 
-下圖顯示以客戶為中心的方法。 以灰色顯示的&#x200B;**收件者**&#x200B;表格代表正在建立所有內容的主要客戶表格：
+下圖顯示以客戶為中心的方法。 此 **收件者** 以灰色顯示的表格代表正在構建所有內容的主要客戶表：
 
 ![](assets/customer-centric-data-model.png)
 
-要訪問每個表的說明，請轉至&#x200B;**[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選擇資源，然後按一下&#x200B;**[!UICONTROL Documentation]**&#x200B;頁簽。
+若要存取每個表格的說明，請前往 **[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選取資源，然後按一下 **[!UICONTROL Documentation]** 標籤。
 
-Adobe Campaign預設資料模型顯示在[本檔案](../../configuration/using/data-model-description.md)中。
+Adobe Campaign預設資料模型顯示於 [此文檔](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Adobe Campaign Classic可建立自訂客戶表格。 但是，在大多數情況下，建議使用標準[收件者表](../../configuration/using/about-data-model.md#default-recipient-table)，該表已預先建立其他表和功能。
+>Adobe Campaign Classic可建立自訂客戶表格。 但是，在大多數情況下，建議使用標準 [收件者表格](../../configuration/using/about-data-model.md#default-recipient-table) 已預先建立其他表和功能。
 
 ### Adobe Campaign的資料 {#data-for-campaign}
 
@@ -59,9 +59,9 @@ Adobe Campaign預設資料模型顯示在[本檔案](../../configuration/using/d
 
 要決定在Adobe Campaign是否需要某個屬性，請問自己是否屬於以下類別之一：
 
-* 用於&#x200B;**segmentation**&#x200B;的屬性
-* 用於&#x200B;**資料管理進程**&#x200B;的屬性（例如聚合計算）
-* 用於&#x200B;**個人化**&#x200B;的屬性
+* 用於的屬性 **細分**
+* 用於的屬性 **資料管理流程** （例如匯總計算）
+* 用於的屬性 **個人化**
 
 若未落入其中任何一個，您很可能在Adobe Campaign中不需要此屬性。
 
@@ -70,21 +70,21 @@ Adobe Campaign預設資料模型顯示在[本檔案](../../configuration/using/d
 若要確保系統的良好架構和效能，請遵循下列最佳實務，在Adobe Campaign中設定資料。
 
 * 大型表格大多應具有數值欄位，並包含參考表格的連結（使用值清單時）。
-* **expr**&#x200B;屬性允許將架構屬性定義為計算欄位，而非表中的物理集值。 這可以讓您以不同格式（例如年齡和出生日期）存取資訊，而不需要儲存這兩個值。 這是避免重複欄位的好方法。 例如，「收件者」表格會使用網域的運算式，而此運算式已出現在電子郵件欄位中。
-* 但是，當運算式計算複雜時，不建議使用&#x200B;**expr**&#x200B;屬性作為即時計算，可能會影響查詢的效能。
-* **XML**&#x200B;類型是避免建立過多欄位的好方法。 但它也佔用了磁碟空間，因為它使用資料庫中的CLOB列。 它還可能導致複雜的SQL查詢，並可能影響效能。
-* **string**&#x200B;欄位的長度應一律以欄定義。 依預設，Adobe Campaign中的最大長度為255，但如果您已知道大小不會超過較短的長度，則Adobe建議將欄位保持在較短的長度。
+* 此 **expr** 屬性可將方案屬性定義為計算欄位，而非表中的物理集值。 這可以讓您以不同格式（例如年齡和出生日期）存取資訊，而不需要儲存這兩個值。 這是避免重複欄位的好方法。 例如，「收件者」表格會使用網域的運算式，而此運算式已出現在電子郵件欄位中。
+* 不過，當運算式計算複雜時，不建議使用 **expr** 屬性即時計算可能會影響查詢的效能。
+* 此 **XML** 類型是避免建立太多欄位的好方法。 但它也佔用了磁碟空間，因為它使用資料庫中的CLOB列。 它還可能導致複雜的SQL查詢，並可能影響效能。
+* 長度 **字串** 欄應一律以欄定義。 依預設，Adobe Campaign中的最大長度為255，但如果您已知道大小不會超過較短的長度，則Adobe建議將欄位保持在較短的長度。
 * 如果您確定源系統中的欄位被高估且無法達到，則可以接受在Adobe Campaign中的欄位比在源系統中的欄位短。 這可能表示Adobe Campaign中字串較短或整數較小。
 
 ### 欄位選擇 {#choice-of-fields}
 
 如果欄位具有定位或個人化目的，則必須將其儲存在表格中。 換句話說，如果欄位未用來傳送個人化電子郵件，或用作查詢中的標準，則會佔用磁碟空間，但是沒用。
 
-針對混合式和內部部署例項，FDA（同盟資料存取，此選用功能可存取外部資料）涵蓋在行銷活動程式期間需要新增「即時」欄位。 如果您有FDA，則不需要匯入所有項目。 有關詳細資訊，請參閱[關於同盟資料存取](../../installation/using/about-fda.md)。
+針對混合式和內部部署例項，FDA（同盟資料存取，此選用功能可存取外部資料）涵蓋在行銷活動程式期間需要新增「即時」欄位。 如果您有FDA，則不需要匯入所有項目。 有關詳細資訊，請參閱 [關於同盟資料存取](../../installation/using/about-fda.md).
 
 ### 密鑰選擇 {#choice-of-keys}
 
-除了大多數表中預設定義的&#x200B;**autopk**&#x200B;之外，您還應考慮添加一些邏輯或業務密鑰（帳號、客戶端編號等）。 它稍後可用於匯入/調解或資料包。 有關詳細資訊，請參閱[標識符](#identifiers)。
+除了 **奧托普** 預設在大多數表中定義，您應考慮添加一些邏輯或業務密鑰（帳戶號、客戶端號等）。 它稍後可用於匯入/調解或資料包。 有關詳細資訊，請參閱 [識別碼](#identifiers).
 
 高效的密鑰對效能至關重要。 數值資料類型應一律作為表格的索引鍵。
 
@@ -106,8 +106,8 @@ Adobe Campaign資源有三個識別碼，且可以新增其他識別碼。
 
 | 識別碼 | 說明 | 最佳實務 |
 |--- |--- |--- |
-| Id | <ul><li>id是Adobe Campaign表的物理主鍵。 對於現成的表，它是從序列中生成的32位數字</li><li>此識別碼通常對特定Adobe Campaign例項不重複。 </li><li>自動產生的ID可顯示在架構定義中。 搜尋&#x200B;*autopk=&quot;true&quot;*&#x200B;屬性。</li></ul> | <ul><li>自動產生的識別碼不應作為工作流程或套件定義中的參考。</li><li>不應假設ID一律會是遞增的數字。</li><li>現成可用表格中的id是32位元數字，此類型不應變更。 此數字取自於區段中以相同名稱涵蓋的「序列」。</li></ul> |
-| 名稱（或內部名稱） | <ul><li>此資訊是表中記錄的唯一標識符。 此值可手動更新，通常具有產生的名稱。</li><li>此識別碼會在部署至不同的Adobe Campaign例項時保留其值，且不應為空。</li></ul> | <ul><li>如果要將物件從環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當對象具有命名空間屬性（例如&#x200B;*schema*）時，此通用命名空間將用於所有建立的自定義對象。 不應使用某些保留的命名空間：*nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*。</li><li>當物件沒有任何命名空間時（例如&#x200B;*workflow*&#x200B;或&#x200B;*delivery*），此命名空間概念將新增為內部名稱物件的前置詞：*namespaceMyObjectName*。</li><li>請勿使用特殊字元，例如空格&quot; &quot;、半欄&quot;:&quot;或連字型大小&quot;-&quot;。 所有這些字元都將替換為底線「_」（允許的字元）。 例如，「abc-def」和「abc:def」會儲存為「abc_def」並互相覆寫。</li></ul> |
+| Id | <ul><li>id是Adobe Campaign表的物理主鍵。 對於現成的表，它是從序列中生成的32位數字</li><li>此識別碼通常對特定Adobe Campaign例項不重複。 </li><li>自動產生的ID可顯示在架構定義中。 搜尋 *autopk=&quot;true&quot;* 屬性。</li></ul> | <ul><li>自動產生的識別碼不應作為工作流程或套件定義中的參考。</li><li>不應假設ID一律會是遞增的數字。</li><li>現成可用表格中的id是32位元數字，此類型不應變更。 此數字取自於區段中以相同名稱涵蓋的「序列」。</li></ul> |
+| 名稱（或內部名稱） | <ul><li>此資訊是表中記錄的唯一標識符。 此值可手動更新，通常具有產生的名稱。</li><li>此識別碼會在部署至不同的Adobe Campaign例項時保留其值，且不應為空。</li></ul> | <ul><li>如果要將物件從環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當對象具有命名空間屬性時(*綱要* 例如，此通用命名空間將用於所有建立的自訂物件。 不應使用某些保留的命名空間： *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>當物件沒有任何命名空間時(*工作流程* 或 *傳遞* 例如)，此命名空間概念會新增為內部名稱物件的前置詞： *namespaceMyObjectName*.</li><li>請勿使用特殊字元，例如空格&quot; &quot;、半欄&quot;:&quot;或連字型大小&quot;-&quot;。 所有這些字元都將替換為底線「_」（允許的字元）。 例如，「abc-def」和「abc:def」會儲存為「abc_def」並互相覆寫。</li></ul> |
 | 標籤 | <ul><li>標籤是Adobe Campaign中物件或記錄的業務識別碼。</li><li>此對象允許空格和特殊字元。</li><li>它不能保證記錄的獨特性。</li></ul> | <ul><li>建議您判斷物件標籤的結構。</li><li>這是最方便使用者為Adobe Campaign使用者識別記錄或物件的解決方案。</li></ul> |
 
 ## 自訂內部索引鍵 {#custom-internal-keys}
@@ -132,11 +132,11 @@ Adobe Campaign資源有三個識別碼，且可以新增其他識別碼。
 
 Adobe Campaign主索引鍵是所有現成可用表格的自動產生id，而自訂表格則可能相同。 如需詳細資訊，請參閱[本節](#identifiers)。
 
-此值取自於&#x200B;**sequence**，該序列是用於生成編號序列的資料庫對象。
+此值取自於 **序列**，此資料庫對象用於生成編號序列。
 
 序列有兩種類型：
-* **共用**:多個表格會從相同序列中挑選其id。這表示，如果一個表使用ID「X」，則共用相同序列的其他表將沒有具有該ID「X」的記錄。 **** XtkNewId是Adobe Campaign中可用的預設共用序列。
-* **專用**:只有一個表格會從序列中挑選id。序列名稱通常包含表名。
+* **共用**:多個表格會從相同序列中挑選其id。 這表示，如果一個表使用ID「X」，則共用相同序列的其他表將沒有具有該ID「X」的記錄。 **XtkNewId** 是Adobe Campaign中可用的預設共用序列。
+* **專用**:只有一個表格會從序列中挑選id。 序列名稱通常包含表名。
 
 >[!IMPORTANT]
 >
@@ -151,8 +151,8 @@ Adobe Campaign主索引鍵是所有現成可用表格的自動產生id，而自�
 依預設，自訂序列的值將介於+1,000到+2.1BB之間。 技術上，啟用負ID即可取得4BB的完整範圍。 這應謹慎使用，從負數到正數交叉時，會遺失一個id:Adobe Campaign通常會在產生的SQL查詢中忽略記錄0。
 
 **相關主題：**
-* 有關&#x200B;**序列自動生成**&#x200B;功能的詳細資訊，請參閱[本文檔](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html)。
-* 如需序列耗盡的詳細資訊，請觀看此影片[。](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)
+* 如需 **序列自動生成** 功能，請參閱 [此文檔](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html).
+* 欲知序列耗盡的更多資訊，請看 [此影片](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## 索引 {#indexes}
 
@@ -176,19 +176,19 @@ Adobe建議定義其他索引，因為這可能改善效能。
 ### 範例
 
 管理索引可能會變得非常複雜，因此了解索引的運作方式非常重要。 為了說明此複雜性，我們以一個基本範例來說明，例如透過篩選名字和姓氏來搜尋收件者。 操作步驟：
-1. 移至列出資料庫中所有收件者的資料夾。 如需詳細資訊，請參閱[管理設定檔](../../platform/using/managing-profiles.md)。
-1. 按一下右鍵&#x200B;**[!UICONTROL First name]**&#x200B;欄位。
+1. 移至列出資料庫中所有收件者的資料夾。 有關詳細資訊，請參閱 [管理設定檔](../../platform/using/managing-profiles.md).
+1. 以滑鼠右鍵按一下 **[!UICONTROL First name]** 欄位。
 1. 選取 **[!UICONTROL Filter on this field]**。
 
    ![](assets/data-model-index-example.png)
 
-1. 對&#x200B;**[!UICONTROL Last name]**&#x200B;欄位重複此操作。
+1. 對 **[!UICONTROL Last name]** 欄位。
 
 兩個對應的篩選器會新增至畫面頂端。
 
 ![](assets/data-model-index-search.png)
 
-您現在可以根據各種篩選條件，對&#x200B;**[!UICONTROL First name]**&#x200B;和&#x200B;**[!UICONTROL Last name]**&#x200B;欄位執行搜尋篩選。
+您現在可以對 **[!UICONTROL First name]** 和 **[!UICONTROL Last name]** 欄位。
 
 現在，若要加快對這些篩選器的搜尋，您可以新增索引。 但應該使用哪些索引？
 
@@ -204,7 +204,7 @@ Adobe建議定義其他索引，因為這可能改善效能。
 | 名字等於「Johnny」，姓氏等於「Smith」 | 已使用 | 未使用 | 未使用 | 由於同一查詢中同時搜索了兩個屬性，因此將只使用結合這兩個屬性的索引。 |
 | 姓氏等於「Smith」 | 未使用 | 未使用 | 已使用 | 索引中的屬性順序被考慮在內。 如果不符合此順序，則可能不使用索引。 |
 | 名字以&quot;Joh&quot;開頭 | 已使用 | 已使用 | 未使用 | 「左搜索」將啟用索引。 |
-| 名字的結尾是「nny」 | 未使用 | 未使用 | 未使用 | 「正確搜索」將禁用索引，並執行完整掃描。 某些特定索引類型可處理此使用案例，但預設無法在Adobe Campaign中使用。 |
+| 名字的結尾是「nny」 | 未使用 | 未使用 | 未使用 | 「正確搜索」將禁用索引，並執行完整掃描。 某些特定索引類型可以處理此使用案例，但預設情況下無法在Adobe Campaign中使用。 |
 | 名字包含「John」 | 未使用 | 未使用 | 未使用 | 這是「左」和「右」搜尋的組合。 因為後者，它將禁用索引，並執行完整掃描。 |
 | 名字等於「john」 | 未使用 | 未使用 | 未使用 | 索引區分大小寫。 要使其不區分大小寫，應建立包含SQL函式(如&quot;upper(firstname)&quot;)的特定索引。 您應該對其他資料轉換(例如「unaccent(firstname)」)執行相同操作。 |
 
@@ -214,7 +214,7 @@ Adobe建議定義其他索引，因為這可能改善效能。
 
 請注意大表上的「自己」完整性。 刪除具有「自有」完整性的寬表的記錄可以停止實例。 表已鎖定，且逐個刪除。 因此，最好對具有大容量的子表使用「中性」完整性。
 
-將連結聲明為外部連接對效能不利。 零ID記錄模擬外部聯接功能。 如果連結使用autopk，則不需要聲明外部聯接。
+將連結聲明為外部連接對效能不利。 零ID記錄模擬外部連接功能。 如果連結使用autopk，則不需要聲明外部聯接。
 
 雖然可以在工作流中連接任何表，但Adobe建議直接在資料結構定義中定義資源之間的公用連結。
 
@@ -228,7 +228,7 @@ Adobe建議定義其他索引，因為這可能改善效能。
 
 索引將新增至連結中使用的屬性。
 
-此   建立者連結和上次修改者連結在許多表格中顯示。 如果業務未使用此資訊，則可通過在連結上使用屬性noDbIndex來禁用索引。
+建立者連結和上次修改者連結在許多表格中顯示。 如果業務未使用此資訊，則可通過在連結上使用屬性noDbIndex來禁用索引。
 
 ### 基數 {#cardinality}
 
@@ -238,7 +238,7 @@ Adobe建議定義其他索引，因為這可能改善效能。
 
 請注意，連結的反向基數預設為(N)。 通過將屬性revCardinality=&#39;single&#39;添加到連結定義中，可以定義連結(1-1)。
 
-如果用戶不能看到反向連結，則可以使用連結定義revLink=&#39;_NONE_&#39;來隱藏它。 例如，一個很好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件者到最後一個交易的連結，並且無需從交易表中看到任何反向連結。
+如果用戶不能看到反向連結，則可以使用連結定義revLink=&#39;來隱藏它&#x200B;_無_&#39;。 例如，一個很好的使用案例是定義從收件者到最後完成交易的連結。 您只需查看從收件者到最後一個交易的連結，並且無需從交易表中看到任何反向連結。
 
 執行外部聯接的連結(1-0..1)應謹慎使用，因為它將影響系統效能。
 
@@ -251,9 +251,9 @@ Adobe Campaign既非資料倉庫，也非報表工具。 因此，為確保Adobe
 * 如果您想要讓記錄保留更長時間，應根據資料庫大小和傳送的訊息數量，謹慎做出此決定。 提醒您，Adobe Campaign序列是32位元整數。
 * 建議不要在這些表中一次擁有超過10億條記錄（21.4億個可用ID中的50%），以限制使用所有可用ID的風險。 部分客戶需要將保留期限降至180天以下。
 
-在[Campaign隱私權與安全性准則](../../platform/using/privacy-and-recommendations.md)中深入了解資料保留。
+進一步了解中的資料保留 [Campaign隱私權與安全性准則](../../platform/using/privacy-and-recommendations.md).
 
-在本小節](../../production/using/database-cleanup-workflow.md)中深入了解Campaign資料庫清理工作流程[。
+深入了解Campaign資料庫清理工作流程 [在本節](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
@@ -302,12 +302,12 @@ Adobe Campaign仰賴協力廠商資料庫引擎。 根據提供程式，為較�
 
 表大小是記錄數和每個記錄的列數的組合。 兩者都會影響查詢的效能。
 
-* **小型**&#x200B;表與「傳送」表類似。
-* **中等大小**&#x200B;表與收件人表的大小相同。 每位客戶有一筆記錄。
-* **large-size**表與Broad日誌表類似。 每個客戶有許多記錄。
+* A **小尺寸** 表格類似於「傳送」表格。
+* A **中等大小** 表格與收件者表格的大小相同。 每位客戶有一筆記錄。
+* A **大尺寸** 表與「廣泛」日誌表類似。 每個客戶有許多記錄。
 例如，如果您的資料庫包含1000萬個收件者，則「廣泛」日誌表包含約1億到2億條消息，而「傳送」表包含幾千條記錄。
 
-在PostgreSQL上，行不應超過8KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)機制。 因此，請盡量減少列數和每行的大小，以保留系統（記憶體和CPU）的最佳效能。
+在PostgreSQL上，行不應超過8KB以避免 [吐司](https://wiki.postgresql.org/wiki/TOAST) 機制。 因此，請盡量減少列數和每行的大小，以保留系統（記憶體和CPU）的最佳效能。
 
 列數也會影響效能。 Adobe Campaign資料庫的設計目的並非儲存未用於鎖定目標或個人化目的的歷史資料 — 這是一個運作資料庫。
 
@@ -325,9 +325,9 @@ Adobe Campaign仰賴協力廠商資料庫引擎。 根據提供程式，為較�
 ![](assets/transaction-table-example.png)
 
 在此範例中：
-* *事務*&#x200B;和&#x200B;*事務項*&#x200B;表很大：一千多萬。
-* *Product*&#x200B;和&#x200B;*Store*&#x200B;表較小：少於一萬。
-* 產品標籤和參考已放置在&#x200B;*Product*&#x200B;表中。
-* *事務項*&#x200B;表只具有指向&#x200B;*產品*&#x200B;表的連結，該表是數字的。
+* 此 *交易* 和 *事務處理項* 表很大：一千多萬。
+* 此 *產品* 和 *商店* 表格較小：少於一萬。
+* 產品標籤和參考已放置在 *產品* 表格。
+* 此 *事務處理項* 表格只有連結 *產品* 表格，以數值表示。
 
 <!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

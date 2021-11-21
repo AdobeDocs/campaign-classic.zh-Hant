@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/common.svg)
 
-依預設，下列詳細的工作流程會與&#x200B;**轉移至中間來源**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱[Campaign Classicv7安裝指南](../../installation/using/mid-sourcing-deployment.md)。
+以下詳細說明的工作流程會與 **轉移至中間來源** 模組。 有關此模組的詳細資訊，請參閱 [Campaign Classicv7安裝指南](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ ht-degree: 7%
   <tr> 
    <td> <span class="uicontrol">中間來源（傳送記錄檔）</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> 此工作流程會收集中間來源伺服器上的傳送記錄。 預設每小時觸發一次。<br /> </td> 
+   <td> 此工作流程會收集中間來源伺服器上的傳送記錄。 預設會每小時觸發一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

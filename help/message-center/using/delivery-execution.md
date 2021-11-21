@@ -25,7 +25,7 @@ ht-degree: 6%
 >
 >MTA會優先處理交易式訊息，而非其他傳送。
 
-所有傳送都會分組在&#x200B;**[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**&#x200B;資料夾中。
+所有傳送都會分組於 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 檔案夾。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -35,13 +35,13 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->對於托管或混合安裝，如果您已升級至[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，則所有交易式訊息也可以與Adobe Campaign Enhanced MTA一併傳送，以改善傳遞能力、吞吐量和退信處理。 所有影響與標準行銷訊息的影響相同。
+>若為托管或混合安裝，若您已升級至 [增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，所有交易式訊息也可以與Adobe Campaign Enhanced MTA一併傳送，以改善傳遞能力、總處理能力及彈回處理。 所有影響與標準行銷訊息的影響相同。
 
 ## 交易式訊息監控 {#transactional-message-monitoring}
 
-若要監控交易式訊息，請檢查[傳送記錄](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)。
+若要監視交易式訊息，請檢查 [傳遞記錄](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-從執行執行個體傳送的交易式傳送會透過每小時執行的技術工作流程(**[!UICONTROL Message Center execution instance]**)同步回控制執行個體。
+從執行例項傳送的交易式傳送會透過技術工作流程同步回控制例項(**[!UICONTROL Message Center execution instance]**)，每小時執行一次。
 
 >[!NOTE]
 >
@@ -74,4 +74,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-若要監控執行例項的活動和執行，請參閱[交易式訊息報表](../../message-center/using/about-transactional-messaging-reports.md)。
+若要監控執行例項的活動和執行，請參閱 [交易式訊息報表](../../message-center/using/about-transactional-messaging-reports.md).

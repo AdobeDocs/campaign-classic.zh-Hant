@@ -23,7 +23,7 @@ ht-degree: 2%
 
 Adobe Campaign伺服器的安裝步驟如下：
 
-1. 執行檔案&#x200B;**setup.exe**。
+1. 執行檔案 **setup.exe**.
 
    ![](assets/s_ncs_install_installer_01.png)
 
@@ -34,11 +34,11 @@ Adobe Campaign伺服器的安裝步驟如下：
    有數種安裝類型可供使用：
 
    * **[!UICONTROL Installation of an application server]** :安裝Adobe Campaign應用程式伺服器和用戶端主控台。
-   * **[!UICONTROL Minimal installation (Network)]** :從網路安裝客戶端電腦。如有必要，電腦上只會安裝有限數量的DLL，而所有其他元件將從網路驅動器中使用。
+   * **[!UICONTROL Minimal installation (Network)]** :從網路安裝客戶端電腦。 如有必要，電腦上只會安裝有限數量的DLL，而所有其他元件將從網路驅動器中使用。
    * **[!UICONTROL Installation of a client]** :安裝Adobe Campaign用戶端所需的元件。
    * **[!UICONTROL Custom installation]** :使用者會選擇要安裝的元素。
 
-   選擇&#x200B;**安裝應用程式伺服器**，然後執行以下不同步驟：
+   選擇 **安裝應用程式伺服器**，並執行下列不同步驟：
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +46,7 @@ Adobe Campaign伺服器的安裝步驟如下：
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以開始安裝：
+1. 按一下 **[!UICONTROL Finish]** 要啟動安裝，請執行以下操作：
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,7 +62,7 @@ Adobe Campaign伺服器的安裝步驟如下：
    >
    >伺服器安裝完成後，需要重新啟動伺服器以避免可能的網路問題。
 
-   安裝完成後，啟動Adobe Campaign以建立設定檔。 請參閱[伺服器的首次啟動](#first-start-up-of-the-server)。
+   安裝完成後，啟動Adobe Campaign以建立設定檔。 請參閱 [伺服器的首次啟動](#first-start-up-of-the-server).
 
 ## 摘要安裝測試 {#summary-installation-testing}
 
@@ -80,7 +80,7 @@ No task
 
 ## 伺服器的首次啟動 {#first-start-up-of-the-server}
 
-安裝測試完成後，通過&#x200B;**[!UICONTROL Start > Programs > Adobe Campaign]**&#x200B;菜單開啟命令提示符，然後輸入以下命令：
+安裝測試完成後，請透過 **[!UICONTROL Start > Programs > Adobe Campaign]** ，然後輸入以下命令：
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ nlserver web
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-按&#x200B;**Ctrl+C**&#x200B;停止進程，然後輸入以下命令：
+Press **Ctrl+C** 要停止進程，請輸入以下命令：
 
 ```
 nlserver start web
@@ -137,9 +137,9 @@ nlserver stop web
 
 ## 內部標識符的密碼 {#password-for-the-internal-identifier}
 
-Adobe Campaign伺服器定義名為&#x200B;**internal**&#x200B;的技術登入，該登入在所有執行個體上都具有所有權限。 安裝後登錄名沒有密碼。 必須定義一個。
+Adobe Campaign伺服器會定義技術登入，稱為 **內部** 在所有情況下均具有所有權利。 安裝後登錄名沒有密碼。 必須定義一個。
 
-進一步了解[本節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+深入了解 [本節](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## 啟動Adobe Campaign服務 {#starting-adobe-campaign-services}
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## 安裝LibreOffice {#installing-libreoffice}
 
-例如，從[https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/)下載LibreOffice，並按照常規安裝步驟操作。
+下載LibreOffice，例如從 [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) 並按照常規安裝步驟操作。
 
 新增下列環境變數：
 

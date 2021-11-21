@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign提供&#x200B;**同盟資料存取**(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您不需變更Adobe Campaign資料的結構，即可存取外部資料。
+Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您不需變更Adobe Campaign資料的結構，即可存取外部資料。
 
 ## 先決條件 {#operating-principle}
 
@@ -25,7 +25,7 @@ FDA選項可讓您擴充協力廠商資料庫中的資料模型。 它將自動�
 
 若要使用此功能，下列為必要條件：
 
-* **配置**:除了Snowflake外，您需要內 **部部署** 或混 **** 合托管模型來設定同盟資料存取。[深入瞭解](../../installation/using/hosting-models.md)
-* **外部資料庫版本**:您需要有與Adobe Campaign FDA模組相容的外部資料庫。Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)中會詳細說明資料庫系統和相容版本清單。
-* **權限**:使用者在Adobe Campaign和 [外](../../installation/using/remote-database-access-rights.md) 部資料庫中也必須擁有必要的權限。
+* **設定**:除了Snowflake，您需要 **內部部署** 或 **混合** 托管模型以設定同盟資料存取。 [了解更多](../../installation/using/hosting-models.md)
+* **外部資料庫版本**:您需要有與Adobe Campaign FDA模組相容的外部資料庫。 資料庫系統和相容版本的清單在Campaign中詳細說明 [相容性矩陣](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **權限**:使用者也必須 [必要權限](../../installation/using/remote-database-access-rights.md) 在Adobe Campaign和外部資料庫中。
 

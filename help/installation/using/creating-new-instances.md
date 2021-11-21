@@ -23,8 +23,8 @@ ht-degree: 10%
 
 1. 宣告新執行個體
 
-   轉到&#x200B;**[!UICONTROL Tools > Advanced > Declare a new instance...]**&#x200B;以啟動嚮導。
+   前往 **[!UICONTROL Tools > Advanced > Declare a new instance...]** 啟動嚮導。
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   指定新實例的參數。 有關詳細資訊，請參閱[建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md)。
+   指定新實例的參數。 有關詳細資訊，請參閱 [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 開始使用Campaign HTML編輯器
+title: 開始使用CampaignHTML編輯器
 description: 開始使用Campaign DCE
 audience: web
 content-type: reference
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ---
 
-# 開始使用Campaign HTML編輯器{#about-campaign-html-editor}
+# 開始使用CampaignHTML編輯器{#about-campaign-html-editor}
 
 ![](../../assets/common.svg)
 
-**數位內容編輯器(DCE)**&#x200B;是HTML內容編輯器，可讓您輕鬆在Adobe Campaign中以HTML格式建立內容和範本。
+此 **數位內容編輯器(DCE)** 是HTML內容編輯器，可讓您在Adobe Campaign中輕鬆建立HTML格式的內容和範本。
 
 使用數位內容編輯器，您可以插入頁面元素並設定其格式，以及將資料庫欄位與HTML頁面的元素對應。 為Web應用程式建立頁面時，或根據DCE模板建立傳遞時，此編輯器可用。
 
@@ -37,24 +37,24 @@ ht-degree: 0%
 
 ![](assets/dce_schema.png)
 
-要建立簡單的&#x200B;**Web應用程式**，您需要：
+建立簡單 **網頁應用程式**，您需要：
 
-1. 建立Web應用程式 — [了解更多](creating-a-landing-page.md)
-1. 選取現有內容或從標準範本建立內容 — [了解更多](template-management.md)
-1. 編輯和配置內容 — [了解更多](editing-content.md)
-1. 發佈Web應用程式 — [了解更多](creating-a-landing-page.md#step-3---publishing-content)
+1. 建立Web應用程式 —  [深入了解](creating-a-landing-page.md)
+1. 選取現有內容或從標準範本建立內容 —  [深入了解](template-management.md)
+1. 編輯和設定內容 —  [深入了解](editing-content.md)
+1. 發佈Web應用程式 —  [深入了解](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->[此區段](creating-a-landing-page.md)提供Web應用程式內容中的完整實作範例。
+>如需Web應用程式內容中的完整實作範例，請參閱  [本節](creating-a-landing-page.md).
 
-若要建立&#x200B;**電子郵件傳送**，您需要：
+若要建立 **電子郵件傳送**，您需要：
 
-1. 從DCE模板建立傳遞 — [了解更多](use-case--creating-an-email-delivery.md)
-1. 選取現有內容或從[標準範本](template-management.md)建立內容
+1. 從DCE模板建立傳遞 —  [深入了解](use-case--creating-an-email-delivery.md)
+1. 選取現有內容或從 [標準範本](template-management.md)
 1. 編輯和配置線上內容
-1. 傳送傳送 — [深入了解](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. 傳送傳送 —  [深入了解](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->[此使用案例](use-case--creating-an-email-delivery.md)中提供電子郵件傳送內容的完整實作範例。
+>如需電子郵件傳送內容的完整實作範例，請參閱 [此使用案例](use-case--creating-an-email-delivery.md).

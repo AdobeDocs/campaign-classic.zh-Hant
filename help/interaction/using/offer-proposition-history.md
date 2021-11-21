@@ -17,20 +17,20 @@ ht-degree: 15%
 
 ![](../../assets/v7-only.svg)
 
-一旦您的優惠方案提出後，您就可以查看演示文稿歷史記錄。
+Once your offer propositions have been made, you can view the presentation history.
 
 >[!NOTE]
 >
 >此功能僅可線上顯示，且僅供傳送管理員檢視。
 
-* 在選件層級的&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Propositions]**。
+* At the offer level, in the **[!UICONTROL Edit]** tab, click **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
-* 從收件者的設定檔，按一下&#x200B;**[!UICONTROL Propositions]**&#x200B;標籤。
+* From a recipient&#39;s profile, click the **[!UICONTROL Propositions]** tab.
 
    ![](assets/offer_followup_002.png)
 
-* 在選件空間層級，按一下&#x200B;**[!UICONTROL Propositions]**&#x200B;標籤。
+* At the offer space level, click the **[!UICONTROL Propositions]** tab.
 
    ![](assets/offer_space_prop_001_b.png)

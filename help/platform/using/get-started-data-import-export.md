@@ -27,7 +27,7 @@ Adobe Campaign Classic提供資料管理功能，可讓您匯入和匯出資料�
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**** 工作流程是自動化匯入程式的實用方式。無論您是從本機檔案匯入資料，還是從SFTP匯入資料，都可讓您將資料管理程式標準化。
+**工作流程** 是自動匯入程式的實用方法。 無論您是從本機檔案匯入資料，還是從SFTP匯入資料，都可讓您將資料管理程式標準化。
 
 使用工作流程，可以根據計畫自動重複導入和導出操作，例如自動在多個資訊系統之間交換資料。
 
@@ -37,11 +37,11 @@ Adobe Campaign Classic提供資料管理功能，可讓您匯入和匯出資料�
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-此外，Campaign Classic還提供&#x200B;**通用導入和導出**，允許您建立臨時導入或導出作業。
+此外，Campaign Classic提供 **一般匯入和匯出** 可讓您建立偶爾的匯入或匯出工作。
 
 匯入和匯出是在專用範本中設定，您可以設定並使用這些範本來啟動和監視匯入和匯出作業。
 
-有關一般匯入和匯出的詳細資訊，請參閱[此區段](../../platform/using/about-generic-imports-exports.md)。
+如需一般匯入和匯出的詳細資訊，請參閱 [本節](../../platform/using/about-generic-imports-exports.md).
 
 >[!IMPORTANT]
 >一般匯入和匯出應僅用於偶爾作業。 為確保資料一致性並提高效率，建議您使用工作流程執行匯入和匯出操作。
@@ -63,6 +63,6 @@ Campaign Classic可讓您匯入壓縮或加密的檔案，以及匯出壓縮或�
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-執行匯入和匯出作業時，您應遵循數個[最佳實務](../../platform/using/import-export-best-practices.md)，以確保資料庫內的資料一致性，並避免在更新或匯出作業期間出現常見錯誤。
+您應遵循數個 [最佳實務](../../platform/using/import-export-best-practices.md) 執行匯入和匯出作業時，以確保資料庫內的資料一致性，並避免在更新或匯出作業期間出現常見錯誤。
 
-此外，[本區段](../../platform/using/sftp-server-usage.md)也提供與SFTP伺服器使用相關的建議和常見問題。
+此外，您可在以下網址取得與SFTP伺服器使用相關的建議和常見問題： [本節](../../platform/using/sftp-server-usage.md).

@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-預設情況下，下面詳述的工作流將與&#x200B;**LINE channel**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[節](../../delivery/using/line-channel.md)。
+以下詳細說明的工作流程會與 **LINE頻道** 模組。 有關此模組的詳細資訊，請參閱 [節](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 11%
   <tr> 
    <td> <span class="uicontrol">LINE V2存取權杖更新</span> <br /> </td> 
    <td> <span class="uicontrol">updateLineV2AccessToken</span> <br /> </td> 
-   <td> 此工作流將訪問令牌刷新為LINE V2。<br /> </td> 
+   <td> 此工作流程會將存取權杖重新整理為LINE V2。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">刪除阻止的LINE用戶</span> <br /> </td> 

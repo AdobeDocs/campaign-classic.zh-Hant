@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Campaign 18.4發行說明
-description: Release notes for Campaign 18.4
+description: Campaign 18.4發行說明
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
@@ -23,13 +23,13 @@ ht-degree: 7%
 * 修正在FDA上使用MySQL執行工作流程時的各種問題。 (NEO-11652)
 * 修正特定情況下，傳送母體的一部分仍處於待定狀態的問題。 (NEO-11336)
 * 修正SMS自動回應的間歇性問題。 (NEO-11811)
-* Fixed an ID exhaustion issue when using seed addresses in a delivery. (NEO-11842)
+* 修正了在傳送中使用種子地址時，ID耗盡的問題。 (NEO-11842)
 * 修正在擴充工作流程活動中執行排序時的語法錯誤。 (NEO-11394)
 * 修正了重新啟動IIS時，可能導致Web伺服器當機的問題。 (NEO-10862)
 * 修正組建升級(FDA - SQL)後，追蹤工作流程可能失敗的問題。 (NEO-11635)
 * 修正可能導致工作流程清單資料遺失的問題。 (NEO-11696)
 * 修正傳送推播通知時的效能問題。 (NEO-11787)
-* Fixed an issue which prevented web tracking from working for &quot;com.au&quot; domains (NEO-4385).
+* 修正網頁追蹤無法用於&quot;com.au&quot;網域(NEO-4385)的問題。
 * 修正使用複雜工作流程時可能發生的用戶端凍結問題。 (NEO-11847)
 * 修正選取特定結構的元素後儲存新傳送時的Oracle錯誤(NEO-11682)。
 * 修正查詢包含重音字元的欄位時的問題(FDA/Teradata)。 外部帳戶現在可讓您變更用於與Teradata驅動程式通訊的編碼。 (NEO-11818).
@@ -70,7 +70,7 @@ ht-degree: 7%
 * 修正使用具有整數類型調解金鑰的自訂命名空間時，隱私權(GDPR)要求無法運作的問題。 (NEO-11123)
 * 修正使用 **[!UICONTROL Distribution of values]** 選項 **[!UICONTROL Query]** 工作流程活動。 (NEO-10958)
 * 修正從行銷例項同步選件空間至互動例項的問題。 (NEO-11162)
-* Improved the management of long name indexes during postupgrade
+* 改善升級後期間長名稱索引的管理
 
 ## 發行版本 18.4.2 - 版本編號 8932{#release-18-4-2-build-8932}
 
@@ -98,11 +98,11 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> EU General Data Protection Regulation (GDPR)<br /> </td> 
+   <td> 歐盟一般資料保護規範(GDPR)<br /> </td> 
    <td> <p>GDPR是歐盟(EU)的新隱私權法，協調2018年5月25日生效的資料保護要求並以現代化方式規範這些要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign中已提供的隱私權功能（包括同意管理、資料保留設定和使用者角色）之外，我們也趁此次機會，以資料處理者的角色加入其他功能，以協助您做好準備，以便擔任資料控管單位，處理特定GDPR請求：</p> 
     <ul> 
      <li> <p>訪問權限：可讓資料主體接收資料控制者擷取的其個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
-     <li> <p>刪除權限：為資料主體賦予權利，讓資料控制者擷取的個人資料遭到清除，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
+     <li> <p>刪除權限：為資料主體賦予權利，讓資料控管者清除其個人資料，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
     </ul> 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">詳細文件</a>以瞭解詳情。<br /> </td> 
   </tr> 
   <tr> 
@@ -147,7 +147,7 @@ ht-degree: 7%
 
 queryDef
 
-已針對&quot;orderBy&quot;子句修改queryDef。 Before the change, the primary key of the queried table would implicitly be added to the &quot;orderBy&quot; clauses. 在某些資料庫引擎（至少是postgresql）上，它會阻止索引的使用（orderBy子句的所有欄位必須由同一索引覆蓋）。 如果您與此行為相依，則必須在「orderBy」子句中明確新增主鍵。
+已針對&quot;orderBy&quot;子句修改queryDef。 在更改前，查詢表的主鍵將隱式添加到「orderBy」子句中。 在某些資料庫引擎（至少是postgresql）上，它會阻止索引的使用（orderBy子句的所有欄位必須由同一索引覆蓋）。 如果您與此行為相依，則必須在「orderBy」子句中明確新增主鍵。
 
 例如，如果您有下列查詢：
 
@@ -190,17 +190,17 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 
 **修補程式**
 
-* Fixed a synchronization issue when replicating delivery and tracking logs from Adobe Campaign Standard to Adobe Campaign Classic. (NEO-10023)
-* Fixed an issue with the handling of Error and Log tables in Teradata when an ETL workflow was resuming after a failure on a fast load operation. 現在，每次工作流恢復時，錯誤和日誌表都會被正確刪除。 (NEO-10672)
+* 修正從Adobe Campaign Standard複製傳送和追蹤記錄檔至Adobe Campaign Classic時的同步問題。 (NEO-10023)
+* 修正了在快速載入操作失敗後，ETL工作流程恢復時，處理Teradata中錯誤和記錄表的問題。 現在，每次工作流恢復時，錯誤和日誌表都會被正確刪除。 (NEO-10672)
 * 修正了升級後問題，若已安裝FDA套件，則會自動安裝Hive套件(Hadoop所需)。 (NEO-10592)
-* Fixed an error that treated invalid domains as a **Not defined** error. (NEO-10248)
+* 修正將無效網域視為 **未定義** 錯誤。 (NEO-10248)
 * 修正傳送android推播傳送時，deliveryLogStats表格中重複記錄的問題。 (NEO-10234)
 * 修正條碼掃描器無法讀取某些條碼格式的問題。 (NEO-10125)
 * 修正使用非ASCII字元時，「urlEncode」 JavaScript函式的問題。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-10123)
 * 修正在Teradata資料庫上執行包含sha256函式的查詢時的問題。 (NEO-10119)
 * 修正了使用超大的SalesForce表時，SalesForce活動中可能發生的工作流記憶體錯誤。 (NEO-9900)
 * 修正 **生成補充** 選項（使用FDA時在目標工作流程活動中）。 (NEO-9878)
-* Fixed an issue which could lead to the **Processed** and **Success** metrics not being updated on the marketing instance when using mid-sourcing. (NEO-9454)
+* 修正可能導致 **已處理** 和 **成功** 量度使用中間來源時沒有在行銷執行個體上更新。 (NEO-9454)
 * 修正平台總共提供超過10,000個選件時的互動非主張規則(NEO-9352)
 * 修正了使用XML外部檔案時無法指定傳送目標的問題。 (NEO-9312)
 * 修正在選件上執行假設並更新主張狀態時，可能導致工作流程錯誤的問題。 (NEO-9304)
@@ -222,7 +222,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * 修正資料管理中無法在類似擴充的工作流程活動上建立索引的回歸。
 * 修正以標題建立外部資源時可能發生的問@id
 * 修正透過FTP伺服器上傳壓縮檔案，或上傳檔案名稱中含有萬用字元的檔案時，可能發生的問題。
-* Fixed an issue with long base type enumerations in external custom resources created into Campaign Standard.
+* 修正外部自訂資源中建立至Campaign Standard的長基本類型列舉問題。
 * 修正即使與提供者的連線失敗，仍可能傳送簡訊，導致簡訊遺失的問題。
 * 修正導致SMTP連線無限期卡住的錯誤。
 * 修正使用LINE對應或篩選及定位結構不同時，訊息準備期間壓力類型規則的問題。

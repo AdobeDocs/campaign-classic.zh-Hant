@@ -19,15 +19,15 @@ ht-degree: 7%
 
 ## 設定「查詢」活動 {#configuring-the-query-activity}
 
-* 連按兩下&#x200B;**[!UICONTROL Query]**&#x200B;活動。
+* 按兩下 **[!UICONTROL Query]** 活動。
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* 按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結，然後選取您要鎖定的收件者。
+* 按一下 **[!UICONTROL Edit query]** 連結，然後選取您要鎖定的收件者。
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* 將&#x200B;**[!UICONTROL Query]**&#x200B;活動連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動。
+* 連結 **[!UICONTROL Query]** 活動 **[!UICONTROL Split]** 活動。
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 1. 建立母體A:
 
-   * 連按兩下&#x200B;**[!UICONTROL Split]**&#x200B;活動。
+   * 按兩下 **[!UICONTROL Split]** 活動。
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -45,21 +45,21 @@ ht-degree: 7%
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * 選擇&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;選項。
+   * 選取 **[!UICONTROL Limit the selected records]** 選項。
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;連結，選擇&#x200B;**[!UICONTROL Activate random sampling]**，然後按一下&#x200B;**[!UICONTROL Next]**。
+   * 按一下 **[!UICONTROL Edit]** 連結，選擇 **[!UICONTROL Activate random sampling]**，然後按一下 **[!UICONTROL Next]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * 將臨界值設為10%，然後按一下&#x200B;**[!UICONTROL Finish]**。
+   * 將臨界值設為10%，然後按一下 **[!UICONTROL Finish]**.
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. 建立人口B:
 
-   * 按一下&#x200B;**[!UICONTROL Add]**&#x200B;為母體B建立新索引標籤。
+   * 按一下 **[!UICONTROL Add]** 為母體B建立新索引標籤。
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -77,8 +77,8 @@ ht-degree: 7%
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * 變更標籤以指定此母體不包含A或B，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉活動。
+   * 變更標籤以指定此母體不包含A或B，然後按一下 **[!UICONTROL OK]** 來關閉活動。
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您現在可以建立兩個傳送範本。 [深入瞭解](a-b-testing-uc-delivery-templates.md)).
+您現在可以建立兩個傳送範本。 [了解更多](a-b-testing-uc-delivery-templates.md)).

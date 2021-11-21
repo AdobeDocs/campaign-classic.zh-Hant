@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ### 優勢 {#advantages}
 
-* 簡化的伺服器配置：客戶不需要配置向外的模組（mta和inMail）。
+* 簡化的伺服器配置：客戶無需配置向外的模組（mta和inMail）。
 * 頻寬使用有限：由於執行是由中間來源伺服器執行，因此只需要足夠的頻寬，即可將個人化資料傳送至中間來源伺服器。
 * 高可用性不再是內部問題：問題已轉移到中間來源伺服器（重定向、鏡像頁、執行伺服器等）。
 * 資料庫不會離開公司：只有組合訊息所需的資料才會傳送至中間來源伺服器（HTTPS可用於此）。
@@ -64,4 +64,4 @@ ht-degree: 1%
 
 ### 安裝和設定（中間來源部署） {#installing-and-configuring--mid-sourcing-deployment-}
 
-請參閱[中間來源伺服器](../../installation/using/mid-sourcing-server.md)。
+請參閱 [中間來源伺服器](../../installation/using/mid-sourcing-server.md).

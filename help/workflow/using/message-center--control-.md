@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-以下詳細說明的工作流程排程每小時執行一次。 預設情況下，它與&#x200B;**Message Center - Control**&#x200B;模組一起安裝。
+以下詳細說明的工作流程排程每小時執行一次。 它已與 **訊息中心 — 控制** 模組。
 
 
 如需詳細資訊，請視您的Campaign版本而定，參閱下列區段：
@@ -35,9 +35,9 @@ ht-degree: 10%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 訊息中心&lt;external_account_name&gt;<br /> </td> 
+   <td> 訊息中心 &lt;external_account_name&gt;<br /> </td> 
    <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
-   <td> 此工作流：<br /> 
+   <td> 此工作流程：<br /> 
     <ul> 
      <li> <p>恢復操作處理的事件清單。</p> </li> 
      <li> <p>與NmsBroadLogMsg表同步，以恢復傳送消息資格。</p> </li> 

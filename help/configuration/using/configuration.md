@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# Configure Campaign Explorer navigation tree{#configuration}
+# 設定Campaign Explorer導覽樹{#configuration}
 
 ![](../../assets/v7-only.svg)
 
@@ -45,17 +45,17 @@ XML文檔的結構如下：
 </navtree>
 ```
 
-The XML document contains the **`<navtree>`** root element with the **name** and **namespace** attributes to specify the document name and namespace. 名稱和命名空間構成文檔標識密鑰。
+XML文檔包含 **`<navtree>`** 根元素與 **名稱** 和 **命名空間** 用於指定文檔名稱和命名空間的屬性。 名稱和命名空間構成文檔標識密鑰。
 
 應用程式的全局命令在文檔中聲明，來自 **`<commands>`** 元素。
 
-The declaration of file types is structured in the document with the following elements: **`<model>`** and **`<nodemodel>`**.
+檔案類型的聲明在文檔中具有以下元素： **`<model>`** 和 **`<nodemodel>`**.
 
 ## 全局命令 {#global-commands}
 
 全域命令可讓您啟動動作。 此動作可以是輸入表單或SOAP呼叫。
 
-Global commands are accessible from the main **[!UICONTROL Tools]** menu.
+全局命令可從主 **[!UICONTROL Tools]** 功能表。
 
 命令配置結構如下：
 
@@ -83,8 +83,8 @@ Global commands are accessible from the main **[!UICONTROL Tools]** menu.
 全局命令的說明在 **`<command>`** 元素，具有下列屬性：
 
 * **名稱**:命令的內部名稱：名稱必須輸入且唯一
-* **label**: label of the command.
-* **desc**: description visible from the status bar of the main screen.
+* **標籤**:命令的標籤。
+* **desc**:從主螢幕的狀態欄中可見的說明。
 * **表單**:要啟動的表單：要輸入的值是輸入表單的標識鍵(例如&quot;cus:recipient&quot;)
 * **權利**:允許訪問此命令的命名權限清單（以逗號分隔）。 可從 **[!UICONTROL Administration > Access management > Named rights]** 檔案夾。
 * **promptLabel**:在執行命令之前顯示一個確認框。
@@ -166,8 +166,8 @@ A **`<command>`** 元素可包含 **`<command>`** 子元素。 在這種情況�
 * **名稱**:內部名稱
 * **標籤**:標籤 **[!UICONTROL Add new folder]** 功能表和預設標籤。
 * **img**:插入資料夾時的預設影像。
-* **hiddenCommands**: list of commands (separated by a comma) to be masked. 可能的值：&quot;adbnew&quot;、&quot;adbsave&quot;、&quot;adbcancel&quot;和&quot;adbdup&quot;。
-* **newFolderShortCuts**: list of shortcuts on models (**`<nodemodel>`** separated by a comma) in folder creation.
+* **hiddenCommands**:要遮罩的命令清單（以逗號分隔）。 可能的值：&quot;adbnew&quot;、&quot;adbsave&quot;、&quot;adbcancel&quot;和&quot;adbdup&quot;。
+* **newFolderShortCuts**:模型快捷方式清單(**`<nodemodel>`** 以逗號分隔)。
 * **insertRight**, **editRight**, **deleteRight**:插入、編輯和刪除資料夾的權限。
 
 此 **`<view>`** 元素下方 **`<nodemodel>`** 元素包含與檢視相關聯的清單的設定。 清單的架構會在 **綱要** 屬性 **`<view>`** 元素。
@@ -183,9 +183,9 @@ A **`<command>`** 元素可包含 **`<command>`** 子元素。 在這種情況�
 >
 >輸入表單的名稱可以多載，方法是輸入 **表單** 屬性 **`<view>`** 元素。
 
-清單欄的預設設定會透過 **`<columns>`** 元素。 A column is declared on a **`<node>`** element containing the **xpath** attribute with the field to be referenced in its schema as its value.
+清單欄的預設設定會透過 **`<columns>`** 元素。 欄會在 **`<node>`** 包含 **xpath** 屬性，其結構中要參考的欄位為其值。
 
-**Example**: declaration of a folder type on the &quot;nms:recipient&quot; schema.
+**範例**:「nms:recipient」架構上資料夾類型的聲明。
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -228,11 +228,11 @@ A **`<command>`** 元素可包含 **`<command>`** 子元素。 在這種情況�
 
 ### 快捷方式命令 {#shortcut-commands}
 
-快速鍵命令可讓您在選取清單時啟動動作。 The action can be an input form or a SOAP call.
+快速鍵命令可讓您在選取清單時啟動動作。 動作可以是輸入表單或SOAP呼叫。
 
 可從 **[!UICONTROL Action]** 清單的菜單或相關菜單按鈕。
 
-The command configuration structure is as follows:
+命令配置結構如下：
 
 ```
 <nodeModel...
@@ -259,10 +259,10 @@ The command configuration structure is as follows:
 * **promptLabel**:在執行命令之前顯示確認框
 * **monoSelection**:強制單選（預設為多個選取）。
 * **refreshView**:執行命令後強制重新載入清單。
-* **enabledIf**: activates the command depending on the expression entered.
+* **enabledIf**:根據輸入的表達式激活該命令。
 * **img**:輸入允許從清單工具欄訪問命令的影像。
 
-A **`<command>`** 元素可包含 **`<command>`** 子元素。 In this case, the parent element lets you display a sub-menu made up of these child elements.
+A **`<command>`** 元素可包含 **`<command>`** 子元素。 在這種情況下，父元素可讓您顯示由這些子元素組成的子菜單。
 
 命令的顯示順序與在XML文檔中聲明的順序相同。
 

@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Adobe Campaign會以原生方式處理傳出電子郵件，但傳統電子郵件伺服器需要用來接收連結至傳回電子郵件（從郵件程式守護程式）的傳入訊息。 應用程式將自動處理在此伺服器上配置的郵箱。
 
-如果為POP3訪問配置的所有伺服器在拾取郵件時保留SMTP「Message-ID」標頭，則它們可用於接收返回郵件。 例如，使用Qmail、SendMail和Microsoft Exchange的實施目前正在生產中。 但是，Lotus Notes/domino的某些安裝顯示了維護「Message-Id」標頭的問題。
+如果為POP3訪問配置的所有伺服器在拾取郵件時保留SMTP「Message-ID」標頭，則它們可用於接收返回郵件。 例如，使用Qmail、SendMail和Microsoft Exchange的實作目前正在生產中。 但是，Lotus Notes/domino的某些安裝顯示了維護「Message-Id」標頭的問題。
 
 >[!CAUTION]
 >

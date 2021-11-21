@@ -19,9 +19,9 @@ ht-degree: 6%
 
 >[!AVAILABILITY]
 >
->:warning: 此功能僅適用於Campaign Classicv7。[深入瞭解](../../social/using/about-social-marketing.md)
+>:warning: 此功能僅適用於Campaign Classicv7。 [了解更多](../../social/using/about-social-marketing.md)
 
-依預設，下列詳細的工作流程會與&#x200B;**Social Marketing**&#x200B;模組一起安裝。
+以下詳細說明的工作流程會與 **社交行銷** 模組。
 
 <table> 
  <tbody> 
@@ -33,7 +33,7 @@ ht-degree: 6%
   <tr> 
    <td> <span class="uicontrol">facebook統計資料的計算</span> <br /> </td> 
    <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
-   <td> 此工作流程會計算連結至與Facebook粉絲互動的統計資料。<br /> </td> 
+   <td> 此工作流程會計算與Facebook粉絲互動連結的統計資料。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">同步Facebook風扇</span> <br /> </td> 

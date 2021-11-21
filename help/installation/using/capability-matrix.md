@@ -21,7 +21,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 本頁顯示托管(Managed Services)與內部部署之間的主要差異。 混合部署的具體性取決於由Adobe托管並在您的場所中托管的元素。
 
-本節](../../installation/using/hosting-models.md)導入了不同的托管模型。[
+介紹了不同的托管模式 [在本節](../../installation/using/hosting-models.md).
 
 ## 每個部署模型的可用性 {#capability-matrix}
 
@@ -43,11 +43,11 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 ## 同盟資料存取{#fda}
 
-Adobe Campaign提供&#x200B;**同盟資料存取**(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您不需變更Adobe Campaign資料的結構，即可存取外部資料。 [了解更多](../../installation/using/about-fda.md)
+Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您不需變更Adobe Campaign資料的結構，即可存取外部資料。 [了解更多](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->除了[Snowflake連接器](../../installation/using/configure-fda-snowflake.md)外，只有內部部署或混合安裝才能透過FDA存取外部資料庫。
+>只有內部部署或混合安裝才能透過FDA存取外部資料庫，但 [Snowflake連接器](../../installation/using/configure-fda-snowflake.md).
 
 
 **另請參閱**

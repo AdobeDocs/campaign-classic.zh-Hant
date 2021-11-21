@@ -22,8 +22,8 @@ Adobe Campaign可讓您將個人化電子訊息大量傳送給目標人口。
 開始傳送電子郵件之前：
 
 * 請確定收件者設定檔至少包含電子郵件地址。
-* 進一步了解Adobe Campaign [傳送最佳實務](delivery-best-practices.md)。
-* 請閱讀以下章節，深入了解傳遞能力：[Campaign中的傳遞能力管理](about-deliverability.md)和[傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
+* 深入了解Adobe Campaign [傳遞最佳實務](delivery-best-practices.md).
+* 請閱讀以下章節，深入了解傳遞能力： [Campaign中的傳遞能力管理](about-deliverability.md) 和 [傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant).
 
 傳送電子郵件的關鍵步驟如下：
 
@@ -33,4 +33,4 @@ Adobe Campaign可讓您將個人化電子訊息大量傳送給目標人口。
 * [傳送電子郵件](sending-messages.md)
 * [監控傳送](about-delivery-monitoring.md)
 
-以下各節提供電子郵件通道的專屬資訊。 如需如何建立傳送的全域資訊，請參閱[此區段](steps-about-delivery-creation-steps.md)。
+以下各節提供電子郵件通道的專屬資訊。 如需如何建立傳送的全域資訊，請參閱 [本節](steps-about-delivery-creation-steps.md).

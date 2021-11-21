@@ -17,11 +17,11 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-若是傳入連絡人（客服中心或網站），系統會使用一組適用性規則，向指定連絡人建議最相關的優惠方案。 若要豐富優惠方案的資格標準，請擴充&#x200B;**nms:interaction**&#x200B;方案。
+若是傳入連絡人（客服中心或網站），系統會使用一組適用性規則，向指定連絡人建議最相關的優惠方案。 若要豐富優惠方案的資格條件，請擴充 **nms:interaction** 綱要。
 
-* 若要新增互動內容，請擴充&#x200B;**nms:interaction**&#x200B;架構，並視需要在架構中建立多個&#x200B;**attribute**&#x200B;元素。
+* 若要新增互動內容，請擴充 **nms:interaction** 架構和建立數量 **屬性** 元素。
 
-   在下列範例中，新增的條件為國家/地區代碼和上次造訪的頁面。
+   在下列範例中，新增的條件是國家/地區代碼和上次造訪的頁面。
 
    ![](assets/s_ncs_configuration_offer_schemas.png)
 
@@ -31,4 +31,4 @@ ht-degree: 3%
 
    ![](assets/s_ncs_configuration_offer_context.png)
 
-* 配置SOAP調用時，插入&#x200B;**context** XML元素以參考在交互架構中添加的上下文資訊。 如需詳細資訊，請參閱[透過SOAP整合（伺服器端）](../../interaction/using/integration-via-soap--server-side-.md)。
+* 設定SOAP呼叫時，插入 **內容** XML元素，以參考在互動架構中新增的內容資訊。 有關詳細資訊，請參閱 [透過SOAP整合（伺服器端）](../../interaction/using/integration-via-soap--server-side-.md).

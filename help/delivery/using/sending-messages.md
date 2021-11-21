@@ -19,18 +19,18 @@ ht-degree: 3%
 
 建立並設定您的電子郵件後，您就可以將其傳送至主要目標。 本節介紹檢查及確認電子郵件傳送的主要步驟。
 
-1. 請確定您已設定電子郵件傳送的所有專屬設定。 如需詳細資訊，請參閱[電子郵件參數](email-parameters.md)。
-1. 當電子郵件準備就緒時，建議您先傳送校樣以偵測任何可能的錯誤，然後再將其傳送至主要目標。 如需詳細資訊，請參閱[傳送校樣](steps-validating-the-delivery.md#sending-a-proof)。
+1. 請確定您已設定電子郵件傳送的所有專屬設定。 有關詳細資訊，請參閱 [電子郵件參數](email-parameters.md).
+1. 當電子郵件準備就緒時，建議您先傳送校樣以偵測任何可能的錯誤，然後再將其傳送至主要目標。 有關詳細資訊，請參閱 [傳送校樣](steps-validating-the-delivery.md#sending-a-proof).
 
-1. 完成後，您必須啟動分析以驗證電子郵件。 要執行此操作，請按一下&#x200B;**[!UICONTROL Send]**，選擇一個操作並按一下&#x200B;**[!UICONTROL Analyze]**。 有關詳細資訊，請參閱[啟動分析](steps-validating-the-delivery.md#analyzing-the-delivery)。
+1. 完成後，您必須啟動分析以驗證電子郵件。 要執行此操作，請按一下 **[!UICONTROL Send]**，選取動作並按一下 **[!UICONTROL Analyze]**. 有關詳細資訊，請參閱 [啟動分析](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-1. 分析完成後，按一下&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;啟動向目標收件者傳送訊息。 如需詳細資訊，請參閱[確認傳送](steps-sending-the-delivery.md#confirming-delivery)。
+1. 分析完成後，按一下 **[!UICONTROL Confirm delivery]** 啟動訊息傳送給目標收件者。 有關詳細資訊，請參閱 [確認傳送](steps-sending-the-delivery.md#confirming-delivery).
 
    <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 
 >[!NOTE]
 >
->[本區段](steps-validating-the-delivery.md)中說明驗證傳送的整個程式。 配置和發送傳送的完整詳細步驟顯示在[本節](steps-sending-the-delivery.md)中。
+>驗證傳送的整個程式於 [本節](steps-validating-the-delivery.md). 設定和傳送傳送的完整詳細步驟顯示於 [本節](steps-sending-the-delivery.md).
 
 以下小節詳細說明傳送電子郵件專用的設定和設定：
 <!--* [Generating the mirror page](generating-mirror-page.md)

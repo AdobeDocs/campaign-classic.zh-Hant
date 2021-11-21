@@ -41,7 +41,7 @@ ht-degree: 0%
 
       ![](assets/barcode_insert_09.png)
 
-   * 若要插入QR碼，請選取此類型並輸入要套用的糾錯率。 This rate defines the quantity of information repeated and the tolerance to deterioration.
+   * 若要插入QR碼，請選取此類型並輸入要套用的糾錯率。 該速率定義了重複資訊的數量和退化的容限。
 
       ![](assets/barcode_insert_06.png)
 
@@ -64,7 +64,7 @@ ht-degree: 0%
    >
    >分配給條形碼的值取決於其類型。 例如，EAN-8類型應正好有8個數字。
    >
-   >The personalization button to the right of the **[!UICONTROL Value]** field lets you add data in addition to the value itself. 這豐富了條碼，前提是條碼標準接受它。
+   >位於 **[!UICONTROL Value]** 欄位可讓您除了值本身之外新增資料。 這豐富了條碼，前提是條碼標準接受它。
    >
    >例如，如果您使用GS1-128類型條形碼，並且除了要輸入值之外還要輸入收件人的帳戶號，請按一下個性化按鈕並選擇 **[!UICONTROL Recipient > Account number]**. 如果正確輸入了所選收件人的帳號，則條形碼會將其考慮在內。
 

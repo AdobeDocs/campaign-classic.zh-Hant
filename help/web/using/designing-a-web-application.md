@@ -17,11 +17,11 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-根據與[Web表單](about-web-forms.md)相同的原則建立和管理Web應用程式。
+Web應用程式是根據與 [網路表單](about-web-forms.md).
 
 >[!CAUTION]
 >
->使用&#x200B;**[!UICONTROL Preview]**&#x200B;子頁簽檢查Web應用程式設計期間的錯誤。
+>使用 **[!UICONTROL Preview]** 頁簽，以檢查web應用程式設計期間的錯誤。
 >
 >在發佈Web應用程式之前，不向最終用戶公開更改。
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-您也可以選取&#x200B;**[!UICONTROL Add a chart]**&#x200B;功能表。
+您也可以選取 **[!UICONTROL Add a chart]** 功能表。
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -51,7 +51,7 @@ Adobe Campaign介面使用許多網頁應用程式來存取、管理收件者、
 
 在介面中，控制面板只會顯示一個頁面。
 
-現成的Web應用程式儲存在&#x200B;**[!UICONTROL Administration > Configuration > Web applications]**&#x200B;節點中。
+現成可用的Web應用程式儲存在 **[!UICONTROL Administration > Configuration > Web applications]** 節點。
 
 ## 編輯表單類型Web應用程式 {#edit-forms-type-web-applications}
 

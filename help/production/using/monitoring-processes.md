@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-可以手動或自動監視應用程式伺服器和重定向伺服器(**tracking**)。
+應用程式伺服器和重定向伺服器(**追蹤**)可以手動或自動監控。
 
 ## 手動監控 {#manual-monitoring}
 
-前往&#x200B;**[!UICONTROL Monitoring]**，按一下&#x200B;**[!UICONTROL Overview]**&#x200B;連結以顯示Adobe Campaign程式監控頁面。
+前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Overview]** 連結以顯示Adobe Campaign程式監控頁面。
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -31,21 +31,21 @@ ht-degree: 0%
 * 缺少進程和執行資訊的清單（開始日期、PID等）,
 * 工作流程和傳送的檢視。
 
-監控不同促銷活動程式的其他方式顯示在[此頁面](../../production/using/monitoring-guidelines.md)中。
+監控不同促銷活動程式的其他方式，請參閱 [本頁](../../production/using/monitoring-guidelines.md).
 
 ### 日誌日誌 {#log-journal}
 
-可以顯示與進程相關的日誌日誌。 若要這麼做，請按一下程式&#x200B;**mta**，然後按一下&#x200B;**[!UICONTROL Open the log journal]** 。
+可以顯示與進程相關的日誌日誌。 要執行此操作，請按一下程式， **mta** 例如，然後按一下 **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
 ### 系統指標 {#system-indicators}
 
-系統指示器清單使您能夠顯示有關電腦的資訊，如其物理和虛擬記憶體、活動進程和可用磁碟空間。 Linux和Windows作業系統的指標不同。 前往&#x200B;**[!UICONTROL Instance Monitoring]**&#x200B;頁面，然後按一下&#x200B;**[!UICONTROL Display]**&#x200B;連結以開啟指標清單
+系統指示器清單使您能夠顯示有關電腦的資訊，如其物理和虛擬記憶體、活動進程和可用磁碟空間。 Linux和Windows作業系統的指標不同。 前往 **[!UICONTROL Instance Monitoring]** 頁面，然後按一下 **[!UICONTROL Display]** 連結以開啟指標清單
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** :訊息中心專 **用的指標**。如需詳細資訊，請參閱[此區段](../../message-center/using/additional-configurations.md#monitoring-thresholds)。
+* **[!UICONTROL Pending events queued]** :特定指標 **訊息中心**. 請參閱 [本節](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以取得更多資訊。
 
 * **[!UICONTROL Memory]** :有關物理儲存器(RAM)的資訊。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
 
-   當顯示&#x200B;**[!UICONTROL Warning]**&#x200B;和&#x200B;**[!UICONTROL Alert]**&#x200B;指示器時，可以通過向安裝了Adobe Campaign伺服器的電腦中添加RAM來解決此問題。 您也可以決定將Adobe Campaign伺服器安裝在專用電腦上。
+   當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示符，則可通過向安裝了Adobe Campaign伺服器的電腦添加RAM來解決問題。 您也可以決定將Adobe Campaign伺服器安裝在專用電腦上。
 
 * **[!UICONTROL Swap Memory]** :與匹配分頁檔案的虛擬記憶體相關的資訊：硬碟上的一個區域，Windows使用它就像是RAM。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
 
-   當顯示&#x200B;**[!UICONTROL Warning]**&#x200B;和&#x200B;**[!UICONTROL Alert]**&#x200B;指示器時，您可以通過增加高級Windows設定中的exchange檔案大小來解決此問題。
+   當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示符，您可以通過增加高級Windows設定中的exchange檔案大小來解決問題。
 
 * **[!UICONTROL Disk XXX]** :有關機器閱讀器的資訊。
 
@@ -97,13 +97,13 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** :如果進程數等於1，則顯示此指示器。
 
-   顯示&#x200B;**[!UICONTROL Alert]**&#x200B;指示器時，可能是相關進程被SQL資料庫引擎鎖定，或者它被卡在無限循環中。 Adobe Campaign提供的&#x200B;**watchdog**&#x200B;進程每天自動重新啟動所有進程，使您能夠解決此問題。 但您也可以自行停止相關程式以強制重新啟動。
+   當 **[!UICONTROL Alert]** 指示符被顯示，可能是相關進程被SQL資料庫引擎鎖定，或者它被卡在無限循環中。 此 **監視** Adobe Campaign提供的程式會每天自動重新啟動所有程式，讓您解決此問題。 但您也可以自行停止相關程式以強制重新啟動。
 
 #### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** :訊息中心專 **用的指標**。如需詳細資訊，請參閱[此區段](../../message-center/using/additional-configurations.md#monitoring-thresholds)。
+* **[!UICONTROL Pending events queued]** :特定指標 **訊息中心**. 請參閱 [本節](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以取得更多資訊。
 
 * **[!UICONTROL Load average (1/5/15 minutes)]** :有關負載的資訊，即在最後一分鐘、五分鐘或十五分鐘內在電腦上運行的進程對處理器的使用率
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
 
-   當顯示&#x200B;**[!UICONTROL Warning]**&#x200B;和&#x200B;**[!UICONTROL Alert]**&#x200B;指示器時，可以通過向安裝了Adobe Campaign伺服器的電腦中添加RAM來解決此問題。 您也可以決定將Adobe Campaign伺服器安裝在專用電腦上。
+   當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示符，則可通過向安裝了Adobe Campaign伺服器的電腦添加RAM來解決問題。 您也可以決定將Adobe Campaign伺服器安裝在專用電腦上。
 
 * **[!UICONTROL Swap Memory]** :與匹配分頁檔案的虛擬記憶體相關的資訊：硬碟上的一個區域，Windows使用它就像是RAM。
 
@@ -141,9 +141,9 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
 
-   當顯示&#x200B;**[!UICONTROL Warning]**&#x200B;和&#x200B;**[!UICONTROL Alert]**&#x200B;指示器時，您可以增加exchange檔案的大小來解決問題。
+   當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示器，您可以增加exchange檔案的大小來解決問題。
 
-* **[!UICONTROL Core Files]** :關於Adobe Campaign程式當機後產生之檔案的資訊。這些檔案可讓您診斷當機原因。
+* **[!UICONTROL Core Files]** :關於Adobe Campaign程式當機後產生之檔案的資訊。 這些檔案可讓您診斷當機原因。
 
    **[!UICONTROL Current Value]** :現有檔案數。
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** :當檔案數等於1時，會顯示此指標。
 
-   當因當機而遺失程式時，該程式會在程式清單中以紅色顯示，並由Adobe Campaign提供的&#x200B;**watchdog**&#x200B;程式自動重新啟動。
+   當程式因當機而遺失時，該程式會在程式清單中以紅色顯示，並由 **監視** 程式由Adobe Campaign提供。
 
 * **[!UICONTROL Number of shared memory segments]** :有關所有Adobe Campaign進程共用的記憶體段的資訊。
 
@@ -213,7 +213,7 @@ ht-degree: 0%
 
 Adobe Campaign可讓您自訂指標。 操作步驟：
 
-1. 建立&#x200B;**.sh**&#x200B;檔案，並將其命名為&#x200B;**[!UICONTROL cust_indicators.sh]** 。
+1. 建立 **.sh** 檔案和名稱 **[!UICONTROL cust_indicators.sh]** .
 1. 將您的自訂指標新增至此檔案。 例如：
 
    ```
@@ -237,7 +237,7 @@ Adobe Campaign可讓您自訂指標。 操作步驟：
    </indicator>"
    ```
 
-1. 將檔案放入&#x200B;**[!UICONTROL usr/local/neolane/nl6]**&#x200B;資料夾。
+1. 將檔案放入 **[!UICONTROL usr/local/neolane/nl6]** 檔案夾。
 
 此檔案將由Adobe Campaign呼叫。
 
@@ -249,21 +249,21 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
 若要存取，運算子必須具有管理權限。
 
-它們分組在&#x200B;**Monitoring** > &#39;SMTP監視&#39;下。
+它們會分組在 **監控** > &#39;SMTP監視&#39;。
 
 ![](assets/smtp_reports_access.png)
 
 >[!IMPORTANT]
 >
->* 只有啟用電子郵件通道後，才能使用與SMTP監視相關的資訊。
->* 只有在實例上啟動了統計伺服器時，才提供&#x200B;**[!UICONTROL SMTP sending statistics]**。
+>* 只有啟用了電子郵件通道後，才能使用與SMTP監視相關的資訊。
+>* 此 **[!UICONTROL SMTP sending statistics]** 只有在實例上啟動了統計伺服器時，才提供。
 
 >
 
 
 ### SMTP發送統計資訊 {#smtp-sending-statistics}
 
-**[!UICONTROL SMTP sending statistics]**&#x200B;報表可讓您控制伺服器活動。 它顯示每個匹配項的合成。
+此 **[!UICONTROL SMTP sending statistics]** 報表可讓您控制伺服器活動。 它顯示每個匹配項的合成。
 
 ![](assets/smtp_stats_report.png)
 
@@ -275,7 +275,7 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
    * 綠線：已成功傳送訊息（與傳出資料一致）。
 
-   * 紅線：由Shaper放棄的消息，返回到&#x200B;**mta**（與此恢復中拒絕的資料一致）。
+   * 紅線：由Shaper放棄的消息返回到 **mta** （與此恢復中拒絕的資料一致）。
 
    這些值以每小時的訊息數量表示。
 
@@ -283,11 +283,11 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
    * 藍色曲線：活動消息的隊列。 這些訊息會盡快傳送。
 
-   * 卡基曲線：「延期」佇列。 由於限制或沒有可用的目標連接，此時無法返回這些消息。 重試次數將每5秒、10秒、20秒、40秒、2分鐘等進行。 針對已定義的&#x200B;**MaxAgeSec**&#x200B;時間，放棄。
+   * 卡基曲線：「延期」佇列。 由於限制或沒有可用的目標連接，此時無法返回這些消息。 重試次數將每5秒、10秒、20秒、40秒、2分鐘等進行。 針對已定義 **MaxAgeSec** 才被拋棄。
 
 1. 此圖表顯示放棄的消息的詳細資訊（第2張圖表上的紅色曲線）:它顯示未重試時放棄的消息(mauve)與發送失敗的消息（紅色）的比例。 這允許您查看由於統計伺服器限制（限制）或遠程伺服器不可用而未在授予的期間內處理的郵件比例。
 1. SMTP連接已開啟或正在開啟。
-1. **mtachild**&#x200B;的估計數。
+1. 估計 **mtachild**.
 
 >[!NOTE]
 >
@@ -299,23 +299,23 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
 >[!NOTE]
 >
->**serverConf.xml**&#x200B;檔案的&#x200B;**minConnectionsToLog**、**minErrorsToLog**&#x200B;和&#x200B;**minMessagesToLog**&#x200B;選項定義了將連接統計資料考慮到的閾值。
+>此 **minConnectionsToLog**, **minErrorsToLog** 和 **minMessagesToLog** 選項 **serverConf.xml** 檔案定義要考慮連接統計資訊的閾值。
 
 ![](assets/smtp_error_report.png)
 
 本報告的指標清單如下。
 
-* **Domain**&#x200B;欄包含郵件所要傳送到的網域名稱（或yahoo.com的實際網域名稱，例如）,
-* **Cnx**&#x200B;列顯示為此域開啟的SMTP連接數，
-* **Sent**&#x200B;欄對應於發送到此域的消息數，
-* **卷**&#x200B;列顯示已嘗試發送到此域（近似值）的消息量，
-* **Errors**&#x200B;欄顯示該域在該時段內錯誤的卷指示符，
-* **Last response**&#x200B;列顯示為此域收到的最後一條SMTP響應消息，
-* **Date**&#x200B;列顯示此域上次收到的SMTP響應的日期。
+* 此 **網域** 欄包含傳送訊息的網域名稱（例如yahoo.com的實際網域名稱）,
+* 此 **Cnx** 列顯示為此域開啟的SMTP連接數，
+* 此 **已傳送** 欄對應於發送到此域的消息數，
+* 此 **卷** 列顯示已嘗試發送到此域（近似值）的消息量，
+* 此 **錯誤** 欄顯示此域上在該時段內的錯誤的卷指示符，
+* 此 **上次回應** 列顯示收到的此域的最後SMTP響應消息，
+* 此 **日期** 欄顯示此域上次收到的SMTP響應的日期。
 
 >[!NOTE]
 >
->根據在&#x200B;**[!UICONTROL Period]**&#x200B;欄位中選擇的期間，計算顯示在&#x200B;**Cnx**、**Sent**&#x200B;和&#x200B;**Volume**&#x200B;欄中的值。
+>顯示於 **Cnx**, **已傳送**，和 **卷** 欄會根據 **[!UICONTROL Period]** 欄位。
 
 按一下網域名稱以檢視其錯誤。
 
@@ -323,7 +323,7 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
 ![](assets/smtp_error_report_details.png)
 
-**[!UICONTROL Owner of domain]**&#x200B;欄位可讓您在相同標籤下分組各種網域名稱。 在初始報表檢視中，所有MX網域名稱都會與此擁有者相關聯。
+此 **[!UICONTROL Owner of domain]** 欄位可讓您以相同標籤將各種網域名稱分組。 在初始報表檢視中，所有MX網域名稱都會與此擁有者相關聯。
 
 按一下PublicId識別碼以檢視詳細資訊。
 
@@ -335,13 +335,13 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
 >[!NOTE]
 >
->有關SMTP錯誤以及在Adobe Campaign中管理這些錯誤的詳細資訊，請參閱[本節](../../installation/using/email-deliverability.md)。
+>有關SMTP錯誤以及在Adobe Campaign中管理這些錯誤的詳細資訊，請參閱 [本節](../../installation/using/email-deliverability.md).
 
 ## 帳單報告 {#billing-report}
 
-**[!UICONTROL Billing]**&#x200B;技術工作流程會透過電子郵件將系統活動報表傳送至「帳單」運算子。 預設會在行銷執行個體上每月25日觸發。
+此 **[!UICONTROL Billing]** 技術工作流程會透過電子郵件將系統活動報表傳送至「帳單」運算子。 預設會在行銷執行個體上每月25日觸發。
 
-技術工作流程可在以下節點的子資料夾中找到：**管理** > **生產** > **技術工作流程**。
+技術工作流程可在以下節點的子資料夾中找到： **管理** > **生產** > **技術工作流程**.
 
 ![](assets/billing.png)
 
@@ -351,11 +351,11 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
 下列量度可用於追蹤您的傳送：
 
-* **[!UICONTROL Start date]** :傳送的開始日期。請注意，它可以早於報表的「開始日期」。
-* **[!UICONTROL Label]** :傳送的標籤。要傳送的訊息少於100個，則會視為太小，因此會依開始日期匯總，在此情況下，標籤會顯示匯總的數量，例如[聚合3個小傳送]。
+* **[!UICONTROL Start date]** :傳送的開始日期。 請注意，它可以早於報表的「開始日期」。
+* **[!UICONTROL Label]** :傳送的標籤。 要傳送的訊息少於100個，則會視為太小，因此會依開始日期匯總，在此情況下，標籤會顯示匯總的數量，例如 [合併3個小型交付].
 * **[!UICONTROL Total volume]** :傳送的總位元組數。
-* **[!UICONTROL Avg volume]** :傳輸的位元組平均卷。這是以下公式&#x200B;**（總體量/消息）**&#x200B;的結果，它是&#x200B;**[!UICONTROL Multiplier]**&#x200B;度量的計算基礎。
-* **[!UICONTROL Messages]** :已傳送訊息的數量。這包括已成功發送和重試的兩條消息（在從聯繫的伺服器接收退信後）。
+* **[!UICONTROL Avg volume]** :傳輸的位元組平均卷。 這是下列公式的結果 **（總流量/報文數）**，此為 **[!UICONTROL Multiplier]** 量度。
+* **[!UICONTROL Messages]** :已傳送訊息的數量。 這包括已成功發送和重試的兩條消息（在從聯繫的伺服器接收退信後）。
 * **[!UICONTROL Multiplier (x)]** :從報文的平均體積推導出乘數的值。
 * **[!UICONTROL Count]** :消息和乘數的乘法結果。
 
@@ -373,7 +373,7 @@ Adobe Campaign提供數種自動監控方法，如下所示。
 
 它以易於處理的XML格式生成輸出。
 
-此命令也可以使用&#x200B;**-missing**&#x200B;參數運行，該參數列出配置檔案表示應執行時此實例中缺少的進程。
+此命令也可搭配 **-missing** 參數，列出當配置檔案表示應執行時，此實例中缺少的進程。
 
 ```
 nlserver monitor -missing
@@ -387,7 +387,7 @@ wfserver@prod
 
 #### /r/test {#r-test}
 
-**http(s)://`<application>`/r/test**&#x200B;頁用於測試重定向伺服器。 建議您使用相同的方法來測試用於追蹤的前沿伺服器。 此頁面也可用來測試載入Dispatcher。
+此 **http(s)://`<application>`/r/test** 頁用於測試重定向伺服器。 建議您使用相同的方法來測試用於追蹤的前沿伺服器。 此頁面也可用來測試載入Dispatcher。
 
 它以XML格式顯示如下行：
 
@@ -399,9 +399,9 @@ wfserver@prod
 
 #### /nl/jsp/ping.jsp {#nl-jsp-ping-jsp}
 
-此&#x200B;**http(s)://`<Application server url>`/nl/jsp/ping.jsp**&#x200B;頁面的運作方式與其網路對應項相同：它測試通過apache/tomcat/web模組/資料庫並上傳到客戶端的完整查詢。 如果一切正常運作，則會傳回「OK」。 我們建議在可存取資料庫的電腦上執行此測試（例如，mta和調查）。
+此 **http(s)://`<Application server url>`/nl/jsp/ping.jsp**  頁面的運作方式與其網路對應者相同：它測試通過apache/tomcat/web模組/資料庫並上傳到客戶端的完整查詢。 如果一切正常運作，則會傳回「OK」。 我們建議在可存取資料庫的電腦上執行此測試（例如，mta和調查）。
 
-**用法**:與運算子登入相關聯的工作階段代號必須以引數形式傳遞，才能遠端登入(請參閱透過Adobe Campaign指 [令碼自動監控中的秘訣](#automatic-monitoring-via-adobe-campaign-scripts))。
+**使用狀況**:必須將與運算子登入相關聯的工作階段代號作為引數傳遞，才能遠端登入(請參閱 [透過Adobe Campaign指令碼自動監控](#automatic-monitoring-via-adobe-campaign-scripts))。
 
 例如：
 
@@ -411,7 +411,7 @@ wfserver@prod
 
 ![](assets/ncs_operators_rights_01.png)
 
-**頻率**:這是一項使用很少頻寬的測試。因此，它可以相當經常地運行，但每分鐘不能超過一次。
+**頻率**:這是一項使用很少頻寬的測試。 因此，它可以相當經常地運行，但每分鐘不能超過一次。
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
@@ -419,7 +419,7 @@ wfserver@prod
 
 ![](assets/ncs_monitoring_web.png)
 
-**用法**:與運算子登入相關聯的工作階段代號（可讓您連線至執行個體）需要用作引數(請參閱 [透過Adobe Campaign指令碼自動監控](#automatic-monitoring-via-adobe-campaign-scripts)中的秘訣)。
+**使用狀況**:與運算子登入相關聯的工作階段代號，可讓您連線至執行個體，這需要用作引數(請參閱 [透過Adobe Campaign指令碼自動監控](#automatic-monitoring-via-adobe-campaign-scripts))。
 
 運算子及其登入需先在Adobe Campaign用戶端主控台中以適當的資料庫權限和限制進行設定。
 
@@ -427,11 +427,11 @@ wfserver@prod
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
-此&#x200B;**jsp**&#x200B;代表Adobe Campaign應用程式API的入口點。 因此，它可以提供應用程式的詳細監控。 它也可用來監視Adobe Campaign Web服務。 它用於監控指令碼中，但請注意，它僅適用於高級用戶。
+此 **jsp** 代表Adobe Campaign應用程式API的入口點。 因此，它可以提供應用程式的詳細監控。 它也可用來監視Adobe Campaign Web服務。 它用於監控指令碼中，但請注意，它僅適用於高級用戶。
 
 ### 根據部署類型進行監控 {#monitoring-based-on-deployment-types}
 
-Adobe Campaign會啟用各種部署設定（如需詳細資訊，請參閱[此區段](../../installation/using/hosting-models.md)）。 本節詳細說明根據安裝類型要應用的各種自動監視技術。
+Adobe Campaign可啟用各種部署設定(如需詳細資訊，請參閱 [本節](../../installation/using/hosting-models.md))。 本節詳細說明根據安裝類型要應用的各種自動監視技術。
 
 <table> 
  <thead> 
@@ -445,30 +445,30 @@ Adobe Campaign會啟用各種部署設定（如需詳細資訊，請參閱[此�
    <td> 獨立 </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/monitor.jspon </span> Adobe Campaign伺服器</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> 和 <span class="uicontrol">/nl/jsp/monitor.jsp</span> 在Adobe Campaign伺服器上</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> 標準 </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/ping.jspon前</span> 端伺服器</p> </li> 
-     <li><p> <span class="uicontrol">/nl/jsp/monitor.jspon應</span> 用程式伺服器</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> 和 <span class="uicontrol">/nl/jsp/ping.jsp</span> 前端伺服器</p> </li> 
+     <li><p> <span class="uicontrol">/nl/jsp/monitor.jsp</span> 應用程式伺服器上</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> 企業 </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/ping.jspon前</span> 端伺服器</p> </li> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/monitor.jspon應用程</span> 式伺服器</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> 和 <span class="uicontrol">/nl/jsp/ping.jsp</span> 前端伺服器</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> 和 <span class="uicontrol">/nl/jsp/monitor.jsp</span> 應用程式伺服器上</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> 中間來源 </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/nl/jsp/monitor.jspon應</span> 用程式伺服器</p> </li> 
+     <li><p> <span class="uicontrol">/nl/jsp/monitor.jsp</span> 應用程式伺服器上</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -488,10 +488,10 @@ Adobe Campaign可提供執行個體監控工具(netreport)，讓您透過電子�
 
 自動監控需要下列預安裝注意事項：
 
-* 您必須有&#x200B;**netreport.tgz**（Linux安裝）或&#x200B;**netreport.zip**（Windows安裝）檔案，
+* 您必須擁有 **netreport.tgz** （Linux安裝）或 **netreport.zip** （Windows安裝）檔案，
 * 我們強烈建議您不要在要監視的電腦上安裝監視，
 * 它必須安裝在具有JRE或JDK的電腦上，
-* 在Linux中，要監視的電腦必須具有&#x200B;**bc**&#x200B;包。 如需詳細資訊，請參閱[本章節](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)。
+* 在Linux中，要監視的電腦必須具有 **bc** 包。 如需詳細資訊，請參閱[本章節](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)。
 
 ### 安裝程式 {#installation-procedure}
 
@@ -499,9 +499,9 @@ Adobe Campaign可提供執行個體監控工具(netreport)，讓您透過電子�
 
 1. 在主控台中，視需要建立新運算子（「監視」使用者已存在），但不指派任何權利。
 1. 執行封存擷取。
-1. 閱讀&#x200B;**readme**&#x200B;檔案。
-1. 更新&#x200B;**netconf.xml**&#x200B;配置檔案。
-1. 更新&#x200B;**netreport.bat**(Windows)或&#x200B;**netreport.sh**(Linux)檔案。
+1. 閱讀 **讀我檔案** 檔案。
+1. 更新 **netconf.xml** 設定檔。
+1. 更新 **netreport.bat** (Windows)或 **netreport.sh** (Linux)檔案。
 
 ### 配置netconf.xml檔案 {#configuring-the-netconf-xml-file}
 
@@ -542,11 +542,11 @@ XML配置檔案包含以下元素：
 
 >[!NOTE]
 >
->您可以在&#x200B;**netconf.xml**&#x200B;檔案中添加尾碼，例如&#x200B;**netconf-dev.xml**、**netconf-prod.xml**&#x200B;等，以指定各種配置。 然後，指定在&#x200B;**netreport.bat**&#x200B;或&#x200B;**netreport.sh**&#x200B;檔案中執行netreport的配置，例如，添加&#x200B;**$JAVA_HOME/bin/java netreport dev**&#x200B;或&#x200B;**@%JAVA_HOME%binjava netreport prod**。
+>您可以將尾碼新增至 **netconf.xml** 例如， **netconf-dev.xml**, **netconf-prod.xml**、等 然後，指定要用於在 **netreport.bat** 或 **netreport.sh** 通過添加 **$JAVA_HOME/bin/java反向連結開發** 或 **@%JAVA_HOME%binjava netreport prod** 例如，
 
 >[!IMPORTANT]
 >
->要使&#x200B;**monitoring**&#x200B;運算子工作，執行Netreport的電腦必須位於處於&#x200B;**sessionTokenOnly**&#x200B;模式的安全區域中。 如果未為此運算子指定可信IP掩碼，則安全區域也必須處於&#x200B;**allowEmptyPassword**&#x200B;和&#x200B;**allowUserPassword**&#x200B;模式。
+>若 **監控** 運算子工作時，執行netreport的電腦必須位於 **sessionTokenOnly** 模式。 如果未指定此運算子的可信IP掩碼，則安全區域也必須位於 **allowEmptyPassword** 和 **allowUserPassword** 模式。
 
 #### 「屬性」元素 {#properties--element}
 
@@ -554,19 +554,19 @@ XML配置檔案包含以下元素：
 
 * **mailServer**:用於傳送電子郵件的SMTP伺服器(例如：smtp.domain.net)。
 * **mailFrom**:報表寄件者的電子郵件地址(例如：monitoring@domain.net)。
-* **recipientList**:監控收件者的電子郵件地址清單。地址必須以逗號分隔（不含空格）。
-* 「**night**」模式（可選）用於避免在指定時段之間發送電子郵件。 反之，會整合資料，並在結束時間之後（預設為7:00）傳送關於夜間活動的電子郵件。
-* **buildRange**&#x200B;子元素（選用）可讓您指定最小和最大組建數。 將為生成編號未落入此範圍的所有電腦生成錯誤
+* **recipientList**:監控收件者的電子郵件地址清單。 地址必須以逗號分隔（不含空格）。
+* &#39;**夜晚**「 mode（選用）」可用來避免在指定時段之間傳送電子郵件。 反之，會整合資料，並在結束時間之後（預設為7:00）傳送關於夜間活動的電子郵件。
+* 此 **buildRange** 子元素（選用）可讓您指定最小和最大組建數。 將為生成編號未落入此範圍的所有電腦生成錯誤
 
    ```
    <buildRange minimum="0000" maximum="9999"/>
    ```
 
-* 您可以在&#x200B;**properties**&#x200B;元素中新增&#x200B;**`<sla>`**（選用）子元素。 每次執行netreport時都會產生記錄檔。 檔案的名稱包含配置名稱以及日期和時間，例如&#x200B;**dev_06_12_13_16_47_05.tmp**。 檔案包含下列資訊：執行個體名稱、電腦名稱、嚴重性級別、（0到3，從最不重要到最關鍵）、日期（時間戳格式）、查詢與回應之間經過的時間（以毫秒為單位）、使用的服務(http、ncs、ncsex、redir)。 此資訊由各服務結束時的表格標籤和分行分隔。
+* 您可以新增 **`<sla>`** （選用） **屬性** 元素。 每次執行netreport時都會產生記錄檔。 檔案的名稱包含設定名稱以及日期和時間，例如 **dev_06_12_13_16_47_05.tmp**. 檔案包含下列資訊：執行個體名稱、電腦名稱、嚴重性級別、（0到3，從最不重要到最關鍵）、日期（時間戳格式）、查詢與回應之間經過的時間（以毫秒為單位）、使用的服務(http、ncs、ncsex、redir)。 此資訊由各服務結束時的表格標籤和分行分隔。
 
 >[!NOTE]
 >
->**`<property>`**&#x200B;元素上具有值「true」的&#x200B;**persistHtmlFile**&#x200B;屬性用於在檔案&#x200B;**netreport.md**&#x200B;中記錄最新的監控狀態。 此檔案將保存在安裝目錄中。
+>此 **persistHtmlFile** 屬性，且值為「true」 **`<property>`** 元素可用來將最新的監控狀態記錄在檔案中 **netreport.md**. 此檔案將保存在安裝目錄中。
 
 #### 「例項」元素 {#instance--element}
 
@@ -584,7 +584,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 ```
 
 * **名稱**:會出現在電子郵件第一部分的執行個體名稱。
-* **recipientList** （選用）:可讓您透過電子郵件傳送有關特定例項的監控報告。
+* **recipientList** （可選）:可讓您透過電子郵件傳送有關特定例項的監控報告。
 
 #### 「主機」元素 {#host--element}
 
@@ -594,29 +594,29 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **別名** （可選）:監視的電腦的名稱，如報告中顯示的。
 * **sessionToken**:透過授權的工作階段權杖提供登入驗證。
 
-   若要設定工作階段Token，請在Adobe Campaign主控台中選取&#x200B;**monitoring**&#x200B;運算子。 在&#x200B;**訪問權限**&#x200B;頁簽中，指定授權監視此實例的電腦的IP地址。 然後，您將能夠使用&#x200B;**monitoring**&#x200B;標識符從這些電腦連接到監視頁面，而無需指定密碼。
+   若要設定工作階段Token，請選取 **監控** 運算元。 在 **存取權限** 頁簽，指定授權監視此實例的電腦的IP地址。 然後，您就能使用 **監控** 識別碼，而不需要指定密碼。
 
    ![](assets/ncs_operators_rights_02.png)
 
-* **criticalLevel** （可選）:可讓您依嚴重性層級來排序錯誤。可能的值為「0」（顯示所有級別）、「1」（僅顯示高錯誤和嚴重錯誤）和「2」（僅顯示嚴重錯誤）。 如果未提供此屬性，則顯示所有錯誤級別。
-* **篩選** （選用）:可讓您排除某些工作流程錯誤， **例如filter=&quot;wkf;wkf1&quot;**。工作流程標籤必須以分號分隔。
+* **criticalLevel** （可選）:可讓您依嚴重性層級來排序錯誤。 可能的值為「0」（顯示所有級別）、「1」（僅顯示高錯誤和嚴重錯誤）和「2」（僅顯示嚴重錯誤）。 如果未提供此屬性，則顯示所有錯誤級別。
+* **篩選** （可選）:可讓您排除某些工作流程錯誤，例如 **filter=&quot;wkf;wkf1&quot;**. 工作流程標籤必須以分號分隔。
 
 #### 子元素 {#sub-elements}
 
-* **tcp**:檢查伺服器是否處於開啟或關閉狀態。必須輸入埠號。
+* **tcp**:檢查伺服器是否處於開啟或關閉狀態。 必須輸入埠號。
 * **http**:檢查Web伺服器是否存在（應用程式伺服器可運行）。
-* **ncs**:檢查在「執行個體」屬性中輸入的執行個體的程式（工作流程錯誤、記憶體使用情況等）。**included**（必要）屬性可讓您選擇顯示無效進程（「true」或「false」值）。
+* **ncs**:檢查在「執行個體」屬性中輸入的執行個體的程式（工作流程錯誤、記憶體使用情況等）。 此 **包含** （必要）屬性可讓您選擇顯示無效進程（「true」或「false」值）。
 * **redir**:檢查追蹤。
 
-在大多數情況下，只能保留&#x200B;**ncs**&#x200B;和&#x200B;**redir**&#x200B;子元素。
+在大多數情況下，僅 **ncs** 和 **redir** 可以保留子元素。
 
-在任何情況下，某些節點都可能在子元素中過載（例如，節點&#x200B;**port=75**&#x200B;會使用於http、ncs或redir連接的埠過載）:
+在任何情況下，某些節點都可能在子元素(例如，節點 **port=75** 要使用於http、ncs或redir連接的埠過載，請執行以下操作：
 
 ```
 <ncs instance="clap40" url="/nl/jsp/soaprouter.jsp" includeDead="false" port="80"/>
 ```
 
-在&#x200B;**ncs**、**redir**&#x200B;和&#x200B;**http**&#x200B;子元素中，可以添加&#x200B;**isSecure**&#x200B;屬性（可選）以選擇是否使用https協定（「true」或「false」值）。 如果未提供此屬性，則使用http通訊協定。
+在 **ncs**, **redir** 和 **http** 子元素，您可以新增 **isSecure** 屬性（選用），以選擇是否使用https通訊協定（「true」或「false」值）。 如果未提供此屬性，則使用http通訊協定。
 
 ### 配置netreport.bat或netreport.sh檔案 {#configuring-the-netreport-bat-or-netreport-sh--file}
 
@@ -624,10 +624,10 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 
 ### 啟動監視 {#launching-monitoring}
 
-要啟動監視，請通過指令碼定期執行&#x200B;**netreport.bat**&#x200B;或&#x200B;**netreport.sh**&#x200B;檔案。 報表會在第一次執行後傳送，然後只會在狀態變更時傳送。
+要啟動監視，請執行 **netreport.bat** 或 **netreport.sh** 定期透過指令碼傳送檔案。 報表會在第一次執行後傳送，然後只會在狀態變更時傳送。
 
 ### 測試監控 {#testing-monitoring}
 
-要測試監視，請執行&#x200B;**netreport.bat**&#x200B;或&#x200B;**netreport.sh**&#x200B;檔案。
+要測試監視，請執行 **netreport.bat** 或 **netreport.sh** 檔案。
 
-系統會傳送電子郵件給&#x200B;**netconf.xml**&#x200B;檔案的&#x200B;**recipientList**&#x200B;中指定的收件者。
+會傳送電子郵件給 **recipientList** 的 **netconf.xml** 檔案。

@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-**交集**&#x200B;類型活動從接收的目標的交集建立目標。
+安 **交集**-type活動從接收目標的交集建立目標。
 
 交集可讓您僅擷取所有入站活動結果共同的母體。 目標建立時會收到所有結果：因此，必須先完成所有先前的活動，才能執行交集。 若要設定此活動，您必須輸入該活動的標籤以及與結果相關的選項。
 
 ![](assets/s_user_segmentation_inter.png)
 
-有關配置和使用交叉點活動的詳細資訊，請參閱[提取聯合資料（交叉點）](targeting-data.md#extracting-joint-data--intersection-)。
+如需設定和使用交集活動的詳細資訊，請參閱 [提取聯合資料（交集）](targeting-data.md#extracting-joint-data--intersection-).
 
-如果要處理剩餘母體，請核取&#x200B;**[!UICONTROL Generate complement]**&#x200B;選項。 補充將包含所有入站活動結果的聯合，減去交集。 接著，會新增其他出站轉變至活動，如下所示：
+檢查 **[!UICONTROL Generate complement]** 選項。 補充將包含所有入站活動結果的聯合，減去交集。 接著，會新增其他出站轉變至活動，如下所示：
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 在以下範例中，交集的目的是計算三個簡單查詢的共同收件者，以建立清單。
 
-1. 在三個簡單查詢後，插入&#x200B;**[!UICONTROL Intersection]** -type活動。
+1. 在三個簡單查詢後，插入 **[!UICONTROL Intersection]** -type活動。
 
    在此範例中；這些查詢分別針對男性、居住在巴黎的收件者和18至30歲的收件者。
 
-1. 設定交集。 要執行此操作，請選取&#x200B;**[!UICONTROL Keys only]**&#x200B;調解方法，因為查詢產生的母體包含一致的資料。
+1. 設定交集。 若要這麼做，請選取 **[!UICONTROL Keys only]** 調解方法，因為查詢產生的母體包含一致的資料。
 1. 如果您已為查詢輸入其他資料，則可以選中相關框，以僅保留由收件者共用的資料。
-1. 如果要使用其餘資料（關於查詢，但不涉及其交集），請核取&#x200B;**[!UICONTROL Generate complement]**&#x200B;方塊。
+1. 如果您想使用其餘的資料（關於查詢，但不涉及其交集），請核取 **[!UICONTROL Generate complement]** 框。
 1. 在交集結果之後新增清單更新活動。 如果您也想使用此功能，也可以將清單更新添加到補充功能。
 1. 執行工作流程。 在此，兩個收件者同時套用至所有三個輸入的查詢。 補充內容由五個收件者組成，這些收件者只適用於三個查詢中的一或兩個。
 
@@ -60,4 +60,4 @@ ht-degree: 0%
 * 綱要
 * recCount
 
-這組三個值用於標識交叉點產生的目標。 **[!UICONTROL tableName]** 是記錄目標標識符的表的名稱， **[!UICONTROL schema]** 是母體的架構(通常 **[!UICONTROL nms:recipient]**), **[!UICONTROL recCount]** 是表中的元素數。
+這組三個值用於標識交叉點產生的目標。 **[!UICONTROL tableName]** 是記錄目標標識符的表的名稱， **[!UICONTROL schema]** 是母體的結構(通常 **[!UICONTROL nms:recipient]**)和 **[!UICONTROL recCount]** 是表格中的元素數。

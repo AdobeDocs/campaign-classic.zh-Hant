@@ -27,9 +27,9 @@ ht-degree: 4%
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-（其中&#x200B;**eng**&#x200B;和&#x200B;**fra**&#x200B;是`[lang]`參數的可能值）
+(其中 **eng** 和 **fra** 是 `[lang]` 參數)
 
-命令&#x200B;**nlserver config -addinstance:instance1/demo*/eng**&#x200B;允許您使用DNS掩碼演示*建立一個名為&#x200B;**instance1**&#x200B;的實例，該實例的英文版為。
+命令 **nlserver config -addinstance:instance1/demo*/eng** 可讓您建立名為 **instance1** 英文版，帶有DNS掩碼演示*。
 
 ## 聲明資料庫 {#declaring-a-database}
 
@@ -39,14 +39,14 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-**`[rdbms]`**&#x200B;參數可能有下列值：
+下列值適用於 **`[rdbms]`** 參數：
 
 * **postgresql**:對於PostgreSQL,
 * **oracle**:oracle,
-* **mssql**:對於Microsoft SQL Server,
+* **mss**:針對Microsoft SQL Server,
 * **DB2**:DB2引擎。
 
-以下命令使用名為&#x200B;**base6**&#x200B;的SQL類型伺服器配置&#x200B;**demo**&#x200B;實例，該伺服器連結到&#x200B;**campaign**&#x200B;帳戶及其&#x200B;**password**&#x200B;在&#x200B;**dbsrv**&#x200B;伺服器上：
+以下命令將配置 **示範** SQL類型伺服器的實例稱為 **base6**，連結至 **行銷活動** 帳戶及其 **密碼** 在 **dbsrv** 伺服器：
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

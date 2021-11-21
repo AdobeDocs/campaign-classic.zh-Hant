@@ -63,7 +63,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
-如需如何建立例項的詳細資訊，請參閱此[page](../../installation/using/creating-an-instance-and-logging-on.md)。
+如需如何建立例項的詳細資訊，請參閱 [頁面](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 每項核心功能都包含一套基於任務相關需求及使用情境的功能。例如，使用 **[!UICONTROL Profiles and targets]** 連結，您可以找到收件者清單、訂閱服務、現有的目標工作流程，以及建立這些元素的捷徑。
 
-清單可透過&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;介面左側區段的&#x200B;**[!UICONTROL Lists]**&#x200B;連結取得。
+清單可透過 **[!UICONTROL Lists]** 連結(位於 **[!UICONTROL Profiles and Targets]** 介面。
 
 ![](assets/recipient_list_overview.png)
 
@@ -99,7 +99,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 使用每個核心功能區段，您可以瀏覽可用的元素。若要瀏覽可用元素，請使用 **[!UICONTROL Browsing]** 區段中的捷徑。使用 **[!UICONTROL Other choices]** 連結，您可存取其他所有頁面，不受環境影響。
 
-您可以建立新元素（傳送、Web應用程式、工作流程等） 使用畫面左側的&#x200B;**[!UICONTROL Create]**&#x200B;區段中的捷徑。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
+您可以建立新元素（傳送、Web應用程式、工作流程等） 使用 **[!UICONTROL Create]** 區段。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
 
 例如，在傳遞頁面上，使用 **[!UICONTROL Create]** 按鈕來建立新的傳遞。
 
@@ -153,7 +153,7 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 >[!NOTE]
 >
->管理員可透過 **[!UICONTROL Administration > Platform > Enumerations]** 區域管理列舉 (也稱為「分項清單」)。有關詳細資訊，請參閱[管理枚舉](../../platform/using/managing-enumerations.md)。
+>管理員可透過 **[!UICONTROL Administration > Platform > Enumerations]** 區域管理列舉 (也稱為「分項清單」)。有關詳細資訊，請參閱 [管理分項清單](../../platform/using/managing-enumerations.md).
 
 ### 預設單位 {#default-units}
 
@@ -172,4 +172,4 @@ Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-其他Campaign Classic操作說明影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+提供其他Campaign Classic作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

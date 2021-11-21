@@ -27,10 +27,10 @@ ht-degree: 2%
 套用下列步驟以設定這些標籤：
 
 1. 識別您要追蹤的頁面，並判斷其類型（WEB或TRANSACTION）。
-1. 決定您要收集哪些其他資訊，並擴展&#x200B;**nms:webTrackingLog**&#x200B;架構，並提供此資訊的說明。 預設情況下，此架構可以儲存每個交易的交易金額和項目數。
+1. 決定您要收集哪些其他資訊，並擴充 **nms:webTrackingLog** 此資訊說明的架構。 預設情況下，此架構可以儲存每個交易的交易金額和項目數。
 1. 建立網頁追蹤標籤。 執行此作業有兩種方式：
 
-   * 在您的Adobe Campaign平台中插入與這些頁面對應的URL，然後產生並擷取相關的Web追蹤標籤（從用戶端主控台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;節點）。
+   * 在您的Adobe Campaign平台中插入與這些頁面對應的URL，然後產生並擷取相關的網頁追蹤標籤(從 **[!UICONTROL Campaign execution>Resources>Web tracking tags]** 客戶端控制台的節點)。
    * 自行在「即時建立」模式中建立網頁追蹤標籤：與這些頁面對應的URL會自動插入您的Adobe Campaign平台。
 
 1. 在您要追蹤的頁面中以靜態或動態方式新增這些標籤。

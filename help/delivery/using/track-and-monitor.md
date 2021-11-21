@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-您是否按一下了&#x200B;**Send**&#x200B;按鈕？ 讓我們看看會發生什麼。 傳送後，Adobe Campaign可讓您追蹤已傳送的訊息，並探索收件者對您傳送的反應。 這可協助您改善未來的傳送，並最佳化您的下一個促銷活動。
+您按一下 **傳送** 按鈕？ 讓我們看看會發生什麼。 傳送後，Adobe Campaign可讓您追蹤已傳送的訊息，並探索收件者對您傳送的反應。 這可協助您改善未來的傳送，並最佳化您的下一個促銷活動。
 
 ## 監視傳遞 {#monitoring-deliveries}
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 從Campaign傳遞控制面板，您可以檢查已處理的訊息和傳遞稽核記錄。
 您也可以控制傳送記錄檔中訊息的狀態。 [深入瞭解](about-delivery-monitoring.md)。
 
-如果未傳送傳送且其狀態維持&#x200B;**擱置中**，該怎麼辦？
+如果未傳送傳送且其狀態維持，該怎麼辦 **待定**?
 
 * 執行程式正在等待某些資源的可用性。 MTA可能尚未啟動。
 檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [深入瞭解](../../production/using/administration.md)。
@@ -41,13 +41,13 @@ ht-degree: 3%
 
 若要進一步了解收件者的行為，您可以追蹤收件者對傳遞的反應：接收、開啟、點按連結、取消訂閱等。 在Campaign Classic中，此資訊會顯示在傳送所定位之收件者的「追蹤」標籤和傳送的「追蹤」標籤中。
 
-**提示**:訊息追蹤預設為啟用。若要設定URL，請在傳送精靈的下半部選取「顯示URL」選項。 對於訊息的每個URL，您可以選擇是否啟用追蹤。
+**筆尖**:訊息追蹤預設為啟用。 若要設定URL，請在傳送精靈的下半部選取「顯示URL」選項。 對於訊息的每個URL，您可以選擇是否啟用追蹤。
 
-如需詳細資訊，請參閱[設定追蹤](how-to-configure-tracked-links.md)區段和[追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)說明。
+有關詳細資訊，請參閱 [設定追蹤](how-to-configure-tracked-links.md) 區段和 [追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators) 說明。
 
 ## 傳遞效能 {#delivery-performances}
 
-若要測量訊息傳送的速度，您可以控制傳送的輸送量。 標準是每小時傳送的訊息數，以及訊息的大小（以位元/秒為單位）。 有關詳細資訊，請參閱[傳送吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
+若要測量訊息傳送的速度，您可以控制傳送的輸送量。 標準是每小時傳送的訊息數，以及訊息的大小（以位元/秒為單位）。 有關詳細資訊，請參閱 [傳送總處理能力](../../reporting/using/global-reports.md#delivery-throughput).
 
 **提示**:
 
@@ -67,4 +67,4 @@ ht-degree: 3%
 
 * [傳遞效能問題](delivery-performances.md)
 
-* [臨時檔案問題](../../production/using/temporary-files.md)  — 僅 *限內部部署客戶*
+* [臨時檔案問題](../../production/using/temporary-files.md) - *僅內部部署客戶*

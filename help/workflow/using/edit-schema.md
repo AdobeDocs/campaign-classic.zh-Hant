@@ -17,13 +17,13 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-可使用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活動來轉換、標準化資料，並在必要時擴充工作流程。 它通常用於標準化資料結構：例如，您可以計算欄位或匯總的平均值，以重新命名輸出欄或修改其內容。
+可以使用 **[!UICONTROL Edit schema]** 活動。 它通常用於標準化資料結構：例如，您可以計算欄位或匯總的平均值，以重新命名輸出欄或修改其內容。
 
 此活動不會更改工作表中的資料，而只會更改其架構，即資料的邏輯視圖。
 
 ![](assets/wf_manipulation_box.png)
 
-您也可以通過&#x200B;**[!UICONTROL Links]**&#x200B;頁簽建立與其他工作台的聯接。
+您也可以透過 **[!UICONTROL Links]** 標籤。
 
 ![](assets/wf_manipulation_box_link_tab.png)
 

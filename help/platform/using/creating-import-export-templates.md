@@ -17,17 +17,17 @@ ht-degree: 22%
 
 ![](../../assets/common.svg)
 
-匯入和匯出範本儲存在Adobe Campaign樹的&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;目錄中。
+匯入和匯出範本會儲存在 **[!UICONTROL Resources > Templates > Job templates]** Adobe Campaign樹的目錄。
 
 按照預設，此目錄中存在三個匯入範本和一個匯出範本。不得更改它們。
 
-* 本機範本&#x200B;**[!UICONTROL Import denylist]**&#x200B;已設定為匯入已新增至封鎖清單的電子郵件地址清單。
+* 原生範本 **[!UICONTROL Import denylist]** 已設定為匯入已新增至封鎖清單的電子郵件地址清單。
 
-* **[!UICONTROL New text import]**&#x200B;和&#x200B;**[!UICONTROL New text export]**&#x200B;範本可讓您從頭設定匯入或匯出。
+* 此 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 範本可讓您從頭設定匯入或匯出。
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-您可以複製現有範本以建立自己的範本，或透過&#x200B;**[!UICONTROL New > Import template]** / **[!UICONTROL Export template]**&#x200B;功能表建立新範本。
+您可以複製現有範本以建立您自己的範本，或透過 **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** 功能表。
 
 然後，設定範本的程式與以下各節中顯示的程式相同：
 

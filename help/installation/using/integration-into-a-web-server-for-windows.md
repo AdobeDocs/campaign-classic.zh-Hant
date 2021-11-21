@@ -23,8 +23,8 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）作為應用程式
 
 在此情況下：
 
-* 預設監聽埠為8080。 要更改它，請參閱[此部分](../../installation/using/configure-tomcat.md)。
-* 然後，用戶端主控台會使用URL連線，例如[https:// `<computer>`:8080](https://myserver.adobe.com:8080)。
+* 預設監聽埠為8080。 若要變更，請參閱 [本節](../../installation/using/configure-tomcat.md).
+* 然後，用戶端主控台會使用URL(例如 [https:// `<computer>`:8080](https://myserver.adobe.com:8080).
 
 但是，出於安全和管理原因，我們建議使用專用的Web伺服器作為HTTP通信的主要入口點，因為運行Adobe Campaign的電腦在Internet上被公開，並且您希望開啟對網路外部控制台的訪問。
 
@@ -42,7 +42,7 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
 
 以下各節詳細介紹IIS 7中的配置。 IIS8的配置基本相同。
 
-如果電腦上尚未安裝Web IIS伺服器，則可通過&#x200B;**[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]**&#x200B;菜單進行安裝。
+如果電腦上尚未安裝Web IIS伺服器，則可以通過 **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** 功能表。
 
 在IIS 7中，除了標準服務外，您還需要安裝ISAPI擴充功能和ISAPI篩選器。
 
@@ -52,7 +52,7 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
 
 套用下列設定步驟：
 
-1. 通過&#x200B;**[!UICONTROL Control panel > Administrative tools > Services]**&#x200B;菜單開啟IIS。
+1. 通過 **[!UICONTROL Control panel > Administrative tools > Services]** 功能表。
 1. 根據網路參數（TCP連接埠、DNS主機、IP地址）建立和配置站點(例如Adobe Campaign)。
 
    ![](assets/s_ncs_install_iis7_add_site.png)
@@ -65,7 +65,7 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. **VBS**&#x200B;指令碼允許您在我們剛剛建立的虛擬目錄上自動配置Adobe Campaign伺服器使用的資源。 若要啟動，請連按兩下位於`[INSTALL]\conf`資料夾中的&#x200B;**iis_neolane_setup.vbs**&#x200B;檔案，其中`[INSTALL]`是存取Adobe Campaign安裝資料夾的路徑。
+1. A **VBS** 指令碼可讓您在我們剛建立的虛擬目錄上自動配置Adobe Campaign伺服器使用的資源。 若要啟動，請連按兩下 **iis_neolane_setup.vbs** 檔案 `[INSTALL]\conf` 資料夾，其中 `[INSTALL]` 是存取Adobe Campaign安裝資料夾的路徑。
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
@@ -73,9 +73,9 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
    >
    >如果安裝了Windows server 2008/IIS7，您必須以管理員身份登錄才能運行VBS指令碼或以管理員身份執行指令碼。
 
-   如果Web伺服器用作跟蹤重定向伺服器，請按一下&#x200B;**[!UICONTROL OK]**，否則請按一下&#x200B;**[!UICONTROL Cancel]**。
+   按一下 **[!UICONTROL OK]** 如果Web伺服器用作跟蹤重定向伺服器，則按一下 **[!UICONTROL Cancel]**.
 
-   當Web伺服器上已配置多個站點時，將顯示一個中間頁，以指定安裝應用於哪個網站：輸入連結到該站點的數字，然後按一下&#x200B;**[!UICONTROL OK]**。
+   當Web伺服器上已配置多個站點時，將顯示一個中間頁，以指定安裝應用於哪個網站：輸入連結到該網站的號碼，然後按一下 **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_install_iis7_parameters_step3.png)
 
@@ -83,7 +83,7 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
-1. 在&#x200B;**[!UICONTROL Content View]**&#x200B;標籤中，確認網站已正確使用Adobe Campaign資源設定：
+1. 在 **[!UICONTROL Content View]** 標籤，確認網站已正確設定Adobe Campaign資源：
 
    ![](assets/s_ncs_install_iis7_parameters_step6.png)
 
@@ -95,11 +95,11 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
 
 若要這麼做，請套用下列步驟：
 
-1. 選擇&#x200B;**[!UICONTROL Features View]**&#x200B;頁簽，然後按兩下&#x200B;**Authentication**&#x200B;連結。
+1. 選取 **[!UICONTROL Features View]** 按兩下 **驗證** 連結。
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. 在網站的&#x200B;**目錄安全**&#x200B;頁簽中，確保啟用匿名訪問。 如有必要，請按一下&#x200B;**[!UICONTROL Edit]**&#x200B;連結以變更設定。
+1. 在 **目錄安全** 頁簽，確保已啟用匿名訪問。 如有必要，請按一下 **[!UICONTROL Edit]** 連結以變更設定。
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -109,7 +109,7 @@ IIS Web伺服器的配置過程大多是圖形的。 它涉及使用網站（已
 
 要執行此操作，請應用以下過程：
 
-1. 使用&#x200B;**iisreset**&#x200B;命令行重新啟動IIS伺服器。
+1. 使用 **isreset** 命令行。
 
 1. 啟動Adobe Campaign服務，然後確定其執行中。
 
@@ -142,7 +142,7 @@ webmdl@default (1644) - 18.2 Mo
 
 若要這麼做，請套用下列步驟：
 
-1. 按一下&#x200B;**[!UICONTROL Driver mapping]**&#x200B;圖示，編輯Adobe Campaign網站的ISAPI篩選器。
+1. 按一下 **[!UICONTROL Driver mapping]** 表徵圖。
 1. 檢查ISAPI篩選器的內容：
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
@@ -155,19 +155,19 @@ webmdl@default (1644) - 18.2 Mo
 
 這在Adobe Campaign中可能會有影響，尤其是如果您想要上傳超過此限制的檔案。
 
-例如，如果您在工作流程中使用&#x200B;**資料載入（檔案）**&#x200B;類型活動來匯入50 MB檔案，錯誤會導致工作流程無法正確執行。
+例如，如果您使用 **資料載入（檔案）** 在工作流程中輸入活動以匯入50 MB檔案，錯誤會使工作流程無法正確執行。
 
 在此情況下，您必須提高此限制：
 
-1. 通過&#x200B;**[!UICONTROL Start > (Control panel) > Administration tools]**&#x200B;菜單開啟IIS。
-1. 在&#x200B;**連接**&#x200B;窗格中，選擇為Adobe安裝建立的站點，然後按兩下主窗格中的&#x200B;**請求篩選**。
-1. 在&#x200B;**Actions**&#x200B;窗格中，選擇&#x200B;**Edit Feature Settings**&#x200B;以能夠編輯&#x200B;**Maximum authorized content size(bytes)**&#x200B;欄位中的值。
+1. 通過 **[!UICONTROL Start > (Control panel) > Administration tools]** 功能表。
+1. 在 **連線** ，選擇為Adobe安裝建立的站點，然後按兩下 **請求篩選** 的下一頁。
+1. 在 **動作** 窗格，選擇 **編輯功能設定** 可編輯 **最大授權內容大小（位元組）** 欄位。
 
    例如，若要授權上傳50 MB的檔案，您必須指定大於&quot;52428800&quot;位元組的值。
 
 >[!NOTE]
 >
->有關此IIS選項的詳細資訊，請參閱[官方文檔](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)的「How To」部分。
+>有關此IIS選項的詳細資訊，請參閱 [官方檔案](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
 ### 配置http錯誤消息顯示 {#configuring-http-error-message-display}
 
@@ -175,9 +175,9 @@ webmdl@default (1644) - 18.2 Mo
 
 若要修正此問題並正確顯示錯誤，請套用下列設定：
 
-1. 通過&#x200B;**[!UICONTROL Start > Control Panel > Administrative tools]**&#x200B;菜單開啟IIS。
-1. 在&#x200B;**連線**&#x200B;窗格中，選取為Adobe Campaign安裝建立的網站，然後在主窗格中連按兩下&#x200B;**設定編輯器**。
-1. 在&#x200B;**Section**&#x200B;下拉清單中，選擇&#x200B;**system.webServer** > **httpErrors**。
-1. 在&#x200B;**existingResponse**&#x200B;行選取&#x200B;**PassThrough**&#x200B;值。
+1. 通過 **[!UICONTROL Start > Control Panel > Administrative tools]** 功能表。
+1. 在 **連線** ，選擇為Adobe Campaign安裝建立的站點，然後按兩下 **配置編輯器** 的下一頁。
+1. 在 **區段** 下拉清單，選擇 **system.webServer** > **httpErrors**.
+1. 選取 **傳遞** 值 **existingResponse** 行。
 
 ![](assets/ins_iis_httperrors.png)

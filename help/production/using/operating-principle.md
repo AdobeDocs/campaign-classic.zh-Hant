@@ -23,17 +23,17 @@ ht-degree: 1%
 
 有三種類型的Adobe Campaign模組：
 
-* 多實例模組：對所有實例運行單個進程。 這適用於下列模組：**web**、**syslogd**、**trackinglogd**&#x200B;和&#x200B;**watchdog**（**config-default.xml**&#x200B;檔案中的活動）。
-* 單實例模組：每個實例運行一個進程。 這適用於下列模組：**mta**、**wfserver**、**inMail**、**sms**&#x200B;和&#x200B;**stat**（來自&#x200B;**config-`<instance>`.xml**&#x200B;檔案的活動）。
-* 實用程式模組：這些模組偶爾會執行，以執行偶爾或經常的操作（**cleanup**、**config**、下載追蹤記錄等）。
+* 多實例模組：對所有實例運行單個進程。 這適用於下列模組： **web**, **syslogd**, **trackinglogd** 和 **監視** (來自 **config-default.xml** 檔案)。
+* 單實例模組：每個實例運行一個進程。 這適用於下列模組： **mta**, **wfserver**, **inMail**, **sms** 和 **stat** (來自 **config-`<instance>`.xml** 檔案)。
+* 實用程式模組：這些模組偶爾會執行，以執行偶爾或經常的操作(**cleanup**, **設定**、下載追蹤記錄等)。
 
-使用安裝資料夾&#x200B;**bin**&#x200B;目錄中安裝的命令行工具&#x200B;**nlserver**&#x200B;來執行模組管理。
+使用命令行工具執行模組管理 **nlserver** 安裝於 **bin** 安裝資料夾的目錄。
 
-**nlserver**&#x200B;工具的一般語法如下：
+的一般語法 **nlserver** 工具如下：
 
-**nlserver  `<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
-有關可用模組的清單，請使用&#x200B;**nlserver**&#x200B;命令。
+如需可用模組的清單，請使用 **nlserver** 命令。
 
 下表詳細說明了可用模組：
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 >
 >最後一個模組：連結到應用程式伺服器的跟蹤和中繼模組，為了效能，它通過本機機制通過動態庫整合到Apache或IIS web伺服器中。 沒有可讓您啟動或管理此模組的Adobe Campaign命令。 因此，必須使用Web伺服器本身的命令。
 
-使用以下命令顯示模組用法及其參數的語法：**nlserver `[module]` -?**
+使用以下命令顯示模組用法及其參數的語法： **nlserver `[module]` -?**
 
 範例:
 

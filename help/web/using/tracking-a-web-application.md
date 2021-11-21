@@ -38,7 +38,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造
    * **反彈率**:僅顯示第一步的人數
    * **轉換漏斗**:每個步驟之間的丟失率。
 
-   此外，**Sector**&#x200B;類型圖表還根據其源顯示人口。
+   此外， **部門** 類型圖表會根據其來源顯示母體。
 
 ## 識別流量來源 {#identifying-the-traffic-source}
 
@@ -61,7 +61,7 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造
 
 ## 使用數字內容編輯器(DCE)設計的Web應用程式 {#web-applications-designed-with-digital-content-editor--dce-}
 
-使用HTML內容編輯器建立Web應用程式時 — **數字內容編輯器(DCE)** — 從編輯器的&#x200B;**[!UICONTROL Properties]**&#x200B;頁簽插入跟蹤標籤。 有關數字內容編輯器(DCE)的詳細資訊，請參閱[本節](about-campaign-html-editor.md)。
+使用HTML內容編輯器建立Web應用程式時 —  **數位內容編輯器(DCE)**  — 從 **[!UICONTROL Properties]** 頁簽。 有關數字內容編輯器(DCE)的詳細資訊，請參閱 [本節](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -69,6 +69,6 @@ Adobe Campaign可讓您透過插入追蹤標籤來追蹤和測量網頁上的造
 
 ![](assets/trackers_3.png)
 
-**[!UICONTROL Display blocks]**&#x200B;圖示可讓您檢視為頁面定義的追蹤標籤數。
+此 **[!UICONTROL Display blocks]** 圖示可讓您檢視為頁面定義的追蹤標籤數。
 
 ![](assets/trackers_4.png)

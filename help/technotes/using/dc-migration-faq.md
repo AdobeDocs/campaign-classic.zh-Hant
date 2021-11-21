@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-作為[Gold Standard計畫](../../rn/using/gold-standard.md)的一部分，Adobe將解除舊式資料中心的任務。 Campaign Classic實例必須傳輸到Public Cloud Amazon Web Services(AWS)。 [深入了解此計畫](dc-migration.md)。
+作為 [金標計畫](../../rn/using/gold-standard.md),Adobe會解壓縮舊版資料中心。 Campaign Classic例項必須傳輸至Public Cloud Amazon Web Services(AWS)。 [深入了解此計畫](dc-migration.md).
 
 以下是關於此專案的一組常見問題、對您的促銷活動環境的影響，以及其他實用資源。
 
-若有其他問題，您可以聯絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+若有其他問題，您可以聯絡 [Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## 基礎架構影響
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 以下列出了對資料庫和基礎架構的全局影響。
 
-* **資料庫是否會更改？新資料庫的版本是什麼？ 將使用什麼作業系統？**
+* **資料庫是否會更改？ 新資料庫的版本是什麼？ 將使用什麼作業系統？**
 
    Adobe保留選擇和部署最適合的資料庫管理引擎以在最佳條件下為Adobe Campaign服務提供服務的權利。
 
@@ -37,21 +37,21 @@ ht-degree: 0%
 
 * **是否存在資料丟失的風險？**
 
-   資料庫將從舊式資料中心轉儲，並在Public Cloud(AWS)中恢復。 在新資料中心重新啟動後，應用程式將從移轉前的確切狀態恢復。 除了某些已排程的工作會延遲外，使用者不會看到任何差異。
+   資料庫將從舊式資料中心轉儲，並在Public Cloud(AWS)中還原。 在新資料中心重新啟動後，應用程式將從移轉前的確切狀態恢復。 除了某些已排程的工作會延遲外，使用者不會看到任何差異。
 
 * **舊式資料中心和公共雲之間的套件大小是否有任何差異？**
 
-   我們正在Public Cloud(AWS)中根據當前資料庫大小、磁碟大小等使用新的包定義進行配置。 例如，如果客戶在舊式資料中心有一個應用程式伺服器，則他們可以根據包定義在Public Cloud(AWS)中有兩個應用程式伺服器。
+   我們正在Public Cloud(AWS)中布建，根據目前的資料庫大小、磁碟大小等提供新的套件定義。 例如，如果客戶在舊版資料中心有一個應用程式伺服器，則他們可以根據包定義在Public Cloud(AWS)中有兩個應用程式伺服器。
 
 * **組建編號或Campaign版本是否會變更？**
 
    首先，我們將保留與移轉相同的Campaign Classic組建。
 
-   在進一步步驟中，我們將繼續升級至最新的Campaign ClassicGA版本編號。 如需詳細資訊，請參閱[建置升級常見問題集](../../platform/using/faq-build-upgrade.md)和[Campaign Gold Standard發行說明](../../rn/using/gold-standard.md)。
+   在進一步步驟中，我們將繼續升級至最新的Campaign ClassicGA版本編號。 有關詳細資訊，請參閱 [建置升級常見問題集](../../platform/using/faq-build-upgrade.md) 和 [Campaign Gold Standard發行說明](../../rn/using/gold-standard.md).
 
 * **解決遷移後問題的計畫是什麼？**
 
-   在生產系統遷移之前，將進行大量測試。 但是，若有任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍將是主要聯絡點。 Adobe已成立專家團隊，以視需要提供進階支援。
+   在生產系統遷移之前，將進行大量測試。 但若有任何問題， [Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support) 仍然是主要的聯絡點。 Adobe已成立專家團隊，以視需要提供進階支援。
 
 ## 傳遞能力影響
 
@@ -59,27 +59,27 @@ ht-degree: 0%
 
 以下列出對IP、封鎖清單、子網域和URL的全域影響。
 
-* **如何處理允許清單上的IP?客戶是否需要將新的IP位址新增至允許清單，以備從Campaign傳入的流量？**
+* **如何處理允許清單上的IP? 客戶是否需要將新的IP位址新增至允許清單，以允許從Campaign傳入流量？**
 
    Adobe伺服器的IP位址將會變更。 因此，客戶可能需要在其系統的允許清單中新增這些新IP位址。
 
-   [按一](#config) 下這裡，即可在允許清單中取得有關IP的詳細資訊。
+   [按一下這裡](#config) 如需允許清單上IP的詳細資訊。
 
 * **如何處理新增至允許清單的連接埠，以供SFTP/FTP存取？**
 
-   SFTP設定（允許清單中的公開金鑰+ IP）也將從舊版資料中心移至公開雲端(AWS)。 預期客戶不會採取任何動作。
+   SFTP設定（允許清單上的公開金鑰+ IP）也會從舊版資料中心移至公用雲端(AWS)。 預期客戶不會採取任何動作。
 
 * **我們是否在更改IP?**
 
    Adobe伺服器的IP位址將會變更。 因此，客戶可能需要將這些新IP位址新增至其系統中的允許清單。
 
-   [按一](#config) 下這裡，即可在允許清單中取得有關IP的詳細資訊。
+   [按一下這裡](#config) 如需允許清單上IP的詳細資訊。
 
 * **如何處理子網域委派？**
 
    現有子網域將從舊版資料中心移至Public Cloud(AWS)。 此部分將由Adobe傳遞團隊在移轉程式中處理。
 
-   Adobe將引導客戶完成所需的測試，以確保在遷移後新的Public Cloud(AWS)伺服器上的配置正常運行。
+   Adobe會引導客戶完成所需的測試，以確保移轉後新的Public Cloud(AWS)伺服器上的設定正常運作。
 
 * **移轉會產生新的URL以用於追蹤、資源和網頁應用程式嗎？**
 
@@ -87,15 +87,15 @@ ht-degree: 0%
 
 * **子網域是否會從Neolane.net變更為campaign.adobe.com?**
 
-   移轉後，`neolane.net`和`campaign.adobe.com`都會就緒。 簡化操作：我們將將neolane.net重新導向至Public Cloud(AWS)中的新執行個體，因此不需要客戶進行任何變更。
+   兩者 `neolane.net` 和 `campaign.adobe.com` 移轉後即會就緒。 簡化操作：我們會將neolane.net重新導向至Public Cloud(AWS)中的新執行個體，因此不需要客戶進行變更。
 
 * **IP升溫的計畫是什麼？**
 
    首先，Adobe傳遞能力將評估平台的傳遞能力狀態，並建議交換機至新IP的計畫
 
-   移轉後無需熱身。 這可能是某些例外，在此情況下，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將會聯絡客戶。
+   移轉後無需熱身。 可能是個例外，在這種情況下， [Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support) 會與客戶溝通。
 
-   不過，該計畫是讓這項業務透明化，這與上線期間最初的升級不同。
+   不過，該計畫是讓這項業務對企業而言透明，而不像在上線期間所做的最初升級。
 
    移轉完成後，Campaign執行個體的傳送IP將會完全不同。 為了確保順利轉換，Adobe將逐步將流量從舊IP切換到新IP，從而實現新發送IP的升級。
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
    是. 例如，協力廠商整合（SMS提供者）應將新的Adobe Campaign應用程式伺服器IP位址新增至允許清單。
 
-* **移轉是否會影響使用Adobe Analytics連接器連線至Genesis?如何將促銷活動IP位址新增至Adobe Analytics端的允許清單？**
+* **移轉是否會影響使用Adobe Analytics連接器連線至Genesis? 如何將促銷活動IP位址新增至Adobe Analytics端的允許清單？**
 
    Adobe Campaign應用程式伺服器IP位址將會變更。 此步驟將由Adobe客戶服務在移轉後處理。
 
@@ -149,34 +149,34 @@ ht-degree: 0%
 
 * **多品牌設定是否會受移轉影響？**
 
-   一旦子網域和所有相關設定從舊版資料中心正確移動/重新導向至Public Cloud(AWS)，我們就不會預期會有任何影響。
+   只要子網域和所有相關設定從舊版資料中心正確移動/重新導向至Public Cloud(AWS)，我們就不會預期會受到任何影響。
 
 * **API連線是否會受移轉影響？**
 
    Adobe伺服器的IP位址將會變更。 因此，客戶可能需要將這些新IP位址新增至其系統中的允許清單。
 
-   [按一](#config) 下這裡以取得允許清單上IP的詳細資訊。
+   [按一下這裡](#config) 如需允許清單上IP的詳細資訊。
 
 * **我們是否可確保在移轉後正確設定所有JavaScript記憶體設定參數？**
 
-   我們將將執行個體配置從舊版資料中心複製到公用雲(AWS)，因此這些值在遷移後會保留。
+   我們會將執行個體設定從舊版資料中心複製到公用雲端(AWS)，因此這些值在移轉後會保留。
 
 * **存取特定副檔名是否有風險？**
 
-   客戶可能希望允許將字型檔案、Outlook會議檔案載入公共資源資料夾中。 此配置在當前`config-<instance>.xml`檔案中完成。 這會與設定檔一起複製。
+   客戶可能希望允許將字型檔案、Outlook會議檔案載入公共資源資料夾中。 此設定是在目前 `config-<instance>.xml` 檔案。 這會與組態檔一起複製。
 
-* **新伺服器上的時區是否更改？客戶是否可以保留其當前時區？**
+* **新伺服器上的時區是否更改？ 客戶是否能保留其目前的時區？**
 
    它可能會根據新伺服器位置而改變。 不過，客戶將能保留其目前的時區。
 
-   [如需](../../workflow/using/managing-time-zones.md) Adobe Campaign Classic v7時區管理的詳細資訊，請按一下這裡。
+   [按一下這裡](../../workflow/using/managing-time-zones.md) 以取得Adobe Campaign Classic v7中時區管理的詳細資訊。
 
 
 ## 安全性與權限
 
 ![](assets/do-not-translate/security.png)
 
-通過遷移到Public Cloud(AWS)，客戶環境將與所有必要的安全要求保持最新。 包括：
+透過此移轉至Public Cloud(AWS)，客戶環境將可隨時掌握所有必要的安全性需求。 包括：
 
 * 定期提供最新作業系統和安全補丁
 * 每個客戶的基礎架構隔離
@@ -194,7 +194,7 @@ ht-degree: 0%
 
 * **如何處理SFTP權限？**
 
-   我們會確保新的SFTP伺服器、使用者、目錄和檔案擁有完全相同的權限層級。
+   我們正在確保新的SFTP伺服器、使用者、目錄和檔案具有完全相同的權限層級。
 
 * **如果無法建立SFTP連線，因應措施/計畫是什麼以保持客戶運作？**
 
@@ -223,7 +223,7 @@ ht-degree: 0%
 
 * **我們是否需要規劃在移轉期間停止行銷活動？**
 
-   Adobe建議您在舊式資料中心關閉應用程式之前，放慢速度，最好暫停所有執行：傳遞和工作流程。 這將簡化雲伺服器(AWS)上的重啟，因為流程將有時間「優雅」暫停並保存任何正在進行的執行狀態。
+   Adobe建議您在舊式資料中心關閉應用程式之前，放慢速度，最好暫停所有執行：傳遞和工作流程。 這樣可輕鬆在雲端伺服器(AWS)上重新啟動，因為程式將有時間「正常」暫停並儲存任何進行中的執行狀態。
 
 * **我們預期Adobe Campaign服務會停機嗎？**
 
@@ -244,7 +244,7 @@ ht-degree: 0%
 
    停機時間完全取決於客戶的資料庫大小和SFTP檔案儲存大小。 請洽詢您的客戶服務聯絡人，以取得預估的持續時間。
 
-* **從舊版伺服器傳送的訊息有何變化。連結是否一律可存取？**
+* **從舊版伺服器傳送的訊息有何變化。 連結是否一律可供存取？**
 
    在移轉執行期間，只有一項服務可繼續運作：電子郵件連結重新導向。 所有收件者在電子郵件中按一下後，都將能進入登錄頁面。 不過，系統不會追蹤這些點按，因此移轉前不久開始的傳送點按率將低於往常。
 
@@ -268,7 +268,7 @@ ht-degree: 0%
 
 * **移轉後，我們仍可以存取舊執行個體嗎？**
 
-   應用程式遷移完成後，在舊式資料中心上再運行任何流程的計畫就不存在。 我們希望，除了臨時備份目的外，舊式資料中心上的所有資料都可以被擦除，直到定時備份過程在Public Cloud(AWS)上運行。
+   應用程式遷移完成後，在舊式資料中心上再運行任何流程的計畫就不存在。 我們希望，除了臨時備份之外，舊式資料中心上的所有資料都可以被擦除，直到定時備份過程在Public Cloud(AWS)上運行。
 
 * **移轉至Public Cloud後，每個執行個體的測試時間可允許多久？**
 

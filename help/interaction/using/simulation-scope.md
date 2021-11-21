@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 範圍的定義 {#definition-of-the-scope}
 
-開啟&#x200B;**[!UICONTROL Scope]**&#x200B;標籤以選擇您的設定。
+開啟 **[!UICONTROL Scope]** 標籤來選擇設定。
 
 以下是必填項目：
 
@@ -46,8 +46,8 @@ ht-degree: 2%
 
 ## 新增報表軸 {#adding-reporting-axes}
 
-您可以透過&#x200B;**[!UICONTROL Calculations]**&#x200B;標籤在目標或選件本身上新增報表軸，以增強模擬分析。
+您可以在目標或選件本身上，透過 **[!UICONTROL Calculations]** 標籤。
 
-要執行此操作，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並選擇相應欄位。 軸將用於計算模擬，並顯示在分析報告中。 如需詳細資訊，請參閱[模擬追蹤](../../interaction/using/simulation-tracking.md)。
+若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕，然後選擇相應的欄位。 軸將用於計算模擬，並顯示在分析報告中。 有關詳細資訊，請參閱 [模擬追蹤](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)

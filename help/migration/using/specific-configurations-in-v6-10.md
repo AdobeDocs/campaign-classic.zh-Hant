@@ -25,4 +25,4 @@ ht-degree: 12%
 >
 >如果您拒絕更新，則無法連接。
 
-如果您要從早於8104組建版本的v6.10平台移轉，您也必須參閱v7](../../migration/using/general-configurations.md#new-features-in-v7)中的[新功能區段。
+如果您要從早於8104組建版本的v6.10平台移轉，您也必須參閱 [v7中的新功能](../../migration/using/general-configurations.md#new-features-in-v7) 區段。

@@ -35,11 +35,11 @@ ht-degree: 17%
 
 ## 說明 {#description-13}
 
-此元素定義一組`<parameter>`元素。
+此元素會定義 `<parameter>`  元素。
 
 ## 使用與使用內容 {#use-and-context-of-use-8}
 
-此元素是強制元素，即使是`<method>`元素的單一`<param>`子元素亦然。
+此元素是必填的，即使是單一 `<param>` 的子元素 `<method>`  元素。
 
 ## 屬性說明 {#attribute-description-13}
 

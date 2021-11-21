@@ -5,8 +5,8 @@ description: 了解如何使用Campaign Explorer
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
+source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 34%
@@ -23,7 +23,7 @@ ht-degree: 34%
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - 樹狀結構清單**：您可以個人化樹狀結構的內容 (新增、移動或刪除節點)。此程序僅適用於資深使用者。有關詳細資訊，請參閱[此部分](#about-navigation-hierarchy)。)
+**1 - 樹狀結構清單**：您可以個人化樹狀結構的內容 (新增、移動或刪除節點)。此程序僅適用於資深使用者。有關詳細資訊，請參閱  [本節](#about-navigation-hierarchy).)。
 
 **2 - 清單**：您可以篩選清單、執行搜尋、新增資訊或排序資料。[深入瞭解](adobe-campaign-ui-lists.md)。
 
@@ -37,13 +37,13 @@ ht-degree: 34%
 
 ![](assets/d_ncs_integration_navigation.png)
 
-要將新資料夾添加到樹中，請在要插入資料夾的分支中按一下右鍵該資料夾，然後選擇&#x200B;**[!UICONTROL Add new folder]** 。 在快捷菜單中，選擇要建立的檔案類型。
+要將新資料夾添加到樹中，請在要插入資料夾的分支中按一下右鍵該資料夾，然後選擇 **[!UICONTROL Add new folder]** . 在快捷菜單中，選擇要建立的檔案類型。
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-在本小節](../../configuration/using/configuration.md)中了解如何設定Campaign導覽樹[。
+了解如何設定Campaign導覽樹 [在本節](../../configuration/using/configuration.md).
 
-了解如何在本小節](access-management-folders.md)中設定資料夾[的權限。
+了解如何設定資料夾的權限 [在本節](access-management-folders.md).
 
 ## 資料夾設定最佳實務
 
@@ -57,7 +57,7 @@ ht-degree: 34%
 
 * **設定命名慣例**
 
-   例如，您可以按字母順序為工作流程命名，讓工作流程按照執行順序顯示。
+   例如，您可以按字母順序為工作流程命名，讓工作流程按執行順序顯示。
 
    例如：
 
@@ -82,4 +82,4 @@ ht-degree: 34%
 
 ## 瀏覽及自訂清單 {#browsing-lists}
 
-了解如何瀏覽、管理和自訂此小節](adobe-campaign-ui-lists.md)中的清單[。
+了解如何瀏覽、管理和自訂清單 [在本節](adobe-campaign-ui-lists.md).

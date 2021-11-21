@@ -41,7 +41,7 @@ keyfield:==EMPTY
 ## 屬性說明 {#attribute-description-9}
 
 * **xlink(MNTOKEN)**:可讓您自動參照在關係表（N-N連結）的聯接中定義的外鍵。
-* **xpath(MNTOKEN)**:元素上索引或鍵的定 `<attribute>`  義。此屬性會接收一個Xpath，該Xpath定義用於定義鍵或索引的架構屬性的路徑。
+* **xpath(MNTOKEN)**:索引或鍵的定義 `<attribute>`  元素。 此屬性會接收一個Xpath，該Xpath定義用於定義鍵或索引的架構屬性的路徑。
 
 ## 範例 {#examples-}
 

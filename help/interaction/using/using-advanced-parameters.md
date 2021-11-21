@@ -21,10 +21,10 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->以下章節適用於&#x200B;**技術管理員**。
+>以下章節適用於 **技術管理員**.
 
-* 您可以使用其他內容資料。 請參閱[其他資料](../../interaction/using/additional-data.md)區段。
-* 您可以透過傳入通道，讓建議選件的應用程式內容更豐富。 要執行此操作，必須擴展&#x200B;**nms:interaction**&#x200B;交互模式。 有關完整過程，請參閱[擴展示例](../../interaction/using/extension-example.md)部分。
-* 在[建立測試環境](../../interaction/using/creating-a-test-environment.md)區段中會詳細說明建立測試環境。
-* 您可以使用鈎點來修改標準引擎行為。 有關詳細資訊，請參閱[Hooks](../../interaction/using/hooks.md)區段
-* 最後，在[分佈式架構](../../interaction/using/distributed-architectures.md)部分中詳細說明了使用與分佈式架構的交互。
+* 您可以使用其他內容資料。 請參閱 [其他資料](../../interaction/using/additional-data.md) 區段。
+* 您可以透過傳入通道，讓建議選件的應用程式內容更豐富。 若要這麼做， **nms:interaction** 必須擴展交互架構。 請參閱 [擴充功能範例](../../interaction/using/extension-example.md) 一節。
+* 建立測試環境在 [建立測試環境](../../interaction/using/creating-a-test-environment.md) 區段。
+* 您可以使用鈎點來修改標準引擎行為。 有關詳細資訊，請參閱 [鈎點](../../interaction/using/hooks.md) 節
+* 最後，在 [分佈式架構](../../interaction/using/distributed-architectures.md) 區段。

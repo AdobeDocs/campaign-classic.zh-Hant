@@ -17,17 +17,17 @@ ht-degree: 11%
 
 ![](../../assets/v7-only.svg)
 
-**堆棧跟蹤**&#x200B;表示&#x200B;**core**&#x200B;類型檔案中包含的跟蹤。 系統會在發生電腦錯誤時產生此檔案。 它可識別錯誤的來源。
+A **堆疊追蹤** 表示 **核心** 類型檔案。 系統會在發生電腦錯誤時產生此檔案。 它可識別錯誤的來源。
 
 >[!NOTE]
 >
->* **core**&#x200B;檔案的名稱為&#x200B;**core.`<num>`**。
->* **gdb — 必須** 在電腦上安裝GNU調試程式。
+>* A **核心** 檔案已命名 **核心。`<num>`**.
+>* **gdb - GNU調試器** 必須安裝在電腦上。
 
 >
 
 
-Adobe Campaign技術支援可要求您提供此&#x200B;**堆疊追蹤**。 要獲取，請在Linux中輸入以下命令：
+Adobe Campaign技術支援可向您提出此要求 **堆疊追蹤**. 要獲取，請在Linux中輸入以下命令：
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 Adobe Campaign技術支援可能會要求您使用特定執行檔（由我們提供）執行此命令。
 
-在此情況下，只需將&#x200B;**nlserver**&#x200B;替換為Adobe Campaign提供的執行檔，即可運行以下命令：
+在此情況下，只需替換 **nlserver** 由Adobe Campaign提供的執行檔：
 
 ```
 gdb nlserver <coreFile>

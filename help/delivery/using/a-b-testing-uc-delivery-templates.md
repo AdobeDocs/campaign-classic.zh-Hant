@@ -17,10 +17,10 @@ ht-degree: 20%
 
 ![](../../assets/common.svg)
 
-我們現在想要建立兩個傳遞範本。 連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動中會參考每個範本。 如需詳細資訊，請參閱[本章節](about-templates.md)。
+我們現在想要建立兩個傳遞範本。 每個範本都會在 **[!UICONTROL Email delivery]** 連結至的活動 **[!UICONTROL Split]** 活動。 如需詳細資訊，請參閱[本章節](about-templates.md)。
 
-1. 瀏覽至&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;資料夾。
-1. 複製&#x200B;**[!UICONTROL Email]**&#x200B;傳遞範本。
+1. 瀏覽至 **[!UICONTROL Resources > Delivery template]** 檔案夾。
+1. 複製 **[!UICONTROL Email]** 傳遞範本。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

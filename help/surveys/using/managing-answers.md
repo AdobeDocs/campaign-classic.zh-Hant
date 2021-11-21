@@ -23,17 +23,17 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->此選項僅適用於&#x200B;**Survey**&#x200B;類型Web應用程式。 其他類型的網路表單均不提供此功能。
+>此選項適用於 **調查** 僅鍵入Web應用程式。 其他類型的網路表單均不提供此功能。
 
 ### 儲存在封存的欄位中 {#storing-in-an-archived-field}
 
-借由新增儲存空間以儲存調查中提供的回應，即可輕鬆擴充資料範本。 要執行此操作，請在建立輸入欄位時選取&#x200B;**[!UICONTROL Store answers to a question]**&#x200B;選項。 按一下&#x200B;**[!UICONTROL New field...]**&#x200B;連結並指定其屬性：
+借由新增儲存空間以儲存調查中提供的回應，即可輕鬆擴充資料範本。 若要這麼做，請選取 **[!UICONTROL Store answers to a question]** 選項。 按一下 **[!UICONTROL New field...]** 連結並指定其屬性：
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
 輸入欄位的標籤和名稱，並選取欄位類型：文字、布林值、整數或小數、日期等
 
-選取的欄位類型包含使用者輸入回應時對資料的控制。 對於&#x200B;**text**&#x200B;欄位，您可以新增限制（大小寫、格式）或現有枚舉的連結以強制選擇。
+選取的欄位類型包含使用者輸入回應時對資料的控制。 針對 **文字** 欄位中，您可以新增限制（大小寫、格式），或連結至現有的分項清單以強制選取。
 
 要添加約束，請從下拉清單中選取它。 約束有兩種類型：
 
@@ -43,25 +43,25 @@ ht-degree: 1%
 
 1. 資料格式
 
-如果在清單中使用此欄位，則可以使用值清單上方的&#x200B;**[!UICONTROL Initialize the list of values from the database]**&#x200B;連結，在值表中自動檢索枚舉的值。
+如果此欄位用於清單中，則可使用 **[!UICONTROL Initialize the list of values from the database]** 值清單上方的連結。
 
-例如，您可以建立下拉式清單，讓使用者選取其原生語言。 對應的已封存欄位可與&#x200B;**language**&#x200B;枚舉關聯，該枚舉包含語言清單：
+例如，您可以建立下拉式清單，讓使用者選取其原生語言。 對應的封存欄位可與 **語言** 包含語言清單的枚舉：
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 
-位於欄位右側的&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示可讓您編輯此分項清單的內容：
+此 **[!UICONTROL Edit link]** 位於欄位右側的圖示可讓您編輯此分項清單的內容：
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
-在欄位的&#x200B;**[!UICONTROL General]**&#x200B;標籤中， **[!UICONTROL Initialize the list of values from the database]**&#x200B;連結可讓您自動輸入提供的標籤清單。
+在 **[!UICONTROL General]** 索引標籤， **[!UICONTROL Initialize the list of values from the database]** 連結可讓您自動輸入所提供標籤的清單。
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
 **範例**:在一個欄位中儲存收件者的合約
 
-要在一個欄位中儲存不同類型的合同，請建立&#x200B;**[!UICONTROL Text]**&#x200B;輸入欄位並選擇&#x200B;**[!UICONTROL Store answers to a question]**&#x200B;選項。
+若要在一個欄位中儲存不同類型的合約，請建立 **[!UICONTROL Text]** 輸入欄位並選取 **[!UICONTROL Store answers to a question]** 選項。
 
-按一下&#x200B;**[!UICONTROL New field...]**&#x200B;連結，然後輸入欄位屬性。 選擇&#x200B;**[!UICONTROL Multiple values]**&#x200B;選項以啟用要儲存的多個值。
+按一下 **[!UICONTROL New field...]** 連結並輸入欄位屬性。 選取 **[!UICONTROL Multiple values]** 選項，以啟用要儲存的數個值。
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
-當使用者核准調查時，其答案會儲存在&#x200B;**[!UICONTROL Contracts]**&#x200B;欄位中。
+當使用者核准調查時，其答案會儲存在 **[!UICONTROL Contracts]** 欄位。
 
 在我們的範例中，針對下列答案：
 
@@ -77,11 +77,11 @@ ht-degree: 1%
 
 回應者的設定檔將包含所輸入的四個合約。
 
-您可以在調查的&#x200B;**[!UICONTROL Answers]**&#x200B;標籤中顯示相關欄，以檢視這些欄。
+您可以在 **[!UICONTROL Answers]** ，方法是顯示相關欄。
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-您也可以根據答案來篩選收件者，以僅顯示您感興趣的使用者。 要執行此操作，請建立目標工作流程並使用&#x200B;**[!UICONTROL Survey responses]**&#x200B;方塊。
+您也可以根據答案來篩選收件者，以僅顯示您感興趣的使用者。 若要這麼做，請建立目標工作流程並使用 **[!UICONTROL Survey responses]** 框。
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
@@ -97,11 +97,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->對於其他類型的欄位，[此部分](../../platform/using/about-queries-in-campaign.md)中會詳細說明語法。
+>對於其他類型的欄位，語法在 [本節](../../platform/using/about-queries-in-campaign.md).
 
 ### 儲存設定 {#storage-settings}
 
-您可以以XML格式封存調查的答案。 這可讓您儲存所收集之答案的原始復本，當分項清單中的資料標準化程度過高時，這項功能會相當實用。 [深入瞭解](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
+您可以以XML格式封存調查的答案。 這可讓您儲存所收集之答案的原始復本，當分項清單中的資料標準化程度過高時，這項功能會相當實用。 [了解更多](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
 
 >[!CAUTION]
 >
@@ -109,12 +109,12 @@ ht-degree: 1%
 
 操作步驟：
 
-* 透過&#x200B;**[!UICONTROL Edit]**&#x200B;標籤的&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕編輯調查屬性。
-* 按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結並勾選&#x200B;**[!UICONTROL Save a copy of raw answers]**&#x200B;選項。
+* 透過編輯調查屬性 **[!UICONTROL Properties]** 按鈕 **[!UICONTROL Edit]** 標籤。
+* 按一下 **[!UICONTROL Advanced parameters]** 連結並檢查 **[!UICONTROL Save a copy of raw answers]** 選項。
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-您可依預設為所有調查啟用此選項（此選項會在調查發佈時套用）。 要執行此操作，請建立&#x200B;**[!UICONTROL NmsWebApp_XmlBackup]**&#x200B;選項並為其指派值&#x200B;**[!UICONTROL 1]**，如下所示：
+您可依預設為所有調查啟用此選項（此選項會在調查發佈時套用）。 若要這麼做，請建立 **[!UICONTROL NmsWebApp_XmlBackup]** 選項和賦值 **[!UICONTROL 1]** ，如下所示：
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
-當確認頁面時（即當使用者按一下&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Finish]**&#x200B;按鈕時），分數會累積並儲存在伺服器端。
+分數會在確認頁面時(亦即當使用者點按 **[!UICONTROL Next]** 或 **[!UICONTROL Finish]** 按鈕。
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ ht-degree: 1%
 >
 >分數無法用於相同頁面上欄位的可見性條件。 不過，這些變數可用於後續頁面。
 
-* 若要在測試中使用分數，請使用測試計算公式中的&#x200B;**[!UICONTROL Score]**&#x200B;欄位，如下所示：
+* 若要在測試中使用分數，請使用 **[!UICONTROL Score]** 欄位，如下所示：
 
    ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
@@ -152,7 +152,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_score_exb.png)
 
-* 當使用者按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕時，會加總這兩個值。
+* 當使用者點按 **[!UICONTROL Next]** 按鈕，則會將兩個值加總。
 
    ![](assets/s_ncs_admin_survey_score_exe.png)
 

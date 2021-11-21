@@ -19,8 +19,8 @@ ht-degree: 6%
 
 為確保編輯者的最佳操作，建議您遵循下列准則：
 
-* 在Adobe Campaign中匯入HTML頁面範本&#x200B;**之前，請確定範本已開啟，並在各種瀏覽器中正確顯示。**
-* 如果HTML頁面包含&#x200B;**JavaScript指令碼**，則這些指令碼必須執行&#x200B;**，而不需要在編輯器外部出現錯誤**。
+* 之前 **匯入HTML頁面範本** 在Adobe Campaign中，請確定範本會在各種瀏覽器中開啟並正確顯示。
+* 如果HTML頁面包含 **JavaScript指令碼**，需執行 **無錯誤** 編輯之外。
 * 建立範本時，建議將 **&#39;type&#39;** 屬性新增至標籤。`<input>`編輯器將處理此資訊，並幫助用戶在配置Web應用程式時將資料庫的欄位連結到表單的欄位。
 
    範本中的 HTML 程式碼範例：
@@ -29,29 +29,29 @@ ht-degree: 6%
    <input id="email" type="email" name="email"/>
    ```
 
-   **&#39;type&#39;**&#x200B;屬性以下列形式顯示在介面中：
+   此 **&#39;type&#39;** 屬性以下列形式顯示在介面中：
 
    ![](assets/dce_sidebar_inputtypechanges.png)
 
-   此網站](https://www.w3schools.com/tags/att_input_type.asp)中提供「type」屬性的正式清單[。
+   可使用「類型」屬性的正式清單 [在](https://www.w3schools.com/tags/att_input_type.asp).
 
 * 使用DCE模擬結束頁的步驟：
 
    ![](assets/dce_enchainement.png)
 
-* 確定頁面中只有一個`<body> </body>`。
+* 確定只有一個 `<body> </body>` 中。
 * 上傳CSS或JS檔案時，不會上傳.zip檔案中包含的影像。 因此，CSS中對這些影像的參考不會更新。
 
 ## 內容編輯器支援的格式 {#content-editor-supported-formats}
 
-數位內容編輯器支援HTML格式：您可以隨時切換到&#x200B;**source**&#x200B;模式。
+數位內容編輯器支援HTML格式：您可以切換至 **來源** 模式。
 
 數位內容編輯器的匯入功能可搭配下列支援的格式運作：
 
 * CSS:系統不會匯入.zip檔案中顯示的影像。 CSS中對這些影像的參考不會更新。
 * JS:系統不會匯入.zip檔案中顯示的影像。 JS中對這些影像的參考不會更新。
 * Iframe:連結的頁面不會匯入。
-* 登錄頁面和網頁應用程式：如果缺少&#x200B;**form**&#x200B;標籤，則會出現警告。 `<form> </form>`必須始終出現在消息正文中。
+* 登錄頁面和網頁應用程式：如果 **表單** 標籤遺失，則會出現警告。 A `<form> </form>` 訊息內文中必須一律存在。
 
 數位內容編輯器也可搭配下列支援的程式碼頁面使用：
 
@@ -69,7 +69,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->HTML代碼頁必須在元標籤（HTML 4或HTML 5）或物料清單中定義。 如果沒有可用的代碼頁，請開啟latin1中的檔案。
+>HTML代碼頁必須在元標籤(HTML4或HTML5)或物料清單中定義。 如果沒有可用的代碼頁，請開啟latin1中的檔案。
 
 ## HTML內容狀態 {#html-content-statuses}
 

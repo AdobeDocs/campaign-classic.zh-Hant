@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## 一般查詢 {#generic-queries}
 
-查詢是透過&#x200B;**[!UICONTROL Aggregator]**&#x200B;索引標籤中的發佈範本來設定。
+查詢是透過 **[!UICONTROL Aggregator]** 標籤。
 
 檢索到的資料將通過其主要元素豐富XML輸出文檔。
 
-從收件者方案(**nms:recipient**)上的查詢傳回的範例：
+從收件者結構上的查詢傳回的範例(**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -37,7 +37,7 @@ ht-degree: 0%
 </book>
 ```
 
-**`<collection-recipient>`**&#x200B;元素表示查詢後生成的文檔的輸入元素。 擷取的資料會在此元素下傳回；在我們的範例中，是收件者清單。
+此 **`<collection-recipient>`** 元素表示由查詢生成的文檔的輸入元素。 擷取的資料會在此元素下傳回；在我們的範例中，是收件者清單。
 
 ### 新增查詢 {#adding-a-query}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >編輯欄位&#x200B;**Path**&#x200B;用於更名查詢輸出元素。
+   >編輯欄位 **路徑** 用於更名查詢輸出元素。
 
 1. 下一頁可讓您選取要擷取的資料。
 
@@ -80,9 +80,9 @@ ht-degree: 0%
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-連結的定義會填入&#x200B;**string**-type **`<element>`**&#x200B;上，而&#x200B;**expandSchemaTarget**&#x200B;屬性會參考目標結構（本例中為「cus:chapter」）。 引用的架構必須是內容架構。
+連結的定義會填入 **字串**-type **`<element>`**，和 **expandSchemaTarget** 屬性會參考目標結構（在範例中為「cus:chapter」）。 引用的架構必須是內容架構。
 
-目標元素的內容豐富了連結元素，亦即範例架構中的&#x200B;**`<chapter>`**&#x200B;元素：
+目標元素的內容豐富了連結元素，即 **`<chapter>`** 範例綱要中的元素：
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->連結的&#x200B;**計算字串**&#x200B;從&#x200B;**computeString**&#x200B;屬性顯示。
+>此 **計算字串** 的 **computeString** 屬性。
 
 在輸入表單中，連結的編輯控制項聲明如下：
 
@@ -102,11 +102,11 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link.png)
 
-**[!UICONTROL Magnifier]**&#x200B;圖示可讓您開啟連結元素的編輯表單。
+此 **[!UICONTROL Magnifier]** 表徵圖可讓您開啟連結元素的編輯表單。
 
 #### 連結集合 {#link-collection}
 
-若要填入連結集合，請將&#x200B;**unbound=&quot;true&quot;**&#x200B;屬性新增至資料結構中連結元素的定義：
+若要填入連結集合，請新增 **unbound=&quot;true&quot;** 屬性，以定義資料結構中的連結元素：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link2.png)
 
-顯示預設列，以便查看目標元素的&#x200B;**計算字串**。
+系統會顯示預設欄，以檢視 **計算字串** 目標元素中。
 
 ### 外部表的連結 {#links-to-external-tables}
 
@@ -138,11 +138,11 @@ ht-degree: 0%
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-連結的定義會填入&#x200B;**link**-type **`<element>`**&#x200B;上，而&#x200B;**target**&#x200B;屬性會參考目標架構（在本範例中為「nms:recipient」）。
+連結的定義會填入 **連結**-type **`<element>`**，和 **目標** 屬性會參考目標架構（本範例中為「nms:recipient」）。
 
 根據慣例，必須從資料架構的主要元素宣告連結。
 
-**計算字串**&#x200B;和目標元素的鍵值豐富了主元素上的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;屬性。
+此 **計算字串** 而目標元素的鍵則會豐富 **`<name>-id`** 和 **`<name>-cs`** 屬性。
 
 在我們的範例中，連結會填入「cus:book」結構中，連結資料的內容會包含在「mainContact-id」和「mainContact-cs」屬性中：
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link3.png)
 
-您可以透過輸入表單中的連結定義新增&#x200B;**`<sysfilter>`**&#x200B;元素，以限制目標元素的選擇：
+您可以新增 **`<sysfilter>`** 元素（透過輸入表單中的連結定義）:
 
 ```
 <input xpath="mainContact">
@@ -206,7 +206,7 @@ ht-degree: 0%
 
 #### 連結匯總 {#link-aggregation}
 
-所參考的每個連結的內容僅限於目標元素的內部索引鍵和&#x200B;**計算字串**。
+所參考的每個連結的內容僅限於內部索引鍵和 **計算字串** 的URL區段。
 
 JavaScript指令碼可用來透過SOAP查詢擴充連結的內容。
 
@@ -257,6 +257,6 @@ for each(var contact in content.contact)
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-JavaScript程式碼的內容會透過&#x200B;**[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]**&#x200B;資料夾新增，且必須填入至每次轉換的發佈範本中。
+JavaScript程式碼的內容會透過 **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** 資料夾和，必須填入到每次轉換的發佈範本中。
 
 ![](assets/d_ncs_content_link5.png)

@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-在傳遞或促銷活動的架構中，**[!UICONTROL Edit the dynamic condition...]**&#x200B;連結可讓您根據特定選擇標準選擇種子地址。
+在傳遞或行銷活動的架構中， **[!UICONTROL Edit the dynamic condition...]** 連結可讓您根據特定選擇條件選擇種子地址。
 
-在此使用案例中，網站&#x200B;**我的線上資料庫**&#x200B;想要根據客戶的文學品味個人化其電子報。
+在此使用案例中，網站 **我的線上圖書館** 想根據客戶的文學品味，個人化電子報。
 
 與採購部門一起，負責交付的用戶為購買了警察小說的訂閱者建立了電子報。
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ## 步驟1 — 建立傳遞 {#step-1---creating-a-delivery}
 
-在[建立電子郵件傳送](creating-an-email-delivery.md)區段中會詳細說明建立傳送的步驟。
+建立傳送的步驟在 [建立電子郵件傳送](creating-an-email-delivery.md) 區段。
 
 在此範例中，傳送管理員已建立電子報並選取收件者。
 
@@ -40,18 +40,18 @@ ht-degree: 3%
 
 ## 步驟2 — 建立通用值 {#step-2---creating-a-common-value}
 
-若要建立與範例（採購部門）中相同的通用值，您必須先擴充種子地址的&#x200B;**資料結構**&#x200B;並編輯相關的輸入表單。
+若要建立與範例（Oracle Purchasing部門）中相同的通用值，您必須先將 **資料結構** ，並編輯相關的輸入表單。
 
 ### 擴充資料結構 {#extending-the-data-schema}
 
-有關架構擴展的詳細資訊，請參閱[配置指南](../../configuration/using/data-schemas.md)。
+如需結構擴充功能的詳細資訊，請參閱 [設定指南](../../configuration/using/data-schemas.md).
 
-1. 在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示。
-1. 在&#x200B;**[!UICONTROL Creation of a data schema]**&#x200B;窗口中，選擇&#x200B;**[!UICONTROL Extension of a schema]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 在 **[!UICONTROL Administration > Configuration > Data schemas]** 節點，按一下 **[!UICONTROL New]** 表徵圖。
+1. 在 **[!UICONTROL Creation of a data schema]** ，選擇 **[!UICONTROL Extension of a schema]** 選項，然後按一下 **[!UICONTROL Next]**.
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. 選擇&#x200B;**[!UICONTROL Seed addresses]**&#x200B;源架構，輸入&#x200B;**doc**&#x200B;作為&#x200B;**[!UICONTROL Namespace]**，然後按一下&#x200B;**[!UICONTROL Ok]**。
+1. 選取 **[!UICONTROL Seed addresses]** 源架構，請輸入 **doc** 作為 **[!UICONTROL Namespace]** 按一下 **[!UICONTROL Ok]**.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
    ![](assets/dlv_seeds_usecase_20.png)
 
-   然後複製下列行並貼到&#x200B;**[!UICONTROL Seed to insert in the export files]**&#x200B;元素下。
+   然後複製下列行並貼到 **[!UICONTROL Seed to insert in the export files]** 元素。
 
    ```
        <element aggregate="doc:seedMember:common">
@@ -78,14 +78,14 @@ ht-degree: 3%
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   在此情況下，您將指定已在種子地址表中建立名為&#x200B;**[!UICONTROL Department]**&#x200B;的新枚舉，該枚舉基於標準&#x200B;**[!UICONTROL @company]**&#x200B;枚舉模板（在種子地址表單中的名稱&#x200B;**公司**&#x200B;下標籤）。
+   在此情況下，您會指定名為 **[!UICONTROL Department]** 已在種子地址表中建立，且是以標準為基礎 **[!UICONTROL @company]** 枚舉模板（在名稱下標籤） **公司** )。
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
-1. 在&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;菜單中，選擇&#x200B;**[!UICONTROL Update database structure]**&#x200B;選項。
+1. 在 **[!UICONTROL Tools > Advanced]** ，選擇 **[!UICONTROL Update database structure]** 選項。
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. 顯示更新嚮導時，按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕以訪問「編輯表」窗口：在種子地址資料模式中執行的更改需要結構更新。
+1. 顯示更新嚮導時，按一下 **[!UICONTROL Next]** 按鈕訪問「編輯表」窗口：在種子地址資料模式中執行的更改需要結構更新。
 
    ![](assets/dlv_seeds_usecase_13.png)
 
@@ -95,17 +95,17 @@ ht-degree: 3%
 
    更新完成後，您可以關閉精靈。
 
-1. 斷開連接，然後重新連接到Adobe Campaign。 在種子地址資料架構中所做的變更現在已生效。 為了從種子地址螢幕中顯示它們，必須更新關聯的&#x200B;**[!UICONTROL Input form]**。 請參閱[更新輸入表單](#updating-the-input-form)區段。
+1. 斷開連接，然後重新連接到Adobe Campaign。 在種子地址資料架構中所做的變更現在已生效。 為了從種子地址螢幕中顯示它們，您必須更新關聯的 **[!UICONTROL Input form]**. 請參閱 [更新輸入表單](#updating-the-input-form) 區段。
 
 #### 從連結的表擴展資料架構 {#extending-the-data-schema-from-a-linked-table}
 
 種子地址資料方案可以使用來自連結到接收者資料方案 — 接收者(nms)的表的值。
 
-例如，用戶希望整合連結到收件者架構的&#x200B;**[!UICONTROL Country]**&#x200B;表中的&#x200B;**[!UICONTROL Internet Extension]**。
+例如，使用者想要整合 **[!UICONTROL Internet Extension]** 在 **[!UICONTROL Country]** 連結至收件者架構的表格。
 
 ![](assets/dlv_seeds_usecase_06.png)
 
-因此，種子地址資料結構必須擴展，如一節所述。 不過，要在&#x200B;**step 4**&#x200B;整合的代碼行如下：
+因此，種子地址資料結構必須擴展，如一節所述。 不過，要在 **步驟4** 如下所示：
 
 ```
 <element name="country">
@@ -118,28 +118,28 @@ ht-degree: 3%
 
 它們表示：
 
-* 使用者想要建立名為&#x200B;**[!UICONTROL Internet Extension]**&#x200B;的新元素，
-* 此元素來自&#x200B;**[!UICONTROL Country]**&#x200B;表格。
+* 使用者想要建立新元素的 **[!UICONTROL Internet Extension]**,
+* 這個元素來自 **[!UICONTROL Country]** 表格。
 
 >[!CAUTION]
 >
->在連結的表名中，必須指定該連結表的&#x200B;**xpath-dst**。
+>在連結的表格名稱中，您必須指定 **xpath-dst** 連結的桌子。
 >
->這可在收件者表格的&#x200B;**[!UICONTROL Country]**&#x200B;元素中找到。
+>這可在 **[!UICONTROL Country]** 元素。
 
 ![](assets/dlv_seeds_usecase_07.png)
 
-然後，用戶可以從節的&#x200B;**步驟5**&#x200B;執行操作，並更新種子地址的&#x200B;**[!UICONTROL Input form]**。
+然後，使用者可從 **步驟5** ，並更新 **[!UICONTROL Input form]** 種子地址。
 
-請參閱[更新輸入表單](#updating-the-input-form)區段。
+請參閱 [更新輸入表單](#updating-the-input-form) 區段。
 
 #### 更新輸入表單 {#updating-the-input-form}
 
-1. 在&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;節點中，查找種子地址輸入表單。
+1. 在 **[!UICONTROL Administration > Configuration > Input forms]** 節點，查找種子地址輸入表單。
 
    ![](assets/dlv_seeds_usecase_19.png)
 
-1. 編輯表單並在&#x200B;**[!UICONTROL Recipient]**&#x200B;容器中插入以下行。
+1. 編輯表單並在 **[!UICONTROL Recipient]** 容器。
 
    ```
    <input xpath="@workField"/>
@@ -148,11 +148,11 @@ ht-degree: 3%
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. 儲存您的變更。
-1. 開啟種子地址。 **[!UICONTROL Department]**&#x200B;欄位顯示在&#x200B;**[!UICONTROL Recipient]**&#x200B;表中。
+1. 開啟種子地址。 此 **[!UICONTROL Department]** 欄位中 **[!UICONTROL Recipient]** 表格。
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. 編輯要用於傳送的種子地址，並在&#x200B;**[!UICONTROL Department]**&#x200B;欄位中輸入&#x200B;**Purchasing**&#x200B;作為值。
+1. 編輯要用於傳送的種子地址，然後輸入 **購買** 作為 **[!UICONTROL Department]** 欄位。
 
 ## 步驟3 — 定義條件 {#step-3---defining-the-condition}
 
@@ -162,36 +162,36 @@ ht-degree: 3%
 
    ![](assets/dlv_seeds_usecase_01.png)
 
-1. 按一下&#x200B;**[!UICONTROL To]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Seed addresses]**&#x200B;標籤以存取&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;連結。
+1. 按一下 **[!UICONTROL To]** 連結，然後 **[!UICONTROL Seed addresses]** 標籤來存取 **[!UICONTROL Edit the dynamic condition...]** 連結。
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. 選取可讓您選擇所需種子地址的運算式。 在此，用戶選擇&#x200B;**[!UICONTROL Department (@workField)]**&#x200B;表達式。
+1. 選取可讓您選擇所需種子地址的運算式。 在此，使用者會選取 **[!UICONTROL Department (@workField)]** 運算式。
 
    ![](assets/dlv_seeds_usecase_03.png)
 
-1. 選取您想要的值。 在此範例中，使用者從值下拉式清單中選取&#x200B;**Purchasing**&#x200B;部門。
+1. 選取您想要的值。 在此範例中，使用者會選取 **購買** 值下拉式清單中的部門。
 
    ![](assets/dlv_seeds_usecase_17.png)
 
    >[!NOTE]
    >
-   >先前建立的架構擴充功能來自&#x200B;**recipient**&#x200B;架構。 上方畫面上顯示的值來自&#x200B;**recipient**&#x200B;架構的列舉。
+   >先前建立的結構擴充功能來自 **收件者** 綱要。 上方螢幕上顯示的值來自 **收件者** 綱要。
 
 1. 按一下&#x200B;**[!UICONTROL Ok]**。
 
-   查詢將顯示在&#x200B;**[!UICONTROL Select target]**&#x200B;窗口中。
+   查詢會顯示在 **[!UICONTROL Select target]** 窗口。
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以核准查詢。
-1. 分析您的傳送，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤以存取傳送記錄檔。
+1. 按一下 **[!UICONTROL Ok]** 以批准查詢。
+1. 分析您的傳送，然後按一下 **[!UICONTROL Delivery]** 標籤來存取傳送記錄檔。
 
    採購部門的種子地址顯示為待交付，與接收方的種子地址或其他種子地址一樣。
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. 按一下&#x200B;**[!UICONTROL Send]**&#x200B;按鈕以開始傳送。
+1. 按一下 **[!UICONTROL Send]** 按鈕以開始傳送。
 
    購買部門的成員構成種子地址的一部分，這些種子地址將在其電子郵件收件箱中接收傳遞內容。
 

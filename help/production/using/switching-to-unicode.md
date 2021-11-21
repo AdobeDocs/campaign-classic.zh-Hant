@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-對於Linux/PostgreSQL中的現有&#x200B;**prod**&#x200B;實例，切換為unicode的步驟如下：
+針對現有 **prod** 在Linux/PostgreSQL中，切換為unicode的步驟如下：
 
 1. 停止寫入資料庫的進程：
 
@@ -60,7 +60,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   在與資料庫標識符(**databaseId**)相關的值前面添加&#x200B;**u**&#x200B;字元：
+   新增 **u** 字元（位於與資料庫識別碼相關的值前）(**databaseId**):
 
    ```
    <web>

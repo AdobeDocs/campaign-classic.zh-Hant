@@ -19,13 +19,13 @@ ht-degree: 1%
 
 ## 更改syslogd監聽埠 {#changing-the-syslogd-listening-port}
 
-預設情況下， **syslogd**&#x200B;監聽埠為666(udp)。 您可以視需要使用環境變數加以變更。
+依預設， **syslogd** 偵聽埠為666(udp)。 您可以視需要使用環境變數加以變更。
 
 設定後，所有Adobe Campaign模組都會考量此變數。
 
 ### 在Linux {#in-linux}
 
-編輯&#x200B;**customer.sh**&#x200B;檔案並新增下列行：
+編輯 **customer.sh** 並新增下列行：
 
 ```
 export TRACE_ADDR=localhost:<listening port>
@@ -33,7 +33,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### 在Windows {#in-windows}
 
-您需要使用&#x200B;**localhost**&#x200B;值建立&#x200B;**TRACE_ADDR.**&#x200B;環境變數：**`<listening port="" />`**。
+您需要建立 **TRACE_ADDR。** 環境變數搭配 **localhost** 值： **`<listening port="" />`**.
 
 >[!IMPORTANT]
 >
@@ -41,8 +41,8 @@ export TRACE_ADDR=localhost:<listening port>
 
 ## 配置安全區域 {#configuring-security-zones}
 
-每個運算子都需要連結到區域才能登錄到實例，並且運算子IP必須包含在安全區域中定義的地址或地址集中。 技術區配置在Adobe Campaign伺服器的配置檔案中執行。 必須將運算子連結到安全區域，必須在控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點）中定義。
+每個運算子都需要連結到區域才能登錄到實例，並且運算子IP必須包含在安全區域中定義的地址或地址集中。 技術區配置在Adobe Campaign伺服器的配置檔案中執行。 必須將運算子連結至安全區域，必須在主控台中定義( **[!UICONTROL Administration > Access management > Operators]** 節點)。
 
 >[!NOTE]
 >
->有關配置安全區域的詳細資訊，請參閱[此部分](../../installation/using/security-zones.md)。
+>有關配置安全區域的詳細資訊，請參閱 [本節](../../installation/using/security-zones.md).

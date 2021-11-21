@@ -31,7 +31,7 @@ ht-degree: 69%
 
 ### 常見問題集
 
-如何升級至新建置版本？ 如何監視工作流程執行？ 什麼是資料庫清理工作流？... [閱讀前10個問題](platform/using/common-questions.md)。
+如何升級至新建置版本？ 如何監視工作流程執行？ 什麼是資料庫清理工作流？... [閱讀前10個問題](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>主題常見問答</strong></td><td><strong>常見問題</strong></td><td><strong>最佳實務</strong></td><td><strong>操作說明</strong></td></tr>
@@ -99,11 +99,11 @@ ht-degree: 69%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)。
 >
->請注意，您的執行個體必須托管在AWS上，並升級為最新的[Gold Standard](rn/using/gs-overview.md)組建或[最新的GA組建(21.1.4)](rn/using/latest-release.md)。 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須托管於AWS，並使用最新的 [Gold Standard](rn/using/gs-overview.md) 建置或 [最新GA版本編號(21.1.4)](rn/using/latest-release.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 
 ### 如何存取控制面板？
 
-控制面板可直接從 Adobe Experience Cloud 存取。 僅供管理員使用者存取。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html)以獲得更多資訊。
+控制面板可直接從 Adobe Experience Cloud 存取。 僅供管理員使用者存取。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hant)以獲得更多資訊。
 
 ### 「控制面板」常見問答集
 
@@ -123,7 +123,7 @@ ht-degree: 69%
 ### 執行個體設定
 
 了解如何在「控制面板」中管理您的Campaign Classic執行個體設定。 如需詳細資訊，請參閱下列頁面：
-* [在允許清單](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant) 上新增IP，以存取您的Campaign執行個體
+* [在允許清單中新增IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant) 存取您的Campaign執行個體
 * [管理URL權限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
 * [訪問實例詳細資訊](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
 * [管理資料加密的GPG金鑰](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
@@ -132,7 +132,7 @@ ht-degree: 69%
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新的訂票系統已通過[Adobe Admin Console](https://adminconsole.adobe.com/overview)啟動。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+新售票系統已透過 [Adobe Admin Console](https://adminconsole.adobe.com/overview). 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ### 詢問專家！
 
@@ -141,7 +141,7 @@ ht-degree: 69%
 ### 存取 Campaign 下載中心
 
 自2020年6月起，Experience Cloud解決方案Software Distribution將取代舊版Neolane下載中心，提供更有效率的軟體、套件和工具尋找和下載體驗。 [按一下此處](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)存取 Experience Cloud 軟體分送。
-了解更多有關此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)中新下載中心[的資訊。
+進一步了解新的下載中心 [在本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant).
 
 ### 建立票證或開始聊天
 

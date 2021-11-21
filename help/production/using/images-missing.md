@@ -23,11 +23,11 @@ ht-degree: 5%
 
 **Apache使用者：**
 
-如果Apache使用者使用提供的&#x200B;**apache_neolane.conf**，則不會影響使用者。
+如果Apache使用者使用提供的，則不會受到影響 **apache_neolane.conf**.
 
 **IIS用戶：**
 
 若為IIS使用者（在Windows上），建置更新後主控台中將缺少數個圖示。 需要執行其他IIS更新步驟：
 
-1. 建置更新後，按兩下位於Campaign安裝目錄中的&#x200B;**iis_neolane_setup.vbs**。 預設路徑為C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
+1. 建置更新後，按兩下 **iis_neolane_setup.vbs** 位於Campaign安裝目錄。 預設路徑為C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
 1. 重新啟動上一步更新的IIS站點。

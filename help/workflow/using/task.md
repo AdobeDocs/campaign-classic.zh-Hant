@@ -19,14 +19,14 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
->:warning: 此功能僅適用於Campaign Classicv7。[深入瞭解](../../mrm/using/creating-and-managing-tasks.md)
+>:warning: 此功能僅適用於Campaign Classicv7。 [了解更多](../../mrm/using/creating-and-managing-tasks.md)
 
-在促銷活動工作流程中，**[!UICONTROL Task]**&#x200B;活動可讓您指定兩種情況：第一個是任務完成時，第二個是任務未完成時（如果手動將任務標籤為未完成或任務過期）。
+在促銷活動工作流程中， **[!UICONTROL Task]** 活動可讓您指定兩種情況：第一個是任務完成時，第二個是任務未完成時（如果手動將任務標籤為未完成或任務過期）。
 
 ![](assets/mrm_task_in_workflow.png)
 
-[Campaign Classicv7檔案](../../mrm/using/creating-and-managing-tasks.md)中詳細說明了如何配置和操作任務。
+如何配置和操作任務在 [Campaign Classicv7檔案](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 
-**[!UICONTROL Resources]**&#x200B;選項可讓您定義多個運算子以及任務的核准排程。 如果核准者拒絕，這不會導致任務本身遭到拒絕。
+此 **[!UICONTROL Resources]** 選項可讓您定義多個運算子以及任務的核准排程。 如果核准者拒絕，這不會導致任務本身遭到拒絕。

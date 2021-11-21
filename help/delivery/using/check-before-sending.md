@@ -26,7 +26,7 @@ ht-degree: 4%
 
 此步驟可讓您在傳送至主要目標之前，偵測可能的錯誤並加以修正。
 
-在本小節](steps-validating-the-delivery.md)中顯示了驗證傳送的步驟[。
+會顯示驗證傳送的步驟 [在本節](steps-validating-the-delivery.md).
 
 ## 收件匣轉譯 {#inbox-and-email-rendering}
 
@@ -38,13 +38,13 @@ ht-degree: 4%
 
 * 收件匣轉譯功能對於識別您的電子郵件促銷活動是否成功超過主要ISP（網際網路服務提供者）和網路郵件服務的篩選器至關重要。 這類工具會將電子郵件的飛行前副本傳送至測試收件匣網路，讓您了解訊息在這些服務中的顯示或呈現方式。 它們也可能包含報表和程式碼修正選項，可協助您快速識別並進行修正，以改善傳遞能力。
 
-了解更多[，請參閱本節](inbox-rendering.md)。
+深入了解 [在本節](inbox-rendering.md).
 
 ## 校樣訊息 {#proof-messages}
 
 傳送校樣可讓您檢查選擇退出連結、鏡像頁面和任何其他連結、驗證訊息、確認影像已顯示、偵測可能的錯誤等。 您也可能想要檢查您的設計和在不同裝置上呈現。
 
-了解更多[，請參閱本節](steps-validating-the-delivery.md#sending-a-proof)。
+深入了解 [在本節](steps-validating-the-delivery.md#sending-a-proof).
 
 ## 設定A/B測試傳送 {#a-b-testing-deliveries}
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 * 選取成功率最高的，並將其傳送至目標的其餘部分
 
-了解更多[，請參閱本節](get-started-a-b-testing.md)。
+深入了解 [在本節](get-started-a-b-testing.md).
 
 ## 確認訊息已傳送 {#make-sure-your-message-is-delivered}
 
@@ -64,19 +64,19 @@ ht-degree: 4%
 
 ### 執行驗證程式
 
-您可以定義完整驗證程式，涉及Adobe Campaign運算子和群組，以驗證目標和訊息內容。 這將確保全面監控及控制促銷活動的各種程式：鎖定目標、內容、預算、擷取和傳送校樣。 系統會根據使用者的權限通知使用者、接收校樣，並能驗證或拒絕訊息。 了解更多[，請參閱本節](../../campaign/using/marketing-campaign-approval.md)。
+您可以定義完整驗證程式，涉及Adobe Campaign運算子和群組，以驗證目標和訊息內容。 這將確保全面監控及控制促銷活動的各種程式：鎖定目標、內容、預算、擷取和傳送校樣。 系統會根據使用者的權限通知使用者、接收校樣，並能驗證或拒絕訊息。 深入了解 [在本節](../../campaign/using/marketing-campaign-approval.md).
 
 ### 使用波段
 
-您可以使用波數逐步增加傳送的音量。 這樣可避免您的郵件被標示為垃圾訊息，或您想要限制每天的郵件數量。 使用波段，您可以將傳送分為數個批次，而非同時傳送大量訊息。 了解更多[，請參閱本節](steps-sending-the-delivery.md#sending-using-multiple-waves)。
+您可以使用波數逐步增加傳送的音量。 這樣可避免您的郵件被標示為垃圾訊息，或您想要限制每天的郵件數量。 使用波段，您可以將傳送分為數個批次，而非同時傳送大量訊息。 深入了解 [在本節](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### 排定訊息的優先順序
 
 您可以指出優先順序層級，以設定傳送的傳送順序。 若要這麼做：
 
-1. 編輯傳送屬性，並選取&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤。
+1. 編輯傳送屬性，並選取 **[!UICONTROL Delivery]** 標籤。
 
-1. 按從&#x200B;**[!UICONTROL Very low]**&#x200B;到&#x200B;**[!UICONTROL Very high]**&#x200B;的等級定義傳送的優先順序層級。
+1. 定義傳送的優先順序層級，從 **[!UICONTROL Very low]** to **[!UICONTROL Very high]**.
 
 >[!NOTE]
 >
@@ -88,11 +88,11 @@ ht-degree: 4%
 
 您可以：
 
-* 在serverConf.xml設定檔案中定義IP相關性。 [深入瞭解](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* 在serverConf.xml設定檔案中定義IP相關性。 [了解更多](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* 對於每個IPAfinity元素，聲明可使用的IP地址。 [深入瞭解](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* 對於每個IPAfinity元素，聲明可使用的IP地址。 [了解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您選擇的[類型](../../campaign-opt/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳送連結至管理上述相關性的傳送伺服器(MTA)。 [深入瞭解](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在 [類型](../../campaign-opt/using/about-campaign-typologies.md) 使用 **[!UICONTROL Managing affinities with IP addresses]** 欄位，將傳遞連結至管理所述相關性的傳遞伺服器(MTA)。 [深入瞭解](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 傳送電子郵件後，檢查標題以確認傳送的來源IP位址。 您的電子郵件管理員應可協助您取得標題資訊。
 
@@ -102,7 +102,7 @@ ht-degree: 4%
 
 ### 使用類型
 
-您可以使用類型規則，根據特定條件排除部分目標。 這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。例如，您可以篩選未到電子報目標的收件者。 了解更多[，請參閱此範例](../../campaign-opt/using/filtering-rules.md)。
+您可以使用類型規則，根據特定條件排除部分目標。 這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。例如，您可以篩選未到電子報目標的收件者。 深入了解 [在此範例中](../../campaign-opt/using/filtering-rules.md).
 
 ### 避免附件
 

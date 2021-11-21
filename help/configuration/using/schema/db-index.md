@@ -45,13 +45,13 @@ dbindex:==keyfield
 
 可以定義多個索引。 一個索引可以引用表的一個或多個欄位。 索引聲明通常遵循主架構元素的定義。
 
-`<dbindex>`中定義的`<keyfield>`元素的順序非常重要。 第一個`<keyfield>`必須是查詢主要基於的索引標準。
+順序 `<keyfield>` 在 `<dbindex>` 非常重要。 第一個 `<keyfield>` 必須是查詢主要依據的索引標準。
 
 通過串連表的名稱和索引的名稱來計算資料庫中索引的名稱。 例如：表名「Sample」、命名空間「Cus」、索引名「MyIndex」 — >索引建立查詢期間索引欄位的名稱：&quot;CusSample_myIndex&quot;。
 
 ## 屬性說明 {#attribute-description-3}
 
-* **_operation(string)**:定義資料庫中的寫入類型。
+* **_operation（字串）**:定義資料庫中的寫入類型。
 
    此屬性主要用於擴充現成可用的結構時。
 
@@ -63,14 +63,14 @@ dbindex:==keyfield
    * &quot;update&quot;:更新。 這表示Adobe Campaign將更新元素，或在元素不存在時產生錯誤。
    * &quot;delete&quot;:刪除。 這表示Adobe Campaign將復原和刪除元素。
 
-* **applicableIf（字串）**:考量索引的條件 — 接收XTK運算式。
+* **applicatedIf（字串）**:考量索引的條件 — 接收XTK運算式。
 * **標籤（字串）**:索引標籤。
 * **name(MNTOKEN)**:唯一索引名稱。
 * **唯一（布林值）**:如果激活了此選項(@unique=&quot;true&quot;)，則屬性保證索引在其整個欄位中的唯一性。
 
 ## 範例 {#examples-3}
 
-在&quot;id&quot;欄位上建立索引。 (在資料庫（查詢）中建立索引時，`<dbindex>`元素上的&quot;@unique&quot;屬性會觸發新增&quot;UNIQUE&quot; SQL關鍵字。)
+在&quot;id&quot;欄位上建立索引。 (「@unique」屬性 `<dbindex>` 在資料庫（查詢）中建立索引時，元素會觸發添加&quot;UNIQUE&quot; SQL關鍵字。
 
 ```
 <element label="Sample" name="Sample">

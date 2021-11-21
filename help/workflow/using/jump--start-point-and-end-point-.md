@@ -31,4 +31,4 @@ ht-degree: 15%
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-要提高圖表的可讀性，可以更改與跳躍相關聯的影像以顯示相關數字。 請參閱[管理活動影像](managing-activity-images.md)。
+要提高圖表的可讀性，可以更改與跳躍相關聯的影像以顯示相關數字。 請參閱 [管理活動影像](managing-activity-images.md).

@@ -19,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->**載入(SOAP)**&#x200B;活動僅在您已安裝&#x200B;**FDA（同盟資料存取）**&#x200B;模組時才可用。 請檢查您的授權合約。
+>此 **載入(SOAP)** 只有在您有 **FDA（同盟資料存取）** 模組已安裝。 請檢查您的授權合約。
 
-當無法透過外部資料庫中的FDA直接收集資料時，除了&#x200B;**資料載入(RDBMS)**&#x200B;活動外，還會使用&#x200B;**載入(SOAP)**&#x200B;活動。
+此 **載入(SOAP)** 除了 **資料載入(RDBMS)** 無法透過外部資料庫的FDA直接收集資料時的活動。
 
 操作如下：
 
@@ -37,19 +37,19 @@ ht-degree: 4%
 
    ![](assets/soap_load_003.png)
 
-1. 選擇&#x200B;**[!UICONTROL Click here to view and edit analysis results]**&#x200B;以指定每個已標識列。
+1. 選擇 **[!UICONTROL Click here to view and edit analysis results]** 指定每個已識別的欄。
 
    ![](assets/soap_load_001.png)
 
-   如果要更新該示例，請選擇&#x200B;**[!UICONTROL Re-analyze the example]**。
+   如果要更新示例，請選擇 **[!UICONTROL Re-analyze the example]**.
 
-   您也可以透過&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結個人化欄資料的格式。 有關格式化導入資料的詳細資訊，請參閱此[節](../../platform/using/executing-import-jobs.md)。
+   您也可以透過 **[!UICONTROL Advanced parameters]** 連結。 有關格式化導入資料的詳細資訊，請參閱 [節](../../platform/using/executing-import-jobs.md).
 
 1. 您可以使用行號做為識別碼，和/或指定SOAP呼叫傳回數個元素。
 1. 根據其函式輸入以下Tab指令碼：
 
    * **[!UICONTROL Initialization]**:建立SOAP連接。
-   * **[!UICONTROL Iteration]**:執行對SOAP服務的調用。此函式的返回必須是與示例或WSDL的說明相容的XML對象。
+   * **[!UICONTROL Iteration]**:執行對SOAP服務的調用。 此函式的返回必須是與示例或WSDL的說明相容的XML對象。
 
       Adobe Campaign會在回圈中呼叫此標籤的程式碼，直到傳回空的XML物件為止。
 

@@ -66,25 +66,25 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 
 在「擴充」活動中選取選件時，您可以選擇要使用哪個選件空間。 不過，無論選取的優惠方案空間為何，傳遞自訂功能表取決於傳遞中設定的優惠方案空間。
 
-在下列範例中，傳送中選取的選件空間為&#x200B;**[!UICONTROL Email (Environment - Recipient)]**:
+在下列範例中，傳送中選取的優惠方案空間為 **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-如果您在傳送中選取的選件空間未設定HTML呈現函式，您就不會在傳送功能表中看到，且將無法供選取。 同樣地，這與擴充活動中選取的選件空間無關。
+如果您在傳送中選取的選件空間未設定HTML呈現功能，您就不會在傳送功能表中看到，且將無法供選取。 同樣地，這與擴充活動中選取的選件空間無關。
 
 在下列範例中，HTML呈現函式可在下拉式清單中使用，因為傳送中選取的選件空間具有呈現函式：
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-此函式會插入程式碼，例如：`<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
+此函式會插入程式碼，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-選取主張時，**[!UICONTROL view]**&#x200B;屬性的值如下：
+當您選取主張時， **[!UICONTROL view]** 屬性如下：
 * &quot;rendering/html&quot;:html呈現。 它使用HTML呈現函式。
 * &quot;offer/view/html&quot;:html內容。 它不使用HTML呈現函式。 它只包含HTML欄位。
 
 當您在單一電子郵件傳送中包含多個選件空間，且其中部分內容具有呈現函式，而部分內容沒有，您必須記住哪些選件使用哪些選件空間，哪些選件空間具有呈現函式。
 
-因此，為避免任何問題，建議所有選件空間都定義HTML呈現函式，即使您的選件空間僅需要HTML內容亦然。
+因此，為避免任何問題，建議所有選件空間都定義一個HTML呈現函式，即使您的選件空間僅需要HTML內容亦然。
 
 ### 在命題日誌表中設定排名 {#rank-proposition-log-table}
 
@@ -108,7 +108,7 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 
 由於主張表中有一個名為@rank的欄位，因此將複製工作流臨時表中的值。
 
-有關在主張表格中儲存其他欄位的詳細資訊，請參閱[透過工作流程整合優惠方案](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)。
+有關在主張表中儲存其他欄位的詳細資訊，請參見 [透過工作流程整合優惠方案](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 對於具有互動的對外優惠方案，當選取了數個優惠方案且您想記錄它們在電子郵件中的顯示順序時，這個用法很有幫助。
 
@@ -123,7 +123,7 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
 ### 擴充nms:offer方案 {#extending-nms-offer-schema}
 
 擴充nms:offer結構時，請務必遵循已設定的現成結構：
-* 在`<element name="view">`下為內容儲存定義任何新欄位。
+* 為下的內容儲存定義任何新欄位 `<element name="view">`.
 * 每個新欄位需要定義兩次。 一次作為常規XML欄位，另一次作為CDATA XML欄位，名稱后面附加「_jst」。 例如：
 
    ```
@@ -131,4 +131,4 @@ Adobe Campaign的互動需要謹慎管理，才能有效運作。 您必須在�
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* 任何包含要追蹤之URL的欄位都必須放在`<element name="trackedUrls">`下，該欄位位於`<element name="view" >`下。
+* 任何包含要追蹤之URL的欄位都必須放在 `<element name="trackedUrls">` 可在 `<element name="view" >`.

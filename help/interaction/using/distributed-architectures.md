@@ -56,15 +56,15 @@ ht-degree: 1%
 
 ## 包配置 {#packages-configuration}
 
-直接連結到&#x200B;**Interaction**&#x200B;的任何架構擴展（選件、主張、收件人等） 必須部署在執行執行個體上。
+任何直接連結至的結構擴充功能 **互動** （優惠方案、主張、收件者等） 必須部署在執行執行個體上。
 
 Interaction包必須安裝在所有實例（控制和執行）上。 另外提供兩個套件：一個軟體包要安裝在控制實例上，另一個要安裝在每個執行實例上。
 
 >[!NOTE]
 >
->安裝包時，**nms:composition**&#x200B;表的&#x200B;**long**&#x200B;類型欄位（如主張ID）將變成&#x200B;**int64**&#x200B;類型欄位。 [此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中會詳細說明此類資料。
+>安裝套件時， **long** 類型欄位 **nms：主張** 表格（例如命題ID）, **int64** 類型欄位。 這類資料在 [本節](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-必須在每個執行個體上設定資料保留期間（透過部署精靈中的&#x200B;**[!UICONTROL Data purge]**&#x200B;視窗）。 在執行例項上，此期間必須對應至類型規則（滑動期間）和要計算的適用性規則所需的歷史深度。
+資料保留期間必須在每個執行個體上設定(透過 **[!UICONTROL Data purge]** )。 在執行例項上，此期間必須對應至類型規則（滑動期間）和要計算的適用性規則所需的歷史深度。
 
 在控制執行個體上：
 
@@ -76,9 +76,9 @@ Interaction包必須安裝在所有實例（控制和執行）上。 另外提�
    * 選取 **[!UICONTROL Execution instance]**。
    * 核取 **[!UICONTROL Enabled]** 選項。
    * 完成執行實例的連接參數。
-   * 每個執行例項都必須連結至ID。 按一下&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按鈕時，會指派此ID。
-   * 檢查所使用的應用程式類型：**[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或兩者。
-   * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須在有關實例的資料庫上具有以下讀寫權限：
+   * 每個執行例項都必須連結至ID。 此ID會在您按一下 **[!UICONTROL Initialize connection]** 按鈕。
+   * 檢查所使用的應用程式類型： **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**，或兩者皆有。
+   * 輸入使用的FDA帳戶。 必須在執行實例上建立運算子，並且必須在有關實例的資料庫上具有以下讀和寫權限：
 
       ```
       grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
@@ -93,13 +93,13 @@ Interaction包必須安裝在所有實例（控制和執行）上。 另外提�
    ![](assets/interaction_powerbooster2.png)
 
    * 新增執行例項清單。
-   * 對於每個，指定同步期間和篩選條件（例如，依國家/地區）。
+   * 對於每個，指定同步期間並篩選條件（例如，依國家/地區）。
 
       >[!NOTE]
       >
       >如果您遇到錯誤，可以查閱同步工作流程和優惠方案通知。 您可以在應用程式的技術工作流程中找到。
 
-基於最佳化原因，如果執行例項上僅複製了部分行銷資料庫，則您可以指定連結至環境的受限架構，以允許使用者僅使用執行例項上可用的資料。 您可以使用執行例項上無法使用的資料來建立選件。 要執行此操作，必須通過在出站通道（**[!UICONTROL Taken into account if]**&#x200B;欄位）上限制此規則來停用其他通道上的規則。
+基於最佳化原因，如果執行例項上僅複製了部分行銷資料庫，則您可以指定連結至環境的受限架構，以允許使用者僅使用執行例項上可用的資料。 您可以使用執行例項上無法使用的資料來建立選件。 若要這麼做，您必須限制出站管道(**[!UICONTROL Taken into account if]** 欄位)。
 
 ![](assets/ita_filtering.png)
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-編輯&#x200B;**Number**&#x200B;類型的大小不會導致值或索引重新寫入。 因此，它是立即的。
+編輯 **數字** 類型不會導致值或重新寫入索引。 因此，它是立即的。
 
 要執行的查詢如下：
 

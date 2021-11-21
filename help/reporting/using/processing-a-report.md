@@ -21,11 +21,11 @@ ht-degree: 2%
 
 如果您有適當的權限，則可以保存從模板建立的分析報告，或以Excel、PDF或OpenOffice格式導出。
 
-若要儲存報表，請按一下&#x200B;**[!UICONTROL Save]**&#x200B;並為報表加上標籤。
+若要儲存報表，請按一下 **[!UICONTROL Save]** 給報表貼上標籤。
 
-如果要建立報表歷史記錄並在保存時查看報表的值，請選擇&#x200B;**[!UICONTROL Also save data]**。 有關詳細資訊，請參閱[封存分析報表](#archiving-analysis-reports)。
+選擇 **[!UICONTROL Also save data]** 如果您想要建立報表的歷史記錄，並在儲存時查看報表的值。 有關詳細資訊，請參閱 [封存分析報表](#archiving-analysis-reports).
 
-**[!UICONTROL Share this report]**&#x200B;選項允許其他運算子存取報表。
+此 **[!UICONTROL Share this report]** 選項可讓其他運算子存取報表。
 
 ![](assets/s_ncs_user_report_wizard_010.png)
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-若要變更此報表，請編輯Adobe Campaign樹的&#x200B;**[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]**&#x200B;節點（或運算子具有編輯權限的第一個「Reports」類型資料夾）。 如需詳細資訊，請參閱[設定描述性分析報表的配置](#configuring-the-layout-of-a-descriptive-analysis-report)。
+若要變更此報表，請編輯 **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** Adobe Campaign樹的節點（或運算子具有編輯權限的第一個「Reports」類型資料夾）。 有關詳細資訊，請參閱 [設定描述性分析報表的配置](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## 分析報告其他設定 {#analysis-report-additional-settings}
 
@@ -41,19 +41,19 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_report_wizard_08b.png)
 
-這些選項與標準報表相同，在[本頁](../../reporting/using/properties-of-the-report.md)中有詳細說明。
+這些選項與標準報表相同，於 [本頁](../../reporting/using/properties-of-the-report.md).
 
 ## 設定描述性分析報表的配置 {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-您可以在描述性分析的圖表和表格中個人化資料的顯示和配置。 所有選項都可透過Adobe Campaign樹狀結構存取，位於每個報表的&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中。
+您可以在描述性分析的圖表和表格中個人化資料的顯示和配置。 所有選項都可透過Adobe Campaign樹狀結構(位於 **[!UICONTROL Edit]** 標籤。
 
 ### 分析報表顯示模式 {#analysis-report-display-mode}
 
-使用&#x200B;**[!UICONTROL qualitative distribution]**&#x200B;範本建立報表時，預設會選取表格和圖表顯示模式。 如果您只想要一個顯示模式，請取消勾選適當的方塊。 這表示只有已勾選顯示模式的索引標籤可供使用。
+使用 **[!UICONTROL qualitative distribution]** 預設會選取範本、表格和圖表顯示模式。 如果您只想要一個顯示模式，請取消勾選適當的方塊。 這表示只有已勾選顯示模式的索引標籤可供使用。
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
-要更改報告的架構，請按一下&#x200B;**[!UICONTROL Select the link]**&#x200B;並從資料庫中選擇另一個表。
+若要變更報表的結構，請按一下 **[!UICONTROL Select the link]** 並從資料庫中選擇另一個表。
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 您可以直接在描述性分析表格中個人化資料配置。 若要這麼做，請以滑鼠右鍵按一下您要使用的變數。 從下拉式選單中選取可用選項：
 
 * **[!UICONTROL Pivot]** 變更變數的軸。
-* **[!UICONTROL Up]** / **[!UICONTROL Down]** 以交換行中的變數。
+* **[!UICONTROL Up]** / **[!UICONTROL Down]** 換行中的變數。
 * **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** 以交換欄中的變數。
 * **[!UICONTROL Turn]** 來反轉變數軸。
 * **[!UICONTROL Sort from A to Z]** 將變數值排序為低到高。
@@ -100,20 +100,20 @@ ht-degree: 2%
 
 ### 分析報表圖表選項 {#analysis-report-chart-options}
 
-您可以個人化圖表中資料的顯示。 要執行此操作，請按一下圖表類型選擇階段期間可用的&#x200B;**[!UICONTROL Variables...]**&#x200B;連結。
+您可以個人化圖表中資料的顯示。 若要這麼做，請按一下 **[!UICONTROL Variables...]** 在圖表類型選擇階段期間可用的連結。
 
 ![](assets/s_ncs_advuser_report_wizard_3c.png)
 
 可以使用以下選項：
 
 * 窗口的上部部分允許您修改圖表顯示區域。
-* 依預設，標籤會顯示在圖表中。 您可以取消勾選&#x200B;**[!UICONTROL Show values]**&#x200B;選項以隱藏它們。
-* **[!UICONTROL Accumulate values]**&#x200B;選項可讓您將一個系列的值加總到另一個系列。
+* 依預設，標籤會顯示在圖表中。 您可以取消勾選 **[!UICONTROL Show values]** 選項。
+* 此 **[!UICONTROL Accumulate values]** 選項可讓您將值從一個系列新增至另一個系列。
 * 您可以決定是否顯示圖表圖例：若要隱藏，請取消勾選適當的選項。 依預設，圖例會顯示在右上角的圖表外。
 
-   圖例也可顯示在圖表上方，以節省顯示空間。 要執行此操作，請選取選項&#x200B;**[!UICONTROL Include in the chart]**
+   圖例也可顯示在圖表上方，以節省顯示空間。 若要這麼做，請選取選項 **[!UICONTROL Include in the chart]**
 
-   在&#x200B;**[!UICONTROL Caption position]**&#x200B;下拉清單中選取垂直和水準對齊方式。
+   在 **[!UICONTROL Caption position]** 下拉式清單。
 
    ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
@@ -129,9 +129,9 @@ ht-degree: 2%
 
 您可以使用已儲存在Adobe Campaign中的現有報表，針對資料建立描述性分析報表。 當已儲存分析或已建立報表並設定為透過描述性分析精靈存取時，即可使用此模式。
 
-要了解如何保存描述性分析，請參閱[保存分析報告](#saving-an-analysis-report)。
+要了解如何保存描述性分析，請參閱 [儲存分析報表](#saving-an-analysis-report).
 
-若要建立描述性分析報表，描述性分析精靈必須透過工作流程轉變或&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表執行。
+若要建立描述性分析報表，描述性分析精靈必須透過工作流程轉變或 **[!UICONTROL Tools > Descriptive analysis]** 功能表。
 
 1. 選取 **[!UICONTROL Existing analyses and reports]** 並按一下 **[!UICONTROL Next]**。
 1. 這可讓您存取可用報表的清單。 選擇要生成的報表。

@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-依預設，下列詳細的工作流程會與&#x200B;**與Adobe Experience Cloud**&#x200B;模組整合一併安裝。 有關此模組的詳細資訊，請參閱此[節](../../integrations/using/configuring-ims.md#installing-the-package)。
+以下詳細說明的工作流程會與 **與Adobe Experience Cloud整合** 模組。 有關此模組的詳細資訊，請參閱 [節](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 

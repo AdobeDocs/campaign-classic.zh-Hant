@@ -21,19 +21,19 @@ ht-degree: 2%
 
 運算子是具有登入及執行動作權限的Adobe Campaign使用者。
 
-預設情況下，運算子儲存在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中。
+依預設，運算子會儲存在 **[!UICONTROL Administration > Access management > Operators]** 節點。
 
 ![](assets/s_ncs_user_list_operators.png)
 
 可以手動建立運算子，或在現有LDAP目錄上映射運算子。
 
-[本頁](#creating-an-operator)中描述了建立運算子的完整過程。
+建立運算子的完整程式如下所述： [本頁](#creating-an-operator).
 
-如需Adobe Campaign和LDAP整合的詳細資訊，請參閱[本頁面](../../installation/using/connecting-through-ldap.md)。
+如需Adobe Campaign和LDAP整合的詳細資訊，請參閱 [本頁](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
->運算子必須連結至安全區域才能登入執行個體。 有關Adobe Campaign中安全區域的詳細資訊，請參閱[本頁](../../installation/using/security-zones.md)。
+>運算子必須連結至安全區域才能登入執行個體。 如需Adobe Campaign安全區的詳細資訊，請參閱 [本頁](../../installation/using/security-zones.md).
 
 使用者也可以使用其Adobe ID直接連線至Adobe Campaign。 如需關於此項目的詳細資訊，請參閱此[頁面](../../integrations/using/about-adobe-id.md)。
 
@@ -41,71 +41,71 @@ ht-degree: 2%
 
 若要建立新運算子並授予權限，請遵循下列步驟：
 
-1. 按一下運算子清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕，然後輸入新運算子的詳細資訊。
+1. 按一下 **[!UICONTROL New]** 按鈕，然後輸入新運算子的詳細資訊。
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. 指定用戶的&#x200B;**[!UICONTROL Identification parameters]**:其登錄名、密碼和名稱。 運算子將使用登入和密碼來登入Adobe Campaign。 用戶登錄後，他們可以通過&#x200B;**[!UICONTROL Tools > Change password]**&#x200B;菜單更改其密碼。 運算子的電子郵件至關重要，因為它可讓運算子接收通知，例如在處理核準時。
+1. 指定 **[!UICONTROL Identification parameters]** 使用者：其登錄名、密碼和名稱。 運算子將使用登入和密碼來登入Adobe Campaign。 使用者登入後，可透過 **[!UICONTROL Tools > Change password]** 功能表。 運算子的電子郵件至關重要，因為它可讓運算子接收通知，例如在處理核準時。
 
-   本節也可讓您將運算子連結至組織實體。 有關詳細資訊，請參閱[此頁](../../distributed/using/about-distributed-marketing.md)。
+   本節也可讓您將運算子連結至組織實體。 有關詳細資訊，請參閱 [本頁](../../distributed/using/about-distributed-marketing.md).
 
-1. 在&#x200B;**[!UICONTROL Operator access rights]**&#x200B;區段中選取授予運算子的權限。
+1. 選取授予運算子的權限，位於 **[!UICONTROL Operator access rights]** 區段。
 
-   要為運算子分配權限，請按一下權限清單上方的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後從可用組清單中選擇一組運算子：
+   若要指派運算子的權限，請按一下 **[!UICONTROL Add]** 按鈕，然後從可用組清單中選擇一組操作符：
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   您也可以選取一或多個已命名的權限（請參閱[已命名的權限](#named-rights)）。 要執行此操作，請按一下&#x200B;**[!UICONTROL Folder]**&#x200B;欄位右側的箭頭，然後選擇&#x200B;**[!UICONTROL Named rights]**:
+   您也可以選取一或多個指定權限(請參閱 [已命名的權限](#named-rights))。 若要這麼做，請按一下 **[!UICONTROL Folder]** 欄位，然後選取 **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   選擇要分配的組和/或已命名的權限，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;進行驗證。
+   選取要指派的群組和/或已命名的權限，然後按一下 **[!UICONTROL OK]** 以驗證。
 
-1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以建立運算子：會將設定檔新增至現有運算子清單。
+1. 按一下 **[!UICONTROL Ok]** 若要建立運算子：會將設定檔新增至現有運算子清單。
 
    ![](assets/operator_profile_new.png)
 
 >[!NOTE]
 >
->您可以建立新的運算子資料夾，以根據您的需求組織運算子。 要執行此操作，請按一下右鍵運算子資料夾並選擇&#x200B;**[!UICONTROL Add an 'Operators' folder]**。
+>您可以建立新的運算子資料夾，以根據您的需求組織運算子。 要執行此操作，請按一下右鍵運算子資料夾並選擇 **[!UICONTROL Add an 'Operators' folder]**.
 
-建立運算子的設定檔後，您就可以新增或更新其資訊。 要執行此操作，請按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤。
+建立運算子的設定檔後，您就可以新增或更新其資訊。 若要這麼做，請按一下 **[!UICONTROL Edit]** 標籤。
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->**[!UICONTROL Session timeout]**&#x200B;欄位可讓您調整FDA工作階段逾時前的延遲。 有關詳細資訊，請參閱[關於同盟資料存取](../../installation/using/about-fda.md)。
+>此 **[!UICONTROL Session timeout]** 欄位可讓您調整FDA工作階段逾時前的延遲。 有關詳細資訊，請參閱 [關於同盟資料存取](../../installation/using/about-fda.md).
 
 ## 定義運算子的時區 {#time-zone-of-the-operator}
 
-在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中，您可以選取運算子的時區。 依預設，運算子會在伺服器時區中運作。 不過，您可以使用下拉式清單選取其他時區。
+在 **[!UICONTROL General]** 索引標籤，您可以選取運算子的時區。 依預設，運算子會在伺服器時區中運作。 不過，您可以使用下拉式清單選取其他時區。
 
-[本頁](../../installation/using/time-zone-management.md)說明了時區的配置。
+時區的設定如下所述： [本頁](../../installation/using/time-zone-management.md).
 
 >[!NOTE]
 >
->不同時區內的協作需要以UTC儲存日期。 在下列情況下，日期會在適當的時區中轉換：當日期顯示在使用者時區時、匯入和匯出檔案時、排程電子郵件傳送時、排程工作流程中的活動時（排程器、等待、時間限制等）
+>不同時區內的協作需要以UTC儲存日期。 在下列情況下，日期會在適當的時區中轉換：當日期顯示在使用者時區中時，當檔案匯入和匯出時，當排程電子郵件傳送時，當活動排程在工作流程中時（排程器、等待、時間限制等）
 >
 >Adobe Campaign檔案的相關章節列出了與這些背景有關的限制和建議。
 
-此外， **[!UICONTROL Regional settings]**&#x200B;下拉式清單可讓您選取顯示日期和數字的格式。
+此外， **[!UICONTROL Regional settings]** 下拉式清單可讓您選取顯示日期和數字的格式。
 
 ## 新增權限 {#access-rights-options}
 
-使用&#x200B;**[!UICONTROL Access rights]**&#x200B;標籤更新連結到運算子的組和命名權限。
+使用 **[!UICONTROL Access rights]** 頁簽來更新連結到運算子的組和命名權限。
 
 ![](assets/operator_profile_security_options.png)
 
-**[!UICONTROL Edit the access parameters...]**&#x200B;連結可讓您存取下列選項：
+此 **[!UICONTROL Edit the access parameters...]** 連結可讓您存取下列選項：
 
-* **[!UICONTROL Disable account]**&#x200B;選項可讓您停用運算子的帳戶：此使用者將不再存取Adobe Campaign。
+* 此 **[!UICONTROL Disable account]** 選項可讓您停用運算子的帳戶：此使用者將不再存取Adobe Campaign。
 
    >[!NOTE]
    >
    >即使其帳戶已停用，運算子仍可從Campaign接收警報或通知。 若要停止傳送Campaign通知給此運算子，Adobe建議您從其設定檔中移除電子郵件地址。
 
-* **[!UICONTROL Forbid access from the rich client]**&#x200B;選項可讓您將Adobe Campaign的使用限制為[Web存取](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)或透過API:無法再存取Adobe Campaign用戶端主控台。
+* 此 **[!UICONTROL Forbid access from the rich client]** 選項，限制使用Adobe Campaign [網路存取](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) 或透過API:無法再存取Adobe Campaign用戶端主控台。
 * 可以將安全區連結到操作員。 如需詳細資訊，請參閱[此頁面](../../installation/using/security-zones.md)。
 * 您也可以使用適當的連結來定義受信任的IP遮罩。
 
@@ -119,7 +119,7 @@ ht-degree: 2%
    >
    >若要確保平台存取安全，您必須謹慎使用此選項。
 
-* **[!UICONTROL Restrict to information found in sub-folders of:]**&#x200B;選項可讓您限制歸因於資料夾運算子的權限。 用戶只能看到此選項中指定的節點的子資料夾：
+* 此 **[!UICONTROL Restrict to information found in sub-folders of:]** 選項可讓您限制屬於資料夾運算子的權限。 用戶只能看到此選項中指定的節點的子資料夾：
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -129,7 +129,7 @@ ht-degree: 2%
 
 ### 檢查設定 {#check-settings}
 
-**[!UICONTROL Audit]**&#x200B;標籤可讓您檢視與運算子相關的資訊。 系統會根據運算子干預區域中定義的設定，自動將各種標籤新增至。
+此 **[!UICONTROL Audit]** 標籤，即可檢視與運算子相關的資訊。 系統會根據運算子干預區域中定義的設定，自動將各種標籤新增至。
 
 您可以存取：
 
@@ -139,7 +139,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >有關詳細資訊，請參閱[資料夾訪問管理](#folder-access-management)。
+   >有關詳細資訊，請參閱 [資料夾存取管理](#folder-access-management).
 
 * 操作員批准日誌。
 
@@ -161,19 +161,19 @@ Adobe Campaign使用技術運算子，預設會設定設定檔：管理員（「
 
 依預設，「webapp」技術運算子具有命名的「管理」權限，這可能會導致安全風險。 若要解決此問題，建議您移除此權限。 操作步驟：
 
-1. 從&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;節點中，按一下&#x200B;**[!UICONTROL New]**&#x200B;建立右鍵，並將其命名為WEBAPP。
+1. 從 **[!UICONTROL Administration > Access management > Named rights]** 節點，按一下 **[!UICONTROL New]** 建立權限並將其命名為WEBAPP。
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   在[命名權限](#named-rights)部分中詳細說明命名權限。
+   在 [已命名的權限](#named-rights) 區段。
 
-1. 從&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中，選擇Web應用程式代理運算子(「webapp」)。
+1. 從 **[!UICONTROL Administration > Access management > Operators]** 節點，選擇Web應用程式代理運算子(「webapp」)。
 
-   選擇&#x200B;**[!UICONTROL Edit]**&#x200B;頁簽，然後選擇&#x200B;**[!UICONTROL Access rights]**&#x200B;頁簽，並從清單中刪除名為右的ADMINISTRATION。
+   選取 **[!UICONTROL Edit]** ，然後 **[!UICONTROL Access rights]** 頁簽，並從清單中刪除名為的ADMINISTRATION。
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   按一下&#x200B;**[!UICONTROL Add]**&#x200B;並選取您剛建立的WEBAPP，然後儲存您的變更。
+   按一下 **[!UICONTROL Add]** 並選取您剛建立的WEBAPP，然後儲存您的變更。
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -181,8 +181,8 @@ Adobe Campaign使用技術運算子，預設會設定設定檔：管理員（「
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   在[資料夾訪問管理](#folder-access-management)部分中詳細說明了修改樹資料夾的權限。
+   有關修改樹資料夾的權限的詳細資訊，請參閱 [資料夾存取管理](#folder-access-management) 區段。
 
 >[!NOTE]
 >
->如需安全性准則的詳細資訊，請參閱[Adobe Campaign安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
+>如需安全性指引的詳細資訊，請參閱 [Adobe Campaign安全性配置檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html).

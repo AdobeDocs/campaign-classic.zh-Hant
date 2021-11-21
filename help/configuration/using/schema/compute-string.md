@@ -35,11 +35,11 @@ compute-string:==EMPTY
 
 ## 說明 {#description-1}
 
-`<compute-string>`元素可讓您根據XTK運算式產生字串，以根據數個值在介面中顯示「已建置」標籤。
+此 `<compute-string>` 元素可讓您根據XTK運算式產生字串，以根據數個值在介面中顯示「已建置」標籤。
 
 ## 使用與使用內容 {#use-and-context-of-use-1}
 
-未定義`<compute-string>`時，預設會輸入`<compute-string>`元素，並包含架構中主鍵的值。
+否時 `<compute-string>` 已定義， `<compute-string>` 預設情況下，元素會與架構中主鍵的值一起輸入。
 
 ## 屬性說明 {#attribute-description-1}
 

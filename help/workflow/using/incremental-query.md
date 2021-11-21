@@ -30,22 +30,22 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->如果增量查詢的結果在其其中一個執行期間等於&#x200B;**0**，則暫停工作流，直到查詢的下一個寫程式執行。 因此，在下列執行之前，不會處理遞增查詢之後的轉變和活動。
+>如果增量查詢的結果等於 **0** 在其一執行期間，暫停工作流，直到查詢的下次寫程式執行。 因此，在下列執行之前，不會處理遞增查詢之後的轉變和活動。
 
 操作步驟：
 
-1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;標籤中，選取&#x200B;**[!UICONTROL Schedule execution]**&#x200B;選項。 建立任務後，該任務將保持活動狀態，並且只會在計畫為執行查詢指定的時間觸發。 但是，如果禁用該選項，則會立即執行&#x200B;**，並以一個go**&#x200B;執行查詢。
+1. 在 **[!UICONTROL Scheduling & History]** 頁簽，選擇 **[!UICONTROL Schedule execution]** 選項。 建立任務後，該任務將保持活動狀態，並且只會在計畫為執行查詢指定的時間觸發。 但是，如果禁用了該選項，則會立即執行查詢 **一次**.
 1. 按一下 **[!UICONTROL Change]** 按鈕。
 
-   在&#x200B;**[!UICONTROL Schedule editing wizard]**&#x200B;視窗中，您可以設定頻率、事件週期和事件有效期的類型。
+   在 **[!UICONTROL Schedule editing wizard]** 視窗中，您可以設定頻率、事件週期和事件有效期的類型。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存排程。
+1. 按一下 **[!UICONTROL Finish]** 以儲存排程。
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. **[!UICONTROL Scheduling & History]**&#x200B;標籤的下半部分可讓您選取要在歷史記錄中考慮的天數。
+1. 的下方 **[!UICONTROL Scheduling & History]** 索引標籤可讓您選取要在歷史記錄中納入的天數。
 
    ![](assets/edit_request_inc.png)
 
@@ -67,4 +67,4 @@ ht-degree: 3%
 * 綱要
 * recCount
 
-這組三個值標識查詢所定位的母體。 **[!UICONTROL tableName]** 是記錄目標標識符的表的名稱， **[!UICONTROL schema]** 是母體（通常為nms:recipient）的模式， **[!UICONTROL recCount]** 是表中的元素數。
+這組三個值標識查詢所定位的母體。 **[!UICONTROL tableName]** 是記錄目標標識符的表的名稱， **[!UICONTROL schema]** 是母體的綱要（通常為nms:recipient）和 **[!UICONTROL recCount]** 是表格中的元素數。

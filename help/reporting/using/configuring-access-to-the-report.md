@@ -19,21 +19,21 @@ ht-degree: 1%
 
 ## 報表顯示內容 {#report-display-context}
 
-使用&#x200B;**[!UICONTROL Display]**&#x200B;標籤，定義Adobe Campaign平台中報表的顯示內容。 報表的存取取決於其選擇類型、顯示條件和存取授權。
+使用定義Adobe Campaign平台中報表的顯示內容 **[!UICONTROL Display]** 標籤。 報表的存取取決於其選擇類型、顯示條件和存取授權。
 
 ### 選擇類型 {#selection-type}
 
-報表的存取權限可限於特定內容或選件空間，例如傳送、收件者、收件者選擇等。 此訪問在&#x200B;**[!UICONTROL Display]**&#x200B;頁簽的&#x200B;**[!UICONTROL Selection type]**&#x200B;部分中配置。
+報表的存取權限可限於特定內容或選件空間，例如傳送、收件者、收件者選擇等。 此存取是在 **[!UICONTROL Selection type]** 區段 **[!UICONTROL Display]** 標籤。
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
 * **[!UICONTROL Single selection]** :只有選取特定實體時，才可存取報表。
 * **[!UICONTROL Multiple selection]** :選取多個實體時，即可存取報告。
-* **[!UICONTROL Global]** :報表可透過索引標籤中可用報表的清單來 **[!UICONTROL Reports]** 存取。
+* **[!UICONTROL Global]** :您可透過 **[!UICONTROL Reports]** 標籤。
 
 ### 顯示順序 {#display-sequence}
 
-**[!UICONTROL Sequence]**&#x200B;欄位可讓您輸入數值，指定清單中報表的顯示順序。
+此 **[!UICONTROL Sequence]** 欄位可讓您輸入數值，指定清單中報表的顯示順序。
 
 依預設，報表會依關聯性顯示：在此欄位中輸入的值可讓您將報表從最高（最高）值排序至最低（最小）相關值。
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 報表可與其他運算子共用。
 
-若要讓報表可供存取，請選取&#x200B;**[!UICONTROL Report shared with other operators]**&#x200B;選項。 如果未選取此選項，則只有建立報表的運算子才能存取報表。
+若要讓報表可供存取，請選取 **[!UICONTROL Report shared with other operators]** 選項。 如果未選取此選項，則只有建立報表的運算子才能存取報表。
 
 報告還可以與通過授權窗口添加的特定操作員或操作員組共用。
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 ### 定義篩選選項 {#defining-the-filtering-options}
 
-**[!UICONTROL Reports]**&#x200B;索引標籤會顯示平台中所有可用的報表，且已連線運算子對其具有存取權限。
+此 **[!UICONTROL Reports]** 索引標籤會顯示平台中所有可用的報表，且連線運算子對其具有存取權限。
 
 依預設，它們會依關聯性排序，但您可以套用其他類型的篩選器：按字母順序，按年齡等
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ![](assets/report_ovv_select_type.png)
 
-若要定義報表的類別，請透過&#x200B;**[!UICONTROL Display]**&#x200B;標籤選取，如下所示：
+若要定義報表的類別，請透過 **[!UICONTROL Display]** 標籤，如下所示：
 
 ![](assets/report_select_category.png)
 
@@ -83,11 +83,11 @@ ht-degree: 1%
 
 例如，我們將建立報表連結，以便透過收件者清單存取。
 
-1. 按一下&#x200B;**[!UICONTROL New]**&#x200B;並在報表建立精靈中選取&#x200B;**[!UICONTROL Create a link to an existing report]**。
+1. 按一下 **[!UICONTROL New]** 選取 **[!UICONTROL Create a link to an existing report]** 在報表建立精靈中。
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
-1. 使用下拉式清單選取您要建立連結的報表。 在此範例中，我們將選取「**依國家/地區劃分**」報表。
+1. 使用下拉式清單選取您要建立連結的報表。 在此範例中，我們將選取 **依國家/地區劃分** 報表。
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
@@ -103,36 +103,36 @@ ht-degree: 1%
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
 1. 發佈您的報表。
-1. 前往其中一個收件者清單，然後按一下&#x200B;**[!UICONTROL Reports]**&#x200B;連結：您可以存取您剛建立的報表。
+1. 前往其中一個收件者清單，然後按一下 **[!UICONTROL Reports]** 連結：您可以存取您剛建立的報表。
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
 ## 報表預覽 {#preview-of-the-report}
 
-發佈報表之前，請確定報表正確顯示在&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中。
+發佈報表之前，請確定報表正確顯示於 **[!UICONTROL Preview]** 標籤。
 
 ![](assets/s_ncs_advuser_report_preview_01.png)
 
-若要顯示報表的預覽，請選取&#x200B;**[!UICONTROL Global]**&#x200B;或&#x200B;**[!UICONTROL Selection]**&#x200B;選項。
+若要顯示報表的預覽，請選取 **[!UICONTROL Global]** 或 **[!UICONTROL Selection]** 選項。
 
-系統會根據報表的顯示設定選取這兩個選項。 如果顯示設定為&#x200B;**[!UICONTROL Global]**，則需要選擇&#x200B;**[!UICONTROL Global]**&#x200B;預覽選項。 如果顯示設定為&#x200B;**[!UICONTROL Single selection]**&#x200B;或&#x200B;**[!UICONTROL Multiple selection]**，則必須選擇&#x200B;**[!UICONTROL Selection]**&#x200B;預覽選項。
+系統會根據報表的顯示設定選取這兩個選項。 如果顯示設定為 **[!UICONTROL Global]**，您需要選取 **[!UICONTROL Global]** 預覽選項。 如果顯示設定為 **[!UICONTROL Single selection]** 或 **[!UICONTROL Multiple selection]**, **[!UICONTROL Selection]** 必須選取預覽選項。
 
-如需詳細資訊，請參閱[報表顯示內容](#report-display-context)。
+有關詳細資訊，請參閱 [報表顯示內容](#report-display-context).
 
-特定設定可讓您控制錯誤。 在報表的URL中找到&#x200B;**_uuid**&#x200B;設定。 您可以新增&#x200B;**&amp;_preview**&#x200B;或&#x200B;**&amp;_debug**&#x200B;設定。
+特定設定可讓您控制錯誤。 此 **_uuid** 設定。 您可以新增 **&amp;_preview** 或 **&amp;_debug** 設定。
 
-若要深入了解這些設定，請參閱[Web表單](../../web/using/about-web-forms.md)章節的&#x200B;**定義Web表單屬性**&#x200B;區段。
+若要進一步了解這些設定，請參閱 **定義Web表單屬性** 區段 [網路表單](../../web/using/about-web-forms.md) 章節。
 
 ## 發佈報表 {#publishing-the-report}
 
-必須發佈報表，才能與其他運算子共用，並在可用報表清單中顯示這些報表（另請參閱[報表顯示內容](#report-display-context)）。 每次變更報表時，都必須再次執行此操作。
+必須發佈報表，才能與其他運算子共用，並在可用報表清單中顯示這些報表(另請參閱 [報表顯示內容](#report-display-context))。 每次變更報表時，都必須再次執行此操作。
 
-1. 按一下工具列中的&#x200B;**[!UICONTROL Publish]**&#x200B;以開啟發佈精靈。
+1. 按一下「 」以開啟發佈精靈 **[!UICONTROL Publish]** 的下一頁。
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
-1. 按一下&#x200B;**[!UICONTROL Start]**&#x200B;以發佈。
+1. 按一下 **[!UICONTROL Start]** 來發佈。
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
-1. 按一下&#x200B;**[!UICONTROL Enlarge]**&#x200B;圖示，在網頁瀏覽器中開啟報表。
+1. 按一下 **[!UICONTROL Enlarge]** 圖示在網頁瀏覽器中開啟報表。

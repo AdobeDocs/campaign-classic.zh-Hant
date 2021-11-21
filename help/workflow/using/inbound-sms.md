@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-**傳入SMS**&#x200B;活動可讓您下載及處理來自外部帳戶的文字訊息。
+此 **傳入SMS** 活動可讓您下載及處理來自外部帳戶的文字訊息。
 
 ## 屬性 {#properties}
 
 ![](assets/sms_rec_edit.png)
 
-**入站SMS**&#x200B;活動的第一個索引標籤可讓您輸入SMS訊息的路由參數，並輸入在接收每則訊息時要執行的指令碼。 第二個索引標籤可讓您指派排程給活動，第三個索引標籤定義活動的到期條件。
+的第一個標籤 **傳入SMS** 活動可讓您輸入SMS訊息的路由參數，並輸入在接收每則訊息時要執行的指令碼。 第二個索引標籤可讓您指派排程給活動，第三個索引標籤定義活動的到期條件。
 
-1. **[!UICONTROL SMS routing]**:選取要用於SMS復原的外部帳戶。外部帳戶是通過樹的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;節點配置的。
+1. **[!UICONTROL SMS routing]**:選取要用於SMS復原的外部帳戶。 外部帳戶是透過 **[!UICONTROL Administration > Platform > External accounts]** 樹的節點。
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -33,4 +33,4 @@ ht-degree: 4%
 
 1. **[!UICONTROL Expiration]**
 
-**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;標籤在[入站電子郵件](inbound-emails.md)中有詳細說明。
+此 **[!UICONTROL Script]**, **[!UICONTROL Schedule]** 和 **[!UICONTROL Expiry]** 索引標籤在 [傳入電子郵件](inbound-emails.md).

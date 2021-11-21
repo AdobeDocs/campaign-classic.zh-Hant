@@ -20,11 +20,11 @@ ht-degree: 2%
 若要在Adobe Campaign中建立內容管理，需執行下列步驟：
 
 * [步驟1 — 分析要產生的內容](#step-1---analyzing-the-content-to-be-produced),
-* [步驟2 — 建立資料結構](#step-2---creating-the-data-schema)、
-* [步驟3 — 建立輸入表單](#step-3---creating-the-input-form)、
-* [步驟4 — 建立建構範本](#step-4---creating-the-construction-template)、
-* [步驟5 — 建立發佈範本](#step-5---creating-the-publication-template)、
-* [步驟6 — 建立內容](#step-6---creating-contents)。
+* [步驟2 — 建立資料結構](#step-2---creating-the-data-schema),
+* [步驟3 — 建立輸入表單](#step-3---creating-the-input-form),
+* [步驟4 — 建立構建模板](#step-4---creating-the-construction-template),
+* [步驟5 — 建立發佈範本](#step-5---creating-the-publication-template),
+* [步驟6 — 建立內容](#step-6---creating-contents).
 
 ## 步驟1 — 分析要產生的內容 {#step-1---analyzing-the-content-to-be-produced}
 
@@ -58,17 +58,17 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如需在Adobe Campaign中建立和設定資料結構的詳細資訊，請參閱[本區段](../../configuration/using/about-schema-edition.md)。
+>如需在Adobe Campaign中建立和設定資料結構的詳細資訊，請參閱 [本節](../../configuration/using/about-schema-edition.md).
 >
->[資料結構](data-schemas.md)中詳細說明了內容管理的特定配置元素。
+>內容管理專屬的設定元素於 [資料結構](data-schemas.md).
 
 若要建立資料結構，請套用下列步驟：
 
-1. 開啟Adobe Campaign Explorer並選取&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點。
+1. 開啟Adobe Campaign Explorer並選取 **[!UICONTROL Administration > Configuration > Data schemas]** 節點。
 
-   按一下資料結構清單上方的&#x200B;**[!UICONTROL New]**&#x200B;圖示。
+   按一下 **[!UICONTROL New]** 圖示（位於資料結構清單上方）。
 
-1. 選擇用於內容管理的&#x200B;**[!UICONTROL Create a schema]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 選取 **[!UICONTROL Create a schema]** 內容管理選項，然後按一下 **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -76,15 +76,15 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   按一下&#x200B;**[!UICONTROL Next]**&#x200B;進行驗證。
+   按一下 **[!UICONTROL Next]** 以驗證。
 
-1. 在&#x200B;**[!UICONTROL Edit schema]**&#x200B;窗口中輸入架構的內容。
+1. 在 **[!UICONTROL Edit schema]** 窗口。
 
-   使用&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕建立架構內容。
+   使用 **[!UICONTROL Insert]** 按鈕以建立架構內容。
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   有關詳細資訊，請參閱[編輯結構](data-schemas.md#editing-schemas)。
+   有關詳細資訊，請參閱 [編輯結構](data-schemas.md#editing-schemas).
 
    對於內容中參考的每個元素，您需要選取相符的類型。
 
@@ -101,10 +101,10 @@ ht-degree: 2%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Title<br /> </td> 
+   <td> 標題<br /> </td> 
    <td> 屬性<br /> </td> 
    <td> 字串<br /> </td> 
-   <td> Title<br /> </td> 
+   <td> 標題<br /> </td> 
   </tr> 
   <tr> 
    <td> 子標題<br /> </td> 
@@ -137,7 +137,7 @@ ht-degree: 2%
    <td> 作者<br /> </td> 
   </tr> 
   <tr> 
-   <td> 標題標誌(儲存於Adobe Campaign公用資源)<br /> </td> 
+   <td> 標題標誌(儲存在Adobe Campaign公共資源中)<br /> </td> 
    <td> 屬性<br /> </td> 
    <td> 連結<br /> </td> 
    <td> 影像<br /> </td> 
@@ -160,7 +160,7 @@ ht-degree: 2%
   </element>
 ```
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立資料架構。
+1. 按一下 **[!UICONTROL Save]** 來建立資料結構。
 
 ## 步驟3 — 建立輸入表單 {#step-3---creating-the-input-form}
 
@@ -170,23 +170,23 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如需在Adobe Campaign中建立和設定表單的詳細資訊，請參閱[此區段](../../configuration/using/identifying-a-form.md)。
+>如需在Adobe Campaign中建立和設定表單的詳細資訊，請參閱 [本節](../../configuration/using/identifying-a-form.md).
 >
->[輸入表單](input-forms.md)中詳細說明了內容管理的特定配置元素。
+>內容管理專屬的設定元素於 [輸入表單](input-forms.md).
 
 要建立用於內容管理的輸入表單，請應用以下步驟：
 
-1. 開啟Adobe Campaign Explorer並選取&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;節點。
+1. 開啟Adobe Campaign Explorer並選取 **[!UICONTROL Administration > Configuration > Input forms]** 節點。
 
-   按一下表單清單上方的&#x200B;**[!UICONTROL New]**&#x200B;圖示。
+   按一下 **[!UICONTROL New]** 表徵圖。
 
-1. 輸入表單的名稱和連結到表單的標籤，然後選擇&#x200B;**[!UICONTROL Content management]**&#x200B;類型。
+1. 輸入表單名稱以及連結至表單的標籤，然後選取 **[!UICONTROL Content management]** 類型。
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >若要讓兩個元素自動相符，建議您使用與連結資料結構相同的名稱。 使用輸入區域上方的&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕，從連結到表單的架構中新增欄位。
+   >若要讓兩個元素自動相符，建議您使用與連結資料結構相同的名稱。 使用 **[!UICONTROL Insert]** 按鈕，從連結到表單的架構中添加欄位。
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -208,11 +208,11 @@ ht-degree: 2%
      </input>
    ```
 
-   **[!UICONTROL Preview]**&#x200B;標籤可讓您在編輯表單時檢查表單的呈現：
+   此 **[!UICONTROL Preview]** 索引標籤可讓您在編輯表單時檢查其轉譯：
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;建立輸入表單。
+1. 按一下 **[!UICONTROL Save]** 來建立輸入表單。
 
 ## 步驟4 — 建立構建模板 {#step-4---creating-the-construction-template}
 
@@ -222,18 +222,18 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 
 >[!NOTE]
 >
->在[Formatting](formatting.md)中詳細說明了連結到文檔構建（JavaScript或XSL模板）的約束。
+>連結至檔案建立（JavaScript或XSL範本）的限制在 [格式](formatting.md).
 
 若要在Adobe Campaign中使用JavaScript範本，請套用下列步驟：
 
-1. 開啟Adobe Campaign Explorer並選取&#x200B;**[!UICONTROL Administration > Configuration > JavaScript Templates]**&#x200B;節點。
+1. 開啟Adobe Campaign Explorer並選取 **[!UICONTROL Administration > Configuration > JavaScript Templates]** 節點。
 
-   按一下範本清單上方的&#x200B;**[!UICONTROL New]**&#x200B;圖示。
+   按一下 **[!UICONTROL New]** 表徵圖。
 
 1. 輸入模板名稱並選擇為內容管理建立的架構。
 1. 匯入您要在訊息中顯示的設定內容。
 
-   新增變數元素，同時遵循[JavaScript範本](formatting.md#javascript-templates)中詳述的語法。
+   新增變數元素，同時遵循 [JavaScript範本](formatting.md#javascript-templates).
 
    若要顯示範例中顯示的內容，JavaScript範本必須包含下列元素：
 
@@ -326,7 +326,7 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
    </html>
    ```
 
-   在範本開始時呼叫函式可讓您設定對從Adobe Campaign資料庫擷取之個人化資料的呼叫(在此例中為：recipient.firstName和recipient.lastName)，以便在傳送中使用時加以解譯。 有關詳細資訊，請參閱[包含JavaScript範本](formatting.md#including-a-javascript-template)。
+   在範本開始時呼叫函式可讓您設定對從Adobe Campaign資料庫擷取之個人化資料的呼叫(在此例中為：recipient.firstName和recipient.lastName)，以便在傳送中使用時加以解譯。 有關詳細資訊，請參閱 [包含JavaScript範本](formatting.md#including-a-javascript-template).
 
    在此範例中，函式將包含下列程式碼：
 
@@ -345,7 +345,7 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
    }
    ```
 
-   為了讓JavaScript範本有效，必須預先從樹狀結構的&#x200B;**[!UICONTROL JavaScript codes]**&#x200B;節點建立此函式，如下所示：
+   為了讓JavaScript範本有效，必須預先從 **[!UICONTROL JavaScript codes]** 節點，如下所示：
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
@@ -355,25 +355,25 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 
 >[!NOTE]
 >
->有關內容發佈模板的詳細資訊，請參閱[發佈模板](publication-templates.md)。
+>如需內容發佈範本的詳細資訊，請參閱 [發佈範本](publication-templates.md).
 
 在此範例中，步驟如下：
 
-1. 通過&#x200B;**[!UICONTROL Administration > Configuration > Publication templates]**&#x200B;節點建立新的發佈模板。
+1. 透過 **[!UICONTROL Administration > Configuration > Publication templates]** 節點。
 1. 輸入名稱和標籤，然後選擇要使用的方案和表單。
-1. 然後輸入模板的名稱，並選擇要應用的呈現模式。 在此，我們根據上述建立的範本提供&#x200B;**[!UICONTROL JavaScript]**&#x200B;類型呈現。
+1. 然後輸入模板的名稱，並選擇要應用的呈現模式。 這裡，我們有 **[!UICONTROL JavaScript]** 根據上述建立的範本輸入呈現。
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >預設會核取&#x200B;**[!UICONTROL DOM interface]**&#x200B;選項，這表示如果您使用E4X語法，將無法存取此檔案。 勾選此選項時，必須使用DOM介面，且為建議的語法。
+   >此 **[!UICONTROL DOM interface]** 選項，這表示如果您使用E4X語法，將無法存取此檔案。 勾選此選項時，必須使用DOM介面，且為建議的語法。
    >
    >您仍可使用E4X語法。 若有，請務必取消勾選此選項。
 
-   使用&#x200B;**[!UICONTROL Add]**&#x200B;按鈕建立其他轉換模板。
+   使用 **[!UICONTROL Add]** 按鈕以建立其他轉換模板。
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立發佈範本。
+1. 按一下 **[!UICONTROL Save]** 建立發佈範本。
 
 ## 步驟6 — 建立內容 {#step-6---creating-contents}
 
@@ -381,13 +381,13 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 
 >[!NOTE]
 >
->有關建立內容的詳細資訊，請參閱[使用內容範本](using-a-content-template.md)。
+>有關建立內容的詳細資訊，請參閱 [使用內容範本](using-a-content-template.md).
 
 ### 在傳遞精靈中建立內容 {#creating-content-in-the-delivery-wizard}
 
 若要直接在傳送中建立內容，請套用下列步驟：
 
-1. 首先，透過傳送屬性的&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤參考發佈範本。
+1. 首先，透過 **[!UICONTROL Advanced]** 標籤。
 
    ![](assets/s_ncs_content_in_delivery.png)
 
@@ -397,6 +397,6 @@ XSLT語言允許您將XML文檔轉換為另一個輸出文檔。 此轉換在稱
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. 按一下&#x200B;**[!UICONTROL HTML preview]**&#x200B;標籤以檢視呈現。 您需要選取收件者以測試個人化。
+1. 按一下 **[!UICONTROL HTML preview]** 標籤來檢視呈現。 您需要選取收件者以測試個人化。
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

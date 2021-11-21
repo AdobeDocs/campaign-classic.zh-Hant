@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 屬性 {#attributes}
 
-_operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement(boolean)、tellesTo(string)、dataPolicy(string)、dbEnum(string)、defOnDuplicate(boolean)、default(string)、desc(string)、edit(string)、enum(string)、expr(string)、featureDate(boolean)、inut(string)、legng(string)、lableng(locable)、lalated(be)、NOL(ben)、NEN(NOT)STRING)、REF（字串）、必要（布林值）、SQL（布林值）、SQLDefault（字串）、SQLNAME（字串）、SQLTABLE（字串）、TARGET(MNTOKEN)、範本（字串）、translatedDefault（字串）、translatedExpr（字串）、類型(MNTOKEN)、用戶（布林值）、userEnum（字串）、visibleIf（字串）、xml（布林值）
+_operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement(boolean)、tellesTo(string)、dataPolicy(string)、dbEnum(string)、defOnDuplicate(boolean)、default(string)、desc(string)、edit(string)、enum(string)、expr(string)、featureDate(boolean)、img(string)、label(string)、length(locallacallatin)、N(boolen)string)、ref（字串）、必要（布林值）、sql（布林值）、sqlDefault（字串）、sqlname（字串）、sqltable（字串）、target(MNTOKEN)、範本（字串）、translatedDefault（字串）、translatedExpr（字串）、類型(MNTOKEN)、用戶（布林值）、userEnum（字串）、visibleIf（字串）、xml（布林值）
 
 ## 父母 {#parents}
 
@@ -39,13 +39,13 @@ _operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement
 
 ## 使用與使用內容 {#use-and-context-of-use}
 
-`<attribute>` 元素中必須宣告 `<element>` 元素。
+`<attribute>` 元素必須在 `<element>` 元素。
 
-在`<srcschema>`中定義`<attribute>`元素的序列不會影響資料庫中的欄位建立序列。 建立順序將按字母順序排列。
+其中 `<attribute>` 元素定義於 `<srcschema>` 不會影響資料庫中的欄位建立順序。 建立順序將按字母順序排列。
 
 ## 屬性說明 {#attribute-description}
 
-* **_operation(string)**:定義資料庫中的寫入類型。
+* **_operation（字串）**:定義資料庫中的寫入類型。
 
    此屬性主要用於擴充現成可用的結構時。
 
@@ -58,10 +58,10 @@ _operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement
    * &quot;delete&quot;:刪除。 這表示Adobe Campaign將復原和刪除元素。
 
 * **進階（布林值）**:啟用此選項時(@advanced=&quot;true&quot;)，它可讓您隱藏可用欄位清單上的屬性，這些欄位可用於配置表單中的清單。
-* **applicableIf（字串）**:此屬性可讓您將欄位設為選填欄位。當符合約束時更新資料庫時，將考慮`<attribute>`元素。 &quot;appliableIf&quot;接收XTK運算式。
-* **autoIncrement（布林值）**:如果啟用此選項，欄位就會變成計數器。這可讓您增加值（大部分是ID）。 （外部使用）
-* **tellesTo（字串）**:取用共用欄位之表格的名稱和命名空間，並填入宣告屬性的架構。（僅用於`<schema>`）。
-* **dataPolicy(string)**:允許對SQL或XML欄位中允許的值指定批准約束。此屬性的值為：
+* **applicatedIf（字串）**:此屬性可讓您將欄位設為選填欄位。 此 `<attribute>` 當符合約束時，在更新資料庫時將考慮元素。 &quot;appliableIf&quot;接收XTK運算式。
+* **autoIncrement（布林值）**:如果啟用此選項，欄位就會變成計數器。 這可讓您增加值（大部分是ID）。 （外部使用）
+* **tellesTo（字串）**:取用共用欄位之表格的名稱和命名空間，並填入宣告屬性的架構。 (僅用於 `<schema>`)。
+* **dataPolicy(string)**:允許對SQL或XML欄位中允許的值指定批准約束。 此屬性的值為：
 
    * &quot;none&quot;:無值
    * &quot;smartCase&quot;:首字母大寫
@@ -72,33 +72,33 @@ _operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement
    * &quot;identifier&quot;:識別碼名稱
    * &quot;resIdentifier&quot;:檔案名
 
-* **dbEnum(string)**:接收「已關閉」枚舉的內部名稱。必須在`<srcschema>`中定義枚舉值。
+* **dbEnum（字串）**:接收「已關閉」枚舉的內部名稱。 必須在 `<srcschema>`.
 * **defOnDuplicate（布林值）**:如果激活了此屬性，則當記錄重複時，預設值(在@default中定義)將自動重新應用於記錄。
-* **預設值（字串）**:可讓您定義預設欄位的值（呼叫函式、預設值）。此屬性會接收XTK運算式。
-* **dsc（字串）**:可讓您插入屬性的說明。此說明會顯示在介面的狀態列中。
+* **預設值（字串）**:可讓您定義預設欄位的值（呼叫函式、預設值）。 此屬性會接收XTK運算式。
+* **desc（字串）**:可讓您插入屬性的說明。 此說明會顯示在介面的狀態列中。
 * **編輯（字串）**:此屬性指定將以連結到架構的形式使用的輸入類型。
-* **列舉（字串）**:接收連結到欄位的枚舉的名稱。枚舉可以插入到相同的架構或遠程架構中。
-* **expr（字串）**:定義欄位預計算表達式。此屬性會接收Xpath或XTK運算式。
-* **功能（字串）**:定義特徵欄位：這些欄位用於擴充現有表格中的資料，但會將資料儲存在附件表格中。接受的值為：
+* **列舉（字串）**:接收連結到欄位的枚舉的名稱。 枚舉可以插入到相同的架構或遠程架構中。
+* **expr（字串）**:定義欄位預計算表達式。 此屬性會接收Xpath或XTK運算式。
+* **功能（字串）**:定義特徵欄位：這些欄位用於擴充現有表格中的資料，但會將資料儲存在附件表格中。 接受的值為：
 
    * &quot;shared&quot;:內容儲存在每個資料類型的共用表中
    * &quot;dedicated&quot;:內容儲存在專用表中
 
    SQL特性表是根據特性類型自動建立的：
 
-   * 專用：`Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * 共用：`Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * 專用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+   * 共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
    特徵欄位有兩種類型：簡單的oà¹欄位，其中單個值被授權於特徵上；或者，oà¹多個選擇欄位，其中特徵被連結至可包含多個值的集合元素。
 
    在架構中定義特性時，此架構必須具有基於單一欄位的主鍵（未授權複合鍵）。
 
-* **featureDate（布林值）**:連結到「@feature」特性欄位的屬性。如果其值為「true」，則可讓您找出值的上次更新時間。
-* **img(string)**:可讓您定義連結至欄位之影像的路徑（命名空間+影像名稱）(範例：img=&quot;cus:mypicture.jpg&quot;)。實際上，必須將映像導入應用程式伺服器。
-* **標籤（字串）**:連結至欄位的標籤，通常會傳送給介面中的使用者。它可讓您避免命名限制。
-* **length(string)**:max。「字串」類型SQL欄位的值的字元數。 如果未指定「@length」屬性，Adobe Campaign會自動建立255個字元的欄位。
+* **featureDate（布林值）**:連結到「@feature」特性欄位的屬性。 如果其值為「true」，則可讓您找出值的上次更新時間。
+* **img(string)**:可讓您定義連結至欄位之影像的路徑（命名空間+影像名稱）(範例：img=&quot;cus:mypicture.jpg&quot;)。 實際上，必須將映像導入應用程式伺服器。
+* **標籤（字串）**:連結至欄位的標籤，通常會傳送給介面中的使用者。 它可讓您避免命名限制。
+* **length（字串）**:max。 「字串」類型SQL欄位的值的字元數。 如果未指定「@length」屬性，Adobe Campaign會自動建立255個字元的欄位。
 * **可本地化（布林值）**:如果已啟動，此屬性會告訴收集工具，以復原「@label」屬性的值，以供翻譯（內部使用）。
-* **name(MNTOKEN)**:與表中欄位名稱匹配的屬性名稱。「@name」屬性的值必須是短的，最好是英文，並符合XML命名限制。
+* **name(MNTOKEN)**:與表中欄位名稱匹配的屬性名稱。 「@name」屬性的值必須是短的，最好是英文，並符合XML命名限制。
 
    當架構寫入資料庫時，前置詞會由Adobe Campaign自動新增至欄位名稱：
 
@@ -109,19 +109,19 @@ _operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement
 
    要完全定義表中欄位的名稱，在定義屬性時使用「@sqlname」選項。
 
-* **notNull（布林值）**:可讓您重新定義Adobe Campaign在資料庫中管理NULL記錄的行為。預設情況下，數值欄位不為null，字串和日期類型欄位可為null。
+* **notNull（布林值）**:可讓您重新定義Adobe Campaign在資料庫中管理NULL記錄的行為。 預設情況下，數值欄位不為null，字串和日期類型欄位可為null。
 * **pkgStatus(string)**:在套件匯出期間，會根據「@pkgStatus」的值考量值：
 
    * &quot;always&quot;:總是存在
    * &quot;never&quot;:永不存在
    * &quot;default（或無）&quot;:除非值是預設值，或它不是與其他實例不相容的內部欄位，否則會導出該值。
 
-* **參考（字串）**:此屬性會定義對由多個結 `<attribute>` 構共用的元素的參考（定義計分）。定義不會複製到目前的架構中。
-* **必要（布林值）**:如果已啟用此屬性(@required=&quot;true&quot;)，介面中會反白顯示該欄位。欄位的標籤在表單中為紅色。
+* **參考（字串）**:此屬性定義對 `<attribute>` 由數個結構共用的元素（定義計分）。 定義不會複製到目前的架構中。
+* **必要（布林值）**:如果已啟用此屬性(@required=&quot;true&quot;)，介面中會反白顯示該欄位。 欄位的標籤在表單中為紅色。
 * **sql（布林值）**:如果激活了此屬性(@sql=&quot;true&quot;)，則會強制儲存SQL屬性，即使包含該屬性的元素具有xml=&quot;true&quot;屬性時也是如此。
-* **sqlDefault（字串）**:如果激活了屬性，此屬性允許您定義更新資料庫時考慮的預設@notNull值。如果此屬性是在建立屬性後添加的，則即使是新記錄，架構行為也不會更改。 若要變更結構並更新新記錄的值，您需要刪除並再次建立屬性。
-* **sqlname(string)**:表建立期間的欄位。如果@sqlname未指定，預設會使用「@name」屬性的值。 當將架構寫入資料庫時，會根據欄位類型自動添加前置詞。
-* **範本（字串）**:此屬性定義對由多個結 `<attribute>` 構共用的元素的引用。定義會自動複製到目前的架構中。
+* **sqlDefault（字串）**:如果激活了屬性，此屬性允許您定義更新資料庫時考慮的預設@notNull值。 如果此屬性是在建立屬性後添加的，則即使是新記錄，架構行為也不會更改。 若要變更結構並更新新記錄的值，您需要刪除並再次建立屬性。
+* **sqlname（字串）**:表建立期間的欄位。 如果@sqlname未指定，預設會使用「@name」屬性的值。 當將架構寫入資料庫時，會根據欄位類型自動添加前置詞。
+* **範本（字串）**:此屬性定義對 `<attribute>` 由數個結構共用的元素。 定義會自動複製到目前的架構中。
 * **translatedDefault(string)**:如果找到「@default」屬性，則「@translatedDefault」可讓您重新定義運算式，以符合@default中定義的運算式，並由翻譯工具收集（內部使用）。
 * **translatedExpr(string)**:如果存在「@expr」屬性，則「@translatedExpr」屬性可讓您重新定義表達式，以匹配@expr中定義的表達式，由翻譯工具收集（內部使用）。
 * **類型(MNTOKEN)**:欄位類型。
@@ -161,14 +161,14 @@ _operation（字串）、advanced(boolean)、appliableIf(string)、autoIncrement
 
    如果欄位為STRING類型，且欄位名稱未由&quot;@sqlname&quot;屬性的存在指定，則資料庫中欄位的名稱會自動前面加上&quot;s&quot;。 此操作模式與INTEGER(i)、DOUBLE(d)和DATES(ts)類型欄位類似。
 
-* **userEnum(string)**:接收「開啟」枚舉的內部名稱。枚舉的值可由用戶在介面中定義。
+* **userEnum(string)**:接收「開啟」枚舉的內部名稱。 枚舉的值可由用戶在介面中定義。
 * **visibleIf（字串）**:會以XTK運算式的形式定義條件，以顯示或隱藏屬性。
 
    >[!IMPORTANT]
    >
    >屬性隱藏，但仍可存取其資料。
 
-* **xml（布林值）**:如果激活了此選項，則欄位的值沒有連結的SQL欄位。Adobe Campaign會為記錄儲存建立「mData」文字類型欄位。 這表示這些欄位沒有篩選或排序。
+* **xml（布林值）**:如果激活了此選項，則欄位的值沒有連結的SQL欄位。 Adobe Campaign會為記錄儲存建立「mData」文字類型欄位。 這表示這些欄位沒有篩選或排序。
 
 ### 範例 {#examples}
 

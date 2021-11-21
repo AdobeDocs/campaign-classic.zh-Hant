@@ -23,7 +23,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP（和SOAP）作為應用程式
 
 在此情況下：
 
-* 預設監聽埠為8080。 要更改它，請參閱[此部分](configure-tomcat.md)。
+* 預設監聽埠為8080。 若要變更，請參閱 [本節](configure-tomcat.md).
 * 然後，用戶端主控台會使用URL進行連線，例如：
 
    ```
@@ -52,13 +52,13 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   確保&#x200B;**alias**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模組仍處於啟用狀態。 為此，請使用以下命令：
+   確保 **別名**, **authz_host** 和 **mime** 模組仍會啟用。 為此，請使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中建立檔案&#x200B;**nlsrv.load**&#x200B;並插入以下內容：
+1. 建立檔案 **nlsrv.load** in **/etc/apache2/mods available** 並插入下列內容：
 
    在Debian 8中：
 
@@ -66,7 +66,7 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. 使用以下命令在&#x200B;**/etc/apache2/mods-available**&#x200B;中建立檔案&#x200B;**nlsrv.conf**:
+1. 建立檔案 **nlsrv.conf** in **/etc/apache2/mods available** 使用下列命令：
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -78,13 +78,13 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
     a2enmod nlsrv
    ```
 
-   如果您使用的是Adobe Campaign頁面的&#x200B;**mod_rewrite**&#x200B;模組，則需要將&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;檔案更名為&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.conf**。 要激活模組，請運行以下命令：
+   如果您使用 **mod_rewrite** 模組，您必須重新命名 **nlsrv.load** 和 **nlsrv.conf** 檔案 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 要激活模組，請運行以下命令：
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. 編輯&#x200B;**/etc/apache2/envvars**&#x200B;檔案，新增下列行：
+1. 編輯 **/etc/apache2/envvars** 檔案中，添加以下行：
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
 
 應用以下步驟：
 
-1. 在`httpd.conf`檔案中，啟動以下Apache模組：
+1. 在 `httpd.conf` 檔案中，激活以下Apache模組：
 
    ```
    alias
@@ -152,18 +152,18 @@ Web伺服器也可讓您透過HTTPs通訊協定保證資料機密性。
    ForceLanguagePriority
    ```
 
-1. 在`/etc/httpd/conf.d/`資料夾中建立Adobe Campaign特定設定檔案。 例如`CampaignApache.conf`
+1. 在 `/etc/httpd/conf.d/` 檔案夾。 例如 `CampaignApache.conf`
 
-1. 對於&#x200B;**RHEL7**，在檔案中添加以下說明：
+1. 針對 **RHEL7**，請在檔案中新增下列指示：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/conf/apache_neolane.conf
    ```
 
-1. 對於&#x200B;**RHEL7**:
+1. 針對 **RHEL7**:
 
-   新增`/etc/systemd/system/httpd.service`檔案，其中包含下列內容：
+   新增 `/etc/systemd/system/httpd.service` 檔案，其內容如下：
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -244,4 +244,4 @@ GET /r/test
 Connection closed by foreign host.
 ```
 
-您也可以從網頁瀏覽器要求URL [`https://<computer>`](https://myserver.adobe.com/r/test)。
+您也可以要求URL [`https://<computer>`](https://myserver.adobe.com/r/test) 從網頁瀏覽器。

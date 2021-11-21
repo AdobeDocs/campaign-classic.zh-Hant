@@ -16,10 +16,10 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-驗證一旦運作，[!DNL pipelined]就可以檢索事件並處理它們。 它只會處理在Adobe Campaign中設定的觸發器，而忽略其他觸發器。 觸發器必須從Analytics產生，並預先推送至管道。
+驗證一旦運作， [!DNL pipelined] 可以擷取事件並加以處理。 它只會處理在Adobe Campaign中設定的觸發器，而忽略其他觸發器。 觸發器必須從Analytics產生，並預先推送至管道。
 選項也可以設定萬用字元來擷取所有觸發器（無論名稱為何）。
 
-觸發器的設定是在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下的選項中完成。 選項名稱為&#x200B;**[!UICONTROL NmsPipeline_Config]**。 資料類型為JSON格式的「長文字」。
+觸發器的設定是在下方的選項中完成 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 選項名稱為 **[!UICONTROL NmsPipeline_Config]**. 資料類型為JSON格式的「長文字」。
 
 此範例指定兩個觸發器。
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在Analytics介面中，特定觸發器名稱的[!DNL Trigger] UID值可作為Triggers介面中URL查詢字串參數的一部分找到。 triggerType UID會傳入管道資料流，且程式碼可寫入pipeline.JS中，以將觸發器UID對應至使用者易記標籤，該標籤可儲存在pipelineEvents架構的「觸發器名稱」欄中。
+>此 [!DNL Trigger] 在Analytics介面中，特定觸發器名稱的UID值可作為觸發器介面中URL查詢字串參數的一部分找到。 triggerType UID會傳入管道資料流，且程式碼可寫入pipeline.JS中，以將觸發器UID對應至使用者易記標籤，該標籤可儲存在pipelineEvents架構的「觸發器名稱」欄中。
 
 ## 消費者參數 {#consumer-parameter}
 
@@ -77,10 +77,10 @@ ht-degree: 2%
 ## 如何配置管道選項 {#configure-pipeline-option}
 
 在「觸發器」陣列下新增或編輯Experience Cloud觸發器；請勿編輯其餘內容。
-請透過此[website](https://jsonlint.com/)確認JSON有效。
+在此協助下，確認JSON有效 [網站](https://jsonlint.com/).
 
 * &quot;name&quot;是觸發器ID。 萬用字元「*」會擷取所有觸發器。
 * &quot;Consumer&quot;是唯一識別nlserver例項的任何唯一字串。 通常可以是例項名稱本身。 對於多個環境(dev/stage/prod)，請確定每個環境都是唯一的，以便每個執行個體都能收到訊息的副本。
 * [!DNL Pipelined] 也支援「別名」主題。
 
-進行更改後重新啟動[!DNL pipelined]。
+重新啟動 [!DNL pipelined] 進行變更後才會執行。

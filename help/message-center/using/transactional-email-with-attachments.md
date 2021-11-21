@@ -23,25 +23,25 @@ ht-degree: 2%
 
 在此案例中，您將了解如何傳送包含個別和/或個人化附件的交易式電子郵件。 不會在交易式訊息伺服器上預先上傳附件：而是在飛機上產生。
 
-擷取客戶互動或詳細資訊時，您可能需要在程式結束時將這些資訊傳回客戶，例如附加至電子郵件的PDF檔案。
+擷取客戶互動或詳細資訊時，您可能需要在程式結束時將此資訊傳回客戶，例如附加至電子郵件的PDF檔案。
 
 以下是此情境的主要步驟：
 
 1. 客戶進入網站，找到他們要購買的產品。
 1. 客戶選擇產品並自訂一些選項。
 1. 客戶完成交易。
-1. 系統會傳送電子郵件給客戶確認交易。 由於不建議在電子郵件中傳送PII（個人識別資訊），因此會產生安全的PDF並附加至電子郵件。
+1. 系統會傳送電子郵件給客戶確認交易。 由於不建議在電子郵件中傳送PII（個人識別資訊），因此會產生安全PDF並附加至電子郵件。
 1. 客戶會收到包含相關資料的電子郵件及其附件。
 
 在此情況下，系統不會預先建立附件，而是會即時新增至傳出電子郵件，這可提供下列優點：
 
 * 這可讓您個人化附件的內容。
 * 如果附件與交易相關聯（如上述範例案例中），它可能包含在客戶處理期間產生的動態資料。
-* 附加PDF檔案可最佳化安全性，因為您可以加密並透過HTTPS傳送。
+* 附加PDF檔案可最佳化安全性，因為您可以加密檔案並透過HTTPS傳送。
 
 >[!NOTE]
 >
->為避免效能問題，如果您包含從個人化URL即時下載的影像作為附件，則每個影像大小預設不應超過100,000位元組。 可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)配置此建議閾值。
+>為避免效能問題，如果您包含從個人化URL即時下載的影像作為附件，則每個影像大小預設不應超過100,000位元組。 此建議的臨界值可從 [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## 建議 {#important-notes}
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->為避免效能問題，建議在每封電子郵件中不要包含多個附件。 建議的臨界值可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)中設定。
+>為避免效能問題，建議在每封電子郵件中不要包含多個附件。 建議的臨界值可從 [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## 實作 {#implementation}
 
@@ -70,11 +70,11 @@ ht-degree: 2%
 
 1. 您可以透過SOAP訊息觸發器傳送電子郵件。 在SOAP呼叫中，有URL參數(attachmentURL)。
 
-   有關SOAP請求的詳細資訊，請參閱[事件說明](../../message-center/using/event-description.md)。
+   有關SOAP請求的詳細資訊，請參見 [事件說明](../../message-center/using/event-description.md).
 
-1. 設計電子郵件時，按一下&#x200B;**[!UICONTROL Attachment]**。
+1. 設計電子郵件時，請按一下 **[!UICONTROL Attachment]**.
 
-1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;螢幕中，輸入SOAP附件參數：
+1. 在 **[!UICONTROL Attachment definition]** 螢幕中，輸入SOAP附件參數：
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>

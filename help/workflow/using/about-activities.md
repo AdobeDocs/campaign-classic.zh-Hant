@@ -21,11 +21,11 @@ ht-degree: 14%
 
 工作流活動按類別分組。 同時有四個索引標籤。
 
-在促銷活動工作流程中， **[!UICONTROL Events]**&#x200B;標籤會由&#x200B;**[!UICONTROL Deliveries]**&#x200B;標籤取代。 在[Action activities](about-action-activities.md)區段中會詳細說明此索引標籤中的活動。
+在行銷活動工作流程中， **[!UICONTROL Events]** 標籤被 **[!UICONTROL Deliveries]** 標籤。 此索引標籤中的活動在 [動作活動](about-action-activities.md) 區段。
 
 ![](assets/wf-activity-tabs.png)
 
-顯示全文:
+閱讀全文:
 
 * [關於鎖定目標活動](about-targeting-activities.md)
 * [執行工作流程](starting-a-workflow.md)

@@ -20,10 +20,10 @@ ht-degree: 7%
 修改架構並儲存修改時，會自動產生擴充架構。 不過，您可能需要手動重新產生結構以套用修改。 操作步驟：
 
 1. 選取要重新產生的架構。
-1. 按一下右鍵，然後選擇&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
-1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以確認並啟動程式。
+1. 按一下右鍵並選擇 **[!UICONTROL Actions > Regenerate selected schemas...]** .
+1. 按一下 **[!UICONTROL OK]** 以確認並啟動程式。
 
-然後，您可以在「預覽」和「檔案」標籤中檢查所產生結構。 有關詳細資訊，請參閱[Priciples](../../configuration/using/data-schemas.md#principles)區段。
+然後，您可以在「預覽」和「檔案」標籤中檢查所產生結構。 有關詳細資訊，請參閱 [原則](../../configuration/using/data-schemas.md#principles) 區段。
 
 >[!NOTE]
 >

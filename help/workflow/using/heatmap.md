@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-促銷活動工作流程熱度圖包含目前執行之所有工作流程的色彩編碼圖形表示法。 它僅適用於&#x200B;**Campaign管理員**。
+促銷活動工作流程熱度圖包含目前執行之所有工作流程的色彩編碼圖形表示法。 它僅適用於 **Campaign管理員**.
 
-在[本頁面](../../production/using/monitoring-guidelines.md)中探索其他監控促銷活動程式的方式。
+探索其他監控促銷活動程式的方式，於 [本頁](../../production/using/monitoring-guidelines.md).
 
 ## 開始使用工作流程熱度圖 {#about-the-workflow-heatmap}
 
@@ -31,22 +31,22 @@ ht-degree: 3%
 * 依期間篩選工作流程，以查看哪些工作流程可能遇到問題
 * 依持續時間篩選活動，以查看哪些活動可能遇到問題
 * 輕易尋找個別的工作流程及所有的相關活動 (包括其持續時間)
-* 按工作流類型篩選：[技術工作流程](building-a-workflow.md#technical-workflows)或[促銷活動工作流程](building-a-workflow.md#campaign-workflows)
+* 按工作流類型篩選： [技術工作流程](building-a-workflow.md#technical-workflows) 或 [行銷活動工作流程](building-a-workflow.md#campaign-workflows)
 * 尋找特定工作流程並加以分析
 
 >[!NOTE]
 >
->除了&#x200B;**工作流程熱度圖**&#x200B;之外，您還可以建立工作流程，讓您監控一組工作流程的狀態並傳送週期性訊息給主管。 有關詳細資訊，請參閱[專用區段](supervising-workflows.md)。
+>除了 **工作流程熱度圖**，您可以建立工作流程，讓您監控一組工作流程的狀態並傳送循環訊息給主管。 有關詳細資訊，請參閱 [專屬區段](supervising-workflows.md).
 
-使用「工作流熱度圖」需要熟悉下列概念：[工作流](about-workflows.md)、[活動](about-activities.md)和[工作流最佳實踐](workflow-best-practices.md)。
+使用「工作流熱度圖」需要熟悉下列概念： [工作流程](about-workflows.md), [活動](about-activities.md) 和 [工作流程最佳實務](workflow-best-practices.md).
 
 ## 自訂工作流程熱度圖 {#using-the-heatmap}
 
 >[!NOTE]
 >
->如果「工作流熱度圖」中未顯示任何資料，請按一下&#x200B;**[!UICONTROL Load data]**&#x200B;按鈕。
+>如果「工作流熱度圖」中未顯示任何資料，請按一下 **[!UICONTROL Load data]** 按鈕。
 
-1. 前往&#x200B;**[!UICONTROL Monitoring]**，按一下&#x200B;**[!UICONTROL Workflow HeatMap]**&#x200B;連結以顯示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;頁面。
+1. 前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Workflow HeatMap]** 連結以顯示 **[!UICONTROL Campaign Workflow HeatMap]** 頁面。
 
    ![](assets/wkf_monitoring_path.png)
 
@@ -56,7 +56,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >只有未被&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流刪除的工作流才可見。 有關資料庫清理工作流的詳細資訊，請參閱[此部分](../../production/using/database-cleanup-workflow.md)。\
+   >僅限未被 **[!UICONTROL Database cleanup]** 工作流程可見。 有關「資料庫清理」工作流的詳細資訊，請參閱 [本節](../../production/using/database-cleanup-workflow.md).\
    >預設情況下，為當前管理員用戶定義的工作流熱度映射時區。 例如，如果您與您所使用的行銷使用者不在相同區域，則可能會想要加以變更。
 
 1. 按一下 **[!UICONTROL Filters]** 按鈕。
@@ -67,22 +67,22 @@ ht-degree: 3%
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. 您也可以從&#x200B;**[!UICONTROL Workflows]**&#x200B;下拉式清單中選擇特定的工作流程。
+1. 您也可以從 **[!UICONTROL Workflows]** 下拉式清單。
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >已套用&#x200B;**[!UICONTROL Min duration]**&#x200B;篩選器。 如果您找不到特定的工作流程，請將最小持續時間重設為0，讓清單中顯示所有工作流程。
+   >此 **[!UICONTROL Min duration]** 篩選。 如果您找不到特定的工作流程，請將最小持續時間重設為0，讓清單中顯示所有工作流程。
 
-1. 您也可以篩選&#x200B;**[!UICONTROL Workflow type]** :
+1. 您也可以篩選 **[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]** :僅 [顯示現成可用的技術](building-a-workflow.md#technical-workflows) 工作流程 [和資料](targeting-data.md#data-management) 管理工作流程。
-   * **[!UICONTROL Marketing]** :只會顯示連結至行銷活動的工作流程(稱為行 [銷活動工作流程](building-a-workflow.md#campaign-workflows))。
+   * **[!UICONTROL Technical]** :僅 [現成技術工作流程](building-a-workflow.md#technical-workflows) 和 [資料管理工作流程](targeting-data.md#data-management) 的下界。
+   * **[!UICONTROL Marketing]** :僅連結至行銷活動的工作流程，稱為 [行銷活動工作流程](building-a-workflow.md#campaign-workflows)，則會顯示。
 
-1. 要按名稱搜索特定的工作流，還可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;欄位。
+1. 若要依名稱搜尋特定工作流程，您也可以使用 **[!UICONTROL Workflow name filter]** 欄位。
 
-1. 如果您在兩者之間的時間編輯了某些工作流程，請按一下&#x200B;**[!UICONTROL Reload data]**&#x200B;按鈕以重新整理顯示在格線中的資料。
+1. 如果您在兩者之間的時間編輯了某些工作流程，請按一下 **[!UICONTROL Reload data]** 按鈕，刷新網格中顯示的資料。
 
 ## 解譯工作流程熱度圖 {#reading-the-heatmap}
 
@@ -91,7 +91,7 @@ ht-degree: 3%
 * 較深的紅色儲存格對應於同時執行大量工作流程的期間。
 * 灰色儲存格對應至沒有執行工作流程的期間。
 
-若要了解如何套用顏色代碼以及如何導覽熱度圖，請按一下&#x200B;**[!UICONTROL Help]**&#x200B;按鈕。
+若要了解如何套用顏色代碼以及如何導覽熱度圖，請按一下 **[!UICONTROL Help]** 按鈕。
 
 ![](assets/wkf_monitoring_legend.png)
 
@@ -110,7 +110,7 @@ ht-degree: 3%
    對於每個工作流程，其包含的所有活動都會列出及其持續時間。
 
 1. 按一下工作流程ID或名稱，直接開啟工作流程。
-1. 若要返回&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;檢視，請按一下&#x200B;**[!UICONTROL Home]**&#x200B;按鈕。
+1. 返回 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Home]** 按鈕。
 
 ## 使用案例：使用熱度圖執行操作 {#use-cases--using-the-heatmap-to-take-actions}
 
@@ -120,7 +120,7 @@ ht-degree: 3%
 
 身為Campaign管理員，工作流程熱度圖可協助您了解執行個體的負載，並在適當時間規劃現有或新的工作流程。
 
-1. 在&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;檢視中，按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕。
+1. 從 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Filters]** 按鈕。
 1. 將持續時間設為幾秒或幾分鐘。
 1. 增加持續時間篩選條件，排除沒有顯著性的最短工作流程。
 
@@ -135,12 +135,12 @@ ht-degree: 3%
 
 身為Campaign管理員，工作流程熱度圖可協助您尋找可能減緩活動的最長工作流程。
 
-1. 在&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;檢視中，按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕。
+1. 從 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Filters]** 按鈕。
 1. 將持續時間設為1小時。
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. 減少&#x200B;**[!UICONTROL Min duration]**&#x200B;篩選器以包含更多結果。
+1. 減少 **[!UICONTROL Min duration]** 篩選。
 1. 探索結果以找出最長的工作流，這些工作流可能會對伺服器和資料庫資源（CPU、RAM、網路、IOPS等）產生更大的影響。
 1. 採取適當行動：
 
@@ -153,9 +153,9 @@ ht-degree: 3%
 
 在這種情況下，許多使用者都在抱怨工作流程效能。 您需要檢查哪些項目導致活動變慢以及如何解決問題。
 
-1. 前往&#x200B;**[!UICONTROL Monitoring]**，按一下&#x200B;**[!UICONTROL Workflows]**&#x200B;連結以顯示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;頁面。
-1. 將&#x200B;**[!UICONTROL Min duration]**&#x200B;篩選器設為5分鐘。
-1. 將&#x200B;**[!UICONTROL Workflow type]**&#x200B;篩選器設為&#x200B;**[!UICONTROL Marketing]** 。
+1. 前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Workflows]** 連結以顯示 **[!UICONTROL Campaign Workflow HeatMap]** 頁面。
+1. 設定 **[!UICONTROL Min duration]** 篩選為5分鐘。
+1. 設定 **[!UICONTROL Workflow type]** 篩選 **[!UICONTROL Marketing]** .
 1. 從熱度圖網格中，觀察以下內容：
 
    ![](assets/wkf_monitoring_without.png)
@@ -166,7 +166,7 @@ ht-degree: 3%
    * 效能低。
 
 1. 不必從上午10:00開始有50個工作流程，而是將工作流程的開始時間平均分配給當天的其餘時間。
-1. 返回&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;頁，然後按一下&#x200B;**[!UICONTROL Reload data]**&#x200B;按鈕。
+1. 返回 **[!UICONTROL Campaign Workflow HeatMap]** 頁面，然後按一下 **[!UICONTROL Reload data]** 按鈕。
 1. 現在，請注意下列事項：
 
    ![](assets/wkf_monitoring_with.png)

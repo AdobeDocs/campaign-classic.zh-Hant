@@ -27,7 +27,7 @@ ht-degree: 17%
 
 ## 父母 {#parents-6}
 
-`<srcschema>`  ,   `<element>`   ,    `<attribute>`    ,     `<enumeration>`     ,      `<value>`      ,      `<param />`       `<method />`
+`<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
 ## 兒童 {#children-6}
 
@@ -35,7 +35,7 @@ ht-degree: 17%
 
 ## 說明 {#description-6}
 
-此元素可讓您說明`<element>`或`<attribute>`   元素。 它只能包含文本，並以XML儲存在資料庫中。
+此元素可讓您描述 `<element>`  或  `<attribute>`   元素。 它只能包含文本，並以XML儲存在資料庫中。
 
 ## 屬性說明 {#attribute-description-6}
 

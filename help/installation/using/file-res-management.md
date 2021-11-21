@@ -19,27 +19,27 @@ ht-degree: 0%
 
 ## 限制上傳檔案格式 {#limiting-uploadable-files}
 
-使用&#x200B;**uploadWhiteList**&#x200B;屬性來限制可在Adobe Campaign伺服器上上載的檔案類型。
+使用 **uploadWhiteList** 屬性，限制可在Adobe Campaign伺服器上上傳的檔案類型。
 
-此屬性可在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**dataStore**&#x200B;元素內使用。 **serverConf.xml**&#x200B;中所有可用的參數都列在此[節](../../installation/using/the-server-configuration-file.md)中。
+此屬性可在 **dataStore** 元素 **serverConf.xml** 檔案。 中所有可用的參數 **serverConf.xml** 列於此 [節](../../installation/using/the-server-configuration-file.md).
 
-此屬性的預設值為&#x200B;**。+** ，並可讓您上傳任何檔案類型。
+此屬性的預設值為 **.+** 和可讓您上傳任何檔案類型。
 
 若要限制可能的格式，請以有效的java規則運算式取代屬性值。 您可以以逗號分隔數個值，以輸入數個值。
 
-例如：**uploadWhiteList=&quot;。*.png,。*.jpg&quot;**&#x200B;可讓您在伺服器上傳PNG和JPG格式。 不接受其他格式。
+例如： **uploadWhiteList=&quot;。*.png,。*.jpg&quot;** 可讓您在伺服器上上傳PNG和JPG格式。 不接受其他格式。
 
 >[!NOTE]
 >
 >在Internet Explorer中，完整的檔案路徑必須由規則運算式驗證。
 
-您也可以設定Web伺服器，以防止上傳重要檔案。 [深入瞭解](web-server-configuration.md)
+您也可以設定Web伺服器，以防止上傳重要檔案。 [了解更多](web-server-configuration.md)
 
 ## 代理連接配置 {#proxy-connection-configuration}
 
-例如，您可以使用&#x200B;**檔案傳輸**&#x200B;工作流程活動，將Campaign伺服器透過代理連線至外部系統。 為此，您需要通過特定命令配置&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**proxyConfig**&#x200B;部分。 **serverConf.xml**&#x200B;中可用的所有參數都列在此[節](../../installation/using/the-server-configuration-file.md)中。
+您可以使用 **檔案傳輸** 工作流程活動（例如）。 為達此目的，您需要設定 **proxyConfig** 區段 **serverConf.xml** 檔案。 中可用的所有參數 **serverConf.xml** 列於此 [節](../../installation/using/the-server-configuration-file.md).
 
-可能有下列代理連接：HTTP、HTTPS、FTP、SFTP。 請注意，自20.2 Campaign版本開始，HTTP和HTTPS通訊協定參數已&#x200B;**不再提供**。 由於這些參數在舊版組建（包括9032）中仍然可用，因此下文仍提及。
+可能有下列代理連接：HTTP、HTTPS、FTP、SFTP。 請注意，自20.2 Campaign版本開始，HTTP和HTTPS通訊協定參數為 **不再可用**. 由於這些參數在舊版組建（包括9032）中仍然可用，因此下文仍提及。
 
 >[!CAUTION]
 >
@@ -104,28 +104,28 @@ FTP/FTPS連線會定義於proxyFTP參數中：
 
 如果要暫時禁用代理連接，請將enabled參數設定為&quot;false&quot;或&quot;0&quot;。
 
-如果您需要透過代理使用iOS HTTP/2連接器，則支援下列HTTP代理模式：
+如果您需要透過Proxy使用iOS HTTP/2連接器，支援下列HTTP Proxy模式：
 
 * 不驗證的HTTP
 * HTTP基本驗證
 
-要激活代理模式，必須在`serverconf.xml`檔案中進行以下更改：
+若要啟用代理模式，必須在 `serverconf.xml` 檔案：
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-有關此iOS HTTP/2連接器的詳細資訊，請參閱此[page](../../delivery/using/about-mobile-app-channel.md)。
+有關此iOS HTTP/2連接器的詳細資訊，請參閱 [頁面](../../delivery/using/about-mobile-app-channel.md).
 
 ## 管理公用資源 {#managing-public-resources}
 
 若要公開使用，連結至促銷活動的電子郵件和公共資源中使用的影像必須存在於可外部存取的伺服器上。 然後，外部收件者或運算子就能使用這些ID。 [深入瞭解](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
-公用資源儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
+公共資源儲存在 **/var/res/instance** Adobe Campaign安裝目錄的目錄。
 
-相符的URL為：**http://server/res/instance**&#x200B;其中&#x200B;**instance**&#x200B;為追蹤例項的名稱。
+相符的URL為： **http://server/res/instance** where **執行個體** 是追蹤例項的名稱。
 
-您可以將節點添加到&#x200B;**conf-`<instance>`.xml**&#x200B;檔案中以配置伺服器上的儲存，從而指定另一個目錄。 這表示會新增下列行：
+您可以將節點新增至 **conf-`<instance>`.xml** 檔案來配置伺服器上的儲存。 這表示會新增下列行：
 
 ```
 <serverconf>

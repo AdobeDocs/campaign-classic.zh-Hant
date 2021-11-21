@@ -21,20 +21,20 @@ ht-degree: 3%
 
 ## 優惠方案主張 {#offer-proposition}
 
-如需透過SOAP的優惠方案主張，請新增&#x200B;**nms:composition#Propose**&#x200B;命令，後面接著下列參數：
+如需透過SOAP的優惠方案主張，請新增 **nms：主張#建議** 命令，後接下列參數：
 
 * **targetId**:收件者的主要金鑰（可以是複合金鑰）。
 * **maxCount**:指定聯繫人的優惠方案數。
-* **內容**:可讓您在空間架構中新增內容資訊。如果使用的架構為&#x200B;**nms:interaction**，則應新增&#x200B;**`<empty>`**。
+* **內容**:可讓您在空間架構中新增內容資訊。 如果使用的架構為 **nms:interaction**, **`<empty>`** 應新增。
 * **類別**:指定選件必須屬於的類別。
 * **主題**:指定選件必須屬於的主題。
-* **uuid**:Adobe Campaign永久cookie的值(「uuid230」)。
+* **uid**:Adobe Campaign永久cookie的值(「uuid230」)。
 * **nli**:Adobe Campaign工作階段cookie的值(「nlid」)。
 * **noProp**:使用&quot;true&quot;值停用建議插入。
 
 >[!NOTE]
 >
->**targetId**&#x200B;和&#x200B;**maxCount**&#x200B;設定是強制性的。 其他則為選用。
+>此 **targetId** 和 **maxCount** 必須進行設定。 其他則為選用。
 
 響應查詢，SOAP服務將返回以下參數：
 
@@ -43,11 +43,11 @@ ht-degree: 3%
 
 ## 選件更新 {#offer-update}
 
-將&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令添加到URL，然後添加以下參數：
+新增 **nms:interaction#UpdateStatus** 命令傳至URL，後接下列參數：
 
-* **主張**:字元字串，其中包含在優惠方案主張期間以輸出形式提供的主張ID。請參閱[優惠方案主張](#offer-proposition)。
-* **狀態**:字串類型，它會指定選件的新狀態。可能的值列在&#x200B;**命題狀態**&#x200B;枚舉中，位於&#x200B;**nms:common**&#x200B;方案中。 例如，現成可用，數字3對應於&#x200B;**接受**&#x200B;狀態。
-* **內容**:XML元素，可讓您在空間架構中添加上下文資訊。如果使用的架構為&#x200B;**nms:interaction**，則應新增&#x200B;**`<empty>`**。
+* **命題**:字元字串，其中包含在優惠方案主張期間以輸出形式提供的主張ID。 請參閱 [優惠方案主張](#offer-proposition).
+* **狀態**:字串類型，它會指定選件的新狀態。 可能的值會列在 **主張狀態** 枚舉，在 **nms:common** 綱要。 例如，現成可用，數字3對應至 **已接受** 狀態。
+* **內容**:XML元素，可讓您在空間架構中添加上下文資訊。 如果使用的架構為 **nms:interaction**, **`<empty>`** 應新增。
 
 ## 使用SOAP呼叫的範例 {#example-using-a-soap-call}
 

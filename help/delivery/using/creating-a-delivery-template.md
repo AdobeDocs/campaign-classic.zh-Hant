@@ -21,48 +21,48 @@ ht-degree: 11%
 
 ## 將現有傳遞轉換為範本 {#converting-an-existing-delivery-to-a-template}
 
-傳送可轉換為範本，以執行新的重複傳送動作。 若要將傳送轉換為範本，請從傳送清單中選取，可透過樹狀結構的&#x200B;**[!UICONTROL Campaign management]**&#x200B;節點存取。
+傳送可轉換為範本，以執行新的重複傳送動作。 若要將傳遞轉換為範本，請從傳遞清單中選取，可透過 **[!UICONTROL Campaign management]** 樹的節點。
 
-按一下右鍵並選擇&#x200B;**[!UICONTROL Actions > Save as template...]**。
+按一下滑鼠右鍵並選取 **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-此動作會從選取的傳送建立傳送範本。 您必須輸入儲存資料夾（在&#x200B;**[!UICONTROL Folder]**&#x200B;欄位中），以及建立根據此範本建立的傳送的資料夾（在&#x200B;**[!UICONTROL Execution folder]**&#x200B;欄位中）。
+此動作會從選取的傳送建立傳送範本。 您必須輸入儲存資料夾的位置(在 **[!UICONTROL Folder]** 欄位)，以及建立根據此範本建立的傳送的資料夾(位於 **[!UICONTROL Execution folder]** 欄位)。
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-有關配置模式的詳細資訊，請參閱[將模板連結到傳送](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
+有關配置模式的詳細資訊，請參閱 [將範本連結至傳遞](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## 建立新範本 {#creating-a-new-template}
 
 若要設定傳送範本，請執行下列步驟：
 
 1. 開啟「促銷活動總管」。
-1. 在&#x200B;**資源**&#x200B;資料夾中，依次選擇&#x200B;**模板**&#x200B;和&#x200B;**傳送模板**。
+1. 在 **資源** 資料夾，選取 **範本** then **傳遞範本**.
 
    ![](assets/delivery_template_1.png)
 
-1. 按一下工具列中的&#x200B;**新增**&#x200B;以建立新的傳送範本。
+1. 按一下 **新增** ，建立新的傳遞範本。
 
    ![](assets/delivery_template_2.png)
 
-1. 修改資料夾的&#x200B;**Label**&#x200B;和&#x200B;**內部名稱**。
+1. 修改 **標籤** 和 **內部名稱** 的下限。
 1. 儲存範本並重新開啟。
-1. 按一下&#x200B;**屬性**&#x200B;按鈕，然後根據您的需求修改值。
+1. 按一下 **屬性** 按鈕，然後根據您的需求修改值。
 
    ![](assets/delivery_template_3.png)
 
-1. 在&#x200B;**General**&#x200B;頁簽中，確認或更改在&#x200B;**Execution資料夾**、**Folder**&#x200B;和&#x200B;**Routing**&#x200B;下拉菜單中選擇的位置。
+1. 在 **一般** ，確認或變更 **執行資料夾**, **資料夾**，和 **路由** 下拉式功能表。
 
    ![](assets/delivery_template_4.png)
 
-1. 使用您的電子郵件主旨和目標母體完成&#x200B;**電子郵件參數**&#x200B;類別。
-1. 新增您的&#x200B;**HTML內容**&#x200B;以個人化您的範本，您可以顯示鏡像頁面連結和取消訂閱連結。
-1. 選擇&#x200B;**預覽**&#x200B;頁簽。 在&#x200B;**測試個人化**&#x200B;下拉式選單中，選取&#x200B;**收件者**&#x200B;以將範本預覽為選取的設定檔。
+1. 完成 **電子郵件參數** 類別，以及您的電子郵件主旨和目標母體。
+1. 新增 **HTML內容** 若要個人化您的範本，您可以顯示鏡像頁面連結和取消訂閱連結。
+1. 選取 **預覽** 標籤。 在 **測試個人化** 下拉式功能表，選取 **收件者** 將範本預覽為選取的設定檔。
 
    ![](assets/delivery_template_5.png)
 
-1. 按一下「**儲存**」。 您的範本現在已可用於傳送。
+1. 按一下 **儲存**. 您的範本現在已可用於傳送。
 
 >[!NOTE]
 >
@@ -88,4 +88,4 @@ ht-degree: 11%
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-其他Campaign Classic操作說明影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+提供其他Campaign Classic作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

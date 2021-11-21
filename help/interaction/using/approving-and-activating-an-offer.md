@@ -37,11 +37,11 @@ ht-degree: 2%
 
 若要核准優惠方案內容，請套用下列步驟：
 
-1. 按一下&#x200B;**[!UICONTROL Approval]**&#x200B;按鈕，然後在快顯視窗中選取&#x200B;**[!UICONTROL Approve content]**。
+1. 按一下 **[!UICONTROL Approval]** 按鈕並選取 **[!UICONTROL Approve content]** 中。
 
    ![](assets/offer_validate_002.png)
 
-1. 使用下拉式清單，選取您要持續編輯的表示法或要發佈至即時環境的表示法，然後按一下&#x200B;**[!UICONTROL Content approval]**。
+1. 使用下拉式清單，選取您要持續編輯的表示法或要發佈至即時環境的表示法，然後按一下 **[!UICONTROL Content approval]**.
 
    ![](assets/offer_validate_003.png)
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >**[!UICONTROL Content approved]**&#x200B;提及並不表示所有優惠方案表示皆已啟用且已核准。 它表示內容核准程式已完成，無論所有選件是否已啟用/核准。
+   >此 **[!UICONTROL Content approved]** 提及並不表示所有優惠方案聲明皆已啟用並已核准。 它表示內容核准程式已完成，無論所有選件是否已啟用/核准。
 
 ## 核准優惠方案資格 {#approving-offer-eligibility}
 
@@ -61,11 +61,11 @@ ht-degree: 2%
 >
 >核准優惠方案的內容和資格後，發佈工作流程（優惠方案通知）會自動執行，且優惠方案會上線，並可在所有啟用的空間中使用。
 
-* 按一下&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;即可檢視規則完整清單。
+* 您可以按一下「 」，檢視規則的完整清單 **[!UICONTROL Schedule and eligibility rules]**.
 
    ![](assets/offer_validate_005.png)
 
-* 要更改適用性規則，請按一下&#x200B;**[!UICONTROL Reject]**，然後按一下&#x200B;**[!UICONTROL Eligibility approval]**。
+* 若要變更適用性規則，請按一下 **[!UICONTROL Reject]**，然後按一下 **[!UICONTROL Eligibility approval]**.
 
    ![](assets/offer_validate_007.png)
 
@@ -73,11 +73,11 @@ ht-degree: 2%
 
    ![](assets/offer_validate_006.png)
 
-* 若要接受優惠方案資格，請按一下&#x200B;**[!UICONTROL Approve eligibility]**。
+* 若要接受優惠方案資格，請按一下 **[!UICONTROL Approve eligibility]**.
 
    ![](assets/offer_validate_008.png)
 
-   核准資格，視需要新增註解，然後按一下&#x200B;**[!UICONTROL Eligibility approval]**。
+   核准資格、視需要新增註解，然後按一下 **[!UICONTROL Eligibility approval]**.
 
    ![](assets/offer_validate_009.png)
 
@@ -87,27 +87,27 @@ ht-degree: 2%
 
 ## 核准追蹤 {#approval-tracking}
 
-優惠方案控制面板上提供核准追蹤功能。 按一下&#x200B;**[!UICONTROL Hide/display logs]**&#x200B;以訪問它。
+優惠方案控制面板上提供核准追蹤功能。 按一下 **[!UICONTROL Hide/display logs]** 來存取。
 
 ![](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
->優惠方案的&#x200B;**[!UICONTROL Audit]**&#x200B;標籤中也提供追蹤功能，內含審核者意見的詳細資訊。
+>追蹤功能也可在 **[!UICONTROL Audit]** 選件的索引標籤，以及審核者意見的詳細資訊。
 
 ## 重新啟動核准 {#restart-the-approval}
 
 核准一經啟動，即可重新啟動。 要執行此操作，請遵循下列指示：
 
-1. 按一下優惠方案控制面板上的&#x200B;**[!UICONTROL Content approved]**。
-1. 在顯示的&#x200B;**[!UICONTROL Edit]**&#x200B;窗口中，選擇要重新啟動的批准，然後按一下&#x200B;**[!UICONTROL Re-initialize approval to submit it again]**。
-1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;進行確認。
+1. 按一下 **[!UICONTROL Content approved]** 在優惠方案控制面板上。
+1. 在 **[!UICONTROL Edit]** 窗口，選擇要重新啟動的批准，然後按一下 **[!UICONTROL Re-initialize approval to submit it again]**.
+1. 按一下以確認 **[!UICONTROL Ok]**.
 
 ![](assets/offer_validate_013.png)
 
 ## 發佈優惠方案 {#publishing-the-offer}
 
-一旦優惠方案的內容和資格皆獲核准後，優惠方案就會由工作流程發佈，該工作流程會針對每個已完成核准週期的優惠方案自動執行。 **[!UICONTROL Offer notification]**&#x200B;工作流程也每小時執行一次，以便從設計環境同步選件目錄中包含的空格和類別（如有必要）至即時環境。
+一旦優惠方案的內容和資格皆獲核准後，優惠方案就會由工作流程發佈，該工作流程會針對每個已完成核准週期的優惠方案自動執行。 此 **[!UICONTROL Offer notification]** 工作流程也會每小時執行一次，以便從設計環境同步選件目錄中包含的空間和類別（如有必要）至即時環境。
 
 設計環境中可用選件的控制面板包含有關發佈的資訊，包括即時環境中的相符選件名稱。
 
@@ -121,9 +121,9 @@ ht-degree: 2%
 
 優惠方案一經核准，即可加以停用。
 
-若要這麼做，請前往控制面板上的線上選件或等待上線的選件，然後按一下&#x200B;**[!UICONTROL Disable offer]**。
+若要這麼做，請前往控制面板，取得線上優惠方案或等待上線的優惠方案，然後按一下 **[!UICONTROL Disable offer]**.
 
-您也可以前往&#x200B;**[!UICONTROL Eligibility]**&#x200B;標籤並勾選&#x200B;**[!UICONTROL Enabled]**&#x200B;方塊，直接停用類別。
+您也可以前往 **[!UICONTROL Eligibility]** 標籤，並檢查 **[!UICONTROL Enabled]** 框。
 
 >[!NOTE]
 >

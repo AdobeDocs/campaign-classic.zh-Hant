@@ -21,13 +21,13 @@ ht-degree: 1%
 
 ![](assets/d_ncs_directory.png)
 
-每個&#x200B;**nlserver**&#x200B;模組都生成保存在以下目錄中的日誌檔案：**`<installation directory>`/var/`<instance>`/log/`<module>`.log**。
+每個 **nlserver** 模組生成保存在以下目錄中的日誌檔案： **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-**nlserver syslogd**&#x200B;模組將日誌保存到磁碟。 此模組與Unix **syslog守護程式**&#x200B;類似，但已針對Unix和Windows之間的相容性進行了調整。 其他Adobe Campaign模組不會將其記錄檔儲存至磁碟；他們通過發送UDP資料包將此任務委派給&#x200B;**syslogd**&#x200B;模組。
+此 **nlserver syslogd** 模組會將日誌保存到磁碟。 此模組類似於Unix **syslog守護程式**，但已針對Unix和Windows之間的相容性進行調整。 其他Adobe Campaign模組不會將其記錄檔儲存至磁碟；他們將此任務委派給 **syslogd** 模組，通過發送UDP資料包。
 
-預設情況下，Adobe Campaign平台上安裝了&#x200B;**syslogd**&#x200B;模組，但可以使用另一個&#x200B;**syslog守護程式**。 此模組將在&#x200B;**log**&#x200B;目錄中建立日誌檔案。
+依預設，Adobe Campaign平台具有 **syslogd** 安裝了模組，但可以使用其他模組 **syslog守護程式**. 此模組會在 **記錄** 目錄。
 
-多實例模組的日誌儲存在以下目錄中：**`<installation directory>`/var/default/log/**。 所有執行個體會共用相同的記錄檔(例如&#x200B;**web.log**)。
+多實例模組的日誌儲存在以下目錄中： **`<installation directory>`/var/default/log/**. 所有執行個體會共用相同的記錄檔(例如 **web.log**)。
 
 其他模組的記錄會儲存在以執行個體命名的子資料夾中。 每個執行個體都有其專屬的記錄檔。
 
@@ -53,14 +53,14 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->**redir**&#x200B;目錄僅存在於重定向伺服器上。 **url**&#x200B;子目錄包含要重新導向之URL的相符項目，而子目錄&#x200B;**log**&#x200B;包含追蹤記錄。 若要產生追蹤記錄，**trackinglogd**&#x200B;模組必須執行。
+>此 **redir** 目錄僅存在於重定向伺服器上。 此 **url** 子目錄包含要重新導向之URL和子目錄的相符項目 **記錄** 包含追蹤記錄。 若要產生追蹤記錄，請 **trackinglogd** 模組必須正在運行。
 
-為達到效能和儲存最佳化， logins.log檔案會分割為多個檔案，每天一個檔案(logins.yy-mm-dd.log)，最多可保留365個檔案。 在syslogd（**maxNumberOfLoginsFiles**&#x200B;選項）下，可以在serverConf.xml中更改天數。 請參閱[伺服器配置檔案](../../installation/using/the-server-configuration-file.md#syslogd)上的文檔。
+為達到效能和儲存最佳化， logins.log檔案會分割為多個檔案，每天一個檔案(logins.yy-mm-dd.log)，最多可保留365個檔案。 syslogd(**maxNumberOfLoginsFiles** 選項)。 請參閱 [伺服器配置檔案](../../installation/using/the-server-configuration-file.md#syslogd).
 
-依預設，每個模組和每個執行個體的記錄檔數限制為兩個10 MB的檔案。 第二個檔案稱為：**`<modulename>`_2.log**。 因此，每個模組和每個執行個體的日誌大小限制為2*10MB。
+依預設，每個模組和每個執行個體的記錄檔數限制為兩個10 MB的檔案。 第二個檔案稱為： **`<modulename>`_2.log**. 因此，每個模組和每個執行個體的日誌大小限制為2*10MB。
 
-不過，您可以保留較大的檔案。 要啟用此功能，請更改&#x200B;**conf/serverConf.xml**&#x200B;檔案的&#x200B;**syslogd**&#x200B;節點中&#x200B;**maxFileSizeMb=&quot;10&quot;**&#x200B;設定的值。 此值表示日誌檔案的最大大小(MB)。
+不過，您可以保留較大的檔案。 若要啟用此功能，請變更 **maxFileSizeMb=&quot;10&quot;** 設定 **syslogd** 節點 **conf/serverConf.xml** 檔案。 此值表示日誌檔案的最大大小(MB)。
 
-如果您想在記錄中保留更多的詳細程度，可以使用&#x200B;**-verbose**&#x200B;參數啟動Adobe Campaign模組：
+如果您想在記錄中保留更多詳細程度，可以使用 **-verbose** 參數：
 
-**nlserver開 `<MODULE>`始@`<INSTANCE>` -verbose**
+**nlserver開始 `<MODULE>`@`<INSTANCE>` -verbose**

@@ -30,7 +30,7 @@ ht-degree: 6%
 * 請確定加密密碼受限。
 * Protect可能包含個人資訊的頁面，例如鏡像頁面、網頁應用程式等。
 
-[顯示全文](../../installation/using/privacy.md)
+[閱讀全文](../../installation/using/privacy.md)
 
 ## 存取管理
 
@@ -42,7 +42,7 @@ ht-degree: 6%
 * 檢查每個運算子是否擁有適當的存取權限
 * 請避免使用管理員運算子，並避免管理員群組中有太多運算子
 
-[顯示全文](../../installation/using/access-management.md)
+[閱讀全文](../../installation/using/access-management.md)
 
 ## 指令碼和程式碼指南
 
@@ -54,9 +54,9 @@ ht-degree: 6%
 
 * **保護資料模型**:使用命名權限來限制運算子操作，添加系統篩選器(sysFilter)
 
-* **在Web應用程式中新增captcha**:了解如何在您的公開登錄頁面和訂閱頁面中新增captcha。
+* **在Web應用程式中新增擷取**:了解如何在您的公開登錄頁面和訂閱頁面中新增captcha。
 
-[顯示全文](../../installation/using/scripting-coding-guidelines.md)
+[閱讀全文](../../installation/using/scripting-coding-guidelines.md)
 
 ## 網路、資料庫和 SSL/TLS
 
@@ -66,29 +66,29 @@ ht-degree: 6%
 
 您也必須遵循資料庫引擎的安全性。
 
-[顯示全文](../../installation/using/network-database.md)
+[閱讀全文](../../installation/using/network-database.md)
 
 >[!CAUTION]
 >
->自2021年7月14日起，任何不支援TLS 1.2通訊協定的用戶端系統都將失去所有Adobe產品和服務的存取權。 在此日期之前，請確定所有使用者和用戶端系統均符合TLS 1.2規範。 [瞭解更多](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
+>自2021年7月14日起，任何不支援TLS 1.2通訊協定的用戶端系統都將失去所有Adobe產品和服務的存取權。 在此日期之前，請確定所有使用者和用戶端系統均符合TLS 1.2規範。 [了解更多](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## 伺服器配置
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
-必須在所有伺服器上執行配置。 配置檔案的類型為&#x200B;**serverConf.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**。 以下是需要驗證的關鍵元素：
+必須在所有伺服器上執行配置。 組態檔屬於 **serverConf.xml** 和 **`config-<instance>.xml`**. 以下是需要驗證的關鍵元素：
 
 * **安全區域**:配置安全區域，以便它們直接考慮代理客戶端的IP地址。
 
-* **檔案上傳保護**:限制可使用新uploadAllowList屬性上傳至Adobe Campaign伺服器的檔案類型。這可用於伺服器設定檔案。
+* **檔案上傳保護**:限制可使用新uploadAllowList屬性上傳至Adobe Campaign伺服器的檔案類型。 這可用於伺服器設定檔案。
 
 * **中繼**:通過為未使用的模組/應用程式停用中繼規則來微調中繼配置。
 
-* **傳出連** 線保護 **與命令限制** （伺服器端）
+* **傳出連線保護** 和 **命令限制** （伺服器端）
 
-* 您也可以新增額外的HTTP標題、啟用checkIPConstent、enableTLS、sessionTimeOutSec等。 如需詳細資訊，請參閱[Campaign伺服器設定檔案](../../installation/using/configuring-campaign-server.md)和[伺服器設定檔案說明](../../installation/using/the-server-configuration-file.md) 。
+* 您也可以新增額外的HTTP標題、啟用checkIPConstent、enableTLS、sessionTimeOutSec等。 請參閱 [Campaign伺服器設定檔案](../../installation/using/configuring-campaign-server.md) 和 [伺服器配置檔案說明](../../installation/using/the-server-configuration-file.md) 以取得更多資訊。
 
-[顯示全文](../../installation/using/server-configuration.md)
+[閱讀全文](../../installation/using/server-configuration.md)
 
 ## Web伺服器配置
 
@@ -101,4 +101,4 @@ ht-degree: 6%
 * 移除橫幅
 * 限制查詢大小以防止上傳重要檔案
 
-[顯示全文](../../installation/using/web-server-configuration.md)
+[閱讀全文](../../installation/using/web-server-configuration.md)

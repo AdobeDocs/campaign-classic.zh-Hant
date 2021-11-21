@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-[!DNL pipelined]狀態Web服務提供有關[!DNL pipelined]進程狀態的資訊。
+此 [!DNL pipelined] 狀態web服務提供有關 [!DNL pipelined] 程式。
 
 可使用瀏覽器手動存取，或透過監控應用程式自動存取。
 
@@ -41,12 +41,12 @@ REST格式，說明如下。
    * 下一偏移齊平：等到下一個批完成時。
    * processed-since-lastflush:上次批處理的觸發器數。
 * 路由
-   * 觸發器：已檢索的觸發器清單。 在[!DNL pipelined]選項中配置。
+   * 觸發器：已檢索的觸發器清單。 在 [!DNL pipelined] 選項。
 * 統計
    * average-pointer-flush time-ms:一批觸發器的平均處理時間。
    * average-trigger-processing-time-ms:分析觸發器資料所花的平均時間。
    * 位元組讀取：自進程啟動後從隊列中讀取的位元組數。
-   * current-messages:已從佇列提取且正在等待處理的待處理訊息的目前數目。 **此指標應接近零**。
+   * current-messages:已從佇列提取且正在等待處理的待處理訊息的目前數目。 **此指標應接近零**.
    * current-retries:當前處理失敗並等待重試的消息數。
    * 峰值消息：進程自啟動以來一直在處理的掛起消息的最大數量。
    * 指針刷新：自啟動以來處理的郵件批數。
@@ -59,8 +59,8 @@ REST格式，說明如下。
 
 * average-trigger-processing-time-ms:分析觸發器資料所花的平均時間。
 * is-JS-processor:值「1」。
-* trigger-discered:因處理錯誤而重試過多次後被捨棄的訊息數。 **此指標應為零**。
-* 觸發失敗：JS中的處理錯誤數。 **此指標應為零**。
+* trigger-discered:因處理錯誤而重試過多次後被捨棄的訊息數。 **此指標應為零**.
+* 觸發失敗：JS中的處理錯誤數。 **此指標應為零**.
 * 觸發接收：從隊列接收的消息數。
 
 * 設定：它們設定在設定檔案中。

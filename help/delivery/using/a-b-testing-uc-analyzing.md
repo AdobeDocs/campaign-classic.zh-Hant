@@ -19,11 +19,11 @@ ht-degree: 5%
 
 傳送測試傳送後，您可以檢查哪些收件者已傳送至，以及是否已開啟。
 
-* 若要找出已鎖定哪些收件者，請透過促銷活動控制面板開啟傳送，然後按一下&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤。
+* 若要找出已鎖定的收件者，請透過促銷活動控制面板開啟傳送，然後按一下 **[!UICONTROL Delivery]** 標籤。
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
-* 若要了解傳送是否已開啟，請前往&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤。
+* 若要了解傳送是否已開啟，請前往 **[!UICONTROL Tracking]** 標籤。
 
    ![](assets/use_case_abtesting_analysis_002.png)
 

@@ -73,7 +73,7 @@ ht-degree: 6%
   <tr> 
    <td> 行銷資源(MRM)<br /> </td> 
    <td> 透過提供任務、預算和行銷資源的管理和追蹤，以協作模式控制行銷動作。 <a href="../../mrm/using/about-marketing-resource-management.md">更多詳情</a> <br /> </td> 
-   <td> Marketing</td> 
+   <td> 行銷</td> 
   </tr> 
   <tr> 
    <td> 優惠方案引擎（互動）<br /> </td> 
@@ -83,7 +83,7 @@ ht-degree: 6%
   <tr> 
    <td> 使用執行例項控制優惠方案引擎。 選填。<br /> </td> 
    <td> 要安裝在優惠方案引擎的控制執行個體（互動）上的套件。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">更多詳情</a> </td> 
-   <td> Marketing<br /> </td>  
+   <td> 行銷<br /> </td>  
   </tr> 
   <tr> 
    <td> 執行例項的選件引擎。 選填。<br /> </td> 
@@ -113,7 +113,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> LINE 頻道<br /> </td> 
-   <td> Sends deliveries using the LINE channel with Adobe Campaign. 選填。交易式傳訊（訊息中心套件）必要。 <a href="../../delivery/using/line-channel.md">更多詳情</a> <br /> </td> 
+   <td> 使用LINE通道與Adobe Campaign傳送。 選填。交易式傳訊（訊息中心套件）必要。 <a href="../../delivery/using/line-channel.md">更多詳情</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
@@ -157,13 +157,13 @@ ht-degree: 6%
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> Access to external data (Federated Data Access)<br /> </td> 
+   <td> 存取外部資料（同盟資料存取）<br /> </td> 
    <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，讓您不需變更Adobe Campaign資料的結構即可存取外部資料。  選填。<a href="../../workflow/using/accessing-an-external-database--fda-.md">更多詳情</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
    <td> 行銷活動最佳化<br /> </td> 
-   <td> Controls, filters and monitors the sending of deliveries so that the messages sent best meet the needs and expectations of customers, in keeping with company communication policies. 選填。<a href="../../campaign-opt/using/about-campaign-typologies.md">更多詳情</a> <br /> </td> 
+   <td> 控制、篩選及監控傳送的傳送，讓傳送的訊息最符合客戶的需求和期望，並符合公司通訊原則。 選填。<a href="../../campaign-opt/using/about-campaign-typologies.md">更多詳情</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -174,16 +174,16 @@ ht-degree: 6%
   <tr> 
    <td> 抵用券管理<br /> </td> 
    <td> 建立一組抵用券，以新增至即將推出的行銷活動。 選填。<a href="../../delivery/using/personalized-coupons.md">更多詳情</a> <br /> </td> 
-   <td> Marketing<br /> </td> 
+   <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> Inbox Rendering (IR)<br /> </td> 
+   <td> 收件箱呈現(IR)<br /> </td> 
    <td> 使您能夠預覽在不同上下文中發送的郵件，並檢查主要案頭和應用程式的相容性。 選填。<a href="../../delivery/using/inbox-rendering.md">更多詳情</a><br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
    <td> 中央/地方行銷（分散式行銷）<br /> </td> 
-   <td> 在中央實體（總部、行銷部門等）之間實施合作行銷活動 和地方實體（銷售點、地區代理等）。 選填。<a href="../../distributed/using/about-distributed-marketing.md">Learn More</a><br /> </td> 
+   <td> 在中央實體（總部、行銷部門等）之間實施合作行銷活動 和地方實體（銷售點、地區代理等）。 選填。<a href="../../distributed/using/about-distributed-marketing.md">更多詳情</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 

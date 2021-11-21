@@ -27,7 +27,7 @@ ht-degree: 1%
 >
 >僅適用於Windows
 
-已損壞的跟蹤日誌檔案……/nl6/var/&lt;instance_name>/redir/log/0x0000記錄檔可停止追蹤工作流程。 若要輕鬆偵測損毀的線條並移除這些線條以繼續追蹤工作流程，您可以使用下列命令。
+已損壞的跟蹤日誌檔案……/nl6/var/&lt;instance_name>/redir/log/0x0000日誌可以停止跟蹤工作流。 若要輕鬆偵測損毀的線條並移除這些線條以繼續追蹤工作流程，您可以使用下列命令。
 
 ### 我知道哪個檔案里的損壞行
 
@@ -87,7 +87,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. 訪問&lt;redirection_server>/r/test URL，並檢查請求是否返回了生成號和localhost。
+1. 存取 &lt;redirection_server>/r/test URL ，並檢查請求是否傳回了組建編號和localhost。
 
 1. 檢查serverConf.xml檔案中的spareServer配置以查找跟蹤伺服器。 此配置應處於重定向模式。
 
@@ -104,13 +104,13 @@ $ grep -Rn 50x000000000FD7EC86
    </redirection>
    ```
 
-1. 手動檢查&lt;deliveryID>.xml檔案是否存在於……中的電腦上/nl6/var/&lt;instance_name>/redir/url/&lt;YYYY>目錄（YYYY代表傳送年）。
+1. 手動檢查 &lt;deliveryid>.xml檔案存在於的電腦上……/nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> 目錄（YYYY代表傳送年）。
 
-1. 手動檢查在&lt;deliveryID>.xml檔案中是否可找到&lt;trackingUrlId>。
+1. 手動檢查 &lt;trackingurlid> 可在 &lt;deliveryid>.xml檔案。
 
 1. 在相關的deliveryID傳送中手動檢查broadlogID是否存在。
 
-1. 檢查&lt;deliveryID>.xml檔案中的權限……/nl6/var/&lt;instance_name>/redir/url/year目錄。
+1. 檢查 &lt;deliveryid>.xml檔案權限……/nl6/var/&lt;instance_name>/redir/url/year目錄。
 
    他們應至少擁有644個權限，讓Apache可以讀取追蹤url，以重新導向要求的連結。
 
@@ -207,7 +207,7 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 
 ## 追蹤記錄擷取速度太慢 {#slow-retrieval}
 
-當例項不會直接擷取追蹤記錄，但從遠距Adobe Campaign Classic伺服器擷取記錄時，會透過GetTrackingLogs SOAP呼叫（在remoteTracking結構中定義）擷取記錄。
+當例項未直接擷取追蹤記錄，但從遠距Adobe Campaign Classic伺服器擷取記錄時，會透過GetTrackingLogs SOAP呼叫（在remoteTracking結構中定義）擷取記錄。
 
 serverConf.xml檔案中的選項可讓您設定透過此方法一次擷取的記錄數：logCountPerRequest。
 

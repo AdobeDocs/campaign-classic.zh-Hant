@@ -23,6 +23,6 @@ Social Marketing可讓您將傳遞傳送至各種Facebook頁面和Twitter帳戶�
 >
 >Adobe Campaign要求您遵守Facebook和Twitter所傳達的訊息傳送服務條款。
 >
->在發送發佈之前，您需要遵循[Starting workflows](../../social/using/starting-workflows.md)中所述的配置步驟。
+>在傳送發佈之前，您必須遵循 [開始工作流程](../../social/using/starting-workflows.md).
 
-本節詳細說明Facebook和Twitter傳送的特定元素。 與電子郵件傳送相同的所有元素在[本節](../../delivery/using/about-email-channel.md)中詳細說明。
+本節詳細說明Facebook和Twitter傳送的特定元素。 與電子郵件傳送相同的所有元素在 [本節](../../delivery/using/about-email-channel.md).

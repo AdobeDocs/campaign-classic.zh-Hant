@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-您可以使用&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動從外部檔案的工作流表中擷取資料。
+您可以使用 **[!UICONTROL Data extraction (file)]** 活動。
 
 >[!CAUTION]
 >
@@ -26,21 +26,21 @@ ht-degree: 1%
 若要設定資料擷取，請套用下列步驟：
 
 1. 指定輸出檔案的名稱：此名稱可包含變數，可透過欄位右側的個人化按鈕插入。
-1. 按一下&#x200B;**[!UICONTROL Edit the file format...]**&#x200B;以選取要擷取的資料。
+1. 按一下 **[!UICONTROL Edit the file format...]** 來選擇要提取的資料。
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;選項新增了一個額外步驟，以篩選匯總的最終結果，例如，對於給定的採購訂單類型、已訂購超過10次的客戶等。
+   此 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 選項會新增額外步驟，以篩選匯總的最終結果，例如，對指定的採購訂單類型、已訂購超過10次的客戶等。
 
-1. 如有必要，您可以將新欄新增至輸出檔案，例如運算或處理結果。 要執行此操作，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;圖示。
+1. 如有必要，您可以將新欄新增至輸出檔案，例如運算或處理結果。 若要這麼做，請按一下 **[!UICONTROL Add]** 表徵圖。
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
-   在其他行中，按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示以定義新欄的內容。
+   在其他行中，按一下 **[!UICONTROL Edit expression]** 圖示來定義新欄的內容。
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
-   然後，您將訪問選擇窗口。 按一下&#x200B;**[!UICONTROL Advanced selection]**&#x200B;以選擇要套用至資料的程式。
+   然後，您將訪問選擇窗口。 按一下 **[!UICONTROL Advanced selection]** ，以選擇要應用於資料的進程。
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
@@ -48,9 +48,9 @@ ht-degree: 1%
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-您可以定義要在資料擷取期間執行的後續程式，讓您壓縮或加密檔案。 要執行此操作，必須在活動的&#x200B;**[!UICONTROL Script]**&#x200B;索引標籤中新增所需的命令。
+您可以定義要在資料擷取期間執行的後續程式，讓您壓縮或加密檔案。 若要這麼做，必須在 **[!UICONTROL Script]** 標籤。
 
-如需詳細資訊，請參閱本區段：[壓縮或加密檔案](how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+如需詳細資訊，請參閱本區段： [壓縮或加密檔案](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 

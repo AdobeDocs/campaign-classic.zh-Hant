@@ -19,11 +19,11 @@ ht-degree: 2%
 
 以下是關於在Adobe Campaign使用輸入表格的一些一般原則。
 
-Forms在[本區段](../../configuration/using/identifying-a-form.md)中詳細說明。
+Forms在 [本節](../../configuration/using/identifying-a-form.md).
 
 ## 表單結構 {#form-structure}
 
-輸入表單的XML文檔必須包含&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;屬性的&#x200B;**`<form>`**&#x200B;根元素，以分別填入表單名稱及其命名空間。
+輸入表單的XML文檔必須包含 **`<form>`** 根元素與 **名稱** 和 **命名空間** 屬性，分別填入表單名稱及其命名空間。
 
 ```
 <form name="form_name" namespace="name_space">
@@ -31,7 +31,7 @@ Forms在[本區段](../../configuration/using/identifying-a-form.md)中詳細說
 </form>
 ```
 
-依預設，表單會與具有相同名稱和命名空間的資料架構相關聯。 要將表單與其他名稱關聯，請在&#x200B;**`<form>`**&#x200B;元素的&#x200B;**entity-schema**&#x200B;屬性中輸入架構鍵。
+依預設，表單會與具有相同名稱和命名空間的資料架構相關聯。 要將表單與其他名稱關聯，請在 **實體綱要** 屬性 **`<form>`** 元素。
 
 為了說明輸入表單的結構，我們以範例結構「cus:book」為基礎描述介面：
 
@@ -47,9 +47,9 @@ Forms在[本區段](../../configuration/using/identifying-a-form.md)中詳細說
 </form>
 ```
 
-編輯元素的說明以&#x200B;**`<form>`**&#x200B;根元素開頭。
+編輯元素的說明以 **`<form>`** 根元素。
 
-在&#x200B;**`<input>`**&#x200B;元素中輸入編輯控制項，該元素具有&#x200B;**xpath**&#x200B;屬性，該屬性包含其架構中欄位的路徑。
+在 **`<input>`** 元素搭配 **xpath** 屬性，包含其架構中欄位的路徑。
 
 **有關XPath語法的提醒：**
 
@@ -62,7 +62,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 範例:
 
 * **@date**:選擇名稱為「date」的屬性
-* **chapter/@title**:選取元素下方的「title」屬 `<chapter>` 性
+* **章節/@title**:選取 `<chapter>` 元素
 * **../@date**:從當前元素的父元素中選擇日期
 
 編輯控制項會自動適應對應的資料類型，並使用架構中定義的標籤。
@@ -71,7 +71,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 
 >[!CAUTION]
 >
->輸入表單必須參考&#x200B;**`<form>`**&#x200B;元素上的&#x200B;**type=&quot;contentForm&quot;**&#x200B;屬性，以自動新增要輸入內容所需的框架。
+>輸入表單必須參考 **type=&quot;contentForm&quot;** 屬性 **`<form>`** 元素來自動新增要輸入內容所需的框架。
 
 ## 格式 {#formatting}
 
@@ -96,13 +96,13 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 </input>
 ```
 
-清單控制項必須填入&#x200B;**type=&quot;list&quot;**&#x200B;屬性，清單的路徑必須參考集合元素。
+清單控制項必須填入 **type=&quot;list&quot;** 屬性，且清單的路徑必須參考集合元素。
 
-列由清單的子&#x200B;**`<input>`**&#x200B;元素聲明。
+列由子項聲明 **`<input>`** 清單的元素。
 
 >[!NOTE]
 >
->當資料架構中的收集元素&#x200B;**ordered=&quot;true&quot;**&#x200B;屬性完成時，會自動新增向上和向下排序箭頭。
+>當 **ordered=&quot;true&quot;** 資料結構中集合元素的屬性已完成。
 
 依預設，工具列按鈕會垂直對齊。 也可水準對齊：
 
@@ -115,11 +115,11 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 </input>
 ```
 
-**toolbarCaption**&#x200B;屬性強制工具欄的水準對齊並填充清單上方的標題。
+此 **工具欄標題** 屬性會強制工具列的水準對齊方式，並填入清單上方的標題。
 
 >[!NOTE]
 >
->對於不要顯示在控制項左側的集合元素標籤，添加&#x200B;**nolabel=&quot;true&quot;**&#x200B;屬性。
+>若要讓集合元素標籤不顯示在控制項左側，請新增 **nolabel=&quot;true&quot;** 屬性。
 
 #### 放大清單 {#zoom-in-a-list}
 
@@ -146,13 +146,13 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 </input>
 ```
 
-編輯表單的定義是透過清單元素下的&#x200B;**`<form>`**&#x200B;元素指定。 其結構與輸入形式的結構相同。
+編輯表單的定義是透過 **`<form>`** 元素。 其結構與輸入形式的結構相同。
 
-在清單定義中輸入&#x200B;**zoom=&quot;true&quot;**&#x200B;屬性時，會自動新增&#x200B;**[!UICONTROL Detail]**&#x200B;按鈕。 這可讓您開啟所選行上的編輯表單。
+A **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性。 這可讓您開啟所選行上的編輯表單。
 
 >[!NOTE]
 >
->新增&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;屬性會強制在插入清單的元素時呼叫編輯表單。
+>新增 **zoomOnAdd=&quot;true&quot;** 屬性會在插入清單的元素時強制呼叫編輯表單。
 
 ### 索引標籤清單 {#tab-list}
 
@@ -170,23 +170,23 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 </container>
 ```
 
-清單控制項必須填入&#x200B;**type=&quot;notebooklist&quot;**&#x200B;屬性，清單的路徑必須引用集合元素。
+清單控制項必須填入 **type=&quot;notebooklist&quot;** 屬性，且清單的路徑必須參考集合元素。
 
-索引標籤的標題包含透過&#x200B;**xpath-label**&#x200B;屬性輸入的資料值。
+索引標籤的標題包含透過 **xpath-label** 屬性。
 
-編輯控制項必須在&#x200B;**`<container>`**&#x200B;元素下聲明，該元素是清單控制項的子項。
+編輯控制項必須在 **`<container>`** 是清單控制項子項的元素。
 
 使用工具欄按鈕添加或刪除清單元素。
 
 >[!NOTE]
 >
->為資料架構中的收集元素填入&#x200B;**ordered=&quot;true&quot;**&#x200B;屬性時，會自動新增左右排序箭頭。
+>當 **ordered=&quot;true&quot;** 屬性會填入資料結構中集合元素的。
 
 ## 容器 {#containers}
 
-容器可讓您將一組控制項分組。 它們透過&#x200B;**`<container>`**&#x200B;元素存在。 它們已用於格式化數列中的控制項以及用於控制標籤清單。
+容器可讓您將一組控制項分組。 它們透過 **`<container>`** 元素。 它們已用於格式化數列中的控制項以及用於控制標籤清單。
 
-有關容器以及如何在輸入表單中使用容器的詳細資訊，請參閱[此區段](../../configuration/using/form-structure.md#containers)。
+有關容器以及如何在輸入表單中使用容器的詳細資訊，請參閱 [本節](../../configuration/using/form-structure.md#containers).
 
 ## 編輯表單 {#editing-forms}
 
@@ -194,6 +194,6 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 
 ![](assets/d_ncs_content_form12.png)
 
-**[!UICONTROL Preview]**&#x200B;標籤可讓您檢視輸入表單：
+此 **[!UICONTROL Preview]** 索引標籤可讓您檢視輸入表單：
 
 ![](assets/d_ncs_content_form13.png)

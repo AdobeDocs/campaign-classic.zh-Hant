@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-下節詳細說明從v6.02遷移時需要的其他配置。您還應配置[常規配置](../../migration/using/general-configurations.md)部分中詳述的設定。
+下節詳細說明從v6.02遷移時需要的其他配置。您也應配置 [一般配置](../../migration/using/general-configurations.md) 區段。
 
 ## 網站應用程式 {#web-applications}
 
@@ -37,13 +37,13 @@ ht-degree: 3%
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-如果您修改了這些Web應用程式，並希望在v7中繼續使用它們，則必須在不同的安全區域中激活&#x200B;**allowSQLInjection**&#x200B;選項，然後重新啟動升級後。 有關詳細資訊，請參閱[SQLData](../../migration/using/general-configurations.md#sqldata)部分。
+如果您已修改這些Web應用程式，並且想要在v7中繼續使用這些應用程式，則必須激活 **allowSQLInjents** 選項，然後重新啟動升級後版本。 請參閱 [SQLData](../../migration/using/general-configurations.md#sqldata) 一節以取得詳細資訊。
 
 ## 用戶友好性：首頁和導覽 {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->如果要繼續使用v6.02 overview-type Web應用程式，必須在升級後之前，在不同的安全區域中激活&#x200B;**allowSQLInjept**&#x200B;選項。 請參閱[Web應用程式](#web-applications)。
+>如果您想要繼續使用v6.02概觀類型的Web應用程式，必須啟動 **allowSQLInjents** 選項（在升級後之前）。 請參閱 [網路應用程式](#web-applications).
 
 從6.02版移轉後，Adobe Campaign v6.02首頁不再顯示，但仍可存取，且與Adobe Campaign v7相容。
 
@@ -51,9 +51,9 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 要執行此操作，請導入相容性包：
 
-按一下&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;並選擇&#x200B;**`\nl\datakit\nms\[Your language]\package\optional`**&#x200B;中的&#x200B;**campaignMigration.xml**&#x200B;套件。
+按一下 **[!UICONTROL Tools > Advanced > Import package]** 並選擇 **campaignMigration.xml** 封裝 **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-若要允許存取v6.02 Web應用程式類型介面，**sessionTokenOnly**&#x200B;伺服器配置選項必須在&#x200B;**serverConf.xml**&#x200B;檔案中啟動：
+要允許訪問v6.02 Web應用程式類型介面，請 **sessionTokenOnly** 伺服器配置選項必須在 **serverConf.xml** 檔案：
 
 ```
 sessionTokenOnly="true"
@@ -65,7 +65,7 @@ sessionTokenOnly="true"
 
 ![](assets/dashboards.png)
 
-此首頁上的所有連結都連結到v7螢幕，但清單（**[!UICONTROL operation list]**、**[!UICONTROL delivery tracking in operations]**&#x200B;等）除外 連結至v6.02概述（web應用程式）。
+此首頁上的所有連結都會連結至v7畫面，但清單除外(**[!UICONTROL operation list]**, **[!UICONTROL delivery tracking in operations]**&#x200B;等) 連結至v6.02概述（Web應用程式）。
 
 ![](assets/dashboards2.png)
 
@@ -79,4 +79,4 @@ sessionTokenOnly="true"
 
 在Message Center控制實例遷移後，必須重新發佈交易式消息模板，以便它們正常工作。
 
-在v7中，執行例項上的交易式訊息範本的名稱已變更。 它們當前由與其建立所在的控制實例對應的運算子名稱前置詞，例如&#x200B;**control1_template1_rt**（其中&#x200B;**control1**&#x200B;是運算子的名稱）。 如果您有大量範本，建議您在控制執行個體上刪除舊範本。
+在v7中，執行例項上的交易式訊息範本的名稱已變更。 它們目前會加上前置詞運算子名稱，此名稱對應至建立它們的控制例項，例如 **control1_template1_rt** (其中 **control1** 是運算子的名稱)。 如果您有大量範本，建議您在控制執行個體上刪除舊範本。

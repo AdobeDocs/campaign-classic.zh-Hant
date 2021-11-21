@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-互動中的鈎點可讓您修改&#x200B;**標準引擎行為**。
+互動中的鈎點可讓您修改 **標準引擎行為**.
 
-**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;鈎點會在Adobe Campaign的選件空間中設定：
+此 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 在Adobe Campaign中，您可在選件空間中設定鈎點：
 
 ![](assets/interaction_hooks_1.png)
 
-**[!UICONTROL Dynamic offer]**&#x200B;鈎點是以Adobe Campaign中的選件加權來設定：
+此 **[!UICONTROL Dynamic offer]** hook在Adobe Campaign中已設定選件權重：
 
 ![](assets/interaction_hooks_2.png)
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->**xmlInteraction**&#x200B;參數同時包含呼叫資料和由現成查詢載入的聯絡人的設定檔。
+>此 **xmlInteraction** 參數包含呼叫資料和現成可用查詢載入之聯絡人的設定檔。
 
 **範例:**
 
@@ -119,7 +119,7 @@ return aReturnedProps;
 
 此連結可讓您呼叫外部引擎，以選取連結至選件的產品清單。 這是在優惠方案中針對適用性規則和類型規則應用程式進行設定的。
 
-預先，整合商應擴展命題&#x200B;**DispostitionRcp**&#x200B;架構，並提供有關產品的其他資訊。 若要指定此資料的儲存位置，空間的&#x200B;**[!UICONTROL Storage]**&#x200B;標籤中會顯示&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;連結
+預先，整合商應擴展建議 **主張Rcp** 搭配產品的其他資訊的結構。 若要指定此資料的儲存位置，請 **[!UICONTROL Proposition being processed]** 連結可在 **[!UICONTROL Storage]** 空格的標籤
 
 ![](assets/interaction_hooks_3.png)
 

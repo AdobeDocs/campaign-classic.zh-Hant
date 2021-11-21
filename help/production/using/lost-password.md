@@ -21,7 +21,7 @@ ht-degree: 7%
 有兩種可能的情況：
 
 * [Adobe Campaign運算子遺失密碼](#password-lost-by-campaign-operator)
-* [內部密碼遺失](#internal-password-lost) （僅限內部部署客戶）
+* [內部密碼丟失](#internal-password-lost) （僅限內部部署客戶）
 
 ## Campaign運算子遺失密碼 {#password-lost-by-campaign-operator}
 
@@ -30,7 +30,7 @@ ht-degree: 7%
 
 1. 通過具有管理員權限的運算子連接。
 1. 以滑鼠右鍵按一下運算子。
-1. 選擇&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**。
+1. 選擇 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
@@ -45,16 +45,16 @@ ht-degree: 7%
 如果內部密碼丟失，則必須重新初始化它。
 要執行此操作，請應用以下過程：
 
-1. 編輯&#x200B;**/usr/local/neolane/nl6/conf/serverConf.xml**&#x200B;檔案。
+1. 編輯 **/usr/local/neolane/nl6/conf/serverConf.xml** 檔案。
 
-1. 轉至&#x200B;**internalPassword**&#x200B;行。
+1. 前往 **internalPassword** 行。
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 刪除以引號括住的字串，在此情況下：**myPassword**
+1. 刪除以引號括住的字串，在此情況下： **myPassword**
 
    因此，您會取得下列行：
 
@@ -77,4 +77,4 @@ ht-degree: 7%
    Confirmation 
    ```
 
-1. 您現在可以使用新密碼在&#x200B;**內部**&#x200B;模式中連接。
+1. 您現在可以使用新密碼來連線 **內部** 模式。

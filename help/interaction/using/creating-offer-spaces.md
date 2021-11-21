@@ -17,19 +17,19 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-只能由&#x200B;**技術管理員**&#x200B;執行建立優惠方案空間的操作，該管理員具有對優惠方案空間子資料夾的訪問權限。 優惠方案空間只能在設計環境中建立，並會在優惠方案核准期間自動複製至即時環境。
+只能由 **技術管理員** 存取「選件空間」子資料夾。 優惠方案空間只能在設計環境中建立，並會在優惠方案核准期間自動複製至即時環境。
 
-目錄選件的內容是在選件空間中設定。 依預設，內容可包含下列欄位：**[!UICONTROL Title]**、**[!UICONTROL Destination URL]**、**[!UICONTROL Image URL]**、**[!UICONTROL HTML content]**&#x200B;和&#x200B;**[!UICONTROL Text content]**。 欄位序列是在選件空間中設定。
+目錄選件的內容是在選件空間中設定。 依預設，內容可包含下列欄位： **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** 和 **[!UICONTROL Text content]**. 欄位序列是在選件空間中設定。
 
-進階參數可讓您指定聯絡人識別金鑰（例如，該金鑰可由各種元素、名稱和電子郵件欄位組成）。 如需詳細資訊，請參閱[顯示已識別的選件](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer)區段。
+進階參數可讓您指定聯絡人識別金鑰（例如，該金鑰可由各種元素、名稱和電子郵件欄位組成）。 有關詳細資訊，請參閱 [呈現已識別的優惠方案](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) 區段。
 
-HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位順序必須與內容中設定的序列相同。
+HTML或XML呈現是透過呈現函式建立。 呈現函式中定義的欄位順序必須與內容中設定的序列相同。
 
 ![](assets/offer_space_create_009.png)
 
 若要建立新優惠方案空間，請套用下列程式：
 
-1. 前往選件空格清單，然後按一下&#x200B;**[!UICONTROL New]**。
+1. 前往優惠方案空間清單，然後按一下 **[!UICONTROL New]**.
 
    ![](assets/offer_space_create_001.png)
 
@@ -37,20 +37,20 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 
    ![](assets/offer_space_create_002.png)
 
-1. 如果以下其中一種情況適用於您，請核取&#x200B;**[!UICONTROL Enable unitary mode]**&#x200B;方塊：
+1. 檢查 **[!UICONTROL Enable unitary mode]** 框（如果以下情形適用）:
 
    * 您正在使用與訊息中心的互動
    * 您使用互動的單一模式（入站互動）
 
-1. 前往&#x200B;**[!UICONTROL Content field]**&#x200B;視窗，然後按一下&#x200B;**[!UICONTROL Add]**。
+1. 前往 **[!UICONTROL Content field]** 按一下 **[!UICONTROL Add]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. 轉至&#x200B;**[!UICONTROL Content]**&#x200B;節點，然後按以下順序選擇欄位：**[!UICONTROL Title]**，然後是&#x200B;**[!UICONTROL Image URL]**，然後是&#x200B;**[!UICONTROL HTML content]**，然後是&#x200B;**[!UICONTROL Destination URL]**。
+1. 前往 **[!UICONTROL Content]** 節點，然後依下列順序選取欄位： **[!UICONTROL Title]**，然後 **[!UICONTROL Image URL]**，然後 **[!UICONTROL HTML content]**，然後 **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
-1. 勾選&#x200B;**[!UICONTROL Required]**&#x200B;方塊，將每個欄位設為必填欄位。
+1. 檢查 **[!UICONTROL Required]** 框，使每個欄位成為必填欄位。
 
    >[!NOTE]
    >
@@ -58,18 +58,18 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 
    ![](assets/offer_space_create_005.png)
 
-1. 按一下&#x200B;**[!UICONTROL Edit functions]**&#x200B;以建立呈現函式。
+1. 按一下 **[!UICONTROL Edit functions]** 來建立呈現函式。
 
    這些函式可用來在優惠方案空間中產生優惠方案表示法。 有幾種可能的格式：傳出互動的HTML或文字，傳入互動的XML。
 
    ![](assets/offer_space_create_006.png)
 
-1. 前往&#x200B;**[!UICONTROL HTML rendering]**&#x200B;標籤，然後選取&#x200B;**[!UICONTROL Overload the HTML rendering function]**。
+1. 前往 **[!UICONTROL HTML rendering]** 索引標籤和選取 **[!UICONTROL Overload the HTML rendering function]**.
 1. 插入您的呈現函式。
 
    ![](assets/offer_space_create_007.png)
 
-如有必要，您可以為入站互動過載XML呈現函式。 您也可以為對外互動過載HTML和文字轉譯功能。 有關詳細資訊，請參閱[關於入站通道](../../interaction/using/about-inbound-channels.md)。
+如有必要，您可以為入站互動過載XML呈現函式。 您也可以針對對外互動來過載HTML和文字轉譯功能。 有關詳細資訊，請參閱 [關於傳入頻道](../../interaction/using/about-inbound-channels.md).
 
 ## 優惠方案主張狀態 {#offer-proposition-statuses}
 
@@ -98,14 +98,14 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 
 ### 在建立主張時配置狀態 {#configuring-the-status-when-the-proposition-is-created}
 
-當互動引擎建立優惠方案主張時，其狀態會變更，無論是入站或出站互動。 這兩個值之間的選擇取決於&#x200B;**[!UICONTROL Design]**&#x200B;環境中選件空格的設定方式
+當互動引擎建立優惠方案主張時，其狀態會變更，無論是入站或出站互動。 這兩個值之間的選擇取決於 **[!UICONTROL Design]** 環境
 
 您可以針對每個空間，根據您要顯示在優惠方案報表中的資訊，設定建立主張時要套用的狀態。
 
 若要這麼做，請使用下列程式：
 
-1. 前往所需空間的&#x200B;**[!UICONTROL Storage]**&#x200B;標籤。
-1. 選擇建立主張時要應用到該主張的狀態。
+1. 前往 **[!UICONTROL Storage]** 頁簽。
+1. 選擇建立主張時要應用到的狀態。
 
    ![](assets/offer_update_status_001.png)
 
@@ -115,36 +115,36 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 
 若要這麼做，請使用下列程式：
 
-1. 前往所需空間的&#x200B;**[!UICONTROL Storage]**&#x200B;標籤。
+1. 前往 **[!UICONTROL Storage]** 頁簽。
 1. 選擇在接受主張時要應用於該主張的狀態。
 
    ![](assets/offer_update_status_002.png)
 
 **入站互動**
 
-**[!UICONTROL Storage]**&#x200B;索引標籤可讓您定義&#x200B;**propsed**&#x200B;的狀態，以及&#x200B;**accepted**&#x200B;僅提供命題。 若是傳入互動，應直接在呼叫優惠方案引擎的URL中指定優惠方案狀態，而非透過介面。 如此一來，您就能指定在其他情況下（例如，如果優惠方案主張遭拒）要套用的狀態。
+此 **[!UICONTROL Storage]** 索引標籤可讓您定義 **提議** 和 **接受** 僅提供建議。 若是傳入互動，應直接在呼叫優惠方案引擎的URL中指定優惠方案狀態，而非透過介面。 如此一來，您就能指定在其他情況下（例如，如果優惠方案主張遭拒）要套用的狀態。
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-例如，符合&#x200B;**Neobank**&#x200B;網站上顯示的&#x200B;**家庭保險**&#x200B;優惠的主張(識別碼&#x200B;**40004**)包含下列URL:
+例如，主張（識別碼） **40004**) **家庭保險** 顯示在 **尼奧班克** 網站包含下列URL:
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-當訪客點按選件並因此按下URL時，**[!UICONTROL Accepted]**&#x200B;狀態（值&#x200B;**3**）就會套用至主張，並將訪客重新導向至&#x200B;**Neobank**&#x200B;網站的新頁面，以取消保險合約。
+當訪客點按選件，因此URL時， **[!UICONTROL Accepted]** 狀態（值） **3**)會套用至主張，而訪客會重新導向至的新頁面 **尼奧班克** 地點來簽保險合同。
 
 >[!NOTE]
 >
->如果您想在URL中指定其他狀態（例如，如果優惠方案主張遭拒），請使用與所需狀態對應的值。 範例：**[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot;等。
+>如果您想在URL中指定其他狀態（例如，如果優惠方案主張遭拒），請使用與所需狀態對應的值。 範例： **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot;等。
 >
->在&#x200B;**[!UICONTROL Offer propositions (nms)]**&#x200B;資料架構中可擷取狀態及其值。 如需詳細資訊，請參閱[此頁面](../../configuration/using/data-schemas.md)。
+>狀態及其值可在 **[!UICONTROL Offer propositions (nms)]** 資料結構。 如需詳細資訊，請參閱[此頁面](../../configuration/using/data-schemas.md)。
 
 **傳出互動**
 
-如果是對外互動，當傳送包含連結時，您可以自動將&#x200B;**[!UICONTROL Interested]**&#x200B;狀態套用至優惠方案主張。 只需將&#x200B;**_urlType=&quot;11&quot;**&#x200B;值新增至連結即可：
+如果是對外互動，您可以自動套用 **[!UICONTROL Interested]** 當傳送包含連結時，狀態為優惠方案主張。 只需新增 **_urlType=&quot;11&quot;** 連結的值：
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -160,4 +160,4 @@ HTML或XML呈現是透過呈現函式來建立。 呈現函式中定義的欄位
 
 ![](assets/offer_space_overview_001.png)
 
-當內容被限制為空格時，預覽可忽略這些內容。 當互動架構已擴充為使用入站通道新增空間中參考的欄位時，即為此情況（如需詳細資訊，請參閱[擴充功能範例](../../interaction/using/extension-example.md)）。
+當內容被限制為空格時，預覽可忽略這些內容。 這是互動架構已擴充為使用入站通道新增空間中參考的欄位的情況(如需詳細資訊，請參閱 [擴充功能範例](../../interaction/using/extension-example.md))。

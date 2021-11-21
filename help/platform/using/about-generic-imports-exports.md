@@ -21,11 +21,11 @@ Adobe Campaign Classic提供一般匯入和匯出。 例如，它們允許您提
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
-一般匯入和匯出會從Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**&#x200B;節點進行管理。
+一般匯入和匯出會從 **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** Adobe Campaign樹的節點。
 
 執行一般匯入和匯出操作的步驟如下：
 
-1. [建立匯入或匯出範本](../../platform/using/creating-import-export-templates.md) （選用）。
-1. [建立匯入或匯出工作](../../platform/using/creating-import-export-jobs.md)。
-1. 配置並執行[import](../../platform/using/executing-import-jobs.md)或[export](../../platform/using/executing-export-jobs.md)作業。
-1. [](../../platform/using/monitoring-jobs-execution.md) 監控作業的執行。
+1. [建立匯入或匯出範本](../../platform/using/creating-import-export-templates.md) （可選）。
+1. [建立匯入或匯出作業](../../platform/using/creating-import-export-jobs.md).
+1. 設定並執行 [匯入](../../platform/using/executing-import-jobs.md) 或 [匯出](../../platform/using/executing-export-jobs.md) 工作。
+1. [監視](../../platform/using/monitoring-jobs-execution.md) 作業的執行。

@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![](../../assets/v7-only.svg)
 
-可從Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]**&#x200B;資料夾存取輸入表單建立和設定畫面：
+可從以下位置訪問輸入表單建立和配置螢幕： **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** Adobe Campaign用戶端主控台的資料夾：
 
 ![](assets/d_ncs_integration_form_arbo.png)
 

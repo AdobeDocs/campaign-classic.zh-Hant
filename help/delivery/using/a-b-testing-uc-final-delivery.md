@@ -19,13 +19,13 @@ ht-degree: 9%
 
 建立指令碼以選取A/B測試獲勝者後，您可以定義最終傳送的參數。
 
-1. 將&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動連接至其餘的&#x200B;**[!UICONTROL Delivery]**&#x200B;活動。
-1. 開啟&#x200B;**[!UICONTROL Delivery]**&#x200B;活動。
-1. 取消選中&#x200B;**[!UICONTROL Generate an outbound transition]**&#x200B;選項以使用此活動完成工作流。
+1. 連接 **[!UICONTROL JavaScript code]** 活動至其餘 **[!UICONTROL Delivery]** 活動。
+1. 開啟 **[!UICONTROL Delivery]** 活動。
+1. 取消核取 **[!UICONTROL Generate an outbound transition]** 選項，以使用此活動完成工作流程。
 1. 將其他選項保留為其預設值。
 
    ![](assets/ab_test_final_delivery.png)
 
-準備在轉變中指定的傳送（透過&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活動定義）後，您就能核准傳送並開始傳送，如下一步所述。
+準備在轉變中指定的傳送(透過 **[!UICONTROL Javascript Code]** 活動)，則您便能核准並開始傳送，如下一個步驟所述。
 
 您現在可以啟動工作流程。 [深入瞭解](a-b-testing-uc-start-workflow.md)。

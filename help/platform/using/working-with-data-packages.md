@@ -23,13 +23,13 @@ ht-degree: 2%
 
 資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
 
-**資料包**&#x200B;的原則是導出資料配置並將其整合到另一個Adobe Campaign系統。 了解如何在此[節](#data-package-best-practices)中維護一組一致的資料包。
+原則 **資料包** 是匯出資料設定，並將其整合至其他Adobe Campaign系統。 了解如何在此中維護一組一致的資料包 [節](#data-package-best-practices).
 
 ### 套件類型 {#types-of-packages}
 
 可匯出套件有三種類型：使用者套件、平台套件和管理套件。
 
-* **使用者套件**:它可讓您選取要匯出的實體清單。此類包管理依賴項並驗證錯誤。
+* **使用者套件**:它可讓您選取要匯出的實體清單。 此類包管理依賴項並驗證錯誤。
 * **平台套件**:包括所有新增的技術資源（非標準）:結構、JavaScript程式碼等
 
    ![](assets/ncs_datapackage_package_platform.png)
@@ -40,11 +40,11 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->**platform**&#x200B;和&#x200B;**admin**&#x200B;類型包含要導出的預定義實體清單。 每個實體都連結到篩選條件，這些條件可讓您移除已建立套件的現成資源。
+>此 **平台** 和 **管理員** 類型包含要導出的預定義實體清單。 每個實體都連結到篩選條件，這些條件可讓您移除已建立套件的現成資源。
 
 ## 資料結構 {#data-structure}
 
-資料包的描述是符合&#x200B;**xrk:navtree**&#x200B;資料架構的文法的結構化XML文檔。
+資料包的描述是符合 **xrk:navtree** 資料結構。
 
 資料包示例：
 
@@ -64,11 +64,11 @@ ht-degree: 2%
 </package>
 ```
 
-XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開頭和結尾。 隨後的任何&#x200B;**`<entities>`**&#x200B;元素按文檔類型分發資料。
+XML文檔必須以 **`<package>`** 元素。 任何 **`<entities>`** 隨後按文檔類型分發資料的元素。
 
-**`<entities>`**&#x200B;元素包含在&#x200B;**schema**&#x200B;屬性中輸入的資料架構格式的包資料。
+安 **`<entities>`** 元素包含封裝的資料，格式為在 **綱要** 屬性。
 
-套件中的資料不得包含不相容於基之間的內部密鑰，例如自動生成的密鑰（**autopk**&#x200B;選項）。
+套件中的資料不得包含不相容於基底的內部金鑰，例如自動產生的金鑰(**奧托普** 選項)。
 
 在我們的範例中，「資料夾」和「公司」連結上的連接已由目的地表格上所謂的「高階」索引鍵取代：
 
@@ -79,7 +79,7 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開頭和結尾。 隨後
 </recipient>
 ```
 
-值為「none」的&#x200B;**`operation`**&#x200B;屬性定義調解連結。
+此 **`operation`** 屬性的值為「none」會定義調解連結。
 
 可從任何文字編輯器手動建構資料套件。 只需確保XML文檔的結構符合「xtk:navtree」資料架構。 Adobe Campaign主控台具有資料套件匯出和匯入模組。
 
@@ -89,15 +89,15 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開頭和結尾。 隨後
 
 可以以三種不同的方式匯出套件：
 
-* **[!UICONTROL Package Export Wizard]**&#x200B;允許您導出單個包中的一組對象。 有關詳細資訊，請參閱[導出包](#exporting-a-set-of-objects-in-a-package)中的一組對象
-* 通過按一下右鍵並選擇&#x200B;**[!UICONTROL Actions > Export in a package]**，可以直接將&#x200B;**單個對象**&#x200B;導出到包中。
-* **包** 定義可讓您建立包結構，在其中添加將在以後在包中導出的對象。有關詳細資訊，請參閱[管理包定義](#managing-package-definitions)
+* 此 **[!UICONTROL Package Export Wizard]** 可讓您匯出單一套件中的一組物件。 如需詳細資訊，請參閱 [導出包中的一組對象](#exporting-a-set-of-objects-in-a-package)
+* A **單一物件** 可直接在套件中匯出，方法是按一下滑鼠右鍵並選取 **[!UICONTROL Actions > Export in a package]**.
+* **包定義** 可讓您建立套件結構，在其中新增要稍後在套件中匯出的物件。 有關詳細資訊，請參閱 [管理套件定義](#managing-package-definitions)
 
 匯出套件後，您就能將其及所有新增的實體匯入另一個Campaign執行個體。
 
 ### 導出包中的一組對象 {#exporting-a-set-of-objects-in-a-package}
 
-可透過Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;功能表存取套件匯出精靈。
+可透過 **[!UICONTROL Tools > Advanced > Export package...]** Adobe Campaign用戶端主控台功能表。
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -109,15 +109,15 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開頭和結尾。 隨後
 
    >[!CAUTION]
    >
-   >如果導出&#x200B;**[!UICONTROL Offer category]**、**[!UICONTROL Offer environment]**、**[!UICONTROL Program]**&#x200B;或&#x200B;**[!UICONTROL Plan]**&#x200B;類型資料夾，則不要選擇&#x200B;**xtk:folder**，因為您可能會丟失某些資料。 選擇與資料夾對應的實體：**nms:offerCategory**&#x200B;適用於選件類別，**nms:offerEnv**&#x200B;適用於選件環境，**nms:program**&#x200B;適用於程式，**nms:plan**&#x200B;適用於計畫。
+   >如果您匯出 **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** 或 **[!UICONTROL Plan]** 輸入資料夾，切勿選取 **xtk:folder** 因為您可能會丟失一些資料。 選擇與資料夾對應的實體： **nms:offerCategory** 針對選件類別， **nms:offerEnv** 針對選件環境， **nms:program** 針對方案，以及 **nms:plan** 計畫。
 
-   清單管理可讓您新增或刪除要從設定中匯出的實體。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選取新實體。
+   清單管理可讓您新增或刪除要從設定中匯出的實體。 按一下 **[!UICONTROL Add]** 來選擇新實體。
 
-   **[!UICONTROL Detail]**&#x200B;按鈕可編輯所選配置。
+   此 **[!UICONTROL Detail]** 按鈕可編輯所選配置。
 
    >[!NOTE]
    >
-   >依賴關係機制控制實體導出序列。 有關詳細資訊，請參閱[管理相依性](#managing-dependencies)。
+   >依賴關係機制控制實體導出序列。 有關詳細資訊，請參閱 [管理相依性](#managing-dependencies).
 
 1. 實體配置螢幕定義要提取的文檔類型的篩選器查詢。
 
@@ -127,9 +127,9 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開頭和結尾。 隨後
 
    >[!NOTE]
    >
-   >查詢編輯器顯示在[此部分](../../platform/using/about-queries-in-campaign.md)中。
+   >查詢編輯器顯示在 [本節](../../platform/using/about-queries-in-campaign.md).
 
-1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;並選取排序欄，以在擷取期間排序資料：
+1. 按一下 **[!UICONTROL Next]** 和選取排序欄，以在擷取期間排序資料：
 
    ![](assets/ncs_datapackage_export5.png)
 
@@ -137,7 +137,7 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開頭和結尾。 隨後
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. 套件匯出精靈的最後一頁可讓您啟動匯出。 資料將儲存在&#x200B;**[!UICONTROL File]**&#x200B;欄位中指示的檔案中。
+1. 套件匯出精靈的最後一頁可讓您啟動匯出。 資料會儲存在 **[!UICONTROL File]** 欄位。
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -147,12 +147,12 @@ XML文檔必須以&#x200B;**`<package>`**&#x200B;元素開頭和結尾。 隨後
 
 此機制由兩個規則定義：
 
-* 連結到具有&#x200B;**own**&#x200B;或&#x200B;**owncopy**&#x200B;類型完整性的連結的對象與導出的對象在相同的包中導出。
-* 連結到具有&#x200B;**netural**&#x200B;或&#x200B;**define**&#x200B;類型完整性（已定義連結）的連結的對象必須單獨導出。
+* 連結到與 **自有** 或 **下副本** 類型完整性將導出到與導出對象相同的包中。
+* 連結到連結的對象 **中性** 或 **定義** 類型完整性（定義的連結）必須單獨導出。
 
 >[!NOTE]
 >
->連結到架構元素的完整性類型在[此部分](../../configuration/using/database-mapping.md#links--relation-between-tables)中定義。
+>連結到架構元素的完整性類型在 [本節](../../configuration/using/database-mapping.md#links--relation-between-tables).
 
 #### 匯出促銷活動 {#exporting-a-campaign}
 
@@ -205,22 +205,22 @@ label="" name="" namespace="" vendor="">
 </package>   
 ```
 
-與類型包的關聯在具有&#x200B;**@pkgAdmin和@pkgPlatform**&#x200B;屬性的架構中定義。 這兩個屬性都接收定義與包關聯的條件的XTK表達式。
+與類型套件的隸屬關係在具有 **@pkgAdmin和@pkgPlatform** 屬性。 這兩個屬性都接收定義與包關聯的條件的XTK表達式。
 
 ```
 <element name="offerEnv" img="nms:offerEnv.png" 
 template="xtk:folder" pkgAdmin="@id != 0">
 ```
 
-最後， **@pkgStatus**&#x200B;屬性可讓您定義這些元素或屬性的匯出規則。 根據屬性的值，元素或屬性將在匯出的套件中找到。 此屬性的三個可能值為：
+最後， **@pkgStatus** 屬性可讓您定義這些元素或屬性的匯出規則。 根據屬性的值，元素或屬性將在匯出的套件中找到。 此屬性的三個可能值為：
 
 * **從不**:不會匯出欄位/連結
-* **一律**:向該領域出口
+* **always**:向該領域出口
 * **preCreate**:授權建立連結的實體
 
 >[!NOTE]
 >
->**preCreate**&#x200B;值僅允許用於連結類型事件。 它授權您建立或指向尚未在匯出套件中載入的實體。
+>此 **preCreate** 值僅允許用於連結類型事件。 它授權您建立或指向尚未在匯出套件中載入的實體。
 
 ## 管理套件定義 {#managing-package-definitions}
 
@@ -235,9 +235,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 建立套件定義 {#creating-a-package-definition}
 
-可從&#x200B;**[!UICONTROL Administration > Configuration > Package management > Package definitions]**&#x200B;菜單訪問包定義。
+可透過 **[!UICONTROL Administration > Configuration > Package management > Package definitions]** 功能表。
 
-要建立包定義，請按一下&#x200B;**[!UICONTROL New]**&#x200B;按鈕，然後填寫包定義一般資訊。
+若要建立套件定義，請按一下 **[!UICONTROL New]** 按鈕，然後填寫包定義常規資訊。
 
 ![](assets/packagedefinition_create.png)
 
@@ -251,32 +251,32 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 將實體添加到包定義 {#adding-entities-to-a-package-definition}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以選擇要與包一起導出的實體。 在[此區段](#exporting-a-set-of-objects-in-a-package)中會顯示選取實體的最佳實務。
+在 **[!UICONTROL Content]** ，按一下 **[!UICONTROL Add]** 按鈕，以選擇要與包一起導出的實體。 選取實體時的最佳實務會顯示於 [本節](#exporting-a-set-of-objects-in-a-package) 區段。
 
 ![](assets/packagedefinition_addentities.png)
 
 實體可直接從其在例項中的位置新增至套件定義。 要執行此操作，請遵循下列步驟：
 
-1. 以滑鼠右鍵按一下所需的實體，然後選取&#x200B;**[!UICONTROL Actions > Export in a package]**。
+1. 以滑鼠右鍵按一下所需的實體，然後選取 **[!UICONTROL Actions > Export in a package]**.
 
    ![](assets/packagedefinition_singleentity.png)
 
-1. 選擇&#x200B;**[!UICONTROL Add to a package definition]**，然後選擇要添加實體的包定義。
+1. 選擇 **[!UICONTROL Add to a package definition]**，然後選取您要新增實體的套件定義。
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. 實體會新增至套件定義，並會與套件一併匯出（請參閱[此區段](#exporting-packages-from-a-package-definition)）。
+1. 實體會新增至套件定義，並會與套件一併匯出(請參閱 [本節](#exporting-packages-from-a-package-definition))。
 
    ![](assets/packagedefinition_entityadded.png)
 
 ### 配置包定義生成 {#configuring-package-definitions-generation}
 
-可以從包定義&#x200B;**[!UICONTROL Content]**&#x200B;頁簽配置包生成。 要執行此操作，請按一下&#x200B;**[!UICONTROL Generation parameters]**&#x200B;連結。
+可以從包定義配置包生成 **[!UICONTROL Content]** 標籤。 若要這麼做，請按一下 **[!UICONTROL Generation parameters]** 連結。
 
 ![](assets/packagedefinition_generationparameters.png)
 
 * **[!UICONTROL Include the definition]**:包括當前在包定義中使用的定義。
-* **[!UICONTROL Include an installation script]**:可讓您新增要在套件匯入時執行的javascript指令碼。選取後，在套件定義畫面中會新增&#x200B;**[!UICONTROL Script]**&#x200B;標籤。
+* **[!UICONTROL Include an installation script]**:可讓您新增要在套件匯入時執行的javascript指令碼。 選取時， **[!UICONTROL Script]** 標籤會新增至套件定義畫面中。
 * **[!UICONTROL Include default values]**:將所有實體屬性的值添加到包中。
 
    預設不會選取此選項，以避免長時間匯出。 這表示具有預設值（「空白字串」、「0」和「false」，若未在架構中另行定義）的實體屬性不會新增至套件，因此不會匯出。
@@ -287,35 +287,35 @@ template="xtk:folder" pkgAdmin="@id != 0">
    >
    >如果導入包的實例包含與包的實體相同的實體（例如，具有相同的外部ID），則不會更新其屬性。 如果來自舊例項的屬性具有預設值，則會發生此情況，因為這些值未包含在套件中。
    >
-   >在這種情況下，選取&#x200B;**[!UICONTROL Include default values]**&#x200B;選項會防止版本合併，因為來自前例項的所有屬性都會與套件一起匯出。
+   >在此情況下，請選取 **[!UICONTROL Include default values]** 選項會防止版本合併，因為舊例項中的所有屬性都會與套件一起匯出。
 
 ### 從包定義導出包 {#exporting-packages-from-a-package-definition}
 
 要從包定義導出包，請執行以下步驟：
 
-1. 選擇要導出的包定義，然後按一下&#x200B;**[!UICONTROL Actions]**&#x200B;按鈕並選擇&#x200B;**[!UICONTROL Export the package]**。
+1. 選取要匯出的套件定義，然後按一下 **[!UICONTROL Actions]** 按鈕並選取 **[!UICONTROL Export the package]**.
 1. 預設情況下，將選擇與導出包對應的XML檔案。 會根據套件定義命名空間和名稱來命名。
-1. 定義包名稱和位置後，按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕以啟動導出。
+1. 定義套件名稱和位置後，按一下 **[!UICONTROL Start]** 按鈕以啟動匯出。
 
    ![](assets/packagedefinition_packageexport.png)
 
 ## 匯入套件 {#importing-packages}
 
-可透過Adobe Campaign用戶端主控台的主功能表&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取套件匯入精靈。
+可透過主功能表存取套件匯入精靈 **[!UICONTROL Tools > Advanced > Import package]** Adobe Campaign用戶端主控台。
 
-您可以根據您的授權條款，從先前執行的匯出匯入套件，例如從其他Adobe Campaign例項匯入，或從[內建套件](../../installation/using/installing-campaign-standard-packages.md)匯入。
+您可以從先前執行的匯出匯入套件，例如從其他Adobe Campaign例項或 [內建套件](../../installation/using/installing-campaign-standard-packages.md)，視您的授權條款而定。
 
 ![](assets/ncs_datapackage_import.png)
 
 ### 從檔案安裝套件 {#installing-a-package-from-a-file}
 
-要導入現有資料包，請選擇XML檔案，然後按一下&#x200B;**[!UICONTROL Open]**。
+要導入現有資料包，請選擇XML檔案，然後按一下 **[!UICONTROL Open]**.
 
 ![](assets/ncs_datapackage_import_1.png)
 
 接著，要匯入的套件內容會顯示在編輯器的中間區段中。
 
-按一下&#x200B;**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Start]**&#x200B;啟動匯入。
+按一下 **[!UICONTROL Next]** 和 **[!UICONTROL Start]** 啟動匯入。
 
 ![](assets/ncs_datapackage_import_2.png)
 
@@ -325,7 +325,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 請參閱您的授權合約，以檢查您可以安裝哪些套件。
 
-有關內建包的詳細資訊，請參閱[本頁](../../installation/using/installing-campaign-standard-packages.md)。
+有關內建套件的詳細資訊，請參閱 [本頁](../../installation/using/installing-campaign-standard-packages.md).
 
 ## 資料包最佳實務 {#data-package-best-practices}
 
@@ -343,7 +343,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 >[!NOTE]
 >
->有關設定工作流以自動導出包的詳細資訊，請參閱[此頁](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html)。
+>如需設定工作流程以自動匯出套件的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
 
 ### 建議 {#data-package-recommendations}
 

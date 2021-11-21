@@ -33,27 +33,27 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> 收件者（或任何其他設定檔維度）<br /> </td> 
-   <td> profiles<br /> </td> 
+   <td> 設定檔<br /> </td> 
   </tr> 
   <tr> 
-   <td> list<br /> </td> 
-   <td> audience<br /> </td> 
+   <td> 清單<br /> </td> 
+   <td> 對象<br /> </td> 
   </tr> 
   <tr> 
    <td> 行銷活動工作流程，鎖定工作流程<br /> </td> 
-   <td> workflows<br /> </td> 
+   <td> 工作流程<br /> </td> 
   </tr> 
   <tr> 
-   <td> 操作<br /> </td> 
+   <td> 作業<br /> </td> 
    <td> 行銷活動<br /> </td> 
   </tr> 
   <tr> 
-   <td> Web應用程式<br /> </td> 
-   <td> 登錄頁面<br /> </td> 
+   <td> 網頁應用程式<br /> </td> 
+   <td> 登陸頁面<br /> </td> 
   </tr> 
   <tr> 
-   <td> 自定義表和方案擴展<br /> </td> 
-   <td> 自定義資源和資源擴展<br /> </td> 
+   <td> 自訂表格和綱要擴充功能<br /> </td> 
+   <td> 自訂資源和資源擴充功能<br /> </td> 
   </tr> 
   <tr> 
    <td> 種子成員<br /> </td> 
@@ -74,31 +74,31 @@ ht-degree: 0%
 
    依預設， nms:recipient表格中的20個欄位會與Campaign Standard同步。 請參閱已同步欄位的詳細清單。 您的顧問必須對應並設定您在Campaign Standard中擷取所需的任何其他欄位。
 
-   若要確定您要使用的欄位可用，您可以從&#x200B;**[!UICONTROL Administration > Development > Diagnosis > Data schemas]**&#x200B;檢查設定檔資源定義。
+   若要確定您要使用的欄位可用，您可以檢查設定檔資源定義，來自 **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
    此外，預設情況下，與收件者連結並儲存在與nms:recipients相關的表格中的所有資料不會同步到Campaign Standard。
 
-   若要仍能使用相關資料，您可以在Campaign v7中執行目標定位，並新增其他資料，如[同步對象](../../integrations/using/synchronizing-audiences.md)區段所述，或者您可以洽詢您的顧問，探索自訂的可能性。
+   若要仍能使用相關資料，您可以在Campaign v7中執行目標定位，並新增其他資料，如 [同步受眾](../../integrations/using/synchronizing-audiences.md) 區段，或請洽詢您的顧問，探索自訂的可能性。
 
 * **我在Campaign v7中使用的是預設nms:recipient以外的其他設定檔維度，如何將其與Campaign Standard同步？**
 
-   Campaign Standard使用名為&#x200B;**profiles**&#x200B;的唯一目標定位資源。 「Campaign Standard連線」功能的基本實作提供Campaign v7收件者與Campaign Standard設定檔之間的預設對應。
+   Campaign Standard使用唯一的目標定位資源，命名為 **設定檔**. 「Campaign Standard連線」功能的基本實作提供Campaign v7收件者與Campaign Standard設定檔之間的預設對應。
 
    如果您在Campaign v7中使用其他設定檔維度，或使用數個維度，則所有設定檔都必須與Campaign Standard設定檔對應。 請洽詢您的顧問，以解決此特定需求。
 
-* **我想透過工作流程與Campaign Standard共用設定檔清單，但無法在Campaign Standard中找到我的對象**。
+* **我想透過工作流程與Campaign Standard共用設定檔清單，但無法在Campaign Standard中找到我的對象**.
 
-   您可以在&#x200B;**[!UICONTROL Audiences]**&#x200B;功能表的Campaign Standard中找到對象。 在您的Campaign v7工作流程的&#x200B;**[!UICONTROL List update]**&#x200B;活動中指定標籤。 它們受實施期間定義的資料夾對應所限制。
+   您可以在 **[!UICONTROL Audiences]** 功能表。Campaign Standard 在 **[!UICONTROL List update]** 活動。 它們受實施期間定義的資料夾對應所限制。
 
-   首先要檢查的是工作流程是否已完成，並無錯誤。 如果您注意到&#x200B;**[!UICONTROL List update]**&#x200B;活動出現錯誤，表示與Campaign Standard的同步可能已失敗。 若要查看關於發生錯誤的詳細資訊，請前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**。 此資料夾包含&#x200B;**[!UICONTROL List update]**&#x200B;活動執行所觸發的同步工作流程。
+   首先要檢查的是工作流程是否已完成，並無錯誤。 如果您發現 **[!UICONTROL List update]** 活動，表示與Campaign Standard的同步可能已失敗。 若要查看關於發生錯誤的詳細資訊，請前往 **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. 此資料夾包含由 **[!UICONTROL List update]** 活動執行。
 
-   同時，請確定&#x200B;**[!UICONTROL Share with ACS]**&#x200B;活動中已勾選&#x200B;**[!UICONTROL List update]**&#x200B;選項，且工作流程已正確執行。
+   同時，請確定 **[!UICONTROL Share with ACS]** 選項 **[!UICONTROL List update]** 活動，且工作流程已正確執行。
 
    請注意，清單中包含的收件者設定檔必須在工作流程執行前與Campaign Standard同步。 與Campaign Standard共用後，清單的收件者會與Campaign Standard設定檔調解，這表示他們必須存在於該處。 清單中無法與Campaign Standard中的設定檔調解的收件者會遭忽略。
 
    如果您共用由設定檔組成的清單，而且如果沒有與Campaign Standard同步，則會在Campaign Standard中建立無法使用的空白「查詢」對象。
 
-* **我收到通知，通知我同步工作流處於錯誤狀態。我該做什麼？**
+* **我收到通知，通知我同步工作流處於錯誤狀態。 我該怎麼辦？**
 
    透過測試連線，檢查Campaign Standard和Campaign v7中的外部帳戶設定：
 
@@ -107,8 +107,8 @@ ht-degree: 0%
 
 * **在Campaign v7和Campaign Standard之間對應資料夾時，沒有可用的安全性群組。**
 
-   您需要先從&#x200B;**[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**&#x200B;同步安全組。 此動作會檢查Campaign Standard中可用的安全性群組。 同步後，在配置資料夾映射時可以找到安全組。
+   您需要先從 **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. 此動作會檢查Campaign Standard中可用的安全性群組。 同步後，在配置資料夾映射時可以找到安全組。
 
-* **我無法編輯Campaign Standard中的設定檔、對象或登錄頁面。這是什麼意思？**
+* **我無法編輯Campaign Standard中的設定檔、對象或登錄頁面。 什麼意思？**
 
    從Campaign v7同步的資源處於Campaign Standard的唯讀模式，以確保資料一致性。 如果您需要編輯其中一個元素，可以在Campaign v7中執行，然後在Campaign Standard中複製變更。

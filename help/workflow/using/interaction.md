@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ![](../../assets/common.svg)
 
-依預設，下列詳細的工作流程會與&#x200B;**選件引擎（互動）**&#x200B;附加元件一起安裝。
+以下詳細說明的工作流程會與 **優惠方案引擎（互動）** 預設為附加元件。
 
 如需詳細資訊，請視您的Campaign版本而定，參閱下列區段：
 
@@ -36,12 +36,12 @@ ht-degree: 6%
   <tr> 
    <td> <span class="uicontrol">完整聚合計算（propositircp多維資料集）</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositrcp_full</span> <br /> </td> 
-   <td> 此工作流程會更新<strong>選件主張</strong>多維資料集的<strong>Full</strong>匯總。 預設會每天早上6點觸發。 此匯總會擷取下列維度：管道、傳送、行銷活動和日期。<br /> 接著 <strong>會</strong> 使用選件設定資料集來根據選件產生報表。您可以在<a href="../../reporting/using/about-cubes.md">此部分</a>中了解更多有關多維資料集的資訊。<br /> </td> 
+   <td> 此工作流程會更新 <strong>完整</strong> 匯總 <strong>優惠方案主張</strong> 立方體。 預設會每天早上6點觸發。 此匯總會擷取下列維度：管道、傳送、行銷活動和日期。<br /> 此 <strong>優惠方案主張</strong> 然後，多維度資料集可用來根據選件產生報表。 您可以在 <a href="../../reporting/using/about-cubes.md">本節</a>.<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">MessageCenter完整聚合計算</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
-   <td> 此工作流更新<strong>Message center</strong>多維資料集的<strong>Full</strong>聚合。 預設會每天凌晨3:00觸發。 此匯總會擷取下列維度：管道、日期、狀態和事件類型。<br /> 然 <strong>後使</strong> 用Message Centercube根據事件生成報告。您可以在<a href="../../reporting/using/about-cubes.md">此部分</a>中了解更多有關多維資料集的資訊。<br /> </td> 
+   <td> 此工作流程會更新 <strong>完整</strong> 匯總 <strong>訊息中心</strong> 立方體。 預設會每天凌晨3:00觸發。 此匯總會擷取下列維度：管道、日期、狀態和事件類型。<br /> 此 <strong>訊息中心</strong> 然後，多維資料集可用來根據事件產生報表。 您可以在 <a href="../../reporting/using/about-cubes.md">本節</a>.<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 

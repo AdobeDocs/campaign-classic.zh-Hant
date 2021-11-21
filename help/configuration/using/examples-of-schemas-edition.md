@@ -19,9 +19,9 @@ ht-degree: 2%
 
 ## 擴展表 {#extending-a-table}
 
-要擴展&#x200B;**nms:recipient**&#x200B;方案收件人表，請應用以下過程：
+若要擴充 **nms:recipient** 方案收件人表，應用以下過程：
 
-1. 使用下列資料建立擴充功能結構(**cus:extension**):
+1. 建立擴充功能結構(**cus:extension**)使用下列資料：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在本例中，添加索引欄位(**fidelity**)，並用枚舉欄位(**area**)補充&#x200B;**location**&#x200B;元素（已存在於&#x200B;**nms:recipient**&#x200B;方案中）。
+   在此範例中，索引欄位(**保真度**), **位置** 元素(已存在於 **nms:recipient** 模式)以枚舉欄位(**區域**)。
 
    >[!IMPORTANT]
    >
-   >請記得新增&#x200B;**extendedSchema**&#x200B;屬性以參考擴充功能架構。
+   >記得新增 **extendedSchema** 屬性，以參考擴充功能結構。
 
-1. 檢查擴展方案是否為&#x200B;**nms:recipient**&#x200B;方案，並檢查是否存在附加資料：
+1. 檢查擴充架構是否為 **nms:recipient** 結構，且存在其他資料：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -103,7 +103,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表類型為&#x200B;**autopk**，以便建立一個自動生成的主鍵，該主鍵將用於連結到收件人表的連接。
+表類型為 **奧托普** 以建立自動產生的主鍵，該主鍵將連結連接到收件人表。
 
 已生成的架構：
 
@@ -155,7 +155,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 擴充表格的用途是避免表格中支援的欄位數限制，或最佳化資料所佔空間，而資料會依需求耗用。
 
-建立擴充功能表架構(**cus:feature**):
+建立擴充功能表結構(**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -237,7 +237,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 關係表允許您將兩個表連結為基數N-N。此表僅包含要連結的表的外鍵。
 
-組(**nms:group**)和收件者(**nms:recipient**)之間關係表的示例。
+組之間關係表的示例(**nms:group**)和收件者(**nms:recipient**)。
 
 關係表的源架構：
 
@@ -303,7 +303,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 此使用案例示範如何使用現有的參考表格作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代項目。
 
-您也可以將現有的參考表格當作結構中的列舉。 這可以通過在表和引用表之間建立連結，以及添加屬性&#x200B;**displayAsField=&quot;true&quot;**&#x200B;來實現。
+您也可以將現有的參考表格當作結構中的列舉。 這可以通過在表和引用表之間建立連結以及添加屬性來實現 **displayAsField=&quot;true&quot;**.
 
 在此示例中，引用表包含銀行名稱和標識符的清單：
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-在使用此參考表的任何表格中，定義連結並新增&#x200B;**displayAsField=&quot;true&quot;**&#x200B;屬性。
+在使用此參考表的任何表格中，定義連結並新增 **displayAsField=&quot;true&quot;** 屬性。
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ xtkschema="xtk:srcSchema">
 
 * 要使其自動完成，必須在引用表中定義計算字串。
 
-* 在連結定義中新增&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;屬性，以防止Adobe Campaign在連結的來源表格中儲存的值上建立索引。
+* 新增 **noDbIndex=&quot;true&quot;** 屬性，防止Adobe Campaign在連結來源表格中儲存的值上建立索引。
 
 ## 相關主題
 

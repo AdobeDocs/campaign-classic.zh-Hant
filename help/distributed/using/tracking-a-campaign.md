@@ -19,28 +19,28 @@ ht-degree: 2%
 
 中央實體運算子可以在促銷活動套件清單中追蹤促銷活動訂單。
 
-這可讓使用者：
+這可讓他們：
 
 * [篩選套件](#filter-packages),
-* [編輯套件](#edit-packages)、
+* [編輯套件](#edit-packages),
 * [取消包](#cancel-a-package),
-* [重新初始化套件](#reinitializing-a-package)。
+* [重新初始化套件](#reinitializing-a-package).
 
 ## 篩選套件 {#filter-packages}
 
-從&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤中，您可以顯示&#x200B;**[!UICONTROL Campaign packages]**&#x200B;清單，該清單會重新分組所有現有的Distributed Marketing促銷活動。 您可以篩選此清單，使其只顯示已發佈、延遲、待核准等的促銷活動。 若要這麼做，請按一下此檢視上方區段的連結，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;連結並選取要顯示的促銷活動套件狀態。
+從 **[!UICONTROL Campaigns]** 頁簽，您可以顯示 **[!UICONTROL Campaign packages]** 會重新分組所有現有的分散式行銷活動。 您可以篩選此清單，使其只顯示已發佈、延遲、待核准等的促銷活動。 若要這麼做，請按一下此檢視上方區段的連結，或使用 **[!UICONTROL Filter list]** 連結並選取要顯示的促銷活動套件狀態。
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## 編輯套件 {#edit-packages}
 
-**[!UICONTROL Campaign packages]**&#x200B;頁面可讓您檢視每個套件的摘要。
+此 **[!UICONTROL Campaign packages]** 頁面可讓您檢視每個套件的摘要。
 
 此摘要會顯示下列資訊：標籤、促銷活動類型，以及建立促銷活動的促銷活動名稱，以及資料夾。
 
 按一下套件名稱加以編輯。 您也可以依其本地實體和狀態來檢視訂單。
 
-**[!UICONTROL Campaign orders]**&#x200B;檢視中也提供此資訊，列出所有訂單。
+此資訊也可在 **[!UICONTROL Campaign orders]** 查看列出所有訂單。
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   **[!UICONTROL Edit > General]**&#x200B;標籤可讓您檢視本機實體在訂購促銷活動時所輸入的資訊。
+   此 **[!UICONTROL Edit > General]** 索引標籤可讓您在訂購促銷活動時，檢視本機實體輸入的資訊。
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -62,15 +62,15 @@ ht-degree: 2%
 
 中央實體可隨時取消促銷活動套件。
 
-按一下促銷活動套件&#x200B;**[!UICONTROL Dashboard]**&#x200B;中的&#x200B;**[!UICONTROL Cancel]**。
+按一下 **[!UICONTROL Cancel]** 行銷活動套件中 **[!UICONTROL Dashboard]**.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-**[!UICONTROL Comment]**&#x200B;欄位可讓您證明取消的正確性。
+此 **[!UICONTROL Comment]** 欄位可讓您說明取消的正確性。
 
-若為&#x200B;**本機促銷活動**，取消套件會將其從可用行銷活動清單中移除。
+針對 **本機行銷活動**，取消套件會從可用行銷活動清單中移除該套件。
 
-對於&#x200B;**協作促銷活動**，取消套件會觸發許多動作：
+針對 **協作行銷活動**，取消套件會觸發許多動作：
 
 1. 與此包相關的任何訂單都將被取消，
 
@@ -91,15 +91,15 @@ ht-degree: 2%
 已發佈的促銷活動套件可重新初始化、修改，並可供本機實體使用。
 
 1. 選擇相關包。
-1. 按一下&#x200B;**[!UICONTROL Reinitialize the package to reuse it]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL OK]**。
+1. 按一下 **[!UICONTROL Reinitialize the package to reuse it]** 連結，按一下 **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕，核准套件重新初始化。
+1. 按一下 **[!UICONTROL Save]** 按鈕以核准套件重新初始化。
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. 包狀態更改為&#x200B;**[!UICONTROL Being edited]**。 再次修改、核准及發佈，將其還原至促銷活動套件清單。
+1. 包狀態更改為 **[!UICONTROL Being edited]**. 再次修改、核准及發佈，將其還原至促銷活動套件清單。
 
 >[!NOTE]
 >

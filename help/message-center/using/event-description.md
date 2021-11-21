@@ -19,23 +19,23 @@ ht-degree: 0%
 
 ## 交易式訊息資料模型 {#about-transactional-messaging-datamodel}
 
-交易式訊息需仰賴Adobe Campaign資料模型，並使用其他兩個不同的表格。 這些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的欄位，允許您管理即時事件和批次事件。
+交易式訊息需仰賴Adobe Campaign資料模型，並使用其他兩個不同的表格。 這些 [表](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** 和 **NmsBatchEvent**，包含相同的欄位，可讓您管理即時事件和批次事件。
 
 ## SOAP方法 {#soap-methods}
 
 本節詳細說明與交易式訊息模組結構相關聯的SOAP方法。
 
-兩個&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法連結到兩個&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;資料化學。 決定事件是「批次」還是「即時」類型的資訊系統。
+二 **PushEvent** 或 **PushEvents** SOAP方法連結到這兩個 **nms:rtEvent** 和 **nms:BatchEvent** 資料表。 決定事件是「批次」還是「即時」類型的資訊系統。
 
-* **** PushEvent可讓您將單一事件插入訊息中，
-* **** PushEvent可讓您將一系列事件插入訊息中。
+* **PushEvent** 可讓您將單一事件插入訊息中，
+* **PushEvents** 可讓您將一系列事件插入訊息中。
 
 用於訪問這兩種方法的WSDL路徑為：
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEvent以存取即時類型結構。
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEven以存取批次類型結構。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** 存取即時類型結構。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** 訪問批類型架構。
 
-兩種方法都包含用於登入交易式訊息模組的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 建議您透過信任的IP位址使用識別方法。 要檢索會話令牌，請執行登錄SOAP調用，然後執行獲取令牌，然後執行註銷。 對數個RT呼叫使用相同的Token。 本節包含的範例是使用工作階段代號方法，此為建議的方法。
+兩種方法都包含 **`<urn:sessiontoken>`** 用於登入交易式訊息模組的元素。 建議您透過信任的IP位址使用識別方法。 要檢索會話令牌，請執行登錄SOAP調用，然後執行獲取令牌，然後執行註銷。 對數個RT呼叫使用相同的Token。 本節包含的範例是使用工作階段代號方法，此為建議的方法。
 
 如果您使用負載平衡伺服器，則可以使用「使用者/密碼」驗證（位於RT訊息的層級）。 範例:
 
@@ -51,9 +51,9 @@ ht-degree: 0%
 </PushEvent>
 ```
 
-**PushEvent**&#x200B;方法由包含事件的&#x200B;**`<urn:domevent>`**&#x200B;參陣列成。
+此 **PushEvent** 方法由 **`<urn:domevent>`** 包含事件的參數。
 
-**PushEvents**&#x200B;方法由包含事件的&#x200B;**`<urn:domeventcollection>`**&#x200B;參陣列成。
+此 **PushEvents** 方法由 **`<urn:domeventcollection>`** 包含事件的參數。
 
 使用PushEvent的範例：
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->若呼叫&#x200B;**PushEvents**&#x200B;方法，則需要新增父XML元素以符合標準XML。 此XML元素將框架事件中包含的各種&#x200B;**`<rtevent>`**&#x200B;元素。
+>若呼叫 **PushEvents** 方法，需要添加父XML元素，以符合標準XML。 此XML元素將框架 **`<rtevent>`** 事件中包含的元素。
 
 使用PushEvents的範例：
 
@@ -103,13 +103,13 @@ ht-degree: 0%
 </urn:PushEvents>
 ```
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素具有一組屬性以及強制子元素：**`<ctx>`**&#x200B;以整合訊息資料。
+此 **`<rtevent>`** 和 **`<batchevent>`** 元素有一組屬性和一個強制子元素： **`<ctx>`** 用於整合訊息資料。
 
 >[!NOTE]
 >
->**`<batchevent>`**&#x200B;元素可讓您將事件新增至「batch」佇列。 **`<rtevent>`**&#x200B;會將事件新增至「即時」佇列。
+>此 **`<batchevent>`** 元素可讓您將事件新增至「批次」佇列。 此 **`<rtevent>`** 將事件新增至「即時」佇列。
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的強制屬性為@type和@email。 @type的值必須與設定執行例項時定義的項目清單值相同。 此值可讓您定義要在傳送期間連結至事件內容的範本。
+的強制屬性 **`<rtevent>`** 和 **`<batchevent>`** 元素為@type和@email。 @type的值必須與設定執行例項時定義的項目清單值相同。 此值可讓您定義要在傳送期間連結至事件內容的範本。
 
 `<rtevent> configuration example:`
 
@@ -117,17 +117,17 @@ ht-degree: 0%
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-在此範例中，提供兩個管道：電子郵件地址和行動電話號碼。 **wishedChannel**&#x200B;可讓您選取將事件轉換為訊息時要使用的管道。 「0」值對應至電子郵件通道、「1」值對應至行動通道等。
+在此範例中，提供兩個管道：電子郵件地址和行動電話號碼。 此 **whiskChannel** 可讓您選取將事件轉換為訊息時要使用的管道。 「0」值對應至電子郵件通道、「1」值對應至行動通道等。
 
-如果您想要延遲事件傳送，請新增&#x200B;**[!UICONTROL scheduled]**&#x200B;欄位，後面接著偏好的日期。 該事件將在此日期轉換為訊息。
+如果您想要延遲事件傳送，請新增 **[!UICONTROL scheduled]** 欄位後面接著偏好的日期。 該事件將在此日期轉換為訊息。
 
 建議您使用數值填@wishedChannel和@emailFormat屬性。 在資料架構描述中找到連結數值和標籤的函式表。
 
 >[!NOTE]
 >
->**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;資料架構的說明中提供了所有授權屬性及其值的詳細說明。
+>所有授權屬性及其值的詳細說明，請參閱 **nms:rtEvent** 和 **nms:BatchEvent** 資料結構。
 
-**`<ctx>`**&#x200B;元素包含訊息資料。 其XML內容是開啟的，這表示可以根據要傳送的內容進行配置。
+此 **`<ctx>`** 元素包含訊息資料。 其XML內容是開啟的，這表示可以根據要傳送的內容進行配置。
 
 >[!NOTE]
 >

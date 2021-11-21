@@ -29,7 +29,7 @@ Adobe建議使用JavaScript整合方法。
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-「**env**」參數接收專用於匿名互動的即時環境的內部名稱。
+「**en**&quot;參數會接收專用於匿名互動之即時環境的內部名稱。
 
 若要呈現選件，我們需要在Adobe Campaign中建立環境和選件空間，然後設定HTML頁面。
 
@@ -51,8 +51,7 @@ Adobe建議使用JavaScript整合方法。
 
    HTML頁面必須包含
 
-   具有@id屬性的元素，其值為已建立選件空間的內部名稱(「i_internal name space」)。 選件會插入此
-元素。
+   具有@id屬性的元素，其值為已建立選件空間的內部名稱(「i_internal name space」)。 選件將透過互動插入到此元素中。
 
    在本例中，@id屬性接收「i_SPC12」值，其中「SPC12」是先前建立的優惠方案空間的內部名稱：
 
@@ -68,13 +67,13 @@ Adobe建議使用JavaScript整合方法。
 
    >[!IMPORTANT]
    >
-   >`<script>`標籤不得自行關閉。
+   >此 `<script>` 標籤不得自行關閉。
 
    此靜態呼叫會自動產生包含互動引擎所需所有參數的動態呼叫。
 
    此行為可讓您在相同頁面上使用數個優惠方案空間，由對引擎的單一呼叫管理。
 
-1. **結果為HTML頁面**
+1. **結果顯示HTML頁面**
 
    互動引擎會將選件表示的內容傳回至HTML頁面：
 
@@ -102,7 +101,7 @@ Adobe建議使用JavaScript整合方法。
 
 ### 呈現已識別的優惠方案 {#presenting-an-identified-offer}
 
-若要向已識別的聯絡人呈現優惠方案，程式與此處詳述的程式類似：[呈現匿名選件](#presenting-an-anonymous-offer)。 在網頁的內容中，您需要新增下列指令碼，以在呼叫引擎期間識別連絡人：
+若要向已識別的聯絡人呈現優惠方案，程式與此處詳述的程式類似： [呈現匿名選件](#presenting-an-anonymous-offer). 在網頁的內容中，您需要新增下列指令碼，以在呼叫引擎期間識別連絡人：
 
 ```
 <script type="text/javascript">
@@ -110,7 +109,7 @@ Adobe建議使用JavaScript整合方法。
 </script>
 ```
 
-1. 前往網頁將呼叫的優惠方案空間，按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;並新增一或多個識別金鑰。
+1. 前往網頁將呼叫的優惠方案空間，按一下 **[!UICONTROL Advanced parameters]** 並添加一個或多個標識鍵。
 
    ![](assets/interaction_htmlmode_001.png)
 
@@ -130,9 +129,9 @@ Adobe建議使用JavaScript整合方法。
 
 若要自動產生HTML選件表示法，您可以使用呈現函式。
 
-1. 前往選件空間，然後按一下&#x200B;**[!UICONTROL Edit functions]**&#x200B;連結。
+1. 前往優惠方案空間，然後按一下 **[!UICONTROL Edit functions]** 連結。
 1. 選取 **[!UICONTROL Overload the HTML rendering function]**。
-1. 前往&#x200B;**[!UICONTROL HTML rendering]**&#x200B;標籤，並插入與選件空間中針對選件內容定義之欄位相符的變數。
+1. 前往 **[!UICONTROL HTML rendering]** 索引標籤，並插入符合在優惠方案空間中為優惠方案內容所定義欄位的變數。
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -142,7 +141,7 @@ Adobe建議使用JavaScript整合方法。
 
 ### 呈現優惠方案 {#presenting-an-offer}
 
-互動可讓您將XML節點傳回至呼叫選件引擎的HTML頁面。 此XML節點可由客戶端開發的函式進行處理。
+互動可讓您將XML節點傳回至HTML頁面，該頁面會呼叫優惠方案引擎。 此XML節點可由客戶端開發的函式進行處理。
 
 對互動引擎的呼叫如下所示：
 
@@ -150,17 +149,17 @@ Adobe建議使用JavaScript整合方法。
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-「**env**」參數會接收即時環境的內部名稱。
+「**en**&quot;參數會接收即時環境的內部名稱。
 
-&quot;**cb**&quot;參數接收函式的名稱，該函式將讀取引擎返回的包含（回撥）命題的XML節點。 此參數為選用。
+「**cb**&quot;參數接收函式的名稱，該函式將讀取引擎返回的包含(callback)命題的XML節點。 此參數為選用。
 
-「**t**」參數僅用於已識別的互動，接收目標的值。 此參數也可以與&#x200B;**interactionTarget**&#x200B;變數一併傳遞。 此參數為選用。
+「**t**「 」參數會接收目標的值，僅針對已識別的互動。 此參數也可與 **interactionTarget** 變數。 此參數為選用。
 
-「**c**」參數接收類別的內部名稱清單。 此參數為選用。
+「**c**&quot;參數接收類別的內部名稱清單。 此參數為選用。
 
-「**th**」參數接收主題清單。 此參數為選用。
+「**th**&quot;參數接收主題清單。 此參數為選用。
 
-「**gctx**」參數接收到整個頁面的呼叫資料全域（內容）。 此參數為選用。
+「**gctx**&quot;參數會接收整個頁面的呼叫資料全域（內容）。 此參數為選用。
 
 傳回的XML節點如下所示：
 
@@ -173,19 +172,19 @@ Adobe建議使用JavaScript整合方法。
 </propositions>
 ```
 
-下列使用案例詳細說明在Adobe Campaign中執行以啟用XML模式的設定，然後在HTML頁面中顯示對引擎的呼叫結果。
+下列使用案例詳細說明在Adobe Campaign中執行以啟用XML模式的設定，然後在「HTML」頁面中顯示對引擎的呼叫結果。
 
 1. **建立環境和優惠方案空間**
 
-   如需建立環境的詳細資訊，請參閱[即時/設計環境](../../interaction/using/live-design-environments.md)。
+   如需建立環境的詳細資訊，請參閱 [即時/設計環境](../../interaction/using/live-design-environments.md).
 
-   如需建立優惠方案空間的詳細資訊，請參閱[建立優惠方案空間](../../interaction/using/creating-offer-spaces.md)。
+   如需建立優惠方案空間的詳細資訊，請參閱 [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md).
 
 1. **擴充優惠方案結構以新增欄位**
 
    此架構將定義下列欄位：標題2和價格。
 
-   範例中的架構名稱為&#x200B;**cus:offer**
+   範例中的架構名稱為 **cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -218,11 +217,11 @@ Adobe建議使用JavaScript整合方法。
 
    >[!NOTE]
    >
-   >您可以擴充選件結構，以批次和統一模式，以及任何格式（文字、HTML和XML）新增欄位。
+   >您可以擴充選件結構，以批次和統一模式，以及任何格式(文字、HTML和XML)新增欄位。
 
 1. **擴充優惠方案公式以編輯新欄位和修改現有欄位**
 
-   編輯&#x200B;**選件(nsm)**&#x200B;輸入表單。
+   編輯 **選件(nsm)** 輸入表單。
 
    在「檢視」區段中，插入兩個新欄位，並包含下列內容：
 
@@ -262,34 +261,34 @@ Adobe建議使用JavaScript整合方法。
 
    >[!IMPORTANT]
    >
-   >(`<input>`)表單的欄位必須指向建立架構中定義的CDATA類型元素。
+   >( `<input>`)表單必須指向已建立架構中定義的CDATA類型元素。
 
    優惠方案表示表單中的呈現如下所示：
 
    ![](assets/interaction_xmlmode_form.png)
 
-   已新增&#x200B;**[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;欄位，且不再顯示&#x200B;**[!UICONTROL Destination URL]**&#x200B;欄位。
+   此 **[!UICONTROL Title 2]** 和 **[!UICONTROL Price]** 欄位已新增，且 **[!UICONTROL Destination URL]** 欄位不再顯示。
 
 1. **建立優惠方案**
 
-   如需建立優惠方案的詳細資訊，請參閱[建立優惠方案](../../interaction/using/creating-an-offer.md)。
+   如需建立優惠方案的詳細資訊，請參閱 [建立優惠方案](../../interaction/using/creating-an-offer.md).
 
    在下列使用案例中，選件的輸入方式如下：
 
    ![](assets/interaction_xmlmode_offer.png)
 
 1. 核准優惠方案或讓其他人核准優惠方案，然後在最後一個步驟建立的優惠方案空間上加以啟用，以便在連結的即時環境中使用。
-1. **HTML頁面上的引擎呼叫和結果**
+1. **引擎呼叫和HTML頁面上的結果**
 
-   HTML頁面中對互動引擎的呼叫看起來像這樣：
+   在「HTML」頁面中對互動引擎的呼叫如下所示：
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   「**env**」參數的值是即時環境的內部名稱。
+   「**en**&quot;參數是即時環境的內部名稱。
 
-   &quot;**cb**&quot;參數的值是需要解譯引擎返回的XML節點的函式的名稱。 在我們的範例中，呼叫的函式會開啟一個模組視窗(alert()函式)。
+   「**cb**&quot;參數是函式的名稱，需要解譯引擎傳回的XML節點。 在我們的範例中，呼叫的函式會開啟一個模組視窗(alert()函式)。
 
    交互引擎返回的XML節點如下所示：
 
@@ -311,11 +310,11 @@ Adobe建議使用JavaScript整合方法。
 
 ### 使用呈現函式 {#using-a-rendering-function-}
 
-可以使用XML呈現函式來建立優惠方案簡報。 此函式將修改在呼叫引擎期間傳回至HTML頁面的XML節點。
+可以使用XML呈現函式來建立優惠方案簡報。 此函式將修改在調用引擎期間返回到HTML頁的XML節點。
 
-1. 前往選件空間，然後按一下&#x200B;**[!UICONTROL Edit functions]**&#x200B;連結。
+1. 前往優惠方案空間，然後按一下 **[!UICONTROL Edit functions]** 連結。
 1. 選取 **[!UICONTROL Overload the XML rendering function]**。
-1. 前往&#x200B;**[!UICONTROL XML rendering]**&#x200B;標籤，並插入所需的函式。
+1. 前往 **[!UICONTROL XML rendering]** ，然後插入所需的函式。
 
    函式可能如下所示：
 

@@ -19,19 +19,19 @@ ht-degree: 1%
 
 首先，為使用者能透過FDA對外部資料庫執行操作，後者在Adobe Campaign中必須具有指定的權限。
 
-1. 在Adobe Campaign檔案總管中選取&#x200B;**[!UICONTROL Administration > Access Management > Named Rights]**&#x200B;節點。
+1. 選取 **[!UICONTROL Administration > Access Management > Named Rights]** 節點。
 1. 指定您選取的標籤，以建立新權限。
-1. **[!UICONTROL Name]**&#x200B;欄位必須採用以下格式&#x200B;**user:base@server**，其中：
+1. 此 **[!UICONTROL Name]** 欄位必須採用下列格式 **user:base@server**，其中：
 
-   * **** user與外部資料庫中的用戶名相對應。
-   * **** basecorresponses包含外部資料庫的名稱。
-   * **** 伺服器與外部資料庫伺服器的名稱相對應。
+   * **使用者** 與外部資料庫中的用戶名相對應。
+   * **基礎** 與外部資料庫的名稱相對應。
+   * **伺服器** 與外部資料庫伺服器的名稱相對應。
 
       >[!NOTE]
       >
-      >**:base**&#x200B;部分在Oracle中為可選。
+      >此 **:base** 部分在Oracle中為可選。
 
-1. 儲存已命名的右側，然後從Adobe Campaign檔案總管的&#x200B;**[!UICONTROL Administration > Access Management > Operators]**&#x200B;節點將其連結至您選取的使用者。
+1. 儲存已命名的，然後從 **[!UICONTROL Administration > Access Management > Operators]** 節點。
 
 然後，要處理外部資料庫中包含的資料，Adobe Campaign用戶必須在資料庫上至少具有「寫入」權限，才能建立工作表。 這些資料會由Adobe Campaign自動刪除。
 
@@ -39,9 +39,9 @@ ht-degree: 1%
 
 * **CONNECT**:連接到遠程資料庫，
 * **讀取資料**:對包含客戶資料的表的只讀訪問，
-* **閱讀「元資料**」：訪問伺服器資料目錄以獲取表結構，
+* **閱讀「MetaData」**:訪問伺服器資料目錄以獲取表結構，
 * **載入**:在工作表中大量載入（處理集合和聯接時需要）,
-* **建立/** 刪除 **表格/索引/程式/函式** (僅適用於Adobe Campaign產生的工作台),
+* **建立/放置** for **表/索引/過程/函式** (僅適用於Adobe Campaign產生的工作台),
 * **說明** （建議）:以監測出現問題時，
 * **寫入資料** （視整合案例而定）。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 |   | Snowflake | 紅移 | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **連接到遠程資料庫** | 倉庫使用、資料庫使用和方案權限使用 | 建立連結到AWS帳戶的用戶 | 建立會話權限 | CONNECT權限 | CONNECT權限 | 建立與具有ALL PRIVILEGES的遠程主機綁定的用戶 |
+| **連接到遠程資料庫** | 倉庫使用、資料庫使用和方案權限使用 | 建立連結至AWS帳戶的使用者 | 建立會話權限 | CONNECT權限 | CONNECT權限 | 建立與具有ALL PRIVILEGES的遠程主機綁定的用戶 |
 | **建立表格** | 建立方案權限表 | 建立權限 | 建立表權限 | 建立表權限 | 建立權限 | 建立權限 |
 | **建立索引** | N/A | 建立權限 | 索引或建立任何索引權限 | ALTER權限 | 建立權限 | 索引權限 |
 | **建立函式** | 建立架構權限的函式 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立函式權限 | 使用權限 | 建立常式權限 |

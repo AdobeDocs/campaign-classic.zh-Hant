@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-下面詳述的工作流預設與&#x200B;**收件箱呈現(IR)**&#x200B;模組一起安裝。 有關收件箱呈現的詳細資訊，請參閱此[節](../../delivery/using/inbox-rendering.md)。
+以下詳述的工作流程會與 **收件箱呈現(IR)** 模組。 有關收件箱呈現的詳細資訊，請參閱 [節](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 2%
   <tr> 
    <td> <strong>更新收件匣轉譯的種子網路</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> 此工作流程會更新用於收件匣轉譯的電子郵件地址，且僅在為<strong>deliverability.neolane.net</strong>開啟HTTPS埠時有效。<br /> </td> 
+   <td> 此工作流程會更新用於收件匣轉譯的電子郵件地址，且只有在針對 <strong>deliverability.neolane.net</strong>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

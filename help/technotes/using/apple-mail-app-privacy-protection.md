@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Apple郵件應用中的郵件隱私保護
+title: Apple郵件應用程式中的郵件隱私保護
 description: 了解Apple的郵件隱私權保護功能對您的行銷活動有何影響
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2100'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Apple郵件應用中的郵件隱私保護
+# Apple郵件應用程式中的郵件隱私保護
 
 ![適用於v7和v8](../../assets/common.svg)
 
 ## 有什麼改變？
 
-2021年，Apple為其原生Mail應用程式引入了新的隱私保護功能。 此應用程式現在包含Apple的郵件隱私保護功能。 基本上，發送者無法再使用追蹤像素來收集關於已選擇開啟Apple「郵件隱私保護」功能的收件者的資訊。 [了解詳情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}。
+2021年，Apple推出其原生Mail應用程式的新隱私權保護功能。 此應用程式現在包含Apple的郵件隱私權保護功能。 基本上，傳送者無法再使用追蹤像素來收集關於已選擇開啟Apple Mail Privacy Protection功能的收件者的資訊。 [了解詳情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant){target=&quot;_blank&quot;}。
 
 ## 我的促銷活動會受到哪些影響？
 
@@ -24,28 +24,28 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 ## 我該採取什麼行動？
 
-蘋果的新功能是電子郵件隱私保護領域未來事物的形態。 強烈建議您遵循Adobe的建議。
+Apple的新功能是業界在電子郵件隱私保護方面應具備的特色。 強烈建議您遵循Adobe的建議。
 
 ### 評估對促銷活動觸發程式的影響
 
-評估這些變更如何影響您目前的促銷活動觸發程式。 識別將電子郵件開啟作為細分、鎖定目標或重新鎖定目標的標準的工作流程。 閱讀[提示與秘訣](#find-email-open-tracking)。
+評估這些變更如何影響您目前的促銷活動觸發程式。 識別將電子郵件開啟作為細分、鎖定目標或重新鎖定目標的標準的工作流程。 閱讀 [提示與秘訣](#find-email-open-tracking).
 
 ### 保留您的資料
 
-保留您的資料並整合您目前在裝置上的知識。 您可以根據使用者代理程式的關鍵績效指標(KPI)。 例如，您可以根據使用iOS和Apple Mail應用程式之人員的設定檔來建立KPI。 閱讀[提示與秘訣](#preserve-tracking-data)。
+保留您的資料並整合您目前在裝置上的知識。 您可以根據使用者代理程式的關鍵績效指標(KPI)。 例如，您可以根據使用iOS和Apple郵件應用程式之人員的設定檔來建立KPI。 閱讀 [提示與秘訣](#preserve-tracking-data).
 
 ### 在保留期之後封存您的追蹤記錄
 
 在Adobe Campaign的保留期以外封存您的追蹤記錄：
 
 1. 檢查促銷活動例項中的保留期間。
-1. 再次檢查活動目標映射。 除了現成可用的設定檔表格(`nmsRecipient`)外，還可判斷您是否使用自訂設定檔表格。
+1. 再次檢查活動目標映射。 除了現成可用的設定檔表格(`nmsRecipient`)。
 1. 從Adobe Campaign匯出追蹤記錄。 包含包含使用者代理和作業系統相關資料的記錄檔。
 
 ### 評估開放率的當前趨勢
 
 決定受眾中在iOS裝置上使用Apple郵件應用程式的比例。
-使用此評估，可以識別潛在的異常間隙及其原因。 您可以判斷間隙是由於促銷活動效能問題還是Apple的隱私權保護功能所致。 閱讀[提示與秘訣](#measure-ios-footprint)。
+使用此評估，可以識別潛在的異常間隙及其原因。 您可以判斷間隙是由於促銷活動效能問題還是Apple的隱私權保護功能所致。 閱讀 [提示與秘訣](#measure-ios-footprint).
 
 ### 重新評估您的促銷活動策略和績效量度
 
@@ -55,7 +55,7 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 ## 提示與秘訣
 
-### 測量整體iOS佔用空間 {#measure-ios-footprint}
+### 測量整體iOS足跡 {#measure-ios-footprint}
 
 若要收集Adobe Campaign資料的深入分析，您可以使用現成可用的報表：
 
@@ -81,7 +81,7 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 您可以識別將電子郵件開啟作為細分、鎖定目標及重新鎖定目標的標準的工作流程。
 
-若要這麼做，您可以使用追蹤連結URL的&#x200B;**[!UICONTROL type]**&#x200B;屬性(**[!UICONTROL url/@type]**)。 對於開啟的電子郵件，此屬性會設為&#x200B;**[!UICONTROL Open]**。 此屬性可從查詢編輯器、工作流程中的&#x200B;**[!UICONTROL Query]**&#x200B;活動和預先定義的篩選器中使用。 您可以將此屬性用作行銷活動的定位標準。
+若要這麼做，您可以使用 **[!UICONTROL type]** 屬性(**[!UICONTROL url/@type]**)。 對於開啟的電子郵件，此屬性會設為 **[!UICONTROL Open]**. 此屬性可從查詢編輯器、 **[!UICONTROL Query]** 工作流程中的活動，以及預先定義的篩選。 您可以將此屬性用作行銷活動的定位標準。
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -89,7 +89,7 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 * 您可以將電子郵件開啟作為查詢中的定位標準。
 
-   您可以將特定傳送之追蹤記錄檔的URL類型設為&#x200B;**[!UICONTROL Open]**，作為篩選條件。
+   您可以將特定傳送之追蹤記錄檔的URL類型設定為篩選條件 **[!UICONTROL Open]**.
 
    ![](assets/identify-email-open-tracking-2.png)
 
@@ -105,7 +105,7 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
    >
    >在工作流程中，您無法檢視預先定義篩選器的鎖定目標條件。
 
-若要擷取其中使用電子郵件開啟作為定位標準的工作流程清單，您必須查詢`xtk:workflow`架構。 工作流的內容以XML格式儲存在&#x200B;**[!UICONTROL XML memo (data)]**&#x200B;欄位中。
+若要擷取其中使用電子郵件開啟作為定位標準的工作流程清單，您必須查詢 `xtk:workflow` 綱要。 工作流程的內容儲存在 **[!UICONTROL XML memo (data)]** 欄位。
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -113,7 +113,7 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 `expr="[url/@type] = 2"`
 
-此定位准則表示追蹤的URL類型必須設為&#x200B;**[!UICONTROL Open]**。
+此定位准則表示追蹤URL的類型必須設為 **[!UICONTROL Open]**.
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -138,13 +138,13 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 >
 >強烈建議您在非生產環境中測試及驗證此套件。
 
-下載[範例套件](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml)並加以安裝。 [深入瞭解](../../platform/using/working-with-data-packages.md#importing-packages)。
+下載 [範例套件](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) 並安裝。 [深入瞭解](../../platform/using/working-with-data-packages.md#importing-packages)。
 
 安裝套件後，您可以從包含執行個體中現成技術工作流程的資料夾存取工作流程：
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-從用戶介面中，選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
+從使用者介面中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 ![](assets/identify-email-open-tracking-8.png)
 
@@ -158,7 +158,7 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 工作流程包含下列詳細步驟：
 
-1. 初始活動是`xtk:workflow`架構中的查詢活動。 此活動可用來在根據例項中尋找包含電子郵件的明確工作流程查詢，以作為定位標準。
+1. 初始活動是 `xtk:workflow` 綱要。 此活動可用來在根據例項中尋找包含電子郵件的明確工作流程查詢，以作為定位標準。
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -259,7 +259,7 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
    ![](assets/identify-email-open-tracking-20.png)
 
-   如果清單不為空，則會將其插入HTML表格中，以接收電子郵件通知。
+   如果清單不為空，則會將其插入電子郵件通知的HTML表中。
 
    ![](assets/identify-email-open-tracking-21.png)
 
@@ -328,8 +328,8 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
    檢查執行個體的設定。 [顯示全文](../../platform/using/privacy-management.md#data-retention)。
 
-* 除了Apple最近的變更外，您還可以使用追蹤資料來創造巨大的價值來促進受眾的參與度。
-* Apple可能會對其原生Mail應用程式和「郵件隱私保護」功能進行進一步的變更。
+* 除了Apple最近的變更外，您還可以使用追蹤資料來創造巨大的價值，進而促進您對象的參與度。
+* Apple可能會對其原生郵件應用程式及其郵件隱私權保護功能進行進一步變更。
 
 基於上述原因，我們強烈建議您盡快匯出這些資料。 否則，您部分對象的追蹤資料可能會受到負面影響。
 
@@ -339,11 +339,11 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 >[!IMPORTANT]
 >
->以下範例將著重於現成可用的`nms:Recipient`架構，此為預設設定檔架構。 如果您使用附加至自訂設定檔的其他自訂目標對應，建議您將此匯出策略擴充至所有自訂記錄檔表格。 [顯示全文](../../configuration/using/target-mapping.md)。
+>下列範例著重於現成可用 `nms:Recipient` 架構，此為預設配置檔案架構。 如果您使用附加至自訂設定檔的其他自訂目標對應，建議您將此匯出策略擴充至所有自訂記錄檔表格。 [顯示全文](../../configuration/using/target-mapping.md)。
 
 ##### 原則
 
-預設情況下， `nms:Recipient`架構連結到必須導出的三個架構：
+依預設， `nms:Recipient` 結構連結至您必須匯出的三個結構：
 
 | 結構 | 內容 |
 | --- | --- |
@@ -381,11 +381,11 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
    初始查詢可用來擷取最近三個月的追蹤記錄。
 您可以使用增量查詢僅提取尚未導出的記錄。
 
-   從&#x200B;**[!UICONTROL Additional data]**&#x200B;節點添加所有必需資訊。
+   從 **[!UICONTROL Additional data]** 節點。
 
    ![](assets/export-tracking-data-2.png)
 
-1. 新增&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動。 將查詢中的所有資料對應至解壓縮檔案格式。
+1. 新增 **[!UICONTROL Data extraction (file)]** 活動。 將查詢中的所有資料對應至解壓縮檔案格式。
 
    ![](assets/export-tracking-data-3.png)
 
@@ -399,12 +399,12 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 ##### 進階實作：依iOS裝置劃分
 
-您可以使用工作流程來判斷收件者是否使用Apple的Mail應用程式。 您可以依裝置分割追蹤記錄。 例如，您可以使用查詢篩選器來依iOS裝置來劃分記錄：
+您可以使用工作流程來判斷收件者是否使用Apple的郵件應用程式。 您可以依裝置分割追蹤記錄。 例如，您可以使用查詢篩選器，依iOS裝置來劃分記錄：
 
 | 應用程式 | 作業系統或設備  | 查詢篩選器 |
 | --- | --- | --- |
 | Apple Mail | iOS 15 | `operating System (Browser) contains 'iOS 15' and browser (Browser) contains 'ApplewebKit'` |
-| Apple Mail | iOS 14或iOS 13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |
+| Apple Mail | iOS14或iOS13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |
 | Apple Mail | iOS行動裝置：iPad、iPod和iPhone | `device (Browser) contains iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad and browser (Browser) equal to 'AppleWebKit'` |
 | Apple Mail | iPhone、iPad或iPod | `browser (Browser) equal to 'AppleWebKit' and device (Browser) equal to iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad` |
 | Apple Mail | Mac | `browser (Browser) equal to 'AppleWebKit' and operating System (Browser) contains 'Mac'` |
@@ -424,14 +424,14 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 * 第一個範例工作流程包含下列活動：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取最近三個月開啟的所有電子郵件。
-   1. **[!UICONTROL Split]**&#x200B;活動用於依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取項目。
+   1. 初始 **[!UICONTROL Query]** 活動可用來選取最近三個月所有開啟的電子郵件。
+   1. A **[!UICONTROL Split]** 活動可用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取項目。
 
-   1. **[!UICONTROL Deduplication]**&#x200B;活動會遵循每個&#x200B;**[!UICONTROL Split]**&#x200B;活動。 **[!UICONTROL Deduplication]**&#x200B;活動可用來移除重複的電子郵件地址。
+   1. A **[!UICONTROL Deduplication]** 活動遵循每個 **[!UICONTROL Split]** 活動。 此 **[!UICONTROL Deduplication]** 活動可用來移除重複的電子郵件地址。
 
-      **[!UICONTROL Deduplication]**&#x200B;活動位於&#x200B;**[!UICONTROL Split]**&#x200B;活動之後，以避免遺失使用各種裝置的收件者的相關資訊。
+      此 **[!UICONTROL Deduplication]** 活動會定位在 **[!UICONTROL Split]** 活動，以避免遺失使用各種裝置的收件者的相關資訊。
 
-   1. 每個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動後面都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
+   1. 安 **[!UICONTROL End]** 活動遵循每個 **[!UICONTROL Deduplication]** 活動。
 
    如果您只將收件者儲存在現成可用的收件者表格中，以便鎖定目標，此類型的工作流程將十分實用。
 
@@ -439,13 +439,13 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 * 第二個範例工作流程包含下列活動：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取最近三個月開啟的所有電子郵件。
-   1. **[!UICONTROL Deduplication]**&#x200B;活動可用來移除重複的電子郵件地址。
-   1. 使用&#x200B;**[!UICONTROL Fork]**&#x200B;活動：
+   1. 初始 **[!UICONTROL Query]** 活動可用來選取最近三個月所有開啟的電子郵件。
+   1. A **[!UICONTROL Deduplication]** 活動可用來移除重複的電子郵件地址。
+   1. A **[!UICONTROL Fork]** 活動：
 
-      * 在一個轉變中， **[!UICONTROL Change dimension]**&#x200B;活動用於尋找追蹤記錄所參照的收件者。
-      * 在另一個轉變中， **[!UICONTROL Split]**&#x200B;活動用於依電子郵件應用程式、瀏覽器、作業系統和裝置分割選取項目。
-   1. **[!UICONTROL End]**&#x200B;活動會遵循&#x200B;**[!UICONTROL Split]**&#x200B;活動之後的每個轉變。
+      * 在一個轉變中， **[!UICONTROL Change dimension]** 活動可用來尋找追蹤記錄所參照的收件者。
+      * 在另一個轉變中， **[!UICONTROL Split]** 活動可用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取項目。
+   1. 安 **[!UICONTROL End]** 活動會遵循 **[!UICONTROL Split]** 活動。
 
    如果您將收件者儲存在現成可用的收件者表格以外的表格中，此類型的工作流程將十分實用。
 
@@ -453,4 +453,4 @@ Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能
 
 ## 實用連結
 
-[Apple Mail隱私保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
+[Apple郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}

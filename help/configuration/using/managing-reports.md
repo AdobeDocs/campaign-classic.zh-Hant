@@ -17,11 +17,11 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-必須重新開發以預設Adobe Campaign收件者（nm:recipient或schema linked）特定結構為基礎的報表，以考慮自訂表格及其透過目標對應連結的表格的資料（請參閱[Target對應](../../configuration/using/target-mapping.md)區段）。
+必須重新開發以預設Adobe Campaign收件者（nm:recipient或schema linked）特定結構為基礎的報表，以便考量自訂表格及其透過目標對應連結的表格的資料(請參閱 [目標對應](../../configuration/using/target-mapping.md) 區段)。
 
-若要建立新報表，請參閱[此區段](../../reporting/using/about-reports-creation-in-campaign.md)。
+若要建立新報表，請參閱 [本節](../../reporting/using/about-reports-creation-in-campaign.md).
 
-在某些情況下，您還必須放置這些表格專用的新立方體。 在[此部分](../../reporting/using/about-cubes.md)中詳細介紹多維資料集。
+在某些情況下，您還必須放置這些表格專用的新立方體。 多維資料集在 [本節](../../reporting/using/about-cubes.md).
 
 有關報告如下：
 

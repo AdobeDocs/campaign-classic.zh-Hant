@@ -25,7 +25,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 若要建立新外部帳戶，請遵循下列步驟。 詳細設定取決於外部帳戶的類型。
 
-1. 從促銷活動&#x200B;**[!UICONTROL Explorer]**&#x200B;中，選取&#x200B;**[!UICONTROL Administration]**「>」 **[!UICONTROL Platform]**「>」 **[!UICONTROL External accounts]**。
+1. 從促銷活動 **[!UICONTROL Explorer]**，選取 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
    ![](assets/ext_account_1.png)
 
@@ -33,13 +33,13 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
    ![](assets/ext_account_2.png)
 
-1. 輸入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal Name]**。
-1. 選擇要建立的外部帳戶&#x200B;**[!UICONTROL Type]**。
+1. 輸入 **[!UICONTROL Label]** 和 **[!UICONTROL Internal Name]**.
+1. 選取您的外部帳戶 **[!UICONTROL Type]** 您要建立的。
 1. 根據所選外部帳戶類型指定憑證，以設定帳戶的存取權。
 
    所需資訊通常由您所連接的伺服器提供者提供。
 
-1. 勾選&#x200B;**[!UICONTROL Enabled]**&#x200B;選項以啟用連線。
+1. 檢查 **[!UICONTROL Enabled]** 選項啟用連線。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
 外部帳戶會建立並新增至外部帳戶清單。
@@ -48,13 +48,13 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 ### 退回郵件 {#bounce-mails-external-account}
 
-**退回郵件**&#x200B;外部帳戶指定用於連接到電子郵件服務的外部POP3帳戶。 有關此外部帳戶的詳細資訊，請參閱此[page](../../workflow/using/inbound-emails.md)。
+此 **退回郵件** 外部帳戶指定用於連接到電子郵件服務的外部POP3帳戶。 有關此外部帳戶的詳細資訊，請參閱 [頁面](../../workflow/using/inbound-emails.md).
 
 所有為POP3訪問配置的伺服器都可用於接收返回郵件。
 
 ![](assets/ext_account_6.png)
 
-要配置&#x200B;**[!UICONTROL Bounce mails (defaultPopAccount)]**&#x200B;外部帳戶：
+若要設定 **[!UICONTROL Bounce mails (defaultPopAccount)]** 外部帳戶：
 
 * **[!UICONTROL Server]**
 
@@ -74,11 +74,11 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 * **[!UICONTROL Encryption]**
 
-   在&#x200B;**[!UICONTROL By default]**、**[!UICONTROL POP3 + STARTTLS]**、**[!UICONTROL POP3]**&#x200B;或&#x200B;**[!UICONTROL POP3S]**&#x200B;之間選擇的加密類型。
+   選擇的加密類型 **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**.
 
 ### 路由{#routing-external-account}
 
-**[!UICONTROL Routing]**&#x200B;外部帳戶可讓您根據安裝的套件，設定Adobe Campaign中可用的每個通道。
+此 **[!UICONTROL Routing]** 外部帳戶可讓您根據安裝的套件，設定Adobe Campaign中可用的每個管道。
 
 ![](assets/ext_account_7.png)
 
@@ -112,7 +112,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
    運算子資料夾中定義的帳戶密碼。
 
-有關此配置的詳細資訊，請參閱此[page](../../message-center/using/configuring-instances.md#control-instance)。
+有關此配置的詳細資訊，請參閱 [頁面](../../message-center/using/configuring-instances.md#control-instance).
 
 ## 訪問外部系統外部帳戶
 
@@ -142,9 +142,9 @@ FTP外部帳戶可讓您設定及測試對Adobe Campaign以外之伺服器的存
 
 * **[!UICONTROL Encryption]**
 
-   在&#x200B;**[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**&#x200B;之間選擇的加密類型。
+   選擇的加密類型 **[!UICONTROL None]** 或 **[!UICONTROL SSL]**.
 
-要了解這些憑據的位置，請參閱此[page](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials)。
+要了解在何處找到這些憑據，請參閱 [頁面](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
 ### SFTP {#sftp-external-account}
 
@@ -170,37 +170,37 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 ### 外部資料庫(FDA) {#external-database-external-account}
 
-使用&#x200B;**外部資料庫**&#x200B;鍵入外部帳戶以連接到外部資料庫。 深入了解同盟資料存取(FDA)選項，請參閱[本節](../../installation/using/about-fda.md)。
+使用 **外部資料庫** 鍵入外部帳戶以連接到外部資料庫。 深入了解同盟資料存取(FDA)選項，位於 [本節](../../installation/using/about-fda.md).
 
-[相容性矩陣](../../rn/using/compatibility-matrix.md)中列出與Campaign相容的外部資料庫
+在 [相容性矩陣](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
 外部帳戶配置設定取決於資料庫引擎。 進一步了解以下章節：
 
-* 配置對[Vertica](../../installation/using/configure-fda-vertica.md)的訪問
-* 配置對[Snowflake](../../installation/using/configure-fda-snowflake.md)的訪問
-* 設定[Google BigQuery](../../installation/using/configure-fda-google-big-query.md)的存取權
-* 配置對[Azure synapse](../../installation/using/configure-fda-synapse.md)的訪問
-* 配置對[Hadoop](../../installation/using/configure-fda-hadoop.md)的訪問
-* 配置對[Oracle](../../installation/using/configure-fda-oracle.md)的訪問
-* 配置對[Netezza](../../installation/using/configure-fda-netezza.md)的訪問
-* 配置對[SAP HANA](../../installation/using/configure-fda-sap-hana.md)的訪問
-* 配置對[Snowflake](../../installation/using/configure-fda-snowflake.md)的訪問
-* 配置對[Sybase IQ](../../installation/using/configure-fda-sybase.md)的訪問
-* 配置對[Teradata](../../installation/using/configure-fda-teradata.md)的訪問
+* 設定存取權 [韋爾蒂卡](../../installation/using/configure-fda-vertica.md)
+* 設定存取權 [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* 設定存取權 [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
+* 設定存取權 [azure synapse](../../installation/using/configure-fda-synapse.md)
+* 設定存取權 [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* 設定存取權 [Oracle](../../installation/using/configure-fda-oracle.md)
+* 設定存取權 [Netezza](../../installation/using/configure-fda-netezza.md)
+* 設定存取權 [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
+* 設定存取權 [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* 設定存取權 [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* 設定存取權 [Teradata](../../installation/using/configure-fda-teradata.md)
 
 ### Facebook connect {#facebook-connect-external-account}
 
-**[!UICONTROL Facebook Connect]**&#x200B;外部帳戶可讓您在Facebook應用程式中顯示個人化內容，透過此社交網路更容易取得潛在客戶。
+此 **[!UICONTROL Facebook Connect]** 外部帳戶可讓您在Facebook應用程式中顯示個人化內容，透過此社交網路更輕鬆取得潛在客戶。
 
-對於每個Facebook應用程式，您需要建立&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;類型外部帳戶。 如需詳細資訊，請參閱[page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
+對於每個Facebook應用程式，您需要 **[!UICONTROL Facebook Connect]** 輸入外部帳戶。 有關詳細資訊，請參閱 [頁面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
 * **[!UICONTROL Hosting mode]**
 
-   **[!UICONTROL hosted by a partner]**&#x200B;或&#x200B;**[!UICONTROL hosted by this instance]**&#x200B;之間的應用程式托管模式。
+   應用程式的托管模式 **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**.
 
 * **[!UICONTROL Application ID]**
 
@@ -210,15 +210,15 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
    facebook應用程式的應用程式密碼。
 
-如果您選擇由此執行個體模式托管，則「安全畫布URL」必須貼入Facebook上的&#x200B;**Facebook網路遊戲(https)**&#x200B;欄位
+如果您選擇由此執行個體模式托管，則需要將安全畫布URL貼入 **Facebook網路遊戲(https)** facebook欄位
 
-要了解這些憑據的位置，請參閱此[page](https://developers.facebook.com/docs/facebook-login/access-tokens)。
+要了解在何處找到這些憑據，請參閱 [頁面](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Adobe解決方案整合外部帳戶
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
-若要使用Adobe ID連線至Adobe Campaign主控台，您必須設定&#x200B;**[!UICONTROL Adobe Experience Cloud (MAC)]**&#x200B;外部帳戶。
+若要使用Adobe ID連線至Adobe Campaign主控台，您必須設定 **[!UICONTROL Adobe Experience Cloud (MAC)]** 外部帳戶。
 
 ![](assets/ext_account_9.png)
 
@@ -244,7 +244,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 * **[!UICONTROL IMS organization ID]**
 
-   您的IMS組織ID。 若要尋找組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)（**哪裡可以找到我的IMS組織ID?**）。
+   您的IMS組織ID。 若要尋找組織ID，請參閱 [本頁](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**我可以在哪裡找到我的IMS組織ID?**)。
 
 * **[!UICONTROL Association mask]**
 
@@ -258,11 +258,11 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
    您的Adobe Experience Cloud租用戶名稱。
 
-有關此配置的詳細資訊，請參閱[此頁](../../integrations/using/configuring-ims.md)。
+有關此配置的詳細資訊，請參閱 [本頁](../../integrations/using/configuring-ims.md).
 
 ## 網站分析 {#web-analytics-external-account}
 
-**[!UICONTROL Web Analytics]**&#x200B;外部帳戶可讓您以區段形式將資料從Adobe Analytics轉送至Adobe Campaign。 相反地，它會將Adobe Campaign傳送之電子郵件促銷活動的指標和屬性傳送至Adobe Analytics連接器。
+此 **[!UICONTROL Web Analytics]** 外部帳戶可讓您以區段形式將資料從Adobe Analytics轉送至Adobe Campaign。 相反地，它會將Adobe Campaign傳送之電子郵件促銷活動的指標和屬性傳送至Adobe Analytics連接器。
 
 ![](assets/ext_account_10.png)
 
@@ -270,7 +270,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
-**[!UICONTROL AEM (AEM instance)]**&#x200B;外部帳戶可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單。
+此 **[!UICONTROL AEM (AEM instance)]** 外部帳戶可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單。
 
 ![](assets/ext_account_5.png)
 
@@ -294,35 +294,35 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署類型現已過時。[深入瞭解](../../rn/using/deprecated-features.md)。
+> **[!UICONTROL On-premise]** 和 **[!UICONTROL Office 365]** 部署類型現已過時。 [深入瞭解](../../rn/using/deprecated-features.md)。
 
-**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帳戶可讓您將Microsoft Dynamics資料匯入和匯出至Adobe Campaign。
+此 **[!UICONTROL Microsoft Dynamics CRM]** 外部帳戶可讓您將Microsoft Dynamics資料匯入和匯出至Adobe Campaign。
 
-在此[頁面](../../platform/using/crm-ms-dynamics.md)中深入了解Campaign - Microsoft Dynamics CRM連接器。
+深入了解Campaign - Microsoft Dynamics CRM連接器，請參閱 [頁面](../../platform/using/crm-ms-dynamics.md).
 
-使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份驗證時，您需要提供以下詳細資訊：
+使用 **[!UICONTROL Web API]** 部署類型和 **[!UICONTROL Password credentials]** 驗證時，您需要提供下列詳細資料：
 
 ![](assets/ext_account_14.png)
 
 * **[!UICONTROL Account]**
 
-   用於登入Microsoft CRM的帳戶。
+   用來登入Microsoft CRM的帳戶。
 
 * **[!UICONTROL Server]**
 
    Microsoft CRM伺服器的URL。
 
-   若要尋找您的Microsoft CRM **[!UICONTROL Server URL]**，請存取您的Microsoft Dynamics CRM帳戶，然後按一下&#x200B;**Dynamics 365**&#x200B;並選取您的應用程式。 接著，您就可以在瀏覽器的位址列中找到您的&#x200B;**[!UICONTROL Server URL]**，例如`https://myserver.crm.dynamics.com/`。
+   尋找您的Microsoft CRM **[!UICONTROL Server URL]**，請存取您的Microsoft Dynamics CRM帳戶，然後按一下 **Dynamics 365** 並選取您的應用程式。 然後，您就可以 **[!UICONTROL Server URL]** 在瀏覽器的位址列中，例如 `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client identifier]**
 
-   可從&#x200B;**[!UICONTROL Update your code]**&#x200B;類別&#x200B;**[!UICONTROL Client ID]**&#x200B;欄位中的Microsoft Azure管理門戶找到的客戶端ID。
+   用戶端ID，可從以下位置的Microsoft Azure管理入口網站找到： **[!UICONTROL Update your code]** 類別， **[!UICONTROL Client ID]** 欄位。
 
 * **[!UICONTROL CRM version]**
 
-   選擇&#x200B;**[!UICONTROL Dynamics CRM 365]** CRM版本。
+   選擇 **[!UICONTROL Dynamics CRM 365]** CRM版本。
 
-使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署類型和&#x200B;**[!UICONTROL Certificate]**&#x200B;身份驗證時，您需要提供以下詳細資訊：
+使用 **[!UICONTROL Web API]** 部署類型和 **[!UICONTROL Certificate]** 驗證時，您需要提供下列詳細資料：
 
 ![](assets/ext_account_22.png)
 
@@ -330,13 +330,13 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
    Microsoft CRM伺服器的URL。
 
-   若要尋找您的Microsoft CRM **[!UICONTROL Server URL]**，請存取您的Microsoft Dynamics CRM帳戶，然後按一下&#x200B;**Dynamics 365**&#x200B;並選取您的應用程式。 接著，您就可以在瀏覽器的位址列中找到您的&#x200B;**[!UICONTROL Server URL]**，例如`https://myserver.crm.dynamics.com/`。
+   尋找您的Microsoft CRM **[!UICONTROL Server URL]**，請存取您的Microsoft Dynamics CRM帳戶，然後按一下 **Dynamics 365** 並選取您的應用程式。 然後，您就可以 **[!UICONTROL Server URL]** 在瀏覽器的位址列中，例如 `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
    請注意，私密金鑰需要編碼為Base64。
 
-   要執行此操作，可以使用Base64編碼器的幫助，或使用Linux的命令行`base64 -w0 private.key`。
+   要執行此操作，可以使用Base64編碼器的幫助或使用命令行 `base64 -w0 private.key` Linux版。
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -344,17 +344,17 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 * **[!UICONTROL Client identifier]**
 
-   可從&#x200B;**[!UICONTROL Update your code]**&#x200B;類別&#x200B;**[!UICONTROL Client ID]**&#x200B;欄位中的Microsoft Azure管理門戶找到的客戶端ID。
+   用戶端ID，可從以下位置的Microsoft Azure管理入口網站找到： **[!UICONTROL Update your code]** 類別， **[!UICONTROL Client ID]** 欄位。
 
 * **[!UICONTROL CRM version]**
 
-   **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之間的CRM版本。
+   CRM版本，介於 **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**.
 
-有關此配置的詳細資訊，請參閱此[page](../../platform/using/crm-connectors.md)。
+有關此配置的詳細資訊，請參閱 [頁面](../../platform/using/crm-connectors.md).
 
 ### Salesforce.com CRM  {#salesforce-crm-external-account}
 
-**[!UICONTROL Salesforce CRM]**&#x200B;外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。
+此 **[!UICONTROL Salesforce CRM]** 外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。
 
 ![](assets/ext_account_17.png)
 
@@ -370,11 +370,11 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 * **[!UICONTROL Client identifier]**
 
-   若要了解在何處尋找用戶端識別碼，請參閱此[page](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+   若要了解在何處尋找用戶端識別碼，請參閱 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   若要了解在何處尋找安全權杖，請參閱此[page](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+   若要了解在何處尋找您的安全代號，請參閱 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
@@ -382,7 +382,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 對於此外部帳戶，您需要使用配置嚮導配置Salesforce CRM。
 
-有關此配置的詳細資訊，請參閱此[page](../../platform/using/crm-connectors.md)。
+有關此配置的詳細資訊，請參閱 [頁面](../../platform/using/crm-connectors.md).
 
 ## 傳輸資料外部帳戶
 
@@ -404,27 +404,27 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 * **[!UICONTROL AWS access key ID]**
 
-   要了解在何處查找您的AWS訪問密鑰ID，請參閱此[page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
+   若要了解在何處尋找您的AWS存取金鑰ID，請參閱 [頁面](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   要了解在何處查找您對AWS的秘密訪問密鑰，請參閱此[page](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+   若要了解在何處尋找您的AWS秘密存取金鑰，請參閱此 [頁面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   要了解有關AWS區域的更多資訊，請參閱此[頁](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
+   若要深入了解AWS地區，請參閱 [頁面](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
-* **[!UICONTROL Use server side encryption]**&#x200B;核取方塊可讓您以S3加密模式儲存檔案。
+* 此 **[!UICONTROL Use server side encryption]** 核取方塊可讓您以S3加密模式儲存檔案。
 
-若要了解在何處尋找存取金鑰ID和秘密存取金鑰，請參閱Amazon網站服務[檔案](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
+若要了解在何處尋找存取金鑰ID和秘密存取金鑰，請參閱Amazon網站服務 [檔案](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 ### Azure Blob儲存 {#azure-blob-external-account}
 
-**Azure Blob儲存體**&#x200B;外部帳戶可用來使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動將資料匯入或匯出至Adobe Campaign。 如需詳細資訊，請參閱本[區段](../../workflow/using/file-transfer.md)。
+此 **Azure Blob儲存** 外部帳戶可用來匯入或匯出資料至Adobe Campaign，使用 **[!UICONTROL Transfer file]** 工作流程活動。 如需詳細資訊，請參閱本[區段](../../workflow/using/file-transfer.md)。
 
 ![](assets/ext_account_23.png)
 
-若要設定&#x200B;**[!UICONTROL Azure external account]**&#x200B;以搭配Adobe Campaign使用，您必須提供下列詳細資訊：
+若要設定 **[!UICONTROL Azure external account]** 若要與Adobe Campaign搭配使用，您必須提供下列詳細資訊：
 
 * **[!UICONTROL Server]**
 
@@ -432,8 +432,8 @@ Amazon Simple Storage Service(S3)連接器可用來匯入或匯出資料至Adobe
 
 * **[!UICONTROL Encryption]**
 
-   在&#x200B;**[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**&#x200B;之間選擇的加密類型。
+   選擇的加密類型 **[!UICONTROL None]** 或 **[!UICONTROL SSL]**.
 
 * **[!UICONTROL Access key]**
 
-   若要了解在何處找到您的&#x200B;**[!UICONTROL Access key]**，請參閱此[page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
+   知道在哪裡找到 **[!UICONTROL Access key]**，請參閱 [頁面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

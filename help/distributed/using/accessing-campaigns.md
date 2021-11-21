@@ -29,7 +29,7 @@ ht-degree: 3%
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-促銷活動仍可在促銷活動概覽中存取，可透過首頁的&#x200B;**[!UICONTROL Campaigns]**&#x200B;連結找到。
+促銷活動仍可在促銷活動概覽中存取，位於 **[!UICONTROL Campaigns]** 首頁上的連結。
 
 ## 可用設定 {#available-settings}
 

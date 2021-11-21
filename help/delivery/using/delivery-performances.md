@@ -51,8 +51,8 @@ ht-degree: 6%
 
 如果傳送效能不佳，您可以檢查：
 
-* **傳送的大小**:大型傳送可能需要更長的時間才能完成。MTA子項設定為處理預設批次大小，此大小適用於大部分執行個體，但當傳送持續緩慢時，需要加以檢查。
-* **傳送的目標**:傳送效能禁止受軟退信錯誤影響，這些錯誤會根據重試配置處理。錯誤數越多，重試次數就越多。
-* **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。您也可以檢查IP信譽和傳遞能力問題。 有關詳細資訊，請參閱[此部分](about-deliverability.md)和[Adobe傳遞能力最佳實踐指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
+* **傳送的大小**:大型傳送可能需要更長的時間才能完成。 MTA子項設定為處理預設批次大小，此大小適用於大部分執行個體，但當傳送持續緩慢時，需要加以檢查。
+* **傳遞的目標**:傳送效能禁止受軟退信錯誤影響，這些錯誤會根據重試配置處理。 錯誤數越多，重試次數就越多。
+* **整體平台負載**:當傳送數個大型傳送時，整體平台可能會受到影響。 您也可以檢查IP信譽和傳遞能力問題。 有關詳細資訊，請參閱 [本節](about-deliverability.md) 和 [Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant).
 
 平台和資料庫維護也會影響傳遞傳送效能。 如需詳細資訊，請參閱[此頁面](../../production/using/database-performances.md)。

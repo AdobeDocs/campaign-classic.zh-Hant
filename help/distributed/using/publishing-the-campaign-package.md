@@ -17,17 +17,17 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-中央實體運算子會將其要提供的促銷活動發佈至&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;中的本機實體。
+中央實體運算子會將想要提供的促銷活動發佈至 **[!UICONTROL list of campaign packages]**.
 
-促銷活動套件必須先由中央實體核准，才能在促銷活動套件清單中發佈。 要執行此操作，您可以透過促銷活動套件中的&#x200B;**[!UICONTROL Approval parameters]**&#x200B;連結指定審核者或審核者群組。
+促銷活動套件必須先由中央實體核准，才能在促銷活動套件清單中發佈。 要執行此操作，您可以透過 **[!UICONTROL Approval parameters]** 行銷活動套件中的連結。
 
 ## 指派審核者 {#assigning-a-reviewer}
 
-若要選取審核者，請按一下促銷活動套件中的&#x200B;**[!UICONTROL Approval parameters]**&#x200B;連結，然後從下拉式清單中選擇相關的審核者。
+若要選取審核者，請按一下 **[!UICONTROL Approval parameters]** 從促銷活動套件中連結，並從下拉式清單中選擇相關的審核者。
 
 ![](assets/s_advuser_mkg_dist_define_valid.png)
 
-然後，您可以按一下&#x200B;**[!UICONTROL Submit for approval]**&#x200B;開始核准程式。
+然後，您可以按一下 **[!UICONTROL Submit for approval]**.
 
 ![](assets/s_advuser_mkg_dist_valid_process.png)
 
@@ -37,11 +37,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在組織實體級別，您也可以指定審核者以批准訂單。 有關詳細資訊，請參閱[組織實體](about-distributed-marketing.md#organizational-entities)。
+>在組織實體級別，您也可以指定審核者以批准訂單。 有關詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).
 
 ## 添加其他審閱者 {#adding-other-reviewers}
 
-您可以從&#x200B;**[!UICONTROL Edit...]**&#x200B;連結中新增其他審核者，該連結位於促銷活動套件的&#x200B;**[!UICONTROL Approval parameters...]**&#x200B;標籤中。
+您可以從 **[!UICONTROL Edit...]** 連結，可在促銷活動套件中找到 **[!UICONTROL Approval parameters...]** 標籤。
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
@@ -49,18 +49,18 @@ ht-degree: 2%
 
 預設情況下，審核者從提交日期起3天即可處理批准。
 
-在「編輯審核者」視窗中，您也可以設定提醒，以便在未核准促銷活動套件時傳送一或多則訊息。 要執行此操作，請按一下&#x200B;**[!UICONTROL Add reminder]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
+在「編輯審核者」視窗中，您也可以設定提醒，以便在未核准促銷活動套件時傳送一或多則訊息。 若要這麼做，請按一下 **[!UICONTROL Add reminder]** 連結，然後 **[!UICONTROL Add]** 按鈕。
 
-提醒可在指定日期和/或提交日期後的&#x200B;**x**&#x200B;天發出。 提醒類型可在提醒表的第一列中配置。 在以下示例中，審核者將在29/01/2014上收到提醒消息，即在&#x200B;**[!UICONTROL Date]**&#x200B;列中選擇的日期之前兩天，在批准期結束前一天（即提交批准日期後兩天）收到第二個提醒。
+可在指定日期和/或 **x** 提交日期後的數天。 提醒類型可在提醒表的第一列中配置。 在以下範例中，審核者會在29/01/2014收到上的提醒訊息，亦即在 **[!UICONTROL Date]** 欄，並在核准期結束前（即提交以供核准日期後的兩天）提供第二個提醒。
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 
-定義程式包並提交以進行批准後，執行計畫將顯示在&#x200B;**[!UICONTROL Audit]**&#x200B;頁簽中。 它會顯示根據先前設定計算的處理期限，以及所有已設定提醒的日期。
+定義套件並提交套件以供核准後，執行排程會顯示在 **[!UICONTROL Audit]** 標籤。 它會顯示根據先前設定計算的處理期限，以及所有已設定提醒的日期。
 
 ## 透過Adobe Campaign主控台核准 {#approving-via-the-adobe-campaign-console}
 
-如果未指定審核者，或如果通知的運算子均未批准該包，則&#x200B;**[!UICONTROL Approve the package]**&#x200B;按鈕可讓您直接從促銷活動包&#x200B;**[!UICONTROL Dashboard]**&#x200B;或包概覽中進行批准。
+如果未指定審核者，或者通知的操作員未批准該包，則 **[!UICONTROL Approve the package]** 按鈕可讓您直接從促銷活動套件進行核准 **[!UICONTROL Dashboard]** 或從套件概觀中取得。
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-核准後，促銷活動會發佈、新增至清單，一旦達到可用日期，當地實體便可使用。 如果在建立促銷活動時指定了本機實體，則會傳送訊息給通知群組中的運算子，讓他們知道促銷活動可用。 如果事先未指定實體，則預設情況下，所有本機實體都可使用促銷活動。 有關詳細資訊，請參閱[組織實體](about-distributed-marketing.md#organizational-entities)。
+核准後，促銷活動會發佈、新增至清單，一旦達到可用日期，當地實體便可使用。 如果在建立促銷活動時指定了本機實體，則會傳送訊息給通知群組中的運算子，讓他們知道促銷活動可用。 如果事先未指定實體，則預設情況下，所有本機實體都可使用促銷活動。 有關詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).

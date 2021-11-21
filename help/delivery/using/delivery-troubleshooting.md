@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 疑難排解
-description: 深入了解傳遞效能，以及如何疑難排解與傳遞監控相關的問題。
+description: 進一步了解傳遞效能，以及如何疑難排解與傳遞監控相關的問題。
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 本節列出您在傳送傳遞時可能遇到的常見問題，以及如何進行疑難排解。
 
-此外，請務必遵循[本頁面](delivery-performances.md)中詳述的最佳實務和檢查清單，確保您的傳送順利執行。
+此外，請務必遵循最佳作法和檢查清單，詳細說明於 [本頁](delivery-performances.md) 以確保傳遞順利執行。
 
 **相關主題：**
 
@@ -29,17 +29,17 @@ ht-degree: 1%
 
 ## 傳遞緩慢 {#slow-deliveries}
 
-按一下&#x200B;**[!UICONTROL Send]**&#x200B;按鈕後，您的傳送所需時間似乎比平常長。 這可能是由不同元素造成：
+按一下 **[!UICONTROL Send]** 按鈕，您的傳送似乎比平常更久。 這可能是由不同元素造成：
 
-* 某些電子郵件提供者可能已將您的IP位址新增至封鎖清單。 在此情況下，請檢查您的廣播並參閱[此區段](about-deliverability.md)。
+* 某些電子郵件提供者可能已將您的IP位址新增至封鎖清單。 在此情況下，請檢查廣播並諮詢 [本節](about-deliverability.md).
 
-* 您的傳送可能太大，無法快速處理，這可能會在JavaScript個人化程度較高時發生，或是您的傳送重超過60KB時發生。 請參閱Adobe Campaign [傳送最佳實務](delivery-best-practices.md)以了解內容准則。
+* 您的傳送可能太大，無法快速處理，這可能會在JavaScript個人化程度較高時發生，或是您的傳送重超過60KB時發生。 請參閱Adobe Campaign [傳遞最佳實務](delivery-best-practices.md) 了解內容准則。
 
 * 在Adobe Campaign MTA內可能已發生限制。 這是由下列原因造成：
 
-   * 已附加消息（**[!UICONTROL quotas met]**&#x200B;消息）:已滿足Campaign中定義的聲明性MX規則所宣告的配額。 有關此消息的詳細資訊，請參閱[此頁](deliverability-faq.md)。 要了解有關MX規則的更多資訊，請參閱[此部分](../../installation/using/email-deliverability.md#about-mx-rules)。
+   * 已附加的訊息(**[!UICONTROL quotas met]** 消息):已滿足Campaign中定義的聲明性MX規則所宣告的配額。 如需此訊息的詳細資訊，請參閱 [本頁](deliverability-faq.md). 若要進一步了解MX規則，請參閱 [本節](../../installation/using/email-deliverability.md#about-mx-rules).
 
-   * 已附加消息（**[!UICONTROL dynamic flow control]**&#x200B;消息）:嘗試傳送給指定ISP的訊息時，Campaign MTA發生錯誤，導致傳送速度變慢，以避免錯誤密度過大，進而面臨潛在封鎖清單。
+   * 已附加的訊息(**[!UICONTROL dynamic flow control]** 消息):嘗試傳送給指定ISP的訊息時，Campaign MTA發生錯誤，導致傳送速度變慢，以避免錯誤密度過大，進而面臨潛在封鎖清單。
 
 * 系統問題會阻止伺服器相互作用：這會拖慢整個傳送程式。 檢查伺服器，確保在取得個人化資料的程式中沒有可能影響Campaign的記憶體或資源問題。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ## 失敗狀態 {#failed-status}
 
-如果電子郵件傳送的狀態為&#x200B;**[!UICONTROL Failed]**，則可連結至個人化區塊的問題。 例如，當結構不符合傳送對應時，傳送中的個人化區塊可能會產生錯誤。
+如果電子郵件傳送的狀態為 **[!UICONTROL Failed]**，則可連結至個人化區塊的問題。 例如，當結構不符合傳送對應時，傳送中的個人化區塊可能會產生錯誤。
 
 傳送記錄檔是了解傳送失敗原因的關鍵。 以下是您可從傳送記錄檔偵測的可能錯誤：
 
@@ -61,9 +61,9 @@ ht-degree: 1%
    Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
    ```
 
-   此問題的原因幾乎一律是HTML內嘗試呼叫未在上游鎖定目標或傳送的目標對應中定義或對應的表格或欄位的個人化。
+   此問題的原因幾乎一律是HTML內嘗試呼叫未在上游鎖定目標或傳送目標對應中定義或對應的表格或欄位的個人化。
 
-   為了修正此問題，需要審查工作流程和傳送內容，以明確決定要嘗試呼叫有問題的表格的個人化項目，以及表格是否可以對應。 從該位置，在HTML中移除對此表格的呼叫，或修正傳送的對應將是解析的路徑。
+   為了修正此問題，需要審查工作流程和傳送內容，以明確決定要嘗試呼叫有問題的表格的個人化項目，以及表格是否可以對應。 從那裡，在HTML中移除對此表格的呼叫，或修正傳送的對應，都是解決方法。
 
 * 在中間來源部署模型中，傳送記錄檔中可能會顯示下列訊息：
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
    原因與效能問題有關。 這表示行銷執行個體在將資料傳送至中間來源伺服器之前，會花太多時間建立資料。
 
-   為此，我們建議對資料庫執行真空和重新索引。 有關資料庫維護的詳細資訊，請參閱[此部分](../../production/using/recommendations.md)。
+   為此，我們建議對資料庫執行真空和重新索引。 有關資料庫維護的詳細資訊，請參閱 [本節](../../production/using/recommendations.md).
 
    您也應以排程活動重新啟動所有工作流程，並且所有工作流程都處於失敗狀態。 請參閱[本節](../../workflow/using/scheduler.md)。
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 
    通常，此錯誤表示電子郵件中有個人化欄位或區塊，且收件者有多個值。 正在使用個人化區塊，它正在為特定收件者擷取多個記錄。
 
-   若要解決此問題，請檢查所使用的個人化資料，然後檢查具有以上任何欄位項目之收件者的目標。 您也可以在傳送活動之前的目標工作流程中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動，以檢查一次只有一個個人化欄位。 有關重複資料刪除的詳細資訊，請參閱[此頁](../../workflow/using/deduplication.md)。
+   若要解決此問題，請檢查所使用的個人化資料，然後檢查具有以上任何欄位項目之收件者的目標。 您也可以使用 **[!UICONTROL Deduplication]** 傳送活動之前的目標工作流程中的活動，以檢查一次只有一個個人化欄位。 有關重複資料刪除的詳細資訊，請參閱 [本頁](../../workflow/using/deduplication.md).
 
 * 某些傳送可能會失敗，並出現「無法連線」錯誤指出：
 

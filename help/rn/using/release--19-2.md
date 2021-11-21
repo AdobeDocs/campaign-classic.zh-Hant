@@ -120,7 +120,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>現在透過Extended Generic SMPP連接器支援安全SMS。 這允許與提供者的加密連線。</p> <p><strong>警告</strong> 所有伺服器上都需要最新憑證才能使用此功能。 憑證無效、撤銷或過期將產生錯誤，影響整體SMS傳送功能。</p><p>如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html">詳細文件</a>以瞭解詳情。 </p> </td> 
+<td> <p>現在透過Extended Generic SMPP連接器支援安全SMS。 這允許與提供者的加密連線。</p> <p><strong>警告</strong> 此功能要求所有伺服器都具備最新憑證。 憑證無效、撤銷或過期將產生錯誤，影響整體SMS傳送功能。</p><p>如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html">詳細文件</a>以瞭解詳情。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -176,7 +176,7 @@ iOS SDK的1.0.26版現已推出。 在這個新組建中，我們已新增iOS 13
 * 修正使用 **檔案傳輸** 使用下載檔案的活動 **傳輸後刪除源檔案** 選項，名稱中包含空格字元。 (NEO-13411)
 * 修正了Tomcat快取清除可能導致記憶體問題的問題。 (NEO-13456)
 * 修正安裝 **具有執行實例的選件引擎的控制** 在Microsoft SQL 2017中執行之現有控制執行個體上的內建套件。 (NEO-13539)
-* 修正若從 **文字內容** 標籤的問題。 (NEO-13545)
+* 修正了取消勾選來自 **文字內容** 標籤的問題。 (NEO-13545)
 * 修正中文寄件者名稱的編碼問題。 (NEO-13837)
 * 修正從「瀏覽器」顯示調查回應資料時可能會引發的錯誤。 (NEO-14590)
 * 修正了可能導致傳送記錄檔分類與隔離表格不一致的問題。 (NEO-16547)

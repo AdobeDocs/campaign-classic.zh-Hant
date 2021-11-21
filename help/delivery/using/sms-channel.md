@@ -23,7 +23,7 @@ ht-degree: 4%
 開始傳送簡訊之前：
 
 * 請確定收件者設定檔中至少包含行動電話。
-* 進一步了解Adobe Campaign [傳送最佳實務](delivery-best-practices.md)。
+* 深入了解Adobe Campaign [傳遞最佳實務](delivery-best-practices.md).
 
 傳送簡訊的關鍵步驟如下：
 
@@ -34,12 +34,12 @@ ht-degree: 4%
 * [傳送、監視及追蹤簡訊](sms-send.md)
 * [疑難排解](troubleshooting-sms.md)
 
-此外，您還需熟悉SMS通訊協定和設定。 在[本檔案](sms-protocol.md)中，逐步說明Adobe Campaign與SMPP提供者之間所設定的連線
+此外，您還需熟悉SMS通訊協定和設定。 逐步了解Adobe Campaign和SMPP提供者之間在 [此文檔](sms-protocol.md)
 
-如需如何建立傳送的全域資訊，請參閱[此區段](steps-about-delivery-creation-steps.md)。
+如需如何建立傳送的全域資訊，請參閱 [本節](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
->Adobe Campaign也可讓您透過其&#x200B;**Adobe Campaign行動應用程式頻道(NMAC)**&#x200B;選項，在行動終端上提交通知。
+>Adobe Campaign也可讓您透過 **Adobe Campaign行動應用程式頻道(NMAC)** 選項。
 > 
->如需詳細資訊，請參閱[行動應用程式頻道快速入門](about-mobile-app-channel.md)區段。
+>有關詳細資訊，請參閱 [開始使用行動應用程式頻道](about-mobile-app-channel.md) 區段。

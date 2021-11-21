@@ -29,9 +29,9 @@ Adobe Campaign 包括一個工作流程模組，可跨應用程式伺服器的�
 
 Adobe Campaign使用工作流程：
 
-* 執行定位促銷活動。 [深入瞭解](building-a-workflow.md#implementation-steps-)
-* 建立行銷活動：對於每個促銷活動， **[!UICONTROL Workflow]**&#x200B;標籤可讓您建立目標並建立傳送。 [深入瞭解](building-a-workflow.md#campaign-workflows)
-* 執行技術流程：清除、收集追蹤資訊或臨時計算。 [深入瞭解](building-a-workflow.md#technical-workflows)
+* 執行定位促銷活動。 [了解更多](building-a-workflow.md#implementation-steps-)
+* 建立行銷活動：對於每個促銷活動， **[!UICONTROL Workflow]** 索引標籤可讓您建立目標及建立傳送。 [了解更多](building-a-workflow.md#campaign-workflows)
+* 執行技術流程：清除、收集追蹤資訊或臨時計算。 [了解更多](building-a-workflow.md#technical-workflows)
 
 工作流程可以指流程定義（工作流模型，它表示應發生的事件）和此流程的實例（工作流實例，表示實際發生的事件）。
 
@@ -43,11 +43,11 @@ Adobe Campaign使用工作流程：
 
 * **[!UICONTROL Activities]**
 
-   活動描述任務模板。 可用的各種活動在圖表上以表徵圖表示。 每種類型都有共同屬性和特定屬性。 例如，雖然所有活動都有名稱和標籤，但只有&#x200B;**[!UICONTROL Approval]**&#x200B;活動有指派。
+   活動描述任務模板。 可用的各種活動在圖表上以表徵圖表示。 每種類型都有共同屬性和特定屬性。 例如，雖然所有活動都有名稱和標籤，但只有 **[!UICONTROL Approval]** 活動有分配。
 
    在工作流程圖中，指定的活動可以產生多個任務，尤其是當有循環或循環（定期）動作時。
 
-   所有工作流活動都列在[此部分](about-activities.md)中，包括使用案例和示例。
+   所有工作流程活動列於 [本節](about-activities.md)，包括使用案例和範例。
 
 * **[!UICONTROL Transitions]**
 
@@ -59,22 +59,22 @@ Adobe Campaign使用工作流程：
    >
    >仍可執行包含未終止轉變的工作流程：系統會產生警告訊息，工作流程一旦到達轉變，就會暫停，但不會產生錯誤。 因此，您可以在工作流程未完成的情況下開始工作流程，並隨著您的操作將其新增。
 
-   有關如何構建工作流的詳細資訊，請參閱[此部分](building-a-workflow.md)。
+   如需如何建立工作流程的詳細資訊，請參閱 [本節](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
    工作台包含該轉變所攜帶的所有資訊。 每個工作流程都使用數個工作表。 在這些表中傳送的資料可以加速，並在整個工作流的生命週期中使用，只要不清除。 事實上，每次工作流被鈍化時，都會清除不需要的表，而且可能是在執行最大的工作流程時清除，以避免伺服器過載。
 
-   在[此小節](how-to-use-workflow-data.md)中深入了解工作流程資料和表格。
+   進一步了解中的工作流程資料和表格 [本節](how-to-use-workflow-data.md).
 
 ## 主要原則和最佳實務{#principles-workflows}
 
 請參閱以下章節，了解使用工作流程自動化流程的指引和最佳實務：
 
-* 深入了解[此頁面](how-to-use-workflow-data.md)中的工作流程活動。
-* 了解如何在[此小節](building-a-workflow.md)中建立工作流程。
-* 探索如何使用工作流程在[此區段](../../platform/using/import-export-workflows.md)中匯入Campaign中的資料。
-* 在[此頁面](workflow-best-practices.md)中詳細說明工作流程最佳實務。
-* 在[此部分](starting-a-workflow.md)中查找有關工作流執行的指導。
-* 了解如何在[此頁面](monitoring-workflow-execution.md)中監控工作流程。
-* 了解如何授與使用者的存取權，以在[本頁面](managing-rights.md)中使用工作流程。
+* 進一步了解中的工作流程活動 [本頁](how-to-use-workflow-data.md).
+* 了解如何在 [本節](building-a-workflow.md).
+* 探索如何使用工作流程，在 [本節](../../platform/using/import-export-workflows.md).
+* 工作流程最佳實務於 [本頁](workflow-best-practices.md).
+* 在中尋找有關工作流程執行的指引 [本節](starting-a-workflow.md).
+* 了解如何在 [本頁](monitoring-workflow-execution.md).
+* 了解如何授與使用者的存取權，以便在 [本頁](managing-rights.md).

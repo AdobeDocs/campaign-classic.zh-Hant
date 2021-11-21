@@ -25,7 +25,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_001.png)
 
-1. 編輯電子郵件傳送，然後按一下&#x200B;**[!UICONTROL Offers]**&#x200B;圖示。
+1. 編輯電子郵件傳送，然後按一下 **[!UICONTROL Offers]** 表徵圖。
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -45,7 +45,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_006.png)
 
-1. 使用功能表插入第一個選件主張，並選擇HTML轉譯函式。
+1. 使用功能表來插入第一個選件主張，並選擇HTML轉譯函式。
 
    ![](assets/offer_delivery_example_007.png)
 
@@ -53,18 +53,18 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;以在傳送中預覽優惠方案，然後選取收件者以在收到優惠方案時預覽優惠方案。
+1. 按一下 **[!UICONTROL Preview]** 若要在傳送中預覽優惠方案，請選取收件者，以在收到優惠方案時加以預覽。
 
    ![](assets/offer_delivery_example_009.png)
 
 1. 儲存您的傳送並啟動目標工作流程。
-1. 開啟您的傳送，然後按一下傳送的&#x200B;**[!UICONTROL Audit]**&#x200B;標籤：您可以看到優惠方案引擎已從目錄中的各種優惠方案中選取要提出的建議。
+1. 開啟您的傳送，然後按一下 **[!UICONTROL Audit]** 的頁簽：您可以看到優惠方案引擎已從目錄中的各種優惠方案中選取要提出的建議。
 
    ![](assets/offer_delivery_example_010.png)
 
 ## 執行優惠方案模擬 {#perform-an-offer-simulation}
 
-1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Simulations]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
+1. 在 **[!UICONTROL Profiles and Targets]** ，按一下 **[!UICONTROL Simulations]** 連結，然後按一下 **[!UICONTROL Create]** 按鈕。
 
    ![](assets/offer_simulation_001.png)
 
@@ -76,7 +76,7 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_003.png)
 
-1. 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Scope]**。
+1. 按一下 **[!UICONTROL Edit]** ，然後 **[!UICONTROL Scope]**.
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -91,7 +91,7 @@ ht-degree: 3%
 1. 輸入有效日期。 您至少必須輸入開始日期。 這可讓優惠方案引擎篩選優惠方案，並選擇在指定日期有效的優惠方案。
 1. 如有必要，請指定一或多個主題，以限制設定中包含此關鍵字的選件數目。
 
-   在我們的範例中，**Travel**&#x200B;類別包含兩個具有兩個不同主題的子類別。 我們想使用&#x200B;**Customers>1年**&#x200B;主題對選件執行模擬。
+   在我們的範例中， **旅行** 類別包含兩個分類，兩個主題不同。 我們想使用 **客戶> 1年** 主題。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -105,21 +105,21 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_009.png)
 
-1. 儲存您的設定，然後按一下&#x200B;**[!UICONTROL Dashboard]**&#x200B;標籤中的&#x200B;**[!UICONTROL Start]**&#x200B;以執行模擬。
+1. 儲存您的設定，然後按一下 **[!UICONTROL Start]** 在 **[!UICONTROL Dashboard]** 頁簽以運行模擬。
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 模擬完成後，請查閱&#x200B;**[!UICONTROL Results]**&#x200B;以了解每個選件的主張的詳細資訊。
+1. 模擬完成後，請查閱 **[!UICONTROL Results]** 以詳細了解每個優惠方案的建議。
 
    在我們的範例中，優惠方案引擎已根據3個主張來劃分優惠方案。
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 顯示&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;以檢視選件引擎所選取的選件清單。
+1. 顯示 **[!UICONTROL Breakdown of offers by rank]** 檢視優惠方案引擎所選優惠方案清單。
 
    ![](assets/offer_simulation_example_012.png)
 
-1. 如有必要，可以通過按一下&#x200B;**[!UICONTROL Start simulation]**&#x200B;更改範圍設定並再次運行模擬。
+1. 如有必要，您可以更改範圍設定，並通過按一下 **[!UICONTROL Start simulation]**.
 
    ![](assets/offer_simulation_example_010.png)
 

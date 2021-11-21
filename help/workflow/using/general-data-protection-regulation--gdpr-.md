@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-依預設，下列詳細的工作流程會與&#x200B;**隱私權資料保護規範**&#x200B;模組一起安裝。 有關此模組的詳細資訊，請參閱此[文章](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)。
+以下詳細說明的工作流程會與 **隱私權資料保護規範** 模組。 有關此模組的詳細資訊，請參閱 [文章](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 10%
   <tr> 
    <td> <span class="uicontrol">收集隱私權要求</span> <br /> </td> 
    <td> <span class="uicontrol">collectPrivacyRequests</span> <br /> </td> 
-   <td> 此工作流程會產生儲存在Adobe Campaign中的收件者資料，並讓其可在隱私權請求的畫面中下載。<br /> </td> 
+   <td> 此工作流程會產生儲存在Adobe Campaign中的收件者資料，並在隱私權要求的畫面中供下載。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">刪除隱私權要求資料</span> <br /> </td> 
@@ -39,7 +39,7 @@ ht-degree: 10%
   <tr> 
    <td> <span class="uicontrol">隱私權要求清除</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPrivacyRequests</span> <br /> </td> 
-   <td> 此工作流將清除90天以前的訪問請求檔案。<br /> </td> 
+   <td> 此工作流程會清除90天以前的存取要求檔案。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

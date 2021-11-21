@@ -23,8 +23,8 @@ ht-degree: 1%
 
 我們將設定規則，讓每個收件者只能提供一次加拿大之旅，如果拒絕，將不再提供。
 
-1. 在Adobe Campaign樹中，轉到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;節點。
-1. 建立新的&#x200B;**[!UICONTROL Offer presentation]**&#x200B;類型規則。
+1. 在Adobe Campaign樹中，前往 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** 節點。
+1. 建立新 **[!UICONTROL Offer presentation]** 類型規則。
 
    ![](assets/offer_typology_example_001.png)
 
@@ -32,19 +32,19 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_002.png)
 
-1. 選擇&#x200B;**[!UICONTROL All channels]**&#x200B;選項，將規則擴展到所有通道。
+1. 選擇 **[!UICONTROL All channels]** 選項，將規則擴充至所有管道。
 
    ![](assets/offer_typology_example_003.png)
 
-1. 按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;連結，然後選擇&#x200B;**[!UICONTROL Category]**&#x200B;節點作為運算式。
+1. 按一下 **[!UICONTROL Edit expression]** 連結，然後選擇 **[!UICONTROL Category]** 節點作為運算式。
 
    ![](assets/offer_typology_example_004.png)
 
-1. 選擇與您前往加拿大的旅行優惠相符的類別，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉查詢視窗。
+1. 選擇與您前往加拿大的旅行優惠相符的類別，然後按一下 **[!UICONTROL OK]** 來關閉查詢窗口。
 
    ![](assets/offer_typology_example_005.png)
 
-1. 在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;標籤中，選擇與環境中配置的維相同的維。
+1. 在 **[!UICONTROL Offer presentation]** 標籤中，選擇與環境中配置的維相同的維。
 
    ![](assets/offer_typology_example_006.png)
 
@@ -56,17 +56,17 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_008.png)
 
-1. 選取&#x200B;**[!UICONTROL Offers for the same category]**&#x200B;篩選器，以排除&#x200B;**Canada**&#x200B;類別中的所有選件。
+1. 選取 **[!UICONTROL Offers for the same category]** 篩選以從 **加拿大** 類別。
 
    ![](assets/offer_typology_example_020.png)
 
-1. 選擇&#x200B;**[!UICONTROL Rejected propositions]**&#x200B;篩選器以僅考慮收件人拒絕的主張。
+1. 選取 **[!UICONTROL Rejected propositions]** 篩選器，僅考慮收件者拒絕的主張。
 
    ![](assets/offer_typology_example_021.png)
 
 1. 選擇要套用此規則的收件者。
 
-   在我們的範例中，我們將選擇&#x200B;**頻繁旅客**&#x200B;收件者。
+   在我們的範例中，我們將選取 **常客** 收件者。
 
    ![](assets/offer_typology_example_009.png)
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_013.png)
 
-1. 前往選件環境（**環境 — 此例中為收件者**），並參考剛使用&#x200B;**[!UICONTROL Eligibility]**&#x200B;標籤中下拉式清單建立的新類型。
+1. 前往選件環境，(**環境 — 收件者** 在此情況下)，並參考剛使用 **[!UICONTROL Eligibility]** 標籤。
 
    ![](assets/offer_typology_example_014.png)
 
@@ -84,20 +84,20 @@ ht-degree: 1%
 
 我們想傳送屬於加拿大類別的第一個優惠方案主張。 如果任何收件者拒絕一次選件，就不會再向他們提供選件。
 
-1. 在&#x200B;**Frevent travelers**&#x200B;收件者資料夾中，選擇其中一個設定檔以檢查其符合資格的選件：按一下「**[!UICONTROL Propositions]**」標籤，然後按一下「**[!UICONTROL Preview]**」標籤。
+1. 在 **常客** 收件者資料夾中，選擇其中一個設定檔以檢查其符合資格的選件：按一下 **[!UICONTROL Propositions]** ，然後 **[!UICONTROL Preview]** 標籤。
 
-   在我們的範例中，**Tim Ramsey**&#x200B;符合屬於&#x200B;**Americas**&#x200B;類別的選件資格。
+   在我們的例子中， **蒂姆·拉姆齊** 符合資格取得屬於 **美洲** 類別。
 
    ![](assets/offer_typology_example_015.png)
 
-1. 首先，建立電子郵件傳送，以您的&#x200B;**經常旅客**&#x200B;收件者為目標，並提供優惠方案。
+1. 首先，建立以您的 **常客** 具有優惠方案的收件者。
 1. 選取優惠方案引擎呼叫參數。
 
-   在我們的範例中，選取&#x200B;**Travel in America**&#x200B;類別，其中包含&#x200B;**Canada**&#x200B;和&#x200B;**United States**&#x200B;子類別。
+   在我們的範例中， **美國旅行** 類別，其中包含 **加拿大** 和 **美國** 子類別。
 
    ![](assets/offer_typology_example_016.png)
 
-1. 在訊息內文中插入您的優惠方案並傳送傳遞。 有關詳細資訊，請參閱[關於傳出通道](../../interaction/using/about-outbound-channels.md)。
+1. 在訊息內文中插入您的優惠方案並傳送傳遞。 有關詳細資訊，請參閱 [關於傳出頻道](../../interaction/using/about-outbound-channels.md).
 
    收件者收到符合資格的優惠方案。
 

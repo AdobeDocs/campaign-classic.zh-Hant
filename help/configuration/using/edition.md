@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-可通過&#x200B;**[!UICONTROL Administration > Configuration > Navigation hierarchies]**&#x200B;節點訪問建立和配置導航層次結構配置文檔的螢幕：
+建立和配置導航層次結構配置文檔的螢幕可通過 **[!UICONTROL Administration > Configuration > Navigation hierarchies]** 節點：
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->「名稱」編輯控制項可讓您輸入由名稱和命名空間組成的檔案索引鍵。 **`<navtree>`**&#x200B;元素的「name」和「namespace」屬性會在架構的XML編輯欄位中自動更新。
+>「名稱」編輯控制項可讓您輸入由名稱和命名空間組成的檔案索引鍵。 的「name」和「namespace」屬性 **`<navtree>`** 元素會在架構的XML編輯欄位中自動更新。
 
 預覽會自動生成包含完整配置的合併文檔：
 

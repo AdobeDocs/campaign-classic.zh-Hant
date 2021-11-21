@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 原則 {#principles}
 
-若要編輯、建立和設定結構，請按一下Adobe Campaign用戶端主控台的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點。
+若要編輯、建立和設定結構，請按一下 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign用戶端主控台的節點。
 
 >[!NOTE]
 >
@@ -43,16 +43,16 @@ ht-degree: 1%
 >
 >儲存來源架構時，會自動啟動延伸架構的產生。
 
-如果需要檢查架構的完整結構，可以使用預覽頁簽。 如果結構已擴充，您便能將其所有擴充功能視覺化。 作為補充，「文檔」頁簽顯示所有架構屬性和元素及其屬性（SQL欄位、類型/長度、標籤、說明）。 「檔案」索引標籤僅適用於產生的結構。 有關詳細資訊，請參閱[重新生成結構](../../configuration/using/regenerating-schemas.md)部分。
+如果需要檢查架構的完整結構，可以使用預覽頁簽。 如果結構已擴充，您便能將其所有擴充功能視覺化。 作為補充，「文檔」頁簽顯示所有架構屬性和元素及其屬性（SQL欄位、類型/長度、標籤、說明）。 「檔案」索引標籤僅適用於產生的結構。 有關詳細資訊，請參閱 [重新生成結構](../../configuration/using/regenerating-schemas.md) 區段。
 
 ## 範例：建立合同表 {#example--creating-a-contract-table}
 
-在以下示例中，我們想在Adobe Campaign資料庫的資料庫模型中為&#x200B;**contracts**&#x200B;建立新表。 此表格可讓您儲存每個合約的持有人和共同持有人的名字和姓氏以及電子郵件地址。
+在以下範例中，我們要為 **合同** 在Adobe Campaign資料庫的資料庫模型中。 此表格可讓您儲存每個合約的持有人和共同持有人的名字和姓氏以及電子郵件地址。
 
 要執行此操作，需要建立表的架構並更新資料庫結構以生成相應的表。 應用以下階段：
 
-1. 編輯Adobe Campaign樹的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]** 。
-1. 選擇&#x200B;**[!UICONTROL Create a new table in the data model]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Next]** 。
+1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** 節點，然後按一下 **[!UICONTROL New]** .
+1. 選擇 **[!UICONTROL Create a new table in the data model]** 選項，然後按一下 **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -62,9 +62,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >依預設，使用者建立的結構會儲存在「自訂」命名空間中。 有關詳細資訊，請參閱[架構的標識](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
+   >依預設，使用者建立的結構會儲存在「自訂」命名空間中。 有關詳細資訊，請參閱 [方案的標識](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. 建立表格的內容。 建議您使用登入精靈，確保未遺失任何設定。 要執行此操作，請按一下&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕並選擇要添加的設定類型。
+1. 建立表格的內容。 建議您使用登入精靈，確保未遺失任何設定。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，然後選擇要添加的設定類型。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,4 +120,4 @@ ht-degree: 1%
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新資料庫結構以建立將連結架構的表。 有關詳細資訊，請參閱[更新資料庫結構](../../configuration/using/updating-the-database-structure.md)。
+1. 更新資料庫結構以建立將連結架構的表。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md).

@@ -26,7 +26,7 @@ ht-degree: 7%
 
 在以下範例中，您將學習如何建立訊息，並根據收件者的性別和興趣，以動態方式個人化。
 
-* 顯示「Mr」 或「Ms」 根據資料源中&#x200B;**[!UICONTROL Gender]**&#x200B;欄位（M或F）的值，
+* 顯示「Mr」 或「Ms」 根據 **[!UICONTROL Gender]** 欄位（M或F）,
 * 根據所指明或檢測到的興趣個性化組合新聞稿或促銷優惠：
 
    * 興趣1 — >區塊1
@@ -36,26 +36,26 @@ ht-degree: 7%
 
 要根據欄位的值建立條件式內容，請應用以下步驟：
 
-1. 按一下個人化圖示並選取&#x200B;**[!UICONTROL Conditional content > If]**。
+1. 按一下個人化圖示並選取 **[!UICONTROL Conditional content > If]**.
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
    個人化元素會插入訊息內文。 您現在必須進行設定。
 
-1. 接下來，填入&#x200B;**if**&#x200B;運算式的參數。
+1. 接下來，填入 **if** 運算式。
 
    操作步驟：
 
-   * 選取運算式的第一個元素&#x200B;**`<field>`**（依預設，在插入&#x200B;**if**&#x200B;運算式期間會反白顯示此元素），然後按一下個人化圖示以將其取代為測試欄位。
+   * 選取運算式的第一個元素， **`<field>`**,(依預設，在插入 **if** 運算式)，然後按一下個人化圖示，將其取代為測試欄位。
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
-   * 將&#x200B;**`<value>`**&#x200B;替換為將滿足條件的欄位的值。 此值必須用引號表示。
+   * 取代 **`<value>`** 填入將滿足條件的欄位值。 此值必須用引號表示。
    * 指定在滿足條件時要插入的內容。 這可能包含文字、影像、表單、超文字連結等。
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤，以根據傳送收件者檢視訊息內容：
+1. 按一下 **[!UICONTROL Preview]** 頁簽，以根據傳送收件者檢視訊息的內容：
 
    * 選取條件為true的收件者：
 
@@ -65,15 +65,15 @@ ht-degree: 7%
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
-您可以新增其他案例，並根據一或多個欄位的值定義不同內容。 要執行此操作，請使用&#x200B;**[!UICONTROL Conditional content > Else]**&#x200B;和&#x200B;**[!UICONTROL Conditional content > Else if]**。 這些運算式的設定方式與&#x200B;**if**&#x200B;運算式相同。
+您可以新增其他案例，並根據一或多個欄位的值定義不同內容。 若要這麼做，請使用 **[!UICONTROL Conditional content > Else]** 和 **[!UICONTROL Conditional content > Else if]**. 這些運算式的設定方式與 **if** 運算式。
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->若要遵循JavaScript語法，在新增&#x200B;**Else**&#x200B;和&#x200B;**Else if**&#x200B;條件後，必須刪除&#x200B;**%> &lt;%**&#x200B;字元。
+>若要遵循JavaScript語法，請 **%> &lt;%** 新增後必須刪除字元 **Else** 和 **若** 條件。
 
-按一下&#x200B;**[!UICONTROL Preview]**&#x200B;並選取收件者以檢視條件式內容。
+按一下 **[!UICONTROL Preview]** 並選取收件者以檢視條件式內容。
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
@@ -81,8 +81,8 @@ ht-degree: 7%
 
 在以下範例中，您將學習如何建立多語言電子郵件。 內容會根據收件者的偏好語言，以一種或另一種語言顯示。
 
-1. 建立電子郵件並選取目標母體。 在此範例中，顯示一個或另一個版本的條件將以收件者設定檔的&#x200B;**Language**&#x200B;值為基礎。 在此範例中，這些值設為&#x200B;**EN**、**FR**、**ES**。
-1. 在電子郵件HTML內容中，按一下&#x200B;**[!UICONTROL Source]**&#x200B;標籤並貼上下列程式碼：
+1. 建立電子郵件並選取目標母體。 在此範例中，顯示一個版本或另一個版本的條件將以 **語言** 收件者設定檔的值。 在此範例中，這些值會設為 **EN**, **FR**, **ES**.
+1. 在電子郵件HTML內容中，按一下 **[!UICONTROL Source]** 標籤，然後貼上下列程式碼：
 
    ```
    <% if (language == "EN" ) { %>
@@ -103,7 +103,7 @@ ht-degree: 7%
    <% } %>
    ```
 
-1. 選取使用不同偏好語言的收件者，以在&#x200B;**[!UICONTROL Preview]**&#x200B;標籤中測試電子郵件內容。
+1. 在 **[!UICONTROL Preview]** 頁簽，方法是選取使用不同偏好語言的收件者。
 
    >[!NOTE]
    >
@@ -115,4 +115,4 @@ ht-degree: 7%
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-其他Campaign Classic操作說明影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+提供其他Campaign Classic作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 實作 {#implementation}
 
-可套用至任何元素或屬性的新屬性已新增至結構，可補充現有屬性&#x200B;**[!UICONTROL visibleIf]** 。 此屬性為：**[!UICONTROL accessibleIf]** 。 當包含與目前使用者內容相關的XTK運算式時，例如，它可以運用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**。
+可套用至任何元素或屬性的新屬性已新增至結構，可補充現有屬性 **[!UICONTROL visibleIf]** . 此屬性為： **[!UICONTROL accessibleIf]** . 包含與目前使用者內容相關的XTK運算式時，可善用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** ，例如。
 
 您可以找到收件者結構擴充功能的範例，其中顯示以下用法：
 
@@ -42,8 +42,8 @@ ht-degree: 2%
 
 主要屬性為：
 
-* **[!UICONTROL visibleIf]** :會隱藏中繼資料中的欄位，因此無法在結構檢視、欄選取項目或運算式產生器中存取這些欄位。但這不會隱藏任何資料，如果在運算式中手動輸入欄位名稱，則會顯示值。
-* **[!UICONTROL accessibleIf]** :會隱藏資料（以空值取代），使其不會產生查詢。如果visibleIf為空，則會取得與&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的運算式。
+* **[!UICONTROL visibleIf]** :會隱藏中繼資料中的欄位，因此無法在結構檢視、欄選取項目或運算式產生器中存取這些欄位。 但這不會隱藏任何資料，如果在運算式中手動輸入欄位名稱，則會顯示值。
+* **[!UICONTROL accessibleIf]** :會隱藏資料（以空值取代），使其不會產生查詢。 如果visibleIf為空，則會獲得與相同的運算式 **[!UICONTROL accessibleIf]** .
 
 以下是在Campaign中使用此屬性的後果：
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 ## 建議 {#recommendations}
 
-在每次傳送中，電子郵件地址都會複製到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表格中：因此，這些欄位也需要得到保護。
+在每個傳送中，電子郵件地址會複製到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表：因此，這些欄位也需要得到保護。
 
 以下是實作此項目的記錄表擴充功能範例：
 
