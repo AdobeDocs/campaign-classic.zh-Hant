@@ -6,30 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 898353f80a93052cd25088098c9570c2b44ceac4
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2385'
 ht-degree: 0%
 
 ---
 
 # 表單結構{#form-structure}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 表單的描述是一種結構化XML文檔，它會觀察表單架構的語法 **xtk:form**.
 
-輸入表單的XML文檔必須包含 `<form>` 根元素與  **名稱** 和  **命名空間** 屬性來填入表單名稱和命名空間。
+輸入表單的XML文檔必須包含 `<form>` 根元素與 **名稱** 和 **命名空間** 屬性來填入表單名稱和命名空間。
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
 依預設，表單會與具有相同名稱和命名空間的資料架構相關聯。 若要將表單與不同名稱建立關聯，請設定 **實體綱要** 屬性 `<form>` 元素到綱要索引鍵的名稱。 若要說明輸入表單的結構，請讓我們使用「cus:recipient」範例結構來說明介面：
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple1.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple2.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2" type="frame" label="General">
     <input xpath="@gender"/>
@@ -120,7 +120,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <static type="separator" colspan="2" label="General"/>
   <input xpath="@gender"/>
@@ -138,11 +138,11 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 容器可讓您將一組控制項分組。 它們由 **`<container>`** 元素。 上方用來設定數欄之控制項的格式。
 
-此 **xpath** 屬性 `<container>` 可讓您簡化子控制項的參考。 然後，控制項的引用相對於父項 `<container>` 父級。
+此 **xpath** 屬性 `<container>` 可讓您簡化子控制項的參考。 然後，控制項的引用相對於父項 `<container>` 元素。
 
 不含「xpath」的容器範例：
 
-```
+```xml
 <container colcount="2">
   <input xpath="location/@zipCode"/>
   <input xpath="location/@city"/>
@@ -151,7 +151,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 在名為「location」的元素中新增「xpath」的範例：
 
-```
+```xml
 <container colcount="2" xpath="location">
   <input xpath="@zipCode"/>
   <input xpath="@city"/>
@@ -168,7 +168,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
-```
+```xml
 <container type="notebook">
   <container colcount="2" label="General">
     <input xpath="@gender"/>
@@ -176,18 +176,19 @@ A **`<static>`** 元素可用來格式化輸入表單：
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location">
-    ...
+    …
   </container>
 </container>
 ```
 
 主容器由 **type=&quot;notebook&quot;** 屬性。 標籤會在子容器中宣告，標籤的標籤會從 **標籤** 屬性。
 
+![](assets/d_ncs_integration_form_exemple7.png)
+
 >[!NOTE]
 >
 >A **style=&quot;down&quot;|up**（預設）**&quot;** 功能會強制標籤在控制項下或上方垂直定位。 此功能是選取性的。
->![](assets/d_ncs_integration_form_exemple7.png)
->`<container style="down" type="notebook">  ... </container>`
+>`<container style="down" type="notebook">  … </container>`
 
 #### 圖示清單 {#icon-list}
 
@@ -195,7 +196,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
-```
+```xml
 <container type="iconbox">
   <container colcount="2" label="General" img="xtk:properties.png">
     <input xpath="@gender"/>
@@ -203,7 +204,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location" img="nms:msgfolder.png">
-    ...
+    …
   </container>
 </container>
 ```
@@ -220,12 +221,12 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 此示例說明對「性別」欄位值的控制的可見性：
 
-```
+```xml
 <container type="visibleGroup" visibleIf="@gender=1">
-  ...
+  …
 </container>
 <container type="visibleGroup" visibleIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -241,12 +242,12 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 此容器可讓您啟用或停用動態條件中的資料集。 禁用控制項會阻止其編輯。 以下範例說明如何從「性別」欄位的值啟用控制：
 
-```
+```xml
 <container type="enabledGroup" enabledIf="@gender=1">
-  ...
+  …
 </container>
 <container type="enabledGroup" enabledIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -256,7 +257,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 請記住，資料結構中已宣告連結，如下所示：
 
-```
+```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
@@ -264,7 +265,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple9.png)
 
-```
+```xml
 <input xpath="company"/>
 ```
 
@@ -280,7 +281,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 您可以新增 **`<sysfilter>`** 元素（輸入表單中的連結定義）:
 
-```
+```xml
 <input xpath="company">
   <sysFilter>
     <condition expr="[location/@city] =  'Newton"/>
@@ -290,7 +291,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 您也可以使用 **`<orderby>`** 元素：
 
-```
+```xml
 <input xpath="company">
   <orderBy>
     <node expr="[location/@zipCode]"/>
@@ -318,9 +319,9 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 結構中的集合連結範例：
 
-```
+```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
-...
+…
 </element>
 ```
 
@@ -328,7 +329,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple11.png)
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -349,7 +350,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 載入清單時，可套用篩選和排序：
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -370,7 +371,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 架構中的關係表示例：
 
-```
+```xml
 <srcSchema name="subscription" namespace="cus">
   <element name="recipient" type="link" target="cus:recipient" label="Recipient"/>
   <element name="service" type="link" target="cus:service" label="Subscription service"/>
@@ -381,7 +382,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
-```
+```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
   <input xpath="recipient"/>
   <input xpath="service"/>
@@ -417,7 +418,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple13.png)
 
-```
+```xml
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -436,7 +437,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple14.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -451,7 +452,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple15.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -463,7 +464,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 </input>
 ```
 
-編輯表單已從 `<form>`  元素。 其結構與輸入形式相同。 此 **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性已在上完成 **`<input>`** 標籤。 此屬性可讓您啟動所選行的編輯表單。
+編輯表單已從 `<form>` 元素。 其結構與輸入形式相同。 此 **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性已在上完成 **`<input>`** 標籤。 此屬性可讓您啟動所選行的編輯表單。
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple16.png)
 
-```
+```xml
 <value value="@gender"/>
 <input xpath="@gender" readOnly="true"/>
 ```
@@ -499,7 +500,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 「性別」欄位範例：
 
-```
+```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
 <input type="RadioButton" xpath="@gender" checkedValue="1" label="Choice 2"/>
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
@@ -511,12 +512,16 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 核取方塊會反映布林值狀態（選取與否）。 依預設，此控制項由「布林值」(true/false)欄位使用。 採用預設值0或1的變數可與此按鈕相關聯。 此值可以透過 **checkValue** 屬性。
 
-```
+```xml
 <input xpath="@boolean1"/>
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
 ![](assets/d_ncs_integration_form_exemple20.png)
+
+## 分項清單 {#enumeration}
+
+<!-- to be completed -->
 
 ## 導覽階層編輯 {#navigation-hierarchy-edit}
 
@@ -524,7 +529,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 要編輯的控制項會分組在 **`<container>`** 在 **`<input>`** 樹控制項的標籤：
 
-```
+```xml
 <input nolabel="true" type="treeEdit">
   <container label="Text fields">
     <input xpath="@text1"/>
@@ -541,9 +546,9 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 ## 運算式欄位 {#expression-field}
 
-運算式欄位會從運算式動態更新欄位；the **`<input>`** 標籤搭配 **xpath** 屬性，輸入要更新的欄位的路徑，以及 **expr** 包含更新表達式的屬性。
+運算式欄位會從運算式動態更新欄位；the **`<input>`** 標籤搭配 **xpath** 屬性，輸入要更新的欄位的路徑，以及 **博覽** 包含更新表達式的屬性。
 
-```
+```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
 <input expr="Iif([/tmp/@flag]=='On', true, false)" type="expr" xpath="@boolean1"/>
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
@@ -566,21 +571,21 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 透過 **`<enter>`** 和 **`<leave>`** 標籤。
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <enter>
-    <set...
+    <set…
   </enter>
-  ...
+  …
   <leave>
-    <set...
+    <set…
   </leave>
 </form>
 ```
 
 >[!NOTE]
 >
->此 `<enter>`  和  `<leave>`   標籤可用於 `<container>` （「筆記型電腦」和「iconbox」類型）。
+>此 `<enter>` 和 `<leave>` 標籤可用於 `<container>` （「筆記型電腦」和「iconbox」類型）。
 
 ### 運算式語言 {#expression-language-}
 
@@ -588,7 +593,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 此 **`<if expr="<expression>" />`** 如果運算式已驗證，則tag會執行標籤下指定的指示：
 
-```
+```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
   <set xpath="@boolean1" expr="true"/>
 </if>
@@ -596,7 +601,7 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 此 **`<check expr="<condition>" />`** 標籤與 **`<error>`** 標籤會防止驗證表單，並在不符合條件時顯示錯誤訊息：
 
-```
+```xml
 <leave>
   <check expr="/tmp/@test != ''">
     <error>You must populate the 'Test' field!</error> 
@@ -604,22 +609,24 @@ A **`<static>`** 元素可用來格式化輸入表單：
 </leave>
 ```
 
+<!-- changer exemple par un exemple plus parlant. cf. vidéo validation 02:27. noter aussi l'attribut required dans l'exemple de la vidéo. -->
+
 ## 嚮導 {#wizards}
 
 精靈會引導您以頁面形式完成資料輸入步驟集。 驗證表單時，輸入的資料會儲存。
 
 精靈的結構如下：
 
-```
+```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
   </container>
   <container title="Title of page 2" desc="Long description of page 2">
-    ...
+    …
   </container>
-  ...
+  …
 </form>
 ```
 
@@ -635,10 +642,10 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 此 **`<soapcall>`** 標籤包含對方法的呼叫，並包含下列輸入參數：
 
-```
+```xml
 <soapCall name="<name>" service="<schema>">
-  <param type="<type>" exprIn="<xpath>"/>  
-  ...
+  <param  type="<type>" exprIn="<xpath>"/>  
+  …
 </soapCall>
 ```
 
@@ -661,12 +668,12 @@ A **`<static>`** 元素可用來格式化輸入表單：
 
 **範例**:
 
-```
+```xml
 <leave>
   <soapCall name="RegisterGroup" service="nms:recipient">         
-    <param type="DOMElement" exprIn="/tmp/entityList"/>         
-    <param type="DOMElement" exprIn="/tmp/choiceList"/>         
-    <param type="boolean"    exprIn="true"/>       
+    <param  type="DOMElement"    exprIn="/tmp/entityList"/>         
+    <param  type="DOMElement"    exprIn="/tmp/choiceList"/>         
+    <param  type="boolean"       exprIn="true"/>       
   </soapCall>
 </leave>
 ```

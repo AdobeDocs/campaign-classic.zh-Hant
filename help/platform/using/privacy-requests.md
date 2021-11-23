@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2420'
 ht-degree: 99%
 
 ---
@@ -76,6 +76,10 @@ Adobe Campaign 提供資料控制方工具，可針對儲存在 Adobe Campaign �
 在建立隱私權要求之前，您必須先定義要使用的命名空間。這是將用於識別 Adobe Campaign 資料庫中資料主體的金鑰。
 
 三個現成可用命名空間：電子郵件、手機和行動電話。 如果您需要不同的命名空間 (例如收件者自訂欄位)，您可以從&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**&#x200B;建立新的命名空間。
+
+>[!NOTE]
+>
+>為獲得最佳效能，建議使用現成可用的命名空間。
 
 ## 建立隱私權請求 {#create-privacy-request-ui}
 
@@ -251,7 +255,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
 
 ### 在外部叫用 API {#invoking-api-externally}
 
-以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
+以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=zh-Hant)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
 
 首先，您需要透過 API 執行驗證：
 

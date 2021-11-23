@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,9 @@ Forms在 [本節](../../configuration/using/identifying-a-form.md).
 
 輸入表單的XML文檔必須包含 **`<form>`** 根元素與 **名稱** 和 **命名空間** 屬性，分別填入表單名稱及其命名空間。
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
@@ -39,7 +39,7 @@ Forms在 [本節](../../configuration/using/identifying-a-form.md).
 
 此為對應的輸入表單：
 
-```
+```xml
 <form name="book" namespace="cus" type="contentForm">
   <input xpath="@name"/>
   <input xpath="@date"/>
@@ -89,7 +89,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 
 ![](assets/d_ncs_content_form4.png)
 
-```
+```xml
 <input xpath="chapter" type="list">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -108,7 +108,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 
 ![](assets/d_ncs_content_form5.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -133,7 +133,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 
 ![](assets/d_ncs_content_form7.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter" zoom="true" zoomOnAdd="true">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -160,7 +160,7 @@ A **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性
 
 ![](assets/d_ncs_content_form6.png)
 
-```
+```xml
 <container toolbarCaption="List of chapters" type="notebooklist" xpath="chapter" xpath-label="@name">
   <container colcount="2">
     <input xpath="@name"/>
@@ -197,3 +197,5 @@ A **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性
 此 **[!UICONTROL Preview]** 索引標籤可讓您檢視輸入表單：
 
 ![](assets/d_ncs_content_form13.png)
+
+深入了解 [編輯表單](../../configuration/using/editing-forms.md) 和 [表單結構](../../configuration/using/form-structure.md).
