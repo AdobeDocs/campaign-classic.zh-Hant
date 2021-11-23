@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    </tr>
    <tr>
    <td>Campaign API 文件 - jsapi.chm 檔案</td>
-   <td>自 Campaign 第 19.1 發行版本開始，可以透過專屬頁面使用 Campaign Classic API。如果您使用舊版 jsapi.chm 檔案，現在應參考<a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">新的線上版本</a>。</td>
+   <td>自 Campaign 第 19.1 發行版本開始，可以透過專屬頁面使用 Campaign Classic API。如果您使用舊版 jsapi.chm 檔案，現在應參考<a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant">新的線上版本</a>。</td>
   </tr> 
   <tr> 
    <td>Campaign Orchestration - 預測式行銷</td>
