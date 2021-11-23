@@ -80,15 +80,14 @@ ht-degree: 1%
    >* 在發生緊急情況時，請使用 **-immedite** 強制立即停止進程的選項（相當於Unix命令） **殺–9**)。
    >* 使用 **-noconsole** 選項，確保已啟動的模組在主控台上不會顯示任何內容。 其日誌將通過 **syslogd** 模組。
    >* 使用 **-verbose** 選項，以顯示有關流程操作的其他資訊。
-
-      >
-      >   範例:
-      >
-      >   **nlserver重新啟動web -verbose**
-      >
-      >   **nlserver開始mta@myinstance -verbose**
-      >
-      >   此選項會新增其他記錄檔。 建議您重新啟動程式，而不要 **-verbose** 選項，以避免記錄超載。
+   >
+   >   範例:
+   >
+   >   **nlserver重新啟動web -verbose**
+   >
+   >   **nlserver開始mta@myinstance -verbose**
+   >
+   >   此選項會新增其他記錄檔。 建議您重新啟動程式，而不要 **-verbose** 選項，以避免記錄超載。
 
 
 * 啟動所有Adobe Campaign程式(等於啟動 **nlserver6** 服務):
