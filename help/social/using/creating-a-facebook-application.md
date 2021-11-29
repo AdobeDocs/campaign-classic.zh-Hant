@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 2%
+source-wordcount: '876'
+ht-degree: 5%
 
 ---
 
@@ -17,29 +17,29 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-有了網路應用程式， Social Marketing可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交網路取得潛在客戶變得更輕鬆。 如需Facebook類型Web應用程式的更多範例，請參閱 [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
+使用網頁應用程式時，Campaign Social行銷模組可讓您在Facebook應用程式中顯示個人化內容，讓透過此社交媒體更容易取得潛在客戶。 如需Facebook類型Web應用程式的更多範例，請參閱 [本頁](../../social/using/examples-of-facebook-apps.md).
 
 >[!NOTE]
 >
->您也可以將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在此情況下，不需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 有關詳細資訊，請參閱 [設定外部帳戶](#configuring-external-accounts).
+>您也可以將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在此情況下，不需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 [深入瞭解](#configuring-external-accounts)。
 
 ![](assets/social_webapp_fb_000.png)
 
-套用下列設定步驟：
+配置步驟為：
 
-1. 建立一或多個Facebook應用程式。 有關詳細資訊，請參閱： [建立Facebook應用程式](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
-1. 輸入 **[!UICONTROL terms of service]** 和 **[!UICONTROL Privacy policy]** 「Facebook權限請求」畫面上顯示的連結。 有關詳細資訊，請參閱： [輸入服務條款和隱私權政策連結](#entering-the-terms-of-service-and-privacy-policy-links).
-1. 針對每個Facebook應用程式，建立 **[!UICONTROL Facebook Connect]** 輸入外部帳戶。 有關詳細資訊，請參閱： [設定外部帳戶](#configuring-external-accounts).
-1. 針對每個Facebook應用程式，在Adobe Campaign中建立Facebook類型的Web應用程式。 有關詳細資訊，請參閱： [建立Facebook類型Web應用程式](#creating-a-facebook-type-web-application).
-1. 設定您的Facebook應用程式，使其在Facebook頁面上顯示為標籤。 有關詳細資訊，請參閱： [設定Facebook標籤](#configuring-facebook-tabs).
+1. 建立一或多個Facebook應用程式。 [了解更多](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)
+1. 輸入 **[!UICONTROL terms of service]** 和 **[!UICONTROL Privacy policy]** 「Facebook權限請求」畫面上顯示的連結。 [了解更多](#entering-the-terms-of-service-and-privacy-policy-links)
+1. 針對每個Facebook應用程式，建立 **[!UICONTROL Facebook Connect]** 輸入外部帳戶。 [了解更多](#configuring-external-accounts)
+1. 針對每個Facebook應用程式，在Adobe Campaign中建立Facebook類型的Web應用程式。 [了解更多](#creating-a-facebook-type-web-application)
+1. 設定您的Facebook應用程式，使其在Facebook頁面上顯示為標籤。 [了解更多](#configuring-facebook-tabs)
 
 ## 設定外部帳戶 {#configuring-external-accounts}
 
 對於每個Facebook應用程式，您需要 **[!UICONTROL Facebook Connect]** 輸入外部帳戶。
 
-此步驟需要同時存取您的Adobe Campaign主控台和登入Facebook帳戶（您用於頁面管理）的網際網路瀏覽器：
+此步驟需要存取您的Adobe Campaign主控台和Facebook管理員帳戶：
 
-* **Facebook**:選取先前建立的應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選取 **[!UICONTROL Settings]** > **[!UICONTROL Basic]** 標籤。
+* 開啟 **Facebook**:選取先前建立的應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然後選取 **[!UICONTROL Settings]** > **[!UICONTROL Basic]** 標籤。
 
    ![](assets/social_webapp_fb_008.png)
 
@@ -47,7 +47,7 @@ ht-degree: 2%
    >
    >若 **[!UICONTROL Facebook Web Games]** 區段，請按一下 **[!UICONTROL Add Platform]** 按鈕，然後選擇 **[!UICONTROL Facebook Web Games]**.
 
-* **Adobe Campaign**:前往 **[!UICONTROL Administration > Platform > External accounts]** 樹的節點，然後按一下 **[!UICONTROL New]**.
+* 開啟 **Adobe Campaign**:瀏覽 **[!UICONTROL Administration > Platform > External accounts]** 按一下 **[!UICONTROL New]**.
 
    ![](assets/social_webapp_fb_005.png)
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    ![](assets/social_webapp_fb_006.png)
 
-1. 為應用程式選擇托管模式： **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**.
+1. 選擇應用程式托管模式： **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**.
 
    ![](assets/social_webapp_fb_012.png)
 
@@ -73,22 +73,22 @@ ht-degree: 2%
 
    **由此實例托管的應用程式**
 
-   如果您想要在此執行個體上托管應用程式（如果您沒有協力廠商應用程式），則需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 有關詳細資訊，請參閱 [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
+   如果您想要在此執行個體上托管應用程式（如果您沒有協力廠商應用程式），則需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 如需詳細資訊，請參閱[此頁面](../../social/using/examples-of-facebook-apps.md)。
 
    在Adobe Campaign主控台中，複製 **[!UICONTROL Secure Canvas URL]** 欄位並貼入 **[!UICONTROL Facebook Web games (https)]** facebook欄位(在 **[!UICONTROL Facebook Web Games]** 區段)。
 
    ![](assets/social_facebook_external_account_009.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
-   >您在任何情況下都不得使用不安全的URL。
+   >請勿使用任何不安全的URL。
 
    在Facebook上，複製 **[!UICONTROL App ID]** 和 **[!UICONTROL App Secret]** 欄位並貼入 **[!UICONTROL Application ID]** 和 **[!UICONTROL Application secret]** 欄位。
 
    ![](assets/social_facebook_external_account_008.png)
 
 1. 在Facebook上，按一下 **[!UICONTROL Save Changes]** 按鈕。
-1. 在Adobe Campaign主控台中，按一下 **[!UICONTROL Subscribe]** 按鈕，讓Adobe Campaign在每次粉絲透過此應用程式簽入時即時復原資料。 有關詳細資訊，請參閱： [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
+1. 在Adobe Campaign主控台中，按一下 **[!UICONTROL Subscribe]** 按鈕，讓Adobe Campaign在每次粉絲透過此應用程式簽入時即時復原資料。  [了解更多](../../social/using/examples-of-facebook-apps.md)
 
    ![](assets/social_webapp_fb_013.png)
 
@@ -127,11 +127,11 @@ Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個�
    >* **[!UICONTROL "Page Tab" competition]**:Facebook應用程式已完全整合至品牌頁面索引標籤。
 
 
-1. 在 **[!UICONTROL Application]** 欄位中，輸入連結至Facebook應用程式的外部帳戶。 有關詳細資訊，請參閱： [設定外部帳戶](#configuring-external-accounts).
+1. 在 **[!UICONTROL Application]** 欄位中，輸入連結至Facebook應用程式的外部帳戶。 [了解更多](#configuring-external-accounts)
 
    ![](assets/social_webapp_005.png)
 
-1. 選取 **[!UICONTROL Edit]** 頁簽，然後編輯Web應用程式。 有關詳細資訊，請參閱： [facebook應用程式範例](../../social/using/examples-of-facebook-apps.md).
+1. 選取 **[!UICONTROL Edit]** 頁簽，然後編輯Web應用程式。 [了解更多](../../social/using/examples-of-facebook-apps.md)
 
    ![](assets/social_webapp_003.png)
 
@@ -155,7 +155,7 @@ Adobe Campaign Facebook應用程式可讓您在Facebook應用程式中顯示個�
 
    ![](assets/social_webapp_fb_001.png)
 
-1. 在 **[!UICONTROL Secure Page Tab URL]** 欄位，輸入web應用程式的公用URL，可透過 **[!UICONTROL Dashboard]** 頁簽。 如需建立Facebook類型網頁應用程式的詳細資訊，請參閱 [建立Facebook類型Web應用程式](#creating-a-facebook-type-web-application).
+1. 在 **[!UICONTROL Secure Page Tab URL]** 欄位，輸入web應用程式的公用URL，可透過 **[!UICONTROL Dashboard]** 頁簽。 如需建立Facebook類型網頁應用程式的詳細資訊，請參閱 [本節](#creating-a-facebook-type-web-application).
 
    ![](assets/social_webapp_fb_002.png)
 
