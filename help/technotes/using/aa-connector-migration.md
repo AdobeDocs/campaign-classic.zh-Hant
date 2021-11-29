@@ -3,7 +3,7 @@ product: campaign
 title: 移轉至Adobe Analytics Connector
 description: Campaign - Analytics Connector常見問題集
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 自Campaign Classicv7 21.1.3發行版本開始，已棄用Adobe Analytics Data Connector。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-2021年8月1日起，Adobe Campaign Classic已從舊版Data Connectors UI中移除，不過現有的Campaign整合將持續收集資料，並將資料傳遞至Adobe Analytics，直到2022年8月為止。 在當天以後，整合將停止收集資料並傳遞至Adobe Analytics。
+2021年8月1日起，Adobe Campaign Classic已從舊版Data Connectors UI中移除，不過現有的Campaign整合將持續收集資料，並將資料傳遞至Adobe Analytics，直到2022年8月17日為止。 在當天以後，整合將停止收集資料並傳遞至Adobe Analytics。
 
 您 **必須實作** 全新Adobe Analytics Connectors與AdobeExchange的整合，取代了舊版Data Connectors整合。 若要深入了解Adobe Analytics Connector，請參閱 [本頁](../../platform/using/adobe-analytics-connector.md).
 
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 ## 如何更新？
 
-您需要升級至Campaign 21.1.3（或更新版本） **2022年8月前**.
+您需要升級至Campaign 21.1.3（或更新版本） **2022年8月17日前**.
 
 身為托管客戶，Adobe會與您合作，將您的執行個體升級至較新版本。 之後，您便能使用 [Adobe Analytics連接器](../../platform/using/adobe-analytics-connector.md).
 

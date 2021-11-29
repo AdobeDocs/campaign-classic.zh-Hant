@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 在 Facebook 上發佈
-description: 在 Facebook 上發佈
+description: 了解如何在Facebook上發佈
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1138'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ facebook固有下列限制。
 
 ## 選取校樣目標 {#selecting-the-proof-target}
 
-此 **[!UICONTROL Target of the proofs]** 索引標籤可讓您定義Facebook頁面，以便在將傳送傳出之前測試傳送。 為此，建議您建立專用的Facebook私人頁面。 如需建立私人Facebook頁面的詳細資訊，請參閱 [建立測試Facebook頁面](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 若要選取校樣目標，請套用與主要目標相同的步驟： [選取主要目標](#selecting-the-main-target).
+此 **[!UICONTROL Target of the proofs]** 索引標籤可讓您定義Facebook頁面，以便在將傳送傳出之前測試傳送。 為此，建議您建立專用的Facebook私人頁面。 如需建立私人Facebook頁面的詳細資訊，請參閱 [本頁](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 若要選取校樣目標，請套用與主要目標相同的步驟。 [了解更多](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -73,7 +73,7 @@ facebook固有下列限制。
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >請謹慎使用此函式。 在傳送報表中， **[!UICONTROL Number of fans]** 指標不會將這些Facebook篩選器納入考量。
 >
@@ -110,7 +110,7 @@ facebook固有下列限制。
 
 輸入各種欄位：
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >所有URL都必須以開頭 **&quot;http://&quot;** 或 **&quot;https://&quot;**.
 
@@ -131,7 +131,7 @@ facebook固有下列限制。
 
 1. 在 **[!UICONTROL Image]** 欄位中，輸入要顯示在發佈左側的影像URL。
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >影像必須托管於公開網際網路網站，Facebook才能上傳。
 
@@ -148,7 +148,7 @@ facebook固有下列限制。
 
 輸入各種欄位：
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >所有URL都必須以開頭 **&quot;http://&quot;** 或 **&quot;https://&quot;**.
 
@@ -188,7 +188,7 @@ facebook固有下列限制。
 
 >[!NOTE]
 >
->預覽可能會與最終的Facebook出版物稍有不同。 我們強烈建議在最終傳送前傳送校樣，以精確轉譯發佈。 請參閱 [傳送校樣](#sending-the-proof).
+>預覽可能會與最終的Facebook出版物稍有不同。 我們強烈建議在最終傳送前傳送校樣，以精確轉譯發佈。 [深入瞭解](#sending-the-proof)。
 
 ## 設定追蹤 {#configuring-tracking}
 
@@ -204,7 +204,7 @@ facebook固有下列限制。
 
 ## 傳送校樣 {#sending-the-proof}
 
-我們強烈建議您在最終傳送前傳送出版物的校樣，以在私人Facebook測試頁面上檢視出版物的確切轉譯。 如需建立私人Facebook測試頁面的詳細資訊，請參閱 [建立測試Facebook頁面](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 選取目標校樣的步驟在 [選取校樣目標](#selecting-the-proof-target).
+我們強烈建議您在最終傳送前傳送出版物的校樣，以在私人Facebook測試頁面上檢視出版物的確切轉譯。 如需建立私人Facebook測試頁面的詳細資訊，請參閱 [本頁](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 選取目標校樣的步驟在 [本節](#selecting-the-proof-target).
 
 校樣傳送與電子郵件傳送相同。 請參閱[本節](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 

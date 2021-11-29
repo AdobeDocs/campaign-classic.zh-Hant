@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 5%
+source-wordcount: '923'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-## 在Twitter帳戶上發佈 {#publishing-on-your-twitter-accounts}
+## 在您的Twitter帳戶上發佈 {#publishing-on-your-twitter-accounts}
 
 完成設定後， Social Marketing可讓您傳送推文至您的Twitter帳戶。
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
 ### 選取校樣的目標 {#selecting-the-target-of-the-proof}
 
-此 **[!UICONTROL Target of the proofs]** 標籤可讓您定義Twitter帳戶，以在最終傳送之前測試傳送。 因此，我們建議您建立專用於傳送證明的私人Twitter帳戶。 如需如何建立私人Twitter帳戶的詳細資訊，請參閱 [在Twitter上建立測試帳戶](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 選取校樣目標的步驟與選取主要目標的步驟相同。 請參閱 [在Twitter上建立測試帳戶](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
+此 **[!UICONTROL Target of the proofs]** 標籤可讓您定義Twitter帳戶，以在最終傳送之前測試傳送。 因此，我們建議您建立專用於傳送證明的私人Twitter帳戶。 如需如何建立私人Twitter帳戶的詳細資訊，請參閱 [本節](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 選取校樣目標的步驟與選取主要目標的步驟相同。 請參閱[本節](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。
 
 ![](assets/social_twitter_delivery_004.png)
 
@@ -70,7 +70,7 @@ ht-degree: 5%
 
 ![](assets/social_twitter_delivery_005.png)
 
-### 檢視預覽 {#viewing-the-preview}
+### 預覽訊息 {#viewing-the-preview}
 
 此 **[!UICONTROL Preview]** 標籤可讓您檢視推文的呈現。
 
@@ -83,7 +83,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->預覽可能與最終推文稍有不同。 我們強烈建議在最終傳遞前傳送校樣，以檢視推文的確切轉譯。 請參閱 [傳送校樣](#sending-the-proof).
+>預覽可能與最終推文稍有不同。 我們強烈建議在最終傳遞前傳送校樣，以檢視推文的確切轉譯。 請參閱[本節](#sending-the-proof)。
 
 ### 設定追蹤 {#configuring-tracking}
 
@@ -95,13 +95,13 @@ ht-degree: 5%
 >
 >在 **[!UICONTROL Tweet]** 傳送範本，預設會啟用追蹤。
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >我們無法區分分析推文的機器人和實際點擊的用戶。
 
 ### 傳送校樣 {#sending-the-proof}
 
-我們強烈建議您在最終傳送前先傳送出版物的證明，以在私人Twitter測試頁面上取得出版物的確切轉譯。 如需建立私人Twitter帳戶的詳細資訊，請參閱 [在Twitter上建立測試帳戶](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 選取校樣目標的步驟在 [選取校樣的目標](#selecting-the-target-of-the-proof).
+我們強烈建議您在最終傳送前先傳送出版物的證明，以在私人Twitter測試頁面上取得出版物的確切轉譯。 如需建立私人Twitter帳戶的詳細資訊，請參閱 [本節](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 選取校樣目標的步驟在 [本節](#selecting-the-target-of-the-proof).
 
 校樣傳送與電子郵件傳送相同。 請參閱[本節](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
@@ -125,7 +125,7 @@ ht-degree: 5%
 
 ### 操作原則 {#operating-principle}
 
-此 **[!UICONTROL Synchronize Twitter accounts]** 工作流程(請參閱 [同步Twitter帳戶](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts))會復原Twitter訂閱者的清單，以便您傳送直接訊息給他們。 恢復的跟隨者儲存在特定表中：訪客表格。 若要顯示Twitter追隨者清單，請前往 **[!UICONTROL Profiles and Targets > Visitors]** 節點。
+此 **[!UICONTROL Synchronize Twitter accounts]** 工作流程(請參閱 [深入了解](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts))會復原Twitter訂閱者的清單，以便您傳送直接訊息給他們。 恢復的跟隨者儲存在特定表中：訪客表格。 若要顯示Twitter追隨者清單，請前往 **[!UICONTROL Profiles and Targets > Visitors]** 節點。
 
 ![](assets/social_twitter_visitors_001.png)
 

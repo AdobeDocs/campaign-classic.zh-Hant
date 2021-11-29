@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: 在 Facebook 塗鴉牆上發佈
-description: 在 Facebook 塗鴉牆上發佈
+title: 在 Facebook 動態上發佈
+description: 在 Facebook 動態上發佈
 audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 3%
+source-wordcount: '903'
+ht-degree: 4%
 
 ---
 
-# 在 Facebook 塗鴉牆上發佈{#publishing-on-facebook-walls}
+# 在 Facebook 動態上發佈{#publishing-on-facebook-walls}
 
 ![](../../assets/v7-only.svg)
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 建立測試Facebook頁面 {#creating-a-test-facebook-page}
 
-建議您建立私人Facebook頁面以傳送發佈校樣(如需詳細資訊，請參閱 [傳送校樣](../../social/using/publishing-on-facebook.md#sending-the-proof).
+建議您建立私人Facebook頁面以傳送發佈校樣(如需詳細資訊，請參閱 [本節](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. 登入您用來管理頁面的Facebook帳戶。
 1. 建立新的Facebook頁面。
@@ -54,7 +54,7 @@ ht-degree: 3%
 1. 登入您用來管理頁面的Facebook帳戶。
 1. 在您的瀏覽器中輸入下列地址： [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >根據您擁有的帳戶類型，可能需要一個或多個授權。
    >
@@ -82,7 +82,7 @@ ht-degree: 3%
 
 此步驟需要同時存取您的Adobe Campaign主控台和登入Facebook帳戶（您用於頁面管理）的網際網路瀏覽器：
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Adobe Campaign運算子必須擁有執行此設定的管理權限。
 
@@ -102,7 +102,7 @@ ht-degree: 3%
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >您在任何情況下都不得使用不安全的URL。
 
@@ -121,7 +121,7 @@ ht-degree: 3%
    >
    >此 **[!UICONTROL Marketing URL]** 欄位為選填。
 
-1. 在Adobe Campaign主控台中，按一下 **[!UICONTROL Request the authorization from the application]** 連結 **[!UICONTROL Connector]** 標籤。 此 **[!UICONTROL Synchronize Facebook pages]** 工作流程會自動觸發，並收集管理員管理的所有Facebook頁面。 有關詳細資訊，請參閱 [同步Facebook頁面](#synchronizing-facebook-pages).
+1. 在Adobe Campaign主控台中，按一下 **[!UICONTROL Request the authorization from the application]** 連結 **[!UICONTROL Connector]** 標籤。 此 **[!UICONTROL Synchronize Facebook pages]** 工作流程會自動觸發，並收集管理員管理的所有Facebook頁面。 [深入瞭解](#synchronizing-facebook-pages)。
 
    ![](assets/social_facebook_external_account_004.png)
 
@@ -143,14 +143,16 @@ ht-degree: 3%
 >
 >如果Facebook帳戶管理數個頁面，只需設定一個外部帳戶，以便在Facebook帳戶的任何頁面上寫入即可。 對於每個新的Facebook帳戶，您需要建立新 **[!UICONTROL Routing]** 輸入外部帳戶。
 
-此 **[!UICONTROL Synchronization of Facebook pages]** 工作流程會同步由Facebook帳戶管理的所有頁面，讓您透過Adobe Campaign直接張貼在其塗鴉牆上。 有關詳細資訊，請參閱 [同步Facebook頁面](#synchronizing-facebook-pages).
+此 **[!UICONTROL Synchronization of Facebook pages]** 工作流程會同步由Facebook帳戶管理的所有頁面，讓您透過Adobe Campaign直接張貼在其塗鴉牆上。 [深入瞭解](#synchronizing-facebook-pages)。
 
 ## 同步Facebook頁面 {#synchronizing-facebook-pages}
 
-此 **[!UICONTROL Synchronization of Facebook pages]** 工作流程，可透過 **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** 節點，可讓您同步(在Adobe Campaign中)先前設定之Facebook帳戶的頁面。 依預設，此工作流程會設定為每天或每當管理員按一下 **[!UICONTROL Request an authorization from the application]** 服務配置螢幕中的連結(請參閱 [委派寫入存取權至Adobe Campaign](#delegating-write-access-to-adobe-campaign))。
+此 **[!UICONTROL Synchronization of Facebook pages]** 工作流程，可透過 **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** 節點，可讓您同步(在Adobe Campaign中)先前設定之Facebook帳戶的頁面。 依預設，此工作流程會設定為每天或每當管理員按一下 **[!UICONTROL Request an authorization from the application]** 「服務配置」螢幕中的連結。 [深入瞭解](#delegating-write-access-to-adobe-campaign)。
 
-同步完成後，收集的頁面會顯示在外部帳戶中輸入的服務資料夾中(請參閱 [委派寫入存取權至Adobe Campaign](#delegating-write-access-to-adobe-campaign))。 依預設，頁面會新增至的根 **[!UICONTROL Facebook]** 可透過 **[!UICONTROL Profiles and Targets > Services and subscriptions]** 功能表。
+同步完成後，收集的頁面會顯示在外部帳戶中輸入的服務資料夾中。 [了解更多](#delegating-write-access-to-adobe-campaign)).
+
+依預設，頁面會新增至的根 **[!UICONTROL Facebook]** 可透過 **[!UICONTROL Profiles and Targets > Services and subscriptions]** 功能表。
 
 ![](assets/social_facebook_service_002.png)
 
-您現在可以直接透過Adobe Campaign在Facebook頁面的塗鴉牆上發佈。 有關詳細資訊，請參閱 [在Facebook上發佈](#publishing-on-facebook-walls).
+您現在可以直接透過Adobe Campaign在Facebook頁面的塗鴉牆上發佈。 [深入瞭解](#publishing-on-facebook-walls)。
