@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 96%
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x（64 位元） </br><strong>重要：</strong> CentOS Linux 8即將於2021年12月31日終止服務(EOL)。 如需詳細資訊，請參閱 <a href="../../rn/using/deprecated-features.md">過時的功能</a> 頁面。</p>
+<p>8.x（64 位元） </br><strong>重要：</strong> CentOS Linux 8 即將於 2021 年 12 月 31 日結束生命週期 (EOL)。 如需詳細資訊，請參閱<a href="../../rn/using/deprecated-features.md">已棄用功能</a>頁面。</p>
 <p>7.x（64 位元）</p>
 <p><strong>重要：</strong>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。</p>
 </td>
@@ -151,10 +151,10 @@ ht-degree: 96%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p><strong>警告：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">深入瞭解</a>。</p>
+<p><strong>警告：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解更多</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -234,10 +234,10 @@ ht-degree: 96%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -299,8 +299,8 @@ ht-degree: 96%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
