@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1700'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,10 +44,10 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>取代的功能</strong></td>
   </tr>
   <tr>
-  <td>CentOs 8.x（64位元）<br></td>
-   <td><p>CentOS Linux 8即將於2021年12月31日終止服務(EOL)。 <a href="https://www.centos.org/centos-linux-eol/">了解更多</a></p>
-   <p>如果您使用此作業系統，則需要據此調整實施。 仍支援CentOS 7.x（64位元）和RHEL 8.x/7.x（64位元）。</p>
-  <p><em>目標移除日期：2021年12月31日。</em></p>
+  <td>CentOs 8.x (64 位元)<br></td>
+   <td><p>CentOS Linux 8 即將於 2021 年 12 月 31 日結束生命週期 (EOL)。 <a href="https://www.centos.org/centos-linux-eol/">了解更多</a></p>
+   <p>如果您使用此作業系統，則需要據此調整實施。仍支援 CentOS 7.x (64 位元) 和 RHEL 8.x/7.x (64 位元)。</p>
+  <p><em>目標移除日期：2021 年 12 月 31 日。</em></p>
   </td>
  </tr>
     <tr>
