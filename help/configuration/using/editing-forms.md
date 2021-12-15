@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 49a98ec82b1d62f3af19260888da8eb24e460938
+source-git-commit: 42717f3ef3bcda4108dad6a4c0ece752ada579a2
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1647'
+ht-degree: 2%
 
 ---
 
@@ -322,7 +322,7 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
       ```
    或者，移除 `type="frame"` 屬性 `<container>` 元素。
 
-### 建立 `notebook` 表單
+### 建立筆記本表單
 
 使用 `notebook` 表單類型，可在表單頂端顯示索引標籤，讓使用者前往不同的頁面。
 
