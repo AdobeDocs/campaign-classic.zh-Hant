@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
+source-git-commit: daecbdecde0b80b47c113acc80618aee314c5434
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1698'
 ht-degree: 2%
 
 ---
@@ -403,3 +403,150 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 因此， **一般** 外部表單的頁面顯示 **名稱** 和 **連絡人** 頁簽。
 
 ![](assets/nested_forms_preview.png)
+
+要在其他表單中嵌套表單，請插入 `<container>` 元素並設定 `type` 屬性。 對於頂層表單，您可以在外部容器或 `<form>` 元素。
+
+### 範例
+
+此範例顯示複雜表單：
+
+* 頂層表單是iconbox表單。 該形式包括兩個標籤的容器 **一般** 和 **詳細資料**.
+
+   因此，外部表單會顯示 **一般** 和 **詳細資料** 頁面。 若要存取這些頁面，使用者請按一下表單左側的圖示。
+
+* 子表單是嵌套在 **一般** 容器。 該子表單包括兩個標籤的容器 **名稱** 和 **連絡人**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+因此， **一般** 外部表單的頁面顯示 **名稱** 和 **連絡人** 頁簽。
+
+![](assets/nested_forms_preview.png)
+
+
+
+## 修改工廠輸入表單 {#modify-factory-form}
+
+要修改工廠表單，請執行以下步驟：
+
+1. 修改工廠輸入表單：
+
+   1. 從功能表中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. 選取輸入表單並加以修改。
+
+   您可以擴展工廠資料結構，但無法擴展工廠輸入表單。 建議您直接修改工廠輸入表單，而不重新建立。 在軟體升級期間，您在工廠輸入表單中的修改將與升級合併。 如果自動合併失敗，您可以解決衝突。 [顯示全文](../../production/using/upgrading.md#resolving-conflicts)。
+
+   例如，如果您使用其他欄位擴展出廠架構，則可以將此欄位添加到相關的工廠表單。
+
+## 驗證表單 {#validate-forms}
+
+您可以在表單中加入驗證控制項。
+
+### 授予欄位的唯讀存取權
+
+若要授予欄位的唯讀存取權，請使用 `readOnly="true"` 屬性。 例如，您可能想要顯示記錄的主要索引鍵，但具有唯讀存取權。 [顯示全文](form-structure.md#non-editable-fields)。
+
+在此範例中，主鍵(`iRecipientId`) `nms:recipient` 架構以唯讀存取顯示：
+
+```xml
+<value xpath="@iRecipientId" readOnly="true"/>
+```
+
+### 檢查必填欄位
+
+您可以檢查必填資訊：
+
+* 使用 `required="true"` 屬性。
+* 使用 `<leave>` 節點來檢查這些欄位並顯示錯誤訊息。
+
+在此範例中，需要電子郵件地址，如果使用者未提供此資訊，則會顯示錯誤訊息：
+
+```xml
+<input xpath="@email" required="true"/>
+<leave>
+  <check expr="@email!=''">
+    <error>The email address is required.</error>
+  </check>
+</leave>
+```
+
+深入了解 [運算式欄位](form-structure.md#expression-field) 和 [表單內容](form-structure.md#context-of-forms).
+
+### 驗證值
+
+您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 例如，使用這些呼叫進行複雜驗證，以根據授權值清單檢查值。 [顯示全文](form-structure.md#soap-methods)。
+
+1. 在JS檔案中建立驗證函式。
+
+   範例:
+
+   ```js
+   function nms_recipient_checkValue(value)
+   {
+     logInfo("checking value " + value)
+     if (…)
+     {
+       logError("Value " + value + " is not valid")
+     }
+     return 1
+   }
+   ```
+
+   在此範例中，函式的名稱為 `checkValue`. 此函式用於檢查 `recipient` 資料類型 `nms` 命名空間。 系統會記錄正在檢查的值。 如果值無效，則會記錄錯誤訊息。 如果值有效，則返回值1。
+
+   您可以使用傳回的值來修改表單。
+
+1. 在表單中，新增 `<soapCall>` 元素 `<leave>` 元素。
+
+   在此範例中，SOAP呼叫用於驗證 `@valueToCheck` 字串：
+
+   ```xml
+   <form name="recipient" (…)>
+   (…)
+     <leave>
+       <soapCall name="checkValue" service="nms:recipient">
+         <param exprIn="@valueToCheck" type="string"/>
+       </soapCall>
+     </leave>
+   </form>
+   ```
+
+   在此範例中， `checkValue` 方法與 `nms:recipient` 服務已使用：
+
+   * 服務是命名空間和資料類型。
+   * 方法是函式名稱。 名稱區分大小寫。
+
+   呼叫會同步執行。
+
+   將顯示所有例外。 如果您使用 `<leave>` 元素，則使用者必須等到輸入的資訊經過驗證後，才能儲存表單。
+
+此範例說明如何從表單進行服務呼叫：
+
+```xml
+<enter>
+  <soapCall name="client" service="c4:ybClient">
+    <param exprIn="@id" type="string"/>
+    <param type="boolean" xpathOut="/tmp/@count"/>
+  </soapCall>
+</enter>
+```
+
+在此範例中，輸入是ID，此為主鍵。 當使用者填寫此ID的表單時，會以此ID作為輸入參數進行SOAP呼叫。 輸出是寫入此欄位的布林值： `/tmp/@count`. 您可以在表單內使用此布林值。 深入了解 [表單內容](form-structure.md#context-of-forms).
