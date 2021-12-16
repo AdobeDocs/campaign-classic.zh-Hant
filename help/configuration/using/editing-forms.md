@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: a6549ad4d94b93d65752df66aeec39b90e4c3ec5
+source-git-commit: f4b9ac3300094a527b5ec1b932d204f0e8e5ee86
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 5%
+source-wordcount: '488'
+ht-degree: 4%
 
 ---
 
@@ -83,3 +83,91 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 
    此表單顯示項目清單。
 
+## 容器
+
+在表單中，您可以將容器用於各種用途：
+
+* 在表單中組織內容
+* 定義輸入欄位的存取權
+* 在其他表單中巢狀內嵌表單
+
+[顯示全文](form-structure.md#containers)。
+
+### 組織內容
+
+使用容器來組織表單中的內容：
+
+* 您可以將欄位分組為區段。
+* 您可以將頁面新增至多頁表單。
+
+若要插入容器，請使用 `<container>` 元素。 [顯示全文](form-structure.md#containers)。
+
+#### 群組欄位
+
+使用容器將輸入欄位分組為有組織的區段。
+
+若要將區段插入表單中，請使用此元素： `<container type="frame">`. （可選）要添加節標題，請使用 `label` 屬性。
+
+語法： `<container type="frame" label="`*section_title*`"> […] </container>`
+
+在此範例中，容器定義 **建立** 部分，包括 **[!UICONTROL Created by]** 和 **[!UICONTROL Name]** 輸入欄位：
+
+```xml
+<form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
+      name="coupon" namespace="nms" type="default" xtkschema="xtk:form">
+  <input xpath="@code"/>
+  <input xpath="@type"/>
+  <container label="Creation" type="frame">
+    <input xpath="createdBy"/>
+    <input xpath="createdBy/@name"/>
+  </container>
+</form>
+```
+
+![](assets/console_screen_form.png)
+
+#### 將頁面新增至多頁表單
+
+對於多頁表單，請使用容器建立表單頁面。
+
+此範例顯示 **一般** 和 **詳細資料** 表單頁面：
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+### 定義欄位存取
+
+使用容器來定義可見項目，並定義欄位的存取權。 您可以開啟或關閉欄位群組。
+
+### 巢狀表單
+
+使用容器在其他表單中巢狀內嵌表單。 [顯示全文](#add-pages-to-multipage-forms)。
+
+## 影像參考
+
+要查找影像，請選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** 的上界。
+
+若要將影像與表單中的元素（例如圖示）建立關聯，您可以將參照新增至影像。 使用 `img` 屬性，例如 `<container>` 元素。
+
+語法: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
+
+此範例顯示 `book.png` 和 `detail.png` 影像 `ncm` 命名空間：
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+這些影像用於使用者點按以導覽多頁表單的圖示：
+
+![](assets/nested_forms_preview.png)
