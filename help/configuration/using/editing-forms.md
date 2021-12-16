@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 2b7341bb7fd5ecd93ccc9abd27789a013fda37fa
+source-git-commit: df3c833e99caeb94df1978dc8792b86c8634626b
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 2%
@@ -361,7 +361,7 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 
    或者，移除 `type="frame"` 屬性 `<container>` 元素。
 
-### 巢狀表單 {#nest-forms}
+### 巢狀表單
 
 您可以在其他表單內巢狀內嵌表單。 例如，您可以在iconbox表單內巢狀內嵌筆記型電腦表單。
 
