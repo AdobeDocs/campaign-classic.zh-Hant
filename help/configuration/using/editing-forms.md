@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: dcfa6d1e5623792c852d164d636ebe19a7aaa614
+source-git-commit: b06e7b3d2dcb172e6a10c383b5f9800960e7a074
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -361,23 +361,9 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 
    或者，移除 `type="frame"` 屬性 `<container>` 元素。
 
-## 巢狀表單 {#nest-forms}
+### 巢狀表單 {#nest-forms}
 
 您可以在其他表單內巢狀內嵌表單。 例如，您可以在iconbox表單內巢狀內嵌筆記型電腦表單。
 
 嵌套控制項的導航級別。 使用者可以向下切入子表單。
-
-要在其他表單中嵌套表單，請插入 `<container>` 元素並設定 `type` 屬性。 對於頂層表單，您可以在外部容器或 `<form>` 元素。
-
-### 範例
-
-此範例顯示複雜表單：
-
-* 頂層表單是iconbox表單。 該形式包括兩個標籤的容器 **一般** 和 **詳細資料**.
-
-   因此，外部表單會顯示 **一般** 和 **詳細資料** 頁面。 若要存取這些頁面，使用者請按一下表單左側的圖示。
-
-* 子表單是嵌套在 **一般** 容器。 該子表單包括兩個標籤的容器 **名稱** 和 **連絡人**.
-
-
 
