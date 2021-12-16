@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0dfce3b514fefef490847d669846e515b714d222
+source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1286'
 ht-degree: 2%
 
 ---
@@ -403,3 +403,24 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 因此， **一般** 外部表單的頁面顯示 **名稱** 和 **連絡人** 頁簽。
 
 ![](assets/nested_forms_preview.png)
+
+## 修改工廠輸入表單 {#modify-factory-form}
+
+要修改工廠表單，請執行以下步驟：
+
+1. （可選）擴展相關資料架構：
+
+   1. 從功能表中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+   1. 選取資料結構並加以擴充。 例如，您可以新增欄位。 [顯示全文](extending-a-schema.md)。
+
+      >[!CAUTION]
+      > 請勿在工廠命名空間中修改原始資料，而是在自訂命名空間中擴充資料。 原因在於，在軟體升級期間，工廠命名空間中的所有資料都會遭到覆寫。 例如， `xtk`, `ncm`，和 `nms` 工廠命名空間會遭覆寫。 未修改自訂命名空間中的資料。
+
+1. 修改工廠輸入表單：
+
+   1. 從功能表中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. 選取輸入表單並加以修改。
+
+   您可以擴展工廠資料結構，但無法擴展工廠輸入表單。 建議您直接修改工廠輸入表單，而不重新建立。 在軟體升級期間，您在工廠輸入表單中的修改將與升級合併。 如果自動合併失敗，您可以解決衝突。 [顯示全文](../../production/using/upgrading.md#resolving-conflicts)。
+
+   例如，如果您使用其他欄位擴展出廠架構，則可以將此欄位添加到相關的工廠表單。
