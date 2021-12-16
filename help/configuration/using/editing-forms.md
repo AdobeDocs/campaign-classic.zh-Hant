@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
+source-git-commit: c08a4b3540da6370584e32e13723bee352402914
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
@@ -407,12 +407,5 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 ## 修改工廠輸入表單 {#modify-factory-form}
 
 要修改工廠表單，請執行以下步驟：
-
-1. （可選）擴展相關資料架構：
-
-   1. 從功能表中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
-   1. 選取資料結構並加以擴充。 例如，您可以新增欄位。 [顯示全文](extending-a-schema.md)。
-
-
 
 
