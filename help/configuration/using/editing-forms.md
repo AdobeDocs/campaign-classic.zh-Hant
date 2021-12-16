@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
+source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1143'
 ht-degree: 2%
 
 ---
@@ -413,7 +413,6 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
    1. 從功能表中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
    1. 選取資料結構並加以擴充。 例如，您可以新增欄位。 [顯示全文](extending-a-schema.md)。
 
-      >[!CAUTION]
-      > 請勿在工廠命名空間中修改原始資料，而是在自訂命名空間中擴充資料。 原因在於，在軟體升級期間，工廠命名空間中的所有資料都會遭到覆寫。 例如， `xtk`, `ncm`，和 `nms` 工廠命名空間會遭覆寫。 未修改自訂命名空間中的資料。
+
 
 
