@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
+source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 97%
 
 ---
 
@@ -28,10 +28,11 @@ _2021 年 10 月 8 日_
 
 **修補程式**
 
+* 改善建置9342中可用的計費工作流程修正，該修正需要手動重新啟動工作流程以套用修正。 現在，升級後會自動重新啟動工作流程。
+
 * 修正了將 **互動** 模組與 [Power Booster](../../installation/using/power-booster-and-power-cluster.md) 選項搭配使用時，無法正確管理優惠的問題。 (NEO-39263)
 
 * 修正了在多中間來源執行個體上使用多個 IP 相似性時，傳遞傳送時可能會發生「在 mid 伺服器 xxx 上找不到 ipaffinity xxx」的錯誤。 (NEO-37514)
-
 
 ## ![](assets/do-not-localize/orange_2.png)發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
 
@@ -49,9 +50,9 @@ _2021 年 9 月 7 日_
 
 **其他變更**
 
+* 修正21.1.3導入的回歸，其中包含計費工作流程新護欄。 計費工作流程在錯誤的執行個體上執行，並嘗試傳送未產生的計費報表而當機。 您必須手動重新啟動要套用之修正的工作流程。
 * 先前已棄用的 Microsoft CRM 連接器 (Office 365 和內部部署) 已從介面中移除。 [顯示全文](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * 遷移到 Tomcat 8 後，已更新 IIS 安裝指令碼，修正了 IIS 整合問題。 (NEO-31019)
-* 已新增護欄，僅允許[帳單技術工作流程](../../production/using/monitoring-processes.md#billing-report)在行銷執行個體上執行。
 * 已在工作流程轉變&#x200B;**檢視母體**&#x200B;視窗的資料和架構標籤中改善資料來源識別。
 * 已將缺少的資料庫索引添加到以下架構中，以防止出現資料庫更新問題：xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
@@ -193,6 +194,7 @@ _2021 年 6 月 5 日_
 
 **其他變更**
 
+* 已新增護欄，僅允許[帳單技術工作流程](../../production/using/monitoring-processes.md#billing-report)在行銷執行個體上執行。
 * 適用於 Windows 的 openssl 協力廠商已更新至 1.1.1h 版。
 * 在 Debian 套件說明中，nlserver 已變更為 Adobe Campaign Classic 伺服器。
 
