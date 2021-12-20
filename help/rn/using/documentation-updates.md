@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
 workflow-type: tm+mt
-source-wordcount: '4560'
-ht-degree: 100%
+source-wordcount: '4705'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,31 @@ ht-degree: 100%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
+
+## 2021 年 12 月{#dec-2021}
+
+Campaign Classicv7發行說明已重新整理，以簡化導覽。 [閱讀全文](rn-overview.md)
+
+更新並改善Campaign中表單版本的相關檔案。 [閱讀全文](../../configuration/using/editing-forms.md)
+
+CentOs 8已到期，現已於Adobe Campaign Classic淘汰。 [閱讀全文](deprecated-features.md)
+
+## 2021 年 11 月{#nov-2021}
+
+新增傳入SMS(MO)的限制。 [閱讀全文](../../delivery/using/sms-protocol.md#multipart)
+
+更新CRM連接器部署的移轉程式記錄詳細資訊。 [閱讀全文](../../migration/using/testing-the-migration.md#verification-process)
+
+新增關於IMS權限的需求，以實作Adobe Campaign-Adobe Analytics整合。 [閱讀全文](../../platform/using/adobe-analytics-provisioning.md)
+
+更新Adobe Analytics Data Connector服務終止日期（2022年3月1日至2022年8月17日）。 [閱讀全文](deprecated-features.md)
+
+新增Adobe Experience Platform行動SDK檔案的連結，以了解如何在AdobeLaunch中設定Campaign擴充功能。 [閱讀全文](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+
+新增了關於如何使用JavaScript計算值、交換資料，以及使用SOAP呼叫執行特定操作的區段。[閱讀全文](../../workflow/using/javascript-scripts-and-templates.md)
+
+在工作流程中新增JavaScript程式碼實作範例。 [閱讀全文](../../workflow/using/javascript-in-workflows.md)
+
 
 ## 2021 年 10 月{#oct-2021}
 
