@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: 最新版本
-description: 最新的 Campaign Classic 發行說明
+description: 最新Campaign Classicv7發行說明
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 97%
+source-wordcount: '2559'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,14 @@ ht-degree: 97%
 
 ![](../../assets/v7-only.svg)
 
-本頁面列出&#x200B;**最新 Campaign Classic 版本**&#x200B;的新功能、改善和修正。
+本頁列出隨附的新功能、改進和修正 **最新Campaign Classicv7版本**. 每個新組建都會提供狀態，並以顏色具體化。 進一步了解Campaign Classicv7的建置狀態，位於 [本頁](rn-overview.md).
 
-了解[此頁面](rn-overview.md)中的 Campaign 建置狀態。
+## 版本7.1(21.1)
 
+>[!CAUTION]
+>行銷活動 **[!UICONTROL Help > About...]** 功能表可讓您檢查 [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 不過，請注意，針對本頁所列的9277與9343之間的所有組建版本，版本號碼會設為7.0而非7.1。
 
-## ![](assets/do-not-localize/green_2.png)發行版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
+### ![](assets/do-not-localize/green_2.png)發行版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
 
 _2021 年 10 月 8 日_
 
@@ -34,7 +36,7 @@ _2021 年 10 月 8 日_
 
 * 修正了在多中間來源執行個體上使用多個 IP 相似性時，傳遞傳送時可能會發生「在 mid 伺服器 xxx 上找不到 ipaffinity xxx」的錯誤。 (NEO-37514)
 
-## ![](assets/do-not-localize/orange_2.png)發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
+### ![](assets/do-not-localize/orange_2.png)發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
 
 _2021 年 9 月 7 日_
 
@@ -68,7 +70,7 @@ _2021 年 9 月 7 日_
 * 修正當傳入轉變來自 FDA 資料來源時，無法在&#x200B;**擴充**&#x200B;工作流程活動中使用變數的問題。
 * 修正可能導致電子郵件訊息中 URL 損毀的問題。
 
-## ![](assets/do-not-localize/orange_2.png)發行版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
+### ![](assets/do-not-localize/orange_2.png)發行版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
 
 _2021 年 6 月 5 日_
 
@@ -179,18 +181,18 @@ _2021 年 6 月 5 日_
 
 **棄用的功能**
 
-* 自 Campaign 第 21.1 發行版本開始，已棄用 Adobe Analytics 資料連接器。 如果您使用此連接器，則需使用新連接器 Adobe Analytics 連接器，據以調整實施。
-如需詳細資訊，請參閱[詳細文件](../../technotes/using/aa-connector-migration.md)。
-* 不再支援 Debian 8。
-* 在 20.3 版中淘汰 Oracle CRM 後，相關外部帳戶已從介面中移除。
+* 現在，ODBC驅動程式直接與Adobe Campaign第三方安裝。 安裝驅動程式不再需要手動步驟。
+* Google Big Query現在可用於托管部署。
 
-瞭解更多[與已棄用和已移除的功能頁面相關的資訊](../../rn/using/deprecated-features.md)。
+[閱讀全文](../../installation/using/configure-fda.md)
 
 **功能改善**
 
-* 儲存工作流程時已新增額外檢查，以確定活動名稱是唯一的，且轉變後一律會有活動。
-* **「帳單」 (帳單)**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單設定檔數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上主要設定檔數目的資訊。 [顯示全文](../../workflow/using/about-technical-workflows.md)。
-* 已新增新的 **_keyOnMData** 屬性，以便能夠使用鍵對備忘錄資料進行操作。
+* 已套用有關Microsoft Dynamics Connector Web API的重要修正：
+   * 修正如果篩選條件包含查閱欄位，從Microsoft CRM匯入資料可能會失敗或無法運作的問題。
+   * 修正在工作流程觸發的匯入期間，字串類型欄位的Null值儲存為Null而非空白值的問題。
+   * 修正使用Web API呼叫匯入或匯出資料時，導致下列錯誤的問題：&quot;無效的URI:URI方案太長」。
+   * 修正從Microsoft Dynamics 365匯入期間，無法匯入查詢欄位資料的問題。
 
 **其他變更**
 
@@ -224,14 +226,14 @@ _2021 年 6 月 5 日_
 * 修正由於傳送個人化失敗的特定加入機制，您無法傳送包含一組校樣的傳送的問題。 (NEO-14391)
 * 修正了當查詢和擴充活動以傳送表格為目標時，無法連同警報活動傳送警報的問題。 (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png)發行版本 21.1.2 - 版本編號 9282 {#release-21-1-2-build-9282}
+### ![](assets/do-not-localize/red_2.png)發行版本 21.1.2 - 版本編號 9282 {#release-21-1-2-build-9282}
 
 _2021年 4 月 15 日_
 
 * 密碼管理已經過改善，而可最佳化安全性。
 * 修正可能導致 MTA 當機的問題。
 
-## ![](assets/do-not-localize/red_2.png)發行版本 21.1.1 - 版本編號 9277 {#release-21-1-1-build-9277}
+### ![](assets/do-not-localize/red_2.png)發行版本 21.1.1 - 版本編號 9277 {#release-21-1-1-build-9277}
 
 _2021 年 2 月 22 日_
 

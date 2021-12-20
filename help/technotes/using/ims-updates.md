@@ -3,9 +3,9 @@ product: campaign
 title: Technote — 更新您的環境以使用IMS連線至Adobe Campaign
 description: 行銷活動 — IMS更新
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '587'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ## 有什麼改變？
 
-AdobeIdentity Management服務(IMS)已停止支援舊版Internet Explorer **2021年6月30日**. [深入瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+AdobeIdentity Management服務(IMS)已停止支援舊版Internet Explorer **2021年6月30日**. [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安全架構的一部分，可讓使用者登入用戶端主控台，進而登入Adobe Campaign。
 
@@ -40,10 +40,9 @@ Adobe想要在2021年6月30日之前保留所有客戶的IMS功能。 IMS是安�
 
    * 金標11。 [了解更多](../../rn/using/gold-standard.md)
    * Campaign 21.1.3版。 [了解更多](../../rn/using/latest-release.md)
-   * Campaign 20.2.5版。 [了解更多](../../rn/using/release--20-2.md)
-   * Campaign 20.1.4版。 [了解更多](../../rn/using/release--20-1.md)
-   * Campaign 19.2.4版。 [了解更多](../../rn/using/release--19-2.md)
-   * Campaign 19.1.8版。 [了解更多](../../rn/using/release--19-1.md)
+   * Campaign 20.2.5版。 [了解更多](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+   * Campaign 20.1.4版。 [了解更多](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+   * Campaign 19.2.4版。 [了解更多](../../rn/using/release--2019.md#release-19-2-4-build-9082)
 
    這些版本隨附新的連線通訊協定。 升級對於Campaign伺服器和用戶端主控台都是強制性的：升級所有執行個體後，用戶端主控台必須升級至此版本，並且在升級後還能連線至Campaign **2021年6月30日**.
 

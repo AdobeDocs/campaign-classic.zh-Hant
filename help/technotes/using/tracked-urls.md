@@ -5,7 +5,7 @@ description: 技術檔案
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -30,11 +30,12 @@ ht-degree: 35%
 
 * Gold Standard 8至11。 [了解更多](../../rn/using/gold-standard.md#gs-8)
 * Campaign 21.1.1（版本編號9277）至21.1.2（版本編號9282）版本。 [了解更多](../../rn/using/latest-release.md)
-* Campaign 20.3.1（版本編號9228）至20.3.3（版本編號9234）版本。 [了解更多](../../rn/using/release--20-3.md)
-* Campaign 20.2.1（版本編號9178）至20.2.4（版本編號9187）版本。 [了解更多](../../rn/using/release--20-2.md)
-* Campaign 20.1.1（版本編號9122）至21.1.3（版本編號9124）版本。 [了解更多](../../rn/using/release--20-1.md)
-* Campaign 19.2.2（版本編號9080）至19.2.3（版本編號9081）版本。 [了解更多](../../rn/using/release--19-2.md)
-* Campaign 19.1.5（版本編號9033）至19.1.7（版本編號9036）版本。 [了解更多](../../rn/using/release--19-1.md)
+* Campaign 20.3.1（版本編號9228）至20.3.3（版本編號9234）版本。 [了解更多](../../rn/using/release--2020.md#release-20-3)
+* Campaign 20.2.1（版本編號9178）至20.2.4（版本編號9187）版本。 [了解更多](../../rn/using/release--2020.md#release-20-2)
+* Campaign 20.1.1（版本編號9122）至21.1.3（版本編號9124）版本。 [了解更多](../../rn/using/release--2020.md#release-20-1)
+* Campaign 19.2.2（版本編號9080）至19.2.3（版本編號9081）版本。 [了解更多](../../rn/using/release--2019.md#release-19-2)
+* Campaign 19.1.5（版本編號9033）至19.1.7（版本編號9036）版本。 [了解更多](../../rn/using/release--2019.md#release-19-1)
+
 
 了解如何檢查您的版本 [在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

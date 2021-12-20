@@ -3,7 +3,7 @@ product: campaign
 title: Technote - Adobe Campaign組態更新
 description: Adobe Campaign組態更新
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 12%
@@ -36,10 +36,10 @@ As a **托管或Managed Services客戶**,Adobe會定期通知您建置升級。 
 
 * 金標11。 [了解更多](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [了解更多](../../rn/using/latest-release.md)
-* Campaign 20.2.4版。 [了解更多](../../rn/using/release--20-2.md)
-* Campaign 20.1.4版。 [了解更多](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版。 [了解更多](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版。 [了解更多](../../rn/using/release--19-1.md)
+* Campaign 20.2.5版。 [了解更多](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4版。 [了解更多](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版。 [了解更多](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版。 [了解更多](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 了解如何檢查您的版本 [在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -62,13 +62,13 @@ As a **托管或Managed Services客戶**,Adobe會定期通知您建置升級。 
 此 **現已可用** 應安裝下列主控台版本，以解決最近識別的回歸。 此回歸會阻止使用用戶端主控台的某些元件，例如傳送中的日期選擇器和影像管理。 **主控台升級** 為必填。
 
 * 最新Gold Standard 11組建版本9032@10c2709。 [了解更多](../../rn/using/gold-standard.md)
-* Campaign 20.1.4版。 [了解更多](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版。 [了解更多](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版。 [了解更多](../../rn/using/release--19-1.md)
+* Campaign 20.1.4版。 [了解更多](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版。 [了解更多](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版。 [了解更多](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 ## AdobeIdentity Management系統(IMS)更新
 
-Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021年6月30日**. [深入瞭解](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021年6月30日**. [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 必須升級Campaign用戶端主控台，以確保與Adobe IMS相容。
 
@@ -78,10 +78,10 @@ Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021�
 
 * 金標11。 [了解更多](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [了解更多](../../rn/using/latest-release.md)
-* Campaign 20.2.5版。 [了解更多](../../rn/using/release--20-2.md)
-* Campaign 20.1.4版。 [了解更多](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版。 [了解更多](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版。 [了解更多](../../rn/using/release--19-1.md)
+* Campaign 20.2.5版。 [了解更多](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4版。 [了解更多](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版。 [了解更多](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版。 [了解更多](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 這些版本隨附新的連線通訊協定：升級對於Campaign伺服器和用戶端主控台而言都是必要項目，才能在 **2021年6月30日**.
 
@@ -111,8 +111,8 @@ Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021�
 
 * 金標11。 [了解更多](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [了解更多](../../rn/using/latest-release.md)
-* Campaign 20.2.5版。 [了解更多](../../rn/using/release--20-2.md)
-* Campaign 19.1.8版。 [了解更多](../../rn/using/release--19-1.md)
+* Campaign 20.2.5版。 [了解更多](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 19.1.8版。 [了解更多](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 了解如何檢查您的版本 [在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -120,7 +120,7 @@ Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021�
 
 執行個體升級至更新版本後，所有客戶都需遵循 [過程移至新的驗證模式](../../integrations/using/configuring-adobe-io.md). 這需要您產生新的Adobe I/O代號，並在實施中使用。  
 
-此外，針對混合環境，客戶需確保管道是在中間來源執行個體上設定。 [深入瞭解](../../integrations/using/configuring-pipeline.md)。
+此外，針對混合環境，客戶需確保管道是在中間來源執行個體上設定。 [了解更多](../../integrations/using/configuring-pipeline.md)。
 
 [了解如何移轉至Adobe I/O](../../integrations/using/configuring-adobe-io.md).
 

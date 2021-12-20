@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '652'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 89%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 100%
 <tr>
 <td>Debian</td>
 <td>
+<p>11（64 位元）</p>
 <p>10（64 位元）</p>
 <p>9（64 位元）</p>
 </td>
@@ -63,6 +64,7 @@ ht-degree: 100%
 <tr>
 <td>Windows Server</td>
 <td>
+<p>2019</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -141,17 +143,15 @@ ht-degree: 100%
 <p>11.x</p>
 <p>10.x</p>
 <p>9.6.x</p>
-<p>9.5.x</p>
-<p>9.4.x</p>
 <p><strong>請注意：</strong>您也可以將 Amazon RDS for PostgreSQL 與上述指定版本搭配使用。</p>
 </td>
 </tr>
 <tr>
 <td>SQL Server</td>
 <td>
-<p>2019</p>
+<p>2019年</p>
 <p>2017</p>
-<p>2016</p>
+<p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p><strong>警告：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解更多</a>。</p>
@@ -191,24 +191,41 @@ ht-degree: 100%
 ## 同盟資料存取 (FDA){#FederatedDataAccessFDA}
 
 與 Adobe Campaign [同盟資料存取模組](../../installation/using/about-fda.md)相容的外部資料庫如下所列。
-
 <table>
 <tbody>
+<td><strong>連接器</strong></td>
+<td><strong>版本相容性</strong></td>
+<td><strong>托管模型相容性</strong></td>
+<td><strong>建置相容性</strong></td>
 <tr>
+<tr>
+<td>Snowflake</td>
+<td> </td>
+<td>Managed Services、混合式與內部部署</td>
+<td>最少21.1.5</td>
+</tr>
 <td>Vertica</td>
 <td> </td>
+<td>僅限混合式與內部部署</td>
+<td>最少19.1.4</td>
 </tr>
 <tr>
 <td>Google Big Query</td>
 <td> </td>
+<td>Managed Services、混合式與內部部署</td>
+<td>最少21.1.5</td>
 </tr>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
+<td>混合式與內部部署</td>
+<td>最少19.1.4</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
+<td>Managed Services、混合式與內部部署</td>
+<td>最少19.1.4</td>
 </td>
 </tr>
 <tr>
@@ -219,6 +236,8 @@ ht-degree: 100%
 <p>12c</p>
 <p>11g</p>
 </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -231,20 +250,26 @@ ht-degree: 100%
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
+<td>Managed Services、混合式與內部部署</td>
+<td>最少19.1.4</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019</p>
-<p>2017</p>
-<p>2016</p>
-<p>2014</p>
+<p>2019年</p>
+<p>2017年</p>
+<p>2016年</p>
+<p>2014年</p>
 <p>2012 SP1 及 SP2</p>
 </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -254,12 +279,16 @@ ht-degree: 100%
 <p>15.10</p>
 <p>15.0</p>
 </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -267,12 +296,16 @@ ht-degree: 100%
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>第 1 版 SPS 12</p>
 </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 <tr><td>透過 HiveSQL 提供的 Hadoop</td>
 <td>
@@ -280,13 +313,12 @@ ht-degree: 100%
 <p>HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-</tr>
-<tr>
-<td>Snowflake</td>
-<td> </td>
+<td>僅限混合式與內部部署</td>
+<td>最少6.11伏</td>
 </tr>
 </tbody>
 </table>
+
 
 ## 用戶端主控台 {#ClientConsoleoperatingsystems}
 
@@ -299,8 +331,8 @@ ht-degree: 100%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016</p>
-<p>2012</p>
+<p>2016年</p>
+<p>2012年</p>
 </td>
 </tr>
 <tr>

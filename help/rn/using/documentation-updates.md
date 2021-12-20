@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '4560'
 ht-degree: 100%
@@ -170,7 +170,7 @@ Campaign 資料模型概觀已改進並重新組織。[顯示全文](../../confi
 
 Campaign Federated Data Access (FDA) 文件已經過改良，並包含每個外部資料庫組態的詳細資訊，且已移至[此區段](../../installation/using/about-fda.md)。
 
-[Campaign 20.2.3 版已移至](../../rn/using/release--20-2.md#release-20-2-3-build-9182)「一般可用性」(GA)。
+[Campaign 20.2.3 版已移至](../../rn/using/release--2020.md#release-20-2-3-build-9182)「一般可用性」(GA)。
 
 「隱私權」區段已移動，並包含兩個新頁面：[隱私權管理](../../platform/using/privacy-management.md)及[管理隱私權要求](../../platform/using/privacy-requests.md)。
 

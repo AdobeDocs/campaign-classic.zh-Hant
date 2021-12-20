@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 77%
 
 ---
 
@@ -17,19 +17,17 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-定期更新 Adobe Campaign。每年平均發行二或三個具有新功能、改善和修正的次要版本。此外，我們定期發行只累積修正的版本編號。
+定期更新 Adobe Campaign。每年發行一或兩個含新功能、改善和修正的次要版本。 此外，我們定期發行只累積修正的版本編號。
 
 此定期更新的目的是為了讓您掌握最新、最佳的資訊，進而確保環境安全，以改善我們的產品使用體驗。
 
-這就是我們相信您需要執行最新 Adobe Campaign 版本的重要原因。此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
+這就是為什麼我們相信你 **運行最新版本** Adobe Campaign。 此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
 
 ## 發行狀態{#rn-statuses}
 
-狀態與每個版本編號皆有關聯。您可檢視狀態清單，並瞭解其狀態意涵。
+每個新組建都會提供狀態，並以顏色具體化。
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
-
-最後&#x200B;**一個 GA 版本編號**&#x200B;為：[[!DNL Gold Standard]  第 11 發行版本](../../rn/using/gold-standard.md#gs-11)及[ Campaign 21.1.4 版本](../../rn/using/latest-release.md#release-21-1-4-build-9340)。
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
@@ -41,9 +39,9 @@ ht-degree: 100%
 
 ## 建議{#recommendations}
 
-若要確保穩定設定，我們建議您在所有執行相同用戶端設定的伺服器上，安裝相同的穩定版本編號。
+若要確保設定穩定，建議您安裝 **同樣穩定的組建** 在同一客戶機配置上運行的所有伺服器上。
 
-此外，客戶端控制台應與伺服器實例位於同一個版本。
+此外，客戶端控制台必須與伺服器實例位於同一個版本。
 
 若要保持最新的實施，請務必閱讀每個新發行版本的[已棄用和已移除功能](../../rn/using/deprecated-features.md)和[相容性對照表](../../rn/using/compatibility-matrix.md)頁面。
 
@@ -62,6 +60,7 @@ ht-degree: 100%
 
 ## 支援和其他有效連結{#support}
 
+* [尋找您的Campaign版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [說明與支援](../../support.md)
 * [控制面板發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)
 * [最新文件更新](../../rn/using/documentation-updates.md)

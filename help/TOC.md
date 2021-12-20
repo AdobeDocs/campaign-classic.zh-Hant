@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: ht
-source-wordcount: '2575'
-ht-degree: 100%
+source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+workflow-type: tm+mt
+source-wordcount: '2581'
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,14 @@ ht-degree: 100%
 + 發行說明 {#release-notes}
    + [開始升級](rn/using/rn-overview.md)
    + [最新發行版本](rn/using/latest-release.md)
-   + [!DNL Gold Standard] 發行版本{#gs-release}
-      + [什麼是 [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard]發行說明](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] 相容性對照表](rn/using/compatibility-matrix-gs.md)
    + 先前版本 {#previous-releases}
-      + [第 20.3 發行版本](rn/using/release--20-3.md)
-      + [第 20.2 發行版本](rn/using/release--20-2.md)
-      + [第 20.1 發行版本](rn/using/release--20-1.md)
-      + [第 19.2 發行版本](rn/using/release--19-2.md)
-      + [第 19.1 發行版本](rn/using/release--19-1.md)
-      + [第 18.10 發行版本](rn/using/release--18-10.md)
-      + [第 18.6 發行版本](rn/using/release--18-6.md)
-      + [第 18.4 發行版本](rn/using/release--18-4.md)
+      + [!DNL Gold Standard] 發行版本{#gs-release}
+         + [什麼是 [!DNL Gold Standard]](rn/using/gs-overview.md)
+         + [[!DNL Gold Standard]發行說明](rn/using/gold-standard.md)
+         + [[!DNL Gold Standard] 相容性對照表](rn/using/compatibility-matrix-gs.md)
+      + [2020年](rn/using/release--2020.md)
+      + [2019](rn/using/release--2019.md)
+      + [2018](rn/using/release--2018.md)
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
 + 開始使用{#getting-started}
@@ -560,7 +555,7 @@ ht-degree: 100%
       + [其他資料](interaction/using/additional-data.md)
       + [擴充功能範例](interaction/using/extension-example.md)
       + [建立測試環境](interaction/using/creating-a-test-environment.md)
-      + [勾點](interaction/using/hooks.md)
+      + [修改標準引擎行為](interaction/using/hooks.md)
       + [分佈式架構](interaction/using/distributed-architectures.md)
       + [資料緩衝區設定](installation/using/interaction---data-buffer.md)
    + 使用實例 {#case-study}
@@ -849,6 +844,7 @@ ht-degree: 100%
       + [技術備註](technotes/using/technote.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
+      + [終止支援TLS 1.0和1.1](technotes/using/eol-tls-support.md)
    + 電子郵件和推播通知{#technotes-email}
       + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
       + [Apple 郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)
