@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2556'
 ht-degree: 88%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 88%
 ## 版本7.1(21.1)
 
 >[!CAUTION]
->行銷活動 **[!UICONTROL Help > About...]** 功能表可讓您檢查 [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 不過，請注意，針對本頁所列的9277與9343之間的所有組建版本，版本號碼會設為7.0而非7.1。
+>行銷活動 **[!UICONTROL Help > About...]** 功能表可讓您檢查 [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 不過請注意，本頁所列的9277與9343之間的所有組建版本編號都顯示7.0而非7.1。
 
 ### ![](assets/do-not-localize/green_2.png)發行版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
 
