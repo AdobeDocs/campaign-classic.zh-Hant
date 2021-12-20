@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: bf063ec8f06c3e8e70011a5b5101f17e163a383c
+source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >如果您透過oAuth驗證使用舊版觸發器整合， **您需要依照下列說明移至Adobe I/O**.
 >請注意，在此移至 [!DNL Adobe I/O]，某些傳入的觸發器可能會遺失。
 >
->Campaign的舊版oAuth驗證模式將於 **2021年10月20日**. 托管環境可從擴充功能中獲益，直到  **2022年2月23日**. 身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須 [提供OAuth應用程式的AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) Adobe。
+>使用Campaign的舊版oAuth驗證模式已於 **2021年10月20日**. 托管環境可從擴充功能中獲益，直到  **2022年2月23日**. 身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須 [提供OAuth應用程式的AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) Adobe。
 
 ## 先決條件 {#adobe-io-prerequisites}
 
