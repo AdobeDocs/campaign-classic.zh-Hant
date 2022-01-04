@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 6c5cac3ccc60deb5940c785c9cb8b08f5938fe62
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 50%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 50%
 
 ## 新增功能
 
-* **[9月版已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
+* **[10月發行版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
 
-* **[Apple郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)** 和 **[技術檔案](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 請參閱針對Apple關於iOS 15的公告所提供的初始指引
+* **[Apple郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)** 和 **[技術檔案](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 了解Apple有關iOS 15的公告之回應指引
 
 * **[透過IMS/Adobe ID連線？ 升級至最新組建版本](technotes/using/ims-updates.md)**<br/> 如果您使用IMS連線至Campaign，您必須升級，才能在** 2021年6月30日&#x200B;**
 

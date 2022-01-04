@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1697'
 ht-degree: 35%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 35%
    請注意，舊連接器現已過時。 已棄用的功能仍可使用，但將不會進一步增強或支援。 在[本頁](../../rn/using/deprecated-features.md)中深入瞭解。
 
 1. 參考此外部帳戶的傳遞範本。
+
+>[!NOTE]
+>
+> 針對SMS傳送，類型應使用中建立的特定SMS相關性 **one** 專用應用程式伺服器容器。 [了解更多](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## 建立SMPP外部帳戶 {#creating-an-smpp-external-account}
 

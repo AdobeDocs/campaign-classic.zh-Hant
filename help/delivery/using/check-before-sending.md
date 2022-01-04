@@ -5,9 +5,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -92,9 +92,11 @@ ht-degree: 4%
 
 * 對於每個IPAfinity元素，聲明可使用的IP地址。 [了解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在 [類型](../../campaign-opt/using/about-campaign-typologies.md) 使用 **[!UICONTROL Managing affinities with IP addresses]** 欄位，將傳遞連結至管理所述相關性的傳遞伺服器(MTA)。 [深入瞭解](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在 [類型](../../campaign-opt/using/about-campaign-typologies.md) 使用 **[!UICONTROL Managing affinities with IP addresses]** 欄位，將傳遞連結至管理所述相關性的傳遞伺服器(MTA)。 [了解更多](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 傳送電子郵件後，檢查標題以確認傳送的來源IP位址。 您的電子郵件管理員應可協助您取得標題資訊。
+
+* 針對SMS傳送，請確定SMS通道具有專屬相關性，僅限於 **one** 應用程式伺服器容器。 [了解更多](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >

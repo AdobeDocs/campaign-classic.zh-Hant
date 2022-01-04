@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
+source-git-commit: fbab510788abe0fccbbd791233c906e7f9d8d703
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1198'
 ht-degree: 1%
 
 ---
@@ -200,12 +200,11 @@ export neolane_LANG=fra
 
    * Debian
 
-      提供了OOO_INSTALL_DIR、OOO_BASIS_INSTALL_DIR、OOO_URE_INSTALL_DIR的預設值。 您可以在 **customer.sh** 如果LibreOffice安裝的佈局不同：
+      提供了OOO_INSTALL_DIR和OOO_BASIS_INSTALL_DIR的預設值。 您可以在 **customer.sh** 如果LibreOffice安裝的佈局不同：
 
       ```
       export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
       export OOO_INSTALL_DIR=/usr/lib/libreoffice/
-      export OOO_URE_INSTALL_DIR=/usr/lib/ure/share/
       ```
 
    * CentOs
@@ -215,7 +214,6 @@ export neolane_LANG=fra
       ```
       export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
       export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
-      export OOO_URE_INSTALL_DIR=/usr/lib64/libreoffice/ure/share/
       ```
 
 * 針對Java開發套件(JDK):

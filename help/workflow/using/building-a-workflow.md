@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1625'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,10 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   有關追蹤和啟動進階鎖定工作流程的圖示，請參閱 [節](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   與進度和記錄顯示相關的圖示在以下章節中詳細說明：
+
+   * [顯示進度](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [顯示日誌](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **對象對齊**
 
@@ -122,7 +125,7 @@ ht-degree: 3%
 
 ![](assets/example1-comment.png)
 
-## 目標工作流程 {#targeting-workflows}
+## 目標定位工作流程 {#targeting-workflows}
 
 目標工作流程可讓您建立數個傳送目標。 由於工作流活動，您可以建立查詢、根據特定條件定義聯合或排除、新增排程。 此定位的結果可自動轉移至清單，作為傳送動作的目標
 
