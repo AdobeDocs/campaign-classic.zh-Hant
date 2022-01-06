@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: 最新版本
-description: 最新Campaign Classicv7發行說明
+description: 最新 Campaign Classic v7 發行說明
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 91%
+source-wordcount: '2580'
+ht-degree: 97%
 
 ---
 
@@ -181,18 +181,18 @@ _2021 年 6 月 5 日_
 
 **棄用的功能**
 
-* 現在，ODBC驅動程式直接與Adobe Campaign第三方安裝。 安裝驅動程式不再需要手動步驟。
-* Google Big Query現在可用於托管部署。
+* 自 Campaign 第 21.1 發行版本開始，已棄用 Adobe Analytics 資料連接器。 如果您使用此連接器，則需使用新連接器 Adobe Analytics 連接器，據以調整實施。
+如需詳細資訊，請參閱[詳細文件](../../technotes/using/aa-connector-migration.md)。
+* 不再支援 Debian 8。
+* 在 20.3 版中淘汰 Oracle CRM 後，相關外部帳戶已從介面中移除。
 
-[閱讀全文](../../installation/using/configure-fda.md)
+瞭解更多[與已棄用和已移除的功能頁面相關的資訊](../../rn/using/deprecated-features.md)。
 
 **功能改善**
 
-* 已套用有關Microsoft Dynamics Connector Web API的重要修正：
-   * 修正如果篩選條件包含查閱欄位，從Microsoft CRM匯入資料可能會失敗或無法運作的問題。
-   * 修正在工作流程觸發的匯入期間，字串類型欄位的Null值儲存為Null而非空白值的問題。
-   * 修正使用Web API呼叫匯入或匯出資料時，導致下列錯誤的問題：&quot;無效的URI:URI方案太長」。
-   * 修正從Microsoft Dynamics 365匯入期間，無法匯入查詢欄位資料的問題。
+* 儲存工作流程時已新增額外檢查，以確定活動名稱是唯一的，且轉變後一律會有活動。
+* **「帳單」 (帳單)**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單設定檔數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上主要設定檔數目的資訊。 [顯示全文](../../workflow/using/about-technical-workflows.md)。
+* 已新增新的 **_keyOnMData** 屬性，以便能夠使用鍵對備忘錄資料進行操作。
 
 **其他變更**
 
