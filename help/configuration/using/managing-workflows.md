@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 # 管理工作流程{#managing-workflows}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 依預設，您的新工作流程以預先設定的工作流程範本為基礎，並以收件者表格(nms:recipient)為基礎。 以便根據 **Nms_DefaultRcpSchema** 選項(請參閱 [配置介面](../../configuration/using/configuring-the-interface.md) 部分)，則必須建立新的工作流模板。
 

@@ -6,14 +6,14 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
+source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
-# 測試移轉{#testing-the-migration}
+# 移轉測試{#testing-the-migration}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 根據您的設定，有數種方式可執行移轉測試。
 
-您應有測試/開發環境來執行移轉測試。 開發環境需依授權規範執行：檢查您的授權合約，或聯絡Adobe Campaign的銷售服務。
+您應有測試/開發環境來執行移轉測試。 Adobe Campaign環境需受授權規範：檢查您的授權合約或聯絡您的Adobe代表。
 
 1. 停止所有正在進行的開發，並將其轉移到生產環境中。
 1. 備份開發環境資料庫。
@@ -39,18 +39,12 @@ ht-degree: 1%
 
 1. 嘗試還原備份，以確保備份正確。 請務必訪問資料庫、表、資料等。
 1. 在開發環境中測試移轉程式。
-
-   完整程式於 [移轉至Adobe Campaign 7的必要條件](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) 區段。
-
 1. 如果開發環境的移轉成功，您可以移轉生產環境。
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >由於資料結構有所變更，v5平台和v7平台之間無法匯入和匯出資料套件。
 
->[!NOTE]
->
->Adobe Campaign更新命令(**postugrade**)可讓您同步資源，以及更新結構和資料庫。 此操作只能在應用程式伺服器上執行一次。 同步資源後， **postugrade** 命令可讓您檢測同步是否生成任何錯誤或警告。
 
 ## 移轉工具 {#migration-tools}
 
@@ -70,9 +64,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您必須使用 **-instance:`<instanceame>`** 選項。 我們不建議使用 **-allinstances** 選項。
+>* 您必須使用 **-instance:`<instanceame>`** 選項。 我們不建議使用 **-allinstances** 選項。
+>* Adobe Campaign更新命令(**postugrade**)可讓您同步資源，以及更新結構和資料庫。 此操作只能在應用程式伺服器上執行一次。 同步資源後， **postugrade** 命令可讓您檢測同步是否生成任何錯誤或警告。
 
-### -showCustomEntities和 — showDeletedEntities選項 {#showcustomentities-and--showdeletedentities-options}
+
+### 非標準或缺少對象
 
 * 此 **-showCustomEntities** 選項顯示所有非標準對象的清單：
 
@@ -110,7 +106,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 >[!NOTE]
 >
->請忽略具有JST-310040代碼的所有警告和錯誤。
+>您可以忽略JST-310040程式碼的所有警告和錯誤。
 
 會搜尋下列運算式（區分大小寫）:
 
@@ -158,7 +154,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> 這種錯誤會導致遷移失敗。 請參閱 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. 如果您收到概述類型的Web應用程式錯誤記錄（從v6.02遷移），請參閱 <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">設定Campaign</a>.<br /> </td> 
+   <td> 這種錯誤會導致遷移失敗。 請參閱 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. 如果您收到概述類型的Web應用程式錯誤記錄（從v6.02遷移），請參閱 <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">設定Campaign</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
@@ -167,6 +163,12 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> 不再支援此類型的部署。 Office 365和內部部署的Microsoft CRM連接器部署類型現已過時。 
    </br>如果您在外部帳戶中使用其中一種已棄用的部署類型，則應刪除此外部帳戶，然後您應執行 <b>postugrade</b> 命令。 
    </br>若要變更Web API部署，請參閱 <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">網路應用程式</a>.<br /> </td>
+  </tr> 
+  <tr> 
+   <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
+   <td> PU-0008<br /> </td> 
+   <td> 錯誤<br /> </td> 
+   <td> Microsoft CRM、Salesforce、OracleCRM隨需活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM連接器</a> 目標定位活動。<br /> </td>
   </tr> 
  </tbody> 
 </table>

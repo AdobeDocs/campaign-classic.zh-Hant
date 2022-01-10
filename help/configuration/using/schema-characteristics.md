@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 方案特性{#schema-characteristics}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 引用現有表的架構的特點如下：
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->請勿刪除標準收件者表格中的欄位，即使這些欄位毫無用處。 這可能會在Adobe Campaign資料庫中造成行為錯誤。
+>請勿刪除內建收件者表格中的欄位，即使這些欄位毫無用處。 這可能會在Adobe Campaign資料庫中造成行為錯誤。
 
 ## 檢視屬性 {#the-view-attribute}
 

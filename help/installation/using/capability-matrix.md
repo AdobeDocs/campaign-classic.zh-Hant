@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1f8a51fc7760e8dcdf369cb759de724b0e7bea0c
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '293'
 ht-degree: 20%
 
 ---
@@ -47,8 +47,7 @@ Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一�
 
 >[!CAUTION]
 >
->只有內部部署或混合安裝才能透過FDA存取外部資料庫，但 [Snowflake連接器](../../installation/using/configure-fda-snowflake.md).
-
+>相容的外部資料庫系統取決於您的托管模式。 深入了解 [Campaign相容性矩陣](../../rn/using/compatibility-matrix.md).
 
 **另請參閱**
 
@@ -57,4 +56,3 @@ Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一�
 * [Campaign Classic升級](../../rn/using/rn-overview.md)
 * [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard] 發行版本](../../rn/using/gold-standard.md)
-* [[!DNL Gold Standard] 方案](../../rn/using/gs-overview.md)

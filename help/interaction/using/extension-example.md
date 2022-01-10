@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 07a5742c6f142c786ad8ba2f8774e7e90e8cd191
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 擴充功能範例{#extension-example}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 若是傳入連絡人（客服中心或網站），系統會使用一組適用性規則，向指定連絡人建議最相關的優惠方案。 若要豐富優惠方案的資格條件，請擴充 **nms:interaction** 綱要。
 

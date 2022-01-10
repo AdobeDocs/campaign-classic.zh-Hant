@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9265d389da53e51889c2b7a8cd330c1866a030d9
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-使用Campaign [同盟資料存取](../../installation/using/about-fda.md) (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定MicrosoftAzure synapse分析的存取權。
+使用Campaign [同盟資料存取](../../installation/using/about-fda.md) (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟，設定 **MicrosoftAzure synapse分析**.
 
 1. 在上配置Azure synapse [CentOS](#azure-centos), [Windows](#azure-windows) 或 [Debian](#azure-debian)
 1. 設定Azure synapse [外部帳戶](#azure-external) 在Campaign
@@ -191,7 +191,6 @@ ht-degree: 1%
    >
    >若要允許來自Azure synapseAnalytics端的通訊，您可能需要將公用IP新增至允許清單。 要執行此操作，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
-
 ## azure synapse外部帳戶 {#azure-external}
 
 此 [!DNL Azure Synapse] 外部帳戶可讓您將Campaign執行個體連線至Azure synapse外部資料庫。
@@ -206,14 +205,34 @@ ht-degree: 1%
 
    ![](assets/azure_1.png)
 
-1. 設定 [!DNL Azure Synapse] 外部帳戶，您必須指定：
+1. 在 **[!UICONTROL Configuration]**，選取 **[!UICONTROL Azure Synapse Analytics]** 從 **[!UICONTROL Type]** 下拉式清單。
 
-   * **[!UICONTROL Type]**:azure synapse分析
+   ![](assets/azure_2.png)
 
-   * **[!UICONTROL Server]**:azure synapse伺服器的URL
+1. 設定 [!DNL Azure Synapse] 外部帳戶：
 
-   * **[!UICONTROL Account]**:使用者名稱
+   * 對於標準驗證，必須指定：
 
-   * **[!UICONTROL Password]**:使用者帳戶密碼
+      * **[!UICONTROL Server]**:azure synapse伺服器的URL
 
-   * **[!UICONTROL Database]**:資料庫的名稱
+      * **[!UICONTROL Account]**:使用者名稱
+
+      * **[!UICONTROL Password]**:使用者帳戶密碼
+
+      * **[!UICONTROL Database]**:資料庫的名稱
+
+      ![](assets/azure_3.png)
+
+   * 對於系統分配的托管身份驗證，必須指定：
+
+      * **[!UICONTROL Server]**:azure synapse伺服器的URL
+
+      * **[!UICONTROL Database]**:資料庫的名稱
+
+      * **[!UICONTROL Options]**:新增下列語法 `Authentication=ActiveDirectoryMsi`
+
+      ![](assets/azure_4.png)
+
+
+
+1. 按一下&#x200B;**[!UICONTROL Save]**。

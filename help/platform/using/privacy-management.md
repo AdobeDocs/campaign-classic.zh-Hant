@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '886'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Adobe Campaign 的功能可協助您遵循下列法規：
 
 * **存取權限**&#x200B;是指資料主體有權從資料控制方取得關於其個人資料是否正在處理、處理地點及基於何種目的的確認。資料控制方應免費提供電子格式的個人資料副本。
 
-* 「**被遺忘的權利**」（刪除要求）也稱為「資料抹除」，其可賦予「資料主體」權利，讓資料庫控制方得以清除其個人資料、停止進一步散發資料，並可能讓第三方停止處理資料。
+* 「**被遺忘的權利**」(刪除要求) 也稱為「資料抹除」，其可賦予資料主體權利，讓資料庫控制人員得以清除其個人資料、停止進一步散發資料，並可能讓第三方停止處理資料。
 
 如要瞭解如何建立&#x200B;**存取**&#x200B;及&#x200B;**刪除**&#x200B;要求，以及 Adobe Campaign 如何處理這些要求，請參閱[實作步驟](../../platform/using/privacy-requests.md)。
 

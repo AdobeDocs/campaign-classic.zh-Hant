@@ -4,10 +4,10 @@ title: 'Campaign Classic的說明與支援選項 '
 description: 需要Campaign Classic支援嗎？ 您來對地方了！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 69%
+source-wordcount: '793'
+ht-degree: 70%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 69%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)。
 >
->請注意，您的執行個體必須托管於AWS，並使用最新的 [Gold Standard](rn/using/gs-overview.md) 建置或 [最新GA版本編號(21.1.4)](rn/using/latest-release.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須托管於AWS，並使用最新的 [GA版本編號](rn/using/rn-overview.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 
 ### 如何存取控制面板？
 

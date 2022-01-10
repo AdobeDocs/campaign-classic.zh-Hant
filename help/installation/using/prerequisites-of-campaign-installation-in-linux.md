@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8794464d6fcc8ab648cd6866266855a701538fde
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 1%
@@ -46,15 +46,15 @@ ht-degree: 1%
 
    如果命令未傳回任何內容（空行），表示配置正確。
 
-* 您必須 **0.9.8版** 或 **1.0** 的OpenSSL。
+* 您必須有OpenSSL版本 **1.0.2** 或更高版本。
 
-   對於RHEL 7分發，需要1.0版的OpenSSL。
+   對於RHEL 7/8發佈，需要1.0版的OpenSSL。
 
 * 若要使用Adobe Campaign，您必須具備 **里比庫** 程式庫已安裝。
 
    下列版本 **里比庫** 支援（32位元或64位元）:
 
-   * RHEL 7、CentOS 7:libicu50
+   * RHEL 7/8,CentOS 7:libicu50
    * Debian 8:libicu52
    * Debian 9:libicu57
 

@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-如果您要從v5.11或v6.02移轉，本節將詳細說明要在Adobe Campaign v7中執行的設定。
+本節詳細說明從v5.11或v6.02移轉時，在Adobe Campaign v7中要執行的設定。
 
 此外：
 
-* 如果您從v5.11移轉，您也必須完成 [v5.11中的特定配置](../../migration/using/specific-configurations-in-v5-11.md) 區段。
-* 如果您從v6.02移轉，您也必須完成 [v6.02中的特定配置](../../migration/using/specific-configurations-in-v6-02.md) 區段。
+* 如果您從v5.11移轉，您也必須完成以下章節所述的設定： [本節](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* 如果您從v6.02移轉，您也必須完成以下章節所述的設定： [本節](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## 時區 {#time-zones}
 
@@ -662,12 +662,3 @@ sessionTokenOnly="false"
 ### 匿名Web應用程式 {#anonymous-web-applications}
 
 如果您遇到任何問題，請重新發佈Web應用程式。
-
-## 紅帽 {#red-hat}
-
-如果v6.02或v5.11中已刪除現成可用的結構描述，則在升級後之後，您可能無法再編輯結構描述。 如果發生此情況，請執行以下命令：
-
-```
-su - neolane
-nlserver config -postupgrade -instance:<instance name> -force
-```

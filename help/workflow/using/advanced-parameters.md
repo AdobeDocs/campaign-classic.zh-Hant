@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 2%
+source-wordcount: '501'
+ht-degree: 1%
 
 ---
 
@@ -73,8 +73,9 @@ ht-degree: 2%
 
 此欄位可讓您定義當活動發生錯誤時要執行的動作。 有兩種可能的選項：
 
-* **[!UICONTROL Stop the process]**:工作流程會自動停止。 其狀態變更為 **[!UICONTROL Failed]**. 問題解決後，重新啟動工作流。
+* **[!UICONTROL Suspend the process]**:工作流程會自動停止。 其狀態變更為 **[!UICONTROL Failed]**. 問題解決後，重新啟動工作流。
 * **[!UICONTROL Ignore]**:不會執行此任務和以下所有任務（在同一分支中）。 這對循環任務非常有用。 如果分支有上游的排程器，則會照常在下一個執行日期開始。
+* **[!UICONTROL Abort on error]**:工作流程會自動停止，且無法重新啟動。 其狀態變更為 **[!UICONTROL Failed]**.
 
 ## 初始化指令碼 {#initialization-script}
 

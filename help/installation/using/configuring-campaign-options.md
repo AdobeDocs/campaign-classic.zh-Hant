@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 0%
@@ -602,15 +602,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span> <br /> </td> 
-   <td> <p>可讓您定義從資料庫中清除隔離的延遲。</p><p> 在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
+   <td> <p>可讓您定義從資料庫中清除隔離的延遲。</p><p> 在介面中修改延遲後，會自動建立此選項。 If you modify the value from the options list, it should be expressed in seconds.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RecycledDeliveryPurgeDelay</span> <br /> </td> 
-   <td> <p>可讓您定義從資料庫中清除回收傳遞的延遲。</p><p> 在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
+   <td> <p>Lets you define the delay after which recycled deliveries are erased from the database.</p><p> 在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RejectsPurgeDelay</span> <br /> </td> 
-   <td> <p>可讓您定義從資料庫中清除拒絕的延遲。</p><p>在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
+   <td> <p>可讓您定義從資料庫中清除拒絕的延遲。</p><p>This option is automatically created once the delay is modified within the interface. 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_TrackingLogPurgeDelay</span> <br /> </td> 
@@ -695,9 +695,9 @@ ht-degree: 0%
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
    <td> 在移轉期間，樹狀結構會根據新版本標準自動重新組織。<br /> 此選項可讓您停用導覽樹的自動移轉。 如果您使用它，則在遷移後，您必須刪除過時的資料夾、添加新資料夾並運行所有必要的檢查。<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">資料類型：</span> 整數</p> </li> 
+     <li> <p> <span class="uicontrol">Data type:</span> Integer</p> </li> 
      <li> <p> <span class="uicontrol">值（文字）</span> :1 </p> </li> 
-    </ul> 只有在現成可用的導覽樹已進行太多變更時，才應使用此選項。<br /> 有關詳細資訊，請參閱 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">本節</a>.<br /> </td> 
+    </ul> 只有在現成可用的導覽樹已進行太多變更時，才應使用此選項。<br /> For more on this, refer to <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">this section</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -824,7 +824,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
-   <td> 用於訪問應用程式伺服器的內部基本URL。<br /> </td> 
+   <td> Internal base URL to access the application server.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
@@ -832,7 +832,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_URL</span> <br /> </td> 
-   <td> 公用Web應用程式伺服器的基URL。<br /> </td> 
+   <td> Base URL of the public web application server.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkPassUnknownSQLFunctionsToRDBMS</span> <br /> </td> 
@@ -955,15 +955,15 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Active</span> <br /> </td> 
-   <td> 啟用LDAP伺服器，以用於驗證用戶並向用戶提供授權。<br /> </td> 
+   <td> Enable LDAP server to be used to authenticate users and provide authorizations to users.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AppLogin</span> <br /> </td> 
-   <td> 應用程式登入以連絡伺服器進行各種搜尋。<br /> </td> 
+   <td> Application login to contact the server for various searches.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AppPassword</span> <br /> </td> 
-   <td> 應用程式登入的加密密碼。<br /> </td> 
+   <td> Encrypted password for the application login.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
@@ -983,7 +983,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchFilter</span> <br /> </td> 
-   <td> DN搜尋篩選器。<br /> </td> 
+   <td> DN search filter.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 

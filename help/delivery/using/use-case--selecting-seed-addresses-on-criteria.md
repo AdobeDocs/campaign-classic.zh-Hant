@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 與採購部門一起，負責交付的用戶為購買了警察小說的訂閱者建立了電子報。
 
-為了分享與他們協作的最終結果，交貨經理決定將採購部門的同事添加到交貨中作為種子地址。 使用動態條件可讓您節省配置和更新地址的時間。
+為了分享與他們協作的最終結果，交付經理決定將他們的同事從採購部門添加到交付中，作為種子地址。 使用動態條件可讓您節省配置和更新地址的時間。
 
 若要使用動態條件，您必須具備：
 

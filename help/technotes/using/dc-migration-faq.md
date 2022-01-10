@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1f050ada481a7307a59ea6c81290bb0b24a3bf6c
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
 source-wordcount: '2243'
 ht-degree: 0%
@@ -281,5 +281,5 @@ ht-degree: 0%
 ## 支援和其他有效連結{#support}
 
 * [移轉至Adobe Managed Services(Public Cloud)](dc-migration.md)
-* [Gold Standard升級](../../rn/using/gs-overview.md)
+* [Campaign每年升級](../../rn/using/rn-overview.md#yeary-upgrade)
 * [建置升級常見問題集](../../platform/using/faq-build-upgrade.md)

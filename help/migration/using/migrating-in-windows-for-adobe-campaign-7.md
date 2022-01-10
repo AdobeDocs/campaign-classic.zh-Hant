@@ -1,32 +1,30 @@
 ---
 product: campaign
-title: 在 Windows 中移轉 Adobe Campaign 7
-description: 在 Windows 中移轉 Adobe Campaign 7
+title: 將Microsoft Windows平台移轉至Adobe Campaign v7
+description: 了解如何將Microsoft Windows平台移轉至Adobe Campaign v7
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 63aca25a8d1ae24ef83849b35a44d1b37cfa5e96
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 1%
+source-wordcount: '1504'
+ht-degree: 0%
 
 ---
 
-# 在 Windows 中移轉 Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
+# 將Microsoft Windows平台移轉至Campaign v7{#migrating-in-windows-for-adobe-campaign}
 
 ![](../../assets/v7-only.svg)
 
-## 一般程式 {#general-procedure}
+對於Microsoft Windows環境，移轉步驟如下：
 
-對於Windows，遷移步驟如下：
-
-1. 停止服務：請參閱 [服務停止](#service-stop).
-1. 備份資料庫：請參閱 [備份資料庫和當前安裝](#back-up-the-database-and-the-current-installation).
-1. 移轉平台：請參閱 [部署Adobe Campaign v7](#deploying-adobe-campaign-v7).
-1. 遷移重定向伺服器(IIS):請參閱 [遷移重定向伺服器(IIS)](#migrating-the-redirection-server--iis-).
-1. 重新啟動服務：請參閱 [重新啟動服務](#re-starting-the-services).
-1. 刪除並清除舊版Adobe Campaign:請參閱 [刪除和清除Adobe Campaign舊版](#deleting-and-cleansing-adobe-campaign-previous-version).
+1. 停止所有服務 —  [深入了解](#service-stop).
+1. 備份資料庫 —  [深入了解](#back-up-the-database).
+1. 移轉平台 —  [深入了解](#deploying-adobe-campaign-v7).
+1. 遷移重定向伺服器(IIS)- [深入了解](#migrating-the-redirection-server--iis-).
+1. 重新啟動服務 —  [深入了解](#re-starting-the-services).
+1. 刪除並清除舊版Adobe Campaign - [深入了解](#deleting-and-cleansing-adobe-campaign-previous-version).
 
 ## 服務停止 {#service-stop}
 
@@ -83,11 +81,11 @@ ht-degree: 1%
    taskkill /F /IM nlserver* /T
    ```
 
-## 備份資料庫和當前安裝 {#back-up-the-database-and-the-current-installation}
+## 備份您的Campaign資料庫 {#back-up-the-database}
 
 程式取決於您的Adobe Campaign舊版。
 
-### 從Adobe Campaign v5.11移轉 {#migrating-from-adobe-campaign-v5-11}
+### 適用於Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
 
 1. 備份Adobe Campaign資料庫。
 1. 備份 **Neolane v5** 目錄（使用以下命令）:
@@ -127,7 +125,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-### 從Adobe Campaign v6.02移轉 {#migrating-from-adobe-campaign-v6-02}
+### 適用於Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
 
 1. 備份Adobe Campaign資料庫。
 1. 備份 **Neolane v6** 目錄（使用以下命令）:
@@ -167,7 +165,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-### 從Adobe Campaign v6.1移轉 {#migrating-from-adobe-campaign-v6-1}
+### 適用於Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. 備份Adobe Campaign資料庫。
 1. 備份 **Adobe Campaign v6** 目錄（使用以下命令）:
@@ -267,7 +265,7 @@ ht-degree: 1%
 >
 >尚未啟動Adobe Campaign服務：需要對IIS進行一些更改。
 
-## 遷移重定向伺服器(IIS) {#migrating-the-redirection-server--iis-}
+## 遷移重定向伺服器 {#migrating-the-redirection-server--iis-}
 
 此時，必須停止IIS伺服器。 請參閱 [服務停止](#service-stop).
 
@@ -331,7 +329,7 @@ ht-degree: 1%
 
 ## 安全區域 {#security-zones}
 
-如果您要從v6.02或更舊版本移轉，則必須先配置安全區域，才能啟動服務。 如需詳細資訊，請參閱 [安全性](../../migration/using/general-configurations.md#security).
+如果您要從v6.02或更舊版本移轉，則必須先配置安全區域，才能啟動服務。 [了解更多](../../migration/using/general-configurations.md#security)
 
 ## 重新啟動服務 {#re-starting-the-services}
 
@@ -341,13 +339,13 @@ ht-degree: 1%
 1. 中間來源伺服器.
 1. 行銷伺服器。
 
-繼續進行下一步之前，請對新安裝執行完整測試，確定沒有回歸，而且所有項目都能依照 [一般配置](../../migration/using/general-configurations.md) 區段。
+繼續進行下一步之前，請對新安裝執行完整測試，確定沒有回歸，而且所有項目都能依照 [本頁](../../migration/using/general-configurations.md).
 
-## 刪除和清除Adobe Campaign舊版 {#deleting-and-cleansing-adobe-campaign-previous-version}
+## 刪除舊版 {#deleting-and-cleansing-adobe-campaign-previous-version}
 
 程式取決於您的Adobe Campaign舊版。
 
-### Adobe Campaign v5 {#adobe-campaign-v5}
+### 適用於Adobe Campaign v5 {#adobe-campaign-v5}
 
 在刪除及清除Adobe Campaign v5安裝之前，您必須套用下列建議：
 
@@ -368,7 +366,7 @@ ht-degree: 1%
 
 1. 重新啟動伺服器。
 
-### Adobe Campaign v6.02 {#adobe-campaign-v6-02}
+### 適用於Adobe Campaign v6.02 {#adobe-campaign-v6-02}
 
 刪除並清除Adobe Campaign v6.02安裝前，您必須套用下列建議：
 
@@ -383,7 +381,7 @@ ht-degree: 1%
 
 1. 重新啟動伺服器。
 
-### Adobe Campaign v6.1 {#adobe-campaign-v6-1}
+### 適用於Adobe Campaign v6.1 {#adobe-campaign-v6-1}
 
 刪除並清除Adobe Campaign v6安裝前，您必須套用下列建議：
 

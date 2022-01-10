@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 30f2451849dec0f640915e81c36d0a9c5f466d6c
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 1%
 | 帳單 | 將系統活動報告傳送至billing@neolane.net |
 | cleanup | 清除資料庫：從資料庫中刪除過時的資料，並運行資料庫引擎優化程式所使用統計資訊的更新。 |
 | 設定 | 修改伺服器配置 |
-| copybase | 資料庫的副本 |
 | 匯出 | 導出到命令行：可讓您將在Adobe Campaign用戶端主控台中建立的匯出模型傳送至命令列 |
 | fileconvert | 轉換設定大小的檔案 |
 | 匯入 | 導入到命令行：可讓您將在Adobe Campaign用戶端主控台中建立的匯入模型傳送至命令列。 |

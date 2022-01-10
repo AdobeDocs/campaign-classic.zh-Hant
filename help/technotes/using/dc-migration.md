@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1557'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 內容
 
-作為尊貴的Adobe Campaign Classic客戶，我們致力提供您最佳體驗和價值。 多年來，我們已認識到在雲中托管客戶的價值和可靠性。  作為 [金標計畫](../../rn/using/gold-standard.md)，我們將所有客戶移至Adobe Managed Services(AWS上的Public Cloud)，以提供更好、更可靠的服務。
+作為尊貴的Adobe Campaign Classic客戶，我們致力提供您最佳體驗和價值。 多年來，我們已認識到在雲中托管客戶的價值和可靠性。  作為 [年度升級計畫](../../rn/using/rn-overview.md#yearly-upgrade)，我們將所有客戶移至Adobe Managed Services(AWS上的Public Cloud)，以提供更好、更可靠的服務。
 
 該計畫有三個主要目標：
 
@@ -29,11 +29,11 @@ ht-degree: 2%
 
 ### 字彙
 
-* **版本編號升級**  — 當Adobe Campaign Classic軟體更新為最新的安全版本編號，但仍維持相同的主要/次要版本編號。 例如：Campaign v7 20.2.3版本編號9182至Campaign v7 21.2.5版本編號9188。 [深入瞭解](../../platform/using/faq-build-upgrade.md)。
+* **版本編號升級**  — 當Adobe Campaign Classic軟體更新為最新的安全版本編號，但仍維持相同的主要/次要版本編號。 例如：Campaign v7 20.2.3版本編號9182至Campaign v7 21.2.5版本編號9188。 [了解更多](../../platform/using/faq-build-upgrade.md)。
 * **MID/RT**  — 托管於Analytics Cloud的訊息執行伺服器（批次促銷活動為MID，即時單一訊息為RT）
-* **Gold Standard升級**  — 該方案提供改進的安全、改進的支援、增強的維護和穩定性。 它也可讓日後的升級更輕鬆，並可存取Campaign中的新功能。  [深入瞭解](../../rn/using/gs-overview.md)。
+* **每年升級計畫**  — 該方案提供改進的安全、改進的支援、增強的維護和穩定性。 它也可讓日後的升級更輕鬆，並可存取Campaign中的新功能。  [了解更多](../../rn/using/rn-overview.md#yearly-upgrade)。
 * **AWS** - Amazon Web Services(Amazon Public Cloud)
-* **SFTP**  — 安全檔案傳輸協定。 [深入瞭解](../../platform/using/sftp-server-usage.md)。
+* **SFTP**  — 安全檔案傳輸協定。 [了解更多](../../platform/using/sftp-server-usage.md)。
 
 
 >[!NOTE]
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 * 改善電子郵件容量
 * 更大的資料庫
-* Presod Campaign版本 — Gold Standard
+* 校驗競選版本
 
 **為Adobe Campaign Classic客戶帶來強大、可靠的解決方案**
 
@@ -67,10 +67,10 @@ ht-degree: 2%
 1. 更高的電子郵件傳送容量。 在新資料中心托管的執行個體將能夠受益於電子郵件傳送的專用基礎架構。 這可能會導致電子郵件傳送速度提高，或允許使用較少的傳送IP。
 1. 更好的硬體可擴充性。 增加硬體資源的速度可以快得多。 從技術上講，這次的震級是1小時，而不是數天。
 
-**Gold Standard可讓日後的升級更輕鬆**
+**每年升級使未來升級更輕鬆**
 
 1. 您的組織等待升級的時間越長，升級變得越複雜，且面臨漏洞的可能性也會增加（尤其是從舊版移轉時）。
-1. 有了Gold Standard升級，您的執行個體將會更新，並準備好以更少的手動干預和資源接收更多自動化和定期更新。
+1. 透過Campaign年度升級（原為Gold Standard計畫），您的執行個體將會更新，並準備好以更少的手動干預和資源接收更多自動化和定期更新。
 
 ![](assets/GSMigrations.png)
 
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 ### 此移轉是否為強制性？
 
-此移轉至雲端的步驟為 **前往 [Gold Standard認證](../../rn/using/gs-overview.md)** Adobe Campaign實例。 如果您托管於非公用雲端(AWS)的資料中心，則此移轉為必要。
+此移轉至雲端的步驟為 **前往 [年度升級方案](../../rn/using/rn-overview.md#yearly-upgrade)** Adobe Campaign實例。 如果您托管於非公用雲端(AWS)的資料中心，則此移轉為必要。
 
 Amazon Web Services(AWS)是一個現代化、安全且最佳化的環境，是Adobe Managed Services雲端的托管場所。 [深入了解AWS](https://aws.amazon.com/application-hosting/benefits/).
 
@@ -109,12 +109,6 @@ Adobe致力於保護您的資料，並協助您邁向Adobe Campaign未來的正�
 
 進一步了解Campaign移轉至 [Public Cloud常見問題集](dc-migration-faq.md).
 
-
-## Gold Standard認證歷程
-
-我們將協助您執行每個里程碑之間的驗證步驟。
-
-![](assets/GS-milestones.png)
 
 ## 遷移至Public Cloud的路徑
 
@@ -216,5 +210,5 @@ Adobe將在新資料中心上配置相同數量的IP。
 ## 支援和其他有效連結{#support}
 
 * [移轉至Adobe Managed Services(Public Cloud)常見問題集](dc-migration-faq.md)
-* [Gold Standard升級](../../rn/using/gs-overview.md)
+* [促銷活動年度升級](../../rn/using/rn-overview.md)
 * [建置升級常見問題集](../../platform/using/faq-build-upgrade.md)

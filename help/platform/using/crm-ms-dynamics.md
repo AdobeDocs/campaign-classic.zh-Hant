@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 2cdcd45fc142eb9ae9e32c17a67beb4eaf2d2953
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1104'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 可能的部署是通過 **網頁API** （建議）。 請參閱 [下節](#microsoft-dynamics-implementation-step) 了解設定與Microsoft Dynamics連線的步驟。
 
-資料同步是透過專用的工作流程活動執行。 [深入瞭解](../../platform/using/crm-data-sync.md)。
+資料同步是透過專用的工作流程活動執行。 [了解更多](../../platform/using/crm-data-sync.md)。
 
 ## 實施步驟{#microsoft-dynamics-implementation-steps}
 
@@ -155,7 +155,7 @@ Campaign Classic:
 
 >[!NOTE]
 >
-> 將 [MicrosoftRDS](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)，內部部署和Office 365類型的CRM部署不再與Campaign相容。 Adobe Campaign現在僅支援CRM版本的Web API部署 **動態CRM 365**. [深入瞭解](../../rn/using/deprecated-features.md#crm-connectors)。
+> 將 [MicrosoftRDS](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)，內部部署和Office 365類型的CRM部署不再與Campaign相容。 Adobe Campaign現在僅支援CRM版本的Web API部署 **動態CRM 365**. [了解更多](../../rn/using/deprecated-features.md#crm-connectors)。
 
 若要連線Microsoft Dynamics 365和Campaign，您需要建立並設定專用的 **[!UICONTROL External Account]** 在Campaign中。
 
@@ -199,7 +199,7 @@ Campaign與Microsoft Dynamics現已連線。 您可以在兩個系統之間設�
 
 >[!NOTE]
 >
-> 您必須確定將兩個URL新增至允許清單：伺服器URL和 `login.microsoftonline.com` 在伺服器配置中。
+> 您必須確定將兩個URL新增至允許清單：伺服器URL和 `login.microsoftonline.com` 在伺服器配置中。 如需如何設定URL權限的詳細資訊，請參閱 [頁面](../../installation/using/url-permissions.md).
 
 ## 支援的欄位資料類型 {#ms-dyn-supported-types}
 

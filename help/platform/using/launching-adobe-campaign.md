@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 8491b3a5d1333f4445f90a8a051cd1f5149691bc
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 49%
+source-wordcount: '487'
+ht-degree: 54%
 
 ---
 
@@ -100,12 +100,6 @@ Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICON
 ![](assets/about-acc.png)
 
 每當您與Adobe客戶服務團隊聯絡時，都需要提供Adobe Campaign用戶端主控台和應用程式伺服器的版本號碼和組建編號。
-
-如果您正在執行 [行銷活動 [!DNL Gold Standard] 版本](../../rn/using/gold-standard.md)，您也需要共用顯示在 **[!UICONTROL About]** 框。 例如，對於 **Gold Standard 12** 版本，此組建編號可能會顯示：&quot;build 9032@554dbcd&quot;。
-
-![](assets/about-acc-gs.png)
-
-深入了解 [!DNL Gold Standard] [本文](../../rn/using/gs-overview.md).
 
 **相關主題**：
 

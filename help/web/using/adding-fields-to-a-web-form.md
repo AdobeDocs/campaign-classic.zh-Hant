@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -367,7 +367,7 @@ ht-degree: 0%
 
 若要將上傳欄位插入表單頁面，請選取 **[!UICONTROL Advanced controls > File...]** 的子菜單。
 
-依預設，上傳的檔案會儲存在可透過 **[!UICONTROL Resources > Online > Public resources]** 功能表。 您可以使用指令碼來變更此行為。 此指令碼可使用 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)，包括涉及檔案操作的項目。
+依預設，上傳的檔案會儲存在可透過 **[!UICONTROL Resources > Online > Public resources]** 功能表。 您可以使用指令碼來變更此行為。 此指令碼可使用 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)，包括涉及檔案操作的項目。
 
 您可以將這些檔案的連結儲存在本機變數或資料庫欄位中。 例如，您可以擴充收件者結構，以新增連結至檔案型資源。
 

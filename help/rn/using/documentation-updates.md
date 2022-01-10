@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
-source-wordcount: '4705'
-ht-degree: 97%
+source-wordcount: '4796'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,31 @@ ht-degree: 97%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2021 年 12 月{#dec-2021}
+## 2022年
+
+###  年 1 月
+
+**7.2.1 版本隨附的其他文件更新**
+
+更新相容性矩陣。 [閱讀全文](compatibility-matrix.md)
+
+更新發行說明一節。 [閱讀全文](rn-overview.md)
+
+更新FDA外部帳戶設定以進行Snowflake。 [閱讀全文](../../installation/using/configure-fda-snowflake.md)
+
+更新Azure synapse分析的FDA外部帳戶設定。 [閱讀全文](../../installation/using/configure-fda-synapse.md#azure-external)
+
+更新Google BigQuery FDA Connector。 [閱讀全文](../../installation/using/configure-fda-google-big-query.md)
+
+淘汰後，Microsoft CRM、Salesforce、OracleCRM隨需活動已從檔案中移除。
+
+新選項 **錯誤時中止** 新增至工作流程「錯誤管理」區段。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+
+在CRM連接器活動中新增批次更新選項。 [閱讀全文](../../workflow/using/crm-connector.md)
+
+## 2021年
+
+### 2021 年 12 月{#dec-2021}
 
 Campaign Classicv7發行說明已重新整理，以簡化導覽。 [閱讀全文](rn-overview.md)
 
@@ -29,7 +53,7 @@ Campaign Classicv7發行說明已重新整理，以簡化導覽。 [閱讀全文
 
 CentOs 8已到期，現已於Adobe Campaign Classic淘汰。 [閱讀全文](deprecated-features.md)
 
-## 2021 年 11 月{#nov-2021}
+### 2021 年 11 月{#nov-2021}
 
 新增傳入SMS(MO)的限制。 [閱讀全文](../../delivery/using/sms-protocol.md#multipart)
 
@@ -46,13 +70,13 @@ CentOs 8已到期，現已於Adobe Campaign Classic淘汰。 [閱讀全文](depr
 在工作流程中新增JavaScript程式碼實作範例。 [閱讀全文](../../workflow/using/javascript-in-workflows.md)
 
 
-## 2021 年 10 月{#oct-2021}
+### 2021 年 10 月{#oct-2021}
 
 現有技術已分組到新的 **Technote** 部分。
 
 更新「**硬體調整建議**」頁面，並將其新增至「**技術備註**」段落。 [閱讀全文](../../technotes/using/hardware-sizing.md)
 
-## 2021 年 9 月{#sept-2021}
+### 2021 年 9 月{#sept-2021}
 
 **21.1.4 版本隨附的其他文件更新**
 
@@ -62,7 +86,7 @@ CentOs 8已到期，現已於Adobe Campaign Classic淘汰。 [閱讀全文](depr
 
 [帳單技術工作流程](../../production/using/monitoring-processes.md#billing-report)說明已更新為新的護欄。
 
-## 2021 年 8 月{#aug-2021}
+### 2021 年 8 月{#aug-2021}
 
 新增新的工作流程活動：變更資料來源 — [了解更多](../../workflow/using/change-data-source.md)
 
@@ -71,12 +95,12 @@ CentOs 8已到期，現已於Adobe Campaign Classic淘汰。 [閱讀全文](depr
 已新增關於 Campaign 與 AEM Assets 之間整合的附註，此整合已從 Adobe Experience Manager 6.4 開始解壓縮。 [了解更多](../../integrations/using/configuring-access-to-assets.md)
 
 
-## 2021 年 7 月 {#july-2021}
+### 2021 年 7 月 {#july-2021}
 
 [Campaign 21.1.3 版本已移至](../../rn/using/latest-release.md#release-21-1-3-build-9330)「一般可用性」(GA)。
 
 
-## 2021 年 6 月 {#june-2021}
+### 2021 年 6 月 {#june-2021}
 
 **異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型綱要](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚瞭解此流程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
@@ -88,11 +112,11 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 全新 Vertica FDA 連接器 — [深入瞭解](../../installation/using/configure-fda-vertica.md)
 
-全新 Google Big Query FDA 連接器 — [深入瞭解](../../installation/using/configure-fda-google-big-query.md)
+新Google BigQuery FDA連接器 —  [深入了解](../../installation/using/configure-fda-google-big-query.md)
 
 「帳單 (帳單)」技術工作流程描述現在包括最初由「活動帳單設定檔案數 (billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
 
-## 2021 年 5 月 {#may-2021}
+### 2021 年 5 月 {#may-2021}
 
 更新並改善「工作流程熱度圖」報告文件。 [顯示全文](../../workflow/using/heatmap.md)
 
@@ -102,13 +126,13 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 已建立有關追蹤 URL 簽名問題的新技術。 [顯示全文](../../technotes/using/tracked-urls.md)
 
-## 2021 年 4 月 {#april-2021}
+### 2021 年 4 月 {#april-2021}
 
 本節將討論如何與 Adobe Experience Platform 來源及目標合作，以便在 Campaign Classic 和 Adobe 即時客戶資料平台 (RTCDP) 之間共用資料。 [顯示全文](../../integrations/using/get-started-sources-destinations.md)
 
 已建立新技術以瞭解如何在 ISP 中斷後更新彈回資格。 [顯示全文](../../delivery/using/update-bounce-qualification.md)
 
-## 2021 年 3 月 {#march-2021}
+### 2021 年 3 月 {#march-2021}
 
 [開始使用簡訊章節](../../delivery/using/sms-channel.md)已重新整理並改善。 您現在可以在專屬章節中學習如何[設定簡訊頻道](../../delivery/using/sms-set-up.md)、[建立簡訊](../../delivery/using/sms-create.md)、[傳送及追蹤簡訊](../../delivery/using/sms-send.md)。
 
@@ -129,7 +153,7 @@ Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。
 
 [傳遞能力](../../delivery/using/about-deliverability.md)區段已更新，現在包含新 [Adobe 傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)的連結。 針對適用各種 Adobe 解決方案的傳遞能力其所有一般資訊都已移至[最佳實務指南附錄](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hant#additional-resources)。
 
-## 2021 年 2 月 {#release-21.1}
+### 2021 年 2 月 {#release-21.1}
 
 **21.1 版本隨附的其他文件更新**
 
@@ -155,7 +179,7 @@ Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。
 
 已新增有關如何新增可個人化且支援追蹤的電子郵件連結的資訊。 [顯示全文](../../delivery/using/tracking-personalized-links.md)。
 
-## 2021 年 1 月 {#jan-2021}
+### 2021 年 1 月 {#jan-2021}
 
 **[!UICONTROL Fork]**　活動區段已新增最佳實務而更加豐富。[顯示全文](../../workflow/using/fork.md)
 
@@ -173,7 +197,14 @@ Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示�
 
 新的&#x200B;**匯入和匯出資料**&#x200B;區段可用於與工作流程、資料壓縮、加密和匯入最佳實務相關的新頁面。[顯示全文](../../platform/using/get-started-data-import-export.md)
 
-## 2020 年 12 月 {#dec-2020}
+
+
+
+
+
+## 2020年
+
+### 2020 年 12 月 {#dec-2020}
 
 **傳遞監控**&#x200B;區段已改編為專題。[顯示全文](../../delivery/using/about-delivery-monitoring.md)
 
@@ -187,7 +218,7 @@ Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示�
 
 已對&#x200B;**異動訊息**&#x200B;區段新增附註，以警告事件資料夾不得被設定為執行個體的檢視，進而避免存取權限問題。[顯示全文](../../message-center/using/about-event-processing.md#event-collection)
 
-## 2020 年 11 月 {#nov-2020}
+### 2020 年 11 月 {#nov-2020}
 
 Campaign 資料模型概觀已改進並重新組織。[顯示全文](../../configuration/using/about-data-model.md)。
 
@@ -207,7 +238,7 @@ Campaign Federated Data Access (FDA) 文件已經過改良，並包含每個外�
 
 已新增一個區段，其中列出「隱私權」的常見問題集。[顯示全文](../../platform/using/privacy-faq.md)
 
-## 2020 年 10 月 {#oct-2020}
+### 2020 年 10 月 {#oct-2020}
 
 **第 20.3 發行版本包含的新功能**
 
@@ -221,8 +252,8 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 更新「已棄用和已移除的功能」頁面。[顯示全文](../../rn/using/deprecated-features.md)
 
-專屬章節現在提供了 [!DNL Gold Standard] 發行版本的發行說明和相容性矩陣。
-[顯示全文](../../rn/using/gold-standard.md#gs-11)。
+的發行說明和相容性矩陣 [!DNL Gold Standard] 專屬頁面現在提供發行版本。
+[顯示全文](../../rn/using/gold-standard.md)。
 
 已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器驗證，並將其移動至 Adobe I/O。[閱讀更多資訊](../../integrations/using/configuring-adobe-io.md)
 
@@ -246,7 +277,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已建立新的技術，其詳細說明了如何從舊的二進位通訊協定移轉至以 HTTP/2 為基礎的 APN 提供程式 API。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
-## 2020 年 9 月 {#september-2020}
+### 2020 年 9 月 {#september-2020}
 
 已新增附註，以指明「主要」用戶檔案計數僅適用於「行銷」執行個體。[顯示全文](../../platform/using/about-profiles.md#active-profiles)
 
@@ -254,7 +285,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已新增附註，說明如何在傳遞種子地址時使用其他資料。[顯示全文](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
-## 2020 年 8 月 {#aug-2020}
+### 2020 年 8 月 {#aug-2020}
 
 在專屬區段中，了解與傳遞設計以及與 Campaign 一同傳送相關的最佳實務。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
@@ -293,7 +324,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已新增其他使用資訊與變數使用附註以豐富本&#x200B;**[!UICONTROL AND-join]**&#x200B;活動區段內容。[顯示全文](../../workflow/using/and-join.md)
 
-## 2020 年 7 月 {#july-2020}
+### 2020 年 7 月 {#july-2020}
 
 已將有關如何使用增量查詢以自動更新清單的使用案例新增至工作流使用案例中。[顯示全文](../../workflow/using/about-workflow-use-cases.md)
 
@@ -311,7 +342,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已將最佳實務新增至&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動區段。[顯示全文](../../workflow/using/scheduler.md)
 
-## 2020 年 6 月 {#june-2020}
+### 2020 年 6 月 {#june-2020}
 
 更新「移除已隔離的位址」章節，內容包括釐清將位址自動從隔離清單移除的案例。[顯示全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
@@ -319,7 +350,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 Experience Cloud Triggers 和 Adobe Campaign Classic 整合頁面已移至[此處](../../integrations/using/about-triggers.md)。
 
-## 2020 年 7 月 {#release-20-2}
+### 2020 年 7 月 {#release-20-2}
 
 **第 20.2 發行版本包含的新功能**
 
@@ -351,7 +382,7 @@ Campaign 網路端點已移至此[章節](../../installation/using/campaign-netw
 
 更新有關複製環境的章節。[進一步了解](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-## 2020 年 5 月 {#may-2020}
+### 2020 年 5 月 {#may-2020}
 
 移動並改善「監控傳遞能力」章節。[顯示全文](../../delivery/using/monitoring-deliverability.md)
 
@@ -363,7 +394,7 @@ Campaign 網路端點已移至此[章節](../../installation/using/campaign-netw
 
 移動並更新「資料套件最佳實務」章節。[顯示全文](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
-## 2020 年 4 月 {#april-2020}
+### 2020 年 4 月 {#april-2020}
 
 FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](../../installation/using/remote-database-access-rights.md)
 
@@ -379,7 +410,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 更新 Adobe Campaign Enhanced MTA 文章。該文章現在只適用於 Campaign Classic。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## 2020 年 3 月 {#march-2020}
+### 2020 年 3 月 {#march-2020}
 
 更新資料模型最佳實務，其中包括[序列](../../configuration/using/data-model-best-practices.md#sequences)、[效能](../../configuration/using/data-model-best-practices.md#performance)及[大型資料表](../../configuration/using/data-model-best-practices.md#large-tables)等。[顯示全文](../../configuration/using/data-model-best-practices.md)
 
@@ -393,7 +424,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 更新存取管理準則，其中包含更多關於已命名的權限的資訊。[顯示全文](../../platform/using/access-management-named-rights.md)
 
-## 2020 年 2 月 {#february-2020}
+### 2020 年 2 月 {#february-2020}
 
 推出新的章節，說明設計 Adobe Campaign 資料模型時的最佳實務和主要建議。[顯示全文](../../configuration/using/data-model-best-practices.md)
 
@@ -405,7 +436,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 改善「電子郵件封存」章節。[顯示全文](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
-## 2020 年 1 月 {#release-20-1}
+### 2020 年 1 月 {#release-20-1}
 
 **第 20.1 發行版本包含的新功能**
 
@@ -465,7 +496,9 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 新增如何在工作流程使用執行個體變數的範例。[顯示全文](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019 年 12 月 {#december-2019}
+## 2019
+
+### 2019 年 12 月 {#december-2019}
 
 Campaign 選項清單已新增「WdbcOptions_TempDbName」選項。[顯示全文](../../installation/using/configuring-campaign-options.md)
 
@@ -503,7 +536,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 現在「**與 Adobe Experience Cloud 整合**」指南已提及 Adobe Campaign 與 Adobe Real-time Customer Data Platform 之整合。[顯示全文](../../integrations/using/about-campaign-integrations.md)。
 
-## 2019 年 11 月 {#november-2019}
+### 2019 年 11 月 {#november-2019}
 
 「[多工處理中間來源伺服器](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server)」及「[支援數個控制執行個體](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances)」章節已新增警示訊息，說明這些部署不支援完全託管及混合型客戶。
 
@@ -517,7 +550,7 @@ Campaign 選項清單已新增新的「NmsOperation_DeliveryPreparationWindow」
 
 更新「傳遞最佳實務快速入門手冊」。[顯示全文](../../delivery/using/delivery-best-practices.md)
 
-## 2019 年 10 月 {#october-2019}
+### 2019 年 10 月 {#october-2019}
 
  Campaign 的錯誤訊息清單已更新。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)
 
@@ -535,7 +568,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 文件新增了針對內部部署安裝設定收件匣轉譯的步驟。[顯示全文](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-## 2019 年 9 月 {#september-2019}
+### 2019 年 9 月 {#september-2019}
 
 新增了新的頁面，以說明維護 Campaign Classic 的一般準則。[顯示全文](../../production/using/monitoring-guidelines.md)
 
@@ -545,7 +578,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新工作流程和傳遞效能改善的最佳實務。[深入了解工作流程](../../workflow/using/workflow-best-practices.md)，以及[深入了解傳遞](../../delivery/using/delivery-performances.md#best-practices-performance)。
 
-## 2019 年 5 月 {#release-19-1}
+### 2019 年 5 月 {#release-19-1}
 
 **第 19.1 發行版本包含的新功能**
 
@@ -624,7 +657,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 新增關於 Teradata 外部帳戶的「查詢集區」的相關資訊。[顯示全文](../../installation/using/external-accounts.md)
 
-## 2019 年 1 月{#release-doc-16-01-2019}
+### 2019 年 1 月{#release-doc-16-01-2019}
 
 更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
 

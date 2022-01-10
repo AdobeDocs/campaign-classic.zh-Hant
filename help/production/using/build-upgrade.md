@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2356'
 ht-degree: 3%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 3%
 
 1. 取得 [伺服器配置檔案](../../installation/using/the-server-configuration-file.md).
 
-1. [下載最新版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [深入瞭解](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
+1. [下載最新版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [了解更多](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
 
 你還要知道 [有用的命令行](../../installation/using/command-lines.md) 開始版本編號升級前：
 
@@ -412,4 +412,4 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 * [建置升級常見問答集](../../platform/using/faq-build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
 * [Campaign Classic的說明和支援選項](../../support.md)
-* [[!DNL Gold Standard] 方案](../../rn/using/gs-overview.md)
+* [促銷活動每年升級方案](../../rn/using/rn-overview.md)

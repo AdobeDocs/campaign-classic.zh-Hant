@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由於收件者的地址有錯誤，因此未將傳送傳送給收件者。 已封鎖清單、已隔離、未提供或重複。 <br /> </td> 
+   <td> 由於收件者的地址有錯誤，傳送未傳送給收件者。 已封鎖清單、已隔離、未提供或重複。 <br /> </td> 
   </tr> 
   <tr> 
    <td> 失敗<br /> </td> 

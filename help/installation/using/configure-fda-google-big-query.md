@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
+source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] 連接器適用於混合部署和內部部署。 如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
+> [!DNL Google BigQuery] 連接器適用於托管、混合式和內部部署。 如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
 
 ![](assets/snowflake_3.png)
 
@@ -85,125 +85,50 @@ ht-degree: 2%
 
 ### 在Linux上設定的驅動程式 {#driver-linux}
 
-1. 安裝ODBC驅動程式之前，需要更新系統。 在Linux或CentOS上，執行下列命令：
+在設定驅動程式之前，請注意指令碼和命令必須由根用戶運行。 執行指令碼時，也建議使用Google DNS 8.8.8.8。
+
+配置 [!DNL Google BigQuery] 在Linux上，請遵循下列步驟：
+
+1. 在ODBC安裝之前，請檢查Linux分發上是否安裝了以下軟體包：
+
+   * 對於Red Hat/CentOS:
+
+      ```
+      yum update
+      yum upgrade
+      yum install -y grep sed tar wget perl curl
+      ```
+
+   * Debian:
+
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y grep sed tar wget perl curl
+      ```
+
+1. 安裝前更新系統：
+
+   * 對於Red Hat/CentOS:
+
+      ```
+      # install unixODBC driver manager
+      yum install -y unixODBC
+      ```
+
+   * Debian:
+
+      ```
+      # install unixODBC driver manager
+      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+      ```
+
+1. 訪問指令碼所在的目錄，並運行以下指令碼：
 
    ```
-   yum update
-   # install unixODBC driver manager
-   yum install unixODBC
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_odbc-setup.sh
    ```
-
-1. 然後，需要使用以下命令安裝unixODBC驅動程式管理器：
-
-   ```
-   # switch to root user
-   sudo su
-   ```
-
-   在Debian上：
-
-   ```
-   apt-get update
-   apt-get upgrade
-   # install unixODBC driver manager
-   apt-get install unixODBC
-   ```
-
-1. 下載 [模Simba Linux ODBC驅動程式(.tar.gz)](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers). 然後，將目標檔案傳輸到電腦上的臨時資料夾，或使用wget命令：
-
-   ```
-   # in this example driver version is 2.3.1.1001
-   wget https://storage.googleapis.com/simba-bq-release/odbc/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux.tar.gz
-   ```
-
-1. 擷取主要目標檔案，如下所示 **TarballName** 是包含驅動程式的tarball包的名稱：
-
-   ```
-   tar --directory=/tmp -zxvf [TarballName]
-   ```
-
-1. 訪問您提取的資料夾並提取與驅動程式版本對應的內部目標檔案。 在以下示例BigQueryDriver中，將其安裝到另一個臨時資料夾中：
-
-   ```
-   mkdir /tmp/BigQueryDriver/
-   cd /tmp/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux/
-   tar --directory=/tmp/BigQueryDriver/ -zxvf SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version].tar.gz
-   ```
-
-1. 存取擷取主要目標檔案的臨時位置，並複製 `GoogleBigQueryODBC.did` 和 `setup/simba.googlebigqueryodbc.ini` 檔案放入在上一步驟中建立的新資料夾中：
-
-   ```
-   cd /tmp/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux/
-   cp GoogleBigQueryODBC.did /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/lib/
-   cp setup/simba.googlebigqueryodbc.ini /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/lib/
-   ```
-
-1. 建立安裝目錄，如下所示：
-
-   ```
-   mkdir -p /opt/simba/googlebigqueryodbc/
-   ```
-
-1. 將目錄的內容複製到新的安裝目錄中：
-
-   ```
-   cp -r /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/* /opt/simba/googlebigqueryodbc/
-   ```
-
-1. 取代 `<INSTALLDIR>` with `/opt/simba/googlebigqueryodbc` in `simba.googlebigqueryodbc.ini` 在安裝目錄中：
-
-   ```
-   cd /opt/simba/googlebigqueryodbc/lib/
-   sed -i 's/<INSTALLDIR>/\/opt\/simba\/googlebigqueryodbc/g' simba.googlebigqueryodbc.ini
-   ```
-
-1. 變更 `DriverManagerEncoding` 到UTF-16和 `SwapFilePath` in `simba.googlebigqueryodbc.ini`. 如有需要，您也可以變更記錄設定。
-
-   以下是更新的驅動程式範圍配置檔案的示例：
-
-   ```
-   # /opt/simba/googlebigqueryodbc/lib/simba.googlebigqueryodbc.ini
-   [Driver]
-   DriverManagerEncoding=UTF-16
-   ErrorMessagesPath=opt/simba/googlebigqueryodbc/ErrorMessages
-   LogLevel=6
-   LogPath=/tmp
-   SwapFilePath=/tmp
-   ```
-
-1. 如果使用系統驅動程式檔案或任何當前 `odbcinst.ini` 檔案，配置 `/etc/odbcinst.ini` 指向Google BigQuery驅動程式位置 `/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb[Bitness].so`.
-
-   例如：
-
-   ```
-   # /etc/odbcinst.ini
-   # Make sure to use Simba ODBC Driver for Google BigQuery as a driver name.
-   
-   [ODBC Drivers]
-   Simba ODBC Driver for Google BigQuery=Installed
-   
-   [Simba ODBC Driver for Google BigQuery]
-   Description=Simba ODBC Driver for Google BigQuery(64-bit)
-   Driver=/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb64.so
-   ```
-
-1. 查找unixODBC驅動程式管理器庫的位置，並添加 `unixODBC` 和 `googlebigqueryodbc` 程式庫路徑 `LD_LIBRARY_PATH environment` 變數。
-
-   ```
-   find / -name 'lib*odbc*.so*' -print
-   #output:
-   /usr/lib/x86_64-linux-gnu/libodbccr.so.2
-   /usr/lib/x86_64-linux-gnu/libodbcinst.so.2.0.0
-   /usr/lib/x86_64-linux-gnu/libodbccr.so.1
-   .
-   .
-   /opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb64.so
-   
-   #the command would look like this
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/simba/googlebigqueryodbc:/usr/lib
-   ```
-
-1. 在Adobe Campaign Classic中，您可以設定 [!DNL Google BigQuery] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱 [本節](#google-external).
 
 ### 在Linux上設定的大量載入 {#bulk-load-linux}
 
@@ -215,15 +140,30 @@ ht-degree: 2%
 
 大量載入公用程式可讓傳輸更快，這是透過Google Cloud SDK所達成。
 
-1. 在此下載Linux 64位(x86_64)歸檔檔案 [頁面](https://cloud.google.com/sdk/docs/downloads-versioned-archives) 並從對應目錄中擷取。
+1. 在ODBC安裝之前，請檢查Linux分發上是否安裝了以下軟體包：
 
-1. 執行 `google-cloud-sdk\install.sh` 指令碼。 您必須接受路徑變數的設定。
+   * 對於Red Hat/CentOS:
 
-1. 安裝後，檢查路徑變數 `...\google-cloud-sdk\bin` 已設定。 否則請手動新增。
+      ```
+      yum update
+      yum upgrade
+      yum install -y python3
+      ```
 
-1. 如果您不想使用 `PATH` 變數，或 `google-cloud-sdk` 目錄到其他位置，請使用 `bqpath` 選項值 **[!UICONTROL External account]** 指定系統上bin目錄的確切路徑。
+   * Debian:
 
-1. 重新啟動Adobe Campaign Classic，以便考慮變更。
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y python3
+      ```
+
+1. 訪問指令碼所在的目錄，並運行以下指令碼：
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_sdk-setup.sh
+   ```
 
 ## Google BigQuery外部帳戶 {#google-external}
 
@@ -248,4 +188,16 @@ ht-degree: 2%
 
       * **[!UICONTROL Enter manually the key file path]**:如果您選擇使用預先存在的索引鍵，請在此欄位中複製/貼上絕對路徑。
    * **[!UICONTROL Dataset]**:您的 **[!UICONTROL Dataset]**. 如需詳細資訊，請參閱 [Google Cloud檔案](https://cloud.google.com/bigquery/docs/datasets-intro).
+
    ![](assets/google-big-query.png)
+
+連接器支援下列選項：
+
+| Option | 值 | 說明 |
+|:-:|:-:|:-:|
+| ProxyType | 字串 | 用來透過ODBC和SDK連接器連線至BigQuery的代理類型。 </br>目前支援HTTP（預設值）、http_no_tunnel、socks4和socks5。 |
+| ProxyHost | 字串 | 可到達代理的主機名或IP地址。 |
+| 代理埠 | 數字 | 代理運行的埠號，例如8080 |
+| ProxyUid | 字串 | 用於已驗證代理的用戶名 |
+| ProxyPwd | 字串 | ProxyUid密碼 |
+| bqpath | 字串 | 請注意，這僅適用於大量載入工具(Cloud SDK)。 </br> 為避免使用PATH變數，或如果google-cloud-sdk目錄必須移至其他位置，您可以透過此選項指定伺服器上雲端sdk bin目錄的確切路徑。 |

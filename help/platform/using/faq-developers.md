@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 ## 如何使用自訂的收件者表格？ {#how-to-use-a-custom-recipient-table-}
 
-您可以在 Campaign 中建立和實施非標準式收件者表格，以傳送訊息。
+您可以在Campaign中建立並實作非內建的收件者表格，以傳送訊息。
 
 [按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 
@@ -65,4 +65,4 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 ## 我可以在哪裡找到 Campaign Classic API 清單？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-[本專屬文件](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)提供所有 Campaign API，及個別完整說明。
+[本專屬文件](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有 Campaign API，及個別完整說明。

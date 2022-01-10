@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # 開始使用應用程式設定
 
-您可以在本節中找到以銷售線上假日套件的公司為基礎的設定範例。 他的移動應用程式(Neotrips)提供兩種版本給客戶：Android的Neotrips和iOS的Neotrips。
+您可以在本節中找到以銷售線上假日套件的公司為基礎的設定範例。 其行動應用程式(Neotrips)提供兩種版本供其客戶使用：Android的Neotrips和iOS的Neotrips。
 
 若要在Adobe Campaign中傳送推播通知，您必須：
 

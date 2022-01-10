@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 每個 **[!UICONTROL Design]** 環境連結至 **[!UICONTROL Live]** 環境。 優惠方案完成後，其內容和資格規則會受到核准週期的約束。 完成此週期後，相關選件會自動部署至 **[!UICONTROL Live]** 環境。 從現在開始，它將可供交付。
 
-依預設，互動會隨 **[!UICONTROL Design]** 環境與 **[!UICONTROL Live]** 環境。 這兩個環境皆已預先設定為鎖定現成可用的收件者表格。
+依預設，互動會隨 **[!UICONTROL Design]** 環境與 **[!UICONTROL Live]** 環境。 兩個環境都已預先設定為鎖定內建的收件者表格。
 
 >[!NOTE]
 >

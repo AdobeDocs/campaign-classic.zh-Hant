@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: e55fff99fd5dec8da998310dc7026c1a506abadc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '624'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 
 ## 命令限制（伺服器端）
 
-多個命令列入黑名單，無法使用execCommand函式執行。 專用的Unix用戶為執行外部命令提供了額外的安全性。 對於托管安裝，會自動套用此限制。 對於內部部署安裝，您可以依照 [本頁](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). 此外， **[!UICONTROL Script]** 和 **[!UICONTROL External task]** 工作流活動不可用（新安裝的實例）。
+denylist中包含多個命令，無法使用execCommand函式執行。 專用的Unix用戶為執行外部命令提供了額外的安全性。 對於托管安裝，會自動套用此限制。 對於內部部署安裝，您可以依照 [本頁](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). 此外， **[!UICONTROL Script]** 和 **[!UICONTROL External task]** 工作流活動不可用（新安裝的實例）。
 
 ## 其他配置
 

@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 80%
+source-wordcount: '909'
+ht-degree: 67%
 
 ---
 
@@ -35,17 +35,17 @@ ht-degree: 80%
 
 ### 主控台和網路存取 {#console-and-web-access}
 
-Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。
+Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。若要查看相容的瀏覽器，請前往 [相容性矩陣](../../rn/using/compatibility-matrix.md#Browsers).
 
-網路存取介面與主控台的介面類似，但是功能有所減少。
+Web訪問介面與控制台介麵類似。 在瀏覽器中，您可以使用與主控台相同的導覽和顯示功能，但您只能對行銷活動執行精簡的動作集。 例如，您可以檢視和取消促銷活動，但無法修改促銷活動。 對於指定的運算子，促銷活動會在主控台中顯示下列選項：
 
-例如，針對指定的操作者，在主控台中將顯示下列行銷活動選項：
+![從促銷活動的控制面板，運算子可以檢視和取消促銷活動，也可以修改它，以及新增傳遞、檔案和任務。](assets/operation_from_console.png)
 
-![](assets/operation_from_console.png)
+而使用網路存取時，選項主要會啟用檢視：
 
-而網路存取介面上，主要啟用檢視選項：
+![在瀏覽器中，相同的運算子只能檢視和取消促銷活動。](assets/operation_from_web.png)
 
-![](assets/operation_from_web.png)
+深入了解 [使用web介面](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### 語言 {#languages}
 

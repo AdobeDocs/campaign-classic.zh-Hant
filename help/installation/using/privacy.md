@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 範例:
 
-1. 建立工作流程並新增「查詢」活動。 深入瞭解。
+1. 建立工作流程並新增「查詢」活動。 了解更多。
 
 1. 開啟「查詢」活動，並依照下列方式在nmsTrackingUrl表格上建立篩選器：源URL以http://&lt;%開頭，或源URL以https://&lt;%開頭。
 
@@ -59,7 +59,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 此外，自Campaign 20.2和 [!DNL Gold Standard] 版本中，您可以使用增強功能來停用先前組建中產生的URL。 此功能預設為停用。 您可以聯絡 [客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 啟用此功能。
 
-如果您執行 [!DNL Gold Standard] 19.1.4中，使用追蹤連結的推播通知傳送，或使用錨點標籤的傳送可能會發生問題。 若有，建議您停用URL簽章。
+如果您是在19.1.4組建版本上執行，則使用追蹤連結的推播通知傳送或使用錨點標籤的傳送可能會發生問題。 若有，建議您停用URL簽章。
 
 無論您是在內部執行還是在混合架構中執行Campaign，您都必須聯絡 [客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 來停用URL簽名。
 

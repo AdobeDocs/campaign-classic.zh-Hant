@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >優惠方案管理員只能在兩種情況下核准優惠方案。 第一個是，如果沒有人特別指定為審核者，第二個是，負責建立範本（有權指派審核者）的運算子在優惠方案所依據的優惠方案範本中指定其為審核者。
+   >優惠方案管理員只能在兩種情況下核准優惠方案。 第一個是沒有人特別指定為審核者，第二個是負責建立範本（有權指派審核者）的運算子在選件所依據的選件範本中將其指定為審核者。
 
 ## 傳送管理員 {#delivery-manager}
 

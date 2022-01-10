@@ -6,10 +6,10 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 20%
+source-wordcount: '762'
+ht-degree: 21%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 20%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的執行個體必須托管於AWS，並使用最新的 [Gold Standard](../../rn/using/gs-overview.md) 建置或 [最新GA版本編號(21.1.3)](../../rn/using/latest-release.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須托管於AWS，並使用 [最新GA版本編號](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 
 ### 監控工作流程 {#monitoring-workflows}
 

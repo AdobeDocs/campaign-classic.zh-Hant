@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 08af51345c047612b010c82646cba99becfda459
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '269'
+ht-degree: 3%
 
 ---
 
@@ -31,6 +31,4 @@ ht-degree: 2%
 * **SQL程式碼和JavaScript程式碼**:執行活動中指定的SQL指令碼或JavaScript。 請參閱 [SQL程式碼和JavaScript程式碼](sql-code-and-javascript-code.md).
 * **SQL資料管理**:可讓您編寫自己的SQL查詢以建立和填入工作表。 請參閱 [SQL資料管理](sql-data-management.md).
 * **nlserver模組**:以其參數啟動nlserver模組。 請參閱 [Nlserver模組](nlserver-module.md).
-* **導入和導出（v4相容）**:匯入和匯出活動（v4相容性）可讓您使用活動中指定的範本（匯入或匯出）匯入和匯出資料。
-* **Microsoft CRM、Salesforce、OracleCRM On Demand**:可讓您將Adobe Campaign專門連線至其中一個預先設定的CRM。 這些活動類似於 [本節](crm-connector.md)，以及更具體的選項。 尤其是，您可以選擇要執行同步的促銷活動類型。
 * **更新匯總**:可讓您選取匯總更新模式（完整或部分）。 請參閱 [更新匯總](update-aggregate.md).

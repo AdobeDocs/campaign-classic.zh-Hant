@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 648b6c0982e15716b11bdbc5954ce88491582e7d
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,11 @@ Adobe Campaign和CRM之間的資料同步是透過專用的工作流程活動執
    >
    >的匯出功能 **[!UICONTROL CRM Connector]** 活動可以在CRM端插入或更新欄位。 若要啟用CRM中的欄位更新，您必須指定遠端表格的主要索引鍵。 如果缺少金鑰，則會插入資料（而非更新）。
 
-1. 在 **[!UICONTROL Mapping]** 區段中，指定要匯出的欄位及其在CRM中的對應。
+1. 檢查 **[!UICONTROL Export in Batches]** 如果您需要更快的匯出。
+
+   ![](assets/crm_export_config_2.png)
+
+1. 在 **[!UICONTROL Mapping]** ，按一下 **[!UICONTROL New]** ，以在CRM中指定要匯出的欄位及其對應。
 
    ![](assets/crm_export_config.png)
 

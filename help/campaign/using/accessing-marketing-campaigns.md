@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1271'
 ht-degree: 2%
 
 ---
@@ -161,6 +161,35 @@ Campaign可讓您管理由各種行銷活動組成的一組方案。 每個促�
 1. 使用功能表存取概述。
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
+
+除了瀏覽各個促銷活動並檢視它們，您還可以執行下列類型的工作：
+
+* 監視執行個體上的活動
+* 參與驗證程式，例如核准或拒絕傳送內容
+* 執行其他快速動作，例如暫停工作流程
+* 存取所有報表功能
+* 參加論壇討論
+
+此表格會摘要您可從瀏覽器對促銷活動採取的動作：
+
+| 頁面  | 動作 |
+| --- | --- |
+| 促銷活動、傳送、選件等的清單。 | 刪除清單項目 |
+| Campaign | 取消促銷活動 |
+| 傳遞 | 核准傳遞內容和目標<br/>提交傳遞內容<br/>確認傳送<br/>暫停並停止傳送 |
+| Web應用程式 | 建立Web應用程式<br/>編輯應用程式內容和屬性<br/>將應用程式內容另存為模板<br/>發佈應用程式 |
+| 選件 | 核准優惠方案內容和資格<br/>停用線上優惠方案 |
+| 任務 | 完成任務<br/>取消任務 |
+| 行銷資源 | 核准資源<br/>鎖定和解除鎖定資源 |
+| 行銷活動套件 | 提交套件以進行核准<br/>批准或拒絕包<br/>取消包 |
+| 促銷活動順序 | 建立訂單<br/>接受或拒絕訂單 <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Stock | 刪除庫存行 |
+| 優惠方案模擬 | 啟動和停止模擬 |
+| 目標工作流程 | 啟動、暫停和停止工作流程 |
+| 報告 | 在報表歷史記錄中儲存目前的資料 |
+| 論壇 | 添加討論<br/>回復討論中的郵件<br/>按照討論結果取消訂閱 |
+
+### 核准
 
 核准（例如目標或傳送內容）可透過Web存取執行。
 

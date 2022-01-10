@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -83,7 +83,7 @@ Adobe Campaign中的內建收件者表格是建立資料模型的好起點。 �
 
 ## 使用自訂收件者表格 {#custom-recipient-table}
 
-在設計Adobe Campaign資料模型時，您可以使用 [現成可用的收件者表格](#default-recipient-table)，或決定建立 [自訂收件者表格](../../configuration/using/about-custom-recipient-table.md) 表格來儲存您的行銷設定檔。
+在設計Adobe Campaign資料模型時，您可以使用 [內置收件者表](#default-recipient-table)，或決定建立 [自訂收件者表格](../../configuration/using/about-custom-recipient-table.md) 表格來儲存您的行銷設定檔。
 
 事實上，如果您的資料模型不符合收件者為中心的結構，您可以在Adobe Campaign中將其他表格設為目標維度。 例如，當您需要鎖定家庭、帳戶（如行動電話）和公司/網站，而非單純的收件者時，這可能相關。
 
@@ -95,11 +95,11 @@ Adobe Campaign中的內建收件者表格是建立資料模型的好起點。 �
 
 使用自訂收件者表格的優點如下：
 
-* **靈活的資料模型**  — 如果您不需要大部分的收件者表格欄位，或資料模型並非以收件者為中心，現成可用的收件者表格將無用。
+* **靈活的資料模型**  — 如果您不需要大多數「收件者」表格欄位，或資料模型並非以收件者為中心，內建的收件者表格將無用。
 
-* **可擴充性**  — 大型卷需要精簡的表，其中只有幾個欄位，才能實現高效的設計。 現成可用的收件者表格會有太多無用的欄位，這可能會影響效能並且缺乏效率。
+* **可擴充性**  — 大型卷需要精簡的表，其中只有幾個欄位，才能實現高效的設計。 內建的收件者表格會有太多無用的欄位，這可能會影響效能且缺乏效率。
 
-* **資料位置**  — 如果資料位於外部現有行銷資料庫，則使用現成可用的收件者表格可能需要花費太多精力。 根據現有結構建立新結構比較簡單。
+* **資料位置**  — 如果資料位於外部現有行銷資料庫，則使用內建的收件者表格可能需要花費太多精力。 根據現有結構建立新結構比較簡單。
 
 * **輕鬆遷移**  — 無需維護即可檢查所有擴充功能在升級後是否仍有效。
 

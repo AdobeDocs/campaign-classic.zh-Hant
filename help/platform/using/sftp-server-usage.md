@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1150'
 ht-degree: 41%
 
 ---
@@ -47,7 +47,7 @@ SFTP伺服器設計為臨時儲存空間，您可在其上控制檔案的保留�
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的執行個體必須升級為 [Gold Standard](../../rn/using/gs-overview.md) 建置或 [最新GA版本編號(21.1.3)](../../rn/using/latest-release.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
+>請注意，您的執行個體必須升級為 [最新GA版本編號](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
 
 * 伺服器大小功能因許可證而異。在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 

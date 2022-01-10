@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各�
 要訪問操作員的論壇：
 
 * 如果您有必要的存取權限 **[!UICONTROL Administration > Access management > Operators]** 瀏覽器的節點，開啟所需運算子的控制面板，然後按一下 **[!UICONTROL Forum]** 連結。
-* 如果沒有，請在Adobe Campaign中尋找運算子的名稱（透過此運算子張貼至論壇的訊息，指派給他的任務），然後按一下該名稱以存取其控制面板。 您也可以要求管理員建立運算子資料夾的檢視。
+* 若否，請在Adobe Campaign中尋找運算子的名稱（透過此運算子張貼至論壇的訊息，指派給他們的任務），然後按一下該名稱以存取其控制面板。 您也可以要求管理員建立運算子資料夾的檢視。
 
 ## 訂閱論壇 {#subscribing-to-a-forum}
 
@@ -111,4 +111,4 @@ Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各�
 
    * 在Adobe Campaign首頁上，前往 **[!UICONTROL Campaigns > Navigation > Deliveries]**，然後開啟 **[!UICONTROL Discussion forum notification]** 傳遞。
    * 在瀏覽器中，前往 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然後按一下 **[!UICONTROL Discussion forum notifications]**.
-   在 **[!UICONTROL Discussion forum notifications]** 框中，則在 **[!UICONTROL Edit > Delivery]** 標籤。 您也可以檢視 **[!UICONTROL Tracking > Log]** 和 **[!UICONTROL Exclusion causes]** 頁簽。
+   在 **[!UICONTROL Discussion forum notifications]** 框中，則在 **[!UICONTROL Edit > Delivery]** 標籤。 您也可以檢視 **[!UICONTROL Tracking > Log]** 和 **[!UICONTROL Exclusion causes]** 標籤。

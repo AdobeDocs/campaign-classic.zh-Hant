@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '2614'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 **隔離** (Quarantine)　僅適用於地址，而不適用於設定檔本身。這代表如果兩個設定檔具有相同的電子郵件地址，則兩個設定檔在隔離地址時都會受到影響。
 
-同樣地，被隔離的電子郵件地址的設定檔可以更新其設定檔並輸入新地址，然後再次被傳送動作設為目標。
+同樣地，被隔離的電子郵件地址的設定檔可以更新其設定檔並輸入新地址，然後再次被傳送動作定位。
 
 在 **封鎖清單**，則會導致設定檔不再被任何傳送設為目標，例如在取消訂閱（選擇退出）後。
 

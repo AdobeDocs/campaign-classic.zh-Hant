@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # 管理優惠方案範本{#managing-offer-templates}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 優惠方案範本是在Adobe Campaign中立即提供。 建立優惠方案、複製優惠方案或根據您的需求調整其設定後，您即可使用優惠方案。 您也可以建立自己的範本。 範本選件會儲存在資料夾中 **資源** > **範本** > **優惠方案範本**.
 

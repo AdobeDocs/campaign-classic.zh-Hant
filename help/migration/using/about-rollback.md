@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 回滾程式取決於您的Campaign初始版本。
 
-## 回復 v6.1
+## 還原至Campaign v6.1
 
 以下是從v7還原v6.1的步驟。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 1. 重新啟動IIS。
 1. 重新啟動Adobe Campaign v6.1服務。
 
-## 回復至Campaign v6.02
+## 還原至Campaign v6.02
 
 以下是從v7還原v6.02的步驟。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 1. 重新啟動IIS。
 1. 重新啟動Adobe Campaign v6.02服務。
 
-## 回復至Campaign v5.11
+## 還原至Campaign v5.11
 
 以下是從v7還原v5.11的過程。
 

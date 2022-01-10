@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 按一下 **[!UICONTROL Ok]** 然後輸入使用率：這表示在任務執行期間分配給運算子的負載。 此比率僅為指示，以百分比表示。
 
-例如，對於執行時間表設定為10天的任務，其使用率為50%的操作員將在該任務上調動其10天半的工作時間。
+例如，對於執行時間表設定為10天的任務，其使用率為50%的操作員將在該任務上移動其10天半的工作時間。
 
 對於每個運算子，您可以輸入計畫工作量和實際工作量。 這些持續時間也僅供參考。
 
@@ -325,7 +325,7 @@ A **[!UICONTROL Control task]** 連結至傳遞核准：核准目標、內容、
 
 此 **[!UICONTROL Publish the marketing resource]** 選項可讓您自動進行資源發佈：一旦任務完成 **[!UICONTROL Finished]**，資源的狀態會自動切換為 **[!UICONTROL Published]**，即使未提交以進行核准或核准，包括完成任務的審核者不是資源中定義的內容審核者。
 
-此 **[!UICONTROL Publish the resource]** 按鈕可供使用，而資源發佈審核者會收到通知電子郵件，通知他已準備好發佈。 在 **[!UICONTROL Edit > Tracking]** 頁簽，任務審核者的審核和發佈將變為可見。 如果已定義資源後處理工作流程，則會立即執行。
+此 **[!UICONTROL Publish the resource]** 按鈕可供使用，而資源發佈審核者會收到通知電子郵件，通知他們已準備好發佈。 在 **[!UICONTROL Edit > Tracking]** 頁簽，任務審核者的審核和發佈將變為可見。 如果已定義資源後處理工作流程，則會立即執行。
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -472,7 +472,7 @@ A **[!UICONTROL Control task]** 連結至傳遞核准：核准目標、內容、
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
-1. 審核者會收到通知電子郵件，告知他運算子已完成指派給他們的區段。
+1. 審核者會收到通知電子郵件，通知他們運算子已完成指派給他們的區段。
 
    他們可以跟蹤任務控制面板上的進度。
 

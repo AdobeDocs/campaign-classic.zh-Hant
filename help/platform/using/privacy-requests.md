@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
-workflow-type: ht
-source-wordcount: '2420'
-ht-degree: 100%
+source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
+workflow-type: tm+mt
+source-wordcount: '2425'
+ht-degree: 98%
 
 ---
 
@@ -281,7 +281,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
 
    * 您可以在 **nms:gdprRequest** 架構上使用 **queryDef** 來檢查存取請求的狀態。
    * 您可以在 **nms:gdprRequestData** 架構上使用 **queryDef** 來取得存取請求的結果。
-   * 若要能夠從 **「$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id」**&#x200B;下載 XML 檔案，您必須登入並從已允許加入清單 IP 進行存取。 為此，請建立網站應用程式，讓您存取 JSSP 產生的檔案。
+   * 若要從 **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**，您必須登入，並從允許清單中包含的IP存取。 為此，請建立網站應用程式，讓您存取 JSSP 產生的檔案。
 
 ### 從 JS 叫用 API {#invoking-api-from-js}
 

@@ -5,9 +5,9 @@ description: 配置整合
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 1%
 您的Adobe Campaign Classic版本不支援管道。
 
 1. 檢查 [!DNL pipelined] 元素存在於設定檔案中。 否則表示不支援。
-1. 升級至Campaign 20.3或 [!DNL Gold Standard] 11.
+1. 升級至Campaign 20.3 / [!DNL Gold Standard] 11或更高。
 
-**管道失敗，出現「 aurait dü commencer par」 `[` 歐 `{` (iRc=16384)」**
+**管道失敗，出現「 aurait dbu commencer par」 `[` 歐 `{` (iRc=16384)」**
 
 此 **NmsPipeline_Config** 選項。 實際上是JSON剖析錯誤。
 在選項中設定JSON設定 **NmsPipeline_Config**. 請參閱本頁的「路由選項」。

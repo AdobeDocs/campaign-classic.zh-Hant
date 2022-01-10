@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Cookie名稱為 **acoptout**. 常見值為：
 
    bannerDomElt {DOMElement}需要移除之Cookie橫幅的根DOM元素
 
-* **NL.ClientWebTracking.hasUserPrefs()**:如果使用者已選擇其網頁追蹤偏好設定，則傳回true。
+* **NL.ClientWebTracking.hasUserPrefs()**:如果使用者已選擇其偏好設定進行網頁追蹤，則傳回true。
 * **NL.ClientWebTracking.getUserPrefs()**:傳回定義使用者偏好設定的選擇退出Cookie值。
 
 如果您必須撰寫JSSP，則可使用伺服器端API:

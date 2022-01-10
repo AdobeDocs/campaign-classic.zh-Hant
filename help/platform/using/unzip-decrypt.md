@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '716'
 ht-degree: 11%
 
 ---
@@ -27,7 +27,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 以便在 [資料載入
    >
    >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
    >
-   >請注意，您的執行個體必須托管於AWS，並使用最新的 [Gold Standard](../../rn/using/gs-overview.md) 建置或 [最新GA版本編號(21.1.3)](../../rn/using/latest-release.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+   >請注意，您的執行個體必須托管於AWS，並使用 [最新GA版本編號](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 
 1. 如果您的Adobe Campaign安裝是由Adobe托管，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 以在伺服器上安裝必要的實用程式。
 1. 如果您安裝的Adobe Campaign為內部部署，請安裝您要使用的公用程式(例如：GPG、GZIP)以及應用程式伺服器上的必要金鑰（加密金鑰）。

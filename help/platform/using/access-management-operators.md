@@ -6,7 +6,7 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
@@ -103,7 +103,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >即使其帳戶已停用，運算子仍可從Campaign接收警報或通知。 若要停止傳送Campaign通知給此運算子，Adobe建議您從其設定檔中移除電子郵件地址。
+   >即使其帳戶已停用，運算子仍可接收來自Campaign的警報或通知。 若要停止傳送Campaign通知給此運算子，Adobe建議您從其設定檔中移除電子郵件地址。
 
 * 此 **[!UICONTROL Forbid access from the rich client]** 選項，限制使用Adobe Campaign [網路存取](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) 或透過API:無法再存取Adobe Campaign用戶端主控台。
 * 可以將安全區連結到操作員。 如需詳細資訊，請參閱[此頁面](../../installation/using/security-zones.md)。

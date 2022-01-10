@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -92,7 +92,7 @@ ht-degree: 14%
    <td> 收件者的地址是控制組的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 雙倍 </td> 
+   <td> 雙線 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 收件者的地址已在此傳遞中。<br /> </td> 
