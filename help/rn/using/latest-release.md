@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4dfdd32c07753ee9e202ab4e4bf815485e47d8b
+source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1056'
 ht-degree: 17%
 
 ---
@@ -30,7 +30,7 @@ _2022年1月10日_
 * 現在，ODBC驅動程式直接與Adobe Campaign第三方安裝。 安裝這些驅動程式不再需要手動步驟。
 * 設定FDA外部帳戶時，您現在可以使用金鑰組驗證來登入Snowflake帳戶，以增強驗證安全性。 [閱讀全文](../../installation/using/configure-fda-snowflake.md)
 * 設定FDA外部帳戶時，您現在可以使用系統指派的受管理身分識別，登入您的Azure synapse分析帳戶。 [閱讀全文](../../installation/using/configure-fda-synapse.md#azure-external)
-
+* 已從Campaign移除對log4j程式庫的所有參考，以確保最佳安全性。
 
 **功能改善**
 
@@ -55,6 +55,7 @@ _2022年1月10日_
 * 已在 **錯誤管理** 工作流活動的屬性：此 **錯誤時中止** 選項會自動停止工作流程。 之後將無法重新啟動它(NEO-29661)。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * 專用序列現在用於生成nmsGroup表的主鍵，該表用於建立收件者的統計組。 之前曾使用xtknewId序列。 (NEO-30832)
 * 新增使用CRM連接器活動批次更新作業的支援。
+* 改善交易式訊息處理時間的效能。 (NEO-40370)
 
 **修補程式**
 
