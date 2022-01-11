@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 ## 發行狀態{#rn-statuses}
 
-每個新組建都會提供狀態，並以顏色具體化。
+每個新版本編號都會提供以顏色具體化的狀態。
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 經生產驗證，並由 Adobe 推議。
 
@@ -33,7 +33,7 @@ ht-degree: 81%
 
 ## 發行週期
 
-定期更新 Adobe Campaign。此定期更新的目的是為了讓您掌握最新、最佳的資訊，進而確保環境安全，以改善我們的產品使用體驗。
+已定期更新 Adobe Campaign。此定期更新的目的是為了讓您掌握最新、最佳的資訊，進而確保環境安全，以改善我們的產品使用體驗。
 
 這就是為什麼我們相信你 **運行最新穩定版本** Adobe Campaign。 此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
 
@@ -41,9 +41,9 @@ ht-degree: 81%
 
 ## 建議{#recommendations}
 
-若要確保設定穩定，建議您安裝 **同樣穩定的組建** 在同一客戶機配置上運行的所有伺服器上。
+若要確保穩定設定，我們建議您在所有執行相同用戶端設定的伺服器上，安裝&#x200B;**相同的穩定版本編號**。
 
-此外，客戶端控制台必須與伺服器實例位於同一個版本。
+此外，用戶端控制台應與伺服器執行個體須為同一個版本編號。
 
 若要保持最新的實施，請務必閱讀每個新發行版本的[已棄用和已移除功能](../../rn/using/deprecated-features.md)和[相容性對照表](../../rn/using/compatibility-matrix.md)頁面。
 
@@ -136,7 +136,7 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 
 ## 額外資源{#support}
 
-* [尋找您的Campaign版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+* [尋找您的 Campaign 版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 * [說明與支援](../../support.md)
 * [控制面板發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)
 * [最新文件更新](../../rn/using/documentation-updates.md)

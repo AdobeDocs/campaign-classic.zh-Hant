@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <td>Adobe Analytics 資料連接器<br></td>
    <td><p>自 Campaign 第 21.1.3 發行版本開始，已棄用 Adobe Analytics 資料連接器。</p>
    <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/adobe-analytics-connector.md">瞭解更多</a></p>
-  <p><em>目標移除日期：2022年8月17日</em></p>
+  <p><em>目標移除日期：2022 年 8 月 17 日</em></p>
   </td>
  </tr>
     <tr>
@@ -62,7 +62,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><p>從 Campaign 21.1 版開始，技術傳遞能力監視報告已棄用。</p>
    <p>如有需要，您可以每天透過電子郵件收到此報告，直到功能移除日期為止。 若要請求，請開啟特定的<a href="https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支援案例</a>，並指定要傳送報告的執行個體名稱和電子郵件地址。</p> 
    <p>Adobe 建議您與傳遞能力團隊合作，以定義最佳工具來監視執行個體的傳遞能力效能。</p>
-  <p><em>目標移除日期：2022年初</em></p>
+  <p><em>目標移除日期：2022 年初</em></p>
   </td>
  </tr>
   <tr>
@@ -70,7 +70,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <td><p> 自 Campaign 第 20.3發行版本開始，已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至 Adobe I/O。 <p>
   <p>如果您使用觸發器整合，則需要據此調整實施。<a href="../../integrations/using/configuring-adobe-io.md">進一步瞭解</a></p> 
   <p>如需與 OAuth 驗證折舊相關的資訊，請參閱第 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md"> 頁</a></p> 
-  <p><em>目標移除日期：2021年10月20日。 托管環境可享受延伸至2022年2月23日的優惠。 </em></p>
+  <p><em>目標移除日期：2021 年 10 月 20 日。 直到 2022 年 2 月 23 日為止，託管環境可利用擴充功能。 </em></p>
   </td>
   </tr>
  </tbody> 
@@ -172,7 +172,7 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 
 自 19.1 發行版本開始，Adobe Campaign 不再與下列作業系統相容。
 
-* CentOS 6。 [了解更多](https://wiki.centos.org/Download)
+* CentOS 6。[了解更多](https://wiki.centos.org/Download)
 * Debian 7。[瞭解更多](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x。[瞭解更多](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008。[瞭解更多](https://support.microsoft.com/en-us/lifecycle/search/1163)

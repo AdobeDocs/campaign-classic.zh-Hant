@@ -24,7 +24,7 @@ ht-degree: 98%
    + 先前版本 {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
       + [2021年](rn/using/release--2021.md)
-      + [2020年](rn/using/release--2020.md)
+      + [2020](rn/using/release--2020.md)
       + [2019](rn/using/release--2019.md)
       + [2018](rn/using/release--2018.md)
    + [已棄用功能](rn/using/deprecated-features.md)
@@ -834,7 +834,7 @@ ht-degree: 98%
       + [技術備註](technotes/using/technote.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
-      + [終止支援TLS 1.0和1.1](technotes/using/eol-tls-support.md)
+      + [終止支援 TLS 1.0 和 1.1](technotes/using/eol-tls-support.md)
    + 電子郵件和推播通知{#technotes-email}
       + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
       + [Apple 郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)

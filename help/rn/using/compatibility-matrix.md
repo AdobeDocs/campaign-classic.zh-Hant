@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '720'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -201,12 +201,12 @@ ht-degree: 89%
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>最少7.2.1</td>
+<td>7.2.1 以後</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>最少7.2.1</td>
+<td>7.2.1 以後</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>

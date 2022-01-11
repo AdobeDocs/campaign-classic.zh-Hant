@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 最新版本
-description: 最新 Campaign Classic v7 發行說明
+description: 最新 Campaign Classic v7 版本注意事項
 feature: Overview
 role: User
 level: Beginner
@@ -9,15 +9,15 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 17%
+ht-degree: 30%
 
 ---
 
-# 最新發行版本{#latest-release}
+# 最新版本{#latest-release}
 
 ![](../../assets/v7-only.svg)
 
-本頁列出隨附的新功能、改進和修正 **最新Campaign Classicv7版本**. 每個新組建都會提供狀態，並以顏色具體化。 進一步了解Campaign Classicv7的建置狀態，位於 [本頁](rn-overview.md).
+本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
 ## ![](assets/do-not-localize/green_2.png)發行版本 7.2.1 - 版本編號 9346 {#release-7-2-1}
 
@@ -27,7 +27,7 @@ _2022年1月10日_
 
 已對FDA帳戶進行幾項安全性改善：
 
-* 現在，ODBC驅動程式直接與Adobe Campaign第三方安裝。 安裝這些驅動程式不再需要手動步驟。
+* 現在，ODBC 驅動程式直接與 Adobe Campaign 協力廠商安裝。 安裝這些驅動程式不再需要手動步驟。
 * 設定FDA外部帳戶時，您現在可以使用金鑰組驗證來登入Snowflake帳戶，以增強驗證安全性。 [閱讀全文](../../installation/using/configure-fda-snowflake.md)
 * 設定FDA外部帳戶時，您現在可以使用系統指派的受管理身分識別，登入您的Azure synapse分析帳戶。 [閱讀全文](../../installation/using/configure-fda-synapse.md#azure-external)
 * 已從Campaign移除對log4j程式庫的所有參考，以確保最佳安全性。
@@ -36,10 +36,10 @@ _2022年1月10日_
 
 * Microsoft Dynamics CRM 365 Connector
 
-   已套用有關Microsoft Dynamics Connector Web API的重要修正：
+   已套用有關 Microsoft Dynamics 連接器網頁 API 的重要修正：
 
-   * 修正在工作流程觸發的匯入期間，字串類型欄位的Null值儲存為Null而非空白值的問題。
-   * 修正使用Web API呼叫匯入或匯出資料時，導致下列錯誤的問題：&quot;無效的URI:URI方案太長」。
+   * 修正在工作流程觸發的匯入期間，字串類型欄位的 Null 值儲存為 Null 而非空白值的問題。
+   * 修正使用網頁 API 呼叫匯入或匯出資料時，導致下列錯誤的問題：「無效的 URI：URI 方案太長」。
    * 修正從Microsoft Dynamics 365匯入包含查閱欄位之資料時的各種問題。
 
 * Google BigQuery FDA Connector
@@ -49,7 +49,7 @@ _2022年1月10日_
 
 **其他變更**
 
-* 淘汰後，Microsoft CRM、Salesforce、OracleCRM隨需活動已從介面中移除。 若要設定Adobe Campaign與CRM系統之間的資料同步，您可以使用CRM連接器活動。 [閱讀全文](../../workflow/using/crm-connector.md)
+* 淘汰後，Microsoft CRM、Salesforce、OracleCRM隨需活動已從介面中移除。 若要設定 Adobe Campaign 與 CRM 系統之間的資料同步，您可以使用 CRM 連接器活動。[閱讀全文](../../workflow/using/crm-connector.md)
 * 此 **[!UICONTROL Encrypted identifier]** 欄位已新增至訪客結構(nms:visitor)。 此欄位已經過計算，將用於網路應用程式。當在中間來源執行個體上設定「行」管道時，即適用。
 * CRM資料來源現在可與 **更改資料源** 活動。
 * 已在 **錯誤管理** 工作流活動的屬性：此 **錯誤時中止** 選項會自動停止工作流程。 之後將無法重新啟動它(NEO-29661)。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
