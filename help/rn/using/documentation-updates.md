@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4796'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,29 +21,29 @@ ht-degree: 98%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2022年
+## 2022 年
 
-###  年 1 月
+### 1 月
 
 **7.2.1 版本隨附的其他文件更新**
 
-更新相容性矩陣。 [閱讀全文](compatibility-matrix.md)
+已更新相容性對照表。 [閱讀全文](compatibility-matrix.md)
 
 更新發行說明一節。 [閱讀全文](rn-overview.md)
 
-更新FDA外部帳戶設定以進行Snowflake。 [閱讀全文](../../installation/using/configure-fda-snowflake.md)
+已針對 Snowflake 更新 FDA 外部帳戶設定。 [閱讀全文](../../installation/using/configure-fda-snowflake.md)
 
-更新Azure synapse分析的FDA外部帳戶設定。 [閱讀全文](../../installation/using/configure-fda-synapse.md#azure-external)
+已針對 Azure Synapse 分析更新 FDA 外部帳戶設定。 [閱讀全文](../../installation/using/configure-fda-synapse.md#azure-external)
 
-更新Google BigQuery FDA Connector。 [閱讀全文](../../installation/using/configure-fda-google-big-query.md)
+已更新 Google BigQuery FDA 連接器。 [閱讀全文](../../installation/using/configure-fda-google-big-query.md)
 
-淘汰後，Microsoft CRM、Salesforce、OracleCRM隨需活動已從檔案中移除。
+在棄用後，Microsoft CRM、Salesforce、Oracle CRM 隨選操作活動已從文件中移除。
 
-新選項 **錯誤時中止** 新增至工作流程「錯誤管理」區段。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+新選項&#x200B;**錯誤時中止**&#x200B;已新增至工作流程「錯誤管理」區段。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 
-在CRM連接器活動中新增批次更新選項。 [閱讀全文](../../workflow/using/crm-connector.md)
+已在 CRM 連接器活動中新增批次更新選項。 [閱讀全文](../../workflow/using/crm-connector.md)
 
-## 2021年
+## 2021 年
 
 ### 2021 年 12 月{#dec-2021}
 
@@ -112,7 +112,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 全新 Vertica FDA 連接器 — [深入瞭解](../../installation/using/configure-fda-vertica.md)
 
-新Google BigQuery FDA連接器 —  [深入了解](../../installation/using/configure-fda-google-big-query.md)
+全新 Google BigQuery FDA 連接器 - [了解更多](../../installation/using/configure-fda-google-big-query.md)
 
 「帳單 (帳單)」技術工作流程描述現在包括最初由「活動帳單設定檔案數 (billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
 
@@ -202,7 +202,7 @@ Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示�
 
 
 
-## 2020
+## 2020 年
 
 ### 2020 年 12 月 {#dec-2020}
 
@@ -252,7 +252,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 更新「已棄用和已移除的功能」頁面。[顯示全文](../../rn/using/deprecated-features.md)
 
-的發行說明和相容性矩陣 [!DNL Gold Standard] 專屬頁面現在提供發行版本。
+ [!DNL Gold Standard] 發行版本的發行說明和相容性對照表已於專屬頁面顯示。
 [顯示全文](../../rn/using/gold-standard.md)。
 
 已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器驗證，並將其移動至 Adobe I/O。[閱讀更多資訊](../../integrations/using/configuring-adobe-io.md)
@@ -450,7 +450,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 已更新安裝指南，並與最新版本的相容性比較表同步。新增了新的可支援系統。移除已棄用及不支援的系統。[顯示全文](../../installation/using/general-architecture.md)
 
-更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 安裝指南新增了有關 IP 相似性的最佳實務。[顯示全文](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -468,7 +468,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
-更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 [此處](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)記錄新的 **[!UICONTROL Cleanup of Nmsaddress]** 工作流程。
 
@@ -496,7 +496,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 新增如何在工作流程使用執行個體變數的範例。[顯示全文](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019
+## 2019 年
 
 ### 2019 年 12 月 {#december-2019}
 
@@ -520,7 +520,7 @@ AMP 互動式內容 - [顯示全文](../../delivery/using/defining-interactive-c
 
 **此版本隨附的其他文件更新**
 
-推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增章節，說明如何疑難排解行銷活動中，持續顯示「盡快開始」狀態的工作流程。[顯示全文](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -582,7 +582,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
@@ -606,7 +606,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
 
-更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)
 
 新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](../../message-center/using/event-description.md)
 
@@ -645,7 +645,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
