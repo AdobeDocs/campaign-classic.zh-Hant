@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2556'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
    + [最新發行版本](rn/using/latest-release.md)
    + 先前版本 {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [2021年](rn/using/release--2021.md)
+      + [2021 年](rn/using/release--2021.md)
       + [2020](rn/using/release--2020.md)
       + [2019](rn/using/release--2019.md)
       + [2018](rn/using/release--2018.md)
@@ -817,15 +817,15 @@ ht-degree: 98%
       + [在您的網站中插入標籤](configuration/using/inserting-tags-in-your-site.md)
       + [收集所有瀏覽次數](configuration/using/collecting-all-visits.md)
       + [匿名追蹤](configuration/using/anonymous-tracking.md)
-+ 遷移指南 {#migrating-to-a-new-version}
-   + [移轉至Adobe Campaign v7](migration/using/about-migration.md)
++ 移轉指南 {#migrating-to-a-new-version}
+   + [移轉至 Adobe Campaign v7](migration/using/about-migration.md)
    + 移轉程序 {#migration-procedure}
-      + [先決條件](migration/using/before-starting-migration.md)
+      + [必要條件](migration/using/before-starting-migration.md)
       + [關於移轉測試](migration/using/testing-the-migration.md)
-      + [調整配置](migration/using/configuring-your-platform.md)
+      + [調整您的設定](migration/using/configuring-your-platform.md)
    + 開始移轉 {#migrating-to-adobe-campaign-7}
-      + [移轉Microsoft Windows平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [遷移Linux平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [移轉 Microsoft Windows平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [移轉 Linux 平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
       + [設定您的平台](migration/using/general-configurations.md)
    + [反轉程序](migration/using/about-rollback.md)
 + 技術備註{#technotes}
