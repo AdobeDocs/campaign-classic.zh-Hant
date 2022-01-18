@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 ![](../../assets/v7-only.svg)
 
-## 發行狀態{#rn-statuses}
+## 版本狀態{#rn-statuses}
 
 每個新版本編號都會提供以顏色具體化的狀態。
 
@@ -31,13 +31,13 @@ ht-degree: 87%
 
 ![](assets/do-not-localize/red3.png) **已棄用** － 無部署。無錯誤修正。 現有實施必須升級。
 
-## 發行週期
+## 版本週期
 
-已定期更新 Adobe Campaign。此定期更新的目的是為了讓您掌握最新、最佳的資訊，進而確保環境安全，以改善我們的產品使用體驗。
+Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握最新、最佳的資訊，進而確保安全的使用環境，並改產品使用體驗。
 
-這就是為什麼我們相信你 **運行最新穩定版本** Adobe Campaign。 此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
+這就是我們認為您需要&#x200B;**執行最新穩定 Adobe Campaign 版本**&#x200B;的重要原因。此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
 
-身為托管客戶，您無需採取任何操作便可透過最新穩定版本的升級自動受益。 了解更多 [每年升級部分](#yearly-upgrade). 如果您從舊版組建移轉，Adobe建議您先升級至此版本。
+作為託管客戶，您無需採取任何操作便可透過最新穩定版本，自動享受升級的好處。在[年度升級一節](#yearly-upgrade)深入了解。 如果您從舊的版本編號轉移，Adobe 建議您先升級至此版本。
 
 ## 建議{#recommendations}
 
@@ -53,19 +53,19 @@ ht-degree: 87%
 
 身為內部部署使用者，您可以進行升級。為此，您需要[下載最新的穩定版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)並升級所有環境。瞭解更多[升級流程](../../production/using/build-upgrade.md)，並參閱[版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
-## 每年升級 {#yearly-upgrade}
+## 年度升級 {#yearly-upgrade}
 
 Adobe 和 Adobe Campaign 致力透過我們的軟體解決方案為您提供最佳體驗和價值。 針對在我們的解決方案中所運用的相關技術，公司致力確保您能夠取得最新版本來執行其任務。
 
 Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組合，需要您定期升級 Campaign Classic 執行個體，以確保使用最新版本來提供優越的安全性、穩定性和效能。
 
-身為托管使用者，您無需採取任何操作便可透過最新穩定版本編號，自動受益於升級。 請參閱下列常見問題集以了解更多資訊。
+作為託管使用者，您無需採取任何操作，便可自動透過升級與最新組建版本受益。請參閱下列常見問題集以了解更多資訊。
 
 ### 我的組織為何需要此升級？
 
 作為托管客戶，如果您的帳戶被認定需要升級一或多項與 Campaign Classic 的相關技術，以及更新目前的建置和／或版本，Adobe 會直接通知您。
 
-身為內部部署或混合客戶，若使用舊版，Adobe可鼓勵您改用最新的穩定版本編號。
+作為使用舊版軟體的內部部署或混合型客戶，Adobe 鼓勵您改用最新的穩定版本。
 
 這將確保您的帳戶免受漏洞的侵擾，並可運用更新的效能技術。 此升級還可讓您的帳戶日後能夠更輕鬆定期升級，而且所需的手動作業和操作也更少。
 
@@ -141,6 +141,6 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 * [控制面板發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)
 * [最新文件更新](../../rn/using/documentation-updates.md)
 * [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
-* [建置升級常見問答集](../../platform/using/faq-build-upgrade.md)
+* [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
 
 若要接收最新 Experience Cloud 解決方案發行版本的通知，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)。
