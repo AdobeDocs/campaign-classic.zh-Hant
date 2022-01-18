@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: '[!DNL Gold Standard] 發行版本'
-description: 發行說明和Campaign Classic相容性矩陣 [!DNL Gold Standard]
+title: '[!DNL Gold Standard] 版本'
+description: 發行說明和 Campaign Classic 相容性對照表 [!DNL Gold Standard]
 feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: f20ac97be9390fd7e6fd6a6c4d738c0fde9c72c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1676'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# [!DNL Gold Standard] 發行版本{#gold-standard}
+# [!DNL Gold Standard] 版本{#gold-standard}
 
 ![](../../assets/v7-only.svg)
 
-您可以在本頁面的發行說明和相容性矩陣中找到 [!DNL Gold Standard] 版本。
+您可以在本頁面的發行說明和相容性對照表中找到 [!DNL Gold Standard] 版本。
 
-## [!DNL Gold Standard] 年發行說明
+## [!DNL Gold Standard] 發行說明
 
 
 ### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 第 12 發行版本{#gs-12}
@@ -52,7 +52,7 @@ _2021年 4 月 14 日_
 >
 > * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。使用Campaign的舊版oAuth驗證模式 [已經退休了](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **2021年9月**. 托管環境可從擴充功能中獲益，直到  **2022年2月23日**. 身為內部部署或混合客戶，請聯絡Adobe客戶服務以將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 直到 **2022 年 2 月 23 日**&#x200B;為止，託管環境可利用擴充功能。若為內部部署或混合客戶，請聯絡 Adobe 客戶服務，將支援延長至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 >
 >進一步瞭解[[!DNL Gold Standard] 第 11 版升級常見問題](https://helpx.adobe.com/tw/campaign/kb/gold-standard-upgrade.html)
@@ -117,11 +117,11 @@ _2020 年 4 月 29 日_
 
 建置 9032@3a9dc9c 包含以下修正：
 
-* 改善了電子郵件中追蹤連結的安全性。依預設為所有客戶啟用此功能。另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+* 改善了電子郵件中追蹤連結的安全性。依預設為所有客戶啟用此功能。另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)。
 
 >[!CAUTION]
 >
->如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。[本頁面](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
+>如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。[本頁面](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
 
 * 修正了無法在 Line 傳遞顯示影像的問題。(NEO-23207)
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
@@ -192,9 +192,9 @@ _2019 年 8 月 13 日_
 * 修正了各種工作流程排程的問題。排程工作流程以進行每天一次的運行，無需考慮排程器配置。(NEO-16619、NEO-16426)
 
 
-## [!DNL Gold Standard] 相容性矩陣{#compatibility-matrix-gs}
+## [!DNL Gold Standard] 相容性比較表{#compatibility-matrix-gs}
 
-本節列出支援的所有系統和元件 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1組建。 不屬於此清單的產品和版本與此版本的 Adobe Campaign 不相容。
+本節列出 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 版本編號支援的所有系統和元件。不屬於此清單的產品和版本與此版本的 Adobe Campaign 不相容。
 
 >[!CAUTION]
 >除非另有提及，否則支援所有次要版本。
@@ -317,7 +317,7 @@ _2019 年 8 月 13 日_
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p>警告：當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。</p>
@@ -392,10 +392,10 @@ _2019 年 8 月 13 日_
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 </tr>
@@ -453,8 +453,8 @@ _2019 年 8 月 13 日_
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
