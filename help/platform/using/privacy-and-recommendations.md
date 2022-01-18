@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2032'
 ht-degree: 100%
 
@@ -151,7 +151,7 @@ Adobe Campaign 提供其他功能，協助您作為資料控制方，針對特�
 
 * **被遺忘的權利** (刪除要求) 為資料主體賦予權利，讓資料控制人員得以清除其個人資料。
 
-[本部分](../../platform/using/privacy-management.md#right-access-forgotten)會顯示&#x200B;**存取**&#x200B;及&#x200B;**刪除**&#x200B;要求。
+[此節](../../platform/using/privacy-management.md#right-access-forgotten)顯示&#x200B;**存取**&#x200B;及&#x200B;**刪除**&#x200B;要求。
 
 建立這些請求的實施步驟將於[本節](../../platform/using/privacy-requests.md)中詳細說明。
 
