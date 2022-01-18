@@ -6,18 +6,18 @@ feature: Overview
 role: User
 level: Beginner
 source-git-commit: babb585438a6e467afad74391035059f7b12a6ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 2021版本{#release-2021}
+# 2021 版本{#release-2021}
 
-## 第 7.1 版本 (21.1)
+## 版本 7.1 (21.1)
 
 >[!CAUTION]
->使用 **[!UICONTROL Help > About...]** 功能表，檢查您的Adobe Campaign [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 不過請注意，本頁所列的 9277 與 9343 之間的所有版本編號都顯示 7.0 而非 7.1。
+>使用 **[!UICONTROL Help > About...]** 功能表以檢查您的 Adobe Campaign [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。不過請注意，本頁所列的 9277 與 9343 之間的所有版本編號都顯示 7.0 而非 7.1。
 
 ### ![](assets/do-not-localize/limited_2.png)發行版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
 
@@ -145,12 +145,12 @@ _2021 年 6 月 5 日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Google BigQuery FDA連接器</strong><br /> </th> 
+<th> <strong>Google BigQuery FDA 連接器</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>您現在可以將 Adobe Campaign Classic 執行個體連線至 Google Big Query 外部資料庫。 此連線透過新的外部帳戶進行管理。
+<td> <p>您現在可以將 Adobe Campaign Classic 執行個體連線至 Google BigQuery 外部資料庫。 此連線透過新的外部帳戶進行管理。
 </p>
 <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-google-big-query.md">詳細文件</a>。</p>
 </td> 
@@ -168,7 +168,7 @@ _2021 年 6 月 5 日_
 **相容性更新**
 
 下列系統現在已支援 Campaign：
-* Google BigQuery FDA連接器
+* Google BigQuery FDA 連接器
 * Vertica FDA 連接器
 * PostgreSQL 13
 
