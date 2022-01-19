@@ -70,7 +70,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <td><p> 自 Campaign 第 20.3發行版本開始，已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至 Adobe I/O。 <p>
   <p>如果您使用觸發器整合，則需要據此調整實施。<a href="../../integrations/using/configuring-adobe-io.md">進一步瞭解</a></p> 
   <p>如需與 OAuth 驗證折舊相關的資訊，請參閱第 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md"> 頁</a></p> 
-  <p><em>目標移除日期：2021 年 10 月 20 日。 托管環境可享受延伸至2022年5月25日的優惠。 </em></p>
+  <p><em>目標移除日期：2021 年 10 月 20 日。 托管環境從延長到2022年5月25日受益。 </em></p>
   </td>
   </tr>
  </tbody> 
