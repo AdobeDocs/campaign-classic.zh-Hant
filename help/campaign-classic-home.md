@@ -1,12 +1,12 @@
 ---
 keywords: Campaign Classic;home;popular topics
 product: campaign
-title: Adobe Campaign Classic v7產品檔案
+title: Adobe Campaign Classicv7產品文檔
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 51%
+source-wordcount: '270'
+ht-degree: 49%
 
 ---
 
@@ -16,17 +16,19 @@ ht-degree: 51%
 
 ## 新增功能
 
-* **[1月發行版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
+* **[《2022年發佈計畫》](technotes/using/dc-migration.md)**<br/> 升級您的環境並改進安全性、基礎架構和效能
 
-* **[Apple郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)** 和 **[技術檔案](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 了解Apple有關iOS 15的公告之回應指引
+* **[1月份發佈將即時！](rn/using/latest-release.md)**<br/> 在發行說明中發現新功能、改進和修復
 
-* **[透過IMS/Adobe ID連線？ 升級至最新組建版本](technotes/using/ims-updates.md)**<br/> 如果您使用IMS連線至Campaign，您必須升級，才能在** 2021年6月30日&#x200B;**
+* **[Apple郵件隱私保護常見問題](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)** 和 **[技術](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 查找對Apple關於iOS15的公告的回應的指導
 
-* **[移除不正確的硬退信](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中斷後更新不正確的硬退信
+* **[通過IMS/Adobe ID連接？ 升級到最新版本](technotes/using/ims-updates.md)**<br/> 如果您使用IMS連接到市場活動，則必須升級，以便在** 2021年6月30日&#x200B;**
 
-* **[保護您的Campaign執行個體](technotes/using/acc-config-updates.md)**<br/> 更新至最新組建版本，以保護您的Campaign平台
+* **[刪除不正確的硬邊界](delivery/using/update-bounce-qualification.md)**<br/> 瞭解如何在Apple停機後更新不正確的硬邊界
 
-* **[更新Adobe Experience Cloud Triggers整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth驗證服務已終止：您需要移轉至Adobe I/O。
+* **[保護您的活動實例](technotes/using/acc-config-updates.md)**<br/> 更新到最新版本以保護您的市場活動平台
+
+* **[更新您的Adobe Experience Cloud Triggers整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth身份驗證服務已到期：你需要遷移到Adobe I/O。
 
 [更多更新](rn/using/documentation-updates.md)
 
