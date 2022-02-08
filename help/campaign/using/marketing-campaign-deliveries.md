@@ -2,9 +2,9 @@
 product: campaign
 title: 行銷活動傳遞
 description: 瞭解有關市場營銷活動交付的更多資訊
-audience: campaign
+feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ![](assets/do-not-localize/how-to-video.png)[ 在影片中探索此功能](#create-email-video)
 
-## 建立傳送 {#creating-deliveries}
+## 建立傳遞 {#creating-deliveries}
 
 要建立連結到市場活動的交貨，請按一下 **[!UICONTROL Add a delivery]** 連結。
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 一旦所有批准都獲得批准，交付即可開始。 然後，交貨過程取決於交貨類型。 有關電子郵件或移動渠道交付，請參閱 [啟動聯機交貨](#starting-an-online-delivery)，有關直接郵件遞送，請參閱 [啟動離線傳遞](#starting-an-offline-delivery)。
 
-### 啟動聯機交貨 {#starting-an-online-delivery}
+### 開始聯機交貨 {#starting-an-online-delivery}
 
 一旦授予所有批准請求，交貨狀態將更改為 **[!UICONTROL Pending confirmation]** 可由操作員啟動。 在適當情況下，將通知指定為審閱者以開始交付的Adobe Campaign操作員（或操作員組）準備開始交付。
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 通過確認消息，您可以保護此操作。
 
-### 啟動離線傳遞 {#starting-an-offline-delivery}
+### 啟動離線交貨 {#starting-an-offline-delivery}
 
 一旦所有批准都獲得，交貨狀態將更改為 **[!UICONTROL Pending extraction]**。 提取檔案通過特殊工作流建立，在預設配置中，當直郵遞送處於待提取狀態時，該工作流自動啟動。 當進程正在進行時，該進程將顯示在儀表板中，並可通過其連結進行編輯。
 
@@ -114,7 +114,7 @@ ht-degree: 2%
 >
 >有關成本計算和庫存管理的詳細資訊，請參閱 [供應商、庫存和預算](../../campaign/using/providers--stocks-and-budgets.md)。
 
-## 管理關聯文檔 {#managing-associated-documents}
+## 管理相關文件 {#managing-associated-documents}
 
 您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些文檔可以採用任何格式(MicrosoftWord、PowerPoint、PNG、JPG、AcrobatPDF等)。 瞭解如何將文檔與市場活動連結 [此部分](../../campaign/using/marketing-campaign-assets.md)。
 
@@ -155,7 +155,7 @@ ht-degree: 2%
 
 也可以從此視圖編輯和修改它們。
 
-### 通過交付大綱關聯和構建連結的資源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+### 通過交貨大綱連結的關聯和結構資源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >

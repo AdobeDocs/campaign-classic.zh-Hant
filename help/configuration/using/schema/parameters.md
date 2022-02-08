@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: 元素和屬性
-description: 元素和屬性
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+title: 架構元素和屬性
+description: 參數元素
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '46'
-ht-degree: 17%
+ht-degree: 8%
 
 ---
 
@@ -35,11 +32,11 @@ ht-degree: 17%
 
 ## 說明 {#description-13}
 
-此元素會定義 `<parameter>`  元素。
+此元素定義一組 `<parameter>`  元素。
 
-## 使用與使用內容 {#use-and-context-of-use-8}
+## 使用和使用上下文 {#use-and-context-of-use-8}
 
-此元素是必填的，即使是單一 `<param>` 的子元素 `<method>`  元素。
+此元素是必需的，即使對於單個 `<param>` 子元素 `<method>`  的子菜單。
 
 ## 屬性說明 {#attribute-description-13}
 

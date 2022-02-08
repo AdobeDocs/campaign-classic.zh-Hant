@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 匿名追蹤
-description: 匿名追蹤
-audience: configuration
-content-type: reference
-topic-tags: setting-up-web-tracking
+description: 瞭解如何設定匿名跟蹤
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 6%
+source-wordcount: '212'
+ht-degree: 5%
 
 ---
 
@@ -17,20 +14,20 @@ ht-degree: 6%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign可讓您在收集到的網頁追蹤資訊以匿名方式瀏覽您的網站時，將其連結至收件者。 當使用者瀏覽您網站的已標籤頁面時，會收集此瀏覽資訊，以便在使用者點按Adobe Campaign所傳送的電子郵件後，即可識別他們，並自動將資訊連結至他們。
+Adobe Campaign允許您在收集的Web跟蹤資訊匿名瀏覽您的網站時將其連結到收件人。 當用戶瀏覽您網站的標籤頁面時，會收集此瀏覽資訊，這樣，一旦用戶按一下Adobe Campaign發送的電子郵件，就會識別這些用戶並自動將資訊連結到他們。
 
 >[!IMPORTANT]
 >
->在網站上設定匿名追蹤可觸發大量追蹤記錄的收集，進而影響資料庫操作。 謹慎配置。\
->追蹤記錄檔會儲存在資料庫中，直到追蹤資料清除為止。 使用部署嚮導配置清除頻率。 如需詳細資訊，請參閱[本章節](../../installation/using/deploying-an-instance.md#purging-data)。
+>在網站上設定匿名跟蹤可以觸發大量跟蹤日誌的收集，從而影響資料庫操作。 小心配置。\
+>跟蹤日誌將保存在資料庫中，直到跟蹤資料被清除。 使用部署嚮導配置清除頻率。 如需詳細資訊，請參閱[本章節](../../installation/using/deploying-an-instance.md#purging-data)。
 
-若要在您的執行個體上啟用匿名Web追蹤，必須設定下列元素：
+要在實例上啟用匿名Web跟蹤，必須配置以下元素：
 
-* 此 **trackWebVisitors** 參數 **重定向** 元素 **serverConf.xml** 追蹤伺服器的檔案必須設為「**true**&#39;，將永久Cookie(**uuid230**)（位於造訪網站之未知網際網路使用者的瀏覽器中）。
-* 此 **匿名網路追蹤** 必須在部署精靈的追蹤設定畫面中選取模式。
+* 的 **跟蹤Web訪問者** 參數 **重定向** 元素 **serverConf.xml** 跟蹤伺服器的檔案必須設定為「**真**&#39;，放置永久cookie(**UUID230**)的瀏覽器。
+* 的 **匿名Web跟蹤** 必須在部署嚮導的跟蹤配置螢幕中選擇模式。
 
    ![](assets/webtracking_anonymous_set.png)
 
-* 網路表單必須在追蹤伺服器上發佈及執行。 必須在部署嚮導中選擇匹配選項。
+* 必須在跟蹤伺服器上發佈和執行Web表單。 必須在部署嚮導中選擇匹配選項。
 
    ![](assets/webtracking_publication_set_for_webapps.png)

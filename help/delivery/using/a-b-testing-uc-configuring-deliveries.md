@@ -1,55 +1,52 @@
 ---
 product: campaign
-title: 設定傳送
-description: 透過專屬的使用案例了解如何執行A/B測試
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+title: 配置交貨
+description: 瞭解如何通過專用使用案例執行A/B測試
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-# 在工作流程中設定傳送 {#step-4--configuring-the-deliveries-in-the-workflow}
+# 在工作流中配置交貨 {#step-4--configuring-the-deliveries-in-the-workflow}
 
 ![](../../assets/common.svg)
 
-一次 [建立母體](a-b-testing-uc-population-samples.md)，您可以設定傳送。 在此使用案例中，前兩個傳送可讓您將不同的內容傳送至母體A和B。第三個傳送是後退傳送：它會傳送給不屬於A或B的收件者。其內容將由指令碼計算，且會與A或B相同，視哪個開啟率最高者而定。 我們需要設定第三個傳送的等待期，以了解傳送A和B的結果。這就是為什麼第三個傳送包含 **[!UICONTROL Wait]** 活動。
+一次 [群體建立](a-b-testing-uc-population-samples.md)，您可以配置交貨。 在此使用例中，前兩個交貨使您能夠將不同的內容發送到人口A和人口B。第三種是回退式交貨：將發送給不屬於A和B的接收者。其內容將由指令碼計算，並且與A或B相同，具體取決於開啟率最高的是哪個。 我們需要為第三次交貨配置等待期，以查明交貨A和B的結果。這就是為什麼第三個交貨 **[!UICONTROL Wait]** 的子菜單。
 
-1. 前往 **[!UICONTROL Split]** 活動，並將目的地為母體A的轉變連結至工作流程中已進行的其中一個電子郵件傳送。
+1. 轉到 **[!UICONTROL Split]** 活動，並將目標為填充A的轉換連結到工作流中已有的電子郵件遞送。
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
-1. 連按兩下傳送以開啟。
-1. 使用下拉式清單，選取傳送A的範本。
+1. 按兩下交貨以將其開啟。
+1. 使用下拉清單，選擇交貨A的模板。
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. 按一下 **[!UICONTROL Continue]** 若要檢視傳送，請儲存。
+1. 按一下 **[!UICONTROL Continue]** 查看交貨，然後保存。
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. 連結 **[!UICONTROL Split]** 目的地為母體B的活動，傳送至第二個電子郵件。
+1. 連結 **[!UICONTROL Split]** 目標為人口B的活動，轉到第二個電子郵件傳送。
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
-1. 開啟傳送並選取傳送B中的範本，然後儲存傳送。
+1. 開啟交貨，在交貨B中選擇模板，然後保存交貨。
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. 將目的地為剩餘母體的轉變連結至 **[!UICONTROL Wait]** 活動。
+1. 將目的地為剩餘人口的過渡連結到 **[!UICONTROL Wait]** 的子菜單。
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. 開啟 **[!UICONTROL Wait]** 活動並設定5天的等候期間。
+1. 開啟 **[!UICONTROL Wait]** 並配置5天的等待期。
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. 連結 **[!UICONTROL Wait]** 活動 **[!UICONTROL JavaScript code]** 活動。
+1. 連結 **[!UICONTROL Wait]** 活動 **[!UICONTROL JavaScript code]** 的子菜單。
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-您現在可以建立指令碼。 [深入瞭解](a-b-testing-uc-script.md)。
+現在可以建立指令碼。 [了解更多](a-b-testing-uc-script.md)。

@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 開始工作流程
-description: 透過專屬的使用案例了解如何執行A/B測試。
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+description: 瞭解如何通過專用使用案例執行A/B測試
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 9%
@@ -17,18 +14,18 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-1. 按一下 **[!UICONTROL Start]** 工作流程。
+1. 按一下 **[!UICONTROL Start]** 的子菜單。
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
-1. 透過促銷活動控制面板核准傳遞A和B的目標和內容。
-1. 確認傳送。
-1. 等到5天時段結束為止，以找出在傳送開啟結果之後計算的內容。
+1. 通過市場活動控制面板批准交貨A和B的目標和內容。
+1. 確認交貨。
+1. 等到5天時段結束，以確定在交貨開始結果後計算的內容。
 
    ![](assets/use_case_abtesting_startwkfl_002.png)
 
-   在此情況下，選擇範本B。
+   在這種情況下，選擇了模板B。
 
-1. 決定第三個傳送的內容後，核准目標和內容。
+1. 一旦確定了第三次傳遞的內容，就批准目標和內容。
 
-您現在可以分析結果。 [深入瞭解](a-b-testing-uc-analyzing.md)。
+現在可以分析結果。 [了解更多](a-b-testing-uc-analyzing.md)。

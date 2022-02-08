@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: Campaign 模擬
-description: Campaign 模擬
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: 開始活動模擬
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1245'
 ht-degree: 2%
 
 ---
@@ -19,15 +16,15 @@ ht-degree: 2%
 
 ## 關於模擬 {#about-simulations}
 
-促銷活動最佳化可讓您使用模擬來測試促銷活動計畫的效率。 這可讓您測量促銷活動的潛在成功：產生的收入、根據套用的類型規則設定目標量等。
+市場活動優化允許您使用模擬test市場活動計畫的效率。 這允許您衡量市場活動的潛在成功：生成的收入、基於所應用的類型規則的目標數量等。
 
-模擬可讓您監控和比較傳送的影響。
+模擬可監視和比較交貨的影響。
 
 >[!NOTE]
 >
->以「測試」模式準備的傳送彼此沒有影響，例如在分佈式行銷中評估促銷活動時，或只要傳送未排程在臨時日曆中。\
->這表示壓力和容量規則只會套用至 **[!UICONTROL Target estimation and message personalization]** 模式。 中的傳遞 **[!UICONTROL Estimation and approval of the provisional target]** 和 **[!UICONTROL Target evaluation]** 不會考慮模式。\
->在 **[!UICONTROL Typology]** 傳送屬性的子索引標籤。
+>以Test模式準備的交貨對彼此沒有影響，例如，在分佈式市場營銷中評估市場活動時，或只要臨時日曆中沒有計畫交貨。\
+>這意味著壓力和能力規則僅適用於 **[!UICONTROL Target estimation and message personalization]** 的子菜單。 交貨時間 **[!UICONTROL Estimation and approval of the provisional target]** 在 **[!UICONTROL Target evaluation]** 模式未被考慮。\
+>在 **[!UICONTROL Typology]** 頁籤。
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
@@ -37,29 +34,29 @@ ht-degree: 2%
 
 要建立模擬，請應用以下步驟：
 
-1. 開啟 **[!UICONTROL Campaigns]** ，按一下 **[!UICONTROL More]** 連結 **[!UICONTROL Create]** 區段，然後選取 **[!UICONTROL Simulation]** 選項。
+1. 開啟 **[!UICONTROL Campaigns]** 頁籤 **[!UICONTROL More]** 連結 **[!UICONTROL Create]** 的 **[!UICONTROL Simulation]** 的雙曲餘切值。
 
    ![](assets/simu_campaign_opti_01.png)
 
-1. 輸入模板和模擬的名稱。 按一下 **[!UICONTROL Save]** 來建立模擬。
+1. 輸入模板和模擬的名稱。 按一下 **[!UICONTROL Save]** 建立模擬。
 
    ![](assets/simu_campaign_opti_02.png)
 
-1. 按一下 **[!UICONTROL Edit]** 標籤來設定。
+1. 按一下 **[!UICONTROL Edit]** 頁籤。
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. 在 **[!UICONTROL Scope]** 標籤，指定您要為此模擬考慮的傳送。 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕，並指定要考慮的傳送選擇模式。
+1. 在 **[!UICONTROL Scope]** 頁籤，指定要為此模擬考慮的交貨。 要執行此操作，請按一下 **[!UICONTROL Add]** 按鈕並指定要考慮的傳遞選擇模式。
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
-   您可以逐一選取每個傳送，或依促銷活動、方案或計畫排序。
+   您可以逐個選擇每個交貨，或按市場活動、方案或計畫對其排序。
 
    >[!NOTE]
    >
-   >如果您透過計畫、方案或行銷活動選取傳送，Adobe Campaign可以在模擬開始時自動重新整理傳送清單，以納入考量。 若要這麼做，請檢查 **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** 選項。
+   >如果您通過計畫、方案或市場活動選擇交貨，Adobe Campaign可以自動刷新交貨清單，以便在模擬啟動時考慮交貨。 要執行此操作，請檢查 **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** 的雙曲餘切值。
    >  
-   >如果您未這麼做，系統將不會考慮建立模擬時計畫、方案或促銷活動中無法使用的任何傳送：稍後新增的傳送將會遭忽略。
+   >如果您不這樣做，則在建立模擬時，計畫、方案或市場活動中不可用的任何交貨將不被考慮在內：以後添加的交貨將被忽略。
 
    ![](assets/simu_campaign_opti_edit_scope_update.png)
 
@@ -67,35 +64,35 @@ ht-degree: 2%
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   按一下 **[!UICONTROL Finish]** 來核准選取項目。
+   按一下 **[!UICONTROL Finish]** 的子菜單。
 
-   您可以手動結合屬於計畫、方案或促銷活動的選取傳送和傳送。
+   您可以人工合併屬於計畫、方案或市場活動的選定交貨和交貨。
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   如有需要，您可以透過 **[!UICONTROL Edit the dynamic condition...]** 連結。
+   如有必要，可通過 **[!UICONTROL Edit the dynamic condition...]** 的子菜單。
 
-   按一下 **[!UICONTROL Save]** 來核准此設定。
+   按一下 **[!UICONTROL Save]** 以批准此配置。
 
    >[!NOTE]
    >
-   >計算模擬時，只會考慮已計算目標的傳送(狀態： **目標就緒** 或 **準備交付**)。
+   >計算模擬時，只考慮已計算目標的交貨(狀態： **目標就緒** 或 **準備交付**)。
 
-1. 在 **[!UICONTROL Calculations]** 索引標籤，選取分析維度，例如收件者結構。
+1. 在 **[!UICONTROL Calculations]** 頁籤，選擇分析維，例如收件人方案。
 
    ![](assets/simu_campaign_opti_dimension.png)
 
-1. 然後，您可以新增運算式。
+1. 然後可以添加表達式。
 
    ![](assets/simu_campaign_opti_dimension_02.png)
 
 ### 執行設定 {#execution-settings}
 
-此 **[!UICONTROL General]** 頁簽，您可以輸入執行設定：
+的 **[!UICONTROL General]** 頁籤，您可以輸入執行設定：
 
-* 此 **[!UICONTROL Schedule execution for down-time]** 選項會根據所選的優先順序，將模擬啟動預設為較不繁忙的時段。 模擬使用大量資料庫資源，因此，例如，非緊急模擬應安排在夜間運行。
-* 此 **[!UICONTROL Priority]** 是用於模擬以延遲其觸發的級別。
-* **[!UICONTROL Save SQL queries in the log]**. SQL日誌可讓您診斷模擬（如果模擬以錯誤結尾）。 它們也可協助您找出模擬為何太慢。 這些訊息在進行模擬後，將會顯示在 **[!UICONTROL SQL logs]** 的子標籤 **[!UICONTROL Audit]** 標籤。
+* 的 **[!UICONTROL Schedule execution for down-time]** 選項根據所選優先順序將模擬啟動延遲到較短的忙時段。 模擬使用大量資料庫資源，這就是為什麼非緊急模擬應安排在夜間運行。
+* 的 **[!UICONTROL Priority]** 是用於模擬以延遲其觸發的級別。
+* **[!UICONTROL Save SQL queries in the log]**。 SQL日誌允許您診斷模擬（如果模擬以錯誤結尾）。 它們還可以幫助你找出模擬速度太慢的原因。 這些消息在中的模擬後可見 **[!UICONTROL SQL logs]** 頁籤 **[!UICONTROL Audit]** 頁籤。
 
 ## 執行模擬 {#executing-a-simulation}
 
@@ -103,131 +100,131 @@ ht-degree: 2%
 
 定義模擬範圍後，即可執行它。
 
-要執行此操作，請開啟模擬儀表板，然後按一下 **[!UICONTROL Start simulation]**.
+要執行此操作，請開啟模擬操控板並按一下 **[!UICONTROL Start simulation]**。
 
 ![](assets/simu_campaign_opti_start.png)
 
-執行完成後，開啟模擬並按一下 **[!UICONTROL Results]** 標籤來檢視針對每個傳送計算的目標。
+執行完成後，開啟模擬並按一下 **[!UICONTROL Results]** 頁籤，查看為每個交貨計算的目標。
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. 此 **[!UICONTROL Deliveries]** 子索引標籤會列出模擬考慮的所有傳送。 它顯示兩個計數：
+1. 的 **[!UICONTROL Deliveries]** 子頁籤列出模擬所考慮的所有交貨。 它顯示了兩種情況：
 
-   * 此 **[!UICONTROL Initial count]** 是目標，就如在傳送期間進行估計時所計算的。
-   * 此 **[!UICONTROL Final count]** 是模擬後計算的收件者人數。
+   * 的 **[!UICONTROL Initial count]** 是在交付時估計時計算的目標。
+   * 的 **[!UICONTROL Final count]** 是模擬後計數的收件人數。
 
-      初始計數和最終計數之間的差異反映了在模擬之前配置的各種規則或篩選器的應用。
+      初始計數和最終計數之間的差異反映了在模擬之前配置的各種規則或過濾器的應用。
 
-      若要進一步了解此計算，請編輯 **[!UICONTROL Exclusions]** 頁簽。
+      要瞭解有關此計算的詳細資訊，請編輯 **[!UICONTROL Exclusions]** 的子菜單。
 
-1. 此 **[!UICONTROL Exclusions]** 子索引標籤可讓您檢視排除劃分。
+1. 的 **[!UICONTROL Exclusions]** 的子菜單。
 
    ![](assets/simu_campaign_opti_14.png)
 
-1. 此 **[!UICONTROL Alerts]** 子頁簽將模擬期間生成的所有警報消息分組。 如果容量超載（例如，如果目標收件者數量超過設定的容量），則可以傳送警報訊息。
-1. 此 **[!UICONTROL Exploration of the exclusions]** 子標籤建立結果分析表。 使用者需要在橫坐標/縱坐標軸中指定變數。
+1. 的 **[!UICONTROL Alerts]** 子頁籤將模擬期間生成的所有警報消息分組。 在容量超載時（例如，如果目標接收者數量超過設定的容量），可以發送警報消息。
+1. 的 **[!UICONTROL Exploration of the exclusions]** 頁籤，用於建立結果分析表。 用戶需要在橫坐標/縱坐標軸中指示變數。
 
-   如需建立分析表格的範例，請參閱 [探索結果](#exploring-results).
+   有關建立分析表的示例，請參閱 [瀏覽結果](#exploring-results)。
 
 ### 查看結果 {#viewing-results}
 
-#### 稽核 {#audit}
+#### 審計 {#audit}
 
-此 **[!UICONTROL Audit]** 標籤可讓您監視模擬執行。 此 **[!UICONTROL SQL Logs]** 子索引標籤對專家使用者很實用。 它以SQL格式列出執行日誌。 只有在 **[!UICONTROL Save SQL queries in the log]** 已選取 **[!UICONTROL General]** 標籤。
+的 **[!UICONTROL Audit]** 頁籤，用於監視模擬執行。 的 **[!UICONTROL SQL Logs]** 子頁籤對專家用戶非常有用。 它列出SQL格式的執行日誌。 僅當 **[!UICONTROL Save SQL queries in the log]** 中 **[!UICONTROL General]** 頁籤。
 
 ![](assets/simu_campaign_opti_11.png)
 
-#### 探索結果 {#exploring-results}
+#### 瀏覽結果 {#exploring-results}
 
-此 **[!UICONTROL Exploration of the exclusions]** 子索引標籤可讓您分析模擬產生的資料。
+的 **[!UICONTROL Exploration of the exclusions]** 子頁籤，用於分析由模擬產生的資料。
 
-描述性分析在 [本節](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+描述性分析在 [此部分](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
 
 ## 模擬結果 {#results-of-a-simulation}
 
-中的指標 **[!UICONTROL Log]** 和 **[!UICONTROL Results]** 索引標籤會提供模擬結果的第一個概述。 如需更詳細的結果檢視，請開啟 **[!UICONTROL Reports]** 標籤。
+中的指標 **[!UICONTROL Log]** 和 **[!UICONTROL Results]** 頁籤提供模擬結果的首次概述。 有關結果的更詳細視圖，請開啟 **[!UICONTROL Reports]** 頁籤。
 
 ### 報告 {#reports}
 
-若要分析模擬結果，請編輯其報表：它們會顯示排除項目和原因。
+要分析模擬結果，請編輯其報告：它們顯示出排他性和原因。
 
-預設會提供下列報表：
+預設情況下提供以下報告：
 
-* **[!UICONTROL Detail of simulation exclusions]** :此報表提供所有相關傳送的排除原因詳細圖表。
-* **[!UICONTROL Simulation summary]** :此報表顯示各個傳送期間從模擬中排除的母體。
-* **[!UICONTROL Summary of exclusions linked to the simulation]** :此報表會顯示模擬所導致的排除圖表，以及套用的類型規則，並顯示每個規則的排除率圖表。
+* **[!UICONTROL Detail of simulation exclusions]** :此報告提供了所有有關交貨的排除原因的詳細圖表。
+* **[!UICONTROL Simulation summary]** :此報告顯示了在各種交貨期間從模擬中排除的人口。
+* **[!UICONTROL Summary of exclusions linked to the simulation]** :此報表顯示模擬導致的排除的圖表以及應用的類型規則，以及顯示每個規則的排除率的圖表。
 
 >[!NOTE]
 >
->您可以建立新報表，並將其新增至提供的報表。 如需詳細資訊，請參閱[本章節](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
+>您可以建立新報告並將其添加到提供的報告中。 如需詳細資訊，請參閱[本章節](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
 
-若要存取報表，請按一下 **[!UICONTROL Reports]** 目標模擬的連結（透過其控制面板）。
+要訪問報告，請按一下 **[!UICONTROL Reports]** 目標模擬的連結。
 
 ![](assets/campaign_opt_reporting_edit_from_board.png)
 
-您也可以使用 **[!UICONTROL Reports]** 可從模擬儀表板訪問的連結。
+您還可以使用 **[!UICONTROL Reports]** 可從模擬儀表板訪問的連結。
 
 ### 比較模擬 {#comparing-simulations-}
 
-每次執行模擬時，結果會取代任何先前的結果：您無法顯示和比較執行之間的結果。
+每次執行模擬時，結果將替換以前的任何結果：無法顯示結果並將結果從一個執行到另一個執行。
 
-若要比較結果，您必須使用報表。 事實上，Adobe Campaign可讓您儲存報表歷史記錄，以便稍後再次檢視。 該歷史記錄在模擬的整個生命週期中保存。
+要比較結果，您需要使用報告。 事實上，Adobe Campaign允許您保存報告歷史記錄以在以後再次查看。 這一歷史在整個模擬生命週期中都得以保存。
 
 **範例:**
 
-1. 建立傳遞的模擬，其中包含類型 **A** 中的任何值。
-1. 在 **[!UICONTROL Reports]** 頁簽，編輯其中一個可用報表，例如 **[!UICONTROL Detail of simulation exclusions]** 例如，
-1. 在報表的右上角，按一下圖示以建立新的歷史記錄。
+1. 在類型的交貨上建立模擬 **A** 中。
+1. 在 **[!UICONTROL Reports]** 頁籤，編輯其中一個可用報表，如 **[!UICONTROL Detail of simulation exclusions]** 例如。
+1. 在報告的右上部分，按一下該表徵圖以建立新歷史記錄。
 
    ![](assets/campaign_opt_reporting_create_hist.png)
 
-1. 關閉模擬並變更類型設定 **A**.
-1. 再次執行模擬，並將結果與報表中顯示的結果進行比較，該報表已建立歷史記錄。
+1. 關閉模擬並更改類型配置 **A**。
+1. 再次執行模擬，並將結果與建立歷史記錄的報告中顯示的結果進行比較。
 
    ![](assets/campaign_opt_reporting_edit_hist.png)
 
-   您可以視需要儲存任意數量的報表記錄。
+   您可以根據需要保存盡可能多的報告歷史記錄。
 
-### 報表軸 {#reporting-axes}
+### 報告軸 {#reporting-axes}
 
-此 **[!UICONTROL Calculations]** 索引標籤可讓您定義目標上的報表軸。 這些軸將用於結果分析(請參閱 [探索結果](#exploring-results))。
+的 **[!UICONTROL Calculations]** 頁籤中，您可以定義目標上的報告軸。 在結果分析期間將使用這些軸(請參閱 [瀏覽結果](#exploring-results))。
 
 >[!NOTE]
 >
->我們建議在模擬範本中定義計算軸，而非針對每個模擬個別定義。\
->模擬範本會儲存在 **[!UICONTROL Resources > Templates > Simulation templates]** Adobe Campaign樹的節點。
+>我們建議在模擬模板中定義計算軸，而不是為每個模擬分別定義計算軸。\
+>模擬模板保存在 **[!UICONTROL Resources > Templates > Simulation templates]** Adobe Campaign樹的節點。
 
 **範例:**
 
-在以下範例中，我們想根據收件者的狀態（「客戶」、「潛在客戶」或無）建立其他報表軸。
+在下面的示例中，我們要根據接收人的狀態（「客戶」、「潛在客戶」或「無」）建立附加報告軸。
 
-1. 若要定義報表軸，請選取包含要在 **[!UICONTROL Analysis dimension]** 欄位。 此資訊是強制性的。
-1. 在此，我們要選取收件者表格的「區段」欄位。
+1. 要定義報表軸，請選擇包含要在 **[!UICONTROL Analysis dimension]** 的子菜單。 此資訊是強制性的。
+1. 在此，我們要選擇收件人表的段欄位。
 
    ![](assets/simu_campaign_opti_09.png)
 
 1. 可以使用以下選項：
 
-   * **[!UICONTROL Generate target overlap statistics]** 可讓您復原模擬報表中的所有重疊統計資料。 重疊是在一個模擬內至少兩個傳遞中鎖定的收件者。
+   * **[!UICONTROL Generate target overlap statistics]** 用於恢復模擬報告中的所有重疊統計資訊。 重疊是在一個模擬中以至少兩個遞送為目標的接收者。
 
       >[!IMPORTANT]
       >
-      >選擇此選項將顯著增加模擬執行時間。
+      >選擇此選項會大大增加模擬執行時間。
 
-   * **[!UICONTROL Keep the simulation work table]** 讓您保留模擬追蹤。
+   * **[!UICONTROL Keep the simulation work table]** 讓你保持模擬跟蹤。
 
       >[!IMPORTANT]
       >
-      >自動保存這些表需要大量的儲存容量：確保資料庫足夠大。
+      >自動保存這些表需要大量儲存容量：確保資料庫足夠大。
 
-顯示模擬結果時，所選表達式的資訊將顯示在 **[!UICONTROL Overlaps]** 頁簽。
+顯示模擬結果時，所選表達式的資訊將顯示在 **[!UICONTROL Overlaps]** 的子菜單。
 
-傳遞目標重疊表示模擬至少兩個傳遞中的目標收件者。
+傳遞目標重疊表示在模擬的至少兩個傳遞中的目標接收者。
 
 ![](assets/simu_campaign_opti_13.png)
 
 >[!NOTE]
 >
->只有在 **[!UICONTROL Generate target recovery statistics]** 選項。
+>僅當 **[!UICONTROL Generate target recovery statistics]** 選項。
 
-報表軸的資訊可在 **[!UICONTROL Exploring exclusions]** 頁簽。 有關詳細資訊，請參閱 [探索結果](#exploring-results).
+有關報告軸的資訊可以在在 **[!UICONTROL Exploring exclusions]** 的子菜單。 有關此內容的詳細資訊，請參閱 [瀏覽結果](#exploring-results)。

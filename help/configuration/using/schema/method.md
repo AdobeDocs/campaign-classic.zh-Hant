@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: 元素和屬性
-description: 元素和屬性
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+title: 架構元素和屬性
+description: 方法元素
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -19,19 +16,19 @@ ht-degree: 3%
 
 ## 內容模型 {#content-model-10}
 
-方法：==(幫助 |參數)
+方法：==（幫助） |參數)
 
 ## 屬性 {#attributes-10}
 
 * @_operation（字串）
 * @access（字串）
-* @const（布林值）
-* @hidden（布林值）
+* @const（布爾值）
+* @hidden（布爾值）
 * @label（字串）
 * @library（字串）
 * @name(MNTOKEN)
-* @pkonly（布林值）
-* @static（布林值）
+* @pkonly（布爾值）
+* @static（布爾值）
 
 ## 父母 {#parents-10}
 
@@ -44,26 +41,26 @@ ht-degree: 3%
 
 ## 說明 {#description-10}
 
-此元素可讓您定義SOAP方法。
+此元素用於定義SOAP方法。
 
-## 使用與使用內容 {#use-and-context-of-use-7}
+## 使用和使用上下文 {#use-and-context-of-use-7}
 
 SOAP方法啟用應用程式進程。
 
-聲明新方法（非本機）時，必須使用「@library」：命名空間和用於程式庫的名稱與聲明所在架構的命名空間和名稱無關。
+聲明新方法（非本機）時，「@library」是必需的：用於庫的命名空間和名稱獨立於聲明所在架構的命名空間和名稱。
 
 ## 屬性說明 {#attribute-description-10}
 
-* **存取（字串）**:此屬性定義使用方法的訪問控制。 如果此屬性遺失，則必須進行識別。 可用值包括：&#39;anonymous&#39;、&#39;admin&#39;和&#39;sql&#39;。
-* **const（布林值）**:如果激活，此屬性表示聲明的方法將更改實體
-* **標籤（字串）**:方法的標籤。
-* **程式庫（字串）**:此方法不是應用程式的原生方法。 此屬性會取用找到方法定義的方法程式庫(nms:mylibrary.js)的值。
-* **name(MNTOKEN)**:唯一方法名稱。
-* **靜態（布林值）**:如果激活了此屬性，則該方法被視為自主，則調用該屬性時必須將所有參數指定給該方法。
+* **訪問（字串）**:此屬性定義使用該方法的訪問控制。 如果缺少此屬性，則必須進行標識。 可用值包括：「anonymous」、「admin」和「sql」。
+* **const（布爾值）**:如果激活，則此屬性表示聲明的方法將更改實體
+* **標籤（字串）**:的子菜單。
+* **庫（字串）**:此方法不是應用程式固有的。 此屬性取值找到方法定義的方法庫(nms:mylibrary.js)。
+* **名稱(MNTOKEN)**:唯一方法名稱。
+* **靜態（布爾值）**:如果激活了此屬性，則該方法被視為自主方法，則調用該屬性時必須為該方法指定所有參數。
 
 ## 範例 {#examples-7}
 
-「訂閱」的現成可用方法定義：
+「訂閱」框外方法的定義：
 
 ```
  

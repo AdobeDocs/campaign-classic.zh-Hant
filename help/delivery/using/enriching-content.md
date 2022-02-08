@@ -2,11 +2,8 @@
 product: campaign
 title: 豐富化內容
 description: 豐富化內容
-audience: delivery
-content-type: reference
-topic-tags: content-management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -17,15 +14,15 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-整合器可讓您以外部資料豐富內容。 此資料來自一般查詢或連結的表格。
+聚合器允許您使用外部資料來豐富內容。 此資料來自一般查詢或連結表。
 
 ## 一般查詢 {#generic-queries}
 
-查詢是透過 **[!UICONTROL Aggregator]** 標籤。
+查詢是通過 **[!UICONTROL Aggregator]** 頁籤。
 
-檢索到的資料將通過其主要元素豐富XML輸出文檔。
+檢索到的資料將通過XML的主要元素豐富XML輸出文檔。
 
-從收件者結構上的查詢傳回的範例(**nms:recipient**):
+從收件人方案上的查詢返回的示例(**nms：收件人**):
 
 ```
 <book name="Content Management">
@@ -37,13 +34,13 @@ ht-degree: 0%
 </book>
 ```
 
-此 **`<collection-recipient>`** 元素表示由查詢生成的文檔的輸入元素。 擷取的資料會在此元素下傳回；在我們的範例中，是收件者清單。
+的 **`<collection-recipient>`** 元素表示由查詢生成的文檔的輸入元素。 檢索到的資料在此元素下返回；在我們的例子中，收件人清單。
 
-### 新增查詢 {#adding-a-query}
+### 添加查詢 {#adding-a-query}
 
-查詢參數是使用精靈編輯。
+查詢參數使用嚮導進行編輯。
 
-1. 在第一頁，指定標籤和包含要擷取資料的架構。
+1. 在第一頁中，指定包含要檢索的資料的標籤和架構。
 
    ![](assets/d_ncs_content_query1.png)
 
@@ -51,38 +48,38 @@ ht-degree: 0%
    >
    >編輯欄位 **路徑** 用於更名查詢輸出元素。
 
-1. 下一頁可讓您選取要擷取的資料。
+1. 下一頁允許您選擇要檢索的資料。
 
    ![](assets/d_ncs_content_query2.png)
 
-1. 下一頁會定義篩選條件。
+1. 下一頁定義篩選器條件。
 
    ![](assets/d_ncs_content_query3.png)
 
-1. 最後一頁會啟動查詢傳回資料的預覽。
+1. 最後一頁啟動查詢返回的資料的預覽。
 
    ![](assets/d_ncs_content_query4.png)
 
-## 連結的表 {#linked-tables}
+## 連結表 {#linked-tables}
 
-連結可讓您擷取連結至內容的外部資料。
+連結允許您檢索連結到內容的外部資料。
 
 連結資料有兩種類型：
 
-* 內容連結：這是本機內容管理模式。 連結的內容會自動整合到XML輸出文檔中。
-* 指向外部表的連結允許訪問資料庫中的所有其他表，約束是檢索具有聚合器的所選連結的資料。
+* 內容連結：這是本機內容管理模式。 連結的內容自動整合在XML輸出文檔中。
+* 到外部表的連結允許訪問資料庫中的所有其它表，但約束是使用聚合器檢索所選連結的資料。
 
-### 連結至內容結構 {#link-to-a-content-schema}
+### 連結到內容架構 {#link-to-a-content-schema}
 
-資料結構中會依下列方式宣告內容連結：
+在資料模式中聲明內容連結如下：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-連結的定義會填入 **字串**-type **`<element>`**，和 **expandSchemaTarget** 屬性會參考目標結構（在範例中為「cus:chapter」）。 引用的架構必須是內容架構。
+連結的定義填充在 **字串** — 類型 **`<element>`**&#x200B;的 **擴展架構目標** 屬性引用目標架構（示例中的「cus:chapter」）。 引用的架構必須是內容架構。
 
-目標元素的內容豐富了連結元素，即 **`<chapter>`** 範例綱要中的元素：
+目標元素的內容豐富了連結元素，即 **`<chapter>`** 示例架構中的元素：
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,7 +89,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此 **計算字串** 的 **computeString** 屬性。
+>的 **計算字串** 的 **計算字串** 屬性。
 
 在輸入表單中，連結的編輯控制項聲明如下：
 
@@ -102,11 +99,11 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link.png)
 
-此 **[!UICONTROL Magnifier]** 表徵圖可讓您開啟連結元素的編輯表單。
+的 **[!UICONTROL Magnifier]** 表徵圖可開啟連結元素的編輯窗體。
 
 #### 連結集合 {#link-collection}
 
-若要填入連結集合，請新增 **unbound=&quot;true&quot;** 屬性，以定義資料結構中的連結元素：
+要填充連結集合，請添加 **未綁定=&quot;true&quot;** 屬於資料架構中連結元素的定義：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -128,29 +125,29 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link2.png)
 
-系統會顯示預設欄，以檢視 **計算字串** 目標元素中。
+將顯示預設列，以查看 **計算字串** 目標元素。
 
-### 外部表的連結 {#links-to-external-tables}
+### 指向外部表的連結 {#links-to-external-tables}
 
-在資料架構中，外部表的連結將聲明如下：
+在資料模式中聲明到外部表的連結如下：
 
 ```
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-連結的定義會填入 **連結**-type **`<element>`**，和 **目標** 屬性會參考目標架構（本範例中為「nms:recipient」）。
+連結的定義填充在 **連結** — 類型 **`<element>`**&#x200B;的 **目標** 屬性引用目標模式（本例中為「nms:recipient」）。
 
-根據慣例，必須從資料架構的主要元素宣告連結。
+根據約定，必須從資料架構的主要元素聲明連結。
 
-此 **計算字串** 而目標元素的鍵則會豐富 **`<name>-id`** 和 **`<name>-cs`** 屬性。
+的 **計算字串** 目標元素的關鍵是豐富了 **`<name>-id`** 和 **`<name>-cs`** 屬性。
 
-在我們的範例中，連結會填入「cus:book」結構中，連結資料的內容會包含在「mainContact-id」和「mainContact-cs」屬性中：
+在本例中，連結在「cus:book」架構中填充，連結資料的內容包含在「mainContact-id」和「mainContact-cs」屬性中：
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
 ```
 
-連結編輯控制項的宣告如下：
+連結編輯控制項聲明如下：
 
 ```
 <input xpath="mainContact"/>
@@ -158,7 +155,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link3.png)
 
-您可以新增 **`<sysfilter>`** 元素（透過輸入表單中的連結定義）:
+通過添加 **`<sysfilter>`** 元素，通過輸入表單中的連結定義：
 
 ```
 <input xpath="mainContact">
@@ -175,7 +172,7 @@ ht-degree: 0%
 
 #### 連結集合 {#link-collection-1}
 
-集合的定義與集合元素清單的定義相同：
+集合的定義與集合元素上清單的定義相同：
 
 ```
 <element label="List of contacts" name="contact" unbound="true">
@@ -195,22 +192,22 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->清單是可編輯的，可讓您從上方呈現的「連結」類型控制項中選取連結。
+>該清單是可編輯的，允許您從上面顯示的「連結」類型控制項中選擇連結。
 
-目標元素的內容豐富了輸出檔案中的每個收集元素：
+目標元素的內容豐富了輸出文檔中的每個集合元素：
 
 ```
 <contact id="11504978621" recipient-cs="Doe John (john.doe@adobe.com)" recipient-id="3012"/>
 <contact id="11504982510" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/>
 ```
 
-#### 連結匯總 {#link-aggregation}
+#### 連結聚合 {#link-aggregation}
 
-所參考的每個連結的內容僅限於內部索引鍵和 **計算字串** 的URL區段。
+引用的每個連結的內容限於內部密鑰和 **計算字串** 目標元素。
 
-JavaScript指令碼可用來透過SOAP查詢擴充連結的內容。
+使用JavaScript指令碼通過SOAP查詢來豐富連結的內容。
 
-**範例**:將收件者名稱新增至「mainContact」連結和「contact」集合連結：
+**示例**:將收件人姓名添加到「mainContact」連結和「contact」集合連結：
 
 ```
 // Update <mainContact> link
@@ -257,6 +254,6 @@ for each(var contact in content.contact)
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-JavaScript程式碼的內容會透過 **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** 資料夾和，必須填入到每次轉換的發佈範本中。
+JavaScript代碼的內容通過 **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** 資料夾，必須在每個轉換的發佈模板中填充。
 
 ![](assets/d_ncs_content_link5.png)

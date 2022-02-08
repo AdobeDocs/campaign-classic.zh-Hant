@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 追蹤疑難排解
-description: 本節提供與在Adobe Campaign Classic中追蹤設定和實作相關的常見問題。
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: 本節提供與跟蹤Adobe Campaign Classic配置和實施有關的常見問題
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -17,39 +14,39 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-在本節中，您會在Adobe Campaign Classic中找到與追蹤設定和實作相關的常見問題。
+在本節中，您將在Adobe Campaign Classic找到與跟蹤配置和實施相關的常見問題。
 
-## 追蹤工作流程失敗 {#tracking-workflow-failing}
+## 跟蹤工作流失敗 {#tracking-workflow-failing}
 
-我的追蹤工作流程失敗，如何偵測追蹤檔案中損毀的行？
+我的跟蹤工作流失敗，如何檢測跟蹤檔案中的損壞行？
 
 >[!NOTE]
 >
 >僅適用於Windows
 
-已損壞的跟蹤日誌檔案……/nl6/var/&lt;instance_name>/redir/log/0x0000日誌可以停止跟蹤工作流。 若要輕鬆偵測損毀的線條並移除這些線條以繼續追蹤工作流程，您可以使用下列命令。
+損壞的跟蹤日誌檔案……/nl6/var&lt;instance_name>/redir/log/0x0000日誌可以停止跟蹤工作流。 要輕鬆檢測損壞的行並刪除它們以繼續跟蹤工作流，可使用以下命令。
 
-### 我知道哪個檔案里的損壞行
+### 我知道損壞的行在哪個檔案
 
-在這種情況下，在0x00000000000A0000.log檔案中可以找到損壞的行，但同一進程可以應用於一組檔案 — 逐個。
+在這種情況下，在0x000000000000000A0000.log檔案中可以找到損壞的行，但同一進程可以應用到一組檔案中 — 一個一個地。
 
 ```
 $ cd {install directory}/var/{instance name}/redir/log
 $ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
 ```
 
-然後，您可以停止追蹤工作流程、刪除損毀的行並重新啟動工作流程。
+然後，您可以停止跟蹤工作流，刪除損壞的行並重新啟動工作流。
 
-### 我現在不知道檔案中的損壞行是
+### 我現在不知道損壞的行在哪個檔案
 
-1. 使用下列命令列來簽入所有追蹤檔案。
+1. 使用以下命令行簽入所有跟蹤檔案。
 
    ```
    $ cd {install directory}/var/{instance name}/redir/log
    $ cat *.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
    ```
 
-1. 該命令列出所有損壞的行。 例如：
+1. 命令列出所有損壞的行。 例如：
 
    ```
    50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -58,7 +55,7 @@ $ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-
 
    >[!NOTE]
    >
-   >已在使用者代理之前新增回車功能，以便能更妥善讀取，且無法反映有效的轉譯。
+   >已在用戶代理之前添加回車符，以便能夠更好地讀取，且不反映有效的呈現。
 
 1. 運行grep命令以查找相應的檔案。
 
@@ -68,7 +65,7 @@ $ grep -Rn <Log Id>
 $ grep -Rn 50x000000000FD7EC86
 ```
 
-1. 找到檔案名和行號有問題的日誌。 例如：
+1. 查找具有檔案名和行號的錯誤日誌。 例如：
 
    ```
    ./0x000000000FD7E000.log:3207:50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -77,19 +74,19 @@ $ grep -Rn 50x000000000FD7EC86
 
    >[!NOTE]
    >
-   >已在使用者代理之前新增回車符，以便更好地讀取，且無法反映有效的轉譯。
+   >在用戶代理之前添加了回車符，以便能夠更好地讀取，且不能反映有效的呈現。
 
-然後，您可以停止追蹤工作流程、刪除損毀的行並重新啟動工作流程。
+然後，您可以停止跟蹤工作流，刪除損壞的行並重新啟動工作流。
 
-## 追蹤連結間歇性失敗 {#tracking-links-fail-intermittently}
+## 跟蹤鏈路間歇性失敗 {#tracking-links-fail-intermittently}
 
-嘗試存取追蹤連結時，會顯示下列訊息：
+嘗試訪問跟蹤連結時，將顯示以下消息：
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. 存取 &lt;redirection_server>/r/test URL ，並檢查請求是否傳回了組建編號和localhost。
+1. 訪問 &lt;redirection_server>/r/testURL並檢查請求是否返回了內部版本號和localhost。
 
-1. 檢查serverConf.xml檔案中的spareServer配置以查找跟蹤伺服器。 此配置應處於重定向模式。
+1. 在serverConf.xml檔案中檢查跟蹤伺服器的spareServer配置。 此配置應處於重定向模式。
 
    ```
    <redirection>
@@ -104,39 +101,39 @@ $ grep -Rn 50x000000000FD7EC86
    </redirection>
    ```
 
-1. 手動檢查 &lt;deliveryid>.xml檔案存在於的電腦上……/nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> 目錄（YYYY代表傳送年）。
+1. 手動檢查 &lt;deliveryid>.xml檔案存在於以下位置的電腦上……/nl6/var&lt;instance_name>/redir/url/&lt;yyyy> 目錄（YYYY表示交貨年）。
 
-1. 手動檢查 &lt;trackingurlid> 可在 &lt;deliveryid>.xml檔案。
+1. 手動檢查是否 &lt;trackingurlid> 在 &lt;deliveryid>.xml檔案。
 
-1. 在相關的deliveryID傳送中手動檢查broadlogID是否存在。
+1. 手動檢查相關deliveryID傳遞中是否存在broadlogID。
 
-1. 檢查 &lt;deliveryid>.xml檔案權限……/nl6/var/&lt;instance_name>/redir/url/year目錄。
+1. 檢查 &lt;deliveryid>.xml檔案權限……/nl6/var&lt;instance_name>/redir/url/year目錄。
 
-   他們應至少擁有644個權限，讓Apache可以讀取追蹤url，以重新導向要求的連結。
+   他們應至少擁有644權限，以便Apache能夠讀取跟蹤URL以重定向請求的連結。
 
 ## 是否更新NmsTracking_Pointer選項？ {#updating-option}
 
-更新NmsTracking_Pointer選項時，請遵循下列步驟：
+更新NmsTracking_Pointer選項時，請遵循以下步驟：
 
-1. 停止追蹤工作流程。
+1. 停止跟蹤工作流。
 
-1. 停止trackinglogd服務。
+1. 停止跟蹤日誌服務。
 
 1. 將NmsTracking_Pointer選項更新為所需值。
 
-1. 重新啟動trackinglogd服務。
+1. 重新啟動跟蹤日誌服務。
 
-1. 重新啟動追蹤工作流程。
+1. 重新啟動跟蹤工作流。
 
-## 某些WebMail似乎無法使用追蹤功能 {#webmail}
+## 跟蹤似乎不適用於某些WebMail {#webmail}
 
-您可以自訂點擊追蹤公式，並指定自訂Adobe Analytics追蹤公式。
+您可以自定義按一下跟蹤公式並指定自定義Adobe Analytics跟蹤公式。
 
-這種自訂需要謹慎進行，以避免增加額外的換行字元。 在JavaScript運算式之外出現的所有換行字元都將出現在最終公式中。
+需要謹慎進行這種自定義，以避免添加額外的換行字元。 在JavaScript表達式外部出現的所有換行字元都將出現在最終公式中。
 
-追蹤URL中這類額外的換行字元會導致某些WebMail（AOL、GMail等）發生問題。
+跟蹤URL中的這種額外換行字元將導致某些webMail（AOL、GMail等）中出現問題。
 
-**第一個範例：**
+**第一個示例：**
 
 * 語法不正確
 
@@ -159,7 +156,7 @@ $ grep -Rn 50x000000000FD7EC86
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-若要了解額外換行的位置，您可以以固定字串STRING取代JavaScript運算式。
+要瞭解額外換行的位置，可以用固定字串STRING替換JavaScript表達式。
 
 ```
 // Incorrect
@@ -170,7 +167,7 @@ STRING1
 STRING1&cid=STRING2&bid=STRING3
 ```
 
-**第二個範例**
+**第二個示例**
 
 * 語法不正確
 
@@ -195,7 +192,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-若要了解額外換行的位置，您可以以固定字串STRING取代JavaScript運算式。
+要瞭解額外換行的位置，可以用固定字串STRING替換JavaScript表達式。
 
 ```
 // Incorrect
@@ -205,24 +202,24 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 ```
 
-## 追蹤記錄擷取速度太慢 {#slow-retrieval}
+## 跟蹤日誌檢索太慢 {#slow-retrieval}
 
-當例項未直接擷取追蹤記錄，但從遠距Adobe Campaign Classic伺服器擷取記錄時，會透過GetTrackingLogs SOAP呼叫（在remoteTracking結構中定義）擷取記錄。
+當實例不直接檢索跟蹤日誌但從遠程的Adobe Campaign Classic伺服器檢索時，日誌通過在remoteTracking架構中定義的GetTrackingLogs SOAP調用檢索。
 
-serverConf.xml檔案中的選項可讓您設定透過此方法一次擷取的記錄數：logCountPerRequest。
+serverConf.xml檔案中的一個選項使您能夠設定通過以下方法一次檢索的日誌數：logCountPerRequest。
 
-logCountPerRequest的預設值為1000，在某些情況下，它可能證明為太小。 接受的值必須介於0和10.000之間。
+logCountPerRequest的預設值為1000，在某些情況下可能證明它太小。 接受的值必須介於0和10.000之間。
 
-## 無法將跟蹤日誌連結到收件人 {#link-recipients}
+## 跟蹤日誌無法連結到收件人 {#link-recipients}
 
-在Adobe Campaign Classic中，就收件者結構描述與broadlog/trackinglog結構描述而言，目標對應應是唯一的。
+在Adobe Campaign Classic，目標映射在接收方架構與廣播/跟蹤日誌架構之間應是唯一的。
 
 ![](assets/tracking-troubleshooting.png)
 
-無法使用具有相同追蹤記錄結構的多個目標結構，因為追蹤工作流程將無法與目標ID調解資料。
+無法使用具有相同跟蹤日誌架構的多個目標架構，因為跟蹤工作流將無法協調具有目標ID的資料。
 
-如果您不想搭配nms:recipient使用現成可用的目標對應，我們建議使用下列方法：
+如果您不想將出廠設定目標映射與nms:recipient一起使用，我們建議使用以下方法：
 
-* 如果您想使用自訂定位維度，則需要使用nms:broadlog作為範本來建立自訂broadLog/trackingLog架構（例如nms:broadLogRcp、nms:broadLogSvc等）。
+* 如果要使用自定義目標維，則需要使用nms:broadlog作為模板（例如nms:broadLogRcp、nms:broadLogSvc等）建立自定義broadLog/trackingLog模式。
 
-* 如果您想使用OOB trackingLogRcp/broadLogRcp，目標維度必須是nms:recipient，篩選維度可以是自訂結構。
+* 如果要使用OOB trackingLogRcp/broadLogRcp，則目標維需要是nms:recipient，篩選維可以是自定義架構。

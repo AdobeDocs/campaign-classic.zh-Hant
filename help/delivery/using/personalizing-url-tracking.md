@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 設定 URL 追蹤選項
-description: 設定 URL 追蹤選項
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: 瞭解如何配置URL跟蹤選項
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 12%
+source-wordcount: '167'
+ht-degree: 9%
 
 ---
 
@@ -17,34 +14,34 @@ ht-degree: 12%
 
 ![](../../assets/common.svg)
 
-進階訊息追蹤設定可透過 **[!UICONTROL Tracking & Images]** 圖示。
+高級郵件跟蹤設定可通過 **[!UICONTROL Tracking & Images]** 的子菜單。
 
 >[!NOTE]
 >
->此視窗中也會設定電子郵件中影像的管理。 請參閱 [新增影像](defining-the-email-content.md#adding-images).
+>此窗口中還配置了電子郵件中映像的管理。 請參閱 [添加影像](defining-the-email-content.md#adding-images)。
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
-您可以設定追蹤選項：
+您可以配置跟蹤選項：
 
-* 啟用/停用所有訊息的URL追蹤。
+* 激活/停用所有消息的URL跟蹤。
 
    >[!CAUTION]
    >
-   >未在傳送上啟動追蹤時(即 **[!UICONTROL Activate tracking]** 選項)，則與追蹤相關的報表和資料將無法使用：開啟、熱點點按和追蹤的URL報表不會顯示任何資料，而且 **[!UICONTROL Tracking logs]** 此傳送不會顯示標籤。
+   >當在交貨上未激活跟蹤時(即 **[!UICONTROL Activate tracking]** 選項未選中)，與跟蹤相關的報告和資料不可用：開啟，熱按一下並跟蹤的URL報告將不顯示任何資料， **[!UICONTROL Tracking logs]** 將不顯示此交貨的頁籤。
 
-* 開啟訊息的啟用/停用追蹤。
+* 將開啟「激活/停用消息跟蹤」。
 
 ![](assets/s_ncs_user_email_del_tracking_param.png)
 
-追蹤的URL會以樹狀結構列在中央視窗中。
+跟蹤的URL以樹形形式列在中央窗口中。
 
-您可以針對訊息的每個URL個別啟用或停用追蹤。 如需詳細資訊，請參閱[本章節](how-to-configure-tracked-links.md)。
+您可以單獨為消息的每個URL激活或停用跟蹤。 如需詳細資訊，請參閱[本章節](how-to-configure-tracked-links.md)。
 
-此 **[!UICONTROL Advanced]** 索引標籤可讓您個人化追蹤URL和開頭URL的計算公式。
+的 **[!UICONTROL Advanced]** 頁籤，您可以個性化跟蹤的URL和開啟的URL的計算公式。
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
 >[!CAUTION]
 >
->此標籤中的設定只能由專家使用者修改。
+>此頁籤中的設定只能由專家用戶修改。

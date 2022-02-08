@@ -1,32 +1,29 @@
 ---
 product: campaign
-title: 建立直接郵件傳遞
-description: 建立直接郵件傳遞
-audience: delivery
-content-type: reference
-topic-tags: sending-direct-mail
+title: 建立新的直接郵件傳遞
+description: 瞭解如何建立直郵遞送
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 17%
+source-wordcount: '87'
+ht-degree: 11%
 
 ---
 
-# 建立直接郵件傳遞{#creating-a-direct-mail-delivery}
+# 建立新的直接郵件傳遞{#creating-a-direct-mail-delivery}
 
 ![](../../assets/common.svg)
 
-若要建立新的直接郵件傳送，請遵循下列步驟：
+要建立新的直郵遞送，請執行以下步驟：
 
 >[!NOTE]
 >
->傳遞建立的全域概念，在 [本節](steps-about-delivery-creation-steps.md).
+>有關交付建立的全球概念，請參閱 [此部分](steps-about-delivery-creation-steps.md)。
 
-1. 建立新傳送，例如從傳送控制面板。
-1. 選取傳送範本 **通過直接郵件傳送（紙張）**.
+1. 建立新交貨，例如從「交貨」控制面板建立。
+1. 選擇交貨模板 **通過直接郵寄（紙張）遞送**。
 
    ![](assets/direct_mail.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳送。 有關詳細資訊，請參閱 [本節](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. 使用標籤、代碼和說明標識您的交貨。 有關此內容的詳細資訊，請參閱 [此部分](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
 1. 按一下 **繼續** 確認此資訊並顯示消息配置窗口。

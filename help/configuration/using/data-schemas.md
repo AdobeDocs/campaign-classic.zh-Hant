@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 資料方案
-description: 資料方案
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+description: 開始使用市場活動資料架構
+feature: Schema Extension
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -19,11 +17,11 @@ ht-degree: 1%
 
 ## 原則 {#principles}
 
-若要編輯、建立和設定結構，請按一下 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign用戶端主控台的節點。
+要編輯、建立和配置方案，請按一下 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign客戶端控制台的節點。
 
 >[!NOTE]
 >
->您的Adobe Campaign Classic主控台管理員只能刪除現成可用的資料結構。
+>內置資料架構只能由Adobe Campaign Classic控制台的管理員刪除。
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
@@ -33,38 +31,38 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->「名稱」編輯控制項可讓您輸入由名稱和命名空間組成的架構金鑰。 架構的根元素的「name」和「namespace」屬性會在架構的XML編輯區域中自動更新。
+>使用「名稱」編輯控制項可以輸入由名稱和命名空間組成的架構密鑰。 在架構的XML編輯區域中，將自動更新架構的根元素的&quot;name&quot;和&quot;namespace&quot;屬性。
 
-預覽會自動產生擴充架構：
+預覽將自動生成擴展架構：
 
 ![](assets/d_ncs_integration_schema_edition2.png)
 
 >[!NOTE]
 >
->儲存來源架構時，會自動啟動延伸架構的產生。
+>保存源架構後，將自動啟動擴展架構的生成。
 
-如果需要檢查架構的完整結構，可以使用預覽頁簽。 如果結構已擴充，您便能將其所有擴充功能視覺化。 作為補充，「文檔」頁簽顯示所有架構屬性和元素及其屬性（SQL欄位、類型/長度、標籤、說明）。 「檔案」索引標籤僅適用於產生的結構。 有關詳細資訊，請參閱 [重新生成結構](../../configuration/using/regenerating-schemas.md) 區段。
+如果需要檢查架構的完整結構，則可以使用預覽頁籤。 如果已擴展了架構，則可以直觀顯示其所有擴展。 作為補充，「文檔」頁籤顯示所有架構屬性和元素及其屬性（SQL欄位、類型/長度、標籤、說明）。 「文檔」頁籤僅適用於生成的架構。 有關詳細資訊，請參閱 [重新生成架構](../../configuration/using/regenerating-schemas.md) 的子菜單。
 
-## 範例：建立合同表 {#example--creating-a-contract-table}
+## 示例：建立合同表 {#example--creating-a-contract-table}
 
-在以下範例中，我們要為 **合同** 在Adobe Campaign資料庫的資料庫模型中。 此表格可讓您儲存每個合約的持有人和共同持有人的名字和姓氏以及電子郵件地址。
+在以下示例中，我們要為 **合同** 在Adobe Campaign資料庫模型中。 此表允許您為每個合同儲存持有者和共同持有者的名字和姓氏以及電子郵件地址。
 
-要執行此操作，需要建立表的架構並更新資料庫結構以生成相應的表。 應用以下階段：
+為此，需要建立表的模式並更新資料庫結構以生成相應的表。 應用以下階段：
 
-1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** 節點，然後按一下 **[!UICONTROL New]** .
-1. 選擇 **[!UICONTROL Create a new table in the data model]** 選項，然後按一下 **[!UICONTROL Next]** .
+1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** ，然後按一下 **[!UICONTROL New]** 。
+1. 選擇 **[!UICONTROL Create a new table in the data model]** 選項 **[!UICONTROL Next]** 。
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. 指定表的名稱和命名空間。
+1. 為表和命名空間指定名稱。
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >依預設，使用者建立的結構會儲存在「自訂」命名空間中。 有關詳細資訊，請參閱 [方案的標識](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >預設情況下，由用戶建立的架構儲存在「cus」命名空間中。 有關此內容的詳細資訊，請參閱 [模式的標識](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
 
-1. 建立表格的內容。 建議您使用登入精靈，確保未遺失任何設定。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，然後選擇要添加的設定類型。
+1. 建立表的內容。 我們建議使用輸入嚮導來確保不丟失任何設定。 要執行此操作，請按一下 **[!UICONTROL Insert]** 按鈕，選擇要添加的設定類型。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -116,8 +114,8 @@ ht-degree: 1%
    </srcSchema>
    ```
 
-1. 儲存結構以產生結構：
+1. 保存架構以生成結構：
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新資料庫結構以建立將連結架構的表。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md).
+1. 更新資料庫結構以建立模式將連結到的表。 有關此內容的詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md)。

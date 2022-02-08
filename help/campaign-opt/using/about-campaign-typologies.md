@@ -2,11 +2,10 @@
 product: campaign
 title: 關於行銷活動態樣
 description: 關於行銷活動態樣
-audience: campaign
-content-type: reference
+feature: Typology Rules
 topic-tags: campaign-optimization
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 18%
@@ -17,71 +16,71 @@ ht-degree: 18%
 
 ![](../../assets/common.svg)
 
-促銷活動最佳化是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這樣可確保傳送的訊息符合客戶和公司通訊政策的需求及期望。
+市場活動優化是Adobe Campaign模組，它允許您控制、過濾和監控交貨的發送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這樣可確保傳送的訊息符合客戶和公司通訊政策的需求及期望。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#typologies-video)
 
 >[!NOTE]
 >
->視您的產品而定，可包含促銷活動最佳化或附加元件。 請檢查您的授權合約。
+>根據您的產品，市場活動優化可以包括或附加項。 請檢查您的授權合約。
 
 ## 類型規則 {#typology-rules}
 
-透過Adobe Campaign，您可以設計並套用四種類型規則：
+通過Adobe Campaign，您可以設計和應用四種類型的類型規則：
 
-* **篩選** 規則，可讓您根據條件排除目標的一部分。 有關詳細資訊，請參閱 [篩選規則](filtering-rules.md).
-* **壓力** 可讓您控制行銷疲勞的規則。 有關詳細資訊，請參閱 [壓力規則](pressure-rules.md).
-* **容量** 可讓您限制負載以保證最佳處理條件的規則。 有關詳細資訊，請參閱 [控制容量](consistency-rules.md#controlling-capacity).
-* **控制** 規則可讓您在傳送訊息之前檢查訊息的有效性。 有關詳細資訊，請參閱 [控制規則](control-rules.md).
+* **篩選** 規則，您可以根據條件排除部分目標。 有關此內容的詳細資訊，請參閱 [篩選規則](filtering-rules.md)。
+* **壓力** 可以控制市場疲勞的規則。 有關此內容的詳細資訊，請參閱 [壓力規則](pressure-rules.md)。
+* **容量** 規則，允許您限制載荷以確保最佳處理條件。 有關此內容的詳細資訊，請參閱 [控制容量](consistency-rules.md#controlling-capacity)。
+* **控制項** 規則，允許您在發送消息之前檢查其有效性。 有關此內容的詳細資訊，請參閱 [控制規則](control-rules.md)。
 
-建立類型規則後，會將類型規則分組到行銷活動類型中，並在傳送中參考。 請參閱 [套用類型](#applying-typologies).
+一旦建立了這些規則，就會在市場活動類型中分組，這些市場活動類型在交付中引用。 請參閱 [應用類型](#applying-typologies)。
 
 ## 類型 {#typologies}
 
-行銷活動類型可包含數個 [類型規則](#typology-rules)，但傳送只能參考一個類型。
+市場活動類型可包含 [類型規則](#typology-rules)，但交貨只能引用一種類型。
 
-此 **[!UICONTROL Rules]** 索引標籤可讓您新增、刪除或檢視要套用的類型規則。
+的 **[!UICONTROL Rules]** 頁籤中，您可以添加、刪除或查看要應用的類型規則。
 
 ![](assets/campaign_opt_rules_tab.png)
 
-## 套用類型 {#applying-typologies}
+## 應用類型 {#applying-typologies}
 
-建立類型並套用至傳送的步驟如下：
+下面列出了建立交貨並將分類應用於交貨的步驟：
 
 1. 建立類型規則。
 
-   在 **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** 節點。
+   在 **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** 的下界。
 
-   以下小節將說明Campaign中可用的不同規則： [銷售壓力規則](pressure-rules.md), [容量規則](consistency-rules.md#controlling-capacity), [控制規則](control-rules.md) 和 [篩選規則](filtering-rules.md).
+   「市場活動」中提供的不同規則在以下各節中介紹： [銷售壓力規則](pressure-rules.md)。 [容量規則](consistency-rules.md#controlling-capacity)。 [控制規則](control-rules.md) 和 [過濾規則](filtering-rules.md)。
 
-1. 建立類型並參考您建立的規則。
+1. 建立類型並引用在其中建立的規則。
 
-   類型可透過 **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** 節點。
+   通過 **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** 的下界。
 
-1. 設定您的傳送，以使用您建立的類型。 如需詳細資訊，請參閱[本章節](applying-rules.md#applying-a-typology-to-a-delivery)。
-1. 透過行銷活動模擬來測試和控制行為。 如需促銷活動模擬的詳細資訊，請參閱 [本節](campaign-simulations.md).
+1. 將交貨配置為使用您建立的類型。 如需詳細資訊，請參閱[本章節](applying-rules.md#applying-a-typology-to-a-delivery)。
+1. Test並通過戰役模擬控制行為。 有關市場活動模擬的詳細資訊，請參閱 [此部分](campaign-simulations.md)。
 
-在準備傳送期間，當符合條件時，會排除收件者。 您可以檢查日誌以監控排除。有關壓力類型規則的範例使用案例，請參閱 [本頁](pressure-rules.md#use-cases-on-pressure-rules).
+在交付準備期間，當滿足標準時，接收者被排除。 您可以檢查日誌以監控排除。有關壓力類型規則的示例使用案例，請參見 [此頁](pressure-rules.md#use-cases-on-pressure-rules)。
 
 ## 教學課程影片 {#typologies-video}
 
-### 如何使用類型規則設定疲勞管理
+### 如何利用類型規則建立疲勞管理
 
-此影片說明如何運用類型規則，在Adobe Campaign中實作疲勞管理。
+此視頻說明了如何利用分類規則在Adobe Campaign實施疲勞管理。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-### 如何使用預先定義的篩選器來設定疲勞管理
+### 如何使用預定義篩選器設定疲勞管理
 
-疲勞管理控制傳訊的頻率和數量，以避免過度向收件者發送請求。 如果您的促銷活動例項中沒有促銷活動最佳化模組，您可以設定預先定義的篩選器，以依據收到的訊息數量篩選目標母體。此影片說明如何使用篩選器在Adobe Campaign Classic中實作疲勞管理。
+疲勞管理控制傳訊的頻率和數量，以避免過度向收件者發送請求。 如果您的市場活動實例中沒有市場活動優化模組，則可以配置一個預定義的篩選器，該篩選器將按接收的消息數篩選目標群體。此視頻說明如何使用篩選器在Adobe Campaign Classic實施疲勞管理。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-提供其他Campaign作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+還提供了其他市場活動操作視頻 [這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)。
 
 **相關主題**
 
-* [將自動業務規則套用至任何管道上的傳送](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
+* [將自動業務規則應用於任何渠道上的交貨](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
-* [開始使用類型和疲勞管理](pressure-rules.md)
+* [開始分類和疲勞管理](pressure-rules.md)
 

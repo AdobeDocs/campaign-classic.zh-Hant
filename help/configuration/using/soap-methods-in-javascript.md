@@ -2,11 +2,8 @@
 product: campaign
 title: JavaScript 中的 SOAP 方法
 description: JavaScript 中的 SOAP 方法
-audience: configuration
-content-type: reference
-topic-tags: api
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 9%
@@ -21,7 +18,7 @@ ht-degree: 9%
 
 ## 靜態方法 {#static-methods}
 
-對表示架構的對象調用方法，可訪問靜態SOAP方法。 結構是「namespace」對象的屬性。 這些命名空間是全域變數，因此，例如xtk或nms變數代表對應的命名空間
+通過調用表示架構的對象上的方法來訪問靜態SOAP方法。 架構是「namespace」對象的屬性。 這些命名空間是全局變數，因此，例如，xtk或nms變數表示相應的命名空間
 
 以下示例調用xtk:workflow架構的靜態PostEvent方法：
 
@@ -31,7 +28,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## 非靜態方法 {#non-static-methods}
 
-若要使用非靜態SOAP方法，必須先在對應結構上使用「get」或「create」方法擷取實體。
+要使用非靜態SOAP方法，必須首先使用相應架構上的&quot;get&quot;或&quot;create&quot;方法檢索實體。
 
 以下示例調用&quot;xtk:queryDef&quot;架構的ExecuteQuery方法：
 
@@ -52,7 +49,7 @@ for each (var w in res.workflow)
 
 ## 範例 {#examples}
 
-* 使用「get」操作查詢收件人表：
+* 對具有「get」操作的收件人表進行查詢：
 
    ```
    var query = xtk.queryDef.create(  
@@ -73,7 +70,7 @@ for each (var w in res.workflow)
    logInfo(recipient.@lastName)
    ```
 
-* 使用「選擇」操作查詢收件人表：
+* 使用「select」操作查詢收件人表：
 
    ```
    var query = xtk.queryDef.create(  

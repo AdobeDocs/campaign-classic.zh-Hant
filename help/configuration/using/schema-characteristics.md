@@ -2,11 +2,8 @@
 product: campaign
 title: 方案特性
 description: 方案特性
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -17,7 +14,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-引用現有表的架構的特點如下：
+引用現有表的架構的特徵如下：
 
 * Adobe Campaign不得修改相對於現有表的SQL對象，
 * 必須顯式指定表和列的名稱，
@@ -25,20 +22,20 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->請勿刪除內建收件者表格中的欄位，即使這些欄位毫無用處。 這可能會在Adobe Campaign資料庫中造成行為錯誤。
+>請勿刪除內置收件人表中的欄位，即使這些欄位無用。 這可能導致Adobe Campaign資料庫中的行為錯誤。
 
-## 檢視屬性 {#the-view-attribute}
+## 視圖屬性 {#the-view-attribute}
 
-源架構接受 **檢視** 屬性 **srcSchema** 根元素。 在自訂表格中操作Adobe Campaign時，必須使用它。 此 **view=&quot;true&quot;** 屬性告知資料庫結構更新嚮導忽略此架構。 因此，禁止應用程式將表、其列及其索引與相應模式同步。
+源架構接受 **視圖** 屬性 **src架構** 根元素。 在自定義表中操作Adobe Campaign時，必須使用它。 的 **view=&quot;true&quot;** 屬性指示資料庫結構更新嚮導忽略此模式。 因此，禁止應用程式將表、其列及其索引與相應的架構同步。
 
-此屬性設為 **true**，此架構僅用於生成SQL查詢以訪問此表的資料。
+當此屬性設定為 **真**，該模式僅用於生成SQL查詢以訪問此表的資料。
 
 ## 表和列的名稱 {#names-of-tables-and-columns}
 
-當表由表更新嚮導建立時，表和列的名稱將根據各個結構和屬性的名稱自動生成。 但可以通過輸入以下屬性來強制使用SQL名稱：
+當表由表更新嚮導建立時，表和列的名稱將基於各個方案和屬性的名稱自動生成。 但是，可以通過輸入以下屬性來強制使用SQL名稱：
 
-* **sqltable** 在架構的主要元素內，指定表，
-* **sqlname** 在每個屬性內，指定欄。
+* **sqltable** 在架構的主元素中，要指定表，
+* **sqlname** 指定列。
 
 **範例**:
 
@@ -55,17 +52,17 @@ ht-degree: 2%
 </element>
 ```
 
-在本示例中，如果未顯式指定表和列的名稱，則應用程式將使用 **CusIndividual** 為了桌子， **lastName** 和 **firstName** 欄。
+在本示例中，如果未顯式指定表和列的名稱，則應用程式將使用 **定制** 桌子， **姓氏** 和 **名字** 的雙曲餘切值。
 
-在結構中，只能填入現有表格的一部分欄。 未填入的欄將無法供使用者存取。
+在架構中，只能填充現有表的部分列。 未填充的列將不能由用戶訪問。
 
 ## 索引欄位 {#indexed-fields}
 
-從客戶端控制台對清單的記錄進行排序時，通過對索引欄位進行排序可獲得更好的效能。 在架構中聲明索引，使控制台在列標籤左側的排序順序箭頭下顯示索引欄位，並顯示紅線，如下所示：
+當從客戶端控制台對清單的記錄進行排序時，通過對索引欄位進行排序可以獲得更好的效能。 在架構中聲明索引使控制台在列標籤左側的排序順序箭頭下顯示索引欄位，如下所示：
 
 ![](assets/s_ncs_integration_mapping_index.png)
 
-在架構中，索引的定義如下：
+在架構中，索引定義如下：
 
 ```
 <dbindex name="name_of_index" unique="true/false"
@@ -75,7 +72,7 @@ ht-degree: 2%
 </dbindex
 ```
 
-因此，在相符的架構中宣告自訂表格的現有索引非常重要。
+因此，在匹配架構中聲明自定義表的現有索引非常重要。
 
 為源架構的每個鍵和連結聲明隱式聲明索引。 通過指定 **noDbIndex=&quot;true&quot;** 屬性：
 

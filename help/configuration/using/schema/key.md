@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: 元素和屬性
-description: 元素和屬性
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+title: 架構元素和屬性
+description: 鍵元素
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -19,16 +16,16 @@ ht-degree: 2%
 
 ## 內容模型 {#content-model-8}
 
-索引鍵： ==keyfield
+鍵：==keyfield
 
 ## 屬性 {#attributes-8}
 
-* @allowEmptyPart（布林值）
+* @allowEmptyPart（布爾值）
 * @applicableIf（字串）
-* @internal（布林值）
+* @internal（布爾值）
 * @label（字串）
 * @name(MNTOKEN)
-* @noDbIndex（布林值）
+* @noDbIndex（布爾值）
 
 ## 父母 {#parents-8}
 
@@ -40,32 +37,32 @@ ht-degree: 2%
 
 ## 說明 {#description-8}
 
-此元素可讓您定義用於識別表格中記錄的索引鍵。
+此元素允許您定義用於標識表中記錄的鍵。
 
-表必須至少包含一個鍵。
+表必須至少有一個鍵。
 
-## 使用與使用內容 {#use-and-context-of-use-6}
+## 使用和使用上下文 {#use-and-context-of-use-6}
 
-規則是在架構的主要元素和索引之後宣告索引鍵。
+通常，鍵在模式和索引的主元素後聲明。
 
-如果鍵包含數個欄位(即數個 `<keyfield>` 孩子)。 請勿使用複合鍵來定義主鍵。
+如果鍵包括多個欄位(即多個 `<keyfield>` 孩子)。 不要使用複合鍵定義主鍵。
 
-如果架構的主要元素包含「@autopk=true」屬性，則主鍵是唯一的。 每個架構只能有一個主鍵。
+如果架構的主元素包含「@autopk=true」屬性，則主鍵是唯一的。 每個架構只能有一個主鍵。
 
-保留前1000個標識符，因此，如果需要為密鑰定義一系列值，則從1000開始。
+保留前1000個標識符，因此，如果需要為鍵定義值範圍，則從1000開始。
 
 ## 屬性說明 {#attribute-description-8}
 
-* **allowEmptyPart(boolean)**:在複合鍵的情況下，如果激活了此屬性，則如果其至少一個鍵不為空，則它們被視為有效。 如果是這種情況，空的概念值是&quot;0&quot;（布林值或所有數值資料類型）。 依預設，需要輸入組成複合鍵的所有鍵。
-* **applicatedIf（字串）**:此屬性可讓您將索引鍵設為選用。 它定義將根據其套用鍵定義的條件。 此屬性會接收XTK運算式。
-* **內部（布林值）**:如果已啟用，此屬性可讓Adobe Campaign知道索引鍵為主要。
-* **標籤（字串）**:索引鍵的標籤。
-* **name(MNTOKEN)**:金鑰的內部名稱。
-* **noDbIndex（布林值）**:如果已激活(noDbIndex=&quot;true&quot;)，則與鍵匹配的欄位將不會建立索引。
+* **allowEmptyPart（布爾值）**:在複合鍵的情況下，如果激活了此屬性，則當其至少一個鍵不為空時，這些鍵將被視為有效。 如果是這種情況，則空概念值為&quot;0&quot;（布爾值或所有類型的數字資料）。 預設情況下，需要輸入組成複合鍵的所有鍵。
+* **appliatedIf（字串）**:此屬性允許您使鍵成為可選項。 它定義了將應用關鍵定義的條件。 此屬性接收XTK表達式。
+* **內部（布爾型）**:如果激活了該鍵，則此屬性使Adobe Campaign知道該鍵是主鍵。
+* **標籤（字串）**:鍵的標籤。
+* **名稱(MNTOKEN)**:密鑰的內部名稱。
+* **noDbIndex（布爾）**:如果已激活(noDbIndex=&quot;true&quot;)，則不會為與密鑰匹配的欄位編製索引。
 
 ## 範例 {#examples-------}
 
-複合密鑰的聲明，該密鑰授權&quot;@expr&quot;或&quot;別名&quot;欄位為空：
+授權「@expr」或「別名」欄位為空的複合鍵的聲明：
 
 ```
 <key name="node" allowEmptyPart="true">
@@ -74,7 +71,7 @@ ht-degree: 2%
  </key>
 ```
 
-在STRING類型的「Name」欄位上聲明主鍵 `<srcschema>`  和匹配的SQL查詢：
+在中STRING類型的「名稱」欄位上聲明主鍵 `<srcschema>`  和匹配的SQL查詢：
 
 ```
  

@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 元素和屬性
-description: 元素和屬性
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+title: 架構元素和屬性
+description: 枚舉元素
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
-# 分項清單 {#enumeration--element}
+# 枚舉元素 {#enumeration--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -41,11 +38,11 @@ ht-degree: 5%
 
 ## 說明 {#description-5}
 
-此元素可讓我們定義值列舉。 枚舉屬於它在中定義的架構，但可通過其他架構訪問。
+此元素使我們能夠定義值枚舉。 枚舉屬於在中定義的架構，但可以通過其他架構訪問它。
 
-## 使用與使用內容 {#use-and-context-of-use-4}
+## 使用和使用上下文 {#use-and-context-of-use-4}
 
-列舉會在架構開始時（在定義主要元素之前）定義。
+枚舉在架構的開始（在定義主元素之前）定義。
 
 ## 屬性說明 {#attribute-description-5}
 
@@ -53,44 +50,44 @@ ht-degree: 5%
 
    可用類型清單：
 
-   * 任何
-   * bin
+   * 任意
+   * 賓
    * blob
-   * 布林值
+   * 布爾
    * 位元組
    * CDATA
-   * 日期時間
-   * datemetz
-   * datetimenotz
    * 日期
-   * DOMDocument
+   * 日期表
+   * 日期
+   * 日期
+   * 域文檔
    * DOMElement
-   * 兩次
-   * 列舉
-   * 浮點
+   * 雙
+   * 枚舉
+   * 浮
    * html
    * int64
    * 連結
-   * long
+   * 長
    * 備忘錄
    * MNTOKEN
    * 百分比
-   * primarykey
-   * short
+   * 主鍵
+   * 短
    * 字串
    * 時間
-   * 時間盤
+   * 時隙
    * uuid
 
-* **預設值（字串）**:預設值。 預設值也可以是枚舉中定義的值之一。
+* **預設（字串）**:預設值。 預設值也可以是枚舉中定義的值之一。
 * **desc（字串）**:枚舉說明。
 * **標籤（字串）**:枚舉標籤。
 * **名稱（字串）**:枚舉的內部名稱。
-* **範本（字串）**:此屬性定義對 `<enumeration>` 由數個結構共用的元素。 定義會自動複製到目前的架構中。
+* **模板（字串）**:此屬性定義對 `<enumeration>` 由多個架構共用的元素。 定義將自動複製到當前架構中。
 
 ## 範例 {#examples-4}
 
-其值儲存在資料庫中的枚舉值的示例：
+其值儲存在資料庫中的枚舉值示例：
 
 ```
     <enumeration name="myEnum">
@@ -103,7 +100,7 @@ ht-degree: 5%
     </element>
 ```
 
-以預設值列舉的定義：
+具有預設值的枚舉的定義：
 
 ```
  <enumeration basetype="byte" default="email" name="canal">

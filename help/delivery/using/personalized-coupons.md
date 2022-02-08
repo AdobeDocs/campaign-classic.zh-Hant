@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 個人化優惠券
-description: 個人化優惠券
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: 瞭解如何建立和插入個性化優惠券
+feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -17,157 +15,157 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-將抵用券加到您的傳遞，可讓收件者獲得更高的產品和服務價值。 您可以使用「促銷活動抵用券」模組，建立一組您預期要新增至即將推出之行銷活動的抵用券。 當您準備好建立傳遞時，請指派適用的抵用券。 由於抵用券對於選取的期間有效，所指派的抵用券會唯一連結至其傳送訊息。 此外，Campaign會確認在傳送訊息之前，有足夠的抵用券數量。
+將優惠券添加到您的交貨中，可以為您的收件人提供更高的產品和服務價值。 您可以使用市場活動優惠券模組建立一組優惠券，您希望這些優惠券可以添加到即將到來的市場營銷優惠。 準備建立交貨時，請分配適用的優惠券。 由於優惠券對於選擇的期間有效，所分配的優惠券唯一地連結到其傳遞消息。 此外，「市場活動」確認在發送傳遞之前有足夠的優惠券來接收郵件數。
 
 >[!NOTE]
 >
->抵用券管理是必須安裝的套件。 若要確認您有「抵用券」管理，請檢查 **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+>優惠券管理是一個必須安裝的包。 要確認您有優惠券管理，請檢查 **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 >
->抵用券資料可以使用CSV和XML格式匯入和匯出。 有關匯入和匯出的詳細資訊，請參閱 [本節](../../platform/using/get-started-data-import-export.md).
+>優惠券資料可以使用CSV和XML格式導入和導出。 有關導入和導出的詳細資訊，請參閱 [此部分](../../platform/using/get-started-data-import-export.md)。
 
-## 建立抵用券 {#creating-a-coupon}
+## 建立優惠券 {#creating-a-coupon}
 
-「抵用券」模組提供建立抵用券時的兩個選項：
+優惠券模組在建立優惠券時為您提供了兩種選項：
 
-* **匿名**:特定收件者或收件者清單的一般抵用券。
-* **個人**:特定收件者的個人化抵用券。
+* **匿名**:所選收件人或收件人清單的通用優惠券。
+* **個人**:所選收件人的個性化優惠券。
 
-執行下列步驟之前，請確定您知道要建立的抵用券類型。
+在執行以下步驟之前，請確保您知道要建立的優惠券類型。
 
-1. 在促銷活動樹狀結構中，前往 **[!UICONTROL Resources > Campaign management > Coupons]**.
+1. 在市場活動樹中，轉到 **[!UICONTROL Resources > Campaign management > Coupons]**。
 
    ![](assets/deliv_coup_01.png)
 
 1. 按一下 **[!UICONTROL New]** 按鈕。
-1. 在 **[!UICONTROL Label]** 欄位。 已自動在 **[!UICONTROL Coupon code]**. 您可以保留代碼或輸入新代碼。
+1. 在中輸入優惠券的名稱 **[!UICONTROL Label]** 的子菜單。 已在中自動輸入唯一代碼 **[!UICONTROL Coupon code]**。 您可以保留代碼或輸入新代碼。
 
    ![](assets/deliv_coup_02.png)
 
-1. 選擇 **[!UICONTROL Start date]** 和 **[!UICONTROL End date]** 以設定抵用券有效的期間。
-1. 在 **[!UICONTROL Coupon type]**，選擇「匿名」或「個人」。
+1. 選擇 **[!UICONTROL Start date]** 和 **[!UICONTROL End date]** 設定優惠券有效的期間。
+1. 在 **[!UICONTROL Coupon type]**，選擇匿名或個人。
 
-   **[!UICONTROL Anonymous coupons]** :匿名抵用券對所有收件者都相同。 確認已在 **抵用券類型** 按一下 **儲存** 來產生抵用券。
+   **[!UICONTROL Anonymous coupons]** :匿名優惠券對於所有收件人都是相同的。 確認在中選擇了「匿名」 **優惠券類型** 的 **保存** 來生成優惠券。
 
-   **[!UICONTROL Individual coupons]** :個別抵用券可透過其他抵用券代碼進一步個人化。 例如，在運動器材商店為銷售建立個別抵用券。 然而，收件者名單很長，他們對單項運動的熱情並不相同。 您可以根據運動（例如足球、足球、棒球等），為個別抵用券新增程式碼名稱 並將每個程式碼傳送給適用的收件者。
+   **[!UICONTROL Individual coupons]** :利用附加的優惠券代碼可以進一步個性化單個優惠券。 例如，在體育器材商店為銷售而建立單個優惠券。 然而，受獎者名單很長，他們對一項體育運動的熱情也不同。 您可以根據運動（如足球、足球、棒球等）為單個優惠券添加代碼名稱 並將每個代碼發送給相應的收件人。
 
-   1. 選擇「個人」時，左下方會顯示新的分頁「抵用券」。 前往 **[!UICONTROL Coupons]** 按一下 **[!UICONTROL Add]**.
-   1. 在彈出式視窗提示時，輸入個別抵用券的唯一代碼。
-   1. 按一下 **[!UICONTROL Save]** 來產生抵用券。
+   1. 選擇「個人」時，左下角會出現一個新標籤「優惠券」。 轉到 **[!UICONTROL Coupons]** 頁籤 **[!UICONTROL Add]**。
+   1. 在彈出窗口提示時，為單個優惠券輸入唯一代碼。
+   1. 按一下 **[!UICONTROL Save]** 來生成優惠券。
 
-   如需「抵用券」索引標籤的詳細資訊，請參閱 [設定個別抵用券](#configuring-individual-coupons).
+   有關「優惠券」頁籤的詳細資訊，請參閱 [配置單個優惠券](#configuring-individual-coupons)。
 
    >[!NOTE]
    >
-   >個別抵用券可以大量匯入。 有關匯入和匯出的詳細資訊，請參閱 [本節](../../platform/using/get-started-data-import-export.md).
+   >單個優惠券可以批量導入。 有關導入和導出的詳細資訊，請參閱 [此部分](../../platform/using/get-started-data-import-export.md)。
 
-### 設定個別抵用券 {#configuring-individual-coupons}
+### 配置單個優惠券 {#configuring-individual-coupons}
 
 ![](assets/deliv_coup_03.png)
 
-「抵用券」索引標籤只能搭配「個別抵用券」使用。 將抵用券與傳送建立關聯後，「抵用券」索引標籤會提供下列詳細資料：
+優惠券標籤僅與單個優惠券一起提供。 在優惠券與交貨關聯後，「優惠券」標籤提供以下詳細資訊：
 
-* **[!UICONTROL Status]** :抵用券可用性。
-* **[!UICONTROL Redeemed on]** :抵用券的兌換日期。
-* **[!UICONTROL Channel]** :用來傳送抵用券的管道。
-* **[!UICONTROL Address]** :收件者的電子郵件地址。
+* **[!UICONTROL Status]** :優惠券的可用性。
+* **[!UICONTROL Redeemed on]** :兌換券的日期。
+* **[!UICONTROL Channel]** :用於發送優惠券的渠道。
+* **[!UICONTROL Address]** :收件人的電子郵件地址。
 
-的值 **[!UICONTROL status]**, **[!UICONTROL channel]**，和 **[!UICONTROL address]** 會自動完成。 不過， **[!UICONTROL redeemed on]** 未由Campaign復原。 您可以匯入包含抵用券贖回詳細資訊的檔案，以完成這些操作。
+值 **[!UICONTROL status]**。 **[!UICONTROL channel]**, **[!UICONTROL address]** 自動完成。 但是， **[!UICONTROL redeemed on]** 未被市場活動恢復。 可以通過導入包含優惠券兌換詳細資訊的檔案來完成這些操作。
 
-## 將抵用券插入電子郵件傳送 {#inserting-a-coupon-into-an-email-delivery}
+## 將優惠券插入電子郵件傳遞 {#inserting-a-coupon-into-an-email-delivery}
 
-在以下範例中，傳遞是從首頁建立。 如需如何建立傳送的詳細指示，請參閱 [本節](about-email-channel.md). 您也可以在工作流程中將抵用券新增至傳送。
+在下面的示例中，交貨是從首頁建立的。 有關如何建立交貨的詳細說明，請參閱 [此部分](about-email-channel.md)。 您還可以將優惠券添加到工作流中的交貨中。
 
-1. 前往 **[!UICONTROL Campaigns]** 選擇 **[!UICONTROL Deliveries]**.
+1. 轉到 **[!UICONTROL Campaigns]** 選擇 **[!UICONTROL Deliveries]**。
 1. 按一下&#x200B;**[!UICONTROL Create]**。
 
    ![](assets/deliv_coup_04.png)
 
-1. 在 **[!UICONTROL Label]** 按一下 **[!UICONTROL Continue]**.
-1. 按一下 **[!UICONTROL To]** 以新增收件者。
-1. 按一下 **[!UICONTROL Add]** 來選擇傳送的收件者。 選取收件者後，按一下 **[!UICONTROL Ok]** 返回傳遞。
+1. 在中輸入名稱 **[!UICONTROL Label]** 按一下 **[!UICONTROL Continue]**。
+1. 按一下 **[!UICONTROL To]** 添加收件人。
+1. 按一下 **[!UICONTROL Add]** ，也請參見Wiki頁。 選擇收件人後，按一下 **[!UICONTROL Ok]** 返回交貨。
 
    ![](assets/deliv_coup_05.png)
 
-1. 輸入主旨並新增內容至訊息。
+1. 輸入主題並將內容添加到消息中。
 
    ![](assets/deliv_coup_06.png)
 
-1. 在工具列中，按一下 **[!UICONTROL Properties]** 並選擇 **[!UICONTROL Advanced]** 標籤。
-1. 按一下 **[!UICONTROL Coupon management]**.
+1. 在工具欄中，按一下 **[!UICONTROL Properties]** 選擇 **[!UICONTROL Advanced]** 頁籤。
+1. 按一下資料夾表徵圖 **[!UICONTROL Coupon management]**。
 
    ![](assets/deliv_coup_07.png)
 
-1. 選擇抵用券並按一下 **[!UICONTROL Ok]**. 按一下 **[!UICONTROL Ok]** 。
+1. 選擇優惠券並按一下 **[!UICONTROL Ok]**。 按一下 **[!UICONTROL Ok]** 的雙曲餘切值。
 
    ![](assets/deliv_coup_08.png)
 
-1. 按一下訊息，以選擇您要放置抵用券的位置。
+1. 按一下消息以選擇要放置優惠券的位置。
 
    ![](assets/deliv_coup_09.png)
 
-1. 按一下個人化圖示，根據抵用券類型選擇下列其中一項：
+1. 按一下個性化表徵圖，根據優惠券類型選擇以下選項之一：
 
-   * 匿名抵用券： **[!UICONTROL Coupon > Coupon code]**
+   * 匿名優惠券： **[!UICONTROL Coupon > Coupon code]**
 
       ![](assets/deliv_coup_10.png)
 
-   * 個別抵用券： **[!UICONTROL Coupon value > Coupon code]**
+   * 單個優惠券： **[!UICONTROL Coupon value > Coupon code]**
 
       ![](assets/deliv_coup_11.png)
 
-      抵用券會以程式碼的形式插入訊息中，而非您指派的名稱。 程式碼用於Campaign Ootb資料模型中。
+      優惠券作為代碼而不是您指定的名稱插入到消息中。 該代碼在「市場活動」otb資料模型中使用。
    ![](assets/deliv_coup_12.png)
 
-1. 執行測試以確認您指派給抵用券的名稱。 前往 **[!UICONTROL Preview]** 按一下 **[!UICONTROL Test personalization]**. 選擇測試的收件者。
+1. 運行test以確認您分配給優惠券的名稱。 轉到 **[!UICONTROL Preview]** 頁籤 **[!UICONTROL Test personalization]**。 選擇test的收件人。
 
    ![](assets/deliv_coup_13.png)
 
-   測試後，抵用券應會顯示為指派的名稱，而非代碼。
+   在test後，優惠券應顯示為已分配的名稱，而不是代碼。
 
    ![](assets/deliv_coup_14.png)
 
-1. 在工具列中，按一下 **[!UICONTROL Send]** （左上方），並選取要如何傳送傳遞。
+1. 在工具欄中，按一下 **[!UICONTROL Send]** （左上角），並選擇發送交貨的方式。
 
    ![](assets/deliv_coup_15.png)
 
-1. 按一下 **[!UICONTROL Analyze]**。如果分析記錄確認有足夠的抵用券給所有收件者，請按一下 **[!UICONTROL Confirm delivery]** 來發送。
+1. 按一下 **[!UICONTROL Analyze]**。如果分析日誌確認有足夠的優惠券供所有收件人使用，請按一下 **[!UICONTROL Confirm delivery]** 寄出去。
 
    ![](assets/deliv_coup_16.png)
 
 >[!NOTE]
 >
->如需如何管理傳遞之抵用券不足的指示，請參閱 [管理抵用券不足](#managing-insufficient-coupons)
+>有關如何管理交貨的票證不足的說明，請參閱 [管理不足的優惠券](#managing-insufficient-coupons)
 
-若要確認傳送成功：
+要確認交付成功，請執行以下操作：
 
-1. 前往 **[!UICONTROL Explorer > Resources > Campaign management > Coupons]**.
-1. 按一下 **[!UICONTROL Deliveries]** 標籤。
+1. 轉到 **[!UICONTROL Explorer > Resources > Campaign management > Coupons]**。
+1. 按一下 **[!UICONTROL Deliveries]** 頁籤。
 
    ![](assets/deliv_coup_17.png)
 
-   狀態顯示為 **[!UICONTROL Finished]** 成功傳送。
+   狀態顯示為 **[!UICONTROL Finished]** 成功交付。
 
 >[!NOTE]
 >
->依預設，抵用券管理模組會使用 **nms:recipient** 表格。 [深入瞭解](../../configuration/using/about-data-model.md#default-recipient-table)。
+>預設情況下，贈券管理模組使用 **nms：收件人** 的子菜單。 [了解更多](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
->了解如何使用自訂收件者表格 [在本頁](../../configuration/using/about-custom-recipient-table.md).
+>瞭解如何使用自定義收件人表 [此頁](../../configuration/using/about-custom-recipient-table.md)。
 
-## 管理抵用券不足 {#managing-insufficient-coupons}
+## 管理不足的優惠券 {#managing-insufficient-coupons}
 
-如果抵用券數少於訊息數，傳遞分析就會停止。 在這種情況下，您可以匯入更多抵用券或限制訊息的數量。 如果要限制訊息數量，請依照下列指示操作。
+如果優惠券數少於消息，則傳遞分析停止。 在這種情況下，您可以導入更多優惠券或限制郵件數。 如果要限制消息數，請按照以下說明操作。
 
-1. 前往電子郵件傳送視窗。
+1. 轉到電子郵件傳遞窗口。
 1. 按一下&#x200B;**[!UICONTROL To]**。
-1. 在 **[!UICONTROL Select target]**，前往 **[!UICONTROL Exclusions]** 標籤。
+1. 在 **[!UICONTROL Select target]**，轉到 **[!UICONTROL Exclusions]** 頁籤。
 
    ![](assets/deliv_coup_18.png)
 
-1. 在排除設定區段中，按一下 **[!UICONTROL Edit]**.
-1. 輸入要傳入的訊息數 **[!UICONTROL Limit delivery to...messages]** 按一下 **[!UICONTROL Ok]**. 您可以傳送傳遞。
+1. 在排除設定部分，按一下 **[!UICONTROL Edit]**。
+1. 輸入要發送的消息數 **[!UICONTROL Limit delivery to...messages]** 按一下 **[!UICONTROL Ok]**。 你可以發送。
 
    ![](assets/deliv_coup_19.png)
 
 >[!NOTE]
 >
->管理有限數量的抵用券時，傳遞工作流程可讓您根據條件來分割傳送。 如果您想要將抵用券傳送至選取的人口族群，而不限制目標，這個選項很合適。
+>在管理有限數量的優惠券時，傳遞工作流允許您根據您的標準分解交貨。 如果您希望向選定的群體發送優惠券而不限制目標，則此選項是一個好選項。

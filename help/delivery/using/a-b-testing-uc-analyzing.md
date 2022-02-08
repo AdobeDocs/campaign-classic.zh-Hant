@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 分析結果
-description: 透過專屬的使用案例了解如何執行A/B測試。
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+description: 瞭解如何通過專用使用案例執行A/B測試
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 5%
@@ -17,20 +14,20 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-傳送測試傳送後，您可以檢查哪些收件者已傳送至，以及是否已開啟。
+發送test遞送後，您可以檢查哪些收件人已被發送到，以及他們是否已開啟。
 
-* 若要找出已鎖定的收件者，請透過促銷活動控制面板開啟傳送，然後按一下 **[!UICONTROL Delivery]** 標籤。
+* 要查找目標接收人，請通過市場活動控制面板開啟交貨，然後按一下 **[!UICONTROL Delivery]** 頁籤。
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
-* 若要了解傳送是否已開啟，請前往 **[!UICONTROL Tracking]** 標籤。
+* 要瞭解交貨是否已開啟，請轉到 **[!UICONTROL Tracking]** 頁籤。
 
    ![](assets/use_case_abtesting_analysis_002.png)
 
-* 與其他傳送進行比較。
+* 與其他交貨進行比較。
 
    ![](assets/use_case_abtesting_analysis_003.png)
 
-在我們的範例中，傳送B的開放率最高。 這表示內容B將用於最終傳送。
+在我們的例子中，交貨B得分最高。 這意味著內容B將用於最終交付。
 
 ![](assets/use_case_abtesting_analysis_004.png)

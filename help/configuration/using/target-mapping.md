@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: 目標對應
-description: 了解如何建立目標對應
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+description: 瞭解如何建立目標映射
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 468a986d7cfb8a4c51229cf81b6656ca2d101f40
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -17,26 +14,26 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-建立目標對應有兩種必要：
+在以下兩種情況下，必須建立目標映射：
 
-* 如果您使用的收件者表格並非Adobe Campaign提供的表格，
-* 如果您在目標對應畫面上設定與標準目標維度不同的篩選維度。
+* 如果你用的是Adobe Campaign提供的收件人表以外的表格，
+* 如果在目標映射螢幕上配置了與標準目標維不同的篩選維。
 
-目標映射建立嚮導將幫助您建立使用自定義表所需的所有架構。
+目標映射建立嚮導將幫助您建立使用自定義表所需的所有方案。
 
-## 建立和設定連結至自訂表格的結構 {#creating-and-configuring-schemas-linked-to-the-custom-table}
+## 建立和配置連結到自定義表的架構 {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-建立目標對應之前，Adobe Campaign若要與新的收件者資料結構搭配運作，需進行數項設定。
+在建立目標映射之前，為使Adobe Campaign能夠使用新的收件人資料架構運行，必須進行若干配置。
 
 若要這麼做，請套用下列步驟：
 
-1. 建立新資料架構，整合您要使用的自訂表格欄位。
+1. 建立一個新資料方案，該方案整合了要使用的自定義表的欄位。
 
-   有關詳細資訊，請參閱 [架構參考(xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   有關詳細資訊，請參閱 [架構引用(xtk:srcSchema)](../../configuration/using/about-schema-reference.md)。
 
-   在我們的範例中，我們將建立客戶結構，一個包含下列欄位且非常簡單的表格：ID，名字，姓氏，電子郵件地址，行動電話號碼。 其目的是能夠向儲存在此表中的個人發送電子郵件或簡訊警報。
+   在本示例中，我們將建立一個客戶架構，一個包含以下欄位的非常簡單的表：ID，名字，姓，電子郵件地址，手機號碼。 目的是能夠向此表中儲存的個人發送電子郵件或SMS警報。
 
-   範例結構(cus:individual)
+   示例架構(cus:individual)
 
    ```
    <srcSchema name="individual" namespace="cus" label="Individuals">
@@ -53,7 +50,7 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-1. 使用=&quot;true&quot;屬性將結構宣告為外部檢視。 請參閱 [檢視屬性](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. 使用=&quot;true&quot;屬性將架構聲明為外部視圖。 請參閱 [視圖屬性](../../configuration/using/schema-characteristics.md#the-view-attribute)。
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -61,7 +58,7 @@ ht-degree: 2%
     </srcSchema>
    ```
 
-1. 如果需要添加直接郵件地址，請使用以下類型的結構：
+1. 如果需要添加直郵地址，請使用以下類型的結構：
 
    ```
    <element advanced="true" name="postalAddress" template="nms:common:postalAddress">
@@ -82,49 +79,45 @@ ht-degree: 2%
       </element>
    ```
 
-1. 按一下 **[!UICONTROL Administration > Campaign management > Target mappings]** 節點。
-1. 按一下 **新增** 按鈕，開啟目標映射建立嚮導。
-1. 輸入 **標籤** 欄位，然後選取您剛在 **目標維度** 欄位。
+1. 按一下 **[!UICONTROL Administration > Campaign management > Target mappings]** 的下界。
+1. 按一下 **新建** 按鈕開啟目標映射建立嚮導。
+1. 輸入 **標籤** 欄位，然後選擇您剛在 **目標維** 的子菜單。
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. 在 **編輯地址表單** 窗口，選擇與各種傳送地址匹配的架構欄位。 在此，我們可以將 **@email** 和 **@mobile** 欄位。
+1. 在 **編輯地址表單** 窗口，選擇與各種傳遞地址匹配的方案欄位。 在這裡，我們可以 **@email** 和 **@mobile** 的子菜單。
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. 在以下 **儲存** ，輸入 **擴充功能結構的尾碼** 欄位，區分新結構和Adobe Campaign提供的現成結構。
+1. 在以下 **儲存** ，輸入 **擴展架構的尾碼** 欄位，將新架構與Adobe Campaign提供的現成架構區分開來。
 
-   按一下 **[!UICONTROL Define new additional fields]** ，以選取您要在傳送中鎖定的維度。
+   按一下 **[!UICONTROL Define new additional fields]** 選擇要在交貨中瞄準的維。
 
-   依預設，排除管理會儲存在與訊息相同的表格中。
+   預設情況下，排除管理與消息儲存在同一表中。
 
-   檢查 **產生儲存架構以進行追蹤** 方塊，以便為連結至目標對應的追蹤設定儲存空間。
+   檢查 **生成用於跟蹤的儲存架構** 框。
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign不支援連結至相同broadlog和/或trackinglog結構的多個收件者結構，也稱為目標結構。 否則，之後資料協調可能會導致異常。 如需詳細資訊，請參閱 [建議和限制](../../configuration/using/about-custom-recipient-table.md) 頁面。
+   >Adobe Campaign不支援與同一廣播模式和/或跟蹤日誌模式連結的多個接收方模式，即目標模式。 否則，這可能導致以後資料協調出現異常。 有關此項的詳細資訊，請參閱 [建議和限制](../../configuration/using/about-custom-recipient-table.md) 的子菜單。
 
-1. 在 **擴充功能** 視窗中，選取您要產生的選用結構(可用結構的清單取決於Adobe Campaign平台上安裝的模組)。
+1. 在 **擴展** 窗口，選擇要生成的可選方案(可用方案清單取決於Adobe Campaign平台上安裝的模組)。
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. 按一下 **儲存** 按鈕關閉嚮導。
+1. 按一下 **保存** 按鈕
 
-   嚮導使用啟動架構建立新目標映射工作所需的所有其他架構。
+   嚮導使用啟動架構建立使新目標映射工作所需的所有其他架構。
 
    ![](assets/mapping_schema_list.png)
 
-## 使用目標對應 {#using-target-mapping}
+## 使用目標映射 {#using-target-mapping}
 
-使用新結構作為傳送目標有兩種方式：
+使用新架構作為傳遞目標有兩種方法：
 
-* 根據對應建立一或多個傳遞範本
-* 建立傳送時，在目標選取期間直接選取對應，如下所示：
+* 基於映射建立一個或多個交付模板
+* 建立交貨時，在目標選擇期間直接選擇映射，如下所示：
 
 ![](assets/mapping_selection_ciblage.png)
-
-**相關主題**
-
-* [快速回應客戶存取其資料的請求](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)

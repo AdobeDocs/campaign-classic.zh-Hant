@@ -1,14 +1,13 @@
 ---
 product: campaign
-title: 行銷活動傳遞最佳實務
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+title: 營銷活動交付最佳做法
+description: 在設計和發送交付時瞭解最佳做法
+feature: Deliverability
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 26%
+source-wordcount: '103'
+ht-degree: 24%
 
 ---
 
@@ -16,13 +15,13 @@ ht-degree: 26%
 
 ![](../../assets/common.svg)
 
-了解與傳送內容設計和使用Adobe Campaign傳送相關的最佳實務。 使用下列連結來導覽主題和尋找指引。
+瞭解與交付設計和與Adobe Campaign發送相關的最佳做法。 使用以下連結導航主題和查找指南。
 
 <table>
 <tr>
   <td>
     <a href="optimize-delivery.md">
-      <img alt="最佳化" src="assets/do-not-localize/optimize.svg" width="60px"/>
+      <img alt="優化" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="optimize-delivery.md">
@@ -30,12 +29,12 @@ ht-degree: 26%
     </a>
     </div>
     <p>
-    <em>安全並最佳化傳送程式</em>
+    <em>安全並優化發送過程</em>
     <p>
   </td>
    <td>
     <a href="use-templates.md">
-      <img alt="範本" src="assets/do-not-localize/design.svg" width="60px"/>
+      <img alt="模板" src="assets/do-not-localize/design.svg" width="60px"/>
     </a>
     <div>
       <a href="use-templates.md">
@@ -43,7 +42,7 @@ ht-degree: 26%
     </a>
     </div>
     <p>
-    <em>促進和加快新交付</em>
+    <em>加快和加快新交貨</em>
     <p>
   </td>
   <td>
@@ -52,11 +51,11 @@ ht-degree: 26%
     </a>
     <div>
       <a href="design-and-personalize.md">
-    <strong>個人化內容</strong>
+    <strong>個性化內容</strong>
     </a>
     </div>
     <p>
-    <em>套用正確的設定</em>
+    <em>應用正確設定</em>
     <p>
   </td>
 </tr>
@@ -71,7 +70,7 @@ ht-degree: 26%
     </a>
     </div>
     <p>
-    <em>目標人口是關鍵</em>
+    <em>目標群體是關鍵</em>
     <p>
   </td>
    <td>
@@ -89,7 +88,7 @@ ht-degree: 26%
   </td>
   <td>
     <a href="track-and-monitor.md">
-      <img alt="最佳化" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
+      <img alt="優化" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
     </a>
     <div>
       <a href="track-and-monitor.md">
@@ -97,7 +96,7 @@ ht-degree: 26%
     </a>
     </div>
     <p>
-    <em>控制傳送和疑難排解</em>
+    <em>控制發送和故障排除</em>
     <p>
   </td>
 </tr>
@@ -105,8 +104,8 @@ ht-degree: 26%
 
 另請參閱:
 
-* [開始使用傳遞能力](about-deliverability.md)
+* [開始使用Deliverability](about-deliverability.md)
 
-* [傳遞建立步驟](steps-about-delivery-creation-steps.md)
+* [交付建立步驟](steps-about-delivery-creation-steps.md)
 
-* [安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)
+* [安全和隱私檢查表](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)

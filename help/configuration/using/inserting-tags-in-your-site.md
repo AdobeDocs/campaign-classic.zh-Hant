@@ -1,29 +1,26 @@
 ---
 product: campaign
-title: 在您的網站中插入標籤
-description: 在您的網站中插入標籤
-audience: configuration
-content-type: reference
-topic-tags: setting-up-web-tracking
+title: 在網站中插入Web跟蹤標籤
+description: 瞭解如何在網站中插入Web跟蹤標籤
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 5%
+source-wordcount: '328'
+ht-degree: 0%
 
 ---
 
-# 在您的網站中插入標籤{#inserting-tags-in-your-site}
+# 在站點中插入Web跟蹤標籤{#inserting-tags-in-your-site}
 
 ![](../../assets/v7-only.svg)
 
 ## 簡單方法 {#simple-method}
 
-此方法包括透過插入 **`<img>`** HTML標籤。
+此方法包括通過插入 **`<img>`** 要跟蹤的網頁的HTML原始碼中的HTML標籤。
 
 >[!IMPORTANT]
 >
->此方法會使用網頁瀏覽器傳送的Cookie來識別收件者，且不能100%可靠。
+>此方法使用Web瀏覽器發送的Cookie來標識收件人，並且不100%可靠。
 
 **範例**:
 
@@ -35,15 +32,15 @@ ht-degree: 5%
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-當您在主控台中定義要追蹤的頁面時，可以產生範例網頁追蹤標籤，以複製並貼到網頁的原始碼中。
+在控制台中定義要跟蹤的頁面時，可以生成一個示例Web跟蹤標籤，以將其複製並貼上到網頁的原始碼中。
 
-但是，使用TRANSACTION類型標籤時，必須使用JavaScript修改示例標籤，以插入事務資訊（金額、項目數）和擴展架構定義的任何資訊。
+但是，在使用TRANSACTION-type標籤時，必須使用JavaScript修改示例標籤，以便插入事務資訊（金額、項數）和擴展架構定義的任何資訊。
 
 ### 標籤的靜態插入 {#static-insertion-of-tags}
 
-若要執行靜態標籤插入，只需將主控台產生或手動建構的標籤複製並貼到網頁來源即可。
+要執行靜態標籤插入，只需將控制台生成或手動構建的標籤複製並貼上到網頁的源中即可。
 
-**範例**:在顯示表單的頁面上插入網頁追蹤標籤。
+**示例**:在顯示表單的頁面上插入Web跟蹤標籤。
 
 ```
 <html>
@@ -65,7 +62,7 @@ ht-degree: 5%
 </html>
 ```
 
-在確認頁面(「amount.md」)中插入TRANSACTION類型的Web追蹤標籤。
+在確認頁(&quot;amount.md&quot;)中插入TRANSACTION類型的Web跟蹤標籤。
 
 ```
 <html>
@@ -87,11 +84,11 @@ ht-degree: 5%
 </html>
 ```
 
-### 動態產生網頁追蹤標籤 {#dynamic-generation-of-web-tracking-tags}
+### 動態生成Web跟蹤標籤 {#dynamic-generation-of-web-tracking-tags}
 
-動態產生網頁時，您可以在頁面產生時新增網頁追蹤標籤。
+動態生成網頁時，可以在生成網頁時添加Web跟蹤標籤。
 
-**範例**:JSP中添加了Web跟蹤。
+**示例**:Web跟蹤已添加到JSP。
 
 ```
 <%@page import="java.util.Random" %>
@@ -124,19 +121,19 @@ ht-degree: 5%
 </html>
 ```
 
-## 最佳化方法 {#optimum-method-}
+## 最佳方法 {#optimum-method-}
 
-如果您希望控制發送到重定向伺服器的資訊，最可靠的方法是使用頁面生成語言自行同步執行HTTP查詢。
+如果希望控制發送到重定向伺服器的資訊，最可靠的方法是使用頁面生成語言自行同步執行HTTP查詢。
 
-您建構的URL必須遵循 [網頁追蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md).
+您構建的URL必須遵守中定義的語法規則 [Web跟蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md)。
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->重定向和Web跟蹤使用Cookie，執行同步HTTP調用的Web伺服器必須與重定向伺服器位於同一域中。 各種HTTP交換必須傳達「id」、「uuid」和「uuid230」Cookie。
+>重定向和Web跟蹤使用Cookie，執行同步HTTP調用的Web伺服器與重定向伺服器位於同一域中非常重要。 各種HTTP交換必須傳遞「id」、「uuid」和「uuid230」cookie。
 
-**範例**:以Java動態產生，收件者使用其帳號進行驗證。
+**示例**:在Java中動態生成，收件人使用其帳號進行身份驗證。
 
 ```
 [...]

@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 選擇目標對應
-description: 選擇目標對應
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: 瞭解如何目標映射
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -17,22 +14,22 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-依預設，傳遞範本目標為 **[!UICONTROL Recipients]**. 因此，其目標對應會使用 **nms:recipient** 表格。 Adobe Campaign為您的傳送提供其他目標對應，以根據您的需求使用。
+預設情況下，交貨模板目標 **[!UICONTROL Recipients]**。 因此，其目標映射使用 **nms：收件人** 的子菜單。 Adobe Campaign為您的交貨提供了其他目標映射，以根據您的需要使用。
 
 ![](assets/delivery_select_mapping.png)
 
-這些對應如下：
+這些映射如下：
 
-| 名稱 | 使用 | 標準結構 |
+| 名稱 | 使用 | 標準架構 |
 |---|---|---|
-| 收件者 | 傳送給Adobe Campaign資料庫的收件者 | nms:recipient |
-| 訪客 | 傳送給已透過反向連結（病毒式行銷）或社交網路(Facebook、Twitter)等收集設定檔的訪客。 | mns:visitor |
-| 訂閱 | 傳送給已訂閱資訊服務（例如電子報）的收件者 | nms:subscription |
-| 訪客訂閱 | 傳送給已訂閱資訊服務的訪客 | nms:visitorSub |
-| 服務 | 發佈至Twitter帳戶或Facebook頁面 | nms:service |
-| 運算子 | 傳送至Adobe Campaign運算子 | nms:operator |
-| 外部檔案 | 透過包含傳送所需所有資訊的檔案傳送 | 沒有連結的架構，未輸入目標 |
+| 收件人 | 交付給Adobe Campaign資料庫的收件人 | nms：收件人 |
+| 訪問者 | 向通過推薦（病毒式營銷）或社交網路(例如，Facebook、Twitter)收集個人資料的訪客遞送。 | mns：訪問者 |
+| 訂閱 | 向訂閱新聞通訊等資訊服務的收件人提供 | nms：訂閱 |
+| 訪問者訂閱 | 向訂閱資訊服務的訪問者發送 | nms:visitorSub |
+| 服務 | 發佈到Twitter帳戶或Facebook頁 | nms：服務 |
+| 運算子 | 交付給Adobe Campaign運營商 | nms：運算子 |
+| 外部檔案 | 通過包含交付所需的所有資訊的檔案進行交付 | 沒有連結架構，沒有輸入目標 |
 
 >[!NOTE]
 >
->您也可以建立新的目標對應。 此操作為專家用戶保留。 如需詳細資訊，請參閱 [設定指南](../../configuration/using/target-mapping.md).
+>您還可以建立新的目標映射。 此操作保留給專家用戶。 如需詳細資訊，請參閱[本區段](../../configuration/using/target-mapping.md)。
