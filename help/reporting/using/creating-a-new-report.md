@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 建立新報表
-description: 了解建立新報表的關鍵步驟
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+description: 瞭解建立新報告的關鍵步驟
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -17,139 +14,139 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-若要建立報表，請套用下列步驟：
+要建立報告，請應用以下步驟：
 
-1. 開啟Adobe Campaign Explorer，然後從 **[!UICONTROL Administration > Configuration]** 節點，然後選取 **[!UICONTROL Reports]** 檔案夾。
+1. 開啟Adobe Campaign瀏覽器， **[!UICONTROL Administration > Configuration]** ，然後選擇 **[!UICONTROL Reports]** 的子菜單。
 1. 按一下 **[!UICONTROL New]** 按鈕。
 1. 選取 **[!UICONTROL Create a new report from a template]** 並按一下 **[!UICONTROL Next]**。
 
    ![](assets/s_ncs_advuser_report_wizard_new_01.png)
 
-1. 在下拉式清單中選取報表範本。
+1. 在下拉清單中選擇報表模板。
 
-   * 此 **[!UICONTROL Extended report]** 可讓您建立使用圖表設定的報表。
-   * 此 **[!UICONTROL Qualitative distribution]** 報表可讓您根據所有資料類型（公司名稱、電子郵件網域等）建立統計資料。
-   * 此 **[!UICONTROL Quantitative distribution]** 報表可讓您建立可測量或計算的資料統計資料（發票金額、收件者年齡等）。
+   * 的 **[!UICONTROL Extended report]** 用於建立使用圖表配置的報告。
+   * 的 **[!UICONTROL Qualitative distribution]** 報告允許您根據所有類型的資料（公司名稱、電子郵件域等）建立統計資訊。
+   * 的 **[!UICONTROL Quantitative distribution]** 報告用於建立可以測量或計數的資料（發票額、收件人年齡等）的統計資訊。
 
-   如需這些報表範本的詳細資訊，請參閱 [本節](../../reporting/using/about-descriptive-analysis.md).
+   有關這些報告模板的詳細資訊，請參閱 [此部分](../../reporting/using/about-descriptive-analysis.md)。
 
-1. 在對應欄位中輸入報表名稱及其說明。 指定 **[!UICONTROL schema]** 將套用報表的位置。
+1. 在相應欄位中輸入報表名稱及其說明。 指定 **[!UICONTROL schema]** 報告將應用於其中。
 
    ![](assets/s_ncs_advuser_report_wizard_020.png)
 
-1. 儲存此報表。
+1. 保存此報告。
 
 ## 為圖表建模 {#modelizing-the-chart}
 
-儲存報表後，應會顯示此訊息。 您現在可以建立報表的圖表。
+保存報告後，應顯示此資訊。 現在，您可以構建報表圖表。
 
 ![](assets/s_ncs_user_report_wizard_021.png)
 
-報告的建立圖由一系列活動組成。
+報告的編製圖由一系列活動組成。
 
 ![](assets/s_ncs_advuser_report_wizard_031.png)
 
-活動會使用轉變來連結，由箭頭表示。
+活動使用由箭頭表示的過渡進行連結。
 
 ![](assets/s_ncs_advuser_report_wizard_032.png)
 
-若要建立報表，請根據報表的性質和內容，識別有用的元素並建立其邏輯順序的模型。
+要構建報表，需要根據報表的性質和上下文確定有用的元素並對其邏輯序列進行建模。
 
-1. 使用 **[!UICONTROL Start]** 實體化要建立報表的第一個程式的活動。 每個報表只能使用其中一個活動。
+1. 使用 **[!UICONTROL Start]** 活動，以實現為構建報告而要執行的第一個進程。 每個報表只能使用其中一個活動。
 
-   如果圖表包含回圈，則此為必要項目。
+   如果圖表包含循環，則此參數是必需的。
 
-1. 新增一或多個 **[!UICONTROL Query]** 活動來收集對建立報表有用的資料。 可以直接通過資料庫架構上的查詢或通過導入的清單或現有多維資料集收集資料。
+1. 添加一個或多個 **[!UICONTROL Query]** 活動，以收集對構建報表有用的資料。 可以通過資料庫模式上的查詢直接收集資料，也可以通過導入的清單或現有多維資料集來收集資料。
 
-   有關詳細資訊，請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md).
+   有關此內容的詳細資訊，請參閱 [收集要分析的資料](../../reporting/using/collecting-data-to-analyze.md)。
 
-   此資料會根據頁面設定顯示在報表中（或不顯示）。
+   此資料將根據頁面配置顯示（或不顯示）在報告中。
 
-1. 放置一或多個 **[!UICONTROL Page]** 活動來定義所收集資料的圖形表示。 您可以插入表、圖表、輸入欄位和條件，以顯示一個或多個頁面或頁面的元素。 顯示的內容可完全配置。
+1. 放置一個或多個 **[!UICONTROL Page]** 活動，以定義收集資料的圖形表示形式。 可以插入表、圖表、輸入欄位，並設定一個或多個頁面或頁面元素的顯示條件。 所顯示的內容是完全可配置的。
 
-   有關詳細資訊，請參閱 [靜態元素](#static-elements).
+   有關此內容的詳細資訊，請參閱 [靜態元素](#static-elements)。
 
-1. 使用 **[!UICONTROL Test]** 活動，定義顯示或存取資料的條件。
+1. 使用 **[!UICONTROL Test]** 的子菜單。
 
-   有關詳細資訊，請參閱 [調整頁面顯示](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
+   有關此內容的詳細資訊，請參閱 [調整頁面顯示](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display)。
 
-1. 如有需要，請透過 **[!UICONTROL Script]** 活動，例如計算報表名稱，以篩選特定內容中結果的顯示，等等。
+1. 如有必要，請通過 **[!UICONTROL Script]** 活動，例如計算報表名稱，過濾特定上下文中結果的顯示等。
 
-   有關詳細資訊，請參閱 [指令碼活動](../../reporting/using/advanced-functionalities.md#script-activity).
+   有關此內容的詳細資訊，請參閱 [指令碼活動](../../reporting/using/advanced-functionalities.md#script-activity)。
 
-1. 最後，為了更輕鬆閱讀複雜報表，您可以插入一或多個 **[!UICONTROL Jump]** 類型活動。 這可讓您從一個活動移至另一個活動，而不會實體化報表上的轉變。 此 **[!UICONTROL Jump]** 活動也可用來顯示其他報表。
+1. 最後，為了更輕鬆地閱讀複雜報告，可插入一個或多個 **[!UICONTROL Jump]** 鍵。 這樣，您就可以從一個活動轉到另一個活動，而無需對報表上的轉換進行具體化。 的 **[!UICONTROL Jump]** 活動還可用於顯示其他報告。
 
-   有關詳細資訊，請參閱 [跳轉活動](../../reporting/using/advanced-functionalities.md#jump-activity).
+   有關此內容的詳細資訊，請參閱 [跳轉活動](../../reporting/using/advanced-functionalities.md#jump-activity)。
 
-您不能同時執行數個分支。 這表示像這樣建立的報表將無法運作：
+不能同時執行多個分支。 這意味著這樣構建的報告將不起作用：
 
 ![](assets/reporting_graph_sample_ko.png)
 
-不過，您可以放置數個分支。 只會執行其中一個：
+但是，您可以放置多個分支。 只執行其中一項：
 
 ![](assets/reporting_graph_sample_ok.png)
 
 ## 建立頁面 {#creating-a-page}
 
-內容是透過放在圖表中的活動來設定。 有關詳細資訊，請參閱 [建模圖表](#modelizing-the-chart).
+內容通過圖表中放置的活動進行配置。 有關此內容的詳細資訊，請參閱 [建模圖表](#modelizing-the-chart)。
 
-若要設定活動，請連按兩下其圖示。
+要配置活動，請按兩下其表徵圖。
 
-顯示的內容定義於 **頁面** 類型活動。
+顯示的內容在 **頁面** 鍵。
 
-報表可包含一或多個頁面。 頁面是透過專用編輯器建立，可讓您在樹狀結構中插入輸入欄位、選取欄位、靜態元素、圖表或表格。 容器可協助您定義版面。 有關詳細資訊，請參閱 [元素版面](../../reporting/using/element-layout.md).
+報表可以包含一個或多個頁面。 通過專用編輯器建立頁面，該編輯器允許您在樹結構中插入輸入欄位、選擇欄位、靜態元素、圖表或表。 容器可幫助您定義佈局。 有關此內容的詳細資訊，請參閱 [元素佈局](../../reporting/using/element-layout.md)。
 
-若要將元件新增至頁面，請使用工具列左上角的圖示。
+要向頁面添加元件，請使用工具欄左上部分的表徵圖。
 
 ![](assets/reporting_add_component_in_page.png)
 
-您也可以以滑鼠右鍵按一下您要新增元件的節點，然後從清單中選取元件。
+也可按一下右鍵要添加元件的節點並從清單中選擇它。
 
 ![](assets/s_ncs_advuser_report_wizard_09.png)
 
 >[!CAUTION]
 >
->如果報表以Excel格式匯出，建議不要使用複雜的HTML格式。 有關詳細資訊，請參閱 [匯出報表](../../reporting/using/actions-on-reports.md#exporting-a-report).
+>如果報表注定以Excel格式導出，建議不要使用複雜的HTML格式。 有關此內容的詳細資訊，請參閱 [導出報告](../../reporting/using/actions-on-reports.md#exporting-a-report)。
 
-A **[!UICONTROL Page]** 可包含下列元素：
+A **[!UICONTROL Page]** 可以包括以下元素：
 
-* 長條圖，圓形圖，曲線類型 **[!UICONTROL charts]**、等
-* 樞紐；包含群組的清單，或劃分 **[!UICONTROL tables]**.
-* 文本或數字類型 **[!UICONTROL Input controls]**.
-* 下拉式清單、核取方塊、選項按鈕、多選項、日期或矩陣類型 **[!UICONTROL Selection controls]**.
-* 連結編輯器，常數，資料夾選擇類型 **[!UICONTROL Advanced controls]**.
-* 值、連結、HTML、影像等 **[!UICONTROL Static elements]**.
-* **[!UICONTROL Containers]** 可讓您控制元件配置。
+* 條形、餅圖、曲線類型 **[!UICONTROL charts]**&#x200B;的子菜單。
+* 透視；包含組或分析的清單 **[!UICONTROL tables]**。
+* 文本或數字類型 **[!UICONTROL Input controls]**。
+* 下拉清單、複選框、單選按鈕、多選項、日期或矩陣類型 **[!UICONTROL Selection controls]**。
+* 連結編輯器、常數、資料夾選擇類型 **[!UICONTROL Advanced controls]**。
+* 值、連結、HTML、影像等 **[!UICONTROL Static elements]**。
+* **[!UICONTROL Containers]** 用於控制元件佈局。
 
-頁面及其元件的設定模式在 [本節](../../web/using/about-web-forms.md).
+有關頁面及其元件的配置模式的詳細資訊，請參閱 [此部分](../../web/using/about-web-forms.md)。
 
-工具列可讓您新增或移除控制項，以及在報表頁面中組織其順序。
+使用工具欄可以添加或刪除控制項，並在報告頁中組織其順序。
 
 ![](assets/s_ncs_advuser_report_wizard_08.png)
 
 ### 靜態元素 {#static-elements}
 
-靜態元素可讓您在報表中顯示使用者不會與之互動的資訊，例如圖形元素或指令碼。 請參閱 [本節](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) 以取得更多資訊。
+靜態元素使您能夠在報告中顯示用戶不會與其交互的資訊，如圖形元素或指令碼。 請參閱 [此部分](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) 的子菜單。
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
 ### 篩選報表中的資訊 {#filtering-information-in-a-report}
 
-輸入和選取控制項可讓您篩選報表中顯示的資訊。 如需實作此類型篩選的詳細資訊，請參閱 [篩選查詢中的選項](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
+通過輸入和選擇控制項，您可以過濾報表中顯示的資訊。 有關實現此類篩選的詳細資訊，請參閱 [篩選查詢中的選項](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries)。
 
-若要進一步了解如何建立和設定輸入欄位和選取欄位，請參閱 [本節](../../web/using/about-web-forms.md).
+有關建立和配置輸入欄位和選擇欄位的詳細資訊，請參閱 [此部分](../../web/using/about-web-forms.md)。
 
-您可以將一或多個輸入控制項整合至您的報表。 此類型的控制項可讓您根據輸入的值篩選顯示的資訊。
+可以將一個或多個輸入控制項整合到報表中。 此類型的控制項允許您根據輸入的值篩選顯示的資訊。
 
 ![](assets/reporting_control_text.png)
 
-您也可以將一或多個選取控制項整合至您的報表中。 此類型的控制可讓您根據選取的值來篩選報表中包含的資訊，例如：
+您還可以將一個或多個選擇控制項整合到報告中。 此類型的控制項允許您根據所選值過濾報告中包含的資訊，例如：
 
 * 通過單選按鈕或複選框：
 
    ![](assets/reporting_radio_buttons.png)
 
-* 透過下拉式清單：
+* 通過下拉清單：
 
    ![](assets/reporting_control_list.png)
 
@@ -157,8 +154,8 @@ A **[!UICONTROL Page]** 可包含下列元素：
 
    ![](assets/reporting_control_date.png)
 
-最後，您可以將一或多個進階控制項整合至您的報表中。 此類控制項可讓您插入連結、常數或選取資料夾。
+最後，您可以將一個或多個高級控制項整合到報告中。 此類型的控制項使您能夠插入連結、常數或選擇資料夾。
 
-在此，您可以篩選報表中的資料，以僅顯示樹狀結構其中一個資料夾中所包含的資訊：
+在此，您可以篩選報告中的資料，以僅顯示樹的資料夾之一中包含的資訊：
 
 ![](assets/reporting_control_folder.png)

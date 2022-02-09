@@ -2,11 +2,8 @@
 product: campaign
 title: 定義條件式內容
 description: 定義條件式內容
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 8%
@@ -17,41 +14,41 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-您可以限制特定報表項目或頁面的顯示。
+您可以限制特定報表項或頁面的顯示。
 
-若要將特定項目設為條件式，請調整其可見度設定。 有關詳細資訊，請參閱 [調節項顯示](#conditioning-item-display).
+要使特定項目成為條件，請調整其可見性設定。 有關此內容的詳細資訊，請參閱 [條件項顯示](#conditioning-item-display)。
 
-若要讓一或多個頁面的顯示成為條件，請使用 **[!UICONTROL Test]** 類型活動。 有關詳細資訊，請參閱 [調整頁面顯示](#conditioning-page-display).
+要使一個或多個頁面的顯示成為條件，請使用 **[!UICONTROL Test]** 鍵入活動。 有關此內容的詳細資訊，請參閱 [條件頁顯示](#conditioning-page-display)。
 
-## 調節項顯示 {#conditioning-item-display}
+## 條件項顯示 {#conditioning-item-display}
 
-若要讓報表的部分顯示成為條件式，需要定義其可見性條件：如果不符合這些條件，則不會顯示項目。
+要使報告的部分顯示為條件，需要定義其可見性條件：如果未滿足這些要求，則不顯示項目。
 
-可見性條件可能取決於運算子狀態，取決於在報表頁面中選取或輸入的項目。
+可視性條件可能取決於操作員狀態，取決於在報告頁中選擇或輸入的項。
 
-顯示頁面上項目有條件顯示的範例，位於 [本節](../../web/using/form-rendering.md#defining-fields-conditional-display).
+中提供了顯示頁面上項的條件顯示的示例 [此部分](../../web/using/form-rendering.md#defining-fields-conditional-display)。
 
-在下列範例中，顯示條件取決於語言：
+在以下示例中，顯示條件取決於語言：
 
 ![](assets/reporting_display_condition.png)
 
-## 調整頁面顯示 {#conditioning-page-display}
+## 條件頁顯示 {#conditioning-page-display}
 
-在報表的圖表中， **[!UICONTROL Test]** 活動可讓您根據一或多個條件來變更頁面順序。
+在報表的圖表中， **[!UICONTROL Test]** 活動允許您根據一個或多個條件更改頁序。
 
-此活動以下列操作原則為基礎：
+本活動基於以下操作原則：
 
-1. 放置 **[!UICONTROL Test]** 並加以編輯。
-1. 按一下 **[!UICONTROL Add]** 按鈕以建立各種可能的案例。
+1. 放置a **[!UICONTROL Test]** 編輯。
+1. 按一下 **[!UICONTROL Add]** 按鈕，將選定控制項在Tab鍵次序中下移一個位置。
 
    ![](assets/reporting_test_sample.png)
 
-   對於每種情況，都會將輸出轉變新增至 **[!UICONTROL Test]** 活動。
+   對於每種情況，將輸出轉換添加到 **[!UICONTROL Test]** 的子菜單。
 
    ![](assets/reporting_test_transitions.png)
 
-1. 選取 **[!UICONTROL Enable default transition]** 若要新增轉變，若未符合其中一個已設定的條件。
+1. 選擇 **[!UICONTROL Enable default transition]** 添加過渡時，如果未滿足配置的條件之一，請執行此操作。
 
    如需詳細資訊，請參閱[本章節](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
 
-A **[!UICONTROL Test]** 活動可放置在圖表的開頭，以根據上下文或運算子設定檔來調整顯示。
+A **[!UICONTROL Test]** 活動可放置在圖表的開頭，以根據上下文或運算子配置檔案（例如）來限制顯示。

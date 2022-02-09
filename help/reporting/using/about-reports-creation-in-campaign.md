@@ -2,8 +2,9 @@
 product: campaign
 title: 建立報告的關鍵步驟
 description: 瞭解建立報告的關鍵步驟
+feature: Reporting
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

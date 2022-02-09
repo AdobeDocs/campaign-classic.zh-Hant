@@ -2,11 +2,8 @@
 product: campaign
 title: 使用描述性分析精靈
 description: 使用描述性分析精靈
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -17,120 +14,120 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-若要建立描述性分析報表，請使用專用精靈。 設定取決於要分析的資料和所需的呈現。
+要建立描述性分析報告，請使用專用嚮導。 配置取決於要分析的資料和所需的渲染。
 
 ## 分析資料庫中的資料 {#analyzing-data-in-the-database}
 
-描述性分析精靈可透過 **[!UICONTROL Tools > Descriptive analysis]** 功能表：在此案例中，分析預設與收件者有關(**nms:recipient**)。 它會套用至Adobe Campaign資料庫中的所有資料。
+描述性分析嚮導可通過 **[!UICONTROL Tools > Descriptive analysis]** 菜單：在這種情況下，預設情況下分析涉及收件人(**nms：收件人**)。 它適用於Adobe Campaign資料庫中的所有資料。
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-要分析標準收件者以外的表(**nms:recipient**)，按一下 **[!UICONTROL Advanced settings...]** 連結至精靈的最後一個階段，並選取符合您設定的表格（在此例中為） **cus:individual**:
+要分析標準收件人以外的表(**nms：收件人**)，按一下 **[!UICONTROL Advanced settings...]** 連結到嚮導的最後一階段，並選擇與設定匹配的表。 **cus：單個**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
-如果您想對部分資料產生統計資料，可以定義篩選器：要執行此操作，請按一下 **[!UICONTROL Advanced settings...]** 連結並定義要套用的篩選，如下所示：
+如果要生成部分資料的統計資訊，可以定義篩選器：要執行此操作，請按一下 **[!UICONTROL Advanced settings...]** 連結並定義要應用的篩選器，如下所示：
 
 ![](assets/reporting_descriptive_wz_filter.png)
 
-這項分析將只涉及16歲及以上、居住在倫敦的資料庫接收者。
+這項分析只涉及16歲及以上的資料庫接收者，以及生活在倫敦的人。
 
 ## 分析一組資料 {#analyzing-a-set-of-data}
 
-您可以透過不同內容使用描述性分析精靈：清單、工作流程轉變、一或多個傳送、收件者選取等。
+可以通過其他上下文使用說明性分析嚮導：清單、工作流轉換、一個或多個遞送、選擇收件人等。
 
-您可透過Adobe Campaign樹狀結構中指向收件者表格的數個節點存取。
+它可通過指向收件人表的Adobe Campaign樹的多個節點訪問。
 
-選取項目並按一下滑鼠右鍵，開啟描述性分析精靈。 只會分析選取的資料。
+通過選擇項並按一下右鍵，開啟說明性分析嚮導。 將只分析所選資料。
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
-* 針對 **收件者**，選擇要分析的收件人，然後按一下右鍵並選擇 **[!UICONTROL Actions > Explore...]**，如上所示。 如果篩選器套用至收件者清單，則只會分析其內容。
+* 對於 **收件人**，選擇要分析的收件人，然後按一下右鍵並選擇 **[!UICONTROL Actions > Explore...]**，如上所示。 如果將篩選器應用於收件人清單，則只分析其內容。
 
-   要選擇資料夾或當前篩選器中的所有收件者，請使用CTRL+A快捷方式。 這表示即使未顯示的收件者也將被選取。
+   要選擇資料夾或當前篩選器中的所有收件人，請使用CTRL+A快捷方式。 這意味著即使未顯示的收件者也將被選中。
 
-   如需收件者的描述性分析範例，請參閱： [定性資料分析](../../reporting/using/use-cases.md#qualitative-data-analysis).
+   有關收件人的描述性分析的示例，請參閱： [定性資料分析](../../reporting/using/use-cases.md#qualitative-data-analysis)。
 
-* 在 **工作流程**，將游標置於指向收件者表格的轉變上，按一下右鍵並選取 **[!UICONTROL Analyze target]**. 如需詳細資訊，請參閱 [在工作流程中分析轉變目標](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
-* 針對 **清單**，請選取一或多個清單，並套用與收件者相同的程式。
-* 在 **傳遞**，選取您要分析其目標的傳送，按一下滑鼠右鍵並選取 **[!UICONTROL Actions > Explore the target]**，如下所示：
+* 在 **工作流**，將游標置於指向收件人表的過渡上，按一下右鍵並選擇 **[!UICONTROL Analyze target]**。 有關詳細資訊，請參閱中的示例 [分析工作流中的過渡目標](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow)。
+* 對於 **清單**，選擇一個或多個清單，並應用與收件人相同的流程。
+* 在 **交貨**，選擇要分析其目標的交貨，按一下右鍵並選擇 **[!UICONTROL Actions > Explore the target]**，如下所示：
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   以下提供傳送的描述性分析範例： [分析人口](../../reporting/using/use-cases.md#analyzing-a-population) 和此處： [分析收件者追蹤記錄](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   此處提供了交貨描述性分析的示例： [分析人口](../../reporting/using/use-cases.md#analyzing-a-population) 這裡： [分析收件人跟蹤日誌](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
 
 ## 配置定性分佈模板 {#configuring-the-qualitative-distribution-template}
 
-此 **[!UICONTROL Qualitative distribution]** 範本可讓您建立所有資料類型的統計資料（例如公司名稱、電子郵件網域）。
+的 **[!UICONTROL Qualitative distribution]** 模板用於建立所有類型資料（如公司名稱、電子郵件域）的統計資訊。
 
-可用於透過 **[!UICONTROL Qualitative distribution]** 範本於 [在表格中顯示資料](#displaying-data-in-the-table). 如需完整範例，請參閱 [分析人口](../../reporting/using/use-cases.md#analyzing-a-population).
+可用於通過 **[!UICONTROL Qualitative distribution]** 模板的詳細資訊 [在表中顯示資料](#displaying-data-in-the-table)。 完整示例詳見 [分析人口](../../reporting/using/use-cases.md#analyzing-a-population)。
 
-使用描述性分析精靈分析資料時，可用的選項取決於所選的設定。 下文詳述。
+使用描述性分析嚮導分析資料時，可用選項取決於所選設定。 下文詳述。
 
 ### 資料綁定 {#data-binning}
 
-選取要顯示的變數時，您可以定義資料捆綁，換句話說，就是為選取的資料設定分組條件。
+選擇要顯示的變數時，可以定義資料綁定，換句話說，為所選資料配置分組標準。
 
 ![](assets/s_ncs_user_report_wizard_031.png)
 
 >[!NOTE]
 >
->當使用聚合計算與計算有關的欄位時，請檢查 **[!UICONTROL The data is already aggregated]** 來改善效能。
+>當計算所涉及的欄位使用聚合計算時，檢查 **[!UICONTROL The data is already aggregated]** 來改善效能。
 
-選項會因欄位內容而異：
+選項將因欄位內容而異：
 
-* **[!UICONTROL None]** :此選項可讓您顯示變數的所有可用值，而不進行二進位。
+* **[!UICONTROL None]** :此選項允許您顯示變數的所有可用值，而不進行綁定。
 
    >[!CAUTION]
    >
-   >此選項應謹慎使用：它可能對報表和機器效能產生重大影響。
+   >應謹慎使用此選項：它會對報告和機器效能產生重大影響。
 
-* **[!UICONTROL Auto]** :此選項可讓您顯示n個最常顯示的值。 系統會自動計算變數，且每個變數代表變數與垃圾桶數量之比的百分比。 對於數值，Adobe Campaign會自動產生n個類別，以將資料排序。
-* **[!UICONTROL Manual]** :此選項的運作方式如下 **[!UICONTROL Auto]** 選項，但您可以手動設定這些值。 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕（位於值表的右側）。
+* **[!UICONTROL Auto]** :此選項允許您顯示n個最常表示的值。 這些變數會自動計算，每個變數表示變數與bin數的百分比。 對於數值，Adobe Campaign會自動生成n個類以將資料排序。
+* **[!UICONTROL Manual]** :此選項的操作方式與 **[!UICONTROL Auto]** 選項，但可以手動設定這些值。 要執行此操作，請按一下 **[!UICONTROL Add]** 按鈕。
 
-   Adobe Campaign可在個人化前自動初始化值：要執行此操作，請輸入要生成的框數，然後按一下 **[!UICONTROL Initialize with]** 連結，如下所示：
+   值可由Adobe Campaign在個性化之前自動初始化：為此，請輸入要生成的框數，然後按一下 **[!UICONTROL Initialize with]** 連結，如下所示：
 
    ![](assets/reporting_descriptive_initialize.png)
 
-   然後根據您的需求調整內容：
+   然後根據您的需要調整您的內容：
 
    ![](assets/reporting_descriptive_initialize_perso.png)
 
-   根據所需的精準度，包含日期的欄位可依時間、日、月、年等分組。
+   根據所需的精度級別，包含日期的欄位可以按時間、日、月、年等分組。
 
    ![](assets/reporting_descriptive_group_by_year.png)
 
-* **[!UICONTROL Modulo]** :可讓您建立值群組，以防數值出現。 例如，值為10的模可讓您建立值以十為單位變更的間隔。
+* **[!UICONTROL Modulo]** :允許您建立數值組（如果數值）。 例如，值為10的模允許您建立一個值間隔，該間隔將更改10 x 10。
 
    ![](assets/reporting_descriptive_initialize_modulo.png)
 
-   此範例可讓您依年齡群組檢視收件者的劃分。
+   此示例允許您按年齡組查看收件人的細分。
 
    ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
-### 在表格中顯示資料 {#displaying-data-in-the-table}
+### 在表中顯示資料 {#displaying-data-in-the-table}
 
-使用工具列來個人化表格中變數的顯示：刪除列、以行顯示資料而非以列顯示資料、將列向左或向右移動、查看或更改值計算。
+使用工具欄可個性化表中變數的顯示：刪除列、以行而不是列顯示資料、將列移到左或右、查看或更改值計算。
 
 ![](assets/s_ncs_user_report_wizard_toolbar.png)
 
-視窗的上方區段可讓您選取顯示設定。
+窗口的上部部分允許您選擇顯示設定。
 
-您可以顯示或隱藏統計資訊和子總計的名稱，並選擇統計資訊的方向。 有關詳細資訊，請參閱 [分析報表顯示設定](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
+您可以顯示或隱藏統計資訊的名稱和子合計，並選擇統計資訊的方向。 有關此內容的詳細資訊，請參閱 [分析報告顯示設定](../../reporting/using/processing-a-report.md#analysis-report-display-settings)。
 
 ### 在圖表中顯示資料 {#displaying-data-in-the-chart}
 
-在描述性分析精靈的第一個步驟中，您可以選擇僅以圖表形式顯示資料，不含表格。 在這種情況下，配置圖形時必須完成變數選擇。 您必須先選取要顯示的變數數，並從相關資料庫選取欄位。
+在說明性分析嚮導的第一步中，您可以選擇只以圖表形式顯示資料，而不使用表。 在這種情況下，配置圖形時必須進行變數選擇。 必須先選擇要顯示的變數數，然後從相關資料庫中選擇欄位。
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
-然後選取所需的圖表類型。
+然後選擇所需的圖表類型。
 
 ![](assets/s_ncs_user_report_wizard_024.png)
 
 >[!NOTE]
 >
->您可以同時在圖表和表格中顯示變數。 若要這麼做，請在 **[!UICONTROL Table configuration]** 窗口。 按一下 **[!UICONTROL Next]** 並在「圖表配置」窗口中選擇圖表類型。 如果子維在表格中定義，則它們不會顯示在圖表中。
+>可以同時在圖表和表中顯示變數。 為此，請在 **[!UICONTROL Table configuration]** 的子菜單。 按一下 **[!UICONTROL Next]** 並在圖表配置窗口中選擇圖表類型。 如果子維在表中定義，則它們不會顯示在圖表中。
 
 按一下 **[!UICONTROL Variants]** 連結以修改圖表屬性。
 
@@ -140,98 +137,98 @@ ht-degree: 1%
 
 ### 統計計算 {#statistics-calculation}
 
-描述性分析精靈可讓您計算資料的數種統計資料類型。 預設情況下，僅配置一個簡單計數。
+使用說明性分析嚮導可以計算資料的幾種類型的統計資訊。 預設情況下，只配置一個簡單計數。
 
-按一下 **[!UICONTROL Add]** 來建立新的統計資料。
+按一下 **[!UICONTROL Add]** 的子菜單。
 
 ![](assets/reporting_descriptive_create_stat.png)
 
-可執行下列操作：
+可以執行以下操作：
 
-* **[!UICONTROL Count]** 要計算要聚合的欄位的所有非空值，包括重複值（聚合欄位）,
-* **[!UICONTROL Average]** 計算數值欄位中的平均值，
-* **[!UICONTROL Minimum]** 計算數值欄位中值的最小值，
-* **[!UICONTROL Maximum]** 計算數值欄位中值的最大值，
-* **[!UICONTROL Sum]** 計算數值欄位中值的總和，
-* **[!UICONTROL Standard deviation]** 計算傳回值在平均值中的散布情況，
-* **[!UICONTROL Row percentage distribution]** 要計算列中值和行中值的比率（僅適用於表）,
-* **[!UICONTROL Column percentage distribution]** 要計算行中值與列中值的比率（僅適用於表）,
-* **[!UICONTROL Total percentage distribution]** 計算值所關注的收件者分佈，
+* **[!UICONTROL Count]** 計算要聚合的欄位的所有非空值，包括重複值（聚合欄位）,
+* **[!UICONTROL Average]** 計算數值域中的平均值，
+* **[!UICONTROL Minimum]** 計算數值域中的最小值，
+* **[!UICONTROL Maximum]** 計算數值域中的最大值，
+* **[!UICONTROL Sum]** 計算數值域中的值之和，
+* **[!UICONTROL Standard deviation]** 計算返回值在平均值附近的散落情況，
+* **[!UICONTROL Row percentage distribution]** 計算列中的值與行中的值的比率（僅適用於表）,
+* **[!UICONTROL Column percentage distribution]** 計算行中的值與列中值的比率（僅適用於表）,
+* **[!UICONTROL Total percentage distribution]** 計算值所關注的接收者的分佈，
 
    ![](assets/s_ncs_user_report_wizard_026.png)
 
-* **[!UICONTROL Calculated field]** 以建立個人化運算子（僅適用於表格）。 此 **[!UICONTROL User function]** 欄位可讓您輸入要套用至資料的計算。
+* **[!UICONTROL Calculated field]** 建立個性化運算子（僅適用於表）。 的 **[!UICONTROL User function]** 欄位中，您可以輸入要應用於資料的計算。
 
-   範例：根據國家/地區和來源計算每位客戶的平均購買量
+   示例：根據國家/地區和原產計算每個客戶的平均採購額
 
    ![](assets/report_compute_data_sample1.png)
 
-   若要在表格中顯示上述資訊，您需要建立計算欄位，以儲存每位客戶的平均購買量。
+   要在表中顯示上述資訊，您需要建立一個計算欄位來儲存每個客戶的平均採購額。
 
    操作步驟：
 
-   1. 計算購買總計。
+   1. 計算採購總額。
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. 此統計資料不會顯示在表格中。 您需要取消核取 **[!UICONTROL Display in the table]** 選項 **[!UICONTROL Advanced]** 標籤。
+   1. 此統計資訊將不顯示在表中。 您需要取消選中 **[!UICONTROL Display in the table]** 選項 **[!UICONTROL Advanced]** 頁籤。
 
       ![](assets/report_compute_data_sample3.png)
 
-   1. 建立新 **[!UICONTROL Calculated field]** 鍵入統計值，並在 **[!UICONTROL User function]** 欄位： **@purchases/@count**.
+   1. 新建 **[!UICONTROL Calculated field]** 鍵入統計資訊，並在 **[!UICONTROL User function]** 欄位： **@purchases/@count**。
 
       ![](assets/report_compute_data_sample4.png)
 
 ### 顯示報表 {#displaying-the-report}
 
-精靈的最後一個步驟可讓您顯示報表，亦即已設定的表格或圖表。
+嚮導的最後一步允許您顯示報告，即已配置的表或圖表。
 
-當報表包含表格時，將顯示計算結果單元格。 結果越高，顏色就越濃。
+當報表包含表時，計算結果單元格被著色。 結果越高，顏色越濃。
 
 ![](assets/report_compute_data_sample1.png)
 
-可以更改結果的佈局。 若要這麼做，請以滑鼠右鍵按一下相關變數，然後從捷徑功能表中選取輸入。
+可以更改結果的佈局。 為此，按一下右鍵相關變數並從快捷菜單中選取輸入。
 
 ![](assets/s_ncs_user_report_wizard_029.png)
 
-當報表包含圖表時，圖例的標籤可讓您篩選顯示的資訊：按一下標籤以啟用/停用圖表中的顯示。
+當報表包含圖表時，圖例的標籤允許您過濾顯示的資訊：按一下標籤以啟用/禁用圖表中的顯示。
 
 ![](assets/report_display_data_in_graph.png)
 
-## 設定量化分佈範本 {#configuring-the-quantitative-distribution-template}
+## 配置定量分發模板 {#configuring-the-quantitative-distribution-template}
 
-若要自行產生描述性分析，請選取 **從範本新增描述性分析** 選項。
+要自行生成描述性分析，請選擇 **從模板新建描述性分析** 的子菜單。
 
-此 **[!UICONTROL Quantitative distribution]** 可讓您產生可測量或計算之資料的統計資料（例如發票金額、收件者年齡）的範本。
+的 **[!UICONTROL Quantitative distribution]** 用於生成可以測量或計算的資料（如發票額、收件人的年齡）的統計資訊的模板。
 
-透過 **[!UICONTROL Quantitative distribution]** 範本在實施範例中詳細說明 [定量資料分析](../../reporting/using/use-cases.md#quantitative-data-analysis).
+通過 **[!UICONTROL Quantitative distribution]** 模板在實現示例中詳細說明 [定量資料分析](../../reporting/using/use-cases.md#quantitative-data-analysis)。
 
-使用描述性分析精靈建立量化報表時可用的選項在下文詳細說明。
+使用描述性分析嚮導建立定量報告時可用的選項如下所詳述。
 
-首先，選取計算所關注的變數：
+首先選擇計算所關注的變數：
 
 ![](assets/s_ncs_user_report_wizard_017.png)
 
-依預設，Adobe Campaign提供一系列統計資料，供您針對選取的資料進行計算。 您可以根據自己的需要更改此清單、添加到清單或刪除統計資訊。
+預設情況下，Adobe Campaign提供一系列統計資訊，以便為選定資料計算。 您可以根據需要更改此清單、添加到清單或刪除統計資訊。
 
-可執行下列操作：
+可以執行以下操作：
 
-* **[!UICONTROL Count]** 要計算要聚合的欄位的所有非空值，包括重複值（聚合欄位）,
-* **[!UICONTROL Average]** 計算數值欄位中的平均值，
-* **[!UICONTROL Minimum]** 計算數值欄位中值的最小值，
-* **[!UICONTROL Maximum]** 計算數值欄位中值的最大值。
-* **[!UICONTROL Sum]** 計算數值欄位中值的總和，
-* **[!UICONTROL Standard deviation]** 來計算傳回值在平均值周圍的分佈。
-* **[!UICONTROL Number of missing values]** 以計算沒有定義值的數值欄位數。
-* **[!UICONTROL Decile distribution]** 分佈傳回的值，使得每個都代表數1/10欄位中的第個值。
-* **[!UICONTROL Custom distribution]** 分配根據用戶定義閾值返回的值。
+* **[!UICONTROL Count]** 計算要聚合的欄位的所有非空值，包括重複值（聚合欄位）,
+* **[!UICONTROL Average]** 計算數值域中的平均值，
+* **[!UICONTROL Minimum]** 計算數值域中的最小值，
+* **[!UICONTROL Maximum]** 以計算數字欄位中的值的最大值。
+* **[!UICONTROL Sum]** 計算數值域中的值之和，
+* **[!UICONTROL Standard deviation]** 計算返回的值在平均值周圍的分佈情況。
+* **[!UICONTROL Number of missing values]** 計算沒有定義值的數字欄位數。
+* **[!UICONTROL Decile distribution]** 分配返回的值，使每個值代表數字欄位中值的十分之一。
+* **[!UICONTROL Custom distribution]** 分配基於用戶定義的閾值返回的值。
 
-   此 **[!UICONTROL Detail...]** 按鈕可讓您編輯統計資料，並視需要個人化其計算或顯示：
+   的 **[!UICONTROL Detail...]** 按鈕，您可以編輯統計資訊，並根據需要個性化其計算或顯示：
 
    ![](assets/s_ncs_user_report_wizard_030.png)
 
-   精靈的最後一個步驟會顯示量化分析報表。
+   嚮導的最後一步顯示了定量分析報告。
 
    ![](assets/reporting_descriptive_view_report.png)
 
-   若要變更報表，請參閱 [處理報表](../../reporting/using/processing-a-report.md).
+   要更改報告，請參閱 [處理報告](../../reporting/using/processing-a-report.md)。

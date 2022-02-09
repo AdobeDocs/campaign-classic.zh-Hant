@@ -1,48 +1,46 @@
 ---
 product: campaign
-title: 關於描述性分析
-description: 關於描述性分析
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: 開始說明性分析
+description: 開始說明性分析
+feature: Reporting
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 4%
+source-wordcount: '201'
+ht-degree: 0%
 
 ---
 
-# 關於描述性分析{#about-descriptive-analysis}
+# 開始說明性分析{#about-descriptive-analysis}
 
 ![](../../assets/common.svg)
 
-為了對資料庫中的資料產生統計資料，請使用專用精靈建立描述性分析報告，並根據您的需求調整其內容和呈現方式。
+為了生成資料庫中資料的統計資訊，請使用專用嚮導建立描述性分析報告，並根據您的需要調整其內容和演示文稿。
 
-這些報告涉及人口，應僅用於分析小資料量。
+這些報告涉及大眾，只應用於分析小資料量。
 
-您可以產生定量或定性分析報告。 定性分析使您能夠按照以下方式表示資料：
+可以生成定量或定性分析報告。 定性分析使您能夠按如下方式表示資料：
 
-* 表格和色階分佈圖：
+* 表和直方圖：
 
    ![](assets/reporting_descriptive_sample_1.png)
 
-* 累積值，不含表格：
+* 累積值（不含表）:
 
    ![](assets/reporting_descriptive_sample_3.png)
 
-* 依業務細分
+* 按業務細分
 
    ![](assets/reporting_descriptive_sample_2.png)
 
-定量分析提供關於所選資料的總體統計資料，如下所示：
+定量分析提供關於選定數字資料的總體統計，如下所示：
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-這些報表是透過描述性分析精靈建立，該精靈可依據不同步驟，讓您選擇要建立的報表類型以及資料和配置。 報告會顯示在最後一個步驟中。 如有必要，可以發佈報告並與其他運算子共用，打印、導出為Excel、PDF或OpenDocument格式。
+這些報告是通過描述性分析嚮導建立的，該嚮導基於各種步驟，允許您選擇要建立的報告類型以及資料和佈局。 報告將顯示在最後一步中。 如有必要，可以發佈報告並與其他運算子共用，打印、以Excel、PDF或OpenDocument格式導出。
 
-描述性分析精靈的功能不如Adobe Campaign報表強大，但可快速概述資料庫內容或選取資料。
+描述性分析嚮導的功能不如Adobe Campaign報告強大，但它們確實提供了資料庫內容的快速概述或資料選擇。
 
 >[!CAUTION]
 >
->描述性分析不允許您探索大資料量。
+>描述性分析不允許您瀏覽大資料卷。
