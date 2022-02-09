@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
@@ -17,18 +17,18 @@ ht-degree: 15%
 
 ![](../../assets/common.svg)
 
-**[!UICONTROL Jump]**  — 類型圖形對象用於提高複雜圖的可讀性，特別是具有交叉轉變的圖。
+**[!UICONTROL Jump]** -type圖形對象用於改進複雜圖的可讀性，特別是具有交叉過渡的圖。
 
-跳躍是沒有箭頭的轉變。
+跳轉是沒有箭頭的過渡。
 
-它們會從一個活動移至另一個活動，如下列範例所示：
+它們從一個活動轉到另一個活動，如下例所示：
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
-對於每個「起始點」類型轉變，必須定位「終止點」類型轉變。
+對於每個「起始點」類型轉換，必須定位「終止點」類型轉換。
 
-您可以在相同的工作流程中插入數個起始點和終點跳躍。 它們由必須在參數中輸入的數字來識別：
+可以在同一工作流中插入多個起點和終點跳轉。 它們由必須在參數中輸入的數字標識：
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-要提高圖表的可讀性，可以更改與跳躍相關聯的影像以顯示相關數字。 請參閱 [管理活動影像](managing-activity-images.md).
+為了提高圖的可讀性，可以更改與跳轉相關的影像以顯示相關數字。 請參閱 [更改活動映像](managing-activity-images.md)。

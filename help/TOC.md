@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: ht
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 100%
       + [工作流程中的 JavaScript 程式碼範例](workflow/using/javascript-in-workflows.md)
       + [存取外部資料庫](workflow/using/accessing-an-external-database--fda-.md)
       + [管理權限](workflow/using/managing-rights.md)
-      + [管理活動影像](workflow/using/managing-activity-images.md)
+      + [更改活動映像](workflow/using/managing-activity-images.md)
       + [管理時區](workflow/using/managing-time-zones.md)
       + [技術工作流程](workflow/using/about-technical-workflows.md)
 + 管理優惠方案{#managing-offers}

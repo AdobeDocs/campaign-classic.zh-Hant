@@ -6,29 +6,29 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 08af51345c047612b010c82646cba99becfda459
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 3%
+source-wordcount: '270'
+ht-degree: 2%
 
 ---
 
-# 關於動作活動{#about-action-activities}
+# 工作流中的操作活動{#about-action-activities}
 
 ![](../../assets/common.svg)
 
-* **傳送**:可讓您設定傳送動作。 請參閱 [傳送](delivery.md) 區段。
-* **傳遞控制**:可讓您開始、暫停或停止傳送。 請參閱 [傳遞控制](delivery-control.md) 區段。
-* **持續傳遞**:可讓您從活動中指定的案例開始傳送。 請參閱 [持續傳遞](continuous-delivery.md) 區段。
-* **循環傳送**:可讓您設定行銷活動中的傳遞範本發生次數。 請參閱 [循環傳送](recurring-delivery.md).
-* **跨通道傳遞**:可讓您在對應通道上設定傳送。 請參閱 [跨通道傳遞](cross-channel-deliveries.md) 區段。
-* **本地批准**:可讓您在分散式行銷內容中執行核准和定位通知（選用模組）。 請參閱 [本地批准](local-approval.md).
-* **資料載入(RDBMS)**:可讓您存取外部資料庫以取得資料。 請參閱 [資料載入(RDBMS)](data-loading--rdbms-.md) 區段。
-* **載入(SOAP)**:可讓您透過SOAP呼叫收集資料。 請參閱 [載入(SOAP)](loading--soap-.md).
-* **資料載入（檔案）**:可讓您存取外部資料來源以使用其資料。 請參閱 [資料載入（檔案）](data-loading--file-.md) 區段。
-* **內容管理**:可讓您建立或自訂內容。 請參閱 [內容管理](content-management.md) 區段。
-* **擷取（檔案）**:可讓您從檔案中的表格擷取資料。 請參閱 [擷取（檔案）](extraction--file-.md) 區段。
-* **SQL程式碼和JavaScript程式碼**:執行活動中指定的SQL指令碼或JavaScript。 請參閱 [SQL程式碼和JavaScript程式碼](sql-code-and-javascript-code.md).
-* **SQL資料管理**:可讓您編寫自己的SQL查詢以建立和填入工作表。 請參閱 [SQL資料管理](sql-data-management.md).
-* **nlserver模組**:以其參數啟動nlserver模組。 請參閱 [Nlserver模組](nlserver-module.md).
-* **更新匯總**:可讓您選取匯總更新模式（完整或部分）。 請參閱 [更新匯總](update-aggregate.md).
+* **交貨**:用於配置傳遞操作。 請參閱 [交貨](delivery.md) 的子菜單。
+* **交貨控制**:讓您開始、暫停或停止交貨。 請參閱 [交貨控制](delivery-control.md) 的子菜單。
+* **連續交付**:允許您從活動中指定的方案開始傳遞。 請參閱 [連續交付](continuous-delivery.md) 的子菜單。
+* **循環交付**:允許您在市場活動中配置交貨模板實例。 請參閱 [循環交付](recurring-delivery.md)。
+* **跨渠道交付**:允許您在相應渠道上配置傳遞。 請參閱 [跨渠道交付](cross-channel-deliveries.md) 的子菜單。
+* **本地批准**:允許您在分佈式市場營銷上下文（可選模組）中執行審批和定位通知。 請參閱 [本地批准](local-approval.md)。
+* **資料載入(RDBMS)**:允許您訪問外部資料庫以獲取資料。 請參閱 [資料載入(RDBMS)](data-loading--rdbms-.md) 的子菜單。
+* **載入(SOAP)**:允許您通過SOAP調用收集資料。 請參閱 [載入(SOAP)](loading--soap-.md)。
+* **資料載入（檔案）**:允許您訪問外部資料源以使用其資料。 請參閱 [資料載入（檔案）](data-loading--file-.md) 的子菜單。
+* **內容管理**:允許您建立或自定義內容。 請參閱 [內容管理](content-management.md) 的子菜單。
+* **提取（檔案）**:用於從檔案中的表中提取資料。 請參閱 [提取（檔案）](extraction--file-.md) 的子菜單。
+* **SQL代碼和JavaScript代碼**:執行活動中指定的SQL指令碼或JavaScript。 請參閱 [SQL代碼和JavaScript代碼](sql-code-and-javascript-code.md)。
+* **SQL資料管理**:允許您編寫自己的SQL查詢以建立和填充工作表。 請參閱 [SQL資料管理](sql-data-management.md)。
+* **nlserver模組**:使用nlserver模組的參數啟動nlserver模組。 請參閱 [Nlserver模組](nlserver-module.md)。
+* **更新聚合**:允許您選擇聚合更新模式（完全或部分）。 請參閱 [更新聚合](update-aggregate.md)。
