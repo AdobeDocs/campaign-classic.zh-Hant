@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: 隱私權
-description: 進一步了解有關隱私權的最佳實務。
-audience: installation
-content-type: reference
-topic-tags: prerequisites-and-recommendations-
+description: 瞭解有關隱私的最佳做法的更多資訊
+feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -17,15 +15,15 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-## 隱私權要求
+## 隱私請求
 
 Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、CCPA 等）。
 
-請參閱 [本頁](../../platform/using/privacy-management.md) 如需隱私權管理的一般資訊，以及Adobe Campaign中的實作步驟。 您也會找到最佳實務，並概述使用者程式和角色。
+請參閱 [此頁](../../platform/using/privacy-management.md) 有關隱私管理的一般資訊以及Adobe Campaign的實施步驟。 您還將找到最佳實踐，並概述用戶流程和角色。
 
-## URL個人化 {#url-personalization}
+## URL個性化 {#url-personalization}
 
-將個人化連結新增至內容時，請一律避免URL的主機名稱部分出現任何個人化，以避免潛在的安全漏洞。 所有URL屬性中一律不應使用下列範例&lt;`a href="">` 或 `<img src="">`:
+在向內容添加個性化連結時，始終避免在URL的主機名部分中出現任何個性化設定，以避免潛在的安全漏洞。 以下示例不應用於所有URL屬性&lt;`a href="">` 或 `<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -35,71 +33,71 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 ### 建議
 
-若要驗證並確認您未使用上述項目，請透過 [Campaign一般查詢編輯器](../../platform/using/steps-to-create-a-query.md) 或在 [查詢活動](../../workflow/using/query.md).
+要驗證並確保未使用上述功能，請通過以下方式運行跟蹤URL表的查詢： [市場活動一般查詢編輯器](../../platform/using/steps-to-create-a-query.md) 或建立具有篩選條件的工作流 [查詢活動](../../workflow/using/query.md)。
 
 範例:
 
-1. 建立工作流程並新增「查詢」活動。 了解更多。
+1. 建立工作流並添加查詢活動。 了解更多.
 
-1. 開啟「查詢」活動，並依照下列方式在nmsTrackingUrl表格上建立篩選器：源URL以http://&lt;%開頭，或源URL以https://&lt;%開頭。
+1. 開啟「查詢」活動，並在nmsTrackingUrl表上建立篩選器，如下所示：源URL以http://&lt;%開頭，源URL以https://&lt;%開頭。
 
-1. 執行工作流程並檢查是否有結果。
+1. 運行工作流並檢查是否有結果。
 
-1. 若存在，請開啟輸出轉變以檢視URL清單。
+1. 如果是，請開啟輸出轉換以查看URL清單。
 
 <img src="assets/privacy-query-dynamic-url.png">
 
 ### URL簽名
 
-為了改善安全性，引入了追蹤電子郵件中連結的簽名機制。 Build 19.1.4(9032@3a9dc9c)和Campaign 20.2中提供此功能。此功能預設為啟用。
+為了提高安全性，引入了一種電子郵件連結的簽名機制。 可在Build 19.1.4(9032@3a9dc9c)和Campaig 20.2中找到。預設情況下啟用此功能。
 
 >[!NOTE]
 >
->點按格式錯誤的簽名URL時，會傳回此錯誤：&quot;未找到請求的URL &#39;..&#39;。&quot;
+>按一下格式錯誤的簽名URL時，將返回以下錯誤：&quot;找不到請求的URL&quot;。..&quot;。&quot;
 
-此外，自Campaign 20.2和 [!DNL Gold Standard] 版本中，您可以使用增強功能來停用先前組建中產生的URL。 此功能預設為停用。 您可以聯絡 [客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 啟用此功能。
+此外，自運動20.2和 [!DNL Gold Standard] 版本中，您可以使用增強功能來禁用以前生成的URL。 預設情況下禁用此功能。 你可以 [客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 啟用此功能。
 
-如果您是在19.1.4組建版本上執行，則使用追蹤連結的推播通知傳送或使用錨點標籤的傳送可能會發生問題。 若有，建議您停用URL簽章。
+如果您在19.1.4版本上運行，則可能會遇到使用跟蹤連結推送通知交貨或使用錨點標籤交貨的問題。 如果是，建議您禁用URL簽名。
 
-無論您是在內部執行還是在混合架構中執行Campaign，您都必須聯絡 [客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 來停用URL簽名。
+無論您是在內部或混合體系結構中運行活動，您都必須聯繫 [客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 禁用URL簽名。
 
-如果您以混合架構執行Campaign，在啟用URL簽章之前，請確定托管的中間來源執行個體已升級如下：
-* 在內部部署行銷執行個體之前
-* 與內部部署行銷執行個體相同的版本，或升級至稍高的版本
+如果在混合體系結構中運行市場活動，則在啟用URL簽名之前，請確保已按如下方式升級托管的中間採購實例：
+* 在本地市場營銷實例之前
+* 到與內部營銷實例相同的版本或稍高的版本
 
 否則，可能會出現以下問題：
-* 在升級中間來源例項之前，URL會透過此例項傳送，且無簽名。
-* 在中間來源執行個體升級且兩個執行個體上都啟用URL簽章後，先前未透過簽章而傳送的URL會遭拒。 原因是行銷執行個體提供的追蹤檔案會要求籤名。
+* 在升級中間採購實例之前，URL將通過此實例發送，但不會簽名。
+* 升級中間採購實例並在兩個實例上啟用URL簽名後，以前發送的URL沒有簽名，將被拒絕。 原因是由市場營銷實例提供的跟蹤檔案請求籤名。
 
-若要停用先前組建中產生的URL，請同時在所有Campaign伺服器上執行下列步驟：
+要禁用在先前版本中生成的URL，請同時在所有市場活動伺服器上執行以下步驟：
 
-1. 在伺服器配置檔案(serverConf.xml)中，更改 **blockRedirectForUnsignedTrackingLink** to **true**.
+1. 在伺服器配置檔案(serverConf.xml)中，更改 **blockRedirectForUnsignedTrackingLink** 至 **真**。
 1. 重新啟動 **nlserver** 服務。
-1. 在追蹤伺服器上，重新啟動Web伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
+1. 在跟蹤伺服器上，重新啟動Web伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-若要啟用URL簽章，請同時在所有Campaign伺服器上執行下列步驟：
+要啟用URL簽名，請同時在所有市場活動伺服器上執行以下步驟：
 
-1. 在伺服器配置檔案(serverConf.xml)中，更改 **signEmailLinks** to **false**.
+1. 在伺服器配置檔案(serverConf.xml)中，更改 **簽名電子郵件連結** 至 **假**。
 1. 重新啟動 **nlserver** 服務。
-1. 在追蹤伺服器上，重新啟動Web伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
+1. 在跟蹤伺服器上，重新啟動Web伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
 ## 資料限制
 
-您必須確保已驗證的低權限用戶無法訪問加密密碼。 要做到這一點，有兩種主要方式：僅限訪問密碼欄位或限制訪問整個實體（需要生成>= 8770）。
+您必須確保低權限的經過身份驗證的用戶無法訪問加密的密碼。 要做到這一點，主要有兩種方式：僅限制對密碼欄位或整個實體（需要生成>= 8770）的訪問。
 
-此限制可讓您移除密碼欄位，但讓所有使用者都能從介面存取外部帳戶。 請參見[此頁面](../../configuration/using/restricting-pii-view.md)。
+此限制允許您刪除密碼欄位，但允許從介面訪問所有用戶的外部帳戶。 請參見[此頁面](../../configuration/using/restricting-pii-view.md)。
 
-1. 進去 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+1. 進去 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。
 
-1. 建立新 **[!UICONTROL Extension of a schema]**.
+1. 新建 **[!UICONTROL Extension of a schema]**。
 
    ![](assets/privacy-data-restriction.png)
 
-1. 選擇 **[!UICONTROL External Account]** (extAccount)。
+1. 選擇 **[!UICONTROL External Account]** （分機帳戶）。
 
-1. 在最後一個嚮導螢幕中，您可以編輯新的srcSchema以限制對所有密碼欄位的訪問：
+1. 在最後一個嚮導螢幕中，可以編輯新srcSchema以限制對所有密碼欄位的訪問：
 
-   您可以取代主要元素(`<element name="extAccount" ... >`)依據：
+   可以替換主元素(`<element name="extAccount" ... >`)依據：
 
    ```
    <element name="extAccount">
@@ -120,7 +118,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
    </element>
    ```
 
-   因此，您的延伸srcSchema看起來可能像：
+   因此，擴展的srcSchema可以是：
 
    ```
    <srcSchema _cs="External Accounts (cus)" created="2017-05-12 07:53:49.691Z" createdBy-id="0"
@@ -152,21 +150,21 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
    >[!NOTE]
    >
-   >您可以取代 `$(loginId) = 0 or $(login) = 'admin'` with `hasNamedRight('admin')` 允許所有具有管理員權限的使用者查看這些密碼。
+   >可以替換 `$(loginId) = 0 or $(login) = 'admin'` 與 `hasNamedRight('admin')` 允許具有管理員權限的所有用戶查看這些密碼。
 
-## 保護包含PII的頁面
+## 保護包含PII的頁
 
-我們強烈建議內部部署客戶保護可能包含個人資訊的頁面，例如鏡像頁面、網頁應用程式等。
+我們強烈建議內部客戶保護可能包含鏡像頁面、Web應用程式等個人資訊的頁面。
 
-此程式的目標是防止這些頁面被索引，從而避免潛在的安全風險。 以下是一些實用的文章：
+此過程的目標是防止這些頁面被索引，從而避免潛在的安全風險。 以下是一些有用的文章：
 
 * [https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
 * [https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)
 * [https://www.google.com/webmasters/tools/robots-testing-tool](https://www.google.com/webmasters/tools/robots-testing-tool)
 
-若要保護您的頁面，請依照下列步驟操作：
+要保護您的頁面，請執行以下步驟：
 
-1. 在Web伺服器（Apache或IIS）的根目錄中新增robots.txt檔案。 以下是檔案的內容：
+1. 在Web伺服器（Apache或IIS）的根目錄下添加robots.txt檔案。 下面是檔案的內容：
 
    ```
    # Make changes for all web spiders
@@ -174,12 +172,12 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
    *Disallow: /
    ```
 
-   對於IIS，請參閱 [本頁](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   有關IIS，請參閱 [此頁](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files)。
 
-   若使用Apache，您可將檔案置於 **/var/www/robots.txt** (Debian)。
+   對於Apache，可以將檔案放置到 **/var/www/robots.txt** （德比）。
 
-1. 有時會新增 **robots.txt** 檔案在安全性方面不夠。 例如，如果其他網站包含您頁面的連結，則可能會顯示在搜尋結果中。
+1. 有時添加 **robots.txt** 檔案在安全性方面是不夠的。 例如，如果另一個網站包含指向您頁面的連結，則該網站可能會出現在搜索結果中。
 
-除了 **robots.txt** 檔案，建議您新增 **X-Robots-Tag** 頁首。 您可以在Apache或IIS中執行，並在 **serverConf.xml** 設定檔。
+除 **robots.txt** 檔案，建議添加 **X — 機器人 — 標籤** 標題。 您可以在Apache或IIS中執行此操作， **serverConf.xml** 配置檔案。
 
-如需詳細資訊，請參閱 [這篇文章](https://developers.google.com/search/reference/robots_meta_tag).
+有關詳細資訊，請參閱 [這篇文章](https://developers.google.com/search/reference/robots_meta_tag)。

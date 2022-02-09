@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: 關於範本
-description: 關於範本
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: 交貨模板入門
+feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
@@ -17,22 +15,22 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-傳遞設定可儲存在傳遞範本中以供重複使用。 範本可能包含傳送的完整或部分設定。
+交貨配置可以保存在交貨模板中以便被重新使用。 模板可包含傳遞的完整或部分配置。
 
-傳遞範本可依照本章所述手動執行，或根據事件（在設定時間啟動、檔案到達伺服器時啟動等）執行。 傳遞範本可透過 **[!UICONTROL Resources > Templates > Delivery templates]** 節點。
+可以手動執行遞送模板，如本章所述，或根據事件（在設定時間啟動，檔案到達伺服器等）。 可通過 **[!UICONTROL Resources > Templates > Delivery templates]** 的子菜單。
 
 ![](assets/s_user_template_list.png)
 
-範本有兩種類型：
+模板有兩種類型：
 
-1. Adobe Campaign原生傳送範本
+1. Adobe Campaign本地交貨模板
 
-   不得從系統中刪除本機範本。 這些量度包含每個傳送通道的最低設定。 不過，管理員可以限制特定功能或提供預設值給使用者（追蹤啟用、寄件者電子郵件地址等）。 範本清單中以粗體顯示原生案例。 必須複製它們，才能加以修改。
+   不得從系統中刪除本機模板。 它們包括每個傳送渠道的最小配置。 但是，管理員可以限制某些功能或向用戶提供預設值（跟蹤激活、發件人電子郵件地址等）。 模板清單中以粗體顯示本機方案。 必須複製它們才能修改它們。
 
-1. 預先定義的傳遞範本
+1. 預定義的交貨模板
 
-   Adobe Campaign管理員可以建立新的傳遞範本。 操作員（具有適當訪問權限的操作員）或伺服器進程可自動重複使用它們。 例如，您可以設定電子郵件傳遞範本，而當使用者使用此範本建立傳遞時，他們只需輸入文字或HTML內容，然後傳遞；管理員已定義了其他選項。
+   Adobe Campaign管理員可以建立新的交貨模板。 操作員（那些具有適當訪問權限的操作員）或伺服器進程可自動重用它們。 例如，您可以配置電子郵件傳遞模板，當用戶使用此模板建立傳遞時，他們只需輸入文本或HTML內容，然後傳遞；其他選項已由管理員定義。
 
 >[!NOTE]
 >
->可用的範本取決於您的存取權限、執行個體設定和內容。 例如，當您建立資訊服務時，可以連結確認訊息的傳送範本：然後，您只能訪問其目標映射為訂閱映射的模板。 有關詳細資訊，請參閱 [選擇目標映射](selecting-a-target-mapping.md) 和 [關於服務與訂閱](about-services-and-subscriptions.md).
+>可用模板取決於您的訪問權限、實例配置和上下文。 例如，在建立資訊服務時，您可以連結確認消息的傳遞模板：然後，您只能訪問其目標映射為訂閱映射的模板。 有關此內容的詳細資訊，請參閱 [選擇目標映射](selecting-a-target-mapping.md) 和 [服務和訂閱](about-services-and-subscriptions.md)。

@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: 套用規則
-description: 套用規則
+title: 應用類型規則
+description: 瞭解如何應用類型學規則
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '983'
 ht-degree: 9%
 
 ---

@@ -1,111 +1,110 @@
 ---
 product: campaign
 title: 傳送前先檢查
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: 消息準備好後，在發送前執行所有檢查
+feature: Deliverability
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
+source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---
 
-# 在發送前執行所有檢查 {#perform-all-checks}
+# 發送前執行所有檢查 {#perform-all-checks}
 
 ![](../../assets/common.svg)
 
-在您的訊息準備就緒後，請確定其內容在所有裝置上皆正確顯示，且不會包含任何錯誤，例如錯誤的個人化或中斷的連結。
+一旦您的消息準備就緒，請確保其內容在所有設備上都正確顯示，並且不包含任何錯誤，如錯誤的個性化設定或中斷的連結。
 
-傳送訊息前，也請確定參數和設定與傳送一致。
+在發送郵件之前，還要確保參數和配置與傳遞一致。
 
-## 驗證為何是關鍵 {#validation-is-key}
+## 為什麼驗證是關鍵 {#validation-is-key}
 
-在傳送傳遞前，您必須確保收件者會收到您確實想要傳送的訊息。 若要這麼做，您需要驗證訊息內容和傳送參數。
+在發送傳遞之前，您需要確保您的收件人將收到您確實要發送的郵件。 為此，您需要驗證消息內容和傳遞參數。
 
-此步驟可讓您在傳送至主要目標之前，偵測可能的錯誤並加以修正。
+通過此步驟，您可以檢測可能的錯誤並在將錯誤傳送到主目標之前對其進行修復。
 
-會顯示驗證傳送的步驟 [在本節](steps-validating-the-delivery.md).
+顯示驗證交貨的步驟 [此部分](steps-validating-the-delivery.md)。
 
 ## 收件匣轉譯 {#inbox-and-email-rendering}
 
-收件匣轉譯可讓您在主要電子郵件用戶端上預覽訊息、掃描內容和信譽、探索收件者閱讀訊息的方式。
+收件箱呈現功能使您能夠在主要電子郵件客戶端上預覽郵件、掃描內容和聲譽、發現收件人閱讀郵件的方式。
 
 **提示**:
 
-* 您可以在可接收郵件的不同內容中檢視已傳送的郵件：網站郵件、訊息服務、行動等。
+* 您可以在接收消息的不同上下文中查看已發送的消息：Web郵件、消息服務、移動等。
 
-* 收件匣轉譯功能對於識別您的電子郵件促銷活動是否成功超過主要ISP（網際網路服務提供者）和網路郵件服務的篩選器至關重要。 這類工具會將電子郵件的飛行前副本傳送至測試收件匣網路，讓您了解訊息在這些服務中的顯示或呈現方式。 它們也可能包含報表和程式碼修正選項，可協助您快速識別並進行修正，以改善傳遞能力。
+* 收件箱呈現功能對於確定您的電子郵件活動是否成功地使其超過主要ISP（Internet服務提供商）和Web郵件服務的過濾器至關重要。 此類工具會將電子郵件的印前拷貝發送到test收件箱網路，這樣您就可以看到這些服務中消息的顯示或呈現方式。 它們還可能包括報告和代碼更正選項，這些選項可幫助您快速識別並做出可改善交付性的修復。
 
-深入了解 [在本節](inbox-rendering.md).
+瞭解更多資訊 [此部分](inbox-rendering.md)。
 
-## 校樣訊息 {#proof-messages}
+## 校樣消息 {#proof-messages}
 
-傳送校樣可讓您檢查選擇退出連結、鏡像頁面和任何其他連結、驗證訊息、確認影像已顯示、偵測可能的錯誤等。 您也可能想要檢查您的設計和在不同裝置上呈現。
+通過發送校樣，您可以檢查選擇退出連結、鏡像頁和任何其他連結、驗證消息、驗證影像是否顯示、檢測可能的錯誤等。 您可能還希望檢查不同設備上的設計和呈現。
 
-深入了解 [在本節](steps-validating-the-delivery.md#sending-a-proof).
+瞭解更多資訊 [此部分](steps-validating-the-delivery.md#sending-a-proof)。
 
-## 設定A/B測試傳送 {#a-b-testing-deliveries}
+## 設定A/B測試交貨 {#a-b-testing-deliveries}
 
-如果您有數個電子郵件傳送內容，您可以使用A/B測試來找出哪個版本對目標母體影響最大。
+如果您有幾個用於電子郵件傳遞的內容，則可以使用A/B測試來確定哪個版本將對目標群體產生最大影響。
 
 **提示**:
 
-* 將不同的版本傳送給您的部分收件者
+* 將不同版本發送給您的某些收件人
 
-* 選取成功率最高的，並將其傳送至目標的其餘部分
+* 選擇成功率最高的，並將其發送到目標的其他部分
 
-深入了解 [在本節](get-started-a-b-testing.md).
+瞭解更多資訊 [此部分](get-started-a-b-testing.md)。
 
-## 確認訊息已傳送 {#make-sure-your-message-is-delivered}
+## 確保您的郵件已送達 {#make-sure-your-message-is-delivered}
 
-最後一步，請盡可能提高您的機會並運用Adobe Campaign Classic的強大功能，確保您的訊息確實會傳送給相關的收件者。
+最後一步，盡可能多地利用Adobe Campaign Classic的力量，確保你的資訊確實能送達相關收件人。
 
-### 執行驗證程式
+### 完成驗證過程
 
-您可以定義完整驗證程式，涉及Adobe Campaign運算子和群組，以驗證目標和訊息內容。 這將確保全面監控及控制促銷活動的各種程式：鎖定目標、內容、預算、擷取和傳送校樣。 系統會根據使用者的權限通知使用者、接收校樣，並能驗證或拒絕訊息。 深入了解 [在本節](../../campaign/using/marketing-campaign-approval.md).
+您可以定義一個包含Adobe Campaign運算子和組的完整驗證流程，以驗證目標和消息內容。 這將確保充分監測和控制該運動的各種進程：目標、內容、預算、提取和發送證據。 根據用戶的權限，用戶將獲得通知、接收證明並能夠驗證或拒絕消息。 瞭解更多資訊 [此部分](../../campaign/using/marketing-campaign-approval.md)。
 
-### 使用波段
+### 使用波
 
-您可以使用波數逐步增加傳送的音量。 這樣可避免您的郵件被標示為垃圾訊息，或您想要限制每天的郵件數量。 使用波段，您可以將傳送分為數個批次，而非同時傳送大量訊息。 深入了解 [在本節](steps-sending-the-delivery.md#sending-using-multiple-waves).
+可以逐漸增加使用波發送的體積。 這將避免您的郵件被標籤為垃圾郵件或您希望限制每天的郵件數。 使用波次，您可以將交貨分成幾批，而不是同時發送大量郵件。 瞭解更多資訊 [此部分](steps-sending-the-delivery.md#sending-using-multiple-waves)。
 
-### 排定訊息的優先順序
+### 排定消息的優先順序
 
-您可以指出優先順序層級，以設定傳送的傳送順序。 若要這麼做：
+您可以通過說明優先順序來設定交貨的發送順序。 若要這麼做：
 
-1. 編輯傳送屬性，並選取 **[!UICONTROL Delivery]** 標籤。
+1. 編輯交貨屬性，然後選擇 **[!UICONTROL Delivery]** 頁籤。
 
-1. 定義傳送的優先順序層級，從 **[!UICONTROL Very low]** to **[!UICONTROL Very high]**.
+1. 定義按比例從 **[!UICONTROL Very low]** 至 **[!UICONTROL Very high]**。
 
 >[!NOTE]
 >
->無法定義從傳送內傳送訊息的順序。
+>無法定義從傳遞內發送消息的順序。
 
-### 設定IP相關性
+### 設定IP關聯
 
-為了更好地控制出站SMTP流量，您可以通過定義可用於每個相關性的特定IP地址來管理相關性。 這可讓您將特定傳送的電子郵件數量限制在電腦或輸出地址。 例如，您可以對每個國家/地區或子網域使用一個相關性。 接著，您可以為每個國家建立一個類型，並將每個相關性連結至對應的類型。
+為了更好地控制出站SMTP通信，可以通過定義可用於每個關聯的特定IP地址來管理關聯。 這允許您將特定交貨的電子郵件數量限制到電腦或輸出地址。 例如，您可以對每個國家/地區或子域使用一個關聯。 然後，您可以為每個國家建立一個類型學，並將每個相關性連結到相應的類型學。
 
 您可以：
 
-* 在serverConf.xml設定檔案中定義IP相關性。 [了解更多](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* 在serverConf.xml配置檔案中定義IP關聯。 [了解更多](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* 對於每個IPAfinity元素，聲明可使用的IP地址。 [了解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* 對於每個IPAfinity元素，聲明可以使用的IP地址。 [了解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在 [類型](../../campaign-opt/using/about-campaign-typologies.md) 使用 **[!UICONTROL Managing affinities with IP addresses]** 欄位，將傳遞連結至管理所述相關性的傳遞伺服器(MTA)。 [了解更多](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在 [類型學](../../campaign-opt/using/about-campaign-typologies.md) 你選擇的，用 **[!UICONTROL Managing affinities with IP addresses]** 將遞送連結到管理所述親和性的遞送伺服器(MTA)的欄位。 [了解更多](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
-* 傳送電子郵件後，檢查標題以確認傳送的來源IP位址。 您的電子郵件管理員應可協助您取得標題資訊。
+* 發送電子郵件後，檢查報頭，以驗證發送的IP地址。 您的電子郵件管理員應幫助您獲取標題資訊。
 
-* 針對SMS傳送，請確定SMS通道具有專屬相關性，僅限於 **one** 應用程式伺服器容器。 [了解更多](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* 對於SMS傳遞，請確保SMS通道具有專用關聯限於 **一個** 應用程式伺服器容器。 [了解更多](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
->這些步驟大多只能由專家使用者執行。
+>這些步驟大多只能由專家用戶執行。
 
 ### 使用類型
 
-您可以使用類型規則，根據特定條件排除部分目標。 這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。例如，您可以篩選未到電子報目標的收件者。 深入了解 [在此範例中](../../campaign-opt/using/filtering-rules.md).
+您可以使用分類規則根據特定條件排除目標的一部分。 這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。例如，您可以過濾未達到新聞稿目標的收件人。 瞭解更多資訊 [在此示例中](../../campaign-opt/using/filtering-rules.md)。
 
 ### 避免附件
 
-附件仍然是防止惡意軟體擴散的最常見載體之一，尤其是批量發送時。 包括指向文檔的安全連結，而不是附加文檔。 這可確保額外的安全層，以防止無意的重新分發，並大大降低因郵件大小或安全原因而在入站電子郵件網關處拒絕郵件的機會。
+附件仍然是惡意軟體數量激增的最常見的載體之一，尤其是在批量發送時。 包括指向文檔的安全連結，而不是附加文檔。 這確保了額外的安全層以防止意外的重新分發，並大大降低了由於郵件大小或安全原因而在入站電子郵件網關上拒絕郵件的可能性。

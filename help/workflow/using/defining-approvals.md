@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 定義核准
-description: 通過批准，操作員可以做出管理工作流的決策或確認其繼續執行
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+description: 通過審批，操作員可以做出管理工作流的決策或確認其繼續執行
+feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '841'
 ht-degree: 2%
 
 ---
@@ -19,78 +17,78 @@ ht-degree: 2%
 
 透過核准，操作人員可以決定管理工作流程決策，或確認繼續執行。
 
-訊息會傳送至一組運算子，而工作流程會等待回應再繼續。 工作流程不會停止，且可進行其他操作。 例如，可能有多個同時待批准。
+消息將發送到一組運算子，而工作流在恢復之前等待響應。 工作流未停止，可以執行其他操作。 例如，可能有多個同時審批等待。
 
-核准可包含多個選項供運算子選擇。 但是，可以將選擇的數目限制為一個，以便將要執行的任務提交給操作員，例如執行定位。 然後，操作員可以在執行任務後做出響應（然後恢復進程）。 以下範例說明這些類型的核准：
+審批可以包含多個選項供操作員選擇。 但是，可以將選擇數限制為一個，以便將要執行的任務提交給操作員，例如執行目標。 然後，操作員可以在執行任務後作出響應（然後該過程繼續）。 以下示例說明了這些類型的審批：
 
 ![](assets/validation-1.png)
 
-在操作中，需要批准的所有階段都基於相同的原則。
+在操作中，所有需要批准的階段都基於同一原則。
 
 ![](assets/validation-1-in-op.png)
 
-您可以在此找到核准範例 [節](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+可在中找到批准示例 [此部分](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
-運算子可透過下列兩種方式之一回應：使用電子郵件訊息中連結的網頁或透過主控台進行驗證。
+操作員可以通過以下兩種方式之一進行響應：使用電子郵件中連結的網頁或通過控制台驗證。
 
 >[!NOTE]
 >
->儲存回應後，即無法修改回應。
+>保存響應後，不能修改響應。
 
-## 傳送電子郵件 {#sending-emails}
+## 通過電子郵件批准 {#sending-emails}
 
-可以接收包含到網頁的連結的批准消息，通過該連結可以進行響應。 目標運算子若要接收核准電子郵件，運算子電子郵件地址必須完整。 若非如此，運算子必須使用主控台來回應
+可以接收包含到網頁的連結的批准消息，通過該網頁可以進行響應。 要使目標操作員接收批准電子郵件，必須填寫操作員電子郵件地址。 如果不是這樣，操作員必須使用控制台響應
 
-運算子管理在此中有詳細說明 [節](../../platform/using/access-management.md).
+操作員管理在此中詳述 [節](../../platform/using/access-management.md)。
 
-會持續傳送核准電子郵件。 預設的傳送範本為 **[!UICONTROL notifyAssignee]**:它會儲存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 檔案夾。 此情境可自訂，也建議製作復本並變更每個活動的範本。
+批准電子郵件會持續發送。 預設交貨模板為 **[!UICONTROL notifyAssignee]**:它保存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 的子菜單。 此方案可以自定義，還建議製作副本並更改每個活動的模板。
 
-透過此範本建立的傳送會儲存在 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** 檔案夾。
+通過此模板建立的交貨儲存在 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** 的子菜單。
 
-## 透過主控台核准 {#approval-via-the-console}
+## 通過控制台審批 {#approval-via-the-console}
 
-在操作中，要核准的元素會顯示在促銷活動控制面板上。
+在操作中，要批准的元素將顯示在市場活動控制面板上。
 
-對於技術工作流程，可從 **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** 檔案夾。
+對於技術工作流，可以從中的樹結構訪問用戶可以批准的任務 **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** 的子菜單。
 
 ![](assets/validation-node.png)
 
-## 群組 {#groups}
+## 組 {#groups}
 
-系統會將核准指派給一組運算子、單一運算子或一組透過篩選條件選取的運算子。
+將批准分配給通過過濾條件選擇的一組運算子、單個運算子或一組運算子。
 
-1. 對於最簡單的批准形式，操作員一作出響應，任務就會完成。 其他任何嘗試回應的運算子都會收到通知，通知已有人回應。
-1. 如需多個核准，請參閱 [多重核准](#multiple-approval).
+1. 對於最簡單的批准形式，只要操作員響應，任務就會完成。 任何其他試圖響應的操作員都會收到有人已經響應的通知。
+1. 有關多個批准，請參閱 [多個審批](#multiple-approval)。
 
-批准的運算元組應被指定為角色或職能，而不是指定的個人。 例如，「促銷活動預算」群組比「Harry&#39;s group」更好用。 我們建議在一個組中至少有兩個人可以批准任務。 這樣一來，如果缺一個，另一個就可以回應。
+審批的運算子組應指定為角色或函式，而不是指定個人。 例如，「活動預算」組比「Harry&#39;s組」更可取。 我們建議在一個組中至少有兩個可以批准任務的人。 這樣，如果一個人缺席，另一個人就能做出反應。
 
 ## 過期 {#expirations}
 
-到期日是用於不同活動類型（尤其是核准）的特定轉變。 您可以使用過期時間來在指定時間後觸發動作，而不需要回應。 例如，它也可用於追蹤工作流程並指派核准給不同群組。
+過期是在不同類型的活動中使用的特定轉換，特別是在批准中。 您可以使用過期來在給定時間後觸發操作，而不進行響應。 例如，它還可用於追蹤工作流，並將批准分配給其他組。
 
-活動核准屬性中的第二個索引標籤可讓您定義一或多個到期日。 事實上，您可以定義多個過期類型。
+活動批准屬性中的第二個頁籤允許您定義一個或多個過期時間。 實際上，您可以定義多個到期類型。
 
 ![](assets/expiration.png)
 
-若要新增過期時間，請按一下 **[!UICONTROL Add]**. 會將轉變新增至所建立的每個過期時間。 您可以：
+要添加新過期，請按一下 **[!UICONTROL Add]**。 將轉換添加到所建立的每個過期。 您可以：
 
 * 通過按一下清單中的單元格（或按F2）直接修改典型參數，
-* 或按一下 **[!UICONTROL Detail...]** 按鈕。
+* 或通過按一下 **[!UICONTROL Detail...]** 按鈕
 
 >[!NOTE]
 >
->不必指定到期日的順序，因為到期日會依時間順序處理。
+>在按時間順序處理到期時，無需指定其順序。
 
-此 **[!UICONTROL Do not terminate the task]** 當延遲超出時，選項會讓核准保持作用中。 此模式使得在保持批准活動狀態時可以管理提醒：運算子仍可回應。 此選項預設為停用，這表示任務在過期時即視為已完成，操作員可能不會再回應。
+的 **[!UICONTROL Do not terminate the task]** 選項在延遲超出時使批准處於活動狀態。 此模式允許在保留批准活動時管理提醒：運營商仍然可以響應。 預設情況下，此選項處於禁用狀態，這意味著任務在到期時被視為已完成，並且操作員可能不再響應。
 
 您可以建立四種過期類型：
 
-* **任務開始後延遲**:有效期的計算方式為將指定的時間長度新增至啟動核准的日期。
-* **指定日期之後的延遲**:有效期的計算方式為將時間長度新增至您指定的日期。
-* **指定日期之前的延遲**:有效期的計算方式是從您指定的日期減去時間長度。
-* **按指令碼計算的到期日**:有效期是使用JavaScript計算。
+* **任務開始後延遲**:通過將指定的時間長度添加到激活審批的日期來計算到期時間。
+* **指定日期後的延遲**:通過將時間長度添加到您指定的日期來計算到期時間。
+* **在給定日期之前延遲**:通過從指定的日期中減去時間長度計算到期時間。
+* **按指令碼計算到期時間**:到期時間是使用JavaScript計算的。
 
-   下列範例會計算傳送開始之日24小時前的到期日(以 **vars.deliveryId**):
+   以下示例計算在開始交貨之日(由 **vars.deliveryId**):
 
    ```
    var delivery = nms.delivery.get(vars.deliveryId)
@@ -100,17 +98,17 @@ ht-degree: 2%
    return expiration
    ```
 
-## 多重核准 {#multiple-approval}
+## 多個審批 {#multiple-approval}
 
-多項核准是一種機制，可讓所有核准運算子回應。 會針對每個回應啟動轉變。
+多個批准是一種機制，使所有批准操作員都能做出響應。 為每個響應激活轉換。
 
-多重核准對投票或調查機制有用。 您可以計算答案，並在指定期間後借由增加截止時間來處理結果。
+多項批准對投票或調查機制有用。 您可以通過添加截止時間來計算答案並在指定時段後處理其結果。
 
-## 必要權限 {#required-rights}
+## 所需權限 {#required-rights}
 
-群組中的運算子必須至少具備下列權利，才能回應核准請求：
+組中的操作員至少必須具有以下權限才能響應批准請求：
 
-* 工作流的寫入權限。
-* 對包含要批准的任務的資料夾進行讀寫權限。
+* 寫入工作流權限。
+* 包含要審批的任務的資料夾的讀寫權限。
 
-「工作流程執行」群組具有這些權限。 新增至此群組的運算子有權回應核准請求。
+「工作流執行」組具有這些權限。 添加到此組的操作員有權響應批准請求。

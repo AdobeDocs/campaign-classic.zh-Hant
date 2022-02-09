@@ -1,111 +1,109 @@
 ---
 product: campaign
-title: 設定循環匯入
-description: 了解如何為循環匯入設定工作流程範本。
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+title: 設定定期導入
+description: 瞭解如何為循環導入配置工作流模板。
+feature: Workflows
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
 
 ---
 
-# 設定循環匯入工作流程 {#setting-up-a-recurring-import}
+# 設定週期性匯入工作流程 {#setting-up-a-recurring-import}
 
 ![](../../assets/common.svg)
 
-如果您需要定期匯入具有相同結構的檔案，則使用工作流程範本是最佳作法。
+如果您需要定期導入具有相同結構的檔案，則使用工作流模板是最佳做法。
 
-此範例說明如何預先設定可重複用於匯入來自Adobe Campaign資料庫中CRM之設定檔的工作流程。 如需每個活動所有可能設定的詳細資訊，請參閱 [節](about-activities.md).
+此示例說明如何預先設定可重複使用的工作流，以導入來自Adobe Campaign資料庫中CRM的配置檔案。 有關每個活動的所有可能設定的詳細資訊，請參閱此 [節](about-activities.md)。
 
-1. 從建立新的工作流模板 **[!UICONTROL Resources > Templates > Workflow templates]**.
-1. 新增下列活動：
+1. 從建立新工作流模板 **[!UICONTROL Resources > Templates > Workflow templates]**。
+1. 添加以下活動：
 
-   * **[!UICONTROL Data loading (file)]**:定義包含要匯入之資料的檔案的預期結構。
-   * **[!UICONTROL Enrichment]**:將匯入的資料與資料庫資料進行調解。
-   * **[!UICONTROL Split]**:建立篩選器以根據記錄是否可協調而以不同方式處理記錄。
-   * **[!UICONTROL Deduplication]**:在將傳入檔案插入資料庫之前，先從該檔案中刪除重複資料。
-   * **[!UICONTROL Update data]**:使用匯入的設定檔更新資料庫。
+   * **[!UICONTROL Data loading (file)]**:定義包含要導入的資料的檔案的預期結構。
+   * **[!UICONTROL Enrichment]**:調節導入的資料與資料庫資料。
+   * **[!UICONTROL Split]**:建立篩選器以根據記錄是否可對帳的不同方式處理記錄。
+   * **[!UICONTROL Deduplication]**:在將資料插入資料庫之前，從傳入檔案中消除重複資料。
+   * **[!UICONTROL Update data]**:使用導入的配置檔案更新資料庫。
 
    ![](assets/import_template_example0.png)
 
-1. 設定 **[!UICONTROL Data Loading (file)]** 活動：
+1. 配置 **[!UICONTROL Data Loading (file)]** 活動：
 
-   * 上傳範例檔案以定義預期的結構。 範例檔案應僅包含幾行，但匯入所需的所有欄。 檢查並編輯檔案格式，確保正確設定每欄的類型：文字、日期、整數等。 例如：
+   * 通過上載示例檔案來定義預期的結構。 示例檔案應僅包含幾行，但必須包含導入所需的所有列。 檢查並編輯檔案格式以確保正確設定每列的類型：文本、日期、整數等。 例如：
 
       ```
       lastname;firstname;birthdate;email;crmID
       Smith;Hayden;23/05/1989;hayden.smith@mailtest.com;123456
       ```
 
-   * 在 **[!UICONTROL Name of the file to load]** 部分，選擇 **[!UICONTROL Upload a file from the local machine]** 並將欄位留空。 每次從此模板建立新工作流時，只要與定義的結構對應，您都可以在此處指定所需的檔案。
+   * 在 **[!UICONTROL Name of the file to load]** 選擇 **[!UICONTROL Upload a file from the local machine]** 將欄位留空。 每次根據此模板建立新工作流時，都可以在此處指定所需的檔案，只要該檔案與定義的結構對應。
 
-      您可以使用任何選項，但必須據以修改範本。 例如，若您選取 **[!UICONTROL Specified in the transition]**，您可以新增 **[!UICONTROL File Transfer]** 活動，以擷取要從FTP/SFTP伺服器匯入的檔案。 透過S3或SFTP連線，您也可以透過Adobe即時客戶資料平台，將區段資料匯入Adobe Campaign。 有關詳細資訊，請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+      可以使用任何選項，但必須相應修改模板。 例如，如果您選擇 **[!UICONTROL Specified in the transition]**，您可以 **[!UICONTROL File Transfer]** 活動，以從FTP/SFTP伺服器中檢索要導入的檔案。 通過S3或SFTP連接，您還可以通過Adobe即時客戶資料平台將段資料導入Adobe Campaign。 有關此的詳細資訊，請參閱此 [文檔](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
       ![](assets/import_template_example1.png)
 
-1. 設定 **[!UICONTROL Enrichment]** 活動。 此活動在此背景下的目的是識別傳入的資料。
+1. 配置 **[!UICONTROL Enrichment]** 的子菜單。 此上下文中此活動的目的是標識傳入資料。
 
-   * 在 **[!UICONTROL Enrichment]** 索引標籤，選取 **[!UICONTROL Add data]** 並定義匯入資料與收件者目標維度之間的連結。 在此範例中， **CRM ID** 「自訂」欄位可用來建立連接條件。 使用您需要的欄位或欄位組合，只要它允許識別唯一記錄即可。
-   * 在 **[!UICONTROL Reconciliation]** 標籤，保留 **[!UICONTROL Identify the document from the working data]** 選項。
+   * 在 **[!UICONTROL Enrichment]** 頁籤 **[!UICONTROL Add data]** 並定義導入的資料與目標維的收件人之間的連結。 在此示例中， **CRM ID** custom欄位用於建立聯接條件。 使用需要的欄位或欄位組合，只要它允許標識唯一記錄。
+   * 在 **[!UICONTROL Reconciliation]** 頁籤 **[!UICONTROL Identify the document from the working data]** 複選框。
 
    ![](assets/import_template_example2.png)
 
-1. 設定 **[!UICONTROL Split]** 在一個轉變中擷取已調解的收件者，以及在第二個轉變中具有足夠資料無法調解的收件者。
+1. 配置 **[!UICONTROL Split]** 活動，用於檢索一個轉換中已協調的收件人和在第二個轉換中具有足夠資料的無法協調的收件人。
 
-   之後，可以使用與已調解收件者的轉變來更新資料庫。 然後，如果檔案中有最少一組資訊可用，則具有未知收件者的轉變可用於在資料庫中建立新的收件者項目。
+   然後，可以使用與已協調的收件人進行的轉換來更新資料庫。 如果檔案中有最小資訊集，則具有未知收件人的轉換可用於在資料庫中建立新收件人條目。
 
-   無法調解且沒有足夠資料的收件者會在補充的出站轉變中選取，並可匯出至個別檔案或僅遭忽略。
+   無法協調且沒有足夠資料的收件人將在補充出站轉換中選擇，並可以在單獨的檔案中導出，或只是忽略。
 
-   * 在 **[!UICONTROL General]** 索引標籤，選取 **[!UICONTROL Use the additional data only]** 設為篩選設定，並確定 **[!UICONTROL Targeting dimension]** 會自動設為 **[!UICONTROL Enrichment]**.
+   * 在 **[!UICONTROL General]** 頁籤，選擇 **[!UICONTROL Use the additional data only]** 作為篩選設定，並確保 **[!UICONTROL Targeting dimension]** 自動設定為 **[!UICONTROL Enrichment]**。
 
-      檢查 **[!UICONTROL Generate complement]** 選項，查看資料庫中是否無法插入任何記錄。 如有需要，您可以對補充資料套用進一步處理：檔案匯出、清單更新等。
+      檢查 **[!UICONTROL Generate complement]** 的子菜單。 如果需要，可對補充資料應用進一步處理：檔案導出、清單更新等。
 
-   * 在 **[!UICONTROL Subsets]** 索引標籤，在入站母體上新增篩選條件，以僅選取收件者主索引鍵不等於0的記錄。 這樣，在該子集中將選擇與資料庫的收件人協調的檔案中的資料。
+   * 在 **[!UICONTROL Subsets]** 頁籤，在入站人口中添加篩選條件，以僅選擇收件人主鍵不等於0的記錄。 這樣，在該子集中選擇與來自資料庫的接收者協調的檔案中的資料。
 
       ![](assets/import_template_example3.png)
 
-   * 添加第二個子集，以選擇具有足夠資料可插入資料庫的未協調記錄。 例如：電子郵件地址、名字和姓氏。
+   * 添加第二個子集，該子集選擇具有足夠資料要插入資料庫的未協調記錄。 例如：電子郵件地址、名字和姓氏。
 
-      子集按其建立順序進行處理，這意味著當處理此第二子集時，已存在於資料庫中的所有記錄都已在第一子集中被選擇。
+      子集按其建立順序進行處理，這意味著當處理此第二子集時，已存在於資料庫中的所有記錄都已在第一子集中選定。
 
       ![](assets/import_template_example3_2.png)
 
-   * 未在前兩個子集中選擇的所有記錄都將在 **[!UICONTROL Complement]**.
+   * 未在前兩個子集中選擇的所有記錄將在 **[!UICONTROL Complement]**。
 
-1. 設定 **[!UICONTROL Update data]** 位於 **[!UICONTROL Split]** 先前設定的活動。
+1. 配置 **[!UICONTROL Update data]** 位於 **[!UICONTROL Split]** 活動。
 
-   * 選擇 **[!UICONTROL Update]** as **[!UICONTROL Operation type]** 因為入站轉變只包含資料庫中已存在的收件者。
-   * 在 **[!UICONTROL Record identification]** 部分，選擇 **[!UICONTROL Using reconciliation keys]** 和定義目標維度與 **[!UICONTROL Enrichment]**. 在此範例中， **CRM ID** 已使用自訂欄位。
-   * 在 **[!UICONTROL Fields to update]** 區段中，指定「收件者」維度中的欄位，以使用檔案中對應欄的值更新。 如果檔案列的名稱與收件人維欄位的名稱相同或幾乎相同，則可以使用魔術棒按鈕自動匹配不同欄位。
+   * 選擇 **[!UICONTROL Update]** 如 **[!UICONTROL Operation type]** 因為入站轉換僅包含資料庫中已存在的收件人。
+   * 在 **[!UICONTROL Record identification]** 選擇 **[!UICONTROL Using reconciliation keys]** 定義目標維與在 **[!UICONTROL Enrichment]**。 在此示例中， **CRM ID** 自定義欄位。
+   * 在 **[!UICONTROL Fields to update]** 部分，指明要使用檔案中相應列的值更新的收件人維中的欄位。 如果檔案列的名稱與收件人維欄位的名稱相同或幾乎相同，則可以使用魔棒按鈕自動匹配不同的欄位。
 
       ![](assets/import_template_example6.png)
 
-1. 設定 **[!UICONTROL Deduplication]** 位於包含未調解收件者之轉變之後的活動：
+1. 配置 **[!UICONTROL Deduplication]** 位於包含未協調收件人的轉換後的活動：
 
-   * 選擇 **[!UICONTROL Edit configuration]** 並將目標維度設為從 **[!UICONTROL Enrichment]** 工作流程的活動。
+   * 選擇 **[!UICONTROL Edit configuration]** 並將目標維設定為從 **[!UICONTROL Enrichment]** 的子目錄。
 
       ![](assets/import_template_example4.png)
 
-   * 在此範例中，電子郵件欄位可用來尋找唯一的設定檔。 您可以使用任何您確定已填入的欄位，以及唯一組合的一部分。
-   * 在 **[!UICONTROL Deduplication method]** 螢幕，選擇 **[!UICONTROL Advanced parameters]** 並檢查 **[!UICONTROL Disable automatic filtering of 0 ID records]** 可確保主鍵等於0的記錄（應該是此轉變的所有記錄）未被排除。
+   * 在此示例中，電子郵件欄位用於查找唯一的配置檔案。 您可以使用您確定已填充的任何欄位，並使用唯一組合的一部分。
+   * 在 **[!UICONTROL Deduplication method]** 螢幕，選擇 **[!UICONTROL Advanced parameters]** 檢查 **[!UICONTROL Disable automatic filtering of 0 ID records]** 選項，確保不排除主鍵等於0（應為此轉換的所有記錄）的記錄。
 
    ![](assets/import_template_example7.png)
 
-1. 設定 **[!UICONTROL Update data]** 位於 **[!UICONTROL Deduplication]** 先前設定的活動。
+1. 配置 **[!UICONTROL Update data]** 位於 **[!UICONTROL Deduplication]** 活動。
 
-   * 選擇 **[!UICONTROL Insert]** as **[!UICONTROL Operation type]** 因為入站轉變只包含資料庫中不存在的收件者。
-   * 在 **[!UICONTROL Record identification]** 部分，選擇 **[!UICONTROL Directly using the targeting dimension]** 並選擇 **[!UICONTROL Recipients]** 維度。
-   * 在 **[!UICONTROL Fields to update]** 區段中，指定「收件者」維度中的欄位，以使用檔案中對應欄的值更新。 如果檔案列的名稱與收件人維欄位的名稱相同或幾乎相同，則可以使用魔術棒按鈕自動匹配不同欄位。
+   * 選擇 **[!UICONTROL Insert]** 如 **[!UICONTROL Operation type]** 因為入站轉換僅包含資料庫中不存在的收件人。
+   * 在 **[!UICONTROL Record identification]** 選擇 **[!UICONTROL Directly using the targeting dimension]** 選擇 **[!UICONTROL Recipients]** 維。
+   * 在 **[!UICONTROL Fields to update]** 部分，指明要使用檔案中相應列的值更新的收件人維中的欄位。 如果檔案列的名稱與收件人維欄位的名稱相同或幾乎相同，則可以使用魔棒按鈕自動匹配不同的欄位。
 
       ![](assets/import_template_example8.png)
 
-1. 在 **[!UICONTROL Split]** 活動，新增 **[!UICONTROL Data extraction (file)]** 活動與 **[!UICONTROL File transfer]** 活動。 設定這些活動以匯出您需要的欄，並在FTP或SFTP伺服器上傳輸檔案，您可在其中擷取檔案。
-1. 新增 **[!UICONTROL End]** 活動並儲存工作流程範本。
+1. 在 **[!UICONTROL Split]** 活動，添加 **[!UICONTROL Data extraction (file)]** 活動和 **[!UICONTROL File transfer]** 活動。 配置這些活動以導出所需的列，並在FTP或SFTP伺服器上傳輸檔案，在該伺服器上可以檢索該檔案。
+1. 添加 **[!UICONTROL End]** 並保存工作流模板。
 
-範本現在可供使用，並可供所有新工作流程使用。 然後，就需要全部，以指定包含要匯入的資料的檔案 **[!UICONTROL Data loading (file)]** 活動。
+現在可以使用該模板，並且可用於每個新工作流。 然後，需要指定包含要在 **[!UICONTROL Data loading (file)]** 的子菜單。
 
 ![](assets/import_template_example9.png)

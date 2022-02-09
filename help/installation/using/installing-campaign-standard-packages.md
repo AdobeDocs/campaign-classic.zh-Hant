@@ -2,11 +2,8 @@
 product: campaign
 title: 安裝 Campaign Classic 內建套件
 description: 瞭解如何安裝活動內置軟體包
-audience: installation
-content-type: reference
-topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 6%

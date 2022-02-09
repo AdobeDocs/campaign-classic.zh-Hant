@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: 建立篩選
-description: 了解如何在執行查詢時建立篩選器
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+description: 瞭解如何在執行查詢時建立篩選器
+feature: Query Editor
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -17,31 +15,31 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Adobe Campaign中可用的篩選器是透過篩選條件來定義，這些篩選條件是使用與查詢相同的作業模式建立。
+在Adobe Campaign可用的篩選器是通過使用與查詢相同的操作模式建立的篩選條件來定義的。
 
 >[!NOTE]
 >
->如需建立篩選器的詳細資訊，請參閱 [本節](../../platform/using/filtering-options.md).
+>有關建立篩選器的詳細資訊，請參閱 [此部分](../../platform/using/filtering-options.md)。
 
-此 **[!UICONTROL Administration > Configuration > Predefined filters]** 節點包含清單和概述中使用的所有篩選器。
+的 **[!UICONTROL Administration > Configuration > Predefined filters]** 節點包含清單和概述中使用的所有篩選器。
 
-例如，運算子清單可依 **[!UICONTROL Active accounts]**:
+例如，可以按 **[!UICONTROL Active accounts]**:
 
 ![](assets/query_editor_filter_sample_1.png)
 
-相符的篩選器包含 **[!UICONTROL Account disabled]** 值 **[!UICONTROL Operators]** 方案：
+匹配篩選器包含 **[!UICONTROL Account disabled]** 值 **[!UICONTROL Operators]** 架構：
 
 ![](assets/query_editor_filter_sample_2.png)
 
-若為同一份清單， **[!UICONTROL By login or label]** 篩選器可讓您根據在篩選欄位中輸入的值來篩選清單上的資料：
+對於同一清單， **[!UICONTROL By login or label]** filter允許您根據在filter欄位中輸入的值來過濾清單中的資料：
 
 ![](assets/query_editor_filter_sample_3.png)
 
-其建置如下：
+其建立如下：
 
 ![](assets/query_editor_filter_sample_4.png)
 
-若要符合篩選條件，運算子帳戶必須勾選下列其中一個條件：
+要匹配篩選條件，運算子帳戶必須檢查以下條件之一：
 
 * 其標籤包含輸入欄位中輸入的字元，
 * 運算子名稱包含輸入欄位中輸入的字元，
@@ -49,12 +47,12 @@ Adobe Campaign中可用的篩選器是透過篩選條件來定義，這些篩選
 
 >[!NOTE]
 >
->此 **[!UICONTROL Upper]** 函式可讓您停用區分大小寫的函式。
+>的 **[!UICONTROL Upper]** 函式，可以停用區分大小寫的函式。
 
-此 **[!UICONTROL Taken into account if]** 欄可讓您定義這些篩選條件的應用程式條件。 這裡， **$(/tmp/@text)** 字元代表連結至篩選器的輸入欄位內容：
+的 **[!UICONTROL Taken into account if]** 欄，用於定義這些篩選條件的應用程式條件。 這裡， **$(/tmp/@text)** 字元表示連結到篩選器的輸入欄位的內容：
 
 ![](assets/query_editor_filter_sample_5.png)
 
-這裡， **$(/tmp/@text)=&#39;agency&#39;**
+給， **$(/tmp/@text)=&#39;agency&#39;**
 
-此 **$(/tmp/@text)!=&quot;** 輸入欄位非空白時，運算式會套用每個條件。
+的 **$(/tmp/@text!=&quot;** 當輸入欄位不為空時，表達式將應用每個條件。
