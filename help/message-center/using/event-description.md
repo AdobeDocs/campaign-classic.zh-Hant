@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 事件說明
-description: 了解如何使用SOAP方法在Adobe Campaign Classic中管理交易式訊息事件。
+description: 瞭解如何使用SOAP方法在Adobe Campaign Classic管理事務性消息傳遞事件。
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c30d64e6930cb97f4a3c15acd97654d57d1bbf85
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -17,27 +17,29 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-## 交易式訊息資料模型 {#about-transactional-messaging-datamodel}
+## 事務性消息傳遞資料模型 {#about-transactional-messaging-datamodel}
 
-交易式訊息需仰賴Adobe Campaign資料模型，並使用其他兩個不同的表格。 這些 [表](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** 和 **NmsBatchEvent**，包含相同的欄位，可讓您管理即時事件和批次事件。
+事務性消息傳遞依賴於Adobe Campaign資料模型，並使用另外兩個單獨的表。 這些 [表](../../configuration/using/data-model-description.md#message-center-module)。 **NmsRtEvent** 和 **NmsBatchEvent**，包含相同的欄位，允許您管理即時事件和批處理事件。
 
 ## SOAP方法 {#soap-methods}
 
-本節詳細說明與交易式訊息模組結構相關聯的SOAP方法。
+本節詳細介紹與事務性消息模組架構關聯的SOAP方法。
 
-二 **PushEvent** 或 **PushEvents** SOAP方法連結到這兩個 **nms:rtEvent** 和 **nms:BatchEvent** 資料表。 決定事件是「批次」還是「即時」類型的資訊系統。
+二 **推送事件** 或 **推送事件** SOAP方法已連結到 **nms:rtEvent** 和 **nms:BatchEvent** 資料化學。 確定事件是「批處理」還是「即時」類型的資訊系統。
 
-* **PushEvent** 可讓您將單一事件插入訊息中，
-* **PushEvents** 可讓您將一系列事件插入訊息中。
+* **推送事件** 讓您在消息中插入一個事件，
+* **推送事件** 允許您在消息中插入一系列事件。
 
-用於訪問這兩種方法的WSDL路徑為：
+用於訪問兩種方法的WSDL路徑為：
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** 存取即時類型結構。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** 訪問即時類型架構。
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** 訪問批類型架構。
 
-兩種方法都包含 **`<urn:sessiontoken>`** 用於登入交易式訊息模組的元素。 建議您透過信任的IP位址使用識別方法。 要檢索會話令牌，請執行登錄SOAP調用，然後執行獲取令牌，然後執行註銷。 對數個RT呼叫使用相同的Token。 本節包含的範例是使用工作階段代號方法，此為建議的方法。
+有關生成WSDL檔案的詳細資訊，請參見 [此部分](../../configuration/using/web-service-calls.md#web-service-description--wsdl)。
 
-如果您使用負載平衡伺服器，則可以使用「使用者/密碼」驗證（位於RT訊息的層級）。 範例:
+兩種方法都包含 **`<urn:sessiontoken>`** 用於登錄到事務消息傳遞模組的元素。 我們建議使用通過可信IP地址的標識方法。 要檢索會話令牌，請執行登錄SOAP調用，然後執行獲取令牌和註銷。 對多個RT調用使用相同的令牌。 本節中包括的示例使用的是推薦的會話令牌方法。
+
+如果您使用的是負載平衡伺服器，則可以使用用戶/密碼驗證（在RT消息的級別）。 範例:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -51,11 +53,11 @@ ht-degree: 0%
 </PushEvent>
 ```
 
-此 **PushEvent** 方法由 **`<urn:domevent>`** 包含事件的參數。
+的 **推送事件** 方法由 **`<urn:domevent>`** 包含事件的參數。
 
-此 **PushEvents** 方法由 **`<urn:domeventcollection>`** 包含事件的參數。
+的 **推送事件** 方法由 **`<urn:domeventcollection>`** 包含事件的參數。
 
-使用PushEvent的範例：
+使用PushEvent的示例：
 
 ```
 <urn:PushEvent>
@@ -77,9 +79,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->若呼叫 **PushEvents** 方法，需要添加父XML元素，以符合標準XML。 此XML元素將框架 **`<rtevent>`** 事件中包含的元素。
+>如果呼叫 **推送事件** 方法，需要添加一個父XML元素來符合標準XML。 此XML元素將對 **`<rtevent>`** 事件中包含的元素。
 
-使用PushEvents的範例：
+使用PushEvents的示例：
 
 ```
 <urn:PushEvents>
@@ -103,13 +105,13 @@ ht-degree: 0%
 </urn:PushEvents>
 ```
 
-此 **`<rtevent>`** 和 **`<batchevent>`** 元素有一組屬性和一個強制子元素： **`<ctx>`** 用於整合訊息資料。
+的 **`<rtevent>`** 和 **`<batchevent>`** 元素具有一組屬性以及必需的子元素： **`<ctx>`** 用於整合消息資料。
 
 >[!NOTE]
 >
->此 **`<batchevent>`** 元素可讓您將事件新增至「批次」佇列。 此 **`<rtevent>`** 將事件新增至「即時」佇列。
+>的 **`<batchevent>`** 元素允許您將事件添加到「批處理」隊列。 的 **`<rtevent>`** 將事件添加到「即時」隊列。
 
-的強制屬性 **`<rtevent>`** 和 **`<batchevent>`** 元素為@type和@email。 @type的值必須與設定執行例項時定義的項目清單值相同。 此值可讓您定義要在傳送期間連結至事件內容的範本。
+的強制屬性 **`<rtevent>`** 和 **`<batchevent>`** 元素是@type和@email。 值@type必須與配置執行實例時定義的明細清單值相同。 此值允許您定義要在傳遞期間連結到事件內容的模板。
 
 `<rtevent> configuration example:`
 
@@ -117,23 +119,23 @@ ht-degree: 0%
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-在此範例中，提供兩個管道：電子郵件地址和行動電話號碼。 此 **whiskChannel** 可讓您選取將事件轉換為訊息時要使用的管道。 「0」值對應至電子郵件通道、「1」值對應至行動通道等。
+在本示例中，提供了兩個通道：電子郵件地址和手機號碼。 的 **希望頻道** 允許您選擇將事件轉換為消息時要使用的通道。 「0」值對應於電子郵件通道、「1」值對應於移動通道等。
 
-如果您想要延遲事件傳送，請新增 **[!UICONTROL scheduled]** 欄位後面接著偏好的日期。 該事件將在此日期轉換為訊息。
+如果要推遲事件交付，請添加 **[!UICONTROL scheduled]** 欄位後跟首選日期。 該事件將在此日期轉換為消息。
 
-建議您使用數值填@wishedChannel和@emailFormat屬性。 在資料架構描述中找到連結數值和標籤的函式表。
-
->[!NOTE]
->
->所有授權屬性及其值的詳細說明，請參閱 **nms:rtEvent** 和 **nms:BatchEvent** 資料結構。
-
-此 **`<ctx>`** 元素包含訊息資料。 其XML內容是開啟的，這表示可以根據要傳送的內容進行配置。
+我們建議用數值填@wishedChannel和@emailFormat屬性。 在資料架構說明中找到連結數值和標籤的函式表。
 
 >[!NOTE]
 >
->請務必最佳化訊息中包含的XML節點數目和大小，以避免傳送期間發生伺服器過載。
+>有關所有授權屬性及其值的詳細說明，請參閱 **nms:rtEvent** 和 **nms:BatchEvent** 資料模式。
 
-資料範例：
+的 **`<ctx>`** 元素包含消息資料。 其XML內容是開啟的，這意味著可以根據要傳送的內容進行配置。
+
+>[!NOTE]
+>
+>優化消息中包含的XML節點的數量和大小，以避免在傳遞過程中使伺服器超負荷，這一點非常重要。
+
+資料示例：
 
 ```
    <ctx>
@@ -154,15 +156,15 @@ ht-degree: 0%
     </ctx>
 ```
 
-## SOAP呼叫傳回的資訊 {#information-returned-by-the-soap-call}
+## SOAP調用返回的資訊 {#information-returned-by-the-soap-call}
 
-Adobe Campaign在收到事件時會產生唯一傳回ID。 這是封存版本的事件ID。
+當它收到事件時，Adobe Campaign會生成唯一的返回ID。 這是事件存檔版本的ID。
 
 >[!IMPORTANT]
 >
->Adobe Campaign收到SOAP呼叫時，會驗證電子郵件地址格式。 如果電子郵件地址的格式不正確，則會傳回錯誤。
+>Adobe Campaign在接收SOAP呼叫時驗證電子郵件地址格式。 如果電子郵件地址格式不正確，則返回錯誤。
 
-* 事件處理成功時，方法傳回的識別碼範例：
+* 事件處理成功時由方法返回的標識符示例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -174,11 +176,11 @@ Adobe Campaign在收到事件時會產生唯一傳回ID。 這是封存版本的
    </SOAP-ENV:Envelope>
    ```
 
-如果傳回識別碼的值嚴格大於零，表示事件已在Adobe Campaign中成功封存。
+如果返回標識符的值嚴格大於零，則表示事件已在Adobe Campaign成功存檔。
 
-不過，如果無法處理事件，方法會傳回錯誤訊息或等於零的值。
+但是，如果該事件未能處理，則該方法返回錯誤消息或等於零的值。
 
-* 處理查詢不包含登入或指定運算子沒有必要權限時失敗的事件範例：
+* 處理查詢不包含登錄名或指定運算子沒有所需權限時失敗的事件示例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -192,7 +194,7 @@ Adobe Campaign在收到事件時會產生唯一傳回ID。 這是封存版本的
    </SOAP-ENV:Envelope>
    ```
 
-* 因查詢錯誤而失敗的事件範例（未遵循XML分類）:
+* 由於查詢錯誤而失敗的事件示例（未遵守XML分類）:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -217,7 +219,7 @@ Adobe Campaign在收到事件時會產生唯一傳回ID。 這是封存版本的
    </SOAP-ENV:Envelope>
    ```
 
-* 失敗並傳回零識別碼（錯誤的方法名稱）的事件範例：
+* 失敗並返回零標識符（錯誤的方法名稱）的事件示例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">

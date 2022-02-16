@@ -4,10 +4,10 @@ title: 瞭解隔離管理
 description: 瞭解隔離管理
 feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
+source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
 workflow-type: tm+mt
-source-wordcount: '2613'
-ht-degree: 12%
+source-wordcount: '2837'
+ht-degree: 10%
 
 ---
 
@@ -27,19 +27,25 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離允許您避免被這些提供程式添加到denylist中。
 
-此外，隔離有助於減少簡訊傳送成本，因為將錯誤的電話號碼排除在遞送服務之外。如需確保傳送安全並最佳化的最佳實務，請參閱[本頁面](delivery-best-practices.md)。
+此外，隔離有助於減少簡訊傳送成本，因為將錯誤的電話號碼排除在遞送服務之外。
+
+如需確保傳送安全並最佳化的最佳實務，請參閱[本頁面](delivery-best-practices.md)。
 
 ### 隔離與密文清單 {#quarantine-vs-denylist}
 
-**隔離** (Quarantine)　僅適用於地址，而不適用於設定檔本身。這代表如果兩個設定檔具有相同的電子郵件地址，則兩個設定檔在隔離地址時都會受到影響。
+隔離和密文清單不適用於同一對象：
 
-同樣，其電子郵件地址被隔離的配置檔案可能會更新其配置檔案並輸入新地址，然後可能會再次被傳遞操作鎖定。
+* **隔離** 僅適用於 **地址** （或電話號碼等等），而不是個人資料本身。 例如，其電子郵件地址被隔離的配置檔案可以更新其配置檔案並輸入新地址，然後可以再次通過傳遞操作鎖定。 同樣，如果兩個配置檔案的電話號碼相同，則如果隔離該號碼，則兩個配置檔案都會受到影響。
 
-在 **密度**&#x200B;另一方面，將導致配置檔案不再被任何傳遞所針對，例如在取消訂閱(opt-out)後。
+   隔離的地址或電話號碼顯示在 [排除日誌](#identifying-quarantined-addresses-for-a-delivery) （交貨）或 [隔離清單](#identifying-quarantined-addresses-for-the-entire-platform) （適用於整個平台）。
+
+* 在 **密度**，另一方面， **輪廓** 不再被指定渠道的交付所針對，如取消訂閱（選擇退出）後。 例如，如果電子郵件渠道的denylist上的配置檔案有兩個電子郵件地址，則兩個地址都將排除在傳遞之外。
+
+   您可以檢查配置檔案是否位於密鑰清單中，以查看 **[!UICONTROL No longer contact]** 的 **[!UICONTROL General]** 頁籤。 請參閱[本節](../../platform/using/editing-a-profile.md#general-tab)。
 
 >[!NOTE]
 >
->當用戶用諸如「STOP」的關鍵字回復SMS消息以選擇退出SMS遞送時，其配置檔案不會像在電子郵件選擇退出過程中那樣添加到密尼清單中。 配置檔案電話號碼被發送到隔離，以便用戶繼續接收電子郵件。
+>隔離包括 **[!UICONTROL Denylisted]** 狀態，當收件人將您的郵件報告為垃圾郵件或使用關鍵字（如「STOP」）回復SMS郵件時，該狀態適用。 在這種情況下，配置檔案的相關地址或電話號碼將與 **[!UICONTROL Denylisted]** 狀態。 有關管理STOP SMS消息的詳細資訊，請參閱 [此部分](../../delivery/using/sms-send.md#processing-inbound-messages)。
 
 ## 標識隔離地址 {#identifying-quarantined-addresses}
 
@@ -90,9 +96,12 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 ### 刪除隔離地址 {#removing-a-quarantined-address}
 
-如果需要，可以手動從隔離清單中刪除地址。 此外，與特定條件匹配的地址將由 **[!UICONTROL Database cleanup]** 工作流。
+如果需要，可以手動從隔離清單中刪除地址。 此外，與特定條件匹配的地址將由 [資料庫清理](../../production/using/database-cleanup-workflow.md) 工作流。
 
-要手動從隔離清單中刪除地址，請執行以下操作：
+要手動從隔離清單中刪除地址，請執行以下操作之一。
+
+>[!IMPORTANT]
+從隔離區中手動刪除電子郵件地址意味著您將再次開始傳遞到此地址。 因此，這會對您的可交付性和IP信譽造成嚴重影響，最終可能導致您的IP地址或發送域被阻止。 考慮從隔離區中刪除任何地址時，請格外小心。 如有任何疑問，請與交付能力專家聯繫。
 
 * 您可以將其狀態更改為 **[!UICONTROL Valid]** 從 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 的下界。
 
@@ -109,21 +118,26 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 其狀態隨後更改為 **[!UICONTROL Valid]**。
 
 >[!IMPORTANT]
-地址位於 **[!UICONTROL Quarantine]** 或 **[!UICONTROL On denylist]** 即使收到電子郵件，狀態也永遠不會被刪除。
+地址位於 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使收到電子郵件，狀態也永遠不會被刪除。
 
-您可以修改錯誤數和兩個錯誤之間的期間。 為此，請更改部署嚮導中的相應設定(**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)。 有關部署嚮導的詳細資訊，請參閱 [此部分](../../installation/using/deploying-an-instance.md)。
+對於托管或混合安裝，如果已升級到 [增強的MTA](sending-with-enhanced-mta.md)，在 **[!UICONTROL Erroneous]** 現在，重試狀態和最小延遲取決於IP在給定域中的歷史和當前執行情況。
+
+對於使用舊版市場活動MTA的內部安裝和托管/混合安裝，您可以修改錯誤數和兩個錯誤之間的時間段。 為此，請更改 [部署嚮導](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或 [在交貨級別](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)。
 
 ## 將地址傳送到隔離區的條件 {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign根據傳遞失敗類型和在錯誤消息限定期間分配的原因管理隔離(請參閱 [退信郵件資格](understanding-delivery-failures.md#bounce-mail-qualification)) [交貨失敗類型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+Adobe Campaign根據傳遞失敗類型和在錯誤消息限定期間分配的原因管理隔離(請參閱 [退信郵件資格](understanding-delivery-failures.md#bounce-mail-qualification) 和 [交貨失敗類型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons))。
 
 * **忽略錯誤**：忽略的錯誤不會傳送要隔離的地址。
 * **硬錯誤**：會立即將相對應的電子郵件地址傳送至隔離區。
 * **軟錯誤**：軟錯誤不會立即傳送要隔離的地址，但會增加錯誤計數器。有關此的詳細資訊，請參閱 [軟錯誤管理](#soft-error-management)。
 
-如果用戶將電子郵件定義為垃圾郵件([反饋環](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops))，該郵件自動重定向到由Adobe管理的技術郵箱。 然後，用戶的電子郵件地址將自動發送到隔離區。
+如果用戶將電子郵件定義為垃圾郵件([反饋環](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops))，該郵件自動重定向到由Adobe管理的技術郵箱。 之後，系統會自動將使用者的電子郵件地址傳送到狀態為　**[!UICONTROL Denylisted]**　的隔離區。此狀態僅指地址，配置檔案不在密碼清單中，因此用戶繼續接收SMS消息和推送通知。
 
-在隔離地址清單中， **[!UICONTROL Error reason]** 欄位指明將選定地址置於隔離區的原因。 Adobe Campaign　中的隔離區會區分大小寫。請務必以小寫匯入電子郵件地址，如此一來，稍後就不會將它們重新設為目標。
+>[!NOTE]
+Adobe Campaign　中的隔離區會區分大小寫。請務必以小寫匯入電子郵件地址，如此一來，稍後就不會將它們重新設為目標。
+
+在隔離地址清單中(請參見 [確定整個平台的隔離地址](#identifying-quarantined-addresses-for-the-entire-platform)) **[!UICONTROL Error reason]** 欄位指明將選定地址置於隔離區的原因。
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -131,11 +145,9 @@ Adobe Campaign根據傳遞失敗類型和在錯誤消息限定期間分配的原
 
 與硬錯誤相比，軟錯誤不會立即發送要隔離的地址，而是增加錯誤計數器。
 
-* 當錯誤計數器達到限制閾值時，地址將進入隔離。
-* 在預設設定中，臨界值會設定為　5　個錯誤，其中　2　個錯誤若相隔至少　24　小時，即為顯著錯誤。會將地址放置到隔離區的第五個錯誤。
-* 可以修改錯誤計數器臨界值。有關此內容的詳細資訊，請參閱 [傳遞臨時失敗後重試](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+將在 [交貨期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。 當錯誤計數器達到限制臨界值時，該地址就會進入隔離區。有關此內容的詳細資訊，請參閱 [傳遞臨時失敗後重試](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
 
-如果上次出現重大錯誤超過10天，則重新初始化錯誤計數器。 地址狀態隨後更改為 **有效** 而且它被從隔離清單中刪除 **資料庫清理** 工作流。
+如果上次出現重大錯誤超過10天，則重新初始化錯誤計數器。 地址狀態隨後更改為 **有效** 而且它被從隔離清單中刪除 [資料庫清理](../../production/using/database-cleanup-workflow.md) 工作流。
 
 ## 推送通知隔離 {#push-notification-quarantines}
 
