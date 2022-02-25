@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2555'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 99%
       + [工作流程中的 JavaScript 程式碼範例](workflow/using/javascript-in-workflows.md)
       + [存取外部資料庫](workflow/using/accessing-an-external-database--fda-.md)
       + [管理權限](workflow/using/managing-rights.md)
-      + [更改活動映像](workflow/using/managing-activity-images.md)
+      + [變更活動影像](workflow/using/managing-activity-images.md)
       + [管理時區](workflow/using/managing-time-zones.md)
       + [技術工作流程](workflow/using/about-technical-workflows.md)
 + 管理優惠方案{#managing-offers}
