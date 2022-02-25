@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 每個新版本編號都會提供以顏色具體化的狀態。
 
-![](assets/do-not-localize/green3.png) **一般可用性** （正式發佈） — 最新的穩定構建，在生產中經過驗證，並由Adobe推薦。
+![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 由 Adobe 建議、經過生產驗證的最新穩定版本。
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
@@ -41,7 +41,7 @@ Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握�
 
 ## 建議{#recommendations}
 
-為確保穩定配置，我們建議您安裝 **同一部** 運行在同一客戶機配置上的所有伺服器上。
+若要確保穩定設定，我們建議您在所有伺服器上安裝&#x200B;**相同的版本**，執行相同用戶端設定。
 
 此外，用戶端控制台應與伺服器執行個體須為同一個版本編號。
 
@@ -51,7 +51,7 @@ Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握�
 
 身為託管客戶（管理的服務或混合），您需要與客戶服務團隊聯絡，以升級您的環境。
 
-身為內部部署使用者，您可以進行升級。要做到這一點，你需要 [下載最新的穩定版本(GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 升級所有環境。 瞭解更多[升級流程](../../production/using/build-upgrade.md)，並參閱[版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+身為內部部署使用者，您可以進行升級。為此，您需要[下載最新穩定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 並升級所有環境。深入了解[升級流程](../../production/using/build-upgrade.md)，同時參閱[版本升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
 ## 年度升級 {#yearly-upgrade}
 
@@ -59,13 +59,13 @@ Adobe 和 Adobe Campaign 致力透過我們的軟體解決方案為您提供最�
 
 Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組合，需要您定期升級 Campaign Classic 執行個體，以確保使用最新版本來提供優越的安全性、穩定性和效能。
 
-作為託管  使用者，您無需採取任何操作，便可自動透過  升級與 最新的 GA建置受益。請參閱下列常見問題集以了解更多資訊。
+作為託管使用者，您無需採取任何動作，便可自動升級並使用最新的 GA 版本。請參閱下列常見問題集以了解更多資訊。
 
 ### 我的組織為何需要此升級？
 
 作為托管客戶，如果您的帳戶被認定需要升級一或多項與 Campaign Classic 的相關技術，以及更新目前的建置和／或版本，Adobe 會直接通知您。
 
-作為在較舊版本上運行的內部客戶或混合客戶，Adobe鼓勵您轉到最新的穩定版本(GA)。
+如為使用舊版軟體的內部部署或混合型客戶，Adobe 鼓勵您改用最新的穩定版本 (GA)。
 
 這將確保您的帳戶免受漏洞的侵擾，並可運用更新的效能技術。 此升級還可讓您的帳戶日後能夠更輕鬆定期升級，而且所需的手動作業和操作也更少。
 
