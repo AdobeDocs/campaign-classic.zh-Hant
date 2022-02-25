@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ _2021 年 2 月 22 日_
 * 修正在重新開啟先前建立和儲存的 Web 應用程式時，造成原始程式碼中某些字元變更的問題。 (NEO-27597)
 * 修正升級至包含追蹤連結 (來自 Build 19.1.4 和 Campaign 20.2) 之新簽名機制的建置時可能發生的問題：當多個範本與事件相關聯時，升級可能會導致在傳送異動訊息時選擇錯誤的範本。 (NEO-28326)
 * 修正 MTA 在未重新啟動時無法回應且無法處理傳遞的問題。 (NEO-27455)
-* 在日期時間類型列的批量載入操作期間修復了與時區管理相關的MSSQL資料庫問題。 (NEO-27375)
+* 修正 MSSQL 資料庫，在日期時間輸入欄位的大量載入作業期間，與時區管理相關的問題。(NEO-27375)
 * 修正使用 Redshift xtk 函式時的工作流程查詢問題。 SubDays、SubSeconds、SubMinutes 和 SubHours 現在接受兩種 Redshift 時間標記類型 (NEO-24962)。
 * 修正嘗試預覽具有匿名存取權的報表時，顯示指令碼錯誤訊息的問題。 (NEO-27081)
 * 修正執行傳遞分析時，可能會減少伺服器上記憶體使用量的問題。
