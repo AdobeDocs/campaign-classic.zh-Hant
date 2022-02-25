@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: e88ed7a5710f9ec8713d9e7151d2fd4904097990
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
 ht-degree: 100%
 
@@ -108,7 +108,7 @@ ht-degree: 100%
 <tr>
 <td>Libre Office</td>
 <td>
-<p>7（及舊版，若是內嵌在您的系統中）</p>
+<p>7 (及舊版，若是內嵌在您的系統中)</p>
 </td>
 </tr>
 <tr>
@@ -363,7 +363,7 @@ ht-degree: 100%
 
 ## 行動 SDK{#MobileSDK}
 
-您可以在下列作業系統上使用 Campaign [來傳送推播通知](../../delivery/using/about-mobile-app-channel.md)，使用相關聯的[行動 SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
+您可以在下列作業系統上使用 Campaign 來傳送推播通知[，使用相關聯的[行動 SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。](../../delivery/using/about-mobile-app-channel.md)
 
 <table>
 <tbody>
@@ -424,7 +424,7 @@ ht-degree: 100%
 </tr>
 <tr>
 <td>
-<p>MicrosoftInternet Explorer</p>
+<p>Microsoft Internet Explorer</p>
 </td>
 <td>
 <p>11</p>
