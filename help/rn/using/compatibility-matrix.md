@@ -363,7 +363,7 @@ ht-degree: 100%
 
 ## 行動 SDK{#MobileSDK}
 
-您可以在下列作業系統上使用 Campaign 來傳送推播通知[，使用相關聯的[行動 SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。](../../delivery/using/about-mobile-app-channel.md)
+您可以在下列作業系統上使用 Campaign [來傳送推播通知](../../delivery/using/about-mobile-app-channel.md)，使用相關聯的[行動 SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
 
 <table>
 <tbody>
