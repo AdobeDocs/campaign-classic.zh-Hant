@@ -1,38 +1,38 @@
 ---
 product: campaign
 title: 關於 Adobe Experience Cloud 觸發程式
-description: 開始使用Adobe Experience Cloud Triggers實作
+description: 開始實施Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 11%
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
-# 使用Campaign和Experience Cloud觸發程式{#about-adobe-experience-triggers}
+# 使用市場活動和Experience Cloud觸發器{#about-adobe-experience-triggers}
 
 ![](../../assets/common.svg)
 
-[!DNL Triggers] 是Adobe Campaign與Adobe Analytics之間，使用管道的整合。 管道會從您的網站擷取使用者的動作或觸發器。 放棄購買是觸發的範例。 觸發器會在Adobe Campaign中處理，以近乎即時傳送電子郵件。
+[!DNL Triggers] 是Adobe Campaign和Adobe Analytics利用管道的整合。 管道從您的網站檢索用戶的操作或觸發器。 放棄購物車是一個觸發器的例子。 觸發器在Adobe Campaign處理，以便近乎即時地發送電子郵件。
 
 >[!CAUTION]
 >
->這項功能無法立即在產品中使用。此實作需要 Adobe Consulting 參與。請洽詢您的Adobe代表以了解更多資訊
+>這項功能無法立即在產品中使用。對於此實施，您首先需要開啟一個具有Adobe支援的票證。 然後，您將能夠執行本中詳述的步驟 [頁](../../integrations/using/configuring-pipeline.md#prerequisites)。
 
-[!DNL Triggers] 在使用者動作後的短時間內執行行銷動作。 一般回應時間不到1小時。
+[!DNL Triggers] 在用戶操作後的短時間內運行市場營銷操作。 典型響應時間不到1小時。
 
-它可提供更靈活的整合，因為設定極低，不涉及協力廠商。
-它也支援高流量，而不會影響行銷活動的效能。 例如，整合每小時可處理100萬個觸發器。
+它允許更靈活的整合，因為配置最小，不涉及第三方。
+它還支援大量流量，而不影響營銷活動的效能。 例如，整合每小時可處理100萬個觸發器。
 
-## [!DNL Triggers] 架構 {#triggers-architecture}
+## [!DNL Triggers] 體系結構 {#triggers-architecture}
 
-此 [!DNL pipelined] 程式一律在Adobe Campaign行銷伺服器上執行。 它會連線至管道、擷取事件並立即處理。
+的 [!DNL pipelined] 流程始終在Adobe Campaign營銷伺服器上運行。 它連接到管線，檢索事件並立即處理它們。
 
 ![](assets/triggers_2.png)
 
-此 [!DNL pipelined] 程式使用驗證服務登入Experience Cloud並傳送私密金鑰。 驗證服務會傳回Token。 擷取事件時，會使用Token來驗證。
+的 [!DNL pipelined] 進程使用身份驗證服務登錄到Experience Cloud併發送私鑰。 驗證服務返回令牌。 檢索事件時，令牌用於進行身份驗證。
 
-有關身份驗證的詳細資訊，請參閱 [頁面](../../integrations/using/configuring-adobe-io.md).
+有關身份驗證的詳細資訊，請參閱 [頁](../../integrations/using/configuring-adobe-io.md)。

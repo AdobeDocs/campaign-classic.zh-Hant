@@ -4,9 +4,9 @@ title: 傳遞報告
 description: 傳遞報告
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1451'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 2%
 >
 >根據成功轉發的消息數計算相關百分比。
 
-* **[!UICONTROL Distinct opens for the population reached]** :至少一次開啟消息的目標接收者的數目的估計。 按一下取消訂閱連結和鏡像頁面時會被考慮在內。
+* **[!UICONTROL Distinct opens for the population reached]** :至少一次開啟消息的目標接收者的數目的估計。 由於必須開啟電子郵件以按一下連結，因此將考慮對跟蹤的URL的按一下。
 * **[!UICONTROL Sum of opens for the population reached]** :目標接收者開啟總次數的估計。
 * **[!UICONTROL Clicks on opt-out link]** :取消訂閱連結上的按一下次數。
 * **[!UICONTROL Clicks on the mirror page link]** :在指向鏡像頁面的連結上按一下的次數。 要考慮到這一點，必須在傳遞嚮導（跟蹤的URL）中將連結定義為這樣。 請參閱此 [頁](../../delivery/using/about-delivery-monitoring.md)。
