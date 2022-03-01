@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 830d91dc5f6663a24d9fb8c2afeb03cdb93d4eec
+source-git-commit: 2f22f1a3cbf0dccb6872718ea4e0bd20b257c169
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 83%
@@ -19,7 +19,7 @@ ht-degree: 83%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## ![](assets/do-not-localize/green_2.png)版本 7.2.2 - 版本編號 4349 {#release-7-2-2}
+## ![](assets/do-not-localize/green_2.png)版本 7.2.2 - 版本編號 9349 {#release-7-2-2}
 
 _2022年3月1日_
 
