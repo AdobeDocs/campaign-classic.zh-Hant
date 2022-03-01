@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+source-git-commit: 830d91dc5f6663a24d9fb8c2afeb03cdb93d4eec
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 83%
@@ -37,7 +37,7 @@ _2022年3月1日_
 * 修復了在同時具有1000多個廣播時刷新可傳送性工作流時導致錯誤的問題。 (NEO-40276)
 * 已修復一個問題，該問題阻止自動更新開啟比率和按一下比率傳遞指示符。 (NEO-43253)
 
-## ![](assets/do-not-localize/green_2.png)版本 7.2.1 - 版本編號 9346 {#release-7-2-1}
+## ![](assets/do-not-localize/limited_2.png)版本 7.2.1 - 版本編號 9346 {#release-7-2-1}
 
 _2022 年 1 月 10 日_
 
