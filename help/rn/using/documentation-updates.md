@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 31c7e41e747475ab98bcc8ffea90933a05aeaa97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4868'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 98%
 
 ### 2022 年 2 月 {#february-2022}
 
-已更新 **檔案傳輸** 活動部分，其中包含一個提示，用於在SFTP目錄中手動監視存檔內容的大小 **傳輸後刪除源檔案** 頁籤 [閱讀全文](../../workflow/using/file-transfer.md#properties)
+更新&#x200B;**檔案傳輸**&#x200B;活動部分，在&#x200B;**傳輸後刪除來源檔案**&#x200B;的情況下，提示在 SFTP 目錄中手動監視封存內容的大小。 [閱讀全文](../../workflow/using/file-transfer.md#properties)
 
 釐清隔離與封鎖清單章節。[閱讀全文](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
 
-有關如何發送地址到隔離以及如何從隔離清單中刪除地址的部分已更新。 [閱讀全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+有關如何把位址加入隔離清單以及如何從隔離清單刪除位址的部分已更新。 [閱讀全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 ### 2022 年 1 月 {#january-2022}
 
@@ -458,7 +458,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 已更新安裝指南，並與最新版本的相容性比較表同步。新增了新的可支援系統。移除已棄用及不支援的系統。[顯示全文](../../installation/using/general-architecture.md)
 
-更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 安裝指南新增了有關 IP 相似性的最佳實務。[顯示全文](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -476,7 +476,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
-更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 [此處](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)記錄新的 **[!UICONTROL Cleanup of Nmsaddress]** 工作流程。
 
@@ -528,7 +528,7 @@ AMP 互動式內容 - [顯示全文](../../delivery/using/defining-interactive-c
 
 **此版本隨附的其他文件更新**
 
-推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增章節，說明如何疑難排解行銷活動中，持續顯示「盡快開始」狀態的工作流程。[顯示全文](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -590,7 +590,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
@@ -614,7 +614,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
 
-更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)
 
 新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](../../message-center/using/event-description.md)
 
@@ -653,7 +653,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
