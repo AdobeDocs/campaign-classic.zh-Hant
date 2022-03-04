@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: 傳遞大綱
-description: 進一步了解傳送大綱工作流程活動
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+description: 瞭解有關「交貨大綱」工作流活動的詳細資訊
+feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
@@ -17,34 +15,34 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-此 **傳遞大網** 可讓您在促銷活動工作流程中使用大綱。 大綱必須預先在促銷活動中建立。
+的 **交付大綱** 允許您在市場活動工作流中使用大綱。 大綱必須事先在活動中建立。
 
-如需Adobe Campaign中傳送大綱的詳細資訊，請參閱 [節](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+有關Adobe Campaign交付大綱的詳細資訊，請參閱 [節](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
-要配置活動，您只需選擇所需的大綱以及計畫的聯繫日期。 您可以新增類型或類型規則，以新增篩選規則。
+要配置活動，您只需選擇您喜歡的大綱以及計畫的聯繫日期。 可以通過添加類型或類型規則來添加篩選規則。
 
-## 範例：透過傳遞大綱插入優惠方案 {#example--inserting-an-offer-via-a-delivery-outline}
+## 示例：通過交貨大綱插入報價 {#example--inserting-an-offer-via-a-delivery-outline}
 
-此 **傳遞大網** 活動，可在促銷活動工作流程中使用，可讓您呈現在傳遞大綱中從目前進行中的促銷活動參考的選件。
+的 **交付大綱** 活動，可在市場活動工作流中提供，用於顯示當前市場活動中在交貨大綱中引用的優惠。
 
 >[!NOTE]
 >
->此 **互動** 必須安裝軟體包。
+>的 **交互** 必須安裝軟體包。
 
-1. 在工作流程中，新增傳送大綱活動之前，請先新增傳送活動。
-1. 在傳送大綱活動中，指定要使用的大綱。
+1. 在工作流中，在添加交貨活動之前添加交貨大綱活動。
+1. 在交貨大綱活動中，指定要使用的大綱。
 
-   如需指定傳送大綱的詳細資訊，請參閱 [節](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   有關指定交貨大綱的詳細資訊，請參閱 [節](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
-1. 根據您的傳送完成可用欄位。
+1. 根據您的交貨完成可用欄位。
 1. 可能有兩種情況：
 
-   * 如果您想要呼叫優惠方案引擎，請檢查 **[!UICONTROL Restrict the number of propositions selected]** 框。 指定要在傳遞中呈現的優惠方案空間和主張數量。
+   * 如果您想呼叫聘用引擎，請檢查 **[!UICONTROL Restrict the number of propositions selected]** 框。 指定提供空間和將在交付中顯示的建議數。
 
-      優惠方案引擎會考量優惠方案的權重和適用性規則。
+      報價引擎將考慮報價權重和資格規則。
 
-   * 如果您未核取方塊，傳遞大綱中的所有選件都會呈現，而不需要呼叫選件引擎。
+   * 如果未選中此框，則在不致電聘用引擎的情況下，將顯示交貨大綱中的所有聘用。
 
-   預覽會考量傳送中指定的選件數量。 執行工作流程時，會考慮傳送大綱中指定的編號。
+   預覽會考慮交貨中指定的優惠數量。 執行工作流時，將考慮交貨大綱中指定的編號。
 
    ![](assets/int_compo_offre_wf1.png)

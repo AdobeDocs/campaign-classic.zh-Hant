@@ -2,8 +2,9 @@
 product: campaign
 title: 元素版面
 description: 元素版面
+feature: Reporting
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 1%

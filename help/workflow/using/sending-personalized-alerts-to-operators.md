@@ -2,8 +2,9 @@
 product: campaign
 title: 傳送個人化警示給營運商
 description: 瞭解如何向操作員發送個性化警報
+feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%

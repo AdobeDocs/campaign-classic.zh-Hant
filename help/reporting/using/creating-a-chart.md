@@ -2,8 +2,9 @@
 product: campaign
 title: 建立圖表
 description: 瞭解如何設計圖表
+feature: Reporting
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 3%

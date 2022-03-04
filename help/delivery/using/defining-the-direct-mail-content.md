@@ -2,8 +2,9 @@
 product: campaign
 title: 定義直接郵件內容
 description: 瞭解如何定義直郵內容
+feature: Direct Mail
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 10%

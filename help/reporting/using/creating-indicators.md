@@ -2,8 +2,9 @@
 product: campaign
 title: 建立指標
 description: 建立指標
+feature: Reporting
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 2%

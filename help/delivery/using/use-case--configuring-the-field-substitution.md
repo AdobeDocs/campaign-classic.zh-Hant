@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: '"使用案例：配置欄位替代"'
-description: '"使用案例：配置欄位替代"'
+title: '"使用實例：設定欄位替代"'
+description: '"使用實例：設定欄位替代"'
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%

@@ -2,11 +2,9 @@
 product: campaign
 title: 儲存格
 description: 儲存格
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
@@ -17,15 +15,15 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-此 **[!UICONTROL Cells]** 活動以資料欄的形式提供各種子集的視圖。 它有助於進行子集操作，也旨在鼓勵個人化的可能性。
+的 **[!UICONTROL Cells]** activity以資料列的形式提供了各種子集的視圖。 它便於子集操作，並且還設計為鼓勵個性化可能性。
 
 ![](assets/wf_split_cells.png)
 
-可以根據用戶需求配置此活動以輸入特定參數。 依預設，每個子集的詳細資訊會透過 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 頁簽。 在以下範例中，已修改表單：a **[!UICONTROL Data]** 已新增索引標籤，以啟用選件與每個子集之優先順序層級的關聯。
+可以根據用戶需要配置此活動以輸入特定參數。 預設情況下，每個子集的詳細資訊將通過 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 頁籤。 在下面的示例中，表單已修改：a **[!UICONTROL Data]** 已添加頁籤，以啟用提供和每個子集的優先順序的關聯。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-針對此設定，下列資訊已新增至工作流程表單(位於 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign樹節點):
+對於此配置，以下資訊已添加到工作流表單(在 **[!UICONTROL Administration > Configurations > Input forms]** 節點):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -50,4 +48,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的登入表單個人化已保留給專家使用者。 如需詳細資訊，請參閱本[區段](../../configuration/using/identifying-a-form.md)。
+Adobe Campaign的入口表單個性化為專家用戶保留。 如需詳細資訊，請參閱本[區段](../../configuration/using/identifying-a-form.md)。

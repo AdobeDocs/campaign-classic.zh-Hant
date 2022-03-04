@@ -2,9 +2,9 @@
 product: campaign
 title: 行銷活動傳遞
 description: 瞭解有關市場營銷活動交付的更多資訊
-feature: Resource Management, Cross Channel Orchestration
+feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的配置適用於不同類型的交付：直郵、電子郵件、移動頻道。 [了解更多](../../delivery/using/steps-about-delivery-creation-steps.md)。
+建議的配置適用於不同類型的交付：直郵、電子郵件、移動頻道。 [了解更多資訊](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 ## 開始交貨 {#starting-a-delivery}
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 >
 >此模式保留用於小文檔。
 
-在市場活動中，您還可以參考其他項目，如促銷優惠券、與特定分店或商店相關的特別優惠等。 當這些元素包含在大綱中時，它們可以與直接郵寄相關聯。 [了解更多](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+在市場活動中，您還可以參考其他項目，如促銷優惠券、與特定分店或商店相關的特別優惠等。 當這些元素包含在大綱中時，它們可以與直接郵寄相關聯。 [了解更多資訊](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 >[!NOTE]
 >

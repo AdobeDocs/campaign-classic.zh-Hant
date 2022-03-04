@@ -1,36 +1,34 @@
 ---
 product: campaign
 title: AND-join
-description: 合併連結
-audience: workflow
-content-type: reference
-topic-tags: flow-control-activities
+description: 與連接
+feature: Workflows
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
 
 ---
 
-# 合併連結{#and-join}
+# 與連接{#and-join}
 
 ![](../../assets/common.svg)
 
-只有在啟動所有入站轉變（即完成所有先前的活動）時，連接才會觸發其出站轉變。 這可讓您在繼續執行工作流程之前，確定某些活動已完成。
+僅當激活所有入站轉換（即當完成所有先前活動時）時，連接才會觸發其出站轉換。 這允許您確保在繼續執行工作流之前已完成某些活動。
 
-例如，您可以在內容建立和傳送傳送自動化的內容中使用AND-join活動，以確保只有在目標查詢和內容更新步驟完成後，才會啟動傳送。 有專屬的使用案例可在 [本節](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
+例如，您可以在內容建立和傳遞發送自動化的上下文中使用與聯接活動，以確保只有目標查詢和內容更新步驟完成後才啟動傳遞。 在中提供了專用的使用案例 [此部分](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
 
 ![](assets/and-join-usage.png)
 
 >[!NOTE]
 >
->請注意，使用不同目標維度設定的入站轉變無法使用 **[!UICONTROL AND-join]** 活動。
+>請注意，配置了不同目標維的入站過渡無法使用 **[!UICONTROL AND-join]** 的子菜單。
 
-活動的出站已傳送母體，是透過在活動的入站轉變中選擇主要集來決定。
+通過在活動的入站轉換中選擇主集來確定活動的出站已發送人口。
 
-出站轉變只能包含入站轉變母體之一。 如果未設定活動，出站轉變將隨機選取入站母體之一。
+出站轉換只能包含入站轉換總體之一。 如果未配置該活動，則出站轉換將隨機選擇一個入站總體。
 
 >[!CAUTION]
 >
->若 **合併連結** 類型活動時，會合併事件變數，但如果同一個變數定義兩次，則會發生衝突，且值仍未確定。 如需詳細資訊，請參閱[本章節](javascript-scripts-and-templates.md#event-variables)。
+>在 **與連接** 類型活動，將合併事件變數，但如果定義了兩次相同變數，則存在衝突，且值仍未確定。 如需詳細資訊，請參閱[本章節](javascript-scripts-and-templates.md#event-variables)。

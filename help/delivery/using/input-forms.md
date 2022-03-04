@@ -2,8 +2,9 @@
 product: campaign
 title: 輸入表單
 description: 瞭解如何在市場活動中使用輸入表單
+feature: Data Management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 2%
@@ -95,7 +96,7 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 
 必須用 **type=&quot;list&quot;** 屬性，並且清單的路徑必須引用集合元素。
 
-列由子代聲明 **`<input>`** 清單中的元素。
+列由子代聲明 **`<input>`** 清單中的清單。
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 product: campaign
 title: 開始使用網路應用程式
 description: 建立和共用動態Web應用程式、登錄頁和調查
-feature: Landing Pages
+feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%

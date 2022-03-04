@@ -2,11 +2,9 @@
 product: campaign
 title: 變更維度
 description: 變更維度
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -17,53 +15,53 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-變更維度活動可讓您在目標建構週期期間變更目標維度。 軸移取決於資料範本和輸入維度。 例如，這可讓您從「合約」維度切換至「用戶端」維度。
+更改維活動允許您在目標構建週期中更改目標維。 軸偏移取決於資料模板和輸入維。 這允許您從「contracts」維切換到「clients」維。
 
-您也可以使用此活動來定義新目標的其他欄。
+您還可以使用此活動定義新目標的附加列。
 
-可以定義重複資料刪除標準。
+可以定義重複資料消除標準。
 
 ## 配置模式 {#configuration-mode}
 
-若要設定變更維度活動，請套用下列步驟：
+要配置更改維活動，請應用以下步驟：
 
-1. 透過 **[!UICONTROL Change dimension]** 欄位。
+1. 通過 **[!UICONTROL Change dimension]** 的子菜單。
 
    ![](assets/s_user_change_dimension_param1.png)
 
-1. 在尺寸更改期間，您可以保留所有元素或選擇要保留在輸出中的元素。 在下列範例中，最大值為。 重複項目數設為2。
+1. 在維更改期間，可保留所有元素或選擇要保留在輸出中的元素。 在以下示例中，最大值。 重複項數設定為2。
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   當您選擇僅保留一條記錄時，工作架構中會顯示一個集合：此集合表示在最終結果中不會定位的所有記錄（因為只保留一個記錄）。 與所有其他集合一樣，此集合可讓您計算欄中的匯總或復原資訊。
+   選擇只保留一條記錄時，工作架構中將顯示一個集合：此集合表示在最終結果中不會針對的所有記錄（因為只保留一個記錄）。 與所有其他集合一樣，此集合允許您計算列中的聚合或恢復資訊。
 
-   例如，如果您變更 **[!UICONTROL Customers]** 維度 **[!UICONTROL Recipients]** 維度中，則可以在新增購買次數時，鎖定特定商店的客戶。
+   例如，如果您更改 **[!UICONTROL Customers]** 維到 **[!UICONTROL Recipients]** 維，可以針對特定商店的客戶，同時增加購買數量。
 
-1. 如果您選擇不保留所有這些資訊，則可以配置重複管理模式。
+1. 如果選擇不保留所有這些資訊，則可以配置重複管理模式。
 
    ![](assets/s_user_change_dimension_param2.png)
 
-   藍色箭頭可讓您定義重複的處理優先順序。
+   使用藍色箭頭可以定義重複處理優先順序。
 
-   在上述範例中，收件者的電子郵件地址會先刪除重複項目，然後視需要刪除其帳號。
+   在上例中，收件人將首先在其電子郵件地址上進行重複資料消除，然後根據需要在其帳號上進行重複資料消除。
 
-1. 此 **[!UICONTROL Result]** 標籤可讓您新增其他資訊。
+1. 的 **[!UICONTROL Result]** 頁籤。
 
-   例如，您可以使用 **子字串** 類型函式。 操作步驟：
+   例如，您可以使用 **子字串** 的子菜單。 操作步驟：
 
-   * 按一下 **[!UICONTROL Add data...]** 連結和選取 **[!UICONTROL Data linked to the filtering dimension]**.
+   * 按一下 **[!UICONTROL Add data...]** 連結和選擇 **[!UICONTROL Data linked to the filtering dimension]**。
 
       ![](assets/wf_change-dimension_sample_01.png)
 
       >[!NOTE]
       >
-      >有關建立和管理其他列的資訊，請參閱 [新增資料](query.md#adding-data).
+      >有關建立和管理附加列的資訊，請參閱 [添加資料](query.md#adding-data)。
 
-   * 選取上一個目標維度（軸切換前），然後選取 **[!UICONTROL Zip Code]** 收件者 **[!UICONTROL Location]** 子樹，然後按一下 **[!UICONTROL Edit expression]**.
+   * 選取上一個目標尺寸（軸切換前），然後選取 **[!UICONTROL Zip Code]** 的 **[!UICONTROL Location]** 子樹，然後按一下 **[!UICONTROL Edit expression]**。
 
       ![](assets/wf_change-dimension_sample_02.png)
 
-   * 按一下 **[!UICONTROL Advanced selection]** 選擇 **[!UICONTROL Edit the formula using an expression]**.
+   * 按一下 **[!UICONTROL Advanced selection]** 選擇 **[!UICONTROL Edit the formula using an expression]**。
 
       ![](assets/wf_change-dimension_sample_03.png)
 
@@ -75,7 +73,7 @@ ht-degree: 2%
 
       ![](assets/wf_change-dimension_sample_05.png)
 
-1. 執行工作流以查看此配置的結果。 比較變更維度活動前後表格中的資料，並比較工作流程表格的結構，如下列範例所示：
+1. 執行工作流以查看此配置的結果。 比較更改維活動前後表中的資料，並比較工作流表的結構，如下例所示：
 
    ![](assets/wf_change-dimension_sample_06.png)
 

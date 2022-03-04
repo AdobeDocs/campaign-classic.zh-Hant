@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: 設定人口樣本
+title: 設定母體樣本
 description: 瞭解如何通過專用使用案例執行A/B測試
+feature: A/B Testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 7%

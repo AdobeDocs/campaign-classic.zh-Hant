@@ -2,9 +2,9 @@
 product: campaign
 title: 查詢
 description: 瞭解有關查詢工作流活動的詳細資訊
-feature: Query Editor
+feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 0%
@@ -223,7 +223,7 @@ SQL中的篩選維等效於內部連接：
 * 對開發和生產環境使用相同的值。 盡可能使用相同：
 
    * 作業系統,
-   * 版本，
+   * 版本,
    * 資料，
    * 應用程式，
    * 卷。

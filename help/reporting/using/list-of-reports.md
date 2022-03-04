@@ -2,11 +2,12 @@
 product: campaign
 title: 報告清單
 description: 報告清單
+feature: Reporting
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '1007'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +26,7 @@ Adobe Campaign提供的內置報告見下表。
   <tr> 
    <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>說明</strong><br /> </td> 
-   <td> <strong>架構</strong><br /> </td> 
+   <td> <strong>結構描述</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 用戶活動(recipientActivity)<br /> </td> 
@@ -224,7 +225,7 @@ Adobe Campaign提供的內置報告見下表。
   <tr> 
    <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>說明</strong><br /> </td> 
-   <td> <strong>架構</strong><br /> </td> 
+   <td> <strong>結構描述</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 與方案相關的費用（預算方案費用）<br /> </td> 
@@ -344,7 +345,7 @@ Adobe Campaign提供的內置報告見下表。
   <tr> 
    <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>說明</strong><br /> </td> 
-   <td> <strong>架構</strong><br /> </td> 
+   <td> <strong>結構描述</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 優惠分析（優惠分析）<br /> </td> 

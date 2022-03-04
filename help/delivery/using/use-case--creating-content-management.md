@@ -2,8 +2,9 @@
 product: campaign
 title: 「用例：建立內容管理
 description: 「用例：建立內容管理
+feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 1%

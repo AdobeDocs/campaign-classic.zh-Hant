@@ -2,8 +2,9 @@
 product: campaign
 title: 建立和標識交貨
 description: 建立和標識交貨
+feature: Channel Configuration
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 5%

@@ -2,8 +2,9 @@
 product: campaign
 title: 建立指令碼
 description: 瞭解如何通過專用使用案例執行A/B測試
+feature: A/B Testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 4%
@@ -167,4 +168,4 @@ ht-degree: 4%
 * 最低取消訂閱率： `[indicators/@optOutRatio]`。
 * 交易記錄金額： `[indicators/@amount]`。
 
-您現在可以定義最終交貨。 [了解更多](a-b-testing-uc-final-delivery.md)。
+您現在可以定義最終交貨。 [了解更多資訊](a-b-testing-uc-final-delivery.md)。

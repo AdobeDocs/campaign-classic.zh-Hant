@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: 用日本手機發送電子郵件，Adobe Campaign Classic
+title: 用日本手機發送電子郵件與Adobe Campaign Classic
 description: 瞭解如何配置、設計和發送將在日文手機上閱讀的電子郵件
+feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%

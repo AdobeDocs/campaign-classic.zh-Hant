@@ -1,68 +1,66 @@
 ---
 product: campaign
-title: '在 Adobe Campaign 設定行動應用程式 '
-description: 了解如何從行動應用程式設定開始
-audience: delivery
-content-type: reference
-topic-tags: sending-push-notifications
+title: '在Adobe Campaign配置移動應用程式 '
+description: 瞭解如何從移動應用程式配置開始
+feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 10%
+ht-degree: 7%
 
 ---
 
 # 開始使用應用程式設定
 
-您可以在本節中找到以銷售線上假日套件的公司為基礎的設定範例。 其行動應用程式(Neotrips)提供兩種版本供其客戶使用：Android的Neotrips和iOS的Neotrips。
+在本節中，您可以根據銷售線上假日套餐的公司找到配置示例。 其移動應用(Neotrips)以兩種版本提供給客戶：Android的Neotrips和iOS的Neotrips。
 
-若要在Adobe Campaign中傳送推播通知，您必須：
+要在Adobe Campaign發送推送通知，您需要：
 
-* 建立 **[!UICONTROL Mobile application]** 為Neotrips行動應用程式輸入資訊服務。 請參閱 [本節為iOS](configuring-the-mobile-application.md#configuring-ios-service). 和 [Android適用的本節](configuring-the-mobile-application-android.md#configuring-android-service).
-* 將應用程式的iOS和Android版本新增至此服務。
-* 建立傳送 [iOS](create-notifications-ios.md) 和 [Android](create-notifications-android.md).
+* 建立 **[!UICONTROL Mobile application]** 為Neotrips移動應用程式鍵入資訊服務。 請參閱 [本節為iOS](configuring-the-mobile-application.md#configuring-ios-service)。 和 [本節針對Android](configuring-the-mobile-application-android.md#configuring-android-service)。
+* 將應用程式的iOS和Android版本添加到此服務。
+* 建立交貨 [iOS](create-notifications-ios.md) 和 [安卓](create-notifications-android.md)。
 
 ![](assets/nmac_service_diagram.png)
 
 >[!NOTE]
 >
->前往 **[!UICONTROL Subscriptions]** 頁簽，查看服務的訂閱者清單，即所有在行動裝置上安裝了應用程式並同意接收通知的人員。
+>轉到 **[!UICONTROL Subscriptions]** 頁籤，查看服務的訂閱者清單，即在其移動設備上安裝了應用程式並同意接收通知的所有用戶。
 
-## 安裝套件 {#installing-package-ios}
+## 安裝軟體包 {#installing-package-ios}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在視頻中安裝移動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-身為混合/托管客戶，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊來存取Campaign中的推播通知通道。
+作為混合/托管客戶，請聯繫 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊，以訪問「市場活動」中的推送通知渠道。
 
-身為內部部署客戶，您需要安裝內建套件。
+作為內部客戶，您需要安裝內置軟體包。
 
 >[!CAUTION]
 >
->進一步了解Campaign內建套件、最佳實務和建議，位於 [本頁](../../installation/using/installing-campaign-standard-packages.md).
+>瞭解有關中活動內置的產品包、最佳做法和建議的更多資訊 [此頁](../../installation/using/installing-campaign-standard-packages.md)。
 
-安裝步驟為：
+安裝步驟包括：
 
-1. 從訪問包導入嚮導 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign用戶端主控台中。
+1. 從訪問包導入嚮導 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign客戶端控制台中。
 
    ![](assets/package_ios.png)
 
 1. 選取 **[!UICONTROL Install a standard package]**。
 
-1. 在顯示的清單中，核取 **[!UICONTROL Mobile App Channel]**.
+1. 在顯示的清單中，選中 **[!UICONTROL Mobile App Channel]**。
 
    ![](assets/package_ios_2.png)
 
-1. 按一下 **[!UICONTROL Next]**，然後 **[!UICONTROL Start]** 以啟動軟體包安裝。
+1. 按一下 **[!UICONTROL Next]**，則 **[!UICONTROL Start]** 啟動軟體包安裝。
 
-   安裝軟體包後，進度欄將顯示 **100%** 而且，您會在安裝記錄中看到下列訊息： **[!UICONTROL Installation of packages successful]**.
+   安裝軟體包後，進度欄將顯示 **100%** 您可以在安裝日誌中看到以下消息： **[!UICONTROL Installation of packages successful]**。
 
    ![](assets/package_ios_3.png)
 
 1. **[!UICONTROL Close]** 安裝窗口。
 
-完成此步驟後，您就可以設定Android和iOS應用程式。
-請參閱以下章節：
+完成此步驟後，您可以配置Android和iOS應用。
+請參閱以下各節：
 
 * [針對 iOS 的設定步驟](configuring-the-mobile-application.md)
 

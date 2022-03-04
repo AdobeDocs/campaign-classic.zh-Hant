@@ -2,8 +2,9 @@
 product: campaign
 title: 偵測追蹤 URL
 description: 瞭解有關跟蹤URL的建議模式的詳細資訊
+feature: Monitoring
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%

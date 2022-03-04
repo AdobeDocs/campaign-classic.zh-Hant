@@ -2,8 +2,9 @@
 product: campaign
 title: 配置併發送交貨
 description: 瞭解如何配置和發送交付
+feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 5%

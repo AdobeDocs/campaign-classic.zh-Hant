@@ -1,12 +1,13 @@
 ---
 product: campaign
-title: 與增強的MTA一起發送，在Adobe Campaign Classic
+title: S與增強的MTA一起在Adobe Campaign Classic
 description: 瞭解與Adobe Campaign增強型MTA發送電子郵件的範圍和特點
+feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 8ac6cddad04d1142b84a735ab8083e732c17714b
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1946'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -217,15 +218,15 @@ DKIM(DomainKeys Indifed Mail)電子郵件身份驗證簽名由增強的MTA完成
 | 已成功將消息從市場活動中轉到增強的MTA | **[!UICONTROL Success]** 百分比未顯示（以0%開始） | 服務提供商考慮的因素 |
 | 從增強的MTA返回硬跳消息 | 未更改 **[!UICONTROL Success]** 百分比 | 失敗 |
 | 從增強的MTA返回軟彈跳消息 | 未更改 **[!UICONTROL Success]** 百分比 | 服務提供商考慮的因素 |
-| 軟彈跳消息重試成功 | **[!UICONTROL Success]** 百分比相應增加 | 已發送 |
+| 軟彈跳消息重試成功 | **[!UICONTROL Success]** 百分比相應增加 | 已傳送 |
 | 軟跳轉消息重試失敗 | 未更改 **[!UICONTROL Success]** 百分比 | 失敗 |
 
 **沒有電子郵件反饋服務**
 
 | 發送過程中的步驟 | KPI摘要 | 正在發送日誌狀態 |
 |--- |--- |--- |
-| 已成功將消息從市場活動中轉到增強的MTA | **[!UICONTROL Success]** 百分比從100%開始 | 已發送 |
+| 已成功將消息從市場活動中轉到增強的MTA | **[!UICONTROL Success]** 百分比從100%開始 | 已傳送 |
 | 從增強的MTA返回硬跳消息 | **[!UICONTROL Success]** 百分比相應減少 | 失敗 |
-| 從增強的MTA返回軟彈跳消息 | 未更改 **[!UICONTROL Success]** 百分比 | 已發送 |
-| 軟彈跳消息重試成功 | 未更改 **[!UICONTROL Success]** 百分比 | 已發送 | **[!UICONTROL Success]** 百分比相應增加 | 已發送 |
+| 從增強的MTA返回軟彈跳消息 | 未更改 **[!UICONTROL Success]** 百分比 | 已傳送 |
+| 軟彈跳消息重試成功 | 未更改 **[!UICONTROL Success]** 百分比 | 已傳送 | **[!UICONTROL Success]** 百分比相應增加 | 已傳送 |
 | 軟跳轉消息重試失敗 | **[!UICONTROL Success]** 百分比相應減少 | 失敗 |

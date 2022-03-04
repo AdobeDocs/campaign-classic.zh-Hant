@@ -2,8 +2,9 @@
 product: campaign
 title: 透過工作流程自動化
 description: 瞭解如何通過工作流自動化內容管理
+feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 0%
@@ -49,7 +50,7 @@ ht-degree: 0%
 
 ### 更新內容 {#update-the-content}
 
-* **主題**
+* **主旨**
 
    用於在發佈時修改傳遞操作的主題。
 

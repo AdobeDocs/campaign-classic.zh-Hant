@@ -2,8 +2,9 @@
 product: campaign
 title: 格式
 description: 格式
+feature: Email Design
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 0%

@@ -2,11 +2,9 @@
 product: campaign
 title: 載入傳遞內容
 description: 載入傳遞內容
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 3%
@@ -17,34 +15,34 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-如果您的傳送內容位於Amazon S3、FTP或SFTP伺服器上的HTML檔案中，您可以輕鬆將此內容載入Adobe Campaign傳送中。
+如果您的傳送內容位於AmazonS3、FTP或SFTP伺服器上的HTML檔案中，則您可以輕鬆地將此內容載入到Adobe Campaign傳送中。
 
 操作步驟：
 
-1. 如果您尚未定義Adobe Campaign與托管內容檔案的(S)FTP伺服器之間的連線，請在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. 在此外部帳戶中指定用來建立與S3或(S)FTP伺服器連線的位址和憑證。
+1. 如果尚未定義Adobe Campaign與承載內容檔案的(S)FTP伺服器之間的連接，請在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**。 在此外部帳戶中指定用於建立與S3或(S)FTP伺服器的連接的地址和憑據。
 
-   以下是S3外部帳戶的範例：
+   下面是S3外部帳戶的示例：
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
-1. 建立新工作流程，例如從 **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. 新增 **[!UICONTROL File transfer]** 活動並透過指定
+1. 建立新工作流，例如 **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**。
+1. 添加 **[!UICONTROL File transfer]** 活動並通過指定
 
-   * 用來連線至S3或(S)FTP伺服器的外部帳戶。
-   * S3或(S)FTP伺服器上的檔案路徑。
+   * 用於連接到S3或(S)FTP伺服器的外部帳戶。
+   * S3或(S)FTP伺服器上檔案的路徑。
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. 新增 **[!UICONTROL Delivery]** 活動，並將其連線至 **[!UICONTROL File transfer]** 活動。 請依下列方式設定：
+1. 添加 **[!UICONTROL Delivery]** 活動並將其連接到 **[!UICONTROL File transfer]** 的子菜單。 按如下方式配置：
 
-   * 傳送：根據您的需求，它可以是系統中已建立的特定傳送，或是根據現有範本的新傳送。
-   * 收件者：在此範例中，會將目標視為傳送本身中指定。
-   * 內容：即使內容匯入上一個活動，請選取 **[!UICONTROL Specified in the delivery]**. 由於內容是從位於遠端伺服器上的檔案直接匯入，因此在由工作流程處理時沒有識別碼，且無法識別為來自入站事件。
-   * 要執行的動作：選擇 **[!UICONTROL Save]** 儲存傳遞，並能從 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** 執行工作流程後。
+   * 交貨：根據您的需要，它可以是系統中已建立的特定交貨，也可以是基於現有模板的新交貨。
+   * 收件人：在本示例中，將目標視為在傳遞本身中指定。
+   * 內容：即使內容在上一活動中導入，請選擇 **[!UICONTROL Specified in the delivery]**。 由於內容直接從位於遠程伺服器上的檔案導入，因此當工作流處理時它沒有標識符，因此無法標識為來自入站事件。
+   * 要執行的操作：選擇 **[!UICONTROL Save]** 保存交貨，並能夠從 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** 執行工作流後。
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. 在 **[!UICONTROL Script]** 的 **[!UICONTROL Delivery]** 活動中，新增下列命令以載入傳送中匯入檔案的內容：
+1. 在 **[!UICONTROL Script]** 頁籤 **[!UICONTROL Delivery]** 活動，添加以下命令以在傳遞中載入導入檔案的內容：
 
    ```
    delivery.content.md.source=loadFile(vars.filename)
@@ -52,8 +50,8 @@ ht-degree: 3%
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. 儲存並執行工作流程。 載入內容的新傳送會在 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
+1. 保存並執行工作流。 將在下面建立包含已載入內容的新傳遞 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
 >[!NOTE]
 >
->詳細說明SFTP伺服器使用的最佳實務和疑難排解 [在本頁](../../platform/using/sftp-server-usage.md).
+>詳細介紹了SFTP伺服器使用的最佳做法和故障排除 [此頁](../../platform/using/sftp-server-usage.md)。

@@ -2,7 +2,8 @@
 product: campaign
 title: 在電子郵件中插入條形碼
 description: 在電子郵件中插入條形碼
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+feature: Email Design
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%

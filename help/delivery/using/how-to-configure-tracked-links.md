@@ -2,8 +2,9 @@
 product: campaign
 title: 如何設定追蹤的連結
 description: 如何設定追蹤的連結
+feature: Monitoring
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%

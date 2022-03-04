@@ -2,8 +2,9 @@
 product: campaign
 title: 指標計算
 description: 指標計算
+feature: Reporting
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '2972'
 ht-degree: 2%
@@ -33,7 +34,7 @@ ht-degree: 2%
    <td> sum(Iif([@url-id]=1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按一下<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @clicks<br /> </td> 
    <td> URL類型等於「電子郵件按一下」的@totalClicks總和。<br /> </td> 
    <td> sum(Iif([url/@type]=1, @totalClicks, 0))<br /> </td> 
@@ -109,7 +110,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 錯誤<br /> </td> 
-   <td> @value<br /> </td> 
+   <td> @值<br /> </td> 
    <td> 此類錯誤的失敗消息數。<br /> </td> 
    <td> 計數(@status=2和msg/@failureReason="錯誤類型的值")<br /> </td> 
   </tr> 
@@ -230,7 +231,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 電子郵件<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @電子郵件<br /> </td> 
    <td> URL類別等於「email」@totalClicks的所有總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
@@ -566,7 +567,7 @@ ht-degree: 2%
    <td> Countdistinct([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按一下<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @recipientClick<br /> </td> 
    <td> URL類型等於「電子郵件按一下」的@broadLog-id的不同計數。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
@@ -645,7 +646,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 電子郵件<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @電子郵件<br /> </td> 
    <td> URL類別等於「email」的@totalClicks總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
@@ -721,13 +722,13 @@ ht-degree: 2%
    <td> 百分比([指標/@totalRecipientClick],[指標/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按一下<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @_click<br /> </td> 
    <td> URL主鍵不@totalClicks於1的所有計數<br /> </td> 
    <td> count(Iif([@url-id]] != 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按一下(%)<br /> </td> 
+   <td> 點按次數 (%)<br /> </td> 
    <td> -<br /> </td> 
    <td> 與累計點擊總數相比的點擊次數百分比。<br /> </td> 
    <td> 百分比(@_click、@_total)<br /> </td> 
@@ -815,7 +816,7 @@ ht-degree: 2%
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按一下<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @clicks<br /> </td> 
    <td> URL類型等於「電子郵件按一下」的@totalClicks總和。<br /> </td> 
    <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
@@ -874,7 +875,7 @@ ht-degree: 2%
    <td> Countdistinct([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按一下<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @personClick<br /> </td> 
    <td> URL類別等於「電子郵件按一下」的@source-id總數。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 

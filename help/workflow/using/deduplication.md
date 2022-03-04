@@ -2,9 +2,9 @@
 product: campaign
 title: 去重複化
 description: 瞭解有關重複資料消除工作流活動的詳細資訊
-feature: Workflows, Data Management
+feature: Workflows, Targeting Activity
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -19,15 +19,15 @@ ht-degree: 10%
 
 的 **[!UICONTROL Deduplication]** 活動用於從資料集中刪除重複行。 例如，以下記錄可被視為重複，因為它們具有相同的電子郵件地址和相同的行動電話和/或家庭電話。
 
-| 上次修改日期 | 名字 | 姓氏 | 電子郵件 | 手機 | 電話 |
+| 上次修改日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
 -----|------------|-----------|-------|--------------|------
 | 02/03/2020 | 鮑勃 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
-| 05/19/2020 | 羅伯特 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 05/19/2020 | Robert | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | 鮑比 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 的 **[!UICONTROL Deduplication]** 活動能夠在標識重複項後將整個行保留為唯一記錄。 例如，在上述使用情形中，如果將活動配置為僅保留具有最舊記錄的記錄 **[!UICONTROL Date]**&#x200B;結果是：
 
-| 日期 | 名字 | 姓氏 | 電子郵件 | 手機 | 電話 |
+| 日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
 -----|----------|------------|-------|--------------|------
 | 02/03/2020 | 鮑勃 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
@@ -35,7 +35,7 @@ ht-degree: 10%
 
 補充：
 
-| 日期 | 名字 | 姓氏 | 電子郵件 | 手機 | 電話 |
+| 日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
 -----|------------|-----------|-------|--------------|------
 | 05/19/2020 | 羅伯特 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | 鮑比 | 蒂斯納 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
@@ -59,7 +59,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param.png)
 
-1. 選擇此活動的目標類型（預設情況下，重複資料消除連結到收件人）和要使用的標準，即相同值允許您標識重複項的欄位。
+1. Select the type of target for this activity (by default, deduplication is linked to recipients) and the criterion to be used, i.e. the field for which identical values enable you to identify duplicates.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
-1. 從下拉清單中，選擇要使用的重複資料消除方法，並輸入要保留的重複項數。
+1. From the drop-down list, select the deduplication method to be used, and enter the number of duplicates to be kept.
 
    ![](assets/s_user_segmentation_dedup_param4.png)
 

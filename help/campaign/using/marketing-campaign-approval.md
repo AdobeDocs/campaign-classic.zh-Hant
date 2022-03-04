@@ -2,9 +2,9 @@
 product: campaign
 title: 設定及管理核准流程
 description: 瞭解如何管理營銷活動的批准
-feature: Approvals
+feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '2438'
 ht-degree: 2%
@@ -17,14 +17,14 @@ ht-degree: 2%
 
 交付的每個步驟都需經過批准，以確保充分監控和控制活動的各種過程：目標、內容、預算、提取和發送證據。
 
-通知消息被發送給被指定審核者的Adobe Campaign操作員，以通知他們批准請求。 檢查審閱人是否 **適當權限** 以便批准，並且其安全區定義正確。 [了解更多](#selecting-reviewers)。
+通知消息被發送給被指定審核者的Adobe Campaign操作員，以通知他們批准請求。 檢查審閱人是否 **適當權限** 以便批准，並且其安全區定義正確。 [了解更多資訊](#selecting-reviewers)。
 
 審批程式在 [此部分](#checking-and-approving-deliveries)。
 
 >[!NOTE]
 >
 >只有交貨所有者才能啟動交貨。 要使其他運算子（或運算子組）能夠啟動交付，您必須將它們添加為 **[!UICONTROL Delivery start:]** 的子菜單。\
->[了解更多](#selecting-reviewers)。
+>[了解更多資訊](#selecting-reviewers)。
 
 ## 操作原則 {#operating-principle-}
 
@@ -171,7 +171,7 @@ Adobe Campaign允許您以協作模式為市場營銷活動的主要階段設定
 
 對於您可以批准交付目標的每個市場活動，內容(請參閱： [審核內容](#approving-content))和成本。 可以透過電子郵件形式通知負責核准的 Adobe Campaign 操作者，然後他們可透過主控台或網路連線核准或拒絕核准。請參閱 [批准交貨的步驟](#approving-processes)。
 
-完成這些驗證階段後，可啟動交付。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
+完成這些驗證階段後，可啟動交付。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
 
 ### 批准交貨的步驟 {#approving-processes}
 

@@ -2,11 +2,9 @@
 product: campaign
 title: 依儲存格列出的優惠
 description: 依儲存格列出的優惠
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows, Targeting Activity, Interaction
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 8%
@@ -17,19 +15,19 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-此 **[!UICONTROL Offers by cell]** 活動可讓您將入站母體（例如從查詢）分佈至數個區段，並指定要呈現給每個區段的選件。
+的 **[!UICONTROL Offers by cell]** 活動允許您將入站總量（例如從查詢）分配到多個段，並指定要為這些段中的每個段提供的優惠。
 
-此活動只能與 **互動**. 如需詳細資訊，請參閱 [節](../../interaction/using/about-outbound-channels.md).
+此活動只能與 **交互**。 有關詳細資訊，請參閱 [節](../../interaction/using/about-outbound-channels.md)。
 
 操作步驟：
 
-1. 新增 **[!UICONTROL Offers by cell]** 在您指定目標母體後，請開啟它。
-1. 在 **[!UICONTROL General]** 索引標籤，選取您要呈現選件的選件空間。
-1. 在 **[!UICONTROL Cells]** 頁簽，使用 **[!UICONTROL Add]** 按鈕：
+1. 添加 **[!UICONTROL Offers by cell]** 在指定目標人口後開啟該活動。
+1. 在 **[!UICONTROL General]** 頁籤，選擇要在其上顯示聘用的聘用空間。
+1. 在 **[!UICONTROL Cells]** 頁籤，使用 **[!UICONTROL Add]** 按鈕：
 
-   * 使用可用的篩選和限制規則指定子集母體。
-   * 接下來，選取您要呈現給子集的選件。 可用優惠方案是指在上一步選取的優惠方案空間上符合資格的優惠方案。
+   * 使用可用過濾和限制規則指定子集填充。
+   * 接下來，選擇要向子集顯示的優惠。 可用的優惠是那些在上一步選擇的優惠空間中符合條件的優惠。
 
       ![](assets/int_offer_per_cell1.png)
 
-1. 然後設定與您選擇的通道相對應的傳送活動。 請參閱 [跨通道傳遞](cross-channel-deliveries.md).
+1. 然後配置與所選渠道對應的傳遞活動。 請參閱 [跨渠道交付](cross-channel-deliveries.md)。

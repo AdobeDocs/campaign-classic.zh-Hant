@@ -2,8 +2,9 @@
 product: campaign
 title: 建立傳遞範本
 description: 瞭解如何通過專用使用案例執行A/B測試
+feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 20%
@@ -29,4 +30,4 @@ ht-degree: 20%
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-您現在可以在工作流中配置交貨。 [了解更多](a-b-testing-uc-configuring-deliveries.md)。
+您現在可以在工作流中配置交貨。 [了解更多資訊](a-b-testing-uc-configuring-deliveries.md)。

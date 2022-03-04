@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: 篩選重複的收件者
-description: 了解如何篩選重複的收件者
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+description: 瞭解如何篩選重複的收件人
+feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 4%
@@ -17,26 +15,26 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-在此範例中，我們想篩選在傳送中出現兩次以上的收件者，以便復原重複的設定檔。
+在本示例中，我們要篩選在傳遞中出現兩次或多次的收件人，以便恢復重複的配置檔案。
 
-若要建立此範例，請套用下列步驟：
+要建立此示例，請應用以下步驟：
 
-1. 拖放 **[!UICONTROL Query]** 活動，然後開啟活動。
-1. 按一下 **[!UICONTROL Edit query]** 並將目標和篩選維度設為 **[!UICONTROL Recipients]**.
+1. 拖放 **[!UICONTROL Query]** 的子菜單。
+1. 按一下 **[!UICONTROL Edit query]** 將目標和篩選維設定為 **[!UICONTROL Recipients]**。
 
    ![](assets/query_recipients_1.png)
 
-1. 定義下列篩選條件，以定位存在於傳送記錄中的收件者。 選擇 **收件者傳送記錄(broadlog)** 在 **運算式** 欄，選擇 **存在，例如** 在 **運算元** 欄。
+1. 為傳遞日誌中存在的目標收件人定義以下篩選條件。 選擇 **收件人交付日誌(broadlog)** 的 **表達式** 列，選擇 **存在** 的 **運算子** 的雙曲餘切值。
 
    ![](assets/query_recipients_2.png)
 
-1. 定義下列篩選條件以定位您的傳送。 選擇 **[!UICONTROL Internal name]** 在「運算式」欄中， **[!UICONTROL equal to]** （在運算子欄中）。
-1. 在值欄中，新增目標傳送的內部名稱。
+1. 定義以下篩選條件以定位交貨。 選擇 **[!UICONTROL Internal name]** 在「表達式」列和 **[!UICONTROL equal to]** 的下界。
+1. 在值列中，添加目標傳遞的內部名稱。
 
    ![](assets/query_recipients_3.png)
 
-1. 使用 **[!UICONTROL AND]** 運算子，重複相同的操作以鎖定其他傳送。
+1. 與 **[!UICONTROL AND]** 運算子，重複相同的操作以瞄準其他交貨。
 
    ![](assets/query_recipients_4.png)
 
-您的出站轉變包含傳遞中鎖定的重複收件者。
+您的出站轉移包含交貨中目標的重複收件人。

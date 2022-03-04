@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: 瞭解隔離管理
-description: 瞭解隔離管理
-feature: Monitoring
+title: 認識隔離管理
+description: 認識隔離管理
+feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '2837'
 ht-degree: 10%
@@ -497,7 +497,7 @@ SMS消息的隔離機制與一般進程全局相同。 請參閱 [關於隔離](
   </tr> 
   <tr> 
    <td> 發送到提供程式<br /> </td> 
-   <td> 已發送<br /> </td> 
+   <td> 已傳送<br /> </td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 

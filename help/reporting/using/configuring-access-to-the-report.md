@@ -2,8 +2,9 @@
 product: campaign
 title: 設定報告存取權
 description: 設定報告存取權
+feature: Reporting
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
@@ -48,7 +49,7 @@ ht-degree: 1%
 
 這意味著，如果市場活動的主要渠道是直郵，則市場活動報告中將不提供此報告。
 
-### 訪問授權 {#access-authorization}
+### 存取授權 {#access-authorization}
 
 報告可以與其他運算子共用。
 

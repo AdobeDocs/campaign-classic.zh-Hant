@@ -1,78 +1,68 @@
 ---
-title: 使用重複資料刪除活動的合併功能
-description: 了解如何使用重複資料刪除活動的合併功能
-page-status-flag: never-activated
-uuid: 8887574e-447b-48a5-afc6-95783ffa7fb3
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
-audience: workflow
-content-type: reference
-topic-tags: use-cases
-discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
-index: y
-internal: n
-snippet: y
+title: 使用重複資料消除活動的合併功能
+description: 瞭解如何使用重複資料消除活動的合併功能
+feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
-# 使用重複資料刪除活動的合併功能 {#deduplication-merge}
+# 使用重複資料消除活動的合併功能 {#deduplication-merge}
 
 ![](../../assets/common.svg)
 
 ## 關於此使用實例 {#about-this-use-case}
 
-此使用案例說明如何使用 **[!UICONTROL Merge]** 功能 **[!UICONTROL Deduplication]** 活動。
+此用例說明如何使用 **[!UICONTROL Merge]** 功能 **[!UICONTROL Deduplication]** 的子菜單。
 
-有關此功能的詳細資訊，請參閱 [本節](deduplication.md#merging-fields-into-single-record).
+有關此功能的詳細資訊，請參閱 [此部分](deduplication.md#merging-fields-into-single-record)。
 
-此 **[!UICONTROL Deduplication]** 活動用於從資料集中移除重複列。 在此使用案例中，下方顯示的資料會根據「電子郵件」欄位重複。
+的 **[!UICONTROL Deduplication]** 活動用於從資料集中刪除重複行。 在此使用情形中，下面顯示的資料將基於「電子郵件」欄位進行複製。
 
 | 上次修改日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
 |-----|------------|-----------|-------|--------------|------|
 | 5/19/2020 | 羅伯特 | 蒂斯納 | bob@mycompany.com | 444-444-444 | 777-777-7777 |
 | 7/22/2020 | 鮑比 | 蒂斯納 | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 10/03/2020 | 鮑勃 |  | bob@mycompany.com |  | 888-888-8888 |
 
-重複資料刪除活動 **[!UICONTROL Merge]** 方案上，您可以為重複資料刪除設定一組規則，以定義一組要合併到單一結果資料記錄中的欄位。 例如，使用一組重複記錄時，您可以選擇保留最舊的電話號碼或最新名稱。
+使用重複資料消除活動 **[!UICONTROL Merge]** 方案性，您可以為重複資料消除配置一組規則，以定義一組要合併到單個結果資料記錄中的欄位。 例如，對於一組重複的記錄，您可以選擇保留最舊的電話號碼或最近的名稱。
 
-## 啟用合併功能 {#activating-merge}
+## 激活合併功能 {#activating-merge}
 
 
-若要啟用合併功能，您必須先設定 **[!UICONTROL Deduplication]** 活動。 要執行此操作，請依照下列步驟執行：
+要啟用合併功能，您首先需要配置 **[!UICONTROL Deduplication]** 的子菜單。 要執行此操作，請依照下列步驟執行：
 
-1. 開啟活動，然後按一下 **[編輯配置]** 連結。
+1. 開啟活動，然後按一下 **[編輯配置]** 的子菜單。
 
-1. 選取要用於重複資料刪除的調解欄位，然後按一下 **[!UICONTROL Next]**. 在此範例中，我們想根據電子郵件欄位去重複化。
+1. 選擇要用於重複資料消除的協調欄位，然後按一下 **[!UICONTROL Next]**。 在本示例中，我們要根據電子郵件欄位進行重複資料消除。
 
    ![](assets/uc_merge_edit.png)
 
-1. 按一下 **[!UICONTROL Advanced parameters]** 連結，然後啟動 **[!UICONTROL Merge records]** 和 **[!UICONTROL Use several record merging criteria]** 選項。
+1. 按一下 **[!UICONTROL Advanced parameters]** 連結，然後激活 **[!UICONTROL Merge records]** 和 **[!UICONTROL Use several record merging criteria]** 頁籤
 
    ![](assets/uc_merge_advanced_parameters.png)
 
-1. 此 **[!UICONTROL Merge]** 標籤 **[!UICONTROL Deduplication]** 設定畫面。 我們將使用此索引標籤來指定執行重複資料刪除時要合併的資料。
+1. 的 **[!UICONTROL Merge]** 頁籤 **[!UICONTROL Deduplication]** 配置螢幕。 我們將使用此頁籤指定執行重複資料消除時要合併的資料。
 
-## 設定要合併的欄位 {#configuring-rules}
+## 配置要合併的欄位 {#configuring-rules}
 
-以下是我們要用來將資料合併至單一記錄的規則：
+以下是我們希望將資料合併到單個記錄中的規則：
 
-* 保留最近的名稱（名字和姓氏欄位）,
-* 留著最新的手機，
+* 保留最新名稱（名字和姓氏欄位）,
+* 留下最新的手機，
 * 保留最舊的電話號碼，
-* 組中的所有欄位必須為非空值，才能符合最終記錄的資格。
+* 組中的所有欄位必須為非NULL才能符合最終記錄的條件。
 
-若要設定這些規則，請遵循下列步驟：
+要配置這些規則，請執行以下步驟：
 
-1. 開啟 **[!UICONTROL Merge]** ，然後按一下 **[!UICONTROL Add]** 按鈕。
+1. 開啟 **[!UICONTROL Merge]** ，然後按一下 **[!UICONTROL Add]** 按鈕
 
    ![](assets/uc_merge_add.png)
 
-1. 指定要合併的欄位群組的識別碼和標籤。
+1. 指定要合併的欄位組的標識符和標籤。
 
    ![](assets/uc_merge_identifier.png)
 
@@ -80,15 +70,15 @@ ht-degree: 5%
 
    ![](assets/uc_merge_filter.png)
 
-1. 按上次修改日期排序，以選取最近的名稱。
+1. 在上次修改日期排序以選擇最新名稱。
 
    ![](assets/uc_merge_sort.png)
 
-1. 選擇要合併的欄位。 在此範例中，我們想保留名字和姓氏欄位。
+1. 選擇要合併的欄位。 在此示例中，我們要保留名字和姓氏欄位。
 
    ![](assets/uc_merge_keep.png)
 
-1. 欄位會新增至要合併的資料集，而新元素會新增至工作流程架構。
+1. 這些欄位將添加到要合併的資料集中，並且新元素將添加到工作流架構中。
 
    重複這些步驟以配置行動電話和電話欄位。
 
@@ -98,15 +88,15 @@ ht-degree: 5%
 
 ## 結果 {#results}
 
-設定這些規則後，會在 **[!UICONTROL Deduplication]** 活動。
+在配置這些規則後，將在 **[!UICONTROL Deduplication]** 的子菜單。
 
 | 修改日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
 |-----|------------|-----------|-------|--------------|------|
 | 5/19/2020 | 羅伯特 | 蒂斯納 | bob@mycompany.com | 444-444-444 | 777-777-7777 |
 | 7/22/2020 | 鮑比 | 蒂斯納 | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 10/03/2020 | 鮑勃 |  | bob@mycompany.com |  | 888-888-8888 |
 
-根據先前設定的規則，從三個記錄中合併結果。 通過對比，得出使用最新名稱和手機以及原電話號碼的結論。
+根據先前配置的規則，將結果從三個記錄中合併。 通過比較，得出使用最近的姓名和手機以及原始電話號碼。
 
 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
 |------------|-----------|-------|--------------|------|
@@ -114,6 +104,6 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> 請注意，已合併的名字是「Bobby」，因為我們已設定由名字和姓氏欄位組成的「Name」規則。
+> 請注意，已合併的名稱是「Bobby」，因為我們配置了由名稱和最後一個欄位組成的「Name」規則。
 >
->因此，無法考慮&quot;Bob&quot;（最近的名字），因為其相關聯的姓氏欄位為空。 最近的名字和姓氏組合合併到最後記錄。
+>因此，「Bob」（最近的名）無法被考慮，因為其關聯的姓氏欄位為空。 最近的名字和姓氏組合在最後記錄中合併。

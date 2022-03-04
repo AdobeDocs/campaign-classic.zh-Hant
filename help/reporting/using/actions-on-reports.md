@@ -2,8 +2,9 @@
 product: campaign
 title: 針對報吿的動作
 description: 針對報吿的動作
+feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 3%

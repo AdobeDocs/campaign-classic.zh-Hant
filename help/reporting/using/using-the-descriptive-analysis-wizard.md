@@ -2,8 +2,9 @@
 product: campaign
 title: 使用描述性分析精靈
 description: 使用描述性分析精靈
+feature: Reporting
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%

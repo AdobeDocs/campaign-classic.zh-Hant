@@ -2,8 +2,9 @@
 product: campaign
 title: 追蹤疑難排解
 description: 本節提供與跟蹤Adobe Campaign Classic配置和實施有關的常見問題
+feature: Monitoring
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%

@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: 外部訊號
-description: 深入了解外部訊號工作流程活動
-audience: workflow
-content-type: reference
-topic-tags: flow-control-activities
+description: 瞭解有關外部信號工作流活動的詳細資訊
+feature: Workflows
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -17,20 +15,20 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-此 **外部信號** 活動可讓您觸發在工作流程中對排程執行一組任務。
+的 **外部信號** 「活動」(Activity)，用於觸發工作流中一組任務的執行到調度。
 
-「外部信號」任務激活後，將無限期暫停，或直到指定時段結束。 其轉變由SOAP呼叫啟動 **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete)。** 此 **[!UICONTROL complete]** 參數可讓任務完成，因此不會對後續呼叫做出反應。
+激活「外部信號」任務時，該任務將無限期地暫停或直到指定時間段結束。 其轉換由SOAP調用激活 **PostEvent（sessionToken、workflowId、activity、transition、參數、完成）。** 的 **[!UICONTROL complete]** 參數允許任務完成，因此不會對後續調用做出反應。
 
-有關PostEvent函式的詳細資訊，請參閱有關SOAP呼叫的線上檔案。
+有關PostEvent函式的詳細資訊，請參閱有關SOAP調用的聯機文檔。
 
-您可以設定此活動，以便在未收到任何訊號時定義事件。 若要這麼做，請編輯活動並按一下 **[!UICONTROL Expiration]** 標籤。 按一下 **[!UICONTROL Insert]** 按鈕來建立和設定事件。
+您可以配置此活動，以便在未收到任何信號時定義事件。 為此，請編輯活動，然後按一下 **[!UICONTROL Expiration]** 頁籤。 按一下 **[!UICONTROL Insert]** 按鈕來建立和配置事件。
 
 ![](assets/edit_signal.png)
 
-到期日的設定在 [過期](defining-approvals.md).
+過期的配置在 [過期](defining-approvals.md)。
 
-此 **延遲** 欄位可讓您以選擇的單位指定到期延遲。 請參閱 [等待](wait.md).
+的 **延遲** 欄位中，您可以以所選單位指定過期延遲。 請參閱 [等待](wait.md)。
 
-每行代表過期類型，並與轉變一致。
+每行表示到期類型，並與過渡一致。
 
 ![](assets/external_sign_diag.png)

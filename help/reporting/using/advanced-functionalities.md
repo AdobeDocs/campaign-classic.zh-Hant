@@ -2,8 +2,9 @@
 product: campaign
 title: 進階功能
 description: 瞭解有關使用報告時高級功能的更多資訊
+feature: Reporting
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 4%

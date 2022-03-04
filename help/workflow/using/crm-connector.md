@@ -1,11 +1,9 @@
 ---
 title: CRM 連結器
-description: 深入了解CRM連接器和設定資料同步
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+description: 瞭解有關CRM連接器和配置資料同步的詳細資訊
+feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 3%
@@ -16,21 +14,21 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-此 **CRM連接器** 活動可讓您設定Adobe Campaign與CRM系統之間的資料同步。
+的 **CRM連接器** 活動，用於配置Adobe Campaign和CRM系統之間的資料同步。
 
-如需Adobe Campaign中CRM連接器的詳細資訊，請參閱 [節](../../platform/using/crm-connectors.md).
+有關Adobe CampaignCRM連接器的詳細資訊，請參閱此 [節](../../platform/using/crm-connectors.md)。
 
-透過此活動，您可以：
+通過本練習，您可以：
 
-* 從CRM匯入
-* 匯出至CRM
+* 從CRM導入
+* 導出到CRM
 * 導入在CRM中刪除的對象
 * 刪除CRM中的對象
 
 ![](assets/crm_task_select_op.png)
 
-選擇與要配置同步的CRM匹配的外部帳戶，然後選擇要同步的對象（帳戶、機會、聯繫人等）。
+選擇與要配置同步的CRM匹配的外部帳戶，然後選擇要同步的對象（帳戶、業務機會、聯繫人等）。
 
 ![](assets/crm_task_select_obj.png)
 
-此活動的設定取決於要執行的程式。 詳細說明各種設定 [在本頁](../../platform/using/crm-data-sync.md).
+此活動的配置取決於要執行的進程。 詳細列出了各種配置 [此頁](../../platform/using/crm-data-sync.md)。

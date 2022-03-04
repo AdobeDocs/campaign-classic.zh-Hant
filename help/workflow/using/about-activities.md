@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 關於活動
+title: 關於工作流活動
 description: 關於活動
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 12%
+source-wordcount: '95'
+ht-degree: 10%
 
 ---
 

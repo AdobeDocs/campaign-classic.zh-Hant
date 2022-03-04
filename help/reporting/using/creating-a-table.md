@@ -2,8 +2,9 @@
 product: campaign
 title: 建立表格
 description: 建立表格
+feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 ## 建立包含組的清單 {#creating-a-list-with-group}
 
-A **[!UICONTROL List with group]** type表用於對表中的資料進行分組並生成其統計資訊。 例如，您可以為資料建立合計和子合計。 每個組都有其自己的頁眉、詳細資訊和頁腳行。
+A **[!UICONTROL List with group]** type table lets you group data in the table and produce statistics on it. 例如，您可以為資料建立合計和子合計。 每個組都有其自己的頁眉、詳細資訊和頁腳行。
 
 >[!CAUTION]
 >
@@ -40,10 +41,10 @@ A **[!UICONTROL List with group]** type表用於對表中的資料進行分組�
 
 下面提供了一個完整的實現示例： [用例：使用組清單建立報告](#use-case--create-a-report-with-a-group-list)。
 
-請注意以下步驟，以建立「具有組的清單」類型表：
+Please note the following steps to create a &#39;List with group&#39; type table:
 
-1. 轉到報表圖表並放置 **[!UICONTROL Query]** 的子菜單。 請參閱 [收集要分析的資料](../../reporting/using/collecting-data-to-analyze.md)。
-1. 填入源表，並選擇統計資訊將關注的表欄位。
+1. 轉到報表圖表並放置 **[!UICONTROL Query]** 的子菜單。 Refer to [Collect data to analyze](../../reporting/using/collecting-data-to-analyze.md).
+1. Fill in the source table and select the fields of the table which the statistics will concern.
 1. 放置a **[!UICONTROL Page]** 的下界。 有關此內容的詳細資訊，請參閱 [靜態元素](../../reporting/using/creating-a-new-report.md#static-elements)。
 1. 插入 **[!UICONTROL List with group]** 在頁面中鍵入table。
 1. 指定資料路徑，或在查詢中選擇作為資料源的表。
@@ -142,11 +143,11 @@ A **[!UICONTROL List with group]** type表用於對表中的資料進行分組�
 
 ![](assets/s_advuser_ergo_listgroup_012.png)
 
-日期配置示例：可以選擇是否顯示時間。
+Configuration example for dates: you can choose whether or not to display the time.
 
 ![](assets/s_advuser_ergo_listgroup_013.png)
 
-的 **邊框** 頁籤中，您可以將邊框添加到表格中的行和列。 將大型報告導出到Excel時，向單元格添加邊框可能會導致效能問題。
+的 **邊框** 頁籤中，您可以將邊框添加到表格中的行和列。 Adding borders to the cells may lead to performance issues when exporting large reports into Excel.
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
@@ -206,13 +207,13 @@ A **[!UICONTROL List with group]** type表用於對表中的資料進行分組�
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
-按一下 **[!UICONTROL Save]** 的子菜單。
+Click **[!UICONTROL Save]** to create the report.
 
-轉到圖表並添加用於設計報告內容的第一個元件：第一查詢和第一頁。
+Go to the chart and add the first components to be used for designing the report content: a first query and a first page.
 
 ![](assets/reporting_quick_start_diagram.png)
 
-### 步驟2 — 建立第一個查詢 {#step-2---create-the-first-query}
+### Step 2 - Create the first query {#step-2---create-the-first-query}
 
 第一個查詢允許您收集連結到每個市場活動的交貨。 目標是顯示一份關於與每次活動連結的Adobe Campaign資料庫各種交付情況的報告。
 
@@ -302,11 +303,11 @@ A **[!UICONTROL List with group]** type表用於對表中的資料進行分組�
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. 在窗口的下部，按一下 **[!UICONTROL Add]** 並指定 **`/vars/selectedDelivery`** 路徑和 **[!UICONTROL @deliveryId]** 與先前建立的查詢中定義的傳遞主鍵的別名匹配的表達式。 此公式允許您訪問所選交貨。
+1. 在窗口的下部，按一下 **[!UICONTROL Add]** 並指定 **`/vars/selectedDelivery`** 路徑和 **[!UICONTROL @deliveryId]** 與先前建立的查詢中定義的傳遞主鍵的別名匹配的表達式。 This formula lets you access the selected delivery.
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
-1. 編輯組頁腳行的第二個單元格並輸入 **[!UICONTROL Total per campaign]** 的子菜單。
+1. Edit the second cell of the footer line of the group and enter **[!UICONTROL Total per campaign]** as a label.
 
    ![](assets/s_advuser_report_listgroup_012.png)
 
@@ -360,7 +361,7 @@ A **[!UICONTROL List with group]** type表用於對表中的資料進行分組�
 
 我們希望添加第二個查詢和第二個頁面，以便在報表用戶按一下交貨時顯示交貨的詳細資訊。 在添加查詢之前，請編輯已建立的頁並啟用傳出轉換，以便它可以連結到查詢。
 
-1. 在 **[!UICONTROL Page]** 活動並編輯其架構：選擇 **[!UICONTROL Recipient delivery logs]** 架構。
+1. Add a new query after the **[!UICONTROL Page]** activity and edit its schema: select the **[!UICONTROL Recipient delivery logs]** schema.
 
    ![](assets/reporting_quick_start_query-2.png)
 

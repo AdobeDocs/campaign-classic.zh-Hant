@@ -2,8 +2,9 @@
 product: campaign
 title: 發佈範本
 description: 發佈範本
+feature: Templates
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -34,7 +35,7 @@ ht-degree: 0%
 
 ## 建立和配置模板 {#creating-and-configuring-the-template}
 
-發佈模板預設儲存在 **[!UICONTROL Administration > Configuration > Publication templates]** 的下界。 要建立新模板，請按一下 **[!UICONTROL New]** 按鈕。
+Publication templates are stored by default in the **[!UICONTROL Administration > Configuration > Publication templates]** node. 要建立新模板，請按一下 **[!UICONTROL New]** 按鈕。
 
 要配置發佈模板，請填充模板的名稱（即由名稱和命名空間組成的標識鍵）、其標籤、資料架構及其連結的輸入表單。
 
@@ -67,12 +68,12 @@ ht-degree: 0%
 以下發佈選項可用：
 
 * 輸出檔案編碼字元集可通過 **[!UICONTROL Encoding]** 的子菜單。 預設使用拉丁文1(1252)字元集。
-* 的 **[!UICONTROL Multi-file generation]** 的子菜單。 此選項包括在輸出文檔的每頁的開頭填充分區標籤。 生成內容將為每個填充的分區標籤生成檔案。 此模式用於從內容塊生成迷你站點。 有關此的詳細資訊，請參閱 [多檔案生成](#multi-file-generation)。
-* 的 **[!UICONTROL Location]** 欄位包含輸出檔案的名稱。 名稱可由變數組成，以便生成自動檔案名。
+* 的 **[!UICONTROL Multi-file generation]** 的子菜單。 此選項包括在輸出文檔的每頁的開頭填充分區標籤。 生成內容將為每個填充的分區標籤生成檔案。 此模式用於從內容塊生成迷你站點。 for more on this, refer to [Multi-file generation](#multi-file-generation).
+* The **[!UICONTROL Location]** field contains the name of the output file. 名稱可由變數組成，以便生成自動檔案名。
 
    變數填充的格式如下： **`$(<xpath>)`**，也請參見Wiki頁。 **`<xpath>`** 是發佈模板資料架構的欄位的路徑。
 
-   檔案名可以由日期類型欄位組成。 要正確設定此欄位的格式，請使用 **$date格式** 函式，使用欄位的路徑和輸出格式作為參數。
+   The name of a file can consist of a date-type field. 要正確設定此欄位的格式，請使用 **$date格式** 函式，使用欄位的路徑和輸出格式作為參數。
 
    預設情況下，檔案名的構造格式使用「@name」和「@date」欄位中的變數：
 
@@ -104,13 +105,13 @@ ht-degree: 0%
 
 要激活多個檔案生成，請選擇 **[!UICONTROL Multi-file generation]** 的子菜單。 此選項用於在樣式表中為輸出文檔的每頁開始指定分區標籤。 內容的生成將為遇到的每個分區標籤生成檔案。
 
-要在樣式表中整合的分區標籤如下：
+The partitioning tag to be integrated in the stylesheet is as follows:
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** 何處 **`<name_of_file>`** 是要生成的頁的檔案名。
 
-**示例：** 使用&quot;cus:book&quot;架構生成多個檔案。
+**Example:** Multiple file generation using the &quot;cus:book&quot; schema.
 
-其原則是生成一個首頁，列出各章，並有可能在外部頁面中顯示各章的詳細資訊。
+The principle is to generate a main page listing the chapters, with the possibility of displaying the details of the chapter in an external page.
 
 ![](assets/d_ncs_content_chunk.png)
 

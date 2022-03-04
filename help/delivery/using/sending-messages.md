@@ -2,8 +2,9 @@
 product: campaign
 title: 發送電子郵件的關鍵步驟
 description: 瞭解如何確認電子郵件的傳送並發現電子郵件傳送的特殊性
+feature: Email
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%

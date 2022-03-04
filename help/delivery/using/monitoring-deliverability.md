@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: 監測Adobe Campaign Classic的交付能力
+title: 監控Adobe Campaign Classic的可交付性
 description: 瞭解有關Adobe Campaign Classic可交付性監控的工具和准則。
 feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 1%

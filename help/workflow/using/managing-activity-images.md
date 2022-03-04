@@ -1,16 +1,17 @@
 ---
 product: campaign
-title: 更改活動映像
+title: 變更活動影像
 description: 瞭解如何更改活動映像
+feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 更改活動映像{#change-activity-images}
+# 變更活動影像{#change-activity-images}
 
 ![](../../assets/common.svg)
 

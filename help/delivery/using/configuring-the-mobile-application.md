@@ -2,8 +2,9 @@
 product: campaign
 title: 在Adobe Campaign配置iOS移動應用程式
 description: 瞭解如何為iOS設定移動應用程式
+feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 6%

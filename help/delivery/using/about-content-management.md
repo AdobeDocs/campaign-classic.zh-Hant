@@ -2,8 +2,9 @@
 product: campaign
 title: 關於內容管理
 description: 開始使用Campaign Content Manager模組
+feature: Landing Pages, Email Design
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 2%

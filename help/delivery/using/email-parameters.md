@@ -2,8 +2,9 @@
 product: campaign
 title: 電子郵件參數
 description: 瞭解特定於電子郵件傳遞的選項和設定
+feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 8%

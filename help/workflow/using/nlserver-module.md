@@ -2,11 +2,9 @@
 product: campaign
 title: Nlserver 模組
 description: Nlserver 模組
-audience: workflow
-content-type: reference
-topic-tags: action-activities
+feature: Workflows
 exl-id: 1b62b36e-9103-473d-817b-956ceaf7a0b5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '22'
 ht-degree: 27%
@@ -17,6 +15,6 @@ ht-degree: 27%
 
 ![](../../assets/common.svg)
 
-安 **nlserver模組** 活動會使用中央視窗中指定的參數啟動nlserver模組。
+安 **nlserver模組** 活動啟動nlserver模組，其參數在中央窗口中指定。
 
 ![](assets/nlserver_module_edit.png)

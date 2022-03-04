@@ -2,11 +2,9 @@
 product: campaign
 title: 檔案傳輸
 description: 瞭解有關檔案傳輸工作流活動的詳細資訊
-audience: workflow
-content-type: reference
-topic-tags: event-activities
+feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 47cc5bc2f16ea87b6a12f6bf500c1e8d1f406876
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 1%

@@ -2,11 +2,9 @@
 product: campaign
 title: 發佈行銷活動套件
 description: 發佈行銷活動套件
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 2%
@@ -17,50 +15,50 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-中央實體運算子會將想要提供的促銷活動發佈至 **[!UICONTROL list of campaign packages]**.
+中央實體運營商將發佈希望向中 **[!UICONTROL list of campaign packages]**。
 
-促銷活動套件必須先由中央實體核准，才能在促銷活動套件清單中發佈。 要執行此操作，您可以透過 **[!UICONTROL Approval parameters]** 行銷活動套件中的連結。
+在市場活動包清單中發佈它們之前，市場活動包必須經中央實體批准。 為此，可通過 **[!UICONTROL Approval parameters]** 連結。
 
-## 指派審核者 {#assigning-a-reviewer}
+## 分配審閱者 {#assigning-a-reviewer}
 
-若要選取審核者，請按一下 **[!UICONTROL Approval parameters]** 從促銷活動套件中連結，並從下拉式清單中選擇相關的審核者。
+要選擇審閱者，請按一下 **[!UICONTROL Approval parameters]** 連結到市場活動包，然後從下拉清單中選擇相關的審閱者。
 
 ![](assets/s_advuser_mkg_dist_define_valid.png)
 
-然後，您可以按一下 **[!UICONTROL Submit for approval]**.
+然後，您可以通過按一下 **[!UICONTROL Submit for approval]**。
 
 ![](assets/s_advuser_mkg_dist_valid_process.png)
 
-然後會傳送通知訊息給審核者，以確認此促銷活動套件的可用性。 該消息包含通過Web訪問接受或拒絕批准的連結。
+然後，通知消息將發送到審閱者以確認此市場活動包的可用性。 該消息包含通過Web訪問接受或拒絕批准的連結。
 
 ![](assets/s_advuser_mkg_dist_valid_process1.png)
 
 >[!NOTE]
 >
->在組織實體級別，您也可以指定審核者以批准訂單。 有關詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).
+>在組織實體層，您還可以指定審核者以批准訂單。 有關此內容的詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities)。
 
 ## 添加其他審閱者 {#adding-other-reviewers}
 
-您可以從 **[!UICONTROL Edit...]** 連結，可在促銷活動套件中找到 **[!UICONTROL Approval parameters...]** 標籤。
+可以從 **[!UICONTROL Edit...]** 連結，在活動包中 **[!UICONTROL Approval parameters...]** 頁籤。
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
-## 核准期間 {#approval-periods}
+## 審批期 {#approval-periods}
 
-預設情況下，審核者從提交日期起3天即可處理批准。
+預設情況下，審核者將從提交日期起3天處理審批。
 
-在「編輯審核者」視窗中，您也可以設定提醒，以便在未核准促銷活動套件時傳送一或多則訊息。 若要這麼做，請按一下 **[!UICONTROL Add reminder]** 連結，然後 **[!UICONTROL Add]** 按鈕。
+在「編輯審閱者」窗口中，您還可以設定提醒，以在市場活動包未獲批准時發送一個或多個消息。 要執行此操作，請按一下 **[!UICONTROL Add reminder]** 連結，然後 **[!UICONTROL Add]** 按鈕
 
-可在指定日期和/或 **x** 提交日期後的數天。 提醒類型可在提醒表的第一列中配置。 在以下範例中，審核者會在29/01/2014收到上的提醒訊息，亦即在 **[!UICONTROL Date]** 欄，並在核准期結束前（即提交以供核准日期後的兩天）提供第二個提醒。
+可在給定日期和/或 **x** 日期後的幾天。 提醒類型可以在提醒表的第一列中配置。 在下面的示例中，審閱者將在29/01/2014上收到一條提醒消息，即在 **[!UICONTROL Date]** 的日期，即提交審批日期後的兩天。
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 
-定義套件並提交套件以供核准後，執行排程會顯示在 **[!UICONTROL Audit]** 標籤。 它會顯示根據先前設定計算的處理期限，以及所有已設定提醒的日期。
+一旦定義了該程式包並且已提交該程式包以供審批，則執行計畫將顯示在 **[!UICONTROL Audit]** 頁籤。 它顯示根據先前配置計算的處理截止時間以及所有已配置提醒的日期。
 
-## 透過Adobe Campaign主控台核准 {#approving-via-the-adobe-campaign-console}
+## 通過Adobe Campaign控制台批准 {#approving-via-the-adobe-campaign-console}
 
-如果未指定審核者，或者通知的操作員未批准該包，則 **[!UICONTROL Approve the package]** 按鈕可讓您直接從促銷活動套件進行核准 **[!UICONTROL Dashboard]** 或從套件概觀中取得。
+如果未指定審核者，或已通知的操作員未批准包，則 **[!UICONTROL Approve the package]** 按鈕，您可以直接從市場活動包中進行審批 **[!UICONTROL Dashboard]** 或從包概述中。
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-核准後，促銷活動會發佈、新增至清單，一旦達到可用日期，當地實體便可使用。 如果在建立促銷活動時指定了本機實體，則會傳送訊息給通知群組中的運算子，讓他們知道促銷活動可用。 如果事先未指定實體，則預設情況下，所有本機實體都可使用促銷活動。 有關詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).
+批准後，將發佈市場活動，將其添加到清單中，並在達到其可用日期後，本地實體可以使用該市場活動。 如果在建立市場活動時指定了本地實體，則會向通知組中的操作員發送一條消息，讓他們知道市場活動可用。 如果事先沒有指定實體，則預設情況下，市場活動可供所有本地實體使用。 有關此內容的詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities)。
