@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
 workflow-type: tm+mt
-source-wordcount: '6569'
-ht-degree: 74%
+source-wordcount: '6619'
+ht-degree: 73%
 
 ---
 
@@ -35,7 +35,7 @@ _2020 年 10 月 27 日_
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 托管環境從擴展中受益，直到  **2022年2月23日**。 作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **新增功能？**
@@ -125,6 +125,7 @@ _2020 年 10 月 27 日_
 * 改善了從 Adobe Target 插入影像時顯示的錯誤訊息，且外部帳戶的租用戶名稱為空白的問題。
 * 在傳遞屬性中，**[!UICONTROL Archive emails]**&#x200B;將選項重新命名&#x200B;**[!UICONTROL Email BCC]**。
 * 為了提高穩健性，已拒絕選取所有具有無效節點的查詢。如果您需要停用檢查並返回上一個行為，可將 XtkSecurity_Disable_QueryCheck 設定為 0。
+* 已為nmsBroadlogId序列添加負ID範圍支援。 此生成將調整nmsBroadlogId序列的min_value以包括負範圍。 如果您有不允許負ID的嚴格用例，請將序列的min_value還原為1。
 
 **技術演變**
 
@@ -224,7 +225,7 @@ _2020 年 12 月 22 日_
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 托管環境從擴展中受益，直到  **2022年2月23日**。 作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **功能改進**

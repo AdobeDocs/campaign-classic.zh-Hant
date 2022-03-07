@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 2f22f1a3cbf0dccb6872718ea4e0bd20b257c169
+source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 83%
+source-wordcount: '1273'
+ht-degree: 82%
 
 ---
 
@@ -48,6 +48,10 @@ _2022 年 1 月 10 日_
 * 當設定 FDA 外部帳戶時，您現在可以使用金鑰組驗證來登入 Snowflake 帳戶，以增強驗證安全性。 [閱讀全文](../../installation/using/configure-fda-snowflake.md)
 * 當設定 FDA 外部帳戶時，您現在可以使用系統指派的受管理身分登入您的 Azure Synapse Analytics 帳戶。 [閱讀全文](../../installation/using/configure-fda-synapse.md#azure-external)
 * 已從 Campaign 移除對 log4j 程式庫的所有參考，以確保最佳安全性。
+
+**相容性更新**
+
+Adobe Campaign現在與Windows Server 2019相容。 請參閱 [市場活動相容性清單](../../rn/using/compatibility-matrix.md#OperatingSystems)。
 
 **功能改善**
 
