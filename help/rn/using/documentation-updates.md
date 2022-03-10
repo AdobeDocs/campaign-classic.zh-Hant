@@ -31,7 +31,7 @@ ht-degree: 99%
 
 有關如何把位址加入隔離清單以及如何從隔離清單刪除位址的部分已更新。 [閱讀全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-已添加工作流最佳實踐，建議不在同一工作流上執行多個停止請求。 [閱讀全文](../../workflow/using/workflow-best-practices.md)
+加入工作流程最佳實務，建議不要在同一工作流程上執行多個停止請求。 [閱讀全文](../../workflow/using/workflow-best-practices.md)
 
 已添加有關如何阻止定期交貨在市場活動內運行的資訊。 [閱讀全文](../../workflow/using/recurring-delivery.md)
 
