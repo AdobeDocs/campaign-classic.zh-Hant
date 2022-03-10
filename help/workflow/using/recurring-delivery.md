@@ -4,10 +4,10 @@ title: 重複傳送
 description: 瞭解有關「定期交貨」工作流活動的詳細資訊
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 17%
 
 ---
 
@@ -39,9 +39,12 @@ A **循環交付** 將在每次執行時建立新的傳遞實例。 例如，如
 
 ![循環傳遞](assets/delivery_recurring.jpg)
 
+如果要停止定期交貨的運行，則應完全取消市場活動或停止工作流執行該市場活動。 從「市場活動」控制面板中停止交貨將只停止交貨發生：每次執行工作流時，將繼續建立循環傳遞的下一個實例。
+
 >[!NOTE]
 >
->無法從 **[!UICONTROL Recurring delivery]** 鍵入活動。\
+>無法從 **[!UICONTROL Recurring delivery]** 鍵入活動。
+> 
 >要通過市場活動工作流直接建立交付，請使用預配置的渠道特定活動(例如 **[!UICONTROL Email delivery]**)。
 
 ## 教程視頻(#recurring-delivery-video)

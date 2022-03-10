@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
 workflow-type: tm+mt
-source-wordcount: '4887'
+source-wordcount: '4903'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 99%
 有關如何把位址加入隔離清單以及如何從隔離清單刪除位址的部分已更新。 [閱讀全文](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 已添加工作流最佳實踐，建議不在同一工作流上執行多個停止請求。 [閱讀全文](../../workflow/using/workflow-best-practices.md)
+
+已添加有關如何阻止定期交貨在市場活動內運行的資訊。 [閱讀全文](../../workflow/using/recurring-delivery.md)
 
 ### 2022 年 1 月 {#january-2022}
 
