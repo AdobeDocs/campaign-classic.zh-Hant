@@ -4,10 +4,10 @@ title: 跨頻道傳遞
 description: 瞭解有關跨渠道交付的更多資訊
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: e454cc29038b4eab9fad1dcb46813fc8e1a83db1
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 8%
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [行動裝置](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md) (僅Campaign Classicv7)
-* [Facebook](../../social/using/publishing-on-facebook.md) (僅Campaign Classicv7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 

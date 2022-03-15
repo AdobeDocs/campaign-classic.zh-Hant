@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2212'
 ht-degree: 1%
 
 ---
@@ -17,62 +17,62 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-使用者按一下Facebook應用程式的標籤時，該標籤會以810像素寬的空間顯示。 Adobe Campaign使用Facebook類型的網頁應用程式，讓您定義及個人化Facebook應用程式中顯示的內容，以便更輕鬆取得設定檔。
+當用戶按一下Facebook應用程式的頁籤時，該頁籤顯示在810像素寬的空間中。 Adobe Campaign使用Facebook類型的web應用程式來定義和個性化Facebook應用程式中顯示的內容，因此更容易獲取配置檔案。
 
 >[!NOTE]
 >
->您也可以將Adobe Campaign與合作夥伴開發的Facebook應用程式整合。 在此情況下，不需要使用Adobe Campaign Web應用程式來取得Facebook設定檔。 有關詳細資訊，請參閱 [設定外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+>還可以將Adobe Campaign與合作夥伴開發的Facebook應用程式相結合。 在這種情況下，不需要使用Adobe CampaignWeb應用程式來獲取Facebook配置檔案。 有關此內容的詳細資訊，請參閱 [配置外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
 ![](assets/social_webapp_fb_000.png)
 
 >[!IMPORTANT]
 >
->請遵循 [建立Facebook應用程式](../../social/using/creating-a-facebook-application.md).
+>請遵守中介紹的配置步驟 [建立Facebook應用程式](../../social/using/creating-a-facebook-application.md)。
 
 >[!NOTE]
 >
->本節詳細說明連結至Facebook類型Web應用程式的元素。 與標準Web應用程式共用的所有元素在 [本節](../../web/using/about-web-applications.md).
+>本節詳細介紹連結到Facebook類型Web應用程式的元素。 與標準Web應用程式共用的所有元素在 [此部分](../../web/using/about-web-applications.md)。
 
-以下是Facebook類型Web應用程式的詳細範例：
+此處詳細介紹的Facebook類型Web應用程式示例包括：
 
-* 如何在7個步驟中建立Facebook應用程式。 請參閱 [快速入門：在7個步驟中建立Facebook應用程式](#quick-start--creating-a-facebook-application-in-7-steps).
-* 如何將設定轉送至Facebook應用程式。 請參閱 [如何將設定轉送至Facebook應用程式？](#how-to-forward-settings-to-a-facebook-application-).
-* 如何獲取風扇資料。 請參閱 [如何獲取風扇資料？](#how-to-acquire-fan-data-).
+* 如何按7個步驟建立Facebook應用程式。 請參閱 [快速啟動：按7個步驟建立Facebook應用程式](#quick-start--creating-a-facebook-application-in-7-steps)。
+* 如何將設定轉發到Facebook應用程式。 請參閱 [如何將設定轉發到Facebook應用程式？](#how-to-forward-settings-to-a-facebook-application-)。
+* 如何獲取風扇資料。 請參閱 [如何獲取風扇資料？](#how-to-acquire-fan-data-)。
 
 >[!IMPORTANT]
 >
->以下簡單使用案例舉例說明Facebook類型Web應用程式的功能。
+>這些簡單的使用實例說明了Facebook型Web應用的功能。
 
 ## 建議 {#recommendations}
 
-下列限制會直接連結至Facebook:
+以下限制直接與Facebook有關：
 
-* 您必須使用HTTPS建置所有Web應用程式。
-* 透過索引標籤顯示的Facebook應用程式寬度為810像素。
+* 必須使用HTTPS構建所有Web應用程式。
+* 通過頁籤顯示的Facebook應用程式的寬度為810像素。
 
-## 快速入門：在7個步驟中建立Facebook應用程式 {#quick-start--creating-a-facebook-application-in-7-steps}
+## 快速啟動：按7個步驟建立Facebook應用程式 {#quick-start--creating-a-facebook-application-in-7-steps}
 
-此範例提供如何在Facebook中顯示Adobe Campaign內建應用程式的逐步程式。 在此情況下，我們想要建立可讓您顯示 **歡迎** 當使用者按一下應用程式標籤時(**App01**)。
+此示例提供了如何在Facebook顯示Adobe Campaign構建的應用程式的逐步過程。 在這種情況下，我們要建立一個應用程式，它允許您 **歡迎** 當用戶按一下應用程式頁籤(**App01**)。
 
 要建立此應用程式，請應用以下步驟：
 
-1. 在Facebook上建立應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))。 有關詳細資訊，請參閱： [建立Facebook應用程式](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
+1. 在Facebook建立應用程式( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))。
 
    ![](assets/social_create_facebook_app_002.png)
 
-1. 建立 **[!UICONTROL Facebook Connect]** 輸入外部帳戶，然後輸入Facebook應用程式的參數。 有關詳細資訊，請參閱： [設定外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+1. 建立 **[!UICONTROL Facebook Connect]** 鍵入外部帳戶並輸入Facebook應用程式的參數。 有關詳細資訊，請參閱： [配置外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
    ![](assets/social_quick_start_2.png)
 
-1. 輸入 **[!UICONTROL Terms of service]** 和 **[!UICONTROL Privacy policy]** 「Facebook權限請求」畫面上顯示的連結。 有關詳細資訊，請參閱： [輸入服務條款和隱私權政策連結](../../social/using/creating-a-facebook-application.md#entering-the-terms-of-service-and-privacy-policy-links).
+1. 輸入 **[!UICONTROL Terms of service]** 和 **[!UICONTROL Privacy policy]** 將在Facebook權限請求螢幕上顯示的連結。 有關詳細資訊，請參閱： [輸入服務條款和隱私策略連結](../../social/using/creating-a-facebook-application.md#entering-the-terms-of-service-and-privacy-policy-links)。
 
    ![](assets/social_quick_start_1.png)
 
-1. 在Adobe Campaign中建立Facebook類型的Web應用程式。 有關詳細資訊，請參閱： [建立Facebook類型Web應用程式](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application).
+1. 在Adobe Campaign建立Facebook類型Web應用程式。 有關詳細資訊，請參閱： [建立Facebook類型Web應用程式](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application)。
 
    ![](assets/social_webapp_005.png)
 
-1. 編輯您的Web應用程式。 在此範例中，我們已新增 **[!UICONTROL Page]** 活動並定義其標題。
+1. 編輯Web應用程式。 在此示例中，我們添加了 **[!UICONTROL Page]** 定義了一個標題。
 
    ![](assets/social_quick_start_4.png)
 
@@ -80,45 +80,45 @@ ht-degree: 1%
 
    ![](assets/social_webapp_004.png)
 
-1. 設定您的Facebook應用程式，使其在Facebook頁面上顯示為索引標籤。 有關詳細資訊，請參閱： [設定Facebook標籤](../../social/using/creating-a-facebook-application.md#configuring-facebook-tabs).
+1. 配置您的Facebook應用程式，使其顯示為您的Facebook頁面上的頁籤。 有關詳細資訊，請參閱： [配置Facebook頁籤](../../social/using/creating-a-facebook-application.md#configuring-facebook-tabs)。
 
    ![](assets/social_quick_start_5.png)
 
 ![](assets/social_quick_start_6.png)
 
-檢查 **App01** 應用程式會顯示在您的Facebook頁面上。 按一下應會呼叫 **歡迎** 訊息。
+檢查 **App01** 應用程式顯示在您的Facebook頁面上。 按一下它應調用 **歡迎** 。
 
 ![](assets/social_webapp_042.png)
 
-## 如何將設定轉送至Facebook應用程式？ {#how-to-forward-settings-to-a-facebook-application-}
+## 如何將設定轉發到Facebook應用程式？ {#how-to-forward-settings-to-a-facebook-application-}
 
 >[!IMPORTANT]
 >
->遵循以下所述的設定步驟： [建立Facebook應用程式](../../social/using/creating-a-facebook-application.md).
+>遵守中詳細介紹的配置步驟 [建立Facebook應用程式](../../social/using/creating-a-facebook-application.md)。
 
-在範例1中，我們會根據 **[!UICONTROL Fan of the page]** 欄位。 您也可以處理 **[!UICONTROL Application settings]** 欄位。 此欄位可讓您透過Facebook，復原Adobe Campaign產生之連結中所包含的資料。
+在示例1中，我們根據Facebook頁中的值對顯示進行個性化 **[!UICONTROL Fan of the page]** 的子菜單。 也可以處理 **[!UICONTROL Application settings]** 的子菜單。 此欄位允許您通過Facebook恢復由Adobe Campaign生成的連結中包含的資料。
 
-讓我們以決定傳送電子郵件促銷活動的公司為例。 在傳送中，會有指向Facebook應用程式的連結。 此連結個人化，這要感謝 **[!UICONTROL app_data]** 參數。 此參數的值可以是反映客戶重要性的指標。 在我們的範例中， **[!UICONTROL app_data]** 參數 **[!UICONTROL big]** (重要客戶及 **[!UICONTROL small]** （較不重要客戶）。
+讓我們舉一個公司決定發送電子郵件促銷活動的例子。 在交付中，指向Facebook應用程式的連結。 此連結因 **[!UICONTROL app_data]** 在URL末尾添加的參數。 此參數的值可以是反映客戶重要性的指標。 在我們的例子中， **[!UICONTROL app_data]** 參數 **[!UICONTROL big]** （主要客戶）及 **[!UICONTROL small]** （較不重要的客戶）。
 
-個人化後，URL會如下所示：
+一旦個性化，URL將如下所示：
 
-* `http://<path of the Facebook application>&app_data=big` （針對重要客戶）
-* `http://<path of the Facebook application>&app_data=small` （針對不重要客戶）
+* `http://<path of the Facebook application>&app_data=big` （就重要客戶而言）
+* `http://<path of the Facebook application>&app_data=small` （對於不太重要的客戶）
 
-在Facebook轉送至Adobe Campaign的匿名資料中， **[!UICONTROL Application parameters]** 欄位，以便Adobe Campaign能根據此參數個人化應用程式顯示。
+在Facebook轉給Adobe Campaign的匿名資料中， **[!UICONTROL Application parameters]** 欄位被收集，從而使Adobe Campaign能夠基於此參數個性化應用程式顯示。
 
-若使用者為重要客戶( **[!UICONTROL app_data]** 參數 **[!UICONTROL big]**)，則會顯示下列影像：
+如果用戶是重要客戶( **[!UICONTROL app_data]** 參數 **[!UICONTROL big]**)，顯示以下影像：
 
 ![](assets/social_webapp_017.png)
 
-若使用者不是較重要的客戶( **[!UICONTROL app_data]** 參數 **[!UICONTROL small]**)，則會顯示下列影像：
+如果用戶不是重要客戶( **[!UICONTROL app_data]** 參數 **[!UICONTROL small]**)，顯示以下影像：
 
 ![](assets/social_webapp_016.png)
 
-為重新建立此使用案例，我們建立了由以下元素組成的Web應用程式：
+要重新建立此使用情形，我們建立了由下列元素組成的Web應用程式：
 
-* A **[!UICONTROL Test]** 活動根據 **[!UICONTROL Application parameter]** 欄位。
-* 包含要根據 **[!UICONTROL Application parameter]** 欄位。
+* A **[!UICONTROL Test]** 基於 **[!UICONTROL Application parameter]** 的子菜單。
+* 包含要根據 **[!UICONTROL Application parameter]** 的子菜單。
 
 ![](assets/social_webapp_018.png)
 
@@ -126,237 +126,237 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->遵循以下所述的設定步驟： [建立Facebook應用程式](../../social/using/creating-a-facebook-application.md).
+>遵守中詳細介紹的配置步驟 [建立Facebook應用程式](../../social/using/creating-a-facebook-application.md)。
 
-此範例說明如何與Facebook使用者取得聯絡，並提供給他們以共用其設定檔資訊。 讓我們舉一個公司的例子，它想要獲得潛在客戶，並在其Facebook頁面上組織競賽以吸引他們。
+此示例說明如何與Facebook用戶聯繫，並為他們提供共用個人資料資訊的服務。 讓我們舉一個公司希望收購潛在客戶，並在其Facebook頁面上組織競爭來吸引他們的例子。
 
-每當使用者按一下 **[!UICONTROL App03]** 標籤，我們問他們是否要參加比賽。
+只要用戶按一下 **[!UICONTROL App03]** 頁籤，我們詢問他們是否想參加比賽。
 
 ![](assets/social_webapp_fb_000.png)
 
-如果他們決定參加競賽，我們會提供他們分享個人資訊。
+如果他們決定參加競賽，我們會為他們提供共用個人資料的資訊。
 
 ![](assets/social_webapp_021.png)
 
-如果使用者同意共用其資訊，會顯示下列畫面。
+如果他們同意共用其資訊，將顯示以下螢幕。
 
 ![](assets/social_webapp_022.png)
 
-為了建立此使用案例，我們建立了包含下列元素的Web應用程式：
+要構建此使用情形，我們建立了一個包含以下元素的Web應用程式：
 
 * **[!UICONTROL Test]** 活動
 * 三頁
-* an **[!UICONTROL Access control]** 活動
+* 一個 **[!UICONTROL Access control]** 活動
 * **[!UICONTROL Pre-loading]** 活動
 * **[!UICONTROL Save]** 活動
-* an **[!UICONTROL End]** 活動
+* 一個 **[!UICONTROL End]** 活動
 
 ![](assets/social_webapp_019.png)
 
-### 測試活動 {#test-activity}
+### Test活動 {#test-activity}
 
-此 **[!UICONTROL Test]** 活動是根據 **[!UICONTROL ID]** 和 **[!UICONTROL Application parameters]** 欄位。
+的 **[!UICONTROL Test]** 活動基於 **[!UICONTROL ID]** 和 **[!UICONTROL Application parameters]** 的子菜單。
 
 ![](assets/social_webapp_023.png)
 
 它由三個分支組成：
 
-* **[!UICONTROL identifier (UID) is empty]** :只有在使用者已同意共用其資訊時，Facebook才會轉送識別碼。 的第一個分支 **[!UICONTROL Test]** 活動可讓您讓競爭僅供從未進入的使用者使用，亦即ID空白的使用者。
-* **[!UICONTROL application parameter equals 'thanks']** :若要避開連結至Facebook的顯示錯誤，Web應用程式結束頁面會指向Facebook應用程式的URL, **[!UICONTROL app_data]** 參數已新增至，使用 **[!UICONTROL thanks]** 值(如需詳細資訊，請參閱： [結束活動](#end-activity))。 第二個分支可讓您找出使用者是否來自 **[!UICONTROL End]** 第一個分支的活動（且剛進入競爭對手）以顯示感謝訊息。 如需使用其他URL參數的詳細資訊，請參閱： [如何將設定轉送至Facebook應用程式？](#how-to-forward-settings-to-a-facebook-application-).
-* **[!UICONTROL Default branch]** :如果用戶已在前一個日期(應用程式參數與 **[!UICONTROL thanks]**)，我們會顯示一個頁面，指出他們已進入。
+* **[!UICONTROL identifier (UID) is empty]** :僅當用戶已同意共用其資訊時，標識符才由Facebook轉發。 第一個分支 **[!UICONTROL Test]** 活動允許您僅對從未輸入過（即ID為空的用戶）的用戶提供競爭。
+* **[!UICONTROL application parameter equals 'thanks']** :為避免連結到Facebook的顯示錯誤，Web應用程式結束頁指向Facebook應用程式的URL, **[!UICONTROL app_data]** 參數已添加到使用 **[!UICONTROL thanks]** 值(有關詳細資訊，請參閱： [結束活動](#end-activity))。 第二個分支允許您查找用戶是否來自 **[!UICONTROL End]** 第一個分支的活動（並且剛剛進入競爭對手）以顯示感謝信。 有關使用其他URL參數的詳細資訊，請參閱： [如何將設定轉發到Facebook應用程式？](#how-to-forward-settings-to-a-facebook-application-)。
+* **[!UICONTROL Default branch]** :如果用戶已在上一日期(應用程式參數與 **[!UICONTROL thanks]**)，我們將顯示一個頁面，說明他們已經輸入。
 
 ### 競爭頁面 {#competition-page}
 
-若要避開連結至Facebook的顯示錯誤，您也需要選取 **[!UICONTROL Parent window]** 或 **[!UICONTROL In the top window]** 在 **[!UICONTROL Window]** 競爭頁面的欄位。
+要避開連結到Facebook的顯示錯誤，還需要選擇 **[!UICONTROL Parent window]** 或 **[!UICONTROL In the top window]** 的 **[!UICONTROL Window]** 的子菜單。
 
 ![](assets/social_webapp_028.png)
 
-### 存取控制活動 {#access-control-activity}
+### 訪問控制活動 {#access-control-activity}
 
-此 **[!UICONTROL Access control]** 活動可讓您在使用者進入競爭時顯示Facebook權限請求頁面。 如果他們同意共用其資訊，則會在預先載入期間恢復資訊。 有關詳細資訊，請參閱： [預先載入活動](#pre-loading-activity).
+的 **[!UICONTROL Access control]** 「活動」(Activity)，用於在用戶進入競爭時顯示「Facebook權限請求」頁。 如果他們同意共用其資訊，則在預載入期間將恢復該資訊。 有關詳細資訊，請參閱： [預載入活動](#pre-loading-activity)。
 
-如果您先前在建立Web應用程式時輸入了外部帳戶(請參閱 [建立Facebook類型Web應用程式](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application))您不需要編輯活動。 如果沒有，請前往 **[!UICONTROL Application]** 欄位，並選取連結至Facebook應用程式的外部帳戶。
+如果您以前在建立Web應用程式時輸入了外部帳戶(請參閱 [建立Facebook類型Web應用程式](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application))，您無需編輯活動。 否則，轉到 **[!UICONTROL Application]** 欄位，然後選擇連結到Facebook應用程式的外部帳戶。
 
 ![](assets/social_webapp_024.png)
 
-### 預先載入活動 {#pre-loading-activity}
+### 預載入活動 {#pre-loading-activity}
 
-選取要用於預先載入的資料來源：
+選擇要用於預載入的資料源：
 
-* **[!UICONTROL Marketing database]** :此選項可讓您透過Adobe Campaign資料庫預先載入資料。
-* **[!UICONTROL Facebook]** :此選項可讓您使用Facebook預先載入資料。
+* **[!UICONTROL Marketing database]** :此選項允許您通過Adobe Campaign資料庫預載入資料。
+* **[!UICONTROL Facebook]** :此選項允許您使用Facebook預載入資料。
 
 ![](assets/social_webapp_029.png)
 
-**行銷資料庫**
+**營銷資料庫**
 
-此選項可讓您復原訪客表格中存在之設定檔的資料。 驗證是根據使用者按一下Facebook應用程式標籤時復原的外部Facebook ID執行。 如果您在 **[!UICONTROL Pre-loading]** 活動，則會預先載入資料庫中包含資訊的欄位。
+此選項允許您恢復訪問者表中存在的配置檔案的資料。 驗證基於用戶按一下「Facebook應用程式」頁籤時恢復的外部FacebookID執行。 如果在 **[!UICONTROL Pre-loading]** activity，預載入資料庫中包含資訊的欄位。
 
 ![](assets/social_webapp_030.png)
 
 >[!NOTE]
 >
->如需透過Adobe Campaign資料庫預先載入資料的詳細資訊，請參閱 [本節](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+>有關通過Adobe Campaign資料庫預載入資料的詳細資訊，請參閱 [此部分](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data)。
 
 **Facebook**
 
-此選項可讓您定義要收集的Facebook設定檔資訊（其中包括使用者同意共用的資訊），以便儲存該資訊。
+此選項允許您定義要收集的Facebook配置檔案資訊，其中用戶同意共用，以便保存它。
 
 ![](assets/social_webapp_025.png)
 
-此 **[!UICONTROL Database information]** 選項可讓您收集下列資料：
+的 **[!UICONTROL Database information]** 選項，您可以收集以下資料：
 
-* **[!UICONTROL External ID]**:使用者ID
-* **[!UICONTROL Gender]**:使用者性別
-* **[!UICONTROL Verified]** :此欄位會指定使用者是否擁有已驗證的Facebook帳戶。
-* **[!UICONTROL Full name]**:使用者的全名
-* **[!UICONTROL First name]**:使用者的名字
-* **[!UICONTROL Last name]**:使用者姓氏
-* **[!UICONTROL Language]**:使用者語言
+* **[!UICONTROL External ID]**:用戶ID
+* **[!UICONTROL Gender]**:用戶性別
+* **[!UICONTROL Verified]** :此欄位指定用戶是否具有驗證的Facebook帳戶。
+* **[!UICONTROL Full name]**:用戶的全名
+* **[!UICONTROL First name]**:用戶名
+* **[!UICONTROL Last name]**:用戶姓
+* **[!UICONTROL Language]**:用戶語言
 
-您也可以核取適當的方塊，以決定收集個人資料像片、朋友清單、電子郵件地址、出生日期、興趣和位置。
+您還可以通過選中相應的框來決定收集個人資料照片、好友清單、電子郵件地址、出生日期、興趣和地點。
 
-在您按一下 **[!UICONTROL Ok]**，檢查 **[!UICONTROL I agree to comply with Facebook conditions of use]** 框。
+在按一下之前 **[!UICONTROL Ok]**，則選中 **[!UICONTROL I agree to comply with Facebook conditions of use]** 框。
 
 >[!NOTE]
 >
->若您勾選 **[!UICONTROL Private information]** 區段中，Facebook權限請求畫面會自動顯示此資料的存取請求。
+>如果選中 **[!UICONTROL Private information]** 部分，Facebook權限請求螢幕將自動顯示對此資料的訪問請求。
 >
->若要收集選取的資訊，使用者必須同意共用該資訊。
+>要收集所選資訊，用戶必須同意共用它。
 >
->如果您想要兩種預先載入類型(透過Adobe Campaign和透過Facebook)，請逐一新增兩個預先載入方塊。
+>如果要兩種預裝載類型(通過Adobe Campaign和Facebook)，則會先後添加兩個預裝載框。
 
-### 儲存活動 {#save-activity}
+### 保存活動 {#save-activity}
 
-此 **[!UICONTROL Save]** 活動可讓您將先前階段收集到的資訊儲存在訪客的表格中。
+的 **[!UICONTROL Save]** 活動允許您在訪問者表中儲存在前幾個階段收集的資訊。
 
-如果訪客的表格中已存在設定檔，則會以收集到的新資料更新其資料。
+如果訪問者表中已存在配置檔案，則使用收集的新資料更新其資料。
 
-如果資料庫中不存在設定檔，且已收集Facebook使用者的電子郵件地址，則訪客表格中會建立訪客。
+如果資料庫中不存在配置檔案，並且已收集到Facebook用戶的電子郵件地址，則會在訪問者表中建立訪問者。
 
 ![](assets/social_webapp_026.png)
 
-1. 在 **[!UICONTROL Visitor creation folder]** 欄位中，選擇要在中建立配置檔案的資料夾。 若為Facebook類型的Web應用程式，預設的建立資料夾為 **[!UICONTROL Visitors]**.
-1. 在 **[!UICONTROL Reconciliation mode]** 欄位中，選取您要使用的調解模式：
+1. 在 **[!UICONTROL Visitor creation folder]** 欄位中，選擇將在中建立配置檔案的資料夾。 對於Facebook類型的Web應用程式，預設建立資料夾為 **[!UICONTROL Visitors]**。
+1. 在 **[!UICONTROL Reconciliation mode]** 欄位中，選擇要使用的協調模式：
 
-   * **[!UICONTROL Automatic]** :調解是根據電子郵件、姓氏、名字和出生日期執行。
-   * **[!UICONTROL Manual]** :請選擇一個或多個調解密鑰。
+   * **[!UICONTROL Automatic]** :對帳是根據電子郵件、姓氏、名字和出生日期進行的。
+   * **[!UICONTROL Manual]** :請選擇一個或多個協調密鑰。
    * **[!UICONTROL None]** :不會進行和解。
 
-1. 在 **[!UICONTROL Mapping]** 欄位中，選擇要對其進行協調的架構。
+1. 在 **[!UICONTROL Mapping]** 欄位中，選擇要執行協調的方案。
 
    >[!IMPORTANT]
    >
-   >請確定 **[!UICONTROL Social networks]** 索引標籤正確輸入。 傳遞對應是透過 **[!UICONTROL Administration > Campaign management > Target mappings]** 節點。
+   >確保 **[!UICONTROL Social networks]** 頁籤 通過 **[!UICONTROL Administration > Campaign management > Target mappings]** 的下界。
 
-1. 您可以選取要協調的搜尋資料夾，以及新設定檔的建立資料夾。 如果欄位為空，則會搜尋設定檔，並在對應架構的預設資料夾中建立。
+1. 您可以選擇用於協調的搜索資料夾和用於新配置檔案的建立資料夾。 如果欄位為空，則在映射架構的預設資料夾中搜索並建立配置檔案。
 
 ### 結束活動 {#end-activity}
 
-若要避開連結至Facebook的顯示錯誤，您必須檢查 **[!UICONTROL Use an external URL]** 方塊，然後輸入Facebook應用程式的URL, **[!UICONTROL app_data]** 參數和值。 此值將用於 **[!UICONTROL Test]** 活動來偵測使用者是否剛進入競爭，並顯示感謝訊息（若適用）。 有關詳細資訊，請參閱： [測試活動](#test-activity).
+要避開連結到Facebook的顯示錯誤，您需要檢查 **[!UICONTROL Use an external URL]** 框，然後輸入Facebook應用程式的URL, **[!UICONTROL app_data]** 參數和值。 此值將用於 **[!UICONTROL Test]** 活動：檢測用戶是否剛進入競爭對手，並顯示感謝消息（如果適用）。 有關詳細資訊，請參閱： [Test活動](#test-activity)。
 
-在我們的範例中，使用的值為 **謝謝**.
+在本例中，所用值 **謝謝**。
 
 ![](assets/social_webapp_027.png)
 
-### 訪客的詳細資訊畫面 {#details-screen-of-a-visitor}
+### 訪問者的詳細資訊螢幕 {#details-screen-of-a-visitor}
 
-就像Twitter追隨者(請參閱： [操作原則](../../social/using/publishing-on-twitter.md#operating-principle))，則已復原的Facebook設定檔會儲存在訪客的表格中。 若要顯示訪客清單，請前往 **[!UICONTROL Profiles and Targets > Visitors]** 節點。
+就像Twitter的追隨者一樣(請參閱： [工作原理](../../social/using/publishing-on-twitter.md#operating-principle))，恢復的Facebook配置檔案儲存在訪客表中。 要顯示訪問者清單，請轉到 **[!UICONTROL Profiles and Targets > Visitors]** 的下界。
 
-同意共用其設定檔資訊的每個Facebook潛在客戶都會新增至訪客清單中。 若 **[!UICONTROL Friends]** 框中 **[!UICONTROL Pre-load]** 活動(請參閱： [預先載入活動](#pre-loading-activity))，也會新增朋友。
+每個同意分享個人資料資訊的Facebook潛在客戶都會被添加到訪問者名單中。 如果 **[!UICONTROL Friends]** 的子菜單。 **[!UICONTROL Pre-load]** 活動(請參閱： [預載入活動](#pre-loading-activity))，也添加朋友。
 
 ![](assets/social_webapp_037.png)
 
-在 **[!UICONTROL Summary]** 在「訪客詳細資料」視窗的區段中， **[!UICONTROL New Contact]** 指標：
+在 **[!UICONTROL Summary]** 訪問者詳細資訊窗口部分，有兩種可能的狀態 **[!UICONTROL New Contact]** 指標：
 
 ![](assets/social_webapp_038.png)
 
-如果顯示綠色核取記號，表示訪客未與任何收件者調解。 在此情況下，收件者清單中會建立新的設定檔。
+如果顯示綠色複選標籤，則表示訪問者未與任何收件人協調。 在這種情況下，將在收件人清單中建立新的配置檔案。
 
 ![](assets/social_webapp_039.png)
 
-紅十字表示訪客已與收件者調解。 您可以按一下 **[!UICONTROL Recipient]** 欄位來顯示相符的收件者。
+紅十字表示訪客與接受者和解。 可按一下右側的放大鏡 **[!UICONTROL Recipient]** 欄位以顯示匹配的收件人。
 
 ![](assets/social_webapp_040.png)
 
-前往收件者的詳細資料視窗，以顯示相符的訪客（如果適用）。 選取 **[!UICONTROL Others]** ，然後在 **[!UICONTROL Web identities]** 區段。
+轉至收件人的詳細資訊窗口以顯示匹配的訪問者（如果適用）。 選擇 **[!UICONTROL Others]** ，然後按兩下 **[!UICONTROL Web identities]** 的子菜單。
 
 ![](assets/social_webapp_041.png)
 
-此 **[!UICONTROL Activities]** 訪客詳細資訊頁面的畫麵包含下列資訊：
+的 **[!UICONTROL Activities]** 訪問者詳細資訊頁面的螢幕包含以下資訊：
 
-* 「開啟圖」類型風扇活動：播放的音樂、觀看的視頻、閱讀的文章以及安裝的應用程式（Deezer、Spotify、Dailymotion、Yahoo News等）的不詳
+* 「開啟圖形」類型風扇活動：播放的音樂、觀看的視頻、閱讀的文章和推測安裝的應用程式（Deezer、Spotify、Dailymotion、Yahoo News等）
 
    ![](assets/social_facebook_activities.png)
 
-* 粉絲在Adobe Campaign傳送後新增的「按贊次數」和留言
-* 粉絲贊的頁面
-* 風扇的簽入
+* 「贊」和風扇在Adobe Campaign發送後添加的評論
+* 風扇喜歡的頁面
+* 風扇的登記
 
    ![](assets/social_facebook_checkins.png)
 
    >[!NOTE]
    >
-   >若要讓Adobe Campaign收集粉絲的打卡，您必須按一下 **[!UICONTROL Subscribe]** 按鈕。 有關詳細資訊，請參閱 [設定外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+   >為了讓Adobe Campaign收集風扇的簽入，您需要按一下 **[!UICONTROL Subscribe]** 按鈕。 有關此內容的詳細資訊，請參閱 [配置外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
-## 如何使用Facebook設定檔資料預先載入表單 {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
+## 如何使用Facebook配置檔案資料預載入表單 {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
 
-此 **[!UICONTROL Social Marketing]** 應用程式也可讓您將按鈕新增至表單，以使用Facebook設定檔資訊預先載入欄位。 此選項可用於所有Web應用程式模板(**[!UICONTROL Page]** 類型活動)，詳見 [本節](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+的 **[!UICONTROL Social Marketing]** 應用程式還允許您向表單中添加按鈕，以使用Facebook配置檔案資訊預載入欄位。 此選項可用於所有Web應用程式模板(**[!UICONTROL Page]** 類型活動)的詳細資訊 [此部分](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
 
 ![](assets/social_webapp_035.png)
 
 >[!NOTE]
 >
->開始使用此函式之前，您需先建立Facebook應用程式和 **[!UICONTROL Facebook Connect]** 輸入外部帳戶。 有關詳細資訊，請參閱 [設定外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+>在開始使用此函式之前，您需要建立一個Facebook應用程式和 **[!UICONTROL Facebook Connect]** 鍵入外部帳戶。 有關此內容的詳細資訊，請參閱 [配置外部帳戶](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
-**使用從Facebook設定檔擷取的資料預先載入表單欄位**
+**用從Facebook剖面中獲取的資料預載入表單域**
 
-您可以建立Web表單，並在表單的頁面中加入使用者沒有互動的元素；這些是靜態元素，例如影像、HTML內容、水準條或超文字連結。 進一步了解網路表單中的靜態元素，位於 [本頁](../../web/using/static-elements-in-a-web-form.md).
+建立一個Web表單，並在表單的頁面中包含用戶沒有交互的元素；這些是靜態元素，如影像、HTML內容、水準條或超文本連結。 瞭解有關Web窗體中靜態元素的詳細資訊 [此頁](../../web/using/static-elements-in-a-web-form.md)。
 
-插入靜態元素時， **[!UICONTROL Preload with Facebook]** 選項可讓您將按鈕插入表單中，以使用Facebook設定檔資訊預先載入欄位。
+插入靜態元素時， **[!UICONTROL Preload with Facebook]** 選項，可以在窗體中插入按鈕，以使用Facebook配置檔案資訊預載入欄位。
 
 ![](assets/web_social_webapp_037.png)
 
-當使用者點按 **[!UICONTROL Fill in automatically]** 按鈕，則會開啟「Facebook要求權限」視窗。
+當用戶按一下 **[!UICONTROL Fill in automatically]** 按鈕。
 
 ![](assets/web_social_webapp_029.png)
 
 >[!NOTE]
 >
->您可以在設定外部帳戶時變更延伸權限清單。 如果未設定擴充權限，Facebook會依預設轉送基本設定檔資訊。\
->要查看擴展權限清單及其語法， [請參閱Facebook檔案](https://developers.facebook.com/docs/reference/api/permissions).
+>配置外部帳戶時，可以更改擴展權限清單。 如果未配置擴展權限，則預設情況下，Facebook轉發基本配置檔案資訊。\
+>要查看擴展權限清單及其語法， [參閱Facebook文檔](https://developers.facebook.com/docs/reference/api/permissions)。
 
-如果使用者同意共用其資訊，表單的欄位會預先載入。
+如果用戶同意共用其資訊，則預載表單的欄位。
 
 ![](assets/web_social_webapp_030.png)
 
-針對此使用案例，我們建立了由下列元素組成的Web應用程式：
+對於此用例，我們建立了由下列元素組成的Web應用程式：
 
-* 包含表單的頁面
+* 包含表單的頁
 * **[!UICONTROL Record]** 活動
-* an **[!UICONTROL End]** 活動
+* 一個 **[!UICONTROL End]** 活動
 
 ![](assets/social_webapp_031.png)
 
 要添加預載入按鈕，請應用以下步驟：
 
-1. 建立表單。
+1. 建立窗體。
 
    ![](assets/social_webapp_032.png)
 
-1. 移至表單中欄位的相同層級，並新增連結。
+1. 轉到與表單中的欄位相同的級別並添加連結。
 
    ![](assets/social_webapp_033.png)
 
-1. 輸入標籤並選取 **[!UICONTROL Button]** 類型。
+1. 輸入標籤並選擇 **[!UICONTROL Button]** 的雙曲餘切值。
 
    ![](assets/social_webapp_034.png)
 
-1. 前往 **[!UICONTROL Action]** 欄位和選取 **[!UICONTROL Preload with Facebook]**.
+1. 轉到 **[!UICONTROL Action]** 選擇 **[!UICONTROL Preload with Facebook]**。
 
    ![](assets/social_webapp_035.png)
 
-1. 前往 **[!UICONTROL Application]** 欄位並選取 **[!UICONTROL Facebook Connect]** 輸入先前建立的外部帳戶。 如需詳細資訊，請參閱[此頁面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
+1. 轉到 **[!UICONTROL Application]** ，然後選擇 **[!UICONTROL Facebook Connect]** 鍵入以前建立的外部帳戶。 如需詳細資訊，請參閱[此頁面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
    ![](assets/social_webapp_036.png)
 
