@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
+source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 98%
+source-wordcount: '1281'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 98%
 ## ![](assets/do-not-localize/green_2.png)版本 7.2.2 - 版本編號 9349 {#release-7-2-2}
 
 _2022 年 3 月 1 日_
+
+>[!NOTE]
+>
+> 此版本與v7.2.1客戶端控制台相容。
 
 **修補程式**
 
@@ -37,6 +41,7 @@ _2022 年 3 月 1 日_
 * 修復下列問題，在同時具有 1000 多個 broadlog 時重新整理傳遞性工作流程導致錯誤。 (NEO-40276)
 * 修復下列問題，無法自動更新未結比例及點選比例傳遞指示器。 (NEO-43253)
 
+
 ## ![](assets/do-not-localize/limited_2.png)版本 7.2.1 - 版本編號 9346 {#release-7-2-1}
 
 _2022 年 1 月 10 日_
@@ -51,7 +56,7 @@ _2022 年 1 月 10 日_
 
 **相容性更新**
 
-Adobe Campaign現在與Windows Server 2019相容。 請參閱 [市場活動相容性清單](../../rn/using/compatibility-matrix.md#OperatingSystems)。
+Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容性對照表](../../rn/using/compatibility-matrix.md#OperatingSystems)。
 
 **功能改善**
 
