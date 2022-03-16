@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: 架構元素和屬性
+title: 架構元素和屬性 — 元素元素
 description: 元素元素
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---

@@ -6,8 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
-workflow-type: ht
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+workflow-type: tm+mt
 source-wordcount: '2425'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 一起瞭解您能如何建立存取和刪除請求，以及 Adobe Campaign 如何處理這些請求。
 
-### 原則 {#principles}
+### 原則 {#privacy-principles}
 
 Adobe Campaign 為資料控制方執行隱私權存取和刪除請求提供兩種可能性：
 

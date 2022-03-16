@@ -1,29 +1,29 @@
 ---
 product: campaign
-title: 元素和屬性
+title: 元素和屬性 — srcschema元素
 description: 元素和屬性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '456'
 ht-degree: 1%
 
 ---
 
-# srschema元素 {#srcschema--element}
+# srcschema元素 {#srcschema--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## 內容模型 {#content-model-14}
 
-srcSchema:==(attribute) | createdBy |資料 |元素 |枚舉 |幫助 |介面 |方法 | modifiedBy)
+srcSchema:==（屬性） |建立者 |資料 |元素 |枚舉 |幫助 |介面 |方法 |修改者)
 
 ## 屬性 {#attributes-14}
 
-created(datetime), createdBy-id(long), desc(string), entitySchema(string), extendedSchema(string), img(string), implements(string), label(string), lastModified(string), library(boolean), mappingType(string), modifiedBy-id(long), name(string), namespace(string), useRecycleBin(boolean), view(boolean), xtkschema(string)
+created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、extendedSchema(string)、img(string)、implements(string)、labelSingural(string)、lastModified(datetime)、library(boolean)、mppingBy-id(long)、name(sting(sting)、name(string)、name(sting, useRecycleBin（布爾）、view（布爾）、xtkschema（字串）
 
 ## 父母 {#parents-14}
 
@@ -43,41 +43,41 @@ created(datetime), createdBy-id(long), desc(string), entitySchema(string), exten
 
 ## 說明 {#description-14}
 
-此 `<srcschema>` 是結構的根元素。 它是架構定義的輸入點。
+的 `<srcschema>` 是架構的根元素。 它是模式定義的輸入點。
 
-## 使用與使用內容 {#use-and-context-of-use-9}
+## 使用和使用上下文 {#use-and-context-of-use-9}
 
-方案演示可在 [關於綱要參考](../../../configuration/using/about-schema-reference.md) 和 [綱要結構](../../../configuration/using/schema-structure.md).
+在中提供架構演示 [關於架構引用](../../../configuration/using/about-schema-reference.md) 和 [架構結構](../../../configuration/using/schema-structure.md)。
 
 ## 屬性說明 {#attribute-description-14}
 
-* **已建立(datetime)**:此屬性提供有關架構建立日期和時間的資訊。 有「日期時間」表單。 顯示的值取自伺服器。 時間以UTC格式顯示。
-* **createdBy-id(long)**:是建立架構的運算子的識別碼。
-* **desc（字串）**:方案說明
-* **entitySchema(string)**:基本結構，其語法和核准是根據(Adobe Campaign預設為：xtk:srcSchema)。 儲存目前的結構時，Adobe Campaign會以在@xtkschema屬性中宣告的結構來核准其語法。
-* **extendedSchema(string)**:接收目前架構擴充功能所根據之現成可用架構的名稱。 表單為「namespace:name」。
-* **img(string)**:連結到架構的表徵圖（可在架構建立嚮導中定義）。
-* **標籤（字串）**:方案標籤。
-* **labelSingular（字串）**:標籤（單數）。
-* **lastModified(datetime)**:此屬性提供上次修改的日期和時間資訊。 有「日期時間」表單。 顯示的值取自伺服器。 時間以UTC格式顯示。
-* **程式庫（布林值）**:將結構用作程式庫，而非實體。 因此，由於「@ref」和「@template」屬性，其他結構可能會參考此結構。
-* **mappingType(string)**:
+* **已建立（日期時間）**:此屬性提供有關建立方案的日期和時間的資訊。 它有一個「日期時間」表單。 顯示的值是從伺服器獲取的。 時間以UTC格式顯示。
+* **createdBy-id(long)**:是建立架構的運算子的標識符。
+* **desc（字串）**:架構描述
+* **entitySchema（字串）**:語法和批准所基於的基本架構(預設情況下，對於Adobe Campaign:xtk:srcSchema)。 保存當前架構時，Adobe Campaign將使用@xtkschema屬性中聲明的架構來批准其語法。
+* **extendedSchema（字串）**:接收當前架構擴展所基於的現成架構的名稱。 表單為&quot;namespace:name&quot;。
+* **img（字串）**:連結到架構的表徵圖（可以在架構建立嚮導中定義）。
+* **標籤（字串）**:「架構」標籤。
+* **labelSingular（字串）**:標籤（單數），用於在介面中顯示。
+* **lastModified(datetime)**:此屬性提供有關上次修改的日期和時間的資訊。 它有一個「日期時間」表單。 顯示的值是從伺服器獲取的。 時間以UTC格式顯示。
+* **庫（布爾型）**:將架構用作庫而不是實體。 因此，由於「@ref」和「@template」屬性，此架構可能被其他架構引用。
+* **mappingType（字串）**:
 
    * &quot;sql&quot;:資料庫映射
    * &quot;textFile&quot;:文本檔案映射
    * &quot;xmlFile&quot;:XML格式文本檔案映射
    * &quot;binaryFile&quot;:二進位檔案映射
 
-* **modifiedBy-id(long)**:匹配更改架構的運算子的標識符。
+* **modifiedBy-id（長）**:匹配更改了架構的運算子的標識符。
 * **名稱（字串）**:唯一架構名稱。
-* **命名空間（字串）**:架構的名稱空間(預設值：nms, xtk, nl)。 為專案建立新結構時，建議您使用專用的命名空間。
-* **useRecycleBin（布林值）**:在應用程式中啟用垃圾桶功能。 刪除的記錄會放在垃圾桶中，然後才進行最終刪除。 此函式僅可在「傳送」模式中使用。
-* **檢視（布林值）**:如果已啟動(@view=&quot;true&quot;)，則會將結構用作檢視。 資料庫結構更新嚮導將不考慮該架構。 此選項主要用於參考外部表。
-* **xtkschema（字串）**:定義架構文法的架構名稱（預設為xtk:srcSchema）。
+* **命名空間（字串）**:架構的命名空間(預設：nms、xtk、nl)。 為項目建立新架構時，建議您使用專用命名空間。
+* **useRecycleBin（布爾型）**:激活應用程式中的垃圾特徵。 刪除的記錄將放在垃圾箱中，然後再進行最終刪除。 此函式僅在「傳遞」模式下可用。
+* **視圖（布爾型）**:如果激活(@view=&quot;true&quot;)，則將使用該架構作為視圖。 資料庫結構更新嚮導將不考慮架構。 此選項主要用於引用外部表。
+* **xtkschema（字串）**:定義架構語法的架構的名稱（預設情況下為xtk:srcSchema）。
 
 ## 範例 {#examples-11}
 
-`<srcschema>` 「nms:delivery」的元素
+`<srcschema>` 「nms:delivery」框外模式的元素
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  
