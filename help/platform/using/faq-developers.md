@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 常見問題
-description: Campaign Classic 常見問題集
+title: 開發人員常見問題集
+description: 開發人員常見問題集
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: a5f6478d3c0780464974053e389923614abba582
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 97%
 
 ---
@@ -39,7 +39,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 ## 如何使用自訂的收件者表格？ {#how-to-use-a-custom-recipient-table-}
 
-您可以在Campaign中建立並實作非內建的收件者表格，以傳送訊息。
+您可以在市場活動中建立並實施非內置的收件人表，以發送您的郵件。
 
 [按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 

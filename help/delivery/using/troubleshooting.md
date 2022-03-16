@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 疑難排解
+title: 推送故障排除
 description: 推送故障排除
 feature: Push
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 3%
+source-wordcount: '100'
+ht-degree: 2%
 
 ---
 

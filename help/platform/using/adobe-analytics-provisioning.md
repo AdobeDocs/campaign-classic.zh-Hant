@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe Analytics 連接器
-description: 深入瞭解 Adobe Analytics 連接器 設定
+title: Adobe Analytics連接器配置
+description: 瞭解有關Adobe Analytics連接器設定的詳細資訊
 feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 4%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 

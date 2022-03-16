@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 配置整合
-description: 配置整合
+title: '管線疑難排解 '
+description: '管線疑難排解 '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 1%
+source-wordcount: '691'
+ht-degree: 0%
 
 ---
 
@@ -16,47 +16,47 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**流水線失敗，錯誤為「沒有任務與掩碼流水線@&lt;實例>」**
+**管道化失敗，出現錯誤「沒有任務與掩碼管道化@&lt;實例>對應」**
 
-您的Adobe Campaign Classic版本不支援管道。
+您的Adobe Campaign Classic版本不支援該管道。
 
-1. 檢查 [!DNL pipelined] 元素存在於設定檔案中。 否則表示不支援。
-1. 升級至Campaign 20.3 / [!DNL Gold Standard] 11或更高。
+1. 檢查 [!DNL pipelined] 配置檔案中存在元素。 如果不支援，則表示不支援。
+1. 升級到市場活動20.3 / [!DNL Gold Standard] 11或更高。
 
-**管道失敗，出現「 aurait dbu commencer par」 `[` 歐 `{` (iRc=16384)」**
+**管道失敗，並顯示「 aurait dü commencer par 」 `[` 歐 `{` (iRc=16384)」**
 
-此 **NmsPipeline_Config** 選項。 實際上是JSON剖析錯誤。
-在選項中設定JSON設定 **NmsPipeline_Config**. 請參閱本頁的「路由選項」。
+的 **NmsPipeline_Config** 選項。 實際上是JSON分析錯誤。
+在選項中設定JSON配置 **NmsPipeline_Config**。 請參閱此頁中的「路由選項」。
 
-**管道失敗，顯示「主體必須是有效的組織或用戶端」**
+**管道化失敗，但「主題必須是有效的組織或客戶端」**
 
 組織標識符配置無效。
 
-1. 檢查是否已在serverConf.xml中設定IMSOrgId。
-1. 在實例配置檔案中查找可以覆蓋預設值的空IMSOrgId。 如果是，請將其移除。
+1. 檢查IMSOrgId是否在serverConf.xml中設定。
+1. 在實例配置檔案中查找可以覆蓋預設值的空IMSOrgId。 如果是，請將其刪除。
 1. 檢查IMSOrgId是否與Experience Cloud中的客戶匹配。
 
-**管道失敗，出現「無效密鑰」**
+**管道化失敗，出現「無效鍵」**
 
-執行個體設定檔案的@authPrivateKey參數不正確。
+實例配置檔案@authPrivateKey參數不正確。
 
-1. 檢查authPrivateKey是否已設定。
-1. 檢查authPrivateKey:開頭為@，結尾為=，長度約為4000個字元。
-1. 尋找原始金鑰，並確認其為：以RSA格式，長4096位，開頭為 `-----BEGIN RSA PRIVATE KEY-----`.
-   <br> 如有必要，請重新建立金鑰並在Adobe Analytics上註冊。
-1. 檢查金鑰是否在與 [!DNL pipelined]. <br>如有必要，請使用範例JavaScript或工作流程重做編碼。
+1. 檢查是否已設定authPrivateKey。
+1. 檢查authPrivateKey:以@開頭，以=結尾，大約4000個字元長。
+1. 查找原始密鑰，並檢查它是否為：以RSA格式，4096位長，以 `-----BEGIN RSA PRIVATE KEY-----`。
+   <br> 如有必要，請重新建立密鑰並在Adobe Analytics註冊。
+1. 檢查密鑰是否在與 [!DNL pipelined]。 <br>如有必要，請使用示例JavaScript或工作流重做編碼。
 
-**管道失敗，顯示「驗證期間無法讀取權杖」**
+**管道化失敗，「無法在驗證期間讀取令牌」**
 
-私密金鑰的格式無效。
+私鑰的格式無效。
 
-1. 在本頁上運行密鑰加密步驟。
-1. 檢查同一執行個體上是否加密金鑰。
-1. 檢查設定檔案中的authPrivateKey是否符合產生的金鑰。 <br>請務必使用OpenSSL產生金鑰組。 例如，PuttyGen不會產生正確的格式。
+1. 在此頁上運行密鑰加密步驟。
+1. 檢查該密鑰是否在同一實例上加密。
+1. 檢查配置檔案中的authPrivateKey是否與生成的密鑰匹配。 <br>確保使用OpenSSL生成密鑰對。 例如，PuttyGen未生成正確的格式。
 
-**管道失敗，顯示「不再允許取得存取權杖」**
+**流水線失敗，「不再允許獲取訪問令牌」**
 
-記錄應如下：
+日誌應如下：
 
 ```
 2021-05-31T08:42:18.124Z        66462   66501   1       error   log     Listener: JWT Token is empty. (iRc=16384)
@@ -67,41 +67,41 @@ ht-degree: 1%
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-此錯誤訊息表示驗證是使用舊版Omniture基本OAuth來設定。 請參閱 [為Adobe Experience Cloud Triggers設定Adobe I/O](../../integrations/using/configuring-adobe-io.md) 升級驗證的檔案。
+此錯誤消息表示驗證是使用舊版Omniture基OAuth配置的。 請參閱 [為Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md) 文檔以升級驗證。
 
-**未擷取觸發器**
+**未檢索任何觸發器**
 
-當 [!DNL pipelined] 進程正在運行，且未檢索任何觸發器：
+當 [!DNL pipelined] 進程正在運行，並且未檢索任何觸發器：
 
-1. 確認觸發器在Analytics中處於作用中狀態且正在產生事件。
-1. 請確定 [!DNL pipelined] 進程正在運行。
-1. 尋找 [!DNL pipelined] 記錄檔。
-1. 尋找 [!DNL pipelined] 狀態頁面。 觸發 — 捨棄，觸發 — 失敗應為零。
-1. 檢查是否已在 **[!UICONTROL NmsPipeline_Config]** 選項。 如果有疑問，請使用通配符選項。
-1. 檢查Analytics是否具有作用中的觸發器且正在產生事件。 在Analytics中進行設定後，可能會延遲數小時，才會開始使用。
+1. 確保觸發器在分析中處於活動狀態並正在生成事件。
+1. 確保 [!DNL pipelined] 進程正在運行。
+1. 查找 [!DNL pipelined] 日誌。
+1. 查找 [!DNL pipelined] 的子菜單。 觸發器丟棄，觸發器故障應為零。
+1. 檢查觸發器名稱是否在 **[!UICONTROL NmsPipeline_Config]** 的雙曲餘切值。 如果有疑問，請使用通配符選項。
+1. 檢查分析是否具有活動觸發器並且正在生成事件。 在Analytics中進行配置後，在其處於活動狀態之前可能會延遲幾個小時。
 
-**事件未連結至客戶**
+**事件未連結到客戶**
 
-某些事件未連結至客戶時：
+當某些事件未連結到客戶時：
 
-1. 檢查調解工作流程是否正在執行（如果適用）。
+1. 檢查協調工作流是否正在運行（如果適用）。
 1. 檢查事件是否包含客戶ID。
-1. 使用客戶ID在客戶表上進行查詢。
-1. 檢查客戶匯入的頻率。 新客戶會透過工作流程匯入至Adobe Campaign。
+1. 使用客戶ID對客戶表進行查詢。
+1. 檢查客戶導入的頻率。 新客戶將通過工作流導入Adobe Campaign。
 
 **事件處理中的延遲**
 
-當Analytics時間戳記遠早於Campaign中事件的建立日期時。
+當分析時間戳比市場活動中事件的建立日期早得多時。
 
-一般而言，觸發器可能需要15到90分鐘才會啟動行銷活動。 視資料收集實作、管道負載、已定義觸發器的自訂設定，以及Adobe Campaign中的工作流程而定。
+通常，啟動營銷活動可能需要15到90分鐘。 這取決於資料收集的實現、流水線上的載入、定義的觸發器的自定義配置以及Adobe Campaign的工作流程。
 
 1. 檢查 [!DNL pipelined] 進程已運行。
-1. 在pipelined.log中尋找可能導致重試的錯誤。 修正錯誤（如果適用）。
-1. 檢查 [!DNL pipelined] 隊列大小的狀態頁。 如果佇列大小很大，請改善JS的效能。
-1. 由於延遲似乎會隨著數量增加，因此請使用較少的訊息在Analytics上設定觸發器。
+1. 在pipelined.log中查找可能導致重試的錯誤。 修復錯誤（如果適用）。
+1. 檢查 [!DNL pipelined] 隊列大小的狀態頁。 如果隊列大小較大，請提高JS的效能。
+1. 由於延遲似乎隨卷而增加，因此請使用較少的消息在分析上配置觸發器。
 
-**將階段實例從舊式身份驗證升級為AdobeIO身份驗證**
+**將階段實例從舊式身份驗證升級到AdobeIO身份驗證**
 
-變更預備執行個體上的整合驗證不會影響生產執行個體的設定。 您可以選擇升級您的階段實例，然後更新身份驗證以AdobeIO，並在您的階段實例上測試您的觸發器。
+更改階段實例上的整合身份驗證不會影響生產實例的配置。 您可以選擇升級階段實例，然後將身份驗證更新為AdobeIO，並在階段實例上test觸發器。
 
-您的生產執行個體將繼續使用舊版驗證，不會受此變更影響。
+您的生產實例將繼續使用舊式身份驗證，不會受此更改的影響。

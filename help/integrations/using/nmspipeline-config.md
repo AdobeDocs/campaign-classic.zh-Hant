@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 配置整合
-description: 配置整合
+title: 管線選項 NmsPipeline_Config
+description: 管線選項 NmsPipeline_Config
 audience: integrations
 content-type: reference
-source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '374'
+ht-degree: 3%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-驗證一旦運作， [!DNL pipelined] 可以擷取事件並加以處理。 它只會處理在Adobe Campaign中設定的觸發器，而忽略其他觸發器。 觸發器必須從Analytics產生，並預先推送至管道。
-選項也可以設定萬用字元來擷取所有觸發器（無論名稱為何）。
+一旦驗證成功， [!DNL pipelined] 可以檢索事件並處理它們。 它只處理在Adobe Campaign配置的觸發器，而忽略其他觸發器。 觸發器必須是從Analytics生成的，並提前推入管道。
+也可以使用通配符配置該選項，以捕獲所有觸發器，而不考慮名稱。
 
-觸發器的設定是在下方的選項中完成 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 選項名稱為 **[!UICONTROL NmsPipeline_Config]**. 資料類型為JSON格式的「長文字」。
+觸發器的配置在以下選項中完成 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**。 選項名為 **[!UICONTROL NmsPipeline_Config]**。 資料類型為JSON格式的「長文本」。
 
-此範例指定兩個觸發器。
+此示例指定兩個觸發器。
 
-將此範本的JSON程式碼貼入選項值。 請務必移除備注。
+將此模板中的JSON代碼貼上到選項值中。 確保刪除注釋。
 
 ```
 {
@@ -45,7 +45,7 @@ ht-degree: 2%
 }
 ```
 
-第二個範例會擷取所有觸發器。
+第二個示例捕獲所有觸發器。
 
 ```
 {
@@ -66,21 +66,21 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->此 [!DNL Trigger] 在Analytics介面中，特定觸發器名稱的UID值可作為觸發器介面中URL查詢字串參數的一部分找到。 triggerType UID會傳入管道資料流，且程式碼可寫入pipeline.JS中，以將觸發器UID對應至使用者易記標籤，該標籤可儲存在pipelineEvents架構的「觸發器名稱」欄中。
+>的 [!DNL Trigger] 在「分析」介面中，特定觸發器名稱的UID值可作為「觸發器」介面中URL查詢字串參數的一部分找到。 triggerType UID在管道資料流中傳遞，代碼可以寫入管道中。JS將觸發器UID映射到用戶友好標籤，該標籤可以儲存在pipelineEvents架構的「觸發器名稱」列中。
 
-## 消費者參數 {#consumer-parameter}
+## 使用者參數 {#consumer-parameter}
 
-管道與「供應商和消費者」模式搭配使用。 同一隊列中可能有許多消費者。 訊息只會「使用」給個別消費者。 每個消費者都有自己的訊息「副本」。
+該管道與「供應商和消費者」模型配合工作。 同一隊列中可能有許多使用者。 消息僅對單個用戶「使用」。 每個消費者都會得到自己的「副本」。
 
-「消費者」參數會將執行個體識別為其中一個消費者。 此為呼叫管道之執行個體的身分。 您可以以執行個體名稱填入。 管道服務可追蹤每個消費者擷取的訊息。 針對不同的例項使用不同的使用者，可確保將每則訊息傳送至每個例項。
+「consumer」參數將實例標識為這些使用者之一。 它是調用管道的實例的標識。 可以用實例名稱填充它。 管道服務跟蹤每個使用者檢索到的消息。 對不同實例使用不同的使用者可確保將每個消息發送到每個實例。
 
 ## 如何配置管道選項 {#configure-pipeline-option}
 
-在「觸發器」陣列下新增或編輯Experience Cloud觸發器；請勿編輯其餘內容。
-在此協助下，確認JSON有效 [網站](https://jsonlint.com/).
+在「觸發器」陣列下添加或編輯Experience Cloud觸發器；不要編輯其餘內容。
+確保JSON在此幫助下有效 [網站](https://jsonlint.com/)。
 
-* &quot;name&quot;是觸發器ID。 萬用字元「*」會擷取所有觸發器。
-* &quot;Consumer&quot;是唯一識別nlserver例項的任何唯一字串。 通常可以是例項名稱本身。 對於多個環境(dev/stage/prod)，請確定每個環境都是唯一的，以便每個執行個體都能收到訊息的副本。
-* [!DNL Pipelined] 也支援「別名」主題。
+* &quot;name&quot;是觸發器ID。 通配符「*」可捕獲所有觸發器。
+* &quot;Consumer&quot;是唯一標識nlserver實例的任何唯一字串。 它通常可以是實例名稱本身。 對於多個環境(dev/stage/prod)，請確保每個環境都具有唯一性，以便每個實例都獲得消息的副本。
+* [!DNL Pipelined] 還支援「別名」主題。
 
-重新啟動 [!DNL pipelined] 進行變更後才會執行。
+重新啟動 [!DNL pipelined] 進行更改。
