@@ -63,7 +63,7 @@ ht-degree: 99%
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019年(7.2.1版起)</p>
+<p>2019 年（7.2.1 發行版本開始）</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -332,7 +332,7 @@ ht-degree: 99%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019年(7.2.1版起)</p>
+<p>2019 年（7.2.1 發行版本開始）</p>
 <p>2016</p>
 <p>2012</p>
 </td>
