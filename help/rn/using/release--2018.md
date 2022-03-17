@@ -1,110 +1,111 @@
 ---
 product: campaign
-title: Campaign Classic2018版本
-description: 深入了解Campaign Classic2018版本
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+title: Campaign Classic 2018 版本
+description: 進一步瞭解 Campaign Classic 2018 版本
+exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
+source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
 workflow-type: tm+mt
 source-wordcount: '5414'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
-# 2018版本{#release-2018}
+# 2018 版本{#release-2018}
 
 ![](../../assets/v7-only.svg)
 
 ## 第 18.10 發行版本
 
-### 發行版本 18.10.6 - 版本編號 8985{#release-18-10-6-build-8985}
+### 版本 18.10.6 - 版本編號 8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
-**功能改善**
+**功能改進**
 
-* 現在，我們允許在匯入工作流程期間刪除在Microsoft Dynamics中建立的虛擬記錄。
-* 修正了檔案收集器工作流程活動在拒絕存取檔案時可能會在回圈中記錄錯誤的問題。 (NEO-12085)
-* 修正造成使用者活動與未結傳送指標的追蹤報表不一致的問題。 (NEO-11742)
-* 改善使用內部帳戶時執行安全區域套件的權限。
-* 修正了可能導致母體記錄檔發生錯誤的問題。 (NEO-8978)
+* 現在，我們允許在導入工作流期間刪除在MicrosoftDynamics中建立的虛擬記錄。
+* 修復了「檔案收集器」工作流活動的問題，當拒絕訪問檔案時，該活動可能會在循環中記錄錯誤。 (NEO-12085)
+* 修復了導致用戶活動與未結交付指標跟蹤報告之間報告差異的問題。 (NEO-11742)
+* 使用內部帳戶時改進了執行安全區域包的權限。
+* 已修復可能導致mtachild日誌錯誤的問題。 (NEO-8978)
 
-### 發行版本 18.10.5 - 版本編號 8984{#release-18-10-5-build-8984}
+### 版本 18.10.5 - 版本編號 8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
-**功能改善**
+**功能改進**
 
-* 修正了在同時分析/傳送時（同時分析兩個傳送時），導致傳送分析失敗的SQL鎖死問題。 (NEO-13026)
-* 移除「工作流程熱度圖」中的10,000筆記錄限制，以修正遺失的資料問題。 (NEO-12329)
-* 修正在擴充工作流程活動中使用「從主要集保留所有其他資料」選項的問題。 (NEO-13291)
+* 修復了SQL死鎖問題，該問題導致在同時分析/發送（同時分析兩個傳送時）情況下傳遞分析失敗。 (NEO-13026)
+* 已刪除工作流熱度映射中的10,000條記錄限制以修復丟失的資料問題。 (NEO-12329)
+* 在濃縮工作流活動中使用「保留主集中的所有其他資料」選項時，已修復問題。 (NEO-13291)
 
-### 發行版本 18.10.4 - 版本編號 8983{#release-18-10-4-build-8983}
+### 版本 18.10.4 - 版本編號 8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
-**功能改善**
+**功能改進**
 
-* 修正交易式訊息追蹤指標的運算程式問題。 （NEO-12529、NEO-12581）
-* 修正HTTPRequest API未等待所有回呼完成的問題。 (NEO-12628)
-* 已在抵用券臨時表格中新增索引，以最佳化傳送。 (NEO-12437)
-* 修正分析以日文(.JP)網域的收件者為目標的訊息時的問題。 (NEO-12246)
-* 在Analytics整合中，現在允許擷取包含%字元的AAM區段資料。 (NEO-12025)
-* 修正了使用HTTP2傳送推播通知時，發生Tomcat當機問題。 (NEO-12701)
+* Fixed an issue with the computing process of tracking indicators for transactional messages. (NEO-12529、NEO-12581)
+* 修復了HTTPRequest API的問題，該API未等待所有回調完成。 (NEO-12628)
+* 已在優惠券臨時表中添加索引，以優化交付發送。 (NEO-12437)
+* 分析以日文(.JP)域為目標的收件人的郵件時，已修復問題。 (NEO-12246)
+* 在分析整合中，現在允AAM許檢索帶%字元的段資料。 (NEO-12025)
+* 使用HTTP2發送推送通知時，已修復Tomcat崩潰問題。 (NEO-12701)
 
-### 發行版本 18.10.3 - 版本編號 8981{#release-18-10-3-build-8981}
+### 版本 18.10.3 - 版本編號 8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md)  或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>此建築已召回。 請 [升級到最新版本](../../production/using/build-upgrade.md)  或聯繫人 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-**功能改善**
+**功能改進**
 
-* 修正s3檔案傳輸工作流程活動的問題。 (NEO-12473)
-* 修正了「追蹤」工作流程可能失敗的問題。 (NEO-12520)
-* 修正IMS登入的問題。
-* 修正使用大型優惠方案ID時，交易式訊息中的預覽和內容核准問題。
-* 修正中間來源補充（傳送計數器）工作流程的問題。
-* 修正了資料庫結構更新導致NmsRecipient上新索引掉落的問題。
-* 修正針對傳送的主要目標使用外部檔案中的已定義選項時，可能會發生主控台當機的問題。 (NEO-12349)
-* 修正數次InMail當機。
-* 修正使用更新資料工作流程活動來刪除FDATeradata資料庫中儲存的記錄時的問題。
-* 修正密鑰管理中的不一致問題。
-* 修正將欄位輸入為時，「擴充」活動的問題：xml=true, calculated=true
-* 修正在行動應用程式上傳送推播通知時的字元逸出問題。
-* 修正無法在中間來源外部帳戶中從FDA切換至SOAP同步方法的問題。
+* 已修復s3「檔案傳輸」工作流活動的問題。 (NEO-12473)
+* 修復了跟蹤工作流可能失敗的問題。 (NEO-12520)
+* 解決了IMS登錄問題。
+* 使用大型優惠ID時，解決了事務性消息傳遞中的預覽和內容審批問題。
+* 已修復「中間採購（交貨計數器）」工作流的問題。
+* 修復了資料庫結構更新問題，該更新刪除了NmsRecipient上的新索引。
+* 已修復當將外部檔案中的「定義」選項用於傳遞的主要目標時可能發生的控制台崩潰。 (NEO-12349)
+* 已修復多個InMail崩潰。
+* 使用更新資料工作流活動刪除FDATeradata資料庫中儲存的記錄時，已修復問題。
+* 解決了密鑰管理中的不一致問題。
+* 在將欄位鍵入為時，已修復Exchenting活動的問題：xml=true和calculated=true
+* 在移動應用程式上發送推送通知時已修復字元轉義問題。
+* 已修復中間採購外部帳戶中無法從FDA切換到SOAP同步方法的問題。
 
-### 發行版本 18.10.2 - 版本編號 8978{#release-18-10-2-build-8978}
+### 版本 18.10.2 - 版本編號 8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>此建築已召回。 Please [upgrade to the latest build](../../production/using/build-upgrade.md) or contact [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-**功能改善**
+**功能改進**
 
-* 修正在FDA上使用MySQL執行工作流程時的各種問題。 (NEO-11652)
-* 修正傳送推播通知時的效能問題。 (NEO-11787)
-* 修正了在傳送中使用種子地址時，ID耗盡的問題。 (NEO-11842)
-* 修正使用複雜工作流程時可能發生的用戶端凍結問題。 (NEO-11847)
-* 修正搭配1:N連結使用值分佈時的顯示問題。 (NEO-11820)
-* 修正「工作流程熱度圖」的Oracle錯誤。
-* 修正在擴充活動中新增優惠方案主張時的正確問題。
-* 修正SQL資料管理連線問題。
-* 修正了若為負ID，會產生暫時工作流程表格名稱的問題。
-* 修正了在「工作流程熱度圖」中計算工作流程持續時間的問題。
+* Fixed various issues when running workflows using MySQL on FDA. (NEO-11652)
+* 已解決發送推送通知時的效能問題。 (NEO-11787)
+* 在交貨中使用種子地址時已修復ID耗盡問題。 (NEO-11842)
+* 已修復在使用複雜工作流時可能出現的客戶端凍結問題。 (NEO-11847)
+* 使用帶有1:N連結的值分佈時，解決了顯示問題。 (NEO-11820)
+* 已修復工作流熱度映射中的Oracle錯誤。
+* 在濃縮活動中添加報價建議時，解決了一個正確的問題。
+* 已修復SQL資料管理連接問題。
+* 解決了生成臨時工作流表名（如果為負ID）的問題。
+* 在工作流熱度映射中使用工作流持續時間的計算解決了問題。
 
 
-### 發行版本 18.10.1 - 版本編號 8977{#release-18-10-build-8977}
+### 版本 18.10.1 - 版本編號 8977{#release-18-10-build-8977}
 
 2018年11月5日
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>此建築已召回。 請 [升級到最新版本](../../production/using/build-upgrade.md) 或聯繫人 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-**有哪些新增功能？**
+**有哪些新功能？**
 
 <table> 
  <thead> 
@@ -115,46 +116,46 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 推播通知改善<br /> </td> 
-   <td> 已在Adobe Campaign中針對推播通知實作數項增強功能：<br /> 
+   <td> 推送通知改進<br /> </td> 
+   <td> 在Adobe Campaign，為推式通知實施了若干改進：<br /> 
     <ul> 
-     <li> <p>在iOS中追蹤靜默通知 </p> </li> 
-     <li> <p>在iOS中實作註冊呼叫的意見反應</p> </li> 
-     <li> <p>改善iOS傳送準備速度</p> </li> 
-    </ul> <p>現在起，受到Google停用GCM的影響，Android V2連接器僅能連接FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細文件</a>以瞭解詳情。FCM的手動升級詳見本節 <a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">文章</a>. </p> </td> 
+     <li> <p>跟蹤iOS的靜默通知 </p> </li> 
+     <li> <p>在iOS實施登記通知反饋</p> </li> 
+     <li> <p>提高iOS投遞準備速度</p> </li> 
+    </ul> <p>作為GoogleGCM折舊的一部分，Android V2連接器現在只允許連接到FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細文件</a>以瞭解詳情。The manual ugrade to FCM is detailed in this <a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">article</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
-   <td> <p>已新增新的資料管理工作流程活動。 此 <strong>SQL資料管理</strong> 活動可讓您撰寫或複製貼上自己的SQL指令碼，以建立和填入工作表格（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">詳細文件</a>以瞭解詳情。</p></td> 
+   <td> <p>已添加新的資料管理工作流活動。 的 <strong>SQL資料管理</strong> 活動允許您編寫或複製貼上您自己的SQL指令碼以建立和填充工作表（僅限FDA）。 </p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/sql-data-management.md">詳細文件</a>以瞭解詳情。</p></td> 
   </tr> 
   <tr> 
    <td> 監視工作流程<br /> </td> 
-   <td> <p>透過新的Adobe Campaign工作流程熱度圖，平台管理員可快速以圖形化方式呈現所有同時進行的工作流程，借此監控執行個體的負載並據此規劃工作流程。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">詳細文件</a>以瞭解詳情。</p> <p>8977之前（從組建8700開始）的組建版本，也可依需求提供工作流程熱度圖套件。 有關請求和安裝的詳細資訊，請參閱 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本頁</a>.</p> </td> 
+   <td> <p>使用新的Adobe Campaign工作流熱圖，平台管理員可以快速以圖形方式表示所有併發工作流，從而可以監視實例上的負載並相應地規劃工作流。</p> <p>如需詳細資訊，請參閱<a href="../../workflow/using/heatmap.md">詳細文件</a>以瞭解詳情。</p> <p>Workflow HeatMap軟體包也可根據需要提供8977之前的版本（從8700開始）。 有關請求和安裝的詳細資訊，請參閱 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此頁</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **安全性改善功能**
 
-* 修正了可能導致伺服器端請求偽造(SSRF)攻擊和拒絕服務(DoS)攻擊漏洞的安全問題。 (NEO-11453)
-* 內容（追蹤重新導向、鏡像頁面、調查等） 現在由Campaign搭配X-Robots-Tag提供：無快取標題。 這防止了Internet搜索引擎對此內容進行索引。 (NEO-11101)
-* 修正訂閱API(nms)中的XTK插入問題:subscription:取消訂閱和nms:subscription:訂閱)。
-* 修正取消訂閱Web應用程式中的XTK插入問題。
-* 移除某些SMS記錄檔中無法安全顯示的密碼。
+* 已修復可能導致伺服器端請求偽造(SSRF)攻擊和拒絕服務(DoS)攻擊漏洞的安全問題。 (NEO-11453)
+* 內容（跟蹤重定向、鏡像頁面、調查等） 現在將由X-Robots-Tag的Camping提供：無快取頭。 這防止了Internet搜索引擎對此內容進行索引。 (NEO-11101)
+* 在訂閱API(nms)中修復XTK注入問題:subscription:取消訂閱和nms:subscription:訂閱)。
+* 已修復未訂閱Web應用程式中的XTK注入問題。
+* 已刪除某些SMS日誌中不安全顯示的密碼。
 
-**功能改善**
+**功能改進**
 
 * 現在針對 Campaign Classic API 推出[專屬頁 面](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。如果您使用 jsapi.chm 檔案，請參考新的線上版本。
 * 現在支援PostgreSQL 10、Debian 9和Teradata16.20。 請參閱「[相容性矩陣](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)」。
-* 建立SFTP連線時，您現在可以使用Proxy驗證。 如需詳細資訊，請參閱 [詳細檔案](../../installation/using/file-res-management.md) (NEO-9868)
-* 此 **日期計算公式** 使用直接郵件傳送範本建立單一傳送時，「傳送」屬性中現在可使用選項。 (NEO-9792)
-* Cookie追蹤和網頁應用程式的網域名稱管理已得到改善。 如需詳細資訊，請參閱下方的「技術演變」一節。
-* 在安全性和效能方面，已改善在傳送或登陸頁面中匯入Adobe Marketing Cloud共用資產的功能。
-* 行動通道外部帳戶中有新的核取方塊，可在記錄檔中啟用詳細的SMPP追蹤，如此便能直接從Adobe Campaign介面存取輸出。
-* 在broadlogs中，現在會區分每小時的連線數量上限和訊息數量上限。 當達到限制時，就可以知道吞吐量為何受到限制。 以前，這兩種情況都會套用相同的訊息（「符合配額」）。
-* 現在，可以指定從池獲取連接時要執行的SQL指令碼。 此指令碼可用於設定預設架構。 此指令碼將在查詢段落後應用。 (NEO-11256)
-* Campaign SDK不再儲存使用者ID以符合PII法規。 資料現在會以雜湊形式儲存。
-* 匯入套件匯出XML檔案時，Campaign現在支援檔案中是否存在BOM，即使已明確宣告編碼亦然。
+* 建立SFTP連接時，現在可以使用代理身份驗證。 有關詳細資訊，請參閱 [詳細文檔](../../installation/using/file-res-management.md) (NEO-9868)
+* 的 **日期計算公式** 當使用直接郵件傳遞模板建立單個傳遞時，選項現在在傳遞屬性中可用。 (NEO-9792)
+* 對Cookie跟蹤和Web應用程式的域名管理已得到改進。 有關詳細資訊，請參閱下面的「技術演變」部分。
+* Adobe Marketing Cloud在交付或登錄頁共有資產的進口在安全和業績方面都有所改善。
+* 移動通道外部帳戶中有一個新的複選框，用於在日誌檔案中啟用詳細的SMPP跟蹤，這使此輸出可從Adobe Campaign介面直接訪問。
+* 在廣播中，現在可以區分最大連接數和每小時最大消息數。 當達到限制時，就可以知道為什麼吞吐量受到限制。 以前，同一消息（「配額滿足」）應用於這兩種情況。
+* 現在，可以指定在從池獲取連接時要執行的SQL指令碼。 此指令碼可用於設定預設架構。 此指令碼將在查詢段落後應用。 (NEO-11256)
+* 市場活動SDK不再儲存用戶ID以遵守我們的PII管理法規。 Data is now stored as a hash.
+* 導入包導出XML檔案時，市場活動現在支援檔案中存在BOM，即使在檔案中明確聲明了編碼。
 
 **技術演變**
 
@@ -162,23 +163,23 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->如果您的伺服器已更新為18.10，則必須使用18.10用戶端才能存取您的伺服器。 18.10客戶端將能夠連接到較舊的伺服器版本。
+>如果伺服器已更新為18.10，則必須使用18.10客戶端才能訪問伺服器。 18.10客戶端將能夠連接到較舊的伺服器版本。
 
 域名管理
 
-Cookie追蹤和網頁應用程式的網域名稱管理已得到改善。
+對Cookie跟蹤和Web應用程式的域名管理已得到改進。
 
-現在，預設支援所有雙字母的二級網域名稱（例如.aa.com）。 若是更複雜的網域名稱（例如.com.au等三字母的二級網域），您必須將其新增至 **cookieDomains** serverConf的選項（在重新導向標籤下）。 以下是範例：
+現在，預設情況下支援所有雙字母的二級域名（例如.aa.com）。 對於更複雜的域名（例如，三個字母的二級域，如.com.au），您需要在 **cookie域** 的子菜單。 下面是一個示例：
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
 ```
 
-索引增強功能
+索引增強
 
-NmsRecipient上的索引已重新工作。 這應該能改善使用此表格的查詢的效能。 如果您已擴展了NmsRecipient，則可能希望驗證您沒有重複新索引的索引（以最大限度地減少資料庫伺服器上的空間使用）。 (NEO-8228)
+NmsRecipient上的索引已重新處理。 這應會提高使用此表的查詢的效能。 如果已擴展了NmsRecipient ，則可能需要驗證沒有複製新索引的索引（以最大限度地減少資料庫伺服器上的空間使用）。 (NEO-8228)
 
-在使用UTF-8歸類時的PostgreSql上，現在可以建立將優化「LIKE &#39;string%&#39;」（或「starts with」）操作的索引。 如果對同一列執行其他操作（例如按順序或聯接），則需要另一個標準索引。 在架構端，將在索引定義上新增indexOption=&quot;searchFromStart&quot;來完成此操作（將建立varchar_pattern_ops索引，而非標準btree索引）。 例如（在NmsRecipient上）:
+在使用UTF-8歸類的PostgreSql上，現在可以建立將優化「LIKE &#39;string%&#39;」（或「starts with」）操作的索引。 如果對同一列（例如，按順序或聯接）執行其他操作，則需要另一個標準索引。 在架構方面，將通過在索引定義上添加indexOption=&quot;searchFromStart&quot;來完成此操作（它將建立varchar_pattern_ops索引，而不是標準btree索引）。 例如（在NmsRecipient上）:
 
 ```
 <dbindex name="email2"> <!-- optimize order by/join (and startWith if not PostgreSql with an UTF-8 collation) operations -->
@@ -189,67 +190,67 @@ NmsRecipient上的索引已重新工作。 這應該能改善使用此表格的�
 </dbindex>
 ```
 
-NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應可改善對應表單的顯示時間(NEO-11738)。
+新索引已添加到NmsRtEvent和NmsEventHisto（在「已調度」列上），這應會縮短相應表單(NEO-11738)上的顯示時間。
 
-這些索引更改可能導致執行升級後所需時間增加。
+這些索引更改可能會導致執行升級後所需的時間增加。
 
 **修補程式**
 
-* 修正無法將檔案從 **網頁下載** 工作流程活動。 (NEO-11105)
-* 修正偶爾離開 **傳送指標和行銷活動屬性** 處於「失敗」狀態的工作流(NEO-10820)。
-* 修正在工作流程中執行「清單」更新活動後，刪除所建立收件者清單的問題。 (NEO-11696)
-* 修正在「促銷活動」日曆（日文執行個體）中，未將促銷活動提前一個月正確顯示的問題。 (NEO-11445)
-* 修正傳送屬性的「Web Analytics」標籤無法顯示Analytics設定的問題。 (NEO-11619)
-* 修正嘗試編輯和儲存nms:delivery輸入表單時顯示的錯誤。 (NEO-10973)
-* 修正執行包含檔案傳輸活動的工作流程時發生的外部帳戶設定問題。 (NEO-11012)
-* 修正使用zcat函式在「資料載入」活動中載入檔案時，傳回空行的問題。 (NEO-11273)
-* 修正分析傳送期間產生重複之廣泛記錄的問題。 (NEO-11360)
-* 修正在工作流程中執行擴充活動後，外部連結金鑰遺失而導致傳送失敗的問題。 (NEO-11537)
-* 修正當安裝路徑包含特定的GB18030中文字元時，無法正確解除安裝或修復Adobe Campaign的問題。
-* 修正將部分追蹤記錄連結至錯誤傳送的問題。 (NEO-11412)
-* 修正傳送記錄中某些部分的擱置狀態可能比預期更長的問題。 (NEO-11336)
-* 修正編輯查詢以新增抵用券至傳送時發生的錯誤。 (NEO-11037)
-* 修正報表中，無論選取的是匯總運算子，圖表一律會計算值總和的問題。 (NEO-10913)
-* 由於「request.scheme」函式已遭取代，因此已從JSAPI檔案中移除。 (NEO-10828)
-* 修正某些具有特定時區設定的使用者無法登入Adobe Campaign的問題。 (NEO-10712)
-* 修正使用Extended generic SMPP連接器設定行動通道外部帳戶時發生的問題：如果您為接收器指定了不同的參數，則發送器將錯誤地使用這些參數，而不是使用它自己的參數。
-* 修正為壓力規則設定頻率時，排程傳送失敗的問題，因為傳送會在第一次仲裁後持續重新計算。 (NEO-10016)
-* 修正了在應用程式池循環過程（在nlsrvmod.dll庫中）期間導致IIS Web伺服器崩潰的問題。 (NEO-10862)
-* 修正無法搜尋 **設定檔與目標** 螢幕。 (NEO-8228)
-* 修正了在存取「事件歷史記錄」資料夾時，若有大量記錄，可能會導致逾時錯誤的問題。 (NEO-11738)
-* 修正可能導致LINE傳送收件者誤傳為「無法連線」的問題。 (NEO-10833)
-* 修正執行工作流程查詢時，在Oracle上加上其他欄的問題。 (NEO-11615)
-* 已增強功能，以確保連接池中的已關閉連接不會保留太長時間。 (NEO-11392)
-* 修正使用目標工作流程活動(查詢、資料載入(RDBMS)等)時的問題 透過FDA連線至包含UTF8字元的外部Oracle表（在表格名稱、欄位名稱等中） 並且還包含一個主鍵約束，該主鍵約束具有系統生成的預設約束名。 (NEO-10714)
-* 修正無法刪除傳遞HTML內容的問題。 (NEO-11327)
-* 修正了執行促銷活動後，直接郵件中XML和CSV檔案的預覽問題。 (NEO-11290)
-* 修正排序擴充工作流程活動中資料的問題。 (NEO-11394)
-* 修正排序自訂報表中資料的問題。 (NEO-10896)
-* 修正搭配Teradata使用useVault設定時導致錯誤的問題。 (NEO-11399)
-* 修正刪除多個查詢行時，造成Adobe Campaign用戶端主控台當機的問題。 (NEO-10744)
-* 修正傳送直接郵件時，在某些情況下無法套用壓力規則的問題。 (NEO-9004)
-* 修正使用資料載入活動匯入資料類型為「time」的欄時發生的問題：即使移除時間分隔符號後，也會重設。 (NEO-10743)
-* 修正編輯循環傳送時，無法從「傳送」屬性的「執行」資料夾清單中顯示「傳送」資料夾的問題。 (NEO-11094)
-* 修正「檢視母體」視窗無法在工作流程中將超過200筆記錄顯示為查詢活動之結果目標的問題。 (NEO-11195)
-* 修正Oracle中無法在選取超過1000個元素時執行DELETE查詢的問題。 (NEO-11171)
-* 修正導致在Android推播通知傳送的其他參數中，將URL編碼為追蹤URL的問題。 (NEO-11468)
-* 修正將參數設為「一天間隔」和「開啟」時，在「使用者」活動報表中發生的指令碼錯誤。 (NEO-11655)
-* 修正透過已驗證的Web Proxy連線至中間來源伺服器或訊息中心時發生的問題。 (NEO-11309)
-* 修正選取特定結構的元素後，儲存新傳送組合時發生的Oracle錯誤 **基於SQL視圖**. (NEO-11682)
-* 修正了透過使用解壓縮選項的載入檔案活動處理包含.csv的zip檔案時，導致產生包含誤判的拒絕檔案的問題。
-* xtkjoblog現在會由清除清除。
+* 修復了阻止檔案從 **Web下載** 下載工作流活動。 (NEO-11105)
+* 修復了偶爾離開 **發送指標和市場活動屬性** 工作流處於失敗狀態(NEO-10820)。
+* 已修復刪除在工作流中運行「清單」更新活動後建立的收件人清單的問題。 (NEO-11696)
+* 已修復在市場活動日曆（日本實例）中提前一個月錯誤顯示市場活動的問題。 (NEO-11445)
+* 已修復導致無法在傳遞屬性的「Web分析」頁籤中顯示分析配置的問題。 (NEO-11619)
+* 修復了嘗試編輯和保存nms:delivery輸入表單時顯示的錯誤。 (NEO-10973)
+* 已修復運行包含檔案傳輸活動的工作流時發生的外部帳戶配置問題。 (NEO-11012)
+* 修復了使用zcat函式在資料載入活動中載入檔案時返回空行的問題。 (NEO-11273)
+* 已修復在分析交付期間生成重複廣泛日誌的問題。 (NEO-11360)
+* 修復了在工作流中執行Inchremting活動後由於缺少外鍵而導致傳遞失敗的問題。 (NEO-11537)
+* 已修復當安裝路徑包含特定GB18030中文字元時導致無法正確卸載或修復Adobe Campaign的問題。
+* 已修復將某些跟蹤日誌連結到錯誤傳遞的問題。 (NEO-11412)
+* 已修復可能導致交貨日誌的某些部分處於掛起狀態的時間比預期更長的問題。 (NEO-11336)
+* 已修復編輯查詢以將優惠券添加到交貨時發生的錯誤。 (NEO-11037)
+* 修復了報表中的問題，這些報表使圖表始終計算值之和，而不管選擇了哪個聚合運算子。 (NEO-10913)
+* 由於不建議使用&quot;request.scheme&quot;函式，因此已從JSAPI文檔中刪除該函式。 (NEO-10828)
+* 已修復導致某些具有特定時區配置的用戶無法登錄Adobe Campaign的問題。 (NEO-10712)
+* 已修復使用擴展通用SMPP連接器設定移動通道外部帳戶時出現的問題：如果您為接收器指定了不同的參數，則發送器將錯誤地使用這些參數，而不是自己的參數。
+* 修復了在為壓力規則設定頻率時導致計畫交貨失敗的問題，因為在第一次仲裁之後，交貨會不斷重新計算。 (NEO-10016)
+* 已修復導致IIS Web伺服器在應用程式池回收過程（在nlsrvmod.dll庫中）崩潰的問題。 (NEO-10862)
+* 已修復可能無法在中搜索收件人的問題 **配置檔案和目標** 的上界。 (NEO-8228)
+* 修復了在記錄數較多的情況下訪問事件歷史記錄資料夾時可能導致超時錯誤的問題。 (NEO-11738)
+* 已修復可能導致LINE交貨收件人錯誤返回為「無法訪問」的問題。 (NEO-10833)
+* 在執行具有附加列的工作流查詢時，已修復問題Oracle。 (NEO-11615)
+* 已進行增強，以確保關閉的連接不會在連接池中保留太長時間。 (NEO-11392)
+* 使用目標工作流活動(查詢、資料載入(RDBMS)等)時已修復問題 通過FDA連接到包含UTF8字元（在表名、欄位名等中）的外部Oracle表 並且還包含一個主鍵約束，該主鍵約束具有系統生成的預設約束名。 (NEO-10714)
+* 已修復可能無法刪除傳遞的HTML內容的問題。 (NEO-11327)
+* 在運行市場活動後，在直郵中修復了XML和CSV檔案預覽問題。 (NEO-11290)
+* 修復了在濃縮工作流活動中對資料排序時的問題。 (NEO-11394)
+* 在自定義報表中對資料排序時已修復問題。 (NEO-10896)
+* 已修復在使用useVault設定和Teradata時導致錯誤的問題。 (NEO-11399)
+* 修復了刪除多個查詢行時導致Adobe Campaign客戶端控制台崩潰的問題。 (NEO-10744)
+* 已修復導致在傳遞直接郵件時在某些情況下無法應用壓力規則的問題。 (NEO-9004)
+* 已修復使用資料載入活動導入資料類型為「time」的列時出現的問題：即使刪除時間分隔符後，也會重置時間分隔符。 (NEO-10743)
+* 修復了在編輯循環交貨時阻止「交貨」資料夾從「交貨」屬性的「執行」資料夾清單中顯示的問題。 (NEO-11094)
+* 已修復一個問題，該問題使「查看填充」窗口無法將200多條記錄顯示為工作流中查詢活動的結果目標。 (NEO-11195)
+* 已修復Oracle中的問題，該問題阻止在選擇1000個以上元素時執行DELETE查詢。 (NEO-11171)
+* 已修復導致在Android推送通知傳遞的附加參數中將URL編碼為跟蹤的URL的問題。 (NEO-11468)
+* 修復了將參數設定為「一天間隔」和「開啟」時在「用戶活動」報告中出現的指令碼錯誤。 (NEO-11655)
+* 已修復通過經過身份驗證的Web代理連接到中間採購伺服器或消息中心時出現的問題。 (NEO-11309)
+* 修復在選擇特定架構的元素後保存新傳遞組合時發生的Oracle錯誤 **基於SQL視圖**。 (NEO-11682)
+* 通過使用「解壓縮」選項的載入檔案活動處理包含.csv的zip檔案時，修復了導致生成包含誤報的拒絕檔案的問題。
+* xtkjoblog現在由清理清除。
 
 ## 第 18.6 發行版本
 
-### 發行版本 18.6.2 - 版本編號 8949{#release-18-6-3-build-8949}
+### 版本 18.6.2 - 版本編號 8949{#release-18-6-3-build-8949}
 
 2018年8月22日
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>此建築已召回。 請 [升級到最新版本](../../production/using/build-upgrade.md) 或聯繫人 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-**有哪些新增功能？**
+**有哪些新功能？**
 
 <table> 
  <thead> 
@@ -260,68 +261,68 @@ NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應
  </thead> 
  <tbody> 
   <tr> 
-   <td> 查詢區<br /> </td> 
-   <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>以瞭解詳情。</p> </td>
+   <td> 查詢段<br /> </td> 
+   <td> <p>當多個市場活動用戶連接到同一FDATeradata外部帳戶時，您現在可以傳遞特定於每個用戶的查詢範圍（密鑰/值對）。 每次市場活動用戶在Teradata資料庫上執行查詢時，Adobe Campaign現在都能夠發送與該用戶相關聯的元資料。 這些資料（包含在密鑰和值清單中）然後可供Teradata管理員用於審計或管理訪問權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
 </table>
 
-**功能改善**
+**功能改進**
 
-* 電子郵件封存記錄已增強，讓您更輕鬆更清楚地檢查哪些電子郵件已成功傳送或透過密件副本封存失敗。 (NEO-10675)
-* 修正了導致在追蹤廣播中顯示負載平衡器IP而非客戶IP的問題。 (NEO-11295)
-* 修正傳遞屬性遭錯誤覆寫的隨機問題。 (NEO-11015)
-* 修正排序擴充活動結果時的語法錯誤。 (NEO-11394)
-* 修正在 **[!UICONTROL Survey answers]** 工作流程活動。 (NEO-11382)
+* 電子郵件存檔日誌已得到增強，這使檢查哪些電子郵件已成功傳送或通過密件抄送存檔失敗變得更加容易和清晰。 (NEO-10675)
+* 已修復導致在跟蹤廣播中顯示負載平衡器IP而不是客戶IP的問題。 (NEO-11295)
+* 修復了導致錯誤覆蓋傳遞屬性的隨機問題。 (NEO-11015)
+* 在對富集活動結果進行排序時修復語法錯誤。 (NEO-11394)
+* 在中使用計算欄位時修復問題 **[!UICONTROL Survey answers]** 工作流活動。 (NEO-11382)
 * 已更新Tomcat以防止漏洞利用。 (NEO-11503)
-* 修正使用FDA連線至PostgreSQL資料庫時，LATIN1編碼的錯誤。 (NEO-11299)
-* 修正使用 **[!UICONTROL Prepare the personalization data with a workflow]** 傳遞選項。 (NEO-11047)
-* 修正了使用延伸連接器時無法傳送SMS的升級後問題。
-* 改善套件匯入/匯出（介面中新增了記錄檔和地區）。
-* 修正了在升級後記錄中，若 **[!UICONTROL Survey answers]** 工作流程活動未完全設定。
+* 使用FDA連接到PostgreSQL資料庫時，已修復LATIN1編碼錯誤。 (NEO-11299)
+* 已修復使用 **[!UICONTROL Prepare the personalization data with a workflow]** 「交貨」選項。 (NEO-11047)
+* 修復了在使用擴展連接器時無法發送SMS的錯誤級別問題。
+* 改進的包導入/導出（在介面中添加了日誌和區域）。
+* 修復了在以下情況下在配置級別日誌中顯示無用錯誤的問題： **[!UICONTROL Survey answers]** 工作流活動未完全配置。
 
 **技術演變**
 
-查詢區
+查詢段
 
-特定索引鍵（PROXYUSER或PROXYROLE）可用來將Teradata使用者或角色與促銷活動使用者建立關聯。 已新增使用此代理使用者/角色的新權限。 您需要將GRANTCONNECTTHROUGH訪問權限添加到資料庫帳戶(在Teradata外部帳戶中定義的帳戶)。
+特定鍵（PROXYUSER或PROXYROLE）用於將Teradata用戶或角色與市場活動用戶關聯。 已添加新權限以使用此代理用戶/角色。 您需要將GRANTCONNECTTHROUGH訪問權限添加到資料庫帳戶(在Teradata外部帳戶中定義)。
 
-已在Teradata外部帳戶中新增索引標籤。 此 **[!UICONTROL Query banding]** 索引標籤包含下列選項：
+已在Teradata外部帳戶中添加新頁籤。 的 **[!UICONTROL Query banding]** 頁籤包含以下選項：
 
-* **[!UICONTROL Active]**:勾選此方塊以啟用功能。
-* **[!UICONTROL Default]**:輸入預設的查詢段，如果用戶沒有關聯的查詢段，則將使用該段。 如果沒有定義預設的查詢段落，則沒有關聯的查詢段落的用戶將無法使用Teradata。
-* **[!UICONTROL Users]**:為每個使用者指定查詢區段。 您可以視需要新增任意數量的索引鍵/值組。 例如：&#39;priority=1;workload=high;&#39;
+* **[!UICONTROL Active]**:選中此框以激活特徵。
+* **[!UICONTROL Default]**:輸入預設的查詢段落，如果用戶沒有關聯的查詢段落，將使用該段落。 如果沒有定義預設查詢段落，則沒有關聯查詢段落的用戶將無法使用Teradata。
+* **[!UICONTROL Users]**:為每個用戶指定查詢段落。 您可以根據需要添加任意數量的鍵/值對。 例如：&#39;priority=1;workload=high&#39;&#39;
 
-如需查詢區隔的詳細資訊，請參閱下列文章：
+有關查詢段落的詳細資訊，請參閱以下文章：
 
 * [https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-### 發行版本 18.6.1 - 版本編號 8947{#release-18-6-build-8947}
+### 版本 18.6.1 - 版本編號 8947{#release-18-6-build-8947}
 
 2018年6月25日
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [技術支援](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>This build has been recalled. 請 [升級到最新版本](../../production/using/build-upgrade.md) 或聯繫人 [技術支援](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-**有哪些新增功能？**
+**有哪些新功能？**
 
 <table> 
  <thead> 
   <tr> 
-   <th> 功能<br /> </th> 
+   <th> Functionality<br /> </th> 
    <th> 說明<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> 安全性改善<br /> </td> 
-   <td> 已新增一系列安全性改善項目至Campaign Classic。 以下列出改善項目和修正項目。<br /> </td> 
+   <td> 在Campaign Classic中增加了一系列安全改進。 下面列出了改進和修復。<br /> </td> 
   </tr> 
   <tr> 
    <td> 支援Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign現在與Windows Server 2016相容。 請參閱 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic相容性矩陣</a>.<br /> </td> 
+   <td> Adobe Campaign 現在相容於 Windows Server 2016。 請參閱 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic相容性矩陣</a>。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -330,103 +331,103 @@ NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應
 
 decryptString
 
-此 **decryptString** 函式已遭取代。 請參閱 [過時和移除的功能](deprecated-features.md) 文章。
+的 **decryptString** 函式已棄用。 請參閱 [已棄用和已刪除的功能](deprecated-features.md) 文章。
 
-若為新客戶，此函式現在僅用於解密登錄頁面中收件者的加密ID。 若要解密儲存在外部帳戶中的密碼，請使用新 **decryptPassword** 函式。
+對於新客戶，此函式現在僅用於解密登錄頁中收件人的加密ID。 要解密儲存在外部帳戶中的密碼，請使用 **decryptPassword** 的子菜單。
 
-對於現有客戶，此函式的行為不會變更，但建議您使用 **decryptPassword** 而非 **decryptString**. 此 **XtkSecurity_Unsafe_DecryptString** 「相容性」選項是在升級後新增的，預設會啟用，讓您能繼續使用函式。 如果您想停用 **decryptString**，停用選項。
+對於現有客戶，此函式的行為不會更改，但建議您使用 **decryptPassword** 而不是 **decryptString**。 的 **XtkSecurity_Unsafe_DecryptString** 相容性選項由postupgrade添加，並在預設情況下激活，允許您繼續使用函式。 如果要停用 **decryptString**，取消激活選項。
 
 decryptPassword
 
-此 **decryptPassword** 函式。 它可讓您解密儲存在外部帳戶中的密碼。 請參閱 [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) 檔案以取得詳細資訊。
+的 **decryptPassword** 函式。 它允許您解密儲存在外部帳戶中的密碼。 請參閱 [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) 的子菜單。
 
 檔案API
 
-若為新安裝，透過檔案API存取資料夾的限制為 **var**, **sftp** 和Adobe Campaign的臨時資料夾。
+對於新安裝，通過檔案API訪問資料夾時， **var**。 **sftp** 和Adobe Campaign的臨時資料夾。
 
-針對現有客戶，檔案API無法再存取 **conf** 資料夾。 此 **XtkSecurity_Disable_JSFileSandboxing** 「相容性」選項由後置升級添加，預設情況下激活，允許您繼續訪問其他資料夾。 如果您想限制 **var**, **sftp** 和Adobe Campaign的臨時資料夾，停用選項。
+對於現有客戶，檔案API無法再訪問 **會議** Adobe Campaign的資料夾。 的 **XtkSecurity_Disable_JSFileSandboxing** 相容性選項由postupgrade添加，並在預設情況下激活，允許您繼續訪問其他資料夾。 如果要限制訪問 **var**。 **sftp** 和Adobe Campaign的臨時資料夾，取消激活選項。
 
 **修補程式**
 
-* 修正可能影響SMS交易式訊息效能的問題。 (NEO-9812)
+* 已修復可能影響SMS事務性消息效能的問題。 (NEO-9812)
 
 ## 第 18.4 發行版本
 
-### 發行版本 18.4.5 - 版本編號 8937{#release-18-4-5-build-8937}
+### 版本 18.4.5 - 版本編號 8937{#release-18-4-5-build-8937}
 
 2018年11月21日
 
-**功能改善**
+**功能改進**
 
-* 修正在FDA上使用MySQL執行工作流程時的各種問題。 (NEO-11652)
-* 修正特定情況下，傳送母體的一部分仍處於待定狀態的問題。 (NEO-11336)
-* 修正SMS自動回應的間歇性問題。 (NEO-11811)
-* 修正了在傳送中使用種子地址時，ID耗盡的問題。 (NEO-11842)
-* 修正在擴充工作流程活動中執行排序時的語法錯誤。 (NEO-11394)
-* 修正了重新啟動IIS時，可能導致Web伺服器當機的問題。 (NEO-10862)
-* 修正組建升級(FDA - SQL)後，追蹤工作流程可能失敗的問題。 (NEO-11635)
-* 修正可能導致工作流程清單資料遺失的問題。 (NEO-11696)
-* 修正傳送推播通知時的效能問題。 (NEO-11787)
-* 修正網頁追蹤無法用於&quot;com.au&quot;網域(NEO-4385)的問題。
-* 修正使用複雜工作流程時可能發生的用戶端凍結問題。 (NEO-11847)
-* 修正選取特定結構的元素後儲存新傳送時的Oracle錯誤(NEO-11682)。
-* 修正查詢包含重音字元的欄位時的問題(FDA/Teradata)。 外部帳戶現在可讓您變更用於與Teradata驅動程式通訊的編碼。 (NEO-11818).
-* 修正在推播通知中傳遞其他變數中的URL時，可能導致行動應用程式收到格式錯誤或資料不正確的追蹤問題。 （NEO-11468、NEO-11960）
-* 修正將值分佈與1:N連結搭配使用時，造成顯示問題的問題。 (NEO-11820)
-* 修正批量載入無法用於Teradata16的問題。
-* 增加Teradata上時間戳記的緩衝區大小，以避免與15.10驅動程式發生捆綁問題。
-* 改善了長名稱索引的管理，這可能造成升級後問題。
-* 改善子程式死機處理(MTA)期間的共用記憶體可用時間。
-* 修正Apache（追蹤）中的潛在鎖死。
+* 在FDA上使用MySQL運行工作流時已修復各種問題。 (NEO-11652)
+* 解決了在特定情況下導致部分運送人口處於待決狀態的問題。 (NEO-11336)
+* 修復了SMS自動響應的間歇性問題。 (NEO-11811)
+* 在交貨中使用種子地址時已修復ID耗盡問題。 (NEO-11842)
+* 在富集工作流活動中執行排序時修復了語法錯誤。 (NEO-11394)
+* 已修復重新啟動IIS時可能導致Web伺服器崩潰的問題。 (NEO-10862)
+* 已修復可能導致生成升級後跟蹤工作流失敗的問題(FDA - SQL)。 (NEO-11635)
+* 已修復可能導致工作流清單資料丟失的問題。 (NEO-11696)
+* 已解決發送推送通知時的效能問題。 (NEO-11787)
+* 已修復導致網頁跟蹤無法用於&quot;com.au&quot;域(NEO-4385)的問題。
+* 已修復在使用複雜工作流時可能出現的客戶端凍結問題。 (NEO-11847)
+* 在選擇特定架構的元素(NEO-11682)後保存新傳遞時，已修復Oracle錯誤。
+* 查詢包含帶重音字元的欄位時，已修復問題(FDA/Teradata)。 現在，外部帳戶允許您更改用於與Teradata驅動程式通信的編碼。 (NEO-11818).
+* 在推送通知中以其他變數傳遞URL時，解決了跟蹤問題，這可能導致移動應用程式接收的資料格式錯誤或不正確。 (NEO-11468、NEO-11960)
+* 已修復在使用帶1:N連結的值分佈時導致顯示問題的問題。 (NEO-11820)
+* 已修復阻止批量負載在Teradata16上工作的問題。
+* 已增加Teradata上時間戳的緩衝區大小，以避免與15.10驅動程式發生綁定問題。
+* 改進了長名稱索引的管理，這可能導致錯位問題。
+* 在子級死區處理(MTA)期間，共用記憶體可用時間得到改善。
+* 已修復Apache（跟蹤）中的潛在死鎖。
 
 
-### 發行版本 18.4.4 - 版本編號 8936{#release-18-4-4-build-8936}
+### 版本 18.4.4 - 版本編號 8936{#release-18-4-4-build-8936}
 
 2018年8月1日
 
-**功能改善**
+**功能改進**
 
-* 電子郵件封存記錄已增強，讓您更輕鬆更清楚地檢查哪些電子郵件已成功傳送或透過密件副本封存失敗。 (NEO-10675)
-* 修正了導致在追蹤廣播中顯示負載平衡器IP而非客戶IP的問題。 (NEO-11295)
-* 修正使用FDA連線至PostgreSQL資料庫時，LATIN1編碼的錯誤。 (NEO-11299)
-* 修正使用 **[!UICONTROL Prepare the personalization data with a workflow]** 傳遞選項。 （NEO-11047、NEO-11301）
-* 修正傳遞屬性遭錯誤覆寫的隨機問題。 (NEO-11015)
-* 修正在 **[!UICONTROL Survey answers]** 工作流程活動。 (NEO-11382)
-* 修正在 **[!UICONTROL Survey answers]** 工作流程活動。 (NEO-10816)
-* 修正了使用版本編號8935執行伺服器升級時的問題。
-* 修正了在升級後記錄中，若 **[!UICONTROL Survey answers]** 工作流程活動未完全設定。
-* FDATeradata:修正SQL表格中自動增加欄位和索引的問題。
+* 電子郵件存檔日誌已得到增強，這使檢查哪些電子郵件已成功傳送或通過密件抄送存檔失敗變得更加容易和清晰。 (NEO-10675)
+* 已修復導致在跟蹤廣播中顯示負載平衡器IP而不是客戶IP的問題。 (NEO-11295)
+* Fixed an error with LATIN1 encoding when using an FDA Connection to a PostgreSQL database. (NEO-11299)
+* 已修復使用 **[!UICONTROL Prepare the personalization data with a workflow]** 「交貨」選項。 (NEO-11047、NEO-11301)
+* 修復了導致錯誤覆蓋傳遞屬性的隨機問題。 (NEO-11015)
+* 在中使用計算欄位時修復問題 **[!UICONTROL Survey answers]** 工作流活動。 (NEO-11382)
+* 使用XML中儲存的資料時修復了問題 **[!UICONTROL Survey answers]** 工作流活動。 (NEO-10816)
+* 使用build 8935執行伺服器升級時已解決問題。
+* 修復了在以下情況下在配置級別日誌中顯示無用錯誤的問題： **[!UICONTROL Survey answers]** 工作流活動未完全配置。
+* FDATeradata:修復了SQL表中具有自動遞增欄位和索引的問題。
 
-### 發行版本 18.4.3 - 版本編號 8935{#release-18-4-3-build-8935}
+### 版本 18.4.3 - 版本編號 8935{#release-18-4-3-build-8935}
 
 2018年6月22日
 
-**功能改善**
+**功能改進**
 
-* 修正Microsoft Edge和Internet Explorer的追蹤編碼問題。 (NEO-11257)
-* 修正LINE傳送中影像連結個人化的問題。 (NEO-11077)
-* 修正ID序列產生機制無法正常運作的問題。 (NEO-11115)
-* 修正使用具有整數類型調解金鑰的自訂命名空間時，隱私權(GDPR)要求無法運作的問題。 (NEO-11123)
-* 修正使用 **[!UICONTROL Distribution of values]** 選項 **[!UICONTROL Query]** 工作流程活動。 (NEO-10958)
-* 修正從行銷例項同步選件空間至互動例項的問題。 (NEO-11162)
-* 改善升級後期間長名稱索引的管理
+* 已修復Microsoft邊緣和Internet Explorer的跟蹤編碼問題。 (NEO-11257)
+* 已解決LINE交貨中影像連結個性化的問題。 (NEO-11077)
+* 已修復導致ID序列生成機制無法正常工作的問題。 (NEO-11115)
+* 修復了在使用具有整數類型協調密鑰的自定義命名空間時阻止隱私(GDPR)請求工作的問題。 (NEO-11123)
+* 修復了使用 **[!UICONTROL Distribution of values]** 選項 **[!UICONTROL Query]** 工作流活動。 (NEO-10958)
+* 已修復從市場營銷實例到交互實例同步提供空間時的問題。 (NEO-11162)
+* 改進長名稱索引在坡道期間的管理
 
-### 發行版本 18.4.2 - 版本編號 8932{#release-18-4-2-build-8932}
+### 版本 18.4.2 - 版本編號 8932{#release-18-4-2-build-8932}
 
 2018年5月22日
 
-**功能改善**
+**功能改進**
 
-* 修正Windows Server更新無法正常運作的問題。
-* 修正 **[!UICONTROL Survey Result]** 活動。 報告顯示不正確。 (NEO-10816)
-* 修正了使用退信郵件伺服器時，inMail程式可能發生的效能問題。 (NEO-10641)
-* 修正了升級超過1000個結構時可能發生的資料庫升級問題。
+* 已修復導致Windows Server更新無法正常工作的問題。
+* 已修復 **[!UICONTROL Survey Result]** 使用XML中儲存的資料時的活動。 報告顯示不正確。 (NEO-10816)
+* 修復了使用彈回郵件伺服器時inMail進程可能出現的效能問題。 (NEO-10641)
+* 已修復在升級1000個以上架構時可能發生的資料庫升級問題。
 
-### 發行版本 18.4.1 - 版本編號 8931{#release-18-4-build-8931}
+### 版本 18.4.1 - 版本編號 8931{#release-18-4-build-8931}
 
 2018年4月24日
 
-**有哪些新增功能？**
+**有哪些新功能？**
 
 <table> 
  <thead> 
@@ -437,58 +438,58 @@ decryptPassword
  </thead> 
  <tbody> 
   <tr> 
-   <td> 歐盟一般資料保護規範(GDPR)<br /> </td> 
-   <td> <p>GDPR是歐盟(EU)的新隱私權法，協調2018年5月25日生效的資料保護要求並以現代化方式規範這些要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign中已提供的隱私權功能（包括同意管理、資料保留設定和使用者角色）之外，我們也趁此次機會，以資料處理者的角色加入其他功能，以協助您做好準備，以便擔任資料控管單位，處理特定GDPR請求：</p> 
+   <td> 歐盟一般資料保護條例(GDPR)<br /> </td> 
+   <td> <p>GDPR是歐盟(EU)的新隱私法，它協調並現代化將於2018年5月25日生效的資料保護要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign已經提供的隱私功能（包括同意管理、資料保留設定和用戶角色）外，我們還將利用此機會作為資料處理器角色加入其他功能，以幫助您作為資料控制器就緒，滿足某些GDPR請求：</p> 
     <ul> 
-     <li> <p>訪問權限：可讓資料主體接收資料控制者擷取的個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
-     <li> <p>刪除權限：為資料主體賦予權利，讓資料控制者清除其個人資料，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
+     <li> <p>訪問權限：允許資料主題接收由資料控制器捕獲的個人資料的副本，可能包括儲存在Adobe Campaign的資料。</p> </li> 
+     <li> <p>刪除權限：資料使用者有權擦除其資料控制器捕獲的個人資料，可能包括儲存在Adobe Campaign的資料。</p> </li> 
     </ul> 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">詳細文件</a>以瞭解詳情。<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用中的設定檔案<br /> </td> 
-   <td> <p>Adobe Campaign現在提供作用中設定檔的清單，並透過專用的工作流程每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">詳細文件</a>以瞭解詳情。</p> </td> 
+   <td> <p>Adobe Campaign現在提供活動配置檔案清單，並通過專用工作流每月更新。</p> <p>如需詳細資訊，請參閱<a href="../../platform/using/about-profiles.md#active-profiles">詳細文件</a>以瞭解詳情。</p> </td> 
   </tr> 
   <tr> 
-   <td> Android推播連接器增強功能<br /> </td> 
-   <td> <p>已增強Android連接器，以支援更高的吞吐量。 </p> <p>如需詳細資訊，請參閱<a href="../../delivery/using/configuring-the-mobile-application.md">詳細文件</a>以瞭解詳情。</p> </td> 
+   <td> Android Push連接器增強<br /> </td> 
+   <td> <p>Android連接器已得到增強，可支援更高的吞吐量。 </p> <p>如需詳細資訊，請參閱<a href="../../delivery/using/configuring-the-mobile-application.md">詳細文件</a>以瞭解詳情。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **安全性改善功能**
 
-* 現在已停用外部實體的擴充，以防止未驗證使用者發生潛在攻擊。 (NEO-10173)
-* 強化權限，以防止標準使用者變更執行個體設定參數，例如應用程式存取URL、LDAP設定等。 (NEO-10171)
-* 修正了可能透過堆疊追蹤顯示敏感資訊的問題。 錯誤詳細資訊現在記錄在無法從外部網路存取的位置的後端。 (NEO-10176)
-* 強化的權限，以防止標準使用者檢視管理員的已上傳檔案和/或已匯出套件。 (NEO-10170)
+* 現在禁用了外部實體的擴展，以防止未經身份驗證的用戶發起潛在攻擊。 (NEO-10173)
+* 強化的權限，防止標準用戶更改實例配置參數，如應用程式訪問URL、LDAP設定等。 (NEO-10171)
+* 已修復可通過堆棧跟蹤顯示敏感資訊的問題。 錯誤詳細資訊現在記錄在從外部網路無法訪問的位置的後端。 (NEO-10176)
+* Hardened permissions to prevent standard users from viewing an administrator&#39;s uploaded documents and/or exported packages. (NEO-10170)
 
-**功能改善**
+**功能改進**
 
-* **LINE通道 — 架構增強**:與Adobe Campaign中的所有其他管道一樣，現在所有部署類型都支援LINE管道：托管、混合和內部部署。
-* **序列自動生成**:已增強ID產生機制，以增加具有大量物件之Campaign執行個體的有效期限。 如需詳細資訊，請參閱 [技術檔案](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html).
+* **LINE通道 — 體系結構增強**:與Adobe Campaign的所有其它通道一樣，LINE通道現在支援所有部署類型：托管、混合和內部部署。
+* **序列自動生成**:ID生成機制已得到增強，以增加具有大量對象的Camping實例的壽命。 For more information, refer to this [technote](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html).
 
 **其他變更**
 
-* 使用命令行導入包時可使用新模式，允許循環依賴項（對於大型包不建議使用）。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-8979)
-* 改善Teradata中載入大量資料的效能，並修正無法顯示記錄中處理之資料的正確值的問題。 (NEO-10429)
-* 從Audience Manager匯入對象現在可處理分割檔案。 以前，只有匯入SharedAudience技術工作流程匯入了區段的最後一個檔案。 (NEO-10156)
-* 在Windows上，Campaign伺服器的預設安裝路徑已變更。 啟動64位元版本設定時，預設安裝路徑現在為： **C:\Program Files\Adobe\Adobe Campaign Classic v7** 而非 **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
-* 已增強預設的MX規則，以包含更多網域並最佳化輸送量。
-* 對部署精靈SOAP呼叫(xtk:serverOptions#SaveOptions)強制存取限制。
-* weka.jar淘汰程式庫已移除，OpenSSL程式庫已更新，以最佳化安全性。
-* 改善帳單技術工作流程以保護執行個體效能。
-* 管理員設定或重設任何運算子密碼的功能已還原。 若要這麼做，請以滑鼠右鍵按一下運算子，選取 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** 並設定操作員的新密碼。 建議操作員在首次重新連線時變更其密碼。 如需詳細資訊，請參閱[詳細文件](../../production/using/lost-password.md)以瞭解詳情。
-* 為了支援Adobe Target中的新多租用戶功能，現在當設定與Target整合的選項和外部帳戶時，可以將新的「at_property」參數新增至URL。 可在Adobe Target中找到此參數使用的值，且將供Campaign在對Target執行呼叫時使用。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)以瞭解詳情。
-* 您現在可以指定在按一下Adobe Target提供的影像時要開啟的預設登陸頁面。 過去，點按該影像會改為建立電子郵件時產生預設影像集。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)以瞭解詳情。
-* 新增 **啟用SMPP跟蹤** 外部帳戶中的複選框以強制跟蹤輸出。 如需詳細資訊，請參閱[詳細文件](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)以瞭解詳情。
+* 使用命令行可以使用新模式導入包，從而允許循環依賴項（不建議使用大型包）。 See the &#39;Technical evolutions&#39; section for more information. (NEO-8979)
+* 改進了在Teradata中載入大量資料的效能，並解決了無法顯示日誌中處理資料的正確值的問題。 (NEO-10429)
+* 現在，從Audience Manager導入受眾可以處理拆分檔案。 以前，只有段的最後一個檔案是由importSharedAuvience技術工作流導入的。 (NEO-10156)
+* 在Windows上，市場活動伺服器預設安裝路徑已更改。 啟動64位版本安裝程式時，預設安裝路徑是： **C:\Program Files\Adobe\Adobe Campaign Classic v7** 而不是 **C:\Program Files (x86)\Adobe\Adobe Campaign Classicv7**
+* 預設的MX規則已增強，以包括更多域並優化吞吐量。
+* 對部署嚮導SOAP調用(xtk:serverOptions#SaveOptions)強制訪問限制。
+* weka.jar過時庫已刪除，OpenSSL庫已更新以進行安全優化。
+* 改進計費技術工作流，保證實例效能安全。
+* 管理員設定或重置任何操作員密碼的能力已恢復。 要執行此操作，請按一下右鍵運算子，選擇 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** 並設定操作員的新密碼。 我們建議操作員在首次重新連接時更改其密碼。 如需詳細資訊，請參閱[詳細文件](../../production/using/lost-password.md)以瞭解詳情。
+* 為支援Adobe Target的新多租賃功能，現在可在配置選項和外部帳戶以與目標整合時，將新的&quot;at_property&quot;參數添加到URL中。 此參數的值可在Adobe Target找到，並且在對目標執行呼叫時將由市場活動使用。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)以瞭解詳情。
+* 現在，您可以指定在按一下Adobe Target提供的影像時開啟的預設登錄頁。 以前，按一下該影像會導致在建立電子郵件時設定預設影像。 如需詳細資訊，請參閱[詳細文件](../../integrations/using/inserting-a-dynamic-image.md)以瞭解詳情。
+* 已添加 **啟用SMPP跟蹤** 複選框以強制跟蹤輸出。 如需詳細資訊，請參閱[詳細文件](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)以瞭解詳情。
 
 **技術演變**
 
-queryDef
+查詢定義
 
-已針對&quot;orderBy&quot;子句修改queryDef。 在更改前，查詢表的主鍵將隱式添加到「orderBy」子句中。 在某些資料庫引擎（至少是postgresql）上，它會阻止索引的使用（orderBy子句的所有欄位必須由同一索引覆蓋）。 如果您與此行為相依，則必須在「orderBy」子句中明確新增主鍵。
+queryDef已針對&quot;orderBy&quot;子句進行修改。 在更改之前，查詢表的主鍵將隱式添加到&quot;orderBy&quot;子句中。 在某些資料庫引擎（至少是postgresql）上，它會阻止索引的使用（orderBy子句的所有欄位都必須由同一索引覆蓋）。 如果您依賴於此行為，則必須在「orderBy」子句中顯式添加主鍵。
 
-例如，如果您有下列查詢：
+例如，如果您有以下查詢：
 
 ```
 <queryDef operation="select" schema="xtk:job" startPath="/" xtkschema="xtk:queryDef">
@@ -501,7 +502,7 @@ queryDef
 </queryDef>`
 ```
 
-以（在18.4變更前）的形式隱含：
+它將以（在18.4變化之前）的方式暗示：
 
 ```
 <queryDef operation="select" schema="xtk:job" startPath="/" xtkschema="xtk:queryDef">
@@ -517,11 +518,11 @@ queryDef
 
 urlEncode函式
 
-「urlEncode」 JavaScript函式無法正常用於非ASCII字元。 已修正，現在應可搭配所有Unicode字元（包括日文字元）使用。 如果您依賴非ASCII字元的「urlEncode」行為，則必須調整您的代碼。
+The &#39;urlEncode&#39; JavaScript function was not working properly for non ASCII characters. 它已經更正，現在應用於所有Unicode字元（包括日文字元）。 如果您依賴非ASCII字元的「urlEncode」行為，則必須調整代碼。
 
 包導入新模式
 
-使用命令行導入包時可使用新模式，允許循環依賴項（對於大型包不建議使用）。 會保留現有功能。 對於具有循環依賴項的此類包，將添加一個新標籤 **-usejs** 已新增至命令列套件匯入。 執行時，會像從介面執行套件匯入時一樣使用JSEngine。
+使用命令行可以使用新模式導入包，從而允許循環依賴項（不建議使用大型包）。 保留現有功能。 對於具有循環依賴項的此類包，新標誌 **-usejs** 已添加到命令行包導入中。 執行時，將像從介面執行包導入時那樣使用JSEngine。
 
 ```
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
@@ -529,39 +530,39 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 
 **修補程式**
 
-* 修正從Adobe Campaign Standard複製傳送和追蹤記錄檔至Adobe Campaign Classic時的同步問題。 (NEO-10023)
-* 修正了在快速載入操作失敗後，ETL工作流程恢復時，處理Teradata中錯誤和記錄表的問題。 現在，每次工作流恢復時，錯誤和日誌表都會被正確刪除。 (NEO-10672)
-* 修正了升級後問題，若已安裝FDA套件，則會自動安裝Hive套件(Hadoop所需)。 (NEO-10592)
-* 修正將無效網域視為 **未定義** 錯誤。 (NEO-10248)
-* 修正傳送android推播傳送時，deliveryLogStats表格中重複記錄的問題。 (NEO-10234)
-* 修正條碼掃描器無法讀取某些條碼格式的問題。 (NEO-10125)
-* 修正使用非ASCII字元時，「urlEncode」 JavaScript函式的問題。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-10123)
-* 修正在Teradata資料庫上執行包含sha256函式的查詢時的問題。 (NEO-10119)
-* 修正了使用超大的SalesForce表時，SalesForce活動中可能發生的工作流記憶體錯誤。 (NEO-9900)
-* 修正 **生成補充** 選項（使用FDA時在目標工作流程活動中）。 (NEO-9878)
-* 修正可能導致 **已處理** 和 **成功** 量度使用中間來源時沒有在行銷執行個體上更新。 (NEO-9454)
-* 修正平台總共提供超過10,000個選件時的互動非主張規則(NEO-9352)
-* 修正了使用XML外部檔案時無法指定傳送目標的問題。 (NEO-9312)
-* 修正在選件上執行假設並更新主張狀態時，可能導致工作流程錯誤的問題。 (NEO-9304)
-* 修正根據Android傳送對應的屬性使用壓力規則時，在傳送分析期間發生的錯誤。 (NEO-9202)
-* 修正排序收件者清單中的欄時，可能導致效能問題的問題。 有關queryDef修改的詳細資訊，請參閱下面的「技術演變」一節。 (NEO-9042)
-* 修正核准電子郵件中的連結可能指向錯誤登入URL的問題，尤其是使用Federated ID登入類型時。 (NEO-9011)
-* 修正某些時區的報表日期選擇器顯示錯誤日期的問題。 (NEO-9007)
-* 修正使用FDA SQL資料庫時無法檢視傳出目標的問題。 (NEO-8924)
-* 修正導致MS Dynamics CRM連接器無法提取前7天資料的問題。 (NEO-8803)
-* 修正Analytics整合的錯誤，該錯誤會讓使用者無法加入國際字元。 (NEO-8719)
-* 修正了在沒有適當權限的情況下，可能會啟用工作流程編輯的問題。 (NEO-8708)
-* 修正在混合架構中使用訊息中心時，導致連線中斷或連線遺失（逾時）的FDA over HTTP問題。 (NEO-8438)
-* 修正負ID的增量查詢活動中發生的工作流程錯誤。 (NEO-8229)
-* 修正某些畫面中可能顯示雙捲軸的問題。 (NEO-8208)
-* 修正了在執行更新資料庫結構精靈時，顯示錯誤訊息的問題。 PostUpgrade將對名稱超過30的索引執行更名。 請注意，對於大型表，替換索引需要時間。 (NEO-7983)
-* 修正追蹤記錄無法從Message Center執行例項正確同步至控制例項的問題。 (NEO-7286)
-* 修正選件擴充活動的效能問題。 (NEO-7263)
-* 修正了透過FDA查詢Redshift資料庫時無法使用DaysAgo函式的問題。 (NEO-7099)
-* 修正資料管理中無法在類似擴充的工作流程活動上建立索引的回歸。
-* 修正以標題建立外部資源時可能發生的問@id
-* 修正透過FTP伺服器上傳壓縮檔案，或上傳檔案名稱中含有萬用字元的檔案時，可能發生的問題。
-* 修正外部自訂資源中建立至Campaign Standard的長基本類型列舉問題。
-* 修正即使與提供者的連線失敗，仍可能傳送簡訊，導致簡訊遺失的問題。
-* 修正導致SMTP連線無限期卡住的錯誤。
-* 修正使用LINE對應或篩選及定位結構不同時，訊息準備期間壓力類型規則的問題。
+* 已修復從Adobe Campaign Standard複製到Adobe Campaign Classic的交付和跟蹤日誌時的同步問題。 (NEO-10023)
+* 在快速載入操作失敗後，ETL工作流正在恢復時，已修復Teradata中錯誤和日誌表的處理問題。 現在，每次工作流恢復時，錯誤表和日誌表都會被正確刪除。 (NEO-10672)
+* 已修復錯誤級別問題，以便在安裝FDA包時自動安裝Hive包(Hadoop需要)。 (NEO-10592)
+* 已修復將無效域視為 **未定義** 錯誤。 (NEO-10248)
+* 已修復發送android推送遞送時在deliveryLogStats表中重複日誌的問題。 (NEO-10234)
+* 已修復可能導致條形碼掃描器無法讀取某些條形碼格式的問題。 (NEO-10125)
+* 使用非ASCII字元時，已修復「urlEncode」 JavaScript函式的問題。 有關詳細資訊，請參閱「技術演變」部分。 (NEO-10123)
+* 在Teradata資料庫上執行包含sha256函式的查詢時修復了問題。 (NEO-10119)
+* 已修復在使用非常大的SalesForce表時可能在SalesForce活動中發生的工作流記憶體錯誤。 (NEO-9900)
+* 已修復 **生成補碼** 選項，以在使用FDA時針對工作流活動。 (NEO-9878)
+* 已修復可能導致 **已處理** 和 **成功** 使用中間來源補充時未在市場營銷實例上更新度量。 (NEO-9454)
+* 在平台中總提供10k以上時的固定交互非命題規則(NEO-9352)
+* 已修復在使用XML外部檔案時無法指定傳遞目標的問題。 (NEO-9312)
+* 修復了在對聘用運行假設並更新命題的狀態時可能導致工作流錯誤的問題。 (NEO-9304)
+* 在基於Android交付映射的屬性使用壓力規則時在交付分析期間發生的固定錯誤。 (NEO-9202)
+* 在對收件人清單中可能導致效能問題的列進行排序時，已修復問題。 有關queryDef修改的詳細資訊，請參閱下面的「技術演化」部分。 (NEO-9042)
+* 修復了審核電子郵件中的連結可能指向不正確的登錄URL的問題，特別是在使用Federated ID登錄類型時。 (NEO-9011)
+* Fixed an issue which could lead to wrong dates being displayed in the date pickers of reports for certain timezones. (NEO-9007)
+* 已修復在使用FDA SQL資料庫時無法查看出站目標的問題。 (NEO-8924)
+* 已修復導致MS Dynamics CRM連接器在每月前7天無法提取資料的問題。 (NEO-8803)
+* 已修復分析整合錯誤，該錯誤阻止用戶包括國際字元。 (NEO-8719)
+* 修復了一個問題，該問題可以在沒有適當權限的情況下啟用工作流編輯。 (NEO-8708)
+* 在混合體系結構中使用消息中心時，通過HTTP解決了FDA的問題，導致連接斷開或連接丟失（超時）。 (NEO-8438)
+* 負ID的增量查詢活動中發生的固定工作流錯誤。 (NEO-8229)
+* 已修復可能導致在某些螢幕中顯示雙捲動條的問題。 (NEO-8208)
+* 已修復導致在運行更新資料庫結構嚮導時顯示錯誤消息的問題。 PostUpgrade將對名稱超過30的索引執行更名。 請注意，對於大型表，索引替換將需要時間。 (NEO-7983)
+* 修復了跟蹤日誌未從消息中心執行實例正確同步以控制實例的問題。 (NEO-7286)
+* 解決了與優惠活動相關的效能問題。 (NEO-7263)
+* 已修復通過FDA查詢Redshift資料庫時無法使用DaysAgo函式的問題。 (NEO-7099)
+* 修復了資料管理中的回歸，該回歸阻止了在類似富集的工作流活動上建立索引。
+* 已修復建立標題為@id的外部資源時可能發生的問題
+* 修復了通過FTP伺服器上載壓縮檔案或在檔案名中使用通配符上載檔案時可能出現的問題。
+* 已修復在建立為Campaign Standard的外部自定義資源中具有長基類型枚舉的問題。
+* 已修復一個問題，即使與提供程式的連接失敗導致SMS丟失，也可能導致發送SMS。
+* 已修復導致SMTP連接無限期卡住的錯誤。
+* 在使用LINE映射或篩選和目標架構不同時，在消息準備期間解決了壓力類型規則問題。
