@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
 workflow-type: tm+mt
-source-wordcount: '4938'
-ht-degree: 99%
+source-wordcount: '4932'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 
 已添加對 **[!UICONTROL Test SMTP delivery]** 的雙曲餘切值。 [閱讀全文](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-「發行說明」概述部分已更新，以明確市場活動控制台升級指南。 [閱讀全文](../../rn/using/rn-overview.md)
+「升級入門」頁已更新，以明確市場活動控制台升級指南。 [閱讀全文](../../rn/using/rn-overview.md)
 
 新的Campaign v7.2.2版本現已推出。 [閱讀全文](../../rn/using/latest-release.md)
 
@@ -69,7 +69,7 @@ ht-degree: 99%
 
 ### 2021 年 12 月{#dec-2021}
 
-Campaign Classic v7 版本說明已重新整理，以簡化導覽。 [閱讀全文](rn-overview.md)
+Campaign Classicv7發行說明已重新組織，以簡化導航。 [閱讀全文](rn-overview.md)
 
 更新並改善 Campaign 中表單版本的相關文件。 [閱讀全文](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ CentOs 8 已到期，現已被 Adobe Campaign Classic 淘汰。 [閱讀全文](d
 
 ### 2021 年 6 月 {#june-2021}
 
-**異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[增強型綱要](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚瞭解此流程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
+的 **事務性消息** 部分已重新組織，並用新的Get started部分加以澄清，其中包括 [增強模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) 以便更好地理解這個過程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
 **21.1.3 版本隨附的其他文件更新**
 
@@ -156,7 +156,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 ### 2021 年 3 月 {#march-2021}
 
-[開始使用簡訊章節](../../delivery/using/sms-channel.md)已重新整理並改善。 您現在可以在專屬章節中學習如何[設定簡訊頻道](../../delivery/using/sms-set-up.md)、[建立簡訊](../../delivery/using/sms-create.md)、[傳送及追蹤簡訊](../../delivery/using/sms-send.md)。
+[開始使用簡訊章節](../../delivery/using/sms-channel.md)已重新整理並改善。 你現在可以學習 [配置SMS通道](../../delivery/using/sms-set-up.md)。 [建立SMS](../../delivery/using/sms-create.md)。 [發送和跟蹤簡訊](../../delivery/using/sms-send.md) 在專用區。
 
 Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。 [顯示全文](../../support.md)
 
@@ -285,7 +285,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已將詳細資訊新增至「取得 Adobe Campaign 版本」區段的「關於」方塊說明中。[顯示全文](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-已將執行建置升級的准則新增至「更新 Adobe Campaign Classic」區段。閱讀更多資訊[閱讀更多資訊](../../production/using/build-upgrade.md)
+已將執行建置升級的准則新增至「更新 Adobe Campaign Classic」區段。[閱讀全文](../../production/using/build-upgrade.md)
 
 已將有關 Campaign 版本編號升級的常見問答集新增至 Campaign 常見問題。閱讀更多資訊[閱讀更多資訊](../../platform/using/faq-build-upgrade.md)
 
@@ -344,7 +344,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 * 調用查詢中的執行個體變數
 * 將分割百分比套用在人口上
 
-已新增其他使用資訊與變數使用附註以豐富本&#x200B;**[!UICONTROL AND-join]**&#x200B;活動區段內容。[顯示全文](../../workflow/using/and-join.md)
+的 **[!UICONTROL AND-join]** activity部分已增補了有關其使用情況的附加資訊，以及關於變數使用情況的說明。 [閱讀全文](../../workflow/using/and-join.md)
 
 ### 2020 年 7 月 {#july-2020}
 
@@ -612,7 +612,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 建立了新的「組建版本升級常見問題集」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)
 
-更新[相容性矩陣](compatibility-matrix.md)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存 19.0 相容性矩陣。
+更新[相容性矩陣](compatibility-matrix.md)。支援的資料庫系統清單已更新，Android/iOS版本和相關SDK。 封存 19.0 相容性矩陣。
 
 更新「已棄用和已移除的 Campaign Classic 功能」頁面。[顯示全文](deprecated-features.md)
 
@@ -626,7 +626,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新預先處理工作流程選項的說明，以反映產品變更。[顯示全文](../../workflow/using/data-loading--file-.md)
 
-更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
+Experience Cloud觸發器技術已更新。 [顯示全文](../../integrations/using/about-triggers.md)
 
 更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
@@ -681,7 +681,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 ### 2019 年 1 月{#release-doc-16-01-2019}
 
-更新 Marketing Cloud Triggers Technote。[顯示全文](../../integrations/using/about-triggers.md)
+Experience Cloud觸發器技術已更新。 [顯示全文](../../integrations/using/about-triggers.md)
 
 已於「優惠方案核准」章節新增說明，以指出「已核准內容」提及是代表內容核准流程已完成，不論所有優惠方案是否已啟用/核准。[顯示全文](../../interaction/using/offer-catalog-overview.md)
 
