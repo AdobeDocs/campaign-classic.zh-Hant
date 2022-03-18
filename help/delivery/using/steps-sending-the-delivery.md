@@ -4,9 +4,9 @@ title: 配置併發送交貨
 description: 瞭解如何配置和發送交付
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1556'
 ht-degree: 5%
 
 ---
@@ -33,13 +33,16 @@ ht-degree: 5%
    >
    >複製傳遞時，會重置參數。
 
-* **[!UICONTROL Send using multiple waves]**:有關此內容的詳細資訊，請參閱 [使用多波發送](#sending-using-multiple-waves)。
+* **[!UICONTROL Send using multiple waves]**:使用此選項可以以波浪方式發送您的消息，而不是發送給整個觀眾。 配置批數及其比例。 [了解更多資訊](#sending-using-multiple-waves)。
 
-* **[!UICONTROL Test SMTP delivery]**:此選項允許您test通過SMTP發送傳遞。 該傳遞被處理到連接到SMTP伺服器，但未被發送。
+* **[!UICONTROL Test SMTP delivery]**:使用此選項可test通過SMTP發送。 該傳遞被處理到連接到SMTP伺服器，但未發送：對於每個傳遞的收件人，Campign會連接到SMTP提供程式伺服器，執行SMTP RCPT TO命令，並在SMTP DATA命令之前關閉連接。
 
    >[!NOTE]
    >
-   >在安裝使用中間來源補充時，不建議使用此選項來不調用mta。 有關配置SMTP伺服器的詳細資訊，請參閱 [此部分](../../installation/using/configure-delivery-settings.md)。
+   >* 在中間採購中不建議使用此選項。
+   >
+   >* 瞭解有關SMTP伺服器配置的詳細資訊，請參閱 [此部分](../../installation/using/configure-delivery-settings.md)。
+
 
 * **[!UICONTROL Email BCC]**:此選項允許您通過密件抄送將電子郵件儲存在外部系統上，方法是將密件抄送電子郵件地址添加到郵件目標。 如需詳細資訊，請參閱[本章節](sending-messages.md#archiving-emails)。
 

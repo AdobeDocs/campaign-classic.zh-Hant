@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 329cf80ff021322e57a63cf86f4b4e206f6385d1
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 97%
@@ -31,7 +31,7 @@ ht-degree: 97%
 
 ![](assets/do-not-localize/red3.png) **已棄用** － 無部署。無錯誤修正。 現有實施必須升級。
 
-## 版本週期
+## 版本週期{#rn-cycle}
 
 Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握最新、最佳的資訊，進而確保安全的使用環境，並改產品使用體驗。
 

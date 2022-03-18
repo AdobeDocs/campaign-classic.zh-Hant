@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '4903'
-ht-degree: 100%
+source-wordcount: '4938'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 100%
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
 ## 2022 年
+
+
+### 2022 年 3 月 {#mar-2022}
+
+已添加對 **[!UICONTROL Test SMTP delivery]** 的雙曲餘切值。 [閱讀全文](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+
+「發行說明」概述部分已更新，以明確市場活動控制台升級指南。 [閱讀全文](../../rn/using/rn-overview.md)
+
+新的Campaign v7.2.2版本現已推出。 [閱讀全文](../../rn/using/latest-release.md)
+
 
 ### 2022 年 2 月 {#february-2022}
 
