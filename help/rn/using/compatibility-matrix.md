@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 0cebe1ed2cd045559393c1914258593d608e50a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 99%
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>Windows Server 2016 上的 10.0 及2019</p>
+<p>Windows Server 2016 上的 10.0和 2019</p>
 <p>Windows Server 2012 R2 上的 8.5</p>
 <p>Windows Server 2012 上的 8.0 - Windows 8</p>
 </td>
@@ -426,7 +426,7 @@ ht-degree: 99%
 </tr>
 <tr>
 <td>
-<p>MicrosoftInternet Explorer</p>
+<p>Microsoft Internet Explorer</p>
 </td>
 <td>
 <p>11</p>
