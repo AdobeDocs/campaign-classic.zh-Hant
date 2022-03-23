@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1281'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ _2022 年 3 月 1 日_
 
 >[!NOTE]
 >
-> 此版本與v7.2.1客戶端控制台相容。
+> 此版本相容於 v7.2.1 用戶端主控台。
 
 **修補程式**
 
