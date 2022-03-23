@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2548'
+ht-degree: 100%
 
 ---
 
@@ -588,9 +588,9 @@ ht-degree: 0%
       + [建立 Facebook 應用程式](social/using/creating-a-facebook-application.md)
       + [在 Twitter 上設定發佈](social/using/configuring-publishing-on-twitter.md)
    + 在 Twitter 上發佈 {#publishing-on-facebook-twitter}
-      + [開始Twitter](social/using/overview.md)
+      + [開始使用 Twitter](social/using/overview.md)
       + [在 Twitter 上發佈](social/using/publishing-on-twitter.md)
-   + 獲取Facebook聯繫人 {#annexes}
+   + 獲取 Facebook 聯絡人 {#annexes}
       + [Facebook 應用程式範例](social/using/examples-of-facebook-apps.md)
       + [追蹤](social/using/tracking.md)
 + 安裝及設定指南 {#installing-campaign-classic}
