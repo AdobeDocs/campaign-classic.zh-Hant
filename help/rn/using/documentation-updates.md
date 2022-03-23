@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4932'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 97%
 
 ### 2022 年 3 月 {#mar-2022}
 
-已添加對 **[!UICONTROL Test SMTP delivery]** 的雙曲餘切值。 [閱讀全文](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+新增 **[!UICONTROL Test SMTP delivery]** 選項的詳細說明。 [閱讀全文](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-「升級入門」頁已更新，以明確市場活動控制台升級指南。 [閱讀全文](../../rn/using/rn-overview.md)
+「開始升級」頁面已更新，以澄清 Campaign 主控台升級指引。 [閱讀全文](../../rn/using/rn-overview.md)
 
-新的Campaign v7.2.2版本現已推出。 [閱讀全文](../../rn/using/latest-release.md)
+現已推出新的 Campaign v7.2.2 版本。 [閱讀全文](../../rn/using/latest-release.md)
 
 
 ### 2022 年 2 月 {#february-2022}
@@ -69,7 +69,7 @@ ht-degree: 97%
 
 ### 2021 年 12 月{#dec-2021}
 
-Campaign Classicv7發行說明已重新組織，以簡化導航。 [閱讀全文](rn-overview.md)
+Campaign Classic v7 版本說明已重新整理，以簡化導覽。 [閱讀全文](rn-overview.md)
 
 更新並改善 Campaign 中表單版本的相關文件。 [閱讀全文](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ CentOs 8 已到期，現已被 Adobe Campaign Classic 淘汰。 [閱讀全文](d
 
 ### 2021 年 6 月 {#june-2021}
 
-的 **事務性消息** 部分已重新組織，並用新的Get started部分加以澄清，其中包括 [增強模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) 以便更好地理解這個過程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
+**異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[擴充型方案](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚瞭解此流程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
 **21.1.3 版本隨附的其他文件更新**
 
@@ -156,7 +156,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 ### 2021 年 3 月 {#march-2021}
 
-[開始使用簡訊章節](../../delivery/using/sms-channel.md)已重新整理並改善。 你現在可以學習 [配置SMS通道](../../delivery/using/sms-set-up.md)。 [建立SMS](../../delivery/using/sms-create.md)。 [發送和跟蹤簡訊](../../delivery/using/sms-send.md) 在專用區。
+[開始使用簡訊章節](../../delivery/using/sms-channel.md)已重新整理並改善。 您現在可以在專屬章節中學習如何[設定簡訊頻道](../../delivery/using/sms-set-up.md)、[建立簡訊](../../delivery/using/sms-create.md)、[傳送及追蹤簡訊](../../delivery/using/sms-send.md)。
 
 Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。 [顯示全文](../../support.md)
 
@@ -344,7 +344,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 * 調用查詢中的執行個體變數
 * 將分割百分比套用在人口上
 
-的 **[!UICONTROL AND-join]** activity部分已增補了有關其使用情況的附加資訊，以及關於變數使用情況的說明。 [閱讀全文](../../workflow/using/and-join.md)
+已新增其他使用資訊與變數使用附註以豐富本&#x200B;**[!UICONTROL AND-join]**&#x200B;活動章節內容。[閱讀全文](../../workflow/using/and-join.md)
 
 ### 2020 年 7 月 {#july-2020}
 
@@ -472,7 +472,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 已更新安裝指南，並與最新版本的相容性比較表同步。新增了新的可支援系統。移除已棄用及不支援的系統。[顯示全文](../../installation/using/general-architecture.md)
 
-更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 安裝指南新增了有關 IP 相似性的最佳實務。[顯示全文](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -490,7 +490,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
-更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 [此處](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)記錄新的 **[!UICONTROL Cleanup of Nmsaddress]** 工作流程。
 
@@ -542,7 +542,7 @@ AMP 互動式內容 - [顯示全文](../../delivery/using/defining-interactive-c
 
 **此版本隨附的其他文件更新**
 
-推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增章節，說明如何疑難排解行銷活動中，持續顯示「盡快開始」狀態的工作流程。[顯示全文](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -604,7 +604,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
@@ -612,7 +612,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 建立了新的「組建版本升級常見問題集」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/build-upgrade-faq.html)
 
-更新[相容性矩陣](compatibility-matrix.md)。支援的資料庫系統清單已更新，Android/iOS版本和相關SDK。 封存 19.0 相容性矩陣。
+更新[相容性矩陣](compatibility-matrix.md)。更新了支援的資料庫系統清單，以及支援的 Android/iOS 版本及相關的 SDK。封存 19.0 相容性矩陣。
 
 更新「已棄用和已移除的 Campaign Classic 功能」頁面。[顯示全文](deprecated-features.md)
 
@@ -626,9 +626,9 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 更新預先處理工作流程選項的說明，以反映產品變更。[顯示全文](../../workflow/using/data-loading--file-.md)
 
-Experience Cloud觸發器技術已更新。 [顯示全文](../../integrations/using/about-triggers.md)
+Experience Cloud Triggers Technote 已更新。[顯示全文](../../integrations/using/about-triggers.md)
 
-更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)
 
 新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](../../message-center/using/event-description.md)
 
@@ -667,7 +667,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
@@ -681,7 +681,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 
 ### 2019 年 1 月{#release-doc-16-01-2019}
 
-Experience Cloud觸發器技術已更新。 [顯示全文](../../integrations/using/about-triggers.md)
+Experience Cloud Triggers Technote 已更新。[顯示全文](../../integrations/using/about-triggers.md)
 
 已於「優惠方案核准」章節新增說明，以指出「已核准內容」提及是代表內容核准流程已完成，不論所有優惠方案是否已啟用/核准。[顯示全文](../../interaction/using/offer-catalog-overview.md)
 
