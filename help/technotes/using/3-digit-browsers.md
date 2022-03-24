@@ -4,20 +4,20 @@ title: Chrome Firefox和Edge瀏覽器中的促銷活動Web元件和版本100
 description: Chrome、Firefox和Edge瀏覽器中的市場活動Web元件和版本100
 hide: true
 hidefromtoc: true
-source-git-commit: 48c9aab4f7e5f1f204a003a4d53f8d975247b867
+source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # 3位瀏覽器版本對市場活動Web元件的影響 {#version-100}
 
-Google、Mozilla警告說，Chrome和Firefox可能會因即將推出的3位版本而破壞一些網站。
+Google和Mozilla警告說，Chrome和Firefox可能會因即將推出的3位版本而破壞一些網站。
 
 Chrome v100已設定為在 **2022年3月29日**、和Firefox v100開啟 **2022年5月3日**。
 
-請注意，MicrosoftEdge於2022年3月較早時發佈了100版。
+Microsoft於2022年3月早些時候發佈了Edge v100。
 
 版本號從2到3位數的更改可能會在訪問未準備進行此更改的網站時導致一些問題。 某些網頁可能會在這些新瀏覽器版本中停止正確顯示。
 
