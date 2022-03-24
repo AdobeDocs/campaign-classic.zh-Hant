@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: ht
-source-wordcount: '2548'
-ht-degree: 100%
+source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
+workflow-type: tm+mt
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -828,8 +828,9 @@ ht-degree: 100%
    + [反轉程序](migration/using/about-rollback.md)
 + 技術備註{#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
-   + 升級和移轉{#technote-migration}
+   + 升級和相容性{#technote-migration}
       + [技術備註](technotes/using/technote.md)
+      + [3位瀏覽器版本影響](technotes/using/3-digit-browsers.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [終止支援 TLS 1.0 和 1.1](technotes/using/eol-tls-support.md)
