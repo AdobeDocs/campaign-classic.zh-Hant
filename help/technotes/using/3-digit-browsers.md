@@ -2,11 +2,10 @@
 product: campaign
 title: Chrome Firefox和Edge瀏覽器中的促銷活動Web元件和版本100
 description: Chrome、Firefox和Edge瀏覽器中的市場活動Web元件和版本100
-hide: true
-hidefromtoc: true
-source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
+exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
+source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ Adobe建議您test市場活動Web應用程式，包括Web表單和調查，以�
 
 此建議適用於所有Web應用程式，尤其是如果您已包含JavaScript代碼。
 
-您必須使用所有瀏覽器、移動和案頭同時檢查兩者。
+您必須檢查所有瀏覽器、移動和案頭。
 
 ## 如何test?{#version-100-test}
 
