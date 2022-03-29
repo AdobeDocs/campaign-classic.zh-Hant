@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
-workflow-type: ht
-source-wordcount: '4932'
-ht-degree: 100%
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+workflow-type: tm+mt
+source-wordcount: '4961'
+ht-degree: 99%
 
 ---
 
@@ -26,12 +26,13 @@ ht-degree: 100%
 
 ### 2022 年 3 月 {#mar-2022}
 
-新增 **[!UICONTROL Test SMTP delivery]** 選項的詳細說明。 [閱讀全文](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+* 新增 **[!UICONTROL Test SMTP delivery]** 選項的詳細說明。 [閱讀全文](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-「開始升級」頁面已更新，以澄清 Campaign 主控台升級指引。 [閱讀全文](../../rn/using/rn-overview.md)
+* 「開始升級」頁面已更新，以澄清 Campaign 主控台升級指引。 [閱讀全文](../../rn/using/rn-overview.md)
 
-現已推出新的 Campaign v7.2.2 版本。 [閱讀全文](../../rn/using/latest-release.md)
-
+* 現已推出新的 Campaign v7.2.2 版本。 [閱讀全文](../../rn/using/latest-release.md)
+* 已添加與ACS連接器相關的故障診斷資訊。 [閱讀全文](../../integrations/using/troubleshooting-the-acs-connector.md)
+* 已將已到期的舊版PostgreSQL版本添加到 [已棄用和已刪除的功能](../../rn/using/deprecated-features.md#dbe-eol) 的子菜單。
 
 ### 2022 年 2 月 {#february-2022}
 
@@ -472,7 +473,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 已更新安裝指南，並與最新版本的相容性比較表同步。新增了新的可支援系統。移除已棄用及不支援的系統。[顯示全文](../../installation/using/general-architecture.md)
 
-更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
+更新相容性矩陣，其中包含 Hadoop 3.0 及 Snowflake FDA 連接器。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 安裝指南新增了有關 IP 相似性的最佳實務。[顯示全文](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -490,7 +491,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
 
-更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
+更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 [此處](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)記錄新的 **[!UICONTROL Cleanup of Nmsaddress]** 工作流程。
 
@@ -542,7 +543,7 @@ AMP 互動式內容 - [顯示全文](../../delivery/using/defining-interactive-c
 
 **此版本隨附的其他文件更新**
 
-推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
+推出 Adobe Campaign Enhanced MTA 文件。[顯示全文](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增章節，說明如何疑難排解行銷活動中，持續顯示「盡快開始」狀態的工作流程。[顯示全文](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -604,7 +605,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 **第 19.1 發行版本包含的新功能**
 
-控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
+控制面板 - [顯示全文](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 稽核軌跡 - [顯示全文](../../production/using/audit-trail.md)
 
@@ -628,7 +629,7 @@ SMS 頻道文件新增了建議，以避免以同一供應商帳戶利用 Extend
 
 Experience Cloud Triggers Technote 已更新。[顯示全文](../../integrations/using/about-triggers.md)
 
-更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant)
+更新錯誤消息清單。[顯示全文](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 新增有關交易式傳訊 SOAP 驗證方法的詳細資訊。[顯示全文](../../message-center/using/event-description.md)
 
@@ -667,7 +668,7 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 

@@ -4,9 +4,9 @@ title: ACS連接器入門
 description: ACS連接器原理和資料週期
 feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ACS連接器橋接Adobe Campaignv7和Adobe Campaign Standard。 它是Campaign v
 
 ACS連接器將定期從市場活動v7複製以下項目到Campaign Standard:
 
-* **收件人**
+* **收件者**
 * **訂閱**
 * **服務**
 * **登陸頁面**
@@ -147,6 +147,11 @@ ACS連接器有兩種實現類型。 這兩個角色始終由Adobe Campaign咨�
 * **[!UICONTROL `[ACS] New replication`]** （新複製）:此增量工作流是可用於複製自定義表的示例。 請參閱 [高級實施](#advanced-implementation)。
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgAcelification):此增量工作流將傳遞消息從Campaign Standard複製到市場活動v7。
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流將交付ID、電子郵件廣泛日誌和電子郵件跟蹤日誌從Campaign Standard複製到市場活動v7。 它只考慮從Campaign Standard發送到屬於市場活動v7的nms:recipients表的配置檔案的交貨。
+
+   >[!NOTE]
+   >
+   > 如果同時使用Campaign Classic和Campaign Standard實例來發送帶有跟蹤URL的電子郵件，則在同步過程中可能會出現重複的URL tagId問題。 要防止發生此情況，請更新 **更新跟蹤URL** (writerTrackingUrls)活動，並將「ACS」前置詞添加到@tagId源表達式。
+
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流將交付ID、電子郵件廣泛日誌和電子郵件跟蹤日誌從Campaign Standard複製到市場活動v7。 它只考慮從Campaign Standard發送到作為市場活動v7特定表（定義nms:recipients以外的）一部分的配置檔案的交貨。
 
 ### 預設收件人欄位 {#default-recipient-fields}
@@ -175,7 +180,7 @@ ACS連接器有兩種實現類型。 這兩個角色始終由Adobe Campaign咨�
   </tr> 
   <tr> 
    <td> 電子郵件<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @電子郵件<br /> </td> 
   </tr> 
   <tr> 
    <td> 姓氏<br /> </td> 

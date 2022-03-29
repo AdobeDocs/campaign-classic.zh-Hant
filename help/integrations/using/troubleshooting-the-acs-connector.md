@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -112,3 +112,11 @@ ht-degree: 0%
 * **我無法在Campaign Standard中編輯個人資料、受眾或登錄頁。 什麼意思？**
 
    從市場活動v7同步的資源處於只讀模式Campaign Standard，以確保資料一致性。 如果需要編輯其中一個元素，可以在「市場活動7」中進行編輯，然後複製Campaign Standard中的更改。
+
+* **在 [ACS] 配置檔案交付日誌複製工作流。 我該怎麼辦？**
+
+   如果同時使用Campaign Classic和Campaign Standard實例來發送帶有跟蹤URL的電子郵件，則在同步過程中可能會出現重複的URL tagId問題。 在這個例子中， **[ACS] 配置檔案交付日誌複製** (newRcpDeliveryLogReplication)工作流仍然失敗，出現以下錯誤：
+
+   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
+
+   要解決問題並防止問題再次發生，請更新 **更新跟蹤URL** (writerTrackingUrls)活動，並將「ACS」前置詞添加到@tagId源表達式。
