@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -828,9 +828,9 @@ ht-degree: 99%
    + [反轉程序](migration/using/about-rollback.md)
 + 技術備註{#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
-   + 升級和相容性{#technote-migration}
-      + [技術備註](technotes/using/technote.md)
-      + [3位瀏覽器版本影響](technotes/using/3-digit-browsers.md)
+   + 升級與相容性{#technote-migration}
+      + [技術說明](technotes/using/technote.md)
+      + [對於 3 位數瀏覽器版本的影響](technotes/using/3-digit-browsers.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [終止支援 TLS 1.0 和 1.1](technotes/using/eol-tls-support.md)
