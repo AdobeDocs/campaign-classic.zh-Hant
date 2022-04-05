@@ -4,9 +4,9 @@ title: 資料導向 API
 description: 資料導向 API
 feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ XML文檔儲存在資料庫的MEMO類型欄位中。
 您必須熟悉Adobe Campaign資料模型才能在指令碼中找到資料庫欄位。
 
 有關資料模型的演示，請參閱 [Adobe Campaign資料模型描述](../../configuration/using/data-model-description.md)。
-
-為生成其結構，請參閱本文： [如何生成資料模型或資料字典](https://helpx.adobe.com/campaign/kb/generate-data-model.html)。
 
 ## 查詢和編寫器 {#query-and-writer}
 

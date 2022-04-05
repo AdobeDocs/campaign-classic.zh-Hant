@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4961'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -297,8 +297,6 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 已改善「Campaign 報告」進階功能區段，以詳細說明如何在自訂報告中使用 URL 參數和變數。[顯示全文](../../reporting/using/advanced-functionalities.md)
 
 已重新整理報告屬性頁面並加以擴充，以方便配置。[顯示全文](../../reporting/using/properties-of-the-report.md)
-
-已建立新的技術，其詳細說明了如何從舊的二進位通訊協定移轉至以 HTTP/2 為基礎的 APN 提供程式 API。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
 
 ### 2020 年 9 月 {#september-2020}
 
@@ -668,13 +666,11 @@ Campaign 選項清單新增了兩個選項： XtkSecurity_Restrict_EditXML 及 N
 更新了「共用受眾整合」的文件。
 [顯示全文](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-更新下列技術文件： [SMS 連接器通訊協定與設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)，以及 [序列自動產生](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+以下技術已更新： [SMS連接器協定和設定](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)。
 
 更新「技術工作流程」章節。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
 改善並更新「Campaign 網域名稱設定程序」。
-
-更新 Android應用程式從 Google 雲端傳訊 (GCM) 移轉至 Firebase 雲端傳訊 (FCM) 的移轉程序。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html)
 
 更新「Campaign 硬體調整指南」。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)
 

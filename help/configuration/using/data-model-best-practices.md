@@ -4,10 +4,10 @@ title: 資料模型最佳實務
 description: 瞭解如何使用Campaign Classic資料模型
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4007'
-ht-degree: 1%
+source-wordcount: '3988'
+ht-degree: 0%
 
 ---
 
@@ -148,9 +148,7 @@ Adobe Campaign主鍵是所有出廠設定表的自動生成的ID，對於自定�
 
 預設情況下，自定義序列的值範圍為+1,000到+2.1BB。 從技術上講，通過啟用負ID，可以獲得4BB的全範圍。 應謹慎使用，從負數到正數時，將丟失一個id:記錄0通常被Adobe Campaign在生成的SQL查詢中忽略。
 
-**相關主題：**
-* 有關 **序列自動生成** 功能，請參閱 [此文檔](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html)。
-* 要瞭解更多關於序列耗盡的資訊，請觀察 [這個視頻](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+要瞭解更多關於序列耗盡的資訊，請觀察 [這個視頻](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -327,5 +325,3 @@ Adobe Campaign依靠第三方資料庫引擎。 根據提供程式的不同，�
 * 的 *產品* 和 *儲存* 表較小：不到一萬。
 * 產品標籤和引用已放置在 *產品* 的子菜單。
 * 的 *事務處理物料* 表僅具有指向 *產品* 表，這是數字。
-
-<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

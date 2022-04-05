@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 70%
+source-wordcount: '366'
+ht-degree: 69%
 
 ---
 
@@ -21,13 +21,12 @@ ht-degree: 70%
 
 透過參閱我們直觀的逐步指南，開始使用 Adobe Campaign。
 
-* [使用 Adobe Experience Manager 編輯電子郵件內容](https://helpx.adobe.com/campaign/kb/acc-aem.html)：了解整合 Adobe Campaign 和 Experience Manager 的基本概念。
-* [隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html):探索Adobe Campaign Classic提供哪些功能，以協助您在使用我們的服務時符合隱私權規範。
+* [隱私管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html):瞭解Adobe Campaign Classic在使用我們的服務時提供的幫助，幫助您遵守隱私保護法規。
 * [整合電子郵件中的動態內容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
 * [管理傳遞機制](../../delivery/using/about-deliverability.md)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
 * [傳遞最佳做法](../../delivery/using/delivery-best-practices.md)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
 * [執行組建升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)：本指南會顯示執行 Campaign Classic 組建升級的重要步驟和最佳做法。
-* [安全性設定檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html)：探索設定安全性及強化內部部署時要檢查的關鍵元素
+* [安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)：探索設定安全性及強化內部部署時要檢查的關鍵元素
 
 透過檢查下列使用案例和範例，進一步了解 Adobe Campaign：
 
@@ -39,16 +38,16 @@ ht-degree: 70%
 
 ## 自助 {#how-to-videos}
 
-除了產品檔案，您還可以存取下列的Campaign自助資源。
+除產品文檔外，您還可以訪問下面列出的市場活動自助資源。
 
 ### 教學課程影片
 
-探索Adobe Campaign的影片主要功能。 [了解更多](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)
+在視頻中瞭解Adobe Campaign的主要功能。 [了解更多](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)
 
-### 訓練課程與影片
+### 培訓課程和視頻
 
-除了這些短片和詳細的視頻，您還可以 [培訓課程](https://learning.adobe.com/catalog.html) 和監視功能 [簡報影片](https://www.adobe.com/training/video.html) 在Adobe.com上。
+除了這些簡短詳細的視頻外， [培訓課程](https://learning.adobe.com/catalog.html) 和觀看功能 [演示視頻](https://www.adobe.com/training/video.html) Adobe。
 
 ### Experience League課程
 
-您也可以造訪 [建議課程](https://experienceleague.adobe.com/?lang=en#dashboard/learning) Adobe Campaign Classic:課程是精心策劃的課程集合，可快速幫助您獲得技能和知識。
+您還可以訪問 [推薦課程](https://experienceleague.adobe.com/?lang=en#dashboard/learning) Adobe Campaign Classic:課程是經過專業訓練的課程集合，可快速幫助您掌握技能和知識。

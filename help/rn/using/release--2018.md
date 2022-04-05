@@ -3,10 +3,10 @@ product: campaign
 title: Campaign Classic 2018 版本
 description: 進一步瞭解 Campaign Classic 2018 版本
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 8%
+source-wordcount: '5385'
+ht-degree: 7%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 8%
 
 **功能改進**
 
-* Fixed an issue with the computing process of tracking indicators for transactional messages. (NEO-12529、NEO-12581)
+* 解決了事務性消息跟蹤指示符的計算過程的問題。 (NEO-12529、NEO-12581)
 * 修復了HTTPRequest API的問題，該API未等待所有回調完成。 (NEO-12628)
 * 已在優惠券臨時表中添加索引，以優化交付發送。 (NEO-12437)
 * 分析以日文(.JP)域為目標的收件人的郵件時，已修復問題。 (NEO-12246)
@@ -81,11 +81,11 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->此建築已召回。 Please [upgrade to the latest build](../../production/using/build-upgrade.md) or contact [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>此建築已召回。 請 [升級到最新版本](../../production/using/build-upgrade.md) 或聯繫人 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **功能改進**
 
-* Fixed various issues when running workflows using MySQL on FDA. (NEO-11652)
+* 在FDA上使用MySQL運行工作流時已修復各種問題。 (NEO-11652)
 * 已解決發送推送通知時的效能問題。 (NEO-11787)
 * 在交貨中使用種子地址時已修復ID耗盡問題。 (NEO-11842)
 * 已修復在使用複雜工作流時可能出現的客戶端凍結問題。 (NEO-11847)
@@ -122,7 +122,7 @@ ht-degree: 8%
      <li> <p>跟蹤iOS的靜默通知 </p> </li> 
      <li> <p>在iOS實施登記通知反饋</p> </li> 
      <li> <p>提高iOS投遞準備速度</p> </li> 
-    </ul> <p>作為GoogleGCM折舊的一部分，Android V2連接器現在只允許連接到FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細文件</a>以瞭解詳情。The manual ugrade to FCM is detailed in this <a href="https://helpx.adobe.com/tw/campaign/kb/migrate-to-fcm.html">article</a>. </p> </td> 
+    </ul> <p>作為GoogleGCM折舊的一部分，Android V2連接器現在只允許連接到FCM伺服器。</p><p>如需詳細資訊，請參閱<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">詳細文件</a>以瞭解詳情。</p> </td> 
   </tr> 
   <tr> 
    <td> SQL資料管理活動<br /> </td> 
@@ -151,10 +151,10 @@ ht-degree: 8%
 * 的 **日期計算公式** 當使用直接郵件傳遞模板建立單個傳遞時，選項現在在傳遞屬性中可用。 (NEO-9792)
 * 對Cookie跟蹤和Web應用程式的域名管理已得到改進。 有關詳細資訊，請參閱下面的「技術演變」部分。
 * Adobe Marketing Cloud在交付或登錄頁共有資產的進口在安全和業績方面都有所改善。
-* 移動通道外部帳戶中有一個新的複選框，用於在日誌檔案中啟用詳細的SMPP跟蹤，這使此輸出可從Adobe Campaign介面直接訪問。
+* 在Mobile通道外部帳戶中可使用一個新複選框，以在日誌檔案中啟用詳細的SMPP跟蹤，這使此輸出可從Adobe Campaign介面直接訪問。
 * 在廣播中，現在可以區分最大連接數和每小時最大消息數。 當達到限制時，就可以知道為什麼吞吐量受到限制。 以前，同一消息（「配額滿足」）應用於這兩種情況。
 * 現在，可以指定在從池獲取連接時要執行的SQL指令碼。 此指令碼可用於設定預設架構。 此指令碼將在查詢段落後應用。 (NEO-11256)
-* 市場活動SDK不再儲存用戶ID以遵守我們的PII管理法規。 Data is now stored as a hash.
+* 市場活動SDK不再儲存用戶ID以遵守我們的PII管理法規。 資料現在以散列形式儲存。
 * 導入包導出XML檔案時，市場活動現在支援檔案中存在BOM，即使在檔案中明確聲明了編碼。
 
 **技術演變**
@@ -213,7 +213,7 @@ NmsRecipient上的索引已重新處理。 這應會提高使用此表的查詢�
 * 修復了報表中的問題，這些報表使圖表始終計算值之和，而不管選擇了哪個聚合運算子。 (NEO-10913)
 * 由於不建議使用&quot;request.scheme&quot;函式，因此已從JSAPI文檔中刪除該函式。 (NEO-10828)
 * 已修復導致某些具有特定時區配置的用戶無法登錄Adobe Campaign的問題。 (NEO-10712)
-* 已修復使用擴展通用SMPP連接器設定移動通道外部帳戶時出現的問題：如果您為接收器指定了不同的參數，則發送器將錯誤地使用這些參數，而不是自己的參數。
+* 已修復使用擴展通用SMPP連接器設定Mobile通道外部帳戶時出現的問題：如果您為接收器指定了不同的參數，則發送器將錯誤地使用這些參數，而不是自己的參數。
 * 修復了在為壓力規則設定頻率時導致計畫交貨失敗的問題，因為在第一次仲裁之後，交貨會不斷重新計算。 (NEO-10016)
 * 已修復導致IIS Web伺服器在應用程式池回收過程（在nlsrvmod.dll庫中）崩潰的問題。 (NEO-10862)
 * 已修復可能無法在中搜索收件人的問題 **配置檔案和目標** 的上界。 (NEO-8228)
@@ -304,14 +304,14 @@ NmsRecipient上的索引已重新處理。 這應會提高使用此表的查詢�
 
 >[!CAUTION]
 >
->This build has been recalled. 請 [升級到最新版本](../../production/using/build-upgrade.md) 或聯繫人 [技術支援](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>此建築已召回。 請 [升級到最新版本](../../production/using/build-upgrade.md) 或聯繫人 [技術支援](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **有哪些新功能？**
 
 <table> 
  <thead> 
   <tr> 
-   <th> Functionality<br /> </th> 
+   <th> 功能<br /> </th> 
    <th> 說明<br /> </th> 
   </tr> 
  </thead> 
@@ -389,7 +389,7 @@ decryptPassword
 
 * 電子郵件存檔日誌已得到增強，這使檢查哪些電子郵件已成功傳送或通過密件抄送存檔失敗變得更加容易和清晰。 (NEO-10675)
 * 已修復導致在跟蹤廣播中顯示負載平衡器IP而不是客戶IP的問題。 (NEO-11295)
-* Fixed an error with LATIN1 encoding when using an FDA Connection to a PostgreSQL database. (NEO-11299)
+* 使用FDA連接到PostgreSQL資料庫時，已修復LATIN1編碼錯誤。 (NEO-11299)
 * 已修復使用 **[!UICONTROL Prepare the personalization data with a workflow]** 「交貨」選項。 (NEO-11047、NEO-11301)
 * 修復了導致錯誤覆蓋傳遞屬性的隨機問題。 (NEO-11015)
 * 在中使用計算欄位時修復問題 **[!UICONTROL Survey answers]** 工作流活動。 (NEO-11382)
@@ -461,16 +461,16 @@ decryptPassword
 * 現在禁用了外部實體的擴展，以防止未經身份驗證的用戶發起潛在攻擊。 (NEO-10173)
 * 強化的權限，防止標準用戶更改實例配置參數，如應用程式訪問URL、LDAP設定等。 (NEO-10171)
 * 已修復可通過堆棧跟蹤顯示敏感資訊的問題。 錯誤詳細資訊現在記錄在從外部網路無法訪問的位置的後端。 (NEO-10176)
-* Hardened permissions to prevent standard users from viewing an administrator&#39;s uploaded documents and/or exported packages. (NEO-10170)
+* 強化的權限，以防止標準用戶查看管理員上載的文檔和/或導出的包。 (NEO-10170)
 
 **功能改進**
 
 * **LINE通道 — 體系結構增強**:與Adobe Campaign的所有其它通道一樣，LINE通道現在支援所有部署類型：托管、混合和內部部署。
-* **序列自動生成**:ID生成機制已得到增強，以增加具有大量對象的Camping實例的壽命。 For more information, refer to this [technote](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html).
+* **序列自動生成**:ID生成機制已得到增強，以增加具有大量對象的Camping實例的壽命。
 
 **其他變更**
 
-* 使用命令行可以使用新模式導入包，從而允許循環依賴項（不建議使用大型包）。 See the &#39;Technical evolutions&#39; section for more information. (NEO-8979)
+* 使用命令行可以使用新模式導入包，從而允許循環依賴項（不建議使用大型包）。 有關詳細資訊，請參閱「技術演變」部分。 (NEO-8979)
 * 改進了在Teradata中載入大量資料的效能，並解決了無法顯示日誌中處理資料的正確值的問題。 (NEO-10429)
 * 現在，從Audience Manager導入受眾可以處理拆分檔案。 以前，只有段的最後一個檔案是由importSharedAuvience技術工作流導入的。 (NEO-10156)
 * 在Windows上，市場活動伺服器預設安裝路徑已更改。 啟動64位版本安裝程式時，預設安裝路徑是： **C:\Program Files\Adobe\Adobe Campaign Classic v7** 而不是 **C:\Program Files (x86)\Adobe\Adobe Campaign Classicv7**
@@ -518,7 +518,7 @@ queryDef已針對&quot;orderBy&quot;子句進行修改。 在更改之前，查�
 
 urlEncode函式
 
-The &#39;urlEncode&#39; JavaScript function was not working properly for non ASCII characters. 它已經更正，現在應用於所有Unicode字元（包括日文字元）。 如果您依賴非ASCII字元的「urlEncode」行為，則必須調整代碼。
+對於非ASCII字元，「urlEncode」 JavaScript函式無法正常工作。 它已經更正，現在應用於所有Unicode字元（包括日文字元）。 如果您依賴非ASCII字元的「urlEncode」行為，則必須調整代碼。
 
 包導入新模式
 
@@ -547,7 +547,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * 在基於Android交付映射的屬性使用壓力規則時在交付分析期間發生的固定錯誤。 (NEO-9202)
 * 在對收件人清單中可能導致效能問題的列進行排序時，已修復問題。 有關queryDef修改的詳細資訊，請參閱下面的「技術演化」部分。 (NEO-9042)
 * 修復了審核電子郵件中的連結可能指向不正確的登錄URL的問題，特別是在使用Federated ID登錄類型時。 (NEO-9011)
-* Fixed an issue which could lead to wrong dates being displayed in the date pickers of reports for certain timezones. (NEO-9007)
+* 已修復可能導致某些時區的報告日期選擇器中顯示錯誤日期的問題。 (NEO-9007)
 * 已修復在使用FDA SQL資料庫時無法查看出站目標的問題。 (NEO-8924)
 * 已修復導致MS Dynamics CRM連接器在每月前7天無法提取資料的問題。 (NEO-8803)
 * 已修復分析整合錯誤，該錯誤阻止用戶包括國際字元。 (NEO-8719)

@@ -4,10 +4,10 @@ title: 關於行銷活動態樣
 description: 關於行銷活動態樣
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 18%
+source-wordcount: '468'
+ht-degree: 19%
 
 ---
 
@@ -78,8 +78,6 @@ ht-degree: 18%
 還提供了其他市場活動操作視頻 [這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)。
 
 **相關主題**
-
-* [將自動業務規則應用於任何渠道上的交貨](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
 * [開始分類和疲勞管理](pressure-rules.md)
 

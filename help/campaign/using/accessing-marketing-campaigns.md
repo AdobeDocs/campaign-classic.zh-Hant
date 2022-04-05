@@ -4,9 +4,9 @@ title: 存取行銷活動
 description: 存取行銷活動
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1247'
 ht-degree: 2%
 
 ---
@@ -115,7 +115,7 @@ Adobe Campaign允許您建立、配置、執行和分析市場營銷活動。 �
 >
 >市場活動模板的配置在 [市場活動模板](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
 
-#### 計畫 {#schedule}
+#### 排程 {#schedule}
 
 市場活動集中了一組交貨。 對於每個市場活動，計畫提供所有元件的全局視圖：這樣您就可以顯示任務和交貨，並輕鬆訪問它們。
 
@@ -149,7 +149,7 @@ Adobe Campaign允許您建立、配置、執行和分析市場營銷活動。 �
 
 >[!NOTE]
 >
->要訪問市場活動配置並對其進行更改，請按一下 **[!UICONTROL Advanced campaign parameters...]** 連結 **[!UICONTROL Edit]** 頁籤。 有關在市場活動層設定參數以便交貨自動繼承值的詳細資訊，請參閱： [我們的技術](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically)。
+>要訪問市場活動配置並對其進行更改，請按一下 **[!UICONTROL Advanced campaign parameters...]** 連結 **[!UICONTROL Edit]** 頁籤。
 
 ## 使用Web介面 {#using-the-web-interface-}
 

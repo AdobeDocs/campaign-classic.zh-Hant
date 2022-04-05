@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 6b7ec6b39a79e9b1e6e2bba3d5193765094cf4fd
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '7969'
+source-wordcount: '7961'
 ht-degree: 5%
 
 ---
@@ -530,7 +530,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
-   <td> 超時<br /> </td> 
+   <td> 逾時<br /> </td> 
    <td> DNS查詢超時（毫秒）。<br /> </td> 
    <td> 龍<br /> </td> 
    <td> 5000<br /> </td> 
@@ -613,7 +613,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
    <td> 「phantomjs」 <br /> </td> 
   </tr> 
   <tr> 
-   <td> 超時<br /> </td> 
+   <td> 逾時<br /> </td> 
    <td> 轉換超時：最大轉換時間（秒）。 超過此閾值後，轉換進程將停止，並引發錯誤。<br /> </td> 
    <td> 龍<br /> </td> 
    <td> 120<br /> </td> 
@@ -708,7 +708,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 以下是 **javaScript** 的下界。 這是JavaScript解釋器的配置。
 
-有關其他資訊，請參閱 [報告文檔](../../reporting/using/actions-on-reports.md#memory-allocation) 和 [技術](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html)。
+有關其他資訊，請參閱 [報告文檔](../../reporting/using/actions-on-reports.md#memory-allocation)。
 
 <table> 
  <thead> 
@@ -1028,11 +1028,11 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 例如，要授權訪問domain business.com的所有URL，可以定義兩條記錄：
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://。*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://。&#42;&quot;
 
-和
+和 
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
 
 以下是預設配置：
 
@@ -2423,7 +2423,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
-   <td> 超時<br /> </td> 
+   <td> 逾時<br /> </td> 
    <td> SMS網關通信超時。<br /> </td> 
    <td> 龍<br /> </td> 
    <td> 300<br /> </td> 
@@ -3082,7 +3082,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
-   <td> 超時<br /> </td> 
+   <td> 逾時<br /> </td> 
    <td> 在刪除禁止的URL之前等待時間。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> '60'<br /> </td> 
@@ -3153,7 +3153,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。*&quot;
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> 超時<br /> </td> 
+   <td> 逾時<br /> </td> 
    <td> 正在中繼的請求的最大執行時間（秒）。<br /> </td> 
    <td> 龍<br /> </td> 
    <td> <br /> </td> 

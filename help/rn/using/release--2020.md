@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '6619'
+source-wordcount: '6601'
 ht-degree: 73%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 ### ![](assets/do-not-localize/red_2.png)版本 20.3.3 - 版本編號 9234 {#release-20-3-3-build-9234}
 
-_January 11, 2021_
+_2021年1月11日_
 
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
 * 修正了與 broadlog 產生程序相關的迴歸問題，而此問題可能導致 MTA 程序當機。
@@ -195,7 +195,7 @@ _2021年 3 月 31 日_
 
 * 已對無效soap調用上的崩潰進行了改進。 這可能導致實例在嘗試運行特定複雜查詢時停止工作。 (NEO-28796、NEO-30553)
 * 已修復一個回歸，該回歸由於主機名驗證而阻止使用TLS發送SMS。 (NEO-29581)
-* Fixed an issue which prevented signed tracking links from working on some email clients. (NEO-28414、NEO-29615)
+* 已修復導致簽名跟蹤連結無法處理某些電子郵件客戶端的問題。 (NEO-28414、NEO-29615)
 * 使用WebApp跟蹤標籤時已修復跟蹤ID序列，這可能導致與重複ID衝突。 (NEO-27931)
 * 已修復導致每日wfserver重新啟動停止運行工作流的問題。 (NEO-30047)
 * 修正了在非管理員使用者嘗試同步 Adobe Experience Manager 範本時，使用 API 調用的安全性問題。(NEO-32389、NEO-23487)
@@ -251,7 +251,7 @@ _2020 年 9 月 11 日_
 
 * 修正了由於傳送組件上單一錯誤功能導致記憶體過載，導致傳送準備遭到封鎖的迴歸。(NEO-27346)
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
-* Fixed a regression on HTML template management leading to tracking URLs becoming visible due to a misinterpretation of tabs. (NEO-25909)
+* 已修復HTML模板管理上的回歸，因為對頁籤的誤解導致跟蹤URL變得可見。 (NEO-25909)
 * 修正了資料庫清除工作流程因非受管理資料來源而可能失敗的問題。(NEO-23160、NEO-23364)
 * 清除工作流程現在會依 100 的批次清除過期清單，而非逐一清除。
 * 修正了導致無法修改外部帳戶內部名稱的迴歸。(NEO-27323)
@@ -278,7 +278,7 @@ _2020 年 7 月 22 日_
 * 改善了 iOS HTTP2 連接器（協力廠商更新和錯誤管理）。(NEO-25904、NEO-25903)
 * catalina.properties 中的 jarToSkip 清單已更新，而可刪除對不再使用的 jar 檔案的參照（iOS 通知）。
 * 修正了在升級後封鎖傳送準備的問題。
-* 在切換至[新序列 ID 機制](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)後，所有更新收件者表格的 Web 應用程式都會在升級後期間重新發佈。
+* 在切換至新序列 ID 機制後，所有更新收件者表格的 Web 應用程式都會在升級後期間重新發佈。
 * 修正了傳送內容中的潛在 XSS 弱點。(NEO-17987、NEO-26073)
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含作用中設定檔監控、子網域傳遞送能力稽核及 GPG 金鑰管理。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)。
@@ -529,7 +529,7 @@ _2020 年 12 月 23 日_
 
 ### ![](assets/do-not-localize/red_2.png)版本 20.1.3 - 版本編號 9124{#release-20-1-3-build-9124}
 
-_2020年5月6日_
+_2020 年 5 月 6 日_
 
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 
@@ -537,23 +537,23 @@ _2020年5月6日_
 
 _2020 年 3 月 13 日_
 
-* Fixed an issue that prevented version deployment on Red Hat 7 servers. (NEO-23332)
+* 已修復阻止在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
 ### ![](assets/do-not-localize/red_2.png)版本 20.1 - 版本編號 9122{#release-20-1-build-9122}
 
-_February 17, 2020_
+_2020年2月17日_
 
 **有哪些新功能？**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Snowflake FDA Connector</strong><br /> </th> 
+   <th> <strong>SnowflakeFDA連接器</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是一個完全托管的雲資料倉庫，旨在在儲存和計算級別進行擴展。 With this new connector, Adobe Campaign can now leverage the power of Snowflake to perform Big Data Segmentation. This connector is available to all customers, including hosted by Adobe.</p>
+   <td> <p>Snowflake是一個完全托管的雲資料倉庫，旨在在儲存和計算級別進行擴展。 有了這種新的連接器，Adobe Campaign現在可以利用Snowflake的力量來執行大資料分割。 此連接器可供所有客戶使用，包括由Adobe托管。</p>
     <p>有關詳細資訊，請參閱 <a href="../../installation/using/configure-fda-snowflake.md">詳細文檔</a> 和 <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">教程視頻</a>。</p>
    </td> 
   </tr> 
@@ -601,13 +601,13 @@ _February 17, 2020_
 
 * 現在支援Postgres的資料庫故障切換：當資料庫伺服器崩潰並重新啟動時，Campaign現在自動重新連接到它。
 
-* The **Start Pending** view has been added to the Administration > Audit > Workflows Status node. 這允許您監視實例上等待由 **操作管理** 處理。 此視圖隨「市場營銷活動」包一起提供。 [閱讀全文](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* 的 **開始掛起** 視圖已添加到「管理」>「審計」>「工作流狀態」節點。 這允許您監視實例上等待由 **操作管理** 處理。 此視圖隨「市場營銷活動」包一起提供。 [閱讀全文](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **其他變更**
 
 * 在Linux上，nlserver服務啟動現在使用系統單元，而不是/etc/init.d/nlserver6指令碼。 在安裝20.1軟體包時，會自動執行到新啟動方案的遷移。 /etc/init.d/nlserver6仍然提供，但是為了與nlserver服務（啟動、重新啟動、停止等）交互，建議您直接使用systemctl命令。
 
-* 最耗用的自定義表已從 **xtkNewId** 序列。 [閱讀全文](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗用的自定義表已從 **xtkNewId** 序列。
 
 * 改進的查詢效能，這些效能可能受不必要的資料庫連接的影響。
 
@@ -641,19 +641,19 @@ _February 17, 2020_
 
 * 使用獲取Web表單模板時修復了頁腳顯示問題。
 
-* Fixed an issue when parsing the URLs in the content of continuous deliveries which could cause them to crash. (NEO-16910)
+* 解決了分析連續傳遞內容中URL時可能導致其崩潰的問題。 (NEO-16910)
 
-* Fixed an issue with the **Start** and **End** fields not being computed when creating a new campaign.
+* 已修復 **開始** 和 **結束** 建立新市場活動時未計算的欄位。
 
 * 已修復 **檔案下載** 使用URL時的工作流活動。
 
-* Fixed an issue when previewing an imported list in a query activity of a report. (NEO-13119)
+* 在報表的查詢活動中預覽導入的清單時修復了問題。 (NEO-13119)
 
-* Fixed an issue which displayed an outdated image when selecting the **Powered by Campaign** personalization block in the email editor.
+* 已修復在選擇 **由市場活動支援** 電子郵件編輯器中的個性化塊。
 
 * 客戶端與伺服器之間的網路通信得到改進。
 
-* 在同一市場活動中建立過多工作流時，已修復問題。 Now, you cannot create more than 28 workflows. 將顯示警告。
+* 在同一市場活動中建立過多工作流時，已修復問題。 現在，您不能建立28個以上的工作流。 將顯示警告。
 
 * 使用 **選擇列** 協調選項 **聯合** 工作流活動。
 
@@ -663,7 +663,7 @@ _February 17, 2020_
 
 * 已修復允許執行 **外部信號** 工作流活動，即使它被禁用。 (NEO-17524)
 
-* Fixed an issue when creating a new schema.
+* 已修復建立新架構時的問題。
 
 * 已解決發送SMS消息時的跟蹤問題。 (NEO-19595)
 
@@ -681,11 +681,11 @@ _February 17, 2020_
 
 * 已修復導致 **從Adobe Experience Cloud引進觀眾** 技術工作流程不斷失敗。 (NEO-18463)
 
-* Fixed an issue that prevented deliveries from being sent when using templates imported from Experience Manager. (NEO-17540)
+* 已修復在使用從Experience Manager導入的模板時無法發送交貨的問題。 (NEO-17540)
 
 * 已修復升級到build 9032並阻止實例通過SSL協定連接到FTP伺服器後出現的問題。 (NEO-20498)
 
-* Fixed an issue that occurred when deleting, inserting or updating a large amount of data with the **Update data** activity in a workflow using an FDA schema as the targeting dimension. (NEO-13280)
+* 已修復刪除、插入或更新大量資料時出現的問題 **更新資料** 使用FDA架構作為目標維的工作流中的活動。 (NEO-13280)
 
 * 修復了在HTML內容標籤外部存在Javascript代碼時阻止發送電子郵件的問題。 (NEO-18628)
 

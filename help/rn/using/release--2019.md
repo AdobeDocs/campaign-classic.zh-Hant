@@ -3,9 +3,9 @@ product: campaign
 title: Campaign Classic 2019 版本
 description: 進一步瞭解 Campaign Classic 2019 版本
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4825'
 ht-degree: 24%
 
 ---
@@ -75,7 +75,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA is the State of California’s new privacy law that harmonizes and modernizes data protection requirements going into effect on Jan 01, 2020. CCPA適用於Adobe Campaign客戶，這些客戶持有位於加利福尼亞的資料主題資料。</p>
+   <td> <p>CCPA是加利福尼亞州新的隱私法，它統一和現代化了將於2020年1月1日生效的資料保護要求。 CCPA適用於Adobe Campaign客戶，這些客戶持有位於加利福尼亞的資料主題資料。</p>
     <p>除了現有的隱私功能（包括許可管理、資料保留設定和用戶角色）外，Adobe Campaign還幫助您做好CCPA的準備：</p>
     <ul>
       <li>訪問權和刪除權：我們正在利用為GDPR添加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">閱讀全文</a></li>
@@ -123,7 +123,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>現在，通過擴展通用SMPP連接器支援安全SMS。 這允許與提供程式的加密連接。</p> <p><strong>Warning</strong> This feature requires an up-to-date certificate on all servers. 無效、吊銷或過期的證書將生成影響整體SMS發送功能的錯誤。</p><p>如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html">詳細文件</a>以瞭解詳情。 </p> </td> 
+<td> <p>現在，通過擴展通用SMPP連接器支援安全SMS。 這允許與提供程式的加密連接。</p> <p><strong>警告</strong> 此功能要求所有伺服器上都有最新的證書。 無效、吊銷或過期的證書將生成影響整體SMS發送功能的錯誤。</p><p>如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/campaign/kb/sms-connector-protocol-and-settings.html">詳細文件</a>以瞭解詳情。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -157,7 +157,7 @@ _不建議使用的系統_
 * Apache 2.2
 * 琴托斯6
 
-Please ensure you are on supported versions of any systems listed in the latest Campaign Compatibility matrix. [閱讀全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
+請確保您位於最新市場活動相容性清單中列出的所有系統的受支援版本。 [閱讀全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
 _活動移動SDK_
 
@@ -178,11 +178,11 @@ iOSSDK的1.0.26版現已提供。 在這個新的建築里，我們增加了iOS�
 * 在 **在交貨期間排除重複地址** 選項。 (NEO-13240)
 * 使用 **檔案傳輸** 活動：使用 **傳輸後刪除源檔案** 選項，其中名稱包含空格字元。 (NEO-13411)
 * 修復了Tomcat快取清理問題，這可能導致記憶體問題。 (NEO-13456)
-* Fixed an issue when installing the **Control of offer engine with execution instance** built-in package on an existing control instance running in Microsoft SQL 2017. (NEO-13539)
+* 已修復安裝時的問題 **具有執行實例的供應引擎的控制** 在MicrosoftSQL 2017中運行的現有控制實例上內置的包。 (NEO-13539)
 * 修復了在取消檢查電子郵件中跟蹤的URL時可能發生的控制台崩潰問題 **文本內容** 頁籤。 (NEO-13545)
 * 已修復中文發件人名稱的編碼問題。 (NEO-13837)
 * 已修復在顯示瀏覽器的調查響應資料時可能引起的錯誤。 (NEO-14590)
-* Fixed an issue which could lead to discrepancy between the delivery log classification and the quarantine table. (NEO-16547)
+* 已修復可能導致交貨日誌分類與隔離表不一致的問題。 (NEO-16547)
 * 已解決未嵌入電子郵件的DKIM鍵的問題。 (NEO-16804)
 * 修復了在API調用上下文中使用無效會話令牌以觸發事件時顯示錯誤錯誤代碼的問題。 錯誤代碼為「HTTP 200 OK」，而不是「HTTP 403 Forbidded」。 (NEO-16826)
 * 通過Web訪問顯示交貨報告時已修復問題。 (NEO-17015)
@@ -277,7 +277,7 @@ _2020年9月15日_
 * 修正了資料庫連線上的迴歸問題，造成 Web 伺服器因資料庫編碼問題而持續重新啟動。這可能導致過度耗用。(NEO-23264)
 * 修正了資料庫清除工作流程因非受管理資料來源而可能失敗的問題。(NEO-23160、NEO-23364)
 * 清除工作流程現在會依 100 的批次清除過期清單，而非逐一清除。
-* 在切換至[新序列 ID 機制](https://helpx.adobe.com/tw/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)後，所有更新收件者表格的 Web 應用程式都會在升級後期間重新發佈。
+* 在切換至新序列 ID 機制後，所有更新收件者表格的 Web 應用程式都會在升級後期間重新發佈。
 * 修復了在HTML內容標籤外部存在Javascript代碼時阻止發送電子郵件的問題。 (NEO-18628)
 * 已修復阻止事務性消息跟蹤指示符由跟蹤工作流更新的問題。 (NEO-17770)
 * 改進了資料庫更新嚮導的效能，使SQL陳述式數減少，以優化響應時間。
@@ -311,10 +311,10 @@ _2019 年 8 月 13 日_
 
 * 修復了SQL陳述式「SELECT COUNT」的問題，該語句在資料管理活動的資料抽取期間在預設資料庫而不是FDA資料庫上執行。
 * 為了改進客戶基礎架構功能，SFTP代理聲明現在可在伺服器配置檔案中提供。
-* Fixed a crash issue when the **Add linked table** field was empty in the **Data Loading (RDBMS)** workflow activity. (NEO-12213)
+* 已修復崩潰問題 **添加連結表** 欄位為空 **資料載入(RDBMS)** 工作流活動。 (NEO-12213)
 * 通過命令行修復了midEmitter軟體包安裝問題。
 * 已添加新的身份驗證選項，以支援帶MicrosoftDynamics的AC連接器中的OAuth憑據。 (NEO-11982)
-* Fixed an issue with UUID (Unique Universal Identifier) management causing the Query and Data loading workflow activities to fail with Hive FDA.
+* 解決了UUID（唯一通用標識符）管理問題，導致Hive FDA的查詢和資料載入工作流活動失敗。
 * 修復Oracle上的回歸，導致某些函式在放置後被視為無效。 (NEO-12759)
 * 修復了導致在調度程式工作流活動中設定時間時選取的時區不正確的回歸。
 
@@ -328,7 +328,7 @@ _2019 年 8 月 13 日_
 
 ### ![](assets/do-not-localize/red_2.png)版本 19.1.2 - 版本編號 9029{#release-19-1-2-build-9029}
 
-_June 21, 2019_
+_2019年6月21日_
 
 **安全性改善功能**
 
@@ -401,9 +401,9 @@ _2019年5月30日_
 
 **護欄、魯棒性和可擴充性改進**
 
-* 生命週期 — XtkNewId序列使用優化：最耗用的表已從xtkNewId序列移動到專用序列。 [閱讀全文](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 生命週期 — XtkNewId序列使用優化：最耗用的表已從xtkNewId序列移動到專用序列。
 * FDA over HTTP v2 :FDA over HTTP協定廣泛用於混合部署，特別是用於broadLog檢索和傳遞準備。 增強了魯棒性，以避免在檢索或推送資料時出現網路問題和可能的錯誤。 這要求連接兩端的內部版本是最新的，否則仍將使用舊協定。
-* Tracking workflow: the tracking workflow robustness has been enhanced. 已解決與跟蹤日誌插入/更新和URL跟蹤自定義相關的幾個問題。 此外，跟蹤工作流現在會檢測可能導致錯誤並停止工作流的跟蹤日誌問題。 這些問題現在被丟棄，而未處理。
+* 跟蹤工作流：提高了跟蹤工作流的魯棒性。 已解決與跟蹤日誌插入/更新和URL跟蹤自定義相關的幾個問題。 此外，跟蹤工作流現在會檢測可能導致錯誤並停止工作流的跟蹤日誌問題。 這些問題現在被丟棄，而未處理。
 * 清除工作流：已對清理工作流進行了改進，以避免潛在錯誤和停止。 這可優化資料庫大小和效能。
 * 事務性消息中嵌入的影像：我們已在事務性消息中添加了對嵌入式映像的完全支援，以避免可能的崩潰或丟失映像。
 * 資料庫大小 — XtkJobLog:已將清除機制添加到此表。 這對資料庫大小有積極影響。
@@ -445,8 +445,8 @@ _2019年5月30日_
 * 已解決發送推送通知時的效能問題。 (NEO-11787)
 * 在提供管理中預覽出站XML或CSV檔案以直接郵件傳遞時，已解決問題。 (NEO-11290)
 * 已修復安裝時的問題 **管理社交網路** （社會營銷）包。 (NEO-12081)
-* Fixed an issue which prevented you from deleting a web application even if you had the correct access rights. (NEO-12072)
-* Fixed an issue which could cause some values to be overwritten when exporting and then importing an object via XML. The XtkExport_IncludeDefaultValues option has been added. 如果設定為True（預設行為），則會導出所有值。 When set to False, modifications are overwritten with the default value. (NEO-11979)
+* 修復了一個問題，即使您擁有正確的訪問權限，也無法刪除Web應用程式。 (NEO-12072)
+* 修復了一個問題，在導出並通過XML導入對象時，可能會覆蓋某些值。 已添加XtkExport_IncludeDefaultValues選項。 如果設定為True（預設行為），則會導出所有值。 設定為False時，修改將被預設值覆蓋。 (NEO-11979)
 * 已修復導致 **[!UICONTROL Alert]** 在查詢後添加富集活動時工作流活動失敗。 (NEO-12132)
 * 修復了Oracle設定問題，其中管線（觸發器）偏移未從資料庫成功檢索，導致重複。 (NEO-12121)
 * 已修復在使用分析整合時可能導致透視表中顯示錯誤的問題(NEO-12103)
@@ -466,13 +466,13 @@ _2019年5月30日_
 * 使用「從填充中排除此子集」工作流功能解決了問題。 (NEO-12441)
 * 修復了HTTPRequest-wait API的問題，該API未等待所有回調完成。 (NEO-12628)
 * 在拆分活動中修復了「更新共用受眾」任務的問題。 (NEO-11562)
-* Fixed a web server crash issue. (NEO-12904)
+* 已修復Web伺服器崩潰問題。 (NEO-12904)
 * 已修復事務模板中的「自然」參數問題。 (NEO-12334)
 * 在電子郵件文本編輯器中顯示跟蹤的URL時，已修復控制台崩潰問題。 (NEO-13122)
 * 從Audience Manager導入訪問群體時，已修復「拆分檔案」活動的問題。 (NEO-11550)
 * 已修復導致熱按一下報告錯誤的問題。 (NEO-11459)
-* Fixed an issue with offer rendering. (NEO-11565)
-* Fixed an issue with the List Update activity when importing audiences from Audience Manager. (NEO-11226)
+* 解決了提供呈現的問題。 (NEO-11565)
+* 從Audience Manager導入訪問群體時，已修復「清單更新」活動的問題。 (NEO-11226)
 * 解決了「計畫」活動和時區配置問題。 (NEO-11662)
 * 已修復導致跟蹤工作流在URL格式錯誤時失敗的問題。
 * 在導入移動應用程式套件後解決了外部帳戶的問題。

@@ -3,9 +3,9 @@ product: campaign
 title: 技術 — Adobe Campaign配置更新
 description: Adobe Campaign配置更新
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1125'
 ht-degree: 12%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 12%
 
 ## AdobeIdentity Management系統(IMS)更新
 
-Adobe身份服務(IMS)將停止支援舊Internet Explorer版本 **2021年6月30日**。 [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe身份服務(IMS)將停止支援舊Internet Explorer版本 **2021年6月30日**。 [了解更多資訊](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 需要升級Campaign Client Console以確保與Adobe IMS的相容性。
 
@@ -101,7 +101,7 @@ Adobe身份服務(IMS)將停止支援舊Internet Explorer版本 **2021年6月30�
 
 ## 與Experience Cloud觸發器整合 {#acc-triggers-updates}
 
-舊版oAuth身份驗證服務已到期。 觸發器整合身份驗證最初基於訪問管道的oAUTH身份驗證設定，現已移到Adobe I/O。具有市場活動的舊式身份驗證模式 [已退休](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) 上 **2021年9月**。 托管環境從擴展中受益，直到  **2022年2月23日**。 作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+舊版oAuth身份驗證服務已到期。 觸發器整合身份驗證最初基於訪問管道的oAUTH身份驗證設定，現已移到Adobe I/O。具有市場活動的舊式身份驗證模式 [已退休](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) 上 **2021年9月**。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 **您有受到影響嗎？**
 
@@ -120,7 +120,7 @@ Adobe身份服務(IMS)將停止支援舊Internet Explorer版本 **2021年6月30�
 
 一旦實例升級到較新版本，所有客戶都需要遵循 [過程移到新的身份驗證模式](../../integrations/using/configuring-adobe-io.md)。 這要求您生成新的Adobe I/O令牌，並在實現中使用它。  
 
-此外，對於混合環境，客戶需要確保在中間採購實例上配置管道。 [了解更多](../../integrations/using/configuring-pipeline.md)。
+此外，對於混合環境，客戶需要確保在中間採購實例上配置管道。 [了解更多資訊](../../integrations/using/configuring-pipeline.md)。
 
 [瞭解如何遷移到Adobe I/O](../../integrations/using/configuring-adobe-io.md)。
 
@@ -140,7 +140,7 @@ Adobe身份服務(IMS)將停止支援舊Internet Explorer版本 **2021年6月30�
 
 作為托管客戶，如果您已升級到新生成，Adobe已將您的實例更新到基於HTTP/2的API。
 
-作為內部/混合客戶，您需要更新配置。 [瞭解如何遷移到HTTP/2](https://helpx.adobe.com/tw/campaign/kb/migrate-to-apns-http2.html)
+作為內部/混合客戶，您需要更新配置。
 
 ### APN根證書更新
 
