@@ -4,10 +4,10 @@ title: 全域報告
 description: 全域報告
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 2%
+source-wordcount: '2295'
+ht-degree: 4%
 
 ---
 
@@ -48,6 +48,14 @@ ht-degree: 2%
 ![](assets/s_ncs_user_report_toolbar.png)
 
 可以通過更改時間刻度來配置顯示的值：1小時視圖、3小時視圖、24小時視圖等。 按一下 **[!UICONTROL Refresh]** 以確認您的選取。
+
+>[!NOTE]
+>
+>如果您的實例托管在AWS，您還可以使用Campaign Classic監視每小時發送的交貨數 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html)。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
+>
+>請注意，您的實例必須升級為 [金本位](../../rn/using/gold-standard.md) 構建或 [最新GA內部版本(21.1.3)](../../rn/using/latest-release.md)。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
 
 ## 用戶活動 {#user-activities}
 
