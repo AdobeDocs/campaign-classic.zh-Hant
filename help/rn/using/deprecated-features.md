@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -215,7 +215,7 @@ Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。
 
 * DB2 UDB 9.5、9.7。透過同盟資料存取 (FDA) 支援更新版本的 DB2。[瞭解更多](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Oracle 9i、10G R2。透過同盟資料存取 (FDA) 支援更新版本的 Oracle。[瞭解更多](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* 9.6版的PostgreSQL版本已到期。 通過聯合資料存取(FDA)支援更新版本的PostgreSQL。 [瞭解更多](https://www.postgresql.org/support/versioning)
+* 9.6版的PostgreSQL版本已到期。 透過同盟資料存取 (FDA) 支援更新版本的 PostgreSQL。[瞭解更多](https://www.postgresql.org/support/versioning)
 * MSSQL 2000、2005、2008 R2。透過同盟資料存取 (FDA) 支援更新版本的 SQL Server。[瞭解更多](https://support.microsoft.com/en-us/lifecycle/search/1044)
 * MySQL 5.1。透過同盟資料存取 (FDA) 支援更新版本的 MySQL。[瞭解更多](https://en.wikipedia.org/wiki/InfiniDB)
 * InfiniDB 生命週期結束。[瞭解更多](https://www.mysql.com/support)
@@ -235,7 +235,7 @@ Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。
 * MySQL 5.1
 * DB2 UDB 9.7
 
-9.6版的PostgreSQL版本已到期。 因此，Adobe Campaign不支援這些建議。
+9.6 版本的 PostgreSQL 版本已到期。 因此，Adobe Campaign 不支援這些建議。
 
 ### 簡訊連接器 {#sms-eol}
 
