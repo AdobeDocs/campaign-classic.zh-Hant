@@ -4,9 +4,9 @@ title: 開始跟蹤
 description: 瞭解更多有關在Adobe Campaign Classic跟蹤的一般准則
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-由於其跟蹤功能，Adobe Campaign使您能夠跟蹤發送的消息並檢查收件人的行為：開啟、按一下連結、取消訂閱等。
+由於Adobe Campaign的跟蹤功能，您可以跟蹤發送的郵件並檢查收件人的行為：開啟、按一下連結、取消訂閱等。
 
 此資訊在 **[!UICONTROL Tracking]** 的子菜單。 此頁籤顯示從清單中選擇的收件人跟蹤並按一下的所有URL連結。 這是在交貨螢幕中仍存在的交貨中跟蹤的所有URL的累積。 清單可以配置，通常包含：按一下的URL、按一下的日期和時間以及找到URL的文檔。 如需詳細資訊，請參閱[本章節](../../platform/using/editing-a-profile.md#tracking-tab)。
 
