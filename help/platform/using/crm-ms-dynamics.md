@@ -4,7 +4,7 @@ title: 市場活動 — MicrosoftDynamics CRM連接器
 description: 瞭解如何連接活動和Microsoft動態
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 # 連接市場活動和MicrosoftDynamics 365{#connect-to-msdyn}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在此頁中，您將學習如何將Campaign Classic連接到 **MicrosoftCRM 365**。
 
 可能的部署通過 **Web API** （推薦）。 請參閱 [下面一節](#microsoft-dynamics-implementation-step) 瞭解與Microsoft動力建立聯繫的步驟。
 
-資料同步通過專用工作流活動執行。 [了解更多](../../platform/using/crm-data-sync.md)。
+資料同步通過專用工作流活動執行。 [了解更多資訊](../../platform/using/crm-data-sync.md)。
 
 ## 實施步驟{#microsoft-dynamics-implementation-steps}
 
@@ -153,7 +153,7 @@ App用戶是上面註冊的應用程式將使用的用戶。 使用上述註冊�
 
 >[!NOTE]
 >
-> 將 [MicrosoftRDS](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)，本地和Office 365類型的CRM部署不再與市場活動相容。 Adobe Campaign現在僅支援CRM版本的Web API部署 **動態CRM 365**。 [了解更多](../../rn/using/deprecated-features.md#crm-connectors)。
+> 將 [MicrosoftRDS](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)，本地和Office 365類型的CRM部署不再與市場活動相容。 Adobe Campaign現在僅支援CRM版本的Web API部署 **動態CRM 365**。 [了解更多資訊](../../rn/using/deprecated-features.md#crm-connectors)。
 
 要連接MicrosoftDynamics 365和市場活動，您需要建立和配置專用 **[!UICONTROL External Account]** 在競選中。
 

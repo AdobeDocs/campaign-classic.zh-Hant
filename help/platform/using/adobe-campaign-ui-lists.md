@@ -4,7 +4,7 @@ title: 管理和自定義清單
 description: 瞭解如何瀏覽和配置清單
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 87%
@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # 管理和自定義清單{#manage-and-customize-lists}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 您可以使用瀏覽器訪問市場活動資料庫中的記錄清單。 您可以過濾這些清單、運行搜索、添加資訊、過濾和排序資料。
 
@@ -82,7 +82,7 @@ ht-degree: 87%
    >
    >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱 [此部分](#sorting-a-list)。
    >
-   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[了解更多](#configuring-lists)。
+   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[了解更多資訊](#configuring-lists)。
    >
    >您也可以排序和篩選資料。請參閱[本節](../../platform/using/filtering-options.md)。
 
@@ -202,4 +202,4 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->您可以建立篩選器，只顯示清單中的部分資料。[了解更多](../../platform/using/creating-filters.md)。
+>您可以建立篩選器，只顯示清單中的部分資料。[了解更多資訊](../../platform/using/creating-filters.md)。

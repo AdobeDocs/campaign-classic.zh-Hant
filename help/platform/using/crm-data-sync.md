@@ -4,7 +4,7 @@ title: CRM連接器資料同步
 description: 在市場活動和您的CRM之間管理資料
 feature: Salesforce Integration, Microsoft CRM Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 在市場活動和CRM之間同步資料 {#data-synchronization}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign和CRM之間的資料同步通過專用的工作流活動執行： [CRM連接器](../../workflow/using/crm-connector.md)。
 

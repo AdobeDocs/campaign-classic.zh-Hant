@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 100%
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
-      + [隱私權請求](platform/using/privacy-requests.md)
+      + 隱私權請求 {#privacy-requests}
+         + [關於隱私權請求](platform/using/privacy-requests.md)
+         + [建立和管理隱私請求](platform/using/privacy-requests-ui.md)
+         + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
+         + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
    + 設定檔管理{#profile-management}
       + [關於設定檔](platform/using/about-profiles.md)
       + [編輯設定檔](platform/using/editing-a-profile.md)

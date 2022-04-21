@@ -4,7 +4,7 @@ title: 市場活動 — Salesforce CRM連接器
 description: 瞭解如何連接市場活動和銷售人員
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 連接市場活動和Salesforce.com{#connect-to-sfdc}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在此頁中，您將學習如何將Campaign Classic連接到 **Salesforce**。
 
-資料同步通過專用工作流活動執行。 [了解更多](../../platform/using/crm-data-sync.md)。
+資料同步通過專用工作流活動執行。 [了解更多資訊](../../platform/using/crm-data-sync.md)。
 
 
 外部帳戶允許您將Salesforce資料導入和導出到Adobe Campaign。
