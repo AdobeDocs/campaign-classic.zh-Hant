@@ -1,24 +1,25 @@
 ---
 product: campaign
-title: 建立隱私請求
-description: 瞭解如何建立和管理隱私請求
+title: 建立隱私權請求
+description: 瞭解如何建立及管理隱私權請求
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
+exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
+source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# 建立和管理隱私請求 {#privacy-request-ui}
+# 建立及管理隱私權請求 {#privacy-request-ui}
 
 ![](../../assets/v7-only.svg)
 
-本節介紹如何建立訪問和刪除請求，以及Adobe Campaign如何處理這些請求。
+本章節介紹如何建立存取權限及刪除請求，以及 Adobe Campaign 如何處理這些請求。
 
-## 建立隱私請求 {#create-privacy-request-ui}
+## 建立隱私權請求 {#create-privacy-request-ui}
 
 **Adobe Campaign 介面**&#x200B;允許您建立您的隱私權請求並跟蹤其演進。 若要建立新的隱私權請求，請依照下列指示：
 
