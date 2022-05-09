@@ -1,50 +1,50 @@
 ---
 product: campaign
-title: 設定IMS
-description: 了解如何透過Adobe ID連線
+title: 配置IMS
+description: 瞭解如何通過Adobe ID連接
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 設定IMS{#configuring-ims}
+# 配置IMS{#configuring-ims}
 
 ![](../../assets/common.svg)
 
 >[!IMPORTANT]
 >
->Adobe IMS實作嚴格保留給Adobe技術管理員。 請連絡您的Adobe主管，以開始實作程式。
+>Adobe IMS實施嚴格保留給Adobe技術管理員。 請與Adobe主管聯繫以啟動實施過程。
 
-## 先決條件 {#prerequisites}
+## 必要條件 {#prerequisites}
 
-若要使用與IMS的整合：
+使用與IMS的整合：
 
-* 您必須有Adobe Experience Cloud組織和IMS ID(在您首次連線至Adobe Experience Cloud時提供)。
-* 您必須在Experience Cloud中新增使用者。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+* 您必須具有Adobe Experience Cloud組織名稱和ID。 要查找組織ID，請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}。
+* 您必須在Experience Cloud中添加用戶。 有關此內容的詳細資訊，請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
 
 >[!NOTE]
 >
->請確定您的使用者已連結至將與Adobe Campaign同步的Adobe Experience Cloud群組。 請參閱 [設定外部帳戶](#configuring-the-external-account).
+>確保您的用戶已連結到將與Adobe Campaign同步的Adobe Experience Cloud組。 [了解更多資訊](#configuring-the-external-account)。
 
-## 更新主控台 {#updating-the-console}
+## 更新控制台 {#updating-the-console}
 
-若要使用此功能，您必須安裝最新版本的主控台。
+要使用此功能，必須安裝最新版本的控制台。
 
-## 安裝套件 {#installing-the-package}
+## 安裝軟體包 {#installing-the-package}
 
-您必須安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** 包。 安裝整合套件與安裝標準套件相同，相關詳情請參閱 [本頁](../../installation/using/installing-campaign-standard-packages.md).
+必須安裝內置 **[!UICONTROL Integration with the Adobe Experience Cloud]** 檔案。 安裝整合軟體包與安裝標準軟體包相同，詳見 [此頁](../../installation/using/installing-campaign-standard-packages.md)。
 
 ![](assets/ims_6.png)
 
-## 設定外部帳戶 {#configuring-the-external-account}
+## 配置外部帳戶 {#configuring-the-external-account}
 
-設定 **Adobe Experience Cloud** 外部帳戶 **[!UICONTROL Administration > Platform > External accounts]**.
+配置 **Adobe Experience Cloud** 外部帳戶 **[!UICONTROL Administration > Platform > External accounts]**。
 
 >[!CAUTION]
 >
@@ -54,15 +54,15 @@ ht-degree: 2%
 
 輸入以下資訊：
 
-* 使用的IMS伺服器連線資訊（ID和機密）。 此資訊由Adobe支援提供。 如需詳細資訊，請參閱 [Adobe Experience Cloud管理員常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* 使用的IMS伺服器的連接資訊（ID和機密）。 此資訊由Adobe支援提供。 有關詳細資訊，請參閱 [Adobe Experience Cloud管理員常見問題](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
 
-   此 **[!UICONTROL Callback server]** 必須在 **https**. 此欄位對應至您Adobe Campaign執行個體的存取URL。
+   的 **[!UICONTROL Callback server]** 必須在中指定地址 **htps**。 此欄位與您的Adobe Campaign實例的訪問URL相對應。
 
-* IMS組織ID:此資訊可在Experience Cloud上取得(於 **[!UICONTROL Administration > Experience Cloud Details]** )和是在您首次連線至Adobe Experience Cloud時提供。
-* 關聯掩碼：此欄位可讓您定義語法，以允許將Enterprise Dashboard中的設定名稱同步至Adobe Campaign中的群組。 如果您使用語法「Campaign - tenant_id -(.*)」，則在Adobe Campaign中建立的安全性群組將連結至Enterprise Dashboard中的設定名稱「Campaign - tenant_id - internal_name」。
+* 組織ID:要查找組織ID，請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}。
+* 關聯掩碼：此欄位允許您定義語法，該語法將允許企業儀表板中的配置名稱與Adobe Campaign的組同步。 如果使用語法「Campaign - tenant_id -(.&#42;)」，在Adobe Campaign建立的安全組將連結到企業控制板中的配置名稱「Campaging - tenant_id - internal_name」。
 
    >[!CAUTION]
    >
-   >關聯遮色片是透過Adobe ID連線才能正常運作的必要條件。
+   >關聯掩碼對於通過Adobe ID的連接才能正常工作至關重要。
 
-* Adobe Experience Cloud連線資訊，尤其是Adobe Experience Cloud租用戶的名稱。
+* Adobe Experience Cloud連接資訊，特別是Adobe Experience Cloud租戶的名稱。

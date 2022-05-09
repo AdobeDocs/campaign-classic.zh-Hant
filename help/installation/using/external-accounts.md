@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 7%
+source-wordcount: '1627'
+ht-degree: 8%
 
 ---
 
@@ -243,7 +243,7 @@ SFTP外部帳戶允許您配置和test對Adobe Campaign以外的伺服器的訪�
 
 * **[!UICONTROL IMS organization ID]**
 
-   IMS組織的ID。 要查找組織ID，請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**在哪裡可以找到我的IMS組織ID?**)。
+   組織的ID。 要查找組織ID，請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}。
 
 * **[!UICONTROL Association mask]**
 

@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 設定管道
-description: 了解如何設定管道
+title: 配置管道
+description: 瞭解如何配置管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 2%
 
 ---
 
@@ -16,50 +16,50 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-驗證參數（如客戶ID、私密金鑰和驗證端點）是在執行個體設定檔中設定。
-要處理的觸發器清單會以JSON格式的選項設定。
-觸發器用於傳送電子郵件的行銷活動工作流程鎖定目標。 已設定促銷活動，讓同時觸發事件的客戶收到電子郵件。
+驗證參數（如客戶ID、私鑰和驗證終結點）在實例配置檔案中配置。
+要處理的觸發器清單以JSON格式的選項配置。
+觸發器用於由發送電子郵件的市場活動工作流進行瞄準。 設定市場活動，以便具有兩個觸發事件的客戶接收電子郵件。
 
-## 先決條件 {#prerequisites}
+## 必要條件 {#prerequisites}
 
-開始此配置之前，請檢查您是否使用：
+在啟動此配置之前，請檢查您正在使用：
 
-* 至少，下列其中一個Adobe Campaign組建：
+* 最少，以下Adobe Campaign構建之一：
    * 19.1.8.9039
-   * 19.1.4.9032 - Gold Standard 11
+   * 19.1.4.9032 — 金標11
    * 20.2.4.9187
    * 20.3.1
 * Adobe Analytics Standard版本
 
-您也需要：
+您還需要：
 
-* Adobe I/O專案驗證
-* 有效的IMSOrgID，該ID是添加了Adobe Analytics的Experience Cloud客戶的標識符
-* 開發人員存取IMS組織
-* 觸發在Adobe Analytics完成的設定
+* Adobe I/O項目身份驗證
+* 有效的組織ID — 要查找組織ID，請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}
+* 開發人員訪問您的組織
+* 觸發器配置在Adobe Analytics完成
 
 ## 驗證和配置檔案 {#authentication-configuration}
 
-由於管道是在Adobe Experience Cloud中托管，因此需要驗證。
-它使用一對公開和私密金鑰。 此程式的功能與使用者/密碼相同，但更安全。
-Marketing Cloud支援透過Adobe I/O專案進行驗證。
+由於管道在Adobe Experience Cloud托管，因此需要身份驗證。
+它使用一對公鑰和私鑰。 此進程與用戶/密碼具有相同的功能，但更安全。
+通過Marketing Cloud項目支援Adobe I/O。
 
-## 步驟1:建立/更新Adobe I/O專案 {#creating-adobe-io-project}
+## 步驟1:建立/更新Adobe I/O項目 {#creating-adobe-io-project}
 
-對於托管客戶，您可以建立客戶服務票證，以透過Adobe I/O技術帳戶代號來啟用您的組織，以進行觸發器整合。
+對於托管客戶，您可以建立客戶服務票證，以啟用您的組織，並使用Adobe I/O技術帳戶令牌進行觸發器整合。
 
-若為內部部署客戶，請參閱 [為Adobe Experience Cloud Triggers設定Adobe I/O](../../integrations/using/configuring-adobe-io.md) 頁面。 請注意，您需要選取 **[!UICONTROL Adobe Analytics]** 將API新增至Adobe I/O憑證時。
+對於現場客戶，請參閱 [為Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md) 的子菜單。 請注意，您需要選擇 **[!UICONTROL Adobe Analytics]** 將API添加到Adobe I/O憑據。
 
 ## 步驟2:配置NmsPipeline_Config管線選項 {#configuring-nmspipeline}
 
-一旦設定驗證，管道將擷取事件。 它只會處理在Adobe Campaign中設定的觸發器。 觸發器必須從Adobe Analytics產生，並推送至管道，而管道只會處理Adobe Campaign中設定的觸發器。
-選項也可以設定萬用字元，以便無論名稱為何都能擷取所有觸發器。
+一旦設定了驗證，管道將檢索事件。 它將僅處理在Adobe Campaign中配置的觸發器。 觸發器必須是從Adobe Analytics生成的，並被推入到管道，該管道將僅處理在Adobe Campaign配置的觸發器。
+也可以使用通配符配置該選項，以捕獲所有觸發器，而不考慮其名稱。
 
-1. 在Adobe Campaign中，存取 **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** 在 **[!UICONTROL Explorer]**.
+1. 在Adobe Campaign，訪問 **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** 的 **[!UICONTROL Explorer]**。
 
-1. 選取 **[!UICONTROL NmsPipeline_Config]** 選項。
+1. 選擇 **[!UICONTROL NmsPipeline_Config]** 的雙曲餘切值。
 
-1. 在 **[!UICONTROL Value (long text)]** 欄位中，您可以貼上下列JSON程式碼，這會指定兩個觸發器。 您需要確保刪除注釋。
+1. 在 **[!UICONTROL Value (long text)]** 欄位中，可以貼上以下JSON代碼，該代碼指定兩個觸發器。 您需要確保刪除注釋。
 
    ```
    {
@@ -81,7 +81,7 @@ Marketing Cloud支援透過Adobe I/O專案進行驗證。
    }
    ```
 
-1. 您也可以選擇貼上下列JSON程式碼，以便擷取所有觸發器。
+1. 您還可以選擇貼上以下捕獲所有觸發器的JSON代碼。
 
    ```
    {
@@ -100,53 +100,53 @@ Marketing Cloud支援透過Adobe I/O專案進行驗證。
    }
    ```
 
-### 消費者參數 {#consumer-parameter}
+### Consumer參數 {#consumer-parameter}
 
-管道的運作方式就像供應商和消費者模型。 訊息僅供個別消費者使用：每個消費者都有各自的訊息副本。
+管道的工作方式類似於供應商和消費者模型。 消息僅用於單個用戶：每個消費者都會得到自己的郵件副本。
 
-此 **消費者** 參數會將例項識別為其中一個使用者。 例項的身分會呼叫管道。 您可以填入執行個體名稱，該名稱可在用戶端主控台的「監控」頁面中找到。
+的 **消費者** 參數將實例標識為這些使用者之一。 實例的標識將調用管道。 您可以使用實例名稱來填充它，該實例名稱可在客戶端控制台的「監視」頁上找到。
 
-管道服務可追蹤每個消費者擷取的訊息。 針對不同的例項使用不同的使用者，可讓您確定每個訊息都會傳送至每個例項。
+管道服務跟蹤每個使用者檢索到的消息。 對不同實例使用不同的使用者，可確保將每個消息發送到每個實例。
 
 ### 管道選項建議 {#pipeline-option-recommendation}
 
-若要設定管道選項，您應遵循下列建議：
+要配置「管線」(Pipeline)選項，您應遵循以下建議：
 
 * 在下添加或編輯觸發器 **[!UICONTROL Triggers]**，則不應編輯其餘內容。
-* 確定JSON有效。 您可以使用JSON驗證器，請參閱 [網站](https://jsonlint.com/) 例如，
-* &quot;name&quot;對應至觸發器ID。 萬用字元「*」會擷取所有觸發器。
-* 「消費者」對應至呼叫例項或應用程式的名稱。
-* 管道也支援「別名」主題。
-* 進行更改後，應始終重新啟動流水線。
+* 確保JSON有效。 可以使用JSON驗證程式，請參閱 [網站](https://jsonlint.com/) 例如。
+* &quot;name&quot;對應於觸發器ID。 通配符「*」將捕獲所有觸發器。
+* &quot;Consumer&quot;與調用實例或應用程式的名稱相對應。
+* 流水線還支援「別名」主題。
+* 在進行更改後，應始終重新啟動流水線。
 
-## 步驟3:可選配置 {#step-optional}
+## 第3步：可選配置 {#step-optional}
 
-您可以根據負載需求變更一些內部參數，但請務必先測試這些參數，再投入生產。
+您可以根據負載要求更改一些內部參數，但是請確保在將它們投入生產之前對其進行test。
 
-可從以下找到選用參數清單：
+可以找到以下可選參數清單：
 
 | Option | 說明 |
 |:-:|:-:|
-| appName（舊版） | 在上傳公開金鑰的舊版Oath應用程式中註冊的OAuth應用程式的AppID。 如需關於此項目的詳細資訊，請參閱此[頁面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（舊版） | 取得閘道權杖的URL。 預設值： ```https://api.omniture.com``` |
-| authPrivateKey（舊版） | 私密金鑰（舊版Oath應用程式中上傳的公開部分）AES使用XtkKey選項加密： ```cryptString("PRIVATE_KEY")``` |
-| disableAuth（舊版） | 停用驗證，不使用閘道權杖進行連線只會被某些開發管道端點接受。 |
-| discoverPipelineEndpoint | 尋找要用於此租用戶的Pipeline Services端點的URL。 預設值： ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | 中內部狀態進程的兩個轉儲之間的期間 ```var/INSTANCE/pipelined.json.``` <br> 內部狀態也可隨需存取，請前往： ```http://INSTANCE:7781/pipelined/status``` |
-| forcedPipelineEndpoint | 禁用PipelineServicesEndpoint的檢測以強制其 |
-| monitorServerPort | 管道化進程將監聽此埠，以便在此處提供內部狀態進程： ```http://INSTANCE:PORT/pipelined/status```. <br>預設為7781 |
-| pointerFlushMessageCount | 處理此數量的訊息時，位移會儲存在資料庫中。 <br> 預設為1000 |
-| pointerFlushPeriodSec | 在此期間後，偏移將保存在資料庫中。 <br>預設為5（秒） |
-| processingJSThreads | 使用自訂JS連接器處理訊息的專用執行緒數。 <br> 預設為4 |
-| processingThreads | 使用內建代碼處理消息的專用線程數。 <br>預設為4 |
-| retryPeriodSec | 處理錯誤時重試之間的延遲。 <br>預設為30（秒） |
-| retryValiditySec | 如果此時段後未成功處理訊息（重試次數太多），請捨棄訊息。 <br>預設為300（秒） |
+| appName（舊版） | 在上載公鑰的舊式宣誓應用程式中註冊的OAuth應用程式的AppID。 如需關於此項目的詳細資訊，請參閱此[頁面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
+| authGatewayEndpoint（舊版） | 獲取網關令牌的URL。 預設: ```https://api.omniture.com``` |
+| authPrivateKey（舊版） | 私鑰，在Legacy Oath應用程式中上傳的公共部件，AES使用XtkKey選項進行加密： ```cryptString("PRIVATE_KEY")``` |
+| disableAuth（舊） | 禁用身份驗證，沒有網關令牌的連接將只被某些開發管道終結點接受。 |
+| discoverPipelineEndpoint | 用於查找要用於此租戶的Pipeline Services終結點的URL。 預設: ```https://producer-pipeline-pnw.adobe.net``` |
+| dumpStatePeriodSec | 中內部狀態進程的兩個轉儲之間的期間 ```var/INSTANCE/pipelined.json.``` <br> 內部狀態也可按需訪問： ```http://INSTANCE:7781/pipelined/status``` |
+| forcedPipelineEndpoint | 禁用對PipelineServicesEndpoint的檢測以強制它 |
+| monitorServerPort | 流水線進程將偵聽此埠，以便在此處提供內部狀態進程： ```http://INSTANCE:PORT/pipelined/status```。 <br>預設為7781 |
+| 指針FlushMessageCount | 處理此數目的消息時，偏移將保存在資料庫中。 <br> 預設值為1000 |
+| 指針FlushPeriodSec | 在此期間後，偏移將保存在資料庫中。 <br>預設值為5（秒） |
+| 處理JSThreads | 使用自定義JS連接器處理消息的專用線程數。 <br> 預設值為4 |
+| 處理線程 | 使用內置代碼處理消息的專用線程數。 <br>預設值為4 |
+| retryPeriodSec | 處理錯誤時重試之間的延遲。 <br>預設值為30（秒） |
+| retryValiditySec | 如果在此時間段後未成功處理該消息（重試次數過多），請放棄該消息。 <br>預設值為300（秒） |
 
 ### 流水線處理自動啟動 {#pipelined-process-autostart}
 
-管道化進程需要自動啟動。
+流水線處理需要自動啟動。
 
-為此，將設定檔案中的&lt; pipelined >元素設為autostart=&quot;true&quot;:
+為此，將配置檔案中的&lt; pipelined >元素設定為autostart=&quot;true&quot;:
 
 ```
  <pipelined autoStart="true" ... "/>
@@ -160,10 +160,10 @@ Marketing Cloud支援透過Adobe I/O專案進行驗證。
 nlserver restart pipelined@instance
 ```
 
-## 步驟4:驗證 {#step-validation}
+## 第4步：驗證 {#step-validation}
 
-要驗證用於布建的管道設定，請執行以下步驟：
+要驗證管道設定以進行預配，請執行以下步驟：
 
-* 請確定 [!DNL pipelined] 進程正在運行。
-* 檢查pipelined.log中是否有管線連線記錄。
-* 驗證連線，以及是否收到Ping。 托管客戶可從用戶端主控台使用監控。
+* 確保 [!DNL pipelined] 進程正在運行。
+* 檢查pipelined.log中的管道連接日誌。
+* 驗證連接是否收到ping。 托管客戶可以從客戶端控制台使用監控。

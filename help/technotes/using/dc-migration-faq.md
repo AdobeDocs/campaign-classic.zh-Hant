@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -143,9 +143,9 @@ Adobe解除舊式資料中心：Campaign Classic實例必須傳輸到公共雲Am
 
    允許清單中將包含外部解決方案中所需的IP地址，因為應用程式伺服器IP將發生更改。 將提供此資訊。 整合的其他部分是基於網際網路管理系統，應按原樣工作。
 
-* **那麼，沒有附加到IMS整合的組織ID的客戶呢？**
+* **沒有附加到IMS整合組織ID的客戶呢？**
 
-   沒有IMS的客戶將獲得一條：IMS組織ID將附加到其實例。
+   沒有IMS的客戶將獲得一條：組織ID將附加到其實例。
 
 * **多品牌配置是否受遷移影響？**
 

@@ -6,9 +6,9 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: cb434747d2bee5d24dcaa1141100c269eea313ad
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ Adobe Campaign Classic和Adobe Analytics認證的整合支援AdobeIdentity Manag
 
 ## 建立Adobe I/O項目 {#create-adobe-io}
 
-1. 訪問Adobe I/O並登錄為 **系統管理員** IMS組織。
+1. 訪問Adobe I/O並登錄為 **系統管理員** 您的組織。
 
    有關管理員角色的詳細資訊，請參閱 [頁](https://helpx.adobe.com/enterprise/using/admin-roles.html)。
 

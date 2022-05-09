@@ -5,10 +5,10 @@ description: '管線疑難排解 '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 0%
+source-wordcount: '705'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 **管道化失敗，但「主題必須是有效的組織或客戶端」**
 
-組織標識符配置無效。
+組織ID配置無效。
 
-1. 檢查IMSOrgId是否在serverConf.xml中設定。
-1. 在實例配置檔案中查找可以覆蓋預設值的空IMSOrgId。 如果是，請將其刪除。
-1. 檢查IMSOrgId是否與Experience Cloud中的客戶匹配。
+1. 檢查是否在serverConf.xml中設定了組織ID(ImsOrgId)。
+1. 檢查實例配置檔案中的空組織ID是否可以覆蓋預設組織ID。 如果是，請將其刪除。
+1. 檢查組織ID是否正確。 要查找組織ID，請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}
 
 **管道化失敗，出現「無效鍵」**
 
