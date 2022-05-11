@@ -4,20 +4,29 @@ title: 技術 — Adobe Campaign- Apache版本安全更新
 description: Adobe Campaign- Apache版本安全更新
 hide: true
 hidefromtoc: true
-source-git-commit: 41aa16e3ac6f150b9a048a22729b4cc4b9ccc10a
+exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
+source-git-commit: 854278e3e2013293888ea194c12ec1a75e70d981
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
 # Adobe Campaign- Apache版本安全更新 {#apache-update}
 
-Campaign Classic可與第三方工具配合使用，並定期更新相容性，以便僅實施受支援的版本，並受益於最新的修復和改進。
+>[!NOTE]
+>本文適用於：
+> * Campaign ClassicV7Managed Services客戶
+> * 市場活動v8客戶
+> * Campaign Standard客戶
+
+
+
+Adobe Campaign使用第三方工具，並定期更新相容性，以便僅實施受支援的版本，並受益於最新的修復和改進。
 
 Adobe Campaign公司包括Apache Tomcat，它通過HTTP作為應用伺服器的入口點，並與Apache Web伺服器整合。 Apache Software Foundation已發佈Apache HTTP Server 2.4.53。此版本解決了可能允許遠程攻擊者控制受影響系統的漏洞。 瞭解詳情 [Apache 2.4.53公告](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}。
 
-Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **2022年5月31日** 來緩解此Apache漏洞並使實例環境更加安全。 此升級適用於在易受攻擊的Apache HTTP Server版本上運行的所有Managed Services客戶。 如果您受到影響，Adobe已聯繫您以通知您此升級。
+Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **2022年5月31日** 來緩解此Apache漏洞並使實例環境更加安全。 此升級適用於所有在易受攻擊的Apache HTTP Server版本上運行的Campaign Classicv7Managed Services客戶、活動v8和Campaign Standard客戶。 如果您受到影響，Adobe已聯繫您以通知您此升級。
 
 此升級預計會在正常工作時間之外自動運行，以便您繼續使用市場活動服務而不中斷。
 
@@ -42,11 +51,9 @@ Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **
 
    預計停機時間不到10分鐘。
 
-
 * **客戶是否需要執行此安全升級操作？**
 
    由於安全升級將自動運行，因此不需要執行任何操作。
-
 
 * **客戶需要運行哪些驗證？**
 
