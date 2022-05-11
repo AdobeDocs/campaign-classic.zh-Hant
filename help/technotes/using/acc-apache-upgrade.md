@@ -5,22 +5,17 @@ description: Adobe Campaign- Apache版本安全更新
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 854278e3e2013293888ea194c12ec1a75e70d981
+source-git-commit: 209e3ffc5b11a776a8d16ab210097e5ee4e48b0d
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
 # Adobe Campaign- Apache版本安全更新 {#apache-update}
 
->[!NOTE]
->本文適用於：
-> * Campaign ClassicV7Managed Services客戶
-> * 市場活動v8客戶
-> * Campaign Standard客戶
-
-
+>[!CAUTION]
+>本文適用於：Campaign Classicv7Managed Services客戶、營銷活動v8客戶和Campaign Standard客戶。
 
 Adobe Campaign使用第三方工具，並定期更新相容性，以便僅實施受支援的版本，並受益於最新的修復和改進。
 
