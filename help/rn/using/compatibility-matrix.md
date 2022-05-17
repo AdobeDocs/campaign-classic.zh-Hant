@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ ht-degree: 100%
 </tbody>
 </table>
 
-此外，**混合**&#x200B;及&#x200B;**內部部署**&#x200B;環境也可以透過下列與 Campaign 連線：
+另外， **混合** 和 **內部部署** 環境還可以將市場活動與以下外部資料庫系統連接。 這些系統 **不相容** 與市場活動 **Managed Services** （托管）環境。
 
 <table>
 <tbody>
@@ -420,13 +420,7 @@ ht-degree: 100%
 <p>最新版本</p>
 </td>
 </tr>
-<tr>
-<td>
-<p>MicrosoftInternet Explorer</p>
-</td>
-<td>
-<p>11</p>
-</td>
+
 </tr>
 </tbody>
 </table>
