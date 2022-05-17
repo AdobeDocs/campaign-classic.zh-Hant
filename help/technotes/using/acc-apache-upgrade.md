@@ -5,7 +5,7 @@ description: Adobe Campaign- Apache版本安全更新
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Adobe Campaign- Apache版本安全更新 {#apache-update}
 
 >[!CAUTION]
->本文適用於：Campaign Classicv7Managed Services客戶、營銷活動v8客戶和Campaign Standard客戶。
+>本文適用於： **Campaign ClassicV7Managed Services** 客戶， **市場活動v8** 客戶及 **Campaign Standard** 客戶。
 
 Adobe Campaign使用第三方工具，並定期更新相容性，以便僅實施受支援的版本，並受益於最新的修復和改進。
 
@@ -25,7 +25,7 @@ Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **
 
 此升級預計會在正常工作時間之外自動運行，以便您繼續使用市場活動服務而不中斷。
 
-在升級您的生產實例之前，我們的團隊將首先升級您的非生產實例。 由於這是Adobe擁有的自動升級過程，因此您不需要執行任何操作。 但是，如果您遇到任何問題，請聯繫 [Adobe客戶關懷](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+您的非生產實例將首先通過Adobe進行升級，然後升級您的生產實例。 由於這是Adobe擁有的自動升級過程，因此您不需要執行任何操作。 但是，如果您遇到任何問題，請聯繫 [Adobe客戶關懷](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **
 
 * **客戶需要運行哪些驗證？**
 
-   此安全升級不需要特定測試。 如果發現任何問題，請聯繫 [Adobe客戶關懷](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   此安全升級不需要特定測試。 如果發現任何問題，請聯繫 [Adobe客戶關懷](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 * **是否可以請求更改計畫的安全升級插槽的日期/時間？**
