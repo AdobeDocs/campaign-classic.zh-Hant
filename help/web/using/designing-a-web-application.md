@@ -4,9 +4,9 @@ title: 設計網站應用程式
 description: 設計網站應用程式
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 0ad183ae68faf41ac0b14bb37639a4b1da9d8776
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '277'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,7 @@ Web應用程式是按照與 [Web表單](about-web-forms.md)。
 
 >[!CAUTION]
 >
->使用 **[!UICONTROL Preview]** 的子菜單。
->
->在發佈Web應用程式之前，不向最終用戶公開更改。
+>使用 **[!UICONTROL Preview]** 的子菜單。 請注意，用於預覽Web應用程式的配置檔案test需要位於 **[!UICONTROL Access rights]** 為 **[!UICONTROL Web application agent]** 運算子。 </br>在發佈Web應用程式之前，不向最終用戶公開更改。
 
 ## 在Web應用程式中插入圖表 {#inserting-charts-in-a-web-application}
 
