@@ -5,9 +5,9 @@ description: Adobe Campaign- Apache版本安全更新
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
+source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,6 @@ Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **
 
    當前的Apache版本易受攻擊，並且存在潛在的安全威脅。 必須將市場活動實例升級到最新適用的Apache版本，以解決安全風險。
 
-
 * **哪些客戶是安全升級的目標客戶？**
 
    所有使用在較舊的Apache版本上實施的Campaign環境的客戶都升級到最新的適用的Apache版本。
@@ -49,6 +48,10 @@ Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **
 * **客戶是否需要執行此安全升級操作？**
 
    由於安全升級將自動運行，因此不需要執行任何操作。
+
+* **在維護窗口期間，對運行的市場活動/工作流有何影響？**
+
+   在維護窗口期間，工作流和郵件服務將同時停止，並且計畫的活動將不會運行。 任何正在進行的活動或正在運行的進程在停機期間將暫停，直到伺服器重新啟動。 活動完成並重新啟動伺服器後，所有服務都將恢復。
 
 * **客戶需要運行哪些驗證？**
 
