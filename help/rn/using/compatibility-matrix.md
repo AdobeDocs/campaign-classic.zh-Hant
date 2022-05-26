@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -227,7 +227,7 @@ ht-degree: 96%
 </tbody>
 </table>
 
-另外， **混合** 和 **內部部署** 環境還可以將市場活動與以下外部資料庫系統連接。 這些系統 **不相容** 與市場活動 **Managed Services** （托管）環境。
+此外，**混合**&#x200B;及&#x200B;**內部部署**&#x200B;環境可使 Campaign 連線下列外部資料庫系統。這些系統跟 Campaign **Managed Services** (託管) 環境&#x200B;**不相容**。
 
 <table>
 <tbody>
