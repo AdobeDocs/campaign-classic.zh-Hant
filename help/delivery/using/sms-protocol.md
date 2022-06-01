@@ -4,7 +4,7 @@ title: 簡訊連接器通訊協定及設定
 description: 瞭解有關SMS連接器及如何配置的詳細資訊
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 2c145829517a6961d502cc3e7b904547f8c71602
 workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 0%
@@ -386,7 +386,7 @@ SMPP協定的每個實現都有許多不同。 為了提高相容性和適應性
 
 要連接的伺服器的DNS名稱或IP地址。
 
-#### 埠 {#port}
+#### 連接埠 {#port}
 
 要連接的TCP埠。
 
@@ -410,7 +410,7 @@ Adobe Campaign Classic擴展SMPP連接器可以控制每個MTA子級的連接數
 
 對於Adobe Campaign Classic來說，可能有不同數量的接收機和發射機連接：
 
-* **發射器連接= MTA子連接數x MTA子進程數x MTA子進程數x MTA數（如果設定了自動回復）+ MTA子連接數**
+* **發射器連接= MTA子連接數* MTA子進程數* MTA數 </br> （如果設定了自動回復）+ MTA子連接數**
 
 如上所示，如果啟用了自動回復，Adobe Campaign Classic簡訊進程將開啟更多發射器連接。 這些額外連接用於發送自動答復。
 
