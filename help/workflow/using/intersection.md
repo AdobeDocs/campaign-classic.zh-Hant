@@ -4,10 +4,10 @@ title: 交集
 description: 交集
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: eb7a8cd2c9ff476a830dcc6e8e7c29ccd72c24f0
+source-git-commit: 389e5a87ea195024707c3c58e63899ad7949f025
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 0%
+source-wordcount: '436'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
 >title="交集活動"
->abstract="「交集」類型活動從接收目標的交集建立目標。 交叉點允許您僅提取所有入站活動結果公用的總體。 建立目標時會收到所有結果：因此，必須先完成所有先前的活動，然後才能執行交集。"
+>abstract="「交集」類型活動從接收目標的交集建立目標。 交叉點允許您僅提取所有入站活動結果公用的總體。"
+>additional-url="https://video.tv.adobe.com/v/329373" text="觀看示範影片"
 
 
 ![](../../assets/common.svg)
