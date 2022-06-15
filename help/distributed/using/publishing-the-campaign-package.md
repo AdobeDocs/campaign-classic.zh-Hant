@@ -4,7 +4,7 @@ title: 發佈行銷活動套件
 description: 發佈行銷活動套件
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 發佈行銷活動套件{#publishing-the-campaign-package}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 中央實體運營商將發佈希望向中 **[!UICONTROL list of campaign packages]**。
 

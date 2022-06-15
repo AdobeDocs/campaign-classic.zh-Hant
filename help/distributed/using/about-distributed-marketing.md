@@ -4,18 +4,18 @@ title: 開始分佈式營銷
 description: 開始分佈式營銷
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 開始分佈式營銷{#about-distributed-marketing}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-Adobe Campaign提供 **分佈式營銷** 中央單位（總部、營銷部門等）開展合作活動的申請 地方實體（銷售點、地區代理等）。 此協作基於共用工作區，稱為 **[!UICONTROL list of campaign packages]**，其中集中建立的市場活動模板和實例將提供給本地實體。
+Adobe Campaign提供 **分佈式營銷** 中央單位（總部、營銷部門等）開展合作活動的申請 本地實體 (銷售地點、地區代理等)。 此協作基於共用工作區，稱為 **[!UICONTROL list of campaign packages]**，其中集中建立的市場活動模板和實例將提供給本地實體。
 
 中央實體提供本地實體可能使用的市場活動。 市場活動由代表本地市場活動或協作市場活動的包實現。 要使用市場活動，本地實體必須訂購該市場活動，並且必須批准該訂單。
 

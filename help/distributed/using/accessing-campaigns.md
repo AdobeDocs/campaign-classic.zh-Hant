@@ -4,7 +4,7 @@ title: 存取行銷活動
 description: 存取行銷活動
 feature: Distributed Marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 存取行銷活動{#accessing-campaigns}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 訂購市場活動後，訂單已獲批准，並且已達到可用日期，便可執行它。
 

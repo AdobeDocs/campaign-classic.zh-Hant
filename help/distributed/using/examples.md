@@ -4,7 +4,7 @@ title: 分佈式營銷示例
 description: 分佈式營銷示例
 feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分佈式營銷示例{#distributed-marketing-samples}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 建立本地市場活動（按窗體） {#creating-a-local-campaign--by-form-}
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->API在專用文檔中詳細列出。 [了解更多](../../configuration/using/about-web-services.md)。
+>API在專用文檔中詳細列出。 [了解更多資訊](../../configuration/using/about-web-services.md)。
 >
 >此示例中使用的Web應用程式不是隨Adobe Campaign隨附而來的Web應用程式。 要在市場活動中使用表單，必須建立專用Web應用程式。
 

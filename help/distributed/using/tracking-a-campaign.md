@@ -4,7 +4,7 @@ title: 追蹤行銷活動
 description: 瞭解如何使用市場活動分佈式營銷跟蹤市場活動
 feature: Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 追蹤行銷活動{#tracking-a-campaign}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 中央實體操作員可以跟蹤市場活動包清單中的市場活動訂單。
 
