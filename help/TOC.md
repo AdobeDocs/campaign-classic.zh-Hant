@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 490ba0102f54e2d82e0bff1aa72b67ac118bf7a1
-workflow-type: ht
-source-wordcount: '2570'
-ht-degree: 100%
+source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+workflow-type: tm+mt
+source-wordcount: '2576'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
-      + 隱私權請求{#privacy-requests}
+      + 隱私權請求 {#privacy-requests}
          + [關於隱私權請求](platform/using/privacy-requests.md)
          + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
          + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
@@ -834,6 +834,7 @@ ht-degree: 100%
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
    + 升級與相容性{#technote-migration}
       + [技術說明](technotes/using/technote.md)
+      + [更新到新的Deliverability伺服器](technotes/using/deliverability-server.md)
       + [Apache 安全性升級](technotes/using/acc-apache-upgrade.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
