@@ -4,7 +4,7 @@ title: 遷移到新的可交付性伺服器
 description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -25,12 +25,12 @@ ht-degree: 4%
 
 Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign Classic客戶需要遷移到新的交付服務，該服務托管在Amazon網路服務(AWS)上。
 
-此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可交付性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
+此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可傳送性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
 
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
-如果您使用現有的Adobe Campaign交付性伺服器，並且您的環境是在比市場活動21.1.1更低的版本上實施的，則您將受到影響。 您需要升級到Campaign 21.1（或更高版本）。
+如果您使用的是舊的Adobe Campaign交付性伺服器，並且您的環境是在低於市場活動21.1.1的版本上實施的，則您會受到影響。 您需要升級到Campaign 21.1（或更高版本）。
 
 瞭解如何檢查您的版本 [此部分](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
