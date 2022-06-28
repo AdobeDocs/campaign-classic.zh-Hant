@@ -4,10 +4,10 @@ title: 遷移到新的可交付性伺服器
 description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
-source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
+source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
    >下載提示出現時，應保存config.zip檔案，因為您將無法再次下載該檔案。
 
 1. 按一下&#x200B;**[!UICONTROL Next]**。
-1. 選擇任何現有 **[!UICONTROL Product profile]** 或根據需要建立新的。 無需對此權限 **[!UICONTROL Product profile]**。 有關 [!DNL Analytics] **[!UICONTROL Product Profiles]**，請參閱 [這個](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
+1. 選擇任何現有 **[!UICONTROL Product profile]** 或根據需要建立新的。 無需對此權限 **[!UICONTROL Product profile]**。 有關 [!DNL Analytics] **[!UICONTROL Product Profiles]**，請參閱 [此頁](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
 
    然後，按一下 **[!UICONTROL Save configured API]**。
 
