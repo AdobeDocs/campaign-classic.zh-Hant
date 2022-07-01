@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '1933'
+ht-degree: 71%
 
 ---
 
@@ -18,6 +18,72 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
+
+## ![](assets/do-not-localize/limited_2.png)版本 7.3.1 - 版本編號 9352 {#release-7-3-1}
+
+_2022年7月1日_
+
+**有哪些新功能？**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>有時效性的通知</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>在 iOS15 ，Apple 增加了具時效性通知的概念，當通知被視為具時效性，需要即時聯絡使用者時，可以讓應用程式開發人員繞過專注模式。</p>
+<p>瞭解如何在 <a href="../../delivery/using/create-notifications-ios.md">詳細文檔</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**相容性更新**
+
+* Adobe CampaignSDK現在支援Android 12和iOS15的推送通知。
+* Adobe Campaign現在與MySQL 8相容。
+* Adobe Campaign 現在相容於 Windows 11。 
+* Adobe Campaign現在與德比11相容。
+
+請參閱 [Campaign 相容性對照表](../../rn/using/compatibility-matrix.md#OperatingSystems)。
+
+**功能改進**
+
+* 在Internet Explorer 11生命週期結束後，控制台的HTML渲染引擎現在使用「邊鉻」。
+* 為了優化穩定性，Adobe Campaign的資料庫連接管理得到了改進。
+* Microsoft Exchange Online OAuth 2.0 在 Campaign 中支援 POP3 驗證。 [閱讀全文](../../installation/using/external-accounts.md#bounce-mails-external-account)
+* 在使用包含外部資料的濃縮工作流活動時，已解決各種問題。 (NEO-38069)
+* SAP Hana FDA連接器已更新，以使用最新的SAP Hana資料庫版本(2.x)運行。
+* teradataFDA連接器已更新為使用最新的Teradata版本(17)。
+* 20.2為新的遞送和遞送模板引入了對iOS遞送的基於令牌的驗證的支援。 在7.2中，向配置程式中添加了一個修補程式，以將基於令牌的身份驗證支援應用於最多10,000個以前建立的交付和交付模板。 在7.3中，已對修補程式進行了改進，並且已刪除了限制。
+
+**修補程式**
+
+* 已修復上一生成中的錯誤，該錯誤阻止用戶調整IMS登錄頁的大小。
+* 已修復在現有實例上安裝內容管理器包時出錯。
+* 已修復 **市場活動** 菜單，其中持續顯示「操作正在進行」消息。
+* 啟用Adobe Analytics後，在發送帶有URL的電子郵件時修復了從URL中刪除BID(Broadlog ID)和CID(Campig ID)而不保存傳遞的問題。
+* 在具有消息中心特定配置的實例的「公共資源」資料夾中上載映像時，已修復問題。 將顯示以下錯誤消息：&quot;無法將映像上載到跟蹤伺服器&quot;。
+* 修正了在重新產生設定時，如果設定檔案錯誤，會導致系統當機的問題。
+* 已修復可能導致交貨指標未正確更新的問題。 (NEO-44827)
+* 已修復在使用複雜查詢時可能導致錯誤的問題。 (NEO-43648)
+* 已修復可能阻止WebApps預覽工作的問題。 (NEO-43242)
+* 修復了在具有資料載入（檔案）活動的工作流中使用外部目標映射檔案時可能導致交付準備失敗的問題。 (NEO-43691)
+* 修復了可能導致崩潰並需要完全重新啟動實例的問題。 (NEO-44645)
+* 已修復可能阻止工作流熱圖載入任何結果的問題。 (NEO-43360)
+* 已修復在使用FDA外部連接器時可能導致連接問題的問題。 (NEO-42722)
+* 使用地址替換和控制組排除時，已修復帶有證明的問題。 (NEO-39695)
+* 已修復因Snowflake連接器問題而可能導致工作流失敗的問題。 (NEO-46299)
+* 已修復由於個性化塊中的無效字元而可能凍結客戶端控制台的問題。 (NEO-45761)
+* 已修復在建立外部帳戶作為外部資料庫Snowflake時可能導致連接問題的問題。 (NEO-45744)
+* 已修復可能導致顯示受visibleIf屬性保護的表資訊的問題。 (NEO-37865)
+* 修復了在傳遞分析階段顯示「$ is not defined」錯誤消息的問題。 (NEO-32940)
+* 已修復導致交貨與錯誤的eventType關聯的問題。 (NEO-45743)
+* 已修復由於間歇性核心轉儲而導致崩潰的問題(NEO-30549)
+* 修復了在傳遞中使用錯誤HTML代碼時可能導致崩潰的問題。 (NEO-40385)
+* 修復了可能阻止非管理員用戶訪問 **分析** 頁籤。 (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png)版本 7.2.2 - 版本編號 9349 {#release-7-2-2}
 
@@ -41,7 +107,6 @@ _2022 年 3 月 1 日_
 * 修復下列問題，在同時具有 1000 多個 broadlog 時重新整理傳遞性工作流程導致錯誤。 (NEO-40276)
 * 修復下列問題，無法自動更新未結比例及點選比例傳遞指示器。 (NEO-43253)
 
-
 ## ![](assets/do-not-localize/limited_2.png)版本 7.2.1 - 版本編號 9346 {#release-7-2-1}
 
 _2022 年 1 月 10 日_
@@ -58,7 +123,7 @@ _2022 年 1 月 10 日_
 
 Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容性對照表](../../rn/using/compatibility-matrix.md#OperatingSystems)。
 
-**功能改善**
+**功能改進**
 
 * Microsoft Dynamics CRM 365 連接器
 

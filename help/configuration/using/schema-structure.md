@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 1%
+source-wordcount: '1520'
+ht-degree: 2%
 
 ---
 
@@ -175,33 +175,27 @@ ht-degree: 1%
 <table> 
  <tbody> 
   <tr> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 字串<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2（如果為unicode，則為NVARCHAR2）<br /> </td> 
-   <td> VARCHAR（如果為Unicode，則為VARCHAR字元集UNICODE）<br /> </td> 
-   <td> VARCHAR<br /> </td> 
    <td> VARCHAR（如果unicode，則為NVARCHAR）<br /> </td> 
   </tr> 
   <tr> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林<br /> </td> 
    <td> 斯馬林特<br /> </td> 
    <td> 數字(3)<br /> </td> 
-   <td> 數字(3)<br /> </td> 
-   <td> 斯馬林特<br /> </td> 
    <td> 蒂尼因特<br /> </td> 
   </tr> 
   <tr> 
    <td> 位元組<br /> </td> 
    <td> 斯馬林特<br /> </td> 
    <td> 數字(3)<br /> </td> 
-   <td> 數字(3)<br /> </td> 
-   <td> 斯馬林特<br /> </td> 
    <td> 蒂尼因特<br /> </td> 
   </tr> 
   <tr> 
@@ -209,38 +203,28 @@ ht-degree: 1%
    <td> 斯馬林特<br /> </td> 
    <td> 數字(5)<br /> </td> 
    <td> 斯馬林特<br /> </td> 
-   <td> 斯馬林特<br /> </td> 
-   <td> 斯馬林特<br /> </td> 
   </tr> 
   <tr> 
-   <td> 雙線<br /> </td> 
+   <td> 兩次<br /> </td> 
    <td> 雙精度<br /> </td> 
    <td> 浮動<br /> </td> 
    <td> 浮動<br /> </td> 
-   <td> 雙<br /> </td> 
-   <td> 浮動<br /> </td> 
   </tr> 
   <tr> 
-   <td> 龍<br /> </td> 
+   <td> 長<br /> </td> 
    <td> 整數<br /> </td> 
    <td> 數字(10)<br /> </td> 
-   <td> 整數<br /> </td> 
-   <td> 整數<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> 比金特<br /> </td> 
    <td> 數字(20)<br /> </td> 
-   <td> 數字(20)<br /> </td> 
-   <td> 比金特<br /> </td> 
    <td> 比金特<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 日期<br /> </td> 
-   <td> 時間戳<br /> </td> 
    <td> 日期<br /> </td> 
    <td> 日期時間<br /> </td> 
   </tr> 
@@ -248,24 +232,18 @@ ht-degree: 1%
    <td> 時間<br /> </td> 
    <td> 時間<br /> </td> 
    <td> 浮動<br /> </td> 
-   <td> 時間<br /> </td> 
-   <td> 時間<br /> </td> 
    <td> 浮動<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期時間<br /> </td> 
    <td> 時間戳<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 時間戳<br /> </td> 
-   <td> 時間戳<br /> </td> 
    <td> MS SQL &lt; 2008:日期時間<br /> MS SQL &gt;= 2012:日期時間偏移<br /> </td> 
   </tr> 
   <tr> 
    <td> 達蒂梅諾茨<br /> </td> 
    <td> 時間戳<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 時間戳<br /> </td> 
-   <td> 時間戳<br /> </td> 
    <td> MS SQL &lt; 2008:日期時間<br /> MS SQL &gt;= 2012:DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -273,23 +251,17 @@ ht-degree: 1%
    <td> 雙精度<br /> </td> 
    <td> 浮動<br /> </td> 
    <td> 浮動<br /> </td> 
-   <td> 雙<br /> </td> 
-   <td> 浮動<br /> </td> 
   </tr> 
   <tr> 
    <td> 備忘<br /> </td> 
    <td> 文本<br /> </td> 
    <td> CLOB（如果為Unicode，則為NCLOB）<br /> </td> 
-   <td> CLOB（如果為Unicode，則為CLOB字元集UNICODE）<br /> </td> 
-   <td> CLOB（6米）<br /> </td> 
    <td> TEXT（如果為Unicode，則為NTEXT）<br /> </td> 
   </tr> 
   <tr> 
    <td> blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB<br /> </td> 
-   <td> BLOB(4M)<br /> </td> 
    <td> 影像<br /> </td> 
   </tr> 
  </tbody> 

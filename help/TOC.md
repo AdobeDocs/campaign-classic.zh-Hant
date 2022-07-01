@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2585'
 ht-degree: 99%
 
 ---
@@ -677,6 +677,8 @@ ht-degree: 99%
             + [設定 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [設定 Teradata](installation/using/configure-fda-teradata.md)
             + [設定 SAP HANA](installation/using/configure-fda-sap-hana.md)
+            + [配置MicrosoftSQL Server](installation/using/configure-fda-sql.md)
+            + [配置PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [遠端存取權限](installation/using/remote-database-access-rights.md)
          + [連結資料庫](installation/using/connecting-to-database.md)
          + [建立資料方案](installation/using/creating-data-schema.md)
@@ -688,6 +690,7 @@ ht-degree: 99%
       + [建立新執行個體](installation/using/creating-new-instances.md)
       + [Campaign 選項清單](installation/using/configuring-campaign-options.md)
       + [解除安裝 Campaign](installation/using/uninstalling-campaign.md)
+      + [安裝新字型](installation/using/install-fonts.md)
 + 監視指南 {#monitoring-campaign-classic}
    + 簡介 {#introduction}
       + [前言](production/using/foreword.md)

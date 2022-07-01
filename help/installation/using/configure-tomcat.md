@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Campaign Tomcat設定
-description: Campaign Tomcat設定
+title: 市場活動Tomcat配置
+description: 市場活動Tomcat配置
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign使用 **名為Apache Tomcat的嵌入式Web servlet** 處理應用程式與任何外部介面（包括用戶端主控台、追蹤的URL連結、SOAP呼叫等）之間的HTTP/HTTPS要求。 對於任何面向外部的Adobe Campaign例項，此前通常會有外部Web伺服器（通常是IIS或Apache）。
+Adobe Campaign使用 **嵌入式Web Servlet，稱為Apache Tomcat** 處理應用程式和任何外部介面（包括客戶端控制台、跟蹤的URL連結、SOAP調用等）之間的HTTP/HTTPS請求。 對於任何面向外部的Adobe Campaign實例，其前面通常有外部Web伺服器（通常為IIS或Apache）。
 
-進一步了解Campaign中的Tomcat，以及如何在中找到您的Tomcat版本 [本頁](../../production/using/locate-tomcat-version.md).
+瞭解有關Campaing中Tomcat的詳細資訊以及如何在 [此頁](../../production/using/locate-tomcat-version.md)。
 
 >[!NOTE]
 >
->此程式僅限於 **內部部署** 部署。
+>此過程僅限於 **現場** 部署。
 
 ## Apache Tomcat的預設埠 {#default-port-for-tomcat}
 
-當Tomcat伺服器的8080偵聽埠已忙於配置所需的另一個應用程式時，您需要用一個空閒埠（例如8090）替換8080埠。 若要變更，請編輯 **server.xml** 檔案儲存於 **/tomcat-8/conf** Adobe Campaign安裝資料夾的目錄。
+當Tomcat伺服器的8080偵聽埠已忙於配置所需的另一個應用程式時，您需要用一個空閒埠（例如8090）替換8080埠。 要更改它，請編輯 **伺服器.xml** 檔案保存在 **/tomcat-8/conf** 的子目錄。
 
-然後修改JSP中繼頁的埠。 若要這麼做，請變更 **serverConf.xml** 檔案儲存於 **/conf** Adobe Campaign安裝目錄的目錄。
+然後修改JSP中繼頁的埠。 為此，請更改 **serverConf.xml** 檔案保存在 **/conf** 的子目錄。
 
 ```
 <serverConf>
@@ -38,14 +38,26 @@ Adobe Campaign使用 **名為Apache Tomcat的嵌入式Web servlet** 處理應用
    <url ... targetUrl="http://localhost:8090"...
 ```
 
-## 映射Apache Tomcat中的資料夾 {#mapping-a-folder-in-tomcat}
+## 在Apache Tomcat中映射資料夾 {#mapping-a-folder-in-tomcat}
 
-若要定義客戶特定設定，您可以建立 **user_contexts.xml** 檔案 **/tomcat-8/conf** 資料夾，其中也包含 **contexts.xml** 檔案。
+要定義客戶特定設定，您可以建立 **user_contexts.xml** 檔案 **/tomcat-8/conf** 資料夾，其中還包含 **上下文.xml** 的子菜單。
 
-此檔案將包含下列類型的資訊：
+此檔案將包含以下類型的資訊：
 
 ```
  <Context path='/foo' docBase='../customers/foo'   crossContext='true' debug='0' reloadable='true' trusted='false'/>
 ```
 
-如有必要，可在伺服器端重新產生此操作。
+如有必要，可以在伺服器端複製此操作。
+
+## 隱藏Tomcat錯誤報告 {#hide-tomcat-error-report}
+
+出於安全原因，強烈建議您隱藏Tomcat錯誤報告。 這是步驟。
+
+1. 開啟 **伺服器.xml** 檔案 **/tomcat-8/conf** Adobe Campaign安裝資料夾的目錄：  `/usr/local/neolane/nl6/tomcat-8/conf`
+1. 在所有現有上下文元素後的底部添加以下元素：
+
+   ```
+   <Valve className="org.apache.catalina.valves.ErrorReportValve" showReport="false" showServerInfo="false"/>
+   ```
+1. 重新啟動nlserver和Apache Web伺服器。

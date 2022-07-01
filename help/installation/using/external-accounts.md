@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 8%
+source-wordcount: '1817'
+ht-degree: 7%
 
 ---
 
@@ -75,6 +75,34 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。為了設定與外部�
 * **[!UICONTROL Encryption]**
 
    選擇的加密類型 **[!UICONTROL By default]**。 **[!UICONTROL POP3 + STARTTLS]**。 **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**。
+
+* **[!UICONTROL Function]**
+
+   入站電子郵件或SOAP路由器
+
+>[!IMPORTANT]
+>
+>在使用MicrosoftOAuth 2.0配置POP3外部帳戶之前，您首先需要在Azure門戶中註冊您的應用程式。 如需詳細資訊，請參閱[此頁面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。
+
+使用 **MicrosoftOAuth 2.0**，則選中 **[!UICONTROL Microsoft OAuth 2.0]** 的子菜單。
+
+* **[!UICONTROL Azure tenant]**
+
+   在 **基本知識** Azure門戶中應用程式概述的下拉框。
+
+* **[!UICONTROL Azure Client ID]**
+
+   在 **基本知識** Azure門戶中應用程式概述的下拉框。
+
+* **[!UICONTROL Azure Client secret]**
+
+   在 **客戶端機密** 列 **證書和機密** Azure門戶中應用程式的菜單。
+
+* **[!UICONTROL Azure Redirect URL]**
+
+   可在 **驗證** Azure門戶中應用程式的菜單。 它應以以下語法結尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`。
+
+輸入不同的憑據後，可以按一下 **[!UICONTROL Setup the connection]** 完成外部帳戶配置。
 
 ### 路由{#routing-external-account}
 
@@ -166,6 +194,14 @@ SFTP外部帳戶允許您配置和test對Adobe Campaign以外的伺服器的訪�
 * **[!UICONTROL Password]**
 
    用於連接到SFTP伺服器的密碼。
+
+在Windows上添加SSH密鑰：
+
+1. 建立 **首頁** 將值設定為安裝目錄的環境變數。
+
+2. 將您的私鑰添加到 `/$HOME/.ssh/id_rsa` 的子菜單。
+
+3. 重新啟動Adobe Campaign服務。
 
 ### 外部資料庫(FDA) {#external-database-external-account}
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: ht
-source-wordcount: '733'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 97%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 100%
 <tr>
 <td>Debian</td>
 <td>
+<p>11 (64 位元)</p>
 <p>10（64 位元）</p>
 <p>9（64 位元）</p>
 </td>
@@ -266,9 +267,13 @@ ht-degree: 100%
 </tr>
 <tr><td>MySQL</td>
 <td>
+<p>8</p>
 <p>5.7</p>
 </td>
-<td>v7.0 及以上</td>
+<td>
+<p>v7.3 及以上</p>
+<p>v7.0 及以上</p>
+</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -336,8 +341,9 @@ ht-degree: 100%
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>8</p>
+<p>11（啟動市場活動v7.3）</p>
 <p>10（建議用於日文執行個體）</p>
+<p>8</p>
 </td>
 </tr>
 </tbody>
@@ -368,15 +374,15 @@ ht-degree: 100%
 <tr>
 <td>Android</td>
 <td>
-<p>7.x、8.x、9.0</p>
-<p>搭配行動 SDK 建置版本 1.0.27。</p>
+<p>12（啟動活動v7.3）、9.0、8.x、7.x</p>
+<p>使用移動SDK版本1.1.1</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 14</p>
-<p>與行動 SDK 建置版本 1.0.26 相容，與 32 及 64 位元版本相容。</p>
+<p>iOS 9 - 15</p>
+<p>與行動 SDK 建置版本 1.0.26 相容，與 32 及 64 位元版本相容。iOS15受支援啟動7.3版促銷活動</p>
 </td>
 </tr>
 </tbody>
