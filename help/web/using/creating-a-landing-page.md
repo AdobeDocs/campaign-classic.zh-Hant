@@ -4,9 +4,9 @@ title: 設定登陸頁面
 description: 設定登陸頁面
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '721'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->**DCE為已載入的HTML頁執行JavaScript代碼。** HTML模板中的JavaScript錯誤，可能出現在Adobe Campaign介面中。 這些錯誤與編輯器無關。 要檢查導入的檔案中是否沒有錯誤，建議在將檔案導入DCE之前，先在瀏覽器(Internet Explorer / Firefox / Chrome)中test這些檔案。
+>**DCE為已載入的HTML頁執行JavaScript代碼。** HTML模板中的JavaScript錯誤，可能出現在Adobe Campaign介面中。 這些錯誤與編輯器無關。 要檢查導入的檔案中是否沒有錯誤，建議在將檔案導入DCE之前，先在Web瀏覽器中test它們。
 
 ## 步驟2 — 配置內容 {#step-2---configuring-the-content}
 

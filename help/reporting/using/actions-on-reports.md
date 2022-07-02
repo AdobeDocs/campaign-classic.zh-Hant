@@ -4,9 +4,9 @@ title: 針對報吿的動作
 description: 針對報吿的動作
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -86,7 +86,7 @@ document.nl_waitBeforeRender = true;
 
 您可以打印報表：要執行此操作，請按一下打印機表徵圖：開啟對話框。
 
-為了獲得更好的結果，請編輯Internet Explorer打印選項並選擇 **[!UICONTROL Print background colors and images]**。
+為了獲得更好的結果，請編輯瀏覽器打印選項並選擇 **[!UICONTROL Print background colors and images]**。
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
