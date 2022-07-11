@@ -5,9 +5,9 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
+source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '927'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 在啟動v7 21.1版的Campaign Classic時，Adobe Campaign公司建議了一款新的可交付性伺服器，它帶來了高可用性並解決了安全合規性問題。 Campaign Classic現在將可傳送性規則、廣播和禁止地址從新可傳送性伺服器同步，並同步到新可傳送性伺服器。
 
-作為Campaign Classic客戶，您必須實施新的交付性伺服器
+作為Campaign Classic客戶，您必須實施新的可交付性伺服器。
 
 >[!NOTE]
 >
@@ -26,8 +26,7 @@ ht-degree: 5%
 
 Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign Classic客戶需要遷移到新的交付服務，該服務托管在Amazon網路服務(AWS)上。
 
-此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可交付性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
-
+此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可傳送性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
@@ -43,6 +42,9 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 ## 實施步驟（混合型和現場客戶） {#implementation-steps}
 
+作為新的可交付性伺服器整合的一部分，Campaging需要通過基於Identity Management服務(IMS)的Adobe與Shared Services通信。 首選方法是使用基於Adobe Developer的網關令牌(也稱為技術帳戶令牌或AdobeIO JWT)。
+
+
 >[!WARNING]
 >
 >這些步驟只應通過混合和內部實現來執行。
@@ -51,11 +53,18 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 ### 必要條件{#prerequisites}
 
-作為新的可交付性伺服器整合的一部分，Campaging需要通過基於Identity Management服務(IMS)的Adobe與Shared Services通信。 首選方法是使用基於Adobe Developer的網關令牌(也稱為技術帳戶令牌或AdobeIO JWT)。
+在啟動實施之前，請檢查實例配置。
+
+1. 開啟市場活動客戶端控制台並以管理員身份登錄到Adobe Campaign。
+1. 瀏覽到 **管理>平台>選項**。
+1. 檢查 `DmRendering_cuid` 的子菜單。
+
+   * 如果選項已填充，則可以啟動實施。
+   * 如果未填充值，則聯繫 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 拿到你的CUID
+
+      必須在所有市場活動實例(MKT、MID、RT、EXEC)上使用相同的值填充此選項。
 
 ### 步驟1:建立/更新您的Adobe Developer項目 {#adobe-io-project}
-
-
 
 1. 訪問 [Adobe Developer控制台](https://developer.adobe.com/console/home) 並使用您組織的開發人員訪問權限登錄。
 
@@ -126,15 +135,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 1. 必須停止並重新啟動伺服器，才能將修改考慮在內。 您還可以運行 `config -reload` 的子菜單。
 
-### 第3步：檢查配置
-
-設定完成後，您可以檢查實例配置。 請遵循以下步驟：
-
-1. 開啟客戶端控制台，以管理員身份登錄到Adobe Campaign。
-1. 瀏覽到 **管理>平台>選項**。
-1. 檢查 `DmRendering_cuid` 的子菜單。 它應填充到您的所有促銷活動實例(MKT、MID、RT、EXEC)。 如果未填充值，則聯繫 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 拿到你的CUID
-
-### 第4步：啟用新的可傳送性伺服器
+### 第3步：啟用新的可傳送性伺服器
 
 現在可以啟用新的可傳送性伺服器。 要執行此操作，請執行以下操作：
 
@@ -142,7 +143,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 1. 瀏覽到 **管理>平台>選項**。
 1. 訪問 `NewDeliverabilityServer_FeatureFlag` 選項並將值設定為 `1`。 此配置應在您的所有市場活動實例(MKT、MID、RT、EXEC)上執行。
 
-### 第5步：驗證配置
+### 第4步：驗證配置
 
 要檢查整合是否成功，請執行以下步驟：
 
