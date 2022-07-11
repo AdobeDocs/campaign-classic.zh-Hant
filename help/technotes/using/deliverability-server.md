@@ -5,7 +5,7 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 4ad6f1e3a3d23383d17f947430c32fecefb3a8e1
+source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign Classic客戶需要遷移到新的交付服務，該服務托管在Amazon網路服務(AWS)上。
 
-此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可交付性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
+此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可傳送性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
@@ -82,7 +82,6 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
    ![](assets/Add-API.png)
 1. 在 **[!UICONTROL Add an API]** 窗口，選擇 **[!UICONTROL Adobe Campaign]**。
    ![](assets/AC-API.png)
-<!--1. Choose **[!UICONTROL Service Account (JWT)]** as the authentication type.-->
 1. 如果客戶端ID為空，請選擇 **[!UICONTROL Generate a key pair]** 建立公鑰和私鑰對。
    ![](assets/Generate-a-key-pair.png)
 
