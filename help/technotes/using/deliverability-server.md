@@ -5,7 +5,7 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
+source-git-commit: 4ad6f1e3a3d23383d17f947430c32fecefb3a8e1
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign Classic客戶需要遷移到新的交付服務，該服務托管在Amazon網路服務(AWS)上。
 
-此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可傳送性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
+此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可交付性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
@@ -77,6 +77,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
    >[!CAUTION]
    >
    >如果您已在為其他整合使用AdobeIO JWT身份驗證功能，則必須通過添加來更新項目 **市場活動API** 那個項目。
+
 1. 選擇 **[!UICONTROL Add API]**。
    ![](assets/Add-API.png)
 1. 在 **[!UICONTROL Add an API]** 窗口，選擇 **[!UICONTROL Adobe Campaign]**。
