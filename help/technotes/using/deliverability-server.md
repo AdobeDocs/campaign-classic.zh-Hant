@@ -5,16 +5,16 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
+source-git-commit: 5e0cf925ab4915c8a1d2c9d50daf77190023710f
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
 # 市場活動交付性伺服器 {#acc-deliverability}
 
-在啟動v7 21.1版的Campaign Classic時，Adobe Campaign公司建議了一款新的可交付性伺服器，它帶來了高可用性並解決了安全合規性問題。 Campaign Classic現在將可傳送性規則、廣播和禁止地址從新可傳送性伺服器同步，並同步到新可傳送性伺服器。
+開始 [v7.2.1版](../../rn/using/latest-release.md#release-7-2-2),Adobe Campaign公司提出了一種新的可交付性伺服器，它帶來了高可用性並解決了安全合規性問題。 Campaign Classic現在將可傳送性規則、廣播和禁止地址從新可傳送性伺服器同步，並同步到新可傳送性伺服器。
 
 作為Campaign Classic客戶，您必須實施新的交付性伺服器 **2022年8月31日前**。
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign Classic客戶需要遷移到新的交付服務，該服務托管在Amazon網路服務(AWS)上。
 
-此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可傳送性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
+此新伺服器保證高可用性(99.9)&#x200B;，並提供安全且經過身份驗證的端點，使市場活動伺服器能夠獲取所需資料：新的可交付性伺服器不是針對每個請求連接到資料庫，而是在可能的情況下快取資料以服務於請求。 該機制改善了響應時間&#x200B;。
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
