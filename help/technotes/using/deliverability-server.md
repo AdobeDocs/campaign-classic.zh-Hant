@@ -5,10 +5,10 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 4%
+source-wordcount: '1067'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 4%
 
 在啟動v7 21.1版的Campaign Classic時，Adobe Campaign公司建議了一款新的可交付性伺服器，它帶來了高可用性並解決了安全合規性問題。 Campaign Classic現在將可傳送性規則、廣播和禁止地址從新可傳送性伺服器同步，並同步到新可傳送性伺服器。
 
-作為Campaign Classic客戶，您必須實施新的可交付性伺服器。
+作為Campaign Classic客戶，您必須實施新的交付性伺服器 **2022年8月31日前**。
 
 >[!NOTE]
 >
->如對這些變更有任何疑問，請聯絡 [Adobe 客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>有關這些更改的任何問題，請參閱 [常見問題](#faq)或聯繫人 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 什麼變了？{#acc-deliverability-changes}
 
@@ -30,7 +30,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
-如果您使用的是舊的Adobe Campaign交付性伺服器，並且您的環境是在低於市場活動21.1.1的版本上實施的，則您會受到影響。 您需要升級到Campaign 21.1（或更高版本）。
+如果環境是在低於 [市場活動v7.2.1](../../rn/using/latest-release.md#release-7-2-2)，您會受到影響。 您需要升級到Campaign v7.2.1（或更多）。
 
 瞭解如何檢查您的版本 [此部分](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
@@ -150,5 +150,22 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 1. 瀏覽到 **管理>生產>技術工作流**。
 1. 重新啟動 **更新可交付性** (deliverabilityUpdate)工作流。 應對您的所有促銷活動實例(MKT、MID、RT、EXEC)執行此操作。
 1. 檢查日誌：工作流應執行而不出現錯誤。
+
+
+## 常見問題集 {#faq}
+
+### 如果我不升級我的環境會發生什麼？
+
+任何在8月31日之前未升級的市場活動實例將無法再與市場活動交付性伺服器連接。 因此， **更新可交付性** (deliverabilityUpdate)工作流將失敗。 此工作流管理MX規則和彈出規則的每日更新。
+
+如果您不升級環境，電子郵件設定將停止同步（MX管理規則、入站電子郵件規則、域管理規則和退出資格規則）。 這可能會影響您的交付能力。 如果對這些規則進行了重大更改，則必須從此點手動應用這些規則。
+
+僅對於MKT實例 [全局隱藏清單](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) 會受到影響。
+
+### 我現在無法升級。 指導是什麼？
+
+如果無法在8月31日之前升級實例，則必須臨時禁用 **更新可交付性** (deliverabilityUpdate)工作流，直到升級完成，以便它不會嘗試與舊的deliverability伺服器同步。
+
+
 
 如需更多指導，請與 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
