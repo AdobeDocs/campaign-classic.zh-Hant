@@ -5,10 +5,10 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
+source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 5%
+source-wordcount: '909'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 作為 **本地/混合客戶**，您需要升級到其中一個較新版本，以便從新的可交付性伺服器中獲益。 升級所有實例後，您將能夠 [實施新的整合](#implementation-steps) Adobe可交付性伺服器，並確保無縫過渡。
 
-## 實施步驟（混合型和現場客戶） {#implementation-steps}
+## 實施步驟 {#implementation-steps}
 
 作為新的可交付性伺服器整合的一部分，Campaging需要通過基於Identity Management服務(IMS)的Adobe與Shared Services通信。 首選方法是使用基於Adobe Developer的網關令牌(也稱為技術帳戶令牌或AdobeIO JWT)。
 
@@ -48,8 +48,6 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 >[!WARNING]
 >
 >這些步驟只應通過混合和內部實現來執行。
->
->對於托管實施，請與 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ### 必要條件{#prerequisites}
 
