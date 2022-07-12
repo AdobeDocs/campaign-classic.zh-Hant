@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 78d7d9776217fc4ee0c9cdc7636d5413fae9c8cb
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2579'
 ht-degree: 99%
 
 ---
@@ -837,7 +837,6 @@ ht-degree: 99%
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
    + 升級與相容性{#technote-migration}
       + [技術說明](technotes/using/technote.md)
-      + [更新到新的Deliverability伺服器](technotes/using/deliverability-server.md)
       + [Apache 安全性升級](technotes/using/acc-apache-upgrade.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
