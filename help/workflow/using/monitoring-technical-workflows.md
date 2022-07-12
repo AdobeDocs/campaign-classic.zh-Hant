@@ -4,7 +4,7 @@ title: 監視技術工作流程
 description: 監視技術工作流程
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 6%
@@ -48,9 +48,9 @@ ht-degree: 6%
 
 檢查跟蹤工作流是否按計畫運行（預設情況下每小時運行一次），以及日記帳是否不會突出顯示經常性錯誤。 如需詳細資訊，請參閱本[區段](delivery.md)。
 
-對於 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+對於 **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. 檢查 **[!UICONTROL Deliverability update]** 工作流每天都成功運行並完成。
+1. 檢查 **[!UICONTROL Refresh for Deliverability]** 工作流每天都成功運行並完成。
 1. 在日記帳中驗證規則是否正在定期更新。
 
 對於 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:

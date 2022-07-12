@@ -3,10 +3,10 @@ product: campaign
 title: 傳遞
 description: 瞭解有關預設交貨工作流的詳細資訊
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 5%
    <td> 此工作流標準化了枚舉值。 預設情況下，每天凌晨3點觸發。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">傳送能力更新</span> <br /> </td> 
+   <td> <span class="uicontrol">刷新可交付性</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td> 通過此工作流，您可以建立退回郵件資格規則清單，以及平台中域和MX的清單。 此工作流僅在HTTPS埠開啟時才工作。 除非安裝了Deliverability模組，否則不會更新這些清單。<br /> </td> 
   </tr> 
