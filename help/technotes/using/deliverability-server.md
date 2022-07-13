@@ -5,9 +5,9 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: bec525c52cb30dfae9530265bc3fdc2395879539
+source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1105'
 ht-degree: 3%
 
 ---
@@ -30,15 +30,13 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
-如果環境是在低於 [市場活動v7.2.1](../../rn/using/latest-release.md#release-7-2-2)，您會受到影響。 您需要升級到Campaign v7.2.1（或更多）。
-
-瞭解如何檢查您的版本 [此部分](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
+所有客戶都需要升級到 [市場活動v7.2.1](../../rn/using/latest-release.md#release-7-2-2) 並實施其環境以從新的可交付性伺服器中獲益。
 
 ## 如何更新？{#acc-deliverability-update}
 
 作為 **托管客戶**,Adobe將與您一起將實例升級到較新版本，並在Adobe Developer控制台中建立項目。
 
-作為 **本地/混合客戶**，您需要升級到其中一個較新版本，以便從新的可交付性伺服器中獲益。 升級所有實例後，您將能夠 [實施新的整合](#implementation-steps) Adobe可交付性伺服器，並確保無縫過渡。
+作為 **本地/混合客戶**，您需要升級到 [市場活動v7.2.1](../../rn/using/latest-release.md#release-7-2-2) 從新的可交付性伺服器中獲益。 升級所有實例後，您必須 [實施新的整合](#implementation-steps) Adobe可交付性伺服器，並確保無縫過渡。
 
 ## 實施步驟 {#implementation-steps}
 
@@ -47,7 +45,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 >[!WARNING]
 >
->這些步驟只應通過混合和內部實現來執行。
+>這些步驟只應用於混合和內部實施。
 
 ### 必要條件{#prerequisites}
 
