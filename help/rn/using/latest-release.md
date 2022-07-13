@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 2bbf548992b7ab9c0d8a6a0666c2024db5af1f63
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1958'
 ht-degree: 71%
 
 ---
@@ -51,7 +51,7 @@ _2022年7月1日_
 
 **功能改進**
 
-* 在Internet Explorer 11生命週期結束後，控制台中Adobe Services的HTML呈現引擎現在使用Edge Crr。
+* 在Internet Explorer 11生命週期結束後，控制台中Adobe Services的HTML呈現引擎現在使用Edge Crr。 此外，任何客戶端控制台安裝(從Campaign Classic7.3生成版本)現在都需要安裝Microsoft邊緣Webview 2運行時。 [閱讀全文](../../installation/using/installing-the-client-console.md)
 * 為了優化穩定性，Adobe Campaign的資料庫連接管理得到了改進。
 * Microsoft Exchange Online OAuth 2.0 在 Campaign 中支援 POP3 驗證。 [閱讀全文](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * 在使用包含外部資料的濃縮工作流活動時，已解決各種問題。 (NEO-38069)

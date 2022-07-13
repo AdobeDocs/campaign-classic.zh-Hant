@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classicv7產品文檔
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 52%
@@ -14,11 +14,11 @@ ht-degree: 52%
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
-## 有哪些新功能？
+## 有哪些新功能
 
 * **[《2022年發佈計畫》](technotes/using/dc-migration.md)**<br/> 升級您的環境並改進安全性、基礎架構和效能
 
-* **[3月份發佈是即時的！](rn/using/latest-release.md)**<br/> 在發行說明中發現新功能、改進和修復
+* **[7月份發佈是即時的！](rn/using/latest-release.md)**<br/> 在發行說明中發現新功能、改進和修復
 
 * **[Apple郵件隱私保護常見問題](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)** 和 **[技術](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 查找對Apple關於iOS15的公告的回應的指導
 

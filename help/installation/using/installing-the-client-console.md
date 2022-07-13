@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 4%
+source-wordcount: '1118'
+ht-degree: 3%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 4%
 * 檢查您的系統和工具與Adobe Campaign的相容性 [相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * 獲取您的市場活動伺服器URL
 * 獲取您的用戶憑據
+* 在系統上安裝Microsoft Edge Webview2運行時(從7.3版Campaign Classic)。 [了解更多](#webview)
 
 安裝或更新客戶端控制台的過程因您對Adobe Campaign Classic的實施而不同。
 請查看下面的詳細資訊，瞭解實施需要什麼。
@@ -33,6 +34,12 @@ ht-degree: 4%
 >[!CAUTION]
 >
 >市場活動客戶端控制台和市場活動應用程式伺服器必須運行 **同一產品版本**。 Adobe還強烈建議使用 **同一產品**。 瞭解如何在中檢查市場活動客戶端和伺服器版本 [此部分](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
+
+## Microsoft邊緣Webview2運行時安裝 {#webview}
+
+在7.3版Campaign Classic中，任何控制台安裝都需要安裝Microsoft邊緣Webview 2運行時。
+
+預設情況下，Web視圖作為Windows 11作業系統的一部分安裝。 如果系統上尚未存在Campaign Classic控制台安裝程式，將提示您從 [Microsoft開發商網站](http://www.adobe.com/go/acc-ms-webview2-runtime-download)。 請注意，下載連結在Internet Explorer 11瀏覽器上不工作，因為Microsoft已棄用其支援。 確保使用其他瀏覽器訪問連結。
 
 ## Adobe托管實施 {#hosted-customers}
 
@@ -150,6 +157,9 @@ Adobe建議保留 **[!UICONTROL No longer ask this question]** 未選定，以�
 
 1. 輸入用戶登錄憑據，然後按一下 **[!UICONTROL Log in]**
 
+>[!NOTE]
+>
+>對於市場活動經典7.3版本，Adobe Campaign客戶端控制台在代理身份驗證期間可能兩次請求代理憑據。 這是由於與Internet Explorer不同，Microsoft邊緣Webview2未在快取/密碼儲存中保存代理憑據。
 
 **相關主題**
 
