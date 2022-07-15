@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 92%
 
 >[!AVAILABILITY]
 >
->* 此集合中的說明資料適用於Campaign Classicv7，其 [最新版本](../../rn/using/latest-release.md). 當區段也套用至Campaign v8時，即可使用特定徽章。
+>* 此集合中的幫助材料適用於其中的Campaign Classicv7 [最新版本](../../rn/using/latest-release.md)。 當某節也適用於市場活動v8時，可使用特定徽章。
 >
->* Adobe Campaign v8檔案已推出 [此處](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hant).
+>* Adobe CampaignV8文檔 [這裡](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hant)。
 
 
-![](assets/do-not-localize/how-to-video.png) [探索視訊的主要功能](#video)
+![](assets/do-not-localize/how-to-video.png) [發現視頻中的主要功能和功能](#video)
 
 ## 主要功能 {#key-capabilities}
 
@@ -90,10 +90,10 @@ Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行�
 * [網路服務](../../configuration/using/about-web-services.md) -透過 API/網路服務使用 Campaign
 * [報告](../../reporting/using/about-adobe-campaign-reporting-tools.md) -存取內建報表，分析資料及設計您自己的報告
 
-## 教學課程影片 {#video}
+## 教程視頻 {#video}
 
-本影片介紹Campaign Classic的主要功能。
+此視頻顯示了Campaign Classic的主要特性和功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-提供其他Campaign Classic作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+可提供其他Campaign Classic操作視頻 [這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)。

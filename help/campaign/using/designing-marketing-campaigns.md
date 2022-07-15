@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: 設計並執行市場營銷活動
-description: 定義、優化、執行和分析市場營銷活動
+description: 定義、最佳化、執行和分析行銷活動
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

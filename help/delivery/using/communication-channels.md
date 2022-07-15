@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: 通訊頻道
-description: 建立遞送以在不同渠道上發送個性化郵件
+description: 建立傳遞，以在不同通道上傳送個人化訊息。
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +76,7 @@ Adobe Campaign允許你 [簡訊](sms-channel.md) 和 [線](line-channel.md) 手�
 
 ## 推播通知 {#push-notifications}
 
-Adobe Campaign允許您發送個性化和分段 [推送通知](about-mobile-app-channel.md) 在iOS和安卓移動設備上，通過專用應用。 一旦執行了配置和整合步驟，就可以建立和發送iOS和Android交付。 您還可以設計包含影像或視頻的豐富通知。
+Adobe Campaign允許您發送個性化和分段 [推送通知](about-mobile-app-channel.md) 在iOS和安卓移動設備上，通過專用應用。 一旦執行了配置和整合步驟，就可以建立併發送iOS和Android交付。 您還可以設計包含影像或視頻的豐富通知。
 
 ## 直接郵件 {#direct-mail}
 
