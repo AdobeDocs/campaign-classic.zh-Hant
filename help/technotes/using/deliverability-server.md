@@ -5,10 +5,10 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
+source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 3%
+source-wordcount: '1116'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有關這些更改的任何問題，請參閱 [常見問題](#faq)或聯繫人 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>有關這些更改的更多問題，請參閱 [常見問題](#faq)或聯繫人 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}。
 
 ## 什麼變了？{#acc-deliverability-changes}
 
@@ -56,7 +56,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 1. 檢查 `DmRendering_cuid` 的子菜單。
 
    * 如果選項已填充，則可以啟動實施。
-   * 如果未填充值，則聯繫 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 拿到你的CUID
+   * 如果未填充值，則聯繫 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以獲取您的CUID。
 
       必須在所有市場活動實例(MKT、MID、RT、EXEC)上使用相同的值填充此選項。 作為混合型客戶，請聯繫Adobe，在MID、RT和EXEC實例上設定選項。
 
@@ -91,7 +91,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
    >您應保存 `config.zip` 下載提示時，您將無法再次下載。
 
 1. 按一下&#x200B;**[!UICONTROL Next]**。
-1. 選擇任何現有 **[!UICONTROL Product profile]** 或根據需要建立新的。 無需對此權限 **[!UICONTROL Product profile]**。 有關 **[!UICONTROL Product Profiles]**，請參閱 [此頁](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
+1. 選擇任何現有 **[!UICONTROL Product profile]** 或根據需要建立新的。 無需對此權限 **[!UICONTROL Product profile]**。 有關 **[!UICONTROL Product Profiles]**，請參閱 [此頁](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}。
    ![](assets/Product-Profile-API.png)
 
    然後，按一下 **[!UICONTROL Save configured API]**。
@@ -152,18 +152,17 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 ## 常見問題集 {#faq}
 
+### 更新的時間表是什麼？
+
+向新的可交付性伺服器的過渡將從2004年7月22日開始，為托管客戶(營銷活動Managed Services)提供這些改進的功能並加強安全性。 所有托管客戶將在8月底前更新。
+
+內部客戶和混合型客戶必須在同一時間段內進行過渡。
+
 ### 如果我不升級我的環境會發生什麼？
 
-任何在8月31日之前未升級的市場活動實例將無法再與市場活動交付性伺服器連接。 因此， **刷新可交付性** (deliverabilityUpdate)工作流將失敗。 此工作流管理MX規則和彈出規則的每日更新。
+任何在8月31日之前未升級的市場活動實例將無法再與市場活動交付性伺服器連接。 因此， **刷新可交付性** (deliverabilityUpdate)工作流將失敗，這將影響您的可交付性。
 
 如果您不升級環境，電子郵件設定將停止同步（MX管理規則、入站電子郵件規則、域管理規則和退出資格規則）。 這可能會影響您的交付能力。 如果對這些規則進行了重大更改，則必須從此點手動應用這些規則。
 
 僅對於MKT實例 [全局隱藏清單](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) 會受到影響。
 
-### 我現在無法升級。 指導是什麼？
-
-如果無法在8月31日之前升級實例，則必須臨時禁用 **刷新可交付性** (deliverabilityUpdate)工作流，直到升級完成，以便它不會嘗試與舊的deliverability伺服器同步。
-
-
-
-如需更多指導，請與 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
