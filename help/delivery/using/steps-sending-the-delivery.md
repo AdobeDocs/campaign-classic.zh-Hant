@@ -4,10 +4,10 @@ title: 配置併發送交貨
 description: 瞭解如何配置和發送交付
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 5%
+source-wordcount: '1502'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
->[!NOTE]
->
->只有交貨所有者才能啟動交貨。 為了使其他運算子（或運算子組）能夠啟動交付，您必須在 **[!UICONTROL Delivery start:]** 的子菜單。 有關詳細資訊，請參閱 [此部分](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
+## 權限{#delivery-permissions}
+
+只有交貨所有者才能啟動交貨。 要使其他運算子（或運算子組）能夠啟動傳遞，請將它們添加為 **[!UICONTROL Delivery start:]** 的子菜單。 [了解更多資訊](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
 
 ## 傳遞附加參數 {#delivery-additiona-parameters}
 
@@ -25,32 +25,32 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**:此選項允許您通過說明交貨的優先順序（正常、高或低）來影響交貨的發送順序。 這樣，您就可以優先訂購某些更緊急的送貨服務，而不是其它服務。
+* **[!UICONTROL Delivery priority]**:使用此選項可通過設定交貨的優先順序來更改交貨的發送順序：正常、高或低。
 
-* **[!UICONTROL Message batch quantity]**:此選項允許您定義在同一XML傳遞包中分組的消息數。 如果參數設定為0，則消息將自動分組。 包大小由計算定義 `<delivery size>/1024`，每個包最少為8條，最多為256條消息。
+* **[!UICONTROL Message batch quantity]**:使用此選項可定義在同一XML傳遞包中分組的消息數。 如果參數設定為0，則消息將自動分組。 包大小由計算定義 `<delivery size>/1024`，每個包最少為8條，最多為256條消息。
 
    >[!IMPORTANT]
    >
-   >複製傳遞時，會重置參數。
+   >當通過複製現有傳遞建立傳遞時，將重置此參數。
 
-* **[!UICONTROL Send using multiple waves]**:使用此選項可以以波浪方式發送您的消息，而不是發送給整個觀眾。 配置批數及其比例。 [了解更多資訊](#sending-using-multiple-waves)。
+* **[!UICONTROL Send using multiple waves]**:使用此選項可以批次發送郵件，而不是一次發送給整個受眾。 [了解更多資訊](#sending-using-multiple-waves)。
 
 * **[!UICONTROL Test SMTP delivery]**:使用此選項可test通過SMTP發送。 該傳遞被處理到連接到SMTP伺服器，但未發送：對於每個傳遞的收件人，Campign會連接到SMTP提供程式伺服器，執行SMTP RCPT TO命令，並在SMTP DATA命令之前關閉連接。
 
    >[!NOTE]
    >
-   >* 在中間採購中不建議使用此選項。
+   >* 不能在中間採購中設定此選項。
    >
    >* 瞭解有關SMTP伺服器配置的詳細資訊，請參閱 [此部分](../../installation/using/configure-delivery-settings.md)。
 
 
-* **[!UICONTROL Email BCC]**:此選項允許您通過密件抄送將電子郵件儲存在外部系統上，方法是將密件抄送電子郵件地址添加到郵件目標。 如需詳細資訊，請參閱[本章節](sending-messages.md#archiving-emails)。
+* **[!UICONTROL Email BCC]**:使用此選項，只需將BCC電子郵件地址添加到郵件目標，即可通過BCC在外部系統上儲存電子郵件。 [了解更多資訊](sending-messages.md#archiving-emails)。
 
 ## 確認交貨 {#confirming-delivery}
 
-配置並準備發送交貨後，請確保已運行交貨分析。
+當配置並準備發送遞送時，執行遞送分析。
 
-要執行此操作，請按一下 **[!UICONTROL Send]**，選擇所需操作，然後按一下 **[!UICONTROL Analyze]**。 有關此的詳細資訊，請參閱 [啟動分析](steps-validating-the-delivery.md#analyzing-the-delivery)。
+要執行此操作，請按一下 **[!UICONTROL Send]**，選擇所需操作，然後按一下 **[!UICONTROL Analyze]**。 [了解更多資訊](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -66,7 +66,7 @@ ht-degree: 5%
 
 ## 計畫交貨發送 {#scheduling-the-delivery-sending}
 
-為了排程傳遞，管理銷售壓力以及避免過度行銷，您可以推延郵件的傳遞。
+您可以通過安排傳遞來推遲消息發送。
 
 1. 按一下 **[!UICONTROL Send]** 按鈕 **[!UICONTROL Postpone delivery]** 的雙曲餘切值。
 

@@ -6,20 +6,22 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+workflow-type: tm+mt
+source-wordcount: '921'
+ht-degree: 90%
 
 ---
 
-# 開始升級{#rn-overview}
+# 發佈更新{#rn-overview}
 
 ![](../../assets/v7-only.svg)
 
+Adobe Campaign Classic定期發佈產品更新，這些更新帶來了新的功能、錯誤修復，並改進了效能、安全性和可用性。 這些更新作為產品生成發佈。 有關每個新生成的詳細資訊，請參見 [發行說明](latest-release.md)。
+
 ## 版本狀態{#rn-statuses}
 
-每個新版本編號都會提供以顏色具體化的狀態。
+每個新構建都帶有一個狀態，該狀態由 [發行說明](latest-release.md)。
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 由 Adobe 建議、經過生產驗證的最新穩定版本。
 
@@ -43,7 +45,7 @@ Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握�
 
 若要確保穩定設定，Adobe 建議您在所有伺服器上安裝執行相同用戶端設定的&#x200B;**相同的版本**。
 
-此外，除發行說明中另有提及外，用戶端主控台必須安裝&#x200B;**相同版本**&#x200B;作為伺服器執行個體。
+此外，除於上文所述 [發行說明](latest-release.md)，客戶端控制台必須開啟 **同一部** 作為伺服器實例。
 
 若要保持最新的實施，請務必閱讀每個新發行版本的[已棄用和已移除功能](../../rn/using/deprecated-features.md)和[相容性對照表](../../rn/using/compatibility-matrix.md)頁面。
 
@@ -51,7 +53,9 @@ Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握�
 
 對於託管客戶 (受控服務或混合功能)，您需要聯絡客戶服務團隊，以升級您的環境。
 
-對於內部部署使用者，您可以進行升級。為此，請[下載最新穩定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 並升級所有環境。深入了解[升級流程](../../production/using/build-upgrade.md)，同時參閱[版本升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+對於內部部署使用者，您可以進行升級。為此，請[下載最新穩定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 並升級所有環境。
+
+瞭解 [升級過程](../../production/using/build-upgrade.md)的 [構建升級常見問題](../../platform/using/faq-build-upgrade.md)。
 
 ## 年度升級 {#yearly-upgrade}
 
@@ -124,7 +128,7 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
     </a>
     </div>
     <ul>
-    <li>升級 Campaign Classic 執行個體的工作量和複雜性會隨著 2 個版本 (v5 --&gt; v7) 之間的距離而增加。</li>
+    <li>升級 Campaign Classic 執行個體的工作量和複雜性會隨著 2 個版本 (v6 --&gt; v7) 之間的距離而增加。</li>
     <li>您的組織等待的時間越長，升級過程就越複雜 (而您暴露的漏洞也越多)。</li>
     <li>定期更新可減少升級的停機時間及迴歸風險。</li>
     </ul>
