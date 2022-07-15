@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 8221afc3b73e1ddce4143394a1d77eab3995d892
 workflow-type: tm+mt
 source-wordcount: '2585'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -677,8 +677,8 @@ ht-degree: 99%
             + [設定 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [設定 Teradata](installation/using/configure-fda-teradata.md)
             + [設定 SAP HANA](installation/using/configure-fda-sap-hana.md)
-            + [配置MicrosoftSQL Server](installation/using/configure-fda-sql.md)
-            + [配置PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [設定 Microsoft SQL 伺服器](installation/using/configure-fda-sql.md)
+            + [設定 PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [遠端存取權限](installation/using/remote-database-access-rights.md)
          + [連結資料庫](installation/using/connecting-to-database.md)
          + [建立資料方案](installation/using/creating-data-schema.md)
@@ -837,7 +837,7 @@ ht-degree: 99%
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
    + 升級與相容性{#technote-migration}
       + [技術說明](technotes/using/technote.md)
-      + [更新到新的Deliverability伺服器](technotes/using/deliverability-server.md)
+      + [更新到全新 Deliverability 伺服器](technotes/using/deliverability-server.md)
       + [Apache 安全性升級](technotes/using/acc-apache-upgrade.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
