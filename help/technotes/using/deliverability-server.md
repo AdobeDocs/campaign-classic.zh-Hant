@@ -5,7 +5,7 @@ description: 瞭解如何實施活動交付性伺服器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
+source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
    * 如果選項已填充，則可以啟動實施。
    * 如果未填充值，則聯繫 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以獲取您的CUID。
 
-      必須在所有市場活動實例(MKT、MID、RT、EXEC)上使用相同的值填充此選項。 作為混合型客戶，請聯繫Adobe，在MID、RT和EXEC實例上設定選項。
+   必須在所有市場活動實例(MKT、MID、RT、EXEC)上填寫此選項，其值必須正確。 作為混合型客戶，請聯繫Adobe，在MID、RT和EXEC實例上設定選項。
 
 ### 步驟1:建立/更新您的Adobe Developer項目 {#adobe-io-project}
 
