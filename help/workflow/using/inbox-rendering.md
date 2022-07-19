@@ -3,9 +3,9 @@ product: campaign
 title: 收件箱呈現技術工作流
 description: 本節介紹隨收件箱呈現包一起安裝的技術工作流
 feature: Workflows, Inbox Rendering
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '75'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
   <tr> 
    <td> <strong>更新收件箱呈現的種子網路</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> 此工作流更新用於收件箱呈現的電子郵件地址，並且僅當HTTPS埠開啟時才可用 <strong>可交付性.neolane.net</strong>。<br /> </td> 
+   <td> 此工作流更新用於收件箱呈現的電子郵件地址，並且僅當HTTPS埠開啟時才可用 <strong>https://deliverability-app.neolane.net/deliverability</strong>。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

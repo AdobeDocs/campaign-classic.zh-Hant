@@ -2,10 +2,8 @@
 product: campaign
 title: 遷移到新的可交付性伺服器
 description: 瞭解如何實施活動交付性伺服器
-hide: true
-hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
+source-git-commit: d1070719d7df50939768780a50e46fcb98d59183
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 2%
