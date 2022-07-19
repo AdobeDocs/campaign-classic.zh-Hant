@@ -1,18 +1,16 @@
 ---
 product: campaign
-title: 遷移到新的可交付性伺服器
-description: 瞭解如何實施活動交付性伺服器
-hide: true
-hidefromtoc: true
+title: 更新到新的可交付性伺服器
+description: 瞭解如何更新到新的市場活動交付性伺服器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 02af725ec7f75e31496b72b533db485c85a416e1
+source-git-commit: de3a2bf1ab6851184c75bc302ff0c42db186e7f0
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 市場活動交付性伺服器 {#acc-deliverability}
+# 更新到新的可交付性伺服器 {#acc-deliverability}
 
 開始 [v7.2.1版](../../rn/using/latest-release.md#release-7-2-2),Adobe Campaign依靠新的可交付性伺服器，該伺服器可提供高可用性並解決安全合規性問題。 Campaign Classic現在將可傳送性規則、廣播和禁止地址從新可傳送性伺服器同步，並同步到新可傳送性伺服器。 舊的可交付性伺服器將於2022年8月31日解壓縮。
 
