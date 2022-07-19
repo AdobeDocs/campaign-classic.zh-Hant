@@ -4,7 +4,7 @@ title: 使用增量查詢更新每季清單
 description: 在此使用情形中，增量查詢用於自動更新收件人清單。
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 使用增量查詢更新每季清單 {#quarterly-list-update}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在以下示例中， [增量查詢](incremental-query.md) 用於自動更新收件人清單。 這些接收人是季節性市場營銷活動的一部分。
 

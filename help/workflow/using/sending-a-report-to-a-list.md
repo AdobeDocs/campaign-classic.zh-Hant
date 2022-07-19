@@ -4,7 +4,7 @@ title: 傳送報吿至清單
 description: 瞭解如何使用工作流將報告發送到清單
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 傳送報吿至清單{#sending-a-report-to-a-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 此使用案例詳細說明了如何生成每月開箱即用 **[!UICONTROL Tracking indicators]** 以PDF格式報告，以及如何將其發送到收件人清單。
 

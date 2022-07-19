@@ -4,7 +4,7 @@ title: 市場營銷活動模板
 description: 市場營銷活動模板
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 建立及設定行銷活動範本 {#campaign-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 所有市場營銷活動都基於一個模板，該模板儲存了主要特徵和功能。 市場活動模板集中在 **[!UICONTROL Resources > Templates > Campaign templates]** 的下界。 預設模板是標準模板。 它允許您使用所有可用模組（文檔、任務、種子地址等）建立新市場活動，但提供的模組取決於您的權限和您的Adobe Campaign平台的配置。
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 假設範本{#hypothesis-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 建立假設模型 {#creating-a-hypothesis-model}
 

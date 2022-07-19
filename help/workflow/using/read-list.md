@@ -4,7 +4,7 @@ title: 讀取清單
 description: 瞭解有關「讀取」清單工作流活動的詳細資訊
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 讀取清單{#read-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在工作流中處理的資料可以來自這樣的清單，即資料已預先準備或結構化（在先前的分段或檔案上載之後）。
 

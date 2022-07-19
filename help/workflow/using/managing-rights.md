@@ -4,7 +4,7 @@ title: 管理工作流權限
 description: 瞭解如何管理工作流權限
 feature: Workflows
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 管理工作流權限{#managing-rights}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 如果它們不是管理員，則Adobe Campaign操作員需要建立、執行或修改工作流的訪問權限。
 

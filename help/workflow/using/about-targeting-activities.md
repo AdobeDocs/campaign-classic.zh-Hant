@@ -4,7 +4,7 @@ title: 關於目標定位活動
 description: 關於目標定位活動
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 針對工作流中的活動{#about-targeting-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 這些活動允許您通過定義集和拆分或使用交叉、聯合或排除操作組合這些集來構建一個或多個目標。
 

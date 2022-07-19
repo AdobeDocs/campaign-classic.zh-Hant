@@ -4,7 +4,7 @@ title: 變更活動影像
 description: 瞭解如何更改活動映像
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 變更活動影像{#change-activity-images}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 可以更改各種工作流的圖中使用的映像。 但是，它們必須遵守某些限制。 以下是實施階段：
 

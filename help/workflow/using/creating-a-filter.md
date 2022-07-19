@@ -4,7 +4,7 @@ title: 建立篩選器
 description: 瞭解如何在執行查詢時建立篩選器
 feature: Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 建立篩選器 {#creating-a-filter}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在Adobe Campaign可用的篩選器是通過使用與查詢相同的操作模式建立的篩選條件來定義的。
 

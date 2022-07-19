@@ -4,7 +4,7 @@ title: 使用自訂日期欄位擴充電子郵件
 description: 瞭解如何使用自定義日期欄位豐富電子郵件內容
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 使用自訂日期欄位擴充電子郵件{#email-enrichment-with-custom-date-fields}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在此示例中，我們希望向將在本月慶祝生日的收件人發送包含自定義資料欄位的電子郵件。 電子郵件將包含一份優惠券，其有效期為一週，在他們生日之前和之後。
 

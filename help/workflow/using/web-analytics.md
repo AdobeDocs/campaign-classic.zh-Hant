@@ -3,7 +3,7 @@ product: campaign
 title: 網站分析
 description: 瞭解有關Web Analytics包的詳細資訊
 feature: Workflows, Analytics Integration
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 網站分析{#web-analytics}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面詳細介紹的工作流隨 **Web Analytics連接器** 預設情況下為模組。 有關本模組的詳細資訊，請參閱本模組 [節](../../platform/using/adobe-analytics-connector.md)。
 

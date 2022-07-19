@@ -4,7 +4,7 @@ title: 應用類型規則
 description: 瞭解如何應用類型學規則
 feature: Typology Rules
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 9%
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # 應用類型規則{#applying-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 對交貨應用類型 {#applying-a-typology-to-a-delivery}
 

@@ -4,7 +4,7 @@ title: 使用本地核准活動
 description: 瞭解如何使用本地審批活動
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 使用本地核准活動{#using-the-local-approval-activity}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Local approval]** 整合到目標工作流中的活動允許您在發送遞送之前設定收件人審批流程。
 

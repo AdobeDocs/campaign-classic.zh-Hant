@@ -3,7 +3,7 @@ product: campaign
 title: 隱私資料保護法規工作流
 description: 瞭解有關隱私資料保護法規工作流的更多資訊
 feature: Workflows, Privacy
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 隱私權資料保護法規{#general-data-protection-regulation-gdpr}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面詳細介紹的工作流隨 **隱私資料保護法規** 預設情況下為模組。 有關本模組的詳細資訊，請參閱本模組 [文章](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)。
 

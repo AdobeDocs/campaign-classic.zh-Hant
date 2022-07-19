@@ -4,7 +4,7 @@ title: 資料載入 (RDBMS)
 description: 瞭解有關資料載入(RDBMS)工作流活動的詳細資訊
 feature: Workflows, Data Management Activity
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 資料載入 (RDBMS){#data-loading-rdbms}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Data loading (RDBMS)]** 活動允許您直接訪問此外部資料庫，並僅收集目標所需的資料。
 

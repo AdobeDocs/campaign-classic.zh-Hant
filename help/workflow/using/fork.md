@@ -4,7 +4,7 @@ title: 分支
 description: 瞭解有關Fork工作流活動的詳細資訊
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 分支{#fork}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 您可以使用 **[!UICONTROL Fork]** 活動：建立多個出站過渡，並在同一工作流中獨立運行多個活動。
 

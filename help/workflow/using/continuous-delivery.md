@@ -4,7 +4,7 @@ title: 持續傳遞
 description: 持續傳遞
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 持續傳遞{#continuous-delivery}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **連續交付** 「類型」(type)操作允許您將新收件人添加到現有交貨中。 此交貨類型避免您每次都必須建立新交貨：此模式通常更有效，特別是對於在需要時發送的低容量警報或通知。
 

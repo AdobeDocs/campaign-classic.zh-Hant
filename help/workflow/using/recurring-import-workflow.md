@@ -4,7 +4,7 @@ title: 設定定期導入
 description: 瞭解如何為循環導入配置工作流模板。
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 設定週期性匯入工作流程 {#setting-up-a-recurring-import}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 如果您需要定期導入具有相同結構的檔案，則使用工作流模板是最佳做法。
 

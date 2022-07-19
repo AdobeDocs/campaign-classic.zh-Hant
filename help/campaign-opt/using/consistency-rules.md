@@ -4,7 +4,7 @@ title: 一致性規則
 description: 一致性規則
 feature: Typology Rules
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 一致性規則{#consistency-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 關於一致性規則 {#about-consistency-rules}
 

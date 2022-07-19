@@ -4,7 +4,7 @@ title: 營銷活動文檔和交付大綱
 description: 瞭解有關市場營銷活動文檔和交付大綱的詳細資訊
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 管理相關文件 {#managing-associated-documents}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 您可以將各種單據與市場活動關聯：報告、照片、網頁、圖表等。 這些文檔可以採用任何格式(MicrosoftWord、PowerPoint、PNG、JPG、AcrobatPDF等)。
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您使用「市場活動市場營銷資源管理」模組，您還可以管理市場營銷資源庫，這些資源庫可供多個用戶協作工作。 [了解更多](../../mrm/using/managing-marketing-resources.md)。
+>如果您使用「市場活動市場營銷資源管理」模組，您還可以管理市場營銷資源庫，這些資源庫可供多個用戶協作工作。 [了解更多資訊](../../mrm/using/managing-marketing-resources.md)。
 
 ## 添加文檔 {#adding-documents}
 

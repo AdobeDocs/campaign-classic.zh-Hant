@@ -4,7 +4,7 @@ title: 工作流程最佳實務
 description: 瞭解市場活動工作流最佳實踐
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 工作流程最佳實務{#workflow-best-practices}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 執行和效能 {#execution-and-performance}
 

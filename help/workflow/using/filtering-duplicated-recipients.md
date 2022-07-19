@@ -4,7 +4,7 @@ title: 篩選重複的收件者
 description: 瞭解如何篩選重複的收件人
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 篩選重複的收件者 {#filtering-duplicated-recipients}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在本示例中，我們要篩選在傳遞中出現兩次或多次的收件人，以便恢復重複的配置檔案。
 

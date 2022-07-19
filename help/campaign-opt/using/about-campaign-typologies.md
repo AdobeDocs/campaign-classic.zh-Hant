@@ -4,7 +4,7 @@ title: 關於行銷活動態樣
 description: 關於行銷活動態樣
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 19%
@@ -13,7 +13,7 @@ ht-degree: 19%
 
 # 關於行銷活動態樣{#about-campaign-typologies}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 市場活動優化是Adobe Campaign模組，它允許您控制、過濾和監控交貨的發送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這樣可確保傳送的訊息符合客戶和公司通訊政策的需求及期望。
 

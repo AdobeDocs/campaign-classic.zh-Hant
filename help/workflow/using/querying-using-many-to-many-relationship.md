@@ -4,7 +4,7 @@ title: 使用多對多關係進行查詢
 description: 瞭解如何使用多對多關係執行查詢
 feature: Query Editor
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用多對多關係進行查詢 {#querying-using-a-many-to-many-relationship}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在本示例中，我們希望恢復過去7天內未聯繫的收件人。 此查詢涉及所有交貨。
 

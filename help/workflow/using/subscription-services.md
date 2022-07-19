@@ -4,7 +4,7 @@ title: 訂閱服務
 description: 瞭解有關訂閱服務工作流活動的詳細資訊
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 訂閱服務{#subscription-services}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **訂閱服務**-type活動允許您為轉換中指定的人口建立或刪除對資訊服務的訂閱。
 

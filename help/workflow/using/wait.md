@@ -4,7 +4,7 @@ title: 等待
 description: 瞭解有關等待工作流活動的詳細資訊
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 等待{#wait}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **等待** 活動在幾秒到幾個月之間的時間延遲後激活其轉換。 等待任務不會阻止其他任務的執行；此任務處於掛起狀態時，工作流可以並行執行任務。
 

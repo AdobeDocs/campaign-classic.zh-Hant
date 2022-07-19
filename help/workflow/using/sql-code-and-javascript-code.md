@@ -4,7 +4,7 @@ title: SQL 程式碼和 JavaScript 程式碼
 description: 瞭解有關SQL和JavaScript代碼工作流活動的詳細資訊
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # SQL 程式碼和 JavaScript 程式碼{#sql-code-and-javascript-code}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## SQL代碼 {#sql-code}
 

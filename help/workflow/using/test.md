@@ -4,7 +4,7 @@ title: 測試
 description: 瞭解有關Test工作流活動的詳細資訊
 feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 測試{#test}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Test** type activity激活滿足與其關聯的條件的第一個過渡。 如果未滿足條件，並且 **[!UICONTROL Use the default fork]** 選項時，將激活預設過渡。
 

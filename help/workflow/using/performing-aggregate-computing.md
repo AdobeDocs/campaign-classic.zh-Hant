@@ -4,7 +4,7 @@ title: 執行彙總計算
 description: 瞭解如何在查詢中執行聚合計算
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 執行彙總計算 {#performing-aggregate-computing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在本例中，我們想根據性別來計算在倫敦生活的受助人數。
 

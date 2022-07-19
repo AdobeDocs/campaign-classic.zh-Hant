@@ -4,7 +4,7 @@ title: 供應商、庫存和預算
 description: 供應商、庫存和預算
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 供應商、庫存和預算{#providers-stocks-and-budgets}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign允許您定義服務提供商，這些服務提供商將參與市場活動中進行的工作。 有關服務提供者和相關費用結構的資訊由Adobe Campaign管理員從主要視角定義。 服務提供商從交貨中被引用，其成本結構允許計算與此交貨相關的成本以及管理相關庫存。
 

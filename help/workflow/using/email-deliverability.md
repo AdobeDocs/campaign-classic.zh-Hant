@@ -3,7 +3,7 @@ product: campaign
 title: 電子郵件傳送能力
 description: 瞭解有關電子郵件可傳遞性包的詳細資訊
 feature: Workflows, Deliverability
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 可交付性監視（電子郵件可交付性）{#email-deliverability}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面詳細介紹的工作流預設安裝在所有實例上，用於初始化退回郵件資格規則清單、域清單和MX清單。 一旦 **可交付性監視（電子郵件可交付性）** 已安裝軟體包，此工作流每晚運行。 有關「交付性」監控的詳細資訊，請參閱 [節](../../delivery/using/about-deliverability.md)。
 

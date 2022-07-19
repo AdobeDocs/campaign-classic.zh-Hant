@@ -4,7 +4,7 @@ title: 目標定位資料
 description: 瞭解有關工作流中目標資料的詳細資訊
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 3%
@@ -13,11 +13,11 @@ ht-degree: 3%
 
 # 目標資料{#targeting-data}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 建立查詢 {#creating-queries}
 
-### 選擇資料 {#selecting-data}
+### 選取資料 {#selecting-data}
 
 A **[!UICONTROL Query]** 「活動」(activity)允許您選擇基本資料以構建目標人口。 有關此內容的詳細資訊，請參閱 [建立查詢](query.md#creating-a-query)。
 

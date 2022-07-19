@@ -4,7 +4,7 @@ title: 監督工作流程
 description: 瞭解如何監督市場活動工作流
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 用例：監控工作流{#supervising-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 此使用案例詳細說明了如何建立工作流，該工作流允許您監視「已暫停」、「已停止」或「有錯誤」的一組工作流的狀態。
 

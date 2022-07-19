@@ -4,7 +4,7 @@ title: 行銷活動傳遞
 description: 瞭解有關市場營銷活動交付的更多資訊
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 行銷活動傳遞 {#marketing-campaign-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 可通過市場活動控制面板、市場活動工作流或直接通過交貨概覽建立交貨。
 

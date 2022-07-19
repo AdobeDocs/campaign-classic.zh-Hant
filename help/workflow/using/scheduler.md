@@ -4,7 +4,7 @@ title: 排程器
 description: 瞭解有關計畫程式工作流活動的詳細資訊
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 排程器 {#scheduler}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **調度程式** 是在其時間表指定的時間激活其轉換的持久任務。
 

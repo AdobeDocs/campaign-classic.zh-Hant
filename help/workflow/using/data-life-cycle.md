@@ -4,7 +4,7 @@ title: 資料生命週期
 description: 瞭解有關工作流中資料生命週期的詳細資訊
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 資料生命週期 {#data-life-cycle}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 工作表 {#work-table}
 

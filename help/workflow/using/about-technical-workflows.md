@@ -4,7 +4,7 @@ title: 技術工作流程
 description: 瞭解有關Campaign Classic包可用的技術工作流的更多資訊。
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 技術工作流程{#about-technical-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 關於技術工作流程 {#overview}
 

@@ -4,7 +4,7 @@ title: 控制規則
 description: 控制規則
 feature: Typology Rules
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 控制規則{#control-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 分析和仲裁控制規則 {#analysis-and-arbitration-control-rules}
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 建立假設{#creating-hypotheses}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 有多種可能性可以建立/將假設與活動提議或交付聯繫起來：
 

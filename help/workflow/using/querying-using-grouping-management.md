@@ -4,7 +4,7 @@ title: 使用分組管理進行查詢
 description: 瞭解如何使用分組管理執行查詢
 feature: Query Editor
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 使用分組管理進行查詢 {#querying-using-grouping-management}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在本示例中，我們要運行查詢，以查找在先前交貨期間目標超過30次的所有電子郵件域。
 

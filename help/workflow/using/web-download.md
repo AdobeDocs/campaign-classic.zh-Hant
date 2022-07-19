@@ -4,7 +4,7 @@ title: 網頁下載
 description: 瞭解有關Web下載工作流活動的詳細資訊
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 網頁下載{#web-download}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **Web下載** 活動啟動在顯式URL、外部帳戶或Adobe Campaign實例上下載檔案。 使用HTTP協定。 這可以是GET或POST下載。
 

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 添加枚舉類型計算欄位 {#adding-an-enumeration-type-calculated-field}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在此，我們要建立一個 **[!UICONTROL Enumerations]** 類型計算欄位。 此欄位將在資料預覽窗口中生成附加列。 此列將為每個收件人（0、1和2）指定作為結果返回的數字值。 新欄中的每個值將分配一個性別：&quot;Male&quot;表示&quot;1&quot;,&quot;Male&quot;表示&quot;2&quot;,&quot;Not isded&quot;表示值等於&quot;0&quot;。
 

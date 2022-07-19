@@ -4,7 +4,7 @@ title: 子工作流程
 description: 瞭解有關子工作流活動的詳細資訊
 feature: Workflows
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 子工作流程{#sub-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Sub-workflow]** 活動，您可以觸發另一個工作流的執行並恢復結果。 本練習允許您在使用簡化的介面時使用複雜的工作流。
 

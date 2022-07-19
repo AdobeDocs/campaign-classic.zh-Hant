@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 假設追蹤{#hypothesis-tracking}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 假設計算的結果可在Adobe Campaign平台的各個級別獲得：通過假設和目標群體反應計算的指標通過實際假設以及通過運動和交付提供的假設報告可見。
 

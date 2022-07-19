@@ -4,7 +4,7 @@ title: 建立摘要清單
 description: 建立摘要清單
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 建立摘要清單{#creating-a-summary-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 此使用案例詳細說明了工作流的建立過程，該工作流在收集檔案並完成若干項整理後，允許您建立摘要清單。 該示例基於在商店中進行採購的聯繫人清單。
 
@@ -61,7 +61,7 @@ Phone;500;London 5
 
    有關本練習的詳細資訊，請參閱 [從檔案載入資料](../../platform/using/import-export-workflows.md#loading-data-from-a-file)。
 
-1. 配置 **檔案收集器** 活動，從選定目錄收集文本(*.txt)類型檔案。
+1. 配置 **檔案收集器** 活動收集文本(&#42;.txt)從選定目錄鍵入檔案。
 
    ![](assets/uc2_enrich_collecteur.png)
 

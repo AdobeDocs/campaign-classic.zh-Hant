@@ -4,7 +4,7 @@ title: 營銷活動目標受眾
 description: 瞭解如何定義市場營銷活動的受眾
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 選取行銷活動的對象 {#marketing-campaign-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在市場營銷市場活動中，對於每個交貨，您可以定義：
 

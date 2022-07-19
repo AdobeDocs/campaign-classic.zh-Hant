@@ -4,7 +4,7 @@ title: 儲存格
 description: 儲存格
 feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 儲存格{#cells}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Cells]** activity以資料列的形式提供了各種子集的視圖。 它便於子集操作，並且還設計為鼓勵個性化可能性。
 

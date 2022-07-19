@@ -4,16 +4,16 @@ title: 跨頻道傳遞
 description: 瞭解有關跨渠道交付的更多資訊
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '287'
+ht-degree: 8%
 
 ---
 
 # 跨頻道傳遞{#cross-channel-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在中提供跨渠道交付 **[!UICONTROL Deliveries]** 活動工作流活動的頁籤。
 

@@ -4,7 +4,7 @@ title: 開始和結束
 description: 瞭解有關「開始」和「結束」工作流活動的詳細資訊
 feature: Workflows
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 開始和結束{#start-and-end}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Start]** 和 **[!UICONTROL End]** 活動允許您以圖形方式標籤工作流的開始和結束。 這些活動對職能沒有影響，因此是可選的。
 

@@ -4,7 +4,7 @@ title: 傳入簡訊
 description: 瞭解有關入站SMS工作流活動的詳細資訊
 feature: Workflows, Channels Activity
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 傳入簡訊{#inbound-sms}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **入站SMS** 活動，您可以從外部帳戶下載和處理文本消息。
 

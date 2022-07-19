@@ -4,16 +4,16 @@ title: 高級參數
 description: 高級參數
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 高級參數{#advanced-parameters}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 活動的屬性螢幕具有 **[!UICONTROL Advanced]** 頁籤，用於在出錯時定義行為，即活動的執行期；並輸入初始化指令碼。 此頁籤有兩個版本：
 

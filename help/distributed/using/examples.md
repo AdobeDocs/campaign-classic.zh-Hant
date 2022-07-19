@@ -4,7 +4,7 @@ title: 分佈式營銷示例
 description: 分佈式營銷示例
 feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分佈式營銷示例{#distributed-marketing-samples}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 建立本地市場活動（按窗體） {#creating-a-local-campaign--by-form-}
 

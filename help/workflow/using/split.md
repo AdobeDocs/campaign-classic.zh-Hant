@@ -4,7 +4,7 @@ title: 分割
 description: 瞭解有關拆分工作流活動的詳細資訊
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分割{#split}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **拆分**-type活動允許您將目標拆分為多個子集。 該目標是利用所有接收到的結果構建的：因此，必須完成所有以前的活動才能執行此活動。
 

@@ -4,7 +4,7 @@ title: 市場活動工作流熱度圖
 description: 使用工作流熱度圖監視工作流
 feature: Workflows, Heatmap
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 工作流程熱度圖 {#workflow-heatmap}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 市場活動工作流熱圖包含當前正在運行的所有工作流的顏色編碼圖形表示。 它僅可用於 **市場活動管理員**。
 

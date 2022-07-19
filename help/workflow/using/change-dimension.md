@@ -4,7 +4,7 @@ title: 變更維度
 description: 變更維度
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 變更維度{#change-dimension}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 更改維活動允許您在目標構建週期中更改目標維。 軸偏移取決於資料模板和輸入維。 這允許您從「contracts」維切換到「clients」維。
 

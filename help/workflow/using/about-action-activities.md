@@ -4,7 +4,7 @@ title: 關於動作活動
 description: 關於動作活動
 feature: Workflows, Data Management
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 工作流中的操作活動{#about-action-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 * **交貨**:用於配置傳遞操作。 請參閱 [交貨](delivery.md) 的子菜單。
 * **交貨控制**:讓您開始、暫停或停止交貨。 請參閱 [交貨控制](delivery-control.md) 的子菜單。

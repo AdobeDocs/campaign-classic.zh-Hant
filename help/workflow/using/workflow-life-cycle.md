@@ -4,7 +4,7 @@ title: 工作流程生命週期
 description: 瞭解有關工作流生命週期的詳細資訊
 feature: Workflows
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 工作流程生命週期 {#workflow-life-cycle}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 工作流週期有三個主要步驟。
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
    這是初始設計階段：建立新工作流時，其狀態為「正在編輯」。 伺服器尚未處理工作流，因此可以在不帶風險的情況下進行修改。
 
-* **已啟動**
+* **已開始**
 
    初始設計階段完成後，可啟動工作流。 在此階段，由伺服器處理實例，並執行各個任務。 仍然可以使用某些預防措施來修改工作流。
 

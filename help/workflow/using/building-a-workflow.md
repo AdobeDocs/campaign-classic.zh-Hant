@@ -4,7 +4,7 @@ title: 建置工作流程
 description: 瞭解如何構建工作流
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 建置工作流程 {#building-a-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 本節詳細介紹了在市場活動中構建工作流的主要原則和最佳做法。
 

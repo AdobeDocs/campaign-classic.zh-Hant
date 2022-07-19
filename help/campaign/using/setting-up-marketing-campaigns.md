@@ -4,7 +4,7 @@ title: 建立市場營銷活動
 description: 瞭解如何建立和執行市場營銷活動
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: f95b75adf8f46d8301d800451ea0e62629690a8f
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 開始使用行銷活動{#setting-up-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
@@ -21,17 +21,17 @@ ht-degree: 6%
 
 要建立市場營銷市場活動，請執行以下操作：
 
-1. 建立市場活動：發現活動及其特點：標籤、類型、起始日期和終止日期、預算、關聯資源、經理和參與者。 [了解更多](#creating-a-campaign)。
+1. 建立市場活動：發現活動及其特點：標籤、類型、起始日期和終止日期、預算、關聯資源、經理和參與者。 [了解更多資訊](#creating-a-campaign)。
 
-1. 定義目標人口：建立具有目標查詢的工作流。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
+1. 定義目標人口：建立具有目標查詢的工作流。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 建立交貨：選擇頻道並定義要發送的內容。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
+1. 建立交貨：選擇頻道並定義要發送的內容。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
-1. 審核交貨。 [了解更多](../../campaign/using/marketing-campaign-approval.md)。
+1. 審核交貨。 [了解更多資訊](../../campaign/using/marketing-campaign-approval.md)。
 
-1. 監視交貨。 [了解更多](../../campaign/using/marketing-campaign-monitoring.md)。
+1. 監視交貨。 [了解更多資訊](../../campaign/using/marketing-campaign-monitoring.md)。
 
-1. 計畫市場活動和關聯成本。 [了解更多](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+1. 計畫市場活動和關聯成本。 [了解更多資訊](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
 完成這些步驟後，您可以開始交貨(請參閱 [此部分](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，檢查與交貨相關的資料、流程和資訊，並在必要時管理相關文檔(請參閱 [此部分](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您還可以跟蹤市場活動和交貨處理階段的執行情況(請參閱： [此部分](../../campaign/using/marketing-campaign-monitoring.md))。
 
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 1. 按一下 **瀏覽器** 表徵圖
 1. 按一下右鍵要在其中建立計畫的資料夾。
-1. 選擇 **添加新資料夾>市場活動管理>計畫**。
+1. 選擇 **添加新資料夾>Campaign Management>計畫**。
 
    ![](assets/create_plan_1.png)
 

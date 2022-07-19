@@ -3,7 +3,7 @@ product: campaign
 title: 關於回應管理器
 description: 關於回應管理器
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 13%
@@ -12,7 +12,7 @@ ht-degree: 13%
 
 # 開始使用市場活動響應管理器{#about-response-manager}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign 提供 回應管理附加功能，讓您可以衡量行銷活動的成功和盈利能力，或為跨通訊頻道 (例如：電子郵件、行動裝置、直接郵件等) 提供建議。
 

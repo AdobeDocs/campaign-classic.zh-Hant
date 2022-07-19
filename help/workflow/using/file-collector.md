@@ -4,7 +4,7 @@ title: 檔案收集器
 description: 瞭解有關「檔案」收集器工作流活動的詳細資訊
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 檔案收集器{#file-collector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **檔案收集器** 監視一個或多個檔案在目錄中的到達，並為收到的每個檔案激活其轉換。 對於每個事件， **[!UICONTROL filename]** 變數包含收到的檔案的全名。 收集的檔案將移到另一個目錄以進行存檔，並確保只計數一次。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Filter]**
 
-      只考慮與此篩選器匹配的檔案。 目錄中的其他檔案將被忽略。 如果篩選器為空，則目錄中的所有檔案都會被考慮在內。 篩選示例： ***.zip**。 **導入 — *.txt**。
+      只考慮與此篩選器匹配的檔案。 目錄中的其他檔案將被忽略。 如果篩選器為空，則目錄中的所有檔案都會被考慮在內。 篩選示例： **&#42;.zip**。 **導入 — &#42;.txt**。
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 

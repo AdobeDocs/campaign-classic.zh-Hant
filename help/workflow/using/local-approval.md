@@ -4,7 +4,7 @@ title: 本地核准
 description: 本地核准
 feature: Workflows
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 本地核准{#local-approval}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 整合到目標工作流時， **[!UICONTROL Local approval]** 「活動」(Activity)，用於在發送交貨之前設定收件人審批流程。
 

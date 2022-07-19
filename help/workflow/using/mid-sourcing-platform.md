@@ -3,7 +3,7 @@ product: campaign
 title: 中間來源平台
 description: 中間來源平台
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 15%
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # 中間來源平台{#mid-sourcing-platform}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面詳細介紹的工作流隨 **中間採購平台** 預設情況下為模組。 有關本模組的詳細資訊，請參閱本模組 [節](../../installation/using/mid-sourcing-deployment.md)。
 

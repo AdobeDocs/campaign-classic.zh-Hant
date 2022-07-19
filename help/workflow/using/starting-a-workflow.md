@@ -4,7 +4,7 @@ title: 開始工作流程
 description: 瞭解如何啟動工作流和發現工作流操作工具欄以及按一下右鍵菜單
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 開始工作流程 {#starting-a-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 工作流始終手動啟動。 但是，啟動時，它可以保持非活動狀態，這取決於通過調度程式指定的資訊(請參見 [調度程式](scheduler.md))或活動計畫。
 

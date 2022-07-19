@@ -3,7 +3,7 @@ title: CRM 連結器
 description: 瞭解有關CRM連接器和配置資料同步的詳細資訊
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # CRM 連結器{#crm-connector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **CRM連接器** 活動，用於配置Adobe Campaign和CRM系統之間的資料同步。
 

@@ -4,7 +4,7 @@ title: 訪問外部資料庫(FDA)
 description: 訪問外部資料庫(FDA)
 feature: Workflows, Data Management, Federated Data Access
 exl-id: 9500a7ba-263d-425b-8cc3-b111c6b9108f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 38%
@@ -13,7 +13,7 @@ ht-degree: 38%
 
 # 訪問外部資料庫(FDA){#accessing-an-external-database-fda}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign 提供同盟資料存取 (FDA) 選項，以處理儲存在一或多個外部資料庫中的資訊：您不需要變更 Adobe Campaign 資料的結構就可以存取外部資料。
 

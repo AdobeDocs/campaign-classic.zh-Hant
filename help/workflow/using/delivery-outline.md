@@ -4,7 +4,7 @@ title: 傳遞大綱
 description: 瞭解有關「交貨大綱」工作流活動的詳細資訊
 feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 傳遞大綱{#delivery-outline}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **交付大綱** 允許您在市場活動工作流中使用大綱。 大綱必須事先在活動中建立。
 

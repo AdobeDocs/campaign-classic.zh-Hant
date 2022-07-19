@@ -4,7 +4,7 @@ title: 任務
 description: 瞭解有關任務工作流活動的詳細資訊
 feature: Workflows
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 任務{#task}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 >[!AVAILABILITY]
 >

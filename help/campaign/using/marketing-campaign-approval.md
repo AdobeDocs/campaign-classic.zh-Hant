@@ -4,7 +4,7 @@ title: 設定及管理核准流程
 description: 瞭解如何管理營銷活動的批准
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '2438'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 設定及管理核准流程 {#approving-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 交付的每個步驟都需經過批准，以確保充分監控和控制活動的各種過程：目標、內容、預算、提取和發送證據。
 

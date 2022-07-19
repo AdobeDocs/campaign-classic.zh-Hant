@@ -4,7 +4,7 @@ title: 查詢
 description: 瞭解有關查詢工作流活動的詳細資訊
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 查詢{#query}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 建立查詢 {#creating-a-query}
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
-## 添加資料 {#adding-data}
+## 新增資料 {#adding-data}
 
 附加列使您能夠收集有關目標人口的附加資訊，如合同編號、新聞稿或來源的訂閱。 此資料可以儲存在Adobe Campaign資料庫或外部資料庫中。
 
@@ -224,7 +224,7 @@ SQL中的篩選維等效於內部連接：
 
    * 作業系統,
    * 版本,
-   * 資料，
+   * 資料,
    * 應用程式，
    * 卷。
 

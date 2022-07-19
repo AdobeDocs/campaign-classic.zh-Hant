@@ -4,7 +4,7 @@ title: SQL 資料管理
 description: 瞭解有關SQL資料管理工作流活動的詳細資訊
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # SQL 資料管理{#sql-data-management}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **SQL資料管理** 活動，您可以編寫自己的SQL指令碼來建立和填充工作表。
 

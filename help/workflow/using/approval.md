@@ -4,7 +4,7 @@ title: 核准
 description: 核准
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 核准{#approval}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 安 **批准** 任務需要操作員的參與。 操作員被分配一個任務，並可以通過電子郵件、使用電子郵件中連結的網頁或通過控制台進行響應。
 

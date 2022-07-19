@@ -4,7 +4,7 @@ title: 交集
 description: 交集
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 389e5a87ea195024707c3c58e63899ad7949f025
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 >additional-url="https://video.tv.adobe.com/v/329373" text="觀看示範影片"
 
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 安 **交集**-type活動從接收到的目標的交集建立目標。
 

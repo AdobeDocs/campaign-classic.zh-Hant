@@ -4,7 +4,7 @@ title: 擴充
 description: 瞭解有關「富集」工作流活動的詳細資訊
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # 擴充{#enrichment}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
-The **[!UICONTROL Enrichment]** activity lets you add information to a profile list and links to an existing table (create a new join). 還可以定義資料庫中具有配置檔案的協調條件。
+的 **[!UICONTROL Enrichment]** 「活動」(Activity)允許您將資訊添加到配置檔案清單和指向現有表的連結（建立新聯接）。 還可以定義資料庫中具有配置檔案的協調條件。
 
 ![](assets/enrichment_design.png)
 
@@ -38,13 +38,13 @@ The **[!UICONTROL Enrichment]** activity lets you add information to a profile l
 
 有四種類型的連結：
 
-* **[!UICONTROL Define a collection]**: lets you define a link with a 1-N cardinality between the tables.
-* **[!UICONTROL Define a link whose target is still available]**: lets you define a link with a 1-1 cardinality between tables. 連接條件必須由目標表中的單個記錄定義。
+* **[!UICONTROL Define a collection]**:用於定義表之間具有1-N基數的連結。
+* **[!UICONTROL Define a link whose target is still available]**:用於定義表之間具有1-1基數的連結。 連接條件必須由目標表中的單個記錄定義。
 * **[!UICONTROL Define a link whose target does not necessarily exist in the base]**:用於定義表之間具有0-1基數的連結。 連接條件必須由0或1（最大值）定義 在目標表中記錄。
 
    在 **[!UICONTROL Simple Join]** 可通過 **[!UICONTROL Edit additional data]** 連結 **[!UICONTROL Enrichment]** 的子菜單。
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**:此類型的連結定義對唯一記錄的協調。 Adobe Campaign creates a link to a target table by adding a foreign key in the target table for storing a reference to the unique record.
+* **[!UICONTROL Define a link by searching for a reference among several options]**:此類型的連結定義對唯一記錄的協調。 Adobe Campaign通過在目標表中添加外鍵來儲存對唯一記錄的引用來建立指向目標表的連結。
 
    在 **[!UICONTROL Reconciliation and deduplication]** 可通過 **[!UICONTROL Edit additional data]** 連結 **[!UICONTROL Enrichment]** 的子菜單。
 
@@ -88,7 +88,7 @@ The **[!UICONTROL Enrichment]** activity lets you add information to a profile l
 
 還豐富了匹配架構。
 
-## Managing additional data {#managing-additional-data}
+## 管理其他資料 {#managing-additional-data}
 
 取消選擇 **[!UICONTROL Keep all additional data from the main set]** 的子菜單。 在這種情況下，只有在富集活動中選擇的附加列才會添加到傳出工作表中。 將不保存添加到上游活動的附加資訊。
 
@@ -100,9 +100,9 @@ The **[!UICONTROL Enrichment]** activity lets you add information to a profile l
 
 ## 建立連結 {#creating-a-link}
 
-You can use the enrichment activity to create a link between the working data and the Adobe Campaign database: this will be a local link to the workflow between the inbound data.
+您可以使用濃縮活動在工作資料和Adobe Campaign資料庫之間建立連結：這將是入站資料之間工作流的本地連結。
 
-For example, if you load data of a file which contains the account number, country and email of recipients, you will have to create a link towards the country table in order to update this information in their profiles.
+例如，如果載入包含收件人的帳號、國家/地區和電子郵件的檔案資料，則必須建立指向國家/地區表的連結，以便在其配置檔案中更新此資訊。
 
 若要這麼做，請套用下列步驟：
 
@@ -123,7 +123,7 @@ For example, if you load data of a file which contains the account number, count
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Select the **[!UICONTROL Link definition]** option and click the **[!UICONTROL Next]** button. 指定要建立的連結的類型。 In this example, we want to reconcile the file recipient&#39;s country with a country in the list of available countries in the dedicated table of the database. 選取 **[!UICONTROL Define a link by searching for a reference among several options]** 選項。Select the country table in the **[!UICONTROL Target schema]** field.
+1. 選擇 **[!UICONTROL Link definition]** ，然後按一下 **[!UICONTROL Next]** 按鈕 指定要建立的連結的類型。 在本示例中，我們希望將檔案收件人的國家與資料庫專用表中可用國家清單中的國家進行協調。 選取 **[!UICONTROL Define a link by searching for a reference among several options]** 選項。在中選擇國家/地區表 **[!UICONTROL Target schema]** 的子菜單。
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -139,7 +139,7 @@ For example, if you load data of a file which contains the account number, count
 
 該富集活動可用於配置資料協調，包括在資料載入到資料庫中之後。 在這個例子中， **[!UICONTROL Reconciliation]** 頁籤，用於定義Adobe Campaign資料庫中的資料與工作表中的資料之間的連結。
 
-Select the **[!UICONTROL Identify the targeting document based on work data]** option, specify the schema you want to create a link to and define the joining conditions: to do this, select the fields to be reconciled in the work data (**[!UICONTROL Source expression]**) and in the targeting dimension (**[!UICONTROL Destination expression]**).
+選擇 **[!UICONTROL Identify the targeting document based on work data]** 選項，指定要建立連結的方案並定義連接條件：為此，請選擇要在工作資料中對帳的欄位(**[!UICONTROL Source expression]**)和目標維(**[!UICONTROL Destination expression]**)。
 
 可以使用一個或多個協調條件。
 
@@ -149,7 +149,7 @@ Select the **[!UICONTROL Identify the targeting document based on work data]** o
 
 ## 插入優惠建議 {#inserting-an-offer-proposition}
 
-The enrichment activity lets you add offers or links to offers for delivery recipients.
+通過富集活動，您可以為遞送收件人添加優惠或指向優惠的連結。
 
 有關濃縮活動的詳細資訊，請參閱此 [節](enrichment.md)。
 
@@ -165,7 +165,7 @@ The enrichment activity lets you add offers or links to offers for delivery reci
 
    ![](assets/int_enrichment_offer2.png)
 
-1. Specify an identifier as well as a label for the proposition that will be added.
+1. 為要添加的命題指定標識符和標籤。
 1. 指定聘用選擇。 這有兩種可能的選擇：
 
    * **[!UICONTROL Search for the best offer in a category]**:選中此選項並指定聘用引擎呼叫參數（聘用空間、類別或主題、聯繫日期、要保留的聘用數）。 引擎將根據這些參數自動計算要添加的報價。 我們建議完成 **[!UICONTROL Category]** 或 **[!UICONTROL Theme]** 欄位，而不是同時執行。
@@ -178,23 +178,23 @@ The enrichment activity lets you add offers or links to offers for delivery reci
 
 1. 然後配置與所選渠道對應的傳遞活動。 請參閱 [跨渠道交付](cross-channel-deliveries.md)。
 
-   The number of propositions available for the preview depends on the configuration carried out in the enrichment activity rather than any possible configuration carried out directly in the delivery.
+   用於預覽的建議數取決於在濃縮活動中執行的配置，而不是直接在遞送中執行的任何可能的配置。
 
-To specify offer propositions, you can also choose to reference a link to an offer. 有關詳細資訊，請參閱以下部分 [引用與優惠的連結](#referencing-a-link-to-an-offer)。
+要指定優惠建議，您還可以選擇引用指向優惠的連結。 有關詳細資訊，請參閱以下部分 [引用與優惠的連結](#referencing-a-link-to-an-offer)。
 
-## Referencing a link to an offer {#referencing-a-link-to-an-offer}
+## 引用與優惠的連結 {#referencing-a-link-to-an-offer}
 
 您還可以引用富集活動中提供的連結。
 
 操作步驟：
 
-1. Select **[!UICONTROL Add data]** in the activity&#39;s **[!UICONTROL Enrichment]** tab.
+1. 選擇 **[!UICONTROL Add data]** 的 **[!UICONTROL Enrichment]** 頁籤。
 1. 在選擇要添加的資料類型的窗口中，選擇 **[!UICONTROL A link]**。
 1. 選擇要建立的連結類型及其目標。 在這種情況下，目標是提供方案。
 
    ![](assets/int_enrichment_link1.png)
 
-1. 指定富集活動（此處為收件人表）中入站表資料與聘用表之間的聯接。 For example, you can link an offer code to a recipient.
+1. 指定富集活動（此處為收件人表）中入站表資料與聘用表之間的聯接。 例如，您可以將聘用代碼連結到收件人。
 
    ![](assets/int_enrichment_link2.png)
 

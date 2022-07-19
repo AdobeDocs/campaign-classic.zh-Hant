@@ -4,7 +4,7 @@ title: 監控市場營銷活動
 description: 監控市場營銷活動
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 監控市場營銷活動 {#monitoring-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 追蹤行銷活動 {#tracking-a-campaign}
 
@@ -53,4 +53,4 @@ ht-degree: 2%
 
 您可以通過按一下 **[!UICONTROL Deliveries]**，可通過Adobe Campaign首頁訪問。 請參閱 [交貨跟蹤](#delivery-tracking)。
 
-在 **[!UICONTROL Edit > Audit]** 頁籤 您可以在市場活動中查看交貨清單。 [了解更多](#tracking-a-campaign)。
+在 **[!UICONTROL Edit > Audit]** 頁籤 您可以在市場活動中查看交貨清單。 [了解更多資訊](#tracking-a-campaign)。

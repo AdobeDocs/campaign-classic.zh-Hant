@@ -4,7 +4,7 @@ title: AND-join
 description: 與連接
 feature: Workflows
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 與連接{#and-join}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 僅當激活所有入站轉換（即當完成所有先前活動時）時，連接才會觸發其出站轉換。 這允許您確保在繼續執行工作流之前已完成某些活動。
 

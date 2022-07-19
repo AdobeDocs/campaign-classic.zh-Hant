@@ -4,7 +4,7 @@ title: 壓力規則
 description: 壓力規則
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 壓力規則{#pressure-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 關於市場營銷疲勞 {#about-marketing-fatigue}
 
@@ -387,7 +387,7 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td> 交貨1<br /> </td> 
-   <td> 已禁用<br /> </td> 
+   <td> 已停用<br /> </td> 
    <td> 5<br /> </td> 
    <td> 下午<br /> </td> 
    <td> 上午8點（下一天）<br /> </td> 
@@ -398,13 +398,13 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td> 交貨2<br /> </td> 
-   <td> 已禁用<br /> </td> 
+   <td> 已停用<br /> </td> 
    <td> 10<br /> </td> 
    <td> 下午4:00<br /> </td> 
    <td> 上午9點（第二天）<br /> </td> 
    <td> 2:00<br /> </td> 
    <td> 每晚<br /> </td> 
-   <td> 已發送<br /> </td> 
+   <td> 已傳送<br /> </td> 
    <td> 上午9點（第二天）<br /> </td> 
   </tr> 
  </tbody> 

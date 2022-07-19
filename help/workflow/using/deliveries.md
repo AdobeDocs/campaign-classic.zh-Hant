@@ -3,7 +3,7 @@ product: campaign
 title: 傳遞
 description: 瞭解有關預設交貨工作流的詳細資訊
 feature: Workflows
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 傳遞{#deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面詳細介紹的工作流隨 **交貨** 預設情況下為模組。
 

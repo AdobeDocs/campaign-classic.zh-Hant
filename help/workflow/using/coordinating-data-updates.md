@@ -4,7 +4,7 @@ title: 協調資料更新
 description: 協調資料更新
 feature: Workflows, Data Management
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 協調資料更新{#coordinating-data-updates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 此使用案例詳細說明了工作流的建立過程，該過程允許您在使用工作流的多個執行時管理伴隨更新。
 

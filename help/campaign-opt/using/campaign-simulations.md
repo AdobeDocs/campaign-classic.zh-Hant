@@ -4,7 +4,7 @@ title: Campaign 模擬
 description: 開始活動模擬
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Campaign 模擬{#campaign-simulations}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 關於模擬 {#about-simulations}
 
@@ -127,7 +127,7 @@ ht-degree: 2%
 
    有關建立分析表的示例，請參閱 [瀏覽結果](#exploring-results)。
 
-### 查看結果 {#viewing-results}
+### 檢視結果 {#viewing-results}
 
 #### 審計 {#audit}
 

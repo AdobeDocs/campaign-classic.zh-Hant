@@ -4,16 +4,16 @@ title: 設計並執行市場營銷活動
 description: 定義、最佳化、執行和分析行銷活動
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 19%
 
 ---
 
 # 設計並執行市場營銷活動{#designing-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign允許您定義、優化、執行和分析通信和市場營銷活動。 Adobe Campaign就像一個統一的訂單和執行中心，負責營銷策略。 有關此內容的詳細資訊，請參閱 [訪問市場活動](../../distributed/using/accessing-campaigns.md) 和 [建立市場營銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
 

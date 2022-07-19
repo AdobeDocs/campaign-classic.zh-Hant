@@ -4,7 +4,7 @@ title: 依儲存格列出的優惠
 description: 依儲存格列出的優惠
 feature: Workflows, Targeting Activity, Interaction
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 依儲存格列出的優惠{#offers-by-cell}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Offers by cell]** 活動允許您將入站總量（例如從查詢）分配到多個段，並指定要為這些段中的每個段提供的優惠。
 

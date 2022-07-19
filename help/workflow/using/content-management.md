@@ -4,7 +4,7 @@ title: 內容管理
 description: 內容管理
 feature: Workflows, Data Management
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 內容管理{#content-management}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **內容管理** 活動，您可以建立和操作內容並基於此內容生成檔案。 然後，可以通過「交付」活動交付此內容。
 

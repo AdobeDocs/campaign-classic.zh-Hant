@@ -4,7 +4,7 @@ title: 篩選規則
 description: 瞭解如何使用篩選規則
 feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 篩選規則{#filtering-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 過濾規則允許您根據查詢中定義的條件定義要排除的消息。 這些規則連結到目標維。
 

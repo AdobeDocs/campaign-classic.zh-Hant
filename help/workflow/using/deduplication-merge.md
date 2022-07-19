@@ -3,16 +3,16 @@ title: 使用重複資料消除活動的合併功能
 description: 瞭解如何使用重複資料消除活動的合併功能
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # 使用重複資料消除活動的合併功能 {#deduplication-merge}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 關於此使用實例 {#about-this-use-case}
 

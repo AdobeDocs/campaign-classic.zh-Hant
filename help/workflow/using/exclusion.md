@@ -4,7 +4,7 @@ title: 排除
 description: 瞭解有關排除工作流活動的詳細資訊
 feature: Workflows, Targeting Activity
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 排除{#exclusion}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 安 **排除**-type活動基於從中提取一個或多個其他目標的主目標建立目標。
 
