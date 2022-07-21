@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
+source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 98%
+source-wordcount: '1987'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,7 @@ _2022 年 7 月 1 日_
 * 已修正由於間歇性核心傾印而導致當機的問題 (NEO-30549)
 * 已修正傳遞時使用錯誤 HTML 代碼而可能導致當機的問題。 (NEO-40385)
 * 非管理員使用者可能無法在傳遞屬性存取&#x200B;**分析**&#x200B;索引標籤，已修正該問題。 (NEO-34025)
+* 已修復在消息準備期間可能阻止以區塊模式從外部伺服器上載映像的問題。 (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png)版本 7.2.2 - 版本編號 9349 {#release-7-2-2}
 
