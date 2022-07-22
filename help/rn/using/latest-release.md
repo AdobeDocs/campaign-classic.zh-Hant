@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
 source-wordcount: '1987'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ _2022 年 7 月 1 日_
 
 **功能改進**
 
-* Internet Explorer 11 生命週期結束後，在控制台 Adobe Services 專用的 HTML 轉譯引擎現在使用 Edge Chromium。此外，任何客戶端控制台安裝(從Campaign Classic7.3生成版本)現在都需要安裝Microsoft邊緣Webview 2運行時。 [閱讀全文](../../installation/using/installing-the-client-console.md)
+* Internet Explorer 11 生命週期結束後，在主控台 Adobe Services 專用的 HTML 轉譯引擎現在使用 Edge Chromium。此外，任何用戶端主控台安裝 (從 Campaign Classic 7.3 版本編號版本) 現在都需要安裝 Microsoft Edge Webview 2 執行階段。 [閱讀全文](../../installation/using/installing-the-client-console.md)
 * 為了最佳化穩定性，已改善 Adobe Campaign 的資料庫連線管理。
 * Microsoft Exchange Online OAuth 2.0 在 Campaign 中支援 POP3 驗證。 [閱讀全文](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * 透過外部資料使用擴充工作流程活動時，所發生的各種問題已解決。 (NEO-38069)
