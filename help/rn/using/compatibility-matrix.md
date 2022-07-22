@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -364,20 +364,20 @@ ht-degree: 97%
 </tbody>
 </table>
 
-### MicrosoftWebView2運行時
+### Microsoft WebView 2 執行階段
 
 <table>
 <tbody>
 <tr>
 <td>
-<p>Microsoft邊緣WebView2運行時
+<p>Microsoft Edge WebView 2 執行階段
 </p>
 </td>
 <td>
 <p>最新版本</p>
 </td>
 <td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download">從Microsoft開發商網站下載</a></p>
+<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_tw">從 Microsoft Developer 網站下載</a></p>
 </td>
 </tr>
 </tbody>
