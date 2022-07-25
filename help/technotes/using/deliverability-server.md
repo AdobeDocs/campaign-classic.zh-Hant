@@ -3,10 +3,10 @@ product: campaign
 title: 更新到新的可交付性伺服器
 description: 瞭解如何更新到新的市場活動交付性伺服器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
+source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,13 +58,13 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
    必須在所有市場活動實例(MKT、MID、RT、EXEC)上填寫此選項，其值必須正確。 作為混合型客戶，請聯繫Adobe，在MID、RT和EXEC實例上設定選項。
 
+>[!CAUTION]
+>
+>作為內部客戶，如果在您的一方實施了防火牆，則必須添加此url `https://deliverability-service.adobe.io` 你的許可證。 [了解更多資訊](../../installation/using/url-permissions.md)。
+
 ### 步驟1:建立/更新您的Adobe Developer項目 {#adobe-io-project}
 
-1. 訪問 [Adobe Developer控制台](https://developer.adobe.com/console/home) 並使用您組織的開發人員訪問權限登錄。
-
-   >[!NOTE]
-   >
-   > 確保您已登錄到正確的組織門戶。
+1. 訪問 [Adobe Developer控制台](https://developer.adobe.com/console/home) 並使用您組織的開發人員訪問權限登錄。 確保您已登錄到正確的組織門戶。
 
 1. 選取 **[!UICONTROL Create new project]**。
    ![](assets/New-Project.png)
