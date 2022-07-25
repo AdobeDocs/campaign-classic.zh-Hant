@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: acbb2144906841a6da59314b84b3faf5863cf9d6
 workflow-type: tm+mt
 source-wordcount: '7957'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -78,7 +78,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> 檢查IPConsistent<br /> </td> 
    <td> 啟用IP地址檢查。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -90,25 +90,25 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> longSessionTimeOutSec<br /> </td> 
    <td> 長會話超時（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1296000<br /> </td> 
   </tr> 
   <tr> 
    <td> 安全超時秒<br /> </td> 
    <td> 安全令牌超時（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> 會話快取秒<br /> </td> 
    <td> 快取持續時間：會話資訊的快取（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> 會話超時秒<br /> </td> 
    <td> 會話超時（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
  </tbody> 
@@ -172,7 +172,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> formCacheTimeToLive<br /> </td> 
    <td> 表單快取過期延遲：超時（以秒為單位），在此之後快取項無效。 O表示只在發佈時刷新快取項。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -184,7 +184,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> 交互CacheTimeToLive<br /> </td> 
    <td> 交互JSSP快取過期延遲：超時（以秒為單位），在此之後快取項無效。 負值表示快取始終無效。 「0」、空值或無效值被視為60。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -208,7 +208,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> 使用保管庫<br /> </td> 
    <td> 將機密儲存在保管庫中：用Hashicorp Vault。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -232,7 +232,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> viewCacheTimeToLive<br /> </td> 
    <td> 視圖快取的有效期：超時（以秒為單位），在此之後快取項無效。 負值表示快取始終無效。 「0」、空值或無效值被視為60。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -308,7 +308,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> NChar<br /> </td> 
    <td> Unicode儲存<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -320,7 +320,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> 加密<br /> </td> 
    <td> 加密密碼<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -356,13 +356,13 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> unicode資料<br /> </td> 
    <td> 資料庫中的Unicode資料<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> useTimestampTZ<br /> </td> 
    <td> 帶時區的日期欄位：見 <a href="../../installation/using/time-zone-management.md" target="_blank">時區管理</a>。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> </td> 
   </tr> 
  </tbody> 
@@ -401,22 +401,22 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> aliveTestDelaySec<br /> </td> 
    <td> 連接有效性檢查之間的延遲。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
   </tr> 
   <tr> 
    <td> 免費Cnx<br /> </td> 
    <td> 池中保留的可用連接數。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
    <td> 拒絕新連接前允許的連接的最大數量。 查看 <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術</a>。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
   </tr> 
   <tr> 
    <td> maxIdleDelaySec<br /> </td> 
    <td> 連接的最大空閒時間。 0表示預設值。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -526,13 +526,13 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> 重試<br /> </td> 
    <td> DNS查詢的重試次數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> 逾時<br /> </td> 
    <td> DNS查詢超時（毫秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 5000<br /> </td> 
   </tr> 
  </tbody> 
@@ -603,7 +603,7 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> maxProcessusCount<br /> </td> 
    <td> 麥克斯。 在一台電腦上一次允許的轉換進程數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -615,19 +615,19 @@ Adobe Campaign的總體配置在 **serverConf.xml** 檔案，位於 **會議** �
   <tr> 
    <td> 逾時<br /> </td> 
    <td> 轉換超時：最大轉換時間（秒）。 超過此閾值後，轉換進程將停止，並引發錯誤。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 120<br /> </td> 
   </tr> 
   <tr> 
    <td> 詳細<br /> </td> 
    <td> 詳細模式：以詳細模式啟動以診斷可能的錯誤。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 等待時間<br /> </td> 
    <td> 等待進程時延遲：延遲（秒），即同時使用所有進程和等待進程釋放時。 如果超過此延遲，則停止轉換並引發錯誤。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
  </tbody> 
@@ -655,7 +655,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  <tbody> 
   <tr> 
    <td> authIMSClientId<br /> </td> 
-   <td> 客戶端ID<br /> </td> 
+   <td> 用戶端 ID<br /> </td> 
    <td> 字串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -723,13 +723,13 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> 最大MB<br /> </td> 
    <td> 運行垃圾回收器前的最大大小(MB)。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 512 <br /> </td> 
   </tr> 
   <tr> 
    <td> 堆棧大小KB<br /> </td> 
    <td> 每個堆棧塊的大小（千位八位位元組）。 這是大多數用戶不應調整的記憶體管理調整參數。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
  </tbody> 
@@ -804,7 +804,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
    <td> 最大準備時間：持續時間（秒），在此之後，交付操作不應再在準備中。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
   <tr> 
@@ -839,13 +839,13 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> 最大轉換<br /> </td> 
    <td> 允許OpenOffice伺服器執行的最大轉換數。 除此數目外，伺服器將重新啟動。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxServerIdleSec<br /> </td> 
    <td> 強制關閉前OpenOffice伺服器的最大空閒時間。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 7200<br /> </td> 
   </tr> 
   <tr> 
@@ -882,7 +882,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> 啟用<br /> </td> 
    <td> 使用代理伺服器。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -894,7 +894,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> useSingleProxy<br /> </td> 
    <td> 唯一代理伺服器：對所有類型的代理使用相同的配置。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
  </tbody> 
@@ -933,7 +933,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> 埠<br /> </td> 
    <td> 代理伺服器埠<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -955,7 +955,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> maxThreadCount<br /> </td> 
    <td> 池中的最大線程數。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -990,7 +990,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   <tr> 
    <td> 調試跟蹤<br /> </td> 
    <td> 調試URL選擇機制的跟蹤：在URL驗證過程中發出其他消息。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
  </tbody> 
@@ -1030,7 +1030,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://。&#42;&quot;
 
-和 
+和
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
 
@@ -1046,8 +1046,6 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
 <url dnsSuffix="api.twitter.com"                         urlRegEx="https://api.twitter.com/1.1.*"              />
 <url dnsSuffix="adobeid-na1.services.adobe.com"          urlRegEx="https://.*"                                    />
 <url dnsSuffix="adobeid-na1-stg1.services.adobe.com"     urlRegEx="https://.*"                                    />
-<url dnsSuffix="deliverability.neolane.net"              urlRegEx="https://deliverability.neolane.net/jssp/dm/renderingSeed.jssp" />
-<url dnsSuffix="deliverability.neolane.net"              urlRegEx="https://deliverability.neolane.net/nl/jsp/soaprouter.jsp" />
 <url dnsSuffix="localhost"                               urlRegEx="http://localhost:8080/nms/jsp/.*"              />
 <url dnsSuffix="localhost"                               urlRegEx="http://localhost:8080/nl/jsp/.*"               />
 <url dnsSuffix="localhost"                               urlRegEx="http://localhost:8080/xtk/jsp/.*"              />
@@ -1070,7 +1068,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
    <td> 伺服器處理的記憶體狀態刷新週期（毫秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
  </tbody> 
@@ -1095,7 +1093,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> acquireLimit（獲取限制）<br /> </td> 
    <td> 要同時處理的EML數<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
@@ -1113,13 +1111,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> compressBatchSize<br /> </td> 
    <td> 壓縮存檔的大小：壓縮存檔中的最大檔案數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 10000<br /> </td> 
   </tr> 
   <tr> 
@@ -1131,7 +1129,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 過期延遲<br /> </td> 
    <td> 自動存檔未處理電子郵件之前的延遲：未處理電子郵件存檔前的天數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
@@ -1143,19 +1141,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> 輪詢延遲<br /> </td> 
    <td> 每個更新事件之間的延遲（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
@@ -1167,13 +1165,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
    <td> 刪除未處理電子郵件前的天數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 7<br /> </td> 
   </tr> 
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -1185,13 +1183,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> smtp啟用TLS<br /> </td> 
    <td> 激活SMTPS支援：在遠程伺服器支援時，以安全模式(STARTTLS/SMTPS)激活電子郵件傳送。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> smtpNbConnection<br /> </td> 
    <td> 到存檔SMTP伺服器的連接數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
@@ -1203,7 +1201,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> smtp中繼埠<br /> </td> 
    <td> SMTP伺服器的IP埠。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -1232,13 +1230,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
    <td> 驗證實例名稱：如果為true，則Message-ID標頭中包含的Adobe Campaign實例的名稱必須與當前實例相同。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
@@ -1256,13 +1254,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 忽略大小<br /> </td> 
    <td> 忽略消息大小：用於忽略POP3伺服器返回的消息的大小。 在這種情況下，模組需要「。」 在留言結尾處。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> inMailPeriodSec<br /> </td> 
    <td> 消息讀取期間：消息隊列輪詢頻率。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -1274,49 +1272,49 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxBroadLog<br /> </td> 
    <td> 要更新的最大日誌數：定義更新資料庫前要保留在記憶體中的日誌消息的最大數量。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerSession<br /> </td> 
    <td> 在POP3會話期間要讀取的最大消息數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 200<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionTTLSec<br /> </td> 
    <td> 會話持續時間：消息處理會話的最大持續時間。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popMailPeriodSec<br /> </td> 
    <td> POP3輪詢週期<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> popQueueSize<br /> </td> 
    <td> 讀取消息的隊列大小<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popTimeoutSec<br /> </td> 
    <td> 與POP3伺服器的通信超時。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -1328,13 +1326,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
    <td> 要輪詢的帳戶的資料庫重裝頻率。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -1357,7 +1355,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 轉儲<br /> </td> 
    <td> 以文本格式保存所有入站消息。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -1394,13 +1392,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 調用資料大小<br /> </td> 
    <td> 麥克斯。 共用記憶體中儲存的呼叫資料字元數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -1412,25 +1410,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedEntries<br /> </td> 
    <td> 麥克斯。 儲存在共用記憶體中的事件數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
   <tr> 
    <td> 下一優惠大小<br /> </td> 
    <td> 在建議後排序的合格優惠的最大數量，要儲存以進行統計。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -1442,19 +1440,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> statsPeriod<br /> </td> 
    <td> 響應時間統計資訊的聚合持續時間（秒）。 0表示已停用統計儲存。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> 目標密鑰大小<br /> </td> 
    <td> 麥克斯。 儲存在共用儲存器中用於識別個人的字元數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 16<br /> </td> 
   </tr> 
  </tbody> 
@@ -1483,7 +1481,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -1501,13 +1499,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> dnsRequestLogDelayMs<br /> </td> 
    <td> DNS查詢日誌延遲：顯示日誌的時間（毫秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> 錯誤PeriodSec<br /> </td> 
    <td> 錯誤統計頻率：統計資訊生成和資料庫中儲存之間的時間。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -1519,49 +1517,49 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> logEmailErrors<br /> </td> 
    <td> 生成錯誤統計資訊並將其儲存在資料庫中。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
    <td> 日誌級別<br /> </td> 
    <td> 顯示日誌消息的級別。 寫入資料庫的日誌的嚴重性級別。 MTA生成的日誌消息並非總是寫入資料庫中。 使用此參數，可以定義您認為必須在資料庫中寫入消息的級別。 如果定義級別2，則還會寫入級別1和級別0的消息，而如果定義級別1，則只寫入級別1和級別0的消息。 可能的值為：0（錯誤）、1（警告）、2（資訊）<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> 最大記憶體Mb<br /> </td> 
    <td> mta進程可以使用的最大記憶體大小(MB)。 超過此限制後，將重新啟動進程，以便將其使用的記憶體釋放到系統。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> minConnectionsToLog<br /> </td> 
    <td> 要考慮的連接閾值。 如果errorPeriodSec指定的期間的連接總數嚴格低於閾值，則不會為給定路徑生成錯誤統計資訊。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
    <td> 要考慮的錯誤閾值：如果errorPeriodSec指定的期間的錯誤總數嚴格低於閾值，則不會為給定路徑生成錯誤統計資訊。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> minMessagesToLog<br /> </td> 
    <td> 要考慮的消息閾值。 如果為errorPeriodSec指定的期間發送的消息總數嚴格低於閾值，則不為給定路徑生成錯誤統計資訊。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
@@ -1579,25 +1577,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
    <td> 刪除存檔電子郵件之前的延遲：清除dataLogPath中指定的目錄中存檔電子郵件的天數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
   <tr> 
    <td> 重試丟失消息<br /> </td> 
    <td> 重試丟失的消息：如果子進程已死，將重試部分交貨。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> 簽名電子郵件連結<br /> </td> 
    <td> 啟用簽名機制。 這提高了跟蹤電子郵件連結的安全性。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr>
   <tr> 
@@ -1616,7 +1614,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> statServerTLSSupport<br /> </td> 
    <td> 按域啟用TLS:啟用MX可配置的TLS（需要最新的統計伺服器）。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真 <br /> </td> 
   </tr> 
   <tr> 
@@ -1628,13 +1626,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 使用動量<br /> </td> 
    <td> 如果設定為"true"，則實例使用 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">增強的MTA</a>。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> <br /> </td>b 
   </tr>
   <tr> 
    <td> 驗證模式<br /> </td> 
    <td> 驗證模式：激活驗證模式(不實際傳輸消息；用於模擬和test)。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -1669,19 +1667,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxPeriodSec<br /> </td> 
    <td> 回收時間：期間，以秒錶示，在此之後檔案將自動從快取中刪除以回收儲存。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSizeOnDiskMb<br /> </td> 
    <td> 最大快取大小(Mb)。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> purgePeriodSec<br /> </td> 
    <td> 清除頻率：執行快取清除機制之間的時段（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
  </tbody> 
@@ -1714,7 +1712,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 埠<br /> </td> 
    <td> SMTP伺服器的IP埠。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -1739,37 +1737,37 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 資料庫池期間秒<br /> </td> 
    <td> 要傳送的作業的資料庫輪詢頻率。 此值指示資料庫輪詢頻率（秒）。 要獲取等待傳遞的作業清單，MTA會定期輪詢資料庫。 當沒有作業等待時，輪詢週期由此值定義。 否則，如果作業已被轉移到子伺服器，則該輪詢持續時間自動縮短到一秒，以便能夠盡快重新處理新作業，即一旦子伺服器再次可用。 這並不意味著在子伺服器再次可用之前每秒鐘都會執行資料庫查詢。 事實上，資料庫訪問只在至少一個子伺服器可用時才執行。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> 資料庫重試延遲秒<br /> </td> 
    <td> 資料庫連接失敗後的等待期。 資料庫連接失敗通常由資料庫伺服器本身引起。 例如，伺服器也可以出於維護目的而停止。 DataBaseRetryDelay參數定義在資料庫連接失敗時兩次連接嘗試之間的持續時間。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
    <td> 私鑰快取(DomainKeys)的有效期。 用於在DomainKeys建議(http://antispam.yahoo.com/domainkeys)之後簽名電子郵件的私鑰作為選項儲存在資料庫中。 domainKeysReloadPeriodSec參數定義MTA可以將這些密鑰保留在快取中的秒數。 在此延遲後，必須從資料庫重新載入所有鍵。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
    <td> 子伺服器的最大數量。 表示正在運行的伺服器的最大數量。 建議將此數量限制為與伺服器記憶體資源相容的最佳值。 可以在交貨期間檢查此項。 使用的記憶體不應超過可用物理記憶體的三分之一，否則將使用交換。 請參閱 <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA子進程</a>。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
    <td> 最小子伺服器數。 MTA嘗試至少使此數量的伺服器保持運行。 如果數量較少，它會每秒重新啟動新伺服器，直到達到此值。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
    <td> 啟動時的子伺服器數。 動態監視子伺服器的數量；當MTA啟動時，它會建立此值所指示的任意多個子伺服器。 通常，為了節省主機資源，子伺服器的啟動速度不能超過每秒一台伺服器。 但是，當MTA啟動時，此限制被取消，以便盡快提供子伺服器。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
  </tbody> 
@@ -1800,55 +1798,55 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
    <td> 超時，直到停止空閒的子伺服器。 如果子伺服器的空閒時間大於此參數，則它將自動自毀以釋放主機資源。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> 最大年齡秒<br /> </td> 
    <td> 最大郵件保留時間。 如果由於限制而無法發送預準備的消息或無法連接到目標MTA，則該消息將被放棄，並將在下次重試時進行處理。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxGCMConnectPerChild<br /> </td> 
    <td> 每個子伺服器啟動的對FCM的並行Http請求的最大值。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
    <td> 每個子伺服器的最大消息數。 每個MTA子級處理此數目的消息和死亡。 必須指定一個數字，使MTA中的記憶體或資源洩漏無害（通常為幾千個）。 即使MTA代碼中沒有已知的記憶體洩漏，嵌入式JavaScript和XSL引擎也不完全可靠。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 500000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
    <td> 掛起的消息：等待在記憶體中傳遞的最大消息數。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 2000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
    <td> 子進程可以使用的最大記憶體大小(MB)。 超過此限制後，進程將停止，以便其使用的記憶體釋放到系統。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
    <td> 超時（秒），在超時後，將放棄傳遞連接器的SOAP連接。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> 開始WithFirstMX<br /> </td> 
    <td> 始終以最高優先順序MX開頭。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 時間到生存<br /> </td> 
    <td> 恢復時連續嘗試的最大數量。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 48<br /> </td> 
   </tr> 
  </tbody> 
@@ -1869,25 +1867,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 啟用TLS<br /> </td> 
    <td> 當遠程伺服器支援時，以安全模式(STARTTLS/SMTPS)激活電子郵件的傳送。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
    <td> 空閒會話超時。 此參數僅在會話被重用以向給定域發送多條消息時才使用。 當MTA完成消息傳輸時，它使用的SMTP會話不會系統關閉。 如果郵件已準備好為同一域發送，則將重用同一SMTP會話，因此不會自動關閉會話。 參數IdleSessionTimeout參數用於定義SMTP會話在等待另一消息時保持活動狀態的時間。 持續時間過後，會話將自動關閉。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> 初始延遲秒<br /> </td> 
    <td> 重試連接前的初始延遲。 每次連接失敗時，此延遲都會加倍。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
    <td> 按子伺服器列出的最大SMTP會話數。 要傳遞消息，MTA將初始化與收件人MTA的SMTP連接。 給定子伺服器的最大併發和活動SMTP會話數受此值的限制。 如果將此值乘以maxSpareServers，則可獲得給定子伺服器可併發處理的消息的最大數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
@@ -1940,12 +1938,12 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 公共ID<br /> </td> 
    <td> 關聯的公共地址ID。 用作統計伺服器的密鑰。 必須是數字。 查看 <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">節</a>。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
   </tr> 
   <tr> 
    <td> 重量<br /> </td> 
    <td> 指定此IP相對於其他IP的使用頻率（權重越大，頻率越高）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
   </tr> 
   <tr> 
    <td> 包括域<br /> </td> 
@@ -1982,7 +1980,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> useHTTPProxy<br /> </td> 
    <td> 使用在shared/proxyHTTP中定義的HTTP代理。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
  </tbody> 
@@ -2011,7 +2009,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 埠<br /> </td> 
    <td> 中繼埠<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 443<br /> </td> 
   </tr> 
   <tr> 
@@ -2064,13 +2062,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 禁用身份驗證<br /> </td> 
    <td> 禁用身份驗證：連接到Pipeline Services而不進行身份驗證。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
@@ -2082,7 +2080,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
    <td> 狀態保存期：進程的內部資訊保存在檔案中的頻率。 如果為0，則處於非活動狀態。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -2100,19 +2098,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> monitorServerPort<br /> </td> 
    <td> 狀態伺服器埠：HTTP伺服器埠，用於查詢進程的狀態。 如果為0，則處於非活動狀態。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 7781<br /> </td> 
   </tr> 
   <tr> 
@@ -2124,7 +2122,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 指針FlushPeriodSec<br /> </td> 
    <td> 儲存指針之前的延遲：在此期間，指針將至少儲存一次在資料庫中（在活動量低時非常有用）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -2136,31 +2134,31 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 處理JSThreads<br /> </td> 
    <td> 使用個性化JavaScript連接器進行事件處理的線程數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> 處理線程<br /> </td> 
    <td> 用於事件處理的線程數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> retryPeriodSec<br /> </td> 
    <td> 如果出現故障，則處理之間的延遲。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> retryValiditySec<br /> </td> 
    <td> 在此期間後放棄：如果在此時段後處理仍然失敗，則放棄事件。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2183,7 +2181,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> repairActionDelayMin<br /> </td> 
    <td> 交貨操作修復模組：延遲（以分鐘為單位），在此之後修復模組可以處理傳遞操作。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
  </tbody> 
@@ -2208,31 +2206,31 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 允許調試<br /> </td> 
    <td> 授權Web應用程式的調試模式。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> allowEmptyPassword<br /> </td> 
    <td> 授權用戶使用無密碼的應用程式。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 允許HTTP<br /> </td> 
    <td> 授權使用HTTP進行操作員登錄。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> allowSQLInjent<br /> </td> 
    <td> 授權在表達式中使用SQLDATA。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> allowUserPassword<br /> </td> 
    <td> 授權用戶/密碼會話令牌。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -2250,13 +2248,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 會話TokenOnly<br /> </td> 
    <td> 不要使用安全令牌。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> showErrors<br /> </td> 
    <td> 顯示錯誤詳細資訊<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
  </tbody> 
@@ -2353,19 +2351,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 資料保留天數<br /> </td> 
    <td> SMPP連接器保存的檔案工作檔案的最大天數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> 資料大小<br /> </td> 
    <td> SMPP工作檔案的最大大小(MB)。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 512<br /> </td> 
   </tr> 
   <tr> 
@@ -2377,25 +2375,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> keepAlivePeriod<br /> </td> 
    <td> 會話連續性框架的重複：最大。 兩個幀之間的時間段（秒），用於通知接收會話仍處於啟用狀態。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollPeriod<br /> </td> 
    <td> 搜索頻率：SMS帳戶輪詢期間。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -2407,25 +2405,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> reloadPeriod（重裝期間）<br /> </td> 
    <td> 帳戶重新載入頻率：資料庫重新載入要輪詢的帳戶的頻率。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> srReadDelay<br /> </td> 
    <td> SR處理延遲的秒數：只有恢復日期早於當前時間的SR減去srReadDelay給定的持續時間（秒）。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> 逾時<br /> </td> 
    <td> SMS網關通信超時。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
  </tbody> 
@@ -2448,7 +2446,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> netsizeConnectionTimeout<br /> </td> 
    <td> 與Netsize建立連接時超時（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
  </tbody> 
@@ -2477,7 +2475,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -2489,19 +2487,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> 埠<br /> </td> 
    <td> 伺服器偵聽埠。 查看 <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">節</a>。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2513,7 +2511,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2542,7 +2540,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -2554,25 +2552,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxFileSizeMb<br /> </td> 
    <td> 日誌檔案的最大大小(Mb)。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> maxNumberOfLoginsFiles<br /> </td> 
    <td> 要保留的最大登錄名.log檔案數。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 365<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
@@ -2584,7 +2582,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2613,25 +2611,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
    <td> 禁用從以前生成生成的格式錯誤的URL。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> consolidationPeriodSec<br /> </td> 
    <td> 合併期間<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
    <td> 消除重複的開口：刪除重複的開啟跟蹤日誌，以限制Outlook等郵件閱讀器中郵件預覽的效果。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
@@ -2643,13 +2641,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 錯誤忽略期間<br /> </td> 
    <td> 更新錯誤指示符：重新計算錯誤指示符之前的最大持續時間。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> 指示符持續時間<br /> </td> 
    <td> 在以下期間計算指示符：交貨有效日期後的持續時間，此後不再計算合併指標。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 2592000<br /> </td> 
   </tr> 
   <tr> 
@@ -2661,31 +2659,31 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> logCountPerRequest<br /> </td> 
    <td> 調用遠程跟蹤伺服器請求的日誌數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> Phishbowl服務APIKey<br /> </td> 
    <td> Phishbowl服務端點整合的API鍵。 這可保護從舊版本生成的格式錯誤的URL的重定向。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceEndpoint<br /> </td> 
    <td> Phishbowl服務端點整合的端點。 這可保護從舊版本生成的格式錯誤的URL的重定向。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2697,7 +2695,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2709,13 +2707,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 跟蹤忽略期間<br /> </td> 
    <td> 更新跟蹤指標：在重新計算跟蹤指示符之前的最大持續時間。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> userAgentCacheSize<br /> </td> 
    <td> 瀏覽器標識符快取的大小。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
  </tbody> 
@@ -2744,7 +2742,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -2756,31 +2754,31 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxCreateFileRetry<br /> </td> 
    <td> 最大寫入重試次數：在日誌檔案中寫入失敗時可建立的最大檔案數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> maxLogsSizeOnDiskMb<br /> </td> 
    <td> 最大日誌大小：磁碟上日誌使用的最大空間(MB)。 不得少於100 MB。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedLogs<br /> </td> 
    <td> 最大日誌計數：共用記憶體中儲存的最大日誌數。 不能少於10000。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
   <tr> 
@@ -2792,19 +2790,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
    <td> 清除前的日誌數：開始清除日誌檔案之前插入的日誌數。 不能低於50000。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 50000<br /> </td> 
   </tr> 
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> webTrackingParamSize<br /> </td> 
    <td> 共用記憶體中為額外Web跟蹤參數保存的最大字元數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 64<br /> </td> 
   </tr> 
  </tbody> 
@@ -2835,13 +2833,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 最大線程數<br /> </td> 
    <td> 最大線程數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 75<br /> </td> 
   </tr> 
   <tr> 
    <td> 最小備用線程<br /> </td> 
    <td> 最小線程數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -2853,19 +2851,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 控制埠<br /> </td> 
    <td> Tomcat偵聽控制埠：參考 <a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> http埠<br /> </td> 
    <td> Tomcat HTTP偵聽埠：參考 <a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
   <tr> 
@@ -2877,19 +2875,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
    <td> SubmitDelivery呼叫的隊列大小：可排隊的SubmitDelivery SOAP調用的最大數量。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
@@ -2907,13 +2905,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> startSoapRouterInModule<br /> </td> 
    <td> 以模組模式啟動SOAP路由器。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
  </tbody> 
@@ -2936,7 +2934,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 調試<br /> </td> 
    <td> 是否在調試模式下執行JSP。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3015,13 +3013,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 收集GarbageAfterRequest<br /> </td> 
    <td> 在每個查詢後啟用JavaScript上下文的垃圾回收器。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
    <td> 時間到生存<br /> </td> 
    <td> JavaScript上下文所服務的最大頁數。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
@@ -3048,7 +3046,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> debugRelay<br /> </td> 
    <td> 在調試模式下啟動Web伺服器中的HTTP中繼模組。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -3072,13 +3070,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 啟動中繼<br /> </td> 
    <td> 啟動HTTP中繼模組。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> startRelayInModule<br /> </td> 
    <td> 啟動Web伺服器中的HTTP中繼模組。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
@@ -3113,7 +3111,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 拒絕<br /> </td> 
    <td> 拒絕訪問這些URL（返回HTTP 403錯誤）<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3125,19 +3123,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 允許的http<br /> </td> 
    <td> 無論安全區域（如webApps）如何，HTTP訪問都已授權。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> 中繼主機<br /> </td> 
    <td> 添加原始主機：中繼時使用原始請求的HTTP「Host」標頭。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> relayPath<br /> </td> 
    <td> 添加初始URL路徑：將要中繼到目標頁的URL的完整路徑追加到。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3155,7 +3153,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 逾時<br /> </td> 
    <td> 正在中繼的請求的最大執行時間（秒）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3307,7 +3305,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> defLogCount<br /> </td> 
    <td> 按呼叫記錄計數：調用方法GetTrackingLogs時預設返回的日誌數。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
@@ -3319,25 +3317,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxJobsInCache<br /> </td> 
    <td> 最大作業計數：快取中最大傳遞操作數。 不得低於50。 <br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> 啟動重定向<br /> </td> 
    <td> 啟動重定向服務。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirectionInModule<br /> </td> 
    <td> 以模組模式啟動重定向服務。<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
    <td> 跟蹤Web訪問者<br /> </td> 
    <td> Web跟蹤：為未知用戶訪問的頁建立日誌。 <br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
@@ -3438,13 +3436,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 自動啟動<br /> </td> 
    <td> 自動啟動<br /> </td> 
-   <td> 布爾型<br /> </td> 
+   <td> 布林值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> 資料庫池期間秒<br /> </td> 
    <td> 期間<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
   <tr> 
@@ -3456,13 +3454,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> 記憶體消耗警報：有關給定進程所消耗的RAM（以Mb為單位）的警報。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> 記憶體消耗警告：警告：給定進程消耗的RAM量（以Mb為單位）。<br /> </td> 
-   <td> 龍<br /> </td> 
+   <td> 長類型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
@@ -3480,7 +3478,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://。&#42;&quot;
   <tr> 
    <td> 運行級別<br /> </td> 
    <td> 開始時的優先順序。 低優先順序模組首先啟動，最後停止。 因此，syslogd模組必須具有優先順序0。<br /> </td> 
-   <td> 短<br /> </td> 
+   <td> 短類型<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
