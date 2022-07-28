@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2582'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -837,7 +837,7 @@ ht-degree: 99%
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
    + 升級與相容性{#technote-migration}
       + [技術說明](technotes/using/technote.md)
-      + [新的交付性伺服器](technotes/using/deliverability-server.md)
+      + [新傳遞能力伺服器](technotes/using/deliverability-server.md)
       + [Apache 安全性升級](technotes/using/acc-apache-upgrade.md)
       + [Campaign 設定更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
