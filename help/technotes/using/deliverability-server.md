@@ -3,16 +3,16 @@ product: campaign
 title: 更新到新的可交付性伺服器
 description: 瞭解如何更新到新的市場活動交付性伺服器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
+source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1144'
+ht-degree: 2%
 
 ---
 
 # 更新到新的可交付性伺服器 {#acc-deliverability}
 
-開始 [v7.2.1版](../../rn/using/latest-release.md#release-7-2-2),Adobe Campaign依靠新的可交付性伺服器，該伺服器可提供高可用性並解決安全合規性問題。 Campaign Classic現在將可傳送性規則、廣播和禁止地址從新可傳送性伺服器同步，並同步到新可傳送性伺服器。 舊的可交付性伺服器將於2022年8月31日解壓縮。
+開始 [v7.2.2版](../../rn/using/latest-release.md#release-7-2-2),Adobe Campaign依靠新的可交付性伺服器，該伺服器可提供高可用性並解決安全合規性問題。 Campaign Classic現在將可傳送性規則、廣播和禁止地址從新可傳送性伺服器同步，並同步到新可傳送性伺服器。 舊的可交付性伺服器將於2022年8月31日解壓縮。
 
 作為Campaign Classic客戶，您必須實施新的交付性伺服器 **2022年8月31日前**。
 
@@ -28,13 +28,13 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
 ## 您有受到影響嗎？{#acc-deliverability-impacts}
 
-所有客戶都受到影響，必須升級到 [市場活動v7.2.1](../../rn/using/latest-release.md#release-7-2-2) （或更多）並實施其環境，以從新的可交付性伺服器中獲益。
+所有客戶都受到影響，必須升級到 [市場活動v7.2.2](../../rn/using/latest-release.md#release-7-2-2) （或更多）並實施其環境，以從新的可交付性伺服器中獲益。
 
 ## 如何更新？{#acc-deliverability-update}
 
 作為 **托管客戶**,Adobe將與您一起將實例升級到較新版本，並在Adobe Developer控制台中建立項目。
 
-作為 **本地/混合客戶**，您需要升級到 [市場活動v7.2.1](../../rn/using/latest-release.md#release-7-2-2) （或更多）從新的可交付性伺服器中獲益。 升級所有實例後，您必須 [實施新的整合](#implementation-steps) Adobe可交付性伺服器，並確保無縫過渡。
+作為 **本地/混合客戶**，您需要升級到 [市場活動v7.2.2](../../rn/using/latest-release.md#release-7-2-2) （或更多）從新的可交付性伺服器中獲益。 升級所有實例後，您必須 [實施新的整合](#implementation-steps) Adobe可交付性伺服器，並確保無縫過渡。
 
 ## 實施步驟 {#implementation-steps}
 
