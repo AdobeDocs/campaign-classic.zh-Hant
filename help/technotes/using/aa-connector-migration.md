@@ -3,10 +3,10 @@ product: campaign
 title: 遷移到Adobe Analytics連接器
 description: 市場活動 — 分析連接器常見問題
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 5%
+source-wordcount: '815'
+ht-degree: 6%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 5%
 
 正在啟動Campaign Classicv7 21.1.3版，不建議使用Adobe Analytics資料連接器。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-2021年8月1日，Adobe Campaign Classic已從舊式資料連接器用戶介面中刪除，但是，現有市場活動整合將繼續收集資料並將資料傳遞給Adobe Analytics，直到2022年8月17日。 在此日期之後，整合將停止收集資料並將資料轉給Adobe Analytics。
+2021年8月1日，Adobe Campaign Classic已從傳統的Data Connectors用戶介面中刪除，但是，現有的活動整合將繼續收集資料並將資料傳遞給Adobe Analytics，直至2022年8月17日。 在此日期之後，整合將停止收集資料並將資料轉給Adobe Analytics。
 
-你 **必須** 新的Adobe Analytics連接器在Adobe交換上的整合，取代了舊式資料連接器整合。 要瞭解有關Adobe Analytics連接器的詳細資訊，請參閱 [此頁](../../platform/using/adobe-analytics-connector.md)。
+你 **必須** 新的Adobe Analytics連接器在Adobe交易所的整合，取代了傳統的Data Connectors整合。 要瞭解有關Adobe Analytics連接器的詳細資訊，請參閱 [此頁](../../platform/using/adobe-analytics-connector.md)。
 
 >[!NOTE]
 >
@@ -68,19 +68,19 @@ Campaign Classicv7和Adobe Analytics之間的新整合現已推出。 下面列�
 
 **「整合所有者不是管理員」錯誤意味著什麼？**
 
-瞭解有關資料連接器的詳細資訊 `Integration Owner Not Admin` 錯誤 [此頁](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error)。
+瞭解有關Data Connectors的更多資訊 `Integration Owner Not Admin` 錯誤 [此頁](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error)。
 
 **遷移到新連接器後，舊資料和報告套件會發生什麼變化？**
 
 遷移後，新連接器（從舊連接器遷移）將開始將資料推送到同一報告套件，並且現有資料將不受影響：它將添加到現有資料中。
 
-**分析中存在的某些現有事件/事件/報告套件在市場活動中不可見。 我該怎麼辦？**
+**分析中存在的某些現有事件/事件/報告套件在市場活動中不可見。 我應該怎麼做？**
 
 整合依賴於技術帳戶令牌上的日常操作資料。 如果缺少與技術帳戶用戶關聯的產品配置檔案中對維/度量/報表套件的權限，則我們使用的API將對這些請求產生動搖。
 
 如果我們正在讀取分析元件（如度量/維/段/報表套件）的詳細資訊，則API將不會在結果中返回這些元件（這可能看起來像是在分析端刪除的內容或不存在）。 分析API將拒絕這些請求並錯誤。
 
-解決方案是更新 **產品配置檔案** 在Analytics User Context of Technical User Token中添加新建立/缺少的元件，方法是： [Adobe Admin Console](https://adminconsole.adobe.com/)。 如需更多指導，請與 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+解決方案是更新 **產品配置檔案** 在Analytics User Context of Technical User Token中添加新建立/缺少的元件，方法是： [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。 如需更多指導，請與 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 有用連結
 
