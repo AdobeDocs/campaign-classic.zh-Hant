@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 91%
+source-wordcount: '1624'
+ht-degree: 92%
 
 ---
 
@@ -80,12 +80,6 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>
   </tr>
-  <tr>
-  <td>CentOs 8.x (64 位元)<br></td>
-   <td><p>CentOS Linux 8於2021年12月31日到期(EOL)。 <a href="https://www.centos.org/centos-linux-eol/">了解更多</a></p>
-   <p>如果您使用此作業系統，請相應地調整實施。 仍支援 CentOS 7.x (64 位元) 和 RHEL 8.x/7.x (64 位元)。</p>
-  </td>
- </tr>
    <td>報告<br></td>
    <td><p>在 Adobe Flash Player 終結壽命後，量規報告和圖表轉譯引擎將不再可用。 <a href="../../reporting/using/creating-a-new-report.md">瞭解更多</a></p>
   </tr>
@@ -142,9 +136,9 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
  </tbody> 
 </table>
 
-## 已棄用的相容性 {#deprecated-compatibility}
+<!--## Deprecated compatibility {#deprecated-compatibility}
 
-Campaign Classic 不再使用下列系統。請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md)，以升級到更新版本，或在相容性結束之前移至新系統。
+The following systems are deprecated for Campaign Classic. Please refer to the [Compatibility matrix](../../rn/using/compatibility-matrix.md) to upgrade to a newer version or move to a new system before the compatibility ends.-->
 
 ## 相容性終止 {#end-of-compatibility}
 
