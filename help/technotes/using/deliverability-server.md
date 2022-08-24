@@ -3,10 +3,10 @@ product: campaign
 title: 更新到新的可交付性伺服器
 description: 瞭解如何更新到新的市場活動交付性伺服器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
+source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,9 +58,19 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 
    必須在所有市場活動實例(MKT、MID、RT、EXEC)上填寫此選項，其值必須正確。 作為混合型客戶，請聯繫Adobe，在MID、RT和EXEC實例上設定選項。
 
+作為內部客戶，您還必須檢查市場活動 **[!UICONTROL Product profile]** 可用於您的組織。 要執行此操作，請執行以下步驟：
+
+1. 作為管理員，連接到 [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
+1. 訪問 **產品和服務** 檢查 **Adobe Campaign** 清單中。
+如果你看不到 **Adobe Campaign** 聯繫 [Adobe客戶關懷](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以添加它。
+1. 按一下 **Adobe Campaign** 並選擇您的組織。
+1. 檢查 **[!UICONTROL Product profile]** 存在。 否則，建立它。 無需對此權限 **[!UICONTROL Product profile]**。
+
+
 >[!CAUTION]
 >
 >作為內部客戶，如果在您的一方實施了防火牆，則必須添加此url `https://deliverability-service.adobe.io` 你的許可證。 [了解更多資訊](../../installation/using/url-permissions.md)。
+
 
 ### 步驟1:建立/更新您的Adobe Developer項目 {#adobe-io-project}
 
@@ -123,7 +133,7 @@ Adobe是由於安全合規性的原因而淘汰舊資料中心。 Adobe Campaign
 1. 從檔案複製內容 `private.key.base64`。
 1. 通過SSH登錄到安裝Adobe Campaign實例的每個容器，並通過以下命令在Adobe Campaign添加項目憑據 `neolane` 。 這將插入 **[!UICONTROL Technical Account]** 實例配置檔案中的憑據。
 
-   ```
+   ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
