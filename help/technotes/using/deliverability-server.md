@@ -3,9 +3,9 @@ product: campaign
 title: 更新至新的傳遞能力伺服器
 description: 了解如何更新至新的Campaign傳遞伺服器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
+source-git-commit: 9583763eb1d4403b32a1b77a9542f476c314d167
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 3%
 
 ---
@@ -62,11 +62,7 @@ As a **托管客戶**,Adobe會與您合作，將您的執行個體升級至較�
 1. 身為管理員，請連線至 [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
 1. 存取 **產品與服務** 區段與檢查 **Adobe Campaign** 清單中。
 如果您看不到 **Adobe Campaign** 聯絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以添加它。
-1. 按一下 **Adobe Campaign** 並選取您的組織。
-
-   >[!CAUTION]
-   >
-   >如果您有多個組織，請務必選取正確的組織。 深入了解組織 [在本頁](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
+1. 按一下 **Adobe Campaign** 並選取您的組織。 **注意**:如果您有多個組織，請務必選取正確的組織。 深入了解組織 [在本頁](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
 
 1. 檢查 **[!UICONTROL Product profile]** 存在。 否則請建立它。 不需要權限 **[!UICONTROL Product profile]**.
 
@@ -79,11 +75,7 @@ As a **托管客戶**,Adobe會與您合作，將您的執行個體升級至較�
 ### 步驟1:建立/更新您的Adobe Developer專案 {#adobe-io-project}
 
 1. 存取 [Adobe Developer Console](https://developer.adobe.com/console/home) 並使用貴組織的開發人員存取權登入。 請確定您已登入正確的組織入口網站。
-
-   >[!CAUTION]
-   >
-   >如果您有多個組織，請務必選取正確的組織。 深入了解組織 [在本頁](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
-
+   **注意**:如果您有多個組織，請務必選取正確的組織。 深入了解組織 [在本頁](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
 1. 選取 **[!UICONTROL Create new project]**。
    ![](assets/New-Project.png)
 
