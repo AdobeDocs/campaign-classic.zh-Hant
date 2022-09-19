@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
-workflow-type: ht
-source-wordcount: '2582'
-ht-degree: 100%
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
+workflow-type: tm+mt
+source-wordcount: '2583'
+ht-degree: 99%
 
 ---
 
@@ -667,18 +667,18 @@ ht-degree: 100%
          + [最佳實務和限制](installation/using/fda-best-practices.md)
          + 設定指南 {#config-databases}
             + [設定步驟](installation/using/configure-fda.md)
-            + [設定 Vertica](installation/using/configure-fda-vertica.md)
-            + [設定 Snowflake](installation/using/configure-fda-snowflake.md)
-            + [設定 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [設定 Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [設定 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [設定 Hadoop](installation/using/configure-fda-hadoop.md)
-            + [設定 Oracle](installation/using/configure-fda-oracle.md)
+            + [設定 Microsoft SQL 伺服器](installation/using/configure-fda-sql.md)
             + [設定 Netezza](installation/using/configure-fda-netezza.md)
+            + [設定 Oracle](installation/using/configure-fda-oracle.md)
+            + [設定 PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [設定 SAP HANA](installation/using/configure-fda-sap-hana.md)
+            + [設定 Snowflake](installation/using/configure-fda-snowflake.md)
             + [設定 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [設定 Teradata](installation/using/configure-fda-teradata.md)
-            + [設定 SAP HANA](installation/using/configure-fda-sap-hana.md)
-            + [設定 Microsoft SQL 伺服器](installation/using/configure-fda-sql.md)
-            + [設定 PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [設定Vertica analytics](installation/using/configure-fda-vertica.md)
          + [遠端存取權限](installation/using/remote-database-access-rights.md)
          + [連結資料庫](installation/using/connecting-to-database.md)
          + [建立資料方案](installation/using/creating-data-schema.md)

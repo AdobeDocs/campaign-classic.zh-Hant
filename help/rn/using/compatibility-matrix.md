@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: fad7770e26bf06d13f7e2bcf136cc5386a394f50
-workflow-type: ht
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -150,7 +150,7 @@ ht-degree: 100%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016</p>
+<p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p><strong>警告：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解更多</a>。</p>
@@ -199,21 +199,15 @@ ht-degree: 100%
 <td><strong>資料庫版本</strong></td>
 <td><strong>Campaign 版本</strong></td>
 <tr>
-<tr>
-<td>Snowflake</td>
-<td> </td>
-<td>7.2.1 及以上</td>
+<td>Amazon Redshift</td>
+<td><p> </p>
+<td>v7.0 19.1.4 及以上</td>
+</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
 <td>7.2.1 及以上</td>
-</tr>
-<tr>
-<td>Amazon Redshift</td>
-<td><p> </p>
-<td>v7.0 19.1.4 及以上</td>
-</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -223,6 +217,16 @@ ht-degree: 100%
 <p>11.x</p>
 <p>10.x</p>
 </td>
+<td>v7.0 19.1.4 及以上</td>
+</tr>
+<tr>
+<td>Snowflake</td>
+<td> </td>
+<td>7.2.1 及以上</td>
+</tr>
+<tr>
+<td>vertica analytics</td>
+<td> </td>
 <td>v7.0 19.1.4 及以上</td>
 </tr>
 </tbody>
@@ -236,34 +240,9 @@ ht-degree: 100%
 <td><strong>資料庫版本</strong></td>
 <td><strong>Campaign 版本</strong></td>
 <tr>
-<td>Vertica</td>
-<td> </td>
-<td>v7.0 19.1.4 及以上</td>
-</tr>
-<tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
 <td>v7.0 19.1.4 及以上</td>
-</tr>
-<tr>
-<td>Oracle</td>
-<td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
-<p>11g</p>
-</td>
-<td>v7.0 及以上</td>
-</tr>
-<tr><td>SQL Server</td>
-<td>
-<p>2019</p>
-<p>2017</p>
-<p>2016</p>
-<p>2014</p>
-<p>2012 SP1 及 SP2</p>
-</td>
-<td>v7.0 及以上</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
@@ -276,19 +255,36 @@ ht-degree: 100%
 </td>
 </tr>
 <tr>
-<td>Teradata</td>
+<td>Netezza</td>
 <td>
-<p>16.20</p>
-<p>16</p>
-<p>15.10</p>
-<p>15.0</p>
+<p>7.2</p>
 </td>
 <td>v7.0 及以上</td>
 </tr>
 <tr>
-<td>Netezza</td>
+<td>Oracle</td>
 <td>
-<p>7.2</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
+<p>11g</p>
+</td>
+<td>v7.0 及以上</td>
+</tr>
+<tr>
+<td>SAP HANA</td>
+<td>
+<p>第 1 版 SPS 12</p>
+</td>
+<td>v7.0 及以上</td>
+</tr>
+<tr><td>SQL Server</td>
+<td>
+<p>2019年</p>
+<p>2017年</p>
+<p>2016年</p>
+<p>2014年</p>
+<p>2012 SP1 及 SP2</p>
 </td>
 <td>v7.0 及以上</td>
 </tr>
@@ -301,9 +297,12 @@ ht-degree: 100%
 <td>v7.0 及以上</td>
 </tr>
 <tr>
-<td>SAP HANA</td>
+<td>Teradata</td>
 <td>
-<p>第 1 版 SPS 12</p>
+<p>16.20</p>
+<p>16</p>
+<p>15.10</p>
+<p>15.0</p>
 </td>
 <td>v7.0 及以上</td>
 </tr>
@@ -330,22 +329,22 @@ ht-degree: 100%
 
 <table>
 <tbody>
-<tr>
-<td>Microsoft Windows Server</td>
-<td>
-<p>2019 年（7.2.1 發行版本開始）</p>
-<p>2016</p>
-<p>2012</p>
-</td>
 </tr>
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (自 Campaign v7.3 起)、</p>
+<p>11 年（7.3 發行版本開始）</p>
 <p>10（建議用於日文執行個體）</p>
 <p>8</p>
 </td>
 </tr>
+<tr>
+<td>Microsoft Windows Server</td>
+<td>
+<p>2019 年（7.2.1 發行版本開始）</p>
+<p>2016年</p>
+<p>2012年</p>
+</td>
 </tbody>
 </table>
 

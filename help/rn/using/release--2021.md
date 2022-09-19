@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
 workflow-type: tm+mt
-source-wordcount: '2543'
-ht-degree: 100%
+source-wordcount: '2545'
+ht-degree: 99%
 
 ---
 
@@ -131,7 +131,7 @@ _2021 年 6 月 5 日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Vertica FDA 連接器</strong><br/> </th> 
+<th> <strong>VertiVertica Analyticsca FDA連接器</strong><br/> </th> 
 </tr> 
 </thead> 
 <tbody> 
@@ -170,7 +170,7 @@ _2021 年 6 月 5 日_
 
 下列系統現在已支援 Campaign：
 * Google BigQuery FDA 連接器
-* Vertica FDA 連接器
+* VertiVertica Analyticsca FDA連接器
 * PostgreSQL 13
 
 瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
