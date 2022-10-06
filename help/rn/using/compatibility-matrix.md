@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ ht-degree: 99%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
 <p><strong>警告：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解更多</a>。</p>
@@ -225,7 +225,7 @@ ht-degree: 99%
 <td>7.2.1 及以上</td>
 </tr>
 <tr>
-<td>vertica analytics</td>
+<td>Vertica Analytics</td>
 <td> </td>
 <td>v7.0 19.1.4 及以上</td>
 </tr>
@@ -280,10 +280,10 @@ ht-degree: 99%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 及 SP2</p>
 </td>
 <td>v7.0 及以上</td>
@@ -342,8 +342,8 @@ ht-degree: 99%
 <td>Microsoft Windows Server</td>
 <td>
 <p>2019 年（7.2.1 發行版本開始）</p>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tbody>
 </table>
