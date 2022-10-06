@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2583'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [設定 Snowflake](installation/using/configure-fda-snowflake.md)
             + [設定 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [設定 Teradata](installation/using/configure-fda-teradata.md)
-            + [設定Vertica analytics](installation/using/configure-fda-vertica.md)
+            + [設定 Vertica Analytics](installation/using/configure-fda-vertica.md)
          + [遠端存取權限](installation/using/remote-database-access-rights.md)
          + [連結資料庫](installation/using/connecting-to-database.md)
          + [建立資料方案](installation/using/creating-data-schema.md)
