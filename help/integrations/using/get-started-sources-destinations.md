@@ -5,16 +5,16 @@ description: 進一步了解Adobe Experience Platform來源和目的地。
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 89a18ae9ec57376d6ebec6c416c7562f960eb882
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 # 使用來源和目的地 {#rtcdp}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 關於來源和目的地
 
