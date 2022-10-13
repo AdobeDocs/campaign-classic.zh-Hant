@@ -1,78 +1,78 @@
 ---
 product: campaign
-title: 配置市場活動響應管理器
-description: 瞭解如何配置市場活動響應管理器
+title: 設定促銷活動回應管理員
+description: 了解如何設定Campaign回應管理員
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
 
 ---
 
-# 配置市場活動響應管理器{#configuration}
+# 設定促銷活動回應管理員{#configuration}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-本節面向負責配置響應管理的人員。 它假定對擴展架構、定義工作流和SQL寫程式有一定程度的瞭解。
+本節內容適用於負責設定回應管理的人員。 它假定了有關擴展架構、定義工作流和SQL寫程式的一定知識。
 
-這使您能夠瞭解如何將標準資料模型調整為與個人表一起位於Adobe Campaign外部的事務表的特定性質。 這一個人名表可以與Adobe Campaign現有個人名表或另一個名表一致
+這可讓您了解如何透過個人表格，將標準資料模型調整為Adobe Campaign外部交易表的特定性質。 這一個人名表可以與Adobe Campaign的可用個人名表或不同的名表保持一致
 
-測量假設由操作流程工作流啟動( **[!UICONTROL operationMgt]** )。 每個假設都表示一個單獨的進程，以非同步方式執行，並且執行狀態（正在編輯、掛起、已完成、失敗等） 並由調度程式控制，該調度程式管理優先順序約束、同時進程數的限制、低活動頁以及頻率的自動執行。
+測量假設由操作程式工作流程啟動( **[!UICONTROL operationMgt]** )。 每個假設代表以非同步方式執行的個別程式，且執行狀態為（正在編輯、待定、已完成、失敗等） 由調度器控制，該調度器管理優先順序約束、同時處理的數量限制、低活動頁和具有頻率的自動執行。
 
-## 配置架構 {#configuring-schemas}
+## 設定結構 {#configuring-schemas}
 
 >[!CAUTION]
 >
->不要修改應用程式的內置架構，而是使用架構擴展機制。 否則，在將來升級應用程式時，將不會更新修改的架構。 這可能在使用Adobe Campaign時導致故障。
+>請勿修改應用程式的內建結構，而是使用結構擴充機制。 否則，在將來升級應用程式時，修改的架構將不會更新。 這可能會在使用Adobe Campaign時導致故障。
 
-在使用反應模組之前，需要應用程式整合，以便定義要衡量的各種表（事務處理、事務詳細資訊）及其與交貨、優惠和個人的關係。
+在使用反應模組之前需要應用程式整合，以便定義要測量的各種表（事務、事務詳細資訊）及其與傳送、選件和個人的關係。
 
-### 標準架構 {#standard-schemas}
+### 標準結構 {#standard-schemas}
 
-開箱即用 **[!UICONTROL nms:remaMatch]** 模式包含反應日誌表，即個體、假設和事務表之間的關係。 此模式將用作反應日誌的最終目標表的繼承模式。
+現成可用 **[!UICONTROL nms:remaMatch]** 模式包含反應日誌表，即個體、假設和事務表之間的關係。 此架構應作為反應記錄最終目的地表的繼承架構。
 
-的 **[!UICONTROL nms:remaMatchRcp]** 架構也是一個標準，它包含為Adobe Campaign收件人( **[!UICONTROL nms:recipient]** )。 為了使用，需要將其擴展以映射到事務表（包含採購等）。
+此 **[!UICONTROL nms:remaMatchRcp]** 架構也是標準，包含Adobe Campaign收件者( **[!UICONTROL nms:recipient]** )。 若要使用，需要將其擴充以對應至交易表（包含購買等）。
 
 ### 事務表和事務詳細資訊 {#transaction-tables-and-transaction-details}
 
-事務表必須包括指向個人的直接連結。
+交易表必須包括指向個人的直接連結。
 
-您還可以添加包含事務詳細資訊的表。 這與個人沒有直接聯繫。
+您也可以新增包含交易詳細資料的表格。 這與個人並無直接關聯。
 
-例如，如果我們以收款為例，則事務處理表連結到聯繫人（收款表），而收款行表僅連結到收款表（明細表）。 然後，您可以在接收行表連結到接收表的層直接配置假設。
+以收款為例，事務處理表連結到聯繫人（收款表），收款行表僅連結到收款表（明細表）。 然後，您可以直接在收款行表連結到收款表的層配置假設。
 
 >[!NOTE]
 >
->如果希望保留描述假設中預期行為的接收標識符，則可以擴展nms:remaMatchRcp表模板以將標識符添加到該模板中（在這種情況下，沒有將ROI計算連結到這些欄位）。
+>如果您想要保留在假設中描述預期行為的接收標識符，則可以擴展nms:remaMatchRcp表模板以將標識符添加到該模板（在此情況下，不會將ROI計算連結到這些欄位）。
 
-我們強烈建議添加事件日期。
+強烈建議新增事件日期。
 
 完成配置後，以下架構將顯示不同表之間的聯接：
 
 ![](assets/response_data_model.png)
 
-### 響應管理和收件人 {#response-management-with-adobe-campaign-recipients}
+### 回應管理與收件者 {#response-management-with-adobe-campaign-recipients}
 
-在本示例中，我們將使用Adobe Campaign內置收件表在響應管理模組中整合一個採購表 **[!UICONTROL nms:recipient]**。
+在此範例中，我們將使用Adobe Campaign內建的收件者表格，在回應管理模組中整合購買表格 **[!UICONTROL nms:recipient]**.
 
-上的響應日誌表 **[!UICONTROL nms:remaMatchRcp]** 擴展收件人以添加到採購表架構的連結。 在以下示例中，將調用採購表 **演示：購買**。
+上的回應記錄表 **[!UICONTROL nms:remaMatchRcp]** 收件者會延伸，以新增連結至購買表格結構。 在以下範例中，購買表格稱為 **示範：購買**.
 
-1. 通過Adobe Campaign瀏覽器，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**。
-1. 按一下右鍵 **收件人** 選擇 **[!UICONTROL Actions]** 和 **[!UICONTROL Modify the options of the targeting dimensions]**。
+1. 透過Adobe Campaign總管，選取 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
+1. 按一下右鍵 **收件者** 然後選取 **[!UICONTROL Actions]** 和 **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. 您可以個性化 **[!UICONTROL Extension namespace]** 在下一個窗口中，按一下 **[!UICONTROL Next]**。
+1. 您可以個人化 **[!UICONTROL Extension namespace]** 在下一個視窗中，按一下 **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
-1. 在 **[!UICONTROL Response management]** 類別，確保 **[!UICONTROL Generate a storage schema for reactions]** 的子菜單。
+1. 在 **[!UICONTROL Response management]** 類別，請確定 **[!UICONTROL Generate a storage schema for reactions]** 框。
 
-   然後按一下 **[!UICONTROL Define additional fields...]** 選擇相關事務表，並將所需欄位添加到nms:remaMatchRcp模式的擴展。
+   然後按一下 **[!UICONTROL Define additional fields...]** 選擇相關事務表，並將所需欄位添加到nms:remaMatchRcp方案的擴展中。
 
    ![](assets/delivery_mapping3.png)
 
@@ -100,15 +100,15 @@ name="remaMatchRcp" namespace="cus">
 </srcSchema>
 ```
 
-### 具有個性化收件表的響應管理 {#response-management-with-a-personalized-recipient-table}
+### 使用個人化收件者表格進行回應管理 {#response-management-with-a-personalized-recipient-table}
 
-在本示例中，我們將使用Adobe Campaign提供的收件人表以外的個人表，將採購表整合到我們的響應管理模組中。
+在此範例中，我們將使用Adobe Campaign中可用的收件者表格以外的個人表格，在回應管理模組中整合購買表格。
 
-* 建立從 **[!UICONTROL nms:remaMatch]** 架構。
+* 建立從 **[!UICONTROL nms:remaMatch]** 綱要。
 
-   由於個人表與Adobe Campaign收件人表不同，因此必鬚根據 **[!UICONTROL nms:remaMatch]** 架構。 然後，使用指向交貨日誌和購買表的連結完成該操作。
+   由於個人表格與Adobe Campaign收件者表格不同，因此必鬚根據 **[!UICONTROL nms:remaMatch]** 綱要。 然後填入連結至傳送記錄檔和購買表格。
 
-   在以下示例中，我們將使用 **演示：broadLogPers** 架構和 **演示：購買** 事務表：
+   在下列範例中，我們將使用 **demo:broadLogPers** 綱要與 **示範：購買** 事務表：
 
    ```
    <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -127,9 +127,9 @@ name="remaMatchRcp" namespace="cus">
    </srcSchema>
    ```
 
-* 修改中的假設窗體 **[!UICONTROL nms:remaHypothesis]** 架構。
+* 修改 **[!UICONTROL nms:remaHypothesis]** 綱要。
 
-   預設情況下，響應日誌清單在收件人日誌中可見。 因此，必須修改假設表單，才能查看在上一步中建立的新響應日誌。
+   依預設，回應記錄檔清單會顯示在收件者記錄檔中。 因此，您必須修改假設表單，才能檢視上一步驟期間建立的新回應記錄。
 
    例如：
 
@@ -144,14 +144,14 @@ name="remaMatchRcp" namespace="cus">
       </container> 
    ```
 
-## 管理指示器 {#managing-indicators}
+## 管理指標 {#managing-indicators}
 
-「響應管理器」模組附帶了預定義指示器的清單。 但是，您可以添加其他個性化度量指標。
+回應管理員模組隨附預先定義的指標清單。 不過，您可以新增其他個人化測量指標。
 
-為此，必須通過為每個新指示符插入兩個欄位來擴展假設表：
+要執行此操作，您必須為每個新指示器插入兩個欄位，以擴展假設表：
 
-* 第一個目標群體，
-* 第二個是控制組。
+* 第一個是目標群體，
+* 控制組的第二個。
 
 例如：
 
