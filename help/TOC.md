@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: ht
-source-wordcount: '2583'
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+workflow-type: tm+mt
+source-wordcount: '2584'
 ht-degree: 100%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 100%
          + [報告](platform/using/faq-reporting.md)
          + [開發](platform/using/faq-developers.md)
          + [教學課程](platform/using/tutorials.md)
+      + [字彙](platform/using/ac-glossary.md)
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
@@ -516,7 +517,7 @@ ht-degree: 100%
 + 管理優惠方案{#managing-offers}
    + 開始使用互動 {#interaction-overview}
       + [互動與優惠管理](interaction/using/interaction-and-offer-management.md)
-      + [字彙](interaction/using/glossary.md)
+      + [字彙](interaction/using/i-glossary.md)
       + [互動最佳實務](interaction/using/interaction-best-practices.md)
    + 一般操作 {#general-operation}
       + [實施步驟](interaction/using/implementation-steps.md)
