@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 互動類型與聯絡方法 {#interaction-types-and-contact-methods}
 
-互動有兩種可能的類型：入站互動（由聯絡人起始）和出站互動（由優惠方案製作人起始）。
+互動有兩種可能的類型：入站互動（由聯絡人起始）和出站互動（由選件設計人員起始）。
 
 這兩種互動可以在統一模式（針對單一聯絡計算選件）或批次模式（針對一組聯絡計算選件）中執行。 通常，入站互動以統一模式執行，而出站互動以批次模式執行。 然而，對於交易式訊息，例如，在統一模式下執行出站互動時，可能會有某些例外(請參閱 [本節](../../message-center/using/about-transactional-messaging.md))。
 
