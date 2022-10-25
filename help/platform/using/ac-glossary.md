@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 891418c4120793cf296a65f7aed86e71925a0d66
+source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
 workflow-type: tm+mt
-source-wordcount: '6454'
+source-wordcount: '6453'
 ht-degree: 4%
 
 ---
@@ -782,7 +782,7 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 配置檔案是代表最終客戶、潛在客戶或潛在客戶的資訊記錄。 每個設定檔都對應於nmsRecipient表格中的記錄或包含cookie ID、客戶ID、行動識別碼或與特定通道相關的其他資訊的外部表格。
 
-深入了解 [設定檔](../../platforrm/using/about-profiles.md).
+深入了解 [設定檔](../../platform/using/about-profiles.md).
 +++
 
 +++**方案**
