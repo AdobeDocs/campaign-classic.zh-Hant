@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
+source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
 workflow-type: tm+mt
-source-wordcount: '6453'
+source-wordcount: '6260'
 ht-degree: 4%
 
 ---
@@ -100,14 +100,17 @@ ACS Connector(Prime Offering)橋接Adobe Campaign v7和Adobe Campaign Standard�
 深入了解 [行銷活動](../../campaign/using/designing-marketing-campaigns.md).
 +++
 
-+++**轉換過程**
+<!--
+-----UNCLEAR-----
++++**Changeover process**
 
-*內容：行銷活動互動*
+*Context: Campaign Interaction*
 
-在促銷活動互動的情境中，轉換程式是已識別環境中已啟動的程式，負責在未明確和/或隱含識別連絡人時，將呼叫導向匿名環境。
+In the context of Campaign Interaction, the changeover process is an activated process in an identified environment, responsible for directing the call to an anonymous environment if the contact has not been explicitly and/or implicitly identified.
 
-深入了解 [互動](../../interaction/using/interaction-and-offer-management.md).
+Learn more about [Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
+-->
 
 +++**通道**
 
@@ -174,14 +177,17 @@ Campaign資料模型是一組結構，可定義資料類型及其關係（連結
 深入了解 [資料庫清理工作流程](../../production/using/database-cleanup-workflow.md).
 +++
 
-+++**專用伺服器**
+<!--
+----UNCLEAR----
++++**Dedicated server**
 
-*內容：交易式訊息傳送*
+*Context: Transactional Messaging*
 
-專用執行伺服器以利用交易式訊息傳送。 伺服器通常每小時最多可處理50,000個引擎呼叫。 「每專用伺服器」的指定不一定與物理伺服器有1:1的關聯，因為Adobe可能利用虛擬化技術來達到同等的效果。
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
-深入了解 [交易式訊息傳送](../../message-center/using/about-transactional-messaging.md).
+Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
+-->
 
 +++**傳遞度**
 
@@ -272,6 +278,7 @@ Distributed Marketing附加元件提供給Campaign運營商的協作工作區，
 ## E - H {#sec-2}
 
 <!--
+----DEPREACTED----
 +++**E4X**
 
 The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
@@ -431,12 +438,15 @@ Forms會定義特定結構類型的介面表示法。 Forms是輕鬆建立及編
 深入了解 [互動](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**影像提供**
+<!--
+----UNCLEAR----
++++**Image serving**
 
-為傳送的收件者提供電子郵件內嵌影像的功能。 根據電子郵件系統的「下載影像」功能插入影像，是在Campaign的追蹤記錄中產生「開啟」項目的原因。
+The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
 
-深入了解 [影像提供](../../delivery/using/defining-the-email-content.md#adding-images).
+Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
+-->
 
 +++**入站互動**
 
@@ -495,6 +505,7 @@ Forms會定義特定結構類型的介面表示法。 Forms是輕鬆建立及編
 +++
 
 <!--
+----ACS?----
 +++**Localization**
 
 This template type is used to manage multilingual messages.  It is available for Email and SMS messages and useable in standalone mode, within a workflow or in a recurring delivery. In the multilingual feature templates, the language management is based on variants. Each variant represents one language.  This functionality is available only in Adobe Campaign Standard.  
@@ -759,15 +770,16 @@ Adobe Campaign提供內建的個人化區塊，您可以將其插入傳遞中。
 
 預先定義的篩選器是已儲存以供重複使用的查詢。 使用預先定義的篩選器可提高生產力（因為只建立一次）、協助建立一致性（因為所有行銷人員都可以使用這些篩選器），並降低行銷人員所需的技能，因為行銷人員可以使用可能無法自行建立的程式碼或邏輯。
 
-深入了解 [預先定義的篩選](../../configuration/using/creating-filters.md).
+深入了解 [預先定義的篩選](../../platform/using/creating-filters.md#filtering-recipients).
 +++
 
 <!--
+----DEPREACTED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
 
-Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-filters.md).
+Learn more about [Predictive Engagement Scoring](../../platform/using/creating-filters.md).
 +++
 -->
 
@@ -794,12 +806,14 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 +++**公用資源**
 
-「Adobe促銷活動」中的「公用資源」資料夾會保留應用程式伺服器托管的影像。 傳送中的影像必須發佈至應用程式伺服器（或如果已設定Campaign，則發佈至影像托管伺服器），才會顯示在傳送中，例如電子郵件。
+Adobe Campaign中的「公用資源」資料夾可保留應用程式伺服器托管的影像。 傳送中的影像必須發佈至應用程式伺服器（或如果已設定Campaign，則發佈至影像托管伺服器），才會顯示在傳送中，例如電子郵件。
 
 深入了解 [公用資源](../../installation/using/deploying-an-instance.md#managing-public-resources).
 +++
 
 +++**推播**
+
+*內容：行動應用程式頻道*
 
 推播通知是行動應用程式收到的訊息。 推播通知的設定是透過在行動應用程式中加入Experience PlatformSDK程式碼，以便與Adobe Campaign搭配使用。 推送功能提供兩個傳送通道：iOS和Android。
 
@@ -824,10 +838,13 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 深入了解 [轉譯函式](../../interaction/using/creating-offer-spaces.md).
 +++
 
-+++**重新定位促銷活動**
+<!--
+-----DID NOT FIND IN DOCS----
++++**Retargeting campaigns**
 
-將先前傳送或傳送的收件者重新設為目標的促銷活動。
+Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
+-->
 
 +++**結構擴充功能**
 
@@ -838,14 +855,14 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 +++**結構描述**
 
-架構是定義特定資料類型的XML文檔。 結構在產品資料庫中以資料庫表的形式實現。  運算子在Campaign中操控結構，而產品會將其動作轉譯為必要的SQL，然後對資料庫執行。 請注意，這些術語（結構/表格）通常由運算子交互使用，但它們是產品體系結構中的不同元素。
+架構是與資料庫表關聯的XML文檔。 它定義了資料結構並描述了表的SQL定義。 運算子在Campaign中操控結構，而產品會將其動作轉譯為必要的SQL，然後對資料庫執行。
 
 深入了解 [結構](../../configuration/using/about-schema-reference.md).
 +++
 
 +++**種子地址**
 
-種子地址用於鎖定不符合所定義的目標準則的收件者。這樣，超出傳遞範圍的收件者就可以收到傳遞，如同任何其他目標收件者一樣。
+種子地址用於鎖定不符合所定義的目標準則的收件者。這樣，超出傳遞範圍的收件者就可以收到傳遞，如同任何其他目標收件者一樣。 它們會新增至訊息的對象中，以偵測任何詐用收件者資料庫的行為或確保傳遞。
 
 深入了解 [種子地址](../../delivery/using/about-seed-addresses.md).
 +++
@@ -870,12 +887,12 @@ Adobe Campaign可讓您建立和管理資訊服務，例如電子報或產品更
 
 在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 「控制面板」可讓您對SFTP伺服器執行動作，例如監控儲存容量、管理IP位址允許清單，以及管理公開SSH金鑰。
 
-深入了解 [SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=en).
+深入了解 [SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**訂閱服務活動**
 
-此工作流程活動可讓您針對轉變中指定的母體建立或刪除資訊服務的訂閱。
+訂閱服務工作流程活動可讓您針對轉變中指定的母體建立或刪除資訊服務的訂閱。
 
 深入了解 [訂閱服務活動](../../workflow/using/subscription-services.md).
 +++
@@ -896,23 +913,23 @@ Adobe Campaign可讓您建立和管理資訊服務，例如電子報或產品更
 深入了解 [目標資料](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
-+++**目標圖**
++++**目標對應**
 
-這是傳遞通道與特定資料類型的對應。 Adobe Campaign本身不會傳送至電子郵件地址或電話號碼，而是傳送至資料類型。 目標映射（有時稱為「傳送映射」）可定義不同傳送管道連結至結構之資料欄位的方式。 它會使用特定欄位或運算式定義Campaign傳送至該資料類型的方式。
+「目標對應」是將傳遞通道對應至特定資料類型。 目標對應定義不同傳送通道如何連結至架構的資料欄位。 它會使用特定欄位或運算式定義Campaign傳送至該資料類型的方式。
 
-深入了解 [目標資料](../../delivery/using/define-the-right-audience.md#target-mappings).
+深入了解 [目標對應](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**目標定位活動**
 
-這些是特定於鎖定目標、控制母體資料和篩選活動的工作流程活動。 它們允許運算子通過定義集、使用交集、聯合或排除操作拆分或組合這些集來生成一個或多個目標。
+鎖定目標活動是特定於鎖定目標、控制母體資料及篩選活動的工作流程活動。 它們允許運算子通過定義集、使用交集、聯合或排除操作拆分或組合這些集來生成一個或多個目標。
 
 深入了解 [目標定位活動](../../workflow/using/about-targeting-activities.md).
 +++
 
 +++**目標維度**
 
-由查詢或其他工作流活動產生（傳回）的資料類型。 請注意，Adobe Campaign只會傳回回應者資料庫列的主索引鍵，無論使用哪個查詢來取得。
+目標維度是查詢或其他工作流程活動產生（傳回）的資料類型。 請注意，Adobe Campaign只會傳回回應者資料庫列的主索引鍵，無論使用哪個查詢來取得。
 
 深入了解 [目標維度](../../workflow/using/targeting-data.md).
 +++
@@ -921,18 +938,13 @@ Adobe Campaign可讓您建立和管理資訊服務，例如電子報或產品更
 
 *內容：行銷資源管理(MRM)*
 
-「任務」工作流活動將人為操作納入工作流的邏輯中。 您可以指定兩種情況：第一個是任務完成時，第二個是任務未完成時（如果手動將任務標籤為未完成或任務過期）。
-
-通常的使用案例是將離線動作併入促銷活動，或是自訂動作（例如核准）。
-
-在促銷活動工作流程中，「任務」活動
-
-
+「任務」工作流活動將人為操作納入工作流的邏輯中。 您可以指定兩種情況：第一個是任務完成時，第二個是任務未完成時。 通常的使用案例是將離線動作併入促銷活動，或是自訂動作（例如核准）。
 
 深入了解 [任務活動](../../workflow/using/task.md).
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -947,6 +959,8 @@ Learn more about [Tasks](../../workflow/using/about-workflows.md).
 +++
 
 <!--
+-----ACS -> SEEDS IN ACC-----
+
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -956,6 +970,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
+-----NOT USEFUL?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -986,6 +1001,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Triggers**
 
 Signals that initiate execution of a workflow, delivery or other action. Typically an API call. 
@@ -1000,7 +1016,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 類型規則是在傳送的分析階段中實作的業務規則。 類型規則是檢查傳送內容（控制規則）、傳送目標（篩選規則），或執行業務要求的其他邏輯（壓力規則）。 規則是可包含在一或多個類型中的精細元素。
 
-深入了解 [類型](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
+深入了解 [類型規則](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**分類**
@@ -1024,6 +1040,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 
 <!--
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
@@ -1034,7 +1051,7 @@ Learn more about [Universes](../../workflow/using/about-workflows.md).
 
 +++**網站應用程式**
 
-Web應用程式是由Campaign執行個體托管的動態和互動式應用程式頁面。 它包含來自資料庫的資料和與連接用戶的權限相適應的內容。 例如，您可以在外聯網上建立編輯表單或通知表單，包括資料庫中的資料，包括表格、圖表、輸入表單等。 此功能可讓您設計和發佈網頁，讓使用者可在其中查詢或輸入資訊。
+Web應用程式是由Campaign執行個體托管的動態和互動式應用程式頁面。 它們包含來自資料庫的資料和適合連接用戶權限的內容。 例如，您可以在外聯網上建立編輯表單或通知表單，包括資料庫中的資料，包括表格、圖表、輸入表單等。 此功能可讓您設計和發佈網頁，讓使用者可在其中查詢或輸入資訊。
 
 深入了解 [網路應用程式](../../web/using/about-web-applications.md).
 +++
@@ -1055,7 +1072,7 @@ Web應用程式是由Campaign執行個體托管的動態和互動式應用程式
 
 +++**工作台**
 
-工作台包含工作流轉變所攜帶的所有資訊。 每個工作流程都使用數個工作表。 在這些表中傳送的資料可以加速，並在整個工作流的生命週期中使用，只要不清除。 事實上，每次工作流被鈍化時，都會清除不需要的表，而且可能是在執行最大的工作流程時清除，以避免伺服器過載。
+工作台包含工作流轉變所攜帶的所有資訊。 每個工作流程都使用數個工作表。 工作台保存其源活動的結果，其內容用作工作流中下一個（連接的）活動的輸入。  工作台的操作（擴展、定制）是Adobe Campaign運算子的主要技巧之一。
 
 深入了解 [工作台](../../workflow/using/about-workflows.md).
 +++
