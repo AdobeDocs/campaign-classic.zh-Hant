@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
+source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
 workflow-type: tm+mt
-source-wordcount: '6087'
-ht-degree: 4%
+source-wordcount: '5993'
+ht-degree: 3%
 
 ---
 
@@ -140,14 +140,14 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 
 使用控制組群組透過排除其閱聽眾的一部分來評估行銷活動的影響。 操作員可以比較收到消息的目標人口的行為與未定位的聯繫人的行為。 運算子也可以根據傳送記錄，在未來的行銷活動中鎖定控制組。
 
-深入了解 [內容核准](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+深入了解 [內容群組](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**控制面板**
 
-「控制面板」可讓您管理每個執行個體的設定並追蹤其使用方式，協助您以Adobe Campaign產品管理員的身分提高工作效率。 其直覺式介面可讓您輕鬆監視主要資產的使用情況，並執行管理工作，例如 IP 位址允許清單新增、SFTP 儲存空間監控、金鑰管理等等。
+「控制面板」可協助Adobe Campaign的產品管理員管理每個執行個體的設定並追蹤其使用方式，進而提高工作效率。 其直覺式介面可讓使用者輕鬆監控關鍵資產的使用情況，並執行管理工作，例如IP位址允許清單新增、SFTP儲存空間監控、金鑰管理等。
 
-深入了解 [內容核准](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant).
+深入了解 [內容面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant).
 +++
 
 +++**立方體**
@@ -170,7 +170,7 @@ Adobe Campaign隨附預先定義的資料模型，可透過安裝各種套件來
 
 Campaign資料模型是一組結構，可定義資料類型及其關係（連結）。 資料模型是抽象定義，實際上是使用包含實際資料的資料庫實現的。
 
-深入了解 [自訂資源](../../configuration/using/about-data-model.md).
+深入了解 [資料模型](../../configuration/using/about-data-model.md).
 +++
 
 +++**資料庫清除工作流程**
@@ -261,7 +261,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *內容：分散式行銷*
 
-Distributed Marketing附加元件提供給Campaign運營商的協作工作區，用於在中央實體（總部、行銷部門等）之間實作行銷活動 本地實體 (銷售地點、地區代理等)。 此合作以共用工作區為基礎，稱為 **Campaign套件清單**，中央建立的行銷活動範本和執行個體會提供給當地實體。
+Distributed Marketing附加元件選件給行銷活動營運商，是用於在中央實體（總部、行銷部門等）之間實作行銷活動的協作工作區 本地實體 (銷售地點、地區代理等)。 此合作以共用工作區為基礎，稱為 **Campaign套件清單**，中央建立的行銷活動範本和執行個體會提供給當地實體。
 
 深入了解 [分散式行銷](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -270,7 +270,7 @@ Distributed Marketing附加元件提供給Campaign運營商的協作工作區，
 
 值的分佈是一種工具，它顯示當前存在於資料庫中的架構屬性的值分佈。 這可協助您判斷哪些值可用、其計數和百分比，並避免在建立查詢或運算式時值的大小寫和拼字問題。
 
-深入了解 [分散式行銷](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+深入了解 [值分佈](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**網域委派**
@@ -295,7 +295,7 @@ The version of Javascript that is used in Adobe Campaign Classic. Sometimes call
 
 *內容：行銷活動互動*
 
-適用性規則是套用至環境、類別或優惠方案的限制，內容涉及有效期、目標和權重。 它們可讓營運商確保選件與目標連絡人一致。 在優惠方案環境中，適用性規則包括套用至優惠方案和要鎖定的收件者的簡報規則。 在類別中，適用性規則可讓運算子及時限制類別的有效性、定義應用程式主題並決定要鎖定的收件者。 它們也可以定義指定時段的乘數權重。 這可讓運算子共用其他類別中選件的規則，以簡化其管理。 在優惠方案中，適用性規則可讓運算子及時限制優惠方案的有效性，並決定要鎖定的收件者。
+適用性規則是套用至環境、類別或優惠方案的限制，內容涉及有效期、目標和權數。 它們可讓營運商確保選件與目標連絡人一致。 在優惠方案環境中，適用性規則包括套用至優惠方案和要鎖定的收件者的簡報規則。 在類別中，適用性規則可讓運算子及時限制類別的有效性、定義應用程式主題並決定要鎖定的收件者。 它們也可以定義指定時段的乘數權重。 這可讓運算子共用其他類別中選件的規則，以簡化其管理。 在優惠方案中，適用性規則可讓運算子及時限制優惠方案的有效性，並決定要鎖定的收件者。
 
 深入了解 [適用性規則](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -482,7 +482,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**執行個體設定**
 
-執行個體設定是Adobe Campaign執行個體的組態詳細資訊。 這些設定在「部署」嚮導（「工具」>「高級」>「部署嚮導」）或伺服器和/或實例配置檔案中定義。
+執行個體設定是Adobe Campaign執行個體的組態詳細資訊。 這些設定在「部署」嚮導（「工具」>「高級」>「部署」嚮導）或伺服器和/或實例配置檔案中定義。
 
 深入了解 [執行個體設定](../../installation/using/about-initial-configuration.md).
 
@@ -542,12 +542,15 @@ This template type is used to manage multilingual messages.  It is available for
 深入了解 [命名空間](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
-+++**導覽列**
+<!--
+----generic, not specific to campaign----
++++**Navigation bar**
 
-導覽列是在介面頂端執行的導覽元素。 導覽列會重新分組平台的各種核心功能。 按一下導覽列連結，以顯示與此功能相關的功能集。 哪些核心功能可用取決於您所安裝的套件、附加元件以及您的存取權。導覽列的用途是簡化螢幕管理並提高生產力。
+The navigation bar is the navigation element running across the top of the interface. The navigation bar regroups the various core capabilities of the platform. Click a navigation bar link to display the set of functionalities related to this capability. The list of core capabilities you can access depends on the packages and add-ons you have installed and on your access rights. The purpose of the Navigation bar is to simplify screen management and increase productivity.
 
-深入了解 [導覽列](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
+Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
+-->
 
 +++**導覽樹狀結構**
 
@@ -574,7 +577,7 @@ This template type is used to manage multilingual messages.  It is available for
 深入了解 [優惠方案目錄](../../interaction/using/offer-catalog-overview.md).
 +++
 
-+++**優惠方案連絡人**
++++**優惠方案聯絡人**
 
 *內容：行銷活動互動*
 
@@ -592,7 +595,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 選件 **設計環境** 是運算子建立選件、定義類型規則，以及選取將由選件鎖定的結構的環境。 儲存生成的優惠方案的表也由環境定義。 依預設，Interaction附加元件會隨 **設計** 環境與 **即時** 環境。 兩個環境都已預先設定為鎖定內建的收件者表格。
 
-深入了解 [設計環境](../../interaction/using/fundamental-principles.md).
+深入了解 [選件設計環境](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**優惠方案引擎套利**
@@ -619,7 +622,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 選件環境是根資料夾，可定義選件目錄、其可用空格以及環境的預先定義篩選器。 運算子需要為每個目標維度建立一個環境。 選件環境有兩種類型：設計與即時。
 
-深入了解 [環境](../../interaction/using/fundamental-principles.md).
+深入了解 [選件環境](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**選件即時環境**
@@ -628,7 +631,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 「選件即時」環境會連結至促銷活動 **設計環境**. 其內容和資格已透過 **設計環境**. 可以選擇它們以在網站上演示，或者插入到出站消息中。
 
-深入了解 [即時環境](../../interaction/using/fundamental-principles.md).
+深入了解 [選件即時環境](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**優惠方案簡報規則**
@@ -662,7 +665,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 *內容：行銷活動互動*
 
-優惠方案主張是此動作的結果，包括在指定優惠方案空間向聯絡人呈現優惠方案，例如網站上的橫幅、電子郵件或簡訊內容。 此結果儲存在優惠方案主張表格中，定義優惠方案、收件者和時間戳記，提供收件者已收到之所有優惠方案的記錄。
+優惠方案表示法是管道用來顯示優惠方案的資訊。 選件表示可以從表示選件的空間的呈現函式構造，或直接輸入到介面中(例如，在HTML塊中)。 優惠方案可以由空格表示。
 
 深入了解 [互動](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -676,13 +679,13 @@ This template type is used to manage multilingual messages.  It is available for
 深入了解 [選件模擬](../../interaction/using/about-offers-simulation.md).
 +++
 
-+++**優惠方案空間**
++++**優惠空間**
 
 *內容：行銷活動互動*
 
 選件空間是一個資料夾，用於定義公開選件的位置。 定義空格可讓您指定使用的頻道、建立選件的內容，以及指定呈現的選件。 優惠方案空間是通道與優惠方案引擎之間的介面。
 
-深入了解 [選件模擬](../../interaction/using/creating-offer-spaces.md).
+深入了解 [優惠方案空間](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**選件主題**
@@ -747,7 +750,7 @@ This template type is used to manage multilingual messages.  It is available for
 深入了解 [浮動視窗](../../workflow/using/building-a-workflow.md#adding-and-linking-activities).
 +++
 
-+++**效能監控**
++++**效能監視**
 
 效能監視資訊顯示在監視頁簽上。 它顯示底層系統的度量，如記憶體和CPU使用量、SMTP伺服器統計資訊、伺服器進程和其他相關資訊。
 
@@ -1010,11 +1013,11 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 +++
 
 <!------- USEFUL HERE??----->
-+++**觸發的促銷活動**
++++**觸發的行銷活動**
 
-「觸發促銷活動」是在工作流程中收到API請求時執行的促銷活動。 API呼叫由啟動工作流程執行之工作流程中的訊號活動使用。
+觸發的促銷活動是在工作流程中收到API請求時執行的促銷活動。 API呼叫由啟動工作流程執行之工作流程中的訊號活動使用。
 
-深入了解 [觸發的促銷活動](../../workflow/using/external-signal.md).
+深入了解 [觸發促銷活動](../../workflow/using/external-signal.md).
 +++
 
 <!--
