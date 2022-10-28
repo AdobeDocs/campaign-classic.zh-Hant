@@ -4,11 +4,9 @@ title: Adobe Campaign辭匯表
 description: Adobe Campaign辭匯表
 role: User, Data Architect
 level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
+source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '6041'
 ht-degree: 3%
 
 ---
@@ -140,14 +138,14 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 
 使用控制組群組透過排除其閱聽眾的一部分來評估行銷活動的影響。 操作員可以比較收到消息的目標人口的行為與未定位的聯繫人的行為。 運算子也可以根據傳送記錄，在未來的行銷活動中鎖定控制組。
 
-深入了解 [內容群組](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+深入了解 [控制組](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**控制面板**
 
 「控制面板」可協助Adobe Campaign的產品管理員管理每個執行個體的設定並追蹤其使用方式，進而提高工作效率。 其直覺式介面可讓使用者輕鬆監控關鍵資產的使用情況，並執行管理工作，例如IP位址允許清單新增、SFTP儲存空間監控、金鑰管理等。
 
-深入了解 [內容面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant).
+深入了解 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant).
 +++
 
 +++**立方體**
@@ -284,18 +282,18 @@ Distributed Marketing附加元件選件給行銷活動營運商，是用於在�
 ## E - H {#sec-2}
 
 <!--
-----DEPREACTED----
+----DEPRECATED------>
 +++**E4X**
 
-The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
+E4X是Adobe Campaign Classic中使用的Javascript版本。 有時稱為ECMAScript，它是Javascript的擴充功能，可將Javascript和XML原語混合在相同的程式碼中。 請注意，E4X已分類為過時語言。
 +++
--->
+
 
 +++**適用性規則**
 
 *內容：行銷活動互動*
 
-適用性規則是套用至環境、類別或優惠方案的限制，內容涉及有效期、目標和權數。 它們可讓營運商確保選件與目標連絡人一致。 在優惠方案環境中，適用性規則包括套用至優惠方案和要鎖定的收件者的簡報規則。 在類別中，適用性規則可讓運算子及時限制類別的有效性、定義應用程式主題並決定要鎖定的收件者。 它們也可以定義指定時段的乘數權重。 這可讓運算子共用其他類別中選件的規則，以簡化其管理。 在優惠方案中，適用性規則可讓運算子及時限制優惠方案的有效性，並決定要鎖定的收件者。
+適用性規則是套用至環境、類別或優惠方案的限制，內容涉及有效期、目標和權重。 它們可讓營運商確保選件與目標連絡人一致。 在優惠方案環境中，適用性規則包括套用至優惠方案和要鎖定的收件者的簡報規則。 在類別中，適用性規則可讓運算子及時限制類別的有效性、定義應用程式主題並決定要鎖定的收件者。 它們也可以定義指定時段的乘數權重。 這可讓運算子共用其他類別中選件的規則，以簡化其管理。 在優惠方案中，適用性規則可讓運算子及時限制優惠方案的有效性，並決定要鎖定的收件者。
 
 深入了解 [適用性規則](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -1060,14 +1058,14 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 
 <!--
------NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
 
 Learn more about [Universes](../../workflow/using/about-workflows.md).
 +++
--->
+------>
 
 +++**網站應用程式**
 
