@@ -4,7 +4,7 @@ title: Adobe Campaign辭匯表
 description: Adobe Campaign辭匯表
 role: User, Data Architect
 level: Beginner
-source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 3%
@@ -154,7 +154,7 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 
 多維資料集是Adobe Campaign直覺式資料探索工具，可協助使用者建立和共用動態報表。
 
-深入了解 [立方體](../../reporting/using/about-cubes.md).
+深入了解 [立方體](../../reporting/using/ac-cubes.md).
 +++
 
 +++**自訂資源**
