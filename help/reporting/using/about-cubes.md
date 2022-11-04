@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: 開始使用 cubes
+title: 關於立方體
 description: 開始使用 cubes
 feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 2665ea2ba67a0ca2a4beb0b076543b3245acbebb
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 3%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
