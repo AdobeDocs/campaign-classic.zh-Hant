@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Adobe Campaign 不是專門用於報告的工具：在 Adobe Campaign 中建立�
 
 建立並設定多維度資料集後，便可以用於報告查詢方塊和網頁應用程式；可以在樞紐分析表內使用及操作多維度資料集。
 
-瞭解如何[使用多維度資料集探索資料](../../reporting/using/using-cubes-to-explore-data.md)。
+瞭解如何[使用多維度資料集探索資料](../../reporting/using/ac-cubes.md)。
 
 ## 我可以利用線上意見調查的結果來建立報告嗎？ {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
