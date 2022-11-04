@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2588'
 ht-degree: 100%
 
 ---
@@ -314,6 +314,7 @@ ht-degree: 100%
       + [報吿屬性](reporting/using/properties-of-the-report.md)
       + [設定報告存取權](reporting/using/configuring-access-to-the-report.md)
       + [針對報吿的動作](reporting/using/actions-on-reports.md)
+   + [以 cubes 設計報吿](reporting/using/ac-cubes.md)
    + 以 cubes 設計報吿 {#designing-reports-with-cubes}
       + [開始使用 cubes](reporting/using/about-cubes.md)
       + [建立指標](reporting/using/creating-indicators.md)
