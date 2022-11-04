@@ -4,7 +4,7 @@ title: 建立表格
 description: 建立表格
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -15,52 +15,52 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-可以向報表中添加表以顯示資料。 這可以是基於多維資料集度量建立的透視表、具有組的清單或包含值細分的表。
+您可以新增表格至報表以顯示資料。 這可以是根據多維資料集測量建立的透視表、具有組的清單或包含值劃分的表。
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## 建立包含組的清單 {#creating-a-list-with-group}
+## 建立包含群組的清單 {#creating-a-list-with-group}
 
-A **[!UICONTROL List with group]** type table lets you group data in the table and produce statistics on it. 例如，您可以為資料建立合計和子合計。 每個組都有其自己的頁眉、詳細資訊和頁腳行。
+A **[!UICONTROL List with group]** 「類型表格」(type table)可讓您將表格中的資料分組，並產生相關統計資料。 例如，您可以建立資料的總計和子總計。 每個群組都有其專屬的頁首、詳細資料和頁尾行。
 
 >[!CAUTION]
 >
->的 **[!UICONTROL Page]** 包含表的活動前必須有 **[!UICONTROL Query]** 或 **[!UICONTROL Script]** 活動以收集要在報告中分析的資料。 有關這些活動的詳細資訊，請參閱 [收集要分析的資料](../../reporting/using/collecting-data-to-analyze.md) 和 [指令碼活動](../../reporting/using/advanced-functionalities.md#script-activity)。
+>此 **[!UICONTROL Page]** 包含表格的活動前面必須有 **[!UICONTROL Query]** 或 **[!UICONTROL Script]** 收集要在報表中分析的資料的活動。 如需這些活動的詳細資訊，請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md) 和 [指令碼活動](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### 操作原則 {#operating-principle}
 
-可能需要同時分析多個資料類別。 使用具有組的清單，可以組合資料並建立同一表中不同資料組的統計資訊。 為此，可以在表中建立組。
+您可能需要同時分析數個資料類別。 具有群組的清單可讓您結合資料，並針對相同表格內的各種資料群組建立統計資料。 若要這麼做，您可以在表格中建立群組。
 
-在以下示例中，組顯示資料庫中的所有市場活動、交貨以及每個交貨和每個市場活動發送的消息數。
+在下列範例中，群組會顯示資料庫中的所有促銷活動、傳送，以及每次傳送和每個促銷活動所傳送的訊息數。
 
-它允許您列出市場活動(**[!UICONTROL Label (Campaign)]**，交貨清單(**[!UICONTROL Label]** )連結到市場活動，並允許您計算每個傳遞發送的郵件數(**[!UICONTROL Processed)]**，然後為每個促銷活動添加它們(**[!UICONTROL Sum(@processed)]** )。
+它可讓您列出促銷活動(**[!UICONTROL Label (Campaign)]**，傳遞清單(**[!UICONTROL Label]** )連結至促銷活動，並可讓您計算每次傳送傳送的訊息數(**[!UICONTROL Processed)]**，再為每個促銷活動新增促銷活動(**[!UICONTROL Sum(@processed)]** )。
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
 ### 實施步驟 {#implementation-steps}
 
-下面提供了一個完整的實現示例： [用例：使用組清單建立報告](#use-case--create-a-report-with-a-group-list)。
+以下提供完整的實作範例： [使用案例：建立包含群組清單的報表](#use-case--create-a-report-with-a-group-list).
 
-Please note the following steps to create a &#39;List with group&#39; type table:
+請注意以下步驟，以建立「具有組的清單」類型表：
 
-1. 轉到報表圖表並放置 **[!UICONTROL Query]** 的子菜單。 Refer to [Collect data to analyze](../../reporting/using/collecting-data-to-analyze.md).
-1. Fill in the source table and select the fields of the table which the statistics will concern.
-1. 放置a **[!UICONTROL Page]** 的下界。 有關此內容的詳細資訊，請參閱 [靜態元素](../../reporting/using/creating-a-new-report.md#static-elements)。
-1. 插入 **[!UICONTROL List with group]** 在頁面中鍵入table。
+1. 前往報表圖表，並放置 **[!UICONTROL Query]** 活動。 請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md).
+1. 填寫源表，並選擇統計資訊將涉及的表的欄位。
+1. 放置 **[!UICONTROL Page]** 活動。 有關詳細資訊，請參閱 [靜態元素](../../reporting/using/creating-a-new-report.md#static-elements).
+1. 插入 **[!UICONTROL List with group]** 在頁面中輸入表格。
 1. 指定資料路徑，或在查詢中選擇作為資料源的表。
 
-   如果以後要恢復源表中的欄位，並將它們插入表的單元格，則此步驟是必需的。
+   如果以後要恢復源表中的欄位，並將它們插入表的單元格中，則此步驟是必需的。
 
-1. 建立表及其內容。
-1. 在 **[!UICONTROL Preview]** 頁籤。 然後，您可以發佈報告，並根據需要將其導出為其他格式。 有關此內容的詳細資訊，請參閱 [導出報告](../../reporting/using/actions-on-reports.md#exporting-a-report)。
+1. 建立表格及其內容。
+1. 在 **[!UICONTROL Preview]** 標籤。 接著，您可以發佈報表，並視需要將其匯出為不同格式。 有關詳細資訊，請參閱 [匯出報表](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-### 添加行和列 {#adding-lines-and-columns}
+### 新增行和欄 {#adding-lines-and-columns}
 
-預設情況下， **[!UICONTROL List with group]** 類型表包括頁眉、明細行和頁腳行。
+依預設， **[!UICONTROL List with group]** 類型表包括頁眉、明細行和頁腳行。
 
-組本身包括頁眉、明細和頁腳行。
+組本身包括頁眉、詳細資訊和頁腳行。
 
-* **標題行**:此行允許您為表的列指定標題。
+* **標題行**:此行可讓您為表格的欄指定標題。
 
    ![](assets/s_advuser_ergo_listgroup_003a.png)
 
@@ -68,94 +68,94 @@ Please note the following steps to create a &#39;List with group&#39; type table
 
    ![](assets/s_advuser_ergo_listgroup_004.png)
 
-* **頁腳行**:此行允許您顯示總值。
+* **頁尾行**:此行可讓您顯示總值。
 
    ![](assets/s_advuser_ergo_listgroup_003.png)
 
-可以添加行和列以滿足您的需要。
+您可以新增行和欄以符合您的需求。
 
-該組可放置在表的任何行上，並包括其自己的頁眉、詳細資訊和頁腳行。
+組可以放置在表的任何行上，並包括其自己的頁眉、詳細資訊和頁腳行。
 
 ![](assets/s_advuser_ergo_listgroup_019.png)
 
-**行和列**:要添加或刪除行或列，請轉到現有行或列，然後使用按一下右鍵菜單。
+**行和列**:要添加或刪除行或列，請轉到現有行或列，然後使用右鍵菜單。
 
 ![](assets/s_advuser_ergo_listgroup_006.png)
 
-添加的行的性質取決於游標的位置。 例如，要添加標題行，請將游標放在標題上，然後按一下 **[!UICONTROL Add > A line above/below]**。
+添加的行的性質取決於游標的位置。 例如，要添加標題行，請將游標放在標題上，然後按一下 **[!UICONTROL Add > A line above/below]**.
 
 ![](assets/s_advuser_ergo_listgroup_006a.png)
 
-列的寬度可以通過 **[!UICONTROL Column format]** 的子菜單。
+欄的寬度可透過 **[!UICONTROL Column format]** 項目。
 
-**組**:要添加組，請轉至行並在下拉菜單中選擇匹配項。
+**群組**:若要新增群組，請移至某一行，然後在下拉式功能表中選取相符項目。
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
-### 定義單元格內容 {#defining-cell-content}
+### 定義儲存格內容 {#defining-cell-content}
 
-要編輯表格的單元格並定義其內容和格式，請轉到該單元格，然後使用按一下右鍵菜單。
+若要編輯表格的儲存格並定義其內容和格式，請移至儲存格，然後使用滑鼠右鍵功能表。
 
-使用 **[!UICONTROL Expression]** 的子菜單。
+使用 **[!UICONTROL Expression]** ，以選擇要顯示的值。
 
 ![](assets/s_advuser_ergo_listgroup_010.png)
 
 * 要將要直接分析的值插入表中，請在可用欄位中選取它們。
 
-   可用欄位清單與報表構造圖表中表之前的查詢內容一致。
+   可用欄位清單與報表建構圖表中表格之前的查詢內容一致。
 
    ![](assets/s_advuser_ergo_listgroup_011.png)
 
-* 輸入單元格的標籤，例如標題。
+* 輸入儲存格的標籤，例如標題。
 
-   為此，請使用與在資料庫中插入欄位相同的過程，但不要選擇表達式。 在 **[!UICONTROL Label]** 的子菜單。 它將按原樣顯示。
+   要執行此操作，請使用與在資料庫中插入欄位相同的過程，但不選擇表達式。 在 **[!UICONTROL Label]** 欄位。 會依原樣顯示。
 
-* 計算聚合（平均值、總和等） 並在單元格中顯示。
+* 計算匯總（平均值、總和等） 並在儲存格中顯示。
 
-   要執行此操作，請使用 **[!UICONTROL Aggregates]** 按鈕。
+   若要這麼做，請使用 **[!UICONTROL Aggregates]** 功能表項目，然後選取所需的促銷活動。
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### 定義單元格格式 {#defining-cell-format}
+### 定義儲存格格式 {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
-要定義單元格格式， **[!UICONTROL Cell format...]** 的子菜單。
+若要定義儲存格格式，請 **[!UICONTROL Cell format...]** 功能表來存取所選儲存格可用的所有格式選項。
 
-通過這些選項，您可以個性化最終的報表呈現，並更輕鬆地閱讀資訊。
+這些選項可讓您個人化報表的最終轉譯，並更輕鬆地閱讀資訊。
 
-使用 **[!UICONTROL Carriage return]** 將資料導出到Excel時的欄位：選擇 **[!UICONTROL Yes]** 值以強制回車。 導出時將保留此值。 有關此內容的詳細資訊，請參閱 [導出報告](../../reporting/using/actions-on-reports.md#exporting-a-report)。
+使用 **[!UICONTROL Carriage return]** 欄位：選取 **[!UICONTROL Yes]** 值以強制回車。 匯出時會保留此值。 有關詳細資訊，請參閱 [匯出報表](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-的 **[!UICONTROL Cell format]** 窗口，您可以訪問以下頁籤：
+此 **[!UICONTROL Cell format]** 視窗中，您可以存取下列索引標籤：
 
-* 的 **[!UICONTROL Value]** 頁籤
-* 的 **[!UICONTROL Borders]** 頁籤
-* 的 **[!UICONTROL Click]** 頁籤
-* 的 **[!UICONTROL Extra]** 頁籤
+* 此 **[!UICONTROL Value]** 標籤
+* 此 **[!UICONTROL Borders]** 標籤
+* 此 **[!UICONTROL Click]** 標籤
+* 此 **[!UICONTROL Extra]** 標籤
 
-的 **[!UICONTROL Value]** 頁籤，您可以更改字型和各種值屬性，或根據其性質定義格式。
+此 **[!UICONTROL Value]** 頁簽可讓您更改字型和各種值屬性，或根據其性質定義格式。
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-格式更改資料顯示：例如， **[!UICONTROL Number]**。 **[!UICONTROL Monetary]** 和 **[!UICONTROL Percentage]** 格式允許您對齊右側的數字並顯示小數點。
+格式會變更資料顯示：例如， **[!UICONTROL Number]**, **[!UICONTROL Monetary]** 和 **[!UICONTROL Percentage]** 格式可讓您對齊右側的圖形，並顯示小數點。
 
-如何配置貨幣格式的示例：您可以指定值所表示的貨幣，選擇是否分隔千，以紅色顯示負值。 貨幣符號的位置取決於在其配置檔案中定義的運算子的語言。
+如何設定貨幣格式的範例：您可以指定值所表示的貨幣、選擇是否要分隔千位，以及以紅色顯示負值。 貨幣符號的位置取決於其設定檔中定義的運算子語言。
 
 ![](assets/s_advuser_ergo_listgroup_012.png)
 
-Configuration example for dates: you can choose whether or not to display the time.
+日期的設定範例：您可以選擇是否顯示時間。
 
 ![](assets/s_advuser_ergo_listgroup_013.png)
 
-的 **邊框** 頁籤中，您可以將邊框添加到表格中的行和列。 Adding borders to the cells may lead to performance issues when exporting large reports into Excel.
+此 **邊框** 索引標籤可讓您將邊框新增至表格中的行和欄。 將大型報表匯出至Excel時，新增邊框至儲存格可能會導致效能問題。
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
-如有必要，可在表模板中定義邊框(**[!UICONTROL Administration > Configuration > Form rendering]** )。
+如有必要，您可以在表格範本中定義邊框(**[!UICONTROL Administration > Configuration > Form rendering]** )。
 
-在這種情況下，您會使用以下語法：
+在此情況下，您會使用下列語法：
 
-在Web頁籤中：
+在Web頁簽中：
 
 ```
  .tabular td {
@@ -163,7 +163,7 @@ Configuration example for dates: you can choose whether or not to display the ti
  }
 ```
 
-在Excel頁籤中：
+在Excel索引標籤中：
 
 ```
  <style name="odd" fillColor="#fdfdfd">
@@ -185,256 +185,256 @@ Configuration example for dates: you can choose whether or not to display the ti
  </style> 
 ```
 
-的 **[!UICONTROL Click]** 頁籤，用於在用戶按一下單元格或表格的內容時定義操作。
+此 **[!UICONTROL Click]** 索引標籤可讓您定義使用者按一下儲存格或表格內容時的動作。
 
-在下面的示例中，按一下單元格中的值可顯示報告的第二頁：它將包含有關單元格中遞送的資訊。
+在以下範例中，按一下儲存格中的值可讓您顯示報表的第二個頁面：其中會包含儲存格內傳送的資訊。
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-的 **額外** 頁籤中，您可以將視覺對象連結到資料，如彩色標籤或值欄。 當表在圖表中顯示為圖例時，將使用彩色標籤。 有關詳細資訊，請參閱實施示例： [步驟5 — 建立第二頁](#step-5---create-the-second-page)
+此 **額外** 索引標籤可讓您將視覺化連結至資料，例如彩色標籤或值列。 當表格在圖表中顯示為圖例時，會使用彩色標籤。 如需詳細資訊，請參閱實作範例： [步驟5 — 建立第二頁](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
-## 用例：使用組清單建立報告 {#use-case--create-a-report-with-a-group-list}
+## 使用案例：建立包含群組清單的報表 {#use-case--create-a-report-with-a-group-list}
 
-在此示例中，我們將建立一個兩頁的報告：第一頁將包含清單、每個市場活動的交貨總數以及發送的消息數。 傳遞名稱將是可按一下的連結，並允許您轉到報告的第二頁，查看所選傳遞的每個電子郵件域的傳遞明細，其中包含表和圖表。 在第二頁上，表將用作圖表的圖例。
+在此範例中，我們將建立兩頁報表：第一個頁面會包含清單、每個促銷活動的傳送總數，以及傳送的訊息數量。 傳送名稱將可點按連結，且可讓您前往報表的第二頁，透過表格和圖表檢視所選傳送之每個電子郵件網域的傳送劃分。 在第二頁，表格將作為圖表的圖例。
 
 ![](assets/reporting_quick_start_report-final.png)
 
 ### 步驟1 — 建立報表 {#step-1---create-a-report}
 
-建立與市場活動架構相關的新報告， **[!UICONTROL Campaigns (nms)]**。
+建立與促銷活動結構相關的新報表， **[!UICONTROL Campaigns (nms)]**.
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
-Click **[!UICONTROL Save]** to create the report.
+按一下 **[!UICONTROL Save]** 來建立報表。
 
-Go to the chart and add the first components to be used for designing the report content: a first query and a first page.
+前往圖表，並新增用於設計報表內容的第一個元件：第一個查詢和第一個頁面。
 
 ![](assets/reporting_quick_start_diagram.png)
 
-### Step 2 - Create the first query {#step-2---create-the-first-query}
+### 步驟2 — 建立第一個查詢 {#step-2---create-the-first-query}
 
-第一個查詢允許您收集連結到每個市場活動的交貨。 目標是顯示一份關於與每次活動連結的Adobe Campaign資料庫各種交付情況的報告。
+第一個查詢可讓您收集連結至每個促銷活動的傳遞。 目標是顯示連結至每個促銷活動之Adobe Campaign資料庫的各種傳送報表。
 
-按兩下第一個查詢以編輯它，然後應用以下步驟來配置它：
+按兩下第一個查詢以進行編輯，然後套用下列步驟進行設定：
 
-1. 首先更改應用查詢源的架構：選擇 **[!UICONTROL Deliveries (nms)]** 架構。
-1. 按一下 **[!UICONTROL Edit query]** 連結並顯示高級欄位。
+1. 首先，更改應用查詢源的架構：選取 **[!UICONTROL Deliveries (nms)]** 綱要。
+1. 按一下 **[!UICONTROL Edit query]** 連結及顯示進階欄位。
 
    ![](assets/reporting_quick_start_query-1.png)
 
-1. 選擇以下欄位：
+1. 選取下列欄位：
 
-   * 交貨標籤，
-   * 送貨的主鍵，
-   * 競選標籤，
-   * 已處理交貨的指標，
-   * 競選連結的外鍵，
+   * 傳遞標籤，
+   * 傳遞的主鍵，
+   * 宣傳標籤，
+   * 已處理傳送的指標，
+   * 行銷活動連結的外鍵，
    * 錯誤率指示器。
 
    ![](assets/s_advuser_report_listgroup_002.png)
 
-   將別名連結到每個欄位：建議這樣做，以便從將添加到報告第一頁的表中選擇資料。
+   將別名連結到每個欄位：建議您這麼做，以便從表格中選取資料，以新增至報表的第一頁。
 
-   在本示例中，我們將使用以下別名：
+   在此範例中，我們將使用下列別名：
 
    * 標籤： **@label**
    * 主鍵： **@deliveryId**
-   * 標籤（市場活動）: **@label1**
+   * 標籤（促銷活動）: **@label1**
    * 已處理： **@processed**
-   * 「活動」（「id」欄位）連結的外鍵： **@operationId**
+   * 「促銷活動」（「id」欄位）連結的外鍵： **@operationId**
    * 錯誤率： **@errorRatio**
 
 
-1. 按一下 **[!UICONTROL Next]** 按了兩次按鈕才能到達 **[!UICONTROL Data filtering]** 的子菜單。
+1. 按一下 **[!UICONTROL Next]** 按兩下，才能到達 **[!UICONTROL Data filtering]** 步驟。
 
-   添加篩選條件以僅收集連結到市場活動的交貨。
+   新增篩選條件，以僅收集連結至促銷活動的傳送。
 
-   此篩選器的語法如下：「『運動』的外鍵連結大於0」。
+   此篩選器的語法如下：&quot;Campaigns連結的外鍵大於0&quot;。
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. 按一下 **[!UICONTROL Finish]** 保存這些條件，然後按一下 **[!UICONTROL Ok]** 按鈕關閉對話框。
+1. 按一下 **[!UICONTROL Finish]** 若要儲存這些條件，請按一下 **[!UICONTROL Ok]** 以關閉查詢編輯器。
 
-### 第3步：建立第一頁 {#step-3--create-the-first-page}
+### 步驟3:建立第一頁 {#step-3--create-the-first-page}
 
-在此步驟中，我們將配置報告的第一頁。 要配置它，請應用以下步驟：
+在此步驟中，我們將設定報表的第一頁。 若要設定，請套用下列步驟：
 
-1. 開啟 **[!UICONTROL Page]** 並輸入其標題，例如 **交貨** 在這個例子中。
+1. 開啟 **[!UICONTROL Page]** 活動並輸入其標題，例如 **傳遞** 在這個情況下。
 
    ![](assets/s_advuser_report_listgroup_003.png)
 
-1. 通過工具欄插入包含組的清單並輸入其標籤，例如：每個市場活動的交貨清單。
+1. 透過工具列插入含群組的清單並輸入其標籤，例如：每個促銷活動的傳送清單。
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. 按一下 **[!UICONTROL Table data XPath...]** 連結並選擇傳遞連結，即 `[query/delivery]`。
+1. 按一下 **[!UICONTROL Table data XPath...]** 連結，並選取傳送連結，即 `[query/delivery]`.
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
-1. 按一下 **[!UICONTROL Data]** 頁籤和更改表佈局：在右邊添加三列。
+1. 按一下 **[!UICONTROL Data]** 頁簽和更改表格的佈局：在右側新增三欄。
 
    ![](assets/s_advuser_report_listgroup_006.png)
 
-1. 添加組。
+1. 新增群組。
 
    ![](assets/s_advuser_report_listgroup_008.png)
 
-   此組將允許您將市場活動和連結到它們的交貨分組。
+   此群組可讓您將行銷活動和連結至行銷活動的傳送分組。
 
-1. 在組窗口中，引用 **「競選」連結的外鍵** 關上窗子。
+1. 在組窗口中，參考 **「促銷活動」連結的外鍵** 然後關上窗戶。
 
    ![](assets/s_advuser_report_listgroup_007.png)
 
-1. 編輯組標題的第一個單元格並插入 **[!UICONTROL Label]** 作為表達式的市場活動欄位。
+1. 編輯群組標題的第一個儲存格並插入 **[!UICONTROL Label]** 行銷活動的欄位作為運算式。
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
-1. 編輯詳細資訊行的第二個單元格並選擇交貨 **[!UICONTROL Label]**。
+1. 編輯詳細資訊行的第二個儲存格，並選取傳送 **[!UICONTROL Label]**.
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. 編輯此單元格的格式並開啟 **[!UICONTROL Click]** 頁籤。 配置適當的選項，以便用戶按一下交貨名稱時，在同一窗口中開啟。
+1. 編輯此儲存格的格式並開啟 **[!UICONTROL Click]** 標籤。 設定適當的選項，讓使用者按一下傳送名稱時，就會在相同視窗中開啟。
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
-   要執行此操作，請選擇 **[!UICONTROL Next page]** 鍵入操作並選擇 **[!UICONTROL In the same window]** 選項。
+   若要這麼做，請選取 **[!UICONTROL Next page]** 輸入動作並選取 **[!UICONTROL In the same window]** 作為開啟的選項。
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. 在窗口的下部，按一下 **[!UICONTROL Add]** 並指定 **`/vars/selectedDelivery`** 路徑和 **[!UICONTROL @deliveryId]** 與先前建立的查詢中定義的傳遞主鍵的別名匹配的表達式。 This formula lets you access the selected delivery.
+1. 在視窗的下部，按一下 **[!UICONTROL Add]** 和指定 **`/vars/selectedDelivery`** 路徑和 **[!UICONTROL @deliveryId]** 符合傳送主要索引鍵別名的運算式，如先前建立的查詢中所定義。 此公式可讓您存取選取的傳送。
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
-1. Edit the second cell of the footer line of the group and enter **[!UICONTROL Total per campaign]** as a label.
+1. 編輯組頁尾行的第二個單元格，然後輸入 **[!UICONTROL Total per campaign]** 作為標籤。
 
    ![](assets/s_advuser_report_listgroup_012.png)
 
-1. 編輯組標題行的第三個單元格並輸入 **[!UICONTROL Number of messages sent]** 的子菜單。
+1. 編輯組標題行的第三個單元格，然後輸入 **[!UICONTROL Number of messages sent]** 作為標籤。
 
    ![](assets/s_advuser_report_listgroup_013.png)
 
-   此資訊與列標題一致。
+   此資訊與欄標題一致。
 
-1. 編輯詳細資訊行的第三個單元格，並選擇已處理的消息指示符作為表達式。
+1. 編輯詳細資訊行的第三個儲存格，並選取已處理的訊息指示器作為運算式。
 
    ![](assets/s_advuser_report_listgroup_014.png)
 
-1. 編輯組頁腳行的第三個單元格，選擇已處理的交貨指示符並應用 **[!UICONTROL Sum]** 合而為一。
+1. 編輯群組頁尾行的第三個儲存格，選取已處理的傳送指標並套用 **[!UICONTROL Sum]** 集合到其中。
 
    ![](assets/s_advuser_report_listgroup_015.png)
 
-1. 編輯詳細資訊行的第四個單元格，然後 **錯誤傳遞錯誤率** 作為表達式。
+1. 編輯詳細資訊行的第四個儲存格，並選取 **錯誤傳遞錯誤率** 作為運算式。
 
    ![](assets/s_advuser_report_listgroup_016.png)
 
-1. 選擇此單元格以顯示表示交貨錯誤率的值欄。
+1. 選取此儲存格，以顯示代表傳送錯誤率的值列。
 
-   要執行此操作，請訪問單元格格式，然後轉到 **[!UICONTROL More]** 頁籤。 選擇 **[!UICONTROL Value bar]** 的子菜單。 **[!UICONTROL Hide the cell value]** 的雙曲餘切值。
+   若要這麼做，請存取儲存格格式，然後前往 **[!UICONTROL More]** 標籤。 選取 **[!UICONTROL Value bar]** ，然後選取 **[!UICONTROL Hide the cell value]** 選項。
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   您現在可以查看報告的呈現。 按一下 **[!UICONTROL Preview]** 的子菜單。 **[!UICONTROL Global]** 選項：這顯示了Adobe Campaign資料庫中連結到市場活動的所有交貨的清單。
+   您現在可以檢視報表的呈現。 按一下 **[!UICONTROL Preview]** 標籤，然後選取 **[!UICONTROL Global]** 選項：這會顯示連結至促銷活動之Adobe Campaign資料庫中所有傳送的清單。
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   建議使用 **[!UICONTROL Preview]** 頁籤，確保正確選擇和配置了表中的資料。 完成此操作後，可以繼續設定表格格式。
+   建議您使用 **[!UICONTROL Preview]** 頁簽，確保已正確選取並設定表格中的資料。 完成此操作後，您可以繼續格式化表格。
 
-1. 應用 **[!UICONTROL Bold]** 顯示每個市場活動的合計和已處理郵件總數的單元格樣式。
+1. 套用 **[!UICONTROL Bold]** 樣式，顯示每個促銷活動的總計和處理的訊息總數。
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
-1. 按一下組題頭行的第1個單元格（顯示市場活動名稱的單元格），然後選擇 **[!UICONTROL Edit > Merge to right]**。
+1. 按一下群組標題行的第一個儲存格，即顯示促銷活動名稱的儲存格，然後選取 **[!UICONTROL Edit > Merge to right]**.
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
-   合併組題頭行的前兩個單元格將重新對齊市場活動標題和連結到它的交貨清單。
+   合併群組標題行的前兩個儲存格，將會重新對齊促銷活動標題和連結至該行銷活動的傳送清單。
 
    ![](assets/s_advuser_report_listgroup_027.png)
 
    >[!CAUTION]
    >
-   >我們建議在合併單元格之前等待您的報告生成，因為合併是不可逆的。
+   >建議您等到報表建置完成，再合併儲存格，因為合併是不可復原的。
 
 ### 步驟4 — 建立第二個查詢 {#step-4---create-the-second-query}
 
-我們希望添加第二個查詢和第二個頁面，以便在報表用戶按一下交貨時顯示交貨的詳細資訊。 在添加查詢之前，請編輯已建立的頁並啟用傳出轉換，以便它可以連結到查詢。
+我們想新增第二個查詢和第二個頁面，以在報表的使用者點按時顯示傳送的詳細資料。 新增查詢前，請編輯您建立的頁面並啟用傳出轉變，以便將其連結至查詢。
 
-1. Add a new query after the **[!UICONTROL Page]** activity and edit its schema: select the **[!UICONTROL Recipient delivery logs]** schema.
+1. 在 **[!UICONTROL Page]** 活動及編輯其結構：選取 **[!UICONTROL Recipient delivery logs]** 綱要。
 
    ![](assets/reporting_quick_start_query-2.png)
 
-1. 編輯查詢並定義輸出列。 要顯示每個電子郵件域的交貨數，您需要：
+1. 編輯查詢並定義輸出欄。 若要顯示每個電子郵件網域的傳送數量，您必須：
 
-   * 計算主鍵總和以計數交貨日誌數：
+   * 計算主要金鑰的總和，以計算傳送記錄檔的數量：
 
       ![](assets/reporting_quick_start_query-2_count.png)
 
-   * 收集收件人電子郵件域和有關此欄位的組資訊：要執行此操作，請選擇 **[!UICONTROL Group]** 的子菜單。
+   * 收集此欄位的收件者電子郵件網域和群組資訊：要執行此操作，請選取 **[!UICONTROL Group]** 選項。
 
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    將以下別名連結到欄位：
 
-   * count（主鍵）: **@count**
+   * count(primary key): **@count**
    * 電子郵件域（收件人）: **@domain**
 
       ![](assets/reporting_quick_start_query-2_alias.png)
 
 
-1. 按一下 **[!UICONTROL Next]** 按鈕兩次：這會帶你去 **[!UICONTROL Data filtering]** 的子菜單。
+1. 按一下 **[!UICONTROL Next]** 按鈕兩次：這樣就能帶你去 **[!UICONTROL Data filtering]** 步驟。
 
-   添加篩選條件以僅收集連結到選定傳遞的資訊。
+   新增篩選條件，以僅收集連結至所選傳送的資訊。
 
-   語法如下：「傳遞」連結的外鍵等於設定的值 `$([vars/selectedDelivery])`
+   語法如下：「傳送」連結的外鍵等於設定的值 `$([vars/selectedDelivery])`
 
    ![](assets/s_advuser_report_listgroup_017.png)
 
-1. 關閉查詢配置窗口，並在第二個查詢後向圖表添加頁。
+1. 關閉查詢配置窗口，並在第二個查詢後添加一個頁到圖表。
 
 ### 步驟5 — 建立第二頁 {#step-5---create-the-second-page}
 
-1. 編輯頁面並輸入其標籤： **電子郵件域**。
-1. 取消選中 **[!UICONTROL Enable output transitions]** 選項：這是報告的最後一頁，不會跟在其後的活動。
+1. 編輯頁面並輸入其標籤： **電子郵件網域**.
+1. 取消核取 **[!UICONTROL Enable output transitions]** 選項：這是報表的最後一頁，後面不會有其他活動。
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
-1. 使用按一下右鍵菜單添加具有組的新清單並調用它 **每個收件人的電子郵件域**。
-1. 按一下 **[!UICONTROL Table data XPath...]** 的 **[!UICONTROL Recipient delivery logs]** 的子菜單。
+1. 使用滑鼠右鍵功能表新增群組清單，並加以呼叫 **每個收件者的電子郵件網域**.
+1. 按一下 **[!UICONTROL Table data XPath...]** ，然後選取 **[!UICONTROL Recipient delivery logs]** 連結。
 
    ![](assets/s_advuser_report_listgroup_029.png)
 
-1. 在 **[!UICONTROL Data]** 頁籤，按如下方式調整表：
+1. 在 **[!UICONTROL Data]** 標籤，調整表格如下：
 
-   * 在右側添加兩列。
-   * 在詳細資訊行的第一個單元格中，添加 **[!UICONTROL rowNum()-1]** 表達式，以計數行數。 然後更改單元格的格式：的 **[!UICONTROL Extra]** 頁籤 **[!UICONTROL Color tab]** 按一下 **[!UICONTROL Ok]**。
+   * 在右側新增兩欄。
+   * 在詳細資訊行的第一個儲存格中，新增 **[!UICONTROL rowNum()-1]** 計算行數的運算式。 然後變更儲存格的格式：在 **[!UICONTROL Extra]** 索引標籤，選取 **[!UICONTROL Color tab]** 按一下 **[!UICONTROL Ok]**.
 
       ![](assets/s_advuser_report_listgroup_018.png)
 
-      此配置將使您能夠將表用作圖表的標題。
+      此設定可讓您將表格用作圖表的註解。
 
-   * 在詳細資訊行的第二個單元格中， **[!UICONTROL Email domain(Recipient)]** 表達式。
-   * 在詳細資訊行的第三個單元格中， **[!UICONTROL count(primary key)]** 表達式。
+   * 在詳細資訊行的第二個儲存格中，新增 **[!UICONTROL Email domain(Recipient)]** 運算式。
+   * 在詳細資訊行的第三個儲存格中，新增 **[!UICONTROL count(primary key)]** 運算式。
 
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. 使用按一下右鍵菜單將餅圖添加到頁面，然後分配 **電子郵件域** 標籤。 有關詳細資訊，請參閱 [圖表類型和變型](../../reporting/using/creating-a-chart.md#chart-types-and-variants)。
-1. 按一下 **[!UICONTROL Variants]** 連結並取消選擇 **[!UICONTROL Display label]** 和 **[!UICONTROL Display caption]** 頁籤
+1. 使用滑鼠右鍵功能表新增圓形圖至頁面，並指派 **電子郵件網域** 標籤。 如需詳細資訊，請參閱 [圖表類型和變體](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. 按一下 **[!UICONTROL Variants]** 連結並取消選取 **[!UICONTROL Display label]** 和 **[!UICONTROL Display caption]** 選項。
 1. 檢查是否未配置值排序。 如需詳細資訊，請參閱[本章節](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. 在 **[!UICONTROL Data]** 頁籤，更改資料源：選擇 **[!UICONTROL Context data]** 從下拉清單中。
+1. 在 **[!UICONTROL Data]** 頁簽，更改資料源：選取 **[!UICONTROL Context data]** 從下拉式清單中。
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
-1. 然後按一下 **[!UICONTROL Advanced settings]** 並選擇指向收件人傳遞日誌的連結。
+1. 然後按一下 **[!UICONTROL Advanced settings]** 並選取收件者傳送記錄檔的連結。
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. 在 **[!UICONTROL Chart type]** 的 **[!UICONTROL Email domain]** 變數。
-1. 然後添加要執行的計算：選擇總計作為運算子。
+1. 在 **[!UICONTROL Chart type]** 區段，選取 **[!UICONTROL Email domain]** 變數。
+1. 然後新增要執行的計算：選取總和作為運算子。
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
@@ -442,26 +442,26 @@ Go to the chart and add the first components to be used for designing the report
 
    ![](assets/s_advuser_report_listgroup_030.png)
 
-1. 保存報告。
+1. 儲存報表。
 
-   您的頁面現在已配置。
+   您的頁面現在已設定完畢。
 
-### 步驟6 — 查看報表 {#step-6---viewing-the-report}
+### 步驟6 — 檢視報表 {#step-6---viewing-the-report}
 
-要查看此配置的結果，請按一下 **[!UICONTROL Preview]** 的子菜單。 **[!UICONTROL Global]** 的雙曲餘切值。
+若要檢視此設定的結果，請按一下 **[!UICONTROL Preview]** 標籤，然後選取 **[!UICONTROL Global]** 選項。
 
-報告的第一頁詳細列出了資料庫中包含的所有交貨。
+報表的第一頁詳細說明資料庫中包含的所有傳送清單。
 
 ![](assets/s_advuser_report_listgroup_021.png)
 
-如果按一下其中一個交貨的連結，則會顯示圖表，顯示此交貨的電子郵件域的細目。 您現在位於報告的第二頁，可以通過按一下相應按鈕返回上一頁。
+如果您按一下其中一個傳送的連結，圖表會顯示此傳送的電子郵件網域劃分。 您現在位在報表的第二頁，可按一下適當的按鈕，返回上一頁。
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## 建立細分表或透視表 {#creating-a-breakdown-or-pivot-table}
+## 建立劃分或樞紐表格 {#creating-a-breakdown-or-pivot-table}
 
-此類型的表允許您顯示對資料庫中資料計算的統計資訊。
+此類型的表格可讓您顯示根據資料庫中資料計算的統計資料。
 
-這些類型的報告的配置與用於描述性分析嚮導的配置類似。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
+這些類型的報表的設定與描述性分析精靈所使用的報表類似。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 
-有關建立透視表的詳細資訊，請參閱 [此部分](../../reporting/using/using-cubes-to-explore-data.md)。
+有關建立透視表的詳細資訊，請參閱 [本節](../../reporting/using/ac-cubes.md).
