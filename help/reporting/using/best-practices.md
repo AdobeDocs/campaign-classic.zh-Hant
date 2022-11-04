@@ -1,115 +1,115 @@
 ---
 product: campaign
 title: 報告的最佳實務
-description: 市場活動報告最佳做法
+description: Campaign報表最佳實務
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
 
 ---
 
-# 報告最佳做法{#best-practices-reporting}
+# 報告最佳實務{#best-practices-reporting}
 
 ![](../../assets/common.svg)
 
 ## 分析您的需求{#analyzing-needs}
 
-使用報告工具取決於要處理的資料量、其複雜性以及要設定的報告類型。
+使用報告工具取決於要處理的資料量、其複雜性，以及要設定的報告類型。
 
-要優化報告的建立、使用和持久性，您需要仔細瞭解您想要滿足的需求。 第一個分析將使您能夠確定要建立的報告類型和最佳建立模式。 要建立報告，請應用以下步驟：
+若要最佳化報表的建立、使用和持久性，您必須詳細了解您想要滿足的需求。 第一個分析可讓您識別要建立的報表類型，以及最佳建立模式。 若要建立報表，請套用下列步驟：
 
 1. 確定需要
 
-   第一步是明確確定需求：您希望在報告中顯示的內容及其目標（監視、分析、資料導出等）。
+   第一步是明確確定需要：您要在報表中顯示的項目及其目標（監控、分析、資料匯出等）。
 
-   Adobe Campaign提供了廣泛的報告能力。 分析您確定最合適功能的需要非常重要。
+   Adobe Campaign提供多種報告功能。 必須分析您確定最合適功能的需求。
 
    例如，您可以：
 
-   * 瀏覽資料庫中的資料並定義測量。 瞭解更多資訊 [此部分](../../reporting/using/about-cubes.md)
-   * 將指標添加到現有報告。 瞭解更多資訊 [此部分](../../reporting/using/about-reports-creation-in-campaign.md)
-   * 查看資料庫中的資料。 瞭解更多資訊 [此部分](../../reporting/using/about-descriptive-analysis.md)
-   * 新建交貨報表。 瞭解更多資訊 [此部分](../../reporting/using/about-reports-creation-in-campaign.md))
-   * 從Adobe Campaign資料庫導出資料(通過工作流，請參閱 [此部分](../../workflow/using/about-workflows.md)
-   * 建立透視表。 瞭解更多資訊 [此部分](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * 瀏覽聚合資料。 瞭解更多資訊 [此部分](../../reporting/using/about-cubes.md)
-   * 使用嚮導分析資料。 瞭解更多資訊 [此部分](../../reporting/using/about-descriptive-analysis.md)
-   * 分析大量資料。 瞭解更多資訊 [此部分](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 探索資料庫中的資料並定義測量。 深入了解 [在本節](../../reporting/using/ac-cubes.md)
+   * 新增指標至現有報表。 深入了解 [在本節](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 在資料庫中查看資料。 深入了解 [在本節](../../reporting/using/about-descriptive-analysis.md)
+   * 建立新的傳送報表。 深入了解 [在本節](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱 [本節](../../workflow/using/about-workflows.md)
+   * 建立樞紐分析表。 深入了解 [在本節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * 探索匯總的資料。 深入了解 [在本節](../../reporting/using/ac-cubes.md)
+   * 使用精靈分析資料。 深入了解 [在本節](../../reporting/using/about-descriptive-analysis.md)
+   * 分析大量資料。 深入了解 [在本節](../../reporting/using/about-reports-creation-in-campaign.md)
 
-1. 確定目標人口
+1. 識別目標人口
 
-   然後，您需要瞭解您要建立的報告將針對誰，瞭解將查看報告的公眾類型以及報告顯示模式(在瀏覽器中，在Adobe Campaign，針對特定對象，針對整個平台，等等)。
+   接著，您需要找出您要建立的報表將鎖定目標對象、知道要檢視報表的公開類型，以及報表顯示模式(在瀏覽器、Adobe Campaign、特定物件、整個平台等中)。
 
-   您還可以為以下項目建立報告：
+   您也可以建立報表：
 
-   * 所有Adobe Campaign運營商，
-   * 僅有權參與營銷活動的運營商，
-   * 一個用於臨時使用的運算子，
-   * Web訪問中的所有運算子等。
+   * 所有Adobe Campaign運算子，
+   * 只具有存取行銷活動之權限的運算子，
+   * 一個用於臨時的運算子，
+   * Web訪問等中的所有操作員
 
-   這些考慮因素還需要考慮與訪問權和安全有關的問題。
+   這些考慮因素還需要考慮與訪問權限和安全性相關的問題。
 
 1. 定義內容
 
-   然後，您需要瞭解要顯示的資料類型：交付指標、資料庫概要檔案報告等。
+   接著，您必須找出您要顯示的資料類型：傳遞指標、資料庫設定檔報告等。
 
-   您還需要瞭解此資料的性質（簡單，由計算、重要等所導致）、其位置(在Adobe Campaign，在第三方系統中)、其更新頻率以定義計算週期（每日、每週、即時）以及其體積。
+   您也需要了解此資料的性質（簡單、因計算而產生、顯著等）、其位置(在Adobe Campaign中，位於協力廠商系統)、其更新頻率以定義計算週期（每日、每週、即時），以及其數量。
 
-   需要仔細檢查與資料卷和更新相關的問題，以避免報告顯示問題，特別是在時間方面。 因此，我們建議建立聚合，以預計報表外的一些資料。 包含跟蹤和傳遞日誌的表可以包含數百萬條記錄：這意味著需要通過工作流聚合資料以在報告中使用。
+   需要仔細研究與資料卷和更新相關的問題，以避免報告顯示問題，特別是在時間方面。 因此，建議您建立匯總，以預先計算報表外的部分資料。 包含追蹤和傳送記錄的表格可包含數百萬筆記錄：這表示需要透過工作流程匯總資料，才能用於報表。
 
-## 優化報表設計{#optimizing-report-creation}
+## 最佳化報表設計{#optimizing-report-creation}
 
 ### 資料卷 {#data-volume}
 
-為了保證最佳效能，操作資料量不能太大。
+為保證最佳效能，操作資料量不得過大。
 
 即：
 
-* 報告的計算時間不得超過5分鐘。
+* 報表的計算時間不得超過5分鐘。
 
-   同樣，在設計階段，如果報告計算超過60秒，則需要更改計算方法。
+   同樣，在設計階段，若資料量很小，如果報表計算超過60秒，則需要變更計算方法。
 
-* 使用市場營銷分析模組時，報告資料不能超過1000萬行。
+* 使用Marketing Analytics模組時，報表資料不得超過1,000萬行。
 
-我們還建議在夜間計算匯總，並直接在報告中使用此匯總資料。 這些聚合必須通過專用資料管理工作流（SQL查詢）建立。
+我們也建議您在晚上計算匯總，並直接在報表中使用此匯總資料。 這些匯總必須透過專用的資料管理工作流程（SQL查詢）建立。
 
-您還可以在夜間計算報告，並自動建立可隨時查看的歷史記錄，而不會使資料庫超負荷。
+您也可以在夜間計算報表，並自動建立歷史記錄，以便隨時查看，而不會超出資料庫負載。
 
 ### 查詢 {#queries}
 
-我們建議盡可能使用SQL查詢，並避免JavaScript後處理。 如有必要，請在工作流中使用指令碼活動並刪除用於計算的資料。 您還可以使用歸檔資料來加快處理時間。
+建議您盡可能使用SQL查詢，並避免進行JavaScript後置處理。 如有必要，請在工作流程中使用指令碼活動並刪除用於計算的資料。 您也可以使用封存的資料來加速處理時間。
 
-在這種情況下，應使用以下語法：
+在此情況下，應使用下列語法：
 
 ```
 if(string(ctx@_historyId)!==""))
 ```
 
-使您能夠收集報告中顯示的資料的查詢不能過於複雜，尤其是如果應用於資料庫中的所有資料。 為了提高效能，在執行以下查詢之前過濾資料會非常有用：這意味著計算只涉及部分資料。
+可讓您收集報表中顯示資料的查詢不得太複雜，尤其是如果已套用至資料庫中的所有資料。 為了改善效能，在執行這些查詢之前先篩選資料會很有幫助：這表示計算只涉及部分資料。
 
 ### 效能 {#performances}
 
-以上建議使您能夠優化報表計算。
+上述建議可讓您將報表計算最佳化。
 
-除此之外，Adobe Campaign還建議改進以下措施：
+除此之外，Adobe Campaign還建議進行下列改善：
 
-* 處理資料模型：索引欄位必須主要用於改進計算公式。
+* 使用您的資料模型：索引欄位必須主要用於改進計算公式。
 
-   要快速查找索引欄位，請查看Adobe Campaign介面中列的名稱：如果已對欄位編製索引，則排序箭頭的下划線為紅色。
+   若要快速找到索引欄位，請查看Adobe Campaign介面中的欄名稱：如果欄位已編列索引，排序箭頭會以紅色加底線。
 
-   有關索引的詳細資訊，請參閱 [此部分](../../configuration/using/data-model-best-practices.md#indexes)。
+   有關索引的詳細資訊，請參閱 [本節](../../configuration/using/data-model-best-practices.md#indexes).
 
-* 確保報告可擴展：資料量可能會隨著時間的推移而顯著增加。
+* 確認報表可擴充：資料量可能會隨著時間而顯著增加。
 
-   同樣，在test階段期間處理的資料量可能與生產中的實際資料量不同。 這就是test階段很重要的原因。
+   同樣，在測試階段期間操作的資料量可能與生產中的實際資料量不同。 這就是為什麼測試階段很重要。
 
-   最後，需要知道資料清除延遲並在必要時加以調整，以便於進行資料操作。
+   最後，需要知道資料清除延遲並在必要時調整以便於資料操作。
 
-   有關清理和資料保留的詳細資訊，請參閱 [此部分](../../configuration/using/data-model-best-practices.md#data-retention)。
+   如需清理和資料保留的詳細資訊，請參閱 [本節](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### 導出報告 {#exporting-reports}
+### 匯出報表 {#exporting-reports}
 
-Recommendations的出口報告詳見 [此部分](../../reporting/using/actions-on-reports.md#exporting-a-report)。
+Recommendations專用於匯出報表，其詳細說明於 [本節](../../reporting/using/actions-on-reports.md#exporting-a-report).
