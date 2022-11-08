@@ -1,12 +1,12 @@
 ---
 keywords: Campaign Classic;home;popular topics
 product: campaign
-title: Adobe Campaign Classicv7產品文檔
+title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 52%
+source-wordcount: '211'
+ht-degree: 54%
 
 ---
 
@@ -16,17 +16,15 @@ ht-degree: 52%
 
 ## 有哪些新功能
 
-* **[《2022年發佈計畫》](technotes/using/dc-migration.md)**<br/> 升級您的環境並改進安全性、基礎架構和效能
+* **[2022年發行計畫](technotes/using/dc-migration.md)**<br/> 升級您的環境並改進安全性、基礎架構和效能
 
-* **[7月份發佈是即時的！](rn/using/latest-release.md)**<br/> 在發行說明中發現新功能、改進和修復
+* **[7月發行版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
 
-* **[Apple郵件隱私保護常見問題](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant)** 和 **[技術](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 查找對Apple關於iOS15的公告的回應的指導
+* **[移除不正確的硬退信](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中斷後更新不正確的硬退信
 
-* **[刪除不正確的硬邊界](delivery/using/update-bounce-qualification.md)**<br/> 瞭解如何在Apple停機後更新不正確的硬邊界
+* **[保護您的Campaign執行個體](technotes/using/acc-config-updates.md)**<br/> 更新至最新組建版本，以保護您的Campaign平台
 
-* **[保護您的活動實例](technotes/using/acc-config-updates.md)**<br/> 更新到最新版本以保護您的市場活動平台
-
-* **[更新您的Adobe Experience Cloud Triggers整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth身份驗證服務已到期：必須遷移到Adobe I/O
+* **[更新Adobe Experience Cloud Triggers整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth驗證服務已終止：您必須移轉至Adobe I/O
 
 [更多更新](rn/using/documentation-updates.md)
 

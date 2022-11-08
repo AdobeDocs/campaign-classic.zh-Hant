@@ -3,9 +3,9 @@ product: campaign
 title: Apple郵件應用程式中的郵件隱私保護
 description: 了解Apple的郵件隱私權保護功能對您的行銷活動有何影響
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 我的促銷活動會受到哪些影響？
 
-Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能。 此功能不僅可用於定位和促銷活動，也可用於量度。 例如，您可以使用電子郵件開放率來評估促銷活動的成效和使用者參與度。 簡而言之，您的促銷活動可能會影響區段、鎖定目標和量度。 [了解詳情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}。
+Adobe Campaign提供使用追蹤像素來追蹤電子郵件開啟次數的功能。 此功能不僅可用於定位和促銷活動，也可用於量度。 例如，您可以使用電子郵件開放率來評估促銷活動的成效和使用者參與度。 簡而言之，您的促銷活動可能會影響區段、鎖定目標和量度。
 
 ## 我該採取什麼行動？
 
@@ -93,7 +93,7 @@ Apple的新功能是業界在電子郵件隱私保護方面應具備的特色。
 
    ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用預先定義的篩選。 [深入瞭解](../../workflow/using/creating-a-filter.md)。
+* 您可以使用預先定義的篩選。 [了解更多資訊](../../workflow/using/creating-a-filter.md)。
 
    ![](assets/identify-email-open-tracking-3.png)
 
@@ -138,7 +138,7 @@ Apple的新功能是業界在電子郵件隱私保護方面應具備的特色。
 >
 >強烈建議您在非生產環境中測試及驗證此套件。
 
-下載 [範例套件](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) 並安裝。 [深入瞭解](../../platform/using/working-with-data-packages.md#importing-packages)。
+下載 [範例套件](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) 並安裝。 [了解更多資訊](../../platform/using/working-with-data-packages.md#importing-packages)。
 
 安裝套件後，您可以從包含執行個體中現成技術工作流程的資料夾存取工作流程：
 
@@ -345,7 +345,7 @@ Apple的新功能是業界在電子郵件隱私保護方面應具備的特色。
 
 依預設， `nms:Recipient` 結構連結至您必須匯出的三個結構：
 
-| 結構 | 內容 |
+| 結構描述 | 內容 |
 | --- | --- |
 | nms:trackingLogRcp | 追蹤資料（例如，使用者、時間和相關訊息） |
 | nms:trackingUrl | 連結的詳細資訊，包括性質，例如電子郵件開啟或點進 |
@@ -361,7 +361,7 @@ Apple的新功能是業界在電子郵件隱私保護方面應具備的特色。
 
 您可以透過連結結構的有用資訊來擴充此資料：
 
-| 結構 | 內容 |
+| 結構描述 | 內容 |
 | --- | --- |
 | nms：收件者 | 與設定檔相關的詳細資訊 |
 | nms：傳遞 | 使用者回應的訊息的相關資訊 |
@@ -450,7 +450,3 @@ Apple的新功能是業界在電子郵件隱私保護方面應具備的特色。
    如果您將收件者儲存在現成可用的收件者表格以外的表格中，此類型的工作流程將十分實用。
 
    ![](assets/export-tracking-data-wkf-2.png)
-
-## 實用連結
-
-[Apple郵件隱私權保護常見問題集](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
