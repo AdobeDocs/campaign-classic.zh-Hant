@@ -4,7 +4,7 @@ title: "使用案例：顯示線上意見調查之答案的報表"
 description: "使用案例：顯示線上意見調查之答案的報表"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 使用案例：顯示線上意見調查的答案報告{#use-case-displaying-report-on-answers-to-an-online-survey}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 您可使用專屬報告來收集和分析Adobe Campaign調查的答案。
 
