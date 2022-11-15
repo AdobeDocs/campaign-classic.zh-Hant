@@ -3,9 +3,9 @@ product: campaign
 title: Apple郵件應用程式中的郵件隱私保護
 description: 了解Apple的郵件隱私權保護功能對您的行銷活動有何影響
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2056'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 有什麼改變？
 
-2021年，Apple推出其原生Mail應用程式的新隱私權保護功能。 此應用程式現在包含Apple的郵件隱私權保護功能。 基本上，傳送者無法再使用追蹤像素來收集關於已選擇開啟Apple Mail Privacy Protection功能的收件者的資訊。 [了解詳情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hant){target=&quot;_blank&quot;}。
+2021年，Apple推出其原生Mail應用程式的新隱私權保護功能。 此應用程式現在包含Apple的郵件隱私權保護功能。 基本上，傳送者無法再使用追蹤像素來收集關於已選擇開啟Apple Mail Privacy Protection功能的收件者的資訊。
 
 ## 我的促銷活動會受到哪些影響？
 
