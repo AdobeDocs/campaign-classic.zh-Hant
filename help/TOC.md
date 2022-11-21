@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
+source-git-commit: 0dd0b6f1aa69a6848a75e6299bd751de0bfddeb9
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2553'
 ht-degree: 99%
 
 ---
@@ -828,7 +828,6 @@ ht-degree: 99%
    + 開始移轉 {#migrating-to-adobe-campaign-7}
       + [移轉 Microsoft Windows平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [移轉 Linux 平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-      + [設定您的平台](migration/using/general-configurations.md)
    + [反轉程序](migration/using/about-rollback.md)
 + 技術備註{#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)

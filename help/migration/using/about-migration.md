@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-本檔案詳細說明移轉的先決條件，以及移轉至Adobe Campaign Classic v7的步驟。 步驟和選用設定視您的配置而定。 [了解更多](../../migration/using/general-configurations.md)。
+本檔案詳細說明移轉的先決條件，以及移轉至Adobe Campaign Classic v7的步驟。 步驟和選用設定視您的配置而定。
 
 移民進程必須謹慎進行，其影響必須事先充分考慮，而且必須嚴格執行。 只能由專家使用者執行。 強烈建議您與 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 開始任何移轉程式之前。
 
@@ -28,14 +28,14 @@ ht-degree: 3%
 >Adobe Campaign v7的新功能和改善項目將於 [發行說明](../../rn/using/latest-release.md).
 
 
-## 先決條件
+## 必要條件
 
 * 移轉程式必須由專家使用者執行。 您至少必須得到Adobe Campaign的資料庫專家、系統管理員和應用程式開發人員的協助。
-* 開始移轉之前，請先檢查您使用的系統和系統元件是否與v7相容。 [了解更多](../../rn/using/compatibility-matrix.md)。
+* 開始移轉之前，請先檢查您使用的系統和系統元件是否與v7相容。 [了解更多資訊](../../rn/using/compatibility-matrix.md)。
 * 如果您使用Adobe Campaign雲端訊息（中間來源部署），請先聯絡Adobe客戶服務再開始。
 * 開始移轉程式前，請 **必須** 備份資料。
 * 移轉程式可能需要數天才能完成。
-* Adobe Campaign v7是比舊版更安全的版本：這會影響配置指南，以避免資料損壞等問題，並保留資料庫中的資料完整性。 因此，v5.11和v6.02中提供的某些功能可能不再受v7支援，並且在遷移後需要調整。 身為客戶，您負責測試所有設定，包括工作流程。
+* Adobe Campaign v7是比舊版更安全的版本：這會影響配置指南，以避免資料損壞等問題，並保留資料庫中的資料完整性。 身為客戶，您負責測試所有設定，包括工作流程。
 
 如需更多必要條件，請參閱 [本頁](../../migration/using/before-starting-migration.md).
 

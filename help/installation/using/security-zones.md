@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1464'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 每個運算子都需要連結到區域才能登錄到實例，並且運算子IP必須包含在安全區域中定義的地址或地址集中。 安全區配置在Adobe Campaign伺服器的配置檔案中執行。
 
-運算子會從主控台的設定檔連結至安全區域，可在 **[!UICONTROL Administration > Access management > Operators]** 節點。 [深入瞭解](#linking-a-security-zone-to-an-operator)。
+運算子會從主控台的設定檔連結至安全區域，可在 **[!UICONTROL Administration > Access management > Operators]** 節點。 [了解更多資訊](#linking-a-security-zone-to-an-operator)。
 
 >[!NOTE]
 >
@@ -236,13 +236,25 @@ ht-degree: 1%
 
 * 只有在需要建立調查、webApps和報表的行銷使用者/管理員所使用的IP上，才將allowDebug設為true。 此標幟可讓這些IP取得顯示的中繼規則，並對其進行除錯。
 
+   * 若allowDebug設為false，則輸出為：
+
+      ```
+      <redir status='OK' date='...' sourceIP='...'/>
+      ```
+
+   * 若allowDebug設為true，則輸出為：
+
+      ```
+      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+      ```
+
 * 從不將allowEmptyPassword、allowUserPassword、allowSQLInjection設定為true。 這些屬性僅用於允許從v5和v6.0順利遷移：
 
    * **allowEmptyPassword** 讓運算子具有空密碼。 如果是這種情況，請通知所有操作員，要求他們在最後期限內設定密碼。 一旦此截止日期過後，請將此屬性變更為false。
 
    * **allowUserPassword** 可讓運算子以參數形式傳送其憑證（以便由apache/IIS/proxy記錄）。 此功能過去曾用來簡化API的使用。 您可以在逐步指南中（或在規格中）查看某些第三方應用程式是否使用此功能。 若是如此，您必須通知他們變更使用API的方式，並盡快移除此功能。
 
-   * **allowSQLInjents** 可讓使用者使用舊語法執行SQL插入。 盡快進行 [本頁](../../migration/using/general-configurations.md) 才能將此屬性設為false。 您可以使用/nl/jsp/ping.jsp?zones=true來檢查您的安全區域配置。 此頁顯示當前IP的安全措施的活動狀態（使用這些安全標誌計算）。
+   * **allowSQLInjents** 可讓使用者使用舊語法執行SQL插入。 此屬性應設為false。 您可以使用/nl/jsp/ping.jsp?zones=true來檢查您的安全區域配置。 此頁顯示當前IP的安全措施的活動狀態（使用這些安全標誌計算）。
 
 * HttpOnly cookie/useSecurityToken:請參閱 **sessionTokenOnly** 標籤。
 

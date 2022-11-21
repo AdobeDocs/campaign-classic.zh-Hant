@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
+source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 100%
+source-wordcount: '2654'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,67 @@ ht-degree: 100%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## ![](assets/do-not-localize/limited_2.png)版本 7.3.1 - 版本編號 9352 {#release-7-3-1}
+## ![](assets/do-not-localize/green_2.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
+
+_2022年11月21日_
+
+**相容性更新**
+
+* 在Microsoft Internet Explorer 11生命週期結束後，用戶端主控台中控制面板的HTML轉譯引擎現在正使用Edge Chromium。 (NEO-20741)
+
+<!--
+**Deprecated features**
+
+* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
+
+* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
+
+Learn more in the [Deprecated and removed features page](deprecated-features.md).
+
+-->
+
+**功能改進**
+
+* Google BigQuery連接器現在完全支援布林欄位。 (NEO-49181)
+* 您現在可以在 `Configuration for the redirection service` serverConf.xml檔案的區段。 這適用於下列Cookie: `uuid230`, `nllastdelid` 和 `AMCV_` (NEO-42541)
+* 現在，您可以透過設定 `showSourceIP` 在serverConf.xml檔案的重新導向節點中設為false。 [了解詳情](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**其他變更**
+
+* 網頁記錄檔已改善：現在只會針對具有管理員權限的使用者顯示logonEscalation警告。 (NEO-47167)
+* 為避免錯誤， **收集熱度圖服務工作流程的資料** (collectDataHeatMapService)現在預設會停止。 (NEO-33959)
+* 已實作各種改善，以最佳化促銷活動控制面板的CPU使用量。 (NEO-46417)
+* 為避免當機，已移除loadLibraryDebug JS方法。 (NEO-46968)
+* 對log4j程式庫的其餘參考已從Windows上安裝的Campaign中移除。 (NEO-44851)
+
+**修補程式**
+
+* 修正無法使用 **合併所選行** 工作流程選項。 (NEO-48488)
+* 修正無法 **成功** 使用Adobe Campaign Enhanced MTA時，傳送指標無法正確更新。 (NEO-50462)
+* 修正重設電子郵件傳送中的內容核準時，無法重新核准的問題。 (NEO-44259)
+* 修正了 **傳遞核准** 按鈕。 (NEO-47547)
+* 修正傳送HTML標籤中，大型HTML程式碼可能發生的效能問題。 (NEO-47440)
+* 修正啟用FeatureFlag_GZIP_Compression選項時，影響MID例項上傳送記錄狀態更新的問題。 (NEO-49183)
+* 修正了使用Token式驗證時，無法從執行例項傳送iOS行動應用程式通知的問題。 (NEO-45961)
+* 修正 **重新整理傳遞能力** 當有太多要同步的broadlog時卡住的工作流程(deliverabilityUpdate)。 (NEO-48287)
+* 修正了封鎖訊息中心同步工作流程(mcSynch)的事件類型問題。
+* 修正新增 **已開啟的收件者** indicator(estimatedRecipientOpen) **查詢** 工作流程活動。 (NEO-46665)
+* 修正 **帳單** 在同一實例上安裝Message Center控制和執行包時失敗的工作流。 (NEO-47674)
+* 修正 **帳單** 將主鍵定義為字串而非整數的表時失敗的工作流。 (NEO-46254)
+* 修正工作流程名稱太長時的熱度圖篩選器問題。 (NEO-46301)
+* 修正7.3.1中針對SnowflakeFDA連接器所導入的問題，此問題在擴充期間使用「0或1基數簡單加入」時，會導致記錄遭到捨棄。 (NEO-48737)
+* 修正SnowflakeFDA使用 **分割** 工作流程活動。 (NEO-45899)
+* 修正了無法儲存外部帳戶設定的問題。 現在，具有剖析器功能的連接器(Snowflake和Google BigQuery)的外部帳戶會在連線測試後自動儲存。 (NEO-47636)
+* 修正無法在 **資料更新** MSSQL上的工作流活動。 (NEO-47763)
+* 修正未設定引擎時區時，導致MTA程式當機的問題（MSSQL專用）。 (NEO-46619)
+* 修正當影像節點(img)包含具有個人化欄位的URL時，HTML檔案匯入的問題。 (NEO-48396)
+* 修正嘗試連線至執行個體時，發生HTTP 500錯誤的問題 `limit` 未在serverConf.xml檔案中配置節點。
+* 修正使用某些函式(例如 `to_nclob` 使用未啟用NChar的Oracleunicode資料庫。 (NEO-49361)
+* 修正了當nmsDeliveryMapping資料夾上具有讀取存取權限的使用者嘗試執行促銷活動或工作流程時，導致錯誤的問題。 (NEO-48230)
+* 修正無法 `JSPContext.sqlExecWithOneParam` 函式時無法運作。 (NEO-50066)
+* 修正了各種重新導向錯誤。 (NEO-50030)
+
+## ![](assets/do-not-localize/orange_2.png)版本 7.3.1 - 版本編號 9352 {#release-7-3-1}
 
 _2022 年 7 月 1 日_
 

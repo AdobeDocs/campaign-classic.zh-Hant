@@ -6,10 +6,10 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 0%
+source-wordcount: '706'
+ht-degree: 4%
 
 ---
 
@@ -114,9 +114,9 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
  <thead> 
   <tr> 
    <th> 運算式<br /> </th> 
-   <th> 錯誤代碼<br /> </th> 
+   <th> 錯誤碼<br /> </th> 
    <th> 記錄類型<br /> </th> 
-   <th> 註解<br /> </th> 
+   <th> 評論<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -124,7 +124,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 傳遞個人化不再支援此類語法。 請參閱 <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. 否則，檢查值類型是否正確。<br /> </td> 
+   <td> 傳遞個人化不再支援此類語法。 <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -136,7 +136,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 此連接方法不得再使用。 請參閱 <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">已識別的Web應用程式</a>.<br /> </td> 
+   <td> 此連接方法不得再使用。<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
@@ -148,14 +148,8 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> 這種錯誤會導致遷移失敗。 請參閱 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> 這種錯誤會導致遷移失敗。<br /> </td> 
   </tr> 
-  <tr> 
-   <td> SQLDATA<br /> </td> 
-   <td> PU-0006<br /> </td> 
-   <td> 錯誤<br /> </td> 
-   <td> 這種錯誤會導致遷移失敗。 請參閱 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. 如果您收到概述類型的Web應用程式錯誤記錄（從v6.02遷移），請參閱 <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">設定Campaign</a>.<br /> </td> 
-  </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
@@ -168,7 +162,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> Microsoft CRM、Salesforce、OracleCRM隨需活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM連接器</a> 目標定位活動。<br /> </td>
+   <td> Microsoft CRM、Salesforce、Oracle CRM 隨選動作活動已無法使用。若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM連接器</a> 目標定位活動。<br /> </td>
   </tr> 
  </tbody> 
 </table>

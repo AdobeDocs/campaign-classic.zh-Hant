@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3140'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 1. [管理退信的電子郵件](#managing-bounced-emails)
 1. [追蹤設定](#tracking-configuration)
 1. [行動通道參數](#mobile-channel-parameters)
-1. [地區設定](#regional-settings)
+1. [區域設定](#regional-settings)
 1. [從Internet訪問](#access-from-the-internet)
 1. [管理公共資源](#managing-public-resources)
 1. [清除資料](#purging-data)
@@ -72,16 +72,16 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 這些參數可能會在傳送範本中多載，且會針對每個傳送個別執行（如果使用者具有必要的權限）。
 
-### 傳遞電子郵件的參數 {#parameters-for-delivered-emails}
+### 傳遞的電子郵件的參數 {#parameters-for-delivered-emails}
 
 ![](assets/s_ncs_install_deployment_wiz_04.png)
 
 指定下列參數：
 
-* **[!UICONTROL Sender name]** :發件人的姓名，
-* **[!UICONTROL Sender address]** :發件人的地址，
-* **[!UICONTROL Reply address text]** :可自訂的名稱，當收件者按一下 **[!UICONTROL Reply]** 按鈕，
-* **[!UICONTROL Reply address]** :收件者點按 **[!UICONTROL Reply]** 按鈕，
+* **[!UICONTROL Sender name]** :寄件者姓名
+* **[!UICONTROL Sender address]** :發件人地址
+* **[!UICONTROL Reply address text]** :可自訂的名稱，當收件者按一下 **[!UICONTROL Reply]** 電子郵件客戶端軟體的按鈕
+* **[!UICONTROL Reply address]** :收件者點按 **[!UICONTROL Reply]** 電子郵件客戶端軟體的按鈕
 * **[!UICONTROL Error address]** :錯誤訊息的電子郵件地址。 這是用於處理退信的技術地址，包括Adobe Campaign伺服器因不存在的目標地址而收到的電子郵件。
 
 除此之外，您還可以指定 **遮罩** 已授權寄件者地址和錯誤地址。 如有必要，這些遮罩可以使用逗號加以區隔。 此設定為選用。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果位址不包含任何變數）檢查位址是否有效。 此作業模式可確保未使用任何可能觸發傳送問題的地址。 傳遞地址必須在傳遞伺服器上配置。
@@ -106,14 +106,22 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 可以使用以下選項：
 
-* **[!UICONTROL Delivery duration of messages]** :此後，傳送會停止（預設為5天）,
-* **[!UICONTROL Online resources validity duration]** :保留收件者設定檔資訊以產生鏡像頁面的時間，
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** :選取此選項時，將不會聯絡封鎖清單上的收件者，
+* **[!UICONTROL Delivery duration of messages]** :此後會停止傳送（預設為5天）。
+* **[!UICONTROL Online resources validity duration]** :保留收件者設定檔資訊以產生鏡像頁面的時間。
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** :選取此選項時，將不會聯絡封鎖清單上的收件者。
 * **[!UICONTROL Automatically ignore doubles]** :選取此選項時，不會傳送至重複的位址。
+
+>[!NOTE]
+>
+>若為托管或混合安裝，若您已升級至 [增強的MTA](../../delivery/using/sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration of the messages]** 只有在設為時才會使用 **3.5天或更少**.  如果您定義的值超過　3.5　天，則不會考慮該值。
 
 ### 重試參數 {#retry-parameters}
 
 有關回收的資訊載於 **恢復期** 和 **恢複數** 欄位：當收件者無法連線時（例如，如果收件匣已滿），依預設，程式會嘗試與他們連絡5次，每次嘗試之間間隔一小時（在最長傳送時間內）。 您可以變更這些值以符合您的需求。
+
+>[!NOTE]
+>
+>若為托管或混合安裝，若您已升級至 [增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，將不再使用促銷活動重試參數。 軟退信重試次數及兩者之間的時間長度，由Enhanced MTA根據來自訊息電子郵件網域傳回之退信的類型和嚴重性決定。
 
 ### 隔離參數 {#quarantine-parameters}
 
@@ -147,7 +155,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 ### 未處理的退回郵件 {#unprocessed-bounce-mails}
 
-退信由Adobe Campaign自動處理，並套用 **管理>促銷活動管理>非交付項目管理>傳送記錄資格** 節點。 有關詳細資訊，請參閱 [退回郵件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+退信由Adobe Campaign自動處理，並套用 **管理> Campaign Management >非交付件管理>交付日誌資格** 節點。 有關詳細資訊，請參閱 [退回郵件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 未處理的退信不會顯示在Adobe Campaign介面中。 除非使用下列欄位將它們傳輸到第三方信箱，否則會自動刪除它們：
 
@@ -270,7 +278,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
-### SMS傳送的預設帳戶 {#default-account-for-sms-delivery}
+### 簡訊傳遞的預設帳戶 {#default-account-for-sms-delivery}
 
 輸入以下資訊：
 
@@ -294,7 +302,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 * **[!UICONTROL Time between two significant errors]** :輸入預設值(預設為「1d」：日)，定義應用程式在增加錯誤計數器以備發生錯誤之前等待的時間。
 * **[!UICONTROL Maximum number of errors before quarantine]** :達到此值後，系統會隔離行動號碼(依預設為「5」：第六個錯誤時，將隔離該號碼)。 這表示該連絡人將自動排除在未來傳送之外。
 
-## 地區設定 {#regional-settings}
+## 區域設定 {#regional-settings}
 
 此階段允許您包含資料策略首選項。
 
