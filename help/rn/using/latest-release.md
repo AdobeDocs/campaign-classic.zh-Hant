@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
+source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2709'
 ht-degree: 75%
 
 ---
@@ -43,8 +43,8 @@ _2022年11月21日_
 
 **其他變更**
 
-* 網頁記錄檔已改善：現在只會針對具有管理員權限的使用者顯示logonEscalation警告。 (NEO-47167)
-* 為避免錯誤， **收集熱度圖服務工作流程的資料** (collectDataHeatMapService)現在預設會停止。 (NEO-33959)
+* 網頁記錄檔已改善： `logonEscalation` 現在只會針對具有管理員權限的使用者顯示警告。 (NEO-47167)
+* 為避免錯誤， **收集熱度圖服務的資料** (collectDataHeatMapService)工作流程現在預設會停止。 (NEO-33959)
 * 已實作各種改善，以最佳化促銷活動控制面板的CPU使用量。 (NEO-46417)
 * 為避免當機，已移除loadLibraryDebug JS方法。 (NEO-46968)
 * 對log4j程式庫的其餘參考已從Windows上安裝的Campaign中移除。 (NEO-44851)
@@ -56,11 +56,11 @@ _2022年11月21日_
 * 修正重設電子郵件傳送中的內容核準時，無法重新核准的問題。 (NEO-44259)
 * 修正了 **傳遞核准** 按鈕。 (NEO-47547)
 * 修正傳送HTML標籤中，大型HTML程式碼可能發生的效能問題。 (NEO-47440)
-* 修正啟用FeatureFlag_GZIP_Compression選項時，影響MID例項上傳送記錄狀態更新的問題。 (NEO-49183)
+* 修正影響MID例項上傳送記錄狀態更新的問題，當 `FeatureFlag_GZIP_Compression` 選項。 (NEO-49183)
 * 修正了使用Token式驗證時，無法從執行例項傳送iOS行動應用程式通知的問題。 (NEO-45961)
 * 修正 **重新整理傳遞能力** 當有太多要同步的broadlog時卡住的工作流程(deliverabilityUpdate)。 (NEO-48287)
-* 修正了封鎖訊息中心同步工作流程(mcSynch)的事件類型問題。
-* 修正新增 **已開啟的收件者** indicator(estimatedRecipientOpen) **查詢** 工作流程活動。 (NEO-46665)
+* 修正封鎖 **訊息中心同步** (mcSynch)工作流程。
+* 修正新增 **已開啟的收件者**  (estimatedRecipientOpen)指標 **查詢** 工作流程活動。 (NEO-46665)
 * 修正 **帳單** 在同一實例上安裝Message Center控制和執行包時失敗的工作流。 (NEO-47674)
 * 修正 **帳單** 將主鍵定義為字串而非整數的表時失敗的工作流。 (NEO-46254)
 * 修正工作流程名稱太長時的熱度圖篩選器問題。 (NEO-46301)
