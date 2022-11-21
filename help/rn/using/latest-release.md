@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
+source-git-commit: d592902157b499423283307402eb74452d4827bc
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 75%
@@ -36,7 +36,6 @@ _2022年11月21日_
 **已棄用功能**
 
 * 使用Facebook的社交行銷現已淘汰。 您可以使用Twitter整合在社交媒體上張貼，或使用Adobe建立自訂管道。
-
 * ACS Connector（Prime產品）現已過時。 您可以使用Campaign匯出/匯入功能，在兩個產品中擷取和插入資料。
 
 瞭解更多[與已棄用和已移除的功能頁面相關的資訊](deprecated-features.md)。
