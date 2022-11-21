@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0dd0b6f1aa69a6848a75e6299bd751de0bfddeb9
+source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2524'
 ht-degree: 99%
 
 ---
@@ -584,16 +584,6 @@ ht-degree: 99%
    + [使用案例](message-center/using/transactional-email-with-attachments.md)
 + 整合社交媒體 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
-   + 設定 {#configuration}
-      + [開始工作流程](social/using/starting-workflows.md)
-      + [建立 Facebook 應用程式](social/using/creating-a-facebook-application.md)
-      + [在 Twitter 上設定發佈](social/using/configuring-publishing-on-twitter.md)
-   + 在 Twitter 上發佈 {#publishing-on-facebook-twitter}
-      + [開始使用 Twitter](social/using/overview.md)
-      + [在 Twitter 上發佈](social/using/publishing-on-twitter.md)
-   + 獲取 Facebook 聯絡人 {#annexes}
-      + [Facebook 應用程式範例](social/using/examples-of-facebook-apps.md)
-      + [追蹤](social/using/tracking.md)
 + 安裝及設定指南 {#installing-campaign-classic}
    + 架構原則 {#architecture-and-hosting-models}
       + [一般架構](installation/using/general-architecture.md)

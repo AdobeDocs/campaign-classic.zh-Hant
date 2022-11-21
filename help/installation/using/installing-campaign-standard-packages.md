@@ -3,10 +3,10 @@ product: campaign
 title: 安裝Campaign Classic內建套件
 description: 了解如何安裝Campaign內建套件
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 13%
+source-wordcount: '1253'
+ht-degree: 12%
 
 ---
 
@@ -229,8 +229,8 @@ ht-degree: 13%
    <td> 全部 </td> 
   </tr> 
   <tr> 
-   <td> ACS 連結器<br /> </td> 
-   <td> 橋梁Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign v7中的整合功能，可自動將資料複製到Campaign Standard，將兩個應用程式的最佳功能結合在一起。 選填。<a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">了解更多</a> <br /> </td> 
+   <td> ACS Connector（已廢止）<br /> </td> 
+   <td> 橋梁Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign v7中的整合功能，可自動將資料複製到Campaign Standard，將兩個應用程式的最佳功能結合在一起。 選填。<br /> </td> 
    <td> 行銷 </td> 
   </tr> 
  </tbody> 

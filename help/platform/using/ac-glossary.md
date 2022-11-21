@@ -4,10 +4,11 @@ title: Adobe Campaign辭匯表
 description: Adobe Campaign辭匯表
 role: User, Data Architect
 level: Beginner
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '6041'
-ht-degree: 3%
+source-wordcount: '5972'
+ht-degree: 4%
 
 ---
 
@@ -31,12 +32,14 @@ A/B測試是一種功能，可讓使用者定義兩到三種電子郵件變體�
 深入了解 [存取管理](access-management.md).
 +++
 
-+++**ACS 連結器**
+<!--
++++**ACS Connector**
 
-ACS Connector(Prime Offering)橋接Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign v7中的整合功能，可自動將資料複製到Campaign Standard，將兩個應用程式的最佳功能結合在一起。 Campaign v7提供進階工具，可管理主要行銷資料庫。 從Campaign v7進行資料復寫，可讓Campaign Standard在方便使用的環境中運用豐富的資料。
+ACS Connector (Prime Offering) bridges Adobe Campaign v7 and Adobe Campaign Standard. It is an integrated feature in Campaign v7 that automatically replicates data to Campaign Standard, uniting the best of both applications. Campaign v7 has advanced tools to manage the primary marketing database. The data replication from Campaign v7 allows Campaign Standard to leverage the rich data in a user-friendly environment. 
 
-深入了解 [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
+Learn more about [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
 +++
+-->
 
 +++**活動**
 
@@ -148,7 +151,7 @@ Campaign用戶端主控台是一個豐富用戶端，可讓您連線至您的Cam
 深入了解 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant).
 +++
 
-+++**立方體**
++++**Cube**
 
 *內容：行銷分析*
 
@@ -293,7 +296,7 @@ E4X是Adobe Campaign Classic中使用的Javascript版本。 有時稱為ECMAScri
 
 *內容：行銷活動互動*
 
-適用性規則是套用至環境、類別或優惠方案的限制，內容涉及有效期、目標和權重。 它們可讓營運商確保選件與目標連絡人一致。 在優惠方案環境中，適用性規則包括套用至優惠方案和要鎖定的收件者的簡報規則。 在類別中，適用性規則可讓運算子及時限制類別的有效性、定義應用程式主題並決定要鎖定的收件者。 它們也可以定義指定時段的乘數權重。 這可讓運算子共用其他類別中選件的規則，以簡化其管理。 在優惠方案中，適用性規則可讓運算子及時限制優惠方案的有效性，並決定要鎖定的收件者。
+適用性規則是套用至環境、類別或優惠方案的限制，內容涉及有效期、目標和權數。 它們可讓營運商確保選件與目標連絡人一致。 在優惠方案環境中，適用性規則包括套用至優惠方案和要鎖定的收件者的簡報規則。 在類別中，適用性規則可讓運算子及時限制類別的有效性、定義應用程式主題並決定要鎖定的收件者。 它們也可以定義指定時段的乘數權重。 這可讓運算子共用其他類別中選件的規則，以簡化其管理。 在優惠方案中，適用性規則可讓運算子及時限制優惠方案的有效性，並決定要鎖定的收件者。
 
 深入了解 [適用性規則](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -686,7 +689,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 深入了解 [優惠方案空間](../../interaction/using/creating-offer-spaces.md).
 +++
 
-+++**選件主題**
++++**優惠主題**
 
 *內容：行銷活動互動*
 
@@ -711,7 +714,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 深入了解 [運算子](../../platform/using/access-management-operators.md).
 +++
 
-+++**運算元組**
++++**運算子群組**
 
 運算子群組可讓您管理Campaign運算子的角色。 您可以定義運算子群組，將其權限歸因於該群組，然後將運算子與一或多個群組關聯。 這可讓您重複使用權限，並讓運算子設定檔更加一致。 它還促進了配置檔案的管理和維護。
 
@@ -915,7 +918,7 @@ Adobe Campaign可讓您建立和管理資訊服務，例如電子報或產品更
 深入了解 [訂閱服務活動](../../workflow/using/subscription-services.md).
 +++
 
-+++**Target核准**
++++**目標核准**
 
 *內容：行銷活動分散式行銷*
 

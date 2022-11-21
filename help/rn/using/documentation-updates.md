@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 7f41e3209450421262acf8a753bddd3eae1fe35f
+source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '4994'
 ht-degree: 98%
 
 ---
@@ -57,7 +57,7 @@ iOS 15 的即時通知。 [閱讀全文](../../delivery/using/create-notificatio
 
 現已推出新的 Campaign v7.2.2 版本。 [閱讀全文](../../rn/using/latest-release.md)
 
-已新增與 ACS 連接器相關的疑難排解資訊。 [閱讀全文](../../integrations/using/troubleshooting-the-acs-connector.md)
+<!--Added troubleshooting information related to the ACS connector. [Read more](../../integrations/using/troubleshooting-the-acs-connector.md)-->
 
 已將已到期的舊版 PostgreSQL 版本新增至 [已棄用和已移除的功能](../../rn/using/deprecated-features.md#dbe-eol) 的頁面。
 
