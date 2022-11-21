@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: a2817dabf421281dc0ade3531af62525e045bbee
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 54%
+source-wordcount: '183'
+ht-degree: 62%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 54%
 
 * **[7月發行版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良和修正
 
-* **[移除不正確的硬退信](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中斷後更新不正確的硬退信
-
-* **[保護您的Campaign執行個體](technotes/using/acc-config-updates.md)**<br/> 更新至最新組建版本，以保護您的Campaign平台
+<!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
 * **[更新Adobe Experience Cloud Triggers整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth驗證服務已終止：您必須移轉至Adobe I/O
 
