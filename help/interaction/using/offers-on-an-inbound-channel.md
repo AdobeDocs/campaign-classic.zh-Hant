@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 6eaf7490f1be913986af2924017d014d2ba54559
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 傳入頻道上的優惠{#offers-on-an-inbound-channel}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 向匿名訪客呈現優惠方案 {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -57,8 +57,8 @@ Neobank網站想在其網站上顯示優惠方案，目標為瀏覽頁面的未�
    如此一來，任何遺失下列其中一個元素的選件將不符合此空間的資格：
 
    * 標題
-   * HTML內容
-   * 影像URL
+   * HTML 內容
+   * 影像 URL
    * 目標URL
 
    ![](assets/offer_inbound_anonymous_example_030.png)
