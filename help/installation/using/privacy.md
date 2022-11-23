@@ -4,22 +4,17 @@ title: 隱私權
 description: 進一步了解有關隱私權的最佳實務
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 197ac1322cb8f4f34d2670a29d622a21f407c90c
+source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
-# 隱私權 {#privacy}
+# 個人化與隱私 {#privacy}
 
 ![](../../assets/v7-only.svg)
 
-## 隱私權請求
-
-Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、CCPA 等）。
-
-請參閱 [本頁](../../platform/using/privacy-management.md) 如需隱私權管理的一般資訊，以及Adobe Campaign中的實作步驟。 您也會找到最佳實務，並概述使用者程式和角色。
 
 ## URL個人化 {#url-personalization}
 
@@ -187,3 +182,8 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
    除了 **robots.txt** 檔案，建議您新增 **X-Robots-Tag** 頁首。 您可以在Apache或IIS中執行，並在 **serverConf.xml** 設定檔。
 
    如需詳細資訊，請參閱 [這篇文章](https://developers.google.com/search/reference/robots_meta_tag).
+
+
+## 隱私權請求
+
+請參閱 [本頁](../../platform/using/privacy-management.md) 如需隱私權管理的一般資訊，以及Adobe Campaign中的實作步驟。 您也會找到最佳實務，並概述使用者程式和角色。
