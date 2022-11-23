@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: 隱私權
-description: 進一步了解有關隱私權的最佳實務
+title: 個人化與隱私
+description: 了解隱私權和個人化的安全性最佳實務
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
+source-git-commit: f97199e634205742b74a08932a40db2fca138cc3
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 2%
