@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: d592902157b499423283307402eb74452d4827bc
+source-git-commit: a3f64d71b857312fd3130bb66a864740c902e2f4
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2722'
 ht-degree: 75%
 
 ---
@@ -25,7 +25,10 @@ _2022年11月21日_
 
 **相容性更新**
 
+* Adobe Campaign現在與PostgreSQL 14相容。
 * 在Microsoft Internet Explorer 11生命週期結束後，用戶端主控台中控制面板的HTML轉譯引擎現在正使用Edge Chromium。 (NEO-20741)
+
+請參閱 [Campaign 相容性對照表](../../rn/using/compatibility-matrix.md#RDBMSservers)。
 
 **功能改進**
 
