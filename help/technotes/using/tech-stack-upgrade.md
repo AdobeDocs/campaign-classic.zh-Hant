@@ -4,7 +4,8 @@ title: 技術 — Adobe Campaign系統升級
 description: Adobe Campaign系統升級
 hide: true
 hidefromtoc: true
-source-git-commit: b877625c568cc9b1119a76812e92dffdab1f4bb1
+exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
+source-git-commit: b8bbdb4a0d595ec2bc884e041d1e56b81da8aa3d
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -29,7 +30,7 @@ As a **托管或托管Cloud Services客戶**,Adobe會在需要時通知您這些
 
 **您有受到影響嗎？**
 
-如果您受 [作業系統升級](#os-upgrade) 和/或 [資料庫系統升級](#pg-upgrade) 以下詳細說明，您必須將您的Campaign環境升級至與這些系統相容的最新7.3.2版。
+如果您受 [作業系統升級](#os-upgrade) 和/或 [資料庫系統升級](#pg-upgrade) 以下詳細說明，您必須將您的Campaign環境升級至 [最新7.3.2版](../../rn/using/latest-release.md#release-7-3-2)，與這些系統相容。
 
 **如何更新？**
 
