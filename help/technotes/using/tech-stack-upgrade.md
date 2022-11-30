@@ -5,10 +5,10 @@ description: Adobe Campaign系統升級
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 7d7185e9d8c376d1390dc7e5f6a8724c3cbcfd40
+source-git-commit: bffad77458ab0b4d40490a52c64c99a0fe882d22
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 8%
+source-wordcount: '499'
+ht-degree: 9%
 
 ---
 
@@ -43,7 +43,7 @@ As a **托管或托管Cloud Services客戶**,Adobe會在需要時通知您這些
 
 **您有受到影響嗎？**
 
-如果您在Debian作業系統上執行Campaign，為了從最新的Debian安全性更新中受益，您需要將Campaign基礎架構移至 **Debian 11**. 請注意，Debian 9已於2022年6月30日終止服務，不再提供安全性修正。 Adobe提供Debian 9至2023年6月30日的安全性支援。
+如果您在Debian作業系統上執行Campaign，為了從最新的Debian安全性更新中受益，您需要將Campaign基礎架構移至 **Debian 11**. 請注意，Debian 9的安全性支援將提供至2023年6月30日。
 
 **如何更新？**
 
@@ -55,7 +55,7 @@ As a **托管或托管Cloud Services客戶**,Adobe會在需要時通知您這些
 
 **您有受到影響嗎？**
 
-如果您的Campaign資料庫系統是PostgreSQL，為了從最新的PostgreSQL創新和安全更新中受益，您需要升級到 **PostgreSQL 14**. 請注意，PostreSQL 11將於2023年11月9日終止服務。
+如果您的Campaign資料庫系統是PostgreSQL，為了從最新的PostgreSQL創新和安全更新中受益，您需要升級到 **PostgreSQL 14**. 請注意，PostgreSQL 11將於2023年11月9日終止服務。
 
 **如何更新？**
 
