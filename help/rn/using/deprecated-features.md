@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
 workflow-type: tm+mt
 source-wordcount: '1684'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,14 +45,14 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
 <tr>
  <td>使用 Facebook 進行社交行銷</td>
- <td>使用Facebook的社交行銷現已淘汰。 您可以使用Twitter整合在社交媒體上張貼，或使用Adobe建立自訂管道。
+ <td>使用 Facebook 的社交行銷現已棄用。您可以使用 Twitter 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂頻道。
  <p></p>
   <p>目標移除日期：2023 年底</p>
   </td>
 </tr>
 <tr>
  <td>ACS Connector</td>
- <td>ACS Connector（Prime產品）現已過時。 您可以使用Campaign匯出/匯入功能，在兩個產品中擷取和插入資料。<p></p>
+ <td>ACS Connector (Prime 產品) 現已棄用。 您可以使用 Campaign 匯出/匯入功能，在兩個產品中擷取和插入資料。<p></p>
   <p>目標移除日期：2023 年底</p>
   </td>
 </tr>

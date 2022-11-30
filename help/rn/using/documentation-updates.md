@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '4994'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ ht-degree: 98%
 
 ### 2022 年 11 月 {#nov-2022}
 
-更新發行說明一節，提供7.3.2改善與修補程式。 [深入了解](latest-release.md)
+更新發行說明一節，提供 7.3.2 改善與修補程式。 [深入了解](latest-release.md)
 
-更新相容性矩陣，並提供Teradata17支援。 [深入了解](compatibility-matrix.md)
+更新相容性比較表，提供 Teradata 17 支援。 [深入了解](compatibility-matrix.md)
 
-已更新「檔案與資源管理」章節，其中包含 **uploadWhiteList** 屬性。 [深入了解](../../installation/using/file-res-management.md)
+已更新「檔案與資源管理」一節，包含 **uploadWhiteList** 屬性的額外資訊。 [深入了解](../../installation/using/file-res-management.md)
 
-已更新安全性區域的檔案，其中包含 **allowDebug** 屬性。 [深入了解](../../installation/using/security-zones.md#recommendations)
+已更新安全性區域文件，包含 **allowDebug** 屬性的額外資訊。 [深入了解](../../installation/using/security-zones.md#recommendations)
 
-更新移轉指南。 已移除不支援之Adobe Campaign版本的參考。 [深入了解](../../migration/using/about-migration.md)
+已更新移轉指南。 針對不支援的 Adobe Campaign 版本，已移除相關參考。 [深入了解](../../migration/using/about-migration.md)
 
 
 ### 2022 年 7 月 {#july-2022}
