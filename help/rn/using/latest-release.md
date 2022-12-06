@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: dfdcbc262249a9def6bbc67308ae810fd35990d0
+source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 99%
@@ -25,7 +25,7 @@ _2022 年 11 月 21 日_
 
 >[!CAUTION]
 >
->用戶端主控台升級為強制。 透過此檔案了解如何升級您的用戶端主控台 [頁面](../../installation/using/installing-the-client-console.md)
+>用戶端主控台升級為強制。 透過本[頁面](../../installation/using/installing-the-client-console.md)了解如何升級您的用戶端主控台。
 
 **相容性更新**
 
