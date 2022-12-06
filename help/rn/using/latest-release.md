@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: a3f64d71b857312fd3130bb66a864740c902e2f4
+source-git-commit: dfdcbc262249a9def6bbc67308ae810fd35990d0
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2737'
 ht-degree: 99%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 99%
 ## ![](assets/do-not-localize/green_2.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
 
 _2022 年 11 月 21 日_
+
+>[!CAUTION]
+>
+>用戶端主控台升級為強制。 透過此檔案了解如何升級您的用戶端主控台 [頁面](../../installation/using/installing-the-client-console.md)
 
 **相容性更新**
 
