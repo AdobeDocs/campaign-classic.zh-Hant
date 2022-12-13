@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
 workflow-type: tm+mt
 source-wordcount: '2771'
 ht-degree: 98%
@@ -149,6 +149,7 @@ _2022 年 7 月 1 日_
 * 已修正傳遞時使用錯誤 HTML 代碼而可能導致當機的問題。 (NEO-40385)
 * 非管理員使用者可能無法在傳遞屬性存取&#x200B;**分析**&#x200B;索引標籤，已修正該問題。 (NEO-34025)
 * 修正可能導致在訊息準備期間無法從外部伺服器以區塊模式上傳影像的問題。 (NEO-40307)
+* 修正了可能導致傳送給比預期更多收件者的問題。 (NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png)版本 7.2.2 - 版本編號 9349 {#release-7-2-2}
 
@@ -242,4 +243,3 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 * 修正可能導致無法預覽附加至工作流程的電子郵件傳遞的問題。(NEO-37840)
 * 修正可能導致資料庫清理工作流程刪除包含清單值的有效表格的問題。 (NEO-34911)
 * 修正可能導致計費工作流程在行銷執行個體中造成當機的問題。
-* 修正了可能導致傳送給比預期更多收件者的問題。 (NEO-45108)
