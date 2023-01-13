@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
+source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 100%
+source-wordcount: '1508'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 關於 Adobe Analytics 連接器整合 {#about-analytics-connector-integration}
 
-Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UICONTROL Web Analytics connectors]** 套件互動。 它會以關於電子郵件行銷活動後使用者行為的區段形式，將資料轉送至 Adobe Campaign。 相反地，它會將 Adobe Campaign 所傳送電子郵件行銷活動的指標和屬性傳送至 Adobe Analytics。
+Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UICONTROL Web Analytics connectors]** 套件互動。 它會以關於促銷活動後使用者行為的區段形式，將資料轉送至Adobe Campaign。 相反地，它會將Adobe Campaign傳送的促銷活動指標和屬性傳送至Adobe Analytics。
 
 >[!CAUTION]
 >
@@ -34,8 +34,8 @@ Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web 
 
 * 網站分析的角色：
 
-   1. 標記透過 Adobe Campaign 啟動的電子郵件行銷活動，
-   1. 以區段的形式，儲存收件者在按一下行銷活動電子郵件後所瀏覽的網站上的行為。 區段與放棄的產品 (已檢視但未新增至購物車或已購買)、購買物或購物車放棄有關。
+   1. 標示透過Adobe Campaign啟動的行銷活動，
+   1. 以區段的形式，儲存收件者在按一下促銷活動後所瀏覽的網站上的行為。 區段與放棄的產品 (已檢視但未新增至購物車或已購買)、購買物或購物車放棄有關。
 
 * Adobe Campaign 的角色：
 
@@ -98,7 +98,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
    ![](assets/analytics_connnector_5.png)
 
-1. 按一下&#x200B;**[!UICONTROL Add new]**&#x200B;以建立測量電子郵件行銷活動影響所需的識別碼，即內部行銷活動名稱 (cid) 和 iNmsBroadlog (bid) 表格 ID。
+1. 按一下 **[!UICONTROL Add new]** 建立測量促銷活動影響所需的識別碼，例如內部促銷活動名稱(cid)和iNmsBroadlog(bid)表格ID。
 
    若要瞭解如何編輯&#x200B;**[!UICONTROL Conversion variables]**，請參閱本[節](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=zh-Hant#admin-tools)。
 
@@ -202,7 +202,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
    >[!IMPORTANT]
    >
-   >此設定模式為專家使用者保留：此公式中的任何錯誤都可能導致電子郵件傳送停止。
+   >此配置模式為專家用戶保留：此公式中的任何錯誤都可能導致傳送停止。
 
 1. **[!UICONTROL Advanced]**&#x200B;標籤可讓您設定或修改更多技術設定。
 
@@ -223,8 +223,8 @@ Adobe Campaign 和 Adobe Analytics 之間的資料交換由四個技術工作流
 
 * **[!UICONTROL Recovering of web events]**：每小時一次，此工作流程會下載關於指定網站上使用者行為的區段，並將其納入 Adobe Campaign 資料庫中，然後開始再次行銷工作流程。
 * **[!UICONTROL Event purge]**：此工作流程可讓您根據欄位中設定的期間，從資料庫刪除所有 **[!UICONTROL Lifespan]** 事件。如需詳細資訊，請參閱[在 Adobe Campaign Classic 中設定外部帳戶](#external-account-classic)。
-* **[!UICONTROL Identification of converted contacts]**：再次行銷活動後購買的訪客目錄。此工作流程收集的資料可在 **[!UICONTROL Re-marketing efficiency]** 報告中存取，請參閱此[頁面](#creating-a-re-marketing-campaign)。
-* **[!UICONTROL Sending of indicators and campaign attributes]**：可讓您使用 Adobe Campaign Connector，透過 Adobe Analytics 將電子郵件行銷活動指標傳送至 Adobe Experience Cloud。此工作流程每天凌晨 4:00 會觸發，且可能需要 24 小時才會將資料傳送至 Analytics。
+* **[!UICONTROL Identification of converted contacts]**：再次行銷活動後購買的訪客目錄。此工作流程收集的資料可在&#x200B;**[!UICONTROL Re-marketing efficiency]**&#x200B;報搞中存取，請參閱本[頁面](#creating-a-re-marketing-campaign)。
+* **[!UICONTROL Sending of indicators and campaign attributes]**:可讓您使用Adobe Campaign Connector，透過Adobe Analytics將促銷活動指標傳送至Adobe Experience Cloud。 此工作流程每天凌晨 4:00 會觸發，且可能需要 24 小時才會將資料傳送至 Analytics。
 
    請注意，不應重新啟動此工作流程，否則會重新傳送所有可能扭曲 Analytics 結果的先前資料。
 
