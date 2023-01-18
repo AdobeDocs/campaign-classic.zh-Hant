@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ teradata外部帳戶可讓您將Campaign執行個體連結至Teradata外部資�
 
    * **[!UICONTROL Database]**:資料庫名稱（可選）
 
-   * **[!UICONTROL Options]**:要傳遞的選項Teradata。 使用下列格式：&#39;parameter=value&#39;。 使用半欄作為值之間的分隔符。
+   * **[!UICONTROL Options]**:要傳遞的選項Teradata。 使用下列格式：&#39;parameter=value&#39;。 在值之間使用分號作為分隔符。
 
    * **[!UICONTROL Timezone]**:teradata中設定的時區。 [了解更多](#timezone)
 
@@ -117,7 +117,7 @@ teradata驅動程式提供其自己的ODBC庫，但此庫可能與其他ODBC外�
 
 ![](assets/ext_account_24.png)
 
-### 查詢區
+### 查詢級區
 
 當多個Adobe Campaign使用者連線至相同的FDATeradata外部帳戶時， **[!UICONTROL Query banding]** 索引標籤可讓您在工作階段上設定查詢頻段，即一組索引鍵/值組。
 
