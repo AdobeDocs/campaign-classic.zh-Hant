@@ -3,7 +3,7 @@ product: campaign
 title: 編輯表單
 description: 編輯表單
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -17,16 +17,16 @@ ht-degree: 2%
 
 ## 概覽
 
-營銷商和操作員使用輸入表單建立、修改和預覽記錄。 Forms展示了資訊的視覺表現。
+行銷人員和營運商使用輸入表單來建立、修改和預覽記錄。 Forms會顯示資訊的視覺表示法。
 
 您可以建立和修改輸入表單：
 
-* 您可以修改預設提供的工廠輸入表單。 工廠輸入表單基於工廠資料模式。
-* 您可以基於您定義的資料架構建立自定義輸入表單。
+* 您可以修改預設傳送的工廠輸入表單。 工廠輸入表單以工廠資料結構為基礎。
+* 您可以根據定義的資料結構，建立自訂輸入表單。
 
-Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看此架構，請選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** 的子菜單。 閱讀有關 [形式結構](form-structure.md)。
+Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架構，請選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** 的上界。 深入了解 [表單結構](form-structure.md).
 
-要訪問輸入表單，請選擇 **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** 的下界：
+要訪問輸入表單，請選擇 **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** 從功能表：
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
@@ -36,78 +36,78 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 
 [顯示全文](form-structure.md#formatting)。
 
-要預覽表單，請按一下 **[!UICONTROL Preview]** 頁籤：
+若要預覽表單，請按一下 **[!UICONTROL Preview]** 標籤：
 
 ![](assets/d_ncs_integration_form_preview.png)
 
-## 窗體類型
+## 表單類型
 
-您可以建立不同類型的輸入表單。 表單類型確定用戶如何瀏覽表單：
+您可以建立不同類型的輸入表單。 表單類型決定使用者導覽表單的方式：
 
-* 控制台螢幕
+* 主控台畫面
 
-   這是預設的窗體類型。 該表單包括單頁。
+   這是預設的表單類型。 表單包含單頁。
 
    ![](assets/console_screen_form.png)
 
 * 內容管理
 
-   將此表單類型用於內容管理。 查看 [用例](../../delivery/using/use-case--creating-content-management.md)。
+   此表單類型用於內容管理。 看這個 [使用案例](../../delivery/using/use-case--creating-content-management.md).
 
    ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
-* 嚮導
+* 精靈
 
-   該表單包括多個按特定順序排列的浮動螢幕。 用戶從一個螢幕導航到下一個螢幕。 [顯示全文](form-structure.md#wizards)。
+   該形式包括按特定順序排列的多個浮動螢幕。 使用者從一個畫面導覽至下一個畫面。 [顯示全文](form-structure.md#wizards)。
 
-* 表徵圖框
+* Iconbox
 
-   此表單包含多頁。 要導航表單，用戶選擇表單左側的表徵圖。
+   此表單包含多頁。 若要導覽表單，使用者需選取表單左側的圖示。
 
    ![](assets/iconbox_form_preview.png)
 
-* 筆記本
+* Notebook
 
-   此表單包含多頁。 要導航表單，用戶選擇表單頂部的頁籤。
+   此表單包含多頁。 若要導覽表單，使用者需選取表單頂端的標籤。
 
    ![](assets/notebook_form_preview.png)
 
 * 垂直窗格
 
-   此窗體顯示導航樹。
+   此表單顯示導航樹。
 
 * 水準窗格
 
-   此窗體顯示項目清單。
+   此表單顯示項目清單。
 
 ## 容器
 
 在表單中，您可以將容器用於各種用途：
 
 * 在表單中組織內容
-* 定義對輸入欄位的訪問
-* 在其他窗體中嵌套窗體
+* 定義輸入欄位的存取權
+* 在其他表單中巢狀內嵌表單
 
 [顯示全文](form-structure.md#containers)。
 
 ### 組織內容
 
-使用容器在表單中組織內容：
+使用容器來組織表單中的內容：
 
-* 可將欄位分組為部分。
-* 您可以將頁面添加到多頁表單。
+* 您可以將欄位分組為區段。
+* 您可以將頁面新增至多頁表單。
 
-要插入容器，請使用 `<container>` 的子菜單。 [顯示全文](form-structure.md#containers)。
+若要插入容器，請使用 `<container>` 元素。 [顯示全文](form-structure.md#containers)。
 
-#### 組欄位
+#### 群組欄位
 
-使用容器將輸入欄位分組為有組織的部分。
+使用容器將輸入欄位分組為有組織的區段。
 
-要將節插入表單，請使用以下元素： `<container type="frame">`。 （可選）要添加節標題，請使用 `label` 屬性。
+若要將區段插入表單中，請使用此元素： `<container type="frame">`. （可選）要添加節標題，請使用 `label` 屬性。
 
-語法： `<container type="frame" label="`*節標題*`"> […] </container>`
+語法： `<container type="frame" label="`*section_title*`"> […] </container>`
 
-在此示例中，容器定義 **建立** 部分，包括 **[!UICONTROL Created by]** 和 **[!UICONTROL Name]** 輸入欄位：
+在此範例中，容器定義 **建立** 部分，包括 **[!UICONTROL Created by]** 和 **[!UICONTROL Name]** 輸入欄位：
 
 ```xml
 <form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
@@ -123,11 +123,11 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 
 ![](assets/console_screen_form.png)
 
-#### 將頁面添加到多頁表單
+#### 將頁面新增至多頁表單
 
-對於多頁表單，使用容器建立表單頁。
+對於多頁表單，請使用容器建立表單頁面。
 
-此示例顯示 **常規** 和 **詳細資訊** 頁：
+此範例顯示 **一般** 和 **詳細資料** 表單頁面：
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -138,23 +138,23 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 </container>
 ```
 
-### 定義對欄位的訪問
+### 定義欄位存取
 
-使用容器定義可見內容並定義對欄位的訪問權限。 可以開啟或關閉欄位組。
+使用容器來定義可見項目，並定義欄位的存取權。 您可以開啟或關閉欄位群組。
 
-### 嵌套窗體
+### 巢狀表單
 
-使用容器將表單嵌套在其它表單中。 [顯示全文](#add-pages-to-multipage-forms)。
+使用容器在其他表單中巢狀內嵌表單。 [顯示全文](#add-pages-to-multipage-forms)。
 
-## 對影像的引用
+## 影像參考
 
-要查找影像，請選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** 的子菜單。
+要查找影像，請選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** 的上界。
 
-要將影像與表單中的元素（例如表徵圖）關聯，可以添加對影像的引用。 使用 `img` 屬性，例如，在 `<container>` 的子菜單。
+若要將影像與表單中的元素（例如圖示）建立關聯，您可以將參照新增至影像。 使用 `img` 屬性，例如 `<container>` 元素。
 
 語法: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-此示例顯示對 `book.png` 和 `detail.png` 影像 `ncm` 命名空間：
+此範例顯示 `book.png` 和 `detail.png` 影像 `ncm` 命名空間：
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -165,17 +165,17 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 </container>
 ```
 
-這些影像用於用戶按一下以導航多頁表單的表徵圖：
+這些影像用於使用者點按以導覽多頁表單的圖示：
 
 ![](assets/nested_forms_preview.png)
 
 
-## 建立簡單窗體 {#create-simple-form}
+## 建立簡單表單 {#create-simple-form}
 
 要建立表單，請執行以下步驟：
 
-1. 從菜單中選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**。
-1. 按一下 **[!UICONTROL New]** 按鈕
+1. 從功能表中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+1. 按一下 **[!UICONTROL New]** 按鈕。
 
    ![](assets/input-form-create-1.png)
 
@@ -183,7 +183,7 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 
    * 指定表單名稱和命名空間。
 
-      表單名稱和命名空間可以與相關資料架構匹配。  此示例顯示 `cus:order` 資料架構：
+      表單名稱和命名空間可以符合相關資料架構。  此範例顯示 `cus:order` 資料架構：
 
       ```xml
       <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
@@ -191,7 +191,7 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
       </form>
       ```
 
-      或者，可以在 `entity-schema` 屬性。
+      或者，您可以在 `entity-schema` 屬性。
 
       ```xml
       <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
@@ -199,57 +199,57 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
       </form>
       ```
 
-   * 指定要在窗體上顯示的標籤。
-   * （可選）指定表單類型。 如果未指定表單類型，則預設使用控制台螢幕類型。
+   * 指定要在表單上顯示的標籤。
+   * （可選）指定表單類型。 如果您未指定表單類型，預設會使用主控台螢幕類型。
 
       ![](assets/input-form-create-2.png)
 
-      如果要設計多頁表單，則可以忽略 `<form>` 元素，並指定容器中的類型。
+      如果您要設計多頁表單，可以忽略 `<form>` 元素，並指定容器中的類型。
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
 1. 插入表單元素。
 
-   例如，要插入輸入欄位，請使用 `<input>` 的子菜單。 設定 `xpath` 屬性作為XPath表達式。 [顯示全文](schema-structure.md#referencing-with-xpath)。
+   例如，若要插入輸入欄位，請使用 `<input>` 元素。 設定 `xpath` 屬性作為XPath表達式。 [顯示全文](schema-structure.md#referencing-with-xpath)。
 
-   此示例顯示基於 `nms:recipient` 架構。
+   此範例顯示以 `nms:recipient` 綱要。
 
    ```xml
    <input xpath="@firstName"/>
    <input xpath="@lastName"/>
    ```
 
-1. 如果表單基於特定架構類型，則可以查找此架構的欄位：
+1. 如果表單是以特定架構類型為基礎，您可以查找此架構的欄位：
 
    1. 按一下 **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
 
       ![](assets/input-form-create-4.png)
 
-   1. 選擇該欄位並按一下 **[!UICONTROL OK]**。
+   1. 選取欄位，然後按一下 **[!UICONTROL OK]**.
 
       ![](assets/input-form-create-5.png)
 
 1. （可選）指定欄位編輯器。
 
    預設欄位編輯器與每個資料類型相關聯：
-   * 對於日期類型欄位，表單將顯示輸入日曆。
-   * 對於枚舉類型欄位，表單將顯示選擇清單。
+   * 對於日期類型欄位，表單會顯示輸入日曆。
+   * 對於枚舉類型欄位，表單顯示選擇清單。
 
-   可以使用以下欄位編輯器類型：
+   您可以使用下列欄位編輯器類型：
 
    | 欄位編輯器 | 表單屬性 |
    | --- | --- |
-   | 單選按鈕 | `type="radiobutton"` |
-   | 複選框 | `type="checkbox"` |
+   | 選項按鈕 | `type="radiobutton"` |
+   | 核取方塊 | `type="checkbox"` |
    | 編輯樹 | `type="tree"` |
 
-   閱讀有關 [記憶體清單控制](form-structure.md#memory-list-controls)。
+   深入了解 [記憶體清單控制項](form-structure.md#memory-list-controls).
 
-1. （可選）定義對欄位的訪問：
+1. （可選）定義欄位的訪問：
 
    | 元素 | 屬性 | 說明 |
    | --- | --- | --- |
-   | `<input>` | `read-only:"true"` | 提供對欄位的只讀訪問 |
+   | `<input>` | `read-only="true"` | 提供欄位的唯讀存取權 |
    | `<container>` | `type="visibleGroup" visibleIf="`*編輯 — expr*`"` | 有條件地顯示一組欄位 |
    | `<container>` | `type="enabledGroup" enabledIf="`*編輯 — expr*`"` | 有條件地啟用一組欄位 |
 
@@ -264,7 +264,7 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
    </container>
    ```
 
-1. （可選）使用容器將欄位分組為部分。
+1. （可選）使用容器將欄位分組為各節。
 
    ```xml
    <container type="frame" label="Name">
@@ -281,26 +281,26 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 
 ## 建立多頁表單 {#create-multipage-form}
 
-您可以建立多頁表單。 您也可以在其它窗體中嵌套窗體。
+您可以建立多頁表單。 您也可以在其他表單中巢狀內嵌表單。
 
-### 建立 `iconbox` 表格
+### 建立 `iconbox` 表單
 
-使用 `iconbox` 表單類型，用於在表單左側顯示表徵圖，這些表徵圖將用戶帶到表單中的不同頁面。
+使用 `iconbox` 表單類型，顯示表單左側的圖示，這會帶使用者前往表單中的不同頁面。
 
 ![](assets/iconbox_form_preview.png)
 
-將現有窗體的類型更改為 `iconbox`，請執行以下步驟：
+將現有表單的類型更改為 `iconbox`，請遵循下列步驟：
 
-1. 更改 `type` 屬性 `<form>` 元素 `iconbox`:
+1. 變更 `type` 屬性 `<form>` 元素 `iconbox`:
 
    ```xml
    <form […] type="iconbox">
    ```
 
-1. 為每個表單頁設定容器：
+1. 為每個表單頁面設定容器：
 
-   1. 添加 `<container>` 元素作為子項 `<form>` 的子菜單。
-   1. 要為表徵圖定義標籤和影像，請使用 `label` 和 `img` 屬性。
+   1. 新增 `<container>` 元素作為的子項 `<form>` 元素。
+   1. 若要定義圖示的標籤和影像，請使用 `label` 和 `img` 屬性。
 
       ```xml
       <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
@@ -318,26 +318,26 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
           </container>
       </form>
       ```
-   或者，刪除 `type="frame"` 屬性 `<container>` 元素。
+   或者，移除 `type="frame"` 屬性 `<container>` 元素。
 
-### 建立筆記本窗體
+### 建立筆記本表單
 
-使用 `notebook` 表單類型，用於在表單頂部顯示頁籤，這些頁籤將用戶帶到不同的頁面。
+使用 `notebook` 表單類型，可在表單頂端顯示索引標籤，讓使用者前往不同的頁面。
 
 ![](assets/notebook_form_preview.png)
 
-將現有窗體的類型更改為 `notebook`，請執行以下步驟：
+將現有表單的類型更改為 `notebook`，請遵循下列步驟：
 
-1. 更改 `type` 屬性 `<form>` 元素 `notebook`:
+1. 變更 `type` 屬性 `<form>` 元素 `notebook`:
 
    ```xml
    <form […] type="notebook">
    ```
 
-1. 為每個表單頁添加容器：
+1. 為每個表單頁面新增容器：
 
-   1. 添加 `<container>` 元素作為子項 `<form>` 的子菜單。
-   1. 要定義表徵圖的標籤和影像，請使用 `label` 和 `img` 屬性。
+   1. 新增 `<container>` 元素作為的子項 `<form>` 元素。
+   1. 若要定義圖示的標籤和影像，請使用 `label` 和 `img` 屬性。
 
    ```xml
      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
@@ -356,25 +356,25 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
      </form>
    ```
 
-   或者，刪除 `type="frame"` 屬性 `<container>` 元素。
+   或者，移除 `type="frame"` 屬性 `<container>` 元素。
 
-### 嵌套窗體
+### 巢狀表單
 
-可以在其它窗體中嵌套窗體。 例如，可以在表徵圖框窗體中嵌套筆記本窗體。
+您可以在其他表單內巢狀內嵌表單。 例如，您可以在iconbox表單內巢狀內嵌筆記型電腦表單。
 
-嵌套級別控制導航。 用戶可以細化到子表單。
+嵌套控制項的導航級別。 使用者可以向下切入子表單。
 
-要將表單嵌套在另一個表單中，請插入 `<container>` 元素並設定 `type` 屬性。 對於頂層窗體，可以在外部容器或 `<form>` 的子菜單。
+要在其他表單中嵌套表單，請插入 `<container>` 元素並設定 `type` 屬性。 對於頂層表單，您可以在外部容器或 `<form>` 元素。
 
 ### 範例
 
-此示例顯示一個複雜的窗體：
+此範例顯示複雜表單：
 
-* 頂級窗體是表徵圖框窗體。 該表格包括兩個標有 **常規** 和 **詳細資訊**。
+* 頂層表單是iconbox表單。 該形式包括兩個標籤的容器 **一般** 和 **詳細資料**.
 
-   因此，外形顯示 **常規** 和 **詳細資訊** 頁面。 要訪問這些頁面，用戶按一下表單左側的表徵圖。
+   因此，外部表單會顯示 **一般** 和 **詳細資料** 頁面。 若要存取這些頁面，使用者請按一下表單左側的圖示。
 
-* 子窗體是嵌套在 **常規** 容器。 該子模包括兩個標有標籤的容器 **名稱** 和 **聯繫人**。
+* 子表單是嵌套在 **一般** 容器。 該子表單包括兩個標籤的容器 **名稱** 和 **連絡人**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -397,21 +397,21 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 </form>
 ```
 
-因此， **常規** 頁面顯示 **名稱** 和 **聯繫人** 頁籤。
+因此， **一般** 外部表單的頁面顯示 **名稱** 和 **連絡人** 標籤。
 
 ![](assets/nested_forms_preview.png)
 
-要將表單嵌套在另一個表單中，請插入 `<container>` 元素並設定 `type` 屬性。 對於頂層窗體，可以在外部容器或 `<form>` 的子菜單。
+要在其他表單中嵌套表單，請插入 `<container>` 元素並設定 `type` 屬性。 對於頂層表單，您可以在外部容器或 `<form>` 元素。
 
 ### 範例
 
-此示例顯示一個複雜的窗體：
+此範例顯示複雜表單：
 
-* 頂級窗體是表徵圖框窗體。 該表格包括兩個標有 **常規** 和 **詳細資訊**。
+* 頂層表單是iconbox表單。 該形式包括兩個標籤的容器 **一般** 和 **詳細資料**.
 
-   因此，外形顯示 **常規** 和 **詳細資訊** 頁面。 要訪問這些頁面，用戶按一下表單左側的表徵圖。
+   因此，外部表單會顯示 **一般** 和 **詳細資料** 頁面。 若要存取這些頁面，使用者請按一下表單左側的圖示。
 
-* 子窗體是嵌套在 **常規** 容器。 該子模包括兩個標有標籤的容器 **名稱** 和 **聯繫人**。
+* 子表單是嵌套在 **一般** 容器。 該子表單包括兩個標籤的容器 **名稱** 和 **連絡人**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -434,7 +434,7 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 </form>
 ```
 
-因此， **常規** 頁面顯示 **名稱** 和 **聯繫人** 頁籤。
+因此， **一般** 外部表單的頁面顯示 **名稱** 和 **連絡人** 標籤。
 
 ![](assets/nested_forms_preview.png)
 
@@ -446,22 +446,22 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 
 1. 修改工廠輸入表單：
 
-   1. 從菜單中選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**。
-   1. 選擇輸入表單並修改它。
+   1. 從功能表中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. 選取輸入表單並加以修改。
 
-   您可以擴展工廠資料架構，但不能擴展工廠輸入表單。 我們建議您直接修改工廠輸入表單，而不重新建立它們。 在軟體升級期間，您在工廠輸入表單中的修改將與升級合併。 如果自動合併失敗，則可以解決衝突。 [顯示全文](../../production/using/upgrading.md#resolving-conflicts)。
+   您可以擴展工廠資料結構，但無法擴展工廠輸入表單。 建議您直接修改工廠輸入表單，而不重新建立。 在軟體升級期間，您在工廠輸入表單中的修改將與升級合併。 如果自動合併失敗，您可以解決衝突。 [顯示全文](../../production/using/upgrading.md#resolving-conflicts)。
 
-   例如，如果擴展了具有附加欄位的工廠架構，則可以將此欄位添加到相關的工廠窗體。
+   例如，如果您使用其他欄位擴展出廠架構，則可以將此欄位添加到相關的工廠表單。
 
 ## 驗證表單 {#validate-forms}
 
-您可以在表單中包括驗證控制項。
+您可以在表單中加入驗證控制項。
 
-### 授予對欄位的只讀訪問權限
+### 授予欄位的唯讀存取權
 
-要授予對欄位的只讀訪問權限，請使用 `readOnly="true"` 屬性。 例如，您可能希望顯示記錄的主鍵，但具有只讀訪問權限。 [顯示全文](form-structure.md#non-editable-fields)。
+若要授予欄位的唯讀存取權，請使用 `readOnly="true"` 屬性。 例如，您可能想要顯示記錄的主要索引鍵，但具有唯讀存取權。 [顯示全文](form-structure.md#non-editable-fields)。
 
-在本示例中，主鍵(`iRecipientId`) `nms:recipient` 模式顯示在只讀訪問中：
+在此範例中，主鍵(`iRecipientId`) `nms:recipient` 架構以唯讀存取顯示：
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -469,12 +469,12 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 
 ### 檢查必填欄位
 
-您可以檢查必備資訊：
+您可以檢查必填資訊：
 
 * 使用 `required="true"` 屬性。
-* 使用 `<leave>` 節點，以檢查這些欄位並顯示錯誤消息。
+* 使用 `<leave>` 節點來檢查這些欄位並顯示錯誤訊息。
 
-在本示例中，電子郵件地址是必需的，如果用戶未提供以下資訊，則會顯示錯誤消息：
+在此範例中，需要電子郵件地址，如果使用者未提供此資訊，則會顯示錯誤訊息：
 
 ```xml
 <input xpath="@email" required="true"/>
@@ -485,11 +485,11 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 </leave>
 ```
 
-閱讀有關 [表達式欄位](form-structure.md#expression-field) 和 [表單上下文](form-structure.md#context-of-forms)。
+深入了解 [運算式欄位](form-structure.md#expression-field) 和 [表單內容](form-structure.md#context-of-forms).
 
 ### 驗證值
 
-可以使用JavaScript SOAP調用從控制台驗證表單資料。 使用這些調用進行複雜驗證，例如，根據授權值清單檢查值。 [顯示全文](form-structure.md#soap-methods)。
+您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 例如，使用這些呼叫進行複雜驗證，以根據授權值清單檢查值。 [顯示全文](form-structure.md#soap-methods)。
 
 1. 在JS檔案中建立驗證函式。
 
@@ -507,13 +507,13 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
    }
    ```
 
-   在本示例中，函式名為 `checkValue`。 此函式用於檢查 `recipient` 資料類型 `nms` 命名空間。 正在檢查的值將被記錄。 如果該值無效，則會記錄錯誤消息。 如果值有效，則返回值1。
+   在此範例中，函式的名稱為 `checkValue`. 此函式用於檢查 `recipient` 資料類型 `nms` 命名空間。 系統會記錄正在檢查的值。 如果值無效，則會記錄錯誤訊息。 如果值有效，則返回值1。
 
-   可以使用返回的值修改表單。
+   您可以使用傳回的值來修改表單。
 
-1. 在窗體中，添加 `<soapCall>` 元素 `<leave>` 的子菜單。
+1. 在表單中，新增 `<soapCall>` 元素 `<leave>` 元素。
 
-   在此示例中，使用SOAP調用驗證 `@valueToCheck` 字串：
+   在此範例中，SOAP呼叫用於驗證 `@valueToCheck` 字串：
 
    ```xml
    <form name="recipient" (…)>
@@ -526,16 +526,16 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
    </form>
    ```
 
-   在此示例中， `checkValue` 方法和 `nms:recipient` 服務：
+   在此範例中， `checkValue` 方法與 `nms:recipient` 服務已使用：
 
    * 服務是命名空間和資料類型。
-   * 方法是函式名。 名稱區分大小寫。
+   * 方法是函式名稱。 名稱區分大小寫。
 
-   該呼叫被同步執行。
+   呼叫會同步執行。
 
-   將顯示所有例外。 如果使用 `<leave>` 元素，則用戶在驗證輸入的資訊之前無法保存表單。
+   將顯示所有例外。 如果您使用 `<leave>` 元素，則使用者必須等到輸入的資訊經過驗證後，才能儲存表單。
 
-此示例說明如何從表單內進行服務調用：
+此範例說明如何從表單進行服務呼叫：
 
 ```xml
 <enter>
@@ -546,4 +546,4 @@ Forms是 `xtk:form` 的雙曲餘切值。 可在 `xtk:form` 架構。 要查看�
 </enter>
 ```
 
-在此示例中，輸入是ID，它是主鍵。 當用戶填寫此ID的表單時，將使用此ID作為輸入參數進行SOAP調用。 輸出是寫入此欄位的布爾值： `/tmp/@count`。 您可以在表單內使用此布爾值。 閱讀有關 [表單上下文](form-structure.md#context-of-forms)。
+在此範例中，輸入是ID，此為主鍵。 當使用者填寫此ID的表單時，會以此ID作為輸入參數進行SOAP呼叫。 輸出是寫入此欄位的布林值： `/tmp/@count`. 您可以在表單內使用此布林值。 深入了解 [表單內容](form-structure.md#context-of-forms).
