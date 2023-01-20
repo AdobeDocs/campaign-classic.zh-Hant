@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
+source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 92%
+source-wordcount: '1509'
+ht-degree: 90%
 
 ---
 
@@ -207,7 +207,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 1. **[!UICONTROL Advanced]**&#x200B;標籤可讓您設定或修改更多技術設定。
 
    * **[!UICONTROL Lifespan]**：可讓您 (以天為單位) 指定延遲，之後技術工作流程便可在 Adobe Campaign 中復原 Web 事件。預設值：180天。
-   * **[!UICONTROL Persistence]**：可讓您將所有 Web 事件 (例如購買) 歸因於再次行銷活動的期間，預設值：7天。
+   * **[!UICONTROL Persistence]**:可讓您定義可將所有Web事件（例如購買）歸因於再行銷促銷活動的期間，預設值：7天。
 
 >[!NOTE]
 >
