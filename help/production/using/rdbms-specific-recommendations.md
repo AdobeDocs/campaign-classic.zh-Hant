@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98b338ddf0da184363c599d74aeb98ed7f6303ce
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1176'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,6 @@ ht-degree: 1%
 在PostgreSQL中，您可以使用以下典型關鍵字：
 
 * 真空（完全、分析、詳細）
-* 重新索引
 
 要運行QUAM操作，並分析和計時，可以使用以下語法：
 
@@ -99,61 +98,48 @@ VACUUM (FULL, ANALYZE, VERBOSE) <table>;
 ```
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdelivery;
-REINDEX TABLE nmsdelivery;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverystat;
-REINDEX TABLE nmsdeliverystat;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflow;
-REINDEX TABLE xtkworkflow;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowevent;
-REINDEX TABLE xtkworkflowevent;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowjob;
-REINDEX TABLE xtkworkflowjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowlog;
-REINDEX TABLE xtkworkflowlog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowtask;
-REINDEX TABLE xtkworkflowtask;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjoblog;
-REINDEX TABLE xtkjoblog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjob;
-REINDEX TABLE xtkjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsaddress;
-REINDEX TABLE nmsaddress;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverypart;
-REINDEX TABLE nmsdeliverypart;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
-REINDEX TABLE nmsmirrorpageinfo;
 ```
 
 >[!NOTE]
 >
 >* Adobe建議從較小的表開始：這樣，如果進程在大型表上失敗（故障風險最高），則至少部分維護已完成。
 >* Adobe建議您新增資料模型專屬的表格，這些表格可能會經過重大更新。 情況可能是 **NmsRecipient** 如果您有大量的每日資料復寫流程。
->* QAVUM和REINDEX語句將鎖定表，在執行維護時會暫停一些進程。
+>* VAMU語句將鎖定表，在執行維護時會暫停一些進程。
 >* 對於非常大的表（通常高於5 Gb），真空FULL語句可能會變得非常低效，而且需要很長的時間。 Adobe不建議將它用於 **YyyNmsBroadLogXxx** 表格。
 >* 此維護操作可透過Adobe Campaign工作流程實作，使用 **[!UICONTROL SQL]** 活動。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。請務必為活動時間較短的維護安排，該時間不會與備份窗口衝突。
-
 >
 
 
