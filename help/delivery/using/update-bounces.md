@@ -5,9 +5,9 @@ description: 了解如何在ISP中斷後更新退信資格
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 >
 >您可以在「Google工作區狀態控制面板」上查看 [本頁](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}。
 
-## 症狀{#update-bounce-symptoms}
+## 影響{#update-bounce-impact}
 
 如果ISP中斷，透過Campaign傳送的電子郵件無法成功傳送給其收件者：這些電子郵件會錯誤標示為退信。
 
@@ -57,7 +57,10 @@ ht-degree: 2%
 
 * 若是Campaign Classicv7例項，且其中包含SMTP退信回應資訊： **[!UICONTROL Error text]** 隔離清單欄位：
 
-   * **錯誤文本（隔離文本）** 包含「550-5.1.1」和 **錯誤文本（隔離文本）** 包含&quot;support.ISP.com&quot; &quot;support.ISP.com&quot;可以是：&quot;support.apple.com&quot;或&quot;support.google.com&quot;，例如
+   * **錯誤文本（隔離文本）** 包含「550-5.1.1」和 **錯誤文本（隔離文本）** 包含&quot;support.ISP.com&quot;
+
+      其中「support.ISP.com」可以是：&quot;support.apple.com&quot;或&quot;support.google.com&quot;，例如
+
    * **更新狀態(@lastModified)** MM/DD/YYYY HH時或之後:MM:SS AM
    * **更新狀態(@lastModified)** 在MM/DD/YYYY HH之前或之前:MM:SS PM
 
