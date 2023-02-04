@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
+source-git-commit: b4feba7b3099c998d2dc05947390e383acb5fa14
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 100%
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -831,6 +831,7 @@ ht-degree: 100%
    + 電子郵件和推播通知{#technotes-email}
       + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
       + [如何更新錯誤的硬退件](delivery/using/update-bounce-qualification.md)
+      + [在ISP中斷後更新錯誤的硬退信](delivery/using/update-bounces.md)
       + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
       + [已追蹤 URL 更新](technotes/using/tracked-urls.md)
    + 移轉至 Adobe Managed Services{#dc-migration}
