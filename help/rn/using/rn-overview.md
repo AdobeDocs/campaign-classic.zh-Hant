@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
-workflow-type: ht
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic 定期發行的產品更新帶來了新的功能、錯誤修正，並改善了效能、安全性和可用性。 這些更新作為產品版本編號發行。 關於每個產品版本編號的詳細資訊，請參見[發行說明](latest-release.md)。
+Adobe Campaign Classic 定期發行的產品更新帶來了新的功能、錯誤修正，並改善了效能、安全性和可用性。 這些更新會發佈為 **產品組建**. 關於每個產品版本編號的詳細資訊，請參見[發行說明](latest-release.md)。
 
 ## 版本狀態{#rn-statuses}
 
@@ -27,7 +27,7 @@ Adobe Campaign Classic 定期發行的產品更新帶來了新的功能、錯誤
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
 
-![](assets/do-not-localize/blue3.png) **發行候選版本** (RC) - 具有新功能的最新版本。
+![](assets/do-not-localize/blue3.png) **候選發行** (RC) — 具有新功能的最新組建。
 
 ![](assets/do-not-localize/orange3.png) **不再可用** — 無部署。無錯誤修正。 建議更新至較新的版本編號。
 
@@ -37,9 +37,9 @@ Adobe Campaign Classic 定期發行的產品更新帶來了新的功能、錯誤
 
 Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握最新、最佳的資訊，進而確保安全的使用環境，並改產品使用體驗。
 
-這就是您需要&#x200B;**執行最新穩定 Adobe Campaign 版本**&#x200B;的重要原因。此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
+這就是為什麼你 **運行最新的穩定版本編號** Adobe Campaign。 此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
 
-作為託管客戶，您無需採取任何操作便可透過最新穩定版本，自動享受升級的好處。在[年度升級一節](#yearly-upgrade)深入了解。 如果您從舊的版本編號轉移，Adobe 建議您先升級至此版本。
+身為托管客戶，您無需採取任何操作便可透過最新穩定版本編號，自動受益於升級。 在[年度升級一節](#yearly-upgrade)深入了解。 如果您從舊版組建移轉，Adobe建議您先升級至此組建。
 
 ## 建議{#recommendations}
 
@@ -69,7 +69,7 @@ Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組
 
 作為托管客戶，如果您的帳戶被認定需要升級一或多項與 Campaign Classic 的相關技術，以及更新目前的建置和／或版本，Adobe 會直接通知您。
 
-如為使用舊版軟體的內部部署或混合型客戶，Adobe 鼓勵您改用最新的穩定版本 (GA)。
+身為在舊版組建上執行的內部部署或混合式客戶，Adobe鼓勵您改用最新的穩定組建(GA)。
 
 這將確保您的帳戶免受漏洞的侵擾，並可運用更新的效能技術。 此升級還可讓您的帳戶日後能夠更輕鬆定期升級，而且所需的手動作業和操作也更少。
 

@@ -5,9 +5,9 @@ description: 了解如何在ISP中斷後更新退信資格
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
@@ -48,14 +48,14 @@ ht-degree: 2%
 
 根據事件的時間範圍和ISP，以下是此查詢的建議准則。
 
-* 若為Campaign Classicv8和v7環境，其中包含 **[!UICONTROL Error text]** 隔離清單欄位：
+* 若為具有 **[!UICONTROL Error text]** 隔離清單欄位：
 
    * **錯誤文本（隔離文本）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
    * **電子郵件網域(@domain)** 等於domain1.com或 **電子郵件網域(@domain)** 等於domain2.com或 **電子郵件網域(@domain)** 等於domain3.com
    * **更新狀態(@lastModified)** MM/DD/YYYY HH時或之後:MM:SS AM
    * **更新狀態(@lastModified)** 在MM/DD/YYYY HH之前或之前:MM:SS PM
 
-* 若是Campaign Classicv7例項，且其中包含SMTP退信回應資訊： **[!UICONTROL Error text]** 隔離清單欄位：
+* 若是在中具有SMTP退信回應資訊的促銷活動環境， **[!UICONTROL Error text]** 隔離清單欄位：
 
    * **錯誤文本（隔離文本）** 包含「550-5.1.1」和 **錯誤文本（隔離文本）** 包含&quot;support.ISP.com&quot;
 

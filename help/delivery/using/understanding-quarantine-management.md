@@ -4,10 +4,10 @@ title: 認識隔離管理
 description: 認識隔離管理
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '2983'
-ht-degree: 13%
+source-wordcount: '2997'
+ht-degree: 12%
 
 ---
 
@@ -128,7 +128,9 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
 對於使用舊版Campaign MTA的內部部署安裝和托管/混合安裝，您可以修改錯誤數量以及兩個錯誤之間的期間。 若要這麼做，請變更 [部署精靈](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或 [在傳送層級](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 
-## 移除隔離的地址 {#removing-a-quarantined-address}
+## 從隔離區中刪除地址 {#removing-a-quarantined-address}
+
+### 自動更新 {#unquarantine-auto}
 
 符合特定條件的地址會由 [資料庫清理](../../production/using/database-cleanup-workflow.md) 工作流程。
 
@@ -144,17 +146,21 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
 >
 >地址位於 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使收到電子郵件，狀態也不會遭到移除。
 
+### 手動更新 {#unquarantine-manual}
+
 您也可以手動取消地址隔離。 要從隔離清單中手動刪除地址，請將其狀態更改為 **[!UICONTROL Valid]** 從 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 節點。
 
 ![](assets/tech_quarant_error_status.png)
 
-您可能需要在隔離清單上執行大量更新，例如，在ISP中斷期間，由於電子郵件無法成功傳送給收件者，因此電子郵件標示錯誤為退信。
+### 大量更新 {#unquarantine-bulk}
 
-若要執行此動作，請建立工作流程，並在隔離表格上新增查詢，以篩選掉所有受影響的收件者，以便從隔離清單中移除收件者，並納入未來的Campaign電子郵件傳送中。
+您可能需要對隔離清單執行大量更新，例如在ISP中斷時。 在這種情況下，電子郵件會錯誤標示為退信，因為無法成功傳送給收件者。 必須從隔離清單中刪除這些地址。
+
+若要執行此動作，請建立工作流程並新增 **[!UICONTROL Query]** 活動，以篩選所有受影響的收件者。 識別後，即可從隔離清單中移除，並納入未來的Campaign電子郵件傳送。
 
 以下是此查詢的建議准則：
 
-* 若為Campaign Classicv8和v7環境，其中包含 **[!UICONTROL Error text]** 隔離清單欄位：
+* 針對Campaign Classicv7環境，其中包含 **[!UICONTROL Error text]** 隔離清單欄位：
 
    * **錯誤文本（隔離文本）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
    * **電子郵件網域(@domain)** 等於domain1.com或 **電子郵件網域(@domain)** 等於domain2.com或 **電子郵件網域(@domain)** 等於domain3.com
@@ -171,11 +177,11 @@ Adobe Campaign會根據傳送失敗類型和錯誤訊息限定期間指派的原
    * **更新狀態(@lastModified)** 在MM/DD/YYYY HH之前或之前:MM:SS PM
 
 
-取得受影響收件者的清單後，請新增 **[!UICONTROL Update data]** 活動將其狀態設定為 **[!UICONTROL Valid]** 以便將其從隔離清單中由 **[!UICONTROL Database cleanup]** 工作流程。 您也可以從隔離表格中刪除它們。
+取得受影響收件者的清單後，請新增 **[!UICONTROL Update data]** 活動將其電子郵件地址狀態設定為 **[!UICONTROL Valid]** 以便將其從隔離清單中由 **[!UICONTROL Database cleanup]** 工作流程。 您也可以從隔離表格中刪除它們。
 
 ## 推播通知隔離 {#push-notification-quarantines}
 
-推播通知的隔離機制與一般程式全域相同。 請參閱 [關於隔離](#about-quarantines). 但推播通知的某些錯誤管理方式不同。 例如，針對某些軟錯誤，不會在相同傳送內執行重試。 推播通知的特異性列於下方。 重試機制（重試次數、頻率）與電子郵件的相同。
+推播通知的隔離機制與一般程式全域相同。 但推播通知的某些錯誤管理方式不同。 例如，針對某些軟錯誤，不會在相同傳送內執行重試。 推播通知的特異性列於下方。 重試機制（重試次數、頻率）與電子郵件的相同。
 
 放入隔離區的項目是裝置代號。
 
