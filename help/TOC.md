@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 985c0f170b8a56d7cdf76779ed9581832da301b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 99%
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
-      + 隱私權請求 {#privacy-requests}
+      + 隱私權請求{#privacy-requests}
          + [關於隱私權請求](platform/using/privacy-requests.md)
          + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
          + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
@@ -831,7 +831,7 @@ ht-degree: 99%
    + 電子郵件和推播通知{#technotes-email}
       + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
       + [如何更新錯誤的硬退件](delivery/using/update-bounce-qualification.md)
-      + [在ISP中斷後更新錯誤的硬退信](delivery/using/update-bounces.md)
+      + [在 ISP 中斷後更新不正確的硬退件](delivery/using/update-bounces.md)
       + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
       + [已追蹤 URL 更新](technotes/using/tracked-urls.md)
    + 移轉至 Adobe Managed Services{#dc-migration}
