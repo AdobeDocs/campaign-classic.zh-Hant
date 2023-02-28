@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1cf94ee5edac7087d7d21709243e9f56c2b3d6f5
-workflow-type: ht
-source-wordcount: '778'
-ht-degree: 100%
+source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 98%
 
 ---
 
@@ -48,23 +48,23 @@ ht-degree: 100%
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (64 位元)</p>
-<p>10（64 位元）</p>
-<p>9（64 位元）</p>
+<p>11 (自 Campaign v7.3 起)、</p>
+<p>10</p>
+<p>9</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>8.x（64 位元）</p>
-<p>7.x（64 位元）</p>
+<p>8.x</p>
+<p>7.x</p>
 <p><strong>重要：</strong>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。</p>
 </td>
 </tr>
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 年（7.2.1 發行版本開始）</p>
+<p>2019 (自 Campaign v7.2 起)、</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -138,7 +138,7 @@ ht-degree: 100%
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>14.x</p>
+<p>14.x（自Campaign v7.3.2起）</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
@@ -154,7 +154,7 @@ ht-degree: 100%
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=zh-Hant#database-access-layers">了解更多</a>。</p>
+<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">了解更多</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -208,7 +208,7 @@ ht-degree: 100%
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>7.2.1 及以上</td>
+<td>7.2 及以上</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -224,7 +224,7 @@ ht-degree: 100%
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>7.2.1 及以上</td>
+<td>7.2 及以上</td>
 </tr>
 <tr>
 <td>Vertica Analytics</td>
@@ -248,7 +248,7 @@ ht-degree: 100%
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8</p>
+<p>8 (自 Campaign v7.3 起)、</p>
 <p>5.7</p>
 </td>
 <td>
@@ -336,7 +336,7 @@ ht-degree: 100%
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 年（7.3 發行版本開始）</p>
+<p>11 (自 Campaign v7.3 起)、</p>
 <p>10（建議用於日文執行個體）</p>
 <p>8</p>
 </td>
@@ -344,7 +344,7 @@ ht-degree: 100%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 年（7.2.1 發行版本開始）</p>
+<p>2019 (自 Campaign v7.2.1 起)、</p>
 <p>2016</p>
 <p>2012</p>
 </td>
