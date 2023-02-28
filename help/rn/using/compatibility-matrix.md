@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+source-git-commit: 76218abd198f677541338c7f854d047d2c644013
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 98%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 98%
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x（64 位元） </br><strong>重要：</strong> CentOS Linux 8 即將於 2021 年 12 月 31 日結束生命週期 (EOL)。 如需詳細資訊，請參閱<a href="../../rn/using/deprecated-features.md">已棄用功能</a>頁面。</p>
-<p>7.x（64 位元）</p>
+<p>7.x</p>
 <p><strong>重要：</strong>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。</p>
+<p>8.x</br><strong>重要：</strong> CentOS Linux 8即將於2021年12月31日終止服務(EOL)。 如需詳細資訊，請參閱<a href="../../rn/using/deprecated-features.md">已棄用功能</a>頁面。</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ ht-degree: 98%
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 for RHEL7 - CentOS 7、Debian 8/9、Windows（64 位元）</p>
+<p>2.4 for RHEL7 - CentOS 7、Debian 8/9、Windows</p>
 </td>
 </tr>
 </tbody>
@@ -104,7 +104,7 @@ ht-degree: 98%
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>此應用程式已獲得核准，而可用於 Oracle 及 OpenJDK 開發的 Java 開發套件 (JDK)。</p>
+<p>Campaign支援由Oracle和OpenJDK開發的Java開發套件(JDK)。</p>
 </td>
 </tr>
 <tr>
