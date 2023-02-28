@@ -136,7 +136,7 @@ Campaign Classic檔案中提供技術資源。 建議您先熟悉這些主題，
 * [Campaign Classic托管模型](../../installation/using/hosting-models.md)
 * [托管模型功能](../../installation/using/capability-matrix.md)
 
-**伺服器配置**
+**伺服器設定**
 
 *僅限內部部署與混合托管模型*
 
