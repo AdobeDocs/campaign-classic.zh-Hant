@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 88%
 
 ---
 
@@ -51,9 +51,9 @@ Adobe Campaign 會定期更新。此定期更新的目的是為了讓您掌握�
 
 ## 升級流程{#process-upgrade}
 
-對於託管客戶 (受控服務或混合功能)，您需要聯絡客戶服務團隊，以升級您的環境。
+身為托管客戶(Managed Services或混合客戶)，請聯絡Adobe客戶服務以升級您的環境。
 
-對於內部部署使用者，您可以進行升級。為此，請[下載最新穩定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 並升級所有環境。
+身為內部部署客戶，您可以執行升級。 為此，請[下載最新穩定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 並升級所有環境。
 
 深入了解[升級流程](../../production/using/build-upgrade.md)，同時參閱[版本升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
@@ -67,7 +67,7 @@ Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組
 
 ### 我的組織為何需要此升級？
 
-作為託管客戶，如果我們已識別您的帳戶需升級一個或多個與 Campaign Classic 相關的技術，以及升級您的基礎結構至目前版本編號 (例如從 v7.2.1 升級至 v7.3.3) 和/或版本 (從 v7 升級至 v8)，Adobe 會直接通知您。
+身為托管客戶，如果您的帳戶被識別需要升級一或多項與Campaign Classic相關的技術，以及將您的基礎架構升級至目前組建（例如從v7.2.1升級至v7.3.3）和/或版本（例如從v7升級至v8）,Adobe會直接通知您。
 
 如果是使用舊版本編號軟體的內部部署或混合型客戶，Adobe 鼓勵您改用最新的穩定版本編號 (GA)。
 
@@ -77,7 +77,7 @@ Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組
 
 Adobe 團隊將帶領並引導您的組織完成這個過程。
 
-客戶服務代表、產品經理、工程師和 TechOps 專家以及產品顧問等專門的團隊，隨時樂意提供協助並確保順暢的體驗。
+由專責的客戶服務代表、產品經理、工程師和TechOps專家以及產品顧問組成的團隊在此提供協助，確保體驗順暢無礙。
 
 ### 好處
 
