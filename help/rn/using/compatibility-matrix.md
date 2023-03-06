@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
+source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '781'
 ht-degree: 89%
 
 ---
@@ -248,7 +248,7 @@ ht-degree: 89%
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8 (自 Campaign v7.3 起)、</p>
+<p>8</p>
 <p>5.7</p>
 </td>
 <td>
@@ -271,7 +271,12 @@ ht-degree: 89%
 <p>12c</p>
 <p>11g</p>
 </td>
-<td>v7.0 及以上</td>
+<td>
+<p>v7.0 及以上</p>
+<p></p>
+<p></p>
+<p></p>
+</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
@@ -330,22 +335,32 @@ ht-degree: 89%
 
 <table>
 <tbody>
-</tr>
+<td><strong>系統</strong></td>
+<td><strong>作業系統版本</strong></td>
+<td><strong>Campaign 版本</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (自 Campaign v7.3 起)、</p>
+<p>11</p>
 <p>10</p>
 <p>8</p>
 </td>
+<td>
+<p>v7.3 及以上</p>
+<p></p>
+<p></p>
 </tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (自 Campaign v7.2.1 起)、</p>
+<p>2019</p>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+<p>v7.2.1 及以上</p>
+<p></p>
+<p></p>
 </tbody>
 </table>
 
