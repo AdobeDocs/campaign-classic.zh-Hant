@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 89%
 <td>
 <p>7.x</p>
 <p><strong>重要：</strong>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。</p>
-<p>8.x</br><strong>重要：</strong> CentOS Linux 8即將於2021年12月31日終止服務(EOL)。 如需詳細資訊，請參閱<a href="../../rn/using/deprecated-features.md">已棄用功能</a>頁面。</p>
+<p>8.x</br><strong>重要：</strong>CentOS Linux 8 即將於 2021 年 12 月 31 日結束生命週期 (EOL)。 如需詳細資訊，請參閱<a href="../../rn/using/deprecated-features.md">已棄用功能</a>頁面。</p>
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ ht-degree: 89%
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 (自 Campaign v7.2 起)、</p>
+<p>2019 (自 Campaign v7.2 起)</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -104,7 +104,7 @@ ht-degree: 89%
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Campaign支援由Oracle和OpenJDK開發的Java開發套件(JDK)。</p>
+<p>Campaign 支援由 Oracle 及 OpenJDK 開發的 Java 開發套件 (JDK)。</p>
 </td>
 </tr>
 <tr>
@@ -138,7 +138,7 @@ ht-degree: 89%
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>14.x（自Campaign v7.3.2起）</p>
+<p>14.x (自 Campaign v7.3.2 起)</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
@@ -154,7 +154,7 @@ ht-degree: 89%
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">了解更多</a>。</p>
+<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=zh-Hant#database-access-layers">了解更多</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -366,9 +366,9 @@ ht-degree: 89%
 
 ### Microsoft WebView 2 執行階段
 
-Microsoft Edge WebView 2 執行階段 最新版本是Campaign用戶端主控台的必要版本。
+Microsoft Edge WebView 2 執行階段Campaign 用戶端主控台強制使用最新版本。
 
-從下載Microsoft Edge WebView2 [Microsoft開發人員網站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_tw).
+從 [Microsoft 開發人員網站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_tw)下載 Microsoft Edge WebView2。
 
 
 ## 行動 SDK{#MobileSDK}
@@ -385,7 +385,7 @@ Microsoft Edge WebView 2 執行階段 最新版本是Campaign用戶端主控台�
 </td>
 </tr>
 <tr>
-<td>AppleiOS</td>
+<td>Apple iOS</td>
 <td>
 <p>iOS 9 - 15</p>
 <p>與行動 SDK 建置版本 1.0.26 相容，與 32 及 64 位元版本相容。自 Campaing v7.3 開始支援 iOS 15。</p>
@@ -396,7 +396,7 @@ Microsoft Edge WebView 2 執行階段 最新版本是Campaign用戶端主控台�
 
 ## 瀏覽器{#Browsers}
 
-下列瀏覽器在其最新版本中與 [Web存取](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+下列瀏覽器的最新版本與 Campaign for [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) 相容。
 
 * Google Chrome
 * Microsoft Edge
