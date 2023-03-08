@@ -8,7 +8,7 @@ exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1198'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 範例Javascript檔案為cus:triggers.js。
 
-### JavaScript函式 {#function-js}
+### JavaScript 函數 {#function-js}
 
 此 [!DNL pipelined] Javascript必須以特定函式開頭。
 
@@ -202,11 +202,11 @@ triggerType欄位標識資料的觸發源。
 
 | 屬性 | 類型 | 標籤 | 說明 |
 |:-:|:-:|:-:|:-:|
-| pipelineEventId | 長 | 主鍵 | 觸發器的內部主鍵。 |
+| pipelineEventId | 長整數 | 主要金鑰 | 觸發器的內部主鍵。 |
 | 資料 | 備忘錄 | 觸發資料 | XML格式的觸發資料的完整內容。 用於偵錯和稽核。 |
 | triggerType | 字串50 | TriggerType | 觸發器的名稱。 識別客戶在網站上的行為。 |
 | shopper_id | 字串32 | shopper_id | 購物者的內部識別碼。 由調解工作流程設定。 如果為零，表示客戶在Campaign中為未知。 |
-| shopper_key | 長 | shopper_key | 由Analytics擷取的購物者外部識別碼。 |
+| shopper_key | 長整數 | shopper_key | 由Analytics擷取的購物者外部識別碼。 |
 | 已建立 | 日期時間 | 已建立 | 在Campaign中建立事件的時間。 |
 | lastModified | 日期時間 | 上次修改時間 | 上次在Adobe中修改事件的時間。 |
 | timeGMT | 日期時間 | 時間戳記 | 在Analytics中產生事件的時間。 |

@@ -169,7 +169,7 @@ ACS Connector有兩種實作類型。 兩者皆由Adobe Campaign諮詢團隊執�
    <td> <strong>內部名稱</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 來源Id<br /> </td> 
+   <td> 來源 ID<br /> </td> 
    <td> @sourceId<br /> </td> 
   </tr> 
   <tr> 

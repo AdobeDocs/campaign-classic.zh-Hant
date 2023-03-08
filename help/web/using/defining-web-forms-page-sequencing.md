@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 定義Web表單頁排序
-description: 定義Web表單頁排序
+title: 定義網路表單頁面排序
+description: 定義網路表單頁面排序
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
@@ -11,115 +11,115 @@ ht-degree: 0%
 
 ---
 
-# 定義Web表單頁排序{#defining-web-forms-page-sequencing}
+# 定義網路表單頁面排序{#defining-web-forms-page-sequencing}
 
 ![](../../assets/common.svg)
 
-表單可以包含一個或多個頁面。 它通過圖形構建，您可以對頁面進行排序、測試、指令碼執行、頁面跳轉和記錄步驟。 全局圖設計模式與市場活動工作流模式相同。
+表單可包含一或多個頁面。 它是透過圖表建置，可讓您排序頁面、測試、指令碼執行、頁面跳轉和記錄步驟。 全域圖表設計模式與Campaign工作流程的模式相同。
 
 ## 關於上一頁和下一頁 {#about-previous-page-and-next-page}
 
-對於每個頁面，可以刪除 **[!UICONTROL Next]** 或 **[!UICONTROL Previous]** 按鈕。 要執行此操作，請選擇相關頁面並選擇選項 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disallow returning to the previous page]** 。
+您可以對每個頁面刪除 **[!UICONTROL Next]** 或 **[!UICONTROL Previous]** 按鈕。 要執行此操作，請選取相關頁面並選取選項 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disallow returning to the previous page]** .
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-可以用連結替換這些按鈕。 請參閱 [插入HTML內容](static-elements-in-a-web-form.md#inserting-html-content)。
+您可以用連結取代這些按鈕。 請參閱 [插入HTML內容](static-elements-in-a-web-form.md#inserting-html-content).
 
 ## 插入跳轉 {#inserting-a-jump}
 
-的 **[!UICONTROL Jump]** 當用戶按一下時，對象可訪問其他頁面或其他表單 **[!UICONTROL Next]**。
+此 **[!UICONTROL Jump]** 當使用者點按時，物件可讓使用者存取其他頁面或其他表單 **[!UICONTROL Next]**.
 
-目標可以是：
+目的地可以是：
 
-* 窗體的另一頁。 要執行此操作，請選擇 **[!UICONTROL Internal activity]** 然後指定所需頁，如下所示：
+* 表單的另一頁。 要執行此操作，請選取 **[!UICONTROL Internal activity]** 然後指定所需的頁面，如下所示：
 
    ![](assets/s_ncs_admin_jump_param1.png)
 
-* 另一種形式。 要執行此操作，請選擇 **[!UICONTROL Explicit]** 的子菜單。
+* 另一種形式。 若要這麼做，請選取 **[!UICONTROL Explicit]** 選項並指定目標表單。
 
    ![](assets/s_ncs_admin_jump_param2.png)
 
-* 目標可以儲存在變數中。 在這種情況下，請從下拉清單中選擇它，如下所示：
+* 目的地可儲存在變數中。 在此情況下，請從下拉式清單中選取它，如下所示：
 
    ![](assets/s_ncs_admin_jump_param3.png)
 
-* 的 **[!UICONTROL Comment]** 頁籤中，您可以輸入操作員在圖中按一下對象時可見的資訊。
+* 此 **[!UICONTROL Comment]** 索引標籤可讓您輸入運算子按一下圖表中的物件時可見的資訊。
 
    ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## 示例：根據URL的參數訪問另一個窗體 {#example--accessing-another-form-according-to-a-parameter-of-the-url}
+## 範例：根據URL的參數存取其他表單 {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
-在以下示例中，我們要配置一個Web表單，在批准後，該表單將顯示由URL的參數指定的另一個表單。 若要這麼做，請套用下列步驟：
+在以下範例中，我們要設定Web表單，在核准後，該表單將顯示URL參數指定的其他表單。 若要這麼做，請套用下列步驟：
 
-1. 在表單末尾插入跳轉：這將取代 **[!UICONTROL End]** 框。
+1. 在表單結尾處插入跳轉：這會取代 **[!UICONTROL End]** 框。
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. 在表單屬性中，添加參數(**下**)儲存在本地變數(**下**)。 本地變數詳見 [將資料儲存在局部變數中](web-forms-answers.md#storing-data-in-a-local-variable)。
+1. 在表單屬性中，新增參數(**next**)儲存於本機變數(**next**)。 本機變數在 [將資料儲存在本機變數中](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
-1. 編輯 **[!UICONTROL Jump]** 對象，選擇 **[!UICONTROL Stored in a variable]** 的 **下** 的下界。
+1. 編輯 **[!UICONTROL Jump]** 對象，選擇 **[!UICONTROL Stored in a variable]** 選項，然後選取 **next** 變數。
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
-1. 傳遞URL必須包括目標表單的內部名稱，例如：
+1. 傳送URL必須包含目的地表單的內部名稱，例如：
 
    ```
    https://[myserver]/webForm/APP62?&next=APP22
    ```
 
-   當用戶按一下 **[!UICONTROL Approve]** 按鈕 **APP22** 的上界。
+   當使用者點按 **[!UICONTROL Approve]** 按鈕，表單 **APP22** 的下界。
 
-## 插入指向窗體另一頁的連結 {#inserting-a-link-to-another-page-of-the-form}
+## 插入到表單的其他頁面的連結 {#inserting-a-link-to-another-page-of-the-form}
 
-可以插入指向窗體其他頁面的連結。 為此，請添加 **[!UICONTROL Link]** 在頁面中鍵入static element。 有關此內容的詳細資訊，請參閱 [插入連結](static-elements-in-a-web-form.md#inserting-a-link)。
+您可以插入表單中其他頁面的連結。 若要這麼做，請新增 **[!UICONTROL Link]** 在頁面中輸入靜態元素。 有關詳細資訊，請參閱 [插入連結](static-elements-in-a-web-form.md#inserting-a-link).
 
-## 條件頁顯示 {#conditional-page-display}
+## 條件式頁面顯示 {#conditional-page-display}
 
-### 基於響應顯示 {#display-based-on-responses}
+### 根據回應顯示 {#display-based-on-responses}
 
-的 **[!UICONTROL Test]** 框中，您可以定義窗體中頁的順序。 它允許您根據test結果定義各種分支行。 這使您能夠根據用戶提供的答案顯示不同的頁面。
+此 **[!UICONTROL Test]** 方塊可讓您設定表單中頁面順序的條件。 它可讓您根據測試結果定義各種分支線。 這可讓您根據使用者提供的答案，顯示不同的頁面。
 
-例如，您可以為已線上訂購的客戶顯示不同的頁面，為已下達超過十個訂單的客戶顯示另一個頁面。 為此，在表單的第一頁中，插入 **[!UICONTROL Number]** 為用戶鍵入輸入欄位，以說明已下達的訂單數。
+例如，您可以為已線上訂購的客戶顯示不同的頁面，而為已訂購超過10個的客戶顯示另一個頁面。 若要這麼做，請在表單的第一頁插入 **[!UICONTROL Number]** 輸入欄位，供使用者說明已下多少訂單。
 
 ![](assets/s_ncs_admin_survey_test_ex0.png)
 
-您可以將此資訊儲存在資料庫的欄位中，或使用本地變數。
+您可以將此資訊儲存在資料庫的欄位中，或使用本機變數。
 
 >[!NOTE]
 >
->儲存模式在 [響應儲存欄位](web-forms-answers.md#response-storage-fields)。
+>儲存模式在 [回應儲存欄位](web-forms-answers.md#response-storage-fields).
 
-在我們的示例中，我們希望使用變數：
+在我們的範例中，我們想使用變數：
 
 ![](assets/s_ncs_admin_survey_test_ex1.png)
 
-在表單的圖中，插入一個test框以定義條件。 對於每個條件，將在test框的輸出處添加新分支。
+在表單的圖表中，插入測試方塊以定義條件。 對於每個條件，測試方塊的輸出將新增一個新分支。
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-選擇 **[!UICONTROL Activate the default branching]** 的雙曲餘切值。 如果定義的條件涵蓋了所有可能的情況，則不必使用此選項。
+選取 **[!UICONTROL Activate the default branching]** 選項，以針對任何條件皆不成立的情況新增轉變。 如果定義的條件涵蓋所有可能的情況，則不需要此選項。
 
-接下來，在其中一個或其他條件為true時定義頁排序，例如：
+接著，當其中一個或其他條件為true時，定義頁面排序，例如：
 
 ![](assets/s_ncs_admin_survey_test_ex3.png)
 
-### 基於參數顯示 {#display-based-on-parameters}
+### 根據參數顯示 {#display-based-on-parameters}
 
-您還可以根據Web表單的初始化參數或資料庫中儲存的值個性化頁面排序。 請參閱 [表單URL參數](defining-web-forms-properties.md#form-url-parameters)。
+您也可以根據Web表單的初始化參數或根據資料庫中儲存的值來個人化頁面排序。 請參閱 [表單URL參數](defining-web-forms-properties.md#form-url-parameters).
 
-## 添加指令碼 {#adding-scripts}
+## 新增指令碼 {#adding-scripts}
 
-的 **[!UICONTROL Script]** object允許您直接輸入JavaScript指令碼，例如修改欄位值、從資料庫檢索資料或調用Adobe CampaignAPI。
+此 **[!UICONTROL Script]** 物件可讓您直接輸入JavaScript指令碼，例如修改欄位的值、從資料庫擷取資料，或呼叫Adobe Campaign API。
 
-## 個性化結束頁 {#personalizing-the-end-page}
+## 個人化結束頁面 {#personalizing-the-end-page}
 
-必須在圖的末尾放置結束頁。 當用戶按一下 **[!UICONTROL Approve]** 按鈕。
+必須在圖的末尾放置一個結束頁。 使用者按一下 **[!UICONTROL Approve]** 按鈕。
 
-要個性化此頁面，請按兩下 **[!UICONTROL End]** 在中央編輯器中輸入頁面內容。
+若要個人化此頁面，請按兩下 **[!UICONTROL End]** 並在中央編輯器中輸入頁面內容。
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* 您可以複製和貼上現有HTML內容。 要執行此操作，請按一下 **[!UICONTROL Display source code]** 並插入HTML。
-* 可以使用外部URL;為此，請選擇相應選項並輸入要顯示的頁面的URL。
+* 您可以複製並貼上現有的HTML內容。 要執行此操作，請按一下 **[!UICONTROL Display source code]** 並插入HTML程式碼。
+* 您可以使用外部URL;若要這麼做，請選取對應的選項，然後輸入要顯示的頁面URL。

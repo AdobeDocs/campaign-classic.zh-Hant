@@ -227,7 +227,7 @@ _2020 年 12 月 16 日_
 >[!CAUTION]
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
-> * 此版本隨附[安全性修正](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
+> * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。身為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
@@ -372,7 +372,7 @@ _2019年5月30日_
   </tr> 
   <tr> 
    <td> 相容性矩陣更新<br /> </td> 
-   <td> 透過這個新版本，Adobe Campaign現在支援下列資料庫系統。 請參閱 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">相容性矩陣</a>.<br /> 
+   <td> 透過這個新版本，Adobe Campaign現在支援下列資料庫系統。 請參閱 <a href="https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html">相容性矩陣</a>.<br /> 
     <ul> 
      <li> <p>Oracle18c</p> </li> 
      <li> <p>MySQL 5.7(FDA)</p> </li> 

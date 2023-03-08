@@ -15,47 +15,47 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-可以翻譯使用Adobe Campaign數字內容編輯器(DCE)建立的Web應用程式頁。
+您可以翻譯使用Adobe Campaign數字內容編輯器(DCE)建立的Web應用程式頁面。
 
-如果通過 **[!UICONTROL Localization]** 的 **[!UICONTROL Properties]** 在使用DCE編輯的頁面中添加HTML內容塊時，將出現新選項。
+如果您透過 **[!UICONTROL Localization]** 標籤 **[!UICONTROL Properties]** 在使用DCE編輯的頁面中添加HTML內容塊時，新選項可用。
 
-此選項用於指示是否必須翻譯塊內容。
+此選項可讓您指出區塊內容是否必須翻譯。
 
-要轉換的字串通過 **[!UICONTROL Translations]** 頁籤。 如需詳細資訊，請參閱[此頁面](translating-a-web-form.md)。
+要翻譯的字串，會透過 **[!UICONTROL Translations]** 頁簽。 如需詳細資訊，請參閱[此頁面](translating-a-web-form.md)。
 
-要標籤要轉換的字串：
+若要標籤要翻譯的字串：
 
 1. 在Web應用程式中開啟使用DCE編輯的內容頁。
 
    ![](assets/dce_translation_3.png)
 
-1. 選擇HTML塊。
-1. 在右側的參數塊中， **[!UICONTROL Localization]** 選項可標籤選定塊的內容。 預設情況下，僅翻譯頁面標題。
+1. 選取HTML區塊。
+1. 在右側的參數區塊中， **[!UICONTROL Localization]** 選項可讓您標幟所選取區塊的內容。 依預設，只會翻譯頁面標題。
 
    ![](assets/dce_translation_1.png)
 
    >[!NOTE]
    >
-   >字串不能超過1023個字元。
+   >字串不得超過1023個字元。
 
    有三個具體案例：
 
-   * 當所選塊包含多個字串/塊時，它被標籤為要轉換的單個字串。 然後，該字串包含此塊內元素的HTML代碼。
-   * 如果要標籤包含多個字串的塊，並且至少已標籤其中一個字串，則會顯示警告。 然後，可以從隔離字串中刪除該標誌，並添加整個塊。
+   * 當選取的區塊包含數個字串/區塊時，會將其標示為要轉譯的單一字串。 字串則包含此區塊內元素的HTML代碼。
+   * 如果要標籤包含數個字串的區塊，並且至少已標籤其中一個字串，則會顯示警告。 然後，您可以從隔離字串中移除標幟，並新增整個區塊。
 
       ![](assets/dce_translation_4.png)
 
-   * 如果要從已標籤的塊中包含的字串中刪除該標籤，則不能直接修改字串轉換選項。 但是，您可以訪問包含字串的塊以更改它。
+   * 如果要從已標籤的塊中包含的字串中刪除該標誌，則無法直接修改字串轉換選項。 不過，您可以存取包含字串的區塊以進行變更。
 
       ![](assets/dce_translation_2.png)
 
-1. 標籤完字串後，返回Web應用程式並選擇 **[!UICONTROL Translations]** 頁籤。
-1. 選取 **[!UICONTROL Collect the strings to translate]**。在DCE中標籤的字串將添加到Web應用程式的字串中。
+1. 完成字串的標幟後，返回Web應用程式並選取 **[!UICONTROL Translations]** 標籤。
+1. 選取 **[!UICONTROL Collect the strings to translate]**。DCE中標籤的字串將添加到Web應用程式的字串中。
 
    >[!NOTE]
    >
-   >收集字串後，如果刪除DCE中的轉換標誌，則不會從清單中刪除它們。 這樣，它們就可以保留在翻譯記憶庫中。
+   >收集到字串後，如果您刪除DCE中的翻譯標籤，這些字串將不會從清單中刪除。 這可以將它們保留在翻譯記憶庫中。
 
-1. 翻譯和批准字串。
+1. 翻譯並核准字串。
 
-   然後，通過從 **[!UICONTROL Preview]** 的子菜單。
+   然後，您可以從 **[!UICONTROL Preview]** 頁簽。

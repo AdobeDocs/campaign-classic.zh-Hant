@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 設定及管理核准流程
-description: 瞭解如何管理營銷活動的批准
+description: 了解如何管理行銷活動的核准
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
@@ -15,83 +15,83 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-交付的每個步驟都需經過批准，以確保充分監控和控制活動的各種過程：目標、內容、預算、提取和發送證據。
+傳遞的每個步驟都需經過核准，以確保完整監控及控制促銷活動的各種程式：鎖定目標、內容、預算、擷取和傳送校樣。
 
-通知消息被發送給被指定審核者的Adobe Campaign操作員，以通知他們批准請求。 檢查審閱人是否 **適當權限** 以便批准，並且其安全區定義正確。 [了解更多資訊](#selecting-reviewers)。
+通知訊息會傳送給指定審核者的Adobe Campaign運算子，以通知他們核准請求。 檢查審核者是否擁有 **適當權限** ，且其安全區域已正確定義。 [了解更多資訊](#selecting-reviewers)。
 
-審批程式在 [此部分](#checking-and-approving-deliveries)。
+批准程式於 [本節](#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
->只有交貨所有者才能啟動交貨。 要使其他運算子（或運算子組）能夠啟動交付，您必須將它們添加為 **[!UICONTROL Delivery start:]** 的子菜單。\
+>只有傳送擁有者才能開始傳送。 為了讓其他運算子（或運算子群組）能夠開始傳送，您必須在 **[!UICONTROL Delivery start:]** 欄位。\
 >[了解更多資訊](#selecting-reviewers)。
 
 ## 操作原則 {#operating-principle-}
 
-例如，預算審批的標準消息如下：
+例如，用於預算審批的標準消息如下：
 
 ![](assets/s_user_validation_link_in_mail.png)
 
-然後，審閱者操作員可以選擇是否批准預算。
+然後，審核者操作員可以選擇批准預算。
 
 ![](assets/s_user_validation_page_confirm.png)
 
-一旦操作員驗證，作業的批准或拒絕將轉發到交貨控制面板。
+一旦運算子驗證，作業的核准或拒絕即會轉送至傳送控制面板。
 
 ![](assets/s_user_validation_link_in_op_board.png)
 
-市場活動的批准日誌中也提供了此資訊。這些日誌通過 **[!UICONTROL Edit > Tracking > Approvals]** 頁籤。
+此資訊也可在促銷活動的核准記錄中取得。這些記錄檔可透過 **[!UICONTROL Edit > Tracking > Approvals]** 標籤。
 
 ![](assets/s_user_validation_log_in_op_edit_tab.png)
 
-這些通知將發送給對啟用審批的每個流程有影響的操作員。
+這些通知會傳送給對每個已啟用核准的程式造成影響的運算子。
 
-可以為市場活動模板、每個市場活動或交貨啟用審批。
+可針對促銷活動範本、個別針對每個促銷活動或傳送啟用核准。
 
-在市場活動模板中選擇所有需要審批的作業( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** 頁籤)，負責審批的運算子（除非未啟用此選項，否則它們將接收通知）。 如需詳細資訊，請參閱[本章節](#approving-processes)。
+在促銷活動範本中選取所有需要核准的作業( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** 標籤)，負責核准的運算子也一樣（除非未啟用此選項，否則他們會收到通知）。 如需詳細資訊，請參閱[本章節](#approving-processes)。
 
-可以使用此模板建立的每個市場活動以及每個市場活動交付分別覆蓋這些設定：按一下 **[!UICONTROL Properties]** 按鈕 **[!UICONTROL Approvals]** 頁籤。
+使用此範本建立的每個促銷活動，以及每個促銷活動傳送的個別設定，都可以覆寫這些設定：按一下 **[!UICONTROL Properties]** 按鈕，然後 **[!UICONTROL Approvals]** 標籤。
 
-在以下示例中，交付內容不需要批准：
+在下列範例中，傳送內容不需要核准：
 
 ![](assets/s_user_validation_select_process_from_del.png)
 
 ## 選擇審閱者 {#selecting-reviewers}
 
-對於每種類型的審批，負責審批的操作員或操作員組都從交貨中的下拉清單中進行選擇。 可以使用 **[!UICONTROL Edit...]** 的子菜單。 此窗口還允許您編輯審批截止時間。
+對於每種類型的批准，負責批准的運算子或運算子組將從傳送的下拉清單中選擇。 可使用 **[!UICONTROL Edit...]** 連結。 此窗口還允許您編輯審批截止日期。
 
 ![](assets/s_user_validation_add_operator.png)
 
-如果未指定審核者，市場活動經理將負責審批並接收通知。 市場活動經理在 **[!UICONTROL Edit > Properties]** 頁籤：
+如果未指定審核者，則行銷活動管理員將負責核准並接收通知。 促銷活動管理員是在 **[!UICONTROL Edit > Properties]** 行銷活動的標籤：
 
 ![](assets/s_user_op_manager_field.png)
 
 >[!NOTE]
 >
->所有其他Adobe Campaign運營商 **[!UICONTROL Administrator]** 權限也可以批准作業，但不會接收通知。\
->預設情況下，如果已定義審批運算子，市場活動經理將無法執行審批或啟動交貨。 您可以修改此行為，並通過建立 **NmsCampaign_Activate_OwnerConfirmation** 選項 **1** 值。
+>所有其他Adobe Campaign運算子(含 **[!UICONTROL Administrator]** 權限也可以核准工作，但不會收到通知。\
+>依預設，如果已定義核准運算子，則促銷活動管理員無法執行核准或開始傳送。 您可以修改此行為，並透過建立 **NmsCampaign_Activate_OwnerConfirmation** 選項 **1** 作為值。
 
-## 審批模式 {#approval-modes}
+## 核准模式 {#approval-modes}
 
-### 通過儀表板審批 {#approval-via-the-dashboard}
+### 透過控制面板進行核准 {#approval-via-the-dashboard}
 
-要通過控制台或Web介面批准作業，請按一下市場活動控制面板上的相應連結。 作業也可以通過交貨跟蹤或交貨控制板獲得批准。
+若要透過主控台或Web介面核准作業，請按一下促銷活動控制面板上的適當連結。 作業也可以透過傳遞追蹤或傳遞控制面板來核准。
 
 ![](assets/s_user_validation_from_console.png)
 
-檢查要審批的資訊，選擇是接受還是拒絕審批，並在必要時輸入注釋。 按一下 **[!UICONTROL Ok]** 來保存。
+檢查要批准的資訊，選擇是否接受或拒絕批准，並在必要時輸入備注。 按一下 **[!UICONTROL Ok]** 儲存。
 
 >[!NOTE]
 >
->如果某個進程已經由其他操作員批准，則該批准連結不可用。
+>如果某個流程已經由其他操作員批准，則該批准連結不可用。
 
-### 通過通知消息審批 {#approval-via-notification-messages}
+### 透過通知訊息進行核准 {#approval-via-notification-messages}
 
-按一下通知消息中可用的連結(請參見 [通知](#notifications))。 您需要登錄，如下所示：
+按一下通知訊息中可用的連結(請參閱 [通知](#notifications))。 您需要登入，如下所示：
 
 ![](assets/s_user_validation__log_in.png)
 
-選擇 **[!UICONTROL Accept]** 或 **[!UICONTROL Reject]** 並輸入注釋（如果需要）。
+選擇 **[!UICONTROL Accept]** 或 **[!UICONTROL Reject]** 並視需要輸入注釋。
 
 ![](assets/s_user_validation_save_target_validation.png)
 
@@ -99,281 +99,281 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果在流程中引發警告，則通知中將顯示警告。
+>如果在處理期間引發警告，則通知中會顯示警告。
 
-### 審核跟蹤 {#approval-tracking}
+### 核准追蹤 {#approval-tracking}
 
-資訊可在以下幾個地方獲得：
+此資訊可在數個位置取得：
 
-* 在市場活動批准日誌中， **[!UICONTROL Approvals]** 頁籤 **[!UICONTROL Edit > Tracking]** 頁籤：
+* 在促銷活動核准記錄中， **[!UICONTROL Approvals]** 的子標籤 **[!UICONTROL Edit > Tracking]** 標籤：
 
    ![](assets/s_user_validation_log_from_op.png)
 
-* 在市場活動交付日誌中， **[!UICONTROL Deliveries]** 頁籤 **[!UICONTROL Edit > Tracking]** 頁籤：
+* 在促銷活動傳送記錄中， **[!UICONTROL Deliveries]** 的子標籤 **[!UICONTROL Edit > Tracking]** 標籤：
 
    ![](assets/s_user_validation_log_from_delivery_list.png)
 
-* 按一下 **[!UICONTROL Hide/show log]** 選項 **[!UICONTROL Summary]** 頁籤。
+* 您可以按一下 **[!UICONTROL Hide/show log]** 選項 **[!UICONTROL Summary]** 標籤。
 
    ![](assets/s_user_validation_log_delivery.png)
 
-* 此資訊也可以通過 **[!UICONTROL Tracking > Approvals]** 頁籤：
+* 此資訊也可透過 **[!UICONTROL Tracking > Approvals]** 索引標籤：
 
    ![](assets/s_user_validation_log_from_exe_tab.png)
 
 >[!NOTE]
 >
->一旦操作員批准或拒絕了某個作業，其他複查操作員就無法再對批准執行操作。
+>一旦操作員批准或拒絕了某個作業，其他審閱操作員就無法再對批准執行操作。
 
-### 自動和手動審批 {#automatic-and-manual-approval}
+### 自動和手動核准 {#automatic-and-manual-approval}
 
-在建立目標工作流時，如果批准是自動（預設模式）,Adobe Campaign將顯示批准連結或在需要批准時立即發送通知。
+建立目標工作流程時，如果核准是自動（預設模式）,Adobe Campaign會顯示核准連結，或在需要核準時立即傳送通知。
 
-要選擇審批模式（手動或自動），請按一下 **[!UICONTROL Edit > Properties]** 頁籤，然後按一下 **[!UICONTROL Advanced campaign settings...]** 最後 **[!UICONTROL Approvals]** 頁籤。
+若要選擇核准模式（手動或自動），請按一下 **[!UICONTROL Edit > Properties]** 標籤，然後按一下 **[!UICONTROL Advanced campaign settings...]** 最後 **[!UICONTROL Approvals]** 標籤。
 
 ![](assets/s_user_validation_select_mode.png)
 
 >[!NOTE]
 >
->選定的審批模式將應用於市場活動的所有交貨。
+>選取的核准模式將套用至促銷活動的所有傳送。
 
-在構建目標工作流時，手動審批允許您避免建立審批連結或自動發送通知。 然後，市場活動控制板提供 **[!UICONTROL Submit targeting for approval]** 連結以手動啟動審批流程。
+建立目標工作流程時，手動核准可讓您避免建立核准連結或自動傳送通知。 然後，促銷活動控制面板會提供 **[!UICONTROL Submit targeting for approval]** 連結以手動啟動核准程式。
 
-通過確認消息，您可以授權對為此傳遞選擇的作業進行批准。
+確認訊息可讓您授權核准為此傳送選取的作業。
 
-然後，批准按鈕將顯示在市場活動控制面板（用於此交貨）、交貨控制面板和交貨跟蹤中。 如果啟用通知，則將並行發送。
+然後核准按鈕會顯示在促銷活動控制面板（針對此傳送）、傳遞控制面板和傳遞追蹤中。 如果啟用通知，則會同時傳送。
 
-啟用批准的這種方法使您能夠在不向審閱者發送虛假通知的情況下進行目標確定。
+此啟用核准的方法可讓您處理鎖定目標作業，而不傳送假通知給審核者。
 
 ## 通知 {#notifications}
 
-通知是發送給審閱者的特定電子郵件，用於通知他們某個進程正在等待批准。 當操作員按一下消息中的連結時，將顯示驗證頁，在登錄後，操作員可以查看資訊並批准或拒絕作業。 也可以在審批窗口中輸入注釋。
+通知是傳送給審核者的特定電子郵件訊息，以通知他們某個程式正在等待核准。 當操作員按一下消息中的連結時，將顯示驗證頁，在登錄後，操作員可以查看資訊並批准或拒絕作業。 也可以在審批窗口中輸入注釋。
 
-通知電子郵件的內容可以個性化。 請參閱 [通知內容](#notification-content)。
+通知電子郵件的內容可個人化。 請參閱 [通知內容](#notification-content).
 
 ### 啟用/禁用通知 {#enabling-disabling-notification}
 
-預設情況下，如果在市場活動模板、市場活動或交貨中啟用了相關作業的審批，則會發送通知消息。 但是，可以禁用通知，以僅授權控制台的批准。
+依預設，如果在促銷活動範本、促銷活動或傳送中啟用相關工作的核准，則會傳送通知訊息。 但是，可以禁用通知，以便僅從控制台授權批准。
 
-為此，請編輯市場活動或市場活動模板的審批窗口( **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** ) **[!UICONTROL Do not enable notification sending]**。
+要執行此操作，請編輯促銷活動或促銷活動範本的核准視窗( **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** 頁簽) **[!UICONTROL Do not enable notification sending]**.
 
 ![](assets/s_user_validation_notif_desactivate.png)
 
 ### 通知內容 {#notification-content}
 
-通知內容在特定模板中定義： **[!UICONTROL Notification of validations for the marketing campaign]**。 此模板保存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** Adobe Campaign樹的資料夾。
+通知內容在特定範本中定義： **[!UICONTROL Notification of validations for the marketing campaign]**. 此範本會儲存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** Adobe Campaign樹的資料夾。
 
-## 審閱和批准交貨 {#checking-and-approving-deliveries}
+## 檢閱及核准傳送 {#checking-and-approving-deliveries}
 
-Adobe Campaign允許您以協作模式為市場營銷活動的主要階段設定審批流程。
+Adobe Campaign可讓您以協作模式，為行銷活動的主要階段設定核准程式。
 
-對於直接郵寄，Adobe Campaign操作員可以在提取檔案發送到路由器之前查看該檔案，如有必要，他們可以更改格式並重新啟動提取。 請參閱 [批准提取檔案](#approving-an-extraction-file)。
+對於直接郵件傳遞，Adobe Campaign操作員可以在將解壓縮檔案發送到路由器之前查看該檔案，如有必要，他們可以更改格式並重新啟動解壓縮。 請參閱 [核准解壓縮檔案](#approving-an-extraction-file).
 
-對於您可以批准交付目標的每個市場活動，內容(請參閱： [審核內容](#approving-content))和成本。 可以透過電子郵件形式通知負責核准的 Adobe Campaign 操作者，然後他們可透過主控台或網路連線核准或拒絕核准。請參閱 [批准交貨的步驟](#approving-processes)。
+對於每個行銷活動，您可以核准傳送目標，內容(請參閱 [核准內容](#approving-content))和成本。 可以透過電子郵件形式通知負責核准的 Adobe Campaign 操作者，然後他們可透過主控台或網路連線核准或拒絕核准。請參閱 [核准傳送的步驟](#approving-processes).
 
-完成這些驗證階段後，可啟動交付。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
+完成這些驗證階段後，即可啟動傳送。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
 
-### 批准交貨的步驟 {#approving-processes}
+### 核准傳送的步驟 {#approving-processes}
 
-需要批准的階段顯示在市場活動控制面板（通過Web介面的控制台）上。 它們還顯示在交貨跟蹤表和交貨控制板中。
+需要核准的階段會顯示在促銷活動控制面板上（透過網頁介面的主控台）。 它們也會出現在傳送追蹤表格和傳送控制面板中。
 
-此時，市場活動的狀態為 **[!UICONTROL To validate]**。
+此時，促銷活動的狀態為 **[!UICONTROL To validate]**.
 
 >[!NOTE]
 >
->要選擇需要審批的流程，請修改市場活動模板。 有關此內容的詳細資訊，請參閱 [市場活動模板](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
+>若要選取需要核准的程式，請修改促銷活動範本。 有關詳細資訊，請參閱 [行銷活動範本](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_edit_del_to_validate.png)
 
 >[!NOTE]
 >
->在目標工作流中，如果在消息準備過程中出現連結到配置問題的錯誤， **[!UICONTROL Restart message preparation]** 連結顯示在儀表板上。 更正錯誤並按一下此連結以在繞過目標階段時重新啟動消息準備。
+>在目標工作流程中，如果在訊息準備期間發生連結至設定問題的錯誤，則 **[!UICONTROL Restart message preparation]** 連結會顯示在控制面板上。 請更正錯誤，然後按一下此連結以在略過定位階段時重新啟動訊息準備。
 
 ![](assets/s_user_validation_relaunch_message_preparation.png)
 
-對於市場活動中的每個交貨，您都可以審批以下流程：
+對於促銷活動中的每個傳送，您可以核准下列程式：
 
 * **目標、內容和預算**
 
-   當 **[!UICONTROL Enable target approval]**。 **[!UICONTROL Enable content approval]** 或 **[!UICONTROL Enable budget approval]** 選項在「任務審批設定」窗口中選擇，相關連結顯示在市場活動控制面板中相關交貨。
+   當 **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** 或 **[!UICONTROL Enable budget approval]** 選項，相關連結會顯示在相關傳送的促銷活動控制面板中。
 
    >[!NOTE]
    >
-   >僅當在審批設定窗口中啟用了目標審批時，預算審批才可用。 只有分析目標後，才顯示預算審批連結。 此外，此連結與用於目標審批的連結一起顯示。
+   >只有在「審批設定」窗口中啟用了目標審批時，才可使用預算審批。 只有分析目標後，才會顯示預算核准連結。 此外，此連結會與要進行目標核准的連結一起顯示。
 
-   如果 **[!UICONTROL Assign content editing]** 或 **[!UICONTROL External content approval]** 選項在批准設定窗口中選中，控制板將顯示 **[!UICONTROL Available content]** 和 **[!UICONTROL External content approval]** 連結。
+   若 **[!UICONTROL Assign content editing]** 或 **[!UICONTROL External content approval]** 選項，控制面板將顯示 **[!UICONTROL Available content]** 和 **[!UICONTROL External content approval]** 連結。
 
-   內容批准允許您訪問發送的校樣。
+   內容核准可讓您存取傳送的校樣。
 
-* **提取審批（直接郵寄）**
+* **提取核准（直接郵件傳送）**
 
-   當 **[!UICONTROL Enable extraction approval]** 在「批准設定」窗口中選擇，在通知路由器之前必須批准提取的檔案。
+   當 **[!UICONTROL Enable extraction approval]** 在「批准設定」窗口中選中，則必須先批准提取的檔案，然後才能通知路由器。
 
-   安 **[!UICONTROL Approve content]** 連結在市場活動控制面板上可用，如下所示：
+   安 **[!UICONTROL Approve content]** 連結可在促銷活動控制面板上使用，如下所示：
 
    ![](assets/s_ncs_user_edit_file_valid.png)
 
-   抽取檔案可以通過批准框預覽，然後接受或拒絕。
+   解壓縮檔案可透過核准方塊預覽，然後接受或拒絕。
 
    ![](assets/s_ncs_user_edit_file_valid_preview_file.png)
 
    >[!NOTE]
    >
-   >抽取檔案預覽僅涉及資料示例。 未載入整個輸出檔案。
+   >擷取檔案預覽僅涉及資料範例。 未載入整個輸出檔案。
 
-* **批准關聯的交貨**
+* **核准相關傳遞**
 
-   的 **[!UICONTROL Enable individual approval of each associated delivery]** 選項用於與輔助交貨關聯的一個主交貨。 預設情況下，不會選擇此選項，以便可以執行主交貨的總體批准。 如果選擇此選項，則每個交貨必須單獨審批。
+   此 **[!UICONTROL Enable individual approval of each associated delivery]** 選項會用於與次要傳送相關聯的主要傳送。 依預設，不會選取此選項，以執行主要傳送的整體核准。 如果選取此選項，則每個傳送都必須個別核准。
 
    ![](assets/s_ncs_user_task_valid_associate.png)
 
 ### 選擇審批流程 {#choosing-the-processes-to-be-approved}
 
-審批階段與與市場活動關聯的模板一起定義。 必須從模板中選擇要批准的元素，並指定負責這些批准的Adobe Campaign運算子。 有關市場活動模板的詳細資訊，請參閱 [此部分](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
+核准階段會與與促銷活動相關聯的範本一起定義。 您必須從範本中選取要核准的元素，並指定負責這些核准的Adobe Campaign運算子。 如需促銷活動範本的詳細資訊，請參閱 [本節](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 >[!NOTE]
 >
->市場活動（或市場活動模板）的審批配置適用於連結到此市場活動的所有將來交貨。 任何配置更改都不會應用於以前的交貨。
+>促銷活動（或促銷活動範本）的核准設定會套用至連結至此促銷活動的所有未來傳送。 任何設定變更都不會套用至先前的傳送。
 
-可以覆蓋每個市場活動和每個交貨的此資訊。
+可針對每個促銷活動和每個傳送覆寫此資訊。
 
-對於市場活動，按一下 **[!UICONTROL Edit > Properties]** ，則 **[!UICONTROL Advanced campaign settings...]** 連結，最後 **[!UICONTROL Approvals]** 的子菜單。
+若為促銷活動，請按一下 **[!UICONTROL Edit > Properties]** ，然後 **[!UICONTROL Advanced campaign settings...]** 連結，最後 **[!UICONTROL Approvals]** 頁簽，訪問「批准配置」頁。
 
-您可以選擇並取消選擇要審批和指定負責審批的Adobe Campaign操作員的流程。 這些運算子可以是單個運算子、一組運算子或運算子清單。
+您可以選取和取消選取流程，以核准和指定負責核准的Adobe Campaign運算子。 這些可以是個別運算子、運算子群組或運算子清單。
 
-要選擇運算子清單，請按一下 **[!UICONTROL Edit...]** 連結到指定第一個審閱者的欄位右側，並根據需要添加任意數量的運算子，如下所示：
+若要選取運算子清單，請按一下 **[!UICONTROL Edit...]** 連結至指定第一個審核者的欄位右側，並視需要新增多個運算子，如下所示：
 
 ![](assets/s_user_validation_add_operator.png)
 
 >[!NOTE]
 >
->* 如果定義了審閱者清單，則當一個審閱者接受該清單時，將批准該作業。 然後，儀表板中不再提供相關批准連結。 啟用通知發送時，如果另一個審閱者按一下通知消息中的批准連結，則通知他們另一個操作員已批准該作業。
->* 您可以在審閱者編輯窗口的下半部分定義市場活動的審批計畫。 預設情況下，審閱人從提交日期開始有三天時間批准流程。 可以配置在批准截止日期前自動發送給相關操作員的提醒。
+>* 如果定義了審核者清單，則當一個審核者接受該清單時，將批准該作業。 控制面板中就不再提供相關的核准連結。 啟用通知發送時，如果另一個審核者按一下通知消息中的批准連結，則通知他們另一個操作員已批准該作業。
+>* 您可以在審核者編輯視窗的下半部定義促銷活動的核准排程。 依預設，審核者自提交日期起有三天時間核准程式。 可以配置提醒，該提醒在批准截止日期之前自動發送給相關操作員。
 >* 您可以從此部分添加提醒。
 >
 
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
-對於每個交貨，按一下 **[!UICONTROL Audit]** 按鈕 **[!UICONTROL Approvals]** 頁籤，查看和編輯審批日期和自動提醒。
+對於每個傳送，按一下 **[!UICONTROL Audit]** 按鈕和 **[!UICONTROL Approvals]** 頁簽來查看和編輯批准日期和自動提醒。
 
 ![](assets/s_ncs_user_edit_del_valid.png)
 
 >[!NOTE]
 >
->此頁籤在內容審批流程啟動後可用。
+>內容核准程式啟動後，即可使用此標籤。
 
-### 批准內容 {#approving-content}
+### 核准內容 {#approving-content}
 
 >[!CAUTION]
 >
->要批准內容，必須使用證明週期。 校樣允許您批准資訊、個性化資料的顯示，並檢查連結是否正在工作。 瞭解如何在 [此部分](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+>若要核准內容，校樣週期是必填的。 校樣可讓您核准資訊、個人化資料的顯示，並檢查連結是否運作中。 了解如何在 [本節](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 >
->下面詳述的內容批准功能與證明交付有關。
+>下文詳述的內容核准功能與證明傳送有關。
 
-可以配置內容批准週期。 要執行此操作，請選擇 **[!UICONTROL Enable content approval]** 的子菜單。 內容審批週期的主要步驟是：
+您可以設定內容核准週期。 若要這麼做，請選取 **[!UICONTROL Enable content approval]** 選項。 內容核准週期的主要步驟為：
 
-1. 建立新交貨後，市場活動經理按一下 **[!UICONTROL Submit content]** 連結到市場活動控制面板以啟動內容審批週期。
+1. 建立新傳遞後，行銷活動管理員按一下 **[!UICONTROL Submit content]** 連結至促銷活動控制面板，以啟動內容核准週期。
 
    ![](assets/s_ncs_user_validation_submit_content_validation.png)
 
    >[!NOTE]
    >
-   >如果 **[!UICONTROL Enable the sending of proofs]** 選項（用於電子郵件遞送）或 **[!UICONTROL Enable the sending and approval of proofs]** （對於直接郵寄）選項已在批准設定窗口中選擇，將自動發送校樣。
+   >若 **[!UICONTROL Enable the sending of proofs]** 選項（用於電子郵件傳送）或 **[!UICONTROL Enable the sending and approval of proofs]** （針對直接郵件傳送）選項（在核准設定視窗中選取）時，會自動傳送校樣。
 
-1. 通知電子郵件將發送給負責內容的人員，此人可以選擇是否批准該內容：
+1. 系統會傳送通知電子郵件給負責內容的人員，由他們選擇是否要核准：
 
-   * 通過通知電子郵件：
+   * 透過通知電子郵件：
 
       ![](assets/s_ncs_user_del_content_valid_bat_notif.png)
 
       >[!NOTE]
       >
-      >通知電子郵件包含指向已發送的校樣的連結，並且如果已發送的校樣已發送，則可能包含向各種網路郵件的消息的呈現的連結 **可交付性** 選項。
+      >通知電子郵件包含已傳送校樣的連結，若 **傳遞能力** 選項。
 
-   * 通過控制台或web介面、交付跟蹤、交付控制板或市場活動控制板：
+   * 透過主控台或網頁介面、傳遞追蹤、傳遞控制面板或行銷活動控制面板：
 
       ![](assets/s_ncs_user_validation_content_bat_op.png)
 
       >[!NOTE]
       >
-      >此市場活動控制面板通過按一下 **[!UICONTROL Inbox rendering...]** 的子菜單。 要查看其內容，請按一下 **[!UICONTROL Detail]** 的子菜單。
+      >此促銷活動控制面板可讓您按一下 **[!UICONTROL Inbox rendering...]** 連結。 若要檢視其內容，請按一下 **[!UICONTROL Detail]** 表徵圖。
 
       ![](assets/s_ncs_user_validation_content_BAT_details.png)
 
-1. 通知電子郵件被發送給負責市場活動的人員，通知他們內容是否已被批准。
+1. 系統會傳送通知電子郵件給負責促銷活動的人員，通知他們內容是否已核准。
 
    >[!NOTE]
    >
-   >負責市場活動的人員可以隨時重新啟動內容審批週期。 要執行此操作，請按一下 **[!UICONTROL Content status]** 市場活動控制面板的行（在交貨層），然後按一下 **[!UICONTROL Reset content approval to submit it again]**。
+   >負責促銷活動的人員可隨時重新啟動內容核准週期。 若要這麼做，請按一下 **[!UICONTROL Content status]** 行（在傳送層級），然後按一下 **[!UICONTROL Reset content approval to submit it again]**.
 
    ![](assets/s_user_validation_relaunch_content_validation.png)
 
-#### 分配內容編輯 {#assign-content-editing}
+#### 指派內容編輯 {#assign-content-editing}
 
-此選項允許您定義負責內容編輯的人員，如網站管理員。 如果 **[!UICONTROL Assign content editing]** 選項，在建立傳遞和將通知電子郵件發送給負責內容的人員之間添加幾個審批步驟：
+此選項可讓您定義負責內容編輯的人員，例如網站管理員。 若 **[!UICONTROL Assign content editing]** 選項，則在傳送建立和傳送通知電子郵件給內容負責人之間會新增數個核准步驟：
 
-1. 建立新交貨後，市場活動負責人按一下 **[!UICONTROL Submit content editing]** 連結以啟動內容編輯週期。
+1. 建立新傳送後，負責促銷活動的人員會點按 **[!UICONTROL Submit content editing]** 在促銷活動控制面板中連結，以開始內容編輯週期。
 
    ![](assets/s_ncs_user_validation_submit_content_edition.png)
 
-1. 負責內容編輯的人員將收到一封電子郵件，告知他們內容可用。
+1. 負責內容編輯的人員會收到電子郵件，告知他們內容可供使用。
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. 然後，他們可以登錄到控制台，開啟傳送，並使用簡化嚮導編輯它以更改主題、HTML和文本內容，併發送校樣。
+1. 然後，他們就可以登入主控台、開啟傳送，並使用簡化精靈加以編輯，以變更主旨、HTML和文字內容，並傳送校樣。
 
    ![](assets/s_user_validation_content_edition.png)
 
    >[!NOTE]
    >
-   >如果 **[!UICONTROL Enable the sending of proofs]** 選項（用於電子郵件遞送）或 **[!UICONTROL Enable the sending and approval of proofs]** （對於直接郵寄）選項已在批准設定窗口中選擇，將自動發送校樣。
+   >若 **[!UICONTROL Enable the sending of proofs]** 選項（用於電子郵件傳送）或 **[!UICONTROL Enable the sending and approval of proofs]** （針對直接郵件傳送）選項（在核准設定視窗中選取）時，會自動傳送校樣。
 
-1. 一旦負責內容編輯的人員完成對交付內容的任何更改，他們就可以使內容可用。
+1. 負責內容編輯的人員完成對傳送內容的任何變更後，即可使用該內容。
 
-   為此，他們可以：
+   若要這麼做，他們可以：
 
-   * 按一下 **[!UICONTROL Available content]** 通過Adobe Campaign控制台連結。
+   * 按一下 **[!UICONTROL Available content]** 透過Adobe Campaign主控台連結。
 
       ![](assets/s_ncs_user_validation_submit_content_available.png)
 
-   * 按一下通知消息中的連結，然後批准內容可用性。
+   * 按一下通知訊息中的連結，然後核准內容可用性。
 
       ![](assets/s_ncs_user_validation_submit_content_available2.png)
 
-      操作員可以在向市場活動負責人提交內容之前添加註釋。
+      運算子可以先新增留言，再將內容提交給行銷活動的負責人。
 
       ![](assets/s_ncs_user_validation_submit_content_available3.png)
 
-      通知消息允許審閱者批准或拒絕內容。
+      通知訊息可讓審核者核准或拒絕內容。
 
       ![](assets/s_ncs_user_validation_submit_content_available4.png)
 
-#### 外部內容審批 {#external-content-approval}
+#### 外部內容核准 {#external-content-approval}
 
-此選項允許您定義負責批准交付呈現的外部操作員，如品牌通信一致性、費率等。 當 **[!UICONTROL External content approval]** 選項，在內容審批和將通知發送給市場活動負責人之間添加幾個審批步驟：
+此選項可讓您定義負責核准傳遞轉譯的外部運算子，例如品牌通訊一致性、比率等。 當 **[!UICONTROL External content approval]** 選項，則內容核准和將通知傳送給行銷活動負責人之間會新增數個核准步驟：
 
-1. 外部內容管理器接收通知電子郵件，通知他們內容已被批准並請求外部批准。
-1. 通知電子郵件包含指向發送的校樣的連結，這些校樣允許您查看交付呈現，以及用於批准或拒絕交付內容的按鈕。
+1. 外部內容管理員會收到通知電子郵件，告知他們內容已獲核准，並請求外部核准。
+1. 通知電子郵件包含傳送之校樣的連結，可讓您檢視傳送呈現，以及核准或拒絕傳送內容的按鈕。
 
    >[!NOTE]
    >
-   >這些連結僅在已發送一個或多個校樣時才可用。 否則，僅通過控制台或Web介面提供交付呈現。
+   >只有已傳送一或多個校樣時，這些連結才可用。 否則，傳遞呈現只能透過主控台或Web介面使用。
 
    ![](assets/s_user_validation_external_content.png)
 
-### 批准提取檔案 {#approving-an-extraction-file}
+### 核准解壓縮檔案 {#approving-an-extraction-file}
 
-對於離線傳送，Adobe Campaign會生成抽取檔案，並根據其設定方式將其發送到路由器。 其內容取決於使用的導出模板。
+對於離線傳遞，Adobe Campaign會產生解壓縮檔案，該檔案會根據設定方式傳送至路由器。 其內容取決於使用的匯出範本。
 
-當內容、目標和預算獲得批准時，交付將更改為 **[!UICONTROL Extraction pending]** 直到啟動市場活動的抽取工作流。
+當內容、目標和預算獲得核准後，傳送會變更為 **[!UICONTROL Extraction pending]** 直到啟動促銷活動的擷取工作流程為止。
 
 ![](assets/s_ncs_user_waiting_file_extraction.png)
 
-在提取請求日期，建立提取檔案，並將提供狀態更改為 **[!UICONTROL File to approve]**。
+提取請求日期時，會建立提取檔案，且傳送狀態變更為 **[!UICONTROL File to approve]**.
 
 ![](assets/s_ncs_user_file_extract_to_valid.png)
 
-您可以查看提取的檔案的內容（通過按一下其名稱）、批准它，或者在必要時更改格式，並使用儀表板上的連結重新啟動提取。
+您可以檢視擷取的檔案內容（按一下檔案名稱）、核准檔案，或視需要變更格式，然後使用控制面板上的連結重新啟動擷取。
 
-檔案獲得批准後，您可以向路由器發送通知電子郵件。 有關此內容的詳細資訊，請參閱 [啟動離線交貨](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery)。
+檔案獲得批准後，您就可以向路由器發送通知電子郵件。 有關詳細資訊，請參閱 [開始離線傳送](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery).

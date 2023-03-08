@@ -61,7 +61,7 @@ ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7�
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. 確認收件者的名稱已以Campaign Standard更新。 若要了解在Campaign Standard中尋找設定檔的位置，請參閱 [導覽基本知識](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. 確認收件者的名稱已以Campaign Standard更新。 若要了解在Campaign Standard中尋找設定檔的位置，請參閱 [導覽基本知識](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hant).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -174,6 +174,6 @@ ACS連接器將資料從Campaign v7複製到Campaign Standard。 從Campaign v7�
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. 前往「Campaign Standard」 ，並開啟收件者的設定檔詳細資訊。 確認核取方塊會出現在 **[!UICONTROL No longer contact (by any channel)]**. 若要了解在Campaign Standard中尋找設定檔的位置，請參閱 [導覽基本知識](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. 前往「Campaign Standard」 ，並開啟收件者的設定檔詳細資訊。 確認核取方塊會出現在 **[!UICONTROL No longer contact (by any channel)]**. 若要了解在Campaign Standard中尋找設定檔的位置，請參閱 [導覽基本知識](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hant).
 
    ![](assets/acs_connect_profile_sync_23.png)

@@ -7,7 +7,7 @@ exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
 source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '5385'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **功能改進**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **有哪些新功能？**
 
@@ -249,7 +249,7 @@ NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **有哪些新功能？**
 
@@ -262,7 +262,7 @@ NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應
  </thead> 
  <tbody> 
   <tr> 
-   <td> 查詢區<br /> </td> 
+   <td> 查詢級區<br /> </td> 
    <td> <p>當多個Campaign使用者連線至相同的FDATeradata外部帳戶時，您現在可以傳遞每個使用者專屬的查詢範圍（索引鍵/值組）。 每次Campaign使用者在Teradata資料庫上執行查詢時，Adobe Campaign現在都能傳送與使用者相關聯的中繼資料。 這些資料包含在索引鍵和值清單中，然後可供Teradata管理員用於稽核或管理存取權限。</p><p>如需詳細資訊，請參閱<a href="../../installation/using/external-accounts.md">詳細文件</a>以瞭解詳情。</p> </td>
   </tr> 
  </tbody> 
@@ -284,7 +284,7 @@ NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應
 
 **技術演變**
 
-查詢區
+查詢級區
 
 特定索引鍵（PROXYUSER或PROXYROLE）可用來將Teradata使用者或角色與促銷活動使用者建立關聯。 已新增使用此代理使用者/角色的新權限。 您需要將GRANTCONNECTTHROUGH訪問權限添加到資料庫帳戶(在Teradata外部帳戶中定義的帳戶)。
 
@@ -305,7 +305,7 @@ NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應
 
 >[!CAUTION]
 >
->這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [技術支援](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>這棟建築已召回。 請 [升級至最新版本編號](../../production/using/build-upgrade.md) 或聯絡人 [技術支援](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **有哪些新功能？**
 
@@ -323,7 +323,7 @@ NmsRtEvent和NmsEventHisto已新增新索引（在「已排程」欄），這應
   </tr> 
   <tr> 
    <td> 支援Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign 現在相容於 Windows Server 2016。 請參閱 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic相容性矩陣</a>.<br /> </td> 
+   <td> Adobe Campaign 現在相容於 Windows Server 2016。 請參閱 <a href="https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html">Campaign Classic相容性矩陣</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -340,7 +340,7 @@ decryptString
 
 decryptPassword
 
-此 **decryptPassword** 函式。 它可讓您解密儲存在外部帳戶中的密碼。 請參閱 [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) 檔案以取得詳細資訊。
+此 **decryptPassword** 函式。 它可讓您解密儲存在外部帳戶中的密碼。 請參閱 [JSAPI](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html) 檔案以取得詳細資訊。
 
 檔案API
 
