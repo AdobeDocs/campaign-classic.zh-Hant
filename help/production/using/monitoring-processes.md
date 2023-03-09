@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: f2ec24a122eff94f62bd79e656e771fecd803659
 workflow-type: tm+mt
-source-wordcount: '3606'
+source-wordcount: '3610'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,6 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 >
 >* 只有啟用了電子郵件通道後，才能使用與SMTP監視相關的資訊。
 >* 此 **[!UICONTROL SMTP sending statistics]** 只有在實例上啟動了統計伺服器時，才提供。
-
 >
 
 
@@ -269,8 +268,9 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 
 此報告的指標清單如下。
 
-1. 已傳送的訊息總數。
-1. 
+1. 已傳送的訊息總數.
+1. 代表輸入/輸出訊息：
+
    * 藍線：已準備好傳送且已送達Shaper的訊息，亦即傳送SMTP前的最後一個階段（與傳入的資料一致）。
 
    * 綠線：已成功傳送訊息（與傳出資料一致）。
@@ -337,7 +337,7 @@ SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台�
 >
 >有關SMTP錯誤以及在Adobe Campaign中管理這些錯誤的詳細資訊，請參閱 [本節](../../installation/using/email-deliverability.md).
 
-## 帳單報告 {#billing-report}
+## 計費報告 {#billing-report}
 
 此 **[!UICONTROL Billing]** 技術工作流程會透過電子郵件將系統活動報表傳送至「帳單」運算子。 預設會在行銷執行個體上每月25日觸發。
 
