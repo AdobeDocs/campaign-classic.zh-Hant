@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
+source-git-commit: 754e6d2486897958827a15ab8a3d14ec17935891
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 100%
+source-wordcount: '2969'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,37 @@ ht-degree: 100%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## ![](assets/do-not-localize/green_2.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/green_2.png)版本 7.3.3 - 版本編號 9359 {#release-7-3-3}
+
+>[!CAUTION]
+>
+> 此版本目前僅適用於受管Cloud Services使用者，即將推出內部部署和混合部署。
+
+>[!CAUTION]
+>
+>用戶端主控台升級為強制。 透過本[頁面](../../installation/using/installing-the-client-console.md)了解如何升級您的用戶端主控台。
+
+_2023 年 3 月 9 日_
+
+**安全性增強功能**
+
+* 為了最佳化安全性，已將Tomcat從8.5.81版更新至8.5.85版。 (NEO-56936)
+
+**功能改進**
+
+* 已改善「帳單」工作流程以最佳化效能。 (NEO-47658)
+* 已改善追蹤工作流程，以在傳送大小較大時最佳化效能。 (NEO-45064)
+* 已改善追蹤管理，以修正URL中動態參數的可能問題。 追蹤管理v3現在可處理ajax類型URL（在「#」後加上參數），並防止第三方工具修改追蹤URL。 若要套用此變更，您必須聯絡Adobe。 (NEO-46535)
+
+<!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
+
+**修補程式**
+
+* 修正了無法從控制執行個體（交易式訊息內容）傳送iOS校樣推播通知的問題。 (NEO-54713)
+* 修正了無法捲動 **編輯** 數字內容編輯器(DCE)的頁簽。 (NEO-54474)
+* 修正兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結的問題。 (NEO-48851)
+
+## ![](assets/do-not-localize/orange_2.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
 
 _2022 年 11 月 21 日_
 
