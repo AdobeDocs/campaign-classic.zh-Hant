@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 754e6d2486897958827a15ab8a3d14ec17935891
+source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 94%
+source-wordcount: '2989'
+ht-degree: 93%
 
 ---
 
@@ -24,10 +24,12 @@ ht-degree: 94%
 >[!CAUTION]
 >
 > 此版本目前僅適用於受管Cloud Services使用者，即將推出內部部署和混合部署。
-
->[!CAUTION]
 >
 >用戶端主控台升級為強制。 透過本[頁面](../../installation/using/installing-the-client-console.md)了解如何升級您的用戶端主控台。
+
+>[!NOTE]
+>
+>此版本僅適用於受管Cloud Services使用者。
 
 _2023 年 3 月 9 日_
 
@@ -49,13 +51,17 @@ _2023 年 3 月 9 日_
 * 修正了無法捲動 **編輯** 數字內容編輯器(DCE)的頁簽。 (NEO-54474)
 * 修正兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結的問題。 (NEO-48851)
 
-## ![](assets/do-not-localize/orange_2.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/green.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
 
 _2022 年 11 月 21 日_
 
 >[!CAUTION]
 >
 >用戶端主控台升級為強制。 透過本[頁面](../../installation/using/installing-the-client-console.md)了解如何升級您的用戶端主控台。
+
+>[!NOTE]
+>
+>此版本僅適用於內部部署和混合部署。
 
 **相容性更新**
 
