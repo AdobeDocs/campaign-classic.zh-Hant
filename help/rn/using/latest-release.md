@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
 workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ _2023 年 3 月 9 日_
 **修補程式**
 
 * 修正了無法從控制執行個體（交易式訊息內容）傳送iOS校樣推播通知的問題。 (NEO-54713)
-* 修正了無法捲動 **編輯** 數字內容編輯器(DCE)的頁簽。 (NEO-54474)
+* 修正了無法在數位內容編輯器 (DCE) 捲動&#x200B;**編輯**&#x200B;索引標籤的問題。 (NEO-54474)
 * 修正兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結的問題。 (NEO-48851)
 
 ## ![](assets/do-not-localize/green.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
