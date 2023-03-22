@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2947'
+ht-degree: 100%
 
 ---
 
@@ -29,21 +29,21 @@ _2023 年 3 月 20 日_
 
 **安全性增強功能**
 
-* 為了最佳化安全性，已將Tomcat從8.5.81版更新至8.5.85版。 (NEO-56936)
+* 為了最佳化安全性，已將 Tomcat 從 8.5.81 版更新至 8.5.85 版。(NEO-56936)
 
 **功能改進**
 
-* 已改善「帳單」工作流程以最佳化效能。 (NEO-47658)
-* 已改善追蹤工作流程，以在傳送大小較大時最佳化效能。 (NEO-45064)
-* 已改善追蹤管理，以修正URL中動態參數的可能問題。 追蹤管理v3現在可處理ajax類型URL（在「#」後加上參數），並防止第三方工具修改追蹤URL。 若要套用此變更，您必須聯絡Adobe。 (NEO-46535)
+* 已改善「帳單」工作流程以最佳化效能。(NEO-47658)
+* 已改善追蹤工作流程，以在傳送大小較大的情況下最佳化效能。(NEO-45064)
+* 已改善追蹤管理，以修正 URL 中動態參數可能出現的問題。追蹤管理 v3 現在可處理 ajax 類型的 URL (參數在「#」之後)，並避免協力廠商工具修改追蹤 URL。若要套用此變更，您必須聯絡 Adobe。(NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **修補程式**
 
-* 修正了無法從控制執行個體（交易式訊息內容）傳送iOS校樣推播通知的問題。 (NEO-54713)
+* 修正了可能無法從控制項執行個體 (交易式訊息內容) 傳送 iOS 校訂推播通知的問題。(NEO-54713)
 * 修正了無法在數位內容編輯器 (DCE) 捲動&#x200B;**編輯**&#x200B;索引標籤的問題。 (NEO-54474)
-* 修正兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結的問題。 (NEO-48851)
+* 修正當兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結問題。(NEO-48851)
 
 ## ![](assets/do-not-localize/orange_2.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
 
