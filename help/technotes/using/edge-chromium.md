@@ -4,10 +4,10 @@ title: 技術 — 在您的Campaign環境中啟用Microsoft Edge Chromium
 description: Campaign - Edge Chromium
 hide: true
 hidefromtoc: true
-source-git-commit: d9f57d4e5b6f880907040344ece40546456a2321
+source-git-commit: 17ef8f92ab5dbecadf20140c3faff735d92c8223
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 13%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 有什麼改變？
 
-在Microsoft Internet Explorer 11終止後，用戶端主控台中Adobe服務的HTML轉譯引擎（登入頁面）現在正使用Microsoft Edge Chromium，從Campaign Classicv7.3開始。
+Microsoft Internet Explorer 11生命週期結束後，用戶端主控台中控制面板的HTML轉譯引擎即使用Edge Chromium，開始使用Campaign Classicv7.3。
 
 除了安裝Microsoft Edge Webview 2執行階段外，現在也是 [任何客戶端控制台安裝都需要](../../installation/using/installing-the-client-console.md#webview)，您必須在執行個體上啟用Microsoft Edge Chromium 。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 如何更新？
 
-* As a **托管** 客戶，Adobe已在您的執行個體上啟用Microsoft Edge Chromium。
+* As a **托管** 客戶，Adobe已在您的執行個體上啟用Microsoft Edge Chromium。 不需要執行其他動作。
 
 * 作為 **內部部署/混合** 客戶，您必須在執行個體上啟用Microsoft Edge Chromium。
 
@@ -39,19 +39,19 @@ ht-degree: 0%
 
    1. 編輯Campaign伺服器設定檔案(`serverConf.xml`)
    1. 在 `<web>` 模組，設定 `webView2Mode = "1"`
-   1. 重新載入伺服器配置
+   1. 運行以下命令以重新載入伺服器配置：
 
       ```
       nlserver config -reload
       ```
 
-   1. 重新啟動Web伺服器
+   1. 運行以下命令以重新啟動Web伺服器：
 
       ```
       nlserver restart web
       ```
 
-   1. 如果您的環境在Apache上執行，請重新啟動Apache
+   1. 如果您的環境使用Apache作為Web伺服器，請運行以下命令以重新啟動Apache:
 
       ```
       /etc/init.d/apache2 restart
