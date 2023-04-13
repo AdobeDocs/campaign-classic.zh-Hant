@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '3577'
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
-## 2023
+## 2023 年
 
 ### 2023 年 4 月
 
-新增如何在內部部署/混合環境中啟用Microsoft Edge Chromium的技術檔案。 [深入了解](../../technotes/using/edge-chromium.md)
+新增如何在內部部署/混合環境中啟用 Microsoft Edge Chromium 的技術說明。 [深入了解](../../technotes/using/edge-chromium.md)
 
 ### 2023 年 3 月
 
