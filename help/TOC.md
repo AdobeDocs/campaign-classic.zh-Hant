@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2536'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -823,7 +823,7 @@ ht-degree: 99%
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
    + 升級與相容性{#technote-migration}
       + [技術說明](technotes/using/technote.md)
-      + [啟用Microsoft Edge Chromium](technotes/using/edge-chromium.md)
+      + [啟用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
       + [新傳遞能力伺服器](technotes/using/deliverability-server.md)
       + [Apache 安全性升級](technotes/using/acc-apache-upgrade.md)
       + [2023 年系統升級](technotes/using/tech-stack-upgrade.md)
