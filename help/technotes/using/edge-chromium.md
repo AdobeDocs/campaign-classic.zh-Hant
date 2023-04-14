@@ -2,13 +2,13 @@
 product: campaign
 title: 技術 — 在您的Campaign環境中啟用Microsoft Edge Chromium
 description: Campaign - Edge Chromium
-source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
+exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
+source-git-commit: 095919608e08a0bf8ad1487fa5ec0a1ddb443c7b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 13%
 
 ---
-
 
 # 如何在您的環境中啟用Microsoft Edge Chromium {#edge-conf}
 
@@ -65,4 +65,3 @@ Microsoft Internet Explorer 11生命週期結束後，用戶端主控台中控�
 * [升級您的環境](../../production/using/build-upgrade.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
 * [安裝 Campaign 用戶端控制台](../../installation/using/installing-the-client-console.md)
-
