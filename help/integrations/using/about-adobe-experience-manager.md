@@ -5,9 +5,9 @@ description: 關於Adobe Experience Manager
 audience: integrations
 content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 98a67e5b6e3f8cf8ba596db1fadd61fff821be30
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,5 @@ Adobe Campaign與Adobe Experience Manager的整合可讓您直接在Adobe Experi
 * Adobe Campaign例項。
 
 Adobe Campaign與Adobe Experience Manager 6.1、6.2、6.3、6.4和6.5相容。以下章節概述整合。
-
->[!NOTE]
->
->Adobe Experience Manager 6.5不再提供Adobe Campaign Classic範本。
 
 如需詳細資訊，請參閱 [Adobe Experience Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)

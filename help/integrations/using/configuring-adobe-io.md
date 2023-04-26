@@ -8,9 +8,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 98a67e5b6e3f8cf8ba596db1fadd61fff821be30
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '717'
 ht-degree: 4%
 
 ---
@@ -68,6 +68,9 @@ ht-degree: 4%
 1. 如果您的用戶端ID為空，請選取 **[!UICONTROL Generate a key pair]** 來建立公開和私密金鑰組。
 
    接著，系統會自動下載金鑰，預設到期日為365天。 到期後，您需要建立新金鑰組並更新設定檔案中的整合。 使用選項2，您可以選擇手動建立和上傳 **[!UICONTROL Public key]** 具有較長的到期日。
+
+   如需如何更換即將到期的憑證金鑰組的逐步指南，請參閱 [本頁](https://developer.adobe.com/developer-console/docs/guides/email-alerts/cert-expiry/#a-step-by-step-guide-to-replacing-expiring-certificate-key-pairs).
+
 
    >[!CAUTION]
    >
