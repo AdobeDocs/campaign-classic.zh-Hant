@@ -6,8 +6,8 @@ feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 19%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 深入了解 [本節](about-deliverability.md).
+>Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 在[本節](about-deliverability.md)了解更多資訊。
 
 傳遞傳送可透過準備傳遞和/或在工作流程程式中傳送來自動化。 如需工作流程中傳送類型活動的詳細資訊，請參閱 [本節](../../workflow/using/about-action-activities.md).
 
@@ -102,7 +102,7 @@ Adobe Campaign提供電話傳送範本，可用來建立外部傳送。 使用�
 
 Campaign中有三種傳送物件類型：
 
-### 單一傳送 {#single-delivery}
+### 單次傳遞 {#single-delivery}
 
 A **傳遞** 是執行一次的獨立傳送物件。 它可以重複、重新準備，但只要它處於最終狀態（取消、停止、完成），它就不能重複使用。
 
