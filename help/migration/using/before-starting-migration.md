@@ -5,15 +5,17 @@ description: 開始移轉前
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
+hide: true
+hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
 
 ---
 
-# 先決條件{#before-starting-migration}
+# 必要條件{#before-starting-migration}
 
 ![](../../assets/v7-only.svg)
 

@@ -5,8 +5,10 @@ description: 測試移轉
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
+hide: true
+hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 4%
@@ -114,7 +116,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
  <thead> 
   <tr> 
    <th> 運算式<br /> </th> 
-   <th> 錯誤碼<br /> </th> 
+   <th> 錯誤代碼<br /> </th> 
    <th> 記錄類型<br /> </th> 
    <th> 評論<br /> </th> 
   </tr> 

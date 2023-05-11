@@ -5,8 +5,10 @@ description: 了解如何從舊版Campaign移轉至Campaign Classic
 audience: migration
 content-type: reference
 topic-tags: migration-overview
+hide: true
+hidefromtoc: true
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 3%
@@ -31,7 +33,7 @@ ht-degree: 3%
 ## 必要條件
 
 * 移轉程式必須由專家使用者執行。 您至少必須得到Adobe Campaign的資料庫專家、系統管理員和應用程式開發人員的協助。
-* 開始移轉之前，請先檢查您使用的系統和系統元件是否與v7相容。 [了解更多資訊](../../rn/using/compatibility-matrix.md)。
+* 開始移轉之前，請先檢查您使用的系統和系統元件是否與v7相容。 [了解更多](../../rn/using/compatibility-matrix.md)。
 * 如果您使用Adobe Campaign雲端訊息（中間來源部署），請先聯絡Adobe客戶服務再開始。
 * 開始移轉程式前，請 **必須** 備份資料。
 * 移轉程式可能需要數天才能完成。

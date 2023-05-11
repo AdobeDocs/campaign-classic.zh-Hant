@@ -5,8 +5,10 @@ description: 一般設定
 audience: migration
 content-type: reference
 topic-tags: configuration
+hide: true
+hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
 workflow-type: tm+mt
 source-wordcount: '2625'
 ht-degree: 0%
@@ -334,7 +336,7 @@ allowSQLInjection="false"
      </queryFilter>
    ```
 
-**匯總**
+**彙總**
 
 匯總函式（集合）
 
@@ -354,7 +356,7 @@ allowSQLInjection="false"
    >
    >對集料函式自動進行接頭。 不再需要指定條件WHERE O0.iOperationId=iOperationId。
    >
-   >無法再使用「count(*)」函式。 您必須使用&quot;countall()&quot;。
+   >無法再使用「count(&#42;)」函式。 您必須使用&quot;countall()&quot;。
 
 * 舊版語法：
 
@@ -456,7 +458,8 @@ allowSQLInjection="false"
 * **[!UICONTROL Keep the current version]**:表示已拒絕更新。
 
    >[!IMPORTANT]
-   如果選擇此解析模式，則可能會丟失新版本中的修補程式。 因此，強烈建議不要僅對專家運算子使用或保留此選項。
+   >
+   >如果選擇此解析模式，則可能會丟失新版本中的修補程式。 因此，強烈建議不要僅對專家運算子使用或保留此選項。
 
 如果選擇手動解決衝突，請按以下步驟繼續：
 
@@ -487,7 +490,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 ## 互動 {#interaction}
 
-### 先決條件 {#prerequisites}
+### 必要條件 {#prerequisites}
 
 **升級後之前**，您必須從6.02中刪除v7中不再存在的所有結構參考。
 
@@ -502,12 +505,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 在v7中，選件內容已移動。 在v6.02中，內容位於每個表示結構中(**nms:emailOfferView**)。 在v7中，內容現在位於選件結構中。 升級後，內容因此不會顯示在介面中。 升級後，您必須重新建立選件內容，或開發指令碼，以自動將內容從表示結構移至選件結構。
 
 >[!IMPORTANT]
-如果在移轉後要傳送某些使用已設定選件的傳送，您必須刪除，並在v7中重新建立這些傳送。 如果您無法這麼做，則會提供「相容性模式」。 不建議使用此模式，因為您不會從Interaction v7中的所有新功能中受益。 這是一種過渡模式，可讓您在實際6.1移轉前完成持續進行的促銷活動。 有關此模式的詳細資訊，請與我們聯繫。
+>
+>如果在移轉後要傳送某些使用已設定選件的傳送，您必須刪除，並在v7中重新建立這些傳送。 如果您無法這麼做，則會提供「相容性模式」。 不建議使用此模式，因為您不會從Interaction v7中的所有新功能中受益。 這是一種過渡模式，可讓您在實際6.1移轉前完成持續進行的促銷活動。 有關此模式的詳細資訊，請與我們聯繫。
 
 移動指令碼的示例(**interactionTo610_full_XX.js**) **移轉** 資料夾(在Adobe Campaign v7資料夾中)。 此檔案顯示用戶端指令碼的範例，每個選件使用單一電子郵件表示法( **[!UICONTROL htmlSource]** 和 **[!UICONTROL textSource]** 欄位)。 內容 **NmsEmailOfferView** 表格已移至選件表格。
 
 >[!NOTE]
-使用此指令碼不允許您從「內容管理」和「呈現函式」選項中受益。 若要從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
+>
+>使用此指令碼不允許您從「內容管理」和「呈現函式」選項中受益。 若要從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +611,8 @@ logInfo("Done");
 1. 執行全面的測試。
 
    >[!NOTE]
-   線上的類別和選件名稱會在上線後修改。 在傳入的通道上，更新對選件和類別的所有參考。
+   >
+   >線上的類別和選件名稱會在上線後修改。 在傳入的通道上，更新對選件和類別的所有參考。
 
 ## 報告 {#reports}
 
