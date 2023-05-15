@@ -2,9 +2,11 @@
 product: campaign
 title: "使用實例：網路表單"
 description: "使用實例：網路表單"
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 使用實例：網路表單{#use-cases-web-forms}
 
-![](../../assets/common.svg)
+
 
 ## 使用雙重加入建立訂閱表單 {#create-a-subscription--form-with-double-opt-in}
 

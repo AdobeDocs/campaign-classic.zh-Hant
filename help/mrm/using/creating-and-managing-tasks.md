@@ -2,22 +2,23 @@
 product: campaign
 title: 建立及管理任務
 description: 建立及管理任務
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 建立及管理設定檔{#creating-and-managing-tasks}
 
-![](../../assets/v7-only.svg)
 
-Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生命週期。 方案和行銷活動實作可劃分為指派給Adobe Campaign運算子或外部服務提供者的工作。 此操作模式允許您建立一個包括所有方案參與者和外部參與者的開放協作環境。
+
+Adobe Campaign 可讓您直接在應用程式中建立任務並管理其完整的生命週期. 方案和行銷活動實作可劃分為指派給Adobe Campaign運算子或外部服務提供者的工作。 此操作模式允許您建立一個包括所有方案參與者和外部參與者的開放協作環境。
 
 您可以從任務清單或行銷活動控制面板建立、檢視及監控任務。 您也可以在行銷計畫、方案和行銷活動的排程中檢視及追蹤這些項目。
 
@@ -187,7 +188,7 @@ Adobe Campaign可讓您直接在應用程式中建立工作並管理其完整生
 
 在此窗口中，您還可以定義要達到的目標。 目標以任務的預測收入表示。
 
-### 服務提供商 {#service-providers}
+### 服務提供者 {#service-providers}
 
 外部服務提供商可以參與任務的管理。
 
@@ -434,7 +435,6 @@ A **[!UICONTROL Control task]** 連結至傳遞核准：核准目標、內容、
 >
 >* 任務狀態將自動更新。
 >* 即使有效期已結束，未關閉的任務仍顯示在正在進行的任務清單中。 警告會通知運算子任務延遲。
-
 >
 
 

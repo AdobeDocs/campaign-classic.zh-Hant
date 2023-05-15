@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign Classic 2019 版本
 description: 進一步瞭解 Campaign Classic 2019 版本
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '4825'
 ht-degree: 24%
@@ -13,7 +14,7 @@ ht-degree: 24%
 
 # 2019 版本{#release-2019}
 
-![](../../assets/v7-only.svg)
+
 
 ## 第 19.2 發行版本{#release-19-2}
 
@@ -29,7 +30,7 @@ _2021年 4 月 15 日_
 >
 > 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
-_2021年 3 月 22 日_
+_2021年3月22日_
 
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
 
@@ -212,7 +213,7 @@ _2021年 4 月 15 日_
 >
 > 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
-_2021年 3 月 22 日_
+_2021年3月22日_
 
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
 
@@ -386,7 +387,7 @@ _2019年5月30日_
 
 **安全性改善功能**
 
-* 出於安全原因，使用 **[!UICONTROL Pre-process the file]** 選項 **[!UICONTROL Data loading (file)]** 工作流程活動。 現在提供下拉式清單，可讓您從3個選項中選取： **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。 已新增XtkSecurity_Disable_Preproc安全標幟。 若為新客戶，此選項將設為0。 對於現有客戶，此選項會由升級後設為1，以保留先前的行為。 請參閱 [節](../../workflow/using/data-loading--file-.md).
+* 出於安全原因，使用 **[!UICONTROL Pre-process the file]** 選項 **[!UICONTROL Data loading (file)]** 工作流程活動。 現在提供下拉式清單，可讓您從3個選項中選取： **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。 已新增XtkSecurity_Disable_Preproc安全標幟。 若為新客戶，此選項將設為0。 對於現有客戶，此選項會由升級後設為1，以保留先前的行為。 請參閱本[章節](../../workflow/using/data-loading--file-.md)。
 * 修正測試未設定時區之FDA外部帳戶的連線時發生的密碼可見性問題。
 * 已移除PDFBox程式庫。
 * 已將Tomcat更新至7.0.93版。

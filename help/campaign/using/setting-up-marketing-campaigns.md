@@ -2,9 +2,10 @@
 product: campaign
 title: 建立行銷活動
 description: 了解如何建立和執行行銷活動
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 6%
@@ -13,25 +14,23 @@ ht-degree: 6%
 
 # 開始使用行銷活動{#setting-up-marketing-campaigns}
 
-![](../../assets/v7-only.svg)
-
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
 ![](assets/do-not-localize/how-to-video.png) 探索如何建立行銷計畫、方案和行銷活動 [在視訊中](#video)
 
 若要建立行銷活動：
 
-1. 建立促銷活動：探索行銷活動及其特點：標籤、類型、開始和結束日期、預算、關聯資源、經理和參與者。 [了解更多資訊](#creating-a-campaign)。
+1. 建立促銷活動：探索行銷活動及其特點：標籤、類型、開始和結束日期、預算、關聯資源、經理和參與者。 [了解更多](#creating-a-campaign)。
 
-1. 定義目標人口：使用定位查詢建立工作流程。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
+1. 定義目標人口：使用定位查詢建立工作流程。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 建立傳送：選取頻道並定義要傳送的內容。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
+1. 建立傳送：選取頻道並定義要傳送的內容。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
-1. 核准傳遞。 [了解更多資訊](../../campaign/using/marketing-campaign-approval.md)。
+1. 核准傳遞。 [了解更多](../../campaign/using/marketing-campaign-approval.md)。
 
-1. 監視傳遞。 [了解更多資訊](../../campaign/using/marketing-campaign-monitoring.md)。
+1. 監視傳遞。 [了解更多](../../campaign/using/marketing-campaign-monitoring.md)。
 
-1. 規劃促銷活動和相關成本。 [了解更多資訊](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+1. 規劃促銷活動和相關成本。 [了解更多](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
 完成這些步驟後，您就可以開始傳送(請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，檢查與傳送相關的資料、程式和資訊，並在必要時管理相關檔案(請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您也可以追蹤促銷活動和傳送的處理階段的執行(請參閱 [本節](../../campaign/using/marketing-campaign-monitoring.md))。
 
@@ -51,7 +50,7 @@ ht-degree: 6%
    ![](assets/create_plan_2.png)
 
 1. 在 **一般** 頁簽，修改 **內部名稱** 以在套件匯出期間避免重複。
-1. 按一下 **儲存**.
+1. 按一下「**儲存**」。
 1. 按一下右鍵新建立的計畫並選擇 **建立新的「程式」資料夾**.
 1. 重複上述步驟，更名新程式資料夾及其內部名稱。
 

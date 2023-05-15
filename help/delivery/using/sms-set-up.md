@@ -2,9 +2,11 @@
 product: campaign
 title: 設定Campaign SMS通道
 description: 了解如何在Campaign中設定SMS通道
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 34%
@@ -13,7 +15,7 @@ ht-degree: 34%
 
 # 設定簡訊頻道 {#setting-up-sms-channel}
 
-![](../../assets/common.svg)
+
 
 若要傳送至行動電話，您需要：
 

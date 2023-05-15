@@ -2,9 +2,11 @@
 product: campaign
 title: 存取追蹤記錄
 description: 存取追蹤記錄
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -13,18 +15,18 @@ ht-degree: 17%
 
 # 存取追蹤記錄{#accessing-the-tracking-logs}
 
-![](../../assets/common.svg)
 
-在發送並激活傳送後， **[!UICONTROL Tracking]** 技術工作流負責檢索跟蹤資料。 預設情況下，每小時執行一次。
 
-此資訊顯示在 **[!UICONTROL Tracking]** 下例中，選擇「遞送」目標收件人的配置檔案」頁籤：
+傳送並啟動追蹤後， **[!UICONTROL Tracking]** 技術工作流程負責擷取追蹤資料。 預設會每小時執行一次。
+
+此資訊會顯示在 **[!UICONTROL Tracking]** ，如下列範例所示：
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
-也可通過 **[!UICONTROL Tracking]** 的子菜單。
+您也可以透過 **[!UICONTROL Tracking]** 標籤。
 
 ![](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 >[!NOTE]
 >
->如果看不到 **[!UICONTROL Tracking]** 頁籤，表示未激活跟蹤。 請參閱[本節](how-to-configure-tracked-links.md)。
+>如果您看不到 **[!UICONTROL Tracking]** 索引標籤，表示追蹤尚未啟用。 請參閱[本節](how-to-configure-tracked-links.md)。

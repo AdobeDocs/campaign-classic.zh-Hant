@@ -2,9 +2,11 @@
 product: campaign
 title: S搭配Enhanced MTA在Adobe Campaign Classic
 description: 了解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍和特性
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # 使用增強的 MTA 傳送 {#sending-with-enhanced-mta}
 
-![](../../assets/common.svg)
+
 
 此 **Adobe Campaign Enhanced MTA** （郵件傳輸代理）提供了升級的發送基礎結構，可改善傳遞能力、信譽、吞吐量、報告、退信處理、IP升級和連接設定管理。
 
@@ -147,7 +149,7 @@ Campaign不再使用傳送中的重試設定。 軟退信重試次數及兩者�
 
 如需重試的詳細資訊，請參閱 [本節](steps-sending-the-delivery.md#configuring-retries).
 
-### 有效期
+### 有效期限
 
 只有在設為時，Enhanced MTA才會使用Campaign傳送中的有效期設定 **3.5天或更少**. 如果您在Campaign中定義的值超過3.5天，則不會考慮該值。
 
@@ -222,17 +224,17 @@ DKIM(DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 | 傳送程式的步驟 | KPI摘要 | 傳送記錄檔狀態 |
 |--- |--- |--- |
 | 訊息已成功從促銷活動中繼至增強MTA | **[!UICONTROL Success]** 百分比未顯示（從0%開始） | 服務提供者已將其列入考量 |
-| 從Enhanced MTA返回硬跳報文 | 中無變更 **[!UICONTROL Success]** 百分比 | 已失敗 |
+| 從Enhanced MTA返回硬跳報文 | 中無變更 **[!UICONTROL Success]** 百分比 | 失敗 |
 | 從Enhanced MTA返回軟彈跳報文 | 中無變更 **[!UICONTROL Success]** 百分比 | 服務提供者已將其列入考量 |
 | 軟跳出消息重試成功 | **[!UICONTROL Success]** 百分比相應增加 | 已傳送 |
-| 軟跳出訊息重試失敗 | 中無變更 **[!UICONTROL Success]** 百分比 | 已失敗 |
+| 軟跳出訊息重試失敗 | 中無變更 **[!UICONTROL Success]** 百分比 | 失敗 |
 
 **不提供電子郵件反饋服務**
 
 | 傳送程式的步驟 | KPI摘要 | 傳送記錄檔狀態 |
 |--- |--- |--- |
 | 訊息已成功從促銷活動中繼至增強MTA | **[!UICONTROL Success]** 百分比從100%開始 | 已傳送 |
-| 從Enhanced MTA返回硬跳報文 | **[!UICONTROL Success]** 百分比相應地減少 | 已失敗 |
+| 從Enhanced MTA返回硬跳報文 | **[!UICONTROL Success]** 百分比相應地減少 | 失敗 |
 | 從Enhanced MTA返回軟彈跳報文 | 中無變更 **[!UICONTROL Success]** 百分比 | 已傳送 |
 | 軟跳出消息重試成功 | 中無變更 **[!UICONTROL Success]** 百分比 | 已傳送 | **[!UICONTROL Success]** 百分比相應增加 | 已傳送 |
-| 軟跳出訊息重試失敗 | **[!UICONTROL Success]** 百分比相應地減少 | 已失敗 |
+| 軟跳出訊息重試失敗 | **[!UICONTROL Success]** 百分比相應地減少 | 失敗 |

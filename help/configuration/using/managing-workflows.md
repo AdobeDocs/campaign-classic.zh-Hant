@@ -2,11 +2,13 @@
 product: campaign
 title: 管理工作流程
 description: 管理工作流程
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 11%
@@ -15,7 +17,7 @@ ht-degree: 11%
 
 # 管理工作流程{#managing-workflows}
 
-![](../../assets/common.svg)
+
 
 依預設，您的新工作流程以預先設定的工作流程範本為基礎，並以收件者表格(nms:recipient)為基礎。 以便根據 **Nms_DefaultRcpSchema** 選項(請參閱 [配置介面](../../configuration/using/configuring-the-interface.md) 部分)，則必須建立新的工作流模板。
 

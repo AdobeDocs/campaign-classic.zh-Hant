@@ -2,20 +2,21 @@
 product: campaign
 title: 管理分項清單
 description: 管理分項清單
+badge: label="v7" type="Informity" tooltip="僅適用於Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
 
 # 管理分項清單{#managing-enumerations}
 
-![](../../assets/common.svg)
+
 
 列舉（也稱為「分項清單」）是系統建議填入特定欄位的值清單。 列舉可讓您標準化這些欄位的值，並協助輸入資料或在查詢內使用。
 

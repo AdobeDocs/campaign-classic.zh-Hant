@@ -2,12 +2,13 @@
 product: campaign
 title: Campaign Classic 相容性矩陣
 description: Campaign Classic 相容性矩陣
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
-workflow-type: ht
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 100%
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # 相容性比較表{#compatibility-matrix}
 
-![](../../assets/v7-only.svg)
+
 
 本文件列出 [最新版本編號](../../rn/using/latest-release.md)之 **Adobe Campaign Classic v7** 支援的所有系統及元件。此清單上未列出的產品和版本即與 Adobe Campaign 不相容。
 

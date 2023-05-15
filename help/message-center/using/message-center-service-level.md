@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 訊息中心服務層級
-description: 進一步了解訊息中心服務層級報表。
+description: 進一步了解訊息中心服務層級報表
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 訊息中心服務層級 {#message-center-service-level}
 
-![](../../assets/v7-only.svg)
+
 
 此報表顯示與交易式訊息相關的傳送統計資料以及錯誤劃分。 您可以按一下錯誤類型以顯示其詳細資訊。
 

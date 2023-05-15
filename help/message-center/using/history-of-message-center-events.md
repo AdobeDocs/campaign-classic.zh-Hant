@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 訊息中心事件的歷史記錄
-description: 進一步了解「訊息中心事件記錄」報表。
+description: 進一步了解「訊息中心事件記錄」報表
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
-source-git-commit: 1348c1d88d0732b0dda4ed488b4a258ac7e15c42
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 訊息中心事件歷史記錄{#history-of-message-center-events}
 
-![](../../assets/v7-only.svg)
+
 
 此 **[!UICONTROL History of Message Center events]** 報表提供訊息中心活動的概觀，即以交易式訊息處理和傳送的事件數。
 

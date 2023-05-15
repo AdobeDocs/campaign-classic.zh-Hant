@@ -2,11 +2,12 @@
 product: campaign
 title: 論壇
 description: 了解如何使用Campaign論壇
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 論壇{#discussion-forums}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign運營商可使用論壇來共用資訊。 以下各元素有各自的論壇：計畫，計畫，行銷，資源，模擬，股票。 每家運營商還有個人論壇。 所有討論都是公開的，甚至在個人論壇上。
 

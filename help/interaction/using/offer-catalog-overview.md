@@ -2,11 +2,12 @@
 product: campaign
 title: 優惠目錄概覽
 description: 進一步了解Campaign中的優惠方案目錄
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 # 優惠目錄概覽{#offer-catalog-overview}
 
-![](../../assets/v7-only.svg)
+
 
 優惠方案目錄一律由類別組成，然後會有子類別或直接由優惠方案組成。
 

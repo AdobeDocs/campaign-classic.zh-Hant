@@ -2,9 +2,11 @@
 product: campaign
 title: 發佈、追蹤及使用收集的資料
 description: 了解如何發佈、追蹤及使用調查中收集的資料
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # 發佈、追蹤及使用收集的資料{#publish-track-and-use-collected-data}
 
-![](../../assets/common.svg)
+
 
 建立、設定和發佈表單後，您就可以與對象共用連結並追蹤回應。
 
@@ -23,7 +25,7 @@ ht-degree: 2%
 
 ## 調查控制面板 {#survey-dashboard}
 
-每個調查都有其專屬的控制面板，可讓您檢視其狀態、說明、公用URL和可用性排程。 它也可讓您檢視可用的報表。 [了解更多資訊](#reports-on-surveys)。
+每個調查都有其專屬的控制面板，可讓您檢視其狀態、說明、公用URL和可用性排程。 它也可讓您檢視可用的報表。 [了解更多](#reports-on-surveys)。
 
 調查的公用URL會顯示在控制面板上：
 

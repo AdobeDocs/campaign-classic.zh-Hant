@@ -2,20 +2,21 @@
 product: campaign
 title: 中間來源部署
 description: 中間來源部署
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 中間來源部署{#mid-sourcing-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 此配置是托管(ASP)配置和內部化之間的最佳中間解決方案。 對外執行元件會在Adobe Campaign托管的「中間來源」伺服器上執行。
 
@@ -56,7 +57,7 @@ ht-degree: 1%
 
 ## 安裝和配置步驟 {#installation-and-configuration-steps-}
 
-### 先決條件 {#prerequisites}
+### 必要條件 {#prerequisites}
 
 * 應用程式伺服器上的JDK。
 * 訪問應用程式伺服器上的資料庫伺服器。

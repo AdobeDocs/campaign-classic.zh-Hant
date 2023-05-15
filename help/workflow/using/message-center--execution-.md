@@ -2,22 +2,23 @@
 product: campaign
 title: 訊息中心（執行）
 description: 訊息中心（執行）
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
 
 # 訊息中心（執行）{#message-center-execution}
 
-![](../../assets/v7-only.svg)
 
-下面詳細介紹的工作流隨 **消息中心 — 執行** 預設情況下為載入項。
 
-有關此內容的詳細資訊，請參閱以下各節：
+以下詳細說明的工作流程會與 **消息中心 — 執行** 預設為附加元件。
+
+如需詳細資訊，請視您的Campaign版本而定，參閱下列區段：
 
 ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文件](../../message-center/using/about-transactional-messaging.md)
 
@@ -33,25 +34,25 @@ ht-degree: 9%
   <tr> 
    <td> <span class="uicontrol">更新事件狀態</span> <br /> </td> 
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
-   <td> 此工作流允許您為事件分配狀態。 事件狀態如下：<br /> 
+   <td> 此工作流程可讓您指派狀態給事件。 事件狀態如下：<br /> 
     <ul> 
-     <li> <p><strong>待定</strong>:事件在隊列中。 尚未將郵件模板與其關聯。</p> </li> 
-     <li> <p><strong>等待交貨</strong>:該事件在隊列中，消息模板已與其關聯，並且當前正由傳遞處理。</p> </li> 
-     <li> <p><strong>已發送</strong>:此狀態從交貨日誌中複製。 這意味著送貨已經寄出。</p> </li> 
-     <li> <p><strong>被傳遞忽略</strong>:此狀態從交貨日誌中複製。 這意味著傳遞被忽略。</p> </li> 
-     <li> <p><strong>傳遞錯誤</strong>:此狀態從交貨日誌中複製。 這意味著交貨失敗。</p> </li> 
-     <li> <p><strong>未涵蓋的事件</strong>:事件未能與消息模板關聯。 將不再處理該事件。</p> </li> 
+     <li> <p><strong>待定</strong>:事件在佇列中。 尚未與其關聯任何消息模板。</p> </li> 
+     <li> <p><strong>待定傳送</strong>:事件在佇列中，且訊息範本已與其相關聯，且目前由傳送處理。</p> </li> 
+     <li> <p><strong>已傳送</strong>:此狀態是從傳送記錄檔複製而來。 這表示已傳送傳遞。</p> </li> 
+     <li> <p><strong>由傳送忽略</strong>:此狀態是從傳送記錄檔複製而來。 這表示已忽略傳送。</p> </li> 
+     <li> <p><strong>傳送錯誤</strong>:此狀態是從傳送記錄檔複製而來。 這表示傳送失敗。</p> </li> 
+     <li> <p><strong>未涵蓋的事件</strong>:事件無法與消息模板關聯。 將不會重新處理事件。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">處理批處理事件</span> <br /> </td> 
+   <td> <span class="uicontrol">處理批次事件</span> <br /> </td> 
    <td> <span class="uicontrol">batchEventsProcessing</span> <br /> </td> 
-   <td> 通過此工作流，您可以在將批處理事件與消息模板關聯之前，將它們放入隊列。 <br /> </td> 
+   <td> 此工作流程可讓您先將批次事件放入佇列，再將其與訊息範本建立關聯。 <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">處理即時事件</span> <br /> </td> 
    <td> <span class="uicontrol">rtEventsProcessing</span> <br /> </td> 
-   <td> 通過此工作流，您可以在將即時事件與消息模板關聯之前，將它們放入隊列。 <br /> </td> 
+   <td> 此工作流程可讓您在將即時事件與訊息範本建立關聯之前，將其放入佇列中。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>

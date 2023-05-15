@@ -2,9 +2,11 @@
 product: campaign
 title: 網路表單中的靜態元素
 description: 網路表單中的靜態元素
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # 網路表單中的靜態元素{#static-elements-in-a-web-form}
 
-![](../../assets/common.svg)
+
 
 您可以在表單的頁面中加入使用者沒有互動的元素；這些是靜態元素，例如影像、HTML內容、水準條或超文字連結。 這些元素是透過工具列中的第一個按鈕，透過選取 **[!UICONTROL Static elements]**.
 

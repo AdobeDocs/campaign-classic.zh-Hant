@@ -2,20 +2,21 @@
 product: campaign
 title: 外部帳戶
 description: 了解如何建立外部帳戶
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1714'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 # 外部帳戶{#external-accounts}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部系統的連線，您可以建立新的外部帳戶。
 
@@ -116,7 +117,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 * [行動裝置（簡訊）](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [電話](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
-* [機構](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [代理商](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Twitter](../../social/using/about-social-marketing.md)
 * [iOS 管道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android 管道](../../delivery/using/configuring-the-mobile-application-android.md)
@@ -306,7 +307,7 @@ SFTP外部帳戶可讓您設定及測試對Adobe Campaign以外伺服器的存�
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** 和 **[!UICONTROL Office 365]** 部署類型現已過時。 [了解更多資訊](../../rn/using/deprecated-features.md)。
+> **[!UICONTROL On-premise]** 和 **[!UICONTROL Office 365]** 部署類型現已過時。 [了解更多](../../rn/using/deprecated-features.md)。
 
 此 **[!UICONTROL Microsoft Dynamics CRM]** 外部帳戶可讓您將Microsoft Dynamics資料匯入和匯出至Adobe Campaign。
 

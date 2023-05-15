@@ -2,20 +2,21 @@
 product: campaign
 title: 其他資料
 description: 其他資料
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 其他資料{#additional-data}
 
-![](../../assets/v7-only.svg)
+
 
 在呼叫互動引擎期間，您可以傳輸內容相關的其他資訊。 此資料可來自儲存在工作流程（傳出通道）工作表中的目標資料，或網站在呼叫（傳入通道）期間傳送的呼叫資料。 您可以在適用性規則、優惠方案個人化中使用此額外資料，也可以將其儲存在主張表格中。
 
@@ -108,7 +109,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ![](assets/ita_calldata_preview2.png)
 
-### 儲存 {#storage}
+### 儲存空間 {#storage}
 
 在對引擎的調用期間，您可以在主張表中儲存其他資料，以豐富資料庫。 這些資料可用於報表、ROI計算或後續程式。
 

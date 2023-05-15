@@ -2,9 +2,10 @@
 product: campaign
 title: 資料模型最佳實務
 description: 了解如何使用Campaign Classic資料模型
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3988'
 ht-degree: 1%
@@ -12,8 +13,6 @@ ht-degree: 1%
 ---
 
 # 資料模型最佳實務{#data-model-best-practices}
-
-![](../../assets/v7-only.svg)
 
 本檔案概述設計Adobe Campaign資料模型時的主要建議。
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 編輯內容
 description: 編輯內容
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 7f5770c5181b4f2e966d8ecfe6b1d4b9c764e5fa
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 編輯內容{#editing-content}
 
-![](../../assets/common.svg)
+
 
 ## 定義可見性條件 {#defining-a-visibility-condition}
 

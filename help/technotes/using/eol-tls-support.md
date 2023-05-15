@@ -1,20 +1,22 @@
 ---
 product: campaign
-title: 終止支援TLS 1.0和1.1
-description: 終止支援TLS 1.0和1.1
+title: 終止支援 TLS 1.0 和 1.1
+description: 終止支援 TLS 1.0 和 1.1
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# 終止支援TLS 1.0和1.1{#eol-tls-support}
+# 終止支援 TLS 1.0 和 1.1{#eol-tls-support}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe不再支援不符合傳輸層安全性(TLS)1.2通訊協定的使用者系統和用戶端系統。 如果您繼續使用舊版TLS，則可能會失去所有Adobe產品和服務的存取權。
 
@@ -92,5 +94,5 @@ Adobe已不再支援較低版本的TLS（包括TLS 1.0和1.1）。 如需TLS 1.2
    Internet Explorer 11預設會啟用TLS 1.2，但如果關閉，您可以將其開啟。 在此情況下，請從進階設定對話方塊開啟TLS 1.2，而不使用其他選項。 其他錯誤，例如，也可能發生：
 
    * 無法連接到服務
-   * 服務不可用
+   * 服務無法提供
    * 連接中出錯

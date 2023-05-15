@@ -2,9 +2,10 @@
 product: campaign
 title: 個人化與隱私
 description: 了解隱私權和個人化的安全性最佳實務
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f97199e634205742b74a08932a40db2fca138cc3
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 個人化與隱私 {#privacy}
 
-![](../../assets/v7-only.svg)
+
 
 
 ## URL個人化 {#url-personalization}
@@ -32,7 +33,7 @@ ht-degree: 2%
 
 範例:
 
-1. 建立工作流程並新增 **查詢** 活動。 [了解更多資訊](../../workflow/using/query.md)。
+1. 建立工作流程並新增 **查詢** 活動。 [了解更多](../../workflow/using/query.md)。
 
 1. 開啟 **查詢** 活動和建立篩選器 `nmsTrackingUrl` 表如下：
 
@@ -85,7 +86,7 @@ ht-degree: 2%
 
 您必須確保已驗證的低權限用戶無法訪問加密密碼。 要執行此操作，請僅限訪問密碼欄位，或限制訪問整個實體（需要生成>= 8770）。
 
-此限制可讓您移除密碼欄位，但讓所有使用者都能從介面存取外部帳戶。 [了解更多資訊](../../configuration/using/restricting-pii-view.md)。
+此限制可讓您移除密碼欄位，但讓所有使用者都能從介面存取外部帳戶。 [了解更多](../../configuration/using/restricting-pii-view.md)。
 
 若要執行此作業，請遵循下列步驟：
 

@@ -2,11 +2,13 @@
 product: campaign
 title: 執行設定
 description: 執行設定
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
-source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # 執行設定{#execution-settings}
 
-![](../../assets/common.svg)
+
 
 建立模擬時，您可以視需要指定執行設定。 這些設定可讓您根據活動優先順序在活動較低時執行模擬，或在記錄中記錄SQL查詢。 此階段為選填階段。
 

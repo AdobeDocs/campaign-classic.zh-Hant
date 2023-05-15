@@ -2,11 +2,12 @@
 product: campaign
 title: 伺服器安全配置
 description: 進一步了解伺服器設定最佳實務
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: e55fff99fd5dec8da998310dc7026c1a506abadc
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 # 伺服器安全性設定 {#server-configuration}
 
-![](../../assets/v7-only.svg)
+
 
 ## 檔案上傳保護
 
@@ -30,7 +31,7 @@ ht-degree: 4%
 
 將所有這些變數新增至serverConf/shared/datastore/@uploadAllowlist（有效的java規則運算式）。 在[本頁](../../installation/using/file-res-management.md)中瞭解更多。
 
-Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來執行此作業。 深入了解 [本節](../../installation/using/web-server-configuration.md).
+Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來執行此作業。 在[本章節](../../installation/using/web-server-configuration.md)了解更多資訊。
 
 ## 中繼
 

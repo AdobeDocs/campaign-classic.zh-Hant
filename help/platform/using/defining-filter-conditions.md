@@ -2,11 +2,13 @@
 product: campaign
 title: 定義篩選條件
 description: 定義篩選條件
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -15,7 +17,7 @@ ht-degree: 37%
 
 # 定義篩選條件{#defining-filter-conditions}
 
-![](../../assets/common.svg)
+
 
 ## 選擇運算子 {#choosing-the-operator}
 
@@ -207,7 +209,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> 主鍵。 此SQL欄位是標識表中記錄的方法。<br /> </td> 
+   <td> 主要金鑰. 此SQL欄位是標識表中記錄的方法。<br /> </td> 
    <td> 識別碼收件者是主要金鑰，識別碼依定義是唯一的。<br /> </td> 
   </tr> 
   <tr> 
@@ -217,7 +219,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> 計算欄位。 此類型的欄位是根據要求使用資料庫中的值來計算。<br /> </td> 
+   <td> 計算欄位. 此類型的欄位是根據要求使用資料庫中的值來計算。<br /> </td> 
    <td> 年齡、電子郵件網域等<br /> </td> 
   </tr> 
   <tr> 
@@ -387,7 +389,7 @@ ht-degree: 37%
    <td> Countdistinct(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Max</strong><br /> </td> 
+   <td> <strong>最大</strong><br /> </td> 
    <td> 傳回數字、字串或日期類型欄的最大值<br /> </td> 
    <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 

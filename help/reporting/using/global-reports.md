@@ -2,18 +2,19 @@
 product: campaign
 title: 全域報告
 description: 全域報告
+badge: label="v7" type="Informity" tooltip="僅適用於Campaign Classicv7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 4%
+source-wordcount: '2306'
+ht-degree: 8%
 
 ---
 
 # 全域報告 {#global-reports}
 
-![](../../assets/common.svg)
+
 
 這些報告涉及整個資料庫中資料的活動。 若要檢視報表控制面板，請前往 **[!UICONTROL Reports]** 標籤。
 
@@ -43,7 +44,7 @@ ht-degree: 4%
 
 ## 傳遞總處理能力 {#delivery-throughput}
 
-此報表包含指定期間整個平台的傳送輸送量資訊。 為了測量傳送訊息的速度，標準是每小時傳送的訊息數量和訊息的大小（以位元/秒為單位）。 在以下範例中，第一個圖表以藍色顯示成功的傳送，以橘色顯示錯誤傳送的次數。
+此報表包含指定期間整個平台的傳送輸送量資訊。 若要測量訊息傳遞的速度，標準是每小時傳送的訊息數和訊息的大小 (以位元/秒為單位)。在下面的範例中，第一個圖表以藍色顯示成功傳遞，以橘色顯示錯誤傳遞的數量。
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
@@ -299,9 +300,9 @@ ht-degree: 4%
 * **[!UICONTROL Clicks]** :至少按一下傳送一次的人數百分比，與成功處理的訊息數量相比。
 * **[!UICONTROL Unsubscription]** :取消訂閱連結的點按次數與成功處理的訊息次數的百分比。
 
-## 開啟次數劃分 {#breakdown-of-opens}
+## 開啟次數的劃分 {#breakdown-of-opens}
 
-此報表依作業系統、裝置和瀏覽器顯示相關期間的開啟次數劃分。 對於每個類別，會使用兩個圖表。 第一個會顯示有關電腦和行動裝置上開啟的統計資料。 第二個則只顯示與行動裝置上開啟次數相關的統計資料。
+此報表依作業系統、裝置和瀏覽器顯示相關期間的開啟次數劃分。 每個類別有兩個圖表。第一個圖表顯示在電腦和行動裝置上的開啟數統計資料。第二個圖表僅顯示在行動裝置上的開啟數統計資料。
 
 開啟的次數與已開啟的訊息總數相對應。 不會計算文字格式電子郵件。 如需「追蹤」開啟的詳細資訊，請參閱 [追蹤開啟](../../reporting/using/indicator-calculation.md#tracking-opens-) 區段。
 

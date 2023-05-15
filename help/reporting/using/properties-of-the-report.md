@@ -1,83 +1,85 @@
 ---
 product: campaign
 title: 報吿屬性
-description: 瞭解有關報告屬性設定的詳細資訊
+description: 進一步了解報表屬性設定
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 報吿屬性{#properties-of-the-report}
 
-![](../../assets/common.svg)
 
-您可以完全個性化並配置報告以滿足您的需要。 為此，請編輯其屬性。 通過 **[!UICONTROL Properties]** 按鈕。
+
+您可以完全個人化並設定報表以符合您的需求。 要執行此操作，請編輯其屬性。 報表屬性可透過 **[!UICONTROL Properties]** 按鈕。
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-一般屬性如下所述。 在 **[!UICONTROL Parameters]**。 **[!UICONTROL Variables]** 和 **[!UICONTROL Scripts]** 頁籤 [此部分](../../reporting/using/advanced-functionalities.md)。
+以下說明一般屬性。 在 **[!UICONTROL Parameters]**, **[!UICONTROL Variables]** 和 **[!UICONTROL Scripts]** 索引標籤已說明 [在本節](../../reporting/using/advanced-functionalities.md).
 
-## 常規屬性 {#overall-properties}
+## 一般屬性 {#overall-properties}
 
-在 **[!UICONTROL General]** 頁籤中，可以編輯下面列出的設定：
+在 **[!UICONTROL General]** 頁簽，您可以編輯下列設定：
 
-* 報表的標籤和內部名稱。 的 **[!UICONTROL Internal name]** 在報告最終URL中使用。 報告建立後不應更改。
+* 報表的標籤和內部名稱。 此 **[!UICONTROL Internal name]** 會用於報表最終URL中。 報表建立後不應變更。
 
-* 報告 **資料夾** 在建立報表期間選中。 最佳做法是為自定義報告建立專用資料夾，以便不會與 [內置報告](../../reporting/using/about-campaign-built-in-reports.md)。
+* 報表 **資料夾** 在建立報表時被選取。 最佳作法是為自訂報表建立專用資料夾，以避免與 [內建報表](../../reporting/using/about-campaign-built-in-reports.md).
 
-* 的 **儲存** 的子菜單。 要更改報表的資料表，請按一下 **[!UICONTROL Select link]** 表徵圖 **[!UICONTROL Document type]** 的子菜單。
+* 此 **儲存** 中所選的URL。 若要變更報表的資料表格，請按一下 **[!UICONTROL Select link]** 表徵圖 **[!UICONTROL Document type]** 欄位。
 
    ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* 的 **訪問控制** 參數。 下面介紹了這些設定。
+* 此 **存取控制** 參數。 以下說明這些設定。
 
-## 控制對報告的訪問 {#report-accessibility}
+## 控制對報告的存取 {#report-accessibility}
 
-可以在Adobe Campaign控制台或Web瀏覽器中訪問報告。 在這種情況下，必須配置報告訪問控制，如下所示。
+報表可在Adobe Campaign主控台或網頁瀏覽器中存取。 在此情況下，可能需要設定報表存取控制，如下所示。
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
 可能的選項包括：
 
-* **[!UICONTROL Anonymous access]**:此選項允許無限制地訪問報表。 但是，不可能操縱。
+* **[!UICONTROL Anonymous access]**:此選項可允許不受限制地訪問報告。 但是，不可能操縱。
 
-   「webapp」技術操作員的權限用於顯示報表元素。 瞭解更多資訊 [此部分](../../platform/using/access-management-operators.md)。
+   「webapp」技術運算子的權限用於顯示報表元素。 深入了解 [在本節](../../platform/using/access-management-operators.md).
 
-* **[!UICONTROL Access control]**:此選項使Adobe Campaign操作員在登錄後可以訪問它。
-* **[!UICONTROL Specific account]**:此選項允許您使用在 **[!UICONTROL Operator]** 的子菜單。
+* **[!UICONTROL Access control]**:此選項可讓Adobe Campaign運算子在登入後加以存取。
+* **[!UICONTROL Specific account]**:此選項可讓您使用在 **[!UICONTROL Operator]** 欄位。
 
-## 翻譯報告 {#report-localization}
+## 翻譯您的報表 {#report-localization}
 
-您可以配置要將報告翻譯成的語言。 要執行此操作，請按一下 **[!UICONTROL Localization]** 頁籤。
+您可以設定要將報表翻譯成的語言。 若要這麼做，請按一下 **[!UICONTROL Localization]** 標籤。
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
-編輯語言是您所用的語言。 添加語言時，子頁籤將出現在報告編輯頁面中。
+編輯語言是您所撰寫的語言。 新增語言時，子索引標籤會出現在報表編輯頁面中。
 
 ![](assets/s_ncs_advuser_report_properties_05a.png)
 
 >[!NOTE]
 >
->有關「市場活動」中網頁本地化的詳細資訊，請參閱 [此部分](../../web/using/translating-a-web-form.md)。
+>如需Campaign網頁本地化的詳細資訊，請參閱 [本節](../../web/using/translating-a-web-form.md).
 
-## 個性化HTML呈現 {#personalizing-html-rendering}
+## 個人化HTML轉譯 {#personalizing-html-rendering}
 
-在 **[!UICONTROL Rendering]** 頁籤。 您可以選擇：
+在 **[!UICONTROL Rendering]** ，您就可以個人化頁面的資料顯示模式。 您可以選擇：
 
-* 報表中的導航類型：按鈕或連結。
-* 報表元素標籤的預設位置。 此位置可為每個元素重載。
-* 用於生成報表頁的模板或主題。
+* 報表中的導覽類型：透過按鈕或連結。
+* 報表元素的標籤預設位置。 每個元素的此位置都可能超載。
+* 用於產生報表頁面的範本或主題。
 
 ![](assets/s_ncs_advuser_report_properties_08.png)
 
-## 個性化錯誤頁 {#personalizing-the-error-page}
+## 個人化錯誤頁面 {#personalizing-the-error-page}
 
-的 **[!UICONTROL Error page]** 頁籤，用於配置在報告顯示中出錯時將顯示的消息。
+此 **[!UICONTROL Error page]** 標籤，以設定報表顯示中發生錯誤時將顯示的訊息。
 
-您可以定義文本並將其連結到特定標識符以管理報表本地化。 有關此內容的詳細資訊，請參閱 [添加頁眉和頁腳](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
+您可以定義文字並將其連結至特定識別碼，以管理報表本地化。 有關詳細資訊，請參閱 [新增頁首和頁尾](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 ![](assets/s_ncs_advuser_report_properties_11.png)

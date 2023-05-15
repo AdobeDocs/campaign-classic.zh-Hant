@@ -2,11 +2,12 @@
 product: campaign
 title: 開始使用設定檔
 description: 在Adobe Campaign中使用設定檔
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 60%
@@ -15,7 +16,7 @@ ht-degree: 60%
 
 # 開始使用設定檔{#about-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 設定檔會集中在Adobe Campaign資料庫中。 要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。透過Adobe Campaign，您可以將行銷記錄、購買資訊、偏好、CRM資料和任何相關PI資料整合在整合檢視中，以進行分析並採取行動。
 
@@ -123,6 +124,6 @@ Adobe Campaign瀏覽器的一般配置顯示在 [本頁](../../platform/using/ad
 
 * [在工作流程中建立查詢和區隔資料](../../workflow/using/targeting-data.md)
 
-* [選擇目標映射](../../delivery/using/selecting-a-target-mapping.md)
+* [選取目標對應](../../delivery/using/selecting-a-target-mapping.md)
 
 * [定義對象 — 最佳實務](../../delivery/using/define-the-right-audience.md)

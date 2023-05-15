@@ -1,21 +1,22 @@
 ---
 product: campaign
 title: 關於 Adobe Campaign Classic
-description: 探索重要功能、使用者介面和全域準則。
+description: 探索重要功能、使用者介面和全域準則
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
 # 開始使用Campaign Classic{#about-adobe-campaign-classic}
 
-![](../../assets/v7-only.svg)
+
 
 為了實現高水準的客戶參與度並打造精彩的體驗，企業必須在所有接觸點建立一致的客戶歷程。現在，行銷人員可以有效地設計、規劃、執行、管理以及最佳化跨通路行銷活動，為行銷投資帶來更高的投資報酬，並且提高客戶的忠誠度。
 

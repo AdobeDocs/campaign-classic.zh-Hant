@@ -2,11 +2,13 @@
 product: campaign
 title: 建立篩選器
 description: 建立篩選器
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 建立篩選器{#creating-filters}
 
-![](../../assets/common.svg)
+
 
 在Adobe Campaign樹中導覽時(從 **[!UICONTROL Explorer]** 功能表)，則資料庫中包含的資料會顯示在清單中。 這些清單可設定為只顯示運算子所需的資料。 接著，即可對篩選的資料啟動動作。 篩選設定可讓您從清單中選取資料 **[!UICONTROL dynamically]**. 如果修改了資料，則更新篩選的資料。
 
@@ -53,7 +55,7 @@ Adobe Campaign可讓您將篩選器套用至資料清單。
 
    簡單篩選器在 [建立簡單篩選](#creating-a-simple-filter).
 
-* **進階篩選**
+* **進階篩選器**
 
    **進階篩選** 是使用查詢或資料查詢組合來建立。
 

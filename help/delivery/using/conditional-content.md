@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: 條件式內容
-description: 瞭解如何添加條件內容
+description: 了解如何新增條件式內容
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization, Multilingual Messages
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 7%
@@ -13,74 +15,74 @@ ht-degree: 7%
 
 # 條件式內容{#conditional-content}
 
-![](../../assets/common.svg)
 
-通過配置條件內容欄位，您可以建立基於收件人配置檔案的動態個性化設定。 當滿足特定條件時替代文字塊和/或影像。
+
+例如，您可以透過設定條件式內容欄位，根據收件者的設定檔建立動態個人化。 當滿足特定條件時，將替代文字塊和/或影像。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#conditionnal-content-video)
 
 
 ## 在電子郵件中使用條件 {#using-conditions-in-an-email}
 
-在下面的示例中，您將學習如何建立消息，根據收件人的性別和興趣動態個性化。
+在以下範例中，您將學習如何建立訊息，並根據收件者的性別和興趣，以動態方式個人化。
 
-* 顯示「Mr」 或&quot;女士&quot; 根據 **[!UICONTROL Gender]** 欄位（M或F）,
-* 根據所指示或檢測到的興趣個性化地匯編新聞稿或促銷優惠：
+* 顯示「Mr」 或「Ms」 根據 **[!UICONTROL Gender]** 欄位（M或F）,
+* 根據所指明或檢測到的興趣個性化組合新聞稿或促銷優惠：
 
-   * 利息1 — >第1塊
-   * 利息2 — >塊2
-   * 利息3 — >第3塊
-   * 利息4 — >第4塊
+   * 興趣1 — >區塊1
+   * 興趣2 — >區塊2
+   * 興趣3 — >區塊3
+   * 興趣4 — >區塊4
 
-要根據欄位的值建立條件內容，請應用以下步驟：
+要根據欄位的值建立條件式內容，請應用以下步驟：
 
-1. 按一下個性化表徵圖並選擇 **[!UICONTROL Conditional content > If]**。
+1. 按一下個人化圖示並選取 **[!UICONTROL Conditional content > If]**.
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
-   個性化元素被插入消息主體中。 您現在必須配置它們。
+   個人化元素會插入訊息內文。 您現在必須進行設定。
 
-1. 接下來，填寫 **如果** 表達式。
+1. 接下來，填入 **if** 運算式。
 
    操作步驟：
 
-   * 選擇表達式的第一個元素， **`<field>`**,(預設情況下，在插入 **如果** 表達式)，然後按一下個性化表徵圖，將其替換為test欄位。
+   * 選取運算式的第一個元素， **`<field>`**,(依預設，在插入 **if** 運算式)，然後按一下個人化圖示，將其取代為測試欄位。
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
-   * 替換 **`<value>`** 的值。 此值必須用引號括起來。
-   * 指定滿足條件時要插入的內容。 它可以由文本、影像、表單、超文本連結等組成。
+   * 取代 **`<value>`** 填入將滿足條件的欄位值。 此值必須用引號表示。
+   * 指定在滿足條件時要插入的內容。 這可能包含文字、影像、表單、超文字連結等。
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. 按一下 **[!UICONTROL Preview]** 頁籤，根據傳遞收件人查看郵件內容：
+1. 按一下 **[!UICONTROL Preview]** 頁簽，以根據傳送收件者檢視訊息的內容：
 
-   * 選擇條件為true的收件人：
+   * 選取條件為true的收件者：
 
       ![](assets/s_ncs_user_conditional_content05.png)
 
-   * 選擇條件不為真的收件人：
+   * 選取條件不為true的收件者：
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
-您可以添加其它案例，並根據一個或多個欄位的值定義不同的內容。 要執行此操作，請使用 **[!UICONTROL Conditional content > Else]** 和 **[!UICONTROL Conditional content > Else if]**。 這些表達式的配置方式與 **如果** 表達式。
+您可以新增其他案例，並根據一或多個欄位的值定義不同內容。 若要這麼做，請使用 **[!UICONTROL Conditional content > Else]** 和 **[!UICONTROL Conditional content > Else if]**. 這些運算式的設定方式與 **if** 運算式。
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->要尊重JavaScript語法， **%> &lt;%** 添加後必須刪除字元 **埃爾塞** 和 **否則** 的下界。
+>若要遵循JavaScript語法，請 **%> &lt;%** 新增後必須刪除字元 **Else** 和 **若** 條件。
 
-按一下 **[!UICONTROL Preview]** 並選擇收件人以查看條件內容。
+按一下 **[!UICONTROL Preview]** 並選取收件者以檢視條件式內容。
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
 ## 建立多語言電子郵件 {#creating-multilingual-email}
 
-在下面的示例中，您將學習如何建立多語言電子郵件。 內容將以一種語言或另一種語言顯示，具體取決於收件人的首選語言。
+在以下範例中，您將學習如何建立多語言電子郵件。 內容會根據收件者的偏好語言，以一種或另一種語言顯示。
 
-1. 建立電子郵件並選擇目標填充。 在本示例中，顯示一個版本或另一個版本的條件將基於 **語言** 收件人配置檔案的值。 在本例中，這些值設定為 **EN**。 **FR**。 **ES**。
-1. 在電子郵件HTML內容中，按一下 **[!UICONTROL Source]** 頁籤並貼上以下代碼：
+1. 建立電子郵件並選取目標母體。 在此範例中，顯示一個版本或另一個版本的條件將以 **語言** 收件者設定檔的值。 在此範例中，這些值會設為 **EN**, **FR**, **ES**.
+1. 在電子郵件HTML內容中，按一下 **[!UICONTROL Source]** 標籤，然後貼上下列程式碼：
 
    ```
    <% if (language == "EN" ) { %>
@@ -101,16 +103,16 @@ ht-degree: 7%
    <% } %>
    ```
 
-1. Test **[!UICONTROL Preview]** 頁籤。
+1. 在 **[!UICONTROL Preview]** 頁簽，方法是選取使用不同偏好語言的收件者。
 
    >[!NOTE]
    >
-   >由於電子郵件內容中未定義任何替代版本，因此請確保在發送電子郵件之前過濾目標填充。
+   >由於電子郵件內容中未定義任何替代版本，因此請務必在傳送電子郵件前篩選目標母體。
 
-## 教程視頻 {#conditionnal-content-video}
+## 教學課程影片 {#conditionnal-content-video}
 
 此影片以多語言電子報為範例，示範如何新增條件式內容至傳遞。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-可提供其他Campaign Classic操作視頻 [這裡](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)。
+提供其他Campaign Classic作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

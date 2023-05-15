@@ -2,11 +2,13 @@
 product: campaign
 title: 在Campaign中使用您的Adobe ID
 description: 深入了解Adobe IMS整合
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 24%
@@ -15,7 +17,7 @@ ht-degree: 24%
 
 # 關於Adobe ID{#about-adobe-id}
 
-![](../../assets/common.svg)
+
 
 AdobeIdentity Management系統(IMS)可協助管理員建立及管理使用者對應用程式和服務的存取權。 如需不同AdobeID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html).
 

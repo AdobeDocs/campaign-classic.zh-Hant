@@ -2,9 +2,10 @@
 product: campaign
 title: 跳至 (起點和終點)
 description: 跳至 (起點和終點)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
@@ -13,20 +14,20 @@ ht-degree: 15%
 
 # 跳至 (起點和終點){#jump-start-point-and-end-point}
 
-![](../../assets/v7-only.svg)
 
-**[!UICONTROL Jump]** -type圖形對象用於改進複雜圖的可讀性，特別是具有交叉過渡的圖。
 
-跳轉是沒有箭頭的過渡。
+**[!UICONTROL Jump]**  — 類型圖形對象用於提高複雜圖的可讀性，特別是具有交叉轉變的圖。
 
-它們從一個活動轉到另一個活動，如下例所示：
+跳躍是沒有箭頭的轉變。
+
+它們會從一個活動移至另一個活動，如下列範例所示：
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
-對於每個「起始點」類型轉換，必須定位「終止點」類型轉換。
+對於每個「起始點」類型轉變，必須定位「終止點」類型轉變。
 
-可以在同一工作流中插入多個起點和終點跳轉。 它們由必須在參數中輸入的數字標識：
+您可以在相同的工作流程中插入數個起始點和終點跳躍。 它們由必須在參數中輸入的數字來識別：
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-為了提高圖的可讀性，可以更改與跳轉相關的影像以顯示相關數字。 請參閱 [更改活動映像](managing-activity-images.md)。
+要提高圖表的可讀性，可以更改與跳躍相關聯的影像以顯示相關數字。 請參閱 [變更活動影像](managing-activity-images.md).

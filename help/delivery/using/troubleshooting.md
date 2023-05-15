@@ -2,9 +2,10 @@
 product: campaign
 title: 推送疑難排解
 description: 推送疑難排解
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 疑難排解{#troubleshooting}
 
-![](../../assets/v7-only.svg)
+
 
 如果您的行動裝置已連線至Wi-Fi，而您未收到通知，請檢查防火牆是否未封鎖FCM/APN埠。
 

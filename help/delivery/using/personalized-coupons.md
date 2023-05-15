@@ -2,9 +2,11 @@
 product: campaign
 title: 個人化優惠券
 description: 了解如何建立和插入個人化抵用券
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 個人化優惠券{#personalized-coupons}
 
-![](../../assets/common.svg)
+
 
 將抵用券加到您的傳遞，可讓收件者獲得更高的產品和服務價值。 您可以使用「促銷活動抵用券」模組，建立一組您預期要新增至即將推出之行銷活動的抵用券。 當您準備好建立傳遞時，請指派適用的抵用券。 由於抵用券對於選取的期間有效，所指派的抵用券會唯一連結至其傳送訊息。 此外，Campaign會確認在傳送訊息之前，有足夠的抵用券數量。
 
@@ -147,7 +149,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->依預設，抵用券管理模組會使用 **nms:recipient** 表格。 [了解更多資訊](../../configuration/using/about-data-model.md#default-recipient-table)。
+>依預設，抵用券管理模組會使用 **nms:recipient** 表格。 [了解更多](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
 >了解如何使用自訂收件者表格 [在本頁](../../configuration/using/about-custom-recipient-table.md).
 

@@ -2,19 +2,22 @@
 product: campaign
 title: 在 ISP 中斷後更新跳出資格
 description: 了解如何在ISP中斷後更新退信資格
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 在ISP中斷後更新錯誤的硬退信 {#update-bounces}
+# 在 ISP 中斷後更新不正確的硬退件 {#update-bounces}
 
-![](../../assets/common.svg)
+
 
 ## 內容{#update-bounce-context}
 

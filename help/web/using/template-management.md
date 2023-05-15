@@ -2,9 +2,11 @@
 product: campaign
 title: 範本管理
 description: 範本管理
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # 範本管理{#template-management}
 
-![](../../assets/common.svg)
+
 
 數位內容編輯器提供 **標準範本** 用於網頁應用程式和傳送。
 

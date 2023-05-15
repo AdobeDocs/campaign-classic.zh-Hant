@@ -2,18 +2,20 @@
 product: campaign
 title: 設計調查
 description: 了解設計意見調查的關鍵步驟
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 設計調查{#building-a-survey}
 
-![](../../assets/common.svg)
+
 
 ## 建立新調查 {#creating-a-new-survey}
 
@@ -45,7 +47,7 @@ ht-degree: 2%
 
 將欄位新增至調查時，您需要選取其類型。 可以使用以下選項：
 
-1. **[!UICONTROL Answer a question]**:此選項可讓您宣告新欄位（稱為「已封存欄位」）以儲存答案。 在這種情況下，即使參與者多次填入表單，也會保存所收集的所有值。 此儲存模式僅在 **調查**. [了解更多資訊](../../surveys/using/managing-answers.md#storing-collected-answers)。
+1. **[!UICONTROL Answer a question]**:此選項可讓您宣告新欄位（稱為「已封存欄位」）以儲存答案。 在這種情況下，即使參與者多次填入表單，也會保存所收集的所有值。 此儲存模式僅在 **調查**. [了解更多](../../surveys/using/managing-answers.md#storing-collected-answers)。
 1. **[!UICONTROL Edit a recipient]**:此選項可讓您選取資料庫中的欄位。 在這種情況下，用戶答案將儲存在此欄位中。 對於每個參與者，僅保留最後保存的值，並將其添加到配置檔案資料中。
 1. **[!UICONTROL Add a variable]**:此選項可讓您建立設定，以便資訊不會儲存在資料庫中。 局部變數可在上游宣告。 您也可以在建立欄位時直接新增欄位。
 1. **[!UICONTROL Import an existing question]**:此選項可讓您匯入其他調查中建立的現有問題。
@@ -89,12 +91,12 @@ ht-degree: 2%
 >[!CAUTION]
 >
 >* 此功能僅適用於 **調查** 鍵入表單。
->* 此選項與隨機問題顯示不相容。 [了解更多資訊](#adding-questions)。
+>* 此選項與隨機問題顯示不相容。 [了解更多](#adding-questions)。
 
 
 ### 新增問題 {#adding-questions}
 
-容器有兩種類型：標準和問題。 標準容器可用來設定頁面配置和頁面中的條件式顯示。 [了解更多資訊](../../web/using/about-web-forms.md)。
+容器有兩種類型：標準和問題。 標準容器可用來設定頁面配置和頁面中的條件式顯示。 [了解更多](../../web/using/about-web-forms.md)。
 
 使用 **問題** 容器，將問題新增至頁面並在階層中插入下方的可能答案。 可在報表中分析使用者對此類容器中問題的回應。
 

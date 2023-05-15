@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: 監控工作執行
-description: 了解如何監視匯入和匯出作業的執行。
+description: 了解如何監視匯入和匯出作業的執行
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 55%
@@ -15,7 +17,7 @@ ht-degree: 55%
 
 # 監視作業執行 {#monitoring-job-execution}
 
-![](../../assets/common.svg)
+
 
 您可以直接從匯入/匯出作業清單追蹤匯入和匯出作業的執行。
 

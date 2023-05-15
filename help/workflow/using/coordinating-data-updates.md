@@ -2,9 +2,10 @@
 product: campaign
 title: 協調資料更新
 description: 協調資料更新
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -13,41 +14,41 @@ ht-degree: 3%
 
 # 協調資料更新{#coordinating-data-updates}
 
-![](../../assets/v7-only.svg)
 
-此使用案例詳細說明了工作流的建立過程，該過程允許您在使用工作流的多個執行時管理伴隨更新。
 
-目的是在執行另一個更新操作之前檢查更新過程是否已結束。 為此，我們將設定一個實例變數，並在實例正在運行時讓工作流test決定是否繼續執行工作流並執行更新。
+此使用案例詳細說明了如何建立工作流程，讓您在使用工作流程的數個執行時管理伴隨的更新。
+
+目的是在執行另一更新操作之前檢查更新過程是否已結束。 為此，我們將設定一個實例變數，並讓工作流測試是否正在運行實例以決定是否繼續執行工作流並執行更新。
 
 ![](assets/uc_dataupdate_wkf.png)
 
-此工作流由以下組成：
+此工作流程由下列部分組成：
 
-* a **調度程式** 活動，它在特定頻率上執行工作流。
-* a **Test** 檢查工作流是否已在執行的活動。
-* **查詢** 和 **更新資料** 在工作流尚未執行時執行活動，然後是 **結束** 將工作流實例變數重新初始化為false的活動。
-* 安 **結束** 活動。
+* a **排程器** 活動，在特定頻率上執行工作流程。
+* a **測試** 會檢查工作流程是否已執行的活動。
+* **查詢** 和 **更新資料** 活動，以備工作流程尚未執行時使用，之後會 **結束** 將工作流程例項變數重新初始化為false的活動。
+* 安 **結束** 活動（如果工作流程已執行）。
 
-要構建工作流，請執行以下步驟：
+若要建立工作流程，請遵循下列步驟：
 
-1. 添加 **調度程式** 活動，然後根據需要配置其頻率。
-1. 添加 **Test** 活動：檢查工作流是否已執行，然後按如下方式配置。
+1. 新增 **排程器** 活動，然後根據您的需求設定其頻率。
+1. 新增 **測試** 活動以檢查工作流程是否已執行，然後如下配置。
 
    >[!NOTE]
    >
-   >&quot;isRunning&quot;是我們為此示例選擇的實例變數名稱。 這不是內置變數。
+   >「isRunning」是我們為此範例選擇的執行個體變數名稱。 這不是內建變數。
 
    ![](assets/uc_dataupdate_test.png)
 
-1. 添加 **結束** 活動 **否** 叉子。 這樣，如果工作流已在執行，則不會執行任何操作。
-1. 將所需的活動添加到 **是** 叉子。 就我們而言， **查詢** 和 **更新資料** 活動。
-1. 開啟第一個活動，然後添加 **instance.vars.isRunning = true** 的 **[!UICONTROL Advanced]** 頁籤。 這樣，實例變數將設定為正在運行。
+1. 新增 **結束** 活動 **否** 分叉。 如此一來，如果工作流程已執行，則不會執行任何動作。
+1. 將所需的活動新增至 **是** 分叉。 就我們而言， **查詢** 和 **更新資料** 活動。
+1. 開啟第一個活動，然後新增 **instance.vars.isRunning = true** 命令 **[!UICONTROL Advanced]** 標籤。 如此一來，執行個體變數就會設為執行中。
 
    ![](assets/uc_dataupdate_query.png)
 
-1. 添加 **結束** 在 **[!UICONTROL Yes]** fork，然後添加 **instance.vars.isRunning =false** 的 **[!UICONTROL Advanced]** 頁籤。
+1. 新增 **結束** 活動結尾 **[!UICONTROL Yes]** 分叉，然後新增 **instance.vars.isRunning = false** 命令 **[!UICONTROL Advanced]** 標籤。
 
-   這樣，只要工作流正在執行，就不會執行任何操作。
+   如此一來，只要工作流程執行中，就不會執行任何動作。
 
    ![](assets/uc_dataupdate_end.png)
 

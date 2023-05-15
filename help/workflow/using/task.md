@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: 任務
-description: 瞭解有關任務工作流活動的詳細資訊
+description: 了解有關任務工作流活動的詳細資訊
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 3%
@@ -13,18 +14,18 @@ ht-degree: 3%
 
 # 任務{#task}
 
-![](../../assets/v7-only.svg)
+
 
 >[!AVAILABILITY]
 >
->:warning: 此功能僅在第7版Campaign Classic中可用。 [了解更多](../../mrm/using/creating-and-managing-tasks.md)
+>:warning: 此功能僅適用於Campaign Classicv7。 [了解更多](../../mrm/using/creating-and-managing-tasks.md)
 
-在市場活動工作流中， **[!UICONTROL Task]** 活動允許您指定兩種方案：如果任務已完成，則為第一個；如果任務未完成，則為第二個（如果手動標籤為未完成或已過期）。
+在促銷活動工作流程中， **[!UICONTROL Task]** 活動可讓您指定兩種情況：第一個是任務完成時，第二個是任務未完成時（如果手動將任務標籤為未完成或任務過期）。
 
 ![](assets/mrm_task_in_workflow.png)
 
-有關如何配置和操作任務的詳細資訊，請參見 [Campaign Classicv7文檔](../../mrm/using/creating-and-managing-tasks.md)。
+如何配置和操作任務在 [Campaign Classicv7檔案](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 
-的 **[!UICONTROL Resources]** 選項，您可以定義多個運算子以及任務的審批計畫。 如果批准者拒絕，則不會導致任務本身被拒絕。
+此 **[!UICONTROL Resources]** 選項可讓您定義多個運算子以及任務的核准排程。 如果核准者拒絕，這不會導致任務本身遭到拒絕。

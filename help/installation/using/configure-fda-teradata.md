@@ -2,11 +2,12 @@
 product: campaign
 title: 配置對Teradata的訪問
 description: 了解如何在FDA中設定Teradata的存取權
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 配置對Teradata的訪問 {#configure-access-to-teradata}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign [同盟資料存取](../../installation/using/about-fda.md) (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定對Teradata的存取權。
 
@@ -68,7 +69,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在FDA中連線至Teradata外部資料庫需要在Adobe Campaign伺服器上執行額外的設定步驟。 [了解更多資訊](#teradata-additional-configurations)。
+>在FDA中連線至Teradata外部資料庫需要在Adobe Campaign伺服器上執行額外的設定步驟。 [了解更多](#teradata-additional-configurations)。
 
 ## Teradata外部帳戶{#teradata-external}
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 開始使用SMS通道
 description: 開始使用SMS通道
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 4%
@@ -13,31 +15,31 @@ ht-degree: 4%
 
 # 開始使用SMS通道{#sms-channel}
 
-![](../../assets/common.svg)
 
 
-使用Adobe Campaign發送個性化的SMS消息。
 
-開始發送SMS之前：
+使用Adobe Campaign傳送個人化SMS訊息。
 
-* 確保收件人的個人資料中至少包含一部手機。
-* 瞭解有關Adobe Campaign的更多資訊 [提供最佳做法](delivery-best-practices.md)。
+開始傳送簡訊之前：
 
-發送SMS的關鍵步驟如下：
+* 請確定收件者設定檔中至少包含行動電話。
+* 深入了解Adobe Campaign [傳遞最佳實務](delivery-best-practices.md).
 
-* [配置SMS通道](sms-set-up.md)
+傳送簡訊的關鍵步驟如下：
+
+* [設定SMS通道](sms-set-up.md)
 * [建立簡訊傳遞](sms-create.md)
 * [定義對象](sms-create.md#selecting-the-target-population)
 * [定義SMS內容](sms-create.md#defining-the-sms-content)
-* [發送、監視和跟蹤SMS](sms-send.md)
-* [故障排除](troubleshooting-sms.md)
+* [傳送、監視及追蹤簡訊](sms-send.md)
+* [疑難排解](troubleshooting-sms.md)
 
-此外，您需要熟悉SMS協定和設定。 瀏覽Adobe Campaign與SMPP提供商之間在 [此文檔](sms-protocol.md)
+此外，您還需熟悉SMS通訊協定和設定。 逐步了解Adobe Campaign和SMPP提供者之間在 [此文檔](sms-protocol.md)
 
-有關如何建立交貨的全局資訊，請參閱 [此部分](steps-about-delivery-creation-steps.md)。
+如需如何建立傳送的全域資訊，請參閱 [本節](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
->Adobe Campaign還允許您通過其 **Adobe Campaign移動應用頻道(NMAC)** 的雙曲餘切值。
+>Adobe Campaign也可讓您透過 **Adobe Campaign行動應用程式頻道(NMAC)** 選項。
 > 
->有關詳細資訊，請參閱 [開始使用移動應用頻道](about-mobile-app-channel.md) 的子菜單。
+>有關詳細資訊，請參閱 [開始使用行動應用程式頻道](about-mobile-app-channel.md) 區段。

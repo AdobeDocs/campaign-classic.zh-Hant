@@ -1,88 +1,89 @@
 ---
 product: campaign
-title: 設計事務性消息模板
-description: 瞭解如何在Adobe Campaign Classic建立和設計事務性消息模板。
+title: 設計交易式訊息範本
+description: 了解如何在Adobe Campaign Classic中建立和設計交易式訊息範本
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
-# 設計事務性消息模板 {#creating-the-message-template}
+# 設計交易式訊息範本 {#creating-the-message-template}
 
-![](../../assets/v7-only.svg)
 
-要確保每個事件都可以更改為個性化郵件，您需要建立一個郵件模板以匹配每個事件類型。
+
+若要確保每個事件都可變更為個人化訊息，您需要建立訊息範本，以符合每個事件類型。
 
 >[!IMPORTANT]
 >
->事件類型需要預先建立。 有關此內容的詳細資訊，請參閱 [建立事件類型](../../message-center/using/creating-event-types.md)。
+>事件類型需要預先建立。 有關詳細資訊，請參閱 [建立事件類型](../../message-center/using/creating-event-types.md).
 
-事務性消息模板包含用於個性化事務性消息的必要資訊。 您還可以使用模板test消息預覽，並在傳送到最終目標之前使用種子地址發送校樣。 有關此的詳細資訊，請參閱 [Test事務性消息模板](../../message-center/using/testing-message-templates.md)。
+交易式訊息範本包含個人化交易式訊息的必要資訊。 您也可以使用範本來測試訊息預覽，並在傳送至最終目標之前使用種子地址傳送校樣。 有關詳細資訊，請參閱 [測試交易式訊息範本](../../message-center/using/testing-message-templates.md).
 
 ## 建立訊息範本 {#creating-message-template}
 
-1. 轉到 **[!UICONTROL Message Center >Transactional message templates]** 資料夾。
+1. 前往 **[!UICONTROL Message Center >Transactional message templates]** 檔案夾中。
 
-1. 在事務性消息模板清單中，按一下右鍵並選擇 **[!UICONTROL New]** 或按一下 **[!UICONTROL New]** 按鈕。
+1. 在交易式訊息範本清單中，按一下滑鼠右鍵並選取 **[!UICONTROL New]** 或按一下 **[!UICONTROL New]** 按鈕。
 
    ![](assets/messagecenter_create_model_001.png)
 
-1. 在交貨窗口中，選擇適合要使用的渠道的交貨模板。
+1. 在傳送視窗中，選取適合您要使用之通道的傳送範本。
 
    ![](assets/messagecenter_create_model_002.png)
 
-1. 如有必要，請更改其標籤。
+1. 視需要變更其標籤。
 
-1. 選擇與您要發送的消息匹配的事件類型。
+1. 選取符合您要傳送之訊息的事件類型。
 
    ![](assets/messagecenter_create_model_003.png)
 
-   事件類型需要事先在控制台中建立。 有關此內容的詳細資訊，請參閱 [建立事件類型](../../message-center/using/creating-event-types.md)。
+   事件類型必須預先在主控台中建立。 有關詳細資訊，請參閱 [建立事件類型](../../message-center/using/creating-event-types.md).
 
    >[!IMPORTANT]
    >
-   >事件類型不能連結到多個模板。
+   >無法將事件類型連結到多個模板。
 
-1. 輸入屬性和說明，然後按一下 **[!UICONTROL Continue]** 建立消息正文(請參閱 [建立郵件內容](#creating-message-content))。
+1. 輸入性質和說明，然後按一下 **[!UICONTROL Continue]** 若要建立訊息內文(請參閱 [建立訊息內容](#creating-message-content))。
 
    ![](assets/messagecenter_create_model_004.png)
 
-## 建立郵件內容 {#creating-message-content}
+## 建立訊息內容 {#creating-message-content}
 
-事務性消息內容的定義與Adobe Campaign定期遞送的定義相同。 例如，對於電子郵件傳遞，您可以以HTML或文本格式建立內容、添加附件或個性化傳遞對象。 有關詳細資訊，請參閱 [電子郵件傳遞](../../delivery/using/about-email-channel.md) 一章。
+交易式訊息內容的定義與Adobe Campaign中定期傳送的定義相同。 例如，對於電子郵件傳送，您可以建立HTML或文字格式的內容、新增附件或個人化傳送物件。 有關詳細資訊，請參閱 [電子郵件傳送](../../delivery/using/about-email-channel.md) 章節。
 
 >[!IMPORTANT]
 >
->郵件中包含的影像必須可以公開訪問。 Adobe Campaign沒有為事務性消息提供任何映像上載機制。\
->與JSSP或WebApp不同， `<%=` 沒有任何預設轉義符。
+>訊息中包含的影像必須可公開存取。 Adobe Campaign不提供任何交易式訊息的影像上傳機制。\
+>與JSSP或webApp不同， `<%=` 沒有任何預設逸出。
 >
->在這種情況下，您必須正確地從事件中轉出每個資料。 此轉義取決於此欄位的使用方式。 例如，在URL中，請使用encodeURIComponent。 要在HTML中顯示，可以使用escapeXMLString。
+>在此情況下，您必須正確逸出來自事件的每個資料。 此逸出取決於此欄位的使用方式。 例如，在URL中，請使用encodeURIComponent。 要在HTML中顯示，可以使用escapeXMLString。
 
-定義消息內容後，可以將事件資訊整合到消息正文中並對其進行個性化設定。 由於個性化標籤，事件資訊被插入文本正文中。
+定義訊息內容後，您可以將事件資訊整合至訊息內文，並加以個人化。 由於個人化標籤，事件資訊會插入文字內文。
 
 ![](assets/messagecenter_create_content_001.png)
 
-* 所有個性化欄位都來自負載。
-* 在事務性消息中可以引用一個或多個個性化塊。 塊內容將在發佈到執行實例期間添加到傳遞內容。
+* 所有個人化欄位皆來自有效負載。
+* 可以在交易式訊息中參考一或多個個人化區塊。 在發佈至執行例項期間，區塊內容會新增至傳送內容。
 
-要將個性化標籤插入電子郵件的正文中，請應用以下步驟：
+若要將個人化標籤插入電子郵件訊息的內文，請套用下列步驟：
 
-1. 在消息模板中，按一下與電子郵件格式(HTML或文本)匹配的頁籤。
+1. 在訊息範本中，按一下符合電子郵件格式(HTML或文字)的索引標籤。
 
-1. 輸入消息的正文。
+1. 輸入訊息的內文。
 
-1. 在文本正文中，使用 **[!UICONTROL Real time events > Event XML]** 的子菜單。
+1. 在文字內文中，使用 **[!UICONTROL Real time events > Event XML]** 功能表。
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. 使用以下語法填充標籤： **元素名稱**。@**屬性名稱** 如下所示。
+1. 使用下列語法填入標籤： **元素名稱**.@**屬性名稱** 如下所示。
 
    ![](assets/messagecenter_create_custo_003.png)
 
-1. 保存您的內容。
+1. 儲存您的內容。
 
-您的郵件現在已準備好 [測試](../../message-center/using/testing-message-templates.md)。
+您的訊息現在已準備好 [測試](../../message-center/using/testing-message-templates.md).

@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: 解壓縮或解密檔案
-description: 了解如何在處理前先解壓縮或解密Campaign Classic中的檔案。
+description: 了解如何在處理前，先在Campaign中解壓縮或解密檔案
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '715'
 ht-degree: 11%
 
 ---
 
 # 解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign可讓您匯入壓縮或加密的檔案。 以便在 [資料載入（檔案）](../../workflow/using/data-loading--file-.md) 活動中，您可以定義要解壓縮或解密檔案的預先處理。
 

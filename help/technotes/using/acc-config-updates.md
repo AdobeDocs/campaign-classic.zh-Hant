@@ -2,10 +2,11 @@
 product: campaign
 title: Technote - Adobe Campaign組態更新
 description: Adobe Campaign組態更新
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 12%
@@ -14,7 +15,7 @@ ht-degree: 12%
 
 # Adobe Campaign配置更新2021年 {#acc-config-updates}
 
-![](../../assets/v7-only.svg)
+
 
 基礎架構和設定應定期更新，包含最新的組建和產品修正。 這些修正是確保服務和安全性持續性的必要措施。 此外，還需要升級以符合協力廠商的變更。
 
@@ -70,7 +71,7 @@ As a **托管或Managed Services客戶**,Adobe會定期通知您建置升級。 
 
 ## AdobeIdentity Management系統(IMS)更新
 
-Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021年6月30日**. [了解更多資訊](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021年6月30日**. [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 必須升級Campaign用戶端主控台，以確保與Adobe IMS相容。
 
@@ -122,7 +123,7 @@ Adobe身分識別服務(IMS)將停止支援舊版Internet Explorer，從 **2021�
 
 執行個體升級至更新版本後，所有客戶都需遵循 [過程移至新的驗證模式](../../integrations/using/configuring-adobe-io.md). 這需要您產生新的Adobe I/O代號，並在實施中使用。  
 
-此外，針對混合環境，客戶需確保管道是在中間來源執行個體上設定。 [了解更多資訊](../../integrations/using/configuring-pipeline.md)。
+此外，針對混合環境，客戶需確保管道是在中間來源執行個體上設定。 [了解更多](../../integrations/using/configuring-pipeline.md)。
 
 [了解如何移轉至Adobe I/O](../../integrations/using/configuring-adobe-io.md).
 

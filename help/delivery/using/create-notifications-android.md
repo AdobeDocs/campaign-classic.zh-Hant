@@ -2,9 +2,10 @@
 product: campaign
 title: 為Android裝置建立推播通知
 description: 了解如何為Android建立推播通知
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # 建立Android通知{#create-notificaations-android}
 
-![](../../assets/v7-only.svg)
+
 
 使用Adobe Campaign在Android裝置上傳送推播通知。 傳遞建立的全域概念，在 [本節](steps-about-delivery-creation-steps.md).
 

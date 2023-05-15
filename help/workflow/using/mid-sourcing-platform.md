@@ -2,20 +2,21 @@
 product: campaign
 title: 中間來源平台
 description: 中間來源平台
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '52'
-ht-degree: 15%
+ht-degree: 19%
 
 ---
 
 
 # 中間來源平台{#mid-sourcing-platform}
 
-![](../../assets/v7-only.svg)
 
-下面詳細介紹的工作流隨 **中間採購平台** 預設情況下為模組。 有關本模組的詳細資訊，請參閱本模組 [節](../../installation/using/mid-sourcing-deployment.md)。
+
+以下詳述的工作流程會與 **中間來源平台** 模組。 有關此模組的詳細資訊，請參閱 [節](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -25,9 +26,9 @@ ht-degree: 15%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">交付指標</span> <br /> </td> 
-   <td> <span class="uicontrol">交付指標</span> <br /> </td> 
-   <td> 此工作流更新交貨的交貨跟蹤指示符。 預設情況下，此工作流每小時觸發一次。<br /> </td> 
+   <td> <span class="uicontrol">傳送指標</span> <br /> </td> 
+   <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
+   <td> 此工作流程會更新傳送的傳送追蹤指標。 預設會每小時觸發此工作流程。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -2,11 +2,12 @@
 product: campaign
 title: 透過 JavaScript 進行整合 (用戶端)
 description: 透過 JavaScript 進行整合 (用戶端)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
@@ -15,11 +16,11 @@ ht-degree: 2%
 
 # 透過 JavaScript 進行整合 (用戶端){#integration-via-javascript-client-side}
 
-![](../../assets/v7-only.svg)
+
 
 若要在網頁中呼叫互動引擎，請將對JavaScript程式碼的呼叫直接插入頁面中。 此呼叫會傳回目標中的選件內容
 
-元素。
+個元素.
 
 Adobe建議使用JavaScript整合方法。
 

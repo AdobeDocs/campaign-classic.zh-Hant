@@ -2,11 +2,13 @@
 product: campaign
 title: 擴充功能範例
 description: 擴充功能範例
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 07a5742c6f142c786ad8ba2f8774e7e90e8cd191
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # 擴充功能範例{#extension-example}
 
-![](../../assets/common.svg)
+
 
 若是傳入連絡人（客服中心或網站），系統會使用一組適用性規則，向指定連絡人建議最相關的優惠方案。 若要豐富優惠方案的資格條件，請擴充 **nms:interaction** 綱要。
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 使用內容範本
 description: 使用內容範本
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -13,37 +15,37 @@ ht-degree: 3%
 
 # 使用內容範本{#using-a-content-template}
 
-![](../../assets/common.svg)
 
-## 關於內容模板 {#about-content-templates}
 
-內容模板可以直接在交付中引用和使用。 請參閱 [通過內容管理建立交付](#creating-a-delivery-via-content-management)
+## 關於內容範本 {#about-content-templates}
 
-它們還可用於建立內容實例。 一旦建立了這些實例，這些實例就可以交付(請參閱 [提供內容實例](#delivering-a-content-instance))或導出(請參閱 [建立內容實例](#creating-a-content-instance))。
+內容範本可供參考，並直接用於傳遞。 請參閱 [透過內容管理建立傳遞](#creating-a-delivery-via-content-management)
 
-## 通過內容管理建立交付 {#creating-a-delivery-via-content-management}
+它們也可用來建立內容例項。 建立這些例項後，即可傳送(請參閱 [傳遞內容例項](#delivering-a-content-instance))或匯出(請參閱 [建立內容例項](#creating-a-content-instance))。
 
-在使用輸入欄位輸入內容時，可以在交貨中引用內容模板。 將附加標籤添加到傳遞嚮導中以定義傳遞內容。
+## 透過內容管理建立傳遞 {#creating-a-delivery-via-content-management}
+
+在使用輸入欄位輸入內容的檢視中，您可以參考傳送中的內容範本。 傳送精靈中會新增另一個索引標籤，以定義傳送內容。
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-佈局將基於所選設定自動應用。 要查看它，請按一下 **[!UICONTROL HTML preview]** 或 **[!UICONTROL Text preview]** )並選擇一個收件人以test個性化元素。
+版面將會根據選取的設定自動套用。 若要檢視，請按一下 **[!UICONTROL HTML preview]** (或 **[!UICONTROL Text preview]** )，然後選取要測試個人化元素的收件者。
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-有關詳細資訊，請參閱完整實施示例： [在傳遞嚮導中建立內容](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard)。
+如需詳細資訊，請參閱完整實作範例： [在傳遞精靈中建立內容](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
-## 建立內容實例 {#creating-a-content-instance}
+## 建立內容例項 {#creating-a-content-instance}
 
-您可以直接在Adobe Campaign樹中建立內容，以用於工作流、導出或直接注入到新交貨中。
+您可以直接在Adobe Campaign樹狀結構中建立內容，以用於工作流程、匯出或直接插入新傳送。
 
 應用以下步驟：
 
-1. 選擇 **[!UICONTROL Resources > Contents]** 的子目錄，按一下右鍵並選擇 **[!UICONTROL Properties]**。
+1. 選取 **[!UICONTROL Resources > Contents]** 節點，按一下右鍵並選擇 **[!UICONTROL Properties]**.
 
    ![](assets/s_ncs_content_folder_properties.png)
 
-1. 選擇此資料夾將處於活動狀態的發佈模板。
+1. 選擇將對此資料夾處於活動狀態的發佈模板。
 
    ![](assets/s_ncs_content_folder_templates.png)
 
@@ -51,36 +53,36 @@ ht-degree: 3%
 
    ![](assets/s_ncs_content_folder_create_a_template.png)
 
-1. 在窗體中輸入欄位。
+1. 輸入表單中的欄位。
 
    ![](assets/s_ncs_content_folder_use_a_template.png)
 
-1. 然後按一下 **[!UICONTROL HTML preview]** 頁籤 此處，未輸入從資料庫獲取的個性化欄位。
+1. 然後按一下 **[!UICONTROL HTML preview]** 標籤來檢視呈現。 在此，不會輸入從資料庫擷取的個人化欄位。
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
-1. 建立內容後，內容將添加到可用內容清單中。 按一下 **[!UICONTROL Properties]** 連結以更改其標籤、狀態或查看其歷史記錄。
+1. 建立內容後，內容會新增至可用內容清單。 按一下 **[!UICONTROL Properties]** 連結以變更其標籤、狀態或檢視其歷史記錄。
 
    ![](assets/s_ncs_content_folder_template_properties.png)
 
-1. 如有必要，內容一旦獲得批准，就可以使用工具欄上的相應按鈕生成。
+1. 如有必要，內容一經核准後，即可使用工具列上的適當按鈕產生。
 
    ![](assets/s_ncs_content_folder_template_generate.png)
 
    >[!NOTE]
    >
-   >您可以授權生成未批准的內容。 為此，請更改發佈模板中的相關選項。 有關此內容的詳細資訊，請參閱 [建立和配置模板](publication-templates.md#creating-and-configuring-the-template)。
+   >您可以授權產生未核准的內容。 若要這麼做，請變更發佈範本中的相關選項。 有關詳細資訊，請參閱 [建立和設定範本](publication-templates.md#creating-and-configuring-the-template).
 
-   預設情況下，HTML和文本內容將在 **發佈** 資料夾。 您可以更改發佈資料夾，這要歸功於 **NcmPublishingDir** 的雙曲餘切值。
+   HTML和文字內容預設會在 **發佈** Adobe Campaign例項的資料夾。 您可以透過 **NcmPublishingDir** 選項。
 
-## 提供內容實例 {#delivering-a-content-instance}
+## 傳遞內容例項 {#delivering-a-content-instance}
 
-要建立內容實例並傳遞它，需要將傳遞模板連結到用於生成此內容的發佈模板。 有關此內容的詳細資訊，請參閱 [交貨](publication-templates.md#delivery)。
+若要建立內容例項並傳送，傳遞範本必須連結至用於產生此內容的發佈範本。 有關詳細資訊，請參閱 [傳送](publication-templates.md#delivery).
 
-此外，內容儲存資料夾必須專用於從此發佈模板獲取的內容（當內容資料夾允許您生成多種類型的內容時，無法自動建立傳送）。
+此外，內容儲存資料夾必須專用於從此發佈範本擷取的內容（當內容資料夾可讓您產生數種內容類型時，無法自動建立傳送）。
 
-要根據所選內容自動建立傳遞，請按一下 **[!UICONTROL Delivery]** 表徵圖，然後選擇模板。
+若要根據選取的內容自動建立傳送，請按一下 **[!UICONTROL Delivery]** 圖示並選取範本。
 
 ![](assets/s_ncs_content_folder_create_the_delivery.png)
 
-文本和HTML內容將自動輸入。
+自動輸入文本和HTML內容。

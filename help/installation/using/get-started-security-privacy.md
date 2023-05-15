@@ -1,21 +1,22 @@
 ---
 product: campaign
 title: 安全性與隱私權檢查清單
-description: 進一步了解有關安全性和隱私權需要檢查的關鍵元素。
+description: 進一步了解有關安全性和隱私權需要檢查的關鍵元素
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # 安全性與隱私權檢查清單{#get-started-security-privacy}
 
-![](../../assets/v7-only.svg)
+
 
 本節將介紹有關安全性和隱私權需要檢查的關鍵元素。 某些設定只能由內部部署客戶執行。
 
@@ -72,7 +73,7 @@ ht-degree: 6%
 >
 >自2021年7月14日起，任何不支援TLS 1.2通訊協定的用戶端系統都將失去所有Adobe產品和服務的存取權。 在此日期之前，請確定所有使用者和用戶端系統均符合TLS 1.2規範。 [了解更多](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
-## 伺服器配置
+## 伺服器設定
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 

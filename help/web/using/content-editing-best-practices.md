@@ -2,9 +2,11 @@
 product: campaign
 title: 內容編輯最佳實務
 description: 內容編輯最佳實務
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
@@ -13,7 +15,7 @@ ht-degree: 6%
 
 # 內容編輯最佳實務{#content-editing-best-practices}
 
-![](../../assets/common.svg)
+
 
 為確保編輯者的最佳操作，建議您遵循下列准則：
 

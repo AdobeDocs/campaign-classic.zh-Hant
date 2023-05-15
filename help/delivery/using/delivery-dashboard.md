@@ -1,32 +1,34 @@
 ---
 product: campaign
 title: 傳遞儀表板
-description: 瞭解有關如何使用交貨控制板監控交貨的更多資訊
+description: 進一步了解如何使用傳遞控制面板來監控您的傳遞
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # 傳遞儀表板 {#delivery-dashboard}
 
-![](../../assets/common.svg)
 
-的 **交貨儀表板** 是監控您的交貨以及在發送郵件時遇到的最終問題的關鍵。
 
-它允許您檢索有關交貨的資訊，並在必要時對其進行編輯。 請注意，一旦發送了交貨，標籤內容就不能再更改。
+此 **傳遞控制面板** 是監控傳送及傳送訊息期間所遇到最終問題的關鍵。
 
-以下是可以使用儀表板中提供的幾個頁籤監視的資訊：
+它可讓您擷取傳遞的資訊，並視需要加以編輯。 請注意，傳送後，索引標籤內容不再變更。
+
+以下是您可使用控制面板中數個索引標籤來監控的資訊：
 
 * [傳遞摘要](#delivery-summary)
 * [傳遞報告](#delivery-reports)
-* [交付日誌、鏡像頁、排除](#delivery-logs-and-history)
-* [傳遞跟蹤日誌和歷史記錄](#tracking-logs)
-* [交付呈現](#delivery-rendering)
-* [交貨審核](#delivery-audit-)
+* [傳送記錄、鏡像頁面、排除項目](#delivery-logs-and-history)
+* [傳送追蹤記錄和歷史記錄](#tracking-logs)
+* [傳送呈現](#delivery-rendering)
+* [傳遞稽核](#delivery-audit-)
 
 ![](assets/s_ncs_user_del_details.png)
 
@@ -39,113 +41,113 @@ ht-degree: 4%
 
 ## 傳遞摘要 {#delivery-summary}
 
-的 **[!UICONTROL Summary]** 頁籤包含交貨的特徵：傳送狀態、使用的渠道、有關發送方的資訊、主題、有關執行的資訊。
+此 **[!UICONTROL Summary]** 標籤包含傳送的特性：傳送狀態、使用的通道、傳送者的相關資訊、主旨、執行的相關資訊。
 
 ## 傳遞報告 {#delivery-reports}
 
-的 **[!UICONTROL Reports]** 連結，可從 **[!UICONTROL Summary]** 頁籤中，您可以查看與交貨操作相關的一組報告：一般傳遞報告、詳細報告、傳遞報告、失敗消息的分發、開機率、點擊和事務等。
+此 **[!UICONTROL Reports]** 連結，可從 **[!UICONTROL Summary]** 標籤，可讓您查看與傳送動作相關的一組報表：一般傳送報告、詳細報告、傳送報告、失敗訊息的分發、開啟率、點按和交易等。
 
-此頁籤的內容可以根據您的要求進行配置。 有關交付報告的詳細資訊，請參閱 [此部分](../../reporting/using/delivery-reports.md)。
+此索引標籤的內容可依您的需求進行設定。 如需傳送報告的詳細資訊，請參閱 [本節](../../reporting/using/delivery-reports.md).
 
 ![](assets/delivery-report.png)
 
-## 交貨日誌、歷史記錄和排除 {#delivery-logs-and-history}
+## 傳送記錄、歷史記錄和排除 {#delivery-logs-and-history}
 
-的 **[!UICONTROL Delivery]** 頁籤提供此交貨中出現的事件的歷史記錄。 它包含傳遞日誌，即發送的消息清單及其狀態和關聯的消息。
+此 **[!UICONTROL Delivery]** 標籤會提供此傳送中發生次數的歷史記錄。 它包含傳送記錄，亦即已傳送的訊息清單、其狀態以及相關的訊息。
 
-對於交貨，您只能顯示（例如）交貨失敗或隔離地址為收件人。 要執行此操作，請按一下 **[!UICONTROL Filters]** 按鈕 **[!UICONTROL By state]**。 然後在下拉清單中選擇狀態。 列出了各種狀態 [此頁](delivery-statuses.md)。
+對於傳送，您只能顯示（例如）傳送失敗或隔離中地址的收件者。 若要這麼做，請按一下 **[!UICONTROL Filters]** 按鈕並選取 **[!UICONTROL By state]**. 然後選取下拉式清單中的狀態。 下列為各種狀態 [本頁](delivery-statuses.md).
 
 >[!NOTE]
 >
->可以定制顯示交貨日誌的清單，如同Campaign Classic中的任何清單。 例如，您可以添加一列，以瞭解在傳遞中發送的每封電子郵件的IP地址。 有關詳情，請參閱中詳細說明的使用案例 [此部分](#use-case)。
+>顯示傳送記錄的清單可以自訂，如Campaign Classic中的任何清單。 例如，您可以新增欄，以了解傳送中每個電子郵件的傳送IP位址。 如需詳細資訊，請參閱 [本節](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
-的 **[!UICONTROL Display the mirror page for this message...]** 連結允許您在新窗口中查看從清單中選擇的傳遞內容的鏡像頁。
+此 **[!UICONTROL Display the mirror page for this message...]** 連結可讓您在新視窗中檢視從清單中選取之傳送內容的鏡像頁面。
 
-鏡像頁面僅可用於已定義HTML內容的遞送。 有關此內容的詳細資訊，請參閱 [生成鏡像頁](sending-messages.md#generating-the-mirror-page)。
+鏡像頁面僅適用於已定義HTML內容的傳送。 有關詳細資訊，請參閱 [產生鏡像頁面](sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## 傳遞跟蹤日誌和歷史記錄 {#tracking-logs}
+## 傳送追蹤記錄和歷史記錄 {#tracking-logs}
 
-的 **[!UICONTROL Tracking]** 頁籤列出此交貨的跟蹤歷史記錄。 此頁籤顯示所發送消息的跟蹤資料，即受Adobe Campaign跟蹤的所有URL。 跟蹤資料按小時更新。
+此 **[!UICONTROL Tracking]** 索引標籤會列出此傳送的追蹤記錄。 此索引標籤會顯示已傳送之訊息的追蹤資料，即 Adobe Campaign 追蹤的所有 URL 主體。追蹤資料會每小時更新。
 
 >[!NOTE]
 >
->如果未為交貨啟用跟蹤，則不顯示此標籤。
+>如果未啟用傳遞追蹤，則不會顯示此索引標籤。
 
-跟蹤配置在傳遞嚮導的適當階段執行。 請參閱 [如何配置跟蹤的連結](how-to-configure-tracked-links.md)。
+追蹤設定會在傳送精靈的適當階段執行。 請參閱 [如何配置追蹤的連結](how-to-configure-tracked-links.md).
 
-**[!UICONTROL Tracking]** 資料在交付報告中進行解釋。 請參閱[本節](../../reporting/using/delivery-reports.md)。
+**[!UICONTROL Tracking]** 資料會在傳送報表中解譯。 請參閱[本節](../../reporting/using/delivery-reports.md)。
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ## 收件匣轉譯 {#delivery-rendering}
 
-的 **[!UICONTROL Inbox rendering]** 頁籤允許您在接收消息的不同上下文中預覽消息，並檢查主案頭和應用程式的相容性。
+此 **[!UICONTROL Inbox rendering]** 頁簽允許您在可能接收郵件的不同上下文中預覽郵件，並檢查主要案頭和應用程式的相容性。
 
-這樣，您就可以確保以最佳方式在各種Web客戶端、 Web郵件和設備上向收件人顯示您的郵件。
+這樣，您就可以確保以最佳方式向收件者顯示您的郵件，在各種Web用戶端、網頁郵件和裝置上。
 
-有關收件箱呈現的詳細資訊，請參閱 [此頁](inbox-rendering.md)
+有關收件箱呈現的詳細資訊，請參閱 [本頁](inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-## 交貨審核 {#delivery-audit-}
+## 傳遞稽核 {#delivery-audit-}
 
-的 **[!UICONTROL Audit]** 頁籤包含傳遞日誌和有關校樣的所有消息。
+此 **[!UICONTROL Audit]** 索引標籤包含傳送記錄檔和與校樣相關的所有訊息。
 
-的 **[!UICONTROL Refresh]** 按鈕來更新資料。 使用 **[!UICONTROL Filters]** 按鈕。
+此 **[!UICONTROL Refresh]** 按鈕可讓您更新資料。 使用 **[!UICONTROL Filters]** 按鈕來定義資料的篩選器。
 
-使用特殊表徵圖可以識別錯誤或警告。 請參閱 [分析交貨](steps-validating-the-delivery.md#analyzing-the-delivery)。
+特殊圖示可讓您識別錯誤或警告。 請參閱 [分析傳送](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-的 **[!UICONTROL Proofs]** 頁籤，用於查看已發送的校樣清單。
+此 **[!UICONTROL Proofs]** 子索引標籤可讓您檢視已傳送的校樣清單。
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-您可以修改此窗口中顯示的資訊(以及 **[!UICONTROL Delivery]** 和 **[!UICONTROL Tracking]** 頁籤)。 要執行此操作，請按一下 **[!UICONTROL Configure list]** 表徵圖。 有關配置清單顯示的詳細資訊，請參閱 [此部分](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+您可以修改此視窗中顯示的資訊(以及 **[!UICONTROL Delivery]** 和 **[!UICONTROL Tracking]** 標籤)，並選取要顯示的欄。 若要這麼做，請按一下 **[!UICONTROL Configure list]** 表徵圖。 如需設定清單顯示的詳細資訊，請參閱 [本節](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-## 交貨儀表板同步 {#delivery-dashboard-synchronization}
+## 傳遞控制面板同步 {#delivery-dashboard-synchronization}
 
-在傳遞儀表板中，您要檢查已處理的郵件和傳遞日誌，以確保已成功發送傳遞。
+在您的傳送控制面板中，您要檢查已處理的訊息和傳送記錄，以確定您的傳送已成功傳送。
 
-某些指標或狀態可能不正確或不是最新，這可以通過以下解決方案解決：
+某些指標或狀態可能不正確或不是最新狀態，這可透過下列解決方案解決：
 
-* 如果您的交貨狀態不正確，請檢查是否已對此交貨執行了所有必要的審批，或者 **[!UICONTROL operationMgt]** 和 **[!UICONTROL deliveryMgt]** 工作流正在運行，但沒有錯誤。 這也可能是因為使用發送實例上未配置的關聯進行傳遞。
+* 如果您的傳送狀態不正確，請檢查是否已針對此傳送完成所有必要的核准，或 **[!UICONTROL operationMgt]** 和 **[!UICONTROL deliveryMgt]** 工作流程正在執行，且未發生錯誤。 這也可能是因為傳送時使用了未在傳送執行個體上設定的相似性。
 
-* 如果您的交貨指標仍為零，並且您處於中間採購配置中，請檢查 **[!UICONTROL Mid-sourcing (delivery counters)]** 技術工作流。 如果狀態不是，請啟動它 **[!UICONTROL Started]**。 然後，您可以嘗試通過在Adobe Campaign瀏覽器中按一下右鍵相關傳遞並選擇 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**。 有關跟蹤指標的詳細資訊，請參閱此 [節](../../reporting/using/delivery-reports.md#tracking-indicators)。
+* 如果您的傳送指標仍為零，且您處於中間來源設定中，請檢查 **[!UICONTROL Mid-sourcing (delivery counters)]** 技術工作流程。 如果狀態不是，請啟動它 **[!UICONTROL Started]**. 接著，您可以嘗試以滑鼠右鍵按一下Adobe Campaign檔案總管中的相關傳送，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. 如需追蹤指標的詳細資訊，請參閱 [節](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* 如果您的交貨計數器與您的交貨不匹配，請嘗試通過在Adobe Campaign瀏覽器中按一下右鍵相關交貨並選擇 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 有關跟蹤指標的詳細資訊，請參閱此 [節](../../reporting/using/delivery-reports.md#tracking-indicators)。
+* 如果您的傳送計數器與您的傳送不符，請嘗試以滑鼠右鍵按一下Adobe Campaign檔案總管中的相關傳送並選取「 」，以重新計算指標 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 如需追蹤指標的詳細資訊，請參閱 [節](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* 如果您的交貨計數器不是中間採購部署的最新，請檢查 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 技術工作流正在運行。 如需關於此項目的詳細資訊，請參閱此[頁面](../../installation/using/mid-sourcing-deployment.md)。
+* 如果您的傳送計數器不是中間來源部署的最新狀態，請檢查 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 技術工作流程正在執行。 如需關於此項目的詳細資訊，請參閱此[頁面](../../installation/using/mid-sourcing-deployment.md)。
 
-您還可以通過交貨控制面板使用不同的報表跟蹤交貨。 如需詳細資訊，請參閱本[區段](../../reporting/using/delivery-reports.md)。
+您也可以透過傳遞控制面板，以不同的報表來追蹤您的傳送。 如需詳細資訊，請參閱本[區段](../../reporting/using/delivery-reports.md)。
 
-## 用例：將發件人的IP地址添加到日誌 {#use-case}
+## 使用案例：將發件人的IP地址添加到日誌 {#use-case}
 
-在本節中，您將瞭解如何向傳遞日誌中添加有關在傳遞中發送每封電子郵件的IP地址的資訊。
+在本節中，您將了解如何將傳送記錄檔中傳送每個電子郵件之IP位址的相關資訊新增至傳送。
 
 >[!NOTE]
 >
->如果您使用的是單個實例或中間採購實例，則此修改會有所不同。 在進行修改之前，請確保您已連接到電子郵件發送實例。
+>如果您使用單一例項或中間來源例項，此修改便不同。 進行修改之前，請確定您已連線至電子郵件傳送執行個體。
 
-### 步驟1:擴展架構
+### 步驟1:擴充結構
 
-添加 **公共ID** 在交付日誌中，您需要先擴展架構。 您可以按如下步驟進行。
+若要新增 **publicID** 在傳送記錄中，您需要先擴充結構。 您可以依照下列步驟進行。
 
-1. 建立架構擴展，在 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]**。
+1. 建立結構擴充功能，位於 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]**.
 
-   有關架構擴展的詳細資訊，請參閱 [此頁](../../configuration/using/extending-a-schema.md)。
+   如需結構擴充功能的詳細資訊，請參閱 [本頁](../../configuration/using/extending-a-schema.md).
 
-1. 選擇 **[!UICONTROL broadLogRcp]** 擴展收件人傳遞日誌(nms)並定義自定義命名空間。 在這種情況下，它將是「關注」：
+1. 選擇 **[!UICONTROL broadLogRcp]** 擴充收件者傳送記錄檔(nms)並定義自訂命名空間。 在此情況下，會是「自訂」：
 
    ![](assets/schema-parameters.png)
 
    >[!NOTE]
    >
-   >如果實例在中間採購中，則需要使用broadLogMid架構。
+   >如果您的執行個體位於中間來源，則需要使用broadLogMid結構。
 
-1. 在分機中添加新欄位。 在此示例中，您需要替換：
+1. 在擴充功能中新增欄位。 在此範例中，您需要取代：
 
    ```
    <element img="nms:broadLog.png" label="Recipient delivery logs" labelSingular="Recipient delivery log" name="broadLogRcp"/>
@@ -164,46 +166,46 @@ ht-degree: 4%
 
 ### 步驟2:更新資料庫結構
 
-修改完成後，需要更新資料庫結構，使其與其邏輯說明對齊。
+修改完成後，您需要更新資料庫結構，使其與其邏輯說明對齊。
 
 要執行此操作，請遵循下列步驟：
 
-1. 按一下 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]** 的子菜單。
+1. 按一下 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]** 功能表。
 
    ![](assets/update-database-structure.png)
 
-1. 在 **[!UICONTROL Edit tables]** 的 **[!UICONTROL NmsBroadLogRcp]** 表被選中(或 **[!UICONTROL broadLogMid]** 中)，如下所示：
+1. 在 **[!UICONTROL Edit tables]** 窗口， **[!UICONTROL NmsBroadLogRcp]** 表被檢查(或 **[!UICONTROL broadLogMid]** 表格（若您位於中間來源環境），如下所示：
 
    ![](assets/edit-tables.png)
 
    >[!IMPORTANT]
    >
-   >請始終確保除以下項之外沒有其他修改 **[!UICONTROL NmsBroadLoGRcp]** 表(或 **[!UICONTROL broadLogMid]** 的下界)。 如果是，則取消選中其他表。
+   >請一律確保沒有其他修改，但 **[!UICONTROL NmsBroadLoGRcp]** 表格(或 **[!UICONTROL broadLogMid]** 表格（若您位於中間來源環境）。 如果是，請取消選中其他表。
 
-1. 按一下 **[!UICONTROL Next]** 驗證。 將顯示以下螢幕：
+1. 按一下 **[!UICONTROL Next]** 以驗證。 下列畫面隨即顯示：
 
    ![](assets/update-script.png)
 
-1. 按一下 **[!UICONTROL Next]**，則 **[!UICONTROL Start]** 開始更新資料庫結構。 索引生成正在啟動。 此步驟可能很長，具體取決於 **[!UICONTROL NmsBroadLogRcp]** 的子菜單。
+1. 按一下 **[!UICONTROL Next]**，然後 **[!UICONTROL Start]** 開始更新資料庫結構。 正在建立索引。 此步驟可能會很長，具體取決於 **[!UICONTROL NmsBroadLogRcp]** 表格。
 
    ![](assets/start-database-update.png)
 
 >[!NOTE]
 >
->資料庫物理結構的更新成功完成後，您需要斷開連接並重新連接，以便將您的修改考慮在內。
+>資料庫的物理結構更新成功完成後，您需要斷開連接並重新連接，以便將您的修改納入考慮範圍。
 
-### 第3步：驗證修改
+### 步驟3:驗證修改
 
-要確認所有操作都正常，您需要更新交貨日誌螢幕。
+若要確認一切皆正常運作，您必須更新傳送記錄檔畫面。
 
-為此，請訪問傳遞日誌並添加「IP標識符」列。
+若要這麼做，請存取傳送記錄並新增「IP識別碼」欄。
 
 ![](assets/list-config.png)
 
 >[!NOTE]
 >
->要瞭解如何在Campaign Classic介面中配置清單，請參閱 [此頁](../../platform/using/adobe-campaign-workspace.md)。
+>若要了解如何在Campaign Classic介面中設定清單，請參閱 [本頁](../../platform/using/adobe-campaign-workspace.md).
 
-下面是您在 **[!UICONTROL Delivery]** 頁籤：
+以下是您應在 **[!UICONTROL Delivery]** 標籤後：
 
 ![](assets/logs-with-ip.png)

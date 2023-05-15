@@ -1,40 +1,42 @@
 ---
 product: campaign
 title: 設定 A/B 測試
-description: 瞭解如何在Campaign Classic中配置A/B測試。
+description: 了解如何在Campaign中設定A/B測試
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '211'
 ht-degree: 3%
 
 ---
 
 # 設定 A/B 測試 {#configuring-a-b-testing}
 
-![](../../assets/common.svg)
 
-本節詳細介紹如何構建工作流以執行A/B測試。
 
-1. 建立新工作流，然後配置 [查詢](../../workflow/using/query.md) 活動，以針對所需人口。
+本節詳細說明如何建立工作流程以執行A/B測試。
 
-1. 添加 [拆分](../../workflow/using/split.md) 活動，將目標種群劃分為多個子集。
+1. 建立新工作流程，然後設定 [查詢](../../workflow/using/query.md) 活動來定位所需的母體。
 
-1. 開啟活動，然後根據需要配置每個子集。 有關如何配置的詳細資訊 **[!UICONTROL Split]** 活動，請參閱 [此部分](../../workflow/using/split.md)。
+1. 新增 [分割](../../workflow/using/split.md) 活動，將目標母體劃分為多個子集。
 
-   在本例中，我們希望通過向目標人口的10%介紹每個主題，為新聞稿test2個新主題。
+1. 開啟活動，然後根據您的需求設定每個子集。 如需如何設定 **[!UICONTROL Split]** 活動，請參閱 [本節](../../workflow/using/split.md).
+
+   在此範例中，我們想透過將每個主題呈現給目標人口的10%，來測試電子報中的2個新主題。
 
    ![](assets/ab-testing-split.png)
 
-1. 增加一個過渡，以便向剩餘人群發送有關當前主題的新聞稿。 為此，請激活 **[!UICONTROL Generate complement]** 的 **[!UICONTROL General]** 頁籤。
+1. 新增轉變，以便將包含目前主題的電子報傳送給剩餘母體。 若要這麼做，請啟用 **[!UICONTROL Generate complement]** 選項 **[!UICONTROL General]** 標籤。
 
    ![](assets/ab-testing-complement.png)
 
-1. 對於每個子集，將交貨的版本添加到test。
+1. 針對每個子集，新增要測試的傳送版本。
 
    ![](assets/ab-testing-delivery.png)
 
-現在可以啟動工作流。 發送交貨後，您將能夠跟蹤交貨日誌中三個子集的行為，以便查看哪個主題最成功。
+您現在可以啟動工作流程。 傳送完畢後，您就可以追蹤傳送記錄中三個子集的行為，以查看哪個主題最成功。
 
-工作流還允許您通過自動識別執行更好的傳遞變數，然後將其發送給剩餘人群來自動化流程。 有關詳細資訊，請參閱此專用 [用例](a-b-testing-use-case.md)。
+工作流程也可讓您自動識別執行得較好的傳送變體，然後將其傳送至剩餘母體，借此自動化您的流程。 如需詳細資訊，請參閱此專屬 [使用案例](a-b-testing-use-case.md).

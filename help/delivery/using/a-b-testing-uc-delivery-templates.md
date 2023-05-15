@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: 建立傳遞範本
-description: 瞭解如何通過專用使用案例執行A/B測試
+description: 透過專屬的使用案例了解如何執行A/B測試
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 20%
@@ -13,21 +15,21 @@ ht-degree: 20%
 
 # 建立傳遞範本 {#step-3--creating-two-delivery-templates}
 
-![](../../assets/common.svg)
 
-現在，我們要建立兩個交貨模板。 將在 **[!UICONTROL Email delivery]** 連結到的活動 **[!UICONTROL Split]** 的子菜單。 如需詳細資訊，請參閱[本章節](about-templates.md)。
 
-1. 瀏覽到 **[!UICONTROL Resources > Delivery template]** 的子菜單。
-1. 複製 **[!UICONTROL Email]** 交貨模板。
+我們現在想要建立兩個傳遞範本。 每個範本都會在 **[!UICONTROL Email delivery]** 連結至的活動 **[!UICONTROL Split]** 活動。 如需詳細資訊，請參閱[本章節](about-templates.md)。
+
+1. 瀏覽至 **[!UICONTROL Resources > Delivery template]** 檔案夾。
+1. 複製 **[!UICONTROL Email]** 傳遞範本。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 
-1. 建立要用於傳遞A的內容。
+1. 建立要用於傳送A的內容。
 
    ![](assets/use_case_abtesting_deliverymodel_002.png)
 
-1. 重複此過程以建立交貨B的模板。
+1. 重複此程式，為傳送B建立範本。
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-您現在可以在工作流中配置交貨。 [了解更多資訊](a-b-testing-uc-configuring-deliveries.md)。
+您現在可以在工作流程中設定傳送。 [了解更多](a-b-testing-uc-configuring-deliveries.md)。

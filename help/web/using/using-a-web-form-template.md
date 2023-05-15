@@ -2,9 +2,11 @@
 product: campaign
 title: 使用網路表單範本
 description: 使用網路表單範本
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # 使用網路表單範本{#using-a-web-form-template}
 
-![](../../assets/common.svg)
+
 
 表單範本是可重複使用的設定，可讓您建立新表單。 依預設，表單範本會與 **[!UICONTROL Resources > Templates > Web application templates]** 節點。
 

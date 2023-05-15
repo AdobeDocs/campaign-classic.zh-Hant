@@ -1,30 +1,31 @@
 ---
 product: campaign
-title: 關於工作流活動
+title: 關於工作流程活動
 description: 關於活動
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
-# 工作流活動{#wf-activities}
+# 工作流程活動{#wf-activities}
 
-![](../../assets/v7-only.svg)
 
-本節介紹所有可用活動。 根據建立/編輯工作流的節點或上下文，可用的活動可能會有所不同。 例如，在市場活動中建立的工作流具有特定於渠道的交付活動。
 
-工作流活動按類別分組。 同時有四個頁籤。
+本節說明所有可用的活動。 根據建立/編輯工作流程的節點或內容，可用的活動可能有所不同。 例如，在促銷活動中建立的工作流程具有通道特定的傳送活動。
 
-在市場活動工作流中， **[!UICONTROL Events]** 頁籤替換為 **[!UICONTROL Deliveries]** 頁籤。 此頁籤中的活動在 [行動活動](about-action-activities.md) 的子菜單。
+工作流活動按類別分組。 同時有四個索引標籤。
+
+在行銷活動工作流程中， **[!UICONTROL Events]** 標籤被 **[!UICONTROL Deliveries]** 標籤。 此索引標籤中的活動在 [動作活動](about-action-activities.md) 區段。
 
 ![](assets/wf-activity-tabs.png)
 
 閱讀全文:
 
-* [關於目標活動](about-targeting-activities.md)
+* [關於鎖定目標活動](about-targeting-activities.md)
 * [執行工作流程](starting-a-workflow.md)
 * [工作流程最佳實務](workflow-best-practices.md)

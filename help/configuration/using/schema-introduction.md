@@ -1,24 +1,23 @@
 ---
 product: campaign
-title: 架構引用
-description: 架構引用清單
+title: 結構參考
+description: 架構參考清單
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 21%
 
 ---
 
-# 架構引用 {#schema-reference}
+# 結構參考 {#schema-reference}
 
-![](../../assets/v7-only.svg)
+編輯架構時，可使用以來源架構(xtk:srcSchema)為基礎的核准系統。 使用「資料庫結構更新……」更新資料庫時，也可能發現一些錯誤。 嚮導。
 
-編輯模式時，基於源模式(xtk:srcSchema)的審批系統可用。 使用「資料庫結構更新……」更新資料庫時，還可能發現一些錯誤。 的子菜單。
+依預設，在Adobe Campaign結構中，所有布林類型屬性都為「false」。 若要啟用這些屬性，您必須在結構中指定屬性，並將其值設為「true」。
 
-預設情況下，在Adobe Campaign架構中，所有布爾類型屬性都為&quot;false&quot;。 要激活這些屬性，您需要在架構中指定屬性並將其值設定為「true」。
-
-引用清單：
+參考清單：
 
 * [屬性](schema/attribute.md)
 * [計算字串](schema/compute-string.md)

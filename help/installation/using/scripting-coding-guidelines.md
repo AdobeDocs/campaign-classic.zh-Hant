@@ -1,25 +1,26 @@
 ---
 product: campaign
 title: 指令碼和程式碼指南
-description: 進一步了解在Adobe Campaign中開發時應遵循的准則（工作流程、Javascript、JSSP等）。
+description: 進一步了解在Adobe Campaign中開發時應遵循的准則（工作流程、Javascript、JSSP等）
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # 指令碼和程式碼指南 {#scripting-coding-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## 指令碼
 
-如需詳細資訊，請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+如需詳細資訊，請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant).
 
 如果您使用工作流程、網頁應用程式、工作流程編寫指令碼，請遵循以下最佳實務：
 
@@ -56,7 +57,7 @@ ht-degree: 3%
 >
 >如果您使用的組建版本早於8140，則 **XtkPassUnknownSQLFunctionsToRDBMS** 選項可設為「1」。 如果要保護資料庫的安全，請刪除此選項（或將其設定為&#39;0&#39;）。
 
-如果您使用用戶輸入在查詢或SQL陳述式中構建篩選器，則始終必須將其逸出(請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)  — 資料保護：逸出函式)。 這些函式為：
+如果您使用用戶輸入在查詢或SQL陳述式中構建篩選器，則始終必須將其逸出(請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)  — 資料保護：逸出函式)。 這些函式為：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)

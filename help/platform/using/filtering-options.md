@@ -2,20 +2,22 @@
 product: campaign
 title: 篩選選項
 description: 篩選選項
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: cf75a435-97e2-4d4f-8b9b-c30a57390deb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 篩選選項{#filtering-options}
 
-![](../../assets/common.svg)
+
 
 ## 關於篩選 {#about-filtering}
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 管線選項 NmsPipeline_Config
 description: 管線選項 NmsPipeline_Config
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 3%
@@ -14,7 +16,7 @@ ht-degree: 3%
 
 # 管線選項 NmsPipeline_Config {#nmspipeline_config}
 
-![](../../assets/common.svg)
+
 
 驗證一旦運作， [!DNL pipelined] 可以擷取事件並加以處理。 它只會處理在Adobe Campaign中設定的觸發器，而忽略其他觸發器。 觸發器必須從Analytics產生，並預先推送至管道。
 選項也可以設定萬用字元來擷取所有觸發器（無論名稱為何）。

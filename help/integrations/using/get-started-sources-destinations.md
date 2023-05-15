@@ -1,11 +1,12 @@
 ---
 product: campaign
 title: 開始使用來源和目標
-description: 進一步了解Adobe Experience Platform來源和目的地。
+description: 進一步了解Adobe Experience Platform Sources和目的地
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
-source-git-commit: 89a18ae9ec57376d6ebec6c416c7562f960eb882
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 15%
@@ -14,7 +15,7 @@ ht-degree: 15%
 
 # 使用來源和目的地 {#rtcdp}
 
-![](../../assets/v7-only.svg)
+
 
 ## 關於來源和目的地
 

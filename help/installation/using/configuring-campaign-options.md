@@ -2,20 +2,21 @@
 product: campaign
 title: 設定Campaign選項
 description: 了解如何設定Campaign選項
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3991'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Campaign Classic 選項清單{#configuring-campaign-options}
 
-![](../../assets/v7-only.svg)
+
 
 此 **[!UICONTROL Administration / Platform / Options]** 節點可讓您設定Adobe Campaign選項。 其中有些是內建的Campaign，有些則可視需要手動新增。 可用選項會依執行個體所安裝的套件而有所不同。
 
@@ -126,7 +127,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_PublishingScript</span> <br /> </td> 
-   <td> 發佈指令碼。<br /> </td> 
+   <td> 發佈指令碼.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_NoCountBroadLogMsgPush</span> <br /> </td> 
@@ -150,7 +151,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客戶的常見名稱。 用於向收件者顯示的某些警告訊息。<br /> 「你收到這條資訊是因為你與*****或一家關聯公司有聯繫。 不再從*****」接收消息。<br /> </td> 
+   <td> 客戶的一般名稱. 用於向收件者顯示的某些警告訊息。<br /> 「你收到這條資訊是因為你與*****或一家關聯公司有聯繫。 不再從*****」接收消息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -297,15 +298,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
-   <td> 上傳期間略過之影像的URL遮罩清單。<br /> </td> 
+   <td> 上傳期間略過的影像的 URL 遮罩清單.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> 影像上傳的設定。 值可以是「無」/「追蹤」/「指令碼」/清單（可由運算子的選用設定覆寫）。 </td> 
+   <td> 影像上傳的設定. 值可以是「無」/「追蹤」/「指令碼」/清單（可由運算子的選用設定覆寫）。 </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> 儲存伺服器上映像的資料夾。<br /> </td> 
+   <td> 伺服器上的影像將要儲存到的資料夾.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -337,7 +338,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> 公用資源檔案的新URL。<br /> </td> 
+   <td> 公用資源檔案的新 URL.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,15 +489,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeAlert</span> <br /> </td> 
-   <td> 即時事件平均處理時間的警報臨界值。<br /> </td> 
+   <td> 即時事件的平均處理時間的警報臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeWarning</span> <br /> </td> 
-   <td> 即時事件平均處理時間的警告臨界值。<br /> </td> 
+   <td> 即時事件的平均處理時間的警告臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> 排隊即時事件平均數的警報閾值。<br /> </td> 
+   <td> 已排入佇列的即時事件之平均數量的警報臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -508,7 +509,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueWarning</span> <br /> </td> 
-   <td> 排隊即時事件平均數的警告閾值。<br /> </td> 
+   <td> 已排入佇列的即時事件之平均數量的警告臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorAlert</span> <br /> </td> 
@@ -536,19 +537,19 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
-   <td> 掛起即時事件隊列的臨界條件之前的閾值。<br /> </td> 
+   <td> 待處理即時事件佇列的危急情況之前的臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
-   <td> 掛起即時事件佇列的警告前臨界值。<br /> </td> 
+   <td> 針對待處理即時事件佇列發出警告之前的臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputAlert</span> <br /> </td> 
-   <td> 即時事件吞吐量的警報閾值。<br /> </td> 
+   <td> 即時事件輸送量的警報臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputWarning</span> <br /> </td> 
-   <td> 即時事件吞吐量的警告閾值。<br /> </td> 
+   <td> 即時事件輸送量的警告臨界值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMessageCenter_RoutingBatchSize</span> <br /> </td> 
@@ -602,15 +603,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span> <br /> </td> 
-   <td> <p>可讓您定義從資料庫中清除隔離的延遲。</p><p> 在介面中修改延遲後，會自動建立此選項。 If you modify the value from the options list, it should be expressed in seconds.</p><br /> </td> 
+   <td> <p>可讓您定義從資料庫中清除隔離的延遲。</p><p> 在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RecycledDeliveryPurgeDelay</span> <br /> </td> 
-   <td> <p>Lets you define the delay after which recycled deliveries are erased from the database.</p><p> 在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
+   <td> <p>可讓您定義從資料庫中清除回收傳遞的延遲。</p><p> 在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RejectsPurgeDelay</span> <br /> </td> 
-   <td> <p>可讓您定義從資料庫中清除拒絕的延遲。</p><p>This option is automatically created once the delay is modified within the interface. 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
+   <td> <p>可讓您定義從資料庫中清除拒絕的延遲。</p><p>在介面中修改延遲後，會自動建立此選項。 如果從選項清單修改值，應以秒錶示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_TrackingLogPurgeDelay</span> <br /> </td> 
@@ -657,7 +658,7 @@ ht-degree: 0%
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 允許您為Microsoft SQL Server上的工作表配置單獨的資料庫，以優化備份和複製。 該選項與臨時資料庫的名稱相對應：如果指定，則將在此資料庫中寫入工作表。 範例：'tempdb.dbo' （請注意，名稱必須以點結尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">閱讀全文</a> <br /> </td> 
+   <td> 允許您為Microsoft SQL Server上的工作表配置單獨的資料庫，以優化備份和複製。 該選項與臨時資料庫的名稱相對應：如果指定，則將在此資料庫中寫入工作表。 範例：'tempdb.dbo' （請注意，名稱必須以點結尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">深入了解</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -677,7 +678,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> 自動為內部名稱添加前置詞。<br /> </td> 
+   <td> 新增到自動產生的內部名稱的前置詞.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
@@ -695,9 +696,9 @@ ht-degree: 0%
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
    <td> 在移轉期間，樹狀結構會根據新版本標準自動重新組織。<br /> 此選項可讓您停用導覽樹的自動移轉。 如果您使用它，則在遷移後，您必須刪除過時的資料夾、添加新資料夾並運行所有必要的檢查。<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">Data type:</span> Integer</p> </li> 
+     <li> <p> <span class="uicontrol">資料類型：</span> 整數</p> </li> 
      <li> <p> <span class="uicontrol">值（文字）</span> :1 </p> </li> 
-    </ul> 只有在現成可用的導覽樹已進行太多變更時，才應使用此選項。<br /> For more on this, refer to <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">this section</a>.<br /> </td> 
+    </ul> 只有在現成可用的導覽樹已進行太多變更時，才應使用此選項。<br /> 有關詳細資訊，請參閱 <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">本節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -767,7 +768,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 選件 {#offers}
+## 優惠 {#offers}
 
 <table> 
  <thead> 
@@ -816,15 +817,15 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> 執行實例標識符。<br /> </td> 
+   <td> 執行實例識別碼.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> 傳送帳單報表時使用的客戶識別碼。<br /> </td> 
+   <td> 傳送計費報告時使用的客戶識別碼.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
-   <td> Internal base URL to access the application server.<br /> </td> 
+   <td> 用於訪問應用程式伺服器的內部基本URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
@@ -832,7 +833,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_URL</span> <br /> </td> 
-   <td> Base URL of the public web application server.<br /> </td> 
+   <td> 公用Web應用程式伺服器的基URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkPassUnknownSQLFunctionsToRDBMS</span> <br /> </td> 
@@ -857,7 +858,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> 追蹤的URL計算指令碼。<br /> </td> 
+   <td> 追蹤的 URL 計算指令碼.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -873,7 +874,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> 開啟URL計算指令碼。<br /> </td> 
+   <td> 開啟 URL 計算指令碼.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -955,15 +956,15 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Active</span> <br /> </td> 
-   <td> Enable LDAP server to be used to authenticate users and provide authorizations to users.<br /> </td> 
+   <td> 啟用LDAP伺服器，以用於驗證用戶並向用戶提供授權。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AppLogin</span> <br /> </td> 
-   <td> Application login to contact the server for various searches.<br /> </td> 
+   <td> 應用程式登入以連絡伺服器進行各種搜尋。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AppPassword</span> <br /> </td> 
-   <td> Encrypted password for the application login.<br /> </td> 
+   <td> 應用程式登入的加密密碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
@@ -983,11 +984,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchFilter</span> <br /> </td> 
-   <td> DN search filter.<br /> </td> 
+   <td> DN搜尋篩選器。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
-   <td> 搜索範圍。<br /> </td> 
+   <td> 搜尋範圍.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
@@ -1015,7 +1016,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
-   <td> 搜索範圍。<br /> </td> 
+   <td> 搜尋範圍.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
@@ -1048,7 +1049,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> 可讓您指定網路表單的無效模式的選項：依預設，如果選項為「tracking」，則使用追蹤伺服器，並搭配「其他伺服器」選項使用個人化清單。<br /> </td> 
+   <td> 可讓您指定網路表單失效模式的選項：預設情況下為本機，如果選項為「追蹤」，則使用追蹤伺服器，並使用提供其他「伺服器」選項的個人化清單。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURL</span> <br /> </td> 

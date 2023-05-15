@@ -2,9 +2,10 @@
 product: campaign
 title: 行銷活動目標對象
 description: 了解如何定義行銷活動的受眾
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 2%
@@ -12,8 +13,6 @@ ht-degree: 2%
 ---
 
 # 選取行銷活動的對象 {#marketing-campaign-deliveries}
-
-![](../../assets/v7-only.svg)
 
 在行銷活動中，您可以針對每個傳送定義：
 

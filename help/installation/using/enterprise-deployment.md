@@ -2,11 +2,12 @@
 product: campaign
 title: 企業部署
 description: 企業部署
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 企業部署{#enterprise-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 這是最完整的設定。 它以標準配置為基礎，提供更高的安全性和可用性：
 
@@ -50,7 +51,7 @@ ht-degree: 3%
 
 ## 安裝和配置步驟 {#installation-and-configuration-steps}
 
-### 先決條件 {#prerequisites}
+### 必要條件 {#prerequisites}
 
 * 兩個應用程式伺服器上的JDK,
 * 兩個前端上的Web伺服器(IIS、Apache),
@@ -76,7 +77,7 @@ ht-degree: 3%
 在下列範例中，例項的參數為：
 
 * 執行個體的名稱：示範
-* DNS掩碼：tracking.campaign.net*, console.campaign.net*（應用程式伺服器處理用戶端主控台連線和報表的URL，以及鏡像頁面和取消訂閱頁面的URL）
+* DNS掩碼：tracking.campaign.net&#42;, console.campaign.net&#42; （應用程式伺服器處理客戶端控制台連接和報告以及鏡像頁面和取消訂閱頁面的URL）
 * 語言：英文
 * 資料庫：campaign:demo@dbsrv
 
@@ -165,7 +166,7 @@ ht-degree: 3%
 
    有關詳細資訊，請參閱 [Campaign伺服器設定](../../installation/using/configuring-campaign-server.md).
 
-1. 複製客戶端控制台安裝程式(**setup-client-7.XX**, **YYYY.exe** 適用於v7或 **setup-client-6.XX**, **YYYY.exe** (v6.1)轉換為 **/datakit/nl/eng/jsp** 檔案夾。 [深入瞭解](../../installation/using/client-console-availability-for-windows.md)。
+1. 複製客戶端控制台安裝程式(**setup-client-7.XX**, **YYYY.exe** 適用於v7或 **setup-client-6.XX**, **YYYY.exe** (v6.1)轉換為 **/datakit/nl/eng/jsp** 檔案夾。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 啟動Adobe Campaign伺服器(**net start nlserver6** 在Windows中， **/etc/init.d** 在Linux中)，然後執行命令 **nlserver pdump** 再次檢查是否有所有已啟用的模組。
 
@@ -189,7 +190,7 @@ ht-degree: 3%
 
 1. 測試 **nlserver web** 模組（使用URL）: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
-   此URL可讓您存取用戶端設定程式的下載頁面。 [深入瞭解](../../installation/using/client-console-availability-for-windows.md)。
+   此URL可讓您存取用戶端設定程式的下載頁面。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
 
    輸入 **內部** 進入存取控制頁面時，登入和相關密碼。
 

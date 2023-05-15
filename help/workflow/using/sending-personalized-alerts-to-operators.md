@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: 傳送個人化警示給營運商
-description: 瞭解如何向操作員發送個性化警報
+description: 了解如何傳送個人化警報給營運商
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -13,24 +14,24 @@ ht-degree: 2%
 
 # 傳送個人化警示給營運商{#sending-personalized-alerts-to-operators}
 
-![](../../assets/v7-only.svg)
 
-在此示例中，我們要向操作員發送警報，該操作員將包含開啟新聞簡報但未按一下該新聞稿所包含連結的配置檔案的名稱。
 
-配置檔案的名字和姓氏欄位連結到 **[!UICONTROL Recipients]** 目標維，而 **[!UICONTROL Alert]** 活動已連結到 **[!UICONTROL Operator]** 目標維。 因此，兩個目標維之間沒有可用的欄位來執行協調並檢索名字和姓氏欄位，並在「警報」活動中顯示它們。
+在此範例中，我們想傳送警報給運算子，運算子將包含開啟電子報但未點按其所包含連結之設定檔的名稱。
 
-該流程將按如下方式構建工作流：
+設定檔的名字和姓氏欄位會連結至 **[!UICONTROL Recipients]** 目標維度，而 **[!UICONTROL Alert]** 活動已連結至 **[!UICONTROL Operator]** 目標維度。 因此，兩個目標維度之間沒有可用的欄位，無法執行調解和擷取名字和姓氏欄位，以及在「警報」活動中顯示。
 
-1. 使用 **[!UICONTROL Query]** 活動到目標資料。
-1. 添加 **[!UICONTROL JavaScript code]** 將填充從查詢保存到實例變數。
-1. 使用 **[!UICONTROL Test]** 活動，以檢查人口數。
-1. 使用 **[!UICONTROL Alert]** 活動，根據 **[!UICONTROL Test]** 活動結果。
+程式是建立工作流程，如下所示：
+
+1. 使用 **[!UICONTROL Query]** 目標資料的活動。
+1. 新增 **[!UICONTROL JavaScript code]** 活動以從查詢儲存母體至例項變數。
+1. 使用 **[!UICONTROL Test]** 活動以檢查母體計數。
+1. 使用 **[!UICONTROL Alert]** 傳送警報給運算子的活動，視 **[!UICONTROL Test]** 活動結果。
 
 ![](assets/uc_operator_1.png)
 
-## 將填充保存到實例變數 {#saving-the-population-to-the-instance-variable}
+## 將母體儲存至執行個體變數 {#saving-the-population-to-the-instance-variable}
 
-將以下代碼添加到 **[!UICONTROL JavaScript code]** 的子菜單。
+將下列程式碼新增至 **[!UICONTROL JavaScript code]** 活動。
 
 ```
 var query = xtk.queryDef.create(  
@@ -44,30 +45,30 @@ var query = xtk.queryDef.create(
   var items = query.ExecuteQuery();
 ```
 
-確保Javascript代碼與工作流資訊對應：
+請確定Javascript程式碼與您的工作流程資訊對應：
 
-* 的 **[!UICONTROL queryDef schema]** 標籤應與查詢活動中使用的目標維的名稱相對應。
-* 的 **[!UICONTROL node expr]** 標籤應與要檢索的欄位的名稱相對應。
+* 此 **[!UICONTROL queryDef schema]** 標籤應與查詢活動中使用的目標維度名稱相對應。
+* 此 **[!UICONTROL node expr]** 標籤應對應至您要擷取之欄位的名稱。
 
 ![](assets/uc_operator_3.png)
 
-要檢索這些資訊，請執行以下步驟：
+若要擷取這些資訊，請遵循下列步驟：
 
-1. 按一下右鍵 **[!UICONTROL Query]** 活動，然後選擇 **[!UICONTROL Display the target]**。
+1. 以滑鼠右鍵按一下 **[!UICONTROL Query]** 活動，然後選取 **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
-1. 按一下右鍵清單，然後選擇 **[!UICONTROL Configure list]**。
+1. 以滑鼠右鍵按一下清單，然後選取 **[!UICONTROL Configure list]**.
 
    ![](assets/uc_operator_5.png)
 
-1. 以維和欄位名稱為目標的查詢顯示在清單中。
+1. 查詢目標維度和欄位名稱會顯示在清單中。
 
    ![](assets/uc_operator_6.png)
 
-## 測試人口數 {#testing-the-population-count}
+## 測試人口計數 {#testing-the-population-count}
 
-將以下代碼添加到 **[!UICONTROL Test]** 活動，檢查目標人口是否至少包含1個配置檔案。
+將下列程式碼新增至 **[!UICONTROL Test]** 活動，以檢查目標母體是否至少包含1個設定檔。
 
 ```
 var.recCount>0
@@ -77,9 +78,9 @@ var.recCount>0
 
 ## 設定警報 {#setting-up-the-alert}
 
-既然已將填充添加到具有所需欄位的實例變數中，則可以將這些資訊添加到 **[!UICONTROL Alert]** 的子菜單。
+現在，母體已新增至包含所需欄位的執行個體變數中，您可以將這些資訊新增至 **[!UICONTROL Alert]** 活動。
 
-為此，請將 **[!UICONTROL Source]** 頁籤：
+若要這麼做，請將新增至 **[!UICONTROL Source]** 標籤下列程式碼：
 
 ```
 <ul>
@@ -94,7 +95,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->的 **[!UICONTROL <%= item.target.recipient.@fieldName %>]** 命令允許您通過 **[!UICONTROL JavaScript code]** 的子菜單。\
->只要欄位已插入到JavaScript代碼中，就可以根據需要添加任意多個欄位。
+>此 **[!UICONTROL <%= item.target.recipient.@fieldName %>]** 命令可讓您透過 **[!UICONTROL JavaScript code]** 活動。\
+>只要欄位已插入JavaScript程式碼中，您就可以視需要新增欄位。
 
 ![](assets/uc_operator_8.png)

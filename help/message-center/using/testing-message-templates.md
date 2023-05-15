@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 測試交易式訊息範本
-description: 了解如何管理交易式訊息中的種子地址，以便在Adobe Campaign Classic中預覽和測試種子地址。
+description: 了解如何管理交易式訊息中的種子地址，以便在Adobe Campaign Classic中預覽和測試
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 測試交易式訊息範本 {#testing-message-templates}
 
-![](../../assets/v7-only.svg)
+
 
 一旦您 [訊息範本](../../message-center/using/creating-the-message-template.md) 已就緒，請依照下列步驟預覽並測試。
 

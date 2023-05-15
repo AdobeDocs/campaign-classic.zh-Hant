@@ -2,8 +2,9 @@
 product: campaign
 title: 移轉至Adobe Analytics Connector
 description: Campaign - Analytics Connector常見問題集
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 5%
@@ -12,7 +13,7 @@ ht-degree: 5%
 
 # 如何將現有Genesis整合移轉至Adobe Analytics Connector {#acc-aa-faq}
 
-![](../../assets/v7-only.svg)
+
 
 自Campaign Classicv7 21.1.3發行版本開始，已棄用Adobe Analytics Data Connector。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 

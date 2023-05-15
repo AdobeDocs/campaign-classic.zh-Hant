@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: 使用工作流程來匯入和匯出資料
-description: 了解如何使用Campaign Classic中的工作流程匯入和匯出資料。
+description: 了解如何使用Campaign的工作流程匯入和匯出資料
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 31%
 
 ---
 
 # 使用工作流程匯入和匯出資料 {#import-export-workflows}
 
-![](../../assets/common.svg)
+
 
 ## 收集資料 {#collecting-data-workflows}
 

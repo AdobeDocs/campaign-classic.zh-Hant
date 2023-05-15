@@ -2,9 +2,10 @@
 product: campaign
 title: 行銷活動範本
 description: 行銷活動範本
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 4%
@@ -12,8 +13,6 @@ ht-degree: 4%
 ---
 
 # 建立及設定行銷活動範本 {#campaign-templates}
-
-![](../../assets/v7-only.svg)
 
 所有行銷活動都以範本為基礎，範本會儲存主要特徵和功能。 行銷活動範本集中於 **[!UICONTROL Resources > Templates > Campaign templates]** 節點。 預設範本為標準範本。 它可讓您使用所有可用模組（檔案、工作、種子地址等）建立新促銷活動，但提供的模組取決於您的權限和Adobe Campaign平台的設定。
 
@@ -53,7 +52,7 @@ ht-degree: 4%
 
 1. 完成 **標籤** 欄位，按一下 **確定**.
 1. 根據您的需求建立工作流程。
-1. 按一下 **儲存**. 您的範本現在已可用於行銷活動。
+1. 按一下「**儲存**」。您的範本現在已可用於行銷活動。
 
 您也可以 **重複** 重複使用和調整其配置的預設模板。
 

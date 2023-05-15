@@ -2,9 +2,10 @@
 product: campaign
 title: 行銷活動傳遞
 description: 深入了解行銷活動傳遞
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -12,8 +13,6 @@ ht-degree: 2%
 ---
 
 # 行銷活動傳遞 {#marketing-campaign-deliveries}
-
-![](../../assets/v7-only.svg)
 
 傳遞可透過促銷活動控制面板、促銷活動工作流程或直接透過傳遞的概觀來建立。
 
@@ -27,7 +26,7 @@ ht-degree: 2%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的設定適用於不同的傳送類型：直接郵件、電子郵件、行動裝置通道。 [了解更多資訊](../../delivery/using/steps-about-delivery-creation-steps.md)。
+建議的設定適用於不同的傳送類型：直接郵件、電子郵件、行動裝置通道。 [了解更多](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 ## 開始傳送 {#starting-a-delivery}
 
@@ -122,7 +121,7 @@ ht-degree: 2%
 >
 >此模式為小文檔保留。
 
-在促銷活動中，您也可以參考其他項目，例如促銷優惠券、與特定分店或商店相關的特別優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳送相關聯。 [了解更多資訊](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+在促銷活動中，您也可以參考其他項目，例如促銷優惠券、與特定分店或商店相關的特別優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳送相關聯。 [了解更多](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 >[!NOTE]
 >

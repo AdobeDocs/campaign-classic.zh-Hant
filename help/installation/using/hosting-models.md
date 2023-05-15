@@ -2,11 +2,12 @@
 product: campaign
 title: 託管模型
 description: 探索Campaign托管模型
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 託管模型{#hosting-models}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign提供三種托管模式的選擇，提供彈性和自由，可選擇最佳模式或模型以符合業務需求。
 
@@ -48,7 +49,7 @@ Adobe Campaign可內部部署：Adobe Campaign的所有元件（包括使用者�
 * 閱讀 [相容性矩陣](../../rn/using/compatibility-matrix.md) 列出Adobe Campaign支援的所有系統和元件版本。
 * 視您的環境而定，請閱讀 [Windows的先決條件](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) 和 [Linux的必要條件](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
 * 了解與資料庫引擎相關的建議 [在本節](../../installation/using/database.md).
-* 檢查伺服器上是否安裝了所需的資料庫存取層，並可從Adobe Campaign帳戶存取。 [深入瞭解](../../installation/using/application-server.md)。
+* 檢查伺服器上是否安裝了所需的資料庫存取層，並可從Adobe Campaign帳戶存取。 [了解更多](../../installation/using/application-server.md)。
 * 在某些進程需要與其他進程通信或訪問LAN和Internet時配置您的網路。 這意味著需要為這些進程開啟某些TCP埠。 [深入了解](../../installation/using/network-configuration.md) 關於網路配置要求。
 * 閱讀 [Campaign安全性和隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html).
 * 檢查評估內部部署硬體需求的一般准則 [本文](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html).

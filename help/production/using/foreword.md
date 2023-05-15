@@ -2,11 +2,12 @@
 product: campaign
 title: 前言
 description: 前言
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: c9e92fec-383e-46ba-bce1-183ac8f637de
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 前言{#foreword}
 
-![](../../assets/v7-only.svg)
+
 
 本檔案詳細說明Adobe Campaign的生產程式：配置、監控、升級過程、資料處理、資料庫維護過程和建議。 本檔案結尾提供疑難排解章節。
 

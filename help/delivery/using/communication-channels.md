@@ -2,18 +2,20 @@
 product: campaign
 title: 通訊頻道
 description: 建立傳遞，以在不同通道上傳送個人化訊息。
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1204'
+ht-degree: 20%
 
 ---
 
 # 通訊頻道{#communication-channels}
 
-![](../../assets/common.svg)
+
 
 透過Adobe Campaign，您可以傳送跨通道行銷活動，包括電子郵件、簡訊、LINE訊息、推播通知和直接郵件，並使用各種專用的行銷活動來評估其成效 [報告](../../reporting/using/delivery-reports.md). 這些訊息是透過傳遞進行設計和傳送，而且可針對每位收件者進行個人化。
 
@@ -21,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 在[本節](about-deliverability.md)了解更多資訊。
+>Adobe Campaign提供一套工具，可監控您的傳遞能力並最佳化電子郵件傳送。 在[本章節](about-deliverability.md)了解更多資訊。
 
 傳遞傳送可透過準備傳遞和/或在工作流程程式中傳送來自動化。 如需工作流程中傳送類型活動的詳細資訊，請參閱 [本節](../../workflow/using/about-action-activities.md).
 

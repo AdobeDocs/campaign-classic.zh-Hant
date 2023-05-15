@@ -2,11 +2,12 @@
 product: campaign
 title: 追蹤記錄檔問題
 description: 追蹤記錄檔問題
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
@@ -15,7 +16,7 @@ ht-degree: 13%
 
 # 追蹤記錄檔問題{#tracking-logs-issues}
 
-![](../../assets/v7-only.svg)
+
 
 追蹤記錄檔無法轉送的原因有多種。 建議您檢查下列資訊：
 

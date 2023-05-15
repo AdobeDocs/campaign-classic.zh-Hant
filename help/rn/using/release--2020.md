@@ -2,11 +2,13 @@
 product: campaign
 title: 2020 版本
 description: 進一步瞭解 Campaign Classic 2020 版本
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
+hidefromtoc: true
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '6601'
 ht-degree: 73%
@@ -15,7 +17,7 @@ ht-degree: 73%
 
 # 2020 版本{#release-2020}
 
-![](../../assets/v7-only.svg)
+
 
 
 ## 第 20.3 發行版本{#release-20-3}
@@ -189,7 +191,7 @@ _2021年 4 月 15 日_
 >
 > 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
-_2021年 3 月 31 日_
+_2021年3月31日_
 
 **功能改進**
 
@@ -505,7 +507,7 @@ _2021年 4 月 15 日_
 >
 > 連線 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下載新版本。 瞭解如何在本頁](../../installation/using/client-console-availability-for-windows.md)中向所有終端使用者[建議主控台更新。
 
-_2021年 3 月 22 日_
+_2021年3月22日_
 
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
 
@@ -535,7 +537,7 @@ _2020 年 5 月 6 日_
 
 ### ![](assets/do-not-localize/red_2.png)版本 20.1.2 - 版本編號 9123{#release-20-1-2-build-9123}
 
-_2020 年 3 月 13 日_
+_2020年3月13日_
 
 * 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 

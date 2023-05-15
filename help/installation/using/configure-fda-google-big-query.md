@@ -2,11 +2,12 @@
 product: campaign
 title: 設定Google BigQuery的存取權
 description: 了解如何在FDA中設定Google BigQuery的存取權
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 5ad84f77b0618f2e8b948a3712bc106c19b03788
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 設定Google BigQuery的存取權 {#configure-fda-google-big-query}
 
-![](../../assets/v7-only.svg)
+
 
 使用Adobe Campaign Classic **同盟資料存取** (FDA)處理儲存於外部資料庫的資訊的選項。 請依照下列步驟，設定 [!DNL Google BigQuery].
 

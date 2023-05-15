@@ -2,20 +2,22 @@
 product: campaign
 title: 管理優惠方案簡報
 description: 管理優惠方案簡報
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 管理優惠方案簡報{#managing-offer-presentation}
 
-![](../../assets/common.svg)
+
 
 ## 簡報規則概觀 {#presentation-rules-overview}
 
@@ -73,7 +75,7 @@ ht-degree: 0%
 >
 >您也可以使用非標準表格。 如果您想使用特定目標維度，則需要使用目標對應來建立表格和專用環境。 有關詳細資訊，請參閱 [建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-### 時段 {#period}
+### 期間 {#period}
 
 這是從優惠方案展示日期開始的滑動期間。 它為優惠方案的有效性設定了時限。 該規則不適用於在此期間之後提出的建議。
 
@@ -86,7 +88,7 @@ ht-degree: 0%
 
 ![](assets/offer_typology_010.png)
 
-### 命題數 {#number-of-propositions}
+### 主張數量 {#number-of-propositions}
 
 可以設定在排除有關報價之前可以提出的最高數量的建議。
 

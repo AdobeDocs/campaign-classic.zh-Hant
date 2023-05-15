@@ -2,18 +2,18 @@
 product: campaign
 title: 設計和執行行銷活動
 description: 定義、最佳化、執行和分析行銷活動
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 22%
 
 ---
 
 # 設計和執行行銷活動{#designing-marketing-campaigns}
 
-![](../../assets/v7-only.svg)
 
 Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動。 Adobe Campaign就像是行銷策略的統一訂單與執行中心。 有關詳細資訊，請參閱 [存取行銷活動](../../distributed/using/accessing-campaigns.md) 和 [建立行銷活動](../../campaign/using/setting-up-marketing-campaigns.md).
 

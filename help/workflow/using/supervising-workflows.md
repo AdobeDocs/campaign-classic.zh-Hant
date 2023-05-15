@@ -1,63 +1,64 @@
 ---
 product: campaign
 title: 監督工作流程
-description: 瞭解如何監督市場活動工作流
+description: 了解如何監督Campaign工作流程
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
-# 用例：監控工作流{#supervising-workflows}
+# 使用案例：監控工作流程{#supervising-workflows}
 
-![](../../assets/v7-only.svg)
 
-此使用案例詳細說明了如何建立工作流，該工作流允許您監視「已暫停」、「已停止」或「有錯誤」的一組工作流的狀態。
 
-其目的是：
+此使用案例詳細說明了如何建立工作流程，讓您監控「暫停」、「停止」或「有錯誤」之工作流程集的狀態。
 
-* 使用工作流監視一組業務工作流。
-* 通過「傳遞」活動向主管發送消息。
+其目的為：
 
-要監視一組工作流的狀態，您需要執行以下步驟：
+* 使用工作流程來監視一組業務工作流程。
+* 透過「傳送」活動傳送訊息給主管。
 
-1. 建立監視工作流。
-1. 編寫JavaScript以確定工作流是暫停、停止還是出錯。
-1. 建立 **[!UICONTROL Test]** 的子菜單。
-1. 準備交貨模板。
+若要監控一組工作流程的狀態，您需要遵循下列步驟：
+
+1. 建立監控工作流程。
+1. 撰寫JavaScript以判斷工作流程是否暫停、停止或有錯誤。
+1. 建立 **[!UICONTROL Test]** 活動。
+1. 準備傳遞範本。
 
 >[!NOTE]
 >
->除工作流外，市場活動 **工作流熱圖** 允許您詳細分析當前正在運行的工作流。 有關詳細資訊，請參閱 [專用段](heatmap.md)。
+>除了工作流程外，Campaign **工作流程熱度圖** 可讓您詳細分析目前執行的工作流程。 有關詳細資訊，請參閱 [專屬區段](heatmap.md).
 >
->有關如何 **監視工作流的執行**，請參閱 [此部分](monitoring-workflow-execution.md)。
+>有關如何 **監視工作流程的執行**，請參閱 [本節](monitoring-workflow-execution.md).
 
-## 步驟1:建立監視工作流 {#step-1--creating-the-monitoring-workflow}
+## 步驟1:建立監控工作流程 {#step-1--creating-the-monitoring-workflow}
 
-我們要監視的工作流資料夾 **&quot;自定義工作流&quot;** 儲存在 **管理>生產>技術工作流** 的下界。 此資料夾包含一組業務工作流。
+我們要監控的工作流程資料夾為 **&quot;CustomWorkflows&quot;** 儲存在 **管理>生產>技術工作流程** 節點。 此資料夾包含一組業務工作流程。
 
-的 **監視工作流** 儲存在「技術工作流」資料夾的根目錄中。 使用的標籤 **&quot;監視&quot;**。
+此 **監控工作流程** 儲存在「技術工作流程」資料夾的根目錄中。 使用的標籤為 **&quot;監視&quot;**.
 
-以下架構顯示活動的順序：
+下列結構會顯示活動的順序：
 
 ![](assets/uc_monitoring_workflow_overview.png)
 
-此工作流由以下組成：
+此工作流程由下列部分組成：
 
-* a **&quot;開始&quot;** 的子菜單。
-* a **&quot;JavaScript代碼&quot;** 用於分析業務工作流資料夾的活動。
-* a **&quot;Test&quot;** 活動，將交貨發送給主管或重新啟動工作流。
-* a **&quot;交付&quot;** 負責消息佈局的活動。
-* a **&quot;等待&quot;** 控制工作流小版本之間提前期的活動。
+* a **&quot;開始&quot;** 活動。
+* a **&quot;JavaScript程式碼&quot;** 負責分析業務工作流資料夾的活動。
+* a **&quot;測試&quot;** 向主管發送傳遞或重新啟動工作流的活動。
+* a **&quot;傳送&quot;** 負責訊息配置的活動。
+* a **&quot;等待&quot;** 控制工作流迭代之間提前期的活動。
 
-## 步驟2:編寫JavaScript {#step-2--writing-the-javascript}
+## 步驟2:撰寫JavaScript {#step-2--writing-the-javascript}
 
-JavaScript代碼的第一部分與 **查詢(queryDef)** 它允許您識別具有「pause」(@state == 13)、「error」(@failed == 1)或「stopped」(@state == 20)狀態的工作流。
+JavaScript程式碼的第一部分與 **查詢(queryDef)** 這可讓您識別狀態為「pause」(@state == 13)、「error」(@failed == 1)或「stopped」(@state == 20)的工作流程。
 
-的 **內部名稱** 在以下條件下提供了要監視的工作流資料夾：
+此 **內部名稱** 在以下條件中提供要監視的工作流資料夾：
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -89,11 +90,11 @@ var queryWkfError = xtk.queryDef.create(
 var ndWkfError = queryWkfError.ExecuteQuery(); 
 ```
 
-JavaScript代碼的第二部分允許您 **顯示每個工作流的消息** 基於查詢期間恢復的狀態。
+JavaScript程式碼的第二部分可讓您 **顯示每個工作流的訊息** 根據查詢期間恢復的狀態。
 
 >[!NOTE]
 >
->建立的字串必須載入到工作流的事件變數中。
+>建立的字串必須載入工作流程的事件變數中。
 
 ```
 for each ( var wkf in ndWkfError.workflow ) 
@@ -115,60 +116,60 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## 第3步：建立「Test」活動 {#step-3--creating-the--test--activity}
+## 步驟3:建立「測試」活動 {#step-3--creating-the--test--activity}
 
-「Test」活動允許您根據「等待」活動確定是否需要發送交貨或監視工作流是否需要運行另一個週期。
+「測試」活動可讓您判斷是否需要傳送傳送，或監控工作流程是否需要根據「等待」活動執行其他週期。
 
-將交貨發送給主管 **如果三個事件變數「vars.strWorkflowError」、「vars.strWorkflowPaused」或「vars.strWorkflowStop」中至少有一個不是void。**
+將傳送給主管 **如果三個事件變數「vars.strWorkflowError」、「vars.strWorkflowPaused」或「vars.strWorkflowStop」中至少有一個為非void。**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-可以將「等待」活動配置為定期重新啟動監視工作流。 對於這個用例， **等待時間設定為1小時**。
+「等待」活動可設定為定期重新啟動監控工作流程。 針對此使用案例， **等待時間設定為1小時**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## 第4步：準備交貨 {#step-4--preparing-the-delivery}
+## 步驟4:準備傳送 {#step-4--preparing-the-delivery}
 
-「交付」活動基於 **交貨模板** 儲存在 **資源>模板>交付模板** 的下界。
+「傳送」活動以 **傳遞範本** 儲存於 **資源>範本>傳送範本** 節點。
 
-此模板必須包括：
+此範本必須包括：
 
-* **主管的電子郵件地址**。
-* **HTML內容** 的子菜單。
+* **主管的電子郵件地址**.
+* **HTML內容** ，以插入個人化文字。
 
    ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
    聲明的三個變數(WF_Stop、WF_Paused、WF_Error)與三個工作流事件變數匹配。
 
-   這些變數必須在 **變數** 的子菜單。
+   這些變數必須在 **變數** 標籤。
 
-   恢復 **工作流事件變數的內容**，您需要聲明特定於傳遞的變數，這些變數將使用JavaScript代碼返回的值進行初始化。
+   要恢復 **工作流程事件變數的內容**，您需要宣告傳送的特定變數，這些變數將會以JavaScript程式碼傳回的值初始化。
 
-   傳遞模板具有以下內容：
+   傳遞範本包含下列內容：
 
    ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-建立和批准模板後，您需要配置 **交貨** 活動：
+建立並核准範本後，您需要設定 **傳送** 活動：
 
-* 將「交貨」活動連結到先前建立的交貨模板。
-* 將工作流的事件變數連結到特定於交付模板的事件變數。
+* 將「傳送」活動連結至先前建立的傳送範本。
+* 將工作流程的事件變數連結至傳送範本專屬的事件變數。
 
-按兩下 **交貨** 活動，然後選擇以下選項：
+按兩下 **傳送** 活動，並選取下列選項：
 
-* 交貨：選擇 **新建，從模板建立**，然後選擇以前建立的交貨模板。
-* 對於 **收件人和內容** 欄位，選擇 **在交貨中指定**。
-* 要執行的操作：選擇 **準備並啟動**。
-* 取消選中 **處理錯誤** 的雙曲餘切值。
+* 傳送：選取 **新建，從範本建立**，並選取先前建立的傳送範本。
+* 若 **收件者與內容** 欄位，選擇 **在傳送中指定**.
+* 要執行的動作：選取 **準備和開始**.
+* 取消核取 **處理錯誤** 選項。
 
    ![](assets/uc_monitoring_workflow_optionmodel.png)
 
-* 轉到 **指令碼** 頁籤 **交貨** 活動，添加三 **字串** 通過個性化欄位菜單鍵入變數。
+* 前往 **指令碼** 的 **傳送** 活動，新增三個 **字串** 透過個人化欄位功能表輸入變數。
 
    ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
    ![](assets/uc_monitoring_workflow_linkvariables.png)
 
-   聲明的三個變數為：
+   宣告的三個變數為：
 
    ```
    delivery.variables._var[0].stringValue = vars.strWorkflowError;
@@ -176,6 +177,6 @@ vars.strWorkflowStop = strStop;
    delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
    ```
 
-啟動此監視工作流後，它會向收件人發送以下摘要：
+此監控工作流程啟動後，會傳送下列摘要給收件者：
 
 ![](assets/uc_monitoring_workflow_mailfinal.png)

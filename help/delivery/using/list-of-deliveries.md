@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: 存取傳遞清單
-description: 瞭解如何訪問已建立交貨的清單
+description: 了解如何存取已建立的傳送清單
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
@@ -13,21 +15,21 @@ ht-degree: 10%
 
 # 存取傳遞清單 {#list-of-deliveries}
 
-![](../../assets/common.svg)
 
-您可以通過 **[!UICONTROL Campaign Management > Deliveries]** 的子目標。
+
+您可以透過 **[!UICONTROL Campaign Management > Deliveries]** 樹的節點。
 
 ![](assets/deliveries-list.png)
 
-預設情況下，交貨清單包含在選定節點中建立的交貨的名稱和狀態。 它還顯示要成功發送、處理和發送的消息數。
+依預設，傳送清單包含所選節點中建立之傳送的名稱和狀態。 它也會顯示要成功傳送、處理及傳送的訊息數量。
 
-* 數 **[!UICONTROL Messages to send]** 與分析後和交付前的目標接收人數相對應。
-* 中的消息數 **[!UICONTROL Success]** 列對應於伺服器發送的和收件人接收的消息數。
-* 數 **[!UICONTROL Processed]** 消息對應於接收的消息數以及出錯的消息數。
+* 數量 **[!UICONTROL Messages to send]** 與分析後和傳送前定位的收件者數量相對應。
+* 中的訊息數 **[!UICONTROL Success]** 欄對應於伺服器所傳送及收件者所接收的訊息數目。
+* 數量 **[!UICONTROL Processed]** 消息與接收的消息數以及帶有錯誤的消息數相對應。
 
 >[!NOTE]
 >
->對於大型交貨，您可能希望更新這些值。 要執行此操作，請選擇有問題的交貨，然後按一下右鍵它。 選擇 **[!UICONTROL Action > Recompute delivery and tracking indicators...]** 然後使用嚮導更新此資訊。
+>若是大型傳送，您可能想要更新這些值。 若要這麼做，請選取相關的傳送，然後以滑鼠右鍵按一下。 選擇 **[!UICONTROL Action > Recompute delivery and tracking indicators...]** 然後使用嚮導更新此資訊。
 
 **相關主題：**
 

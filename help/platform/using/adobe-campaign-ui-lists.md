@@ -1,21 +1,22 @@
 ---
 product: campaign
-title: 管理和自定義清單
-description: 瞭解如何瀏覽和配置清單
+title: 管理和自訂清單
+description: 了解如何瀏覽和設定清單
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 87%
 
 ---
 
-# 管理和自定義清單{#manage-and-customize-lists}
+# 管理和自訂清單{#manage-and-customize-lists}
 
-![](../../assets/v7-only.svg)
 
-您可以使用瀏覽器訪問市場活動資料庫中的記錄清單。 您可以過濾這些清單、運行搜索、添加資訊、過濾和排序資料。
+
+您可以使用瀏覽器存取Campaign資料庫中的記錄清單。 您可以篩選這些清單、執行搜尋、新增資訊、篩選及排序資料。
 
 ## 計數記錄 {#counting-records}
 
@@ -45,7 +46,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在清單配置窗口中，按一下 **[!UICONTROL Advanced parameters]** （左下）並更改要檢索的行數。
+在清單配置窗口中，按一下 **[!UICONTROL Advanced parameters]** （左下），並變更要擷取的行數。
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -55,7 +56,7 @@ ht-degree: 87%
 
 有兩個方法可在清單中加入欄。
 
-您可以從記錄的詳細資訊快速將列添加到清單。 操作步驟：
+您可以從記錄的詳細資訊快速將欄新增至清單。 操作步驟：
 
 1. 從詳細資料畫面中，以滑鼠右鍵按一下 要在欄中顯示的欄位。
 1. 選取 **[!UICONTROL Add in the list]**。
@@ -80,9 +81,9 @@ ht-degree: 87%
    >
    >標籤會按表格顯示且以字母順序排列。
    >
-   >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱 [此部分](#sorting-a-list)。
+   >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱 [本節](#sorting-a-list).
    >
-   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[了解更多資訊](#configuring-lists)。
+   >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[了解更多](#configuring-lists)。
    >
    >您也可以排序和篩選資料。請參閱[本節](../../platform/using/filtering-options.md)。
 
@@ -101,7 +102,7 @@ ht-degree: 87%
 
 您可以建立新的欄來顯示清單中的其他欄位。操作步驟：
 
-1. 按一下 **[!UICONTROL Configure the list]** 清單右側。
+1. 按一下 **[!UICONTROL Configure the list]** 在清單的右下方。
 1. 按一下 **[!UICONTROL Add]**，以在清單中顯示新欄位。
 
 ### 移除欄 {#remove-a-column}
@@ -131,7 +132,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
-## 保存清單配置 {#saving-a-list-configuration}
+## 儲存清單設定 {#saving-a-list-configuration}
 
 清單設定是在工作站層級本機定義。清除本機快取時，會停用本機設定。
 
@@ -147,11 +148,11 @@ ht-degree: 87%
 
 1. 以滑鼠右鍵按一下包含顯示資料的資料夾。
 1. 選取 **[!UICONTROL Properties]**。
-1. 按一下 **[!UICONTROL Advanced settings]** 然後在 **[!UICONTROL Configuration]** 的子菜單。
+1. 按一下 **[!UICONTROL Advanced settings]** ，然後在 **[!UICONTROL Configuration]** 欄位。
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. 按一下 **[!UICONTROL OK]** 然後按一下 **[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL OK]** 然後按一下 **[!UICONTROL Save]**.
 
 然後將此設定套用至另一個 **Delivery** 資料夾：
 
@@ -161,11 +162,11 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## 導出清單 {#exporting-a-list}
+## 匯出清單 {#exporting-a-list}
 
 若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
 
-有關進出口功能的使用說明，請參閱 [通用進出口](../../platform/using/about-generic-imports-exports.md)。
+有關匯入及匯出功能之使用，請參閱 [一般匯入和匯出](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
@@ -179,7 +180,7 @@ ht-degree: 87%
 
 您也可以設定排序或合併排序準則。要執行此操作，請遵循下列步驟：
 
-1. **[!UICONTROL Configure list]** 清單右側。
+1. **[!UICONTROL Configure list]** 清單右邊。
 
    ![](assets/s_ncs_user_configure_list.png)
 
@@ -196,10 +197,10 @@ ht-degree: 87%
 
 1. 按一下 **[!UICONTROL Ok]** 確認此設定，並在清單中呈現結果。
 
-### 搜索元素 {#running-a-search}
+### 搜尋元素 {#running-a-search}
 
 您可使用欄位清單上方的 **[!UICONTROL Search]** 欄位執行編輯器中可用欄位的搜尋。按下鍵盤上的 **Enter**，或瀏覽清單。符合搜尋文字的欄位將以粗體呈現。
 
 >[!NOTE]
 >
->您可以建立篩選器，只顯示清單中的部分資料。[了解更多資訊](../../platform/using/creating-filters.md)。
+>您可以建立篩選器，只顯示清單中的部分資料。[了解更多](../../platform/using/creating-filters.md)。

@@ -1,88 +1,90 @@
 ---
 product: campaign
-title: 在報表中使用上下文
-description: 瞭解如何在報告中使用上下文
+title: 在報表中使用內容
+description: 了解如何在報表中使用內容
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 1%
 
 ---
 
-# 在報表中使用上下文{#using-the-context}
+# 在報表中使用內容{#using-the-context}
 
-![](../../assets/common.svg)
 
-當要以 **[!UICONTROL tables]** 或 **[!UICONTROL charts]**&#x200B;它可以從兩個來源中獲取：新查詢(請參閱 [定義資料的直接篩選器](#defining-a-direct-filter-on-data))或報告上下文(請參閱 [使用上下文資料](#using-context-data))。
 
-## 定義資料的直接篩選器 {#defining-a-direct-filter-on-data}
+若您想以 **[!UICONTROL tables]** 或 **[!UICONTROL charts]**，可從兩個來源取用：新查詢(請參閱 [定義資料的直接篩選](#defining-a-direct-filter-on-data))或報表內容(請參閱 [使用內容資料](#using-context-data))。
+
+## 定義資料的直接篩選 {#defining-a-direct-filter-on-data}
 
 ### 篩選資料 {#filtering-data}
 
-使用 **[!UICONTROL Query]** 生成報告時，類型活動不是必需的。 資料可以直接在構成報告的表和圖表中過濾。
+使用 **[!UICONTROL Query]** 建立報表時，「類型活動」不是必填項目。 您可以直接在組成報表的表格和圖表中篩選資料。
 
-這樣，您就可以通過 **[!UICONTROL Page]** 的子菜單。
+這可讓您選取要直接透過 **[!UICONTROL Page]** 報表的活動。
 
-要執行此操作，請按一下 **[!UICONTROL Filter data...]** 連結 **[!UICONTROL Data]** 頁籤：此連結允許您訪問表達式編輯器來定義要分析的資料的查詢。
+若要這麼做，請按一下 **[!UICONTROL Filter data...]** 連結 **[!UICONTROL Data]** 標籤：此連結可讓您存取運算式編輯器，以定義要分析之資料的查詢。
 
 ![](assets/reporting_filter_data_from_page.png)
 
-### 示例：在圖表中使用篩選器 {#example--use-a-filter-in-a-chart}
+### 範例：在圖表中使用篩選器 {#example--use-a-filter-in-a-chart}
 
-在下例中，我們希望圖表僅顯示居住在法國並在年內購買的收件人配置檔案。
+在下列範例中，我們希望圖表只顯示居住在法國的收件者設定檔，以及當年購買的收件者設定檔。
 
-要定義此篩選器，請在圖表中放置一個頁面並對其進行編輯。 按一下 **[!UICONTROL Filter data]** 連結並建立與要顯示的資料匹配的篩選器。 有關在Adobe Campaign構建查詢的詳細資訊，請參閱 [此部分](../../platform/using/about-queries-in-campaign.md)。
+若要定義此篩選器，請在圖表中放置頁面並加以編輯。 按一下 **[!UICONTROL Filter data]** 連結，並建立符合您要顯示之資料的篩選器。 如需在Adobe Campaign中建立查詢的詳細資訊，請參閱 [本節](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
-在此，我們要按所選收件人所在城市顯示分類。
+在此，我們要依所選收件者的城市來顯示劃分。
 
 ![](assets/reporting_graph_with_2vars.png)
 
-渲染將如下所示：
+呈現會如下所示：
 
 ![](assets/reporting_graph_with_2vars_preview.png)
 
-### 示例：在透視表中使用篩選器 {#example--use-a-filter-in-a-pivot-table}
+### 範例：在透視表中使用篩選器 {#example--use-a-filter-in-a-pivot-table}
 
-在本示例中，篩選器允許您在透視表中僅顯示非巴黎客戶，而無需事先使用另一個查詢。
+在此範例中，篩選器可讓您在樞紐表格中僅顯示非巴黎客戶，而不預先使用其他查詢。
 
 應用以下步驟：
 
-1. 在圖表中放置一個頁面並對其進行編輯。
-1. 建立透視表。
-1. 轉到 **[!UICONTROL Data]** 頁籤，然後選擇要使用的多維資料集。
-1. 按一下 **[!UICONTROL Filter data...]** 連結並定義以下查詢，以從公司清單中刪除Adobe。
+1. 將頁面放入圖表中並進行編輯。
+1. 建立樞紐分析表。
+1. 前往 **[!UICONTROL Data]** 頁簽，然後選擇要使用的多維資料集。
+1. 按一下 **[!UICONTROL Filter data...]** 連結並定義下列查詢，以從公司清單中移除Adobe。
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
-只有符合篩選條件的收件人才會出現在報告中。
+只有符合篩選條件的收件者才會出現在報表中。
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## 使用上下文資料 {#using-context-data}
+## 使用內容資料 {#using-context-data}
 
-表示以 **[!UICONTROL table]** 或 **[!UICONTROL chart]**，資料可以來自報表上下文。
+以 **[!UICONTROL table]** 或 **[!UICONTROL chart]**，資料可來自報表內容。
 
-在包含表或圖表的頁中， **[!UICONTROL Data]** 頁籤，以選擇資料源。
+在包含表格或圖表的頁面中， **[!UICONTROL Data]** 索引標籤可讓您選取資料來源。
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* 的 **[!UICONTROL New query]** 選項，可生成用於收集資料的查詢。 有關此內容的詳細資訊，請參閱 [定義資料的直接篩選器](#defining-a-direct-filter-on-data)。
-* 的 **[!UICONTROL Context data]** 選項，您可以使用輸入資料：報告的上下文與包含圖表或表的頁面的入站轉換中包含的資訊一致。 例如，此上下文可包含通過 **[!UICONTROL Query]** 放在 **[!UICONTROL Page]** 活動，您需要為其指定報表所涉及的表和欄位。
+* 此 **[!UICONTROL New query]** 選項可讓您建立查詢以收集資料。 有關詳細資訊，請參閱 [定義資料的直接篩選](#defining-a-direct-filter-on-data).
+* 此 **[!UICONTROL Context data]** 選項可讓您使用輸入資料：報表的上下文與包含圖表或表格之頁面的入站轉變中包含的資訊一致。 例如，此內容可能包含透過 **[!UICONTROL Query]** 放在 **[!UICONTROL Page]** 活動，而您需要指定報表所關注的表格和欄位。
 
-例如，在查詢框中，為收件人生成以下查詢：
+例如，在查詢方塊中，為收件者建立下列查詢：
 
 ![](assets/s_ncs_advuser_report_datasource_2.png)
 
-然後在報告中指明資料的來源，在這種情況下： **[!UICONTROL Data from the context]**。
+然後在報表中指出資料的來源，在此情況下： **[!UICONTROL Data from the context]**.
 
-自動推斷資料位置。 如有必要，可強制資料路徑。
+資料位置會自動推斷。 如有必要，您可以強制資料路徑。
 
 ![](assets/s_ncs_advuser_report_datasource_4.png)
 
-選擇統計資訊將關注的資料時，可用欄位與查詢中指定的資料一致。
+當您選擇統計資訊將關注的資料時，可用欄位與查詢中指定的資料一致。
 
 ![](assets/s_ncs_advuser_report_datasource_1.png)

@@ -2,11 +2,13 @@
 product: campaign
 title: 設定IMS
 description: 了解如何透過Adobe ID連線
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # 設定IMS{#configuring-ims}
 
-![](../../assets/common.svg)
+
 
 >[!IMPORTANT]
 >
@@ -30,7 +32,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->請確定您的使用者已連結至將與Adobe Campaign同步的Adobe Experience Cloud群組。 [了解更多資訊](#configuring-the-external-account)。
+>請確定您的使用者已連結至將與Adobe Campaign同步的Adobe Experience Cloud群組。 [了解更多](#configuring-the-external-account)。
 
 ## 更新主控台 {#updating-the-console}
 

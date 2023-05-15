@@ -2,11 +2,12 @@
 product: campaign
 title: 同步化網站應用程式
 description: 了解如何將Web應用程式與ACS Connector同步
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # 同步化網站應用程式{#synchronizing-web-applications}
 
-![](../../assets/v7-only.svg)
+
 
 在此使用案例中，我們將使用Campaign Standard傳送通訊，其中包括Campaign v7 Web應用程式的連結。 當收件者點按電子郵件中的連結時，Web應用程式會顯示一個表單，其中包含預先載入收件者資料的數個欄位，以及電子報的訂閱連結。 收件者可以更新其資料並訂閱服務。 此設定檔將在Campaign v7中更新，且資訊將以Campaign Standard複製。
 

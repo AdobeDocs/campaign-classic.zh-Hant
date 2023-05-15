@@ -2,11 +2,12 @@
 product: campaign
 title: 訊息設計常見問題集
 description: Campaign Classic 常見問題集
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # 訊息設計常見問題集 {#design-messages-faq}
 
-![](../../assets/v7-only.svg)
+
 
 探索使用 Adobe Campaign 設計全通路訊息的重要步驟。
 

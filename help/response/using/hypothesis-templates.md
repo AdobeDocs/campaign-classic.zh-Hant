@@ -2,11 +2,13 @@
 product: campaign
 title: 假設範本
 description: 了解如何在Campaign回應管理員中建立假設範本
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # 假設範本{#hypothesis-templates}
 
-![](../../assets/common.svg)
+
 
 ## 建立假設模型 {#creating-a-hypothesis-model}
 
@@ -111,7 +113,7 @@ ht-degree: 2%
    >此外，自動產生的工作流程不得修改。 在以後的計算中，不會考慮任何最終修改。\
    >如果您已核取此選項，請在執行工作流程後將其刪除。
 
-### 交易 {#transactions}
+### 交易數 {#transactions}
 
 此索引標籤包含各種欄位和表格，可讓您以交易方式儲存收件者反應的歷史記錄。 請參閱 [節](../../configuration/using/about-schema-reference.md) 有關專用於響應管理的表的詳細資訊。
 

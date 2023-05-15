@@ -1,21 +1,22 @@
 ---
 product: campaign
 title: 轉移至中間來源
-description: 瞭解有關轉移到中間採購工作流的詳細資訊
+description: 進一步了解轉移至中間來源工作流程
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
 
 # 轉移至中間來源{#transfer-to-mid-sourcing}
 
-![](../../assets/v7-only.svg)
 
-下面詳細介紹的工作流隨 **轉移到中間採購** 預設情況下為模組。 有關本模組的詳細資訊，請參閱 [Campaign Classicv7安裝指南](../../installation/using/mid-sourcing-deployment.md)。
+
+以下詳細說明的工作流程會與 **轉移至中間來源** 模組。 有關此模組的詳細資訊，請參閱 [Campaign Classicv7安裝指南](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -25,14 +26,14 @@ ht-degree: 7%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">中間採購（交貨計數器）</span> <br /> </td> 
-   <td> <span class="uicontrol">預設MidSourcingDlv</span> <br /> </td> 
-   <td> <p>此工作流將收集中間採購伺服器上交貨的計數資訊。 盤點資訊包括一般交貨指標，如發送的交貨數量等。</p> <p>不包括開啟等跟蹤資訊。</p> <p>預設情況下，每10分鐘觸發一次。</p> </td> 
+   <td> <span class="uicontrol">中間來源（交貨計數器）</span> <br /> </td> 
+   <td> <span class="uicontrol">defaultMidSourcingDlv</span> <br /> </td> 
+   <td> <p>此工作流程會收集中間來源伺服器上傳送的計數資訊。 計數資訊包括一般傳送指標，例如傳送的傳送數量等。</p> <p>不包含開啟等追蹤資訊。</p> <p>預設會每十分鐘觸發一次。</p> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">中間採購（交貨日誌）</span> <br /> </td> 
-   <td> <span class="uicontrol">預設MidSourcingLog</span> <br /> </td> 
-   <td> 此工作流將收集中間採購伺服器上的交貨日誌。 預設情況下，每小時觸發一次。<br /> </td> 
+   <td> <span class="uicontrol">中間來源（傳送記錄檔）</span> <br /> </td> 
+   <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
+   <td> 此工作流程會收集中間來源伺服器上的傳送記錄。 預設會每小時觸發一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

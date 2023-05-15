@@ -2,9 +2,11 @@
 product: campaign
 title: 建立種子地址
 description: 了解如何建立和使用種子地址
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 建立種子地址{#creating-seed-addresses}
 
-![](../../assets/common.svg)
+
 
 種子地址不是透過標準設定檔和目標來管理，而是在Adobe Campaign階層的專用節點中 **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 

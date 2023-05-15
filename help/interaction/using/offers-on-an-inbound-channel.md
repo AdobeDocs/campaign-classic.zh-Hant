@@ -2,11 +2,13 @@
 product: campaign
 title: 傳入頻道上的優惠
 description: 傳入頻道上的優惠
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 6eaf7490f1be913986af2924017d014d2ba54559
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 傳入頻道上的優惠{#offers-on-an-inbound-channel}
 
-![](../../assets/common.svg)
+
 
 ## 向匿名訪客呈現優惠方案 {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -59,7 +61,7 @@ Neobank網站想在其網站上顯示優惠方案，目標為瀏覽頁面的未�
    * 標題
    * HTML 內容
    * 影像 URL
-   * 目標URL
+   * 目的地 URL
 
    ![](assets/offer_inbound_anonymous_example_030.png)
 

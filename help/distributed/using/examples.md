@@ -1,57 +1,58 @@
 ---
 product: campaign
-title: 分佈式營銷示例
-description: 分佈式營銷示例
+title: 分散式行銷範例
+description: 分散式行銷範例
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
 
 ---
 
-# 分佈式營銷示例{#distributed-marketing-samples}
+# 分散式行銷範例{#distributed-marketing-samples}
 
-![](../../assets/v7-only.svg)
 
-## 建立本地市場活動（按窗體） {#creating-a-local-campaign--by-form-}
 
-的 **按窗體** 類型web介面涉及使用 **Web應用**。 根據配置，此Web應用程式可以包含任何類型的已定義個性化元素。 例如，您可以建議連結來評估目標、預算、內容等。 通過專用API。
+## 建立本機促銷活動（依表單） {#creating-a-local-campaign--by-form-}
+
+此 **按表單** 類型web介面涉及使用 **網頁應用程式**. 此Web應用程式可包含任何類型已定義的個人化元素（視其設定而定）。 例如，您可以建議評估目標、預算、內容等的連結。 透過專用API。
 
 >[!NOTE]
 >
->API在專用文檔中詳細列出。 [了解更多資訊](../../configuration/using/about-web-services.md)。
+>專屬檔案中會詳細說明API。 [了解更多](../../configuration/using/about-web-services.md)。
 >
->此示例中使用的Web應用程式不是隨Adobe Campaign隨附而來的Web應用程式。 要在市場活動中使用表單，必須建立專用Web應用程式。
+>此範例中使用的Web應用程式不是隨Adobe Campaign提供而立即可用的Web應用程式。 若要在行銷活動中使用表單，您必須建立專用的Web應用程式。
 
-建立市場活動模板時，按一下 **[!UICONTROL Zoom]** 表徵圖 **[!UICONTROL Web interface]** 選項 **[!UICONTROL Advanced campaign settings...]** 連結以訪問Web應用程式的詳細資訊。
+建立促銷活動範本時，按一下 **[!UICONTROL Zoom]** 圖示 **[!UICONTROL Web interface]** 選項 **[!UICONTROL Advanced campaign settings...]** 連結以存取web應用程式的詳細資訊。
 
 ![](assets/mkg_dist_local_op_form1.png)
 
 >[!NOTE]
 >
->Web應用程式參數僅在市場活動模板中可用。
+>Web應用程式參數僅可在促銷活動範本中使用。
 
-在 **[!UICONTROL Edit]** 頁籤 **市場活動訂單** 並開啟它以訪問其內容。
+在 **[!UICONTROL Edit]** 頁簽，選擇 **促銷活動順序** 活動並開啟它以存取其內容。
 
 ![](assets/mkg_dist_web_app1.png)
 
-在此示例中， **市場活動訂單** 活動包括：
+在此範例中， **促銷活動順序** 活動包括：
 
-* 要由本地實體在訂單期間輸入的欄位，
+* 要由本地實體在訂單中輸入的欄位，
 
    ![](assets/mkg_dist_web_app2.png)
 
-* 允許本地實體評估市場活動的連結（如目標、預算、內容等）,
+* 可讓本機實體評估促銷活動（例如目標、預算、內容等）的連結，
 
    ![](assets/mkg_dist_web_app3.png)
 
-* 用於計算和顯示這些評估結果的指令碼。
+* 可讓您計算和顯示這些評估結果的指令碼。
 
    ![](assets/mkg_dist_web_app4.png)
 
-在本示例中，使用了以下API:
+在此範例中，會使用下列API:
 
 * 對於目標評估，
 
@@ -59,7 +60,7 @@ ht-degree: 0%
    var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
    ```
 
-* 對於預算評價，
+* 對於預算評估，
 
    ```
    var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
@@ -71,182 +72,182 @@ ht-degree: 0%
    var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
    ```
 
-## 建立協作市場活動（按目標審批） {#creating-a-collaborative-campaign--by-target-approval-}
+## 建立協作行銷活動（透過目標核准） {#creating-a-collaborative-campaign--by-target-approval-}
 
 ### 簡介 {#introduction}
 
-你是一家大型服裝品牌的營銷經理，該品牌在美國各地設有一家線上商店和幾家精品店。 現在春天到來了，你決定特別出價，讓你最好的客戶把你的服裝目錄里所有服裝的50%都拿去。
+你是一家大型服裝品牌的營銷經理，該品牌在美國各地設有一家線上商店和幾家精品店。 春天到來了，你決定提供特惠，讓你的最好客戶將目錄中所有裙子的50%折扣。
 
-此優惠針對的是您美國商店中最好的客戶，即自年初以來已花費超過300美元的客戶。
+此優惠針對的是貴機構美國門店的最佳客戶，也就是那些自年初以來已花費超過300美元的客戶。
 
-因此，您決定使用「分佈式市場營銷」建立協作市場活動（按目標審批），以允許您選擇您商店的最佳客戶（按區域分組），這些客戶將接收包含特別優惠的電子郵件遞送。
+因此，您決定使用「分散式行銷」來建立協作行銷活動（依目標核准），這可讓您選取商店的最佳客戶（依地區分組），而客戶會收到包含特殊優惠方案的電子郵件。
 
-本實例的第一部分說明了接收市場活動建立通知的本地實體，以及它們如何使用它來評估市場活動並訂購市場活動。
+此範例的第一部分說明接收促銷活動建立通知的本機實體，以及他們如何使用它來評估促銷活動及排序。
 
-本示例的第二部分說明了如何建立市場活動。
+此範例的第二部分說明如何建立促銷活動。
 
 步驟如下：
 
 **對於本地實體**
 
-1. 使用市場活動建立通知可以訪問由中心實體選擇的聯繫人清單。
+1. 使用促銷活動建立通知來存取中央實體選取的聯絡人清單。
 1. 選擇聯繫人並批准參與。
 
 **對於中央實體：**
 
-1. 建立 **[!UICONTROL Data distribution]** 的子菜單。
-1. 建立協作市場活動。
-1. 發佈市場活動。
+1. 建立 **[!UICONTROL Data distribution]** 活動。
+1. 建立協作行銷活動。
+1. 發佈促銷活動。
 
 ### 本地實體側 {#local-entity-side}
 
-1. 已選擇參與市場活動的本地實體將收到電子郵件通知。
+1. 被選擇參與促銷活動的當地實體將收到電子郵件通知。
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. 按一下 **[!UICONTROL Access your contact list and approve targeting]** 連結時，本地實體（通過web瀏覽器）被授予對為市場活動選擇的客戶端清單的訪問權限。
+1. 按一下 **[!UICONTROL Access your contact list and approve targeting]** 連結，則本機實體可（透過網頁瀏覽器）存取為促銷活動選取的用戶端清單。
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
-1. 本地實體取消檢查清單中的某些聯繫人，因為自年初以來，已聯繫他們尋求類似的報價。
+1. 本地實體會從清單中取消檢查某些聯繫人，因為自年初以來，已聯繫他們以獲取類似優惠。
 
    ![](assets/mkg_dist_use_case_target_valid10.png)
 
-一旦支票獲得批准，市場活動就可以自動啟動。
+核准檢查後，促銷活動就可以自動開始。
 
 ### 中央實體側 {#central-entity-side}
 
-#### 建立資料分發活動 {#creating-a-data-distribution-activity}
+#### 建立資料分送活動 {#creating-a-data-distribution-activity}
 
-1. 要設定協作市場活動（按目標審批），必須首先建立 **[!UICONTROL Data distribution activity]**。 按一下 **[!UICONTROL New]** 的 **[!UICONTROL Resources > Campaign management > Data distribution]** 的下界。
+1. 若要設定協作行銷活動（透過目標核准），您必須先建立 **[!UICONTROL Data distribution activity]**. 按一下 **[!UICONTROL New]** 圖示 **[!UICONTROL Resources > Campaign management > Data distribution]** 節點。
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
-1. 在 **[!UICONTROL General]** 頁籤，必須指定：
+1. 在 **[!UICONTROL General]** 索引標籤，您必須指定：
 
-   * 這樣 **[!UICONTROL Targeting dimension]**。 這裡 **資料分佈** 執行 **收件人**。
-   * 這樣 **[!UICONTROL Distribution type]**。 您可以選擇 **固定大小** 或 **按百分比大小**。
-   * 這樣 **[!UICONTROL Assignment type]**。 選擇 **本地實體** 的雙曲餘切值。
-   * 這樣 **[!UICONTROL Distribution type]**。 這裡，是 **[!UICONTROL Origin (@origin)]** 「收件人」表中的欄位，用於標識聯繫人與本地實體之間的關係。
-   * 的 **[!UICONTROL Approval storage]** 的子菜單。 選擇 **收件人的本地批准** 的雙曲餘切值。
+   * the **[!UICONTROL Targeting dimension]**. 此處 **資料分送** 是在 **收件者**.
+   * the **[!UICONTROL Distribution type]**. 您可以選擇 **固定大小** 或 **以百分比表示的大小**.
+   * the **[!UICONTROL Assignment type]**. 選取 **本地實體** 選項。
+   * the **[!UICONTROL Distribution type]**. 這裡，是 **[!UICONTROL Origin (@origin)]** 「收件者」表格中顯示的欄位，可讓您識別聯絡人與本機實體之間的關係。
+   * 此 **[!UICONTROL Approval storage]** 欄位。 選取 **收件者的本機核准** 選項。
 
-1. 在 **[!UICONTROL Breakdown]** 頁籤，指定：
+1. 在 **[!UICONTROL Breakdown]** 頁簽，指定
 
-   * 這樣 **[!UICONTROL Distribution field value]**&#x200B;這與參與即將開展的活動的當地實體相對應。
-   * 本地實體 **[!UICONTROL label]**。
-   * 這樣 **[!UICONTROL Size]** （固定或百分比）。 的 **0預設值** 包括選擇連結到本地實體的所有收件人。
+   * the **[!UICONTROL Distribution field value]**，此欄位會對應至參與即將行銷活動的當地實體。
+   * 本地實體 **[!UICONTROL label]**.
+   * the **[!UICONTROL Size]** （固定或百分比）。 此 **0預設值** 包括選擇連結到本地實體的所有收件人。
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
-1. 保存新資料分發。
+1. 儲存新的資料分送。
 
 #### 建立協作行銷活動 {#creating-a-collaborative-campaign}
 
-1. 從 **[!UICONTROL Campaign management > Campaign]** 節點，建立新 **[!UICONTROL collaborative campaign (by target approval)]**。
-1. 在 **[!UICONTROL Targeting and workflows]** 頁籤。 這必須包含 **拆分** 其中 **[!UICONTROL Record count limitation]** 由 **[!UICONTROL Data distribution]** 的子菜單。
+1. 從 **[!UICONTROL Campaign management > Campaign]** 節點，建立新 **[!UICONTROL collaborative campaign (by target approval)]**.
+1. 在 **[!UICONTROL Targeting and workflows]** 標籤，為促銷活動建立工作流程。 這必須包含 **分割** 其中 **[!UICONTROL Record count limitation]** 由 **[!UICONTROL Data distribution]** 活動。
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
-1. 添加 **[!UICONTROL Local approval]** 可以指定的操作：
+1. 新增 **[!UICONTROL Local approval]** 可以指定的動作：
 
    * 將發送到通知中的本地實體的消息內容，
-   * 批准通知，
-   * 市場活動的預期處理。
+   * 批准提醒，
+   * 預期的促銷活動處理。
 
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
-1. 保存記錄。
+1. 保存您的記錄。
 
-#### 發佈市場活動 {#publishing-the-campaign}
+#### 發佈促銷活動 {#publishing-the-campaign}
 
-現在可以添加 **活動包** 從 **[!UICONTROL Campaigns]** 頁籤。
+您現在可以新增 **行銷活動套件** 從 **[!UICONTROL Campaigns]** 標籤。
 
-1. 選擇 **[!UICONTROL Reference campaign]**。 在 **[!UICONTROL Edit]** 的子菜單。 **[!UICONTROL Approval mode]** 要用於您的市場活動：
+1. 選擇您的 **[!UICONTROL Reference campaign]**. 在 **[!UICONTROL Edit]** 頁簽，您可以選取 **[!UICONTROL Approval mode]** 用於促銷活動：
 
-   * 在 **手動** 模式，如果本地實體接受中央實體的邀請，則它們將參與市場活動。 如果他們想要，他們可以刪除預選的聯繫人，並且需要經理批准以確認他們參與市場活動。
-   * 在 **自動** 模式下，本地實體必須參與市場活動，除非它們從市場活動中註銷自己。 他們可以刪除聯繫人，而無需批准。
+   * in **手動** 模式，則當地實體接受中央實體的邀請時，它們將參與該促銷活動。 如果他們想要，則可以刪除預先選擇的聯繫人，並且需要經理的批准才能確認他們參與促銷活動。
+   * in **自動** 模式，則本地實體必須參與促銷活動，除非它們從中註銷自己。 他們可以刪除聯繫人，無需批准。
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
-1. 在 **[!UICONTROL Description]** 頁籤，您可以添加市場活動的說明以及要發送到本地實體的任何文檔。
+1. 在 **[!UICONTROL Description]** 標籤，您可以新增行銷活動的說明，以及要傳送至本機實體的任何檔案。
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
-1. 批准您的市場活動包，然後啟動工作流以發佈該包，並使其可用於包清單中的所有本地實體。
+1. 核准您的促銷活動套件，然後開始您的工作流程以發佈套件，並讓套件清單中的所有本機實體都能使用。
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
-## 建立協作市場活動（按表單） {#creating-a-collaborative-campaign--by-form-}
+## 建立協作行銷活動（依表單） {#creating-a-collaborative-campaign--by-form-}
 
 ### 簡介 {#introduction-1}
 
-你是一家大型化妝品品牌的營銷經理，該品牌在美國各地設有一家線上商店和幾家精品店。 要卸載冬季庫存並為新庫存騰出空間，您決定建立一項特別優惠，以針對兩個客戶類別：30歲以上的人，你將向他們提供年齡敏感的護膚產品，以及30歲以下的人，你將向他們提供更基本的護膚產品。
+你是一家大型化妝品品牌的營銷經理，該品牌在美國各地設有一家線上商店和幾家精品店。 要卸載冬季庫存並為新庫存騰出空間，您決定建立以兩個客戶類別為目標的特殊優惠方案：30歲以上的人，你將向他們提供年齡敏感的護膚產品，30歲以下的人，你將向他們提供更基本的護膚產品。
 
-因此，您決定使用「分佈式市場營銷」建立協作市場活動（按表單），該活動允許您按年齡範圍從不同的商店中選擇客戶。 這些客戶將收到一封電子郵件，其特別優惠將根據其年齡範圍進行個性化。
+因此，您決定使用「分散式行銷」來建立協作行銷活動（依表單），讓您能夠依年齡範圍從不同商店選取客戶。 這些客戶會收到電子郵件傳送，其中包含根據年齡範圍個人化的特殊優惠方案。
 
-本實例的第一部分說明了接收市場活動建立通知的本地實體，以及它們如何使用它來評估市場活動並訂購市場活動。
+此範例的第一部分說明接收促銷活動建立通知的本機實體，以及他們如何使用它來評估促銷活動及排序。
 
-本示例的第二部分說明了如何建立市場活動。
+此範例的第二部分說明如何建立促銷活動。
 
 步驟如下：
 
 **對於本地實體**
 
-1. 使用市場活動建立通知訪問聯機表單。
-1. 個性化市場活動（目標、內容、交付量）。
-1. 檢查這些欄位並在必要時更改它們。
-1. 批准您的參與。
-1. 本地實體（或中央實體）的經理批准您的配置和參與。
+1. 使用促銷活動建立通知來存取線上表單。
+1. 個人化促銷活動（目標、內容、傳送量）。
+1. 檢查這些欄位，並視需要加以變更。
+1. 核准您的參與。
+1. 本機實體（或中央實體）的管理員會核准您的設定和參與。
 
 **對於中央實體：**
 
-1. 建立協作市場活動。
-1. 配置 **[!UICONTROL Advanced campaign settings...]** 就像你參加當地競選一樣。
-1. 按本地市場活動的方式配置市場活動工作流和交付。
+1. 建立協作行銷活動。
+1. 設定 **[!UICONTROL Advanced campaign settings...]** 就像當地競選一樣。
+1. 如您對本機促銷活動所設定的，設定促銷活動工作流程和傳送。
 1. 更新Web表單。
-1. 建立市場活動包並發佈它。
+1. 建立行銷活動套件並發佈。
 
 ### 本地實體側 {#local-entity-side-1}
 
-1. 被選擇參加該活動的本地實體收到電子郵件通知，通知它們參與該活動。
+1. 選擇參與促銷活動的當地實體會收到電子郵件通知，通知他們參與促銷活動。
 
    ![](assets/mkg_dist_use_case_form_7.png)
 
-1. 本地實體完成個性化表單，然後：
+1. 當地實體會完成個人化表單，然後：
 
    * 評估目標和預算，
-   * 預覽交付內容，
-   * 批准他們的參與。
+   * 預覽傳遞內容，
+   * 核准其參與。
 
       ![](assets/mkg_dist_use_case_form_8.png)
 
-1. 負責驗證訂單的運營商批准其參與。
+1. 負責驗證訂單的操作員批准其參與。
 
    ![](assets/mkg_dist_use_case_form_9.png)
 
 ### 中央實體側 {#central-entity-side-1}
 
-1. 要實施協作市場活動（按表單），您必須使用 **協作市場活動（按表單）** 的下界。
+1. 若要實作協作行銷活動（依表單），您必須使用 **協作行銷活動（按表單）** 範本。
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. 在競選中 **[!UICONTROL Edit]** 頁籤 **[!UICONTROL Advanced campaign settings...]** 連結將其配置為本地市場活動。 請參閱 [建立本地市場活動（按窗體）](#creating-a-local-campaign--by-form-)。
+1. 在促銷活動的 **[!UICONTROL Edit]** ，按一下 **[!UICONTROL Advanced campaign settings...]** 連結以將其設定為本機促銷活動。 請參閱 [建立本機行銷活動（依表單）](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
-1. 配置市場活動工作流和Web表單。 請參閱 [建立本地市場活動（按窗體）](#creating-a-local-campaign--by-form-)。
-1. 通過指定執行計畫和涉及的本地實體來建立市場活動包。
+1. 設定促銷活動工作流程和網頁表單。 請參閱 [建立本機行銷活動（依表單）](#creating-a-local-campaign--by-form-).
+1. 指定執行排程和相關的本機實體，以建立您的促銷活動套件。
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. 通過在中選擇批准模式來完成包配置 **[!UICONTROL Edit]** 頁籤。
+1. 在中選取核准模式，以完成套件設定 **[!UICONTROL Edit]** 標籤。
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. 從 **[!UICONTROL Description]** 頁籤，您可以輸入市場活動包說明、在發佈該包時要發送到本地實體的通知消息，以及將任何資訊文檔附加到市場活動包。
+1. 從 **[!UICONTROL Description]** 標籤，您可以輸入促銷活動套件說明、發佈套件時要傳送至本機實體的通知訊息，以及將任何資訊性檔案附加至您的促銷活動套件。
 
    ![](assets/mkg_dist_use_case_form_5.png)
 
-1. 批准包以發佈它。
+1. 核准套件以發佈。
 
    ![](assets/mkg_dist_use_case_form_6.png)

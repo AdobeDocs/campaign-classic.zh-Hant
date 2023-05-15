@@ -2,9 +2,10 @@
 product: campaign
 title: 更新彙總
 description: 深入了解更新匯總工作流程活動
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # 更新彙總{#update-aggregate}
 
-![](../../assets/v7-only.svg)
+
 
 匯總是在多維資料集層級定義，以用於報告用途。 A **[!UICONTROL Workflow]** 標籤。
 

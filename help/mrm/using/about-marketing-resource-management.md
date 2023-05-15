@@ -2,11 +2,12 @@
 product: campaign
 title: 開始行銷資源管理
 description: 探索行銷資源管理
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # 開始使用行銷資源管理{#about-marketing-resource-management}
 
-![](../../assets/v7-only.svg)
+
 
 此 **行銷資源管理(MRM)** 模組可讓您以協作模式控制行銷動作，提供相關任務、預算和行銷資源的完整管理和即時追蹤。
 

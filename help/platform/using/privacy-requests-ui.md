@@ -2,12 +2,13 @@
 product: campaign
 title: 建立隱私權請求
 description: 瞭解如何建立及管理隱私權請求
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
-source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
-workflow-type: ht
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 100%
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # 建立及管理隱私權請求 {#privacy-request-ui}
 
-![](../../assets/v7-only.svg)
+
 
 本章節介紹如何建立存取權限及刪除請求，以及 Adobe Campaign 如何處理這些請求。
 

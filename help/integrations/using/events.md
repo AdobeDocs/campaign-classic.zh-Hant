@@ -2,10 +2,12 @@
 product: campaign
 title: 設定事件
 description: 了解如何為自訂實作設定事件
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 2%
@@ -14,7 +16,7 @@ ht-degree: 2%
 
 # 配置自訂實施事件 {#events}
 
-![](../../assets/common.svg)
+
 
 此設定的部分是自訂開發，需要下列項目：
 

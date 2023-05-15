@@ -2,11 +2,12 @@
 product: campaign
 title: 「[!DNL Gold Standard] 發行版本」
 description: 發行說明和 Campaign Classic 相容性對照表 [!DNL Gold Standard]
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # [!DNL Gold Standard] 版本{#gold-standard}
 
-![](../../assets/v7-only.svg)
+
 
 您可以在本頁面的發行說明和相容性對照表中找到 [!DNL Gold Standard] 版本。
 

@@ -1,201 +1,203 @@
 ---
 product: campaign
-title: 配置併發送交貨
-description: 瞭解如何配置和發送交付
+title: 設定並傳送傳送
+description: 了解如何設定和傳送傳遞
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
-# 配置併發送交貨 {#configuring-and-sending-the-delivery}
+# 設定並傳送傳送 {#configuring-and-sending-the-delivery}
 
-![](../../assets/common.svg)
+
 
 ## 權限{#delivery-permissions}
 
-只有交貨所有者才能啟動交貨。 要使其他運算子（或運算子組）能夠啟動傳遞，請將它們添加為 **[!UICONTROL Delivery start:]** 的子菜單。 [了解更多資訊](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
+只有傳送擁有者才能開始傳送。 若要讓其他運算子（或運算子群組）能夠開始傳送，請在 **[!UICONTROL Delivery start:]** 欄位。 [了解更多](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
 
-## 傳遞附加參數 {#delivery-additiona-parameters}
+## 傳送其他參數 {#delivery-additiona-parameters}
 
-在發送交貨之前，您可以通過 **[!UICONTROL Delivery]** 頁籤。
+在傳送傳送之前，您可以透過 **[!UICONTROL Delivery]** 標籤。
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**:使用此選項可通過設定交貨的優先順序來更改交貨的發送順序：正常、高或低。
+* **[!UICONTROL Delivery priority]**:使用此選項可設定傳送的優先順序，以變更傳送的傳送順序：正常、高或低。
 
-* **[!UICONTROL Message batch quantity]**:使用此選項可定義在同一XML傳遞包中分組的消息數。 如果參數設定為0，則消息將自動分組。 包大小由計算定義 `<delivery size>/1024`，每個包最少為8條，最多為256條消息。
+* **[!UICONTROL Message batch quantity]**:使用此選項可定義在同一XML傳送包內分組的消息數。 如果參數設為0，則會自動將訊息分組。 包大小由計算定義 `<delivery size>/1024`，每個封裝至少8封，最多256封訊息。
 
    >[!IMPORTANT]
    >
-   >當通過複製現有傳遞建立傳遞時，將重置此參數。
+   >複製現有傳遞時，系統會重設此參數。
 
-* **[!UICONTROL Send using multiple waves]**:使用此選項可以批次發送郵件，而不是一次發送給整個受眾。 [了解更多資訊](#sending-using-multiple-waves)。
+* **[!UICONTROL Send using multiple waves]**:使用此選項可將訊息分批傳送，而非一次傳送給整個對象。 [了解更多](#sending-using-multiple-waves)。
 
-* **[!UICONTROL Test SMTP delivery]**:使用此選項可test通過SMTP發送。 該傳遞被處理到連接到SMTP伺服器，但未發送：對於每個傳遞的收件人，Campign會連接到SMTP提供程式伺服器，執行SMTP RCPT TO命令，並在SMTP DATA命令之前關閉連接。
+* **[!UICONTROL Test SMTP delivery]**:使用此選項可測試透過SMTP的傳送。 處理傳遞直到連線到 SMTP 伺服器，但不傳送：對於傳遞的每個收件者，Campaign 會連線到 SMTP 提供者伺服器，執行 SMTP RCPT TO 命令，並在 SMTP DATA 命令之前關閉連線。
 
    >[!NOTE]
    >
-   >* 不能在中間採購中設定此選項。
+   >* 中間來源中不得設定此選項。
    >
-   >* 瞭解有關SMTP伺服器配置的詳細資訊，請參閱 [此部分](../../installation/using/configure-delivery-settings.md)。
+   >* 有關SMTP伺服器配置的詳細資訊，請參閱 [本節](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL Email BCC]**:使用此選項，只需將BCC電子郵件地址添加到郵件目標，即可通過BCC在外部系統上儲存電子郵件。 [了解更多資訊](sending-messages.md#archiving-emails)。
+* **[!UICONTROL Email BCC]**:使用此選項，只需將BCC電子郵件地址新增至訊息目標，即可透過BCC在外部系統上儲存電子郵件。 [了解更多](sending-messages.md#archiving-emails)。
 
-## 確認交貨 {#confirming-delivery}
+## 確認傳送 {#confirming-delivery}
 
-當配置並準備發送遞送時，執行遞送分析。
+當已設定傳送並準備傳送時，請執行傳送分析。
 
-要執行此操作，請按一下 **[!UICONTROL Send]**，選擇所需操作，然後按一下 **[!UICONTROL Analyze]**。 [了解更多資訊](steps-validating-the-delivery.md#analyzing-the-delivery)。
+要執行此操作，請按一下 **[!UICONTROL Send]**，請選取所需的動作，然後按一下 **[!UICONTROL Analyze]**. [了解更多](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 ![](assets/s_ncs_user_email_del_send.png)
 
-完成後，按一下 **[!UICONTROL Confirm delivery]** 啟動消息傳遞。
+完成後，按一下 **[!UICONTROL Confirm delivery]** 啟動訊息傳送。
 
-然後，您可以關閉交貨嚮導並從 **[!UICONTROL Delivery]** 頁籤，可通過此交貨的詳細資訊或交貨清單訪問。
+然後，您可以關閉傳送精靈，並從 **[!UICONTROL Delivery]** 索引標籤，可透過此傳送的詳細資訊或傳送清單存取。
 
-發送消息後，您可以監視和跟蹤交貨。 如需詳細資訊，請參閱下列區段。
+傳送訊息後，您可以監控及追蹤您的傳送。 如需詳細資訊，請參閱下列區段。
 
 * [監視傳遞](about-delivery-monitoring.md)
 * [瞭解傳遞失敗](understanding-delivery-failures.md)
 * [關於訊息追蹤](about-message-tracking.md)
 
-## 計畫交貨發送 {#scheduling-the-delivery-sending}
+## 排程傳送 {#scheduling-the-delivery-sending}
 
-您可以通過安排傳遞來推遲消息發送。
+您可以排程傳送，以延遲訊息傳送。
 
-1. 按一下 **[!UICONTROL Send]** 按鈕 **[!UICONTROL Postpone delivery]** 的雙曲餘切值。
+1. 按一下 **[!UICONTROL Send]** 按鈕並選取 **[!UICONTROL Postpone delivery]** 選項。
 
-1. 在 **[!UICONTROL Contact date]** 的子菜單。
+1. 在 **[!UICONTROL Contact date]** 欄位。
 
 ![](assets/dlv_email_del_plan.png)
 
-1. 然後，您可以開始交貨分析，然後確認交貨發送。 但是，交貨發送將直到在 **[!UICONTROL Contact date]** 的子菜單。
+1. 接著，您可以開始傳送分析，然後確認傳送。 不過，傳送要等到 **[!UICONTROL Contact date]** 欄位。
 
 >[!IMPORTANT]
 >
->開始分析後，您定義的聯繫日期為固定。 如果修改此日期，則必須重新啟動分析，以便將修改考慮在內。
+>開始分析後，您定義的聯絡日期即會固定。 如果您修改此日期，則必須重新啟動分析，以便將您的修改納入考量。
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 
-在交貨清單中，交貨將顯示為 **[!UICONTROL Pending]** 狀態。
+在傳送清單中，傳送會以顯示 **[!UICONTROL Pending]** 狀態。
 
 ![](assets/s_ncs_user_email_del_waiting.png)
 
-還可通過 **[!UICONTROL Scheduling]** 按鈕。
+您也可以透過 **[!UICONTROL Scheduling]** 按鈕。
 
 ![](assets/s_ncs_user_email_del_save_in_calendar_ico.png)
 
-它允許您將交貨推遲到較晚日期或在臨時日曆中保存交貨。
+它可讓您將傳送延遲至較晚的日期，或在臨時日曆中儲存傳送。
 
-* 的 **[!UICONTROL Schedule delivery (no automatic execution)]** 選項，可以計畫交貨的臨時分析。
+* 此 **[!UICONTROL Schedule delivery (no automatic execution)]** 選項可讓您排程傳送的臨時分析。
 
-   保存此配置後，交貨將更改為 **[!UICONTROL Targeting pending]** 狀態。 分析將在指定日期啟動。
+   儲存此設定時，傳送會變更為 **[!UICONTROL Targeting pending]** 狀態。 分析將在指定日期啟動。
 
-* 的 **[!UICONTROL Schedule delivery (automatic execution on planned date)]** 的子菜單。
+* 此 **[!UICONTROL Schedule delivery (automatic execution on planned date)]** 選項可讓您指定傳送日期。
 
-   按一下 **[!UICONTROL Send]** 選擇 **[!UICONTROL Postpone delivery]** 然後啟動分析並確認交付。 分析完成後，傳遞目標就緒，消息將在指定日期自動發送。
+   按一下 **[!UICONTROL Send]** 選取 **[!UICONTROL Postpone delivery]** 然後啟動分析並確認傳送。 分析完成時，傳遞目標已就緒，訊息將在指定日期自動傳送。
 
-日期和時間在當前運算子的時區中表示。 的 **[!UICONTROL Time zone]** 位於「聯繫人日期」輸入欄位下方的下拉清單允許您自動將輸入的日期和時間轉換為選定的時區。
+日期和時間會以目前運算子的時區表示。 此 **[!UICONTROL Time zone]** 位於「聯繫人日期輸入」欄位下方的下拉式清單，可讓您自動將輸入的日期和時間轉換為選取的時區。
 
-例如，如果您計畫在倫敦時間8點自動執行交貨，則該時間將自動轉換為選定的時區：
+例如，如果您排程在倫敦時間8點自動執行傳送，則該時間會自動轉換為選取的時區：
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## 使用多波發送 {#sending-using-multiple-waves}
+## 使用多個波段傳送 {#sending-using-multiple-waves}
 
-要平衡負荷，您可以將交貨分為多個批。 配置批數及其相對於整個交貨的比例。
+若要平衡負載，您可以將傳送分為數個批次。 配置批的數量及其相對於整個交貨的比例。
 
 >[!NOTE]
 >
->只能定義兩個連續波之間的大小和延遲。 無法配置每個波次的收件人選擇標準。
+>只能定義兩個連續波之間的大小和延遲。 無法配置每個波次的接收者選擇標準。
 
-1. 開啟「交貨屬性」窗口，然後按一下 **[!UICONTROL Delivery]** 頁籤。
-1. 選擇 **[!UICONTROL Send using multiple waves]** ，然後按一下 **[!UICONTROL Define waves...]** 的子菜單。
+1. 開啟傳送屬性視窗，然後按一下 **[!UICONTROL Delivery]** 標籤。
+1. 選取 **[!UICONTROL Send using multiple waves]** ，然後按一下 **[!UICONTROL Define waves...]** 連結。
 
    ![](assets/s_ncs_user_wizard_waves.png)
 
-1. 要配置波，您可以：
+1. 要配置波，可以執行以下任一操作：
 
-   * 定義每個波的大小。 例如，如果您 **[!UICONTROL 30%]** 在相應欄位中，每個波次將代表傳遞中包含的消息的30%，最後一個波次將代表消息的10%。
+   * 定義每個波的大小。 例如，若您輸入 **[!UICONTROL 30%]** 在對應欄位中，每個波次將代表傳送中包含之訊息的30%，最後一個波次則代表訊息的10%。
 
-      在 **[!UICONTROL Period]** 欄位中，指定兩個連續波的開始之間的延遲。 例如，如果您 **[!UICONTROL 2d]**&#x200B;第一波立即開始，第二波在兩天內開始，第三波在四天內開始，等等。
+      在 **[!UICONTROL Period]** 欄位，指定兩個連續波開始之間的延遲。 例如，若您輸入 **[!UICONTROL 2d]**，第一波會立即開始，第二波會在兩天後開始，第三波會在四天後開始，以此類推。
 
       ![](assets/s_ncs_user_wizard_waves_create_size.png)
 
-   * 定義發送每個波次的日曆。
+   * 定義傳送每個波次的日曆。
 
-      在 **[!UICONTROL Start]** 列中，指定兩個連續波的開始之間的延遲。 在 **[!UICONTROL Size]** 列，輸入固定數字或百分比。
+      在 **[!UICONTROL Start]** 欄，指定兩個連續波開始之間的延遲。 在 **[!UICONTROL Size]** 欄，輸入固定數字或百分比。
 
-      在下面的示例中，第一波表示傳送中包含的郵件總數的25%，並將立即開始。 接下來的兩波將完成傳送，並設定為以六小時間隔開始。
+      在以下範例中，第一波代表傳送中包含且將立即開始的訊息總數的25%。 接下來的兩個波段會完成傳送，並設為以6小時間隔開始。
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
-   一個特定的分類規則， **[!UICONTROL Wave scheduling check]**，確保在交貨有效性限制之前計畫最後一次波次。 市場活動類型及其規則，在 **[!UICONTROL Typology]** 的子菜單。 [具有類型的驗證過程](steps-validating-the-delivery.md#validation-process-with-typologies)。
+   特定的類型規則， **[!UICONTROL Wave scheduling check]**，可確保在傳送有效期限之前已規劃最後一波。 在 **[!UICONTROL Typology]** 的索引標籤，顯示在 [使用類型驗證程式](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
    >
-   >確保最後的波次不超過在 **[!UICONTROL Validity]** 頁籤。 否則，可能無法發送某些消息。
+   >請確定最後的批次不會超過傳送期限，此期限定義於 **[!UICONTROL Validity]** 標籤。 否則，某些訊息可能無法傳送。
    >
-   >在配置最後一波時，還必須留出足夠的重試時間。 請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
+   >配置最後一波時，您也必須有足夠的時間重試。 請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 要監視您的發送，請轉到交貨日誌。 請參閱[此頁面](delivery-dashboard.md#delivery-logs-and-history)。
+1. 若要監控您的傳送，請前往傳送記錄檔。 請參閱[此頁面](delivery-dashboard.md#delivery-logs-and-history)。
 
-   您可以看到已處理波次中發送的交貨(**[!UICONTROL Sent]** 狀態)和剩餘波次(**[!UICONTROL Pending]** 狀態)。
+   您可以看到已在處理波次中傳送的傳送(**[!UICONTROL Sent]** 狀態)和要在其餘波段中傳送的傳送(**[!UICONTROL Pending]** 狀態)。
 
-以下兩個示例是使用多個波的最常見使用案例。
+以下兩個範例是使用多波時最常用的使用案例。
 
-* **在升速過程中**
+* **在上升過程中**
 
-   當使用新平台發送電子郵件時，Internet服務提供商(ISP)對無法識別的IP地址表示懷疑。 如果突然發送了大量電子郵件， ISP通常會將其標籤為垃圾郵件。
+   使用新平台傳送電子郵件時，網際網路服務提供者(ISP)會懷疑無法辨識的IP位址。 如果突然發送了大量電子郵件，ISP通常會將它們標籤為垃圾郵件。
 
-   為避免被標籤為垃圾郵件，您可以逐步增加使用波次發送的卷。 這應確保啟動階段的順利開發，並使您能夠降低無效地址的總體速率。
+   為避免標籤為垃圾郵件，您可以逐步增加使用批次傳送的數量。 這應確保啟動階段的順利開發，並讓您降低無效地址的總體速率。
 
-   為此，請使用 **[!UICONTROL Schedule waves according to a calendar]** 的雙曲餘切值。 例如，將第一波設定為10%，將第二波設定為15%，依此類推。
+   若要這麼做，請使用 **[!UICONTROL Schedule waves according to a calendar]** 選項。 例如，將第一波設為10%、將第二波設為15%，依此類推。
 
    ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
 
-* **涉及呼叫中心的活動**
+* **與客服中心相關的行銷活動**
 
-   在管理電話忠誠度活動時，您的組織處理聯繫訂閱者的呼叫數的能力有限。
+   管理電話忠誠度促銷活動時，您的組織處理聯絡訂閱者之呼叫數的能力有限。
 
-   使用電波，您可以將每天的消息數限制為20，即呼叫中心的日處理能力。
+   使用波次，您可以將訊息的數量限制為每天20個，即呼叫中心的每日處理能力。
 
-   要執行此操作，請選擇 **[!UICONTROL Schedule multiple waves of the same size]** 的雙曲餘切值。 輸入 **[!UICONTROL 20]** 波的大小和 **[!UICONTROL 1d]** 的 **[!UICONTROL Period]** 的子菜單。
+   若要這麼做，請選取 **[!UICONTROL Schedule multiple waves of the same size]** 選項。 輸入 **[!UICONTROL 20]** 波的大小和 **[!UICONTROL 1d]** 在 **[!UICONTROL Period]** 欄位。
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## 配置重試次數 {#configuring-retries}
+## 配置重試 {#configuring-retries}
 
-由於 **軟** 或 **已忽略** 錯誤會自動重試。 此處介紹了交貨失敗類型和原因 [節](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+由於 **軟** 或 **已忽略** 錯誤可能會自動重試。 傳遞失敗類型和原因如下 [節](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
->對於托管或混合安裝，如果已升級到 [增強的MTA](sending-with-enhanced-mta.md)，市場活動不再使用傳遞中的重試設定。 軟反彈重試次數和它們之間的時間長度由增強MTA根據郵件電子郵件域返回的反彈響應的類型和嚴重性確定。
+>若為托管或混合安裝，若您已升級至 [增強的MTA](sending-with-enhanced-mta.md),Campaign不再使用傳送中的重試設定。 軟退信重試次數及兩者之間的時間長度，由Enhanced MTA根據來自訊息電子郵件網域傳回之退信的類型和嚴重性決定。
 
-對於使用舊版Campaign MTA的內部安裝和托管/混合安裝， **[!UICONTROL Delivery]** 的子菜單。
+若為內部部署安裝，以及使用舊版Campaign MTA的托管/混合安裝，位於 **[!UICONTROL Delivery]** 索引標籤（傳送參數）指出在傳送後一天應執行多少次重試，以及兩次重試之間的最小延遲。
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-預設情況下，為交付的第一天安排五次重試，最小間隔為一小時，在一天的24小時內展開。 每天一次重試的程式設定在此之後，直到交貨截止日期(在 **[!UICONTROL Validity]** 頁籤。 請參閱 [定義有效期](#defining-validity-period)。
+依預設，會為傳送的第一天排程五次重試，最小間隔為一小時，分散於一天的24小時內。 在此之後，每天會編寫一次重試程式，直到傳送截止日期(定義於 **[!UICONTROL Validity]** 標籤。 請參閱 [定義有效期](#defining-validity-period).
 
 ## 定義有效期 {#defining-validity-period}
 
-在啟動傳送後，可以將消息（以及任何重試）發送到傳送截止時間。 這在交付屬性中指示，通過 **[!UICONTROL Validity]** 頁籤。
+傳送啟動後，可以傳送訊息（和任何重試），直到傳送截止時間為止。 這會透過 **[!UICONTROL Validity]** 標籤。
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* 的 **[!UICONTROL Delivery duration]** 欄位中，您可以輸入全局傳遞重試的限制。 這意味著Adobe Campaign發送從開始日期開始的消息，然後，對於僅返回錯誤的消息，將執行常規的可配置重試，直到達到有效性限制。
+* 此 **[!UICONTROL Delivery duration]** 欄位可讓您輸入全域傳送重試的限制。 這表示 Adobe Campaign 會從開始日期開始傳送訊息，然後，僅對於傳回錯誤的訊息，執行定期、可設定的重試，直到達到有效期限制。
 
-   您也可以選擇指定日期。 要執行此操作，請選擇 **[!UICONTROL Explicitly set validity dates]**。 在這種情況下，交貨和有效性限制日期也允許您指定時間。 預設情況下使用當前時間，但可以直接在輸入欄位中修改此時間。
+   您也可以選擇指定日期。要執行此操作，請選取 **[!UICONTROL Explicitly set validity dates]**. 在此情況下，傳遞和有效期限制日期也讓您指定時間。預設使用目前時間，但您可以直接在輸入欄位中修改。
 
    >[!IMPORTANT]
    >
-   >對於托管或混合安裝，如果已升級到 [增強的MTA](sending-with-enhanced-mta.md)，也請參見Wiki頁。 **[!UICONTROL Delivery duration]** 只有在設定為時，才會使用市場活動電子郵件交貨中的設定 **3.5天或以下**。  如果您定義的值超過　3.5　天，則不會考慮該值。
+   >若為托管或混合安裝，若您已升級至 [增強的MTA](sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration]** 設定(只有在設為 **3.5天或更少**.  如果您定義的值超過　3.5　天，則不會考慮該值。
 
-* **資源的有效性限制**:的 **[!UICONTROL Validity limit]** 欄位主要用於上傳的資源，主要用於鏡像頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
+* **資源的有效性限制**:此 **[!UICONTROL Validity limit]** 欄位是用於上傳的資源，主要用於鏡像頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 
-   此欄位中的值可以以中列出的單位表示 [此部分](../../platform/using/adobe-campaign-workspace.md#default-units)。
+   此欄位中的值可以以 [本節](../../platform/using/adobe-campaign-workspace.md#default-units).

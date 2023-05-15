@@ -2,11 +2,12 @@
 product: campaign
 title: 建立優惠方案空間
 description: 建立優惠方案空間
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # 建立優惠方案空間{#creating-offer-spaces}
 
-![](../../assets/v7-only.svg)
+
 
 只能由 **技術管理員** 存取「選件空間」子資料夾。 優惠方案空間只能在設計環境中建立，並會在優惠方案核准期間自動複製至即時環境。
 
@@ -50,7 +51,7 @@ HTML或XML呈現是透過呈現函式建立。 呈現函式中定義的欄位順
 
    ![](assets/offer_space_create_004.png)
 
-1. 檢查 **[!UICONTROL Required]** 框，使每個欄位成為必填欄位。
+1. 檢查 **[!UICONTROL Required]** 方塊，將每個欄位設為必填。
 
    >[!NOTE]
    >

@@ -2,9 +2,11 @@
 product: campaign
 title: 元素版面
 description: 元素版面
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 1%
@@ -13,52 +15,52 @@ ht-degree: 1%
 
 # 元素版面{#element-layout}
 
-![](../../assets/common.svg)
 
-除了各種圖表外， [這裡](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，可以調整顯示並將元素添加到報告頁。
 
-可以使用容器：這些功能使您能夠連結頁面的多個元素，並在列和/或單元格中配置其佈局。 如何使用它們，詳見 [此部分](../../web/using/defining-web-forms-layout.md#creating-containers)。
+除了各種圖表 [此處](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以調整顯示並新增元素至報表頁面。
 
-可以在樹的根部配置報告佈局，並使每個容器的報告佈局超載。 頁面按列排序。 容器也按列分類。 只有靜態和圖形項被分類到單元格中。
+您可以使用容器：這些功能可讓您連結頁面的數個元素，並在欄和/或儲存格中設定其配置。 如何使用這些參數，在 [本節](../../web/using/defining-web-forms-layout.md#creating-containers).
 
-## 定義每頁的選項 {#defining-the-options-for-each-page}
+您可以在樹狀結構的根位置設定報表配置，並針對每個容器將其過載。 頁面會依欄排序。 容器也會分類為欄。 只有靜態和圖形項目會排序成儲存格。
 
-您可以使用報表每頁上的選項。
+## 定義每個頁面的選項 {#defining-the-options-for-each-page}
 
-的 **[!UICONTROL General]** 頁籤，用於更改頁面標題，以及配置圖例位置和在報告頁之間瀏覽。
+您可以在報表的每個頁面上使用選項。
+
+此 **[!UICONTROL General]** 索引標籤可讓您變更頁面標題，以及設定圖例位置和在報表頁面之間瀏覽。
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-的 **[!UICONTROL Title]** 欄位中，您可以個性化報表頁標題中的標籤。 窗口的標題可通過 **[!UICONTROL Properties]** 的子菜單。 有關此內容的詳細資訊，請參閱 [添加頁眉和頁腳](#adding-a-header-and-a-footer)。
+此 **[!UICONTROL Title]** 欄位可讓您個人化報表頁面標題中的標籤。 視窗的標題可透過 **[!UICONTROL Properties]** 的下限。 有關詳細資訊，請參閱 [新增頁首和頁尾](#adding-a-header-and-a-footer).
 
-的 **[!UICONTROL Display settings]** 選項允許您選擇報表頁中控制項標題的位置，並定義頁上的列數。 有關頁面佈局的詳細資訊，請參閱 **物料佈局** 部分 [此部分](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page)。
+此 **[!UICONTROL Display settings]** 選項可讓您選取報表頁面中控制標題的位置，以及定義頁面上的欄數。 如需頁面配置的詳細資訊，請參閱 **項目配置** 區段 [本節](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-在 **[!UICONTROL Browse]** 部分，以授權從一個報表頁瀏覽到另一個報表頁。 如果 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disable previous page]** 選項 **[!UICONTROL Next]** 和 **[!UICONTROL Previous]** 按鈕從報告頁面中消失。
+選取 **[!UICONTROL Browse]** 區段來授權從一個報表頁面瀏覽至另一個報表頁面。 若 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disable previous page]** 選項， **[!UICONTROL Next]** 和 **[!UICONTROL Previous]** 按鈕從報表頁面中消失。
 
-## 添加頁眉和頁腳 {#adding-a-header-and-a-footer}
+## 新增頁首和頁尾 {#adding-a-header-and-a-footer}
 
-報告屬性窗口還允許您定義佈局元素，如：窗口的標題、頁眉和頁腳的HTML內容。
+報表屬性視窗也可讓您定義配置元素，例如：視窗的標題、頁首和頁尾的HTML內容。
 
 要訪問屬性窗口，請按一下 **[!UICONTROL Properties]** 按鈕。
 
 ![](assets/reporting_properties.png)
 
-的 **[!UICONTROL Page]** 頁籤，您可以個性化顯示。
+此 **[!UICONTROL Page]** 索引標籤可讓您個人化您的顯示。
 
 ![](assets/s_ncs_advuser_report_properties_04.png)
 
-此頁籤中配置的內容將在所有報告頁面上可見。
+此索引標籤中設定的內容將顯示在所有報表頁面上。
 
-的 **[!UICONTROL Texts]** 子頁籤允許您定義變數內容：如果報告設計用於多種語言，則在翻譯週期中將予以考慮。
+此 **[!UICONTROL Texts]** 子索引標籤可讓您定義變數內容：如果在翻譯週期中將報告設計為以多種語文使用，則將考慮該報告。
 
-這允許您建立文本片段清單並將它們連結到標識符：
+這可讓您建立文字片段清單，並將它們連結至識別碼：
 
 ![](assets/s_ncs_advuser_report_properties_04a.png)
 
-然後，將這些標識符插入報表的HTML內容：
+然後，將這些識別碼插入報表的HTML內容中：
 
 ![](assets/s_ncs_advuser_report_properties_04b.png)
 
-在顯示報告時，將自動用相應內容替換這些內容。
+報表顯示時，系統會自動將其取代為適當的內容。
 
-與HTML文本一樣，此操作模式使您能夠集中報告中使用的文本並管理其翻譯。 在該標籤中建立的文本由Adobe Campaign綜合翻譯工具自動收集。
+與HTML文本一樣，此操作模式允許您集中報告中使用的文本並管理其翻譯。 Adobe Campaign整合翻譯工具會自動收集此索引標籤中建立的文字。

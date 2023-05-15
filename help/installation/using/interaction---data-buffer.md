@@ -2,11 +2,12 @@
 product: campaign
 title: 互動 – 資料緩衝
 description: 互動 – 資料緩衝
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 互動 – 資料緩衝{#interaction-data-buffer}
 
-![](../../assets/v7-only.svg)
+
 
 您可以設定資料緩衝區，借由取消同步選件主張計算來提高入站互動效能。 此設定將在執行個體的設定檔案(config-Instance.xml)中執行。
 

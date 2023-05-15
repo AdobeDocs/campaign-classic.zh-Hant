@@ -2,11 +2,13 @@
 product: campaign
 title: 設定促銷活動回應管理員
 description: 了解如何設定Campaign回應管理員
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # 設定促銷活動回應管理員{#configuration}
 
-![](../../assets/common.svg)
+
 
 本節內容適用於負責設定回應管理的人員。 它假定了有關擴展架構、定義工作流和SQL寫程式的一定知識。
 

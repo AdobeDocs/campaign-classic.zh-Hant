@@ -2,24 +2,26 @@
 product: campaign
 title: 驗證傳遞
 description: 了解如何驗證傳遞
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1666'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
 # 驗證傳遞 {#validating-the-delivery}
 
-![](../../assets/common.svg)
+
 
 建立並設定傳送後，您必須先驗證傳送，才能將其傳送至主要目標。
 
 操作步驟：
 
-1. **分析傳送**:此步驟可讓您準備要傳送的訊息。 [了解更多資訊](#analyzing-the-delivery)。
+1. **分析傳送**:此步驟可讓您準備要傳送的訊息。 [了解更多](#analyzing-the-delivery)。
 
    分析期間所套用的規則如下： [本節](#validation-process-with-typologies). 在 [變更核准模式](#changing-the-approval-mode) 區段。
 
@@ -62,10 +64,10 @@ ht-degree: 5%
 
 1. 等待分析完成。
 
-   分析完成時，視窗的上方區段會指出傳送準備是否完成或是否發生任何錯誤。 列出所有驗證步驟、警告和錯誤。 彩色表徵圖顯示消息類型：
+   分析完成時，視窗的上方區段會指出傳送準備是否完成或是否發生任何錯誤。 會列出所有驗證步驟、警告和錯誤。彩色圖示顯示訊息類型：
    * 藍色圖示表示資訊性訊息。
-   * 黃色表徵圖表示非關鍵處理錯誤。
-   * 紅色圖示表示有嚴重錯誤而無法傳送傳遞。
+   * 黃色圖示表示非嚴重的處理錯誤。
+   * 紅色圖示表示會阻止傳送傳遞的嚴重錯誤。
 
    ![](assets/s_ncs_user_email_del_analyze_error.png)
 
@@ -209,7 +211,7 @@ ht-degree: 5%
 
 ## 變更核准模式 {#changing-the-approval-mode}
 
-此 **[!UICONTROL Analysis]** 索引標籤，以供您選取驗證模式。 如果分析期間產生警告（例如，如果傳送的主旨中會強調某些字元等），您可以設定傳送以定義是否應仍執行該傳送。 依預設，使用者必須在分析階段結束時確認訊息的傳送：這是 **手動** 驗證。
+此 **[!UICONTROL Analysis]** 索引標籤，以供您選取驗證模式。 如果分析期間產生警告（例如，如果傳送的主旨中會強調某些字元等），您可以設定傳送以定義是否應仍執行該傳送。 依預設，使用者必須在分析階段結束時確認傳送訊息：這是&#x200B;**手動**&#x200B;驗證。
 
 從適當欄位的下拉式清單中選取其他核准模式。
 

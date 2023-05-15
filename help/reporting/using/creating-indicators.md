@@ -6,7 +6,7 @@ feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 建立指標{#creating-indicators}
 
-![](../../assets/common.svg)
+
 
 要使多維資料集功能化，您需要標識相關維和度量並在多維資料集中建立它們。
 

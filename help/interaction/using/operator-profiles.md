@@ -2,20 +2,21 @@
 product: campaign
 title: 運算子設定檔
 description: 運算子設定檔
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
 # 運算子設定檔{#operator-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 使用「互動」的運算子類型有兩種：優惠方案經理和傳遞經理。 它們每個都具有特定權限，只允許它們訪問樹和平台的某些部分。
 
@@ -37,7 +38,7 @@ ht-degree: 5%
 * 檢視 **[!UICONTROL Live]** 環境。
 * 配置管理函式（預定義的空格和篩選器）。
 * 建立和更改類別。
-* 建立優惠方案。
+* 建立優惠.
 * 設定優惠方案資格。
 * 核准優惠方案。
 
@@ -97,7 +98,7 @@ ht-degree: 5%
    <td> 閱讀<br /> </td> 
   </tr> 
   <tr> 
-   <td> 預先定義的優惠方案篩選條件<br /> </td> 
+   <td> 預先定義的優惠篩選器<br /> </td> 
    <td> 讀/寫<br /> </td> 
    <td> 閱讀<br /> </td> 
   </tr> 
@@ -117,7 +118,7 @@ ht-degree: 5%
    <td> 閱讀<br /> </td> 
   </tr> 
   <tr> 
-   <td> 選件類別<br /> </td> 
+   <td> 優惠方案類別<br /> </td> 
    <td> 讀/寫<br /> </td> 
    <td> 閱讀<br /> </td> 
   </tr> 
@@ -157,7 +158,7 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 預先定義的優惠方案篩選條件<br /> </td> 
+   <td> 預先定義的優惠篩選器<br /> </td> 
    <td> 閱讀<br /> </td> 
    <td> 閱讀<br /> </td> 
   </tr> 
@@ -177,7 +178,7 @@ ht-degree: 5%
    <td> 閱讀<br /> </td> 
   </tr> 
   <tr> 
-   <td> 選件類別<br /> </td> 
+   <td> 優惠方案類別<br /> </td> 
    <td> </td> 
    <td> 閱讀<br /> </td> 
   </tr> 

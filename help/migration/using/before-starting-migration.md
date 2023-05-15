@@ -2,13 +2,14 @@
 product: campaign
 title: 開始移轉前
 description: 開始移轉前
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 # 必要條件{#before-starting-migration}
 
-![](../../assets/v7-only.svg)
+
 
 此頁面列出開始移轉程式之前要執行的特定步驟。 您也必須參考 [本頁](about-migration.md) 以取得更多指引。
 

@@ -2,20 +2,21 @@
 product: campaign
 title: 關於目標定位活動
 description: 關於目標定位活動
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 # 在工作流程中鎖定活動{#about-targeting-activities}
 
-![](../../assets/v7-only.svg)
 
-這些活動可讓您定義集，並使用交集、聯合或排除操作來分割或組合這些集，以建立一或多個目標。
+
+這些活動可讓您使用交集、聯合或執行運算來定義組合和分割或結合這些組合，藉此建置一個或多個目標。
 
 * **查詢**:可讓您執行查詢。 請參閱 [建立查詢](query.md#creating-a-query).
 * **增量查詢**:可讓您執行查詢並規劃其執行。 請參閱 [增量查詢](incremental-query.md) 區段。

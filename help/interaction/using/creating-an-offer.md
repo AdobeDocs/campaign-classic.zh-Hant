@@ -2,20 +2,21 @@
 product: campaign
 title: 建立優惠方案
 description: 建立優惠方案
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 建立優惠方案{#creating-an-offer}
 
-![](../../assets/v7-only.svg)
+
 
 ## 建立優惠方案 {#creating-the-offer}
 
@@ -53,7 +54,7 @@ ht-degree: 2%
 
 在這些日期以外，互動引擎將不會選取選件。 如果您也已設定優惠方案類別的資格日期，則會套用限制最嚴格的期間。
 
-### 目標上的篩選 {#filters-on-the-target}
+### 目標上的篩選器 {#filters-on-the-target}
 
 您可以將篩選器套用至選件目標。
 
@@ -65,7 +66,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 選件權重 {#offer-weight}
+### 優惠方案權重 {#offer-weight}
 
 若要讓引擎在目標符合資格的多個選件之間做出決定，您需要為選件指派一或多個加權。 您也可以視需要將篩選器套用至目標，或限制權數要套用的選件空間。 較重量較輕的優惠方案，更偏好權重較重的優惠方案。
 

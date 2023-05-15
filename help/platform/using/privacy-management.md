@@ -2,12 +2,14 @@
 product: campaign
 title: 隱私權管理
 description: 進一步瞭解隱私權管理
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: ht
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # 隱私權管理 {#privacy-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign 提供一套工具，以協助您遵守[隱私權法規](#privacy-management-regulations)（包含 GDPR、CCPA、PDPA、LGPD）。
 

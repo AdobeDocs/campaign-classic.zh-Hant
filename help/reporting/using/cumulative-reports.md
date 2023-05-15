@@ -2,9 +2,11 @@
 product: campaign
 title: 累積報告
 description: 累積報告
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 8%
@@ -13,14 +15,14 @@ ht-degree: 8%
 
 # 累積報告 {#cumulative-reports}
 
-![](../../assets/common.svg)
 
-您可以顯示交貨的累計報表。 為此，請選擇要比較的交貨，以獲取這些交貨的報表清單。
+
+您可以顯示傳遞的累積報表。 若要這麼做，請選取要比較的傳送，以取得這些傳送的報表清單。
 
 ![](assets/s_ncs_user_report_compare_tab.png)
 
-要從清單中選擇非相鄰交貨，請在進行選擇時按住CTRL鍵。
+若要從清單中選取非相鄰的傳送，請在選取時按住CTRL鍵。
 
-要選擇保存在其他資料夾中的交貨，請按一下 **[!UICONTROL Display sub-levels]** （可通過工具欄訪問）。 然後，它們將顯示在同一清單中。
+若要選取儲存在不同資料夾中的傳送，請按一下 **[!UICONTROL Display sub-levels]** （可透過工具列存取）。 然後，它們會顯示在相同的清單中。
 
 ![](assets/s_ncs_user_display_children_icon.png)

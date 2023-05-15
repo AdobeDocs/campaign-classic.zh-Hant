@@ -2,11 +2,12 @@
 product: campaign
 title: 優惠主張歷史記錄
 description: 優惠主張歷史記錄
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 exl-id: 480d49e7-0237-4c87-abe8-445b7bf91a30
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 15%
@@ -15,22 +16,22 @@ ht-degree: 15%
 
 # 優惠主張歷史記錄{#offer-proposition-history}
 
-![](../../assets/v7-only.svg)
 
-Once your offer propositions have been made, you can view the presentation history.
+
+一旦您的優惠方案提出後，您就可以查看演示文稿歷史記錄。
 
 >[!NOTE]
 >
 >此功能僅可線上顯示，且僅供傳送管理員檢視。
 
-* At the offer level, in the **[!UICONTROL Edit]** tab, click **[!UICONTROL Propositions]**.
+* 在選件層級，在 **[!UICONTROL Edit]** 按一下 **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
-* From a recipient&#39;s profile, click the **[!UICONTROL Propositions]** tab.
+* 從收件者的設定檔，按一下 **[!UICONTROL Propositions]** 標籤。
 
    ![](assets/offer_followup_002.png)
 
-* At the offer space level, click the **[!UICONTROL Propositions]** tab.
+* 在選件空間層級，按一下 **[!UICONTROL Propositions]** 標籤。
 
    ![](assets/offer_space_prop_001_b.png)

@@ -2,20 +2,21 @@
 product: campaign
 title: 電子郵件封存
 description: 電子郵件封存
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '1359'
+ht-degree: 5%
 
 ---
 
 # 設定電子郵件密件副本 {#email-archiving}
 
-![](../../assets/v7-only.svg)
+
 
 您可以設定Adobe Campaign以保留從您的平台傳送的電子郵件副本。
 
@@ -34,6 +35,9 @@ ht-degree: 3%
 * 電子郵件封存系統已隨Adobe Campaign 17.2（版本編號8795）變更。 如果您已使用電子郵件封存，則必須手動升級至新的電子郵件密件副本系統。 如需詳細資訊，請參閱 [移至新的電子郵件密件副本](#updated-email-archiving-system--bcc-) 區段。
 
 ## 啟用電子郵件密件副本（內部部署） {#activating-email-archiving--on-premise-}
+
+[!BADGE 內部部署與混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"}
+
 
 若要在內部部署Adobe Campaign時啟用BCC電子郵件封存，請遵循下列步驟。
 
@@ -102,6 +106,9 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ## 設定BCC電子郵件地址（內部部署） {#configuring-the-bcc-email-address--on-premise-}
 
+[!BADGE 內部部署與混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"}
+
+
 >[!IMPORTANT]
 >
 >基於隱私理由，BCC電子郵件必須由能夠安全地儲存個人識別資訊(PII)的封存系統處理。
@@ -124,6 +131,10 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >此外，中繼器 **[!UICONTROL Sent]** 狀態至所有電子郵件，包括未傳送的電子郵件。 因此，會封存所有訊息。
 
 ## 移至新的電子郵件密件副本 {#updated-email-archiving-system--bcc-}
+
+[!BADGE 內部部署與混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"}
+
+
 
 >[!IMPORTANT]
 >

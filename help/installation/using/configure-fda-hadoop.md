@@ -2,20 +2,21 @@
 product: campaign
 title: 配置訪問Hadoop
 description: 了解如何在FDA中設定Hadoop存取權
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 配置訪問Hadoop {#configure-access-to-hadoop}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign **同盟資料存取** (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定存取Hadoop。
 
@@ -51,7 +52,7 @@ ht-degree: 1%
 
 1. 設定 **[!UICONTROL Hadoop]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:ODBC(Sybase ASE,Sybase IQ)
+   * **[!UICONTROL Type]**: ODBC (Sybase ASE、Sybase IQ)
 
    * **[!UICONTROL Server]**:DNS的名稱
 
@@ -61,7 +62,7 @@ ht-degree: 1%
 
    * **[!UICONTROL Database]**:未在DSN中指定的資料庫名稱。 如果在DSN中指定，則可將其留空
 
-   * **[!UICONTROL Time zone]**:伺服器時區
+   * **[!UICONTROL Time zone]**: 伺服器時區
 
    ![](assets/hadoop3.png)
 

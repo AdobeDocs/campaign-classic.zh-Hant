@@ -2,13 +2,14 @@
 product: campaign
 title: 測試移轉
 description: 測試移轉
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 4%
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 # 移轉測試{#testing-the-migration}
 
-![](../../assets/v7-only.svg)
+
 
 ## 一般程式 {#general-procedure}
 

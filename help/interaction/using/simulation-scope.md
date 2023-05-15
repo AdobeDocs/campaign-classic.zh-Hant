@@ -2,20 +2,22 @@
 product: campaign
 title: 模擬範圍
 description: 模擬範圍
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # 模擬範圍{#simulation-scope}
 
-![](../../assets/common.svg)
+
 
 ## 範圍的定義 {#definition-of-the-scope}
 
@@ -24,9 +26,9 @@ ht-degree: 2%
 以下是必填項目：
 
 * 環境或選件類別。
-* 優惠方案空間。
-* 聯繫日期。 在聯絡日期不符合資格的優惠方案則不會納入考量。
-* 目標人口。
+* 優惠方案空間.
+* 聯絡日期. 在聯絡日期不符合資格的優惠方案則不會納入考量。
+* 目標母體.
 
    如果您未在目標上設定篩選器，則會考慮整個收件者表格。
 

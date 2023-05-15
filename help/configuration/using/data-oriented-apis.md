@@ -2,66 +2,65 @@
 product: campaign
 title: 資料導向 API
 description: 資料導向 API
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 資料導向 API{#data-oriented-apis}
 
-![](../../assets/v7-only.svg)
+資料導向API可讓您處理整個資料模型。
 
-面向資料的API允許您處理整個資料模型。
+## 資料模型概觀 {#overview-of-the-datamodel}
 
-## 資料模型概述 {#overview-of-the-datamodel}
+Adobe Campaign不為每個實體提供專用的讀取API（沒有getRecipient或getDelivery函式等）。 使用QUERY和WRITER資料讀取和修改方法訪問模型的資料。
 
-Adobe Campaign不為每個實體提供專用的讀API（沒有getRecipient或getDelivery函式等）。 使用QUERY &amp; WRITER資料讀取和修改方法訪問模型的資料。
-
-Adobe Campaign允許您管理收藏：查詢使您能夠恢復整個資料庫中收集的一組資訊。 與在SQL模式下的訪問不同，Adobe CampaignAPI返回XML樹而不是資料列。 Adobe Campaign因此建立包含所有收集資料的複合文檔。
+Adobe Campaign可讓您管理集合：查詢使您能夠恢復整個資料庫中收集的一組資訊。 與在SQL模式下的存取不同，Adobe Campaign API會傳回XML樹狀結構，而非資料欄。 Adobe Campaign因此會建立包含所有收集資料的複合檔案。
 
 此操作模式不提供XML文檔的屬性和元素以及資料庫中表的列之間的一對一映射。
 
 XML文檔儲存在資料庫的MEMO類型欄位中。
 
-## 模型描述 {#description-of-the-model}
+## 模型說明 {#description-of-the-model}
 
-您必須熟悉Adobe Campaign資料模型才能在指令碼中找到資料庫欄位。
+您必須熟悉Adobe Campaign資料模型，才能處理指令碼中資料庫的欄位。
 
-有關資料模型的演示，請參閱 [Adobe Campaign資料模型描述](../../configuration/using/data-model-description.md)。
+如需資料模型的簡報，請參閱 [Adobe Campaign資料模型說明](../../configuration/using/data-model-description.md).
 
-## 查詢和編寫器 {#query-and-writer}
+## 查詢和寫入程式 {#query-and-writer}
 
-下面的介紹架構詳細描述了資料庫和客戶(網頁或Adobe Campaign客戶端控制台)之間用於讀取(ExecuteQuery)和寫入(Writer)的低級別交換。
+以下介紹結構詳細說明了資料庫和客戶(網頁或Adobe Campaign客戶端控制台)之間的讀取(ExecuteQuery)和寫入（寫入器）的低級交換。
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
-### 執行查詢 {#executequery}
+### ExecuteQuery {#executequery}
 
-對於列和條件，可以使用查詢。
+對於欄和條件，您可以使用查詢。
 
-這允許您隔離基礎SQL。 查詢語言不依賴於基礎引擎：某些函式將被重新映射，這可能會生成多個SELECT SQL命令。
+這可讓您隔離基礎SQL。 查詢語言不依賴基礎引擎：某些函式將重新映射，這可能會生成多個SELECT SQL順序。
 
-有關此內容的詳細資訊，請參閱 [架構「xtk:queryDef」的「ExecuteQuery」方法示例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)。
+有關詳細資訊，請參閱 [架構「xtk:queryDef」的「ExecuteQuery」方法範例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-的 **執行查詢** 方法 [ExecuteQuery(xtk:queryDef)](#executequery--xtk-querydef-)。
+此 **ExecuteQuery** 方法如 [ExecuteQuery(xtk:queryDef)](#executequery--xtk-querydef-).
 
 ### 寫入 {#write}
 
-Write命令允許您編寫簡單或複雜的文檔，其中包含基表的一個或多個表中的條目。
+「寫入」命令可以編寫簡單或複雜的文檔，其中的條目位於基表的一個或多個表中。
 
-事務API允許您通過 **更新或插入** 命令：一個命令用於建立或更新資料。 您還可以配置修改合併(**合併**):此操作模式允許您授權部分更新。
+交易API可讓您透過 **updateOrInsert** 命令：一個命令可讓您建立或更新資料。 您也可以配置修改合併(**合併**):此作業模式可讓您授權部分更新。
 
-XML結構提供了資料的邏輯視圖，並允許您迴避SQL表的物理結構。
+XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構。
 
-Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--xtk-session-)。
+寫入方法如下所示： [Write/WriteCollection(xtk:session)](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery(xtk:queryDef) {#executequery--xtk-querydef-}
 
-此方法允許您從與架構關聯的資料中執行查詢。 它需要一個驗證字串（必須登錄）和一個XML文檔，該文檔將要提交的查詢描述為參數。 返回參數是XML文檔，包含查詢結果的格式為查詢引用的架構。
+此方法可讓您從與架構相關聯的資料執行查詢。 它會使用驗證字串（必須登入）和XML檔案，以描述要提交的查詢為參數。 返回參數是XML文檔，包含查詢結果的格式為查詢引用的架構。
 
 &quot;xtk:queryDef&quot;架構中&quot;ExecuteQuery&quot;方法的定義：
 
@@ -75,11 +74,11 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 >[!NOTE]
 >
->這是&quot;const&quot;方法。 輸入參數以&quot;xtk:queryDef&quot;架構的格式包含在XML文檔中。
+>這是「const」方法。 輸入參數以&quot;xtk:queryDef&quot;架構的格式包含在XML文檔中。
 
 ### 輸入查詢的XML文檔格式 {#format-of-the-xml-document-of-the-input-query}
 
-查詢的XML文檔的結構在「xtk:queryDef」架構中進行了描述。 本文檔介紹SQL查詢的子句：&quot;select&quot;、&quot;where&quot;、&quot;order by&quot;、&quot;group by&quot;、&quot;having&quot;。
+查詢的XML文檔結構在「xtk:queryDef」架構中描述。 本文檔描述SQL查詢的子句：&quot;select&quot;、&quot;where&quot;、&quot;order by&quot;、&quot;group by&quot;、&quot;having&quot;。
 
 ```
 <queryDef schema="schema_key" operation="operation_type">
@@ -111,9 +110,9 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </queryDef>
 ```
 
-子查詢( `<subquery>`  )可在  `<condition> `  的子菜單。 的語法   `<subquery> `   元素基於    `<querydef>`。
+子查詢( `<subquery>`  )，可在  `<condition> `  元素。 的語法   `<subquery> `   元素是以    `<querydef>`.
 
-示例 `<subquery>  : </subquery>`
+範例 `<subquery>  : </subquery>`
 
 ```
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
@@ -129,20 +128,20 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
   
 ```
 
-查詢必須引用 **架構** 屬性。
+查詢必須參考 **綱要** 屬性。
 
-所需操作的類型在 **操作** 屬性，並包含以下值之一：
+需要的操作類型在 **操作** 屬性和包含下列其中一個值：
 
-* **得**:從表中檢索記錄，並在資料不存在時返回錯誤，
-* **getIfExists**:從表中檢索記錄，並在資料不存在時返回空文檔，
-* **選擇**:建立游標以返回多個記錄，如果沒有資料則返回空文檔，
-* **計數**:返回資料計數。
+* **get**:從表格中擷取記錄，並在資料不存在時傳回錯誤，
+* **getIfExists**:從表中檢索記錄，如果資料不存在，則返回空文檔，
+* **選取**:建立游標以返回多個記錄，如果沒有資料，則返回空文檔，
+* **計數**:傳回資料計數。
 
-的 **XPath** 語法用於基於輸入模式來定位資料。 有關XPath的詳細資訊，請參閱 [資料架構](../../configuration/using/data-schemas.md)。
+此 **XPath** 語法用於根據輸入架構來定位資料。 有關XPath的詳細資訊，請參閱 [資料結構](../../configuration/using/data-schemas.md).
 
-#### 帶&quot;get&quot;操作的示例 {#example-with-the--get--operation}
+#### &#39;get&#39;操作的範例 {#example-with-the--get--operation}
 
-在電子郵件上檢索帶過濾器的收件人（「nms:recipient」架構）的姓氏和名字。
+在電子郵件上帶有篩選器，擷取收件者的姓氏和名字（「nms:recipient」架構）。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -159,9 +158,9 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </queryDef>
 ```
 
-#### 帶「select」操作的示例 {#example-with-the--select--operation}
+#### 「select」操作的示例 {#example-with-the--select--operation}
 
-返回在出生日期按降序排序的資料夾和電子郵件域上篩選的收件人清單。
+傳回在資料夾和電子郵件網域上篩選的收件者清單，其排序在出生日期以遞減順序排序。
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -184,9 +183,9 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </queryDef>
 ```
 
-表達式可以是簡單欄位或複雜表達式，如算術運算或字串串聯。
+運算式可以是簡單欄位或複雜的運算式，例如算術運算或字串的串連。
 
-要限制要返回的記錄數，請添加 **行計數** 屬性 `<querydef>` 的子菜單。
+若要限制要傳回的記錄數，請新增 **lineCount** 屬性 `<querydef>` 元素。
 
 要將查詢返回的記錄數限制為100:
 
@@ -195,16 +194,16 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 ...
 ```
 
-要檢索下100條記錄，請再次運行同一查詢，並添加 **開始行** 屬性。
+若要擷取接下來的100筆記錄，請再次執行相同的查詢，並新增 **startLine** 屬性。
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
 ...
 ```
 
-#### 帶「count」操作的示例 {#example-with-the--count--operation}
+#### 「count」操作的範例 {#example-with-the--count--operation}
 
-要計數查詢上的記錄數：
+要計算查詢上的記錄數：
 
 ```
 <queryDef schema="nms:recipient" operation="count"">
@@ -217,7 +216,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 >[!NOTE]
 >
->我們再次使用上例中的條件。 的 `<select>` 和子句。 `</select>`
+>我們再次使用上一個範例中的條件。 此 `<select>` 不會使用和子句。 `</select>`
 
 #### 資料分組 {#data-grouping}
 
@@ -243,7 +242,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </queryDef>
 ```
 
-通過添加 **分組依據** 屬性直接到要分組的欄位：
+可借由新增 **groupBy** 屬性直接歸類至要分組的欄位：
 
 ```
 <select>
@@ -253,13 +252,13 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 >[!NOTE]
 >
->不再需要填充 `<groupby>` 的子菜單。
+>不再需要填入 `<groupby>` 元素。
 
 #### 條件中的括弧 {#bracketing-in-conditions}
 
-以下是兩個在相同條件下進行括弧的例子。
+以下是兩個在相同條件下加括弧的範例。
 
-* 單個表達式中的簡單版本：
+* 單一運算式中的簡單版本：
 
    ```
    <where>
@@ -282,7 +281,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </where>
    ```
 
-當多個條件應用於同一欄位時，可以將「OR」運算子替換為「IN」運算：
+若有數個條件套用至相同欄位時，可將「OR」運算子取代為「IN」運算：
 
 ```
 <where>
@@ -293,13 +292,13 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </where>
 ```
 
-此語法在條件中使用兩個以上資料時簡化了查詢。
+條件中使用超過兩個資料時，此語法可簡化查詢。
 
-#### 連結示例 {#examples-on-links}
+#### 連結範例 {#examples-on-links}
 
-* 連結1-1或N1:當表具有外鍵（連結從表開始）時，可以直接過濾或檢索連結表的欄位。
+* 連結1-1或N1:當表具有外鍵時（連結從表開始），可以篩選或直接檢索連結表的欄位。
 
-   資料夾標籤上的篩選器示例：
+   資料夾標籤的篩選器範例：
 
    ```
    <where>
@@ -307,7 +306,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </where>
    ```
 
-   要從「nms:recipient」架構檢索資料夾的欄位，請執行以下操作：
+   要從「nms:recipient」架構中檢索資料夾的欄位，請執行以下操作：
 
    ```
    <select>
@@ -318,9 +317,9 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </select>
    ```
 
-* 集合連結(1N):必須通過 **存在** 或 **不存在** 運算子。
+* 集合連結(1N):篩選集合表格的欄位必須透過 **存在** 或 **不存在** 運算元。
 
-   要篩選訂閱「新聞簡訊」資訊服務的收件人：
+   若要篩選已訂閱「電子報」資訊服務的收件者：
 
    ```
    <where>
@@ -330,9 +329,9 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </where>
    ```
 
-   從中直接檢索集合連結的欄位 `<select>` 不建議使用子句，因為查詢返回主要產品。 僅當連結表僅包含一條記錄時才使用它（示例） `<node expr="">`)。
+   從 `<select>` 不建議使用子句，因為查詢返回主產品。 只有在連結的表只包含一個記錄時才會使用（範例） `<node expr="">`)。
 
-   「訂閱」集合連結示例：
+   「訂閱」集合連結的範例：
 
    ```
    <select>
@@ -340,11 +339,11 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </select>
    ```
 
-   可以檢索包含集合連結元素的子清單 `<select>` 。 引用欄位的XPaths是集合元素中的上下文。
+   您可以擷取包含 `<select>` 條。 參考欄位的XPath與集合元素相關。
 
-   篩選( `<orderby>`  )和限制(  `<where>`  )元素可添加到集合元素。
+   篩選( `<orderby>`  )和限制(  `<where>`  )元素。
 
-   在此示例中，對於每個收件人，查詢將返回收件人訂閱的電子郵件和資訊服務清單：
+   在此示例中，對於每個收件者，查詢將返回收件者訂閱的電子郵件和資訊服務清單：
 
    ```
    <queryDef schema="nms:recipient" operation="select">
@@ -366,11 +365,11 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </queryDef>
    ```
 
-#### 綁定「where」和「select」子句的參數 {#binding-the-parameters-of-the--where--and--select--clause}
+#### 綁定&#39;where&#39;和&#39;select&#39;子句的參數 {#binding-the-parameters-of-the--where--and--select--clause}
 
-通過綁定參數，引擎可以設定查詢中使用的參數的值。 這非常有用，因為引擎負責值的轉義，而且快取對於要檢索的參數還有額外的好處。
+參數的捆綁可讓引擎設定查詢中使用的參數的值。 這非常有用，因為引擎負責值的逸出，而且快取對於要擷取的參數有額外的好處。
 
-構造查詢時，「綁定」值將替換為字元(?) 在ODBC中， `#[index]#` 在SQL查詢的正文中。)
+建構查詢時，「界定」值會由字元(? 在ODBC中， `#[index]#` （在postgres...），在SQL查詢的正文中。
 
 ```
 <select>
@@ -381,25 +380,25 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </select>
 ```
 
-要避免綁定參數，必須使用值「true」填充「noSqlBind」屬性。
+要避免綁定參數，必須用值「true」填充「noSqlBind」屬性。
 
 >[!IMPORTANT]
 >
->如果查詢包含「order-by」或「group-by」指令，則資料庫引擎將無法「綁定」值。 必須將@noSqlBind=&quot;true&quot;屬性放在查詢的&quot;select&quot;和/或&quot;where&quot;說明上。
+>如果查詢包含「order-by」或「group-by」指令，則資料庫引擎將無法「綁定」值。 必須將@noSqlBind=&quot;true&quot;屬性放置在查詢的&quot;select&quot;和/或&quot;where&quot;指示上。
 
-#### 查詢生成提示： {#query-building-tip-}
+#### 查詢建立提示： {#query-building-tip-}
 
-要幫助處理查詢的語法，可以使用Adobe Campaign客戶端控制台中的通用查詢編輯器( **[!UICONTROL Tools/ Generic query editor...]** )的正平方根。 操作步驟：
+若要協助處理查詢的語法，您可以使用Adobe Campaign用戶端主控台中的一般查詢編輯器( **[!UICONTROL Tools/ Generic query editor...]** 功能表)。 操作步驟：
 
-1. 選擇要檢索的資料：
+1. 選取要擷取的資料：
 
    ![](assets/s_ncs_integration_webservices_queyr1.png)
 
-1. 定義篩選器條件：
+1. 定義篩選條件：
 
    ![](assets/s_ncs_integration_webservices_queyr2.png)
 
-1. 執行查詢，然後按CTRL+F4查看查詢原始碼。
+1. 執行查詢並按CTRL+F4以查看查詢原始碼。
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
@@ -407,13 +406,13 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 返回參數是與查詢關聯的架構格式的XML文檔。
 
-從&quot;nms:recipient&quot;架構返回「get」操作的示例：
+從&quot;get&quot;操作上的&quot;nms:recipient&quot;架構傳回的範例：
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
 ```
 
-在「select」操作中，返回的文檔是元素的枚舉：
+在「select」操作中，傳回的檔案是元素的列舉：
 
 ```
 <!-- the name of the first element does not matter -->
@@ -432,7 +431,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 #### 別名 {#alias}
 
-使用別名可以修改輸出文檔中資料的位置。 的 **別名** 屬性必須在相應欄位上指定XPath。
+別名可讓您修改輸出檔案中的資料位置。 此 **別名** 屬性必須在對應欄位上指定XPath。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -444,13 +443,13 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </queryDef>
 ```
 
-返回：
+傳回值:
 
 ```
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
-而不是：
+而非：
 
 ```
 <recipient firstName="John" lastName="Doe">
@@ -458,7 +457,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </recipient>
 ```
 
-### SOAP消息示例 {#example-of-soap-messages}
+### SOAP消息的示例 {#example-of-soap-messages}
 
 * 查詢:
 
@@ -485,7 +484,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </SOAP-ENV:Envelope>
    ```
 
-* 響應：
+* 回應:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -500,15 +499,15 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </SOAP-ENV:Envelope>
    ```
 
-## 寫/寫集合(xtk:session) {#write---writecollection--xtk-session-}
+## Write/WriteCollection(xtk:session) {#write---writecollection--xtk-session-}
 
-這些服務用於插入、更新或刪除實體（「寫」方法）或實體集合（「寫」集合方法）。
+這些服務用於插入、更新或刪除實體（「寫入」方法）或實體集合（「寫入收集」方法）。
 
-要更新的實體與資料模式相關聯。 輸入參數是驗證字串（必須登錄）和包含要更新的資料的XML文檔。
+要更新的實體與資料架構相關聯。 輸入參數是驗證字串（必須登錄）和包含要更新資料的XML文檔。
 
-本文檔還附有配置寫入過程的說明。
+本文檔還附有配置寫程式的說明。
 
-除錯誤外，調用不返回任何資料。
+呼叫不會傳回任何資料，但發生錯誤除外。
 
 &quot;xtk:session&quot;架構中&quot;Write&quot;和&quot;WriteCollection&quot;方法的定義：
 
@@ -527,27 +526,27 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 >[!NOTE]
 >
->這是&quot;靜態&quot;方法。 輸入參數以要更新的模式的格式包括在XML文檔中。
+>這是「靜態」方法。 輸入參數以要更新的架構格式包含在XML文檔中。
 
 ### 概覽 {#overview}
 
-資料協調基於在關聯模式中輸入的鍵的定義操作。 寫入過程基於輸入文檔中輸入的資料來查找第一合格密鑰。 根據實體在資料庫中的存在，插入或更新該實體。
+資料協調會根據在相關聯架構中輸入之索引鍵的定義而運作。 寫入過程基於輸入文檔中輸入的資料來查找第一合格密鑰。 根據實體在資料庫中的存在，插入或更新實體。
 
-要更新的實體的架構的密鑰根據 **xtkschema** 屬性。
+要更新之實體架構的索引鍵會根據 **xtkschema** 屬性。
 
-因此，可以使用 **鍵** 屬性包含構成鍵的XPath的清單（以逗號分隔）。
+因此，調解金鑰可以使用 **_key** 包含組成索引鍵的XPaths清單的屬性（以逗號分隔）。
 
-通過填充 **操作** 屬性，其值如下：
+可借由填入 **_operation** 屬性，且值如下：
 
-* **插入**:強制插入記錄（未使用協調密鑰）,
-* **插入或更新**:根據對帳鍵（預設模式）更新或插入記錄，
-* **更新**:更新記錄；如果資料不存在，
+* **插入**:強制插入記錄（不使用調解金鑰）,
+* **insertOrUpdate**:根據調解鍵（預設模式）更新或插入記錄，
+* **更新**:更新記錄；若資料不存在，則不會執行任何動作，
 * **刪除**:刪除記錄，
-* **無**:僅用於連結協調，不進行更新或插入。
+* **無**:僅用於連結調解，不需更新或插入。
 
-### 帶「Write」方法的示例 {#example-with-the--write--method}
+### 「Write」方法的範例 {#example-with-the--write--method}
 
-使用電子郵件地址、出生日期和鎮更新或插入收件人（隱式「insertOrUpdate」操作）:
+使用電子郵件地址、出生日期和鎮更新或插入收件者（隱含的「insertOrUpdate」操作）:
 
 ```
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
@@ -555,7 +554,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </recipient>
 ```
 
-刪除收件人：
+刪除收件者：
 
 ```
 <recipient xtkschema="nms:recipient" _operation="delete" email="rene.dupont@adobe.com" folder-id=1203 _key="@email, [@folder-id]"/>
@@ -563,11 +562,11 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 >[!NOTE]
 >
->對於刪除操作，輸入文檔只能包含構成協調鍵的欄位。
+>對於刪除操作，輸入文檔只能包含構成調解密鑰的欄位。
 
-### 「WriteCollection」方法示例 {#example-with-the--writecollection--method}
+### &#39;WriteCollection&#39;方法的範例 {#example-with-the--writecollection--method}
 
-更新或插入多個收件人：
+更新或插入多個收件者：
 
 ```
 <recipient-collection xtkschema="nms:recipient">    
@@ -577,11 +576,11 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </recipient-collection>
 ```
 
-### 連結示例 {#example-on-links}
+### 連結範例 {#example-on-links}
 
-#### 示例1 {#example-1}
+#### 範例1 {#example-1}
 
-根據資料夾的內部名稱(@name)將其與收件人關聯。
+根據資料夾的內部名稱(@name)將資料夾與收件者關聯。
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -589,17 +588,17 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </recipient>
 ```
 
-可以在連結的元素上輸入「_key」和「_operation」屬性。 此元素上的行為與輸入架構的主元素上的行為相同。
+可在連結的元素上輸入「_key」和「_operation」屬性。 此元素上的行為與輸入架構之主要元素上的行為相同。
 
-主實體(「nms:recipient」)的鍵的定義由連結表（元素）中的欄位組成 `<folder>`  架構「xtk:folder」)和電子郵件。
+主實體(「nms:recipient」)的鍵的定義由連結表（元素）中的欄位組成 `<folder>`  結構&quot;xtk:folder&quot;)和電子郵件。
 
 >[!NOTE]
 >
->在資料夾元素上輸入的操作「無」定義了在資料夾上進行的協調，而不進行更新或插入。
+>在資料夾元素上輸入的操作「無」定義了資料夾上的協調，無需更新或插入。
 
-#### 示例2 {#example-2}
+#### 範例2 {#example-2}
 
-從收件人更新公司（「cus:company」架構中的連結表）:
+從收件者更新公司（「cus:company」架構中的連結表格）:
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -607,9 +606,9 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 </recipient>
 ```
 
-#### 示例3 {#example-3}
+#### 範例3 {#example-3}
 
-將收件人添加到具有組關係表(「nms:rcpGrpRel」)的組：
+將收件者新增至具有群組關係表(&quot;nms:rcpGrpRel&quot;)的群組：
 
 ```
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -621,13 +620,13 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
 
 >[!NOTE]
 >
->未在 `<rcpgroup>` 元素，因為基於組名的隱式鍵是在「nms:group」架構中定義的。
+>未在 `<rcpgroup>` 元素，因為在「nms:group」架構中定義了基於組名的隱式鍵。
 
 ### XML集合元素 {#xml-collection-elements}
 
-預設情況下，必須填充所有收集要素，才能更新XML收集要素。 來自資料庫的資料將替換為來自輸入文檔的資料。 如果文檔只包含要更新的元素，則必須在要更新的所有收集元素上填充「_operation」屬性，以強制與資料庫的XML資料合併。
+預設情況下，必須填入所有集合元素，才能更新XML集合元素。 來自資料庫的資料將替換為來自輸入文檔的資料。 如果文檔僅包含要更新的元素，則必須在要更新的所有收集元素上填充「_operation」屬性，以強制與資料庫的XML資料合併。
 
-### SOAP消息示例 {#example-of-soap-messages-1}
+### SOAP消息的示例 {#example-of-soap-messages-1}
 
 * 查詢:
 
@@ -645,7 +644,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </SOAP-ENV:Envelope>
    ```
 
-* 響應：
+* 回應:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -657,7 +656,7 @@ Write方法在中介紹 [寫/寫集合(xtk:session)](#write---writecollection--x
    </SOAP-ENV:Envelope>
    ```
 
-   返回時出錯：
+   返回，但出現錯誤：
 
    ```
    <?xml version='1.0'?>

@@ -2,20 +2,22 @@
 product: campaign
 title: 設定資產存取權
 description: 設定資產存取權
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 設定資產存取權{#configuring-access-to-assets}
 
-![](../../assets/common.svg)
+
 
 本節詳細說明Adobe Campaign中使用與Assets核心服務或Adobe Experience Manager Assets(AEM Assets)程式庫整合功能的必要設定步驟。
 
@@ -69,7 +71,7 @@ ht-degree: 1%
 
    ![](assets/dam_aem_assets1.png)
 
-當您根據此範本將影像插入傳遞的內容時， **[!UICONTROL Select a shared asset]** 選項，即可瀏覽AEM Assets資料庫中的影像。 深入了解 [本節](../../integrations/using/inserting-a-shared-asset.md).
+當您根據此範本將影像插入傳遞的內容時， **[!UICONTROL Select a shared asset]** 選項，即可瀏覽AEM Assets資料庫中的影像。 在[本章節](../../integrations/using/inserting-a-shared-asset.md)了解更多資訊。
 
 >[!NOTE]
 >

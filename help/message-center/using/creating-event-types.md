@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 建立事件類型
-description: 了解如何建立符合您要在Adobe Campaign Classic中傳送的交易式訊息的事件類型。
+description: 了解如何建立符合您要在Adobe Campaign Classic中傳送的交易式訊息的事件類型
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 建立事件類型 {#creating-event-types}
 
-![](../../assets/v7-only.svg)
+
 
 若要確保每個事件都可變更為個人化訊息，您必須先建立 **事件類型**.
 

@@ -1,18 +1,20 @@
 ---
 product: campaign
-title: 開始使用 cubes
-description: 開始使用 cubes
+title: 開始使用多維度資料集
+description: 開始使用多維度資料集
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Reporting
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '343'
 ht-degree: 24%
 
 ---
 
-# 開始使用 cubes{#about-cubes}
+# 開始使用多維度資料集{#about-cubes}
 
-![](../../assets/v7-only.svg)
+
 
 探索資料庫中的資料，可透過 **行銷分析** 模組。 它可讓您分析和測量資料、計算統計資料、簡化並最佳化報表建立和計算。 除此之外，Marketing Analytics還可讓您建立報表和建立目標母體。 識別完這些值後，就會儲存在可用於Adobe Campaign（鎖定目標、細分等）的清單中。
 
@@ -28,7 +30,7 @@ ht-degree: 24%
 
 使用Campaign Marketing Analytics模組可以：
 
-1. 建立立方
+1. 建立多維度資料集
 
    * 匯總資料並儲存在工作表中，以根據使用者需求預先計算指標，
    * 減少用於報告和查詢的各種計算中涉及的資料量，從而顯著優化指標計算時間，
@@ -44,4 +46,4 @@ ht-degree: 24%
 1. 使用在多維資料集中計算和匯總的資料建立查詢。
 1. 識別母體，並在清單中參照母體。
 
-了解如何在中建立和使用立方體 [Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target=&quot;_blank&quot;}。
+了解如何在中建立和使用立方體 [Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.

@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 事件處理
-description: 了解在Adobe Campaign Classic中如何處理交易式訊息事件。
+description: 了解在Adobe Campaign Classic中如何處理交易式訊息事件
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 事件處理 {#about-event-processing}
 
-![](../../assets/v7-only.svg)
+
 
 在交易式訊息傳送的內容中，事件由外部資訊系統產生，並透過 **[!UICONTROL PushEvent]** 和 **[!UICONTROL PushEvents]** 方法(請參閱 [事件說明](../../message-center/using/event-description.md))。
 

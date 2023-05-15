@@ -2,9 +2,10 @@
 product: campaign
 title: 建立篩選器
 description: 了解如何在執行查詢時建立篩選器
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 6232e0df09165bc07c8e521df271874abd5698a9
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 建立篩選器 {#creating-a-filter}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign中可用的篩選器是透過篩選條件來定義，這些篩選條件是使用與查詢相同的作業模式建立。
 

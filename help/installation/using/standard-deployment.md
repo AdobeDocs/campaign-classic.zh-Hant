@@ -2,11 +2,12 @@
 product: campaign
 title: 標準部署
 description: 標準部署
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 標準部署{#standard-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 此配置需要三台電腦：
 
@@ -43,7 +44,7 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 
 ## 安裝和配置步驟 {#installation-and-configuration-steps}
 
-### 先決條件 {#prerequisites}
+### 必要條件 {#prerequisites}
 
 * JDK在所有三台電腦上，
 * 兩個前端上的Web伺服器(IIS、Apache),
@@ -65,7 +66,7 @@ DMZ中的兩台伺服器處理跟蹤、鏡像頁和傳遞，並且冗餘以實�
 在下列範例中，例項的參數為：
 
 * 執行個體的名稱： **示範**
-* DNS掩碼： **console.campaign.net*** (僅用於客戶端控制台連接和報告。
+* DNS掩碼： **console.campaign.net&#42;** (僅用於客戶端控制台連接和報告。
 * 語言：英文
 * 資料庫： **campaign:demo@dbsrv**
 

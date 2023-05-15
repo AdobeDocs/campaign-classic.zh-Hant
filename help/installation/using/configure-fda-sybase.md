@@ -2,20 +2,21 @@
 product: campaign
 title: 配置對Sybase IQ的訪問
 description: 了解如何在FDA中設定Sybase IQ的存取權
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 配置對Sybase IQ的訪問 {#configure-access-to-sybase-iq}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign **同盟資料存取** (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定對Sybase IQ的存取權。
 
@@ -76,7 +77,7 @@ Sybase IQ外部帳戶可讓您將Campaign執行個體連結至Sybase IQ外部資
 
 1. 若要設定 **[!UICONTROL Sybase IQ]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**:ODBC(Sybase ASE,Sybase IQ)
+   * **[!UICONTROL Type]**: ODBC (Sybase ASE、Sybase IQ)
 
    * **[!UICONTROL Server]**:與ODBC連接(`<server_alias>`)。 不一定是伺服器本身的名稱。
 

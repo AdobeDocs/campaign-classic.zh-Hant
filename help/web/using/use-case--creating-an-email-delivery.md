@@ -2,9 +2,11 @@
 product: campaign
 title: 使用案例 — 建立電子郵件傳送
 description: 使用案例 — 建立電子郵件傳送
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 使用實例：建立電子郵件傳遞{#use-case-creating-an-email-delivery}
 
-![](../../assets/common.svg)
+
 
 在此使用案例中，您將學習使用Adobe Campaign數位內容編輯器(DCE)來設計電子郵件傳送的步驟。
 

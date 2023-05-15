@@ -1,19 +1,20 @@
 ---
 product: campaign
 title: 監視指南
-description: 探索監控 Campaign 執行個體和程序的準則和最佳作法。
+description: 探索監控Campaign執行個體和程式的准則和最佳實務
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '762'
+ht-degree: 19%
 
 ---
 
 # 監視指南 {#monitoring-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## 執行個體監控控制面板 {#instance-monitoring-dashboard}
 

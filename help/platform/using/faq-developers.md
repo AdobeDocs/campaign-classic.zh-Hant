@@ -2,11 +2,12 @@
 product: campaign
 title: 開發人員常見問題集
 description: 開發人員常見問題集
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 97%
@@ -15,7 +16,7 @@ ht-degree: 97%
 
 # 開發人員常見問題集 {#dev-faq}
 
-![](../../assets/v7-only.svg)
+
 
 作為一個開放式解決方案，Adobe Campaign 可進行自訂，以及供進階應用程式開發使用。
 
@@ -39,7 +40,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 ## 如何使用自訂的收件者表格？ {#how-to-use-a-custom-recipient-table-}
 
-您可以在市場活動中建立並實施非內置的收件人表，以發送您的郵件。
+您可以在Campaign中建立並實作非內建的收件者表格，以傳送訊息。
 
 [按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 

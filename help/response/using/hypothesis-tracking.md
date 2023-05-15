@@ -2,11 +2,13 @@
 product: campaign
 title: 追蹤假設
 description: 了解如何在Campaign回應管理員中追蹤假設
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 假設追蹤{#hypothesis-tracking}
 
-![](../../assets/common.svg)
+
 
 假設計算的結果適用於Adobe Campaign平台的不同層級：由假設和目標群體反應計算的指標可透過實際假設以及透過促銷活動和傳送提供的假設報告中看到。
 

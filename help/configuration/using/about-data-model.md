@@ -2,9 +2,10 @@
 product: campaign
 title: 開始使用Campaign Classic資料模型
 description: 了解如何延伸 Campaign 資料模型、編輯結構描述，以及使用 API 等
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -12,8 +13,6 @@ ht-degree: 6%
 ---
 
 # 開始使用 Campaign 資料模型{#about-data-model}
-
-![](../../assets/v7-only.svg)
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，本頁面列出主要表格和概念。
 

@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: 關於一般匯入和匯出
-description: 進一步了解一般匯入和匯出。
+description: 進一步了解一般匯入和匯出
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # 開始使用匯入和匯出工作 {#about-generic-imports-exports}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign Classic提供一般匯入和匯出。 例如，它們允許您提取客戶或潛在客戶的清單，這些客戶或潛在客戶隨後將成為目標人口的一部分，或向您的資料庫提供來自外部檔案的資料。
 

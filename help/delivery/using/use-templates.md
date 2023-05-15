@@ -2,9 +2,11 @@
 product: campaign
 title: 使用傳遞範本
 description: 使用傳遞範本
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 1%
@@ -13,58 +15,58 @@ ht-degree: 1%
 
 # 使用範本 {#use-templates}
 
-![](../../assets/common.svg)
 
-交付模板通過為大多數常見活動類型提供現成的方案而提高了效率。 使用模板，營銷人員可以在較短的時間內部署具有最小定制量的新市場活動。
 
-瞭解有關中的交付模板的詳細資訊 [此部分](creating-a-delivery-template.md)。
+傳遞範本可為最常見的活動類型提供現成的案例，借此提高效率。 透過範本，行銷人員可以在較短的時間內以最少的自訂方式部署新的行銷活動。
 
-## 交貨模板入門 {#gs-templates}
+進一步了解傳遞範本，位於 [本節](creating-a-delivery-template.md).
 
-A [交貨模板](creating-a-delivery-template.md) 使您能夠一次定義一組適合您需要且可重複使用以用於將來交貨的技術和功能屬性。 然後，您可以節省時間，並在需要時使交貨標準化。
+## 開始使用傳遞範本 {#gs-templates}
 
-當您在Adobe Campaign管理多個品牌時，Adobe建議每個品牌有一個子域。 例如，銀行可以具有與其每個區域機構對應的多個子域。 如果銀行擁有bluebank.com域，其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每個子域有一個交付模板使您始終能夠為每個品牌使用正確的預先配置的參數，這樣可避免錯誤並節省時間。
+A [傳遞範本](creating-a-delivery-template.md) 可讓您一次定義一組技術和功能屬性，以符合您的需求，並可重新用於未來的傳送。 然後，您就可以視需要節省時間並標準化傳送。
 
-**提示**:為避免配置錯誤，建議您複製本機模板並更改其屬性，而不是建立新模板。
+當您在Adobe Campaign中管理多個品牌時，Adobe建議每個品牌有一個子網域。 例如，銀行可以有與其每個地區機構對應的數個子網域。 如果銀行擁有bluebank.com域，其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每個子網域有一個傳送範本可讓您一律為每個品牌使用正確的預先設定參數，以避免錯誤並節省時間。
+
+**筆尖**:為避免設定錯誤，建議您複製原生範本並變更其屬性，而非建立新範本。
 
 ## 配置地址
 
-* 發件人地址是允許發送電子郵件的必需地址。
+* 寄件者的地址是必填欄位，以允許傳送電子郵件。
 
-* 某些ISP（Internet服務提供商）在接受消息之前檢查發送者地址的有效性。
+* 某些ISP（網際網路服務提供者）在接受訊息之前，會檢查寄件者地址的有效性。
 
-* 格式錯誤的地址可能導致接收伺服器拒絕它。 您必須確保提供了正確的地址。
+* 錯誤形成的地址可能導致接收伺服器拒絕該地址。 您必須確保提供正確的地址。
 
 * 地址必須明確標識發件人。 域必須由發件人擁有並註冊。
 
-* Adobe建議建立與為遞送和回復指定的地址對應的電子郵件帳戶。 請咨詢消息系統管理員。
+* Adobe建議建立與為傳送和回覆指定的地址對應的電子郵件帳戶。 請咨詢您的消息系統管理員。
 
-要在市場活動介面中配置地址，請執行以下步驟：
+若要在Campaign介面中設定位址，請遵循下列步驟：
 
-1. 在 [交貨模板](creating-a-delivery-template.md)，按一下 **[!UICONTROL From]** 的子菜單。 在 **[!UICONTROL Email header parameters]** 的子菜單。
+1. 在 [傳遞範本](creating-a-delivery-template.md)，按一下 **[!UICONTROL From]** 連結。 在 **[!UICONTROL Email header parameters]** ，請填寫以下欄位：
 
    ![](assets/d_best_practices_email_header.png)
 
-1. 在 **[!UICONTROL Sender address]** 欄位，確保地址域與您委託給Adobe的子域相同。 您可以更改「@」之前的部件，但不能更改域地址。
+1. 在 **[!UICONTROL Sender address]** 欄位中，確認地址網域與您委派給Adobe的子網域相同。 您可以更改「@」之前的部分，但不能更改域地址。
 
-1. 在 **[!UICONTROL From]** 欄位中，使用易於被收件人識別的名稱（如您的品牌名稱）來增加交貨的開始率。 為了進一步改善接收者的體驗，您可以添加一個人的姓名，例如「Emma from Megastore」。
+1. 在 **[!UICONTROL From]** 欄位中，使用可供收件者輕鬆識別的名稱（例如您的品牌名稱），以提高傳送的開啟率。 若要進一步改善收件者的體驗，您可以新增人員名稱，例如「Emma from Megastore」。
 
-1. 在 **[!UICONTROL Reply address text]** 欄位中，預設情況下使用發件人地址進行答復。 但是，Adobe建議使用現有的實際地址，如您品牌的客戶服務。 在這種情況下，如果收件人發送回復，客戶服務將能夠處理。
+1. 在 **[!UICONTROL Reply address text]** 欄位中，預設會使用寄件者的地址來回覆。 不過，Adobe建議使用現有的實際位址，例如您的品牌客戶服務。 在此情況下，如果收件者傳送回覆，客戶服務將能處理。
 
 ### 設定控制組
 
-發送遞送後，您可以將排除的收件人的行為與收到遞送的收件人進行比較。 然後，您可以衡量您的活動的效率。 瞭解有關控制組的詳細資訊 [此部分](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
+傳送後，您可以比較已排除收件者的行為與已接收傳送的收件者。 然後，您可以測量行銷活動的效率。 進一步了解控制組 [本節](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-要設定控制組，請按一下 **[!UICONTROL To]** 的子菜單。 在 **[!UICONTROL Select target]** ，選擇 **[!UICONTROL Control group]** 頁籤。 可以提取目標的一部分，例如5%的隨機樣本。
+若要設定控制組，請按一下 **[!UICONTROL To]** 連結。 在 **[!UICONTROL Select target]** ，選擇 **[!UICONTROL Control group]** 標籤。 您可以擷取目標的一部分，例如5%的隨機樣本。
 
 ![](assets/d_best_practices_control_group.png)
 
-## 使用類型來應用篩選器或控制規則
+## 使用類型來套用篩選器或控制規則
 
-類型包含在分析階段應用的檢查規則，然後才會發送任何消息。
+類型包含在分析階段期間套用的檢查規則，然後再傳送任何訊息。
 
-在 **[!UICONTROL Typology]** 的子菜單。
+在 **[!UICONTROL Typology]** 索引標籤，根據您的需求變更預設類型。
 
-例如，為了更好地控制出站通信量，可以通過為每個子域定義一個關聯和為每個關聯建立一個類型來定義可以使用哪些IP地址。 關聯在實例的配置檔案中定義。 聯繫您的Adobe Campaign管理員。
+例如，為了更妥善地控制傳出流量，您可以定義可使用的IP位址，方法是為每個子網域定義一個相關性，並為每個相關性建立一個類型。 相關性會在執行個體的設定檔案中定義。 請連絡您的Adobe Campaign管理員。
 
-有關類型的詳細資訊，請參閱 [此部分](../../campaign-opt/using/about-campaign-typologies.md)。
+如需類型的詳細資訊，請參閱 [本節](../../campaign-opt/using/about-campaign-typologies.md).

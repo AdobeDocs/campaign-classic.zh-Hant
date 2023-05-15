@@ -2,11 +2,13 @@
 product: campaign
 title: 與Adobe Experience Cloud共用受眾
 description: 與Adobe Experience Cloud共用受眾
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 63%
@@ -15,7 +17,7 @@ ht-degree: 63%
 
 # 與Adobe Experience Cloud共用受眾{#sharing-audiences-with-adobe-experience-cloud}
 
-![](../../assets/common.svg)
+
 
 >[!CAUTION]
 >
@@ -23,7 +25,7 @@ ht-degree: 63%
 
 透過Adobe Campaign，您可以與Adobe Experience Cloud解決方案及核心服務共用受眾和區段。 有兩個選項可用：
 
-1. 將Adobe Experience Platform區段資料傳送至Adobe Campaign。 若要實作此整合，您需要將Real-time Customer Data Platform連線至Campaign(RTCDP)。 [在本節了解更多資訊](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+1. 將Adobe Experience Platform區段資料傳送至Adobe Campaign。 若要實作此整合，您需要將Real-time Customer Data Platform連線至Campaign(RTCDP)。 [在本章節了解更多資訊](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
 1. 整合 **Adobe Campaign** with **人員核心服務** (也稱為 **設定檔與受眾核心服務**)或Adobe Audience Manager。 之後，您將能夠：
 

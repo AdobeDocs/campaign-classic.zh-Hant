@@ -2,10 +2,12 @@
 product: campaign
 title: 管線疑難排解
 description: 管線疑難排解
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -14,7 +16,7 @@ ht-degree: 1%
 
 # 管線疑難排解 {#pipeline-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 **流水線失敗，錯誤為「沒有任務與掩碼流水線@&lt;實例>」**
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 1. 檢查 [!DNL pipelined] 元素存在於設定檔案中。 否則表示不支援。
 1. 升級至Campaign 20.3 / [!DNL Gold Standard] 11或更高。
 
-**管道失敗，出現「 aurait dü commencer par」 `[` 歐 `{` (iRc=16384)」**
+**管道失敗，出現「 aurait dbu commencer par」 `[` 歐 `{` (iRc=16384)」**
 
 此 **NmsPipeline_Config** 選項。 實際上是JSON剖析錯誤。
 在選項中設定JSON設定 **NmsPipeline_Config**. 請參閱本頁的「路由選項」。

@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: 一般匯入範例
-description: 進一步了解您可以使用匯入工作執行的一般匯入。
+description: 進一步了解您可以使用匯入工作執行的一般匯入
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 64%
@@ -15,7 +17,7 @@ ht-degree: 64%
 
 # 一般匯入範例 {#import-operations-samples}
 
-![](../../assets/common.svg)
+
 
 ## 從收件者清單匯入 {#example--import-from-a-list-of-recipients}
 
@@ -90,7 +92,7 @@ ht-degree: 64%
 
       ![](assets/s_ncs_user_import_example06_01.png)
 
-      此 **[!UICONTROL Tracking]** 模式可讓您追蹤來源檔案中每個記錄的匯入詳細資訊。 若要這麼做，請在首頁按一下 **[!UICONTROL Profiles and Targets]** then **[!UICONTROL Processes]**，請選取相關匯入，並查看 **[!UICONTROL General]**, **[!UICONTROL Journal]** 和 **[!UICONTROL Rejects]** 頁簽。
+      此 **[!UICONTROL Tracking]** 模式可讓您追蹤來源檔案中每個記錄的匯入詳細資訊。 若要這麼做，請在首頁按一下 **[!UICONTROL Profiles and Targets]** then **[!UICONTROL Processes]**，請選取相關匯入，並查看 **[!UICONTROL General]**, **[!UICONTROL Journal]** 和 **[!UICONTROL Rejects]** 標籤。
 
       * 檢查匯入進度
 

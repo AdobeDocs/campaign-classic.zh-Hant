@@ -2,11 +2,13 @@
 product: campaign
 title: IMS 疑難排解
 description: IMS 疑難排解
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # IMS 疑難排解{#ims-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 下列疑難排解提示將有所幫助 **內部部署** 客戶可解決使用IMS整合時最常發生的問題。 針對 **托管** 客戶，請聯絡Adobe。
 

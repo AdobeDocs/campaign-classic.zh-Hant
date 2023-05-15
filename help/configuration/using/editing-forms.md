@@ -2,8 +2,10 @@
 product: campaign
 title: 編輯表單
 description: 編輯表單
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # 編輯表單{#editing-forms}
 
-![](../../assets/common.svg)
+
 
 ## 概覽
 
@@ -60,7 +62,7 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 
    該形式包括按特定順序排列的多個浮動螢幕。 使用者從一個畫面導覽至下一個畫面。 [顯示全文](form-structure.md#wizards)。
 
-* Iconbox
+* 圖示方塊
 
    此表單包含多頁。 若要導覽表單，使用者需選取表單左側的圖示。
 
@@ -76,7 +78,7 @@ Forms是 `xtk:form` 類型。 您可以在 `xtk:form` 綱要。 要查看此架�
 
    此表單顯示導航樹。
 
-* 水準窗格
+* 水平窗格
 
    此表單顯示項目清單。
 

@@ -2,11 +2,12 @@
 product: campaign
 title: 同步對象
 description: 了解如何將受眾與ACS Connector同步
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # 同步對象{#synchronizing-audiences}
 
-![](../../assets/v7-only.svg)
+
 
 您可以使用Campaign v7進階功能來建立複雜的清單，並以順暢的方式直接與Campaign Standard（包括其他資料）即時共用此清單作為對象。 然後您的Campaign Standard使用者就可以在Adobe Campaign Standard中使用對象。
 

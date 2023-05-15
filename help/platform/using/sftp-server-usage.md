@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: SFTP 伺服器使用情況
-description: 進一步了解SFTP伺服器最佳實務和疑難排解。
+description: 進一步了解SFTP伺服器最佳實務和疑難排解
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 41%
@@ -15,7 +17,7 @@ ht-degree: 41%
 
 # SFTP 伺服器最佳實務及疑難排解 {#sftp-server-usage}
 
-![](../../assets/common.svg)
+
 
 ## SFTP伺服器全域建議 {#global-recommendations}
 
@@ -31,7 +33,7 @@ ht-degree: 41%
 
 * 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
 
-* 您嘗試起始SFTP連線的公用IP必須新增至Campaign執行個體的允許清單。 可透過 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* 您嘗試起始SFTP連線的公用IP必須新增至Campaign執行個體的允許清單。 可透過 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## 資料庫使用最佳實務 {#sftp-server-best-practices}
 
@@ -68,7 +70,7 @@ SFTP伺服器設計為臨時儲存空間，您可在其上控制檔案的保留�
 
 ## Adobe托管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
-下節列出要檢查的資訊，並透過 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到與托管Adobe的SFTP伺服器的連線問題時。
+下節列出要檢查的資訊，並透過 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到與托管Adobe的SFTP伺服器的連線問題時。
 
 1. 檢查您的執行個體是否正在運行。若要這麼做，請開啟瀏覽器，然後建立 **[!UICONTROL GET]** 在例項上呼叫 **[!UICONTROL /r/test]** 端點：
 
@@ -100,11 +102,11 @@ SFTP伺服器設計為臨時儲存空間，您可在其上控制檔案的保留�
    >
    >Netcat 工具可讓您輕鬆管理各種操作系統上的網路連線 (請參見 [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/))。
 
-   如果埠未打開，請確保打開側面的傳出連線，然後重試。如果您仍遇到連接問題，請與共用命令的輸出 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
+   如果埠未打開，請確保打開側面的傳出連線，然後重試。如果您仍遇到連接問題，請與共用命令的輸出 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
 
 1. 檢查您嘗試起始SFTP連線的公用IP是否為您提供給Adobe支援以取得允許清單的IP。
 1. 如果您使用基於密碼的身份驗證，則您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用金鑰式驗證(請參閱 [SFTP伺服器最佳實務](#sftp-server-best-practices))。
-1. 如果您使用基於密鑰的身份驗證，請檢查您使用的密鑰是否與您提供的密鑰相同 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 執行個體設定的團隊。
+1. 如果您使用基於密鑰的身份驗證，請檢查您使用的密鑰是否與您提供的密鑰相同 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 執行個體設定的團隊。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
 
 ## 「無法解析主機名」錯誤

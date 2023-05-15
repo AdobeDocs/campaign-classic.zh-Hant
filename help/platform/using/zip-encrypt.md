@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: 壓縮或加密檔案
-description: 了解如何在處理前以Campaign Classic壓縮或加密檔案。
+description: 了解如何在處理前，先在Campaign中壓縮或加密檔案
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '540'
 ht-degree: 8%
 
 ---
 
 # 壓縮或加密檔案 {#zipping-or-encrypting-a-file}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過 **[!UICONTROL Data extraction (file)]** 活動中，您可以定義要壓縮或加密檔案的後置處理。
 

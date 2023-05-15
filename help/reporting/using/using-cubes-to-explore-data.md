@@ -2,11 +2,13 @@
 product: campaign
 title: 使用 cubes 來探索資料
 description: 使用 cubes 來探索資料
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # 使用 cubes 來探索資料{#using-cubes-to-explore-data}
 
-![](../../assets/common.svg)
+
 
 Marketing Analytics可讓您更輕鬆建立報表，以及透過立方體從資料庫中識別和選取資料。 這可讓您：
 

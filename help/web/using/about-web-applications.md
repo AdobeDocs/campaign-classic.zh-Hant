@@ -2,9 +2,11 @@
 product: campaign
 title: 開始使用網路應用程式
 description: 建立和共用動態網頁應用程式、登錄頁面和調查
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
@@ -13,7 +15,7 @@ ht-degree: 20%
 
 # 開始使用網路應用程式{#about-web-applications}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign可讓您使用資料庫中的資料和符合連線使用者權限的內容，來建立和發佈動態和互動式Web應用程式。
 
@@ -76,7 +78,7 @@ Adobe Campaign中的Web應用程式可存取下列功能：
 
 ## Web應用程式初始配置 {#web-application-initial-configuration}
 
-Web應用程式是透過 **[!UICONTROL Web Applications]** 連結 **[!UICONTROL Campaigns]** 和 **[!UICONTROL Profiles and targets]** 頁簽。
+Web應用程式是透過 **[!UICONTROL Web Applications]** 連結 **[!UICONTROL Campaigns]** 和 **[!UICONTROL Profiles and targets]** 標籤。
 
 Web應用程式儲存在 **[!UICONTROL Resources > Online > Web Applications]** Adobe Campaign樹的節點。 設定在下列資料夾中劃分：
 

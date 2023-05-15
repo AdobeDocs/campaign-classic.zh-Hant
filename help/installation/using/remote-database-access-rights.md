@@ -2,11 +2,12 @@
 product: campaign
 title: 訪問外部資料庫的權限
 description: 外部資料庫訪問權限
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # 遠端資料庫存取權限 {#remote-database-access-rights}
 
-![](../../assets/v7-only.svg)
+
 
 首先，為使用者能透過FDA對外部資料庫執行操作，後者在Adobe Campaign中必須具有指定的權限。
 
@@ -55,7 +56,7 @@ ht-degree: 1%
 | **建立表格** | 建立方案權限表 | 建立權限 | 建立表權限 | 建立表權限 | 建立權限 | 建立權限 |
 | **建立索引** | N/A | 建立權限 | 索引或建立任何索引權限 | ALTER權限 | 建立權限 | 索引權限 |
 | **建立函式** | 建立架構權限的函式 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立函式權限 | 使用權限 | 建立常式權限 |
-| **建立程式** | 不適用 | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | 使用權限（過程是函式） | 建立常式權限 |
+| **建立程式** | N/A | USAGE ON LANGUAGE plpythonu特權可調用外部python指令碼 | 建立過程或建立任何過程權限 | 建立過程權限 | 使用權限（過程是函式） | 建立常式權限 |
 | **刪除對象（表、索引、函式、過程）** | 擁有對象 | 擁有對象或是超級用戶 | 刪除ANY &lt;對象>權限 | ALTER權限 | 表：擁有表索引：擁有索引函式：擁有函式 | 刪除權限 |
 | **監控執行** | 對所需對象的監視權限 | 使用EXPLAIN命令無需任何權限 | INSERT和SELECT權限以及執行EXPLAIN PLAN所基於的語句的必需權限 | SHOWPLAN權限 | 使用EXPLAIN語句無需任何權限 | 選擇權限 |
 | **寫入資料** | INSERT和/或UPDATE權限（取決於寫操作） | 插入和更新權限 | 插入和更新或插入和更新任何表權限 | 插入和更新權限 | 插入和更新權限 | 插入和更新權限 |

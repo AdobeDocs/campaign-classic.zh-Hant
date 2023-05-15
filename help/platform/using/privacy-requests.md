@@ -2,12 +2,13 @@
 product: campaign
 title: 管理隱私權請求
 description: 瞭解隱私權請求
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: ht
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 100%
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # 關於隱私權請求 {#privacy-requests}
 
-![](../../assets/v7-only.svg)
+
 
 如需隱私權管理的一般簡報，請參閱[本節](privacy-management.md)。
 

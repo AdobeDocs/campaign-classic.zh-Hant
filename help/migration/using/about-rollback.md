@@ -2,13 +2,14 @@
 product: campaign
 title: 回復到以前的版本
 description: 了解如何回復至舊版
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: rollback
 hide: true
 hidefromtoc: true
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 回復到以前的版本{#about-rollback}
 
-![](../../assets/v7-only.svg)
+
 
 移轉後，若有問題，您可能需要回復至舊版的Campaign。
 

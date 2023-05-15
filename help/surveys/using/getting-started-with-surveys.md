@@ -2,9 +2,11 @@
 product: campaign
 title: 建立調查的關鍵步驟
 description: 使用Campaign建立您的第一個調查
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 建立調查的關鍵步驟{#getting-started-with-surveys}
 
-![](../../assets/common.svg)
+
 
 以下是使用下列內建範本，快速概述建立簡單調查的主要步驟：
 
@@ -80,7 +82,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_change_label.png)
 
-   現在為使用者帳號建立登入欄位。 重複該操作，然後選擇「帳戶編號」。 欄位。
+   現在為使用者帳號建立登入欄位。 重複該操作，然後選擇「帳戶編號」。 欄位.
 
    應用相同的過程來添加欄位，供用戶輸入電子郵件地址。
 

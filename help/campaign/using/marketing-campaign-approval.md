@@ -2,9 +2,10 @@
 product: campaign
 title: 設定及管理核准流程
 description: 了解如何管理行銷活動的核准
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2438'
 ht-degree: 2%
@@ -13,18 +14,17 @@ ht-degree: 2%
 
 # 設定及管理核准流程 {#approving-marketing-campaigns}
 
-![](../../assets/v7-only.svg)
 
 傳遞的每個步驟都需經過核准，以確保完整監控及控制促銷活動的各種程式：鎖定目標、內容、預算、擷取和傳送校樣。
 
-通知訊息會傳送給指定審核者的Adobe Campaign運算子，以通知他們核准請求。 檢查審核者是否擁有 **適當權限** ，且其安全區域已正確定義。 [了解更多資訊](#selecting-reviewers)。
+通知訊息會傳送給指定審核者的Adobe Campaign運算子，以通知他們核准請求。 檢查審核者是否擁有 **適當權限** ，且其安全區域已正確定義。 [了解更多](#selecting-reviewers)。
 
 批准程式於 [本節](#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
 >只有傳送擁有者才能開始傳送。 為了讓其他運算子（或運算子群組）能夠開始傳送，您必須在 **[!UICONTROL Delivery start:]** 欄位。\
->[了解更多資訊](#selecting-reviewers)。
+>[了解更多](#selecting-reviewers)。
 
 ## 操作原則 {#operating-principle-}
 
@@ -171,7 +171,7 @@ Adobe Campaign可讓您以協作模式，為行銷活動的主要階段設定核
 
 對於每個行銷活動，您可以核准傳送目標，內容(請參閱 [核准內容](#approving-content))和成本。 可以透過電子郵件形式通知負責核准的 Adobe Campaign 操作者，然後他們可透過主控台或網路連線核准或拒絕核准。請參閱 [核准傳送的步驟](#approving-processes).
 
-完成這些驗證階段後，即可啟動傳送。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
+完成這些驗證階段後，即可啟動傳送。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
 
 ### 核准傳送的步驟 {#approving-processes}
 

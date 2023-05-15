@@ -2,9 +2,11 @@
 product: campaign
 title: 定義網路表單頁面排序
 description: 定義網路表單頁面排序
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 定義網路表單頁面排序{#defining-web-forms-page-sequencing}
 
-![](../../assets/common.svg)
+
 
 表單可包含一或多個頁面。 它是透過圖表建置，可讓您排序頁面、測試、指令碼執行、頁面跳轉和記錄步驟。 全域圖表設計模式與Campaign工作流程的模式相同。
 

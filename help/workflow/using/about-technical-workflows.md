@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: 技術工作流程
-description: 進一步了解Campaign Classic套件提供的技術工作流程。
+description: 進一步了解Campaign Classic套件提供的技術工作流程
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # 技術工作流程{#about-technical-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 ## 關於技術工作流程 {#overview}
 

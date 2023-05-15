@@ -2,11 +2,12 @@
 product: campaign
 title: 開始升級
 description: 瞭解更多 Campaign Classic 升級
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # 版本更新{#rn-overview}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign Classic 定期發行的產品更新帶來了新的功能、錯誤修正，並改善了效能、安全性和可用性。 這些更新作為&#x200B;**產品版本編號**&#x200B;發行。 關於每個產品版本編號的詳細資訊，請參見[發行說明](latest-release.md)。
 

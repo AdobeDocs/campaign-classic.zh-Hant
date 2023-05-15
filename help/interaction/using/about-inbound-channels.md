@@ -2,8 +2,9 @@
 product: campaign
 title: 關於傳入頻道
 description: 關於傳入頻道
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 4%
@@ -12,20 +13,20 @@ ht-degree: 4%
 
 # 關於傳入頻道{#about-inbound-channels}
 
-![](../../assets/v7-only.svg)
 
-可以使用入站或出站通道在各種服務空間上提供服務。 本章詳細介紹了入站通道的某些特定功能。
 
-![](assets/do-not-localize/how-to-video.png) 你也可以看這個 [視頻](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) 詳細說明如何在入站渠道上提供優惠。
+優惠方案可使用傳入或傳出頻道，顯示於各種優惠方案空間。 本章詳細說明傳入頻道的某些特定功能。
 
-要讓優惠引擎選擇優惠，必須批准該優惠並可在即時環境中使用。有關詳細資訊，請參閱 [批准和激活聘用](../../interaction/using/approving-and-activating-an-offer.md)。
+![](assets/do-not-localize/how-to-video.png) 您也可以觀看此影片 [影片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) 詳細說明如何在傳入頻道上傳送優惠方案。
 
-當聯繫人入站時，可能會出現兩種結果：瀏覽頁面的用戶可以由網站識別，也可以不識別。 根據用戶是否被識別，提供引擎提供不同的提供。
+若要讓優惠方案引擎選取優惠方案，必須獲得核准，並可在即時環境中使用。如需詳細資訊，請參閱 [核准和啟用優惠方案](../../interaction/using/approving-and-activating-an-offer.md).
 
-在能夠在入站通道上顯示優惠之前，必須配置要顯示優惠的優惠引擎呼叫。 在大多數入站交互的情況下，這是Web頁。
+當連絡人傳入時，可能會有兩種結果：瀏覽頁面的使用者可由網站識別，或不可由網站識別。 選件引擎會根據是否識別使用者而顯示不同的選件。
+
+您必須先設定優惠方案引擎呼叫，才能在入站管道上呈現優惠方案。 在傳入互動的大多數情況下，此為網頁。
 
 >[!NOTE]
 >
->對於入站交互，您必須特別配置聘用引擎以呈現和更新一個或多個聘用。
+>對於入站互動，您必須明確設定選件引擎以呈現和更新一或多個選件。
 >
->您還必須在優惠空間上啟用統一模式。 有關詳細資訊，請參閱 [建立聘用空間](../../interaction/using/creating-offer-spaces.md) 的子菜單。
+>您也必須在優惠方案空間上啟用統一模式。 有關詳細資訊，請參閱 [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md) 區段。

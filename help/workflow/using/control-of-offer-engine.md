@@ -2,21 +2,22 @@
 product: campaign
 title: 優惠方案引擎的控制
 description: 優惠方案引擎的控制
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Offers
 topic-tags: technical-workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '52'
-ht-degree: 26%
+ht-degree: 30%
 
 ---
 
 
 # 優惠方案引擎的控制{#control-of-offer-engine}
 
-![](../../assets/v7-only.svg)
 
-下面詳細介紹的工作流隨 **具有執行實例的供應引擎的控制** 預設情況下為模組。
+
+以下詳述的工作流程會與 **具有執行實例的選件引擎的控制** 模組。
 
 <table> 
  <tbody> 
@@ -27,8 +28,8 @@ ht-degree: 26%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">命題同步</span> <br /> </td> 
-   <td> <span class="uicontrol">命題同步</span> <br /> </td> 
-   <td> 此工作流將市場營銷實例和用於交互的執行實例之間的建議同步。<br /> </td> 
+   <td> <span class="uicontrol">主張同步</span> <br /> </td> 
+   <td> 此工作流程會在用於互動的行銷執行個體與執行執行個體之間同步建議。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

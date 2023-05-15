@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: 關於Adobe Campaign報表工具
-description: 在內建或自訂的報表中分析促銷活動的成功。
+description: 在內建或自訂報表中分析促銷活動的成功
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '334'
+ht-degree: 16%
 
 ---
 
 # 開始使用報告功能 {#about-adobe-campaign-reporting-tools}
 
-![](../../assets/common.svg)
+
 
 除 [內建報表](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign可讓您在不同內容中產生報表，以符合不同的需求。 本檔案詳細說明了使用原則和實施模式。
 

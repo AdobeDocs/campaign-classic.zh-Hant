@@ -2,12 +2,14 @@
 product: campaign
 title: 選擇退出個人資訊銷售
 description: 瞭解關於個人資訊銷售選擇退出
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
-workflow-type: ht
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # 選擇退出個人資訊銷售 (CCPA) {#sale-of-personal-information-ccpa}
 
-![](../../assets/common.svg)
+
 
 **加州消費者隱私保護法 (CCPA)** 為加州居民提供新的個資權利，並對在加州經營業務的特定實體賦予資料保護責任。
 

@@ -2,13 +2,14 @@
 product: campaign
 title: 疑難排解ACS連接器
 description: 疑難排解ACS連接器
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
 hide: true
 hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 # 疑難排解ACS連接器{#troubleshooting-the-acs-connector}
 
-![](../../assets/v7-only.svg)
+
 
 視您的實作而定，您可能會面臨數個常見問題。
 

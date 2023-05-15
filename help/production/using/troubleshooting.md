@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 生產疑難排解
-description: 探索與Adobe Campaign設定、監控、升級程式、資料處理和資料庫維護程式相關的生產疑難排解程式。
+description: 探索與Adobe Campaign設定、監控、升級程式、資料處理和資料庫維護程式相關的生產疑難排解程式
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
@@ -15,7 +16,7 @@ ht-degree: 18%
 
 # 生產疑難排解{#troubleshooting}
 
-![](../../assets/v7-only.svg)
+
 
 本節包含與Adobe Campaign一般生產問題相關的疑難排解程式，例如傳送和工作流程執行、監控、資料庫維護、連線等。
 

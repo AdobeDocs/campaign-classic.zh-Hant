@@ -2,11 +2,12 @@
 product: campaign
 title: 控制成本
 description: 了解如何控製成本
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 控制成本{#controlling-costs}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign可讓您控制已排程、已提交和已開票的行銷成本，並使用「行銷資源管理」模組依類別加以劃分。
 
@@ -178,7 +179,7 @@ Adobe Campaign可讓您控制已排程、已提交和已開票的行銷成本，
 
 成本分為三類：
 
-1. 估計臨時費用
+1. 預估佈建成本
 
    估計的臨時費用是宣傳過程費用的估計。 只要正在編輯，輸入的金額就不會合併。 肯定有 **[!UICONTROL Specified]** 在計算中要考慮的輸入金額的狀態。
 

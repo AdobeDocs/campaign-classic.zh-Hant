@@ -2,9 +2,11 @@
 product: campaign
 title: 開始使用意見調查
 description: 開始使用Campaign調查
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # 開始使用意見調查{#about-surveys}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign包含圖形模組，可定義及發佈Web應用程式。 它用於建立頁面，如外聯網上的編輯表單或通知表單，包括資料庫中的資料，包括表、圖表、輸入表單等。 使用此功能來設計和發佈用戶可以查找或輸入資訊的網頁。
 
@@ -47,11 +49,11 @@ Adobe Campaign包含圖形模組，可定義及發佈Web應用程式。 它用�
 
 選用的調查建立模組提供方便使用的UI，以及下列其他功能：
 
-* 資料庫的動態擴展：建立不屬於初始資料模型的答案。 [了解更多資訊](../../surveys/using/managing-answers.md#storing-collected-answers)。
-* 分數管理。 [了解更多資訊](../../surveys/using/managing-answers.md#score-management)。
-* 隨機顯示問題。 [了解更多資訊](../../surveys/using/building-a-survey.md#adding-questions)。
-* 即時追蹤答案。 [了解更多資訊](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking)。
-* 產生專用報表。 [了解更多資訊](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys)。
+* 資料庫的動態擴展：建立不屬於初始資料模型的答案。 [了解更多](../../surveys/using/managing-answers.md#storing-collected-answers)。
+* 分數管理。 [了解更多](../../surveys/using/managing-answers.md#score-management)。
+* 隨機顯示問題。 [了解更多](../../surveys/using/building-a-survey.md#adding-questions)。
+* 即時追蹤答案。 [了解更多](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking)。
+* 產生專用報表。 [了解更多](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys)。
 
 
 ## 實施步驟 {#surveys-implementation-steps}

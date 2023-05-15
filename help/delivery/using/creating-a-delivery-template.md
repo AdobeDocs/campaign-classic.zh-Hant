@@ -2,9 +2,11 @@
 product: campaign
 title: 建立傳遞範本
 description: 建立傳遞範本
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 11%
@@ -13,7 +15,7 @@ ht-degree: 11%
 
 # 建立傳遞範本{#creating-a-delivery-template}
 
-![](../../assets/common.svg)
+
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#delivery-template-video)
 
@@ -64,7 +66,7 @@ ht-degree: 11%
 
    ![](assets/delivery_template_5.png)
 
-1. 按一下 **儲存**. 您的範本現在已可用於傳送。
+1. 按一下「**儲存**」。您的範本現在已可用於傳送。
 
 
 ## 教學課程影片 {#delivery-template-video}

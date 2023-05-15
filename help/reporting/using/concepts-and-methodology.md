@@ -2,20 +2,21 @@
 product: campaign
 title: 多維度資料集最佳作法
 description: 多維度資料集最佳作法
+badge: label="v7" type="Informity" tooltip="僅適用於Campaign Classicv7"
 feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 0%
+source-wordcount: '1504'
+ht-degree: 1%
 
 ---
 
 # 多維度資料集最佳作法{#concepts-and-methodology}
 
-![](../../assets/common.svg)
+
 
 ## 資料綁定 {#data-binning}
 

@@ -2,11 +2,12 @@
 product: campaign
 title: 開始使用ACS Connector
 description: ACS Connector原理和資料週期
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 開始使用ACS Connector{#acs-connector-gs}
 
-![](../../assets/v7-only.svg)
+
 
 ACS Connector橋接器Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign v7中的整合功能，可自動將資料複製到Campaign Standard，將兩個應用程式的最佳功能結合在一起。 Campaign v7提供進階工具，可管理主要行銷資料庫。 從Campaign v7進行資料復寫，可讓Campaign Standard在方便使用的環境中運用豐富的資料。
 

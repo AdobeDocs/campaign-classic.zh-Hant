@@ -2,11 +2,13 @@
 product: campaign
 title: 向 Adobe 提交請求
 description: 向 Adobe 提交請求
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 16%
@@ -15,11 +17,11 @@ ht-degree: 16%
 
 # 向 Adobe 提交請求{#submitting-request-to-adobe}
 
-![](../../assets/common.svg)
+
 
 >[!NOTE]
 >
->身為v7使用者，若要繼續，請確定已在您的系統上啟用AdobeIdentity Management系統(IMS)。 [了解更多資訊](../../integrations/using/about-adobe-id.md)。
+>身為v7使用者，若要繼續，請確定已在您的系統上啟用AdobeIdentity Management系統(IMS)。 [了解更多](../../integrations/using/about-adobe-id.md)。
 
 貴組織啟用IMS後，您就可以要求布建People核心服務/Audience Manager與Campaign的整合。 若要這麼做，請傳送電子郵件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) 並提供下列資訊：
 

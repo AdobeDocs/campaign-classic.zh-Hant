@@ -2,8 +2,9 @@
 product: campaign
 title: 關於傳出頻道
 description: 關於傳出頻道
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -12,7 +13,7 @@ ht-degree: 5%
 
 # 關於傳出頻道{#about-outbound-channels}
 
-![](../../assets/v7-only.svg)
+
 
 優惠方案可使用傳入或傳出頻道，以各種空格呈現。 本章詳細說明傳出通道。
 

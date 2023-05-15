@@ -2,11 +2,12 @@
 product: campaign
 title: 資料方案結構
 description: 資料方案結構
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 10%
@@ -14,8 +15,6 @@ ht-degree: 10%
 ---
 
 # 資料方案結構{#structure-of-a-data-schema}
-
-![](../../assets/v7-only.svg)
 
 資料模式的結構以樹結構的形式顯示。 若要在Adobe Campaign用戶端主控台中以圖形方式檢視，請選取目標架構，然後按一下 **[!UICONTROL Structure]** 頁簽。
 

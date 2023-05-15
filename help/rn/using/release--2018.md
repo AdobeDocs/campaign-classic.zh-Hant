@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign Classic 2018 版本
 description: 進一步瞭解 Campaign Classic 2018 版本
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '5385'
 ht-degree: 8%
@@ -13,7 +14,7 @@ ht-degree: 8%
 
 # 2018 版本{#release-2018}
 
-![](../../assets/v7-only.svg)
+
 
 ## 第 18.10 發行版本
 

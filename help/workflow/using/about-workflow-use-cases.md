@@ -1,23 +1,24 @@
 ---
 product: campaign
 title: 關於工作流程使用實例
-description: 瞭解有關可以使用Campaign Classic工作流執行的使用案例的詳細資訊。
+description: 進一步了解您可使用Campaign Classic工作流程執行的使用案例
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 66%
 
 ---
 
-# 工作流使用案例 {#about-workflow-use-cases}
+# 工作流程使用案例 {#about-workflow-use-cases}
 
-![](../../assets/v7-only.svg)
 
-在本節中，您將發現利用市場活動工作流功能的各種使用案例。
 
-它們將幫助您發現可以使用工作流的不同上下文並響應您的需求。
+在本節中，您會利用Campaign工作流程功能找到各種使用案例。
+
+它們可協助您探索可使用工作流程的不同內容，並回應您的需求。
 
 ## 傳遞 {#deliveries}
 
@@ -48,8 +49,8 @@ ht-degree: 66%
 * [建立摘要清單](creating-a-summary-list.md)
 * [豐富資料](enriching-data.md)
 * [使用彙總](using-aggregates.md)
-* [導入使用控制面板生成的密鑰加密的資料](../../platform/using/unzip-decrypt.md)
-* [使用控制面板上安裝的密鑰加密和導出資料](how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [匯入使用「控制面板」產生的金鑰加密的資料](../../platform/using/unzip-decrypt.md)
+* [使用安裝在控制面板上的金鑰加密和匯出資料](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查詢更新每季清單](quarterly-list-update.md)
 * [使用重複資料刪除活動的合併功能](deduplication-merge.md)
 * [設定循環匯入工作流程](recurring-import-workflow.md)

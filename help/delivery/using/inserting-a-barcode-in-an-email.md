@@ -2,8 +2,10 @@
 product: campaign
 title: 在電子郵件中插入條形碼
 description: 在電子郵件中插入條形碼
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -13,65 +15,65 @@ ht-degree: 0%
 
 # 在電子郵件中插入條形碼{#insert-a-barcode-in-an-email}
 
-![](../../assets/common.svg)
 
-條形碼生成模組允許您建立符合許多常見標準的幾種條形碼，包括2D條形碼。
 
-可以使用使用客戶標準定義的值動態地將條形碼生成為點陣圖。 個性化條形碼可以包含在電子郵件活動中。 收件人可以打印郵件並將其顯示給發卡公司進行掃描（例如，簽出時）。
+條碼產生模組可讓您建立符合許多常見標準的數種條碼，包括2D條碼。
 
-要將條形碼插入電子郵件，請將游標置於要顯示它的內容中，然後按一下個性化按鈕。 選取 **[!UICONTROL Include > Barcode...]**。
+可以使用使用客戶條件定義的值以點陣圖形式動態生成條形碼。 電子郵件行銷活動中可包含個人化條碼。 收件者可以列印訊息，並將其顯示給發行公司以進行掃描（例如當結帳時）。
+
+若要將條碼插入電子郵件中，請將游標置於您要顯示該條碼的內容中，然後按一下個人化按鈕。 選取 **[!UICONTROL Include > Barcode...]**。
 
 ![](assets/barcode_insert_14.png)
 
-然後配置以下元素以滿足您的需要：
+然後設定下列元素以符合您的需求：
 
-1. 選擇條形碼類型。
+1. 選擇條形碼的類型。
 
-   * 對於1D格式，以下類型在Adobe Campaign提供：代碼128、GS1-128（前稱EAN-128）、UPC-A、UPC-E、ISBN、EAN-8、Code39、5的交錯2、POSTNET和皇家郵件(RM4SCC)。
+   * 若為1D格式，可在Adobe Campaign中使用下列類型：Codabar，代碼128, GS1-128（前身為EAN-128）, UPC-A, UPC-E, ISBN, EAN-8，代碼39，交錯2 of 5, POSTNET和Royal Mail(RM4SCC)。
 
-      1D條形碼示例：
+      1D條形碼的示例：
 
       ![](assets/barcode_insert_08.png)
 
-   * DataMatrix和PDF417類型涉及2D格式。
+   * DataMatrix和PDF417類型與2D格式有關。
 
-      2D條形碼示例：
+      2D條形碼的示例：
 
       ![](assets/barcode_insert_09.png)
 
-   * 要插入QR碼，請選擇此類型並輸入要應用的糾錯率。 此速率定義重複資訊的數量和對劣化的容忍度。
+   * 若要插入QR碼，請選取此類型並輸入要套用的糾錯率。 該速率定義了重複資訊的數量和退化的容限。
 
       ![](assets/barcode_insert_06.png)
 
-      QR代碼示例：
+      QR碼範例：
 
       ![](assets/barcode_insert_12.png)
 
-1. 輸入要插入電子郵件的條形碼的大小：通過配置比例，可以將條形碼的大小從x1增加或減小到x10。
-1. 的 **[!UICONTROL Value]** 欄位中，您可以定義條形碼的值。 值可以與特別優惠相匹配，也可以是標準的函式，也可以是連結到客戶的資料庫欄位的值。
+1. 輸入要插入電子郵件的條形碼的大小：配置刻度可以從x1增加或縮小條形碼的大小，從x1增加到x10。
+1. 此 **[!UICONTROL Value]** 欄位可讓您定義條碼的值。 值可以符合特殊選件，也可以是條件的函式，也可以是連結至客戶之資料庫欄位的值。
 
-   此示例顯示EAN-8類型條形碼，該條形碼已添加收件人的帳號。 要添加此帳號，請按一下「 **[!UICONTROL Value]** 選擇 **[!UICONTROL Recipient > Account number]**。
+   此示例顯示了EAN-8類型的條形碼，該條形碼已添加到收件者的帳號。 若要新增此帳號，請按一下 **[!UICONTROL Value]** 欄位和選取 **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. 的 **[!UICONTROL Height]** 欄位中，您可以通過更改每個條形之間的間距來配置條形碼的高度，而不更改其寬度。
+1. 此 **[!UICONTROL Height]** 欄位可讓您變更每個列之間的空間量，以設定條碼的高度，而不變更其寬度。
 
-   根據條形碼的類型，沒有限制性輸入控制。 如果條形碼值不正確，則只能在 **預覽** 將條形碼以紅色划出的模式。
+   根據條碼類型，沒有限制的輸入控制項。 如果條碼值不正確，則只會顯示在 **預覽** 以紅色將條形碼交叉的模式。
 
    >[!NOTE]
    >
-   >分配給條形碼的值取決於其類型。 例如，EAN-8類型的數字應恰好為8。
+   >分配給條形碼的值取決於其類型。 例如，EAN-8類型應正好有8個數字。
    >
-   >「Personalization（個性化）」按鈕 **[!UICONTROL Value]** 欄位中，除了值本身之外，還可添加資料。 這豐富了條形碼，前提是條形碼標準接受它。
+   >位於 **[!UICONTROL Value]** 欄位可讓您除了值本身之外新增資料。 這豐富了條碼，前提是條碼標準接受它。
    >
-   >例如，如果您使用的是GS1-128類型條形碼，並且除了輸入值外，還要輸入收件人的帳號，請按一下個性化按鈕並選擇 **[!UICONTROL Recipient > Account number]**。 如果正確輸入了所選收件人的帳號，則條形碼將其考慮在內。
+   >例如，如果您使用GS1-128類型條形碼，並且除了要輸入值之外還要輸入收件人的帳戶號，請按一下個性化按鈕並選擇 **[!UICONTROL Recipient > Account number]**. 如果正確輸入了所選收件人的帳號，則條形碼會將其考慮在內。
 
-配置完這些元素後，您就可以完成電子郵件併發送。 要避免錯誤，請始終通過按一下 **[!UICONTROL Preview]** 頁籤。
+設定這些元素後，您就可以完成電子郵件並傳送。 若要避免錯誤，請一律確定您的內容在執行傳送前，按一下 **[!UICONTROL Preview]** 標籤。
 
 ![](assets/barcode_insert_10.png)
 
 >[!NOTE]
 >
->如果條形碼的值不正確，則其點陣圖將以紅色划出。
+>如果條形碼的值不正確，則其點陣圖會以紅色交叉顯示。
 
 ![](assets/barcode_insert_11.png)

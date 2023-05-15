@@ -1,36 +1,38 @@
 ---
 product: campaign
-title: 發送、監視和跟蹤SMS
-description: 瞭解如何在活動中發送、監控和跟蹤簡訊
+title: 傳送、監視及追蹤簡訊
+description: 了解如何在Campaign中傳送、監視及追蹤簡訊
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
 
 ---
 
-# 發送、監視和跟蹤SMS遞送{#sms-properties}
+# 傳送、監視及追蹤SMS傳遞{#sms-properties}
 
-![](../../assets/common.svg)
 
-## 發送SMS消息 {#sending-sms-messages}
 
-要批准您的郵件並將其發送到正在建立的傳遞的收件人，請按一下 **[!UICONTROL Send]**。
+## 傳送SMS訊息 {#sending-sms-messages}
 
-驗證和發送交貨時的詳細過程在以下各節中介紹：
+若要核准您的訊息，並將其傳送給所建立傳送的收件者，請按一下 **[!UICONTROL Send]**.
+
+驗證和傳送傳遞的詳細程式會顯示在以下章節：
 
 * [驗證傳遞](steps-validating-the-delivery.md)
 * [傳送傳遞](steps-sending-the-delivery.md)
 
 ## 高級參數 {#advanced-parameters}
 
-的 **[!UICONTROL Properties]** 按鈕可訪問高級傳遞參數。 特定於SMS遞送的參數位於 **[!UICONTROL SMS parameters]** 的下界 **[!UICONTROL Delivery]** 頁籤。
+此 **[!UICONTROL Properties]** 按鈕可提供進階傳送參數的存取權。 SMS傳送的特定參數位於 **[!UICONTROL SMS parameters]** 區段 **[!UICONTROL Delivery]** 標籤。
 
 可以使用以下選項：
 
-* **發件人地址**:允許您使用一串字母數字字元（最多11個字元）來個性化遞送發件人的名稱。 欄位不能只由數字組成。 您可以定義一個條件來顯示，例如，根據收件人的區號顯示不同的名稱：
+* **寄件者地址**:可讓您使用字串以十一個字元為上限的英數字元，個人化傳送者的名稱。 欄位不能只由數字組成。 您可以定義一個條件，以根據收件者的區域代碼顯示不同的名稱：
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -38,89 +40,89 @@ ht-degree: 3%
 
    >[!IMPORTANT]
    >
-   >檢查您所在國家/地區有關編輯發件人姓名的法律。 您還應詢問運營商是否提供此功能。
+   >檢查您所在國家/地區有關編輯寄件者名稱的法律。 您也應洽詢運算子，確定它們是否提供此功能。
 
-* **傳輸模式**:簡訊發送
-* **優先順序**:分配給消息的重要級別。 **[!UICONTROL Normal]** 預設情況下，優先順序處於選中狀態。 向服務提供商咨詢隨之發送的SMS的成本 **[!UICONTROL High]** 優先順序。
-* **應用程式類型**:選擇要分配給SMS傳遞的應用程式。 的 **[!UICONTROL Direct Marketing]** 選項。
+* **傳輸模式**:簡訊傳輸
+* **優先順序**:指派給訊息的重要性層級。 **[!UICONTROL Normal]** 預設會選取優先順序。 詢問您的服務提供者，與 **[!UICONTROL High]** 優先順序。
+* **應用程式類型**:選擇您要指派給SMS傳送的應用程式。 此 **[!UICONTROL Direct Marketing]** 選項預設為選取，且是最常用的選項。
 
-**特定於NetSize連接器的參數**
+**NetSize連接器的特定參數**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **對單條消息使用多條SMS**:這允許您通過多個SMS消息發送長達160個字元的消息。
+* **對單一訊息使用數個簡訊**:這可讓您透過數個SMS訊息，傳送超過160個字元的訊息。
 
-**SMPP連接器特有的參數**
+**SMPP連接器專用參數**
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **每條消息的最大SMS數**:此選項允許您設定用於發送消息的SMS數。 如果數字設定為0，則可以使用SMS來傳遞消息。 如果SMS的數量設定為1或2（例如），並且消息超過此閾值，則不會發送該消息。
+* **每條訊息的最大簡訊數**:此選項可讓您設定用於傳送訊息的SMS數量。 如果數字設為0，您可以使用SMS來傳送訊息。 如果例項的SMS數量設為1或2，而訊息超過此臨界值，則不會傳送訊息。
 
-## 監視和跟蹤SMS {#monitoring-and-tracking-sms-deliveries}
+## 監控及追蹤簡訊 {#monitoring-and-tracking-sms-deliveries}
 
-發送消息後，您可以監視和跟蹤交貨。 如需詳細資訊，請參閱下列區段。
+傳送訊息後，您可以監控及追蹤您的傳送。 如需詳細資訊，請參閱下列區段。
 
 * [監視傳遞](about-delivery-monitoring.md)
 * [瞭解傳遞失敗](understanding-delivery-failures.md)
 * [關於訊息追蹤](about-message-tracking.md)
 
-## 處理入站消息 {#processing-inbound-messages}
+## 處理傳入訊息 {#processing-inbound-messages}
 
-的 **nlserver sms** 模組定期查詢SMS路由器。 這使Adobe Campaign能夠跟蹤交貨進度並處理狀態報告和收件人取消訂閱請求。
+此 **nlserver sms** 模組定期查詢SMS路由器。 這可讓Adobe Campaign追蹤傳送進度，並處理狀態報表和收件者取消訂閱請求。
 
-* **狀態報告**:查看傳遞日誌以檢查郵件的狀態。
+* **狀態報表**:檢視傳送記錄，以檢查訊息的狀態。
 
    >[!NOTE]
    >
-   >發送的每條SMS都連結到其主鍵的外部帳戶。 這樣：
+   >每個傳送的SMS都會連結至其主要金鑰的外部帳戶。 以這種方式：
    >
-   > * 未正確處理來自已刪除外部SMS帳戶的狀態報告。
-   > * SMS帳戶只能連結到單個外部帳戶，以確保狀態報告歸屬於正確的帳戶
+   > * 已刪除外部SMS帳戶的狀態報表無法正確處理。
+   > * SMS帳戶只能連結至單一外部帳戶，以確保狀態報表可歸屬於正確的帳戶
 
 
-* **取消訂閱**:希望停止接收SMS遞送的收件人可以返回包含STOP一詞的消息。 如果您的提供商根據合同條款允許它訪問，您可以通過 **入站SMS** 工作流活動，然後建立查詢以啟用 **不再聯繫此收件人** 的子菜單。
+* **取消訂閱**:想要停止接收SMS傳送的收件者可傳回包含STOP字詞的訊息。 如果您的提供者根據合約條款允許，您可以透過 **傳入SMS** 工作流程活動，然後建立查詢以啟用 **不再聯繫此收件人** 接受者的選擇。
 
-   請參閱 [工作流](../../workflow/using/architecture.md) 的子菜單。
+   請參閱 [工作流程](../../workflow/using/architecture.md) 指南。
 
-## InSMS架構 {#insms-schema}
+## InSMS結構 {#insms-schema}
 
-InSMS架構包含與傳入的SMS相關的資訊。 通過desc屬性可獲得這些欄位的說明。
+InSMS架構包含與傳入SMS相關的資訊。 可透過desc屬性取得這些欄位的說明。
 
-* **消息**:收到的簡訊內容。
-* **來源**:消息源處的移動號碼。
-* **提供程式ID**:SMSC（消息中心）返回的消息的標識符。
-* **建立**:日期傳入消息插入Adobe Campaign。
-* **ext帳戶**:Adobe Campaign外部帳戶。
+* **訊息**:收到的簡訊內容。
+* **來源**:訊息來源的行動電話號碼。
+* **providerId**:SMSC（消息中心）返回的消息的標識符。
+* **已建立**:日期傳入訊息已插入Adobe Campaign。
+* **extAccount**:Adobe Campaign外部帳戶。
 
    >[!IMPORTANT]
    >
-   >以下欄位特定於NetSize。
+   >以下欄位是NetSize專用欄位。
    >
    >如果使用的運算子不是NetSize，則這些欄位被視為空。
 
 * **別名**:傳入消息的別名。
-* **分離器**:別名和消息正文之間的分隔符。
-* **消息日期**:由運算子提供的消息日期。
-* **接收日期**:SMSC（消息中心）接收來自操作員的日期消息。
-* **交貨日期**:SMSC（消息中心）發送的日期消息。
-* **大型帳戶**:連結到傳入SMS的客戶帳戶代碼
-* **國家代碼**:操作員國家/地區代碼。
-* **運算子代碼**:操作員網路代碼。
-* **連結的SmsId**:Adobe Campaign標識符(broadlogId)連結到傳出SMS，其中此SMS是響應。
+* **分隔符號**:別名和訊息內文之間的分隔符號。
+* **messageDate**:由運算子提供的訊息日期。
+* **receivalDate**:SMSC（報文中心）接收了來自操作員的日期消息。
+* **deliveryDate**:由SMSC（訊息中心）傳送的日期訊息。
+* **largeAccount**:連結至傳入SMS的客戶帳戶代碼
+* **countryCode**:運算元國家/地區代碼。
+* **operatorCode**:操作員網路代碼。
+* **linkedSmsId**:Adobe Campaign識別碼(broadlogId)連結至傳出的SMS，其中此SMS為回應。
 
 ## 管理自動答復（美國法規） {#managing-automatic-replies--american-regulation-}
 
-當訂閱者回復通過Adobe Campaign發送給他們的SMS消息，並且使用STOP 、 HELP或YES等關鍵字時，在美國市場，有必要配置自動返回的消息。
+當訂閱者回覆透過Adobe Campaign傳送給他們的SMS訊息，並使用STOP、HELP或YES等關鍵字時，在美國市場上必須設定自動傳回的訊息。
 
-例如，如果收件人發送關鍵字STOP ，則他們會自動收到確認消息，指出他們已取消訂閱。
+例如，如果收件者傳送關鍵字STOP，則會自動收到確認訊息，指出他們已取消訂閱。
 
-此類郵件的發件人名稱是通常用於發送遞送的簡短代碼。
+此類型訊息的寄件者名稱是通常用於傳送傳遞的簡短代碼。
 
 >[!IMPORTANT]
 >
->以下詳細過程僅對SMPP連接器有效，擴展通用SMPP連接器除外。 有關詳細資訊，請參閱 [建立SMPP外部帳戶](sms-set-up.md#creating-an-smpp-external-account) 的子菜單。
+>下列詳細過程僅對SMPP連接器有效，但擴展通用SMPP連接器除外。 有關詳細資訊，請參閱 [建立SMPP外部帳戶](sms-set-up.md#creating-an-smpp-external-account) 區段。
 >
->它是美國運營商在美國開展營銷活動的認證過程的一部分。 這些對包含關鍵字的訂戶SMS消息的回復必須在收到來自它們的消息後立即發回給訂戶。
+>這是美國運營商在美國開展營銷活動的認證過程的一部分。 這些對包含關鍵字的訂閱者SMS消息的回復必須在收到來自他們的消息後立即發回給訂閱者。
 
 1. 建立此類型的XML檔案：
 
@@ -140,15 +142,15 @@ InSMS架構包含與傳入的SMS相關的資訊。 通過desc屬性可獲得這�
    </autoreply>
    ```
 
-1. 對於 **名稱** 屬性 **`<shortcode>`** 標籤，指定將顯示在消息發件人名稱位置的短代碼。
+1. 若 **名稱** 屬性 **`<shortcode>`** 標籤，指定要在郵件寄件者名稱的位置顯示的簡短代碼。
 
-   每個 **`<reply>`** 標籤，輸入 **關鍵字** 帶關鍵字的屬性和 **文本** 屬性。
+   在 **`<reply>`** 標籤，輸入 **關鍵字** 屬性 **文字** 屬性，並包含您要針對此關鍵字傳送的訊息。
 
    >[!NOTE]
    >
-   >每個關鍵字必須用大寫字母寫。
+   >每個關鍵字都必須以大寫字母寫入。
 
-   如果要為多個關鍵字發送相同的消息，請複製相應的行。
+   如果您想要針對數個關鍵字傳送相同訊息，請複製對應的行。
 
    例如：
 
@@ -157,14 +159,14 @@ InSMS架構包含與傳入的SMS相關的資訊。 通過desc屬性可獲得這�
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. 完成後，以名稱保存此檔案 **sms自動回復.xml**。
+1. 完成後，以名稱儲存此檔案 **smsAutoReply.xml**.
 
-   請注意，在Linux中，檔案名區分大小寫。
+   請注意，在Linux中，檔案名稱須區分大小寫。
 
-1. 將此檔案複製到 **會議** 目錄，位於Web伺服器的同一位置。
+1. 將此檔案複製到 **conf** 目錄(位於Adobe Campaign中與Web伺服器相同的位置)。
 
 >[!IMPORTANT]
 >
->這類自動消息不會保留歷史記錄。 因此，它們不會出現在交貨儀表板中。 [了解更多](delivery-dashboard.md)。
+>這類自動訊息不會保留歷史記錄。 因此，傳送控制面板中不會顯示這些字元。 [了解更多](delivery-dashboard.md)。
 >
->這些資訊在商業壓力規則中沒有考慮。 [了解更多](../../campaign-opt/using/pressure-rules.md)。
+>商業壓力規則沒有考慮這些報文。 [了解更多](../../campaign-opt/using/pressure-rules.md)。

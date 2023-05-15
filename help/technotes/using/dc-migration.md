@@ -2,11 +2,12 @@
 product: campaign
 title: 移轉至公用雲端
 description: 深入了解Campaign Classic移轉至Public Cloud
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 概覽{#dc-ovv}
 
-![](../../assets/v7-only.svg)
+
 
 ## 內容
 

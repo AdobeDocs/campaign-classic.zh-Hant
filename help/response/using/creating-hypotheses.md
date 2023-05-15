@@ -2,11 +2,13 @@
 product: campaign
 title: 建立假設
 description: 了解如何在Campaign回應管理員中建立假設
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # 建立假設{#creating-hypotheses}
 
-![](../../assets/common.svg)
+
 
 建立/連結行銷活動選件或傳送的假設有多種可能：
 
@@ -130,7 +132,7 @@ ht-degree: 3%
 
 1. 視需要調整查詢。
 1. 按一下 **[!UICONTROL Start]** 來解釋這個假設。
-1. 可以透過其檢視假設結果 **[!UICONTROL General]** 和 **[!UICONTROL Reactions]** 頁簽。 [了解更多](hypothesis-tracking.md)
+1. 可以透過其檢視假設結果 **[!UICONTROL General]** 和 **[!UICONTROL Reactions]** 標籤。 [了解更多](hypothesis-tracking.md)
 
    選件上提出的假設會參考於 **[!UICONTROL Measurement]** 標籤。
 

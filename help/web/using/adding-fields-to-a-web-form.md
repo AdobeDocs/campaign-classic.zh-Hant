@@ -2,9 +2,11 @@
 product: campaign
 title: 新增欄位至網路表單
 description: 新增欄位至網路表單
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2368'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 新增欄位至網路表單{#adding-fields-to-a-web-form}
 
-![](../../assets/common.svg)
+
 
 在Web表單中，欄位使用戶能夠輸入資訊並選擇選項。 網路表單可提供輸入欄位、選取欄位、靜態和進階內容（擷取、訂閱等）。
 

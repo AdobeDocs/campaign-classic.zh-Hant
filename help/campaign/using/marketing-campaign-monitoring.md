@@ -2,9 +2,10 @@
 product: campaign
 title: 監控行銷活動
 description: 監控行銷活動
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -12,8 +13,6 @@ ht-degree: 2%
 ---
 
 # 監控行銷活動 {#monitoring-marketing-campaigns}
-
-![](../../assets/v7-only.svg)
 
 ## 追蹤行銷活動 {#tracking-a-campaign}
 
@@ -53,4 +52,4 @@ ht-degree: 2%
 
 您可以按一下 **[!UICONTROL Deliveries]**，可透過Adobe Campaign首頁存取。 請參閱 [傳遞追蹤](#delivery-tracking).
 
-行銷活動中執行之程式的相關資訊，會收集在 **[!UICONTROL Edit > Audit]** 標籤。 您可以在此檢視促銷活動中的傳送清單。 [了解更多資訊](#tracking-a-campaign)。
+行銷活動中執行之程式的相關資訊，會收集在 **[!UICONTROL Edit > Audit]** 標籤。 您可以在此檢視促銷活動中的傳送清單。 [了解更多](#tracking-a-campaign)。

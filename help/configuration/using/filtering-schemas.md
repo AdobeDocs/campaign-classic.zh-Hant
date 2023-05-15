@@ -2,8 +2,9 @@
 product: campaign
 title: 篩選方案
 description: 篩選方案
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -12,27 +13,25 @@ ht-degree: 1%
 
 # 篩選結構{#filtering-schemas}
 
-![](../../assets/v7-only.svg)
-
 ## 系統篩選器 {#system-filters}
 
-您可以根據特定用戶的權限篩選對特定用戶的架構訪問。 系統篩選器允許您使用 **讀取訪問** 和 **寫訪問** 參數。
+您可以根據特定使用者的權限，篩選結構存取權。 系統篩選器可讓您使用 **readAccess** 和 **writeAccess** 參數。
 
 >[!NOTE]
 >
->此限制僅適用於非技術用戶：具有相關權限或使用工作流的技術用戶將能夠檢索和更新資料。
+>此限制僅適用於非技術使用者：具有相關權限或使用工作流程的技術使用者將能夠擷取和更新資料。
 
-* **讀取訪問**:提供對架構資料的只讀訪問。
+* **readAccess**:提供對架構資料的只讀訪問。
 
-   **警告**  — 所有連結表都必須設定相同的限制。 此配置會影響效能。
+   **警告**  — 所有連結表都必須使用相同的限制設定。 此設定可能會影響效能。
 
-* **寫訪問**:提供對架構資料的寫訪問。
+* **writeAccess**:提供對架構資料的寫入訪問。
 
-這些篩選器是在主 **元素** 架構的級別和（如以下示例所示）可以形成為限制訪問。
+這些篩選器是在主要 **元素** 架構的層級和（如下列範例所示）可以形成以限制存取。
 
-* 限制WRITE權限
+* 限制寫入權限
 
-   此處，該篩選器用於禁止在沒有ADMINISTRATION權限的情況下對運算子的架構具有WRITE權限。 這意味著只有管理員才對此架構描述的實體具有寫權限。
+   在此，該篩選器用於不具有ADMINISTRATION權限的操作員不允許對架構的WRITE權限。 這表示只有管理員對此結構描述的實體具有寫權限。
 
    ```
    <sysFilter name="writeAccess">      
@@ -40,9 +39,9 @@ ht-degree: 1%
    </sysFilter>
    ```
 
-* 限制讀權限和寫權限：
+* 限制讀和寫權限：
 
-   此處，篩選器用於禁止所有運算子對架構的READ和WRITE權限。 僅 **內部** 帳戶，由表達式「$(loginId)！」表示=0&quot;，具有這些權限。
+   在此，該篩選器用於對所有運算子不允許架構的「讀取」和「寫入」權限。 僅 **內部** 帳戶，由運算式「$(loginId)！」表示=0」，則具有這些權限。
 
    ```
    <sysFilter name="readAccess"> 
@@ -54,59 +53,59 @@ ht-degree: 1%
    </sysFilter>
    ```
 
-   可能 **EXPR** 用於定義條件的屬性值為TRUE或FALSE。
+   可能 **expr** 用於定義條件的屬性值為TRUE或FALSE。
 
 >[!NOTE]
 >
->如果未指定篩選器，則所有運算子都對架構具有讀和寫權限。
+>如果未指定篩選器，則所有運算子都具有架構的讀取和寫入權限。
 
-## Protect內置架構 {#protecting-built-in-schemas}
+## Protect內建結構 {#protecting-built-in-schemas}
 
-預設情況下，只有具有ADMINISTRATION權限的運算子才能使用WRITE權限訪問內置架構：
+預設情況下，內建結構僅可對具有「管理」權限的操作員使用「寫入」權限進行訪問：
 
-* ncm：發佈
+* ncm:publishing
 * nl：監視
-* nms：日曆
-* xtk：生成器
+* nms:calendar
+* xtk:builder
 * xtk：連接
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
-* xtk：實體原始
-* xtk：格式
+* xtk:entityOriginal
+* xtk:form
 * xtk:funcList
-* xtk：融合
-* xtk：影像
+* xtk:fusion
+* xtk:image
 * xtk:javascript
 * xtk:jssp
 * xtk:jst
-* xtk：導航樹
+* xtk:navtree
 * xtk:operatorGroup
-* xtk：包
+* xtk:package
 * xtk:queryDef
-* xtk：資源菜單
-* xtk：權限
-* xtk：架構
-* xtk：指令碼上下文
-* xtk:spec檔案
+* xtk:resourceMenu
+* xtk:rights
+* xtk:schema
+* xtk:scriptContext
+* xtk:specFile
 * xtk:sql
 * xtk:sqlSchema
 * xtk:srcSchema
-* xtk：字串
+* xtk:strings
 * xtk:xslt
 
 >[!IMPORTANT]
 >
->對的READ和WRITE權限 **xtk:sessionInfo** 模式僅可由Adobe Campaign實例的內部帳戶訪問。
+>的讀取和寫入權限 **xtk:sessionInfo** 結構只能由Adobe Campaign例項的內部帳戶存取。
 
-## 修改內置架構的系統篩選器 {#modifying-system-filters-of-built-in-schemas}
+## 修改內建結構的系統篩選器 {#modifying-system-filters-of-built-in-schemas}
 
-您仍然可以修改現成架構的系統篩選器，這些架構預設受到保護，原因是與舊版本的相容性問題。
+您仍可以修改現成可用結構的系統篩選器，這些架構預設會因與舊版的相容性問題而受到保護。
 
 >[!NOTE]
 >
->但是，Adobe建議您不要修改預設參數以確保最佳安全性。
+>不過，Adobe建議您不要修改預設參數，以保證最佳安全性。
 
-1. 為相關架構建立擴展或開啟現有擴展。
-1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主元素中刪除源架構中相同下的篩選器應用程式。
-1. 如果願意，可以添加新篩選器，如中所述 [系統篩選器](#system-filters)。
+1. 為相關結構建立擴充功能，或開啟現有擴充功能。
+1. 新增子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主要元素中，刪除原始架構中相同下方的篩選器應用程式。
+1. 您也可以新增篩選器，如 [系統篩選器](#system-filters).

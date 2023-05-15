@@ -2,11 +2,12 @@
 product: campaign
 title: 更新資料
 description: 更新資料
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 86%
@@ -15,7 +16,7 @@ ht-degree: 86%
 
 # 更新資料{#updating-data}
 
-![](../../assets/v7-only.svg)
+
 
 可以手動或自動更新連結至收件者用戶檔案的資料。
 
@@ -33,7 +34,7 @@ ht-degree: 86%
 
 ### 大量更新 {#mass-update}
 
-對於成批更新，請使用 **[!UICONTROL Action > Mass update of selected lines...]**。 此精靈可協助您設定並執行更新。
+若要進行大量更新，請使用 **[!UICONTROL Action > Mass update of selected lines...]**. 此精靈可協助您設定並執行更新。
 
 精靈的第一步驟是指定要更新的欄位。
 
@@ -67,7 +68,7 @@ ht-degree: 86%
 
 ### 合併資料 {#merge-data}
 
-選擇 **[!UICONTROL Merge selected lines...]** 啟動兩個收件人配置檔案的合併。 選取該選項之前，必須選取要合併的用戶檔案。使用精靈來設定和開始合併。
+選擇 **[!UICONTROL Merge selected lines...]** 啟動合併兩個收件者設定檔。 選取該選項之前，必須選取要合併的用戶檔案。使用精靈來設定和開始合併。
 
 精靈會顯示一或多個來源用戶檔案中每個已填充欄位的擷取內容。如果用戶檔案中要合併的一或多個欄位具有不同的值，則會顯示在 **[!UICONTROL List of conflicts]** 區段中。然後，您可以使用清單下方的選項按鈕來選取預設用戶檔案，如下列範例所示：
 
@@ -79,12 +80,12 @@ ht-degree: 86%
 
 檢查視窗兩個區域中的 **[!UICONTROL Result]** 欄，然後按一下 **[!UICONTROL Finish]** 執行合併。
 
-## 導出資料 {#exporting-data}
+## 匯出資料 {#exporting-data}
 
 清單內容可以匯出。若要設定並執行匯出：
 
 1. 選取要匯出的記錄。
-1. 按一下右鍵並選擇 **[!UICONTROL Export...]**。
+1. 按一下滑鼠右鍵並選取 **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_user_export_list.png)
 
@@ -92,7 +93,7 @@ ht-degree: 86%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   有關如何配置導出嚮導的詳細資訊，請參閱 [此部分](../../platform/using/executing-export-jobs.md)。
+   有關如何配置導出嚮導的詳細資訊，請參閱 [本節](../../platform/using/executing-export-jobs.md).
 
 ## 訂閱服務 {#subscribing-to-a-service}
 
@@ -111,16 +112,16 @@ ht-degree: 86%
    >
    >此編輯器可讓您建立新的服務：按一下 **[!UICONTROL Create]** 按鈕。
 
-1. 你可以 **[!UICONTROL Send a confirmation message]** 收件人。 可在與所選服務相連結的訂閱場景中設定此訊息的內容。
+1. 您可以 **[!UICONTROL Send a confirmation message]** 收件人。 可在與所選服務相連結的訂閱場景中設定此訊息的內容。
 1. 按一下 **[!UICONTROL Start]** 按鈕執行訂閱程序。
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
 使用視窗的上方區域可監視執行程序。使用 **[!UICONTROL Stop]** 按鈕可停止程序。不過，已處理之收件者將訂閱服務。
 
-如果取消選中 **[!UICONTROL Do not keep a trace of this job in the database]** 選項，可以選擇（或建立）將儲存此進程資訊的執行資料夾。
+如果您取消核取 **[!UICONTROL Do not keep a trace of this job in the database]** 選項，可以選擇（或建立）將儲存有關此進程的資訊的執行資料夾。
 
-要檢查該流程，請轉到 **[!UICONTROL Subscriptions]** 頁籤 **[!UICONTROL Subscriptions]** 頁籤 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 的下界。
+若要檢查程式，請前往 **[!UICONTROL Subscriptions]** 頁簽，以查看此操作所關注的收件人的配置檔案，或 **[!UICONTROL Subscriptions]** 標籤 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 節點。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

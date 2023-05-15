@@ -2,11 +2,12 @@
 product: campaign
 title: 透過 SOAP 整合 (伺服器端)
 description: 透過 SOAP 整合 (伺服器端)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 透過SOAP整合（伺服器端）{#integration-via-soap-server-side}
 
-![](../../assets/v7-only.svg)
+
 
 為選件管理提供的SOAP Web服務與Adobe Campaign中通常使用的服務不同。 您可以透過前一節所述的互動URL來存取這些選件，並讓您為特定連絡人呈現或更新選件。
 

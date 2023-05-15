@@ -2,20 +2,21 @@
 product: campaign
 title: 管理行銷資源
 description: 了解如何管理行銷資源
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1386'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 管理行銷資源{#managing-marketing-resources}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign可讓您管理及追蹤促銷活動生命週期中涉及的行銷資源。 這些行銷資源可以是手冊、視覺輔助工具或涉及數個營運商的任何其他通訊媒體。
 

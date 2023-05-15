@@ -2,9 +2,11 @@
 product: campaign
 title: 關於種子地址
 description: 開始使用種子地址
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 8%
@@ -13,37 +15,37 @@ ht-degree: 8%
 
 # 關於種子地址{#about-seed-addresses}
 
-![](../../assets/common.svg)
 
-種子地址用於鎖定不符合所定義的目標準則的收件者。這樣，超出傳遞範圍的收件人可以接收傳遞，就像任何其他目標收件人一樣。
 
-使用它們的一個主要原因是 **您的郵件清單保護**。 將種子地址插入郵件清單時，如果第三方正在使用它，則會留意您，因為它包含的種子地址將接收發送到您的郵件清單的遞送。
+種子地址用於鎖定不符合所定義的目標準則的收件者。這樣，超出傳遞範圍的收件者就可以收到傳遞，如同任何其他目標收件者一樣。
 
-此外，種子地址 **預覽和test交付個性化和呈現** 在發送前，通過發送證據(請參閱 [將種子地址用作證明](steps-defining-the-target-population.md#using-seed-addresses-as-proof))。
+使用它們的主要原因之一是 **您的郵件清單保護**. 在郵寄清單中插入種子地址可讓您在第三方使用時注意，因為其包含的種子地址將接收發送到郵寄清單的傳送。
+
+此外，種子地址允許您 **預覽並測試傳遞個人化和呈現** 傳送校樣之前(請參閱 [使用種子地址作為證明](steps-defining-the-target-population.md#using-seed-addresses-as-proof))。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 種子地址功能具有以下優點：
 
-* 使用從收件人配置檔案獲取的資料隨機替換欄位：這樣，您只能輸入電子郵件地址，例如，在種子地址部分，並允許「市場活動」自動填寫配置檔案中的其它欄位(請參閱 [用例：配置欄位替代](use-case--configuring-the-field-substitution.md))。
-* 當使用具有資料管理功能的工作流時，可以在種子地址級別輸入交付中處理的附加資料以強制執行以下值：這避免了隨機值替換。
-* 種子地址將自動排除在有關以下傳遞統計資訊的報告之外： **[!UICONTROL Clicks]**。 **[!UICONTROL Opens]**。 **[!UICONTROL Unsubscriptions]**。
+* 以從收件者設定檔擷取的資料隨機替代欄位：這可讓您僅輸入電子郵件地址，例如在種子地址區段中，並讓Campaign自動填入設定檔中的其他欄位(請參閱 [使用案例：配置欄位替代](use-case--configuring-the-field-substitution.md))。
+* 搭配資料管理功能使用工作流程時，可在種子地址層級輸入傳送中處理的其他資料，以強制執行值：這會繞過隨機值替代。
+* 種子地址會自動排除在以下傳送統計資料的報表中： **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
-種子地址通過導入或直接在交貨或市場活動中建立而添加到交貨目標。
+種子地址是透過匯入，或直接在傳遞或行銷活動中建立，而新增至傳遞的目標。
 
 >[!NOTE]
 >
->種子地址不屬於收件人表，它們在單獨的表中建立。 如果用新資料擴展收件人表，則必須同時擴展種子地址表，並使用相同的資料。 否則，種子地址將不考慮這些擴展欄位。
+>種子地址不屬於收件者表，它們將建立在單獨的表中。 如果使用新資料擴展收件者表，則必須擴展種子地址表以及使用相同資料擴展種子地址表。 否則，種子地址將不考慮這些擴展欄位。
 >
->本節介紹了如何擴展種子地址表的示例： [用例：選擇標準中的種子地址](use-case--selecting-seed-addresses-on-criteria.md)。
+>本節提供如何擴充種子地址表的範例： [使用案例：選擇條件上的種子地址](use-case--selecting-seed-addresses-on-criteria.md).
 
-對於直郵遞送，種子地址在提取期間被添加並混合在輸出文檔中。
+對於直接郵件傳送，種子地址會在提取期間新增，並在輸出檔案中混合。
 
 >[!IMPORTANT]
 >
->對於直郵遞送，抽取檔案格式必須符合以下限制：
+>對於直接郵件傳送，解壓縮檔案格式必須符合下列限制：
 >
->* 它不得使用 **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
->* 如果提取了元素集合，則這些欄位的種子地址值為空，除非 **[!UICONTROL Single row (expert user)]** 的雙曲餘切值。 如需詳細資訊，請參閱[本章節](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
+>* 它不得使用選項 **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
+>* 如果擷取元素集合，這些欄位的種子地址會有空值，除非 **[!UICONTROL Single row (expert user)]** 選項。 如需詳細資訊，請參閱[本章節](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
 >
 

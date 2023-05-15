@@ -2,20 +2,21 @@
 product: campaign
 title: 配置訪問Oracle
 description: 了解如何在FDA中設定Oracle存取權
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 配置訪問Oracle {#configure-access-to-oracle}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign [同盟資料存取](../../installation/using/about-fda.md) (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定存取Oracle。
 
@@ -96,5 +97,5 @@ ht-degree: 0%
 
    * **[!UICONTROL Password]**:使用者帳戶密碼
 
-   * **[!UICONTROL Time zone]**:伺服器時區
+   * **[!UICONTROL Time zone]**: 伺服器時區
    ![](assets/oracle_config.png)
