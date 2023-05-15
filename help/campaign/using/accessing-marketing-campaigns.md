@@ -2,18 +2,17 @@
 product: campaign
 title: 存取行銷活動
 description: 存取行銷活動
+badge: label="v7" type="Informity" tooltip="適用於Campaign Classicv7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 517a343011ff313d016638c586867673e406fd88
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1257'
 ht-degree: 3%
 
 ---
 
 # 存取行銷活動{#accessing-marketing-campaigns}
-
-![](../../assets/v7-only.svg)
 
 Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有行銷活動都可從統一的控制中心進行管理。 
 
