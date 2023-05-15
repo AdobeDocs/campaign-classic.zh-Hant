@@ -2,11 +2,13 @@
 product: campaign
 title: 升級至新組建
 description: 了解升級至新組建的技術步驟
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # 升級至新組建（內部部署）{#upgrading}
 
-![](../../assets/v7-only.svg)
+
 
 開始升級程式之前，請判斷並確認要升級至哪個Adobe Campaign版本，並洽詢 [發行說明](../../rn/using/latest-release.md) .
 
@@ -24,7 +26,6 @@ ht-degree: 3%
 >* Adobe強烈建議在更新前對每個執行個體進行資料庫備份。 如需詳細資訊，請參閱[本區段](../../production/using/backup.md)。
 >* 若要執行升級，請確定您具備存取執行個體和記錄檔的能力和權限。
 >* 閱讀 [本節](../../installation/using/general-architecture.md) 和 [版本升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 章節。
-
 >
 
 
@@ -124,7 +125,7 @@ ht-degree: 3%
 
 ### 取得更新的套件 {#obtain-updated-packages}
 
-首先，請恢復兩個更新的Adobe Campaign套件：連線至 [軟體發佈門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者憑證。 深入了解Software Distribution，位於 [本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+首先，請恢復兩個更新的Adobe Campaign套件：連線至 [軟體發佈門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者憑證。 深入了解Software Distribution，位於 [本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant?lang=en).
 
 檔案是 **nlserver6-v7-XXX.rpm**
 

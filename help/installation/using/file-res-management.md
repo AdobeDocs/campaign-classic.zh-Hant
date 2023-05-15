@@ -2,11 +2,13 @@
 product: campaign
 title: 檔案和資源管理
 description: 了解如何在Campaign中設定檔案和資源管理
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # 檔案和資源管理{#file-and-resmanagement}
 
-![](../../assets/v7-only.svg)
+
 
 ## 限制上傳檔案格式 {#limiting-uploadable-files}
 
@@ -119,7 +121,7 @@ FTP/FTPS連線會定義於proxyFTP參數中：
 
 ## 管理公用資源 {#managing-public-resources}
 
-若要公開使用，連結至促銷活動的電子郵件和公共資源中使用的影像必須存在於可外部存取的伺服器上。 然後，外部收件者或運算子就能使用這些ID。 [了解更多資訊](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+若要公開使用，連結至促銷活動的電子郵件和公共資源中使用的影像必須存在於可外部存取的伺服器上。 然後，外部收件者或運算子就能使用這些ID。 [了解更多](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
 公共資源儲存在 **/var/res/instance** Adobe Campaign安裝目錄的目錄。
 

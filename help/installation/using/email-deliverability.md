@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: 技術電子郵件設定
-description: 了解如何設定Campaign，以在傳送電子郵件時控制執行個體的輸出。
+description: 了解如何設定Campaign，以在傳送電子郵件時控制執行個體的輸出
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # 技術電子郵件設定{#email-deliverability}
 
-![](../../assets/v7-only.svg)
+
 
 ## 概覽 {#overview}
 
@@ -239,7 +241,7 @@ MX須遵守的規則定義於 **[!UICONTROL MX management]** 檔案 **[!UICONTRO
 
 每個規則可用的下列參數為：
 
-* **[!UICONTROL MX mask]**:套用規則的網域。 每個規則都定義MX的地址掩碼。 因此，任何名稱與此掩碼匹配的MX都符合條件。 掩碼可以包含「*」和「？」 一般字元。
+* **[!UICONTROL MX mask]**:套用規則的網域。 每個規則都定義MX的地址掩碼。 因此，任何名稱與此掩碼匹配的MX都符合條件。 遮罩可包含「&#42;&quot;和&quot;?&quot; 一般字元。
 
    例如，以下地址：
 
@@ -249,7 +251,7 @@ MX須遵守的規則定義於 **[!UICONTROL MX management]** 檔案 **[!UICONTRO
 
    與下列遮罩相容：
 
-   * *.yahoo.com
+   * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
    例如，對於電子郵件地址foobar@gmail.com，網域為gmail.com，而MX記錄為：
@@ -393,18 +395,18 @@ MX須遵守的規則定義於 **[!UICONTROL MX management]** 檔案 **[!UICONTRO
 
 在上例中，使用正常條件時，地址將按以下方式分配：
 
-    * &quot;1&quot;:5 /(5+5+1)= 45%
-    * &quot;2&quot;:5 /(5+5+1)= 45%
-    * &quot;3&quot;:1 /(5+5+1)= 10%
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
 例如，如果不能將第一個地址用於指定MX，則消息將按如下方式發送：
 
-    * &quot;2&quot;:5 /(5+1)= 83%
-    * &quot;3&quot;:1 /(5+1)= 17%
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**:可讓您為屬於特定網域的電子郵件保留此IP位址。 這是可包含一或多個萬用字元(「*」)的遮罩清單。 如果未指定屬性，則所有域都可以使用此IP地址。
+* **includeDomains**:可讓您為屬於特定網域的電子郵件保留此IP位址。 這是可包含一或多個萬用字元(「&#42;&#39;)。 如果未指定屬性，則所有域都可以使用此IP地址。
 
-   範例： **includeDomains=」wanadoo.com、orange.com、yahoo.*」**
+   範例： **includeDomains=」wanadoo.com,orange.com,yahoo。&#42;&quot;**
 
 * **excludeDomains**:不包括此IP位址的網域清單。 此篩選會在 **includeDomains** 篩選。
 

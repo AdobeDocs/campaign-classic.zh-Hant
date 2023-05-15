@@ -2,17 +2,19 @@
 product: campaign
 title: 安裝Campaign Classic內建套件
 description: 了解如何安裝Campaign內建套件
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
 # 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
 
-![](../../assets/v7-only.svg)
+
 
 ## 關於內建套件 {#campaign-standard-packages}
 
@@ -53,7 +55,7 @@ ht-degree: 12%
   <tr> 
    <th> 套件 </th> 
    <th> 說明 </th> 
-   <th> 例項類型 </th>
+   <th> 實例類型 </th>
   </tr> 
  </thead> 
  <tbody> 

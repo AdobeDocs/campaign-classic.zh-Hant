@@ -2,11 +2,13 @@
 product: campaign
 title: 設定URL權限
 description: 了解如何設定URL權限
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 29%
@@ -15,7 +17,7 @@ ht-degree: 29%
 
 # 設定URL權限（內部部署）{#url-permissions}
 
-![](../../assets/v7-only.svg)
+
 
 可由您的 Campaign Classic 執行個體的 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。這些是可讓您的執行個體正常運作的 URL。
 
@@ -54,7 +56,7 @@ ht-degree: 29%
 
 如需詳細資訊，請參閱下列章節：
 
-* [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 * [託管模型](hosting-models.md)
 * [Campaign 伺服器設定](configuring-campaign-server.md)
 * [Campaign伺服器設定檔案參數](the-server-configuration-file.md)

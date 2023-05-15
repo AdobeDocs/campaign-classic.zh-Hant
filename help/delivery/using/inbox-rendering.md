@@ -2,18 +2,20 @@
 product: campaign
 title: Campaign中的收件匣轉譯
 description: 了解如何擷取電子郵件呈現，並在專屬報告中提供
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 8%
+source-wordcount: '839'
+ht-degree: 9%
 
 ---
 
 # 收件匣轉譯{#inbox-rendering}
 
-![](../../assets/common.svg)
+
 
 ## 關於收件匣轉譯 {#about-inbox-rendering}
 
@@ -33,6 +35,8 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 >在傳送中測試個人化不需要收件匣轉譯。 您可以使用Adobe Campaign工具(例如 **[!UICONTROL Preview]** 和 [校樣](steps-validating-the-delivery.md#sending-a-proof).
 
 ## 啟用收件匣轉譯 {#activating-inbox-rendering}
+
+[!BADGE 內部部署與混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"}
 
 對於托管和混合式用戶端，收件匣轉譯是由Adobe技術支援和顧問在您的執行個體上設定。 如需詳細資訊，請連絡您的Adobe帳戶高階主管。
 
@@ -119,7 +123,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 ## 收件匣呈現報告 {#inbox-rendering-report}
 
-此報表會以收件者看到的方式顯示收件匣呈現。 呈現會因收件者開啟電子郵件傳送的方式而異：在瀏覽器、行動裝置或透過電子郵件應用程式。
+此報表會以收件者看到的方式顯示收件匣呈現。 呈現會因收件者開啟電子郵件傳送的方式而異：瀏覽器、行動裝置或電子郵件應用程式中。
 
 此 **[!UICONTROL General summary]** 以清單和圖形顏色編碼表示方式呈現接收、不想要（垃圾郵件）、未接收或待接收的郵件數。
 

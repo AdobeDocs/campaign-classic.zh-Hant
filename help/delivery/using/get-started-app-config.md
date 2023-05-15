@@ -2,18 +2,19 @@
 product: campaign
 title: 在Adobe Campaign中設定行動應用程式
 description: 了解如何從行動應用程式設定開始
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 7%
+source-wordcount: '308'
+ht-degree: 10%
 
 ---
 
 # 開始使用應用程式設定
 
-![](../../assets/v7-only.svg)
+
 
 您可以在本節中找到以銷售線上假日套件的公司為基礎的設定範例。 其行動應用程式(Neotrips)提供兩種版本供其客戶使用：Android的Neotrips和iOS的Neotrips。
 
@@ -30,6 +31,8 @@ ht-degree: 7%
 >前往 **[!UICONTROL Subscriptions]** 頁簽，查看服務的訂閱者清單，即所有在行動裝置上安裝了應用程式並同意接收通知的人員。
 
 ## 安裝套件 {#installing-package-ios}
+
+[!BADGE 內部部署與混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 

@@ -2,11 +2,13 @@
 product: campaign
 title: 配置安全區域
 description: 了解如何配置安全區域
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 1%
@@ -15,11 +17,11 @@ ht-degree: 1%
 
 # 定義安全區域（內部部署）{#defining-security-zones}
 
-![](../../assets/v7-only.svg)
+
 
 每個運算子都需要連結到區域才能登錄到實例，並且運算子IP必須包含在安全區域中定義的地址或地址集中。 安全區配置在Adobe Campaign伺服器的配置檔案中執行。
 
-運算子會從主控台的設定檔連結至安全區域，可在 **[!UICONTROL Administration > Access management > Operators]** 節點。 [了解更多資訊](#linking-a-security-zone-to-an-operator)。
+運算子會從主控台的設定檔連結至安全區域，可在 **[!UICONTROL Administration > Access management > Operators]** 節點。 [了解更多](#linking-a-security-zone-to-an-operator)。
 
 >[!NOTE]
 >

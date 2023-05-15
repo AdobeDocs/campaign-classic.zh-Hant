@@ -1,21 +1,21 @@
 ---
 product: campaign
 title: 透過 LDAP 連線
-description: '了解如何使用LDAP登入Campaign '
+description: 了解如何使用LDAP登入Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 透過 LDAP 連線{#connecting-through-ldap}
-
-![](../../assets/v7-only.svg)
 
 ## 設定促銷活動和LDAP {#configuring-campaign-and-ldap}
 
@@ -189,4 +189,4 @@ LDAP配置在部署嚮導中執行。 此 **[!UICONTROL LDAP integration]** 選�
 
    不論是由Adobe Campaign或LDAP即時建立群組。 這些檔案需要分別在Adobe Campaign和LDAP目錄中建立。
 
-   LDAP目錄中的群組名稱必須與Adobe Campaign群組的名稱一致。 其關聯掩碼在部署嚮導的最後一個配置階段中定義：Adobe Campaign_(.*)，例如。
+   LDAP目錄中的群組名稱必須與Adobe Campaign群組的名稱一致。 其關聯掩碼在部署嚮導的最後一個配置階段中定義：Adobe Campaign_(.&#42;)，例如。

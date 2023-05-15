@@ -2,20 +2,22 @@
 product: campaign
 title: 網路設定
 description: 了解系統通信指南
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # 網路設定{#network-configuration}
 
-![](../../assets/v7-only.svg)
+
 
 ## 進程之間的通信 {#communication-between-processes}
 
@@ -32,7 +34,7 @@ ht-degree: 3%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 註解<br /> </td> 
+   <td> 評論<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
@@ -66,7 +68,7 @@ ht-degree: 3%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 註解<br /> </td> 
+   <td> 評論<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp(pop3)<br /> </td> 
@@ -90,7 +92,7 @@ ht-degree: 3%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 註解<br /> </td> 
+   <td> 評論<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp(http)<br /> 443/tcp(https)<br /> </td> 
@@ -111,7 +113,7 @@ ht-degree: 3%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 註解<br /> </td> 
+   <td> 評論<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp（預設埠）<br /> </td> 
@@ -130,7 +132,7 @@ ht-degree: 3%
   <tr> 
    <td> 埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 註解<br /> </td> 
+   <td> 評論<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p>443/tcp(https)</p><br /> </td> 

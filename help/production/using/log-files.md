@@ -2,20 +2,22 @@
 product: campaign
 title: 記錄檔案
 description: 記錄檔案
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 記錄檔案{#log-files}
 
-![](../../assets/v7-only.svg)
+
 
 記錄檔的組織方式如下：
 
@@ -57,7 +59,7 @@ ht-degree: 1%
 
 為達到效能和儲存最佳化， logins.log檔案會分割為多個檔案，每天一個檔案(logins.yy-mm-dd.log)，最多可保留365個檔案。 syslogd(**maxNumberOfLoginsFiles** 選項)。 請參閱 [伺服器配置檔案](../../installation/using/the-server-configuration-file.md#syslogd).
 
-依預設，每個模組和每個執行個體的記錄檔數限制為兩個10 MB的檔案。 第二個檔案稱為： **`<modulename>`_2.log**. 因此，每個模組和每個執行個體的日誌大小限制為2*10MB。
+依預設，每個模組和每個執行個體的記錄檔數限制為兩個10 MB的檔案。 第二個檔案稱為： **`<modulename>`_2.log**. 因此，記錄檔的大小限制為2&#42;每個模組和每個實例10MB。
 
 不過，您可以保留較大的檔案。 若要啟用此功能，請變更 **maxFileSizeMb=&quot;10&quot;** 設定 **syslogd** 節點 **conf/serverConf.xml** 檔案。 此值表示日誌檔案的最大大小(MB)。
 

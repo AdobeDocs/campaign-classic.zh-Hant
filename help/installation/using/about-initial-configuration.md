@@ -2,11 +2,13 @@
 product: campaign
 title: 關於初始配置
 description: 關於初始配置
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
@@ -15,7 +17,7 @@ ht-degree: 8%
 
 # 設定和部署執行個體的關鍵步驟{#about-initial-configuration}
 
-![](../../assets/v7-only.svg)
+
 
 完成Adobe Campaign安裝後，您必須加以設定，以確保在您受到限制和技術架構的情況下，能有效運作。 本章會依下列順序詳細說明設定Adobe Campaign例項的步驟：
 

@@ -2,11 +2,13 @@
 product: campaign
 title: 開始進行版本編號升級
 description: 了解升級至新組建的關鍵步驟
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '2356'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # 執行版本編號升級{#performing-a-build-upgrade}
 
-![](../../assets/v7-only.svg)
+
 
 本節將提供升級流程的深入逐步說明，以及識別和解決衝突的步驟。
 
@@ -246,7 +248,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 在中間來源環境中，您需要執行以下額外步驟才能升級：
 
-1. 連絡人 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 協調Mid-Sourcing伺服器的升級。
+1. 連絡人 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 協調Mid-Sourcing伺服器的升級。
 1. 執行測試連結以驗證版本已更新。 例如：
 
    ```
@@ -409,7 +411,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 **相關主題**
 
-* [建置升級常見問答集](../../platform/using/faq-build-upgrade.md)
+* [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
 * [Campaign Classic的說明和支援選項](../../support.md)
 * [促銷活動每年升級方案](../../rn/using/rn-overview.md)

@@ -2,11 +2,13 @@
 product: campaign
 title: 使用 Linux 安裝軟體套件
 description: 使用 Linux 安裝軟體套件
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: fbab510788abe0fccbbd791233c906e7f9d8d703
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 使用 Linux 安裝軟體套件{#installing-packages-with-linux}
 
-![](../../assets/v7-only.svg)
+
 
 若為Linux 32位元平台，請安裝Adobe Campaign 32位元。 對於Linux 64位元平台，請安裝Adobe Campaign 64位元。
 
@@ -357,4 +359,4 @@ nlserver stop web
 
 Adobe Campaign伺服器會定義技術登入，稱為 **內部** 在所有情況下均具有所有權利。 安裝後登錄名沒有密碼。 必須定義一個。
 
-深入了解 [本節](../../installation/using/configuring-campaign-server.md#internal-identifier).
+在[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)了解更多資訊。

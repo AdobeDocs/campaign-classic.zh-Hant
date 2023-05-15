@@ -2,20 +2,22 @@
 product: campaign
 title: 部署執行個體
 description: 深入了解Campaign部署精靈
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '3140'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 部署執行個體{#deploying-an-instance}
 
-![](../../assets/v7-only.svg)
+
 
 >[!NOTE]
 >
@@ -285,7 +287,7 @@ Adobe Campaign用戶端主控台中提供的圖形精靈可讓您定義要連線
 * **[!UICONTROL Label]** :輸入此SMS/Wap推播帳戶的名稱。 例如，您可能希望使用路由器的名稱。
 * 若 **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** 欄位：如需所需設定，請連絡您的服務提供者。
 
-### 傳送的簡訊參數 {#parameters-of-sms-sent}
+### 已傳送簡訊的參數 {#parameters-of-sms-sent}
 
 在 **優先順序** 下拉式清單：選取「一般」、「高」或「緊急」，將其套用至要傳送的訊息。
 

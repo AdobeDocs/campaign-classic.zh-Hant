@@ -2,11 +2,13 @@
 product: campaign
 title: Linux 中的堆疊追蹤
 description: Linux 中的堆疊追蹤
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -15,7 +17,7 @@ ht-degree: 11%
 
 # Linux 中的堆疊追蹤{#stack-trace-in-linux}
 
-![](../../assets/v7-only.svg)
+
 
 A **堆疊追蹤** 表示 **核心** 類型檔案。 系統會在發生電腦錯誤時產生此檔案。 它可識別錯誤的來源。
 
@@ -23,7 +25,6 @@ A **堆疊追蹤** 表示 **核心** 類型檔案。 系統會在發生電腦錯
 >
 >* A **核心** 檔案已命名 **核心。`<num>`**.
 >* **gdb - GNU調試器** 必須安裝在電腦上。
-
 >
 
 

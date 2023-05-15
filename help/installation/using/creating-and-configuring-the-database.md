@@ -2,20 +2,20 @@
 product: campaign
 title: 建立和設定資料庫
 description: 建立和設定資料庫
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 建立和設定資料庫{#creating-and-configuring-the-database}
-
-![](../../assets/v7-only.svg)
 
 建立資料庫時，Adobe Campaign提供兩種不同的選項：
 
@@ -63,7 +63,7 @@ Campaign中列出支援的資料庫 [相容性矩陣](../../rn/using/compatibili
 
    >[!CAUTION]
    >
-   > 從20.3開始，Windows NT驗證已停止服務。 **[!UICONTROL SQL Server authentication]** 現在是Microsoft SQL Server唯一可用的驗證模式。 [閱讀全文](../../rn/using/deprecated-features.md)
+   > 從20.3開始，Windows NT驗證已停止服務。 **[!UICONTROL SQL Server authentication]** 現在是Microsoft SQL Server唯一可用的驗證模式。 [深入了解](../../rn/using/deprecated-features.md)
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 

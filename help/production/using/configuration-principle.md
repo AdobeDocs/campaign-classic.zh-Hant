@@ -2,11 +2,13 @@
 product: campaign
 title: 設定原則
 description: 設定原則
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # 設定原則{#configuration-principle}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign平台以例項概念為基礎，與Apache使用的虛擬主機概念類似。 此操作模式可讓您指派數個執行個體來共用伺服器。 實例之間完全分離，並使用其自己的資料庫和配置檔案操作。
 

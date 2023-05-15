@@ -2,20 +2,22 @@
 product: campaign
 title: Campaign Tomcat設定
 description: Campaign Tomcat設定
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: f05cea5c9a7b9088d0b86986373b6a0188315aae
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # 配置Apache Tomcat {#configuring-tomcat}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign使用 **名為Apache Tomcat的嵌入式Web servlet** 處理應用程式與任何外部介面（包括用戶端主控台、追蹤的URL連結、SOAP呼叫等）之間的HTTP/HTTPS要求。 對於任何面向外部的Adobe Campaign例項，此前通常會有外部Web伺服器（通常是IIS或Apache）。
 

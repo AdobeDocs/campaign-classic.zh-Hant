@@ -2,20 +2,22 @@
 product: campaign
 title: 常用指令
 description: 常用指令
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 常用指令{#usual-commands}
 
-![](../../assets/v7-only.svg)
+
 
 本節列出Adobe Campaign中的常用命令。
 
@@ -29,7 +31,6 @@ ht-degree: 3%
 >
 >* 在任何情況下，您都可以新增 **-noconsole** 用於刪除模組啟動後顯示的注釋的參數。
 >* 反之，您可以新增引數 **-verbose** 以顯示更多資訊。
-
 >
 
 
