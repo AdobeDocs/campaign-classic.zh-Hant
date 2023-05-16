@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 9ea7eea5a539407a17b0a11c942570cfa6c16f2f
 workflow-type: tm+mt
-source-wordcount: '3610'
+source-wordcount: '3598'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,11 @@ ht-degree: 0%
 # 監控流程{#monitoring-processes}
 
 
-
 應用程式伺服器和重定向伺服器(**追蹤**)可以手動或自動監控。
 
 ## 手動監控 {#manual-monitoring}
 
-前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Overview]** 連結以顯示Adobe Campaign程式監控頁面。
+若要存取Adobe Campaign程式監控頁面，請瀏覽至 **[!UICONTROL Monitoring]** ，然後按一下 **[!UICONTROL Overview]** 連結。
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -33,71 +32,71 @@ ht-degree: 0%
 * 缺少進程和執行資訊的清單（開始日期、PID等）,
 * 工作流程和傳送的檢視。
 
-監控不同促銷活動程式的其他方式，請參閱 [本頁](../../production/using/monitoring-guidelines.md).
+監控Campaign流程的其他方式顯示於 [本頁](../../production/using/monitoring-guidelines.md).
 
 ### 日誌日誌 {#log-journal}
 
-可以顯示與進程相關的日誌日誌。 要執行此操作，請按一下程式， **mta** 例如，然後按一下 **[!UICONTROL Open the log journal]** .
+要顯示與進程相關的日誌日誌，請按一下進程， **mta** 例如，然後選取 **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
 ### 系統指標 {#system-indicators}
 
-系統指示器清單使您能夠顯示有關電腦的資訊，如其物理和虛擬記憶體、活動進程和可用磁碟空間。 Linux和Windows作業系統的指標不同。 前往 **[!UICONTROL Instance Monitoring]** 頁面，然後按一下 **[!UICONTROL Display]** 連結以開啟指標清單
+瀏覽到系統指標清單，以顯示有關電腦的資訊，如其物理和虛擬記憶體、活動進程和可用磁碟空間。 Linux和Windows作業系統的指標不同。 前往 **[!UICONTROL Instance Monitoring]** 頁面，然後按一下 **[!UICONTROL Display]** 連結以開啟指標清單。
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** :特定指標 **訊息中心**. 請參閱 [本節](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以取得更多資訊。
+* **[!UICONTROL Pending events queued]**:特定指標 **訊息中心**. [了解更多](../../message-center/using/additional-configurations.md#monitoring-thresholds)
 
-* **[!UICONTROL Memory]** :有關物理儲存器(RAM)的資訊。
+* **[!UICONTROL Memory]**:有關物理儲存器(RAM)的資訊。
 
-   **[!UICONTROL Current value]** :實際記憶體消耗。
+   **[!UICONTROL Current value]**:當前記憶體消耗。
 
-   **[!UICONTROL Max Value]** :已安裝的記憶體總量。
+   **[!UICONTROL Max Value]**:已安裝的記憶體總量。
 
-   **[!UICONTROL Available]** :可用記憶體量。
+   **[!UICONTROL Available]**:可用記憶體量。
 
-   **[!UICONTROL Warning]** :當記憶體消耗達到總量的80%時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當記憶體消耗達到總量的80%時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當記憶體消耗達到總量的90%時，將顯示此指示器。
 
    當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示符，則可通過向安裝了Adobe Campaign伺服器的電腦添加RAM來解決問題。 您也可以決定將Adobe Campaign伺服器安裝在專用電腦上。
 
-* **[!UICONTROL Swap Memory]** :與匹配分頁檔案的虛擬記憶體相關的資訊：硬碟上的一個區域，Windows使用它就像是RAM。
+* **[!UICONTROL Swap Memory]**:與匹配分頁檔案的虛擬記憶體相關的資訊：硬碟上的一個區域，Windows使用它就像是RAM。
 
-   **[!UICONTROL Current value]** :實際記憶體消耗。
+   **[!UICONTROL Current value]**:實際記憶體消耗。
 
-   **[!UICONTROL Max Value]** :記憶體總量。
+   **[!UICONTROL Max Value]**:記憶體總量。
 
-   **[!UICONTROL Available]** :可用記憶體量。
+   **[!UICONTROL Available]**:可用記憶體量。
 
-   **[!UICONTROL Warning]** :當記憶體消耗達到總量的80%時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當記憶體消耗達到總量的80%時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當記憶體消耗達到總量的90%時，將顯示此指示器。
 
    當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示符，您可以通過增加高級Windows設定中的exchange檔案大小來解決問題。
 
-* **[!UICONTROL Disk XXX]** :有關機器閱讀器的資訊。
+* **[!UICONTROL Disk XXX]**:有關機器閱讀器的資訊。
 
-   **[!UICONTROL Current value]** :實際使用的磁碟空間。
+   **[!UICONTROL Current value]**:實際使用的磁碟空間。
 
-   **[!UICONTROL Max Value]** :磁碟總容量。
+   **[!UICONTROL Max Value]**:磁碟總容量。
 
-   **[!UICONTROL Available]** :可用磁碟空間
+   **[!UICONTROL Available]**:磁碟空間可用。
 
-   **[!UICONTROL Used]** :使用的磁碟百分比。
+   **[!UICONTROL Used]**:使用的磁碟百分比。
 
-   **[!UICONTROL Warning]** :當可用磁碟空間達到總容量的80%時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當可用磁碟空間達到總容量的80%時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當可用磁碟空間達到總容量的90%時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當可用磁碟空間達到總容量的90%時，將顯示此指示器。
 
-* **[!UICONTROL Number of processes too old]** :已生效超過一天之Adobe Campaign程式的相關資訊。
+* **[!UICONTROL Number of processes too old]**:已生效超過一天之Adobe Campaign程式的相關資訊。
 
-   **[!UICONTROL Current value]** :當前活動的進程數。
+   **[!UICONTROL Current value]**:當前活動的進程數。
 
-   **[!UICONTROL Max Value]** :授權進程的最大數量(1)。
+   **[!UICONTROL Max Value]**:授權進程的最大數量(1)。
 
-   **[!UICONTROL Alert]** :如果進程數等於1，則顯示此指示器。
+   **[!UICONTROL Alert]**:如果進程數等於1，則顯示此指示器。
 
    當 **[!UICONTROL Alert]** 指示符被顯示，可能是相關進程被SQL資料庫引擎鎖定，或者它被卡在無限循環中。 此 **監視** Adobe Campaign提供的程式會每天自動重新啟動所有程式，讓您解決此問題。 但您也可以自行停止相關程式以強制重新啟動。
 
@@ -105,115 +104,115 @@ ht-degree: 0%
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** :特定指標 **訊息中心**. 請參閱 [本節](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以取得更多資訊。
+* **[!UICONTROL Pending events queued]**:特定指標 **訊息中心**. 請參閱 [本節](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以取得更多資訊。
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** :有關負載的資訊，即在最後一分鐘、五分鐘或十五分鐘內在電腦上運行的進程對處理器的使用率
+* **[!UICONTROL Load average (1/5/15 minutes)]**:有關負載的資訊，即在最後一分鐘、五分鐘或十五分鐘內在電腦上運行的進程對處理器的使用率
 
-   **[!UICONTROL Current value]** :機器的實際負載。
+   **[!UICONTROL Current value]**:機器的實際負載。
 
-   **[!UICONTROL Max value]** :機器上進程的最大使用負荷
+   **[!UICONTROL Max value]**:機器上進程的最大使用負荷
 
-   **[!UICONTROL Warning]** :當負載在最後一分鐘、五分鐘或十五分鐘內達到最大授權值的80%時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當負載在最後一分鐘、五分鐘或十五分鐘內達到最大授權值的80%時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當負載達到最後一分鐘、五分鐘或十五分鐘的最大授權值的90%時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當負載達到最後一分鐘、五分鐘或十五分鐘的最大授權值的90%時，將顯示此指示器。
 
-* **[!UICONTROL Memory]** :有關物理儲存器(RAM)的資訊。
+* **[!UICONTROL Memory]**  有關物理儲存器(RAM)的資訊。
 
-   **[!UICONTROL Current value]** :實際記憶體消耗。
+   **[!UICONTROL Current value]**:實際記憶體消耗。
 
-   **[!UICONTROL Max Value]** :已安裝的記憶體總量。
+   **[!UICONTROL Max Value]**:已安裝的記憶體總量。
 
-   **[!UICONTROL Available]** :可用記憶體量。
+   **[!UICONTROL Available]**:可用記憶體量。
 
-   **[!UICONTROL Warning]** :當記憶體消耗達到總量的80%時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當記憶體消耗達到總量的80%時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當記憶體消耗達到總量的90%時，將顯示此指示器。
 
    當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示符，則可通過向安裝了Adobe Campaign伺服器的電腦添加RAM來解決問題。 您也可以決定將Adobe Campaign伺服器安裝在專用電腦上。
 
-* **[!UICONTROL Swap Memory]** :與匹配分頁檔案的虛擬記憶體相關的資訊：硬碟上的一個區域，Windows使用它就像是RAM。
+* **[!UICONTROL Swap Memory]**:與匹配分頁檔案的虛擬記憶體相關的資訊：硬碟上的一個區域，Windows使用它就像是RAM。
 
-   **[!UICONTROL Current value]** :實際記憶體消耗。
+   **[!UICONTROL Current value]**:實際記憶體消耗。
 
-   **[!UICONTROL Max Value]** :記憶體總量。
+   **[!UICONTROL Max Value]**:記憶體總量。
 
-   **[!UICONTROL Available]** :可用記憶體量。
+   **[!UICONTROL Available]**:可用記憶體量。
 
-   **[!UICONTROL Warning]** :當記憶體消耗達到總量的80%時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當記憶體消耗達到總量的80%時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當記憶體消耗達到總量的90%時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當記憶體消耗達到總量的90%時，將顯示此指示器。
 
    當 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 指示器，您可以增加exchange檔案的大小來解決問題。
 
-* **[!UICONTROL Core Files]** :關於Adobe Campaign程式當機後產生之檔案的資訊。 這些檔案可讓您診斷當機原因。
+* **[!UICONTROL Core Files]**:關於Adobe Campaign程式當機後產生之檔案的資訊。 這些檔案可讓您診斷當機原因。
 
-   **[!UICONTROL Current Value]** :現有檔案數。
+   **[!UICONTROL Current Value]**:現有檔案數。
 
-   **[!UICONTROL Max Value]** :授權檔案的最大數量(1)。
+   **[!UICONTROL Max Value]**:授權檔案的最大數量(1)。
 
-   **[!UICONTROL Warning]** :當檔案數接近1時，會顯示此指標。
+   **[!UICONTROL Warning]**:當檔案數接近1時，會顯示此指標。
 
-   **[!UICONTROL Alert]** :當檔案數等於1時，會顯示此指標。
+   **[!UICONTROL Alert]**:當檔案數等於1時，會顯示此指標。
 
    當程式因當機而遺失時，該程式會在程式清單中以紅色顯示，並由 **監視** 程式由Adobe Campaign提供。
 
-* **[!UICONTROL Number of shared memory segments]** :有關所有Adobe Campaign進程共用的記憶體段的資訊。
+* **[!UICONTROL Number of shared memory segments]**:有關所有Adobe Campaign進程共用的記憶體段的資訊。
 
-   **[!UICONTROL Current value]** :當前使用的記憶體段數。
+   **[!UICONTROL Current value]**:當前使用的記憶體段數。
 
-   **[!UICONTROL Max Value]** :授權的最大記憶體段數(2)。
+   **[!UICONTROL Max Value]**:授權的最大記憶體段數(2)。
 
-   **[!UICONTROL Warning]** :當記憶體段數達到1時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當記憶體段數達到1時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當記憶體段數達到2時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當記憶體段數達到2時，將顯示此指示器。
 
-* **[!UICONTROL Number of processes too old]** :已活動超過一天的流程的相關資訊。
+* **[!UICONTROL Number of processes too old]**:已活動超過一天的流程的相關資訊。
 
-   **[!UICONTROL Current value]** :當前活動的進程數。
+   **[!UICONTROL Current value]**:當前活動的進程數。
 
-   **[!UICONTROL Max Value]** :授權進程的最大數量。
+   **[!UICONTROL Max Value]**:授權進程的最大數量。
 
-   **[!UICONTROL Warning]** :當進程數達到授權閾值的80%時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當進程數達到授權閾值的80%時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當進程數達到授權閾值的90%時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當進程數達到授權閾值的90%時，將顯示此指示器。
 
-* **[!UICONTROL File Handles]** :有關檔案描述符的資訊，即每個進程開啟的檔案數。
+* **[!UICONTROL File Handles]**:有關檔案描述符的資訊，即每個進程開啟的檔案數。
 
-   **[!UICONTROL Current value]** :當前檔案描述符數。
+   **[!UICONTROL Current value]**:當前檔案描述符數。
 
-   **[!UICONTROL Max Value]** :作業系統授權的檔案描述符的最大數量。
+   **[!UICONTROL Max Value]**:作業系統授權的檔案描述符的最大數量。
 
-   **[!UICONTROL Warning]** :當授權的檔案描述符數達到80%閾值時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當授權的檔案描述符數達到80%閾值時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當授權的檔案描述符數達到90%閾值時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當授權的檔案描述符數達到90%閾值時，將顯示此指示器。
 
-* **[!UICONTROL Processes]** :有關機器進程的資訊。
+* **[!UICONTROL Processes]**:有關機器進程的資訊。
 
-   **[!UICONTROL Current value]** :當前活動的進程數。
+   **[!UICONTROL Current value]**:當前活動的進程數。
 
-   **[!UICONTROL Max Value]** :授權進程的最大數量。
+   **[!UICONTROL Max Value]**:授權進程的最大數量。
 
-   **[!UICONTROL Active Processes]** :活動進程數。
+   **[!UICONTROL Active Processes]**:活動進程數。
 
-   **[!UICONTROL Inactive Processes]** :非活動進程數。
+   **[!UICONTROL Inactive Processes]**:非活動進程數。
 
-   **[!UICONTROL Warning]** :當授權進程數達到80%閾值時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當授權進程數達到80%閾值時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** :當授權進程數達到90%閾值時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當授權進程數達到90%閾值時，將顯示此指示器。
 
-* **[!UICONTROL Zombie Processes]** :已停止但仍具有進程標識符(PID)且在進程表中仍可見的進程的相關資訊。
+* **[!UICONTROL Zombie Processes]**:已停止但仍具有進程標識符(PID)且在進程表中仍可見的進程的相關資訊。
 
-   **[!UICONTROL Current value]** :當前處於活動狀態的僵屍進程數。
+   **[!UICONTROL Current value]**:當前處於活動狀態的僵屍進程數。
 
-   **[!UICONTROL Max Value]** :授權僵屍進程的最大數量(2)。
+   **[!UICONTROL Max Value]**:授權僵屍進程的最大數量(2)。
 
-   **[!UICONTROL Warning]** :當僵屍進程數接近2時，將顯示此指示器。
+   **[!UICONTROL Warning]**:當僵屍進程數接近2時，將顯示此指示器。
 
-   **[!UICONTROL Alert]** 當僵屍進程數達到2時，將顯示此指示器。
+   **[!UICONTROL Alert]**:當僵屍進程數達到2時，將顯示此指示器。
 
 #### 自訂指標 {#customized-indicators}
 
-Adobe Campaign可讓您自訂指標。 操作步驟：
+Adobe Campaign可讓您自訂指標，如下所述：
 
 1. 建立 **.sh** 檔案和名稱 **[!UICONTROL cust_indicators.sh]** .
 1. 將您的自訂指標新增至此檔案。 例如：
@@ -239,17 +238,15 @@ Adobe Campaign可讓您自訂指標。 操作步驟：
    </indicator>"
    ```
 
-1. 將檔案放入 **[!UICONTROL usr/local/neolane/nl6]** 檔案夾。
+1. 將檔案儲存在 **[!UICONTROL usr/local/neolane/nl6]** 檔案夾。
 
-此檔案將由Adobe Campaign呼叫。
+此檔案由Adobe Campaign呼叫。
 
 ## SMTP報表 {#smtp-reports}
 
 SMTP傳送監控報表已整合至Adobe Campaign平台。 您可透過主控台或使用Web存取來存取這些檔案。
 
-這些報表會依網域顯示SMTP傳送統計資料和SMTP錯誤。
-
-若要存取，運算子必須具有管理權限。
+這些報表會依網域顯示SMTP傳送統計資料和SMTP錯誤。 若要存取，運算子必須具備 **管理** 權限。
 
 它們會分組在 **監控** > &#39;SMTP監視&#39;。
 
