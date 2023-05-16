@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2355'
 ht-degree: 3%
 
 ---
@@ -93,9 +93,9 @@ ht-degree: 3%
 * **nlserver pdump**:列出正在運行的進程
 * **nlserver pdump -who**:列出活動客戶端會話
 * **nlserver監視器 — 缺少**:清單缺少屬性
-* **nlserver開始process@instanceName**:啟動進程
-* **nlserver停止process@instanceName**:停止進程
-* **nlserver重新啟動process@instanceName**:重新啟動進程
+* **nlserver開始process@instance-name**:啟動進程
+* **nlserver停止process@instance-name**:停止進程
+* **nlserver重新啟動process@instance-name**:重新啟動進程
 * **nlserver關閉**:停止所有Campaign程式
 * **nlserver watchgd -svc**:啟動監視程式（僅UNIX）
 
@@ -278,7 +278,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 如果警告涉及資源衝突，則需要用戶注意才能解決該問題。
 
-此 **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結果。 預設可在下列目錄中使用： **installationDirectory/var/instanceName/postupgrade**. 錯誤和警告由錯誤和警告屬性指示。
+此 **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步結果。 預設可在下列目錄中使用： **installationDirectory/var/`<instance-name>`/postupgrade**. 錯誤和警告由錯誤和警告屬性指示。
 
 ### 分析衝突
 

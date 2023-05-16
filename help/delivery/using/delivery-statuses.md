@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 8%
@@ -111,19 +111,19 @@ ajouter screenshot -->
       nlserver pdump
       HH:MM:SS > Application server for Adobe Campaign Classic (X.Y.Z YY.R build nnnn@SHA1) of DD/MM/YYYY
       [...]
-      mta@<INSTANCENAME> (9268) - 23.0 Mb
+      mta@<instance-name> (9268) - 23.0 Mb
       [...]
       ```
 
    1. 如果未列出MTA，請使用下列命令啟動：
 
       ```
-      nlserver start mta@<INSTANCENAME>
+      nlserver start mta@<instance-name>
       ```
 
       >[!NOTE]
       >
-      >取代 `<INSTANCENAME>` 以及執行個體的名稱（生產、開發等）。 執行個體名稱是透過設定檔案識別： `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
+      >取代 `<instance-name>` 以及執行個體的名稱（生產、開發等）。 執行個體名稱是透過設定檔案識別： `[path of application]nl6/conf/config-<instance-name>.xml`
 
 * 傳送可能使用未在傳送伺服器上設定的相似性。
 

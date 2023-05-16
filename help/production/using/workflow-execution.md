@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -52,20 +52,20 @@ ht-degree: 3%
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Version X.Y (build XXXX) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
    如果模組未執行，請連絡Adobe客戶服務。 如果您有內部部署，管理員使用者必須使用以下命令重新啟動服務。
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >取代 **`<instancename>`** 以及執行個體的名稱（生產、開發等）。 執行個體名稱是透過設定檔案識別：
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >取代 **`<instance-name>`** 以及執行個體的名稱（生產、開發等）。 執行個體名稱是透過設定檔案識別：
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有關如何重新啟動模組的詳細資訊，請參閱 [本節](../../production/using/usual-commands.md#module-launch-commands).
 
@@ -95,7 +95,7 @@ ht-degree: 3%
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
@@ -104,13 +104,13 @@ ht-degree: 3%
 1. 如果模組未執行，請連絡Adobe客戶服務。 如果您有內部部署安裝，管理員必須使用以下命令重新啟動。
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >取代 **`<instancename>`** 以及執行個體的名稱（生產、開發等）。 執行個體名稱是透過設定檔案識別：
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >取代 **`<instance-name>`** 以及執行個體的名稱（生產、開發等）。 執行個體名稱是透過設定檔案識別：
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有關如何重新啟動模組的詳細資訊，請參閱 [本節](../../production/using/usual-commands.md#module-launch-commands).
 

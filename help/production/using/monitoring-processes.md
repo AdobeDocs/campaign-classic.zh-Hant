@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '3610'
 ht-degree: 0%
@@ -575,7 +575,7 @@ XML配置檔案包含以下元素：
 此元素可讓您將數部電腦（主機）重新分組至相同的例項。 執行個體名稱會出現在監控電子郵件的第一部分。 您可以按一下執行個體的名稱，以存取有關每部電腦的詳細資訊。
 
 ```
-instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
+instance name="instance-name" recipientList="mail@mail.com,mail2@mail.com">
                 <host name="devcamp.domain.com" ...>
                        ...
                 </host>
