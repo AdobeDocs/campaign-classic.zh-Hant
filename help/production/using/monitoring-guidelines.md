@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 監視指南
-description: 探索監控Campaign執行個體和程式的准則和最佳實務
+description: 探索監控 Campaign 執行個體和程序的準則和最佳作法
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
