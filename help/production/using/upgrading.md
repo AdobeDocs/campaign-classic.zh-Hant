@@ -1,61 +1,61 @@
 ---
 product: campaign
-title: 升級至新組建
-description: 了解升級至新組建的技術步驟
+title: 升級到新生成
+description: 瞭解升級到新版本的技術步驟
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1145'
 ht-degree: 3%
 
 ---
 
-# 升級至新組建（內部部署）{#upgrading}
+# 升級到新構建（內部部署）{#upgrading}
 
 
 
-開始升級程式之前，請判斷並確認要升級至哪個Adobe Campaign版本，並洽詢 [發行說明](../../rn/using/latest-release.md) .
+在啟動升級過程之前，確定並確認要升級哪個版本的Adobe Campaign，並咨詢 [發行說明](../../rn/using/latest-release.md) 。
 
 >[!IMPORTANT]
 >
->* Adobe強烈建議在更新前對每個執行個體進行資料庫備份。 如需詳細資訊，請參閱[本區段](../../production/using/backup.md)。
->* 若要執行升級，請確定您具備存取執行個體和記錄檔的能力和權限。
->* 閱讀 [本節](../../installation/using/general-architecture.md) 和 [版本升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 章節。
+>* Adobe強烈建議在更新之前對每個實例執行資料庫備份。 如需詳細資訊，請參閱[本區段](../../production/using/backup.md)。
+>* 要執行升級，請確保您具有訪問實例和日誌的能力和權限。
+>* 讀出 [此部分](../../installation/using/general-architecture.md) 和 [構建升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 開始前先寫章。
 >
 
 
 ## Windows {#in-windows}
 
-在Windows環境中，請依照下列步驟，將Adobe Campaign更新至新組建：
+在Windows環境中，按照以下步驟將Adobe Campaign更新為新生成：
 
-* [關閉服務](#shut-down-services),
-* [升級應用程式伺服器](#upgrade-the-adobe-campaign-server-application),
-* [同步資源](#synchronize-resources),
-* [重新啟動服務](#restart-services).
+* [關閉服務](#shut-down-services)。
+* [升級應用程式伺服器](#upgrade-the-adobe-campaign-server-application)。
+* [同步資源](#synchronize-resources)。
+* [重新啟動服務](#restart-services)。
 
-要了解如何更新客戶端控制台，請參閱 [本節](../../installation/using/client-console-availability-for-windows.md).
+要瞭解如何更新客戶端控制台，請參閱 [此部分](../../installation/using/client-console-availability-for-windows.md)。
 
 ### 關閉服務 {#shut-down-services}
 
-若要以新版本取代所有檔案，您需要關閉nlserver服務的所有執行個體。
+要用新版本替換所有檔案，需要關閉nlserver服務的所有實例。
 
 1. 關閉以下服務：
 
    * Web服務(IIS):
 
-      **iisreset /stop**
+      **isreset /stop**
 
-   * Adobe Campaign服務： **net stop nlserver6**
+   * Adobe Campaign社： **網站停止nlserver6**
    >[!IMPORTANT]
    >
-   >您還需要確保重定向伺服器(webmdl)已停止，以便 **nlsrvmod.dll** IIS使用的檔案可以替換為新版本。
+   >您還需要確保重定向伺服器(webmdl)已停止，以便 **nlsrvmod.dll** IIS使用的檔案可替換為新版本。
 
-1. 運行 **nlserver pdump** 命令。 應出現下列內容：
+1. 通過運行 **nlserver pdump** 的子菜單。 應出現以下內容：
 
    ```
    C:<installation path>Adobe Campaign v7bin>nlserver pdump
@@ -63,41 +63,41 @@ ht-degree: 3%
    No tasks
    ```
 
-   您可以使用Windows任務管理器來確保所有進程都已停止。
+   您可以使用Windows任務管理器確保所有進程都已停止。
 
 ### 升級Adobe Campaign伺服器應用程式 {#upgrade-the-adobe-campaign-server-application}
 
 要運行升級檔案，請應用以下步驟：
 
-1. 執行 **setup.exe**.
+1. 運行 **setup.exe**。
 
-   若要下載此檔案，請連線至 [軟體發佈門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者憑證。 深入了解Software Distribution，位於 [本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant?lang=en).
+   要下載此檔案，請連接到 [軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用用戶憑據。 瞭解有關中軟體分發的詳細資訊 [此頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
 
 1. 選擇安裝模式：選擇 **[!UICONTROL Update or repair]**
 1. 按一下&#x200B;**[!UICONTROL Next]**。
 1. 按一下&#x200B;**[!UICONTROL Finish]**。
 
-   然後，安裝程式將複製新檔案。
+   然後，安裝程式會複製新檔案。
 
-1. 操作完成後，按一下 **[!UICONTROL Finish]** .
+1. 操作完成後，按一下 **[!UICONTROL Finish]** 。
 
 ### 同步資源 {#synchronize-resources}
 
-使用下列命令列：
+使用以下命令行：
 
-**nlserver config -postupgrade -allinstances**
+**nlserver config - postupgrade -allinstances**
 
-這可讓您執行下列操作：
+這將使您能夠執行以下操作：
 
 * 同步資源
-* 更新結構
+* 更新架構
 * 更新資料庫
 
 >[!NOTE]
 >
 >此操作只應執行一次，且僅對(**nlserver web**)應用程式伺服器。
 
-然後檢查同步是否生成錯誤或警告。 有關詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts).
+然後檢查同步是否生成了錯誤或警告。 有關此內容的詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts)。
 
 ### 重新啟動服務 {#restart-services}
 
@@ -107,33 +107,33 @@ ht-degree: 3%
 
    **isreset /start**
 
-* Adobe Campaign服務： **net start nlserver6**
+* Adobe Campaign社： **nlserver6**
 
 ## Linux {#in-linux}
 
-在Linux環境中，請依照下列步驟，將Adobe Campaign更新至新組建：
+在Linux環境中，按照以下步驟將Adobe Campaign更新為新版本：
 
-* [下載更新的套件](#obtain-updated-packages),
-* [執行更新](#perform-an-update),
-* [重新啟動Web伺服器](#reboot-the-web-server).
+* [下載更新的包](#obtain-updated-packages)。
+* [執行更新](#perform-an-update)。
+* [重新啟動Web伺服器](#reboot-the-web-server)。
 
-[深入了解用戶端主控台可用性](../../installation/using/client-console-availability-for-windows.md).
+[瞭解有關客戶端控制台可用性的詳細資訊](../../installation/using/client-console-availability-for-windows.md)。
 
 >[!NOTE]
 >
->從8757組建版本開始，就不再需要協力廠商程式庫。
+>從build 8757開始，不再需要第三方庫了。
 
-### 取得更新的套件 {#obtain-updated-packages}
+### 獲取更新的包 {#obtain-updated-packages}
 
-首先，請恢復兩個更新的Adobe Campaign套件：連線至 [軟體發佈門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者憑證。 深入了解Software Distribution，位於 [本頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant?lang=en).
+首先恢復兩個更新的Adobe Campaign包：連接到 [軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用用戶憑據。 瞭解有關中軟體分發的詳細資訊 [此頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
 
 檔案是 **nlserver6-v7-XXX.rpm**
 
 ### 執行更新 {#perform-an-update}
 
-* 基於RPM的分發(RedHat、SuSe)
+* 基於RPM的分發(RedHat 、 SuSe)
 
-   若要安裝，請以根目錄執行：
+   要安裝它們，請以root身份執行：
 
    ```
    $rpm -Uvh nlserver6-v7-XXXX.rpm
@@ -141,15 +141,15 @@ ht-degree: 3%
 
    其中XXX是檔案的版本。
 
-   rpm檔案對包具有依賴性，您可以在CentOS/Red Hat分發上找到這些包。 如果您不想使用其中的一些依賴項，則可能需要使用rpm的「nodeps」選項：
+   rpm檔案與CentOS/Red Hat分發上可找到的軟體包有依賴關係。 如果不想使用這些依賴項中的某些，則可能必須使用rpm的「nodeps」選項：
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-* DEB型分送(Debian)
+* 基於DEB的分發(Debian)
 
-   若要安裝，請以根目錄執行：
+   要安裝它們，請以root身份執行：
 
    ```
    dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
@@ -157,13 +157,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->完整的安裝程式在 [本節](../../installation/using/installing-campaign-standard-packages.md). 資源會自動同步，但您必須確定未發生任何錯誤。 有關詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts).
+>完整的安裝過程詳見 [此部分](../../installation/using/installing-campaign-standard-packages.md)。 資源將自動同步，但您需要確保未發生錯誤。 有關此內容的詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts)。
 
 ### 重新啟動Web伺服器 {#reboot-the-web-server}
 
-您必須關閉Apache，新程式庫才可適用。
+必須關閉Apache，新庫才能生效。
 
-要執行此操作，請執行以下命令：
+為此，請執行以下命令：
 
 ```
 /etc/init.d/apache stop
@@ -171,11 +171,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->* 可能會呼叫您的指令碼 **httpd** 而非 **apache**.
->* 您必須執行此命令，直到獲得以下答復：
+>* 可能會調用您的指令碼 **http** 而不是 **阿帕**。
+>* 必須執行此命令，直到您獲得以下答復：
 
    >
-   >   若要讓Apache套用新程式庫，必須執行此操作。
+   >   Apache要應用新庫，必須執行此操作。
 
 
 然後重新啟動Apache:
@@ -186,13 +186,13 @@ ht-degree: 3%
 
 ## 解決升級衝突 {#resolving-upgrade-conflicts}
 
-在資源同步期間， **postugrade** 命令可以檢測同步是否生成錯誤或警告。
+在資源同步期間， **坡道** 命令可用於檢測同步是否生成錯誤或警告。
 
 ### 查看同步結果 {#view-the-synchronization-result}
 
-查看同步結果有兩種方式：
+查看同步結果有兩種方法：
 
-* 在命令行介面中，錯誤由三個>形形成 **>>** 並自動停止同步。 雙形箭頭就會發出警告 **>>** 同步完成後，和必須解析。 在升級後的結尾處，命令提示符中將顯示一個摘要。 可能如下所示：
+* 在命令行介面中，錯誤由三個V形 **>>** 同步將自動停止。 雙字形 **>** 並且必須在同步完成後進行解析。 在postupgrade的末尾，將在命令提示符下顯示摘要。 它可以是這樣的：
 
    ```
    2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -203,39 +203,39 @@ ht-degree: 3%
    2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
    ```
 
-   如果警告涉及資源衝突，則需要用戶注意才能解決該問題。
+   如果警告涉及資源衝突，則需要用戶注意才能解決。
 
-* 此 **postupgrade_`<server version number>_<time of postupgrade>`.log** 日誌檔案包含同步結果。 預設可在下列目錄中使用： **`<installation directory>/var/<instance/postupgrade`**. 錯誤和警告由錯誤和警告屬性指示。
+* 的 **坡道`<server version number>_<time of postupgrade>`.日誌** 日誌檔案包含同步結果。 預設情況下，它可在以下目錄中使用： **`<installation directory>/var/<instance/postupgrade`**。 錯誤和警告屬性指示錯誤和警告。
 
 ### 解決衝突 {#resolving-conflicts}
 
-要解決衝突，請應用以下進程：
+要解決衝突，請應用以下流程：
 
-1. 在Adobe Campaign樹中，前往 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. 在Adobe Campaign樹上， **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** 。
 1. 在清單中選擇要解決的衝突。
 
 解決衝突有三種方法：
 
 * **[!UICONTROL Declare as resolved]** :需要事先進行用戶干預。
-* **[!UICONTROL Accept the new version]** :如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
-* **[!UICONTROL Keep the current version]** :表示已拒絕更新。
+* **[!UICONTROL Accept the new version]** :如果用戶未更改Adobe Campaign提供的資源，則建議使用。
+* **[!UICONTROL Keep the current version]** :表示更新被拒絕。
 
    >[!IMPORTANT]
    >
-   >如果選擇此解析模式，則新版本中的更正可能不會使您受益。
+   >如果選擇此解析模式，則新版本中的更正可能不會為您帶來好處。
 
-如果您選擇手動解決衝突，請按以下步驟繼續：
+如果選擇手動解決衝突，請按如下方式繼續：
 
-1. 在視窗的下方，搜尋 **_衝突_** 字串，以找出具有衝突的實體。 隨新版本安裝的實體包含 **new** 引數中，與上一版本匹配的實體包含 **cus** 引數。
+1. 在窗口的下部，搜索 **_衝突_** 字串，以查找具有衝突的實體。 隨新版本安裝的實體包含 **新** 參數，與上一版本匹配的實體包含 **番** 參數。
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. 刪除您不想保留的版本。 刪除 **_conflict_argument_** 您要保留的實體字串。
+1. 刪除不想保留的版本。 刪除 **_衝突參數_** 所保留實體的字串。
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. 轉到已解決的衝突。 按一下 **[!UICONTROL Actions]** 圖示並選取 **[!UICONTROL Declare as resolved]** .
-1. 儲存您的變更：衝突現在已經解決。
+1. 轉到您已解決的衝突。 按一下 **[!UICONTROL Actions]** 表徵圖 **[!UICONTROL Declare as resolved]** 。
+1. 保存更改：衝突現已解決。
 
 ### 最佳實務 {#best-practices}
 
@@ -247,24 +247,24 @@ ht-degree: 3%
 
 ### Windows {#in-windows-1}
 
-在安裝Adobe Campaign應用程式伺服器的電腦上(**nlserver web**)、下載並複製檔案  **setup-client-6.XXXX.exe** i n **[應用程式的路徑]/datakit/nl/eng/jsp**.
+在安裝Adobe Campaign應用程式伺服器的電腦上(**nlserver web**)，下載並複製檔案  **setup-client-6.XXXX.exe** 我 **[應用程式的路徑]/datakit/nl/eng/jsp**。
 
-下次連接客戶端控制台時，窗口將通知用戶更新的可用性，並為用戶提供下載和安裝更新的可能性。
+下次連接客戶端控制台時，窗口將通知用戶更新的可用性，並提供下載和安裝更新的可能性。
 
 >[!NOTE]
 >
->請確保IIS_XPG用戶對此安裝檔案具有適當的讀取權限，並參閱 [安裝指南](../../installation/using/general-architecture.md) 以取得更多資訊。
+>確保IIS_XPG用戶對此安裝檔案具有適當的讀取權限，並參閱 [安裝指南](../../installation/using/general-architecture.md) 的子菜單。
 
 ### Linux {#in-linux-1}
 
-在Adobe Campaign應用程式伺服器(**nlserver web**)，則擷取  **setup-client-6.XXXX.exe** 包並複製，另存為 **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+在Adobe Campaign應用程式伺服器(**nlserver web**)，檢索  **setup-client-6.XXXX.exe** 包並複製，另存為 **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
 ```
 
-下次連接客戶端控制台時，窗口將通知用戶更新的可用性，並為用戶提供下載和安裝更新的可能性。
+下次連接客戶端控制台時，窗口將通知用戶更新的可用性，並提供下載和安裝更新的可能性。
 
 >[!NOTE]
 >
->請確定Apache使用者擁有此安裝檔案的適當讀取權限，並參閱 [安裝指南](../../installation/using/general-architecture.md) 以取得更多資訊。
+>確保Apache用戶具有此安裝檔案的相應讀取權限，並參閱 [安裝指南](../../installation/using/general-architecture.md) 的子菜單。

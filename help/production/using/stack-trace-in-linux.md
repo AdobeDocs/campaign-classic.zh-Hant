@@ -3,12 +3,12 @@ product: campaign
 title: Linux 中的堆疊追蹤
 description: Linux 中的堆疊追蹤
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -19,16 +19,16 @@ ht-degree: 11%
 
 
 
-A **堆疊追蹤** 表示 **核心** 類型檔案。 系統會在發生電腦錯誤時產生此檔案。 它可識別錯誤的來源。
+A **堆棧跟蹤** 表示包含在 **核** 檔案。 發生電腦錯誤時生成此檔案。 它可以識別錯誤的來源。
 
 >[!NOTE]
 >
->* A **核心** 檔案已命名 **核心。`<num>`**.
+>* A **核** 檔案命名 **核心。`<num>`**。
 >* **gdb - GNU調試器** 必須安裝在電腦上。
 >
 
 
-Adobe Campaign技術支援可向您提出此要求 **堆疊追蹤**. 要獲取，請在Linux中輸入以下命令：
+Adobe Campaign技術支援可以要求您提供 **堆棧跟蹤**。 要獲取它，請在Linux中輸入以下命令：
 
 ```
 su - neolane
@@ -55,9 +55,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign技術支援可能會要求您使用特定執行檔（由我們提供）執行此命令。
+Adobe Campaign技術支援可能會要求您使用特定執行檔（由我們提供）運行此命令。
 
-在此情況下，只需替換 **nlserver** 由Adobe Campaign提供的執行檔：
+在這種情況下，只需通過替換 **nlserver** 執行檔：
 
 ```
 gdb nlserver <coreFile>

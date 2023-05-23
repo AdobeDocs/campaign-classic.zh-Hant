@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 促銷活動傳送設定設定
-description: 了解如何配置Campaign傳送設定
+title: 市場活動交付設定配置
+description: 瞭解如何配置市場活動交付設定
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -19,27 +19,27 @@ ht-degree: 5%
 
 
 
-傳送參數必須在 **serverConf.xml** 檔案夾。
+必須在 **serverConf.xml** 的子菜單。
 
-* **DNS配置**:指定用於回應MTA模組從 **`<dnsconfig>`** 向前。
+* **DNS配置**:指定傳遞域和DNS伺服器的IP地址（或主機），這些DNS伺服器用於響應MTA模組從 **`<dnsconfig>`** 向前。
 
    >[!NOTE]
    >
-   >此 **nameServers** 參數是在Windows中安裝的必要參數。 在Linux中安裝時，必須將其保留為空。
+   >的 **名稱伺服器** 參數對於在Windows中安裝是必不可少的。 對於Linux中的安裝，它必須為空。
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-您也可以根據需求和設定執行下列設定：設定 [SMTP中繼](#smtp-relay)，調整 [MTA子進程](#mta-child-processes), [管理出站SMTP流量](#managing-outbound-smtp-traffic-with-affinities).
+您還可以根據您的需要和設定執行以下配置：配置 [SMTP中繼](#smtp-relay)，調整 [MTA子進程](#mta-child-processes)。 [管理出站SMTP通信](#managing-outbound-smtp-traffic-with-affinities)。
 
 ## SMTP中繼 {#smtp-relay}
 
 MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
 
-但是，如果您的安全策略需要，則可以用中繼伺服器替換它。 在這種情況下，全局吞吐量將是中繼吞吐量(前提是中繼伺服器吞吐量低於Adobe Campaign吞吐量)。
+但是，如果安全策略需要，可以將其替換為中繼伺服器。 在這種情況下，全局吞吐量將是中繼吞吐量(前提是中繼伺服器吞吐量低於Adobe Campaign吞吐量)。
 
-在此情況下，這些參數的設定方式為在 **`<relay>`** 區段。 必須指定用於傳輸郵件的SMTP伺服器的IP地址（或主機）及其關聯埠（預設為25）。
+在這種情況下，通過在 **`<relay>`** 的子菜單。 必須指定用於傳輸郵件的SMTP伺服器及其關聯埠（預設為25）的IP地址（或主機）。
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -47,31 +47,31 @@ MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
 
 >[!IMPORTANT]
 >
->此操作模式意味著傳送受到嚴重限制，因為由於中繼伺服器的固有效能（延遲、頻寬……），它可以大大降低吞吐量。 此外，限定同步傳送錯誤（通過分析SMTP流量檢測到）的容量將受到限制，如果中繼伺服器不可用，則無法發送。
+>此操作模式對傳輸造成嚴重限制，因為它由於中繼伺服器固有效能（延遲、頻寬……）而可以大大降低吞吐量。 此外，限定同步傳送錯誤（通過分析SMTP通信量檢測到）的容量將受到限制，如果中繼伺服器不可用，則無法發送。
 
 ## MTA子進程 {#mta-child-processes}
 
-可以控制子進程（預設情況下為maxSpareServers 2）的數量，以根據伺服器的CPU功率和可用網路資源來優化廣播效能。 此設定將在 **`<master>`** MTA設定的區段。
+可以根據伺服器的CPU功率和可用網路資源控制子進程數（預設情況下為2），以優化廣播效能。 此配置將在 **`<master>`** MTA配置的部分。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-另請參閱 [電子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization).
+另請參閱 [電子郵件發送優化](../../installation/using/email-deliverability.md#email-sending-optimization)。
 
-## 使用相關性管理傳出SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
+## 管理具有關聯的出站SMTP通信 {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >
->相關性設定必須在伺服器之間保持一致。 建議您聯絡Adobe以進行相關性設定，因為應在執行MTA的所有應用程式伺服器上複製設定變更。
+>關聯配置需要從一個伺服器到另一個伺服器保持一致。 我們建議您與Adobe聯繫以進行關聯配置，因為應在運行MTA的所有應用程式伺服器上複製配置更改。
 
-您可以透過與IP位址的相似性來改善傳出SMTP流量。
+您可以通過與IP地址的關聯來改進出站SMTP通信。
 
 若要這麼做，請套用下列步驟：
 
-1. 在 **`<ipaffinity>`** 區段 **serverConf.xml** 檔案。
+1. 在 **`<ipaffinity>`** 的下界 **serverConf.xml** 的子菜單。
 
-   一個相關性可以有數個不同的名稱：若要加以區隔，請使用 **;** 字元。
+   一個關聯可以有多個不同的名稱：分離，使用 **;** 字元。
 
    範例:
 
@@ -80,23 +80,23 @@ MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   若要檢視相關參數，請參閱 **serverConf.xml** 檔案。
+   要查看相關參數，請參閱 **serverConf.xml** 的子菜單。
 
-1. 若要在下拉式清單中啟用相關性選取，您必須在 **IPAffinity** 枚舉。
+1. 要在下拉清單中啟用地緣選擇，您需要在 **IPAfinity** 枚舉。
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >列舉在 [此文檔](../../platform/using/managing-enumerations.md).
+   >枚舉詳細資訊 [此文檔](../../platform/using/managing-enumerations.md)。
 
-   接著，您可以選取要使用的相關性，如下所示，針對類型：
+   然後，可以選擇要使用的關聯，如下所示：
 
    ![](assets/ipaffinity_typology.png)
 
    >[!NOTE]
    >
-   >您也可以參閱 [傳送伺服器設定](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >您還可以參考 [傳遞伺服器配置](../../installation/using/email-deliverability.md#delivery-server-configuration)。
 
 **相關主題**
 * [技術電子郵件設定](email-deliverability.md)

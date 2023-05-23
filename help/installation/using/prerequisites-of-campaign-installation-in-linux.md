@@ -3,70 +3,70 @@ product: campaign
 title: 在 Linux 安裝 Campaign 的必要條件
 description: 在 Linux 安裝 Campaign 的必要條件
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 1%
 
 ---
 
-# 在Linux上安裝Campaign的必要條件{#prerequisites-of-campaign-installation-in-linux}
+# 在Linux上安裝市場活動的先決條件{#prerequisites-of-campaign-installation-in-linux}
 
 
 
-## 軟體必備條件 {#software-prerequisites}
+## 軟體先決條件 {#software-prerequisites}
 
-本節詳細說明安裝Adobe Campaign前所需的初步設定步驟。
+本節詳細介紹安裝Adobe Campaign之前所需的初步配置步驟。
 
-安裝Adobe Campaign所需的技術和軟體設定於 [相容性矩陣](../../rn/using/compatibility-matrix.md).
+安裝Adobe Campaign所需的技術和軟體配置詳見 [相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
-提醒您，必須安裝並正確設定下列元件：
+提醒您，需要安裝並正確配置以下元件：
 
-* Apache，請參閱 [相容性矩陣](../../rn/using/compatibility-matrix.md),
-* Java JDK和OpenJDK，請參閱 [Java開發套件 — JDK](../../installation/using/application-server.md#java-development-kit---jdk),
-* 程式庫，請參閱 [程式庫](#libraries),
-* 資料庫訪問層，請參閱 [資料庫訪問層](#database-access-layers),
-* LibreOffice，請參閱 [為Debian安裝LibreOffice](#installing-libreoffice-for-debian) 和 [安裝CentOS專用的LibreOffice](#installing-libreoffice-for-centos),
-* 字型，請參閱 [MTA統計資訊字型](#fonts-for-mta-statistics) 和 [日文實例的字型](#fonts-for-japanese-instances).
+* Apache，請參閱 [相容性矩陣](../../rn/using/compatibility-matrix.md)。
+* Java JDK和OpenJDK，請參閱 [Java開發工具包 — JDK](../../installation/using/application-server.md#java-development-kit---jdk)。
+* 庫，請參閱 [庫](#libraries)。
+* 資料庫訪問層，請參閱 [資料庫訪問層](#database-access-layers)。
+* LibreOffice，請參閱 [正在為Debian安裝LibreOffice](#installing-libreoffice-for-debian) 和 [正在為CentOS安裝LibreOffice](#installing-libreoffice-for-centos)。
+* 字型，請參閱 [MTA統計資訊的字型](#fonts-for-mta-statistics) 和 [日文實例的字型](#fonts-for-japanese-instances)。
 
 >[!NOTE]
 >
->若要在CentOS 7和Debian 8平台上安裝低於或等於8709的組建，必須啟用apache access_compat模組。
+>要在CentOS 7和Debian 8平台上安裝低於或等於8709的內部版本，必須啟用apache access_compat模組。
 
-### 程式庫 {#libraries}
+### 庫 {#libraries}
 
-若要在Linux中安裝Adobe Campaign，請確定您有必要的程式庫。
+要在Linux中安裝Adobe Campaign，請確保您有所需的庫。
 
-* 程式庫C必須能支援TLS（執行緒本機儲存）模式。 在大多數情況下，此模式處於活動狀態，但某些內核已禁用Xen支援。
+* 庫C必須能夠支援TLS（線程本地儲存）模式。 除某些內核已禁用Xen支援外，此模式在大多數情況下都處於活動狀態。
 
-   若要檢查，您可以使用 **未命名 — a |grep xen** 命令。
+   要檢查此項，可使用 **未命名 — a |grep xen** 例如。
 
-   如果命令未傳回任何內容（空行），表示配置正確。
+   如果命令未返回任何內容（空行），則表示配置正確。
 
-* 您必須有OpenSSL版本 **1.0.2** 或更高版本。
+* 必須有OpenSSL版本 **1.0.2** 或更高。
 
-   對於RHEL 7/8發佈，需要1.0版的OpenSSL。
+   對於RHEL 7/8發行版，需要OpenSSL 1.0版。
 
-* 若要使用Adobe Campaign，您必須具備 **里比庫** 程式庫已安裝。
+* 要使用Adobe Campaign，你需要 **利比庫** 已安裝庫。
 
-   下列版本 **里比庫** 支援（32位元或64位元）:
+   以下版本 **利比庫** 支援（32位或64位）:
 
-   * RHEL 7/8,CentOS 7:libicu50
-   * Debian 8:libicu52
-   * Debian 9:libicu57
+   * RHEL 7/8、CentOS 7:LIBICU50
+   * 德比8:LIBICU52
+   * 德比9:LIBICU57
 
-   若要使用Adobe Campaign，您必須安裝libc-ares程式庫。 在RHEL/CentOS上，運行以下命令：
+   要使用Adobe Campaign，您需要安裝libc-ares庫。 在RHEL/CentOS上，運行以下命令：
 
    ```
    yum install c-ares
    ```
 
-   在Debian上：
+   在德比：
 
    ```
    aptitude install libc-ares2
@@ -76,21 +76,21 @@ ht-degree: 1%
 
 使用時，必須正確配置SELinux模組。
 
-要執行此操作，請以root身份登錄並輸入以下命令：
+要執行此操作，請以root用戶身份登錄並輸入以下命令：
 
 ```
 echo 0 >/selinux/enforce
 ```
 
-此外，在 **/etc/sysconfig/httpd** 檔案中，已新增下列行以參考Adobe Campaign環境設定指令碼：
+除此之外，在 **/etc/sysconfig/httpd** 檔案中，添加了以下行以引用Adobe Campaign環境配置指令碼：
 
 ```
 . ~neolane/nl6/env.sh
 ```
 
-在RHEL和CentOS中，當啟用SELinux時，會發現與資料庫的客戶端層的相容性問題。 為確保Adobe Campaign能正確運作，建議停用SELinux。
+在RHEL和CentOS中，當啟用SELinux時，會發現與資料庫客戶端層的相容性問題。 為確保Adobe Campaign能夠正確運行，我們建議禁用SELinux。
 
-**套用下列程式：**
+**應用以下流程：**
 
 * 編輯檔案 **/etc/selinux/config**
 
@@ -100,11 +100,11 @@ echo 0 >/selinux/enforce
 SELINUX=disabled
 ```
 
-### MTA統計資訊字型 {#fonts-for-mta-statistics}
+### MTA統計資訊的字型 {#fonts-for-mta-statistics}
 
-為了正確顯示MTA統計資料報表(nms/fra/jsp/stat.jsp)，請新增字型。
+為了正確顯示有關MTA統計資訊(nms/fra/jsp/stat.jsp)的報告，請添加字型。
 
-在Debian中，新增命令：
+在Debian中，添加命令：
 
 ```
 aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
@@ -126,9 +126,9 @@ aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 
 ### 日文實例的字型 {#fonts-for-japanese-instances}
 
-日文執行個體需要特定字元的字型，才能將報表匯出為PDF格式。
+要將報表導出為PDF格式，日文實例需要特定字元的字型。
 
-在Debian中，新增命令：
+在Debian中，添加命令：
 
 ```
 aptitude install fonts-ipafont
@@ -148,25 +148,25 @@ aptitude install fonts-ipafont
    dnf install vlgothic-fonts
    ```
 
-### 為Debian安裝LibreOffice {#installing-libreoffice-for-debian}
+### 正在為Debian安裝LibreOffice {#installing-libreoffice-for-debian}
 
-若為Debian，則需要下列設定：
+對於Debian，需要以下配置：
 
-1. 安裝下列標準套件：
+1. 安裝以下標準包：
 
    ```
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. 安裝下列字型（選用，但強烈建議使用日文執行個體）:
+1. 安裝以下字型（可選，但強烈建議使用日文實例）:
 
    ```
    apt-get install fonts-ipafont
    ```
 
-### 安裝CentOS專用的LibreOffice {#installing-libreoffice-for-centos}
+### 正在為CentOS安裝LibreOffice {#installing-libreoffice-for-centos}
 
-CentOS需要下列配置：
+CentOS需要以下配置：
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
@@ -174,57 +174,57 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ## 資料庫訪問層 {#database-access-layers}
 
-您使用的資料庫引擎的存取層必須安裝在伺服器上，並可透過Adobe Campaign帳戶存取。 版本和安裝模式可能會因所使用的資料庫引擎而異。
+您所使用的資料庫引擎的訪問層必須安裝在伺服器上，並且可以通過Adobe Campaign帳戶訪問。 版本和安裝模式可能因所使用的資料庫引擎而異。
 
-在 [相容性矩陣](../../rn/using/compatibility-matrix.md).
+支援的試運行版本在 [相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
-同時檢查一般 [資料庫](../../installation/using/database.md) 區段。
+還檢查常規 [資料庫](../../installation/using/database.md) 的子菜單。
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign支援7.2版中的所有PostgreSQL客戶端庫版本：(**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** 和 **libpq.so.3.1**)。
+Adobe Campaign支援版本7.2的所有PostgreSQL客戶端庫版本：(**libpq.so.5**。 **libpq.so.4**。 **libpq.so.3.2** 和 **libpq.so.3.1**)。
 
-將PostgreSQL與Adobe Campaign搭配使用時，也需要安裝對應的 **pgcrypto** 程式庫。
+將PostgreSQL與Adobe Campaign配合使用還需要安裝相應的 **pgcrypto** 庫。
 
 ### Oracle {#oracle}
 
-擷取64位元Debian的程式庫版本，即： **libclntsh.so**, **libclntsh.so.11.1** 和 **libclntsh.so.10.1**.
+檢索64位Debian的庫版本，即： **libclntsh.so**。 **libclntsh.so.11.1** 和 **libclntsh.so.10.1**。
 
-您可以從Oracle技術網路獲取Linux RPM包。
+您可以從Oracle技術網路獲取Linux RPM軟體包。
 
 >[!NOTE]
 >
->如果您已安裝Oracle客戶端，但已安裝全局環境(例如：/etc/profile)未正確設定，您可以將遺失的資訊新增至 **nl6/customer.sh** 指令碼，請參閱 [環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>如果已安裝Oracle客戶端但已安裝全局環境(例如：/etc/profile)未正確配置，您可以將丟失的資訊添加到 **nl6/customer.sh** 指令碼有關此的詳細資訊，請參閱 [環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables)。
 
-**疑難排解和最佳實務**
+**故障排除和最佳做法**
 
-oracle客戶端或伺服器更新、版本更改或實例的首次安裝後可能會出現問題。
+在Oracle客戶端或伺服器更新、版本更改或實例首次安裝後，可能會出現問題。
 
-如果您在用戶端主控台上發現記錄、工作流程上次處理、下次處理等作業出現非預期的時間延遲（一或多小時），則Oracle用戶端的程式庫與Oracle伺服器之間可能會有問題。 為了避免這些問題
+如果您在客戶端控制台上注意到日誌、工作流上次處理、下一次處理等中存在意外的時間延遲（一個或多個小時），則Oracle客戶端的庫和Oracle伺服器之間可能會出現問題。 為了避免這些問題
 
-1. 請務必使用 **完整客戶端**.
+1. 確保使用 **完整客戶端**。
 
-   使用Oracle即時客戶端版本時發現了各種問題。 此外，無法在即時客戶端上更改時區檔案。
+   使用Oracle即時客戶端版本時發現了各種問題。 此外，無法更改即時客戶端上的時區檔案。
 
-1. 請確定 **用戶端版本** 和 **資料庫伺服器版本** 是 **相同**.
+1. 確保 **客戶端版本** 和 **資料庫伺服器版本** 是 **相同**。
 
-   儘管Oracle的相容性矩陣和建議使客戶端和伺服器版本一致，但混合使用版本是已知會導致問題的。
+   儘管Oracle的相容性矩陣和調整客戶端和伺服器版本的建議，但混合使用版本是會導致問題的。
 
-   另請檢查「ORACLE_首頁」值，以確保它指向預期的客戶端版本（如果電腦上安裝了多個版本）。
+   另請檢查ORACLE_HOME值，確保它指向預期的客戶端版本（如果電腦上安裝了多個版本）。
 
-1. 確保客戶端和伺服器使用相同的 **時區檔案**.
+1. 確保客戶端和伺服器使用相同 **時區檔案**。
 
 ### DB2 {#db2}
 
-支援的程式庫版本為 **libdb2.so**.
+支援的庫版本為 **libdb2.so**。
 
 ## 實施步驟 {#implementation-steps}
 
-Adobe Campaign的Linux安裝必須依下列順序執行：伺服器安裝，然後執行實例配置。
+Adobe CampaignLinux安裝必須按以下順序進行：伺服器安裝後是實例配置。
 
-本章將介紹安裝過程。 安裝步驟如下：
+本章介紹了安裝過程。 安裝步驟如下：
 
-* 步驟1:安裝應用程式伺服器，請參閱 [使用Linux安裝套件](../../installation/using/installing-packages-with-linux.md).
-* 步驟2:與Web伺服器整合（可選，視部署的元件而定）。
+* 步驟1:安裝應用程式伺服器，請參閱 [使用Linux安裝軟體包](../../installation/using/installing-packages-with-linux.md)。
+* 步驟2:與Web伺服器整合（可選，具體取決於部署的元件）。
 
-安裝步驟完成後，您需要配置實例、資料庫和伺服器。 有關詳細資訊，請參閱 [關於初始配置](../../installation/using/about-initial-configuration.md).
+安裝步驟完成後，您需要配置實例、資料庫和伺服器。 有關此內容的詳細資訊，請參閱 [關於初始配置](../../installation/using/about-initial-configuration.md)。

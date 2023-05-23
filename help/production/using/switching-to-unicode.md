@@ -3,12 +3,12 @@ product: campaign
 title: 切換為 Unicode
 description: 切換為 Unicode
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 
 
-針對現有 **prod** 在Linux/PostgreSQL中，切換為unicode的步驟如下：
+對於現有 **收縮** 在Linux/PostgreSQL中，切換到unicode的步驟如下：
 
 1. 停止寫入資料庫的進程：
 
@@ -47,14 +47,14 @@ ht-degree: 7%
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. 更新表示資料庫為Unicode的選項：
+1. 更新指示資料庫為Unicode的選項：
 
    ```
    psql mydatabase_unicode
    update XtkOption set sStringValue = 'u'||sStringValue where sName='XtkDatabaseId' and sStringValue not like 'u%';
    ```
 
-1. 在追蹤伺服器上：
+1. 在跟蹤伺服器上：
 
    ```
    su - neolane
@@ -62,7 +62,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   新增 **u** 字元（位於與資料庫識別碼相關的值前）(**databaseId**):
+   添加 **烏** 與資料庫標識符相關的值前面的字元(**資料庫ID**):
 
    ```
    <web>
@@ -97,7 +97,7 @@ ht-degree: 7%
    /etc/init.d/apache start
    ```
 
-1. 確認開關。 若要這麼做，請透過Adobe Campaign主控台連線，並：
+1. 確認交換機。 為此，請通過Adobe Campaign控制台連接，並：
 
-   * 檢查資料是否正確顯示，尤其是強調字元：
-   * 啟動傳送並檢查追蹤擷取是否有效。
+   * 檢查資料是否正確顯示，尤其是突出字元：
+   * 啟動交付並檢查跟蹤檢索是否有效。

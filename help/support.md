@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: '幫助和支援選項，用於Campaign Classic '
+title: 幫助和支援選項，用於Campaign Classic
 description: 需要支援Campaign Classic? 您來對地方了！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 66%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 66%
     <td valign="top">
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">重要概念</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">市場活動設定</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">行銷活動設定</a></li>
         <li><a href="platform/using/faq-reporting.md">報告</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">版本編號升級</a></li>
         <li><a href="platform/using/faq-messages.md">測試、發送和跟蹤消息</a></li>
@@ -147,4 +147,4 @@ ht-degree: 66%
 
 建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
 
-要記錄問題或在該新系統中啟動聊天會話，請連接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 按照中介紹的詳細過程操作 [此頁](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html){_blank}。
+要記錄問題或在該新系統中啟動聊天會話，請連接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 按照中介紹的詳細過程操作 [此頁](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}。
