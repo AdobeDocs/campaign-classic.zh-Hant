@@ -20,21 +20,21 @@ ht-degree: 7%
 
 ## 概覽 {#overview}
 
-Adobe Campaign提供兩組預先封裝的架構選項，讓您調整部署的尺寸：
+Adobe Campaign提供兩組預先封裝的架構選項，用於設定部署的維度：
 
 * **Power Booster**
 
-   此選項支援與主要Adobe Campaign應用程式例項分離的單一額外執行例項。 專用的執行實例可以由第三方遠程托管。 實作時，電子郵件執行、追蹤、鏡像頁面和退信訊息的處理方式與中央應用程式功能無關。
+   此選項支援與主要Adobe Campaign應用程式執行個體分離的單一額外執行執行個體。 專用的執行例項可由遠端主控或由第三方主控。 實施後，電子郵件執行、追蹤、映象頁面和退回訊息的處理會與中央應用程式功能無關。
 
-* **電源群集**
+* **電源叢集**
 
-   此選項支援2到N個群集執行實例，與主Adobe Campaign應用程式實例相對於給定應用程式分離。 群集可以遠程托管、在分佈式部署中由第三方托管。 除了流程隔離的好處之外，Adobe Campaign電源群集選項還允許使用商品硬體實現冗餘和擴展策略，以簡化SLA或效能的演變。
+   此選項可支援與指定應用程式相關之主要Adobe Campaign應用程式執行個體分離的2到N個叢集執行個體。 叢集可由遠端託管、分散式部署及協力廠商。 除了流程隔離的好處之外，Adobe Campaign電源群集選項還能夠使用商品化硬體來啟用備援和向外擴充策略，以簡化SLA或效能的演化。
 
 ![](assets/architectural_options_diagram.png)
 
-## 合格申請 {#eligible-applications}
+## 符合資格的應用程式 {#eligible-applications}
 
-Power Booster和Power Cluster選項可用於以下應用程式：
+Power Booster和Power Cluster選項可供下列應用程式使用：
 
 * Campaign
 * 傳遞
@@ -48,43 +48,43 @@ Power Booster和Power Cluster選項可用於以下應用程式：
    <td> </td> 
    <td> <strong>標準架構</strong><br /> </td> 
    <td> <strong>Power Booster</strong><br /> </td> 
-   <td> <strong>電源群集</strong><br /> </td> 
+   <td> <strong>電源叢集</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 電子郵件行銷活動和對外互動<br /> </td> 
    <td> 每月最多可達3,000萬封電子郵件<br /> </td> 
-   <td> 每月3000萬至1億封電子郵件<br /> </td> 
+   <td> 每月傳送3,000萬到1億封電子郵件<br /> </td> 
    <td> 每月超過1億封電子郵件<br /> </td> 
   </tr> 
   <tr> 
    <td> 異動訊息<br /> </td> 
-   <td> 每執行伺服器每小時50,000<br /> </td> 
-   <td> 每執行伺服器每小時50,000<br /> </td> 
-   <td> 每執行伺服器每小時50,000<br /> </td> 
+   <td> 每部執行伺服器每小時50,000次<br /> </td> 
+   <td> 每部執行伺服器每小時50,000次<br /> </td> 
+   <td> 每部執行伺服器每小時50,000次<br /> </td> 
   </tr> 
   <tr> 
    <td> 可用性<br /> </td> 
-   <td> 主資料庫的資料庫<br /> </td> 
-   <td> 24/7，除了執行實例的維護窗口和下載時間之外<br /> </td> 
-   <td> 24/7/365服務可能<br /> </td> 
+   <td> 主要資料庫的<br /> </td> 
+   <td> 除了執行例項的維護時段和停機時間，全年無休<br /> </td> 
+   <td> 24/7/365全年無休的服務<br /> </td> 
   </tr> 
   <tr> 
    <td> 安全性<br /> </td> 
-   <td> 資料集市可從公共網際網路訪問<br /> </td> 
-   <td> 資料集市與面向網際網路的正面元件隔離<br /> </td> 
-   <td> 資料集市與面向網際網路的正面元件隔離<br /> </td> 
+   <td> 您可以從公用網際網路存取資料市場<br /> </td> 
+   <td> 資料市場與面向網際網路的正面元件隔離<br /> </td> 
+   <td> 資料市場與面向網際網路的正面元件隔離<br /> </td> 
   </tr> 
   <tr> 
-   <td> 部署模板<br /> </td> 
-   <td> 所有內容都放在一個網站上（可位於內部部署或雲端中）<br /> </td> 
-   <td> 可在雲端執行內部部署行銷<br /> </td> 
-   <td> 在雲端執行內部部署行銷；在不同地理上執行<br /> </td> 
+   <td> 部署範本<br /> </td> 
+   <td> 全部位於一個網站上（可在內部部署或在雲端中）<br /> </td> 
+   <td> 可在雲端中執行的內部部署行銷<br /> </td> 
+   <td> 內部部署行銷，在雲端中執行；可在不同地理位置執行<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 建議 {#recommendations}
 
-* 執行實例必須專用於服務。 無法為尚未訂閱的服務安裝包。 例如，如果您訂閱 **Power Booster** 選項 **訊息中心** 服務，您只能安裝 **[!UICONTROL Execution of transactional messages]** 包。 請檢查您的授權合約。
-* 由於專用例項（或叢集）是Adobe Campaign例項，因此建議與主要例項的建議相同。 有關詳細資訊，請參閱 [此文檔](../../production/using/foreword.md).
-* 若要從資料庫/硬體元件的觀點正確配置執行個體，請聯絡Adobe Campaign Professional Services。
+* 執行例項必須專屬於服務。 您無法為尚未訂閱的服務安裝套件。 例如，如果您訂閱 **Power Booster** 的選項 **訊息中心** 服務，您只能安裝 **[!UICONTROL Execution of transactional messages]** 專屬執行例項上的套件。 請檢查您的授權合約。
+* 由於專用執行個體（或叢集）是Adobe Campaign執行個體，因此建議與主要執行個體的建議相同。 有關詳細資訊，請參閱 [本檔案](../../production/using/foreword.md).
+* 若要從資料庫/硬體元件角度正確設定執行個體，請聯絡Adobe Campaign Professional Services。

@@ -21,14 +21,14 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->身為v7使用者，若要繼續，請確定已在您的系統上啟用AdobeIdentity Management系統(IMS)。 [了解更多](../../integrations/using/about-adobe-id.md)。
+>身為v7使用者，若要繼續進行，請確定您的系統上已啟用AdobeIdentity Management系統(IMS)。 [了解更多](../../integrations/using/about-adobe-id.md)。
 
-貴組織啟用IMS後，您就可以要求布建People核心服務/Audience Manager與Campaign的整合。 若要這麼做，請傳送電子郵件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) 並提供下列資訊：
+為您的組織啟用IMS後，您可以請求布建People核心服務/Audience Manager與Campaign的整合。 若要這麼做，請傳送電子郵件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，並提供下列資訊：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>請求類型</strong><br /> </td> 
+   <td> <strong>請求型別</strong><br /> </td> 
    <td> 設定AAM/People核心服務 — Campaign整合 </td> 
   </tr> 
   <tr> 
@@ -37,7 +37,7 @@ ht-degree: 16%
   </tr> 
   <tr> 
    <td> <strong>組織 ID</strong><br /> </td> 
-   <td> 您的組織ID。 <br> 若要尋找組織ID，請參閱 <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">本頁</a></td> 
+   <td> 您的組織ID。 <br> 若要尋找您的組織ID，請參閱 <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">此頁面</a></td> 
   </tr> 
   <tr> 
    <td> <strong>環境</strong><br /> </td> 
@@ -45,7 +45,7 @@ ht-degree: 16%
   </tr> 
   <tr> 
    <td> <strong>AAM或People Service</strong><br /> </td> 
-   <td> 範例：Adobe Audience Manager。 請務必提及您是否擁有Audience Manager授權。</td> 
+   <td> 範例： Adobe Audience Manager。 請務必說明您是否擁有Audience Manager授權。</td> 
   </tr> 
   <tr> 
    <td> <strong>宣告ID或訪客ID</strong><br /> </td> 
@@ -53,7 +53,7 @@ ht-degree: 16%
   </tr> 
   <tr> 
    <td> <strong>其他資訊</strong><br /> </td> 
-   <td> 您可能擁有的任何有用資訊或注釋 </td> 
+   <td> 您可能有的任何有用的資訊或註解 </td> 
   </tr> 
  </tbody> 
 </table>

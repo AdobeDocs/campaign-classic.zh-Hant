@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 訊息中心服務層級
-description: 進一步了解訊息中心服務層級報表
+description: 進一步瞭解訊息中心服務等級報告
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
@@ -18,23 +18,23 @@ ht-degree: 3%
 
 
 
-此報表顯示與交易式訊息相關的傳送統計資料以及錯誤劃分。 您可以按一下錯誤類型以顯示其詳細資訊。
+此報表顯示與異動訊息相關的傳遞統計資料以及錯誤劃分。 您可以按一下錯誤型別以顯示其詳細資料。
 
-此報告針對技術管理員，也可透過 **[!UICONTROL Monitoring]** 頁簽。
+此報表是針對技術管理員，也可透過以下網址存取： **[!UICONTROL Monitoring]** 索引標籤上的控制例項。
 
 ![](assets/mc_reports_1.png)
 
-在此報告中，您可以選擇顯示整體統計資料或與特定執行例項相關的統計資料。 您也可以依管道和特定期間來篩選資料。
+在此報表中，您可以選擇顯示整體統計資料，或相對於特定執行執行處理的統計資料。 您也可以依管道和特定期間篩選資料。
 
-顯示於 **[!UICONTROL Indicators over the period]** 區段在選取的期間內計算：
+顯示在中的指示器 **[!UICONTROL Indicators over the period]** 區段會在選取的期間內計算：
 
-* **[!UICONTROL Incoming (throughput event/h)]** :在「訊息中心」佇列中輸入的每小時事件平均數。
-* **[!UICONTROL Incoming (event vol)]** :在「消息中心」隊列中輸入的事件數。
-* **[!UICONTROL Outgoing (throughput msg/h)]** :成功傳出訊息中心事件（由傳送傳送）的平均每小時數。
-* **[!UICONTROL Outgoing (msg vol)]** :成功傳出訊息中心事件的數量（由傳送傳送）。
-* **[!UICONTROL Average sending time (seconds)]** :訊息中心中成功處理事件的平均逗留時間。 計算會考量處理時間和mta傳送時間。
-* **[!UICONTROL Error rate]** :與已進入「消息中心」隊列的事件數相比，存在錯誤的事件數。 會考量下列錯誤：路由錯誤、過期事件（佇列中的事件過長）、傳送錯誤，由傳送忽略（隔離等）。
+* **[!UICONTROL Incoming (throughput event/h)]** ：在Message Center佇列中輸入的平均每小時事件數。
+* **[!UICONTROL Incoming (event vol)]** ：在Message Center佇列中輸入的事件數。
+* **[!UICONTROL Outgoing (throughput msg/h)]** ：成功外寄訊息中心事件的平均每小時數量（由傳遞傳送）。
+* **[!UICONTROL Outgoing (msg vol)]** ：成功的傳出訊息中心事件數（由傳遞傳送）。
+* **[!UICONTROL Average sending time (seconds)]** ：成功處理事件的平均訊息中心逗留時間。 該計算會將處理時間和mta傳送時間納入考量。
+* **[!UICONTROL Error rate]** ：發生錯誤的事件數目，與已進入Message Center佇列的事件數目比較。 考慮以下錯誤：路由錯誤、過期事件（在佇列中的事件過長）、傳送錯誤、被傳送忽略（隔離等）。
 
 >[!NOTE]
 >
->可在部署嚮導中配置警告（橙色）和警報（紅色）指示器閾值。 請參閱 [監視閾值](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>可以在部署精靈中設定警告（橘色）和警示（紅色）指標臨界值。 請參閱 [監視臨界值](../../message-center/using/additional-configurations.md#monitoring-thresholds).

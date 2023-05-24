@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 關於配置指南
-description: 關於配置指南
+title: 關於設定指南
+description: 關於設定指南
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: configuration
 content-type: reference
@@ -14,7 +14,7 @@ ht-degree: 10%
 ---
 
 
-# 關於配置指南{#about}
+# 關於設定指南{#about}
 
 
 

@@ -17,22 +17,22 @@ ht-degree: 5%
 
 
 
-您可以翻譯使用Adobe Campaign數字內容編輯器(DCE)建立的Web應用程式頁面。
+您可以翻譯使用Adobe Campaign數位內容編輯器(DCE)建立的網頁應用程式頁面。
 
-如果您透過 **[!UICONTROL Localization]** 標籤 **[!UICONTROL Properties]** 在使用DCE編輯的頁面中添加HTML內容塊時，新選項可用。
+如果您透過 **[!UICONTROL Localization]** 索引標籤中的 **[!UICONTROL Properties]** 在DCE編輯的頁面中新增HTML內容區塊時，Web應用程式的新選項會變為可用。
 
-此選項可讓您指出區塊內容是否必須翻譯。
+此選項可讓您指出是否必須翻譯區塊內容。
 
-要翻譯的字串，會透過 **[!UICONTROL Translations]** 頁簽。 如需詳細資訊，請參閱[此頁面](translating-a-web-form.md)。
+要翻譯的字串收集方式與網頁應用程式的其他字串相同，方法是透過 **[!UICONTROL Translations]** 標籤內的任何專案。 如需詳細資訊，請參閱[此頁面](translating-a-web-form.md)。
 
-若要標籤要翻譯的字串：
+標幟要翻譯的字串：
 
-1. 在Web應用程式中開啟使用DCE編輯的內容頁。
+1. 在Web應用程式中開啟使用DCE編輯的內容頁面。
 
    ![](assets/dce_translation_3.png)
 
 1. 選取HTML區塊。
-1. 在右側的參數區塊中， **[!UICONTROL Localization]** 選項可讓您標幟所選取區塊的內容。 依預設，只會翻譯頁面標題。
+1. 在右側的引數區塊中， **[!UICONTROL Localization]** 選項可讓您標幟所選區塊的內容。 依預設，只會翻譯頁面標題。
 
    ![](assets/dce_translation_1.png)
 
@@ -40,24 +40,24 @@ ht-degree: 5%
    >
    >字串不得超過1023個字元。
 
-   有三個具體案例：
+   有三個特定案例：
 
-   * 當選取的區塊包含數個字串/區塊時，會將其標示為要轉譯的單一字串。 字串則包含此區塊內元素的HTML代碼。
-   * 如果要標籤包含數個字串的區塊，並且至少已標籤其中一個字串，則會顯示警告。 然後，您可以從隔離字串中移除標幟，並新增整個區塊。
+   * 當選取的區塊包含數個字串/區塊時，會將其標幟為單一字串以進行翻譯。 字串則包含此區塊中元素的HTML程式碼。
+   * 如果您想要標幟包含數個字串的區塊，而且至少其中一個字串已經標幟，系統會顯示警告。 然後，您可以從隔離字串中移除標幟，並新增整個區塊。
 
       ![](assets/dce_translation_4.png)
 
-   * 如果要從已標籤的塊中包含的字串中刪除該標誌，則無法直接修改字串轉換選項。 不過，您可以存取包含字串的區塊以進行變更。
+   * 當您想要從已標幟的區塊中包含的字串中移除標幟時，您無法直接修改字串轉譯選項。 不過，您可以存取包含字串的區塊以進行變更。
 
       ![](assets/dce_translation_2.png)
 
-1. 完成字串的標幟後，返回Web應用程式並選取 **[!UICONTROL Translations]** 標籤。
-1. 選取 **[!UICONTROL Collect the strings to translate]**。DCE中標籤的字串將添加到Web應用程式的字串中。
+1. 完成標幟字串後，請返回Web應用程式並選取 **[!UICONTROL Translations]** 標籤。
+1. 選取 **[!UICONTROL Collect the strings to translate]**。在DCE中標幟的字串會新增至網頁應用程式的字串。
 
    >[!NOTE]
    >
-   >收集到字串後，如果您刪除DCE中的翻譯標籤，這些字串將不會從清單中刪除。 這可以將它們保留在翻譯記憶庫中。
+   >收集到字串後，如果您在DCE中移除翻譯旗標，則不會從清單中移除這些字串。 這樣可讓翻譯記憶庫儲存它們。
 
 1. 翻譯並核准字串。
 
-   然後，您可以從 **[!UICONTROL Preview]** 頁簽。
+   然後，您可以從中選擇所需的語言來預覽翻譯 **[!UICONTROL Preview]** 索引標籤中。

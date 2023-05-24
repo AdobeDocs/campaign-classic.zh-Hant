@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 偵測追蹤 URL
-description: 瞭解有關跟蹤URL的建議模式的詳細資訊
+description: 深入瞭解追蹤URL的建議模式
 feature: Monitoring
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
@@ -13,32 +13,32 @@ ht-degree: 3%
 
 # 偵測追蹤 URL
 
-## 非檢測示例
+## 非偵測範例
 
-`<%= getURL("http://mynewsletter.com") %>` 通過電子郵件將網頁的實際內容發送給收件人。 但是，這些連結都沒有被追蹤。 原因是MTA執行 `"<%=getURL(..."` 發送前的每個電子郵件。 每個收件人的URL可能不同，因此Adobe Campaign無法知道用於跟蹤的URL並為其分配標籤ID。
+`<%= getURL("http://mynewsletter.com") %>` 會運作，並透過電子郵件將網頁的實際內容傳送給收件者。 但是沒有追蹤任何連結。 原因在於會執行MTA `"<%=getURL(..."` 每封電子郵件在傳送前的URL值。 每個收件者的識別碼可能不同，因此Adobe Campaign無法得知用於追蹤的URL，也無法為其指派標籤ID。
 
-當要下載的頁面對所有收件人相同時，最佳做法是執行以下操作：
+當所有收件者的下載頁面都相同時，最佳實務是執行下列動作：
 
 `<%@ include url="http://mynewsletter.com" %>`
 
-在這種情況下，在分析期間在跟蹤檢測之前下載頁面。 它使Adobe Campaign能夠發現連結、分配標籤ID並跟蹤它們。
+在此情況下，頁面會在分析期間、追蹤偵測之前下載。 它可讓Adobe Campaign探索連結、指派標籤ID及追蹤連結。
 
-## 推薦模式
+## 建議的模式
 
-處理後 `<%@` 說明，要跟蹤的URL具有以下語法： `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
+處理之後 `<%@` 指示中，要追蹤的URL的語法如下： `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
 
 >[!IMPORTANT]
 >
->所有其他模式都不受Adobe支援，應避免出現潛在的安全漏洞。
+>Adobe不支援所有其他模式，應避免使用，以防止潛在的安全性差距。
 
-## 無擔保模式
+## 不安全的模式
 
-在向內容添加個性化連結時，始終避免在URL的主機名部分中出現任何個性化設定，以避免潛在的安全漏洞。 在[本頁](../../installation/using/privacy.md#url-personalization)中瞭解更多。
+將個人化連結新增至您的內容時，請一律避免URL的主機名稱部分有任何個人化，以避免潛在的安全性缺口。 在[本頁](../../installation/using/privacy.md#url-personalization)中瞭解更多。
 
-例如， `<a href="http://<%=myURL%>">` 語法 **不安全** 必須避免。
+例如， `<a href="http://<%=myURL%>">` 語法為 **不安全** 而且必須避免。
 
-* 如果Adobe Campaign生成的連結包含一個或多個參數，則使用此語法可能會導致安全問題。
-* Tidy可以錯誤地修補某些連結，這可能是隨機的。 典型症狀是在電子郵件校樣中可見但在預覽中看不到的HTML。
-* URL的轉義有問題，URL中的某些字元可能會導致問題。
-* 不能有名為ID的參數與重定向URL中的參數衝突。
-* 跟蹤的興趣隨後被限制在遞送統計上，因為Adobe Campaign對&quot;myURL&quot;的所有可能值的跟蹤都有不同。
+* 如果Adobe Campaign產生的連結包含一或多個引數，使用此語法可能會導致安全性問題。
+* Tidy可能會不正確地修補某些連結，而這會隨機發生。 典型症狀是一段HTML，可在電子郵件校樣中看到，但預覽中看不到。
+* URL的逸出有問題，URL中的某些字元可能會導致問題。
+* 名稱為ID的引數不能與重新導向URL中的引數相衝突。
+* 因此，追蹤的興趣會限製為傳送的統計資料，因為Adobe Campaign會以不同方式追蹤「myURL」的所有可能值。

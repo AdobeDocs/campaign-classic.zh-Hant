@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 將Linux平台移轉至Adobe Campaign v7
-description: 了解如何將Linux平台移轉至Adobe Campaign v7
+description: 瞭解如何將Linux平台移轉至Adobe Campaign v7
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
@@ -20,27 +20,27 @@ ht-degree: 0%
 
 
 
-在Linux中的移轉步驟如下：
+Linux中的移轉步驟如下：
 
-1. 停止所有服務 —  [深入了解](#service-stop).
-1. 保存資料庫 —  [深入了解](#back-up-the-database).
-1. 解除安裝舊版Adobe Campaign套件 —  [深入了解](#uninstalling-adobe-campaign-previous-version-packages).
-1. 移轉平台 —  [深入了解](#deploying-adobe-campaign-v7).
-1. 重新啟動服務 —  [深入了解](#re-starting-services).
+1. 停止所有服務 —  [瞭解更多](#service-stop).
+1. 儲存資料庫 —  [瞭解更多](#back-up-the-database).
+1. 解除安裝舊版Adobe Campaign套件 —  [瞭解更多](#uninstalling-adobe-campaign-previous-version-packages).
+1. 遷移平台 —  [瞭解更多](#deploying-adobe-campaign-v7).
+1. 重新啟動服務 —  [瞭解更多](#re-starting-services).
 
 ## 服務停止 {#service-stop}
 
-首先，停止所有相關電腦上具有資料庫訪問權限的所有進程。
+首先，停止在所有相關電腦上存取資料庫的所有程式。
 
-1. 登入方式 **根**.
-1. 使用重定向模組(**webmdl** 服務)。 對於Apache，請運行以下命令：
+1. 登入身份 **根**.
+1. 所有使用重新導向模組的伺服器(**webmdl** 服務)。 對於Apache，請執行以下命令：
 
    ```
    /etc/init.d/apache2 stop
    ```
 
-1. 重新登入為 **根**.
-1. 在所有伺服器上停止Adobe Campaign舊版服務。
+1. 再次登入身份 **根**.
+1. 停止所有伺服器上的Adobe Campaign舊版服務。
 
    ```
    /etc/init.d/nlserver6 stop
@@ -55,27 +55,27 @@ ht-degree: 0%
 
 -->
 
-1. 請確定每個伺服器上都已停止Adobe Campaign服務。
+1. 請確定每個伺服器上都停止了Adobe Campaign服務。
 
    ```
    ps waux | grep nlserver
    ```
 
-   活動進程的清單及其ID(PID)將一併顯示。
+   將顯示作用中處理序的清單及其ID (PID)。
 
-1. 如果一或多個Adobe Campaign程式在幾分鐘後仍處於作用中或封鎖狀態，請終止。
+1. 如果一或多個Adobe Campaign程式在幾分鐘後仍處於作用中或封鎖狀態，請將其終止。
 
    ```
    killall nlserver
    ```
 
-1. 如果某些進程在幾分鐘後仍處於活動狀態，則可以使用命令強制它們關閉：
+1. 如果某些程式在幾分鐘後仍在使用中，您可以使用命令強制關閉它們：
 
    ```
    killall -9 nlserver
    ```
 
-## 備份資料庫 {#back-up-the-database}
+## 備份您的資料庫 {#back-up-the-database}
 
 <!--
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 -->
 
 1. 備份Adobe Campaign資料庫。
-1. 登入方式 **奈羅蘭** 並備份 **nl6** 目錄（使用以下命令）:
+1. 登入身份 **neolane** 並備份 **nl6** 目錄，使用下列命令：
 
    ```
    su - neolane
@@ -165,7 +165,7 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >為了防患於未然，建議您將 **nl6.back** 資料夾並儲存至伺服器以外的安全位置。
+   >為謹慎起見，建議您壓縮 **nl6.back** 資料夾並儲存至伺服器以外的安全位置。
 
 ## 解除安裝Adobe Campaign舊版套件 {#uninstalling-adobe-campaign-previous-version-packages}
 
@@ -213,23 +213,23 @@ ht-degree: 0%
 
 本節說明如何解除安裝Adobe Campaign v6.1套件。
 
-1. 登入方式 **根**.
-1. 使用下列命令識別安裝的Adobe Campaign套件。
+1. 登入身份 **根**.
+1. 識別使用下列命令安裝的Adobe Campaign套件。
 
-   * 在 **Debian**:
+   * 在 **Debian**：
 
       ```
       dpkg -l | grep nl
       ```
 
-      隨即顯示已安裝的程式包清單：
+      此時會顯示已安裝套裝軟體清單：
 
       ```
       ii  nlserver6                       XXXX                     nlserver6-XXXX
       ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
       ```
 
-   * 在 **紅帽**:
+   * 在 **Red Hat**：
 
       ```
       rpm -qa | grep nl
@@ -237,13 +237,13 @@ ht-degree: 0%
 
 1. 解除安裝Adobe Campaign v6套件。
 
-   * 在 **Debian**:
+   * 在 **Debian**：
 
       ```
       dpkg --purge nlserver6 nlthirdparty6
       ```
 
-   * 在 **紅帽**:
+   * 在 **Red Hat**：
 
       ```
       rprm -ev nlserver6 nlthirdparty6
@@ -467,32 +467,32 @@ To deploy Adobe Campaign, apply the following steps:
 部署Adobe Campaign需要兩個階段：
 
 * 安裝Adobe Campaign v7套件：必須在每個伺服器上執行此操作。
-* 升級後：必須在每個實例上啟動此命令。
+* 升級後：必須在每個執行個體上啟動此命令。
 
 若要部署Adobe Campaign，請套用下列步驟：
 
-1. 使用下列命令安裝最新的Adobe Campaign v7套件：
+1. 使用以下命令安裝最新的Adobe Campaign v7套件：
 
-   * 在 **Debian**:
+   * 在 **Debian**：
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * 在 **紅帽**:
+   * 在 **Red Hat**：
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
    >[!IMPORTANT]
    >
-   >您必須成功安裝軟體包，然後才能繼續下一步。
+   >您必須先成功安裝套件，才能繼續進行下一個步驟。
 
    >[!NOTE]
    >
-   >Adobe Campaign v7安裝在 **/usr/local/neolane/nl6/** 目錄。
+   >Adobe Campaign v7安裝在 **/usr/local/neolane/nl6/** 目錄（預設）。
 
-1. 若要讓用戶端主控台安裝程式可供使用，請將其複製至Adobe Campaign安裝目錄：
+1. 若要讓使用者端主控台安裝程式可供使用，請將其複製到Adobe Campaign安裝目錄：
 
    ```
    cp setup-client-7.0.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
@@ -500,9 +500,9 @@ To deploy Adobe Campaign, apply the following steps:
 
    >[!NOTE]
    >
-   >有關如何在Linux安裝Adobe Campaign的詳細資訊，請參閱 [本節](../../installation/using/installing-campaign-standard-packages.md).
+   >如需如何在Linux安裝Adobe Campaign的詳細資訊，請參閱 [本節](../../installation/using/installing-campaign-standard-packages.md).
 
-1. 前往 **nl6.back** 備份資料夾，並複製（覆寫）每個實例的配置檔案和子資料夾。 登入方式 **奈羅蘭** 並運行以下命令：
+1. 前往 **nl6.back** 備份資料夾，並複製（覆寫）每個執行個體的組態檔和子資料夾。 登入身份 **neolane** 並執行下列命令：
 
    ```
    su - neolane
@@ -513,13 +513,13 @@ To deploy Adobe Campaign, apply the following steps:
    cp -r nl6.back/var/* nl6/var/
    ```
 
-1. 使用下列命令重新載入Adobe Campaign v7設定：
+1. 使用以下命令重新載入Adobe Campaign v7設定：
 
    ```
    nlserver config -reload
    ```
 
-1. 使用以下命令啟動升級後進程(仍為 **奈羅蘭**):
+1. 使用下列命令啟動升級後程式(仍為 **neolane**)：
 
    ```
    su - neolane
@@ -598,7 +598,7 @@ If you are migrating from v6.02 or earlier, you must configure your security zon
 
 ## 重新啟動服務 {#re-starting-services}
 
-以下是重新啟動服務的過程。
+以下是重新啟動服務的程式。
 
 <!--
 
@@ -668,11 +668,11 @@ Fully test the new installation, check that it does not regress and make sure th
 
 在下列各伺服器上啟動Apache和Adobe Campaign服務：
 
-1. 跟蹤和重定向伺服器。
+1. 追蹤和重新導向伺服器。
 1. 中間來源伺服器.
 1. 行銷伺服器。
 
-請完整測試新安裝，檢查它是否未回復，並確保一切正常運作。
+完整測試新安裝，檢查它是否沒有回覆，並確定一切正常運作。
 
 <!--
 

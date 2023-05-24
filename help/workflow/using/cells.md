@@ -16,15 +16,15 @@ ht-degree: 8%
 
 
 
-此 **[!UICONTROL Cells]** 活動以資料欄的形式提供各種子集的視圖。 它有助於進行子集操作，也旨在鼓勵個人化的可能性。
+此 **[!UICONTROL Cells]** 活動會以資料欄的形式，提供各種子集的檢視。 它有助於子集操作，也設計用於鼓勵個人化可能性。
 
 ![](assets/wf_split_cells.png)
 
-可以根據用戶需求配置此活動以輸入特定參數。 依預設，每個子集的詳細資訊會透過 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 標籤。 在以下範例中，已修改表單：a **[!UICONTROL Data]** 已新增索引標籤，以啟用選件與每個子集之優先順序層級的關聯。
+此活動可設定為根據使用者需求輸入特定引數。 依預設，每個子集的詳細資訊會透過在專用視窗中提供 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 索引標籤。 在以下範例中，表單已修改： **[!UICONTROL Data]** 索引標籤已新增，以啟用每個子集的優惠方案與優先順序層級的關聯。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-針對此設定，下列資訊已新增至工作流程表單(位於 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign樹節點):
+針對此設定，已將以下資訊新增至工作流程表單(在 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign節點)：
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -49,4 +49,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的登入表單個人化已保留給專家使用者。 如需詳細資訊，請參閱本[區段](../../configuration/using/identifying-a-form.md)。
+Adobe Campaign中的輸入表單個人化是保留給專家使用者。 如需詳細資訊，請參閱本[區段](../../configuration/using/identifying-a-form.md)。

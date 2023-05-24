@@ -1,66 +1,66 @@
 ---
 product: campaign
-title: 技術 — Adobe Campaign- Apache版本安全更新
-description: Adobe Campaign- Apache版本安全更新
+title: 技術檔案 — Adobe Campaign - Apache版本安全性更新
+description: Adobe Campaign - Apache版本安全性更新
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
 source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
-# Adobe Campaign- Apache版本安全更新 {#apache-update}
+# Adobe Campaign - Apache版本安全性更新 {#apache-update}
 
 >[!CAUTION]
->本文適用於： **Campaign ClassicV7Managed Services** 客戶， **市場活動v8** 客戶及 **Campaign Standard** 客戶。
+>本文適用於： **Campaign Classicv7 Managed Services** 客戶， **Campaign v8** 客戶和 **Campaign Standard** 客戶。
 
-Adobe Campaign使用第三方工具，並定期更新相容性，以便僅實施受支援的版本，並受益於最新的修復和改進。
+Adobe Campaign可與協力廠商工具搭配使用，產品相容性將定期更新，以僅實施所支援的版本，並受益於最新的修正和改良。
 
-Adobe Campaign公司包括Apache Tomcat，它通過HTTP作為應用伺服器的入口點，並與Apache Web伺服器整合。 Apache Software Foundation已發佈Apache HTTP Server 2.4.53。此版本解決了可能允許遠程攻擊者控制受影響系統的漏洞。 瞭解詳情 [Apache 2.4.53公告](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}。
+Adobe Campaign內含Apache Tomcat，可透過HTTP作為應用程式伺服器的進入點，並與Apache Web Server整合。 Apache Software Foundation已發行Apache HTTP Server 2.4.53。此版本解決可能允許遠端攻擊者控制受影響系統的漏洞。 進一步瞭解 [Apache 2.4.53發佈](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
-Adobe Campaign團隊將通過以下方式執行Apache版本安全升級活動 **2022年6月15日** 來緩解此Apache漏洞並使實例環境更加安全。 此升級適用於所有在易受攻擊的Apache HTTP Server版本上運行的Campaign Classicv7Managed Services客戶、活動v8和Campaign Standard客戶。 如果您受到影響，Adobe已聯繫您以通知您此升級。
+Adobe Campaign團隊將透過以下方式進行Apache版本安全性升級活動 **2022年6月15日** 以緩解此Apache弱點，並讓您的執行個體環境更安全。 此升級適用於所有Campaign Classic v7 Managed Services客戶、Campaign v8以及在易受攻擊的Apache HTTP Server版本上執行的Campaign Standard客戶。 如果您受到影響，Adobe已聯絡您，通知您有關此次升級的資訊。
 
-此升級預計會在正常工作時間之外自動運行，以便您繼續使用市場活動服務而不中斷。
+此升級預計會在您正常營業時間以外自動執行，以便您繼續使用Campaign服務而不會造成任何中斷。
 
-您的非生產實例將首先通過Adobe進行升級，然後升級您的生產實例。 由於這是Adobe擁有的自動升級過程，因此您不需要執行任何操作。 但是，如果您遇到任何問題，請聯繫 [Adobe客戶關懷](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+您的非生產執行個體將先由Adobe升級，然後您的生產執行個體將升級。 由於這是Adobe擁有的自動升級程式，因此您不需要採取任何動作。 不過，如果您遇到任何問題，請聯絡 [Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
->此升級需要重新啟動Apache Web伺服器。 在下面提到的時段內，停機時間不超過10分鐘。
+>此升級需要重新啟動Apache Web Server。 停機時間在下列時段內不會超過10分鐘。
 
 ## 常見問題集 {#apache-faq}
 
 * **為什麼這是強制升級？**
 
-   當前的Apache版本易受攻擊，並且存在潛在的安全威脅。 必須將市場活動實例升級到最新適用的Apache版本，以解決安全風險。
+   目前的Apache版本容易受到攻擊，並存在潛在的安全威脅。 請務必將Campaign執行個體升級至最新適用的Apache版本，以解決安全性風險。
 
-* **哪些客戶是安全升級的目標客戶？**
+* **哪些客戶是安全性升級的目標？**
 
-   所有使用在較舊的Apache版本上實施的Campaign環境的客戶都升級到最新的適用的Apache版本。
+   所有使用在舊版Apache上實作之Campaign環境的客戶，都會升級至最新適用的Apache版本。
 
 * **預期的停機時間是多少？**
 
-   預計停機時間不到10分鐘。
+   預期停機時間少於10分鐘。
 
-* **客戶是否需要執行此安全升級操作？**
+* **客戶是否需要執行任何安全性升級動作？**
 
-   由於安全升級將自動運行，因此不需要執行任何操作。
+   不需要採取任何動作，因為安全性升級會自動執行。
 
-* **在維護窗口期間，對運行的市場活動/工作流有何影響？**
+* **在維護期間，對執行的行銷活動/工作流程有何影響？**
 
-   在維護窗口期間，工作流和郵件服務將同時停止，並且計畫的活動將不會運行。 任何正在進行的活動或正在運行的進程在停機期間將暫停，直到伺服器重新啟動。 活動完成並重新啟動伺服器後，所有服務都將恢復。
+   在維護期間，工作流程和郵件服務將同時停止，且排程的活動不會執行。 任何進行中的活動或執行中的程式都會在停機期間暫停，直到伺服器重新啟動為止。 活動完成且伺服器重新啟動後，所有服務都將繼續。
 
-* **客戶需要運行哪些驗證？**
+* **客戶需要執行哪些驗證？**
 
-   此安全升級不需要特定測試。 如果發現任何問題，請聯繫 [Adobe客戶關懷](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
-
-
-* **是否可以請求更改計畫的安全升級插槽的日期/時間？**
-
-   由於這是一種安全解決方案，我們強烈建議您適應現有計畫。
+   此安全性升級不需要特定測試。 如果發現任何問題，請聯絡 [Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
-對於其他問題，您可以 [Adobe客戶關懷](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+* **我可以請求變更排程安全性升級位置的日期/時間嗎？**
+
+   由於這是安全性修正，強烈建議您調整至現有的排程。
+
+
+如有任何其他問題，您可以聯絡 [Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support).

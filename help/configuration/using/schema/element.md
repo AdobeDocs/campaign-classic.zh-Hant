@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 架構元素和屬性 — 元素元素
+title: 結構描述元素和屬性 — 元素元素
 description: 元素元素
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 ## 內容模型 {#content-model-4}
 
-元素：==(屬性 |計算字串 | dbindex |預設 |元素 |幫助 |加入 |鍵 | sysFilter |已轉換預設值)
+元素：==(屬性 |計算字串 | dbindex |預設 |元素 |說明 |加入 |索引鍵 | sysFilter | translatedDefault)
 
 ## 屬性 {#attributes-4}
 
-_operation(string)、advanced(boolean)、aggregate(string)、autopk(boolean)、leartsTo(string)、convDate(string)、dataPolicy(string)、dataSource(string)、dbEnum(string)、defOnDuplicate(boolean)、defauault(string)、desc(sc(sc(st(string)、desc(string)、desc(sinc(sing)、dipdisplayDic(sc(sin)、displayAsAs)、displayAsAsAsAs欄位(boolean)、doesNotSupportDiff(boolean)、edit(string)、emptyKeyValue(string)、enum(string)、enumImage(string)、expandSchemaTarget(string)、expr(string)、externalJoin(boolean)、featureDate(bolean)、filterPath(string)、folean)、folderModel(string)、folderProcess(string)、fullLoad(boolean)、hiercialPath(string)、img(string)、inout(string)、完整性(string)、標籤(string)、labelSingular(string)、length(boolean)、noDbIndex(booolean)鍵（布爾型）、有序（布爾型）、overflowtable(boolean)、pkSequence(string)、pkgStatus(string)、ref(string)、required(boolean)、revAdvanced(boolean)、revCardinality(string)、revExternalJoin(boel)、revIntegrity(string)、revLabel(strity(stringlink(string)、revTarget(string)、revVisibleIf(string)、sql(boolean)、sqlname(string)、sqltable(string)、tableSpace(string)、tableSpaceIndex(string)、target(MNTOKEN)、template(string)、temporaryTable(boolean)、translatedDefault(string)、transledExpr(strationed(string)、transledExpr(string)、typeMNTOKEN)、未綁定（布爾）、user（布爾）、userEnum（字串）、visibleIf（字串）、xml（布爾）、xmlChildren（布爾）
+_operation （字串）、進階（布林值）、彙總（字串）、applicableIf （字串）、autopk （布林值）、fellsTo （字串）、convDate （字串）、dataPolicy （字串）、dataSource （字串）、dbEnum （字串）、defOnDuplicate （布林值）、default （字串）、desc （字串）、displayAsField （布林值）、doesNotSupportDiff （布林值）、edit （字串）、emand字串)、emptyKeyValue （字串）、enum （字串）、enumImage （字串） target（字串）、expr（字串）、externalJoin（布林值）、feature（字串）、featureDate（布林值）、filterPath（字串）、folderLink（字串）、folderModel（字串）、folderProcess（字串）、fullLoad（布林值）、hierarchical（布林值）、hierarchicalPath（字串）、img（字串）、inout（字串）、integrity（字串）、label（字串）、labelSingular（字串）、lengue（字串）、length(可本地化（布林值）、name(布林值（布林值）、name（布林值）、noDbIndex（布林值） 、overflowtable（布林值）、pkSequence（字串）、pkgStatus（字串）、ref（字串）、revAdvanced（布林值）、revCardinality（字串）、revDesc（字串）、revExternalJoin（布林值）、revIntegrity（字串）、revLabel（字串）、revLink（字串）、revTarget（字串）、revVisibleIf（字串）、sql（布林值）、sqlname（字串）、sqltable（字串）、sqltable（字串）、tableSpace（字串）、testIndex（字串）、target（字串） token)、template (string)、temporaryTable (boolean)、translatedDefault (string)、translatedExpr (string)、type (MNTOKEN)、unbound (boolean)、user (boolean)、userEnum (string)、visibleIf (string)、xml (boolean)、xmlChildren (boolean)
 
-## 父母 {#parents-4}
+## 父項 {#parents-4}
 
 `<srcschema>`
 
 `<element>`
 
-## 兒童 {#children-4}
+## 子系 {#children-4}
 
 * `<attribute>`
 * `<compute-string>`
@@ -43,165 +43,165 @@ _operation(string)、advanced(boolean)、aggregate(string)、autopk(boolean)、l
 
 ## 說明 {#description-4}
 
-有四種類型 `<element>`  Adobe Campaign元素：
+有四種型別 `<element>`  Adobe Campaign中的元素：
 
-* 根 `<element>`  :定義與架構匹配的SQL表的名稱。
-* 結構 `<element>`  :定義  `<element>`   或   `<attribute>`    元素。
-* 連結 `<element>`  :定義連結。 此元素必須包括「@type=link」屬性。
-* XML `<element>`  :定義文本類型「mData」欄位。 此元素必須包含「@type=xml」屬性。
+* 根 `<element>`  ：定義符合結構描述的SQL表格名稱。
+* 結構 `<element>`  ：定義群組  `<element>`   或   `<attribute>`    元素。
+* 連結 `<element>`  ：定義連結。 此元素必須包含&quot;@type=link&quot;屬性。
+* XML `<element>`  ：定義文字型別「mData」欄位。 此元素必須包含「@type=xml」屬性。
 
 ## 屬性說明 {#attribute-description-4}
 
-* **操作（字串）**:定義在資料庫中寫入的類型。
+* **操作（字串）(_O)**：定義資料庫中的寫入型別。
 
-   此屬性主要用於擴展開箱模式。
+   此屬性主要用於擴充現成可用的結構描述。
 
-   可訪問的值為：
+   可存取的值包括：
 
-   * &quot;無&quot;:單獨和解。 這意味著，Adobe Campaign將恢復元素，而不更新該元素，如果該元素不存在，則不生成錯誤。
-   * &quot;insertOrUpdate&quot;:用插入更新。 這意味著Adobe Campaign將更新元素或在元素不存在時建立它。
-   * &quot;插入&quot;:插入。 這意味著Adobe Campaign將插入元素，而不檢查它是否存在。
-   * &quot;更新&quot;:更新。 這意味著Adobe Campaign將更新元素，或在元素不存在時生成錯誤。
-   * &quot;刪除&quot;:刪除。 這意味著Adobe Campaign將恢復和刪除元素。
+   * &quot;none&quot;：單獨和解。 這表示Adobe Campaign將復原元素，而不會更新元素，如果元素不存在則產生錯誤。
+   * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign會更新元素，或是在元素不存在時建立元素。
+   * &quot;insert&quot;： insertion. 這表示Adobe Campaign會插入元素，而不檢查元素是否存在。
+   * &quot;update&quot;：更新。 這表示Adobe Campaign會更新元素，或是在元素不存在時產生錯誤。
+   * &quot;delete&quot;：刪除。 這表示Adobe Campaign將會復原和刪除元素。
 
-* **高級（布爾值）**:激活此選項(@advanced=&quot;true&quot;)時，它允許您隱藏可用欄位清單中的屬性，這些欄位可用於在表單中配置清單。
-* **聚合（字串）**:允許您複製 `<element>`  通過另一個架構。 此屬性接收「namespace:name」形式的架構聲明。
-* **appliatedIf（字串）**:用於應用索引的條件。 此屬性接收XTK表達式。
-* **autopk（布爾值）**:如果激活此選項(autopk=&quot;true&quot;)，則將自動定義唯一鍵。 此選項只能用於架構的主元素。 警告，Adobe Campaign只保證生成的密鑰是唯一的。 不能保證關鍵值是連續的和增量的。
-* **dataPolicy（字串）**:允許您對SQL欄位中允許的值指定批准約束。 此屬性的值為：
+* **進階（布林值）**：啟動此選項時(@advanced=&quot;true&quot;)，您可以在可用欄位清單上隱藏屬性，以便設定表單中的清單。
+* **彙總（字串）**：可讓您複製 `<element>`  透過另一個結構描述。 此屬性會收到「namespace：name」格式的結構描述宣告。
+* **applicableIf （字串）**：套用索引的條件。 此屬性會接收XTK運算式。
+* **autopk （布林值）**：如果已啟用此選項(autopk=&quot;true&quot;)，則會自動定義唯一金鑰。 此選項只能用於結構描述的主要元素。 警告，Adobe Campaign僅保證產生的索引鍵是唯一的。 不保證索引鍵值是連續和增量的。
+* **dataPolicy （字串）**：可讓您對SQL欄位中允許的值指定核准限制。 此屬性的值為：
 
-   * &quot;無&quot;:無值
-   * &quot;smartCase&quot;:首字母大寫
-   * &quot;lowerCase&quot;:全部小寫
-   * &quot;upperCase&quot;:全部大寫
-   * 「電子郵件」：電子郵件地址
-   * &quot;電話&quot;:電話號碼
-   * &quot;標識符&quot;:標識符名稱
-   * &quot;resIdentifier&quot;:檔案名
+   * &quot;none&quot;：沒有值
+   * &quot;smartCase&quot;：第一字母大寫
+   * &quot;lowerCase&quot;：所有小寫
+   * &quot;upperCase&quot;：全部大寫
+   * &quot;email&quot;：電子郵件地址
+   * &quot;phone&quot;：電話號碼
+   * &quot;identifier&quot;：識別碼名稱
+   * &quot;resIdentifier&quot;：檔案名稱
 
-* **dbEnum（字串）**:接收「已關閉」枚舉的內部名稱。 必須在 `<srcschema>`。
-* **defOnDuplicate（布爾型）**:如果激活此屬性，則當記錄重複時，預設值(在@default中定義)將自動重新應用於記錄。
-* **預設（字串）**:用於定義元素行為（調用函式，預設值）。 此屬性接收XTK表達式。
-* **desc（字串）**:用於插入元素的說明。 此說明顯示在介面的狀態欄中。
-* **displayAsField（布爾型）**:如果此屬性被激活，則為&quot;link&quot;類型 `<element>`  將在架構的樹視圖中顯示為欄位（「結構」頁籤）。 這樣，就可以將連結顯示為本地欄位，並在查詢期間更改其行為。 在查詢的SELECT中找到元素時，將使用連結目標的值。 在查詢的WHERE中找到元素時，將使用連結的基礎鍵。
-* **編輯（字串）**:此屬性指定將以連結到架構的形式使用的輸入類型。
-* **枚舉（字串）**:接收連結到該欄位的枚舉的名稱。 枚舉可以插入到同一架構或遠程架構中。
-* **expr（字串）**:此屬性定義一個計算欄位，該欄位的定義不儲存在表中。 它接收Xpath或XTK（字串）表達式。
-* **externalJoin（布爾型）**:「link」類型元素中的外部聯接。
-* **特徵（字串）**:定義特徵欄位：這些欄位用於擴展現有表中的資料，但儲存在附件表中。 接受的值為：
+* **dbEnum （字串）**：接收「已關閉」分項清單的內部名稱。 列舉值必須在 `<srcschema>`.
+* **defOnDuplicate （布林值）**：如果此屬性已啟用，複製記錄時，預設值(在@default中定義)會自動重新套用至記錄。
+* **預設（字串）**：可讓您定義元素行為（呼叫函式、預設值）。 此屬性會接收XTK運算式。
+* **desc （字串）**：可讓您插入元素的說明。 此說明會顯示在介面的狀態列中。
+* **displayAsField （布林值）**：如果此屬性已啟用，則會顯示「連結」型別 `<element>`  將顯示為結構樹狀檢視中的欄位（「結構」標籤）。 如此一來，就可以將連結顯示為本機欄位，並在查詢期間變更其行為。 在查詢的SELECT中找到元素時，將使用連結目標的值。 在查詢的WHERE中找到元素時，將會使用連結的基礎索引鍵。
+* **編輯（字串）**：此屬性會指定連結至結構描述的表單中將使用的輸入型別。
+* **列舉（字串）**：接收連結至欄位的列舉名稱。 列舉可以插入相同結構描述或遠端結構描述中。
+* **expr （字串）**：此屬性會定義表格中未儲存定義的計算欄位。 它會接收Xpath或XTK （字串）運算式。
+* **externalJoin （布林值）**：在「連結」型別元素中的外部聯結。
+* **功能（字串）**：定義特性欄位：這些欄位用於擴充現有表格中的資料，但可儲存於附件表格中。 接受的值包括：
 
-   * &quot;共用&quot;:內容按資料類型儲存在共用表中
-   * &quot;專用&quot;:內容儲存在專用表中
+   * &quot;shared&quot;：內容會根據資料型別儲存在共用表格中
+   * &quot;dedicated&quot;：內容儲存在專用表格中
 
-   SQL特徵表是根據特徵類型自動生成的：
+   SQL特性表格是根據特性型別自動建立：
 
    * 專用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * 共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * 已共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-   有兩種類型的特徵欄位：對特徵授權單個值的簡單欄位和多個選擇欄位，其中特徵被連結到可包含多個值的集合元素。
+   有兩種特性欄位：簡單欄位，單一值在特性上獲得授權；以及多選欄位，特性連結至可能包含多個值的收集要素。
 
-   在模式中定義特徵時，此模式必須具有基於單個欄位的主鍵（未授權複合鍵）。
+   在結構描述中定義特性時，此結構描述必須具有根據單一欄位的主要金鑰（複合金鑰未獲授權）。
 
-* **featureDate（布爾型）**:連結到「@feature」特徵欄位的屬性。 如果其值為&quot;true&quot;，則允許您查找上次更新值的時間。
-* **filterPath（字串）**:此屬性接收Xpath，並允許您在欄位上定義篩選器。
-* **folderLink（字串）**:此屬性接收連結的名稱，用於恢復包含實體的檔案。
-* **folderModel（字串）**:定義啟用實體儲存的資料夾類型。 僅當存在「@folderLink」時才定義此屬性。
-* **folderProcess（字串）**:定義實體模型實例儲存的連結。 僅當存在「@folderLink」時才定義此屬性。
-* **fullLoad（布爾型）**:此屬性強制在表單的欄位選擇期間顯示表中的所有記錄。
-* **img（字串）**:接收連結到元素的影像的路徑。 此屬性的值為「namespace:image name」類型。 例如：img=&quot;cus:myImage.jpg&quot;。 物理上，必須將映像導入到應用程式伺服器。
-* **完整性（字串）**:源表對目標表的出現的參照完整性。
+* **featureDate （布林值）**：連結至「@feature」特性欄位的屬性。 若其值為「true」，則可讓您檢視上次更新值的時間。
+* **filterPath （字串）**：此屬性會接收Xpath，並讓您在欄位上定義篩選器。
+* **folderLink （字串）**：此屬性會收到連結的名稱，此連結可讓您復原包含實體的檔案。
+* **folderModel （字串）**：定義啟用實體儲存的資料夾型別。 此屬性僅在「@folderLink」存在時定義。
+* **folderProcess （字串）**：定義儲存實體模型例項的連結。 此屬性僅在「@folderLink」存在時定義。
+* **fullLoad （布林值）**：在表單中選取欄位時，此屬性會強制顯示表格中的所有記錄。
+* **img （字串）**：接收連結至元素的影像路徑。 此屬性的值為「namespace：image name」型別。 例如： img=&quot;cus：myImage.jpg&quot;。 在實體上，必須將影像匯入至應用程式伺服器。
+* **完整性（字串）**：來源表格與目標表格出現次數的參照完整性。
 
-   可訪問的值為：
+   可存取的值包括：
 
-   * &quot;define&quot;:Adobe Campaign不刪除通過連結引用的實體
-   * &quot;正常&quot;:刪除源實例將初始化目標實例上連結的鍵（預設模式），此類完整性將初始化所有外鍵
-   * &quot;own&quot;:刪除源事件會觸發刪除目標事件
-   * &quot;owncopy&quot;:類似於&quot;own&quot;（刪除時）或重複（重複時）
-   * &quot;中性&quot;:什麼也不做
+   * &quot;define&quot;：如果透過連結參照，Adobe Campaign不會刪除實體
+   * &quot;normal&quot;：刪除來源出現位置會初始化目標出現位置上連結的索引鍵（預設模式），此型別的完整性會初始化所有外來索引鍵
+   * &quot;own&quot;：刪除來源發生次數會觸發目標發生次數的刪除
+   * &quot;owncopy&quot;：類似於&quot;own&quot; （若刪除）或重複發生次數（若重複）
+   * &quot;neutral&quot;：不執行任何動作
 
-* **標籤（字串）**:元素標籤。
-* **labelSingular（字串）**:在介面的某些部分中使用的元素的標籤（奇異形式）。
-* **長度（字串）**:最大。 為「字串」類型SQL欄位的值授權的字元數。
-* **可本地化（布爾型）**:如果激活了該屬性，則此屬性將告訴收集工具恢復「@label」屬性的值以進行轉換（內部使用）。
-* **名稱(MNTOKEN)**:與表名稱匹配的元素的內部名稱。 「@name」屬性的值必須短，最好是英文，並符合連結到XML的命名約束。
+* **標籤（字串）**：元素標籤。
+* **labelSingular （字串）**：用於介面某些部分的元素標籤（單一形式）。
+* **長度（字串）**：最大值 針對「字串」型別SQL欄位的值授權的字元數。
+* **localizable （布林值）**：如果已啟動，此屬性會告訴收集工具復原「@label」屬性的值以供翻譯（內部使用）。
+* **名稱(MNTOKEN)**：與表格名稱相符的元素內部名稱。 「@name」屬性的值必須較短（最好為英文），並符合連結至XML的命名限制。
 
-   當模式寫入資料庫時，前置詞由Adobe Campaign自動添加到欄位名。
+   當結構描述寫入資料庫時，Adobe Campaign會自動將首碼新增至欄位名稱。
 
-   * 「i」：「integer」類型的前置詞。
-   * &quot;d&quot;:「double」類型的前置詞。
-   * &quot;s&quot;:字串類型的前置詞。
-   * &quot;ts&quot;:「date」類型的前置詞。
+   * &quot;i&quot;： &#39;integer&#39;型別的前置詞。
+   * &quot;d&quot;： &#39;double&#39;型別的前置詞。
+   * &quot;s&quot;：字元字串型別的前置詞。
+   * &quot;ts&quot;： &#39;date&#39;型別的前置詞。
 
-   要以自主方式定義表的名稱，需要在主架構元素的定義中使用「@sqltable」屬性。
+   若要以自主方式定義表格名稱，您必須在主要結構描述元素的定義中使用「@sqltable」屬性。
 
-* **noDbIndex（布爾）**:用於指定將不為元素編製索引。
-* **有序（布爾值）**:如果屬性被激活(ordered=&quot;true&quot;)，則Adobe Campaign將元素聲明序列保留在XML集合元素中。
-* **pkSequence（字串）**:接收用於計算自動增量鍵的序列的名稱。 僅當在架構的根元素上定義了自動增量鍵時，才能使用此屬性。
-* **pkgStatus（字串）**:在包導出過程中，值將作為此屬性值的函式被考慮：
+* **noDbIndex （布林值）**：可讓您指定不會為元素編制索引。
+* **ordered （布林值）**：如果屬性已啟用(ordered=&quot;true&quot;)，Adobe Campaign會將元素宣告順序保留在XML收集元素中。
+* **pkSequence （字串）**：接收用於計算自動增量索引鍵的序列名稱。 只有在結構描述的根元素上定義了自動增量索引鍵時，才能使用此屬性。
+* **pkgStatus （字串）**：在套件匯出期間，會將值視為此屬性值的函式而納入考量：
 
-   * &quot;always&quot;:元素將始終存在
-   * &quot;從不&quot;:元素永遠不會出現
-   * &quot;default（或nothing）&quot;:除非元素是預設元素，或者它不是內部欄位，並且與其他實例不相容，否則將導出該元素
+   * &quot;always&quot;：元素將永遠存在
+   * &quot;never&quot;：元素絕不會出現
+   * &quot;default (or nothing)&quot;：會匯出元素，除非該元素為預設元素，或不是內部欄位且與其他執行個體不相容
 
-* **ref（字串）**:此屬性定義對由多個架構共用的>element>元素的引用（定義分解）。 定義未複製到當前架構中。
-* **必需（布爾型）**:如果激活了此屬性(@required=&quot;true&quot;)，則該欄位將在介面中突出顯示。 該欄位的標籤將以紅色顯示。
-* **revAdvanced（布爾）**:激活後，此屬性指定相反的連結是「高級」連結。
-* **revCardinality（字串）**:此屬性定義兩個表之間連結的基數。 它用於「連結」類型 `<element>`。
+* **ref （字串）**：此屬性會定義對由數個結構描述共用的>element>元素的參照（定義分解）。 定義不會複製到目前的結構描述中。
+* **必填（布林值）**：如果此屬性已啟用(@required=&quot;true&quot;)，介面中會反白顯示欄位。 欄位的標籤在表單中將變成紅色。
+* **revAdvanced （布林值）**：啟動時，此屬性會指定相反連結為「進階」連結。
+* **revCardinality （字串）**：此屬性會定義兩個表格之間連結的基數。 它用於「連結」型別 `<element>`.
 
-   可能的值為：
+   可能的值包括：
 
-   * &quot;單一&quot;:簡單1-1類型連結
-   * &quot;未綁定&quot;:1-N類型集合連結
+   * &quot;single&quot; ：簡單1-1型別連結
+   * &quot;unbound&quot;： 1-N型別集合連結
 
-   預設情況下，如果在建立連結時未指定屬性，則基數將為1-N。
+   根據預設，如果在建立連結時未指定屬性，基數將為1-N。
 
-* **revDesc（字串）**:此屬性接收連結到相反連結的說明。
-* **revExternalJoin（布爾型）**:激活後，此屬性允許您強制外部連接到相反的連結上。
-* **revIntegrity（字串）**:此屬性定義目標架構上的完整性。 與「@integrity」屬性相同的值被授權。 預設情況下，Adobe Campaign會為此屬性提供「normal」值。
-* **revLabel（字串）**:的子菜單。
-* **revLink（字串）**:相對連結的名稱。 如果值為&quot;_無_&quot;，在目標架構中將不建立相反的連結。
-* **revTarget（字串）**:相反鏈路的目標。
-* **sql（布爾型）**:如果此屬性被激活(@sql=&quot;true&quot;)，則會強制儲存SQL元素，即使該元素具有xml=&quot;true&quot;屬性。
-* **sqlname（字串）**:建立表期間欄位的名稱。 如果未指定「@sqlname」，則預設使用「@name」屬性的值。 將模式寫入表時，會根據欄位類型自動添加前置詞。
-* **sqltable（字串）**:對於架構的主要元素，此屬性將重載預設生成的SQL表的名稱。 如果未指定「@sqltable」，則預設名稱將按如下方式結構：命名空間（首字母大寫），後跟SrcSchema &quot;@name&quot;的值。
-* **tableSpace（字串）**:此屬性用於為表指定新的資料儲存表空間（在根上有效） `<element>`)。
-* **tableSpaceIndex（字串）**:此屬性用於為表指定新的索引儲存表空間（在根上有效） `<element>`)。
-* **目標(MNTOKEN)**:在表之間建立連結時接收目標架構的名稱。 此屬性僅對「link」類型元素處於活動狀態。
-* **模板（字串）**:此屬性定義對 `<element>` 由多個架構共用的元素。 定義將自動複製到當前架構中。
-* **translatedDefault（字串）**:如果找到「@default」屬性，則「@translatedDefault」將允許您重新定義表達式以與在@default中定義的表達式相匹配，由轉換工具收集（內部使用）。
-* **translatedExpr（字串）**:如果找到&quot;@expr&quot;屬性，則&quot;@translatedExpr&quot;屬性允許您重新定義與&quot;@expr&quot;中定義的表達式相匹配的表達式，該表達式將由轉換工具收集（內部使用）。
-* **類型(MNTOKEN)**:定義儲存在元素中的資料類型。
+* **revDesc （字串）**：此屬性會收到連結至相反連結的說明。
+* **revExternalJoin （布林值）**：啟動後，此屬性可讓您在相反連結上強制外部聯結。
+* **revIntegrity （字串）**：此屬性會定義目標結構描述上的完整性。 會授權與「@integrity」屬性相同的值。 依預設，Adobe Campaign會為此屬性提供「一般」值。
+* **revLabel （字串）**：相反連結的標籤。
+* **revLink （字串）**：相反連結的名稱。 如果值為「_無_「，不會在目的地結構描述中建立相反的連結。
+* **revTarget （字串）**：相反連結的目標。
+* **sql （布林值）**：如果此屬性已啟用(@sql=&quot;true&quot;)，即使元素具有xml=&quot;true&quot;屬性，也會強制儲存SQL元素。
+* **sqlname （字串）**：建立表格期間的欄位名稱。 如果未指定「@sqlname」，預設會使用「@name」屬性的值。 將結構描述寫入表格時，系統會根據欄位型別自動新增字首。
+* **sqltable （字串）**：對於結構描述的主要元素，此屬性會多載預設產生的SQL表格名稱。 如果未指定「@sqltable」，預設名稱的結構會如下所示：名稱空間（第一個字母大寫），後面接著SrcSchema的值「@name」。
+* **表格空間（字串）**：此屬性可讓您為表格指定新的資料儲存表格空間（在根目錄有效） `<element>`)。
+* **tableSpaceIndex （字串）**：此屬性可讓您為表格指定新的索引儲存體表格空間（在根目錄有效） `<element>`)。
+* **目標(MNTOKEN)**：在表格之間建立連結時，接收目標綱要的名稱。 此屬性僅對「連結」型別元素有效。
+* **範本（字串）**：此屬性會定義 `<element>` 由多個結構描述共用的元素。 定義會自動複製到目前的結構描述中。
+* **translatedDefault （字串）**：如果找到「@default」屬性，「@translatedDefault」可讓您重新定義運算式，以符合@default中定義的運算式，由翻譯工具收集（內部使用）。
+* **translatedExpr （字串）**：如果找到「@expr」屬性，「@translatedExpr」屬性可讓您重新定義與「@expr」中定義的運算式相符的運算式，而此運算式將由翻譯工具（內部使用）收集。
+* **型別(MNTOKEN)**：定義儲存於元素中的資料型別。
 
-   可用類型清單：
+   可用型別清單：
 
-   * 任意
-   * 賓
+   * 任何
+   * 紙匣
    * blob
-   * 布爾
+   * 布林值
    * 位元組
    * CDATA
-   * 日期
-   * 日期表
-   * 日期
-   * 日期
-   * 雙
-   * 枚舉
-   * 浮
+   * 日期時間
+   * datetimetz
+   * datetimenotz
+   * date
+   * 兩次
+   * 列舉
+   * 浮點數
    * html
    * int64
    * 連結
-   * 長
+   * long
    * 備忘錄
    * MNTOKEN
-   * 百分比
-   * 主鍵
+   * percent
+   * 主要金鑰
    * 短
    * 字串
    * 時間
-   * 時隙
+   * 時間跨度
    * uuid
 
-* **未綁定（布爾型）**:如果已激活屬性(unbond=&quot;true&quot;)，則將連結聲明為1-N基數的集合元素。
-* **userEnum（字串）**:接收「open」枚舉的內部名稱。 枚舉值可由用戶在介面中定義。
-* **xml（布爾值）**:如果激活此選項，則元素中定義的所有值都以XML形式儲存在TEXT類型「mData」欄位中。 這意味著這些欄位將不進行篩選或排序。
-* **xmlChildren（布爾型）**:強制儲存每個孩子( `<element>  or  <attribute>   ) of the   <element>    element in an XML document.   </element>  </attribute> </element>`
+* **未繫結（布林值）**：如果已啟動屬性(unbound=&quot;true&quot;)，則會將連結宣告為1-N基數的收集元素。
+* **userEnum （字串）**：接收「open」分項清單的內部名稱。 列舉值可由使用者在介面中定義。
+* **xml （布林值）**：如果已啟用此選項，則元素中定義的所有值都會儲存在TEXT型別「mData」欄位的XML中。 這表示這些欄位將不會進行篩選或排序。
+* **xmlChildren （布林值）**：強制儲存每個子項( `<element>  or  <attribute>   ) of the   <element>    element in an XML document.   </element>  </attribute> </element>`

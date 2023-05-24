@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 建立傳遞範本
-description: 透過專屬的使用案例了解如何執行A/B測試
+description: 瞭解如何透過專屬的使用案例執行A/B測試
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
@@ -17,14 +17,14 @@ ht-degree: 20%
 
 
 
-我們現在想要建立兩個傳遞範本。 每個範本都會在 **[!UICONTROL Email delivery]** 連結至的活動 **[!UICONTROL Split]** 活動。 如需詳細資訊，請參閱[本章節](about-templates.md)。
+我們現在想要建立兩個傳遞範本。 每個範本都將在下列欄位中參照： **[!UICONTROL Email delivery]** 連結至的活動 **[!UICONTROL Split]** 活動。 如需詳細資訊，請參閱[本章節](about-templates.md)。
 
-1. 瀏覽至 **[!UICONTROL Resources > Delivery template]** 檔案夾。
+1. 瀏覽至 **[!UICONTROL Resources > Delivery template]** 資料夾。
 1. 複製 **[!UICONTROL Email]** 傳遞範本。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 
-1. 建立要用於傳送A的內容。
+1. 建立用於傳送A的內容。
 
    ![](assets/use_case_abtesting_deliverymodel_002.png)
 

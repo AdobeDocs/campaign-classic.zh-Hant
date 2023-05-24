@@ -18,18 +18,18 @@ ht-degree: 13%
 
 
 
-追蹤記錄檔無法轉送的原因有多種。 建議您檢查下列資訊：
+追蹤記錄檔未轉送可能有多種原因。 建議您檢視下列資訊：
 
-* **是否**&#x200B;追蹤&#x200B;**工作流程有錯誤？**
+* **此**&#x200B;追蹤&#x200B;**工作流程有錯誤？**
 
    請參閱 [監控技術工作流程](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
-* **是模組** trackinglogd **在伺服器上執行？**
+* **為模組** trackinglogd **是否正在伺服器上執行？**
 
    請參閱 [記錄檔](../../production/using/log-files.md).
 
-* **是否已進行變更？**
+* **有變更嗎？**
 
-   它們可以使用追蹤別名觸發與伺服器的連線遺失。
+   使用追蹤別名時，它們可能會觸發與伺服器的連線中斷。

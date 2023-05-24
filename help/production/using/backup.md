@@ -17,34 +17,34 @@ ht-degree: 2%
 
 # 備份{#backup}
 
-備份是避免在電腦上出現問題（無論是與物理或系統相關）時丟失資料的關鍵。
+備份是必要的，以避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料。
 
-資料儲存在兩個不同的位置：
+資料會儲存在兩個不同的位置：
 
-* 物理檔案被儲存在Adobe Campaign目錄，
-* 其他資料儲存在資料庫中。
+* 實體檔案儲存在Adobe Campaign目錄中，
+* 其他資料會儲存在資料庫中。
 
-大部分資料都在資料庫中。 這表示要備份的資訊的99%。
+大部分的資料都在資料庫中。 這代表要備份的99%資訊。
 
-## 物理檔案 {#physical-files}
+## 實體檔案 {#physical-files}
 
-檔案分為幾類：
+檔案分為幾個類別：
 
-* 配置檔案，儲存在 **nl6/conf**，使您能夠快速重新配置Adobe Campaign。
+* 組態檔，儲存在 **nl6/conf**，讓您快速重新設定Adobe Campaign。
 
-* 重定向檔案，儲存在  **nl6/var`<instance-name>`/redir**，位於跟蹤（通常稱為「前面」）伺服器上，並包括以前的所有活動重定向。 它們仍被以前的活動使用。
+* 重新導向檔案，儲存在  **nl6/var/`<instance-name>`/redir**，位於追蹤（通常稱為「前端」）伺服器上，並包含所有先前的促銷活動重新導向。 舊版行銷活動仍會使用這些量度。
 
-* 日誌檔案，儲存在 **nl6/var`<instance-name>`/日誌**，可用於跟蹤問題。
+* 記錄檔，儲存在 **nl6/var/`<instance-name>`/log**，可用來追蹤問題。
 
-因此，要備份的目錄如下：
+因此，要備份的目錄為：
 
 * nl6/conf
 
-* nl6/var`<instance-name>`/redir（針對每個實例）
+* nl6/var/`<instance-name>`/redir （適用於每個執行個體）
 
-* nl6/var`<instance-name>`/log（可選）
+* nl6/var/`<instance-name>`/log （選擇性）
 
-* nl6/var`<instance-name>`/relay（可選）
+* nl6/var/`<instance-name>`/relay （選擇性）
 
 
 ## 資料庫 {#database}
@@ -54,6 +54,6 @@ ht-degree: 2%
 >必須備份資料庫。
 
 
-資料庫包含Adobe Campaign富客戶端控制台中顯示的所有資訊以及所有業務線資料。
+資料庫包含Adobe Campaign豐富型使用者端主控台中顯示的所有資訊，以及所有業務資料。
 
-您的托管公司，尤其是其資料庫管理員，負責此操作。
+您的託管公司（尤其是其資料庫管理員）會負責這項作業。

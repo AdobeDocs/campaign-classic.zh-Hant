@@ -18,31 +18,31 @@ ht-degree: 3%
 
 
 
-您可以設定資料緩衝區，借由取消同步選件主張計算來提高入站互動效能。 此設定將在執行個體的設定檔案(config-Instance.xml)中執行。
+您可以設定資料緩衝區，將優惠方案主張計算取消同步，以提高傳入互動效能。 此設定將在執行個體自己的設定檔案(config-Instance.xml)中執行。
 
-在Adobe Campaign, **資料緩衝區** 已導入互動模組。 這可讓您 **提高效能** 的傳入互動，取消同步股票和優惠方案計算。
+在Adobe Campaign， **資料緩衝區** 已在互動模組中引入。 這可讓您 **提升效能** 取消同步化庫存和優惠方案計算，以達成傳入互動的目的。
 
-它只與入站互動有關，無論是透過呼叫（包含或不含呼叫資料），還是透過狀態更新(updateStatus)。
+它只與傳入互動有關，不論是透過呼叫（有或沒有呼叫資料）或狀態更新(updateStatus)進行。
 
-為了在寫入與收件者相關的建議時避免佇列，新流程會產生 **資料緩衝區** 允許提案 **非同步**. 定期讀取並清空此資料緩衝區。 預設期間約為一秒。因此，建議書編寫被分組。
+若要在撰寫與收件者相關的建議時避免佇列，新程式會產生 **資料緩衝區** 可讓提案成為 **非同步寫入**. 系統會定期讀取及清空此資料緩衝區。 預設時段在約一秒的空間內。因此，建議撰寫會分組。
 
 >[!NOTE]
 >
->如果您使用與分佈式架構的交互，此參數是必不可少的。
+>如果您使用具有分散式架構的互動，此引數是必要的。
 
-資料緩衝區 **配置** 可在執行個體的設定檔案(config-Instance.xml)中完成。
+資料緩衝區 **設定** 可以在執行個體的設定檔案(config-Instance.xml)中完成。
 
 >[!CAUTION]
 >
->某些設定只能由Adobe執行，以供Adobe托管的部署使用。 例如，要訪問伺服器和實例配置檔案。 若要進一步了解不同部署，請參閱 [托管模型](../../installation/using/hosting-models.md) 區段或 [本頁](../../installation/using/capability-matrix.md).
+>部分設定只能由Adobe託管部署的Adobe執行。 例如，存取伺服器和執行個體組態檔。 若要進一步瞭解不同的部署，請參閱 [託管模型](../../installation/using/hosting-models.md) 區段或 [此頁面](../../installation/using/capability-matrix.md).
 >
->對配置所做的任何更改都需要重新啟動Web伺服器(Apache:IIS)和Adobe Campaign進程。\
->配置資料緩衝區後，請確保有適當的硬體配置可用。 （記憶體量）。
+>對設定所做的任何變更都需要重新啟動網頁伺服器(Apache：IIS)和Adobe Campaign程式。\
+>設定資料緩衝區之後，請確定有可調整的硬體設定。 （存在的記憶體數量）。
 
 
-配置資料緩衝區後，請確保有適當的硬體配置可用。 （記憶體量）。
+設定資料緩衝區之後，請確定有可調整的硬體設定。 （存在的記憶體數量）。
 
-寫入守護程式(進程名為：)如下：
+寫入精靈（名為：interaction）的定義如下：
 
 ```
 <interactiond args="" autoStart="false" callDataSize="0" initScript="" maxProcessMemoryAlertMb="1800"
@@ -50,9 +50,9 @@ maxProcessMemoryWarningMb="1600" maxSharedEntries="25000" nextOffersSize="0"
 processRestartTime="06:00:00" runLevel="10" targetKeySize="16"/>
 ```
 
-如果您使用入站互動，@autostart屬性必須為「true」，才能在Adobe Campaign伺服器啟動時自動啟動程式。
+如果您使用Inbound Interaction，@autostart屬性必須是「true」，Adobe Campaign伺服器啟動時才會自動啟動程式。
 
-參數詳細資訊：
+引數詳細資料：
 
 ```
  args: Start-up parameters 

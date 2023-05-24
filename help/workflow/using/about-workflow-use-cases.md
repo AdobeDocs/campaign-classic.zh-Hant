@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 關於工作流程使用實例
-description: 進一步了解您可使用Campaign Classic工作流程執行的使用案例
+description: 進一步瞭解您可以使用Campaign Classic工作流程執行的使用案例
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
@@ -16,9 +16,9 @@ ht-degree: 66%
 
 
 
-在本節中，您會利用Campaign工作流程功能找到各種使用案例。
+在本節中，您將找到運用Campaign工作流程功能的各種使用案例。
 
-它們可協助您探索可使用工作流程的不同內容，並回應您的需求。
+它們可幫助您探索可以使用工作流程的不同內容，並回應您的需求。
 
 ## 傳遞 {#deliveries}
 
@@ -49,8 +49,8 @@ ht-degree: 66%
 * [建立摘要清單](creating-a-summary-list.md)
 * [豐富資料](enriching-data.md)
 * [使用彙總](using-aggregates.md)
-* [匯入使用「控制面板」產生的金鑰加密的資料](../../platform/using/unzip-decrypt.md)
-* [使用安裝在控制面板上的金鑰加密和匯出資料](how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [匯入使用控制面板產生的金鑰加密的資料](../../platform/using/unzip-decrypt.md)
+* [使用安裝於控制面板的金鑰加密及匯出資料](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查詢更新每季清單](quarterly-list-update.md)
 * [使用重複資料刪除活動的合併功能](deduplication-merge.md)
 * [設定循環匯入工作流程](recurring-import-workflow.md)

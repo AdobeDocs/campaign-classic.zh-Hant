@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 調整您的設定
-description: 了解如何在移轉至Campaign v7之前和之後調整您的配置
+description: 瞭解在移轉至Campaign v7之前和之後如何調整設定
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
@@ -20,20 +20,20 @@ ht-degree: 2%
 
 
 
-Adobe Campaign v7中的某些重大變更需要特定設定。 移轉之前或之後，可能需要進行這些設定。
+Adobe Campaign v7中的某些主要變更需要特定設定。 移轉前或移轉後可能需要這些設定。
 
-在移轉期間， **NmsRecipient** 表格是從結構定義中重建。 在Adobe Campaign之外對此表的SQL結構所做的任何更改都將丟失。
+在移轉期間， **NmsRecipient** 會從結構描述定義重建表格。 在Adobe Campaign外部對此表格的SQL結構所做的任何變更都將遺失。
 
 要檢查的元素範例：
 
-* 如果您已將欄（或索引）新增至 **NmsRecipient** 表格，但您尚未在架構中詳細說明，則系統不會儲存此表格。
-* 此 **表空間** 屬性預設會回傳其值，亦即部署精靈中定義的值。
-* 如果您已將參考檢視新增至 **NmsRecipient** 表格，您必須先將其刪除，才能移轉。
+* 如果您已將欄（或索引）新增至 **NmsRecipient** 但您尚未在結構描述中詳細說明該表格，則不會儲存此表格。
+* 此 **表格空間** 屬性會依預設取回其值，換言之，取回部署精靈中定義的值。
+* 如果您已將參照檢視新增至 **NmsRecipient** 表格，您必須在移轉前刪除它。
 
 
 ## 移轉前 {#before-the-migration}
 
-移轉至Adobe Campaign v7時，必須設定下列元素。 在開始 **postugrade**.
+移轉至Adobe Campaign v7時，必須設定下列元素。 在開始 **升級後**.
 
 <!--
 
@@ -59,7 +59,7 @@ Adobe Campaign v7中的某些重大變更需要特定設定。 移轉之前或�
 
 * 密碼
 
-   您必須設定 **管理** 和 **內部** 密碼。 [了解更多](../../migration/using/before-starting-migration.md#user-passwords)
+   您必須設定 **管理員** 和 **內部** 密碼。 [了解更多](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -78,37 +78,37 @@ Adobe Campaign v7中的某些重大變更需要特定設定。 移轉之前或�
 
 ## 移轉後 {#after-the-migration}
 
-執行後 **postugrade**，檢查並設定下列元素：
+執行後 **升級後**，檢查並設定下列元素：
 
 * 鏡像頁面
 
-   鏡像頁面個人化區塊已隨v6.x變更。這個新版本可改善存取這些頁面時的安全性。
+   映象頁面個人化區塊已隨v6.x變更。此新版本可改善存取這些頁面時的安全性。
 
-   如果您在訊息中使用v5個人化區塊，鏡像頁面顯示將會失敗。 Adobe強烈建議在訊息中插入鏡像頁面時，使用新的個人化區塊。
+   如果您在訊息中使用v5個人化區塊，映象頁面顯示將會失敗。 Adobe強烈建議您在訊息中插入映象頁面時，使用新的個人化區塊。
 
-   不過，作為暫時的因應措施（且鏡像頁面仍為即時頁面），您可以回到舊的個人化區塊，透過變更選項來避免此問題 **[!UICONTROL XtkAcceptOldPasswords]** 並將其設定為 **[!UICONTROL 1]**. 這不會影響新v6.x個人化區塊的使用。
+   不過，作為臨時因應措施（且映象頁面仍處於使用中狀態），您可以返回舊的個人化區塊，透過變更選項來避免此問題 **[!UICONTROL XtkAcceptOldPasswords]** 並將其設定為 **[!UICONTROL 1]**. 這不會影響新的v6.x個人化區塊的使用。
 
 * 語法
 
-   如果您遇到任何與語法相關的錯誤，在升級後期間，您必須暫時啟用 **allowSQLInjents** 選項 **serverConf.xml** 檔案，因為這能讓您有時間重寫程式碼。 調整程式碼後，請務必重新啟用安全性。
+   如果您在升級後期間遇到任何與語法相關的錯誤，您必須暫時啟用 **allowSQLInjection** 中的選項 **serverConf.xml** 檔案，因為這樣您就有時間重寫程式碼。 調整程式碼後，請務必重新啟用安全性。
 
 * 衝突
 
-   移轉是透過升級後執行，而報表、表單或網頁應用程式中可能會出現衝突。 這些衝突可從主控台解決。
+   移轉會透過升級後執行，且衝突可能會出現在報表、表單或網頁應用程式中。 這些衝突可以從主控台解決。
 
 * Tomcat
 
-   如果您自訂了安裝資料夾，請務必確認移轉後資料夾已正確更新。
+   如果您自訂了安裝資料夾，請務必確認資料夾在移轉後已正確更新。
 
 * 報告
 
-   現成可用的所有報表目前都使用v6.x轉譯引擎。 若您已將JavaScript程式碼新增至報表中，則某些元素可能會受到影響。
+   目前所有現成可用的報表都使用v6.x轉譯引擎。 如果您在報表中新增JavaScript程式碼，某些元素可能會受到影響。
 
-* Web應用程式
+* 網頁應用程式
 
-   升級後，如果您在連接到已識別的Web應用程式時遇到任何問題，則必須激活 **allowUserPassword** 和 **sessionTokenOnly** 選項 **serverConf.xml** 檔案。 為避免出現任何安全問題，在問題解決後，必須重新激活這兩個選項。
+   升級後，如果您在連線至已識別的Web應用程式時遇到任何問題，您必須啟用 **allowUserPassword** 和 **sessionTokenOnly** 中的選項 **serverConf.xml** 檔案。 為避免任何安全性問題，在問題解決後必須重新啟用這兩個選項。
 
-   您必鬚根據Web應用程式的類型及其配置執行其他操作，以確保它們正常工作。
+   根據Web應用程式的型別及其設定，您必須執行其他操作以確保它們正常運作。
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +137,7 @@ Adobe Campaign v7中的某些重大變更需要特定設定。 移轉之前或�
 
 * 互動
 
-   如果您使用 **互動**，您必須在移轉後調整任何參數。
+   如果您使用 **互動**，您必須在移轉後調整任何引數。
 
 <!--
 

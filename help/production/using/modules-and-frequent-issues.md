@@ -19,7 +19,7 @@ ht-degree: 6%
 
 
 
-下面列出了受頻繁問題影響的模組：
+受常見問題影響的模組清單如下：
 
 <table> 
  <thead> 
@@ -31,59 +31,59 @@ ht-degree: 6%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 出口 </td> 
-   <td> 執行導出進程<br /> </td> 
-   <td> 計畫此導出的操作員需要重新啟動它。 增量或完全重新啟動。<br /> </td> 
+   <td> 匯出 </td> 
+   <td> 匯出程式的執行<br /> </td> 
+   <td> 排程此匯出的操作員需要重新啟動它。 差異或完整重新啟動。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 導入 </td> 
-   <td> 執行導入進程<br /> </td> 
-   <td> 計畫此導出的操作員需要重新啟動它。 檢查資料庫中是否有重複項。<br /> </td> 
+   <td> 匯入 </td> 
+   <td> 匯入程式的執行<br /> </td> 
+   <td> 排程此匯出的操作員需要重新啟動它。 檢查資料庫中是否有重複專案。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 郵件 </td> 
-   <td> 彈回郵箱的閱讀<br /> </td> 
-   <td> 如果已轉發郵件，請檢查此模組。<br /> </td> 
+   <td> inMail </td> 
+   <td> 讀取退回信箱<br /> </td> 
+   <td> 如果退回的郵件不再轉寄，則檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
    <td> mta </td> 
-   <td> 發送電子郵件<br /> </td> 
-   <td> 如果郵件不再發送，請檢查此模組。<br /> </td> 
+   <td> 傳送電子郵件<br /> </td> 
+   <td> 如果不再傳送郵件，則檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 統計 </td> 
-   <td> 維護MTA連接統計<br /> </td> 
-   <td> 如果郵件不再發送，請檢查此模組。<br /> </td> 
+   <td> stat </td> 
+   <td> 維護MTA連線統計資料<br /> </td> 
+   <td> 如果不再傳送郵件，則檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
-   <td> syslog </td> 
-   <td> 日誌寫入<br /> </td> 
-   <td> 如果日誌檔案中缺少某些日誌，請檢查以確保模組使用埠6666。 請參閱 <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">開啟埠清單</a>。<br /> </td> 
+   <td> syslogd </td> 
+   <td> 記錄寫入<br /> </td> 
+   <td> 如果記錄檔中遺失某些記錄，請檢查以確定模組使用的是連線埠6666。 請參閱 <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">開啟的連線埠清單</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> 追蹤 </td> 
-   <td> 整合和檢索跟蹤日誌<br /> </td> 
-   <td> 如果跟蹤日誌不再轉發，請檢查此模組。<br /> </td> 
+   <td> 合併和擷取追蹤記錄<br /> </td> 
+   <td> 如果追蹤記錄不再轉送，則檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 跟蹤日誌 </td> 
-   <td> 跟蹤日誌寫入和清除伺服器<br /> </td> 
-   <td> 如果跟蹤日誌不再轉發並且伺服器上的檔案中沒有日誌跟蹤，請檢查此模組。 請參閱 <a href="../../production/using/tracking-logs-issues.md" target="_blank">跟蹤日誌問題</a>。<br /> </td> 
+   <td> trackinglogd </td> 
+   <td> 追蹤記錄檔寫入和清除伺服器<br /> </td> 
+   <td> 如果追蹤記錄不再轉送且伺服器上的檔案中沒有記錄追蹤，則檢查此模組。 請參閱 <a href="../../production/using/tracking-logs-issues.md" target="_blank">追蹤記錄問題</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 監視 </td> 
-   <td> 啟動和監視實例<br /> </td> 
-   <td> 如果沒有進程啟動，請檢查此模組。<br /> </td> 
+   <td> 看門狗 </td> 
+   <td> 啟動和監視執行個體<br /> </td> 
+   <td> 如果沒有處理程式啟動，則檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 網 </td> 
+   <td> 網頁 </td> 
    <td> 應用程式伺服器（HTTP和SOAP）<br /> </td> 
-   <td> 如果控制台和Web連接不工作並觸發 <strong>xtk：會話</strong> 類型錯誤<br /> </td> 
+   <td> 如果主控台和Web連線無法運作並觸發 <strong>xtk：session</strong> 型別錯誤<br /> </td> 
   </tr> 
   <tr> 
-   <td> wf伺服器 </td> 
-   <td> 控制工作流實例執行。<br /> </td> 
-   <td> 如果遇到任何問題，請重新啟動此模組。 如有必要，請應用此過程以提高中詳細介紹的日誌的精確度 <a href="../../production/using/log-precision.md" target="_blank">對數精度</a> 的子菜單。<br /> </td> 
+   <td> wfserver </td> 
+   <td> 控制工作流程執行個體的執行。<br /> </td> 
+   <td> 如果您遇到任何問題，請重新啟動此模組。 如有需要，請套用程式以提高記錄檔的精確度，詳情請見 <a href="../../production/using/log-precision.md" target="_blank">記錄精確度</a> 區段。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

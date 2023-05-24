@@ -18,14 +18,14 @@ ht-degree: 7%
 
 
 
-本章詳細說明Interaction中各種可能的高級參數。
+本章詳細說明了Interaction中各種可能的進階引數。
 
 >[!IMPORTANT]
 >
 >以下章節適用於 **技術管理員**.
 
 * 您可以使用其他內容資料。 請參閱 [其他資料](../../interaction/using/additional-data.md) 區段。
-* 您可以透過傳入通道，讓建議選件的應用程式內容更豐富。 若要這麼做， **nms:interaction** 必須擴展交互架構。 請參閱 [擴充功能範例](../../interaction/using/extension-example.md) 一節。
-* 建立測試環境在 [建立測試環境](../../interaction/using/creating-a-test-environment.md) 區段。
-* 您可以使用鈎點來修改標準引擎行為。 有關詳細資訊，請參閱 [鈎點](../../interaction/using/hooks.md) 節
-* 最後，在 [分佈式架構](../../interaction/using/distributed-architectures.md) 區段。
+* 您可以透過傳入的管道來豐富建議優惠的應用程式內容。 若要這麼做， **nms：interaction** 互動結構描述必須延伸。 請參閱 [擴充功能範例](../../interaction/using/extension-example.md) 區段來取得完整程式。
+* 建立測試環境的詳情請參閱 [建立測試環境](../../interaction/using/creating-a-test-environment.md) 區段。
+* 您可以使用鉤點來修改標準引擎行為。 如需詳細資訊，請參閱 [鉤點](../../interaction/using/hooks.md) 區段
+* 最後，將互動與分散式架構搭配使用，詳情 [分散式架構](../../interaction/using/distributed-architectures.md) 區段。

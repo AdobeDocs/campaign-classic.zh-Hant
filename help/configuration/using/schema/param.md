@@ -1,90 +1,90 @@
 ---
 product: campaign
-title: 架構元素和屬性 — 參數元素
-description: param element（參數元素）
+title: 結構描述元素和屬性 — param元素
+description: 引數元素
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# param element（參數元素） {#param--element}
+# 引數元素 {#param--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## 內容模型 {#content-model-12}
 
-參數：==幫助
+param：==help
 
 ## 屬性 {#attributes-12}
 
-* @_operation（字串）
-* @desc（字串）
-* @enum（字串）
-* @inout（字串）
-* @label（字串）
-* @localizable（字串）
-* @name(MNTOKEN)
-* @namespace(MNTOKEN)
-* @type（字串）
+* @_operation （字串）
+* @desc （字串）
+* @enum （字串）
+* @inout （字串）
+* @label （字串）
+* @localizable （字串）
+* @name (MNTOKEN)
+* @namespace (MNTOKEN)
+* @type （字串）
 
-## 父母 {#parents-12}
+## 父項 {#parents-12}
 
 `<parameters>`
 
-## 兒童 {#children-12}
+## 子系 {#children-12}
 
 `<help>`
 
 ## 說明 {#description-12}
 
-此元素用於定義用於調用SOAP方法的參數。
+此元素可讓您定義用於呼叫SOAP方法的引數。
 
 ## 屬性說明 {#attribute-description-12}
 
-* **desc（字串）**:描述 `<param>` 的子菜單。
-* **inout（字串）**:此屬性定義參數是否位於SOAP調用的輸入(in)或輸出(out)。 如果未指定此屬性，則預設參數為輸入(「@inout=in」)。
-* **標籤（字串）**: `<param>` 標籤
-* **可本地化（字串）**:如果激活了該屬性，則此屬性將告訴收集工具恢復「@label」屬性的值以進行轉換（內部使用）。
-* **名稱(MNTOKEN)**:內部名稱 `<param>`
-* **類型（字串）**:此屬性定義 `<param>` 元素
+* **desc （字串）**：相關說明 `<param>` 元素。
+* **inout （字串）**：此屬性會定義引數是否在SOAP呼叫的輸入(in)或輸出(out)。 如果未指定此屬性，預設引數為輸入(&quot;@inout=in&quot;)。
+* **標籤（字串）**： `<param>` 標籤
+* **可本地化（字串）**：如果已啟動，此屬性會告訴收集工具復原「@label」屬性的值以供翻譯（內部使用）。
+* **名稱(MNTOKEN)**：的內部名稱 `<param>`
+* **型別（字串）**：此屬性會定義 `<param>` 元素
 
-   可用類型清單：
+   可用型別清單：
 
-   * 任意
-   * 賓
+   * 任何
+   * 紙匣
    * blob
-   * 布爾
+   * 布林值
    * 位元組
    * CDATA
-   * 日期
-   * 日期表
-   * 日期
-   * 日期
-   * 域文檔
+   * 日期時間
+   * datetimetz
+   * datetimenotz
+   * date
+   * DOMDocument
    * DOMElement
-   * 雙
-   * 枚舉
-   * 浮
+   * 兩次
+   * 列舉
+   * 浮點數
    * html
    * int64
    * 連結
-   * 長
+   * long
    * 備忘錄
    * MNTOKEN
-   * 百分比
-   * 主鍵
+   * percent
+   * 主要金鑰
    * 短
    * 字串
    * 時間
-   * 時隙
+   * 時間跨度
    * uuid
 
 ## 範例 {#examples-9}
 
-字串類型的「serviceName」入站設定的定義：
+字元字串型別之「serviceName」輸入設定的定義：
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"

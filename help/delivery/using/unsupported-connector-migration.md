@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 不支援的SMS連接器移轉
-description: 將不支援的SMS連接器移轉至Extended Generic SMPP連接器
+title: 不支援的SMS聯結器移轉
+description: 將不支援的SMS聯結器移轉至擴充通用SMPP聯結器
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
@@ -12,19 +12,19 @@ ht-degree: 3%
 
 ---
 
-# 將不支援的SMS連接器移轉至Extended Generic SMPP連接器{#unsupported-connector-migration}
+# 將不支援的SMS聯結器移轉至擴充通用SMPP聯結器{#unsupported-connector-migration}
 
 
 
-舊版連接器自20.2版起將不再使用。 本文檔將幫助您將仍在舊系統上運行的連接器遷移到推薦的SMPP連接器。
+自版本20.2起，已棄用舊聯結器。 本檔案可協助您將仍在舊系統上執行的聯結器遷移至建議的SMPP聯結器。
 
 >[!CAUTION]
 >
->此移轉並非強制性，但Adobe建議您這麼做，這可確保您在最新支援的軟體版本上執行。
+>此移轉並非強制性，但由Adobe建議，並將確保您是在最新支援的軟體版本上執行。
 
-## 關於SMS連接器 {#about-sms-connectors}
+## 關於SMS聯結器 {#about-sms-connectors}
 
-下列連接器自20.2版起將不再使用：
+下列聯結器自版本20.2起已過時：
 
 * **[!UICONTROL Generic SMPP]** （支援二進位模式的SMPP 3.4版）
 * **[!UICONTROL Sybase365]** (SAP SMS 365)
@@ -33,29 +33,29 @@ ht-degree: 3%
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-已棄用的功能仍可供使用且受支援，但將不會進一步增強。 建議您使用 **[!UICONTROL Extended generic SMPP]** 連接器。
+已棄用的功能仍可用並受支援，但將不會進一步增強。 我們建議使用 **[!UICONTROL Extended generic SMPP]** 聯結器。
 
-如需已棄用和已移除功能的詳細資訊，請參閱 [頁面](../../rn/using/deprecated-features.md).
+有關已棄用和已移除功能的詳細資訊，請參閱此 [頁面](../../rn/using/deprecated-features.md).
 
-舊版SMS連接器使用會過載Web程式的Java SMS連接器。 移轉至新 **[!UICONTROL Extended Generic SMPP]** 連接器會將此負載移至可支援此負載的MTA。
+舊的SMS聯結器使用的是Java SMS聯結器，它會多載Web程式。 移轉至新 **[!UICONTROL Extended Generic SMPP]** 聯結器會將此載入移至可支援的MTA。
 
-## 正移轉至Extended Generic SMPP連接器 {#migrating-extended-generic-smpp}
+## 遷移到擴展的通用SMPP聯結器 {#migrating-extended-generic-smpp}
 
 >[!CAUTION]
 >
->即使您可以轉換參數，請設定 **[!UICONTROL Extended Generic SMPP]** 連接器需要您與提供者溝通，提供填入其餘參數所需的資訊。 如需關於此項目的詳細資訊，請參閱此[頁面](sms-protocol.md)。
+>即使您可以調換引數，請設定 **[!UICONTROL Extended Generic SMPP]** 聯結器需要您與提供者交談，提供您填寫其餘引數所需的資訊。 如需關於此項目的詳細資訊，請參閱此[頁面](sms-protocol.md)。
 
-首先，您需要建立新 **[!UICONTROL Extended Generic SMPP]** 外部帳戶，然後您可能可以轉換一些參數。 您可以在此找到詳細步驟 [頁面](sms-set-up.md#creating-an-smpp-external-account).
+首先，您需要建立新的 **[!UICONTROL Extended Generic SMPP]** 外部帳戶，然後您或許就能調換某些引數。 您可以在這裡找到詳細步驟 [頁面](sms-set-up.md#creating-an-smpp-external-account).
 
-您現在需要從 **[!UICONTROL Mobile]** 標籤 **[!UICONTROL Extended Generic SMPP]** 外部帳戶（視您先前的連接器而定）。
+您現在需要填寫來自 **[!UICONTROL Mobile]** 新建立的「 」標籤 **[!UICONTROL Extended Generic SMPP]** 外部帳戶，具體取決於您先前的聯結器。
 
-### 從通用連接器 {#from-generic-connector}
+### 從Generic聯結器 {#from-generic-connector}
 
-選擇 **[!UICONTROL Generic]** 連接器中，您應有可因應各種情況的自訂JavaScript連接器。
+選擇 **[!UICONTROL Generic]** 聯結器時，您應該要有可適應各種情況的自訂JavaScript聯結器。
 
-如果您知道此連接器已使用SMPP通訊協定，則可移轉至 **[!UICONTROL Extended Generic SMPP]** 連接器。 如果不支援，請洽詢您的提供者（如果他們支援SMPP通訊協定），並在顧問的協助下設定新連接器。
+如果您知道此聯結器已在使用SMPP通訊協定，則可以移轉至 **[!UICONTROL Extended Generic SMPP]** 聯結器。 如果沒有，請洽詢您的提供者是否支援SMPP通訊協定，並在顧問的協助下設定新的聯結器。
 
-從 **[!UICONTROL Generic]** 連接器，可以轉換至新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
+從您的 **[!UICONTROL Generic]** connector，您可以轉置至您新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
 
 ![](assets/smpp_generic.png)
 
@@ -66,9 +66,9 @@ ht-degree: 3%
 * **[!UICONTROL Server]**
 * **[!UICONTROL Port]**
 
-### 從通用SMPP連接器 {#from-generic-smpp-connector}
+### 來自通用SMPP聯結器 {#from-generic-smpp-connector}
 
-從 **[!UICONTROL Generic SMPP]** 連接器，可以轉換至新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
+從您的 **[!UICONTROL Generic SMPP]** connector，您可以轉置至您新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
 
 ![](assets/smpp_generic_2.png)
 
@@ -97,9 +97,9 @@ ht-degree: 3%
 * **[!UICONTROL Coding when sending]** 對應至 **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** 對應至 **[!UICONTROL ID Format in the SR]**
 
-### 從Sybase365連接器 {#from-sybase}
+### 從Sybase365聯結器 {#from-sybase}
 
-從 **[!UICONTROL Sybase365]** 連接器，可以轉換至新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
+從您的 **[!UICONTROL Sybase365]** connector，您可以轉置至您新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
 
 ![](assets/smpp_3.png)
 
@@ -111,9 +111,9 @@ ht-degree: 3%
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-### 從CLX連接器 {#from-clx}
+### 從CLX聯結器 {#from-clx}
 
-從 **[!UICONTROL CLX]** 連接器，可以轉換至新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
+從您的 **[!UICONTROL CLX]** connector，您可以轉置至您新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
 
 ![](assets/smpp_4.png)
 
@@ -134,9 +134,9 @@ ht-degree: 3%
 * **[!UICONTROL Coding when sending]** 對應至 **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** 對應至 **[!UICONTROL ID Format in the SR]**
 
-### 從Tele2連接器 {#from-tele2}
+### 從Tele2聯結器 {#from-tele2}
 
-從 **[!UICONTROL Tele2]** 連接器，可以轉換至新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
+從您的 **[!UICONTROL Tele2]** connector，您可以轉置至您新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
 
 ![](assets/smpp_6.png)
 
@@ -159,9 +159,9 @@ ht-degree: 3%
 
 * **[!UICONTROL Outbound SMS coding]**
 
-### 從O2連接器 {#from-O2}
+### 從O2聯結器 {#from-O2}
 
-從 **[!UICONTROL O2]** 連接器，可以轉換至新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
+從您的 **[!UICONTROL O2]** connector，您可以轉置至您新建立的 **[!UICONTROL Extended SMPP]** 帳戶：
 
 ![](assets/smpp_5.png)
 

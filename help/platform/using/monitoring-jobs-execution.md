@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 監控工作執行
-description: 了解如何監視匯入和匯出作業的執行
+description: 瞭解如何監視匯入和匯出作業執行
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
@@ -19,14 +19,14 @@ ht-degree: 55%
 
 
 
-您可以直接從匯入/匯出作業清單追蹤匯入和匯出作業的執行。
+您可以直接從匯入/匯出工作清單追蹤匯入和匯出工作的執行。
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* 此 **[!UICONTROL Journal]** 索引標籤可讓您查看有關執行的記錄訊息。
-* 此 **[!UICONTROL Rejects]** 頁簽包含拒絕的記錄。 請參閱[本節](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* 此 **[!UICONTROL Journal]** 索引標籤可讓您檢視有關執行的記錄訊息。
+* 此 **[!UICONTROL Rejects]** 索引標籤包含拒絕的記錄。 請參閱[本節](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
-在 **[!UICONTROL General]** 標籤 **[!UICONTROL Status]** 欄位指示作業的當前狀態。
+在 **[!UICONTROL General]** 標籤， **[!UICONTROL Status]** 欄位表示工作的目前狀態。
 
 每個狀態都由一個特殊的圖示和標籤表示。狀態及其圖示如下：
 
@@ -42,7 +42,7 @@ ht-degree: 55%
 
 * **取消**
 
-   按一下 **[!UICONTROL Cancel]** 按鈕：正在執行的作業被取消。
+   按一下 **[!UICONTROL Cancel]** 按鈕：進行中的工作已取消。
 
 * **取消正在進行中**
 
@@ -50,11 +50,11 @@ ht-degree: 55%
 
 * **暫停進行中**
 
-   按一下 **[!UICONTROL Pause]**:作業正在暫停。
+   按一下 **[!UICONTROL Pause]**：工作正在暫停。
 
 * **已暫停**
 
-   按一下 **[!UICONTROL Pause]**:作業已暫停。 您可以按一下「 」以重新啟動 **[!UICONTROL Start]**.
+   按一下 **[!UICONTROL Pause]**：工作已暫停。 按一下「 」即可重新啟動 **[!UICONTROL Start]**.
 
 * **已完成**
 

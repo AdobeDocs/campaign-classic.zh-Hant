@@ -19,16 +19,16 @@ ht-degree: 11%
 
 
 
-A **堆棧跟蹤** 表示包含在 **核** 檔案。 發生電腦錯誤時生成此檔案。 它可以識別錯誤的來源。
+A **棧疊追蹤** 代表包含在 **核心** 輸入檔案。 此檔案會在發生電腦錯誤時產生。 它可以識別錯誤的來源。
 
 >[!NOTE]
 >
->* A **核** 檔案命名 **核心。`<num>`**。
->* **gdb - GNU調試器** 必須安裝在電腦上。
+>* A **核心** 檔案已命名 **核心。`<num>`**.
+>* **gdb - GNU Debugger** 必須安裝在電腦上。
 >
 
 
-Adobe Campaign技術支援可以要求您提供 **堆棧跟蹤**。 要獲取它，請在Linux中輸入以下命令：
+Adobe Campaign技術支援人員可詢問您相關問題 **棧疊追蹤**. 若要取得，請在Linux中輸入下列命令：
 
 ```
 su - neolane
@@ -55,9 +55,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign技術支援可能會要求您使用特定執行檔（由我們提供）運行此命令。
+Adobe Campaign技術支援可能會要求您使用特定的可執行檔（由我們提供）執行此命令。
 
-在這種情況下，只需通過替換 **nlserver** 執行檔：
+在此情況下，只要執行下列命令，取代 **nlserver** 使用Adobe Campaign提供的可執行檔：
 
 ```
 gdb nlserver <coreFile>

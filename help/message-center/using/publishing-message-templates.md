@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 發佈訊息範本
-description: 了解在Adobe Campaign Classic中發佈交易式訊息範本和取消發佈
+description: 瞭解Adobe Campaign Classic中的交易式訊息範本發佈和取消發佈
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
@@ -20,53 +20,53 @@ ht-degree: 2%
 
 ## 範本發佈 {#template-publication}
 
-當 [訊息範本](../../message-center/using/creating-the-message-template.md) 在控制項例項上建立的變數已完成，且 [測試](../../message-center/using/testing-message-templates.md) 您可以發佈。 此程式也會在所有執行執行個體上發佈。
+當 [訊息範本](../../message-center/using/creating-the-message-template.md) 在控制例項上建立完成，且一旦您擁有 [已測試](../../message-center/using/testing-message-templates.md) 您可以發佈它。 此程式也會將其發佈在所有執行例項上。
 
-發佈可讓您自動建立 **兩個訊息範本** 執行例項，可讓您傳送連結至的訊息 **即時事件** 和 **批次事件**.
+出版物可讓您自動建立 **兩個訊息範本** 在執行例項上，可讓您傳送連結至的訊息 **即時事件** 和 **批次事件**.
 
 >[!NOTE]
 >
->發佈交易式訊息範本時，類型規則也會自動發佈在執行例項上。
+>發佈異動訊息範本時，執行例項上也會自動發佈型別規則。
 
 >[!IMPORTANT]
 >
->每當您對範本進行任何變更時，請務必再次發佈，讓這些變更在交易式訊息傳送期間生效。
+>每當您對範本進行任何變更時，請務必再次發佈，使這些變更在交易式訊息傳遞期間生效。
 
-1. 在控制執行個體上，前往 **[!UICONTROL Message Center > Transactional message templates]** 樹的資料夾。
-1. 選取要在執行執行個體上發佈的範本。
+1. 在控制例項上，前往 **[!UICONTROL Message Center > Transactional message templates]** 樹狀結構的資料夾。
+1. 選取您要在執行例項上發佈的範本。
 1. 按一下&#x200B;**[!UICONTROL Publish]**。
 
    ![](assets/messagecenter_publish_model_008.png)
 
-發佈完成後，將應用於批處理和即時類型事件的兩個消息模板都將在生產實例的樹中建立，該樹位於 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 檔案夾。
+發佈完成後，要套用至批次和即時型別事件的訊息範本都會在的生產執行個體的樹狀結構中建立 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 資料夾。
 
 ![](assets/messagecenter_deployed_model_001.png)
 
-發佈範本後，如果觸發對應的事件，執行例項將會收到事件，將其連結至交易範本，並傳送對應的交易式訊息給每個收件者。 有關詳細資訊，請參閱 [事件處理](../../message-center/using/about-event-processing.md).
+發佈範本後，如果觸發了相應的事件，執行例項將收到事件，將其連結到交易式範本，並向每個收件者傳送對應的交易式訊息。 如需詳細資訊，請參閱 [事件處理](../../message-center/using/about-event-processing.md).
 
 >[!NOTE]
 >
->如果您將交易式訊息範本的現有欄位（例如寄件者地址）取代為空值，交易式訊息重新發佈後，執行例項上的對應欄位將不會更新。 它仍會包含先前的值。
+>如果您以空白值取代交易式訊息範本的現有欄位（例如傳送者地址），則再次發佈交易式訊息後，執行例項上的對應欄位將不會更新。 它仍會包含先前的值。
 >
->不過，如果您新增非空白值，則對應欄位在下次發佈後會照常更新。
+>不過，如果您新增非空白值，則會在下次發佈後如常更新對應的欄位。
 
 ## 範本取消發佈 {#template-unpublication}
 
-在執行例項上發佈訊息範本後，即可取消發佈。 如需範本發佈程式的詳細資訊，請參閱 [本節](#template-publication).
+在執行例項上發佈訊息範本後，即可將其取消發佈。 如需範本發佈程式的詳細資訊，請參閱 [本節](#template-publication).
 
-* 事實上，如果觸發對應事件，仍可呼叫已發佈的範本：如果您不再使用訊息範本，建議取消發佈訊息範本。 這是為了避免錯誤傳送不需要的交易式訊息。
+* 事實上，如果觸發對應的事件，仍可呼叫已發佈的範本：如果您不再使用訊息範本，建議將其取消發佈。 這是為了避免誤傳不必要的交易式訊息。
 
-   例如，您發佈了訊息範本，而您只能用於聖誕促銷活動。 在聖誕節期間結束後，您可能會想要取消發佈，並在明年再次發佈。
+   例如，您發佈了一個訊息範本，但只用於聖誕節行銷活動。 您可能會想要在聖誕節結束後取消發佈，並在明年再次發佈。
 
 * 此外，您無法刪除具有 **[!UICONTROL Published]** 狀態。 您必須先取消發佈。
 
 >[!NOTE]
 >
->自Campaign 20.2版本開始，即可使用此功能。
+>此功能自Campaign第20.2發行版本開始提供。
 
 若要取消發佈交易式訊息範本，請遵循下列步驟。
 
-1. 在控制執行個體上，前往 **[!UICONTROL Message Center > Transactional message templates]** 樹的資料夾。
+1. 在控制例項上，前往 **[!UICONTROL Message Center > Transactional message templates]** 樹狀結構的資料夾。
 1. 選取您要取消發佈的範本。
 1. 按一下&#x200B;**[!UICONTROL Unpublish]**。
 
@@ -76,14 +76,14 @@ ht-degree: 2%
 
 ![](assets/message-center-unpublish.png)
 
-交易式訊息範本狀態會從 **[!UICONTROL Published]** to **[!UICONTROL Being edited]**.
+異動訊息範本狀態會從變更 **[!UICONTROL Published]** 至 **[!UICONTROL Being edited]**.
 
-完成取消發佈後：
+取消發佈完成後：
 
-* 會從每個執行例項中刪除兩個訊息範本（套用至批次和即時類型事件）。
+* 訊息範本（套用至批次和即時型別事件）都會從每個執行例項中刪除。
 
    它們不再出現在 **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** 資料夾(請參閱 [本節](#template-publication))。
 
-* 取消發佈範本後，您就可以從控制執行個體刪除該範本。
+* 取消發佈範本後，您可以從控制例項中刪除它。
 
    若要這麼做，請從清單中選取它，然後按一下 **[!UICONTROL Delete]** 按鈕。

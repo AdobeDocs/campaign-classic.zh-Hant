@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 架構元素和屬性 — 條件元素
+title: 結構描述元素和屬性 — 條件元素
 description: 條件元素
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -16,35 +16,35 @@ ht-degree: 3%
 
 ## 內容模型 {#content-model-2}
 
-條件：==EMPTY
+condition：==EMPTY
 
 ## 屬性 {#attributes-2}
 
-* @boolOperator（字串）
-* @enabledIf（字串）
-* @expr（字串）
+* @boolOperator （字串）
+* @enabledIf （字串）
+* @expr （字串）
 
-## 父母 {#parents-2}
+## 父項 {#parents-2}
 
 `<sysfilter>`
 
-## 兒童 {#children-2}
+## 子系 {#children-2}
 
 無
 
 ## 說明 {#description-2}
 
-此元素用於定義篩選條件。
+此元素可讓您定義篩選條件。
 
-## 使用和使用上下文 {#use-and-context-of-use-2}
+## 使用與使用內容 {#use-and-context-of-use-2}
 
-一 `<sysfiler>`  元素可包含若幹過濾條件。
+一 `<sysfiler>`  元素可包含數個篩選條件。
 
 ## 屬性說明 {#attribute-description-2}
 
-* **boolOperator（字串）**:若 `<conditions>` 定義於  `<sysfilter>` 元素，此屬性允許您將它們組合。 預設情況下，邏輯連結位於 `<condition>` 元素為「AND」。 「@boolOperator」屬性允許您組合「OR」和「AND」類型連結。
-* **enabledIf（字串）**:條件激活test。
-* **expr（字串）**:XTK表達式。
+* **boolOperator （字串）**：若有多個 `<conditions>` 在同一個  `<sysfilter>` 元素，此屬性可讓您組合它們。 依預設，邏輯連結介於 `<condition>` 元素為「AND」。 「@boolOperator」屬性可讓您合併「OR」和「AND」型別連結。
+* **enabledIf （字串）**：條件啟動測試。
+* **expr （字串）**：XTK運算式。
 
 ## 範例 {#examples-2}
 

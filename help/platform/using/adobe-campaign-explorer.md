@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 使用Adobe Campaign Explorer
-description: 了解如何使用Campaign Explorer
+description: 瞭解如何使用Campaign Explorer
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -30,44 +30,44 @@ ht-degree: 34%
 
 **3 - 詳情**：您可以顯示所選元素的詳細資訊。透過右上角的圖示，您可以全螢幕顯示這項資訊。
 
-## 資料夾和導航樹{#about-navigation-hierarchy}
+## 資料夾和導覽樹狀結構{#about-navigation-hierarchy}
 
-導航樹的工作方式與檔案瀏覽器（如Windows資源管理器）類似。 資料夾可能包含子資料夾。 選取節點會顯示與該節點對應的檢視。
+導覽樹狀結構的運作方式與檔案瀏覽器（例如Windows檔案總管）類似。 資料夾可能包含子資料夾。 選取節點會顯示與節點對應的檢視。
 
-顯示的視圖是與架構關聯的清單，以及用於編輯所選行的輸入表單。
+顯示的檢視是與結構描述相關聯的清單，以及用來編輯所選行的輸入表單。
 
 ![](assets/d_ncs_integration_navigation.png)
 
-要將新資料夾添加到樹中，請在要插入資料夾的分支中按一下右鍵該資料夾，然後選擇 **[!UICONTROL Add new folder]** . 在快捷菜單中，選擇要建立的檔案類型。
+若要將新資料夾新增至樹狀結構，請在分支中要插入資料夾的資料夾上按一下滑鼠右鍵，然後選取 **[!UICONTROL Add new folder]** . 在快捷選單中，選取要建立的檔案型別。
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-了解如何設定Campaign導覽樹 [在本節](../../configuration/using/configuration.md).
+瞭解如何設定Campaign導覽樹狀結構 [在本節中](../../configuration/using/configuration.md).
 
-了解如何設定資料夾的權限 [在本節](access-management-folders.md).
+瞭解如何設定檔案夾的許可權 [在本節中](access-management-folders.md).
 
 ## 資料夾設定最佳實務
 
 * **使用內建資料夾**
 
-   使用內建資料夾可讓未參與專案的人員更輕鬆地使用、維護和疑難排解應用程式。 您不應為收件者、清單、傳送等建立自訂資料夾結構，而應使用標準資料夾，例如管理、設定檔與目標、促銷活動管理。
+   使用內建資料夾讓未參與專案的人更易於使用、維護應用程式並進行疑難排解。 您不應為收件者、清單、傳遞等建立自訂資料夾結構，而應使用標準資料夾，例如管理、設定檔與目標、行銷活動管理。
 
 * **建立子資料夾**
 
-   將技術工作流程放置在標準資料夾下：管理/生產/技術工作流程，並根據工作流程類型建立子目錄。
+   將技術工作流程放置在標準資料夾：管理/生產/技術工作流程下，並根據工作流程型別建立子目錄。
 
 * **設定命名慣例**
 
-   例如，您可以按字母順序為工作流程命名，讓工作流程按執行順序顯示。
+   例如，您可以按字母順序命名工作流程，好讓工作流程按執行順序排序。
 
    例如：
 
    * A1 — 匯入收件者，從10:00開始；
-   * A2 — 匯入票證，從11:00開始。
+   * A2 — 匯入票證，11:00開始。
 
-* **建立範本供使用者開始使用**
+* **建立範本以供使用者開始使用**
 
-   建立傳遞範本、工作流程範本、使用者專用的行銷活動範本。 此結構可節省時間，並確保為每個使用者使用正確的傳送對應和類型。
+   建立使用者專用的傳遞範本、工作流程範本、行銷活動範本。 此結構可節省時間，並確保為每個使用者使用正確的傳遞對應和型別。
 
 ## 螢幕解析度 {#screen-resolution}
 
@@ -75,7 +75,7 @@ ht-degree: 34%
 
 >[!CAUTION]
 >
->Adobe Campaign不支援1600x900像素以下的解析度。
+>Adobe Campaign不支援1600x900畫素以下的解析度。
 
 在 **[!UICONTROL Explorer]** 工作區中，如果出現部分 **[!UICONTROL Details]** 區域被截斷，請透過區域頂端的箭頭加以展開或按一下 **[!UICONTROL Enlarge]** 按鈕。
 
@@ -83,4 +83,4 @@ ht-degree: 34%
 
 ## 瀏覽及自訂清單 {#browsing-lists}
 
-了解如何瀏覽、管理和自訂清單 [在本節](adobe-campaign-ui-lists.md).
+瞭解如何瀏覽、管理和自訂清單 [在本節中](adobe-campaign-ui-lists.md).

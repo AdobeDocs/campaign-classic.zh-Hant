@@ -16,56 +16,56 @@ ht-degree: 1%
 
 ## 原則 {#principles}
 
-若要編輯、建立和設定結構，請按一下 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign用戶端主控台的節點。
+若要編輯、建立及設定方案，請按一下 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign使用者端主控台的節點。
 
 >[!NOTE]
 >
->您的Adobe Campaign Classic主控台管理員只能刪除內建資料結構。
+>內建資料結構描述只能由Adobe Campaign Classic主控台的管理員刪除。
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
-編輯欄位顯示源架構的XML內容：
+編輯欄位會顯示來源結構描述的XML內容：
 
 ![](assets/d_ncs_integration_schema_edition.png)
 
 >[!NOTE]
 >
->「名稱」編輯控制項可讓您輸入由名稱和命名空間組成的架構金鑰。 架構的根元素的「name」和「namespace」屬性會在架構的XML編輯區域中自動更新。
+>「名稱」編輯控制項可讓您輸入由名稱和名稱空間組成的結構描述金鑰。 結構描述根元素的「名稱」和「名稱空間」屬性會在結構描述的XML編輯區域中自動更新。
 
-預覽會自動產生擴充架構：
+預覽會自動產生延伸的結構描述：
 
 ![](assets/d_ncs_integration_schema_edition2.png)
 
 >[!NOTE]
 >
->儲存來源架構時，會自動啟動延伸架構的產生。
+>儲存來源結構描述後，就會自動產生延伸結構描述。
 
-如果需要檢查架構的完整結構，可以使用預覽頁簽。 如果結構已擴充，您便能將其所有擴充功能視覺化。 作為補充，「文檔」頁簽顯示所有架構屬性和元素及其屬性（SQL欄位、類型/長度、標籤、說明）。 「檔案」索引標籤僅適用於產生的結構。 有關詳細資訊，請參閱 [重新生成結構](../../configuration/using/regenerating-schemas.md) 區段。
+如果您需要檢查架構的完整結構，可以使用預覽索引標籤。 如果結構描述已擴充，您隨後將能夠將其所有擴充功能視覺化。 作為補充，「檔案」標籤會顯示所有綱要屬性和元素及其屬性（SQL欄位、型別/長度、標籤、說明）。 檔案索引標籤僅適用於產生的結構描述。 如需詳細資訊，請參閱 [重新產生結構描述](../../configuration/using/regenerating-schemas.md) 區段。
 
-## 範例：建立合同表 {#example--creating-a-contract-table}
+## 範例：建立合約表格 {#example--creating-a-contract-table}
 
-在以下範例中，我們要為 **合同** 在Adobe Campaign資料庫的資料庫模型中。 此表格可讓您儲存每個合約的持有人和共同持有人的名字和姓氏以及電子郵件地址。
+在以下範例中，我們想要為 **合約** 在Adobe Campaign資料庫的資料庫模型中。 此表格可讓您儲存每個合約的持有者和共同持有者的名字和姓氏，以及電子郵件地址。
 
-要執行此操作，需要建立表的架構並更新資料庫結構以生成相應的表。 應用以下階段：
+要執行此操作，您需要建立表格的綱要，並更新資料庫結構以產生對應的表格。 套用下列階段：
 
-1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** 節點，然後按一下 **[!UICONTROL New]** .
-1. 選擇 **[!UICONTROL Create a new table in the data model]** 選項，然後按一下 **[!UICONTROL Next]** .
+1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign樹狀結構的節點，然後按一下 **[!UICONTROL New]** .
+1. 選擇 **[!UICONTROL Create a new table in the data model]** 選項並按一下 **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. 指定表的名稱和命名空間。
+1. 指定資料表的名稱和名稱空間。
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >依預設，使用者建立的結構會儲存在「自訂」命名空間中。 有關詳細資訊，請參閱 [方案的標識](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >依預設，使用者建立的方案會儲存在「cus」名稱空間中。 有關詳細資訊，請參閱 [結構描述的識別](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. 建立表格的內容。 建議您使用登入精靈，確保未遺失任何設定。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，然後選擇要添加的設定類型。
+1. 建立表格的內容。 我們建議使用輸入精靈來確認沒有遺漏任何設定。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，並選擇要新增的設定型別。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
-1. 定義合同表的設定：
+1. 定義合約表格的設定：
 
    ```
    <srcSchema desc="Active contracts" img="ncm:channels.png" label="Contracts" labelSingular="Contract" mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
@@ -83,7 +83,7 @@ ht-degree: 1%
    </srcSchema>
    ```
 
-   添加合同類型並在合同編號上放置索引。
+   新增合約型別，並將索引置於合約編號上。
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
@@ -113,8 +113,8 @@ ht-degree: 1%
    </srcSchema>
    ```
 
-1. 儲存結構以產生結構：
+1. 儲存結構描述以產生結構：
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新資料庫結構以建立將連結架構的表。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md).
+1. 更新資料庫結構以建立將連結結構描述的表格。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md).

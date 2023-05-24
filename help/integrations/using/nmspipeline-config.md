@@ -18,14 +18,14 @@ ht-degree: 3%
 
 
 
-驗證一旦運作， [!DNL pipelined] 可以擷取事件並加以處理。 它只會處理在Adobe Campaign中設定的觸發器，而忽略其他觸發器。 觸發器必須從Analytics產生，並預先推送至管道。
-選項也可以設定萬用字元來擷取所有觸發器（無論名稱為何）。
+驗證完成後， [!DNL pipelined] 可以擷取事件並加以處理。 它只會處理Adobe Campaign中設定的觸發器，忽略其他觸發器。 觸發器必須預先從Analytics產生並推送至管道。
+也可以使用萬用字元設定選項，以擷取所有觸發程式，而不論名稱為何。
 
-觸發器的設定是在下方的選項中完成 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 選項名稱為 **[!UICONTROL NmsPipeline_Config]**. 資料類型為JSON格式的「長文字」。
+觸發器的設定是在下的選項中完成 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 選項名稱為 **[!UICONTROL NmsPipeline_Config]**. 資料型別為JSON格式的「長文字」。
 
-此範例指定兩個觸發器。
+此範例指定兩個觸發程式。
 
-將此範本的JSON程式碼貼入選項值。 請務必移除備注。
+將此範本的JSON程式碼貼到選項值中。 請確定移除註解。
 
 ```
 {
@@ -47,7 +47,7 @@ ht-degree: 3%
 }
 ```
 
-第二個範例會擷取所有觸發器。
+第二個範例會擷取所有觸發程式。
 
 ```
 {
@@ -68,21 +68,21 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此 [!DNL Trigger] 在Analytics介面中，特定觸發器名稱的UID值可作為觸發器介面中URL查詢字串參數的一部分找到。 triggerType UID會傳入管道資料流，且程式碼可寫入pipeline.JS中，以將觸發器UID對應至使用者易記標籤，該標籤可儲存在pipelineEvents架構的「觸發器名稱」欄中。
+>此 [!DNL Trigger] Analytics介面中特定觸發程式名稱的UID值，可作為Triggers介面中URL querystring引數的一部分找到。 triggerType UID會傳入管道資料流中，而程式碼可寫入pipeline.JS中，以將觸發UID對應至使用者易記標籤，該標籤可儲存在pipelineEvents架構的「觸發程式名稱」欄中。
 
-## 消費者參數 {#consumer-parameter}
+## 取用者引數 {#consumer-parameter}
 
-管道與「供應商和消費者」模式搭配使用。 同一隊列中可能有許多消費者。 訊息只會「使用」給個別消費者。 每個消費者都有自己的訊息「副本」。
+此管道可搭配「供應商和消費者」模型使用。 相同佇列上可能有許多消費者。 訊息僅「使用」給個別消費者。 每個消費者都會取得其專屬的訊息「復本」。
 
-「消費者」參數會將執行個體識別為其中一個消費者。 此為呼叫管道之執行個體的身分。 您可以以執行個體名稱填入。 管道服務可追蹤每個消費者擷取的訊息。 針對不同的例項使用不同的使用者，可確保將每則訊息傳送至每個例項。
+「consumer」引數會將執行個體識別為這些使用者之一。 它是呼叫管道的執行個體的身分。 您可以使用實體名稱來填入。 管道服務會追蹤每個取用者擷取的訊息。 針對不同的執行個體使用不同的消費者，可確保將每則訊息都傳送至每個執行個體。
 
-## 如何配置管道選項 {#configure-pipeline-option}
+## 如何設定管道選項 {#configure-pipeline-option}
 
-在「觸發器」陣列下新增或編輯Experience Cloud觸發器；請勿編輯其餘內容。
-在此協助下，確認JSON有效 [網站](https://jsonlint.com/).
+在「觸發程式」陣列下新增或編輯Experience Cloud觸發程式；請勿編輯其餘的觸發程式。
+請透過以下說明確認JSON有效 [網站](https://jsonlint.com/).
 
-* &quot;name&quot;是觸發器ID。 萬用字元「*」會擷取所有觸發器。
-* &quot;Consumer&quot;是唯一識別nlserver例項的任何唯一字串。 通常可以是例項名稱本身。 對於多個環境(dev/stage/prod)，請確定每個環境都是唯一的，以便每個執行個體都能收到訊息的副本。
+* &quot;name&quot;是觸發程式ID。 萬用字元「*」會擷取所有觸發器。
+* &quot;Consumer&quot;是任何可唯一識別nlserver執行個體的唯一字串。 它通常可以是實體名稱本身。 針對多個環境（開發/舞台/prod），請確保每個環境都有其獨特性，以便每個例項都能取得訊息的副本。
 * [!DNL Pipelined] 也支援「別名」主題。
 
-重新啟動 [!DNL pipelined] 進行變更後才會執行。
+重新啟動 [!DNL pipelined] 進行變更之後。

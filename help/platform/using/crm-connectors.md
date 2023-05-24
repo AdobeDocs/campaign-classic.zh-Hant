@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: CRM 連接器
-description: 開始使用Campaign中的CRM連接器
+description: 開始使用Campaign中的CRM聯結器
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -26,20 +26,20 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 >[!NOTE]
 >
->此功能可在Adobe Campaign中透過 **CRM連接器** 專屬套件。
+>此功能可在Adobe Campaign中透過 **CRM聯結器** 專用套件。
 
 
 ### 相容系統 {#compatible-crm-systems-and-limitations}
 
-支援的CRM和版本在Campaign中詳細說明 [相容性矩陣](../../rn/using/compatibility-matrix.md).
+支援的CRM和版本會在Campaign中詳細說明 [相容性矩陣](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
->CRM連接器只能搭配安全URL(https)運作。
+>CRM聯結器僅適用於安全URL (https)。
 
 ### 實施步驟 {#crm-implementation-steps}
 
-了解連接Campaign和Microsoft Dynamics的逐步程式 [在本節](../../platform/using/crm-ms-dynamics.md)
+瞭解連線Campaign和Microsoft Dynamics的逐步程式 [在本節中](../../platform/using/crm-ms-dynamics.md)
 
 
-了解連結Campaign和Salesforce的逐步程式 [在本節](../../platform/using/crm-sfdc.md)
+瞭解連線Campaign和Salesforce的逐步程式 [在本節中](../../platform/using/crm-sfdc.md)

@@ -2,7 +2,7 @@
 product: campaign
 title: 管理分項清單
 description: 管理分項清單
-badge: label="v7" type="Informity" tooltip="僅適用於Campaign Classicv7"
+badge: label="v7" type="資訊性" tooltip="僅適用於Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
@@ -18,48 +18,48 @@ ht-degree: 0%
 
 
 
-列舉（也稱為「分項清單」）是系統建議填入特定欄位的值清單。 列舉可讓您標準化這些欄位的值，並協助輸入資料或在查詢內使用。
+分項清單（也稱為「分項清單」）是系統建議用來填入特定欄位的值清單。 列舉可讓您標準化這些欄位的值，並有助於資料輸入或在查詢中使用。
 
-值清單會顯示為下拉式清單，您可從中選取要在欄位中輸入的值。 下拉式清單也可啟用預測性輸入，運算子會輸入前幾個字母，而應用程式會填入其餘字母。
+值清單會以下拉式清單的形式顯示，您可以從中選取要在欄位中輸入的值。 下拉式清單也會啟用預測性輸入，運運算元會在此輸入前幾個字母，而應用程式會填入其餘字母。
 
-已使用此類型的列舉定義了某些主控台欄位。 如果您可以在對應欄位中直接輸入來新增值，則列舉稱為「開啟」。
+有些主控台欄位已定義成這種型別的分項清單。 如果您可以透過在對應欄位中直接輸入來新增值，則列舉稱為「開啟」。
 
 ## 存取值 {#access-to-values}
 
-會定義此類型欄位的值，並透過 **[!UICONTROL Administration > Platform > Enumerations]** 樹的節點。
+此類欄位的值已定義，透過 **[!UICONTROL Administration > Platform > Enumerations]** 樹狀結構的節點。
 
 ![](assets/s_ncs_user_itemized_list_node.png)
 
-* 上方的區段提供已定義分項清單的欄位清單。
-* 下部列出建議的值。 這些值在使用此欄位的編輯器中將會重複。
+* 上方區段提供已定義逐項清單的欄位清單。
+* 下方的區段會列出建議的值。 這些值將在使用此欄位的編輯器中重複。
 
    ![](assets/s_ncs_user_itemized_list_values.png)
 
-   若要建立新的分項清單，請按一下 **[!UICONTROL Add]**.
+   若要建立新的分項清單值，請按一下 **[!UICONTROL Add]**.
 
    ![](assets/s_ncs_user_itemized_list.png)
 
-   若 **[!UICONTROL Open]** 選項，則使用者可直接在對應欄位中新增項目清單值。 確認訊息可讓您建立此值。
+   如果 **[!UICONTROL Open]** 選項時，使用者可以直接在對應欄位中新增分項清單值。 確認訊息可讓您建立此值。
 
    ![](assets/s_ncs_user_itemized_list_new_value.png)
 
-* 若 **[!UICONTROL Closed]** 選項，則使用者將無法建立新值，而只是從可用值中選擇。
+* 如果 **[!UICONTROL Closed]** 選項時，使用者將無法建立新值，而只能從可用的值中選擇。
 
 ## 標準化資料 {#standardizing-data}
 
 ### 關於別名清除 {#about-alias-cleansing}
 
-在分項清單欄位中，您可以輸入除分項清單值之外的值。 這些檔案可以按原樣儲存，也可以清理。
+在分項清單欄位中，您可以輸入列舉值以外的值。 這些檔案可以依原樣儲存，也可以清除。
 
 >[!CAUTION]
 >
->資料清理是影響資料庫中資料的關鍵過程。 Adobe Campaign會執行大量資料更新，而可能導致某些值遭刪除。 因此，此操作將保留給專家用戶。
+>資料清除是影響資料庫中資料的重要程式。 Adobe Campaign會執行大量資料更新，這可能會導致某些值被刪除。 因此，這項操作是保留給專家使用者使用。
 
-輸入的值為：
+然後，輸入的值會是：
 
-* 新增至分項清單值：在本例中， **[!UICONTROL Open]** 選項，
-* 或自動替換為其對應的別名：在此情況下，此案例隨後必須定義於 **[!UICONTROL Alias]** 清單的索引標籤，
-* 或儲存在別名清單中：稍後將為其分配別名。
+* 新增至分項清單值：在此案例中， **[!UICONTROL Open]** 必須選取選項，
+* 或自動取代為其對應的別名：在此情況下，此案例必須定義於 **[!UICONTROL Alias]** 分項清單的索引標籤，
+* 或會儲存在別名清單中：稍後會為其指派別名。
 
    >[!NOTE]
    >
@@ -67,35 +67,35 @@ ht-degree: 0%
 
 ### 使用別名 {#using-aliases}
 
-選項 **[!UICONTROL Alias cleansing]** 使所選分項清單可以使用別名。 選取此選項時， **[!UICONTROL Alias]** 頁簽。
+選項 **[!UICONTROL Alias cleansing]** 讓選取的逐項清單可以使用別名。 選取此選項時， **[!UICONTROL Alias]** 標籤會顯示在視窗底部。
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
 #### 建立別名 {#creating-an-alias}
 
-要建立別名，請按一下 **[!UICONTROL Add]**.
+若要建立別名，請按一下 **[!UICONTROL Add]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create.png)
 
-輸入要轉換的別名和要應用的值，然後按一下 **[!UICONTROL Ok]**.
+輸入要轉換的別名以及要套用的值，然後按一下 **[!UICONTROL Ok]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_2.png)
 
-確認此操作之前，請檢查參數。
+確認此作業之前請先檢查引數。
 
 >[!CAUTION]
 >
->一旦此階段被確認，則可能無法恢復以前輸入的值：他們被替換了。
+>確認此階段後，可能無法復原先前輸入的值：已取代這些值。
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-因此，當使用者輸入值時 **尼爾森** 在「公司」欄位(在Adobe Campaign主控台或表單中)中，會自動取代為值 **NIELSEN有限公司**. 值取代由 **別名清除** 工作流程。 請參閱 [執行資料清理](#running-data-cleansing).
+因此，當使用者輸入值時 **NEILSEN** 在「公司」欄位(在Adobe Campaign主控台或表單中)中，該值會自動取代為 **NIELSEN有限公司**. 值取代是由 **別名清除** 工作流程。 請參閱 [執行資料清除](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
 #### 將值轉換為別名 {#converting-values-into-aliases}
 
-要將枚舉值轉換為別名，請在值清單中按一下右鍵，然後選擇 **[!UICONTROL Convert values into aliases...]**.
+若要將列舉值轉換為別名，請在值清單中按一下滑鼠右鍵，然後選擇 **[!UICONTROL Convert values into aliases...]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail.png)
 
@@ -103,57 +103,57 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_transform.png)
 
-按一下 **[!UICONTROL Start]** 來執行轉換。
+按一下 **[!UICONTROL Start]** 以執行轉換。
 
 ![](assets/s_ncs_user_itemized_list_alias_detail1.png)
 
-執行完成後，別名將添加到別名清單中。
+執行完成後，別名會新增至別名清單中。
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### 擷取別名點擊 {#retrieving-alias-hits}
+#### 擷取別名點選 {#retrieving-alias-hits}
 
-用戶輸入的值可以轉換為別名。 實際上，當使用者輸入未包含在分項清單中的值時，該值會儲存在 **[!UICONTROL Alias]** 標籤。
+使用者輸入的值可以轉換為別名。 實際上，當使用者輸入未包含在逐項清單中的值時，該值會儲存在 **[!UICONTROL Alias]** 標籤。
 
-此 **別名清除** 技術工作流程會每晚復原這些值，以更新逐項清單。 請參閱 [執行資料清理](#running-data-cleansing)
+此 **別名清除** 技術工作流程會每晚復原這些值，以更新逐項清單。 請參閱 [執行資料清除](#running-data-cleansing)
 
-如有必要， **[!UICONTROL Hits]** 欄可顯示輸入此值的次數。 計算此值可能既耗時又耗時。 有關詳細資訊，請參閱 [計算登入次數](#calculating-entry-occurrences).
+如有需要， **[!UICONTROL Hits]** 欄可顯示輸入此值的次數。 計算這個值會消耗時間和記憶體。 有關詳細資訊，請參閱 [計算專案發生次數](#calculating-entry-occurrences).
 
-### 執行資料清理 {#running-data-cleansing}
+### 執行資料清除 {#running-data-cleansing}
 
-資料清除由 **[!UICONTROL Alias cleansing]** 技術工作流程。 為枚舉定義的配置在執行期間應用。 請參閱 [別名清除工作流程](#alias-cleansing-workflow).
+資料清除是由 **[!UICONTROL Alias cleansing]** 技術工作流程。 為執行期間會套用為列舉定義的設定。 請參閱 [別名清除工作流程](#alias-cleansing-workflow).
 
-清除可透過 **[!UICONTROL Cleanse values...]** 連結。
+可透過以下方式觸發清除 **[!UICONTROL Cleanse values...]** 連結。
 
 ![](assets/s_ncs_user_itemized_list_alias_start_normalize.png)
 
-此 **[!UICONTROL Advanced parameters...]** 連結可讓您設定從開始將收集的值納入考量的日期。
+此 **[!UICONTROL Advanced parameters...]** 連結可讓您設定開始考慮所收集值的日期。
 
 ![](assets/s_ncs_user_itemized_list_alias_normalize.png)
 
-按一下 **[!UICONTROL Start]** 按鈕來執行資料清除。
+按一下 **[!UICONTROL Start]** 按鈕以執行資料清除。
 
-#### 計算登入次數 {#calculating-entry-occurrences}
+#### 計算專案發生次數 {#calculating-entry-occurrences}
 
-此 **[!UICONTROL Alias]** 分項清單的子索引標籤可顯示所有輸入值中別名的發生次數。 此資訊為預估值，將顯示在 **[!UICONTROL Hits]** 欄。
+此 **[!UICONTROL Alias]** 逐項清單的子索引標籤可顯示輸入的所有值中別名出現的次數。 此資訊為預估值，會顯示在 **[!UICONTROL Hits]** 欄。
 
 >[!CAUTION]
 >
->計算別名條目發生次數可能需要很長時間。 這就是為什麼使用此函式時應謹慎行事。
+>計算別名專案發生次數可能需要很長的時間。 因此，使用此函式時請務必小心。
 
-您可以透過 **[!UICONTROL Cleanse values...]** 連結。 若要這麼做，請按一下 **[!UICONTROL Advanced parameters...]** 連結，然後選取所需的選項。
+您可以透過以下方式手動執行點選計算 **[!UICONTROL Cleanse values...]** 連結。 若要這麼做，請按一下 **[!UICONTROL Advanced parameters...]** 連結並選取所需的選項。
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
-* **[!UICONTROL Update the number of alias hits]**:這可讓您根據輸入的日期更新已計算的點擊。
-* **[!UICONTROL Recalculate the number of alias hits from the start]**:可讓您在整個Adobe Campaign平台上執行計算。
+* **[!UICONTROL Update the number of alias hits]**：這可讓您根據輸入的日期更新已計算的點選。
+* **[!UICONTROL Recalculate the number of alias hits from the start]**：可讓您在整個Adobe Campaign平台上執行計算。
 
-您也可以建立專用的工作流程，以便計算在指定期間自動執行，例如每週執行一次。
+您也可以建立專屬的工作流程，讓計算在指定的期間內自動執行，例如每週執行一次。
 
-若要這麼做，請建立 **[!UICONTROL Alias cleansing]** 工作流程，請變更排程器，並在 **[!UICONTROL Enumeration value cleansing]** 活動：
+若要這麼做，請建立 **[!UICONTROL Alias cleansing]** 工作流程，變更排程器，並在 **[!UICONTROL Enumeration value cleansing]** 活動：
 
-* **-updateHits** 若要更新別名點擊數，
-* **-updateHits:full** 重新計算所有別名點擊。
+* **-updateHits** 若要更新別名點選數，
+* **-updateHits：full** 以重新計算所有別名點選。
 
 #### 別名清除工作流程 {#alias-cleansing-workflow}
 

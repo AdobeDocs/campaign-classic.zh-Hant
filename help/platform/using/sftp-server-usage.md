@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: SFTP 伺服器使用情況
-description: 瞭解有關SFTP伺服器最佳實踐和故障排除的更多資訊
+description: 深入瞭解SFTP伺服器最佳實務和疑難排解
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
@@ -19,13 +19,13 @@ ht-degree: 41%
 
 
 
-## SFTP伺服器全局建議 {#global-recommendations}
+## SFTP伺服器全域建議 {#global-recommendations}
 
-管理用於 ETL 的檔案和資料時，這些檔案儲存在 Adobe 提供的代管 SFTP 伺服器上。使用SFTP伺服器時，請確保遵循以下建議。
+管理用於 ETL 的檔案和資料時，這些檔案儲存在 Adobe 提供的代管 SFTP 伺服器上。使用SFTP伺服器時，請務必遵循下列建議。
 
 * 使用基於密鑰的身份驗證而不是密碼身份驗證，以避免密碼過期 (密碼的有效期為 90 天)。此外，基於金鑰的身份驗證允許您生成多個金鑰，例如在管理多個實體時。相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
 
-   支持的金鑰格式為 SSH-2 RSA 2048。可以使用PyTTY(Windows)或ssh-keygen(Unix)等工具生成密鑰。您必須通過以下方式向Adobe支援團隊提供公鑰： [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 將其上傳到市場活動伺服器上。
+   支持的金鑰格式為 SSH-2 RSA 2048。金鑰可由PyTTY (Windows)或ssh-keygen (Unix)等工具產生。您必須透過以下方式向Adobe支援團隊提供公開金鑰： [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 將其上傳至Campaign伺服器。
 
 * 在 SFTP 上載和工作流程中使用批次處理。
 
@@ -33,15 +33,15 @@ ht-degree: 41%
 
 * 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
 
-* 您嘗試從中啟動SFTP連接的公共IP必須添加到市場活動實例的允許清單中。 可通過以下方式請求將IP地址添加到允許清單 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+* 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 可透過以下方式請求將IP位址新增至允許清單 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-## 資料庫使用最佳做法 {#sftp-server-best-practices}
+## 資料庫使用最佳實務 {#sftp-server-best-practices}
 
-SFTP伺服器設計為臨時儲存空間，您可以在該空間上控制檔案的保留和刪除。
+SFTP伺服器是專為臨時儲存空間而設計，您可以在其上控制檔案的保留和刪除。
 
-如果未正確使用或監視，這些空間可快速填充伺服器上的可用物理空間，並導致檔案在後續上載時被截斷。 一旦空間飽和，自動清除可以觸發並從 SFTP 儲存器中刪除最舊的檔案。
+若未正確使用或監控，這些空間會快速填滿伺服器上可用的實體空間，並導致檔案在後續上傳時被截斷。 一旦空間飽和，自動清除可以觸發並從 SFTP 儲存器中刪除最舊的檔案。
 
-為避免此類問題，Adobe建議遵循以下最佳做法。
+為避免此類問題，Adobe建議遵循以下最佳實務。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ SFTP伺服器設計為臨時儲存空間，您可以在該空間上控制檔案�
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的實例必須與 [最新的GA版本](../../rn/using/rn-overview.md)。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
+>請注意，您的執行個體必須升級為 [最新GA版本編號](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
 
 * 伺服器大小功能因許可證而異。在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 
@@ -61,18 +61,18 @@ SFTP伺服器設計為臨時儲存空間，您可以在該空間上控制檔案�
 
 ## 外部SFTP伺服器使用情況 {#external-SFTP-server}
 
-如果您使用自己的SFTP伺服器，請確保盡可能遵循上述建議。
+如果您使用自己的SFTP伺服器，請務必儘可能遵循上述建議。
 
-此外，當Campaign Classic到外部SFTP伺服器的路徑時，路徑語法根據SFTP伺服器作業系統而不同：
+此外，在Campaign Classic中指定外部SFTP伺服器的路徑時，路徑語法會因SFTP伺服器作業系統而異：
 
-* 如果SFTP伺服器已開啟 **窗口**，始終使用相對路徑。
-* 如果STP伺服器已開啟 **Linux**，始終使用相對於主目錄的路徑（以「~/」開頭）或絕對路徑（以「/」開頭）。
+* 如果您的SFTP伺服器為 **Windows**，請一律使用相對路徑。
+* 如果您的STP伺服器已開啟 **Linux**，請一律使用與首頁相關的路徑（以「~/」開頭）或絕對路徑（以「/」開頭）。
 
-## Adobe托管的SFTP伺服器的連接問題 {#sftp-server-troubleshooting}
+## Adobe代管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
-下面一節列出了要檢查的資訊，並通過以下方式向Adobe支援團隊提供 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到與Adobe托管的SFTP伺服器的連接問題時。
+以下區段列出要檢查的資訊，並透過提供給Adobe支援團隊 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到Adobe代管SFTP伺服器的連線問題時。
 
-1. 檢查您的執行個體是否正在運行。要執行此操作，請開啟瀏覽器，然後建立 **[!UICONTROL GET]** 調用實例 **[!UICONTROL /r/test]** 終結點：
+1. 檢查您的執行個體是否正在運行。若要這麼做，請開啟瀏覽器，然後建立 **[!UICONTROL GET]** 在執行個體上呼叫 **[!UICONTROL /r/test]** 端點：
 
    ```
    https://instanceUrl/r/test
@@ -102,18 +102,18 @@ SFTP伺服器設計為臨時儲存空間，您可以在該空間上控制檔案�
    >
    >Netcat 工具可讓您輕鬆管理各種操作系統上的網路連線 (請參見 [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/))。
 
-   如果埠未打開，請確保打開側面的傳出連線，然後重試。如果仍遇到連接問題，請與共用命令的輸出 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
+   如果埠未打開，請確保打開側面的傳出連線，然後重試。如果您仍然遇到連線問題，請將命令的輸出分享給 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
 
-1. 檢查您嘗試從中啟動SFTP連接的公共IP是否是您為允許清單提供給Adobe支援的IP。
-1. 如果您使用基於密碼的身份驗證，則您的密碼可能已過期（密碼的有效期為90天）。 因此，強烈建議使用基於密鑰的身份驗證(請參見 [SFTP伺服器最佳實踐](#sftp-server-best-practices))。
-1. 如果您使用基於密鑰的身份驗證，請檢查您使用的密鑰是否與您提供的密鑰相同 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 實例配置的組。
+1. 檢查您嘗試啟動SFTP連線的公用IP是否為您提供給允許清單Adobe支援的IP。
+1. 如果您使用以密碼為基礎的驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用金鑰式驗證(請參閱 [SFTP伺服器最佳實務](#sftp-server-best-practices))。
+1. 如果您使用以金鑰為基礎的驗證，請檢查您使用的金鑰是否與您提供給的金鑰相同 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 執行個體組態的團隊。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
 
-## &quot;無法解析主機名&quot;錯誤
+## 「無法解析主機名稱」錯誤
 
-本節提供了在從Campaign Classic連接到FTP伺服器後獲取「無法解析主機名」錯誤時要執行的檢查和操作的資訊。
+本節提供從Campaign Classic連線至FTP伺服器後收到「無法解析主機名稱」錯誤時，所要執行的檢查和動作的相關資訊。
 
-工作流日誌顯示以下日誌：
+工作流程日誌會顯示以下記錄：
 
 ```
 16/05/2016 12:49:03    fileTransfer    Upload error in cURL
@@ -123,35 +123,35 @@ SFTP伺服器設計為臨時儲存空間，您可以在該空間上控制檔案�
 16/05/2016 12:49:03    fileTransfer    1 file(s) to transfer
 ```
 
-當嘗試從工作流連接FTP伺服器並從伺服器下載檔案時，仍然能夠使用FileZilla或WinSCP通過FTP連接時，會發生此錯誤。
+嘗試從工作流程連線FTP伺服器並從伺服器下載檔案時，當您仍可使用FileZilla或WinSCP透過FTP連線時，就會發生此錯誤。
 
-此錯誤表示無法正確解析FTP伺服器域名。 要排除故障，請執行以下操作：
+此錯誤表示無法正確解析FTP伺服器網域名稱。 若要進行疑難排解，請執行下列動作：
 
-1. 故障排除 **DNS伺服器配置**:
+1. 疑難排解 **DNS伺服器設定**：
 
-   1. 檢查伺服器名是否已添加到本地DNS伺服器中。
-   1. 如果是，請在Adobe Campaign伺服器上運行以下命令以獲取IP地址：
+   1. 檢查伺服器名稱是否已新增至本機DNS伺服器。
+   1. 如果是，請在Adobe Campaign伺服器上執行下列命令以取得IP位址：
 
       `nslookup <server domain name>`
 
-      這確認FTP伺服器正在工作，可從Adobe Campaign應用伺服器訪問。
+      這可確認FTP伺服器是否正常運作，以及是否可從Adobe Campaign應用程式伺服器連線。
 
-1. 故障排除 **會話日誌**:
+1. 疑難排解 **工作階段記錄**：
 
-   1. 在工作流中，按兩下 [檔案傳輸](../../workflow/using/file-transfer.md) 的子菜單。
-   1. 轉到 **[!UICONTROL File Transfer]** ，然後按一下 **[!UICONTROL Advanced Parameters]**。
+   1. 在工作流程中，按兩下 [檔案傳輸](../../workflow/using/file-transfer.md) 活動。
+   1. 前往 **[!UICONTROL File Transfer]** 標籤，然後按一下 **[!UICONTROL Advanced Parameters]**.
    1. 核取 **[!UICONTROL Display the session logs]** 選項。
 
       ![](assets/sftp-error-display-logs.png)
 
-   1. 轉到工作流審核並檢查日誌是否顯示「無法解析主機名」錯誤。
+   1. 前往工作流程稽核，並檢查記錄是否顯示「無法解析主機名稱」錯誤。
 
-1. 如果SFTP伺服器由Adobe托管，請聯繫「客戶服務」以檢查是否將IP添加到允許清單中。
+1. 如果SFTP伺服器是由Adobe託管，請聯絡客戶服務，檢查是否將IP新增至允許清單。
 
-   否則驗證：
+   否則，請驗證：
 
-   * 密碼不包含「@」。 如果密碼中有「@」，則連接失敗。
-   * 沒有防火牆問題會妨礙Adobe Campaign應用伺服器與SFTP伺服器之間的通信。
-   * 從市場活動伺服器到sftp運行tracert和telnet命令，查看是否存在任何連接問題。
-   * 沒有通信協定問題。
-   * 埠已開啟。
+   * 密碼不包含&#39;@&#39;。 如果密碼中有&#39;@&#39;，連線就會失敗。
+   * 沒有防火牆問題會妨礙Adobe Campaign應用程式伺服器與SFTP伺服器之間的通訊。
+   * 從campaign伺服器執行tracert和telnet命令至sftp，檢視是否有任何連線問題。
+   * 沒有通訊協定問題。
+   * 連線埠已開啟。

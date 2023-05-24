@@ -16,20 +16,20 @@ ht-degree: 5%
 
 
 
-只有在啟動所有入站轉變（即完成所有先前的活動）時，連接才會觸發其出站轉變。 這可讓您在繼續執行工作流程之前，確定某些活動已完成。
+只有在所有入站轉變啟動時（即所有先前的活動完成時），聯結才會觸發其出站轉變。 這可讓您在繼續執行工作流程之前，確定特定活動已完成。
 
-例如，您可以在內容建立和傳送傳送自動化的內容中使用AND-join活動，以確保只有在目標查詢和內容更新步驟完成後，才會啟動傳送。 有專屬的使用案例可在 [本節](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
+例如，您可以在內容建立和傳送自動化的內容中使用AND-join活動，以確保只有在完成目標查詢和內容更新步驟後才會開始傳送。 以下位置提供專屬的使用案例： [本節](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
 
 ![](assets/and-join-usage.png)
 
 >[!NOTE]
 >
->請注意，使用不同目標維度設定的入站轉變無法使用 **[!UICONTROL AND-join]** 活動。
+>請注意，使用不同目標維度設定的入站轉變，不能使用 **[!UICONTROL AND-join]** 活動。
 
-活動的出站已傳送母體，是透過在活動的入站轉變中選擇主要集來決定。
+活動的傳出已傳送母體取決於在活動的入站轉變中選擇主要集合。
 
-出站轉變只能包含入站轉變母體之一。 如果未設定活動，出站轉變將隨機選取入站母體之一。
+出站轉變只能包含其中一個入站轉變母體。 如果未設定活動，出站轉變將會隨機選取其中一個入站母體。
 
 >[!CAUTION]
 >
->若 **合併連結** 類型活動時，會合併事件變數，但如果同一個變數定義兩次，則會發生衝突，且值仍未確定。 如需詳細資訊，請參閱[本章節](javascript-scripts-and-templates.md#event-variables)。
+>若為 **合併連結** 型別活動，事件變數會合併，但如果相同的變數定義兩次，則會發生衝突，且值維持未定。 如需詳細資訊，請參閱[本章節](javascript-scripts-and-templates.md#event-variables)。

@@ -17,7 +17,7 @@ ht-degree: 30%
 
 
 
-以下詳述的工作流程會與 **具有執行實例的選件引擎的控制** 模組。
+以下詳述的工作流程會隨 **透過執行例項控制優惠方案引擎** 模組（預設）。
 
 <table> 
  <tbody> 
@@ -27,9 +27,9 @@ ht-degree: 30%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">命題同步</span> <br /> </td> 
    <td> <span class="uicontrol">主張同步</span> <br /> </td> 
-   <td> 此工作流程會在用於互動的行銷執行個體與執行執行個體之間同步建議。<br /> </td> 
+   <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
+   <td> 此工作流程會在行銷執行個體與用於互動的執行執行個體之間同步化主張。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -37,7 +37,7 @@ _2020 年 10 月 27 日_
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 
 **新增功能？**
@@ -109,7 +109,7 @@ _2020 年 10 月 27 日_
 **功能改善**
 
 * 幾項改善進行於&#x200B;**客戶端控制台**：
-   * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。伺服器和客戶機控制台升級是2021年6月30日之後必須能夠連接的。
+   * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。必須進行伺服器及使用者端主控台升級，才能在2021年6月30日之後連線。
    * 為了避免與某些網際網路安全性 GPO 規則限制發生不相容的情況，已將 Campaign 用戶端主控台登入畫面由內建的標準 Windows 表單取代。
    * 修正了在使用 64 位元用戶端主控台的工作流程中進行複製/貼上活動所發生的問題。(NEO-27635)
    * 在&#x200B;**「關於」**&#x200B;功能表中，已新增資訊，以區分 64 位元和 32 位元控制台。
@@ -127,7 +127,7 @@ _2020 年 10 月 27 日_
 * 改善了從 Adobe Target 插入影像時顯示的錯誤訊息，且外部帳戶的租用戶名稱為空白的問題。
 * 在傳遞屬性中，**[!UICONTROL Archive emails]**&#x200B;將選項重新命名&#x200B;**[!UICONTROL Email BCC]**。
 * 為了提高穩健性，已拒絕選取所有具有無效節點的查詢。如果您需要停用檢查並返回上一個行為，可將 XtkSecurity_Disable_QueryCheck 設定為 0。
-* 已為nmsBroadlogId序列添加負ID範圍支援。 此生成將調整nmsBroadlogId序列的min_value以包括負範圍。 如果您有不允許負ID的嚴格用例，請將序列的min_value還原為1。
+* 已為nmsBroadlogId序列新增負ID範圍支援。 此組建會調整nmsBroadlogId序列的min_value，以包含負數範圍。 如果您有不允許負ID的嚴格使用案例，請將序列的min_value還原為1。
 
 **技術演變**
 
@@ -175,7 +175,7 @@ _2020 年 10 月 27 日_
 * 修正了在工作流程&#x200B;**「分割」**&#x200B;活動中顯示目標資料餘數時，而造成伺服器當機的問題。
 * 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。(NEO-26856)
 * 修正了在非管理員使用者定義的執行個體變數的擴充活動時所產生的問題。(NEO-25653)
-* 已修復可阻止工作流資料導出到FDA資料庫的回歸(Teradata、Snowflake)。
+* 修正了可能封鎖將工作流程資料匯出至FDA資料庫(Teradata、Snowflake)的回歸。
 
 ## 第 20.2 發行版本{#release-20-2}
 
@@ -195,17 +195,17 @@ _2021年3月31日_
 
 **功能改進**
 
-* 已對無效soap調用上的崩潰進行了改進。 這可能導致實例在嘗試運行特定複雜查詢時停止工作。 (NEO-28796、NEO-30553)
-* 已修復一個回歸，該回歸由於主機名驗證而阻止使用TLS發送SMS。 (NEO-29581)
-* 已修復導致簽名跟蹤連結無法處理某些電子郵件客戶端的問題。 (NEO-28414、NEO-29615)
-* 使用WebApp跟蹤標籤時已修復跟蹤ID序列，這可能導致與重複ID衝突。 (NEO-27931)
-* 已修復導致每日wfserver重新啟動停止運行工作流的問題。 (NEO-30047)
+* 已進行改善以防止無效soap呼叫的當機。 這可能會造成執行個體在嘗試執行特定的複雜查詢時停止運作。 (NEO-28796、NEO-30553)
+* 修正了由於主機名稱驗證而無法傳送具有TLS的SMS傳遞的回歸。 (NEO-29581)
+* 修正已簽署的追蹤連結無法用於某些電子郵件使用者端的問題。 (NEO-28414、NEO-29615)
+* 修正使用WebApp追蹤標籤時，可能導致與重複ID衝突的追蹤ID序列。 (NEO-27931)
+* 修正造成執行中的工作流程因每日wfserver重新啟動而停止的問題。 (NEO-30047)
 * 修正了在非管理員使用者嘗試同步 Adobe Experience Manager 範本時，使用 API 調用的安全性問題。(NEO-32389、NEO-23487)
-* 修復了在通過模板建立的交貨上關閉交貨對話框時導致控制台崩潰的問題。 (NEO-31547)
-* 已修復建立和保存在 **目標和工作流** 頁籤：預覽將失敗，出現以下錯誤。(NEO-29440)
-* 已修復Tomcat 8.5發送無效答案的問題，這導致事務性消息傳遞日誌中出現錯誤。 (NEO-30858)
-* 修復了導致外部線程管理中記憶體損壞並影響效能的回歸問題。
-* 修復了在使用自定義目標映射時可能導致開單工作流失敗的問題。 自定義架構的主鍵儲存在僅允許整數值的「sourceId」列中。 它現在允許整數和字串值。 (NEO-25914、NEO-28146)
+* 修正在使用範本建立的傳遞上關閉傳遞對話方塊時，導致主控台當機的問題。 (NEO-31547)
+* 修正在內建立和儲存傳遞時發生的問題 **目標定位與工作流程** 行銷活動的索引標籤：預覽會失敗，並出現以下錯誤。(NEO-29440)
+* 修正Tomcat 8.5傳送無效答案的問題，此問題會導致異動訊息記錄發生錯誤。 (NEO-30858)
+* 修正了導致外部執行緒管理中記憶體損毀並影響效能的回歸問題。
+* 修正使用自訂目標對應時，計費工作流程可能失敗的問題。 自訂結構描述的主索引鍵儲存在「sourceId」欄，其中僅允許整數值。 它現在允許整數和字串值。 (NEO-25914、NEO-28146)
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453)
 
 ### ![](assets/do-not-localize/red_2.png)版本 20.2.4 - 版本編號 9187 {#release-20-2-4-build-9187}
@@ -227,23 +227,23 @@ _2020 年 12 月 22 日_
 >
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援期限延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+> * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 
 **功能改進**
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
-* 最初基於oAUTH身份驗證設定訪問管道的觸發器整合身份驗證已更改並移到Adobe I/O。 [瞭解更多資訊](../../integrations/using/configuring-adobe-io.md)
+* 已變更原本以oAUTH驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至Adobe I/O。 [瞭解更多](../../integrations/using/configuring-adobe-io.md)
 * [在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，](https://developer.apple.com/news/?id=c88acm2b)使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
-* 已修復連接錯誤後導致SMPP連接器停用的問題，防止發送其他SMS傳送，並導致效能問題。 (NEO-28609)
+* 修正在連線錯誤後停用SMPP聯結器、無法傳送其他SMS傳遞並導致效能問題的問題。 (NEO-28609)
 * 修正了在清除運算式剖析器時，防止記憶體損毀所造成的伺服器當機問題。(NEO-26856)
 * 修正了在工作流程&#x200B;**「分割」**&#x200B;活動中顯示目標資料餘數時，而造成伺服器當機的問題。
 * 修正了嘗試在查詢後預覽 SMS 訊息時，除&#x200B;**收件者** (nms:recipient) 以外的其他方案可能會顯示錯誤訊息的問題。(NEO-27517)
-* 在使用主機名中顯式定義的埠號發出HTTPS連接請求時，修復了問題，調用失敗，出現證書錯誤。 (NEO-29146)
-* 解決了POSIX線程管理中在市場營銷實例上生成大型核心轉儲檔案的問題。 (NEO-28117、NEO-29281)
-* 已修復問題，這些問題可能導致Web進程在準備交貨或具有重複交貨預覽時崩潰。 (NEO-27790、NEO-27517)
-* 解決了由非管理員操作員觸發時導致交貨或證明發送失敗的問題。 (NEO-28597)
+* 修正使用主機名稱中明確定義的連線埠號碼發出HTTPS連線要求時，呼叫失敗並出現憑證錯誤的問題。 (NEO-29146)
+* 修正POSIX執行緒管理中，在行銷執行個體上產生大型核心傾印檔案的問題。 (NEO-28117、NEO-29281)
+* 修正在準備傳遞或循環傳遞預覽時，可能導致Web程式當機的問題。 (NEO-27790、NEO-27517)
+* 修正非管理員運運算元觸發時，傳送或校樣傳送失敗的問題。 (NEO-28597)
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月發行版本**，其中包含使用 CNAME 的網域設定及新的資料庫監控功能。[進一步瞭解](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)。
 
@@ -253,7 +253,7 @@ _2020 年 9 月 11 日_
 
 * 修正了由於傳送組件上單一錯誤功能導致記憶體過載，導致傳送準備遭到封鎖的迴歸。(NEO-27346)
 * 修正了在重新發佈 Web 應用程式之前，關閉 Apache 和 Web 伺服器的升級後問題。(NEO-27155)
-* 已修復HTML模板管理上的回歸，因為對頁籤的誤解導致跟蹤URL變得可見。 (NEO-25909)
+* 修正HTML範本管理上的回歸，導致追蹤URL因錯誤解讀標籤而變得可見。 (NEO-25909)
 * 修正了資料庫清除工作流程因非受管理資料來源而可能失敗的問題。(NEO-23160、NEO-23364)
 * 清除工作流程現在會依 100 的批次清除過期清單，而非逐一清除。
 * 修正了導致無法修改外部帳戶內部名稱的迴歸。(NEO-27323)
@@ -483,7 +483,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修正了造成清理工作流程當機的迴歸。
 * 修正了在執行實例發佈範本時可能發生的問題。
 * 修正了 collectPrivacyRequests 技術工作流程無法執行的問題。(NEO-20513、NEO-25169)
-* 已修復在升級到build 9080後嘗試連接到Audience Manager時可能發生的問題。 (NEO-20511、NEO-25167)
+* 修正升級至版本編號9080後嘗試連線至Audience Manager時可能發生的問題。 (NEO-20511、NEO-25167)
 * 修正了匯出 PDF 或 XLS 格式報表時可能發生的問題。(NEO-20982、NEO-23493、NEO-23348)
 * 修正了傳送傳遞後，傳遞清單可能顯示傳送兩次的問題。
 * 修正了傳遞準備問題，路由設定設為透過中間來源傳送傳遞時，可能會發生此問題。
@@ -539,7 +539,7 @@ _2020 年 5 月 6 日_
 
 _2020年3月13日_
 
-* 已修復阻止在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
+* 修正無法在Red Hat 7伺服器上部署版本的問題。 (NEO-23332)
 
 ### ![](assets/do-not-localize/red_2.png)版本 20.1 - 版本編號 9122{#release-20-1-build-9122}
 
@@ -550,13 +550,13 @@ _2020年2月17日_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>SnowflakeFDA連接器</strong><br /> </th> 
+   <th> <strong>SnowflakeFDA聯結器</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake是一個完全托管的雲資料倉庫，旨在在儲存和計算級別進行擴展。 有了這種新的連接器，Adobe Campaign現在可以利用Snowflake的力量來執行大資料分割。 此連接器可供所有客戶使用，包括由Adobe托管。</p>
-    <p>有關詳細資訊，請參閱 <a href="../../installation/using/configure-fda-snowflake.md">詳細文檔</a> 和 <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">教程視頻</a>。</p>
+   <td> <p>snowflake是完全受管理的雲端資料倉儲，可在儲存和運算層級上擴充規模。 有了這個新的聯結器，Adobe Campaign現在可以運用Snowflake的強大功能來執行巨量資料細分。 此聯結器可供所有客戶使用，包括由Adobe託管的客戶。</p>
+    <p>如需詳細資訊，請參閱 <a href="../../installation/using/configure-fda-snowflake.md">詳細檔案</a> 和 <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">教學課程影片</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -565,12 +565,12 @@ _2020年2月17日_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>HadoopFDA連接器增強</strong><br /> </th> 
+   <th> <strong>hadoop FDA聯結器增強功能</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>hadoopFDA連接器已經改進，以支援Hadoop3.0和Cloudera。</p>
+   <td> <p>hadoop FDA聯結器已經過改良，可支援Hadoop3.0和Cloudera。</p>
     <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-hadoop.md">詳細文件</a>以瞭解詳情。</p>
    </td> 
   </tr> 
@@ -579,132 +579,132 @@ _2020年2月17日_
 
 **安全性改善功能**
 
-* 改進了報告配置中的安全性，以防止點擊劫持。 這適用於新報告。 對於舊報表，您需要重新發佈它們以應用更改。 (NEO-13282)
+* 改善報告設定中的安全性，以防止點選劫持。 這適用於新報告。 對於舊報告，您需要重新發佈它們以套用變更。 (NEO-13282)
 
-* 修復cryptString中的小記憶體問題。 (NEO-20071)
+* 修正cryptString中的小型記憶體問題。 (NEO-20071)
 
-* 改進了顯示器JSP以修復內部IP洩漏。 (NEO-16821)
+* 改善監視JSP以修正內部IP洩漏。 (NEO-16821)
 
-* 修復了可向非管理員用戶顯示堆棧跟蹤資訊的問題。 (NEO-12388)
+* 修正棧疊追蹤資訊可能顯示給非管理員使用者的問題。 (NEO-12388)
 
-* 改進了對以前會話中快取資料的管理。 (NEO-17039)
+* 改善先前工作階段的快取資料管理。 (NEO-17039)
 
-* 已修復阻止logins.log檔案通過IMS記錄成功登錄嘗試的問題。 (NEO-11004)
+* 修正logins.log檔案無法透過IMS記錄成功登入嘗試的問題。 (NEO-11004)
 
 **功能改進**
 
-* iOS13現在支援HTTP2連接器。
+* HTTP2聯結器現在支援iOS 13。
 
-* 改進了推送通知功能（nms:address和nms:appSubscriptionRcp）使用的表的隔離管理和清理。 對於iOS（僅HTTP2連接器），禁用的令牌現在的處理方式與Android相同。 現在，在NmsAppSubscriptionRcp表中設定了禁用標誌。 [深入了解](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* 改善推播通知功能（nms：address和nms：appSubscriptionRcp）所使用表格的隔離管理和清除。 對於iOS （僅限HTTP2聯結器），停用的Token的處理方式現在與Android相同。 NmsAppSubscriptionRcp表格現在已設定停用旗標。 [深入了解](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* 已在 **JavaScript代碼** 和 **高級JavaScript代碼** 工作流活動，以定義超時期間。 這可防止JavaScript執行階段運行太長。 如果超時時間已過，則停止工作流。 預設超時為1小時。 [深入了解](../../workflow/using/sql-code-and-javascript-code.md)
+* 新選項已新增至 **JavaScript代碼** 和 **進階JavaScript程式碼** 工作流程活動以定義逾時期間。 這可防止JavaScript執行階段執行太久。 如果超過逾時期間，工作流程就會停止。 預設逾時為1小時。 [深入了解](../../workflow/using/sql-code-and-javascript-code.md)
 
-* 當在中間採購伺服器上找不到匹配的關聯時，現在停止傳遞分析，並顯示相應的錯誤消息。
+* 在中間來源伺服器上找不到相符的相似性時，傳遞分析現在會停止，並顯示對應的錯誤訊息。
 
-* 現在支援Postgres的資料庫故障切換：當資料庫伺服器崩潰並重新啟動時，Campaign現在自動重新連接到它。
+* 現在支援Postgres的資料庫容錯移轉：當資料庫伺服器當機並重新啟動時，Campaign會自動重新連線至該伺服器。
 
-* 的 **開始掛起** 視圖已添加到「管理」>「審計」>「工作流狀態」節點。 這允許您監視實例上等待由 **操作管理** 處理。 此視圖隨「市場營銷活動」包一起提供。 [閱讀全文](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* 此 **開始擱置** 檢視已新增至「管理>稽核>工作流程狀態」節點。 這可讓您監視執行個體上所有等待由啟動的工作流程 **operationMgt** 程式。 此檢視隨附於行銷活動套件。 [閱讀全文](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **其他變更**
 
-* 在Linux上，nlserver服務啟動現在使用系統單元，而不是/etc/init.d/nlserver6指令碼。 在安裝20.1軟體包時，會自動執行到新啟動方案的遷移。 /etc/init.d/nlserver6仍然提供，但是為了與nlserver服務（啟動、重新啟動、停止等）交互，建議您直接使用systemctl命令。
+* 在Linux上， nlserver服務啟動現在會使用系統單元，而不是/etc/init.d/nlserver6指令碼。 安裝20.1套件時，會自動移轉至新的啟動配置。 仍提供/etc/init.d/nlserver6，但若與nlserver服務（啟動、重新啟動、停止等）互動，建議您直接使用systemctl命令。
 
-* 最耗用的自定義表已從 **xtkNewId** 序列。
+* 最耗用的自訂表格已從 **xtkNewId** 序列到專用序列。
 
-* 改進的查詢效能，這些效能可能受不必要的資料庫連接的影響。
+* 改善可能受到不必要資料庫連線影響的查詢效能。
 
-* 改進了資料庫更新嚮導的效能，使SQL陳述式數減少，以優化響應時間。
+* 已改善資料庫更新精靈的效能，以減少SQL敘述句，進而最佳化回應時間。
 
-* 資料庫記錄管理已增強。
+* 已增強資料庫記錄管理。
 
-* 連接池的健壯性已得到改善，這可以防止意外連接故障的發生太頻繁。
+* 已改善連線集區的健全性，可防止意外連線失敗過於頻繁。
 
-* 增強了電子郵件地址驗證規則，以在軟錯誤時將地址發送到隔離。 [深入了解](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* 已增強在發生軟錯誤時傳送要隔離之地址的電子郵件地址驗證規則。 [深入了解](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
-* 對於Debian,Campign現在使用系統PCRE庫（如果可用）。
+* 對於Debian，Campaign現在會使用可用系統PCRE程式庫。
 
-* 活動現在允許使用更新的系統ODBC庫。
+* Campaign現在允許使用較新的系統ODBC程式庫。
 
-* 開啟連接以載入富映像時，已向LINE Servlet添加超時。 如果映像載入時間過長，Servlet將停止連接以避免瓶頸。
+* 在開啟連線以載入豐富影像時，已對LINE servlet新增逾時。 如果影像花費太多時間載入，此servlet會停止連線以避免瓶頸。
 
 **修補程式**
 
-* 已修復使用Hadoop連接器時的帳戶密鑰加密問題。
+* 修正使用Hadoop聯結器時的帳戶金鑰加密問題。
 
-* 已修復因實施SSL認證而導致用戶連接在Windows伺服器上失敗的回歸問題。 (NEO-20629)
+* 修正了由於實作SSL憑證而導致的回歸問題，該問題導致使用者在Windows伺服器上的連線失敗。 (NEO-20629)
 
-* 在工作流ID為負時，已修復增量查詢活動的問題。 (NEO-19779)
+* 修正負工作流程ID時增量查詢活動的問題。 (NEO-19779)
 
-* 通過NetezzaFDA連接器運行查詢時，已解決編碼問題。 (NEO-19594)
+* 修正透過NetezzaFDA聯結器執行查詢時的編碼問題。 (NEO-19594)
 
-* 已修復在中使用POST方法時導致錯誤的問題 **Web下載** 工作流事件活動。
+* 修正在中使用POST方法時導致錯誤的問題 **網頁下載** 工作流程事件活動。
 
-* 已通過生成產品建議來解決問題。 (NEO-18176)
+* 修正優惠方案主張產生的問題。 (NEO-18176)
 
-* 使用獲取Web表單模板時修復了頁腳顯示問題。
+* 修正使用贏取網頁表單範本時的頁尾顯示問題。
 
-* 解決了分析連續傳遞內容中URL時可能導致其崩潰的問題。 (NEO-16910)
+* 修正剖析連續傳遞內容中的URL時，可能導致其當機的問題。 (NEO-16910)
 
-* 已修復 **開始** 和 **結束** 建立新市場活動時未計算的欄位。
+* 已修正的問題 **開始** 和 **結束** 建立新行銷活動時未計算的欄位。
 
-* 已修復 **檔案下載** 使用URL時的工作流活動。
+* 已修正的問題 **檔案下載** 使用URL時的工作流程活動。
 
-* 在報表的查詢活動中預覽導入的清單時修復了問題。 (NEO-13119)
+* 修正在報告的查詢活動中預覽匯入清單時的問題。 (NEO-13119)
 
-* 已修復在選擇 **由市場活動支援** 電子郵件編輯器中的個性化塊。
+* 修正在選取「 」時顯示過期影像的問題 **Powered by Campaign** 電子郵件編輯器中的個人化區塊。
 
-* 客戶端與伺服器之間的網路通信得到改進。
+* 改善使用者端與伺服器之間的網路通訊。
 
-* 在同一市場活動中建立過多工作流時，已修復問題。 現在，您不能建立28個以上的工作流。 將顯示警告。
+* 修正在相同行銷活動中建立太多工作流程的問題。 現在您無法建立超過28個工作流程。 系統會顯示警告。
 
-* 使用 **選擇列** 協調選項 **聯合** 工作流活動。
+* 修正使用時發生的問題 **選取的欄** 中的調解選項 **聯集** 工作流程活動。
 
-* 修復了使用工作流中損壞的濃縮清單時可能發生的控制台崩潰問題。 (NEO-18096)
+* 修正在工作流程中使用損毀的擴充清單時，可能發生的主控台當機問題。 (NEO-18096)
 
-* 已修復工作流中可能發生的各種控制台崩潰問題(NEO-18010、NEO-18032)
+* 修正工作流程中可能發生的各種主控台當機問題(NEO-18010、NEO-18032)
 
-* 已修復允許執行 **外部信號** 工作流活動，即使它被禁用。 (NEO-17524)
+* 修正允許執行的問題 **外部訊號** 工作流程活動（即使已停用）。 (NEO-17524)
 
-* 已修復建立新架構時的問題。
+* 修正建立新結構描述時的問題。
 
-* 已解決發送SMS消息時的跟蹤問題。 (NEO-19595)
+* 修正傳送SMS訊息時的追蹤問題。 (NEO-19595)
 
-* 已修復在傳遞指示符中顯示不正確的目標受眾編號的問題。
+* 修正傳送指標中顯示不正確目標對象人數的問題。
 
-* 修復了在通過工作流活動生成說明性報告時顯示不正確百分比的問題。 (NEO-14314)
+* 修正透過工作流程活動產生描述性報告時顯示錯誤百分比的問題。 (NEO-14314)
 
-* 修復了使交貨吞吐量報告在時間視圖參數時顯示不同數字的問題。 (NEO-11783)
+* 修正了時間檢視引數時，傳送輸送量報表顯示不同數字的問題。 (NEO-11783)
 
-* 已修復阻止事務性消息跟蹤指示符由跟蹤工作流更新的問題。 (NEO-17770)
+* 修正追蹤工作流程無法更新交易式訊息追蹤指標的問題。 (NEO-17770)
 
-* 修復了在通過SOAP請求提供服務時導致Web進程崩潰並重新啟動的回歸問題。 (NEO-19482)
+* 修正了透過SOAP請求優惠方案時，造成Web程式當機和重新啟動的回歸問題。 (NEO-19482)
 
-* 修復了如果上載目錄是遠程共用位置，則無法將資料上載到公共資源的問題。 (NEO-19361)
+* 修正上傳目錄為遠端共用位置時，無法上傳資料至公用資源的問題。 (NEO-19361)
 
-* 已修復導致 **從Adobe Experience Cloud引進觀眾** 技術工作流程不斷失敗。 (NEO-18463)
+* 已修正導致 **從Adobe Experience Cloud匯入對象** 技術工作流程tp經常失敗。 (NEO-18463)
 
-* 已修復在使用從Experience Manager導入的模板時無法發送交貨的問題。 (NEO-17540)
+* 修正使用從Experience Manager匯入的範本時無法傳送傳遞的問題。 (NEO-17540)
 
-* 已修復升級到build 9032並阻止實例通過SSL協定連接到FTP伺服器後出現的問題。 (NEO-20498)
+* 修正升級至建置9032後發生且執行個體無法透過SSL通訊協定連線至FTP伺服器的問題。 (NEO-20498)
 
-* 已修復刪除、插入或更新大量資料時出現的問題 **更新資料** 使用FDA架構作為目標維的工作流中的活動。 (NEO-13280)
+* 修正使用刪除、插入或更新大量資料時發生的問題 **更新資料** 使用FDA方案作為目標維度的工作流程中的活動。 (NEO-13280)
 
-* 修復了在HTML內容標籤外部存在Javascript代碼時阻止發送電子郵件的問題。 (NEO-18628)
+* 修正當HTML內容標籤以外有Javascript程式碼時，無法傳送電子郵件的問題。 (NEO-18628)
 
-* 已修復嘗試從已發送郵件的傳遞日誌中顯示鏡像頁面時出現的問題。 (NEO-17976)
+* 修正嘗試從已傳送訊息的傳送記錄檔顯示映象頁面時發生的問題。 (NEO-17976)
 
-* 已修復阻止 **連結到鏡像頁** 個性化塊 **文本內容** 頁籤 **導入HTML** 送來。 (NEO-17568)
+* 已修正導致無法 **映象頁面的連結** 個人化區塊不會顯示在 **文字內容** 索引標籤並按一下 **匯入HTML** 在傳遞中。 (NEO-17568)
 
-* 按一下到已過期的鏡像頁的連結時顯示的錯誤消息已澄清。 (NEO-17340)
+* 已釐清按一下過期映象頁面的連結時顯示的錯誤訊息。 (NEO-17340)
 
-* 已修復導致某些按鈕無法在 **資料分佈** 建立螢幕。
+* 修正中無法使用某些按鈕的問題。 **資料分佈** 建立畫面。
 
-* 已修復在以Asia/Kolkata為時區的實例中安排交付活動時發生的問題。 (NEO-20001)
+* 修正在亞洲/加爾各答作為時區的執行個體中排程傳送活動時發生的問題。 (NEO-20001)
 
-* 傳遞出現關聯配置問題時，現在會顯示錯誤。
+* 當傳送發生相似性設定問題時，現在會顯示錯誤。
 
-* 已修復在中顯示錯誤版本標籤號的問題 **關於** 的子菜單。
+* 修正「 」中顯示錯誤版本標籤編號的問題。 **關於** 功能表。
 
-* 修復了嘗試從工作流中重複交貨的屬性更新工藝路線帳戶時出現的問題。 (NEO-18684)
+* 修正嘗試從工作流程中循環傳送的屬性更新路由帳戶時發生的問題。 (NEO-18684)
 
-* 修復了通過重定向模組連接到實例時出現的問題，這防止了連接在關閉後被正確清理。
+* 修正透過重新導向模組連線至執行個體時，導致連線在關閉後無法正確清理的問題。

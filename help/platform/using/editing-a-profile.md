@@ -42,7 +42,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->當 **[!UICONTROL No longer contact (by any channel)]** 選項，這表示設定檔位於封鎖清單上，亦即設定檔已表示不希望聯絡（例如按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。如需詳細資訊，請參閱[此頁面](../../delivery/using/understanding-quarantine-management.md)。
+>當 **[!UICONTROL No longer contact (by any channel)]** 選項已選取，這表示設定檔位於封鎖清單上，也就是設定檔已表示不想被聯絡（例如，按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。如需詳細資訊，請參閱[此頁面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## 聯絡資訊索引標籤 {#contact-information-tab}
 
@@ -54,7 +54,7 @@ ht-degree: 87%
 
 ## 其他索引標籤 {#other-tab}
 
-此畫面包含可根據需求進行個人化設定的使用者定義欄位。您也可以變更欄位名稱，並定義其格式，透過 **[!UICONTROL Field properties...]**，如下所示：
+此畫面包含可根據需求進行個人化設定的使用者定義欄位。您也可以變更欄位名稱並定義其格式，方法是透過 **[!UICONTROL Field properties...]**，如下所示：
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 

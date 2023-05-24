@@ -20,86 +20,86 @@ ht-degree: 0%
 
 
 
-本節詳細說明從v5.11或v6.02移轉時，在Adobe Campaign v7中要執行的設定。
+本節詳細說明從v5.11或v6.02遷移時，在Adobe Campaign v7中執行的設定。
 
 此外：
 
-* 如果您從v5.11移轉，您也必須完成以下章節所述的設定： [本節](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* 如果您從v6.02移轉，您也必須完成以下章節所述的設定： [本節](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* 如果您從v5.11移轉，您也必須完成中詳述的設定 [本節](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* 如果您從v6.02移轉，您也必須完成中詳述的設定 [本節](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## 時區 {#time-zones}
 
 ### 多時區模式 {#multi-time-zone-mode}
 
-在v6.02中，「多時區」模式僅適用於PostgreSQL資料庫引擎。 現在，無論使用何種類型的資料庫引擎，都可提供此功能。 強烈建議您將基礎轉換為「多時區」基礎。
+在v6.02中，「多時區」模式僅適用於PostgreSQL資料庫引擎。 現在不論使用何種型別的資料庫引擎，都能使用此功能。 我們強烈建議您將基本時區轉換為「多時區」基本時區。
 
-若要使用TIMESTAMP WITH TIMEZONE模式，您還需要新增 **-userTimestamptz:1** 選項。
+若要使用TIMESTAMP WITH TIMEZONE模式，您還需要新增 **-userTimestamptz：1** 選項至升級後命令列。
 
 >[!IMPORTANT]
 >
->若 **-usetimestamptz:1** 參數與不相容的資料庫引擎一起使用時，資料庫將已損壞，您必須還原資料庫的備份並重新執行上述命令。
+>如果 **-usetimestamptz：1** 引數用於不相容的資料庫引擎，您的資料庫將損毀，您必須還原資料庫的備份，然後重新執行上述命令。
 
 >[!NOTE]
 >
->移轉後可透過主控台(**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** 節點)。
+>移轉後可透過主控台變更時區(**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** 節點)。
 >
->有關時區管理的詳細資訊，請參閱 [本節](../../installation/using/time-zone-management.md).
+>如需時區管理的詳細資訊，請參閱 [本節](../../installation/using/time-zone-management.md).
 
 ### Oracle {#oracle}
 
-如果你得到 **ORA 01805** 升級後期出錯，這表示應用程式伺服器和資料庫伺服器之間的Oracle時區檔案不同步。 要重新同步它們，請應用以下步驟：
+如果您收到 **ORA 01805** 升級後發生錯誤，這表示應用程式伺服器和資料庫伺服器之間的Oracle時區檔案不同步。 若要重新同步化它們，請套用下列步驟：
 
-1. 要標識所使用的時區檔案，請運行以下命令：
+1. 若要識別使用的時區檔案，請執行以下命令：
 
    ```
    select * from v$timezone_file
    ```
 
-   時區檔案通常位於 **ORACLE_HOME/oracore/zoneinfo/** 檔案夾。
+   時區檔案通常可在 **oracle_HOME/oracore/zoneinfo/** 資料夾。
 
-1. 請確定兩個伺服器上的時區檔案相同。
+1. 請確定這兩部伺服器上的時區檔案都相同。
 
 如需詳細資訊，請造訪： [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-客戶端和伺服器之間的時區不對齊也可能造成一些滯後。 這就是為什麼我們建議在用戶端和伺服器端使用相同版本的Oracle程式庫，這兩個時區必須相同。
+使用者端和伺服器之間的時區不符也可能會造成一些延遲。 因此，我們建議在使用者端和伺服器端使用相同版本的Oracle庫，兩個時區必須相同。
 
-檢查兩側是否位於同一時區：
+若要檢查兩側是否位於相同的時區：
 
-1. 運行以下命令，檢查客戶端上的時區檔案的版本：
+1. 執行以下命令，檢查使用者端時區檔案的版本：
 
    ```
    genezi -v
    ```
 
-   genezi是二進位的，位於 **$ORACLE_HOME/bin** 存放庫。
+   genezi是中的二進位檔 **$ORACLE_HOME/bin** 存放庫。
 
-1. 運行以下命令，檢查伺服器端的時區檔案版本：
+1. 執行下列命令，檢查伺服器端的時區檔案版本：
 
    ```
    select * from v$timezone_file
    ```
 
-1. 若要變更用戶端的時區檔案，請使用 **ORA_TZFILE** 環境變數。
+1. 若要變更使用者端的時區檔案，請使用 **ORA_TZFILE** 環境變數。
 
 ## 安全性 {#security}
 
-### 安全區域 {#security-zones}
+### 安全性區域 {#security-zones}
 
 >[!IMPORTANT]
 >
->基於安全考量，預設不再存取Adobe Campaign平台：您必須配置安全區域，因此收集運算子IP地址。
+>基於安全性理由，預設不再可存取Adobe Campaign平台：您必須設定安全性區域，因此請收集操作員IP位址。
 
-Adobe Campaign v7包含 **安全區**. 每個用戶必須與某個區域關聯才能登錄實例，並且用戶的IP地址必須包含在安全區域中定義的地址或地址範圍中。 可在Adobe Campaign伺服器設定檔案中設定安全區域。 必須在主控台中定義與使用者相關聯的安全區域(**[!UICONTROL Administration > Access management > Operators]**)。
+Adobe Campaign v7涉及 **安全性區域**. 每個使用者都必須與區域相關聯，才能登入執行個體，而且使用者的IP位址必須包含在安全性區域中定義的位址或位址範圍內。 您可以在Adobe Campaign伺服器設定檔案中設定安全性區域。 必須在主控台中定義與使用者相關聯的安全區域(**[!UICONTROL Administration > Access management > Operators]**)。
 
-**移轉前**，請要求網路管理員幫助您定義要在遷移後激活的安全區域。
+**移轉前**，請要求您的網路管理員協助您定義要在移轉後啟用的安全性區域。
 
-**升級後** （在伺服器重新啟動之前），您必須配置安全區域。
+**升級後** （在伺服器重新啟動之前），您必須設定安全性區域。
 
-在中找到安全區域配置 [本節](../../installation/using/security-zones.md).
+安全性區域設定可在以下位置找到： [本節](../../installation/using/security-zones.md).
 
-### 用戶密碼 {#user-passwords}
+### 使用者密碼 {#user-passwords}
 
-在v7中， **內部** 和 **管理員** 操作員連接必須用密碼保護。 強烈建議為這些帳戶和所有運算子帳戶分配密碼， **移轉前**. 如果您尚未為 **內部**，您將無法連線。 要將密碼分配給 **內部**，輸入以下命令：
+在v7中， **內部** 和 **管理員** 操作員連線必須以密碼保護。 我們強烈建議指派密碼給這些帳戶和所有操作員帳戶， **移轉前**. 如果您尚未指定密碼 **內部**，您將無法連線。 若要將密碼指派給 **內部**，輸入下列命令：
 
 ```
 nlserver config -internalpassword
@@ -111,50 +111,50 @@ nlserver config -internalpassword
 
 ### v7中的新功能 {#new-features-in-v7}
 
-* 沒有權限的使用者無法再連線至Adobe Campaign。 其權限必須手動新增，例如，透過建立 **connect**.
+* 沒有許可權的使用者無法再連線至Adobe Campaign。 必須手動新增其許可權，例如，透過建立名為的許可權 **connect**.
 
-   在升級後期間會識別並列出受此修改影響的使用者。
+   受此修改影響的使用者會在升級後識別並列出。
 
-* 如果密碼為空，則追蹤不再有效。 如果是這種情況，錯誤訊息會通知您並請您重新設定它。
-* 使用者密碼不再儲存在 **xtk:sessionInfo** 綱要。
-* 現在需要管理權限才能使用 **xtk:builder:評估JavaScript** 和 **xtk:builder:評估JavaScriptTemplate** 函式。
+* 如果密碼為空，追蹤就不再有效。 如果是這種情況，錯誤訊息會通知您並要求您重新設定。
+* 使用者密碼不再儲存在 **xtk：sessionInfo** 結構描述。
+* 現在需要管理許可權才能使用 **xtk:builder:EvaluateJavaScript** 和 **xtk:builder:EvaluateJavaScriptTemplate** 函式。
 
-某些現成可用的結構已修改，現在預設僅可透過具有的運算子的寫入存取存取權存取 **管理員** 權限：
+某些現成可用的結構描述已修改，現在預設只有具備寫入許可權的運運算元才可存取 **管理員** 許可權：
 
-* ncm:publishing
-* nl：監視
-* nms:calendar
-* xtk:builder
-* xtk：連接
-* xtk:dbInit
-* xtk:entityBackupNew
-* xtk:entityBackupOriginal
-* xtk:entityOriginal
-* xtk:form
-* xtk:funcList
-* xtk:fusion
-* xtk:image
-* xtk:javascript
-* xtk:jssp
-* xtk:jst
-* xtk:navtree
-* xtk:operatorGroup
-* xtk:package
-* xtk:queryDef
-* xtk:resourceMenu
-* xtk:rights
-* xtk:schema
-* xtk:scriptContext
-* xtk:specFile
-* xtk:sql
-* xtk:sqlSchema
-* xtk:srcSchema
-* xtk:strings
-* xtk:xslt
+* ncm：發佈
+* nl：monitoring
+* nms：calendar
+* xtk：builder
+* xtk：連線
+* xtk：dbInit
+* xtk：entityBackupNew
+* xtk：entityBackupOriginal
+* xtk：entityOriginal
+* xtk：form
+* xtk：funcList
+* xtk：fusion
+* xtk：image
+* xtk：javascript
+* xtk：jssp
+* xtk：jst
+* xtk：navtree
+* xtk：operatorGroup
+* xtk：package
+* xtk：queryDef
+* xtk：resourceMenu
+* xtk：rights
+* xtk：schema
+* xtk：scriptContext
+* xtk：specFile
+* xtk：sql
+* xtk：sqlSchema
+* xtk：srcSchema
+* xtk：strings
+* xtk：xslt
 
-### Sessiontoken參數 {#sessiontoken-parameter}
+### Sessiontoken引數 {#sessiontoken-parameter}
 
-在v5中， **sessiontoken** 參數可在用戶端上運作（概述類型畫面清單、連結編輯器等） 和伺服器端（網頁應用程式、報表、jsp、jssp等）。 在v7中，它只能在伺服器端運作。 如果您想要恢復v5的完整功能，必須使用此參數修改連結，並透過連線頁面傳遞：
+在v5中， **sessiontoken** 引數適用於兩個使用者端（概觀型別畫面清單、連結編輯器等） 和伺服器端（網頁應用程式、報表、jsp、jssp等）。 在v7中，它僅適用於伺服器端。 如果您想要恢復到v5的完整功能，您必須使用此引數修改連結，並透過連線頁面傳遞：
 
 連結範例：
 
@@ -162,7 +162,7 @@ nlserver config -internalpassword
 /view/recipientOverview?__sessiontoken=<trusted login>
 ```
 
-使用「連線」頁面的新連結：
+使用連線頁面的新連結：
 
 ```
 /nl/jsp/logon.jsp?login=<trusted login>&action=submit&target=/view/recipientOverview
@@ -170,21 +170,21 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->如果您使用連結了受信任IP掩碼的運算子，請檢查該運算子是否具有最低權限，並檢查它是否位於 **sessionTokenOnly** 模式。
+>如果您使用連結至可信任IP遮罩的運運算元，請檢查該運運算元是否有最低許可權，以及它是否位於的安全區域中。 **sessionTokenOnly** 模式。
 
 ### SQL函式 {#sql-functions}
 
-未知的SQL函式調用不再自然地發送到伺服器。 目前，必須將所有SQL函式添加到 **xtk:funcList** 結構(如需詳細資訊，請參閱 [本節](../../configuration/using/adding-additional-sql-functions.md))。 遷移時，在升級後期間會添加一個選項，允許您與舊的未聲明SQL函式保持相容。 如果您想繼續使用這些函式，請檢查 **XtkPassUnknownSQLFunctionsToRDBMS** 期權確定於 **[!UICONTROL Administration > Platform > Options]** 節點層級。
+不明的SQL函式呼叫不再自然傳送至伺服器。 目前，所有SQL函式都必須新增至 **xtk：funcList** 結構描述(如需詳細資訊，請參閱 [本節](../../configuration/using/adding-additional-sql-functions.md))。 移轉時，會在升級後期間新增一個選項，可讓您維持與舊版未宣告SQL函式的相容性。 如果要繼續使用這些函式，請檢查 **XtkPassUnknownSQLFunctionsToRDBMS** 選項的確定義於 **[!UICONTROL Administration > Platform > Options]** 節點層級。
 
 >[!IMPORTANT]
 >
->由於此選項會帶來安全風險，我們強烈建議不要使用此選項。
+>由於此選項會帶來安全性風險，我們強烈建議不要使用此選項。
 
 ### JSSP {#jssp}
 
-如果您想要透過HTTP通訊協定（而非HTTPS）授權存取特定頁面，例如，在您的Web應用程式中，無論在安全區中執行哪些設定，您必須指定 **httpAllowed=&quot;true&quot;** 參數。
+如果您想要透過HTTP通訊協定（而非HTTPS）授權存取某些頁面，例如在您的Web應用程式中，無論在安全性區域中執行何種設定，您都必須指定 **httpAllowed=&quot;true&quot;** 對應轉送規則中的引數。
 
-如果您使用匿名JSSP，則必須新增 **httpAllowed=&quot;true&quot;** JSSP的中繼規則中的參數(**[!UICONTROL serverConf.xml]** 檔案):
+如果您使用匿名JSSP，則必須新增 **httpAllowed=&quot;true&quot;** JSSP的轉送規則引數(**[!UICONTROL serverConf.xml]** file)：
 
 例如：
 
@@ -197,13 +197,13 @@ nlserver config -internalpassword
 
 ### JavaScript {#javascript}
 
-Adobe Campaign v7整合了更新的JavaScript解釋器。 不過，此更新可能導致某些指令碼運作不正常。 由於上一個引擎比較寬容，因此某些語法會起作用，而新版引擎則不再適用。
+Adobe Campaign v7整合了更新的JavaScript解譯器。 不過，此更新可能會導致某些指令碼無法運作。 由於舊版引擎比較寬容，某些語法將可運作，而新版引擎已無法運作。
 
-此 **[!UICONTROL myObject.@attribute]** 語法現在僅對XML對象有效。 此語法可用於個人化傳遞和內容管理。 如果您在非XML物件上使用此類語法，則個人化功能將無法繼續運作。
+此 **[!UICONTROL myObject.@attribute]** 語法現在僅對XML物件有效。 此語法可用於個人化傳送和內容管理。 如果您在非XML物件上使用此型別的語法，則個人化功能將無法再運作。
 
-對於所有其他物件類型，語法現在為 **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. 例如，使用下列語法的非XML對象： **[!UICONTROL employee.@sn]**，現在必須使用下列語法： **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+對於所有其他物件型別，語法現在為 **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. 例如，使用下列語法的非XML物件： **[!UICONTROL employee.@sn]**，現在必須使用下列語法： **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
-* 舊版語法：
+* 先前的語法：
 
    ```
    employee.@sn
@@ -215,9 +215,9 @@ Adobe Campaign v7整合了更新的JavaScript解釋器。 不過，此更新可�
    employee["sn"]
    ```
 
-要更改XML對象中的值，現在需要先更新值，然後才添加XML節點：
+若要變更XML物件中的值，您現在需要在新增XML節點之前先更新值：
 
-* 舊版JavaScript程式碼：
+* 舊的JavaScript程式碼：
 
    ```
    var cellStyle = node.style.copy();
@@ -233,9 +233,9 @@ Adobe Campaign v7整合了更新的JavaScript解釋器。 不過，此更新可�
    this.styles.appendChild(cellStyle);
    ```
 
-您不能再將XML屬性用作表鍵。
+您無法再使用XML屬性做為資料表索引鍵。
 
-* 舊版語法：
+* 先前的語法：
 
    ```
    if(serverForm.activities[ctx.activityHistory.activity[0].@name].type !="end")
@@ -249,45 +249,45 @@ Adobe Campaign v7整合了更新的JavaScript解釋器。 不過，此更新可�
 
 ### SQLData {#sqldata}
 
-為了加強執行個體安全性，Adobe Campaign v7已引入新語法，以取代以SQLData為基礎的語法。 如果您透過此語法使用這些程式碼元素，則必須加以修改。 主要因素包括：
+為加強執行個體安全性，Adobe Campaign v7中引進了新語法，以取代基於SQLData的語法。 如果您將這些程式碼元素與此語法搭配使用，則必須加以修改。 相關的主要元素包括：
 
-* 依子查詢篩選：新語法以 `<subQuery>`  定義子查詢的元素
-* 匯總：新語法為「aggregate function(collection)」
-* 按聯接篩選：新語法為 `[schemaName:alias:xPath]`
+* 依子查詢篩選：新語法以 `<subQuery>`  要定義子查詢的元素
+* 彙總：新語法為「彙總函式（集合）」
+* 依加入篩選：新語法為 `[schemaName:alias:xPath]`
 
-已修改queryDef(xtk:queryDef)架構：
+已修改queryDef (xtk：queryDef)結構描述：
 
-* 新 `<subQuery>`  元素可用於替換SQLData中包含的SELECT
-* 為@setOperator屬性引入兩個新值：「IN」和「NOT IN」
-* 新 `<where>`  元素，是 `<node>` 元素：這可以讓您在SELECT中進行「子選擇」
+* 新 `<subQuery>`  元素可用來取代SQLData中包含的SELECT
+* @setOperator屬性引進了兩個新值「IN」和「NOT IN」
+* 新 `<where>`  元素，是 `<node>` 元素：這可讓您在SELECT中進行「子選取」
 
-使用&quot;@expr&quot;屬性時，可能會存在SQLData。 可以搜尋下列詞語：&quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
+使用「@expr」屬性時，SQLData可能存在。 可以搜尋下列字詞：「SQLData」、「aliasSqlTable」、「sql」。
 
-Adobe Campaign v7執行個體預設為安全。 安全性取決於 **[!UICONTROL serverConf.xml]** 檔案：the **allowSQLInjents** 屬性管理SQL語法安全性。
+Adobe Campaign v7例項預設為安全狀態。 安全性是指 **[!UICONTROL serverConf.xml]** 檔案： **allowSQLInjection** 屬性管理SQL語法安全性。
 
-如果在升級後執行期間發生SQLData錯誤，則必須修改此屬性以暫時允許使用基於SQLData的語法，從而允許重寫代碼。 若要這麼做，您必須在 **serverConf.xml** 檔案：
+如果在升級後執行期間發生SQLData錯誤，您必須修改此屬性以暫時允許使用以SQLData為基礎的語法，允許您重寫程式碼。 為了執行此操作，以下選項必須在 **serverConf.xml** 檔案：
 
 ```
 allowSQLInjection="true"
 ```
 
-因此，請使用下列命令重新啟動升級後：
+因此，請使用以下命令重新啟動升級後：
 
 ```
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-您必須配置安全區域(請參閱 [安全性](#security))，然後變更選項以重新啟用安全性：
+您必須設定安全性區域(請參閱 [安全性](#security))，然後變更選項以重新啟用安全性：
 
 ```
 allowSQLInjection="false"
 ```
 
-以下提供舊語法與新語法的比較範例。
+下方提供舊語法和新語法的比較範例。
 
-**按子查詢篩選**
+**依子查詢篩選**
 
-* 舊版語法：
+* 先前的語法：
 
    ```
    <condition expr="@id NOT IN ([SQLDATA[SELECT iOperatorId FROM XtkOperatorGroup WHERE iGroupId = $(../@owner-id)]])" enabledIf="$(/ignored/@ownerType)=1"/>
@@ -308,7 +308,7 @@ allowSQLInjection="false"
    </condition>
    ```
 
-* 舊版語法：
+* 先前的語法：
 
    ```
    <queryFilter name="dupEmail" label="Emails duplicated in the folder" schema="nms:recipient">
@@ -339,9 +339,9 @@ allowSQLInjection="false"
 
 **彙總**
 
-匯總函式（集合）
+彙總函式（集合）
 
-* 舊版語法：
+* 先前的語法：
 
    ```
    <node sql="(select count(*) from NmsNewsgroup WHERE O0.iOperationId=iOperationId)" alias="@nbMessages"/>
@@ -355,11 +355,11 @@ allowSQLInjection="false"
 
    >[!NOTE]
    >
-   >對集料函式自動進行接頭。 不再需要指定條件WHERE O0.iOperationId=iOperationId。
+   >系統會自動執行集合函式的接點。 不再需要指定條件WHERE O0.iOperationId=iOperationId。
    >
-   >無法再使用「count(&#42;)」函式。 您必須使用&quot;countall()&quot;。
+   >不能再使用&quot;count(&#42;)」函式。 您必須使用「countall()」。
 
-* 舊版語法：
+* 先前的語法：
 
    ```
    <node sql="(select Sum(iToDeliver) from NmsDelivery WHERE O0.iOperationId=iOperationId AND iSandboxMode=0 AND iState>=45)" alias="@nbMessages"/>
@@ -372,13 +372,13 @@ allowSQLInjection="false"
                      <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
    ```
 
-**按聯接進行篩選**
+**依聯結篩選**
 
 `[schemaName:alias:xPath]`
 
-別名為可選
+別名是選用的
 
-* 舊版語法：
+* 先前的語法：
 
    ```
    <condition expr={"[" + joinPart.destination.nodePath + "] = [SQLDATA[W." + joinPart.source.SQLName + "]]"}
@@ -393,7 +393,7 @@ allowSQLInjection="false"
 
 **提示與秘訣**
 
-在 `<subQuery>` 元素，以參考主要欄位的「欄位」欄位 `<queryDef>`   元素，請使用下列語法： `[../@field]`
+在 `<subQuery>` 元素，以參照主要的 `<queryDef>`   元素，請使用下列語法： `[../@field]`
 
 範例:
 
@@ -420,15 +420,15 @@ allowSQLInjection="false"
 
 ## 衝突 {#conflicts}
 
-移轉是透過升級後執行，而報表、表單或網頁應用程式中可能會出現衝突。 這些衝突可從主控台解決。
+移轉會透過升級後執行，且衝突可能會出現在報表、表單或網頁應用程式中。 這些衝突可以從主控台解決。
 
-資源同步後， **postugrade** 命令可讓您檢測同步是否生成錯誤或警告。
+資源同步之後， **升級後** 命令可讓您偵測同步化是否產生錯誤或警告。
 
-### 查看同步結果 {#view-the-synchronization-result}
+### 檢視同步化結果 {#view-the-synchronization-result}
 
-可以用兩種方式查看同步結果：
+您可以透過兩種方式檢視同步化結果：
 
-* 在命令行介面中，錯誤由三個>形形成 **>>** 並自動停止同步。 雙形箭頭就會發出警告 **>>** 同步完成後，和必須解析。 在升級後的結尾處，命令提示符中將顯示一個摘要。 例如：
+* 在命令列介面中，錯誤會以三個V形符號具體化 **>>>** 和同步會自動停止。 以雙V形符號具體化警告 **>>** 同步完成後，必須解析和。 升級後結束時，命令提示字元中會顯示摘要。 例如：
 
    ```
    2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -439,45 +439,45 @@ allowSQLInjection="false"
    2013-04-09 07:48:39.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
    ```
 
-   如果警告涉及資源衝突，則需要操作員注意才能解決。
+   如果警告與資源衝突有關，操作員必須注意解決衝突。
 
-* 此 **postupgrade_`<server version number>`升級後時間(_T)`>`.log** 檔案包含同步結果。 預設可在下列目錄中使用： **安裝目錄/var/`<instance>`postugrade**. 錯誤和警告由 **錯誤** 和 **警告** 屬性。
+* 此 **postupgrade_`<server version number>`升級後時間(_T)`>`.log** 檔案包含同步化結果。 預設可在以下目錄中取得： **安裝目錄/var/`<instance>`升級後**. 錯誤和警告由 **錯誤** 和 **警告** 屬性。
 
 ### 解決衝突 {#resolve-a-conflict}
 
-只有高級運算子和那些已獲得「管理員」權限的運算子才能解決衝突。
+解決衝突必須由進階操作員及具有「管理員」許可權的操作員執行。
 
-要解決衝突，請應用以下進程：
+若要解決衝突，請套用下列程式：
 
-1. 在Adobe Campaign樹結構中，將游標放在 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
-1. 在清單中選擇要解決的衝突。
+1. 在Adobe Campaign樹狀結構中，將游標置於 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
+1. 在清單中選取您要解決的衝突。
 
-解決衝突有三種可能的方法：
+有三種可能的方法來解決衝突：
 
-* **[!UICONTROL Declared as resolved]**:需要事先操作員干預。
-* **[!UICONTROL Accept the new version]**:如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
-* **[!UICONTROL Keep the current version]**:表示已拒絕更新。
+* **[!UICONTROL Declared as resolved]**：需要操作員事前介入。
+* **[!UICONTROL Accept the new version]**：如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
+* **[!UICONTROL Keep the current version]**：表示更新遭拒。
 
    >[!IMPORTANT]
    >
-   >如果選擇此解析模式，則可能會丟失新版本中的修補程式。 因此，強烈建議不要僅對專家運算子使用或保留此選項。
+   >如果您選取此解決模式，新版本中可能會遺失修補程式。 因此，強烈建議不要使用此選項，或僅將此選項保留給專家運運算元。
 
-如果選擇手動解決衝突，請按以下步驟繼續：
+如果您選擇手動解決衝突，請按照以下步驟進行：
 
-1. 在視窗的下方，搜尋 **`_conflict_ string`** 查找具有衝突的實體。 隨新版本安裝的實體包含 **new** 引數中，與上一版本匹配的實體包含 **cus** 引數。
+1. 在視窗的下半部，搜尋 **`_conflict_ string`** 以找出有衝突的圖元。 與新版本一起安裝的實體包含 **新** 引數，符合先前版本的實體包含 **cus** 引數。
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. 刪除您不想保留的版本。 刪除 **`_conflict_argument_ string`** 你所保留的實體。
+1. 刪除您不想保留的版本。 刪除 **`_conflict_argument_ string`** 實體的URL編號。
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. 去找你本該解決的衝突。 按一下 **[!UICONTROL Actions]** 圖示並選取 **[!UICONTROL Declare as resolved]**.
-1. 儲存您的變更：衝突現在已經解決。
+1. 前往您原本要解決的衝突。 按一下 **[!UICONTROL Actions]** 圖示並選取 **[!UICONTROL Declare as resolved]**.
+1. 儲存您的變更：衝突現已解決。
 
 ## Tomcat {#tomcat}
 
-Adobe Campaign v7中整合的Tomcat伺服器已變更版本。 因此，其安裝資料夾(tomcat-6)也發生了更改(tomcat 7)。 升級後，請務必檢查路徑是否確實連結至更新的資料夾(位於 **[!UICONTROL serverConf.xml]** 檔案):
+Adobe Campaign v7中的整合Tomcat伺服器版本已變更。 因此，它的安裝資料夾(tomcat-6)也改變了(tomcat 7)。 升級後，請務必檢查路徑是否確實連結到更新後的資料夾(在 **[!UICONTROL serverConf.xml]** file)：
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
@@ -493,27 +493,27 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 ### 必要條件 {#prerequisites}
 
-**升級後之前**，您必須從6.02中刪除v7中不再存在的所有結構參考。
+**升級後之前**，您必須從6.02中刪除所有不再存在於v7中的結構描述參考。
 
-* nms:emailOfferView
-* nms:webOfferView
-* nms:callCenterOfferView
-* nms:mobileOfferView
-* nms:paperOfferView
+* nms：emailOfferView
+* nms：webOfferView
+* nms：callCenterOfferView
+* nms：mobileOfferView
+* nms：paperOfferView
 
 ### 選件內容 {#offer-content}
 
-在v7中，選件內容已移動。 在v6.02中，內容位於每個表示結構中(**nms:emailOfferView**)。 在v7中，內容現在位於選件結構中。 升級後，內容因此不會顯示在介面中。 升級後，您必須重新建立選件內容，或開發指令碼，以自動將內容從表示結構移至選件結構。
+在v7中，已移動選件內容。 在v6.02中，內容位於每個呈現結構描述中(**nms：emailOfferView**)。 在v7中，內容現在位於選件結構描述中。 因此，升級後內容將不會顯示在介面中。 升級後，您必須重新建立優惠方案內容，或開發指令碼，自動將內容從代表結構描述移至優惠方案結構描述。
 
 >[!IMPORTANT]
 >
->如果在移轉後要傳送某些使用已設定選件的傳送，您必須刪除，並在v7中重新建立這些傳送。 如果您無法這麼做，則會提供「相容性模式」。 不建議使用此模式，因為您不會從Interaction v7中的所有新功能中受益。 這是一種過渡模式，可讓您在實際6.1移轉前完成持續進行的促銷活動。 有關此模式的詳細資訊，請與我們聯繫。
+>如果某些使用已設定選件的傳送會在移轉後傳送，您必須刪除並在v7中重新建立所有這些傳送。 如果您無法這麼做，系統會提供「相容性模式」。 不建議使用此模式，因為您將無法受益於Interaction v7中的所有新功能。 這是一種轉換模式，可讓您在實際移轉6.1版之前完成進行中的行銷活動。 如需有關此模式的詳細資訊，請聯絡我們。
 
-移動指令碼的示例(**interactionTo610_full_XX.js**) **移轉** 資料夾(在Adobe Campaign v7資料夾中)。 此檔案顯示用戶端指令碼的範例，每個選件使用單一電子郵件表示法( **[!UICONTROL htmlSource]** 和 **[!UICONTROL textSource]** 欄位)。 內容 **NmsEmailOfferView** 表格已移至選件表格。
+移動指令碼的範例(**interactionTo610_full_XX.js**)中提供 **移轉** Adobe Campaign v7資料夾中的資料夾。 此檔案顯示使用者端使用單一電子郵件表示方式(每個選件( **[!UICONTROL htmlSource]** 和 **[!UICONTROL textSource]** 欄位)。 中的內容 **NmsEmailOfferView** 表格已移至選件表格。
 
 >[!NOTE]
 >
->使用此指令碼不允許您從「內容管理」和「呈現函式」選項中受益。 若要從這些函式中獲益，您必須重新思考目錄選件，尤其是選件內容和設定空間。
+>使用此指令碼無法讓您受益於「內容管理」和「演算函式」選項。 若要受益於這些功能，您必須重新思考目錄選件，尤其是選件內容和設定空間。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -585,41 +585,41 @@ logInfo("Done");
 
 ### 測試和設定 {#tests-and-configuration}
 
-如果您只有一個環境，移動選件內容後，以下是應遵循的程式。 在此案例中，以「ENV」為例。
+如果您只有一個環境，以下是移動優惠方案內容後要遵循的程式。 在此案例中，讓我們以「環境」為例。
 
-1. 在所有「ENV」環境中提供空格，請更新所用欄位清單。 例如，對於只使用 **[!UICONTROL htmlSource]**，您必須新增 **[!UICONTROL view/htmlSource]**.
+1. 在所有「環境」環境選件空間中，更新使用的欄位清單。 例如，對於只使用 **[!UICONTROL htmlSource]**，您必須新增 **[!UICONTROL view/htmlSource]**.
 
    ![](assets/migration_interaction_2.png)
 
-1. 在 **[!UICONTROL Type of Environment]** 欄位 **[!UICONTROL General]** 索引標籤，選取 **[!UICONTROL Live]**.
+1. 在 **[!UICONTROL Type of Environment]** 內的欄位 **[!UICONTROL General]** 索引標籤，選取 **[!UICONTROL Live]**.
 
    ![](assets/migration_interaction_3.png)
 
-1. 建立設計環境（例如「ENV_DESIGN」）並將其連接到ENV線上環境。
+1. 建立設計環境（例如「ENV_DESIGN」）並將其連線到環境線上環境。
 
    ![](assets/migration_interaction_4.png)
 
-1. 部署所有「ENV」環境提供空間(按一下右鍵> **[!UICONTROL Actions > Deploy]**)，然後選取「ENV_DESIGN」環境。
+1. 部署所有「環境」環境選件空間(按一下右鍵> **[!UICONTROL Actions > Deploy]**)並選取「環境_設計」環境。
 
    ![](assets/migration_interaction_5.png)
 
-1. 對所有「ENV」環境選件都執行相同操作。
-1. 在相關通道上激活所有環境都提供「ENV_DESIGN」。
-1. 測試讓優惠方案上線。 如果您未遇到任何問題，請對最新的工作流任務執行掛起的任務 **[!UICONTROL Offer notification]** (offerMgt)，讓所有選件都上線。
+1. 對所有「環境」環境選件執行相同操作。
+1. 在相關管道上啟用所有環境選件「ENV_DESIGN」。
+1. 測試讓優惠上線。 如果您沒有遇到任何問題，請在最新的工作流程任務上執行暫止任務 **[!UICONTROL Offer notification]** (offerMgt)，讓所有優惠方案上線。
 
    ![](assets/migration_interaction_6.png)
 
-1. 執行全面的測試。
+1. 執行完整的測試。
 
    >[!NOTE]
    >
-   >線上的類別和選件名稱會在上線後修改。 在傳入的通道上，更新對選件和類別的所有參考。
+   >線上類別和優惠方案的名稱會在上線後修改。 在傳入頻道上，更新優惠和類別的所有參考。
 
 ## 報告 {#reports}
 
 ### 標準報表 {#standard-reports}
 
-所有標準報表目前都使用轉譯引擎v6.x。如果您已將JavaScript新增至這些報表，則某些元素可能無法再運作。 事實上，舊版JavaScript與v6.x演算引擎不相容。 因此，您必須檢查JavaScript程式碼，之後再加以調整。 您應測試每個報表，尤其是匯出函式。
+所有標準報表目前都使用轉譯引擎v6.x。如果您已將JavaScript新增至這些報表，某些元素可能無法再運作。 事實上，舊版JavaScript與v6.x轉譯引擎不相容。 因此，您必須檢查JavaScript程式碼，並在稍後加以調整。 您應該測試每個報告，特別是匯出函式。
 
 ### 個人化報表 {#personalized-reports}
 
@@ -627,20 +627,20 @@ logInfo("Done");
 
 ![](assets/migration_reports_1.png)
 -->
-如果您想要受益於新的報表功能，則必須重新發佈報表。 在此情況下，請檢查所有指令碼，並視需要加以變更。 關於PDF匯出，如果您已新增Open Office的特定指令碼，則此指令碼將不再適用於新的PDF匯出引擎(PhantomJS)。
+如果您想從新報告功能中獲益，則必須重新發佈報告。 在此情況下，請檢查所有指令碼，並視需要加以變更。 關於PDF匯出，如果您已為Open Office新增特定指令碼，這將無法再與新的PDF匯出引擎(PhantomJS)搭配使用。
 
 ## 網站應用程式 {#web-applications}
 
-有兩個Web應用程式系列：
+有兩種網路應用程式系列：
 
-* 確定的Web應用程式（一起查看，批准表，外聯網內部發展）,
-* 匿名的網路應用程式（網路或調查表表單）。
+* 已識別的網頁應用程式（一起檢視、核准表單、外部網路內部開發）、
+* 匿名網路應用程式（網路或調查表）。
 
-### 已識別的Web應用程式 {#identified-web-applications}
+### 已識別的網頁應用程式 {#identified-web-applications}
 
-與報表([了解更多](#reports))，如果您已新增JavaScript，則必須視需要檢查並調整。 如果您想從v7藍色橫幅（包含藍色標籤）中獲益，則必須重新發佈Web應用程式。
+就像報告一樣([瞭解更多](#reports))，如果您已新增JavaScript，則必須檢查並視需要調整。 如果您希望受益於v7藍色橫幅（包含藍色標籤），則必須重新發佈網頁應用程式。
 
-v7中的Web應用程式連接方法已更改。 如果您在已識別的Web應用程式中遇到任何連線問題，您必須暫時啟用 **allowUserPassword** 和 **sessionTokenOnly** 選項 **serverConf.xml** 檔案。 升級後，修改下列選項值：
+Web應用程式連線方法在v7中已變更。 如果您在已識別的Web應用程式中遇到任何連線問題，您必須暫時啟動 **allowUserPassword** 和 **sessionTokenOnly** 中的選項 **serverConf.xml** 檔案。 升級後，請修改以下選項值：
 
 ```
 allowUserPassword="true"
@@ -650,13 +650,13 @@ allowUserPassword="true"
 sessionTokenOnly="true"
 ```
 
-因此，請使用下列命令重新啟動升級後：
+因此，請使用以下命令重新啟動升級後：
 
 ```
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-在發佈之前，請先在v6.x轉譯引擎中測試您的Web應用程式。 然後停用這兩個選項。
+請先在v6.x轉譯引擎中測試Web應用程式，然後再發佈。 然後停用這兩個選項。
 
 ```
 allowUserPassword="false"
@@ -666,6 +666,6 @@ allowUserPassword="false"
 sessionTokenOnly="false"
 ```
 
-### 匿名Web應用程式 {#anonymous-web-applications}
+### 匿名網路應用程式 {#anonymous-web-applications}
 
-如果您遇到任何問題，請重新發佈Web應用程式。
+如果您遇到任何問題，請重新發佈網頁應用程式。

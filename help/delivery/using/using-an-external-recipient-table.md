@@ -17,12 +17,12 @@ ht-degree: 18%
 
 
 
-如果傳送表格是外部表格，則您需要進行其他設定。 此 **[!UICONTROL nms:seedmember]** 必須擴展架構。 種子地址中會新增一個索引標籤，以定義足夠的欄位，如下所示：
+如果傳遞表格是外部表格，您將需要執行其他設定。 此 **[!UICONTROL nms:seedmember]** 結構描述必須擴充。 種子地址會新增索引標籤，以定義適當的欄位，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-在這種情況下，若要將種子地址添加到傳送中，請直接在匹配頁簽中輸入足夠的欄位，或導入地址模板：
+在這種情況下，若要將種子地址新增至傳遞，請直接在比對索引標籤中輸入適當的欄位，或匯入地址範本：
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-此 **nms:seedMember** 綱要擴充功能為 [本節](../../configuration/using/seed-addresses.md).
+此 **nms：seedMember** 結構描述擴充功能為 [本節](../../configuration/using/seed-addresses.md).

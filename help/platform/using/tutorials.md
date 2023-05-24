@@ -23,7 +23,7 @@ ht-degree: 69%
 
 透過參閱我們直觀的逐步指南，開始使用 Adobe Campaign。
 
-* [隱私管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html):瞭解Adobe Campaign Classic在使用我們的服務時提供的幫助，幫助您遵守隱私保護法規。
+* [隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)：探索Adobe Campaign Classic所提供的功能，以協助您在使用我們的服務時能符合隱私權規範。
 * [整合電子郵件中的動態內容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
 * [管理傳遞機制](../../delivery/using/about-deliverability.md)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
 * [傳遞最佳做法](../../delivery/using/delivery-best-practices.md)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
@@ -38,18 +38,18 @@ ht-degree: 69%
 * [建立概要](../../web/using/use-cases--creating-overviews.md)：建立概要型的網路應用程式，以顯示資料庫中的所有網路應用程式。
 * [工作流程使用案例](../../workflow/using/about-workflow-use-cases.md)：透過這些使用案例探索使用工作流程的不同方法。
 
-## 自助 {#how-to-videos}
+## 自助式 {#how-to-videos}
 
-除產品文檔外，您還可以訪問下面列出的市場活動自助資源。
+除了產品檔案之外，您也可以存取下列Campaign自助資源。
 
 ### 教學課程影片
 
-在視頻中瞭解Adobe Campaign的主要功能。 [了解更多](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)
+在影片中探索Adobe Campaign的主要功能。 [了解更多](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)
 
-### 培訓課程和視頻
+### 訓練課程和影片
 
-除了這些簡短詳細的視頻外， [培訓課程](https://learning.adobe.com/catalog.html) 和觀看功能 [演示視頻](https://www.adobe.com/training/video.html) Adobe。
+除了這些簡短而詳細的影片外，您還可以找到 [訓練課程](https://learning.adobe.com/catalog.html) 和觀看功能 [簡報影片](https://www.adobe.com/training/video.html) 在Adobe.com上。
 
 ### Experience League課程
 
-您還可以訪問 [推薦課程](https://experienceleague.adobe.com/#dashboard/learning) Adobe Campaign Classic:課程是經過專業訓練的課程集合，可快速幫助您掌握技能和知識。
+您也可以造訪 [建議課程](https://experienceleague.adobe.com/#dashboard/learning) Adobe Campaign Classic：課程是專業策劃的課程集合，可快速協助您獲得技能和知識。

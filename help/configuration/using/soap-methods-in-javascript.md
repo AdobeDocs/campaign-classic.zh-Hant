@@ -17,9 +17,9 @@ ht-degree: 9%
 
 ## 靜態方法 {#static-methods}
 
-對表示架構的對象調用方法，可訪問靜態SOAP方法。 結構是「namespace」對象的屬性。 這些命名空間是全域變數，因此，例如xtk或nms變數代表對應的命名空間
+若要存取靜態SOAP方法，請在代表結構描述的物件上叫用方法。 結構描述是「namespace」物件的屬性。 這些名稱空間是全域變數，因此，例如xtk或nms變數代表對應的名稱空間
 
-以下示例調用xtk:workflow架構的靜態PostEvent方法：
+以下範例會叫用xtk：workflow綱要的靜態PostEvent方法：
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -27,9 +27,9 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## 非靜態方法 {#non-static-methods}
 
-若要使用非靜態SOAP方法，必須先在對應結構上使用「get」或「create」方法擷取實體。
+若要使用非靜態SOAP方法，必須先在對應結構描述上使用「get」或「create」方法擷取實體。
 
-以下示例調用&quot;xtk:queryDef&quot;架構的ExecuteQuery方法：
+以下範例會叫用「xtk：queryDef」結構描述的ExecuteQuery方法：
 
 ```
 var query = xtk.queryDef.create(
@@ -48,7 +48,7 @@ for each (var w in res.workflow)
 
 ## 範例 {#examples}
 
-* 使用「get」操作查詢收件人表：
+* 使用&quot;get&quot;作業查詢收件者表格：
 
    ```
    var query = xtk.queryDef.create(  
@@ -69,7 +69,7 @@ for each (var w in res.workflow)
    logInfo(recipient.@lastName)
    ```
 
-* 使用「選擇」操作查詢收件人表：
+* 使用「選取」作業查詢收件者表格：
 
    ```
    var query = xtk.queryDef.create(  
@@ -94,7 +94,7 @@ for each (var w in res.workflow)
    }
    ```
 
-* 將資料寫入收件人表：
+* 將資料寫入收件者表格：
 
    ```
    xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);

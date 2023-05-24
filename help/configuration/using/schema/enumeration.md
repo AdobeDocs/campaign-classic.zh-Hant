@@ -1,93 +1,93 @@
 ---
 product: campaign
-title: 架構元素和屬性 — 枚舉元素
-description: 枚舉元素
+title: 結構描述元素和屬性 — 列舉元素
+description: 列舉元素
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-# 枚舉元素 {#enumeration--element}
+# 列舉元素 {#enumeration--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## 內容模型 {#content-model-5}
 
-枚舉：==（help|值）
+分項清單：==（help|值）
 
 ## 屬性 {#attributes-5}
 
-* @basetype（字串）
-* @default（字串）
-* @desc（字串）
-* @label（字串）
-* @name（字串）
-* @template（字串）
+* @basetype （字串）
+* @default （字串）
+* @desc （字串）
+* @label （字串）
+* @name （字串）
+* @template （字串）
 
-## 父母 {#parents-5}
+## 父項 {#parents-5}
 
 `<srcschema>`
 
-## 兒童 {#children-5}
+## 子系 {#children-5}
 
 * `<help>`
 * `<value>`
 
 ## 說明 {#description-5}
 
-此元素使我們能夠定義值枚舉。 枚舉屬於在中定義的架構，但可以通過其他架構訪問它。
+此元素可讓我們定義值列舉。 分項清單屬於其定義所在的結構描述，但可透過其他結構描述存取。
 
-## 使用和使用上下文 {#use-and-context-of-use-4}
+## 使用與使用內容 {#use-and-context-of-use-4}
 
-枚舉在架構的開始（在定義主元素之前）定義。
+列舉是在結構描述的開頭定義（在定義主要元素之前）。
 
 ## 屬性說明 {#attribute-description-5}
 
-* **basetype（字串）**:枚舉中儲存的值的類型。
+* **basetype （字串）**：儲存在分項清單中的值型別。
 
-   可用類型清單：
+   可用型別清單：
 
-   * 任意
-   * 賓
+   * 任何
+   * 紙匣
    * blob
-   * 布爾
+   * 布林值
    * 位元組
    * CDATA
-   * 日期
-   * 日期表
-   * 日期
-   * 日期
-   * 域文檔
+   * 日期時間
+   * datetimetz
+   * datetimenotz
+   * date
+   * DOMDocument
    * DOMElement
-   * 雙
-   * 枚舉
-   * 浮
+   * 兩次
+   * 列舉
+   * 浮點數
    * html
    * int64
    * 連結
-   * 長
+   * long
    * 備忘錄
    * MNTOKEN
-   * 百分比
-   * 主鍵
+   * percent
+   * 主要金鑰
    * 短
    * 字串
    * 時間
-   * 時隙
+   * 時間跨度
    * uuid
 
-* **預設（字串）**:預設值。 預設值也可以是枚舉中定義的值之一。
-* **desc（字串）**:枚舉說明。
-* **標籤（字串）**:枚舉標籤。
-* **名稱（字串）**:枚舉的內部名稱。
-* **模板（字串）**:此屬性定義對 `<enumeration>` 由多個架構共用的元素。 定義將自動複製到當前架構中。
+* **預設（字串）**：預設值。 預設值也可以是列舉中定義的值之一。
+* **desc （字串）**：分項清單說明。
+* **標籤（字串）**：分項清單標籤。
+* **名稱（字串）**：分項清單的內部名稱。
+* **範本（字串）**：此屬性會定義 `<enumeration>` 由多個結構描述共用的元素。 定義會自動複製到目前的結構描述中。
 
 ## 範例 {#examples-4}
 
-其值儲存在資料庫中的枚舉值示例：
+值儲存在資料庫中的列舉值範例：
 
 ```
     <enumeration name="myEnum">
@@ -100,7 +100,7 @@ ht-degree: 2%
     </element>
 ```
 
-具有預設值的枚舉的定義：
+具有預設值的分項清單定義：
 
 ```
  <enumeration basetype="byte" default="email" name="canal">

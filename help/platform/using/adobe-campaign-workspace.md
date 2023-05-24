@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Adobe Campaign 工作區
-description: 了解如何使用和自訂Campaign工作區
+description: 瞭解如何使用及自訂Campaign工作區
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: Data Engineer
@@ -32,29 +32,29 @@ ht-degree: 67%
 >
 >您的實例上可用的 Adobe Campaign 功能取決於安裝的模組和附加元件。部分功能可能無法使用，具體取決於您的許可及特定設定。
 >
->安裝任何模組或附加元件之前，您需要檢查您的授權合約，或聯絡您的Adobe帳戶主管。
+>在安裝任何模組或附加元件之前，您需要檢查您的授權合約或聯絡您的Adobe客戶主管。
 
 ### 主控台和網路存取 {#console-and-web-access}
 
-Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。若要查看相容的瀏覽器，請前往 [相容性矩陣](../../rn/using/compatibility-matrix.md#Browsers).
+Adobe Campaign 平台可透過主控台或網際網路瀏覽器進行存取。請參閱中的相容瀏覽器 [相容性矩陣](../../rn/using/compatibility-matrix.md#Browsers).
 
-Web訪問介面與控制台介麵類似。 在瀏覽器中，您可以使用與主控台相同的導覽和顯示功能，但您只能對行銷活動執行精簡的動作集。 例如，您可以檢視和取消促銷活動，但無法修改促銷活動。 對於指定的運算子，促銷活動會在主控台中顯示下列選項：
+網頁存取介面與主控台介面類似。 在瀏覽器中，您可以使用與控制檯相同的導覽和顯示功能，但您只能在行銷活動上執行縮減的動作集。 例如，您可以檢視和取消行銷活動，但無法修改行銷活動。 對於指定的運運算元，行銷活動將在主控台中顯示以下選項：
 
-![從促銷活動的控制面板，運算子可以檢視和取消促銷活動，也可以修改它，以及新增傳遞、檔案和任務。](assets/operation_from_console.png)
+![操作員可以從行銷活動的控制面板中檢視和取消行銷活動，也可以修改行銷活動，並向行銷活動新增傳送、檔案和任務。](assets/operation_from_console.png)
 
-而使用網路存取時，選項主要會啟用檢視：
+而使用Web存取時，選項主要會啟用檢視：
 
-![在瀏覽器中，相同的運算子只能檢視和取消促銷活動。](assets/operation_from_web.png)
+![在瀏覽器中，相同的運運算元只能檢視和取消行銷活動。](assets/operation_from_web.png)
 
-深入了解 [使用web介面](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+進一步瞭解 [使用網頁介面](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### 語言 {#languages}
 
-安裝Adobe Campaign Classic執行個體時會選取語言。
+安裝Adobe Campaign Classic執行個體時，會選取語言。
 
 ![](assets/language.png)
 
-您可以選擇五種不同語言：
+您可以在五種不同的語言之間進行選擇：
 
 * 英文 (英國)
 * 英文 (美國)
@@ -62,9 +62,9 @@ Web訪問介面與控制台介麵類似。 在瀏覽器中，您可以使用與�
 * 德文
 * 日文
 
-您為Adobe Campaign Classic例項選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
+您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱本[區段](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
-如需如何建立例項的詳細資訊，請參閱 [頁面](../../installation/using/creating-an-instance-and-logging-on.md).
+有關如何建立執行個體的詳細資訊，請參閱此 [頁面](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -82,7 +82,7 @@ Web訪問介面與控制台介麵類似。 在瀏覽器中，您可以使用與�
 
 每項核心功能都包含一套基於任務相關需求及使用情境的功能。例如，使用 **[!UICONTROL Profiles and targets]** 連結，您可以找到收件者清單、訂閱服務、現有的目標工作流程，以及建立這些元素的捷徑。
 
-清單可透過 **[!UICONTROL Lists]** 連結(位於 **[!UICONTROL Profiles and Targets]** 介面。
+這些清單可透過 **[!UICONTROL Lists]** 左側區段中的連結 **[!UICONTROL Profiles and Targets]** 介面。
 
 ![](assets/recipient_list_overview.png)
 
@@ -100,7 +100,7 @@ Web訪問介面與控制台介麵類似。 在瀏覽器中，您可以使用與�
 
 使用每個核心功能區段，您可以瀏覽可用的元素。若要瀏覽可用元素，請使用 **[!UICONTROL Browsing]** 區段中的捷徑。使用 **[!UICONTROL Other choices]** 連結，您可存取其他所有頁面，不受環境影響。
 
-您可以建立新元素（傳送、Web應用程式、工作流程等） 使用 **[!UICONTROL Create]** 區段。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
+您可以建立新元素（傳送、網頁應用程式、工作流程等） 使用中的捷徑 **[!UICONTROL Create]** 區段。 使用清單上方的 **[!UICONTROL Create]** 按鈕，將新元素新增至清單中。
 
 例如，在傳遞頁面上，使用 **[!UICONTROL Create]** 按鈕來建立新的傳遞。
 
@@ -138,8 +138,8 @@ Web訪問介面與控制台介麵類似。 在瀏覽器中，您可以使用與�
   </tr> 
   <tr> 
    <td> 帶時間的簡短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：25/09/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如： 2018年9月25日10:47:下午25點</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如： 2018年9月25日22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -160,17 +160,17 @@ Web訪問介面與控制台介麵類似。 在瀏覽器中，您可以使用與�
 
 在表示時間期間 (例如，傳遞資源的有效期限、任務的核准期限等) 的欄位中，可以採用下列&#x200B;**單位** 列示值：
 
-* **[!UICONTROL s]** 幾秒，
-* **[!UICONTROL mn]** 幾分鐘，
-* **[!UICONTROL h]** 數小時，
-* **[!UICONTROL d]** 幾天。
+* **[!UICONTROL s]** 幾秒鐘，
+* **[!UICONTROL mn]** 分鐘，
+* **[!UICONTROL h]** 若為小時，
+* **[!UICONTROL d]** 天數。
 
 ![](assets/enter_unit_sample.png)
 
 ## 教學課程影片 {#video}
 
-此影片會介紹Campaign Classic工作區。
+此影片介紹Campaign Classic工作區。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-提供其他Campaign Classic作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+提供其他Campaign Classic操作影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

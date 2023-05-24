@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 傳送個人化警示給營運商
-description: 了解如何傳送個人化警報給營運商
+description: 瞭解如何傳送個人化警示給營運商
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
@@ -16,16 +16,16 @@ ht-degree: 2%
 
 
 
-在此範例中，我們想傳送警報給運算子，運算子將包含開啟電子報但未點按其所包含連結之設定檔的名稱。
+在此範例中，我們想傳送警報給運運算元，該運運算元將包含開啟電子報但未點按其中所含連結的設定檔名稱。
 
-設定檔的名字和姓氏欄位會連結至 **[!UICONTROL Recipients]** 目標維度，而 **[!UICONTROL Alert]** 活動已連結至 **[!UICONTROL Operator]** 目標維度。 因此，兩個目標維度之間沒有可用的欄位，無法執行調解和擷取名字和姓氏欄位，以及在「警報」活動中顯示。
+設定檔的名字和姓氏欄位會連結至 **[!UICONTROL Recipients]** 目標維度，而 **[!UICONTROL Alert]** 活動已連結至 **[!UICONTROL Operator]** 目標維度。 因此，這兩個目標維度之間沒有可用的欄位來執行調解，並擷取名字和姓氏欄位，以及將它們顯示在警報活動中。
 
-程式是建立工作流程，如下所示：
+建立工作流程的過程如下：
 
 1. 使用 **[!UICONTROL Query]** 目標資料的活動。
-1. 新增 **[!UICONTROL JavaScript code]** 活動以從查詢儲存母體至例項變數。
+1. 新增 **[!UICONTROL JavaScript code]** 活動放入工作流程，以將查詢中的母體儲存至執行個體變數。
 1. 使用 **[!UICONTROL Test]** 活動以檢查母體計數。
-1. 使用 **[!UICONTROL Alert]** 傳送警報給運算子的活動，視 **[!UICONTROL Test]** 活動結果。
+1. 使用 **[!UICONTROL Alert]** 傳送警報給操作員的活動，視 **[!UICONTROL Test]** 活動結果。
 
 ![](assets/uc_operator_1.png)
 
@@ -45,16 +45,16 @@ var query = xtk.queryDef.create(
   var items = query.ExecuteQuery();
 ```
 
-請確定Javascript程式碼與您的工作流程資訊對應：
+請確定Javascript程式碼對應於您的工作流程資訊：
 
-* 此 **[!UICONTROL queryDef schema]** 標籤應與查詢活動中使用的目標維度名稱相對應。
-* 此 **[!UICONTROL node expr]** 標籤應對應至您要擷取之欄位的名稱。
+* 此 **[!UICONTROL queryDef schema]** 標籤應該對應到查詢活動中使用的目標維度名稱。
+* 此 **[!UICONTROL node expr]** 標籤應該對應到您要擷取的欄位名稱。
 
 ![](assets/uc_operator_3.png)
 
 若要擷取這些資訊，請遵循下列步驟：
 
-1. 以滑鼠右鍵按一下 **[!UICONTROL Query]** 活動，然後選取 **[!UICONTROL Display the target]**.
+1. 以滑鼠右鍵按一下中的出站轉變 **[!UICONTROL Query]** 活動，然後選取 **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
@@ -66,9 +66,9 @@ var query = xtk.queryDef.create(
 
    ![](assets/uc_operator_6.png)
 
-## 測試人口計數 {#testing-the-population-count}
+## 測試母體計數 {#testing-the-population-count}
 
-將下列程式碼新增至 **[!UICONTROL Test]** 活動，以檢查目標母體是否至少包含1個設定檔。
+將下列程式碼新增至 **[!UICONTROL Test]** 活動以檢查目標母體是否包含至少1個設定檔。
 
 ```
 var.recCount>0
@@ -78,9 +78,9 @@ var.recCount>0
 
 ## 設定警報 {#setting-up-the-alert}
 
-現在，母體已新增至包含所需欄位的執行個體變數中，您可以將這些資訊新增至 **[!UICONTROL Alert]** 活動。
+現在，母體已新增到具有所需欄位的例項變數中，您可以將這些資訊新增到 **[!UICONTROL Alert]** 活動。
 
-若要這麼做，請將新增至 **[!UICONTROL Source]** 標籤下列程式碼：
+若要這麼做，請將新增至 **[!UICONTROL Source]** 將程式碼標示為下方：
 
 ```
 <ul>
@@ -95,7 +95,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->此 **[!UICONTROL <%= item.target.recipient.@fieldName %>]** 命令可讓您透過 **[!UICONTROL JavaScript code]** 活動。\
->只要欄位已插入JavaScript程式碼中，您就可以視需要新增欄位。
+>此 **[!UICONTROL <%= item.target.recipient.@fieldName %>]** command可讓您新增已透過「 」儲存至執行個體變數的其中一個欄位。 **[!UICONTROL JavaScript code]** 活動。\
+>只要欄位已插入JavaScript程式碼中，您就可以視需要新增任意數目的欄位。
 
 ![](assets/uc_operator_8.png)

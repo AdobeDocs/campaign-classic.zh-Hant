@@ -147,7 +147,7 @@ Adobe Campaign 可使用資料連接器來測量網際網路對象 (Web Analytic
 1. **[!UICONTROL Advanced]**&#x200B;標籤可讓您設定或修改更多技術設定。
 
    * **[!UICONTROL Lifespan]**：可讓您 (以天為單位) 指定延遲，之後技術工作流程便可在 Adobe Campaign 中復原 Web 事件。預設值：180天。
-   * **[!UICONTROL Persistence]**:可讓您定義可將所有Web事件（例如購買）歸因於再行銷促銷活動的期間，預設值：7天。
+   * **[!UICONTROL Persistence]**：可讓您定義所有Web事件（例如購買）可歸因於再次行銷活動的期間，預設值：7天。
 
 >[!NOTE]
 >

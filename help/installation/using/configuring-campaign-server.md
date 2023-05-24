@@ -15,57 +15,57 @@ ht-degree: 2%
 
 ---
 
-# 市場活動伺服器配置入門{#gs-campaign-server-config}
+# 開始使用Campaign伺服器設定{#gs-campaign-server-config}
 
 
 
-本章詳細介紹可執行的伺服器端配置，以滿足您的需求和環境特性。
+本章詳細說明伺服器端設定，這些設定可以根據您的需求和環境特性來執行。
 
 ## 限制
 
-這些過程僅限於 **現場**/**混合** 部署並需要「管理」權限。
+這些程式僅限於 **內部部署**/**混合** 部署，並需要管理許可權。
 
-對於 **托管** 部署，伺服器端設定只能通過Adobe配置。 但是，可以在 [市場活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)，如IP允許清單管理或URL權限。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)。
+對象 **託管** 部署，伺服器端設定只能由Adobe設定。 不過，某些設定可以在中設定 [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)，例如IP允許清單管理或URL許可權。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)。
 
-有關詳細資訊，請參閱以下各節：
+如需詳細資訊，請參閱下列章節：
 
 * [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 * [託管模型](../../installation/using/hosting-models.md)
-* [Campaign Classic內部部署和托管能力矩陣](../../installation/using/capability-matrix.md)
+* [Campaign Classic內部部署與託管功能矩陣](../../installation/using/capability-matrix.md)
 
-## 配置檔案
+## 組態檔
 
-Campaign Classic配置檔案儲存在 **會議** 資料夾。 該配置分佈在兩個檔案上：
+Campaign Classic組態檔儲存在 **conf** Adobe Campaign安裝資料夾的資料夾。 此設定分佈於兩個檔案中：
 
-* **serverConf.xml**:所有實例的常規配置。 此檔案將Adobe Campaign伺服器的技術參陣列合在一起：所有實例共用這些實例。 以下對這些參數的說明進行了詳細說明。 此處列出的不同節點和參數 [節](../../installation/using/the-server-configuration-file.md)。
-* **配置`<instance>`.xml** ( **實例** 是實例的名稱):實例的特定配置。 如果您在多個實例之間共用伺服器，請在其相關檔案中輸入特定於每個實例的參數。
+* **serverConf.xml**：所有執行個體的一般設定。 此檔案結合Adobe Campaign伺服器的技術引數：這些引數由所有執行個體共用。 以下詳細說明其中一些引數。 此清單中列出的不同節點和引數 [區段](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.xml** (其中 **例項** 執行個體的名稱)：執行個體的特定設定。 如果您在多個執行個體之間共用伺服器，請在相關檔案中輸入每個執行個體專屬的引數。
 
-## 配置範圍
+## 設定範圍
 
-根據您的需求和配置配置配置或調整市場活動伺服器。 您可以：
+根據您的需求和設定，設定或調整Campaign伺服器。 您可以：
 
-* 保護 [內部標識符](#internal-identifier)
-* 啟用 [市場活動流程](#enabling-processes)
-* 配置 [URL權限](url-permissions.md)
-* 定義 [安全區](security-zones.md)
-* 配置 [Tomcat設定](configure-tomcat.md)
-* 自定義 [交貨參數](configure-delivery-settings.md)
-* 定義 [動態頁安全和中繼](#dynamic-page-security-and-relays)
+* 保護 [內部識別碼](#internal-identifier)
+* 啟用 [行銷活動程式](#enabling-processes)
+* 設定 [URL許可權](url-permissions.md)
+* 定義 [安全性區域](security-zones.md)
+* 設定 [Tomcat設定](configure-tomcat.md)
+* 自訂 [傳遞引數](configure-delivery-settings.md)
+* 定義 [動態頁面安全性與轉送](#dynamic-page-security-and-relays)
 * 限制清單 [允許的外部命令](#restricting-authorized-external-commands)
-* 設定 [冗餘跟蹤](#redundant-tracking)
-* 管理 [高可用性和工作流關聯性](#high-availability-workflows-and-affinities)
-* 配置檔案管理 —  [瞭解更多資訊](file-res-management.md)
-   * 限制上載檔案格式
-   * 啟用對公共資源的訪問
-   * 配置代理連接
-* [自動進程重新啟動](#automatic-process-restart)
+* 設定 [備援追蹤](#redundant-tracking)
+* 管理 [高可用性和工作流程相關性](#high-availability-workflows-and-affinities)
+* 設定檔案管理 —  [瞭解更多](file-res-management.md)
+   * 限制上傳檔案格式
+   * 啟用對公用資源的存取
+   * 設定代理主機連線
+* [自動程式重新啟動](#automatic-process-restart)
 
 
-## 內部標識符 {#internal-identifier}
+## 內部識別碼 {#internal-identifier}
 
-的 **內部** identifier是用於安裝、管理和維護的技術登錄。 此登錄名未與實例關聯。
+此 **內部** 識別碼是用於安裝、管理和維護目的的技術登入。 此登入並未與執行個體建立關聯。
 
-使用此登錄名連接的操作員將擁有所有實例的所有權限。 如果安裝新，此登錄名將沒有密碼。 必須手動定義此密碼。
+使用此登入連線的操作者將擁有所有執行個體的所有權利。 若是新的安裝，此登入不會有密碼。 您必須手動定義此密碼。
 
 使用以下命令：
 
@@ -73,7 +73,7 @@ Campaign Classic配置檔案儲存在 **會議** 資料夾。 該配置分佈在
 nlserver config -internalpassword
 ```
 
-然後顯示以下資訊。 輸入並確認密碼：
+接著會顯示下列資訊。 輸入並確認密碼：
 
 ```
 17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -85,19 +85,19 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## 啟用進程 {#enabling-processes}
+## 啟用程式 {#enabling-processes}
 
-Adobe Campaign伺服器上的進程通過 **config-default.xml** 和 **`config-<instance>.xml`** 的子菜單。
+伺服器上的Adobe Campaign程式可透過以下方式啟用（和停用）： **config-default.xml** 和 **`config-<instance>.xml`** 檔案。
 
-要將更改應用於這些檔案，如果Adobe Campaign服務已啟動，則必須運行 **nlserver config -reload** 的子菜單。
+若要套用變更至這些檔案，如果Adobe Campaign服務已啟動，您必須執行 **nlserver config -reload** 命令。
 
-有兩種進程：多實例和單實例。
+有兩種型別的程式：多執行個體和單一執行個體。
 
-* **多實例**:對所有實例啟動一個單個進程。 這就是 **網**。 **syslog** 和 **跟蹤日誌** 進程。
+* **多例項**：所有執行個體都會啟動單一程式。 以下專案的情況即是如此 **網頁**， **syslogd** 和 **trackinglogd** 程式。
 
-   可以從 **config-default.xml** 的子菜單。
+   啟用可從 **config-default.xml** 檔案。
 
-   聲明Adobe Campaign伺服器訪問客戶端控制台和重定向（跟蹤）:
+   宣告Adobe Campaign伺服器以存取使用者端主控台和進行重新導向（追蹤）：
 
    ```
    vi nl6/conf/config-default.xml
@@ -106,17 +106,17 @@ Adobe Campaign伺服器上的進程通過 **config-default.xml** 和 **`config-<
    <trackinglogd autoStart="true"/>
    ```
 
-   在本示例中，使用 **六** 命令。 可以使用任何 **.txt** 或 **.xml** 編輯器。
+   在此範例中，檔案是使用 **vi** Linux中的命令。 您可以使用任何 **.txt** 或 **.xml** 編輯者。
 
-* **單實例**:每個實例啟動一個進程(模組： **門**。 **wf伺服器**。 **郵件**。 **簡訊** 和 **統計**)。
+* **單執行個體**：每個執行個體都會啟動一個程式(模組： **mta**， **wfserver**， **inMail**， **簡訊** 和 **stat**)。
 
-   可以使用實例的配置檔案配置啟用：
+   可使用執行個體的設定檔案來設定啟用：
 
    ```
    config-<instance>.xml
    ```
 
-   聲明伺服器以進行傳遞、執行工作流實例和恢復彈回郵件：
+   宣告伺服器以進行傳送、執行工作流程例項及復原退回郵件：
 
    ```
    <mta autoStart="true" statServerAddress="localhost"/>
@@ -125,9 +125,9 @@ Adobe Campaign伺服器上的進程通過 **config-default.xml** 和 **`config-<
    <stat autoStart="true"/>
    ```
 
-**市場活動資料儲存**
+**Campaign資料儲存**
 
-可以配置儲存目錄(**var** 目錄)中的所有資料（日誌、下載、重定向等）。 要執行此操作，請使用 **XTK_VAR_DIR** 系統變數：
+您可以設定儲存目錄(**var** 目錄)，即可取得Adobe Campaign資料（記錄、下載、重新導向等）。 若要這麼做，請使用 **XTK_VAR_DIR** 系統變數：
 
 * 在Windows中，在 **XTK_VAR_DIR** 系統變數
 
@@ -135,42 +135,42 @@ Adobe Campaign伺服器上的進程通過 **config-default.xml** 和 **`config-<
    D:\log\AdobeCampaign
    ```
 
-* 在Linux中，轉到 **customer.sh** 檔案並指示： **導出XTK_VAR_DIR=/app/log/AdobeCampaign**。
+* 在Linux中，前往 **customer.sh** 檔案並指出： **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   有關此內容的詳細資訊，請參閱 [個性化參數](../../installation/using/installing-packages-with-linux.md#personalizing-parameters)。
+   有關詳細資訊，請參閱 [個人化引數](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
-## 動態頁安全和中繼 {#dynamic-page-security-and-relays}
+## 動態頁面安全性與轉送 {#dynamic-page-security-and-relays}
 
-預設情況下，所有動態頁都與 **本地** 其Web模組已啟動的電腦的Tomcat伺服器。 此配置在 **`<url>`** 的查詢中繼配置部分 **ServerConf.xml** 的子菜單。
+依預設，所有動態頁面都會自動與 **本機** Web模組已啟動之電腦的Tomcat伺服器。 此設定輸入於 **`<url>`** 的查詢轉送設定的區段 **ServerConf.xml** 檔案。
 
-您可以在 **遠程** 伺服器；的子菜單。 為此，必須替換 **本地主機** JSP和JSSP的遠程電腦名、Web應用程式、報告和字串。
+您可以轉送動態頁面在上的執行 **遠端** 伺服器；如果電腦未啟動Web模組。 若要這麼做，您必須將 **localhost** 包含JSP和JSSP、Web應用程式、報表和字串的遠端電腦名稱。
 
-有關各種可用參數的詳細資訊，請參閱 **serverConf.xml** 配置檔案。
+如需各種可用引數的詳細資訊，請參閱 **serverConf.xml** 設定檔。
 
-對於JSP頁，預設配置為：
+若為JSP頁面，預設組態為：
 
 ```
 <url relayHost="true" relayPath="true" targetUrl="http://localhost:8080" urlPath="*.jsp"/>
 ```
 
-Adobe Campaign使用以下JSP頁：
+Adobe Campaign使用下列JSP頁面：
 
-* /nl/jsp/**soprouter.jsp**:客戶端控制台和Web服務連接(SOAP API),
-* /nl/jsp/**m.jsp**:鏡像頁，
-* /nl/jsp/**logon.jsp**:基於Web訪問報告和部署客戶端控制台，
-* /nl/jsp/**s.jsp** :使用病毒式營銷（贊助和社交網路）。
+* /nl/jsp/**soaprouter.jsp**：使用者端主控台和Web服務連線(SOAP API)、
+* /nl/jsp/**m.jsp**：映象頁面，
+* /nl/jsp/**logon.jsp**：以Web為基礎存取報表和使用者端主控台的部署，
+* /nl/jsp/**s.jsp** ：使用病毒式行銷（贊助和社交網路）。
 
-用於Mobile App Channel的JSSP如下：
+用於行動應用程式通道的JSSP如下：
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp
 
 **範例:**
 
-可以防止客戶機從外部連接。 為此，只需限制 **soprouter.jsp** 僅授權執行鏡像頁、病毒連結、網路表格和公共資源。
+可以防止使用者端電腦從外部連線。 若要這麼做，只需限制執行 **soaprouter.jsp** 且僅授權執行映象頁面、病毒式連結、網路表單和公共資源。
 
-參數如下：
+引數如下：
 
 ```
 <url IPMask="<IP_addresses>" deny=""     hostMask="" relayHost="true"  relayPath="true"  targetUrl="http://localhost:8080" timeout="" urlPath="*.jsp"/>
@@ -186,22 +186,22 @@ Adobe Campaign使用以下JSP頁：
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-在此示例中， **`<IP_addresses>`** 值與授權為此掩碼使用中繼模組的IP地址清單（由comas分隔）一致。
+在此範例中， **`<IP_addresses>`** 值與授權使用此遮罩之轉送模組的IP位址清單（以逗號分隔）一致。
 
 >[!NOTE]
 >
->值應根據您的配置和網路約束進行調整，特別是在為您的安裝開發了特定配置時。
+>值應根據您的設定和網路限制進行調整，尤其是已針對您的安裝開發特定設定時。
 
 ### 管理HTTP標頭 {#managing-http-headers}
 
-預設情況下，不中繼所有HTTP標頭。 您可以在中繼發送的回復中添加特定標頭。 操作步驟：
+依預設，不會轉送所有HTTP標頭。 您可以在轉送所傳送的回覆中新增特定標頭。 操作步驟：
 
-1. 轉到 **serverConf.xml** 的子菜單。
-1. 在 **`<relay>`** 節點，轉到中繼HTTP標頭清單。
-1. 添加 **`<responseheader>`** 元素，具有以下屬性：
+1. 前往 **serverConf.xml** 檔案。
+1. 在 **`<relay>`** 節點，前往轉送HTTP標頭的清單。
+1. 新增 **`<responseheader>`** 具有下列屬性的元素：
 
-   * **名稱**:標題名稱
-   * **值**:值名稱。
+   * **名稱**：標頭名稱
+   * **值**：值名稱。
 
    例如：
 
@@ -211,9 +211,9 @@ Adobe Campaign使用以下JSP頁：
 
 ## 限制授權的外部命令 {#restricting-authorized-external-commands}
 
-從build 8780 ，技術管理員可以限制可在Adobe Campaign使用的授權外部命令清單。
+從Build 8780開始，技術管理員可以限制可以在Adobe Campaign中使用的授權外部命令清單。
 
-為此，您需要建立一個文本檔案，其中包含要阻止使用的命令清單，例如：
+為此，您需要建立文字檔案，其中包含您想防止使用的命令清單，例如：
 
 ```
 ln
@@ -230,15 +230,15 @@ sh
 
 >[!IMPORTANT]
 >
->這份清單並非詳盡無遺。
+>此清單並非詳盡無遺。
 
-在 **執行** 的子目錄中，需要引用 **黑名單檔案** 屬性。
+在 **執行** 節點所建立的URL中，您必須參照先前在 **blacklistFile** 屬性。
 
-**僅適用於Linux**:在伺服器配置檔案中，我們建議您指定一個專用於執行外部命令的用戶來增強您的安全配置。 此用戶在 **執行** 的子菜單。 中的所有可用參數 **serverConf.xml** 列在 [節](../../installation/using/the-server-configuration-file.md)。
+**僅適用於Linux**：在伺服器設定檔案中，建議您指定專門執行外部命令的使用者，以增強您的安全性設定。 此使用者設定於 **執行** 設定檔案的節點。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
->如果未指定用戶，則在Adobe Campaign實例的用戶上下文中執行所有命令。 用戶必須與運行Adobe Campaign的用戶不同。
+>如果未指定使用者，則所有命令都會在Adobe Campaign執行個體的使用者內容中執行。 使用者必須與執行Adobe Campaign的使用者不同。
 
 例如：
 
@@ -248,22 +248,22 @@ sh
 </serverConf>
 ```
 
-需要將此用戶添加到「neolane」Adobe Campaign運算子的用戶清單。
+需要將此使用者新增到&#39;neolane&#39; Adobe Campaign運運算元的使用者清單中。
 
 >[!IMPORTANT]
 >
->您不應使用自定義sudo。 系統上需要安裝標準sudo。
+>您不應使用自訂sudo。 系統需安裝標準sudo。
 
 
-## 冗餘跟蹤 {#redundant-tracking}
+## 備援追蹤 {#redundant-tracking}
 
-當多個伺服器用於重定向時，它們必須能夠通過SOAP調用彼此通信，以便共用要重定向的URL中的資訊。 在交付啟動時，可能並非所有重定向伺服器都可用；所以他們可能沒有同等程度的資訊。
+使用多個伺服器進行重新導向時，它們必須能夠透過SOAP呼叫彼此通訊，以便從要重新導向的URL共用資訊。 在傳遞啟動時，可能無法使用所有的重新導向伺服器，因此它們可能沒有相同的資訊層級。
 
 >[!NOTE]
 >
->使用標準或企業體系結構時，必須授權主應用程式伺服器在每台電腦上上載跟蹤資訊。
+>使用標準或企業架構時，主要應用程式伺服器必須獲授權才能上傳每部電腦上的追蹤資訊。
 
-必須在重定向配置中通過 **serverConf.xml** 的子菜單。
+必須在重新導向設定中指定多餘伺服器的URL，透過 **serverConf.xml** 檔案。
 
 **範例:**
 
@@ -272,48 +272,48 @@ sh
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-的 **enableIf** 屬性是可選的（預設為空），並允許您僅在結果為true時啟用連接。 這允許您在所有重定向伺服器上獲得相同的配置。
+此 **enableIf** 屬性是選用的（預設為空白），並允許您僅在結果為true時啟用連線。 這可讓您在所有重新導向伺服器上取得相同的設定。
 
-要獲取電腦的主機名，請運行以下命令： **主機名 — s**。
+若要取得電腦的主機名稱，請執行以下命令： **主機名稱 — s**.
 
 
 
-## 高可用性工作流和關聯 {#high-availability-workflows-and-affinities}
+## 高可用性工作流程與相關性 {#high-availability-workflows-and-affinities}
 
-您可以配置多個工作流伺服器(wfserver)，並將它們分發到兩台或多台電腦上。 如果選擇此類型的體系結構，請根據Adobe Campaign訪問權限配置負載平衡器的連接模式。
+您可以設定數個工作流程伺服器(wfserver)，並在兩部或多部電腦上分散這些伺服器。 如果您選擇這種架構型別，請根據Adobe Campaign存取權設定負載平衡器的連線模式。
 
-要從Web訪問，請選擇 **負載平衡器** 模式以限制連接時間。
+若要從網頁存取，請選取 **負載平衡器** 模式以限制連線時間。
 
-如果通過Adobe Campaign控制台訪問，請選擇 **散列** 或 **粘滯ip** 的子菜單。 這樣，您就可以維護富客戶端與伺服器之間的連接，並防止在導入或導出操作期間中斷用戶會話。
+如果透過Adobe Campaign主控台存取，請選擇 **雜湊** 或 **粘性ip** 模式。 這可讓您維護RTF使用者端與伺服器之間的連線，並防止使用者工作階段在匯入或匯出作業期間中斷。
 
-您可以選擇在特定電腦上強制執行工作流或工作流活動。 為此，必須為相關工作流或活動定義一個或多個關聯。
+您可以選擇在特定電腦上強制執行工作流程或工作流程活動。 若要這麼做，您必須為相關工作流程或活動定義一或多個相關性。
 
-1. 通過在中輸入工作流或活動的關聯 **[!UICONTROL Affinity]** 的子菜單。
+1. 在工作流程或活動中輸入相關性，以建立這些相關性 **[!UICONTROL Affinity]** 欄位。
 
-   可以選擇任何關聯名稱，但請確保不使用空格或標點符號。 如果使用不同的伺服器，請指定不同的名稱。
+   您可以選擇任何相似性名稱，但請確定您未使用空格或標點符號。 如果您使用不同的伺服器，請指定不同的名稱。
 
    ![](assets/s_ncs_install_server_wf_affinity01.png)
 
    ![](assets/s_ncs_install_server_wf_affinity02.png)
 
-   下拉清單包含以前使用的關聯。 它會隨著時間而用不同的輸入值完成。
+   下拉式清單包含先前使用的相關性。 它會隨著時間使用不同的輸入值完成。
 
-1. 開啟 **nl6/conf/config-`<instance>.xml`** 的子菜單。
-1. 修改與 **[!UICONTROL wfserver]** 模組如下：
+1. 開啟 **nl6/conf/config-`<instance>.xml`** 檔案。
+1. 修改符合「 」的行 **[!UICONTROL wfserver]** 模組如下：
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
    ```
 
-   如果定義了多個關聯，則它們必須用逗號分隔，且不帶任何空格：
+   如果您定義數個相關性，則必須以逗號分隔，且不含任何空格：
 
    ```
    <wfserver autoStart="true" affinity="XXX,YYY,"/>
    ```
 
-   執行沒有定義關聯的工作流時，必須使用緊鄰名稱后的逗號。
+   相似性名稱后面的逗號對於執行未定義相似性的工作流程是必要的。
 
-   如果您只想執行已定義關聯的工作流，請不要在關聯清單的末尾添加逗號。 例如，按如下方式修改行：
+   如果您只想執行已定義相似性的工作流程，請勿在相似性清單的末尾新增逗號。 例如，修改此行，如下所示：
 
    ```
    <wfserver autoStart="true" affinity="XXX"/>
@@ -321,14 +321,14 @@ sh
 
 ## 自動重新啟動 {#automatic-process-restart}
 
-預設情況下，不同的Adobe Campaign進程每天在上午6點（伺服器時間）自動重新啟動。
+根據預設，不同的Adobe Campaign程式會在每天早上6點（伺服器時間）自動重新啟動。
 
-但是，您可以更改此配置。
+不過，您可以變更此設定。
 
-要執行此操作，請轉到 **serverConf.xml** 檔案，位於 **會議** 安裝的儲存庫。
+若要這麼做，請前往 **serverConf.xml** 檔案，位於 **conf** 存放庫。
 
-此檔案中配置的每個進程都有 **processRestartTime** 屬性。 您可以修改此屬性的值，以根據需要調整每個進程的重新啟動時間。
+此檔案中設定的每個程式都有一個 **processRestartTime** 屬性。 您可以修改此屬性的值，以根據您的需求調整每個流程的重新啟動時間。
 
 >[!IMPORTANT]
 >
->不要刪除此屬性。 必須每天重新啟動所有進程。
+>請勿刪除此屬性。 所有處理程式必須每天重新啟動。

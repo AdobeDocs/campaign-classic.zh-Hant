@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 管理和自訂清單
-description: 了解如何瀏覽和設定清單
+description: 瞭解如何瀏覽和設定清單
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
@@ -16,9 +16,9 @@ ht-degree: 87%
 
 
 
-您可以使用瀏覽器存取Campaign資料庫中的記錄清單。 您可以篩選這些清單、執行搜尋、新增資訊、篩選及排序資料。
+您可以使用Explorer存取Campaign資料庫中的記錄清單。 您可以篩選這些清單、執行搜尋、新增資訊、篩選及排序資料。
 
-## 計數記錄 {#counting-records}
+## 計算記錄 {#counting-records}
 
 根據預設，Adobe Campaign 會載入清單中的前 200 條記錄。這意味著將不一定顯示您正在檢視之表格中的所有記錄。您可以統計清單中的記錄計數，並載入更多記錄。
 
@@ -46,17 +46,17 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在清單配置窗口中，按一下 **[!UICONTROL Advanced parameters]** （左下），並變更要擷取的行數。
+在清單組態視窗中，按一下 **[!UICONTROL Advanced parameters]** （左下方）並變更要擷取的行數。
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## 配置清單 {#configuring-lists}
+## 設定清單 {#configuring-lists}
 
 ### 新增欄 {#add-columns}
 
 有兩個方法可在清單中加入欄。
 
-您可以從記錄的詳細資訊快速將欄新增至清單。 操作步驟：
+您可以從記錄的詳細資訊快速將欄新增到清單中。 操作步驟：
 
 1. 從詳細資料畫面中，以滑鼠右鍵按一下 要在欄中顯示的欄位。
 1. 選取 **[!UICONTROL Add in the list]**。
@@ -81,7 +81,7 @@ ht-degree: 87%
    >
    >標籤會按表格顯示且以字母順序排列。
    >
-   >使用 **Search** 欄位在可用欄位中執行搜尋。有關詳細資訊，請參閱 [本節](#sorting-a-list).
+   >使用 **Search** 欄位在可用欄位中執行搜尋。如需詳細資訊，請參閱 [本節](#sorting-a-list).
    >
    >欄位採用特定圖示加以標識：SQL 欄位、連結的資料表、計算欄位等。可用欄位的清單下將顯示所選取的每個欄位的說明。[了解更多](#configuring-lists)。
    >
@@ -102,7 +102,7 @@ ht-degree: 87%
 
 您可以建立新的欄來顯示清單中的其他欄位。操作步驟：
 
-1. 按一下 **[!UICONTROL Configure the list]** 在清單的右下方。
+1. 按一下 **[!UICONTROL Configure the list]** 位於清單下方和右側。
 1. 按一下 **[!UICONTROL Add]**，以在清單中顯示新欄位。
 
 ### 移除欄 {#remove-a-column}
@@ -148,7 +148,7 @@ ht-degree: 87%
 
 1. 以滑鼠右鍵按一下包含顯示資料的資料夾。
 1. 選取 **[!UICONTROL Properties]**。
-1. 按一下 **[!UICONTROL Advanced settings]** ，然後在 **[!UICONTROL Configuration]** 欄位。
+1. 按一下 **[!UICONTROL Advanced settings]** 然後在中指定名稱 **[!UICONTROL Configuration]** 欄位。
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
@@ -166,7 +166,7 @@ ht-degree: 87%
 
 若要匯出清單資料，您必須使用匯出精靈。若要使用此精靈，請從清單選取要匯出的元素，以滑鼠右鍵按一下後選取 **[!UICONTROL Export...]**。
 
-有關匯入及匯出功能之使用，請參閱 [一般匯入和匯出](../../platform/using/about-generic-imports-exports.md).
+有關匯入和匯出功能的使用說明，請參閱 [一般匯入和匯出](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
@@ -180,7 +180,7 @@ ht-degree: 87%
 
 您也可以設定排序或合併排序準則。要執行此操作，請遵循下列步驟：
 
-1. **[!UICONTROL Configure list]** 清單右邊。
+1. **[!UICONTROL Configure list]** 在清單右下方。
 
    ![](assets/s_ncs_user_configure_list.png)
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 解除安裝 Campaign
-description: 了解如何解除安裝Campaign
+description: 瞭解如何解除安裝Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -20,7 +20,7 @@ ht-degree: 19%
 
 >[!CAUTION]
 >
->這些程式會永久解除安裝Adobe Campaign。 所有資料都將丟失。
+>這些程式將會永久解除安裝Adobe Campaign。 所有資料都將遺失。
 
 **RHEL:**
 
@@ -42,4 +42,4 @@ rm -rf /user/local/neolane
 
 **Windows：**
 
-請參閱 [頁面](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). 別忘了移除Campaign安裝資料夾。
+請參閱此 [頁面](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). 別忘了移除Campaign安裝資料夾。

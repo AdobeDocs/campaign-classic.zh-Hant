@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 關於異動訊息傳送報告
-description: 了解如何存取Adobe Campaign Classic交易式訊息報表
+description: 瞭解如何存取Adobe Campaign Classic異動訊息傳送報告
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
@@ -18,8 +18,8 @@ ht-degree: 15%
 
 
 
-Adobe Campaign提供數個報表，可讓您控制活動並順利執行執行個體。
+Adobe Campaign提供數個報表，可讓您控制活動並順利執行執行執行個體。
 
-這些訊息中心報告可從 **[!UICONTROL Reports]** 的 **控制實例**.
+這些訊息中心報告可從以下網址存取： **[!UICONTROL Reports]** 的標籤 **控制例項**.
 
 ![](assets/messagecenter_reporting_002.png)

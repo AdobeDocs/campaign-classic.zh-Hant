@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 推送疑難排解
-description: 推送疑難排解
+title: 推播疑難排解
+description: 推播疑難排解
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
@@ -16,17 +16,17 @@ ht-degree: 2%
 
 
 
-如果您的行動裝置已連線至Wi-Fi，而您未收到通知，請檢查防火牆是否未封鎖FCM/APN埠。
+如果您的行動裝置已連線至Wi-Fi且您沒有收到通知，請檢查防火牆是否未封鎖FCM/APN連線埠。
 
-**Android**:行動裝置連接至連接埠5228至5230的FCM伺服器。 因此，您必須設定防火牆，以授權其與FCM連線。 要開啟的埠包括：5228（最常使用）、5229和5230。
+**Android**：行動裝置會連線至連線埠5228到5230上的FCM伺服器。 因此，您必須設定防火牆，使其授權與FCM的連線。 開啟的連線埠為：5228 （最常使用）、5229和5230。
 
 **iOS**:
 
-HTTP/2連接器：您必須允許與以下伺服器進行通信：
+HTTP/2聯結器：您必須允許與下列伺服器之間的通訊：
 
-* api.push.apple.com:埠443
-* api.development.push.apple.com:埠443
+* api.push.apple.com：連線埠443
+* api.development.push.apple.com：連線埠443
 
 >[!NOTE]
 >
->有關兩個連接器的詳細資訊，請參閱 [在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md).
+>有關兩個聯結器的詳細資訊，請參閱 [在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md).

@@ -42,13 +42,13 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 ## 如何配置電子郵件傳遞機制？ {#how-to-configure-email-deliverability-}
 
-除了 [Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)，請閱讀傳遞能力技術建議，了解如何設定您的執行個體，以充份發揮Campaign傳遞功能。
+除了 [Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)，閱讀傳遞能力技術建議，瞭解如何設定執行個體，以充份發揮Campaign傳遞功能。
 
 [按一下這裡以瞭解更多資訊](../../delivery/using/about-deliverability.md)。
 
 ## 如何實施內容核准？ {#how-can-i-implement-content-approval-}
 
-Campaign 可以讓您以協作模式，針對行銷活動的主要步驟設定核准流程。您可以針對每個行銷活動，核准傳遞目標、內容和成本。負責核准的Adobe Campaign運算子可透過電子郵件接收通知，並可從主控台或透過Web連線接受或拒絕核准。
+Campaign 可以讓您以協作模式，針對行銷活動的主要步驟設定核准流程。您可以針對每個行銷活動，核准傳遞目標、內容和成本。可以透過電子郵件形式通知負責核准的Adobe Campaign操作者，然後他們可透過主控台或網路連線核准或拒絕核准。
 
 [按一下這裡以瞭解更多](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)，並探索在 Campaign 中實施傳遞內容核准的步驟。
 

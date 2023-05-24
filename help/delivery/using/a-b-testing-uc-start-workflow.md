@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 開始工作流程
-description: 透過專屬的使用案例了解如何執行A/B測試
+description: 瞭解如何透過專屬的使用案例執行A/B測試
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
@@ -21,14 +21,14 @@ ht-degree: 9%
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
-1. 透過促銷活動控制面板核准傳遞A和B的目標和內容。
-1. 確認傳送。
-1. 等到5天時段結束為止，以找出在傳送開啟結果之後計算的內容。
+1. 透過行銷活動控制面板，核准傳遞A和B的目標和內容。
+1. 確認傳遞。
+1. 請等待5天期間結束，以檢視在傳遞開啟結果後計算的內容。
 
    ![](assets/use_case_abtesting_startwkfl_002.png)
 
-   在此情況下，選擇範本B。
+   在此情況下，會選擇範本B。
 
-1. 決定第三個傳送的內容後，核准目標和內容。
+1. 確定第三次傳送的內容後，核准目標和內容。
 
 您現在可以分析結果。 [了解更多](a-b-testing-uc-analyzing.md)。

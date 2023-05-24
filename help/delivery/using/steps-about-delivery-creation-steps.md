@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 關於在Adobe Campaign中建立傳遞的步驟
-description: 探索Adobe Campaign中的主要傳送建立步驟
+title: 關於Adobe Campaign中的傳遞建立步驟
+description: 探索Adobe Campaign中的主要傳遞建立步驟
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration
@@ -17,11 +17,11 @@ ht-degree: 14%
 
 
 
-建立傳送時的主要步驟如下：
+建立傳遞時的主要步驟如下：
 
-1. **建立並識別傳送**. [深入了解](steps-create-and-identify-the-delivery.md)
+1. **建立並識別傳遞**. [深入了解](steps-create-and-identify-the-delivery.md)
 
-1. **定義傳送內容**. 傳送內容定義是每個管道專屬的。 如需詳細資訊，請參閱專屬區段：
+1. **定義傳遞內容**. 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專屬區段：
 
    * [電子郵件通道](defining-the-email-content.md)
    * [SMS 頻道](sms-create.md#defining-the-sms-content)
@@ -32,8 +32,8 @@ ht-degree: 14%
 
 1. **傳送傳遞**. [深入了解](steps-sending-the-delivery.md)
 
-1. **監控傳送** （追蹤、隔離、報表等）。 有關詳細資訊，請參閱 [監控傳送](about-delivery-monitoring.md) 和 [追蹤傳遞](about-message-tracking.md) 區段。
+1. **監視傳遞** （追蹤、隔離、報告等）。 如需詳細資訊，請參閱 [監視傳遞](about-delivery-monitoring.md) 和 [追蹤傳遞](about-message-tracking.md) 區段。
 
 >[!NOTE]
 >
->本章中描述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，但外部傳送除外(請參閱 [選取外部收件者](steps-defining-the-target-population.md#selecting-external-recipients))。
+>本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外(請參閱 [選取外部收件者](steps-defining-the-target-population.md#selecting-external-recipients))。

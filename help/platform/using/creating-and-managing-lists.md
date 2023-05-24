@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 建立和管理清單
-description: 了解如何建立和管理清單
+description: 瞭解如何建立和管理清單
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Profiles
 role: User
@@ -22,31 +22,31 @@ ht-degree: 65%
 
 清單 (list) 是一組靜態的用戶檔案，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。例如，透過查詢而從資料庫中摘取出的母體可形成一個清單。
 
-清單會透過 **[!UICONTROL Lists]** 連結 **[!UICONTROL Profiles and targets]** 標籤。
+清單是透過以下方式建立和管理的： **[!UICONTROL Lists]** 中的連結 **[!UICONTROL Profiles and targets]** 標籤。
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
 Adobe Campaign 提供兩種類型的清單：
 
-* **[!UICONTROL Group]** 類型：此 **[!UICONTROL Group]** 類型清單屬於 **靜態** 根據特定條件選擇的人員清單。 此清單就像是一組用戶檔案的快照。請注意，用戶檔案新增至資料庫中時，不會對群組清單進行自動更新。
+* **[!UICONTROL Group]** 型別： **[!UICONTROL Group]** 型別清單屬於 **靜態** 根據特定條件選取的人員清單。 此清單就像是一組用戶檔案的快照。請注意，用戶檔案新增至資料庫中時，不會對群組清單進行自動更新。
 
-   如需如何建立 **[!UICONTROL Group]** 類型清單，請參閱 [頁面](#creating-a-profile-list-from-a-group).
+   如需如何建立 **[!UICONTROL Group]** 型別清單，請參閱此 [頁面](#creating-a-profile-list-from-a-group).
 
-* **[!UICONTROL List]** 類型：此 **[!UICONTROL List]** 類型清單可讓您使用工作流程來建立和管理清單。 這些是資料匯入產生的特定清單，可透過專用 **[!UICONTROL List update]** 工作流程活動。
+* **[!UICONTROL List]** 型別： **[!UICONTROL List]** 型別清單可讓您使用工作流程來建立和管理清單。 這些是從資料匯入產生的特定清單，可以透過專用更新 **[!UICONTROL List update]** 工作流程活動。
 
-   不同於 **[!UICONTROL Group]** 類型清單，此類型清單可以自動更新為 **[!UICONTROL Scheduler]** 活動。 請注意，以了解如何建立 **[!UICONTROL List]** 類型清單，請參閱 [本頁](../../workflow/using/list-update.md).
+   不喜歡 **[!UICONTROL Group]** 型別清單，此型別清單可透過 **[!UICONTROL Scheduler]** 活動。 請注意，有關如何建立的範例 **[!UICONTROL List]** 型別清單，請參閱 [此頁面](../../workflow/using/list-update.md).
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-list-video)
 
 ## 從群組建立設定檔清單 {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** 通過 **[!UICONTROL Profiles and targets]** 連結必須以預設的Adobe Campaign設定檔表格(nms:recipient)為基礎。
+**[!UICONTROL Group]** 透過建立的型別清單 **[!UICONTROL Profiles and targets]** 連結必須根據預設的Adobe Campaign設定檔表格(nms：recipient)。
 
 >[!NOTE]
 >
 >若要建立包含其他資料類型的清單，您必須執行工作流程。例如，透過在訪客資料表上查詢並更新清單，您可以建立訪客清單。如需此工作流程的詳細資訊，請參閱[本小節](../../workflow/using/about-workflows.md)。
 
-建立新 **[!UICONTROL Group]** 鍵入清單，然後應用以下步驟：
+若要建立新的 **[!UICONTROL Group]** 輸入清單，套用下列步驟：
 
 1. 按一下 **[!UICONTROL Create]** 按鈕並選取 **[!UICONTROL New list]**.
 
@@ -76,7 +76,7 @@ Adobe Campaign 提供兩種類型的清單：
 
 >[!NOTE]
 >
->將資料連結至清單只能使用 **[!UICONTROL Group]** 類型清單。
+>只能使用將資料連結至清單 **[!UICONTROL Group]** 型別清單。
 
 可以將一組用戶檔案的用戶檔案篩選並連結至清單。然後傳遞作業便可傳送到此清單，以鎖定用戶檔案。若要創建用戶檔案群組：
 
@@ -93,9 +93,9 @@ Adobe Campaign 提供兩種類型的清單：
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
-此 **[!UICONTROL Recreate the list]** 選項會從清單中刪除較舊的內容。 此模式已經最優化，因為不需查詢確認用戶檔案是否已連結至清單。
+此 **[!UICONTROL Recreate the list]** 選項會從清單中刪除較早的內容。 此模式已經最優化，因為不需查詢確認用戶檔案是否已連結至清單。
 
-如果您取消核取 **[!UICONTROL No trace of this job is saved in the database]** 選項，可以選擇（或建立）執行資料夾，其中將儲存連結到此進程的資訊。
+如果您取消勾選 **[!UICONTROL No trace of this job is saved in the database]** 選項，您可以選取（或建立）執行資料夾，連結至此流程的資訊將儲存於此資料夾。
 
 使用視窗的上方區域可監視執行情況。使用 **[!UICONTROL Stop]** 按鈕可停止程序。已處理的連絡人將連結至清單。
 
@@ -133,14 +133,14 @@ Adobe Campaign 提供兩種類型的清單：
 
 此清單 (list) 是一組靜態的收件者名單，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。收件者清單也可以稱為受眾。
 
-了解如何從檔案總管設定收件者清單，以建立對象。
+瞭解如何透過從檔案總管設定收件者清單來建立對象。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 ### 如何使用工作流程建立收件者清單 {#create-list-in-a-wf-video}
 
-了解如何建立工作流程以鎖定收件者，以及如何在使用電子郵件定位中的清單之前讓工作流程重複執行。
+瞭解如何在電子郵件目標中使用清單之前，建立工作流程以定位收件者，以及如何使其重複發生。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-提供其他Campaign Classic作法影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+提供其他Campaign Classic操作影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 架構元素和屬性 — 方法元素
+title: 結構描述元素和屬性 — methods元素
 description: 方法元素
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 7%
 
 無
 
-## 父母 {#parents-11}
+## 父項 {#parents-11}
 
 `<srcschema>`
 
-## 兒童 {#children-11}
+## 子系 {#children-11}
 
 方法
 
 ## 說明 {#description-11}
 
-此元素允許您定義 `<method>`  的子菜單。 聲明方法是必需的。
+此元素可讓您定義 `<method>`  元素。 宣告方法時必須使用。
 
 ## 屬性說明 {#attribute-description-11}
 

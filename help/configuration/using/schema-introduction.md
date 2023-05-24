@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 結構參考
-description: 架構參考清單
+title: 結構描述參考
+description: 結構描述參考清單
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -11,11 +11,11 @@ ht-degree: 21%
 
 ---
 
-# 結構參考 {#schema-reference}
+# 結構描述參考 {#schema-reference}
 
-編輯架構時，可使用以來源架構(xtk:srcSchema)為基礎的核准系統。 使用「資料庫結構更新……」更新資料庫時，也可能發現一些錯誤。 嚮導。
+編輯結構描述時，可以使用根據來源結構描述(xtk：srcSchema)的核准系統。 使用「資料庫結構更新……」精靈更新資料庫時，也會發現一些錯誤。
 
-依預設，在Adobe Campaign結構中，所有布林類型屬性都為「false」。 若要啟用這些屬性，您必須在結構中指定屬性，並將其值設為「true」。
+依預設，在Adobe Campaign結構描述中，所有布林值型別屬性都是「false」。 若要啟用它們，您必須在結構描述中指定屬性，並將其值設為「true」。
 
 參考清單：
 

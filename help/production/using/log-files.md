@@ -19,50 +19,50 @@ ht-degree: 2%
 
 
 
-日誌檔案的組織方式如下：
+記錄檔的組織方式如下：
 
 ![](assets/d_ncs_directory.png)
 
-每個 **nlserver** module生成保存在以下目錄中的日誌檔案： **`<installation directory>`/var/`<instance>`/log/`<module>`.日誌**。
+每個 **nlserver** 模組會產生儲存在下列目錄中的記錄檔： **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-的 **nlserver syslogd** 模組將日誌保存到磁碟。 此模組與Unix類似 **syslog守護程式**，但是已針對Unix和Windows之間的相容性進行了調整。 其他Adobe Campaign模組不會將日誌保存到磁碟；他們將此任務委派給 **syslog** 模組通過發送UDP資料包。
+此 **nlserver syslogd** 模組會將記錄檔儲存至磁碟。 此模組類似於Unix **syslog精靈**，但已針對Unix和Windows之間的相容性進行了調整。 其他Adobe Campaign模組不會將其記錄檔儲存至磁碟，而是將此任務委派給 **syslogd** 模組，透過傳送UDP封包進行傳送。
 
-預設情況下，Adobe Campaign平台 **syslog** 已安裝模組，但可以使用 **syslog守護程式**。 此模組在 **日誌** 的子菜單。
+依預設，Adobe Campaign平台具有 **syslogd** 已安裝模組，但可以使用另一個 **syslog精靈**. 此模組會在以下位置建立記錄檔： **記錄** 目錄。
 
-多實例模組的日誌儲存在以下目錄中： **`<installation directory>`/var/default/log////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**。 同一日誌檔案由所有實例共用(例如 **web.log**)。
+多執行個體模組的記錄會儲存在下列目錄中： **`<installation directory>`/var/default/log/**. 所有執行個體會共用相同的記錄檔(例如 **web.log**)。
 
-其他模組的日誌儲存在以實例命名的子資料夾中。 每個實例都有其自己的日誌檔案。
+其他模組的記錄會儲存在以執行個體命名的子資料夾中。 每個執行個體都有自己的記錄檔。
 
-下表列出了多實例日誌檔案：
+下表列出多執行處理記錄檔：
 
 | 檔案 | 說明 |
 |---|---|
-| web.log | Web模組日誌（客戶端控制台、報告、SOAP API等） |
-| webmdl.log | 重定向模組中的日誌 |
-| watchdog.log | Adobe Campaign進程監測模組的日誌 |
+| web.log | Web模組記錄（使用者端主控台、報表、SOAP API等） |
+| webmdl.log | 來自重新導向模組的記錄 |
+| watchdog.log | Adobe Campaign程式監控模組的記錄 |
 | trackinglogd.log | 追蹤記錄 |
 
-下表列出了單實例日誌檔案：
+下表列出單一執行處理記錄檔：
 
 | 檔案 | 說明 |
 |---|---|
-| mta.log | mta模組日誌 |
-| mtachild.log | 消息傳遞處理日誌 |
-| wfserver.log | 工作流伺服器模組的日誌 |
-| runwf.log | 工作流執行日誌 |
-| inMail.log | 彈出郵件模組日誌 |
-| logins.log | 記錄所有登錄嘗試到Adobe Campaign（成功與否） |
+| mta.log | mta模組記錄 |
+| mtachild.log | 訊息傳遞處理記錄 |
+| wfserver.log | 工作流程伺服器模組的記錄 |
+| runwf.log | 工作流程執行記錄 |
+| inMail.log | 退回郵件模組記錄 |
+| logins.log | 記錄對Adobe Campaign的所有登入嘗試（成功與否） |
 
 >[!IMPORTANT]
 >
->的 **重定向** 目錄僅存在於重定向伺服器上。 的 **url** 子目錄包含要重定向的URL和子目錄的匹配項 **日誌** 包含跟蹤日誌。 要生成跟蹤日誌， **跟蹤日誌** 模組必須正在運行。
+>此 **重新導向** 目錄僅存在於重新導向伺服器上。 此 **url** 子目錄包含要重新導向之URL的相符專案，以及子目錄 **記錄** 包含追蹤記錄。 若要產生追蹤記錄，請 **trackinglogd** 模組必須執行中。
 
-為了效能和儲存優化， logins.log檔案被拆分為多個檔案，每天一個(logins.yy-mm-dd.log)，最多保留365個檔案。 serverConf.xml中syslogd(**maxNumberOfLoginsFiles** 選項。 請參閱 [伺服器配置檔案](../../installation/using/the-server-configuration-file.md#syslogd)。
+為了達到效能和儲存最佳化，logins.log檔案會分割成多個檔案，每天一個(logins.yy-mm-dd.log)，最多保留365個檔案。 天數可以在serverConf.xml中變更，在syslogd (**maxNumberOfLoginsFiles** 選項)。 請參閱以下說明檔案： [伺服器設定檔](../../installation/using/the-server-configuration-file.md#syslogd).
 
-預設情況下，每個模組和每個實例的日誌限制為兩個10 MB的檔案。 第二個檔案稱為： **`<modulename>`_2.log**。 因此，日誌的大小限制為2&#42;每個模組和每個實例10MB。
+依預設，每個模組和執行個體的記錄檔上限為兩個10 MB檔案。 第二個檔案名為： **`<modulename>`_2.log**. 因此，記錄檔的大小限製為2&#42;每個模組及每個執行個體為10MB。
 
-但是，您可以保留較大的檔案。 要啟用此功能，請更改 **maxFileSizeMb=&quot;10&quot;** 的 **syslog** 節點 **conf/serverConf.xml** 的子菜單。 此值表示日誌檔案的最大大小(MB)。
+不過，您可以保留較大的檔案。 若要啟用此功能，請變更 **maxFileSizeMb=&quot;10&quot;** 在中設定 **syslogd** 的節點 **conf/serverConf.xml** 檔案。 此值代表記錄檔的大小上限（以MB為單位）。
 
-如果希望在日誌中保留更多詳細級別，可以使用 **— 詳細** 參數：
+如果您想在記錄中保留更詳細的層級，可以使用啟動Adobe Campaign模組 **-verbose** 引數：
 
-**nlserver啟動 `<MODULE>`@`<INSTANCE>`  — 詳細**
+**nlserver start `<MODULE>`@`<INSTANCE>` -verbose**

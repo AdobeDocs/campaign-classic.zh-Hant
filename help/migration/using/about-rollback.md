@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 回復到以前的版本
-description: 了解如何回復至舊版
+title: 回覆至上一個版本
+description: 瞭解如何回覆至先前的版本
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 ---
 
-# 回復到以前的版本{#about-rollback}
+# 回覆至上一個版本{#about-rollback}
 
 
 
-移轉後，若有問題，您可能需要回復至舊版的Campaign。
+移轉後，如果發生問題，您可能需要復原至舊版Campaign。
 
-回滾程式取決於您的Campaign初始版本。
+復原程式取決於您的Campaign初始版本。
 
-以下是從v7還原v6.1的步驟。
+以下是從v7還原v6.1的程式。
 
-1. 恢復資料庫的備份並恢復它。
-1. 恢復 **Adobe Campaign v6.back** 資料夾(**nl6.back** 在Linux中)，將其重新命名為 **Adobe Campaign v6** (**nl6** 在Linux中)，並將其還原到原始位置。
-1. 通過重新分配監聽埠重新配置IIS，以重新建立Adobe Campaign v6.1在IIS網站級別的整合。
+1. 復原資料庫備份並還原。
+1. 復原 **Adobe Campaign v6.back** 資料夾(**nl6.back** （在Linux中），將其重新命名為 **Adobe Campaign v6** (**nl6** （在Linux中）並將它還原至其原始位置。
+1. 透過重新指派監聽連線埠來重新設定IIS，以便在IIS網站層級重新建立Adobe Campaign v6.1的整合。
 1. 停止Adobe Campaign v7服務。
 1. 重新啟動IIS。
 1. 重新啟動Adobe Campaign v6.1服務。

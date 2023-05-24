@@ -19,44 +19,44 @@ ht-degree: 4%
 
 
 
-要使Adobe Campaign用戶能夠登錄到您建立和配置的實例，他們需要使用客戶端控制台。
+為了讓Adobe Campaign使用者能夠登入您已建立和設定的執行個體，他們需要使用使用者端主控台。
 
-## 使客戶端控制台可用
+## 讓使用者端主控台可供使用
 
-當電腦用於啟動Adobe Campaign應用程式伺服器(**nlserver web**)從客戶端控制台接收用戶連接，您可以將其配置為通過HTML介面使Adobe Campaign富客戶端的安裝程式可用。 只要有新版本的客戶端控制台可用，用戶在啟動其客戶端控制台時將被邀請下載。
+用來啟動Adobe Campaign應用程式伺服器的電腦時(**nlserver web**)會從使用者端主控台接收使用者連線，您可以將其設定為可透過HTML介面使用Adobe Campaign rich client的設定程式。 每當有新版本的使用者端主控台可用時，使用者就會在啟動其使用者端主控台時下載該版本。
 
-為此，您必須：
+若要這麼做，您必須：
 
-1. 選擇包含控制台安裝程式的包。
+1. 選取包含主控台安裝程式的套件。
 
-   此檔案稱為 `setup-client-7.X.XXXX.exe` 對於v7或 `setup-client-6.X.XXXX.exe` 對於v6.1，其中 `X` 是Adobe Campaign和 `XXXX` 是內部版本號。
+   此檔案名為 `setup-client-7.X.XXXX.exe` 適用於v7或 `setup-client-6.X.XXXX.exe` 適用於v6.1，其中 `X` 是Adobe Campaign的子版本，且 `XXXX` 是建置編號。
 
-1. 將此包複製並貼上到Adobe Campaign安裝資料夾（在混合安裝的營銷伺服器上）中， **/datakit/nl/eng/jsp**。
+1. 將此套件複製並貼到Adobe Campaign安裝資料夾（針對混合安裝位在Marketing伺服器上）的下方 **/datakit/nl/eng/jsp**.
 1. 啟動Adobe Campaign伺服器。
 
-市場活動用戶可以通過Web瀏覽器下載控制台安裝程式，這要歸功於以下URL:
+Campaign使用者可透過網頁瀏覽器下載主控台安裝程式，網址如下：
 
 ```
 https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 ```
 
-此頁要求在應用程式中定義登錄名和密碼。
+此頁面需要應用程式中定義的登入名和密碼。
 
-瞭解如何安裝控制台 [此部分](../../installation/using/installing-the-client-console.md)。
+瞭解如何安裝主控台 [在本節中](../../installation/using/installing-the-client-console.md).
 
-## 建議最終用戶升級其客戶端控制台
+## 建議使用者升級其使用者端主控台
 
-控制台在市場活動伺服器資料夾中可用後，將邀請用戶在專用的提示窗口中下載最新的客戶端控制台版本。 Adobe建議保留 **[!UICONTROL No longer ask this question]** 未選定，以確保在新版本的控制台可用時向所有用戶發出警報。
+在Campaign伺服器資料夾中提供主控台後，系統會邀請使用者在專用的提示視窗中下載最新的使用者端主控台版本。 Adobe建議保留選項 **[!UICONTROL No longer ask this question]** 取消選取，以確保在可使用新版主控台時，所有使用者都會收到警報。
 
-如果選擇此選項並選擇不下載最新版本，則不會向其他用戶通知新的可用版本。
+如果您選取此選項並選擇不下載最新版本，則不會通知其他使用者有新的可用版本。
 
-如果選中了該選項，則可以重置此提示。 只有能夠編輯Windows註冊表的系統管理員才應進行以下更改：
+如果選取了選項，您可以重設此提示。 只有熟悉編輯Windows登入的系統管理員才應該進行下列變更：
 
-1. 使用 **雷吉** 命令 **[!UICONTROL Start > Run]** 的子菜單。
-1. 搜索節點並展開它。
+1. 使用開啟登入編輯器 **regedit** 命令來自 **[!UICONTROL Start > Run]** 功能表。
+1. 搜尋節點並展開。
 
    ```
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. 刪除 **confAdvisedUpgrade** 並關閉註冊表編輯器。
+1. 刪除 **confAdvisedUpgrade** 輸入並關閉登入編輯程式。

@@ -18,17 +18,17 @@ ht-degree: 15%
 
 
 
-一旦您的優惠方案提出後，您就可以查看演示文稿歷史記錄。
+提出優惠方案主張後，您可以檢視簡報歷史記錄。
 
 >[!NOTE]
 >
->此功能僅可線上顯示，且僅供傳送管理員檢視。
+>此功能僅可線上上顯示，且僅供傳遞管理員檢視。
 
-* 在選件層級，在 **[!UICONTROL Edit]** 按一下 **[!UICONTROL Propositions]**.
+* 在選件層級的 **[!UICONTROL Edit]** 標籤，按一下 **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
-* 從收件者的設定檔，按一下 **[!UICONTROL Propositions]** 標籤。
+* 在收件者的設定檔中，按一下 **[!UICONTROL Propositions]** 標籤。
 
    ![](assets/offer_followup_002.png)
 

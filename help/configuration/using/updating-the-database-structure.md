@@ -17,7 +17,7 @@ ht-degree: 8%
 
 
 
-若要將修改套用至結構，請啟動資料庫更新精靈。 此精靈可透過 **[!UICONTROL Tools > Advanced > Update database structure]** . 它檢查資料庫的物理結構是否與其邏輯描述匹配，並執行SQL更新指令碼。
+若要套用對結構描述所做的修改，請啟動資料庫更新精靈。 此精靈的存取方式為 **[!UICONTROL Tools > Advanced > Update database structure]** . 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。
 
 ![](assets/d_ncs_integration_schema_update.png)
 
@@ -25,17 +25,17 @@ ht-degree: 8%
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
-此 **[!UICONTROL Add stored procedures]** 和 **[!UICONTROL Import initialization data]** 選項用於啟動初始SQL指令碼和建立資料庫時執行的資料包。
+此 **[!UICONTROL Add stored procedures]** 和 **[!UICONTROL Import initialization data]** 選項可用來啟動初始SQL指令碼，以及在建立資料庫時執行的資料套件。
 
-您可以從外部資料包導入一組資料。 要執行此操作，請選取 **[!UICONTROL Import a package]** 並輸入包的XML檔案。
+您可以從外部資料包匯入一組資料。 要執行此操作，請選取 **[!UICONTROL Import a package]** 並輸入封裝的XML檔案。
 
-請按照以下步驟查看資料庫更新SQL指令碼：
+請依照下列步驟操作，並檢視資料庫更新SQL指令碼：
 
 ![](assets/d_ncs_integration_schema_update2.png)
 
 >[!NOTE]
 >
->這位於編輯欄位中，可以修改以刪除或新增SQL程式碼。
+>此專案位於編輯欄位中，可以修改以刪除或新增SQL程式碼。
 
 接下來，啟動資料庫更新：
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 擴充結構
-description: 了解如何擴充結構
+title: 擴充綱要
+description: 瞭解如何擴充綱要
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
@@ -12,29 +12,29 @@ ht-degree: 4%
 
 ---
 
-# 擴充結構{#extending-a-schema}
+# 擴充綱要{#extending-a-schema}
 
 >[!IMPORTANT]
 >
->某些內建結構不得延伸：主要是已定義下列設定的：\
+>部分內建方案不可擴充：主要是針對已定義下列設定的方案：\
 >**dataSource=&quot;file&quot;** 和 **mappingType=&quot;xmlFile&quot;**.\
->不得擴充下列結構： **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl：監視**, **nms:calendar**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk：連接**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk:js**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.
->這份清單並非詳盡無遺。
+>下列結構描述不可延伸： **xtk：entityBackupNew**， **xtk：entityBackupOriginal**， **xtk：entityOriginal**， **xtk：form**， **xtk：srcSchema**， **ncm：發佈**， **nl：monitoring**， **nms：calendar**， **nms：remoteTracking**， **nms：userAgentRules**， **xtk：builder**， **xtk：連線**， **xtk：dbInit**， **xtk：funcList**， **xtk：fusion**， **xtk： jst**， **xtk：navtree**， **xtk：queryDef**， **xtk：resourceMenu**， **xtk：schema**， **xtk：scriptContext**， **xtk：session**， **xtk：sqlSchema**， **xtk：strings**.
+>此清單並非詳盡無遺。
 
-擴充現有結構的方法有兩種：
+擴充現有結構描述的方法有兩種：
 
-1. 直接修改源架構。
-1. 使用相同名稱但不同命名空間建立其他架構。 其優點是，您無需修改原始架構即可擴展表。
+1. 直接修改來源結構描述。
+1. 建立具有相同名稱但名稱空間不同的另一個結構描述。 優點在於您可以擴充表格而無需修改原始架構。
 
-   架構的根元素必須包含 **extendedSchema** 屬性，其名稱為要擴展的架構的值。
+   結構描述的根元素必須包含 **extendedSchema** 具有要擴充之結構描述名稱為其值的屬性。
 
-   擴充功能結構沒有其專屬的結構：從來源架構產生的架構將會填入擴充功能架構的欄位。
+   擴充功能結構描述沒有自己的結構描述：從來源結構描述產生的結構描述將填入擴充功能結構描述的欄位。
 
    >[!IMPORTANT]
    >
-   >您不能修改應用程式的內建架構，而不能修改架構擴展機制。 否則，在將來升級應用程式時，修改的架構將不會更新。 這可能導致使用Adobe Campaign時發生故障。
+   >您不得修改應用程式的內建方案，而只能修改方案擴充機制。 否則，修改後的結構描述將不會在應用程式未來升級時更新。 這可能會導致Adobe Campaign的使用發生錯誤。
 
-   **範例**:延伸功能 **nms:recipient** 綱要。
+   **範例**：擴充功能 **nms：recipient** 結構描述。
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ ht-degree: 4%
    </srcSchema>
    ```
 
-   此 **nms:recipient** 擴充架構中會填入擴充架構中填入的欄位：
+   此 **nms：recipient** 擴充結構描述會以擴充結構描述中填入的欄位填入：
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -54,11 +54,11 @@ ht-degree: 4%
    </schema>
    ```
 
-   此 **dependingSchemas** 架構的根元素上的屬性會參照擴充功能架構上的相依性。
+   此 **相依結構描述** 結構描述根元素上的attribute會參考擴充功能結構描述的相依性。
 
-   此 **屬於** 欄位上的屬性會填入宣告該屬性的架構中。
+   此 **beystsTo** 欄位上的屬性會填入宣告該屬性的結構描述。
 
 >[!IMPORTANT]
 >
->若要考慮修改，您需要重新產生結構。 如需詳細資訊，請參閱[此頁面](../../configuration/using/regenerating-schemas.md)。\
->如果修改影響資料庫的結構，則需要運行更新。 如需詳細資訊，請參閱[此頁面](../../configuration/using/updating-the-database-structure.md)。
+>若要將修改納入考量，您需要重新產生結構描述。 如需詳細資訊，請參閱[此頁面](../../configuration/using/regenerating-schemas.md)。\
+>如果修改影響資料庫的結構，您需要執行更新。 如需詳細資訊，請參閱[此頁面](../../configuration/using/updating-the-database-structure.md)。

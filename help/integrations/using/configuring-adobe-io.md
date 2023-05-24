@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 為 Adobe Experience Cloud 觸發器配置 Adobe I/O
-description: 瞭解如何為Adobe Experience Cloud Triggers配置Adobe I/O
+description: 瞭解如何設定Adobe Experience Cloud Triggers的Adobe I/O
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference
@@ -22,60 +22,60 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果使用通過oAuth身份驗證的較舊版本的觸發器整合， **您需要移到Adobe I/O，如下所述**。
->請注意，在移動到 [!DNL Adobe I/O]，某些傳入觸發器可能丟失。
+>如果您透過oAuth驗證使用舊版的Triggers整合， **您必須依照下方所述移至Adobe I/O**.
+>請注意，在此移動至期間 [!DNL Adobe I/O]，部分傳入的觸發程式可能會遺失。
 >
->具有市場活動的舊式身份驗證模式已在 **2021年10月20日**。 托管環境從擴展中受益，直到 **2022年5月25日**。 作為本地或混合型客戶，請與Adobe客戶服務部門聯繫，將支援範圍擴展到 **2022年5月**。 你必須 [提供OAuth應用程式的AppID](../../integrations/using/configuring-pipeline.md#step-optional) Adobe。
+>已淘汰具有Campaign的舊版oAuth驗證模式： **2021年10月20日**. 託管環境可從擴充功能受益，直到 **2022年5月25日**. 若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至 **2022年5月**. 您必須 [提供Oauth應用程式的AppID](../../integrations/using/configuring-pipeline.md#step-optional) 以Adobe。
 
 ## 必要條件 {#adobe-io-prerequisites}
 
-此整合僅應用於啟動 **Campaign Classic20.2.4及以上版本19.1.8和金標準11**。
+此整合僅適用於「開始」 **Campaign Classic20.2.4及更高版本、19.1.8和Gold Standard 11版本**.
 
-在啟動此實施之前，請檢查您有：
+在開始此實作之前，請檢查您是否擁有：
 
-* 有效 **組織標識符**:組織ID是Adobe Experience Cloud內的唯一標識符，用於VisitorID服務和IMS單一登錄(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant)
-* a **開發人員訪問** 組織。 組織的系統管理員需要 **將開發人員添加到單個產品配置檔案** 過程詳細 [此頁](https://helpx.adobe.com/enterprise/using/manage-developers.html) 為開發人員提供訪問 `Analytics - {tenantID}` 與觸發器關聯的Adobe Analytics產品的產品配置檔案。
+* 有效的 **組織識別碼**：組織ID是Adobe Experience Cloud中的唯一識別碼，用於VisitorID服務和IMS單一登入(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant)
+* a **開發人員存取權** 至您的組織。 組織的系統管理員需要遵循 **將開發人員新增至單一產品設定檔** 詳細程式 [在此頁面中](https://helpx.adobe.com/enterprise/using/manage-developers.html) 為提供開發人員存取權 `Analytics - {tenantID}` 與觸發器相關聯的Adobe Analytics產品的產品設定檔。
 
-## 步驟1:建立/更新Adobe I/O項目 {#creating-adobe-io-project}
+## 步驟1：建立/更新Adobe I/O專案 {#creating-adobe-io-project}
 
-1. 訪問 [!DNL Adobe I/O] 並使用您組織的開發人員訪問權限登錄。
-
-   >[!NOTE]
-   >
-   > 確保您已登錄到正確的組織門戶。
-
-1. 從實例配置檔案ims/authIMSTAClientId中提取現有整合客戶端標識符（客戶端ID）。 非現有或空屬性表示未配置客戶端標識符。
+1. 存取 [!DNL Adobe I/O] 並以貴組織的開發人員存取權登入。
 
    >[!NOTE]
    >
-   >如果客戶端標識符為空，則可以直接 **[!UICONTROL Create a New project]** Adobe I/O。
+   > 請確定您已登入正確的組織入口網站。
 
-1. 使用提取的客戶端標識符標識現有項目。 查找具有與上一步提取的客戶端標識符相同的現有項目。
+1. 從執行個體設定檔案ims/authIMSTAClientId擷取現有的整合使用者端識別碼（使用者端ID）。 不存在或空白屬性表示未設定使用者端識別碼。
+
+   >[!NOTE]
+   >
+   >如果您的使用者端識別碼空白，您可以直接 **[!UICONTROL Create a New project]** 在Adobe I/O中。
+
+1. 使用擷取的使用者端識別碼識別現有專案。 尋找與現有步驟擷取的使用者端識別碼相同的現有專案。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
-1. 選擇 **[!UICONTROL + Add to Project]** 選擇 **[!UICONTROL API]**。
+1. 選取 **[!UICONTROL + Add to Project]** 並選擇 **[!UICONTROL API]**.
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
-1. 在 **[!UICONTROL Add an API]** 窗口，選擇 **[!UICONTROL Adobe Analytics]**。
+1. 在 **[!UICONTROL Add an API]** 視窗，選取 **[!UICONTROL Adobe Analytics]**.
 
    ![](assets/do-not-localize/adobe_io_2.png)
 
-1. 選擇 **[!UICONTROL Service Account (JWT)]** 類型。
+1. 選擇 **[!UICONTROL Service Account (JWT)]** 做為驗證型別。
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. 如果客戶端ID為空，請選擇 **[!UICONTROL Generate a key pair]** 建立公鑰和私鑰對。
+1. 如果您的使用者端ID是空的，請選取 **[!UICONTROL Generate a key pair]** 以建立公開和私密金鑰組。
 
-   然後自動下載密鑰，預設到期日期為365天。 過期後，您需要建立新密鑰對並更新配置檔案中的整合。 使用選項2，您可以選擇手動建立和上載 **[!UICONTROL Public key]** 期限更長。
+   之後，這些金鑰將會自動下載，預設到期日為365天。 過期後，您需要建立新的金鑰組，並在設定檔案中更新整合。 使用選項2，您可以選擇手動建立並上傳 **[!UICONTROL Public key]** 具有較長到期日。
 
-   有關如何替換過期證書密鑰對的逐步指南，請參閱 [此頁](https://developer.adobe.com/developer-console/docs/guides/email-alerts/cert-expiry/#a-step-by-step-guide-to-replacing-expiring-certificate-key-pairs)。
+   如需如何取代過期憑證金鑰組的逐步指南，請參閱 [此頁面](https://developer.adobe.com/developer-console/docs/guides/email-alerts/cert-expiry/#a-step-by-step-guide-to-replacing-expiring-certificate-key-pairs).
 
 
    >[!CAUTION]
    >
-   >下載提示出現時，應保存config.zip檔案，因為您將無法再次下載該檔案。
+   >當出現下載提示時，您應該儲存config.zip檔案，因為您將無法再次下載。
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -83,13 +83,13 @@ ht-degree: 4%
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. 選擇任何現有 **[!UICONTROL Product profile]** 或根據需要建立新的。 無需對此權限 **[!UICONTROL Product profile]**。 有關 [!DNL Analytics] **[!UICONTROL Product Profiles]**，請參閱 [Adobe Analytics文檔](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
+1. 選擇任何現有的 **[!UICONTROL Product profile]** 或視需要建立新檔案。 此專案不需要許可權 **[!UICONTROL Product profile]**. 如需詳細資訊，請參閱 [!DNL Analytics] **[!UICONTROL Product Profiles]**，請參閱 [Adobe Analytics檔案](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
 
-   然後，按一下 **[!UICONTROL Save configured API]**。
+   然後，按一下 **[!UICONTROL Save configured API]**.
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. 從項目中，選擇 **[!UICONTROL Adobe Analytics]** 並複製下列資訊 **[!UICONTROL Service Account (JWT)]**:
+1. 在您的專案中，選取 **[!UICONTROL Adobe Analytics]** 並將下列資訊複製到 **[!UICONTROL Service Account (JWT)]**：
 
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
@@ -100,42 +100,42 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Adobe I/O證書將在12個月後到期。 您每年需要生成新密鑰對。
+>Adobe I/O憑證將在12個月後到期。 您需要每年產生新的金鑰組。
 
-## 步驟2:在Adobe Campaign添加項目憑據 {#add-credentials-campaign}
+## 步驟2：在Adobe Campaign中新增專案認證 {#add-credentials-campaign}
 
 >[!NOTE]
 >
->如果中的客戶端標識符不為空，則不需要此步驟 [步驟1:建立/更新Adobe I/O項目](#creating-adobe-io-project)。
+>如果您的使用者端識別碼不是空白的，則不需要執行此步驟 [步驟1：建立/更新Adobe I/O專案](#creating-adobe-io-project).
 
-私鑰應以base64 UTF-8格式編碼。 若要這麼做：
+私密金鑰應該以base64 UTF-8格式編碼。 若要這麼做：
 
-1. 使用中生成的私鑰 [步驟1:建立/更新Adobe I/O項目部分](#creating-adobe-io-project)。 私鑰必須與用於建立整合的私鑰相同。
+1. 使用在中產生的私密金鑰 [步驟1：建立/更新Adobe I/O專案區段](#creating-adobe-io-project). 私密金鑰必須與用來建立整合的私密金鑰相同。
 
-1. 使用以下命令對私鑰進行編碼： `base64 ./private.key > private.key.base64`。 這將將base64內容保存到新檔案 `private.key.base64`。
+1. 使用下列命令編碼私密金鑰： `base64 ./private.key > private.key.base64`. 這會將base64內容儲存至新檔案 `private.key.base64`.
 
    >[!NOTE]
    >
-   >複製/貼上私鑰時，有時可以自動添加額外的行。 記住在對私鑰進行編碼之前將其刪除。
+   >複製/貼上私密金鑰時，有時會自動新增額外的行。 在編碼您的私密金鑰之前，請記得移除它。
 
-1. 從檔案複製內容 `private.key.base64`。
+1. 從檔案複製內容 `private.key.base64`.
 
-1. 通過SSH登錄到安裝Adobe Campaign實例的每個容器，並通過以下命令在Adobe Campaign添加項目憑據 `neolane` 。 這將插入 **[!UICONTROL Technical Account]** 實例配置檔案中的憑據。
+1. 透過SSH登入安裝Adobe Campaign例項的每個容器，並透過以下命令在Adobe Campaign中新增Project認證： `neolane` 使用者。 這將會插入 **[!UICONTROL Technical Account]** 執行個體組態檔中的認證。
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-## 第3步：更新流水線標籤 {#update-pipelined-tag}
+## 步驟3：更新管線標籤 {#update-pipelined-tag}
 
 >[!NOTE]
 >
->如果中的客戶端標識符不為空，則不需要此步驟 [步驟1:建立/更新Adobe I/O項目](#creating-adobe-io-project)。
+>如果您的使用者端識別碼不是空白的，則不需要執行此步驟 [步驟1：建立/更新Adobe I/O專案](#creating-adobe-io-project).
 
-要更新 [!DNL pipelined] 標籤，您需要更新身份驗證類型以Adobe I/O配置檔案中的項目 **config-&lt;實例名>.xml** 如下：
+待更新 [!DNL pipelined] 標籤中，您必須更新驗證型別，才能Adobe I/O設定檔案中的專案 **config-&lt; instance-name >.xml** 如下所示：
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
 
-然後，運行 `config -reload` 然後重啟 [!DNL pipelined] 以便將更改考慮在內。
+然後，執行 `config -reload` 以及重新啟動 [!DNL pipelined] 以納入變更考量。

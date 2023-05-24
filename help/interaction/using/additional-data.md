@@ -18,17 +18,17 @@ ht-degree: 1%
 
 
 
-在呼叫互動引擎期間，您可以傳輸內容相關的其他資訊。 此資料可來自儲存在工作流程（傳出通道）工作表中的目標資料，或網站在呼叫（傳入通道）期間傳送的呼叫資料。 您可以在適用性規則、優惠方案個人化中使用此額外資料，也可以將其儲存在主張表格中。
+在呼叫互動引擎期間，您可以轉移內容相關的其他資訊。 此資料可能來自儲存在工作流程（傳出頻道）工作表中的目標資料，或網站在呼叫期間傳送的呼叫資料（傳入頻道）。 您可以在適用性規則、優惠個人化中使用這些額外資料，也可以將其儲存在主張表格中。
 
-對於入站通道，例如恢復咨詢優惠方案的人員的瀏覽器語言或呼叫中心代理的名稱等資訊可能很有用。 然後，您可以在適用性規則中使用此呼叫資料，只向以法文或英文檢視網頁的使用者提供優惠方案。
+對於傳入頻道，復原資訊（例如諮詢優惠方案的人員的瀏覽器語言，或呼叫中心代理的名稱）可能會很有用。 然後，您就可以在適用性規則中使用此呼叫資料，將優惠方案僅呈現給檢視網頁的法文或英文人員。
 
-在目標工作流程（傳出通道）中，您可以在呼叫引擎期間使用目標資料。 例如，您可以透過FDA，以收件者連結交易或外部資料庫的資料來擴充目標。
+在目標定位工作流程（傳出頻道）中，您可以在呼叫引擎期間使用目標資料。 例如，您可以透過FDA，使用收件者連結交易或外部資料庫的資料擴充目標。
 
-## 其他資料配置 {#additional-data-configuration}
+## 其他資料設定 {#additional-data-configuration}
 
-您必須擴充 **nms:interaction** 連結至環境的架構，並宣告呼叫互動引擎期間將使用的其他欄位清單。 建立適用性規則或個人化優惠方案時，您可從 **互動** 節點(請參閱 [使用其他資料](#using-additional-data))。
+您必須擴充 **nms：interaction** 連結至環境的結構描述，並宣告在呼叫互動引擎期間使用的其他欄位清單。 建立適用性規則或個人化優惠方案時，這些欄位將可從 **互動** 節點(請參閱 [使用其他資料](#using-additional-data))。
 
-對於傳入頻道，您必須將呼叫資料欄位新增至 **互動** 節點。
+針對傳入頻道，您必須將通話資料欄位新增至 **互動** 節點。
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -38,9 +38,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->傳入頻道支援Xml集合，但其他結構的連結則不支援。
+>傳入頻道支援XML集合，但不支援其他結構描述的連結。
 
-對於傳出通道，您必須新增 **targetData** 包含其他欄位至 **互動** 節點。
+對於傳出頻道，您必須新增 **targetdata** 元素中包含其他欄位 **互動** 節點。
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -52,9 +52,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->對出頻道不支援集合。 不過，您可以建立其他結構的連結。
+>傳出頻道不支援集合。 不過，您可以建立其他結構描述的連結。
 
-如果要將此資料儲存在主張表格中，您也必須將 **nms:positionRcp** 架構並宣告這些欄位。
+如果您想要將此資料儲存在主張表格中，您也必須擴充 **nms：propositionRcp** 並宣告這些欄位。
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -65,43 +65,43 @@ ht-degree: 1%
 
 ## 其他資料實作 {#additional-data-implementation}
 
-### 輸入通道（網頁） {#input-channel--web-page-}
+### 輸入管道（網頁） {#input-channel--web-page-}
 
-若要在呼叫引擎時傳輸其他資料，您必須新增 **interactionGlobalCtx** 變數填入網頁的JavaScript程式碼中。 插入 **互動** 包含此變數中呼叫資料的節點。 您必須遵循與 **nms:interaction** 綱要。 請參閱： [其他資料配置](#additional-data-configuration).
+若要在呼叫引擎時傳輸其他資料，您必須新增 **interactionGlobalCtx** 變數插入網頁的JavaScript程式碼中。 插入 **互動** 包含呼叫資料至此變數的節點。 您必須遵循以下專案中的相同xml結構： **nms：interaction** 結構描述。 請參閱： [其他資料設定](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 ```
 
-### 輸出通道 {#output-channel}
+### 輸出頻道 {#output-channel}
 
-您必須建立目標工作流，通過遵循與 **nms:interaction** 綱要。 請參閱： [其他資料配置](#additional-data-configuration).
+您必須建立目標工作流程，藉由遵循與工作表中相同的xml結構和相同的內部名稱，載入工作表中的其他資料。 **nms：interaction** 結構描述。 請參閱： [其他資料設定](#additional-data-configuration).
 
 ## 使用其他資料 {#using-additional-data}
 
 ### 適用性規則 {#eligibility-rules}
 
-您可以在優惠方案、類別和權重的適用性規則中使用其他資料。
+您可以使用適用性規則中的額外資料，以取得優惠、類別和權重。
 
-例如，您可以選擇將選件只顯示給檢視頁面的使用者，使用英文。
+例如，您可以選擇只向檢視英文頁面的人顯示優惠方案。
 
 ![](assets/ita_calldata_query.png)
 
 >[!NOTE]
 >
->您必須限制定義資料的管道上的規則。 在我們的範例中，我們將限制傳入Web頻道(**[!UICONTROL Taken into account if]** 欄位)。
+>您必須將規則限制在定義資料的管道上。 在我們的範例中，我們限制的是傳入網路頻道(**[!UICONTROL Taken into account if]** 欄位)。
 
 ### 個人化 {#personalization}
 
-個人化優惠方案時，您也可以使用此額外資料。 例如，您可以新增導覽語言的條件
+您也可以在個人化優惠方案時使用此額外資料。 例如，您可以為導覽語言新增條件
 
 ![](assets/ita_calldata_perso.png)
 
 >[!NOTE]
 >
->您必須在定義資料的管道上限制個人化。 在我們的範例中，我們會限制傳入Web頻道上的規則。
+>您必須限制定義資料的管道上的個人化。 在我們的範例中，我們限制的是傳入網頁頻道上的規則。
 
-如果您使用其他資料個人化優惠方案，此資料預設不會顯示在預覽中，因為資料庫中沒有此資料。 環境 **[!UICONTROL Example of call data]** 索引標籤中，您必須新增值範例才能在預覽中使用。 請遵循與 **nms:interaction** 綱要擴充功能。 有關詳細資訊，請參閱 [其他資料配置](#additional-data-configuration).
+如果您已使用其他資料個人化優惠，此資料預設不會出現在預覽中，因為資料庫中沒有此資料。 在環境的 **[!UICONTROL Example of call data]** 索引標籤上，您必須新增要在預覽中使用的值範例。 請遵循以下專案中的相同xml結構： **nms：interaction** 結構描述延伸。 有關詳細資訊，請參閱 [其他資料設定](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
@@ -111,16 +111,16 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### 儲存空間 {#storage}
 
-在對引擎的調用期間，您可以在主張表中儲存其他資料，以豐富資料庫。 這些資料可用於報表、ROI計算或後續程式。
+在呼叫引擎期間，您可以在主張表格中儲存其他資料，以擴充資料庫。 例如，此資料可用於報告、ROI計算或之後的流程。
 
 >[!NOTE]
 >
->您必須將 **nms:positionRcp** 方案並聲明將包含要儲存的資料的欄位。 如需詳細資訊： [其他資料配置](#additional-data-configuration).
+>您必須已擴充 **nms：propositionRcp** 結構描述並宣告包含要儲存之資料的欄位。 有關詳細資訊： [其他資料設定](#additional-data-configuration).
 
-在優惠方案空間中，前往 **[!UICONTROL Storage]** ，然後按一下 **[!UICONTROL Add]** 按鈕。
+在優惠方案空間中，前往 **[!UICONTROL Storage]** 標籤並按一下 **[!UICONTROL Add]** 按鈕。
 
-在 **[!UICONTROL Storage path]** 欄中，選擇主題表中的儲存欄位。 在 **[!UICONTROL Expression]** 欄中，選取 **[!UICONTROL Interaction]** 節點。
+在 **[!UICONTROL Storage path]** 欄中，選取主張表格中的儲存欄位。 在 **[!UICONTROL Expression]** 欄中，選取 **[!UICONTROL Interaction]** 節點。
 
-您可以在產生主張或接受主張時（當使用者點按優惠方案時）擷取呼叫資料。
+您可以在產生主張或接受主張時（當人員按一下優惠時）擷取通話資料。
 
 ![](assets/ita_calldata_storage.png)

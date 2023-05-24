@@ -18,23 +18,23 @@ ht-degree: 1%
 
 ## 資料模型概觀 {#overview-of-the-datamodel}
 
-Adobe Campaign不為每個實體提供專用的讀取API（沒有getRecipient或getDelivery函式等）。 使用QUERY和WRITER資料讀取和修改方法訪問模型的資料。
+Adobe Campaign未針對每個實體提供專用的讀取API （無getRecipient或getDelivery函式等）。 使用QUERY &amp; WRITER資料讀取和修改方法來存取模型的資料。
 
-Adobe Campaign可讓您管理集合：查詢使您能夠恢復整個資料庫中收集的一組資訊。 與在SQL模式下的存取不同，Adobe Campaign API會傳回XML樹狀結構，而非資料欄。 Adobe Campaign因此會建立包含所有收集資料的複合檔案。
+Adobe Campaign可讓您管理集合：查詢可讓您復原在整個資料庫中收集的一組資訊。 與SQL模式的存取不同，Adobe Campaign API會傳回XML樹狀結構，而非資料欄。 因此，Adobe Campaign會使用所有收集的資料建立複合檔案。
 
-此操作模式不提供XML文檔的屬性和元素以及資料庫中表的列之間的一對一映射。
+此作業模式不提供XML檔案的屬性和元素與資料庫中表格欄之間的一對一對應。
 
-XML文檔儲存在資料庫的MEMO類型欄位中。
+XML檔案儲存在資料庫的MEMO型別欄位中。
 
-## 模型說明 {#description-of-the-model}
+## 模型描述 {#description-of-the-model}
 
-您必須熟悉Adobe Campaign資料模型，才能處理指令碼中資料庫的欄位。
+您必須熟悉Adobe Campaign資料模型，才能在指令碼中處理資料庫的欄位。
 
 如需資料模型的簡報，請參閱 [Adobe Campaign資料模型說明](../../configuration/using/data-model-description.md).
 
-## 查詢和寫入程式 {#query-and-writer}
+## 查詢與寫入器 {#query-and-writer}
 
-以下介紹結構詳細說明了資料庫和客戶(網頁或Adobe Campaign客戶端控制台)之間的讀取(ExecuteQuery)和寫入（寫入器）的低級交換。
+下列簡介結構描述詳細說明資料庫和客戶(網頁或Adobe Campaign使用者端主控台)之間讀取(ExecuteQuery)和寫入(Writer)的低層級交換。
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
@@ -42,27 +42,27 @@ XML文檔儲存在資料庫的MEMO類型欄位中。
 
 對於欄和條件，您可以使用查詢。
 
-這可讓您隔離基礎SQL。 查詢語言不依賴基礎引擎：某些函式將重新映射，這可能會生成多個SELECT SQL順序。
+這可讓您隔離基礎SQL。 查詢語言不取決於基礎引擎：某些函式將會重新對應，這可能會產生數個SELECT SQL順序。
 
-有關詳細資訊，請參閱 [架構「xtk:queryDef」的「ExecuteQuery」方法範例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+有關詳細資訊，請參閱 [結構描述「xtk：queryDef」的「ExecuteQuery」方法範例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-此 **ExecuteQuery** 方法如 [ExecuteQuery(xtk:queryDef)](#executequery--xtk-querydef-).
+此 **ExecuteQuery** 方法顯示於 [ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-).
 
 ### 寫入 {#write}
 
-「寫入」命令可以編寫簡單或複雜的文檔，其中的條目位於基表的一個或多個表中。
+「寫入」指令可讓您寫入簡單或複雜的檔案，其專案位於基底的一個或多個表格中。
 
-交易API可讓您透過 **updateOrInsert** 命令：一個命令可讓您建立或更新資料。 您也可以配置修改合併(**合併**):此作業模式可讓您授權部分更新。
+異動API可讓您透過以下方式管理調節： **updateOrInsert** command：一個命令可讓您建立或更新資料。 您也可以設定修改合併(**合併**)：此作業模式可讓您授權部分更新。
 
-XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構。
+XML結構提供資料的邏輯檢視，並可讓您略過SQL表格的實體結構。
 
-寫入方法如下所示： [Write/WriteCollection(xtk:session)](#write---writecollection--xtk-session-).
+Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollection--xtk-session-).
 
-## ExecuteQuery(xtk:queryDef) {#executequery--xtk-querydef-}
+## ExecuteQuery (xtk：queryDef) {#executequery--xtk-querydef-}
 
-此方法可讓您從與架構相關聯的資料執行查詢。 它會使用驗證字串（必須登入）和XML檔案，以描述要提交的查詢為參數。 返回參數是XML文檔，包含查詢結果的格式為查詢引用的架構。
+此方法可讓您從與結構描述相關聯的資料執行查詢。 它需要驗證字串（必須登入）和描述要作為引數提交的查詢的XML檔案。 return引數是XML檔案，包含查詢的結果，且格式為查詢所參照的結構描述。
 
-&quot;xtk:queryDef&quot;架構中&quot;ExecuteQuery&quot;方法的定義：
+「xtk：queryDef」結構描述中「ExecuteQuery」方法的定義：
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -74,11 +74,11 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 >[!NOTE]
 >
->這是「const」方法。 輸入參數以&quot;xtk:queryDef&quot;架構的格式包含在XML文檔中。
+>這是「const」方法。 輸入引數會以「xtk：queryDef」結構描述的格式包含在XML檔案中。
 
-### 輸入查詢的XML文檔格式 {#format-of-the-xml-document-of-the-input-query}
+### 輸入查詢的XML檔案格式 {#format-of-the-xml-document-of-the-input-query}
 
-查詢的XML文檔結構在「xtk:queryDef」架構中描述。 本文檔描述SQL查詢的子句：&quot;select&quot;、&quot;where&quot;、&quot;order by&quot;、&quot;group by&quot;、&quot;having&quot;。
+在「xtk：queryDef」結構描述中說明查詢的XML檔案結構。 本檔案說明SQL查詢的條款：「select」、「where」、「order by」、「group by」、「having」。
 
 ```
 <queryDef schema="schema_key" operation="operation_type">
@@ -110,7 +110,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </queryDef>
 ```
 
-子查詢( `<subquery>`  )，可在  `<condition> `  元素。 的語法   `<subquery> `   元素是以    `<querydef>`.
+子查詢( `<subquery>`  )可以在以下位置定義：  `<condition> `  元素。 的語法   `<subquery> `   元素是根據    `<querydef>`.
 
 範例 `<subquery>  : </subquery>`
 
@@ -128,20 +128,20 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
   
 ```
 
-查詢必須參考 **綱要** 屬性。
+查詢必須參考起始結構描述，從 **綱要** 屬性。
 
-需要的操作類型在 **操作** 屬性和包含下列其中一個值：
+所需的作業型別輸入於 **操作** 屬性並包含下列其中一個值：
 
-* **get**:從表格中擷取記錄，並在資料不存在時傳回錯誤，
-* **getIfExists**:從表中檢索記錄，如果資料不存在，則返回空文檔，
-* **選取**:建立游標以返回多個記錄，如果沒有資料，則返回空文檔，
-* **計數**:傳回資料計數。
+* **get**：從表格擷取記錄，如果資料不存在，則傳回錯誤，
+* **getIfExists**：從表格擷取記錄，如果資料不存在，則傳回空白檔案，
+* **選取**：建立游標以傳回數筆記錄，如果沒有資料，則會傳回空白檔案，
+* **count**：傳回資料計數。
 
-此 **XPath** 語法用於根據輸入架構來定位資料。 有關XPath的詳細資訊，請參閱 [資料結構](../../configuration/using/data-schemas.md).
+此 **XPath** 語法用於根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱 [資料結構描述](../../configuration/using/data-schemas.md).
 
-#### &#39;get&#39;操作的範例 {#example-with-the--get--operation}
+#### 具有&#39;get&#39;操作的範例 {#example-with-the--get--operation}
 
-在電子郵件上帶有篩選器，擷取收件者的姓氏和名字（「nms:recipient」架構）。
+擷取具有電子郵件篩選器的收件者（「nms：recipient」結構描述）的姓氏和名字。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -158,9 +158,9 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </queryDef>
 ```
 
-#### 「select」操作的示例 {#example-with-the--select--operation}
+#### 「選取」操作的範例 {#example-with-the--select--operation}
 
-傳回在資料夾和電子郵件網域上篩選的收件者清單，其排序在出生日期以遞減順序排序。
+傳回依資料夾及電子郵件網域篩選的收件者清單，其排序順序為出生日期的遞減順序。
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -183,18 +183,18 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </queryDef>
 ```
 
-運算式可以是簡單欄位或複雜的運算式，例如算術運算或字串的串連。
+運算式可以是簡單欄位或複雜運算式，例如算術運算或字串串連。
 
-若要限制要傳回的記錄數，請新增 **lineCount** 屬性 `<querydef>` 元素。
+若要限制要傳回的記錄數，請新增 **行計數** 屬性至 `<querydef>` 元素。
 
-要將查詢返回的記錄數限制為100:
+若要將查詢傳回的記錄數限製為100，請執行下列動作：
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100">
 ...
 ```
 
-若要擷取接下來的100筆記錄，請再次執行相同的查詢，並新增 **startLine** 屬性。
+若要擷取接下來的100筆記錄，請再次執行相同的查詢，新增 **startLine** 屬性。
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
@@ -203,7 +203,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 #### 「count」操作的範例 {#example-with-the--count--operation}
 
-要計算查詢上的記錄數：
+若要計算查詢的記錄數，請執行下列動作：
 
 ```
 <queryDef schema="nms:recipient" operation="count"">
@@ -216,11 +216,11 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 >[!NOTE]
 >
->我們再次使用上一個範例中的條件。 此 `<select>` 不會使用和子句。 `</select>`
+>我們再次使用上一個範例的條件。 此 `<select>` 不會使用及子句。 `</select>`
 
 #### 資料分組 {#data-grouping}
 
-要檢索多次引用的電子郵件地址：
+若要擷取參照多次的電子郵件地址：
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -242,7 +242,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </queryDef>
 ```
 
-可借由新增 **groupBy** 屬性直接歸類至要分組的欄位：
+可透過新增以下專案來簡化查詢 **groupBy** 要分組的欄位直接使用的屬性：
 
 ```
 <select>
@@ -256,7 +256,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 #### 條件中的括弧 {#bracketing-in-conditions}
 
-以下是兩個在相同條件下加括弧的範例。
+以下是兩個相同條件括弧範例。
 
 * 單一運算式中的簡單版本：
 
@@ -266,7 +266,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </where>
    ```
 
-* 具有 `<condition>` 元素：
+* 具有的結構化版本 `<condition>` 元素：
 
    ```
    <where>
@@ -281,7 +281,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </where>
    ```
 
-若有數個條件套用至相同欄位時，可將「OR」運算子取代為「IN」運算：
+當多個條件套用至相同欄位時，可以用「IN」運運算元取代「OR」運運算元：
 
 ```
 <where>
@@ -292,13 +292,13 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </where>
 ```
 
-條件中使用超過兩個資料時，此語法可簡化查詢。
+當條件中使用兩個以上的資料時，此語法會簡化查詢。
 
 #### 連結範例 {#examples-on-links}
 
-* 連結1-1或N1:當表具有外鍵時（連結從表開始），可以篩選或直接檢索連結表的欄位。
+* 連結1-1或N1：當表格有外部索引鍵（連結從表格開始）時，可以直接篩選或擷取連結表格的欄位。
 
-   資料夾標籤的篩選器範例：
+   資料夾標籤上的篩選範例：
 
    ```
    <where>
@@ -306,7 +306,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </where>
    ```
 
-   要從「nms:recipient」架構中檢索資料夾的欄位，請執行以下操作：
+   若要從「nms：recipient」結構描述擷取資料夾的欄位：
 
    ```
    <select>
@@ -317,7 +317,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </select>
    ```
 
-* 集合連結(1N):篩選集合表格的欄位必須透過 **存在** 或 **不存在** 運算元。
+* 集合連結(1N)：對集合表格的欄位進行篩選必須透過 **存在** 或 **不存在** 運運算元。
 
    若要篩選已訂閱「電子報」資訊服務的收件者：
 
@@ -329,9 +329,9 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </where>
    ```
 
-   從 `<select>` 不建議使用子句，因為查詢返回主產品。 只有在連結的表只包含一個記錄時才會使用（範例） `<node expr="">`)。
+   從以下位置直接擷取集合連結的欄位： `<select>` 不建議使用子句，因為查詢會傳回基數產品。 僅當連結的表格僅包含一個記錄時才使用(範例 `<node expr="">`)。
 
-   「訂閱」集合連結的範例：
+   「訂閱」集合連結上的範例：
 
    ```
    <select>
@@ -339,11 +339,11 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </select>
    ```
 
-   您可以擷取包含 `<select>` 條。 參考欄位的XPath與集合元素相關。
+   您可以擷取子清單，其中包含集合連結中的元素 `<select>` 子句。 參考欄位的XPath與收集元素相關。
 
-   篩選( `<orderby>`  )和限制(  `<where>`  )元素。
+   篩選( `<orderby>`  )和限制(  `<where>`  )個元素可新增至收集元素。
 
-   在此示例中，對於每個收件者，查詢將返回收件者訂閱的電子郵件和資訊服務清單：
+   在此範例中，查詢會針對每個收件者傳回收件者訂閱的電子郵件和資訊服務清單：
 
    ```
    <queryDef schema="nms:recipient" operation="select">
@@ -365,11 +365,11 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </queryDef>
    ```
 
-#### 綁定&#39;where&#39;和&#39;select&#39;子句的參數 {#binding-the-parameters-of-the--where--and--select--clause}
+#### 繫結&#39;where&#39;和&#39;select&#39;子句的引數 {#binding-the-parameters-of-the--where--and--select--clause}
 
-參數的捆綁可讓引擎設定查詢中使用的參數的值。 這非常有用，因為引擎負責值的逸出，而且快取對於要擷取的參數有額外的好處。
+引數的繫結可讓引擎設定查詢中使用的引數值。 這非常有用，因為引擎負責逸出值，而且快取還有一個好處，就是可以擷取引數。
 
-建構查詢時，「界定」值會由字元(? 在ODBC中， `#[index]#` （在postgres...），在SQL查詢的正文中。
+建構查詢時，「界限」值會以字元(？ 在ODBC中， `#[index]#` （在postgres...）中)。
 
 ```
 <select>
@@ -380,15 +380,15 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </select>
 ```
 
-要避免綁定參數，必須用值「true」填充「noSqlBind」屬性。
+若要避免繫結引數，「noSqlBind」屬性必須填入「true」值。
 
 >[!IMPORTANT]
 >
->如果查詢包含「order-by」或「group-by」指令，則資料庫引擎將無法「綁定」值。 必須將@noSqlBind=&quot;true&quot;屬性放置在查詢的&quot;select&quot;和/或&quot;where&quot;指示上。
+>如果查詢包含「order-by」或「group-by」指示，資料庫引擎將無法「繫結」值。 您必須將@noSqlBind=&quot;true&quot;屬性放置在查詢的&quot;select&quot;和/或&quot;where&quot;指示上。
 
-#### 查詢建立提示： {#query-building-tip-}
+#### 查詢建立秘訣： {#query-building-tip-}
 
-若要協助處理查詢的語法，您可以使用Adobe Campaign用戶端主控台中的一般查詢編輯器( **[!UICONTROL Tools/ Generic query editor...]** 功能表)。 操作步驟：
+若要協助處理查詢的語法，您可以使用Adobe Campaign使用者端主控台中的一般查詢編輯器來撰寫查詢( **[!UICONTROL Tools/ Generic query editor...]** 功能表)。 操作步驟：
 
 1. 選取要擷取的資料：
 
@@ -398,21 +398,21 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
    ![](assets/s_ncs_integration_webservices_queyr2.png)
 
-1. 執行查詢並按CTRL+F4以查看查詢原始碼。
+1. 執行查詢並按CTRL+F4以檢視查詢原始程式碼。
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### 輸出文檔格式 {#output-document-format}
+### 輸出檔案格式 {#output-document-format}
 
-返回參數是與查詢關聯的架構格式的XML文檔。
+傳回引數是格式為與查詢相關聯之結構描述的XML檔案。
 
-從&quot;get&quot;操作上的&quot;nms:recipient&quot;架構傳回的範例：
+從「get」作業的「nms：recipient」結構描述傳回的範例：
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
 ```
 
-在「select」操作中，傳回的檔案是元素的列舉：
+在「選取」操作中，傳回的檔案是元素的列舉：
 
 ```
 <!-- the name of the first element does not matter -->
@@ -423,7 +423,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </recipient-collection>  
 ```
 
-為「計數」類型操作返回的文檔示例：
+針對「count」型別作業傳回的檔案範例：
 
 ```
 <recipient count="3"/>
@@ -431,7 +431,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 #### 別名 {#alias}
 
-別名可讓您修改輸出檔案中的資料位置。 此 **別名** 屬性必須在對應欄位上指定XPath。
+別名可讓您修改輸出檔案中資料的位置。 此 **別名** 屬性必須在對應欄位上指定XPath。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -457,7 +457,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </recipient>
 ```
 
-### SOAP消息的示例 {#example-of-soap-messages}
+### SOAP訊息範例 {#example-of-soap-messages}
 
 * 查詢:
 
@@ -499,17 +499,17 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </SOAP-ENV:Envelope>
    ```
 
-## Write/WriteCollection(xtk:session) {#write---writecollection--xtk-session-}
+## 寫入/寫入集合(xtk：session) {#write---writecollection--xtk-session-}
 
-這些服務用於插入、更新或刪除實體（「寫入」方法）或實體集合（「寫入收集」方法）。
+這些服務用於插入、更新或刪除實體（「Write」方法）或實體集合（「WriteCollection」方法）。
 
-要更新的實體與資料架構相關聯。 輸入參數是驗證字串（必須登錄）和包含要更新資料的XML文檔。
+要更新的實體會與資料結構描述相關聯。 輸入引數是驗證字串（必須登入）和包含要更新資料的XML檔案。
 
-本文檔還附有配置寫程式的說明。
+本檔案以設定寫入程式的說明作為補充。
 
-呼叫不會傳回任何資料，但發生錯誤除外。
+呼叫不會傳回任何資料，錯誤除外。
 
-&quot;xtk:session&quot;架構中&quot;Write&quot;和&quot;WriteCollection&quot;方法的定義：
+「xtk：session」結構描述中「Write」和「WriteCollection」方法的定義：
 
 ```
 <method name="Write" static="true">
@@ -526,27 +526,27 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 >[!NOTE]
 >
->這是「靜態」方法。 輸入參數以要更新的架構格式包含在XML文檔中。
+>這是「靜態」方法。 輸入引數會以要更新的結構描述格式包含在XML檔案中。
 
 ### 概覽 {#overview}
 
-資料協調會根據在相關聯架構中輸入之索引鍵的定義而運作。 寫入過程基於輸入文檔中輸入的資料來查找第一合格密鑰。 根據實體在資料庫中的存在，插入或更新實體。
+資料協調會根據在關聯結構描述中輸入的索引鍵定義來運作。 寫入程式會根據輸入檔案中輸入的資料，尋找第一個符合條件的索引鍵。 系統會根據實體在資料庫中的存在性來插入或更新實體。
 
-要更新之實體架構的索引鍵會根據 **xtkschema** 屬性。
+要更新之實體結構描述的索引鍵是根據 **xtkschema** 屬性。
 
-因此，調解金鑰可以使用 **_key** 包含組成索引鍵的XPaths清單的屬性（以逗號分隔）。
+因此，調解金鑰可強制使用 **_key** 包含組成索引鍵的XPath清單的屬性（以逗號分隔）。
 
-可借由填入 **_operation** 屬性，且值如下：
+您可以填入 **操作(_O)** 屬性的下列值：
 
-* **插入**:強制插入記錄（不使用調解金鑰）,
-* **insertOrUpdate**:根據調解鍵（預設模式）更新或插入記錄，
-* **更新**:更新記錄；若資料不存在，則不會執行任何動作，
-* **刪除**:刪除記錄，
-* **無**:僅用於連結調解，不需更新或插入。
+* **插入**：強制插入記錄（未使用調解金鑰），
+* **insertOrUpdate**：根據調解金鑰（預設模式）更新或插入記錄，
+* **更新**：更新記錄；如果資料不存在，則不執行任何操作，
+* **刪除**：刪除記錄，
+* **無**：僅用於連結協調，不更新或插入。
 
-### 「Write」方法的範例 {#example-with-the--write--method}
+### &#39;Write&#39;方法的範例 {#example-with-the--write--method}
 
-使用電子郵件地址、出生日期和鎮更新或插入收件者（隱含的「insertOrUpdate」操作）:
+以電子郵件地址、出生日期和城鎮更新或插入收件者（隱含「insertOrUpdate」作業）：
 
 ```
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
@@ -562,7 +562,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 >[!NOTE]
 >
->對於刪除操作，輸入文檔只能包含構成調解密鑰的欄位。
+>對於刪除操作，輸入檔案必須僅包含組成調解金鑰的欄位。
 
 ### &#39;WriteCollection&#39;方法的範例 {#example-with-the--writecollection--method}
 
@@ -580,7 +580,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 #### 範例1 {#example-1}
 
-根據資料夾的內部名稱(@name)將資料夾與收件者關聯。
+根據收件者的內部名稱(@name)將資料夾與收件者建立關聯。
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -588,17 +588,17 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 </recipient>
 ```
 
-可在連結的元素上輸入「_key」和「_operation」屬性。 此元素上的行為與輸入架構之主要元素上的行為相同。
+可以在連結的元素上輸入「_key」和「_operation」屬性。 此元素的行為與輸入結構描述的主要元素相同。
 
-主實體(「nms:recipient」)的鍵的定義由連結表（元素）中的欄位組成 `<folder>`  結構&quot;xtk:folder&quot;)和電子郵件。
+主要實體(「nms：recipient」)的索引鍵定義由連結表格（元素）中的欄位組成 `<folder>`  結構描述「xtk：folder」)和電子郵件。
 
 >[!NOTE]
 >
->在資料夾元素上輸入的操作「無」定義了資料夾上的協調，無需更新或插入。
+>在資料夾元素上輸入的操作「none」會在資料夾上定義調解，而不需要更新或插入。
 
 #### 範例2 {#example-2}
 
-從收件者更新公司（「cus:company」架構中的連結表格）:
+從收件者更新公司（在「cus：company」結構描述中連結的表格）：
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -608,7 +608,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 #### 範例3 {#example-3}
 
-將收件者新增至具有群組關係表(&quot;nms:rcpGrpRel&quot;)的群組：
+使用群組關係表(「nms：rcpGrpRel」)將收件者新增至群組：
 
 ```
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -620,13 +620,13 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
 
 >[!NOTE]
 >
->未在 `<rcpgroup>` 元素，因為在「nms:group」架構中定義了基於組名的隱式鍵。
+>索引鍵的定義未輸入於 `<rcpgroup>` 元素，因為根據群組名稱的隱含索引鍵是在「nms：group」結構描述中定義的。
 
-### XML集合元素 {#xml-collection-elements}
+### XML收集要素 {#xml-collection-elements}
 
-預設情況下，必須填入所有集合元素，才能更新XML集合元素。 來自資料庫的資料將替換為來自輸入文檔的資料。 如果文檔僅包含要更新的元素，則必須在要更新的所有收集元素上填充「_operation」屬性，以強制與資料庫的XML資料合併。
+依預設，必須填入所有收集要素，才能更新XML收集要素。 資料庫中的資料將由輸入檔案中的資料取代。 如果檔案只包含要更新的元素，您必須在所有要更新的收集元素上填入「_operation」屬性，以強制與資料庫的XML資料合併。
 
-### SOAP消息的示例 {#example-of-soap-messages-1}
+### SOAP訊息範例 {#example-of-soap-messages-1}
 
 * 查詢:
 
@@ -656,7 +656,7 @@ XML結構提供資料的邏輯視圖，並允許您繞過SQL表的物理結構�
    </SOAP-ENV:Envelope>
    ```
 
-   返回，但出現錯誤：
+   傳回錯誤：
 
    ```
    <?xml version='1.0'?>

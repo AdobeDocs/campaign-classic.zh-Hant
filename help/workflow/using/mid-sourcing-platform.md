@@ -16,7 +16,7 @@ ht-degree: 19%
 
 
 
-以下詳述的工作流程會與 **中間來源平台** 模組。 有關此模組的詳細資訊，請參閱 [節](../../installation/using/mid-sourcing-deployment.md).
+以下詳述的工作流程會隨 **中間來源平台** 模組（預設）。 如需此模組的詳細資訊，請參閱此 [區段](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -26,8 +26,8 @@ ht-degree: 19%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">傳送指標</span> <br /> </td> 
-   <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
+   <td> <span class="uicontrol">傳遞指標</span> <br /> </td> 
+   <td> <span class="uicontrol">deliveryIndicator</span> <br /> </td> 
    <td> 此工作流程會更新傳送的傳送追蹤指標。 預設會每小時觸發此工作流程。<br /> </td> 
   </tr> 
  </tbody> 

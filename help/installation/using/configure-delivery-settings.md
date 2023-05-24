@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 市場活動交付設定配置
-description: 瞭解如何配置市場活動交付設定
+title: Campaign傳遞設定組態
+description: 瞭解如何設定Campaign傳遞設定
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
@@ -19,27 +19,27 @@ ht-degree: 5%
 
 
 
-必須在 **serverConf.xml** 的子菜單。
+傳遞引數必須設定在 **serverConf.xml** 資料夾。
 
-* **DNS配置**:指定傳遞域和DNS伺服器的IP地址（或主機），這些DNS伺服器用於響應MTA模組從 **`<dnsconfig>`** 向前。
+* **DNS設定**：指定傳遞網域和DNS伺服器的IP位址（或主機），用於回應MTA模組從進行的MX型別DNS查詢。 **`<dnsconfig>`** 從上往下。
 
    >[!NOTE]
    >
-   >的 **名稱伺服器** 參數對於在Windows中安裝是必不可少的。 對於Linux中的安裝，它必須為空。
+   >此 **nameServer** 引數對於Windows中的安裝是必要的。 若是在Linux中進行安裝，則必須保留空白。
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-您還可以根據您的需要和設定執行以下配置：配置 [SMTP中繼](#smtp-relay)，調整 [MTA子進程](#mta-child-processes)。 [管理出站SMTP通信](#managing-outbound-smtp-traffic-with-affinities)。
+您也可以根據您的需求和設定進行以下設定：設定 [SMTP轉送](#smtp-relay)，調整數量 [MTA子處理序](#mta-child-processes)， [管理輸出SMTP流量](#managing-outbound-smtp-traffic-with-affinities).
 
-## SMTP中繼 {#smtp-relay}
+## SMTP轉送 {#smtp-relay}
 
-MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
+MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式。
 
-但是，如果安全策略需要，可以將其替換為中繼伺服器。 在這種情況下，全局吞吐量將是中繼吞吐量(前提是中繼伺服器吞吐量低於Adobe Campaign吞吐量)。
+不過，如果您的安全性原則需要，可以透過轉送伺服器來取代它。 在這種情況下，全域輸送量將是轉送量(前提是轉送伺服器輸送量低於Adobe Campaign輸送量)。
 
-在這種情況下，通過在 **`<relay>`** 的子菜單。 必須指定用於傳輸郵件的SMTP伺服器及其關聯埠（預設為25）的IP地址（或主機）。
+在此情況下，這些引數的設定方式為透過以下專案中的SMTP伺服器進行： **`<relay>`** 區段。 您必須指定用來傳輸郵件及其相關連線埠（預設為25）之SMTP伺服器的IP位址（或主機）。
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -47,31 +47,31 @@ MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
 
 >[!IMPORTANT]
 >
->此操作模式對傳輸造成嚴重限制，因為它由於中繼伺服器固有效能（延遲、頻寬……）而可以大大降低吞吐量。 此外，限定同步傳送錯誤（通過分析SMTP通信量檢測到）的容量將受到限制，如果中繼伺服器不可用，則無法發送。
+>此作業模式表示傳送作業受到嚴重限制，因為中繼伺服器的固有效能（延遲、頻寬……）會大幅降低輸送量。 此外，限定同步傳送錯誤（透過分析SMTP流量所偵測）的容量將會受到限制，而且如果無法使用轉送伺服器，將無法進行傳送。
 
-## MTA子進程 {#mta-child-processes}
+## MTA子處理序 {#mta-child-processes}
 
-可以根據伺服器的CPU功率和可用網路資源控制子進程數（預設情況下為2），以優化廣播效能。 此配置將在 **`<master>`** MTA配置的部分。
+您可以控制子處理序（預設為2）的數量，以便根據伺服器的CPU效能和可用的網路資源來最佳化廣播效能。 此設定將在 **`<master>`** 每部電腦上MTA設定的區段。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-另請參閱 [電子郵件發送優化](../../installation/using/email-deliverability.md#email-sending-optimization)。
+另請參閱 [電子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization).
 
-## 管理具有關聯的出站SMTP通信 {#managing-outbound-smtp-traffic-with-affinities}
+## 使用相關性管理輸出SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >
->關聯配置需要從一個伺服器到另一個伺服器保持一致。 我們建議您與Adobe聯繫以進行關聯配置，因為應在運行MTA的所有應用程式伺服器上複製配置更改。
+>伺服器之間的相似性設定必須一致。 建議您聯絡Adobe以取得相似性設定，因為應在執行MTA的所有應用程式伺服器上復寫設定變更。
 
-您可以通過與IP地址的關聯來改進出站SMTP通信。
+您可以透過與IP位址的相似性來改善輸出SMTP流量。
 
 若要這麼做，請套用下列步驟：
 
-1. 在 **`<ipaffinity>`** 的下界 **serverConf.xml** 的子菜單。
+1. 輸入相關性，在 **`<ipaffinity>`** 部分 **serverConf.xml** 檔案。
 
-   一個關聯可以有多個不同的名稱：分離，使用 **;** 字元。
+   一個相似性可以有多種不同的名稱：若要加以分隔，請使用 **；** 字元。
 
    範例:
 
@@ -80,23 +80,23 @@ MTA模組充當SMTP廣播（埠25）的本機郵件傳輸代理。
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   要查看相關參數，請參閱 **serverConf.xml** 的子菜單。
+   若要檢視相關引數，請參閱 **serverConf.xml** 檔案。
 
-1. 要在下拉清單中啟用地緣選擇，您需要在 **IPAfinity** 枚舉。
+1. 若要在下拉式清單中啟用相關性選擇，您必須在以下專案新增相關性名稱： **IPAffinity** 分項清單。
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >枚舉詳細資訊 [此文檔](../../platform/using/managing-enumerations.md)。
+   >詳細列舉請參閱 [本檔案](../../platform/using/managing-enumerations.md).
 
-   然後，可以選擇要使用的關聯，如下所示：
+   然後您可以選取要使用的相似性，如下面的型別所示：
 
    ![](assets/ipaffinity_typology.png)
 
    >[!NOTE]
    >
-   >您還可以參考 [傳遞伺服器配置](../../installation/using/email-deliverability.md#delivery-server-configuration)。
+   >您也可以參閱 [傳遞伺服器設定](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 **相關主題**
 * [技術電子郵件設定](email-deliverability.md)

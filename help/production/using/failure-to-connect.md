@@ -19,9 +19,9 @@ ht-degree: 4%
 
 
 
-連接問題的原因可能是多個，並且取決於各種上下文。
+連線問題的原因可能是多方面的，而且取決於不同的內容。
 
-您可以嘗試以下test，如果連接故障仍然存在，請與 [Adobe客戶關懷](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+您可以嘗試下列測試，如果連線失敗持續發生，請連絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 
@@ -34,37 +34,37 @@ ht-degree: 4%
 </thead> 
 <tbody> 
 <tr> 
-<td>您的電腦是否可訪問Internet?</td> 
-<td>檢查是否可以連接到Internet上的網站（例如）。 如果無法連接，則問題出在您的電腦上。 請與系統管理員聯繫。</td>
+<td>您可從電腦存取網際網路嗎？</td> 
+<td>檢查您是否可以連線至網際網路上的網站（例如）。 如果您無法連線，問題就在於您的電腦。 請連絡您的系統管理員。</td>
 </tr>
 <tr> 
-<td>您能否通過其他服務連接到承載Adobe Campaign的伺服器？</td> 
-<td>通過SSH或任何其他方式連接到伺服器。 如果不可能，則您的主機公司有問題。 請與系統管理員聯繫。</td>
+<td>您可以透過其他服務連線至託管Adobe Campaign的伺服器嗎？</td> 
+<td>透過SSH或任何其他方式連線至伺服器。 如果無法執行此操作，您的主機公司就會發生問題。 請聯絡其系統管理員。</td>
 </tr>
 <tr> 
-<td>Web伺服器是否響應？</td> 
-<td>使用Web瀏覽器連接到Adobe Campaign伺服器訪問URL: <b>http(s):// &lt;urlserver&gt;</b>。 如果它未響應，則Web伺服器在電腦上停止。 請與主機公司的系統管理員聯繫以重新啟動服務。</td>
+<td>Web伺服器是否回應？</td> 
+<td>使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL： <b>http(s)：// &lt;urlserver&gt;</b>. 如果它沒有回應，電腦上的網頁伺服器就會停止。 請連絡您主機公司的系統管理員，以重新啟動服務。</td>
 </tr>
 <tr> 
-<td>Adobe Campaign是否正確整合了？</td> 
-<td>登錄到： <b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 伺服器應返回以下類型的消息： &lt;redir status="OK" date="YYYY/MM/DD HH&lt;span id="0" translate="no"/&gt;SS" build="XXXX" host="&lt;hostname&gt;" localhost="&lt;server&gt;" /&gt;
-如果未獲得此結果，請簽入Web伺服器配置，以便將整合考慮在內。:MM:</td>
+<td>Adobe Campaign是否已正確整合？</td> 
+<td>登入： <b>http(s)：//&lt;urlserver&gt;/r/test</b> URL。 伺服器應傳回下列型別的訊息： &lt;redir status="OK" date="YYYY/MM/DD HH&lt;span id="0" translate="no"/&gt;SS" build="XXXX" host="&lt;hostname&gt;" localhost="&lt;server&gt;" /&gt;
+如果您沒有取得此結果，請檢查Web伺服器設定，確認整合已納入考量。:MM:</td>
 </tr>
 <tr> 
-<td>連接到以下URL: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果獲取Tomcat Java錯誤，請檢查JAVA整合是否正確執行。 它整合在檔案[應用程式路徑]/nl6/customer.sh中</td>
+<td>連線至下列URL： <b>http(s)：//&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
+<td>如果您收到Tomcat Java錯誤，請檢查JAVA整合是否正確執行。 已整合至檔案[應用程式路徑]/nl6/customer.sh</td>
 </tr>
 <tr> 
-<td>連接到以下URL: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果獲取空白頁面，請檢查Adobe CampaignWeb模組是否已啟動。 命令nlserver pdump應返回DD/MM/YYYY的Adobe Campaign Classic(7.X YY.R build XXX@SHA1)的應用程式伺服器。 否則，使用命令nlserver start web（nlserver啟動Web）重新啟動模組</td>
+<td>連線至下列URL： <b>http(s)：//&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
+<td>如果您取得空白頁面，請檢查Adobe Campaign Web模組是否已啟動。 命令nlserver pdump應傳回DD/MM/YYYY的Adobe Campaign Classic (7.X YY.R建置XXX@SHA1)應用程式伺服器。 如果沒有，請使用命令nlserver start web重新啟動模組</td>
 </tr>
 <tr>
-<td>檢查安全區域的常規配置。</td>
-<td>有關配置安全區域的詳細資訊，請參閱 <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>此部分。</a></td>
+<td>檢查安全性區域的一般設定。</td>
+<td>有關設定安全性區域的詳細資訊，請參閱 <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>本節。</a></td>
 </tr>
 <tr>
-<td>命令nlserver pdump返回 <b>無任務</b></td>
-<td>必須重新啟動整個Adobe Campaign應用程式。 為此，請使用以下命令： <b>nlserver監視程式 — svc -noconsole</b></td>
+<td>命令nlserver pdump傳回 <b>無任務</b></td>
+<td>您必須重新啟動整個Adobe Campaign應用程式。 要執行此操作，請使用下列命令： <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>

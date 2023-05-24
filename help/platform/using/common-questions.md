@@ -29,7 +29,7 @@ ht-degree: 97%
 
 Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組合，需要您定期升級 Campaign Classic 執行個體，以確保使用最新版本來提供優越的安全性、穩定性和效能。
 
-身為托管客戶，您可以受益於Campaign每年的升級。 如需詳細資訊，請參閱[本文章](../../rn/using/rn-overview.md#yearly-upgrade)。
+作為託管客戶，您可以受益於Campaign的年度升級。 如需詳細資訊，請參閱[本文章](../../rn/using/rn-overview.md#yearly-upgrade)。
 
 [閱讀本節](../../production/using/build-upgrade.md)，瞭解如何更新您的環境，並閱讀[有關此特定主題的常見問題](../../platform/using/faq-build-upgrade.md)。
 

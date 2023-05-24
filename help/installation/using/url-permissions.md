@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 配置URL權限
-description: 瞭解如何配置URL權限
+title: 設定URL許可權
+description: 瞭解如何設定URL許可權
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
@@ -15,30 +15,30 @@ ht-degree: 29%
 
 ---
 
-# 配置URL權限（內部）{#url-permissions}
+# 設定URL許可權（內部部署）{#url-permissions}
 
 
 
 可由您的 Campaign Classic 執行個體的 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。這些是可讓您的執行個體正常運作的 URL。
 
-依預設，執行個體不得連線到外部 URL。但是，可以將一些外部URL添加到授權URL清單中，以便實例可以連接到它們。 這可讓您將 Campaign 執行個體連結到外部系統，例如 SFTP 伺服器或網站，以啟用檔案和/或資料傳輸。
+依預設，執行個體不得連線到外部 URL。不過，您可以將一些外部URL新增至授權URL清單，以便您的執行個體可以連結到這些URL。 這可讓您將 Campaign 執行個體連結到外部系統，例如 SFTP 伺服器或網站，以啟用檔案和/或資料傳輸。
 
 >[!NOTE]
 >
->此過程僅限於 **現場** 部署。
+>此程式僅限於 **內部部署** 部署。
 >
->作為 **托管** 客戶，如果您 [市場活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，可以使用URL權限自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+>As a **託管** 客戶，如果您能存取 [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，您可以使用URL許可權自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
 >
->其他 **混合/托管** 客戶需要聯繫Adobe支援團隊以將IP添加到允許清單中。
+>其他 **混合/託管** 客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
 
-對於 **混合** 和 **內部部署** 部署，管理員需要引用新 **url權限** 的 **serverConf.xml** 的子菜單。
+對象 **混合式** 和 **內部部署** 部署，管理員需要參考新的 **urlPermission** 在 **serverConf.xml** 檔案。
 
 
-有三種連接保護模式：
+提供三種連線保護模式：
 
-* **阻塞**:所有不屬於允許清單的URL都被阻止，並顯示錯誤消息。 這是postupgrade後的預設模式。
-* **許可**:允許所有不屬於允許清單的URL。
-* **警告**:允許所有不屬於允許清單的URL，但JS解釋器會發出警告，以便管理員可以收集這些URL。 此模式添加JST-310027警告消息。
+* **封鎖**：所有不屬於允許清單的URL都會遭到封鎖，並出現錯誤訊息。 這是升級後預設的模式。
+* **許可性**：允許不屬於允許清單的所有URL。
+* **警告**：允許所有不屬於允許清單的URL，但JS解譯器會發出警告，以便管理員可以收集。 此模式會新增JST-310027警告訊息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -50,14 +50,14 @@ ht-degree: 29%
 
 >[!IMPORTANT]
 >
->預設情況下，新實現使用 **阻塞** 的子菜單。
+>依預設，新實作會使用 **封鎖** 模式。
 >
->作為遷移中的現有客戶，您可以臨時使用 **警告** 的子菜單。 在允許URL之前分析出站通信量。 定義了允許的URL清單後，可以將URL添加到允許清單並激活 **阻塞** 的子菜單。
+>由於現有客戶來自移轉，因此您可暫時使用 **警告** 模式。 在允許URL之前分析傳出流量。 定義允許的URL清單後，您可以將URL新增至允許清單並啟動 **封鎖** 模式。
 
-有關詳細資訊，請參閱以下各節：
+如需詳細資訊，請參閱下列章節：
 
 * [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 * [託管模型](hosting-models.md)
 * [Campaign 伺服器設定](configuring-campaign-server.md)
-* [市場活動伺服器配置檔案參數](the-server-configuration-file.md)
-* [安全和隱私檢查表](get-started-security-privacy.md)
+* [Campaign伺服器設定檔案引數](the-server-configuration-file.md)
+* [安全性與隱私權檢查清單](get-started-security-privacy.md)

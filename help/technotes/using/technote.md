@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 技術檔案
-description: 技術檔案
+title: Technote
+description: Technote
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hide: true
 hidefromtoc: true
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# 技術檔案 {#about}
+# Technote {#about}
 
 
 

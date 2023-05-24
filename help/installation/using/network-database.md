@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 網路、資料庫和 SSL/TLS
-description: 進一步了解網路、資料庫和SSL/TLS設定最佳實務
+description: 進一步瞭解網路、資料庫和SSL/TLS設定最佳實務
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -20,20 +20,20 @@ ht-degree: 9%
 
 ## 網路設定
 
-部署內部部署類型的架構時，務必檢查以下事項： [網路配置](../../installation/using/network-configuration.md). 請確保Tomcat伺服器不能直接在伺服器外部訪問：
+在部署內部部署型別的架構時，有一件非常重要的事要檢查 [網路設定](../../installation/using/network-configuration.md). 請確定無法在伺服器外部直接存取Tomcat伺服器：
 
-* 關閉外部IP上的Tomcat埠(8080)（必須在localhost上工作）
-* 請勿將標準HTTP埠(80)映射到Tomcat埠(8080)
+* 關閉外部IP上的Tomcat連線埠(8080) （必須在localhost上運作）
+* 請勿將標準HTTP連線埠(80)對應到Tomcat連線埠(8080)
 
-如有可能，請使用安全通道：POP3S改為POP3（或POP3，而不是TLS）。
+儘可能使用安全色版：POP3S而非POP3 （或透過TLS的POP3）。
 
 ## 資料庫
 
-您必須應用資料庫引擎安全性最佳實踐。
+您必須套用資料庫引擎安全性最佳實務。
 
 ## SSL/TLS設定
 
-若要檢查憑證，您可以使用openssl。 若要檢查作用中的加密，您可以使用nmap:
+若要檢查憑證，您可以使用openssl。 若要檢查作用中加密，您可以使用nmap：
 
 ```
 #!/bin/sh
@@ -51,7 +51,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-您也可以使用 [sslyze](https://github.com/nabla-c0d3/sslyze/releases) python指令碼，兩者兼有。
+您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python指令碼，兩者皆有。
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

@@ -17,35 +17,35 @@ ht-degree: 8%
 
 
 
-種子地址用於鎖定不符合所定義的目標準則的收件者。這樣，超出傳遞範圍的收件者就可以收到傳遞，如同任何其他目標收件者一樣。
+種子地址用於鎖定不符合所定義的目標準則的收件者。如此一來，不在傳遞範圍的收件者可以像任何其他目標收件者一樣接收傳遞。
 
-使用它們的主要原因之一是 **您的郵件清單保護**. 在郵寄清單中插入種子地址可讓您在第三方使用時注意，因為其包含的種子地址將接收發送到郵寄清單的傳送。
+使用它們的主要原因之一是 **您的郵寄清單保護**. 將種子地址插入郵寄清單中可讓您注意到，如果第三方正在使用它，因為種子地址包含的種子地址將接收傳送至郵寄清單的傳遞。
 
-此外，種子地址允許您 **預覽並測試傳遞個人化和呈現** 傳送校樣之前(請參閱 [使用種子地址作為證明](steps-defining-the-target-population.md#using-seed-addresses-as-proof))。
+此外，種子地址可讓您 **預覽和測試傳遞個人化和呈現** 在傳送前，透過傳送校樣給對方(請參閱 [使用種子地址作為證明](steps-defining-the-target-population.md#using-seed-addresses-as-proof))。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 種子地址功能具有以下優點：
 
-* 以從收件者設定檔擷取的資料隨機替代欄位：這可讓您僅輸入電子郵件地址，例如在種子地址區段中，並讓Campaign自動填入設定檔中的其他欄位(請參閱 [使用案例：配置欄位替代](use-case--configuring-the-field-substitution.md))。
-* 搭配資料管理功能使用工作流程時，可在種子地址層級輸入傳送中處理的其他資料，以強制執行值：這會繞過隨機值替代。
-* 種子地址會自動排除在以下傳送統計資料的報表中： **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
+* 以從收件者設定檔取得的資料隨機替代欄位：例如，您可以在種子地址區段中僅輸入電子郵件地址，並讓Campaign自動填寫設定檔的其他欄位(請參閱 [使用案例：設定欄位替代](use-case--configuring-the-field-substitution.md))。
+* 使用具有資料管理功能的工作流程時，可在種子地址層級輸入傳送中處理的其他資料，以強制使用值：這可作為隨機值替代的另一做法。
+* 系統會自動從下列傳遞統計資料的報表中排除種子地址： **[!UICONTROL Clicks]**， **[!UICONTROL Opens]**， **[!UICONTROL Unsubscriptions]**.
 
-種子地址是透過匯入，或直接在傳遞或行銷活動中建立，而新增至傳遞的目標。
+種子地址會透過匯入或直接在傳遞或行銷活動中建立來新增到傳遞的目標中。
 
 >[!NOTE]
 >
->種子地址不屬於收件者表，它們將建立在單獨的表中。 如果使用新資料擴展收件者表，則必須擴展種子地址表以及使用相同資料擴展種子地址表。 否則，種子地址將不考慮這些擴展欄位。
+>種子地址不屬於收件者表格，它們在單獨的表格中建立。 如果您使用新資料擴充收件者表格，則必須使用相同資料擴充種子地址表格。 否則，種子地址不會考慮這些擴充欄位。
 >
->本節提供如何擴充種子地址表的範例： [使用案例：選擇條件上的種子地址](use-case--selecting-seed-addresses-on-criteria.md).
+>本章節將介紹如何擴充種子地址表格的範例： [使用案例：依條件選取種子地址](use-case--selecting-seed-addresses-on-criteria.md).
 
-對於直接郵件傳送，種子地址會在提取期間新增，並在輸出檔案中混合。
+如果是直接郵件傳送，種子地址會在提取期間新增，並在輸出檔案中進行混合。
 
 >[!IMPORTANT]
 >
->對於直接郵件傳送，解壓縮檔案格式必須符合下列限制：
+>如果是直接郵件傳送，擷取檔案格式必須符合下列限制：
 >
->* 它不得使用選項 **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* 如果擷取元素集合，這些欄位的種子地址會有空值，除非 **[!UICONTROL Single row (expert user)]** 選項。 如需詳細資訊，請參閱[本章節](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
+>* 不得使用選項 **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
+>* 如果擷取元素集合，則這些欄位的種子地址將具有空值，除非 **[!UICONTROL Single row (expert user)]** 選項時才會選擇此選項。 如需詳細資訊，請參閱[本章節](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
 >
 

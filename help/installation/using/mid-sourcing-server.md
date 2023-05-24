@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 在市場活動中安裝中間採購伺服器
-description: 本節詳細介紹市場活動中中間採購伺服器的安裝和配置
+title: 在Campaign中安裝中間來源伺服器
+description: 本節詳細說明了Campaign中中間來源伺服器的安裝和設定
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
@@ -19,33 +19,33 @@ ht-degree: 1%
 
 
 
-本節詳細介紹了中間採購伺服器的安裝和配置，以及使第三方能夠在中發送消息的實例的部署 **中間採購** 的子菜單。
+本節詳細說明中間來源伺服器的安裝和設定，以及讓第三方能夠傳送訊息的執行個體的部署 **中間來源** 模式。
 
-「中間採購」體系結構 [中間採購部署](../../installation/using/mid-sourcing-deployment.md)。
+「中間來源」架構在中介紹 [中間來源部署](../../installation/using/mid-sourcing-deployment.md).
 
-安裝中間採購伺服器與以正常方式安裝伺服器的過程相同（請參閱標準配置）。 它是一個獨立實例，具有自己的資料庫，可用於運行交貨。 簡言之，它包含額外的配置，允許遠程實例在中間採購模式下通過它執行交貨。
+安裝中間來源伺服器的程式與以正常方式安裝伺服器的程式相同（請參閱標準設定）。 它是一個獨立的執行個體，有自己的資料庫，可用於執行傳送。 簡言之，它包含額外的設定，可讓遠端執行個體在中間來源模式下透過它執行傳遞。
 
 >[!CAUTION]
 >
->中間採購伺服器設定完成後， [同步工作流](../../workflow/using/about-technical-workflows.md) 已首次運行，請確保不更新中間來源補充外部帳戶的內部名稱。
+>設定中間來源伺服器後，以及 [同步工作流程](../../workflow/using/about-technical-workflows.md) 第一次執行時，請確定您沒有更新中間來源外部帳戶的內部名稱。
 
-## 安裝和配置實例的步驟 {#steps-for-installing-and-configuring-an-instance}
+## 安裝和設定執行個體的步驟 {#steps-for-installing-and-configuring-an-instance}
 
-### 安裝和配置實例的先決條件 {#prerequisites-for-installing-and-configuring-an-instance}
+### 安裝和設定執行個體的先決條件 {#prerequisites-for-installing-and-configuring-an-instance}
 
 * 應用程式伺服器上的JDK。
-* 訪問應用程式伺服器上的資料庫伺服器。
-* 防火牆配置為向中間採購伺服器開啟HTTP(80)或HTTPS(443)埠。
+* 存取應用程式伺服器上的資料庫伺服器。
+* 防火牆已設定為開啟HTTP (80)或HTTPS (443)連線埠至中間來源伺服器。
 
-以下過程詳細描述了使用單個中間採購伺服器的配置。 還可以使用多個伺服器。 同樣，也可以從內部配置發送某些消息（例如工作流通知）。
+以下程式詳細說明使用單一中間來源伺服器的設定。 也可以使用多個伺服器。 同樣地，您也可以從內部設定傳送特定訊息（例如工作流程通知）。
 
-### 安裝和配置應用程式伺服器以進行中間採購部署 {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
+### 為中間來源部署安裝和設定應用程式伺服器 {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
-安裝過程與獨立實例的安裝過程相同。 請參閱 [安裝和配置（單台電腦）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
+安裝程式與獨立執行處理的安裝程式相同。 請參閱 [安裝和設定（單一電腦）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
-但是，必須應用以下內容：
+不過，您必須套用下列內容：
 
-* 步驟 **5**，必須禁用 **門** （交付）及 **郵件** （郵件退回）模組。 的 **wf伺服器** （工作流）模組必須保持激活狀態。
+* 在步驟 **5**，您必須停用 **mta** （傳遞）和 **inMail** （退回郵件）模組。 此 **wfserver** （工作流程）模組，但必須保持啟用狀態。
 
    ```
    <?xml version='1.0'?>
@@ -65,51 +65,51 @@ ht-degree: 1%
 
    如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
-* 步驟 **6**。 **9** 和 **10** 沒必要。
-* 步驟 **12** 和 **13**，需要在連接URL中指示8080埠（因為控制台直接與Tomcat通信，而不是通過Web伺服器）。 URL變為 `http://console.campaign.net:8080`。 步驟期間 **13**，選擇 **[!UICONTROL Issue towards Mid-sourcing]** 以及要安裝的軟體包。
+* 步驟 **6**， **9** 和 **10** 不需要。
+* 步驟期間 **12** 和 **13**，您必須在連線URL中指定8080連線埠（因為主控台會直接與Tomcat通訊，而非透過網頁伺服器）。 URL會變成 `http://console.campaign.net:8080`. 步驟期間 **13**，選取 **[!UICONTROL Issue towards Mid-sourcing]** 封裝以及要安裝的封裝。
 
    ![](assets/s_ncs_install_midsourcing02.png)
 
    >[!CAUTION]
    >
-   >技術交貨的預設傳送方式自動替換為通過中間來源補充的電子郵件傳送方式。
+   >透過中間來源的電子郵件路由會自動取代技術傳遞的預設路由。
 
-### 安裝和配置中間採購伺服器 {#installing-and-configuring-the-mid-sourcing-server}
+### 安裝和設定中間來源伺服器 {#installing-and-configuring-the-mid-sourcing-server}
 
-從客戶端控制台中，找到 **使用中間採購的電子郵件路由** 中間來源補充帳戶(在 **/管理/外部帳戶/** 資料夾)。 填充 **伺服器的URL**。 **帳戶**。 **密碼** 和 **鏡像頁URL** 設定。 測試連線。
+從使用者端主控台，找到 **使用中間來源的電子郵件路由** 中間來源帳戶(在 **/管理/外部帳戶/** 資料夾)。 填入 **伺服器的URL**， **帳戶**， **密碼** 和 **映象頁面URL** 包含託管中間來源伺服器的伺服器提供者所提供資訊的設定。 測試連線。
 
 >[!NOTE]
 >
->的 **中sourcingEmitter** 選項建立兩個 **中間採購** 工作流。 預設情況下，該流程每1小時20分鐘運行一次，並在中間採購伺服器上收集交貨資訊。
+>此 **mid-sourcingEmitter** 選項會建立兩個 **中間來源** 工作流程。 此程式預設每1小時20分鐘執行一次，並收集中間來源伺服器上的傳遞資訊。
 
-## 部署中間採購伺服器 {#deploying-a-mid-sourcing-server}
+## 部署中間來源伺服器 {#deploying-a-mid-sourcing-server}
 
-1. 正在安裝應用程式伺服器：
+1. 安裝應用程式伺服器：
 
    >[!CAUTION]
    >
-   >如果您安裝中間採購伺服器並想安裝額外的Adobe Campaign模組，建議使用「交貨」模組而不是「市場活動」模組。
+   >如果您安裝中間來源伺服器並想要安裝額外的Adobe Campaign模組，我們建議您使用傳送模組，而不要使用行銷活動模組。
 
-   按照與標準部署相同的步驟，僅選擇 **[!UICONTROL Mid-sourcing platform]** 的雙曲餘切值。
+   遵循與標準部署相同的程式，僅選取 **[!UICONTROL Mid-sourcing platform]** 選項。
 
    ![](assets/s_ncs_install_midsourcing01.png)
 
-1. 用於在中間採購模式下接收的配置
+1. 用於中間來源模式接收的設定
 
-   設定提交帳戶密碼：在 **/中間採購/訪問管理/操作員/** 資料夾 **中** 遠程實例在中間採購模式下使用operator進行提交。 必須為此操作員設定密碼，並將其提供給提交實例的管理員。
+   設定提交帳戶密碼：在 **/Mid-sourcing/Access Management/Operator/** 資料夾， **mid** 運運算元供遠端執行個體用於中間來源模式下的提交。 您必須為此運運算元設定密碼，並將其提供給提交執行個體的管理員。
 
-   的 **中間採購平台** 選項建立用於儲存提交的交貨的預設資料夾以及執行提交的預設運算子。
+   此 **中間來源平台** 選項會建立用來儲存已提交傳遞的預設資料夾，以及執行提交的預設運運算元。
 
-## 多路復用中間採購伺服器 {#multiplexing-the-mid-sourcing-server}
+## 多工處理中間來源伺服器 {#multiplexing-the-mid-sourcing-server}
 
 >[!CAUTION]
 >
->只支援內部環境的多路傳輸。
+>僅內部部署環境支援多工處理。
 
-中間採購實例可能由多個提交實例共用。 這些實例中的每個實例都需要與中間採購資料庫中的運算子相關聯。 要在中間採購伺服器上建立第二個帳戶：
+多個提交執行個體可共用中間來源執行個體。 這些執行個體中的每一個都需要與中間來源資料庫中的運運算元相關聯。 若要在中間來源伺服器上建立第二個帳戶：
 
-1. 在 **[!UICONTROL Mid-sourcing > Deliveries]** 與預設中間採購帳戶關聯的節點(例如：prod)。
-1. 在 **[!UICONTROL Mid-sourcing > Deliveries]** 與帳戶同名的節點(例如：acception_test)。
+1. 在中建立資料夾 **[!UICONTROL Mid-sourcing > Deliveries]** 與預設中間來源帳戶相關聯的節點（例如：prod）。
+1. 在中建立資料夾 **[!UICONTROL Mid-sourcing > Deliveries]** 與帳戶同名的節點（例如：acceptance_test）。
 
    ![](assets/mid_recette_account.png)
 
@@ -117,68 +117,68 @@ ht-degree: 1%
 
    ![](assets/mid_recette_user_create.png)
 
-1. 在 **[!UICONTROL Access rights]** 頁籤，授予此運算子 **中間採購提交** 組。 此訪問權限在 **[!UICONTROL Mid-sourcing > Access Management > Operator groups]**。
+1. 在 **[!UICONTROL Access rights]** 索引標籤中，賦予此運運算元以下專案的許可權： **中間來源提交** 群組。 此存取權適用於 **[!UICONTROL Mid-sourcing > Access Management > Operator groups]**.
 
    ![](assets/mid_recette_user_rights.png)
 
-1. 選擇 **[!UICONTROL Restrict to data in the sub-folders of]** 選項，然後選擇交貨資料夾以將此運算子限制為中間來源補充交貨資料夾。
+1. 選取 **[!UICONTROL Restrict to data in the sub-folders of]** 選項並選取傳遞資料夾，將此運運算元限制在中間來源傳遞資料夾。
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用以下命令重新啟動Web模組： **nlserver restart web**。
+1. 使用下列命令重新啟動Web模組： **nlserver重新啟動web**.
 
-必須更改serverConf.xml檔案中的中間採購伺服器設定。 必須在現有行的「IP地址關聯管理」部分添加以下行：
+您必須變更serverConf.xml檔案中的中間來源伺服器設定。 下列行必須新增至「與IP位址的相似性管理」現有行下方：
 
 ```
 <IPAffinity IPMask="" localDomain="" name=""/>
 ```
 
-「@name」屬性必須遵守以下規則：
+「@name」屬性必須符合下列規則：
 
-**&#39;marketing_account_operator_name&#39;。&#39;affinity_name&#39;。&#39;affinity_group**
+**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;affinity_group`**
 
-「marketing_account_operator_name」與在中間來源補充實例中聲明的中間來源補充帳戶的內部名稱相關。
+「marketing_account_operator_name」與中間來源執行個體中宣告的中間來源帳戶的內部名稱相關。
 
-「affinity_name」與指定給關聯的任意名稱相關。 此名稱必須唯一。 授權字元為 `[a-z]``[A-Z]``[0-9]`。 目的是聲明一組公共IP地址。
+&#39;affinity_name&#39;與指定給相似性的任意名稱相關。 此名稱必須是唯一的。 授權的字元包括 `[a-z]``[A-Z]``[0-9]`. 目標是宣告一組公用IP位址。
 
-「affinity_group」與在每個遞送中使用的目標映射中聲明的子關聯相關。 最後一部分包括「。」 如果沒有子關聯，則忽略。 授權字元為 `[a-z]``[A-Z]``[0-9]`。
+&#39;affinity_group&#39;會關聯每個傳遞中使用的目標對應中所宣告的子相似性。 最後一部分包含「。」 如果沒有Sub-affinity，則會忽略。 授權的字元包括 `[a-z]``[A-Z]``[0-9]`.
 
-必須停止並重新啟動伺服器，才能將修改考慮在內。
+您必須停止然後重新啟動伺服器，才能將修改列入考量。
 
-## 在中間採購伺服器上配置跟蹤 {#configuring-tracking-on-a-mid-sourcing-server}
+## 在中間來源伺服器上設定追蹤 {#configuring-tracking-on-a-mid-sourcing-server}
 
-**配置中間採購伺服器**
+**設定中間來源伺服器**
 
-1. 轉到「運算子」並選擇運算子 **[!UICONTROL mid]**。
-1. 在 **[!UICONTROL Frontal servers]** 頁籤，輸入跟蹤伺服器連接參數。
+1. 前往「運運算元」並選取運運算元 **[!UICONTROL mid]**.
+1. 在 **[!UICONTROL Frontal servers]** 索引標籤中，輸入追蹤伺服器連線引數。
 
-   要建立跟蹤實例，請輸入跟蹤伺服器的URL、跟蹤伺服器內部帳戶密碼以及該實例的名稱、其密碼以及與其關聯的DNS掩碼。
+   若要建立追蹤執行個體，請輸入追蹤伺服器的URL、追蹤伺服器內部帳戶密碼、執行個體的名稱、密碼以及與之相關聯的DNS遮罩。
 
    ![](assets/s_ncs_install_midsourcing_tracking02.png)
 
-1. 輸入連接參數後，按一下 **[!UICONTROL Confirm the configuration]**。
-1. 如有必要，請指定要儲存遞送中包含的影像的位置。 為此，請從下拉清單中選擇一種發佈模式。
+1. 輸入連線引數後，按一下 **[!UICONTROL Confirm the configuration]**.
+1. 如有必要，請指定儲存傳遞中所含影像的位置。 若要這麼做，請從下拉式清單中選取其中一個發佈模式。
 
    ![](assets/s_ncs_install_midsourcing_tracking03.png)
 
-   如果選擇 **[!UICONTROL Tracking server(s)]** 選項，映像將複製到中間採購伺服器上。
+   如果您選擇 **[!UICONTROL Tracking server(s)]** 選項，這些影像將會複製到中間來源伺服器上。
 
-**配置客戶平台**
+**設定客戶平台**
 
-1. 轉至外部中間採購工藝路線帳戶。
-1. 在 **[!UICONTROL Mid-Sourcing]** 頁籤，指定中間採購伺服器連接參數。
+1. 前往外部中間來源路由帳戶。
+1. 在 **[!UICONTROL Mid-Sourcing]** 索引標籤中，指定中間來源伺服器連線引數。
 
    ![](assets/s_ncs_install_midsourcing_tracking06.png)
 
-1. 通過按一下 **[!UICONTROL Test the connection]**。
-1. 聲明中間採購伺服器上引用的跟蹤實例：
+1. 按一下以確認您的設定 **[!UICONTROL Test the connection]**.
+1. 宣告在中間來源伺服器上參考的追蹤執行個體：
 
-   按一下連結 **[!UICONTROL Use this platform as a proxy to access the tracking servers]**。
+   按一下連結 **[!UICONTROL Use this platform as a proxy to access the tracking servers]**，
 
-   指定跟蹤實例的名稱，然後確認與跟蹤伺服器的連接。
+   指定追蹤執行個體的名稱，然後確認與追蹤伺服器的連線。
 
    ![](assets/s_ncs_install_midsourcing_tracking05.png)
 
-如果郵件的傳遞要由幾個中間採購伺服器管理，請選擇該選項 **[!UICONTROL Routing with alternating mid-sourcing accounts]** 並指定不同的伺服器。
+如果訊息的傳遞將由多個中間來源伺服器管理，請選取「 」選項 **[!UICONTROL Routing with alternating mid-sourcing accounts]** 和指定不同的伺服器。
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 幫助和支援選項，用於Campaign Classic
-description: 需要支援Campaign Classic? 您來對地方了！
+title: Campaign Classic的說明與支援選項
+description: 需要Campaign Classic的支援嗎？ 您來對地方了！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
@@ -11,9 +11,9 @@ ht-degree: 66%
 
 ---
 
-# 幫助和支援選項，用於Campaign Classic {#help-support-options}
+# Campaign Classic的說明與支援選項 {#help-support-options}
 
-需要支援Campaign Classic? 您來對地方了！
+需要Campaign Classic的支援嗎？ 您來對地方了！
 
 使用我們的常見問答集、最佳實務、線上資源和支援入口網站取得支援。 您也可以加入 Campaign 社群、向專家詢問或記錄問題。
 
@@ -31,7 +31,7 @@ ht-degree: 66%
 
 ### 常見問題集
 
-如何升級至新建置版本？ 如何監視工作流程執行？ 什麼是資料庫清理工作流？... [閱讀前10個問題](platform/using/common-questions.md)。
+如何升級至新建置版本？ 如何監視工作流程執行？ 什麼是資料庫清理工作流程？... [閱讀前10個問題](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>主題常見問答</strong></td><td><strong>常見問題</strong></td><td><strong>最佳實務</strong></td><td><strong>操作說明</strong></td></tr>
@@ -42,7 +42,7 @@ ht-degree: 66%
         <li><a href="platform/using/faq-campaign-config.md">行銷活動設定</a></li>
         <li><a href="platform/using/faq-reporting.md">報告</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">版本編號升級</a></li>
-        <li><a href="platform/using/faq-messages.md">測試、發送和跟蹤消息</a></li>
+        <li><a href="platform/using/faq-messages.md">測試、傳送及追蹤訊息</a></li>
         <li><a href="platform/using/faq-workflows.md">工作流程</a></li>
         <li><a href="platform/using/faq-developers.md">開發人員</a></li>
         <li><a href="delivery/using/monitoring-deliverability.md">達成能力</a></li>
@@ -51,8 +51,8 @@ ht-degree: 66%
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">效能和輸送量的相關問題</a></li>
-        <li><a href="delivery/using/delivery-performances.md">交付效能</a></li>
-        <li><a href="workflow/using/workflow-best-practices.md">優化工作流效能</a></li>
+        <li><a href="delivery/using/delivery-performances.md">傳遞效能</a></li>
+        <li><a href="workflow/using/workflow-best-practices.md">最佳化工作流程效能</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">工作流程執行疑難排解</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP 伺服器使用情況</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">瞭解傳遞失敗</a></li>
@@ -61,11 +61,11 @@ ht-degree: 66%
    <td valign="top">
         <ul>
         <li><a href="workflow/using/workflow-best-practices.md">工作流程最佳實務</a></li>
-        <li><a href="workflow/using/monitoring-technical-workflows.md">技術工作流監控</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">技術工作流程監控</a></li>
         <li><a href="delivery/using/about-message-tracking.md">認識追蹤管理</a></li>
-        <li><a href="production/using/monitoring-guidelines.md">發現監視工具</a></li>
+        <li><a href="production/using/monitoring-guidelines.md">探索監控工具</a></li>
         <li><a href="platform/using/import-export-workflows.md">透過工作流程匯入資料</a></li>
-        <li><a href="delivery/using/steps-sending-the-delivery.md">以多波次發送消息</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">以多個批次傳送訊息</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">設計電子郵件內容</a></li>
         <li><a href="delivery/using/delivery-best-practices.md">關於傳遞的最佳實務</a></li>
         </ul>
@@ -92,14 +92,14 @@ ht-degree: 66%
 
 ### 什麼是「控制面板」？
 
-「市場活動控制面板」允許您管理每個實例的設定和跟蹤實例的使用情況，從而幫助您以Campaign Classic產品管理員的身份提高工作效率。
+您可以透過「Campaign控制面板」，以Campaign Classic產品管理員的身分，管理每個執行個體的設定並追蹤每個執行個體的使用量，協助您提高工作效率。
 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)以獲得更多資訊。
 
 >[!NOTE]
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)。
 >
->請注意，您的實例必須托管在AWS上，並使用最新的 [GA版本](rn/using/rn-overview.md)。 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須託管於AWS上，並升級至最新的 [GA建置](rn/using/rn-overview.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
 
 ### 如何存取控制面板？
 
@@ -111,28 +111,28 @@ ht-degree: 66%
 
 ### SFTP 管理
 
-在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP地址和公共SSH密鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以獲得更多資訊。
+在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以獲得更多資訊。
 
 ### 子網域和憑證
 
-您可以監視子網域及其憑證。 在以下頁中瞭解詳細資訊：
+您可以監視子網域及其憑證。 請前往下列頁面，瞭解更多資訊：
 * [子網域品牌](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=zh-Hant)
 * [設定新子網域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant)
 * [監視 SSL 憑證](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hant)
 
 ### 執行個體設定
 
-瞭解如何在控制面板中管理Campaign Classic實例設定。 在以下頁中瞭解詳細資訊：
-* [在允許清單中添加IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant) 訪問您的促銷活動實例
-* [管理URL權限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
-* [訪問實例詳細資訊](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
-* [管理GPG密鑰以進行資料加密](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
+瞭解如何在「控制面板」中管理Campaign Classic執行個體設定。 請前往下列頁面，瞭解更多資訊：
+* [在允許清單中新增IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant) 以存取您的Campaign執行個體
+* [管理URL許可權](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+* [存取執行個體詳細資訊](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
+* [管理用於資料加密的GPG金鑰](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
 
 ## 請求協助 {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新售票系統已通過 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+新的票證系統已透過啟動 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ### 詢問專家！
 
@@ -140,11 +140,11 @@ ht-degree: 66%
 
 ### 存取 Campaign 下載中心
 
-截至2020年6月，Experience Cloud解決方案軟體分發部取代了傳統的Neolane下載中心，為查找和下載您的軟體、軟體包和工具提供了更高效的體驗。 [按一下此處](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)存取 Experience Cloud 軟體分送。
-瞭解有關新下載中心的更多資訊 [此頁](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant){_blank}。
+自2020年6月起，Experience Cloud解決方案Software Distribution將取代舊版Neolane Download Center，提供更有效率的軟體、套件和工具搜尋和下載體驗。 [按一下此處](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)存取 Experience Cloud 軟體分送。
+進一步瞭解新的下載中心 [在此頁面中](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant){_blank}。
 
 ### 建立票證或開始聊天
 
 建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
 
-要記錄問題或在該新系統中啟動聊天會話，請連接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 按照中介紹的詳細過程操作 [此頁](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}。
+若要在該新系統中記錄問題或啟動聊天工作階段，請連線至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 請依照中所述的詳細過程進行操作 [此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}。

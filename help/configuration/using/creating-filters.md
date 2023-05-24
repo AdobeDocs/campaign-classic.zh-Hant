@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 建立篩選器
-description: 了解如何為自訂表格建立篩選器
+description: 瞭解如何為自訂表格建立篩選器
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
@@ -16,12 +16,12 @@ ht-degree: 4%
 
 
 
-就像Adobe Campaign隨附的內建收件者表格一樣，新的收件者表格可能會接收一批預先定義的篩選。
+就像Adobe Campaign提供的內建收件者表格一樣，新的收件者表格可能會收到一批預先定義的篩選器。
 
-這些篩選器將可在目標選擇窗口中使用，其功能與收件者的區段（使用參數輸入表單、資料夾等）相同。
+目標選擇視窗中提供這些篩選器，其功能與收件者的區段相同（使用引數輸入表單、資料夾等）。
 
 1. 前往 **[!UICONTROL Administration > Configuration > Predefined filters]** 節點。
-1. 建立新篩選器。
-1. 輸入 **[!UICONTROL Label]** ，然後選取與 **[!UICONTROL Document type]** 欄位。
-1. 建立 **[!UICONTROL filtering conditions]** 根據您結構的欄位。
+1. 建立新的篩選器。
+1. 輸入 **[!UICONTROL Label]** ，然後選取符合中的外部收件者表格的結構描述 **[!UICONTROL Document type]** 欄位。
+1. 建立您的 **[!UICONTROL filtering conditions]** 根據您結構描述的欄位。
 1. 儲存篩選器。

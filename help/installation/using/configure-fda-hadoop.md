@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 配置訪問Hadoop
-description: 了解如何在FDA中設定Hadoop存取權
+title: 設定Hadoop的存取權
+description: 瞭解如何在FDA中設定Hadoop存取權
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -14,83 +14,83 @@ ht-degree: 2%
 
 ---
 
-# 配置訪問Hadoop {#configure-access-to-hadoop}
+# 設定Hadoop的存取權 {#configure-access-to-hadoop}
 
 
 
-使用Campaign **同盟資料存取** (FDA)處理儲存在外部資料庫中的資訊的選項。 請依照下列步驟來設定存取Hadoop。
+使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟設定對Hadoop的存取權。
 
-1. 設定 [Hadoop資料庫](#configuring-hadoop)
-1. 設定Hadoop [外部帳戶](#hadoop-external) 在Campaign
+1. 設定 [hadoop資料庫](#configuring-hadoop)
+1. 設定Hadoop [外部帳戶](#hadoop-external) 在Campaign中
 
-## 配置Hadoop3.0 {#configuring-hadoop}
+## 設定Hadoop3.0 {#configuring-hadoop}
 
-在FDA中連線至Hadoop外部資料庫需要Adobe Campaign伺服器上的下列設定。 請注意，此配置適用於Windows和Linux。
+在Adobe Campaign伺服器上連線至FDA中的Hadoop外部資料庫需要下列設定。 請注意，此設定適用於Windows和Linux。
 
-1. 下載ODBC驅動程式以進行Hadoop，具體取決於您的作業系統版本。 可在上找到驅動程式 [本頁](https://www.cloudera.com/downloads.html).
+1. 根據您的作業系統版本，下載ODBC驅動程式以進行Hadoop。 驅動程式可在下列位置找到： [此頁面](https://www.cloudera.com/downloads.html).
 
-1. 然後，您需要安裝ODBC驅動程式並為配置單元連接建立DSN。 如需指示，請參閱 [本頁](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
+1. 然後您需要安裝ODBC驅動程式，並為Hive連線建立DSN。 指示可在以下網址找到： [此頁面](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
-1. 下載和安裝ODBC驅動程式後，需要重新啟動Campaign Classic。 要執行此操作，請運行以下命令：
+1. 下載並安裝ODBC驅動程式之後，您需要重新啟動Campaign Classic。 要執行此操作，請執行以下命令：
 
    ```
    systemctl stop nlserver.service
    systemctl start nlserver.service
    ```
 
-1. 在Campaign Classic中，接著您可以設定 [!DNL Hadoop] 外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱 [本節](#hadoop-external).
+1. 然後，您可以在Campaign Classic中設定 [!DNL Hadoop] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#hadoop-external).
 
-## Hadoop外部帳戶 {#hadoop-external}
+## hadoop外部帳戶 {#hadoop-external}
 
-此 [!DNL Hadoop] 外部帳戶可讓您將Campaign執行個體連線至Hadoop外部資料庫。
+此 [!DNL Hadoop] 外部帳戶可讓您將您的Campaign執行個體連線至Hadoop外部資料庫。
 
-1. 在Campaign Classic中，設定 [!DNL Hadoop] 外部帳戶。 從 **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. 在Campaign Classic中，設定您的 [!DNL Hadoop] 外部帳戶。 從 **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 按一下&#x200B;**[!UICONTROL New]**。
 
-1. 選擇 **[!UICONTROL External database]** 作為外部帳戶 **[!UICONTROL Type]**.
+1. 選取 **[!UICONTROL External database]** 作為外部帳戶的 **[!UICONTROL Type]**.
 
 1. 設定 **[!UICONTROL Hadoop]** 外部帳戶，您必須指定：
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE、Sybase IQ)
 
-   * **[!UICONTROL Server]**:DNS的名稱
+   * **[!UICONTROL Server]**：DNS的名稱
 
-   * **[!UICONTROL Account]**:使用者名稱
+   * **[!UICONTROL Account]**：使用者名稱
 
-   * **[!UICONTROL Password]**:使用者帳戶密碼
+   * **[!UICONTROL Password]**：使用者帳戶密碼
 
-   * **[!UICONTROL Database]**:未在DSN中指定的資料庫名稱。 如果在DSN中指定，則可將其留空
+   * **[!UICONTROL Database]**：未在DSN中指定的資料庫名稱。 若在DSN中指定，可保留空白
 
    * **[!UICONTROL Time zone]**: 伺服器時區
 
    ![](assets/hadoop3.png)
 
-連接器支援以下ODBC選項：
+聯結器支援下列ODBC選項：
 
 | 名稱 | 值 |
 |---|---|
 | ODBCMgr | iODBC |
 | 倉儲 | 1/2/4 |
 
-連接器也支援下列配置單元選項：
+聯結器也支援下列Hive選項：
 
 | 名稱 | 值 | 說明 |
 |---|---|---|
-| bulkKey | Azure blob或DataLake存取金鑰 | 對於wasb://或wasbs://大量載入器(亦即，如果大量載入工具以wasb://或wasbs://開頭)。 <br>這是blob或DataLake貯體的存取金鑰，以用於大量載入。 |
-| hdfsPort | 埠號 <br>預設為8020 | 對於HDFS批量載入(即，如果批量載入工具以webhdfs://或webhdfss://開頭)。 |
-| bucketsNumber | 20 | 建立聚簇表時的桶數。 |
-| fileFormat | 鑲木 | 工作表的預設檔案格式。 |
+| bulkKey | Azure blob或DataLake存取金鑰 | 對於wasb://或wasbs://大量載入器(亦即，如果大量載入工具以wasb://或wasbs://開頭)。 <br>它是大量載入之Blob或DataLake貯體的存取金鑰。 |
+| hdfsPort | 連線埠號碼 <br>預設為8020 | 對於HDFS大量載入(亦即，如果大量載入工具以webhdfs://或webhdfss://開頭)。 |
+| bucketnumber | 20 | 建立叢集表格時的貯體數量。 |
+| fileFormat | PARQUET | 工作表的預設檔案格式。 |
 
 
-## 配置Hadoop2.1 {#configure-access-hadoop-2}
+## 設定Hadoop2.1 {#configure-access-hadoop-2}
 
-如果您需要連線至Hadoop2.1，請依照下列步驟執行 [Windows](#for-windows) 或 [Linux](#for-linux).
+如果您需要連線至Hadoop2.1，請遵循以下所述的步驟進行 [Windows](#for-windows) 或 [Linux](#for-linux).
 
-### Hadoop2.1 for Windows {#for-windows}
+### WindowsHadoop2.1 {#for-windows}
 
-1. 安裝ODBC和 [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) Windows驅動程式。
-1. 通過運行ODBC資料源管理器工具建立DSN（資料源名稱）。 為配置單元提供了系統DSN示例，供您修改。
+1. 安裝ODBC和 [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) 適用於Windows的驅動程式。
+1. 執行ODBC DataSource Administrator工具來建立DSN （資料來源名稱）。 Hive的系統DSN範例可供您修改。
 
    ```
    Description: vorac (or any name you like)
@@ -101,17 +101,17 @@ ht-degree: 2%
    User/Password: admin/<your password here>
    ```
 
-1. 建立Hadoop外部帳戶，如 [本節](#hadoop-external).
+1. 建立Hadoop外部帳戶，如所述 [本節](#hadoop-external).
 
-### Hadoop2.1 Linux {#for-linux}
+### LinuxHadoop2.1 {#for-linux}
 
-1. 安裝Linux適用的unixodbc。
+1. 安裝適用於Linux的unixodbc。
 
    ```
    apt-get install unixodbc
    ```
 
-1. 從HortonWorks下載並安裝Apache Hive的ODBC驅動程式： [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
+1. 從HortonWorks下載並安裝適用於Apache Hive的ODBC驅動程式： [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
@@ -131,9 +131,9 @@ ht-degree: 2%
    SQLSETPOSIROW Size.: 8
    ```
 
-1. 建立DSN（資料源名稱）並編輯odbc.ini檔案。 然後，為您的配置單元連接建立DSN。
+1. 建立DSN （資料來源名稱）並編輯odbc.ini檔案。 然後，為您的Hive連線建立DSN。
 
-   以下是HDInsight設定名為「病毒式營銷」的連線的範例：
+   以下是HDInsight設定名為「病毒式」連線的範例：
 
    ```
    [ODBC Data Sources]
@@ -154,9 +154,9 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >此 **UseNativeQuery** 參數很重要。 促銷活動會感知配置單元，除非設定了UseNativeQuery，否則無法正常運作。 通常，驅動程式或Hive SQL Connector將重寫查詢並篡改列順序。
+   >此 **UseNativeQuery** 此處的引數非常重要。 Campaign具有Hive感知功能，除非設定UseNativeQuery，否則將無法正常運作。 通常，驅動程式或Hive SQL Connector會重寫查詢並篡改欄順序。
 
-   驗證設定取決於配置單元/Hadoop配置。 例如，針對HD Insight，使用AuthMech=6進行使用者/密碼驗證，如所述 [此處](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   驗證設定取決於Hive/Hadoop設定。 例如，若是HD Insight，請使用AuthMech=6進行使用者/密碼驗證，如上所述 [此處](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. 匯出變數。
 
@@ -165,9 +165,9 @@ ht-degree: 2%
    export ODBCSYSINI=/etc/myodbcinst.ini
    ```
 
-1. 通過/usr/lib/hive/lib/native/Linux-amd64-64/hortonworks.hiveodbc.ini設定Hortonworks驅動程式。
+1. 透過/usr/lib/hive/lib/native/Linux-amd64-64/hortonworks.hiveodbc.ini設定Hortonworks驅動程式。
 
-   您必須使用UTF-16才能與Campaign和unix-odbc(libodbcinst)連線。
+   您必須使用UTF-16才能與Campaign和unix-odbc (libodbcinst)連線。
 
    ```
    [Driver]
@@ -188,4 +188,4 @@ ht-degree: 2%
    isql vorac -v
    ```
 
-1. 建立Hadoop外部帳戶，如 [本節](#hadoop-external).
+1. 建立Hadoop外部帳戶，如所述 [本節](#hadoop-external).

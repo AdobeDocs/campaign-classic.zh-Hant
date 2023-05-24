@@ -19,92 +19,92 @@ ht-degree: 1%
 
 
 
-自動啟動Adobe Campaign模組(**網**。 **門**。 **wf伺服器**&#x200B;等) 由 **nlserver** 伺服器。
+Adobe Campaign模組的自動啟動(**網頁**， **mta**， **wfserver**、等) 由 **nlserver** 伺服器。
 
-安裝Adobe Campaign會自動配置電腦，以便 **nlserver** 服務在啟動序列期間啟動。
+安裝Adobe Campaign會自動設定電腦，以便 **nlserver** 服務會在開機順序期間啟動。
 
-以下命令用於手動啟動和關閉Adobe Campaign服務：
+下列命令可用來手動啟動和關閉Adobe Campaign服務：
 
 * 在Windows中：
 
-   * **nlserver6**
-   * **網站停止nlserver6**
+   * **網路啟動nlserver6**
+   * **網路停止nlserver6**
 
-* 在Linux（根）中：
+* 在Linux中（以根目錄）：
 
-   * **/etc/init.d/nlserver6啟動**
+   * **/etc/init.d/nlserver6開始**
    * **/etc/init.d/nlserver6停止**
 
 >[!NOTE]
 >
->從20.1開始，建議改用以下命令（對於Linux）: **systmctl啟動nlserver** / **systemctl停止nlserver**
+>從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver** / **systemctl停止nlserver**
 
-下面列出了在Linux中可訪問的常規管理命令(如 **Adobe Campaign**):
+以下是Linux中可存取的常見管理命令清單(如 **Adobe Campaign**)：
 
 * 顯示所有已啟動的Adobe Campaign模組： **/etc/init.d/nlserver6 pdump** 或 **/etc/init.d/nlserver6狀態**
 
    >[!NOTE]
    >
-   >添加 **— 誰** 參數 **轉儲** 命令，用於收集有關當前連接（用戶和進程）的資訊。\
-   >的 **/etc/init.d/nlserver6狀態** 命令（不帶&quot;-who&quot;參數）將返回：
+   >新增 **-who** 引數至 **pdump** command可讓您收集有關目前連線（使用者和程式）的資訊。\
+   >此 **/etc/init.d/nlserver6狀態** 命令（不含「 — who」引數）將傳回：
    >
-   >    * 執行所有進程時為0。
-   >    * 1（如果缺少進程）。
-   >    * 2)。
-   >    * 另一個值（如果出現錯誤）。
+   >    * 如果正在執行所有處理序，則為0。
+   >    * 如果缺少程式，則為1。
+   >    * 如果沒有執行任何程式，則為2。
+   >    * 如果有錯誤，則為另一個值。
 
 
-* 啟動/停止多實例或單實例模組(**網**。 **跟蹤日誌**。 **syslog**。 **門**。 **wf伺服器**。 **郵件**):
+* 啟動/停止多執行個體或單執行個體模組(**網頁**， **trackinglogd**， **syslogd**， **mta**， **wfserver**， **inmail**)：
 
-   **nlserver啟動`<module>[@<instance>]`**
+   **nlserver start`<module>[@<instance>]`**
 
-   **nlserver停止`<module>[@<instance>][-immediate][-noconsole]`**
+   **nlserver stop`<module>[@<instance>][-immediate][-noconsole]`**
 
-   您還可以使用 **nlserver重新啟動`<module>[@<instance>]`** 命令以重新啟動模組。
+   您也可以使用 **nlserver重新啟動`<module>[@<instance>]`** 重新啟動模組的命令。
 
    範例:
 
-   **nlserver啟動web**
+   **nlserver start web**
 
    **nlserver啟動mta@my_instance**
 
-   **nlserver停止syslogd**
+   **nlserver stop syslogd**
 
-   **nlserver停止wfserver@my_instance**
+   **nlserver stop wfserver@my_instance**
 
-   **nlserver停止web-immediate**
+   **nlserver stop web -immediate**
 
-   **nlserver restart web**
+   **nlserver重新啟動web**
 
    >[!NOTE]
    >
-   >* 如果未指定實例，則將使用「default」實例。
-   >* 在發生緊急情況時，使用 **立即** 選項，強制立即停止進程（相當於Unix命令） **殺–9**)。
-   >* 使用 **-noconsole** 選項，確保啟動的模組在控制台上不顯示任何內容。 其日誌將通過 **syslog** 中。
-   >* 使用 **— 詳細** 按鈕，將選定控制項在Tab鍵次序中下移一個位置。
+   >* 如果未指定例項，則會使用「預設」例項。
+   >* 發生緊急情況時，請使用 **-immediate** 強製程式立即停止的選項（相當於Unix指令） **kill -9**)。
+   >* 使用 **-noconsole** 選項，確保啟動的模組不會在主控台上顯示任何內容。 記錄檔將透過 **syslogd** 模組。
+   >* 使用 **-verbose** 選項來顯示有關處理動作的額外資訊。
 
       >
       >   範例:
       >
       >   **nlserver restart web -verbose**
       >
-      >   **nlserver啟動mta@myinstance -verbose**
+      >   **nlserver start mta@myinstance -verbose**
       >
-      >   此選項添加其他日誌。 我們建議在不使用 **— 詳細** 選項，以避免重載日誌。
+      >   此選項會新增其他記錄。 我們建議在不使用的情況下，重新開始流程 **-verbose** 選項，以避免多載記錄。
 
 
-* 啟動所有Adobe Campaign進程(相當於啟動 **nlserver6** 服務):
+* 啟動所有Adobe Campaign程式(相當於啟動 **nlserver6** service)：
 
-   **nlserver監視程式 — noconsole**
+   **nlserver watchdog -noconsole**
 
-* 關閉所有Adobe Campaign進程(相當於關閉 **nlserver6** 服務):
+* 關閉所有Adobe Campaign程式(相當於關閉 **nlserver6** service)：
 
-   **伺服器關閉**
+   **nlserver shutdown**
 
-* 重新載入 **nlserver web** 模組配置(以及Web伺服器擴展模組（如果適用）) **serverConf.xml** 和 **配置`<instance>  .xml </instance>`** 已編輯檔案。
+* 重新載入 **nlserver web** 模組設定(以及Web伺服器擴充功能模組（如適用）)，當 **serverConf.xml** 和 **config-`<instance>  .xml </instance>`** 檔案已編輯。
 
    **nlserver config -reload**
 
    >[!NOTE]
    >
-   >某些配置更改沒有動態考慮；Adobe Campaign必須關閉，然後重啟。
+   >部分設定變更不會動態列入考量；Adobe Campaign必須關閉，然後重新啟動。

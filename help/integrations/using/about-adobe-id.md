@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 在Campaign中使用您的Adobe ID
-description: 深入了解Adobe IMS整合
+title: 在Campaign中使用Adobe ID
+description: 深入瞭解Adobe IMS整合
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
@@ -19,7 +19,7 @@ ht-degree: 24%
 
 
 
-AdobeIdentity Management系統(IMS)可協助管理員建立及管理使用者對應用程式和服務的存取權。 如需不同AdobeID類型的詳細資訊，請參閱 [本頁](https://helpx.adobe.com/enterprise/using/identity.html).
+AdobeIdentity Management系統(IMS)可協助管理員建立和管理使用者對應用計畫和服務的存取權。 如需不同型別的AdobeID的詳細資訊，請參閱 [此頁面](https://helpx.adobe.com/enterprise/using/identity.html).
 
 Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台。 此整合具備以下優勢︰
 
@@ -31,16 +31,16 @@ Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台。 此整�
 
 >[!IMPORTANT]
 >
->如果您透過Adobe身分服務(IMS)連線至Campaign，您必須升級至最新的組建版本，才能在 **2021年6月30日**. 此升級對Campaign伺服器和用戶端主控台都是必要的。 視您目前的版本而定，您必須升級至下列其中一個版本：
+>如果您是透過Adobe身分服務(IMS)連線至Campaign，您需要升級至最新組建版本，才能在下列時間後連線至Campaign **2021年6月30日**. Campaign伺服器和使用者端主控台都必須進行此升級。 根據您目前的版本，您必須升級至下列其中一個版本：
 >
-> * [行銷活動 [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
+> * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
 > * [Campaign 20.2.5](../../rn/using/release--2020.md#release-20-2-5-build-9188)
 > * [Campaign 20.1.4](../../rn/using/release--2020.md#release-20-1-4-build-9126)
 > * [Campaign 19.2.4](../../rn/using/release--2019.md#release-19-2-4-build-9082)
 > * [Campaign 19.1.8](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 >
-> [!DNL :bulb:] [深入了解IMS更新](../../technotes/using/ims-updates.md)
+> [!DNL :bulb:] [進一步瞭解IMS更新](../../technotes/using/ims-updates.md)
 
 ## 更多資源
 
@@ -48,4 +48,4 @@ Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台。 此整�
 |---|---|
 | [設定IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [實作IMS](../../integrations/using/implementing-ims.md) | [存取管理](../../platform/using/access-management.md) |
-| [IMS疑難排解](../../integrations/using/ims-troubleshooting.md) | [安裝Campaign套件](../../installation/using/installing-campaign-standard-packages.md) |
+| [ims疑難排解](../../integrations/using/ims-troubleshooting.md) | [安裝Campaign套件](../../installation/using/installing-campaign-standard-packages.md) |

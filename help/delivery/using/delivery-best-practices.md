@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 行銷活動傳遞最佳實務
-description: 了解設計和傳送傳遞時的最佳實務
+title: Campaign傳遞最佳實務
+description: 瞭解設計和傳送傳遞時的最佳實務
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 
 
-了解與傳送內容設計和使用Adobe Campaign傳送相關的最佳實務。 使用下列連結來導覽主題和尋找指引。
+瞭解透過Adobe Campaign進行的傳遞設計與傳送相關的最佳實務。 使用以下連結導覽主題並尋找指引。
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>安全並最佳化傳送程式</em>
+    <em>確保傳送流程安全並最佳化</em>
     <p>
   </td>
    <td>
@@ -44,7 +44,7 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>促進和加快新交付</em>
+    <em>加速和固定新傳遞</em>
     <p>
   </td>
   <td>
@@ -72,12 +72,12 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>目標人口是關鍵</em>
+    <em>目標母體是關鍵</em>
     <p>
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="檢查" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="Check" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">

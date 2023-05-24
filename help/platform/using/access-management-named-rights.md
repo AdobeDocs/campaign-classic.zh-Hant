@@ -1,8 +1,8 @@
 ---
 product: campaign
 title: 使用已命名的權限來設定權限
-description: 瞭解如何使用命名權限設定權限
-badge: label="v7" type="Informity" tooltip="僅適用於Campaign Classicv7"
+description: 瞭解如何使用已命名的許可權來設定許可權
+badge: label="v7" type="資訊性" tooltip="僅適用於Campaign Classicv7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
@@ -18,60 +18,60 @@ ht-degree: 5%
 
 
 
-預設情況下，Adobe Campaign會提出一組命名權限，用於定義分配給運算子和運算子組的授權。 可從 **[!UICONTROL Administration > Access management > Named rights]** 的子目標。
+依預設，Adobe Campaign會建議一組已命名的許可權，讓您定義指派給運運算元和運運算元群組的授權。 這些許可權可透過以下網址編輯： **[!UICONTROL Administration > Access management > Named rights]** 樹狀結構的節點。
 
 ![](assets/s_ncs_admin_named_rights.png)
 
 這些權利如下：
 
-* **[!UICONTROL ADMINISTRATION]**:具有 **[!UICONTROL ADMINISTRATION]** right對實例具有完全訪問權限。 管理員用戶可以執行/建立/編輯/刪除任何對象，如工作流、交付、指令碼等。
+* **[!UICONTROL ADMINISTRATION]**：運運算元與 **[!UICONTROL ADMINISTRATION]** right對執行個體具有完全存取權。 管理員使用者可以執行/建立/編輯/刪除任何物件，例如工作流程、傳送、指令碼等。
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**:您可以在工作流和交貨中設定多個審批步驟，以確保當前狀態已經由分配的操作員或組審批。 具有 **[!UICONTROL APPROVAL ADMINISTRATION]** right可以設定批准步驟，還可以分配應批准這些步驟的操作員或操作員組。
+* **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流程與傳送中設定多個核准步驟，以確保指派的運運算元或群組已核准目前狀態。 使用者具有 **[!UICONTROL APPROVAL ADMINISTRATION]** 許可權可以設定核准步驟，也可以指派應核准這些步驟的操作員或操作員群組。
 
-* **[!UICONTROL CENTRAL]**:中央管理權限（分佈式營銷）。
+* **[!UICONTROL CENTRAL]**：適用於集中管理（分散式行銷）。
 
-* **[!UICONTROL DELETE FOLDER]**:刪除資料夾的權限。 通過此權限，用戶可以從瀏覽器視圖中刪除資料夾。
+* **[!UICONTROL DELETE FOLDER]**：刪除資料夾的權利。 透過此許可權，使用者可以從瀏覽器檢視中刪除資料夾。
 
-* **[!UICONTROL EDIT FOLDERS]**:更改資料夾屬性（如內部名稱、標籤、關聯影像、子資料夾順序等）的權限。
+* **[!UICONTROL EDIT FOLDERS]**：變更資料夾屬性的權利，例如內部名稱、標籤、關聯的影像、子資料夾順序等。
 
-* **[!UICONTROL EXPORT]**:用戶可以使用以下命令將資料從其Adobe Campaign實例導出到伺服器或本地電腦上的檔案 **[!UICONTROL EXPORT]** 工作流活動。
+* **[!UICONTROL EXPORT]**：使用者可使用將資料從其Adobe Campaign執行個體匯出至伺服器或本機電腦上的檔案。 **[!UICONTROL EXPORT]** 工作流程活動。
 
-* **[!UICONTROL FILES ACCESS]**:通過指令碼對檔案進行讀寫訪問的權限，該指令碼可以寫入 **[!UICONTROL JavaScript]** 用於讀取/寫入伺服器上的檔案的工作流活動。
+* **[!UICONTROL FILES ACCESS]**：透過指令碼對檔案的讀取和寫入許可權，該指令碼可在 **[!UICONTROL JavaScript]** 讀取/寫入伺服器檔案的工作流程活動。
 
-* **[!UICONTROL IMPORT]**:用於通用資料導入的權限。 **[!UICONTROL IMPORT]** 允許將資料導入任何其它表，而 **[!UICONTROL RECIPIENT IMPORT]** 僅允許導入到收件人表。
+* **[!UICONTROL IMPORT]**：一般資料匯入許可權。 **[!UICONTROL IMPORT]** 可讓您將資料匯入任何其他表格，而 **[!UICONTROL RECIPIENT IMPORT]** 許可權僅允許匯入至收件者表格。
 
-* **[!UICONTROL INSERT FOLDERS]**:插入資料夾的權限。 具有 **[!UICONTROL INSERT FOLDERS]** 在「資源管理器」視圖的資料夾樹中，「權限」可以建立新資料夾。
+* **[!UICONTROL INSERT FOLDERS]**：插入資料夾的許可權。 使用者具有 **[!UICONTROL INSERT FOLDERS]** 在檔案總管檢視中，您可以在資料夾樹狀結構中建立新資料夾。
 
-* **[!UICONTROL LOCAL]**:本地管理權（分佈式營銷）。
+* **[!UICONTROL LOCAL]**：本機管理許可權（分散式行銷）。
 
-* **[!UICONTROL MERGE]**:將選定記錄合併到一個記錄中的權限。 如果收件人作為重複項存在， **[!UICONTROL MERGE]** 右側允許用戶選擇重複項並將它們合併到主收件人中。
+* **[!UICONTROL MERGE]**：將選取的記錄合併成一個記錄的許可權。 如果收件者以重複專案存在， **[!UICONTROL MERGE]** 許可權可讓使用者選取重複專案，並將其合併至主要收件者。
 
-* **[!UICONTROL PREPARE DELIVERIES]**:建立、編輯和保存交貨的權限。 具有 **[!UICONTROL PREPARE DELIVERIES]** right也可以啟動交貨分析流程。
+* **[!UICONTROL PREPARE DELIVERIES]**：建立、編輯和儲存傳送的權利。 使用者具有 **[!UICONTROL PREPARE DELIVERIES]** 右邊也可以開始傳遞分析程式。
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**:收集和刪除隱私資料的權利。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)。
+* **[!UICONTROL PRIVACY DATA RIGHT]**：收集和刪除隱私資料的權利。 如需關於此項目的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)。
 
-* **[!UICONTROL PROGRAM EXECUTION]**:以各種寫程式語言執行命令的權利。
+* **[!UICONTROL PROGRAM EXECUTION]**：以各種程式語言執行命令的權利。
 
-* **[!UICONTROL RECIPIENT IMPORT]**:導入收件人的權限。 具有 **[!UICONTROL RECIPIENT IMPORT]** 權限可以將本地檔案導入收件人表中。
+* **[!UICONTROL RECIPIENT IMPORT]**：匯入收件者的權利。 使用者具有 **[!UICONTROL RECIPIENT IMPORT]** 右方可以將本機檔案匯入收件者表格。
 
-* **[!UICONTROL SQL SCRIPT EXECUTION]** 有權直接在資料庫上執行任何SQL命令。
+* **[!UICONTROL SQL SCRIPT EXECUTION]** 直接在資料庫上執行任何SQL命令的權利。
 
-* **[!UICONTROL START DELIVERIES]**:批准先前分析的交貨的權利。 在交付分析後，交付將在各個審批步驟中暫停，並需要獲得批准才能恢復。 具有 **[!UICONTROL START DELIVERIES]** 允許批准交貨。
+* **[!UICONTROL START DELIVERIES]**：核准先前分析的傳送的權利。 傳遞分析後，傳遞會在各種核准步驟暫停，並需要核准才能繼續。 使用者具有 **[!UICONTROL START DELIVERIES]** 允許許可權核准傳遞。
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**:使用SQL資料管理活動編寫自己的SQL指令碼以建立和填充工作表的權利(請參見 [此部分](../../workflow/using/sql-data-management.md))。
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：有權使用SQL資料管理活動撰寫您自己的SQL指令碼，以建立和填入工作表(請參閱 [本節](../../workflow/using/sql-data-management.md))。
 
-* **[!UICONTROL WORKFLOW]**:執行工作流的權限。 沒有此權限，用戶將無法啟動、停止或重新啟動工作流。
+* **[!UICONTROL WORKFLOW]**：執行工作流程的權利。 若無此許可權，使用者將無法啟動、停止或重新啟動工作流程。
 
-* **[!UICONTROL WEBAPP]**:有權使用Web應用程式。
+* **[!UICONTROL WEBAPP]**：使用Web應用程式的許可權。
 
 >[!NOTE]
 >
->此清單可能因平台上安裝的載入項而異。
+>此清單可能會因平台上安裝的附加元件而異。
 
-## 訪問權限矩陣 {#access-rights-matrix}
+## 存取許可權矩陣 {#access-rights-matrix}
 
-預設組和命名權限允許操作員訪問導航層次結構中的某些資料夾，並授予讀、寫和刪除權限。
+預設群組和已命名許可權可讓操作員存取導覽階層中的特定資料夾，並授予讀取、寫入和刪除許可權。
 
-Adobe Campaign訪問權限清單可用 [這裡](/help/platform/using/assets/access-rights-matrix.pdf)。
+現提供Adobe Campaign存取許可權矩陣 [此處](/help/platform/using/assets/access-rights-matrix.pdf).
 
 [![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

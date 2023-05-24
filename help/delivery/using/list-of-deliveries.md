@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 存取傳遞清單
-description: 了解如何存取已建立的傳送清單
+description: 瞭解如何存取已建立的傳遞清單
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
@@ -17,19 +17,19 @@ ht-degree: 10%
 
 
 
-您可以透過 **[!UICONTROL Campaign Management > Deliveries]** 樹的節點。
+您可以從傳遞清單存取傳遞，方法是透過 **[!UICONTROL Campaign Management > Deliveries]** 樹狀結構的節點。
 
 ![](assets/deliveries-list.png)
 
-依預設，傳送清單包含所選節點中建立之傳送的名稱和狀態。 它也會顯示要成功傳送、處理及傳送的訊息數量。
+依預設，傳遞清單包含在所選節點中建立的傳遞的名稱和狀態。 它也會顯示要成功傳送、處理和傳送的訊息數。
 
-* 數量 **[!UICONTROL Messages to send]** 與分析後和傳送前定位的收件者數量相對應。
-* 中的訊息數 **[!UICONTROL Success]** 欄對應於伺服器所傳送及收件者所接收的訊息數目。
-* 數量 **[!UICONTROL Processed]** 消息與接收的消息數以及帶有錯誤的消息數相對應。
+* 「 」的數量 **[!UICONTROL Messages to send]** 對應於分析後和傳遞前鎖定的收件者人數。
+* 中的訊息數 **[!UICONTROL Success]** 欄對應於伺服器傳送的訊息數，以及收件者接收的訊息數。
+* 「 」的數量 **[!UICONTROL Processed]** messages對應到已接收的訊息數加上有錯誤的訊息數。
 
 >[!NOTE]
 >
->若是大型傳送，您可能想要更新這些值。 若要這麼做，請選取相關的傳送，然後以滑鼠右鍵按一下。 選擇 **[!UICONTROL Action > Recompute delivery and tracking indicators...]** 然後使用嚮導更新此資訊。
+>對於大型傳遞，您可能希望更新這些值。 若要這麼做，請選取有問題的傳送，然後在其上按一下滑鼠右鍵。 選取 **[!UICONTROL Action > Recompute delivery and tracking indicators...]** 然後使用精靈來更新此資訊。
 
 **相關主題：**
 

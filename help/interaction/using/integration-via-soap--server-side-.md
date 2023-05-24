@@ -18,37 +18,37 @@ ht-degree: 3%
 
 
 
-為選件管理提供的SOAP Web服務與Adobe Campaign中通常使用的服務不同。 您可以透過前一節所述的互動URL來存取這些選件，並讓您為特定連絡人呈現或更新選件。
+為選件管理提供的SOAP Web服務與Adobe Campaign中常用的不同。 可透過上一節所述的互動URL存取優惠方案，並讓您提供或更新指定連絡人的優惠方案。
 
 ## 優惠方案主張 {#offer-proposition}
 
-如需透過SOAP的優惠方案主張，請新增 **nms：主張#建議** 命令，後接下列參數：
+針對透過SOAP的優惠方案主張，新增 **nms：proposition#Propose** 命令後接下列引數：
 
-* **targetId**:收件者的主要金鑰（可以是複合金鑰）。
-* **maxCount**:指定聯繫人的優惠方案數。
-* **內容**:可讓您在空間架構中新增內容資訊。 如果使用的架構為 **nms:interaction**, **`<empty>`** 應新增。
-* **類別**:指定選件必須屬於的類別。
-* **主題**:指定選件必須屬於的主題。
-* **uid**:Adobe Campaign永久cookie的值(「uuid230」)。
-* **nli**:Adobe Campaign工作階段cookie的值(「nlid」)。
-* **noProp**:使用&quot;true&quot;值停用建議插入。
+* **targetId**：收件者的主鍵（可以是複合鍵）。
+* **maxCount**：指定聯絡人的優惠方案主張數量。
+* **內容**：可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是 **nms：interaction**， **`<empty>`** 應已新增。
+* **類別**：指定優惠方案必須所屬的類別。
+* **主題**：指定選件必須屬於的主題。
+* **uuid**：Adobe Campaign永久cookie的值(「uuid230」)。
+* **nli**：Adobe Campaign工作階段Cookie的值(「nlid」)。
+* **noProp**：使用「true」值來停用提案插入。
 
 >[!NOTE]
 >
->此 **targetId** 和 **maxCount** 必須進行設定。 其他則為選用。
+>此 **targetId** 和 **maxCount** 設定是強制性的。 其他則是選擇性的。
 
-響應查詢，SOAP服務將返回以下參數：
+為回應查詢，SOAP服務將傳回下列引數：
 
-* **interactionId**:互動的ID。
-* **主張**:XML元素，包含命題的清單，每個命題都有自己的ID和HTML表示。
+* **interactionId**：互動的ID。
+* **主張**： XML元素，包含主張清單，每個主張都有自己的ID和HTML表示。
 
-## 選件更新 {#offer-update}
+## 優惠更新 {#offer-update}
 
-新增 **nms:interaction#UpdateStatus** 命令傳至URL，後接下列參數：
+新增 **nms：interaction#UpdateStatus** 命令前往URL，接著執行下列引數：
 
-* **命題**:字元字串，其中包含在優惠方案主張期間以輸出形式提供的主張ID。 請參閱 [優惠方案主張](#offer-proposition).
-* **狀態**:字串類型，它會指定選件的新狀態。 可能的值會列在 **主張狀態** 枚舉，在 **nms:common** 綱要。 例如，現成可用，數字3對應至 **已接受** 狀態。
-* **內容**:XML元素，可讓您在空間架構中添加上下文資訊。 如果使用的架構為 **nms:interaction**, **`<empty>`** 應新增。
+* **主張**：字元字串，其中包含優惠方案主張期間作為輸出提供的主張ID。 請參閱 [優惠方案主張](#offer-proposition).
+* **狀態**：字串型別，它指定選件的新狀態。 可能的值會列在 **propositionStatus** 分項清單，在 **nms：common** 結構描述。 例如，數字3是現成可用的，會對應至 **已接受** 狀態。
+* **內容**：XML元素，可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是 **nms：interaction**， **`<empty>`** 應已新增。
 
 ## 使用SOAP呼叫的範例 {#example-using-a-soap-call}
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 配置對資產的訪問
-description: 配置對資產的訪問
+title: 設定對資產的存取權
+description: 設定對資產的存取權
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
@@ -15,64 +15,64 @@ ht-degree: 2%
 
 ---
 
-# 配置對資產的訪問{#configuring-access-to-assets}
+# 設定對資產的存取權{#configuring-access-to-assets}
 
 
 
-本節詳細介紹在Adobe Campaign使用資產核心服務或Adobe Experience Manager資產(AEM Assets)庫的整合功能所需的配置步驟。
+本節詳細說明在Adobe Campaign中使用與Assets核心服務或Adobe Experience Manager Assets (AEM Assets)資料庫整合功能的必要設定步驟。
 
 >[!CAUTION]
 >
->這些整合是併發的。 在進行任何配置之前，請仔細閱讀以下資訊。
+>這些整合是並行的。 在進行任何設定之前，請仔細閱讀下列資訊。
 
-* 與 **Experience Cloud資產**:此整合允許您從Adobe Experience Cloud庫插入影像。 必須通過安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** Adobe Campaign的內置包。
-* 與 **AEM Assets**:此整合允許您從Adobe Experience Manager資產庫插入影像。 必須通過安裝 **[!UICONTROL AEM Integration]** Adobe Campaign的內置包。 請注意，從Adobe Experience Manager6.4開始，此整合不再可用。
+* 與整合 **Experience Cloud資產**：此整合可讓您從Adobe Experience Cloud資料庫插入影像。 此整合必須透過安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** Adobe Campaign中的內建套件。
+* 與整合 **AEM Assets**：此整合可讓您從Adobe Experience Manager資產資料庫插入影像。 此整合必須透過安裝 **[!UICONTROL AEM Integration]** Adobe Campaign中的內建套件。 請注意，自Adobe Experience Manager 6.4起，將不再提供這項整合。
 
 >[!NOTE]
 >
->如果兩個包(**[!UICONTROL AEM Integration]** 和 **[!UICONTROL Integration with the Adobe Experience Cloud]** )，只能使用Adobe Experience Cloud庫中的可用資產。
+>如果兩個套件(**[!UICONTROL AEM Integration]** 和 **[!UICONTROL Integration with the Adobe Experience Cloud]** )，則只能使用Adobe Experience Cloud資料庫中可用的資產。
 
 ## 與Experience Cloud資產整合 {#integrating-with-experience-cloud-assets}
 
-要使用Adobe Campaign與Experience Cloud資產之間的整合，您必須：
+若要使用Adobe Campaign與Experience Cloud資產之間的整合，您必須具備：
 
 * Adobe Experience Cloud組織
-* 已啟用Adobe IMS驗證模式
+* Adobe IMS驗證模式已啟用
 
-要啟用Adobe Campaign和Adobe Experience Cloud之間的連接，請通過IMS(Adobe ID連接服務)配置連接。 此配置在 [通過Adobe ID連接](../../integrations/using/about-adobe-id.md) 的子菜單。 它涉及：
+若要啟用Adobe Campaign與Adobe Experience Cloud之間的連線，請透過IMS (Adobe ID連線服務)設定連線。 此設定的詳細資訊請參閱 [透過Adobe ID連線](../../integrations/using/about-adobe-id.md) 檔案。 其中涉及：
 
-* 安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** 檔案。
-* 配置Adobe Experience Cloud外部帳戶。
+* 安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** 封裝。
+* 設定Adobe Experience Cloud外部帳戶。
 
 >[!NOTE]
 >
->與這一整合相關的功能只適用於通過網際網路管理系統與其Adobe ID相連的用戶。
+>連結至此整合的功能僅適用於透過IMS連線至其Adobe ID的使用者。
 
 ## 與AEM Assets整合 {#integrating-with-aem-assets}
 
 
 >[!CAUTION]
 >
->從Adobe Experience Manager6.4開始，已退出該功能。 [瞭解更多資訊](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
+>此功能已從Adobe Experience Manager 6.4開始停止服務。 [瞭解更多](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
-要整合AEM Assets和Adobe Campaign，首先必須配置Adobe Experience Manager和Adobe Campaign的整合。 此配置主要要求：
+若要將AEM Assets與Adobe Campaign整合，您必須先設定Adobe Experience Manager與Adobe Campaign之間的整合。 此設定主要需要：
 
-* 安裝 **[!UICONTROL AEM Integration]** 內置軟體包
-* 配置特定於Adobe Experience Manager的外部帳戶
+* 安裝 **[!UICONTROL AEM Integration]** 內建套件
+* 設定Adobe Experience Manager專用的外部帳戶
 
-瞭解如何將Adobe Campaign和Adobe Experience Manager整合到 [詳細文檔](../../integrations/using/about-adobe-experience-manager.md)。
+瞭解如何在中整合Adobe Campaign和Adobe Experience Manager [詳細檔案](../../integrations/using/about-adobe-experience-manager.md).
 
-設定此整合後，您可以在Adobe Campaign配置新的交付模板以使用AEM Assets庫。 要執行此操作，請遵循下列步驟：
+設定這項整合後，您可以在Adobe Campaign中設定新的傳遞範本，以使用AEM Assets資料庫。 要執行此操作，請遵循下列步驟：
 
-1. 建立新的交貨模板 — 或複製現有的交貨模板。 有關交付模板的詳細資訊，請參閱 [此頁](../../delivery/using/about-templates.md)。
-1. 編輯 **屬性** 的下界。
-1. 在 **[!UICONTROL Advanced]** 頁籤 **[!UICONTROL Content editing mode]** 至 **DCE**。
-1. 選擇外部 **[!UICONTROL AEM account]** 你需要用來訪問你的AEM Assets圖書館。
+1. 建立新的傳遞範本 — 或複製現有的傳遞範本。 如需傳送範本的詳細資訊，請參閱 [此頁面](../../delivery/using/about-templates.md).
+1. 編輯 **屬性** 此範本的。
+1. 在 **[!UICONTROL Advanced]** 標籤，設定 **[!UICONTROL Content editing mode]** 至 **DCE**.
+1. 選取外部 **[!UICONTROL AEM account]** 需要使用來存取AEM Assets資料庫。
 
    ![](assets/dam_aem_assets1.png)
 
-當您根據此模板將影像插入到遞送的內容時， **[!UICONTROL Select a shared asset]** 選項，您可以瀏覽AEM Assets庫中的影像。 在[本章節](../../integrations/using/inserting-a-shared-asset.md)了解更多資訊。
+當您根據此範本將影像插入傳送的內容時， **[!UICONTROL Select a shared asset]** 選項之後，您就可以瀏覽AEM Assets資料庫中的影像。 在[本章節](../../integrations/using/inserting-a-shared-asset.md)了解更多資訊。
 
 >[!NOTE]
 >
->如果 **[!UICONTROL Integration with the Adobe Experience Cloud]** 軟體包也安裝在您的Adobe Campaign實例上，您將只能使用Adobe Experience Cloud庫中的可用資產。 要訪問您的AEM Assets庫中的資產，您必須同步AEM Assets和Adobe Experience Cloud。 AEM Assets的資產也將在Adobe Experience Cloud圖書館提供。 在這種情況下，您不需要建立特定的交貨模板。
+>如果 **[!UICONTROL Integration with the Adobe Experience Cloud]** 套件也安裝在您的Adobe Campaign執行個體上，您只能使用Adobe Experience Cloud資料庫中的可用資產。 若要存取AEM Assets資料庫中的資產，您必須同步AEM Assets和Adobe Experience Cloud。 AEM Assets中的資產也將可在Adobe Experience Cloud資料庫中使用。 在這種情況下，您不需要建立特定的傳遞範本。

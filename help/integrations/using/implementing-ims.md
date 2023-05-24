@@ -21,16 +21,16 @@ ht-degree: 0%
 
 ## 啟用IMS連線 {#enabling-the-ims-connection}
 
-1. 若要啟用透過IMS的連線，請核取 **[!UICONTROL Connect with an Adobe ID]** 在控制台的「連接」窗口中。
+1. 若要啟用透過IMS連線，請核取 **[!UICONTROL Connect with an Adobe ID]** 控制檯的「連線」視窗中。
 
    ![](assets/ims_1.png)
 
-1. 輸入您的Adobe ID和密碼。 接著會顯示Adobe Campaign主畫面。
+1. 輸入您的Adobe ID和密碼。 Adobe Campaign首頁畫面隨即顯示。
 
    ![](assets/ims_2.png)
 
 ## 停用IMS連線 {#disabling-the-ims-connection}
 
-若要停用透過Adobe ID的連線，請中斷連線，按一下 **[!UICONTROL File > Connections]** 取消勾選 **[!UICONTROL Connect with an Adobe ID]**.
+若要停用透過Adobe ID的連線，請中斷連線，按一下 **[!UICONTROL File > Connections]** 並取消勾選 **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)

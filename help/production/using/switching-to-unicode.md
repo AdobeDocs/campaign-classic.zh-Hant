@@ -19,16 +19,16 @@ ht-degree: 7%
 
 
 
-對於現有 **收縮** 在Linux/PostgreSQL中，切換到unicode的步驟如下：
+針對現有 **prod** Linux/PostgreSQL中的執行個體，切換至Unicode的步驟如下：
 
-1. 停止寫入資料庫的進程：
+1. 停止將處理作業寫入資料庫：
 
    ```
    su - neolane
    nlserver shutdown
    ```
 
-1. 轉儲資料庫：
+1. 傾印資料庫：
 
    ```
    su - postgres
@@ -47,14 +47,14 @@ ht-degree: 7%
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. 更新指示資料庫為Unicode的選項：
+1. 更新表示資料庫為Unicode的選項：
 
    ```
    psql mydatabase_unicode
    update XtkOption set sStringValue = 'u'||sStringValue where sName='XtkDatabaseId' and sStringValue not like 'u%';
    ```
 
-1. 在跟蹤伺服器上：
+1. 在追蹤伺服器上：
 
    ```
    su - neolane
@@ -62,7 +62,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   添加 **烏** 與資料庫標識符相關的值前面的字元(**資料庫ID**):
+   新增 **u** 與資料庫識別碼相關的值前面的字元(**資料庫識別碼**)：
 
    ```
    <web>
@@ -70,7 +70,7 @@ ht-degree: 7%
    </web>
    ```
 
-1. 在調用資料庫的伺服器上：
+1. 在呼叫資料庫的伺服器上：
 
    ```
    su - neolane
@@ -78,7 +78,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   修改資料庫引用：
+   修改資料庫參考：
 
    ```
    <dataSource name="default">
@@ -97,7 +97,7 @@ ht-degree: 7%
    /etc/init.d/apache start
    ```
 
-1. 確認交換機。 為此，請通過Adobe Campaign控制台連接，並：
+1. 確認交換器。 若要這麼做，請透過Adobe Campaign主控台連線，並：
 
-   * 檢查資料是否正確顯示，尤其是突出字元：
-   * 啟動交付並檢查跟蹤檢索是否有效。
+   * 檢查資料是否正確顯示，尤其是重音字元：
+   * 啟動傳遞，並檢查追蹤擷取是否有效。

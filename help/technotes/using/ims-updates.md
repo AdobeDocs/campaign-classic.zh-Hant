@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 技術 — 更新您的環境，使用IMS連接到Adobe Campaign。
-description: 活動 — IMS更新
+title: 技術檔案 — 更新您的環境以使用IMS連線至Adobe Campaign
+description: Campaign - IMS更新
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
@@ -11,74 +11,74 @@ ht-degree: 10%
 
 ---
 
-# 如何更新您的環境以與IMS連接到Adobe Campaign。 {#acc-ims-faq}
+# 如何更新您的環境，以便使用IMS連線至Adobe Campaign {#acc-ims-faq}
 
 
 
-於二零二一年六月三十日，本集團 [AdobeIdentity Management系統](https://helpx.adobe.com/enterprise/using/identity.html) (IMS)登錄功能可能會影響您繼續使用Adobe Campaign的能力。 瞭解如何確保您繼續使用Adobe Campaign Classicv7而不中斷。
+2021年6月30日起，下列專案已有所變更： [AdobeIdentity Management系統](https://helpx.adobe.com/enterprise/using/identity.html) (IMS)登入功能可能影響您繼續使用Adobe Campaign的能力。 瞭解如何確保繼續使用Adobe Campaign Classic v7而不中斷。
 
-## 什麼變了？
+## 哪些部分有所變更？
 
-AdobeIdentity Management服務(IMS)已停止支援舊Internet Explorer版本 **2021年6月30日**。 [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+AdobeIdentity Management服務(IMS)已停止支援舊的Internet Explorer版本 **2021年6月30日**. [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
-Adobe希望在2021年6月30日之前為所有客戶保留IMS功能。 IMS是安全框架的一部分，它允許用戶登錄客戶端控制台，因此Adobe Campaign。
+Adobe想要為所有超過2021年6月30日的客戶保留IMS功能。 IMS是安全性架構的一部分，可讓使用者登入使用者端主控台，即Adobe Campaign。
 
-要保留此功能，客戶必須在每台用戶的電腦上更新客戶端控制台，並確保您的 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), **Internet Explorer 11** 內置，安裝在每個用戶的電腦上。
+若要保留此功能，客戶必須在每位使用者的電腦上更新使用者端主控台，並確保您的電腦有最新更新 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)，搭配 **Internet Explorer 11** 內建，會安裝在每位使用者的電腦上。
 
 ## 您有受到影響嗎？
 
-如果要連接到市場活動 [通過Adobe ID](../../integrations/using/about-adobe-id.md)通過AdobeIdentity Management服務(IMS)，並運行比下面列出的更舊版本的營銷活動，您會受到影響。
+如果您正在連線至Campaign [透過Adobe ID](../../integrations/using/about-adobe-id.md)，透過AdobeIdentity Management服務(IMS)，並執行比下方所列版本舊的Campaign版本，您會受到影響。
 
-如果已升級但使用舊版本的MicrosoftInternet Explorer，則必須升級到Internet Explorer 11。
+如果您已升級但使用舊版Microsoft Internet Explorer，則必須升級至Internet Explorer 11。
 
 ## 如何更新？
 
-* 作為托管客戶，Adobe已將您的實例升級到較新版本。
+* 作為託管客戶，Adobe已將您的執行個體升級至較新版本。
 
-* 作為內部/混合型客戶，您需要升級到上面列出的一個較新版本，以便從新的客戶端控制台中獲益，並確保無縫過渡 **2021年6月30日前**。
+* 身為內部部署/混合部署客戶，您需要升級至上述較新版本之一，以受益於新的使用者端主控台，並確保順暢轉換 **2021年6月30日之前**.
 
-   必須升級到下面列出的其中一個新版本：
+   必須升級至下列新版本之一：
 
-   * 金標11。 [了解更多](../../rn/using/gold-standard.md)
-   * 市場活21.1.3發佈。 [了解更多](../../rn/using/latest-release.md)
-   * 市場活20.2.5發佈。 [了解更多](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-   * 市場活20.1.4發佈。 [了解更多](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-   * 市場活19.2.4發佈。 [了解更多](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+   * Gold Standard 11. [了解更多](../../rn/using/gold-standard.md)
+   * Campaign 21.1.3版。 [了解更多](../../rn/using/latest-release.md)
+   * Campaign 20.2.5版。 [了解更多](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+   * Campaign 20.1.4版。 [了解更多](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+   * Campaign 19.2.4版。 [了解更多](../../rn/using/release--2019.md#release-19-2-4-build-9082)
 
-   這些版本附帶了新的連接協定。 對於市場活動伺服器和客戶端控制台，必須進行升級：升級所有實例後，客戶機控制台需要升級到此版本，並能夠在升級後連接到市場活動 **2021年6月30日**。
+   這些版本隨附新的連線通訊協定。 Campaign伺服器和使用者端主控台都必須升級：升級所有執行個體後，使用者端主控台就需要升級至此版本，並且之後才能連線至Campaign **2021年6月30日**.
 
-此外，確保 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), **Internet Explorer 11** 內置，安裝在每個用戶的電腦上。
+此外，請確定您的 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)，搭配 **Internet Explorer 11** 內建，會安裝在每位使用者的電腦上。
 
 ## 常見問答集
 
-**如何檢查我的促銷活動版本？**
+**如何檢查我的Campaign版本？**
 
-瞭解如何檢查您的版本 [此部分](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
+瞭解如何檢查您的版本 [在本節中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 
-**如何檢查我是否使用IMS?**
+**如何檢查我是否使用IMS？**
 
-要檢查連接模式，您可以：
+若要檢查連線模式，您可以：
 
-* 啟動市場活動客戶端控制台並訪問實例連接設定。 如果 **連接Adobe ID** 選項，您正在使用Adobe IMS。
+* 啟動Campaign使用者端主控台，並存取您的執行個體連線設定。 如果 **與Adobe ID連線** 選項時，表示您使用的是Adobe IMS。
 
    ![](../../integrations/using/assets/ims_1.png)
 
 或
 
-* 啟動市場活動客戶端控制台，並檢查連接窗口。 如下面的螢幕所示，如果您正在與Adobe ID連接，則您正在使用IMS。
+* 啟動Campaign使用者端主控台，並檢查您的連線視窗。 如果您正在與Adobe ID連線（如下圖所示），則表示您使用的是IMS。
 
    ![](../../integrations/using/assets/adobeID.png)
 
-**連接警告消息**
+**連線警告訊息**
 
-如果用戶需要更新其客戶端控制台或使用舊版本的MicrosoftInternet Explorer，則以下警告消息將可見： **您需要安裝Windows和/或您的Adobe應用的最新更新。**
+如果使用者需要更新其使用者端主控台或使用舊版Microsoft Internet Explorer，系統會顯示下列警告訊息： **您必須安裝更新至Windows和/或Adobe應用程式的最新版本。**
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-如果您看到此類警告，請確保安裝所使用的作業系統的最新更新。 [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+如果您看到這類警告，請確定您已安裝所使用作業系統的最新更新。 [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
-如果您未更新Internet Explorer版本，則會看到以下消息，並且無法再連接到Adobe Campaign:
+如果您未更新Internet Explorer版本，則會看到以下訊息，且無法再連線至Adobe Campaign：
 
 ![](../../integrations/using/assets/do-not-localize/errorUpdateReq.png)
 
@@ -86,11 +86,11 @@ Adobe希望在2021年6月30日之前為所有客戶保留IMS功能。 IMS是安�
 >
 >如對這些變更有任何疑問，請聯絡 [Adobe 客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-## 有用連結
+## 有用的連結
 
-* [升級環境](../../production/using/build-upgrade.md)
+* [升級您的環境](../../production/using/build-upgrade.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
-* [使新客戶端控制台可供用戶使用](../../installation/using/client-console-availability-for-windows.md)
+* [讓使用者可以使用新的使用者端主控台](../../installation/using/client-console-availability-for-windows.md)
 * [安裝 Campaign 用戶端控制台](../../installation/using/installing-the-client-console.md)
-* [訪問Adobe軟體分發](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)
-* [下載Campaign Classic內部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [存取Adobe軟體發佈](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)
+* [下載Campaign Classic建置](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

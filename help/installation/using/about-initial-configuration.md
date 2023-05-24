@@ -15,17 +15,17 @@ ht-degree: 8%
 
 ---
 
-# 配置和部署實例的關鍵步驟{#about-initial-configuration}
+# 設定和部署執行個體的重要步驟{#about-initial-configuration}
 
 
 
-Adobe Campaign安裝完成後，您需要對其進行配置，以確保其在滿足您的限制和技術體系結構的情況下高效運行。 配置Adobe Campaign實例的步驟按以下順序在本章中詳細介紹：
+Adobe Campaign安裝完成後，您需要進行設定，以確保它在您的限制和技術架構下有效運作。 本章將依下列順序詳細說明設定Adobe Campaign執行個體的步驟：
 
-1. 建立實例和相關連接，請參閱 [建立實例並登錄](../../installation/using/creating-an-instance-and-logging-on.md)。
-1. 建立和配置資料庫，請參閱 [建立和配置資料庫](../../installation/using/creating-and-configuring-the-database.md)。
-1. 配置Adobe Campaign伺服器，請參閱 [市場活動伺服器配置](../../installation/using/configuring-campaign-server.md)。
-1. 部署實例，請參閱 [部署實例](../../installation/using/deploying-an-instance.md)。
+1. 建立執行個體和相關連線，請參閱 [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
+1. 建立及設定資料庫，請參閱 [建立和設定資料庫](../../installation/using/creating-and-configuring-the-database.md).
+1. 設定Adobe Campaign伺服器，請參閱 [Campaign伺服器設定](../../installation/using/configuring-campaign-server.md).
+1. 部署執行個體，請參閱 [部署執行個體](../../installation/using/deploying-an-instance.md).
 
-配置實例意味著啟用進程（web、mta、wfserver等） 要在伺服器上啟動，並配置用於發送電子郵件、跟蹤等的模組。 對於每個實例，在伺服器上激活Adobe Campaign進程。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
+設定執行個體表示啟用流程（web、mta、wfserver等） 開始於伺服器上，並設定用於傳送電子郵件、追蹤等的模組。 對於每個執行個體，都會在伺服器上啟動Adobe Campaign程式。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
-每個實例（取決於使用的模組、您的體系結構和您的需要）可能需要其他配置來優化Adobe Campaign操作。
+每個執行個體可能需要額外的設定（取決於使用的模組、您的架構和您的需求），以最佳化Adobe Campaign操作。

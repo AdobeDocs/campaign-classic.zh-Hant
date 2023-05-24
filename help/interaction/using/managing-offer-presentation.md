@@ -21,12 +21,12 @@ ht-degree: 1%
 
 ## 簡報規則概觀 {#presentation-rules-overview}
 
-交互功能允許您使用演示規則控制優惠方案的流程。 這些是「互動」專屬的規則是類型規則。 它們可讓您根據已向收件者提出的主張的歷史，排除優惠方案。 環境會參考這些參數
+互動可讓您使用簡報規則控制優惠方案主張的流程。 這些專屬於互動的規則是型別規則。 它們可讓您根據已傳送給收件者的建議歷史記錄排除優惠方案。 環境會參照它們
 
-## 建立和參考優惠方案簡報規則 {#creating-and-referencing-an-offer-presentation-rule}
+## 建立和參考優惠方案呈現方式規則 {#creating-and-referencing-an-offer-presentation-rule}
 
 1. 前往 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** 節點。
-1. 建立類型規則並選擇 **[!UICONTROL Offer presentation]** 類型。
+1. 建立型別規則並選擇 **[!UICONTROL Offer presentation]** 型別。
 
    ![](assets/offer_typology_001.png)
 
@@ -34,128 +34,128 @@ ht-degree: 1%
 
    ![](assets/offer_typology_002.png)
 
-1. 設定規則的應用程式條件。 有關詳細資訊，請參閱 [演示規則設定](#presentation-rule-settings).
-1. 前往 **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** 節點，並建立將所有 **[!UICONTROL Offer presentation]** 類型規則。
+1. 設定規則的應用程式條件。 有關詳細資訊，請參閱 [簡報規則設定](#presentation-rule-settings).
+1. 前往 **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** 節點並建立將所有群組的分類 **[!UICONTROL Offer presentation]** 型別規則。
 
    ![](assets/offer_typology_003.png)
 
-1. 建立類型後，將游標置於類型規則上，並在您剛建立的類型中將其分組。
+1. 建立型別後，將游標置於型別規則上，並將它們群組在您剛建立的型別中。
 
    ![](assets/offer_typology_004.png)
 
-1. 在選件環境中，使用下拉式清單參考類型。
+1. 在您的優惠方案環境中，使用下拉式清單來參考型別。
 
    ![](assets/offer_typology_005.png)
 
-## 演示規則設定 {#presentation-rule-settings}
+## 簡報規則設定 {#presentation-rule-settings}
 
 ### 應用程式條件 {#application-criteria-}
 
-適用於 **[!UICONTROL General]** 索引標籤可讓您指定要套用簡報規則的選件。 若要這麼做，您需要建立查詢並選擇相關選件，如下所述。
+中可用的應用程式條件 **[!UICONTROL General]** 索引標籤可讓您指定簡報規則將套用的優惠方案。 為此，您需要建立查詢並選擇相關選件，如下所述。
 
-1. 在類型規則中，按一下 **[!UICONTROL Edit the rule application conditions...]** 連結以建立查詢。
+1. 在型別規則中，按一下 **[!UICONTROL Edit the rule application conditions...]** 連結以建立您的查詢。
 
    ![](assets/offer_typology_006.png)
 
-1. 在查詢視窗中，您可以對您要套用類型規則的選件套用篩選器。
+1. 在查詢視窗中，您可以對要套用型別規則的選件套用篩選。
 
    例如，您可以選取優惠方案類別。
 
    ![](assets/offer_typology_008.png)
 
-### 選件維度 {#offer-dimensions}
+### 優惠方案維度 {#offer-dimensions}
 
-在 **[!UICONTROL Offer presentation]** 索引標籤，則必須為演示規則指定與環境中配置的維相同的維。
+在 **[!UICONTROL Offer presentation]** 標籤中，您必須為簡報規則指定與在環境中設定的維度相同的維度。
 
-此 **[!UICONTROL Targeting dimension]** 與收件者表格重合(預設為：nms:recipients)，將接收優惠方案。 此 **[!UICONTROL Storage dimension]** 與包含連結到目標維的主張歷史記錄（預設情況下）的表一致:nms:Rcp)。
+此 **[!UICONTROL Targeting dimension]** 與將接收優惠方案主張的收件者表格（預設為： nms：recipients）一致。 此 **[!UICONTROL Storage dimension]** 與包含連結至目標維度的主張歷程記錄（依預設）的表格一致:nms:propositionRcp)。
 
 ![](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
->您也可以使用非標準表格。 如果您想使用特定目標維度，則需要使用目標對應來建立表格和專用環境。 有關詳細資訊，請參閱 [建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>您也可以使用非標準表格。 如果您想要使用特定的目標維度，您將需要使用目標對應建立表格以及專用環境。 有關詳細資訊，請參閱 [建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 ### 期間 {#period}
 
-這是從優惠方案展示日期開始的滑動期間。 它為優惠方案的有效性設定了時限。 該規則不適用於在此期間之後提出的建議。
+這是從優惠方案呈現日期開始的滑動期間。 它會設定優惠方案主張的有效性時限。 此規則不適用於在此期間以外提出的優惠方案主張。
 
-期間開始 **n** 提案日期和結束前的天數 **n** 之後幾天， **n** 與 **[!UICONTROL Period considered]** 欄位：
+期間開始 **n** 主張日期和結束日期前的天數 **n** 幾天後，其中 **n** 對應至輸入於 **[!UICONTROL Period considered]** 欄位：
 
-* 若是傳入空間，主張日期即為優惠方案簡報日期。
-* 對於出站空間，主張日期是傳送聯絡日期（例如在目標工作流程中輸入的傳送日期）。
+* 若為傳入空間，主張日期為優惠方案展示日期。
+* 若為傳出空間，主張日期為傳送聯絡日期（例如，在目標定位工作流程中輸入的傳送日期）。
 
-使用箭頭可更改天數或直接輸入句點（例如「2d 6h」）。
+使用箭頭來變更天數或直接輸入期間（例如「2d 6h」）。
 
 ![](assets/offer_typology_010.png)
 
 ### 主張數量 {#number-of-propositions}
 
-可以設定在排除有關報價之前可以提出的最高數量的建議。
+可以在排除相關優惠方案之前設定可提出的最大建議數量。
 
-使用箭頭更改優惠方案的數量。
+使用箭頭來變更優惠方案主張的數量。
 
 ![](assets/offer_typology_011.png)
 
-## 定義主張和收件人 {#defining-propositions-and-recipients}
+## 定義主張和收件者 {#defining-propositions-and-recipients}
 
-此 **[!UICONTROL Propositions to count]** 小節可讓您指定收件者和主張，以排除 **[!UICONTROL General]** 頁簽，以便它們在命題歷史記錄中出現特定次數。
+此 **[!UICONTROL Propositions to count]** 區段可讓您指定收件者和主張，其將導致排除中定義的優惠。 **[!UICONTROL General]** 索引標籤（如果這些索引標籤在主張歷程記錄中出現特定次數）。
 
-### 篩選命題 {#filtering-propositions}
+### 篩選建議 {#filtering-propositions}
 
-您可以根據渠道、相關選件或先前分配的命題的狀態選擇過濾標準以排除命題。
+您可以選取篩選條件，以根據頻道、相關優惠或先前指派主張的狀態來排除主張。
 
 ![](assets/offer_typology_014.png)
 
-這些條件代表展示規則最常使用的應用程式。 若要使用其他條件，您可以使用 **[!UICONTROL Limit propositions...]** 連結。 有關詳細資訊，請參閱 [建立關於命題的查詢](#creating-a-query-on-propositions) 區段。
+這些條件代表簡報規則最常見的應用方式。 若要使用其他條件，您可以使用 **[!UICONTROL Limit propositions...]** 連結。 如需詳細資訊，請參閱 [建立主張的查詢](#creating-a-query-on-propositions) 區段。
 
-* **在通道上篩選**
+* **在頻道上篩選**
 
-   **[!UICONTROL On the same channel only]** :可讓您排除 **[!UICONTROL General]** 標籤。
+   **[!UICONTROL On the same channel only]** ：可讓您在「 」中指定的頻道上排除優惠方案主張。 **[!UICONTROL General]** 標籤。
 
-   例如，為 **[!UICONTROL General]** 標籤是電子郵件。 如果規則套用的選件到目前為止僅在Web通道上提供，互動引擎可以在電子郵件傳送中呈現選件。 不過，一旦電子郵件呈現優惠方案後，互動引擎就會選擇不同的管道來呈現優惠方案。
+   例如，在中為規則指定的管道 **[!UICONTROL General]** 索引標籤是電子郵件。 如果規則套用的優惠方案目前僅在Web Channel上提供，則互動引擎可以在電子郵件傳送中呈現優惠方案。 不過，一旦以電子郵件呈現優惠方案，互動引擎就會選擇不同的頻道來呈現優惠方案。
 
    >[!NOTE]
    >
-   >我們討論的是通道，而不是空間。 如果規則必須排除Web頻道上的優惠方案，則網站上不會顯示以兩個空格（例如橫幅和頁面內文）呈現的優惠方案（如果之前已經呈現過）。
+   >我們談論的是頻道而非空間。 如果規則必須排除Web Channel上的優惠方案，則原本要顯示在網站上的優惠方案，在兩個空格中（例如在橫幅和頁面內文中），如果優惠方案之前已經顯示，則不會在網站上顯示。
    >
-   >對於涉及優惠方案簡報的工作流程，只有在上設定規則時，才會正確考慮這些規則 **[!UICONTROL All channels]**.
+   >對於涉及優惠方案呈現的工作流程，只有在設定規則時才會正確考量規則。 **[!UICONTROL All channels]**.
 
-* **篩選選件**
+* **在選件上篩選**
 
-   此篩選器可讓您限制要計算特定優惠方案集的優惠方案主張。
+   此篩選器可讓您將要計算的優惠方案主張限製為特定優惠方案集。
 
-   **[!UICONTROL All offers]** :預設值。 不會套用任何篩選器至選件。
+   **[!UICONTROL All offers]** ：預設值。 沒有篩選器套用至選件。
 
-   **[!UICONTROL Offer being presented]** :在 **[!UICONTROL General]** 索引標籤若已顯示，則會予以排除。
+   **[!UICONTROL Offer being presented]** ：中指定的選件 **[!UICONTROL General]** 標籤若已顯示，則會排除。
 
-   **[!UICONTROL Offers from the same category]** :如果已顯示來自相同類別的選件，則會排除選件。
+   **[!UICONTROL Offers from the same category]** ：如果已顯示相同類別中的優惠方案，則會排除優惠方案。
 
-   **[!UICONTROL The offers which the rule applies to]** :當 **[!UICONTROL General]** 索引標籤中，系統會考量這組選件中的每個選件主張，並在達到主張臨界值時，結束為排除所有選件。
+   **[!UICONTROL The offers which the rule applies to]** ：在中定義數個選件時 **[!UICONTROL General]** 索引標籤中，會考慮這組優惠方案中的每個優惠方案主張，如果達到主張臨界值，則會以排除所有優惠方案結束。
 
-   例如，選件2、3和5定義於 **[!UICONTROL General]** 標籤。 建議的最大數量設定為2。 如果選件2和5各呈現一次，則計算的命題數為2。 因此，將不會顯示選件3。
+   例如，選件2、3和5定義於 **[!UICONTROL General]** 標籤。 主張的最大數量設為2。 如果選件2和5各自呈現一次，則計算出的主張數量為2。 因此，系統永遠不會顯示選件3。
 
 * **依主張狀態篩選**
 
-   此篩選器可讓您為要在主張歷程記錄中考慮的優惠方案主張選擇最頻繁的狀態。
+   此篩選器可讓您選擇要在主張歷程記錄中考慮的優惠方案主張的最常見狀態。
 
-   **[!UICONTROL Regardless of the proposition status]** :預設值。 沒有對命題狀態應用任何篩選器。
+   **[!UICONTROL Regardless of the proposition status]** ：預設值。 主張狀態未套用任何篩選器。
 
-   **[!UICONTROL Accepted or rejected propositions]** :可讓您排除先前呈現且已接受或拒絕的選件。
+   **[!UICONTROL Accepted or rejected propositions]** ：可讓您排除先前顯示且已接受或拒絕的優惠。
 
-   **[!UICONTROL Accepted propositions]** :可讓您排除先前呈現且已接受的選件。
+   **[!UICONTROL Accepted propositions]** ：可讓您排除先前顯示且已接受的優惠。
 
-   **[!UICONTROL Rejected propositions]** :可讓您排除先前呈現且遭拒絕的選件。
+   **[!UICONTROL Rejected propositions]** ：可讓您排除先前顯示且已拒絕的優惠。
 
 ### 定義收件者 {#defining-recipients}
 
-若要指定收件者，請按一下 **[!UICONTROL Edit the query from the targeting dimension...]** 連結並選取規則相關的收件者。
+若要指定收件者，請按一下 **[!UICONTROL Edit the query from the targeting dimension...]** 連結並選取規則關注的收件者。
 
 ![](assets/offer_typology_012.png)
 
-### 建立關於命題的查詢 {#creating-a-query-on-propositions}
+### 建立主張的查詢 {#creating-a-query-on-propositions}
 
-要指定要通過查詢計算的命題，請按一下 **[!UICONTROL Limit propositions...]** 連結，並指定要考慮的條件。
+若要指定要透過查詢計算的主張，請按一下 **[!UICONTROL Limit propositions...]** 連結並指定要考慮的條件。
 
-在以下範例中，在兩個演示之後要計算的主張是 **特別優惠** 類別， **客服中心** 空間，重量低於 **20**.
+在以下範例中，兩個簡報後要計算的主張是 **特別優惠** 類別，用於 **呼叫中心** 間距，重量在下 **20**.
 
 ![](assets/offer_typology_013.png)

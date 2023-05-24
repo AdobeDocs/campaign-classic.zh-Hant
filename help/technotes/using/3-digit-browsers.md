@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Chrome Firefox和Edge瀏覽器中的促銷活動Web元件和版本100
-description: Chrome、Firefox和Edge瀏覽器中的市場活動Web元件和版本100
+title: Chrome Firefox和Edge瀏覽器中的Campaign網頁元件和版本100
+description: Chrome、Firefox和Edge瀏覽器中的Campaign網頁元件和版本100
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
 source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
 workflow-type: tm+mt
@@ -10,80 +10,80 @@ ht-degree: 0%
 
 ---
 
-# 3位瀏覽器版本對市場活動Web元件的影響 {#version-100}
+# 3位數瀏覽器版本對Campaign網頁元件的影響 {#version-100}
 
-Google和Mozilla警告說，Chrome和Firefox可能會因即將推出的3位版本而破壞一些網站。
+Google和Mozilla警告，Chrome和Firefox可能會因為即將推出的3位數版本而破壞某些網站。
 
-Chrome v100已設定為在 **2022年3月29日**、和Firefox v100開啟 **2022年5月3日**。
+Chrome v100的發行日期設定為 **2022年3月29日**，以及Firefox v100於 **2022年5月3日**.
 
-Microsoft於2022年3月早些時候發佈了Edge v100。
+Microsoft於2022年3月推出Edge v100。
 
-版本號從2到3位數的更改可能會在訪問未準備進行此更改的網站時導致一些問題。 某些網頁可能會在這些新瀏覽器版本中停止正確顯示。
+版本編號從2位數變更為3位數時，造訪未針對此變更做好準備的網站時可能會造成一些問題。 在這些新瀏覽器版本中，某些網頁可能會停止正確顯示。
 
-主要網站的相容性提前測試。 如果在發佈這些版本之前無法修復的站點存在問題，則公司已準備好備份計畫以確保站點不受影響。
+已預先測試主要網站的相容性。 如果在發行這些版本之前無法修正網站的問題，公司會準備備份計畫以確保網站不受影響。
 
-網站上的潛在問題或功能丟失源於瀏覽器發送到您訪問的網站的用戶代理字串：用戶代理是瀏覽器發送到網站的字串，用於讓網站知道您使用的瀏覽器和版本以及相關技術。 當您的瀏覽器向網站發送請求時，它會在檢索您請求的內容之前用用戶代理字串標識自己。 用戶代理字串中的資料有助於網站以適合瀏覽器的格式傳送內容。 用戶代理的版本將遞增，以與瀏覽器版本號匹配。 從2位移到3位可能會導致問題。
+網站上的潛在問題或功能遺失源自瀏覽器傳送至您造訪之網站的使用者代理字串：使用者代理字串是瀏覽器傳送至網站的字串，用於告知網站您使用哪個瀏覽器和版本，以及相關的技術。 瀏覽器傳送請求至網站時，會在擷取您要求的內容之前，透過使用者代理字串來識別自己。 使用者代理字串中的資料可協助網站以適合瀏覽器的格式傳送內容。 使用者代理程式的版本會增加，以符合瀏覽器版本號碼。 從2位數移動到3位數可能會導致問題。
 
 ## 您有受到影響嗎？{#version-100-impact}
 
-Adobe建議您test市場活動Web應用程式，包括Web表單和調查，以確保這些應用程式在這些新的瀏覽器版本中仍能正常工作。
+Adobe建議您測試Campaign網路應用程式（包括網路表單和調查），以確保這些新的瀏覽器版本仍可正常運作。
 
-此建議適用於所有Web應用程式，尤其是如果您已包含JavaScript代碼。
+此建議適用於所有Web應用程式，尤其是當您已包含JavaScript程式碼時。
 
-您必須檢查所有瀏覽器、移動和案頭。
+您必須檢查所有的瀏覽器，包括行動裝置和桌上型電腦。
 
-## 如何test?{#version-100-test}
+## 如何測試？{#version-100-test}
 
-您可以配置瀏覽器以立即將版本報告為100，然後報告並更正您遇到的任何問題。
+您可以設定瀏覽器立即將版本報告為100，然後報告並更正您遇到的任何問題。
 
-使用這些設定，瀏覽器將新用戶代理字串發送到網站，指示瀏覽器為v100。 如果您的Web表單遇到任何問題，應為瀏覽器編輯器建立一個Bug。 請考慮在這些更新廣泛可用之前重建這些Web表單。
+透過這些設定，瀏覽器會將新的使用者代理字串傳送至網站，表示瀏覽器為v100。 如果您遇到任何網路表單問題，應該為瀏覽器編輯器建立錯誤。 請考慮重新建置這些網路表單，這些更新才可廣泛使用。
 
-### TestFirefox 100{#test-firefox-100}
+### 使用Firefox 100進行測試{#test-firefox-100}
 
-要使用Mozilla Firefox 100test網頁，可以通過手動更改用戶代理字串來模擬即將在Web應用上進行的用戶代理更改。
+若要使用Mozilla Firefox 100測試您的網頁，您可以手動變更使用者代理字串，在網頁應用程式上模擬即將發生的使用者代理程式變更。
 
-1. 開啟Firefox，輸入 `about:config` 在地址欄中，然後按Enter鍵。
-1. 搜索 `general.useragent.override`。
-1. 選擇「字串」，然後按一下加號(+)。
+1. 開啟Firefox，輸入 `about:config` ，然後按Enter鍵。
+1. 搜尋 `general.useragent.override`.
+1. 選取「字串」，然後按一下加號(+)。
 
    ![](assets/force-user-agent-firefox.png)
 
-1. 在欄位中輸入以下文本：
+1. 在欄位中輸入下列文字：
 
    ```
    Mozilla/5.0 (Windows NT 10.0; rv:100.0) Gecko/20100101 Firefox/100.0
    ```
 
-1. 按一下藍色複選標籤按鈕以保存設定。
+1. 按一下藍色核取記號按鈕以儲存設定。
 1. 關閉並重新啟動瀏覽器。
 
-要將用戶代理更改回其預設值，只需返回 `about:config` 並搜索 `general.useragent.override` 的子菜單。  出現時，按一下垃圾表徵圖以刪除設定，然後重新啟動瀏覽器。
+若要將您的使用者代理程式變回其預設值，只需返回 `about:config` 並搜尋 `general.useragent.override` 重新設定。  出現時，按一下垃圾桶圖示以刪除設定，然後重新啟動瀏覽器。
 
-### 帶Chrome 100的test{#test-chrome-100}
+### 使用Chrome 100進行測試{#test-chrome-100}
 
-要在您自己的Web應用上testGoogleChrome 100用戶代理，可以使用以下步驟啟用此test:
+若要在您自己的網頁應用程式上測試Google Chrome 100使用者代理程式，您可以使用下列步驟來啟用此測試：
 
-1. 開啟Chrome，輸入 `chrome://flags` 在地址欄中，然後按Enter鍵。
-1. 搜索 `Force major version to 100 in User-Agent` ，並按如下所示啟用它。
+1. 開啟Chrome，輸入 `chrome://flags` ，然後按Enter鍵。
+1. 搜尋 `Force major version to 100 in User-Agent` ，並啟用它，如下所示。
 
    ![](assets/force-user-agent-chrome.png)
 
 1. 重新啟動瀏覽器。
-1. 關閉 `chrome://flags` 頁籤。
+1. 關閉 `chrome://flags` 標籤。
 
-要將用戶代理更改回其預設值，只需按照此過程操作，並將標誌的設定更改為 `Default` 然後重新啟動瀏覽器。
+若要將使用者代理程式變回其預設值，只需依照此程式並將標幟的設定變更為 `Default` 並重新啟動瀏覽器。
 
 
-### Test與MicrosoftEdge 100{#test-ms-edge-100}
+### 使用Microsoft Edge 100進行測試{#test-ms-edge-100}
 
-從v97開始，站點所有者可以通過啟用實驗標誌來模擬此版本  `#force-major-version-to-100` 在 `edge://flags`。
+從v97開始，網站擁有者可以啟用實驗旗標來模擬此版本  `#force-major-version-to-100` 在 `edge://flags`.
 
-1. 開啟Microsoft邊，輸入 `edge://flags` 在地址欄中，然後按Enter鍵。
-1. 搜索 `force-major-version-to-100` ，並啟用它，如下所示。
+1. 開啟Microsoft Edge，輸入 `edge://flags` ，然後按Enter鍵。
+1. 搜尋 `force-major-version-to-100` 欄位，並將其啟用，如下所示。
 
    ![](assets/force-user-agent-edge.png)
 
 1. 重新啟動瀏覽器。
-1. 關閉 `edge://flags` 頁籤。
+1. 關閉 `edge://flags` 標籤。
 
-要將用戶代理更改回其預設值，只需按照此過程操作，並將標誌的設定更改為 `Default` 然後重新啟動瀏覽器。
+若要將使用者代理程式變回其預設值，只需依照此程式並將標幟的設定變更為 `Default` 並重新啟動瀏覽器。

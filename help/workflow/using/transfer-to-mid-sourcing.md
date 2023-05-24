@@ -16,7 +16,7 @@ ht-degree: 9%
 
 
 
-以下詳細說明的工作流程會與 **轉移至中間來源** 模組。 有關此模組的詳細資訊，請參閱 [Campaign Classicv7安裝指南](../../installation/using/mid-sourcing-deployment.md).
+以下詳述的工作流程會隨 **轉移至中間來源** 模組（預設）。 如需此模組的詳細資訊，請參閱 [Campaign Classic v7安裝指南](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -26,14 +26,14 @@ ht-degree: 9%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">中間來源（交貨計數器）</span> <br /> </td> 
+   <td> <span class="uicontrol">中間來源（傳遞計數器）</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingDlv</span> <br /> </td> 
-   <td> <p>此工作流程會收集中間來源伺服器上傳送的計數資訊。 計數資訊包括一般傳送指標，例如傳送的傳送數量等。</p> <p>不包含開啟等追蹤資訊。</p> <p>預設會每十分鐘觸發一次。</p> </td> 
+   <td> <p>此工作流程會收集中間來源伺服器上傳送的計數資訊。 計數資訊包括一般傳遞指標，例如已傳送的傳遞數量等。</p> <p>未包含開啟之類的追蹤資訊。</p> <p>預設會每十分鐘觸發一次。</p> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">中間來源（傳送記錄檔）</span> <br /> </td> 
+   <td> <span class="uicontrol">中間來源（傳遞記錄）</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> 此工作流程會收集中間來源伺服器上的傳送記錄。 預設會每小時觸發一次。<br /> </td> 
+   <td> 此工作流程會在中間來源伺服器上收集傳遞記錄。 預設會每小時觸發一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

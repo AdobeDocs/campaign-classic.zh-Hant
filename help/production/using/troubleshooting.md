@@ -18,22 +18,22 @@ ht-degree: 18%
 
 
 
-本節包含與Adobe Campaign一般生產問題相關的疑難排解程式，例如傳送和工作流程執行、監控、資料庫維護、連線等。
+本節包含與Adobe Campaign一般生產問題（例如傳送和工作流程執行、監控、資料庫維護、連線等）相關的疑難排解程式。
 
 ## 常見及一般問題 {#common-and-general-issues}
 
-* 此 [頁面](../../production/using/modules-and-frequent-issues.md) 會呈現列出模組最常發生的問題。
-* 此 [頁面](../../production/using/workflow-execution.md) 列出在遇到工作流程執行問題時應遵循的常見疑難排解程式。
-* 此 [頁面](../../production/using/lost-password.md) 詳細說明如何更改或恢復丟失的密碼。
+* 此 [頁面](../../production/using/modules-and-frequent-issues.md) 顯示列出之模組最常遇到的問題。
+* 此 [頁面](../../production/using/workflow-execution.md) 列出遇到工作流程執行問題時應遵循的常見疑難排解程式。
+* 此 [頁面](../../production/using/lost-password.md) 詳細說明如何變更或復原遺失的密碼。
 * 此 [頁面](../../production/using/console-update.md) 詳細說明如果您停用對應的選項，如何重新啟用主控台更新請求。
 
 ## 傳遞疑難排解 {#delivery-troubleshooting}
 
-發生傳遞問題時，可執行特定動作：
+傳送時發生問題時，可執行特定動作：
 * [傳遞能力問題](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [影像顯示問題](../../production/using/image-display-issues.md)
 * [影像遺失](../../production/using/images-missing.md)
-* [臨時檔案問題](../../production/using/temporary-files.md) (*僅內部部署托管模型*)
+* [暫存檔問題](../../production/using/temporary-files.md) (*僅限內部部署託管模型*)
 
 **相關主題**：
 
@@ -41,28 +41,28 @@ ht-degree: 18%
 
 ## 使用記錄檔 {#working-with-logs}
 
-以下提供一些秘訣，以協助您改善使用記錄檔的體驗：
+以下提供一些秘訣，以協助您改善記錄檔使用體驗：
 
 * [記錄檔精確度](../../production/using/log-precision.md)
 * [追蹤記錄問題](../../production/using/tracking-logs-issues.md)
 
 ## 資料庫問題 {#database-issues}
 
-閱讀下列章節，了解如何解決效能問題：
+閱讀下列章節，瞭解如何解決效能問題：
 
 * [資料庫效能](../../production/using/database-performances.md)
 * [Oracle 資料庫的編碼](../../production/using/encoding-of-the-oracle-database.md)
 
 ## 連線改善 {#connection-improvements}
 
-如果您遇到連線問題，以下提供一些修正方法：
+如果您遇到連線問題，以下提供一些修正問題的方法：
 
 * [無法連線](../../production/using/failure-to-connect.md)
 * [連線閾值](../../production/using/connection-thresholds.md)
 
 ## 技術疑難排解 {#technical-troubleshooting}
 
-請前往下方各節，閱讀更多具體問題：
+請前往以下章節，閱讀更多特定問題：
 
 * [Linux 中的堆疊追蹤](../../production/using/stack-trace-in-linux.md)
 * [JSP 行為](../../production/using/jsp-behavior.md)

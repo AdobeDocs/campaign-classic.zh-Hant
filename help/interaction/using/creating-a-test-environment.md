@@ -18,7 +18,7 @@ ht-degree: 10%
 
 
 
-若要建立測試環境（沙箱模式），請套用下列步驟：
+若要建立測試環境（沙箱模式），請套用以下步驟：
 
 >[!IMPORTANT]
 >
@@ -29,11 +29,11 @@ ht-degree: 10%
 
    ![](assets/offer_env_creation_001.png)
 
-1. 接下來，轉至您剛建立的資料夾，並新增 **[!UICONTROL Offer environment]** 使用右鍵功能表。
+1. 接下來，前往您剛才建立的資料夾並新增 **[!UICONTROL Offer environment]** 使用滑鼠右鍵選單。
 
    ![](assets/offer_env_creation_001bis.png)
 
-1. 應用相同的進程以建立環境子資料夾和元素。
-1. 完成測試且您想要在生產中使用環境後，請複製設計環境中的選件和空間。 (按一下滑鼠右鍵> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** )。
+1. 套用相同的程式來建立環境子資料夾和元素。
+1. 測試完成後，如果您想要在生產環境中使用環境，請在設計環境中複製選件和空間。 (按一下滑鼠右鍵> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** )。
 
    ![](assets/migration_interaction_5.png)

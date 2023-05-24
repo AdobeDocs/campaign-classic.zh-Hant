@@ -1,66 +1,66 @@
 ---
 product: campaign
-title: 架構元素和屬性 — 聯接元素
-description: 聯接元素
+title: 結構描述元素和屬性 — 連線元素
+description: 連線元素
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 聯接元素 {#join--element}
+# 連線元素 {#join--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## 內容模型 {#content-model-7}
 
-聯接：==空
+join：==EMPTY
 
 ## 屬性 {#attributes-7}
 
-* @dstFilterExpr（字串）
-* @xpath-dst（字串）
-* @xpath-src（字串）
+* @dstFilterExpr （字串）
+* @xpath-dst （字串）
+* @xpath-src （字串）
 
-## 父母 {#parents-7}
+## 父項 {#parents-7}
 
 `<element>`
 
-## 兒童 {#children-7}
+## 子系 {#children-7}
 
 無
 
 ## 說明 {#description-7}
 
-用於定義在SQL表之間建立聯接的欄位。
+可讓您定義在SQL表格之間建立聯結的欄位。
 
-## 使用和使用上下文 {#use-and-context-of-use-5}
+## 使用與使用內容 {#use-and-context-of-use-5}
 
-A `<join>`  僅當父項  `<element>`  元素為「link」類型。 這意味著父元素必須聲明「@type=link」屬性。
+A `<join>`  只有當父項時，才能使用元素  `<element>`  元素為&#39;link&#39;型別。 這表示父元素必須宣告「@type=link」屬性。
 
-無需在 `<join>`  的子菜單。 需要在父級中指定  `<element>`。
+不需要在 `<join>`  元素。 它們需要在父項中指定  `<element>`.
 
-按照約定，在架構的末尾定義連結。
+依照慣例，連結會在結構描述結尾定義。
 
-如果 `<join>` 定義連結類型元素時未指定元素，連結將自動置於兩個表的主鍵上。
+如果 `<join>` 定義連結型別元素時未指定元素，連結會自動置於兩個表格的主索引鍵上。
 
 ## 屬性說明 {#attribute-description-7}
 
-* **dstFilterExpr（字串）**:此屬性允許您限制遠程表中合格值的數量。
-* **xpath-dst（字串）**:此屬性接收Xpath(遠程表的@name屬性)。
-* **xpath-src（字串）**:此屬性接收Xpath(當前架構中的@name屬性)。
+* **dstFilterExpr （字串）**：此屬性可讓您限制遠端表格中符合條件的值數目。
+* **xpath-dst （字串）**：此屬性會接收Xpath (遠端表格@name屬性)。
+* **xpath-src （字串）**：此屬性會接收Xpath (目前結構描述中的@name屬性)。
 
 ## 範例 {#examples-6}
 
-當前表的「email」欄位與遠程表的「@compagny-id」欄位之間的連結：
+目前表格的「email」欄位與遠端表格的「@compagny-id」欄位之間的連結：
 
 ```
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
 ```
 
-根據「@country」欄位的內容篩選指向「cus:Country」表的連結，該欄位必須包含「EN」值：
+根據「@country」欄位（必須包含「EN」值）的內容，篩選指向「cus：Country」表格的連結：
 
 ```
 <element name="StockEN" type="link" label="MyLink" target="cus:Stock">

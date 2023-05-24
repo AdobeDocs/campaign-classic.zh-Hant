@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 網站分析
-description: 深入了解網頁分析套件
+description: 進一步瞭解網站分析套件
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Analytics Integration
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 
 
-以下詳細說明的工作流程會與 **網站分析連接器** 模組。 有關此模組的詳細資訊，請參閱 [節](../../platform/using/adobe-analytics-connector.md).
+以下詳述的工作流程會隨 **網站分析聯結器** 模組（預設）。 如需此模組的詳細資訊，請參閱此 [區段](../../platform/using/adobe-analytics-connector.md).
 
 <table> 
  <tbody> 
@@ -28,22 +28,22 @@ ht-degree: 4%
   <tr> 
    <td> <span class="uicontrol">傳送指標和行銷活動屬性</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> 此工作流程可讓您透過Adobe Campaign® Analytics連接器，將電子郵件促銷活動指標從Adobe傳送至Adobe Experience Cloud套裝。 有關指標如下： <strong>已傳送</strong> （已傳送）, <strong>開啟總數</strong> (iTotalRecipientOpen), <strong>點按的收件者總數</strong> (iTotalRecipientClick), <strong>錯誤</strong> (iError), <strong>退出</strong> （選擇退出）(iOptOut)。<br /> </td> 
+   <td> 此工作流程可讓您透過Adobe® Analytics聯結器，從Adobe Campaign傳送電子郵件行銷活動指標至Adobe Experience Cloud套裝。 相關指標如下： <strong>已傳送</strong> （已傳送）， <strong>開啟總次數</strong> (iTotalRecipientOpen)， <strong>已點按的收件者總數</strong> (iTotalRecipientClick)， <strong>錯誤</strong> (iError)， <strong>選擇退出</strong> （選擇退出） (iOptOut)。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">轉換的聯繫人的標識</span> <br /> </td> 
+   <td> <span class="uicontrol">已轉換連絡人的識別</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> 此工作流程會為在再行銷活動後完成購買的網站訪客建立索引。 此工作流程所復原的資料可在 <span class="uicontrol">再行銷效率報表</span> (請參閱 <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign"> 頁面</a>)。 <br /> </td> 
+   <td> 此工作流程會索引在再次行銷活動後完成購買的網站訪客。 透過此工作流程復原的資料可在以下位置存取： <span class="uicontrol">再行銷效率報表</span> (請參閱此 <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign"> 頁面</a>)。 <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">事件清除</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsPurgeWebEvents</span> <br /> </td> 
-   <td> 此工作流程可讓您根據 <span class="uicontrol">壽命</span> 欄位。 <br /> </td> 
+   <td> 此工作流程可讓您根據中設定的期間，從資料庫欄位中刪除每個事件 <span class="uicontrol">有效期限</span> 欄位。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">恢復Web事件</span> <br /> </td> 
+   <td> <span class="uicontrol">復原Web事件</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsGetWebEvents</span> <br /> </td> 
-   <td> 此工作流程會每小時下載指定網站上網際網路使用者行為的區段，並將其放入Adobe Campaign資料庫並啟動再行銷工作流程。 <br /> </td> 
+   <td> 每小時，此工作流程都會下載指定網站上網際網路使用者行為的區段，將其放入Adobe Campaign資料庫並啟動再行銷工作流程。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>

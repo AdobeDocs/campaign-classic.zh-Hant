@@ -17,31 +17,31 @@ ht-degree: 1%
 
 
 
-驗證傳遞時的全域概念，在 [本節](steps-validating-the-delivery.md).
+驗證傳遞時的全域概念如下所述： [本節](steps-validating-the-delivery.md).
 
-在傳遞分析期間生成直接郵件傳遞的輸出檔案。 檔案的內容取決於選取的輸出欄(請參閱 [擷取檔案](defining-the-direct-mail-content.md#extraction-file))。
+直接郵件傳遞的輸出檔案會在傳遞分析期間產生。 檔案的內容取決於選取的輸出欄(請參閱 [擷取檔案](defining-the-direct-mail-content.md#extraction-file))。
 
 >[!NOTE]
 >
->分析階段於 [分析傳送](steps-validating-the-delivery.md#analyzing-the-delivery).
+>有關分析階段的詳情，請參閱 [分析傳遞](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-在分析階段期間，會產生檔案，但不會更新與收件者（即傳送記錄檔）相關的資訊。 因此，您可以取消此作業，而不會有任何風險。
+在分析階段會產生檔案，但未更新收件者的相關資訊（即傳遞記錄）。 因此，您可以取消此工作而不執行任何風險。
 
-在按一下前，檢查分析結果和輸出檔案的內容 **[!UICONTROL Confirm delivery]**. 確認訊息可讓您啟動傳送。
+在按一下之前，請檢查分析結果和輸出檔案的內容 **[!UICONTROL Confirm delivery]**. 確認訊息可讓您啟動傳送。
 
-傳送確認會開始指定檔案中的資料擷取。
+傳送確認會開始擷取指定檔案中的資料。
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-然後，您可以關閉精靈，並透過 **[!UICONTROL Delivery]** 標籤，可透過傳送詳細資料存取。
+然後，您可以關閉精靈，並透過檢視傳遞記錄 **[!UICONTROL Delivery]** 索引標籤，可透過傳送詳細資料存取。
 
-您可以從 **[!UICONTROL Analysis]** 標籤。
+您可以從以下位置設定傳送記錄擷取模式： **[!UICONTROL Analysis]** 傳遞屬性的索引標籤。
 
 有兩種模式：
 
-* **[!UICONTROL Messages are considered sent after validation]** （預設模式）:在此函式模式中，當運算子確認傳送時，會更新所有廣播（其狀態會從「擱置中傳送」傳遞至「已傳送」），且傳送會自動設為 **[!UICONTROL Finished]**.
-* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** :此模式可讓您透過服務提供者傳送的外部檔案更新broadlogs。 在此情況下，需要使用處理此資訊的工作流程來更新broadlog狀態。
+* **[!UICONTROL Messages are considered sent after validation]** （預設模式）：在此函式模式中，當操作員確認傳送（其狀態從「擱置的傳遞」傳遞到「已傳送」）且傳送自動設定為時，會更新所有broadlog **[!UICONTROL Finished]**.
+* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** ：此模式可讓您透過服務提供者傳送的外部檔案更新broadlog。 在這種情況下，需要使用處理此資訊的工作流程來更新broadlog狀態。
 
    >[!NOTE]
    >
-   >在此情況下，傳送的狀態也需要變更為 **[!UICONTROL Finished]** 更新broadlog時由使用者指定。
+   >在此情況下，傳遞的狀態也需要變更為 **[!UICONTROL Finished]** 一更新broadlog後立即由使用者執行。

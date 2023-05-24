@@ -18,36 +18,36 @@ ht-degree: 4%
 
 
 
-以下命令行需要訪問應用程式伺服器的能力。 對於由Adobe托管的部署，這些命令只能由Adobe執行。
+下列命令列需要存取應用程式伺服器的能力。 對於由Adobe託管的部署，這些命令只能由Adobe執行。
 
-## 建立例項 {#creating-an-instance}
+## 建立執行個體 {#creating-an-instance}
 
-可使用命令列使用語法執行例項建立：
+您可以使用命令列來建立執行個體，語法如下：
 
 ```
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(其中 **eng** 和 **fra** 是 `[lang]` 參數)
+(其中 **英文** 和 **週五** 為的可能值 `[lang]` parameter)
 
-命令 **nlserver config -addinstance:instance1/demo&#42;/eng** 可讓您建立名為 **instance1** 使用DNS掩碼演示的英文版&#42;.
+命令 **nlserver config -addinstance：instance1/demo&#42;/eng** 可讓您建立名為的執行個體 **instance1** DNS遮罩示範的英文&#42;.
 
-## 聲明資料庫 {#declaring-a-database}
+## 宣告資料庫 {#declaring-a-database}
 
-您可以使用以下語法，將現有資料庫與命令行中的實例關聯：
+您可以使用下列語法，從命令列將現有資料庫與執行處理建立關聯：
 
 ```
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-下列值適用於 **`[rdbms]`** 參數：
+下列值適用於 **`[rdbms]`** 引數：
 
-* **postgresql**:對於PostgreSQL,
-* **oracle**:oracle,
-* **mss**:針對Microsoft SQL Server,
-* **DB2**:DB2引擎。
+* **postgresql**：對於PostgreSQL，
+* **oracle**：若為Oracle，
+* **mssql**：對於Microsoft SQL Server，
+* **DB2**：適用於DB2引擎。
 
-以下命令將配置 **示範** SQL類型伺服器的實例稱為 **base6**，連結至 **行銷活動** 帳戶及其 **密碼** 在 **dbsrv** 伺服器：
+以下指令會設定 **示範** 具有SQL型別伺服器的執行個體，稱為 **base6**，連結至 **行銷活動** 帳戶及其 **密碼** 於 **dbsrv** 伺服器：
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

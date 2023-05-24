@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 開始使用同盟資料存取
-description: 了解如何在外部資料庫中存取和處理資料
+description: 瞭解如何存取及處理外部資料庫中的資料
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Federated Data Access
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
@@ -16,18 +16,18 @@ ht-degree: 0%
 
 
 
-Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您不需變更Adobe Campaign資料的結構，即可存取外部資料。
+Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您無需變更Adobe Campaign資料的結構即可存取外部資料。
 
 ## 必要條件 {#operating-principle}
 
-FDA選項可讓您擴充協力廠商資料庫中的資料模型。 它將自動檢測目標表的結構，並使用來自SQL源的資料。
+FDA選項可讓您在協力廠商資料庫中擴充資料模型。 它會自動偵測目標表格的結構，並使用來自SQL來源的資料。
 
-若要使用此功能，下列為必要條件：
+為了使用此功能，先決條件列示如下：
 
-* **設定**:相容外部資料庫的清單取決於您的 [托管模式](../../installation/using/hosting-models.md).
-* **外部資料庫版本**:您需要有與Adobe Campaign FDA模組相容的外部資料庫。
+* **設定**：相容的外部資料庫清單取決於 [託管模型](../../installation/using/hosting-models.md).
+* **外部資料庫版本**：您需要有與Adobe Campaign FDA模組相容的外部資料庫。
 
-   Campaign會詳細說明每個托管模型的資料庫系統和相容版本清單 [相容性矩陣](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+   Campaign中會詳細說明每個託管模型的資料庫系統和相容版本清單 [相容性矩陣](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
 
-* **權限**:使用者也必須 [必要權限](../../installation/using/remote-database-access-rights.md) 在Adobe Campaign和外部資料庫中。
+* **許可權**：使用者也必須擁有 [必要許可權](../../installation/using/remote-database-access-rights.md) 在Adobe Campaign和外部資料庫上。
 

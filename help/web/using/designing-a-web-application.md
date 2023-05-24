@@ -17,15 +17,15 @@ ht-degree: 4%
 
 
 
-Web應用程式是根據與 [網路表單](about-web-forms.md).
+建立和管理網頁應用程式的原則與相同 [網路表單](about-web-forms.md).
 
 >[!CAUTION]
 >
->使用 **[!UICONTROL Preview]** 頁簽，以檢查web應用程式設計期間的錯誤。 請注意，用來預覽Web應用程式的設定檔測試必須位於包含 **[!UICONTROL Access rights]** 針對 **[!UICONTROL Web application agent]** 運算元。 </br>在發佈Web應用程式之前，不向最終用戶公開更改。
+>使用 **[!UICONTROL Preview]** 子標籤以檢查網頁應用程式設計期間的錯誤。 請注意，用來預覽Web應用程式的設定檔測試必須位於具有的資料夾中 **[!UICONTROL Access rights]** 的 **[!UICONTROL Web application agent]** 運運算元。 </br>在發佈Web應用程式之前，變更不會向一般使用者公開。
 
-## 在Web應用程式中插入圖表 {#inserting-charts-in-a-web-application}
+## 在網頁應用程式中插入圖表 {#inserting-charts-in-a-web-application}
 
-可以在Web應用程式中包括圖表。 要執行此操作，請使用任務欄中的圖表下拉清單選擇要插入的圖表類型。
+您可以在Web應用程式中包含圖表。 若要這麼做，請使用工作列中的圖表下拉式清單，選取要插入的圖表型別。
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
@@ -33,34 +33,34 @@ Web應用程式是根據與 [網路表單](about-web-forms.md).
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
-## 在Web應用程式中插入表 {#inserting-tables-in-a-web-application}
+## 在Web應用程式中插入表格 {#inserting-tables-in-a-web-application}
 
-要添加表，請使用任務欄中的表的下拉清單來選擇要使用的表的類型。
+若要新增表格，請使用工作列中的表格下拉式清單，選取要使用的表格型別。
 
 ![](assets/s_ncs_admin_webapps_bar_table.png)
 
-您也可以在下拉式功能表中選取表格類型。
+您也可以在下拉式選單中選取表格型別。
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
-## 概述類型的Web應用程式 {#overview-type-web-applications}
+## 概觀型別的Web應用程式 {#overview-type-web-applications}
 
-Adobe Campaign介面使用許多網頁應用程式來存取、管理收件者、傳遞、行銷活動、股票等項目，並與之互動。
+Adobe Campaign介面使用許多網頁應用程式來存取、管理收件者、傳送、行銷活動、庫存等，並與之互動。
 
-在介面中，控制面板只會顯示一個頁面。
+在介面中，這些量度會以儀表板形式顯示，且只會有一個頁面。
 
-現成可用的Web應用程式儲存在 **[!UICONTROL Administration > Configuration > Web applications]** 節點。
+現成可用的Web應用程式會儲存在 **[!UICONTROL Administration > Configuration > Web applications]** 節點。
 
-## 編輯表單類型Web應用程式 {#edit-forms-type-web-applications}
+## 編輯表單型別Web應用程式 {#edit-forms-type-web-applications}
 
-編輯外聯網的表單Web應用程式的特點是：
+為外部網路編輯表單Web應用程式的特徵如下：
 
-* 預載盒
+* 預先載入方塊
 
-   在大多數情況下，必須預先載入要顯示的資料。 因為會識別存取這些表單的使用者（透過存取控制），預先載入不一定會加密。
+   在大多數情況下，必須預先載入要顯示的資料。 由於系統會（透過存取控制）識別存取這些表單的使用者，因此預先載入不一定加密。
 
 * 儲存方塊
 * 新增頁面
 
-   雖然「概述」類型的Web應用程式都有單頁，但編輯表單可以根據特定條件（測試、選擇、連接運算子的配置檔案等）提供一系列頁面。
+   雖然「概觀」型別的Web應用程式都有單一頁面，但編輯表單可以根據特定條件（測試、選擇、連線運運算元的設定檔等）提供一系列頁面。
 

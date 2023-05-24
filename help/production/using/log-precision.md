@@ -19,29 +19,29 @@ ht-degree: 1%
 
 
 
-您可以將此過程應用於所有Adobe Campaign模組，以提高日誌精度。
+您可以將此程式套用至所有Adobe Campaign模組，以提高記錄精確度。
 
-它涉及使用更高級別的日誌重新啟動進程。
+這涉及使用更高級別的記錄來重新啟動程式。
 
 >[!IMPORTANT]
 >
->此過程取消此模組上正在進行的服務。
+>此程式會取消此模組上正在進行的服務。
 
-Adobe Campaign可以使用兩級日誌：
+Adobe Campaign可以使用兩個記錄層級進行操作：
 
-1. 的 **詳細** 模式是標準級別之後的第一個級別。 以下命令將激活它：
+1. 此 **詳細資訊** 模式是標準層級之後的第一個層級。 下列指令會啟動它：
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
    ```
 
-   檢查錯誤是否確實發生，然後以正常方式重新啟動進程：
+   檢查錯誤是否確實發生，然後以正常方式重新啟動程式：
 
    ```
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. 的 **跟蹤篩選器** 模式，用於保存最大數量的日誌。 它由以下命令激活：
+1. 此 **TraceFilter** 模式，可讓您儲存最多記錄數。 它透過下列命令啟動：
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -49,11 +49,11 @@ Adobe Campaign可以使用兩級日誌：
 
    >[!NOTE]
    >
-   >如果您使用 **跟蹤過濾器：&#42;**，所有日誌類型都已激活：ncm, rdr nms, jst，計時， wdbc, ldap, soap, xtkquery，會話， xtkwriter，網路， pop3, inmail\
-   >最有用的日誌類型有： **wdbc** （顯示所有SQL查詢）, **肥皂** （顯示所有SOAP調用）, **LDAP** （在驗證後顯示所有LDAP查詢）, **xtkquery** （顯示所有querydef的清單）。\
-   >您可以單獨使用它們(**跟蹤過濾器：soap,wdbc** 例如)。 您還可以全部激活它們，並選擇排除某些其他項： **-tracefilter:&#42;,soap**
+   >如果您使用 **tracefilter：&#42;**，所有記錄型別都會啟動：ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、網路、pop3、inmail\
+   >最有用的記錄型別包括： **wdbc** （顯示所有SQL查詢）、 **soap** （顯示所有SOAP呼叫）、 **ldap** （在驗證後顯示所有LDAP查詢）， **xtkquery** （顯示所有querydef清單）。\
+   >您可以個別使用(**tracefilter：soap，wdbc** 例如)。 您也可以全部啟動它們，並選擇排除某些其他專案： **-tracefilter：&#42;，！soap**
 
-   檢查錯誤是否確實發生，然後以正常方式重新啟動進程：
+   檢查錯誤是否確實發生，然後以正常方式重新啟動程式：
 
    ```
    nlserver restart <MODULE_NAME> -noconsole
@@ -61,23 +61,23 @@ Adobe Campaign可以使用兩級日誌：
 
 >[!IMPORTANT]
 >
->這些命令的日誌儲存在模組的日誌檔案中。
+>這些命令的記錄會儲存在模組的記錄檔中。
 
-下面是Web模組的一個示例。 其它模組如上所示。
+以下是Web模組專屬的範例。 其他模組會如上所述運作。
 
-在發送此命令之前，請檢查是否不會影響任何正在進行的作業：
+在傳送此命令之前，請檢查進行中的工作是否不受影響：
 
 ```
 nlserver pdump -who
 ```
 
-接下來，關閉並重新啟動 **跟蹤篩選器** 模式：
+接下來，關閉並重新啟動模組，在 **TraceFilter** 模式：
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
 ```
 
-另一個例子：
+另一個範例：
 
 ```
 nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -tracefilter:* -tracefile:mta_debug@<INSTANCE_NAME>
@@ -85,17 +85,17 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
->的 **特拉塞菲萊** 模式可保存日誌。 在上面的示例中，日誌保存在 **var/`<instance-name>`/mta_debug.log** 和 **var/default/web_debug.log** 的子菜單。
+>此 **追蹤檔** 模式可讓您儲存記錄。 在上述範例中，記錄檔會儲存在 **var/`<instance-name>`/mta_debug.log** 和 **var/default/web_debug.log** 檔案。
 
 >[!IMPORTANT]
 >
->在Windows中，不要添加LD_PRELOAD選項。 以下命令已滿足：\
->nlserver web -tomcat -verbose -tracefilter:&#42;
+>在Windows中，請勿新增LD_PRELOAD選項。 以下指令就足夠了：\
+>nlserver web -tomcat -verbose -tracefilter：&#42;
 
-檢查問題是否再次出現，然後重新啟動模組：
+檢查問題是否再次發生，然後重新啟動模組：
 
 ```
 nlserver restart web -tomcat -noconsole
 ```
 
-檔案中提供了所有資訊 **/usr/local/neolane/nl6/var/default/log/web.log**。
+所有資訊都可在檔案中使用 **/usr/local/neolane/nl6/var/default/log/web.log**.

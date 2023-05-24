@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0f831817fc2e6b7b1d95a71f4ea08ec104268d11
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2531'
+ht-degree: 100%
 
 ---
 

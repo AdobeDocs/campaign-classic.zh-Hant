@@ -6,7 +6,7 @@ exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,58 +16,58 @@ ht-degree: 0%
 
 ## 內容模型 {#content-model-3}
 
-dbindex:=鍵欄位
+dbindex：==keyfield
 
 ## 屬性 {#attributes-3}
 
-* @_operation（字串）
-* @applicableIf（字串）
-* @label（字串）
-* @name(MNTOKEN)
-* @unique（布爾值）
+* @_operation （字串）
+* @applicableIf （字串）
+* @label （字串）
+* @name (MNTOKEN)
+* @unique （布林值）
 
-## 父母 {#parents-3}
+## 父項 {#parents-3}
 
 `<element>`
 
-## 兒童 {#children-3}
+## 子系 {#children-3}
 
 `<keyfield>`
 
 ## 說明 {#description-3}
 
-使用此元素可以定義連結到表的索引。
+此元素可讓您定義連結至表格的索引。
 
-## 使用和使用上下文 {#use-and-context-of-use-3}
+## 使用與使用內容 {#use-and-context-of-use-3}
 
-可以定義多個索引。 一個索引可以引用表的一個或多個欄位。 索引聲明通常遵循主架構元素的定義。
+可以定義多個索引。 一個索引可以參照表格的一或多個欄位。 索引宣告通常遵循主要結構描述元素的定義。
 
-訂單 `<keyfield>` 在 `<dbindex>` 很重要。 第一個 `<keyfield>` 必須是查詢主要基於的索引標準。
+的順序 `<keyfield>` 中定義的元素 `<dbindex>` 非常重要。 第一個 `<keyfield>` 必須是查詢主要依據的索引標準。
 
-資料庫中索引的名稱是通過將表名稱與索引名稱連接來計算的。 例如：索引建立查詢期間索引欄位的表名「Sample」、命名空間「Cus」、索引名「MyIndex」 — >名稱：&quot;CusSample_myIndex&quot;。
+資料庫中索引的名稱是透過串連資料表的名稱和索引名稱來計算的。 例如：資料表名稱&quot;Sample&quot;、名稱空間&quot;Cus&quot;、索引名稱&quot;MyIndex&quot;->建立索引時索引欄位的名稱，進行查詢：&quot;CusSample_myIndex&quot;。
 
 ## 屬性說明 {#attribute-description-3}
 
-* **操作（字串）**:定義在資料庫中寫入的類型。
+* **操作（字串）(_O)**：定義資料庫中的寫入型別。
 
-   此屬性主要用於擴展開箱模式。
+   此屬性主要用於擴充現成可用的結構描述。
 
-   可訪問的值為：
+   可存取的值包括：
 
-   * &quot;無&quot;:單獨和解。 這意味著，Adobe Campaign將恢復元素，而不更新該元素，如果該元素不存在，則不生成錯誤。
-   * &quot;insertOrUpdate&quot;:用插入更新。 這意味著Adobe Campaign將更新元素或在元素不存在時建立它。
-   * &quot;插入&quot;:插入。 這意味著Adobe Campaign將插入元素，而不檢查它是否存在。
-   * &quot;更新&quot;:更新。 這意味著Adobe Campaign將更新元素，或在元素不存在時生成錯誤。
-   * &quot;刪除&quot;:刪除。 這意味著Adobe Campaign將恢復和刪除元素。
+   * &quot;none&quot;：單獨和解。 這表示Adobe Campaign將復原元素，而不會更新元素，如果元素不存在則產生錯誤。
+   * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign會更新元素，或是在元素不存在時建立元素。
+   * &quot;insert&quot;： insertion. 這表示Adobe Campaign會插入元素，而不檢查元素是否存在。
+   * &quot;update&quot;：更新。 這表示Adobe Campaign會更新元素，或是在元素不存在時產生錯誤。
+   * &quot;delete&quot;：刪除。 這表示Adobe Campaign將會復原和刪除元素。
 
-* **appliatedIf（字串）**:用於考慮索引的條件 — 接收XTK表達式。
-* **標籤（字串）**:索引標籤。
-* **名稱(MNTOKEN)**:唯一索引名。
-* **唯一（布爾值）**:如果激活此選項(@unique=&quot;true&quot;)，則屬性將確保索引在其整個欄位中的唯一性。
+* **applicableIf （字串）**：將索引列入考量的條件 — 接收XTK運算式。
+* **標籤（字串）**：索引標籤。
+* **名稱(MNTOKEN)**：唯一索引名稱。
+* **唯一（布林值）**：如果已啟動此選項(@unique=&quot;true&quot;)，則屬性會保證其欄位中索引的唯一性。
 
 ## 範例 {#examples-3}
 
-在「id」欄位上建立索引。 (「@unique」屬性 `<dbindex>` 元素觸發器在資料庫（查詢）中建立索引時添加「UNIQUE」 SQL關鍵字。
+在「id」欄位上建立索引。 (上的「@unique」屬性 `<dbindex>` 在資料庫中建立索引時，元素會觸發新增「唯一」SQL關鍵字（查詢）。
 
 ```
 <element label="Sample" name="Sample">

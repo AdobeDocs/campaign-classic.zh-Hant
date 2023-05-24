@@ -14,24 +14,24 @@ ht-degree: 5%
 
 
 
-此 **模擬** 模組可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的選件之分佈。
+此 **模擬** 模組可讓您在將您的主張傳送給收件者之前，測試屬於類別或環境的選件分佈。
 
-模擬會考量先前套用至優惠方案的內容和適用性規則(請參閱 [優惠方案目錄概觀](../../interaction/using/offer-catalog-overview.md))，及其簡報規則(請參閱 [管理優惠方案簡報](../../interaction/using/managing-offer-presentation.md))。 這可讓您測試和調整優惠方案主張的各種版本，而不實際使用優惠方案或過度/不斷索取目標，因為模擬對目標收件者沒有影響。
+模擬會考量先前套用至優惠方案的前後關聯和適用性規則(請參閱 [優惠方案目錄概觀](../../interaction/using/offer-catalog-overview.md))及其簡報規則(請參閱 [管理優惠方案簡報](../../interaction/using/managing-offer-presentation.md))。 這可讓您測試和調整各種版本的優惠方案主張，而不需實際使用優惠方案或過度/過低請求目標，因為模擬對目標收件者沒有影響。
 
-若要了解如何模擬選件，請閱讀下列步驟。
+若要瞭解如何模擬優惠方案，請閱讀以下步驟。
 
 ![](assets/do-not-localize/how-to-video.png)[您也可以觀看此短片](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 建立模擬的主要步驟 {#main-steps-for-creating-a-simulation}
 
-若要執行選件模擬，請套用下列步驟：
+若要執行優惠方案模擬，請套用下列步驟：
 
-1. 在 **[!UICONTROL Profiles and Targets]** ，按一下 **[!UICONTROL Simulations]** 連結，然後按一下 **[!UICONTROL Create]** 按鈕。
+1. 在 **[!UICONTROL Profiles and Targets]** 索引標籤，按一下 **[!UICONTROL Simulations]** 連結，然後按一下 **[!UICONTROL Create]** 按鈕。
 
    ![](assets/offer_simulation_001.png)
 
-1. 保存並編輯您剛建立的模擬。
-1. 前往 **[!UICONTROL Edit]** 標籤，並指定執行設定。
+1. 儲存並編輯您剛建立的模擬。
+1. 前往 **[!UICONTROL Edit]** 標籤並指定執行設定。
 
    有關詳細資訊，請參閱 [執行設定](../../interaction/using/execution-settings.md).
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >只有在您使用與Campaign的互動時，才可使用執行設定。
+   >只有當您使用「與Campaign互動」時，才可執行設定。
 
 1. 指定模擬範圍。
 
@@ -47,18 +47,18 @@ ht-degree: 5%
 
    ![](assets/offer_simulation_004.png)
 
-1. 新增報表軸以增強 **[!UICONTROL Offer distribution by rank]** 報表（選用）。
+1. 新增報告座標軸以增強 **[!UICONTROL Offer distribution by rank]** 報表（選用）。
 
-   有關詳細資訊，請參閱 [新增報表軸](../../interaction/using/simulation-scope.md#adding-reporting-axes).
+   有關詳細資訊，請參閱 [新增報告軸](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
    ![](assets/offer_simulation_005.png)
 
 1. 按一下 **[!UICONTROL Save]** 以記錄模擬設定。
-1. 透過控制面板啟動模擬。
+1. 透過儀表板開始模擬。
 
    ![](assets/offer_simulation_006.png)
 
-1. 檢查模擬結果並顯示分析報告。
+1. 檢查模擬結果，並顯示分析報告。
 
    有關詳細資訊，請參閱 [模擬追蹤](../../interaction/using/simulation-tracking.md).
 

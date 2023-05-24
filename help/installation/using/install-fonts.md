@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 安裝字型
-description: 了解如何安裝字型
+description: 瞭解如何安裝字型
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 
 
-以下說明如何將新字型安裝至Campaign應用程式伺服器。
+以下說明將新字型安裝至Campaign應用程式伺服器的方式。
 
-新字型可放入 `/usr/local/share/` 資料夾，在MTA處理程式執行的所有容器上。
+新字型可以放入 `/usr/local/share/` MTA流程執行所在的所有容器上的資料夾。

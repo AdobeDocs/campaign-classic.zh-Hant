@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 在您的網站中輸入網頁追蹤標籤
-description: 了解如何在您的網站中插入網頁追蹤標籤
+title: 在您的網站中插入網頁追蹤標籤
+description: 瞭解如何在您的網站中插入網頁追蹤標籤
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ## 簡單方法 {#simple-method}
 
-此方法包括透過插入 **`<img>`** HTML標籤。
+此方法包含透過插入以下內容將HTTP呼叫傳送至重新導向伺服器： **`<img>`** HTML標籤(在您要追蹤的網頁的HTML原始碼中)。
 
 >[!IMPORTANT]
 >
->此方法會使用網頁瀏覽器傳送的Cookie來識別收件者，且不能100%可靠。
+>此方法會使用網頁瀏覽器傳送的Cookie來識別收件者，而且並非100%可靠。
 
 **範例**:
 
@@ -27,19 +27,19 @@ ht-degree: 0%
 <img height='0' width='0' alt='' src='https://localhost/r/12343?tagid=home'
 ```
 
-插入的標籤與重定向伺服器聯繫。
+插入的標籤會與重新導向伺服器接觸。
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-當您在主控台中定義要追蹤的頁面時，可以產生範例網頁追蹤標籤，以複製並貼到網頁的原始碼中。
+定義要在主控台中追蹤的頁面時，可以產生範例網頁追蹤標籤，以複製並貼到網頁的原始程式碼中。
 
-但是，使用TRANSACTION類型標籤時，必須使用JavaScript修改示例標籤，以插入事務資訊（金額、項目數）和擴展架構定義的任何資訊。
+但是，當您使用TRANSACTION型別標籤時，必須使用JavaScript修改範例標籤，以便插入交易資訊（金額、專案數）和擴充功能結構描述定義的任何資訊。
 
-### 標籤的靜態插入 {#static-insertion-of-tags}
+### 靜態插入標籤 {#static-insertion-of-tags}
 
-若要執行靜態標籤插入，只需將主控台產生或手動建構的標籤複製並貼到網頁來源即可。
+若要執行靜態標籤插入，只需複製並貼上主控台產生的標籤或手動建構的標籤到網頁的來源中即可。
 
-**範例**:在顯示表單的頁面上插入網頁追蹤標籤。
+**範例**：在顯示表單的頁面上插入網頁追蹤標籤。
 
 ```
 <html>
@@ -61,7 +61,7 @@ ht-degree: 0%
 </html>
 ```
 
-在確認頁面(「amount.md」)中插入TRANSACTION類型的Web追蹤標籤。
+在確認頁面(「amount.md」)中插入TRANSACTION型別的網頁追蹤標籤。
 
 ```
 <html>
@@ -85,9 +85,9 @@ ht-degree: 0%
 
 ### 動態產生網頁追蹤標籤 {#dynamic-generation-of-web-tracking-tags}
 
-動態產生網頁時，您可以在頁面產生時新增網頁追蹤標籤。
+動態產生網頁時，您可以在產生頁面時新增網頁追蹤標籤。
 
-**範例**:JSP中添加了Web跟蹤。
+**範例**：網頁追蹤已新增至JSP。
 
 ```
 <%@page import="java.util.Random" %>
@@ -122,17 +122,17 @@ ht-degree: 0%
 
 ## 最佳化方法 {#optimum-method-}
 
-如果您希望控制發送到重定向伺服器的資訊，最可靠的方法是使用頁面生成語言自行同步執行HTTP查詢。
+如果您想要控制傳送至重新導向伺服器的資訊，最可靠的方式是使用頁面產生語言自行同步執行HTTP查詢。
 
-您建構的URL必須遵循 [網頁追蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md).
+您建構的URL必須符合中定義的語法規則 [網路追蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->重定向和Web跟蹤使用Cookie，執行同步HTTP調用的Web伺服器必須與重定向伺服器位於同一域中。 各種HTTP交換必須傳達「id」、「uuid」和「uuid230」Cookie。
+>重新導向和網頁追蹤會使用Cookie，執行同步HTTP呼叫的網頁伺服器必須與重新導向伺服器位於相同的網域中。 各種HTTP交換必須傳遞「id」、「uuid」和「uuid230」Cookie。
 
-**範例**:以Java動態產生，收件者使用其帳號進行驗證。
+**範例**：在Java中動態產生，收件者使用其帳號進行驗證。
 
 ```
 [...]

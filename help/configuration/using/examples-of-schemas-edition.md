@@ -14,11 +14,11 @@ ht-degree: 2%
 
 # 方案版本範例{#examples-of-schemas-edition}
 
-## 擴展表 {#extending-a-table}
+## 延伸表格 {#extending-a-table}
 
-若要擴充 **nms:recipient** 方案收件人表，應用以下過程：
+若要擴充 **nms：recipient** 綱要收件者表格，請套用下列程式：
 
-1. 建立擴充功能結構(**cus:extension**)使用下列資料：
+1. 建立擴充功能結構描述(**cus：extension**)使用以下資料：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -39,13 +39,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此範例中，索引欄位(**保真度**), **位置** 元素(已存在於 **nms:recipient** 模式)以枚舉欄位(**區域**)。
+   在此範例中，索引欄位(**逼真度**)中，且 **位置** 元素(已存在於 **nms：recipient** 結構描述)以列舉欄位(**區域**)。
 
    >[!IMPORTANT]
    >
-   >記得新增 **extendedSchema** 屬性，以參考擴充功能結構。
+   >請記得新增 **extendedSchema** 屬性以參考擴充功能綱要。
 
-1. 檢查擴充架構是否為 **nms:recipient** 結構，且存在其他資料：
+1. 檢查擴充結構描述是否為 **nms：recipient** 結構描述並顯示其他資料：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -71,7 +71,7 @@ ht-degree: 2%
    </schema>
    ```
 
-   從資料庫更新嚮導生成的SQL指令碼如下：
+   從資料庫更新精靈產生的SQL指令碼如下：
 
    ```
    ALTER TABLE NmsRecipient ADD iFidelity INTEGER;
@@ -81,11 +81,11 @@ ht-degree: 2%
    CREATE INDEX NmsRecipient_area ON NmsRecipient(sArea);
    ```
 
-## 連結的集合表 {#linked-collection-table}
+## 連結的集合表格 {#linked-collection-table}
 
-本節說明如何建立以基數1-N連結至收件者表格的訂單表。
+本節說明如何建立連結至具有基數1-N之收件者表格的訂單表格。
 
-訂單表源架構：
+排序表格來源結構描述：
 
 ```
 <srcSchema label="Order" name="order" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -100,9 +100,9 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表類型為 **奧托普** 以建立自動產生的主鍵，該主鍵將連結連接到收件人表。
+表格型別為 **autopk** 以建立自動產生的主要索引鍵，以供連結至收件者表格的連結使用。
 
-已生成的架構：
+產生的結構描述：
 
 ```
 <schema label="Order" mappingType="sql" name="order" namespace="cus" xtkschema="xtk:schema">  
@@ -133,7 +133,7 @@ ht-degree: 2%
 </schema>
 ```
 
-表建立SQL指令碼如下：
+表格建立SQL命令檔如下：
 
 ```
 CREATE TABLE CusOrder(dTotal DOUBLE PRECISION NOT NULL Default 0, iOrderId INTEGER NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0, sNumber VARCHAR(128), tsDate TIMESTAMP Default NULL);
@@ -144,15 +144,15 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->指令碼末尾的SQL命令INSERT INTO允許您插入設定為0的標識符記錄以模擬外連接。
+>SQL指令碼結尾的INSERT INTO指令可讓您插入設定為0的識別碼記錄，以模擬外部聯結。
 
 ## 擴充功能表格 {#extension-table}
 
-擴充表格可讓您擴充連結基數1-1表格中現有表格的內容。
+擴充功能表格可讓您擴充基數1-1連結表格中現有表格的內容。
 
-擴充表格的用途是避免表格中支援的欄位數限制，或最佳化資料所佔空間，而資料會依需求耗用。
+擴充功能表格的用途是避免對表格中支援欄位數的限制，或最佳化資料佔用的空間（依需求使用）。
 
-建立擴充功能表結構(**cus:feature**):
+建立擴充功能表格結構(**cus：feature**)：
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -164,7 +164,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 </srcSchema>
 ```
 
-在收件者表格上建立擴充功能結構，以新增基數1-1的連結：
+在收件者表格上建立擴充功能綱要，以新增基數1-1的連結：
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipient" mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -176,9 +176,9 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->必須從包含外鍵的架構中填入收件者表格和擴充功能表格之間連結的定義。
+>收件者表格和擴充功能表格之間連結的定義，必須從包含外部索引鍵的結構描述填入。
 
-用於建立擴展表的SQL指令碼如下：
+建立擴充功能表格的SQL指令碼如下：
 
 ```
 CREATE TABLE CusFeature(  iChildren NUMERIC(3) NOT NULL Default 0, iFeatureId INTEGER NOT NULL Default 0, iSingle NUMERIC(3) NOT NULL Default 0, sSpouseFirstName VARCHAR(100));
@@ -186,7 +186,7 @@ CREATE UNIQUE INDEX CusFeature_id ON CusFeature(iFeatureId);
 INSERT INTO CusFeature (iFeatureId) VALUES (0); 
 ```
 
-收件人表SQL更新指令碼如下：
+收件者表格SQL更新指令碼如下：
 
 ```
 ALTER TABLE NmsRecipient ADD iFeatureId INTEGER;
@@ -196,13 +196,13 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## 溢出表 {#overflow-table}
+## 溢位表格 {#overflow-table}
 
-溢出表是擴展表（基數1-1），但到要擴展表的連結的聲明將填充到溢出表的架構中。
+溢位表格是擴充表格（基數1-1），但要擴充之表格的連結宣告會填入溢位表格的綱要。
 
-溢出表包含要擴展的表的外鍵。 因此，不會修改要擴展的表。 兩個表之間的關係是要擴展的表的主鍵的值。
+溢位表格包含要擴充之表格的外來鍵。 因此，不會修改要擴充的表格。 兩個表格之間的關係是要擴充之表格的主索引鍵的值。
 
-建立溢出表架構(**cus:overflow**):
+建立溢位表格結構(**cus：overflow**)：
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -221,22 +221,22 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 >[!NOTE]
 >
->溢出表的主鍵是要擴展的表的連結（本例中為「nms:recipient」方案）。
+>溢位表格的主要索引鍵是要擴充之表格的連結（範例中為「nms：recipient」綱要）。
 
-表建立SQL指令碼如下：
+表格建立SQL命令檔如下：
 
 ```
 CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0, iSingle NUMERIC(3) NOT NULL Default 0, sSpouseFirstName VARCHAR(100));
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## 關係表 {#relationship-table}
+## 關係表格 {#relationship-table}
 
-關係表允許您將兩個表連結為基數N-N。此表僅包含要連結的表的外鍵。
+關係表格可讓您連結兩個具有基數N-N的表格。此表格僅包含要連結之表格的外部索引鍵。
 
-組之間關係表的示例(**nms:group**)和收件者(**nms:recipient**)。
+群組之間關係表的範例(**nms：group**)和收件者(**nms：recipient**)。
 
-關係表的源架構：
+關係表的來源結構描述：
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -252,7 +252,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 </srcSchema>
 ```
 
-生成的架構如下：
+產生的結構描述如下：
 
 ```
 <schema mappingType="sql" name="rcpGrpRel" namespace="cus" xtkschema="xtk:schema">  
@@ -288,7 +288,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 </schema>
 ```
 
-表建立SQL指令碼如下：
+表格建立SQL命令檔如下：
 
 ```
 CREATE TABLE CusRcpGrpRel( iRcpGroupId INTEGER NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0);
@@ -296,13 +296,13 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## 使用案例：將欄位連結到現有引用表 {#uc-link}
+## 使用案例：將欄位連結至現有的參考表格 {#uc-link}
 
-此使用案例示範如何使用現有的參考表格作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代項目。
+此使用案例示範如何使用現有參考表格作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代方案。
 
-您也可以將現有的參考表格當作結構中的列舉。 這可以通過在表和引用表之間建立連結以及添加屬性來實現 **displayAsField=&quot;true&quot;**.
+您也可以使用現有的參考表格作為結構描述中的分項清單。 這可以透過在表格和參照表格之間建立連結，並新增屬性來達成 **displayAsField=&quot;true&quot;**.
 
-在此示例中，引用表包含銀行名稱和標識符的清單：
+在此範例中，參考表格包含銀行名稱與識別碼的清單：
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
@@ -324,17 +324,17 @@ xtkschema="xtk:srcSchema">
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-使用者介面不會顯示連結，而會顯示欄位。 當用戶選擇該欄位時，他們可以從參考表中選擇值或使用自動完成功能。
+使用者介面不會顯示連結，而是顯示欄位。 當使用者挑選該欄位時，他們可以從參照表中選取值或使用自動完成功能。
 
 ![](assets/schema-edition-ex.png)
 
-* 要使其自動完成，必須在引用表中定義計算字串。
+* 為了使其自動完成，您必須在參考表中定義計算字串。
 
-* 新增 **noDbIndex=&quot;true&quot;** 屬性，防止Adobe Campaign在連結來源表格中儲存的值上建立索引。
+* 新增 **noDbIndex=&quot;true&quot;** 屬性來防止Adobe Campaign在連結的來源表格中儲存的值上建立索引。
 
 ## 相關主題
 
-* [使用列舉](../../platform/using/managing-enumerations.md)
+* [使用分項清單](../../platform/using/managing-enumerations.md)
 
 * [開始使用Campaign綱要](../../configuration/using/about-schema-edition.md)
 

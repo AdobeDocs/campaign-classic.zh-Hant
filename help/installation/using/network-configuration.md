@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 網路設定
-description: 學習系統通信指南
+description: 瞭解系統通訊指南
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
@@ -19,140 +19,140 @@ ht-degree: 5%
 
 
 
-## 進程之間的通信 {#communication-between-processes}
+## 處理程式之間的通訊 {#communication-between-processes}
 
-應用程式的某些進程需要與他人通信或訪問區域網路和網際網路。 這意味著需要為這些進程開啟某些TCP埠。
+應用程式的某些程式需要與他人通訊或存取區域網路和網際網路。 這表示這些處理程式需要開啟某些TCP連線埠。
 
-使用嵌入式Apache Tomcat埠作為優先順序（預設為8080），在Adobe Campaign平台的各種應用程式伺服器之間進行內部通信。
+使用內嵌式Apache Tomcat連線埠作為優先順序（預設為8080），在Adobe Campaign平台的各種應用程式伺服器之間進行內部通訊。
 
 ### 傳遞伺服器 {#delivery-server}
 
-對於傳遞伺服器(**nlserver mta**)，下列埠必須開啟：
+對於傳遞伺服器(**nlserver mta**)，則必須開啟下列連線埠：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 埠<br /> </td> 
+   <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
    <td> 評論<br /> </td> 
   </tr> 
   <tr> 
-   <td> 25/tcp(smtp)<br /> </td> 
+   <td> 25/tcp (smtp)<br /> </td> 
    <td> 隨處<br /> </td> 
-   <td> 用於電子郵件廣播的SMTP通信。<br /> </td> 
+   <td> 用於電子郵件廣播的SMTP流量。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 53/udp（域）<br /> </td> 
+   <td> 53/udp （網域）<br /> </td> 
    <td> DNS伺服器<br /> </td> 
-   <td> DNS查詢。<br /> </td> 
+   <td> dns查詢。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 38000/tcp（預設埠）<br /> </td> 
-   <td> SMS網關<br /> </td> 
-   <td> 用於將SMS通信發送到NetSize SMS路由器[option]。<br /> </td> 
+   <td> 38000/tcp （預設連線埠）<br /> </td> 
+   <td> 簡訊閘道<br /> </td> 
+   <td> 用來傳送SMS流量至NetSize SMS路由器[選項]。<br /> </td> 
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
-   <td> 統計伺服器<br /> </td> 
-   <td> 訪問統計伺服器。<br /> </td> 
+   <td> 統計值伺服器<br /> </td> 
+   <td> 存取統計資料伺服器。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 入站郵件 {#inbound-mail}
+### 傳入郵件 {#inbound-mail}
 
-對於入站郵件恢復進程(**nlserver inMail**)，下列埠必須開啟：
+針對傳入郵件復原程式(**nlserver inMail**)，則必須開啟下列連線埠：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 埠<br /> </td> 
+   <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
    <td> 評論<br /> </td> 
   </tr> 
   <tr> 
-   <td> 110/tcp(pop3)<br /> </td> 
+   <td> 110/tcp (pop3)<br /> </td> 
    <td> 內部郵件伺服器<br /> </td> 
-   <td> POP3通信量，用於接收退回消息。<br /> </td> 
+   <td> 擷取退回訊息的POP3流量。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 25/tcp(smtp)<br /> </td> 
+   <td> 25/tcp (smtp)<br /> </td> 
    <td> 內部郵件伺服器<br /> </td> 
-   <td> 發送未由預定義規則自動處理的剩餘彈回消息的SMTP通信。<br /> </td> 
+   <td> 用於傳送未由預先定義規則自動處理的剩餘退回訊息的SMTP流量。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 應用程式伺服器 {#application-server}
 
-對於應用程式伺服器(**nlserver web**)，下列埠必須開啟：
+針對應用程式伺服器(**nlserver web**)，則必須開啟下列連線埠：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 埠<br /> </td> 
+   <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
    <td> 評論<br /> </td> 
   </tr> 
   <tr> 
-   <td> 80/tcp(http)<br /> 443/tcp(https)<br /> </td> 
+   <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> 隨處<br /> </td> 
-   <td> HTTP或HTTPS通信（包括提供服務）。<br /> </td> 
+   <td> HTTP或HTTPS流量（包括用於傳遞能力選件）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-當Adobe Campaign平台的多個應用程式伺服器需要相互通信時，建議使用Apache Tomcat伺服器的埠(預設情況下：8080)，而不是Web伺服器的HTTP埠，該HTTP埠與重定向模組進行整合。 這意味著需要在這些伺服器之間開啟埠。
+當Adobe Campaign平台的多個應用程式伺服器需要彼此通訊時，我們建議使用Apache Tomcat伺服器的連線埠（預設為8080），而不是使用執行重新導向模組整合之Web伺服器的HTTP連線埠的連線埠。 這表示這些伺服器之間的連線埠必須開啟。
 
-### SMS傳遞狀態 {#sms-delivery-status}
+### 簡訊傳遞狀態 {#sms-delivery-status}
 
-跟蹤SMS遞送(**nlserver sms**)，下列埠必須開啟：
+若要追蹤簡訊傳遞(**nlserver sms**)，則必須開啟下列連線埠：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 埠<br /> </td> 
+   <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
    <td> 評論<br /> </td> 
   </tr> 
   <tr> 
-   <td> 38000/tcp（預設埠）<br /> </td> 
-   <td> SMS網關<br /> </td> 
-   <td> 查詢由NetSize SMS網關[選項]管理的傳遞隊列狀態。<br /> </td> 
+   <td> 38000/tcp （預設連線埠）<br /> </td> 
+   <td> 簡訊閘道<br /> </td> 
+   <td> 查詢由NetSize SMS閘道[選項]管理的傳遞佇列狀態。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 富客戶端 {#rich-client}
+### 豐富型使用者端 {#rich-client}
 
-對於Adobe Campaign富客戶(**nlclient**)，下列埠必須開啟：
+適用於Adobe Campaign rich client (**nlclient**)，則必須開啟下列連線埠：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 埠<br /> </td> 
+   <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
    <td> 評論<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp(http)</p><p>443/tcp(https)</p><br /> </td> 
+   <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
    <td> 應用程式伺服器<br /> </td> 
-   <td> SOAP通信(HTTP)。<br /> </td> 
+   <td> SOAP流量(HTTP)。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 資料庫訪問 {#database-access}
+## 資料庫存取 {#database-access}
 
-使用資料庫的所有元件都必須能夠連接到它。 這適用於大多數元件，但重定向伺服器和瘦Win32客戶端除外，後者僅使用HTTP（或HTTPS）與應用程式伺服器通信。
+使用資料庫的所有元件都必須能夠連線到資料庫。 大多數元件都是如此，除了可單獨運作的重新導向伺服器，以及只使用HTTP （或HTTPS）與應用程式伺服器通訊的精簡Win32使用者端以外。
 
-預設埠如下：
+預設連線埠如下：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 資料庫類型<br /> </td> 
-   <td> 埠（預設）<br /> </td> 
+   <td> 連線埠（預設）<br /> </td> 
    <td> 目的地<br /> </td> 
   </tr> 
   <tr> 
@@ -175,83 +175,83 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-## 外部訪問 {#external-access}
+## 外部存取 {#external-access}
 
-此外，某些元件必須可從公共網際網路訪問，以便能夠查看直接從Adobe Campaign執行的電子郵件活動。 這意味著某些埠需要為元件開啟。
+此外，某些元件必須可從公用網際網路存取，以便檢視直接從Adobe Campaign執行的電子郵件行銷活動。 這表示某些連線埠必須為元件開啟。
 
-### 重定向伺服器 {#redirection-server}
+### 重新導向伺服器 {#redirection-server}
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 接聽連線埠<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 隨便哪。 每次按一下跟蹤的連結都會在伺服器上生成HTTP請求。<br /> </td> 
+   <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
+   <td> 隨處。 每次點按追蹤的連結時，就會在伺服器上產生HTTP要求。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 外部Web伺服器 {#external-web-server}
 
-此伺服器承載Web表單、鏡像頁等。 需要開啟以下埠：
+此伺服器會託管網路表單、映象頁面等。 需要開啟下列連線埠：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 接聽連線埠<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 隨便哪。 從Adobe Campaign平台直接管理Web表單或使用鏡像頁時是必需的。<br /> </td> 
+   <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
+   <td> 隨處。 直接從Adobe Campaign平台管理網路表單，或使用映象頁面時，此為必要專案。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 內部應用程式伺服器(Web) {#internal-application-server--web-}
+### 內部應用程式伺服器（網頁） {#internal-application-server--web-}
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 接聽連線埠<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 執行瘦客戶端或富客戶端的所有電腦。<br /> </td> 
+   <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
+   <td> 執行精簡型使用者端或豐富型使用者端的所有電腦。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 與Adobe Experience Manager {#integration-with-adobe-experience-manager}
+## 與Adobe Experience Manager整合 {#integration-with-adobe-experience-manager}
 
-Adobe Campaign和Adobe Experience Manager之間的整合需要在安裝「內部」的情況下開放幾個港口。 有關配置此整合的詳細資訊，請參閱 [詳細文檔](../../integrations/using/about-adobe-experience-manager.md)。
+如果安裝是「內部部署」，Adobe Campaign與Adobe Experience Manager之間的整合需要開啟多個連線埠。 如需設定此整合的詳細資訊，請參閱 [詳細檔案](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 偵聽埠<br /> </td> 
+   <td> 接聽連線埠<br /> </td> 
    <td> 說明<br /> </td> 
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEMAdobe Campaign<br /> </td> 
+   <td> AEM與Adobe Campaign的連線<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign與AEM"創作"和"發佈"實例的連接。 要開啟的埠可能與預設埠不同，具體取決於您的AEM配置。<br /> </td> 
+   <td> Adobe Campaign與AEM「編寫」和「發佈」執行個體的連線。 視您的AEM設定而定，要開啟的連線埠可能與預設的連線埠不同。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 頻寬 {#bandwidth}
 
-要考慮的網路配置的另一個關鍵參數。 它幾乎總是在外出，在電子郵件廣播中非常有需求。 下面是一些基於我們經驗的配置示例：
+要考慮的網路設定的另一個關鍵引數。 電子郵件幾乎總是對外傳送，而且在電子郵件廣播期間會有許多需求。 以下是一些根據我們經驗進行的設定範例：
 
-* 每小時10,000封電子郵件（平均大小為30 Kb）為1 Mb/s
-* 每小時100,000封電子郵件（平均大小為30 Kb）為8到10 Mb/s
+* 每小時10,000封電子郵件為1 Mb/s （平均大小為30 Kb）
+* 每小時100,000封電子郵件為8到10 Mb/s （平均大小為30 Kb）
 
-如果您在頻寬方面有限制，則可以計畫在需求較低的夜間運行市場活動。
+如果您的頻寬有限制，則可排程行銷活動，以便在需求較低時於夜間執行。

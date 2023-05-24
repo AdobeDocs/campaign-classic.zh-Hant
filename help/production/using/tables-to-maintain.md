@@ -19,190 +19,190 @@ ht-degree: 3%
 
 
 
-要維護的表清單取決於您的Adobe Campaign版本、使用方式和資料模型配置。
+要維護的表格清單取決於您的Adobe Campaign版本、使用方式以及資料模型設定。
 
-以下清單僅包含最受碎片影響的表。 影響如下：
+下列清單僅包含最容易發生片段化的表格。 其影響如下：
 
-* 磁碟空間消耗過大，從而影響資料庫訪問，
-* 未定期更新的索引，這會降低查詢效能。
+* 磁碟空間過度消耗，進而影響資料庫存取，
+* 尚未定期更新的索引，這會減慢查詢效能。
 
-## Adobe Campaign表 {#adobe-campaign-tables}
+## Adobe Campaign表格 {#adobe-campaign-tables}
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>表格名稱 </strong><br /> </th> 
    <th> <strong>大小</strong><br /> </th> 
-   <th> <strong>主要活動類型</strong><br /> </th> 
+   <th> <strong>活動的主要型別</strong><br /> </th> 
    <th> <strong>評論</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> Nms交付<br /> </td> 
+   <td> NmsDelivery<br /> </td> 
    <td> 小<br /> </td> 
    <td> 更新<br /> </td> 
-   <td> 每個傳遞操作有一條記錄。 單個記錄可以多次更新以反映交付進度，因此此表上的索引往往會快速分解。 <br /> </td> 
+   <td> 每個傳遞動作都有一個記錄。 單一記錄可以更新數次以反映傳送進度，因此此表上的索引傾向於快速分割。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
    <td> 中<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 在交付準備期間插入記錄的工作表。 然後，在交付期間更新它們，最後在交付完成後將其刪除。<br /> 儘管該表的平均大小相當有限，但它往往會迅速分裂。<br /> </td> 
+   <td> 在傳遞準備期間插入記錄的工作表。 它們隨後會在傳送期間更新，並最終在傳送完成後刪除。<br /> 此表格的平均大小相當受限，但碎片化速度卻很快。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
    <td> 大<br /> </td> 
-   <td> 插入，刪除<br /> </td> 
-   <td> 此表包含生成個性化鏡像頁所需的資訊。 它包含一個備忘錄(CLOB)欄位，因此它往往非常大。 卷與保留的鏡像頁的歷史記錄成正比。 <br /> </td> 
+   <td> 插入、刪除<br /> </td> 
+   <td> 此表格包含產生個人化映象頁面所需的資訊。 它包含備忘錄(CLOB)欄位，因此會非常大。 磁碟區與映象頁面的保留歷史記錄成正比。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
    <td> 中<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 此表包含有關傳遞過程的統計資訊。 其記錄會定期更新。 <br /> </td> 
+   <td> 此表格包含傳遞程式的統計資料。 其記錄會定期更新。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> NMS地址<br /> </td> 
+   <td> NmsAddress<br /> </td> 
    <td> 中<br /> </td> 
    <td> 更新，插入<br /> </td> 
-   <td> 此表包含有關電子郵件地址的資訊。 它經常作為隔離過程的一部分進行更新（記錄在第一次傳送錯誤時建立，在計數器更改時更新，並在傳送成功後刪除）。 <br /> </td> 
+   <td> 此表格包含電子郵件地址的相關資訊。 它經常在隔離程式中更新（記錄會在第一次傳送錯誤時建立，並在計數器中變更時更新，並在傳送成功後刪除）。 <br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflow<br /> </td> 
    <td> 小<br /> </td> 
    <td> 更新<br /> </td> 
-   <td> 每個工作流實例有一條記錄，因此記錄很少。 但是，定期更新表，以反映現狀和進展。<br /> </td> 
+   <td> 每個工作流程例項都有一個記錄，因此記錄非常少。 但表格會定期更新，以反映狀態和進度。<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
    <td> 小<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 工作流活動的每次執行都會導致在此表中建立記錄。 清除機制會在它們過期後將其刪除。<br /> </td> 
+   <td> 每次執行工作流程活動都會導致在此表格中建立記錄。 清除機制會在它們過期後將其刪除。<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowEvent<br /> </td> 
    <td> 小<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 在工作流中的任務之間激活的每個轉換都會導致在此表中建立記錄。 清除機制會在它們過期後將其刪除。 <br /> </td> 
+   <td> 在工作流程中的任務之間啟用的每個轉變，都會導致在此表格中建立記錄。 清除機制會在它們過期後將其刪除。 <br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowJob<br /> </td> 
-   <td> 很小 <br /> </td> 
+   <td> 非常小 <br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 此表特定於工作流引擎。 它允許將命令發送到工作流（例如，啟動、停止、暫停）。 儘管該表很小，但在清除連結到工作流的事務表時會考慮此表。<br /> </td> 
+   <td> 此表格專屬於工作流程引擎。 它可讓您將命令傳送至工作流程（例如「開始」、「停止」、「暫停」）。 雖然此表格很小，但在清除連結至工作流程的異動表格時，會考慮使用此表格。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
    <td> 最大<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 這是系統中最大的表。 每條消息都有一條記錄，這些記錄將被插入、更新以跟蹤傳送狀態，並在清除歷史記錄時被刪除。 <br /> </td> 
+   <td> 這是系統中最大的表格。 每封傳送的訊息都有一筆記錄，這些記錄會插入、更新以追蹤傳遞狀態，並在清除歷史記錄時刪除。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> Nms跟蹤日誌<br /> </td> 
+   <td> NmsTrackingLog<br /> </td> 
    <td> 大<br /> </td> 
-   <td> 插入，刪除<br /> </td> 
-   <td> 在清除歷史記錄時，將插入和刪除跟蹤日誌，但不會更新它們。 <br /> </td> 
+   <td> 插入、刪除<br /> </td> 
+   <td> 清除歷史記錄時會插入和刪除追蹤記錄，但不會更新。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadlogMsg <br /> </td> 
    <td> 小<br /> </td> 
    <td> 更新<br /> </td> 
-   <td> 此表包含用於限定SMTP錯誤的資訊。 它相當小，但會大量更新，因此此表上的索引往往會快速分解。 <br /> </td> 
+   <td> 此表格包含用於確認SMTP錯誤的資訊。 索引相當小，但會大幅更新，因此此表上的索引傾向於快速分割。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
    <td> 中<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 此表包含按域排序的SMTP錯誤聚合。 它最初包含詳細資訊，一旦清理任務過時，該資訊將由該任務聚合。 <br /> </td> 
+   <td> 此表格包含依網域排序的SMTP錯誤彙總。 它最初包含詳細資訊，一旦清除任務過時就會彙總這些資訊。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogMid（在中間採購實例上）<br /> </td> 
+   <td> NmsBroadLogMid （在中間來源執行個體上）<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 僅當5.10（或更高版本）實例用作中間採購實例時。 這是資料庫中最大的表之一。 每條消息都有一條記錄，這些記錄將被插入、更新以跟蹤傳送狀態，並在清除歷史記錄時被刪除。 使用中間來源補充時，建議限制歷史記錄（通常不到兩個月），因此此表在大小上保持合理（6000萬行少於30Go，資料+索引），但是，不時重建它非常重要。 <br /> </td> 
+   <td> 只有當5.10 （或更新版本）例項作為中間來源例項時。 這是資料庫中最大的表格之一。 每封傳送的訊息都有一筆記錄，這些記錄會插入、更新以追蹤傳遞狀態，並在清除歷史記錄時刪除。 使用中間來源時，建議限制歷史記錄（通常少於兩個月），因此此表格的尺寸保持合理（6000萬列小於30 Go，資料+索引），但偶爾重建非常重要。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogRcp（使用NmsRecipient表時） <br /> </td> 
+   <td> NmsBroadLogRcp （使用NmsRecipient表格時） <br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 這是系統中最大的表。 每條消息都有一條記錄，這些記錄將被插入、更新以跟蹤傳送狀態，並在清除歷史記錄時被刪除。 請注意，在5.10中，此表小於4.05(NmsBroadLog)中的等效值，因為SMTP消息文本在5.10版本的NmsBroadLogMsg表中被分解。 但是，定期（每隔一週開始）重新編製此表的索引，並不時（每月一次，或當效能受到影響時）完全重建它仍然至關重要。 <br /> </td> 
+   <td> 這是系統中最大的表格。 每封傳送的訊息都有一筆記錄，這些記錄會插入、更新以追蹤傳遞狀態，並在清除歷史記錄時刪除。 請注意，在5.10中，此表格比4.05中的對應表格(NmsBroadLog)小，因為5.10版的NmsBroadLogMsg表格會分解SMTP訊息文字。 不過，請務必定期重新索引此表格（從開始每隔一週重新索引），並不時完全重建表格（每月一次，或是在效能受到影響時）。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyBroadLogXxx（使用外部收件人表時）<br /> </td> 
+   <td> YyybroadLogXxx （使用外部收件者表格時）<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 與NmsBroadLogRcp相同，但與外部收件人表相同。 請將Yyy和Xxx與交貨映射中的值進行調整。 <br /> </td> 
+   <td> 與NmsBroadLogRcp相同，但使用外部收件者表格。 請將Yyyy和Xxx調整為您的傳遞對應中的值。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsTrackingLogRcp（使用NmsRecipient表時） <br /> </td> 
+   <td> NmsTrackingLogRcp （使用NmsRecipient表格時） <br /> </td> 
    <td> 大<br /> </td> 
-   <td> 插入，刪除<br /> </td> 
-   <td> 在清除歷史記錄時，將插入和刪除跟蹤日誌，但不會更新它們。 卷取決於資料保留的長度。 <br /> </td> 
+   <td> 插入、刪除<br /> </td> 
+   <td> 清除歷史記錄時會插入和刪除追蹤記錄，但不會更新。 磁碟區取決於資料保留的長度。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyTrackingLogXxx（使用外部收件人表時）<br /> </td> 
+   <td> YyytrackingLogXxx （使用外部收件者表格時）<br /> </td> 
    <td> 大<br /> </td> 
-   <td> 插入，刪除<br /> </td> 
-   <td> 與NmsTrackingLogRcp相同，但與外部收件人表相同。 請將Yyy和Xxx與在交付映射中使用的值進行調整。 <br /> </td> 
+   <td> 插入、刪除<br /> </td> 
+   <td> 與NmsTrackingLogRcp相同，但使用外部收件者表格。 請將Yyyy和Xxx調整為您傳遞對應中使用的值。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogRtEvent（消息中心執行實例）<br /> </td> 
-   <td> 大<br /> </td> 
-   <td> 插入、更新、刪除<br /> </td> 
-   <td> 與其他廣播表類似，但使用NmsRtEvent而不是NmsRecipient。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> NmsTrackingLogRtEvent（消息中心執行實例）<br /> </td> 
-   <td> 大<br /> </td> 
-   <td> 插入，刪除<br /> </td> 
-   <td> 與其他trackingLog表類似，但與NmsRtEvent表而不是NmsRecipient表類似。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> NmsRtEvent（消息中心執行實例）<br /> </td> 
+   <td> NmsBroadLogRtEvent （訊息中心執行例項）<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 包含消息中心事件隊列的表。 這些事件的狀態由消息中心在處理時更新。 清除期間執行刪除操作。 我們建議您定期重新建立此表的索引並重建它。<br /> </td> 
+   <td> 類似於其他broadlog表格，但使用NmsRtEvent而非NmsRecipient。<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsEventHisto（消息中心控制實例）<br /> </td> 
+   <td> NmsTrackingLogRtEvent（訊息中心執行例項）<br /> </td> 
+   <td> 大<br /> </td> 
+   <td> 插入、刪除<br /> </td> 
+   <td> 與其他trackingLog表格類似，但使用NmsRtEvent表格而非NmsRecipient。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> NmsRtEvent （訊息中心執行例項）<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 與NmsRtEvent類似。 此表將存檔所有執行實例中的每個事件。 它不由即時進程使用，只由報告使用。<br /> </td> 
+   <td> 包含「訊息中心」事件佇列的表格。 這些事件的狀態會在處理時由訊息中心更新。 刪除會在整個清除期間執行。 建議您定期重新建立此資料表的索引並重新建置。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> NmsEventHisto （訊息中心控制執行個體）<br /> </td> 
+   <td> 大<br /> </td> 
+   <td> 插入、更新、刪除<br /> </td> 
+   <td> 與NmsRtEvent類似。 此表格會封存所有執行例項中的每個事件。 此變數僅供報告使用，無法即時使用。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 
-   <td> 很小<br /> </td> 
+   <td> 非常小<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 包括移動應用程式及其配置的表。<br /> </td> 
+   <td> 包含行動應用程式及其設定的表格。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新<br /> </td> 
-   <td> 包括用於發送通知的移動設備（地址）的標識符的表（類似於收件人表）。<br /> </td> 
+   <td> 此表格包含用來傳送通知的行動裝置（位址）識別碼（類似於收件者表格）。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogAppSubRcp<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 與其他廣播表類似，但使用NmsappSubscriptionRcp而不是NmsRecipient。<br /> </td> 
+   <td> 類似於其他broadlog表格，但使用NmsappSubscriptionRcp而非NmsRecipient。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogAppSubRcp<br /> </td> 
    <td> 大<br /> </td> 
-   <td> 插入，刪除<br /> </td> 
-   <td> 與其他trackingLog表類似，但與NmsappSubscriptionRcp表而不是NmsRecipient表類似。<br /> </td> 
+   <td> 插入、刪除<br /> </td> 
+   <td> 與其他trackingLog表格類似，但使用NmsappSubscriptionRcp表格而非NmsRecipient。<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkSessionInfo<br /> </td> 
    <td> 小<br /> </td> 
-   <td> 插入，刪除<br /> </td> 
-   <td> 包括用戶會話的表。 插入和刪除的次數非常重要。<br /> </td> 
+   <td> 插入、刪除<br /> </td> 
+   <td> 包含使用者工作階段的表格。 插入和刪除的數目非常重要。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 客戶表 {#customer-tables}
+## 客戶表格 {#customer-tables}
 
-除上面的清單外，在平台設定期間包含客戶建立的表(在Adobe Campaign資料模型中不存在)也可能受到碎片的影響，特別是在資料載入或同步過程中經常更新這些表時。 這些表可以是預設Adobe Campaign資料模型的一部分(例如 **Nms收件人**)。 在這種情況下，Adobe Campaign平台的管理員應對其特定資料庫模型進行審計，以找到這些自定義表。 這些表不一定在維護過程中明確提及。
+除了上述清單，包含客戶(不存在於Adobe Campaign資料模型中)在平台設定期間建立的表格也可能遭到分割，尤其是如果這些表格在資料載入或同步程式期間經常更新。 這些表格可以是預設Adobe Campaign資料模型的一部分(例如 **NmsRecipient**)。 在這種情況下，Adobe Campaign平台的管理員需要對其特定資料庫模型進行稽核，以找到這些自訂表格。 我們的維護程式中不一定會明確提及這些表格。

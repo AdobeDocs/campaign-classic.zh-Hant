@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 輸入表單
-description: 了解如何在Campaign中使用輸入表單
+description: 瞭解如何在Campaign中使用輸入表單
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Data Management
@@ -17,13 +17,13 @@ ht-degree: 2%
 
 
 
-以下是關於在Adobe Campaign使用輸入表格的一些一般原則。
+以下是有關在Adobe Campaign中使用輸入表單的一些一般原則。
 
-Forms在 [本節](../../configuration/using/identifying-a-form.md).
+Forms的詳細資訊，請參閱 [本節](../../configuration/using/identifying-a-form.md).
 
 ## 表單結構 {#form-structure}
 
-輸入表單的XML文檔必須包含 **`<form>`** 根元素與 **名稱** 和 **命名空間** 屬性，分別填入表單名稱及其命名空間。
+輸入表單的XML檔案必須包含 **`<form>`** 根元素具有 **名稱** 和 **名稱空間** 屬性，分別填入表單名稱及其名稱空間。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -31,13 +31,13 @@ Forms在 [本節](../../configuration/using/identifying-a-form.md).
 </form>
 ```
 
-依預設，表單會與具有相同名稱和命名空間的資料架構相關聯。 要將表單與其他名稱關聯，請在 **實體綱要** 屬性 **`<form>`** 元素。
+依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同名稱建立關聯，請在 **entity-schema** 的屬性 **`<form>`** 元素。
 
-為了說明輸入表單的結構，我們以範例結構「cus:book」為基礎描述介面：
+為了說明輸入表單的結構，我們根據範例結構描述「cus：book」描述了一個介面：
 
 ![](assets/d_ncs_content_form1.png)
 
-此為對應的輸入表單：
+這是對應的輸入表單：
 
 ```xml
 <form name="book" namespace="cus" type="contentForm">
@@ -47,45 +47,45 @@ Forms在 [本節](../../configuration/using/identifying-a-form.md).
 </form>
 ```
 
-編輯元素的說明以 **`<form>`** 根元素。
+編輯元素的說明開頭為 **`<form>`** 根元素。
 
-在 **`<input>`** 元素搭配 **xpath** 屬性，包含其架構中欄位的路徑。
+編輯控制項輸入於 **`<input>`** 元素搭配 **xpath** 包含其結構描述中欄位路徑的屬性。
 
 **有關XPath語法的提醒：**
 
-Adobe Campaign中使用XPath語言來參考屬於資料架構的元素或屬性。
+XPath語言在Adobe Campaign中用於參照屬於資料結構描述的元素或屬性。
 
-XPath是一種語法，用於在XML文檔的樹中查找節點。
+XPath是一種語法，可讓您在XML檔案的樹狀結構中找出節點。
 
-元素由其名稱指定，屬性由名稱指定，名稱前面加上字元「@」。
+元素是以其名稱來指定，而屬性是以字元「@」開頭的名稱來指定。
 
 範例:
 
-* **@date**:選擇名稱為「date」的屬性
-* **章節/@title**:選取 `<chapter>` 元素
-* **../@date**:從當前元素的父元素中選擇日期
+* **@date**：選取名稱為「date」的屬性
+* **chapter/@title**：選取「 」底下的「title」屬性 `<chapter>` 元素
+* **../@date**：從目前元素的父元素中選取日期
 
-編輯控制項會自動適應對應的資料類型，並使用架構中定義的標籤。
+編輯控制項會自動適應對應的資料型別，並使用結構描述中定義的標籤。
 
-依預設，每個欄位會顯示在一行，並根據資料類型佔據所有可用空間。
+依預設，每個欄位都會顯示在一行上，並佔用所有可用的空間（視資料型別而定）。
 
 >[!CAUTION]
 >
->輸入表單必須參考 **type=&quot;contentForm&quot;** 屬性 **`<form>`** 元素來自動新增要輸入內容所需的框架。
+>輸入表單必須參照 **type=&quot;contentForm&quot;** 上的屬性 **`<form>`** 元素來自動新增輸入內容所需的框架。
 
 ## 格式 {#formatting}
 
-控制項相對彼此的佈置類似於在HTML表中使用的佈置，其可能將控制項分成若干列、交錯元件或指定佔用可用空間。 但是，請記住，格式只允許分配比例；不能為對象指定固定維。
+控制項相對於彼此的排列方式看起來類似於HTML表格中使用的排列方式，可能會將控制項分割成數欄、交錯元素或指定可用空間的佔用。 但請記住，格式僅授權比例分配；您不能為物件指定固定維度。
 
 如需詳細資訊，請參閱[本章節](../../configuration/using/form-structure.md#formatting)。
 
-## 清單類型控制項 {#list-type-controls}
+## 清單型別控制項 {#list-type-controls}
 
-若要編輯集合元素，您必須使用清單類型控制項。
+若要編輯收集要素，您必須使用清單型態控制項。
 
 ### 欄清單 {#column-list}
 
-此控制項顯示可編輯的列清單，其工具欄包含「添加」和「刪除」按鈕。
+此控制項會顯示可編輯的欄清單，其工具列包含「新增」和「刪除」按鈕。
 
 ![](assets/d_ncs_content_form4.png)
 
@@ -96,15 +96,15 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 </input>
 ```
 
-清單控制項必須填入 **type=&quot;list&quot;** 屬性，且清單的路徑必須參考集合元素。
+清單控制項必須填入 **type=&quot;list&quot;** 屬性，而清單的路徑必須參照收集要素。
 
-列由子項聲明 **`<input>`** 清單的元素。
+欄由子項宣告 **`<input>`** 清單元素。
 
 >[!NOTE]
 >
->當 **ordered=&quot;true&quot;** 資料結構中集合元素的屬性已完成。
+>當出現下列情況時，會自動新增向上和向下排序箭頭： **ordered=&quot;true&quot;** 資料結構描述中集合元素的屬性已完成。
 
-依預設，工具列按鈕會垂直對齊。 也可水準對齊：
+依預設，工具列按鈕會垂直對齊。 它們也可以水準對齊：
 
 ![](assets/d_ncs_content_form5.png)
 
@@ -115,21 +115,21 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 </input>
 ```
 
-此 **工具欄標題** 屬性會強制工具列的水準對齊方式，並填入清單上方的標題。
+此 **toolbarCaption** 屬性會強制工具列的水準對齊，並填入清單上方的標題。
 
 >[!NOTE]
 >
->若要讓集合元素標籤不顯示在控制項左側，請新增 **nolabel=&quot;true&quot;** 屬性。
+>若要讓集合元素標籤不顯示在控制項的左側，請新增 **nolabel=&quot;true&quot;** 屬性。
 
 #### 放大清單 {#zoom-in-a-list}
 
-清單資料的插入和編輯可以以單獨的編輯形式執行。
+可在單獨的編輯表單中執行清單資料的插入和編輯。
 
-在清單中編輯表單的用途如下：
+在下列情況下會使用清單中的編輯表單：
 
-* 為方便資訊輸入，
-* 有多線控制，
-* 清單中的欄僅包含主要欄位，表單會顯示集合元素的所有欄位。
+* 為了方便資訊輸入，
+* 存在多行控制項，
+* 清單中的欄位僅包含主要欄位，而表單會顯示收集要素的所有欄位。
 
 ![](assets/d_ncs_content_form7.png)
 
@@ -146,17 +146,17 @@ XPath是一種語法，用於在XML文檔的樹中查找節點。
 </input>
 ```
 
-編輯表單的定義是透過 **`<form>`** 元素。 其結構與輸入形式的結構相同。
+編輯表單的定義是透過 **`<form>`** 元素。 其結構與輸入表單的結構相同。
 
-A **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性。 這可讓您開啟所選行上的編輯表單。
+A **[!UICONTROL Detail]** 按鈕會在以下情況下自動新增： **zoom=&quot;true&quot;** 在清單定義中輸入attribute。 這可讓您在選取的行上開啟編輯表單。
 
 >[!NOTE]
 >
->新增 **zoomOnAdd=&quot;true&quot;** 屬性會在插入清單的元素時強制呼叫編輯表單。
+>新增 **zoomOnAdd=&quot;true&quot;** attribute會在插入清單的元素時強制呼叫編輯表單。
 
 ### 索引標籤清單 {#tab-list}
 
-此清單以頁簽形式顯示集合元素的編輯。
+此清單會以標籤的形式顯示集合元素的編輯。
 
 ![](assets/d_ncs_content_form6.png)
 
@@ -170,23 +170,23 @@ A **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性
 </container>
 ```
 
-清單控制項必須填入 **type=&quot;notebooklist&quot;** 屬性，且清單的路徑必須參考集合元素。
+清單控制項必須填入 **type=&quot;notebooklist&quot;** 屬性，而清單的路徑必須參照收集要素。
 
-索引標籤的標題包含透過 **xpath-label** 屬性。
+索引標籤的標題包含透過輸入的資料值 **xpath-label** 屬性。
 
-編輯控制項必須在 **`<container>`** 是清單控制項子項的元素。
+編輯控制項必須宣告於 **`<container>`** 元素是清單控制項的子項。
 
-使用工具欄按鈕添加或刪除清單元素。
+使用工具列按鈕來新增或刪除清單元素。
 
 >[!NOTE]
 >
->當 **ordered=&quot;true&quot;** 屬性會填入資料結構中集合元素的。
+>當以下動作時，會自動新增左右排序箭頭： **ordered=&quot;true&quot;** 屬性會針對資料結構描述中的收集元素填入。
 
 ## 容器 {#containers}
 
-容器可讓您將一組控制項分組。 它們透過 **`<container>`** 元素。 它們已用於格式化數列中的控制項以及用於控制標籤清單。
+容器可讓您將一組控制項分組。 它們透過 **`<container>`** 元素。 它們已用來格式化數個欄中的控制項，並用來控制索引標籤清單。
 
-有關容器以及如何在輸入表單中使用容器的詳細資訊，請參閱 [本節](../../configuration/using/form-structure.md#containers).
+有關容器及如何在輸入表單中使用容器的詳細資訊，請參閱 [本節](../../configuration/using/form-structure.md#containers).
 
 ## 編輯表單 {#editing-forms}
 
@@ -198,4 +198,4 @@ A **[!UICONTROL Detail]** 按鈕時自動新增 **zoom=&quot;true&quot;** 屬性
 
 ![](assets/d_ncs_content_form13.png)
 
-深入了解 [編輯表單](../../configuration/using/editing-forms.md) 和 [表單結構](../../configuration/using/form-structure.md).
+深入瞭解 [編輯表單](../../configuration/using/editing-forms.md) 和 [表單結構](../../configuration/using/form-structure.md).

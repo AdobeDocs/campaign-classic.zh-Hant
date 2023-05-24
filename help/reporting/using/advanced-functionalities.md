@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 進階功能
-description: 進一步了解使用報表時的進階功能
+description: 進一步瞭解使用報告時的進階功能
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
@@ -17,47 +17,47 @@ ht-degree: 4%
 
 
 
-身為技術使用者，除 [一般屬性](../../reporting/using/properties-of-the-report.md)，您可以運用進階功能來設定報表，例如：
+作為技術使用者，除了 [一般屬性](../../reporting/using/properties-of-the-report.md)，您可以利用進階功能來設定報表，例如：
 
-* 建立複雜查詢以處理 **指令碼** 活動。 [了解更多](#script-activity)
+* 建立複雜查詢以處理資料 **指令碼** 活動。 [了解更多](#script-activity)
 
-* 新增要在伺服器端或用戶端上執行的外部指令碼。 [了解更多](#external-script)
+* 新增要在伺服器或使用者端執行的外部指令碼。 [了解更多](#external-script)
 
-* 使用呼叫報表 **跳** 活動。 [了解更多](#calling-up-another-report)
+* 使用呼叫報表 **跳轉** 活動。 [了解更多](#calling-up-another-report)
 
-* 新增URL參數至報表，使其更方便存取。 [了解更多](#calling-up-another-report)
+* 新增URL引數至報表，使其更易於存取。 [了解更多](#calling-up-another-report)
 
-* 新增要在報表內容中使用的變數。 [了解更多](#adding-variables)
+* 新增要在報告內容中使用的變數。 [了解更多](#adding-variables)
 
 ## 使用指令碼 {#adding-a-script}
 
 ### 參考外部指令碼 {#external-script}
 
-您可以參考在呼叫報表頁面時，在用戶端和/或伺服器端執行的JavaScript程式碼。
+您可以參照呼叫報表頁面時將在使用者端和/或伺服器端執行的JavaScript程式碼。
 
 操作步驟：
 
-1. 編輯 [報表屬性](../../reporting/using/properties-of-the-report.md) 並按一下 **[!UICONTROL Scripts]**.
-1. 按一下 **[!UICONTROL Add]** 並選擇要引用的指令碼。
+1. 編輯 [報告屬性](../../reporting/using/properties-of-the-report.md) 並按一下 **[!UICONTROL Scripts]**.
+1. 按一下 **[!UICONTROL Add]** 並選取要參照的指令碼。
 1. 然後選取執行模式。
 
-   如果您新增數個指令碼，請使用工具列的箭頭來定義其執行順序。
+   如果您新增多個指令碼，請使用工具列的箭頭來定義其執行順序。
 
    ![](assets/reporting_custom_js.png)
 
-為了在用戶端正常執行，參考的指令碼必須以JavaScript寫入，且必須與一般瀏覽器相容。 如需詳細資訊，請參閱[本章節](../../web/using/web-forms-answers.md)。
+若要在使用者端正常執行，參照的指令碼必須以JavaScript撰寫，且必須和常見瀏覽器相容。 如需詳細資訊，請參閱[本章節](../../web/using/web-forms-answers.md)。
 
 ### 新增指令碼活動 {#script-activity}
 
-當 [設計報表](../../reporting/using/creating-a-new-report.md#modelizing-the-chart)，請使用 **[!UICONTROL Script]** 處理資料並輕鬆建立不啟用SQL語言的複雜查詢的活動。 您可以直接在指令碼窗口中輸入查詢。
+時間 [設計您的報告](../../reporting/using/creating-a-new-report.md#modelizing-the-chart)，使用 **[!UICONTROL Script]** 處理資料並輕鬆建立無法啟用SQL語言的複雜查詢的活動。 您可以在指令碼視窗中直接輸入查詢。
 
-此 **[!UICONTROL Texts]** 索引標籤可讓您定義文字字串。 然後，可搭配下列語法使用： **$（標識符）**. 有關使用文本的詳細資訊，請參閱 [新增頁首和頁尾](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+此 **[!UICONTROL Texts]** 定位點可讓您定義文字字串。 然後可搭配下列語法使用： **$（識別碼）**. 有關使用文字的詳細資訊，請參閱 [新增頁首和頁尾](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
->我們不建議使用JavaScript程式碼來建立匯總。
+>我們不建議使用JavaScript程式碼來建立彙總。
 
-若要建立報表歷史記錄，請新增下列行至JavaScript查詢，以儲存已封存的資料：
+若要建立報表的歷史記錄，請在JavaScript查詢中新增下列行，以儲存已封存的資料：
 
 ```
 if( ctx.@_historyId.toString().length == 0 )
@@ -65,57 +65,57 @@ if( ctx.@_historyId.toString().length == 0 )
 
 否則，只會顯示目前的資料。
 
-## 新增URL參數 {#defining-additional-settings}
+## 新增URL引數 {#defining-additional-settings}
 
-此 **[!UICONTROL Parameters]** 的 [報表屬性](../../reporting/using/properties-of-the-report.md) 可讓您定義報表的其他設定：這些設定會在呼叫期間傳遞至URL。
+此 **[!UICONTROL Parameters]** 的標籤 [報告屬性](../../reporting/using/properties-of-the-report.md) 可讓您定義報表的其他設定：這些設定將在呼叫期間傳遞到URL。
 
 >[!CAUTION]
 >
->出於安全原因，這些參數必須非常小心地使用。
+>基於安全考量，使用這些引數時須格外小心。
 
-要建立新設定：
+若要建立新設定：
 
 1. 按一下 **[!UICONTROL Add]** 按鈕並輸入設定的名稱。
 
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
-1. 如有必要，請指定設定是否為強制設定。
+1. 如有必要，請指定此設定是否為強制性。
 
-1. 選取要建立的設定類型： **[!UICONTROL Filter]** 或 **[!UICONTROL Variable]**.
+1. 選取您要建立的設定型別： **[!UICONTROL Filter]** 或 **[!UICONTROL Variable]**.
 
-   此 **[!UICONTROL Filter entities]** 選項可讓您使用資料庫的欄位作為參數。
+   此 **[!UICONTROL Filter entities]** 選項可讓您使用資料庫的欄位作為引數。
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
-   直接在實體級別恢復資料： **ctx/recipient/@account**.
+   資料會直接在實體層級復原： **ctx/recipient/@account**.
 
-   此 **[!UICONTROL Variable]** 選項可讓您建立或選取變數，變數將作為URL的參數傳遞，並可用於篩選器。
+   此 **[!UICONTROL Variable]** 選項可讓您建立或選取變數，該變數將作為URL的引數傳遞，並可在篩選器中使用。
 
-此 **[!UICONTROL Response HTTP headers]** 可讓您在使用iframe將報表的頁面納入HTML頁面時，防止點按劫持。 若要避免點按頂升，您可以選取 **[!UICONTROL X-Frame-options header]** 行為：
+此 **[!UICONTROL Response HTTP headers]** 可讓您在使用iframe的HTML頁面中加入報表頁面時防止點選劫持。 若要避免點選劫持，您可以選擇 **[!UICONTROL X-Frame-options header]** 行為：
 
-* **[!UICONTROL None]**:報告將不 **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**:為新報表和重新發佈的報表預設設定。 主機名稱與報表的URL相同。
-* **[!UICONTROL Deny]**:報表無法包含在使用iframe的HTML頁面中。
+* **[!UICONTROL None]**：報表將沒有 **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL Same as origin]**：新報表和重新發佈報表的預設值。 主機名稱將與報表的URL相同。
+* **[!UICONTROL Deny]**：報表不可包含在使用iframe的HTML頁面中。
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## 新增變數 {#adding-variables}
 
-此 **[!UICONTROL Variables]** 索引標籤包含報表中設定的變數清單。 這些變數會在報表內容中公開，並可用於計算。
+此 **[!UICONTROL Variables]** 索引標籤包含在報告中設定的變數清單。 這些變數會顯示在報表的內容中，且可用於計算。
 
-按一下 **[!UICONTROL Add]** 按鈕以建立新變數。
+按一下 **[!UICONTROL Add]** 按鈕來建立新變數。
 
-若要檢視變數的定義，請選取變數，然後按一下 **[!UICONTROL Detail...]** 按鈕。
+若要檢視變數的定義，請選取該變數並按一下 **[!UICONTROL Detail...]** 按鈕。
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
-## 使用案例：在報表中使用變數和參數
+## 使用案例：在報告中使用變數和引數
 
-在以下影片範例中，您將了解如何新增「_type」參數，以根據此屬性的值，建立不同的報表檢視。
+在下面的影片範例中，您將瞭解如何新增「_type」引數，以根據此屬性的值建立不同的報告檢視。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
-## 呼叫其他報表 {#calling-up-another-report}
+## 呼叫另一個報告 {#calling-up-another-report}
 
-A **跳** 活動就像沒有箭頭的轉變：可讓您從一個活動移至另一個活動或存取其他報表。
+A **跳轉** 活動就像一個沒有箭頭的轉變：它可讓您從一個活動跳到另一個活動或存取另一個報告。

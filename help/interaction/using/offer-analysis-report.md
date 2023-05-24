@@ -18,26 +18,26 @@ ht-degree: 10%
 
 
 
-此 **[!UICONTROL Offer analysis]** 報告為您提供了接受或拒絕的建議的數量概覽。
+此 **[!UICONTROL Offer analysis]** 報告提供已接受或已拒絕建議數目的概觀。
 
 >[!NOTE]
 >
->此功能僅可線上顯示，且僅供傳送管理員檢視。
+>此功能僅可線上上顯示，且僅供傳遞管理員檢視。
 
-統計資料會根據下列三個條件排序：
+統計資料是根據三個條件來排序：
 
 * 依日期：
 
    ![](assets/offer_report_perdate.png)
 
-* 按空間：
+* 依空間：
 
    ![](assets/offer_report_perspaces.png)
 
-* 依傳送：
+* 依傳遞：
 
    ![](assets/offer_report_perdeliveries.png)
 
-您可以根據報表上方區段提供的各種條件來篩選資料。 選取所需的條件後，按一下 **[!UICONTROL Refresh]** 連結以將其套用至報表。
+您可以根據報表上方區段提供的各種條件來篩選資料。 選取所需條件後，按一下 **[!UICONTROL Refresh]** 連結以將其套用至報表。
 
 ![](assets/offer_report_criteria.png)
