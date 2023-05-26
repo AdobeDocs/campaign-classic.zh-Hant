@@ -109,7 +109,7 @@ ht-degree: 0%
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
-1. 本機實體會從清單中取消檢查某些連絡人，因為自年初以來，已有人針對類似優惠方案與他們連絡。
+1. 本機實體會從清單中取消檢查某些連絡人，因為自年初以來，已有人就類似優惠方案與他們連絡。
 
    ![](assets/mkg_dist_use_case_target_valid10.png)
 

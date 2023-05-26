@@ -106,7 +106,7 @@ ht-degree: 4%
 
 * **文件**
 
-   選取此模組時，會將其他索引標籤新增至 **[!UICONTROL Edition]** 範本的索引標籤和基於此範本的行銷活動。 可從範本新增附加檔案，或針對每個行銷活動個別新增。 進一步瞭解中的檔案 [本節](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+   選取此模組時，會將其他索引標籤新增至 **[!UICONTROL Edition]** 標籤以及以此範本為依據的行銷活動。 可從範本新增附加檔案，或針對每個行銷活動個別新增。 進一步瞭解中的檔案 [本節](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
    ![](assets/s_ncs_user_op_template_activate_3.png)
 

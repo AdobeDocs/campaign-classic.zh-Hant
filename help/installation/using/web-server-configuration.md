@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Web伺服器設定
-description: 進一步瞭解網頁伺服器設定主要最佳實務
+description: 深入瞭解網頁伺服器設定主要最佳實務
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference

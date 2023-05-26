@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ![](assets/uc1_enrich_5.png)
 
-一個 **[!UICONTROL Intersection]** 然後，會新增型別活動，以定位在過去六個月內新增到資料庫的收件者，以及進入上次競爭的收件者。
+一個 **[!UICONTROL Intersection]** 然後，會新增型別活動，以定位在過去六個月內新增到資料庫的收件者和上次競爭者。
 
 ## 步驟2：擴充 {#step-2--enrichment}
 

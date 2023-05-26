@@ -29,7 +29,7 @@ ht-degree: 3%
 
    ![](assets/s_advuser_report_page_activity_04.png)
 
-1. 輸入名稱和標題。 如有必要，您可以使用下拉式清單變更註解的位置。
+1. 輸入名稱和標題。 如有需要，您可以使用下拉式清單來變更註解的位置。
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 

@@ -406,7 +406,7 @@ SMPP連線的密碼。 在BIND PDU的密碼欄位中傳遞。
 
 #### MTA 子連線的數量 {#number-mta-child}
 
-在Adobe Campaign Classic中，這會定義每個MTA子項的連線數量。
+在Adobe Campaign Classic中，它會定義每個MTA子項的連線數量。
 
 Adobe Campaign Classic Extended SMPP聯結器可以控制每個MTA子項的連線數量。 若要控制連線的全域限制，您必須限制MTA子處理序的數量，這通常表示要有SMS專用的中間來源平台。
 
