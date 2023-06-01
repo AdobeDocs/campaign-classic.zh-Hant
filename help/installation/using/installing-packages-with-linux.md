@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1181'
 ht-degree: 1%
 
 ---
@@ -43,10 +43,7 @@ ht-degree: 1%
 
 1. 您必須先取得Adobe Campaign套件。
 
-   檔案的名稱如下，其中 **XXXX** 是Adobe Campaign版本編號：
-
-   * **nlserver6-v7-XXXX-0.x86_64.rpm** 適用於v7。
-   * **nlserver6-XXXX-0.x86_64.rpm** 適用於v6.1。
+   檔案的名稱如下，其中 **XXXX** 是Adobe Campaign版本編號： **nlserver6-v7-XXXX-0.x86_64.rpm**.
 
    >[!CAUTION]
    >
@@ -78,12 +75,7 @@ yum install bc.x86_64
 
 若要在Debian 64位元作業系統上安裝Adobe Campaign 64位元，請套用下列步驟：
 
-1. 您必須先取得Adobe Campaign套件。
-
-   * **nlserver6-v7-XXXX-linux-2.6-amd64.deb** 適用於v7。
-   * **nlserver6-XXXX-linux-2.6-amd64.deb** 適用於v6.1。
-
-   **XXXX** 是Adobe Campaign版本編號。
+1. 您必須先取得Adobe Campaign套件： **nlserver6-v7-XXXX-linux-2.6-amd64.deb**，其中 **XXXX** 是建置編號。
 
    >[!CAUTION]
    >

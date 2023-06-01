@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '528'
 ht-degree: 3%
 
 ---
@@ -120,10 +120,6 @@ ht-degree: 3%
 1. 設定 **復寫** 從AEM編寫執行個體復寫至AEM發佈執行個體。
 
    若要瞭解如何設定復寫，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
-
-1. 安裝整合 **FeaturePack** 然後在您的編寫執行個體上復寫安裝。 (僅適用於AEM 5.6.1和6.0版)。
-
-   若要瞭解如何安裝FeaturePack，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/aem-previous-versions.html).
 
 1. Adobe Experience Manager Adobe Campaign透過設定專用的 **Cloud Service**.
 

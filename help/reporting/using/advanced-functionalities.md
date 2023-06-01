@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '600'
 ht-degree: 4%
 
 ---
@@ -113,7 +113,8 @@ if( ctx.@_historyId.toString().length == 0 )
 
 在下面的影片範例中，您將瞭解如何新增「_type」引數，以根據此屬性的值建立不同的報告檢視。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
+<!--
+![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)-->
 
 
 ## 呼叫另一個報告 {#calling-up-another-report}

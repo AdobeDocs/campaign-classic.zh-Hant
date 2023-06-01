@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '1995'
 ht-degree: 3%
 
 ---
@@ -54,15 +54,16 @@ Adobe Campaign 會定期更新。如果您熟悉我們發佈的 [發行說明](.
 
 例如，使用上一節熒幕擷圖的伺服器資訊：
 
-* 組建版本升級會涉及從組建6880移至任何大於6880的組建。 例如，v6.1.1版本編號8222至v6.1.1版本編號8666
+* 組建版本升級會涉及從組建9342移動到任何大於9342的組建。 例如，v7.1版本編號9342至v7.1版本編號9342
 
-* 版本升級涉及從版本6.0.2移動到任何大於6.0.2的版本。例如： v6.0.1版本編號2222至v6.1.1版本編號8666
+* 版本升級需從第6版移至任何較新版本。  例如： v6.1.1版本編號8666至v7.1版本編號9342。
 
 ## 我是否應該在這些更新前備份我的資料？
 
 Adobe會在任何變更前備份您的系統。 不過，如果您的非生產系統（開發或中繼伺服器）中有重要的自訂工作，強烈建議您在升級前將該工作匯出為套件。
 
-![](assets/do-not-localize/how-to-video.png) 如需詳細資訊， [觀看此作法影片](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+<!--
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 ## 升級將於何時進行？
 
@@ -97,7 +98,9 @@ Adobe會在任何變更前備份您的系統。 不過，如果您的非生產�
 
 ## 如何準備組建版本升級？
 
-在您的開發和測試系統中，匯出任何重要且必須保留的工作。 如需詳細資訊，請 [觀看此作法影片](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+在您的開發和測試系統中，匯出任何重要且必須保留的工作。
+
+<!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 檢閱實施作業結束時提供給您團隊的檔案，重新整理您在操作手冊（或由您的諮詢團隊/合作夥伴）中開發的重要路徑工作流程和傳遞的知識。
 
@@ -105,7 +108,7 @@ Adobe會在任何變更前備份您的系統。 不過，如果您的非生產�
 
 檢閱我們的 [以下建置升級檢查清單](#check-list) 以及您的測試計畫，並確保能夠執行這些測試的資源可在24到48小時內提供。 完成升級。
 
-如需詳細資訊， [請參閱此檔案](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html).
+如需詳細資訊， [請參閱本區段](../../production/using/build-upgrade.md).
 
 ## 組建升級可以在夜間或下班時間執行嗎？
 
