@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '933'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
     </a>
     </div>
     <ul>
-    <li>升級Campaign Classic執行個體的工作量和複雜性會隨著2個版本之間的距離而增加。</li>
+    <li>升級 Campaign Classic 執行個體的工作量和複雜性會隨著兩個版本之間的距離而增加。</li>
     <li>您的組織等待的時間越長，升級過程就越複雜 (而您暴露的漏洞也越多)。</li>
     <li>定期更新可減少升級的停機時間及迴歸風險。</li>
     </ul>
