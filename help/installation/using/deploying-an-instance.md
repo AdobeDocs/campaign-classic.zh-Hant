@@ -8,16 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3140'
+source-wordcount: '3333'
 ht-degree: 3%
 
 ---
 
 # 部署執行個體{#deploying-an-instance}
-
-
 
 >[!NOTE]
 >
@@ -25,7 +23,7 @@ ht-degree: 3%
 
 ## 部署精靈 {#deployment-wizard}
 
-Adobe Campaign使用者端主控台提供的圖形精靈，可讓您定義要連線的執行個體引數。
+Adobe Campaign提供Adobe Campaign使用者端主控台中可用的圖形化助理，以定義您要連線的執行個體引數。
 
 若要啟動部署精靈，請選取「 」 **「工具」>「進階」>「部署精靈」**.
 
@@ -80,13 +78,36 @@ Adobe Campaign使用者端主控台提供的圖形精靈，可讓您定義要連
 
 指示下列引數：
 
-* **[!UICONTROL Sender name]** ：寄件者的名稱
-* **[!UICONTROL Sender address]** ：寄件者的地址
-* **[!UICONTROL Reply address text]** ：可自訂的名稱，收件者按一下 **[!UICONTROL Reply]** 電子郵件使用者端軟體中的按鈕
-* **[!UICONTROL Reply address]** ：收件者按一下 **[!UICONTROL Reply]** 電子郵件使用者端軟體中的按鈕
-* **[!UICONTROL Error address]** ：出現錯誤的訊息的電子郵件地址。 這是用來處理退信的技術位址，包括Adobe Campaign伺服器因不存在目標位址而收到的電子郵件。
+* **[!UICONTROL Sender name]** ：輸入寄件者的名稱。
+* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。
+
+  >[!NOTE]
+  >
+  > 從Adobe Campaign傳送電子郵件時， **寄件者地址** 信箱未受到監視，行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。
+
+* **[!UICONTROL Reply address text]** ：輸入收件者按一下 **[!UICONTROL Reply]** 按鈕。
+* **[!UICONTROL Reply address]** ：輸入收件者按一下 **[!UICONTROL Reply]** 電子郵件使用者端軟體中的「 」按鈕。
+
+  >[!NOTE]
+  >
+  >目的 **回覆地址** 欄位是您希望收件者回覆不同於 **寄件者地址**.  此位址必須是有效的電子郵件地址，並且連結到受監視的信箱。  此信箱必須由客戶託管。  它可能是支援信箱，例如customer-care@customer.com，可讀取和回應電子郵件。
+
+* **[!UICONTROL Error address]** ：輸入有錯誤的訊息的電子郵件地址。 這是用來處理退信的技術位址，包括Adobe Campaign伺服器因不存在目標位址而收到的電子郵件。
+
+  >[!NOTE]
+  >
+  > 此位址必須是有效的電子郵件地址，並且連結到受監視的信箱。 此信箱必須由客戶託管。 可能是退回信箱，例如errors@customer.com。
+
 
 除此之外，您還可以指定 **遮色片** 已授權寄件者地址與錯誤地址。 如有必要，可以使用逗號分隔這些遮罩。 此設定是選用的。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果地址不包含任何變數）檢查地址是否有效。 此作業模式可確保不使用可能觸發傳送問題的地址。 必須在傳遞伺服器上設定傳遞位址。
+
+>[!NOTE]
+>
+>* 這些設定會儲存在Campaign平台選項中。 [了解更多](../../installation/using/configuring-campaign-options.md)。
+> 
+>* 對於多品牌設定，您可以調整錯誤地址，並從電子郵件路由外部帳戶覆寫此設定。 [了解更多](../../installation/using/external-accounts.md#email-routing-external-account)。
+>
+
 
 ### 地址中授權的字元 {#characters-authorized-in-addresses}
 
@@ -183,15 +204,15 @@ Adobe Campaign會套用「 」中列出的規則，自動處理退信 **管理> 
 
 * 在部署精靈的這個頁面上輸入的外部URL資訊（無論是否安全）可用來建置新的URL。 除了此資訊外，修改的連結還包含：傳遞的識別碼、收件者和URL。
 
-   Adobe Campaign會在追蹤伺服器上收集追蹤資訊，以擴充收件者設定檔與連結至傳遞的資料( **[!UICONTROL Tracking]** 標籤)。
+  Adobe Campaign會在追蹤伺服器上收集追蹤資訊，以擴充收件者設定檔與連結至傳遞的資料( **[!UICONTROL Tracking]** 標籤)。
 
-   內部URL的相關資訊僅供Adobe Campaign應用程式伺服器用來聯絡追蹤伺服器。
+  內部URL的相關資訊僅供Adobe Campaign應用程式伺服器用來聯絡追蹤伺服器。
 
-   有關詳細資訊，請參閱 [追蹤伺服器](#tracking-server).
+  有關詳細資訊，請參閱 [追蹤伺服器](#tracking-server).
 
 * 設定URL後，您需要啟用追蹤。 若要這麼做，必須在追蹤伺服器上註冊執行個體。
 
-   有關詳細資訊，請參閱 [儲存追蹤](#saving-tracking).
+  有關詳細資訊，請參閱 [儲存追蹤](#saving-tracking).
 
 ### 追蹤伺服器 {#tracking-server}
 
@@ -203,7 +224,7 @@ Adobe Campaign會套用「 」中列出的規則，自動處理退信 **管理> 
 * **[!UICONTROL External URL]** 和/或 **[!UICONTROL Secure external URL]** ：輸入要用於要傳送之電子郵件中的重新導向URL。
 * **[!UICONTROL Internal URL(s)]** ：Adobe Campaign伺服器用來聯絡追蹤伺服器，以收集記錄檔及上傳URL的URL。 不需要將其與執行個體建立關聯。
 
-   如果您未指定URL，系統會預設使用追蹤URL。
+  如果您未指定URL，系統會預設使用追蹤URL。
 
 透過中間來源架構，您可以將追蹤管理外部化。 操作步驟：
 
@@ -337,6 +358,13 @@ Adobe Campaign會套用「 」中列出的規則，自動處理退信 **管理> 
 
 Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
+
+>[!NOTE]
+>
+>* 這些設定會儲存在Campaign平台選項中。 [了解更多](../../installation/using/configuring-campaign-options.md)。
+>* 針對多品牌設定，您可以調整映象頁面URL，並從電子郵件路由外部帳戶覆寫此設定。 [了解更多](../../installation/using/configuring-campaign-options.md)。
+
+
 ## 管理公用資源 {#managing-public-resources}
 
 >[!IMPORTANT]
@@ -365,7 +393,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
 * 對於電子郵件影像， **https://**&#x200B;伺服器&#x200B;**/res/img** URL。
 
-   此值可針對每次傳遞覆寫。
+  此值可針對每次傳遞覆寫。
 
 * 若為公用資源，則為網址 **https://**&#x200B;伺服器&#x200B;**/res/**&#x200B;例項&#x200B;****位置&#x200B;**例項**是追蹤例項的名稱。
 
@@ -390,38 +418,38 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
 * 追蹤伺服器
 
-   資源會自動複製到不同的追蹤伺服器。 已在步驟中設定 [追蹤設定](#tracking-configuration).
+  資源會自動複製到不同的追蹤伺服器。 已在步驟中設定 [追蹤設定](#tracking-configuration).
 
 * 其他Adobe Campaign伺服器
 
-   您可以使用其他一部要複製資源的Adobe Campaign伺服器。
+  您可以使用其他一部要複製資源的Adobe Campaign伺服器。
 
-   伺服器端，若要使用專用的Adobe Campaign伺服器，您必須使用下列命令建立新執行個體：
+  伺服器端，若要使用專用的Adobe Campaign伺服器，您必須使用下列命令建立新執行個體：
 
-   ```
-   nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
-   ```
+  ```
+  nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
+  ```
 
-   然後輸入密碼。
+  然後輸入密碼。
 
-   專用伺服器的引數提供於 **[!UICONTROL Media URL(s)]**， **[!UICONTROL Password]** 和 **[!UICONTROL Instance name]** 欄位。
+  專用伺服器的引數提供於 **[!UICONTROL Media URL(s)]**， **[!UICONTROL Password]** 和 **[!UICONTROL Instance name]** 欄位。
 
-   ![](assets/s_ncs_install_images_upload_b.png)
+  ![](assets/s_ncs_install_images_upload_b.png)
 
 * 手動發佈指令碼（僅適用於公用資源）
 
-   ![](assets/s_ncs_install_images_upload_c.png)
+  ![](assets/s_ncs_install_images_upload_c.png)
 
-   您可以使用指令碼發佈影像：
+  您可以使用指令碼發佈影像：
 
    * 您必須建立此指令碼：其內容取決於您的設定。
    * 指令碼將透過以下命令來呼叫：
 
-      ```
-      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-      ```
+     ```
+     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+     ```
 
-      位置 `[INSTALL]` 是Adobe Campaign安裝資料夾的存取路徑。
+     位置 `[INSTALL]` 是Adobe Campaign安裝資料夾的存取路徑。
 
    * 在Unix中，請確定指令碼為可執行檔。
 

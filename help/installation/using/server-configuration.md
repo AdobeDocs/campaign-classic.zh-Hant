@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 4%
@@ -15,8 +15,6 @@ ht-degree: 4%
 ---
 
 # 伺服器安全性設定 {#server-configuration}
-
-
 
 ## 檔案上傳保護
 
@@ -76,9 +74,9 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 * 您可以新增一些其他標頭，例如HSTS、X-FRAME-OPTIONS、CSP...
 * 您必須先在測試環境中測試這些變數，才能將其套用於生產環境。
 
-   >[!IMPORTANT]
-   >
-   >您可以新增特定標題來中斷Adobe Campaign。
+  >[!IMPORTANT]
+  >
+  >您可以新增特定標題來中斷Adobe Campaign。
 
 Adobe Campaign可讓您在 `<dbcnx .../>` 元素。 請勿使用此功能。
 

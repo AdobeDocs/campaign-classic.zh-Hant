@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3991'
+source-wordcount: '3993'
 ht-degree: 6%
 
 ---
 
 # Campaign Classic 選項清單{#configuring-campaign-options}
-
-
 
 此 **[!UICONTROL Administration / Platform / Options]** 節點可讓您設定Adobe Campaign選項。 其中有些是內建於安裝Campaign時，有些則可在需要時手動新增。 可用選項會因執行個體所安裝的套件而異。
 
@@ -26,7 +24,6 @@ ht-degree: 6%
 >* 此頁面中未列出的選項僅供內部使用， **不得修改**.
 >
 >* 修改或更新Adobe Campaign選項只能由專家使用者執行。
-
 
 ## 傳遞 {#delivery}
 
@@ -151,7 +148,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客戶的一般名稱. 用於顯示給收件者的部分警告訊息。<br /> 「您收到此訊息是因為您曾與*****或附屬公司聯絡。 不再從*****接收訊息」。<br /> </td> 
+   <td> 客戶的一般名稱. 用於顯示給收件者的部分警告訊息。<br /> 「您收到此訊息是因為您曾與'Organization'或聯屬公司聯絡。 不再接收來自「組織」的訊息<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 

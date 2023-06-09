@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 8%
@@ -106,6 +106,7 @@ ht-degree: 8%
 啟用此選項後，會直接在資料庫中執行傳遞準備，大幅加快分析。
 
 目前，此選項只有在符合下列條件時才可用：
+
 * 傳遞必須是電子郵件。 目前不支援其他管道。
 * 您不得使用中間來源或外部路由，而只能使用大量傳遞路由型別。 您可以檢查中使用的製程 **[!UICONTROL General]** 的標籤 **[!UICONTROL Delivery properties]**.
 * 您無法鎖定來自外部檔案的母體。 若要進行單一傳遞，請按一下 **[!UICONTROL To]** 連結自 **[!UICONTROL Email parameters]** 並檢查 **[!UICONTROL Defined in the database]** 選項時才會選擇此選項。 對於工作流程中使用的傳遞，檢查收件者是否為 **[!UICONTROL Specified by the inbound event(s)]** 在 **[!UICONTROL Delivery]** 標籤。
@@ -136,7 +137,6 @@ ht-degree: 8%
 >* 有關可用驗證模式的詳情，請參閱 [變更核准模式](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* 中說明校樣目標的設定 [定義特定校訂目標](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
-
 
 若要傳送證明，請遵循下列步驟：
 
