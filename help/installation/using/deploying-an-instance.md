@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: d9976b904d116b1f4deb9fde7842ad64234c7c8a
 workflow-type: tm+mt
-source-wordcount: '3333'
+source-wordcount: '3343'
 ht-degree: 3%
 
 ---
@@ -83,20 +83,20 @@ Adobe Campaign提供Adobe Campaign使用者端主控台中可用的圖形化助�
 
   >[!NOTE]
   >
-  > 從Adobe Campaign傳送電子郵件時， **寄件者地址** 信箱未受到監視，行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。
+  > 從Adobe Campaign傳送電子郵件時， **寄件者地址** 信箱未受到監視，行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 進一步瞭解傳遞能力最佳實務 [在本檔案內](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]** ：輸入收件者按一下 **[!UICONTROL Reply]** 按鈕。
 * **[!UICONTROL Reply address]** ：輸入收件者按一下 **[!UICONTROL Reply]** 電子郵件使用者端軟體中的「 」按鈕。
 
   >[!NOTE]
   >
-  >目的 **回覆地址** 欄位是您希望收件者回覆不同於 **寄件者地址**.  此位址必須是有效的電子郵件地址，並且連結到受監視的信箱。  此信箱必須由客戶託管。  它可能是支援信箱，例如customer-care@customer.com，可讀取和回應電子郵件。
+  >目的 **回覆地址** 欄位是您希望收件者回覆不同於 **寄件者地址**.  此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶託管。  它可能是支援信箱，例如customer-care@customer.com，可讀取和回應電子郵件。
 
 * **[!UICONTROL Error address]** ：輸入有錯誤的訊息的電子郵件地址。 這是用來處理退信的技術位址，包括Adobe Campaign伺服器因不存在目標位址而收到的電子郵件。
 
   >[!NOTE]
   >
-  > 此位址必須是有效的電子郵件地址，並且連結到受監視的信箱。 此信箱必須由客戶託管。 可能是退回信箱，例如errors@customer.com。
+  > 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶託管。 可能是退回信箱，例如errors@customer.com。
 
 
 除此之外，您還可以指定 **遮色片** 已授權寄件者地址與錯誤地址。 如有必要，可以使用逗號分隔這些遮罩。 此設定是選用的。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果地址不包含任何變數）檢查地址是否有效。 此作業模式可確保不使用可能觸發傳送問題的地址。 必須在傳遞伺服器上設定傳遞位址。
