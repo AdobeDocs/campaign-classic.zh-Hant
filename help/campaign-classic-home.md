@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: ddac38fb79101bcff910345c9b04c7cc5eaf39a6
+source-git-commit: ad6a39f69c07662f43c39d4c96d53acccbe4a60c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 62%
@@ -16,7 +16,7 @@ ht-degree: 62%
 
 ## 有哪些新功能
 
-* **[11月版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良功能和修正
+* **[3月版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良功能和修正
 
 * **[2022年發行計畫](technotes/using/dc-migration.md)**<br/> 升級您的環境，並改善安全性、基礎結構和效能
 
