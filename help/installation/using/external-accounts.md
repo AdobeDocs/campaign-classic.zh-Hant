@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -126,9 +126,9 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 預設會根據您的設定提供電子郵件路由外部帳戶。
 
-作為內部部署客戶，您可以建立新的路由外部帳戶，或更新引數，如下所述。 此設定保留給專家使用者，可能會影響您的傳遞能力。 如有任何問題，請聯絡Adobe客戶服務或您的Adobe代表。
+身為內部部署/混合部署客戶，您可以建立新的路由外部帳戶，或更新引數，如下所述。 此設定保留給專家使用者，可能會影響您的傳遞能力。 如有任何問題，請聯絡Adobe客戶服務或您的Adobe代表。
 
-* 您必須使用 **中間來源**， **外部** 路由，或 **大量** 傳遞路由型別。
+* 您可以使用 **中間來源**， **外部** 路由，或 **大量** 傳遞路由型別。
 
 * 對象 **大量** 和 **中間來源** 傳遞模式，您可以在 **品牌化** 標籤。 這些引數可用來覆寫 [預設引數](../../installation/using/deploying-an-instance.md#email-channel-parameters) 的 **映象頁面URL** 和 **錯誤地址** 搭配品牌專屬的設定。
 

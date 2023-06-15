@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -61,19 +61,19 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 * **[!UICONTROL Use recipient preferences]** （預設模式）
 
-   訊息格式會根據儲存在收件者設定檔中的資料定義，並預設會儲存在 **[!UICONTROL email format]** 欄位(@emailFormat)。 如果收件者希望以特定格式接收郵件，則此格式為傳送的格式。如果未填入欄位，則會傳送替代的多重部分訊息（請參閱下文）。
+  訊息格式會根據儲存在收件者設定檔中的資料定義，並預設會儲存在 **[!UICONTROL email format]** 欄位(@emailFormat)。 如果收件者希望以特定格式接收郵件，則此格式為傳送的格式。如果未填入欄位，則會傳送替代的多重部分訊息（請參閱下文）。
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   訊息包含兩種格式：文字和HTML。 接收時顯示的格式取決於收件者的郵件軟體設定（替代的多重部分）。
+  訊息包含兩種格式：文字和HTML。 接收時顯示的格式取決於收件者的郵件軟體設定（替代的多重部分）。
 
-   >[!IMPORTANT]
-   >
-   >此選項包含檔案的兩個版本。 因此，它會影響傳遞率，因為郵件大小較大。
+  >[!IMPORTANT]
+  >
+  >此選項包含檔案的兩個版本。 因此，它會影響傳遞率，因為郵件大小較大。
 
 * **[!UICONTROL Send all messages in text format]**
 
-   訊息會以文字格式傳送。 不會傳送HTML格式，但只有當收件者按一下郵件時，才會用於映象頁面。
+  訊息會以文字格式傳送。 不會傳送HTML格式，但只有當收件者按一下郵件時，才會用於映象頁面。
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 * **[!UICONTROL Do not generate the mirror page]**：不會產生任何映象頁面，即使傳送中存在連結亦然。
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：此選項可讓您在傳送記錄視窗中存取包含個人化資訊的映象頁面內容。 若要這麼做，請在傳送結束後，按一下 **[!UICONTROL Delivery]** 索引標籤並選取您要檢視其映象頁面的收件者行。 按一下&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;連結。
 
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
+  ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## 字元編碼 {#character-encoding}
 
@@ -117,7 +117,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 此 **[!UICONTROL SMTP]** 傳遞引數的索引標籤可讓您設定退回郵件的管理。
 
-依預設，會在平台的預設錯誤方塊中接收跳出的電子郵件，但您可以定義傳送的特定錯誤地址。
+依預設，系統會在中接收退回的電子郵件 [平台的預設錯誤方塊](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)，但您可以為傳送定義特定的錯誤地址。
 
 您也可以從此畫面定義特定地址，以便調查當應用程式無法自動限定這些郵件時退回郵件的原因。 對於每個欄位， **新增個人化欄位** 圖示可讓您新增個人化引數。
 

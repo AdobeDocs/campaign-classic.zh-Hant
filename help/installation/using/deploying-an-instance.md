@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 84dc10d9f1979b7b9277fbc6837bc5ee9ab0e9dd
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe Campaign提供Adobe Campaign使用者端主控台中可用的圖形化助�
 * **[!UICONTROL Reply address text]** ：輸入收件者按一下 **[!UICONTROL Reply]** 按鈕。
 * **[!UICONTROL Reply address]** ：輸入收件者按一下 **[!UICONTROL Reply]** 電子郵件使用者端軟體中的「 」按鈕。 目的 **回覆地址** 欄位是您希望收件者回覆不同於 **寄件者地址**.  此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶託管。  例如，可能是支援信箱， `customer-care@customer.com`，可讀取及回應電子郵件。
 
-* **[!UICONTROL Error address]** ：輸入有錯誤的訊息的電子郵件地址。 這是用來處理退信的技術位址，包括Adobe Campaign伺服器因不存在目標位址而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶託管。 例如，可能是退回信箱， `errors@customer.com`.
+* **[!UICONTROL Error address]** ：輸入有錯誤的訊息的電子郵件地址。 這是用來處理退信的技術位址，包括Adobe Campaign伺服器因不存在目標位址而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶託管。 例如，可能是退回信箱， `errors@customer.com`. 此地址可以在傳遞範本中變更，從 **SMTP** 傳遞/傳遞範本屬性的索引標籤。 [了解更多](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails)。
 
 
 除此之外，您還可以指定 **遮色片** 已授權寄件者地址與錯誤地址。 如有必要，可以使用逗號分隔這些遮罩。 此設定是選用的。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果地址不包含任何變數）檢查地址是否有效。 此作業模式可確保不使用可能觸發傳送問題的地址。 必須在傳遞伺服器上設定傳遞位址。
