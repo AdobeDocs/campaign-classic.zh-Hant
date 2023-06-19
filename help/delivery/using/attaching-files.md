@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 5%
+source-wordcount: '966'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 ## 護欄 {#attachments-guardrails}
 
-為避免效能問題，電子郵件中包含的影像預設不得超過100 MB。 此限制可從以下網址設定： `NmsDelivery_MaxDownloadedImageSize` 選項。
+為避免效能問題，電子郵件中包含的影像不能超過100 MB。 此限制（預設設定）可由 `NmsDelivery_MaxDownloadedImageSize` 選項。 不過，Adobe強烈建議您在電子郵件傳送中避免大型影像。
 
 Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新增一個檔案作為電子郵件的附件。 此臨界值可從 `NmsDelivery_MaxRecommendedAttachments` 選項。
 

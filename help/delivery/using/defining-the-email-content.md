@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1943'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯
 
 ### 護欄 {#img-guardrails}
 
-為避免效能問題，電子郵件中包含的影像預設不得超過100 MB。 此限制可從以下網址設定： `NmsDelivery_MaxDownloadedImageSize` 選項。
+為避免效能問題，電子郵件中包含的影像不能超過100 MB。 此限制（預設設定）可由 `NmsDelivery_MaxDownloadedImageSize` 選項。 不過，Adobe強烈建議您在電子郵件傳送中避免大型影像。
 
 進一步瞭解 [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
