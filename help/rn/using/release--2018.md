@@ -5,10 +5,10 @@ description: 進一步瞭解 Campaign Classic 2018 版本
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '5385'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -441,7 +441,7 @@ decryptPassword
  <tbody> 
   <tr> 
    <td> 歐盟一般資料保護規範(GDPR)<br /> </td> 
-   <td> <p>GDPR是歐盟(EU)的新隱私權法律，協調資料保護要求並以現代化方式加以規範，於2018年5月25日生效。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign所提供的隱私權功能（包括同意管理、資料保留設定和使用者角色）之外，我們還將以資料處理者的角色利用此機會，加入其他功能，以協助您做好準備，以利您以資料控制者的身分處理特定GDPR請求：</p> 
+   <td> <p>GDPR是歐盟(EU)的隱私權法律，協調資料保護要求並以現代化方式規範資料保護要求。 GDPR 適用於所持有資料的主體居住於歐盟的 Adobe Campaign 客戶。</p> <p>除了Adobe Campaign所提供的隱私權功能（包括同意管理、資料保留設定和使用者角色）之外，我們還將以資料處理者的角色利用此機會，加入其他功能，以協助您做好準備，以利您以資料控制者的身分處理特定GDPR請求：</p> 
     <ul> 
      <li> <p>存取許可權：允許資料主體接收資料控制者所擷取的個人資料副本，可能包括儲存在Adobe Campaign中的資料。</p> </li> 
      <li> <p>刪除權利：賦予資料主體權利，使其有權清除資料控制者所擷取的個人資料，可能包括儲存在Adobe Campaign中的資料。</p> </li> 

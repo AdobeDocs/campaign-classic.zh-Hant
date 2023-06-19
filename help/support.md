@@ -4,10 +4,10 @@ title: Campaign Classic的說明與支援選項
 description: 需要Campaign Classic的支援嗎？ 您來對地方了！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 66%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 66%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)。
 >
->請注意，您的執行個體必須託管於AWS上，並升級至最新的 [GA建置](rn/using/rn-overview.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須託管於AWS上，並升級至最新的 [GA建置](rn/using/rn-overview.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 
 ### 如何存取控制面板？
 
@@ -107,7 +107,7 @@ ht-degree: 66%
 
 ### 「控制面板」常見問答集
 
-[按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) 以存取 Campaign 控制面板常見問答集。
+[按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant) 以存取 Campaign 控制面板常見問答集。
 
 ### SFTP 管理
 
@@ -132,7 +132,7 @@ ht-degree: 66%
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新的票證系統已透過啟動 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+新的票證系統已透過啟動 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ### 詢問專家！
 
@@ -140,11 +140,10 @@ ht-degree: 66%
 
 ### 存取 Campaign 下載中心
 
-自2020年6月起，Experience Cloud解決方案Software Distribution將取代舊版Neolane Download Center，提供更有效率的軟體、套件和工具搜尋和下載體驗。 [按一下此處](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)存取 Experience Cloud 軟體分送。
-進一步瞭解新的下載中心 [在此頁面中](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant){_blank}。
+作為Campaign管理員，瀏覽 [此頁面](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以存取Experience Cloud軟體發佈。
 
 ### 建立票證或開始聊天
 
 建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
 
-若要在該新系統中記錄問題或啟動聊天工作階段，請連線至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 請依照中所述的詳細過程進行操作 [此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}。
+若要在該新系統中記錄問題或啟動聊天工作階段，請連線至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 請依照中所述的詳細過程進行操作 [此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}.

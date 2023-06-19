@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -76,8 +76,6 @@ ht-degree: 2%
 ![](assets/GSMigrations.png)
 
 ## 關於移轉
-
-受影響的帳戶將於2020/2021年移轉至Adobe Managed Services （公用雲端）。 Adobe將帶領並引導您的組織完成此歷程。
 
 為了開始進行這項工作，需要此移轉的帳戶將收到來自Adobe的電子郵件通訊，並提供時間表和檔案存取權。 這會是您的帳戶已排程移轉的通知。
 
