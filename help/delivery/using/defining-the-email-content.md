@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1931'
 ht-degree: 1%
 
 ---
 
 # 定義電子郵件內容 {#defining-the-email-content}
-
-
 
 ## 發件人 {#sender}
 
@@ -29,15 +27,14 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->* 預設會使用寄件者的地址進行回覆。
->* 標頭引數不得為空白。 依預設，它們包含設定部署精靈時輸入的值。 如需詳細資訊，請參閱 [安裝指南](../../installation/using/deploying-an-instance.md).
+>* 預設會使用寄件者的地址來回覆。
+>* 標頭引數不得為空白。 依預設，它們包含設定部署精靈時輸入的值。 若要了解詳細資訊，請參閱[本章節](../../installation/using/deploying-an-instance.md)。
 >* 寄件者的地址是強制允許傳送電子郵件的地址（RFC標準）。
 >* Adobe Campaign會檢查所輸入電子郵件地址的語法。
 
-
->[!IMPORTANT]
+>[!CAUTION]
 >
->在網際網路存取提供者(ISP)為了打擊未經請求的電子郵件（垃圾郵件）而實作的檢查中，Adobe建議建立與為傳送和回覆指定的地址相對應的電子郵件帳戶。 請洽詢您的傳訊系統管理員。
+>為避免傳遞問題，對應於為傳遞和回覆指定的地址的電子郵件帳戶必須存在且必須受到監視。 請洽詢您的系統管理員。
 
 ## 訊息主旨 {#message-subject}
 
@@ -71,45 +68,45 @@ ht-degree: 1%
 
 * 若要匯入HTML內容，請使用 **[!UICONTROL Open]** 按鈕。 您也可以將原始程式碼直接貼到 **[!UICONTROL Source]** 子標籤。
 
-   如果您使用 [數位內容編輯器](../../web/using/about-campaign-html-editor.md) (DCE)，請參閱 [選取內容範本](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  如果您使用 [數位內容編輯器](../../web/using/about-campaign-html-editor.md) (DCE)，請參閱 [選取內容範本](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!IMPORTANT]
-   >
-   >HTML內容必須預先建立，然後匯入至Adobe Campaign。 HTML編輯器並非專為內容建立而設計。
+  >[!IMPORTANT]
+  >
+  >HTML內容必須預先建立，然後匯入至Adobe Campaign。 HTML編輯器並非專為內容建立而設計。
 
-   此 **[!UICONTROL Preview]** 子索引標籤可讓您檢視收件者的每個內容轉譯。 個人化欄位和內容的條件元素會取代為所選設定檔的對應資訊。
+  此 **[!UICONTROL Preview]** 子索引標籤可讓您檢視收件者的每個內容轉譯。 個人化欄位和內容的條件元素會取代為所選設定檔的對應資訊。
 
-   工具列按鈕可讓您存取HTML頁面的標準動作和格式設定引數。
+  工具列按鈕可讓您存取HTML頁面的標準動作和格式設定引數。
 
-   ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   您可以從本機檔案或Adobe Campaign中的影像資料庫將影像插入訊息中。 若要這麼做，請按一下 **[!UICONTROL Image]** 圖示並選取適當的選項。
+  您可以從本機檔案或Adobe Campaign中的影像資料庫將影像插入訊息中。 若要這麼做，請按一下 **[!UICONTROL Image]** 圖示並選取適當的選項。
 
-   ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   媒體櫃影像可透過 **[!UICONTROL Resources>Online>Public resources]** 資料夾樹狀結構中的資料夾。 另請參閱 [新增影像](#adding-images).
+  媒體櫃影像可透過 **[!UICONTROL Resources>Online>Public resources]** 資料夾樹狀結構中的資料夾。 另請參閱 [新增影像](#adding-images).
 
-   工具列中的最後一個按鈕可讓您插入個人化欄位。
+  工具列中的最後一個按鈕可讓您插入個人化欄位。
 
-   >[!NOTE]
-   >
-   >個人化欄位的使用方式顯示於 [關於個人化](about-personalization.md).
+  >[!NOTE]
+  >
+  >個人化欄位的使用方式顯示於 [關於個人化](about-personalization.md).
 
-   頁面底部的標籤可讓您顯示正在建立之頁面的HTML代碼，並檢視訊息的呈現及其個人化。 若要啟動此顯示，請按一下 **[!UICONTROL Preview]** 並透過以下方式選取收件者 **[!UICONTROL Test personalization]** 按鈕。 您可以從定義的目標中選取收件者，或選擇其他收件者。
+  頁面底部的標籤可讓您顯示正在建立之頁面的HTML代碼，並檢視訊息的呈現及其個人化。 若要啟動此顯示，請按一下 **[!UICONTROL Preview]** 並透過以下方式選取收件者 **[!UICONTROL Test personalization]** 按鈕。 您可以從定義的目標中選取收件者，或選擇其他收件者。
 
-   ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![](assets/s_ncs_user_wizard_email01_139.png)
 
-   您可以驗證HTML訊息。 您也可以檢視電子郵件標頭的內容。
+  您可以驗證HTML訊息。 您也可以檢視電子郵件標頭的內容。
 
-   ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![](assets/s_ncs_user_wizard_email01_140.png)
 
 * 若要匯入文字內容，請使用 **[!UICONTROL Open]** 按鈕，或 **[!UICONTROL Text Content]** tab鍵以輸入以文字格式顯示時的訊息內容。 使用工具列按鈕來存取對內容的動作。 最後一個按鈕可讓您插入個人化欄位。
 
-   ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   至於HTML格式，請按一下 **[!UICONTROL Preview]** 標籤以檢視訊息的呈現及其個人化。
+  至於HTML格式，請按一下 **[!UICONTROL Preview]** 標籤以檢視訊息的呈現及其個人化。
 
-   ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## 定義互動式內容 {#amp-for-email-format}
@@ -149,18 +146,25 @@ Adobe Campaign可讓您嘗試全新的互動式 [電子郵件AMP](https://amp.de
 
 HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯入包含影像的HTML頁面，或直接使用HTML編輯器透過以下路徑插入影像： **[!UICONTROL Image]** 圖示。
 
+
+### 護欄 {#img-guardrails}
+
+為避免效能問題，電子郵件中包含的影像預設不得超過100 MB。 此限制可從以下網址設定： `NmsDelivery_MaxDownloadedImageSize` 選項。
+
+進一步瞭解 [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
+
+### 影像型別 {#img-types}
+
 影像可以是：
 
 * 本機影像或從伺服器呼叫的影像
 * 儲存在Adobe Campaign公共資源庫中的影像
 
-   公共資源可透過 **[!UICONTROL Resources > Online]** Adobe Campaign階層的節點。 它們會分組在程式庫中，並可包含在電子郵件訊息中，但也可以用於行銷活動或任務，或用於內容管理。
+  公共資源可透過 **[!UICONTROL Resources > Online]** Adobe Campaign階層的節點。 它們會分組在程式庫中，並可包含在電子郵件訊息中，但也可以用於行銷活動或任務，或用於內容管理。
 
 * 與Adobe Experience Cloud共用的資產。 請參閱[本節](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)。
 
->[!IMPORTANT]
->
->若要使用傳遞精靈在電子郵件訊息中包含影像，必須將Adobe Campaign執行個體設定為啟用公用資源管理。 此程式可以從部署精靈執行。 請參閱 [本節](../../installation/using/deploying-an-instance.md) 以取得有關設定的進一步資訊。
+### 插入和管理影像 {#manage-images}
 
 傳遞精靈可讓您將本機影像或資料庫中儲存的影像新增至訊息內容。 若要這麼做，請按一下 **[!UICONTROL Image]** 按鈕(在「HTML」內容工具列中)。
 
@@ -188,12 +192,10 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯
 
 >[!IMPORTANT]
 >
->* 在手動上傳或傳送訊息時，影像存取路徑會遭到修改。
+> 在手動上傳或傳送訊息時修改影像URL。
 > 
->* 為避免效能問題，如果您將從個人化URL即時下載的影像包含為 [附件](attaching-files.md)，每個影像大小預設不應超過100,000個位元組。 此建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
-
-**使用案例：傳送包含影像的訊息**
+### 使用案例：傳送包含影像的訊息 {#uc-images}
 
 以下是包含四個影像的傳送範例：
 
@@ -253,23 +255,23 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯
 
    * 對於1D格式，Adobe Campaign提供下列型別：Codabar、代碼128、GS1-128 （先前稱為EAN-128）、UPC-A、UPC-E、ISBN、EAN-8、代碼39、交錯式2 （共5個）、POSTNET和皇家郵件(RM4SCC)。
 
-      1D條碼範例：
+     1D條碼範例：
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * DataMatrix和PDF417型別涉及2D格式。
 
-      2D條碼範例：
+     2D條碼範例：
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * 若要插入QR碼，請選取此型態，然後輸入要套用的錯誤更正率。 此比率定義重複資訊的數量和劣化的容許度。
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      QR碼範例：
+     QR碼範例：
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. 輸入您要插入電子郵件中的條碼大小：設定比例可讓您增加或減少條碼大小，從x1到x10。
 1. 此 **[!UICONTROL Value]** 欄位可讓您定義條碼的值。 值可以和特殊優惠方案相符，也可以是條件的函式，也可以是連結至客戶的資料庫欄位值。

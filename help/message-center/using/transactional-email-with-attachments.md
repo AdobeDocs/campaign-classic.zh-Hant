@@ -5,10 +5,10 @@ description: 瞭解如何使用Adobe Campaign傳送包含個人和/或個人化�
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 5%
+source-wordcount: '651'
+ht-degree: 4%
 
 ---
 
@@ -38,11 +38,13 @@ ht-degree: 5%
 * 如果附件與交易相關聯（如上述範例案例所示），則附件可能包含客戶處理期間產生的動態資料。
 * 附加PDF檔案可最佳化安全性，因為您可以加密檔案並透過HTTPS傳送。
 
->[!NOTE]
->
->為避免效能問題，如果您將從個人化URL即時下載的影像納入附件中，每個影像大小預設不應超過100,000位元組。 此建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
+## Recommendations和護欄 {#important-notes}
 
-## 建議 {#important-notes}
+為避免效能問題，電子郵件中包含的影像預設不得超過100 MB。 此限制可從以下網址設定： `NmsDelivery_MaxDownloadedImageSize` 選項。
+
+Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新增一個檔案作為電子郵件的附件。 此臨界值可從 `NmsDelivery_MaxRecommendedAttachments` 選項。
+
+進一步瞭解 [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
 實施此情境之前，請仔細閱讀以下准則：
 

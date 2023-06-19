@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '954'
 ht-degree: 5%
 
 ---
 
 # 將檔案附加至電子郵件{#attaching-files}
-
-
 
 ## 關於電子郵件附件 {#about-email-attachments}
 
@@ -33,6 +31,14 @@ ht-degree: 5%
 >[!NOTE]
 >
 >這類設定通常會在傳遞範本中執行。 有關詳細資訊，請參閱 [關於範本](about-templates.md).
+
+## 護欄 {#attachments-guardrails}
+
+為避免效能問題，電子郵件中包含的影像預設不得超過100 MB。 此限制可從以下網址設定： `NmsDelivery_MaxDownloadedImageSize` 選項。
+
+Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新增一個檔案作為電子郵件的附件。 此臨界值可從 `NmsDelivery_MaxRecommendedAttachments` 選項。
+
+進一步瞭解 [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## 附加本機檔案 {#attaching-a-local-file}
 
@@ -113,9 +119,7 @@ ht-degree: 5%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
->[!NOTE]
->
->為避免效能問題，如果您將從個人化URL即時下載的影像納入附件中，每個影像大小預設不應超過100,000位元組。 此建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
+
 
 ### 附加計算檔案 {#attach-a-calculated-file}
 
@@ -182,6 +186,6 @@ ht-degree: 5%
 * 您可以定義篩選選項，以避免將附加檔案傳送給所有收件者。 選項 **[!UICONTROL Enable filtering of recipients who will receive the attachment]** 啟用用來定義收件者選擇指令碼的輸入欄位，該指令碼必須以JavaScript輸入。
 * 您可以編寫檔案名稱的指令碼，以便進行個人化。
 
-   在視窗中輸入文字，並使用下拉式清單中可用的個人化欄位。 在下列範例中，檔案名稱經過個人化，包含今天的日期和收件者名稱。
+  在視窗中輸入文字，並使用下拉式清單中可用的個人化欄位。 在下列範例中，檔案名稱經過個人化，包含今天的日期和收件者名稱。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
