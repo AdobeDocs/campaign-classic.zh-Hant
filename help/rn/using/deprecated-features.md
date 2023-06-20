@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1508'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 
 * 從 22.1 版本開始，Adobe Campaign 不再相容於 CentOs 8.x (64 位元)。 CentOS Linux 8 於 2021 年 12 月 31 日終止使用 (EOL)。 [了解更多資訊](https://www.centos.org/centos-linux-eol/)。
 
-   如果您使用此作業系統，請對應調整實施內容。 仍支援 CentOS 7.x (64 位元) 和 RHEL 8.x/7.x (64 位元)。
+  如果您使用此作業系統，請對應調整實施內容。 仍支援 CentOS 7.x (64 位元) 和 RHEL 8.x/7.x (64 位元)。
 
 * 從 21.1.3 版本開始，Adobe Campaign 不再相容於 Debian 8。
 
@@ -213,10 +213,10 @@ Adobe 不支援下列資料庫引擎，因為其編輯者已不建議使用這�
 
 * PostgreSQL 9.3.
 * MySQL 5.5.
-* DB2 9.5。
-* teradata14 - 14.1。
+* DB2 9.5.
+* Teradata 14 – 14.1.
 
-Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。請使用較新版本或系統。
+Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。請使用更新的版本或系統。
 
 * DB2 UDB 9.5、9.7。
 * Oracle 9i、10G R2。
@@ -224,11 +224,11 @@ Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。請�
 * MSSQL 2000、2005、2008 R2。
 * MySQL 5.1.
 * InfiniDB 生命週期結束。
-* teradata13、13.1。
-* Netezza 6.02、7.0。Netezza 生命週期結束。
-* AsterData 5.0。AsterData 生命週期結束。
-* sybase IQ15.2、15.4、15.5和Sybase ASE 15.0。
-* 透過HiveSQL的Hadoop：Hadoop2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic仍然透過同盟資料存取(FDA)支援透過HiveSQL列出的版本Hadoop，但這些版本合併為：HortonWorks (HDP 2.4.X、2.5.x、2.6.x)和HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
+* Teradata 13、13.1.
+* Netezza 6.02、7.0. Netezza 生命週期結束。
+* AsterData 5.0. AsterData 生命週期結束。
+* Sybase IQ15.2、15.4、15.5 及 Sybase ASE 15.0。
+* 透過 HiveSQL 的 Hadoop：Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic 仍將透過同盟資料存取 (FDA) 支援所列透過 HiveSQL 的 Hadoop 版本，但是這些版本已與下列各項合併：HortonWorks (HDP 2.4.X、2.5.x、2.6.x) 及 HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
 
 **RDBMS 伺服器**
 
