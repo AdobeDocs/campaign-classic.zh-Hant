@@ -4,11 +4,12 @@ title: Campaign Classic 2018 版本
 description: 進一步瞭解 Campaign Classic 2018 版本
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
+hide: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+source-git-commit: 378ac691c15f8200f8a14d573d4b15521f6cb531
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5379'
+ht-degree: 8%
 
 ---
 
@@ -533,7 +534,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 **修補程式**
 
 * 修正從Adobe Campaign Standard複製傳遞和追蹤記錄到Adobe Campaign Classic時的同步問題。 (NEO-10023)
-* 修正了在快速載入作業失敗後恢復ETL工作流程時，處理Teradata中的錯誤和記錄表的問題。 現在，每次繼續工作流程時，都會正確刪除「錯誤」和「記錄」表格。 (NEO-10672)
+* 修正了在快速載入作業失敗後恢復ETL工作流程時，處理Teradata中的錯誤和記錄表的問題。 現在每次繼續工作流程時，都會正確刪除「錯誤」和「記錄」表格。 (NEO-10672)
 * 修正了在安裝FDA套件時自動安裝Hive套件(Hadoop所需)的升級後問題。 (NEO-10592)
 * 修正將無效網域視為 **未定義** 錯誤。 (NEO-10248)
 * 修正傳送android推播傳遞時，deliveryLogStats表格中重複記錄的問題。 (NEO-10234)
@@ -541,7 +542,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * 修正使用非ASCII字元時「urlEncode」JavaScript函式的問題。 如需詳細資訊，請參閱「技術演變」一節。 (NEO-10123)
 * 修正在Teradata資料庫上執行包含sha256函式的查詢時的問題。 (NEO-10119)
 * 修正使用非常大的SalesForce表格時，SalesForce活動中可能發生的工作流程記憶體錯誤。 (NEO-9900)
-* 已修正的問題 **產生補充** 使用FDA時定位工作流程活動中的選項。 (NEO-9878)
+* 已修正的問題 **產生補充** 使用FDA時鎖定工作流程活動中的選項。 (NEO-9878)
 * 修正可能導致 **已處理** 和 **成功** 使用中間來源時，量度未在行銷執行個體上更新。 (NEO-9454)
 * 修正平台中總計超過10,000個選件時的互動不重新主張規則(NEO-9352)
 * 修正使用XML外部檔案時，無法指定傳遞目標的問題。 (NEO-9312)

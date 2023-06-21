@@ -7,8 +7,9 @@ feature: Overview
 role: User
 level: Beginner
 hidefromtoc: true
+hide: true
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 378ac691c15f8200f8a14d573d4b15521f6cb531
 workflow-type: tm+mt
 source-wordcount: '6601'
 ht-degree: 73%
@@ -38,7 +39,6 @@ _2020 年 10 月 27 日_
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
-
 
 **新增功能？**
 
@@ -229,7 +229,6 @@ _2020 年 12 月 22 日_
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 oAuth 驗證使用 Experience Cloud 觸發程式整合，您必須依照[本頁](../../integrations/using/configuring-adobe-io.md)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
-
 **功能改進**
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
@@ -374,9 +373,9 @@ _2020 年 6 月 8 日_
 
 * 已增加共用記憶體版本。
 
-   >[!WARNING]
-   >
-   >此項功能改善需要於執行升級後，進行額外的步驟操作。請參閱下面的&#x200B;**技術演變**&#x200B;一節。
+  >[!WARNING]
+  >
+  >此項功能改善需要於執行升級後，進行額外的步驟操作。請參閱下面的&#x200B;**技術演變**&#x200B;一節。
 
 * 加強清理工作流程。現在清理工作流程，也將自動刪除所有已刪除工作流程的孤立工作台。[進一步瞭解](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances)。
 
@@ -524,7 +523,6 @@ _2020 年 12 月 23 日_
 > * 此版本隨附新的連線通訊協定：如果您要透過 Adobe Identity Service (IMS) 連線至 Campaign，則必須升級至 Campaign 伺服器和用戶端主控台，才能在 **2021 年 6 月 30 日**&#x200B;後與 Campaign 連線。[深入瞭解](../../technotes/using/ims-updates.md)
 >
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-
 
 * 已更新連線通訊協定，以遵循新的 IMS 驗證機制。
 * 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
