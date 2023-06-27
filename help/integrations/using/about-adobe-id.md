@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: f38d9053a3817fabc196dfbbfc5fff67bf1a7b06
+source-git-commit: 4751de9b1feb4165b86ac3ea57a52bb4b687b6c7
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 24%
@@ -29,20 +29,22 @@ Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台。 此整�
 
 >[!IMPORTANT]
 >
->如果您是透過Adobe身分服務(IMS)連線至Campaign，您需要升級至最新組建版本，才能在下列時間後連線至Campaign **2021年6月30日**. Campaign伺服器和使用者端主控台都必須進行此升級。 根據您目前的版本，您必須升級至下列其中一個版本：
+>如果您是透過Adobe身分服務(IMS)連線至Campaign，您需要升級至最新組建版本，才能在下列時間後連線至Campaign **2021年6月30日**. Campaign伺服器和使用者端主控台都必須進行此升級。
+>
+>根據您目前的版本，您必須升級至下列其中一個版本：
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
-
-以及：
-
-> * Campaign 20.2.5
-> * Campaign 20.1.4
-> * Campaign 19.2.4
-> * Campaign 19.1.8
 >
-[進一步瞭解IMS更新](../../technotes/using/ims-updates.md)
->>
+>以及：
+>
+>* Campaign 20.2.5
+>* Campaign 20.1.4
+>* Campaign 19.2.4
+>* Campaign 19.1.8
+>
+>[進一步瞭解IMS更新](../../technotes/using/ims-updates.md)
+
 
 ## 更多資源
 
