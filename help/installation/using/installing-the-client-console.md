@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 3%
+source-wordcount: '1135'
+ht-degree: 4%
 
 ---
 
 # 安裝並更新Campaign使用者端主控台{#installing-the-client-console}
-
-
 
 Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的Campaign應用程式伺服器。
 
@@ -35,6 +33,10 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 >[!CAUTION]
 >
 >Campaign使用者端主控台和Campaign應用程式伺服器必須執行 **在相同產品版本上**. Adobe也強烈建議使用 **相同的產品組建**. 瞭解如何在中檢查您的Campaign使用者端和伺服器版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>
+>對安裝主控台之安裝資料夾的存取權應僅限於目標使用者，以確保寫入許可權受到相應的限制。
+
+
 
 ## Microsoft Edge Webview2執行階段安裝 {#webview}
 
