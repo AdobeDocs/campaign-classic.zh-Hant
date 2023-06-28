@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '2545'
+source-wordcount: '2595'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,11 @@ ht-degree: 100%
 
 >[!CAUTION]
 >使用 **[!UICONTROL Help > About...]** 功能表以檢查您的 Adobe Campaign [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。不過請注意，本頁所列的 9277 與 9343 之間的所有版本編號都顯示 7.0 而非 7.1。
+> 
 
-### ![](assets/do-not-localize/limited_2.png)發行版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
+### 版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2021 年 10 月 8 日_
 
@@ -32,7 +35,9 @@ _2021 年 10 月 8 日_
 
 * 修正了在多中間來源執行個體上使用多個 IP 相似性時，傳遞傳送時可能會發生「在 mid 伺服器 xxx 上找不到 ipaffinity xxx」的錯誤。 (NEO-37514)
 
-### ![](assets/do-not-localize/limited_2.png)發行版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
+### 版本 21.1.4 - 版本編號 9342 {#release-21-1-4-build-9342}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2021 年 9 月 7 日_
 
@@ -66,7 +71,9 @@ _2021 年 9 月 7 日_
 * 修正當傳入轉變來自 FDA 資料來源時，無法在&#x200B;**擴充**&#x200B;工作流程活動中使用變數的問題。
 * 修正可能導致電子郵件訊息中 URL 損毀的問題。
 
-### ![](assets/do-not-localize/limited_2.png)發行版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
+### 版本 21.1.3 - 版本編號 9330 {#release-21-1-3-build-9330}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2021 年 6 月 5 日_
 
@@ -222,14 +229,18 @@ _2021 年 6 月 5 日_
 * 修正由於傳送個人化失敗的特定加入機制，您無法傳送包含一組校樣的傳送的問題。 (NEO-14391)
 * 修正了當查詢和擴充活動以傳送表格為目標時，無法連同警報活動傳送警報的問題。 (NEO-25157)
 
-### ![](assets/do-not-localize/red_2.png)發行版本 21.1.2 - 版本編號 9282 {#release-21-1-2-build-9282}
+### 版本 21.1.2 - 版本編號 9282 {#release-21-1-2-build-9282}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2021年 4 月 15 日_
 
 * 密碼管理已經過改善，而可最佳化安全性。
 * 修正可能導致 MTA 當機的問題。
 
-### ![](assets/do-not-localize/red_2.png)發行版本 21.1.1 - 版本編號 9277 {#release-21-1-1-build-9277}
+### 版本 21.1.1 - 版本編號 9277 {#release-21-1-1-build-9277}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2021 年 2 月 22 日_
 

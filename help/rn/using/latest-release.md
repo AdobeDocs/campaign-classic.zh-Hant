@@ -7,20 +7,20 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
-workflow-type: ht
-source-wordcount: '962'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '986'
+ht-degree: 99%
 
 ---
 
 # 最新版本{#latest-release}
 
-
-
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## ![](assets/do-not-localize/green_2.png)版本 7.3.3 - 版本編號 9359 {#release-7-3-3}
+## 版本 7.3.3 - 版本編號 9359 {#release-7-3-3}
+
+[!BADGE 一般可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
 >[!CAUTION]
 >
@@ -46,7 +46,9 @@ _2023 年 3 月 20 日_
 * 修正了無法在數位內容編輯器 (DCE) 捲動&#x200B;**編輯**&#x200B;索引標籤的問題。 (NEO-54474)
 * 修正當兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結問題。(NEO-48851)
 
-## ![](assets/do-not-localize/orange_2.png)版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
+## 版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
+
+[!BADGE 可用性限制]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="可用性限制"}
 
 _2022 年 11 月 21 日_
 

@@ -5,16 +5,18 @@ description: 進一步瞭解 Campaign Classic 2022 版本
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2025'
 ht-degree: 100%
 
 ---
 
 # 2022 版本{#release-2022}
 
-## ![](assets/do-not-localize/orange_2.png)版本 7.3.1 - 版本編號 9352 {#release-7-3-1}
+## 版本 7.3.1 - 版本編號 9352 {#release-7-3-1}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2022 年 7 月 1 日_
 
@@ -82,7 +84,9 @@ _2022 年 7 月 1 日_
 * 修正可能導致在訊息準備期間無法從外部伺服器以區塊模式上傳影像的問題。 (NEO-40307)
 * 修正了可能導致傳送給比預期更多收件者的問題。 (NEO-45108)
 
-## ![](assets/do-not-localize/green_2.png)版本 7.2.2 - 版本編號 9349 {#release-7-2-2}
+## 版本 7.2.2 - 版本編號 9349 {#release-7-2-2}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2022 年 3 月 1 日_
 
@@ -104,7 +108,9 @@ _2022 年 3 月 1 日_
 * 修復下列問題，在同時具有 1000 多個 broadlog 時重新整理傳遞性工作流程導致錯誤。 (NEO-40276)
 * 修復下列問題，無法自動更新未結比例及點選比例傳遞指示器。 (NEO-43253)
 
-## ![](assets/do-not-localize/limited_2.png)版本 7.2.1 - 版本編號 9346 {#release-7-2-1}
+## 版本 7.2.1 - 版本編號 9346 {#release-7-2-1}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2022 年 1 月 10 日_
 

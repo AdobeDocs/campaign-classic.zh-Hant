@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 97%
 
 ---
 
@@ -24,15 +24,26 @@ Adobe Campaign Classic 定期發行的產品更新帶來了新的功能、錯誤
 
 每個產品版本編號都帶有一個由[發行說明](latest-release.md)中的顏色所識別的狀態。
 
-![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 由 Adobe 建議、經過生產驗證的最新穩定版本。
 
-![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 僅隨需部署。
+| 狀態 | 說明 |
+|---|---|
+| [!BADGE 一般可用性]{type=Positive} | 最新穩定版本，已在生產環境中驗證，並受到Adobe推薦。 |
+| [!BADGE 可用性限制]{type=Neutral} | 僅限隨選部署。 |
+| [!BADGE 候選版]{type=Informative} | 具有新功能的最新版本編號。 |
+| [!BADGE 不再提供]{type=Caution} | 無部署。 無錯誤修正。 建議更新至較新的版本編號。 |
+| [!BADGE 已棄用]{type=negative} | 無部署。 無錯誤修正。 現有實施必須升級。 |
 
-![](assets/do-not-localize/blue3.png)**發行候選版本** (RC) - 具有新功能的最新版本編號。
+<!--
+![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
 
-![](assets/do-not-localize/orange3.png) **不再可用** — 無部署。無錯誤修正。 建議更新至較新的版本編號。
+![](assets/do-not-localize/limited3.png) **Limited Availability** (LA) - On-demand deployment only.
 
-![](assets/do-not-localize/red3.png) **已棄用** － 無部署。無錯誤修正。 現有實施必須升級。
+![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) - Latest build with new capabilities.
+
+![](assets/do-not-localize/orange3.png) **No longer available** - No deployment. No bug fix. Update to a newer build is recommended.
+
+![](assets/do-not-localize/red3.png) **Deprecated** - No deployment. No bug fix. Existing implementations must be upgraded.
+-->
 
 ## 版本週期{#rn-cycle}
 

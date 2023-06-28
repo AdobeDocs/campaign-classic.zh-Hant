@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,9 @@ ht-degree: 100%
 ## [!DNL Gold Standard] 發行說明
 
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 第 12 發行版本{#gs-12}
+### [!DNL Gold Standard] 第12發行版本{#gs-12}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2021 年 9 月 7 日_
 
@@ -38,7 +40,9 @@ _2021 年 8 月 27 日_
 * 追蹤簽章功能已經過改良，以防止連結至協力廠商工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 處理特殊字元。 URL 參數現在已編碼。
 * 修正日期選擇器可能導致主控台顯示封鎖程式錯誤訊息的問題。 (NEO-36345)
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 第 11 發行版本{#gs-11}
+### [!DNL Gold Standard] 第11版{#gs-11}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2021年 4 月 14 日_
 
@@ -83,7 +87,9 @@ _2020 年 12 月 22 日_
 
 * 修正執行&#x200B;**擴充**&#x200B;活動時，工作流程可能失敗的問題。(NEO-17338)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 10 發行版本{#gs-10}
+### [!DNL Gold Standard] 10版{#gs-10}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2020 年 7 月 7 日_
 
@@ -95,7 +101,9 @@ _2020 年 7 月 7 日_
 >
 >我們建議您使用此版本中可用的用戶端控制台進行升級。請參見[此頁面](../../installation/using/installing-the-client-console.md)。
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 9 發行版本{#gs-9}
+### [!DNL Gold Standard] 9版{#gs-9}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2020 年 6 月 22 日_
 
@@ -111,7 +119,9 @@ _2020 年 6 月 22 日_
 * 修正了反網路釣魚服務的問題。(NEO-25283)
 * 修正了在使用特定自訂追蹤公式時的追蹤問題。(NEO-25277)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 8 發行版本{#gs-8}
+### [!DNL Gold Standard] 8版{#gs-8}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2020 年 4 月 29 日_
 
@@ -136,7 +146,9 @@ _2020 年 4 月 29 日_
 * 修正了造成清理工作流程當機的迴歸。
 * 修正了清理工作流程記錄檔的次要迴歸。
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 6 發行版本{#gs-6}
+### [!DNL Gold Standard] 第6發行版本{#gs-6}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2020 年 3 月 9 日_
 
@@ -144,7 +156,9 @@ _2020 年 3 月 9 日_
 
 * 修正了使用 FTP over SSL 的外部帳戶的問題。(NEO-20498)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 5 發行版本{#gs-5}
+### [!DNL Gold Standard] 5版{#gs-5}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2019 年 12 月 17 日_
 
@@ -152,7 +166,9 @@ _2019 年 12 月 17 日_
 
 * 修正以下通訊頻道的追蹤問題：行動（SMS、MMS）、推播（iOS、Android）和社交網路（Facebook、Twitter）。(NEO-19595)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 4 發行版本{#gs-4}
+### [!DNL Gold Standard] 第4版本{#gs-4}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2019 年 12 月 11 日_
 
@@ -160,7 +176,9 @@ _2019 年 12 月 11 日_
 
 * 修正了在使用 MSSQL 資料庫傳送訊息時，所導致的效能問題。(NEO-17558)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 3 發行版本{#gs-3}
+### [!DNL Gold Standard] 3版{#gs-3}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2019 年 11 月 20 日_
 
@@ -170,7 +188,9 @@ _2019 年 11 月 20 日_
 * 修正了在多個傳遞顯示累積報告時所產生的問題。(NEO-18165)
 * 修正了可能封鎖或造成 Web 伺服器當機的問題。
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 第 2 發行版本{#gs-2}
+### [!DNL Gold Standard] 第2發行版本{#gs-2}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2019 年 9 月 19 日_
 
@@ -179,7 +199,9 @@ _2019 年 9 月 19 日_
 * 修正了為 Salesforce 而使用 CRM 連接器所產生的問題。(NEO-17712)
 * 修正了正在傳送異動訊息時，可能導致效能問題的索引問題。
 
-### ![](assets/do-not-localize/red_2.png) 發行版本 19.1.4 - 版本編號 9032{#release-19-1-4-build-9032}
+### 版本 19.1.4 - 版本編號 9032{#release-19-1-4-build-9032}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2019 年 8 月 13 日_
 
@@ -200,6 +222,7 @@ _2019 年 8 月 13 日_
 >除非另有提及，否則支援所有次要版本。
 >
 >Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從我們的相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
+>
 
 ### 作業系統{#OperatingSystems-gs}
 
