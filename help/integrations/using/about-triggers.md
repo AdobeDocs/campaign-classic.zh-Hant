@@ -7,16 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 2f6a5884e47ce10ce3c281a4377ee37522c52131
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 8%
+source-wordcount: '257'
+ht-degree: 7%
 
 ---
 
 # 使用Campaign和Experience Cloud觸發程式{#about-adobe-experience-triggers}
-
-
 
 [!DNL Triggers] 是使用管道的Adobe Campaign與Adobe Analytics之間的整合。 管道會從您的網站擷取使用者的動作或觸發器。 放棄購物車就是一個觸發器範例。 在Adobe Campaign中處理觸發器，以近乎即時地傳送電子郵件。
 
@@ -28,6 +26,8 @@ ht-degree: 8%
 
 由於設定最少且未涉及協力廠商，因此可支援更敏捷的整合。
 它也支援大量流量，而不會影響行銷活動的效能。 例如，整合每小時可處理100萬個觸發器。
+
+![](assets/do-not-localize/book.png) 瞭解如何 [建立Experience Cloud觸發程式](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) 識別、定義及監控重要的消費者行為。
 
 ## [!DNL Triggers] 架構 {#triggers-architecture}
 
