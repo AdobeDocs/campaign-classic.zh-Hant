@@ -5,9 +5,9 @@ description: 進一步瞭解檔案收集器工作流程活動
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,39 +32,39 @@ ht-degree: 0%
 
    * **[!UICONTROL Directory]**
 
-      包含要下載之檔案的目錄。 必須在伺服器上預先建立此目錄：如果目錄不存在，將會引發錯誤。
+     包含要下載之檔案的目錄。 必須在伺服器上預先建立此目錄：如果目錄不存在，將會引發錯誤。
 
    * **[!UICONTROL Filter]**
 
-      只會考慮符合此篩選器的檔案。 會忽略目錄中的其他檔案。 如果篩選器是空的，則會考慮目錄中的所有檔案。 篩選範例： **&#42;.zip**， **匯入 — &#42;.txt**.
+     只會考慮符合此篩選器的檔案。 會忽略目錄中的其他檔案。 如果篩選器是空的，則會考慮目錄中的所有檔案。 篩選範例： **&#42;.zip**， **匯入 — &#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
-      如果已啟用此選項，任務會在收到第一個檔案後結束。 如果目錄中存在與該篩選條件對應的多個檔案，則只會考慮一個檔案。 此選項可確保只傳送一個事件。 考慮的檔案是清單中第一個按字母順序排列的檔案。
+     如果已啟用此選項，任務會在收到第一個檔案後結束。 如果目錄中存在與該篩選條件對應的多個檔案，則只會考慮一個檔案。 此選項可確保只傳送一個事件。 考慮的檔案是清單中第一個按字母順序排列的檔案。
 
-      對於未排程的活動，如果在指定的目錄中找不到符合篩選器的檔案，並且 **[!UICONTROL Process file nonexistence]** 選項未啟用，將會引發錯誤。
+     對於未排程的活動，如果在指定的目錄中找不到符合篩選器的檔案，並且 **[!UICONTROL Process file nonexistence]** 選項未啟用，將會引發錯誤。
 
    * **[!UICONTROL Execution schedule]**
 
-      透過的引數決定檔案存在檢查的頻率 **[!UICONTROL Schedule]** 標籤。
+     透過的引數決定檔案存在檢查的頻率 **[!UICONTROL Schedule]** 標籤。
 
 1. **錯誤處理**
 
    提供下列兩個選項：
 
-   * **[!UICONTROL Process file nonexistence]**
+   * **[!UICONTROL Process missing file]**
 
-      每次在指定目錄中找不到符合篩選條件的檔案時，此選項都會起始特殊轉變。
+     每次在指定目錄中找不到符合篩選條件的檔案時，此選項都會起始特殊轉變。
 
-      如果未排程工作，此轉變將僅啟動一次。
+     如果未排程工作，此轉變將僅啟動一次。
 
-   * **[!UICONTROL Processing errors]**
+   * **[!UICONTROL Process errors]**
 
-      此選項會顯示特殊轉變，以便在產生錯誤時啟動。 在這種情況下，工作流程不會變更為錯誤狀態，並繼續執行
+     此選項會顯示特殊轉變，以便在產生錯誤時啟動。 在這種情況下，工作流程不會變更為錯誤狀態，並繼續執行
 
-      考慮的錯誤是檔案系統錯誤（無法移動檔案、無法存取目錄等）。
+     考慮的錯誤是檔案系統錯誤（無法移動檔案、無法存取目錄等）。
 
-      此選項不會處理與活動設定相關的錯誤，即無效值。
+     此選項不會處理與活動設定相關的錯誤，即無效值。
 
 1. **歷史化**
 
