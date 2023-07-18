@@ -2,13 +2,13 @@
 product: campaign
 title: 載入傳遞內容
 description: 載入傳遞內容
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 81d12ac055536fbe097466ad737bf7fee1b593ad
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 3%
+source-wordcount: '324'
+ht-degree: 4%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 1. 在 **[!UICONTROL Script]** 的標籤 **[!UICONTROL Delivery]** 活動，新增下列命令以載入傳送中匯入檔案的內容：
 
    ```
-   delivery.content.md.source=loadFile(vars.filename)
+   delivery.content.html.source=loadFile(vars.filename)
    ```
 
    ![](assets/delivery_loadcontent_script.png)
