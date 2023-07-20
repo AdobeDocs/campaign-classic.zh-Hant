@@ -2,14 +2,14 @@
 product: campaign
 title: 設定行銷活動選項
 description: 瞭解如何設定Campaign選項
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4011'
 ht-degree: 6%
 
 ---
@@ -72,11 +72,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> 一次為傳送建立的BroadLog數目。<br /> </td> 
+   <td> 在傳遞準備期間插入broadLog的最小批次大小（列數）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> 每個交易之記錄(broadLogs)的插入（插入表格） ：每個批次要處理的列數。<br /> </td> 
+   <td> 批次持續時間臨界值（毫秒數），在傳送準備期間，插入broadLogs的批次大小會加倍。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
@@ -740,11 +740,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用於整合的Adobe Target伺服器。 此選項預設為已選取。 此值對應至Adobe Target網域伺服器，後接值/m2。 例如： tt.omtrdc.net/m2。<br /> 另請參閱 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本節</a>.<br /> </td> 
+   <td> 用於整合的Adobe Target伺服器。 此選項預設為已選取。 此值對應至Adobe Target網域伺服器，後接值/m2。 例如： tt.omtrdc.net/m2。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端名稱。<br /> 另請參閱 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本節</a>.<br /> </td> 
+   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端名稱。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
