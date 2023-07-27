@@ -2,21 +2,19 @@
 product: campaign
 title: 關於 Adobe Campaign Classic
 description: 探索重要功能、使用者介面和全域準則
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '930'
 ht-degree: 92%
 
 ---
 
 # 開始使用Campaign Classic{#about-adobe-campaign-classic}
-
-
 
 為了實現高水準的客戶參與度並打造精彩的體驗，企業必須在所有接觸點建立一致的客戶歷程。現在，行銷人員可以有效地設計、規劃、執行、管理以及最佳化跨通路行銷活動，為行銷投資帶來更高的投資報酬，並且提高客戶的忠誠度。
 
@@ -24,10 +22,9 @@ ht-degree: 92%
 
 >[!AVAILABILITY]
 >
->* 本系列中的說明資料適用於其Campaign Classicv7 [最新建置](../../rn/using/latest-release.md). 當區段也套用至Campaign v8時，可使用特定徽章。
+>* 本系列中的說明資料適用於其Campaign Classicv7 [最新建置](../../rn/using/latest-release.md). 當區段也適用於Campaign v8時，可提供特定徽章。
 >
->* 現已提供Adobe Campaign v8檔案 [此處](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hant).
-
+>* Adobe Campaign v8檔案已可供參考 [此處](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hant).
 
 ![](assets/do-not-localize/how-to-video.png) [探索視訊中的主要功能](#video)
 
