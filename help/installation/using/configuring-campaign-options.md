@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: 設定行銷活動選項
+title: 設定Campaign選項
 description: 瞭解如何設定Campaign選項
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4012'
 ht-degree: 6%
 
 ---
 
 # Campaign Classic 選項清單{#configuring-campaign-options}
 
-此 **[!UICONTROL Administration / Platform / Options]** 節點可讓您設定Adobe Campaign選項。 其中有些是內建於安裝Campaign時，有些則可在需要時手動新增。 可用選項會因執行個體所安裝的套件而異。
+此 **[!UICONTROL Administration / Platform / Options]** 節點可讓您設定Adobe Campaign選項。 其中有些是內建在安裝Campaign時，有些則可視需要手動新增。 可用選項會因您執行個體所安裝的套件而異。
 
 
 >[!CAUTION]
 >
->* 此頁面中未列出的選項僅供內部使用， **不得修改**.
+>* 此頁面中未列出的選項僅供內部使用，而且 **不得修改**.
 >
 >* 修改或更新Adobe Campaign選項只能由專家使用者執行。
 
@@ -37,7 +37,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgDate</span> <br /> </td> 
-   <td> 從傳遞能力執行個體擷取的最後一個broadLogMsg日期。<br /> </td> 
+   <td> 上次從傳遞能力執行個體擷取的broadLogMsg日期。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgSent</span> <br /> </td> 
@@ -57,14 +57,14 @@ ht-degree: 6%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（如果指定的特定運運算元或運運算元群組要在傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式會以預設方式運作：只有傳送屬性中指定用於傳送的運運算元或運運算元群組（或管理員）才能確認並執行傳送。 請參閱<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">本節</a>。</p> </td> 
+   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（若指定的特定運運算元或運運算元群組用於傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式將依預設運作：只有傳送屬性中針對傳送指定的操作員或操作員群組（或管理員）才能確認並執行傳送。 請參閱<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">本節</a>。</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms：recipient)對話。<br /> 選項值必須對應至符合外部收件者表格的結構描述名稱。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
-   <td> 為了將傳遞視為計費報表中的主要傳遞而允許的最小收件者人數。<br /> </td> 
+   <td> 為了將傳遞視為計費報告中的主要傳遞而允許的最小收件者人數。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span> <br /> </td> 
@@ -72,19 +72,19 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> 在傳遞準備期間插入broadLog的最小批次大小（列數）。<br /> </td> 
+   <td> 在傳送準備期間插入broadLog的最小批次大小（列數）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> 批次持續時間臨界值（毫秒數），在傳送準備期間，插入broadLogs的批次大小會加倍。<br /> </td> 
+   <td> 批次持續時間臨界值（毫秒數），在準備傳送期間，插入broadLogs的批次大小會加倍。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
-   <td> 分析中間來源傳遞時分組傳遞部分的大小。<br /> </td> 
+   <td> 分析中間來源傳遞時傳遞部分的群組大小。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MsgValidityDuration</span> <br /> </td> 
-   <td> 預設傳遞期間（以秒為單位）。<br /> </td> 
+   <td> 傳送的預設傳送期間（以秒為單位）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RegexRules</span> <br /> </td> 
@@ -92,7 +92,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
-   <td> 輸入「1」作為值可讓您排除不想再被聯絡的收件者。<br /> </td> 
+   <td> 輸入"1"作為值可讓您排除不想再被聯絡的收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
@@ -104,7 +104,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span> <br /> </td> 
-   <td> 可讓您定義傳送訊息時使用的寄件者地址的語法。<br /> </td> 
+   <td> 可讓您定義傳送訊息時所用寄件者地址的語法。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
@@ -112,11 +112,11 @@ ht-degree: 6%
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> 可讓您定義從個人化URL下載並附加至電子郵件的影像允許的大小上限（以位元組為單位）。 預設值為100,000位元組。 傳送校樣並下載影像以處理電子郵件時，如果影像大小超過此值或發生下載問題，傳送記錄中會顯示錯誤，校樣傳送將失敗。<br /> </td> 
+   <td> 可讓您定義從個人化URL下載並附加至電子郵件的影像允許的大小上限（以位元組為單位）。 預設值為100,000位元組(100 KB)。 傳送校樣並下載影像以處理電子郵件時，如果影像大小超過此值或發生下載問題，傳送記錄中會顯示錯誤，且校樣傳送將失敗。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
-   <td> 可讓您設定電子郵件或交易式電子郵件範本中的附件數量上限。 如果超過此值，則傳送分析記錄檔或發佈交易式電子郵件範本時，會顯示警告。 預設值為1個附件。<br /> </td> 
+   <td> 可讓您設定電子郵件或交易式電子郵件範本中的最大附件數量。 如果超過此值，則傳送分析記錄檔或發佈交易式電子郵件範本時，會顯示警告。 預設值為1個附件。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
@@ -136,11 +136,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultErrorAddr</span> <br /> </td> 
-   <td> 如果使用者留空，則在用於電子郵件傳遞的執行個體層級預設「錯誤」電子郵件地址。<br /> </td> 
+   <td> 使用者留空時，執行個體用於電子郵件傳遞層級的預設「錯誤」電子郵件地址。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span> <br /> </td> 
-   <td> 如果使用者留空，則在用於電子郵件傳遞的執行個體層級預設「寄件者」電子郵件地址。<br /> </td> 
+   <td> 使用者留空時，執行個體用於電子郵件傳遞層級的預設「寄件者」電子郵件地址。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
@@ -148,19 +148,19 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客戶的一般名稱. 用於顯示給收件者的部分警告訊息。<br /> 「您收到此訊息是因為您曾與'Organization'或聯屬公司聯絡。 不再接收來自「組織」的訊息<br /> </td> 
+   <td> 客戶的一般名稱. 用於顯示給收件者的部分警告訊息。<br /> 「您收到此訊息是因為您曾與'Organization'或附屬公司聯絡。 不再接收來自「組織」的訊息<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
-   <td> 如果使用者留空，則在用於電子郵件傳遞的執行個體層級預設「寄件者」電子郵件標籤。<br /> </td> 
+   <td> 使用者留空時，在用於電子郵件傳遞的執行個體層級預設「寄件者」電子郵件標籤。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> 如果使用者留空，則在用於電子郵件傳遞的執行個體層級預設「回覆」電子郵件標籤。<br /> </td> 
+   <td> 使用者留空時，在用於電子郵件傳遞的執行個體層級預設「回覆」電子郵件標籤。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
-   <td> 兩次重試電子郵件訊息之間的期間（以秒為單位）。<br /> </td> 
+   <td> 電子郵件訊息兩次重試之間的期間（以秒為單位）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
@@ -168,11 +168,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsForecast_MsgWeightFormula</span> <br /> </td> 
-   <td> 用於計算臨時傳遞之訊息的權重的公式。<br /> </td> 
+   <td> 用於計算臨時傳遞之訊息重量的公式。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> 授權轉寄電子郵件地址的清單（來自傳入郵件處理模組）。 地址必須以逗號分隔（或*以允許全部）。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
+   <td> 授權轉寄電子郵件地址的清單（來自傳入郵件處理模組）。 位址必須以逗號分隔（或*以允許全部）。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -180,27 +180,27 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
-   <td> 在頻道「電子郵件」（使用作為預設） ：在傳送期間的SOFT錯誤，在讓收件者進入隔離之前接受的最大錯誤數量。<br /> </td> 
+   <td> 頻道「電子郵件」（使用作為預設值） ：在傳送期間發生SOFT錯誤，將收件者置於隔離之前接受的最大錯誤數量。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignalErrorDelay</span> <br /> </td> 
-   <td> 在頻道「電子郵件」（用作預設值） ：計及新的SOFT錯誤之前，自上次引用的SOFT錯誤以來的最短逗留時間。<br /> </td> 
+   <td> 頻道「電子郵件」（使用作為預設值） ：計及新的SOFT錯誤之前，自上次參考的SOFT錯誤以來的最短逗留時間。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
-   <td> 在頻道「行動」 ：在傳送期間的SOFT錯誤，在讓收件者進入隔離之前接受的最大錯誤數量。<br /> </td> 
+   <td> 在頻道「行動」 ：對於在傳送期間將收件者放入隔離區之前的SOFT錯誤，可接受的最大錯誤數量。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignalErrorDelay</span> <br /> </td> 
-   <td> 在頻道「行動」 ：計及新的SOFT錯誤之前，自先前引用的SOFT錯誤以來的最短逗留時間。<br /> </td> 
+   <td> 頻道「行動」 ：計及新的SOFT錯誤之前，自上次參考的SOFT錯誤以來的最短逗留時間。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> 允許指定最大時段（以小時表示），以限制每次執行同步工作流程時復原的broadlog數目。</a>.<br /> </td> 
+   <td> 允許指定最大時段（以小時表示）以限制每次執行同步工作流程時復原的broadlog數目。</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> MidSourcing工作階段中可並行執行的最大呼叫數（預設為3）。<br /> </td> 
+   <td> MidSourcing工作階段中可同時執行的最大呼叫數（預設為3）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
@@ -208,7 +208,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>此選項由 <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> 計算執行中傳遞數量時的技術工作流程。</p>它可讓您定義天數，超過該天數，狀態不一致的傳送將從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
+   <td><p>此選項由 <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> 計算執行中傳送數量時的技術工作流程。</p>它可讓您定義天數，超過該天后，狀態不一致的傳送會從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -232,10 +232,10 @@ ht-degree: 6%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> 映象頁面伺服器的URL （依預設，應與NmsTracking_ServerUrl相同）。<br /> 路由定義中未指定URL時，此為電子郵件傳送的預設值。<br /> </td> 
+   <td> 映象頁面伺服器的URL （預設應與NmsTracking_ServerUrl相同）。<br /> 若未在路由定義中指定URL，此為電子郵件傳送的預設值。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsSMS優先順序</span> <br /> </td> 
    <td> 已傳送SMS訊息的引數：傳送至SMS閘道的資訊，用以指出訊息優先順序。<br /> </td> 
   </tr> 
   <tr> 
@@ -244,7 +244,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryPeriod</span> <br /> </td> 
-   <td> 將執行SMS訊息重試的時間段。<br /> </td> 
+   <td> 將執行SMS訊息重試的時段。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
@@ -264,7 +264,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> 使用「0」值新增此選項，以停用傳遞的XML程式碼版本(按一下滑鼠右鍵/ <span class="uicontrol">編輯XML來源</span> 或 <span class="uicontrol">CTRL + F4</span> 捷徑)。<br /> </td> 
+   <td> 使用「0」值新增此選項，以停用傳遞的XML程式碼版本(按一下右鍵/ <span class="uicontrol">編輯XML來源</span> 或 <span class="uicontrol">CTRL + F4</span> 捷徑)。<br /> </td> 
   </tr>  
  </tbody> 
 </table>
@@ -299,7 +299,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> 影像上傳的設定. 值可以是none / tracking / script / list （可由運運算元的選用設定覆寫）。 </td> 
+   <td> 影像上傳的設定. 值可為無/追蹤/指令碼/清單（可由運運算元的選用設定覆寫）。 </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
@@ -315,7 +315,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> 可讓您定義儲存傳送中所用影像的伺服器，以便瀏覽器取得這些影像。<br /> 若為組建版本&lt;= 5098，我們會使用已上傳至執行個體的影像URL。<br /> 若為組建版本&gt; 5098，我們會改用傳送的公用URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 選項的URL。<br /> </td> 
+   <td> 可讓您定義儲存傳送中所用影像的伺服器，讓瀏覽器能夠取得。<br /> 若為組建版本&lt;= 5098，我們會使用已上傳至執行個體的影像URL。<br /> 若為組建版本&gt; 5098，我們改為使用傳送的公用URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 選項的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -352,7 +352,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">CrmMarketingActivityWindow</span> <br /> </td> 
-   <td> 顯示此月份數的行銷記錄。<br /> </td> 
+   <td> 顯示這個月份的行銷記錄。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_Duration</span> <br /> </td> 
@@ -360,7 +360,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_LimitConcurrency</span> <br /> </td> 
-   <td> 由operationMgt工作流程啟動的、一次可處理的最大傳遞/工作流程/假設/模擬工作數量。<br /> </td> 
+   <td> 由operationMgt工作流程啟動的一次可處理的最大傳遞/工作流程/假設/模擬工作數量。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
@@ -368,7 +368,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
-   <td> 排程模式中目標定位和擷取條件的時間段。<br /> </td> 
+   <td> 在排程模式中鎖定和擷取條件的時段。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Workflow_AnalysisThreshold</span> <br /> </td> 
@@ -380,11 +380,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span> <br /> </td> 
-   <td> 檢查暫停的工作流程之間要等待的天數。<br /> </td> 
+   <td> 檢查暫停的工作流程之間要等候的天數。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
-   <td> 輸入「1」作為值，以啟動作業擁有者的傳遞驗證。 若要停用此選項，請輸入「0」。<br /> </td> 
+   <td> 輸入「1」作為值，由作業的擁有者啟動傳遞驗證。 若要停用此選項，請輸入「0」。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsAsset_JavascriptExt</span> <br /> </td> 
@@ -405,7 +405,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">RestrictEditingOOTBSchema</span> <br /> </td> 
-   <td> （從21.1.3版開始）如果選取1 （預設值），此選項會停用內建結構的版本。<br /> </td> 
+   <td> （自21.1.3發行版本開始）如果選取1 （預設值），此選項會停用內建結構的版本。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">RestrictEditingOOTBJavascript</span> <br /> </td> 
@@ -413,7 +413,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
-   <td> （安裝相容性模式：建置&gt;6000）啟動時（值「1」），此選項允許使用儲存在資料庫中的舊密碼，以連線至外部帳戶或執行個體。<br /> </td> 
+   <td> （安裝相容性模式： build&gt;6000）啟動時（值「1」），此選項允許使用儲存在資料庫中的舊密碼，以連線至外部帳戶或執行個體。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
@@ -433,7 +433,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_SaveOptions_AllowNonAdmin</span> <br /> </td> 
-   <td> 若設為「true」，則授權非管理員運運算元可透過部署精靈更新xtkOption值。<br /> </td> 
+   <td> 若設為「true」，則授權的非管理員運運算元可透過部署精靈更新xtkOption值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Unsafe_DecryptString</span> <br /> </td> 
@@ -441,7 +441,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
-   <td> 輸入「1」值，在刪除記錄之前，透過修改其「修改者」欄位，追蹤mData中具有「稽核軌跡」資訊的元素的刪除作業。<br /> </td> 
+   <td> 輸入「1」值，在刪除記錄之前，透過修改其「修改者」欄位，追蹤mData中具有「稽核軌跡」資訊之元素的刪除作業。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -458,10 +458,10 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
-   <td> 將個人化的JavaScript程式庫，以豐富事件。 必須包含這兩個函式的實作：<br /> 
+   <td> 要個人化的JavaScript程式庫，以豐富事件。 必須包含這兩個函式的實作：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichedRtEvents(aiEventId)；</span> ：豐富並儲存資料庫中的事件(其中 <span class="uicontrol">aiEventId</span> 與已處理的即時事件表格相對應)。</p> </li> 
-     <li> <p> <span class="uicontrol">enrichedBatchEvents(aiEventId)；</span> ：豐富並儲存資料庫中的事件(其中 <span class="uicontrol">aiEventId</span> 與已處理批次事件的ID表格相對應)。</p> </li> 
+     <li> <p> <span class="uicontrol">extendedRtEvents(aiEventId)；</span> ：豐富並儲存資料庫中的事件(其中 <span class="uicontrol">aiEventId</span> 對應於已處理的即時事件表格)。</p> </li> 
+     <li> <p> <span class="uicontrol">extendedBatchEvents(aiEventId)；</span> ：豐富並儲存資料庫中的事件(其中 <span class="uicontrol">aiEventId</span> 對應於已處理批次事件的ID表格)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -470,9 +470,9 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
-   <td> 將針對路由事件個人化的JavaScript資料庫。 必須包含這兩個函式的實作：<br /> 
+   <td> 將個人化路由事件的JavaScript資料庫。 必須包含這兩個函式的實作：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId)；</span> ：傳回所選用來處理即時事件的交易式訊息的內部名稱(其中 <span class="uicontrol">iEventId</span> 與處理的即時事件ID相對應)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId)；</span> ：傳回選取用來處理即時事件的交易式訊息的內部名稱(其中 <span class="uicontrol">iEventId</span> 與處理的即時事件ID相對應)。</p> </li> 
      <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId)；</span> ：傳回所選用來處理批次事件的交易式訊息的內部名稱(其中 <span class="uicontrol">iEventId</span> 對應於已處理批次事件的ID)。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -596,7 +596,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_PropositionPurgeDelay</span> <br /> </td> 
-   <td><p> 可讓您定義延遲，之後會從資料庫中清除建議。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
+   <td><p> 可讓您定義延遲，之後會從資料庫中清除主張。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span> <br /> </td> 
@@ -604,7 +604,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RecycledDeliveryPurgeDelay</span> <br /> </td> 
-   <td> <p>可讓您定義延遲，之後會從資料庫中清除已回收的傳遞。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
+   <td> <p>可讓您定義延遲，之後會從資料庫中清除循環傳送。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RejectsPurgeDelay</span> <br /> </td> 
@@ -616,15 +616,15 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_TrackingStatPurgeDelay</span> <br /> </td> 
-   <td><p> 可讓您定義延遲，過了此延遲之後，追蹤統計資料就會從資料庫中清除。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
+   <td><p> 可讓您定義延遲，過了此延遲後，追蹤統計資料就會從資料庫中清除。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_VisitorPurgeDelay</span> <br /> </td> 
-   <td> <p>可讓您定義訪客從資料庫中清除的延遲。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
+   <td> <p>可讓您定義從資料庫清除訪客之後的延遲。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_WorkflowResultPurgeDelay</span> <br /> </td> 
-   <td> <p>可讓您定義延遲，之後會從資料庫中清除工作流程結果。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
+   <td> <p>可讓您定義延遲時間，過了這段時間，工作流程結果就會從資料庫中清除。</p><p> 在介面中修改延遲後，就會自動建立此選項。 如果您修改選項清單中的值，該值應以秒為單位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_AzureDw</span> <br /> </td> 
@@ -632,7 +632,7 @@ ht-degree: 6%
   </tr>
    <tr> 
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span> <br /> </td> 
-   <td>可讓您根據下列潛在值，影響所有工作流程和PostgreSQL資料庫查詢的「無條件停止」行為：<ul>
+   <td>可讓您根據下列潛在值，影響所有工作流程和PostgreSQL資料庫查詢的無條件停止行為：<ul>
     <li><p>0 — 預設：停止工作流程處理，對資料庫沒有影響<p></li>
     <li><p>1 - pg_cancel_backend：停止工作流程處理並取消資料庫中的查詢<p></li>
     <li><p>2 - pg_terminate_backend：停止工作流程處理並終止資料庫中的查詢<p></li></ul></td> 
@@ -655,11 +655,11 @@ ht-degree: 6%
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 可讓您為Microsoft SQL Server上的工作表格設定個別的資料庫，以最佳化備份與復寫。 選項對應於臨時資料庫的名稱：如果指定，會將工作表寫入此資料庫。 範例： 'tempdb.dbo.' （請注意，名稱必須以點結尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">深入了解</a> <br /> </td> 
+   <td> 可讓您為Microsoft SQL Server上的工作表格設定個別的資料庫，以最佳化備份與復寫。 選項與暫存資料庫的名稱相對應：如果指定，會將工作表寫入此資料庫。 範例： 'tempdb.dbo.' （請注意，名稱必須以點結尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">深入了解</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
-   <td> Adobe Campaign執行個體的時區。 另請參閱 <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">設定</a>.<br /> </td> 
+   <td> Adobe Campaign例項的時區。 另請參閱 <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">設定</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
@@ -683,10 +683,10 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
-   <td> 在此時間之後建立的所有自訂結構描述（具有autopk="true"且沒有屬性"pkSequence"）將獲得自動產生的序列"auto_ 
+   <td> 在此時間之後建立的所有自訂結構描述，若具有autopk="true"且沒有屬性"pkSequence"，將會取得自動產生的序列"auto_ 
     &lt;schemanamespace&gt; 
      &lt;schemaname&gt;
-       序號(_S) 
+       序列(_S) 
    </td> 
   </tr> 
   <tr> 
@@ -703,7 +703,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> 依照下列語法，取得有關升級後所發生錯誤的資訊：<br /> <strong>{組建編號}：{mode： pre/post/...}：{發生錯誤的「lessThan」/「greaterOrEquelThan」+子步驟}</strong> </td> 
+   <td> 依照下列語法，取得有關升級後所發生錯誤的資訊：<br /> <strong>{組建編號}：{mode： pre/post/...}：{發生錯誤的'lessThan'/'greaterOrEquelThan' +子步驟}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -728,7 +728,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> 可讓您設定Experience Cloud觸發程式。 資料型別為「長文字」，且必須採用JSON格式。 另請參閱 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何搭配Adobe Campaign Classic使用Experience Cloud觸發程式</a>.<br /> </td> 
+   <td> 可讓您設定Experience Cloud觸發器。 資料型別為「長文字」，且必須採用JSON格式。 另請參閱 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何搭配Adobe Campaign Classic使用Experience Cloud觸發程式</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -740,11 +740,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用於整合的Adobe Target伺服器。 此選項預設為已選取。 此值對應至Adobe Target網域伺服器，後接值/m2。 例如： tt.omtrdc.net/m2。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
+   <td> 用於整合的Adobe Target伺服器。 依預設，已選取此選項。 此值對應至Adobe Target網域伺服器，然後是值/m2。 例如： tt.omtrdc.net/m2。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端名稱。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
+   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端的名稱。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -760,7 +760,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
-   <td> 配置單元聯結器選項。<br /> </td> 
+   <td> Hive聯結器選項。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -777,7 +777,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsCoupons_MaxPerTransac</span> <br /> </td> 
-   <td> 每個SQL交易更新的抵用券數目。<br /> </td> 
+   <td> 每個SQL交易更新的優惠券數目。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchControl_</span> <br /> </td> 
@@ -785,7 +785,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchExec_</span> <br /> </td> 
-   <td> '+ [ proposition的結構描述] + "_" + extAccountSource。@executionInstanceId + "_" + extAccountTarget。@executionInstanceId<br /> </td> 
+   <td> '+ [主張的結構描述] + "_" + extAccountSource。@executionInstanceId + "_" + extAccountTarget。@executionInstanceId<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_SynchWorkflowIds</span> <br /> </td> 
@@ -793,11 +793,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_UseDaemon</span> <br /> </td> 
-   <td> 啟用/停用非同步主張寫入（「0」表示停用，「1」表示啟用）。<br /> </td> 
+   <td> 啟用/停用非同步主張寫入（"0"為停用，"1"為啟用）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsModule_CouponsEnabled</span> <br /> </td> 
-   <td> 可讓您啟用抵用券。<br /> </td> 
+   <td> 可讓您啟用優惠券。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -833,8 +833,8 @@ ht-degree: 6%
    <td> 公用Web應用程式伺服器的基底URL。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkPassUnknownSQLFunctionsToRDBMS</span> <br /> </td> 
-   <td> 可讓您在移轉後繼續使用舊的未宣告SQL函式。 由於此選項會帶來安全性風險，我們強烈建議不要使用此選項。<br /> </td> 
+   <td> <span class="uicontrol">xtkpassunknowledsqlfunctionsToRDBMS</span> <br /> </td> 
+   <td> 可讓您在移轉後繼續使用舊的未宣告SQL函式。 由於此選項會帶來安全性風險，因此強烈建議不要使用此選項。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -863,11 +863,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Instance</span> <br /> </td> 
-   <td> 可讓您定義追蹤伺服器上的執行個體名稱。<br /> </td> 
+   <td> 可讓您在追蹤伺服器上定義執行個體名稱。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_LastConsolidation</span> <br /> </td> 
-   <td> 上次使用新資料合併追蹤資訊的時間。<br /> </td> 
+   <td> 上次已使用新資料合併追蹤資訊的時間。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
@@ -891,7 +891,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ServerUrlList</span> <br /> </td> 
-   <td> 用來聯絡追蹤伺服器的URL清單。<br /> </td> 
+   <td> 用於聯絡追蹤伺服器的URL清單。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_UserAgentRules</span> <br /> </td> 
@@ -899,11 +899,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebFormula</span> <br /> </td> 
-   <td> 用於計算網頁追蹤標籤的指令碼。<br /> </td> 
+   <td> 用來計算網頁追蹤標籤的指令碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebTrackingDelivery</span> <br /> </td> 
-   <td> 為網頁追蹤管理設計的虛擬傳遞名稱。<br /> </td> 
+   <td> 為網站追蹤管理所設計的虛擬傳遞名稱。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebTrackingMode</span> <br /> </td> 
@@ -924,11 +924,11 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_ConfirmDeletePending</span> <br /> </td> 
-   <td> 如果選取選項1，則必須在第二個步驟中手動在介面中確認刪除。 否則，將會刪除資料而不確認。<br /> </td> 
+   <td> 如果選取選項1，則必須在第二個步驟中在介面中手動確認刪除。 否則，將會刪除資料而不進行確認。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_ConfirmDeletePendingDelay</span> <br /> </td> 
-   <td> 請求等待刪除確認與請求之間的延遲已取消。<br /> </td> 
+   <td> 請求等待刪除確認與請求被取消之間的延遲。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_MaxErrorAllowed</span> <br /> </td> 
@@ -936,7 +936,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_PurgeDelay</span> <br /> </td> 
-   <td> 在佇列上建立請求之間的延遲，並且刪除請求資料。<br /> </td> 
+   <td> 在佇列上建立請求之間的延遲會刪除請求資料。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -965,7 +965,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
-   <td> 在Adobe Campaign中啟用自動建立運運算元和許可權。<br /> </td> 
+   <td> 在Adobe Campaign中啟用自動建立操作者和許可權。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span> <br /> </td> 
@@ -973,7 +973,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearch</span> <br /> </td> 
-   <td> 在目錄中啟用DN搜尋。<br /> </td> 
+   <td> 啟用目錄中的DN搜尋。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchBase</span> <br /> </td> 
@@ -993,7 +993,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Rights</span> <br /> </td> 
-   <td> 啟用從LDAP目錄到Adobe Campaign中已命名許可權的授權和群組同步。<br /> </td> 
+   <td> 啟用授權和群組從LDAP目錄到Adobe Campaign中已命名許可權的同步。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsAttr</span> <br /> </td> 
@@ -1034,15 +1034,15 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">XtkUseScrollBar</span> <br /> </td> 
-   <td> 值設為1可允許將卷軸新增至詳細資料表單。<br /> </td> 
+   <td> 值設為1可讓詳細資料表單新增卷軸。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_Instance</span> <br /> </td> 
-   <td> 在「其他伺服器」模式中用於網頁表單失效的例項。<br /> </td> 
+   <td> 在「其他伺服器」模式下用於綢頁表單失效的執行個體。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_Password</span> <br /> </td> 
-   <td> 在「其他伺服器」模式下用於網頁表單失效的執行個體密碼。<br /> </td> 
+   <td> 在「其他伺服器」模式下用於綢頁表單失效的執行個體密碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
@@ -1050,7 +1050,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 
-   <td> 為網路表單失效而聯絡的個人化伺服器位址清單（「其他伺服器」模式）。<br /> </td> 
+   <td> 為Web表單失效而聯絡的伺服器個人化位址清單（「其他伺服器」模式）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
