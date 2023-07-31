@@ -1,16 +1,17 @@
 ---
 product: campaign
 title: 設定Vertica analytics的存取權
-description: 瞭解如何在FDA中設定Vertica analytics的存取權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 瞭解如何設定FDA中Vertica analytics的存取權
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 
 
-使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定對的存取權 [!DNL Vertica Analytics].
+使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定存取權至 [!DNL Vertica Analytics].
 
 1. 設定 [!DNL Vertica Analytics] 於 [CentOS](#vertica-centos)， [Windows](#vertica-windows) 或 [Debian](#vertica-debian)
 1. 設定 [!DNL Vertica Analytics] [外部帳戶](#vertica-external) 在Campaign中
@@ -38,7 +39,7 @@ ht-degree: 0%
    yum install unixODBC.x86_64
    ```
 
-1. 如果您先前已安裝 [!DNL Vertica Analytics] 伺服器，將會安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
+1. 如果您先前已安裝 [!DNL Vertica Analytics] 伺服器，已經安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
 
    ```
    #Switch to root
@@ -77,15 +78,15 @@ ht-degree: 0%
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. 然後，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
+1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
 
 ## Windows上的Vertica analytics {#vertica-windows}
 
-1. 下載 [適用於Windows的ODBC驅動程式](https://www.vertica.com/download/vertica/client-drivers/). 若要安裝適用於Windows的驅動程式，您必須啟用.NET Framework 3.5，否則安裝精靈會嘗試自動啟用並下載它。
+1. 下載 [適用於Windows的ODBC驅動程式](https://www.vertica.com/download/vertica/client-drivers/). 若要安裝適用於Windows的驅動程式，您必須啟用.NET Framework 3.5，否則安裝精靈會嘗試自動啟用並下載驅動程式。
 
 1. 在Windows中設定ODBC驅動程式。 有關詳細資訊，請參閱 [此頁面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. 然後，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertical-external).
+1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertical-external).
 
 ## Debian上的Vertica analytics {#vertica-debian}
 
@@ -97,7 +98,7 @@ ht-degree: 0%
    apt-get install unixODBC
    ```
 
-1. 如果您先前已安裝 [!DNL Vertica Analytics] 伺服器，將會安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
+1. 如果您先前已安裝 [!DNL Vertica Analytics] 伺服器，已經安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
 
    ```
    #Switch to root
@@ -139,11 +140,11 @@ ht-degree: 0%
    Port = 5433
    ```
 
-1. 然後，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
+1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
 
 ## vertica analytics外部帳戶 {#vertica-external}
 
-您需要建立 [!DNL Vertica Analytics] 將您的Campaign執行個體連線至您的外部帳戶 [!DNL Vertica Analytics] 外部資料庫。
+您需要建立 [!DNL Vertica Analytics] 將您的Campaign執行個體連線到您的外部帳戶 [!DNL Vertica Analytics] 外部資料庫。
 
 1. 從Campaign **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 

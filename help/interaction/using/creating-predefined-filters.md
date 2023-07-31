@@ -2,14 +2,15 @@
 product: campaign
 title: 建立預先定義的篩選
 description: 建立預先定義的篩選
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '103'
 ht-degree: 10%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 10%
 
 
 
-預先定義的篩選器可讓您建立目標群體的適用性規則，這些規則可在建立優惠方案期間輕鬆重複使用。 它們是每個環境專屬的，並考慮到選件引數。
+預先定義的篩選器可讓您建立目標群體的適用性規則，這些規則可在建立優惠方案期間輕鬆重複使用。 它們是每個環境專屬的行為，並將優惠方案引數列入考量。
 
 若要建立篩選，請套用下列程式：
 

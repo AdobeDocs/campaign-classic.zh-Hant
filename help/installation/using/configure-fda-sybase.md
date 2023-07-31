@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: 設定Sybase IQ的存取權
-description: 瞭解如何在FDA中設定Sybase IQ的存取權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 瞭解如何在FDA中設定Sybase IQ存取權
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -25,46 +26,46 @@ ht-degree: 1%
 
 ## sybase IQ設定 {#configuring-sybase}
 
-若要在FDA中連線至Sybase IQ外部資料庫，需要在Adobe Campaign伺服器上設定下列其他設定。
+在FDA中連線Sybase IQ外部資料庫需要在Adobe Campaign伺服器上設定以下其他設定。
 
 >[!NOTE]
 >
 >開始之前，請確定 **unixodbc** 封裝在伺服器上。
 
-1. 安裝 **iq_odbc**. 安裝結束時可能會發生錯誤。 可以忽略此錯誤。
+1. 安裝 **iq_odbc**. 安裝結束時可能會發生錯誤。 可忽略此錯誤。
 
-1. 安裝 **iq_client_common**. 安裝結束時可能會發生Java錯誤。 可以忽略此錯誤。
+1. 安裝 **iq_client_common**. 安裝結束時，可能會發生Java錯誤。 可忽略此錯誤。
 
-1. 設定ODBC驅動程式。 可在標準檔案中執行設定：/etc/odbc.ini用於一般引數，/etc/odbcinst.ini用於宣告驅動程式：
+1. 設定ODBC驅動程式。 可在標準檔案中進行設定：/etc/odbc.ini用於一般引數，/etc/odbcinst.ini用於宣告驅動程式：
 
    * **/etc/odbc.ini** (取代下列值： `<server_alias>` 個字元)：
 
-      ```
-      [ODBC Data Sources]
-      <server_alias>=libdbodbc.so
-      
-      [<server_alias>]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      Description=<description>
-      Username=<username>
-      Password=<password>
-      ServerName=<server_name>
-      CommLinks=tcpip(host=<host>)
-      ```
+     ```
+     [ODBC Data Sources]
+     <server_alias>=libdbodbc.so
+     
+     [<server_alias>]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     Description=<description>
+     Username=<username>
+     Password=<password>
+     ServerName=<server_name>
+     CommLinks=tcpip(host=<host>)
+     ```
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      SAP SybaseIQ=Installed
-      
-      [SAP SybaseIQ]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      ```
+     ```
+     [ODBC DRIVERS]
+     SAP SybaseIQ=Installed
+     
+     [SAP SybaseIQ]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     ```
 
 1. 在LD_LIBRARY_PATH變數中新增新libodbc16.so程式庫的路徑。 若要這麼做：
 
-   * 如果您使用customer.sh檔案宣告路徑：為LD_LIBRARY_PATH變數新增路徑/opt/sybase/IQ-16_0/lib64。
+   * 如果您使用customer.sh檔案宣告路徑：新增路徑/opt/sybase/IQ-16_0/lib64作為LD_LIBRARY_PATH變數。
    * 否則，請使用Unix指令。
 
 ## sybase IQ外部帳戶 {#sybase-external}
@@ -89,4 +90,4 @@ sybase IQ外部帳戶可讓您將您的Campaign執行個體連線至Sybase IQ外
 
 >[!NOTE]
 >
->對於Windows，您必須在Adobe Campaign伺服器上安裝Sybase IQ使用者端並建立ODBC連線。 當Adobe Campaign伺服器(nlserver)在Windows中作為服務執行時，請務必建立系統資料來源。
+>對於Windows，您必須在Adobe Campaign伺服器上安裝Sybase IQ使用者端並建立ODBC連線。 當Adobe Campaign伺服器(nlserver)在Windows中當做服務執行時，請務必建立系統資料來源。

@@ -2,15 +2,16 @@
 product: campaign
 title: 定義篩選條件
 description: 定義篩選條件
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Query Editor
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 37%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 37%
 
 ## 選擇運運算元 {#choosing-the-operator}
 
-在篩選條件內，您需要使用運運算元將兩個值連結在一起。
+在篩選條件下，您需要使用運運算元將兩個值連結在一起。
 
 ![](assets/query_editor_nveau_96.png)
 
@@ -38,18 +39,18 @@ ht-degree: 37%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Equal to</span> <br /> </td> 
-   <td> 傳回與第二個「值」欄中輸入的資料完全相同的結果。<br /> </td> 
+   <td> 傳回與第二個「值」欄中所輸入資料相同的結果。<br /> </td> 
    <td> <strong>姓氏(@lastName)等於'Jones'</strong>，只會傳回姓氏為Jones的收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Greater than</span> <br /> </td> 
    <td> 傳回大於輸入值的值。<br /> </td> 
-   <td> <strong>年齡(@age)大於50</strong>，會傳回所有大於'50'的值，即'51'、'52'等。<br /> </td> 
+   <td> <strong>年齡(@age)大於50</strong>，會傳回所有大於'50'的值，即'51'、'52'等<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Less than</span> <br /> </td> 
    <td> 傳回小於輸入值的值。<br /> </td> 
-   <td> <strong>「DaysAgo(100)」之前的建立日期(@created)</strong>，會傳回在100天內建立的所有收件者。<br /> </td> 
+   <td> <strong>在「DaysAgo(100)」之前的建立日期(@created)</strong>，會傳回在100天前建立的所有收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Greater than or equal to</span> <br /> </td> 
@@ -59,11 +60,11 @@ ht-degree: 37%
   <tr> 
    <td> <span class="uicontrol">Less than or equal to</span> <br /> </td> 
    <td> 傳回等於或小於輸入值的所有值。<br /> </td> 
-   <td> <strong>年齡(@age)小於或等於「60」</strong>，會傳回年齡在60歲或以下的全部收件者。<br /> </td> 
+   <td> <strong>年齡(@age)小於或等於「60」</strong>，會傳回年齡在60歲或以下的所有收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不等於</span> <br /> </td> 
-   <td> 傳回與輸入值不相同的全部值。<br /> </td> 
+   <td> 傳回所有與輸入值不相同的值。<br /> </td> 
    <td> <strong>等於'English'的語言(@language)</strong>.<br /> </td> 
   </tr> 
   <tr> 
@@ -73,8 +74,8 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">開頭不是</span> <br /> </td> 
-   <td> 傳回不以輸入值開頭的結果<br /> </td> 
-   <td> <strong>帳戶# (@account)的開頭不是'20'</strong>.<br /> </td> 
+   <td> 傳回不是以輸入值開頭的結果<br /> </td> 
+   <td> <strong>帳戶# (@account)的開頭不是「20」</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Contains</span> <br /> </td> 
@@ -84,37 +85,37 @@ ht-degree: 37%
   <tr> 
    <td> <span class="uicontrol">不包含</span> <br /> </td> 
    <td> 傳回不包含輸入值的結果。<br /> </td> 
-   <td> <strong>電子郵件網域(@domain)不包含'vo'</strong>. 在這種情況下，將不會傳回包含'vo'的網域名稱。 'voila.fr'網域名稱不會出現在結果中。<br /> </td> 
+   <td> <strong>電子郵件網域(@domain)不包含「vo」</strong>. 在此情況下，將不會傳回包含'vo'的網域名稱。 'voila.fr'網域名稱不會出現在結果中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Like</span> <br /> </td> 
    <td> <span class="uicontrol">Like</span> 與　<span class="uicontrol">Contains</span>　運算子非常類似。它可讓您插入 <span class="uicontrol">%</span> 值中的萬用字元。<br /> </td> 
-   <td> <strong>姓氏(@lastName)，如'Jon%s'</strong>. 在此處，萬一運運算元忘了'n'和's'之間的遺漏字母，萬一使用萬用字元作為"joker"來尋找名稱"Jones"。<br /> </td> 
+   <td> <strong>姓氏(@lastName)，如'Jon%s'</strong>. 在此處，萬一運運算元忘了'n'與's'之間的遺漏字母，萬一使用萬用字元作為"joker"來尋找名稱"Jones"。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
-   <td> 類似 <span class="uicontrol">Like</span>。可讓您不復原輸入的值。 在這裡，輸入的值也必須包含 <span class="uicontrol">%</span> 萬用字元。<br /> </td> 
+   <td> 類似 <span class="uicontrol">Like</span>。讓您不復原輸入的值。 在這裡，輸入的值也必須包含 <span class="uicontrol">%</span> 萬用字元。<br /> </td> 
    <td> <strong>姓氏(@lastName)不像'Smi%h'</strong>. 在此，將不會傳回姓氏為'Smi%h'的收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Is empty</span> <br /> </td> 
-   <td> 在此案例中，我們尋找的結果符合第二個「值」欄中的空白值。<br /> </td> 
-   <td> <strong>行動(@mobilePhone)是空的</strong> 傳回沒有行動號碼的所有收件者。<br /> </td> 
+   <td> 在此案例中，我們要尋找的結果符合第二個「值」欄中的空白值。<br /> </td> 
+   <td> <strong>行動(@mobilePhone)是空的</strong> 傳回沒有行動電話號碼的所有收件者。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不是空的</span> <br /> </td> 
-   <td> 與反向運作 <span class="uicontrol">空白</span> 運運算元。 不需要在第二個「值」欄中輸入資料。<br /> </td> 
+   <td> 與的作用相反 <span class="uicontrol">是空的</span> 運運算元。 不需要在第二個「值」欄中輸入資料。<br /> </td> 
    <td> <strong>電子郵件(@email)不是空的</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">包含在</span> <br /> </td> 
    <td> 傳回指定值中包含的結果。 這些值必須以逗號分隔。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)包含在「1979/12/10/1984」中</strong>，會傳回這些日期之間出生的收件者。 <br /> </td> 
+   <td> <strong>出生日期(@birthDate)包含在'12/10/1979,12/10/1984'中</strong>，會傳回這些日期之間出生的收件者。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">未包含在</span> <br /> </td> 
-   <td> 運作方式與 <span class="uicontrol">包含在</span> 運運算元。 在此，我們要根據輸入的值排除收件者。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)不包含在'12/10/1979、12/10/1984'中</strong>. 和上一個範例不同，不會傳回這些日期內出生的收件者。<br /> </td> 
+   <td> <span class="uicontrol">中未包含</span> <br /> </td> 
+   <td> 運作方式如下 <span class="uicontrol">包含在</span> 運運算元。 在此，我們要根據輸入的值排除收件者。<br /> </td> 
+   <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'中</strong>. 和上一個範例不同，系統不會傳回這些日期內出生的收件者。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -134,28 +135,28 @@ ht-degree: 37%
 * **[!UICONTROL And]**：新增條件並啟用過度篩選。
 * **[!UICONTROL Or]**：新增條件並啟用過度篩選。
 
-   下列範例可讓您尋找電子郵件網域包含「orange.co.uk」或其後置程式碼開頭為「NW」的收件者。
+  下列範例可讓您尋找電子郵件網域包含「orange.co.uk」或其後置程式碼開頭為「NW」的收件者。
 
-   ![](assets/query_condition_modif_02.png)
+  ![](assets/query_condition_modif_02.png)
 
-* **[!UICONTROL Except]**：如果您有兩個篩選器，且第一個篩選器未傳回值，則此型別的連結會建立例外。
+* **[!UICONTROL Except]**：如果您有兩個篩選器，且第一個篩選器未傳回值，則此型別的連結會建立例外狀況。
 
-   在以下範例中，我們希望傳回其電子郵件網域包含「orange.co.uk」的收件者，除非收件者的姓氏是「Smith」。
+  在以下範例中，我們希望傳回其電子郵件網域包含「orange.co.uk」的收件者，但如果收件者的姓氏為「Smith」則除外。
 
-   ![](assets/query_condition_modif_03.png)
+  ![](assets/query_condition_modif_03.png)
 
-此範例顯示可讓您顯示的篩選器：會說西班牙文的收件者、擁有行動號碼的女性收件者、沒有帳號且公司名稱開頭為「N」的收件者。
+此範例顯示一個篩選器，可讓您顯示：會說西班牙文的收件者，或者是擁有行動號碼的女性，或者是沒有帳號且其公司名稱以字母「N」開頭的收件者。
 
 ![](assets/query_editor_nveau_31.png)
 
 ## 排定條件優先順序 {#prioritizing-conditions}
 
-本節說明如何藉由工具列中的藍色箭頭來排列條件的優先順序。
+本節說明如何使用工具列中的藍色箭頭來排列條件的優先順序。
 
 * 指向右側的箭頭可讓您在篩選器中加入一層括弧。
 * 指向左側的箭頭可讓您從篩選器中刪除選取的括弧層級。
 
-   ![](assets/query_condition_modif_04.png)
+  ![](assets/query_condition_modif_04.png)
 
 * 垂直箭頭可讓您移動條件，進而變更其執行順序。
 
@@ -169,7 +170,7 @@ ht-degree: 37%
 
 ## 選取要擷取的資料 {#selecting-data-to-extract}
 
-可用的欄位會因表格而異。 所有欄位都會儲存在稱為 **[!UICONTROL Main element]**. 在以下範例中，可用欄位位於收件者表格中。 欄位一律依字母順序顯示。
+可用的欄位因表格而異。 所有欄位都儲存在稱為 **[!UICONTROL Main element]**. 在下列範例中，可用的欄位位於收件者表格中。 欄位一律依字母順序顯示。
 
 所選欄位的詳細資訊會顯示在視窗底部。 例如， **[!UICONTROL Email domain]** 欄位是 **[!UICONTROL Calculated SQL field]** 其擴充功能為 **[!UICONTROL (@domain)]**.
 
@@ -177,21 +178,21 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->使用 **[!UICONTROL Search]** 尋找可用欄位的工具。
+>使用 **[!UICONTROL Search]** 用於尋找可用欄位的工具。
 
 連按兩下可用欄位，將其新增至輸出欄。 在查詢結束時，每個選取的欄位都會在 **[!UICONTROL Data preview]** 視窗。
 
 ![](assets/query_editor_nveau_01.png)
 
-預設不會顯示進階欄位。 按一下 **[!UICONTROL Display advanced fields]** 右下角的可用欄位以顯示所有內容。 再按一下可返回前一個檢視。
+預設不會顯示進階欄位。 按一下 **[!UICONTROL Display advanced fields]** 在可用欄位的右下角顯示所有內容。 再按一下可返回前一個檢視。
 
-例如，在收件者表格中，進階欄位為 **布林值1**， **[!UICONTROL Boolean 2]**， **[!UICONTROL Boolean 3]**， **[!UICONTROL Foreign key of "Folder" link]**&#x200B;等。
+例如，在收件者表格中，進階欄位為 **布林值1**， **[!UICONTROL Boolean 2]**， **[!UICONTROL Boolean 3]**， **[!UICONTROL Foreign key of "Folder" link]**&#x200B;等
 
 下列範例顯示收件者表格的進階欄位。
 
 ![](assets/query_editor_nveau_53.png)
 
-各種類別的欄位：
+各種欄位類別：
 
 <table> 
  <thead> 
@@ -214,13 +215,13 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_02.png" /> </td> 
-   <td> 外部索引鍵。 用作其他表格的連結。<br /> </td> 
+   <td> 外部索引鍵。 用作另一個表格的連結。<br /> </td> 
    <td> 收件者外部金鑰、服務外部金鑰等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> 計算欄位. 根據請求，使用資料庫中的值計算此型別的欄位。<br /> </td> 
-   <td> 年齡、電子郵件網域等。<br /> </td> 
+   <td> 計算欄位. 根據請求，會使用資料庫中的值計算此型別的欄位。<br /> </td> 
+   <td> 年齡、電子郵件網域等<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_49.png" /> </td> 
@@ -229,8 +230,8 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_50.png" /> </td> 
-   <td> 索引的SQL欄位。 <br /> </td> 
-   <td> 全名、ISO代碼等。 <br /> </td> 
+   <td> 已編制索引的SQL欄位。 <br /> </td> 
+   <td> 完整名稱、ISO程式碼等。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -248,12 +249,12 @@ ht-degree: 37%
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> 尤其是表格的連結。 這些與1-1型別關聯一致。 來源表格的出現次數只能與目標表格的出現次數一致。 例如，一個國家/地區只能連結一個收件者。<br /> </td> 
-   <td> 資料夾、州/省、國家/地區等 <br /> </td> 
+   <td> 尤其是表格的連結。 這些與1-1型別關聯一致。 來源表格的某個專案只能與目標表格的某個專案一致。 例如，一個國家/地區只能連結一個收件者。<br /> </td> 
+   <td> 資料夾、州、國家/地區等。 <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> 特定表格上的收集要素。 這些與1-N型別關聯一致。 一個來源表格出現次數可與目標表格的多個出現次數一致，但目標表格出現一次只能與來源表格出現一次一致。 例如，一位收件者可以訂閱'n'個訂閱字母。<br /> </td> 
+   <td> 特定表格的收集要素。 這些與1-N型別關聯一致。 一個來源表格出現次數可以與目標表格的多個出現次數一致，但目標表格出現次數可以只與目標表格出現次數一致。 例如，一位收件者可以訂閱'n'個訂閱字母。<br /> </td> 
    <td> 訂閱、清單、排除記錄檔等。<br /> </td> 
   </tr> 
  </tbody> 
@@ -266,7 +267,6 @@ ht-degree: 37%
 >* 使用箭頭變更輸出欄的順序。
 >* 此 **[!UICONTROL Distribution of values]** 可做為檢視所選欄位值分佈的方式（例如，連結至收件者城鎮、收件者語言等的分佈）。
 
-
 ## 建立計算欄位 {#creating-calculated-fields}
 
 如有必要，請在資料格式化期間新增欄。 計算欄位會將欄新增至資料預覽區段。 按一下&#x200B;**[!UICONTROL Add a calculated field]**。
@@ -277,25 +277,25 @@ ht-degree: 37%
 
 * **[!UICONTROL Fixed string]**：可讓您新增字元字串。
 
-   ![](assets/query_editor_nveau_60.png)
+  ![](assets/query_editor_nveau_60.png)
 
 * **[!UICONTROL String with JavaScript tags]**：計算欄位的值會結合字元字串和JavaScript指令。
 
-   ![](assets/query_editor_nveau_61.png)
+  ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript expression]**：計算欄位的值是JavaScript函式評估的結果。 可鍵入傳回的值（數字、日期等）。
+* **[!UICONTROL JavaScript expression]**：計算欄位的值是JavaScript函式評估的結果。 可輸入傳回的值（數字、日期等）。
 
-   ![](assets/query_editor_nveau_62.png)
+  ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Enumerations]**：此型別的欄位可讓您使用/修改新欄中其中一個輸出欄的內容。
 
-   可以使用欄的來源值並為其指定目標值。 此目的地值將顯示在新的輸出欄中。
+  您可以使用欄的來源值，並為它指定目標值。 此目的地值將顯示在新的輸出欄中。
 
-   新增計算欄位型別的範例 **[!UICONTROL Enumerations]** 可用，請參閱 [本節](../../workflow/using/adding-enumeration-type-calculated-field.md).
+  新增計算欄位型別的範例 **[!UICONTROL Enumerations]** 可使用，請參閱 [本節](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
-   ![](assets/query_editor_nveau_63.png)
+  ![](assets/query_editor_nveau_63.png)
 
-   此 **[!UICONTROL Enumerations]** 型別計算欄位可包含4個條件：
+  此 **[!UICONTROL Enumerations]** 型別計算欄位可包含4個條件：
 
    * **[!UICONTROL Keep the source value]** 將來源值還原到目標而不變更它。
    * **[!UICONTROL Use the following value]** 可讓您為未定義的來源值輸入預設目的地值。
@@ -310,7 +310,7 @@ ht-degree: 37%
 
 ## 建立運算式 {#building-expressions}
 
-運算式編輯工具可讓您計算彙總、產生函式或使用運算式編輯公式。
+運算式編輯工具可讓您使用運算式計算彙總、產生函式或編輯公式。
 
 下列範例說明如何對主索引鍵執行計數。
 
@@ -318,7 +318,7 @@ ht-degree: 37%
 
 1. 按一下 **[!UICONTROL Add]** 在 **[!UICONTROL Data to extract]** 視窗。 在 **[!UICONTROL Formula type]** 視窗中，選取公式型別以輸入運算式。
 
-   有數種可用的公式型別： **[!UICONTROL Field only]**， **[!UICONTROL Aggregate]**， **[!UICONTROL Expression]**.
+   有數種公式可供使用： **[!UICONTROL Field only]**， **[!UICONTROL Aggregate]**， **[!UICONTROL Expression]**.
 
    選取 **[!UICONTROL Process on an aggregate function]**、和 **[!UICONTROL Count]**. 按一下&#x200B;**[!UICONTROL Next]**。
 
@@ -328,7 +328,7 @@ ht-degree: 37%
 
    ![](assets/query_editor_nveau_88.png)
 
-以下為中可用選項的詳細檢視 **[!UICONTROL Formula types]** 視窗：
+以下是中可用選項的詳細檢視 **[!UICONTROL Formula types]** 視窗：
 
 ![](assets/query_editor_nveau_05.png)
 
@@ -341,9 +341,9 @@ ht-degree: 37%
    * **[!UICONTROL Minimum value]** 可讓您排序客戶，並尋找最近訂閱了優惠方案的客戶。
    * **[!UICONTROL Average]**. 此函式可讓您計算收件者的平均年齡。
 
-      此 **[!UICONTROL Distinct]** 方塊可讓您復原欄的唯一和非零值。 例如，您可以復原所有收件者的追蹤記錄，而這些追蹤記錄會變更為值1，因為它們都與相同的收件者有關。
+     此 **[!UICONTROL Distinct]** 方塊可讓您復原欄的唯一和非零值。 例如，您可以復原所有收件者的追蹤記錄，而這些追蹤記錄會變更為值1，因為它們都與相同的收件者有關。
 
-1. **[!UICONTROL Expression]** 開啟 **[!UICONTROL Edit the expression]** 視窗。 這可讓您偵測數字太多（可能是輸入錯誤）的電話號碼。
+1. **[!UICONTROL Expression]** 開啟 **[!UICONTROL Edit the expression]** 視窗。 這可讓您偵測包含太多數字的電話號碼，可能是輸入錯誤。
 
    ![](assets/query_editor_nveau_71.png)
 
@@ -357,7 +357,7 @@ ht-degree: 37%
 
 ![](assets/s_ncs_user_filter_define_expression.png)
 
-它可讓您選取資料庫表格中的欄位，並新增進階函式。 可使用下列函式：
+它可讓您選取資料庫表格中的欄位，並將進階函式新增至這些欄位。 可使用下列函式：
 
 **彙總**
 
@@ -462,12 +462,12 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
-   <td> 串連傳遞為引數的字串。 視需要在字串之間新增空格。<br /> </td> 
+   <td> 串連以引數形式傳遞的字串。 視需要在字串之間新增空格。<br /> </td> 
    <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
-   <td> 串連傳遞為引數的字串。 視需要在字串之間新增空格<br /> </td> 
+   <td> 串連以引數形式傳遞的字串。 如有必要，在字串之間新增空格<br /> </td> 
    <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -482,7 +482,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
-   <td> 傳回字串的長度<br /> </td> 
+   <td> 傳回字串長度<br /> </td> 
    <td> Length(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -527,7 +527,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> 從字串的字元n1和長度n2開始擷取子字串<br /> </td> 
+   <td> 從字串的字元n1開始提取長度為n2的子字串<br /> </td> 
    <td> Substring(&lt;string&gt;, &lt;offset&gt;, &lt;length&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -609,7 +609,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> 傳回日期中某年的天數<br /> </td> 
+   <td> 傳回日期當年的日數<br /> </td> 
    <td> DayOfYear(&lt;date&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -881,8 +881,8 @@ ht-degree: 37%
    <td> <strong>語法</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Convertcurrency</strong><br /> </td> 
-   <td> 將來源貨幣金額轉換為目標貨幣金額<br /> </td> 
+   <td> <strong>ConvertCurrency</strong><br /> </td> 
+   <td> 將來源貨幣的金額轉換為目標貨幣的金額<br /> </td> 
    <td> ConvertCurrency(&lt;amount&gt;， &lt;source currency=""&gt;， &lt;target currency=""&gt;， &lt;conversion date=""&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -921,7 +921,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>案例</strong><br /> </td> 
-   <td> 若條件為true，則傳回值1。 如果沒有，則傳回值2。<br /> </td> 
+   <td> 若條件為true，則傳回值1。 如果沒有，則會傳回值2。<br /> </td> 
    <td> Case(When(&lt;condition&gt;, &lt;value 1&gt;), Else(&lt;value 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
@@ -991,7 +991,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>When</strong><br /> </td> 
-   <td> 如果運算式為true，則傳回值1。 若否，則傳回值2 （只能用作case函式的引數）<br /> </td> 
+   <td> 如果運算式為true，則傳回值1。 如果沒有，則會傳回值2 （只能用作case函式的引數）<br /> </td> 
    <td> When(&lt;condition&gt;, &lt;value 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 

@@ -2,16 +2,17 @@
 product: campaign
 title: 開始移轉前
 description: 開始移轉前
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '329'
 ht-degree: 2%
 
 ---
@@ -26,31 +27,31 @@ ht-degree: 2%
 >
 >在本檔案中，指令以範例形式提供。 其可能會因您的設定而異。
 
-1. 檢查您的Adobe Campaign版本：在移轉之前，請安裝您目前使用的最新組建版本。
+1. 檢查您的Adobe Campaign版本：在移轉之前，請安裝您使用的最新版組建版本。
 1. 備份您的資料。
-1. 檢查環境：您無法變更資料庫引擎系統(DBMS)。 例如，您無法從PostgreSQL引擎切換至Oracle引擎。 不過，您可以切換至資料庫引擎的最新版本。 請注意，無法從非Unicode資料庫移至Unicode資料庫。
+1. 檢查您的環境：您無法變更您的資料庫引擎系統(DBMS)。 例如，您無法從PostgreSQL引擎切換至Oracle引擎。 不過，您可以切換至資料庫引擎的最新版本。 請注意，無法從非Unicode資料庫移至Unicode資料庫。
 
 ## 移轉步驟 {#migration-steps}
 
-移轉程式必須在 **全部** 伺服器和特定順序。
+移轉程式必須執行於 **全部** 伺服器和特定順序。
 
-* 若是 **獨立平台** （單一電腦模式），應用程式會整體移轉。
+* 若是 **獨立平台** （單一電腦模式），應用程式會完整移轉。
 * 若是 **標準平台** （企業），移轉步驟如下：
 
    1. 移轉行銷伺服器。
    1. 移轉郵件伺服器(mta)。
-   1. 移轉重新導向和追蹤伺服器(Apache / IIS)。
+   1. 移轉重新導向與追蹤伺服器(Apache / IIS)。
 
 * 若是 **Cloud Messaging平台**，執行伺服器託管於Adobe Campaign。 請聯絡Adobe Campaign協調不同伺服器之間的移轉。
 * 若是 **Power Booster或Power Cluster平台**，移轉步驟如下：
 
-   1. 移轉重新導向和追蹤伺服器(Apache / IIS)。
+   1. 移轉重新導向與追蹤伺服器(Apache / IIS)。
    1. 移轉Power Booster/Cluster伺服器。
    1. 移轉行銷伺服器。
 
 ## 使用者密碼 {#user-passwords}
 
-在v7中， **內部** 和 **管理員** 操作員連線必須以密碼保護。 我們強烈建議指派密碼給這些帳戶和所有操作員帳戶， **移轉前**. 如果您尚未指定密碼 **內部**，您將無法連線。 若要將密碼指派給 **內部**，輸入下列命令：
+在v7中， **內部** 和 **管理員** 操作員連線必須使用密碼保護。 我們強烈建議為這些帳戶及所有操作員帳戶指定密碼， **移轉前**. 如果您尚未指定密碼 **內部**，您將無法連線。 若要指派密碼給 **內部**，輸入下列命令：
 
 ```
 nlserver config -internalpassword

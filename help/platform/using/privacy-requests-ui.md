@@ -2,15 +2,16 @@
 product: campaign
 title: 建立隱私權請求
 description: 瞭解如何建立及管理隱私權請求
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Privacy, Privacy Tools
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +69,6 @@ ht-degree: 100%
 >* 透過工作流程刪除設定檔時，不會處理子表格。
 >* 您需要處理所有子表格的刪除。
 >* Adobe 建議您建立 ETL 工作流程，在「隱私權存取」表格中新增要刪除的行，讓 **[!UICONTROL Delete privacy requests data]** 工作流程執行刪除。 出於效能方面的因素，我們建議每天限制刪除 200 個設定檔。
-
 
 ## 隱私權請求狀態 {#privacy-request-statuses}
 

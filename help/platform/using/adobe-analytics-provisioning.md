@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics聯結器布建
 description: 深入瞭解Adobe Analytics聯結器布建
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
@@ -20,23 +20,23 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> 這些步驟應該只能由混合和內部部署實作來執行。
+> 這些步驟應該只能由混合及內部部署實作來執行。
 >
 >對於託管實作，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
 
-Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援AdobeIdentity Management服務(IMS)：
+Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity Management服務(IMS)：
 
-* 如果您管理已移轉的外部帳戶，您必須實作Adobe IMS並透過Adobe ID連線至Adobe Campaign。 透過Adobe ID IMS登入的使用者應為 **資料聯結器** Adobe Analytics帳戶，並擁有一組許可權用於 **產品設定檔** 如下所述。
+* 如果您管理已移轉的外部帳戶，您必須實作Adobe IMS並透過Adobe ID連線至Adobe Campaign。 透過Adobe ID IMS登入的使用者應為 **資料聯結器** Adobe Analytics帳戶，並擁有一組適用於的許可權： **產品設定檔** 如下所述。
 
-* 如果您要實作新的聯結器，可選擇是否實作Adobe IMS。 如果沒有Adobe ID使用者，Adobe Campaign將使用技術使用者來與Adobe Analytics同步。
+* 如果您正在實作新的聯結器，實作Adobe IMS為選用。 如果沒有Adobe ID使用者，Adobe Campaign將使用技術使用者來與Adobe Analytics同步。
 
-為了讓此整合發揮作用，您必須建立專用於Analytics聯結器的Adobe Analytics產品設定檔。 然後，您需要建立Adobe I/O專案。
+為了讓此整合發揮作用，您必須建立專用於Analytics聯結器的Adobe Analytics產品設定檔。 之後，您將需要建立Adobe I/O專案。
 
 ## 建立Adobe Analytics產品設定檔 {#analytics-product-profile}
 
-產品設定檔會決定使用者對不同Analytics元件的存取層級。
+產品設定檔可決定使用者對不同Analytics元件的存取層級。
 
-如果您已有Analytics產品設定檔，您仍應建立專用於Analytics聯結器的新Adobe Analytics產品設定檔。 這將確保您的產品設定檔已設定此整合的正確許可權。
+如果您已有Analytics產品設定檔，您仍應建立專用於Analytics聯結器的新Adobe Analytics產品設定檔。 這將確保您的產品設定檔已設定為此整合的正確許可權。
 
 如需產品設定檔的詳細資訊，請參閱 [Admin Console檔案](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
@@ -48,9 +48,9 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援AdobeIdent
 
    ![](assets/do-not-localize/triggers_2.png)
 
-1. 新增 **[!UICONTROL Product profile name]**，我們建議您使用以下語法： `reserved_campaign_classic_<Company Name>`. 然後，按一下 **[!UICONTROL Next]**.
+1. 新增 **[!UICONTROL Product profile name]**，我們建議使用以下語法： `reserved_campaign_classic_<Company Name>`. 然後，按一下 **[!UICONTROL Next]**.
 
-   此 **[!UICONTROL Product profile]** 應僅用於Analytics聯結器，以防止設定錯誤錯誤。
+   這個 **[!UICONTROL Product profile]** 應僅用於Analytics聯結器，以防止設定錯誤錯誤。
 
 1. 開啟您新建立的 **[!UICONTROL Product profile]** 並選取 **[!UICONTROL Permissions]** 標籤。
 
@@ -62,17 +62,17 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援AdobeIdent
 
 1. 對於 **[!UICONTROL Report Suites]** 功能，新增 **[!UICONTROL Report Suites]** 您稍後需要使用。
 
-   如果您沒有任何報表套裝，您可以建立以下專案 [這些步驟](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
+   如果您沒有任何報表套裝，可依下列步驟建立 [這些步驟](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
 
    ![](assets/do-not-localize/triggers_4.png)
 
-1. 對於 **[!UICONTROL Metrics]** 功能，新增 **[!UICONTROL Metrics]** 稍後您需要進行設定。
+1. 對於 **[!UICONTROL Metrics]** 功能，新增 **[!UICONTROL Metrics]** 您稍後將需要設定。
 
-   如有需要，您可以開啟「自動加入」選項，此選項會將每個許可權專案新增至包含清單，並自動新增許可權專案。
+   如有需要，您可以開啟「自動包含」選項，這會將每個許可權專案新增至包含的清單中，並自動新增許可權專案。
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. 對於 **[!UICONTROL Dimensions]** 功能，新增 **[!UICONTROL Dimensions]** 稍後您需要進行設定。
+1. 對於 **[!UICONTROL Dimensions]** 功能，新增 **[!UICONTROL Dimensions]** 您稍後將需要設定。
 
 1. 對於 **[!UICONTROL Report Suite Tools]** 功能，新增以下許可權：
 
@@ -98,7 +98,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援AdobeIdent
 
 1. 存取Adobe I/O並以下列身分登入 **系統管理員** ，屬於您的組織。
 
-   如需管理員角色的詳細資訊，請參閱此 [頁面](https://helpx.adobe.com/enterprise/using/admin-roles.html).
+   有關管理員角色的詳細資訊，請參閱此 [頁面](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 
 1. 按一下&#x200B;**[!UICONTROL Create a new project]**。
 
@@ -126,7 +126,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援AdobeIdent
 
    ![](assets/do-not-localize/triggers_10.png)
 
-1. 選取 **[!UICONTROL Product profile]** 建立於先前步驟，詳見本節 [區段](#analytics-product-profile).
+1. 選取 **[!UICONTROL Product profile]** 在此詳述的先前步驟中建立的 [區段](#analytics-product-profile).
 
 1. 然後，按一下 **[!UICONTROL Save Configured API]**.
 
@@ -143,7 +143,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援AdobeIdent
 
 1. 使用在步驟6中產生的私密金鑰。
 
-   如果您已使用這些認證設定觸發器，則此聯結器設定的私密金鑰必須相同。
+   如果您已使用這些憑證設定觸發器，則此聯結器設定的私密金鑰必須相同。
 
 1. 使用下列命令編碼私密金鑰： `base64 ./private.key > private.key.base64`. 這會將base64內容儲存至新檔案 `private.key.base64`.
 
@@ -153,7 +153,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援AdobeIdent
 
 1. 從檔案複製內容 `private.key.base64`.
 
-1. 透過SSH登入安裝Adobe Campaign例項的每個容器，並透過以下命令在Adobe Campaign中新增Project認證： `neolane` 使用者。 這將會插入 **[!UICONTROL Technical Account]** 執行個體組態檔中的認證。
+1. 透過SSH登入已安裝Adobe Campaign執行個體的每個容器，並透過以下命令在Adobe Campaign中新增Project認證： `neolane` 使用者。 這將會插入 **[!UICONTROL Technical Account]** 執行個體組態檔中的認證。
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>

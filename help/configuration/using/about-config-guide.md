@@ -1,20 +1,21 @@
 ---
 product: campaign
-title: 關於設定指南
-description: 關於設定指南
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: 關於組態指南
+description: 關於組態指南
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: about
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '10'
-ht-degree: 10%
+source-wordcount: '17'
+ht-degree: 11%
 
 ---
 
 
-# 關於設定指南{#about}
+# 關於組態指南{#about}
 
 
 

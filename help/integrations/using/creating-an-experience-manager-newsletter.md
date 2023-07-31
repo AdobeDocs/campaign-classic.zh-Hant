@@ -2,15 +2,16 @@
 product: campaign
 title: 建立Experience Manager電子報
 description: 建立Experience Manager電子報
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Experience Manager Integration
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 1%
+source-wordcount: '287'
+ht-degree: 2%
 
 ---
 
@@ -18,11 +19,11 @@ ht-degree: 1%
 
 
 
-例如，這項整合可用來在Adobe Experience Manager中建立電子報，然後在Adobe Campaign中作為電子郵件促銷活動的一部分使用。
+例如，這項整合可用於在Adobe Experience Manager中建立電子報，接著在Adobe Campaign中作為電子郵件促銷活動的一部分使用。
 
 **從Adobe Experience Manager：**
 
-1. 在您的AEM編寫執行個體中，按一下 **Adobe Experience** 標誌，並選取 **[!UICONTROL Sites]**.
+1. 在您的AEM編寫執行個體中，按一下 **Adobe Experience** 位於頁面左上方的標誌，並選取 **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 
@@ -36,7 +37,7 @@ ht-degree: 1%
 
    ![](assets/aem_uc_3.png)
 
-1. 在 **[!UICONTROL Cloud Services]** 索引標籤，選取 **[!UICONTROL Adobe Campaign]** 作為 **[!UICONTROL Cloud service configuration]** 和您的Adobe Campaign例項。
+1. 在 **[!UICONTROL Cloud Services]** 索引標籤，選取 **[!UICONTROL Adobe Campaign]** 作為 **[!UICONTROL Cloud service configuration]** 和您的Adobe Campaign執行個體。
 
    ![](assets/aem_uc_4.png)
 
@@ -49,7 +50,7 @@ ht-degree: 1%
 
    ![](assets/aem_uc_6.png)
 
-1. 接著，在上一步中，啟動 **[!UICONTROL Approve for Campaign]** 工作流程。
+1. 然後，在上一步中，啟動 **[!UICONTROL Approve for Campaign]** 工作流程。
 1. 免責宣告會出現在您的頁面頂端。 按一下 **[!UICONTROL Complete]** 若要確認檢閱並按一下 **[!UICONTROL Ok]**.
 
    ![](assets/aem_uc_7.png)
@@ -58,7 +59,7 @@ ht-degree: 1%
 
    ![](assets/aem_uc_8.png)
 
-您的Newsletter現已準備就緒，並在Adobe Campaign中同步。
+您的Newsletter現已準備就緒，並已在Adobe Campaign中同步。
 
 **從Adobe Campaign：**
 
@@ -73,12 +74,12 @@ ht-degree: 1%
 1. 新增 **[!UICONTROL Label]** 至您的傳遞，然後按一下 **[!UICONTROL Continue]**.
 1. 按一下 **[!UICONTROL Synchronize]** 按鈕。
 
-   如果此按鈕沒有出現在您的介面中，請按一下 **[!UICONTROL Properties]** 按鈕並選取 **[!UICONTROL Advanced]** 標籤。 此 **[!UICONTROL Content editing mode]** 欄位應設為 **[!UICONTROL AEM]** 將您的AEM執行個體放在 **[!UICONTROL AEM account]** 欄位。
+   若此按鈕未出現在您的介面中，請按一下 **[!UICONTROL Properties]** 按鈕並選取 **[!UICONTROL Advanced]** 標籤。 此 **[!UICONTROL Content editing mode]** 欄位應設為 **[!UICONTROL AEM]** 將您的AEM執行個體放在 **[!UICONTROL AEM account]** 欄位。
 
    ![](assets/aem_uc_11.png)
 
 1. 選取先前在Adobe Experience Manager中建立的傳遞，然後按一下 **[!UICONTROL Ok]**.
-1. 按一下 **[!UICONTROL Refresh content]** 對AEM傳遞進行變更後立即按一下按鈕。
+1. 按一下 **[!UICONTROL Refresh content]** 對AEM傳送進行變更後立即按鈕。
 
    ![](assets/aem_uc_12.png)
 

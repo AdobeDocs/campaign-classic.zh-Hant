@@ -2,11 +2,12 @@
 product: campaign
 title: Campaign內部部署、混合及託管功能矩陣
 description: 瞭解託管部署和內部部署之間的主要差異
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '300'
 ht-degree: 28%
 
 ---
@@ -15,9 +16,9 @@ ht-degree: 28%
 
 
 
-Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性及其使用方式取決於安裝的部署型別。 本文分享某些功能在完全託管(Managed Services)和內部部署之間主要差異的詳細資訊。
+Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性及其使用方式會視您安裝的部署型別而定。 本文將分享完全託管(Managed Services)和內部部署之間特定功能主要差異的詳細資訊。
 
-此頁面顯示託管(Managed Services)與內部部署之間的主要差異。 混合部署的具體情況取決於Adobe所託管並在您設施中託管的元素。
+此頁面顯示託管(Managed Services)和內部部署之間的主要差異。 混合部署特性取決於Adobe所託管並在您設施中託管的元素。
 
 我們匯入了不同的託管模型 [在本節中](../../installation/using/hosting-models.md).
 
@@ -41,11 +42,12 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 ## 同盟資料存取{#fda}
 
-Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您無需變更Adobe Campaign資料的結構即可存取外部資料。 [了解更多](../../installation/using/about-fda.md)
+Adobe Campaign提供 **同盟資料存取** (FDA)選項，以處理儲存在一或多個外部資料庫中的資訊：您不需要變更Adobe Campaign資料的結構即可存取外部資料。 [了解更多](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->相容的外部資料庫系統取決於您的託管模式。 進一步瞭解 [Campaign相容性對照表](../../rn/using/compatibility-matrix.md).
+>相容的外部資料庫系統取決於您的託管模式。 進一步瞭解 [Campaign相容性矩陣](../../rn/using/compatibility-matrix.md).
+>
 
 **另請參閱**
 

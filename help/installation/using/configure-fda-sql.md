@@ -2,11 +2,12 @@
 product: campaign
 title: 設定Microsoft SQL Server的存取權
 description: 瞭解如何設定Microsoft SQL Server的存取權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 
 
-使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部Microsoft SQL Server資料庫中的資訊。 請依照下列步驟，設定對的存取權 [!DNL Microsoft SQL Server].
+使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部Microsoft SQL Server資料庫中的資訊。 請依照下列步驟，設定存取權至 [!DNL Microsoft SQL Server].
 
 1. 設定 [!DNL Microsoft SQL Server] 於 [CentOS](#sql-centos).
 1. 設定 [!DNL Microsoft SQL Server] 於 [Linux](#sql-linux).
@@ -40,7 +41,7 @@ ht-degree: 1%
    sudo ACCEPT_EULA=Y yum install msodbcsql
    ```
 
-1. 然後，您可以在Adobe Campaign中設定 [!DNL Microsoft SQL Server] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#sql-external).
+1. 接著，您可以在Adobe Campaign中設定 [!DNL Microsoft SQL Server] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#sql-external).
 
 ## Linux上的Microsoft SQL Server {#sql-linux}
 
@@ -58,7 +59,7 @@ ht-degree: 1%
    # accept the license terms
    ```
 
-1. 然後，您可以在Adobe Campaign中設定 [!DNL Microsoft SQL Server] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#sql-external).
+1. 接著，您可以在Adobe Campaign中設定 [!DNL Microsoft SQL Server] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#sql-external).
 
 ## Windows上的Microsoft SQL Server {#sql-windows}
 
@@ -72,11 +73,11 @@ ht-degree: 1%
 
 1. 如果未列出SQL Server Native Client，您可以將其下載到 [此頁面](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
 
-1. 然後，您可以在Adobe Campaign中設定 [!DNL Microsoft SQL Server] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#sql-external).
+1. 接著，您可以在Adobe Campaign中設定 [!DNL Microsoft SQL Server] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#sql-external).
 
 ## Microsoft SQL Server外部帳戶 {#sql-external}
 
-您需要建立 [!DNL Microsoft SQL Server] 將您的Campaign執行個體連線至您的外部帳戶 [!DNL Microsoft SQL Server] 外部資料庫。
+您需要建立 [!DNL Microsoft SQL Server] 將您的Campaign執行個體連線到您的外部帳戶 [!DNL Microsoft SQL Server] 外部資料庫。
 
 1. 從Campaign **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -84,7 +85,7 @@ ht-degree: 1%
 
 1. 選取 **[!UICONTROL External database]** 作為外部帳戶的 **[!UICONTROL Type]**.
 
-1. 下 **[!UICONTROL Configuration]**，選取 [!DNL Microsoft SQL Server] 從 **[!UICONTROL Type]** 下拉式清單。
+1. 在 **[!UICONTROL Configuration]**，選取 [!DNL Microsoft SQL Server] 從 **[!UICONTROL Type]** 下拉式清單。
 
    ![](assets/sql.png)
 
@@ -104,7 +105,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >若要讓所有函式都可使用，您必須在遠端資料庫中建立Adobe Campaign SQL函式。 如需詳細資訊，請參閱此 [頁面](../../configuration/using/adding-additional-sql-functions.md).
+   >若要讓所有函式都可使用，您需要在遠端資料庫中建立Adobe Campaign SQL函式。 如需詳細資訊，請參閱此 [頁面](../../configuration/using/adding-additional-sql-functions.md).
 
 1. 按一下 **[!UICONTROL Save]** 完成設定時。
 
@@ -112,6 +113,6 @@ ht-degree: 1%
 
 | Option | 說明 |
 |---|---|
-| 驗證 | 聯結器支援的驗證型別。 目前支援的值： ActiveDirectoryMSI。 <br> 如需詳細資訊，請參閱範例8 / [Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
+| 驗證 | 聯結器支援的驗證型別。 目前支援的值： ActiveDirectoryMSI。 <br> 有關詳細資訊，請參閱範例8 [Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | 加密 | 指定連線是否透過網路使用TLS加密。 可能的值包括 **是/強制（18.0和更新版本）**， **no/optional （18.0和更新版本）**、和 **strict （18.0和更新版本）**. 預設值設為 **是** 在18.0版及更新版本中和 **否** 在舊版中。 <br>有關詳細資訊，請參閱 [Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
-| TrustserverCertificate | 啟用使用自我簽署伺服器憑證的加密（搭配使用時） **加密**. <br>接受的值： **是** 或 **否** （預設值，表示將驗證伺服器憑證）。 |
+| TrustServerCertificate | 使用自我簽署伺服器憑證啟用加密（當搭配使用時） **加密**. <br>接受的值： **是** 或 **否** （預設值，表示將驗證伺服器憑證）。 |

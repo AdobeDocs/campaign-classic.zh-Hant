@@ -2,16 +2,17 @@
 product: campaign
 title: 應用程式伺服器
 description: 應用程式伺服器
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 1%
+source-wordcount: '514'
+ht-degree: 3%
 
 ---
 
@@ -27,27 +28,27 @@ ht-degree: 1%
 
 您必須先在要執行Adobe Campaign應用程式伺服器的電腦上安裝JDK (**nlserver web** 程式)，因為它合併了servlet容器Apache Tomcat，用於產生動態網頁（報表、網路表單等）。
 
-此應用程式已獲得核准，可用於Oracle開發的Java Development Kit (JDK)以及用於 **OpenJDK**.
+此應用程式已獲核准用於Oracle開發的Java開發套件(JDK)以及用於 **OpenJDK**.
 
 Campaign中會詳細說明支援的版本 [相容性矩陣](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
->可使用電腦上其他應用程式已使用的適當JDK版本進行安裝。
+>您可以使用電腦上其他應用程式已使用的適當JDK版本進行安裝。
 >  
 >安裝時，您不需要與網頁瀏覽器執行整合。
 >
->在只執行傳遞代理程式的機器上(**nlserver mta** process)或工作流程伺服器(**nlserver wfserver** 處理程式)，則不需要安裝JDK。
+>在只執行傳遞代理程式的機器上(**nlserver mta** process)或工作流程伺服器(**nlserver wfserver** 程式)，則不需要安裝JDK。
 
 若要下載Java JDK，請連線至： [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-**警告：您必須下載JDK，而不是JRE。**
+**警告：您必須下載JDK，而非JRE。**
 
 >[!CAUTION]
 >
 >若要保留平台作業效能並確保與已安裝版本的相容性，您必須在Windows和Linux中停用自動JDK更新功能。
 
-若要在Linux環境中安裝JDSL，最好使用套件管理員。
+若要在Linux環境中安裝JDSL，最好使用封裝管理員。
 
 在Debian 8和9中，使用以下指令：
 
@@ -67,7 +68,7 @@ yum install java-1.8.0-openjdk
 
 ## 匯出報告 {#exporting-reports}
 
-Adobe Campaign可讓您匯出Microsoft Excel和Adobe PDF格式的平台報表。 對於Microsoft Excel格式，Adobe Campaign會使用 **LibreOffice**. 對於Adobe PDF格式，Adobe Campaign使用 **PhantomJS** 轉換工具。 PhantomJs包含在工廠套件中，且LibreOffice必須安裝在執行Adobe Campaign應用程式伺服器的電腦上(**nlserver web** process)。
+Adobe Campaign可讓您匯出Microsoft Excel和Adobe PDF格式的平台報表。 對於Microsoft Excel格式，Adobe Campaign使用 **LibreOffice**. 對於Adobe PDF格式，Adobe Campaign使用 **PhantomJS** 轉換工具。 PhantomJs包含在工廠套件中，且LibreOffice必須安裝在執行Adobe Campaign應用程式伺服器的電腦上(**nlserver web** 流&#39;b5&#39;7b)。
 
 >[!NOTE]
 >
@@ -75,9 +76,9 @@ Adobe Campaign可讓您匯出Microsoft Excel和Adobe PDF格式的平台報表。
 
 ## SpamAssassin {#spamassassin}
 
-SpamAssassin可讓您為電子郵件指派分數，以判斷接收時所使用的反垃圾郵件工具是否會將訊息視為不良風險。 安裝是選擇性的。
+SpamAssassin可讓您為電子郵件指派分數，以判斷接收時所使用的反垃圾郵件工具是否會將訊息風險視為不想要的。 安裝是選擇性的。
 
-SpamAssassin會將電子郵件限定為不受歡迎，完全是根據篩選和評分規則。 因此，這些規則必須每天至少更新一次，才能讓您的SpamAssassin安裝及其與Adobe Campaign的整合充分發揮功能，並保障在傳送前指派給您傳送的分數的相關性。 此更新由裝載SpamAssassin的伺服器管理員負責。
+SpamAssassin會將電子郵件限定為不受歡迎，這完全是根據篩選和評分規則。 因此，這些規則必須每天至少更新一次，才能讓您的SpamAssassin安裝及其與Adobe Campaign的整合全面運作，並確保在傳送之前指派給您傳送的評分具有相關性。 此更新由裝載SpamAssassin的伺服器管理員負責。
 
 支援的最低版本為： **3.4**
 

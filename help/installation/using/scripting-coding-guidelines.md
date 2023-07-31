@@ -2,14 +2,15 @@
 product: campaign
 title: 指令碼和程式碼指南
 description: 進一步瞭解在Adobe Campaign中進行開發時應遵循的准則（工作流程、Javascript、JSSP等）
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '755'
 ht-degree: 5%
 
 ---
@@ -24,40 +25,40 @@ ht-degree: 5%
 
 如果您使用工作流程、網頁應用程式、jssp編寫指令碼，請遵循以下最佳實務：
 
-* 儘量避免使用SQL敘述句。
+* 儘可能避免使用SQL敘述句。
 
-* 如有需要，請使用引數化（準備陳述式）函式，而非字串串串連。
+* 如果需要，請使用引數化（準備陳述式）函式，而非字串串串連。
 
-   不當做法：
+  不當做法：
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
+  ```
 
-   良好實務：
+  良好實務：
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
+  ```
 
-   >[!IMPORTANT]
-   >
-   >sqlSelect不支援此功能，因此您必須使用DBEngine類別的查詢函式：
+  >[!IMPORTANT]
+  >
+  >sqlSelect不支援此功能，因此您必須使用DBEngine類別的查詢函式：
 
-   ```
-   var cnx = application.getConnection()
-   var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
-   for each(var row in stmt) logInfo(row[0] + " : " + row[1])
-   cnx.dispose()
-   ```
+  ```
+  var cnx = application.getConnection()
+  var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
+  for each(var row in stmt) logInfo(row[0] + " : " + row[1])
+  cnx.dispose()
+  ```
 
-若要避免SQL插入，必須將SQL函式新增至允許清單，才能在Adobe Campaign中使用。 將它們新增到允許清單後，運運算元就會在運算式編輯器中看見它們。 請參見[此頁面](../../configuration/using/adding-additional-sql-functions.md)。
+若要避免SQL插入，必須將SQL函式新增至允許清單，才能在Adobe Campaign中使用。 將變數新增至允許清單後，運運算元就會在運算式編輯器中看見該變數。 請參見[此頁面](../../configuration/using/adding-additional-sql-functions.md)。
 
 >[!IMPORTANT]
 >
->如果您使用的組建版本比8140還舊， **XtkPassUnknownSQLFunctionsToRDBMS** 選項可設為&#39;1&#39;。 如果您想要保護資料庫，請刪除此選項（或將它設定為&#39;0&#39;）。
+>如果您使用的組建版本早於8140，則 **xtkpassunknowledsqlfunctionsToRDBMS** 選項可設為&#39;1&#39;。 如果要保護資料庫的安全，請刪除此選項（或將它設定為&#39;0&#39;）。
 
-如果您使用使用者輸入在查詢或SQL陳述式中建立篩選器，則必須一律將其逸出(請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)  — 資料保護：逸出功能)。 這些函式包括：
+如果您使用使用者輸入在查詢或SQL陳述式中建置篩選器，您必須一律將其逸出(請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)  — 資料保護：逸出功能)。 這些函式包括：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -79,39 +80,39 @@ ht-degree: 5%
 
 * 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱 [此頁面](../../configuration/using/filtering-schemas.md))。
 
-   ```
-   <sysFilter name="writeAccess">    
-       <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">    
+      <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
+  </sysFilter>
+  ```
 
-* 您也可以保護結構描述中定義的某些動作（SOAP方法）。 只需將具有對應已命名許可權的access屬性設定為值即可。
+* 您也可以保護結構描述中定義的某些動作（SOAP方法）。 只需設定存取屬性，並將對應的已命名許可權設為值即可。
 
-   ```
-   <method name="grantVIPAccess" access="myNewRole">
-       <parameters>
-   ...
-       </parameters>
-   </method>
-   ```
+  ```
+  <method name="grantVIPAccess" access="myNewRole">
+      <parameters>
+  ...
+      </parameters>
+  </method>
+  ```
 
-   如需詳細資訊，請參閱[此頁面](../../configuration/using/implementing-soap-methods.md)。
+  如需詳細資訊，請參閱[此頁面](../../configuration/using/implementing-soap-methods.md)。
 
 >[!IMPORTANT]
 >
->您可以在導覽樹狀結構的命令節點中使用已命名的許可權。 它提供更佳的使用者體驗，但不提供任何保護（僅使用使用者端來隱藏/停用它們）。 您必須使用access屬性。
+>您可以在導覽樹狀結構的命令節點中使用已命名的許可權。 它提供更佳的使用者體驗，但不提供任何保護（僅使用使用者端隱藏/停用它們）。 您必須使用access屬性。
 
 ### 溢位表格
 
-如果您需要根據操作員的存取層級保護機密資料（結構描述的一部分），請勿在表單定義（enabledIf/visibleIf條件）中隱藏這些資料。
+如果您需要根據運運算元存取層級保護機密資料（結構描述的一部分），請勿在表單定義（enabledIf/visibleIf條件）中隱藏這些資料。
 
 熒幕會載入完整圖元，您也可以在欄定義中顯示它們。 要執行此操作，您必須建立溢位表格。 參考 [此頁面](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## 在網頁應用程式中新增字幕
 
-在公開登陸頁面/訂閱頁面中新增驗證碼是建議的做法。 遺憾的是，在DCE （數位內容編輯器）頁面中新增驗證碼並不容易。 我們將說明如何新增v5驗證碼或Google reCAPTCHA。
+在公開登陸頁面/訂閱頁面中新增驗證碼是建議的做法。 不幸的是，在DCE （數位內容編輯器）頁面中新增驗證碼並不容易。 我們將說明如何新增v5驗證碼或Google reCAPTCHA。
 
-在DCE中新增驗證碼的一般方法是建立個人化區塊，以輕鬆地將其納入頁面內容中。 您必須新增 **指令碼** 活動和 **測試**.
+在DCE中新增驗證碼的一般方法是建立個人化區塊，以便輕鬆將其納入頁面內容中。 您必須新增 **指令碼** 活動和 **測試**.
 
 ### 個人化區塊
 
@@ -121,7 +122,7 @@ ht-degree: 5%
 
    如需詳細資訊，請參閱[本頁面](../../delivery/using/personalization-blocks.md)。
 
-   以下範例為 **Campaign驗證碼**：
+   以下是的範例 **Campaign驗證碼**：
 
    ```javascript
    <%
@@ -141,15 +142,16 @@ ht-degree: 5%
    %>
    ```
 
-   * 第1行到第6行會產生所有需要的輸入。
-   * 第7行到結束操作框錯誤。
-   * 第4行可讓您變更驗證碼灰色方塊大小（寬度/高度）和產生文字的長度(minWordSize/maxWordSize)。
+   * 第1行至第6行會產生所有需要的輸入。
+   * 第7行到結尾控制代碼錯誤。
+   * 第4行可讓您變更驗證碼灰色方塊大小（寬度/高度）和產生的文字長度(minWordSize/maxWordSize)。
    * 在使用Google reCAPTCHA之前，您必須在Google上註冊並建立新的reCAPTCHA網站。
 
-      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
-   您應該能夠停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，因此最好在HTML中自行停用。 若要瞭解如何操作，請參閱 [此頁面](https://developers.google.com/recaptcha/).
+     `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-### 更新您的網頁應用程式
+   您應該能夠停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，所以最好在HTML中自行操作。 若要瞭解其操作方式，請參閱 [此頁面](https://developers.google.com/recaptcha/).
+
+### 更新您的Web應用程式
 
 1. 存取網頁應用程式的屬性，以新增名為的布林值變數 **驗證碼有效**.
 
@@ -157,7 +159,7 @@ ht-degree: 5%
 
 1. 最後一頁和之間 **[!UICONTROL Storage]** 活動，新增 **[!UICONTROL Script]** 和 **[!UICONTROL Test]**.
 
-   插入分支 **[!UICONTROL True]** 至 **[!UICONTROL Storage]** 和另一個連至將具有驗證碼的頁面。
+   插入分支 **[!UICONTROL True]** 至 **[!UICONTROL Storage]** 另一個連線至將具有驗證碼的頁面。
 
    ![](assets/scripting-captcha2.png)
 
@@ -175,7 +177,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->若要進行reCAPTCHA整合，您必須在HTML中新增使用者端JavaScript (在 `<head>...</head>`)：
+>若為reCAPTCHA整合，您必須在HTML中新增使用者端JavaScript (在 `<head>...</head>`)：
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
@@ -229,6 +231,6 @@ if( ctx.vars.captchaValid == false ) {
 
 ![](assets/scripting-captcha6.png)
 
-從建置8797開始，若要使用驗證API URL，您必須透過在urlPermission節點中新增來將它新增到serverConf檔案的允許清單：
+從建置8797開始，若要使用驗證API URL，您必須透過在urlPermission節點中新增來將它新增到serverConf檔案的允許清單中：
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

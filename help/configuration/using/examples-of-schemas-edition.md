@@ -2,11 +2,12 @@
 product: campaign
 title: 方案版本範例
 description: 方案版本範例
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Schema Extension
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -14,11 +15,11 @@ ht-degree: 2%
 
 # 方案版本範例{#examples-of-schemas-edition}
 
-## 延伸表格 {#extending-a-table}
+## 擴充表格 {#extending-a-table}
 
 若要擴充 **nms：recipient** 綱要收件者表格，請套用下列程式：
 
-1. 建立擴充功能結構描述(**cus：extension**)使用以下資料：
+1. 建立擴充功能綱要(**cus：extension**)使用下列資料：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -39,13 +40,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此範例中，索引欄位(**逼真度**)中，且 **位置** 元素(已存在於 **nms：recipient** 結構描述)以列舉欄位(**區域**)。
+   在此範例中，索引欄位(**逼真度**)新增了，且 **位置** 元素(已存在於 **nms：recipient** 結構描述)以列舉欄位(**區域**)。
 
    >[!IMPORTANT]
    >
    >請記得新增 **extendedSchema** 屬性以參考擴充功能綱要。
 
-1. 檢查擴充結構描述是否為 **nms：recipient** 結構描述並顯示其他資料：
+1. 檢查擴充結構描述是否為 **nms：recipient** 結構描述以及其他資料存在：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -100,7 +101,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表格型別為 **autopk** 以建立自動產生的主要索引鍵，以供連結至收件者表格的連結使用。
+表格型別為 **autopk** ，以建立自動產生的主要索引鍵，供連結至收件者表格使用。
 
 產生的結構描述：
 
@@ -144,13 +145,13 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->SQL指令碼結尾的INSERT INTO指令可讓您插入設定為0的識別碼記錄，以模擬外部聯結。
+>SQL命令INSERT INTO位於指令碼結尾，可讓您插入設為0的識別碼記錄，以模擬外部聯結。
 
 ## 擴充功能表格 {#extension-table}
 
-擴充功能表格可讓您擴充基數1-1連結表格中現有表格的內容。
+擴充表格可讓您擴充連結基數1-1之連結表格中現有表格的內容。
 
-擴充功能表格的用途是避免對表格中支援欄位數的限制，或最佳化資料佔用的空間（依需求使用）。
+擴充功能表格的用途是避免表格中支援的欄位數限制，或最佳化資料佔用的空間（依需求使用）。
 
 建立擴充功能表格結構(**cus：feature**)：
 
@@ -176,7 +177,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->收件者表格和擴充功能表格之間連結的定義，必須從包含外部索引鍵的結構描述填入。
+>收件者表格和擴充功能表格之間連結的定義，必須從包含外部索引鍵的綱要填入。
 
 建立擴充功能表格的SQL指令碼如下：
 
@@ -200,9 +201,9 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 溢位表格是擴充表格（基數1-1），但要擴充之表格的連結宣告會填入溢位表格的綱要。
 
-溢位表格包含要擴充之表格的外來鍵。 因此，不會修改要擴充的表格。 兩個表格之間的關係是要擴充之表格的主索引鍵的值。
+溢位表格包含要擴充之表格的外部索引鍵。 因此，不會修改要擴充的表格。 兩個表格之間的關係是要擴充之表格的主鍵值。
 
-建立溢位表格結構(**cus：overflow**)：
+建立溢位表格綱要(**cus：overflow**)：
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -221,7 +222,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 >[!NOTE]
 >
->溢位表格的主要索引鍵是要擴充之表格的連結（範例中為「nms：recipient」綱要）。
+>溢位表格的主索引鍵是要擴充表格的連結（範例中為「nms：recipient」綱要）。
 
 表格建立SQL命令檔如下：
 
@@ -230,7 +231,7 @@ CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId I
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## 關係表格 {#relationship-table}
+## 關係表 {#relationship-table}
 
 關係表格可讓您連結兩個具有基數N-N的表格。此表格僅包含要連結之表格的外部索引鍵。
 
@@ -298,7 +299,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 ## 使用案例：將欄位連結至現有的參考表格 {#uc-link}
 
-此使用案例示範如何使用現有參考表格作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代方案。
+此使用案例示範如何使用現有的參考表格作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代方案。
 
 您也可以使用現有的參考表格作為結構描述中的分項清單。 這可以透過在表格和參照表格之間建立連結，並新增屬性來達成 **displayAsField=&quot;true&quot;**.
 
@@ -324,7 +325,7 @@ xtkschema="xtk:srcSchema">
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-使用者介面不會顯示連結，而是顯示欄位。 當使用者挑選該欄位時，他們可以從參照表中選取值或使用自動完成功能。
+使用者介面不會顯示連結，但會顯示欄位。 當使用者選取該欄位時，他們可以從參照表中選取值或使用自動完成功能。
 
 ![](assets/schema-edition-ex.png)
 

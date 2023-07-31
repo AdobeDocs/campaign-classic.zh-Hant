@@ -1,21 +1,22 @@
 ---
 product: campaign
-title: 檔案和資源管理
+title: 檔案與資源管理
+feature: Installation, Application Settings
 description: 瞭解如何在Campaign中設定檔案和資源管理
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 0%
+source-wordcount: '663'
+ht-degree: 2%
 
 ---
 
-# 檔案和資源管理{#file-and-resmanagement}
+# 檔案與資源管理{#file-and-resmanagement}
 
 
 
@@ -27,27 +28,28 @@ ht-degree: 0%
 
 此屬性的預設值為 **.+** 並可讓您上傳任何檔案型別。
 
-若要限制可能的格式，請以有效的Java規則運算式取代屬性值。 您可以用逗號分隔多個值，以輸入它們。
+若要限制可能的格式，請以有效的Java規則運算式取代屬性值。 您可以輸入數個值，方法是以逗號分隔。
 
-例如： **uploadWhiteList=&quot;。&#42;.png，.&#42;.jpg」** 可讓您將PNG和JPG格式上傳至伺服器。 不接受任何其他格式。
+例如： **uploadWhiteList=&quot;。&#42;.png，.&#42;.jpg」** 可讓您將PNG和JPG格式上傳至伺服器。 將不接受任何其他格式。
 
 您也可以藉由設定Web伺服器來防止重要檔案上傳。 [了解更多](web-server-configuration.md)
 
 >[!NOTE]
 >
->此 **uploadWhiteList** 屬性會限制Adobe Campaign伺服器上可供上傳的檔案型別。 但是，當發佈模式為 **追蹤伺服器** 或 **其他Adobe Campaign伺服器**，則 **uploadWhitelist** 屬性也必須在這些伺服器上更新。
+>此 **uploadWhiteList** 屬性會限制可在Adobe Campaign伺服器上傳的檔案型別。 但是，當發佈模式為 **追蹤伺服器** 或 **其他Adobe Campaign伺服器**，則 **uploadWhitelist** 屬性也必須在這些伺服器上更新。
 
 ## Proxy連線設定 {#proxy-connection-configuration}
 
-您可以透過Proxy，使用 **檔案傳輸** 例如工作流程活動。 若要完成此操作，您需要設定 **proxyConfig** 部分 **serverConf.xml** 檔案的特定命令。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
+您可以使用 **檔案傳輸** 例如工作流程活動。 若要完成此操作，您需要配置 **proxyConfig** 的區段 **serverConf.xml** 透過特定指令建立檔案。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
 
-可以使用下列Proxy連線：HTTP、HTTPS、FTP、SFTP。 請注意，從20.2 Campaign版本開始，HTTP和HTTPS通訊協定引數為 **不再提供**. 由於這些引數仍可在先前的組建中使用（包括9032），因此下文仍會提及這些引數。
+可能有下列Proxy連線：HTTP、HTTPS、FTP、SFTP。 請注意，從20.2版Campaign開始，HTTP和HTTPS通訊協定引數為 **不再提供**. 由於這些引數仍可在先前的組建中使用（包括9032），因此下文仍會提及這些引數。
 
 >[!CAUTION]
 >
 >僅支援基本驗證模式。 不支援NTLM驗證。
 >
 >不支援SOCKS代理。
+>
 
 您可以使用下列指令：
 
@@ -63,7 +65,7 @@ nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'htt
 nlserver config -setproxy:http/198.51.100.0:8080/user
 ```
 
-「http」和「https」選項僅在通訊協定引數為「ftp」時使用，並指示指定連線埠上的通道是透過HTTPS還是透過HTTP執行。
+只有通訊協定引數是&#39;ftp&#39;並指示指定連線埠上的通道是透過HTTPS還是透過HTTP執行時，才會使用&#39;http&#39;和&#39;https&#39;選項。
 
 如果您透過Proxy伺服器對FTP/SFTP和HTTP/HTTPS流量使用不同的連線埠，則應設定「ftp」通訊協定引數。
 
@@ -92,7 +94,7 @@ HTTPS連線在proxyHTTPS引數中定義：
 </proxyConfig>
 ```
 
-FTP/FTPS連線在proxyFTP引數中定義：
+FTP/FTPS連線會在proxyFTP引數中定義：
 
 ```
 <proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
@@ -100,9 +102,9 @@ FTP/FTPS連線在proxyFTP引數中定義：
 </proxyConfig>
 ```
 
-如果您對多個連線型別使用相同的Proxy，只有proxyHTTP會定義useSingleProxy設為&quot;1&quot;或&quot;true&quot;。
+如果您對多個連線型別使用相同的Proxy，則只有ProxyHTTP會定義useSingleProxy設為&quot;1&quot;或&quot;true&quot;。
 
-如果您有應通過Proxy的內部連線，請將其新增到覆寫引數中。
+如果您有應透過Proxy的內部連線，請將它們新增至覆寫引數。
 
 如果要暫時停用Proxy連線，請將enabled引數設為&quot;false&quot;或&quot;0&quot;。
 
@@ -127,7 +129,7 @@ FTP/FTPS連線在proxyFTP引數中定義：
 
 相符的URL是： **http://server/res/instance** 位置 **例項** 是追蹤例項的名稱。
 
-您可以將節點新增至以指定其他目錄 **conf-`<instance>`.xml** 檔案來設定伺服器上的儲存空間。 這表示新增下列行：
+您可以將節點新增至以指定另一個目錄 **會議 — `<instance>`.xml** 檔案來設定伺服器上的儲存空間。 這表示新增下列行：
 
 ```
 <serverconf>

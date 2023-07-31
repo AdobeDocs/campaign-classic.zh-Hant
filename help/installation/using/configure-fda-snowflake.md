@@ -2,14 +2,15 @@
 product: campaign
 title: 設定Snowflake的存取權
 description: 瞭解如何在FDA中設定Snowflake存取權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '519'
 ht-degree: 6%
 
 ---
@@ -18,18 +19,18 @@ ht-degree: 6%
 
 
 
-使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定對的存取權 [!DNL Snowflake].
+使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定存取權至 [!DNL Snowflake].
 
 1. 設定 [!DNL Snowflake] 於 [Linux](#snowflake-linux).
 1. 設定 [!DNL Snowflake] [外部帳戶](#snowflake-external) 在Campaign中
 
 >[!NOTE]
 >
->[!DNL Snowflake] 聯結器可用於託管和內部部署。 如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
+>[!DNL Snowflake] 聯結器可用於託管及內部部署。 如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
 
 ![](assets/snowflake_3.png)
 
-## Linux上的Snowflake {#snowflake-linux}
+## 在Linux上的Snowflake {#snowflake-linux}
 
 進行設定 [!DNL Snowflake] 在Linux上，請遵循下列步驟：
 
@@ -37,19 +38,19 @@ ht-degree: 6%
 
    * 若為Red Hat/CentOS：
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * 對於Debian：
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. 在執行指令碼之前，您可以透過存取更多資訊 `--help` 選項：
 
@@ -72,11 +73,11 @@ ht-degree: 6%
    systemctl start nlserver.service
    ```
 
-1. 然後，您可以在Campaign中設定 [!DNL Snowflake] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#snowflake-external).
+1. 接著，您可以在Campaign中設定 [!DNL Snowflake] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#snowflake-external).
 
 ## Snowflake外部帳戶 {#snowflake-external}
 
-您需要建立 [!DNL Snowflake] 將您的Campaign執行個體連線至您的外部帳戶 [!DNL Snowflake] 外部資料庫。
+您需要建立 [!DNL Snowflake] 將您的Campaign執行個體連線到您的外部帳戶 [!DNL Snowflake] 外部資料庫。
 
 1. 從Campaign **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -84,7 +85,7 @@ ht-degree: 6%
 
 1. 選取 **[!UICONTROL External database]** 作為外部帳戶的 **[!UICONTROL Type]**.
 
-1. 下 **[!UICONTROL Configuration]**，選取 [!DNL Snowflake] 從 **[!UICONTROL Type]** 下拉式清單。
+1. 在 **[!UICONTROL Configuration]**，選取 [!DNL Snowflake] 從 **[!UICONTROL Type]** 下拉式清單。
 
    ![](assets/snowflake_5.png)
 
@@ -98,18 +99,17 @@ ht-degree: 6%
 
       * **[!UICONTROL Password]**：使用者帳戶密碼。
 
-      ![](assets/snowflake.png)
+     ![](assets/snowflake.png)
 
-   * 若要進行金鑰組驗證，請按一下 **[!UICONTROL Keypair Auth]** 標籤以使用 **[!UICONTROL Private key]** 驗證並複製貼上您的 **[!UICONTROL Private key]**.
+   * 對於金鑰組驗證，按一下 **[!UICONTROL Keypair Auth]** 標籤以使用您的 **[!UICONTROL Private key]** 驗證並複製貼上您的 **[!UICONTROL Private key]**.
 
-      ![](assets/snowflake_4.png)
-
+     ![](assets/snowflake_4.png)
 
 1. 按一下 **[!UICONTROL Parameters]** 按Tab鍵，然後 **[!UICONTROL Deploy functions]** 按鈕以建立函式。
 
    >[!NOTE]
    >
-   >若要讓所有函式都可使用，您必須在遠端資料庫中建立Adobe Campaign SQL函式。 如需詳細資訊，請參閱此 [頁面](../../configuration/using/adding-additional-sql-functions.md).
+   >若要讓所有函式都可使用，您需要在遠端資料庫中建立Adobe Campaign SQL函式。 如需詳細資訊，請參閱此 [頁面](../../configuration/using/adding-additional-sql-functions.md).
 
    ![](assets/snowflake_2.png)
 
@@ -119,11 +119,11 @@ ht-degree: 6%
 
 | Option | 說明 |
 |---|---|
-| 工作結構描述 | 用於工作表的資料庫結構描述 |
+| 工作綱要 | 用於工作表的資料庫綱要 |
 | 倉儲 | 要使用的預設倉儲名稱。 它會覆寫使用者的預設值。 |
 | 時區名稱 | 預設為空白，這表示會使用Campaign Classic應用程式伺服器的系統時區。 選項可用來強制TIMEZONE工作階段引數。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
 | weekstart | WEEK_START階段作業引數。 預設為0。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
 | UseCachedResult | USE_CACHED_RESULTS工作階段引數。 預設為TRUE。 此選項可用來停用Snowflake快取結果。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
-| bulkThread | 用於Snowflake大量載入器的執行緒數目，多執行緒意味著對較大的大量載入有更好的效能。 預設為1。 根據機器執行緒計數，可調整數目。 |
-| chunkSize | 決定大量載入器區塊的檔案大小。 預設為128MB。 可修改成與bulkThreads搭配使用時更佳的效能。 更多同時作用中的執行緒表示更優異的效能。 <br>有關詳細資訊，請參閱 [Snowflake檔案](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| bulkThread | 用於Snowflake大量載入器的執行緒數量，執行緒越多，批次載入量越大，效能就越好。 預設為1。 根據機器執行緒計數，數字可以調整。 |
+| chunkSize | 決定大量載入器區塊的檔案大小。 預設為128MB。 可以修改以獲得最佳效能（當與bulkThreads一起使用時）。 同時作用中的執行緒越多，效能就越好。 <br>有關詳細資訊，請參閱 [Snowflake檔案](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | 階段名稱 | 預先布建的內部階段名稱。 它將用於大量載入，而不是建立新的臨時階段。 |

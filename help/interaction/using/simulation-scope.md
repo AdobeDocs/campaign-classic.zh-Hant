@@ -2,15 +2,16 @@
 product: campaign
 title: 模擬範圍
 description: 模擬範圍
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '248'
 ht-degree: 5%
 
 ---
@@ -21,26 +22,26 @@ ht-degree: 5%
 
 ## 範圍的定義 {#definition-of-the-scope}
 
-開啟 **[!UICONTROL Scope]** 索引標籤來選擇您的設定。
+開啟 **[!UICONTROL Scope]** 標籤以選擇您的設定。
 
 下列專案為必要專案：
 
 * 環境或優惠方案類別。
 * 優惠方案空間.
 * 聯絡日期. 在聯絡日期不符合資格的優惠方案不會納入考量。
-* 目標母體.
+* 目標族群.
 
-   如果您未在目標上設定篩選器，則會考慮整個收件者表格。
+  如果您未在目標上設定篩選器，則會考慮整個收件者表格。
 
 * 每個目標要模擬的建議數量。
 
-   收件者將收到這麼多建議。 例如，如果您輸入5，則每個收件者最多會收到5個優惠方案主張。
+  收件者將收到這麼多建議。 例如，如果您輸入5，則每個收件者最多會收到5個優惠方案主張。
 
-   ![](assets/offer_simulation_009.png)
+  ![](assets/offer_simulation_009.png)
 
 若要調整要納入模擬考量的優惠方案，您可以新增一或多個主題（在類別中預先指定）。
 
-您也可以選擇對所有優惠方案執行模擬，或只對線上優惠方案執行模擬。 某些篩選器可讓您變更您想要的選取範圍。
+您也可以選擇對所有優惠方案執行模擬，或僅對線上優惠方案執行模擬。 某些篩選器可讓您變更您想要的選取專案。
 
 >[!NOTE]
 >
@@ -48,7 +49,7 @@ ht-degree: 5%
 
 ## 新增報告軸 {#adding-reporting-axes}
 
-您可以透過以下方式在目標上新增報告軸或選件本身，以加強模擬分析： **[!UICONTROL Calculations]** 標籤。
+您可以透過在目標上新增報告軸或選件本身，來增強模擬分析 **[!UICONTROL Calculations]** 標籤。
 
 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕並選擇適當的欄位。 軸將用於計算模擬，並顯示在分析報告中。 有關詳細資訊，請參閱 [模擬追蹤](../../interaction/using/simulation-tracking.md).
 

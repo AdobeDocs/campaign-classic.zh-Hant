@@ -2,11 +2,12 @@
 product: campaign
 title: 更新資料庫結構
 description: 更新資料庫結構
+feature: Configuration
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 50a89f993523f3274e87ebac740d1c121082e18c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
@@ -35,7 +36,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此專案位於編輯欄位中，可以修改以刪除或新增SQL程式碼。
+>這是編輯欄位，可以修改以刪除或新增SQL程式碼。
 
 接下來，啟動資料庫更新：
 

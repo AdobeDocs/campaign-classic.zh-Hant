@@ -2,11 +2,12 @@
 product: campaign
 title: 實施 SOAP 方法
 description: 實施 SOAP 方法
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '427'
 ht-degree: 4%
 
 ---
@@ -17,9 +18,9 @@ ht-degree: 4%
 
 ## 簡介 {#introduction}
 
-您可以在JavaScript中建立SOAP方法。 此函式只會啟用應用程式，可以避免在表單中開發JSP及其呼叫。
+您可以在JavaScript中建立SOAP方法。 此函式只會啟用應用程式流程，可以避免在表單中開發JSP及其呼叫。
 
-這些SOAP方法的行為方式與應用程式中原生定義的相同。 支援相同的屬性：靜態、僅限金鑰和常數。
+這些SOAP方法的行為方式與應用程式中原生定義的相同。 支援相同的屬性：靜態、僅金鑰和常數。
 
 ## 定義方法程式庫 {#defining-a-method-library}
 
@@ -32,13 +33,13 @@ ht-degree: 4%
 
 首先，請在綱要中宣告方法(如需如何建立和編輯綱要的詳細資訊，請參閱 [本節](../../configuration/using/about-schema-edition.md))。
 
-其宣告類似於原生方法，但您需要新增「library」屬性，指定定義所在的方法程式庫名稱。
+它們的宣告與原生方法的宣告類似，但是您必須新增「library」屬性，指定定義所在的方法程式庫名稱。
 
-此名稱與「JavaScript程式碼」型別實體的名稱（與名稱空間）一致。
+此名稱與「JavaScript程式碼」型別實體的名稱（連同名稱空間）一致。
 
 範例:
 
-在nms：recipient擴充功能中宣告testLog(msg)方法
+testLog(msg)方法在nms：recipient擴充功能中宣告
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -54,7 +55,7 @@ ht-degree: 4%
 
 ### 定義 {#definition}
 
-SOAP方法會以分組在代表程式庫的指令碼中的JavaScript函式形式實作。
+SOAP方法會以JavaScript函式的形式實作，這些函式會分組在代表程式庫的指令碼中。
 
 >[!NOTE]
 >
@@ -64,7 +65,7 @@ SOAP方法會以分組在代表程式庫的指令碼中的JavaScript函式形式
 
 **1. 名稱**
 
-函式名稱必須符合下列格式：
+函式的名稱必須符合下列格式：
 
 ```
  <schema-namespace>_<schema-name>_<method-name>
@@ -72,7 +73,7 @@ SOAP方法會以分組在代表程式庫的指令碼中的JavaScript函式形式
 
 範例:
 
-下列JavaScript函式是上述方法的實作。 應使用「cus：test」名稱，在「JavaScript程式碼」型別實體中加以定義。
+下列JavaScript函式為上述方法的實作。 應使用「cus：test」名稱，在「JavaScript程式碼」型別實體中定義。
 
 ```
 function nms_recipient_testLog(message)
@@ -83,16 +84,16 @@ function nms_recipient_testLog(message)
 
 **2. 簽章**
 
-函式的簽章必須包含宣告中每個「in」或「inout」引數的引數。
+函式的簽章必須為宣告的每個&#39;in&#39;或&#39;inout&#39;引數包含一個引數。
 
 特定案例：
 
 * **非靜態方法**：函式必須先包含一個額外引數，與以「xml」(E4X)型別物件的形式傳遞的XML實體一致。
-* **&quot;key only&quot;型別方法**：函式必須先包含其他引數，與以字元字串形式傳遞的鍵值一致。
+* **&quot;key only&quot;型別方法**：函式必須先包含其他引數，符合以字元字串形式傳遞的鍵值。
 
 **3. 傳回的值**
 
-函式必須傳回每個&#39;out&#39;或&#39;inout&#39;型別引數的值。 特定案例：如果宣告方法時不含任何「static」、「key only」或「const」屬性，則第一個傳回的值必須與修改的實體相符。 可傳回新物件或傳回第一個修改過的引數。
+函式必須傳回每個&#39;out&#39;或&#39;inout&#39;型別引數的值。 特定案例：如果宣告方法時不含任何「static」、「key only」或「const」屬性，則第一個傳回值必須與修改的實體一致。 可以傳回新物件或傳回第一個修改過的引數。
 
 例如：
 
@@ -104,7 +105,7 @@ function nms_recipient_setLastName(self, name)
  }
 ```
 
-若要傳回數個值，必須將其顯示在表格中。
+要傳回數個值時，必須將其顯示在表格中。
 
 範例:
 

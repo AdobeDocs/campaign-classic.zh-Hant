@@ -2,14 +2,15 @@
 product: campaign
 title: Campaign 設定常見問題集
 description: Campaign Classic 常見問題集
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Troubleshooting, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '765'
 ht-degree: 92%
 
 ---
@@ -48,7 +49,7 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 ## 如何實施內容核准？ {#how-can-i-implement-content-approval-}
 
-Campaign 可以讓您以協作模式，針對行銷活動的主要步驟設定核准流程。您可以針對每個行銷活動，核准傳遞目標、內容和成本。可以透過電子郵件形式通知負責核准的Adobe Campaign操作者，然後他們可透過主控台或網路連線核准或拒絕核准。
+Campaign 可以讓您以協作模式，針對行銷活動的主要步驟設定核准流程。您可以針對每個行銷活動，核准傳遞目標、內容和成本。可以以電子郵件的形式通知負責核准的Adobe Campaign操作者，然後他們可透過主控台或網路連線核准或拒絕核准。
 
 [按一下這裡以瞭解更多](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)，並探索在 Campaign 中實施傳遞內容核准的步驟。
 

@@ -2,12 +2,13 @@
 product: campaign
 title: 表單結構
 description: 表單結構
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
@@ -16,9 +17,9 @@ ht-degree: 0%
 
 
 
-表單的說明是結構化XML檔案，可觀察表單結構描述的語法 **xtk：form**.
+表單的描述是結構化XML檔案，可觀察表單結構描述的文法 **xtk：form**.
 
-輸入表單的XML檔案必須包含 `<form>` 根元素具有 **名稱** 和 **名稱空間** 屬性，以填入表單名稱和名稱空間。
+輸入表單的XML檔案必須包含 `<form>` 根元素具有 **名稱** 和 **名稱空間** 屬性以填入表單名稱和名稱空間。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -26,7 +27,7 @@ ht-degree: 0%
 </form>
 ```
 
-依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同名稱相關聯，請設定 **entity-schema** 的屬性 `<form>` 元素對應到結構描述金鑰的名稱。 為了說明輸入表單的結構，讓我們使用&quot;cus：recipient&quot;範例結構描述來說明介面：
+依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同的名稱相關聯，請設定 **entity-schema** 的屬性 `<form>` 元素對應到結構描述金鑰的名稱。 為了說明輸入表單的結構，讓我們使用「cus：recipient」範例結構描述介面：
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -56,22 +57,22 @@ ht-degree: 0%
 </form>
 ```
 
-編輯控制項的說明會從 `<form>` 根元素。 編輯控制項輸入於 **`<input>`** 元素搭配 **xpath** 包含其結構描述中欄位路徑的屬性。
+編輯控制項的說明會從 `<form>` 根元素。 編輯控制項輸入於 **`<input>`** 元素與 **xpath** 包含其結構描述中欄位路徑的屬性。
 
 編輯控制項會自動適應對應的資料型別，並使用結構描述中定義的標籤。
 
 >[!NOTE]
 >
->您可以透過新增「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」、「 」等標籤，多載其資料結構描述中定義的標籤 **標籤** 屬性至 `<input>` 元素：\
+>您可以新增「 」，多載在其資料架構中定義的標籤。 **標籤** 屬性至 `<input>` 元素：\
 >`<input label="Email address" xpath="@name" />`
 
-依預設，每個欄位都會顯示在單一行上，並依據資料型別佔用所有可用空間。
+依預設，每個欄位都會顯示在一行上，並依據資料型別佔用所有可用空間。
 
 ## 格式 {#formatting}
 
-控制項的版面配置看起來類似於HTML表格中使用的版面，可以將控制項分割成數欄、交錯元素或指定可用空間的佔用。 但是請記住，格式設定只能讓您將區域以比例分割；您不能為物件指定固定尺寸。
+控制項的版面配置看起來類似於HTML表格中使用的版面，可能會將控制項分割成數個欄、交錯元素或指定可用空間的佔用。 不過，請記住，格式僅可讓您以比例將區域分割；您無法指定物件的固定維度。
 
-若要以兩欄顯示上述範例的控制項，請執行下列動作：
+若要以兩欄顯示上述範例的控制項：
 
 ![](assets/d_ncs_integration_form_exemple2.png)
 
@@ -85,9 +86,9 @@ ht-degree: 0%
 </form>
 ```
 
-此 **`<container>`** 元素搭配 **colcount** attribute可讓您在兩個欄上強制顯示子控制項。
+此 **`<container>`** 元素與 **colcount** attribute可讓您將子控制項強制顯示在兩欄上。
 
-此 **colspan** 控制項上的屬性會透過在其值中輸入的欄數來擴充控制項：
+此 **colspan** 控制項上的屬性會以值中輸入的欄數來擴充控制項：
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
@@ -129,13 +130,13 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </form>
 ```
 
-此 **`<static>`** 標籤和 **分隔符號** type可讓您新增分隔列，其標籤包含在 **標籤** 屬性。
+此 **`<static>`** 標籤為 **分隔符號** type可讓您新增分隔列，其標籤包含在 **標籤** 屬性。
 
-說明文字已使用 `<static>` 標籤中附加說明型別。 文字內容輸入於 **標籤** 屬性。
+已使用「 」新增說明文字 `<static>` 標籤與說明型別。 文字內容輸入於 **標籤** 屬性。
 
 ## 容器 {#containers}
 
-容器可讓您將一組控制項分組。 他們由 **`<container>`** 元素。 以上使用它們來格式化數欄的控制項。
+容器可讓您將一組控制項分組。 他們由 **`<container>`** 元素。 上面用來格式化數欄的控制項。
 
 此 **xpath** 上的屬性 `<container>` 可讓您簡化子控制項的參照。 然後，控制項的參照會相對於父項 `<container>` 元素。
 
@@ -148,7 +149,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </container>
 ```
 
-在名為「location」的元素中新增「xpath」的範例：
+將「xpath」新增至名為「location」的元素的範例：
 
 ```xml
 <container colcount="2" xpath="location">
@@ -159,11 +160,11 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ### 容器型別 {#types-of-container}
 
-容器可用來使用頁面中格式化的一組欄位來建構複雜的控制項。
+容器是用來建構複雜的控制項，使用一組格式化在頁面中的欄位。
 
-#### 標籤容器 {#tab-container}
+#### 索引標籤容器 {#tab-container}
 
-索引標籤容器可格式化頁面中可從索引標籤存取的資料。
+索引標籤容器會格式化可從索引標籤存取之頁面中的資料。
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
@@ -180,7 +181,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </container>
 ```
 
-主要容器由 **type=&quot;notebook&quot;** 屬性。 標籤會在子項容器中宣告，而標籤的標籤會從 **標籤** 屬性。
+主要容器由定義 **type=&quot;notebook&quot;** 屬性。 標籤會在子容器中宣告，標籤會從 **標籤** 屬性。
 
 ![](assets/d_ncs_integration_form_exemple7.png)
 
@@ -208,17 +209,17 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </container>
 ```
 
-主要容器由 **type=&quot;iconbox&quot;** 屬性。 與圖示相關聯的頁面會在子容器中宣告。 圖示的標籤會從 **標籤** 屬性。
+主要容器由定義 **type=&quot;iconbox&quot;** 屬性。 與圖示關聯的頁面會在子容器中宣告。 圖示的標籤會從 **標籤** 屬性。
 
 頁面的圖示會從 `img="<image>"` 屬性，其中 `<image>` 是與其金鑰相對應的影像名稱，由名稱和名稱空間組成（例如「xtk：properties.png」）。
 
-影像可從以下網址取得： **[!UICONTROL Administration > Configuration > Images]** 節點。
+影像可從以下位置取得： **[!UICONTROL Administration > Configuration > Images]** 節點。
 
 #### 可見度容器 {#visibility-container}
 
 您可以透過動態條件遮罩一組控制項。
 
-此範例說明「性別」欄位值上的控制項可見性：
+此範例說明「性別」欄位值之控制項的可見度：
 
 ```xml
 <container type="visibleGroup" visibleIf="@gender=1">
@@ -235,11 +236,11 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**：測試字串型別資料的相等性。 比較值必須以引號括住。
 * **visibleIf=&quot;@gender >= 1和@gender！= 2英吋**：數值的條件。
-* **visibleIf=&quot;@boolean1=true or @boolean2=false&quot;**：在布林值欄位上測試。
+* **visibleIf=&quot;@boolean1=true or @boolean2=false&quot;**：在布林值欄位上進行測試。
 
-#### 啟用容器 {#enabling-container}
+#### 正在啟用容器 {#enabling-container}
 
-此容器可讓您啟用或停用動態條件的一組資料。 停用控制項會使其無法編輯。 下列範例說明如何從「性別」欄位的值啟用控制項：
+此容器可讓您啟用或停用動態條件中的一組資料。 停用控制項可防止編輯控制項。 下列範例說明如何從「性別」欄位的值啟用控制項：
 
 ```xml
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -250,7 +251,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </container>
 ```
 
-啟用容器是由 **type=&quot;enabledGroup&quot;** 屬性。 此 **enabledIf** 屬性包含啟用條件。
+啟用容器由以下定義 **type=&quot;enabledGroup&quot;** 屬性。 此 **enabledIf** 屬性包含啟動條件。
 
 ## 編輯連結 {#editing-a-link}
 
@@ -268,7 +269,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 <input xpath="company"/>
 ```
 
-可透過編輯欄位存取目標選擇。 預先輸入可協助輸入，以便從輸入的前幾個字元中輕鬆找到目標元素。 然後會根據 **計算字串** 定義於目標結構描述中。 如果結構描述在控制項中驗證後不存在，則會顯示即時目標建立的確認訊息。 確認會在目標表格中建立新記錄，並將其與連結建立關聯。
+可透過編輯欄位存取目標選擇。 預先輸入可協助輸入，以便從輸入的前幾個字元輕鬆找到目標元素。 搜尋會根據 **計算字串** 定義於目標結構描述中。 如果結構描述在控制項中驗證後不存在，則會顯示即時目標建立的確認訊息。 確認會在目標表格中建立新記錄，並將其與連結建立關聯。
 
 下拉式清單可用來從已建立的記錄清單中選取目標元素。
 
@@ -276,9 +277,9 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-此 **[!UICONTROL Edit link]** （放大鏡）圖示會啟動連結元素的編輯表單。 根據預設，使用的形式是在目標結構描述的索引鍵上推匯出來的。 此 **表單** 屬性可讓您強制使用編輯表單的名稱（例如「cus：company2」）。
+此 **[!UICONTROL Edit link]** （放大鏡）圖示會啟動連結元素的編輯表單。 根據預設，使用的形式是在目標架構的索引鍵上推斷。 此 **表單** 屬性可讓您強制使用編輯表單的名稱（例如「cus：company2」）。
 
-您可以透過新增以下專案來限制目標元素的選擇 **`<sysfilter>`** 元素輸入表單中的連結定義：
+您可以透過新增以下專案限制目標元素的選擇 **`<sysfilter>`** 輸入表單中連結定義的元素：
 
 ```xml
 <input xpath="company">
@@ -288,7 +289,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </input>
 ```
 
-您也可以將清單排序為 **`<orderby>`** 元素：
+您也可以使用排序清單 **`<orderby>`** 元素：
 
 ```xml
 <input xpath="company">
@@ -301,10 +302,10 @@ A **`<static>`** 元素可用於格式化輸入表單：
 ### 控制項屬性 {#control-properties}
 
 * **noAutoComplete**：停用預先輸入（值為「true」）
-* **createmode**：如果連結不存在，則會立即建立。 可能的值包括：
+* **createmode**：如果連結不存在，則會即時建立。 可能的值包括：
 
    * **無**：停用建立。 如果連結不存在，則會顯示錯誤訊息
-   * **內嵌**：在編輯欄位中建立包含內容的連結
+   * **內嵌**：在編輯欄位中建立與內容的連結
    * **版本**：在連結上顯示編輯表單。 驗證表單時，資料會儲存（預設模式）
 
 * **noZoom**：連結上沒有編輯表單（值為「true」）
@@ -312,11 +313,11 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ## 連結清單 {#list-of-links}
 
-在資料結構描述中作為集合元素(unbound=&quot;true&quot;)輸入的連結必須透過清單才能檢視與其相關聯的所有元素。
+在資料結構描述中作為集合元素(unbound=&quot;true&quot;)輸入的連結必須透過清單，才能檢視與其相關聯的所有元素。
 
 原則包含顯示已最佳化資料載入的連結元素清單（透過資料批次下載，僅在清單可見時執行）。
 
-結構描述中的集合連結範例：
+綱要中的集合連結範例：
 
 ```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
@@ -324,7 +325,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </element>
 ```
 
-清單的輸入形式：
+清單的輸入形式如下：
 
 ![](assets/d_ncs_integration_form_exemple11.png)
 
@@ -337,15 +338,15 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 清單控制項由 **type=&quot;linklist&quot;** 屬性。 清單路徑必須參照集合連結。
 
-欄是透過 **`<input>`** 清單元素。 此 **xpath** attribute是指目標結構描述中欄位的路徑。
+資料行是透過 **`<input>`** 清單元素。 此 **xpath** attribute是指目標結構描述中欄位的路徑。
 
-帶有標籤的工具列（在架構中的連結上定義）會自動放置在清單上方。
+具有標籤的工具列（在架構中的連結上定義）會自動放置在清單上方。
 
-清單可透過以下方式篩選 **[!UICONTROL Filters]** 按鈕並設定為新增和排序欄。
+清單可透過以下方式篩選： **[!UICONTROL Filters]** 按鈕並設定為新增及排序欄。
 
-此 **[!UICONTROL Add]** 和 **[!UICONTROL Delete]** 按鈕可讓您新增和刪除連結上的集合元素。 依預設，新增元素會啟動目標結構描述的編輯表單。
+此 **[!UICONTROL Add]** 和 **[!UICONTROL Delete]** 按鈕可讓您新增和刪除連結上的集合元素。 依預設，新增元素會啟動目標架構的編輯表單。
 
-此 **[!UICONTROL Detail]** 按鈕會在以下情況下自動新增： **zoom=&quot;true&quot;** 屬性完成於 **`<input>`** 清單的標籤：可讓您啟動所選行的編輯表單。
+此 **[!UICONTROL Detail]** 按鈕會在以下情況自動新增： **zoom=&quot;true&quot;** 屬性完成於 **`<input>`** 清單的標籤：可讓您啟動所選行的編輯表單。
 
 載入清單時可套用篩選和排序：
 
@@ -362,9 +363,9 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </input>
 ```
 
-### 關係表格 {#relationship-table}
+### 關係表 {#relationship-table}
 
-關係表格可讓您連結兩個具有N-N基數的表格。 關係表格僅包含兩個表格的連結。
+關係表格可讓您連結具有N-N基數的兩個表格。 關係表格僅包含兩個表格的連結。
 
 因此，將元素新增至清單應可讓您從關係表格中的兩個連結之一完成清單。
 
@@ -377,7 +378,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </srcSchema>
 ```
 
-例如，我們以&quot;cus：recipient&quot;結構描述的輸入表單開始。 清單必須顯示與服務訂閱的關聯，而且必須允許您透過選取現有服務來新增訂閱。
+例如，我們以&quot;cus：recipient&quot;綱要的輸入表單開始。 清單必須顯示與服務訂閱的關聯，而且必須允許您透過選取現有服務來新增訂閱。
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -388,22 +389,22 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </input>
 ```
 
-此 **Xpathchoicetarget** 屬性可讓您從輸入的連結啟動選擇表單。 建立關係表格記錄會自動更新目前收件者和所選服務的連結。
+此 **Xpatchoicetarget** 屬性可讓您從輸入的連結啟動選擇表單。 建立關係表記錄會自動更新目前收件者和所選服務的連結。
 
 >[!NOTE]
 >
->此 **xpathEditTarget** 屬性可讓您強制編輯輸入連結上選取的行。
+>此 **xpathEditTarget** 屬性可讓您強制編輯所輸入連結上選取的行。
 
 ### 清單屬性 {#list-properties}
 
 * **noToolbar**：隱藏工具列（值為「true」）
 * **toolbarCaption**：多載工具列標籤
-* **toolbarAlign**：修改工具列的垂直或水準幾何（可能的值： 「垂直」|「水準」）
-* **img**：顯示與清單相關聯的影像
+* **toolbarAlign**：修改工具列的垂直或水準幾何（可能的值： &quot;vertical&quot;|&quot;horizontal&quot;）
+* **img**：顯示與清單關聯的影像
 * **表單**：多載目標元素的編輯表單
 * **縮放**：新增 **[!UICONTROL Zoom]** 按鈕以編輯目標元素
 * **xpathEditTarget**：在輸入的連結上設定編輯
-* **Xpathchoicetarget**：此外，會在輸入的連結上啟動選擇表單
+* **Xpatchoicetarget**：此外，會在輸入的連結上啟動選取表單
 
 ## 記憶體清單控制項 {#memory-list-controls}
 
@@ -413,7 +414,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ### 欄清單 {#column-list}
 
-此控制項會顯示可編輯的欄清單，其工具列包含「新增」和「刪除」按鈕。
+此控制項會顯示可編輯的欄清單，其工具列包含新增和刪除按鈕。
 
 ![](assets/d_ncs_integration_form_exemple13.png)
 
@@ -426,11 +427,11 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 清單控制項必須填入 **type=&quot;list&quot;** 屬性，而清單的路徑必須參照收集要素。
 
-欄會在子項中宣告 **`<input>`** 清單的標籤。 欄的標籤和大小可以強制使用 **標籤** 和 **colSize** 屬性。
+資料行在子項中宣告 **`<input>`** 清單的標籤。 欄標籤和大小可以使用 **標籤** 和 **colSize** 屬性。
 
 >[!NOTE]
 >
->排序順序箭頭會在 **ordered=&quot;true&quot;** 屬性會新增至資料結構描述中的收集元素。
+>排序順序箭頭會在 **ordered=&quot;true&quot;** 屬性會新增至資料結構描述中的集合元素。
 
 工具列按鈕可水準對齊：
 
@@ -443,7 +444,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </input>
 ```
 
-此 **toolbarCaption** attribute會強制工具列的水準對齊，並輸入清單上方的標題。
+此 **toolbarCaption** attribute會強制水準對齊工具列，並輸入清單上方的標題。
 
 #### 放大清單 {#zoom-in-a-list}
 
@@ -463,26 +464,26 @@ A **`<static>`** 元素可用於格式化輸入表單：
 </input>
 ```
 
-編輯表單已完成 `<form>` 清單定義下的元素。 其結構與輸入表單的結構相同。 此 **[!UICONTROL Detail]** 按鈕會在以下時自動新增： **zoom=&quot;true&quot;** 屬性完成於 **`<input>`** 清單的標籤。 此屬性可讓您啟動所選行的編輯表單。
+編輯表單的完成日期為 `<form>` 清單定義下的元素。 其結構與輸入表單的結構相同。 此 **[!UICONTROL Detail]** 按鈕會在以下情況自動新增： **zoom=&quot;true&quot;** 屬性完成於 **`<input>`** 清單的標籤。 此屬性可讓您啟動所選行的編輯表單。
 
 >[!NOTE]
 >
->新增 **zoomOnAdd=&quot;true&quot;** attribute會在插入清單元素時強制呼叫編輯表單。
+>新增 **zoomOnAdd=&quot;true&quot;** attribute強制在插入list元素時呼叫編輯表單。
 
 ### 清單屬性 {#list-properties-1}
 
 * **noToolbar**：隱藏工具列（值為「true」）
 * **toolbarCaption**：多載工具列標籤
-* **toolbarAlign**：修改工具列的位置（可能的值： &quot;vertical&quot;|&quot;horizontal&quot;）
-* **img**：顯示與清單相關聯的影像
+* **toolbarAlign**：修改工具列的位置（可能的值： 「垂直」|「水準」）
+* **img**：顯示與清單關聯的影像
 * **表單**：多載目標元素的編輯表單
 * **縮放**：新增 **[!UICONTROL Zoom]** 按鈕以編輯目標元素
-* **zoomOnAdd**：啟動新增專案上的編輯表單
-* **Xpathchoicetarget**：此外，會在輸入的連結上啟動選擇表單
+* **zoomOnAdd**：啟動新增的編輯表單
+* **Xpatchoicetarget**：此外，會在輸入的連結上啟動選取表單
 
 ## 不可編輯的欄位 {#non-editable-fields}
 
-若要顯示欄位並防止編輯該欄位，請使用 **`<value>`** 標籤或完成 **readOnly=&quot;true&quot;** 上的屬性 **`<input>`** 標籤之間。
+若要顯示欄位並防止編輯它，請使用 **`<value>`** 標籤或完成 **readOnly=&quot;true&quot;** 上的屬性 **`<input>`** 標籤之間。
 
 「性別」欄位範例：
 
@@ -495,7 +496,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ## 選項按鈕 {#radio-button}
 
-選項按鈕可讓您從多個選項中進行選擇。 此 **`<input>`** 標籤可用來列出可能的選項，以及 **checkedValue** attribute會指定與選項相關的值。
+選項按鈕可讓您從數個選項中進行選擇。 此 **`<input>`** 標籤可用來列出可能的選項，以及 **checkedvalue** attribute指定與選擇相關的值。
 
 「性別」欄位範例：
 
@@ -509,7 +510,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ## 核取方塊 {#checkbox}
 
-核取方塊會反映布林值狀態（是否選取）。 依預設，此控制項由「布林值」(true/false)欄位使用。 預設值為0或1的變數可以與此按鈕相關聯。 此值可透過 **checkValue** 屬性。
+核取方塊會反映布林值狀態（是否選取）。 依預設，此控制項由「布林值」(true/false)欄位使用。 預設值為0或1的變數可以與此按鈕相關聯。 此值可透過 **checkvalue** 屬性。
 
 ```xml
 <input xpath="@boolean1"/>
@@ -545,7 +546,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ## 運算式欄位 {#expression-field}
 
-運算式欄位會從運算式動態更新欄位； **`<input>`** 標籤用於 **xpath** 屬性，輸入要更新的欄位路徑和 **expo** 包含更新運算式的屬性。
+運算式欄位會根據運算式動態更新欄位； **`<input>`** 標籤與 **xpath** 屬性以輸入要更新的欄位路徑和 **expo** 包含更新運算式的屬性。
 
 ```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -555,13 +556,13 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ## 表單的內容 {#context-of-forms}
 
-執行輸入表單會初始化包含正在編輯之實體資料的XML檔案。 此檔案代表表單的內容，並可當做工作區使用。
+執行輸入表單會初始化包含正在編輯之實體資料的XML檔案。 此檔案代表表單的內容，可當作工作區使用。
 
 ### 更新內容 {#updating-the-context}
 
-若要修改表單的前後關聯，請使用 `<set expr="<value>" xpath="<field>"/>` 標籤，其中 `<field>` 是目的地欄位，且 `<value>` 是更新運算式或值。
+若要修改表單的內容，請使用 `<set expr="<value>" xpath="<field>"/>` 標籤，其中 `<field>` 是目的地欄位，且 `<value>` 是更新運算式或值。
 
-使用範例 `<set>` 標籤：
+使用的範例 `<set>` 標籤：
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**：將&#39;Test&#39;值放置在暫時位置/tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**：以「Test」值更新「lastName」屬性上的實體
@@ -590,7 +591,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 巨集語言可用於表單定義中，以執行條件測試。
 
-此 **`<if expr="<expression>" />`** 如果運算式已驗證，標籤會執行標籤底下指定的指示：
+此 **`<if expr="<expression>" />`** 如果運算式已驗證，標籤會執行標籤下指定的指示：
 
 ```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -612,7 +613,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ## 精靈 {#wizards}
 
-精靈會以頁面的形式引導您完成一組資料輸入步驟。 驗證表單時，輸入的資料會儲存。
+精靈會以頁面的形式引導您完成一組資料輸入步驟。 當您驗證表單時，輸入的資料會儲存。
 
 精靈的結構如下：
 
@@ -631,9 +632,9 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-是否存在 **type=&quot;wizard&quot;** 上的屬性 `<form>` element可讓您定義表單建構中的精靈模式。 頁面完成自 `<container>` 元素，為的子項 `<form>` 元素。 此 `<container>` 頁面的元素會填入title和desc的標題屬性，以在頁面標題下顯示說明。 此 **[!UICONTROL Previous]** 和 **[!UICONTROL Next]** 會自動新增按鈕，以允許在不同頁面之間瀏覽。
+是否存在 **type=&quot;wizard&quot;** 上的屬性 `<form>` 元素可讓您定義表單建構中的精靈模式。 頁面完成的來源 `<container>` 元素，為的子項 `<form>` 元素。 此 `<container>` 頁面的元素會填入title的標題屬性和desc，以在頁面標題下顯示說明。 此 **[!UICONTROL Previous]** 和 **[!UICONTROL Next]** 按鈕會自動新增，以允許在不同頁面之間瀏覽。
 
-此 **[!UICONTROL Finish]** 按鈕會儲存輸入的資料並關閉表單。
+此 **[!UICONTROL Finish]** 按鈕儲存輸入的資料並關閉表單。
 
 ### SOAP方法 {#soap-methods}
 
@@ -650,7 +651,7 @@ SOAP方法執行可從填入的啟動 **`<leave>`** 標籤的後面。
 
 服務的名稱及其實作結構描述是透過 **名稱** 和 **服務** 屬性 **`<soapcall>`** 標籤之間。
 
-有關輸入引數的說明，請參見 **`<param>`** 下的元素 **`<soapcall>`** 標籤之間。
+有關輸入引數的說明，請參閱 **`<param>`** 下的元素 **`<soapcall>`** 標籤之間。
 
 引數型別必須透過 **type** 屬性。 可能的型別如下：
 
@@ -658,7 +659,7 @@ SOAP方法執行可從填入的啟動 **`<leave>`** 標籤的後面。
 * **布林值**：布林值
 * **位元組**：8位元整數
 * **短**：16位元整數
-* **long**：32位元整數
+* **長**：32位元整數
 * **短**：16位元整數
 * **兩次**：雙精確度浮點數
 * **DOMElement**：元素型別節點

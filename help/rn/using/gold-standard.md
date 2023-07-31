@@ -2,14 +2,14 @@
 product: campaign
 title: 「[!DNL Gold Standard] 發行版本」
 description: 發行說明和 Campaign Classic 相容性對照表 [!DNL Gold Standard]
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+feature: Release Notes
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1787'
 ht-degree: 99%
 
 ---
@@ -40,7 +40,7 @@ _2021 年 8 月 27 日_
 * 追蹤簽章功能已經過改良，以防止連結至協力廠商工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 處理特殊字元。 URL 參數現在已編碼。
 * 修正日期選擇器可能導致主控台顯示封鎖程式錯誤訊息的問題。 (NEO-36345)
 
-### [!DNL Gold Standard] 第11版{#gs-11}
+### [!DNL Gold Standard] 第11發行{#gs-11}
 
 [!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
@@ -87,7 +87,7 @@ _2020 年 12 月 22 日_
 
 * 修正執行&#x200B;**擴充**&#x200B;活動時，工作流程可能失敗的問題。(NEO-17338)
 
-### [!DNL Gold Standard] 10版{#gs-10}
+### [!DNL Gold Standard] 第10發行{#gs-10}
 
 [!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
@@ -119,7 +119,7 @@ _2020 年 6 月 22 日_
 * 修正了反網路釣魚服務的問題。(NEO-25283)
 * 修正了在使用特定自訂追蹤公式時的追蹤問題。(NEO-25277)
 
-### [!DNL Gold Standard] 8版{#gs-8}
+### [!DNL Gold Standard] 第8版本{#gs-8}
 
 [!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
@@ -156,7 +156,7 @@ _2020 年 3 月 9 日_
 
 * 修正了使用 FTP over SSL 的外部帳戶的問題。(NEO-20498)
 
-### [!DNL Gold Standard] 5版{#gs-5}
+### [!DNL Gold Standard] 第5發行版本{#gs-5}
 
 [!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
@@ -166,7 +166,7 @@ _2019 年 12 月 17 日_
 
 * 修正以下通訊頻道的追蹤問題：行動（SMS、MMS）、推播（iOS、Android）和社交網路（Facebook、Twitter）。(NEO-19595)
 
-### [!DNL Gold Standard] 第4版本{#gs-4}
+### [!DNL Gold Standard] 第4發行版本{#gs-4}
 
 [!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
@@ -176,7 +176,7 @@ _2019 年 12 月 11 日_
 
 * 修正了在使用 MSSQL 資料庫傳送訊息時，所導致的效能問題。(NEO-17558)
 
-### [!DNL Gold Standard] 3版{#gs-3}
+### [!DNL Gold Standard] 第3發行版本{#gs-3}
 
 [!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 

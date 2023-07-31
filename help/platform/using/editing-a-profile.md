@@ -2,15 +2,16 @@
 product: campaign
 title: 編輯用戶檔案
 description: 編輯用戶檔案
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Profiles
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 87%
+source-wordcount: '478'
+ht-degree: 85%
 
 ---
 
@@ -42,7 +43,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->當 **[!UICONTROL No longer contact (by any channel)]** 選項已選取，這表示設定檔位於封鎖清單上，也就是設定檔已表示不想被聯絡（例如，按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。如需詳細資訊，請參閱[此頁面](../../delivery/using/understanding-quarantine-management.md)。
+>當 **[!UICONTROL No longer contact (by any channel)]** 選項已選取，這表示設定檔位於封鎖清單上，亦即設定檔已表示不希望被聯絡（例如，按一下電子報中的取消訂閱連結）。 我們將不再經由任何通路 (電子郵件、直郵廣告等) 提供傳遞項目。如需詳細資訊，請參閱[此頁面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## 聯絡資訊索引標籤 {#contact-information-tab}
 
@@ -54,7 +55,7 @@ ht-degree: 87%
 
 ## 其他索引標籤 {#other-tab}
 
-此畫面包含可根據需求進行個人化設定的使用者定義欄位。您也可以變更欄位名稱並定義其格式，方法是透過 **[!UICONTROL Field properties...]**，如下所示：
+此畫面包含可根據需求進行個人化設定的使用者定義欄位。您也可以變更欄位名稱並定義其格式，透過 **[!UICONTROL Field properties...]**，如下所示：
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -68,7 +69,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-有關詳細資訊，請參閱 [建立和管理清單](../../platform/using/creating-and-managing-lists.md).
+有關詳細資訊，請參閱 [建立及管理清單](../../platform/using/creating-and-managing-lists.md).
 
 ## 訂閱索引標籤 {#subscriptions-tab}
 

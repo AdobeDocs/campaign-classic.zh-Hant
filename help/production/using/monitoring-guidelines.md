@@ -2,12 +2,12 @@
 product: campaign
 title: 監視指南
 description: 探索監控 Campaign 執行個體和程序的準則和最佳作法
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '767'
 ht-degree: 21%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 21%
 
 ## 執行個體監視儀表板 {#instance-monitoring-dashboard}
 
-此 **[!UICONTROL Monitoring]** tab (可從Campaign Classic首頁存取)是協助您監視執行個體的主要進入點。
+此 **[!UICONTROL Monitoring]** 索引標籤是協助您監視執行個體的主要進入點，可從Campaign Classic首頁存取。
 
 它提供執行個體上所發生情況的儀表板：其狀態（組建版本、已安裝套件等）、系統指標、記錄、目前正在執行的工作流程、上次傳送傳遞的狀態等。
 
@@ -26,7 +26,7 @@ ht-degree: 21%
 
 ![](assets/monitoring_tab.png)
 
-## 監視Campaign Classic程式 {#monitoring-campaign-classic-processes}
+## 監控Campaign Classic流程 {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">監視您的執行個體</a></p></td>
@@ -35,29 +35,29 @@ ht-degree: 21%
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">監視資料庫</a></p></td></tr>
 </table>
 
-有其他方法可監控不同的Campaign流程。 它們提供數種監視執行個體的方式，以確保您的系統狀況良好，並最終疑難排解設定工作流程、傳送傳遞等時可能發生的問題。
+監控不同Campaign流程的其他方法可供使用。 它們提供數種監視執行個體的方式，以確保您的系統健康且最終疑難排解設定工作流程、傳送傳遞等時可能發生的問題。
 
-### 監視執行個體 {#monitoring-instance}
+### 監視您的執行個體 {#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
-**自動監控工具**
+**自動監視工具**
 
 有數種自動方法可供使用。 協助您監控執行個體。 例如，您可以設定包含偵測到異常的電子郵件報表、擷取XML格式的指標清單等。 [按一下這裡](../../production/using/monitoring-processes.md#automatic-monitoring)以獲得更多資訊。
 
 **稽核軌跡**
 
-稽核軌跡可讓您以視覺效果呈現執行個體中與選項、工作流程及結構描述相關的變更完整歷史記錄。 [按一下這裡](../../production/using/audit-trail.md)以獲得更多資訊。
+稽核軌跡可讓您以視覺效果呈現執行個體中與選項、工作流程和結構描述相關的完整變更歷史記錄。 [按一下這裡](../../production/using/audit-trail.md)以獲得更多資訊。
 
 **控制面板**
 
-「控制面板」可讓您管理執行個體的多項設定：管理URL許可權、檢查執行個體詳細資訊（例如伺服器的組建版本）等。 它也可讓您監視連線到執行個體的SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)以獲得更多資訊。
+「控制面板」可以讓您管理執行個體的多項設定：管理URL許可權、檢查執行個體的詳細資訊（例如伺服器的組建版本）等。 它也可讓您監視連線到執行個體的SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)以獲得更多資訊。
 
 >[!NOTE]
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的執行個體必須託管於AWS上，並透過以下方式升級： [最新GA版本編號](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)詳述的步驟操作。
+>請注意，您的執行個體必須託管於AWS上，並升級為 [最新GA版本](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 
 ### 監控工作流程 {#monitoring-workflows}
 
@@ -89,20 +89,20 @@ ht-degree: 21%
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
-**SMTP報表**
+**SMTP報告**
 
 SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](../../production/using/monitoring-processes.md)
 
 **最佳實務**
 
-[傳遞傳送和設計的最佳實務](../../delivery/using/delivery-best-practices.md) 可協助您改善其效能。
+[傳遞傳送和設計的最佳實務](../../delivery/using/delivery-best-practices.md) 可協助您改善客戶效能。
 
 **傳遞疑難排解**
 遇到傳送問題時，可執行特定動作：
 * [傳遞能力問題](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [影像顯示問題](../../production/using/image-display-issues.md)
 * [傳遞效能問題](../../delivery/using/delivery-performances.md)
-* [暫存檔問題](../../production/using/temporary-files.md) - *僅限內部部署託管模型*
+* [暫存檔案問題](../../production/using/temporary-files.md) - *僅限內部部署託管模型*
 
 ### 監視資料庫 {#monitoring-database}
 
@@ -114,7 +114,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 **資料庫效能疑難排解**
 
-遇到資料庫效能問題時，可執行特定動作。 [按一下這裡](../../production/using/database-performances.md)以獲得更多資訊。
+遇到資料庫效能問題時，可以執行特定動作。 [按一下這裡](../../production/using/database-performances.md)以獲得更多資訊。
 
 **維護資料庫**
 
@@ -126,11 +126,11 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 *僅限內部部署和混合託管模型*
 
-備份是必要的，以避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料。 [按一下這裡](../../production/using/backup.md)以獲得更多資訊。復原程式的說明，請參閱 [本節](../../production/using/restoration.md).
+若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md)以獲得更多資訊。復原程式的說明請參閱 [本節](../../production/using/restoration.md).
 
 ## Campaign Classic技術原則 {#campaign-classic-technical-principles}
 
-技術資源可在Campaign Classic檔案中取得。 在執行個體上執行任何技術操作之前，建議您先熟悉這些主題。
+Campaign Classic檔案中提供技術資源。 在執行個體上執行任何技術作業之前，建議您先熟悉這些主題。
 
 **託管模型與功能**
 
@@ -142,9 +142,9 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 *僅限內部部署和混合託管模型*
 
 * [伺服器設定](../../installation/using/configuring-campaign-server.md)
-* [Serverconf.xml檔案設定](../../installation/using/the-server-configuration-file.md)
+* [Serverconf.xml檔案組態](../../installation/using/the-server-configuration-file.md)
 * [傳遞能力的伺服器設定](../../installation/using/email-deliverability.md)
-* [建立執行個體和宣告資料庫的命令列](../../installation/using/command-lines.md)
+* [用來建立執行個體和宣告資料庫的命令列](../../installation/using/command-lines.md)
 
 **一般原則**
 

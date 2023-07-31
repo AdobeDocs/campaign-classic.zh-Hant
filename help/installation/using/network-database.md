@@ -2,14 +2,15 @@
 product: campaign
 title: 網路、資料庫和 SSL/TLS
 description: 進一步瞭解網路、資料庫和SSL/TLS設定最佳實務
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '142'
 ht-degree: 9%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 9%
 
 ## 網路設定
 
-在部署內部部署型別的架構時，有一件非常重要的事要檢查 [網路設定](../../installation/using/network-configuration.md). 請確定無法在伺服器外部直接存取Tomcat伺服器：
+部署內部部署型別的架構時，有一件非常重要的事要檢查 [網路設定](../../installation/using/network-configuration.md). 請確定無法在伺服器外部直接存取Tomcat伺服器：
 
 * 關閉外部IP上的Tomcat連線埠(8080) （必須在localhost上運作）
 * 請勿將標準HTTP連線埠(80)對應到Tomcat連線埠(8080)
@@ -29,7 +30,7 @@ ht-degree: 9%
 
 ## 資料庫
 
-您必須套用資料庫引擎安全性最佳實務。
+您必須套用您的資料庫引擎安全性最佳實務。
 
 ## SSL/TLS設定
 
@@ -51,7 +52,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python指令碼，兩者皆有。
+您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python指令碼，兩者都會執行。
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

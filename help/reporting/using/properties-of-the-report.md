@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 報吿屬性
-description: 進一步瞭解報表屬性設定
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+description: 深入瞭解報表屬性設定
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -17,23 +17,23 @@ ht-degree: 3%
 
 
 
-您可以完全個人化並設定報表，以符合您的需求。 要執行此操作，請編輯其屬性。 報表屬性可透過以下方式存取： **[!UICONTROL Properties]** 活動序號圖表上方的按鈕。
+您可以完全個人化並設定報表，以符合您的需求。 若要這麼做，請編輯其屬性。 報表屬性可透過以下方式存取： **[!UICONTROL Properties]** 活動序號圖表上方的按鈕。
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-一般屬性說明如下。 在中設定的進階功能 **[!UICONTROL Parameters]**， **[!UICONTROL Variables]** 和 **[!UICONTROL Scripts]** 標籤說明 [在本節中](../../reporting/using/advanced-functionalities.md).
+一般屬性說明如下。 在中設定的進階功能 **[!UICONTROL Parameters]**， **[!UICONTROL Variables]** 和 **[!UICONTROL Scripts]** 標籤已說明 [在本節中](../../reporting/using/advanced-functionalities.md).
 
 ## 一般屬性 {#overall-properties}
 
 在 **[!UICONTROL General]** 標籤中，您可以編輯下列設定：
 
-* 報表的標籤和內部名稱。 此 **[!UICONTROL Internal name]** 用於報表的最終URL。 在報告建立後不應加以變更。
+* 報告的標籤和內部名稱。 此 **[!UICONTROL Internal name]** 用於報表最終URL。 在報告建立後不應加以變更。
 
-* 報告 **資料夾** 在建立報告期間選取。 最佳實務是為自訂報表建立專用資料夾，以便這些報表不會與混合 [內建報告](../../reporting/using/about-campaign-built-in-reports.md).
+* 報告 **資料夾** 在建立報告期間選取。 最佳實務是為自訂報表建立專用資料夾，以免與混合 [內建報告](../../reporting/using/about-campaign-built-in-reports.md).
 
 * 此 **儲存** 在建立報告時選取「 」。 若要變更報表的資料表，請按一下 **[!UICONTROL Select link]** 圖示右側 **[!UICONTROL Document type]** 欄位。
 
-   ![](assets/s_ncs_advuser_report_properties_02.png)
+  ![](assets/s_ncs_advuser_report_properties_02.png)
 
 * 此 **存取控制** 引數。 這些設定說明如下。
 
@@ -45,12 +45,12 @@ ht-degree: 3%
 
 可能的選項包括：
 
-* **[!UICONTROL Anonymous access]**：此選項可讓您不受限制地存取報表。 不過，無法進行任何操作。
+* **[!UICONTROL Anonymous access]**：此選項可讓您不受限制地存取報表。 但是，無法進行任何操作。
 
-   「webapp」技術運運算元的許可權用於顯示報表元素。 瞭解更多 [在本節中](../../platform/using/access-management-operators.md).
+  「webapp」技術運運算元的許可權用於顯示報表元素。 瞭解更多 [在本節中](../../platform/using/access-management-operators.md).
 
 * **[!UICONTROL Access control]**：此選項可讓Adobe Campaign運運算元在登入後存取它。
-* **[!UICONTROL Specific account]**：此選項可讓您使用在中選取的運運算元許可權執行報表 **[!UICONTROL Operator]** 欄位。
+* **[!UICONTROL Specific account]**：此選項可讓您使用在中選取之運運算元的許可權執行報表 **[!UICONTROL Operator]** 欄位。
 
 ## 翻譯您的報告 {#report-localization}
 
@@ -58,7 +58,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
-編輯語言是您撰寫的語言。 新增語言時，子索引標籤會出現在報告編輯頁面中。
+編輯語言是您使用的語言。 新增語言時，子索引標籤會出現在報告編輯頁面中。
 
 ![](assets/s_ncs_advuser_report_properties_05a.png)
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 ## 個人化HTML呈現 {#personalizing-html-rendering}
 
-在 **[!UICONTROL Rendering]** 標籤中，您可以個人化頁面的資料顯示模式。 您可以選擇：
+在 **[!UICONTROL Rendering]** 標籤，您可以個人化頁面的資料顯示模式。 您可以選擇：
 
 * 報表中的導覽型別：透過按鈕或連結。
 * 報表元素的標籤預設位置。 可針對每個元素多載此位置。
@@ -78,7 +78,7 @@ ht-degree: 3%
 
 ## 個人化錯誤頁面 {#personalizing-the-error-page}
 
-此 **[!UICONTROL Error page]** 索引標籤可讓您設定在報告顯示錯誤時顯示的訊息。
+此 **[!UICONTROL Error page]** 索引標籤可讓您設定在報表顯示錯誤時顯示的訊息。
 
 您可以定義文字並將其連結至特定識別碼，以管理報表本地化。 有關詳細資訊，請參閱 [新增頁首和頁尾](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 

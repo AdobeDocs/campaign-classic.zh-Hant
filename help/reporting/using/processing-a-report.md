@@ -2,14 +2,14 @@
 product: campaign
 title: 使用分析報表
 description: 使用分析報表
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 1%
+source-wordcount: '828'
+ht-degree: 2%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 1%
 
 如果您有適當的許可權，可以儲存從範本建立的分析報告，或將其匯出為Excel、PDF或OpenOffice格式。
 
-若要儲存報表，請按一下 **[!UICONTROL Save]** 並為您的報表加上標籤。
+若要儲存報表，請按一下 **[!UICONTROL Save]** 並為報表加上標籤。
 
-選取 **[!UICONTROL Also save data]** 如果您想要建立報表的歷史記錄，並在儲存時檢視報表的值。 有關詳細資訊，請參閱 [封存分析報告](#archiving-analysis-reports).
+選取 **[!UICONTROL Also save data]** 如果您想建立報表歷史記錄，並在儲存時檢視報表的值。 有關詳細資訊，請參閱 [封存分析報表](#archiving-analysis-reports).
 
-此 **[!UICONTROL Share this report]** 選項可讓其他運運算元存取報告。
+此 **[!UICONTROL Share this report]** 選項可讓其他操作者存取報表。
 
 ![](assets/s_ncs_user_report_wizard_010.png)
 
-儲存後，此報表即可重複用於產生其他分析報表：
+儲存後，此報告即可重複用於產生其他分析報告：
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-若要對此報告進行變更，請編輯 **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** Adobe Campaign樹狀結構的節點（或運運算元擁有編輯許可權的第一個「報表」型別資料夾）。 有關詳細資訊，請參閱 [設定描述性分析報告的配置](#configuring-the-layout-of-a-descriptive-analysis-report).
+若要變更此報表，請編輯 **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** Adobe Campaign樹狀結構的節點（或操作員擁有編輯許可權的第一個「報表」型別資料夾）。 有關詳細資訊，請參閱 [設定描述性分析報告的配置](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## 分析報告其他設定 {#analysis-report-additional-settings}
 
@@ -41,15 +41,15 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_report_wizard_08b.png)
 
-這些選項與標準報告相同，詳見 [此頁面](../../reporting/using/properties-of-the-report.md).
+這些選項與標準報表相同，詳情請參閱 [此頁面](../../reporting/using/properties-of-the-report.md).
 
 ## 設定描述性分析報告的配置 {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-您可以在描述性分析的圖表和表格中，個人化資料的顯示和配置。 所有選項都可透過Adobe Campaign樹狀結構來存取，位於 **[!UICONTROL Edit]** 標籤內的每個報表進行核對。
+您可以在描述性分析的圖表和表格中，個人化資料的顯示和版面配置。 所有選項都可透過Adobe Campaign樹狀結構來存取，位於 **[!UICONTROL Edit]** 標籤內的每個欄位。
 
 ### 分析報表顯示模式 {#analysis-report-display-mode}
 
-當您使用建立報告時 **[!UICONTROL qualitative distribution]** 預設會選取範本、表格和圖表顯示模式。 如果您只想要一種顯示模式，請取消勾選適當的方塊。 這表示只有已勾選顯示模式的索引標籤可用。
+當您使用建立報表時 **[!UICONTROL qualitative distribution]** 依預設會選取範本、表格和圖表顯示模式。 如果您只想要一種顯示模式，請取消核取適當的方塊。 這表示只有已勾選顯示模式的標籤才可使用。
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_display_07.png)
 
-不過，如果您取消勾選標籤和小計顯示選項，報表中就不會顯示這些專案。 當您將滑鼠懸停在表格的儲存格上時，該名稱將會顯示在工具提示中。
+但是，如果您取消勾選標籤和小計顯示選項，這些標籤和小計將不會顯示在報表中。 當您將滑鼠游標停留在表格的儲存格上時，該名稱將會出現在工具提示中。
 
 ![](assets/s_ncs_advuser_report_display_08.png)
 
@@ -85,16 +85,16 @@ ht-degree: 1%
 
 ### 分析報表資料配置 {#analysis-report-data-layout}
 
-您可以直接在描述性分析表格中個人化資料配置。 若要這麼做，請用滑鼠右鍵按一下您要使用的變數。 從下拉式選單中選取可用的選項：
+您可以直接在描述性分析表格中個人化資料配置。 若要這麼做，請以滑鼠右鍵按一下您要使用的變數。 從下拉式選單中選取可用的選項：
 
 * **[!UICONTROL Pivot]** 以變更變數的軸。
 * **[!UICONTROL Up]** / **[!UICONTROL Down]** 以換行變數。
 * **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** 以交換欄中的變數。
-* **[!UICONTROL Turn]** 來反轉變數軸。
-* **[!UICONTROL Sort from A to Z]** 將變數值由低到高排序。
+* **[!UICONTROL Turn]** 反轉變數軸。
+* **[!UICONTROL Sort from A to Z]** 將變數值排序為從低到高。
 * **[!UICONTROL Sort from Z to A]** 將變數值由高到低排序。
 
-   ![](assets/s_ncs_advuser_report_wizard_016.png)
+  ![](assets/s_ncs_advuser_report_wizard_016.png)
 
 若要返回初始顯示，請重新整理檢視。
 
@@ -107,15 +107,15 @@ ht-degree: 1%
 可以使用以下選項：
 
 * 視窗的上半部可讓您修改圖表顯示區域。
-* 根據預設，標籤會顯示在圖表中。 您可以取消勾選「 」，以隱藏它們 **[!UICONTROL Show values]** 選項。
-* 此 **[!UICONTROL Accumulate values]** 選項可讓您將一個數列的值加總至另一個數列。
-* 您可以決定是否要顯示圖表圖例：若要隱藏圖例，請取消勾選適當的選項。 依照預設，圖例會顯示在圖表右上角的外部。
+* 依預設，標籤會顯示在圖表中。 您可以取消勾選 **[!UICONTROL Show values]** 選項。
+* 此 **[!UICONTROL Accumulate values]** 選項可讓您將一個數列的值加到另一個數列。
+* 您可以決定是否顯示圖表圖例：若要隱藏圖例，請取消勾選適當的選項。 根據預設，圖例會顯示在圖表右上角的外部。
 
-   圖例也可以顯示在圖表上方，以節省顯示空間。 若要這麼做，請選取選項 **[!UICONTROL Include in the chart]**
+  圖例也可以顯示在圖表的頂端，以節省顯示空間。 若要這麼做，請選取選項 **[!UICONTROL Include in the chart]**
 
-   選取中的垂直和水平對齊方式 **[!UICONTROL Caption position]** 下拉式清單。
+  選取中的垂直與水準對齊方式 **[!UICONTROL Caption position]** 下拉式清單。
 
-   ![](assets/s_ncs_advuser_report_wizard_3d.png)
+  ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
 ## 匯出分析報告 {#exporting-an-analysis-report}
 
@@ -125,27 +125,27 @@ ht-degree: 1%
 
 如需詳細資訊，請參閱[此頁面](../../reporting/using/actions-on-reports.md)。
 
-## 重複使用現有的報表和分析 {#re-using-existing-reports-and-analyses}
+## 重複使用現有的報告和分析 {#re-using-existing-reports-and-analyses}
 
-您可以使用已儲存在Adobe Campaign中的現有報告，針對資料建立描述性分析報告。 當已儲存分析或已建立報告並設定為可透過描述性分析精靈存取時，就可以使用此模式。
+您可以使用已儲存在Adobe Campaign中的現有報告，建立資料的描述性分析報告。 當已儲存分析或已建立報告並設定為可透過描述性分析精靈存取時，就可以使用此模式。
 
 若要瞭解如何儲存描述性分析，請參閱 [儲存分析報告](#saving-an-analysis-report).
 
-若要建立描述性分析報表，描述性分析精靈必須透過工作流程轉換或透過 **[!UICONTROL Tools > Descriptive analysis]** 功能表。
+若要建立描述性分析報表，描述性分析精靈必須透過工作流程轉換或透過以下方式執行： **[!UICONTROL Tools > Descriptive analysis]** 功能表。
 
 1. 選取 **[!UICONTROL Existing analyses and reports]** 並按一下 **[!UICONTROL Next]**。
 1. 這可讓您存取可用報告的清單。 選取您要產生的報告。
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## 封存分析報告 {#archiving-analysis-reports}
+## 封存分析報表 {#archiving-analysis-reports}
 
-當您根據現有分析建立描述性分析時，可以建立封存來儲存資料並比較報表結果。
+當您根據現有分析建立描述性分析時，可以建立封存來儲存資料並比較報告結果。
 
 若要建立歷史記錄，請套用下列步驟：
 
 1. 開啟現有的分析或建立新的描述性分析精靈。
-1. 在報表顯示頁面中，按一下按鈕以在工具列中建立歷史記錄，然後確認，如下所示：
+1. 在報表顯示頁面中，按一下按鈕以在工具列中建立歷史記錄，然後如下所示確認：
 
    ![](assets/reporting_descriptive_historize_icon.png)
 

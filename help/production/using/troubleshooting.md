@@ -2,14 +2,15 @@
 product: campaign
 title: 生產疑難排解
 description: 探索與Adobe Campaign設定、監控、升級程式、資料處理和資料庫維護程式相關的生產疑難排解程式
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '226'
 ht-degree: 18%
 
 ---
@@ -22,18 +23,18 @@ ht-degree: 18%
 
 ## 常見及一般問題 {#common-and-general-issues}
 
-* 此 [頁面](../../production/using/modules-and-frequent-issues.md) 顯示列出之模組最常遇到的問題。
-* 此 [頁面](../../production/using/workflow-execution.md) 列出遇到工作流程執行問題時應遵循的常見疑難排解程式。
-* 此 [頁面](../../production/using/lost-password.md) 詳細說明如何變更或復原遺失的密碼。
-* 此 [頁面](../../production/using/console-update.md) 詳細說明如果您停用對應的選項，如何重新啟用主控台更新請求。
+* 這個 [頁面](../../production/using/modules-and-frequent-issues.md) 顯示列出之模組最常遇到的問題。
+* 這個 [頁面](../../production/using/workflow-execution.md) 列出在遇到工作流程執行問題時，您應該遵循的常見疑難排解程式。
+* 這個 [頁面](../../production/using/lost-password.md) 詳細說明如何變更或復原遺失的密碼。
+* 這個 [頁面](../../production/using/console-update.md) 詳細說明如果您停用對應的選項，如何重新啟用主控台更新請求。
 
 ## 傳遞疑難排解 {#delivery-troubleshooting}
 
-傳送時發生問題時，可執行特定動作：
+傳送發生問題時，可執行特定動作：
 * [傳遞能力問題](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [影像顯示問題](../../production/using/image-display-issues.md)
 * [影像遺失](../../production/using/images-missing.md)
-* [暫存檔問題](../../production/using/temporary-files.md) (*僅限內部部署託管模型*)
+* [暫存檔案問題](../../production/using/temporary-files.md) (*僅限內部部署託管模型*)
 
 **相關主題**：
 
@@ -41,7 +42,7 @@ ht-degree: 18%
 
 ## 使用記錄檔 {#working-with-logs}
 
-以下提供一些秘訣，以協助您改善記錄檔使用體驗：
+以下提供一些秘訣，協助您改善記錄檔使用體驗：
 
 * [記錄檔精確度](../../production/using/log-precision.md)
 * [追蹤記錄問題](../../production/using/tracking-logs-issues.md)
@@ -55,7 +56,7 @@ ht-degree: 18%
 
 ## 連線改善 {#connection-improvements}
 
-如果您遇到連線問題，以下提供一些修正問題的方法：
+如果您遇到連線問題，以下提供一些修正的方法：
 
 * [無法連線](../../production/using/failure-to-connect.md)
 * [連線閾值](../../production/using/connection-thresholds.md)

@@ -2,16 +2,17 @@
 product: campaign
 title: 記錄檔精確度
 description: 記錄檔精確度
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 1%
+source-wordcount: '345'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 1%
 
 您可以將此程式套用至所有Adobe Campaign模組，以提高記錄精確度。
 
-這涉及使用更高級別的記錄來重新啟動程式。
+這涉及使用更高層級的記錄來重新啟動流程。
 
 >[!IMPORTANT]
 >
@@ -41,7 +42,7 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. 此 **TraceFilter** 模式，可讓您儲存最多記錄數。 它透過下列命令啟動：
+1. 此 **TraceFilter** 模式，可讓您儲存最大數量的記錄。 它透過下列命令啟動：
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -49,9 +50,9 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
 
    >[!NOTE]
    >
-   >如果您使用 **tracefilter：&#42;**，所有記錄型別都會啟動：ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、網路、pop3、inmail\
+   >如果您使用 **tracefilter：&#42;**，所有記錄型別都會啟動： ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、網路、pop3、inmail\
    >最有用的記錄型別包括： **wdbc** （顯示所有SQL查詢）、 **soap** （顯示所有SOAP呼叫）、 **ldap** （在驗證後顯示所有LDAP查詢）， **xtkquery** （顯示所有querydef清單）。\
-   >您可以個別使用(**tracefilter：soap，wdbc** 例如)。 您也可以全部啟動它們，並選擇排除某些其他專案： **-tracefilter：&#42;，！soap**
+   >您可以分別使用它們(**tracefilter：soap，wdbc** 例如)。 您也可以全部啟用這些變數，並選擇排除某些其他變數： **-tracefilter：&#42;，！soap**
 
    檢查錯誤是否確實發生，然後以正常方式重新啟動程式：
 
@@ -65,13 +66,13 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
 
 以下是Web模組專屬的範例。 其他模組會如上所述運作。
 
-在傳送此命令之前，請檢查進行中的工作是否不受影響：
+在傳送此命令之前，請檢查進行中的工作是否不會受到影響：
 
 ```
 nlserver pdump -who
 ```
 
-接下來，關閉並重新啟動模組，在 **TraceFilter** 模式：
+接著，關閉並重新啟動模組 **TraceFilter** 模式：
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -89,7 +90,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!IMPORTANT]
 >
->在Windows中，請勿新增LD_PRELOAD選項。 以下指令就足夠了：\
+>在Windows中，請勿新增LD_PRELOAD選項。 下列指令就足夠了：\
 >nlserver web -tomcat -verbose -tracefilter：&#42;
 
 檢查問題是否再次發生，然後重新啟動模組：
@@ -98,4 +99,4 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 nlserver restart web -tomcat -noconsole
 ```
 
-所有資訊都可在檔案中使用 **/usr/local/neolane/nl6/var/default/log/web.log**.
+檔案中有所有資訊 **/usr/local/neolane/nl6/var/default/log/web.log**.

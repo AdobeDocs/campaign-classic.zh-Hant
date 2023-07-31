@@ -2,13 +2,13 @@
 product: campaign
 title: 使用案例
 description: 報告使用案例
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 下列範例可讓您使用描述性分析精靈，探索一組電子報所定位的母體。
 
-實作步驟詳見下文，而本章其他章節則提供選項的完整清單和說明。
+實作步驟將於下文詳細說明，而本章其他章節則提供選項及說明的完整清單。
 
 ### 識別要分析的母體 {#identifying-the-population-to-analyze}
 
 在此範例中，我們要探索 **電子報** 資料夾。
 
-若要這麼做，請選取相關傳送，然後按一下滑鼠右鍵並選取 **[!UICONTROL Action > Explore the target...]**.
+若要這麼做，請選取相關的傳送，然後按一下滑鼠右鍵並選取 **[!UICONTROL Action > Explore the target...]**.
 
 ![](assets/reporting_quick_start_1.png)
 
 ### 選取分析型別 {#selecting-a-type-of-analysis}
 
-在助理的第一個步驟中，您可以選取要使用的描述性分析範本。 依預設，Adobe Campaign提供兩種範本： **[!UICONTROL Qualitative distribution]** 和 **[!UICONTROL Quantitative distribution]**. 如需詳細資訊，請參閱 [設定定性發佈範本](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) 區段。 各種呈現方式會顯示在中 [關於描述性分析](../../reporting/using/about-descriptive-analysis.md) 區段。
+在助理的第一個步驟中，您可以選取要使用的描述性分析範本。 依預設，Adobe Campaign提供兩種範本： **[!UICONTROL Qualitative distribution]** 和 **[!UICONTROL Quantitative distribution]**. 如需詳細資訊，請參閱 [設定質化發佈範本](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) 區段。 各種渲染會顯示在中 [關於描述性分析](../../reporting/using/about-descriptive-analysis.md) 區段。
 
 在此範例中，選取 **[!UICONTROL Qualitative distribution]** 範本並選擇含有圖表和表格（陣列）的顯示器。 為報表命名（「描述性分析」），然後按一下 **[!UICONTROL Next]**.
 
@@ -43,13 +43,13 @@ ht-degree: 0%
 
 下一個步驟可讓您選取要在表格中顯示的資料。
 
-按一下 **[!UICONTROL Add...]** 用來選取包含要顯示之資料的變數的連結。 我們想要在這裡在一行中顯示傳遞收件者的城市：
+按一下 **[!UICONTROL Add...]** 用來選取包含要顯示之資料的變數的連結。 我們想要在此在一行中顯示傳送收件者的城市：
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
 欄會顯示每個公司的購買次數。 在此範例中，金額會彙總在 **網路購買** 欄位。
 
-在此，我們要定義結果量化，以釐清其顯示。 若要這麼做，請選取 **[!UICONTROL Manual]** 量化選項並設定要顯示之區段的計算類別：
+在此，我們要定義結果量化以釐清其顯示。 若要這麼做，請選取 **[!UICONTROL Manual]** 量化選項並設定要顯示之區段的計算類別：
 
 ![](assets/reporting_descriptive_quickstart_step_2a.png)
 
@@ -79,11 +79,11 @@ ht-degree: 0%
 
 若要建立新的統計資料，請按一下 **[!UICONTROL Add]** 按鈕。 有關詳細資訊，請參閱 [統計資料計算](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
-### 檢視和使用報告 {#viewing-and-using-the-report}
+### 檢視及使用報表 {#viewing-and-using-the-report}
 
 精靈的最後一步會顯示表格和圖表。
 
-您可以使用表格上方的工具列儲存、匯出或列印資料。 有關詳細資訊，請參閱 [處理報表](../../reporting/using/processing-a-report.md).
+您可以使用表格上方的工具列來儲存、匯出或列印資料。 有關詳細資訊，請參閱 [處理報表](../../reporting/using/processing-a-report.md).
 
 ![](assets/reporting_descriptive_quickstart_step_5.png)
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
    按一下 **[!UICONTROL Next]** 以核准此步驟。
 
-1. 然後選取 **[!UICONTROL 2 variables]** 選項並指定 **[!UICONTROL First variable (abscissa)]** 將代表收件者狀態（潛在客戶/客戶），而第二個變數則代表國家。
+1. 然後選取 **[!UICONTROL 2 variables]** 選項並指定 **[!UICONTROL First variable (abscissa)]** 將參照收件者狀態（潛在客戶/客戶），而第二個變數將參照國家。
 1. 選取 **[!UICONTROL Cylinders]** 作為型別。
 
    ![](assets/s_ncs_user_report_wizard_05.png)
@@ -109,7 +109,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_04.png)
 
-   將滑鼠指標暫留在橫條上，可檢視此國家/地區的確切客戶或潛在客戶數量。
+   將滑鼠指標暫留在橫條上，可檢視此國家/地區的確切客戶或潛在客戶數目。
 
 1. 根據圖例啟用或停用顯示其中一個國家/地區。
 
@@ -126,13 +126,13 @@ ht-degree: 0%
    按一下 **[!UICONTROL Next]** 按鈕以核准此步驟。
 
 1. 選取 **[!UICONTROL Company]** 變數做為欄，且 **[!UICONTROL Email domain]** 變數做為列。
-1. 保留 **[!UICONTROL By rows]** 統計資料方向的選項：統計資料計算會顯示在 **[!UICONTROL Email domain]** 變數。
+1. 保留 **[!UICONTROL By rows]** 統計資料方向的選項：統計計算會顯示在 **[!UICONTROL Email domain]** 變數中。
 
    ![](assets/s_ncs_user_report_wizard_03b.png)
 
    按一下 **[!UICONTROL Next]** 以核准此步驟。
 
-1. 然後輸入要計算的統計資料：保留預設計數並建立新的統計資料。 若要這麼做，請按一下 **[!UICONTROL Add]** 並選取 **[!UICONTROL Total percentage distribution]** 作為運運算元。
+1. 然後輸入要計算的統計值：保留預設計數並建立新的統計值。 若要這麼做，請按一下 **[!UICONTROL Add]** 並選取 **[!UICONTROL Total percentage distribution]** 作為運運算元。
 
    ![](assets/s_ncs_user_report_wizard_03.png)
 
@@ -148,7 +148,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_07.png)
 
-   表格會顯示下列資訊：
+   此表格會顯示下列資訊：
 
    ![](assets/s_ncs_user_report_wizard_07a.png)
 
@@ -180,29 +180,29 @@ ht-degree: 0%
 
 1. 開啟所需的目標定位工作流程。
 1. 以滑鼠右鍵按一下指向收件者表格的轉變。
-1. 選取 **[!UICONTROL Analyze target]** 以開啟「描述性分析」視窗。
+1. 選取 **[!UICONTROL Analyze target]** 以開啟描述性分析視窗。
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. 此時，您可以選取 **[!UICONTROL Existing analyses and reports]** 選項並使用先前建立的報告(請參閱 [重複使用現有報表和分析](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses))，或建立新的描述性分析。 若要這麼做，請將 **[!UICONTROL New descriptive analysis from a template]** 選項預設為選取。
+1. 此時，您可以選取 **[!UICONTROL Existing analyses and reports]** 選項並使用先前建立的報告(請參閱 [重複使用現有報告和分析](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses))，或建立新的描述性分析。 若要這麼做，請將 **[!UICONTROL New descriptive analysis from a template]** 選項已預設選取。
 
-   其餘的設定與所有描述性分析相同。
+   其餘的組態與所有描述性分析相同。
 
 ### Target分析建議 {#target-analyze-recommendations}
 
 工作流程中的母體分析需要母體仍然存在於轉變中。 如果啟動工作流程，可能會從轉變中清除有關母體的結果。 若要執行分析，您可以：
 
-* 將轉變與其目的地活動分離，並啟動工作流程以使其處於活動狀態。 一旦轉換開始閃爍，請像往常一樣啟動精靈。
+* 將轉變與其目標活動分離，並啟動工作流程以使其成為使用中。 轉換開始閃爍後，請以一般方式啟動精靈。
 
-   ![](assets/s_ncs_user_report_wizard_018.png)
+  ![](assets/s_ncs_user_report_wizard_018.png)
 
-* 選取「 」，修改工作流程的屬性 **[!UICONTROL Keep the result of interim populations between two executions]** 選項。 這可讓您啟動所選轉變的分析，即使工作流程已完成。
+* 透過選擇 **[!UICONTROL Keep the result of interim populations between two executions]** 選項。 這可讓您啟動所選轉變的分析，即使工作流程已完成。
 
-   ![](assets/s_ncs_user_report_wizard_020.png)
+  ![](assets/s_ncs_user_report_wizard_020.png)
 
-   如果從轉變中清除母體，則會出現一則錯誤訊息，要求您在啟動描述性分析精靈之前選取相關選項。
+  如果從轉變中清除母體，則會出現錯誤訊息，要求您在啟動描述性分析精靈之前選取相關選項。
 
-   ![](assets/s_ncs_user_report_wizard_019.png)
+  ![](assets/s_ncs_user_report_wizard_019.png)
 
 >[!CAUTION]
 >
@@ -211,13 +211,13 @@ ht-degree: 0%
 
 ## 分析收件者追蹤記錄 {#analyzing-recipient-tracking-logs}
 
-描述性分析精靈可以產生其他工作表的報告。 這表示您可以透過建立專用報告來分析傳遞記錄。
+描述性分析精靈可以產生其他工作表的報表。 這表示您可以透過建立專用報告來分析傳遞記錄。
 
 在此範例中，我們要分析新聞稿收件者的反應率。
 
 若要這麼做，請套用下列步驟：
 
-1. 透過以下方式開啟描述性分析精靈： **[!UICONTROL Tools > Descriptive analysis]** 選單並變更預設工作表。 選取 **[!UICONTROL Recipient tracking log]** 和新增篩選器以排除校樣並包含電子報。
+1. 透過以下方式開啟描述性分析精靈： **[!UICONTROL Tools > Descriptive analysis]** 選單並變更預設工作表。 選取 **[!UICONTROL Recipient tracking log]** 和新增篩選器以排除校樣和包含電子報。
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -229,15 +229,15 @@ ht-degree: 0%
 
    在這裡，傳遞標籤將顯示在第一欄。
 
-1. 刪除預設計數並建立三個統計值，以設定要在表格中顯示的統計值。
+1. 刪除預設計數，並建立三個統計值，以設定要在表格中顯示的統計值。
 
-   表格會針對每個Newsletter顯示：開啟次數、點按次數、反應率（以百分比顯示）。
+   在此，針對每個Newsletter，表格將會顯示：開啟次數、點按次數、反應率（百分比）。
 
-1. 新增統計資料以計算點按次數：在 **[!UICONTROL Filter]** 標籤。
+1. 新增統計數字以計算點按次數：在 **[!UICONTROL Filter]** 標籤。
 
    ![](assets/reporting_descriptive_sample_tracking_3.png)
 
-1. 然後按一下 **[!UICONTROL General]** 索引標籤重新命名統計資料標籤和別名：
+1. 然後按一下 **[!UICONTROL General]** 頁簽以重新命名統計資料標籤和別名：
 
    ![](assets/reporting_descriptive_sample_tracking_4.png)
 
@@ -245,11 +245,11 @@ ht-degree: 0%
 
    ![](assets/reporting_descriptive_sample_tracking_5.png)
 
-1. 然後按一下 **[!UICONTROL General]** 索引標籤以重新命名統計資料標籤及其別名：
+1. 然後按一下 **[!UICONTROL General]** 標籤重新命名統計資料標籤及其別名：
 
    ![](assets/reporting_descriptive_sample_tracking_6.png)
 
-1. 新增第三個統計值並選取 **[!UICONTROL Calculated field]** 運運算元，以測量反應率。
+1. 新增第三個統計值並選取 **[!UICONTROL Calculated field]** 運運算元測量反應率。
 
    ![](assets/reporting_descriptive_sample_tracking_7.png)
 
@@ -273,11 +273,11 @@ ht-degree: 0%
 
 ## 分析傳遞排除記錄 {#analyzing-delivery-exclusion-logs}
 
-如果分析涉及傳遞，您可以分析排除的母體。 若要這麼做，請選取要分析的傳送，然後按一下滑鼠右鍵存取 **[!UICONTROL Action > Explore exclusions]** 功能表。
+如果分析涉及傳遞，您可以分析排除的母體。 若要這麼做，請選取要分析的傳送，並按一下滑鼠右鍵存取 **[!UICONTROL Action > Explore exclusions]** 功能表。
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-這會將您帶到描述性分析精靈，分析會涉及收件者排除記錄。
+這會將您帶到描述性分析精靈，分析會關注收件者排除記錄。
 
 例如，您可以顯示所有排除位址的網域，並依排除日期排序。
 

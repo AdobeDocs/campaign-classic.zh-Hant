@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 定義外部資料對應
-description: 瞭解如何對應外部資料庫中的資料
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 瞭解如何在外部資料庫中對應資料
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '201'
 ht-degree: 3%
 
 ---
@@ -15,9 +16,9 @@ ht-degree: 3%
 
 
 
-Adobe Campaign可讓您在外部表格中的資料上定義對應。
+Adobe Campaign可讓您定義外部表格中資料的對應。
 
-若要這麼做，在建立外部表格的結構描述後，您需要建立新的傳送對應，以使用此表格中的資料作為傳送目標。
+若要這麼做，在建立外部表格的綱要後，您需要建立新的傳送對應，以使用此表格中的資料作為傳送目標。
 
 若要這麼做，請套用下列步驟：
 
@@ -35,7 +36,7 @@ Adobe Campaign可讓您在外部表格中的資料上定義對應。
 
    您可以選擇是否儲存排除專案(**excludelog**)，包含訊息(**broadlog**)或是在另一個表格中。
 
-   您也可以選擇是否管理此傳遞對應的追蹤(**trackinglog**)。
+   您也可以選擇是否要管理此傳遞對應的追蹤(**trackinglog**)。
 
 1. 然後選取要考慮的擴充功能。 擴充功能型別取決於平台的引數和選項（檢視您的授權合約）。
 

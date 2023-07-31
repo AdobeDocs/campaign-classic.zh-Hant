@@ -2,11 +2,12 @@
 product: campaign
 title: 在您的網站中插入網頁追蹤標籤
 description: 瞭解如何在您的網站中插入網頁追蹤標籤
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 ## 簡單方法 {#simple-method}
 
-此方法包含透過插入以下內容將HTTP呼叫傳送至重新導向伺服器： **`<img>`** HTML標籤(在您要追蹤的網頁的HTML原始碼中)。
+此方法包含透過插入「 」將HTTP呼叫傳送至重新導向伺服器 **`<img>`** HTML標籤，該標籤位於您要追蹤之網頁的HTML原始碼中。
 
 >[!IMPORTANT]
 >
@@ -27,17 +28,17 @@ ht-degree: 0%
 <img height='0' width='0' alt='' src='https://localhost/r/12343?tagid=home'
 ```
 
-插入的標籤會與重新導向伺服器接觸。
+插入的標籤會連絡重新導向伺服器。
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-定義要在主控台中追蹤的頁面時，可以產生範例網頁追蹤標籤，以複製並貼到網頁的原始程式碼中。
+當您定義要在主控台中追蹤的頁面時，可以產生範例網頁追蹤標籤，以複製並貼到網頁的原始程式碼中。
 
-但是，當您使用TRANSACTION型別標籤時，必須使用JavaScript修改範例標籤，以便插入交易資訊（金額、專案數）和擴充功能結構描述定義的任何資訊。
+但是，當您使用TRANSACTION型別標籤時，必須使用JavaScript修改範例標籤，以便插入交易資訊（金額、專案數）和擴充功能架構定義的任何資訊。
 
 ### 靜態插入標籤 {#static-insertion-of-tags}
 
-若要執行靜態標籤插入，只需複製並貼上主控台產生的標籤或手動建構的標籤到網頁的來源中即可。
+若要執行靜態標籤插入，只需複製並貼上主控台產生的標籤或手動建構到網頁的來源中即可。
 
 **範例**：在顯示表單的頁面上插入網頁追蹤標籤。
 
@@ -85,9 +86,9 @@ ht-degree: 0%
 
 ### 動態產生網頁追蹤標籤 {#dynamic-generation-of-web-tracking-tags}
 
-動態產生網頁時，您可以在產生頁面時新增網頁追蹤標籤。
+如果網頁是以動態方式產生，您可以在產生頁面時新增網頁追蹤標籤。
 
-**範例**：網頁追蹤已新增至JSP。
+**範例**：網頁追蹤已新增到JSP。
 
 ```
 <%@page import="java.util.Random" %>
@@ -120,17 +121,17 @@ ht-degree: 0%
 </html>
 ```
 
-## 最佳化方法 {#optimum-method-}
+## 最佳方法 {#optimum-method-}
 
-如果您想要控制傳送至重新導向伺服器的資訊，最可靠的方式是使用頁面產生語言自行同步執行HTTP查詢。
+如果您希望控制傳送至重新導向伺服器的資訊，最可靠的方式是使用頁面產生語言自行同步執行HTTP查詢。
 
-您建構的URL必須符合中定義的語法規則 [網路追蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md).
+您建構的URL必須符合中定義的語法規則。 [網路追蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->重新導向和網頁追蹤會使用Cookie，執行同步HTTP呼叫的網頁伺服器必須與重新導向伺服器位於相同的網域中。 各種HTTP交換必須傳遞「id」、「uuid」和「uuid230」Cookie。
+>重新導向和網頁追蹤使用Cookie，執行同步HTTP呼叫的網頁伺服器務必要與重新導向伺服器位在相同網域中。 各種HTTP交換必須傳遞「id」、「uuid」和「uuid230」Cookie。
 
 **範例**：在Java中動態產生，收件者使用其帳號進行驗證。
 

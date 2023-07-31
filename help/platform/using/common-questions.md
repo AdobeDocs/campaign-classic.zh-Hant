@@ -2,11 +2,12 @@
 product: campaign
 title: 常見問題
 description: Adobe Campaign Classic 常見問題集
+feature: Overview
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 97%
@@ -29,7 +30,7 @@ ht-degree: 97%
 
 Adobe Campaign Classic 特別使用多種技術來傳遞價值。這種技術組合，需要您定期升級 Campaign Classic 執行個體，以確保使用最新版本來提供優越的安全性、穩定性和效能。
 
-作為託管客戶，您可以受益於Campaign的年度升級。 如需詳細資訊，請參閱[本文章](../../rn/using/rn-overview.md#yearly-upgrade)。
+身為託管客戶，您可以受益於Campaign的年度升級。 如需詳細資訊，請參閱[本文章](../../rn/using/rn-overview.md#yearly-upgrade)。
 
 [閱讀本節](../../production/using/build-upgrade.md)，瞭解如何更新您的環境，並閱讀[有關此特定主題的常見問題](../../platform/using/faq-build-upgrade.md)。
 

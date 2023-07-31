@@ -2,15 +2,16 @@
 product: campaign
 title: 一般架構
 description: 一般架構
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 3%
+source-wordcount: '188'
+ht-degree: 4%
 
 ---
 
@@ -20,21 +21,21 @@ ht-degree: 3%
 
 ## 最低架構 {#minimum-architecture}
 
-在最低設定中，Adobe Campaign的運作方式為：
+在最低設定下，Adobe Campaign的運作方式為：
 
-* Adobe Campaign應用程式伺服器、
+* Adobe Campaign應用程式伺服器，
 * 資料庫。
 
-   ![](assets/formation_exploitation.png)
+  ![](assets/formation_exploitation.png)
 
 此圖表顯示最低架構內容中唯一涉及的流量是：
 
-1. 透過網際網路傳遞至Adobe Campaign伺服器的HTTP通訊協定流量，
+1. 透過網際網路與Adobe Campaign伺服器的HTTP通訊協定流量，
 1. 透過網際網路從Adobe Campaign伺服器傳入和傳入SMTP通訊協定流量。
 
 ## 分散式架構 {#distributed-architecture}
 
-Adobe Campaign由多個模組組成，這些模組可在多部電腦上分解。 此作業模式具備下列幾項優點：
+Adobe Campaign由多個模組組成，這些模組可在多部機器上劃分。 此作業模式具備數個優點：
 
 * 負載平衡，
 * 設定模組備援，
@@ -42,7 +43,7 @@ Adobe Campaign由多個模組組成，這些模組可在多部電腦上分解。
 
 ![](assets/architecturerepartie.png)
 
-模組在數台機器上的分佈提供了極大的使用靈活性並改善了適應性。
+將模組分佈於多部機器上，可提供極大的使用彈性並改善適應性。
 
 >[!NOTE]
 >
@@ -56,4 +57,4 @@ Adobe Campaign由多個模組組成，這些模組可在多部電腦上分解。
 | 6666/udp （本機） | Adobe Campaign： Syslogd | 是 |
 | 8005/tcp （本機） | Adobe Campaign：網頁模組 | 是 |
 | 8080/tcp | Adobe Campaign：網頁模組(tomcat) | 是 |
-| 7777 | 統計伺服器（統計伺服器） | 是 |
+| 7777 | 統計伺服器（stat伺服器） | 是 |

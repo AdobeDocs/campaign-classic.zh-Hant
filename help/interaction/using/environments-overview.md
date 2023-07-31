@@ -2,14 +2,15 @@
 product: campaign
 title: 環境概覽
 description: 環境概覽
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: ba588591-5171-4c35-bc8c-3979274e21b2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '102'
 ht-degree: 6%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 6%
 
 
 
-本章詳細說明如何在「互動」中管理優惠方案環境。
+本章詳細說明如何管理互動中的優惠方案環境。
 
-管理和使用選件涉及多個不同的使用者設定檔。 因此，第一個步驟包括確保這些設定檔存在，如果沒有，則建立它們。
+管理和使用優惠方案涉及數個不同的使用者設定檔。 因此，第一步涉及確保這些設定檔存在，如果沒有，則建立它們。
 
 >[!IMPORTANT]
 >

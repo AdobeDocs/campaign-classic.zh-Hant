@@ -1,29 +1,30 @@
 ---
 product: campaign
-title: 使用Adobe Experience Cloud共用對象
-description: 使用Adobe Experience Cloud共用對象
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+title: 與Adobe Experience Cloud共用對象
+description: 與Adobe Experience Cloud共用對象
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 63%
+source-wordcount: '314'
+ht-degree: 61%
 
 ---
 
-# 使用Adobe Experience Cloud共用對象{#sharing-audiences-with-adobe-experience-cloud}
+# 與Adobe Experience Cloud共用對象{#sharing-audiences-with-adobe-experience-cloud}
 
 
 
 >[!CAUTION]
 >
->若要與Adobe Experience Cloud解決方案共用對象，您需要實作AdobeIdentity Management System。 [進一步瞭解IMS](../../integrations/using/about-adobe-id.md).
+>若要與Adobe Experience Cloud解決方案共用閱聽眾，您必須實作AdobeIdentity Management系統。 [進一步瞭解IMS](../../integrations/using/about-adobe-id.md).
 
-透過Adobe Campaign，您可以與Adobe Experience Cloud解決方案和核心服務共用受眾和區段。 提供兩個選項：
+透過Adobe Campaign，您可以與Adobe Experience Cloud解決方案和核心服務共用受眾和區段。 有兩個可用選項：
 
 1. 將Adobe Experience Platform區段資料傳送至Adobe Campaign。 若要實作此整合，您需要將Real-time Customer Data Platform連結至Campaign (RTCDP)。 [在本章節了解更多資訊](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
@@ -38,8 +39,8 @@ ht-degree: 63%
 * **訪客 ID**：此類型的識別碼可協調 Adobe Experience Cloud 訪客與 Adobe Campaign 收件者。
 * **宣告 ID**：此類型的識別碼可協調所有類型的資料與 Adobe Campaign 資料庫中的元素。 在 Adobe Campaign 中以預先定義的調解金鑰呈現。
 
-   >[!NOTE]
-   >
-   > 已宣告的 ID 資料來源現在也可搭配 People 核心服務整合使用。
-   >
-   >如果您使用 People 核心服務整合，且想要新增 Audience Manager 整合，則需要 Adobe Audience Manager 顧問的協助，以避免在 Adobe Audience Manager 內容中轉換為使用此宣告 ID 資料來源時，所收集的 ID 同步全部遺失。
+  >[!NOTE]
+  >
+  > 已宣告的 ID 資料來源現在也可搭配 People 核心服務整合使用。
+  >
+  >如果您使用 People 核心服務整合，且想要新增 Audience Manager 整合，則需要 Adobe Audience Manager 顧問的協助，以避免在 Adobe Audience Manager 內容中轉換為使用此宣告 ID 資料來源時，所收集的 ID 同步全部遺失。

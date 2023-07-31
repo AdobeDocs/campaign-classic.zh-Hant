@@ -2,15 +2,16 @@
 product: campaign
 title: 關於 Campaign 整合
 description: 使用其他 Adobe 解決方案，並將其不同的功能與 Campaign 結合
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '769'
 ht-degree: 12%
 
 ---
@@ -30,6 +31,7 @@ Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，�
 >[!CAUTION]
 >
 >這些整合大多需要實作Adobe Identity Management System (IMS)，才能透過Adobe ID登入。 [在本頁中深入瞭解](../../integrations/using/about-adobe-id.md)。
+>
 
 ## 連結您的解決方案 {#working-with-experience-cloud-solutions}
 
@@ -39,17 +41,17 @@ Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，�
 
 ## 身分和Cookie管理 {#id-and-cookies}
 
-安裝Adobe Campaign或整合現有安裝與Adobe Experience Cloud時， [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) 已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
+安裝Adobe Campaign或整合現有安裝與Adobe Experience Cloud時， [Adobe Experience Cloud Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html) 已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
 
-Adobe Experience Cloud Identity Service （ID服務）提供永續性的通用ID，可識別Experience Cloud所有解決方案的訪客。
+Adobe Experience Cloud Identity服務（以下簡稱為「ID服務」）提供永續性的通用ID，可識別Experience Cloud所有解決方案的訪客。
 
-不重複訪客ID將會指派給產生追蹤記錄的收件者。 此ID將儲存在 **[!UICONTROL Requester UUID (@sourceID)]** 的欄位 **[!UICONTROL nms:trackingLogRcp]** 表格。 **因此，實作訪客ID服務前存在的收件者追蹤資料將不再可用**.
+系統會為產生追蹤記錄的收件者指派不重複訪客ID。 此ID將儲存在 **[!UICONTROL Requester UUID (@sourceID)]** 欄位屬於 **[!UICONTROL nms:trackingLogRcp]** 表格。 **因此，在訪客ID服務實作前存在的收件者追蹤資料將不再可用**.
 
 之後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該ID。 [了解更多](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
 
 ## Experience Cloud 整合 {#experience-cloud-integrations}
 
-下表提供可用的Experience Cloud整合檔案的存取權。
+下表提供可用Experience Cloud整合檔案的存取權。
 
 <table> 
  <thead> 
@@ -64,8 +66,8 @@ Adobe Experience Cloud Identity Service （ID服務）提供永續性的通用ID
    <td> Adobe Campaign與Adobe Real-time Customer Data Platform (RTCDP)的整合可讓您共用區段資料，並將受眾匯入至Adobe Campaign。<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">瞭解更多</a> 關於Campaign - Adobe Real-time Customer Data Platform整合。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>AdobeIdentity Management System (IMS) - Adobe ID</strong><br /> </td> 
-   <td> 可讓您使用與其他Adobe Campaign解決方案相同的Adobe ID連線至Adobe Experience Cloud。<br /> 為了使用與Adobe ID整合相關聯的特定功能（尤其是核心服務），必須使用Adobe Experience Cloud登入。<br /> <p><a href="../../integrations/using/about-adobe-id.md">瞭解更多</a> 關於使用Adobe Campaign實作Adobe ID。</p><br /> </td> 
+   <td> <strong>AdobeIdentity Management系統(IMS) - Adobe ID</strong><br /> </td> 
+   <td> 可讓您使用與其他Adobe Campaign解決方案相同的Adobe ID連線至Adobe Experience Cloud。<br /> 若要使用與Adobe Experience Cloud整合相關聯的特定功能（尤其是核心服務），必須使用Adobe ID來登入。<br /> <p><a href="../../integrations/using/about-adobe-id.md">瞭解更多</a> 關於使用Adobe Campaign實作Adobe ID。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
@@ -77,11 +79,11 @@ Adobe Experience Cloud Identity Service （ID服務）提供永續性的通用ID
   </tr> 
   <tr> 
    <td> <strong>People核心服務</strong><br /> <strong>Adobe Audience Manager</strong><br /> </td> 
-   <td> 可讓您在Adobe Experience Cloud解決方案和您使用的核心之間共用對象。<br /> <p><a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">瞭解更多</a> 關於Adobe Campaign - People核心服務和Adobe Audience Manager整合。</p><br /> </td> 
+   <td> 可讓您在Adobe Experience Cloud解決方案和您使用的核心之間共用對象。<br /> <p><a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">瞭解更多</a> 關於Adobe Campaign - People核心服務與Adobe Audience Manager整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Assets核心服務</strong><br /> </td> 
-   <td> 可讓您將 Adobe Experience Cloud 資料庫中的資產插入到 Adobe Campaign 中建立的電子郵件和登錄頁中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">瞭解更多</a> 關於Adobe Campaign - Assets核心服務整合</p><br /> </td> 
+   <td> 可讓您將 Adobe Experience Cloud 資料庫中的資產插入到 Adobe Campaign 中建立的電子郵件和登錄頁中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">瞭解更多</a> 關於Adobe Campaign — 資產核心服務整合</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 
@@ -89,7 +91,7 @@ Adobe Experience Cloud Identity Service （ID服務）提供永續性的通用ID
   </tr> 
   <tr> 
    <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
-   <td> 以下各項之間的整合： <strong>觸發核心服務</strong> 和Adobe Campaign可讓您傳送個人化電子郵件給客戶，以回應Adobe Analytics在您網站上追蹤的特定行為。<br /> <p><a href="https://helpx.adobe.com/tw/campaign/kb/triggers-and-campaign.html">瞭解更多</a> 關於Adobe Campaign -Experience Cloud觸發器整合。</p><br /> </td> 
+   <td> 整合介於 <strong>觸發核心服務</strong> 和Adobe Campaign可讓您傳送個人化電子郵件給客戶，以回應Adobe Analytics在您網站上追蹤的特定行為。<br /> <p><a href="https://helpx.adobe.com/tw/campaign/kb/triggers-and-campaign.html">瞭解更多</a> 關於Adobe Campaign -Experience Cloud觸發器整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics 連接器</strong><br /> </td> 

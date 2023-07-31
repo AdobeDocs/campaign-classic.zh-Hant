@@ -2,16 +2,17 @@
 product: campaign
 title: 與 Linux 網頁伺服器整合
 description: 瞭解如何將Campaign整合至網頁伺服器(Linux)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 5%
+source-wordcount: '579'
+ht-degree: 6%
 
 ---
 
@@ -21,26 +22,26 @@ ht-degree: 5%
 
 Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程式伺服器的進入點。
 
-您可以使用此整合式Tomcat伺服器來處理HTTP請求。
+您可以使用這個整合的Tomcat伺服器來處理HTTP要求。
 
 在此案例中：
 
-* 預設接聽連線埠為8080。 若要變更，請參閱 [本節](configure-tomcat.md).
-* 然後，使用者端主控台會使用URL連線，例如：
+* 預設的接聽連線埠為8080。 若要變更，請參閱 [本節](configure-tomcat.md).
+* 然後使用者端主控台會使用URL連線，例如：
 
-   ```
-   http://<computer>:8080
-   ```
+  ```
+  http://<computer>:8080
+  ```
 
-不過，基於安全性與管理考量，建議使用專用網頁伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦會公開在網際網路上，而您想要開啟網路外部主控台的存取許可權。
+不過，基於安全性與管理考量，當執行Adobe Campaign的電腦公開在網際網路上，而您想要開啟網路外部主控台的存取權時，我們建議使用專用的Web伺服器作為HTTP流量的主要進入點。
 
-網頁伺服器也可讓您使用HTTPs通訊協定來保證資料機密性。
+網頁伺服器也可讓您透過HTTPs通訊協定來保證資料機密性。
 
-同樣地，當您想要使用追蹤功能時，也必須使用Web伺服器，追蹤功能只能當做擴充模組提供給Web伺服器。
+同樣地，當您想要使用追蹤功能時，必須使用網頁伺服器，這項功能只能作為網頁伺服器的擴充模組使用。
 
 >[!NOTE]
 >
->如果您未使用追蹤功能，可以執行標準Apache或IIS安裝，並重導至Campaign。 不需要追蹤Web伺服器擴充功能模組。
+>如果您未使用追蹤功能，您可以執行Apache或IIS的標準安裝，並重新導向至Campaign。 不需要追蹤Web伺服器擴充功能模組。
 
 ## 使用Debian設定Apache Web Server {#configuring-the-apache-web-server-with-debian}
 
@@ -54,7 +55,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   確保 **別名**， **authz_host** 和 **mime** 模組仍為啟用。 為此，請使用以下命令：
+   確保 **別名**， **authz_host** 和 **mime** 模組仍然啟用。 為此，請使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
@@ -68,7 +69,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. 建立檔案 **nlsrv.conf** 在 **/etc/apache2/mods-available** 使用下列命令：
+1. 建立檔案 **nlsrv.conf** 在 **/etc/apache2/mods-available** 使用下列指令：
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -80,7 +81,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
     a2enmod nlsrv
    ```
 
-   如果您使用 **mod_rewrite** Adobe Campaign頁面的模組，您必須重新命名 **nlsrv.load** 和 **nlsrv.conf** 檔案至 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 若要啟動模組，請執行以下命令：
+   如果您使用 **mod_rewrite** Adobe Campaign頁面模組，您必須重新命名 **nlsrv.load** 和 **nlsrv.conf** 檔案到 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 若要啟動模組，請執行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -111,7 +112,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
 
 ## 在RHEL中設定Apache Web Server {#configuring-apache-web-server-in-rhel}
 
-若您已在RPM （RHEL、CentOS和Suse）封裝下安裝並保護Apache，則此程式適用。
+如果您已在基於RPM （RHEL、CentOS和Suse）的套件下安裝並保護Apache，則此程式適用。
 
 應用以下步驟：
 
@@ -156,14 +157,14 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
 
 1. 在中建立Adobe Campaign專屬設定檔 `/etc/httpd/conf.d/` 資料夾。 例如 `CampaignApache.conf`
 
-1. 對象 **RHEL7**，請在檔案中新增下列指示：
+1. 的 **RHEL7**，請在檔案中新增下列指示：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/conf/apache_neolane.conf
    ```
 
-1. 對象 **RHEL7**：
+1. 的 **RHEL7**：
 
    新增 `/etc/systemd/system/httpd.service` 包含下列內容的檔案：
 
@@ -174,13 +175,13 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
    ```
 
-   更新systemd使用的模組：
+   更新系統使用的模組：
 
    ```
    systemctl daemon-reload
    ```
 
-1. 然後執行命令，將Adobe Campaign運運算元新增至Apache運運算元群組（反之亦然）：
+1. 接著執行命令，將Adobe Campaign運運算元新增至Apache運運算元群組（反之亦然）：
 
    ```
    usermod -a -G neolane apache
@@ -200,7 +201,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
 
 ## 啟動Web伺服器並測試設定{#launching-the-web-server-and-testing-the-configuration}
 
-您現在可以啟動Apache以測試設定。 Adobe Campaign模組現在應在主控台上顯示其橫幅（某些作業系統上有兩個橫幅）：
+您現在可以啟動Apache以測試設定。 Adobe Campaign模組現在應在主控台上顯示其橫幅（某些作業系統上的兩個橫幅）：
 
 ```
  /etc/init.d/apache start
@@ -217,9 +218,9 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
 12:26:28 >   Server started
 ```
 
-接下來，請檢查它是否透過提交測試URL來回應。
+接下來，請檢查它是否透過提交測試URL回應。
 
-您可以從命令列透過執行下列動作來測試此專案：
+您可以從命令列透過執行以下動作來測試此專案：
 
 ```
  telnet localhost 80  

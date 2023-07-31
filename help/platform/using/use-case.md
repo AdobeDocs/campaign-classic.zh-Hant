@@ -2,16 +2,17 @@
 product: campaign
 title: 使用案例
 description: 使用案例
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Subscriptions, Email, Data Management
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 3%
+source-wordcount: '269'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 3%
 
 應用以下步驟：
 
-1. 建立新的篩選器，透過 **[!UICONTROL Administration > Configuration > Predefined filters]** 節點。
+1. 透過建立新的篩選器 **[!UICONTROL Administration > Configuration > Predefined filters]** 節點。
 1. 按一下 **[!UICONTROL Select link]** 圖示以選取相關檔案：
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
@@ -42,7 +43,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_edit_schema.png)
 
-   然後您可以檢視所選檔案的內容：
+   然後，您可以檢視所選檔案的內容：
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
@@ -52,11 +53,11 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_parameters.png)
 
-1. 按一下 **[!UICONTROL Save]** 將篩選器新增至此型別清單的預先定義篩選器。
-1. 您現在可以在以下位置使用此篩選器： **[!UICONTROL Subscriptions]** 收件者設定檔的索引標籤；您可以按一下 **[!UICONTROL Filters]** 按鈕。
+1. 按一下 **[!UICONTROL Save]** 將篩選器新增到此型別清單的預先定義篩選器。
+1. 您現在可以在以下位置使用此篩選器： **[!UICONTROL Subscriptions]** 收件人設定檔的索引標籤；您可以按一下 **[!UICONTROL Filters]** 按鈕。
 
    ![](assets/s_ncs_user_filter_on_events.png)
 
-   目前篩選器的名稱會顯示在清單上方。 若要取消篩選，請按一下 **[!UICONTROL Delete this filter]** 圖示。
+   目前篩選的名稱會顯示在清單上方。 若要取消篩選，請按一下 **[!UICONTROL Delete this filter]** 圖示。
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)

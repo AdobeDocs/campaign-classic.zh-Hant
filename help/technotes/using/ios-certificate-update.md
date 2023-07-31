@@ -2,11 +2,12 @@
 product: campaign
 title: Technote - Apple推播通知服務伺服器憑證更新
 description: Apple推播通知服務伺服器憑證更新
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Push
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 作為託管客戶，無需採取任何動作：Adobe已將新的根憑證整合至您的環境。
 
-身為內部部署/混合部署客戶，您需要更新設定，以確保順暢轉換 **2021年3月29日之前**.
+身為內部部署/混合部署客戶，您需要更新設定以確保順暢轉換 **2021年3月29日前**.
 
 若要合併新憑證，請遵循下列步驟：
 

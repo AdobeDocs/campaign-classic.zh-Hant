@@ -2,13 +2,13 @@
 product: campaign
 title: 針對報吿的動作
 description: 針對報吿的動作
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---
@@ -31,48 +31,48 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_wizard_06.png)
 
-當報表包含多個頁面時，您需要對每個頁面重複此操作。
+當報表包含數個頁面時，您需要為每個頁面重複此作業。
 
-您可以設定報表以檢視匯出為PDF、Excel或OpenOffice格式。 開啟Adobe Campaign檔案總管並選取相關報表。
+您可以設定報表以檢視匯出PDF、Excel或OpenOffice格式的報表。 開啟Adobe Campaign檔案總管並選取相關報表。
 
-匯出選項可透過以下方式存取： **[!UICONTROL Page]** 報表的活動，在 **[!UICONTROL Advanced]** 標籤。
+匯出選項可透過以下方式存取： **[!UICONTROL Page]** 報告的活動，在 **[!UICONTROL Advanced]** 標籤。
 
-變更設定 **[!UICONTROL Paper]** 和 **[!UICONTROL Margins]** 以符合您的需求。 您也可以授權僅以PDF格式匯出頁面。 若要這麼做，請取消勾選 **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** 選項。
+變更的設定 **[!UICONTROL Paper]** 和 **[!UICONTROL Margins]** 以符合您的需求。 您也可以授權僅以PDF格式匯出頁面。 若要這麼做，請取消勾選 **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** 選項。
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### 匯出至Microsoft Excel {#exporting-into-microsoft-excel}
 
-對象 **[!UICONTROL List with group]** 鍵入要匯出至Excel的報告，以下建議和限制適用：
+的 **[!UICONTROL List with group]** 輸入要匯出至Excel的報表型別，適用下列建議和限制：
 
 * 這些報表不得包含任何空白行。
 
-   ![](assets/export_limitations_remove_empty_line.png)
+  ![](assets/export_limitations_remove_empty_line.png)
 
 * 清單的圖例必須隱藏。
 
-   ![](assets/export_limitations_hide_label.png)
+  ![](assets/export_limitations_hide_label.png)
 
 * 報表不必使用在儲存格層級定義的特定格式。 最好使用 **[!UICONTROL Form rendering]** 以定義表格中儲存格的格式。 此 **[!UICONTROL Form rendering]** 可透過以下方式存取 **[!UICONTROL Administration > Configuration > Form rendering]**.
 * 我們不建議插入HTML內容。
-* 如果報表包含數個表格、圖表等， 文字元素，會將它們一個匯出到另一個之下。
-* 您可以強制儲存格中的歸位字元：此設定將保留在Excel中。 如需詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#defining-cell-format)。
+* 如果報告包含數個表格、圖表等， 文字元素，它們會一個匯出到另一個之下。
+* 您可以在儲存格中強制歸位：此設定將保留在Excel中。 如需詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
 ### 延遲匯出 {#postpone-the-export}
 
-您可以延遲匯出報表，例如等候非同步呼叫。 若要這麼做，請在頁面的初始化命令檔中輸入下列引數：
+例如，您可以延遲匯出報表，以等待非同步呼叫。 若要這麼做，請在頁面的初始化命令檔中輸入下列引數：
 
 ```
 document.nl_waitBeforeRender = true;
 ```
 
-若要啟動匯出並開始轉換為PDF，請使用 **document.nl_renderToPdf()** 函式中沒有任何引數。
+若要啟動匯出並開始轉換為PDF，請使用 **document.nl_renderToPdf()** 函式且不含任何引數。
 
 ### 記憶體配置 {#memory-allocation}
 
 匯出某些大型報表時，可能會發生記憶體配置錯誤。
 
-在某些情況下，預設值 **maxMB** (**SKMS** （適用於託管例項）。 **serverConf.xml** 設定檔案設定為64 MB。 如果您在匯出報告時遇到任何記憶體不足錯誤，建議將此數字增加到512 MB：
+在某些情況下，預設值 **maxMB** (**SKMS** 中指定的託管例項)。 **serverConf.xml** 設定檔案設定為64 MB。 如果您在匯出報表時遇到任何記憶體不足的錯誤，建議將此數字增加到512 MB：
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
@@ -80,9 +80,9 @@ document.nl_waitBeforeRender = true;
 
 若要套用對組態所做的變更，請 **nlserver** 需要重新啟動服務。
 
-若要進一步瞭解 **serverConf.xml** 檔案，請參閱 [本節](../../production/using/configuration-principle.md).
+進一步瞭解 **serverConf.xml** 檔案，請參閱 [本節](../../production/using/configuration-principle.md).
 
-若要進一步瞭解 **nlserver** 服務，請參閱 [本節](../../production/using/administration.md).
+進一步瞭解 **nlserver** 服務，請參閱 [本節](../../production/using/administration.md).
 
 ## 列印報表 {#printing-a-report}
 
@@ -94,7 +94,7 @@ document.nl_waitBeforeRender = true;
 
 ## 建立報告封存 {#creating-report-archives}
 
-封存報表可讓您建立不同期間的報表檢視，例如顯示指定期間的統計資料。
+封存報表可讓您在不同時段建立報表的檢視，例如，顯示指定時段的統計資料。
 
 若要建立封存，請開啟相關報表，然後按一下適當的圖示。
 
@@ -104,10 +104,10 @@ document.nl_waitBeforeRender = true;
 
 ![](assets/s_ncs_advuser_report_history_06.png)
 
-封存日期會顯示在顯示/隱藏圖示下。 按一下封存即可檢視。
+封存日期會顯示在顯示/隱藏圖示下方。 按一下封存即可檢視。
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-可以刪除報告封存。 若要這麼做，請前往儲存報告的Adobe Campaign節點。 按一下 **[!UICONTROL Archives]** 索引標籤中，選取您要刪除的專案，然後按一下 **[!UICONTROL Delete]**.
+您可以刪除報表封存。 若要這麼做，請前往儲存報表的Adobe Campaign節點。 按一下 **[!UICONTROL Archives]** 索引標籤中，選取要刪除的專案，然後按一下 **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)

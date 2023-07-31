@@ -2,16 +2,17 @@
 product: campaign
 title: 常用指令
 description: 常用指令
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 4%
+source-wordcount: '432'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 4%
 
 本節列出Adobe Campaign中的常用命令。
 
-命令 **nlserver** 是整個Adobe Campaign應用程式的輸入命令。
+指令 **nlserver** 是整個Adobe Campaign應用程式的輸入命令。
 
 這個命令的語法如下： **nlserver **`<command>`****`<arguments>`****
 
@@ -29,10 +30,9 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->* 無論如何，您都可以新增 **-noconsole** 用來刪除模組啟動後所顯示註解的引數。
->* 反之，您可以新增引數 **-verbose** 以顯示更多資訊。
+>* 無論如何，您可以新增 **-noconsole** 引數，用來刪除啟動模組後顯示的註解。
+>* 相反地，您可以新增引數 **-verbose** 以顯示更多資訊。
 >
-
 
 ## 監視命令 {#monitoring-commands-}
 
@@ -62,9 +62,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一個有用的指令是 **nlserver監視**. 它會列出監視XML檔案(在Adobe Campaign使用者端中取得，或透過 **monitor.jsp** 網頁)。
+另一個有用的指令是 **nlserver監視**. 其中列出監視XML檔案(在Adobe Campaign使用者端中取得，或透過 **monitor.jsp** 網頁)。
 
-您可以新增引數 **-missing** 列出缺席模組（模組、模組關閉等錯誤）
+您可以新增引數 **-missing** 列出缺少的模組（模組、模組關閉等錯誤）
 
 ```
 nlserver monitor -missing
@@ -78,7 +78,7 @@ wfserver@test
 
 ## 模組啟動命令 {#module-launch-commands}
 
-啟動模組的語法仍會具有下列格式：
+啟動模組的語法仍會採用下列格式：
 
 ```
 nlserver start <module>@<INSTANCE>
@@ -90,47 +90,47 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** 對應於在組態檔案中輸入的例證名稱，或 **預設** 用於單執行個體模組。
+>**`<instance>`** 對應於在組態檔案中輸入的例項名稱，或 **預設** 用於單執行個體模組。
 
 ## 關閉服務 {#shut-down-services}
 
 若要停止Adobe Campaign服務，請使用下列命令之一：
 
-* 如果您擁有root或管理員存取權：
+* 如果您擁有根或管理員存取權：
 
    * 在Linux中：
 
-      ```
-      /etc/init.d/nlserver6 stop
-      ```
+     ```
+     /etc/init.d/nlserver6 stop
+     ```
 
-      >[!NOTE]
-      >
-      >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl停止nlserver**
+     >[!NOTE]
+     >
+     >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl停止nlserver**
 
    * 在Windows中：
 
-      ```
-      net stop nlserver6
-      ```
+     ```
+     net stop nlserver6
+     ```
 
 * 如果沒有，則在Adobe Campaign帳戶中：
 
-   ```
-   nlserver shutdown 
-   ```
+  ```
+  nlserver shutdown 
+  ```
 
 ## 重新啟動服務 {#restart-services}
 
-同樣地，若要重新啟動Adobe Campaign，您可以使用下列命令之一：
+同樣地，若要重新啟動Adobe Campaign，您可以使用以下命令之一：
 
-* 如果您擁有root或管理員存取權：
+* 如果您擁有根或管理員存取權：
 
    * 在Linux中： /etc/init.d/nlserver6 start
 
-      >[!NOTE]
-      >
-      >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver**
+     >[!NOTE]
+     >
+     >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver**
 
    * 在Windows中：網路啟動nlserver6
 
@@ -140,7 +140,7 @@ nlserver stop <module>@<INSTANCE>
 
 此 **設定** command可讓您管理伺服器組態，包括重新設定資料庫連線。
 
-使用 **設定** 命令 **nlserver** 可執行檔，包含 **-setdblogin** 引數。
+使用 **設定** 命令 **nlserver** 包含下列專案的可執行檔案： **-setdblogin** 引數。
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -152,7 +152,7 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 輸入密碼。
 
-若要變更 **內部** 密碼： **nlserver config -internalpassword**
+若要變更 **內部** 密碼： **nlserver設定 — internalpassword**
 
 >[!IMPORTANT]
 >
@@ -164,4 +164,5 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 若要取得引數清單，請使用 **-？** 引數： **nlserver設定 — ？**
 >* 若是Oracle資料庫，則不得指定帳戶。 語法如下：
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  nlserver設定 — setdblogin:Oracle:test6@dbserver
+>

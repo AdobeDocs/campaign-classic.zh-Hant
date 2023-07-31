@@ -2,14 +2,15 @@
 product: campaign
 title: 設定Synapse的存取權
 description: 瞭解如何在FDA中設定Synapse的存取權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '779'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 
 
-使用行銷活動 [同盟資料存取](../../installation/using/about-fda.md) (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定對的存取權 **MicrosoftAzure synapse分析**.
+使用行銷活動 [同盟資料存取](../../installation/using/about-fda.md) (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定存取權至 **MicrosoftAzure synapse分析**.
 
 1. 設定Azure synapse於 [CentOS](#azure-centos)， [Windows](#azure-windows) 或 [Debian](#azure-debian)
 1. 設定Azure synapse [外部帳戶](#azure-external) 在Campaign中
@@ -30,7 +31,6 @@ ht-degree: 1%
 >* 您需要root許可權才能安裝ODBC驅動程式。
 >* Microsoft提供的Red Hat Enterprise ODBC驅動程式也可搭配CentOS使用來連線至SQL Server。
 >* 13.0版可搭配Red Hat 6和7使用。
-
 
 若要在CentOS上設定Azure synapse，請遵循下列步驟：
 
@@ -88,7 +88,7 @@ ht-degree: 1%
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. 然後，您可以在Campaign中設定 [!DNL Azure Synapse] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#azure-external).
+1. 接著，您可以在Campaign中設定 [!DNL Azure Synapse] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#azure-external).
 
 1. 由於Azure synapse Analytics會透過TCP 1433連線埠通訊，因此您必須在防火牆上開啟此連線埠。 使用以下命令：
 
@@ -99,7 +99,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >若要允許來自Azure synapse Analytics一方的通訊，您可能需要將您的公用IP新增至允許清單。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >若要允許來自Azure synapse Analytics端的通訊，您可能需要將您的公用IP新增至允許清單。 要執行此操作，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. 如果是iptables，請執行以下命令：
 
@@ -123,26 +123,26 @@ ht-degree: 1%
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
    ```
 
-1. 安裝ODBC驅動程式後，您可以視需要加以測試。 如需關於此項目的詳細資訊，請參閱此[頁面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
+1. 安裝ODBC驅動程式之後，您可以視需要加以測試。 如需關於此項目的詳細資訊，請參閱此[頁面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
 
 1. 然後，您可以在Campaign Classic中設定 [!DNL Azure Synapse] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#azure-external).
 
-1. 由於Azure synapse Analytics會透過TCP 1433連線埠通訊，因此您需要在Windows Defender防火牆上開啟此連線埠。 有關詳細資訊，請參閱 [Windows檔案](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. 由於Azure synapse Analytics會透過TCP 1433連線埠通訊，因此您必須在Windows Defender防火牆上開啟此連線埠。 有關詳細資訊，請參閱 [Windows檔案](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ## Debian上的Azure synapse {#azure-debian}
 
 **必要條件:**
 
 * 您需要root許可權才能安裝ODBC驅動程式。
-* 安裝msodbcsql套件需要Curl。 如果您尚未安裝此程式，請執行以下命令：
+* 安裝msodbcsql套件需要CURL。 如果您尚未安裝，請執行以下命令：
 
-   ```
-   sudo apt-get install curl
-   ```
+  ```
+  sudo apt-get install curl
+  ```
 
 若要在Debian上設定Azure synapse：
 
-1. 首先，安裝適用於SQL Server的Microsoft ODBC驅動程式。 使用下列命令安裝SQL Server適用的ODBC驅動程式13.1：
+1. 首先，安裝適用於SQL Server的Microsoft ODBC驅動程式。 使用下列命令安裝SQL Server的ODBC驅動程式13.1：
 
    ```
    sudo su
@@ -153,13 +153,13 @@ ht-degree: 1%
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. 如果發生下列錯誤 **「找不到方法驅動程式/usr/lib/apt/methods/https」** 呼叫時 **sudo apt-get更新**，您應該執行命令：
+1. 如果您收到下列錯誤 **「找不到方法驅動程式/usr/lib/apt/methods/https」** 呼叫時 **sudo apt-get更新**，您應該執行命令：
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
    ```
 
-1. 您現在需要使用以下命令安裝mssql-tools。 需要Mssq-tools才能使用大量復製程式（或BCP）公用程式，以及執行查詢。
+1. 您現在需要使用以下命令安裝mssql-tools。 需要Mssq-tools才能使用大量復製程式（或BCP）公用程式並執行查詢。
 
    ```
    sudo ACCEPT_EULA=Y apt-get install mssql-tools
@@ -182,7 +182,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您現在可以設定 [!DNL Azure Synapse] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#azure-external).
 
-1. 若要在Debian上設定iptables以確保與Azure synapse Analytics連線，請使用以下命令為您的主機名稱啟用輸出TCP 1433連線埠：
+1. 若要在Debian上設定iptables以確保與Azure synapse Analytics連線，請使用下列命令為您的主機名稱啟用輸出TCP 1433連線埠：
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -190,13 +190,13 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >若要允許來自Azure synapse Analytics一方的通訊，您可能需要將您的公用IP新增至允許清單。 若要這麼做，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >若要允許來自Azure synapse Analytics端的通訊，您可能需要將您的公用IP新增至允許清單。 要執行此操作，請參閱 [Azure檔案](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## azure synapse外部帳戶 {#azure-external}
 
 此 [!DNL Azure Synapse] 外部帳戶可讓您將您的Campaign執行個體連線至Azure synapse外部資料庫。
 
-若要建立 [!DNL Azure Synapse] 外部帳戶請遵循下列步驟：
+若要建立 [!DNL Azure Synapse] 外部帳戶請遵循以下步驟：
 
 1. 從Campaign **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -206,7 +206,7 @@ ht-degree: 1%
 
    ![](assets/azure_1.png)
 
-1. 下 **[!UICONTROL Configuration]**，選取 **[!UICONTROL Azure Synapse Analytics]** 從 **[!UICONTROL Type]** 下拉式清單。
+1. 在 **[!UICONTROL Configuration]**，選取 **[!UICONTROL Azure Synapse Analytics]** 從 **[!UICONTROL Type]** 下拉式清單。
 
    ![](assets/azure_2.png)
 
@@ -222,7 +222,7 @@ ht-degree: 1%
 
       * **[!UICONTROL Database]**：資料庫名稱
 
-      ![](assets/azure_3.png)
+     ![](assets/azure_3.png)
 
    * 對於系統指派的Managed身分驗證，您必須指定：
 
@@ -232,9 +232,7 @@ ht-degree: 1%
 
       * **[!UICONTROL Options]**：新增下列語法 `Authentication=ActiveDirectoryMsi`
 
-      ![](assets/azure_4.png)
-
-
+     ![](assets/azure_4.png)
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 

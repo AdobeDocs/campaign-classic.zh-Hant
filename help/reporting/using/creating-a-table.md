@@ -2,13 +2,13 @@
 product: campaign
 title: 建立表格
 description: 建立表格
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2507'
 ht-degree: 1%
 
 ---
@@ -17,23 +17,23 @@ ht-degree: 1%
 
 
 
-您可以將表格新增至報表以顯示資料。 這可以是根據立方體測量建立的樞紐分析表、具有群組的清單或包含劃分值的表格。
+您可以新增表格至報表以顯示資料。 這可以是根據立方體測量建立的樞紐分析表、具有群組的清單或包含劃分值的表格。
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
 ## 建立包含群組的清單 {#creating-a-list-with-group}
 
-A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資料分組，並產生其統計資料。 例如，您可以建立資料的總計和小計。 每個群組都有自己的頁首、詳細資訊和頁尾行。
+A **[!UICONTROL List with group]** 型別表格可讓您將表格中的資料分組，並產生其統計資料。 例如，您可以建立資料的總計和小計。 每個群組都有自己的頁首、詳細資訊和頁尾行。
 
 >[!CAUTION]
 >
->此 **[!UICONTROL Page]** 包含表格的活動必須在前面加上 **[!UICONTROL Query]** 或 **[!UICONTROL Script]** 收集要在報表中分析之資料的活動。 如需這些活動的詳細資訊，請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md) 和 [指令碼活動](../../reporting/using/advanced-functionalities.md#script-activity).
+>此 **[!UICONTROL Page]** 包含表格的活動必須在前面加上 **[!UICONTROL Query]** 或 **[!UICONTROL Script]** 收集要在報表中分析的資料的活動。 有關這些活動的詳細資訊，請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md) 和 [指令碼活動](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### 操作原則 {#operating-principle}
 
-您可能需要一次分析多個資料類別。 具有群組的清單可讓您合併資料，並在相同表格中建立不同資料群組的統計資料。 要執行此操作，您可以在表格中建立群組。
+您可能需要一次分析多個資料類別。 具有群組的清單可讓您合併資料，並在相同表格內建立不同資料群組的統計資料。 若要這麼做，您可以在表格中建立群組。
 
-在以下範例中，群組會顯示資料庫中的所有行銷活動、傳遞，以及每個傳遞和每個行銷活動傳送的訊息數。
+在以下範例中，群組會顯示資料庫中的所有行銷活動、傳送，以及每個傳送和每個行銷活動傳送的訊息數。
 
 它可讓您列出行銷活動(**[!UICONTROL Label (Campaign)]**，傳遞清單(**[!UICONTROL Label]** )連結至行銷活動，並可讓您計算每次傳送的訊息數(**[!UICONTROL Processed)]**，然後為每個行銷活動加總這些值(**[!UICONTROL Sum(@processed)]** )。
 
@@ -43,36 +43,36 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 以下提供完整實作範例： [使用案例：建立具有群組清單的報告](#use-case--create-a-report-with-a-group-list).
 
-請注意下列建立「具有群組的清單」型別表格的步驟：
+請注意下列步驟以建立「具有群組的清單」型別表格：
 
-1. 前往報表圖表並放置 **[!UICONTROL Query]** 活動。 請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md).
-1. 填寫來源表格並選取統計資料會關注的表格欄位。
-1. 放置 **[!UICONTROL Page]** 活動。 有關詳細資訊，請參閱 [靜態元素](../../reporting/using/creating-a-new-report.md#static-elements).
+1. 前往報告圖表並放置 **[!UICONTROL Query]** 活動。 請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md).
+1. 填寫來源表格，並選取統計資料會關注的表格欄位。
+1. 放置 **[!UICONTROL Page]** 活動在圖表中。 有關詳細資訊，請參閱 [靜態元素](../../reporting/using/creating-a-new-report.md#static-elements).
 1. 插入 **[!UICONTROL List with group]** 在頁面中輸入表格。
-1. 指定資料路徑，或查詢中選取為資料來源的表格。
+1. 指定資料路徑，或查詢中選取做為資料來源的表格。
 
-   如果您要稍後復原來源表格中的欄位，並將它們插入表格的儲存格中，則必須執行此步驟。
+   如果您稍後要復原來源表格中的欄位，並將它們插入表格的儲存格中，則必須執行此步驟。
 
 1. 建立表格及其內容。
-1. 在中顯示最終報告 **[!UICONTROL Preview]** 標籤。 然後，您可以發佈報表，並視需要將其匯出為其他格式。 有關詳細資訊，請參閱 [匯出報告](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. 在下列位置顯示最終報告 **[!UICONTROL Preview]** 標籤。 之後，您可以發佈報表，並視需要將其匯出為不同的格式。 有關詳細資訊，請參閱 [匯出報告](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### 新增行和欄 {#adding-lines-and-columns}
 
-依預設， **[!UICONTROL List with group]** 文字表格包含頁首、明細行與頁尾行。
+根據預設， **[!UICONTROL List with group]** 文字表格包含頁首、詳細資訊行和頁尾行。
 
 群組本身包含頁首、詳細資訊和頁尾行。
 
 * **標題行**：此行可讓您為表格的欄指定標題。
 
-   ![](assets/s_advuser_ergo_listgroup_003a.png)
+  ![](assets/s_advuser_ergo_listgroup_003a.png)
 
 * **詳細資料行**：此行包含統計值。
 
-   ![](assets/s_advuser_ergo_listgroup_004.png)
+  ![](assets/s_advuser_ergo_listgroup_004.png)
 
-* **頁尾行**：此行可讓您顯示總值。
+* **頁尾行**：此線條可讓您顯示總計值。
 
-   ![](assets/s_advuser_ergo_listgroup_003.png)
+  ![](assets/s_advuser_ergo_listgroup_003.png)
 
 您可以視需要新增行和欄。
 
@@ -90,7 +90,7 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 欄寬可透過 **[!UICONTROL Column format]** 個專案。
 
-**群組**：若要新增群組，請移至一行，然後在下拉式選單中選取相符的專案。
+**群組**：若要新增群組，請移至某一行，然後在下拉式選單中選取相符的專案。
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
@@ -104,29 +104,29 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 * 若要將要分析的值直接插入表格中，請在可用欄位中選取它們。
 
-   可用欄位清單與報告建構圖表中表格前面的查詢內容一致。
+  可用欄位清單與報告建構圖表中表格前面的查詢內容一致。
 
-   ![](assets/s_advuser_ergo_listgroup_011.png)
+  ![](assets/s_advuser_ergo_listgroup_011.png)
 
 * 輸入儲存格的標籤，例如標題一。
 
-   要執行此操作，請使用與將欄位插入資料庫相同的程式，但不要選取運算式。 在 **[!UICONTROL Label]** 欄位。 它將顯示為原樣。
+  要執行此操作，請使用與將欄位插入資料庫相同的程式，但不要選取運算式。 在 **[!UICONTROL Label]** 欄位。 它將顯示為原樣。
 
-* 計算彙總（平均值、總和等） 並將它顯示在儲存格中。
+* 計算彙總（平均值、總和等） 並在儲存格中顯示。
 
-   若要這麼做，請使用 **[!UICONTROL Aggregates]** 功能表專案並選取所需的行銷活動。
+  若要這麼做，請使用 **[!UICONTROL Aggregates]** 功能表專案並選取所需的行銷活動。
 
-   ![](assets/s_advuser_ergo_listgroup_008.png)
+  ![](assets/s_advuser_ergo_listgroup_008.png)
 
 ### 定義儲存格格式 {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
-若要定義儲存格格式，請 **[!UICONTROL Cell format...]** 功能表可讓您存取所選儲存格可用的所有格式選項。
+若要定義儲存格格式， **[!UICONTROL Cell format...]** 功能表可讓您存取所選儲存格可用的所有格式選項。
 
 這些選項可讓您個人化報表的最終呈現，並使其更容易讀取資訊。
 
-使用 **[!UICONTROL Carriage return]** 將資料匯出至Excel時的欄位：選取 **[!UICONTROL Yes]** 值強制歸位。 匯出時將保留此值。 有關詳細資訊，請參閱 [匯出報告](../../reporting/using/actions-on-reports.md#exporting-a-report).
+使用 **[!UICONTROL Carriage return]** 將資料匯出至Excel時的欄位：選取 **[!UICONTROL Yes]** 值強制歸位。 匯出時會保留此值。 有關詳細資訊，請參閱 [匯出報告](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 此 **[!UICONTROL Cell format]** 視窗可讓您存取下列標籤：
 
@@ -139,9 +139,9 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-格式變更資料顯示：例如， **[!UICONTROL Number]**， **[!UICONTROL Monetary]** 和 **[!UICONTROL Percentage]** 格式可讓您對齊右側的插圖，並顯示小數點。
+格式變更資料會顯示：例如 **[!UICONTROL Number]**， **[!UICONTROL Monetary]** 和 **[!UICONTROL Percentage]** 格式可讓您對齊右側的插圖，並顯示小數點。
 
-如何設定貨幣格式的範例：您可以指定值的表示貨幣、選擇是否要分隔千分位以及以紅色顯示負值。 貨幣符號的位置取決於其設定檔中定義的運運算元語言。
+如何設定貨幣格式的範例：您可以指定值的表示貨幣、選擇是否要分隔千分，並以紅色顯示負值。 貨幣符號的位置取決於其設定檔中定義的運運算元語言。
 
 ![](assets/s_advuser_ergo_listgroup_012.png)
 
@@ -149,13 +149,13 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 ![](assets/s_advuser_ergo_listgroup_013.png)
 
-此 **邊框** tab可讓您新增框線至表格中的行和欄。 將大型報表匯出至Excel時，在儲存格中新增框線可能會導致效能問題。
+此 **邊框** tab可讓您在表格中的行和欄新增框線。 將大型報表匯出至Excel時，在儲存格中新增框線可能會導致效能問題。
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
-如有必要，您可以在表格範本中定義邊界(**[!UICONTROL Administration > Configuration > Form rendering]** )。
+如有必要，您可以在表格範本中定義框線(**[!UICONTROL Administration > Configuration > Form rendering]** )。
 
-在此案例中，您會使用下列語法：
+在此案例中，您的語法如下：
 
 在Web標籤中：
 
@@ -189,39 +189,39 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 此 **[!UICONTROL Click]** tab可讓您定義使用者按一下儲存格或表格內容時的動作。
 
-在以下範例中，按一下儲存格中的值可讓您顯示報表的第二頁：它包含儲存格中傳送的相關資訊。
+在下列範例中，按一下儲存格中的值可讓您顯示報表的第二頁：其中會包含儲存格中傳送的相關資訊。
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-此 **額外** tab可讓您將視覺效果連結至資料，例如彩色標籤或值列。 當表格在圖表中顯示為圖例時，會使用彩色標籤。 如需詳細資訊，請參閱實作範例： [步驟5 — 建立第二個頁面](#step-5---create-the-second-page)
+此 **額外** tab可讓您將視覺效果連結至資料，例如彩色標籤或數值列。 表格在圖表中顯示為圖例時，會使用彩色標籤。 如需詳細資訊，請參閱實作範例： [步驟5 — 建立第二個頁面](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
 ## 使用案例：建立具有群組清單的報告 {#use-case--create-a-report-with-a-group-list}
 
-在此範例中，我們將建立兩頁報告：第一個頁面將包含清單和每個行銷活動的傳遞總數，以及傳送的訊息數。 傳遞名稱將是可點按的連結，可讓您進入報表的第二頁，以表格和圖表檢視所選傳遞的每封電子郵件網域傳遞明細。 在第二個頁面，表格將做為圖表的圖例。
+在此範例中，我們將建立兩頁報告：第一個頁面將包含清單和每個行銷活動的傳遞總數，以及傳送的訊息數。 傳遞名稱將是可點按的連結，可讓您進入報表的第二頁，以使用表格和圖表檢視所選傳遞的每封電子郵件網域傳遞明細。 在第二個頁面，表格會作為圖表的圖例。
 
 ![](assets/reporting_quick_start_report-final.png)
 
 ### 步驟1 — 建立報表 {#step-1---create-a-report}
 
-建立與行銷活動結構描述有關的新報告 **[!UICONTROL Campaigns (nms)]**.
+建立與行銷活動結構描述有關的新報告， **[!UICONTROL Campaigns (nms)]**.
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
 按一下 **[!UICONTROL Save]** 以建立報表。
 
-前往圖表並新增用於設計報表內容的第一個元件：第一個查詢和第一個頁面。
+移至圖表，新增用於設計報表內容的第一個元件：第一個查詢和第一個頁面。
 
 ![](assets/reporting_quick_start_diagram.png)
 
 ### 步驟2 — 建立第一個查詢 {#step-2---create-the-first-query}
 
-第一個查詢可讓您收集連結至每個行銷活動的傳送。 目標是顯示連結至每個行銷活動的各種Adobe Campaign資料庫傳遞的相關報告。
+第一個查詢可讓您收集連結至每個行銷活動的傳送。 目標是顯示連結至每個行銷活動之各種Adobe Campaign資料庫傳遞的相關報告。
 
-連按兩下第一個查詢以進行編輯，然後套用以下步驟以進行設定：
+連按兩下第一個查詢以進行編輯，然後套用下列步驟進行設定：
 
-1. 從變更套用查詢來源的結構描述開始：選取 **[!UICONTROL Deliveries (nms)]** 結構描述。
+1. 從變更套用查詢來源的結構描述開始：選取 **[!UICONTROL Deliveries (nms)]** 綱要。
 1. 按一下 **[!UICONTROL Edit query]** 連結並顯示進階欄位。
 
    ![](assets/reporting_quick_start_query-1.png)
@@ -237,7 +237,7 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
    ![](assets/s_advuser_report_listgroup_002.png)
 
-   將別名連結至每個欄位：建議這麼做，以便利從表格中選取要新增至報表第一頁的資料。
+   將別名連結至每個欄位：建議您這麼做，以便於從表格選取要新增至報表第一頁的資料。
 
    在此範例中，我們將使用下列別名：
 
@@ -245,19 +245,18 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
    * 主索引鍵： **@deliveryId**
    * 標籤（行銷活動）： **@label1**
    * 已處理： **@processed**
-   * &#39;行銷活動&#39; （&#39;id&#39;欄位）連結的外部索引鍵： **@operationId**
+   * &#39;行銷活動&#39;連結的外部索引鍵（&#39;id&#39;欄位）： **@operationId**
    * 錯誤率： **@errorRatio**
-
 
 1. 按一下 **[!UICONTROL Next]** 按鈕兩次，以存取 **[!UICONTROL Data filtering]** 步驟。
 
    新增篩選條件，以僅收集連結至行銷活動的傳送。
 
-   此篩選器的語法如下：「&#39;行銷活動&#39;連結的外部索引鍵大於0」。
+   此篩選器的語法如下：「&#39;Campaigns&#39;連結的外部索引鍵大於0」。
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. 按一下 **[!UICONTROL Finish]** 若要儲存這些條件，然後按一下 **[!UICONTROL Ok]** 以關閉查詢編輯器。
+1. 按一下 **[!UICONTROL Finish]** 若要儲存這些條件，請按一下 **[!UICONTROL Ok]** 以關閉查詢編輯器。
 
 ### 步驟3：建立第一頁 {#step-3--create-the-first-page}
 
@@ -271,7 +270,7 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. 按一下 **[!UICONTROL Table data XPath...]** 連結並選取傳遞連結，即 `[query/delivery]`.
+1. 按一下 **[!UICONTROL Table data XPath...]** 連結並選取傳送連結，即 `[query/delivery]`.
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
@@ -283,13 +282,13 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
    ![](assets/s_advuser_report_listgroup_008.png)
 
-   此群組可讓您將行銷活動及連結至行銷活動的傳遞分組。
+   此群組可讓您將行銷活動及連結至行銷活動的傳送分組。
 
 1. 在群組視窗中，參照 **&#39;行銷活動&#39;連結的外部索引鍵** 並關閉視窗。
 
    ![](assets/s_advuser_report_listgroup_007.png)
 
-1. 編輯群組標頭的第一個儲存格並插入 **[!UICONTROL Label]** 行銷活動的欄位做為運算式。
+1. 編輯群組標頭的第一個儲存格並插入 **[!UICONTROL Label]** 運算式形式的行銷活動欄位。
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
@@ -305,7 +304,7 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. 在視窗的下半部，按一下 **[!UICONTROL Add]** 並指定 **`/vars/selectedDelivery`** 路徑和 **[!UICONTROL @deliveryId]** 符合傳遞主要金鑰別名的運算式，如先前建立的查詢中所定義。 此公式可讓您存取選取的傳遞。
+1. 在視窗的下半部分，按一下 **[!UICONTROL Add]** 並指定 **`/vars/selectedDelivery`** 路徑與 **[!UICONTROL @deliveryId]** 符合傳遞主要金鑰別名的運算式，如先前建立的查詢中所定義。 此公式可讓您存取選取的傳遞。
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
@@ -313,7 +312,7 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
    ![](assets/s_advuser_report_listgroup_012.png)
 
-1. 編輯群組標頭行的第三個儲存格，並輸入 **[!UICONTROL Number of messages sent]** 作為標籤。
+1. 編輯群組標題行的第三個儲存格，並輸入 **[!UICONTROL Number of messages sent]** 作為標籤。
 
    ![](assets/s_advuser_report_listgroup_013.png)
 
@@ -333,45 +332,45 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 1. 選取此儲存格以顯示代表傳遞錯誤率的值列。
 
-   若要這麼做，請存取儲存格格式，然後前往 **[!UICONTROL More]** 標籤。 選取 **[!UICONTROL Value bar]** 專案，然後選取 **[!UICONTROL Hide the cell value]** 選項。
+   若要這麼做，請存取儲存格格式，然後前往 **[!UICONTROL More]** 標籤。 選取 **[!UICONTROL Value bar]** 專案，並選取 **[!UICONTROL Hide the cell value]** 選項。
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   您現在可以檢視報表的呈現。 按一下 **[!UICONTROL Preview]** 標籤並選取 **[!UICONTROL Global]** 選項：此選項會顯示Adobe Campaign資料庫中連結至行銷活動的所有傳遞清單。
+   您現在可以檢視報表的呈現。 按一下 **[!UICONTROL Preview]** 標籤並選取 **[!UICONTROL Global]** 選項：這會顯示Adobe Campaign資料庫中連結至行銷活動的所有傳遞清單。
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   我們建議使用 **[!UICONTROL Preview]** 索引標籤以確定表格中的資料已正確選取和設定。 完成此步驟後，您可以繼續格式化表格。
+   我們建議使用 **[!UICONTROL Preview]** 標籤以確定表格中的資料已正確選取和設定。 完成後，您可以繼續格式化表格。
 
-1. 套用 **[!UICONTROL Bold]** style至顯示每個行銷活動總計與已處理訊息總數的儲存格。
+1. 套用 **[!UICONTROL Bold]** 顯示每個行銷活動總計和已處理訊息總數的儲存格。
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
-1. 按一下群組標題行（顯示行銷活動名稱的儲存格）的第1個儲存格，然後選取 **[!UICONTROL Edit > Merge to right]**.
+1. 按一下群組標題行（顯示行銷活動名稱的行）的第1個儲存格，然後選取 **[!UICONTROL Edit > Merge to right]**.
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
-   合併群組標題行的前兩個儲存格時，行銷活動標題和連結至行銷活動標題的傳遞清單會重新對齊。
+   合併群組標題行的前兩個儲存格時，行銷活動標題與連結至行銷活動標題的傳遞清單會重新對齊。
 
    ![](assets/s_advuser_report_listgroup_027.png)
 
    >[!CAUTION]
    >
-   >由於合併無法復原，因此建議您等到報告建置後再合併儲存格。
+   >由於合併無法復原，建議您等到報表建置後再合併儲存格。
 
 ### 步驟4 — 建立第二個查詢 {#step-4---create-the-second-query}
 
 我們想新增第二個查詢和第二個頁面，以便在報告使用者點按傳遞時顯示傳遞的詳細資訊。 在新增查詢之前，請編輯您已建立的頁面並啟用外寄轉變，以便將其連結到查詢。
 
-1. 在後方新增查詢 **[!UICONTROL Page]** 活動並編輯其結構：選取 **[!UICONTROL Recipient delivery logs]** 結構描述。
+1. 在後方新增查詢 **[!UICONTROL Page]** 活動並編輯其結構：選取 **[!UICONTROL Recipient delivery logs]** 綱要。
 
    ![](assets/reporting_quick_start_query-2.png)
 
-1. 編輯查詢並定義輸出欄。 若要顯示每個電子郵件網域的傳遞數量，您需要：
+1. 編輯查詢並定義輸出欄。 若要顯示每個電子郵件網域的傳送數量，您需要：
 
-   * 計算主要金鑰的總和以計算傳遞記錄數量：
+   * 計算主要索引鍵的總和，以計算傳遞記錄檔的數量：
 
-      ![](assets/reporting_quick_start_query-2_count.png)
+     ![](assets/reporting_quick_start_query-2_count.png)
 
    * 收集此欄位的收件者電子郵件網域和群組資訊：若要這麼做，請選取 **[!UICONTROL Group]** 網域名稱欄中的選項。
 
@@ -382,10 +381,9 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
    * count（主索引鍵）： **@count**
    * 電子郵件網域（收件者）： **@domain**
 
-      ![](assets/reporting_quick_start_query-2_alias.png)
+     ![](assets/reporting_quick_start_query-2_alias.png)
 
-
-1. 按一下 **[!UICONTROL Next]** 按鈕兩次：這會將您帶往 **[!UICONTROL Data filtering]** 步驟。
+1. 按一下 **[!UICONTROL Next]** 按鈕兩次：這會將您帶至 **[!UICONTROL Data filtering]** 步驟。
 
    新增篩選條件，以僅收集連結至所選傳遞的資訊。
 
@@ -398,23 +396,23 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 ### 步驟5 — 建立第二個頁面 {#step-5---create-the-second-page}
 
 1. 編輯頁面並輸入其標籤： **電子郵件網域**.
-1. 取消勾選 **[!UICONTROL Enable output transitions]** 選項：這是報表的最後一頁，之後不會有其他活動。
+1. 取消核取 **[!UICONTROL Enable output transitions]** 選項：這是報表的最後一頁，不會接著進行其他活動。
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
-1. 使用滑鼠右鍵功能表新增包含群組的新清單並呼叫它 **每個收件者的電子郵件網域**.
+1. 使用滑鼠右鍵功能表新增包含群組的清單並呼叫它 **每個收件者的電子郵件網域**.
 1. 按一下 **[!UICONTROL Table data XPath...]** 並選取 **[!UICONTROL Recipient delivery logs]** 連結。
 
    ![](assets/s_advuser_report_listgroup_029.png)
 
-1. 在 **[!UICONTROL Data]** 標籤中，調整表格如下：
+1. 在 **[!UICONTROL Data]** 定位字元，調整表格如下：
 
    * 在右側新增兩欄。
-   * 在詳細資料行的第一個儲存格中，新增 **[!UICONTROL rowNum()-1]** 計算行數的運算式。 然後變更儲存格的格式：在 **[!UICONTROL Extra]** 索引標籤，選取 **[!UICONTROL Color tab]** 並按一下 **[!UICONTROL Ok]**.
+   * 在詳細資料行的第一個儲存格中，新增 **[!UICONTROL rowNum()-1]** 計算行數的運算式。 然後改變儲存格的格式：在 **[!UICONTROL Extra]** 索引標籤，選取 **[!UICONTROL Color tab]** 並按一下 **[!UICONTROL Ok]**.
 
-      ![](assets/s_advuser_report_listgroup_018.png)
+     ![](assets/s_advuser_report_listgroup_018.png)
 
-      此設定可讓您使用表格作為圖表的標題。
+     此設定可讓您使用表格作為圖表的標題。
 
    * 在詳細資料行的第二個儲存格中，新增 **[!UICONTROL Email domain(Recipient)]** 運算式。
    * 在詳細資料行的第三個儲存格中，新增 **[!UICONTROL count(primary key)]** 運算式。
@@ -423,11 +421,11 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 1. 使用滑鼠右鍵功能表將圓形圖新增至頁面，並指派 **電子郵件網域** 加標籤。 如需詳細資訊，請參閱 [圖表型別和變體](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 1. 按一下 **[!UICONTROL Variants]** 連結並取消選取 **[!UICONTROL Display label]** 和 **[!UICONTROL Display caption]** 選項。
-1. 檢查未設定值排序。 如需詳細資訊，請參閱[本章節](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
+1. 檢查是否已設定值排序。 如需詳細資訊，請參閱[本章節](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. 在 **[!UICONTROL Data]** 索引標籤中，變更資料來源：選取 **[!UICONTROL Context data]** 下拉式清單中的。
+1. 在 **[!UICONTROL Data]** 標籤，變更資料來源：選取 **[!UICONTROL Context data]** 下拉式清單中的。
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
@@ -435,12 +433,12 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. 在 **[!UICONTROL Chart type]** 區段，選取 **[!UICONTROL Email domain]** 變數。
+1. 在 **[!UICONTROL Chart type]** 區段，選取 **[!UICONTROL Email domain]** 變數中。
 1. 然後新增要執行的計算：選取總和作為運運算元。
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
-1. 按一下 **[!UICONTROL Detail]** 按鈕以選取計數所關注的欄位，然後關閉設定視窗。
+1. 按一下 **[!UICONTROL Detail]** 按鈕以選取計數會關注的欄位，然後關閉設定視窗。
 
    ![](assets/s_advuser_report_listgroup_030.png)
 
@@ -456,7 +454,7 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 ![](assets/s_advuser_report_listgroup_021.png)
 
-如果您按一下其中一個傳送的連結，畫面會顯示此傳送之電子郵件網域劃分的圖表。 您現在位於報表的第二頁，按一下適當的按鈕即可返回上一頁。
+如果按一下其中一個傳送的連結，就會顯示圖表，顯示此傳送的電子郵件網域劃分。 您現在位於報表的第二頁，可以按一下適當的按鈕返回上一頁。
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
@@ -464,6 +462,6 @@ A **[!UICONTROL List with group]** 「型別」表格可讓您將表格中的資
 
 此型別的表格可讓您顯示針對資料庫中資料計算的統計資料。
 
-這些型別報表的設定與描述性分析精靈所用的類似。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
+這些型別報表的設定與描述性分析精靈所用的設定類似。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 
-如需建立樞紐分析表的詳細資訊，請參閱 [本節](../../reporting/using/ac-cubes.md).
+有關建立樞紐分析表的詳細資訊，請參閱 [本節](../../reporting/using/ac-cubes.md).

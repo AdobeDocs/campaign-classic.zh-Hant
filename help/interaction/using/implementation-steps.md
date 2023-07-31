@@ -2,12 +2,12 @@
 product: campaign
 title: 實施步驟
 description: Campaign互動模組的實作步驟
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '295'
 ht-degree: 2%
 
 ---
@@ -20,24 +20,24 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->下列步驟應由執行 **管理員** 設定檔和僅限設計環境。
+>下列步驟應由 **管理員** 設定檔和僅限設計環境。
 
-1. 建立使用者設定檔。 有關詳細資訊，請參閱 [運運算元設定檔](../../interaction/using/operator-profiles.md).
+1. 建立使用者設定檔。 有關詳細資訊，請參閱 [運算元設定檔](../../interaction/using/operator-profiles.md).
 1. 透過目標維度建立優惠方案環境。 有關詳細資訊，請參閱 [建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
-1. 為每個環境建立型別規則。 有關詳細資訊，請參閱 [建立和參考優惠方案呈現方式規則](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
-1. 為每個環境建立優惠方案空間，並設定演算功能。 有關詳細資訊，請參閱 [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md).
+1. 為每個環境建立型別規則。 有關詳細資訊，請參閱 [建立和參考優惠方案簡報規則](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
+1. 為每個環境建立選件空間，並設定演算功能。 有關詳細資訊，請參閱 [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md).
 
    >[!NOTE]
    >
-   >如果空間是由已識別模式上的單一通道所定義，則必須指定此空間的進階引數。
+   >如果空間是由識別模式上的單一通道所定義，則必須指定此空間的進階引數。
 
-1. 設定傳入互動的優惠方案引擎，以顯示和更新一或多個優惠方案。
+1. 為傳入互動設定優惠方案引擎，以顯示和更新一或多個優惠方案。
 
    各種整合模式的詳細資訊，請參見 [關於傳入頻道](../../interaction/using/about-inbound-channels.md).
 
    >[!NOTE]
    >
-   >在傳入的Web頻道上建立空間時，也必須在將顯示優惠方案的網站上進行設定。
+   >在傳入的Web Channel上建立空間時，顯示優惠方案的網站上也需要設定。
 
 ## 管理優惠方案目錄 {#managing-the-offer-catalog-}
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 1. 在設計環境中建立優惠方案類別。 有關詳細資訊，請參閱 [建立優惠方案類別](../../interaction/using/creating-offer-categories.md).
 1. 在設計環境中建立優惠方案。 有關詳細資訊，請參閱 [建立優惠方案](../../interaction/using/creating-an-offer.md).
-1. 在一或多個空間核准和發佈優惠方案，以便在傳遞管理員的即時環境中提供這些優惠方案。 有關詳細資訊，請參閱 [核准和啟用優惠方案](../../interaction/using/approving-and-activating-an-offer.md).
+1. 在一或多個空間上核准和發佈優惠方案，以便在傳遞管理員的即時環境中提供這些優惠方案。 有關詳細資訊，請參閱 [核准和啟用優惠方案](../../interaction/using/approving-and-activating-an-offer.md).
 
 ## 使用優惠方案目錄 {#using-the-offer-catalog-}
 

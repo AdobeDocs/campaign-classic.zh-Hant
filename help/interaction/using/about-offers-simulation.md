@@ -2,8 +2,9 @@
 product: campaign
 title: 關於優惠方案模擬
 description: 關於優惠方案模擬
+feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -14,9 +15,9 @@ ht-degree: 5%
 
 
 
-此 **模擬** 模組可讓您在將您的主張傳送給收件者之前，測試屬於類別或環境的選件分佈。
+此 **模擬** 模組可讓您在將您的主張傳送給收件者之前，測試屬於類別或環境的優惠方案分佈。
 
-模擬會考量先前套用至優惠方案的前後關聯和適用性規則(請參閱 [優惠方案目錄概觀](../../interaction/using/offer-catalog-overview.md))及其簡報規則(請參閱 [管理優惠方案簡報](../../interaction/using/managing-offer-presentation.md))。 這可讓您測試和調整各種版本的優惠方案主張，而不需實際使用優惠方案或過度/過低請求目標，因為模擬對目標收件者沒有影響。
+模擬會考量先前套用至優惠方案的內容與適用性規則(請參閱 [優惠方案目錄概觀](../../interaction/using/offer-catalog-overview.md))及其簡報規則(請參閱 [管理優惠方案簡報](../../interaction/using/managing-offer-presentation.md))。 這可讓您測試和調整優惠方案主張的各種版本，而無須實際使用優惠方案，或過度/過少向目標行銷，因為模擬不會對目標收件者造成影響。
 
 若要瞭解如何模擬優惠方案，請閱讀以下步驟。
 
@@ -47,7 +48,7 @@ ht-degree: 5%
 
    ![](assets/offer_simulation_004.png)
 
-1. 新增報告座標軸以增強 **[!UICONTROL Offer distribution by rank]** 報表（選用）。
+1. 新增報告座標軸以增強 **[!UICONTROL Offer distribution by rank]** 報表（選擇性）。
 
    有關詳細資訊，請參閱 [新增報告軸](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 

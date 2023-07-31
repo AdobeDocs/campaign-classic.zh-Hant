@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics 連接器
 description: 深入瞭解 Adobe Analytics 連接器
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1510'
 ht-degree: 88%
 
 ---
@@ -20,14 +20,13 @@ ht-degree: 88%
 
 ## 關於 Adobe Analytics 連接器整合 {#about-analytics-connector-integration}
 
-Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UICONTROL Web Analytics connectors]** 套件互動。 它會以關於行銷活動後使用者行為的區段形式將資料轉送至Adobe Campaign。 相反地，它會將Adobe Campaign所傳遞行銷活動的指標和屬性傳送至Adobe Analytics。
+Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UICONTROL Web Analytics connectors]** 套件互動。 它會以關於行銷活動後使用者行為的區段形式，將資料轉送至Adobe Campaign。 相反地，它會將Adobe Campaign所傳遞行銷活動的指標和屬性傳送至Adobe Analytics。
 
 >[!CAUTION]
 >
 >* Adobe Analytics 連接器與異動訊息 (訊息中心) 不相容。
 >
 >* 開始之前，請確定已在 Campaign 中實施 Adobe Identity Management 系統 (IMS)。 [在本頁中深入瞭解](../../integrations/using/about-adobe-id.md)。
-
 
 Adobe Campaign 使用 Adobe Analytics 連接器可測量網際網路對象 (Web Analytics)。 有了這些整合，Adobe Campaign 便能復原行銷活動後一或多個網站的訪客行為資料，並 (在分析後) 使用視圖執行再次行銷活動，以便將其轉換為購買者。 反之，Adobe Campaign 的網頁分析工具可將指標和行銷活動屬性轉送至其平台。
 
@@ -208,7 +207,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 1. **[!UICONTROL Advanced]**&#x200B;標籤可讓您設定或修改更多技術設定。
 
    * **[!UICONTROL Lifespan]**：可讓您 (以天為單位) 指定延遲，之後技術工作流程便可在 Adobe Campaign 中復原 Web 事件。預設值：180天。
-   * **[!UICONTROL Persistence]**：可讓您定義所有Web事件（例如購買）可歸因於再次行銷活動的期間，預設值：7天。
+   * **[!UICONTROL Persistence]**：可讓您定義所有網頁事件（例如購買）可歸因於再次行銷活動的期間，預設值：7天。
 
 >[!NOTE]
 >
@@ -227,9 +226,9 @@ Adobe Campaign 和 Adobe Analytics 之間的資料交換由四個技術工作流
 * **[!UICONTROL Identification of converted contacts]**：再次行銷活動後購買的訪客目錄。此工作流程收集的資料可在&#x200B;**[!UICONTROL Re-marketing efficiency]**&#x200B;報搞中存取，請參閱本[頁面](#creating-a-re-marketing-campaign)。
 * **[!UICONTROL Sending of indicators and campaign attributes]**：可讓您使用Adobe Analytics Connector，透過Adobe Campaign將行銷活動指標傳送至Adobe Experience Cloud。 此工作流程每天凌晨 4:00 會觸發，且可能需要 24 小時才會將資料傳送至 Analytics。
 
-   請注意，不應重新啟動此工作流程，否則會重新傳送所有可能扭曲 Analytics 結果的先前資料。
+  請注意，不應重新啟動此工作流程，否則會重新傳送所有可能扭曲 Analytics 結果的先前資料。
 
-   相關指標包括：
+  相關指標包括：
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
    * **[!UICONTROL Processed]** (@processed)
@@ -242,11 +241,11 @@ Adobe Campaign 和 Adobe Analytics 之間的資料交換由四個技術工作流
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
 
-   >[!NOTE]
-   >
-   >傳送的資料是根據上次快照的差值，可能導致量度資料中的負值。
+  >[!NOTE]
+  >
+  >傳送的資料是根據上次快照的差值，可能導致量度資料中的負值。
 
-   傳送的屬性如下：
+  傳送的屬性如下：
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
@@ -256,7 +255,6 @@ Adobe Campaign 和 Adobe Analytics 之間的資料交換由四個技術工作流
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 ## 在 Adobe Campaign 中追蹤傳遞 {#tracking-deliveries-in-adobe-campaign}
 

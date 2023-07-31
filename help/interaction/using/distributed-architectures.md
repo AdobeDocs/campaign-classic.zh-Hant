@@ -2,14 +2,15 @@
 product: campaign
 title: 分佈式架構
 description: 分佈式架構
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -20,20 +21,20 @@ ht-degree: 1%
 
 ## 原則 {#principle}
 
-若要能夠支援擴充性並在傳入頻道上提供全年無休的服務，您可以使用分散式架構的互動。 此型別的架構已與Message Center搭配使用，並且由數個例項組成：
+若要能夠支援擴充能力並在傳入頻道上提供全年無休的服務，您可以使用與分散式架構的互動。 此型別的架構已與Message Center搭配使用，並且由多個例項組成：
 
-* 一或多個專屬於傳出頻道並包含行銷和環境設計基礎的控制例項
+* 專用於傳出頻道並包含行銷和環境設計基礎的一個或多個控制例項
 * 專用於傳入頻道的一或多個執行例項
 
 ![](assets/interaction_powerbooster_schema.png)
 
 >[!NOTE]
 >
->控制例項專用於傳入頻道，並包含目錄的線上版本。 每個執行例項都是獨立的，專屬於一個聯絡人區段（例如，每個國家/地區一個執行例項）。 優惠方案引擎呼叫必須直接在執行上執行（每個執行執行例項一個特定URL）。 由於執行個體之間的同步不是自動的，來自相同連絡人的互動必須透過相同執行個體傳送。
+>控制例項專用於傳入頻道，並包含目錄的線上版本。 每個執行例項都是獨立的，並且專用於一個聯絡區段（例如，每個國家/地區一個執行例項）。 優惠方案引擎呼叫必須直接在執行上執行（每個執行執行例項一個特定URL）。 由於執行個體之間的同步不是自動的，來自相同連絡人的互動必須透過相同執行個體傳送。
 
 ## 主張同步 {#proposition-synchronization}
 
-透過套件執行選件同步。 在執行例項上，所有目錄物件都以外部帳戶名稱為前置詞。 這表示可以在同一個執行例項上支援多個控制例項（例如開發和生產例項）。
+選件同步會透過套件執行。 在執行例項上，所有目錄物件都以外部帳戶名稱為前置詞。 這表示在同一個執行例項上可以支援數個控制例項（例如開發和生產例項）。
 
 >[!IMPORTANT]
 >
@@ -41,29 +42,29 @@ ht-degree: 1%
 
 選件會自動部署，然後發佈在執行和控制執行個體上。
 
-所有線上執行個體都會停用在設計環境中刪除的選件。 在清除期間（在每個執行個體的部署助理中指定）和滑動期間（在傳入主張的型別規則中指定）之後，會在所有執行個體上自動刪除過時的主張和優惠方案。
+所有線上執行個體都會停用在設計環境中刪除的選件。 在清除期間（在每個執行個體的部署助理中指定）和滑動期間（在傳入主張的型別規則中指定）之後，所有執行個體上都會自動刪除過時的主張和優惠方案。
 
 ![](assets/interaction_powerbooster_schema2.png)
 
-系統會為每個環境及外部帳戶建立工作流程，以進行主張同步。 同步頻率可針對每個環境及外部帳戶進行調整。
+系統會為每個環境及外部帳戶建立工作流程，以進行主張同步。 同步頻率可以根據每個環境和外部帳戶進行調整。
 
 ## 限制 {#limitations}
 
-* 如果您從匿名環境使用回覆函式至已識別的環境，這兩個環境必須在同一個執行例項上。
-* 多個執行例項之間的同步不會即時執行。 相同連絡人的互動必須傳送至相同執行個體。 控制例項必須專用於傳出頻道（非即時）。
-* 行銷資料庫不會自動同步。 在執行例項上，權重和適用性規則中使用的行銷資料必須重複。 此程式並非標準流程，您必須在整合期間進行開發。
+* 如果您從匿名環境使用回溯函式至已識別的環境，則這兩個環境必須在同一個執行例項上。
+* 數個執行例項之間的同步不會即時執行。 相同連絡人的互動必須傳送至相同執行個體。 控制例項必須專用於傳出頻道（非即時）。
+* 行銷資料庫不會自動同步。 權重和適用性規則中使用的行銷資料在執行例項上必須重複。 此程式並非標準流程，您必須在整合期間進行開發。
 * 主張同步僅由FDA連線執行。
-* 如果您在相同執行個體上使用Interaction和Message Center，則在這兩種情況下都會透過FDA通訊協定進行同步。
+* 如果您在相同執行個體上使用互動和訊息中心，則在這兩種情況下都將透過FDA通訊協定進行同步。
 
 ## 套件設定 {#packages-configuration}
 
 任何直接連結到的結構描述擴充功能 **互動** （優惠方案、主張、收件者等） 必須在執行例項上部署。
 
-Interaction套件必須安裝在所有執行個體（控制和執行）上。 另外兩個套裝軟體可供使用：一個套裝軟體可安裝在控制執行個體上，另一個套裝軟體可安裝在每個執行個體上。
+Interaction套件必須安裝在所有執行個體（控制和執行）上。 另外兩個套件可供使用：一個套件將安裝在控制執行個體上，另一個將安裝在每個執行個體上。
 
 >[!NOTE]
 >
->安裝套件時， **long** 輸入欄位 **nms：proposition** 如主張ID的表格，變成 **int64** 輸入欄位。 此類資料詳見 [本節](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>安裝套件時， **長** 輸入欄位 **nms：proposition** 如主張ID的表格，變成 **int64** 輸入欄位。 此類資料詳見 [本節](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 必須在每個執行個體上設定資料保留持續時間(透過 **[!UICONTROL Data purge]** 視窗)。 在執行例項上，此期間必須對應於要計算的型別規則（滑動期間）和適用性規則所需的歷史深度。
 
@@ -79,34 +80,35 @@ Interaction套件必須安裝在所有執行個體（控制和執行）上。 �
    * 完成執行例項的連線引數。
    * 每個執行例項都必須連結至ID。 當您按一下 **[!UICONTROL Initialize connection]** 按鈕。
    * 檢查使用的應用程式型別： **[!UICONTROL Message Center]**， **[!UICONTROL Interaction]**，或兩者。
-   * 輸入使用的FDA帳戶。 必須在執行例項上建立運運算元，並且必須在相關例項的資料庫上具有以下讀取和寫入許可權：
+   * 輸入使用的FDA帳戶。 必須在執行例項上建立運運算元，且必須在相關例項的資料庫上擁有下列讀取和寫入許可權：
 
-      ```
-      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
-      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
-      ```
+     ```
+     grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
+     grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
+     ```
+
    >[!NOTE]
    >
-   >執行例項上必須授權控制例項的IP位址。
+   >必須在執行例項上授權控制例項的IP位址。
 
 1. 設定環境：
 
    ![](assets/interaction_powerbooster2.png)
 
-   * 新增執行例項清單。
+   * 新增執行個體清單。
    * 針對每一個專案，指定同步化期間和篩選條件（例如，依國家/地區）。
 
-      >[!NOTE]
-      >
-      >如果發生錯誤，您可以參閱同步工作流程及選件通知。 這些可在應用程式的技術工作流程中找到。
+     >[!NOTE]
+     >
+     >如果發生錯誤，您可以參閱同步工作流程並提供通知。 您可在應用程式的技術工作流程中找到這些內容。
 
-如果基於最佳化原因，在執行例項上僅複製部分行銷資料庫，您可以指定連結至環境的受限制結構描述，以允許使用者僅使用執行例項上可用的資料。 您可以使用執行例項上不可用的資料來建立選件。 若要這麼做，您必須藉由限制傳出頻道上的此規則(**[!UICONTROL Taken into account if]** 欄位)。
+如果基於最佳化理由，只有部分行銷資料庫在執行例項上重複，您可以指定連結至環境的受限制綱要，以允許使用者僅使用執行例項上可用的資料。 您可以使用執行個體上無法取得的資料來建立選件。 若要這麼做，您必須藉由限制傳出頻道上的此規則(**[!UICONTROL Taken into account if]** 欄位)。
 
 ![](assets/ita_filtering.png)
 
 ## 維護選項 {#maintenance-options}
 
-以下是控制執行個體上可用的維護選項清單：
+以下是控制例項上可用的維護選項清單：
 
 >[!IMPORTANT]
 >
@@ -114,9 +116,9 @@ Interaction套件必須安裝在所有執行個體（控制和執行）上。 �
 
 * **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**：環境在指定執行個體上同步的最後日期。
 * **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**：指定結構描述的建議從一個執行個體同步到另一個執行個體的上次日期。
-* **`NmsInteraction_MapWorkflowId`**：包含所有已產生同步工作流程清單的選項。
+* **`NmsInteraction_MapWorkflowId`**：包含所有已產生同步化工作流程清單的選項。
 
-以下選項適用於執行個體：
+以下選項可用於執行例項：
 
 **NmsExecutionInstanceId**：包含例項ID的選項。
 
@@ -128,16 +130,16 @@ Interaction套件必須安裝在所有執行個體（控制和執行）上。 �
 >
 >根據您執行個體中現有主張的量，此操作可能需要一些時間。
 
-* 如果您的執行個體只有少量主張或沒有主張，則不需要手動修改主張表格。 修改將在安裝套件時完成。
-* 如果您的執行個體有很多主張，最好在安裝控制套件並執行它們之前變更主張表結構。 我們建議在低活動期間執行查詢。
+* 如果您的執行個體只有很少的建議或沒有建議，就不需要手動修改建議表格。 修改會在安裝套件時完成。
+* 如果您的執行個體有許多建議，最好在安裝控制套件並執行它們之前變更建議表結構。 我們建議在低活動期間執行查詢。
 
 >[!NOTE]
 >
->如果您在主張表格中執行了特定設定，請相應地調整查詢。
+>如果您在主張表中執行了特定配置，請相應地調整查詢。
 
 ### PostgreSQL {#postgresql}
 
-有兩種方法。 第一個（使用工作表）速度稍快。
+方法有兩種。 第一個（使用工作表）的速度稍快。
 
 **工作表**
 

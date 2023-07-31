@@ -2,16 +2,17 @@
 product: campaign
 title: 無法連線
 description: 無法連線
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 4%
+source-wordcount: '399'
+ht-degree: 6%
 
 ---
 
@@ -19,9 +20,9 @@ ht-degree: 4%
 
 
 
-連線問題的原因可能是多方面的，而且取決於不同的內容。
+連線問題的原因可能是多方面的，且取決於不同的內容。
 
-您可以嘗試下列測試，如果連線失敗持續發生，請連絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+您可以嘗試下列測試，如果連線失敗持續發生，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 
@@ -35,15 +36,15 @@ ht-degree: 4%
 <tbody> 
 <tr> 
 <td>您可從電腦存取網際網路嗎？</td> 
-<td>檢查您是否可以連線至網際網路上的網站（例如）。 如果您無法連線，問題就在於您的電腦。 請連絡您的系統管理員。</td>
+<td>檢查您是否可以連線到網際網路上的網站（例如）。 如果無法連線，問題會發生在您的電腦上。 請連絡您的系統管理員。</td>
 </tr>
 <tr> 
 <td>您可以透過其他服務連線至託管Adobe Campaign的伺服器嗎？</td> 
-<td>透過SSH或任何其他方式連線至伺服器。 如果無法執行此操作，您的主機公司就會發生問題。 請聯絡其系統管理員。</td>
+<td>透過SSH或任何其他方式連線至伺服器。 如果無法執行此操作，表示您的主機公司發生問題。 請聯絡他們的系統管理員。</td>
 </tr>
 <tr> 
-<td>Web伺服器是否回應？</td> 
-<td>使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL： <b>http(s)：// &lt;urlserver&gt;</b>. 如果它沒有回應，電腦上的網頁伺服器就會停止。 請連絡您主機公司的系統管理員，以重新啟動服務。</td>
+<td>Web伺服器會回應嗎？</td> 
+<td>使用網頁瀏覽器連線至Adobe Campaign伺服器存取URL： <b>http(s)：// &lt;urlserver&gt;</b>. 如果它沒有回應，則電腦上的網頁伺服器會停止。 請連絡您主機公司的系統管理員，以重新啟動服務。</td>
 </tr>
 <tr> 
 <td>Adobe Campaign是否已正確整合？</td> 
@@ -52,11 +53,11 @@ ht-degree: 4%
 </tr>
 <tr> 
 <td>連線至下列URL： <b>http(s)：//&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果您收到Tomcat Java錯誤，請檢查JAVA整合是否正確執行。 已整合至檔案[應用程式路徑]/nl6/customer.sh</td>
+<td>如果您收到Tomcat Java錯誤，請檢查JAVA整合是否正確執行。 已整合至檔案[path of application]/nl6/customer.sh</td>
 </tr>
 <tr> 
 <td>連線至下列URL： <b>http(s)：//&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果您取得空白頁面，請檢查Adobe Campaign Web模組是否已啟動。 命令nlserver pdump應傳回DD/MM/YYYY的Adobe Campaign Classic (7.X YY.R建置XXX@SHA1)應用程式伺服器。 如果沒有，請使用命令nlserver start web重新啟動模組</td>
+<td>如果您取得空白頁面，請檢查Adobe Campaign網頁模組是否已啟動。 命令nlserver pdump應傳回DD/MM/YYYY的Adobe Campaign Classic (7.X YY.R建置XXX@SHA1)應用程式伺服器。 如果沒有，請使用命令nlserver start web重新啟動模組</td>
 </tr>
 <tr>
 <td>檢查安全性區域的一般設定。</td>

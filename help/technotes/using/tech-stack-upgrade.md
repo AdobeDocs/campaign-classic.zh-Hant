@@ -2,8 +2,9 @@
 product: campaign
 title: 技術檔案 — Adobe Campaign系統升級
 description: Adobe Campaign系統升級
+feature: Technote, Upgrade
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: d04b672fe2049d83ba17d3d855e1b609e81cf8c9
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 9%
@@ -12,9 +13,9 @@ ht-degree: 9%
 
 # Adobe Campaign 2023環境升級 {#ac-system-upgrade}
 
-Campaign基礎架構仰賴協力廠商系統，且必須定期更新為最新版本和修正。 這些更新是強制性的，以確保服務的連續性並確保Campaign環境安全無虞。 此外，必須升級Campaign，以確保與第三方系統變更相容。
+Campaign基礎架構仰賴協力廠商系統，且必須定期以最新版本和修正更新。 這些更新是強制性的，可確保服務的連續性，並確保Campaign環境的安全不會受到安全風險的影響。 此外，需要升級Campaign，以確保與協力廠商系統變更相容。
 
-As a **託管或受管理的Cloud Services客戶**，Adobe會在您需要這些升級時通知您。 您將需要根據建議升級環境以確保合規。
+作為 **託管或受管理的Cloud Services客戶**，Adobe會在需要這些升級時通知您。 您將需要根據建議升級環境以確保合規性。
 
 作為 **內部部署或混合客戶**，Adobe強烈建議您根據相同行事曆升級系統和Campaign版本。
 
@@ -22,19 +23,20 @@ As a **託管或受管理的Cloud Services客戶**，Adobe會在您需要這些�
 
 >[!NOTE]
 >
->如對這些變更有任何疑問，請聯絡 [Adobe 客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。另請參閱 [建置升級常見問題集](../../platform/using/faq-build-upgrade.md).
+>如對這些變更有任何疑問，請聯絡 [Adobe 客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。另請參閱 [建置升級常見問答集](../../platform/using/faq-build-upgrade.md).
+>
 
 ## Campaign版本編號升級 {#ac-upgrade}
 
 **您有受到影響嗎？**
 
-如果您受到 [作業系統升級](#os-upgrade) 和/或 [資料庫系統升級](#pg-upgrade) 詳細資訊如下，您必須將Campaign環境升級至 [最新7.3.2版本](../../rn/using/latest-release.md#release-7-3-2)，這些系統相容。
+如果您受 [作業系統升級](#os-upgrade) 和/或 [資料庫系統升級](#pg-upgrade) 詳細資訊如下，您必須將您的Campaign環境升級至 [最新的7.3.2版本](../../rn/using/latest-release.md#release-7-3-2)，這些系統相容。
 
 **如何更新？**
 
 * 作為託管或受管理的Cloud Services客戶，Adobe將會聯絡您並升級您的Campaign版本。
 * 作為混合型客戶，Adobe會通知您中間來源環境的已排程組建升級日期。 您也必須將行銷環境升級至相同版本。
-* 作為內部部署客戶，您需要將Campaign環境升級至最新的7.3.2版本編號。
+* 身為內部部署客戶，您需要將Campaign環境升級至最新的7.3.2版本編號。
 
 
 ## 作業系統升級 {#os-upgrade}
@@ -46,7 +48,7 @@ As a **託管或受管理的Cloud Services客戶**，Adobe會在您需要這些�
 **如何更新？**
 
 * 作為託管或受管理的Cloud Services客戶，Adobe將會聯絡您並升級您的環境。
-* 作為混合型客戶，Adobe會通知您中間來源環境的已排程升級日期。 如果您的行銷環境也在Debian上執行，您也必須將其升級為Debian 11。
+* 作為混合型客戶，Adobe會通知您中間來源環境的已排程升級日期。 如果您的行銷環境也在Debian上執行，也必須將其升級至Debian 11。
 * 作為內部部署客戶，您需要將環境升級至Debian 11。
 
 ## 資料庫系統升級 {#pg-upgrade}
@@ -58,7 +60,7 @@ As a **託管或受管理的Cloud Services客戶**，Adobe會在您需要這些�
 **如何更新？**
 
 * 作為託管或受管理的Cloud Services客戶，Adobe將會聯絡您，並將您的資料庫系統從PostgreSQL 11升級至PostgreSQL 14。
-* 作為混合型客戶，如果您的行銷資料庫系統是PostgreSQL，您必須將其升級為PostgreSQL 14。
+* 身為混合型客戶，如果您的行銷資料庫系統是PostgreSQL，您必須將其升級至PostgreSQL 14。
 * 作為內部部署客戶，您需要將資料庫系統升級至PostgreSQL 14。
 
 

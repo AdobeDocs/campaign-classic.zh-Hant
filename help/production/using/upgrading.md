@@ -1,37 +1,37 @@
 ---
 product: campaign
-title: 升級至新組建版本
+title: 升級至新的組建
 description: 瞭解升級至新組建版本的技術步驟
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 3%
+source-wordcount: '1170'
+ht-degree: 4%
 
 ---
 
-# 升級至新組建（內部部署）{#upgrading}
+# 升級至新的組建（內部部署）{#upgrading}
 
 
 
-在開始升級程式之前，請決定並確認要升級至哪個Adobe Campaign版本，並參閱 [發行說明](../../rn/using/latest-release.md) .
+在開始升級程式之前，請先決定並確認要升級至的Adobe Campaign版本，並參閱 [發行說明](../../rn/using/latest-release.md) .
 
 >[!IMPORTANT]
 >
 >* Adobe強烈建議您在更新前先對每個執行個體進行資料庫備份。 如需詳細資訊，請參閱[本區段](../../production/using/backup.md)。
->* 若要執行升級，請確定您具備存取執行個體和記錄檔的能力和許可權。
->* 閱讀 [本節](../../installation/using/general-architecture.md) 和 [版本編號升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 開始前的章節。
+>* 若要執行升級，請確定您有存取執行個體和記錄的能力和許可權。
+>* 讀出 [本節](../../installation/using/general-architecture.md) 和 [組建版本升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 開始前的章節。
 >
-
 
 ## Windows {#in-windows}
 
-在Windows環境中，請依照下列步驟將Adobe Campaign更新至新的版本編號：
+在Windows環境中，請依照下列步驟將Adobe Campaign更新為新組建版本：
 
 * [關閉服務](#shut-down-services)，
 * [升級應用程式伺服器](#upgrade-the-adobe-campaign-server-application)，
@@ -46,11 +46,12 @@ ht-degree: 3%
 
 1. 關閉下列服務：
 
-   * Web服務(IIS)：
+   * 網站服務(IIS)：
 
-      **iisreset /stop**
+     **iisreset /stop**
 
    * Adobe Campaign服務： **網路停止nlserver6**
+
    >[!IMPORTANT]
    >
    >您也必須確定重新導向伺服器(webmdl)已停止，以便 **nlsrvmod.dll** IIS使用的檔案可以用新版本取代。
@@ -90,12 +91,12 @@ ht-degree: 3%
 這可讓您執行下列操作：
 
 * 同步資源
-* 更新結構
+* 更新方案
 * 更新資料庫
 
 >[!NOTE]
 >
->此操作只應執行一次，並且只應在(**nlserver web**)應用程式伺服器。
+>此操作只應執行一次，且僅應在(**nlserver web**)應用程式伺服器。
 
 然後檢查同步是否產生錯誤或警告。 有關詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts).
 
@@ -103,15 +104,15 @@ ht-degree: 3%
 
 要重新啟動的服務包括：
 
-* Web服務(IIS)：
+* 網站服務(IIS)：
 
-   **iisreset /start**
+  **iisreset /start**
 
 * Adobe Campaign服務： **網路啟動nlserver6**
 
 ## Linux {#in-linux}
 
-在Linux環境中，請依照下列步驟將Adobe Campaign更新至新的版本編號：
+在Linux環境中，請依照下列步驟將Adobe Campaign更新為新組建版本：
 
 * [下載更新的套件](#obtain-updated-packages)，
 * [執行更新](#perform-an-update)，
@@ -125,39 +126,39 @@ ht-degree: 3%
 
 ### 取得更新的套件 {#obtain-updated-packages}
 
-首先恢復Adobe Campaign的兩個更新套件：連線到 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者認證。 進一步瞭解中的軟體發佈 [此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant).
+首先恢復Adobe Campaign的兩個更新包：連線到 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者認證。 進一步瞭解中的軟體發佈 [此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant).
 
 檔案為 **nlserver6-v7-XXX.rpm**
 
 ### 執行更新 {#perform-an-update}
 
-* 以RPM為基礎的分發(RedHat、SuSe)
+* 以RPM為基礎的配送(RedHat、SuSe)
 
-   若要安裝，請以root身分執行：
+  若要安裝，請以root身分執行：
 
-   ```
-   $rpm -Uvh nlserver6-v7-XXXX.rpm
-   ```
+  ```
+  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  ```
 
-   其中XXX是檔案的版本。
+  其中XXX是檔案的版本。
 
-   rpm檔案與您可以在CentOS/Red Hat發行版本上找到的套裝程式相依性。 如果您不想使用其中的某些相依性，則可能必須使用rpm的「nodeps」選項：
+  rpm檔案與您可以在CentOS/Red Hat分配上找到的套裝程式相依性。 如果您不想使用其中的部分相依性，則可能必須使用rpm的「nodeps」選項：
 
-   ```
-   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-   ```
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
 
 * DEB型分佈(Debian)
 
-   若要安裝，請以root身分執行：
+  若要安裝，請以root身分執行：
 
-   ```
-   dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
-   ```
+  ```
+  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  ```
 
 >[!NOTE]
 >
->完整的安裝程式詳見 [本節](../../installation/using/installing-campaign-standard-packages.md). 資源會自動同步化，但您需要確定沒有發生錯誤。 有關詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts).
+>完整安裝程式詳載於 [本節](../../installation/using/installing-campaign-standard-packages.md). 資源會自動同步化，但您必須確定沒有發生錯誤。 有關詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts).
 
 ### 重新啟動Web伺服器 {#reboot-the-web-server}
 
@@ -173,10 +174,8 @@ ht-degree: 3%
 >
 >* 您的指令碼可能會被呼叫 **httpd** 而非 **apache**.
 >* 您必須執行此命令，直到獲得下列回覆為止：
-
-   >
-   >   Apache必須執行此操作，才能套用新程式庫。
-
+>
+>   Apache必須執行此作業才能套用新程式庫。
 
 然後重新啟動Apache：
 
@@ -186,33 +185,33 @@ ht-degree: 3%
 
 ## 解決升級衝突 {#resolving-upgrade-conflicts}
 
-在資源同步處理期間， **升級後** 命令可讓您偵測同步化是否產生錯誤或警告。
+在資源同步處理期間， **升級後** 命令可讓您偵測同步處理是否產生錯誤或警告。
 
 ### 檢視同步化結果 {#view-the-synchronization-result}
 
 檢視同步化結果的方式有兩種：
 
-* 在命令列介面中，錯誤會以三個V形符號具體化 **>>>** 和同步會自動停止。 以雙V形符號具體化警告 **>>** 同步完成後，必須解析和。 升級後結束時，命令提示字元中會顯示摘要。 它看起來可能像這樣：
+* 在命令列介面中，錯誤會以三個>形箭號具體化 **>>>** 和同步會自動停止。 以雙>形箭號具體化警告 **>>** 同步完成後，必須解析和。 升級後結束時，命令提示字元中會顯示摘要。 如下所示：
 
-   ```
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
-   ```
+  ```
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  ```
 
-   如果警告與資源衝突有關，則需要使用者注意才能解決。
+  如果警告與資源衝突有關，則需要使用者注意才能解決。
 
-* 此 **postupgrade_`<server version number>_<time of postupgrade>`.log** 記錄檔包含同步化結果。 預設可在以下目錄中取得： **`<installation directory>/var/<instance/postupgrade`**. 錯誤和警告屬性會指出錯誤和警告。
+* 此 **升級後_`<server version number>_<time of postupgrade>`.log** 記錄檔包含同步化結果。 預設可在下列目錄中使用： **`<installation directory>/var/<instance/postupgrade`**. 錯誤和警告屬性會指出錯誤和警告。
 
 ### 解決衝突 {#resolving-conflicts}
 
 若要解決衝突，請套用下列程式：
 
-1. 在Adobe Campaign樹狀結構中，前往 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
-1. 在清單中選取您要解決的衝突。
+1. 在Adobe Campaign樹中，前往 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. 在清單中選取要解決的衝突。
 
 有三種方法可解決衝突：
 
@@ -220,28 +219,28 @@ ht-degree: 3%
 * **[!UICONTROL Accept the new version]** ：如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
 * **[!UICONTROL Keep the current version]** ：表示更新遭拒。
 
-   >[!IMPORTANT]
-   >
-   >如果您選取此解決模式，則可能無法受益於新版本的更正。
+  >[!IMPORTANT]
+  >
+  >如果您選取此解決模式，則可能無法受益於新版本的更正。
 
 如果您選擇手動解決衝突，請按照以下步驟進行：
 
-1. 在視窗的下半部，搜尋 **_衝突_** 字串，用來找出有衝突的實體。 與新版本一起安裝的實體包含 **新** 引數，符合先前版本的實體包含 **cus** 引數。
+1. 在視窗的下半部分，搜尋 **_衝突_** 字串來找出有衝突的實體。 與新版本一起安裝的實體包含 **新** 引數，符合先前版本的實體包含 **cus** 引數。
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. 刪除您不想保留的版本。 刪除 **_conflict_argument_** 要保留之實體的字串。
+1. 刪除您不想要保留的版本。 刪除 **_conflict_argument_** 要保留的實體的字串。
 
    ![](assets/s_ncs_production_conflict003.png)
 
 1. 移至您已解決的衝突。 按一下 **[!UICONTROL Actions]** 圖示並選取 **[!UICONTROL Declare as resolved]** .
-1. 儲存您的變更：衝突現已解決。
+1. 儲存變更：衝突現已解決。
 
 ### 最佳實務 {#best-practices}
 
-更新失敗可能會連結到資料庫設定。 請確定技術管理員和資料庫管理員執行的設定相容。
+更新失敗可能會連結到資料庫設定。 請確定技術管理員和資料庫管理員執行的設定是相容的。
 
-例如，Unicode資料庫不僅必須授權儲存LATIN1資料等。
+例如，Unicode資料庫不僅必須授權儲存LATIN1資料等，
 
 ## 警告使用者端主控台有可用的更新 {#warn-the-client-consoles-of-the-available-update}
 
@@ -267,4 +266,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->請確定Apache使用者擁有此安裝檔案的適當讀取許可權，並參閱 [安裝指南](../../installation/using/general-architecture.md) 以取得詳細資訊。
+>請確定Apache使用者對此安裝檔案具有適當的讀取許可權，並參閱 [安裝指南](../../installation/using/general-architecture.md) 以取得詳細資訊。

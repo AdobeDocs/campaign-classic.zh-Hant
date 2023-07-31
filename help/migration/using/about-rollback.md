@@ -1,22 +1,23 @@
 ---
 product: campaign
-title: 回覆至上一個版本
+title: 復原至上一個版本
 description: 瞭解如何回覆至先前的版本
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: rollback
 hide: true
 hidefromtoc: true
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
 
-# 回覆至上一個版本{#about-rollback}
+# 復原至上一個版本{#about-rollback}
 
 
 
@@ -26,9 +27,9 @@ ht-degree: 0%
 
 以下是從v7還原v6.1的程式。
 
-1. 復原資料庫備份並還原。
-1. 復原 **Adobe Campaign v6.back** 資料夾(**nl6.back** （在Linux中），將其重新命名為 **Adobe Campaign v6** (**nl6** （在Linux中）並將它還原至其原始位置。
-1. 透過重新指派監聽連線埠來重新設定IIS，以便在IIS網站層級重新建立Adobe Campaign v6.1的整合。
+1. 復原資料庫的備份並還原它。
+1. 復原 **Adobe Campaign v6.back** 資料夾(**nl6.back** 在Linux中)，將其重新命名為 **Adobe Campaign v6** (**nl6** （在Linux中）並將它還原至其原始位置。
+1. 透過重新指派監聽連線埠來重新設定IIS，以重新建立IIS網站層級Adobe Campaign v6.1的整合。
 1. 停止Adobe Campaign v7服務。
 1. 重新啟動IIS。
 1. 重新啟動Adobe Campaign v6.1服務。

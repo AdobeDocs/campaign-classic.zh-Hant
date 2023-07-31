@@ -2,16 +2,17 @@
 product: campaign
 title: Campaign Tomcat設定
 description: Campaign Tomcat設定
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 3%
 
 ---
 
@@ -19,17 +20,18 @@ ht-degree: 0%
 
 
 
-Adobe Campaign使用 **稱為Apache Tomcat的內嵌Web servlet** 在應用程式和任何外部介面（包括使用者端主控台、追蹤的URL連結、SOAP呼叫等）之間處理HTTP/HTTPS請求。 在任何面對外部的Adobe Campaign執行個體中，通常有一個外部Web伺服器（通常是IIS或Apache）在這之前。
+Adobe Campaign使用 **稱為Apache Tomcat的內嵌Web servlet** 在應用程式和任何外部介面（包括使用者端主控台、追蹤的URL連結、SOAP呼叫等）之間處理HTTP/HTTPS請求。 在任何面對外部的Adobe Campaign執行個體中，通常有一個外部網頁伺服器（通常是IIS或Apache）位於此伺服器之前。
 
 進一步瞭解Campaign中的Tomcat以及如何在中找到您的Tomcat版本 [此頁面](../../production/using/locate-tomcat-version.md).
 
 >[!NOTE]
 >
 >此程式僅限於 **內部部署** 部署。
+>
 
 ## Apache Tomcat的預設連線埠 {#default-port-for-tomcat}
 
-當Tomcat伺服器的8080接聽連線埠已經忙碌於設定所需的其他應用程式時，您需要使用可用連線埠來取代8080連線埠（例如8090）。 若要變更，請編輯 **server.xml** 檔案已儲存在 **/tomcat-8/conf** Adobe Campaign安裝資料夾的目錄。
+當Tomcat伺服器的8080接聽連線埠已經忙碌於組態所需的其他應用程式時，您需要將8080連線埠取代為可用連線埠（例如8090）。 若要變更，請編輯 **server.xml** 檔案已儲存在 **/tomcat-8/conf** Adobe Campaign安裝資料夾的目錄。
 
 然後修改JSP轉送頁面的連線埠。 若要這麼做，請變更 **serverConf.xml** 檔案已儲存在 **/conf** Adobe Campaign安裝目錄的目錄。
 
@@ -50,11 +52,11 @@ Adobe Campaign使用 **稱為Apache Tomcat的內嵌Web servlet** 在應用程式
  <Context path='/foo' docBase='../customers/foo'   crossContext='true' debug='0' reloadable='true' trusted='false'/>
 ```
 
-如有需要，可在伺服器端重新產生此操作。
+如有必要，可在伺服器端重新產生此操作。
 
 ## 隱藏Tomcat錯誤報告 {#hide-tomcat-error-report}
 
-基於安全考量，強烈建議您隱藏Tomcat錯誤報告。 步驟如下。
+基於安全考量，我們強烈建議您隱藏Tomcat錯誤報告。 步驟如下。
 
 1. 開啟 **server.xml** 檔案位於 **/tomcat-8/conf** Adobe Campaign安裝資料夾的目錄：  `/usr/local/neolane/nl6/tomcat-8/conf`
 1. 在所有現有的前後關聯元素後面新增下列元素：

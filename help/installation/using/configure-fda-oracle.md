@@ -2,14 +2,15 @@
 product: campaign
 title: 設定Oracle的存取權
 description: 瞭解如何在FDA中設定Oracle存取權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
@@ -23,16 +24,16 @@ ht-degree: 1%
 1. 設定Oracle於 [Linux](#oracle-linux) 或 [Windows](#azure-windows)
 1. 設定Oracle [外部帳戶](#oracle-external) 在Campaign中
 
-## Linux上的Oracle {#oracle-linux}
+## 在Linux上的Oracle {#oracle-linux}
 
-若要在FDA中連線至Oracle外部資料庫，需要在Adobe Campaign伺服器上執行下列其他設定。
+在FDA中連線至Oracle外部資料庫時，需要在Adobe Campaign伺服器上設定以下其他設定。
 
 1. 安裝與您的Oracle版本相對應的Oracle完整使用者端。
 1. 將TNS定義新增至安裝。 若要這麼做，請在 **tnsnames.ora** /etc/oracle存放庫中的檔案。 如果此存放庫不存在，請建立它。
 
    然後建立新的TNS_ADMIN環境變數：匯出TNS_ADMIN=/etc/oracle並重新啟動電腦。
 
-1. 將Oracle整合至您的Adobe Campaign伺服器(nlserver)。 若要這麼做，請檢查 **customer.sh** 檔案會顯示在Adobe Campaign伺服器樹狀結構的「nl6」資料夾中，且包含Oracle資料庫的連結。
+1. 將Oracle整合至您的Adobe Campaign伺服器(nlserver)。 若要這麼做，請檢查 **customer.sh** 檔案位於Adobe Campaign伺服器樹狀結構的「nl6」資料夾中，且包含Oracle程式庫的連結。
 
    例如，對於11.2中的使用者端：
 
@@ -44,36 +45,36 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >這些值(尤其是ORACLE_HOME)取決於您的安裝存放庫。 在參考這些值之前，請務必先檢查您的樹狀結構。
+   >這些值(尤其是ORACLE_HOME)取決於您的安裝存放庫。 在參照這些值之前，請務必檢查您的樹狀結構。
 
 1. 安裝Oracle所需的程式庫：
 
    * **libclntsh.so**
 
-      ```
-      cd /usr/lib/oracle/<version>/client<architecture>/lib
-      ln -s libclntsh.so.<version> libclntsh.so
-      ```
+     ```
+     cd /usr/lib/oracle/<version>/client<architecture>/lib
+     ln -s libclntsh.so.<version> libclntsh.so
+     ```
 
    * **libaio1**
 
-      ```
-      aptitude install libaio1
-      or
-      yum install libaio1
-      ```
+     ```
+     aptitude install libaio1
+     or
+     yum install libaio1
+     ```
 
 1. 然後，您可以在Campaign Classic中設定 [!DNL Oracle] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#oracle-external).
 
 ## 在Windows上Oracle {#oracle-windows}
 
-若要在FDA中連線至Oracle外部資料庫，需要在Adobe Campaign伺服器上執行下列其他設定。
+在FDA中連線至Oracle外部資料庫時，需要在Adobe Campaign伺服器上設定以下其他設定。
 
 1. 安裝Oracle使用者端。
 
 1. 在C：Oracle資料夾中，建立 **tnsnames.ora** 包含您的TNS定義的檔案。
 
-1. 以C：Oracle為值新增TNS_ADMIN環境變數，然後重新啟動電腦。
+1. 新增具有C：Oracle作為值的TNS_ADMIN環境變數，並重新啟動電腦。
 
 1. 然後，您可以在Campaign Classic中設定 [!DNL Oracle] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#oracle-external).
 
@@ -98,4 +99,5 @@ ht-degree: 1%
    * **[!UICONTROL Password]**：使用者帳戶密碼
 
    * **[!UICONTROL Time zone]**: 伺服器時區
+
    ![](assets/oracle_config.png)

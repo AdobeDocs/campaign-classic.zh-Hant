@@ -2,16 +2,17 @@
 product: campaign
 title: Campaign Classic資料庫建議
 description: 資料庫建議
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 1%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +20,11 @@ ht-degree: 1%
 
 
 
-資料庫伺服器可以在任何指定的作業系統上執行，無論應用程式伺服器使用的作業系統為何，只要它們之間有網路連線即可。
+資料庫伺服器可在任何指定的作業系統上執行，無論應用程式伺服器使用的作業系統為何，只要它們之間有網路連線即可。
 
-只要可以與Adobe Campaign的不同元件連線，資料庫伺服器的作業系統就並不重要。
+只要與Adobe Campaign不同元件的連線可用，資料庫伺服器的作業系統就並不重要。
 
-同時請檢查 [資料庫存取層](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) 區段。
+另請檢查 [資料庫存取層](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) 區段。
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -43,7 +44,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->不支援具有多位元組字元的欄名稱。
+>不支援含有多位元組字元的欄名稱。
 
 此 **NLS_NCHAR_CHARACTERSET** 和 **NLS_CHARACTERSET** 必須正確設定引數，資料庫才能在Unicode或ANSI中運作。
 
@@ -57,12 +58,12 @@ SELECT * FROM nls_database_parameters ;
 
 * 對於Unicode安裝，支援的編碼為：
 
-   ```
-   NLS_NCHAR_CHARACTERSET         AL16UTF16
-   NLS_CHARACTERSET         AL32UTF8
-   ```
+  ```
+  NLS_NCHAR_CHARACTERSET         AL16UTF16
+  NLS_CHARACTERSET         AL32UTF8
+  ```
 
-* 對於ANSI安裝（非unicode），僅支援下列編碼：
+* 對於ANSI安裝（非Unicode），僅支援下列編碼：
 
 ```
   NLS_CHARACTERSET WE8MSWIN1252
@@ -80,8 +81,8 @@ sqlplus
 
 ## PostgresSQL {#postgressql}
 
-建議您在安裝資料庫引擎時安裝UTF-8支援。 如此一來，您就可以建立Unicode資料庫。
+建議您在安裝資料庫引擎時安裝UTF-8支援。 這樣您就可以建立Unicode資料庫。
 
 **相關主題**
 
-* [Adobe Campaign Classic表格中的Unlogged選項](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Adobe Campaign Classic表格中的取消記錄選項](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

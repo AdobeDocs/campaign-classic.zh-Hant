@@ -2,15 +2,16 @@
 product: campaign
 title: 勾點
 description: 勾點
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 互動中的鉤點可讓您修改 **標準引擎行為**.
 
-此 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 在Adobe Campaign中，於選件空間設定勾點：
+此 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 勾點是在Adobe Campaign的選件空間中設定：
 
 ![](assets/interaction_hooks_1.png)
 
@@ -32,14 +33,14 @@ ht-degree: 1%
 
 此掛接可讓您使用來自外部系統的其他資料擴充連絡人的設定檔（由現成查詢載入）。
 
-收集的資料必須插入呼叫資料節點（互動節點）。 整合器必須事先擴充呼叫資料結構描述，才能定義所收集資料的結構。 使用者存取此資料的方式與存取標準通話資料相同（在適用性規則和個人化層級）。
+收集的資料必須插入呼叫資料節點（互動節點）。 整合器必須預先擴充呼叫資料結構，才能定義所收集資料的結構。 使用者存取此資料的方式，與存取標準通話資料的方式相同（在適用性規則和個人化層級）。
 
 **輸入引數：**
 
 * xmlInteraction （xml型別）：互動節點
 * TargetId （資料表型別）：目標識別碼
 * sUuid230 （字串型別）： uuid230永久cookie的值
-* Nlid （字串型別）： nlid工作階段Cookie的值
+* sNlid （字串型別）： nlid工作階段Cookie的值
 
 **傳回引數：**
 
@@ -47,7 +48,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此 **xmlInteraction** 引數同時包含呼叫資料及由現成可用查詢載入之連絡人的設定檔。
+>此 **xmlInteraction** 引數包含通話資料以及現成查詢所載入之聯絡人的設定檔。
 
 **範例:**
 
@@ -60,39 +61,39 @@ ht-degree: 1%
 
 ## 主張後續處理 {#proposition-post-processing-}
 
-此掛接可讓您檢查指定互動中合格主張的一致性和相容性。 它也可讓您定義新的評分或機率計算功能。
+此勾點可讓您檢查指定互動中合格主張的一致性和相容性。 它也可讓您定義新的評分或機率計算功能。
 
 使用一致性規則的範例：
 
-* 限制在相同呼叫、連結至相同產品或相同類別中的主張數量。
-* 在相同互動中，僅提供與產品相關的優惠方案。
+* 限制相同呼叫、連結至相同產品或相同類別中的主張數量。
+* 僅限在相同互動中與產品相關的簡報優惠方案。
 
-後續處理會在型別規則應用程式和合格的主張排序之後，在優先順序步驟之前執行。
+後續處理會在型別規則應用程式和合格主張排序之後，在優先順序步驟之前執行。
 
 **輸入引數：**
 
-* 主張：合格主張的表格。 以下是此表格中元素的結構範例
+* 主張：合格主張的表格。 以下是此表格中元素結構的範例
 
-   ```
-   { offer_id:1234,
-     weight:2}
-   ```
+  ```
+  { offer_id:1234,
+    weight:2}
+  ```
 
 * dicOffer （xml型別）：合格優惠方案所有屬性的字典（優惠方案代碼、類別id、類別全名、開始日期、結束日期、標籤、內部名稱、優惠方案id、其他優惠方案欄位）。 例如
 
-   ```
-   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
-     "1243": ...}
-   ```
+  ```
+  { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
+    "1243": ...}
+  ```
 
 * xmlTarget （xml型別）：設定檔資料節點
 * xmlInteraction （xml型別）：呼叫資料節點
-* iPropNumber （整數型別）：預期選件的數量
+* iPropNumber （整數型別）：預期選件數目
 
 **傳回引數：**
 
 * 修改的主張清單（鉤點的第一個引數）
-* 修改互動節點
+* 已修改的互動節點
 
 **範例:**
 
@@ -120,20 +121,20 @@ return aReturnedProps;
 
 此掛接可讓您呼叫外部引擎，以選取連結至優惠方案的產品清單。 它是在適用性規則之後、型別規則應用程式之前在優惠方案中設定。
 
-整合商應預先擴充主張 **PropositionRcp** 結構描述以及產品上的其他資訊。 若要指定此資料的儲存位置，請 **[!UICONTROL Proposition being processed]** 連結位於 **[!UICONTROL Storage]** 索引標籤（空格）
+整合員應預先擴充主張 **PropositionRcp** 結構描述以及產品上的其他資訊。 若要指定此資料的儲存位置，請 **[!UICONTROL Proposition being processed]** 連結位於 **[!UICONTROL Storage]** 索引標籤
 
 ![](assets/interaction_hooks_3.png)
 
 **輸入引數：**
 
 * xmlOffer （xml型別）：優惠方案（優惠方案代碼、類別id、類別全名、開始日期、結束日期、標籤、內部名稱、優惠方案id、其他優惠方案欄位）
-* dWeight：內容權數（雙精度型別）
+* dWeight：內容權數（雙型別）
 * xmlTarget （xml型別）：設定檔資料節點
 * xmlInteraction （xml型別）：呼叫資料節點
 
 **傳回引數：**
 
-系統會傳回要產生的主張表格。 此表格中的每一個元素都包含下列資訊：
+將傳回要產生的建議表格。 此表格中的每一個元素都包含下列資訊：
 
 * 優惠識別碼
 * 其他產品資料（例如產品代碼）

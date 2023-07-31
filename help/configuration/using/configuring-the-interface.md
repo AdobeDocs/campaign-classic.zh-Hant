@@ -2,13 +2,14 @@
 product: campaign
 title: 設定介面
 description: 瞭解如何設定Campaign介面
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
@@ -19,32 +20,32 @@ ht-degree: 0%
 若要在Adobe Campaign介面中檢視新收件者表格並與之對話，請套用下列步驟：
 
 * 建立新表單以編輯新收件者表格的內容。
-* 在瀏覽器樹狀結構的資料夾中輸入新型別。
-* 建立新的Web應用程式，以透過Adobe Campaign首頁存取自訂表格。
+* 在總管樹狀結構的資料夾中輸入新型別。
+* 建立新的網站應用程式，以透過Adobe Campaign首頁存取自訂表格。
 
 Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms：recipient)對話。 因此，需要變更此變數。
 
-1. 前往 **[!UICONTROL Administration>Platform>Options]** 檔案總管的節點。
-1. 變更 **Nms_DefaultRcpSchema** 變數，其結構描述名稱符合外部收件者表格（在此案例中為： cus：individual）。
+1. 前往 **[!UICONTROL Administration>Platform>Options]** 瀏覽器節點。
+1. 變更 **Nms_DefaultRcpSchema** 變數，其結構描述名稱符合外部收件者表格（在此案例中為：cus：individual）。
 1. 儲存變更.
 
 ## 建立新表單 {#creating-a-new-form-}
 
-建立新表單可讓您檢視和編輯外部收件者表格的資料。
+建立新表單可讓您檢視及編輯外部收件者表格的資料。
 
 >[!IMPORTANT]
 >
 >表單的名稱必須與其關注的結構描述名稱相同。
 
-1. 前往 **管理>設定>輸入表單** 檔案總管的節點。
+1. 前往 **管理>設定>輸入表單** 瀏覽器節點。
 1. 建立新的 **xtk：form** type **表單** 檔案。
-1. 根據您的表格範本，說明您需要的所有監視和欄位。
+1. 根據您的表格範本，說明您需要的所有監控和欄位。
 
    >[!NOTE]
    >
-   >瞭解更多關於 **表單** 輸入檔案，請參閱 [此頁面](../../configuration/using/identifying-a-form.md).
+   >進一步瞭解 **表單** 輸入檔案，請參閱 [此頁面](../../configuration/using/identifying-a-form.md).
 
-   在我們目前的範例中， **表單** 檔案必須以 **cus：individual** 結構描述，因此具有以下配置：
+   在我們的目前範例中， **表單** 檔案必須以 **cus：individe** 結構描述，因此具有以下配置：
 
    ```
    <container colspan="2">
@@ -65,13 +66,13 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 
 1. 前往 **[!UICONTROL Administration>Configuration>Navigation hierarchies]** 節點。
 1. 建立新的 **xtk：navtree** type **導覽樹** 檔案。
-1. 根據您的表格範本，說明您需要的所有監視和欄位。
+1. 根據您的表格範本，說明您需要的所有監控和欄位。
 
    >[!NOTE]
    >
    >有關詳細資訊 **導覽樹** 輸入檔案，請參閱 [此頁面](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   在目前的範例中， **導覽樹** 檔案必須以 **cus：individual** 結構描述，因此具有以下形式：
+   在目前的範例中， **導覽樹** 檔案必須以 **cus：individe** 結構描述，因此具有以下形式：
 
    ```
     <model name="root">

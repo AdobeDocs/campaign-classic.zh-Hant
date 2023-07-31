@@ -2,13 +2,14 @@
 product: campaign
 title: 安裝伺服器
 description: 安裝伺服器
+feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: b58edd9566d0f3d6aad5d2768706ead66e11e949
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 5%
@@ -33,10 +34,10 @@ Adobe Campaign伺服器的安裝步驟如下：
 
    ![](assets/s_ncs_install_installer_01a.png)
 
-   有多種安裝型別可供使用：
+   有數種安裝型別可供使用：
 
    * **[!UICONTROL Installation of an application server]** ：安裝Adobe Campaign應用程式伺服器和使用者端主控台。
-   * **[!UICONTROL Minimal installation (Network)]** ：從網路安裝使用者端電腦。 如有必要，電腦上只會安裝有限數量的DLL，而其他所有元件都將從網路磁碟機使用。
+   * **[!UICONTROL Minimal installation (Network)]** ：從網路安裝使用者端電腦。 如有必要，電腦上只會安裝有限數量的DLL，而所有其他元件將會從網路磁碟機使用。
    * **[!UICONTROL Installation of a client]** ：安裝Adobe Campaign使用者端所需的元件。
    * **[!UICONTROL Custom installation]** ：使用者選擇要安裝的元素。
 
@@ -56,19 +57,19 @@ Adobe Campaign伺服器的安裝步驟如下：
 
    ![](assets/s_ncs_install_installer_05.png)
 
-   安裝完成後，會出現一則訊息，讓您知道：
+   安裝完成後，系統會顯示訊息，讓您知道：
 
    ![](assets/s_ncs_install_installer_06.png)
 
    >[!NOTE]
    >
-   >伺服器安裝完成後，必須重新啟動伺服器，以避免可能的網路問題。
+   >伺服器安裝完成後，必須重新啟動伺服器以避免可能的網路問題。
 
    安裝完成後，請啟動Adobe Campaign以建立設定檔。 請參閱 [伺服器的首次啟動](#first-start-up-of-the-server).
 
 ## 摘要安裝測試 {#summary-installation-testing}
 
-您可以使用下列命令測試初始安裝：
+您可以使用下列指令來測試初始安裝：
 
 ```
 nlserver pdump
@@ -102,7 +103,7 @@ nlserver web
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-按下 **Ctrl+C** 若要停止此程式，請輸入下列命令：
+按下 **Ctrl+C** 若要停止程式，請輸入下列命令：
 
 ```
 nlserver start web
@@ -137,7 +138,7 @@ nlserver stop web
 
 ## 內部識別碼的密碼 {#password-for-the-internal-identifier}
 
-Adobe Campaign伺服器會定義名為的技術登入 **內部** 擁有所有執行個體的所有權利。 在安裝之後，登入沒有密碼。 必須定義一個。
+Adobe Campaign伺服器會定義名為的技術登入 **內部** 擁有所有執行個體的所有權利。 安裝之後，登入沒有密碼。 必須定義一個。
 
 若要了解詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
@@ -157,9 +158,9 @@ net stop nlserver6
 
 ## 安裝LibreOffice {#installing-libreoffice}
 
-下載LibreOffice並依照一般安裝步驟操作。
+下載LibreOffice並遵循一般安裝步驟。
 
-新增以下環境變數：
+新增下列環境變數：
 
 ```
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"

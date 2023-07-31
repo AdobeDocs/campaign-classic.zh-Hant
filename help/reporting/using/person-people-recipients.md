@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 人員、人員和收件者
-description: 人員、人員和收件者
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+title: 人員、人員與收件者
+description: 人員、人員與收件者
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '715'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 
 
-此範例可協助您瞭解Adobe Campaign中個人與收件者之間的差異。 我們將傳送傳遞給幾個人，以強調人和收件者之間的差異，同時詳細說明以下指標的計算方法：
+此範例可幫助您瞭解Adobe Campaign中個人與收件者之間的差異。 我們會將傳送內容傳送給數人，以強調使用者與收件者之間的差異，同時詳細說明下列指標的計算方法：
 
 * **[!UICONTROL Clicks]**
 * **[!UICONTROL Distinct clicks for the population reached]**
@@ -29,20 +29,20 @@ ht-degree: 9%
 >
 >這些指標用於 **[!UICONTROL Tracking indicators]** 報告。 有關詳細資訊，請參閱 [追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-傳遞會新增3個連結。 會傳送給4位收件者：
+傳遞中會新增三個連結。 會傳送給4位收件者：
 
 ![](assets/s_ncs_user_indicators_example_1.png)
 
 * **[!UICONTROL John Davis]** ：此收件者未開啟電子郵件（因此不會按一下任何連結）。
 * **[!UICONTROL Marie Stuart]** ：開啟電子郵件但不點按任何連結。
-* **[!UICONTROL Florian David]** ：開啟電子郵件並按一下連結9次。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
-* **[!UICONTROL Henry Macdonald]** ：此收件者已將其網際網路瀏覽器設定為拒絕Cookie。 他開啟電子郵件並按一下連結4次。
+* **[!UICONTROL Florian David]** ：開啟電子郵件並按一下9次連結。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
+* **[!UICONTROL Henry Macdonald]** ：此收件者已將其網際網路瀏覽器設定為拒絕Cookie。 他開啟電子郵件並按一下4次連結。
 
-會傳回下列追蹤記錄：
+系統會傳回下列追蹤記錄：
 
 ![](assets/s_ncs_user_indicators_example_2.png)
 
-為了更清楚瞭解計算人員和收件者的方式，我們將分析每個設定檔的記錄。
+為了更清楚瞭解人員和收件者的計算方式，我們將分析每個設定檔的記錄。
 
 ## 步驟1：John {#step-1--john}
 
@@ -50,18 +50,18 @@ ht-degree: 9%
 
 ![](assets/s_ncs_user_indicators_example_8.png)
 
-由於John既未開啟也未點按電子郵件，因此未出現在記錄中。
+由於John既未開啟也未點按電子郵件，因此未出現在紀錄中。
 
-**中繼計算：**
+**中間計算：**
 
-|  | 已點擊的收件者 | 已點擊的人 | 已開啟的收件者 |
+|   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
 | John | - | - | - |
-| 中繼總計 | 0 | 0 | 0 |
+| 中間總計 | 0 | 0 | 0 |
 
 ## 步驟2：瑪麗 {#step-2--marie}
 
-**[!UICONTROL Marie Stuart]** 會開啟電子郵件，但不點按任何連結。
+**[!UICONTROL Marie Stuart]** 會開啟電子郵件，但不會按一下任何連結。
 
 ![](assets/s_ncs_user_indicators_example_7.png)
 
@@ -71,38 +71,38 @@ Marie的開啟會顯示在下列記錄中：
 
 開啟已指派給收件者：Marie。 因此，Adobe Campaign會將新收件者新增至該計數。
 
-**中繼計算：**
+**中間計算：**
 
-|  | 已點擊的收件者 | 已點擊的人 | 已開啟的收件者 |
+|   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
 | John | - | - | - |
 | 瑪麗 | - | - | +1 |
-| 中繼總計 | 0 | 0 | 1 |
+| 中間總計 | 0 | 0 | 1 |
 
 ## 步驟3：弗洛里安 {#step-3--florian}
 
-**[!UICONTROL Florian David]** 開啟電子郵件並按一下連結9次。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
+**[!UICONTROL Florian David]** 開啟電子郵件並按一下9次連結。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
 
 ![](assets/s_ncs_user_indicators_example_9.png)
 
-Florian的動作（一次開啟和9次點按）會顯示在下列記錄中：
+Florian的動作（一次開啟和9次點按）會出現在下列記錄中：
 
 ![](assets/s_ncs_user_indicators_example_3bis.png)
 
-**收件者**：開啟和點按會指派給相同的收件者(Florian)。 由於此收件者與上一個收件者(Marie)不同，因此Adobe Campaign會將新收件者新增至計數。
+**收件者**：開啟和點按會被指派給相同的收件者(Florian)。 由於此收件者與先前的收件者(Marie)不同，因此Adobe Campaign會將新收件者新增至該計數。
 
-人員：由於此收件者的瀏覽器接受Cookie，因此我們可以看到相同的識別碼(UUID)已指派給所有點按記錄： **`fe37a503 [...]`**. Adobe Campaign可正確識別這些點按為屬於同一個人。 計數中會新增一個人員。
+人員：由於此收件者的瀏覽器接受Cookie，因此我們可以看到相同的識別碼(UUID)已指派給所有點按記錄： **`fe37a503 [...]`**. Adobe Campaign可正確識別這些點按屬於同一人。 新人員已新增至計數。
 
-**中繼計算：**
+**中間計算：**
 
-|  | 已點擊的收件者 | 已點擊的人 | 已開啟的收件者 |
+|   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
 | John | - | - | - |
 | 瑪麗 | - | - | +1 |
 | 弗洛里安 | +1 | +1 | +1 |
-| 中繼總計 | 1 | 1 | 2 |
+| 中間總計 | 1 | 1 | 2 |
 
-以下記錄與Florian轉寄電子郵件給之人的開啟和兩次點按相符：
+以下記錄與Florian轉寄電子郵件給之人員的開啟和兩次點按相符：
 
 ![](assets/s_ncs_user_indicators_example_6bis.png)
 
@@ -114,19 +114,19 @@ Florian的動作（一次開啟和9次點按）會顯示在下列記錄中：
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
-**中繼計算：**
+**中間計算：**
 
-|  | 已點擊的收件者 | 已點擊的人 | 已開啟的收件者 |
+|   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
 | John | - | - | - |
 | 瑪麗 | - | - | +1 |
 | 弗洛里安 | +1 | +1 | +1 |
 | 不明人員 | - | +1 | - |
-| 中繼總計 | 1 | 2 | 2 |
+| 中間總計 | 1 | 2 | 2 |
 
 ## 步驟4：Henry {#step-4--henry}
 
-**[!UICONTROL Henry Macdonald]** 已將他的網際網路瀏覽器設定為拒絕Cookie。 他開啟電子郵件並按一下連結4次。
+**[!UICONTROL Henry Macdonald]** 已將他的網際網路瀏覽器設定為拒絕Cookie。 他開啟電子郵件並按一下4次連結。
 
 ![](assets/s_ncs_user_indicators_example_10.png)
 
@@ -134,20 +134,20 @@ Henry所執行的開啟和4點按會出現在以下記錄中：
 
 ![](assets/s_ncs_user_indicators_example_5bis.png)
 
-**收件者**：將開啟和點按指派給相同的收件者(Henry)。 由於此收件者尚未被計數，因此Adobe Campaign會將收件者新增至計數。
+**收件者**：將開啟和點按指派給相同的收件者(Henry)。 由於此收件者尚未計算，因此Adobe Campaign會將收件者新增至該計數。
 
-**人員**：由於Henry的瀏覽器不接受Cookie，因此每次點按都會產生新的識別碼(UUID)。 這4次點按的每一次都會解譯為來自不同人員。 由於尚未計算這些識別碼，因此會將其新增到計數中。
+**人員**：由於Henry的瀏覽器不接受Cookie，因此每次點按都會產生新的識別碼(UUID)。 這4個點按的每一個都會解譯為來自不同人員。 由於這些識別碼尚未計數，已新增至計數。
 
-**中繼計算：**
+**中間計算：**
 
-|  | 已點擊的收件者 | 已點擊的人 | 已開啟的收件者 |
+|   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
 | John | - | - | - |
 | 瑪麗 | - | - | +1 |
 | 弗洛里安 | +1 | +1 | +1 |
 | 不明人員 | - | +1 | - |
 | Henry | +1 | +4 | +1 |
-| 中繼總計 | 2 | 6 | 3 |
+| 中間總計 | 2 | 6 | 3 |
 
 ## 摘要 {#summary}
 
@@ -155,7 +155,7 @@ Henry所執行的開啟和4點按會出現在以下記錄中：
 
 ![](assets/s_ncs_user_indicators_example.png)
 
-* **[!UICONTROL Clicks]** （點選的收件者）：2
+* **[!UICONTROL Clicks]** （已點按的收件者）：2
 * **[!UICONTROL Distinct clicks for the population reached]** （按一下的人員）：6
 * **[!UICONTROL Distinct opens for the population reached]** （已開啟的收件者）：3
 
@@ -170,7 +170,6 @@ Henry所執行的開啟和4點按會出現在以下記錄中：
 >
 >在下列公式中：
 >
->* 表示 **[!UICONTROL Clicks]** 指標（點選的收件者）。
+>* 表示 **[!UICONTROL Clicks]** 指標（已點按的收件者）。
 >* B代表 **[!UICONTROL Distinct clicks for the population reached]** 指標（按一下的人員）。
 >* C代表 **[!UICONTROL Distinct opens for the population reached]** 指標（已開啟的收件者）。
-

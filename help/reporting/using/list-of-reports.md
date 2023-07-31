@@ -2,12 +2,12 @@
 product: campaign
 title: 報告清單
 description: 報告清單
-badge: label="v7" type="資訊性" tooltip="僅適用於Campaign Classicv7"
-feature: Reporting
+badge: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1014'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 使用者活動(recipientActivity)<br /> </td> 
-   <td> 依時段劃分的開啟、點按和交易。<br /> </td> 
+   <td> 依時段劃分開啟、點按及交易。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -41,22 +41,22 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 失敗和退回（錯誤）<br /> </td> 
-   <td> 依原因和網域區分的跳出和無法傳遞。<br /> </td> 
+   <td> 依原因和網域區分的跳出和無法傳遞專案。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 追蹤指標(deliveryFeedback)<br /> </td> 
-   <td> 追蹤收件者行為的關鍵指標摘要。<br /> </td> 
+   <td> 追蹤收件者行為之關鍵指標的摘要。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 追蹤指標(mobileAppDeliveryFeedback)<br /> </td> 
-   <td> 追蹤傳送至行動應用程式的指標。<br /> </td> 
+   <td> 追蹤傳遞至行動應用程式的指標。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 瀏覽器(browserStatistics)<br /> </td> 
-   <td> 收件者點選訊息時所使用瀏覽器的統計資料。<br /> </td> 
+   <td> 收件者點選訊息後所使用瀏覽器的統計資料。<br /> </td> 
    <td> xtk：none<br /> </td> 
   </tr> 
   <tr> 
@@ -86,12 +86,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 追蹤統計資料(trackingStatistics)<br /> </td> 
-   <td> 開啟、按一下與交易費率報表。<br /> </td> 
+   <td> 開啟、按一下並產生交易匯率報表。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳遞摘要(deliverySending)<br /> </td> 
-   <td> 傳遞指標摘要：目標、排除專案和傳送的訊息。<br /> </td> 
+   <td> 傳遞指標摘要：目標、排除專案及傳送的訊息。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -119,7 +119,7 @@ ht-degree: 2%
 
 ## 行銷活動報表 {#reports-on-campaigns}
 
-行銷活動的報告涉及 **nms：operation** 表格。
+行銷活動的報表涉及 **nms：operation** 表格。
 
 下表提供Adobe Campaign提供的內建報表。
 
@@ -133,19 +133,19 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 使用者活動(operationRecipientActivity)<br /> </td> 
-   <td> 依時段劃分的開啟、點按和交易，視促銷活動而定。<br /> </td> 
+   <td> 依期間劃分的開啟、點按及交易，視促銷活動而定。<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳遞輸送量(operationThroughput)<br /> </td> 
-   <td> 以郵件/小時和Mbits/s顯示的傳遞輸送量圖表取決於Campaign。<br /> </td> 
+   <td> 以郵件/小時和Mbits/s表示的傳遞輸送量圖表取決於Campaign。<br /> </td> 
   </tr> 
   <tr> 
    <td> 行銷活動費用(budgetOperationExpenses)<br /> </td> 
-   <td> 根據行銷活動，詳細顯示行銷活動條列專案。<br /> </td> 
+   <td> 根據Campaign，顯示詳細的行銷活動條列專案。<br /> </td> 
   </tr> 
   <tr> 
    <td> 失敗和退回(operationErrors)<br /> </td> 
-   <td> 依原因和網域區分的跳出和無法傳遞專案，取決於Campaign。<br /> </td> 
+   <td> 依原因和網域區分的跳出和無法傳遞專案，視促銷活動而定。<br /> </td> 
   </tr> 
   <tr> 
    <td> 探索成本行(budgetExplorerOperation)<br /> </td> 
@@ -153,7 +153,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 追蹤指標(operationFeedback)<br /> </td> 
-   <td> 主要追蹤指標概要：開啟、點按及交易視促銷活動而定。<br /> </td> 
+   <td> 關鍵追蹤指標概要：開啟、點按及交易視促銷活動而定。<br /> </td> 
   </tr> 
   <tr> 
    <td> 分享至社交網路(operationForward)<br /> </td> 
@@ -161,19 +161,19 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 假設報告(operationHypothesis)<br /> </td> 
-   <td> 根據Campaign顯示行銷活動傳遞的假設測量摘要。<br /> </td> 
+   <td> 顯示行銷活動傳遞的假設測量摘要（視行銷活動而定）。<br /> </td> 
   </tr> 
   <tr> 
    <td> 共用活動統計資料(forwardActivityOpt)<br /> </td> 
-   <td> 根據Campaign分析每個時段共用活動、開啟次數和訂閱。<br /> </td> 
+   <td> 根據Campaign分析每個時段的共用活動、開啟和訂閱。<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳遞摘要(operationStatistics)<br /> </td> 
-   <td> 行銷活動傳送的摘要圖表：傳送的目標、排除專案和訊息。<br /> </td> 
+   <td> 行銷活動傳遞的摘要圖表：目標、排除專案及傳送的訊息。<br /> </td> 
   </tr> 
   <tr> 
    <td> URL和點按輸送量(operationTopUrlDelivery)<br /> </td> 
-   <td> 大多數的被動URL和相關聯的點按資料流取決於Campaign。<br /> </td> 
+   <td> 大部分的反應URL和相關聯的點按資料流取決於Campaign。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,7 +194,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 粉絲贏取(socialAcquisitionsByWebapp)<br /> </td> 
-   <td> 哪些Web應用程式啟用了潛在客戶贏取？ 取決於社交行銷附加元件。<br /> </td> 
+   <td> 哪些Web應用程式促成潛在客戶贏取？ 取決於Social行銷附加元件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 訂閱劃分(mobileAppDistribution)<br /> </td> 
@@ -202,15 +202,15 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 訂閱追蹤(subscriptionsProgress)<br /> </td> 
-   <td> 資訊服務訂閱的演化<br /> </td> 
+   <td> 資訊服務訂閱的發展<br /> </td> 
   </tr> 
   <tr> 
    <td> 反應率(socialReactionRate)<br /> </td> 
-   <td> 最新傳送的反應率是多少？ 取決於社交行銷附加元件。<br /> </td> 
+   <td> 最新傳送的反應率為何？ 取決於Social行銷附加元件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 反應率(mobileAppReactivityRate)<br /> </td> 
-   <td> 最新傳送的反應率取決於行動應用程式頻道附加元件。<br /> </td> 
+   <td> 最新傳遞的反應率取決於行動應用程式頻道附加元件。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -235,12 +235,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 預算演變(budgetEvolution)<br /> </td> 
-   <td> 預算成本的演變（依承諾水準）。<br /> </td> 
+   <td> 依據承諾層次的預算成本演變。<br /> </td> 
    <td> nms：budget<br /> </td> 
   </tr> 
   <tr> 
    <td> 預算的累積演變(budgetCumulativeEvolution)<br /> </td> 
-   <td> 依承諾劃分的累計預算成本的演變<br /> 時間層級。 </td> 
+   <td> 依命令劃分的累計預算成本的演變<br /> 時間層級。 </td> 
    <td> nms：budget<br /> </td> 
   </tr> 
   <tr> 
@@ -286,20 +286,20 @@ ht-degree: 2%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 模擬排除的詳細資訊(dlvSimuLossDetail)<br /> </td> 
+   <td> 模擬排除的詳細資料(dlvSimuLossDetail)<br /> </td> 
    <td> 排除所有原因的詳細表格。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依排名劃分的優惠方案(offerSimulationRanking)<br /> </td> 
+   <td> 依等級(offerSimulationRanking)劃分優惠方案<br /> </td> 
    <td> 依排名劃分模擬中的優惠方案。<br /> </td> 
   </tr> 
   <tr> 
    <td> 模擬摘要(dlvSimuLossSummary)<br /> </td> 
-   <td> 模擬體積和排除專案的摘要。<br /> </td> 
+   <td> 模擬磁碟區和排除專案的摘要。<br /> </td> 
   </tr> 
   <tr> 
    <td> 重疊統計資料(dlvSimuOverlaying)<br /> </td> 
-   <td> 傳遞目標重疊量。<br /> </td> 
+   <td> 傳遞目標重疊磁碟區。<br /> </td> 
   </tr> 
   <tr> 
    <td> 模擬排除的摘要(dlvSimuLossSimu)<br /> </td> 
@@ -324,7 +324,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 檔案（調查字典）<br /> </td> 
-   <td> 調查結構的說明，取決於「調查管理員」附加元件。<br /> </td> 
+   <td> 調查結構的說明，取決於Survey Manager附加元件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 主要(surveyProperties)<br /> </td> 
@@ -332,14 +332,14 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 回覆的劃分(surveyDistribution)<br /> </td> 
-   <td> 問題回覆的劃分。<br /> </td> 
+   <td> 問題的回覆劃分。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 其他ootb報告 {#other-ootb-reports}
 
-下列報告為內建報告。 如需詳細資訊，請參閱相關功能檔案。
+以下為內建報表。 如需詳細資訊，請參閱檔案，瞭解其相關的功能。
 
 <table> 
  <tbody> 
@@ -349,8 +349,8 @@ ht-degree: 2%
    <td> <strong>結構描述</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 優惠方案分析(offerAnalysis)<br /> </td> 
-   <td> 依日期和管道的優惠方案分析，取決於互動附加元件。<br /> </td> 
+   <td> 優惠分析(offerAnalysis)<br /> </td> 
+   <td> 每個日期和管道的優惠方案分析，取決於互動附加元件。<br /> </td> 
    <td> nms：offer<br /> </td> 
   </tr> 
   <tr> 
@@ -359,7 +359,7 @@ ht-degree: 2%
    <td> nms：webEvent<br /> </td> 
   </tr> 
   <tr> 
-   <td> Social潛在客戶贏取記錄(socialVisitorStatistics)<br /> </td> 
+   <td> 社交潛在客戶贏取的歷史記錄(socialVisitorStatistics)<br /> </td> 
    <td> twitter和Facebook潛在客戶收購的歷史記錄，取決於社交行銷附加元件。<br /> </td> 
    <td> nms：visitor<br /> </td> 
   </tr> 

@@ -2,15 +2,16 @@
 product: campaign
 title: 設定URL許可權
 description: 瞭解如何設定URL許可權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '362'
 ht-degree: 29%
 
 ---
@@ -27,18 +28,19 @@ ht-degree: 29%
 >
 >此程式僅限於 **內部部署** 部署。
 >
->As a **託管** 客戶，如果您能存取 [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，您可以使用URL許可權自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+>作為 **託管** 客戶，如果您可存取 [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，您可以使用URL許可權自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
 >
 >其他 **混合/託管** 客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
+>
 
-對象 **混合式** 和 **內部部署** 部署，管理員需要參考新的 **urlPermission** 在 **serverConf.xml** 檔案。
+的 **混合式** 和 **內部部署** 部署，管理員需要參考新的 **urlPermission** 在 **serverConf.xml** 檔案。
 
 
-提供三種連線保護模式：
+有三種連線保護模式可供使用：
 
-* **封鎖**：所有不屬於允許清單的URL都會遭到封鎖，並出現錯誤訊息。 這是升級後預設的模式。
-* **許可性**：允許不屬於允許清單的所有URL。
-* **警告**：允許所有不屬於允許清單的URL，但JS解譯器會發出警告，以便管理員可以收集。 此模式會新增JST-310027警告訊息。
+* **封鎖**：所有不屬於允許清單的URL都會遭到封鎖，並顯示錯誤訊息。 這是升級後使用的預設模式。
+* **許可**：允許所有不屬於允許清單的URL。
+* **警告**：允許所有不屬於允許清單的URL，但JS解譯器會發出警告，讓管理員可以收集。 此模式會新增JST-310027警告訊息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -50,9 +52,9 @@ ht-degree: 29%
 
 >[!IMPORTANT]
 >
->依預設，新實作會使用 **封鎖** 模式。
+>根據預設，新的實作會使用 **封鎖** 模式。
 >
->由於現有客戶來自移轉，因此您可暫時使用 **警告** 模式。 在允許URL之前分析傳出流量。 定義允許的URL清單後，您可以將URL新增至允許清單並啟動 **封鎖** 模式。
+>作為來自移轉的現有客戶，您可以暫時使用 **警告** 模式。 在允許URL之前分析傳出流量。 一旦定義了允許的URL清單，您就可以將URL新增到允許清單並啟動 **封鎖** 模式。
 
 如需詳細資訊，請參閱下列章節：
 

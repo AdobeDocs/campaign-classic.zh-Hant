@@ -2,16 +2,17 @@
 product: campaign
 title: 教學課程
 description: 教學課程
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 69%
+source-wordcount: '376'
+ht-degree: 68%
 
 ---
 
@@ -40,7 +41,7 @@ ht-degree: 69%
 
 ## 自助式 {#how-to-videos}
 
-除了產品檔案之外，您也可以存取下列Campaign自助資源。
+除了產品檔案之外，您也可以存取下列的Campaign自助資源。
 
 ### 教學課程影片
 
@@ -52,4 +53,4 @@ ht-degree: 69%
 
 ### Experience League課程
 
-您也可以造訪 [建議課程](https://experienceleague.adobe.com/#dashboard/learning) Adobe Campaign Classic：課程是專業策劃的課程集合，可快速協助您獲得技能和知識。
+您也可以造訪 [建議的課程](https://experienceleague.adobe.com/#dashboard/learning) Adobe Campaign Classic：課程是專業策劃的課程集合，可快速協助您取得技能和知識。

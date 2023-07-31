@@ -2,14 +2,14 @@
 product: campaign
 title: 開始使用CampaignHTML編輯器
 description: 開始使用Campaign DCE
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+feature: Web Apps, Web Forms, Landing Pages, Email Design
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 0%
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 此 **數位內容編輯器(DCE)** 是一種HTML內容編輯器，可讓您在Adobe Campaign中輕鬆建立HTML格式的內容和範本。
 
-使用數位內容編輯器，您可以插入和格式化頁面元素，並將資料庫欄位與HTML頁面的元素對應。 建立Web應用程式的頁面，或根據DCE範本建立傳遞時，可使用此編輯器。
+使用數位內容編輯器，您可以插入並格式化頁面元素，並將資料庫欄位與HTML頁面的元素對應。 為Web應用程式建立頁面，或根據DCE範本建立傳遞時，可使用此編輯器。
 
 >[!NOTE]
 >
@@ -39,14 +39,14 @@ ht-degree: 0%
 
 建立簡單的 **網頁應用程式**，您需要：
 
-1. 建立網頁應用程式 —  [瞭解更多](creating-a-landing-page.md)
+1. 建立網站應用程式 —  [瞭解更多](creating-a-landing-page.md)
 1. 選取現有內容或從標準範本建立內容 —  [瞭解更多](template-management.md)
 1. 編輯和設定內容 —  [瞭解更多](editing-content.md)
 1. 發佈網頁應用程式 —  [瞭解更多](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->網頁應用程式內容中的完整實作範例可在以下網址取得：  [本節](creating-a-landing-page.md).
+>網頁應用程式內容中的完整實作範例可在以下取得：  [本節](creating-a-landing-page.md).
 
 若要建立 **電子郵件傳遞**，您需要：
 

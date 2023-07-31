@@ -2,15 +2,16 @@
 product: campaign
 title: 更新資料
 description: 更新資料
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 86%
+source-wordcount: '712'
+ht-degree: 85%
 
 ---
 
@@ -119,9 +120,9 @@ ht-degree: 86%
 
 使用視窗的上方區域可監視執行程序。使用 **[!UICONTROL Stop]** 按鈕可停止程序。不過，已處理之收件者將訂閱服務。
 
-如果您取消勾選 **[!UICONTROL Do not keep a trace of this job in the database]** 選項，您可以選取（或建立）執行資料夾，此程式上的資訊將儲存於此處。
+如果您取消核取 **[!UICONTROL Do not keep a trace of this job in the database]** 選項，您可以選取（或建立）執行資料夾，此程式上的資訊將儲存於此資料夾。
 
-若要檢查程式，請前往 **[!UICONTROL Subscriptions]** 索引標籤上的此作業相關收件者的設定檔，或 **[!UICONTROL Subscriptions]** 索引標籤是透過 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 節點。
+若要檢查程式，請移至 **[!UICONTROL Subscriptions]** 索引標籤上的收件者設定檔，或 **[!UICONTROL Subscriptions]** 索引標籤是透過 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 節點。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

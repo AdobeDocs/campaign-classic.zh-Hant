@@ -2,11 +2,12 @@
 product: campaign
 title: 資料庫對應
 description: 資料庫對應
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -38,33 +39,33 @@ ht-degree: 0%
 
 結構描述的根元素已不存在 **`<srcschema>`**，但 **`<schema>`**.
 
-這會將我們帶到另一種型別的檔案，它會自動從來源結構描述產生，簡稱為結構描述。 Adobe Campaign應用程式將使用此結構描述。
+這會將我們帶到另一種型別的檔案，該檔案是從來源結構描述自動產生的，簡稱為結構描述。 Adobe Campaign應用程式將使用此結構描述。
 
-SQL名稱會根據元素名稱和型別自動決定。
+SQL名稱是根據元素名稱和型別自動決定的。
 
 SQL命名規則如下：
 
-* 表格：綱要名稱空間和名稱的串連
+* 表格：串連綱要名稱空間和名稱
 
-   在我們的範例中，表格的名稱是透過 **sqltable** 屬性：
+  在我們的範例中，表格的名稱是透過以下結構描述的主要元素輸入： **sqltable** 屬性：
 
-   ```
-   <element name="recipient" sqltable="CusRecipient">
-   ```
+  ```
+  <element name="recipient" sqltable="CusRecipient">
+  ```
 
 * 欄位：前面有根據型別定義之前置詞的元素名稱（&#39;i&#39;代表整數，&#39;d&#39;代表雙精度浮點數，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等）
 
-   欄位名稱是透過 **sqlname** 每個型別化的屬性 **`<attribute>`** 和 **`<element>`**：
+  欄位名稱是透過 **sqlname** 每個型別的屬性 **`<attribute>`** 和 **`<element>`**：
 
-   ```
-   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-   ```
+  ```
+  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+  ```
 
 >[!NOTE]
 >
 >可以從來源結構描述多載SQL名稱。 若要這麼做，請在相關元素上填入「sqltable」或「sqlname」屬性。
 
-用來建立從擴充型綱要產生之表格的SQL命令檔如下：
+用來建立從擴充綱要產生之表格的SQL命令檔如下：
 
 ```
 CREATE TABLE CusRecipient(
@@ -81,27 +82,27 @@ SQL欄位限制如下：
 
 ## XML欄位 {#xml-fields}
 
-依預設，任何鍵入的 **`<attribute>`** 和 **`<element>`** 元素對應至資料結構描述表格的SQL欄位。 不過，您可以以XML格式來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格的備忘欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
+依預設，任何輸入的 **`<attribute>`** 和 **`<element>`** 元素對應至資料結構描述表格的SQL欄位。 不過，您可以用XML來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格之備忘錄欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
 
-若要以XML填入欄位，您必須新增 **xml** 有關元素的值為「true」的屬性。
+若要以XML填入欄位，您必須新增 **xml** 對相關元素具有「true」值的屬性。
 
 **範例**：以下是兩個XML欄位使用範例。
 
 * 多行註解欄位：
 
-   ```
-   <element name="comment" xml="true" type="memo" label="Comment"/>
-   ```
+  ```
+  <element name="comment" xml="true" type="memo" label="Comment"/>
+  ```
 
 * HTML格式的資料說明：
 
-   ```
-   <element name="description" xml="true" type="html" label="Description"/>
-   ```
+  ```
+  <element name="description" xml="true" type="html" label="Description"/>
+  ```
 
-   「html」型別可讓您將HTML內容儲存在CDATA標籤中，並在Adobe Campaign使用者端介面中顯示特殊的HTML編輯檢查。
+  「html」型別可讓您將HTML內容儲存在CDATA標籤中，並在Adobe Campaign使用者端介面中顯示特殊的HTML編輯檢查。
 
-使用XML欄位可讓您新增欄位，而不需要修改資料庫的實體結構。 另一個優點是，您使用的資源較少（分配給SQL欄位的大小、每個表格的欄位數限制等）。
+使用XML欄位可讓您新增欄位，而不需要修改資料庫的實體結構。 另一個優點是，您使用的資源較少（配置給SQL欄位的大小、限制每個表格的欄位數等）。
 
 主要缺點是無法索引或篩選XML欄位。
 
@@ -121,8 +122,8 @@ SQL欄位限制如下：
 
 索引遵循下列規則：
 
-* 索引可以參照表格中的一或多個欄位。
-* 如果符合以下條件，則索引在所有欄位中可以是唯一的（以避免重複） **獨特** 屬性包含「true」值。
+* 索引可以參考表格中的一或多個欄位。
+* 如果符合下列條件，則索引在所有欄位中可以是唯一的（以避免重複） **獨特** 屬性包含「true」值。
 * 索引的SQL名稱是由表格的SQL名稱和索引的名稱所決定。
 
 >[!NOTE]
@@ -131,46 +132,46 @@ SQL欄位限制如下：
 
 >[!NOTE]
 >
->在表格對應期間（標準或FDA）會自動建立索引。
+>索引是在表格對應期間自動建立（標準或FDA）。
 
 **範例**:
 
 * 新增索引至電子郵件地址和城市：
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <dbindex name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </dbindex>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <dbindex name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </dbindex>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
-* 將唯一索引新增至「id」名稱欄位：
+* 新增唯一索引至「id」名稱欄位：
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <dbindex name="id" unique="true">
-         <keyfield xpath="@id"/> 
-       </dbindex>
-   
-       <dbindex name="email">
-         <keyfield xpath="@email"/> 
-       </dbindex>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <dbindex name="id" unique="true">
+        <keyfield xpath="@id"/> 
+      </dbindex>
+  
+      <dbindex name="email">
+        <keyfield xpath="@email"/> 
+      </dbindex>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
 ## 金鑰管理 {#management-of-keys}
 
@@ -190,7 +191,7 @@ SQL欄位限制如下：
 
 * 索引鍵可參考表格中的一或多個欄位。
 * 當索引鍵是結構描述中第一個要填入的索引鍵，或如果索引鍵包含 **內部** 值為「true」的屬性。
-* 每個索引鍵定義都會以隱含方式宣告唯一索引。 您可以藉由新增以下專案來防止在索引鍵上建立索引： **noDbIndex** 值為「true」的屬性。
+* 每個索引鍵定義都會以隱含方式宣告唯一索引。 可以透過新增以下專案來防止在索引鍵上建立索引： **noDbIndex** 值為「true」的屬性。
 
 >[!NOTE]
 >
@@ -198,102 +199,102 @@ SQL欄位限制如下：
 
 >[!NOTE]
 >
->金鑰是在表格對應期間建立的（標準或FDA），Adobe Campaign會尋找唯一的索引。
+>金鑰是在表格對應期間建立（標準或FDA），Adobe Campaign會尋找唯一索引。
 
 **範例**:
 
 * 將金鑰新增至電子郵件地址和城市：
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </key>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </key>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
-   產生的結構描述：
+  產生的結構描述：
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-      <dbindex name="email" unique="true">      
-        <keyfield xpath="@email"/>      
-        <keyfield xpath="location/@city"/>    
-      </dbindex>    
-   
-      <key name="email">      
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+     <dbindex name="email" unique="true">      
        <keyfield xpath="@email"/>      
        <keyfield xpath="location/@city"/>    
-      </key>    
-   
-      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-      <element label="Location" name="location">      
-        <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-      </element>  
-     </element>
-   </schema>
-   ```
+     </dbindex>    
+  
+     <key name="email">      
+      <keyfield xpath="@email"/>      
+      <keyfield xpath="location/@city"/>    
+     </key>    
+  
+     <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+     <element label="Location" name="location">      
+       <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
+     </element>  
+    </element>
+  </schema>
+  ```
 
 * 在「id」名稱欄位中新增主要或內部索引鍵：
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="id" internal="true">
-         <keyfield xpath="@id"/> 
-       </key>
-   
-       <key name="email" noDbIndex="true">
-         <keyfield xpath="@email"/> 
-       </key>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="id" internal="true">
+        <keyfield xpath="@id"/> 
+      </key>
+  
+      <key name="email" noDbIndex="true">
+        <keyfield xpath="@email"/> 
+      </key>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
-   產生的結構描述：
+  產生的結構描述：
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-       <key name="email">      
-         <keyfield xpath="@email"/>    
-       </key>    
-   
-       <dbindex name="id" unique="true">      
-         <keyfield xpath="@id"/>    
-       </dbindex>    
-   
-       <key internal="true" name="id">      
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+      <key name="email">      
+        <keyfield xpath="@email"/>    
+      </key>    
+  
+      <dbindex name="id" unique="true">      
         <keyfield xpath="@id"/>    
-       </key>    
-   
-       <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
-     </element>
-   </schema>
-   ```
+      </dbindex>    
+  
+      <key internal="true" name="id">      
+       <keyfield xpath="@id"/>    
+      </key>    
+  
+      <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
+      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+    </element>
+  </schema>
+  ```
 
-### 自動增量金鑰 {#auto-incremental-key}
+### 自動增量索引鍵 {#auto-incremental-key}
 
-大多數Adobe Campaign表格的主要索引鍵都是資料庫引擎自動產生的32位元長整數。 金鑰值的計算取決於順序(根據預設， **XtkNewId** SQL函式)產生在整個資料庫中唯一的數字。 插入記錄時會自動輸入金鑰的內容。
+大部分Adobe Campaign表格的主要索引鍵是由資料庫引擎自動產生的32位元長整數。 機碼值的計算取決於順序(根據預設， **XtkNewId** SQL函式)產生在整個資料庫中唯一的數字。 插入記錄時會自動輸入金鑰的內容。
 
-增量索引鍵的優點在於，它可為表格之間的聯結提供不可修改的技術索引鍵。 此外，此索引鍵使用雙位元組整數，因此不會佔用太多記憶體。
+增量索引鍵的優點在於，它提供不可修改的技術索引鍵用於表格之間的聯結。 此外，此索引鍵使用雙位元組整數，因此不會佔用太多記憶體。
 
-您可以在來源綱要中指定要與搭配使用的序列名稱 **pkSequence** 屬性。 如果來源結構描述中未指定此屬性，則 **XtkNewId** 將會使用預設序列。 應用程式會使用專屬的序列 **nms：broadLog** 和 **nms：trackingLog** 結構描述(**NmsBroadLogId** 和 **NmsTrackingLogId** 分別)，因為這些是包含最多記錄的表格。
+您可以在來源綱要中指定要與搭配使用的序列名稱 **pkSequence** 屬性。 如果來源結構描述中未指定此屬性， **XtkNewId** 將會使用預設序列。 應用程式使用專用的序列 **nms：broadLog** 和 **nms：trackingLog** 結構描述(**NmsBroadLogId** 和 **NmsTrackingLogId** 這些是包含最多記錄的表格。
 
-從ACC 18.10， **XtkNewId** 不再是現成可用的結構描述中序列的預設值。 您現在可以使用專用序列來建置方案或擴充現有方案。
+從ACC 18.10， **XtkNewId** 不再是現成可用結構中序列的預設值。 您現在可以使用專用序列來建置方案或擴充現有方案。
 
 >[!IMPORTANT]
 >
@@ -301,7 +302,7 @@ SQL欄位限制如下：
 
 >[!NOTE]
 >
->Adobe Campaign結構描述中參照的序列(**NmsTrackingLogId** 例如)必須與傳回引數中ID數的SQL函式相關聯（以逗號分隔）。 必須呼叫此函式 **GetNew** XXX **Id**，其中 **XXX** 是序列的名稱(**GetNewNmsTrackingLogIds** 例如)。 檢視 **postgres-nms.sql**， **mssql-nms.sql** 或 **oracle-nms.sql** 隨應用程式提供的檔案 **datakit/nms/eng/sql/** 目錄，以復原每個資料庫引擎的「NmsTrackingLogId」序列建立範例。
+>Adobe Campaign結構描述中參照的序列(**NmsTrackingLogId** 例如)必須與SQL函式相關聯，此函式會傳回引數中的ID數目（以逗號分隔）。 必須呼叫此函式 **GetNew** XXX **Id**，其中 **XXX** 是序列的名稱(**GetNewNmsTrackingLogIds** 例如)。 檢視 **postgres-nms.sql**， **mssql-nms.sql** 或 **oracle-nms.sql** 中隨應用程式提供的檔案 **datakit/nms/eng/sql/** 目錄，以復原每個資料庫引擎的「NmsTrackingLogId」序列建立範例。
 
 若要宣告唯一金鑰，請填入 **autopk** 屬性（值為「true」）。
 
@@ -335,17 +336,17 @@ SQL欄位限制如下：
 </schema>
 ```
 
-除了索引鍵及其索引的定義外，名為「id」的數值欄位已新增至擴充結構描述，以包含自動產生的主要索引鍵。
+除了索引鍵及其索引的定義外，名為「id」的數值欄位已新增至擴充架構，以包含自動產生的主要索引鍵。
 
 >[!IMPORTANT]
 >
->主鍵設為0的記錄會在建立表格時自動插入。 此記錄用於避免外部聯結，這些外部聯結對磁碟區表格無效。 依預設，所有外部索引鍵都會以值0初始化，以便在未填入資料專案時，一律可在聯結上傳回結果。
+>主鍵設為0的記錄會在建立表格時自動插入。 此記錄用於避免外部聯結，這些外部聯結在磁碟區表格上無效。 依預設，所有外部索引鍵都是以值0初始化，如此一來，當資料專案未填入時，就可以在聯結上傳回結果。
 
 ## 連結：表格之間的關係 {#links--relation-between-tables}
 
 連結說明一個表格與另一個表格之間的關聯。
 
-各種型別的關聯（稱為「基數」）如下：
+各種關聯（稱為「基數」）型別如下：
 
 * 基數1-1：來源表格的一個執行個體最多可以具有目標表格的一個對應執行個體。
 * 基數1-N：來源表格的一個出現次數可以具有多個目標表格的對應出現次數，但目標表格的一個出現次數最多可以具有來源表格的一個對應出現次數。
@@ -353,20 +354,20 @@ SQL欄位限制如下：
 
 在介面中，您可以透過圖示輕鬆區分不同型別的關係。
 
-對於與Campaign表格/資料庫的聯結關係：
+對於與Campaign資料表/資料庫的聯結關係：
 
 * ![](assets/join_with_campaign11.png) ：基數1-1。 例如，在收件者和目前訂單之間。 收件者一次只能與目前訂單表格的一個執行個體相關。
-* ![](assets/externaljoin11.png) ：基數1-1、外部聯結。 例如，在收件者與其國家/地區之間。 收件者只能與表格國家/地區的一個執行個體相關。 將不會儲存國家資料表的內容。
+* ![](assets/externaljoin11.png) ：基數1-1、外部聯結。 例如，在收件者與其國家/地區之間。 收件者只能與表格國家/地區的一個執行個體相關。 將不會儲存國家表格的內容。
 * ![](assets/join_with_campaign1n.png) ：基數1-N。例如，在收件者和訂閱表格之間。 收件者可與訂閱表格上的數個相符專案建立關聯。
 
-對於使用同盟資料庫存取權的聯結關係：
+對於使用同盟資料庫存取的聯結關係：
 
 * ![](assets/join_fda_11.png) ：基數1-1
 * ![](assets/join_fda_1m.png) ：基數1-N
 
 如需FDA表格的詳細資訊，請參閱 [存取外部資料庫](../../installation/using/about-fda.md).
 
-必須在包含透過主要元素連結之表格外部索引鍵的結構描述中宣告連結：
+在包含透過主要元素連結之表格外部索引鍵的結構描述中，必須宣告連結：
 
 ```
 <element name="name_of_link" type="link" target="key_of_destination_schema">
@@ -383,24 +384,24 @@ SQL欄位限制如下：
    * **名稱**：來源表格中的連結名稱，
    * **目標**：目標結構描述的名稱，
    * **標籤**：連結的標籤，
-   * **revLink** （選用）：來自目標架構的反向連結名稱（預設會自動推斷），
-   * **完整性** （選用）：來源表格出現位置與目標表格出現位置的參照完整性。 可能的值如下：
+   * **revLink** （選用）：來自目標架構的反向連結名稱（預設會自動衍生），
+   * **完整性** （選擇性）：來源表格出現位置與目標表格出現位置的參照完整性。 可能的值如下：
 
       * **定義**：如果來源發生次數不再由目標發生次數參考，則可能會刪除該來源發生次數，
       * **一般**：刪除來源出現位置會初始化指向目標出現位置的連結索引鍵（預設模式），此型別的完整性會初始化所有外來索引鍵，
-      * **own**：刪除來源出現位置會導致目標出現位置刪除，
-      * **owncopy**：與 **own** （若為刪除）或重複發生次數（若為重複），
-      * **中立**：不執行任何動作。
-   * **revIntegrity** （選用）：目標架構的完整性（選用，預設為「一般」）、
-   * **revCardinality** （選用）：值為「single」時，基數會填入1-1型別（預設為1-N）。
+      * **擁有**：刪除來源出現位置會導致目標出現位置刪除，
+      * **owncopy**：與 **擁有** （若為刪除）或重複發生次數（若為重複），
+      * **中立**：不會執行任何動作。
+
+   * **revIntegrity** （選擇性）：目標綱要上的完整性（選擇性，預設為「一般」），
+   * **revCardinality** （選用）：值為「single」時，會將型別1-1 （預設為1-N）填入基數。
    * **externalJoin** （選用）：強制外部聯結
    * **revExternalJoin** （選用）：強制反向連結上的外部聯結
 
-
-* 連結會參照來源表格到目的地表格的一或多個欄位。 構成聯結的欄位( `<join>`  元素)，因為它們預設會使用目標結構描述的內部索引鍵自動推斷。
-* 索引會自動新增至延伸結構描述中連結的外部索引鍵。
+* 連結會參照來源表格到目的地表格的一或多個欄位。 構成聯結的欄位( `<join>`  元素)，因為預設會使用目標結構描述的內部索引鍵自動推斷。
+* 索引會自動新增至擴充綱要中連結的外部索引鍵。
 * 連結由兩個半連結組成，其中第一個是從來源綱要宣告，第二個是在目標綱要的延伸綱要中自動建立。
-* 連線可以是外部連線，如果 **externalJoin** 加入屬性，其值為「true」（PostgreSQL支援）。
+* 連線可以是外部連線，如果 **externalJoin** 加入屬性，值為「true」（PostgreSQL支援）。
 
 >[!NOTE]
 >
@@ -436,9 +437,9 @@ SQL欄位限制如下：
 </schema>
 ```
 
-連結定義由組成聯結的欄位補充，即在目的地結構描述中主索引鍵及其XPath (&quot;@id&quot;)，而在結構描述中外索引鍵及其XPath (&quot;@company-id&quot;)。
+組成聯結的欄位可補充連結定義，也就是在目的地結構描述中主索引鍵及其XPath (「@id」)，在結構描述中主索引鍵及其XPath (「@company-id」)。
 
-外部索引鍵會自動新增至與目的地表格中相關欄位使用相同特性的元素中，並遵循下列命名慣例：目標結構描述名稱后接相關欄位名稱（範例中為「company-id」）。
+外部索引鍵會自動新增至與目的地表格中相關欄位使用相同特性的元素中，並遵循下列命名慣例：目標結構描述名稱后面接著相關欄位名稱（範例中為「company-id」）。
 
 目標(「cus：company」)的延伸結構描述：
 
@@ -463,15 +464,15 @@ SQL欄位限制如下：
 
 已新增指向「cus：recipient」表格的反向連結，其中包含下列引數：
 
-* **名稱**：自動從來源結構描述名稱推算（可在來源結構描述上的連結定義中使用「revLink」屬性強制）
+* **名稱**：自動從來源結構描述的名稱衍生（可在來源結構描述的連結定義中使用「revLink」屬性強制執行）
 * **revLink**：反向連結的名稱
 * **目標**：連結綱要的索引鍵（「cus：recipient」綱要）
-* **未繫結**：連結會宣告為1-N基數的收集元素（預設為）
-* **完整性**：預設為「define」（可在來源結構描述上的連結定義中使用「revIntegrity」屬性強制執行）。
+* **未繫結**：連結會宣告為1-N基數的收集要素（依預設）
+* **完整性**：預設為「定義」（可在來源架構上的連結定義中使用「revIntegrity」屬性強制執行）。
 
 ### 範例2 {#example-2}
 
-在此範例中，我們將宣告指向「nms：address」結構描述表格的連結。 此聯結是外部聯結，並明確填入收件者的電子郵件地址和連結表格(「nms：address」)的「@address」欄位。
+在此範例中，我們將宣告指向「nms：address」架構表格的連結。 此聯結是外部聯結，並明確填入收件者的電子郵件地址和連結表格(「nms：address」)的「@address」欄位。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -486,7 +487,7 @@ SQL欄位限制如下：
 
 ### 範例3 {#example-3}
 
-與「cus：extension」結構描述表格的1-1關係：
+與「cus：extension」綱要表格的1-1關係：
 
 ```
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -504,7 +505,7 @@ SQL欄位限制如下：
 
 ### 範例5 {#example-5}
 
-在此範例中，我們想要在使用以下專案的連結（「company」到「cus：company」方案）上建立索引鍵： **xlink** （「電子郵件」）表格的屬性和欄位：
+在此範例中，我們希望透過在連結（「company」到「cus：company」架構）上建立索引鍵 **xlink** （「電子郵件」）表格的屬性和欄位：
 
 ```
 <srcSchema name="recipient" namespace="cus">

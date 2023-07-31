@@ -2,16 +2,17 @@
 product: campaign
 title: JSP 行為
 description: JSP 行為
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 858d00d0-7c65-43be-8bae-f0f945f71f1a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 16%
+source-wordcount: '61'
+ht-degree: 26%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 16%
 
 
 
-若確定 **jsp** 作業無法成功執行，您必須強制重新編譯。
+若確定 **jsp** 工作無法成功執行，您必須強制它們重新編譯。
 
 為此，請輸入以下命令：
 
@@ -30,4 +31,4 @@ rm -r work/
 nlserver start web
 ```
 
-此 **jsp** 作業會在您下次連線時重新產生。
+此 **jsp** 下次連線時就會重新產生工作。

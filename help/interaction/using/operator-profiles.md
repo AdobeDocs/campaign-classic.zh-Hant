@@ -2,14 +2,15 @@
 product: campaign
 title: 運算子設定檔
 description: 運算子設定檔
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 9%
 
 ---
@@ -18,12 +19,12 @@ ht-degree: 9%
 
 
 
-使用互動的操作者有兩種型別：優惠方案管理員和傳遞管理員。 每個使用者都有特定許可權，僅可存取樹狀結構部分和平台。
+使用互動的運運算元有兩種型別：優惠方案管理員和傳遞管理員。 每個使用者都有特定許可權，僅可存取樹狀結構部分和平台。
 
-* **[!UICONTROL Offer manager]** ：建立和維護優惠方案。 請注意，如果工作流程中使用選件，運運算元必須位於 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作員群組以執行工作流程。
-* **[!UICONTROL Delivery manager]** ：核准並使用優惠方案
+* **[!UICONTROL Offer manager]** ：建立和維護選件。 請注意，如果工作流程中使用選件，運運算元必須位於 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作員群組以執行工作流程。
+* **[!UICONTROL Delivery manager]** ：核准並使用選件
 
-建立「互動」專屬運運算元的步驟，與在平台上建立所有其他運運算元所使用的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md)。許可權是在建立運運算元時設定的。
+建立「互動」專屬運運算元的步驟，與在Platform上建立所有其他運運算元所用的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md)。許可權是在建立運運算元時設定的。
 
 ## 優惠方案管理員 {#offer-manager}
 
@@ -36,15 +37,15 @@ ht-degree: 9%
 
 * 修改 **[!UICONTROL Design]** 環境。
 * 檢視 **[!UICONTROL Live]** 環境。
-* 設定管理函式（預先定義的空格和篩選器）。
+* 設定管理功能（預先定義的空格和篩選器）。
 * 建立和變更類別。
 * 建立優惠.
 * 設定優惠資格。
 * 核准優惠方案。
 
-   >[!NOTE]
-   >
-   >優惠方案經理只能在兩種特定情況下核准優惠方案。 第一個是，如果某位特定人員未指定為稽核者，第二個是，如果負責建立範本的運運算元（有權指派稽核者）在優惠方案所依據的優惠方案範本中將他們指定為稽核者。
+  >[!NOTE]
+  >
+  >優惠方案管理員只能在兩種特定情況下核准優惠方案。 第一個是「如果沒有任何特定人員被指定為稽核者」，第二個是「如果負責建立範本的運運算元（有權指派稽核者）」將他們指定為優惠方案基準之優惠方案範本中的稽核者」。
 
 ## 傳遞管理員 {#delivery-manager}
 
@@ -53,15 +54,15 @@ ht-degree: 9%
 
    ![](assets/offer_operators_create_002.png)
 
-指派給傳遞管理員的許可權可讓他們執行下列任務：
+指派給傳遞管理員的許可權可讓他們執行下列工作：
 
 * 顯示 **[!UICONTROL Live]** 環境。
 * 顯示和修改優惠方案類別。
-* 如果將此傳遞管理員指定為其稽核者之一，則核准優惠方案。
+* 如果將此傳遞管理員指定為其稽核者，則核准優惠方案。
 
-   >[!NOTE]
-   >
-   >只有在優惠方案設定期間已將優惠方案定義為檢閱者，傳遞管理員才能核准優惠方案。
+  >[!NOTE]
+  >
+  >只有在優惠方案設定期間，傳遞管理員已定義為檢閱者，才能核准優惠方案。
 
 ## 根據運運算元重述權利 {#recap-of-rights-according-to-operator}
 
@@ -69,7 +70,7 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Offer Manager （編輯）</strong><br /> </td> 
+   <td> <strong>選件管理員（編輯）</strong><br /> </td> 
    <td> <strong>Offer Manager （即時）</strong><br /> </td> 
   </tr> 
   <tr> 

@@ -2,16 +2,17 @@
 product: campaign
 title: RDBMS 特定建議
 description: RDBMS 特定建議
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 1%
+source-wordcount: '1201'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +20,11 @@ ht-degree: 1%
 
 
 
-為了協助您設定維護計畫，本節列出一些建議和最佳實務，這些建議和最佳實務已改編為Adobe Campaign支援的各種RDBMS引擎。 不過，這些只是建議。 根據您的內部程式和限制，由您根據您的需求來調整它們。 您的資料庫管理員負責建立和執行這些計畫。
+為協助您設定維護計畫，本節列出Adobe Campaign支援之各種RDBMS引擎所調整的一些建議和最佳作法。 不過，這些只是建議。 根據您的內部程式和限制，由您自行調整以符合您的需求。 您的資料庫管理員有責任建立並執行這些計畫。
 
 ## PostgreSQL {#postgresql}
 
-### 偵測大型資料表 {#detecting-large-tables}
+### 正在偵測大型資料表 {#detecting-large-tables}
 
 1. 您可以將下列檢視新增至資料庫：
 
@@ -82,11 +83,11 @@ ht-degree: 1%
 
 ### 簡單的維護作業 {#simple-maintenance}
 
-在PostgreSQL中，您可以使用下列典型關鍵字：
+在PostgreSQL中，您可以使用下列一般關鍵字：
 
 * 真空（完整、分析、詳細）
 
-若要執行VACUUM操作並加以分析和計時，您可以使用以下語法：
+若要執行VACUUM操作並加以分析和計時，您可以使用下列語法：
 
 ```
 \timing on
@@ -137,26 +138,25 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe建議從較小的表格開始：這樣，如果程式在大型表格（其中失敗的風險最高）上失敗，至少部分維護作業已完成。
->* Adobe建議您新增資料模型專屬的表格，這些表格可能會有重大更新。 以下情況可能適用 **NmsRecipient** 如果您的每日資料複製流程很大。
->* VACUUM陳述式將鎖定表格，在執行維護時這會暫停某些程式。
+>* Adobe建議從較小的表格開始：如此一來，如果程式在大型表格（失敗風險最高的表格）上失敗，至少部分的維護作業已完成。
+>* Adobe建議您新增資料模型專屬的表格，這些表格可能會有重大更新。 這種情況可能適用於 **NmsRecipient** 如果您的每日資料複製流程很大。
+>* VACUUM陳述式會鎖定表格，在執行維護作業時會暫停某些程式。
 >* 對於非常大的表格（通常超過5 Gb），VACUUM FULL陳述式可能會變得相當低效，並需要很長的時間。 Adobe不建議將其用於 **YyynmsBroadLogXxx** 表格。
->* 此維護操作可透過Adobe Campaign工作流程實施，使用 **[!UICONTROL SQL]** 活動。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。請務必排程進行維護作業，讓維護作業在較少的活動時間內進行，以免與備份期間發生衝突。
+>* 此維護操作可透過Adobe Campaign工作流程實施，使用 **[!UICONTROL SQL]** 活動。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。請確定您排程進行維護作業的時間，以免與備份期間發生衝突。
 >
-
 
 ### 重建資料庫 {#rebuilding-a-database}
 
-PostgreSQL不提供執行線上表格重建的簡單方法，因為VACUUM FULL陳述式會鎖定表格，因此會防止正常生產。 這表示維護必須在未使用表格時執行。 您可以：
+由於VACUUM FULL陳述式會鎖定資料表，因此無法正常生產，因此PostgreSQL不提供執行線上資料表重建的簡單方法。 這表示維護必須在未使用表格時執行。 您可以：
 
 * 當Adobe Campaign平台停止時，
-* 停止可能寫入正在重建之資料表中的各種Adobe Campaign子服務(**nlserver stop wfserver instance_name** 以停止工作流程程式)。
+* 停止各種可能寫入正在重建之表格的Adobe Campaign子服務(**nlserver stop wfserver instance_name** 以停止工作流程程式)。
 
-以下是使用特定函式產生必要DDL的表格磁碟重組範例。 下列SQL可讓您建立兩個新函式： **GenRebuildTablePart1** 和 **GenRebuildTablePart2**，可用來產生必要的DDL以重新建立表格。
+以下是使用特定函式產生必要DDL的表格重組範例。 下列SQL可讓您建立兩個新函式： **GenRebuildTablePart1** 和 **GenRebuildTablePart2**，可用來產生必要的DDL以重新建立表格。
 
 * 第一個函式可讓您建立工作表(**_tmp**此處)，它是原始表格的副本。
 * 然後第二個函式會刪除原始表格並重新命名工作表及其索引。
-* 使用兩個函式而非一個函式意味著，如果第一個函式失敗，您就不會有刪除原始表格的風險。
+* 使用兩個函式而非一個函式，表示如果第一個函式失敗，您就不會有刪除原始表格的風險。
 
 ```
  -- --------------------------------------------------------------------------
@@ -409,14 +409,14 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->若為Microsoft SQL Server，您可以使用詳細維護計畫 [此頁面](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>對於Microsoft SQL Server，您可以使用詳細維護計畫 [此頁面](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 以下範例與Microsoft SQL Server 2005有關。 如果您使用其他版本，請連絡資料庫管理員，瞭解維護程式。
 
-1. 首先，以具有管理員許可權的登入身分連線至Microsoft SQL Server Management Studio。
-1. 前往 **[!UICONTROL Management > Maintenance Plans]** 資料夾，以滑鼠右鍵按一下該資料夾，然後選擇 **[!UICONTROL Maintenance Plan Wizard]**.
-1. 按一下 **[!UICONTROL Next]** 當第一個頁面出現時。
-1. 選取您要建立的維護計畫型別（每個任務各別排程，或整個計畫的單一排程），然後按一下 **[!UICONTROL Change...]** 按鈕。
+1. 首先，以具有管理員許可權的登入名稱連線至Microsoft SQL Server Management Studio。
+1. 前往 **[!UICONTROL Management > Maintenance Plans]** 資料夾，在資料夾上按一下滑鼠右鍵，然後選擇 **[!UICONTROL Maintenance Plan Wizard]**.
+1. 按一下 **[!UICONTROL Next]** 當第一頁出現時。
+1. 選取您要建立的維護計畫型別（每個作業分別排程或整個計畫的單一排程），然後按一下 **[!UICONTROL Change...]** 按鈕。
 1. 在 **[!UICONTROL Job schedule properties]** 視窗，選取所需的執行設定並按一下 **[!UICONTROL OK]**，然後按一下 **[!UICONTROL Next]**.
 1. 選取您要執行的維護工作，然後按一下 **[!UICONTROL Next]**.
 
@@ -424,7 +424,7 @@ function sqlGetMemo(strSql)
    >
    >建議您至少執行下列維護任務。 您也可以選取統計資料更新工作，儘管該工作已由資料庫清理工作流程執行。
 
-1. 在下拉式清單中，選取您要執行下列專案的資料庫： **[!UICONTROL Database Check Integrity]** 任務。
+1. 在下拉式清單中，選取要在其上執行 **[!UICONTROL Database Check Integrity]** 任務。
 1. 選取資料庫並按一下 **[!UICONTROL OK]**，然後按一下 **[!UICONTROL Next]**.
 1. 設定配置給資料庫的大小上限，然後按一下 **[!UICONTROL Next]**.
 
@@ -434,26 +434,26 @@ function sqlGetMemo(strSql)
 
 1. 重新組織或重建索引：
 
-   * 如果索引片段率在10%到40%之間，建議重組。
+   * 如果索引片段率介於10%到40%之間，建議進行重組。
 
-      選擇要重新組織的資料庫和物件（表格或檢視），然後按一下 **[!UICONTROL Next]**.
+     選擇要重新組織的資料庫和物件（表格或檢視表），然後按一下 **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >根據您的組態，您可以選擇先前選取的表格，或資料庫中的所有表格。
+     >[!NOTE]
+     >
+     >根據您的組態，您可以選擇先前選取的表格或資料庫中的所有表格。
 
    * 如果索引片段率高於40%，建議重新建置。
 
-      選取要套用至索引重建工作的選項，然後按一下 **[!UICONTROL Next]**.
+     選取要套用至索引重建工作的選項，然後按一下 **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >重新建立索引程式在處理器使用方面更受限制，而且會鎖定資料庫資源。 選取 **[!UICONTROL Keep index online while reindexing]** 選項。
+     >[!NOTE]
+     >
+     >重新建立索引程式在處理器使用方面更受限制，而且會鎖定資料庫資源。 選取 **[!UICONTROL Keep index online while reindexing]** 選項。
 
 1. 選取您要在活動報表中顯示的選項，然後按一下 **[!UICONTROL Next]**.
 1. 檢查為維護計畫設定的任務清單，然後按一下 **[!UICONTROL Finish]**.
 
-   此時會顯示維護計畫及其各個步驟的狀態的摘要。
+   此時會顯示維護計畫摘要及其各個步驟的狀態。
 
 1. 維護計畫完成後，請按一下 **[!UICONTROL Close]**.
 1. 在Microsoft SQL Server Explorer中，按兩下 **[!UICONTROL Management > Maintenance Plans]** 資料夾。
@@ -473,8 +473,8 @@ function sqlGetMemo(strSql)
 
 此 **WdbcOptions_TempDbName** 選項可讓您為Microsoft SQL Server上的工作表格設定個別的資料庫。 如此可最佳化備份與復寫。
 
-如果您希望在其他資料庫上建立工作表格（例如，執行工作流程期間建立的表格），則可以使用此選項。
+如果您要在其他資料庫中建立工作表格（例如，執行工作流程期間建立的表格），可以使用此選項。
 
-將選項設為&quot;tempdb.dbo.&quot;時，會在Microsoft SQL Server的預設暫存資料庫上建立工作表格。 資料庫管理員需要允許對tempdb資料庫的寫入許可權。
+將選項設為「tempdb.dbo.」時，會在Microsoft SQL Server的預設暫存資料庫中建立工作表格。 資料庫管理員需要允許對tempdb資料庫的寫入許可權。
 
-如果設定此選項，則會用於在Adobe Campaign （主要資料庫和外部帳戶）中設定的所有Microsoft SQL Server資料庫。 請注意，如果兩個外部帳戶共用相同的伺服器，則可能會發生衝突（因為tempdb是唯一的）。 同樣地，如果兩個Campaign執行個體使用相同的MSSQL伺服器，則當它們使用相同的tempdb時，可能會發生衝突。
+如果設定此選項，則會用於在Adobe Campaign中設定的所有Microsoft SQL Server資料庫（主要資料庫和外部帳戶）。 請注意，如果兩個外部帳戶共用相同的伺服器，則可能會發生衝突（因為tempdb是唯一的）。 同樣地，如果兩個Campaign執行個體使用相同的MSSQL伺服器，則他們使用相同的tempdb時可能會發生衝突。

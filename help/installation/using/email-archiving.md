@@ -2,14 +2,15 @@
 product: campaign
 title: 電子郵件封存
 description: 電子郵件封存
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings, Email
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1366'
 ht-degree: 5%
 
 ---
@@ -18,21 +19,21 @@ ht-degree: 5%
 
 
 
-您可以設定Adobe Campaign以保留從您的平台傳送的電子郵件復本。
+您可以設定Adobe Campaign以保留從您的平台傳送的電子郵件副本。
 
-不過，Adobe Campaign本身不會管理封存的檔案。 它可讓您選擇將訊息傳送至專用地址，您可使用外部系統從該地址進行處理和封存。
+不過，Adobe Campaign本身不會管理封存的檔案。 它可讓您選擇的訊息傳送至專用地址，您可在其中使用外部系統處理和封存訊息。
 
-為此，會將與已傳送電子郵件相對應的.eml檔案傳輸至遠端伺服器，例如SMTP電子郵件伺服器。 封存目的地是您必須指定的密件副本電子郵件地址（傳送收件者無法看到）。
+為此，會將與已傳送電子郵件相對應的.eml檔案傳輸到遠端伺服器，例如SMTP電子郵件伺服器。 封存目的地是您必須指定的密件副本電子郵件地址（傳送收件者無法看到）。
 
 ## Recommendations和限制 {#recommendations-and-limitations}
 
 * 電子郵件密件副本功能為選用。 請檢查您的授權合約。
-* 對象 **託管和混合式架構**，請聯絡您的帳戶管理員以將其啟用。 您必須將您選擇的密件副本電子郵件地址提供給會為您設定該地址的Adobe團隊。
-* 對象 **內部部署安裝**，請遵循以下准則以啟動它 — 請參閱 [啟用電子郵件密件副本（內部部署）](#activating-email-archiving--on-premise-) 和 [設定密件副本電子郵件地址（內部部署）](#configuring-the-bcc-email-address--on-premise-) 區段。
+* 的 **託管與混合式架構**，請聯絡您的帳戶管理員以將其啟用。 您必須將您選擇的密件副本電子郵件地址提供給會為您設定該地址的Adobe團隊。
+* 的 **內部部署安裝**，請遵循以下准則以啟動它 — 請參閱 [啟用電子郵件密件副本（內部部署）](#activating-email-archiving--on-premise-) 和 [設定密件副本電子郵件地址（內部部署）](#configuring-the-bcc-email-address--on-premise-) 區段。
 * 您只能使用一個密件副本電子郵件地址。
 * 設定電子郵件密件副本後，請確定在傳遞範本中或透過在傳遞中啟用該功能 **[!UICONTROL Email BCC]** 選項。 如需詳細資訊，請參閱[本節](../../delivery/using/sending-messages.md#archiving-emails)。
-* 只考慮成功傳送的電子郵件，不考慮退信。
-* 電子郵件封存系統隨Adobe Campaign 17.2 （版本編號8795）而變更。 如果您已在使用電子郵件封存，則必須手動升級至新的電子郵件密件副本系統。 如需詳細資訊，請參閱 [移至新的電子郵件密件副本](#updated-email-archiving-system--bcc-) 區段。
+* 只考慮成功傳送的電子郵件，不考慮跳出。
+* 電子郵件封存系統隨Adobe Campaign 17.2 （版本編號8795）而變更。 如果您已在使用電子郵件封存，則必須手動升級至新的電子郵件密件副本系統。 有關詳細資訊，請參閱 [移至新的電子郵件密件副本](#updated-email-archiving-system--bcc-) 區段。
 
 ## 啟用電子郵件密件副本（內部部署） {#activating-email-archiving--on-premise-}
 
@@ -43,7 +44,7 @@ ht-degree: 5%
 
 ### 本機資料夾 {#local-folder}
 
-若要啟用將已傳送電子郵件傳輸至密件副本電子郵件地址，必須先將已傳送電子郵件的精確原始副本儲存為.eml檔案至本機資料夾。
+若要將已傳送電子郵件傳輸至密件副本電子郵件地址，必須先將已傳送電子郵件的精確原始副本儲存為.eml檔案至本機資料夾。
 
 本機資料夾的路徑必須在 **config-`<instance>`.xml** 檔案，從設定。 例如：
 
@@ -53,7 +54,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->實作專案的團隊應負責確保安全性設定可允許存取透過定義的資料夾。 **dataLogPath** 引數。
+>實作專案的團隊應負責確保安全性設定可允許存取透過定義的資料夾。 **資料記錄路徑** 引數。
 
 完整路徑如下： **`<datalogpath>  YYYY-MM-DDHHh`**. 日期和時間會根據MTA伺服器的時鐘(UTC)設定。 例如：
 
@@ -61,7 +62,7 @@ ht-degree: 5%
 C:\emails\2018-12-02\13h
 ```
 
-封存檔案名稱為 **`<deliveryid>-<broadlogid>.eml`** 當電子郵件的狀態不是 **[!UICONTROL Sent]**. 當狀態變更為後 **[!UICONTROL Sent]**，檔案名稱會變成 **`<deliveryid>-<broadlogid>-sent.eml`**. 例如：
+封存檔案名稱為 **`<deliveryid>-<broadlogid>.eml`** 當電子郵件的狀態不是 **[!UICONTROL Sent]**. 一旦狀態變更為 **[!UICONTROL Sent]**，檔案名稱會變成 **`<deliveryid>-<broadlogid>-sent.eml`**. 例如：
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -71,11 +72,11 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >在中間來源執行個體中，密件副本電子郵件的目錄位於中間來源伺服器上。
 >
->當電子郵件的狀態未傳送時，deliveryID和broadlogID會來自中間來源伺服器。 當狀態變更為後 **[!UICONTROL Sent]**，這些ID來自行銷伺服器。
+>當電子郵件的狀態未傳送時，deliveryID和broadlogID會來自中間來源伺服器。 一旦狀態變更為 **[!UICONTROL Sent]**，這些ID來自行銷伺服器。
 
 ### 參數 {#parameters}
 
-定義本機資料夾路徑後，視需要在 **config-`<instance name>.xml`** 檔案。 以下是預設值：
+定義本機資料夾路徑後，視需要新增並編輯下列元素 **config-`<instance name>.xml`** 檔案。 以下是預設值：
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
@@ -85,24 +86,24 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 * **compressionformat**：壓縮.eml檔案時使用的格式。 可能的值包括：
 
-   **0**：無壓縮（預設值）
+  **0**：無壓縮（預設值）
 
-   **1**：壓縮（.zip格式）
+  **1**：壓縮（.zip格式）
 
-* **compressBatchSize**：新增至封存（.zip檔案）的.eml檔案數。
+* **compressBatchSize**：新增到封存的.eml檔案數（.zip檔案）。
 * **archivingType**：要使用的封存策略。 可能的值包括：
 
-   **0**：已傳送電子郵件的原始副本會以.eml格式儲存至 **dataLogPath** 資料夾（預設值）。 的封存副本 **`<deliveryid>-<broadlogid>-sent.eml`** 檔案會儲存至 **Datalogpath/archives** 資料夾。 傳送的電子郵件檔案路徑會變成 **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
+  **0**：已傳送電子郵件的原始副本會以.eml格式儲存至 **資料記錄路徑** 資料夾（預設值）。 的封存副本 **`<deliveryid>-<broadlogid>-sent.eml`** 檔案會儲存至 **dataLogPath/archives** 資料夾。 已傳送的電子郵件檔案路徑會變成 **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-   **1**：已傳送電子郵件的原始副本會以.eml格式儲存至 **dataLogPath** 資料夾和它們會透過SMTP傳送至密件副本電子郵件地址。 將電子郵件副本傳送至密件副本地址後，封存檔案名稱會變成 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 且檔案會移至 **Datalogpath/archives** 資料夾。 然後，已傳送和密件副本封存的電子郵件檔案路徑為 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+  **1**：已傳送電子郵件的原始副本會以.eml格式儲存至 **資料記錄路徑** 資料夾和它們會透過SMTP傳送至密件副本電子郵件地址。 將電子郵件副本傳送至密件副本地址後，封存檔案名稱會變成 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 且檔案會移至 **dataLogPath/archives** 資料夾。 然後，已傳送及密件副本封存的電子郵件檔案路徑為 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
 
-* **expirationDelay**：保留.eml檔案進行封存的天數。 延遲後，這些資料會自動移至 **Datalogpath/archives** 資料夾進行壓縮。 根據預設，.eml檔案會在兩天後過期。
-* **purgeArchivesDelay**：封存保留在中的天數 **dataLogPath/`<archives>`** 資料夾。 在這段期間後，這些檔案會永久刪除。 清除作業會在MTA啟動時開始。 預設會每七天執行一次。
-* **pollDelay**：檢查新傳入傳送電子郵件的頻率（以秒為單位），以 **dataLogPath** 資料夾。 例如，如果此引數設為60，表示封存程式每分鐘都會處理內部的.eml檔案 **dataLogPath/`<date and time>`** 資料夾，視需要套用清除，並視需要傳送電子郵件副本至密件副本地址及/或壓縮封存的檔案。
-* **acquireLimit**：在再次套用封存程式之前，同時處理的.eml檔案數，根據 **pollDelay** 引數。 例如，如果您將 **acquireLimit** 引數為100，而 **pollDelay** 引數設為60，每分鐘將處理100個.eml檔案。
+* **expirationDelay**：保留.eml檔案以供封存的天數。 經過此延遲後，系統會自動將它們移至 **dataLogPath/archives** 資料夾進行壓縮。 根據預設，.eml檔案會在兩天後過期。
+* **purgeArchivesDelay**：封存在中保留的天數 **資料記錄路徑/`<archives>`** 資料夾。 在這段期間後，它們將會永久刪除。 清除作業會在MTA啟動時開始。 預設會每七天執行一次。
+* **pollDelay**：檢查傳送至的新傳入傳送電子郵件的頻率（以秒為單位） **資料記錄路徑** 資料夾。 例如，如果此引數設為60，表示封存程式每分鐘都會處理內部的.eml檔案 **資料記錄路徑/`<date and time>`** 資料夾，視需要套用清除，並視需要傳送電子郵件復本至密件副本地址及/或壓縮存檔檔案。
+* **acquireLimit**：在再次套用封存程式之前，根據 **pollDelay** 引數。 例如，如果您設定 **acquireLimit** 引數為100，而 **pollDelay** 引數設定為60，每分鐘將處理100個.eml檔案。
 * **smtpNbConnection**：與密件副本電子郵件地址的SMTP連線數目。
 
-請務必根據電子郵件傳送量調整這些引數。 例如，在MTA每小時傳送30,000封電子郵件的設定中，您可以設定 **pollDelay** 引數為600， **acquireLimit** 引數為5000且 **smtpNbConnection** 引數變更為2。 這表示使用2個SMTP連線時，每10分鐘會傳送5,000封電子郵件至密件副本位址。
+請務必根據電子郵件傳送吞吐量調整這些引數。 例如，在MTA每小時傳送30,000封電子郵件的設定中，您可以設定 **pollDelay** 引數至600， **acquireLimit** 引數至5000及 **smtpNbConnection** 引數為2。 這表示若使用2個SMTP連線，每10分鐘會傳送5,000封電子郵件至BCC位址。
 
 ## 設定密件副本電子郵件地址（內部部署） {#configuring-the-bcc-email-address--on-premise-}
 
@@ -111,9 +112,9 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!IMPORTANT]
 >
->基於隱私權考量，密件副本電子郵件必須由能夠安全儲存個人識別資訊(PII)的封存系統處理。
+>基於隱私權理由，密件副本電子郵件必須由能夠安全儲存個人識別資訊(PII)的封存系統處理。
 
-在 **config-`<instance name>.xml`** 檔案時，請使用下列引數來定義儲存檔案所要傳輸到的SMTP電子郵件伺服器：
+在 **config-`<instance name>.xml`** 檔案時，請使用下列引數來定義儲存檔案所要傳輸的SMTP電子郵件伺服器：
 
 ```
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
@@ -138,26 +139,26 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!IMPORTANT]
 >
->電子郵件封存系統(BCC)已隨Adobe Campaign 17.2 （版本編號8795）變更。 如果您要從舊版組建升級，而且已經在使用電子郵件封存功能，則必須手動升級至新的電子郵件封存系統（密件副本）。
+>電子郵件封存系統(BCC)已隨Adobe Campaign 17.2 (build 8795)變更。 如果您正從舊版組建升級，而且已使用電子郵件封存功能，則必須手動升級至新的電子郵件封存系統(BCC)。
 
 若要這麼做，請對 **`config-<instance>.xml`** 檔案：
 
 1. 移除 **zipPath** 引數來自 **`<archiving>`** 節點。
-1. 設定 **compressionformat** 引數至 **1** 視需要而定。
+1. 設定 **compressionformat** 引數至 **1** 如有需要。
 1. 設定 **archivingType** 引數至 **1**.
 
-設定電子郵件密件副本後，請務必選取 **[!UICONTROL Email BCC]** 傳遞範本或傳遞中的選項。 如需詳細資訊，請參閱[本節](../../delivery/using/sending-messages.md#archiving-emails)。
+設定電子郵件密件副本後，請務必選取 **[!UICONTROL Email BCC]** 傳送範本或傳送中的選項。 如需詳細資訊，請參閱[本節](../../delivery/using/sending-messages.md#archiving-emails)。
 
 ## 電子郵件密件副本最佳實務 {#best-practices}
 
-* **密件副本位址信箱**：確認它有足夠的接收容量來封存MTA傳送的所有電子郵件。
-* **MTA集區**：密件副本封存功能可在MTA層級運作。 它可讓您複製MTA傳送的每封電子郵件。 由於MTA可以跨多個例項（例如開發、測試或生產）或甚至跨多個使用者端（在中間來源環境中）進行集區，因此設定此功能會影響安全性：
+* **密件副本地址信箱**：確保其有足夠的接收容量來封存MTA傳送的所有電子郵件。
+* **MTA集區**：密件副本封存功能適用於MTA層級。 它可讓您複製MTA傳送的每封電子郵件。 由於MTA可以跨多個執行個體（例如開發、測試或生產）或甚至跨多個客戶（在中間來源環境中）進行集區，因此設定此功能會影響安全性：
 
-   * 如果您與多個使用者端共用MTA，且其中一個使用者端已啟用此選項，則此使用者端將存取共用相同MTA的其他使用者端的所有電子郵件。 若要避免這種情況，請對每個使用者端使用不同的MTA。
-   * 如果您在單一使用者端的多個執行個體（開發、測試、生產）中使用相同的MTA，則從所有三個執行個體傳送的訊息將由dataLogPath選項複製。
+   * 如果您與多個使用者端共用MTA，且其中一個已啟用此選項，則此使用者端將存取共用相同MTA的其他使用者端的所有電子郵件。 若要避免這種情況，請對每個使用者端使用不同的MTA。
+   * 如果您針對單一使用者端在多個執行個體（開發、測試、生產）中使用相同的MTA，則從所有三個執行個體傳送的訊息將由dataLogPath選項複製。
 
 * **每個連線的電子郵件**：密件副本電子郵件封存的運作方式是開啟連線，並嘗試透過該連線傳送所有電子郵件。 Adobe建議您與內部技術連絡人確認指定的連線可接受的電子郵件數量。 增加此數目可能會對BCC輸送量產生重大影響。
-* **密件副本傳送IP**：目前，密件副本電子郵件不會透過一般MTA代理傳送。 而是會開啟從MTA伺服器到目的地電子郵件伺服器的直接連線。 這表示您可能需要根據您的電子郵件伺服器設定，將其他IP新增到您網路上的允許清單。
+* **密件副本傳送IP**：目前，密件副本電子郵件不會透過一般MTA代理傳送。 而是會開啟從MTA伺服器到目的地電子郵件伺服器的直接連線。 這表示根據您的電子郵件伺服器設定，您可能需要將其他IP新增到您網路上的允許清單。
 
 <!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
 

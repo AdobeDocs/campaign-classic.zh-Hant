@@ -2,12 +2,13 @@
 product: campaign
 title: 安裝Campaign Classic內建套件
 description: 瞭解如何安裝Campaign內建套件
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1278'
 ht-degree: 13%
 
 ---
@@ -18,15 +19,15 @@ ht-degree: 13%
 
 ## 關於內建套件 {#campaign-standard-packages}
 
-內建套件包含一組功能，可依您的需求及合約進行安裝。 以下提供Campaign內建套件的完整清單。
+內建套件包含一組功能，可根據您的需求及合約進行安裝。 以下提供Campaign內建套件的完整清單。
 
 >[!CAUTION]
 >
 >您只能安裝與授權合約中提及之選項對應的套件。
 >
->安裝新套件可能會影響您的所有平台：在最終部署之前，必須測試及驗證套件。
+>安裝新套件可能會影響您的所有平台：它必須在最終部署之前進行測試和驗證。
 >
->安裝套件後，您就無法解除安裝它。
+>安裝套裝軟體後，您就無法解除安裝它。
 >
 >作為託管或混合客戶，請聯絡Adobe以部署新的內建套件。
 
@@ -34,17 +35,17 @@ ht-degree: 13%
 
 1. 從存取套件匯入精靈 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign使用者端主控台中。
 1. 選取 **[!UICONTROL Install a standard package]**。
-1. 在套件清單中，檢查您要安裝的套件。
+1. 在套件清單中，核取您要安裝的套件。
    >[!NOTE]
    >
-   >套件呈現灰色時，表示已安裝或套件與執行個體不相容。 相容性在下表中詳細說明。
-1. 按一下 **[!UICONTROL Next]**，則 **[!UICONTROL Start]** 以開始套件安裝。
+   >當套件變灰時，表示已安裝或它不符合您的執行個體。 相容性在下表中詳細說明。
+1. 按一下 **[!UICONTROL Next]**，然後 **[!UICONTROL Start]** 以開始安裝封裝。
 
    安裝套件後，進度列會顯示 **100%** 而且您會在安裝記錄檔中看到下列訊息： **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** 安裝視窗。
 
-套件現已安裝。
+套件現在已安裝。
 
 ### 現成可用的套件清單 {#list-of-standard-packages}
 
@@ -61,7 +62,7 @@ ht-degree: 13%
  <tbody> 
   <tr> 
    <td> 傳遞<br /> </td> 
-   <td> 監控傳送訊息時遇到的傳遞和最終問題。 <a href="../../delivery/using/about-delivery-monitoring.md">了解更多</a><br /> </td> 
+   <td> 監視傳遞，以及傳送訊息時最終遇到的問題。 <a href="../../delivery/using/about-delivery-monitoring.md">了解更多</a><br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -70,8 +71,8 @@ ht-degree: 13%
    <td> 行銷</td>
   </tr> 
   <tr> 
-   <td> 行銷資源(RM)<br /> </td> 
-   <td> 藉由管理及追蹤任務、預算及行銷資源，以合作模式控制行銷動作。 <a href="../../mrm/using/about-marketing-resource-management.md">了解更多</a> <br /> </td> 
+   <td> 行銷資源(MRM)<br /> </td> 
+   <td> 藉由提供任務、預算與行銷資源的管理與追蹤，以合作模式控制行銷動作。 <a href="../../mrm/using/about-marketing-resource-management.md">了解更多</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 
@@ -81,7 +82,7 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 透過執行例項控制優惠方案引擎。 選填。<br /> </td> 
-   <td> 套裝軟體，可安裝在優惠方案引擎的控制執行個體上（互動）。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">了解更多</a> </td> 
+   <td> 要在優惠方案引擎的控制例項上安裝的套件（互動）。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">了解更多</a> </td> 
    <td> 行銷<br /> </td>  
   </tr> 
   <tr> 
@@ -97,7 +98,7 @@ ht-degree: 13%
   </tr--> 
   <tr> 
    <td> 社交網路（社交行銷） <br /> </td> 
-   <td> 將Adobe Campaign與Twitter和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解更多</a> <br /> </td> 
+   <td> 同步Adobe Campaign與Twitter和Facebook。 <a href="../../social/using/about-social-marketing.md">了解更多</a> <br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -112,12 +113,12 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> LINE 頻道<br /> </td> 
-   <td> 透過Adobe Campaign使用LINE頻道傳送傳遞。 選填。異動訊息（訊息中心封裝）為必要。 <a href="../../delivery/using/line-channel.md">了解更多</a> <br /> </td> 
+   <td> 透過Adobe Campaign使用LINE頻道傳送傳遞。 選填。強制異動訊息（訊息中心封裝）。 <a href="../../delivery/using/line-channel.md">了解更多</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
    <td> 直接郵件頻道<br /> </td> 
-   <td> 透過Adobe Campaign使用直接郵件通道傳送傳遞。 選填。<a href="../../delivery/using/about-direct-mail-channel.md">了解更多</a><br /> </td> 
+   <td> 透過Adobe Campaign使用直接郵件通道來傳送傳遞。 選填。<a href="../../delivery/using/about-direct-mail-channel.md">了解更多</a><br /> </td> 
    <td> 全部<br /> </td>
   </tr> 
   <tr> 
@@ -141,43 +142,43 @@ ht-degree: 13%
    <td> </td>
   </tr> 
   <tr> 
-   <td> 線上調查（調查管理員）<br /> </td> 
+   <td> 線上意見調查（意見調查管理員）<br /> </td> 
    <td> 建立和管理線上表單，以新增或修改設定檔資訊、訂閱、取消訂閱或競爭者輸入表單。 選填。<a href="../../surveys/using/about-surveys.md">了解更多</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
-   <td> 行銷分析<br /> </td> 
-   <td> 可讓您分析和測量資料、計算統計資料、簡化和最佳化報告的建立和計算。 您也可以建立報告並建置目標母體。 選填。<a href="../../reporting/using/ac-cubes.md">了解更多</a><br /> </td> 
+   <td> Marketing Analytics<br /> </td> 
+   <td> 可讓您分析和測量資料、計算統計資料、簡化和最佳化報告建立和計算。 您也可以建立報告並建置目標母體。 選填。<a href="../../reporting/using/ac-cubes.md">了解更多</a><br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
    <td> 回應管理員<br /> </td> 
-   <td> 測量行銷活動的成功和盈利能力，或為所有溝通管道提供建議。  選填。<a href="../../response/using/about-response-manager.md">了解更多</a> <br /> </td> 
+   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。<a href="../../response/using/about-response-manager.md">了解更多</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
    <td> 存取外部資料（同盟資料存取）<br /> </td> 
-   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您可以在不變更Adobe Campaign資料結構的情況下存取外部資料。  選填。<a href="../../workflow/using/accessing-an-external-database--fda-.md">了解更多</a> <br /> </td> 
+   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。<a href="../../workflow/using/accessing-an-external-database--fda-.md">了解更多</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
    <td> 行銷活動最佳化<br /> </td> 
-   <td> 控制、篩選及監控傳遞的傳送，以便傳送的訊息最符合客戶的需求和期望，並遵守公司的通訊政策。 選填。<a href="../../campaign-opt/using/about-campaign-typologies.md">了解更多</a> <br /> </td> 
+   <td> 控制、篩選及監控傳遞的傳送，使傳送的訊息最符合客戶的需求和期望，並遵守公司的通訊政策。 選填。<a href="../../campaign-opt/using/about-campaign-typologies.md">了解更多</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳遞能力監控（電子郵件傳遞能力）<br /> </td> 
-   <td> 衡量促銷活動成功抵達收件者收件匣而無跳出或標示為垃圾訊息的程度。 選填。<a href="../../delivery/using/about-deliverability.md">了解更多</a> <br /> </td> 
+   <td> 測量您的行銷活動在到達收件者的收件匣時不會退回或標示為垃圾訊息的成功。 選填。<a href="../../delivery/using/about-deliverability.md">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 
    <td> 優惠券管理<br /> </td> 
-   <td> 建立一組抵用券以新增至即將推出的行銷優惠方案。 選填。<a href="../../delivery/using/personalized-coupons.md">了解更多</a> <br /> </td> 
+   <td> 建立一組優惠券以新增至即將推出的行銷優惠方案。 選填。<a href="../../delivery/using/personalized-coupons.md">了解更多</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
    <td> 收件匣轉譯(IR)<br /> </td> 
-   <td> 可讓您預覽在不同內容中傳送的訊息，並在主要桌上型電腦和應用程式中檢查相容性。 選填。<a href="../../delivery/using/inbox-rendering.md">了解更多</a><br /> </td> 
+   <td> 可讓您預覽在可能接收訊息的不同內容中傳送的訊息，並檢查主要案頭和應用程式中的相容性。 選填。<a href="../../delivery/using/inbox-rendering.md">了解更多</a><br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -197,12 +198,12 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> AEM整合<br /> </td> 
-   <td> 可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單，以便從AEM內容編輯功能以及Adobe Campaign的傳送功能中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
+   <td> 可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單，以便受益於AEM內容編輯功能以及Adobe Campaign的傳送功能。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 
    <td> Adobe Experience Cloud共用受眾整合<br /> </td> 
-   <td> 可讓您與Adobe Experience Cloud解決方案和核心服務交換和共用受眾/區段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解更多</a> <br /> </td> 
+   <td> 可讓您與Adobe Experience Cloud解決方案和核心服務交換及共用對象/區段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解更多</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -212,27 +213,27 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 隱私權資料保護法規<br /> </td> 
-   <td> 包含可協助您遵循Campaign Classic隱私權規範的其他功能。 <a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
+   <td> 包含可協助您在Campaign Classic中遵循隱私權規範的其他功能。 <a href="https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
    <td> 轉移至中間來源 <br /> </td> 
-   <td> 詳細說明中間來源伺服器的安裝和設定，以及可讓協力廠商以中間來源模式傳送訊息的執行個體部署。 選填。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
+   <td> 詳細說明中間來源伺服器的安裝和設定，以及例項的部署，此例項可讓第三方以中間來源模式傳送訊息。 選填。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 
    <td> 中間來源平台<br /> </td> 
-   <td> 此設定是託管(ASP)設定與內部化之間的最佳中繼解決方案。 向外執行元件是在Adobe Campaign託管的「中間來源」伺服器上執行。 選填。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
+   <td> 此設定是託管(ASP)設定與內部化之間的最佳中繼解決方案。 在Adobe Campaign託管的「中間來源」伺服器上執行向外執行元件。 選填。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
    <td> 中間來源 </td> 
   </tr> 
   <tr> 
    <td> AMP支援<br /> </td> 
-   <td> 可讓您使用新的互動式AMP作為電子郵件格式，並傳送動態電子郵件。 選填。<a href="../../delivery/using/defining-interactive-content.md">了解更多</a> <br /> </td> 
+   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。<a href="../../delivery/using/defining-interactive-content.md">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 
    <td> ACS聯結器（已棄用）<br /> </td> 
-   <td> Bridges Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign v7中的整合功能，可自動將資料複製到Campaign Standard，將兩個應用程式的優點整合在一起。 選填。<br /> </td> 
+   <td> 橋接Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign v7的整合功能，可自動將資料複製到Campaign Standard，將兩個應用程式的優點整合在一起。 選填。<br /> </td> 
    <td> 行銷 </td> 
   </tr> 
  </tbody> 
@@ -240,9 +241,9 @@ ht-degree: 13%
 
 ### 訊息中心套件 {#message-center-package}
 
-您必須安裝傳送頻道（電子郵件、行動裝置頻道、行動應用程式頻道、LINE等） 安裝異動訊息（訊息中心套件）之前。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
+您必須安裝傳送頻道（電子郵件、行動裝置頻道、行動應用程式頻道、LINE等） 安裝異動訊息（訊息中心封裝）之前。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
 
-1. 安裝新管道，例如 **行動裝置頻道**，使用套件匯入精靈( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)。
+1. 安裝新的管道，例如 **行動裝置頻道**，使用套件匯入精靈( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)。
 1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，然後選取：
 
    ```
@@ -256,16 +257,16 @@ ht-degree: 13%
 
 ### [!DNL LINE] 頻道設定{#line-package}
 
-若要設定 [!DNL LINE] 頻道，您必須先安裝 [!DNL LINE] 封裝。
+若要設定 [!DNL LINE] 管道，您必須先安裝 [!DNL LINE] 封裝。
 
 在中間來源設定的內容中，您需要：
 
 * 安裝 [!DNL LINE] 行銷和MID執行個體上的套件
 
-* 設定 [!DNL LINE] mkt執行個體上的外部帳戶，以透過變更傳送模式指向中間執行個體。 [了解更多](../../delivery/using/line-channel.md#configure-line-external)
+* 設定 [!DNL LINE] mkt執行個體上的外部帳戶，透過變更傳送模式指向中間執行個體。 [了解更多](../../delivery/using/line-channel.md#configure-line-external)
 
 * 設定 [!DNL LINE] MID執行個體的外部帳戶中的認證。
 
 >[!CAUTION]
 >
->的訊息中心傳遞範本 [!DNL LINE] 如果之前已安裝訊息中心套件，則頻道將不可用 [!DNL LINE].
+>的訊息中心傳遞範本 [!DNL LINE] 如果之前已安裝訊息中心套件，則無法使用頻道 [!DNL LINE].

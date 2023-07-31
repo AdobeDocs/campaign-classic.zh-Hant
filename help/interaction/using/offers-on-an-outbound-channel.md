@@ -2,15 +2,16 @@
 product: campaign
 title: 傳出頻道上的優惠
 description: 傳出頻道上的優惠
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '457'
 ht-degree: 3%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 3%
 
 ## 電子郵件選件傳遞 {#email-offer-delivery}
 
-在我們的資料庫中，有一類前往非洲的旅行優惠方案。 已設定每個優惠方案的適用性、內容與表示方式。 我們現在想要建立行銷活動，透過電子郵件呈現我們的優惠方案。
+在我們的資料庫中，有一個前往非洲的旅行優惠方案類別。 已設定每個優惠方案的適用性、內容與表示方式。 我們現在想要建立行銷活動，透過電子郵件呈現我們的優惠方案。
 
 1. 建立行銷活動和目標定位工作流程。
 
@@ -43,11 +44,11 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_005.png)
 
-1. 關閉選件管理視窗並建立您的傳遞內容。
+1. 關閉選件管理視窗，並建立您的傳遞內容。
 
    ![](assets/offer_delivery_example_006.png)
 
-1. 使用功能表插入第一個優惠方案主張，並選擇HTML演算函式。
+1. 使用功能表插入第一個優惠方案主張，並選擇HTML轉譯函式。
 
    ![](assets/offer_delivery_example_007.png)
 
@@ -55,12 +56,12 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 按一下 **[!UICONTROL Preview]** 若要在傳遞中預覽您的優惠方案，請選取收件者，以便在他們收到優惠方案時預覽優惠方案。
+1. 按一下 **[!UICONTROL Preview]** 若要在傳送中預覽您的優惠，請選取收件者，以便在他們收到優惠時預覽優惠。
 
    ![](assets/offer_delivery_example_009.png)
 
-1. 儲存您的傳送內容並啟動目標定位工作流程。
-1. 開啟您的傳遞，然後按一下 **[!UICONTROL Audit]** 傳遞的索引標籤：您可以看到優惠方案引擎已選取要從目錄中的各種優惠方案提出的主張。
+1. 儲存您的傳送並啟動目標定位工作流程。
+1. 開啟您的傳遞，然後按一下 **[!UICONTROL Audit]** 傳遞的索引標籤：您可以看到優惠方案引擎已選取要從目錄中的各種優惠方案進行的主張。
 
    ![](assets/offer_delivery_example_010.png)
 
@@ -91,9 +92,9 @@ ht-degree: 3%
    ![](assets/offer_simulation_example_006.png)
 
 1. 輸入有效日期。 您至少必須輸入開始日期。 這可讓優惠方案引擎篩選優惠方案，並選擇在指定日期有效的優惠方案。
-1. 如有必要，請指定一或多個主題，將選件數量限制在設定中包含此關鍵字的選件數量。
+1. 如有必要，請指定一或多個主題，將選件數量限製為設定中包含此關鍵字的選件數量。
 
-   在我們的範例中， **旅遊** category包含兩個子類別，其中包含兩個獨立的主題。 我們想要使用對優惠方案執行模擬 **客戶>1年** 主題。
+   在我們的範例中， **旅遊** 類別包含兩個子類別，子類別有兩個獨立的主題。 我們想使用對優惠方案執行模擬 **客戶>1年** 主題。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -107,13 +108,13 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_009.png)
 
-1. 儲存您的設定，然後按一下 **[!UICONTROL Start]** 在 **[!UICONTROL Dashboard]** 標籤來執行模擬。
+1. 儲存您的設定，然後按一下 **[!UICONTROL Start]** 在 **[!UICONTROL Dashboard]** 標籤以執行模擬。
 
    ![](assets/offer_simulation_example_010.png)
 
 1. 模擬完成後，請查閱 **[!UICONTROL Results]** 以取得每個優惠方案主張的詳細劃分。
 
-   在我們的範例中，優惠方案引擎已將優惠方案劃分根據3個主張。
+   在我們的範例中，優惠方案引擎是根據3個主張進行優惠方案劃分。
 
    ![](assets/offer_simulation_example_011.png)
 

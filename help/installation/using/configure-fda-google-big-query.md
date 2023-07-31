@@ -2,14 +2,15 @@
 product: campaign
 title: 設定Google BigQuery的存取權
 description: 瞭解如何在FDA中設定Google BigQuery的存取權
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
@@ -18,11 +19,11 @@ ht-degree: 2%
 
 
 
-使用Adobe Campaign Classic **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定對的存取權 [!DNL Google BigQuery].
+使用Adobe Campaign Classic **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定存取權至 [!DNL Google BigQuery].
 
 1. 設定 [!DNL Google BigQuery] 於 [Windows](#google-windows) 或 [Linux](#google-linux)
 1. 設定 [!DNL Google BigQuery] [外部帳戶](#google-external) 在Adobe Campaign Classic中
-1. 設定 [!DNL Google BigQuery] 聯結器大量載入開啟 [Windows](#bulk-load-windows) 或 [Linux](#bulk-load-linux)
+1. 設定 [!DNL Google BigQuery] 聯結器大量載入 [Windows](#bulk-load-windows) 或 [Linux](#bulk-load-linux)
 
 >[!NOTE]
 >
@@ -42,33 +43,33 @@ ht-degree: 2%
 
    * **[!UICONTROL Project]**：建立或使用現有專案。
 
-      如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+     如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Service account]**：建立服務帳戶。
 
-      如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+     如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Key File Path]**：此 **[!UICONTROL Service account]** 需要 **[!UICONTROL Key File]** 對於 [!DNL Google BigQuery] 透過ODBC連線。
+   * **[!UICONTROL Key File Path]**：此 **[!UICONTROL Service account]** 需要 **[!UICONTROL Key File]** 針對 [!DNL Google BigQuery] 透過ODBC連線。
 
-      如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
+     如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
-   * **[!UICONTROL Dataset]**： **[!UICONTROL Dataset]** 對於ODBC連線是選用的。 因為每個查詢都需要提供表格所在的資料集，需指定 **[!UICONTROL Dataset]** 下列專案為必填： [!DNL Google BigQuery] Adobe Campaign Classic中的FDA Connector。
+   * **[!UICONTROL Dataset]**： **[!UICONTROL Dataset]** 是ODBC連線的選用專案。 因為每個查詢都需要提供表格所在的資料集，需指定 **[!UICONTROL Dataset]** 為下列專案強制性： [!DNL Google BigQuery] Adobe Campaign Classic中的FDA Connector。
 
-      如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/bigquery/docs/datasets).
+     如需詳細資訊，請參閱此 [頁面](https://cloud.google.com/bigquery/docs/datasets).
 
-1. 然後，您可以在Adobe Campaign Classic中設定 [!DNL Google BigQuery] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#google-external).
+1. 接著，您可以在Adobe Campaign Classic中設定 [!DNL Google BigQuery] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#google-external).
 
 ### 在Windows上設定大量載入 {#bulk-load-window}
 
 >[!NOTE]
 >
->您需要安裝Python才能使Google Cloud SDK運作。
+>您必須安裝Python，Google Cloud SDK才能運作。
 >
 >我們建議使用Python3，請參閱此 [頁面](https://www.python.org/downloads/).
 
 大量載入公用程式可讓您透過Google Cloud SDK更快地進行傳輸。
 
-1. 從此下載Windows 64位元(x86_64)封存 [頁面](https://cloud.google.com/sdk/docs/downloads-versioned-archives) 並將其解壓縮至對應的目錄。
+1. 從此檔案下載Windows 64位元(x86_64)封存 [頁面](https://cloud.google.com/sdk/docs/downloads-versioned-archives) 並將其擷取至對應的目錄中。
 
 1. 執行 `google-cloud-sdk\install.sh` 指令碼。 您需要接受路徑變數的設定。
 
@@ -80,13 +81,13 @@ ht-degree: 2%
 
    ![](assets/google-big-query_1.png)
 
-1. 重新啟動Adobe Campaign Classic以納入變更考量。
+1. 重新啟動Adobe Campaign Classic以納入變更。
 
 ## Linux上的Google BigQuery {#google-linux}
 
 ### 在Linux上設定的驅動程式 {#driver-linux}
 
-設定驅動程式之前，請注意指令碼和命令必須由root使用者執行。 在執行指令碼時，也建議使用Google DNS 8.8.8.8。
+設定驅動程式之前，請注意，指令碼和命令必須由root使用者執行。 此外也建議在執行指令碼時使用Google DNS 8.8.8.8。
 
 進行設定 [!DNL Google BigQuery] 在Linux上，請遵循下列步驟：
 
@@ -94,35 +95,35 @@ ht-degree: 2%
 
    * 若為Red Hat/CentOS：
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * 對於Debian：
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. 安裝前更新系統：
 
    * 若為Red Hat/CentOS：
 
-      ```
-      # install unixODBC driver manager
-      yum install -y unixODBC
-      ```
+     ```
+     # install unixODBC driver manager
+     yum install -y unixODBC
+     ```
 
    * 對於Debian：
 
-      ```
-      # install unixODBC driver manager
-      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
-      ```
+     ```
+     # install unixODBC driver manager
+     apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+     ```
 
 1. 在執行指令碼之前，您可以指定 — help引數來取得更多資訊：
 
@@ -138,11 +139,11 @@ ht-degree: 2%
    ./bigquery_odbc-setup.sh
    ```
 
-### 在Linux上設定大量載入 {#bulk-load-linux}
+### 在Linux上設定大量負載 {#bulk-load-linux}
 
 >[!NOTE]
 >
->您需要安裝Python才能使Google Cloud SDK運作。
+>您必須安裝Python，Google Cloud SDK才能運作。
 >
 >我們建議使用Python3，請參閱此 [頁面](https://www.python.org/downloads/).
 
@@ -152,19 +153,19 @@ ht-degree: 2%
 
    * 若為Red Hat/CentOS：
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y python3
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y python3
+     ```
 
    * 對於Debian：
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y python3
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y python3
+     ```
 
 1. 存取指令碼所在的目錄，然後執行下列指令碼：
 
@@ -177,7 +178,7 @@ ht-degree: 2%
 
 您需要建立 [!DNL Google BigQuery] 將您的Adobe Campaign Classic執行個體連線到您的外部帳戶 [!DNL Google BigQuery] 外部資料庫。
 
-1. 來自Adobe Campaign Classic **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 從Adobe Campaign Classic **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. 按一下&#x200B;**[!UICONTROL New]**。
 
@@ -194,7 +195,8 @@ ht-degree: 2%
    * **[!UICONTROL Key file Path]**：
       * **[!UICONTROL Upload key file to the server]**：選取 **[!UICONTROL Click here to upload]** 如果您選擇透過Adobe Campaign Classic上傳金鑰。
 
-      * **[!UICONTROL Enter manually the key file path]**：如果您選擇使用預先存在的索引鍵，請在此欄位中複製/貼上您的絕對路徑。
+      * **[!UICONTROL Enter manually the key file path]**：如果您選擇使用預先存在的金鑰，請在此欄位中複製/貼上您的絕對路徑。
+
    * **[!UICONTROL Dataset]**：您的名稱 **[!UICONTROL Dataset]**. 如需詳細資訊，請參閱 [Google Cloud檔案](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)
@@ -207,5 +209,5 @@ ht-degree: 2%
 | ProxyHost | 可連線到Proxy的主機名稱或IP位址。 |
 | ProxyPort | 執行Proxy的連線埠號碼，例如8080 |
 | ProxyUid | 用於已驗證Proxy的使用者名稱 |
-| ProxyPwd | ProxyUid密碼 |
-| bqpath | 請注意，這僅適用於大量載入工具(Cloud SDK)。 </br> 若要避免使用PATH變數或google-cloud-sdk目錄必須移至其他位置，您可以使用此選項指定伺服器上cloud sdk bin目錄的確切路徑。 |
+| proxypwd | ProxyUid密碼 |
+| bqpath | 請注意，這僅適用於大量載入工具(Cloud SDK)。 </br> 若要避免使用PATH變數或google-cloud-sdk目錄必須移至其他位置，您可以使用此選項指定伺服器上cloud sdk bin目錄的精確路徑。 |
