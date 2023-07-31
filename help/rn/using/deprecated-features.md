@@ -3,14 +3,14 @@ product: campaign
 title: Campaign Classic 已棄用和移除的功能
 description: 本頁列出 Adobe Campaign Classic 已過時和已移除的功能
 feature: Release Notes
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1515'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
