@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '2595'
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -268,9 +268,6 @@ _2021 年 2 月 22 日_
 * 現在，您可擷取所有類別的回饋，以進行完整精確的報告。
 * 已傳遞指標的計算現在以增強型 MTA 的即時回饋為依據，以改進精確度和反應度。
 * EFS 可解決同步軟退回的延遲問題。
-
-如需詳細資訊，請參閱[詳細文件](../../delivery/using/sending-with-enhanced-mta.md#efs)。
-如果您有興趣參與此私人測試版，請填妥此[表單](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u)，我們將會與您聯絡。
 
 **其他變更**
 
