@@ -2,8 +2,9 @@
 product: campaign
 title: 元素和屬性 — dbindex元素
 description: dbindex元素
+feature: Schema Extension
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 1%
@@ -40,30 +41,30 @@ dbindex：==keyfield
 
 ## 使用與使用內容 {#use-and-context-of-use-3}
 
-可以定義多個索引。 一個索引可以參照表格的一或多個欄位。 索引宣告通常遵循主要結構描述元素的定義。
+可以定義多個索引。 一個索引可以參考資料表的一或多個欄位。 索引宣告通常遵循主要結構描述元素的定義。
 
-的順序 `<keyfield>` 中定義的元素 `<dbindex>` 非常重要。 第一個 `<keyfield>` 必須是查詢主要依據的索引標準。
+的順序 `<keyfield>` 在中定義的元素 `<dbindex>` 非常重要。 第一個 `<keyfield>` 必須是查詢主要依據的索引標準。
 
-資料庫中索引的名稱是透過串連資料表的名稱和索引名稱來計算的。 例如：資料表名稱&quot;Sample&quot;、名稱空間&quot;Cus&quot;、索引名稱&quot;MyIndex&quot;->建立索引時索引欄位的名稱，進行查詢：&quot;CusSample_myIndex&quot;。
+資料庫中索引的名稱是透過串連資料表的名稱和索引的名稱來計算的。 例如：資料表名稱&quot;Sample&quot;、名稱空間&quot;Cus&quot;、索引名稱&quot;MyIndex&quot;->建立索引期間索引欄位的名稱查詢：&quot;CusSample_myIndex&quot;。
 
 ## 屬性說明 {#attribute-description-3}
 
 * **操作（字串）(_O)**：定義資料庫中的寫入型別。
 
-   此屬性主要用於擴充現成可用的結構描述。
+  此屬性主要用於擴充現成可用的結構描述。
 
-   可存取的值包括：
+  可存取的值包括：
 
-   * &quot;none&quot;：單獨和解。 這表示Adobe Campaign將復原元素，而不會更新元素，如果元素不存在則產生錯誤。
-   * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign會更新元素，或是在元素不存在時建立元素。
+   * &quot;none&quot;：僅調解。 這表示Adobe Campaign將會復原元素，而不會更新元素，如果元素不存在則會產生錯誤。
+   * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign將更新元素，或如果元素不存在則建立元素。
    * &quot;insert&quot;： insertion. 這表示Adobe Campaign會插入元素，而不檢查元素是否存在。
-   * &quot;update&quot;：更新。 這表示Adobe Campaign會更新元素，或是在元素不存在時產生錯誤。
-   * &quot;delete&quot;：刪除。 這表示Adobe Campaign將會復原和刪除元素。
+   * &quot;update&quot;：更新。 這表示Adobe Campaign將更新元素，如果元素不存在則會產生錯誤。
+   * &quot;delete&quot;：刪除。 這表示Adobe Campaign將復原和刪除元素。
 
-* **applicableIf （字串）**：將索引列入考量的條件 — 接收XTK運算式。
+* **appliedIf （字串）**：考慮索引的條件 — 接收XTK運算式。
 * **標籤（字串）**：索引標籤。
 * **名稱(MNTOKEN)**：唯一索引名稱。
-* **唯一（布林值）**：如果已啟動此選項(@unique=&quot;true&quot;)，則屬性會保證其欄位中索引的唯一性。
+* **唯一（布林值）**：如果已啟用此選項(@unique=&quot;true&quot;)，屬性會保證其欄位中索引的唯一性。
 
 ## 範例 {#examples-3}
 

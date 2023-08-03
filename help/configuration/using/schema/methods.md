@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: 結構描述元素和屬性 — methods元素
+title: 結構元素和屬性 — methods元素
 description: 方法元素
+feature: Schema Extension
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 11%
@@ -32,7 +33,7 @@ ht-degree: 11%
 
 ## 說明 {#description-11}
 
-此元素可讓您定義 `<method>`  元素。 宣告方法時必須使用。
+此元素可讓您定義 `<method>`  元素。 宣告方法時強制使用。
 
 ## 屬性說明 {#attribute-description-11}
 

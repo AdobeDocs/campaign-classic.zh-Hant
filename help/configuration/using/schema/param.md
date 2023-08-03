@@ -2,8 +2,9 @@
 product: campaign
 title: 結構描述元素和屬性 — param元素
 description: 引數元素
+feature: Schema Extension
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 7%
@@ -45,13 +46,13 @@ param：==help
 ## 屬性說明 {#attribute-description-12}
 
 * **desc （字串）**：相關說明 `<param>` 元素。
-* **inout （字串）**：此屬性會定義引數是否在SOAP呼叫的輸入(in)或輸出(out)。 如果未指定此屬性，預設引數為輸入(&quot;@inout=in&quot;)。
+* **輸入（字串）**：此屬性定義引數是否在SOAP呼叫的輸入(in)或輸出(out)。 如果未指定此屬性，預設引數為輸入(&quot;@inout=in&quot;)。
 * **標籤（字串）**： `<param>` 標籤
 * **可本地化（字串）**：如果已啟動，此屬性會告訴收集工具復原「@label」屬性的值以供翻譯（內部使用）。
 * **名稱(MNTOKEN)**：的內部名稱 `<param>`
 * **型別（字串）**：此屬性會定義 `<param>` 元素
 
-   可用型別清單：
+  可用型別清單：
 
    * 任何
    * 紙匣
@@ -71,7 +72,7 @@ param：==help
    * html
    * int64
    * 連結
-   * long
+   * 長
    * 備忘錄
    * MNTOKEN
    * percent
@@ -84,7 +85,7 @@ param：==help
 
 ## 範例 {#examples-9}
 
-字元字串型別之「serviceName」輸入設定的定義：
+字元字串型別「serviceName」輸入設定的定義：
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"

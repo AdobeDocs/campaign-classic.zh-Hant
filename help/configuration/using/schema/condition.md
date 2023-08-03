@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: 結構描述元素和屬性 — 條件元素
+title: 結構元素和屬性 — 條件元素
 description: 條件元素
+feature: Schema Extension
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -38,7 +39,7 @@ condition：==EMPTY
 
 ## 使用與使用內容 {#use-and-context-of-use-2}
 
-一 `<sysfiler>`  元素可包含數個篩選條件。
+一 `<sysfiler>`  元素可以包含數個篩選條件。
 
 ## 屬性說明 {#attribute-description-2}
 

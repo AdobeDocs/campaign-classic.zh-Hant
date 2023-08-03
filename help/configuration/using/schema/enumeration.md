@@ -2,8 +2,9 @@
 product: campaign
 title: 結構描述元素和屬性 — 列舉元素
 description: 列舉元素
+feature: Schema Extension
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 6%
@@ -46,9 +47,9 @@ ht-degree: 6%
 
 ## 屬性說明 {#attribute-description-5}
 
-* **basetype （字串）**：儲存在分項清單中的值型別。
+* **basetype （字串）**：列舉中儲存的值的型別。
 
-   可用型別清單：
+  可用型別清單：
 
    * 任何
    * 紙匣
@@ -68,7 +69,7 @@ ht-degree: 6%
    * html
    * int64
    * 連結
-   * long
+   * 長
    * 備忘錄
    * MNTOKEN
    * percent
@@ -79,11 +80,11 @@ ht-degree: 6%
    * 時間跨度
    * uuid
 
-* **預設（字串）**：預設值。 預設值也可以是列舉中定義的值之一。
+* **預設（字串）**：預設值。 預設值也可以是列舉中定義的其中一個值。
 * **desc （字串）**：分項清單說明。
 * **標籤（字串）**：分項清單標籤。
 * **名稱（字串）**：分項清單的內部名稱。
-* **範本（字串）**：此屬性會定義 `<enumeration>` 由多個結構描述共用的元素。 定義會自動複製到目前的結構描述中。
+* **範本（字串）**：此屬性會定義 `<enumeration>` 由數個結構描述共用的元素。 定義會自動複製到目前的結構描述中。
 
 ## 範例 {#examples-4}
 

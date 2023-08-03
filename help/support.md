@@ -2,12 +2,13 @@
 product: campaign
 title: Campaign Classic的說明與支援選項
 description: 需要Campaign Classic的支援嗎？ 您來對地方了！
+feature: Troubleshooting
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '755'
+ht-degree: 69%
 
 ---
 
@@ -61,11 +62,11 @@ ht-degree: 0%
    <td valign="top">
         <ul>
         <li><a href="workflow/using/workflow-best-practices.md">工作流程最佳實務</a></li>
-        <li><a href="workflow/using/monitoring-technical-workflows.md">技術工作流程監控</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">技術工作流程監視</a></li>
         <li><a href="delivery/using/about-message-tracking.md">認識追蹤管理</a></li>
         <li><a href="production/using/monitoring-guidelines.md">探索監控工具</a></li>
         <li><a href="platform/using/import-export-workflows.md">透過工作流程匯入資料</a></li>
-        <li><a href="delivery/using/steps-sending-the-delivery.md">以多個批次傳送訊息</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">以多個波段傳送訊息</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">設計電子郵件內容</a></li>
         <li><a href="delivery/using/delivery-best-practices.md">關於傳遞的最佳實務</a></li>
         </ul>
@@ -99,7 +100,7 @@ ht-degree: 0%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)。
 >
->請注意，您的執行個體必須託管於AWS上，並升級至最新的 [GA建置](rn/using/rn-overview.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
+>請注意，您的執行個體必須託管於AWS上，並使用最新版本升級 [GA版本](rn/using/rn-overview.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 
 ### 如何存取控制面板？
 
@@ -124,7 +125,7 @@ ht-degree: 0%
 
 瞭解如何在「控制面板」中管理Campaign Classic執行個體設定。 請前往下列頁面，瞭解更多資訊：
 * [在允許清單中新增IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant) 以存取您的Campaign執行個體
-* [管理URL許可權](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+* [管理URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
 * [存取執行個體詳細資訊](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
 * [管理用於資料加密的GPG金鑰](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
 
@@ -140,10 +141,10 @@ ht-degree: 0%
 
 ### 存取 Campaign 下載中心
 
-作為Campaign管理員，瀏覽 [此頁面](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以存取Experience Cloud軟體發佈。
+作為Campaign管理員，瀏覽 [此頁面](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以存取Experience CloudSoftware Distribution。
 
 ### 建立票證或開始聊天
 
 建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
 
-若要在該新系統中記錄問題或啟動聊天工作階段，請連線至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 請依照中所述的詳細過程進行操作 [此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}.
+如要在該新系統中記錄問題或啟動聊天工作階段，請連線至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 請依照中說明的詳細過程進行操作 [此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}.

@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: 結構描述元素和屬性 — 說明元素
+title: 結構元素和屬性 — 說明元素
 description: 說明元素
+feature: Schema Extension
 exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 12%

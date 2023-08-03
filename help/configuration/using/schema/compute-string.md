@@ -2,8 +2,9 @@
 product: campaign
 title: 元素和屬性 — 計算字串元素
 description: 計算字串元素
+feature: Schema Extension
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 5%
@@ -16,7 +17,7 @@ ht-degree: 5%
 
 ## 內容模型 {#content-model-1}
 
-compute-string：==EMPTY
+計算字串：==EMPTY
 
 ## 屬性 {#attributes-1}
 
@@ -32,11 +33,11 @@ compute-string：==EMPTY
 
 ## 說明 {#description-1}
 
-此 `<compute-string>` 元素可讓您根據XTK運算式產生字串，以在介面中根據數個值顯示「建立」標籤。
+此 `<compute-string>` 元素可讓您根據XTK運算式產生字串，以根據數個值在介面中顯示「建置」標籤。
 
 ## 使用與使用內容 {#use-and-context-of-use-1}
 
-當否 `<compute-string>` 已定義， `<compute-string>` 在預設情況下，會使用結構描述中主索引鍵的值輸入元素。
+當否 `<compute-string>` 已定義， `<compute-string>` 在預設情況下，會使用架構中主索引鍵的值輸入元素。
 
 ## 屬性說明 {#attribute-description-1}
 
