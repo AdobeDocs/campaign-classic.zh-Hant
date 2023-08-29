@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 與Adobe Campaign Classic中的增強型MTA搭配使用
+title: 使用Adobe Campaign Classic中的增強型MTA傳送
 description: 瞭解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍和特性
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 此 **Adobe Campaign增強型MTA** （郵件傳輸代理程式）提供升級的傳送基礎架構，可改善傳遞能力、信譽、輸送量、報告、退回處理、IP提升及連線設定管理。
 
-實作它可改善擴充性、提高傳送輸送量，並幫助更快速地傳送更多電子郵件。 這是透過新的適應性傳送技術達成，該技術會根據網際網路服務提供者的意見來即時變更電子郵件傳送設定。
+實作它可改善擴充性、提高傳送輸送量，並協助更快速地傳送更多電子郵件。 這是透過新的適應性傳送技術達成，該技術會根據網際網路服務提供者的意見來即時變更電子郵件傳送設定。
 
 >[!IMPORTANT]
 >
