@@ -5,8 +5,9 @@ description: 瞭解如何追蹤和監控訊息
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Reporting
+role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 3%
@@ -14,8 +15,6 @@ ht-degree: 3%
 ---
 
 # 追蹤和監視 {#track-and-monitor}
-
-
 
 您已按一下 **傳送** 按鈕？ 讓我們看看會發生什麼事。 傳送後，Adobe Campaign可讓您追蹤已傳送的訊息，並探索收件者對傳送的反應。 這可協助您改善未來的傳送，並最佳化後續的行銷活動。
 

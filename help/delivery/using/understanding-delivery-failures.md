@@ -5,8 +5,9 @@ description: 瞭解如何瞭解傳送失敗
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 17%
@@ -14,8 +15,6 @@ ht-degree: 17%
 ---
 
 # 瞭解傳遞失敗{#understanding-delivery-failures}
-
-
 
 ## 瞭解傳送故障 {#about-delivery-failures}
 

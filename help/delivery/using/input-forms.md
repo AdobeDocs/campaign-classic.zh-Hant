@@ -2,20 +2,19 @@
 product: campaign
 title: 輸入表單
 description: 瞭解如何在Campaign中使用輸入表單
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Data Management
+role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
 
 # 輸入表單{#input-forms}
-
-
 
 以下是有關在Adobe Campaign中使用輸入表單的一些一般原則。
 
@@ -23,7 +22,7 @@ Forms的詳細資訊，請參閱 [本節](../../configuration/using/identifying-
 
 ## 表單結構 {#form-structure}
 
-輸入表單的XML檔案必須包含 **`<form>`** 根元素具有 **名稱** 和 **名稱空間** 屬性，分別填入表單名稱及其名稱空間。
+輸入表單的XML檔案必須包含 **`<form>`** 根元素具有 **名稱** 和 **名稱空間** 屬性以分別填入表單名稱及其名稱空間。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -49,33 +48,33 @@ Forms的詳細資訊，請參閱 [本節](../../configuration/using/identifying-
 
 編輯元素的說明開頭為 **`<form>`** 根元素。
 
-編輯控制項輸入於 **`<input>`** 元素搭配 **xpath** 包含其結構描述中欄位路徑的屬性。
+編輯控制項輸入於 **`<input>`** 元素與 **xpath** 包含其結構描述中欄位路徑的屬性。
 
 **有關XPath語法的提醒：**
 
-XPath語言在Adobe Campaign中用於參照屬於資料結構描述的元素或屬性。
+XPath語言在Adobe Campaign中用於參照屬於資料結構的元素或屬性。
 
-XPath是一種語法，可讓您在XML檔案的樹狀結構中找出節點。
+XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 元素是以其名稱來指定，而屬性是以字元「@」開頭的名稱來指定。
 
 範例:
 
-* **@date**：選取名稱為「date」的屬性
+* **@date**：選取名為「date」的屬性
 * **chapter/@title**：選取「 」底下的「title」屬性 `<chapter>` 元素
 * **../@date**：從目前元素的父元素中選取日期
 
 編輯控制項會自動適應對應的資料型別，並使用結構描述中定義的標籤。
 
-依預設，每個欄位都會顯示在一行上，並佔用所有可用的空間（視資料型別而定）。
+依預設，每個欄位會顯示在一行上，並佔用所有可用的空間（視資料型別而定）。
 
 >[!CAUTION]
 >
->輸入表單必須參照 **type=&quot;contentForm&quot;** 上的屬性 **`<form>`** 元素來自動新增輸入內容所需的框架。
+>輸入表單必須參考 **type=&quot;contentForm&quot;** 上的屬性 **`<form>`** 元素來自動新增輸入內容所需的框架。
 
 ## 格式 {#formatting}
 
-控制項相對於彼此的排列方式看起來類似於HTML表格中使用的排列方式，可能會將控制項分割成數欄、交錯元素或指定可用空間的佔用。 但請記住，格式僅授權比例分配；您不能為物件指定固定維度。
+控制項相對於彼此的排列方式看起來類似於HTML表格中使用的排列方式，可能會將控制項分割為數個欄、交錯元素或指定可用空間的佔用。 但是請記住，格式僅授權比例分配；您不能為物件指定固定尺寸。
 
 如需詳細資訊，請參閱[本章節](../../configuration/using/form-structure.md#formatting)。
 
@@ -85,7 +84,7 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中找出節點。
 
 ### 欄清單 {#column-list}
 
-此控制項會顯示可編輯的欄清單，其工具列包含「新增」和「刪除」按鈕。
+此控制項會顯示可編輯的欄清單，其工具列包含新增和刪除按鈕。
 
 ![](assets/d_ncs_content_form4.png)
 
@@ -115,7 +114,7 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中找出節點。
 </input>
 ```
 
-此 **toolbarCaption** 屬性會強制工具列的水準對齊，並填入清單上方的標題。
+此 **toolbarCaption** 屬性會強制水準對齊工具列，並填入清單上方的標題。
 
 >[!NOTE]
 >
@@ -123,7 +122,7 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中找出節點。
 
 #### 放大清單 {#zoom-in-a-list}
 
-可在單獨的編輯表單中執行清單資料的插入和編輯。
+可在單獨的編輯表單中插入和編輯清單資料。
 
 在下列情況下會使用清單中的編輯表單：
 
@@ -148,15 +147,15 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中找出節點。
 
 編輯表單的定義是透過 **`<form>`** 元素。 其結構與輸入表單的結構相同。
 
-A **[!UICONTROL Detail]** 按鈕會在以下情況下自動新增： **zoom=&quot;true&quot;** 在清單定義中輸入attribute。 這可讓您在選取的行上開啟編輯表單。
+A **[!UICONTROL Detail]** 按鈕會在以下情況自動新增： **zoom=&quot;true&quot;** 在清單定義中輸入屬性。 這可讓您在選取的行上開啟編輯表單。
 
 >[!NOTE]
 >
->新增 **zoomOnAdd=&quot;true&quot;** attribute會在插入清單的元素時強制呼叫編輯表單。
+>新增 **zoomOnAdd=&quot;true&quot;** 屬性會強制在插入清單的元素時呼叫編輯表單。
 
 ### 索引標籤清單 {#tab-list}
 
-此清單會以標籤的形式顯示集合元素的編輯。
+此清單會以索引標籤的形式顯示集合元素的編輯。
 
 ![](assets/d_ncs_content_form6.png)
 
@@ -180,13 +179,13 @@ A **[!UICONTROL Detail]** 按鈕會在以下情況下自動新增： **zoom=&quo
 
 >[!NOTE]
 >
->當以下動作時，會自動新增左右排序箭頭： **ordered=&quot;true&quot;** 屬性會針對資料結構描述中的收集元素填入。
+>當出現下列情況時，會自動新增左右排序箭頭： **ordered=&quot;true&quot;** 屬性會針對資料結構描述中的收集元素填入。
 
 ## 容器 {#containers}
 
 容器可讓您將一組控制項分組。 它們透過 **`<container>`** 元素。 它們已用來格式化數個欄中的控制項，並用來控制索引標籤清單。
 
-有關容器及如何在輸入表單中使用容器的詳細資訊，請參閱 [本節](../../configuration/using/form-structure.md#containers).
+有關容器及如何在輸入表單中使用的詳細資訊，請參閱 [本節](../../configuration/using/form-structure.md#containers).
 
 ## 編輯表單 {#editing-forms}
 

@@ -5,8 +5,9 @@ description: 瞭解如何設定URL追蹤選項
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Email Design, Personalization
+role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 10%
@@ -14,8 +15,6 @@ ht-degree: 10%
 ---
 
 # 設定 URL 追蹤選項{#personalizing-url-tracking}
-
-
 
 進階訊息追蹤設定可透過 **[!UICONTROL Tracking & Images]** 圖示進行遞送。
 

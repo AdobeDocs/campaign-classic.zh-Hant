@@ -5,8 +5,9 @@ description: 進一步瞭解如何疑難排解簡訊頻道
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS, Troubleshooting
+role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 0%
@@ -14,8 +15,6 @@ ht-degree: 0%
 ---
 
 # 簡訊疑難排解 {#troubleshooting-sms}
-
-
 
 ## 不同外部帳戶之間發生衝突 {#external-account-conflict}
 
@@ -41,11 +40,9 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 
   帳戶之間發生衝突。 如前所述，Adobe Campaign會個別處理帳戶，但提供者可能會將其視為單一帳戶。
 
-   * 您在所有帳戶之間使用不同的登入/密碼組合。
-您必須連絡提供者，才能診斷其身邊的潛在衝突。
+   * 您在所有帳戶之間使用不同的登入/密碼組合。您必須聯絡提供者，以診斷其旁邊的潛在衝突。
 
-   * 部分外部帳戶共用相同的登入/密碼組合。
-提供者無法分辨外部帳戶 `BIND PDU` 來自，因此他們將來自多個帳戶的所有連線視為單一連線。 他們可能已隨機將MO和SR路由到兩個帳戶，從而導致問題。
+   * 部分外部帳戶共用相同的登入/密碼組合。提供者無法判斷來自哪些外部帳戶 `BIND PDU` ，因此他們會將多個帳戶的所有連線視為一個。 他們可能已隨機將MO和SR路由到兩個帳戶，從而導致問題。
 如果提供者支援同一個登入/密碼組合使用多個短程式碼，您必須詢問他們將短程式碼放在 `BIND PDU`. 請注意，這段資訊必須放在 `BIND PDU`，但不在 `SUBMIT_SM`，由於 `BIND PDU` 是唯一允許正確路由MO的位置。
 請參閱 [各種PDU中的資訊](sms-protocol.md#information-pdu) 區段來瞭解在欄位中可用的欄位 `BIND PDU`，通常您會在中新增短程式碼 `address_range`，但這需要提供者的特殊支援。 請聯絡他們，以瞭解他們如何獨立路由多個短程式碼。
 Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
@@ -66,8 +63,8 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
   from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
   ```
 
-* 調查（在/postupgrade目錄中）系統是否已升級以及何時升級
-* 調查影響簡訊的任何套件最近是否可能已升級(/var/log/dpkg.log)。
+* 調查（在/postupgrade 目錄中）是否升級系統以及何時
+* 調查是否可能最近已升級任何影響 SMS 的套裝軟體（/var/log/dpkg.log）。
 
 ## 中間來源的問題（託管）{#issue-mid-sourcing}
 
@@ -75,13 +72,13 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 * 如果一切在中間伺服器上運作正常，且簡訊已正確傳送，但行銷執行個體未正確更新，則您可能會發生中間同步問題。
 
-## 連線到提供者時的問題 {#issue-provider}
+## 連線時的問題 {#issue-provider}
 
-* 如果 `BIND PDU` 傳回非零 `command_status` 程式碼，請向提供者詢問詳細資訊。
+* `BIND PDU`如果傳回非零 `command_status` 代碼，請詢問提供者以瞭解更多資訊。
 
-* 檢查網路是否已正確設定，以便與提供者建立TCP連線。
+* 請檢查網路是否正確設定，以便可以將 TCP 連線至供應商。
 
-* 要求提供者確認其是否已正確將IP新增至Adobe Campaign執行個體的允許清單。
+* 要求提供者檢查是否已正確將 IPs 新增至 Adobe Campaign 執行個體的 allowlist。
 
 * 檢查 **外部帳戶** 設定。 詢問提供者欄位的值。
 
@@ -145,9 +142,9 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 降低重試時的重複專案數量：
 
-* 降低傳送視窗。 傳送視窗應足夠大以涵蓋 `SUBMIT_SM_RESP` 延遲。 其值代表當視窗已滿時發生錯誤時可複製的最大訊息數量。
+* 降低傳送視窗。 傳送視窗應該足夠大，以 `SUBMIT_SM_RESP` 應對延遲。 如果視窗已滿時發生錯誤，其值表示可重複的最大訊息數。
 
-## 處理SR （交貨收貨）時發放 {#issue-process-SR}
+## 處理 SR 時的問題（傳遞回執） {#issue-process-SR}
 
 * 您需要啟用SMPP追蹤才能進行任何型別的SR疑難排解。
 
@@ -157,9 +154,9 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 如果 `DELIVER_SM PDU` 未成功確認，則您應檢查下列專案：
 
-* 檢查與中的識別碼擷取和錯誤處理相關的規則運算式 **外部帳戶**. 您可能需要根據的內容 `DELIVER_SM PDU`.
+* 檢查與中的識別碼擷取和錯誤處理相關的規則運算式 **外部帳戶**. 您可能需要對照的內容 `DELIVER_SM PDU` 來驗證。
 
-* 檢查錯誤是否已適當地布建在 `broadLogMsg` 表格。
+* 請檢查表格中 `broadLogMsg` 是否已正確提供錯誤。
 
 如果 `DELIVER_SM PDU` 已由Adobe Campaign Classic延伸SMPP聯結器確認，但broadLog未正確更新，請檢查一節中描述的ID調解程式 [符合MT、SR和broadlog專案](sms-protocol.md#matching-mt).
 
@@ -167,7 +164,7 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 ## 處理MO （以及黑名單/自動回覆）時的問題{#issue-process-MO}
 
-* 在測試期間啟用SMPP追蹤。 如果您沒有啟用TLS，您應該在疑難排解MO時進行網路擷取，以檢查PDU是否包含正確資訊及格式是否正確。
+* 在測試期間啟用 SMPP 追蹤。 如果未啟用 TLS，則應在疑難排解 MO 時進行網路捕獲，以檢查 Pdu 是否包含正確資訊且格式正確。
 
 * 擷取網路流量或分析SMPP追蹤時，如果設定了回覆，請務必擷取與MO及其回覆MT的整個交談。
 
@@ -235,11 +232,11 @@ Unicode允許許多類似字元的變體，而Adobe Campaign無法處理所有�
 
 * 如果您參考訊息、PDU或記錄，請清楚說明其時間戳記，以便更容易找到。
 
-* 嘗試在測試環境中重現問題。 如果您不確定設定，請在測試環境中嘗試，並使用SMPP追蹤檢查結果。 報告測試環境中復寫的問題通常比直接報告生產環境中問題要好。
+* 嘗試在測試環境中重現問題。 如果您不確定設定，請在測試環境中嘗試，並使用SMPP追蹤檢查結果。 與直接報告生產環境中的問題相比，更好地報告測試環境中複製的問題。
 
-* 包括在平台上所做的任何變更或調整。 此外，也請包含提供者可能已在其一側完成的任何變更。
+* 包含在平臺上進行的任何變更或調整。 此外，還包括提供者可能在其側完成的任何變更。
 
-### 網路擷取 {#network-capture}
+### 網路捕獲 {#network-capture}
 
 不一定需要網路擷取，通常只要詳細的SMPP訊息就足夠了。 以下是一些准則，可協助您判斷是否需要網路擷取：
 
@@ -296,7 +293,7 @@ Unicode允許許多類似字元的變體，而Adobe Campaign無法處理所有�
 若要檢查容器上開啟的連線數目，您可以使用此命令：
 
 ```
-(for pid in $(ss -neopts  | sed -n ‘s/^.*:3600[ \t].*users:(([0-9A-Za-z”]*,pid=\([0-9]*\),.*$/\1/p’ | sort ); do  cat /proc/$pid/cmdline; echo  ” $pid” ;done;) | uniq --count
+(for pid in $(ss -neopts  | sed -n 's/^.*:3600[ \t].*users:(([0-9A-Za-z"]*,pid=\([0-9]*\),.*$/\1/p' | sort ); do  cat /proc/$pid/cmdline; echo  " $pid" ;done;) | uniq --count
 ```
 
 這會列出為指定連線埠開啟的連線數目。 我們在這裡使用連線埠3600。

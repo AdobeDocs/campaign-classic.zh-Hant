@@ -2,24 +2,23 @@
 product: campaign
 title: 發佈範本
 description: 發佈範本
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Templates
+role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 # 發佈範本{#publication-templates}
 
+## 關於發佈範本 {#about-publication-templates}
 
-
-## 關於出版物範本 {#about-publication-templates}
-
-發佈範本是要發佈內容的身分卡。 它會參考發佈程式中使用的資源，即：
+發佈範本會參考發佈程式中使用的資源，即：
 
 * 資料結構描述，
 * 輸入表單，
@@ -37,9 +36,9 @@ ht-degree: 1%
 
 ## 建立及設定範本 {#creating-and-configuring-the-template}
 
-發佈範本預設會儲存在 **[!UICONTROL Administration > Configuration > Publication templates]** 節點。 若要建立新範本，請按一下 **[!UICONTROL New]** 範本清單上方的按鈕。
+發佈範本預設會儲存在 **[!UICONTROL Administration > Configuration > Publication templates]** 節點。 若要建立新範本，請按一下 **[!UICONTROL New]** 按鈕來設定範本清單的上方。
 
-若要設定發佈範本，請填入範本名稱（即由名稱和名稱空間組成的識別鍵）、其標籤、資料結構描述及其連結的輸入表單。
+若要設定發佈範本，請填入範本的名稱（即包含名稱和名稱空間的識別鍵）、其標籤、資料結構描述及其連結的輸入表單。
 
 ![](assets/d_ncs_content_model.png)
 
@@ -55,7 +54,7 @@ ht-degree: 1%
 
 ### 呈現 {#rendering}
 
-此 **[!UICONTROL Rendering]** 索引標籤中選擇：
+此 **[!UICONTROL Rendering]** 標籤，選擇：
 
 * 用於投影輸出檔案的演算型別：XSL樣式表或JavaScript範本，
 * 輸出檔案的格式：HTML、文字、XML或RTF、
@@ -63,31 +62,31 @@ ht-degree: 1%
 
 ### 出版物 {#publication}
 
-出版物涉及以檔案形式產生輸出檔案，如果選取的型別為 **[!UICONTROL File]**.
+出版物涉及以檔案形式生成輸出檔案，如果所選型別為 **[!UICONTROL File]**.
 
 ![](assets/d_ncs_content_model2.png)
 
 下列發佈選項可供使用：
 
-* 輸出檔案編碼字元集可以透過 **[!UICONTROL Encoding]** 欄位。 預設會使用拉丁文1 (1252)字元集。
-* 此 **[!UICONTROL Multi-file generation]** 選項會啟動特殊檔案發佈模式。 此選項包括在輸出檔案每一頁的開頭填入分割標籤。 產生內容時，將會為每個填入的分割標籤產生檔案。 此模式用於從內容區塊產生迷你網站。 有關詳細資訊，請參閱 [多檔案產生](#multi-file-generation).
+* 輸出檔案編碼字元集可以透過 **[!UICONTROL Encoding]** 欄位。 依預設，會使用拉丁文1 (1252)字元集。
+* 此 **[!UICONTROL Multi-file generation]** 選項會啟動特殊檔案發佈模式。 此選項包括在輸出檔案每一頁的開頭填入分割標籤。 產生內容將會為每個填入的分割標籤產生檔案。 此模式用於從內容區塊產生迷你網站。 有關詳細資訊，請參閱 [多檔案產生](#multi-file-generation).
 * 此 **[!UICONTROL Location]** 欄位包含輸出檔案的名稱。 名稱可由變陣列成，以產生自動檔案名稱。
 
-   變數會填入以下格式： **`$(<xpath>)`**，其中 **`<xpath>`** 是發佈範本資料結構描述的欄位路徑。
+  變數會以下列格式填入： **`$(<xpath>)`**，其中 **`<xpath>`** 是發佈範本資料結構描述的欄位路徑。
 
-   檔案名稱可包含日期型別欄位。 若要正確格式化此欄位，請使用 **$date-format** 函式，使用欄位的路徑和輸出格式作為引數。
+  檔案名稱可由日期型別欄位組成。 若要正確格式化此欄位，請使用 **$date-format** 函式，使用欄位路徑和輸出格式作為引數。
 
-   依預設，檔案名稱的建構格式會使用「@name」和「@date」欄位上的變數：
+  依預設，檔案名稱的建構格式使用「@name」和「@date」欄位上的變數：
 
-   ```
-   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
-   ```
+  ```
+  ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
+  ```
 
-   產生的檔案名稱如下： ct_news12_20110901.htm。
+  產生的檔案名稱如下： ct_news12_20110901.htm。
 
-   >[!NOTE]
-   >
-   >如需內容產生的詳細資訊，請參閱 [建立內容例項](using-a-content-template.md#creating-a-content-instance).
+  >[!NOTE]
+  >
+  >有關產生內容的詳細資訊，請參閱 [建立內容例項](using-a-content-template.md#creating-a-content-instance).
 
 ### 傳遞 {#delivery}
 
@@ -97,7 +96,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需根據內容建立傳遞的範例，請參閱 [傳遞內容例項](using-a-content-template.md#delivering-a-content-instance).
+>如需根據內容建立傳送的範例，請參閱 [傳遞內容例項](using-a-content-template.md#delivering-a-content-instance).
 
 ### 彙總 {#aggregator}
 
@@ -105,7 +104,7 @@ ht-degree: 1%
 
 ### 多檔案產生 {#multi-file-generation}
 
-若要啟用多個檔案產生，請選取 **[!UICONTROL Multi-file generation]** 發佈模型中的選項。 此選項可讓您為輸出檔案每一頁開頭的樣式表中指定分割標籤。 產生內容時，會針對每個遇到的分割標籤產生檔案。
+若要啟用多重檔案產生，請選取 **[!UICONTROL Multi-file generation]** 發佈模型中的選項。 此選項可讓您在樣式表中指定輸出檔案每一頁開頭的分割標籤。 產生內容時，會針對每個遇到的分割標籤產生檔案。
 
 要整合在樣式表中的分割標籤如下：
 
@@ -113,11 +112,11 @@ ht-degree: 1%
 
 **範例：** 使用&quot;cus：book&quot;結構描述產生多個檔案。
 
-原則是產生一個列出章節的首頁面，並可能在外部頁面中顯示章節的詳細資訊。
+其原理是產生一個列出章節的首頁面，並可能在外部頁面中顯示章節的詳細資訊。
 
 ![](assets/d_ncs_content_chunk.png)
 
-對應的樣式表(&quot;cus：book.xsl&quot;)如下：
+對應的樣式表(「cus：book.xsl」)如下：
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -173,11 +172,11 @@ ht-degree: 1%
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
-檔案名稱是使用 **$(path)** 包含發佈路徑和的變數 **`<xsl:value-of select="@id" />`**，會比對輸入檔案中章節的識別碼。
+檔案名稱是使用 **$(path)** 變數，其中包含發佈路徑和 **`<xsl:value-of select="@id" />`**，會比對輸入檔案中章節的識別碼。
 
 出版物模型必須填入兩個樣式表「cus：book.xsl」和「cus：chapter.xsl」。
 
-此 **[!UICONTROL Multi-file generation]** 選項必須在章節轉換模型上處於活動狀態：
+此 **[!UICONTROL Multi-file generation]** 選項必須在章節轉換模型上為作用中：
 
 ![](assets/d_ncs_content_chunk2.png)
 

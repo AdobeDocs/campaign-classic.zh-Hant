@@ -5,8 +5,9 @@ description: 本節提供與Adobe Campaign中的追蹤設定和實作相關的�
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Troubleshooting
+role: User
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -14,8 +15,6 @@ ht-degree: 1%
 ---
 
 # 追蹤疑難排解 {#tracking-troubleshooting}
-
-
 
 在本節中，您將找到與Adobe Campaign Classic中的追蹤設定和實作相關的常見問題。
 
