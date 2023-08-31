@@ -2,13 +2,14 @@
 product: campaign
 title: 資料方案
 description: 開始使用Campaign資料結構
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 1%
+source-wordcount: '399'
+ht-degree: 3%
 
 ---
 
@@ -32,23 +33,23 @@ ht-degree: 1%
 >
 >「名稱」編輯控制項可讓您輸入由名稱和名稱空間組成的結構描述金鑰。 結構描述根元素的「名稱」和「名稱空間」屬性會在結構描述的XML編輯區域中自動更新。
 
-預覽會自動產生延伸的結構描述：
+預覽會自動產生擴充型綱要：
 
 ![](assets/d_ncs_integration_schema_edition2.png)
 
 >[!NOTE]
 >
->儲存來源結構描述後，就會自動產生延伸結構描述。
+>儲存來源結構描述時，就會自動啟動產生延伸結構描述。
 
-如果您需要檢查架構的完整結構，可以使用預覽索引標籤。 如果結構描述已擴充，您隨後將能夠將其所有擴充功能視覺化。 作為補充，「檔案」標籤會顯示所有綱要屬性和元素及其屬性（SQL欄位、型別/長度、標籤、說明）。 檔案索引標籤僅適用於產生的結構描述。 如需詳細資訊，請參閱 [重新產生結構描述](../../configuration/using/regenerating-schemas.md) 區段。
+如果您需要檢查架構的完整結構，可以使用預覽索引標籤。 如果結構描述已擴充，您就能將其所有擴充功能視覺化。 作為補充，[檔案]索引標籤會顯示所有綱要屬性和元素及其特性（SQL欄位、型別/長度、標籤、說明）。 檔案索引標籤僅適用於產生的結構描述。 有關詳細資訊，請參閱 [重新產生方案](../../configuration/using/regenerating-schemas.md) 區段。
 
 ## 範例：建立合約表格 {#example--creating-a-contract-table}
 
-在以下範例中，我們想要為 **合約** 在Adobe Campaign資料庫的資料庫模型中。 此表格可讓您儲存每個合約的持有者和共同持有者的名字和姓氏，以及電子郵件地址。
+在下列範例中，我們要為 **合約** 在Adobe Campaign資料庫的資料庫模型中。 此表格可讓您儲存每個合約的持有者和共同持有者的名字和姓氏，以及電子郵件地址。
 
 要執行此操作，您需要建立表格的綱要，並更新資料庫結構以產生對應的表格。 套用下列階段：
 
-1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign樹狀結構的節點，然後按一下 **[!UICONTROL New]** .
+1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign樹的節點，然後按一下 **[!UICONTROL New]** .
 1. 選擇 **[!UICONTROL Create a new table in the data model]** 選項並按一下 **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
@@ -59,9 +60,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >依預設，使用者建立的方案會儲存在「cus」名稱空間中。 有關詳細資訊，請參閱 [結構描述的識別](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >依預設，使用者建立的方案會儲存在「cus」名稱空間。 有關詳細資訊，請參閱 [結構描述的識別](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. 建立表格的內容。 我們建議使用輸入精靈來確認沒有遺漏任何設定。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，並選擇要新增的設定型別。
+1. 建立表格內容。 建議您使用輸入精靈來確認沒有遺失任何設定。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，並選擇要新增的設定型別。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -117,4 +118,4 @@ ht-degree: 1%
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新資料庫結構以建立將連結結構描述的表格。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md).
+1. 更新資料庫結構以建立將連結綱要的表格。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md).

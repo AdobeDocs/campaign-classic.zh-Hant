@@ -3,10 +3,11 @@ product: campaign
 title: 關於自訂收件者表格
 description: 關於自訂收件者表格
 feature: Configuration, Custom Resources
+role: User, Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 2%
@@ -14,8 +15,6 @@ ht-degree: 2%
 ---
 
 # 使用自訂收件者表格{#about-custom-recipient-table}
-
-
 
 本節詳細說明使用自訂（或外部）收件者表格的原則。
 

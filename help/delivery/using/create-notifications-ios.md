@@ -2,21 +2,20 @@
 product: campaign
 title: 為iOS裝置建立推播通知
 description: 瞭解如何建立iOS的推播通知
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 6%
+source-wordcount: '972'
+ht-degree: 8%
 
 ---
 
 # 建立iOS通知{#create-notifications-ios}
 
-
-
-本節詳細說明iOS通知傳送的特定元素。 有關傳遞建立的全域概念，請參見 [本節](steps-about-delivery-creation-steps.md).
+本節詳細說明特定於iOS通知傳送的元素。 有關傳遞建立的全域概念，請參見 [本節](steps-about-delivery-creation-steps.md).
 
 從建立新傳遞開始。
 
@@ -34,9 +33,9 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >選擇傳送的目標母體時的詳細流程會顯示在 [本節](steps-defining-the-target-population.md).
+   >選擇傳送的目標母體時的詳細程式會顯示在中 [本節](steps-defining-the-target-population.md).
    >
-   >有關使用個人化欄位的詳細資訊，請參閱 [本節](about-personalization.md).
+   >有關個人化欄位使用的詳細資訊，請參閱 [本節](about-personalization.md).
    >
    >有關包含種子清單的詳細資訊，請參閱 [關於種子地址](about-seed-addresses.md).
 
@@ -50,48 +49,49 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >此 **靜音推播** 模式允許將「無訊息」通知傳送至行動應用程式。 使用者未意識到通知的到達。 它會直接傳輸到應用程式。
+   >此 **靜音推播** 模式允許將「無訊息」通知傳送至行動應用程式。 使用者不會發現有通知傳到。而是直接傳輸到應用程式。
 
-1. 在 **[!UICONTROL Title]** 欄位，輸入您要在通知中心可用通知清單中顯示的標題標籤。
+1. 在 **[!UICONTROL Title]** 欄位，輸入您要顯示在通知中心可用通知清單中的標題標籤。
 
    此欄位可讓您定義 **標題** iOS通知裝載的引數。
 
-1. 您可以新增 **[!UICONTROL Subtitle]**，iOS通知裝載之字幕引數的值。 請參閱 [本節](configuring-the-mobile-application.md).
+1. 您可以新增 **[!UICONTROL Subtitle]**，iOS通知承載之子標題引數的值。 請參閱 [本節](configuring-the-mobile-application.md).
 
-1. 在「 」中輸入訊息的內容 **[!UICONTROL Message content]** 區段。 個人化欄位的使用情況顯示在中 [關於個人化](about-personalization.md) 區段。
+1. 請在以下位置輸入訊息的內容： **[!UICONTROL Message content]** 區段。 個人化欄位的使用方式顯示在中 [關於個人化](about-personalization.md) 區段。
 
    ![](assets/nmac_delivery_ios_5.png)
 
-1. 按一下 **[!UICONTROL Insert emoticon]** 圖示來插入表情符號至推播通知。 若要自訂表情符號清單，請參閱 [本節](customizing-emoticon-list.md)
+1. 按一下 **[!UICONTROL Insert emoticon]** 圖示以將表情符號插入推播通知。 若要自訂表情符號清單，請參閱 [本節](customizing-emoticon-list.md)
 
-1. 從 **[!UICONTROL Sound and Badge]** 標籤中，您可以編輯下列選項：
+1. 從 **[!UICONTROL Sound and Badge]** 標籤，您可以編輯下列選項：
 
    * **[!UICONTROL Clean Badge]**：啟用此選項以重新整理徽章值。
 
-   * **[!UICONTROL Value]**：設定將用於直接在應用程式圖示上顯示的新未讀取資訊數量。
+   * **[!UICONTROL Value]**：設定用於直接在應用程式圖示上顯示的新未讀取資訊數目。
 
-   * **[!UICONTROL Critical alert mode]**：啟用此選項，即使使用者的手機設定為焦點模式或iPhone設為靜音，也可以將聲音新增到您的通知中。
+   * **[!UICONTROL Critical alert mode]**：啟用此選項可在使用者手機設為焦點模式或iPhone靜音時，將聲音新增至您的通知。
 
-   * **[!UICONTROL Name]**：選取在收到通知時由行動終端機播放的聲音。
+   * **[!UICONTROL Name]**：選取在收到通知時行動終端機要播放的音效。
 
    * **[!UICONTROL Volume]**：音量從0到100。
+
    >[!NOTE]
    >
    >聲音必須包含在應用程式中，並在建立服務時定義。 請參閱[本節](configuring-the-mobile-application.md#configuring-external-account-ios)。
 
    ![](assets/nmac_delivery_ios_6.png)
 
-1. 從 **[!UICONTROL Application variables]** 標籤，您的 **[!UICONTROL Application variables]** 會自動新增。 它們可讓您定義通知行為，例如，您可以設定當使用者啟動通知時顯示的特定應用程式畫面。
+1. 從 **[!UICONTROL Application variables]** 標籤，您的 **[!UICONTROL Application variables]** 都會自動新增。 它們可讓您定義通知行為，例如，您可以設定當使用者啟動通知時顯示的特定應用程式畫面。
 
    如需詳細資訊，請參閱[本章節](configuring-the-mobile-application.md)。
 
-1. 從 **[!UICONTROL Advanced]** 標籤中，您可以編輯下列一般選項：
+1. 從 **[!UICONTROL Advanced]** 標籤，您可以編輯下列一般選項：
 
    * **[!UICONTROL Mutable content]**：啟用此選項可允許行動應用程式下載媒體內容。
 
-   * **[!UICONTROL Thread-id]**：用於將相關通知分組在一起的識別碼。
+   * **[!UICONTROL Thread-id]**：用來將相關通知分組的識別碼。
 
-   * **[!UICONTROL Category]**：將顯示動作按鈕的類別ID名稱。 這些通知可讓使用者以更快的方式回應通知，執行不同的工作，而不需在應用程式中開啟或導覽。
+   * **[!UICONTROL Category]**：會顯示動作按鈕的類別ID名稱。 這些通知可讓使用者以更快的方式回應通知，執行不同的工作，而不需在應用程式中開啟或導覽。
 
    ![](assets/nmac_delivery_ios_7.png)
 
@@ -99,18 +99,19 @@ ht-degree: 6%
 
    * **[!UICONTROL Target content ID]**：用來在通知開啟時鎖定要轉送的應用程式視窗的識別碼。
 
-   * **[!UICONTROL Launch image]**：要顯示的啟動影像檔名稱。 如果使用者選擇啟動您的應用程式，則會顯示選取的影像，而非您的應用程式啟動畫面。
+   * **[!UICONTROL Launch image]**：要顯示的啟動影像檔案名稱。 如果使用者選擇啟動您的應用程式，則會顯示選取的影像，而非您應用程式的啟動畫面。
 
    * **[!UICONTROL Interruption level]**：
 
-      * **[!UICONTROL Active]**：根據預設，系統會立即顯示通知、在畫面上點亮，並可播放音效。 通知不會突破焦點模式。
+      * **[!UICONTROL Active]**：預設情況下，系統會立即顯示通知、在熒幕上點亮，並可播放音效。 通知不會突破焦點模式。
 
       * **[!UICONTROL Passive]**：系統會將通知新增至通知清單，而不會點亮熒幕或播放音效。 通知不會突破焦點模式。
 
       * **[!UICONTROL Time sensitive]**：系統會立即顯示通知、點亮熒幕、播放聲音並突破焦點模式。 此層級不需要Apple的特殊許可權。
 
-      * **[!UICONTROL Critical]**：系統會立即顯示通知、點亮熒幕，並略過靜音切換或聚焦模式。 請注意，此層級需要Apple的特殊許可權。
-   * **[!UICONTROL Relevance score]**：將關聯性分數設定為0到100。 系統會使用此選項來排序通知摘要中的通知。
+      * **[!UICONTROL Critical]**：系統會立即顯示通知、點亮熒幕，並繞過靜音切換或聚焦模式。 請注意，此層級需要Apple的特殊許可權。
+
+   * **[!UICONTROL Relevance score]**：將關聯性分數從0設定為100。 系統會使用此選項來排序通知摘要中的通知。
 
    ![](assets/nmac_delivery_ios_8.png)
 
@@ -120,7 +121,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >Adobe Campaign中未定義通知樣式（橫幅或警示）。 這取決於使用者在其iOS設定中選取的設定。 不過，Adobe Campaign可讓您預覽每種型別的通知樣式。 按一下右下方的箭頭，從一種樣式切換為另一種樣式。
+   >Adobe Campaign中未定義通知樣式（橫幅或警報）。 這取決於使用者在其iOS設定中選取的設定。 不過，Adobe Campaign可讓您預覽每種型別的通知樣式。 按一下右下方的箭頭，從一種樣式切換為另一種樣式。
    >
    >預覽使用iOS 10外觀。
 
@@ -152,7 +153,7 @@ ht-degree: 6%
 
 1. 在 **[!UICONTROL Target type]** 視窗，選取 **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** 並按一下 **[!UICONTROL Next]**.
 
-1. 在 **[!UICONTROL Service]** 下拉式清單，選取您先前建立的服務，然後選取您要鎖定的應用程式，然後按一下 **[!UICONTROL Finish]**.
+1. 在 **[!UICONTROL Service]** 從下拉式清單中，選取您先前建立的服務，然後選取您要鎖定的應用程式，然後按一下 **[!UICONTROL Finish]**.
 
    ![](assets/nmac_ios_6.png)
 
@@ -172,7 +173,7 @@ ht-degree: 6%
 
 1. 按一下 **[!UICONTROL Save]** 並傳送您的傳遞。
 
-在訂閱者的iOS行動裝置上收到推播通知時，影像和網頁應會顯示出來。
+在訂閱者的iOS行動裝置上接收時，影像和網頁應顯示在推播通知中。
 
 ![](assets/nmac_ios_8.png)
 

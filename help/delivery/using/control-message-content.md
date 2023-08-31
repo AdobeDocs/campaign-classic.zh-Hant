@@ -2,13 +2,14 @@
 product: campaign
 title: 關於Adobe Campaign Classic中的傳遞能力
 description: 進一步瞭解如何在Adobe Campaign中管理傳遞能力
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
+role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '772'
 ht-degree: 6%
 
 ---
@@ -16,15 +17,14 @@ ht-degree: 6%
 # 控制您的訊息內容{#control-message-content}
 
 
-
-為了確保您的電子郵件可送達收件者並提高您的電子郵件傳遞率，他們必須遵守許多規則。 否則，某些訊息的內容可能會被偵測為垃圾訊息。 Adobe Campaign提供數種工具，可讓您的內容符合這些規則。
+為確保您的電子郵件能送達收件者並提高電子郵件傳遞率，他們必須遵守許多規則。 否則，某些訊息的內容可能會偵測為垃圾訊息。 Adobe Campaign提供數種工具，可讓您的內容符合這些規則。
 
 設計訊息內容時，請遵循下列原則：
 
-* [寄件者地址](#sender-address)：地址必須明確識別寄件者。 網域必須由寄件者擁有並註冊。 網域登入不得為私用。
-* [個人化](#personalization)：個人化內容及定義每位收件者的傳送時間會增加您開啟訊息的機會。
+* [寄件者地址](#sender-address)：地址必須明確識別寄件者。 網域必須由寄件者擁有並註冊給寄件者。 網域登入不可為私用。
+* [個人化](#personalization)：個人化內容並定義每位收件者的傳送時間，會增加您開啟訊息的機會。
 * 影像和文字：遵循像面文字/影像比例（例如60%文字和40%影像）。
-* [取消訂閱連結](#opt-out) 和登陸頁面：取消訂閱連結至為必要。 它必須是可見且有效的，而且表單必須是功能性的。
+* [取消訂閱連結](#opt-out) 和登陸頁面：取消訂閱連結至關重要。 它必須可見且有效，而且表單必須有效。
 * 預覽：使用Adobe Campaign提供的工具來檢查並最佳化您的電子郵件內容([收件匣轉譯](#message-responsiveness)， [SpamAssassin](#spamassassin))。
 
 如需在設計內容時最佳化傳遞能力的其他秘訣，請參閱 [Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
@@ -35,9 +35,9 @@ ht-degree: 6%
 
 ## 寄件者地址 {#sender-address}
 
-某些ISP會檢查寄件者地址的有效性(**[!UICONTROL From]**)，然後再接受訊息。 格式錯誤的地址可能導致接收伺服器拒絕該地址。
+某些ISP會檢查寄件者地址的有效性(**[!UICONTROL From]**)，然後才接受訊息。 格式錯誤的位址可能會導致接收伺服器拒絕該位址。
 
-您必須確定執行個體層級（功能表）提供了正確的地址 **[!UICONTROL Tools > Advanced > Deployment wizard...]**)或在最常用的情況下。
+您必須確定執行個體層級（功能表）指定了正確的地址 **[!UICONTROL Tools > Advanced > Deployment wizard...]**)或在最常使用的情境中。
 
 如需詳細資訊，請參閱[此頁面](defining-the-email-content.md)。
 
@@ -47,34 +47,34 @@ ht-degree: 6%
 
 如需在Adobe Campaign中使用個人化欄位的詳細資訊，請參閱 [本節](personalization-fields.md).
 
-在建立內容時，提供一些最佳化個人化的秘訣 [本節](design-and-personalize.md#optimize-personalization).
+在建立您的內容時，提供的一些最佳化個人化的秘訣如下 [本節](design-and-personalize.md#optimize-personalization).
 
 ## 選擇退出連結和表單 {#opt-out}
 
-依預設，分析訊息時， [型別規則](steps-validating-the-delivery.md#validation-process-with-typologies) 檢查是否包含選擇退出連結，如果缺少則產生警告。 您可以變更此規則，以引發錯誤（而非簡單的警告），並阻止傳送在沒有此連結的情況下傳出。
+依預設，分析訊息時， [型別規則](steps-validating-the-delivery.md#validation-process-with-typologies) 檢查是否包含退出連結，如果缺少該連結，則會產生警告。 您可以變更此規則，以引發錯誤（而非簡單的警告），並阻止傳送在沒有此連結的情況下傳出。
 
-每次傳送前，您必須先檢查選擇退出連結是否正常運作。 例如，傳送校樣時，請確定連結有效、表單線上上，且驗證這會變更 **[!UICONTROL No longer contact this recipient]** 欄位至 **[!UICONTROL Yes]**. 您應該系統地進行這項檢查，因為輸入連結或變更表單時總是可能發生人為錯誤。
+每次傳送前，您必須先檢查選擇退出連結是否正常運作。 例如，傳送校樣時，請確定連結有效、表單線上上，且驗證這會變更 **[!UICONTROL No longer contact this recipient]** 欄位至 **[!UICONTROL Yes]**. 您應該系統地進行此檢查，因為輸入連結或變更表單時總是可能發生人為錯誤。
 
 瞭解如何插入選擇退出連結 [在本節中](personalization-blocks.md#personalization-blocks-example).
 
-如果在開始傳遞後偵測到有關取消訂閱的問題，仍可以手動執行取消訂閱（例如使用大量更新功能），適用於按一下選擇退出連結的收件者，即使他們無法確認自己的選擇。
+如果在開始傳遞後偵測到有關取消訂閱的問題，則仍可以為按一下選擇退出連結的收件者手動執行取消訂閱（例如使用大量更新函式），即使他們無法確認自己的選擇。
 
 一般而言，請勿透過要求收件者填寫電子郵件地址或名稱等欄位，來妨礙想要選擇退出的收件者。 表單應只有一個驗證按鈕，並且只應對加密的識別碼執行調解。
 
-要求額外確認並不可靠：使用者可能有兩個電子郵件地址被重新導向至相同的方塊(例如：firstname.lastname@club.com和firstname.lastname@internet-club.com)。 如果收件者只能記住第一個地址，並希望透過傳送給另一個地址的訊息取消訂閱，則表單將拒絕此操作，因為加密的識別碼和輸入的電子郵件地址不匹配。
+要求額外確認並不可靠：使用者可能有兩個電子郵件地址會重新導向至同一個方塊(例如：firstname.lastname@club.com和firstname.lastname@internet-club.com)。 如果收件者僅能記住第一個地址，並想要透過傳送給另一個地址的訊息取消訂閱，則表單將拒絕此操作，因為加密的識別碼和輸入的電子郵件地址不相符。
 
 ## 收件匣轉譯 {#message-responsiveness}
 
-在傳送訊息之前，您可以檢查訊息在不同裝置上的外觀，以測試訊息回應能力。 這是為了確保以最佳方式顯示在各種Web使用者端、網頁郵件和裝置上。
+在傳送訊息之前，您可以檢查訊息在不同裝置上的外觀，以測試訊息回應能力。 這是為了確保以最佳方式顯示在各種Web使用者端、網頁郵件與裝置上。
 
 為了執行此操作，Adobe Campaign 會擷取呈現，並將之用於專用報告中。這可讓您在可接收訊息的不同內容中預覽所傳送的訊息。
 
-如需詳細資訊，請參閱 [收件匣轉譯](inbox-rendering.md).
+有關詳細資訊，請參閱 [收件匣轉譯](inbox-rendering.md).
 
 ## SpamAssassin {#spamassassin}
 
-Adobe Campaign可設定為搭配SpamAssassin使用。 這可讓您將電子郵件評分，以判斷郵件在收到時是否面臨被反垃圾郵件工具視為垃圾郵件的風險。
+Adobe Campaign可設定為搭配SpamAssassin使用。 這使得對電子郵件進行評分成為可能，以確定郵件在接收時被反垃圾郵件工具視為垃圾郵件的風險是否存在。
 
-在開始傳送之前， **[!UICONTROL Preview]** 標籤可讓您評估風險。 警告訊息會提供測試結果。
+在開始傳送前， **[!UICONTROL Preview]** 標籤可讓您評估風險。 警告訊息會提供測試的結果。
 
 在本節瞭解更多 [區段](spamassassin.md).

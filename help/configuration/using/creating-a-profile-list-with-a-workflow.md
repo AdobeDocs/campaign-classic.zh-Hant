@@ -5,8 +5,9 @@ description: 瞭解如何在工作流程中建立設定檔清單
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Workflows, Profiles
+role: User
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 12%
@@ -14,7 +15,6 @@ ht-degree: 12%
 ---
 
 # 使用工作流程建立設定檔清單{#creating-a-profile-list-with-a-workflow}
-
 
 
 若要建立 **[!UICONTROL List]** 根據新的收件者表格輸入清單，您需要建立將產生清單的目標工作流程。

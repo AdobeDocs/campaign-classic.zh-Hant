@@ -3,10 +3,11 @@ product: campaign
 title: 建立篩選器
 description: 瞭解如何建立自訂表格的篩選器
 feature: Profiles, Custom Resources
+role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 5%
@@ -14,8 +15,6 @@ ht-degree: 5%
 ---
 
 # 建立篩選器{#creating-filters}
-
-
 
 就像Adobe Campaign提供的內建收件者表格一樣，新的收件者表格可能會收到一批預先定義的篩選器。
 

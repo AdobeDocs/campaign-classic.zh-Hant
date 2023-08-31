@@ -2,20 +2,19 @@
 product: campaign
 title: 定義正確對象
 description: 瞭解選取對象時的最佳實務
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Audiences
+role: User
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '499'
 ht-degree: 4%
 
 ---
 
 # 定義正確對象 {#define-the-right-audience}
-
-
 
 目標人口是關鍵：仔細建立您的清單，在熱門電子郵件使用者端和行動裝置上測試您的電子郵件，並確保您的電子郵件清單是最新的（沒有未知或過時的地址）。 您也可以傳送校樣來幫助設定完整的驗證週期。
 
@@ -23,23 +22,23 @@ ht-degree: 4%
 
 ## 鎖定正確的對象 {#target-the-right-audience}
 
-準備好內容後，您需要仔細定義將收到您訊息的人員。
+內容準備就緒後，您需要仔細定義將接收訊息的人員。
 
 若要成功傳遞，您想要將最相關的個人化內容傳送給正確的收件者。 Adobe Campaign可讓您建立最精確的目標：您可以根據收件者的年齡、本地化、購買內容、是否在上一次傳送中按一下連結等來選取收件者。 透過Adobe Campaign，您還可以定義測試設定檔、控制組和種子地址，以確保您的目標正確無誤。
 
 ## 目標對應 {#target-mappings}
 
-在Campaign Classic中，預設為傳遞範本目標 **收件者**. Adobe Campaign為您的傳送提供其他目標對應，您可依需求加以變更。
+在Campaign Classic中，預設為傳遞範本目標 **收件者**. Adobe Campaign為您的傳送提供其他目標對應，您可以視需求加以變更。
 
-例如，您可以傳送給透過社交網路收集設定檔的訪客，或傳送給訂閱資訊服務的訪客。
+例如，您可以傳送給已透過社交網路收集設定檔的訪客，或訂閱資訊服務的訪客。
 
-這些對應會出現 [在本節中](selecting-a-target-mapping.md).
+下列對應會出現 [在本節中](selecting-a-target-mapping.md).
 
-您也可以建立和使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
+您也可以建立並使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
 
 ## 外部收件者 {#external-recipients}
 
-您可以傳送給儲存在外部檔案中而不是儲存在資料庫中的收件者。 瞭解更多 [在本節中](steps-defining-the-target-population.md#selecting-external-recipients).
+您可以傳遞至儲存在外部檔案中而非儲存在資料庫中的收件者。 瞭解更多 [在本節中](steps-defining-the-target-population.md#selecting-external-recipients).
 
 ## 傳送給您的訂閱者 {#send-to-subscribers}
 
@@ -52,7 +51,7 @@ ht-degree: 4%
 
 請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 以下說明定義校樣收件者的步驟 [在本節中](steps-defining-the-target-population.md#selecting-the-proof-target).
 
-種子地址用於鎖定不符合已定義目標條件的收件者，以便在傳送至主要目標之前測試傳送。 它們會顯示出來 [在本節中](about-seed-addresses.md).
+種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會出現 [在本節中](about-seed-addresses.md).
 
 ## 重複位址 {#deduplicate-addresses}
 

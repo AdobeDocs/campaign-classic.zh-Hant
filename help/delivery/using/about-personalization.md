@@ -2,22 +2,21 @@
 product: campaign
 title: 開始使用個人化
 description: 瞭解如何在Campaign中個人化訊息和使用條件式內容
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization
+role: User
 exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 46%
+source-wordcount: '150'
+ht-degree: 44%
 
 ---
 
 # 開始使用個人化{#about-personalization}
 
-
-
-有幾種不同的方式可個人化由 Adobe Campaign 傳送的訊息，包含訊息的內容或外觀。尤其是根據收件者用戶檔案中的準則，可以將這些方法結合使用。對於電子郵件傳遞，您可以直接從以下網址在JavaScript中定義傳遞的元素和個人化條件 **[!UICONTROL Source]** 訊息的索引標籤。 一般而言，Adobe Campaign 允許您：
+有幾種不同的方式可個人化由 Adobe Campaign 傳送的訊息，包含訊息的內容或外觀。尤其是根據收件者用戶檔案中的準則，可以將這些方法結合使用。對於電子郵件傳遞，您可以直接從在JavaScript中定義傳遞的元素和個人化條件 **[!UICONTROL Source]** 訊息的索引標籤。 一般而言，Adobe Campaign 允許您：
 
 * 個人化訊息格式。另請參閱 [訊息內容](defining-the-email-content.md#message-content).
 * 插入動態的個人化欄位。另請參閱 [個人化欄位](personalization-fields.md).

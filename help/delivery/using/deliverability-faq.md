@@ -5,8 +5,9 @@ description: 瞭解在Adobe Campaign中管理傳遞能力時需檢查的關鍵�
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability, Troubleshooting
+role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,8 +15,6 @@ ht-degree: 2%
 ---
 
 # 傳遞能力疑難排解{#deliverability-faq}
-
-
 
 您是否遇到傳遞能力問題？ 您可以在這裡找到解決方案。
 

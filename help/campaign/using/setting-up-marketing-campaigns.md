@@ -2,12 +2,13 @@
 product: campaign
 title: 建立行銷活動
 description: 瞭解如何建立和執行行銷活動
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1260'
 ht-degree: 6%
 
 ---
@@ -20,9 +21,9 @@ ht-degree: 6%
 
 若要建立行銷活動：
 
-1. 建立行銷活動：探索行銷活動及其特性：標籤、型別、開始和結束日期、預算、相關資源、經理和參與者。 [了解更多](#creating-a-campaign)。
+1. 建立行銷活動：探索行銷活動及其特性：標籤、型別、開始和結束日期、預算、相關資源、管理員和參與者。 [了解更多](#creating-a-campaign)。
 
-1. 定義目標母體：建立具有目標定位查詢的工作流程。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
+1. 定義目標母體：使用目標查詢建立工作流程。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
 1. 建立傳送：選取管道並定義要傳送的內容。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
@@ -36,22 +37,22 @@ ht-degree: 6%
 
 ## 建立計畫和方案階層 {#creating-plan-and-program-hierarchy}
 
-若要設定行銷計畫和方案的檔案夾階層：
+若要設定行銷計畫和方案的資料夾階層：
 
-1. 按一下 **總管** 圖示加以檢視。
-1. 以滑鼠右鍵按一下您要建立計畫的資料夾。
+1. 按一下 **瀏覽器** 圖示加以存取。
+1. 在您要建立計畫的資料夾上按一下滑鼠右鍵。
 1. 選取 **新增資料夾> Campaign Management >計畫**.
 
    ![](assets/create_plan_1.png)
 
 1. 重新命名計畫。
-1. 以滑鼠右鍵按一下新建立的計畫並選取 **屬性……**.
+1. 在新建立的計畫上按一下滑鼠右鍵，然後選取 **屬性……**.
 
    ![](assets/create_plan_2.png)
 
 1. 在 **一般** 標籤，修改 **內部名稱** 以避免在套件匯出期間出現重複專案。
 1. 按一下「**儲存**」。
-1. 以滑鼠右鍵按一下新建立的計畫並選取 **建立新的&#39;Program&#39;資料夾**.
+1. 在新建立的計畫上按一下滑鼠右鍵，然後選取 **建立新的&#39;Program&#39;資料夾**.
 1. 重複上述步驟，重新命名新的程式資料夾及其內部名稱。
 
 ## 建立促銷活動 {#creating-a-campaign}
@@ -66,15 +67,15 @@ ht-degree: 6%
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-行銷活動也可以透過方案建立。 若要這麼做，請按一下 **[!UICONTROL Add]** 中的按鈕 **[!UICONTROL Schedule]** 相關程式的索引標籤。
+行銷活動也可以透過方案建立。 若要這麼做，請按一下 **[!UICONTROL Add]** 中的按鈕 **[!UICONTROL Schedule]** 相關計畫的索引標籤。
 
 ![](assets/s_ncs_user_add_an_op.png)
 
-當您透過建立行銷活動時 **[!UICONTROL Schedule]** 標籤中，此行銷活動會自動連結至相關方案。 此 **[!UICONTROL Program]** 在此情況下，欄位會隱藏。
+當您透過建立行銷活動時 **[!UICONTROL Schedule]** 索引標籤中，此行銷活動會自動連結至相關的方案。 此 **[!UICONTROL Program]** 欄位在此情況下是隱藏的。
 
 在行銷活動建立視窗中，選取行銷活動範本並新增行銷活動的名稱和說明。 您也可以指定行銷活動的開始和結束日期。
 
-按一下 **[!UICONTROL OK]** 以建立行銷活動。 它會新增至方案排程。
+按一下 **[!UICONTROL OK]** 以建立行銷活動。 它會新增到方案排程中。
 
 ![](assets/s_ncs_user_program_planning_with_op.png)
 
@@ -84,25 +85,25 @@ ht-degree: 6%
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
-### 編輯和設定行銷活動 {#editing-and-configuring-a-campaign}
+### 編輯及設定行銷活動 {#editing-and-configuring-a-campaign}
 
-然後，您可以編輯剛剛建立的行銷活動並定義其引數。
+然後，您可以編輯剛建立的行銷活動並定義其引數。
 
 若要開啟並設定行銷活動，請從排程中選取行銷活動，然後按一下 **[!UICONTROL Open]**.
 
 ![](assets/s_ncs_user_new_op_edit.png)
 
-這會將您帶往行銷活動控制面板。
+這會將您導向行銷活動控制面板。
 
 ## 循環和定期行銷活動 {#recurring-and-periodic-campaigns}
 
-週期性行銷活動是基於特定範本的行銷活動，其工作流程已設定為根據關聯的排程執行。 因此，工作流程將在行銷活動中重複出現。 目標定位會在每次執行時複製，並追蹤各種流程和目標母體。 您也可以在自動建立工作流程期間，透過涵蓋期間預先執行未來的目標，以啟動具有目標預估的模擬。
+循環行銷活動是基於特定範本的行銷活動，其工作流程已設定為根據關聯的排程執行。 因此，工作流程將在行銷活動中重複出現。 目標定位會在每次執行時重複，並追蹤各種流程和目標母體。 您也可以在自動建立工作流程期間，透過涵蓋期間預先執行未來目標，以啟動目標預估的模擬。
 
 定期行銷活動是根據其範本的執行排程自動建立的行銷活動。
 
 ### 建立週期性行銷活動 {#creating-a-recurring-campaign}
 
-循環行銷活動是從定義要執行的工作流程範本和執行排程的特定範本建立的。
+循環行銷活動是從定義要執行的工作流程範本和執行排程的特定範本建立。
 
 #### 建立週期性行銷活動的範本 {#creating-the-campaign-template}
 
@@ -118,7 +119,7 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_template_recur_duplicate.png)
 
-1. 對於這類行銷活動， **[!UICONTROL Schedule]** 索引標籤以建立範本執行排程。
+1. 對於此型別的行銷活動， **[!UICONTROL Schedule]** 索引標籤會新增，以建立範本執行排程。
 
 在此索引標籤中，根據此範本指定行銷活動的計畫執行日期。
 
@@ -130,12 +131,12 @@ ht-degree: 6%
 >
 >必須小心執行執行排程設定，以避免資料庫超載。 週期性行銷活動會根據指定的排程複製其範本的工作流程。 執行過於頻繁的工作流程建立可能會阻礙資料庫的操作。
 
-1. 在中指定一個值 **[!UICONTROL Create in advance for]** 欄位，以針對指出的期間建立對應的工作流程。
-1. 使用目標引數和一個或多個通用傳送，根據此範本建立要用於行銷活動的工作流程範本。
+1. 在 **[!UICONTROL Create in advance for]** 欄位建立指定期間的對應工作流程。
+1. 使用目標引數以及一或多個一般傳送，根據此範本建立要用於行銷活動的工作流程範本。
 
    >[!NOTE]
    >
-   >此工作流程必須儲存為週期性工作流程範本。 若要這麼做，請編輯工作流程屬性並選取 **[!UICONTROL Recurring workflow template]** 中的選項 **[!UICONTROL Execution]** 標籤。
+   >此工作流程必須儲存為週期性工作流程範本。 要執行此操作，請編輯工作流程屬性並選取 **[!UICONTROL Recurring workflow template]** 中的選項 **[!UICONTROL Execution]** 標籤。
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -157,9 +158,9 @@ ht-degree: 6%
 
    此 **[!UICONTROL Create in advance for]** 欄位可讓您建立涵蓋輸入期間的所有工作流程。
 
-   執行時 **[!UICONTROL Jobs on campaigns]** 工作流程，專用工作流程會根據行銷活動排程中定義的發生次數來建立。 因此會為每個執行日期建立工作流程。
+   在執行 **[!UICONTROL Jobs on campaigns]** 工作流程，專用的工作流程會根據行銷活動排程中定義的發生次數來建立。 因此，會為每個執行日期建立工作流程。
 
-1. 系統會自動從行銷活動中存在的工作流程範本建立週期性工作流程。 可從以下位置檢視： **[!UICONTROL Targeting and workflows]** 索引標籤進行識別。
+1. 循環工作流程是從行銷活動中存在的工作流程範本自動建立。 它們可從以下位置顯示： **[!UICONTROL Targeting and workflows]** 行銷活動的索引標籤。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs.png)
 
@@ -169,7 +170,7 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
-   每個工作流程都可從此索引標籤進行編輯。
+   每個工作流程都可以從此索引標籤進行編輯。
 
    ![](assets/s_ncs_user_op_recur_planning_wf_edit.png)
 
@@ -180,7 +181,7 @@ ht-degree: 6%
 
 ### 建立定期行銷活動 {#creating-a-periodic-campaign}
 
-定期行銷活動是根據特定範本的行銷活動，可讓您根據執行排程建立行銷活動執行個體。 系統會根據週期性行銷活動範本，根據範本排程中定義的頻率，自動建立行銷活動執行個體。
+定期行銷活動是根據特定範本的行銷活動，可讓您根據執行排程建立行銷活動執行個體。 系統會根據週期性行銷活動範本，根據範本排程中定義的頻率，自動建立行銷活動例項。
 
 #### 建立行銷活動範本 {#creating-the-campaign-template-1}
 
@@ -192,31 +193,31 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >指派範本的操作者需要擁有在所選方案中建立行銷活動的適當許可權。
+   >指派範本的操作者需要具備在選定方案中建立行銷活動的適當許可權。
 
-1. 建立與此範本關聯的工作流程。 範本建立的每個定期行銷活動中都會複製該範本。
+1. 建立與此範本關聯的工作流程。 範本建立的每個定期行銷活動都會複製該資料。
 
    ![](assets/s_ncs_user_op_template_period_wf.png)
 
    >[!NOTE]
    >
-   >此工作流程是工作流程範本。 無法從行銷活動範本執行。
+   >此工作流程是工作流程範本。 無法從行銷活動範本執行此動作。
 
-1. 完成其執行排程，如同週期性行銷活動範本：按一下 **[!UICONTROL Add]** 按鈕並定義開始和結束日期，或透過連結填寫執行排程。
+1. 完成其對於週期性行銷活動範本的執行排程：按一下 **[!UICONTROL Add]** 按鈕並定義開始和結束日期，或透過連結填寫執行排程。
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
    >[!IMPORTANT]
    >
-   >定期行銷活動範本會根據上述定義的排程建立新的行銷活動。 因此，必須小心完成，以避免超載Adobe Campaign資料庫。
+   >定期行銷活動範本會根據上述定義的排程建立新的行銷活動。 因此，必須小心完成，以避免Adobe Campaign資料庫超載。
 
-1. 一旦達到執行開始日期，就會自動建立相符的行銷活動。 它會採用其範本的所有特性。
+1. 一旦達到執行開始日期，就會自動建立相符的行銷活動。 它會使用其範本的所有特性。
 
    每個行銷活動都可透過範本排程進行編輯。
 
    ![](assets/s_ncs_user_op_template_period_planning.png)
 
-每個定期行銷活動都包含相同的元素。 建立後，即會將其管理為標準行銷活動。
+每個定期行銷活動都包含相同的元素。 建立後，即作為標準行銷活動進行管理。
 
 ## 教學課程影片 {#video}
 
@@ -224,4 +225,4 @@ ht-degree: 6%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-有其他Campaign操作說明影片可供使用 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+提供其他Campaign操作說明影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).

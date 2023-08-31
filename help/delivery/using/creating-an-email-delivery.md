@@ -2,20 +2,19 @@
 product: campaign
 title: 建立電子郵件傳遞
 description: 瞭解如何建立電子郵件傳遞
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
+role: User
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '110'
 ht-degree: 16%
 
 ---
 
 # 建立電子郵件傳遞{#creating-an-email-delivery}
-
-
 
 若要建立新的電子郵件傳送，請遵循下列步驟：
 
@@ -23,8 +22,8 @@ ht-degree: 16%
 >
 >有關傳遞建立的全域概念，請參見 [本節](steps-about-delivery-creation-steps.md).
 
-1. 建立新傳送，例如從「傳送」控制面板。
-1. 選取傳遞範本 **電子郵件傳送（郵件）** 或任何您建立的電子郵件傳遞範本。 如需傳遞範本的詳細資訊，請參閱 [本節](about-templates.md).
+1. 例如，從「傳遞」控制面板建立新傳遞。
+1. 選取傳遞範本 **電子郵件傳送（郵件）** 或您建立的任何電子郵件傳遞範本。 如需傳遞範本的詳細資訊，請參閱 [本節](about-templates.md).
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 

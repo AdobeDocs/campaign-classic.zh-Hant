@@ -2,19 +2,19 @@
 product: campaign
 title: Campaign傳遞最佳實務
 description: 瞭解設計和傳送傳遞時的最佳實務
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
+role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 28%
+source-wordcount: '115'
+ht-degree: 26%
 
 ---
 
 # 關於傳遞的最佳實務 {#delivery-best-practices}
-
 
 
 瞭解透過Adobe Campaign進行的傳遞設計與傳送相關的最佳實務。 使用以下連結導覽主題並尋找指引。
@@ -77,7 +77,7 @@ ht-degree: 28%
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="Check" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="檢查" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">
@@ -98,7 +98,7 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>控制傳送和疑難排解</em>
+    <em>控制傳送及疑難排解</em>
     <p>
   </td>
 </tr>

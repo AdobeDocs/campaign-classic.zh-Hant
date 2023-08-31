@@ -2,13 +2,14 @@
 product: campaign
 title: 關於 Web 服務
 description: 關於 Web 服務
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 3%
+source-wordcount: '662'
+ht-degree: 5%
 
 ---
 
@@ -16,9 +17,9 @@ ht-degree: 3%
 
 ## Adobe Campaign API的定義 {#definition-of-adobe-campaign-apis}
 
-Adobe Campaign應用程式伺服器的開放性與簡易整合性，可搭配日益多樣化及複雜的公司資訊系統。
+Adobe Campaign應用程式伺服器的設計初衷是開放性以及可輕鬆整合日益多樣化且複雜的公司資訊系統。
 
-Adobe Campaign API可用於應用程式內的JavaScript中，以及應用程式外的SOAP中。 它們構成了可擴充的一般函式館。 如需詳細資訊，請參閱 [實作SOAP方法](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign API可用於應用程式內的JavaScript中，以及應用程式外的SOAP中。 它們構成了可以擴充的一般函式庫。 如需詳細資訊，請參閱 [實作SOAP方法](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
@@ -27,10 +28,10 @@ Adobe Campaign API可用於應用程式內的JavaScript中，以及應用程式�
 
 ## 必要條件 {#prerequisites}
 
-在使用Adobe Campaign API之前，您需要熟悉以下主題：
+使用Adobe Campaign API之前，您必須熟悉下列主題：
 
 * Javascript
-* soap通訊協定
+* SOAP通訊協定
 * Adobe Campaign資料模型
 
 ## 使用Adobe Campaign API {#using-adobe-campaign-apis}
@@ -38,13 +39,13 @@ Adobe Campaign API可用於應用程式內的JavaScript中，以及應用程式�
 Adobe Campaign使用兩種型別的API：
 
 * 用於查詢資料模型資料的一般資料存取API。 請參閱 [資料導向API](../../configuration/using/data-oriented-apis.md).
-* 可讓您對每個物件採取動作的業務特定API：傳送、工作流程、訂閱等。 請參閱 [商業導向API](../../configuration/using/business-oriented-apis.md).
+* 業務特定API可讓您對每個物件執行動作：傳送、工作流程、訂閱等。 請參閱 [商業導向API](../../configuration/using/business-oriented-apis.md).
 
-為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱 [模型描述](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱 [模型說明](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
-## SOAP呼叫 {#soap-calls}
+## SOAP 呼叫 {#soap-calls}
 
-SOAP通訊協定可讓您透過豐富使用者端、使用Web服務的協力廠商應用程式，或原生使用這些方法的JSP來叫用API方法。
+SOAP通訊協定可讓您透過豐富使用者端、使用Web服務的協力廠商應用程式或原生使用這些方法的JSP來叫用API方法。
 
 ![](assets/s_ncs_configuration_architecture.png)
 
@@ -63,13 +64,13 @@ SOAP訊息的結構如下：
 
 ## &#39;ExecuteQuery&#39;方法上的SOAP訊息範例 {#example-of-a-soap-message-on-the--executequery--method--}
 
-在此範例中，SOAP查詢會叫用「ExecuteQuery」方法，此方法會將字元字串當作用於驗證（工作階段權杖）的引數，並以XML內容作為要執行的查詢說明。
+在此範例中，SOAP查詢會叫用「ExecuteQuery」方法，此方法會將字元字串當作驗證（工作階段權杖）的引數，並以XML內容作為要執行的查詢說明。
 
 如需詳細資訊，請參閱 [ExecuteQuery (xtk：queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >
->此服務的WSDL說明在此範例中完成： [Web服務說明：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>本服務的WSDL說明在此範例中完成： [Web服務說明：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP查詢 {#soap-query}
 
@@ -91,11 +92,11 @@ SOAP訊息的結構如下：
 
 此 `<soap-env:envelope>` element是代表SOAP信封之訊息的第一個元素。
 
-此 `<soap-env:body>` element是包絡的第一個子元素。 它包含訊息的說明，即查詢或回應的內容。
+此 `<soap-env:body>` 元素是包絡的第一個子元素。 它包含訊息的說明，即查詢或回應的內容。
 
 要叫用的方法輸入於 `<executequery>` 元素。
 
-在SOAP中，引數是以外觀的順序來辨識。 第一個引數， `<__sessiontoken>`，以驗證鏈結為依據，第二個引數是來自下列網址之查詢的XML描述： `<querydef>` 元素。
+在SOAP中，會依外觀順序來識別引數。 第一個引數， `<__sessiontoken>`，取用驗證鏈，第二個引數是來自的查詢的XML說明 `<querydef>` 元素。
 
 ### SOAP回應 {#soap-response}
 
@@ -132,23 +133,23 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-此 `<soap-env:fault>` SOAP訊息內文中的元素用於傳達處理Web服務期間產生的錯誤訊號。 此專案由下列子元素組成：
+此 `<soap-env:fault>` SOAP訊息內文中的元素用於傳達處理Web服務期間產生的錯誤訊號。 它由下列子元素組成：
 
 * `<faultcode>` ：指出錯誤型別。 錯誤型別為：
 
    * 若與所使用的SOAP版本不相容，
-   * 「MustUnderstand」在訊息標頭發生問題時，
-   * 「使用者端」若使用者端遺漏某些資訊，
-   * 「Server」（在伺服器執行處理時發生問題的事件中）。
+   * 「MustUnderstand」在訊息標頭發生問題的情況下，
+   * 「使用者端」在使用者端遺失某些資訊時，
+   * 「伺服器」（在伺服器執行處理時發生問題的事件中）。
 
-* `<faultstring>` ：描述錯誤的訊息
+* `<faultstring>` ：說明錯誤的訊息
 * `<detail>` ：長錯誤訊息
 
-服務叫用的成功或失敗由以下情況識別： `<faultcode>` 元素已驗證。
+服務引動成功或失敗會在 `<faultcode>` 元素已驗證。
 
 >[!IMPORTANT]
 >
->所有Adobe Campaign Web服務都會處理錯誤。 因此，強烈建議測試每個呼叫，以處理傳回的錯誤。
+>所有Adobe Campaign Web服務都會處理錯誤。 因此，強烈建議您測試每個呼叫，以便處理傳回的錯誤。
 
 C#中的錯誤處理範例：
 
@@ -168,7 +169,7 @@ catch (SoapException e)
 
 ## Web服務伺服器（或端點）的URL {#url-of-web-service-server--or-endpoint-}
 
-若要提交Web服務，必須連絡實作對應服務方法的Adobe Campaign伺服器。
+若要提交Web服務，必須聯絡實作對應服務方法的Adobe Campaign伺服器。
 
 伺服器URL如下：
 

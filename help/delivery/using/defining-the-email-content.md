@@ -5,8 +5,9 @@ description: 瞭解如何使用Adobe Campaign來定義電子郵件內容
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email Design
+role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -172,7 +173,7 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯
 
 >[!IMPORTANT]
 >
->為了讓收件者能夠檢視其收到之訊息中包含的影像，這些訊息必須在可從外部存取的伺服器上可用。
+>為了讓收件者能夠檢視其收到之郵件中包含的影像，這些郵件必須在可從外部存取的伺服器上可用。
 
 若要透過傳遞精靈管理影像：
 

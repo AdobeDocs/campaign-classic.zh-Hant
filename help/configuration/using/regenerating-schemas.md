@@ -3,12 +3,13 @@ product: campaign
 title: 重新產生方案
 description: 瞭解如何重新產生Campaign綱要
 feature: Custom Resources
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 

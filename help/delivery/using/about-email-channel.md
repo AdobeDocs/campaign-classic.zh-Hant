@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: 關於Adobe Campaign Classic中的電子郵件頻道
-description: 本節提供Adobe Campaign中電子郵件通道的一般特定資訊
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: 本節提供Adobe Campaign中電子郵件通道的特定一般資訊
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
+role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '148'
 ht-degree: 12%
 
 ---
 
 # 關於電子郵件頻道{#about-email-channel}
-
-
 
 Adobe Campaign可讓您大量傳送個人化電子訊息給目標群體。
 
@@ -23,7 +22,7 @@ Adobe Campaign可讓您大量傳送個人化電子訊息給目標群體。
 
 * 請確定收件者設定檔至少包含電子郵件地址。
 * 進一步瞭解Adobe Campaign [傳遞最佳實務](delivery-best-practices.md).
-* 請閱讀以下章節，進一步瞭解傳遞能力： [Campaign中的傳遞管理](about-deliverability.md) 和 [傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant).
+* 請閱讀以下章節，深入瞭解傳遞能力： [Campaign中的傳遞性管理](about-deliverability.md) 和 [傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant).
 
 傳送電子郵件的主要步驟如下：
 

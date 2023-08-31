@@ -5,8 +5,9 @@ description: 進一步瞭解傳遞效能，以及如何疑難排解與傳遞監�
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
+role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 1%
@@ -14,8 +15,6 @@ ht-degree: 1%
 ---
 
 # 傳遞傳送疑難排解 {#delivery-troubleshooting}
-
-
 
 本節列出您在傳送傳遞時可能會遇到的常見問題，以及如何疑難排解這些問題。
 

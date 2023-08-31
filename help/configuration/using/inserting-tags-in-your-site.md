@@ -3,12 +3,13 @@ product: campaign
 title: 在您的網站中插入網頁追蹤標籤
 description: 瞭解如何在您的網站中插入網頁追蹤標籤
 feature: Configuration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

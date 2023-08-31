@@ -2,20 +2,19 @@
 product: campaign
 title: 建立傳遞範本
 description: 瞭解如何透過專屬的使用案例執行A/B測試
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+role: User
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 20%
+source-wordcount: '100'
+ht-degree: 16%
 
 ---
 
-# 建立傳遞範本 {#step-3--creating-two-delivery-templates}
-
-
+# AB測試：建立傳遞範本 {#step-3--creating-two-delivery-templates}
 
 我們現在想要建立兩個傳遞範本。 每個範本都將在下列欄位中參照： **[!UICONTROL Email delivery]** 連結至的活動 **[!UICONTROL Split]** 活動。 如需詳細資訊，請參閱[本章節](about-templates.md)。
 

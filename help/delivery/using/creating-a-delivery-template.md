@@ -2,32 +2,31 @@
 product: campaign
 title: 建立傳遞範本
 description: 建立傳遞範本
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Delivery Templates
+role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '395'
 ht-degree: 11%
 
 ---
 
 # 建立傳遞範本{#creating-a-delivery-template}
 
-
-
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#delivery-template-video)
 
 ## 將現有傳遞轉換為範本 {#converting-an-existing-delivery-to-a-template}
 
-傳遞可以轉換為範本以供新的重複傳遞動作使用。 若要將傳遞轉換為範本，請從傳遞清單中選取它（可透過以下網址存取）： **[!UICONTROL Campaign management]** 樹狀結構的節點。
+傳遞可以轉換為範本以供新的重複傳遞動作使用。 若要將傳遞轉換為範本，請從傳遞清單中選取它（可透過存取） **[!UICONTROL Campaign management]** 樹狀結構的節點。
 
 按一下右鍵並選取 **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-此動作會從選取的傳遞建立傳遞範本。 您必須輸入儲存該檔案的資料夾(位於 **[!UICONTROL Folder]** 欄位)以及根據此範本建立的傳遞所在的資料夾(位於 **[!UICONTROL Execution folder]** 欄位)。
+此動作會從選取的傳遞建立傳遞範本。 您必須輸入儲存該檔案的資料夾(位於 **[!UICONTROL Folder]** 以及根據此範本建立的傳遞所在的資料夾(位於 **[!UICONTROL Execution folder]** 欄位)。
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
@@ -37,16 +36,16 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->為避免設定錯誤，Adobe建議您複製原生範本並自訂其設定，而不是建立新範本。
+>為避免組態錯誤，Adobe建議您複製原生範本並自訂其設定，而非建立新範本。
 
-若要設定傳遞範本，請執行下列步驟：
+若要設定傳送範本，請執行下列步驟：
 
 1. 開啟Campaign Explorer。
 1. 在 **資源** 資料夾，選取 **範本** 則 **傳遞範本**.
 
    ![](assets/delivery_template_1.png)
 
-1. 按一下 **新增** ，以建立新的傳遞範本，或 **複製** 現有範本。
+1. 按一下 **新增** ，以建立新的傳遞範本，或 **複製** 現有的範本。
 
    ![](assets/delivery_template_2.png)
 
@@ -56,13 +55,13 @@ ht-degree: 11%
 
    ![](assets/delivery_template_3.png)
 
-1. 在 **一般** 標籤，確認或變更在 **執行資料夾**， **資料夾**、和 **路由** 下拉式功能表。
+1. 在 **一般** 標籤，確認或變更 **執行資料夾**， **資料夾**、和 **路由** 下拉式功能表。
 
    ![](assets/delivery_template_4.png)
 
 1. 完成 **電子郵件引數** 類別，以及您的電子郵件主題和目標母體。
 1. 新增您的 **HTML內容** 若要個人化您的範本，您可以顯示映象頁面連結和取消訂閱連結。
-1. 選取 **預覽** 標籤。 在 **測試個人化** 下拉式功能表，選取 **收件者** 以預覽範本為選取的設定檔。
+1. 選取 **預覽** 標籤。 在 **測試個人化** 下拉式功能表，選取 **收件者** 以預覽您所選設定檔的範本。
 
    ![](assets/delivery_template_5.png)
 

@@ -2,24 +2,25 @@
 product: campaign
 title: 新增欄位精靈
 description: 新增欄位精靈
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 4%
+source-wordcount: '207'
+ht-degree: 7%
 
 ---
 
 # 新增欄位精靈{#new-field-wizard}
 
 
-精靈可透過 **[!UICONTROL Tools > Advanced > Add new fields]** 可讓您新增一或多個欄位至資料庫中的表格。
+可透過存取的精靈 **[!UICONTROL Tools > Advanced > Add new fields]** 可讓您新增一或多個欄位至資料庫中的表格。
 
 驗證精靈會更新要擴充之資料表的擴充功能綱要，並啟動SQL命令檔來修改資料庫的實體結構。
 
-此助理的優點在於可以快速新增欄位，而不需要知道資料結構的結構。
+此助理的優點在於快速新增欄位，而不需要知道資料模式的結構。
 
 主要缺點是要擴充的資料和屬性的限制。
 

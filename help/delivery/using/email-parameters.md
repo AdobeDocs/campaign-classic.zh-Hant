@@ -2,34 +2,33 @@
 product: campaign
 title: 電子郵件參數
 description: 瞭解電子郵件傳送的專屬選項和設定
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
+role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 14%
 
 ---
 
 # 電子郵件參數 {#email-parameters}
 
-
-
 本節介紹專用於電子郵件傳送的選項和引數。
 
 ## 電子郵件密件副本 {#email-bcc}
 
-Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標，即可透過密件副本將電子郵件儲存在外部系統上。
+Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標，即可透過密件副本在外部系統上儲存電子郵件。
 
-一旦啟用選項，將會為此傳遞保留所有已傳送訊息的精確副本。
+在啟用選項後，將會為此傳遞保留所有已傳送訊息的精確副本。
 
 有關電子郵件密件副本設定和最佳實務的詳細資訊，請參閱 [本節](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
->電子郵件密件副本為選購功能。 請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
+>電子郵件密件副本為選用功能。 請檢查您的授權合約，並聯絡您的帳戶管理員以啟用它。
 
 建立新傳遞或傳遞範本時，預設不會啟用電子郵件密件副本。 您必須在電子郵件傳遞或傳遞範本層級手動啟用。
 
@@ -40,16 +39,16 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 若要為電子郵件傳遞範本啟用電子郵件密件副本，請遵循下列步驟：
 
 1. 前往 **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** 或 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. 選取您選擇的傳遞專案或複製現成可用的傳遞專案 **電子郵件傳遞** 範本，然後選取複製的範本。
+1. 選取您選擇的傳遞或複製現成可用的傳遞內容 **電子郵件傳遞** 範本，然後選取複製的範本。
 1. 按一下 **屬性** 按鈕。
 1. 選取 **[!UICONTROL Delivery]** 索引標籤。
-1. 檢查 **電子郵件密件副本** 選項。 系統會根據此範本，將每次傳遞的所有已傳送訊息副本傳送至已設定的電子郵件密件副本地址。
+1. 檢查 **電子郵件密件副本** 選項。 系統會根據此範本，將每次傳遞的所有已傳送訊息復本傳送至已設定的電子郵件密件副本地址。
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
 >[!NOTE]
 >
->如果傳送至密件副本地址的電子郵件被開啟並按過，這將會在 **[!UICONTROL Total opens]** 和 **[!UICONTROL Clicks]** 傳送分析，這可能會導致某些計算錯誤。
+>如果傳送至密件副本地址的電子郵件被開啟並按過，這將在中列入考慮 **[!UICONTROL Total opens]** 和 **[!UICONTROL Clicks]** 傳送分析，這可能會造成一些計算錯誤。
 
 ## 選取訊息格式 {#selecting-message-formats}
 
@@ -65,7 +64,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-  訊息包含兩種格式：文字和HTML。 接收時顯示的格式取決於收件者的郵件軟體設定（替代的多重部分）。
+  訊息包含兩種格式：文字和HTML。 接收時顯示的格式取決於收件者郵件軟體的設定（替代的多重部分）。
 
   >[!IMPORTANT]
   >
@@ -83,9 +82,9 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 鏡像頁面是可透過網頁瀏覽器線上存取的 HTML 頁面。其內容與電子郵件相同。
 
-依預設，如果將連結插入郵件內容中，則會產生鏡像頁面。如需個人化區塊插入的詳細資訊，請參閱 [個人化區塊](personalization-blocks.md).
+依預設，如果將連結插入郵件內容中，則會產生鏡像頁面。有關個人化區塊插入的詳細資訊，請參閱 [個人化區塊](personalization-blocks.md).
 
-在傳遞屬性中， **[!UICONTROL Mode]** 的欄位 **[!UICONTROL Validity]** 索引標籤可讓您修改此頁面的產生模式。
+在傳遞屬性中， **[!UICONTROL Mode]** 欄位屬於 **[!UICONTROL Validity]** 索引標籤可讓您修改此頁面的產生模式。
 
 ![](assets/s_ncs_user_wizard_miror_page_mode.png)
 
@@ -97,19 +96,19 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 * **[!UICONTROL Force the generation of the mirror page]**：即使傳送中未插入映象頁面的連結，也會建立映象頁面。
 * **[!UICONTROL Do not generate the mirror page]**：不會產生任何映象頁面，即使傳送中存在連結亦然。
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：此選項可讓您在傳送記錄視窗中存取包含個人化資訊的映象頁面內容。 若要這麼做，請在傳送結束後，按一下 **[!UICONTROL Delivery]** 索引標籤並選取您要檢視其映象頁面的收件者行。 按一下&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;連結。
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：此選項可讓您在傳送記錄視窗中存取包含個人化資訊的映象頁面內容。 若要這麼做，在傳送結束後，按一下 **[!UICONTROL Delivery]** 索引標籤並選取您要檢視其映象頁面的收件者行。 按一下&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;連結。
 
   ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## 字元編碼 {#character-encoding}
 
-在 **[!UICONTROL SMTP]** 標籤中， **[!UICONTROL Character encoding]** 區段可讓您設定特定編碼。
+在 **[!UICONTROL SMTP]** 的標籤中， **[!UICONTROL Character encoding]** 區段可讓您設定特定編碼。
 
 預設編碼為UTF-8。 如果部分收件者的電子郵件提供者不支援UTF-8標準編碼，您可能想要設定特定編碼，以正確向電子郵件的收件者顯示特殊字元。
 
-例如，您想要傳送包含日文字元的電子郵件。 為確保所有字元都能正確顯示給在日本的收件者，您可能想要使用可支援日文字元的編碼，而不是標準UTF-8。
+例如，您想要傳送包含日文字元的電子郵件。 為確保所有字元都能正確顯示給在日本的收件者，您可能想要使用可支援日文字元的編碼，而非標準UTF-8。
 
-若要這麼做，請選取 **[!UICONTROL Force the encoding used for messages]** 中的選項 **[!UICONTROL Character encoding]** 區段，然後從顯示的下拉式清單中選擇編碼。
+若要這麼做，請選取 **[!UICONTROL Force the encoding used for messages]** 中的選項 **[!UICONTROL Character encoding]** 區段，並從顯示的下拉式清單中選擇編碼。
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
@@ -119,7 +118,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 依預設，系統會在中接收退回的電子郵件 [平台的預設錯誤方塊](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)，但您可以為傳送定義特定的錯誤地址。
 
-您也可以從此畫面定義特定地址，以便調查當應用程式無法自動限定這些郵件時退回郵件的原因。 對於每個欄位， **新增個人化欄位** 圖示可讓您新增個人化引數。
+您也可以從此畫面定義特定地址，以便調查當應用程式無法自動限定郵件時退回郵件的原因。 對於每個欄位， **新增個人化欄位** 圖示可讓您新增個人化引數。
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
@@ -127,7 +126,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 ## 新增SMTP標頭 {#adding-smtp-headers}
 
-您可以將SMTP標頭新增至您的傳遞。 若要這麼做，請使用 **[!UICONTROL SMTP]** 索引標籤進行標籤。
+您可以新增SMTP標頭至您的傳遞。 若要這麼做，請使用 **[!UICONTROL SMTP]** 索引標籤進行標籤。
 
 在此視窗中輸入的指令碼必須參考下清單單中每行的一個標題： **name：value**.
 

@@ -3,12 +3,13 @@ product: campaign
 title: 新增其他 SQL 函式
 description: 瞭解如何定義其他SQL函式
 feature: Configuration, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -115,7 +116,7 @@ Adobe Campaign可讓使用者定義 **他們自己的函式** 可以存取SQL函
 
   >[!NOTE]
   >
-  >說明必須是有效XML字元的字串：請注意，使用&#39;&lt;&#39;和&#39;>&#39;而不是&lt;和>。
+  >說明必須是有效XML字元的字串：請注意，使用&#39;&lt;&#39;和&#39;>&#39;而非&lt;和>。
 
 * **@type** 是函式傳回型別，是標準值(long、string、byte、datetime...)。 如果省略，伺服器會在實作函式的運算式中，決定可用型別中最佳型別。
 * **@minArgs** 和 **maxArgs** 指定引數的引數數目（最小值和最大值）。 例如，若是有2個引數的函式，minArgs和maxArgs將分別為2和2。 若為3個引數加上1個選用引數，則分別為3個和4個。

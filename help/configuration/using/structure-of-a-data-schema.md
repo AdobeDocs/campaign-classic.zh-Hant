@@ -3,15 +3,13 @@ product: campaign
 title: 資料方案結構
 description: 資料方案結構
 feature: Custom Resources
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 

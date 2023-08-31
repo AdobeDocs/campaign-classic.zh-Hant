@@ -3,12 +3,13 @@ product: campaign
 title: 編輯Campaign Explorer導覽樹狀結構
 description: 編輯Campaign Explorer導覽樹狀結構
 feature: Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 

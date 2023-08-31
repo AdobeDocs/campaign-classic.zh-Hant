@@ -2,13 +2,14 @@
 product: campaign
 title: 關於行銷活動態樣
 description: 關於行銷活動態樣
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+role: User, Data Engineer
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -43,7 +44,7 @@ Campaign Optimization是Adobe Campaign模組，可讓您控制、篩選及監控
 
 ## 套用型別 {#applying-typologies}
 
-建立並套用型別至傳送的步驟列示如下：
+建立並套用型別至傳送的步驟如下所示：
 
 1. 建立型別規則。
 
