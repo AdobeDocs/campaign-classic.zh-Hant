@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3607'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 ### 2023 年 8 月
 
-新增限制，指定無法使用Adobe Campaign解壓縮大於4Gb的壓縮檔。 [深入了解](../../platform/using/unzip-decrypt.md)
+已新增限制，以指明無法使用 Adobe Campaign 解壓縮大於 4GB 的壓縮檔案。 [深入了解](../../platform/using/unzip-decrypt.md)
 
 ### 2023 年 4 月
 
