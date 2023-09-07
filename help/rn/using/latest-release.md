@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 1866e7483d68c1d44f7d069d48d277110a5caa81
+source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1869'
 ht-degree: 57%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 57%
 >
 > 如果您使用 [Campaign - Microsoft Dynamics CRM聯結器](../../platform/using/crm-connectors.md)，您必須使用此新組建版本升級行銷和中間來源伺服器。
 
-_九月_ 2023年7月_
+_2023 年 9 月 7 日_
 
 **安全性增強功能**
 
@@ -88,7 +88,7 @@ _九月_ 2023年7月_
 
 ## 版本 7.3.3 - 版本編號 9359 {#release-7-3-3}
 
-[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
+[!BADGE 有限可用性]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
 
 >[!CAUTION]
 >
@@ -116,7 +116,7 @@ _2023 年 3 月 20 日_
 
 ## 版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
 
-[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
+[!BADGE 有限可用性]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
 
 _2022 年 11 月 21 日_
 
