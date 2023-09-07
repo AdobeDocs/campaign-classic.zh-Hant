@@ -3,14 +3,14 @@ product: campaign
 title: 版本編號升級常見問答集
 description: 與Campaign版本編號升級相關的常見問題
 feature: Upgrade, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1998'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ Adobe Campaign 會定期更新。如果您熟悉我們發佈的內容 [發行說
 
 * 組建版本升級會涉及從組建9342移至任何大於9342的組建。 例如，v7.1版本編號9342至v7.1版本編號9342
 
-* 版本升級需從第6版移至最新版本。  例如： v6.1.1版本編號8666至v7.1版本編號9342。
+* 版本升級涉及從先前的主要版本移動到任何更新的版本。
 
 ## 我是否應該在這些更新前備份我的資料？
 

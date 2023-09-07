@@ -3,16 +3,16 @@ product: campaign
 title: 時區管理
 description: 時區管理
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -102,3 +102,7 @@ Adobe Campaign可讓您以UTC （國際標準時間）格式儲存日期/時間�
 * 美洲/紐約等
 
   這些值擷取自tz (Olson)資料庫。 如需詳細資訊，請參閱 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+## oracle資料庫和伺服器時區
+
+對於主要資料庫，Campaign會使用伺服器時區設定資料庫連線上的工作階段時區。 「WdbcTimeZone」選項沒有影響。 因此，伺服器時區應該與Campaign使用的主要資料庫時區相符。 如果您無法變更伺服器時區，可透過在customer.sh中設定TZ環境變數來覆寫Campaign使用的時區。

@@ -3,14 +3,14 @@ product: campaign
 title: 伺服器設定檔
 description: 伺服器設定檔
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '7962'
+source-wordcount: '8056'
 ht-degree: 37%
 
 ---
@@ -43,6 +43,7 @@ Adobe Campaign的整體設定在 **serverConf.xml** 檔案，位於 **conf** 安
 * [proxyConfig](#proxyconfig)
 * [threadPool](#threadpool)
 * [urlPermission](#urlpermission)
+* [cusHeaders](#cusheaders)
 * [xtkJobs](#xtkjobs)
 
 **其他引數**
@@ -571,7 +572,7 @@ Adobe Campaign的整體設定在 **serverConf.xml** 檔案，位於 **conf** 安
  <tbody> 
   <tr> 
    <td> blacklistFile<br /> </td> 
-   <td> 包含要新增至允許清單之命令的檔案的路徑。 <br /> </td> 
+   <td> 包含要新增至允許清單之命令的檔案路徑。 <br /> </td> 
    <td> 字串<br /> </td> 
   </tr> 
   <tr> 
@@ -997,6 +998,29 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   </tr> 
  </tbody> 
 </table>
+
+## cusHeaders {#cusheaders}
+
+此節點可讓您在從外部伺服器上傳檔案時執行的請求中新增特定標頭。 內容傳遞網路(CND)可以要求特定標頭，以信任請求者。 這些標頭可用來改善對Campaign請求的信任，尤其是在傳遞執行步驟下載每位收件者的個人化檔案時。 大量資源下載要求可解譯為DDos攻擊。 dnsPattern可讓您根據網域名稱為不同的CDN設定特定的標頭名稱和值。
+
+```
+  <!-- List of custom headers added to request. 
+         -->
+    <cusHeaders>
+
+    <!-- Pattern of DNS name or domain 
+         value :  dnsPattern: All or part of the URL's domain to verify, * is a wild card Default:  -->
+      <dnsPattern value="">
+
+    <!-- Header Name and Value 
+           headerName :  Header Name 
+           headerValue :  Header Value -->
+        <headerDef headerName="" headerValue=""/>
+
+      </dnsPattern>
+
+    </cusHeaders> 
+```
 
 ### URL {#url}
 
@@ -1494,7 +1518,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> 偵錯路徑<br /> </td> 
-   <td> 傾印目錄：如果不為空，則複製此目錄中已傳送郵件訊息的MIME信封。 用於疑難排解。 <br /> </td> 
+   <td> 傾印目錄：如果不為空，則將已傳送郵件訊息的MIME信封複製到此目錄中。 用於疑難排解。 <br /> </td> 
    <td> 字串<br /> </td> 
    <td> <br /> </td> 
   </tr> 

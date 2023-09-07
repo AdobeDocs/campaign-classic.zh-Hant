@@ -3,14 +3,14 @@ product: campaign
 title: 設定Campaign選項
 description: 瞭解如何設定Campaign選項
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4004'
 ht-degree: 6%
 
 ---
@@ -696,7 +696,7 @@ ht-degree: 6%
     <ul> 
      <li> <p> <span class="uicontrol">資料型別：</span> 整數</p> </li> 
      <li> <p> <span class="uicontrol">值（文字）</span> ：1 </p> </li> 
-    </ul> 只有在現成可用的導覽樹狀結構已發生太多變更時，才應使用此選項。<br /> 有關詳細資訊，請參閱 <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">本節</a>.<br /> </td> 
+    </ul> 只有在現成可用的導覽樹狀結構已發生太多變更時，才應使用此選項。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 

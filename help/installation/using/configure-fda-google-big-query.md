@@ -3,14 +3,14 @@ product: campaign
 title: 設定Google BigQuery的存取權
 description: 瞭解如何在FDA中設定Google BigQuery的存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '1015'
 ht-degree: 2%
 
 ---
@@ -211,3 +211,7 @@ ht-degree: 2%
 | ProxyUid | 用於已驗證Proxy的使用者名稱 |
 | proxypwd | ProxyUid密碼 |
 | bqpath | 請注意，這僅適用於大量載入工具(Cloud SDK)。 </br> 若要避免使用PATH變數或google-cloud-sdk目錄必須移至其他位置，您可以使用此選項指定伺服器上cloud sdk bin目錄的精確路徑。 |
+| GCloudConfigName | 請注意，這適用於7.3.4版開始並僅適用於大量載入工具(Cloud SDK)。</br> Google Cloud SDK會使用設定將資料載入BigQuery表格。 已命名的設定 `accfda` 儲存用來載入資料的引數。 不過，此選項可讓使用者為組態指定不同的名稱。 |
+| GCloudDefaultConfigName | 請注意，這適用於7.3.4版開始並僅適用於大量載入工具(Cloud SDK)。</br> 必須先將作用中的標籤傳輸至新設定，才能刪除作用中的Google Cloud SDK設定。 此暫時設定是重新建立載入資料的主要設定所必需的。 暫存組態的預設名稱為 `default`，如有需要，可加以變更。 |
+| GCloudRecreateConfig | 請注意，這適用於7.3.4版開始並僅適用於大量載入工具(Cloud SDK)。</br> 當設定為 `false`，大量載入機制不會嘗試重新建立、刪除或修改Google Cloud SDK設定。 相反地，它會使用電腦上現有的設定繼續進行資料載入。 當其他作業取決於Google Cloud SDK設定時，此功能很有價值。 </br> 如果使用者在沒有適當設定的情況下啟用此引擎選項，大量載入機制將會發出警告訊息： `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. 為避免進一步的錯誤，它會恢復為使用預設的ODBC陣列插入大量載入機制。 |
+

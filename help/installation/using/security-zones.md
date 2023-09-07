@@ -3,16 +3,16 @@ product: campaign
 title: 設定安全性區域
 description: 瞭解如何設定安全性區域
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 1%
+source-wordcount: '1475'
+ht-degree: 2%
 
 ---
 
@@ -252,7 +252,7 @@ ht-degree: 1%
      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
      ```
 
-* 切勿將allowEmptyPassword、allowUserPassword、allowSQLInjection設定為true。 這些屬性僅供從v5和v6.0順利移轉之用：
+* 切勿將allowEmptyPassword、allowUserPassword、allowSQLInjection設定為true。
 
    * **allowEmptyPassword** 可讓操作者使用空白密碼。 如果您遇到這種情況，請通知所有操作員要求他們設定截止日期的密碼。 一旦過了這個期限，就將此屬性變更為false。
 

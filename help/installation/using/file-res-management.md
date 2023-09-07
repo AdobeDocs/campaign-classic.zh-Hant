@@ -3,16 +3,16 @@ product: campaign
 title: 檔案與資源管理
 feature: Installation, Application Settings
 description: 瞭解如何在Campaign中設定檔案和資源管理
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 2%
+source-wordcount: '664'
+ht-degree: 3%
 
 ---
 
@@ -104,7 +104,7 @@ FTP/FTPS連線會在proxyFTP引數中定義：
 
 如果您對多個連線型別使用相同的Proxy，則只有ProxyHTTP會定義useSingleProxy設為&quot;1&quot;或&quot;true&quot;。
 
-如果您有應透過Proxy的內部連線，請將它們新增至覆寫引數。
+如果您有不應通過Proxy的內部連線，請將它們新增至覆寫引數。
 
 如果要暫時停用Proxy連線，請將enabled引數設為&quot;false&quot;或&quot;0&quot;。
 
