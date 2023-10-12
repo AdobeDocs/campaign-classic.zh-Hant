@@ -5,8 +5,9 @@ description: 進一步瞭解 Campaign Classic 2022 版本
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+exl-id: 28490323-41d0-4d61-b309-6892fb826d21
+source-git-commit: 2a1ba4b2d11eb953d2533d06786c1464c9cf64b6
+workflow-type: ht
 source-wordcount: '2025'
 ht-degree: 100%
 
@@ -161,7 +162,7 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 * 修正在同時更新大量傳送指標時，導致 Oracle 追蹤工作流程失敗的問題 (NEO-39653)。
 * 修正問題，在執行控制類型時，該問題導致錯誤而無法送出傳遞 (NEO-39833)。
 * 修正登陸頁面上，可能導致線上意見調查回覆 HTML 頁面無法正確顯示特殊字元的問題 (NEO-39438)。
-* 修正在 Explorer 標籤以滑鼠右鍵按一下任何資料夾時，可能導致 Campaign Classic 主控台無法運作的問題 (NEO-38884)。
+* 修正在探索工具標籤以滑鼠右鍵按一下任何資料夾時，可能導致 Campaign Classic 主控台無法運作的問題 (NEO-38884)。
 * 修正在新傳遞中使用先前建立的傳遞範本時，導致缺少 Web Analytics 設定的錯誤。(NEO-28666)
 * 修正可能導致您無法預覽附加至工作流程的行動傳遞問題。
 * 修正在啟用追蹤連結的 URL 簽章機制時，發生無法重新導向個人化追蹤 URL 的錯誤。
