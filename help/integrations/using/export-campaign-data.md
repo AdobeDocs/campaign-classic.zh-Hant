@@ -2,15 +2,15 @@
 product: campaign
 title: 將資料從 Campaign 匯出至 Adobe Experience Platform
 description: 瞭解如何將資料從Campaign Classic匯出至Adobe Experience Platform
-feature: Platform Integration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+feature: Experience Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 4%
 
 將S3或Azure Blob儲存位置連線為 **來源** Adobe中的Experience Platform如下所列。 有關上述各步驟的詳細資訊，請參閱 [來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant).
 
-1. 在Adobe Experience Platform **[!UICONTROL Sources]** 功能表，建立與儲存位置的連線：
+1. 在Adobe Experience Platform中 **[!UICONTROL Sources]** 功能表，建立與儲存位置的連線：
 
    * [建立Amazon S3來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
