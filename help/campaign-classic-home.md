@@ -4,10 +4,10 @@ product: campaign
 title: Adobe Campaign Classic v7產品檔案
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: baa1cfe3b8e65daee7902c85c0ca3ef293b44657
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 62%
+source-wordcount: '171'
+ht-degree: 67%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 62%
 
 ## 有哪些新功能
 
-* **[3月版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良與修正
-
-* **[2022年發行計畫](technotes/using/dc-migration.md)**<br/> 升級您的環境，並改善安全性、基礎結構和效能
+* **[9月版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良與修正
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[更新您的Adobe Experience Cloud Triggers整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth驗證服務已到期：您必須移轉至Adobe I/O
+* **[更新您的Adobe Experience Cloud整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth驗證服務已到期：您必須移轉至Adobe I/O
 
 [更多更新](rn/using/documentation-updates.md)
 
