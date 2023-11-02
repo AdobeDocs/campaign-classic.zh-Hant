@@ -3,19 +3,16 @@ product: campaign
 title: 個人化與隱私
 description: 瞭解隱私權與個人化的安全性最佳實務
 feature: Installation, Privacy, Privacy Tools, URL Personalization
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 個人化與隱私 {#privacy}
-
-
-
 
 ## URL個人化 {#url-personalization}
 
@@ -58,7 +55,7 @@ ht-degree: 3%
 
 如果您在19.1.4版本編號上執行，則可能會在使用追蹤連結或使用錨點標籤的推播通知傳送中遇到問題。 若是如此，建議您停用URL簽章。
 
-身為行銷活動託管、受管理的Cloud Services或混合型客戶，您必須聯絡 [客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 以停用URL簽章。
+身為行銷活動託管、受管理的Cloud Service或混合型客戶，您必須聯絡 [客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 以停用URL簽章。
 
 如果您在混合架構中執行Campaign，在啟用URL簽名之前，請確定已依下列方式升級代管的中間來源執行個體：
 
@@ -88,7 +85,7 @@ ht-degree: 3%
 
 此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [了解更多](../../configuration/using/restricting-pii-view.md)。
 
-請依照下列步驟以執行此操作：
+若要執行此作業，請依照下列步驟操作：
 
 1. 瀏覽至 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** Campaign檔案總管的資料夾。
 
