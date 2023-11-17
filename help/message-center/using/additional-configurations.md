@@ -3,14 +3,14 @@ product: campaign
 title: 其他設定
 description: 瞭解如何在Adobe Campaign Classic中設定異動訊息傳遞的其他設定
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '812'
 ht-degree: 7%
 
 ---
@@ -93,6 +93,12 @@ Once the control and execution modules are installed on the same instance, you m
    * **[!UICONTROL Delivery failed]** ：此狀態是從傳送記錄檔複製而來。 這表示傳送失敗。
    * **[!UICONTROL Event not taken into account]** ：無法將事件連結至訊息範本。 將不會處理事件。
 
+### 封存工作流程排程
+
+避免修改 **封存工作流程** 在控制例項上執行的排程。 否則，從執行例項提取的部分追蹤資料可能會遺失。
+
+如果您確實修改了封存工作流程排程，您也必須變更 **追蹤工作流程** 在執行例項上排程以符合控制例項上的封存工作流程排程。
+
 ## 設定多品牌 {#configuring-multibranding}
 
 本節說明如何針對Adobe Campaign中的異動訊息，為每個品牌設定追蹤和映象頁面URL的解決方案。
@@ -105,7 +111,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 若要設定多品牌，您需要同時設定執行例項和控制例項。
 
-### 執行實例 {#execution-instance}
+### 執行執行個體 {#execution-instance}
 
 在執行例項上，請遵循以下步驟：
 
