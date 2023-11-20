@@ -6,9 +6,9 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '776'
 ht-degree: 4%
 
 ---
@@ -101,7 +101,7 @@ Adobe Campaign藉由行銷活動型別中所包含的一組規則，確保通訊
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-要處理的訊息數目會在定義的可用性範圍內平均劃分。 這尤其適用於客服中心，因為其每天的通話次數上限是有限的。 若是電子郵件傳遞，請 **[!UICONTROL Do not limit instantaneous delivery capacity]** 選項可讓您忽略此可用性範圍，並同時傳送您的電子郵件。
+可處理的最大訊息數會在定義的可用性範圍內平均劃分。 這尤其適用於客服中心，因為其每天的通話次數上限是有限的。 若是電子郵件傳遞，請 **[!UICONTROL Do not limit instantaneous delivery capacity]** 選項可讓您忽略此可用性範圍，並同時傳送您的電子郵件。
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
