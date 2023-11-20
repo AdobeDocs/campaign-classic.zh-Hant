@@ -2,21 +2,19 @@
 product: campaign
 title: Adobe Analytics聯結器布建
 description: 深入瞭解Adobe Analytics聯結器布建
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 2%
+source-wordcount: '673'
+ht-degree: 3%
 
 ---
 
 # Adobe Analytics 連接器佈建 {#adobe-analytics-connector-provisioning}
-
-
 
 >[!IMPORTANT]
 >
@@ -30,7 +28,13 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 
 * 如果您正在實作新的聯結器，實作Adobe IMS為選用。 如果沒有Adobe ID使用者，Adobe Campaign將使用技術使用者來與Adobe Analytics同步。
 
-為了讓此整合發揮作用，您必須建立專用於Analytics聯結器的Adobe Analytics產品設定檔。 之後，您將需要建立Adobe I/O專案。
+為了讓此整合發揮作用，您必須建立Adobe Analytics產品設定檔，此設定檔將專門用於Analytics聯結器。 之後，您將需要建立Adobe I/O專案。
+
+<!--
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
+-->
 
 ## 建立Adobe Analytics產品設定檔 {#analytics-product-profile}
 
@@ -72,7 +76,9 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. 對於 **[!UICONTROL Dimensions]** 功能，新增 **[!UICONTROL Dimensions]** 您稍後將需要設定。
+1. 對於 **[!UICONTROL Dimensions]** 功能，新增 **[!UICONTROL Dimensions]** 未來設定所需。
+
+   確保所選的Dimension與中要設定的規則相符 [外部帳戶](adobe-analytics-connector.md#external-account-classic) 並對齊中的對應eVar編號 [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. 對於 **[!UICONTROL Report Suite Tools]** 功能，新增以下許可權：
 

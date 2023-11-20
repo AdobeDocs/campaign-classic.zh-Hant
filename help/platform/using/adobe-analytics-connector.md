@@ -2,21 +2,19 @@
 product: campaign
 title: Adobe Analytics 連接器
 description: 深入瞭解 Adobe Analytics 連接器
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
 # Adobe Analytics 連接器{#adobe-analytics-connector}
-
-
 
 ## 關於 Adobe Analytics 連接器整合 {#about-analytics-connector-integration}
 
