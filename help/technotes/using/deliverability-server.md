@@ -4,9 +4,9 @@ title: 更新至新的傳遞能力伺服器
 description: 瞭解如何更新至新的Campaign傳遞能力伺服器
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1356'
 ht-degree: 3%
 
 ---
@@ -40,12 +40,15 @@ ht-degree: 3%
 
 ## 實施步驟 {#implementation-steps}
 
-作為新傳遞能力伺服器整合的一部分，Campaign需要透過Identity Management Service (IMS)驗證與Adobe Shared Services通訊。 首選的方式是使用Adobe Developer型閘道權杖(也稱為技術帳戶權杖或AdobeIO JWT)。
-
 >[!WARNING]
 >
 >這些步驟只應在混合及內部部署實作中執行。
+
+作為新傳遞能力伺服器整合的一部分，Campaign需要透過Identity Management Service (IMS)驗證與Adobe Shared Services通訊。 首選的方式是使用Adobe Developer型閘道權杖(也稱為技術帳戶權杖或AdobeIO JWT)。
+
+>[!AVAILABILITY]
 >
+> JWT （JSON Web權杖）目前正在折舊中，將由OAuth取代。 此轉換在Campaign即將發行的版本中逐步執行，檔案將會更新以反映這些更新。
 
 ### 必要條件{#prerequisites}
 
@@ -60,7 +63,7 @@ ht-degree: 3%
 
    您必須在所有Campaign執行個體(MKT、MID、RT、EXEC)上以正確的值填入此選項。 身為混合型客戶，請聯絡Adobe以在MID、RT和EXEC執行個體上設定選項。
 
-身為內部部署客戶，您也必須檢查促銷活動 **[!UICONTROL Product profile]** 可供您的組織使用。 請依照下列步驟以執行此操作：
+身為內部部署客戶，您也必須檢查促銷活動 **[!UICONTROL Product profile]** 可供您的組織使用。 若要執行此作業，請依照下列步驟操作：
 
 1. 以管理員身分，連線至 [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. 存取 **產品與服務** 區段和檢查 **Adobe Campaign** 會列出。

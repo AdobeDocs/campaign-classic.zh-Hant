@@ -3,23 +3,21 @@ product: campaign
 title: 為 Adobe Experience Cloud 觸發器配置 Adobe I/O
 description: 瞭解如何設定Adobe Experience Cloud Triggers的Adobe I/O
 feature: Triggers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: integrations
 content-type: reference
 index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 4%
+source-wordcount: '761'
+ht-degree: 5%
 
 ---
 
 # 為 Adobe Experience Cloud 觸發器配置 Adobe I/O {#configuring-adobe-io}
-
-
 
 >[!CAUTION]
 >
@@ -39,11 +37,11 @@ ht-degree: 4%
 
 ## 步驟1：建立/更新Adobe I/O專案 {#creating-adobe-io-project}
 
-1. 存取 [!DNL Adobe I/O] 並使用貴組織的開發人員存取權登入。
+>[!AVAILABILITY]
+>
+> JWT （JSON Web權杖）目前正在折舊中，將由OAuth取代。 此轉換在Campaign即將發行的版本中逐步執行，檔案將會更新以反映這些更新。
 
-   >[!NOTE]
-   >
-   > 請確定您已登入正確的組織入口網站。
+1. 存取 [!DNL Adobe I/O] 並使用貴組織的開發人員存取權登入。 請確定您已登入正確的組織入口網站。
 
 1. 從執行個體設定檔案ims/authIMSTAClientId擷取現有的整合使用者端識別碼（使用者端ID）。 不存在或空白屬性表示未設定使用者端識別碼。
 
