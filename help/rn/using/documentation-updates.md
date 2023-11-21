@@ -7,22 +7,24 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
+source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 100%
+source-wordcount: '3645'
+ht-degree: 98%
 
 ---
 
 # 文件更新{#documentation-updates}
-
-
 
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
 ## 2023 年
+
+### 2023 年 11 月
+
+JWT （JSON Web權杖）目前正在折舊中，將由OAuth取代。 此轉換在Campaign即將發行的版本中逐步執行，檔案將會更新以反映這些更新。
 
 ### 2023 年 8 月
 
@@ -183,7 +185,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 全新 Google BigQuery FDA 連接器 - [了解更多](../../installation/using/configure-fda-google-big-query.md)
 
-「帳單 (帳單)」技術工作流程描述現在包括最初由「活動帳單設定檔案數 (billingActiveContactCount)」執行的任務。 [顯示全文](../../workflow/using/about-technical-workflows.md)
+「帳單（帳單）」技術工作流程說明現在包括最初由「活動帳單設定檔數(billingActiveContactCount)」執行的任務。 [深入了解](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 5 月 {#may-2021}
 
@@ -400,9 +402,9 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已提升「隱私權與同意」一節，其提供更詳細的資訊和有用的連結。[顯示全文](../../platform/using/privacy-and-recommendations.md)
 
-已更新 Campaign Classic 頁面的「隱私權管理」，其中包含「規範」欄位資訊，當您使用 API 允許設定自動隱私權要求流程時，便可使用此欄位。[顯示全文](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+已更新 Campaign Classic 頁面的「隱私權管理」，其中包含「規範」欄位資訊，當您使用 API 允許設定自動隱私權要求流程時，便可使用此欄位。[深入了解](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 和巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[顯示全文](../../platform/using/privacy-and-recommendations.md)
+「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 與巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[深入了解](../../platform/using/privacy-and-recommendations.md)
 
 已將資訊新增至子工作流程記錄和行為中，以防發生錯誤。[顯示全文](../../workflow/using/sub-workflow.md)
 
