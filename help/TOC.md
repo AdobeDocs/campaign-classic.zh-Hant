@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
-workflow-type: ht
-source-wordcount: '2529'
-ht-degree: 100%
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+workflow-type: tm+mt
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
       + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign 工作區{#campaign-workspace}
          + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
-         + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
+         + [使用 Campaign 探索工具](platform/using/adobe-campaign-explorer.md)
          + [瀏覽及自訂清單](platform/using/adobe-campaign-ui-lists.md)
       + 常見問題集 {#faq}
          + [最常見的問題](platform/using/common-questions.md)
@@ -652,6 +652,7 @@ ht-degree: 100%
          + [最佳實務和限制](installation/using/fda-best-practices.md)
          + 設定指南 {#config-databases}
             + [設定步驟](installation/using/configure-fda.md)
+            + [設定Amazon Redshift](installation/using/configure-fda-redshift.md)
             + [設定 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [設定 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [設定 Hadoop](installation/using/configure-fda-hadoop.md)
@@ -785,8 +786,8 @@ ht-degree: 100%
       + [JavaScript 中的 SOAP 方法](configuration/using/soap-methods-in-javascript.md)
       + [新增其他 SQL 函式](configuration/using/adding-additional-sql-functions.md)
    + 導覽階層 {#navigation-hierarchy}
-      + [設定瀏覽器階層](configuration/using/configuration.md)
-      + [編輯瀏覽器階層](configuration/using/edition.md)
+      + [設定探索工具階層](configuration/using/configuration.md)
+      + [編輯探索工具階層](configuration/using/edition.md)
    + 使用自訂收件者表格 {#use-a-custom-recipient-table}
       + [關於自訂收件者表格](configuration/using/about-custom-recipient-table.md)
       + [方案特性](configuration/using/schema-characteristics.md)

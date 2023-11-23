@@ -3,15 +3,15 @@ product: campaign
 title: 設定FDA聯結器
 description: 瞭解FDA的設定步驟
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 7%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 5%
 
 請依照下列連結深入瞭解：
 
+* 連結Campaign和 [Amazon Redshift](../../installation/using/configure-fda-redshift.md)
 * 連結Campaign和 [azure synapse](../../installation/using/configure-fda-synapse.md)
 * 連結Campaign和 [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * 連結Campaign和 [hadoop](../../installation/using/configure-fda-hadoop.md)
