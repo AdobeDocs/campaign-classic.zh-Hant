@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3645'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 98%
 
 ### 2023 年 11 月
 
-JWT （JSON Web權杖）目前正在折舊中，將由OAuth取代。 此轉換在Campaign即將發行的版本中逐步執行，檔案將會更新以反映這些更新。
+JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
 
 ### 2023 年 8 月
 
@@ -185,7 +185,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 全新 Google BigQuery FDA 連接器 - [了解更多](../../installation/using/configure-fda-google-big-query.md)
 
-「帳單（帳單）」技術工作流程說明現在包括最初由「活動帳單設定檔數(billingActiveContactCount)」執行的任務。 [深入了解](../../workflow/using/about-technical-workflows.md)
+「帳單 (帳單)」技術工作流程描述現在包括最初由「活動帳單設定檔案數 (billingActiveContactCount)」執行的任務。 [深入了解](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 5 月 {#may-2021}
 
