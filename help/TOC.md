@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -652,7 +652,7 @@ ht-degree: 99%
          + [最佳實務和限制](installation/using/fda-best-practices.md)
          + 設定指南 {#config-databases}
             + [設定步驟](installation/using/configure-fda.md)
-            + [設定Amazon Redshift](installation/using/configure-fda-redshift.md)
+            + [設定 Amazon Redshift](installation/using/configure-fda-redshift.md)
             + [設定 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [設定 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [設定 Hadoop](installation/using/configure-fda-hadoop.md)
