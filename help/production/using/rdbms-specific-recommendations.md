@@ -3,16 +3,16 @@ product: campaign
 title: RDBMS 特定建議
 description: RDBMS 特定建議
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 2%
+source-wordcount: '1256'
+ht-degree: 3%
 
 ---
 
@@ -82,6 +82,10 @@ ht-degree: 2%
    ```
 
 ### 簡單的維護作業 {#simple-maintenance}
+
+>[!IMPORTANT]
+>
+>Adobe強烈建議不要在CampaignAdobe託管的資料庫設定上執行VACUUM FULL。建議的維護作業僅適用於ON-PREMISE安裝。 對於自訂表格實作和結構描述，使用VACUUM FULL時，需自行承擔風險，因為VACUUM — 不進行監視 — 可以獨佔鎖定表格，導致查詢逾時，並且在某些情況下會鎖定整個資料庫。
 
 在PostgreSQL中，您可以使用下列一般關鍵字：
 

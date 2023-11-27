@@ -3,12 +3,12 @@ product: campaign
 title: 資料庫清除工作流程
 description: 瞭解如何自動清除過時的資料
 feature: Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 0%
@@ -282,7 +282,7 @@ ht-degree: 0%
 1. 名稱以開頭的表格清單 **wkDlv_** 會先透過下列查詢(postgresql)復原：
 
    ```sql
-   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
+   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. 然後會排除進行中工作流程使用的表格。 若要這麼做，請使用下列查詢復原進行中的傳遞清單：
@@ -323,7 +323,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->系統會針對中的各個工作流程，指定記錄的清除頻率 **歷史記錄（天）** 欄位（預設值30天）。 此欄位可在以下網址找到： **執行** 工作流程屬性的索引標籤。 如需詳細資訊，請參閱[本章節](../../workflow/using/workflow-properties.md#execution)。
+>歷史記錄的清除頻率是針對 **歷史記錄（天）** 欄位（預設值30天）。 此欄位可在以下網址找到： **執行** 工作流程屬性的索引標籤。 如需詳細資訊，請參閱[本章節](../../workflow/using/workflow-properties.md#execution)。
 
 1. 若要復原要刪除的工作流程清單，請使用以下查詢：
 
