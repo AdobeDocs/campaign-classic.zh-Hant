@@ -8,10 +8,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
+source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '761'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,11 @@ ht-degree: 0%
 
 Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity Management服務(IMS)：
 
-* 如果您管理已移轉的外部帳戶，您必須實作Adobe IMS並透過Adobe ID連線至Adobe Campaign。 透過Adobe ID IMS登入的使用者應為 **資料聯結器** Adobe Analytics帳戶，並擁有一組適用於的許可權： **產品設定檔** 如下所述。
+* 如果您管理已移轉的外部帳戶，您必須實作Adobe IMS並透過Adobe ID連線至Adobe Campaign。
+
+  請注意，透過Adobe ID IMS登入的使用者必須是 **資料聯結器** Adobe Analytics帳戶並擁有以下專案的許可權： **產品設定檔** 已提及 [以下](#analytics-product-profile).
+
+問題是資料聯結器的擁有者與登入Campaign並嘗試與Analytics整合的使用者不是使用者。
 
 * 如果您正在實作新的聯結器，實作Adobe IMS為選用。 如果沒有Adobe ID使用者，Adobe Campaign將使用技術使用者來與Adobe Analytics同步。
 
@@ -33,7 +37,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 
 >[!AVAILABILITY]
 >
-> JWT （JSON Web權杖）目前正在折舊中，將由OAuth取代。 此轉換在Campaign即將發行的版本中逐步執行，檔案將會更新以反映這些更新。
+> JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
 
 ## 建立Adobe Analytics產品設定檔 {#analytics-product-profile}
 
