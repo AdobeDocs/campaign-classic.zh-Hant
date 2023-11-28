@@ -2,14 +2,14 @@
 product: campaign
 title: 開始使用設定檔
 description: 在Adobe Campaign中使用設定檔
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '853'
 ht-degree: 60%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 60%
 
 
 
-設定檔會集中在Adobe Campaign資料庫中。 要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。透過Adobe Campaign，您可以將行銷記錄、購買資訊、偏好設定、CRM資料以及任何相關的PI資料整合到整合檢視中，以進行分析並採取行動。
+設定檔會集中於Adobe Campaign資料庫中。 要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。透過Adobe Campaign，您可以將行銷記錄、購買資訊、偏好設定、CRM資料以及任何相關的PI資料整合在整合檢視中，以進行分析並採取行動。
 
 **Profile** 是指一筆代表終端客戶或潛在客戶之資訊的紀錄 (例如：nmsRecipient 表格或外部表格中的記錄，包含 cookie 識別碼、客戶識別碼、行動識別碼或特定通路相關的其他資訊)。
 
-在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、SMS 等) 的預設用戶檔案。資料庫中儲存的收件者資料可讓您篩選將接收任何指定傳遞的目標，並在傳遞內容中新增個人化資料。 資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
+在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、簡訊等) 的預設用戶檔案。儲存在資料庫中的收件者資料可讓您篩選將接收任何指定傳遞的目標，並在傳遞內容中新增個人化資料。 資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
 
 ![](assets/do-not-localize/how-to-video.png) [瞭解影片中設定檔的概念](#create-profiles-video)
 
@@ -70,7 +70,7 @@ ht-degree: 60%
 
 依預設，收件者會儲存在 **[!UICONTROL Profiles and Targets > Recipients]** 樹狀結構的節點。 由此畫面，您可以建立收件者以及以下各項：
 
-* 排序和篩選資料庫的設定檔 —  [瞭解更多](../../platform/using/filtering-options.md)
+* 排序及篩選資料庫的設定檔 —  [瞭解更多](../../platform/using/filtering-options.md)
 * 從資料庫移動、複製或刪除設定檔 —  [瞭解更多](../../platform/using/managing-profiles.md)，
 * 更新設定檔 —  [瞭解更多](../../platform/using/updating-data.md)
 * 匯出收件者 —  [瞭解更多](../../platform/using/exporting-and-importing-profiles.md)
@@ -80,11 +80,11 @@ ht-degree: 60%
 
 ![](assets/d_ncs_user_interface01.png)
 
-Adobe Campaign Explorer的一般版面顯示於 [此頁面](../../platform/using/adobe-campaign-explorer.md).
+Adobe Campaign Explorer的一般版面配置顯示於 [此頁面](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 清單顯示設定的說明，請參見 [此頁面](../../platform/using/adobe-campaign-ui-lists.md).
+>您也可以按一下 **[!UICONTROL Profiles and targets > Recipients]** 連結，從 Adobe Campaign 樹狀結構清單中顯示這份清單的進階檢視。您可根據您的需求設定清單的顯示。您可以新增或刪除欄、定義欄順序、排序資料等。 清單顯示設定的說明，請參閱 [此頁面](../../platform/using/adobe-campaign-ui-lists.md).
 >
 >您也可以定義收件者畫面。如需有關此功能的進一步資訊，請參閱 [本節](../../platform/using/access-management-folders.md).
 
@@ -94,17 +94,17 @@ Adobe Campaign Explorer的一般版面顯示於 [此頁面](../../platform/using
 
 計費帳單僅會考慮&#x200B;**有效** 的用戶檔案。如果在過去 12 個月透過任何通路鎖定過用戶檔案或與其進行過通訊，那麼則該用戶檔案被視為有效。
 
-多次傳遞所定位的設定檔只會計算一次。
+數個傳送所定位的設定檔只會計算一次。
 
 >[!NOTE]
 >
->Facebook 和 Twitter 通路不包含在內。
+>facebook和X (原稱為Twitter)管道不包含在內。
 
-作用中設定檔計數可用於 **行銷例項** 僅限。 它不適用於執行例項，亦即MID （中間來源）和RT （訊息中心/即時傳訊）例項。
+作用中設定檔計數可用於 **行銷例項** 僅限。 它不適用於執行例項，亦即MID (mid sourcing)和RT （Message Center/即時傳訊）例項。
 
 >[!NOTE]
 >
->您也可以直接從Campaign控制面板監視執行個體上的作用中設定檔數目。 如需詳細資訊，請參閱 [控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>您也可以直接從Campaign「控制面板」監視執行個體上的作用中設定檔數目。 有關詳細資訊，請參閱 [控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## 教學課程影片 {#create-profiles-video}
 

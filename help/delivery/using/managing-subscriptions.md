@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_add.png)
 
-* 輸入服務名稱，在 **[!UICONTROL Label]** 欄位並選取傳送頻道：電子郵件、行動裝置、Facebook、Twitter或行動應用程式。
+* 輸入服務名稱，在 **[!UICONTROL Label]** 欄位並選取傳送頻道：電子郵件、行動裝置、Facebook、X (先前稱為Twitter)或行動應用程式。
 
   >[!NOTE]
   >
-  >facebook和Twitter訂閱的詳細資訊，請參見 [本節](../../social/using/about-social-marketing.md). 行動應用程式訂閱的詳細資訊，請參見 [關於行動應用程式頻道](about-mobile-app-channel.md).
+  >facebook和X訂閱的詳細資訊，請參見 [本節](../../social/using/about-social-marketing.md). 行動應用程式訂閱的詳細資訊，請參見 [關於行動應用程式頻道](about-mobile-app-channel.md).
 
 * 針對電子郵件型別服務，選取 **傳遞模式**. 可能的模式包括： **[!UICONTROL Newsletter]** 或 **[!UICONTROL Viral]**.
 * 您可以傳送 **確認訊息** 以取得訂閱或取消訂閱。 若要這麼做，請選取傳遞範本，以用於從 **[!UICONTROL Subscription]** 和 **[!UICONTROL Unsubscription]** 欄位。 這些範本必須設定為 **[!UICONTROL Subscription]** 型別目標對應，沒有已定義的目標。 請參閱區段 [關於電子郵件頻道](about-email-channel.md).

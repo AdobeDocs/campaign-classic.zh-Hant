@@ -3,15 +3,15 @@ product: campaign
 title: 外部帳戶
 description: 瞭解如何建立外部帳戶
 feature: Installation, Application Settings, External Account
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 8%
+source-wordcount: '1841'
+ht-degree: 9%
 
 ---
 
@@ -119,7 +119,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 * [電話](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [代理商](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/about-social-marketing.md)
+* [X (先前稱為Twitter)](../../social/using/about-social-marketing.md)
 * [iOS 管道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android 管道](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -137,7 +137,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 * 若要設定中間來源外部帳戶，請參閱 [本節](mid-sourcing-server.md)
 
-### 執行實例  {#execution-instance-external-account}
+### 執行執行個體  {#execution-instance-external-account}
 
 如果您有已劃分的架構，則需要指定連結至控制執行個體的執行執行個體，並連線它們。 將異動訊息範本部署至執行例項。
 

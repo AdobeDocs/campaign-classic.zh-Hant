@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 5%
 
 ---
 
@@ -22,4 +22,4 @@ Adobe Campaign可讓您建立和管理電子報等資訊服務，並管理這些
 
 >[!NOTE]
 >
->此功能作為Adobe Campaign的標準提供。 選用的應用程式「社交行銷」可讓您透過Facebook和Twitter聯絡客戶和潛在客戶。
+>此功能作為Adobe Campaign的標準提供。 選用的應用程式「社交行銷」可讓您透過Facebook和X (先前稱為Twitter)聯絡客戶和潛在客戶。

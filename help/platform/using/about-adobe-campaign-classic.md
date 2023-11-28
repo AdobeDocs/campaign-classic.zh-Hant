@@ -2,15 +2,15 @@
 product: campaign
 title: 關於 Adobe Campaign Classic
 description: 探索重要功能、使用者介面和全域準則
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 92%
+source-wordcount: '934'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign 中的行銷活動週期說明了產品的主要功能區：
 
 用戶檔案 (客戶、潛在客戶、新聞訂閱者等) 將匯集於 Adobe Campaign 資料庫中。要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。藉助 Adobe Campaign，您可以將行銷記錄、購買資訊、偏好、CRM 資料以及任何相關的 PII 資料融入整合視圖中，以進行分析並採取行動。
 
-在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、SMS 等) 的預設用戶檔案。有了資料庫中儲存的收件者資料，您能夠對接收任何給定內容的收件者進行篩選，並在交付內容中新增個人化資料。資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
+在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、簡訊等) 的預設用戶檔案。有了資料庫中儲存的收件者資料，您能夠對接收任何給定內容的收件者進行篩選，並在交付內容中新增個人化資料。資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
 
 在](../../platform/using/about-profiles.md)關於設定檔[中對設定檔管理的基本知識進行說明。
 
@@ -52,7 +52,7 @@ Adobe Campaign 提供了強大且方便使用的市場細分和目標鎖定功�
 
 ### 跨頻道行銷活動策劃 {#cross-channel-campaign-orchestration}
 
-Adobe Campaign 可讓您在多個頻道上設計及編排有針對性的個人化行銷活動：電子郵件、直接行銷郵件、SMS、推播通知等。單一介面可為您提供排程、編排、設定、個人化、自動化、執行和評量所有行銷活動和通訊所需的所有功能。如需活動排程和執行行銷活動的更多資訊，請參閱[本頁面](../../campaign/using/setting-up-marketing-campaigns.md)。
+Adobe Campaign 可讓您在多個頻道上設計及編排有針對性的個人化行銷活動：電子郵件、直接行銷郵件、簡訊、推播通知等。單一介面可為您提供排程、編排、設定、個人化、自動化、執行和評量所有行銷活動和通訊所需的所有功能。如需活動排程和執行行銷活動的更多資訊，請參閱[本頁面](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 ### 個人化和即時互動 {#personalization-and-real-time-interaction}
 
@@ -76,8 +76,8 @@ Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行�
 * [行銷活動](../../campaign/using/designing-marketing-campaigns.md) - 編排跨通路行銷活動
 * [MRM](../../mrm/using/about-marketing-resource-management.md) -管理行銷資源和預算
 * [互動](../../interaction/using/interaction-and-offer-management.md) -運用 Campaign 管理優惠方案
-* [訊息中心](../../message-center/using/about-transactional-messaging.md) -透過電子郵件、SMS 或在行動應用程式上傳送交易式訊息
-* [社交行銷](../../social/using/about-social-marketing.md) -在 Facebook、Twitter 之類社交媒體上通訊
+* [訊息中心](../../message-center/using/about-transactional-messaging.md) -透過電子郵件、簡訊或在行動應用程式上傳送交易式訊息
+* [社交行銷](../../social/using/about-social-marketing.md)  — 在社群媒體上通訊：Facebook、X (原稱為Twitter)、
 * [工作流程](../../workflow/using/about-workflows.md)/資料管理 - 透過工作流程自動化流程並管理資料
 * [網路應用程式](../../web/using/about-web-applications.md) -建立網頁和表單
 * [意見調查管理員](../../surveys/using/about-surveys.md) -建立線上意見調查和投票

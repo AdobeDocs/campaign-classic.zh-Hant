@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '287'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-系統會為您安裝的每個管道提供預設範本：直接郵件、電子郵件、傳真、電話、行動管道（簡訊）、Facebook、Twitter等。
+系統會為您安裝的每個管道提供預設範本：直接郵件、電子郵件、傳真、電話、行動管道（簡訊）、Facebook、X (先前稱為Twitter)等。
 
 >[!NOTE]
 >

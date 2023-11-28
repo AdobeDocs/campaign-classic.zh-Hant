@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 100%
+source-wordcount: '2553'
+ht-degree: 98%
 
 ---
 
@@ -106,7 +106,7 @@ _2021 年 6 月 5 日_
 <tbody>
 <tr>
 <td>
-<p>Journey Orchestration 與 Adobe Campaign Classic 的整合現已正式推出。 它可讓 Journey Orchestration 使用 Adobe Campaign Classic 異動訊息功能來傳送電子郵件、推播通知和 SMS。</p>
+<p>Journey Orchestration 與 Adobe Campaign Classic 的整合現已正式推出。 它可讓 Journey Orchestration 使用 Adobe Campaign Classic 異動訊息功能來傳送電子郵件、推播通知和簡訊。</p>
 <p>Journey Orchestration 與 Campaign Classic 執行個體之間的連線在佈建時由 Adobe 設定。</p>
 <p>如需詳細資訊，請參閱 <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=zh-Hant">Journey Orchestration 文件</a>。<a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=zh-Hant">本節</a>中提供了逐步使用案例</p>
 </td>
@@ -275,7 +275,7 @@ _2021 年 2 月 22 日_
 * Workflow Heatmap 已經過改善，可避免在執行包含多個活動的工作流程時逾時。 (NEO-27423)。
 * 即使優惠方案結束日期已過，卻仍可能顯示的問題已修正。 Campaign Classic 現在會考慮結束日期的整個時間標記，而非僅考慮日期。 (NEO-27590)
 * Google+ 連結已從&#x200B;**社交網路共用連結**&#x200B;個人化區塊中移除。
-* 修正上一版本中實施錯誤修正後的問題。 使用 SSL/TLS 連線時，在主機名稱上新增檢查，導致 SMS 傳遞失敗。 已針對大多數通訊協定停用主機名稱驗證，例如使用 proxy 的 POP3、SMS 和 HTTP，而 SMS 外部帳戶的憑證檢查已改進為使用三個值 (NEO-29581)。 [進一步了解](../../delivery/using/sms-protocol.md#skip-tls)
+* 修正上一版本中實施錯誤修正後的問題。 使用 SSL/TLS 連線時，在主機名稱上新增檢查，導致簡訊傳遞失敗。 已針對大多數通訊協定停用主機名稱驗證，例如使用 proxy 的 POP3、SMS 和 HTTP，而 SMS 外部帳戶的憑證檢查已改進為使用三個值 (NEO-29581)。 [進一步了解](../../delivery/using/sms-protocol.md#skip-tls)
 
 **修補程式**
 
@@ -291,7 +291,7 @@ _2021 年 2 月 22 日_
 * 修正執行傳遞分析時，可能會減少伺服器上記憶體使用量的問題。
 * 修正嘗試執行特定複雜查詢時，會導致執行個體無法作業的問題。
 * 修正可能無法執行&#x200B;**「同步 Twitter 頁面」**&#x200B;的技術工作流程問題。 (NEO-28634)
-* 修正嘗試使用&#x200B;**推文 (twitter)**&#x200B;傳遞範本在 Twitter 上發佈時，可能會顯示與 decryptPassword 函式相關的錯誤訊息的問題。 (NEO-28216)
+* 修正嘗試使用在X (先前稱為Twitter)上發佈時，可能會顯示與decryptPassword函式相關的錯誤訊息的問題。 **Tweet (twitter)** 傳遞範本。 (NEO-28216)
 * 修正使用 **Javascript** 活動在工作流程中提出 HTTP 請求時發生的問題。 在主機名稱中定義連接埠號碼後，呼叫將失敗，並出現下列錯誤 (NEO-29146)：
 
 ```
@@ -318,4 +318,4 @@ XTK-170024 The temporary 'temp:deliveryEmail-all' schema is not defined in the c
 The maximum number of connections has been reached (50) by connections pool 'nms:extAccount:acsDefaultRelayAccount XXX'. The server is overloaded. Please try again later.
 ```
 
-* 修正伺服器與提供者之間發生連線問題時的 SMS 錯誤。 然後，MTA 子項會自動停用連線。 只要尚未啟動新子項，Adobe Campaign Classic 就不會嘗試連線至這個失敗連線。
+* 修正伺服器與提供者之間發生連線問題時的簡訊錯誤。 然後，MTA 子項會自動停用連線。 只要尚未啟動新子項，Adobe Campaign Classic 就不會嘗試連線至這個失敗連線。

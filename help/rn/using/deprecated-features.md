@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '1515'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
 <tr>
  <td>使用 Facebook 進行社交行銷</td>
- <td>使用 Facebook 的社交行銷現已棄用。您可以使用 Twitter 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂頻道。
+ <td>使用 Facebook 的社交行銷現已棄用。您可以使用X (先前稱為Twitter)整合在社群媒體上發佈內容，或使用Adobe建立自訂頻道。
  <p></p>
   <p>目標移除日期：2023 年底</p>
   </td>
@@ -137,7 +137,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr> 
    <tr> 
    <td>行動裝置頻道 - MMS 和 WAP 推播訊息</td>
-   <td>自 Campaign 第 18.4 發行版本開始，不再提供 MMS 和 Wap 推播頻道。作為取代，您可以利用 <a href="../../delivery/using/sms-channel.md">SMS </a> 和 <a href="../../delivery/using/about-mobile-app-channel.md">Push</a> 傳遞。</td>
+   <td>自 Campaign 第 18.4 發行版本開始，不再提供 MMS 和 Wap 推播頻道。<a href="../../delivery/using/sms-channel.md">作為取代，您可以利用簡訊</a> 和 <a href="../../delivery/using/about-mobile-app-channel.md"> Push</a> 傳遞。</td>
   </tr> 
    <tr> 
    <td>行動裝置頻道 - LINE v1</td>
@@ -244,10 +244,10 @@ Campaign Classic 與下列同盟資料存取 (FDA) 的伺服器不相容。請�
 
 ### 簡訊連接器 {#sms-eol}
 
-舊的 SMS 連接器自第 20.2 版開始將不再使用。Adobe Campaign 跟以下內容不相容：
+舊的簡訊連接器自第 20.2 版開始將不再使用。Adobe Campaign 跟以下內容不相容：
 
 * Generic SMPP（支援二進位模式的 SMPP 第 3.4 版本）
-* Sybase365 (SAP SMS 365)
+* Sybase365 (SAP簡訊365)
 * CLX Communications
 * Tele2
 * O2

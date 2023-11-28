@@ -6,20 +6,18 @@ feature: Social Marketing
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '577'
 ht-degree: 2%
 
 ---
 
 # 病毒式行銷及社交行銷{#viral-and-social-marketing}
 
-
-
 Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
 
-這可讓傳遞收件者或網站訪客與其網路共用資訊：從新增連結至其Facebook或Twitter設定檔，到傳送訊息給朋友。
+這可讓傳遞收件者或網站訪客與其網路共用資訊：從新增連結至其Facebook或X (先前稱為Twitter)設定檔，到傳送訊息給朋友。
 
 ![](assets/s_ncs_user_viral_icons.png)
 

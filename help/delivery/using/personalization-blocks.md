@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '877'
 ht-degree: 3%
 
 ---
@@ -115,7 +115,7 @@ HTML原始碼會插入傳遞內容中。 例如， **[!UICONTROL Greetings]** �
   >此區塊僅可用於以訪客為目標的傳遞。
 
 * **[!UICONTROL Registration confirmation]** ：插入連結，以啟用確認訂閱。
-* **[!UICONTROL Social network sharing links]** ：插入可讓收件者與電子郵件使用者端、Facebook、Twitter和LinkedIn共用映象頁面內容連結的按鈕(請參閱 [病毒式行銷：轉寄給朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
+* **[!UICONTROL Social network sharing links]** ：插入可讓收件者與電子郵件使用者端、Facebook、X (先前稱為Twitter)和LinkedIn共用映象頁面內容連結的按鈕(請參閱 [病毒式行銷：轉寄給朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
 * **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** ：產生程式碼，使用預先定義的HTML樣式來格式化電子郵件。 這些區塊必須插入傳遞的原始碼中，位於 **[!UICONTROL ...]** 部分，到 **`<style>...</style>`** 標籤之間。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入可設定互動選件的URL **[!UICONTROL Accepted]** (請參閱 [本節](../../interaction/using/offer-analysis-report.md))。
 

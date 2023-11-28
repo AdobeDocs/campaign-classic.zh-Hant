@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5974'
+source-wordcount: '5978'
 ht-degree: 4%
 
 ---
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**通道**
 
-頻道是用來傳送通訊的媒體。 Adobe Campaign中的內建頻道包括電子郵件、簡訊、直接郵件、推播通知、LINE和Twitter。 可針對非標準管道需求實作自訂管道。
+頻道是用來傳送通訊的媒體。 Adobe Campaign中的內建頻道包括電子郵件、簡訊、直接郵件、推播通知、LINE和X (以前稱為Twitter)。 可針對非標準管道需求實作自訂管道。
 
 進一步瞭解 [頻道](../../delivery/using/communication-channels.md).
 +++
@@ -874,7 +874,7 @@ Campaigns that re-target the recipients of a previous delivery or deliveries.
 進一步瞭解 [方案](../../configuration/using/about-schema-reference.md).
 +++
 
-+++**綱要延伸**
++++**結構描述擴充**
 
 方案擴充功能可讓您自訂現成可用的方案，以最符合您的業務使用案例。 例如，您可以將「忠誠度」欄位新增至「收件者」表格。
 
@@ -949,7 +949,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 進一步瞭解 [目標定位活動](../../workflow/using/about-targeting-activities.md).
 +++
 
-+++**定位維度**
++++**目標定位維度**
 
 目標維度是由查詢或其他工作流程活動產生（傳回）的資料型別。 請注意，無論使用什麼查詢來取得回應資料庫列，Adobe Campaign只會傳回回應資料庫列的主索引鍵。
 
@@ -1007,7 +1007,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 進一步瞭解 [追蹤記錄](../../delivery/using/accessing-the-tracking-logs.md).
 +++
 
-+++**傳送異動訊息**
++++**交易型訊息**
 
 異動訊息是Campaign模組，專為管理從外部資訊系統傳送的事件產生的自訂觸發通知而設計。 交易式訊息是個別且唯一的通訊，由提供者（例如網站）即時傳送。 此為特別預期行為，因為它包含收件者要檢查或確認的重要資訊。
 

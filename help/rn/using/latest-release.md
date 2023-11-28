@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: ht
-source-wordcount: '1869'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,7 @@ _2023 年 9 月 7 日_
 * 已修正可能導致發生錯誤，以及讓您無法在編輯傳遞內容時進行捲動的問題。 (NEO-61364)
 * 已修正在電子郵件內容編輯器中按一下影像時，造成快顯視窗開啟的問題。 (NEO-60752)
 * 已修正可能導致傳遞的 HTML 內容中的特殊字元在數種瀏覽器中編碼錯誤的問題。 (NEO-60081)
-* 已修正使用 inSMS 工作流程活動時可能發生的同步問題。 (NEO-59544)
+* 已修正使用 in簡訊工作流程活動時可能發生的同步問題。 (NEO-59544)
 * 已修正使用具有時間戳記或日期時間欄位的 Big Query 連結器時所發生的問題。 (NEO-59502、NEO-49768)
 * 已修正無法使用累積傳遞報告的問題。 (NEO-59211)
 * 已修正與人員核心服務共用對象時可能導致發生錯誤的問題。 (NEO-58637)
@@ -141,7 +141,7 @@ _2022 年 11 月 21 日_
 
 **已棄用功能**
 
-* 使用 Facebook 的社交行銷現已棄用。您可以使用 Twitter 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂頻道。
+* 使用 Facebook 的社交行銷現已棄用。您可以使用X (先前稱為Twitter)整合在社群媒體上發佈內容，或使用Adobe建立自訂頻道。
 * ACS Connector (Prime 產品) 現已棄用。 您可以使用 Campaign 匯出/匯入功能，在兩個產品中擷取和插入資料。
 
 在[與已棄用和已移除的功能頁面](deprecated-features.md)瞭解更多相關的資訊。
