@@ -5,16 +5,14 @@ description: 深入瞭解循環傳送工作流程活動
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
+source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 19%
+source-wordcount: '289'
+ht-degree: 12%
 
 ---
 
 # 重複傳送{#recurring-delivery}
-
-
 
 A **[!UICONTROL Recurring delivery]** 活動可讓您設定行銷活動特定的傳送範本發生次數。
 
@@ -32,11 +30,15 @@ A **[!UICONTROL Recurring delivery]** 活動可讓您設定行銷活動特定的
 
 此活動的設定程式與根據可用選項建立傳遞範本的程式類似。 如需詳細資訊，請參閱本[區段](../../delivery/using/about-templates.md)。
 
+>[!CAUTION]
+>
+>循環傳遞不支援傳送校樣，包括 [目標資料](../../workflow/using/data-life-cycle.md#target-data) 個人化元素。
+
 如需此活動使用方式的範例，請參閱以下內容 [區段](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## 如何設定循環傳遞 {#set-up-recurring-delivery}
 
-A **循環傳遞** 每次執行時都會建立新的傳遞執行個體。 例如，如果排程每週執行一次工作流程，則在一年後會產生 52 項傳遞。 這也表示廣泛的記錄檔和追蹤記錄檔會依每個傳送執行個體區隔。
+A **循環傳遞** 每次執行時都會建立新的傳遞執行個體。 例如，如果排程每週執行一次工作流程，則在一年後會產生52項傳送。 這也表示廣泛的記錄檔和追蹤記錄檔會依每個傳送執行個體區隔。
 
 ![循環傳遞](assets/delivery_recurring.jpg)
 
