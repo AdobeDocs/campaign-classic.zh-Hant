@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2573'
 ht-degree: 17%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 17%
 >
 >**電子郵件**&#x200B;錯誤訊息（或「退信」）由 Enhanced MTA（同步退信）或 inMail 程序（非同步退信）限定。
 >
->**SMS** 錯誤訊息（或 &quot;SR&quot; 作為 &quot;Status Report&quot;）會由 MTA 程序限定。
+>****&#x200B;簡訊錯誤訊息（或 &quot;SR&quot; 作為 &quot;Status Report&quot;）會由 MTA 程序限定。
 
 傳送訊息後，傳送記錄檔可讓您檢視每個設定檔的傳送狀態，以及相關的失敗型別和原因。
 
@@ -91,7 +91,7 @@ ht-degree: 17%
    <td> 收件者的地址是控制組的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 雙精度浮點數 </td> 
+   <td> 雙精度 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 收件者的地址已在此傳遞中。<br /> </td> 
@@ -287,11 +287,13 @@ Adobe Campaign會篩選此郵件以刪除變數內容（例如ID、日期、電�
 
 #### 傳入電子郵件 {#inbound-email}
 
->[!IMPORTANT]
->
->對於託管或混合安裝，如果您已升級至 [增強的MTA](sending-with-enhanced-mta.md)，如果您的執行個體有 **Webhooks** 功能， **[!UICONTROL Inbound email]** 規則不再用於同步傳送失敗錯誤訊息。 如需詳細資訊，請參閱[本節](#bounce-mail-qualification)。
+<!--
+STATEMENT ONLY TRUE with Momentum and EFS+:
+For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](sending-with-enhanced-mta.md), and if your instance has **Webhooks** functionality, the **[!UICONTROL Inbound email]** rules are no longer used for synchronous delivery failure error messages. For more on this, see [this section](#bounce-mail-qualification).
 
-對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，這些規則包含可由遠端伺服器傳回的字元字串清單，並可讓您限定錯誤(**強烈**， **柔光** 或 **已忽略**)。
+For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
+
+此 **[!UICONTROL Inbound email]** 規則包含可由遠端伺服器傳回的字元字串清單，可讓您限定錯誤(**強烈**， **柔光** 或 **已忽略**)。
 
 當電子郵件失敗時，遠端伺服器會傳回退回訊息至 [平台引數](../../installation/using/deploying-an-instance.md). Adobe Campaign會比較每個退回郵件的內容與規則清單中的字串，然後為其指派三個字串之一 [錯誤型別](#delivery-failure-types-and-reasons).
 
