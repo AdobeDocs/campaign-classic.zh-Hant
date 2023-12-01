@@ -5,9 +5,9 @@ description: 深入瞭解循環傳送工作流程活動
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '292'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,7 @@ A **[!UICONTROL Recurring delivery]** 活動可讓您設定行銷活動特定的
 
 >[!CAUTION]
 >
->循環傳遞不支援傳送校樣，包括 [目標資料](../../workflow/using/data-life-cycle.md#target-data) 個人化元素。
+>循環傳遞不支援預覽內容或傳送校樣，包括 [目標資料](../../workflow/using/data-life-cycle.md#target-data) 個人化元素。
 
 如需此活動使用方式的範例，請參閱以下內容 [區段](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

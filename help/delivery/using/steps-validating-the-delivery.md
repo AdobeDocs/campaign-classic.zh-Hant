@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1665'
 ht-degree: 8%
 
 ---
@@ -138,10 +138,6 @@ ht-degree: 8%
 若要傳送證明，請遵循下列步驟：
 
 1. 請確定校樣目標已如所述設定 [定義特定校訂目標](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
-   >[!CAUTION]
-   >
-   >[週期性傳遞](../../workflow/using/recurring-delivery.md) 不支援傳送校樣，包括 [目標資料](../../workflow/using/data-life-cycle.md#target-data) 個人化元素。
 
 1. 按一下 **[!UICONTROL Send a proof]** 在傳遞精靈的頂端列上。
 
