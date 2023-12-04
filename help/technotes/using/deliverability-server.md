@@ -4,10 +4,10 @@ title: 更新至新的傳遞能力伺服器
 description: 瞭解如何更新至新的Campaign傳遞能力伺服器
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 3%
+source-wordcount: '1252'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
-> JWT （JSON Web權杖）目前正在折舊中，將由OAuth取代。 此轉換在Campaign即將發行的版本中逐步執行，檔案將會更新以反映這些更新。
+> JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
 
 ### 必要條件{#prerequisites}
 
@@ -145,15 +145,7 @@ ht-degree: 3%
 
 1. 您必須先停止再重新啟動伺服器，才能考慮修改。 您也可以執行 `config -reload` 命令。
 
-### 步驟3：啟用新的傳遞能力伺服器
-
-您現在可以啟用新的傳遞能力伺服器。 若要執行此動作：
-
-1. 開啟使用者端主控台，並以管理員身分登入Adobe Campaign。
-1. 瀏覽至 **管理>平台>選項**.
-1. 存取 `NewDeliverabilityServer_FeatureFlag` 選項並將值設為 `1`. 此設定應在您的所有Campaign執行個體(MKT、MID、RT、EXEC)上執行。 身為混合型客戶，請聯絡Adobe以在MID、RT和EXEC執行個體上設定選項。
-
-### 步驟4：驗證設定
+### 步驟3：驗證設定
 
 若要檢查整合是否成功，請遵循下列步驟：
 
