@@ -7,8 +7,8 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
-workflow-type: ht
-source-wordcount: '2532'
+workflow-type: tm+mt
+source-wordcount: '2531'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 100%
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
-      + 隱私權請求 {#privacy-requests}
+      + 隱私權要求 {#privacy-requests}
          + [關於隱私權請求](platform/using/privacy-requests.md)
          + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
          + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
