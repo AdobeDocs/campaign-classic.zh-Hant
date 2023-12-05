@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 99%
@@ -22,21 +22,21 @@ ht-degree: 99%
 
 ## 2023 年
 
-### 2023 年 12 月
+### 2023 年 12 月 {#dec-2023}
 
 JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
 
 新增Amazon Redshift的FDA外部帳戶設定。 [深入了解](../../installation/using/configure-fda-redshift.md)
 
-### 2023 年 8 月
+### 2023 年 8 月 {#aug-2023}
 
 已新增限制，以指明無法使用 Adobe Campaign 解壓縮大於 4GB 的壓縮檔案。 [深入了解](../../platform/using/unzip-decrypt.md)
 
-### 2023 年 4 月
+### 2023 年 4 月 {#apr-2023}
 
 新增如何在內部部署/混合環境中啟用 Microsoft Edge Chromium 的技術說明。 [深入了解](../../technotes/using/edge-chromium.md)
 
-### 2023 年 3 月
+### 2023 年 3 月 {#mar-2023}
 
 更新發行說明一節，提供 7.3.3 改善與修補程式。 [深入了解](latest-release.md)
 
