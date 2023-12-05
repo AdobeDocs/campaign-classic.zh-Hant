@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 93d6ffc4ac3047ab6a9a41859bed48f6ffac605b
+source-git-commit: 41dcf70724761237a8230bad04322bd3322c0e6f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 6%
+source-wordcount: '314'
+ht-degree: 5%
 
 ---
 
@@ -20,17 +20,24 @@ ht-degree: 6%
 
 >[!BEGINTABS]
 
->[!TAB 更新您的Adobe Experience Cloud整合]
 
-舊版oAuth驗證服務已到期：您必須移轉至Adobe I/O
+>[!TAB 12月版本已上線！]
 
-[![影像](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
-
->[!TAB 9月版本已上線！]
-
-探索此新版本帶來的安全性與相容性更新、改良與修補程式。
+探索Campaign Classicv7.3.5中的更新、改進和修補程式。
 
 [![影像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!TAB 移至AdobeIdentity Management服務]
+
+為了增強安全性和驗證流程，Adobe Campaign強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。
+
+[![影像](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+
+>[!TAB 更新您的Adobe Experience Cloud整合]
+
+舊版oAuth驗證服務已到期：您必須移轉至Adobe I/O。
+
+[![影像](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
 
 >[!ENDTABS]
 
