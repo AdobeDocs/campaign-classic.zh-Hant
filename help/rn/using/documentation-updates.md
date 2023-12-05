@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: ht
-source-wordcount: '3645'
-ht-degree: 100%
+source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+workflow-type: tm+mt
+source-wordcount: '3648'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,11 @@ ht-degree: 100%
 
 ## 2023 年
 
-### 2023 年 11 月
+### 2023 年 12 月
 
 JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
+
+新增Amazon Redshift的FDA外部帳戶設定。 [深入了解](../../installation/using/configure-fda-redshift.md)
 
 ### 2023 年 8 月
 
@@ -126,7 +128,7 @@ CentOs 8 已到期，現已被 Adobe Campaign Classic 淘汰。 [閱讀全文](d
 
 ## 2021 年 11 月{#nov-2021}
 
-新增傳入 SMS(MO) 的限制。 [閱讀全文](../../delivery/using/sms-protocol.md#multipart)
+新增傳入簡訊(MO) 的限制。 [閱讀全文](../../delivery/using/sms-protocol.md#multipart)
 
 更新 CRM 連接器部署的移轉流程記錄檔詳細資料。 [閱讀全文](../../migration/using/testing-the-migration.md#verification-process)
 
@@ -284,7 +286,7 @@ Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示�
 
 已新增使用個案，讓您了解如何使用 **[!UICONTROL Deduplication]** 活動的合併功能。[顯示全文](../../workflow/using/deduplication-merge.md)
 
-現在，[此處](../../delivery/using/sms-protocol.md)提供 SMS 連接器通訊協定和設定頁面的完整說明。
+現在，[此處](../../delivery/using/sms-protocol.md)提供簡訊連接器通訊協定和設定頁面的完整說明。
 
 已對&#x200B;**異動訊息**&#x200B;區段新增附註，以警告事件資料夾不得被設定為執行個體的檢視，進而避免存取權限問題。[顯示全文](../../message-center/using/about-event-processing.md#event-collection)
 
@@ -534,7 +536,7 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 [此處](../../reporting/using/properties-of-the-report.md#defining-additional-settings)記錄 URL 報表設定的新參數。
 
-更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md).
+更新 **Campaign Classic 內部部署及託管功能矩陣**&#x200B;頁面，其中包含新的 FDA 連接器。[顯示全文](../../installation/using/capability-matrix.md)。
 
 更新「**Campaign Classic 功能矩陣」**&#x200B;頁面。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/compatibility-matrix.html)
 
