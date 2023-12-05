@@ -3,15 +3,15 @@ product: campaign
 title: 電子郵件封存
 description: 電子郵件封存
 feature: Installation, Instance Settings, Email
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e808e71ccf949bdaf735cdb2895389f03638bd71
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 5%
+source-wordcount: '1218'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +80,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
-           archivingType="0" expirationDelay="2" purgeArchivesDelay="7"
+           archivingType="1" expirationDelay="2" purgeArchivesDelay="7"
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
@@ -91,11 +91,12 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
   **1**：壓縮（.zip格式）
 
 * **compressBatchSize**：新增到封存的.eml檔案數（.zip檔案）。
-* **archivingType**：要使用的封存策略。 可能的值包括：
 
-  **0**：已傳送電子郵件的原始副本會以.eml格式儲存至 **資料記錄路徑** 資料夾（預設值）。 的封存副本 **`<deliveryid>-<broadlogid>-sent.eml`** 檔案會儲存至 **dataLogPath/archives** 資料夾。 已傳送的電子郵件檔案路徑會變成 **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-  **1**：已傳送電子郵件的原始副本會以.eml格式儲存至 **資料記錄路徑** 資料夾和它們會透過SMTP傳送至密件副本電子郵件地址。 將電子郵件副本傳送至密件副本地址後，封存檔案名稱會變成 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 且檔案會移至 **dataLogPath/archives** 資料夾。 然後，已傳送及密件副本封存的電子郵件檔案路徑為 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+* **archivingType**：要使用的封存策略。 唯一可能的值為 **1**. 已傳送電子郵件的原始副本會以.eml格式儲存至 **資料記錄路徑** 資料夾和它們會透過SMTP傳送至密件副本電子郵件地址。 將電子郵件副本傳送至密件副本地址後，封存檔案名稱會變成 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 且檔案會移至 **dataLogPath/archives** 資料夾。 然後，已傳送及密件副本封存的電子郵件檔案路徑為 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+
+  <!--
+  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
 * **expirationDelay**：保留.eml檔案以供封存的天數。 經過此延遲後，系統會自動將它們移至 **dataLogPath/archives** 資料夾進行壓縮。 根據預設，.eml檔案會在兩天後過期。
 * **purgeArchivesDelay**：封存在中保留的天數 **資料記錄路徑/`<archives>`** 資料夾。 在這段期間後，它們將會永久刪除。 清除作業會在MTA啟動時開始。 預設會每七天執行一次。
@@ -131,23 +132,23 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >此外，轉送會指派 **[!UICONTROL Sent]** 所有電子郵件的狀態，包括未傳送的電子郵件。 因此，所有訊息都會被封存。
 
-## 移至新的電子郵件密件副本 {#updated-email-archiving-system--bcc-}
+<!--
+## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE 內部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"}
-
-
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
->電子郵件封存系統(BCC)已隨Adobe Campaign 17.2 (build 8795)變更。 如果您正從舊版組建升級，而且已使用電子郵件封存功能，則必須手動升級至新的電子郵件封存系統(BCC)。
+>The email archiving system (BCC) changed with Adobe Campaign 17.2 (build 8795). If you are upgrading from an older build and were already using email archiving capabilities, you must upgrade manually to the new email archiving system (BCC).
 
-若要這麼做，請對 **`config-<instance>.xml`** 檔案：
+To do this, make the following changes to the **`config-<instance>.xml`** file:
 
-1. 移除 **zipPath** 引數來自 **`<archiving>`** 節點。
-1. 設定 **compressionformat** 引數至 **1** 如有需要。
-1. 設定 **archivingType** 引數至 **1**.
+1. Remove the **zipPath** parameter from the **`<archiving>`** node.
+1. Set the **compressionFormat** parameter to **1** if needed.
+1. Set the **archivingType** parameter to **1**.
 
-設定電子郵件密件副本後，請務必選取 **[!UICONTROL Email BCC]** 傳送範本或傳送中的選項。 如需詳細資訊，請參閱[本節](../../delivery/using/sending-messages.md#archiving-emails)。
+Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+-->
 
 ## 電子郵件密件副本最佳實務 {#best-practices}
 
