@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 98%
+source-wordcount: '2221'
+ht-degree: 88%
 
 ---
 
@@ -18,9 +18,35 @@ ht-degree: 98%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## 版本 7.3.4 - 版本編號 9364 {#release-7-3-4}
+## 版本 7.3.5 - 版本編號 9368 {#release-7-3-5}
 
 [!BADGE 一般可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+
+_2023年12月5日_
+
+
+**安全性改善功能**
+
+
+* 透過Campaign Classic v7.3.5，驗證程式已獲得改善和安全。 技術操作員現在應使用AdobeIdentity Management系統(IMS)來連線至Campaign。 瞭解如何移轉您現有的技術帳戶，於 [此技術檔案](../../technotes/using/ims-migration.md).
+
+* 此外，為了強化安全性和驗證程式，Adobe Campaign強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 瞭解如何在中移轉您的操作員 [此技術檔案](../../technotes/using/migrate-users-to-ims.md).
+
+**修補程式**
+
+* 修正使用來自Google Big Query資料庫的資料並更新Oracle資料庫中的資料時的問題：所有金鑰皆設為 `0` 於工作流程暫存表格中。 (NEO-65091)
+* 修正將Google Big Query資料庫上的兩個查詢合併到時，導致工作流程執行失敗的問題。 **聯集** 工作流程活動。 (NEO-63705)
+* 修正了要求使用者在按一下 `Back` 按鈕來定義行銷活動。 (NEO-65087)
+* 修正資料庫清理工作流程中，在傳遞校樣之前刪除傳遞時所發生的錯誤。 (NEO-48114)
+* 修正連線至使用者端主控台時的問題：最近TLS驗證更新導致連線錯誤。 (NEO-50488)
+* 修正Campaign升級至7.3.1後HTTP Proxy驗證的問題。行銷活動工作流程中的HTTP請求失敗，因為 `error 407 – proxy auth required is returned`. (NEO-49624)
+* 修正中GPG解密的間歇性失敗 **指令碼** 工作流程活動。 相關的錯誤訊息為： `gpg: decryption failed: No secret key`. (NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+## 版本 7.3.4 - 版本編號 9364 {#release-7-3-4}
+
+[!BADGE 有限可用性]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
 
 >[!CAUTION]
 >
