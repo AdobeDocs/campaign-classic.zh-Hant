@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7產品檔案
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 5fe07c7955b529cd7f1a481167dd4139aa886bb0
+source-git-commit: 4917efbe0ac119875029305b3f8c3303056cfcc8
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 5%
@@ -27,7 +27,7 @@ ht-degree: 5%
 
 [![影像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
->[!TAB 移至AdobeIdentity Management服務]
+>[!TAB 移至AdobeIdentity Management系統]
 
 為了增強安全性和驗證流程，Adobe Campaign強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。
 
