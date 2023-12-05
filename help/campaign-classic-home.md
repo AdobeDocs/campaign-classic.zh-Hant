@@ -4,10 +4,10 @@ product: campaign
 title: Adobe Campaign Classic v7產品檔案
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 038239cf15dc49e6e84ca31a94ef61029c66c4b7
+source-git-commit: b280a75c7bd34d81657d6c7f1a859890c963352b
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 67%
+source-wordcount: '283'
+ht-degree: 6%
 
 ---
 
@@ -17,67 +17,92 @@ ht-degree: 67%
 
 ## 有哪些新功能
 
-* **[9月版本已上線！](rn/using/latest-release.md)**<br/> 探索發行說明中的新功能、改良與修正
+快速一覽Adobe Campaign Classic v7產品和檔案的最新增強功能！ 如需功能、改良與修正的完整清單，請參閱詳細資訊 [發行說明](rn/using/latest-release.md).  請瀏覽 [檔案更新頁面](rn/using/documentation-updates.md).
 
-<!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
+>[!BEGINTABS]
 
-* **[更新您的Adobe Experience Cloud整合](integrations/using/configuring-adobe-io.md)**<br/> 舊版oAuth驗證服務已到期：您必須移轉至Adobe I/O
+>[!TAB 更新您的Adobe Experience Cloud整合]
 
-[更多更新](rn/using/documentation-updates.md)
+舊版oAuth驗證服務已到期：您必須移轉至Adobe I/O
 
-## 熱門頁面
+[![影像](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
+
+>[!TAB 9月版本已上線！]
+
+探索此新版本帶來的安全性與相容性更新、改良與修補程式。
+
+[![影像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!ENDTABS]
+
+## 從基礎知識開始
 
 <table style="table-layout:fixed">
-<tr>
-  <td>
-    <a href="platform/using/common-questions.md">
-      <img alt="常見問答集" src="platform/using/assets/FAQ.png"/>
-    </a>
-    <div>
-      <a href="platform/using/common-questions.md">
-    <strong>常見問題集</strong>
-    </a>
-    </div>
-    <p>
-    <em>獲得使用 Campaign Classic 時常見問題的解答</em>
-    <p>
-  </td>
-   <td>
-    <a href="production/using/build-upgrade.md">
-      <img alt="建置升級" src="platform/using/assets/upgrade.png" />
-    </a>
-    <div>
-      <a href="production/using/build-upgrade.md">
-    <strong>升級至最新組建版本</strong>
-    </a>
-    </div>
-    <p>
-    <em>瞭解執行組建版本升級的關鍵步驟及最佳實務</em>
-    <p>
-  </td>
-  <td>
-    <a href="delivery/using/create-notifications-ios.md">
-       <img alt="推播通知" src="platform/using/assets/push.png" />
-    </a>
-    <div>
-       <a href="delivery/using/create-notifications-ios.md">
-    <strong>傳送推播通知</strong>
-    </a>
-    </div>
-    <p>
-    <em>在行動裝置上設計和傳送個人化推播通知</em>
-    <p>
-  </td>
-</tr>
+  <tr style="border: 0;">
+    <td>
+    <a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/start-launch.png"></a></a>
+    <div><strong>啟動Adobe Campaign</strong><br/>瞭解如何啟動Campaign使用者端主控台，並連線至您的Campaign應用程式伺服器。</div>
+    </td>
+    <td>
+    <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
+    <div><strong>新增和管理設定檔</strong><br/>在Adobe Campaign v7資料庫中輕鬆探索設定檔管理。 手動或透過匯入新增設定檔、精簡客戶資料，以及輕鬆自訂行銷活動。</div>
+    </td>
+    <td>
+    <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <div><strong>使用工作流程自動化</strong><br/>瞭解如何運用工作流程來設計流程，包括細分、行銷活動執行、檔案處理、人員參與等。
+    </div></td>
+    <td>
+    <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
+    <div><strong>建立傳遞</strong><br/>瞭解如何跨各種通道傳送訊息，例如電子郵件、簡訊、推播通知等。</div>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    </tr>
 </table>
 
-## 其他資源
+## 探索檔案
 
-| 有用的頁面 | 面向開發人員的資源 |
-|---|---|
-| [發行說明](rn/using/latest-release.md) | [錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) |
-| [操作說明短片](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant) | [Campaign 資料模型](configuration/using/about-data-model.md) |
-| [相容性矩陣](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [開始升級](rn/using/rn-overview.md) | [追蹤指南](delivery/using/about-message-tracking.md) |
-| [棄用的功能](rn/using/deprecated-features.md) | [安全性與隱私權檢查清單](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
-| [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant) | [監視准則](production/using/monitoring-guidelines.md) |
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon-start.svg" width="35px">
+    <br/>
+      <strong>開始使用</strong><br/><a href="platform/using/adobe-campaign-workspace.md">使用者介面</a> - <a href="platform/using/ac-glossary.md">字彙表</a> - <a href="platform/using/launching-adobe-campaign.md">連線至Campaign</a> - <a href="platform/using/get-started-data-import-export.md">匯入和匯出資料</a> - <a href="platform/using/access-management.md">許可權</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
+      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠管理</a> - <a href="delivery/using/about-personalization.md">個人化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">報告</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-send.svg" width="35px">
+    <br/>
+      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊通道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送校樣</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B測試</a> - <a href="delivery/using/about-message-tracking.md">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">異動訊息傳送</a>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
+      <br/>
+      <strong>設定檔與對象</strong><br/><a href="platform/using/adding-profiles.md">新增設定檔</a> - <a href="platform/using/creating-and-managing-lists.md">建立清單</a> - <a href="delivery/using/about-services-and-subscriptions.md">服務與訂閱</a> - <a href="platform/using/privacy-management.md">隱私權與同意</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+      <br/>
+      <strong>架構與設定</strong><br/><a href="production/using/general-architecture.md">架構原則</a> - <a href="production/using/build-upgrade.md">執行建置升級</a> - <a href="production/using/configuration.md">設定Campaign</a> - <a href="installation/using/external-accounts.md">連線到外部系統</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
+      <br/>
+      <strong>開發人員資源</strong><br/><a href="configuration/using/about-data-model.md">資料模型說明</a> - <a href="configuration/using/about-schema-reference.md">綱要結構</a> - <a href="configuration/using/editing-forms.md">綱要結構</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
+    </td>
+  </tr>
+</table>
+
+## 額外資源
+
+[錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) - [Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant){target="_blank"}
