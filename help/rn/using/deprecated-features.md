@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1519'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
 <tr>
  <td>使用 Facebook 進行社交行銷</td>
- <td>使用 Facebook 的社交行銷現已棄用。您可以使用X (先前稱為Twitter)整合在社群媒體上發佈內容，或使用Adobe建立自訂頻道。
+ <td>使用 Facebook 的社交行銷現已棄用。您可以使用 X (原 Twitter) 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂通道。
  <p></p>
   <p>目標移除日期：2023 年底</p>
   </td>
@@ -137,7 +137,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr> 
    <tr> 
    <td>行動裝置頻道 - MMS 和 WAP 推播訊息</td>
-   <td>自 Campaign 第 18.4 發行版本開始，不再提供 MMS 和 Wap 推播頻道。<a href="../../delivery/using/sms-channel.md">作為取代，您可以利用簡訊</a> 和 <a href="../../delivery/using/about-mobile-app-channel.md"> Push</a> 傳遞。</td>
+   <td>自 Campaign 第 18.4 發行版本開始，不再提供 MMS 和 Wap 推播頻道。作為取代，您可以利用<a href="../../delivery/using/sms-channel.md">簡訊</a>和<a href="../../delivery/using/about-mobile-app-channel.md">推播</a>傳遞。</td>
   </tr> 
    <tr> 
    <td>行動裝置頻道 - LINE v1</td>
