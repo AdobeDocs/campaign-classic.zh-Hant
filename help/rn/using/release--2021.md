@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2553'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -291,7 +291,7 @@ _2021 年 2 月 22 日_
 * 修正執行傳遞分析時，可能會減少伺服器上記憶體使用量的問題。
 * 修正嘗試執行特定複雜查詢時，會導致執行個體無法作業的問題。
 * 修正可能無法執行&#x200B;**「同步 Twitter 頁面」**&#x200B;的技術工作流程問題。 (NEO-28634)
-* 修正嘗試使用在X (先前稱為Twitter)上發佈時，可能會顯示與decryptPassword函式相關的錯誤訊息的問題。 **Tweet (twitter)** 傳遞範本。 (NEO-28216)
+* 修正嘗試使用&#x200B;**推文 (twitter)**&#x200B;傳遞範本在 X (原 Twitter) 上發佈時，可能會顯示與 decryptPassword 函式相關的錯誤訊息的問題。 (NEO-28216)
 * 修正使用 **Javascript** 活動在工作流程中提出 HTTP 請求時發生的問題。 在主機名稱中定義連接埠號碼後，呼叫將失敗，並出現下列錯誤 (NEO-29146)：
 
 ```
