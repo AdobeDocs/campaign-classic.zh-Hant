@@ -10,7 +10,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
 workflow-type: tm+mt
 source-wordcount: '2221'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -167,7 +167,7 @@ _2022 年 11 月 21 日_
 
 **已棄用功能**
 
-* 使用 Facebook 的社交行銷現已棄用。您可以使用X (先前稱為Twitter)整合在社群媒體上發佈內容，或使用Adobe建立自訂頻道。
+* 使用 Facebook 的社交行銷現已棄用。您可以使用 X (原 Twitter) 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂通道。
 * ACS Connector (Prime 產品) 現已棄用。 您可以使用 Campaign 匯出/匯入功能，在兩個產品中擷取和插入資料。
 
 在[與已棄用和已移除的功能頁面](deprecated-features.md)瞭解更多相關的資訊。
