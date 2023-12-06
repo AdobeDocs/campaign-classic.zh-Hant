@@ -2,12 +2,14 @@
 product: campaign
 title: 移轉至公用雲端
 description: 深入瞭解Campaign Classic移轉至公用雲端
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
 level: Beginner
+solution: Campaign
+version: Classic v7
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 87a27eb96fe9fbcb68a5e961b95cb4588eee85e3
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
@@ -20,7 +22,7 @@ ht-degree: 2%
 
 ## 內容
 
-身為尊貴的Adobe Campaign Classic客戶，我們致力為您提供最佳體驗和價值。 這些年來，我們認識到在雲端託管客戶的價值和可靠性。  作為我們的一部分 [年度升級方案](../../rn/using/rn-overview.md#yearly-upgrade)，我們已將所有客戶轉移至Adobe Managed Services (AWS上的公用雲端)，以提供更佳且更可靠的服務。
+身為尊貴的Adobe Campaign Classic客戶，我們致力為您提供最佳體驗和價值。 這些年來，我們認識到在雲端託管客戶的價值和可靠性。  作為我們的一部分 [年度升級方案](../../rn/using/rn-overview.md#yearly-upgrade)，我們已將所有客戶轉移至AdobeManaged Services (AWS上的公共雲端)，以提供更佳且更可靠的服務。
 
 此計畫有三個主要目標：
 
@@ -38,7 +40,7 @@ ht-degree: 2%
 
 
 >[!NOTE]
->Campaign Classicv7移轉至公用雲端會影響使用的客戶 **Adobe Managed Services** 僅限。
+>Campaign Classicv7移轉至公用雲端會影響使用的客戶 **AdobeManaged Services** 僅限。
 
 
 ## 好處
@@ -83,9 +85,9 @@ ht-degree: 2%
 
 ### 此移轉是否為強制性？
 
-移轉至雲端的程式為 **到第一個步驟 [年度升級計畫](../../rn/using/rn-overview.md#yearly-upgrade)** 您的Adobe Campaign執行個體的。 如果您託管於非公用雲端(AWS)的資料中心，則此移轉為強制性。
+移轉至雲端的程式為 **到第一個步驟 [年度升級計畫](../../rn/using/rn-overview.md#yearly-upgrade)** 您的Adobe Campaign執行個體的。 如果您託管於非公用雲端(AWS)的資料中心，則必須進行此移轉。
 
-Adobe Managed Services雲端託管於Amazon Web Services (AWS)上，這是現代、安全且最佳化的環境。 [進一步瞭解AWS](https://aws.amazon.com/application-hosting/benefits/).
+AdobeManaged Services雲端託管於Amazon Web Services (AWS)上，這是一個現代、安全且最佳化的環境。 [進一步瞭解AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe計畫淘汰舊版資料中心，在該處執行的Adobe Campaign執行個體必須轉移到新的參考資料中心AWS。
 
@@ -208,6 +210,6 @@ Adobe會在新資料中心布建相同數量的IP。
 
 ## 支援和其他有效連結{#support}
 
-* [移轉至Adobe Managed Services (Public Cloud)常見問題集](dc-migration-faq.md)
+* [移轉至Adobe Managed Services （公共雲端）常見問題集](dc-migration-faq.md)
 * [Campaign年度升級](../../rn/using/rn-overview.md)
 * [建置升級常見問答集](../../platform/using/faq-build-upgrade.md)
