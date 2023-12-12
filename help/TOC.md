@@ -7,9 +7,9 @@ user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 + [最新更新](rn/using/documentation-updates.md)
 + 發行說明 {#release-notes}
    + [開始升級](rn/using/rn-overview.md)
-   + [最新發行版本](rn/using/latest-release.md)
+   + [最新版本](rn/using/latest-release.md)
    + 先前版本 {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
       + [2021 年](rn/using/release--2021.md)
@@ -579,7 +579,7 @@ ht-degree: 99%
       + [訊息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
       + [訊息中心服務層級](message-center/using/message-center-service-level.md)
       + [訊息中心處理時間](message-center/using/message-center-processing-time.md)
-   + [使用案例](message-center/using/transactional-email-with-attachments.md)
+   + [使用實例](message-center/using/transactional-email-with-attachments.md)
 + 整合社交媒體 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
 + 安裝及設定指南 {#installing-campaign-classic}
@@ -811,7 +811,7 @@ ht-degree: 99%
 + 移轉指南 {#migrating-to-a-new-version}
    + [移轉至 Adobe Campaign v7](migration/using/about-migration.md)
    + 移轉程序 {#migration-procedure}
-      + [必要條件](migration/using/before-starting-migration.md)
+      + [先決條件](migration/using/before-starting-migration.md)
       + [關於移轉測試](migration/using/testing-the-migration.md)
       + [調整您的設定](migration/using/configuring-your-platform.md)
    + 開始移轉 {#migrating-to-adobe-campaign-7}
@@ -820,9 +820,9 @@ ht-degree: 99%
    + [反轉程序](migration/using/about-rollback.md)
 + 技術備註{#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
-   + 升級至IMS{#ims}
-      + [將使用者移轉至IMS](technotes/using/migrate-users-to-ims.md)
-      + [將技術操作員移轉至開發人員主控台](technotes/using/ims-migration.md)
+   + 升級至 IMS{#ims}
+      + [將使用者移轉至 IMS](technotes/using/migrate-users-to-ims.md)
+      + [將技術操作員移轉至 Developer Console](technotes/using/ims-migration.md)
    + 升級與相容性{#technote-migration}
       + [技術說明](technotes/using/technote.md)
       + [啟用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
