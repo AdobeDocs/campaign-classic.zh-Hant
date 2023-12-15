@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 2%
 # 開始使用行動應用程式頻道{#about-mobile-app-channel}
 
 此 **行動應用程式頻道** 可讓您使用Adobe Campaign平台，透過應用程式將個人化推播通知傳送至iOS和Android終端。
-
->[!CAUTION]
->
->本檔案詳細說明將行動應用程式與Adobe Campaign平台整合的程式。 它不提供有關如何建立行動應用程式，或如何設定它以管理通知的資訊。 如果您想瞭解此專案的詳細資訊，請參閱官方Apple [檔案](https://developer.apple.com/) 和Android [檔案](https://developer.android.com/index.html).
 
 有兩種傳送通道可供使用：
 
@@ -32,14 +28,14 @@ ht-degree: 2%
 
   ![](assets/nmac_intro_1.png)
 
-對應這兩個管道，行銷活動工作流程中有兩個傳遞活動：
+  >[!IMPORTANT]
+  >
+  >Android Firebase Cloud Messaging (FCM)服務的一些重要變更將於2024年發行，可能會影響您的Adobe Campaign實施。 您可能需要更新Android推送訊息的訂閱服務設定，才能支援此變更。 您已經可以檢查並採取行動。 在本節瞭解更多 [Adobe Campaign v8技術檔案](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
+對應這兩個管道，行銷活動工作流程中有兩個傳遞活動。 有兩個異動訊息範本也可用於異動訊息。
 
 ![](assets/nmac_intro_3.png)
 
-
->[!NOTE]
->
->有兩個異動訊息範本也可用於異動訊息。
 
 您可以定義當使用者啟動通知以顯示符合應用程式內容的畫面時的應用程式行為。 例如：
 
@@ -94,7 +90,7 @@ Adobe Campaign伺服器必須能夠連絡iOS HTTP/2聯結器的443連線埠上�
   api.development.push.apple.com:443
   ```
 
-* 生產中:
+* 生產中：
 
   ```
   api.push.apple.com:443

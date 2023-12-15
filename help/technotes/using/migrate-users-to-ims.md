@@ -1,7 +1,8 @@
 ---
 title: 移轉Campaign運運算元至AdobeIdentity Management系統(IMS)
 description: 瞭解如何將Campaign運運算元移轉至AdobeIdentity Management系統(IMS)
-source-git-commit: 18166dd389847d6b844ed478e19c42e457abeb80
+exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
+source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 2%
@@ -34,7 +35,7 @@ ht-degree: 2%
 
 ## 如何移轉託管和Managed Services環境？ {#ims-migration-procedure}
 
-### 必要條件 {#ims-migration-prerequisites}
+### 先決條件 {#ims-migration-prerequisites}
 
 在開始移轉程式之前，您必須聯絡您的Adobe轉換經理(適用於Managed Services客戶)，或Adobe客戶服務（適用於其他託管客戶），以便Adobe技術團隊可以移轉您現有的操作員群組和AdobeIdentity Management System (IMS)的已命名許可權。
 

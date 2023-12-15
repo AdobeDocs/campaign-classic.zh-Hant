@@ -6,22 +6,16 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 7%
+source-wordcount: '621'
+ht-degree: 4%
 
 ---
 
 # 針對 iOS 的設定步驟 {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-
-
 安裝套件後，您可以在Adobe Campaign Classic中定義iOS應用程式設定。
-
->[!NOTE]
->
->若要瞭解如何設定Android應用程式以及如何建立Android傳送，請參閱此 [區段](configuring-the-mobile-application-android.md).
 
 主要步驟為：
 
@@ -30,7 +24,6 @@ ht-degree: 7%
 1. [在Campaign中整合iOS行動應用程式](#creating-ios-app)
 
 然後，您將能夠 [為iOS裝置建立推播通知](create-notifications-ios.md).
-
 
 ## 設定iOS外部帳戶 {#configuring-external-account-ios}
 
@@ -102,7 +95,7 @@ ht-degree: 7%
 
 1. 按一下 **[!UICONTROL Next]** 以開始設定開發應用程式。
 
-1. 確定相同 **[!UICONTROL Integration key]** 是透過SDK在Adobe Campaign和應用程式程式碼中定義的。 如需詳細資訊，請參閱[此頁面](integrating-campaign-sdk-into-the-mobile-application.md)。此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
+1. 確定相同 **[!UICONTROL Integration key]** 是透過SDK在Adobe Campaign和應用程式程式碼中定義的。 有關詳細資訊，請參閱 [此頁面](integrating-campaign-sdk-into-the-mobile-application.md). 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
 
    >[!NOTE]
    >
