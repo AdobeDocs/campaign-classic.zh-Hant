@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
   >[!IMPORTANT]
   >
-  >Android Firebase Cloud Messaging (FCM)服務的一些重要變更將於2024年發行，可能會影響您的Adobe Campaign實施。 您可能需要更新Android推送訊息的訂閱服務設定，才能支援此變更。 您已經可以檢查並採取行動。 在本節瞭解更多 [Adobe Campaign v8技術檔案](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+  >Android Firebase Cloud Messaging (FCM)服務的一些重要變更將於2024年發行，可能會影響您的Adobe Campaign實施。 您可能需要更新Android推送訊息的訂閱服務設定，才能支援此變更。 您已經可以檢查並採取行動。 在本節瞭解更多 [Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
 
 對應這兩個管道，行銷活動工作流程中有兩個傳遞活動。 有兩個異動訊息範本也可用於異動訊息。
 
