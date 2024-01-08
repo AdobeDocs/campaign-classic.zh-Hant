@@ -4,9 +4,9 @@ description: 瞭解如何將Campaign技術操作者移轉至Adobe Developer主�
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 如果您從Campaign外部的系統對Campaign進行API呼叫，進入您的Campaign行銷執行個體或即時訊息中心執行個體，Adobe強烈建議您透過Adobe Developer主控台將技術運運算元移轉至技術帳戶，如下所述。
 
-此變更適用於Campaign Classicv7.3.5開始，且 **強制** 以移至Adobe Campaign v8。
+此變更適用於Campaign Classicv7.3.5 （及最新） [IMS移轉相容版本](#ims-versions-tech))和 **強制** 以移至Adobe Campaign v8。
 
 ## 移轉程式 {#ims-migration-procedure}
 
@@ -36,13 +36,24 @@ ht-degree: 0%
 * 更新您的API以使用新建立的技術帳戶認證
 * 從您的Campaign執行個體移除舊版技術運運算元
 
+
+### IMS移轉相容版本 {#ims-versions-tech}
+
+此移轉的先決條件是將您的環境升級至以下產品版本之一：
+
+* Campaign v7.3.5 （建議）
+* Campaign v7.3.3.IMS
+  <!--* Campaign v7.3.2.IMS-->
+
+下列Campaign版本將在 [發行說明](../../rn/using/latest-release.md).
+
 ### 移轉的必要條件{#ims-migration-prerequisites}
 
 <!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 * Campaign託管和Managed Services客戶
 
-  針對傳入訊息中心執行個體的API呼叫，在升級至Campaign v7.3.5期間或布建執行個體期間應已建立產品設定檔。 此產品設定檔名為：
+  針對傳入訊息中心執行個體的API呼叫，在升級至Campaign v7.3.5 （或其他）期間應已建立產品設定檔 [IMS移轉相容版本](#ims-versions-tech))，或在布建執行個體期間。 此產品設定檔名為：
 
   `campaign - <your campaign instance> - messagecenter`
 
@@ -227,7 +238,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 
    ![](assets/do-not-translate/ims-updates-07.png)
 
-   在「認證」畫面中，向下捲動以找出**技術帳戶電子郵件**，然後按一下 **複製** 按鈕。
+   在 **認證詳細資料** 標籤，向下捲動以找到 **技術帳戶電子郵件** 並按一下 **複製** 按鈕。
 
    ![](assets/do-not-translate/ims-updates-08.png)
 
