@@ -3,18 +3,18 @@ audience: end-user
 breadcrumb-title: Campaign v7 文件
 product: campaign
 title: Campaign Classic v7 指南
-user-guide-description: 透過 Adobe Campaign，您可以透過電子郵件、行動裝置、離線頻道等，使用豐富的客戶資料來建立、協調及傳遞客戶真正想要的動態行銷活動。
+user-guide-description: Adobe Campaign Classic v7的產品檔案。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: ht
-source-wordcount: '2544'
-ht-degree: 100%
+source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
+workflow-type: tm+mt
+source-wordcount: '2524'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7 文件 {#using}
+# Adobe Campaign Classic v7檔案 {#using}
 
 + [Campaign v7 文件](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
@@ -841,3 +841,7 @@ ht-degree: 100%
       + [移轉至公用雲端](technotes/using/dc-migration.md)
       + [常見問答集](technotes/using/dc-migration-faq.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
+
+<!--
+With Adobe Campaign Classic v7, you can use rich customer data to create, coordinate, and deliver dynamic campaigns that customers actually want — through email, mobile, offline channels, and more.
+-->
