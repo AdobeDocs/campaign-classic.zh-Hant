@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2258'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ _2023 年 9 月 7 日_
 
 >[!AVAILABILITY]
 >
->此版本提供特定的Campaign v7.3.3.IMS修補程式升級 — 如果沒有其他修補程式套用至您的環境。 它帶來了 [Adobe Identity Management System (IMS)安全性更新包含v7.3.5](#release-7-3-5-security) 至現有的v7.3.3環境。
+>此版本提供特定的 Campaign v7.3.3.IMS 修補程式升級 - 如果沒有其他修補程式套用至您的環境。它帶來了 [Adobe Identity Management System (IMS) 安全性更新，包含 v7.3.5](#release-7-3-5-security) 至現有的 v7.3.3 環境。
 
 
 _2023 年 3 月 20 日_
