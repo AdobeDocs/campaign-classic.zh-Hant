@@ -1,44 +1,43 @@
 ---
 product: campaign
-title: 在Campaign中使用Adobe ID
-description: 進一步瞭解Adobe IMS整合
+title: 使用您的Adobe ID連線至Adobe Campaign
+description: 進一步瞭解Adobe Campaign中的Adobe IMS實作
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 24%
+source-wordcount: '143'
+ht-degree: 20%
 
 ---
 
-# 關於Adobe ID{#about-adobe-id}
+# 關於Adobe ID {#about-adobe-id}
 
-AdobeIdentity Management系統(IMS)可協助管理員建立和管理使用者對應用計畫和服務的存取權。 如需不同型別的AdobeID的詳細資訊，請參閱 [此頁面](https://helpx.adobe.com/enterprise/using/identity.html).
+AdobeIdentity Management系統(IMS)可協助管理員建立和管理使用者對應用計畫和服務的存取權。 如需不同型別的AdobeID的詳細資訊，請參閱 [此頁面](https://helpx.adobe.com/cn/enterprise/using/identity.html).
 
-Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台。 此整合具備以下優勢︰
+Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台，而非使用 [原生使用者/密碼驗證](../../platform/using/access-management-operators.md). 此實作提供下列優點：
 
 * 所有 Experience Cloud 解決方案都可以使用相同的 ID。
-* 使用不同整合中的 Adobe Campaign 時，可以記憶連線。
-* 更安全的密碼管理原則。
+* 透過不同的整合使用Adobe Campaign時，會保持連線。
+* 比原生登入/密碼更安全的密碼管理原則。
 * 使用 Federated ID 帳戶（外部 ID 提供者）。
 
-
+<!--
 >[!IMPORTANT]
 >
->如果您是透過Adobe身分服務(IMS)連線至Campaign，您需要升級至最新組建版本，才能在下列時間後連線至Campaign **2021年6月30日**. Campaign伺服器和使用者端主控台都必須進行此升級。
+>If you are connecting to Campaign through Adobe Identity Service (IMS), you need to upgrade to the latest build to be able to connect to Campaign after **June 30, 2021**. This upgrade is mandatory for both Campaign server and client console. 
 >
->根據您目前的版本，您必須升級至下列其中一個版本：
+>Depending on your current version, you must upgrade to one of the following releases: 
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
 >
->[進一步瞭解IMS更新](../../technotes/using/ims-updates.md)
-
+>[Learn more about IMS updates](../../technotes/using/ims-updates.md)
+-->
 
 ## 更多資源
 

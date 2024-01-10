@@ -4,23 +4,22 @@ title: IMS 疑難排解
 description: IMS 疑難排解
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 2%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 # IMS 疑難排解{#ims-troubleshooting}
 
 
-
-下列疑難排解提示將有所幫助 **內部部署** 客戶可解決使用IMS整合時最常見的問題。 的 **託管** 客戶，請聯絡Adobe。
+下列疑難排解提示將有所幫助 **內部部署** 和 **混合式** 客戶可解決使用IMS整合時最常見的問題。 的 **託管** 客戶，請聯絡Adobe。
 
 **外部帳戶**
 

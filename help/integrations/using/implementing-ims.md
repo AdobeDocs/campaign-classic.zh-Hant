@@ -4,34 +4,28 @@ title: 實作IMS
 description: 實作IMS
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '78'
+ht-degree: 2%
 
 ---
 
 # 實作IMS{#implementing-ims}
 
+一次 [IMS設定](configuring-ims.md) 完成，您可以啟用連線。
 
+若要在Adobe Campaign中啟用IMS驗證模式，請執行下列步驟：
 
-## 啟用IMS連線 {#enabling-the-ims-connection}
-
-1. 若要啟用透過IMS的連線，請核取 **[!UICONTROL Connect with an Adobe ID]** 在主控台的「連線」視窗中。
+1. 開啟「使用者端主控台」連線畫面。
+1. 選取啟用連線所需的環境。
+1. 檢查 **[!UICONTROL Connect with an Adobe ID]** 選項並儲存您的變更。
 
    ![](assets/ims_1.png)
 
-1. 輸入您的Adobe ID和密碼。 Adobe Campaign首頁畫面隨即顯示。
-
-   ![](assets/ims_2.png)
-
-## 停用IMS連線 {#disabling-the-ims-connection}
-
-若要停用透過Adobe ID的連線，請中斷連線，按一下 **[!UICONTROL File > Connections]** 並取消勾選 **[!UICONTROL Connect with an Adobe ID]**.
-
-![](assets/ims_4.png)
+1. 連線至此環境時，請使用您的Adobe ID和密碼。
