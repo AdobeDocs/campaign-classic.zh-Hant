@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '8448'
 ht-degree: 1%
 
 ---
@@ -358,7 +358,7 @@ SMS訊息使用特殊的7位元編碼，通常稱為GSM7編碼。
 
 | 編碼 | 通常的data_coding | 訊息大小（字元） | 多部分SMS的部分大小 | 可用字元 |
 |:-:|:-:|:-:|:-:|:-:|
-| GSM 7 | 0 | 160 | 152 | GSM7基本字元集+擴充功能（擴充字元佔2個字元） |
+| GSM7 | 0 | 160 | 152 | GSM7基本字元集+擴充功能（擴充字元佔2個字元） |
 | Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode （因手機而異） |
 
@@ -412,7 +412,7 @@ Adobe Campaign Classic Extended SMPP聯結器可控制每個MTA子項的連線�
 
 Adobe Campaign Classic的接收器與傳送器連線數量可能有所不同：
 
-* **傳送器連線= MTA子連線數* MTA子處理序數* MTA數 </br> （如果已設定自動回覆） + MTA子連線數目**
+* **傳送器連線= MTA子連線數* MTA子處理序數* MTA數（如果已設定自動回覆） * MTA子連線數**
 
 如上所述，如果啟用自動回覆，Adobe Campaign Classic簡訊程式會開啟更多傳送器連線。 這些額外的連線可用來傳送自動回覆。
 
@@ -547,7 +547,7 @@ TCP連線嘗試與 `BIND_*_RESP` 回覆。 逾時時，連線會由Adobe Campaig
 
 `enquire_link` 是一種特殊型別的PDU，會傳送以保持連線運作。 此期間以秒為單位。 行銷活動聯結器只會傳送 `enquire_link` 當連線閒置以節省頻寬時。 如果在此期間後兩次未收到任何RESP，則會將連線視為無法使用，並觸發重新連線程式。
 
-### SMSC 細節 {#SMSC-specifics}
+### SMSC細節 {#SMSC-specifics}
 
 這些設定是進階設定，可讓Adobe Campaign聯結器適應大多數SMPP實作特性。
 
@@ -603,8 +603,8 @@ MTA將嘗試使用清單中的第一個編碼進行編碼。 如果失敗，則�
 您可以在三種不同的憑證驗證值之間進行選擇：
 
 * 完整的認證檢查（包括主機名稱），預設。
-* 略過主機名稱驗證.
-* 略過憑證驗證.
+* 略過主機名稱驗證。
+* 略過憑證驗證。
 
 #### 繫結TON/NPI {#bind-ton-npi}
 
@@ -676,7 +676,7 @@ SMPP通訊協定規格並未嚴格執行SR格式。 這僅是中說明的建議 
 
 這表示擷取的ID格式 `Extraction` SR中ID的規則運算式。 值與上述MT格式具有相同的含義和相同的行為。
 
-**選擇性欄位中的 SR ID 或錯誤代碼**
+**選擇性欄位中的SR ID或錯誤代碼**
 
 >[!NOTE]
 >
@@ -702,7 +702,7 @@ SMPP通訊協定規格並未嚴格執行SR格式。 這僅是中說明的建議 
 >
 >您只能擷取有文字(ASCII/UTF-8)值的選用欄位。 具體來說，目前的規則運算式系統無法可靠地擷取二進位欄位。
 
-**文字欄位中的 SR ID 或錯誤代碼**
+**文字欄位中的SR ID或錯誤代碼**
 
 若勾選， **文字** 在處理SR的狀態文字期間將保留欄位。
 
@@ -716,7 +716,7 @@ SMPP通訊協定規格並未嚴格執行SR格式。 這僅是中說明的建議 
 
 此設定僅允許每則訊息新增一個TLV選項。
 
-### 自動回覆傳送至 MO {#automatic-reply}
+### 傳送至 MO 的自動回覆 {#automatic-reply}
 
 >[!IMPORTANT]
 >
@@ -748,7 +748,7 @@ SMPP通訊協定規格並未嚴格執行SR格式。 這僅是中說明的建議 
 
 根據SMPP規格，欄位限製為21個字元，但某些提供者可能允許較長的值。 另請注意，某些國家/地區可能會套用非常嚴格的限制，例如長度、內容、允許的字元。
 
-### 傳送參數 {#delivery-parameters}
+### 傳遞參數 {#delivery-parameters}
 
 #### 每則訊息的簡訊數上限 {#maximum-sms}
 
