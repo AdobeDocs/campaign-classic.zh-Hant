@@ -2,9 +2,9 @@
 title: 移轉Campaign運運算元至AdobeIdentity Management系統(IMS)
 description: 瞭解如何將Campaign運運算元移轉至AdobeIdentity Management系統(IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
+source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1223'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 
 * Campaign v7.3.5 （建議）
 * Campaign v7.3.3.IMS
-  <!--* Campaign v7.3.2.IMS-->
+* Campaign v7.3.2.IMS
 
 下列Campaign版本將在 [發行說明](../../rn/using/latest-release.md).
 
