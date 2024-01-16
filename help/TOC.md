@@ -3,7 +3,7 @@ audience: end-user
 breadcrumb-title: Campaign v7 文件
 product: campaign
 title: Campaign Classic v7 指南
-user-guide-description: Adobe Campaign Classic v7的產品檔案。
+user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
