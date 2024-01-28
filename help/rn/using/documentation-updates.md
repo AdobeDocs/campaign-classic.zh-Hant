@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3680'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 ### 2024 年 1 月 {#jan-2024}
 
-已新增有關如何定義直接郵件的預設postalAddress欄位，以及確保地址完整的重要原因。 [深入了解](../../delivery/using/about-direct-mail-channel.md)
+已新增有關如何定義直接郵件的預設 postalAddress 欄位，以及確保地址完整的重要原因。 [深入了解](../../delivery/using/about-direct-mail-channel.md)
 
 ## 2023 年
 
