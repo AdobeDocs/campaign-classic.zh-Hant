@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 34%
+source-wordcount: '1751'
+ht-degree: 27%
 
 ---
 
-# 設定簡訊頻道 {#setting-up-sms-channel}
+# 在獨立執行個體上設定簡訊頻道 {#setting-up-sms-channel}
 
 若要傳送至行動電話，您需要：
 
@@ -63,11 +63,11 @@ ht-degree: 34%
 
 1. 根據預設，SMS中的字元數量符合GSM標準。
 
-   使用 GSM 編碼的 SMS 訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個 SMS 的 SMS 訊息最多只能有 153 個字元。
+   使用 GSM 編碼的簡訊訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個簡訊的簡訊訊息最多只能有 153 個字元。
 
    >[!NOTE]
    >
-   >某些字元會計為兩個字元（括弧、方括弧、歐元符號等）。
+   >某些字元會計為兩個字元（大括弧、方括弧、歐元符號等）。
    >
    >可用的GSM字元清單如下所示。
 
@@ -99,20 +99,20 @@ ht-degree: 34%
 
 您可以在SMPP行動傳遞外部帳戶中的下方設定字母音譯 **[!UICONTROL Mobile]** 標籤。
 
-音譯包括當 GSM 標準未考慮到 SMS 的一個字元時，用另一個字元取代該字元。
+音譯包括當 GSM 標準未考慮到簡訊的一個字元時，用另一個字元取代該字元。
 
 * 如果音譯為 **[!UICONTROL authorized]**，傳送訊息時，未考慮的每個字元會由GSM字元取代。 例如，字元 &quot;ë&quot; 會由 &quot;e&quot; 取代。因此，訊息會稍微變更，但字元限制將維持不變。
-* 音譯為時 **[!UICONTROL not authorized]**，包含未納入考量之字元的每則訊息都會以二進位格式(Unicode)傳送：因此，所有字元都會依原樣傳送。 不過，使用 Unicode 的 SMS 訊息最多只能有 70 個字元（若是以多個部分傳送的訊息，則每個 SMS 有 67 個字元）。如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
+* 音譯為時 **[!UICONTROL not authorized]**，包含未納入考量之字元的每則訊息都會以二進位格式(Unicode)傳送：因此，所有字元都會依原樣傳送。 不過，使用 Unicode 的簡訊訊息最多只能有 70 個字元（若是以多個部分傳送的訊息，則每個簡訊有 67 個字元）。如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
 
 >[!IMPORTANT]
 >
->將個人化欄位插入您的 SMS 訊息內容，可能會引入 GSM 編碼未考慮的字元。
+>將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。
 
-依預設，會停用字元音譯。如果您希望 SMS 訊息中的所有字元都保持原樣，不要變更正確名稱（例如），建議您不要啟用此選項。
+依預設，會停用字元音譯。如果您希望簡訊訊息中的所有字元都保持原樣，不要變更正確名稱（例如），建議您不要啟用此選項。
 
-不過，如果您的 SMS 訊息包含許多產生 Unicode 訊息的字元，您可以選取啟用此選項，以限制傳送訊息的成本。
+不過，如果您的簡訊訊息包含許多產生 Unicode 訊息的字元，您可以選取啟用此選項，以限制傳送訊息的成本。
 
-下表顯示GSM標準所考慮的字元。 除下面提及的字元外，所有插入訊息內文的字元都會將整個訊息轉換為二進位格式 (Unicode)，因此限制為 70 個字元。
+下表顯示GSM標準所考慮的字元。 除了下面提到的字元外，所有插入訊息內文的字元都會將整個訊息轉換為二進位格式(Unicode)，因此限製為70個字元。
 
 **基本字元**
 
@@ -123,15 +123,15 @@ ht-degree: 34%
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> ¡ </td> 
+   <td> ¡URL </td> 
    <td> P </td> 
-   <td> ¿ </td> 
+   <td> ？ </td> 
    <td> p </td> 
   </tr> 
   <tr> 
    <td> £ </td> 
    <td> _ </td> 
-   <td> ! </td> 
+   <td> ！ </td> 
    <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
@@ -143,29 +143,29 @@ ht-degree: 34%
    <td> <img height="21px" src="assets/phi.png" /> </td> 
    <td> 」 </td> 
    <td> 2 </td> 
-   <td> B </td> 
+   <td> byte </td> 
    <td> R </td> 
    <td> b </td> 
    <td> r </td> 
   </tr> 
   <tr> 
-   <td> ¥ </td> 
+   <td> £ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
    <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
-   <td> s </td> 
+   <td>   </td> 
   </tr> 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> ¤ </td> 
+   <td> ¤URL </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> T </td> 
-   <td> d </td> 
+   <td> 天 </td> 
    <td> t </td> 
   </tr> 
   <tr> 
@@ -175,11 +175,11 @@ ht-degree: 34%
    <td> 5 </td> 
    <td> E </td> 
    <td> U </td> 
-   <td> e </td> 
+   <td> è </td> 
    <td> u </td> 
   </tr> 
   <tr> 
-   <td> ù </td> 
+   <td> u </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
    <td> &amp; </td> 
    <td> 6 </td> 
@@ -191,7 +191,7 @@ ht-degree: 34%
   <tr> 
    <td> ì </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
-   <td> ' </td> 
+   <td> 『 </td> 
    <td> 7 </td> 
    <td> G </td> 
    <td> W </td> 
@@ -199,30 +199,30 @@ ht-degree: 34%
    <td> w </td> 
   </tr> 
   <tr> 
-   <td> ò </td> 
+   <td> ö </td> 
    <td> <img height="21px" src="assets/sigma.png" /> </td> 
    <td> ( </td> 
    <td> 8 </td> 
    <td> H </td> 
    <td> X </td> 
-   <td> h </td> 
+   <td> 小時 </td> 
    <td> x </td> 
   </tr> 
   <tr> 
-   <td> Ç </td> 
+   <td> C </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
    <td> I </td> 
    <td> Y </td> 
-   <td> i </td> 
+   <td> ì </td> 
    <td> y </td> 
   </tr> 
   <tr> 
-   <td> LF </td> 
+   <td> 換行字元 </td> 
    <td> <img height="21px" src="assets/xi.png" /> </td> 
    <td> * </td> 
-   <td> : </td> 
+   <td> ： </td> 
    <td> J </td> 
    <td> Z </td> 
    <td> j </td> 
@@ -232,16 +232,16 @@ ht-degree: 34%
    <td> Ø </td> 
    <td> ESC </td> 
    <td> + </td> 
-   <td> ; </td> 
+   <td> ； </td> 
    <td> K </td> 
-   <td> Ä </td> 
+   <td> 月 </td> 
    <td> k </td> 
-   <td> ä </td> 
+   <td> a </td> 
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> Æ </td> 
-   <td> , </td> 
+   <td> AE </td> 
+   <td> ， </td> 
    <td> &lt; </td> 
    <td> L </td> 
    <td> Ö </td> 
@@ -249,14 +249,14 @@ ht-degree: 34%
    <td> ö </td> 
   </tr> 
   <tr> 
-   <td> CR </td> 
-   <td> æ </td> 
+   <td> 歸位字元 </td> 
+   <td> Target </td> 
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
-   <td> Ñ </td> 
-   <td> m </td> 
-   <td> ñ </td> 
+   <td> On </td> 
+   <td> 分鐘 </td> 
+   <td> n </td> 
   </tr> 
   <tr> 
    <td> Å </td> 
@@ -264,18 +264,18 @@ ht-degree: 34%
    <td> 。 </td> 
    <td> &gt; </td> 
    <td> N </td> 
-   <td> Ü </td> 
+   <td> U </td> 
    <td> n </td> 
-   <td> ü </td> 
+   <td> u </td> 
   </tr> 
   <tr> 
-   <td> å </td> 
+   <td> a </td> 
    <td> É </td> 
    <td> / </td> 
-   <td>  嗎? </td> 
+   <td> ? </td> 
    <td> O </td> 
    <td> § </td> 
-   <td> o </td> 
+   <td> ö </td> 
    <td> à </td> 
   </tr> 
  </tbody> 
@@ -295,7 +295,7 @@ CR：歸位
 
 ## 文字編碼 {#about-text-encodings}
 
-傳送 SMS 訊息時，Adobe Campaign 可以使用一或多種文字編碼。每個編碼都有其專屬的字元集，並決定符合 SMS 訊息的字元數。
+傳送簡訊訊息時，Adobe Campaign 可以使用一或多種文字編碼。每個編碼都有其專屬的字元集，並決定符合簡訊訊息的字元數。
 
 設定新的SMPP行動傳遞外部帳戶時，您可以定義 **[!UICONTROL Mapping of encodings]** 在 **[!UICONTROL Mobile]** 標籤： **[!UICONTROL data_coding]** 欄位可讓Adobe Campaign通訊要對SMSC使用哪種編碼。
 
@@ -314,7 +314,7 @@ CR：歸位
 
 >[!IMPORTANT]
 >
->宣告的順序非常重要：建議您以&#x200B;**成本**&#x200B;的遞增順序顯示清單，以利於編碼，讓您在每則 SMS 訊息中盡可能多地顯示字元。
+>宣告的順序非常重要：建議您以&#x200B;**成本**&#x200B;的遞增順序顯示清單，以利於編碼，讓您在每則簡訊訊息中盡可能多地顯示字元。
 >
 >僅宣告您要使用的編碼。如果SMSC提供的某些編碼不符合您的使用目的，請勿在清單中宣告。
 
