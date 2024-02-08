@@ -7,9 +7,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2536'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 99%
       + [附加檔案](delivery/using/attaching-files.md)
    + 傳送簡訊 {#sending-messages-on-mobiles}
       + [開始使用簡訊](delivery/using/sms-channel.md)
-      + 設定簡訊頻道 {#sms-set-up}
+      + 設定簡訊頻道{#sms-set-up}
          + [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
          + [在中間來源基礎結構上設定簡訊](delivery/using/sms-set-up-mid.md)
       + [建立簡訊](delivery/using/sms-create.md)
