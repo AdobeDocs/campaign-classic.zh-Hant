@@ -2,16 +2,16 @@
 title: 移轉Campaign運運算元至AdobeIdentity Management系統(IMS)
 description: 瞭解如何將Campaign運運算元移轉至AdobeIdentity Management系統(IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
+source-git-commit: 1879fe179381be654bad876de2423d25049db43c
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
 
 # 移轉Campaign運運算元至AdobeIdentity Management系統(IMS) {#migrate-users-to-ims}
 
-為了強化安全性和驗證程式，Adobe Campaign強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 所有運運算元都應該實作 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。
+為了強化安全性和驗證程式，Adobe Campaign強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 所有運運算元都應該實作 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。
 
 請注意，在Campaign v8中，將不再允許連線使用者/密碼（亦稱為原生驗證）。 **Adobe建議在Campaign v7.3.5中執行此移轉，以便能夠順利移轉至Campaign v8。**
 
@@ -33,7 +33,7 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 
 如果貴組織中的操作員使用其登入/密碼（亦即）連線至Campaign使用者端主控台， 原生驗證)，您會受到影響，應將這些運運算元移轉至Adobe IMS，如下所述。
 
-移轉至 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 是確保環境安全且標準化的安全性必要條件，因為大部分其他Adobe Experience Cloud解決方案和應用程式皆已在IMS上。
+移轉至 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 是確保環境安全且標準化的安全性必要條件，因為大部分其他Adobe Experience Cloud解決方案和應用程式皆已在IMS上。
 
 ## 如何移轉託管和Managed Services環境？ {#ims-migration-procedure}
 
@@ -85,13 +85,13 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 
 ### 何時可以開始移轉？ {#ims-migration-start}
 
-移轉至「 」的建議 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 是將您的環境升級至Campaign Classicv7.3.5 (或 [IMS移轉相容版本](#ims-versions))。
+移轉至「 」的建議 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 是將您的環境升級至Campaign Classicv7.3.5 (或 [IMS移轉相容版本](#ims-versions))。
 
 升級至最新版本後，您就可以在Stage環境中開始IMS移轉，並據此規劃生產環境。
 
 ### 組建版本升級至Campaign Classic v7.3.5後會發生什麼事？ {#ims-migration-after-upgrade}
 
-在您的環境升級至Campaign Classicv7.3.5之後(或 [IMS移轉相容版本](#ims-versions))，您可以開始轉換至 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}.
+在您的環境升級至Campaign Classicv7.3.5之後(或 [IMS移轉相容版本](#ims-versions))，您可以開始轉換至 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}.
 
 ### 移轉何時完成？ {#ims-migration-end}
 
@@ -133,8 +133,26 @@ Adobe強烈建議所有使用者在移轉期間登出。
 
 如果您的所有使用者（Campaign運運算元）都在IMS上，您仍需要聯絡您的Adobe代表/客戶支援以計畫產品設定檔移轉。 您還需要移轉可能在自訂程式碼中使用的技術使用者。 在[本頁](ims-migration.md)中瞭解更多。
 
+### 如何檢視您的操作員的驗證型別？
+
+瞭解如何在Campaign中檢視您的操作員驗證型別：
+
+1. 從 **瀏覽器**，存取 **管理** `>` **存取管理** `>` **運運算元**.
+
+1. 以滑鼠右鍵按一下標題列並選取 **設定清單** 功能表。
+
+   ![](assets/ims_2.png)
+
+1. 新增 **帳戶已停用** 和 **驗證型別** 作為 **輸出欄**.
+
+   ![](assets/ims_1.png)
+
+您現在可以看到您的 **運運算元** 及其 **驗證型別**.
+
+![](assets/ims_3.png)
+
 ## 有用的連結 {#ims-useful-links}
 
 * [將技術使用者移轉至Adobe Developer主控台](ims-migration.md)
 * [Adobe Campaign v8發行說明](../../rn/using/latest-release.md)
-* [什麼是AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}
+* [什麼是AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}
