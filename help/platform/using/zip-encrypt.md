@@ -9,16 +9,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 8%
+source-wordcount: '517'
+ht-degree: 5%
 
 ---
 
 # 壓縮或加密檔案 {#zipping-or-encrypting-a-file}
-
-
 
 Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過定義匯出時 **[!UICONTROL Data extraction (file)]** 活動，您可以將後處理定義為zip或加密檔案。
 
