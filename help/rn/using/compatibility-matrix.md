@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 96%
@@ -149,7 +149,7 @@ ht-degree: 96%
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=zh-Hant#database-access-layers">了解更多</a>。</p>
+<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">了解更多</a>。</p>
 </td>
 </tr>
 </tbody>

@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 3%
+source-wordcount: '1492'
+ht-degree: 1%
 
 ---
 
@@ -112,11 +112,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->如需有關成本計算與存貨管理的詳細資訊，請參閱 [供應商、庫存和預算](../../campaign/using/providers--stocks-and-budgets.md).
+>如需有關成本計算與存貨管理的詳細資訊，請參閱 [供應商、庫存和預算](../../campaign/using/providers-stocks-and-budgets.md).
 
-## 管理相關文件 {#managing-associated-documents}
+## 管理相關檔案 {#managing-associated-documents}
 
-您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、AcrobatPDF等)。 瞭解如何將檔案與行銷活動連結 [在本節中](../../campaign/using/marketing-campaign-assets.md).
+您可以將各種檔案與行銷活動建立關聯：報告、照片、網頁、圖表等。 這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、AcrobatPDF等)。 瞭解如何將檔案與行銷活動連結 [在本節中](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -227,7 +227,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-匯出模型必須與為相關傳遞選取的服務提供者相關聯。 另請參閱 [建立服務提供者及其成本結構](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+匯出模型必須與為相關傳遞選取的服務提供者相關聯。 另請參閱 [建立服務提供者及其成本結構](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

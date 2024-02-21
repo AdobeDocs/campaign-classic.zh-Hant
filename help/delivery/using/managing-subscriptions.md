@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 2%
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->建立包含雙重選擇加入的訂閱表單的範例詳見 [本節](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
+>建立包含雙重選擇加入的訂閱表單的範例詳見 [本節](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 ## 建立資訊服務 {#creating-an-information-service}
 

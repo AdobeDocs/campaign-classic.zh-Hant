@@ -9,7 +9,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -34,4 +34,4 @@ ht-degree: 4%
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* 設定SOAP呼叫時，插入 **內容** XML元素，可參照在互動結構描述中新增的內容資訊。 如需詳細資訊，請參閱 [透過SOAP整合（伺服器端）](../../interaction/using/integration-via-soap--server-side-.md).
+* 設定SOAP呼叫時，插入 **內容** XML元素，可參照在互動結構描述中新增的內容資訊。 如需詳細資訊，請參閱 [透過SOAP整合（伺服器端）](../../interaction/using/integration-via-soap-server-side.md).

@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '477'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 5%
 
 若要這麼做，請新增並設定：
 
-* 一個 **[!UICONTROL Data extraction (file)]** 活動以將目標資料擷取至CSV檔案。 有關如何設定此活動的詳細資訊，請參閱 [本節](../../workflow/using/extraction--file-.md).
+* 一個 **[!UICONTROL Data extraction (file)]** 活動以將目標資料擷取至CSV檔案。 有關如何設定此活動的詳細資訊，請參閱 [本節](../../workflow/using/extraction-file.md).
 
   ![](assets/rtcdp-extract-file.png)
 

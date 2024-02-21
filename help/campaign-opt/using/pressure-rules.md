@@ -6,10 +6,10 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3274'
-ht-degree: 7%
+source-wordcount: '3343'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 行銷活動是根據定義的臨界值和訊息權重來選取。
 
 * 臨界值是指定期間內指定收件者獲授權的最高傳遞數量。 可以是設定或變數。 這是在型別規則設定中設定或計算的。 請參閱 [訊息數量上限](#maximum-number-of-messages).
-* 傳遞權重可讓您確認壓力管理架構內最優先的傳遞。權重最高的訊息具有優先順序。請參閱 [訊息權重](#message-weight).
+* 傳遞權重可讓您確認壓力管理架構內最優先的傳遞。具有最高權重的訊息具有優先順序。 請參閱 [訊息權重](#message-weight).
 
 仲裁包括確保權重大於進行中行銷活動的已排程行銷活動不會導致過多的設定檔請求：如果是這種情況，則會將設定檔從傳送中排除。
 
@@ -107,13 +107,13 @@ ht-degree: 7%
 >
 >正在進入 **0** 作為臨界值，會防止在考量到的期間內，所有傳送給目標母體的作業。
 
-**範例:**
+**範例：**
 
 您可以根據收件者所屬的區段，索引授權訊息的數量。 這表示屬於網頁區段的收件者可能會收到比其他收件者更多的訊息。 一個 **[!UICONTROL Iif (@origin='Web', 5, 3)]** 型別公式可授權傳送5則訊息給收件者，而其他區段授權傳送3則訊息。 設定如下：
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-若要定義臨界值，您可以使用連結至目標維度的維度：例如，若要包含傳送至儲存在訪客表格中的收件者設定檔的訊息(如需訪客表格的詳細資訊，請參閱 [本節](../../surveys/using/use-case--creating-a-refer-a-friend-form.md))或避免每週傳送超過一封訊息給相同家庭（可能指多個電子郵件地址），此訊息的識別維度會連結至收件者的維度。
+若要定義臨界值，您可以使用連結至目標維度的維度：例如，若要包含傳送至儲存在訪客表格中的收件者設定檔的訊息(如需訪客表格的詳細資訊，請參閱 [本節](../../surveys/using/use-case-creating-a-refer-a-friend-form.md))或避免每週傳送超過一封訊息給相同家庭（可能指多個電子郵件地址），此訊息的識別維度會連結至收件者的維度。
 
 若要這麼做，請選取 **[!UICONTROL Count messages on a linked dimension]** 選項，然後選取訪客或聯絡人表格。
 
@@ -128,7 +128,7 @@ ht-degree: 7%
 >在型別規則中定義的權重，可針對每個傳遞個別進行多載，位於 **[!UICONTROL Properties]** 標籤。 按一下 **[!UICONTROL Typology]** 定位點以選取行銷活動型別，並視需要指定要套用的權重。\
 >不過，在A型別規則中宣告的權重不會用於計算B型別規則：此權重僅涉及使用A規則的傳送。
 
-**範例:**
+**範例：**
 
 在以下範例中，我們想將音樂電子報的權重連結至其收件者的傾向分數。 操作步驟：
 
@@ -170,7 +170,7 @@ ht-degree: 7%
 
 當時段高於0 （例如1）時，計算臨界值可能會考量前一天的傳送情況。 因此，如果前一天對應到前一個日曆週，且所選的期間型別是「每個日曆週分組」，則計算臨界值時將考慮前一週的所有時間。
 
-**範例:**
+**範例：**
 
 我們想要建立壓力規則，將請求限製為每兩週期間最多3則訊息，並將分組限制在行事曆月份。
 
@@ -337,7 +337,7 @@ ht-degree: 7%
 
 現在，為您要套用壓力規則的每個傳遞建立和設定工作流程。
 
-1. 建立促銷活動. 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 建立行銷活動。 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在 **[!UICONTROL Targeting and workflows]** 索引標籤中，新增 **查詢** 活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱 [本節](../../workflow/using/query.md).
 1. 新增 **[!UICONTROL Email delivery]** 活動以開啟工作流程。 有關使用此活動的詳細資訊，請參閱 [本節](../../workflow/using/delivery.md).
 1. 前往 **[!UICONTROL Approvals]** 的標籤 **[!UICONTROL Delivery properties]** 並停用所有核准。
@@ -369,7 +369,7 @@ ht-degree: 7%
   <tr> 
    <th> 傳遞<br /> </th> 
    <th> 核准<br /> </th> 
-   <th> 權重<br /> </th> 
+   <th> 粗細<br /> </th> 
    <th> 擷取日期/時間<br /> </th> 
    <th> 聯絡日期<br /> </th> 
    <th> 傳遞開始日期/時間<br /> </th> 
@@ -383,9 +383,9 @@ ht-degree: 7%
    <td> 傳遞1<br /> </td> 
    <td> 已停用<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3pm<br /> </td> 
+   <td> 下午3點<br /> </td> 
    <td> 上午8點（次日）<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 下午2點<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已排除<br /> </td> 
    <td> 已排除<br /> </td> 
@@ -394,9 +394,9 @@ ht-degree: 7%
    <td> 傳遞2<br /> </td> 
    <td> 已停用<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4pm<br /> </td> 
+   <td> 下午4點<br /> </td> 
    <td> 上午9點（次日）<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 下午2點<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已傳送<br /> </td> 
    <td> 上午9點（次日）<br /> </td> 

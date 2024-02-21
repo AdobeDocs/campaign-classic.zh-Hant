@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 98%
+source-wordcount: '1980'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 * 一律以負責任且符合道德的方式使用個人資訊。
 
-* 避免傳送未經請求的電子郵件、推播通知和 SMS 訊息（「垃圾訊息」）。在打造顧客終生價值及忠誠度的過程中，Adobe 篤信許可式行銷原則，因此我們嚴格禁止使用 Adobe Campaign 傳送未經請求的訊息。
+* 避免傳送未經請求的電子郵件、推播通知和簡訊訊息（「垃圾訊息」）。在打造顧客終生價值及忠誠度的過程中，Adobe 篤信許可式行銷原則，因此我們嚴格禁止使用 Adobe Campaign 傳送未經請求的訊息。
 
 請詳閱[安全性和隱私權檢查清單](../../installation/using/get-started-security-privacy.md)，以瞭解有關安全性和隱私權需要檢查的核心元素。
 
@@ -120,7 +120,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 
 Adobe Campaign 可讓您收集資料，包括個人和敏感資訊。因此，您必須接收並監控收件者的同意。
 
-* 讓收件者一律同意接收通訊。為此，請盡快接受選擇退出要求，並透過雙重選擇加入程式以確認同意。如需詳細資訊，請參閱[建立雙重選擇加入的訂閱表單](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
+* 讓收件者一律同意接收通訊。為此，請盡快接受選擇退出要求，並透過雙重選擇加入程式以確認同意。如需詳細資訊，請參閱[建立雙重選擇加入的訂閱表單](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)。
 * 請勿匯入詐騙清單，並使用種子地址以確認您的用戶端檔案並未遭到詐騙使用。有關此項目的詳細資訊，請參閱[關於種子地址](../../delivery/using/about-seed-addresses.md)。
 * 透過同意與權限管理，您可以追蹤收件者的偏好設定，並管理組織內哪些人員可以存取哪些資料。如需詳細資訊，請參閱[本節](#consent)。
 * 加速和管理收件者的隱私權要求。如需詳細資訊，請參閱[本節](#privacy-requests)。

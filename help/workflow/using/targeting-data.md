@@ -2,12 +2,12 @@
 product: campaign
 title: 目標定位資料
 description: 進一步瞭解在工作流程中鎖定資料目標
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1926'
 ht-degree: 4%
 
 ---
@@ -178,9 +178,9 @@ A **[!UICONTROL Query]** 活動可讓您選取基本資料以建置目標母體�
 
    如需詳細資訊，請參閱Campaign版本的相關章節：
 
-   ![](assets/do-not-localize/v7.jpeg)[Campaign v7 文件](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 然後，我們需要新增子集：
 
@@ -198,7 +198,7 @@ A **[!UICONTROL Query]** 活動可讓您選取基本資料以建置目標母體�
 
    >[!NOTE]
    >
-   >如果您已取得 **同盟資料存取** 選項，您可以根據外部基底中的資訊來建立子集。 若要這麼做，請在以下位置選取外部表格的綱要： **[!UICONTROL Targeting dimension]** 欄位。 有關詳細資訊，請參閱 [存取外部資料庫(FDA)](accessing-an-external-database--fda-.md).
+   >如果您已取得 **同盟資料存取** 選項，您可以根據外部基底中的資訊來建立子集。 若要這麼做，請在以下位置選取外部表格的綱要： **[!UICONTROL Targeting dimension]** 欄位。 有關詳細資訊，請參閱 [存取外部資料庫(FDA)](accessing-an-external-database-fda.md).
 
 建立子集後，分割活動預設會顯示與子集相同數量的輸出轉變：
 
@@ -240,7 +240,7 @@ A **[!UICONTROL Query]** 活動可讓您選取基本資料以建置目標母體�
 
 為了實作這些作業，Adobe Campaign提供：
 
-* 資料收集活動： [檔案傳輸](file-transfer.md)， [資料載入（檔案）](data-loading--file-.md)， [資料載入(RDBMS)](data-loading--rdbms-.md)， [更新資料](update-data.md). 收集資料的第一個步驟是準備資料，以便在其他活動中處理。 為了確保工作流程正確執行並提供預期的結果，需要監控數個引數。 例如，當您匯入資料時，此資料的主索引鍵(Pkey)對於每個記錄必須是唯一的。
+* 資料收集活動： [檔案傳輸](file-transfer.md)， [資料載入（檔案）](data-loading-file.md)， [資料載入(RDBMS)](data-loading-rdbms.md)， [更新資料](update-data.md). 收集資料的第一個步驟是準備資料，以便在其他活動中處理。 為了確保工作流程正確執行並提供預期的結果，需要監控數個引數。 例如，當您匯入資料時，此資料的主索引鍵(Pkey)對於每個記錄必須是唯一的。
 * 目標定位活動已新增資料管理選項： [查詢](query.md)， [聯集](union.md)， [交集](intersection.md)， [Split](split.md). 這可讓您在數個不同目標維度的資料之間設定聯合或交集，前提是資料協調可行。
 * 資料轉換活動： [擴充](enrichment.md)， [變更維度](change-dimension.md).
 

@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 3%
+source-wordcount: '1605'
+ht-degree: 2%
 
 ---
 
@@ -222,11 +222,11 @@ ht-degree: 3%
 
 您可以結合特定校樣目標的定義和種子地址的使用，使用 **[!UICONTROL Specific target and Seed addresses]** 選項。 相關設定隨後會在兩個單獨的子標籤中定義。
 
-另請參閱:
+另請參閱：
 
 * [選取校訂目標](#selecting-the-proof-target)
 * [關於種子地址](about-seed-addresses.md)
-* [使用實例：依條件選取種子地址](use-case--selecting-seed-addresses-on-criteria.md)
+* [使用實例：依條件選取種子地址](use-case-selecting-seed-addresses-on-criteria.md)
 
 ## 教學課程影片 {#seeds-and-proofs-video}
 

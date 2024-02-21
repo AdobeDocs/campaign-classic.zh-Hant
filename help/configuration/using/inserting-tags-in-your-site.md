@@ -6,9 +6,9 @@ feature: Configuration
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 >
 >此方法會使用網頁瀏覽器傳送的Cookie來識別收件者，而且並非100%可靠。
 
-**範例**:
+**範例**：
 
 ```
 <img height='0' width='0' alt='' src='https://localhost/r/12343?tagid=home'
@@ -126,7 +126,7 @@ ht-degree: 2%
 
 如果您希望控制傳送至重新導向伺服器的資訊，最可靠的方式是使用頁面產生語言自行同步執行HTTP查詢。
 
-您建構的URL必須符合中定義的語法規則。 [網路追蹤標籤：定義](../../configuration/using/web-tracking-tag--definition.md).
+您建構的URL必須符合中定義的語法規則。 [網路追蹤標籤：定義](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

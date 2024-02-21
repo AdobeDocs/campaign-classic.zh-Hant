@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: "使用案例：針對線上調查的回答顯示報吿"
-description: "使用案例：針對線上調查的回答顯示報吿"
+title: 「使用案例：針對線上調查的回答顯示報告」
+description: 「使用案例：針對線上調查的回答顯示報告」
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 6%
+source-wordcount: '490'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign調查的回答可使用專用報告進行收集和分析。
 
 若要收集調查的答案，請套用下列步驟：
 
-1. 建立工作流程並放置 **[!UICONTROL Answers to a survey]** 活動。 有關使用此活動的詳細資訊，請參閱 [本節](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. 建立工作流程並放置 **[!UICONTROL Answers to a survey]** 活動。 有關使用此活動的詳細資訊，請參閱 [本節](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. 編輯活動並選取您要分析其答案的調查。
 1. 啟用 **[!UICONTROL Select all the answer data]** 收集所有資訊的選項。
 

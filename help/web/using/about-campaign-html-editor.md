@@ -6,7 +6,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -50,11 +50,11 @@ ht-degree: 1%
 
 若要建立 **電子郵件傳遞**，您需要：
 
-1. 從DCE範本建立傳遞 —  [瞭解更多](use-case--creating-an-email-delivery.md)
+1. 從DCE範本建立傳遞 —  [瞭解更多](use-case-creating-an-email-delivery.md)
 1. 選取現有內容或從建立內容 [標準範本](template-management.md)
 1. 編輯和設定線上內容
 1. 傳送傳遞 —  [瞭解更多](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->電子郵件傳遞內容中的完整實作範例，請參閱 [此使用案例](use-case--creating-an-email-delivery.md).
+>電子郵件傳遞內容中的完整實作範例，請參閱 [此使用案例](use-case-creating-an-email-delivery.md).

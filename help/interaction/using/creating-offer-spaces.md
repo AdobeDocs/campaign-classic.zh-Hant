@@ -3,14 +3,14 @@ product: campaign
 title: 建立優惠方案空間
 description: 建立優惠方案空間
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 目錄優惠方案的內容是在優惠方案空間中設定。 依預設，內容可包含以下欄位： **[!UICONTROL Title]**， **[!UICONTROL Destination URL]**， **[!UICONTROL Image URL]**， **[!UICONTROL HTML content]** 和 **[!UICONTROL Text content]**. 欄位序列是在選件空間中設定。
 
-進階引數可讓您指定聯絡人識別金鑰（例如，可同時由各種元素、名稱和電子郵件欄位組成）。 有關詳細資訊，請參閱 [呈現已識別的優惠](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) 區段。
+進階引數可讓您指定聯絡人識別金鑰（例如，可同時由各種元素、名稱和電子郵件欄位組成）。 有關詳細資訊，請參閱 [呈現已識別的優惠](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) 區段。
 
 HTML或XML演算會透過演算函式建立。 轉譯函式中定義的欄位順序必須與內容中設定的順序相同。
 

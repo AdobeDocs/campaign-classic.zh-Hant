@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 使用工作流程來匯入和匯出資料
+title: 使用工作流程匯入和匯出資料
 description: 瞭解如何使用Campaign中的工作流程匯入和匯出資料
 feature: Data Management, Workflows
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 31%
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 31%
 
 ## 收集資料 {#collecting-data-workflows}
 
-工作流程可以用來自動執行某些匯入過程。無論是從本地檔案還是從 SFTP 匯入資料，都可以使用工作流程來標準化資料管理過程。
+工作流程可能是自動化部分匯入流程的實用方式。 無論是從本地檔案還是從 SFTP 匯入資料，都可以使用工作流程來標準化資料管理過程。
 
 ### 使用清單中的資料：讀取清單 {#using-data-from-a-list--read-list}
 
@@ -36,7 +36,7 @@ ht-degree: 31%
 
 工作流程中處理的資料可從結構化檔案中擷取，以便匯入Adobe Campaign中。
 
-載入資料活動的說明可在以下連結中找到： [資料載入（檔案）](../../workflow/using/data-loading--file-.md) 區段。
+載入資料活動的說明可在以下連結中找到： [資料載入（檔案）](../../workflow/using/data-loading-file.md) 區段。
 
 要匯入的結構化檔案範例：
 
@@ -54,4 +54,4 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 在使用可用於轉換資料的一些可用資料管理活動之後，可以使用工作流程來自動執行某些匯出過程或匯出精確資料集。
 
-匯出操作是使用 **[!UICONTROL Data extraction (file) activity]**. 有關如何設定和使用活動的詳細資訊，請參閱 [此頁面](../../workflow/using/extraction--file-.md).
+匯出操作是使用 **[!UICONTROL Data extraction (file) activity]**. 有關如何設定和使用活動的詳細資訊，請參閱 [此頁面](../../workflow/using/extraction-file.md).

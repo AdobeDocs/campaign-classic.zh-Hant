@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Seed Address
 role: User
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 種子地址功能具有以下優點：
 
-* 以從收件者設定檔取得的資料隨機替代欄位：例如，您可以在種子地址區段中僅輸入電子郵件地址，並讓Campaign自動填寫設定檔的其他欄位(請參閱 [使用案例：設定欄位替代](use-case--configuring-the-field-substitution.md))。
+* 以從收件者設定檔取得的資料隨機替代欄位：例如，您可以在種子地址區段中僅輸入電子郵件地址，並讓Campaign自動填寫設定檔的其他欄位(請參閱 [使用案例：設定欄位替代](use-case-configuring-the-field-substitution.md))。
 * 使用具有資料管理功能的工作流程時，可在種子地址層級輸入傳送中處理的其他資料，以強制執行值：這可作為隨機值替代的另一做法。
 * 系統會自動從下列傳遞統計資料的報表中排除種子地址： **[!UICONTROL Clicks]**， **[!UICONTROL Opens]**， **[!UICONTROL Unsubscriptions]**.
 
@@ -36,7 +36,7 @@ ht-degree: 9%
 >
 >種子地址不屬於收件者表格，而是在單獨的表格中建立。 如果您使用新資料擴充收件者表格，則必須使用相同資料擴充種子地址表格。 否則，種子地址不會考慮這些擴展欄位。
 >
->本節中顯示了如何擴充種子地址表格的範例： [使用案例：依條件選取種子地址](use-case--selecting-seed-addresses-on-criteria.md).
+>本節中顯示了如何擴充種子地址表格的範例： [使用案例：依條件選取種子地址](use-case-selecting-seed-addresses-on-criteria.md).
 
 如果是直接郵件傳遞，種子地址會在提取期間新增，並在輸出檔案中進行混合。
 

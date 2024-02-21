@@ -6,9 +6,9 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1255'
 ht-degree: 6%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 1. 監視傳遞。 [了解更多](../../campaign/using/marketing-campaign-monitoring.md)。
 
-1. 計畫行銷活動和相關成本。 [了解更多](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+1. 計畫行銷活動和相關成本。 [了解更多](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
 完成這些步驟後，您就可以開始傳送(請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，檢查與傳遞相關的資料、流程和資訊，並在必要時管理相關檔案(請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您也可以追蹤行銷活動和傳遞的處理階段執行情況(請參閱 [本節](../../campaign/using/marketing-campaign-monitoring.md))。
 
@@ -55,7 +55,7 @@ ht-degree: 6%
 1. 在新建立的計畫上按一下滑鼠右鍵，然後選取 **建立新的&#39;Program&#39;資料夾**.
 1. 重複上述步驟，重新命名新的程式資料夾及其內部名稱。
 
-## 建立促銷活動 {#creating-a-campaign}
+## 建立行銷活動 {#creating-a-campaign}
 
 ### 新增行銷活動 {#adding-a-campaign}
 

@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 2%
@@ -54,7 +54,7 @@ Forms是實體 `xtk:form` 型別。 您可以在下列位置檢視輸入表單�
 
 * 內容管理
 
-  使用此表單型別進行內容管理。 檢視此 [使用案例](../../delivery/using/use-case--creating-content-management.md).
+  使用此表單型別進行內容管理。 檢視此 [使用案例](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -154,7 +154,7 @@ Forms是實體 `xtk:form` 型別。 您可以在下列位置檢視輸入表單�
 
 若要將影像與表單中的元素（例如圖示）相關聯，您可以新增影像的參照。 使用 `img` 屬性，例如 `<container>` 元素。
 
-語法: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
+語法： `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
 此範例顯示對 `book.png` 和 `detail.png` 影像來自 `ncm` 名稱空間：
 
@@ -255,7 +255,7 @@ Forms是實體 `xtk:form` 型別。 您可以在下列位置檢視輸入表單�
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | 有條件地顯示一組欄位 |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | 有條件地啟用一組欄位 |
 
-   範例:
+   例如：
 
    ```xml
    <container type="enabledGroup" enabledIf="@gender=1">
@@ -496,7 +496,7 @@ Forms是實體 `xtk:form` 型別。 您可以在下列位置檢視輸入表單�
 
 1. 在JS檔案中建立驗證函式。
 
-   範例:
+   例如：
 
    ```js
    function nms_recipient_checkValue(value)

@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 5%
@@ -38,7 +38,7 @@ ht-degree: 5%
 
    若要這麼做，請按一下 **[!UICONTROL Edit the dynamic condition...]** 連結，然後輸入種子地址選取引數。 例如，您可以包含特定資料夾中包含的所有種子地址，或屬於您組織特定部門的種子地址。
 
-   本區段將呈現這方面的範例： [使用案例：依條件選取種子地址](use-case--selecting-seed-addresses-on-criteria.md).
+   本區段將呈現這方面的範例： [使用案例：依條件選取種子地址](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >

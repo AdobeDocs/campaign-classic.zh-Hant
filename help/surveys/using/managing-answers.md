@@ -2,13 +2,13 @@
 product: campaign
 title: 管理答案
 description: 瞭解如何管理調查答案
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
@@ -19,31 +19,31 @@ ht-degree: 1%
 
 ## 儲存收集的答案 {#storing-collected-answers}
 
-除了Adobe Campaign中所有網路表單通用的標準儲存模式（資料庫欄位和本機變數）之外，調查還可以使用存檔欄位來動態擴充資料模型。
+除了Adobe Campaign中所有網路表單通用的標準儲存模式（資料庫欄位和本機變數）之外，調查還可使用已封存欄位來動態擴充資料模型。
 
 >[!CAUTION]
 >
->此選項適用於 **調查** 僅輸入Web應用程式。 其他型別的Web表單不提供此功能。
+>此選項適用於 **調查** 僅輸入Web應用程式。 其他型別的網路表單不提供此功能。
 
 ### 儲存在已封存的欄位中 {#storing-in-an-archived-field}
 
-藉由新增儲存空間以儲存調查中提供的回應，可輕鬆擴充資料範本。 若要這麼做，請選取 **[!UICONTROL Store answers to a question]** 選項。 按一下 **[!UICONTROL New field...]** 連結並提供其屬性：
+您可以新增儲存空間來儲存調查中提供的回應，藉此輕鬆擴充資料範本。 若要這麼做，請選取 **[!UICONTROL Store answers to a question]** 選項。 按一下 **[!UICONTROL New field...]** 連結並提供其屬性：
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
-輸入欄位的標籤和名稱，並選取欄位型別：文字、布林值、整數或小數、日期等。
+輸入欄位的標籤和名稱，然後選取欄位型別：文字、布林值、整數或小數、日期等。
 
-選取的欄位型別涉及使用者輸入回應時的資料控制。 對象 **文字** 欄位，您可以新增限制（大小寫、格式）或現有分項清單的連結以強制選取。
+選取的欄位型別涉及使用者輸入回應時的資料控制。 的 **文字** 欄位，您可以新增限制（大小寫、格式）或現有分項清單的連結以強制選取。
 
 若要新增限制，請從下拉式清單中選取它。 限制有兩種型別：
 
 1. 字元大小寫
 
-   輸入的資訊可以以下列格式儲存在欄位中：全部大寫、全部小寫或初始大寫。 此限制並不要求使用者以選取的格式輸入資料，但儲存時欄位中輸入的內容將會轉換。
+   輸入的資訊可以以下列格式儲存在欄位中：全部大寫、全部小寫或初始大寫。 此限制並不要求使用者以選取的格式輸入資料，但儲存時，在欄位中輸入的內容將會轉換。
 
 1. 資料格式
 
-如果此欄位用於清單中，則列舉的值可以使用自動在值表中擷取 **[!UICONTROL Initialize the list of values from the database]** 值清單上方的連結。
+若在清單中使用此欄位，則列舉的值可使用在值表中自動擷取 **[!UICONTROL Initialize the list of values from the database]** 值清單上方的連結。
 
 例如，您可以建立下拉式清單，讓使用者選取其原生語言。 對應的已封存欄位可以與相關聯 **語言** 包含語言清單的列舉：
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
-在 **[!UICONTROL General]** 欄位的「 」標籤中， **[!UICONTROL Initialize the list of values from the database]** 連結可讓您自動輸入所提供的標籤清單。
+在 **[!UICONTROL General]** 欄位的「 」標籤， **[!UICONTROL Initialize the list of values from the database]** 連結可讓您自動輸入所提供的標籤清單。
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 若要將不同型別的合約儲存在一個欄位中，請建立 **[!UICONTROL Text]** 輸入欄位並選取 **[!UICONTROL Store answers to a question]** 選項。
 
-按一下 **[!UICONTROL New field...]** 連結並輸入欄位屬性。 選取 **[!UICONTROL Multiple values]** 啟用儲存多個值的選項。
+按一下 **[!UICONTROL New field...]** 連結，然後輸入欄位屬性。 選取 **[!UICONTROL Multiple values]** 啟用多個要儲存之值的選項。
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -85,11 +85,11 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
-根據您要復原的設定檔建立查詢。 在下列範例中，查詢可讓您選取至少具有兩個合約的設定檔，包括A型態合約。
+根據您要復原的設定檔建立查詢。 在下列範例中，查詢可讓您選取至少有兩個合約的設定檔，包括A型態合約。
 
 ![](assets/s_ncs_admin_survey_read_responses_edit.png)
 
-對於每個表單，提供的答案都可用於欄位或標籤中。 對封存欄位中儲存的內容使用下列語法：
+針對每個表單，提供的答案可用於欄位或標籤中。 針對已封存欄位中儲存的內容使用下列語法：
 
 ```
 <%= ctx.webAppLogRcpData.name of the archived field %
@@ -97,34 +97,34 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->若為其他欄位型別，語法詳見於 [本節](../../platform/using/about-queries-in-campaign.md).
+>若為其他型別的欄位，語法詳見 [本節](../../platform/using/about-queries-in-campaign.md).
 
 ### 儲存設定 {#storage-settings}
 
-您可以以XML格式封存調查的答案。 這可讓您儲存所收集答案的原始復本，當逐項清單中的資料過度標準化時，此功能會很有用。 [了解更多](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
+您可以以XML格式封存調查答案。 這可讓您儲存所收集答案的原始復本，當逐項清單中的資料過度標準化時，這將很有用。 [了解更多](../../surveys/using/publish-track-and-use-collected-data.md#standardizing-data)
 
 >[!CAUTION]
 >
->封存原始回應會影響所需的儲存空間。 使用此選項時請務必謹慎。
+>封存原始回應會影響所需的儲存空間。 請謹慎使用此選項。
 
 操作步驟：
 
-* 編輯調查屬性，透過 **[!UICONTROL Properties]** 的按鈕 **[!UICONTROL Edit]** 標籤。
+* 編輯意見調查屬性，透過 **[!UICONTROL Properties]** 的按鈕 **[!UICONTROL Edit]** 標籤。
 * 按一下 **[!UICONTROL Advanced parameters]** 連結並檢視 **[!UICONTROL Save a copy of raw answers]** 選項。
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-您可以預設為所有調查啟用它（發佈調查時套用此選項）。 若要這麼做，請建立 **[!UICONTROL NmsWebApp_XmlBackup]** 選項和指派值 **[!UICONTROL 1]** 重新整理，如下所示：
+您可以預設為所有調查啟用它（此選項在發佈調查時套用）。 若要這麼做，請建立 **[!UICONTROL NmsWebApp_XmlBackup]** 選項並指派值 **[!UICONTROL 1]** 重新整理，如下所示：
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
 ## 分數管理 {#score-management}
 
-您可以為表單頁面中提供的選項指派分數。 分數只能連結至已關閉的問題：核取方塊、下拉式清單中的值、訂閱等。
+您可以將分數指派給表單頁面中提供的選項。 分數只能連結至已關閉的問題：核取方塊、下拉式清單的值、訂閱等。
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
-分數會在確認頁面時(即使用者按一下 **[!UICONTROL Next]** 或 **[!UICONTROL Finish]** 按鈕。
+分數會在頁面確認時(即使用者按一下 **[!UICONTROL Next]** 或 **[!UICONTROL Finish]** 按鈕。
 
 >[!NOTE]
 >
@@ -138,26 +138,26 @@ ht-degree: 1%
 
 * 若要在測試中使用分數，請使用 **[!UICONTROL Score]** 欄位，如下所示：
 
-   ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * 您可以在指令碼中使用分數。
 
 **範例**：計算分數，並將其作為顯示下一頁的條件：
 
-* 在調查中，下一頁可讓您根據下拉式清單中選取的值，指派不同的分數給使用者：
+* 在調查中，下一頁可讓您根據下拉式清單中選取的值，將不同的分數指派給使用者：
 
-   ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![](assets/s_ncs_admin_survey_score_exa.png)
 
 * 您可以根據選取的選項，將此分數與第二個值結合：
 
-   ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![](assets/s_ncs_admin_survey_score_exb.png)
 
-* 當使用者按一下 **[!UICONTROL Next]** 按鈕時，兩個值相加。
+* 當使用者按一下 **[!UICONTROL Next]** 按鈕，兩個值相加。
 
-   ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![](assets/s_ncs_admin_survey_score_exe.png)
 
-* 您可以根據分數對要顯示的頁面套用條件。 其設定如下：
+* 條件可套用至要根據分數顯示的頁面。 其設定如下：
 
-   ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![](assets/s_ncs_admin_survey_score_exd.png)
 
-   ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![](assets/s_ncs_admin_survey_score_exg.png)

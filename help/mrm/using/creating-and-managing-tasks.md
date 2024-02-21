@@ -3,15 +3,15 @@ product: campaign
 title: 建立及管理任務
 description: 建立及管理任務
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3736'
-ht-degree: 1%
+source-wordcount: '3750'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 
 
-Adobe Campaign 可讓您直接在應用程式中建立任務並管理其完整的生命週期. 方案和行銷活動實作可以細分為指派給Adobe Campaign操作員或外部服務提供者的任務。 此作業模式可讓您建立包含所有方案參與者和外部參與者的開放式共同作業環境。
+Adobe Campaign可讓您直接在應用程式中建立任務並管理其完整的生命週期。 方案和行銷活動實作可以細分為指派給Adobe Campaign操作員或外部服務提供者的任務。 此作業模式可讓您建立包含所有方案參與者和外部參與者的開放式共同作業環境。
 
 您可以從任務清單或行銷活動控制面板建立、檢視及監控任務。 您也可以在行銷計畫、方案和行銷活動的排程中檢視和追蹤這些活動。
 
@@ -191,11 +191,11 @@ Adobe Campaign 可讓您直接在應用程式中建立任務並管理其完整�
 
 ### 服務提供者 {#service-providers}
 
-外部服務提供者可以參與工作的管理。
+外部服務提供者可參與工作的管理。
 
 若要這麼做，請編輯工作屬性，並選取相關的服務提供者。 與服務提供者相關的成本類別會自動列在視窗的中央區段中。
 
-有關詳細資訊，請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+有關詳細資訊，請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 選取與作業執行相關的成本類別。 若要這麼做，請選取成本型態，並視需要新增附加費金額。
 
@@ -270,8 +270,8 @@ Adobe Campaign 可讓您直接在應用程式中建立任務並管理其完整�
 可以排程下列工作：
 
 * [控制任務](#control-tasks)，
-* [分組任務](#grouping-task),
-* [分組任務](#grouping-task),
+* [分組任務](#grouping-task)，
+* [分組任務](#grouping-task)，
 * [通知任務](#notification-task).
 
 >[!NOTE]
@@ -339,7 +339,7 @@ A **[!UICONTROL Control task]** 連結至傳遞核准：核准目標、內容、
 
 分組到分組任務的所有任務都可以在自己的儀表板上看到。 這可讓您篩選任務清單，以僅顯示您感興趣的任務。
 
-群組任務具有連結，可讓您輕鬆建立群組任務。
+分組任務具有一個連結，可讓您輕鬆建立分組任務。
 
 若要根據分組任務建立分組任務，請移至行銷活動控制面板，按一下分組任務的名稱以顯示其說明，然後按一下 **[!UICONTROL Add a task]**.
 
@@ -410,7 +410,7 @@ A **[!UICONTROL Control task]** 連結至傳遞核准：核准目標、內容、
 
 若為已分組的任務，Adobe Campaign會自動將父任務的結束日期指派給子任務，作為開始日期。 例如，如果 **建立邀請** 工作於10月15日下午3:30結束， **傳送邀請電子郵件** 子任務將於10月15日下午3:30開始。
 
-此外，如果您延遲父系任務的結束，其某些子系任務可能會受到影響：這些是狀態為 **[!UICONTROL Scheduled]** 且其開始日期早於父系任務的新結束日期。 任務的持續時間保持不變。 如果子任務的開始日期晚於父任務的新結束日期，則子任務不受影響。
+此外，如果延遲父系任務的結束，其某些子系任務可能會受到影響：這些是狀態為 **[!UICONTROL Scheduled]** 且其開始日期早於父系任務的新結束日期。 任務的持續時間保持不變。 如果子任務的開始日期晚於父任務的新結束日期，則子任務不受影響。
 
 **範例**
 

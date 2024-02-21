@@ -2,13 +2,13 @@
 product: campaign
 title: 開始使用意見調查
 description: 開始使用Campaign調查
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '534'
 ht-degree: 4%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 4%
 
 
 
-Adobe Campaign包含圖形模組，可定義及發佈Web應用程式。 這可用來建立頁面，例如外部網路上的編輯表單，或通知表單，其中包含來自資料庫的資料，以及表格、圖表、輸入表單等。 使用此功能來設計和張貼網頁，讓使用者可以在其中查閱或輸入資訊。
+Adobe Campaign包含圖形模組，可定義及發佈網頁應用程式。 這可用來建立頁面，例如外部網路上的編輯表單，或通知表單（包含來自資料庫的資料，以及表格、圖表、輸入表單等）。 使用此功能來設計和張貼網頁，讓使用者可以在其中查閱或輸入資訊。
 
-選填 **調查** 附加元件可讓您建立新型別的Web應用程式，以建立和管理線上問卷，例如可新增或修改設定檔資訊、訂閱或取消訂閱資訊服務或競爭專案表單的表單。 收集到答案後，就會儲存在資料庫或本機變數中。 資料模型可透過問卷的答案動態擴充。 您可以即時檢視結果、篩選回應，並使用專用圖表加以分析。
+選填 **調查** 附加元件可讓您建立新型別的Web應用程式，以建立和管理線上問卷，例如新增或修改設定檔資訊、訂閱或取消訂閱資訊服務或競爭專案表單的表單。 收集到答案後，就會儲存在資料庫或本機變數中。 資料模型可透過調查問卷的答案動態擴展。 您可以即時檢視結果、篩選回應，並使用專用圖表加以分析。
 
 本章詳細說明如何建立和管理 **調查**、欄位和頁面管理、儲存模式和記錄。
 
@@ -31,7 +31,6 @@ Adobe Campaign包含圖形模組，可定義及發佈Web應用程式。 這可�
 >
 >* Web應用程式管理的詳細資訊，請參閱 [本檔案](../../web/using/about-web-applications.md). 如需詳細資訊，請參閱本章。
 
-
 ## 功能範圍 {#campaign-surveys-scope}
 
 在Adobe Campaign中，使用 [網頁應用程式](../../web/using/about-web-forms.md) 至：
@@ -40,36 +39,36 @@ Adobe Campaign包含圖形模組，可定義及發佈Web應用程式。 這可�
 * 使用整合的翻譯工具管理多語言表單，
 * 管理圖形介面、多欄頁面配置、
 * 新增個人化並定義欄位位置
-* 根據答案顯示調查欄位的條件，
+* 根據答案之調查欄位的條件顯示，
 * 條件頁面顯示，
 * 根據預期的資料型別（數字、電子郵件地址、日期等），在核准前檢查資訊 和必填欄位，
 * 傳送電子郵件邀請/通知，
-* 個人化錯誤並結束頁面，
+* 個人化錯誤和結束頁面，
 * 在表單中新增影像、影片、超文字連結、驗證碼等
 
 選用的調查建立模組提供使用者易記的UI和以下附加功能：
 
-* 資料庫的動態擴充：建立不屬於初始資料模型的答案。 [了解更多](../../surveys/using/managing-answers.md#storing-collected-answers)。
+* 資料庫的動態擴充：建立不屬於初始資料模型的回答。 [了解更多](../../surveys/using/managing-answers.md#storing-collected-answers)。
 * 分數管理。 [了解更多](../../surveys/using/managing-answers.md#score-management)。
 * 隨機顯示問題。 [了解更多](../../surveys/using/building-a-survey.md#adding-questions)。
-* 即時追蹤答案。 [了解更多](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking)。
-* 產生專用報表。 [了解更多](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys)。
+* 即時追蹤答案。 [了解更多](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking)。
+* 產生專用報表。 [了解更多](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys)。
 
 
 ## 實施步驟 {#surveys-implementation-steps}
 
-套用下列步驟來建立和傳遞問卷並處理其結果：
+套用下列步驟來建立和傳遞調查並處理其結果：
 
 1. 建立調查的頁面及其內容（輸入欄位、下拉式清單、問題等）。
-1. 定義應如何儲存答案。 可以插入資料預先載入步驟，以便使用資料庫中已有的資料預先載入表單。 您也可以新增測試方塊。
-1. 發佈，然後傳送調查給收件者（例如，在傳送或網站中包含連結）。
+1. 定義應如何儲存答案。 可以插入資料預先載入步驟，以便使用資料庫中已存在的資料預先載入表單。 您也可以新增測試方塊。
+1. 發佈，然後將調查傳送給收件者（例如將連結納入傳送或網站中）。
 1. 監視回應並檢視報表。
 
-有關這些步驟的設定和排序的詳細資訊，請參閱 [本檔案](../../web/using/about-web-forms.md). 本章僅會詳細說明調查的特定設定。
+有關設定和排序這些步驟的詳細資訊，請參閱 [本檔案](../../web/using/about-web-forms.md). 本章僅會詳細說明調查的特定設定。
 
 >[!CAUTION]
 >
->基於隱私權考量，我們建議對所有外部資源使用HTTPS。
+>基於隱私權理由，我們建議對所有外部資源使用HTTPS。
 
 ## 設定 {#settings}
 

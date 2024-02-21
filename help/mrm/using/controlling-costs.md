@@ -3,14 +3,14 @@ product: campaign
 title: 控制成本
 description: 瞭解如何控制成本
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 1. 定義成本計算方法
 
-   已為服務提供者定義成本結構。 另請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   已為服務提供者定義成本結構。 另請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. 定義行銷活動成本（傳遞/任務）
 
@@ -170,7 +170,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 >[!NOTE]
 >
->成本類別與結構顯示於 [建立服務提供者及其成本類別](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+>成本類別與結構顯示於 [建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 ## 成本承諾、計算及收費 {#cost-commitment--calculation-and-charging}
 
@@ -196,7 +196,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
    如果未提供實際成本，則套用下列規則：
 
-   * 對於正在編輯的行銷活動，計算的成本是行銷活動的預估臨時成本，如果未定義此成本，則計算的成本將是行銷活動的所有傳遞與任務的臨時成本總和。 如果行銷活動結束，行銷活動的已計算成本將是所有已計算成本的總和。
+   * 對於正在編輯的行銷活動，計算的成本是行銷活動的預估臨時成本，如果未定義此成本，則計算的成本將是行銷活動的所有傳遞與工作的臨時成本總和。 如果行銷活動結束，行銷活動的已計算成本將是所有已計算成本的總和。
    * 對於尚未分析的傳遞，計算的成本為預估臨時成本。 如果已經執行分析，則計算的成本將會是從服務提供成本結構和目標收件者人數計算的所有成本總和。
    * 對於進行中的工作，計算成本會使用預估臨時成本。 如果作業已完成，則計算成本將是根據服務提供者成本結構計算的所有成本與完成天數的總和。
    * 針對行銷計畫（與方案一樣），計算成本是針對行銷活動計算的成本總和。 如果未指定這些成本，則計算的成本將使用預估的臨時成本。
@@ -233,7 +233,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 #### 步驟2 — 設定服務提供者並定義成本結構 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. 從建立服務提供者及其成本結構的服務範本 **[!UICONTROL Administration > Campaigns]** 節點。 有關詳細資訊，請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. 從建立服務提供者及其成本結構的服務範本 **[!UICONTROL Administration > Campaigns]** 節點。 有關詳細資訊，請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
    如果是直接郵件傳遞，請建立成本類別 **[!UICONTROL Envelopes]** （型別114x229和162x229）， **[!UICONTROL Postage]** 和 **[!UICONTROL Print]** （型別A3和A4）。 然後建立下列成本結構：
 

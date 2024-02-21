@@ -3,15 +3,15 @@ product: campaign
 title: Campaign FDA最佳作法和限制
 description: 瞭解使用外部資料庫(FDA)時的最佳實務和限制
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 7%
 
 * **建立子集** - [Split](../../workflow/using/split.md) 活動可讓您建立子集。 您可以使用外部資料來定義要使用的篩選條件。 如需詳細資訊，請參閱[此頁面](../../workflow/using/split.md)。
 
-* **載入外部資料庫**  — 您可以使用外部資料，在 [資料載入中](../../workflow/using/data-loading--rdbms-.md) (RDBMS)活動。 在[本頁](../../workflow/using/data-loading--rdbms-.md)中瞭解更多。
+* **載入外部資料庫**  — 您可以使用外部資料，在 [資料載入中](../../workflow/using/data-loading-rdbms.md) (RDBMS)活動。 在[本頁](../../workflow/using/data-loading-rdbms.md)中瞭解更多。
 
 * **新增資訊和連結** - [擴充](../../workflow/using/enrichment.md) 活動可讓您新增其他資料至工作流程的工作表，以及連結至外部表格。 在這種情況下，它可以使用來自外部資料庫的資料。 在[本頁](../../workflow/using/enrichment.md)中瞭解更多。
 

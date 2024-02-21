@@ -6,8 +6,8 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: ht
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
 
@@ -23,8 +23,8 @@ ht-degree: 100%
    + [最新版本](rn/using/latest-release.md)
    + 先前版本 {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [2021 年](rn/using/release--2021.md)
-      + [2022 年](rn/using/release--2022.md)
+      + [2021 年](rn/using/release-2021.md)
+      + [2022 年](rn/using/release-2022.md)
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
 + 開始使用{#getting-started}
@@ -184,8 +184,8 @@ ht-degree: 100%
       + [建立種子地址](delivery/using/creating-seed-addresses.md)
       + [新增種子地址](delivery/using/adding-seed-addresses.md)
       + [使用外部收件者表格](delivery/using/using-an-external-recipient-table.md)
-      + [使用實例：依條件選取種子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
-      + [使用實例：設定欄位替代](delivery/using/use-case--configuring-the-field-substitution.md)
+      + [使用實例：依條件選取種子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
+      + [使用實例：設定欄位替代](delivery/using/use-case-configuring-the-field-substitution.md)
    + A/B 測試 {#a-b-testing}
       + [開始使用 A/B 測試](delivery/using/get-started-a-b-testing.md)
       + [設定 A/B 測試](delivery/using/configuring-a-b-testing.md)
@@ -233,7 +233,7 @@ ht-degree: 100%
    + 內容管理模組 {#content-management}
       + [關於內容管理](delivery/using/about-content-management.md)
       + [內容管理員資源與原則](delivery/using/content-manager-resources-and-principles.md)
-      + [使用實例：建立內容管理](delivery/using/use-case--creating-content-management.md)
+      + [使用實例：建立內容管理](delivery/using/use-case-creating-content-management.md)
       + [資料方案](delivery/using/data-schemas.md)
       + [輸入表單](delivery/using/input-forms.md)
       + [格式](delivery/using/formatting.md)
@@ -253,7 +253,7 @@ ht-degree: 100%
       + [管理文件和資產](campaign/using/marketing-campaign-assets.md)
       + [設定及管理核准](campaign/using/marketing-campaign-approval.md)
       + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
-      + [供應商、庫存和預算](campaign/using/providers--stocks-and-budgets.md)
+      + [供應商、庫存和預算](campaign/using/providers-stocks-and-budgets.md)
    + Campaign 最佳化 {#campaign-optimization}
       + [關於行銷活動態樣](campaign-opt/using/about-campaign-typologies.md)
       + [壓力規則](campaign-opt/using/pressure-rules.md)
@@ -320,7 +320,7 @@ ht-degree: 100%
       + [開始使用網路應用程式](web/using/about-web-applications.md)
       + [建立新的網站應用程式](web/using/creating-a-new-web-application.md)
       + [設計網站應用程式](web/using/designing-a-web-application.md)
-      + [使用案例：建立概覽](web/using/use-cases--creating-overviews.md)
+      + [使用案例：建立概覽](web/using/use-cases-creating-overviews.md)
       + [追蹤網站應用程式](web/using/translating-a-web-application.md)
       + [追蹤網站應用程式的瀏覽次數](web/using/tracking-a-web-application.md)
       + [網站應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
@@ -331,7 +331,7 @@ ht-degree: 100%
       + [編輯內容](web/using/editing-content.md)
       + [內容編輯最佳實務](web/using/content-editing-best-practices.md)
       + [設定登陸頁面](web/using/creating-a-landing-page.md)
-      + [使用實例：建立電子郵件傳遞](web/using/use-case--creating-an-email-delivery.md)
+      + [使用實例：建立電子郵件傳遞](web/using/use-case-creating-an-email-delivery.md)
    + 網路表單 {#web-forms}
       + [開始使用網路表單](web/using/about-web-forms.md)
       + [使用網路表單範本](web/using/using-a-web-form-template.md)
@@ -344,16 +344,16 @@ ht-degree: 100%
       + [發佈網路表單](web/using/publishing-a-web-form.md)
       + [定義網路表單屬性](web/using/defining-web-forms-properties.md)
       + [翻譯網路表單](web/using/translating-a-web-form.md)
-      + [使用實例：網路表單](web/using/use-cases--web-forms.md)
+      + [使用實例：網路表單](web/using/use-cases-web-forms.md)
 + 建立線上調查{#online-surveys}
    + [開始使用意見調查](surveys/using/about-surveys.md)
    + [建立調查的關鍵步驟](surveys/using/getting-started-with-surveys.md)
    + [設計調查](surveys/using/building-a-survey.md)
    + [管理答案](surveys/using/managing-answers.md)
-   + [發佈、追蹤及使用收集的資料](surveys/using/publish--track-and-use-collected-data.md)
+   + [發佈、追蹤及使用收集的資料](surveys/using/publish-track-and-use-collected-data.md)
    + [設定調查](surveys/using/configuring-surveys.md)
-   + [使用實例：建立轉介表單](surveys/using/use-case--creating-a-refer-a-friend-form.md)
-   + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+   + [使用實例：建立轉介表單](surveys/using/use-case-creating-a-refer-a-friend-form.md)
+   + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 整合 Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
    + 對象分享 {#audience-sharing}
@@ -437,7 +437,7 @@ ht-degree: 100%
       + [等待](workflow/using/wait.md)
       + [時間限制](workflow/using/time-constraint.md)
       + [子工作流程](workflow/using/sub-workflow.md)
-      + [跳至 (起點和終點)](workflow/using/jump--start-point-and-end-point-.md)
+      + [跳至 (起點和終點)](workflow/using/jump-start-point-and-end-point.md)
       + [外部訊號](workflow/using/external-signal.md)
       + [核准](workflow/using/approval.md)
       + [警報](workflow/using/alert.md)
@@ -450,11 +450,11 @@ ht-degree: 100%
       + [重複傳送](workflow/using/recurring-delivery.md)
       + [跨頻道傳遞](workflow/using/cross-channel-deliveries.md)
       + [本地核准](workflow/using/local-approval.md)
-      + [資料載入 (RDBMS)](workflow/using/data-loading--rdbms-.md)
-      + [載入 (SOAP)](workflow/using/loading--soap-.md)
-      + [資料載入 (檔案)](workflow/using/data-loading--file-.md)
+      + [資料載入 (RDBMS)](workflow/using/data-loading-rdbms.md)
+      + [載入 (SOAP)](workflow/using/loading-soap.md)
+      + [資料載入 (檔案)](workflow/using/data-loading-file.md)
       + [內容管理](workflow/using/content-management.md)
-      + [資料擷取 (檔案)](workflow/using/extraction--file-.md)
+      + [資料擷取 (檔案)](workflow/using/extraction-file.md)
       + [SQL 程式碼和 JavaScript 程式碼](workflow/using/sql-code-and-javascript-code.md)
       + [SQL 資料管理](workflow/using/sql-data-management.md)
       + [Nlserver 模組](workflow/using/nlserver-module.md)
@@ -505,7 +505,7 @@ ht-degree: 100%
       + [高級參數](workflow/using/advanced-parameters.md)
       + [JavaScript 指令碼和範本](workflow/using/javascript-scripts-and-templates.md)
       + [工作流程中的 JavaScript 程式碼範例](workflow/using/javascript-in-workflows.md)
-      + [存取外部資料庫](workflow/using/accessing-an-external-database--fda-.md)
+      + [存取外部資料庫](workflow/using/accessing-an-external-database-fda.md)
       + [管理權限](workflow/using/managing-rights.md)
       + [變更活動影像](workflow/using/managing-activity-images.md)
       + [管理時區](workflow/using/managing-time-zones.md)
@@ -543,8 +543,8 @@ ht-degree: 100%
       + [透過工作流程整合優惠](interaction/using/integrating-an-offer-via-a-workflow.md)
    + 單一互動 {#unitary-interactions}
       + [關於傳入頻道](interaction/using/about-inbound-channels.md)
-      + [透過 JavaScript 進行整合 (用戶端)](interaction/using/integration-via-javascript--client-side-.md)
-      + [透過 SOAP 整合 (伺服器端)](interaction/using/integration-via-soap--server-side-.md)
+      + [透過 JavaScript 進行整合 (用戶端)](interaction/using/integration-via-javascript-client-side.md)
+      + [透過 SOAP 整合 (伺服器端)](interaction/using/integration-via-soap-server-side.md)
       + [匿名互動](interaction/using/anonymous-interactions.md)
    + 追蹤優惠 {#tracking-offers}
       + [優惠主張歷史記錄](interaction/using/offer-proposition-history.md)
@@ -556,7 +556,7 @@ ht-degree: 100%
       + [建立測試環境](interaction/using/creating-a-test-environment.md)
       + [修改標準引擎行為](interaction/using/hooks.md)
       + [分佈式架構](interaction/using/distributed-architectures.md)
-      + [資料緩衝區設定](installation/using/interaction---data-buffer.md)
+      + [資料緩衝區設定](installation/using/interaction-data-buffer.md)
    + 使用實例 {#case-study}
       + [簡報規則](interaction/using/presentation-rules.md)
       + [傳入頻道上的優惠](interaction/using/offers-on-an-inbound-channel.md)
@@ -590,7 +590,7 @@ ht-degree: 100%
       + 託管模型{#hosting-models-lp}
          + [行銷活動託管模型](installation/using/hosting-models.md)
          + [功能對照表](installation/using/capability-matrix.md)
-   + 部署類型 {#deployment-types-}
+   + 部署類型 {#deployment-types}
       + [關於部署類型](installation/using/about-deployment-types.md)
       + [獨立部署](installation/using/standalone-deployment.md)
       + [標準部署](installation/using/standard-deployment.md)
@@ -611,12 +611,12 @@ ht-degree: 100%
          + [應用程式伺服器](installation/using/application-server.md)
          + [傳訊伺服器](installation/using/messaging-server.md)
          + [網路設定](installation/using/network-configuration.md)
-      + Windows 上的 Campaign {#installing-campaign-in-windows-}
+      + Windows 上的 Campaign {#installing-campaign-in-windows}
          + [開始使用](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [安裝伺服器](installation/using/installing-the-server.md)
          + [整合至網路伺服器 (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Windows 用戶端控制台的可用性](installation/using/client-console-availability-for-windows.md)
-      + Linux 上的 Campaign{#installing-campaign-in-linux-}
+      + Linux 上的 Campaign{#installing-campaign-in-linux}
          + [先決條件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [安裝套件](installation/using/installing-packages-with-linux.md)
          + [整合至網站伺服器](installation/using/integration-into-a-web-server-for-linux.md)
@@ -803,7 +803,7 @@ ht-degree: 100%
    + 設定網路追蹤 {#setting-up-web-tracking}
       + [關於網路追蹤](configuration/using/about-web-tracking.md)
       + [網路追蹤模式](configuration/using/web-tracking-mode.md)
-      + [網路追蹤標籤：定義](configuration/using/web-tracking-tag--definition.md)
+      + [網路追蹤標籤：定義](configuration/using/web-tracking-tag-definition.md)
       + [設定階段](configuration/using/setup-stages.md)
       + [其他參數](configuration/using/additional-parameters.md)
       + [建立網路追蹤標籤](configuration/using/creating-web-tracking-tags.md)

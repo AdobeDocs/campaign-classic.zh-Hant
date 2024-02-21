@@ -6,16 +6,16 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 # 存取行銷活動{#accessing-marketing-campaigns}
 
-Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有行銷活動都可從統一的控制中心進行管理。 
+Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有行銷活動都可從統一的控制中心進行管理。
 
 ## 工作區基本知識 {#workspace-basics}
 
@@ -142,7 +142,7 @@ Campaign可讓您管理一組方案，由各種行銷活動組成。 每個行�
 行銷活動是透過行銷活動範本建立。 您可以設定已選取某些選項且已儲存其他設定的可重複使用範本。 每個行銷活動皆提供下列功能：
 
 * 引用 [檔案和資源](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)：您可以將檔案與行銷活動建立關聯（簡介、報告、影像等）。 支援所有檔案格式。
-* 定義成本：Adobe Campaign可讓您針對每個促銷活動定義 [成本輸入與成本計算結構](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) ，可在建立行銷活動時使用。 例如：列印成本、使用外部代理商、房間租金。
+* 定義成本：Adobe Campaign可讓您針對每個促銷活動定義 [成本輸入與成本計算結構](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) ，可在建立行銷活動時使用。 例如：列印成本、使用外部代理商、房間租金。
 * 定義目標：您可以定義行銷活動的可量化目標，例如訂閱者人數、業務量等。 此資訊稍後會用於行銷活動報表。
 * 管理 [種子地址](../../delivery/using/about-seed-addresses.md) 和 [控制組](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * 管理核准：您可以選取要核准的處理方式，並視需要選取複查操作員或操作員群組。 [了解更多](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)

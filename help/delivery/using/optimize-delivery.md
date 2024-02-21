@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
 role: User
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 9%
+source-wordcount: '736'
+ht-degree: 4%
 
 ---
 
@@ -40,11 +40,11 @@ ht-degree: 9%
 
 **秘訣**：使用與您品牌網站對應的透明寄件者地址。 例如，TravelAgency公司管理Valentino連鎖酒店。 其擁有其網站的valentino.com網域。 為了推廣巴黎的Valentino飯店，它使用paris.valentino.com子網域。 因此，相關寄件者地址可以是hotel@paris.valentino.com。
 
-## 傳遞性管理 {#deliverability-management}
+## 傳遞能力管理 {#deliverability-management}
 
 若要在不退回或標示為垃圾訊息的情況下觸及收件者的收件匣，您需要改善訊息的可傳遞率。
 
-* 什麼是傳遞性?
+* 什麼是傳遞能力？
 
    * 它是指決定電子郵件為收件者伺服器接受之能力的電子郵件因素。 ISP （網際網路服務提供者）會篩選掉他們認為是垃圾郵件的電子郵件，或封鎖影像的下載。 如果他們判斷某個網域傳送的電子郵件數量過多，就會限制其將接受來自該寄件者的電子郵件數量。
 
@@ -64,7 +64,7 @@ ht-degree: 9%
 
 * 如果您有無效地址清單，Adobe建議透過將其匯入隔離表格 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
-* 在傳遞分析期間，預設情況下會排除其地址被隔離的收件者：他們並非目標收件者。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。舉例來說，當收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [了解更多](#identifying-quarantined-addresses-for-a-delivery)
+* 在傳遞分析期間，預設情況下會排除其地址被隔離的收件者：他們並非目標收件者。 這會加快傳送速度，因為錯誤率對傳送速度有顯著影響。 舉例來說，當收件匣已滿或地址不存在時，可以隔離電子郵件地址。 [了解更多](#identifying-quarantined-addresses-for-a-delivery)
 
 * Adobe Campaign會根據傳回的錯誤型別管理錯誤地址。 如需詳細資訊，請參閱[本章節](understanding-quarantine-management.md)。
 
@@ -77,4 +77,4 @@ ht-degree: 9%
 
 為避免傳送訊息至無效地址、限制不當通訊並改善寄件者信譽，Adobe建議對訂閱後確認實施雙重選擇加入機制。 這有助於確保收件者有意識地訂閱。
 
-有關實施此機制的詳細資訊，請參見 [本節](../../web/using/use-cases--web-forms.md).
+有關實施此機制的詳細資訊，請參見 [本節](../../web/using/use-cases-web-forms.md).

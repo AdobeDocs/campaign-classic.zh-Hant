@@ -8,14 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
-# 配置 FDA 連接器 {#specific-configurations-by-database-type}
+# 設定FDA聯結器 {#specific-configurations-by-database-type}
 
 
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 1. 在Adobe Campaign中建立外部資料庫的結構描述。 這可讓您識別外部資料庫的資料結構。 [了解更多](../../installation/using/creating-data-schema.md)
 1. 如有需要，請從先前建立的綱要建立新的目標對應。 如果傳送的收件者來自外部資料庫，則需要此專案。 此實施隨附與訊息個人化相關的限制。 [了解更多](../../installation/using/defining-data-mapping.md)
 
-建立資料結構描述後，即可在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本章節](../../workflow/using/accessing-an-external-database--fda-.md)。
+建立資料結構描述後，即可在Adobe Campaign工作流程中處理資料。 如需詳細資訊，請參閱[本章節](../../workflow/using/accessing-an-external-database-fda.md)。
 
 ## 資料庫特定組態 {#fda-specific-configuration}
 

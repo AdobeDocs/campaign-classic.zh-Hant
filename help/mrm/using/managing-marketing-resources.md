@@ -3,12 +3,12 @@ product: campaign
 title: 管理行銷資源
 description: 瞭解如何管理行銷資源
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1393'
 ht-degree: 1%
@@ -195,7 +195,7 @@ Adobe Campaign可讓您管理和追蹤行銷活動生命週期中涉及的行銷
 
 >[!NOTE]
 >
->如需Adobe Campaign中庫存管理的詳細資訊，請參閱 [庫存管理](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>如需Adobe Campaign中庫存管理的詳細資訊，請參閱 [庫存管理](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 若要將行銷資源與庫存相關聯，請編輯庫存對應並編輯或建立庫存。 新增庫存行並選取對應的行銷資源。
 

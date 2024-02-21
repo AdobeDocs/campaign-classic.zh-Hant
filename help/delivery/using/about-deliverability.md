@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 9%
+source-wordcount: '668'
+ht-degree: 7%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe Campaign提供數個工具，用於追蹤及改善平台的可遞送性效
 
 為避免傳送訊息至無效地址、限制不當通訊並改善寄件者信譽，Adobe建議實作雙重選擇加入機制。 此方法可讓您確保收件者會刻意訂閱。
 
-如需詳細資訊，請參閱[建立雙重選擇加入的訂閱表單](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
+如需詳細資訊，請參閱[建立雙重選擇加入的訂閱表單](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)。
 
 如需收集客戶資料時最佳作法的詳細資訊，請參閱 [Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
 

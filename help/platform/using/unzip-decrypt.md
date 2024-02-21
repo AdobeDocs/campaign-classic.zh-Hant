@@ -9,17 +9,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 11%
+source-wordcount: '702'
+ht-degree: 9%
 
 ---
 
 
 # 解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign可讓您匯入壓縮或加密的檔案。 在檔案可在中讀取之前 [資料載入（檔案）](../../workflow/using/data-loading--file-.md) 活動，您可以定義解壓縮或解密檔案的預先處理。
+Adobe Campaign可讓您匯入壓縮或加密的檔案。 在檔案可在中讀取之前 [資料載入（檔案）](../../workflow/using/data-loading-file.md) 活動，您可以定義解壓縮或解密檔案的預先處理。
 
 >[!IMPORTANT]
 >
@@ -52,7 +52,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在檔案可在中讀�
 
 **相關主題：**
 
-* [資料載入（檔案）活動](../../workflow/using/data-loading--file-.md).
+* [資料載入（檔案）活動](../../workflow/using/data-loading-file.md).
 * [壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ## 使用案例：匯入使用控制面板產生的金鑰加密的資料 {#use-case-gpg-decrypt}
@@ -85,7 +85,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在檔案可在中讀�
 
    有關如何設定活動的全域概念，請參閱 [本節](../../workflow/using/file-transfer.md).
 
-1. 開啟 **[!UICONTROL Data loading (file)]** 活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念，請參閱 [本節](../../workflow/using/data-loading--file-.md).
+1. 開啟 **[!UICONTROL Data loading (file)]** 活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念，請參閱 [本節](../../workflow/using/data-loading-file.md).
 
    為活動新增前置處理階段，以便解密傳入的資料。 若要這麼做，請選取 **[!UICONTROL Pre-process the file]** 選項，然後將此解密命令複製並貼到 **[!UICONTROL Command]** 欄位：
 

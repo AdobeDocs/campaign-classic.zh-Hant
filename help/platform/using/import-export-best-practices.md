@@ -9,10 +9,10 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -61,8 +61,8 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 **相關主題：**
 
-* [資料載入（檔案）活動](../../workflow/using/data-loading--file-.md)
-* [資料擷取（檔案）活動](../../workflow/using/extraction--file-.md)
+* [資料載入（檔案）活動](../../workflow/using/data-loading-file.md)
+* [資料擷取（檔案）活動](../../workflow/using/extraction-file.md)
 
 ## 以差異模式匯入 {#importing-in-delta-mode}
 

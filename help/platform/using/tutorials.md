@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '344'
 ht-degree: 68%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 68%
 透過檢查下列使用案例和範例，進一步了解 Adobe Campaign：
 
 * [針對訂閱者的電子郵件格式建立篩選器](../../platform/using/use-case.md#creating-a-filter-on-the-email-format-of-subscribers)：了解如何建立以收件者電子郵件格式排序新聞稿訂閱的篩選器。
-* [透過雙重主動加入創建訂閱表單](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)：學習如何傳送訂閱確認請求，以創建雙重主動加入，確保收件者有意願下訂閱。
-* [建立電子郵件傳遞](../../web/using/use-case--creating-an-email-delivery.md)：了解如何使用 Digital Content Editor 建立電子郵件傳遞。
-* [建立概要](../../web/using/use-cases--creating-overviews.md)：建立概要型的網路應用程式，以顯示資料庫中的所有網路應用程式。
+* [透過雙重主動加入創建訂閱表單](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)：學習如何傳送訂閱確認請求，以創建雙重主動加入，確保收件者有意願下訂閱。
+* [建立電子郵件傳遞](../../web/using/use-case-creating-an-email-delivery.md)：了解如何使用 Digital Content Editor 建立電子郵件傳遞。
+* [建立概要](../../web/using/use-cases-creating-overviews.md)：建立概要型的網路應用程式，以顯示資料庫中的所有網路應用程式。
 * [工作流程使用案例](../../workflow/using/about-workflow-use-cases.md)：透過這些使用案例探索使用工作流程的不同方法。
 
 ## 自助式 {#how-to-videos}

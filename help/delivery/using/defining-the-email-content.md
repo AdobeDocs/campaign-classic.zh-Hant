@@ -7,22 +7,22 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
 
 # 定義電子郵件內容 {#defining-the-email-content}
 
-## 發件人 {#sender}
+## 寄件者 {#sender}
 
 若要定義將顯示在已傳送訊息標題中的寄件者名稱與地址，請按一下 **[!UICONTROL From]** 連結。
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-此視窗可讓您輸入建立電子郵件標頭所需的所有資訊。 可將此資訊加以個人化。若要這麼做，請使用輸入欄位右側的按鈕，插入個人化欄位。
+此視窗可讓您輸入建立電子郵件標頭所需的所有資訊。 此資訊可個人化。 若要這麼做，請使用輸入欄位右側的按鈕，插入個人化欄位。
 
 若要瞭解如何插入和使用個人化欄位，請參閱 [關於個人化](about-personalization.md) 區段。
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 * 若要匯入HTML內容，請使用 **[!UICONTROL Open]** 按鈕。 您也可以將原始程式碼直接貼到 **[!UICONTROL Source]** 子標籤。
 
-  如果您使用 [數位內容編輯器](../../web/using/about-campaign-html-editor.md) (DCE)，請參閱 [選取內容範本](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  如果您使用 [數位內容編輯器](../../web/using/about-campaign-html-editor.md) (DCE)，請參閱 [選取內容範本](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
