@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 915b550c28c8d7dd9c29ce5142a4a835a39019b4
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 96%
+source-wordcount: '764'
+ht-degree: 92%
 
 ---
 
@@ -41,9 +41,7 @@ ht-degree: 96%
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x （僅適用於混合環境）</p>
 <p>7.x</p>
-<p><strong>重要：</strong>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。</p>
 </td>
 </tr>
 <tr>
@@ -58,7 +56,6 @@ ht-degree: 96%
 <td>
 <p>8.x</p>
 <p>7.x</p>
-<p><strong>重要：</strong>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。</p>
 </td>
 </tr>
 <tr>
@@ -70,6 +67,10 @@ ht-degree: 96%
 </tr>
 </tbody>
 </table>
+
+>[!NOTE]
+>
+>如果您使用RHEL，您必須願意停用SELinux，或讓架構設計人員編寫自訂SELinux規則，以檢查啟用的SELinux是否不會導致Campaign作業問題。
 
 ## 網頁伺服器{#WebServers}
 
