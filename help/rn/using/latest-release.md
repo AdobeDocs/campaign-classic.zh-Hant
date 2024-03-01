@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: ht
-source-wordcount: '2295'
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+workflow-type: tm+mt
+source-wordcount: '2278'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ _2022 年 11 月 21 日_
 
 ### 其他變更  {#release-7-3-2-other}
 
-* 網頁記錄已改善：現在只會針對具有管理員權限的使用者顯示 `logonEscalation` 警告。 (NEO-47167)
+<!--* Web logs have been improved: `logonEscalation` warnings are now only displayed for users with admin privileges. (NEO-47167)-->
 * 為避免錯誤， **收集熱度圖服務的資料** (collectDataHeatMapService) 工作流程現在預設為停止。 (NEO-33959)
 * 已實施各種改善，以最佳化行銷活動儀表板的 CPU 使用量。 (NEO-46417)
 * 為避免當機，已移除 loadLibraryDebug JS 方法。 (NEO-46968)
