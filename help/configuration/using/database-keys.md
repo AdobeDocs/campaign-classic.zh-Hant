@@ -5,7 +5,7 @@ description: 瞭解資料結構中的金鑰管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -28,7 +28,6 @@ ht-degree: 2%
 ```
 
 當金鑰是結構描述中第一個要填入的金鑰，或金鑰包含 `internal` 屬性設為「true」。
-
 
 下列規則適用於機碼：
 
