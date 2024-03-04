@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: 關於Adobe Campaign Classic中的結構描述參考
-description: 瞭解如何設定擴充功能綱要，以擴充Adobe Campaign Classic資料庫的概念資料模型
+title: 開始使用Adobe Campaign中的結構描述
+description: 瞭解如何使用方案並延伸Adobe Campaign資料庫的概念資料模型
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 9%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
-# 關於方案參考{#about-schema-reference}
+# 開始使用結構描述 {#about-schema-reference}
+
+## 什麼是結構描述 {#what-is-a-schema}
 
 本章說明如何設定擴充功能綱要，以擴充Adobe Campaign資料庫的概念資料模型。
 
-如需Campaign內建表格及其互動的詳細資訊，請參閱 [Campaign Classic資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html).
+如需Campaign內建表格及其互動的詳細資訊，請參閱 [Campaign Classic資料模型](about-data-model.md).
 
-並以 XML 描述了應用程式中資料的實體和邏輯結構。它會遵循Adobe Campaign特有的語法，稱為 **綱要**.
-
-綱要是與資料庫表格相關聯的XML檔案。 它會定義資料結構，並描述表格的SQL定義：
+在Adobe Campaign中，應用程式中所攜帶資料的實體和邏輯結構會以XML進行說明。 A **綱要** 是與資料庫表格相關聯的XML檔案。 它會定義資料結構，並描述表格的SQL定義：
 
 * 資料表的名稱
 * 欄位

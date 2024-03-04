@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2538'
 ht-degree: 99%
 
 ---
@@ -740,8 +740,8 @@ ht-degree: 99%
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
       + [最佳實務](configuration/using/data-model-best-practices.md)
-   + 方案參考 {#schema-reference}
-      + [關於方案參考](configuration/using/about-schema-reference.md)
+   + 使用方案 {#schema-reference}
+      + [開始使用結構描述](configuration/using/about-schema-reference.md)
       + [方案結構](configuration/using/schema-structure.md)
       + [資料庫對應](configuration/using/database-mapping.md)
       + 元素和屬性 {#elements-attributes}

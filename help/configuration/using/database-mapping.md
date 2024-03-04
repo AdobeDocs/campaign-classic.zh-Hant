@@ -6,18 +6,18 @@ feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1984'
 ht-degree: 0%
 
 ---
 
 # 資料庫對應{#database-mapping}
 
-範例結構描述的SQL對應提供下列XML檔案：
+說明的範例綱要的SQL對應 [在此頁面中](schema-structure.md) 產生下列XML檔案：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
   <enumeration basetype="byte" name="gender">    
     <value label="Not specified" name="unknown" value="0"/>    
@@ -38,27 +38,27 @@ ht-degree: 0%
 
 ## 說明 {#description}
 
-結構描述的根元素已不存在 **`<srcschema>`**，但 **`<schema>`**.
+結構的根元素已變更為 **`<srcschema>`** 至 **`<schema>`**.
 
-這會將我們帶到另一種型別的檔案，該檔案是從來源結構描述自動產生的，簡稱為結構描述。 Adobe Campaign應用程式將使用此結構描述。
+這種其他型別的檔案會自動從來源結構描述產生，並僅被簡稱為結構描述。
 
 SQL名稱是根據元素名稱和型別自動決定的。
 
 SQL命名規則如下：
 
-* 表格：串連綱要名稱空間和名稱
+* **表格**：串連結構描述名稱空間和名稱
 
   在我們的範例中，表格的名稱是透過以下結構描述的主要元素輸入： **sqltable** 屬性：
 
-  ```
+  ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* 欄位：前面有根據型別定義之前置詞的元素名稱（&#39;i&#39;代表整數，&#39;d&#39;代表雙精度浮點數，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等）
+* **欄位**：前面有根據型別定義之前置詞的元素名稱：「i」代表整數，「d」代表雙精度，「s」代表字串，「ts」代表日期等。
 
   欄位名稱是透過 **sqlname** 每個型別的屬性 **`<attribute>`** 和 **`<element>`**：
 
-  ```
+  ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
   ```
 
@@ -68,7 +68,7 @@ SQL命名規則如下：
 
 用來建立從擴充綱要產生之表格的SQL命令檔如下：
 
-```
+```sql
 CREATE TABLE CusRecipient(
   iGender NUMERIC(3) NOT NULL Default 0,   
   sCity VARCHAR(50),   
@@ -78,12 +78,12 @@ CREATE TABLE CusRecipient(
 
 SQL欄位限制如下：
 
-* 數值和日期欄位中沒有null值，
-* 數值欄位會初始化為0。
+* 數值和日期欄位中沒有null值
+* 數值欄位已初始化為0
 
 ## XML欄位 {#xml-fields}
 
-依預設，任何輸入的 **`<attribute>`** 和 **`<element>`** 元素對應至資料結構描述表格的SQL欄位。 不過，您可以用XML來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格之備忘錄欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
+根據預設，任何  **`<attribute>`** 和 **`<element>`** -typed元素對應到資料結構描述表格的SQL欄位。 不過，您可以用XML來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格之備忘錄欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
 
 若要以XML填入欄位，您必須新增 **xml** 對相關元素具有「true」值的屬性。
 
@@ -91,21 +91,19 @@ SQL欄位限制如下：
 
 * 多行註解欄位：
 
-  ```
+  ```sql
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
 * HTML格式的資料說明：
 
-  ```
+  ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
   「html」型別可讓您將HTML內容儲存在CDATA標籤中，並在Adobe Campaign使用者端介面中顯示特殊的HTML編輯檢查。
 
-使用XML欄位可讓您新增欄位，而不需要修改資料庫的實體結構。 另一個優點是，您使用的資源較少（配置給SQL欄位的大小、限制每個表格的欄位數等）。
-
-主要缺點是無法索引或篩選XML欄位。
+使用XML欄位來新增欄位，而不需修改資料庫的實體結構。 另一個優點是，您使用的資源較少（配置給SQL欄位的大小、限制每個表格的欄位數等）。 不過，請注意，您無法索引或篩選XML欄位。
 
 ## 索引欄位 {#indexed-fields}
 
@@ -113,7 +111,7 @@ SQL欄位限制如下：
 
 從資料結構描述的主要元素宣告索引。
 
-```
+```sql
 <dbindex name="name_of_index" unique="true/false">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -123,23 +121,21 @@ SQL欄位限制如下：
 
 索引遵循下列規則：
 
-* 索引可以參考表格中的一或多個欄位。
-* 如果符合下列條件，則索引在所有欄位中可以是唯一的（以避免重複） **獨特** 屬性包含「true」值。
-* 索引的SQL名稱是由表格的SQL名稱和索引的名稱所決定。
+* 索引可以參考表格中的一或多個欄位
+* 如果符合下列條件，則索引在所有欄位中可以是唯一的（以避免重複） **獨特** 屬性包含「true」值
+* 索引的SQL名稱是由表格的SQL名稱和索引的名稱所決定
 
 >[!NOTE]
 >
->作為標準，索引是從結構描述的主要元素宣告的第一個元素。
-
->[!NOTE]
+>* 作為標準，索引是從結構描述的主要元素宣告的第一個元素。
 >
->索引是在表格對應期間自動建立（標準或FDA）。
+>* 索引是在表格對應期間自動建立（標準或FDA）。
 
-**範例**:
+**範例**：
 
 * 新增索引至電子郵件地址和城市：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="email">
@@ -157,7 +153,7 @@ SQL欄位限制如下：
 
 * 新增唯一索引至「id」名稱欄位：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="id" unique="true">
@@ -180,7 +176,7 @@ SQL欄位限制如下：
 
 從資料結構描述的主要元素中宣告索引鍵。
 
-```
+```sql
 <key name="name_of_key">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -188,25 +184,23 @@ SQL欄位限制如下：
 </key>
 ```
 
-金鑰遵循下列規則：
+下列規則適用於機碼：
 
-* 索引鍵可參考表格中的一或多個欄位。
-* 當索引鍵是結構描述中第一個要填入的索引鍵，或如果索引鍵包含 **內部** 值為「true」的屬性。
-* 每個索引鍵定義都會以隱含方式宣告唯一索引。 可以透過新增以下專案來防止在索引鍵上建立索引： **noDbIndex** 值為「true」的屬性。
-
->[!NOTE]
->
->作為標準，索引鍵是在定義索引後，從結構描述的主要元素宣告的元素。
+* 索引鍵可參考表格中的一或多個欄位
+* 當索引鍵是結構描述中第一個要填入的索引鍵，或如果索引鍵包含 **內部** 值為「true」的屬性
+* 每個索引鍵定義都會以隱含方式宣告唯一索引。 可以透過新增以下專案來防止在索引鍵上建立索引： **noDbIndex** 值為「true」的屬性
 
 >[!NOTE]
 >
->金鑰是在表格對應期間建立（標準或FDA），Adobe Campaign會尋找唯一索引。
+>* 作為標準，索引鍵是在定義索引後，從結構描述的主要元素宣告的元素。
+>
+>* 金鑰是在表格對應期間建立（標準或FDA），Adobe Campaign會尋找唯一索引。
 
-**範例**:
+**範例**：
 
 * 將金鑰新增至電子郵件地址和城市：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="email">
@@ -224,7 +218,7 @@ SQL欄位限制如下：
 
   產生的結構描述：
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
      <dbindex name="email" unique="true">      
@@ -247,7 +241,7 @@ SQL欄位限制如下：
 
 * 在「id」名稱欄位中新增主要或內部索引鍵：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="id" internal="true">
@@ -266,7 +260,7 @@ SQL欄位限制如下：
 
   產生的結構描述：
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
       <key name="email">      
@@ -307,11 +301,11 @@ SQL欄位限制如下：
 
 若要宣告唯一金鑰，請填入 **autopk** 屬性（值為「true」）。
 
-**範例**:
+**範例**：
 
 在來源結構描述中宣告增量金鑰：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient" autopk="true">
   ...
@@ -321,7 +315,7 @@ SQL欄位限制如下：
 
 產生的結構描述：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" autopk="true" pkSequence="XtkNewId" sqltable="CusRecipient"> 
     <dbindex name="id" unique="true">
@@ -370,7 +364,7 @@ SQL欄位限制如下：
 
 在包含透過主要元素連結之表格外部索引鍵的結構描述中，必須宣告連結：
 
-```
+```sql
 <element name="name_of_link" type="link" target="key_of_destination_schema">
   <join xpath-dst="xpath_of_field1_destination_table" xpath-src="xpath_of_field1_source_table"/>
   <join xpath-dst="xpath_of_field2_destination_table" xpath-src="xpath_of_field2_source_table"/>
@@ -412,7 +406,7 @@ SQL欄位限制如下：
 
 與「cus：company」結構描述表格相關的1-N：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     ...
@@ -423,7 +417,7 @@ SQL欄位限制如下：
 
 產生的結構描述：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
@@ -444,7 +438,7 @@ SQL欄位限制如下：
 
 目標(「cus：company」)的延伸結構描述：
 
-```
+```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
   <element name="company" sqltable="CusCompany" autopk="true"> 
     <dbindex name="id" unique="true">     
@@ -475,7 +469,7 @@ SQL欄位限制如下：
 
 在此範例中，我們將宣告指向「nms：address」架構表格的連結。 此聯結是外部聯結，並明確填入收件者的電子郵件地址和連結表格(「nms：address」)的「@address」欄位。
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient"> 
     ...
@@ -490,7 +484,7 @@ SQL欄位限制如下：
 
 與「cus：extension」綱要表格的1-1關係：
 
-```
+```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
@@ -498,7 +492,7 @@ SQL欄位限制如下：
 
 連結至資料夾（「xtk：folder」架構）：
 
-```
+```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
@@ -508,7 +502,7 @@ SQL欄位限制如下：
 
 在此範例中，我們希望透過在連結（「company」到「cus：company」架構）上建立索引鍵 **xlink** （「電子郵件」）表格的屬性和欄位：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <key name="companyEmail"> 
@@ -524,7 +518,7 @@ SQL欄位限制如下：
 
 產生的結構描述：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      

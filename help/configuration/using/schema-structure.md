@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 方案結構
+title: 瞭解Adobe Campaign中的結構描述結構
 description: 方案結構
 feature: Custom Resources
 role: Data Engineer, Developer
@@ -9,18 +9,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1496'
+ht-degree: 1%
 
 ---
 
-# 方案結構{#schema-structure}
+# 瞭解綱要結構 {#schema-structure}
 
-的基本結構 `<srcschema>` 如下所示：
+結構描述的基本結構如下所述。
 
-```
+## 資料方案  {#data-schema}
+
+針對 `<srcschema>`，其結構如下：
+
+```sql
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -63,7 +67,7 @@ ht-degree: 2%
 
 資料結構描述的XML檔案必須包含 **`<srcschema>`** 根元素具有 **名稱** 和 **名稱空間** 屬性來填入結構描述名稱及其名稱空間。
 
-```
+```sql
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -71,7 +75,7 @@ ht-degree: 2%
 
 讓我們使用以下XML內容來說明資料結構的結構：
 
-```
+```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -79,7 +83,7 @@ ht-degree: 2%
 
 及其對應的資料結構：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -102,11 +106,11 @@ ht-degree: 2%
 <element name="recipient">
 ```
 
-元素 **`<attribute>`** 和 **`<element>`** 主元素之後的物件，可讓您定義XML結構中資料專案的位置和名稱。
+此 **`<attribute>`** 和 **`<element>`** 主元素之後的元素用於定義XML結構中資料專案的位置和名稱。
 
 在我們的範例結構描述中，這些類別包括：
 
-```
+```sql
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -115,13 +119,13 @@ ht-degree: 2%
 </element>
 ```
 
-下列規則必須遵守：
+下列規則適用：
 
 * 每個 **`<element>`** 和 **`<attribute>`** 必須透過名稱來識別 **名稱** 屬性。
 
   >[!IMPORTANT]
   >
-  >元素名稱應簡潔，最好是英文，並根據XML命名規則僅包含授權字元。
+  >元素的名稱應簡潔，最好是英文，並且僅包含允許在XML命名規則中的字元。
 
 * 僅限 **`<element>`** 元素可包含 **`<attribute>`** 元素和 **`<element>`** XML結構中的元素。
 * 一個 **`<attribute>`** 元素在「 」中必須有唯一的名稱 **`<element>`**.
@@ -131,7 +135,7 @@ ht-degree: 2%
 
 資料型別是透過 **type** 中的屬性 **`<attribute>`** 和 **`<element>`** 元素。
 
-詳細清單可在的說明中取得 [`<attribute>` 元素](../../configuration/using/schema/attribute.md) 和 [`<element>` 元素](../../configuration/using/schema/element.md))。
+詳細清單可在的說明中取得 [`<attribute>` 元素](../../configuration/using/schema/attribute.md) 和 [`<element>` 元素](../../configuration/using/schema/element.md).
 
 未填入此屬性時， **字串** 是預設的資料型別，除非元素包含子元素。 如果是，則僅用於階層式架構元素(**`<location>`** 元素)。
 
@@ -152,11 +156,11 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >若要包含 **uuid** 非Microsoft SQL Server引擎的欄位，必須新增「newuuid()」函式並使用其預設值完成。
+  >若要包含 **uuid** Microsoft SQL Server以外的RDBMS欄位， `the newuuid()` 函式必須新增並以其預設值完成。
 
 以下是輸入型別的結構描述範例：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -178,92 +182,77 @@ ht-degree: 2%
   <tr> 
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
-   <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>MS SQL</strong><br /> </td> 
+   <td> <strong>oracle</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 字串<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 （NVARCHAR2，若為unicode）<br /> </td> 
-   <td> VARCHAR （NVARCHAR表示unicode）<br /> </td> 
   </tr> 
   <tr> 
    <td> 布林值<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> 數字(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 位元組<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> 數字(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> 短整數<br /> </td> 
+   <td> 短<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> 數字(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> 雙精度浮點數<br /> </td> 
+   <td> 兩次<br /> </td> 
    <td> 雙精確度<br /> </td> 
    <td> 浮點數<br /> </td> 
-   <td> 浮點數<br /> </td> 
   </tr> 
   <tr> 
-   <td> 長整數<br /> </td> 
+   <td> 長<br /> </td> 
    <td> 整數<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
-   <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMBER(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期<br /> </td> 
    <td> 日期<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 日期時間<br /> </td> 
   </tr> 
   <tr> 
    <td> 時間<br /> </td> 
    <td> 時間<br /> </td> 
-   <td> 浮點數<br /> </td> 
    <td> 浮點數<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期時間<br /> </td> 
    <td> 時間戳記<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> MS SQL &lt; 2008： DATETIME<br /> MS SQL &gt;= 2012： DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> 時間戳記<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> MS SQL &lt; 2008： DATETIME<br /> MS SQL &gt;= 2012： DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> 時間跨度<br /> </td> 
    <td> 雙精確度<br /> </td> 
-   <td> 浮點數<br /> </td> 
    <td> 浮點數<br /> </td> 
   </tr> 
   <tr> 
    <td> 備忘錄<br /> </td> 
    <td> 文字<br /> </td> 
    <td> CLOB （Unicode則為NCLOB）<br /> </td> 
-   <td> TEXT （Unicode則為NTEXT）<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> 影像<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -280,37 +269,37 @@ ht-degree: 2%
   >
   >標籤與執行個體的目前語言相關聯。
 
-  **範例**:
+  **範例**：
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  您可以從Adobe Campaign使用者端主控台輸入表單中看到標籤：
+  標籤會顯示在Adobe Campaign使用者端主控台輸入表單中：
 
   ![](assets/d_ncs_integration_schema_label.png)
 
 * 此 **desc** 屬性可讓您輸入詳細說明。
 
-  您可以從Adobe Campaign使用者端主控台主視窗之狀態列的輸入表單看到說明。
+  說明會顯示在Adobe Campaign使用者端主控台主視窗之狀態列的輸入表單中。
 
   >[!NOTE]
   >
   >說明與執行個體的目前語言相關聯。
 
-  **範例**:
+  **範例**：
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
 ### 預設值 {#default-values}
 
-此 **預設** 屬性可讓您定義在內容建立時傳回預設值的運算式。
+使用 **預設** 屬性來定義在內容建立時傳回預設值的運算式。
 
 值必須是符合XPath語言的運算式。 有關詳細資訊，請參閱 [使用XPath參照](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
-**範例**:
+**範例**：
 
 * 目前日期： **default=&quot;GetDate()&quot;**
 * 計數器： **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
@@ -319,9 +308,9 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >在Adobe Campaign使用者端主控台中， **[!UICONTROL Administration>Counters]** 節點用於管理計數器。
+  >在Adobe Campaign使用者端主控台中，瀏覽至 **[!UICONTROL Administration > Counters]** 用來管理計數器的檔案總管資料夾。
 
-若要將預設值連結至欄位，您可以使用 `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+若要將預設值連結至欄位，您可以使用 `<default>`  或  `<sqldefault>`   欄位。
 
 `<default>` ：可讓您在建立實體時，使用預設值預先填寫欄位。 此值不會是預設SQL值。
 
@@ -329,13 +318,13 @@ ht-degree: 2%
 
 ### 分項清單 {#enumerations}
 
-#### 可用分項清單 {#free-enumeration}
+#### 開啟分項清單 {#free-enumeration}
 
-此 **userEnum** 屬性可讓您定義任意分項清單，以記憶並顯示透過此欄位輸入的值。 語法如下：
+此 **userEnum** 屬性可讓您定義開啟的列舉，以儲存及顯示透過此欄位輸入的值。
 
-**userEnum=&quot;列舉名稱&quot;**
+語法如下：
 
-為分項清單指定的名稱可以自由選擇，並與其他欄位共用。
+`userEnum="name of enumeration"`
 
 這些值會顯示在輸入表單的下拉式清單中：
 
@@ -343,7 +332,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在Adobe Campaign使用者端主控台中， **[!UICONTROL Administration > Enumerations]** 節點用於管理分項清單。
+>在Adobe Campaign使用者端主控台中，瀏覽至 **[!UICONTROL Administration > Enumerations]** 檔案總管中用於管理分項清單的資料夾。
 
 #### 設定分項清單 {#set-enumeration}
 
@@ -357,7 +346,7 @@ ht-degree: 2%
 
 資料結構描述中的列舉宣告範例：
 
-```
+```sql
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -369,33 +358,31 @@ ht-degree: 2%
 
 列舉屬性如下：
 
-* **基底型別**：與值相關聯的資料型別，
-* **標籤**：分項清單的說明，
-* **名稱**：分項清單的名稱，
-* **預設**：分項的預設值。
+* **基底型別**：與值相關聯的資料型別
+* **標籤**：分項清單的說明
+* **名稱**：分項清單的名稱
+* **預設**：分項的預設值
 
 列舉值是在下列位置中宣告： **`<value>`** 元素具有以下屬性：
 
-* **名稱**：內部儲存值的名稱，
-* **標籤**：透過圖形介面顯示的標籤。
+* **名稱**：內部儲存值的名稱
+* **標籤**：圖形介面中顯示的標籤
 
 #### Dbenum分項清單 {#dbenum-enumeration}
 
-* 此 **德貝南** 屬性可讓您定義其屬性類似於 **列舉** 屬性。
+*此 **德貝南** 屬性可讓您定義其屬性類似於 **列舉** 屬性。
 
-  然而， **名稱** attribute不會將值儲存在內部，而是儲存程式碼，可讓您擴充相關表格，而不需修改其綱要。
+然而， **名稱** attribute不會將值儲存在內部，而是儲存程式碼，可讓您擴充相關表格，而不需修改其綱要。
 
-  值的定義方式為 **[!UICONTROL Administration>Enumerations]** 節點。
+例如，此分項清單用於指定行銷活動的性質。
 
-  例如，此分項清單用於指定行銷活動的性質。
-
-  ![](assets/d_ncs_configuration_schema_dbenum.png)
+![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### 範例 {#example}
 
 以下是填入屬性的結構描述範例：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -422,7 +409,7 @@ ht-degree: 2%
 
 **範例**：的定義 **`<group>`** 結構描述中的集合元素。
 
-```
+```sql
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -430,7 +417,7 @@ ht-degree: 2%
 
 透過XML內容的投影：
 
-```
+```sql
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -443,7 +430,7 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 元素是以其名稱來指定，而屬性是以字元「@」開頭的名稱來指定。
 
-**範例**:
+**範例**：
 
 * **@email**：選取電子郵件，
 * **location/@city**：選取「城市」屬性於 **`<location>`** 元素
@@ -470,11 +457,11 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 ![](assets/d_ncs_integration_schema_function.png)
 
-**範例**:
+**範例**：
 
 * **GetDate()**：傳回目前日期
-* **年(@created)**：傳回「created」屬性中包含的日期年份。
-* **GetEmailDomain(@email)**：傳回電子郵件地址的網域。
+* **年(@created)**：傳回「created」屬性中包含的日期年份
+* **GetEmailDomain(@email)**：傳回電子郵件地址的網域
 
 ## 透過計算字串建立字串 {#building-a-string-via-the-compute-string}
 
@@ -484,7 +471,7 @@ A **計算字串** 是XPath運算式，用來建構字串，代表與結構描�
 
 **範例**：收件者表格的計算字串。
 
-```
+```sql
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>
