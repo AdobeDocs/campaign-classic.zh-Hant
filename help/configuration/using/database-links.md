@@ -5,10 +5,10 @@ description: 資料庫對應
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '939'
+ht-degree: 2%
 
 ---
 
@@ -222,3 +222,13 @@ ht-degree: 1%
 ```
 
 「companyEmail」名稱金鑰的定義已擴充為「company」連結的外部金鑰。 此索引鍵會在兩個欄位上產生唯一索引。
+
+## 了解更多
+
+瀏覽以下連結以瞭解更多資訊：
+
+* [開始使用結構描述](about-schema-reference.md)
+* [方案結構](schema-structure.md)
+* [資料庫對應](database-mapping.md)
+* [金鑰管理](database-keys.md)
+* [促銷活動資料模型](about-data-model.md)

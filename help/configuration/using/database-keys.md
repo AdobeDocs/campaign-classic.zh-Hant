@@ -5,10 +5,10 @@ description: 瞭解資料結構中的金鑰管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
@@ -180,3 +180,13 @@ Adobe Campaign結構描述中參照的序列(**NmsTrackingLogId** 例如)必須�
 >
 >主鍵設為0的記錄會在建立表格時自動插入。 此記錄用於避免外部聯結，這些外部聯結在磁碟區表格上無效。 依預設，所有外部索引鍵都是以值0初始化，如此一來，當資料專案未填入時，就可以在聯結上傳回結果。
 
+
+## 了解更多
+
+瀏覽以下連結以瞭解更多資訊：
+
+* [開始使用結構描述](about-schema-reference.md)
+* [方案結構](schema-structure.md)
+* [資料庫對應](database-mapping.md)
+* [連結管理](database-links.md)
+* [促銷活動資料模型](about-data-model.md)

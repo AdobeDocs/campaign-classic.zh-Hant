@@ -9,9 +9,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1517'
 ht-degree: 1%
 
 ---
@@ -485,3 +485,14 @@ A **計算字串** 是XPath運算式，用來建構字串，代表與結構描�
 >[!NOTE]
 >
 >如果結構描述不包含計算字串，則計算字串預設會填入結構描述主索引鍵的值。
+
+
+## 了解更多
+
+瀏覽以下連結以瞭解更多資訊：
+
+* [開始使用結構描述](about-schema-reference.md)
+* [資料庫對應](database-mapping.md)
+* [連結管理](database-links.md)
+* [金鑰管理](database-keys.md)
+* [促銷活動資料模型](about-data-model.md)
