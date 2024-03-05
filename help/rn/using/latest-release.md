@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
 workflow-type: tm+mt
-source-wordcount: '2278'
-ht-degree: 100%
+source-wordcount: '2319'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ _2023 年 12 月 5 日_
 * 透過 Campaign Classic v7.3.5，驗證流程已獲得改善並提高安全性。技術操作者現在應使用 Adobe Identity Management System (IMS) 來連線至 Campaign。透過[此技術說明](../../technotes/using/ims-migration.md)了解如何移轉您現有的技術帳戶。
 
 * 此外，為了強化安全性和驗證流程，Adobe Campaign 強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至 Adobe Identity Management System (IMS)。閱讀此[技術說明](../../technotes/using/migrate-users-to-ims.md)，了解如何移轉操作者。
+
+* 現在，當網頁表單具有 **待處理的出版物** 狀態，它不會自動上線。 為避免安全性問題，必須先發佈它，才可變成 **線上** 並可透過網頁瀏覽器中的網頁表單URL存取。 [深入了解](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### 修補程式 {#release-7-3-5-patches}
 
