@@ -4,9 +4,9 @@ description: 瞭解如何將Campaign技術操作者移轉至Adobe Developer主�
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: b2c37e2426d3b6ba5174d4a446320e0f50485a76
+source-git-commit: 17a43a6e2e3ee7a3a2b81545bf96d766e6e97a05
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 0%
 為了強化安全性和驗證流程，從Campaign Classic v7.3.5開始，Campaign Classic的驗證流程正在改善。 技術操作員現在應該使用 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe建議在Campaign v7.3.5中執行此移轉，以便能夠順利移轉至Campaign v8。**
 
 技術運運算元是已針對API整合明確建立的Campaign使用者設定檔。 本文詳細說明透過Adobe Developer主控台將技術運運算元移轉至技術帳戶所需的步驟。
-
 
 ## 您有受到影響嗎？{#ims-impacts}
 
@@ -53,7 +52,7 @@ ht-degree: 0%
 
 * Campaign託管和Managed Services客戶
 
-  針對傳入訊息中心執行個體的API呼叫，在升級至Campaign v7.3.5 （或其他）期間應已建立產品設定檔 [IMS移轉相容版本](#ims-versions-tech))，或在布建執行個體期間。 此產品設定檔名為：
+  針對傳入訊息中心執行個體的API呼叫，產品設定檔（如以下所述）應在升級至Campaign v7.3.5 （或其他）期間建立 [IMS移轉相容版本](#ims-versions-tech))，或在布建執行個體期間。 請注意，如果您沒有看到產品設定檔，請洽詢您的轉換經理或客戶支援，在開始IMS移轉之前建立產品設定檔。 此產品設定檔名為：
 
   `campaign - <your campaign instance> - messagecenter`
 
