@@ -3,16 +3,16 @@ product: campaign
 title: 常用指令
 description: 常用指令
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 6%
+source-wordcount: '421'
+ht-degree: 5%
 
 ---
 
@@ -164,5 +164,5 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 若要取得引數清單，請使用 **-？** 引數： **nlserver設定 — ？**
 >* 若是Oracle資料庫，則不得指定帳戶。 語法如下：
 >
->  nlserver設定 — setdblogin:Oracle:test6@dbserver
+>  `nlserver config -setdblogin:Oracle:test6@dbserver`
 >

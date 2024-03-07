@@ -3,15 +3,15 @@ product: campaign
 title: 在Adobe Campaign中找到Tomcat版本
 description: 瞭解如何確定Adobe Campaign執行個體中使用的內嵌Tomcat Web servlet的目前版本
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -52,11 +52,11 @@ Tomcat內嵌版本的新版本或升級版本只會隨Adobe Campaign本身的新
 
 例如， *ServerInfo.屬性* Adobe Campaign的檔案將包含下列資訊，指出Tomcat v8.5.X：
 
-*server.info=Apache Tomcat/8.5.X*
+*`server.info=Apache Tomcat/8.5.X`*
 
-*server.number=8.5.X.Y*
+*`server.number=8.5.X.Y`*
 
-*server.build=MM DD YYYY HH:MM:SS*
+*`server.built=MM DD YYY HH:MM:SS`*
 
 當您能夠建立用於特定執行個體的Tomcat的精確版本後，它可以幫助您疑難排解Tomcat相關問題。
 

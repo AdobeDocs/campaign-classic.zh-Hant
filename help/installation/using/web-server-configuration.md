@@ -3,15 +3,15 @@ product: campaign
 title: Web伺服器設定
 description: 深入瞭解網頁伺服器設定主要最佳實務
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
   **在Apache上**，編輯/etc/apache2/mods-available/ssl.conf。 範例如下：
 
-   * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
-   * SSLCipherSuite高:MEDIUM:！aNULL：！MD5：！SSLv3：！SSLv2：！TLSv1
+   * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
+   * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
   **在IIS上** (請參閱 [檔案](https://support.microsoft.com/en-us/kb/245030))，執行以下設定：
 

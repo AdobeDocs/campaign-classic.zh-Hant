@@ -3,12 +3,12 @@ product: campaign
 title: 異動訊息傳送架構
 description: 本節說明Adobe Campaign Classic異動訊息傳送架構，以及傳送異動訊息的可用通道
 feature: Transactional Messaging, Message Center, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 1%
+source-wordcount: '1110'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ![](assets/messagecenter_diagram.png)
 
-| 控制例項 | 執行實例 |
+| 控制例項 | 執行執行個體 |
 |--- |--- |
 | Adobe Campaign使用者登入控制執行個體以： <ul><li>建立異動訊息範本</li><li>使用種子清單產生訊息預覽</li><li>顯示報表</li><li>監視執行個體</li></ul> | 執行例項在此用於： <ul><li>接收事件</li><li>將其連結至異動訊息範本</li><li>傳送個人化訊息給每位收件者</li></ul> |
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 >
 >有關必要設定的詳細資訊，請參閱 [使用數個控制例項](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
-## 執行實例 {#execution-instance}
+## 執行執行個體 {#execution-instance}
 
 若要在電腦上安裝執行個體，請選取 **[!UICONTROL Transactional message execution]** 封裝，透過 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** 功能表。 有關詳細資訊，請參閱 [安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md).
 
@@ -157,7 +157,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -222,7 +222,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * **[!UICONTROL Server]** ：輸入您行銷活動的執行例項伺服器URL。
    * **[!UICONTROL Account]** ：輸入用來存取執行個體的帳戶。
    * **[!UICONTROL Password]** ：輸入用來存取執行個體的帳戶密碼。
-   * **[!UICONTROL Data Source]** ：輸入下列語法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Data Source]** ：輸入下列語法 **`nms:extAccount:ID`** 外部資料庫帳戶的執行例項。
 
 1. 建立 **[!UICONTROL Execution instance]** 您的外部帳戶 **行銷** 使用下列設定建立資料同步工作流程的執行個體：
 

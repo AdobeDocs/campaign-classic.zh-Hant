@@ -9,9 +9,9 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '518'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
 * 分隔符號：定位字元或分號
 * 帶有標題的第一行
 * 無字串分隔符號
-* 日期格式： YYYY/MM/DD HH:mm:SS
+* 日期格式： `YYYY/MM/DD HH:mm:SS`
 
 要匯入的檔案範例：
 

@@ -4,10 +4,10 @@ title: 社交行銷
 description: 進一步瞭解社交行銷技術工作流程
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 24%
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 24%
 
 >[!AVAILABILITY]
 >
->:warning: 此功能僅適用於Campaign Classic v7。 [了解更多](../../social/using/about-social-marketing.md)
+>`:warning:` 此功能僅適用於Campaign Classic v7。 [了解更多](../../social/using/about-social-marketing.md)
 
 以下詳述的工作流程會隨 **社交行銷** 模組（預設）。
 
@@ -30,22 +30,22 @@ ht-degree: 24%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Facebook 統計資料的計算</span> <br /> </td> 
+   <td> <span class="uicontrol">計算Facebook統計資料</span> <br /> </td> 
    <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
    <td> 此工作流程會計算與Facebook粉絲互動相關的統計資料。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">正在同步 Facebook 粉絲</span> <br /> </td> 
+   <td> <span class="uicontrol">同步Facebook粉絲</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
    <td> 此工作流程每天早上7:00將Facebook粉絲匯入Adobe Campaign。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">正在同步 Facebook 頁面</span> <br /> </td> 
+   <td> <span class="uicontrol">同步Facebook頁面</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebook</span> <br /> </td> 
    <td> 此工作流程每天早上7:00與Adobe Campaign同步Facebook頁面。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Twitter 統計資料的計算</span> <br /> </td> 
+   <td> <span class="uicontrol">計算Twitter統計資料</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
    <td> 此工作流程會計算連結到X上的轉推和造訪的統計資料(先前稱為Twitter)。<br /> </td> 
   </tr> 

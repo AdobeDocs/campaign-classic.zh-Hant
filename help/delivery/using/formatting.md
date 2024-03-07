@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email Design
 role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 
 內容的屬性和元素以JavaScript物件表示，並遵循來原始檔的結構。
 
-**範例**:
+**範例**：
 
 * **內容。@name**：擷取主要元素的「name」屬性值
 * **內容。@`['name']`**：等同於 **內容。@name** 語法
@@ -82,7 +82,7 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 
 程式語言的所有功能（變數、回圈、條件測試、函式等） )可用來建構輸出檔案。 可存取SOAP API以擴充輸出檔案。
 
-範例:
+範例：
 
 * 條件式測試：
 
@@ -457,7 +457,7 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 此 **`<xsl:text>`** 指示詞和 **disable-output-escaping=&quot;yes&quot;** 選項可讓您為個人化欄位或條件測試插入JavaScript標籤。
 
-範例:
+範例：
 
 * 顯示「html」型別欄位的內容：
 
@@ -522,7 +522,7 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 這兩個選項可透過 **[!UICONTROL Administration > Platform > Options]** 資料夾。
 
-**範例**:
+**範例**：
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x：/images/&quot;
@@ -565,7 +565,7 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 ## 日期顯示 {#date-display}
 
-在XML輸入檔案中，日期會以內部XML格式儲存： **YYYY/MM/DD HH:MM:SS** (範例2018/10/01 12:23:30)。
+在XML輸入檔案中，日期會以內部XML格式儲存： **`YYYY/MM/DD HH:MM:SS`** (範例 `2018/10/01 12:23:30`)。
 
 Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能，如下所述。
 
@@ -573,7 +573,7 @@ Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能，如�
 
 若要以所需格式顯示日期，Adobe Campaign提供 **formatDate** 將日期內容作為輸入並使用以下語法指定輸出格式的字串的函式： **%4Y/%2M/%2D %2H%2N%2S**
 
-範例:
+範例：
 
 * 在中顯示日期 **31/10/2018** 格式：
 
@@ -604,7 +604,7 @@ Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能，如�
 
 XSLT語法中沒有標準的日期管理函式。 若要以所需格式顯示日期，Adobe Campaign提供外部功能 **date-format**. 此函式將日期的內容當作輸入，並使用下列語法指定輸出格式的字串： **%4Y/%2M/%2D %2H%2N%2S**
 
-範例:
+範例：
 
 * 若要在 **01/10/2018** 格式：
 

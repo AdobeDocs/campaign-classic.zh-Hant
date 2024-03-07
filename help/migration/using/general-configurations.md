@@ -3,16 +3,16 @@ product: campaign
 title: 一般設定
 description: 一般設定
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2607'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ nlserver config -internalpassword
 
 * 如果密碼為空，追蹤就不再有效。 如果是這種情況，錯誤訊息會通知您並要求您重新配置。
 * 使用者密碼不再儲存在 **xtk：sessionInfo** 綱要。
-* 現在必須使用管理許可權 **xtk:builder:EvaluateJavaScript** 和 **xtk:builder:EvaluateJavaScriptTemplate** 函式。
+* 現在必須使用管理許可權 **`xtk:builder:EvaluateJavaScript`** 和 **`xtk:builder:EvaluateJavaScriptTemplate`** 函式。
 
 某些現成可用的結構描述已經過修改，現在預設只有具備寫入許可權的運運算元才能存取， **管理員** 許可權：
 
@@ -396,7 +396,7 @@ allowSQLInjection="false"
 
 在 `<subQuery>` 元素，以參照主要欄位的「欄位」 `<queryDef>`   元素，請使用下列語法： `[../@field]`
 
-範例:
+例如：
 
 ```
 <queryDef operation="select" schema="xtk:jobLog" startPath="/" xtkschema="xtk:queryDef">
@@ -461,7 +461,7 @@ allowSQLInjection="false"
 
   >[!IMPORTANT]
   >
-  >如果您選取此解決模式，新版本中的修補程式可能會遺失。 因此，強烈建議不要使用此選項，或僅保留給專家運運算元。
+  如果您選取此解決模式，新版本中的修補程式可能會遺失。 因此，強烈建議不要使用此選項，或僅保留給專家運運算元。
 
 如果您選擇手動解決衝突，請按照以下步驟進行：
 
@@ -492,7 +492,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 ## 互動 {#interaction}
 
-### 必要條件 {#prerequisites}
+### 先決條件 {#prerequisites}
 
 **升級後之前**&#x200B;中，您必須刪除6.02版中所有在v7中不再存在的結構描述參考。
 
@@ -508,13 +508,13 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 >[!IMPORTANT]
 >
->如果某些使用已設定選件的傳送會在移轉後傳送，您必須在v7中刪除並重新建立所有這些傳送。 如果您無法這麼做，系統會提供「相容性模式」。 不建議使用此模式，因為您將無法受益於Interaction v7中的所有新功能。 這是一種轉換模式，可讓您在實際6.1移轉之前完成進行中的行銷活動。 如需有關此模式的詳細資訊，請連絡我們。
+如果某些使用已設定選件的傳送會在移轉後傳送，您必須在v7中刪除並重新建立所有這些傳送。 如果您無法這麼做，系統會提供「相容性模式」。 不建議使用此模式，因為您將無法受益於Interaction v7中的所有新功能。 這是一種轉換模式，可讓您在實際6.1移轉之前完成進行中的行銷活動。 如需有關此模式的詳細資訊，請連絡我們。
 
 移動指令碼的範例(**interactionTo610_full_XX.js**)中提供 **移轉** 在Adobe Campaign v7資料夾內建立資料夾。 此檔案為使用者端顯示指令碼範例，每個選件使用單一電子郵件呈現(選件 **[!UICONTROL htmlSource]** 和 **[!UICONTROL textSource]** 欄位)。 中的內容 **NmsEmailOfferView** 表格已移至選件表格。
 
 >[!NOTE]
 >
->使用此指令碼無法讓您受益於「內容管理」和「演算函式」選項。 若要受益於這些功能，您必須重新思考目錄選件，尤其是選件內容和設定空間。
+使用此指令碼無法讓您受益於「內容管理」和「演算函式」選項。 若要受益於這些功能，您必須重新思考目錄選件，尤其是選件內容和設定空間。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -614,7 +614,7 @@ logInfo("Done");
 
    >[!NOTE]
    >
-   >線上類別和優惠方案的名稱會在上線後修改。 在傳入頻道上，更新優惠和類別的所有參考。
+   線上類別和優惠方案的名稱會在上線後修改。 在傳入頻道上，更新優惠和類別的所有參考。
 
 ## 報告 {#reports}
 
@@ -630,7 +630,7 @@ logInfo("Done");
 -->
 如果您希望從新的報告功能中獲益，則必須重新發佈報告。 在此情況下，請檢查所有指令碼，並視需要加以變更。 關於PDF匯出，如果您已為Open Office新增特定指令碼，這將無法再與新的PDF匯出引擎(PhantomJS)搭配使用。
 
-## 網站應用程式 {#web-applications}
+## 網頁應用程式 {#web-applications}
 
 網頁應用程式系列有兩種：
 

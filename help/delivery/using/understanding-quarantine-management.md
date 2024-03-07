@@ -7,16 +7,16 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '3009'
-ht-degree: 12%
+source-wordcount: '2990'
+ht-degree: 8%
 
 ---
 
 # 認識隔離管理{#understanding-quarantine-management}
 
-Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情況下將不會向被隔離的收件者的電郵地址傳送內容。例如信箱容量已滿或地址不存在時，您可以隔離電子郵件地址。在任何情況下，隔離程式都符合下述的特定規則。
+Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情況下將不會向被隔離的收件者的電郵地址傳送內容。舉例來說，信箱已滿或地址不存在時，可以隔離電子郵件地址。 在任何情況下，隔離程式都符合下述的特定規則。
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 >
 >第1年年末： (1&#42;0.33)/(1+0.5)=22%。
 >
->年度結束2：((1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
+年度結束2：((1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
 ### 識別傳遞報表中的隔離地址 {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -109,7 +109,7 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
 >[!NOTE]
 >
->Adobe Campaign　中的隔離區會區分大小寫。請務必以小寫匯入電子郵件地址，如此一來，稍後就不會將它們重新設為目標。
+Adobe Campaign　中的隔離區會區分大小寫。請務必以小寫匯入電子郵件地址，如此一來，稍後就不會將它們重新設為目標。
 
 在隔離地址清單中(請參閱 [識別整個平台的隔離地址](#identifying-quarantined-addresses-for-the-entire-platform))， **[!UICONTROL Error reason]** 欄位指出所選地址被置於隔離區的原因。
 
@@ -145,7 +145,7 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
 >[!IMPORTANT]
 >
->地址在中的收件者 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使他們收到電子郵件，狀態也不會移除。
+地址在中的收件者 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使他們收到電子郵件，狀態也不會移除。
 
 ### 手動更新 {#unquarantine-manual}
 
@@ -165,8 +165,8 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
    * **錯誤文字（隔離文字）** 包含「Momen_Code10_InvalidRecipient」
    * **電子郵件網域(@domain)** 等於domain1.com或 **電子郵件網域(@domain)** 等於domain2.com或 **電子郵件網域(@domain)** 等於domain3.com
-   * **更新狀態(@lastModified)** YYYY/MM/DD HH當天或之後:MM:SS AM
-   * **更新狀態(@lastModified)** 在MM/DD/YYYY HH或之前:MM:SS PM
+   * **更新狀態(@lastModified)** 在或晚於 `MM/DD/YYYY HH:MM:SS AM`
+   * **更新狀態(@lastModified)** 在或早於 `MM/DD/YYYY HH:MM:SS PM`
 
 * 對於具有SMTP退回回應資訊的Campaign Classicv7執行個體，在 **[!UICONTROL Error text]** 隔離清單的欄位：
 
@@ -174,8 +174,8 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
   其中「support.ISP.com」可以是：例如「support.apple.com」或「support.google.com」
 
-   * **更新狀態(@lastModified)** YYYY/MM/DD HH當天或之後:MM:SS AM
-   * **更新狀態(@lastModified)** 在MM/DD/YYYY HH或之前:MM:SS PM
+   * **更新狀態(@lastModified)** 在或晚於 `MM/DD/YYYY HH:MM:SS AM`
+   * **更新狀態(@lastModified)** 在或早於  `MM/DD/YYYY HH:MM:SS PM`
 
 取得受影響的收件者清單後，請新增 **[!UICONTROL Update data]** 活動以將其電子郵件地址狀態設為 **[!UICONTROL Valid]** 因此它們會由從隔離清單中移除 **[!UICONTROL Database cleanup]** 工作流程。 您也可以從隔離表中刪除它們。
 
@@ -197,7 +197,7 @@ HTTP/V2通訊協定允許每個推播傳遞有直接的回饋和狀態。 如果
    <td> <strong>情境</strong><br /> </td> 
    <td> <strong>狀態</strong><br /> </td> 
    <td> <strong>錯誤訊息</strong><br /> </td> 
-   <td> <strong>失敗類型</strong><br /> </td> 
+   <td> <strong>失敗型別</strong><br /> </td> 
    <td> <strong>失敗原因</strong><br /> </td> 
    <td> <strong>重試</strong><br /> </td> 
   </tr> 
@@ -254,7 +254,7 @@ HTTP/V2通訊協定允許每個推播傳遞有直接的回饋和狀態。 如果
    <td> 失敗<br /> </td> 
    <td> 連線錯誤<br /> </td> 
    <td> 未定義<br /> </td> 
-   <td> 無法聯繫<br /> </td> 
+   <td> 無法聯絡<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -292,13 +292,13 @@ HTTP/V2通訊協定允許每個推播傳遞有直接的回饋和狀態。 如果
 
 >[!NOTE]
 >
->對於使用百度聯結器的客戶，以下是不同型別的錯誤：
+對於使用百度聯結器的客戶，以下是不同型別的錯誤：
 >
->* 傳送開始時的連線問題：失敗型別 **[!UICONTROL Undefined]**，失敗原因 **[!UICONTROL Unreachable]**，會執行重試。
->* 傳遞期間連線中斷：軟錯誤、失敗原因 **[!UICONTROL Refused]**，會執行重試。
->* 百度在傳送期間傳回同步錯誤：硬錯誤、失敗原因 **[!UICONTROL Refused]**，不會執行重試。
+* 傳送開始時的連線問題：失敗型別 **[!UICONTROL Undefined]**，失敗原因 **[!UICONTROL Unreachable]**，會執行重試。
+* 傳遞期間連線中斷：軟錯誤、失敗原因 **[!UICONTROL Refused]**，會執行重試。
+* 百度在傳送期間傳回同步錯誤：硬錯誤、失敗原因 **[!UICONTROL Refused]**，不會執行重試。
 >
->Adobe Campaign每10分鐘會連絡百度伺服器以擷取已傳送訊息的狀態，並更新broadlog。 如果訊息宣告為已傳送，則broadlogs中訊息的狀態會設為 **[!UICONTROL Received]**. 如果百度宣告錯誤，則狀態會設為 **[!UICONTROL Failed]**.
+Adobe Campaign每10分鐘會連絡百度伺服器以擷取已傳送訊息的狀態，並更新broadlog。 如果訊息宣告為已傳送，則broadlogs中訊息的狀態會設為 **[!UICONTROL Received]**. 如果百度宣告錯誤，則狀態會設為 **[!UICONTROL Failed]**.
 
 **適用於Android V2**
 
@@ -310,7 +310,7 @@ Android V2隔離機制使用與Android V1相同的程式，同樣適用於訂閱
    <td> <strong>情境</strong><br /> </td> 
    <td> <strong>狀態</strong><br /> </td> 
    <td> <strong>錯誤訊息</strong><br /> </td> 
-   <td> <strong>失敗類型</strong><br /> </td> 
+   <td> <strong>失敗型別</strong><br /> </td> 
    <td> <strong>失敗原因</strong><br /> </td> 
    <td> <strong>重試</strong><br /> </td> 
   </tr> 
@@ -335,7 +335,7 @@ Android V2隔離機制使用與Android V1相同的程式，同樣適用於訂閱
    <td> 失敗<br /> </td> 
    <td> 沒有來自Firebase Cloud Messaging服務對以下位址的回應： {1}<br /> </td> 
    <td> 柔光<br /> </td> 
-   <td> 無法聯繫<br /> </td> 
+   <td> 無法聯絡<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -343,7 +343,7 @@ Android V2隔離機制使用與Android V1相同的程式，同樣適用於訂閱
    <td> 失敗<br /> </td> 
    <td> Firebase雲端傳訊服務暫時無法使用<br /> </td> 
    <td> 柔光<br /> </td> 
-   <td> 無法聯繫<br /> </td> 
+   <td> 無法聯絡<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -517,7 +517,7 @@ SMS訊息的隔離機制與一般程式在整體上相同。 另請參閱 [關�
 
 >[!NOTE]
 >
->此 **[!UICONTROL Delivery log qualification]** 表格不適用於 **擴充通用SMPP** 聯結器。
+此 **[!UICONTROL Delivery log qualification]** 表格不適用於 **擴充通用SMPP** 聯結器。
 
 <table> 
  <tbody> 
@@ -525,7 +525,7 @@ SMS訊息的隔離機制與一般程式在整體上相同。 另請參閱 [關�
    <td> <strong>情境</strong><br /> </td> 
    <td> <strong>狀態</strong><br /> </td> 
    <td> <strong>錯誤訊息</strong><br /> </td> 
-   <td> <strong>失敗類型</strong><br /> </td> 
+   <td> <strong>失敗型別</strong><br /> </td> 
    <td> <strong>失敗原因</strong><br /> </td> 
   </tr> 
   <tr> 
@@ -537,7 +537,7 @@ SMS訊息的隔離機制與一般程式在整體上相同。 另請參閱 [關�
   </tr> 
   <tr> 
    <td> 已在行動裝置上接收<br /> </td> 
-   <td> 已收到<br /> </td> 
+   <td> 已接收<br /> </td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -547,21 +547,21 @@ SMS訊息的隔離機制與一般程式在整體上相同。 另請參閱 [關�
    <td> 失敗<br /> </td> 
    <td> 接收資料時發生錯誤（SR或MO）<br /> </td> 
    <td> 柔光<br /> </td> 
-   <td> 無法聯繫<br /> </td> 
+   <td> 無法聯絡<br /> </td> 
   </tr> 
   <tr> 
    <td> 無效的MT通知<br /> </td> 
    <td> 失敗<br /> </td> 
    <td> 處理傳送查詢的認可框架時發生錯誤'{1}'<br /> </td> 
    <td> 柔光<br /> </td> 
-   <td> 無法聯繫<br /> </td> 
+   <td> 無法聯絡<br /> </td> 
   </tr> 
   <tr> 
    <td> 傳送MT時發生錯誤<br /> </td> 
    <td> 失敗<br /> </td> 
    <td> 傳送訊息時發生錯誤<br /> </td> 
    <td> 柔光<br /> </td> 
-   <td> 無法聯繫<br /> </td> 
+   <td> 無法聯絡<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -576,9 +576,9 @@ SMPP聯結器會擷取使用規則運算式（規則運算式）傳回之SR （�
 
 >[!NOTE]
 >
->失敗型別和失敗原因與電子郵件相同。 另請參閱 [傳遞失敗型別和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+失敗型別和失敗原因與電子郵件相同。 另請參閱 [傳遞失敗型別和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->請要求您的提供者提供狀態和錯誤碼的清單，以便在傳遞記錄資格表中設定適當的失敗型別和失敗原因。
+請要求您的提供者提供狀態和錯誤碼的清單，以便在傳遞記錄資格表中設定適當的失敗型別和失敗原因。
 
 產生的訊息範例：
 

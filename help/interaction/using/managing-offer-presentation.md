@@ -9,10 +9,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 1%
+source-wordcount: '1013'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 在 **[!UICONTROL Offer presentation]** 標籤，您必須為簡報規則指定與環境中設定的相同維度。
 
-此 **[!UICONTROL Targeting dimension]** 與將接收優惠方案主張的收件者表格（預設為：nms：recipients）一致。 此 **[!UICONTROL Storage dimension]** 與包含連結至目標維度的主張歷程記錄（依預設）的表格一致:nms:propositionRcp)。
+此 **[!UICONTROL Targeting dimension]** 與收件者表格一致(預設： `nms:recipients`)將收到優惠方案主張的使用者。 此 **[!UICONTROL Storage dimension]** 與包含連結至目標維度的主張歷程記錄的表格一致(依預設： `nms:propositionRcp`)。
 
 ![](assets/offer_typology_009.png)
 

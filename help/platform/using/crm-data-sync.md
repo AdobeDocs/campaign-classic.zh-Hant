@@ -3,11 +3,11 @@ product: campaign
 title: CRM Connectors資料同步
 description: 管理Campaign與您的CRM之間的資料
 feature: Microsoft CRM Integration, Salesforce Integration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1536'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 >
 >此附註僅適用於類屬 **[!UICONTROL CRM Connector]** 活動。 對於其他CRM活動，此程式是自動的。
 >
->此選項必須手動建立並填入 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必須是文字選項，其值必須符合以下格式： **yyyy/MM/dd hh:mm:ss**.
+>此選項必須手動建立並填入 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必須是文字選項，其值必須符合以下格式： **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >您必須手動更新此選項才能進行進一步的匯入。
 
@@ -112,7 +112,7 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
   >[!NOTE]
   >
-  >這些日期會以下列格式顯示： **yyyy/MM/dd hh:mm:ss**.
+  >這些日期會以下列格式顯示： **`yyyy/MM/dd hh:mm:ss`**.
 
 ### 篩選資料 {#filtering-data}
 
@@ -221,7 +221,7 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 若要處理例項的錯誤，可以新增等待方塊並排程重試。
 
-系統會收集拒絕專案及其錯誤代碼和相關訊息，這表示您可以設定拒絕專案的追蹤功能，以最佳化同步處理作業。
+系統會收集拒絕專案及其錯誤代碼和相關訊息，這表示您可以設定拒絕追蹤以最佳化同步程式。
 
 >[!NOTE]
 >
