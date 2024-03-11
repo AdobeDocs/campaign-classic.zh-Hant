@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: de57e7aec255ab2995d1a758642e6a73cafa91b3
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2549'
 ht-degree: 99%
 
 ---
@@ -824,6 +824,7 @@ ht-degree: 99%
    + [反轉程序](migration/using/about-rollback.md)
 + 技術備註{#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
+   + [中間來源基礎結構的傳入簡訊工作流程活動](technotes/using/inbound-sms.md)
    + 升級至 IMS{#ims}
       + [將使用者移轉至 IMS](technotes/using/migrate-users-to-ims.md)
       + [將技術操作員移轉至 Developer Console](technotes/using/ims-migration.md)
