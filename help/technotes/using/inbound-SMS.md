@@ -4,9 +4,9 @@ title: 中間來源基礎結構的傳入簡訊工作流程活動
 description: 中間來源基礎結構的傳入簡訊工作流程活動
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
-source-git-commit: de57e7aec255ab2995d1a758642e6a73cafa91b3
+source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '430'
 ht-degree: 2%
 
 ---
@@ -70,11 +70,20 @@ ht-degree: 2%
    ```
 
    使用下列新自訂指令碼，根據複合索引鍵更新inSMS資料，結合中間來源記錄的主索引鍵和行銷SMS路由的外部帳戶ID。
+請遵循下列先決條件：
 
-   ```
+   * 輸入以下專案的實際值： `<EXTERNAL_ACCOUNT_ID>`，例如 `var iExtAccountId=72733155`.
+   * 請務必將下列元素保留在自訂指令碼中：
+      * `_operation="insertOrUpdate"`
+      * `_key="@midInSMSId,@extAccount-id"`
+      * `midInSMSId={smsMessage.id}`
+      * `inSms.@["extAccount-id"] = iExtAccountId;{}`
+
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL ACCOUNT ID>
    var iExtAccountId=<EXTERNAL_ACCOUNT_ID>;
-   // make sure to keep the following elements in the custom script (the rest is optional and custom code can be added): _operation="insertOrUpdate", _key="@midInSMSId,@extAccount-id", midInSMSId={smsMessage.id}, inSms.@["extAccount-id"] = iExtAccountId;, var inSms = <inSMS xtkschema="nms:inSMS" _operation="insertOrUpdate"
+   
+   var inSms = <inSMS xtkschema="nms:inSMS" _operation="insertOrUpdate"
    
                _key="@midInSMSId,@extAccount-id"
                midInSMSId={smsMessage.id}
@@ -90,6 +99,7 @@ ht-degree: 2%
                operatorCode = {smsMessage.operatorCode}
                linkedSmsId={smsMessage.linkedSmsId}
                separator = {smsMessage.separator}/>
+   
    inSms.@["extAccount-id"] = iExtAccountId;
    
    xtk.session.Write(inSms);
