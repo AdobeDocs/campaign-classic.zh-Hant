@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: bc6f5d569d0c8a5eba4499a854af370258ce83a2
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 4%
+source-wordcount: '1380'
+ht-degree: 1%
 
 ---
 
-# 使用增強的 MTA 傳送 {#sending-with-enhanced-mta}
+# 使用增強的MTA傳送 {#sending-with-enhanced-mta}
 
 此 **Adobe Campaign增強型MTA** （郵件傳輸代理程式）提供升級的傳送基礎架構，可改善傳遞能力、信譽、輸送量、報告、退回處理、IP提升及連線設定管理。
 
@@ -109,6 +109,10 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 有關退信資格的詳細資訊，請參閱 [本節](understanding-delivery-failures.md#bounce-mail-qualification).
 
+### 傳遞
+
+一旦傳送已傳輸至Enhanced MTA，即使傳送是以 **[!UICONTROL Stopped]** Campaign的狀態。
+
 ### 傳遞總處理能力
 
 Campaign傳送輸送量圖表將不再顯示傳送給電子郵件收件者的輸送量。 該圖表現在會顯示從Campaign轉送訊息至Enhanced MTA的輸送量速度。
@@ -127,7 +131,7 @@ Campaign不再使用傳送中的重試設定。 軟退信重試次數和兩次�
 
 例如，如果有效期間在Campaign中設定為預設值5天，則軟退信訊息將進入Enhanced MTA重試佇列，並從該訊息達到Enhanced MTA時起最多只重試3.5天。 在此情況下，將不會使用Campaign中設定的值。
 
-當訊息在 Enhanced MTA 佇列中停留 3.5 天且無法傳送時，訊息會逾時，其狀態會從傳送記錄檔中的 **[!UICONTROL Sent]** 更新為 **[!UICONTROL Failed]**。
+當訊息在Enhanced MTA佇列中停留3.5天且無法傳送時，訊息會逾時，其狀態會從更新 **[!UICONTROL Sent]** 至 **[!UICONTROL Failed]** 傳送記錄檔中。
 
 如需有效期的詳細資訊，請參閱 [本節](steps-sending-the-delivery.md#defining-validity-period).
 
