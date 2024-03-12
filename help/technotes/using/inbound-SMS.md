@@ -4,7 +4,7 @@ title: 中間來源基礎結構的傳入簡訊工作流程活動
 description: 中間來源基礎結構的傳入簡訊工作流程活動
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
-source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
+source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. 將擴充功能新增至 `nms:inSMS` 結構描述。 擴充功能會將新屬性新增至 `nms:inSMS` 方案和追蹤來自中間來源執行個體的inSMS記錄主索引鍵。
 
-   ```
+   ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
           labelSingular="Incoming SMS" name="inSMS">
    <dbindex name="midInSMSId" unique="false">
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    取代下方區塊。 請注意，如果您先前已自訂此程式碼，此指令碼可能會有所不同。
 
-   ```
+   ```Javascript
    var lastSynchKey = getOption('SMS_MO_INDEX_WKF1105_inSmsUS_smsmidus');
    
    var smsId = application.getNewIds(1);
@@ -70,7 +70,8 @@ ht-degree: 2%
    ```
 
    使用下列新自訂指令碼，根據複合索引鍵更新inSMS資料，結合中間來源記錄的主索引鍵和行銷SMS路由的外部帳戶ID。
-請遵循下列先決條件：
+
+   請遵循下列先決條件：
 
    * 輸入以下專案的實際值： `<EXTERNAL_ACCOUNT_ID>`，例如 `var iExtAccountId=72733155`.
    * 請務必將下列元素保留在自訂指令碼中：
@@ -111,7 +112,7 @@ ht-degree: 2%
 
    指令碼會將主鍵指標重設為24小時前。 工作流程將嘗試在前24小時內重新處理來自中間來源執行個體的所有inSMS資料，並將任何遺失的資料新增到行銷執行個體。
 
-   ```
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL_ACCOUNT_ID>
    // please enter real pointer option name to replace '<POINTER_OPTION_NAME>'
    // OPTION NAME format: SMS_MO_INDEX_{internal name of the workflow}_inSms_{internal name of the external account to access the mid}
