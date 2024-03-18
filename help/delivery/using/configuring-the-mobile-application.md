@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: 466f04bce8f4c62b5dbb0e9d15150ab0c3bf2fbd
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '603'
 ht-degree: 4%
 
 ---
@@ -103,21 +103,24 @@ ht-degree: 4%
 
 1. 從「 」中選取其中一個現成可用的圖示 **[!UICONTROL Application icon]** 欄位來個人化您服務中的行動應用程式。
 
-1. 選取 **[!UICONTROL Authentication mode]**。請注意，您稍後一律可以在「 」中變更驗證模式 **[!UICONTROL Certificate]** 行動應用程式的索引標籤。
+1. 選取 **[!UICONTROL Authentication mode]**。
+
+   ![](assets/nmac_ios_5.png)
+
+   提供兩種模式：
+
+   * （建議） **[!UICONTROL Token-based authentication]**：填入APNs連線設定 **[!UICONTROL Key Id]**， **[!UICONTROL Team Id]** 和 **[!UICONTROL Bundle Id]** 然後按一下「 」以選取您的p8憑證 **[!UICONTROL Enter the private key...]**. 有關詳細資訊 **[!UICONTROL Token-based authentication]**，請參閱 [Apple檔案](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+
    * **[!UICONTROL Certificate-based authentication]**：按一下 **[!UICONTROL Enter the certificate...]**  接著，選取您的p12金鑰並輸入行動應用程式開發人員提供的密碼。
-   * **[!UICONTROL Token-based authentication]**：填寫連線設定 **[!UICONTROL Key ID]**， **[!UICONTROL Team ID]** 和 **[!UICONTROL Bundle ID]** 然後按一下「 」以選取您的p8憑證 **[!UICONTROL Enter the private key]**. 有關詳細資訊 **[!UICONTROL Token-based authentication]**，請參閱 [Apple檔案](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
-   > Adobe建議使用 **[!UICONTROL Token-based authentication]** 用於您的iOS設定，因為此驗證模式更安全，且未繫結至憑證到期。
+   > Adobe建議使用 **[!UICONTROL Token-based authentication]** 用於您的iOS設定，因為P8驗證金鑰更新且更安全。
 
-   ![](assets/nmac_ios_4.png)
-
-1. 您可以按一下 **[!UICONTROL Test the connection]** 以確認作業是否成功。
+1. 使用 **[!UICONTROL Test the connection]** 按鈕以驗證您的設定。
 
 1. 按一下 **[!UICONTROL Next]** 以開始設定生產應用程式，並依照上述步驟進行。
 
-   ![](assets/nmac_ios_5.png)
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**。
 
