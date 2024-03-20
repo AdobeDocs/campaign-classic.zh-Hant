@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2319'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ _2023 年 12 月 5 日_
 
 * 此外，為了強化安全性和驗證流程，Adobe Campaign 強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至 Adobe Identity Management System (IMS)。閱讀此[技術說明](../../technotes/using/migrate-users-to-ims.md)，了解如何移轉操作者。
 
-* 現在，當網頁表單具有 **待處理的出版物** 狀態，它不會自動上線。 為避免安全性問題，必須先發佈它，才可變成 **線上** 並可透過網頁瀏覽器中的網頁表單URL存取。 [深入了解](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+* 現在，當網頁表單具有&#x200B;**待發佈**&#x200B;狀態，其不會自動上線。為了防止安全性問題，務必在&#x200B;**上線**&#x200B;之前予以發佈，並透過網頁瀏覽器中的網頁表單 URL 存取。[深入了解](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### 修補程式 {#release-7-3-5-patches}
 

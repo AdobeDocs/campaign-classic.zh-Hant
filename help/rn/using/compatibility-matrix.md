@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 3e771d9a18c083bee8239b95d1d68d63928217c2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->如果您使用RHEL，您必須願意停用SELinux，或讓架構設計人員編寫自訂SELinux規則，以檢查啟用的SELinux是否不會導致Campaign作業問題。
+>如果您使用 RHEL，您必須願意停用 SELinux，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。
 
 ## 網頁伺服器{#WebServers}
 
@@ -79,7 +79,7 @@ ht-degree: 92%
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>Windows Server 2016和2019上的10.0</p>
+<p>Windows Server 2016 與 2019 上的 10.0</p>
 </td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ ht-degree: 92%
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 及 SP2</p>
-<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">了解更多</a>。</p>
+<p><strong>重要：</strong>當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=zh-Hant#database-access-layers">了解更多</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -355,7 +355,7 @@ ht-degree: 92%
 
 ### Microsoft WebView 2 執行階段
 
-Microsoft Edge WebView2執行階段最新版本是Campaign使用者端主控台的必要版本。
+Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最新版本。
 
 從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下載 Microsoft Edge WebView2。
 

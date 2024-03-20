@@ -1,15 +1,15 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign v7 文件
+breadcrumb-title: Campaign Classic v7 文件
 product: campaign
 title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
    + [開始升級](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + 先前版本 {#previous-releases}
-      + [2022版本](rn/using/release-2022.md)
+      + [2022 版本](rn/using/release-2022.md)
       + [2021 版本](rn/using/release-2021.md)
       + [[!DNL Gold Standard] 版本](rn/using/gold-standard.md)
    + [已棄用功能](rn/using/deprecated-features.md)
@@ -740,7 +740,7 @@ ht-degree: 99%
       + [關於資料模型](configuration/using/about-data-model.md)
       + [資料模型說明](configuration/using/data-model-description.md)
       + [最佳實務](configuration/using/data-model-best-practices.md)
-   + 使用方案 {#schema-reference}
+   + 使用結構描述{#schema-reference}
       + [開始使用結構描述](configuration/using/about-schema-reference.md)
       + [方案結構](configuration/using/schema-structure.md)
       + [資料庫對應](configuration/using/database-mapping.md)
