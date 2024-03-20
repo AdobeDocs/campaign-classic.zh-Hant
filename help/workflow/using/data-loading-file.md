@@ -5,7 +5,7 @@ description: 進一步瞭解資料載入（檔案）工作流程活動
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 15%
@@ -13,8 +13,6 @@ ht-degree: 15%
 ---
 
 # 資料載入 (檔案){#data-loading-file}
-
-
 
 ## 使用 {#use}
 
