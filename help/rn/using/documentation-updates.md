@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
-source-wordcount: '3699'
-ht-degree: 100%
+source-git-commit: a6113868f5e22583c8017b1134f69d66b92e92f1
+workflow-type: tm+mt
+source-wordcount: '3716'
+ht-degree: 99%
 
 ---
 
@@ -21,6 +21,10 @@ ht-degree: 100%
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
 ## 2024
+
+### 2024 年 3 月 {#mar-2024}
+
+已針對iOS權杖型APN連線更新行動應用程式設定章節。 [深入了解](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
 
 ### 2024 年 1 月 {#jan-2024}
 
