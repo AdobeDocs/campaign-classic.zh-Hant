@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
-workflow-type: ht
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
       <tr>
   <td>Adobe Analytics 資料連接器<br></td>
    <td><p>Adobe Analytics 資料連接器已於 2022 年 8 月 17 日移除。 已在 Campaign 21.1.3 版中棄用。</p>
-   <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/adobe-analytics-connector.md">瞭解更多</a></p>
+   <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/gs-aa.md">瞭解更多</a></p>
   </td>
  </tr>
     <tr>

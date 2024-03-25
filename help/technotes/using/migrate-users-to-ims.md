@@ -2,9 +2,9 @@
 title: 移轉Campaign運運算元至AdobeIdentity Management系統(IMS)
 description: 瞭解如何將Campaign運運算元移轉至AdobeIdentity Management系統(IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 1879fe179381be654bad876de2423d25049db43c
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1278'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,7 @@ ht-degree: 2%
 
 為了強化安全性和驗證程式，Adobe Campaign強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 所有運運算元都應該實作 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。
 
-請注意，在Campaign v8中，將不再允許連線使用者/密碼（亦稱為原生驗證）。 **Adobe建議在Campaign v7.3.5中執行此移轉，以便能夠順利移轉至Campaign v8。**
-
-
+請注意，在Campaign v8中，不允許連線使用者/密碼（亦稱為原生驗證）。 **Adobe建議在Campaign v7.3.5中執行此移轉，以便能夠順利移轉至Campaign v8。**
 
 ## 哪些部分有所變更？{#move-to-ims-changes}
 
@@ -101,7 +99,7 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 
 Adobe建議在升級至Campaign Classic v7.3.5後(或 [IMS移轉相容版本](#ims-versions))。
 
-身為Campaign管理員，您可以透過Adobe Admin Console和Campaign使用者端主控台將許可權授予組織的使用者。 使用者使用其Adobe ID登入Adobe Campaign。 瞭解如何在中使用IMS設定許可權 [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+身為Campaign管理員，您可以透過Adobe Admin Console和Campaign使用者端主控台將許可權授予組織的使用者。 使用者使用其Adobe ID登入Adobe Campaign。 瞭解如何在中使用IMS設定許可權 [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}.
 
 ### 如何為目前原生使用者新增電子郵件？ {#ims-migration-id}
 

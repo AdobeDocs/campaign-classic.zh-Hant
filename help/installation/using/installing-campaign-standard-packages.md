@@ -6,7 +6,7 @@ feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 4%
@@ -193,7 +193,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td> 網站分析聯結器<br /> </td> 
-   <td> 允許Adobe Campaign和Adobe Analytics透過Web Analytics聯結器套件互動。 與異動訊息（訊息中心封裝）不相容。 <a href="../../platform/using/adobe-analytics-connector.md">瞭解更多</a><br /> </td> 
+   <td> 允許Adobe Campaign和Adobe Analytics透過Web Analytics聯結器套件互動。 與異動訊息（訊息中心封裝）不相容。 <a href="../../platform/using/gs-aa.md">瞭解更多</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 

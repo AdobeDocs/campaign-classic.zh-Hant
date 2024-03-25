@@ -2,15 +2,15 @@
 product: campaign
 title: 關於連接器
 description: 關於連接器
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 8%
+source-wordcount: '200'
+ht-degree: 11%
 
 ---
 
@@ -22,9 +22,9 @@ Adobe Campaign提供數個聯結器，可讓您與外部應用程式通訊、連
 
 可用的聯結器列示如下：
 
-* FDA聯結器(**同盟資料存取**)可讓您將Campaign連線至一或多個外部資料庫，並處理儲存至這些資料庫的資訊，而不會影響Campaign資料。 [了解更多](../../installation/using/about-fda.md)。
+* FDA聯結器(**同盟資料存取**)可讓您將Campaign連線至一或多個外部資料庫，並處理儲存在這些資料庫中的資訊，而不會影響您的Campaign資料。 [了解更多](../../installation/using/about-fda.md)。
 * CRM聯結器可讓您使用專用工作流程活動，在Adobe Campaign和您的CRM解決方案之間交換資料。 [了解更多](../../platform/using/crm-connectors.md)。
-* Analytics聯結器可讓您在Adobe Campaign和Adobe Analytics之間共用資料。 [了解更多](../../platform/using/adobe-analytics-connector.md)。
+* Analytics聯結器可讓您在Adobe Campaign和Adobe Analytics之間共用資料。 [了解更多](../../platform/using/gs-aa.md)。
 
 您也可以將Campaign與多個其他系統整合，例如：
 
@@ -34,4 +34,4 @@ Adobe Campaign提供數個聯結器，可讓您與外部應用程式通訊、連
 
 >[!NOTE]
 >
->這些模組的可用性及其使用方式取決於安裝的部署型別。 請參閱 [Campaign內部部署 — 託管功能對照表](../../installation/using/capability-matrix.md).
+>這些模組的可用性及其使用方式會視您安裝的部署型別而定。 請參閱 [Campaign內部部署 — 託管功能對照表](../../installation/using/capability-matrix.md).

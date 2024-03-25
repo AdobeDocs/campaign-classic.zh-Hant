@@ -8,16 +8,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 20%
+source-wordcount: '176'
+ht-degree: 16%
 
 ---
 
 # 關於Adobe ID {#about-adobe-id}
 
-AdobeIdentity Management系統(IMS)可協助管理員建立和管理使用者對應用計畫和服務的存取權。 如需不同型別的AdobeID的詳細資訊，請參閱 [此頁面](https://helpx.adobe.com/cn/enterprise/using/identity.html).
+AdobeIdentity Management系統(IMS)可協助管理員建立和管理使用者對應用計畫和服務的存取權。 如需不同型別的AdobeID的詳細資訊，請參閱 [此頁面](https://helpx.adobe.com/tw/enterprise/using/identity.html).
 
 Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台，而非使用 [原生使用者/密碼驗證](../../platform/using/access-management-operators.md). 此實作提供下列優點：
 
@@ -25,6 +25,11 @@ Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台，而非�
 * 透過不同的整合使用Adobe Campaign時，會保持連線。
 * 比原生登入/密碼更安全的密碼管理原則。
 * 使用 Federated ID 帳戶（外部 ID 提供者）。
+
+>[!IMPORTANT]
+>
+> 請注意，在Campaign v8中，不允許連線使用者/密碼（亦稱為原生驗證）。 **Adobe建議在Campaign v7.3.5中執行此移轉，以便能夠順利移轉至Campaign v8。**
+
 
 <!--
 >[!IMPORTANT]

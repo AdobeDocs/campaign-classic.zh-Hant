@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '2558'
+ht-degree: 99%
 
 ---
 
@@ -107,8 +107,9 @@ ht-degree: 100%
          + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
          + [與 CRM 同步資料](platform/using/crm-data-sync.md)
       + Adobe Analytics 連接器{#analytics-connector}
-         + [Adobe Analytics 連接器佈建](platform/using/adobe-analytics-provisioning.md)
+         + [開始使用Adobe Analytics聯結器](platform/using/gs-aa.md)
          + [Adobe Analytics 連接器整合](platform/using/adobe-analytics-connector.md)
+         + [Adobe Analytics 連接器佈建](platform/using/adobe-analytics-provisioning.md)
          + [如何移轉至 Adobe Analytics 連接器](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 資料連接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [說明與支援選項](support.md)

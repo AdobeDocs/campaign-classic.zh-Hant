@@ -3,12 +3,12 @@ product: campaign
 title: 移轉至Adobe Analytics聯結器
 description: Campaign - Analytics聯結器常見問題集
 feature: Technote, Analytics Integration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於v7內部部署和混合部署"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 5%
+source-wordcount: '840'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 在2021年8月1日，Adobe Campaign Classic已從舊版Data Connectors UI中移除，但在2022年8月17日之前，現有的Campaign整合將會持續收集資料並傳遞至Adobe Analytics。 在此日期之後，整合將會停止收集及傳遞資料給Adobe Analytics。
 
-您 **必須實作** Adobe Exchange上的新Adobe Analytics Connector整合已取代舊版Data Connectors整合。 若要瞭解有關Adobe Analytics聯結器的詳細資訊，請參閱 [此頁面](../../platform/using/adobe-analytics-connector.md).
+您 **必須實作** Adobe Exchange上的新Adobe Analytics Connector整合已取代舊版Data Connectors整合。 若要瞭解有關Adobe Analytics聯結器的詳細資訊，請參閱 [此頁面](../../platform/using/gs-aa.md).
 
 若對這些變更有任何疑問，請閱讀 [常見問題集](#faq-aa). 如需詳細資訊，請連絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -52,7 +52,7 @@ Campaign Classic v7與Adobe Analytics之間的新整合現已推出。 主要變
 
 您需要升級至Campaign 21.1.3 （或更高） **2022年8月17日之前**.
 
-作為託管客戶，Adobe將與您合作，將您的執行個體升級至較新版本。 之後，您將能夠使用 [Adobe Analytics聯結器](../../platform/using/adobe-analytics-connector.md).
+作為託管客戶，Adobe將與您合作，將您的執行個體升級至較新版本。 之後，您將能夠使用 [Adobe Analytics聯結器](../../platform/using/gs-aa.md).
 
 身為內部部署/混合部署客戶，您需要升級至其中一個較新版本，才能受益於新的整合。
 升級所有執行個體後，您將能夠 [實施新的整合](../../platform/using/adobe-analytics-provisioning.md) 至Adobe Analytics聯結器，並確保順暢轉換。

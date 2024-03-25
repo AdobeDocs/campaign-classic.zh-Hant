@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 為正確處理隱私權並管理個人資料，工作時請遵循您營運業務所在地區的適用法規。這些法規包含：
 * [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)（歐洲一般資料保護規範）
-* [DPA](https://www.gov.uk/data-protection)（英國實施 GDPR 之規範）
+* [DPA](https://www.gov.uk/data-protection) (英國實施 GDPR 之規範)
 * [歐洲隱私權與電子通訊指令](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219)
 * [CAN-SPAM 法案](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)（美國法律規定商業電子郵件的規則與要求）
 * [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)（加州消費者隱私權法案）
@@ -81,7 +81,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 * **個人資料**&#x200B;是指可直接或間接識別在世個人的資訊。
 * **敏感個人資料**&#x200B;是指與個人的種族、政治觀點、宗教信仰、犯罪背景、遺傳資訊、健康資料、性傾向、生物識別資訊，以及工會會員會籍相關的資訊。
 
-將 Campaign 與其他 Experience Cloud 解決方案整合時，如果閱聽眾可以從一個系統傳輸到另一個系統，例如 [Adobe Analytics](../../platform/using/adobe-analytics-connector.md)、[Audience Manager 或 People 核心服務](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或是其他解決方案，如 [CRM Connectors](../../platform/using/crm-connectors.md)，您需要額外關注來保護個人資料。
+將 Campaign 與其他 Experience Cloud 解決方案整合時，如果閱聽眾可以從一個系統傳輸到另一個系統，例如 [Adobe Analytics](../../platform/using/gs-aa.md)、[Audience Manager 或 People 核心服務](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或是其他解決方案，如 [CRM Connectors](../../platform/using/crm-connectors.md)，您需要額外關注來保護個人資料。
 
 [主要法規](#privacy-regulations)是指管理資料之不同實體，如下所示：
 * **資料控制方**&#x200B;是決定收集、使用及分享個人資料之方式與目的的當局機關。
@@ -100,7 +100,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 
 * **Laura** 是&#x200B;**資料主體**。她是收到航空公司訊息的收件人。Laura 可能是常客，但可能會在某個時間點決定不想要收到關於這家航空公司提供的任何個人化廣告或行銷訊息。她會要求航空公司（根據他們的流程）刪除她的常旅客號碼。
 
-* **Anne** 是航空公司的&#x200B;**資料控制方**。她會收到 Laura 的請求，檢索用於識別資料主體的有用 ID，並在 Adobe Campaign 中提交請求。
+* **Anne** 是航空公司的&#x200B;**資料控制方**。她會收到Laura的請求，檢索用於識別資料主體的有用ID，並在Adobe Campaign中提交請求。
 
 * **Adobe Campaign** 是&#x200B;**資料處理方**。
 
