@@ -3,15 +3,15 @@ product: campaign
 title: 分佈式架構
 description: 分佈式架構
 feature: Interaction, Offers, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 1%
+source-wordcount: '1021'
+ht-degree: 2%
 
 ---
 
@@ -131,7 +131,7 @@ Interaction套件必須安裝在所有執行個體（控制和執行）上。 �
 >根據您執行個體中現有主張的量，此操作可能需要一些時間。
 
 * 如果您的執行個體只有很少的建議或沒有建議，就不需要手動修改建議表格。 修改會在安裝套件時完成。
-* 如果您的執行個體有許多建議，最好在安裝控制套件並執行它們之前變更建議表結構。 我們建議在低活動期間執行查詢。
+* 如果您的執行個體有許多主張，最好在安裝控制套件並執行它們之前變更主張表結構。 我們建議在低活動期間執行查詢。
 
 >[!NOTE]
 >

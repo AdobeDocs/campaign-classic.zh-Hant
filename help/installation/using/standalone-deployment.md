@@ -3,7 +3,7 @@ product: campaign
 title: 獨立部署
 description: 獨立部署
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
@@ -35,8 +35,8 @@ ht-degree: 3%
 此類設定可在管理少於100,000位收件者的清單時執行，並包含下列軟體層：
 
 * Linux、
-* Apache,
-* PostgreSQL,
+* Apache，
+* PostgreSQL、
 * Qmail。
 
 隨著磁碟區成長，此架構的變體會將資料庫伺服器移至另一部電腦，以獲得更優異的效能。
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 ## 安裝和設定步驟 {#installation-and-configuration-steps}
 
-### 必要條件 {#prerequisites}
+### 先決條件 {#prerequisites}
 
 * JDK、
 * 網頁伺服器(IIS、Apache)、

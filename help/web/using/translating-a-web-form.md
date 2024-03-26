@@ -2,13 +2,13 @@
 product: campaign
 title: 翻譯網路表單
 description: 翻譯網路表單
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1547'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 1%
 
 
 
-您可以將網頁應用程式本地化為數種語言。
+您可以將網頁應用程式當地化為數種語言。
 
-您可以直接在Adobe Campaign主控台中執行翻譯(請參閱 [在編輯器中管理翻譯](#managing-translations-in-the-editor))，或匯出和匯入字串以將翻譯外部化(請參閱 [外部化翻譯](#externalizing-translation))。
+您可以直接在Adobe Campaign主控台中執行翻譯(請參閱 [在編輯器中管理翻譯](#managing-translations-in-the-editor))，或匯出和匯入字串以外部化翻譯(請參閱 [外部化翻譯](#externalizing-translation))。
 
-預設可用的翻譯語言清單詳見 [變更表單顯示語言](#changing-forms-display-language).
+預設提供的翻譯語言清單詳見 [變更表單顯示語言](#changing-forms-display-language).
 
 網頁應用程式是以編輯語言設計：這是用來輸入標籤和其他要翻譯內容的參考語言。
 
-預設語言是Web應用程式在存取URL中未新增任何語言設定時所顯示的語言。
+如果未將語言設定新增至其存取URL，預設語言為Web應用程式顯示的語言。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## 選擇語言 {#choosing-languages}
 
-若要定義一或多個翻譯語言，請按一下 **[!UICONTROL Properties]** Web應用程式的按鈕，然後 **[!UICONTROL Localization]** 標籤。 按一下 **[!UICONTROL Add]** 按鈕來定義網頁應用程式的新翻譯語言。
+若要定義一或多個翻譯語言，請按一下 **[!UICONTROL Properties]** Web應用程式的按鈕，然後 **[!UICONTROL Localization]** 標籤。 按一下 **[!UICONTROL Add]** 按鈕以定義網頁應用程式的新翻譯語言。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_add_lang.png)
 
-當您新增網頁應用程式的翻譯語言時（或當預設語言與編輯語言不同時）， **[!UICONTROL Translation]** 子標籤會新增至 **[!UICONTROL Edit]** 標籤以管理翻譯。
+當您新增網頁應用程式的翻譯語言時（或預設語言與編輯語言不同時）， **[!UICONTROL Translation]** 子索引標籤會新增至 **[!UICONTROL Edit]** 標籤以管理翻譯。
 
 Adobe Campaign包含翻譯及管理多語言翻譯的工具。 此編輯器可讓您檢視要翻譯或核准的字串、直接在介面中輸入翻譯，或匯入/匯出字元字串以將翻譯外部化。
 
@@ -53,7 +53,7 @@ Adobe Campaign包含翻譯及管理多語言翻譯的工具。 此編輯器可�
 
 第一次開啟此索引標籤時，不會包含任何資料。 按一下 **[!UICONTROL Collect the strings to translate]** 更新網頁應用程式中字串的連結。
 
-Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 所有靜態元素的索引標籤：HTML區塊、Javascript等。 靜態元素的詳細說明，請參閱 [網路表單中的靜態元素](static-elements-in-a-web-form.md).
+Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 所有靜態元素的索引標籤：HTML區塊、Javascript等。 靜態元素的詳細資訊，請參見 [網路表單中的靜態元素](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -61,13 +61,13 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 >
 >視要處理的資料量而定，此程式可能需要幾分鐘的時間。
 > 
->如果出現警告指出系統字典中缺少某些翻譯，請參閱 [轉譯系統字串](#translating-the-system-strings).
+>如果警告顯示系統字典中缺少某些翻譯，請參閱 [轉譯系統字串](#translating-the-system-strings).
 
 每次翻譯字串時，其翻譯都會新增至翻譯字典。
 
-當收集程式偵測到已有翻譯存在時，此翻譯會顯示在 **[!UICONTROL Text]** 字串的欄。 字串的狀態已轉換為 **[!UICONTROL Translated]**.
+當收集程式偵測到翻譯已存在時，此翻譯會顯示在 **[!UICONTROL Text]** 字串的欄。 字串的狀態已轉換為 **[!UICONTROL Translated]**.
 
-對於從未翻譯過的字元字串， **[!UICONTROL Text]** 欄位為空白，且狀態為 **[!UICONTROL To translate]**.
+對於從未翻譯過的字元字串， **[!UICONTROL Text]** 欄位為空白，狀態為 **[!UICONTROL To translate]**.
 
 ### 篩選字串 {#filtering-strings}
 
@@ -85,9 +85,9 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
    ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
-   來源字串會顯示在視窗的上半部。
+   來源字串會顯示在視窗的上半部分。
 
-1. 在下方輸入其翻譯。 若要核准，請核取 **[!UICONTROL Translation approved]** 選項。
+1. 在下半部輸入其翻譯。 若要核准，請核取 **[!UICONTROL Translation approved]** 選項。
 
    >[!NOTE]
    >
@@ -101,7 +101,7 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
 >[!CAUTION]
 >
->匯出字串後，請勿使用整合工具執行任何翻譯。 當您重新匯入翻譯時，這會導致衝突，並且這些翻譯將會遺失。
+>匯出字串後，請勿使用整合工具執行任何翻譯。 當您重新匯入翻譯時，這會導致衝突，而且這些翻譯將會遺失。
 
 ### 匯出檔案 {#exporting-files}
 
@@ -114,16 +114,16 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
    * **[!UICONTROL One file per language]**：匯出作業會針對每種翻譯語言產生一個檔案。 每個檔案對於所有選取的Web應用程式都是通用的。
    * **[!UICONTROL One file per Web application]**：匯出作業會針對每個選取的Web應用程式產生一個檔案。 每個檔案都會包含所有翻譯語言。
 
-      >[!NOTE]
-      >
-      >此型別的匯出不適用於XLIFF匯出。
+     >[!NOTE]
+     >
+     >此型別的匯出不適用於XLIFF匯出。
 
    * **[!UICONTROL One file per language and per Web application]**：匯出將會產生數個檔案。 每個檔案將包含每個網頁應用程式的一種翻譯語言。
-   * **[!UICONTROL One file for all]**：匯出將會為所有網頁應用程式產生單一多語言檔案。 它會包含所有選定網頁應用程式的所有翻譯語言。
+   * **[!UICONTROL One file for all]**：匯出將會為所有Web應用程式產生單一多語言檔案。 它會包含所有選取之網頁應用程式的所有翻譯語言。
 
-      >[!NOTE]
-      >
-      >此型別的匯出不適用於XLIFF匯出。
+     >[!NOTE]
+     >
+     >此型別的匯出不適用於XLIFF匯出。
 
 1. 然後選取 **[!UICONTROL Target folder]** 將記錄檔案的位置。
 1. 選取檔案格式( **[!UICONTROL CSV]** 或 **[!UICONTROL XLIFF]** )並按一下 **[!UICONTROL Start]**.
@@ -132,19 +132,19 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
 >[!NOTE]
 >
->匯出檔案的名稱會自動產生。 如果多次執行相同的匯出，則會以新檔案取代現有檔案。 如果您需要保留先前的檔案，請變更 **[!UICONTROL Target folder]** ，然後按一下 **[!UICONTROL Start]** 以再次執行匯出。
+>匯出檔案的名稱會自動產生。 如果多次執行相同的匯出，則會以新的檔案取代現有的檔案。 如果您需要保留先前的檔案，請變更 **[!UICONTROL Target folder]** ，然後按一下 **[!UICONTROL Start]** 以再次執行匯出。
 
 當您匯出檔案時 **CSV格式**，每種語言都會連結至狀態和核准狀態。 此 **核准？** 欄可讓您核准翻譯。 此欄可能包含值 **是** 或 **否**. 至於整合式編輯器(請參閱 [在編輯器中管理翻譯](#managing-translations-in-the-editor))，則核准翻譯為選用，不會阻礙此程式。
 
-### 匯入檔案 {#importing-files}
+### 正在匯入檔案 {#importing-files}
 
-外部翻譯完成後，您可以匯入已翻譯的檔案。
+外部翻譯完成後，您可以匯入已翻譯檔案。
 
 1. 前往Web應用程式清單，按一下滑鼠右鍵，然後選取 **[!UICONTROL Actions > Import translated strings...]**
 
    >[!NOTE]
    >
-   >不需要選取翻譯所關心的Web應用程式。 將游標置於Web應用程式清單上的任何位置。
+   >不需要選取翻譯所關心的網頁應用程式。 將游標置於Web應用程式清單上的任何位置。
 
    ![](assets/s_ncs_admin_survey_trad_import.png)
 
@@ -154,11 +154,11 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
 >[!NOTE]
 >
->外部翻譯的優先順序一律高於內部翻譯。 如果發生衝突，內部翻譯將由外部翻譯覆寫。
+>外部翻譯總是比內部翻譯優先。 如果發生衝突，內部翻譯將由外部翻譯覆寫。
 
 ## 變更表單顯示語言 {#changing-forms-display-language}
 
-網路表單會以中指定的預設語言顯示 **[!UICONTROL Localization]** Web應用程式屬性的索引標籤。 若要變更語言，您必須在URL的結尾新增下列字元(其中 **xx** 是語言的符號)：
+網路表單會以中指定的預設語言顯示 **[!UICONTROL Localization]** Web應用程式屬性的頁簽。 若要變更語言，您必須在URL結尾處新增下列字元(其中 **xx** 是語言的符號)：
 
 ```
 ?lang=xx
@@ -170,13 +170,13 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 &lang=xx
 ```
 
-如果URL中的語言之前還有其他引數。 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
+如果URL中的語言之前有其他引數。 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 以下列出預設可用的翻譯語言和字典。
 
-**預設系統字典**：某些語言包含預設字典，其中包含系統字串的翻譯。 有關詳細資訊，請參閱 [轉譯系統字串](#translating-the-system-strings).
+**預設系統字典**：有些語言會包含預設字典，其中包含系統字串的翻譯。 有關詳細資訊，請參閱 [轉譯系統字串](#translating-the-system-strings).
 
-**行事曆管理**：網頁應用程式的頁面可包含用於輸入日期的日曆。 依預設，此行事曆提供數種語言版本（翻譯的天數、日期格式）。
+**行事曆管理**：網頁應用程式的頁面可包含用於輸入日期的日曆。 依預設，此行事曆提供數種語言版本（日翻譯、日期格式）。
 
 <table> 
  <tbody> 
@@ -412,7 +412,7 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 >
 >若要新增預設語言以外的其他語言，請參閱 [新增翻譯語言](#adding-a-translation-language)
 
-## 範例：以數種語言顯示Web應用程式 {#example--displaying-a-web-application-in-several-languages}
+## 範例：以數種語言顯示網頁應用程式 {#example--displaying-a-web-application-in-several-languages}
 
 下列網路表單提供四種語言版本：英文、法文、德文和西班牙文。 字元字串已透過 **[!UICONTROL Translation]** 網頁表單的索引標籤。 由於預設語言為英文，因此發佈調查表時，請使用標準URL以英文顯示。
 
@@ -430,7 +430,7 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
 >[!NOTE]
 >
->如果此Web應用程式已使用其他引數，請新增 **&amp;lang=**.\
+>如果此Web應用程式已經使用其他引數，請新增 **&amp;lang=**.\
 >例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## 進階翻譯設定 {#advanced-translation-configuration}
@@ -441,7 +441,7 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
 ### 轉譯系統字串 {#translating-the-system-strings}
 
-系統字串是所有Web應用程式所使用的現成可用的字元字串。 例如： **[!UICONTROL Next]** ， **[!UICONTROL Previous]**， **[!UICONTROL Approve]** 按鈕， **[!UICONTROL Loading]** 訊息等 依預設，某些語言會包含字典，其中包含這些字串的翻譯。 有關語言的詳細清單，請參閱 [變更表單顯示語言](#changing-forms-display-language).
+系統字串是所有Web應用程式所使用的現成可用的字元字串。 例如： **[!UICONTROL Next]** ， **[!UICONTROL Previous]**， **[!UICONTROL Approve]** 按鈕， **[!UICONTROL Loading]** 訊息等 依預設，某些語言會包含字典，其中包含這些字串的翻譯。 詳細語言清單位於 [變更表單顯示語言](#changing-forms-display-language).
 
 如果您將Web應用程式翻譯成系統字典未翻譯的語言，則會出現警告訊息，通知您缺少部分翻譯。
 
@@ -450,7 +450,7 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 若要新增語言，請套用下列步驟：
 
 1. 前往Adobe Campaign樹並按一下 **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
-1. 在視窗的上半部分，選取要翻譯的系統字串，然後按一下 **[!UICONTROL Add]** 位於下方。
+1. 在視窗的上半部分，選取要翻譯的系統字串，然後按一下 **[!UICONTROL Add]** 位於下半部分。
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
@@ -468,7 +468,7 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
 ### 新增翻譯語言 {#adding-a-translation-language}
 
-若要將Web應用程式翻譯成預設語言以外的語言(請參閱 [變更表單顯示語言](#changing-forms-display-language))，您需要新增翻譯語言。
+若要將網頁應用程式翻譯成預設語言以外的其他語言(請參閱 [變更表單顯示語言](#changing-forms-display-language))，您將需要新增翻譯語言。
 
 1. 按一下 **[!UICONTROL Administration > Platform > Enumerations]** Adobe Campaign樹狀結構的節點，並選取 **[!UICONTROL Languages available for translation]** 從清單中。 可用翻譯的清單會顯示在視窗的下方。
 

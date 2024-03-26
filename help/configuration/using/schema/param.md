@@ -63,10 +63,10 @@ param：==help
    * 日期時間
    * datetimetz
    * datetimenotz
-   * date
+   * 日期
    * DOMDocument
    * DOMElement
-   * 兩次
+   * 雙精度浮點數
    * 列舉
    * 浮點數
    * html
@@ -75,12 +75,12 @@ param：==help
    * 長
    * 備忘錄
    * MNTOKEN
-   * percent
+   * 百分比
    * 主要金鑰
    * 短
    * 字串
    * 時間
-   * 時間跨度
+   * 時間範圍
    * uuid
 
 ## 範例 {#examples-9}

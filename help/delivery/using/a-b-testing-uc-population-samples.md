@@ -9,8 +9,8 @@ role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 6%
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 6%
 
 1. 建立剩餘母體：
 
-   * 移至 **[!UICONTROL General]** 索引標籤。
+   * 前往 **[!UICONTROL General]** 標籤。
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 
@@ -80,4 +80,4 @@ ht-degree: 6%
 
      ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您現在可以建立兩個傳遞範本。 [了解更多](a-b-testing-uc-delivery-templates.md)).
+您現在可以建立兩個傳遞範本。 [瞭解更多](a-b-testing-uc-delivery-templates.md))。

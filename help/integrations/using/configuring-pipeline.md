@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 2%
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 要處理的觸發程式清單是在JSON格式的選項中設定。
 這些觸發程式由傳送電子郵件的行銷活動工作流程用於鎖定目標。 行銷活動的設定方式是讓具有兩個觸發事件的客戶收到電子郵件。
 
-## 必要條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 開始此設定前，請檢查您是否使用：
 
@@ -128,13 +128,13 @@ ht-degree: 2%
 
 您可在下方找到選用引數清單：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |:-:|:-:|
 | appName（舊版） | 在上傳公開金鑰的舊版Oath應用程式中註冊的OAuth應用程式的AppID。 如需關於此項目的詳細資訊，請參閱此[頁面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（舊版） | 取得閘道權杖的URL。 預設: ```https://api.omniture.com``` |
+| authGatewayEndpoint（舊版） | 取得閘道權杖的URL。 預設： ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | 在舊版Oath應用程式中上傳的私密金鑰、公開部分，以XtkKey選項加密的AES： ```cryptString("PRIVATE_KEY")``` |
 | disableAuth（舊版） | 停用驗證，只有某些開發管道端點接受沒有閘道權杖的連線。 |
-| discoverPipelineEndpoint | 用於尋找要用於此租使用者的管道服務端點的URL。 預設: ```https://producer-pipeline-pnw.adobe.net``` |
+| discoverPipelineEndpoint | 用於尋找要用於此租使用者的管道服務端點的URL。 預設： ```https://producer-pipeline-pnw.adobe.net``` |
 | dumpStatePeriodSec | 中的兩個內部狀態處理序傾印之間的期間 ```var/INSTANCE/pipelined.json.``` <br> 您也可以在這裡隨選存取內部狀態： ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | 停用偵測PipelineServicesEndpoint以強制執行 |
 | monitorServerPort | 管線處理將在此連線埠上接聽，以提供內部狀態處理： ```http://INSTANCE:PORT/pipelined/status```. <br>預設為7781 |

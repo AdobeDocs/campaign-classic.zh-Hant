@@ -3,19 +3,19 @@ product: campaign
 title: 存取外部資料庫的許可權
 description: 外部資料庫存取許可權
 feature: Installation, Instance Settings, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
 
-# 遠端資料庫存取權限 {#remote-database-access-rights}
+# 遠端資料庫存取許可權 {#remote-database-access-rights}
 
 
 

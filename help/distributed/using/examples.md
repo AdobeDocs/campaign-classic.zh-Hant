@@ -2,13 +2,13 @@
 product: campaign
 title: 分散式行銷範例
 description: 分散式行銷範例
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 0%
+source-wordcount: '1303'
+ht-degree: 1%
 
 ---
 
@@ -18,23 +18,23 @@ ht-degree: 0%
 
 ## 建立本機行銷活動（依表單） {#creating-a-local-campaign--by-form-}
 
-此 **依表單** 鍵入web介面涉及使用 **網頁應用程式**. 根據設定，此Web應用程式可包含任何型別的已定義個人化元素。 例如，您可以建議用來評估目標、預算、內容等的連結。 透過專用API。
+此 **依表單** 型別web介面涉及使用 **網頁應用程式**. 根據設定，此Web應用程式可包含任何型別的已定義個人化元素。 例如，您可以建議連結以評估目標、預算、內容等。 透過專用API。
 
 >[!NOTE]
 >
 >API會在專屬檔案中詳細說明。 [了解更多](../../configuration/using/about-web-services.md)。
 >
->此範例中使用的網頁應用程式並非隨Adobe Campaign提供的現成網頁應用程式。 若要在行銷活動中使用表單，您必須建立專用的Web應用程式。
+>此範例中使用的網頁應用程式，並非隨Adobe Campaign提供的現成網頁應用程式。 若要在行銷活動中使用表單，您必須建立專用的Web應用程式。
 
-建立行銷活動範本時，按一下 **[!UICONTROL Zoom]** 圖示位於 **[!UICONTROL Web interface]** 的選項 **[!UICONTROL Advanced campaign settings...]** 存取網頁應用程式詳細資料的連結。
+建立行銷活動範本時，按一下 **[!UICONTROL Zoom]** 圖示( **[!UICONTROL Web interface]** 的選項 **[!UICONTROL Advanced campaign settings...]** 存取網頁應用程式詳細資料的連結。
 
 ![](assets/mkg_dist_local_op_form1.png)
 
 >[!NOTE]
 >
->Web應用程式引數僅在行銷活動範本中可用。
+>Web應用程式引數只能在行銷活動範本中使用。
 
-在 **[!UICONTROL Edit]** 索引標籤中，選取 **行銷活動訂單** 活動並開啟它以存取其內容。
+在 **[!UICONTROL Edit]** 索引標籤中，選取 **行銷活動訂單** 活動，並開啟它以存取其內容。
 
 ![](assets/mkg_dist_web_app1.png)
 
@@ -42,49 +42,49 @@ ht-degree: 0%
 
 * 要由本地實體在訂單期間輸入的欄位，
 
-   ![](assets/mkg_dist_web_app2.png)
+  ![](assets/mkg_dist_web_app2.png)
 
-* 可讓本機實體評估行銷活動的連結（例如目標、預算、內容等），
+* 可讓本地實體評估行銷活動的連結（例如目標、預算、內容等），
 
-   ![](assets/mkg_dist_web_app3.png)
+  ![](assets/mkg_dist_web_app3.png)
 
 * 可讓您計算並顯示這些評估結果的指令碼。
 
-   ![](assets/mkg_dist_web_app4.png)
+  ![](assets/mkg_dist_web_app4.png)
 
 在此範例中，使用下列API：
 
 * 對於目標評估，
 
-   ```
-   var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
+  ```
 
 * 對於預算評估，
 
-   ```
-   var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
-   ```
+  ```
+  var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
+  ```
 
 * 對於內容評估，
 
-   ```
-   var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
+  ```
 
 ## 建立合作行銷活動（依目標核准） {#creating-a-collaborative-campaign--by-target-approval-}
 
 ### 簡介 {#introduction}
 
-您是一家大型服裝品牌的行銷經理，該品牌在美國各地有一家線上商店和幾家精品店。 春天到了，您決定建立特別優惠方案，將給予最佳客戶目錄中所有洋裝50%的優惠。
+您是一家大型服裝品牌的行銷經理，該品牌在美國各地擁有一家線上商店和幾家精品店。 春天到了，您決定建立特別優惠方案，將給予最佳客戶目錄中所有裙子50%的優惠。
 
-此優惠方案主要針對美國店內最優秀的客戶，也就是說自今年初以來已花費300美元以上的客戶。
+此優惠方案主要針對您美國店舖的最佳客戶，也就是說自今年初以來已花費超過$300的客戶。
 
-因此，您決定使用分散式行銷來建立合作行銷活動（依目標核准），這可讓您選取商店的最佳客戶（依地區分組），這些客戶將收到包含特殊優惠方案的電子郵件傳送。
+因此，您決定使用分散式行銷來建立合作行銷活動（依目標核准），這可讓您選取商店的最佳客戶（依區域分組），這些客戶將收到包含特殊優惠方案的電子郵件傳遞。
 
-此範例的第一部分說明接收行銷活動建立通知的本地實體，以及如何使用它來評估行銷活動並進行排序。
+此範例的第一部分說明接收行銷活動建立通知的本地實體，以及如何使用它來評估行銷活動並進行訂購。
 
-此範例的第二部分說明如何建立行銷活動。
+此範例的第二部分說明如何建立您的行銷活動。
 
 步驟如下：
 
@@ -105,15 +105,15 @@ ht-degree: 0%
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. 按一下 **[!UICONTROL Access your contact list and approve targeting]** 連結，則本機實體可（透過網頁瀏覽器）存取為該促銷活動選取的使用者端清單。
+1. 按一下 **[!UICONTROL Access your contact list and approve targeting]** 連結，則本機實體可（透過網頁瀏覽器）存取為促銷活動選取的使用者端清單。
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
-1. 本機實體會從清單中取消檢查某些連絡人，因為自年初以來，已有人就類似優惠方案與他們連絡。
+1. 本機實體會從清單中取消檢查某些連絡人，因為自年初以來，已就類似的選件與他們聯絡。
 
    ![](assets/mkg_dist_use_case_target_valid10.png)
 
-檢查通過核准後，行銷活動即可自動開始。
+檢查通過後，行銷活動就會自動開始。
 
 ### 中央實體側 {#central-entity-side}
 
@@ -125,16 +125,16 @@ ht-degree: 0%
 
 1. 在 **[!UICONTROL General]** 標籤，您必須指定：
 
-   * 此 **[!UICONTROL Targeting dimension]**. 此處 **資料分佈** 是在以下專案上執行的： **收件者**.
-   * 此 **[!UICONTROL Distribution type]**. 您可以選擇 **固定大小** 或 **以百分比顯示的大小**.
+   * 此 **[!UICONTROL Targeting dimension]**. 此處 **資料分佈** 執行於 **收件者**.
+   * 此 **[!UICONTROL Distribution type]**. 您可以選擇 **固定大小** 或 **百分比形式的大小**.
    * 此 **[!UICONTROL Assignment type]**. 選取 **本地實體** 選項。
    * 此 **[!UICONTROL Distribution type]**. 在此，它是 **[!UICONTROL Origin (@origin)]** 「收件者」表格中顯示的欄位，可讓您識別連絡人與本機實體之間的關係。
-   * 此 **[!UICONTROL Approval storage]** 欄位。 選取 **收件者的本機核准** 選項。
+   * 此 **[!UICONTROL Approval storage]** 欄位。 選取 **在本地核准收件者** 選項。
 
-1. 在 **[!UICONTROL Breakdown]** 索引標籤中，指定：
+1. 在 **[!UICONTROL Breakdown]** 標籤，指定：
 
-   * 此 **[!UICONTROL Distribution field value]**，對應至即將推出的行銷活動中涉及的本機實體。
-   * 本機實體 **[!UICONTROL label]**.
+   * 此 **[!UICONTROL Distribution field value]**，對應於即將推出的行銷活動中涉及的本機實體。
+   * 本地實體 **[!UICONTROL label]**.
    * 此 **[!UICONTROL Size]** （固定或百分比）。 此 **0預設值** 涉及選取連結至本機實體的所有收件者。
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
@@ -144,7 +144,7 @@ ht-degree: 0%
 #### 建立協作行銷活動 {#creating-a-collaborative-campaign}
 
 1. 從 **[!UICONTROL Campaign management > Campaign]** 節點，建立新的 **[!UICONTROL collaborative campaign (by target approval)]**.
-1. 在 **[!UICONTROL Targeting and workflows]** 標籤，為您的行銷活動建立工作流程。 這必須包含 **Split** 活動，其中 **[!UICONTROL Record count limitation]** 由 **[!UICONTROL Data distribution]** 活動。
+1. 在 **[!UICONTROL Targeting and workflows]** 標籤，為您的行銷活動建立工作流程。 這必須包含 **Split** 活動所在的 **[!UICONTROL Record count limitation]** 由以下定義 **[!UICONTROL Data distribution]** 活動。
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
@@ -164,8 +164,8 @@ ht-degree: 0%
 
 1. 選擇您的 **[!UICONTROL Reference campaign]**. 在 **[!UICONTROL Edit]** 標籤中，您可以選取 **[!UICONTROL Approval mode]** 用於您的行銷活動：
 
-   * 在 **手動** 模式，則當地實體如果接受來自中央實體的邀請，則會參與促銷活動。 如果他們想要並且需要經理的核准來確認他們參與促銷活動，則可以刪除預先選取的連絡人。
-   * 在 **自動** 模式，則本機實體必須參與行銷活動，除非他們從行銷活動中取消註冊。 他們不需要核准就可以刪除連絡人。
+   * 在 **手動** 模式，如果本機實體接受來自中央實體的邀請，則會參與促銷活動。 如果他們想要且需要經理的核准以確認其參與促銷活動，則可以刪除預先選取的聯絡人。
+   * 在 **自動** 模式，則本機實體必須參與行銷活動，除非他們從行銷活動取消註冊。 他們不需要核准就可以刪除連絡人。
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
@@ -181,13 +181,13 @@ ht-degree: 0%
 
 ### 簡介 {#introduction-1}
 
-您是一家大型化妝品牌的行銷經理，該品牌在美國各地有一家線上商店和幾家精品店。 為了解除安裝冬季庫存並為新庫存騰出空間，您決定建立一個特別優惠方案，以兩種客戶類別為目標：30歲以上的客戶，您將向其提供對年齡敏感的護膚產品；以及30歲以下的客戶，您將向其提供更基本的護膚產品。
+您是一家大型化妝品牌的行銷經理，該品牌在美國各地擁有一家線上商店和幾家精品店。 為了卸除冬季庫存，並為新庫存騰出空間，您決定建立特別優惠方案，以兩種客戶類別為目標：30歲以上的客戶，您將向其提供年齡敏感的護膚產品；以及30歲以下的客戶，您將向其提供更基本的護膚產品。
 
-因此，您決定使用分散式行銷來建立合作行銷活動（依表單），這可讓您依年齡範圍從不同的商店選取客戶。 這些客戶將收到包含特殊優惠方案的電子郵件傳遞，這些優惠方案將根據其年齡範圍進行個人化。
+因此，您決定使用分散式行銷來建立合作行銷活動（依表單），可讓您依年齡範圍從不同的商店選取客戶。 這些客戶將收到電子郵件傳遞，內含已根據其年齡範圍進行個人化的特殊優惠。
 
-此範例的第一部分說明接收行銷活動建立通知的本地實體，以及如何使用它來評估行銷活動並進行排序。
+此範例的第一部分說明接收行銷活動建立通知的本地實體，以及如何使用它來評估行銷活動並進行訂購。
 
-此範例的第二部分說明如何建立行銷活動。
+此範例的第二部分說明如何建立您的行銷活動。
 
 步驟如下：
 
@@ -209,7 +209,7 @@ ht-degree: 0%
 
 ### 本機實體側 {#local-entity-side-1}
 
-1. 選取參加行銷活動的本地實體會收到電子郵件通知，告知其已參加行銷活動。
+1. 選取要參與行銷活動的本地實體會收到電子郵件通知，通知他們已參與行銷活動。
 
    ![](assets/mkg_dist_use_case_form_7.png)
 
@@ -217,9 +217,9 @@ ht-degree: 0%
 
    * 評估目標和預算，
    * 預覽傳遞內容，
-   * 核准其參與。
+   * 核准其參與率。
 
-      ![](assets/mkg_dist_use_case_form_8.png)
+     ![](assets/mkg_dist_use_case_form_8.png)
 
 1. 負責驗證訂單的操作員核准其參與。
 
@@ -227,7 +227,7 @@ ht-degree: 0%
 
 ### 中央實體側 {#central-entity-side-1}
 
-1. 若要實作合作行銷活動（依表單），您必須使用 **合作行銷活動（依表單）** 範本。
+1. 若要實施合作行銷活動（依表單），您必須使用下列專案建立行銷活動： **合作行銷活動（依表單）** 範本。
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
@@ -236,18 +236,18 @@ ht-degree: 0%
    ![](assets/mkg_dist_use_case_form_2.png)
 
 1. 設定行銷活動工作流程與網頁表單。 請參閱 [建立本機行銷活動（依表單）](#creating-a-local-campaign--by-form-).
-1. 指定執行排程和相關本機實體，以建立您的行銷活動套件。
+1. 指定執行排程和相關本機實體，以建立您的Campaign套件。
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. 選取中的核准模式，以完成套件設定 **[!UICONTROL Edit]** 標籤。
+1. 選擇中的核准模式，完成套件設定 **[!UICONTROL Edit]** 標籤。
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. 從 **[!UICONTROL Description]** 索引標籤中，您可以輸入campaign套件說明、發佈套件時傳送給本機實體的通知訊息，並將任何資訊性檔案附加至您的campaign套件。
+1. 從 **[!UICONTROL Description]** 索引標籤中，您可以輸入campaign套件說明、發佈套件時傳送給本機實體的通知訊息，並將任何資訊性檔案附加至campaign套件。
 
    ![](assets/mkg_dist_use_case_form_5.png)
 
-1. 核准要發佈的套件。
+1. 核准套件以發佈。
 
    ![](assets/mkg_dist_use_case_form_6.png)

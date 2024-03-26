@@ -11,8 +11,8 @@ topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 41%
+source-wordcount: '1112'
+ht-degree: 24%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 41%
 
 管理用於 ETL 的檔案和資料時，這些檔案儲存在 Adobe 提供的代管 SFTP 伺服器上。使用SFTP伺服器時，請務必遵循下列建議。
 
-* 使用基於密鑰的身份驗證而不是密碼身份驗證，以避免密碼過期 (密碼的有效期為 90 天)。此外，基於金鑰的身份驗證允許您生成多個金鑰，例如在管理多個實體時。相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
+* 為避免密碼過期（密碼的有效期為90天），請使用以金鑰為基礎的驗證而非密碼驗證。 此外，以金鑰為基礎的驗證可讓您產生多個金鑰，例如在管理多個實體時。 相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
 
-  支持的金鑰格式為 SSH-2 RSA 2048。金鑰可使用PyTTY (Windows)或ssh-keygen (Unix)等工具產生。您必須透過以下方式向Adobe支援團隊提供公開金鑰： [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 將其上傳至Campaign伺服器。
+  支援的金鑰格式為SSH-2 RSA 2048。 金鑰可使用PyTTY (Windows)或ssh-keygen (Unix)等工具產生。您必須透過以下方式向Adobe支援團隊提供公開金鑰： [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 將其上傳至Campaign伺服器。
 
 * 在 SFTP 上載和工作流程中使用批次處理。
 
 * 處理錯誤/例外狀況。
 
-* 按照預設，您建立的所有資料夾僅為標識符的讀/寫模式。建立需要由 Campaign 存取的資料夾時，請確保使用整個組的讀/寫權限進行配置。否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
+* 依預設，您建立的所有資料夾都處於唯有識別碼的讀/寫模式。 建立需要Campaign存取的資料夾時，請務必以整個群組的讀取/寫入許可權來設定資料夾。 否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
 
 * 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 可以透過以下方式請求將IP位址新增到允許清單 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -46,13 +46,13 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 >[!NOTE]
 >
->如果您的執行個體託管在 AWS 上，則可以使用 Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html)監控 SFTP 伺服器儲存。若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
+>如果您的執行個體託管於AWS上，則可以使用Campaign Classic監視SFTP伺服器儲存空間 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的執行個體必須升級為 [最新GA版本](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
+>請注意，您的執行個體必須升級為 [最新GA版本](../../rn/using/rn-overview.md). 瞭解如何簽入您的版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-* 伺服器大小功能因許可證而異。在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
+* 伺服器大小功能會依您的授權而有所不同。 在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 
 * 使用工作流程正確刪除資料（管理使用資料的工作流程的保留）。
 
@@ -73,7 +73,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 以下區段列出要檢查的資訊，並透過提供給Adobe支援團隊 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到Adobe代管SFTP伺服器的連線問題時。
 
-1. 檢查您的執行個體是否正在運行。若要這麼做，請開啟瀏覽器，然後進行 **[!UICONTROL GET]** 在執行個體上呼叫 **[!UICONTROL /r/test]** 端點：
+1. 檢查您的執行個體是否正在執行。 若要這麼做，請開啟瀏覽器，然後進行 **[!UICONTROL GET]** 在執行個體上呼叫 **[!UICONTROL /r/test]** 端點：
 
    ```
    https://instanceUrl/r/test
@@ -88,7 +88,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
    在任何情況下，請在支援票證中提供命令回應。
 
-1. 檢查出站端口 22 是否在嘗試啟動 SFTP 連接的站點上打開。為此，請使用以下命令：
+1. 檢查輸出連線埠22是否已在您嘗試啟動SFTP連線的站台開啟。 為此，請使用以下命令：
 
    ```
    bash-3.2$ nc -vz <SFTP_URL> 22
@@ -103,7 +103,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
    >
    >Netcat 工具可讓您輕鬆管理各種操作系統上的網路連線 (請參見 [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/))。
 
-   如果埠未打開，請確保打開側面的傳出連線，然後重試。如果您仍然遇到連線問題，請將命令的輸出分享給 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
+   如果未開啟連線埠，請確定開啟您這端的輸出連線，然後再試一次。 如果您仍然遇到連線問題，請將命令的輸出分享給 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
 
 1. 檢查您嘗試啟動SFTP連線的公用IP是否為允許清單提供給Adobe支援的IP。
 1. 如果您使用以密碼為基礎的驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用金鑰式驗證(請參閱 [SFTP伺服器最佳實務](#sftp-server-best-practices))。

@@ -2,13 +2,13 @@
 product: campaign
 title: 指標計算
 description: 指標計算
-badge: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 7%
+source-wordcount: '3049'
+ht-degree: 3%
 
 ---
 
@@ -35,14 +35,14 @@ ht-degree: 7%
    <td> sum(Iif([@url-id]=1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 點擊數<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @clicks<br /> </td> 
    <td> URL型別等於「電子郵件點選」的所有@totalClicks數總和。<br /> </td> 
    <td> sum(Iif([url/@type]=1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 交易數<br /> </td> 
-   <td> @交易數<br /> </td> 
+   <td> 交易<br /> </td> 
+   <td> @transactions<br /> </td> 
    <td> URL型別等於「交易」的所有@totalClicks案總和。<br /> </td> 
    <td> sum(Iif([url/@type]=5， @totalClicks， 0))<br /> </td> 
   </tr> 
@@ -80,7 +80,7 @@ ht-degree: 7%
    <td> Count(@status=2且msg/@failureReason=1)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 無法聯繫 <br /> </td> 
+   <td> 無法聯絡 <br /> </td> 
    <td> @unreachable<br /> </td> 
    <td> 狀態等於「失敗」且原因等於「無法聯絡」的所有訊息計數。 <br /> </td> 
    <td> Count(@status=2且msg/@failureReason=3)<br /> </td> 
@@ -111,7 +111,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 錯誤<br /> </td> 
-   <td> @值<br /> </td> 
+   <td> @value<br /> </td> 
    <td> 此錯誤型別的失敗訊息數。<br /> </td> 
    <td> Count(@status=2且msg/@failureReason="錯誤型別的值")<br /> </td> 
   </tr> 
@@ -232,18 +232,18 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 電子郵件<br /> </td> 
-   <td> @電子郵件<br /> </td> 
+   <td> @email<br /> </td> 
    <td> URL類別等於「電子郵件」的所有@totalClicks案總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Facebook<br /> </td> 
+   <td> facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> URL類別等於「facebook」的所有@totalClicks數總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Twitter<br /> </td> 
+   <td> twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> URL類別等於「twitter」的所有@totalClicks數總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter'，@totalClicks，0))<br /> </td> 
@@ -370,7 +370,7 @@ ht-degree: 7%
   <tr> 
    <td> 共用<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> 包含在「電子郵件」、「facebook」、「twitter」、「delicious」、「digg」、「google」、「linkedin」中的URL類別<br /> URL類別等於「email」、「facebook」、「twitter」、「delicious」、「digg」、「google」或「linkedin」的所有@totalClicks戶計數。<br /> </td> 
+   <td> 「電子郵件」、「facebook」、「twitter」、「美味」、「digg」、「google」、「linkedin」中包含的URL類別<br /> URL類別等於「email」、「facebook」、「twitter」、「delicious」、「digg」、「google」或「linkedin」的所有@totalClicks戶計數。<br /> </td> 
    <td> count (Iif([url/@category] IN (email' ， 'facebook' ， 'twitter' ， 'delicious' ， 'digg' ， 'google' ， 'linkedin')， @totalClicks， 0))<br /> </td> 
   </tr> 
  </tbody> 
@@ -479,7 +479,7 @@ ht-degree: 7%
    <td> sum(Iif(@action = 0且@date &gt; addDays(getDate()， (-1))， 1， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 演變<br /> </td> 
+   <td> 演化<br /> </td> 
    <td> -<br /> </td> 
    <td> 訂閱數減去取消訂閱數。 此比率是根據訂閱者總數所計算。<br /> </td> 
    <td> Iif(number(@_subscription) &gt; number(@_unsubscription)， '+'， ")+format(@_subscription - @_unsubscription， 'number'， '# ##0')+ Iif(@_subscriber&gt;0，' (' +格式(100*percent(@_subscription - @_unsubscription， @_subscriber)， 'number'， '#，##0.00')+ '%)'，")<br /> </td> 
@@ -568,7 +568,7 @@ ht-degree: 7%
    <td> Countdistinct ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 點擊數<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @recipientClick<br /> </td> 
    <td> URL型別等於「Email click」的@broadLog-ids案不重複計數。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1， @broadLog-id， 0))<br /> </td> 
@@ -610,7 +610,7 @@ ht-degree: 7%
    <td> count(Iif([url/@type]=4或[url/@type]=5， @id， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 交易數<br /> </td> 
+   <td> 交易<br /> </td> 
    <td> @transaction<br /> </td> 
    <td> URL型別等於「交易」的所有@ids案計數。<br /> </td> 
    <td> count(Iif([url/@type]=5， @id， 0))<br /> </td> 
@@ -647,18 +647,18 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 電子郵件<br /> </td> 
-   <td> @電子郵件<br /> </td> 
+   <td> @email<br /> </td> 
    <td> URL類別等於「電子郵件」的所有@totalClicks案總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Facebook<br /> </td> 
+   <td> facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> URL類別等於「facebook」的所有@totalClicks數總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Twitter<br /> </td> 
+   <td> twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> URL類別等於「twitter」的所有@totalClicks數總和。<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter'，@totalClicks，0))<br /> </td> 
@@ -723,13 +723,13 @@ ht-degree: 7%
    <td> percent([indicators/@totalRecipientClick]， [indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 點擊數<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @_click<br /> </td> 
    <td> URL主索引鍵與1不同的所有@totalClicks數<br /> </td> 
    <td> count(Iif([@url-id]] ！= 1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 點擊數 (%)<br /> </td> 
+   <td> 點按次數(%)<br /> </td> 
    <td> -<br /> </td> 
    <td> 相較於累計點按總數的點按次數百分比。<br /> </td> 
    <td> percent(@_click， @_total)<br /> </td> 
@@ -752,7 +752,7 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 初始族群<br /> </td> 
+   <td> 初始母體<br /> </td> 
    <td> @totalTarget<br /> </td> 
    <td> 傳遞所定位的收件者總數。<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
@@ -782,7 +782,7 @@ ht-degree: 7%
    <td> sum([indicators/@error])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 新的隔離<br /> </td> 
+   <td> 新隔離<br /> </td> 
    <td> @newQuarantine<br /> </td> 
    <td> 傳送失敗（使用者不明、網域無效）後隔離的位址數。<br /> </td> 
    <td> sum([indicators/@newQuarantine])<br /> </td> 
@@ -811,13 +811,13 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 交易數<br /> </td> 
-   <td> @交易數<br /> </td> 
+   <td> 交易<br /> </td> 
+   <td> @transactions<br /> </td> 
    <td> URL型別等於「交易」的所有@totalClicks案總和。<br /> </td> 
    <td> sum(Iif([url/@type] = 5， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 點擊數<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @clicks<br /> </td> 
    <td> URL型別等於「電子郵件點選」的所有@totalClicks數總和。<br /> </td> 
    <td> sum(Iif([url/@type] = 1， @totalClicks， 0))<br /> </td> 
@@ -858,13 +858,13 @@ ht-degree: 7%
    <td> 指示器/@success<br /> </td> 
   </tr> 
   <tr> 
-   <td> 硬退回次數<br /> </td> 
+   <td> 硬跳出<br /> </td> 
    <td> @hardBounce<br /> </td> 
    <td> 狀態等於「失敗」且原因等於「使用者未知」的訊息總數。<br /> </td> 
    <td> @unknownUser<br /> </td> 
   </tr> 
   <tr> 
-   <td> 軟退回次數<br /> </td> 
+   <td> 軟退信<br /> </td> 
    <td> @softBounce<br /> </td> 
    <td> 狀態等於「失敗」且原因等於「無法聯絡」、「收件匣已滿」、「無效網域」、「已停用帳戶」、「未連線」或「已拒絕」的所有郵件總數<br /> </td> 
    <td> @unreachable + @mailBoxFull + @invalidDomain + @disabled + @notConnected + @refused<br /> </td> 
@@ -876,7 +876,7 @@ ht-degree: 7%
    <td> Countdistinct ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 點擊數<br /> </td> 
+   <td> 點按次數<br /> </td> 
    <td> @personClick<br /> </td> 
    <td> URL類別等於「電子郵件@source-ids擊」的總點選數。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1， @source-id， 0)) <br /> </td> 
@@ -925,7 +925,7 @@ ht-degree: 7%
 
 ## 追蹤開啟次數 {#tracking-opens-}
 
-為了讓Adobe Campaign偵測郵件開啟，收件者必須下載電子郵件中的影像。 HTML和多部分/替代電子郵件包含0畫素影像，可讓您偵測已開啟的訊息。 由於文字格式的訊息不含任何影像，因此無法偵測其是否已開啟。 由於連結至影像顯示的錯誤邊界，根據訊息開啟計算出的值一律為預估值。
+為了讓Adobe Campaign偵測郵件開啟，收件者必須下載電子郵件中的影像。 HTML 和多重部分/替代的電子郵件包含一個 0 像素影像，讓您能夠檢測那些已開啟的訊息。由於文字格式的訊息不包含任何影像，因此無法檢測這類訊息是否已被開啟。由於與影像顯示相關的誤差範圍，根據訊息開啟次數計算的數值一定是估計值。
 
 ## 目標對象/收件者 {#targeted-persons---recipients}
 

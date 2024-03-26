@@ -3,15 +3,15 @@ product: campaign
 title: 使用Adobe Campaign Explorer
 description: 瞭解如何使用Campaign Explorer
 feature: Overview
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 34%
+source-wordcount: '454'
+ht-degree: 15%
 
 ---
 
@@ -19,17 +19,17 @@ ht-degree: 34%
 
 
 
-可透過工具列圖示存取 Adobe Campaign 探索器。使用工具列圖示，您可以存取 Adobe Campaign、所有 Adobe Campaign 功能、設定畫面以及部分平台元素的更詳細視圖。
+Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖示，您可以存取 Adobe Campaign、所有 Adobe Campaign 功能、設定畫面以及部分平台元素的更詳細視圖。
 
-**[!UICONTROL Explorer]** 工作區分成三個區域：
+此 **[!UICONTROL Explorer]** 工作區分為三個區域：
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - 樹狀結構清單**：您可以個人化樹狀結構的內容 (新增、移動或刪除節點)。此程序僅適用於資深使用者。有關詳細資訊，請參閱  [本節](#about-navigation-hierarchy).)。
+**1 — 樹狀**：您可以個人化樹狀結構的內容（新增、移動或刪除節點）。 此程式僅供專家使用者使用。 有關詳細資訊，請參閱  [本節](#about-navigation-hierarchy).)。
 
-**2 - 清單**：您可以篩選清單、執行搜尋、新增資訊或排序資料。[了解更多](adobe-campaign-ui-lists.md)。
+**2 — 清單**：您可以篩選此清單、執行搜尋、新增資訊或排序資料。 [了解更多](adobe-campaign-ui-lists.md)。
 
-**3 - 詳情**：您可以顯示所選元素的詳細資訊。透過右上角的圖示，您可以全螢幕顯示這項資訊。
+**3 — 詳細資料**：您可以顯示所選元素的詳細資料。 透過右上角的圖示，您可以全螢幕顯示這項資訊。
 
 ## 資料夾和導覽樹狀結構{#about-navigation-hierarchy}
 
@@ -78,7 +78,7 @@ ht-degree: 34%
 >
 >Adobe Campaign不支援1600x900畫素以下的解析度。
 
-在 **[!UICONTROL Explorer]** 工作區中，如果出現部分 **[!UICONTROL Details]** 區域被截斷，請透過區域頂端的箭頭加以展開或按一下 **[!UICONTROL Enlarge]** 按鈕。
+在 **[!UICONTROL Explorer]** 工作區，如果 **[!UICONTROL Details]** 區域似乎被截斷，請使用區域頂端的箭頭將其展開，或按一下 **[!UICONTROL Enlarge]** 按鈕。
 
 ![](assets/s_ncs_user_resolution.png)
 

@@ -3,15 +3,15 @@ product: campaign
 title: 設定Netezza的存取權
 description: 瞭解如何在FDA中設定Netezza存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 0%
+source-wordcount: '376'
+ht-degree: 1%
 
 ---
 
@@ -81,7 +81,7 @@ netezza外部帳戶可讓您將您的Campaign執行個體連線至Netezza外部�
 
 1. 若要設定 **[!UICONTROL Netezza]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: Netezza
+   * **[!UICONTROL Type]**：Netezza
 
    * **[!UICONTROL Server]**：Netezza伺服器的URL
 

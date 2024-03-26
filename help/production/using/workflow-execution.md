@@ -3,7 +3,7 @@ product: campaign
 title: 工作流程執行
 description: 工作流程執行
 feature: Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 5%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 
@@ -120,5 +120,5 @@ ht-degree: 5%
 如果工作流程失敗，請執行以下步驟：
 
 1. 檢查工作流程日誌。 有關詳細資訊，請參閱 [監視工作流程的執行](../../workflow/using/monitoring-workflow-execution.md) 和 [顯示記錄](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) 區段。
-1. 監視技術工作流程. 如需詳細資訊，請參閱 [本節](../../workflow/using/monitoring-technical-workflows.md).
+1. 監視技術工作流程。 如需詳細資訊，請參閱 [本節](../../workflow/using/monitoring-technical-workflows.md).
 1. 尋找個別工作流程活動上的失敗。

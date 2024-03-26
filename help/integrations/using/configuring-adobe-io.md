@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 為 Adobe Experience Cloud 觸發器配置 Adobe I/O
+title: 設定Adobe Experience Cloud Triggers的Adobe I/O
 description: 瞭解如何設定Adobe Experience Cloud Triggers的Adobe I/O
 feature: Triggers
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
@@ -12,12 +12,12 @@ snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 5%
+source-wordcount: '753'
+ht-degree: 6%
 
 ---
 
-# 為 Adobe Experience Cloud 觸發器配置 Adobe I/O {#configuring-adobe-io}
+# 設定Adobe Experience Cloud Triggers的Adobe I/O {#configuring-adobe-io}
 
 >[!CAUTION]
 >
@@ -26,7 +26,7 @@ ht-degree: 5%
 >
 >已淘汰具有Campaign的舊版oAuth驗證模式 **2021年10月20日**. 託管環境可從擴充功能受益，直到 **2022年5月25日**. 若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至 **2022年5月**. 您必須 [提供Oauth應用程式的AppID](../../integrations/using/configuring-pipeline.md#step-optional) 以Adobe。
 
-## 必要條件 {#adobe-io-prerequisites}
+## 先決條件 {#adobe-io-prerequisites}
 
 這項整合只適用於開始使用 **Campaign Classic 20.2.4及更高版本、19.1.8和Gold Standard 11版本**.
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
-> JWT （JSON Web權杖）目前正在折舊中，將由OAuth取代。 此轉換在Campaign即將發行的版本中逐步執行，檔案將會更新以反映這些更新。
+> JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
 
 1. 存取 [!DNL Adobe I/O] 並使用貴組織的開發人員存取權登入。 請確定您已登入正確的組織入口網站。
 

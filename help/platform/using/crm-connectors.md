@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: CRM 連接器
+title: CRM聯結器
 description: 開始使用Campaign中的CRM聯結器
 feature: Microsoft CRM Integration, Salesforce Integration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -11,11 +11,11 @@ exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
-# CRM 連接器{#crm-connectors}
+# CRM聯結器{#crm-connectors}
 
 
 

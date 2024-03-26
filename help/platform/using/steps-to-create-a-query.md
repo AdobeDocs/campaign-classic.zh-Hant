@@ -11,7 +11,7 @@ topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '868'
 ht-degree: 2%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 2%
 
 此 **[!UICONTROL Transformation]** 欄可讓您將欄標籤變更為大寫或小寫。 選取欄並按一下 **[!UICONTROL Transformation]** 欄。 您可以選擇：
 
-* **[!UICONTROL Switch to lower case]**，
+* **[!UICONTROL Switch to lower case]**,
 * **[!UICONTROL Switch to upper case]**,
 * **[!UICONTROL First letter in upper case]**.
 

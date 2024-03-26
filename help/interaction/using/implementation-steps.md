@@ -3,12 +3,12 @@ product: campaign
 title: 實施步驟
 description: Campaign互動模組的實作步驟
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -55,5 +55,5 @@ ht-degree: 2%
 >
 >下列步驟應由執行 **傳遞管理員** 設定檔。 他們只能在即時環境中編輯選件。
 
-1. 建立行銷活動.
+1. 建立行銷活動。
 1. 在行銷活動或行銷活動傳遞中參考優惠方案。 有關詳細資訊，請參閱 [關於傳出頻道](../../interaction/using/about-outbound-channels.md).

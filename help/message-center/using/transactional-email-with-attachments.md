@@ -3,12 +3,12 @@ product: campaign
 title: 傳送含附件的異動電子郵件
 description: 瞭解如何使用Adobe Campaign傳送包含個人和/或個人化附件的異動電子郵件
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -55,9 +55,9 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 >[!NOTE]
 >
->為避免出現效能問題，建議每封電子郵件不要包含多個附件。建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
+>為避免效能問題，建議不要在每封電子郵件中包含多個附件。 建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 下圖顯示實作此情境時的不同步驟：
 

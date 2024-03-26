@@ -3,15 +3,15 @@ product: campaign
 title: 設定Synapse的存取權
 description: 瞭解如何在FDA中設定Synapse的存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 1%
+source-wordcount: '742'
+ht-degree: 2%
 
 ---
 
@@ -131,7 +131,7 @@ ht-degree: 1%
 
 ## Debian上的Azure synapse {#azure-debian}
 
-**必要條件:**
+**先決條件：**
 
 * 您需要root許可權才能安裝ODBC驅動程式。
 * 安裝msodbcsql套件需要CURL。 如果您尚未安裝，請執行以下命令：
@@ -238,6 +238,6 @@ ht-degree: 1%
 
 聯結器支援下列選項：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |---|---|
 | 驗證 | 聯結器支援的驗證型別。 目前支援的值： ActiveDirectoryMSI。 </br>如需詳細資訊，請參閱 [SQL檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) （連線字串n°8範例）。 |

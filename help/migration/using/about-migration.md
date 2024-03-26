@@ -3,7 +3,7 @@ product: campaign
 title: 移轉至Campaign Classic
 description: 瞭解如何從舊版Campaign移轉至Campaign Classic
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-overview
@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '453'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 >Adobe Campaign v7的新功能和改進專案詳情，請參見 [發行說明](../../rn/using/latest-release.md).
 
 
-## 必要條件
+## 先決條件
 
 * 移轉程式必須由專家使用者執行。 您必須至少有來自Adobe Campaign的資料庫專家、系統管理員和應用程式開發人員協助。
 * 開始移轉之前，請檢查您使用的系統和系統元件是否與v7相容。 [了解更多](../../rn/using/compatibility-matrix.md)。

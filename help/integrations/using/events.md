@@ -10,12 +10,12 @@ content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 2%
+source-wordcount: '1209'
+ht-degree: 1%
 
 ---
 
-# 配置自訂實施事件 {#events}
+# 設定自訂實施的事件 {#events}
 
 
 
@@ -64,7 +64,7 @@ function processPipelineMessage(xmlTrigger) {}
 * **[!UICONTROL @offset]** 是訊息的「指標」。 其會指出佇列中訊息的順序。
 * **[!UICONTROL @partition]** 是佇列中訊息的容器。 位移相對於分割區。 <br>佇列中有約15個分割區。
 
-範例:
+例如：
 
 ```
 <trigger offset="1500435" partition="4" triggerId="LogoUpload_1_Visits_from_specific_Channel_or_ppp">
@@ -86,7 +86,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 * **[!UICONTROL timeGMT]** 可在Adobe Analytics端包含UTC Epoch格式的觸發器時間（自01/01/1970 UTC以來的秒數）。
 
-範例:
+例如：
 
 ```
 {
@@ -210,7 +210,7 @@ triggerType欄位會識別觸發資料來源的來源。
 | triggerType | 字串50 | TriggerType | 觸發器的名稱。 識別客戶在網站上的行為。 |
 | shopper_id | 字串32 | shopper_id | 購物者的內部識別碼。 由調解工作流程設定。 如果為零，表示在Campaign中未知客戶。 |
 | shopper_key | 長整數 | shopper_key | 購物者的外部識別碼，如Analytics所擷取。 |
-| 已建立 | 日期時間 | 已建立 | 在Campaign中建立事件的時間。 |
+| 已建立 | 日期時間 | 建立時間 | 在Campaign中建立事件的時間。 |
 | lastModified | 日期時間 | 上次修改時間 | 上次在Adobe中修改事件的時間。 |
 | timeGMT | 日期時間 | 時間戳記 | 在Analytics中產生事件的時間。 |
 

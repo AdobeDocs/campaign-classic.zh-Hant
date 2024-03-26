@@ -10,7 +10,7 @@ exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 4%
 
 ### 使用型別
 
-您可以使用型別規則，根據特定條件排除部分目標。 這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。例如，您可以從電子報的目標篩選未成年的收件者。 瞭解更多 [在此範例中](../../campaign-opt/using/filtering-rules.md).
+您可以使用型別規則，根據特定條件排除部分目標。 這可確保在遵守公司通訊政策的同時，傳送最符合客戶需求及期望的訊息。 例如，您可以從電子報的目標篩選未成年的收件者。 瞭解更多 [在此範例中](../../campaign-opt/using/filtering-rules.md).
 
 ### 避免附件
 

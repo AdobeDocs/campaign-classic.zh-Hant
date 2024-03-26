@@ -3,12 +3,12 @@ product: campaign
 title: 開始使用多維度資料集
 description: 開始使用多維度資料集
 feature: Reporting, Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 24%
+source-wordcount: '343'
+ht-degree: 26%
 
 ---
 
@@ -46,4 +46,4 @@ ht-degree: 24%
 1. 使用在Cube中計算和聚總的資料，建置查詢。
 1. 識別母體並在清單中加以參照。
 
-瞭解如何在中建立和使用多維度資料集 [Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.
+瞭解如何在中建立和使用多維度資料集 [Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=zh-Hant){target="_blank"}.

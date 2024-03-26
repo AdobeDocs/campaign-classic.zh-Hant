@@ -3,13 +3,13 @@ product: campaign
 title: 多維度資料集的最佳作法
 description: 多維度資料集的最佳作法
 feature: Reporting, Monitoring
-badge: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---

@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 3%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
@@ -98,7 +98,7 @@ Adobe Campaign可讓您以UTC （國際標準時間）格式儲存日期/時間�
 可能值的範例：
 
 * 歐洲/巴黎，
-* 歐洲/倫敦,
+* 歐洲/倫敦，
 * 美洲/紐約等
 
   這些值擷取自tz (Olson)資料庫。 如需詳細資訊，請參閱 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).

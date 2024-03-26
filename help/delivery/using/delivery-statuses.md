@@ -9,8 +9,8 @@ role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 8%
+source-wordcount: '640'
+ht-degree: 3%
 
 ---
 
@@ -53,11 +53,11 @@ ajouter screenshot -->
    <td> 因為收件者的地址發生錯誤，所以未將傳遞傳送給收件者。 該檔案位於封鎖清單上、已隔離、未提供或重複。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> 失敗<br /> </td> 
+   <td> 已失敗<br /> </td> 
    <td> 例如，由於地址無效或收件匣已滿，傳遞無法連線至收件者。 它也可以連結到個人化區塊的問題，因為它們可能會在結構描述不符合傳遞對應時產生錯誤。 另請參閱 <a href="understanding-delivery-failures.md" target="_blank">瞭解傳送失敗</a><br /> </td> 
   </tr>
   <tr> 
-   <td> 待處理<br /> </td> 
+   <td> 擱置中<br /> </td> 
    <td> 傳遞已準備就緒可供傳送，且將由傳遞伺服器(MTA)處理。 另請參閱 <a href="#pending-status" target="_blank">擱置狀態</a>.<br /> </td> 
   </tr> 
   <tr> 
@@ -73,7 +73,7 @@ ajouter screenshot -->
    <td> 簡訊服務提供者已收到傳遞。<br /> 對於託管或混合安裝，如果您已升級至 <a href="sending-with-enhanced-mta.md" target="_blank">增強的MTA</a>，則訊息已成功從Campaign轉送至Enhanced MTA。</td> 
   </tr> 
   <tr> 
-   <td> 已在行動裝置上收到<br /> </td> 
+   <td> 已在行動裝置上接收<br /> </td> 
    <td> 收件者在其行動裝置上收到簡訊。<br /> </td> 
   </tr>
   <tr> 
@@ -141,4 +141,4 @@ ajouter screenshot -->
 
 * [傳遞記錄和歷史記錄](#delivery-logs-and-history)
 * [瞭解傳遞故障](understanding-delivery-failures.md)
-* [傳送失敗類型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [傳遞失敗型別和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)

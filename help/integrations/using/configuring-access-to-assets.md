@@ -11,7 +11,7 @@ topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '506'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 >這些整合是並行的。 在進行任何設定前，請仔細閱讀下列資訊。
 
 * 與整合 **Experience Cloud資產**：此整合可讓您從Adobe Experience Cloud資料庫插入影像。 若要設定此整合，您必須安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** Adobe Campaign中的內建套件。
-* 與整合 **AEM Assets**：此整合可讓您從Adobe Experience Manager資產庫插入影像。 若要設定此整合，您必須安裝 **[!UICONTROL AEM Integration]** Adobe Campaign中的內建套件。 請注意，從Adobe Experience Manager 6.4開始，將不再提供這項整合。
+* 與整合 **AEM Assets**：此整合可讓您從Adobe Experience Manager Assets資料庫插入影像。 若要設定此整合，您必須安裝 **[!UICONTROL AEM Integration]** Adobe Campaign中的內建套件。 請注意，從Adobe Experience Manager 6.4開始，將不再提供這項整合。
 
 >[!NOTE]
 >

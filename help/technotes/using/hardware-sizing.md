@@ -3,11 +3,11 @@ product: campaign
 title: Campaign Classic v7的硬體大小調整建議
 description: Campaign Classic v7的硬體大小調整建議
 feature: Technote
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->如果您使用完全託管的Adobe Campaign執行個體(在AdobeCloud Services中部署)，則本檔案中的資訊不適用。
+>如果您使用完全託管的Adobe Campaign執行個體(在AdobeCloud Service中部署)，則本檔案中的資訊不適用。
 
 軟體相容性的詳細資訊請參閱 [相容性對照表](../../rn/using/compatibility-matrix.md).
 
@@ -84,7 +84,7 @@ Adobe提供可在您的部署環境中轉送至Adobe Campaign伺服器的URL路�
 
 預估數量：
 
-| 通道 | 數量 |
+| 管道 | 數量 |
 | ----------------------- | ----------------- |
 | 作用中的收件者 | 5百萬 |
 | 電子郵件 | 420萬/月 |
@@ -133,7 +133,7 @@ Adobe Campaign Web伺服器會顯示在安全區域中。
 
 預估數量：
 
-| 通道 | 數量 |
+| 管道 | 數量 |
 | ----------------------- | ----------------- |
 | 作用中的收件者 | 2千萬 |
 | 電子郵件 | 42百萬/月 |
@@ -169,7 +169,7 @@ Adobe Campaign Web伺服器會顯示在安全區域中。
 
 預估數量：
 
-| 通道 | 數量 |
+| 管道 | 數量 |
 | ----------------------- | ----------------- |
 | 作用中的收件者 | 5千萬 |
 | 電子郵件 | 108百萬/月 |

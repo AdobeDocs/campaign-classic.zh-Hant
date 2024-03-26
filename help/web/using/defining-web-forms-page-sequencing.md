@@ -2,14 +2,14 @@
 product: campaign
 title: 定義網路表單頁面順序
 description: 定義網路表單頁面順序
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 0%
+source-wordcount: '714'
+ht-degree: 1%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 
 
-表單可包含一或多個頁面。 它是透過圖表建置，可讓您排序頁面、測試、指令碼執行、頁面跳轉和錄製步驟。 全域圖表設計模式與Campaign工作流程相同。
+表單可包含一或多個頁面。 它是透過圖表建置，可讓您排列頁面、測試、指令碼執行、頁面跳轉和錄製步驟。 全域圖表設計模式與Campaign工作流程相同。
 
-## 關於上一頁和下一頁 {#about-previous-page-and-next-page}
+## 關於上一頁與下一頁 {#about-previous-page-and-next-page}
 
-對於每個頁面，您可以刪除 **[!UICONTROL Next]** 或 **[!UICONTROL Previous]** 按鈕。 若要這麼做，請選取相關頁面並選取選項 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disallow returning to the previous page]** .
+對於每個頁面，您可以刪除 **[!UICONTROL Next]** 或 **[!UICONTROL Previous]** 按鈕。 若要這麼做，請選取相關頁面，然後選取選項 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disallow returning to the previous page]** .
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
@@ -29,35 +29,35 @@ ht-degree: 0%
 
 ## 插入跳轉 {#inserting-a-jump}
 
-此 **[!UICONTROL Jump]** 物件可在使用者點按時，提供對另一個頁面或其他表單的存取權 **[!UICONTROL Next]**.
+此 **[!UICONTROL Jump]** 物件可在使用者點按時，提供存取其他頁面或其他表單的許可權 **[!UICONTROL Next]**.
 
 目的地可以是：
 
 * 表單的另一個頁面。 要執行此操作，請選取 **[!UICONTROL Internal activity]** 然後指定所要的頁面，如下所示：
 
-   ![](assets/s_ncs_admin_jump_param1.png)
+  ![](assets/s_ncs_admin_jump_param1.png)
 
 * 另一個表單。 若要這麼做，請選取 **[!UICONTROL Explicit]** 選項並指定目的地表單。
 
-   ![](assets/s_ncs_admin_jump_param2.png)
+  ![](assets/s_ncs_admin_jump_param2.png)
 
 * 目的地可以儲存在變數中。 在此情況下，請從下拉式清單中選取它，如下所示：
 
-   ![](assets/s_ncs_admin_jump_param3.png)
+  ![](assets/s_ncs_admin_jump_param3.png)
 
-* 此 **[!UICONTROL Comment]** tab可讓您輸入當運運算元按一下圖表中的物件時可看到的資訊。
+* 此 **[!UICONTROL Comment]** tab可讓您輸入當運運算元在圖表中按一下物件時顯示的資訊。
 
-   ![](assets/s_ncs_admin_survey_jump_comment.png)
+  ![](assets/s_ncs_admin_survey_jump_comment.png)
 
 ## 範例：根據URL的引數存取其他表單 {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
-在以下範例中，我們要設定一個網頁表單，在核准後將顯示另一個由URL引數指定的表單。 若要這麼做，請套用下列步驟：
+在以下範例中，我們要設定一個網頁表單，在核准後，此表單將顯示另一個由URL引數指定的表單。 若要這麼做，請套用下列步驟：
 
 1. 在表單結尾插入跳轉：這會取代 **[!UICONTROL End]** 方塊。
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. 在表單屬性中，新增引數(**下一個**)儲存在區域變數(**下一個**)。 有關區域變數的詳情，請參閱 [將資料儲存在區域變數中](web-forms-answers.md#storing-data-in-a-local-variable).
+1. 在表單屬性中，新增引數(**下一個**)儲存在區域變數(**下一個**)。 有關本機變數的詳情，請參閱 [將資料儲存在區域變數中](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 此 **[!UICONTROL Test]** 方塊可讓您設定表單中頁面順序的條件。 它可讓您根據測試結果定義各種分支行。 這可讓您根據使用者提供的回答顯示不同的頁面。
 
-例如，您可以為已線上上訂購的客戶顯示不同的頁面，為已下十份以上訂單的客戶顯示另一個頁面。 若要這麼做，請在表單的第一個頁面中插入 **[!UICONTROL Number]** 輸入輸入欄位，讓使用者說明已下多少訂單。
+例如，您可以為已線上上訂購的客戶顯示不同的頁面，為已下十個以上訂單的客戶顯示另一個頁面。 若要這麼做，請在表單的第一個頁面中插入 **[!UICONTROL Number]** 輸入輸入欄位，讓使用者說明已下多少訂單。
 
 ![](assets/s_ncs_admin_survey_test_ex0.png)
 
@@ -97,13 +97,13 @@ ht-degree: 0%
 
 ![](assets/s_ncs_admin_survey_test_ex1.png)
 
-在表單的圖表中，插入測試方塊以定義條件。 對於每個條件，都會在測試方塊的輸出處新增一個分支。
+在表單的圖表中，插入測試方塊以定義條件。 對於每個條件，都將在測試方塊的輸出處新增一個分支。
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-選取 **[!UICONTROL Activate the default branching]** 選項來新增轉變，以用於沒有任何條件為true的情況。 如果定義的條件涵蓋了每個可能的情況，則不需要使用此選項。
+選取 **[!UICONTROL Activate the default branching]** 選項來新增轉變，以用於沒有任何條件為true的情況。 如果定義的條件涵蓋了每個可能的情況，就不需要這個選項。
 
-接下來，定義其中一項或多項條件為真時的頁面排序，例如：
+接著，在條件中有一個為true時定義頁面順序，例如：
 
 ![](assets/s_ncs_admin_survey_test_ex3.png)
 
@@ -124,4 +124,4 @@ ht-degree: 0%
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
 * 您可以複製並貼上現有的HTML內容。 若要這麼做，請按一下 **[!UICONTROL Display source code]** 並插入HTML代碼。
-* 您可以使用外部URL；若要這麼做，請選取對應的選項，然後輸入要顯示的頁面URL。
+* 您可以使用外部URL；若要這麼做，請選取對應的選項，然後輸入要顯示之頁面的URL。

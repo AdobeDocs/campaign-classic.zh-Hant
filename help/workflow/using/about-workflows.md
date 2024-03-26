@@ -2,13 +2,13 @@
 product: campaign
 title: 關於工作流程
 description: 使用工作流程自動化程序、管理資料和對象、傳送訊息等
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 40%
+source-wordcount: '657'
+ht-degree: 38%
 
 ---
 
@@ -30,50 +30,50 @@ Adobe Campaign使用工作流程來：
 
 * 執行目標定位行銷活動。 [了解更多](building-a-workflow.md#implementation-steps-)
 * 建立行銷活動：對於每個行銷活動， **[!UICONTROL Workflow]** 索引標籤可讓您建立目標和建立傳送。 [了解更多](building-a-workflow.md#campaign-workflows)
-* 執行技術程式：清理、收集追蹤資訊或臨時計算。 [了解更多](building-a-workflow.md#technical-workflows)
+* 執行技術流程：清理、收集追蹤資訊或臨時計算。 [了解更多](building-a-workflow.md#technical-workflows)
 
-工作流程可以指流程定義（工作流程模型，代表應發生的事情）和此流程的執行個體（工作流程執行個體，代表實際發生的事情）。
+工作流程可能同時代表流程定義（工作流程模型，代表應該發生的事情）和此流程的執行個體（工作流程執行個體，代表實際發生的事情）。
 
 工作流程範本描述要執行的各種任務以及任務如何連結在一起。任務範本稱為活動並以圖示表示。它們透過轉變連結在一起。
 
 ![](assets/example1.png)
 
-每個工作流程內含：
+每個工作流程都包含：
 
 * **[!UICONTROL Activities]**
 
-   活動說明任務範本。 各種可用活動在圖表中以圖示表示。每個類型都有共同屬性和特定屬性。例如，雖然所有活動都有名稱和標籤，但只有 **[!UICONTROL Approval]** 活動具有指派。
+  活動說明任務範本。 各種可用活動在圖表中以圖示表示。每種型別都有共同屬性和特定屬性。 例如，雖然所有活動都有名稱和標籤，但只有 **[!UICONTROL Approval]** 活動具有指派。
 
-   在工作流程圖表中，特定活動可產生多個任務，尤其是當有回圈或循環（定期）動作時。
+  在工作流程圖表中，指定的活動可以產生多個任務，尤其是當有回圈或循環（定期）動作時。
 
-   所有工作流程活動都列於 [本節](about-activities.md)，包括使用案例和範例。
+  所有工作流程活動都列在 [本節](about-activities.md)，包括使用案例和範例。
 
 * **[!UICONTROL Transitions]**
 
-   轉變可讓您連結活動並定義其順序。 轉變會將來源活動連結到目的地活動。轉換有多種型別，視來源活動而定。 有些轉變具有其他引數，例如持續時間、條件或篩選器。
+  轉變可讓您連結活動並定義其順序。 轉變會將來源活動連結至目的地活動。 轉換有多種型別，視來源活動而定。 有些轉變還有其他引數，例如持續時間、條件或篩選器。
 
-   未連結至目的地活動的轉變顯示為橙色，而箭頭標頭顯示為菱形。
+  未連結至目的地活動的轉變顯示為橘色，而箭頭標頭顯示為菱形。
 
-   >[!NOTE]
-   >
-   >仍可執行包含未終止轉變的工作流程：將會產生警告訊息，且工作流程在轉變時會暫停，但不會產生錯誤。 因此，您可以在不完成工作流程的情況下啟動工作流程，並在執行時將其新增。
+  >[!NOTE]
+  >
+  >仍可執行包含未終止轉變的工作流程：將會產生警告訊息，工作流程在轉變時會暫停，但不會產生錯誤。 因此，可以在工作流程未完成的情況下啟動工作流程，並在執行時將其新增。
 
-   如需如何建立工作流程的詳細資訊，請參閱 [本節](building-a-workflow.md).
+  有關如何建立工作流程的詳細資訊，請參閱 [本節](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
-   工作表中包含轉接所攜帶的所有資訊。 每個工作流程會使用多個工作表。只要不清除資料，這些表格中傳送的資料便可以加速，並在整個工作流程的生命週期中使用。 事實上，每次工作流程不活躍時，不需要的工作表都會被清除，並且可能在最大工作流程執行期間被清除，以避免伺服器過載。
+  工作表包含轉接所攜帶的所有資訊。 每個工作流程會使用多個工作表。只要不清除資料，這些表格中傳送的資料就可以加速，並在整個工作流程的生命週期中使用。 事實上，每次工作流程不活躍時，不需要的工作表都會被清除，並且可能在最大工作流程執行期間被清除，以避免伺服器過載。
 
-   進一步瞭解中的工作流程資料和表格 [本節](how-to-use-workflow-data.md).
+  進一步瞭解中的工作流程資料和表格 [本節](how-to-use-workflow-data.md).
 
-## 重要原則和最佳實務{#principles-workflows}
+## 主要原則和最佳作法{#principles-workflows}
 
 請參閱下列章節，以尋找使用工作流程自動化流程的指引和最佳實務：
 
 * 進一步瞭解中的工作流程活動 [此頁面](how-to-use-workflow-data.md).
 * 瞭解如何在中建立工作流程 [本節](building-a-workflow.md).
 * 瞭解如何使用工作流程在Campaign中匯入資料 [本節](../../platform/using/import-export-workflows.md).
-* 工作流程最佳實務的詳細資訊，請參閱 [此頁面](workflow-best-practices.md).
-* 尋找工作流程執行的指南，位置在： [本節](starting-a-workflow.md).
+* 中詳細說明了工作流程最佳實務 [此頁面](workflow-best-practices.md).
+* 尋找工作流程執行的相關指引，位置在： [本節](starting-a-workflow.md).
 * 瞭解如何在中監視工作流程 [此頁面](monitoring-workflow-execution.md).
 * 瞭解如何授予使用者存取權，以使用中的工作流程 [此頁面](managing-rights.md).

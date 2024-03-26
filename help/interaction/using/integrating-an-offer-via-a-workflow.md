@@ -3,7 +3,7 @@ product: campaign
 title: 透過工作流程整合優惠方案
 description: 透過工作流程整合優惠方案
 feature: Interaction, Offers, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
@@ -11,7 +11,7 @@ exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 3%
 設定查詢後(請參閱 [工作流程手冊](../../workflow/using/query.md))：
 
 1. 新增並開啟擴充活動。
-1. 在 **[!UICONTROL Enrichment]** 索引標籤中，選取 **[!UICONTROL Add data]**。
+1. 在 **[!UICONTROL Enrichment]** 索引標籤，選取 **[!UICONTROL Add data]**.
 1. 選取 **[!UICONTROL An offer proposition]** 在要新增的資料型別中。
 
    ![](assets/int_enrichment_offer2.png)

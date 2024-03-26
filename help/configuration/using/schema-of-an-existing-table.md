@@ -9,7 +9,7 @@ exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 13%
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 13%
 * 這些欄位及其在XML結構中的位置：僅填寫應用程式中使用的欄位，
 * 連結：如果與基底的其他表格有聯結。
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 若要建立對應的綱要，請套用下列階段：
 
@@ -44,7 +44,7 @@ ht-degree: 13%
 
    結構描述必須以view=&quot;true&quot;屬性填入， `<srcSchema>` 根元素，以便不產生表格建立SQL指令碼。
 
-**範例** :
+**範例** ：
 
 ```
 <srcSchema name="recipient" namespace="cus" view="true">

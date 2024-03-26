@@ -7,8 +7,8 @@ hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 69%
+source-wordcount: '657'
+ht-degree: 64%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 69%
 
 ### 詢問專家！
 
-加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入對話](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_空白}.
+加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入交談](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### 存取 Campaign 下載中心
 

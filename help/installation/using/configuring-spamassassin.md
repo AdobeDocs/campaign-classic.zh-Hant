@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 設定 SpamAssassin
-description: 設定 SpamAssassin
+title: 設定SpamAssassin
+description: 設定SpamAssassin
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,12 +11,12 @@ topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
-# 設定 SpamAssassin{#configuring-spamassassin}
+# 設定SpamAssassin{#configuring-spamassassin}
 
 
 
@@ -63,7 +63,7 @@ SpamAssassin是專為篩選不想要的電子郵件而設計的軟體。 結合�
 
    如果Windows Shell出現並持續顯示幾秒鐘，請等候安裝與更新完成，然後按一下 **輸入**.
 
-   如果Windows Shell在立即消失之前未出現或未顯示，請依照下列步驟操作，連按兩下 **portableShell.bat** 檔案來顯示Windows Shell，並檢查該Shell路徑是否對應到 **spamassassin.zip** 檔案已解壓縮。 如果不是這種情況，請使用 **cd** 命令。
+   如果Windows Shell在立即消失之前未出現或未顯示，請依照下列步驟操作，連按兩下 **portableShell.bat** 檔案來顯示Windows Shell，並檢查Shell路徑是否對應到 **spamassassin.zip** 檔案已解壓縮。 如果不是這種情況，請使用 **cd** 命令。
 
    輸入 **run_me.bat** 然後按一下 **輸入** 以開始安裝和更新程式。 作業會傳回下列其中一個值，以表示更新結果。
 

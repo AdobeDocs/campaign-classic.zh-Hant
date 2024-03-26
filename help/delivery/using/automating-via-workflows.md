@@ -9,8 +9,8 @@ role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 1%
+source-wordcount: '1200'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ### 更新內容 {#update-the-content}
 
-* **主題**
+* **主旨**
 
   可讓您在發佈時修改傳遞動作的主題。
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
   儲存建立或修改的內容。 儲存內容的識別碼會傳播到傳出事件的「contentId」變數中。
 
-* **生成**
+* **產生**
 
   為具有「檔案」型別發佈的每個轉換範本產生輸出檔案。 使用下列引數，為每個產生的檔案啟動傳出轉變：儲存在「contentId」變數中的內容的識別碼，以及「filename」變數的檔案名稱。
 

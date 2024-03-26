@@ -9,7 +9,7 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -218,7 +218,7 @@ ht-degree: 3%
 若要擷取控制組，請啟用行銷活動或傳送的控制組，並選取下列其中一個選項： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** ：此選項會將隨機抽樣套用至目標母體中的收件者。 如果您然後將臨界值設為100，控制組將由從目標人口隨機選取的100個收件者組成。 隨機抽樣取決於資料庫引擎。
-* **[!UICONTROL Keep only the first records after sorting]**：此選項可讓您根據一或多個排序順序定義限制。如果您選取 **[!UICONTROL Age]** 欄位做為排序標準，然後將100定義為臨界值，控制組將由100個最年輕的收件者組成。 例如，定義包含很少購買的收件者或經常購買的收件者的控制組，並將他們的行為與已聯絡的收件者的行為進行比較，這可能很有趣。
+* **[!UICONTROL Keep only the first records after sorting]** ：此選項可讓您根據一或多個排序順序定義限制。 如果您選取 **[!UICONTROL Age]** 欄位做為排序標準，然後將100定義為臨界值，控制組將由100個最年輕的收件者組成。 例如，定義包含很少購買的收件者或經常購買的收件者的控制組，並將他們的行為與已聯絡的收件者的行為進行比較，這可能很有趣。
 
 按一下 **[!UICONTROL Next]** 以定義排序順序（如有必要），並選取收件者限制模式。
 

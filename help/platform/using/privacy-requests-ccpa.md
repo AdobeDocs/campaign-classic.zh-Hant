@@ -11,7 +11,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '567'
 ht-degree: 98%
 
 ---
@@ -58,7 +58,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
    ![](assets/privacy-ccpa-3.png)
 
-1. 按一下瀏覽器的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;節點。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的「一般套件」下，新增 `<input>` 元素，並使用步驟 2 中定義的相對路徑作為 xpath 值。 如需定義表格的詳細資訊，請參閱[本節](../../configuration/using/identifying-a-form.md)。
+1. 按一下探索工具的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;節點。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的「一般套件」下，新增 `<input>` 元素，並使用步驟 2 中定義的相對路徑作為 xpath 值。 如需定義表格的詳細資訊，請參閱[本節](../../configuration/using/identifying-a-form.md)。
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>

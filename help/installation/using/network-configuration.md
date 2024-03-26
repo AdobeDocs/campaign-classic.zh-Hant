@@ -3,7 +3,7 @@ product: campaign
 title: 網路設定
 description: 瞭解系統通訊准則
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 6%
+source-wordcount: '713'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 6%
   <tr> 
    <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 評論<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
@@ -69,7 +69,7 @@ ht-degree: 6%
   <tr> 
    <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 評論<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
@@ -93,7 +93,7 @@ ht-degree: 6%
   <tr> 
    <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 評論<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
@@ -114,7 +114,7 @@ ht-degree: 6%
   <tr> 
    <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 評論<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp （預設連線埠）<br /> </td> 
@@ -133,7 +133,7 @@ ht-degree: 6%
   <tr> 
    <td> 連線埠<br /> </td> 
    <td> 目的地<br /> </td> 
-   <td> 評論<br /> </td> 
+   <td> 註解<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
@@ -152,12 +152,12 @@ ht-degree: 6%
 <table> 
  <tbody> 
   <tr> 
-   <td> 資料庫類型<br /> </td> 
+   <td> 資料庫型別<br /> </td> 
    <td> 連線埠（預設）<br /> </td> 
    <td> 目的地<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Oracle</strong><br /> </td> 
+   <td> <strong>oracle</strong><br /> </td> 
    <td> 1521/tcp<br /> </td> 
    <td> 資料庫伺服器<br /> </td> 
   </tr> 

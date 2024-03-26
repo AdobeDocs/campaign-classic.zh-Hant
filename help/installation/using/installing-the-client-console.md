@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 安裝客戶端主控台
+title: 安裝使用者端主控台
 description: 瞭解如何安裝使用者端主控台
 feature: Installation, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 4%
+source-wordcount: '1131'
+ht-degree: 2%
 
 ---
 

@@ -2,13 +2,13 @@
 product: campaign
 title: 持續傳遞
 description: 持續傳遞
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 10%
+source-wordcount: '366'
+ht-degree: 11%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 10%
 
 
 
-A **持續傳遞** type動作可讓您將新收件者新增至現有傳遞。 此傳送型別可避免您每次都建立新傳送：此模式通常更有效率，尤其是當需要時會傳送少量警報或通知。
+A **持續傳遞** 型別動作可讓您將新收件者新增至現有傳遞。 此傳送型別可避免您每次都必須建立新傳送：此模式通常更有效率，尤其是當需要時會傳送少量警報或通知。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#continuous-delivery-video)
 
-在傳遞範本層級，您可以指定指令碼以計算相關傳遞的標籤（和行銷活動資料夾）。 如果指令碼計算尚未存在的傳遞，則會即時建立。
+在傳遞範本層級，您可以指定指令碼以計算相關傳遞的標籤（和行銷活動資料夾）。 如果指令碼計算尚未存在的傳遞，則會即時建立傳遞。
 
 ![](assets/edit_diffusion_fil.png)
 
-此 **[!UICONTROL Process errors]** 選項會顯示特定轉變，如果產生錯誤，則會啟動該轉變。 在此情況下，工作流程不會進入錯誤模式並繼續執行。
+此 **[!UICONTROL Process errors]** 選項會顯示特定轉變，如果產生錯誤，則會啟用此轉變。 在此情況下，工作流程不會進入錯誤模式並繼續執行。
 
 考慮的錯誤是檔案系統錯誤（無法移動檔案、無法存取目錄等）。
 
@@ -37,7 +37,7 @@ A **持續傳遞** type動作可讓您將新收件者新增至現有傳遞。 �
 
 每個傳入事件都必須指定由這些引數定義的目標。
 
-僅當 **[!UICONTROL Specified by the inbound event]** 選項時才會選擇此選項。
+僅當 **[!UICONTROL Specified by the inbound event]** 已選取選項。
 
 ## 輸出引數 {#output-parameters}
 
@@ -45,17 +45,17 @@ A **持續傳遞** type動作可讓您將新收件者新增至現有傳遞。 �
 * 綱要
 * recCount
 
-這組三個值會識別即時傳送所產生的目標。 **[!UICONTROL tableName]** 是記憶目標識別碼的表格名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。
+這組三個值會識別即時傳送中產生的目標。 **[!UICONTROL tableName]** 是記憶目標識別碼的表格名稱， **[!UICONTROL schema]** 是母體的綱要（通常是nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數。
 
-與補碼關聯的轉變具有相同的引數。
+與補充關聯的轉變有相同的引數。
 
 ## 如何設定連續傳送
 
 本節說明如何設定持續傳遞。
 
-此 **持續傳遞** 可讓您將新收件者新增至現有傳遞，並避免每次新增收件者時都必須建立新傳遞。 您可以直接在行銷活動工作流程中更新創意，它將會更新傳遞範本「資源」資料夾中的範本。
+此 **持續傳遞** 可讓您將新收件者新增至現有傳遞，並避免每次新增收件者時都必須建立新傳遞。 您可以直接在行銷活動工作流程中更新創意素材，其將會更新傳遞範本「資源」資料夾中的範本。
 
-持續傳遞會建立「單一」傳遞和傳遞記錄(broadLog)及追蹤記錄，每次執行傳遞時都會參照新增。
+持續傳遞會建立「單一」傳遞和傳遞記錄(broadLog)以及追蹤記錄，每次執行傳遞時都會參照新增。
 
 ![持續傳遞](assets/delivery_continuous.jpg)
 

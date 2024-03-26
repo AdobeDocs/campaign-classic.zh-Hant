@@ -24,7 +24,7 @@ ht-degree: 8%
 
 如需使用種子地址的詳細資訊，請參閱 [本節](../../delivery/using/about-seed-addresses.md).
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 此 **nms：seedMember** 立即可用的結構描述和連結表單旨在延伸供客戶設定，以參考所有必要欄位。 結構描述定義包含詳細說明其設定模式的註解。
 

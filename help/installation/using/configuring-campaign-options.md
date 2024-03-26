@@ -10,12 +10,12 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4004'
-ht-degree: 6%
+source-wordcount: '3838'
+ht-degree: 1%
 
 ---
 
-# Campaign Classic 選項清單{#configuring-campaign-options}
+# Campaign Classic選項清單{#configuring-campaign-options}
 
 此 **[!UICONTROL Administration / Platform / Options]** 節點可讓您設定Adobe Campaign選項。 其中有些是內建在安裝Campaign時，有些則可視需要手動新增。 可用選項會因您執行個體所安裝的套件而異。
 
@@ -125,7 +125,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_PublishingScript</span> <br /> </td> 
-   <td> 發佈指令碼.<br /> </td> 
+   <td> 發佈指令碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_NoCountBroadLogMsgPush</span> <br /> </td> 
@@ -149,7 +149,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客戶的一般名稱. 用於顯示給收件者的部分警告訊息。<br /> 「您收到此訊息是因為您曾與'Organization'或附屬公司聯絡。 不再接收來自「組織」的訊息<br /> </td> 
+   <td> 客戶的一般名稱。 用於顯示給收件者的部分警告訊息。<br /> 「您收到此訊息是因為您曾與'Organization'或附屬公司聯絡。 不再接收來自「組織」的訊息<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -288,23 +288,23 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmResourcesDir</span> <br /> </td> 
-   <td> 在Adobe Campaign使用者端主控台中發佈的資源位置。 請參閱<a href="../../delivery/using/formatting.md#image-referencing">本節</a>。<br /> </td> 
+   <td> 在Adobe Campaign使用者端主控台中發佈的資源位置。 另請參閱 <a href="../../delivery/using/formatting.md#image-referencing">本節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmResourcesDirPreview</span> <br /> </td> 
-   <td> 在Adobe Campaign使用者端主控台中預覽的資源位置。 請參閱<a href="../../delivery/using/formatting.md#image-referencing">本節</a>。<br /> </td> 
+   <td> 在Adobe Campaign使用者端主控台中預覽的資源位置。 另請參閱 <a href="../../delivery/using/formatting.md#image-referencing">本節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
-   <td> 上傳期間略過的影像的 URL 遮罩清單.<br /> </td> 
+   <td> 上傳期間略過的影像的URL遮罩清單。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> 影像上傳的設定. 值可為無/追蹤/指令碼/清單（可由運運算元的選用設定覆寫）。 </td> 
+   <td> 影像上傳的設定。 值可為無/追蹤/指令碼/清單（可由運運算元的選用設定覆寫）。 </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> 伺服器上的影像將要儲存到的資料夾.<br /> </td> 
+   <td> 伺服器上的影像要儲存到的資料夾。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -336,7 +336,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> 公用資源檔案的新 URL.<br /> </td> 
+   <td> 公用資源檔案的新URL。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -656,7 +656,7 @@ ht-degree: 6%
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 可讓您為Microsoft SQL Server上的工作表格設定個別的資料庫，以最佳化備份與復寫。 選項與暫存資料庫的名稱相對應：如果指定，會將工作表寫入此資料庫。 範例： 'tempdb.dbo.' （請注意，名稱必須以點結尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">深入了解</a> <br /> </td> 
+   <td> 可讓您為Microsoft SQL Server上的工作表格設定個別的資料庫，以最佳化備份與復寫。 選項與暫存資料庫的名稱相對應：如果指定，會將工作表寫入此資料庫。 範例： 'tempdb.dbo.' （請注意，名稱必須以點結尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">閱讀全文</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -676,7 +676,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> 新增到自動產生的內部名稱的前置詞.<br /> </td> 
+   <td> 新增到自動產生的內部名稱的前置詞。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
@@ -741,11 +741,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用於整合的Adobe Target伺服器。 依預設，已選取此選項。 此值對應至Adobe Target網域伺服器，然後是值/m2。 例如： tt.omtrdc.net/m2。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
+   <td> 用於整合的Adobe Target伺服器。 依預設，已選取此選項。 此值對應至Adobe Target網域伺服器，然後是值/m2。 例如： tt.omtrdc.net/m2。<br /> 另請參閱 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端的名稱。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 請參閱本章節</a>.<br /> </td> 
+   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端的名稱。<br /> 另請參閱 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -815,11 +815,11 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> 執行實例識別碼.<br /> </td> 
+   <td> 執行例項識別碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> 傳送計費報告時使用的客戶識別碼.<br /> </td> 
+   <td> 傳送計費報告時使用的客戶識別碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -856,7 +856,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> 追蹤的 URL 計算指令碼.<br /> </td> 
+   <td> 追蹤的URL計算指令碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -872,7 +872,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> 開啟 URL 計算指令碼.<br /> </td> 
+   <td> 開啟URL計算指令碼。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -986,7 +986,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
-   <td> 搜尋範圍.<br /> </td> 
+   <td> 搜尋範圍。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
@@ -1014,7 +1014,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
-   <td> 搜尋範圍.<br /> </td> 
+   <td> 搜尋範圍。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
@@ -1047,7 +1047,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> 可讓您指定網路表單失效模式的選項：預設情況下為本機，如果選項為「追蹤」，則使用追蹤伺服器，並使用提供其他「伺服器」選項的個人化清單。<br /> </td> 
+   <td> 可讓您指定網路表單失效模式的選項：預設為本機，如果選項為「追蹤」，則使用追蹤伺服器，並使用包含「其他伺服器」選項的個人化清單。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 

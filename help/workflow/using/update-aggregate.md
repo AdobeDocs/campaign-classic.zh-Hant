@@ -2,13 +2,13 @@
 product: campaign
 title: 更新彙總
 description: 深入瞭解更新彙總工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 3%
+source-wordcount: '130'
+ht-degree: 8%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 3%
 
 
 
-聚總是在多維資料庫層級定義，以用於報表用途。 A **[!UICONTROL Workflow]** 索引標籤在設定彙總時可供使用。
+聚總是在多維資料庫層級定義，以用於報表用途。 A **[!UICONTROL Workflow]** 標籤在設定彙總時可供使用。
 
 彙總在處理大量資料時很有用。 它們會根據專用工作流程方塊中定義的設定自動更新，以將最近收集的資料整合到指標中
 
-彙總會在每個立方體的相關索引標籤中定義。
+彙總會在每個立方結構的相關頁簽中定義。
 
 ![](assets/s_advuser_cube_agregate_01.png)
 

@@ -3,15 +3,15 @@ product: campaign
 title: 伺服器安全性設定
 description: 深入瞭解伺服器設定最佳實務
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 4%
+source-wordcount: '632'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 
 ## 傳出連線的保護
 
-可由您的 Campaign Classic 執行個體的 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。 若要允許新URL，管理員需要在 [serverConf.xml檔案](../../installation/using/the-server-configuration-file.md).
+可由 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。 若要允許新URL，管理員需要在 [serverConf.xml檔案](../../installation/using/the-server-configuration-file.md).
 
 有三種連線保護模式：
 

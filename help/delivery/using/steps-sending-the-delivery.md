@@ -9,8 +9,8 @@ role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 12%
+source-wordcount: '1527'
+ht-degree: 11%
 
 ---
 
@@ -195,7 +195,7 @@ ht-degree: 12%
 
   >[!IMPORTANT]
   >
-  >對於託管或混合安裝，如果您已升級至 [增強的MTA](sending-with-enhanced-mta.md)，則 **[!UICONTROL Delivery duration]** 您的Campaign電子郵件傳送中的設定，僅在設為時使用 **3.5天或以下**.  如果您定義的值超過　3.5　天，則不會考慮該值。
+  >對於託管或混合安裝，如果您已升級至 [增強的MTA](sending-with-enhanced-mta.md)，則 **[!UICONTROL Delivery duration]** 您的Campaign電子郵件傳送中的設定，僅在設為時使用 **3.5天或以下**. 如果您定義的值超過3.5天，則不會考慮該值。
 
 * **資源效度限制**：此 **[!UICONTROL Validity limit]** 欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 

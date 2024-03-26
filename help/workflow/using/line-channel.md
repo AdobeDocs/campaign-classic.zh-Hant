@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: LINE 頻道
-description: LINE 頻道
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: LINE頻道
+description: LINE頻道
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 13%
+source-wordcount: '102'
+ht-degree: 8%
 
 ---
 
 
-# LINE 頻道{#line-channel}
+# LINE頻道{#line-channel}
 
 
 
@@ -33,7 +33,7 @@ ht-degree: 13%
   <tr> 
    <td> <span class="uicontrol">刪除封鎖的LINE使用者</span> <br /> </td> 
    <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
-   <td> 此工作流程可確保LINE V2使用者的資料在封鎖LINE正式帳戶180天後會被刪除。<br /> </td> 
+   <td> 此工作流程確保LINE V2使用者的資料在封鎖LINE正式帳戶180天後會被刪除。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MID到LineUserID移轉</span> <br /> </td> 

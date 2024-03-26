@@ -9,8 +9,8 @@ role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 3%
+source-wordcount: '873'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 個人化區塊為動態、個人化的區塊，並包含您可插入傳遞中的特定轉譯。 例如，您可以新增標誌、問候語訊息或映象頁面的連結。 另請參閱 [插入個人化區塊](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ 在影片中探索此功能](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) 探索此功能 [在視訊中](#personalization-blocks-video)
 
 個人化區塊可透過 **[!UICONTROL Resources > Campaign Management > Personalization blocks]** Adobe Campaign總管的節點。 數個區塊預設為可用(請參閱 [現成可用的個人化區塊](#out-of-the-box-personalization-blocks))。
 

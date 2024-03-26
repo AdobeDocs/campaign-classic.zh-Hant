@@ -3,7 +3,7 @@ product: campaign
 title: 需維護的表格
 description: 需維護的表格
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 3%
+source-wordcount: '1146'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 3%
    <th> <strong>表格名稱 </strong><br /> </th> 
    <th> <strong>大小</strong><br /> </th> 
    <th> <strong>主要活動型別</strong><br /> </th> 
-   <th> <strong>評論</strong><br /> </th> 
+   <th> <strong>註解</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -47,7 +47,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
-   <td> 中<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
    <td> 在傳遞準備期間插入記錄的工作表。 它們會在傳送期間更新，最後在傳送完成後刪除。<br /> 此表格的平均大小相當受限，卻傾向於快速分割。<br /> </td> 
   </tr> 
@@ -59,13 +59,13 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
-   <td> 中<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
    <td> 此表格包含傳遞程式的統計資料。 其記錄會定期更新。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
-   <td> 中<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> 更新，插入<br /> </td> 
    <td> 此表格包含電子郵件地址的相關資訊。 在隔離程式中經常會更新（記錄會在第一次傳送錯誤時建立、在計數器變更時更新，並在傳送成功後刪除）。 <br /> </td> 
   </tr> 
@@ -113,7 +113,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
-   <td> 中<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
    <td> 此表格包含依網域排序的SMTP錯誤彙總。 它最初包含詳細資訊，在清除任務過期後由清除任務彙總。 <br /> </td> 
   </tr> 

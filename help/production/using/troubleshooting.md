@@ -3,7 +3,7 @@ product: campaign
 title: 生產疑難排解
 description: 探索與Adobe Campaign設定、監控、升級程式、資料處理和資料庫維護程式相關的生產疑難排解程式
 feature: Monitoring, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -11,7 +11,7 @@ exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 18%
+ht-degree: 15%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 18%
 
 [傳遞效能問題](../../delivery/using/delivery-performances.md)
 
-## 使用記錄檔 {#working-with-logs}
+## 使用記錄 {#working-with-logs}
 
 以下提供一些秘訣，協助您改善記錄檔使用體驗：
 

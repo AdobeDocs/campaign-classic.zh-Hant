@@ -3,7 +3,7 @@ product: campaign
 title: 部署執行個體
 description: 深入瞭解Campaign部署精靈
 feature: Installation, Instance Settings, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 3%
+source-wordcount: '3395'
+ht-degree: 2%
 
 ---
 
@@ -32,8 +32,8 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 
 設定步驟如下：
 
-1. [一般參數](#general-parameters)
-1. [電子郵件通道參數](#email-channel-parameters)
+1. [一般引數](#general-parameters)
+1. [電子郵件通道引數](#email-channel-parameters)
 1. [管理退信電子郵件](#managing-bounced-emails)
 1. [追蹤設定](#tracking-configuration)
 1. [行動裝置頻道引數](#mobile-channel-parameters)
@@ -42,7 +42,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 1. [管理公用資源](#managing-public-resources)
 1. [清除資料](#purging-data)
 
-## 一般參數 {#general-parameters}
+## 一般引數 {#general-parameters}
 
 部署精靈的第一步可讓您輸入執行個體的一般資訊。
 
@@ -67,7 +67,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 * **[!UICONTROL Managing bounced emails]** ：定義用來擷取傳入電子郵件的POP帳戶。 請參閱 [管理退信電子郵件](#managing-bounced-emails).
 * **[!UICONTROL LDAP integration]** ：透過LDAP目錄設定使用者驗證。 請參閱 [透過LDAP連線](../../installation/using/connecting-through-ldap.md).
 
-## 電子郵件通道參數 {#email-channel-parameters}
+## 電子郵件通道引數 {#email-channel-parameters}
 
 下列步驟可讓您定義要在訊息標題中顯示的資訊。
 
@@ -108,7 +108,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 
 提供兩種清單： **僅限歐洲** 或 **僅限美國**. 如有需要，可新增其他字元。
 
-### 傳送參數 {#delivery-parameters}
+### 傳遞參數 {#delivery-parameters}
 
 此 **進階引數……** 連結可讓您存取傳送選項、連結到重試和隔離的引數。
 
@@ -125,7 +125,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 
 >[!NOTE]
 >
->對於託管或混合安裝，如果您已升級至 [增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，則 **[!UICONTROL Delivery duration of the messages]** 僅在設為時使用 **3.5天或以下**.  如果您定義的值超過　3.5　天，則不會考慮該值。
+>對於託管或混合安裝，如果您已升級至 [增強的MTA](../../delivery/using/sending-with-enhanced-mta.md)，則 **[!UICONTROL Delivery duration of the messages]** 僅在設為時使用 **3.5天或以下**. 如果您定義的值超過3.5天，則不會考慮該值。
 
 ### 重試引數 {#retry-parameters}
 

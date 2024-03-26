@@ -11,8 +11,8 @@ topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3241'
-ht-degree: 37%
+source-wordcount: '3307'
+ht-degree: 34%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
-   <td> 類似 <span class="uicontrol">Like</span>。讓您不復原輸入的值。 在這裡，輸入的值也必須包含 <span class="uicontrol">%</span> 萬用字元。<br /> </td> 
+   <td> 類似 <span class="uicontrol">按讚</span> . 讓您不復原輸入的值。 在這裡，輸入的值也必須包含 <span class="uicontrol">%</span> 萬用字元。<br /> </td> 
    <td> <strong>姓氏(@lastName)不像'Smi%h'</strong>. 在此，將不會傳回姓氏為'Smi%h'的收件者。<br /> </td> 
   </tr> 
   <tr> 
@@ -210,7 +210,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> 主要金鑰. 此SQL欄位是識別表格中記錄的一種方式。<br /> </td> 
+   <td> 主索引鍵。 此SQL欄位是識別表格中記錄的一種方式。<br /> </td> 
    <td> 識別碼收件者是主要金鑰，而且依定義識別碼是唯一的。<br /> </td> 
   </tr> 
   <tr> 
@@ -220,7 +220,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> 計算欄位. 根據請求，會使用資料庫中的值計算此型別的欄位。<br /> </td> 
+   <td> 計算欄位。 根據請求，會使用資料庫中的值計算此型別的欄位。<br /> </td> 
    <td> 年齡、電子郵件網域等<br /> </td> 
   </tr> 
   <tr> 
@@ -379,7 +379,7 @@ ht-degree: 37%
    <td> Count(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
-   <td> <strong>CountAll</strong><br /> </td> 
+   <td> <strong>全部計數</strong><br /> </td> 
    <td> 計算傳回的值（所有欄位）<br /> </td> 
    <td> CountAll()<br /> </td> 
   </tr> 
@@ -394,7 +394,7 @@ ht-degree: 37%
    <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
-   <td> <strong>最小</strong><br /> </td> 
+   <td> <strong>最小值</strong><br /> </td> 
    <td> 傳回數字、字串或日期型別欄的最小值<br /> </td> 
    <td> Min(&lt;value&gt;)<br /></td> 
   </tr> 
@@ -404,7 +404,7 @@ ht-degree: 37%
    <td> StdDev(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>總和</strong><br /> </td> 
+   <td> <strong>Sum</strong><br /> </td> 
    <td> 傳回數字、字串或日期型別欄的值總和<br /> </td> 
    <td> Sum(&lt;value&gt;)<br /></td> 
   </tr> 
@@ -423,27 +423,27 @@ ht-degree: 37%
   <tr> 
    <td> <strong>AllNonNull2</strong><br /> </td> 
    <td> 指示所有參數是否為非空值且非空白<br /> </td> 
-   <td> AllNonNull2(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> AllNonNull2(&lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>AllNonNull3</strong><br /> </td> 
    <td> 指示所有參數是否為非空值且非空白<br /> </td> 
-   <td> AllNonNull3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> AllNonNull3(&lt;string&gt;， &lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
-   <td> 傳回字串中第一個字元的　ASCII　值.<br /> </td> 
+   <td> 傳回字串中第一個字元的ASCII值。<br /> </td> 
    <td> Ascii(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
    <td> 傳回與　'n' ASCII　代碼對應的字元<br /> </td> 
-   <td> 字元(&lt;number&gt;)<br /></td>  
+   <td> Char(&lt;number&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
-   <td> 傳回字串　1　中字串　2　的位置.<br /> </td> 
-   <td> Charindex(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> 傳回字串1中字串2的位置。<br /> </td> 
+   <td> Charindex(&lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
@@ -453,7 +453,7 @@ ht-degree: 37%
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
    <td> 如果前兩個引數相等，則傳回第三個引數。 如果沒有，則傳回最後一個引數<br /> </td> 
-   <td> IfEquals(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> IfEquals(&lt;string&gt;， &lt;string&gt;， &lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
@@ -463,12 +463,12 @@ ht-degree: 37%
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
    <td> 串連以引數形式傳遞的字串。 視需要在字串之間新增空格。<br /> </td> 
-   <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> JuxtWords(&lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
    <td> 串連以引數形式傳遞的字串。 如有必要，在字串之間新增空格<br /> </td> 
-   <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
+   <td> JuxtWords3(&lt;string&gt;， &lt;string&gt;， &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
@@ -478,11 +478,11 @@ ht-degree: 37%
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
    <td> 傳回字串的前　n　個字元<br /> </td> 
-   <td> Left(&lt;string&gt;, &lt;number&gt;)<br /></td> 
+   <td> Left(&lt;string&gt;， &lt;number&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
-   <td> 傳回字串長度<br /> </td> 
+   <td> 傳回字串的長度<br /> </td> 
    <td> Length(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -503,12 +503,12 @@ ht-degree: 37%
   <tr> 
    <td> <strong>MemoContains</strong><br /> </td> 
    <td> 指定備忘錄是否包含作為參數傳遞的字串<br /> </td> 
-   <td> MemoContains(&lt;memo&gt;, &lt;string&gt;)<br /></td> 
+   <td> MemoContains(&lt;memo&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>RPad</strong><br /> </td> 
    <td> 傳回右側的已完成字串<br /> </td> 
-   <td> RPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
+   <td> RPad(&lt;string&gt;， &lt;number&gt;， &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Right</strong><br /> </td> 
@@ -893,7 +893,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-**Geomarketing**
+**地理行銷**
 
 <table> 
  <tbody> 
@@ -910,7 +910,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-**Others**
+**其他**
 
 <table> 
  <tbody> 
@@ -951,7 +951,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>GetMirrorURL</strong><br /> </td> 
-   <td> 檢索鏡像頁伺服器的URL<br /> </td> 
+   <td> 檢索鏡像頁面伺服器的URL<br /> </td> 
    <td> GetMirrorURL(&lt;value&gt;)<br /> </td>  
   </tr> 
   <tr> 

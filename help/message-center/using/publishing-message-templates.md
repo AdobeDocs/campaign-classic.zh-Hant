@@ -3,15 +3,15 @@ product: campaign
 title: 發佈訊息範本
 description: 瞭解Adobe Campaign Classic中的交易式訊息範本發佈和取消發佈
 feature: Transactional Messaging, Message Center, Templates
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 2%
+source-wordcount: '502'
+ht-degree: 3%
 
 ---
 

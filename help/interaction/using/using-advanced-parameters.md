@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 使用進階參數
-description: 使用進階參數
+title: 使用進階引數
+description: 使用進階引數
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
@@ -11,11 +11,11 @@ exl-id: 232e2bfc-f497-40ad-811e-118dbfcabbcf
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '125'
-ht-degree: 8%
+ht-degree: 5%
 
 ---
 
-# 使用進階參數{#using-advanced-parameters}
+# 使用進階引數{#using-advanced-parameters}
 
 
 

@@ -3,11 +3,11 @@ product: campaign
 title: 互動
 description: 互動
 feature: Workflows, Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 10%
+source-wordcount: '167'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 10%
 
 如需詳細資訊，請參閱Campaign版本的相關章節：
 
-![](assets/do-not-localize/v7.jpeg)[Campaign v7 文件](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 
@@ -33,7 +33,7 @@ ht-degree: 10%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">完整彙總計算 (propositionrcp 立方體)</span> <br /> </td> 
+   <td> <span class="uicontrol">完整彙總計算(propositionrcp cube)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
    <td> 此工作流程會更新 <strong>完整</strong> 彙總 <strong>優惠方案主張</strong> 立方體。 預設會每天早上6:00觸發。 此彙總會擷取下列維度：管道、傳送、行銷優惠和日期。<br /> 此 <strong>優惠方案主張</strong> 立方體接著可用來根據選件產生報表。 若要深入瞭解多維度資料集，請參閱 <a href="../../reporting/using/ac-cubes.md">本節</a>.<br /> </td> 
   </tr> 

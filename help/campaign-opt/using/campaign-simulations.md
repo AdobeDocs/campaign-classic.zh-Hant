@@ -171,7 +171,7 @@ ht-degree: 2%
 
 若要比較結果，必須使用報表。 事實上，Adobe Campaign可讓您儲存報表歷史記錄，以便稍後再次檢視。 此歷史記錄會在模擬的整個生命週期中儲存。
 
-**範例:**
+**範例：**
 
 1. 針對型別為的傳遞建立模擬 **A** 套用至。
 1. 在 **[!UICONTROL Reports]** 標籤，編輯其中一個可用報表，例如 **[!UICONTROL Detail of simulation exclusions]** 例如。
@@ -195,7 +195,7 @@ ht-degree: 2%
 >我們建議在模擬範本中定義計算軸，而不是為每個模擬分別定義計算軸。\
 >模擬範本會儲存在 **[!UICONTROL Resources > Templates > Simulation templates]** Adobe Campaign樹的節點。
 
-**範例:**
+**範例：**
 
 在以下範例中，我們要根據收件者的狀態（「客戶」、「潛在客戶」或無）建立額外的報告軸。
 

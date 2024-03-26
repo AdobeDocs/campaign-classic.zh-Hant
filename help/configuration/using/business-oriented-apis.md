@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 4%
+source-wordcount: '636'
+ht-degree: 3%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 4%
 
 Business API是每種物件型別專屬的。 它們會影響：
 
-* 傳遞:
+* 傳遞：
 
    * 建立傳遞動作，請參閱 [提交傳遞(nms：delivery)](#submitdelivery--nms-delivery-)，
    * 傳送行銷活動（開始、暫停、停止、傳送證明）、
    * 復原傳遞記錄。
 
-* 工作流程:
+* 工作流程：
 
    * 啟動工作流程，
    * 驗證流程等。
@@ -83,7 +83,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 ### SOAP訊息範例 {#example-of-soap-messages}
 
-* 查詢:
+* 查詢：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -101,7 +101,7 @@ Business API是每種物件型別專屬的。 它們會影響：
   </SOAP-ENV:Envelope>
   ```
 
-* 回應:
+* 回應：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -146,7 +146,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 ### SOAP訊息範例 {#example-of-soap-messages-1}
 
-查詢:
+查詢：
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -162,7 +162,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 </SOAP-ENV:Body>
 ```
 
-回應:
+回應：
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>

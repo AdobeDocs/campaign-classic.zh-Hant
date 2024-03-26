@@ -9,8 +9,8 @@ role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 14%
+source-wordcount: '915'
+ht-degree: 10%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 鏡像頁面是可透過網頁瀏覽器線上存取的 HTML 頁面。其內容與電子郵件相同。
 
-依預設，如果將連結插入郵件內容中，則會產生鏡像頁面。有關個人化區塊插入的詳細資訊，請參閱 [個人化區塊](personalization-blocks.md).
+依預設，如果將連結插入郵件內容中，則會產生映象頁面。 有關個人化區塊插入的詳細資訊，請參閱 [個人化區塊](personalization-blocks.md).
 
 在傳遞屬性中， **[!UICONTROL Mode]** 欄位屬於 **[!UICONTROL Validity]** 索引標籤可讓您修改此頁面的產生模式。
 
@@ -134,6 +134,6 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 >[!IMPORTANT]
 >
->會為進階使用者保留新增指令碼，以便插入其他 SMTP 標題。
+>系統會為進階使用者保留新增指令碼，以便插入其他SMTP標題。
 >
 >此指令碼的語法必須符合以下內容類型的要求：沒有未使用的空間，沒有空行等。

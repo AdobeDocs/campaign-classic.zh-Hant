@@ -12,7 +12,7 @@ exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
 source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -62,7 +62,7 @@ Campaign Classic可讓您匯入壓縮或加密的檔案，以及匯出壓縮或�
 * [解壓縮或解密檔案](../../platform/using/unzip-decrypt.md)
 * [壓縮或加密檔案](../../platform/using/zip-encrypt.md)
 
-## 最佳實務及疑難排解 {#best-practices-troubleshooting}
+## 最佳作法和疑難排解 {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 

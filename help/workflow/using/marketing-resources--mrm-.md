@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: 行銷資源 (MRM)
-description: 行銷資源 (MRM)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: 行銷資源(MRM)
+description: 行銷資源(MRM)
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 14%
+source-wordcount: '99'
+ht-degree: 9%
 
 ---
 
 
-# 行銷資源 (MRM){#marketing-resources-mrm}
+# 行銷資源(MRM){#marketing-resources-mrm}
 
 
 
-以下詳述的工作流程會隨 **行銷資源(RM)** 模組（預設）。 如需此模組的詳細資訊，請參閱此 [區段](../../campaign/using/designing-marketing-campaigns.md).
+以下詳述的工作流程會隨 **行銷資源(MRM)** 模組（預設）。 如需此模組的詳細資訊，請參閱此 [區段](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 

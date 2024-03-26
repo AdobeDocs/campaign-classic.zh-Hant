@@ -11,8 +11,8 @@ topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 4%
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 >
 >如果您使用Demdex網域，並遵循語法 **ftp-out.demdex.com** 用於匯入外部帳戶和 **ftp-in.demdex.com** 針對匯出外部帳戶，您需要據此調整實作，並移至Amazon Simple Storage Service (S3)聯結器以匯入或匯出資料。 有關如何使用Amazon S3設定外部帳戶的詳細資訊，請參閱此 [區段](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
-下圖詳細說明此整合的運作方式。在此，AAM代表Adobe Audience Manager，而AC代表Adobe Campaign。
+下圖詳細說明此整合的運作方式。 在此，AAM代表Adobe Audience Manager，而AC代表Adobe Campaign。
 
 ![](assets/aam_diagram.png){align="center"}
 

@@ -10,7 +10,7 @@ exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 5%
 
 如需指令碼的詳細說明，請參閱 [本節](#details-of-the-script).
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 1. 開啟您的 **[!UICONTROL JavaScript code]** 活動。
 1. 複製中提供的指令碼 [指令碼範例](#example-of-a-script) 到 **[!UICONTROL JavaScript code]** 視窗。
@@ -168,6 +168,6 @@ ht-degree: 5%
 * 最高轉換率： `[indicators/@transactionRatio]`，
 * 收到訊息後瀏覽的頁面數： `[indicators/@totalWebPage]`，
 * 最低取消訂閱率： `[indicators/@optOutRatio]`，
-* 交易金額: `[indicators/@amount]`.
+* 交易金額： `[indicators/@amount]`.
 
 您現在可以定義最終傳遞。 [了解更多](a-b-testing-uc-final-delivery.md)。

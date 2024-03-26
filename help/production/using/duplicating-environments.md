@@ -3,7 +3,7 @@ product: campaign
 title: 複製環境
 description: 複製環境
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1317'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 為了讓此程式發揮作用，來源和目標環境必須具有相同的執行個體數量、相同的目的（行銷執行個體、傳遞執行個體）和類似的設定。 技術設定必須符合軟體先決條件。 兩個環境中都必須安裝相同的元件。
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 ### 傳輸程式 {#transfer-procedure}
 

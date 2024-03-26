@@ -3,16 +3,16 @@ product: campaign
 title: 建立FDA的資料結構
 description: 瞭解如何為FDA建立資料結構
 feature: Installation, Instance Settings, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 4%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
-# 建立資料結構綱要 {#creating-the-data-schema}
+# 建立資料結構描述 {#creating-the-data-schema}
 
 
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. 按一下 **[!UICONTROL OK]** 確認。Adobe Campaign會自動偵測所選表格的結構，並產生邏輯架構。 請注意，Adobe Campaign不會產生連結。
+1. 按一下 **[!UICONTROL OK]** 以確認。 Adobe Campaign會自動偵測所選表格的結構，並產生邏輯架構。 請注意，Adobe Campaign不會產生連結。
 
 1. 按一下 **[!UICONTROL Save]** 以確認建立。
 

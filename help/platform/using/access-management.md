@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 開始使用權限
-description: 瞭解如何授與對Campaign功能的存取權
-badge: label="v7" type="資訊性" tooltip="僅適用於Campaign Classicv7"
+description: 瞭解如何授與Campaign功能的存取權
+badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 6%
+source-wordcount: '256'
+ht-degree: 7%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 6%
 
 
 
-Adobe Campaign可讓您定義和管理指派給各種運運算元的許可權。 這些是一組授權或拒絕的許可權和限制：
+Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。 這些是一組授權或拒絕的許可權和限制：
 
 * 存取特定功能（透過已命名的許可權），
 * 存取特定記錄，
 * 建立、修改及/或刪除記錄（動作、連絡人、行銷活動、群組等）。
 
-許可權適用於操作員設定檔或操作員群組。
+這些許可權適用於操作員設定檔或操作員群組。
 
-它們由連結至操作員與Adobe Campaign連線模式的安全引數完成。 如需中安全性區域的詳細資訊 [此頁面](../../installation/using/security-zones.md).
+它們是透過連結至操作員與Adobe Campaign的連線模式的安全引數完成的。 有關中安全性區域的詳細資訊 [此頁面](../../installation/using/security-zones.md).
 
 您可授予使用者兩種型別的許可權：
 
-* 您可以定義您賦予許可權的運運算元群組，然後將運運算元與一或多個群組建立關聯。 這可讓您重複使用許可權，並讓運運算元設定檔更加一致。 它還有助於個人檔案的管理和維護。 群組的建立和管理過程如下所述： [本節](access-management-groups.md).
+* 您可以定義您賦予許可權的運運算元群組，然後將運運算元與一或多個群組建立關聯。 這可讓您重複使用許可權，並讓運運算元設定檔更加一致。 它也能促進設定檔的管理和維護。 群組的建立和管理會顯示在 [本節](access-management-groups.md).
 
-* 您可以將已命名的許可權直接歸因於使用者，在某些情況下，這會使透過群組配置的許可權過載。 這些權利會顯示在 [此頁面](access-management-named-rights.md).
+* 您可以將已命名的許可權直接歸因於使用者，在某些情況下，這會使透過群組配置的許可權過載。 這些許可權會顯示在 [此頁面](access-management-named-rights.md).
 
 >[!NOTE]
 >
->在開始定義許可權之前，Adobe建議您先閱讀 [安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html).
+>開始定義許可權之前，Adobe建議您先閱讀 [安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html).
 
 在以下章節中瞭解如何授與存取權並設定許可權：
 
@@ -49,7 +49,7 @@ Adobe Campaign可讓您定義和管理指派給各種運運算元的許可權。
 * [存取許可權矩陣](access-management-named-rights.md#access-rights-matrix)
 
 
-另請參閱:
+另請參閱：
 
 * [管理工作流程的許可權](../../workflow/using/managing-rights.md)
 * [管理分散式行銷的許可權](../../distributed/using/about-distributed-marketing.md#operators-and-entities)

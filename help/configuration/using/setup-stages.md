@@ -37,7 +37,7 @@ ht-degree: 5%
    >
    >所有WEB型別的標籤都可以新增至您網站的頁面。 TRANSACTION標籤必須動態修改或新增，才能包含其他資訊（金額、專案等）。
 
-**範例**:
+**範例**：
 
 ```
 <script type="text/javascript">

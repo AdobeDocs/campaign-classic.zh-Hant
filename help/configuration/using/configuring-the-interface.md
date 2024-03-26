@@ -9,8 +9,8 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 
 1. 前往 **[!UICONTROL Administration>Platform>Options]** 瀏覽器節點。
 1. 變更 **Nms_DefaultRcpSchema** 變數，其結構描述名稱符合外部收件者表格（在此案例中為：cus：individual）。
-1. 儲存變更.
+1. 儲存變更。
 
 ## 建立新表單 {#creating-a-new-form-}
 

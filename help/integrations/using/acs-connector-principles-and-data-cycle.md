@@ -3,14 +3,14 @@ product: campaign
 title: 開始使用ACS聯結器
 description: ACS Connector原理和資料週期
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 2%
+source-wordcount: '2043'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +45,7 @@ ACS Connector橋接Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign
 >
 >ACS Connector隨附於Campaign v7，並受許可協定規範。 若要使用ACS Connector，請務必在Campaign v7和Campaign Standard之間切換。 如果您不確定您的版本及其包含的功能，請聯絡管理員。
 
-## 程序 {#process}
+## 處理序 {#process}
 
 ### 資料複製 {#data-replication}
 
@@ -105,9 +105,9 @@ Campaign Standard和Campaign v7可以使用復寫設定檔，在行銷活動中�
 
 ### 帳單 {#billing}
 
-您選擇的傳送傳遞、Campaign v7或Campaign Standard的應用程式不會影響帳單。 帳單資訊會在Campaign v7和Campaign Standard之間調節。 因此，如果您使用兩個應用程式將傳送內容傳送給相同收件者，仍會計為一份使用中設定檔。
+您選擇的傳送傳遞、Campaign v7或Campaign Standard的應用程式不會影響帳單。 帳單資訊會在Campaign v7和Campaign Standard之間調節。 因此，如果您使用兩個應用程式將傳送內容傳送給相同收件者，仍會計為一份作用中設定檔。
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 ACS聯結器存在兩種型別的實作。 兩者一律由Adobe Campaign Consulting團隊執行。
 
@@ -170,7 +170,7 @@ ACS聯結器存在兩種型別的實作。 兩者一律由Adobe Campaign Consult
    <td> <strong>內部名稱</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 來源 ID<br /> </td> 
+   <td> 來源ID<br /> </td> 
    <td> @sourceId<br /> </td> 
   </tr> 
   <tr> 
@@ -183,7 +183,7 @@ ACS聯結器存在兩種型別的實作。 兩者一律由Adobe Campaign Consult
   </tr> 
   <tr> 
    <td> 電子郵件<br /> </td> 
-   <td> @電子郵件<br /> </td> 
+   <td> @email<br /> </td> 
   </tr> 
   <tr> 
    <td> 姓氏<br /> </td> 
@@ -198,11 +198,11 @@ ACS聯結器存在兩種型別的實作。 兩者一律由Adobe Campaign Consult
    <td> @middleName<br /> </td> 
   </tr> 
   <tr> 
-   <td> 行動裝置<br /> </td> 
+   <td> 行動<br /> </td> 
    <td> @mobilePhone<br /> </td> 
   </tr> 
   <tr> 
-   <td> 生日日期<br /> </td> 
+   <td> 出生日期<br /> </td> 
    <td> @birthDate<br /> </td> 
   </tr> 
   <tr> 
@@ -214,7 +214,7 @@ ACS聯結器存在兩種型別的實作。 兩者一律由Adobe Campaign Consult
    <td> @salutation<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不再聯繫 (透過任何管道)<br /> </td> 
+   <td> 不再聯絡（透過任何管道）<br /> </td> 
    <td> @blackList<br /> </td> 
   </tr> 
   <tr> 
@@ -234,15 +234,15 @@ ACS聯結器存在兩種型別的實作。 兩者一律由Adobe Campaign Consult
    <td> @fax<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址 1 (公寓)<br /> </td> 
+   <td> 地址1 （公寓）<br /> </td> 
    <td> [location/@address1]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址 2<br /> </td> 
+   <td> 地址2<br /> </td> 
    <td> [location/@address2]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址 3 (號碼和街道)<br /> </td> 
+   <td> 地址3 （號碼和街道）<br /> </td> 
    <td> [location/@address3]<br /> </td> 
   </tr> 
   <tr> 
@@ -258,7 +258,7 @@ ACS聯結器存在兩種型別的實作。 兩者一律由Adobe Campaign Consult
    <td> [location/@city]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 州或省代碼<br /> </td> 
+   <td> 州/省代碼<br /> </td> 
    <td> [location/@stateCode]<br /> </td> 
   </tr> 
   <tr> 

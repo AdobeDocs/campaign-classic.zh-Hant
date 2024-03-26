@@ -3,7 +3,7 @@ product: campaign
 title: 管理
 description: 管理
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '431'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ Adobe Campaign模組的自動啟動(**網頁**， **mta**， **wfserver**、等)
 
   您也可以使用 **nlserver重新啟動`<module>[@<instance>]`** 重新啟動模組的命令。
 
-  範例:
+  例如：
 
   **nlserver start web**
 
@@ -84,7 +84,7 @@ Adobe Campaign模組的自動啟動(**網頁**， **mta**， **wfserver**、等)
   >* 使用 **-noconsole** 選項，確保啟動的模組不會在主控台上顯示任何內容。 記錄檔將透過 **syslogd** 模組。
   >* 使用 **-verbose** 選項來顯示程式動作的額外資訊。
   >
-  >   範例:
+  >   例如：
   >
   >   **nlserver重新啟動web -verbose**
   >

@@ -3,15 +3,15 @@ product: campaign
 title: 啟動 Adobe Campaign
 description: 啟動 Adobe Campaign
 feature: Access Management, Permissions
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 51%
+source-wordcount: '508'
+ht-degree: 31%
 
 ---
 
@@ -33,21 +33,21 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 ![](assets/acc-logon.png)
 
-## 連線至Adobe Campaign {#connecting-to-adobe-campaign}
+## 連線至 Adobe Campaign {#connecting-to-adobe-campaign}
 
-您可以使用 Adobe ID 連線至 Adobe Campaign。如需詳細資訊，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
+您可以使用您的Adobe ID連線至Adobe Campaign。 如需詳細資訊，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
 
 您也可以使用專用登入名/密碼進行連線：
 
-1. 在 **[!UICONTROL Login]** 欄位輸入操作者帳戶識別碼。
+1. 輸入運運算元帳戶識別碼，在 **[!UICONTROL Login]** 欄位。
 
    您的識別碼由 Adobe Campaign 平台管理員提供。
 
-1. 在 **[!UICONTROL Password]** 欄位輸入您的密碼。
+1. 在「 」中輸入您的密碼 **[!UICONTROL Password]** 欄位。
 
-   第一次存取資料庫時使用的密碼由管理員提供。連線之後，您可以透過 **[!UICONTROL Tools > Change password...]** 功能表。 有關運運算元和連線的詳細資訊，請參閱 [存取管理](../../platform/using/access-management.md).
+   第一次存取資料庫時，您的密碼就是管理員提供給您的密碼。 連線之後，您可以透過 **[!UICONTROL Tools > Change password...]** 功能表。 有關運運算元和連線的詳細資訊，請參閱 [存取管理](../../platform/using/access-management.md).
 
-1. 按一下 **[!UICONTROL LOG IN]** 確認。<!--You can also press the **Enter** key to launch connection.-->
+1. 按一下 **[!UICONTROL LOG IN]** 以確認。<!--You can also press the **Enter** key to launch connection.-->
 
 您現在可以存取 [Adobe Campaign 工作區](../../platform/using/adobe-campaign-workspace.md)。
 
@@ -64,11 +64,11 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 在 **[!UICONTROL Connections]** 視窗，按一下 **[!UICONTROL Add > Connection]**.
 
-然後您必須定義連線設定。操作步驟：
+之後，您必須定義連線設定。 操作步驟：
 
-1. 輸入一個 **[!UICONTROL Label]** 以為資料庫連線命名。
+1. 輸入 **[!UICONTROL Label]** 指定資料庫連線的名稱。
 
-1. 在 **[!UICONTROL URL]** 欄位中，新增應用程式伺服器的位址。如果您不知道連線 URL，請連絡管理員。
+1. 在中新增應用程式伺服器的位址 **[!UICONTROL URL]** 欄位。 如果您不知道連線 URL，請連絡管理員。
 
 1. 檢查 **[!UICONTROL Connect with an Adobe ID]** 讓運運算元使用其Adobe ID連線至主控台。 如需詳細資訊，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
 
@@ -76,7 +76,7 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 ## 操作者和許可 {#operators-and-permissions}
 
-Adobe Campaign 系統管理員在 Adobe Campaign 樹狀結構清單的 **[!UICONTROL Administration > Access management > Operators]** 節點設定具有軟體存取權限及其相關許可的操作者的識別碼與密碼。
+擁有軟體存取許可權之操作員的識別碼和密碼及其個別許可權，均由您的Adobe Campaign系統管理員在 **[!UICONTROL Administration > Access management > Operators]** Adobe Campaign樹的節點。
 
 本功能在中詳細說明 [存取管理](../../platform/using/access-management.md) 區段。
 

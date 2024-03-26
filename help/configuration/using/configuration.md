@@ -8,8 +8,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 1%
+source-wordcount: '1193'
+ht-degree: 0%
 
 ---
 
@@ -97,7 +97,7 @@ A **`<command>`** 元素可包含 **`<command>`** 子元素。 在這種情況�
 
 在初始化時，表單內容可從以下位置更新： **`<enter>`** 標籤之間。 如需有關此標籤的詳細資訊，請參閱有關輸入表單的檔案。
 
-**範例**:
+**範例**：
 
 * 宣告全域命令以啟動「xtk：import」表單：
 
@@ -270,7 +270,7 @@ A **`<command>`** 元素可包含 **`<command>`** 子元素。 在這種情況�
 
 初始化時，可透過以下方式更新表單內容： **`<enter>`** 標籤之間。 如需此標籤的詳細資訊，請參閱輸入表單檔案。
 
-**範例**:
+**範例**：
 
 ```
 <command desc="Cancel execution of the job" enabledIf="EV(@status, 'running')"

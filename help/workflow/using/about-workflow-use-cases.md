@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 關於工作流程使用實例
-description: 進一步瞭解您可以使用Campaign Classic工作流程執行的使用案例
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 深入瞭解您可以使用Campaign Classic工作流程執行的使用案例
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 66%
+source-wordcount: '213'
+ht-degree: 30%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 66%
 
 在本節中，您將找到運用Campaign工作流程功能的各種使用案例。
 
-它們可幫助您探索可以使用工作流程的不同內容，並回應您的需求。
+它們將幫助您探索可在其中使用工作流程的不同內容，並回應您的需求。
 
 ## 傳遞 {#deliveries}
 
@@ -27,7 +27,7 @@ ht-degree: 66%
 * [使用本機核准活動](using-the-local-approval-activity.md)
 * [A/B 測試](../../delivery/using/a-b-testing-use-case.md)
 * [傳送生日電子郵件](sending-a-birthday-email.md)
-* [載入傳遞內容](loading-delivery-content.md)
+* [正在載入傳遞內容](loading-delivery-content.md)
 * [跨頻道傳遞工作流程](cross-channel-delivery-workflow.md)
 * [使用自訂日期欄位擴充電子郵件](email-enrichment-with-custom-date-fields.md)
 * [自動建立、編輯和發佈內容](../../delivery/using/automating-via-workflows.md#examples)
@@ -36,9 +36,9 @@ ht-degree: 66%
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
-* [傳送報表至清單](sending-a-report-to-a-list.md)
+* [傳送報告至清單](sending-a-report-to-a-list.md)
 * [監督工作流程](supervising-workflows.md)
-* [傳送個人化警報給營運商](sending-personalized-alerts-to-operators.md)
+* [傳送個人化警示給營運商](sending-personalized-alerts-to-operators.md)
 * [在傳送傳遞前，設定收件者核准程序](using-the-local-approval-activity.md)
 
 ## 資料管理 {#management}
@@ -59,12 +59,12 @@ ht-degree: 66%
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [查詢收件人資料表](querying-recipient-table.md)
+* [查詢收件者資料表](querying-recipient-table.md)
 * [查詢傳遞資訊](querying-delivery-information.md)
-* [執行彙總計算](performing-aggregate-computing.md)
+* [執行彙總運算](performing-aggregate-computing.md)
 * [使用分組管理進行查詢](querying-using-grouping-management.md)
 * [使用多對多關係進行查詢](querying-using-many-to-many-relationship.md)
-* [新增分項清單類型計算欄位](adding-enumeration-type-calculated-field.md)
+* [新增分項清單型別計算欄位](adding-enumeration-type-calculated-field.md)
 * [建立篩選](creating-a-filter.md)
 * [篩選重複的收件者](filtering-duplicated-recipients.md)
 * [調用查詢中的執行個體變數](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)

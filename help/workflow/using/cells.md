@@ -2,13 +2,13 @@
 product: campaign
 title: 儲存格
 description: 儲存格
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 8%
+source-wordcount: '134'
+ht-degree: 13%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 8%
 
 
 
-此 **[!UICONTROL Cells]** 活動會以資料欄的形式，提供各種子集的檢視。 它有助於子集操作，也設計用於鼓勵個人化可能性。
+此 **[!UICONTROL Cells]** 活動會以資料欄的形式，提供各種子集的檢視。 它有助於子集操作，也設計為鼓勵個人化可能性。
 
 ![](assets/wf_split_cells.png)
 
-此活動可設定為根據使用者需求輸入特定引數。 依預設，每個子集的詳細資訊會透過在專用視窗中提供 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 索引標籤。 在以下範例中，表單已修改： **[!UICONTROL Data]** 索引標籤已新增，以啟用每個子集的優惠方案與優先順序層級的關聯。
+此活動可設定為根據使用者需求輸入特定引數。 依預設，每個子集的詳細資訊會透過在專用視窗中顯示 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 索引標籤。 在下列範例中，表單已修改： **[!UICONTROL Data]** 索引標籤已新增，以啟用每個子集的優惠方案與優先順序層級的關聯。
 
 ![](assets/wf_split_cells_with_customization.png)
 
@@ -49,4 +49,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的輸入表單個人化是保留給專家使用者。 如需詳細資訊，請參閱本[區段](../../configuration/using/identifying-a-form.md)。
+Adobe Campaign中的登入表單個人化是保留給專家使用者。 如需詳細資訊，請參閱本[區段](../../configuration/using/identifying-a-form.md)。

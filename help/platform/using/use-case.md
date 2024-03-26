@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 使用案例
-description: 使用案例
+title: 使用實例
+description: 使用實例
 feature: Subscriptions, Email, Data Management
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ---
 
-# 使用案例{#use-case}
+# 使用實例{#use-case}
 
 
 

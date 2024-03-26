@@ -29,7 +29,7 @@ ht-degree: 26%
 * [分項清單](schema/enumeration.md)
 * [說明](schema/help.md)
 * [加入](schema/join.md)
-* [金鑰](schema/key.md)
+* [索引鍵](schema/key.md)
 * [金鑰欄位](schema/keyfield.md)
 * [方法](schema/method.md)
 * [方法](schema/methods.md)

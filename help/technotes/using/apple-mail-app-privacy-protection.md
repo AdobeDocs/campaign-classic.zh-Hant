@@ -6,7 +6,7 @@ description: 瞭解Apple的郵件隱私權保護功能可能會對您的行銷�
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -373,7 +373,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 * S3
 * Azure Blob
 
-##### 實作
+##### 實施
 
 此範例說明如何從Adobe Campaign匯出追蹤資料。
 

@@ -9,7 +9,7 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2401'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ A **`<static>`** 元素可用於格式化輸入表單：
 
 >[!NOTE]
 >
->A **style=&quot;down|up**（依預設）**&quot;** 特徵會強制標籤標籤垂直定位在控制項下方或上方。 此功能是選取性的。
+>A **style=&quot;down|up**（依預設）**&quot;** 特徵會強制標籤標籤垂直定位在控制項下方或上方。 此功能為選用。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 圖示清單 {#icon-list}
@@ -667,7 +667,7 @@ SOAP方法執行可從填入的啟動 **`<leave>`** 標籤的後面。
 
 此 **exprIn** attribute包含要以引數形式傳遞的資料位置。
 
-**範例**:
+**範例**：
 
 ```xml
 <leave>

@@ -3,14 +3,14 @@ product: campaign
 title: 技術檔案 — Adobe Campaign設定更新
 description: Adobe Campaign設定更新
 feature: Technote, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 11%
+source-wordcount: '1110'
+ht-degree: 8%
 
 ---
 
@@ -111,7 +111,7 @@ Adobe身分服務(IMS)將停止支援舊的Internet Explorer版本，從 **2021�
 
 **您有受到影響嗎？**
 
-如果您的執行個體在 **比Campaign 19.1.8、20.2.4、Gold Standard 11更舊的版本**，接著您就會透過oAuth驗證使用舊版的Triggers整合： **您需要升級到較新版本，然後移至Adobe I/O**.
+如果您的執行個體在 **比Campaign 19.1.8、20.2.4、Gold Standard 11更舊的版本**，接著您就會透過oAuth驗證使用舊版的Triggers整合： **您需要升級到較新版本並移至Adobe I/O**.
 
 必須升級至下列新版本之一：
 

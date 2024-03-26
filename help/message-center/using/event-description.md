@@ -3,15 +3,15 @@ product: campaign
 title: 事件說明
 description: 瞭解如何在Adobe Campaign Classic中使用SOAP方法管理異動訊息事件
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 0%
+source-wordcount: '756'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 兩種方法都包含 **`<urn:sessiontoken>`** 用於登入交易式訊息模組的元素。 我們建議您透過受信任的IP位址使用身分識別方法。 若要擷取工作階段權杖，請執行登入SOAP呼叫，然後執行get權杖和登出。 對多個RT呼叫使用相同的權杖。 本節包含的範例是使用工作階段權杖方法（建議使用）。
 
-如果您使用負載平衡的伺服器，則可以使用使用者/密碼驗證（在RT訊息的層級）。 範例:
+如果您使用負載平衡的伺服器，則可以使用使用者/密碼驗證（在RT訊息的層級）。 例如：
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">

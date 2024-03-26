@@ -11,7 +11,7 @@ topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '822'
 ht-degree: 3%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 3%
 
    ![](assets/audiences_1.png)
 
-1. 新增名稱給您的對象。
+1. 新增名稱至您的對象。
 
    ![](assets/audiences_2.png)
 

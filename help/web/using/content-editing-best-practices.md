@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 * 早於 **匯入HTML頁面範本** 在Adobe Campaign中，請確定範本已開啟並在各種瀏覽器中正確顯示。
 * 如果HTML頁面包含 **JavaScript指令碼**，他們需要執行 **無錯誤** 在編輯器外。
-* 建立範本時，建議將 **&#39;type&#39;** 屬性新增至標籤。`<input>`編輯器將處理此資訊，並幫助使用者在設定Web應用程式時將資料庫的欄位連結到表單的欄位。
+* 建立範本時，建議新增 **&#39;type&#39;** 歸因至 `<input>` 標籤之間。 編輯器將處理此資訊，並幫助使用者在設定Web應用程式時將資料庫的欄位連結到表單的欄位。
 
   範本中的 HTML 程式碼範例：
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 匯入和匯出受眾
-description: 匯入和匯出受眾
+title: 匯入和匯出對象
+description: 匯入和匯出對象
 feature: Audiences, People Core Service Integration
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
@@ -11,13 +11,13 @@ topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 2%
+source-wordcount: '630'
+ht-degree: 0%
 
 ---
 
 
-# 匯入和匯出受眾{#importing-and-exporting-audiences}
+# 匯入和匯出對象{#importing-and-exporting-audiences}
 
 
 

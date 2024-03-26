@@ -6,7 +6,8 @@ badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS
 role: User, Developer, Admin
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 8%
@@ -187,4 +188,3 @@ Adobe Campaign提供的行動傳遞範本位在 **[!UICONTROL Resources > Templa
 * [簡訊字母音譯](sms-set-up.md#about-character-transliteration)
 * [文字編碼](sms-set-up.md#about-text-encodings)
 * [自動回覆](sms-set-up.md#automatic-reply)
-

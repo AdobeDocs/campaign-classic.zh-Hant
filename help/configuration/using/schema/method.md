@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 內容模型 {#content-model-10}
 
-方法：==(說明 |引數)
+方法：==(說明 | 引數)
 
 ## 屬性 {#attributes-10}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## 父項 {#parents-10}
 
-`<methods>`  ,  `<interface />`
+`<methods>`  ，  `<interface />`
 
 ## 子系 {#children-10}
 

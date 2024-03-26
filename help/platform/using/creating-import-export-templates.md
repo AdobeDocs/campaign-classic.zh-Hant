@@ -12,7 +12,7 @@ exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 22%
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 匯入和匯出範本儲存在 **[!UICONTROL Resources > Templates > Job templates]** Adobe Campaign樹目錄。
 
-按照預設，此目錄中存在三個匯入範本和一個匯出範本。不得更改它們。
+依預設，此目錄中會有三個匯入範本和一個匯出範本。 不得更改它們。
 
 * 原生範本 **[!UICONTROL Import denylist]** 已設定為匯入已新增至封鎖清單的電子郵件地址清單。
 

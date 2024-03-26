@@ -37,7 +37,7 @@ ht-degree: 8%
   ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
-所有這些開啟的資料匯入或匯出精靈。 這些區段將詳細說明：
+所有這些開啟的資料匯入或匯出精靈。 其會於下列章節中詳細說明：
 
 * [設定匯入工作](../../platform/using/executing-import-jobs.md)
 * [設定匯出作業](../../platform/using/executing-export-jobs.md)

@@ -11,7 +11,7 @@ topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1982'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Adobe Campaign中有以下篩選器型別：
 
   有關簡單篩選的詳情，請參閱 [建立簡單篩選器](#creating-a-simple-filter).
 
-* **進階篩選器**
+* **進階篩選**
 
   **進階篩選** 是使用資料上的查詢或查詢組合所建立。
 

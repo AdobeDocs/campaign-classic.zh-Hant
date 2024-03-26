@@ -3,15 +3,15 @@ product: campaign
 title: 設定執行個體
 description: 瞭解如何在Adobe Campaign Classic中設定異動訊息控制和執行例項
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 1%
+source-wordcount: '1243'
+ht-degree: 2%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 1%
 
 若要將執行例項連線至控制例項，請遵循下列步驟。
 
-若要讓控制執行個體能夠連線到執行個體而不需要提供密碼，只需在輸入控制執行個體的IP位址 **訊息中心** 「存取權」區段。 不過，預設會禁止空白密碼。
+若要讓控制執行個體能夠連線到執行個體而不需要提供密碼，只需在輸入控制執行個體的IP位址 **訊息中心** 「存取權」一節。 不過，預設會禁止空白密碼。
 
 若要使用空白密碼，請移至執行例項，並定義一個安全區域，其限製為傳送事件的資訊系統的IP位址。 此安全區域必須允許空白密碼並接受 `<identifier> / <password>` 輸入連線。 如需詳細資訊，請參閱[本章節](../../installation/using/security-zones.md)。
 

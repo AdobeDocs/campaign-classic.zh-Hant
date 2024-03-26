@@ -3,12 +3,12 @@ product: campaign
 title: 報告的最佳實務
 description: Campaign報告最佳實務
 feature: Reporting, Monitoring
-badge: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 0%
+source-wordcount: '851'
+ht-degree: 5%
 
 ---
 
@@ -30,15 +30,15 @@ ht-degree: 0%
 
    例如，您可以：
 
-   * 探索資料庫中的資料並定義測量。 瞭解更多 [在本節中](../../reporting/using/ac-cubes.md)
-   * 新增指標至現有報表。 瞭解更多 [在本節中](../../reporting/using/about-reports-creation-in-campaign.md)
-   * 檢視資料庫中的資料。 瞭解更多 [在本節中](../../reporting/using/about-descriptive-analysis.md)
+   * 探索資料庫中的資料並定義測量。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)
+   * 新增指標至現有報表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 檢視資料庫中的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)
    * 建立新的傳遞報告。 瞭解更多 [在本節中](../../reporting/using/about-reports-creation-in-campaign.md))，
    * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱 [本節](../../workflow/using/about-workflows.md)
-   * 建立樞紐分析表。 瞭解更多 [在本節中](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * 探索彙總的資料。 瞭解更多 [在本節中](../../reporting/using/ac-cubes.md)
-   * 使用精靈分析資料。 瞭解更多 [在本節中](../../reporting/using/about-descriptive-analysis.md)
-   * 分析大量資料。 瞭解更多 [在本節中](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 建立樞紐分析表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * 探索彙總的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)
+   * 使用精靈分析資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)
+   * 分析大量資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. 識別目標母體
 

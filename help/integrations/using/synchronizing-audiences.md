@@ -3,13 +3,13 @@ product: campaign
 title: 同步對象
 description: 瞭解如何使用ACS Connector同步受眾
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1117'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 1%
 >
 >如果您需要的所有資料都已復寫，您也可以使用Adobe Campaign Standard中的彙總和集合來擴充資料。
 
-## 必要條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 若要完成此操作，您需要：
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query7.png)
 
-1. 儲存工作流程。下一節將展示如何與ACS共用母體。
+1. 儲存工作流程。 下一節將展示如何與ACS共用母體。
 
 ## 與Campaign Standard共用目標 {#share-the-target-with-campaign-standard}
 

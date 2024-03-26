@@ -11,8 +11,8 @@ topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 5%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 5%
 下列專案為必要專案：
 
 * 環境或優惠方案類別。
-* 優惠方案空間.
-* 聯絡日期. 在聯絡日期不符合資格的優惠方案不會納入考量。
-* 目標族群.
+* 優惠方案空間。
+* 聯絡日期。 在聯絡日期不符合資格的優惠方案不會納入考量。
+* 目標母體。
 
   如果您未在目標上設定篩選器，則會考慮整個收件者表格。
 

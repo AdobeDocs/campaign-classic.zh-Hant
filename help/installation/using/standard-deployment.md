@@ -3,14 +3,14 @@ product: campaign
 title: 標準部署
 description: 標準部署
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '843'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ LAN中的應用程式伺服器為一般使用者提供服務，並執行所有�
 
 ## 安裝和設定步驟 {#installation-and-configuration-steps}
 
-### 必要條件 {#prerequisites}
+### 先決條件 {#prerequisites}
 
 * 所有三部電腦均使用JDK，
 * 位於兩個前端的網頁伺服器(IIS、Apache)，

@@ -9,7 +9,7 @@ exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 5%
 
 1. 完成 **標籤** 欄位並按一下 **確定**.
 1. 根據您的要求建立您的工作流程。
-1. 按一下「**儲存**」。您的範本現在已準備好用於行銷活動。
+1. 按一下 **儲存**. 您的範本現在已準備好用於行銷活動。
 
 您也可以 **重複** 預設範本以重複使用並調整其設定。
 
@@ -105,7 +105,7 @@ ht-degree: 5%
 
   ![](assets/s_ncs_user_op_template_activate_2.png)
 
-* **文件**
+* **檔案**
 
   選取此模組時，會將另一個索引標籤新增至 **[!UICONTROL Edition]** 索引標籤以及以此範本為依據的行銷活動。 可從範本新增附加檔案，或針對每個促銷活動個別新增。 進一步瞭解中的檔案 [本節](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
@@ -137,7 +137,7 @@ ht-degree: 5%
 
   您必須將稽核者操作員或操作員群組與每個啟用的核准建立關聯。
 
-* **費用和目標**
+* **費用與目標**
 
   選取此模組時， **[!UICONTROL Budget]** 索引標籤會新增至範本的詳細資訊，以及根據此範本的行銷活動，以便選取關聯的預算。
 

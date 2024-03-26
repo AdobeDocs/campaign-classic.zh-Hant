@@ -2,13 +2,13 @@
 product: campaign
 title: 使用分組管理進行查詢
 description: 瞭解如何使用分組管理執行查詢
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 4%
+source-wordcount: '263'
+ht-degree: 6%
 
 ---
 
@@ -48,14 +48,14 @@ ht-degree: 4%
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在 **[!UICONTROL Data filtering]** 中選取 **[!UICONTROL Filtering conditions]**。前往 **[!UICONTROL Target elements]** 視窗並按一下 **[!UICONTROL Next]**.
+1. 在 **[!UICONTROL Data filtering]**，選取 **[!UICONTROL Filtering conditions]**. 前往 **[!UICONTROL Target elements]** 視窗並按一下 **[!UICONTROL Next]**.
 1. 在 **[!UICONTROL Data grouping]** 視窗，選取 **[!UICONTROL Email domain]** 按一下 **[!UICONTROL Add]**.
 
    此資料分組視窗僅在 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)方塊是否已勾選。
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. 在 **[!UICONTROL Grouping condition]** 時，表示主索引鍵計數大於30，因為我們只希望目標電子郵件網域作為結果傳回超過30次。
+1. 在 **[!UICONTROL Grouping condition]** 時，表示主索引鍵計數大於30，因為我們只希望目標定位超過30次的電子郵件網域作為結果傳回。
 
    此視窗會在 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 方塊已核取：這是篩選群組結果(HAVING)的位置。
 

@@ -3,12 +3,12 @@ product: campaign
 title: 關於傳入頻道
 description: 關於傳入頻道
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 4%
+source-wordcount: '208'
+ht-degree: 7%
 
 ---
 

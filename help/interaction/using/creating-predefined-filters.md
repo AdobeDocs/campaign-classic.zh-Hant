@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 建立預先定義的篩選
-description: 建立預先定義的篩選
+title: 建立預先定義的篩選器
+description: 建立預先定義的篩選器
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
@@ -11,11 +11,11 @@ exl-id: 399e9468-bf70-425d-af0b-72c29636b513
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 10%
+ht-degree: 7%
 
 ---
 
-# 建立預先定義的篩選{#creating-predefined-filters}
+# 建立預先定義的篩選器{#creating-predefined-filters}
 
 
 

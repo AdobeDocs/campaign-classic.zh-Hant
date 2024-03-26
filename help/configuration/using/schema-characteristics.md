@@ -10,7 +10,7 @@ exl-id: 099161b4-b4cb-433c-aed6-71157269a536
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 * **sqltable** 在結構描述的主要元素中，若要指定表格，
 * **sqlname** 在每個屬性內，指定欄。
 
-**範例**:
+**範例**：
 
 ```
 <element label="Individual" name="individual" sqltable="individual">
@@ -80,7 +80,7 @@ ht-degree: 2%
 
 會針對來源結構描述的每個索引鍵和連結宣告以隱含方式宣告索引。 可藉由指定 **noDbIndex=&quot;true&quot;** 屬性：
 
-**範例**:
+**範例**：
 
 ```
 <key internal="true" name="customer" noDbIndex="true">

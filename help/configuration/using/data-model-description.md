@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 2%
+source-wordcount: '2406'
+ht-degree: 1%
 
 ---
 
@@ -181,9 +181,9 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 * 控制組的回應率： **dProofReactedRate**. 假設控制組的回應率。
 * 已聯絡人口的總收入： **dContactReactedTotalAmount**. 假設中目標聯絡人的總收入。
 * 控制組的平均收入： **dContactReactedAvgAmount**. 假設中目標控制組聯絡人的平均收入。
-* 控制組的總收入： **dProofReactedTotalAmount**. 假設控制組的總收入.
+* 控制組的總收入： **dProofReactedTotalAmount**. 假設控制組的總收入。
 * 控制組的平均收入： **dProofReactedAvgAmount**. 假設控制組的平均收入。
-* 每個聯絡人的總利潤： **dContactReactedTotalMargin**. 假設中鎖定的每個聯絡人的總利潤.
+* 每個聯絡人的總利潤： **dContactReactedTotalMargin**. 假設中鎖定的每個聯絡人的總利潤。
 * 每個聯絡人的平均利潤： **dContactReactedAvgMargin**. 假設中鎖定的每個聯絡人的平均利潤。
 * 控制組的總利潤： **dProofReactedTotalMargin**. 假設中鎖定的控制組的總利潤。
 * 控制組的平均利潤： **dProofReactedAvgMargin**. 假設中鎖定的控制組的平均利潤。

@@ -8,7 +8,7 @@ feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '780'
 ht-degree: 4%
 
 ---

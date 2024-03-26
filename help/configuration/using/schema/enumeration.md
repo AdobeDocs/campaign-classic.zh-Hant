@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ## 內容模型 {#content-model-5}
 
-分項清單：==（help|值）
+分項清單：==(help| value)
 
 ## 屬性 {#attributes-5}
 
@@ -60,10 +60,10 @@ ht-degree: 6%
    * 日期時間
    * datetimetz
    * datetimenotz
-   * date
+   * 日期
    * DOMDocument
    * DOMElement
-   * 兩次
+   * 雙精度浮點數
    * 列舉
    * 浮點數
    * html
@@ -72,12 +72,12 @@ ht-degree: 6%
    * 長
    * 備忘錄
    * MNTOKEN
-   * percent
+   * 百分比
    * 主要金鑰
    * 短
    * 字串
    * 時間
-   * 時間跨度
+   * 時間範圍
    * uuid
 
 * **預設（字串）**：預設值。 預設值也可以是列舉中定義的其中一個值。

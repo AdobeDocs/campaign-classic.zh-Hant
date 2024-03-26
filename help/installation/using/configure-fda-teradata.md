@@ -3,14 +3,14 @@ product: campaign
 title: 設定Teradata的存取權
 description: 瞭解如何在FDA中設定Teradata存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -101,12 +101,12 @@ teradata外部帳戶可讓您將您的Campaign執行個體連線至Teradata外�
 
 聯結器支援下列選項：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |---|---|
 | TD_MAX_SESSIONS | 指定「Teradata平行傳輸程式」可為運運算元工作取得的登入工作階段數目上限。 |
 | 時區名稱 | 伺服器時區的名稱。 |
-| 字元集 | 用於設定Teradata字元集。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| IANAAppCodePage | ODBC應用程式程式碼頁。 <br>[如需關於此項目的詳細資訊，請參閱此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| 字元集 | 用於設定Teradata字元集。 <br>有關詳細資訊，請參閱 [此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAAppCodePage | ODBC應用程式程式碼頁。 <br>有關詳細資訊，請參閱 [此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### 新增其他ODBC外部帳戶 {#add-external}
 

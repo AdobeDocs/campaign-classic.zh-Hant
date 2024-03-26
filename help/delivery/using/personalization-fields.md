@@ -9,8 +9,8 @@ role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 10%
+source-wordcount: '894'
+ht-degree: 9%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 10%
 
 若要使用此選項，請遵循下列步驟：
 
-1. 建立促銷活動. 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 建立行銷活動。 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在 **[!UICONTROL Targeting and workflows]** 索引標籤中，新增 **查詢** 活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱 [本節](../../workflow/using/query.md).
 1. 新增 **[!UICONTROL Email delivery]** 活動以開啟工作流程。 有關使用此活動的詳細資訊，請參閱 [本節](../../workflow/using/delivery.md).
 1. 前往 **[!UICONTROL Analysis]** 的標籤 **[!UICONTROL Delivery properties]** 並選取 **[!UICONTROL Prepare the personalization data with a workflow]** 選項。

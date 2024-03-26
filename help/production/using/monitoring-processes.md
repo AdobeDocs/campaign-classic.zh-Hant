@@ -3,7 +3,7 @@ product: campaign
 title: 監控流程
 description: 瞭解如何監視Campaign流程
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3623'
-ht-degree: 1%
+source-wordcount: '3649'
+ht-degree: 0%
 
 ---
 
@@ -267,7 +267,7 @@ SMTP傳遞監視報告已整合至Adobe Campaign平台。 可透過主控台或�
 
 此報告的指標清單顯示在圖表下方。
 
-1. 已傳送的訊息總數.
+1. 已傳送的訊息總數。
 1. 代表輸入/輸出訊息：
 
    * 藍線：已準備好傳送且已到達Shaper的訊息，即傳送SMTP之前的最後一個階段（與傳入資料一致）。

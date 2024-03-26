@@ -3,7 +3,7 @@ product: campaign
 title: 技術電子郵件設定
 description: 瞭解如何設定Campaign，以在傳遞電子郵件時控制執行個體的輸出
 feature: Installation, Deliverability
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3100'
+ht-degree: 0%
 
 ---
 
@@ -372,7 +372,7 @@ MX要遵循的規則定義於 **[!UICONTROL MX management]** 的檔案 **[!UICON
 
 針對每個 **IPAffinity** 元素，您必須宣告可用於電腦的IP位址。
 
-範例:
+例如：
 
 ```
 <IPAffinity localDomain="<domain>" name="default">
@@ -396,14 +396,14 @@ MX要遵循的規則定義於 **[!UICONTROL MX management]** 的檔案 **[!UICON
 
 在上一個範例中，若使用一般條件，位址的分佈如下：
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45%
-    * &quot;2&quot;: 5 / (5+5+1) = 45%
-    * &quot;3&quot;: 1 / (5+5+1) = 10%
+    * 「1」：5 / (5+5+1) = 45%
+    * 「2」：5 / (5+5+1) = 45%
+    * 「3」：1 / (5+5+1) = 10%
 
 舉例來說，如果第一個位址無法用於指定的MX，則會傳送如下訊息：
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17%
+    * 「2」：5 / (5+1) = 83%
+    * 「3」：1 / (5+1) = 17%
 
 * **includeDomains**：可讓您為屬於特定網域的電子郵件保留此IP位址。 此遮罩清單可包含一或多個萬用字元(&#39;&#42;&#39;)。 如果未指定屬性，則所有網域都可以使用此IP位址。
 

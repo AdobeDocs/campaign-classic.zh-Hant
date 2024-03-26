@@ -3,7 +3,7 @@ product: campaign
 title: 其他資料
 description: 其他資料
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
@@ -11,7 +11,7 @@ exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 其他資料設定 {#additional-data-configuration}
 
-您必須擴充 **nms：互動** 連結到環境的綱要，並宣告在呼叫互動引擎期間使用的其他欄位清單。 建立適用性規則或個人化優惠方案時，這些欄位將可從 **互動** 節點(請參閱 [使用其他資料](#using-additional-data))。
+您必須擴充 **nms：互動** 連結至環境的結構描述，並宣告在呼叫互動引擎期間使用的其他欄位清單。 建立適用性規則或個人化優惠方案時，這些欄位將可從 **互動** 節點(請參閱 [使用其他資料](#using-additional-data))。
 
 針對傳入頻道，您必須將通話資料欄位新增至 **互動** 節點。
 

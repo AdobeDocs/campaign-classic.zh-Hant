@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 4%
+source-wordcount: '812'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 若要驗證並確保您沒有使用上文，請透過對追蹤URL表格執行查詢 [Campaign一般查詢編輯器](../../platform/using/steps-to-create-a-query.md) 或建立包含篩選條件的工作流程，於 [查詢活動](../../workflow/using/query.md).
 
-範例:
+例如：
 
 1. 建立工作流程並新增 **查詢** 活動。 [了解更多](../../workflow/using/query.md)。
 

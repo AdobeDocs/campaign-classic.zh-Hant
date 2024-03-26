@@ -8,7 +8,7 @@ exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 18%
+ht-degree: 13%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 18%
 
 一個 **交集**-type活動會從接收目標的交集建立目標。
 
-交集讓您僅擷取所有傳入活動結果共有的母體。建立目標時會收到所有結果：因此，必須先完成所有先前的活動，才能執行交集。 若要設定此活動，您必須輸入其標籤以及有關結果的選項。
+交集可讓您僅擷取所有入站活動結果通用的母體。 建立目標時會收到所有結果：因此，必須先完成所有先前的活動，才能執行交集。 若要設定此活動，您必須輸入其標籤以及有關結果的選項。
 
 ![](assets/s_user_segmentation_inter.png)
 

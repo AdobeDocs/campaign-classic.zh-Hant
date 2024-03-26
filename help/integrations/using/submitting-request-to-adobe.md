@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 向 Adobe 提交請求
-description: 向 Adobe 提交請求
+title: 正在提交要求給Adobe
+description: 正在提交要求給Adobe
 feature: Audiences, People Core Service Integration
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
@@ -11,12 +11,12 @@ topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 16%
+source-wordcount: '152'
+ht-degree: 2%
 
 ---
 
-# 向 Adobe 提交請求{#submitting-request-to-adobe}
+# 正在提交要求給Adobe{#submitting-request-to-adobe}
 
 
 
@@ -37,7 +37,7 @@ ht-degree: 16%
    <td> 您的組織名稱 </td> 
   </tr> 
   <tr> 
-   <td> <strong>組織 ID</strong><br /> </td> 
+   <td> <strong>組織ID</strong><br /> </td> 
    <td> 您的組織ID。 <br> 若要尋找您的組織ID，請參閱 <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">此頁面</a></td> 
   </tr> 
   <tr> 

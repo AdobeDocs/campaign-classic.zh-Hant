@@ -9,14 +9,14 @@ role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 17%
+source-wordcount: '2570'
+ht-degree: 12%
 
 ---
 
 # 瞭解傳遞失敗{#understanding-delivery-failures}
 
-## 瞭解傳送故障 {#about-delivery-failures}
+## 關於傳送失敗 {#about-delivery-failures}
 
 當訊息（電子郵件、簡訊、推播通知）無法傳送至設定檔時，遠端伺服器會自動傳送錯誤訊息，此錯誤訊息會由Adobe Campaign平台擷取，並限定為隔離電子郵件地址或電話號碼。 另請參閱 [退回郵件管理](#bounce-mail-management).
 
@@ -24,7 +24,7 @@ ht-degree: 17%
 >
 >**電子郵件**&#x200B;錯誤訊息（或「退信」）由 Enhanced MTA（同步退信）或 inMail 程序（非同步退信）限定。
 >
->****&#x200B;簡訊錯誤訊息（或 &quot;SR&quot; 作為 &quot;Status Report&quot;）會由 MTA 程序限定。
+>**簡訊錯誤訊息（或 &quot;SR&quot; 作為 &quot;Status Report&quot;）會由 MTA 程序限定。**
 
 傳送訊息後，傳送記錄檔可讓您檢視每個設定檔的傳送狀態，以及相關的失敗型別和原因。
 
@@ -34,9 +34,9 @@ ht-degree: 17%
 
 * [傳遞記錄和歷史記錄](delivery-dashboard.md#delivery-logs-and-history)
 * [失敗狀態](delivery-performances.md#failed-status)
-* [傳送失敗類型和原因](#delivery-failure-types-and-reasons)
+* [傳遞失敗型別和原因](#delivery-failure-types-and-reasons)
 
-## 傳送失敗類型和原因 {#delivery-failure-types-and-reasons}
+## 傳遞失敗型別和原因 {#delivery-failure-types-and-reasons}
 
 訊息失敗時有三種型別的錯誤。 每種錯誤型別都會判斷地址是否傳送至隔離區。 有關詳細資訊，請參閱 [將地址傳送到隔離區的條件](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
@@ -118,7 +118,7 @@ ht-degree: 17%
    <td> 無效的網域 </td> 
    <td> 柔光 </td> 
    <td> 2 </td> 
-   <td> 電子郵件地址的網域不正確或已不存在。 此設定檔將再次定位，直到錯誤計數達到5。之後，記錄將設定為「隔離」狀態，不會再重試。<br /> </td> 
+   <td> 電子郵件地址的網域不正確或已不存在。 此設定檔將再次定位，直到錯誤計數達到5。之後，記錄將設定為隔離狀態，不會再重試。<br /> </td> 
   </tr> 
   <tr> 
    <td> 郵箱已滿 </td> 
@@ -136,7 +136,7 @@ ht-degree: 17%
    <td> 未定義 </td> 
    <td> 未定義 </td> 
    <td> 0 </td> 
-   <td> 此位址正在限定中，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤：它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。然後他們可以透過進行訊息分析，並確認此錯誤 <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">無法傳遞的專案管理</span> 樹狀結構中的節點。<br /> </td> 
+   <td> 此位址正在限定中，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤：它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。 然後他們可以透過進行訊息分析，並確認此錯誤 <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">無法傳遞的專案管理</span> 樹狀結構中的節點。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不符合優惠方案條件 </td> 
@@ -160,7 +160,7 @@ ht-degree: 17%
    <td> 不合格的地址 </td> 
    <td> 已忽略 </td> 
    <td> 15 </td> 
-   <td> 郵寄地址不合格.<br /> </td> 
+   <td> 郵寄地址不合格。<br /> </td> 
   </tr> 
   <tr> 
    <td> 無法聯繫 </td> 
@@ -198,7 +198,7 @@ ht-degree: 17%
 訊息可能會立即失敗（同步錯誤），或稍後在傳送後失敗（非同步錯誤）。
 
 * 同步錯誤： Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不可傳送至設定檔的伺服器。 Adobe Campaign會對每個錯誤進行認證，以決定是否應隔離相關電子郵件地址。 請參閱[退信資格](#bounce-mail-qualification)。
-* 非同步錯誤：接收伺服器稍後會重新發送退回郵件或 SR。此郵件已載入應用程式用來標示有錯誤之郵件的技術信箱。 傳送後一週內，可能會發生非同步錯誤。
+* 非同步錯誤：接收伺服器稍後會重新傳送退回郵件或SR。 此郵件已載入應用程式用來標示有錯誤之郵件的技術信箱。 傳送後一週內，可能會發生非同步錯誤。
 
   >[!NOTE]
   >
@@ -230,7 +230,7 @@ Adobe Campaign平台可讓您透過退回郵件功能管理電子郵件傳送失
 >
 >* 中的退信資格 **[!UICONTROL Delivery log qualification]** 表格不再用於 **同步** 傳遞失敗錯誤訊息。 增強型MTA會決定退信型別和資格，並將該資訊傳回至Campaign。
 >
->* **** inMail 程序仍會透過 **[!UICONTROL Inbound email]** 規則來限定非同步退信。有關詳細資訊，請參閱 [電子郵件管理規則](#email-management-rules).
+>* **非同步** inMail程式仍會透過 **[!UICONTROL Inbound email]** 規則。 有關詳細資訊，請參閱 [電子郵件管理規則](#email-management-rules).
 >
 >* 針對使用增強型MTA的例項 **不使用Webhook**，則 **[!UICONTROL Inbound email]** 規則也可用於處理來自Enhanced MTA的同步退信電子郵件，使用與非同步退信電子郵件相同的電子郵件地址。
 

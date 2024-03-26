@@ -3,7 +3,7 @@ product: campaign
 title: 測試異動訊息範本
 description: 瞭解如何管理異動訊息中的種子地址，以便在Adobe Campaign Classic中預覽和測試它們
 feature: Transactional Messaging, Message Center, Templates
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
@@ -11,7 +11,7 @@ exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

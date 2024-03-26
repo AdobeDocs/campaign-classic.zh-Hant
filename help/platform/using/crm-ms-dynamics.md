@@ -3,12 +3,12 @@ product: campaign
 title: Campaign - Microsoft Dynamics CRM聯結器
 description: 瞭解如何連結Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 4%
+source-wordcount: '1111'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 1. 建立應用程式使用者
 1. 編碼私密金鑰
 
-[在本節了解更多資訊](#config-crm-microsoft)
+[在本節中瞭解更多](#config-crm-microsoft)
 
 Campaign Classic：
 1. 建立新的外部帳戶
@@ -41,7 +41,7 @@ Campaign Classic：
 1. 使用設定精靈來對應表格並同步列舉
 1. 建立同步工作流程
 
-[在本節了解更多資訊](#configure-acc-for-microsoft)
+[在本節中瞭解更多](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
@@ -150,7 +150,7 @@ Campaign Classic：
 1. 指派 **應用程式ID** 的 [您先前建立的應用程式](#get-client-id-microsoft).
 1. 按一下 **管理角色** 並選擇 **系統管理員** 角色至使用者。
 
-## 設定 Campaign {#configure-acc-for-microsoft}
+## 設定Campaign {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Campaign Classic：
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. 按一下&#x200B;**[!UICONTROL Microsoft CRM configuration wizard...]**&#x200B;連結。Adobe Campaign會自動從Microsoft Dynamics資料範本偵測表格。
+1. 按一下 **[!UICONTROL Microsoft CRM configuration wizard...]** 連結。 Adobe Campaign會自動從Microsoft Dynamics資料範本偵測表格。
 
    ![](assets/crm_connectors_msdynamics_02.png)
 

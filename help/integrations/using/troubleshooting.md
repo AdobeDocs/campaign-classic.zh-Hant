@@ -33,4 +33,4 @@ ht-degree: 4%
 
   在 **[!UICONTROL Administration > Platform > AMC Data sources]**，檢查AMC資料來源是否設定正確。
 
-透過People核心服務共用對象或匯入對象時，可能會遺失部分資料。 只有其ID （「訪客ID」或「宣告ID」）能夠與設定檔維度調解的記錄才會轉移。 Adobe Campaign無法辨識之People核心服務區段的ID不會匯入。
+透過People核心服務共用對象或匯入對象時，可能會遺失部分資料。 只有其ID （「訪客ID」或「宣告ID」）能夠與設定檔維度調解的記錄才會轉移。 Adobe Campaign無法辨識的People核心服務區段之ID不會匯入。

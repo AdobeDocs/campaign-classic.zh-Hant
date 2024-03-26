@@ -9,8 +9,8 @@ topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 1%
+source-wordcount: '1558'
+ht-degree: 0%
 
 ---
 
@@ -140,8 +140,8 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
    * 日期時間
    * datetimetz
    * datetimenotz
-   * date
-   * 兩次
+   * 日期
+   * 雙精度浮點數
    * 列舉
    * 浮點數
    * html
@@ -150,12 +150,12 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
    * 長
    * 備忘錄
    * MNTOKEN
-   * percent
+   * 百分比
    * 主要金鑰
    * 短
    * 字串
    * 時間
-   * 時間跨度
+   * 時間範圍
    * uuid
 
   如果「@type」屬性留空，Adobe Campaign預設會將長度為100的字元字串（字串）連結至欄位。

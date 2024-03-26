@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 15%
+source-wordcount: '1388'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ JavaScript方法 **[!UICONTROL logInfo()]** 是除錯工作流程的絕佳解決
 
 另外兩種解決方案可提供協助：
 
-* **保留兩次執行之間的中期族群結果**
+* **保留兩次執行之間的中期母體結果**
 
   此選項會保留工作流程兩個執行之間的臨時表格。 它可以在工作流程屬性中使用 **[!UICONTROL General]** 標籤，並可用於開發和測試目的，以監控資料及檢查結果。 您可以在開發環境中使用此選項，但切勿在生產環境中使用它。保留臨時表能會導致資料庫顯著變大，最終會達到上限。此外，它會減慢備份速度。
 
@@ -38,7 +38,7 @@ JavaScript方法 **[!UICONTROL logInfo()]** 是除錯工作流程的絕佳解決
   >
   >在生產工作流程中，請勿勾選此選項。 此選項用於分析結果，且僅供用於測試目的，因此只能在開發或中繼環境中使用。
 
-* **在日誌中記錄 SQL 查詢**
+* **在日誌中記錄SQL查詢**
 
   可在 **[!UICONTROL Execution]** 工作流程屬性的索引標籤，此選項會記錄工具從不同活動產生的所有SQL查詢。 這是檢視平台實際執行動作的好方法。 不過，此選項僅應在開發期間暫時使用，而不應在生產環境中啟用。
 
@@ -123,7 +123,7 @@ Adobe建議您在專用資料夾中建立工作流程。
 ### 第一個和最後一個活動 {#first-and-last-activities}
 
 * 一律以開始您的工作流程 **[!UICONTROL Start]** 活動或 **[!UICONTROL Scheduler]** 活動。 相關時，您也可以使用 **[!UICONTROL External signal]** 活動。
-* 在建立工作流程時，僅使用一個 **[!UICONTROL Scheduler]** 每個分支的活動。 如果工作流程的同一分支有多個排程器（相互連結），則要執行的任務數量將呈指數倍增，這將使得資料庫大幅超載。此規則也適用所有具有的活動 **[!UICONTROL Scheduling & History]** 標籤。 進一步瞭解 [正在排程](scheduler.md).
+* 在建立工作流程時，僅使用一個 **[!UICONTROL Scheduler]** 每個分支的活動。 如果工作流程的同一分支有多個排程器（相互連結），則要執行的任務數量將呈指數倍增，這將使資料庫大幅超載。 此規則也適用所有具有的活動 **[!UICONTROL Scheduling & History]** 標籤。 進一步瞭解 [正在排程](scheduler.md).
 
   ![](assets/wf-scheduler.png)
 

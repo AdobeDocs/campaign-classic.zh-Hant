@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '967'
 ht-degree: 2%
 
 ---
@@ -186,7 +186,7 @@ ht-degree: 2%
 
 1. 設定 [!DNL Google BigQuery] 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: [!DNL Google BigQuery]
+   * **[!UICONTROL Type]**： [!DNL Google BigQuery]
 
    * **[!UICONTROL Service account]**：您的電子郵件 **[!UICONTROL Service account]**. 如需詳細資訊，請參閱 [Google Cloud檔案](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
@@ -203,7 +203,7 @@ ht-degree: 2%
 
 聯結器支援下列選項：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |:-:|:-:|
 | ProxyType | 用來透過ODBC和SDK聯結器連線至BigQuery的Proxy型別。 </br>目前支援HTTP （預設）、http_no_tunnel、socks4和socks5。 |
 | ProxyHost | 可連線到Proxy的主機名稱或IP位址。 |

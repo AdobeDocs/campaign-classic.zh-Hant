@@ -10,7 +10,7 @@ exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->為避免出現效能問題，建議每封電子郵件不要包含多個附件。建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
+>為避免效能問題，建議不要在每封電子郵件中包含多個附件。 建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
 
 有兩種可能的情況：
 
@@ -79,7 +79,7 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 可以使用以下選項：
 
-* **建立傳遞範本時所指定的檔案名稱**
+* **建立傳遞範本時指定檔案名稱**
 * **檔案的內容會進行個人化，並在每則訊息的傳送期間轉換為PDF**
 * **檔案名稱會在傳遞分析期間計算（無法取決於收件者設定檔）**
 * **檔案名稱會在每個收件者的傳遞時計算（可取決於收件者）**

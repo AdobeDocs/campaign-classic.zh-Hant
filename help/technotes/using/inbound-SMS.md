@@ -4,10 +4,11 @@ title: 中間來源基礎結構的傳入簡訊工作流程活動
 description: 中間來源基礎結構的傳入簡訊工作流程活動
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
-source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
+exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
+source-git-commit: f9a17541596ba2afa96502dc99408b6f99d2cb2b
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -145,5 +146,3 @@ ht-degree: 2%
    > * 如果每個中間來源執行個體有多個inSMS工作流程，則可能會發生資料重複，因為中間來源SMS ID會保持不變，而外部帳戶ID會有所不同。
 
 1. 儲存並重新啟動工作流程。
-
-

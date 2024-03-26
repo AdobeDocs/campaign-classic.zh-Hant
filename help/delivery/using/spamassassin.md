@@ -9,8 +9,8 @@ role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '266'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ SpamAssassin運用各種垃圾郵件偵測技術，包括：
 
 有關建立及設計傳送的詳細資訊，請參閱 [本節](about-email-channel.md).
 
-1. 移至 **[!UICONTROL Preview]** 索引標籤。
+1. 前往 **[!UICONTROL Preview]** 標籤。
 1. 選取收件者以預覽您的傳遞。
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)

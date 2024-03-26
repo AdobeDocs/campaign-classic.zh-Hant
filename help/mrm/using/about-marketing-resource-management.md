@@ -3,7 +3,7 @@ product: campaign
 title: 開始行銷資源管理
 description: 探索行銷資源管理
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
@@ -11,7 +11,7 @@ exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -57,6 +57,6 @@ Adobe Campaign操作者可透過完整的驗證程式和適當的追蹤工具（
 
 * **預算管理**. [了解更多](../../mrm/using/controlling-costs.md)
 
-* **任務管理**. [瞭解更多](../../mrm/using/creating-and-managing-tasks.md)
+* **任務管理**。[瞭解更多](../../mrm/using/creating-and-managing-tasks.md)
 
 * **資源管理**. [了解更多](../../mrm/using/managing-marketing-resources.md)

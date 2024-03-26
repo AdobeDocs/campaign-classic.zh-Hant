@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 8%
+source-wordcount: '2292'
+ht-degree: 7%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 8%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的執行個體必須升級為最新的 [Gold Standard](../../rn/using/gold-standard.md) 建置或 [最新GA版本(21.1.3)](../../rn/using/latest-release.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 
+>請注意，您的執行個體必須升級為最新的 [Gold Standard](../../rn/using/gold-standard.md) 建置或 [最新GA版本(21.1.3)](../../rn/using/latest-release.md). 瞭解如何簽入您的版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## 使用者活動 {#user-activities}
 
@@ -126,7 +126,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此報告中顯示的網域名稱是在多維資料庫層級定義的。 若要變更這些值，請編輯 **[!UICONTROL Delivery logs (broadlogrcp)]** 立方體。 如需詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)。此 **[!UICONTROL Others]** 類別包含不屬於特定類別的網域名稱。
+>此報告中顯示的網域名稱是在多維資料庫層級定義的。 若要變更這些值，請編輯 **[!UICONTROL Delivery logs (broadlogrcp)]** 立方體。 有關詳細資訊，請參閱 [本節](../../reporting/using/ac-cubes.md). 此 **[!UICONTROL Others]** 類別包含不屬於特定類別的網域名稱。
 
 ## 瀏覽器 {#browsers}
 

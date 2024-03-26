@@ -7,10 +7,11 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+exl-id: ef2b98bd-441e-4e59-bb41-4e835e250663
+source-git-commit: 2ba6066b2999973e64ed3b429af78696f093dd09
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 6%
+source-wordcount: '255'
+ht-degree: 4%
 
 ---
 
@@ -78,7 +79,7 @@ ht-degree: 6%
 
 1. 設定 **[!UICONTROL Amazon Redshift]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: Amazon Redshift
+   * **[!UICONTROL Type]**：Amazon Redshift
 
    * **[!UICONTROL Server]**：DNS的名稱
 
@@ -90,7 +91,7 @@ ht-degree: 6%
 
    * **[!UICONTROL Working schema]**：工作結構描述的名稱。 [了解更多](https://docs.aws.amazon.com/redshift/latest/dg/r_Schemas_and_tables.html)
 
-   * **[!UICONTROL Time zone]**: 伺服器時區
+   * **[!UICONTROL Time zone]**：伺服器時區
 
    ![](assets/amazon_redshift.png)
 

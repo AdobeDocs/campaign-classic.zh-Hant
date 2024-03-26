@@ -3,12 +3,12 @@ product: campaign
 title: 設定Microsoft SQL Server的存取權
 description: 瞭解如何設定Microsoft SQL Server的存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '471'
+ht-degree: 2%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 聯結器支援下列選項：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |---|---|
 | 驗證 | 聯結器支援的驗證型別。 目前支援的值： ActiveDirectoryMSI。 <br> 有關詳細資訊，請參閱範例8 [Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | 加密 | 指定連線是否透過網路使用TLS加密。 可能的值包括 **是/強制（18.0和更新版本）**， **no/optional （18.0和更新版本）**、和 **strict （18.0和更新版本）**. 預設值設為 **是** 在18.0版及更新版本中和 **否** 在舊版中。 <br>有關詳細資訊，請參閱 [Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |

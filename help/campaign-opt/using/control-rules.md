@@ -8,7 +8,7 @@ feature: Typology Rules, Campaigns
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '371'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 您可以建立新的控制規則以符合您的需求。 若要這麼做，請建立 **[!UICONTROL Control]** 型別規則，並在 **[!UICONTROL Code]** 標籤。
 
-**範例:**
+**範例：**
 
 在以下範例中，我們將建立規則以防止SMS選件傳送給超過100個收件者。 此規則將連結至行銷活動型別，然後連結至可使用相關選件的SMS傳送。
 

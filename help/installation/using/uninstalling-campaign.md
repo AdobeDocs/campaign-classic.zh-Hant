@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 解除安裝 Campaign
+title: 解除安裝Campaign
 description: 瞭解如何解除安裝Campaign
 feature: Installation
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 ---
 
-# 解除安裝 Campaign{#uninstalling-campaign}
+# 解除安裝Campaign{#uninstalling-campaign}
 
 
 
@@ -23,7 +23,7 @@ ht-degree: 18%
 >
 >這些程式將會永久解除安裝Adobe Campaign。 所有資料都將遺失。
 
-**RHEL:**
+**RHEL：**
 
 ```
 rpm -e nlserver6-v7
@@ -32,7 +32,7 @@ groupdel neolane
 rm -rf /user/local/neolane
 ```
 
-**Debian:**
+**Debian：**
 
 ```
 apt purge nlserver6-v7

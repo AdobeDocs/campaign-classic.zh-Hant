@@ -3,12 +3,12 @@ product: campaign
 title: 監視指南
 description: 探索監控 Campaign 執行個體和程序的準則和最佳作法
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 21%
+source-wordcount: '750'
+ht-degree: 18%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 21%
 >
 >請注意，您的執行個體必須託管於AWS上，並升級為 [最新GA版本](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 
-### 監控工作流程 {#monitoring-workflows}
+### 監視工作流程 {#monitoring-workflows}
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
@@ -126,7 +126,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 *僅限內部部署和混合託管模型*
 
-若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md)以獲得更多資訊。復原程式的說明請參閱 [本節](../../production/using/restoration.md).
+若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md) 以取得詳細資訊。 復原程式的說明請參閱 [本節](../../production/using/restoration.md).
 
 ## Campaign Classic技術原則 {#campaign-classic-technical-principles}
 

@@ -3,15 +3,15 @@ product: campaign
 title: 中間來源部署
 description: 中間來源部署
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 2%
+source-wordcount: '363'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 ## 安裝和設定步驟 {#installation-and-configuration-steps-}
 
-### 必要條件 {#prerequisites}
+### 先決條件 {#prerequisites}
 
 * 應用程式伺服器上的JDK。
 * 存取應用程式伺服器上的資料庫伺服器。

@@ -3,7 +3,7 @@ product: campaign
 title: 命令列
 description: 命令列
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
@@ -11,7 +11,7 @@ exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 

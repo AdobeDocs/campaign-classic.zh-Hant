@@ -3,15 +3,15 @@ product: campaign
 title: Adobe Campaign Classic互動最佳實務
 description: 本節介紹在Adobe Campaign Classic中管理互動模組的最佳實務方法
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 0%
+source-wordcount: '1207'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Adobe Campaign中的互動需要謹慎管理，才能有效率地運作。 您必須找到連絡人數目與優惠方案類別和優惠方案數目之間的平衡。 若未妥善處理這些因素，您的Adobe Campaign執行個體可能會遇到問題。
 
-### 實作 {#implementation}
+### 實施 {#implementation}
 
 以下列出實作和設定互動時應牢記的重要元素。
 

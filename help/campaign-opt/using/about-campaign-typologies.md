@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 20%
+source-wordcount: '470'
+ht-degree: 17%
 
 ---
 
@@ -59,7 +59,7 @@ Campaign Optimization是Adobe Campaign模組，可讓您控制、篩選及監控
 1. 設定您的傳遞方式，以使用您建立的型別。 如需詳細資訊，請參閱[本章節](applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 透過行銷活動模擬測試及控制行為。 如需促銷活動模擬的詳細資訊，請參閱 [本節](campaign-simulations.md).
 
-在準備傳遞期間，符合條件時會排除收件者。 您可以檢查日誌以監控排除。有關壓力型別規則的範例使用案例，請參閱 [此頁面](pressure-rules.md#use-cases-on-pressure-rules).
+在準備傳遞期間，符合條件時會排除收件者。 您可以檢查記錄以監控排除。 有關壓力型別規則的範例使用案例，請參閱 [此頁面](pressure-rules.md#use-cases-on-pressure-rules).
 
 ## 教學課程影片 {#typologies-video}
 

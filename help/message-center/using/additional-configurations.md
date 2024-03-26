@@ -10,7 +10,7 @@ topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '811'
 ht-degree: 7%
 
 ---
@@ -103,7 +103,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 本節說明如何針對Adobe Campaign中的異動訊息，為每個品牌設定追蹤和映象頁面URL的解決方案。
 
-### 必要條件 {#prerequisites}
+### 先決條件 {#prerequisites}
 
 * 所有主機都必須新增至執行個體的設定檔(`config-<instance>.xml`)。
 * 每個品牌都必須指派子網域。

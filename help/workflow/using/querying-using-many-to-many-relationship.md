@@ -2,13 +2,13 @@
 product: campaign
 title: 使用多對多關係進行查詢
 description: 瞭解如何使用多對多關係執行查詢
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 

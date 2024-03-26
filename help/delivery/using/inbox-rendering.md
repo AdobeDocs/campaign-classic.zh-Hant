@@ -9,8 +9,8 @@ role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 9%
+source-wordcount: '842'
+ht-degree: 7%
 
 ---
 
@@ -47,9 +47,9 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 1. 設定外部帳戶引數，如下所示：
    * **[!UICONTROL Label]**：傳遞伺服器資訊
    * **[!UICONTROL Internal name]**：deliverabilityInstance
-   * **[!UICONTROL Type]**: HTTP
+   * **[!UICONTROL Type]**： HTTP
    * **[!UICONTROL Server]**： https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**: 無
+   * **[!UICONTROL Encryption]**：無
    * 核取 **[!UICONTROL Enabled]** 選項。
 
    ![](assets/s_tn_inbox_rendering_external-account.png)

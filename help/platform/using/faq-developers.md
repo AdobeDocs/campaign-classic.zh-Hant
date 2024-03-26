@@ -3,15 +3,15 @@ product: campaign
 title: 開發人員常見問題集
 description: 開發人員常見問題集
 feature: Troubleshooting, Configuration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 95%
+source-wordcount: '515'
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 作為一個開放式解決方案，Adobe Campaign 可進行自訂，以及供進階應用程式開發使用。
 
-## 什麼是 Campaign 資料模型？ {#what-is-the-campaign-data-model}
+## 什麼是Campaign資料模型？ {#what-is-the-campaign-data-model}
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。如需 Adobe Campaign 綱要的詳細資料，[請參閱本節](../../configuration/using/about-schema-edition.md)。
 
@@ -45,7 +45,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 [按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 
-## 在 Campaign 定義查詢的最佳實務是什麼？ {#what-are-the-best-practices-to-define-queries-in-campaign-}
+## 在 Campaign 中定義查詢的最佳做法是什麼？ {#what-are-the-best-practices-to-define-queries-in-campaign-}
 
 Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料和建立區段。
 
@@ -65,6 +65,6 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 [按一下這裡](../../platform/using/working-with-data-packages.md)瞭解如何使用資料包匯入和匯出 Campaign 配置。
 
-## 我可以在哪裡找到 Campaign Classic API 清單？ {#where-can-i-find-the-list-of-campaign-classic-apis}
+## 我可以在哪裡找到Campaign Classic API清單？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
 [本專屬文件](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有 Campaign API，及個別完整說明。

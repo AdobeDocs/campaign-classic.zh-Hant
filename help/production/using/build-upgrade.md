@@ -3,7 +3,7 @@ product: campaign
 title: 開始進行組建版本升級
 description: 瞭解升級至新組建版本的關鍵步驟
 feature: Monitoring, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,12 +11,12 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 3%
+source-wordcount: '2330'
+ht-degree: 1%
 
 ---
 
-# 執行版本編號升級{#performing-a-build-upgrade}
+# 執行建置升級{#performing-a-build-upgrade}
 
 
 
@@ -223,7 +223,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 某些設定需要特定的其他任務才能更新到新的組建。
 
-#### 傳送異動訊息
+#### 交易型訊息傳遞功能
 
 在您的Campaign執行個體上啟用異動訊息（訊息中心）時，您需要執行下列額外步驟以進行升級：
 

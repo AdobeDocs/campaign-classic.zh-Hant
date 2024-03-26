@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 使用資料包
-description: 使用資料包
+title: 使用資料套件
+description: 使用資料套件
 feature: Data Management, Package Export/Import
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
@@ -11,8 +11,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2454'
-ht-degree: 3%
+source-wordcount: '2477'
+ht-degree: 2%
 
 ---
 

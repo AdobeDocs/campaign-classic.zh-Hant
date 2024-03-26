@@ -3,7 +3,7 @@ product: campaign
 title: 工作流程常見問題集
 description: Campaign Classic 常見問題集
 feature: Troubleshooting, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
@@ -11,7 +11,7 @@ exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 [按一下這裡以瞭解如何建立第一個工作流程](../../workflow/using/building-a-workflow.md)：瞭解概念與最佳實務，以便在 Campaign 中建立工作流程。
 
-## 如何在 Campaign 中匯入資料？ {#how-can-i-import-data-in-campaign-}
+## 如何將資料匯入 Campaign 中？ {#how-can-i-import-data-in-campaign-}
 
 瞭解在中匯入資料的最佳實務 [本節](../../platform/using/import-export-best-practices.md).
 

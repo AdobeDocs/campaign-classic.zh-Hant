@@ -3,7 +3,7 @@ product: campaign
 title: 疑難排解ACS聯結器
 description: 疑難排解ACS聯結器
 feature: ACS Connector, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td> 收件者（或任何其他設定檔維度）<br /> </td> 
-   <td> 個人檔案<br /> </td> 
+   <td> 設定檔<br /> </td> 
   </tr> 
   <tr> 
    <td> 清單<br /> </td> 

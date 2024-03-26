@@ -11,7 +11,7 @@ topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1390'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >如果範本設定為將控制組列入考量，但在假設涉及的傳送中未定義任何組，則結果將僅以目標收件者為基礎。
+  >如果範本設定為將控制組列入考量，但在假設相關的傳送中未定義任何組，則結果將僅以目標收件者為基礎。
 
   有關定義和設定控制組的詳細資訊，請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
@@ -130,7 +130,7 @@ ht-degree: 2%
 
   ![](assets/response_measurement_001.png)
 
-  如果立即啟動假設，且想要立即觸發，則可強制啟動。 否則，會根據設定的計算結束日期（以假設建立日期為基礎）自動觸發。 [了解更多](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
+  如果立即啟動假設，且想要立即觸發，則可強制啟動。 否則，會根據設定的計算結束日期（以假設建立日期為基礎）自動觸發。 [瞭解更多](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery))。
 
 * **[!UICONTROL Transaction/Margin amount]**：這些欄位是選用欄位，可讓您自動計算人員調整指標。 [了解更多](hypothesis-tracking.md#indicators)
 * **[!UICONTROL Unit amount]**：可讓您設定計算收入的金額。 [了解更多](hypothesis-tracking.md#indicators)

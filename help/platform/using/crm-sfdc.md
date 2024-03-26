@@ -2,13 +2,13 @@
 product: campaign
 title: Campaign - Salesforce CRM聯結器
 description: 瞭解如何連結Campaign和Salesforce
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 在本頁中，您將瞭解如何將Campaign Classic連結至 **Salesforce**.
 
-資料同步化會透過專屬的工作流程活動來執行。 [了解更多](../../platform/using/crm-data-sync.md)。
+資料同步是透過專屬的工作流程活動來執行。 [了解更多](../../platform/using/crm-data-sync.md)。
 
 
 外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。
@@ -30,7 +30,7 @@ ht-degree: 0%
 
    ![](assets/ext_account_17.png)
 
-   若要設定Salesforce CRM外部帳戶以搭配Adobe Campaign使用，您需要提供下列詳細資料：
+   若要設定Salesforce CRM外部帳戶以搭配Adobe Campaign使用，您必須提供下列詳細資料：
 
    * **[!UICONTROL Account]**
 用來登入Salesforce CRM的帳戶。
@@ -39,7 +39,7 @@ ht-degree: 0%
 用來登入Salesforce CRM的密碼。
 
    * **[!UICONTROL Client identifier]**
-若要瞭解在何處尋找您的使用者端識別碼，請參閱此 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+若要瞭解在何處尋找您的使用者端識別碼，請參閱本 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL Security token]**
 若要瞭解在何處尋找您的安全性Token，請參閱此 [頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
@@ -52,15 +52,15 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >若要核准設定，您必須登出並重新登入Adobe Campaign主控台。
+   >若要核准此設定，您必須登出並重新登入Adobe Campaign主控台。
 
-1. 在中檢查在Adobe Campaign中產生的結構描述 **[!UICONTROL Administration > Configuration > Data schemas]** 節點。
+1. 檢查中Adobe Campaign產生的結構描述 **[!UICONTROL Administration > Configuration > Data schemas]** 節點。
 
    範例： **Salesforce** 綱要：
 
    ![](assets/crm_connectors_sfdc_table.png)
 
-1. 建立結構描述後，您可以自動將列舉從Salesforce同步到Adobe Campaign。
+1. 建立結構描述後，您就可以從Salesforce自動將分項清單同步到Adobe Campaign。
 
    若要這麼做，請按一下 **[!UICONTROL Synchronizing enumerations...]** 連結並選取符合Salesforce分項清單的Adobe Campaign分項清單。
 

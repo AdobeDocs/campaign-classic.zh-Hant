@@ -3,11 +3,11 @@ product: campaign
 title: Campaign內部部署、混合及託管功能矩陣
 description: 瞭解託管部署和內部部署之間的主要差異
 feature: Installation, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '294'
 ht-degree: 28%
 
 ---
@@ -26,7 +26,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 
 | 功能 | 託管 | 混合式 | 內部部署 | 詳細資料 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 設定 Campaign 伺服器 | 隨選 | 可用 | 可用 | [了解更多](../../installation/using/the-server-configuration-file.md) |
+| 設定Campaign伺服器 | 隨選 | 可用 | 可用 | [了解更多](../../installation/using/the-server-configuration-file.md) |
 | 電子郵件密件副本 | 隨選 | 隨選 | 可用 | [了解更多](../../installation/using/email-archiving.md) |
 | 管理訊息中心執行例項 | 隨選 | 隨選 | 可用 | [了解更多](../../message-center/using/about-transactional-messaging.md) |
 | 管理中間來源平台 | 隨選 | 隨選 | 可用 | [了解更多](../../installation/using/mid-sourcing-server.md) |
@@ -37,7 +37,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 | 網域名稱委派 | 隨選 | 隨選 | 不適用 | [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant) |
 | 安裝SpamAssassin | 隨選 | 可用 | 可用 | [了解更多](../../delivery/using/spamassassin.md) |
 | 存取傳遞能力報告 | 可用 | 隨選 | 可用 | [了解更多](../../delivery/using/monitoring-deliverability.md) |
-| 設定LDAP驗證 | 不可用 | 可用 | 可用 | [了解更多](../../installation/using/connecting-through-ldap.md) |
+| 設定LDAP驗證 | 無法使用 | 可用 | 可用 | [了解更多](../../installation/using/connecting-through-ldap.md) |
 
 
 ## 同盟資料存取{#fda}

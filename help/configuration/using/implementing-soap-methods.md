@@ -8,8 +8,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Clas
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 5%
 
 此名稱與「JavaScript程式碼」型別實體的名稱（連同名稱空間）一致。
 
-範例:
+例如：
 
 testLog(msg)方法在nms：recipient擴充功能中宣告
 
@@ -72,7 +72,7 @@ SOAP方法會以JavaScript函式的形式實作，這些函式會分組在代表
  <schema-namespace>_<schema-name>_<method-name>
 ```
 
-範例:
+例如：
 
 下列JavaScript函式為上述方法的實作。 應使用「cus：test」名稱，在「JavaScript程式碼」型別實體中定義。
 
@@ -108,7 +108,7 @@ function nms_recipient_setLastName(self, name)
 
 要傳回數個值時，必須將其顯示在表格中。
 
-範例:
+例如：
 
 ```
 function nms_recipient_getKey(self)

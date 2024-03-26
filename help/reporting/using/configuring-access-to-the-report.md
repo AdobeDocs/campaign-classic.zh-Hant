@@ -8,8 +8,8 @@ badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 3%
+source-wordcount: '772'
+ht-degree: 2%
 
 ---
 

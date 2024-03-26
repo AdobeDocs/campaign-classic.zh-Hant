@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: 連結至外部資料庫
+title: 連線到外部資料庫
 description: 瞭解如何連線至外部資料庫
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 2%
+source-wordcount: '652'
+ht-degree: 1%
 
 ---
 
-# 連接到資料庫 {#connecting-to-the-database}
+# 連線到資料庫 {#connecting-to-the-database}
 
 
 

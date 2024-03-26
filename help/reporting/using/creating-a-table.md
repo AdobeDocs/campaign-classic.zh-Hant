@@ -8,7 +8,7 @@ feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2515'
 ht-degree: 1%
 
 ---
@@ -360,7 +360,7 @@ A **[!UICONTROL List with group]** 型別表格可讓您將表格中的資料分
 
 ### 步驟4 — 建立第二個查詢 {#step-4---create-the-second-query}
 
-我們想新增第二個查詢和第二個頁面，以便在報告使用者點按傳遞時顯示傳遞的詳細資訊。 在新增查詢之前，請編輯您已建立的頁面並啟用外寄轉變，以便將其連結到查詢。
+我們想新增第二個查詢和第二個頁面，以便在報告使用者點按傳送時顯示傳送的詳細資料。 在新增查詢之前，請編輯您已建立的頁面並啟用外寄轉變，以便將其連結到查詢。
 
 1. 在後方新增查詢 **[!UICONTROL Page]** 活動並編輯其結構：選取 **[!UICONTROL Recipient delivery logs]** 綱要。
 
@@ -460,7 +460,7 @@ A **[!UICONTROL List with group]** 型別表格可讓您將表格中的資料分
 
 ## 建立劃分或樞紐分析表 {#creating-a-breakdown-or-pivot-table}
 
-此型別的表格可讓您顯示針對資料庫中資料計算的統計資料。
+此型別的表格可讓您顯示針對資料庫資料所計算的統計資料。
 
 這些型別報表的設定與描述性分析精靈所用的設定類似。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 

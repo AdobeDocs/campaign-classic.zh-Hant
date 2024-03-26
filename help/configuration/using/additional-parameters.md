@@ -9,7 +9,7 @@ exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 若要定義其他引數，您必須擴充此結構描述。
 
-**範例**:
+**範例**：
 
 ```
 <srcSchema extendedSchema="nms:webTrackingLog" label="Web Tracking"
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 若要這麼做，請修改 **webTrackingParamSize** 的屬性 **`<trackinglogd>`** 中的元素 **serverConf.xml** 檔案。 此檔案儲存在 **conf** Adobe Campaign安裝目錄的子目錄。
 
-**範例**:
+**範例**：
 
 預設值為64個字元。 此值可讓您將 **數量** 和 **文章** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;)標準引數。
 

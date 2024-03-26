@@ -8,8 +8,8 @@ feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 2%
+source-wordcount: '2444'
+ht-degree: 1%
 
 ---
 
@@ -170,7 +170,7 @@ Adobe Campaign可讓您以合作模式，針對行銷活動的主要階段設定
 
 如果是直接郵件傳送，Adobe Campaign操作員可在解壓縮檔案傳送給路由器之前檢視解壓縮檔案，並可視需要變更格式及重新啟動解壓縮。 另請參閱 [核准擷取檔案](#approving-an-extraction-file).
 
-您可以針對每個行銷活動，核准傳遞目標、內容(請參閱 [核准內容](#approving-content))和成本。 可以透過電子郵件形式通知負責核准的 Adobe Campaign 操作者，然後他們可透過主控台或網路連線核准或拒絕核准。另請參閱 [核准傳遞的步驟](#approving-processes).
+您可以針對每個行銷活動，核准傳遞目標、內容(請參閱 [核准內容](#approving-content))和成本。 可以以電子郵件的形式通知負責核准的Adobe Campaign操作者，然後他們可透過主控台或網路連線核准或拒絕核准。 另請參閱 [核准傳遞的步驟](#approving-processes).
 
 完成這些驗證階段後，即可啟動傳遞。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
 

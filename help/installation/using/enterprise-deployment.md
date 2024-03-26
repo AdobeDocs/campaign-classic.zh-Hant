@@ -3,15 +3,15 @@ product: campaign
 title: 企業部署
 description: 企業部署
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 3%
+source-wordcount: '1225'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 這是最完整的設定。 它以標準組態為基礎，提供更優異的安全性與可用性：
 
-* 專用重新導向伺服器位於HTTP或TCP負載平衡器之後，以實現擴充性和可用性，
+* 專用重新導向伺服器位於HTTP或TCP負載平衡器之後，以利擴充性與可用性，
 * 兩個應用程式伺服器，可改善傳輸量和容錯移轉能力（容錯能力），且隔離在LAN中。
 
 伺服器與處理序之間的一般通訊會根據以下結構描述執行：
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 ## 安裝和設定步驟 {#installation-and-configuration-steps}
 
-### 必要條件 {#prerequisites}
+### 先決條件 {#prerequisites}
 
 * 兩個應用程式伺服器上的JDK、
 * 位於兩個前端的網頁伺服器(IIS、Apache)，

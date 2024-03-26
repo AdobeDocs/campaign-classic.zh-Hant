@@ -9,7 +9,7 @@ exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 4%
+ht-degree: 12%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM)服務的一些重要變更將於2024年發行，可能會影響您的Adobe Campaign實施。 您可能需要更新Android推送訊息的訂閱服務設定，才能支援此變更。 您已經可以檢查並採取行動。 在本節瞭解更多 [Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+>Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。您已經可以檢查並採取行動。 在本節瞭解更多 [Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}.
 
 
 ## 設定Android外部帳戶 {#configuring-external-account-android}
@@ -109,7 +109,7 @@ Android提供兩種聯結器：
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM)服務的一些重要變更將於2024年發行，可能會影響您的Adobe Campaign實施。 為Google持續改善其服務，我們將於以下日期終止使用舊版FCM API： **2024年6月20日**. 在本節瞭解更多 [Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+>Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。為Google持續改善其服務，我們將於以下日期終止使用舊版FCM API： **2024年6月20日**. 在本節瞭解更多 [Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}.
 
 建立服務和新的行動應用程式後，您需要設定行動應用程式。 此 **HTTP （舊版）** 不應選取API，因為它已被Google取代。
 

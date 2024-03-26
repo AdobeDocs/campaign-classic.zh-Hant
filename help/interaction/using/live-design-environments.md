@@ -3,7 +3,7 @@ product: campaign
 title: 即時/設計環境
 description: 即時/設計環境
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
@@ -11,7 +11,7 @@ exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

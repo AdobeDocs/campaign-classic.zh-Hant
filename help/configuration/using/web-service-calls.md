@@ -8,7 +8,7 @@ role: Data Engineer, Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ WSDL檔案是從URL產生：
 
 WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線埠」中關聯，透過「連結」形成Web服務而連線到通訊協定。
 
-#### 型別 {#types}
+#### 類型 {#types}
 
 型別定義以XML結構描述為基礎。 在我們的範例中，「ExecuteQuery」方法採用「s：string」字串和XML檔案(`<s:complextype>`)作為引數。 方法(&quot;ExecuteQueryResponse&quot;)的傳回值是XML檔案(  `<s:complextype>`)。
 

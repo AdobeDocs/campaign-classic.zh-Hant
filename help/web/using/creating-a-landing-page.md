@@ -2,14 +2,14 @@
 product: campaign
 title: 設定登陸頁面
 description: 設定登陸頁面
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 3%
+source-wordcount: '739'
+ht-degree: 2%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 3%
 
 此使用案例顯示如何使用數位編輯器從Adobe Campaign主控台建立登入頁面。
 
-在Adobe Campaign中開始設定登入頁面之前，請確定您已 **一或多個範本** 表示HTML頁面。
+開始在Adobe Campaign中設定登入頁面之前，請確定您已設定 **一或多個範本** 表示HTML頁面。
 
-此使用案例的主要目的是使用DCE中的函式，讓登入頁面表單欄位對應至Adobe Campaign中的內部欄位。
+此使用案例的主要目的，是使用DCE中的函式，將登入頁面表單欄位對應至Adobe Campaign中的內部欄位。
 
 ## 建立登入頁面 {#creating-the-landing-page}
 
@@ -36,20 +36,20 @@ ht-degree: 3%
 
 1. 按一下 **[!UICONTROL Edit]** 標籤。
 1. 刪除 **結束** 活動。
-1. 新增 **[!UICONTROL Page]** 活動晚於 **[!UICONTROL Storage]** 活動。
+1. 新增 **[!UICONTROL Page]** 活動之後 **[!UICONTROL Storage]** 活動。
 1. 編輯 **第2頁** 活動，然後取消勾選 **[!UICONTROL Activate outbound transitions]** 中的選項 **[!UICONTROL Properties]** 標籤。
 
    ![](assets/dce_uc1_transition.png)
 
-1. 儲存變更.
+1. 儲存變更。
 
-接著，您會取得下列排序：
+接著，您會取得下列順序：
 
 ![](assets/dce_uc1_edition_activity.png)
 
 >[!NOTE]
 >
->如需建立Web應用程式的詳細資訊，請參閱 [本節](creating-a-new-web-application.md).
+>有關建立Web應用程式的詳細資訊，請參閱 [本節](creating-a-new-web-application.md).
 
 ## 步驟1 — 選取和載入範本 {#step-1---selecting-and-loading-templates}
 
@@ -57,7 +57,7 @@ ht-degree: 3%
 
 範本必須包含：
 
-* 一個 **HTML** 檔案（必要）
+* 一個 **HTML** 檔案（強制）
 * 一或多個 **CSS** 檔案（選擇性）
 * 一或多個 **影像** （選擇性）
 
@@ -71,9 +71,9 @@ ht-degree: 3%
 1. 選取要使用的HTML檔案。
 1. 按一下 **開啟** 以開始匯入。
 
-   在載入期間，會顯示共用檔案的清單。 匯入系統會檢查連結至所選HTML的所有檔案（CSS、影像等）是否存在。
+   在載入期間，會顯示共用檔案的清單。 匯入系統會檢查連結至所選HTML的所有檔案（CSS、影像等）是否都存在。
 
-   按一下 **[!UICONTROL Close]** 按鈕。
+   按一下 **[!UICONTROL Close]** 按鈕完成匯入後。
 
    ![](assets/dce_uc1_import.png)
 
@@ -90,7 +90,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->**DCE會針對載入的HTML頁面執行JavaScript程式碼。** HTML範本中的JavaScript錯誤，可能會顯示在Adobe Campaign介面中。 這些錯誤與編輯器無關。 若要檢查匯入的檔案中是否有錯誤，建議您在匯入檔案到DCE之前，先在網頁瀏覽器中測試這些檔案。
+>**DCE會針對載入的HTML頁面執行JavaScript程式碼。** HTML範本中的JavaScript錯誤，可能會顯示在Adobe Campaign介面中。 這些錯誤與編輯器無關。 若要檢查匯入的檔案中是否沒有錯誤，建議您在將檔案匯入DCE之前，先在網頁瀏覽器中測試它們。
 
 ## 步驟2 — 設定內容 {#step-2---configuring-the-content}
 
@@ -126,7 +126,7 @@ ht-degree: 3%
 
 1. 對頁面上的每個欄位重複此程式。
 
-您可以將欄位設為必要欄位：例如，按一下 **[!UICONTROL Email]** 欄位，然後啟用 **強制** 選項。
+您可以將欄位設為必填：例如，按一下 **[!UICONTROL Email]** 欄位，然後啟用 **強制** 選項。
 
 ![](assets/dce_uc1_fieldmandatory.png)
 
@@ -151,13 +151,13 @@ ht-degree: 3%
 
    ![](assets/dce_uc1_persochamp.png)
 
-個人化欄位在編輯器中具有黃色背景。
+編輯器中的個人化欄位有黃色背景。
 
 ![](assets/dce_uc1_edit_champperso.png)
 
 ## 步驟3 — 發佈內容 {#step-3---publishing-content}
 
-內容會從Web應用程式儀表板發佈。 按一下 **[!UICONTROL Publish]** 按鈕來執行它。
+內容會從網頁應用程式儀表板發佈。 按一下 **[!UICONTROL Publish]** 按鈕來執行它。
 
 ![](assets/dce_uc1_pub_dashboard.png)
 

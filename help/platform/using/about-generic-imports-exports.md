@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: 關於一般匯入和匯出
-description: 進一步瞭解一般匯入和匯出
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: 深入瞭解一般匯入和匯出
+badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '129'
 ht-degree: 4%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 4%
 
 
 
-Adobe Campaign Classic提供一般匯入和匯出。 例如，它們可讓您擷取客戶或潛在客戶清單（這些客戶或潛在客戶隨後將成為目標人口的一部分），或讓您將外部檔案中的資料提供給資料庫。
+Adobe Campaign Classic提供一般匯入和匯出。 例如，它們可讓您擷取隨後將成為目標母體一部分的客戶或潛在客戶清單，或提供資料庫來自外部檔案的資料。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
-一般匯入和匯出是由以下專案管理： **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** Adobe Campaign樹的節點。
+一般匯入和匯出是從 **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** Adobe Campaign樹的節點。
 
 執行一般匯入和匯出操作的步驟如下：
 

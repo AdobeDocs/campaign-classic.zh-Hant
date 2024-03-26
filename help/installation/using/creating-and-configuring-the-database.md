@@ -3,7 +3,7 @@ product: campaign
 title: 建立和設定資料庫
 description: 建立和設定資料庫
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 3%
+source-wordcount: '1335'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Campaign中列出支援的資料庫 [相容性矩陣](../../rn/using/compatibili
 
   >[!CAUTION]
   >
-  > 從20.3版本開始，Windows NT驗證已停止服務。 **[!UICONTROL SQL Server authentication]** 現在是Microsoft SQL Server唯一可用的驗證模式。 [深入了解](../../rn/using/deprecated-features.md)
+  > 從20.3版本開始，Windows NT驗證已停止服務。 **[!UICONTROL SQL Server authentication]** 現在是Microsoft SQL Server唯一可用的驗證模式。 [閱讀更多](../../rn/using/deprecated-features.md)
 
   ![](assets/s_ncs_install_db_mssql_creation01.png)
 

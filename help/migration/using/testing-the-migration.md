@@ -3,7 +3,7 @@ product: campaign
 title: 測試移轉
 description: 測試移轉
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 >[!NOTE]
 >
 >* 您必須使用 **-instance：`<instanceame>`** 選項。 我們不建議使用 **-allinstances** 選項。
->* Adobe Campaign更新命令(**升級後**)可讓您同步資源並更新結構描述和資料庫。 這項作業只能執行一次，而且只能在應用程式伺服器上執行。 同步資源後， **升級後** 命令可讓您偵測同步處理是否產生任何錯誤或警告。
+>* Adobe Campaign更新命令(**升級後**)可讓您同步資源並更新方案和資料庫。 這項作業只能執行一次，而且只能在應用程式伺服器上執行。 同步資源後， **升級後** 命令可讓您偵測同步處理是否產生任何錯誤或警告。
 
 ### 非標準或遺失物件
 
@@ -117,9 +117,9 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
  <thead> 
   <tr> 
    <th> 運算式<br /> </th> 
-   <th> 錯誤代碼<br /> </th> 
-   <th> 記錄類型<br /> </th> 
-   <th> 評論<br /> </th> 
+   <th> 錯誤碼<br /> </th> 
+   <th> 記錄型別<br /> </th> 
+   <th> 註解<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -145,7 +145,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> 新SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 只有在以下位置的JavaScript程式碼中使用此函式時，才支援使用此函式： <strong>sessionTokenOnly</strong> 模式。<br /> </td> 
+   <td> 只有在以下位置的JavaScript程式碼中使用這個函式時，才支援使用這個函式：從的安全性區域執行 <strong>sessionTokenOnly</strong> 模式。<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -165,7 +165,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> Microsoft CRM、Salesforce、Oracle CRM 隨選動作活動已無法使用。若要設定Adobe Campaign與CRM系統之間的資料同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM聯結器</a> 目標定位活動。<br /> </td>
+   <td> Microsoft CRM、Salesforce、OracleCRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM聯結器</a> 目標定位活動。<br /> </td>
   </tr> 
  </tbody> 
 </table>

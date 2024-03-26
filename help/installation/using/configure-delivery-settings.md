@@ -3,7 +3,7 @@ product: campaign
 title: Campaign傳遞設定組態
 description: 瞭解如何設定Campaign傳送設定
 feature: Installation, Channel Configuration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 6%
 
 ---
@@ -74,7 +74,7 @@ MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式�
 
    一個相似性可以有多種不同的名稱：若要加以區分，請使用 **；** 字元。
 
-   範例:
+   例如：
 
    ```
     IPAffinity name="mid.Server;WWserver;local.Server">

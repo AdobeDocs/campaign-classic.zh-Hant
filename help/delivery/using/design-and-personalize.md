@@ -9,8 +9,8 @@ role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 7%
+source-wordcount: '1296'
+ht-degree: 4%
 
 ---
 
@@ -93,9 +93,9 @@ ht-degree: 7%
 
 ### 簡訊長度
 
-根據預設，SMS 中的字元數量符合 GSM（行動通訊全球系統）標準。使用 GSM 編碼的 SMS 訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個 SMS 的 SMS 訊息最多只能有 153 個字元。
+根據預設，SMS中的字元數量符合GSM（行動通訊全球系統）標準。 使用 GSM 編碼的簡訊訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個簡訊的簡訊訊息最多只能有 153 個字元。
 
-音譯包括當 GSM 標準未考慮到 SMS 的一個字元時，用另一個字元取代該字元。請注意，將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。 您可以核取對應方塊的SMPP管道設定索引標籤中的對應方塊，以授權字母音譯 **[!UICONTROL External account]**.
+音譯包括當GSM標準未考慮到SMS的一個字元時，用另一個字元取代該字元。 請注意，將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。 您可以核取對應方塊的SMPP管道設定索引標籤中的對應方塊，以授權字母音譯 **[!UICONTROL External account]**.
 瞭解更多 [在本節中](sms-set-up.md#creating-an-smpp-external-account).
 
 **提示**：

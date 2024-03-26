@@ -3,7 +3,7 @@ product: campaign
 title: 運算子設定檔
 description: 運算子設定檔
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
@@ -11,7 +11,7 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 9%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 * **[!UICONTROL Offer manager]** ：建立和維護選件。 請注意，如果工作流程中使用選件，運運算元必須位於 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作員群組以執行工作流程。
 * **[!UICONTROL Delivery manager]** ：核准並使用選件
 
-建立「互動」專屬運運算元的步驟，與在Platform上建立所有其他運運算元所用的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md)。許可權是在建立運運算元時設定的。
+建立「互動」專屬運運算元的步驟，與在Platform上建立所有其他運運算元所用的步驟相同。 有關詳細資訊，請參閱 [本節](../../platform/using/access-management.md). 許可權是在建立運運算元時設定的。
 
 ## 優惠方案管理員 {#offer-manager}
 
@@ -39,13 +39,13 @@ ht-degree: 9%
 * 檢視 **[!UICONTROL Live]** 環境。
 * 設定管理功能（預先定義的空格和篩選器）。
 * 建立和變更類別。
-* 建立優惠.
+* 建立優惠方案。
 * 設定優惠資格。
 * 核准優惠方案。
 
   >[!NOTE]
   >
-  >優惠方案管理員只能在兩種特定情況下核准優惠方案。 第一個是「如果沒有任何特定人員被指定為稽核者」，第二個是「如果負責建立範本的運運算元（有權指派稽核者）」將他們指定為優惠方案基準之優惠方案範本中的稽核者」。
+  >優惠方案管理員只能在兩種特定情況下核准優惠方案。 第一個是「如果沒有任何特定人員被指定為稽核者」，第二個是「如果負責建立範本的運運算元（有權指派稽核者）」將他們指定為優惠方案所依據之優惠方案範本中的稽核者」。
 
 ## 傳遞管理員 {#delivery-manager}
 
@@ -104,12 +104,12 @@ ht-degree: 9%
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 類型<br /> </td> 
+   <td> 型別<br /> </td> 
    <td> 讀取/寫入<br /> </td> 
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 類型規則<br /> </td> 
+   <td> 型別規則<br /> </td> 
    <td> 讀取/寫入<br /> </td> 
    <td> 讀取<br /> </td> 
   </tr> 
@@ -119,7 +119,7 @@ ht-degree: 9%
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 優惠方案類別<br /> </td> 
+   <td> 優惠類別<br /> </td> 
    <td> 讀取/寫入<br /> </td> 
    <td> 讀取<br /> </td> 
   </tr> 
@@ -164,12 +164,12 @@ ht-degree: 9%
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 類型<br /> </td> 
+   <td> 型別<br /> </td> 
    <td> 讀取<br /> </td> 
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 類型規則<br /> </td> 
+   <td> 型別規則<br /> </td> 
    <td> </td> 
    <td> 讀取<br /> </td> 
   </tr> 
@@ -179,7 +179,7 @@ ht-degree: 9%
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 優惠方案類別<br /> </td> 
+   <td> 優惠類別<br /> </td> 
    <td> </td> 
    <td> 讀取<br /> </td> 
   </tr> 

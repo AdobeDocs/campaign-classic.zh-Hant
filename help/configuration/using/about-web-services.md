@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 5%
+source-wordcount: '649'
+ht-degree: 4%
 
 ---
 
@@ -26,11 +26,11 @@ Adobe Campaign API可用於應用程式內的JavaScript中，以及應用程式�
 >授權引擎每日的通話次數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
 >所有API的清單，包括其完整說明，請參見 [本專屬檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
-## 必要條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 使用Adobe Campaign API之前，您必須熟悉下列主題：
 
-* Javascript
+* JavaScript
 * SOAP通訊協定
 * Adobe Campaign資料模型
 

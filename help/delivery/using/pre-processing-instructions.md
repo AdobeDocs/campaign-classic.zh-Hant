@@ -9,8 +9,8 @@ role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 2%
+source-wordcount: '656'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 2%
   <%@ include view="MirrorPage" %>  
   ```
 
-* 鏡像頁面 URL:
+* 映象頁面URL：
 
   ```
   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 此指示可讓您存取所有收件者均恆定的傳遞引數。
 
-語法:
+語法：
 
 ```
 <%@ value object="myObject" xpath="@myField" index="1" %>
@@ -134,7 +134,7 @@ ht-degree: 2%
 
 此指示允許載入傳遞中的物件陣列上的反複專案追蹤與物件相關的個別連結。
 
-語法:
+語法：
 
 ```
 <%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
@@ -147,7 +147,7 @@ ht-degree: 2%
 * **[!DNL index]** （選用）：如果xpath不是「。」 而且物件本身是一個陣列，物件的專案索引（從0開始）。
 * **[!DNL item]** （選用）：可在foreach回圈內使用&lt;%@值存取的新物件名稱。 在架構中具有連結名稱的預設值。
 
-範例:
+例如：
 
 在傳遞屬性/個人化中，載入一系列文章以及收件者和文章之間的關係表。
 

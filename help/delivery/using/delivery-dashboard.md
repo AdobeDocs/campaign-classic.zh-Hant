@@ -9,8 +9,8 @@ role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 7%
+source-wordcount: '1189'
+ht-degree: 5%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 7%
 
 ## 傳遞追蹤記錄和歷史記錄 {#tracking-logs}
 
-此 **[!UICONTROL Tracking]** 索引標籤會列出此傳送的追蹤記錄。 此索引標籤會顯示已傳送之訊息的追蹤資料，即 Adobe Campaign 追蹤的所有 URL 主體。追蹤資料會每小時更新。
+此 **[!UICONTROL Tracking]** 索引標籤會列出此傳送的追蹤記錄。 此標籤會顯示已傳送訊息的追蹤資料，例如，所有受Adobe Campaign追蹤的URL。 追蹤資料會每小時更新。
 
 >[!NOTE]
 >

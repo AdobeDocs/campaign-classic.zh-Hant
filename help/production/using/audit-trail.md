@@ -3,12 +3,12 @@ product: campaign
 title: 稽核軌跡
 description: 瞭解如何使用Campaign稽核軌跡監控您的執行個體
 feature: Audit Trail, Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 3%
    * 暫停
    * 停止
    * 重新啟動
-   * 清理 等於動作清除歷史記錄
+   * 清除等於動作清除歷史記錄
    * 模擬在模擬模式下等於動作「開始」的專案
    * 立即喚醒等於動作執行擱置中的工作
    * 無條件停止
@@ -105,4 +105,4 @@ ht-degree: 3%
 
    ![](assets/audit_trail_6.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Save]** .

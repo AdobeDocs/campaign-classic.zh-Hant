@@ -9,8 +9,8 @@ role: User
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 3%
+source-wordcount: '1164'
+ht-degree: 2%
 
 ---
 
@@ -164,7 +164,7 @@ A **[!UICONTROL Text message]** [!DNL LINE] 傳遞是以文字形式傳送給收
 
 您可以使用：
 
-* a **[!UICONTROL Personalized image]**,
+* a **[!UICONTROL Personalized image]**，
 
   >[!NOTE]
   >
@@ -180,11 +180,11 @@ A **[!UICONTROL Text message]** [!DNL LINE] 傳遞是以文字形式傳送給收
 
   您可以根據熒幕大小定義影像：
 
-   * 1040px
-   * 700px
-   * 460px
-   * 300px
-   * 240px
+   * 1040畫素
+   * 700畫素
+   * 460畫素
+   * 300畫素
+   * 240畫素
 
   >[!CAUTION]
   >

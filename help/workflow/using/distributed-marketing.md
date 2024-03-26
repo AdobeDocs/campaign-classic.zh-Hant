@@ -2,12 +2,12 @@
 product: campaign
 title: 分散式行銷
 description: 深入瞭解分散式行銷套件
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management, Distributed Marketing
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 11%
+source-wordcount: '76'
+ht-degree: 17%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 11%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">分散式行銷流程</span> <br /> </td> 
-   <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
+   <td> <span class="uicontrol">Centrallocalmgt</span> <br /> </td> 
    <td> 此工作流程會開始處理與使用分散式行銷模組相關。 它會啟動本機行銷活動的建立，並管理與訂單和行銷活動套件可用性相關的通知。<br /> </td> 
   </tr> 
  </tbody> 

@@ -180,7 +180,7 @@ A **[!UICONTROL Query]** 活動可讓您選取基本資料以建置目標母體�
 
    ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
 
 然後，我們需要新增子集：
 

@@ -3,14 +3,14 @@ product: campaign
 title: 同步設定檔
 description: 瞭解如何使用ACS Connector同步設定檔
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 3%
+source-wordcount: '1189'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ACS Connector會將資料從Campaign v7複製到Campaign Standard。 從Campaign
 * **在Campaign Standard中建立傳遞**：依照工作流程完成以傳送傳遞。 另請參閱 [建立傳遞](#creating-a-delivery).
 * **驗證取消訂閱連結**：使用Campaign v7網頁應用程式，確定收件者取消訂閱服務的選擇已傳送至Campaign v7資料庫。 停止接收服務的選項會複製到Campaign Standard。 另請參閱 [變更取消訂閱連結](#changing-the-unsubscription-link).
 
-## 必要條件 {#prerequisites}
+## 先決條件 {#prerequisites}
 
 以下章節說明ACS Connector如何協助您在Campaign v7中新增和編輯收件者，然後在Campaign Standard傳送中使用這些收件者。 ACS Connector需要下列專案：
 

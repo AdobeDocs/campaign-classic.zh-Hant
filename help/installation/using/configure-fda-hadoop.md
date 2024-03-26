@@ -3,14 +3,14 @@ product: campaign
 title: 設定Hadoop的存取權
 description: 瞭解如何在FDA中設定Hadoop存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '590'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 1. 設定 **[!UICONTROL Hadoop]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: ODBC (Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**：ODBC (Sybase ASE，Sybase IQ)
 
    * **[!UICONTROL Server]**：DNS的名稱
 
@@ -63,7 +63,7 @@ ht-degree: 2%
 
    * **[!UICONTROL Database]**：未在DSN中指定的資料庫名稱。 若在DSN中指定，可保留空白
 
-   * **[!UICONTROL Time zone]**: 伺服器時區
+   * **[!UICONTROL Time zone]**：伺服器時區
 
    ![](assets/hadoop3.png)
 

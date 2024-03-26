@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 內容模型 {#content-model-14}
 
-srcSchema：==(屬性 |建立者 |資料 |元素 |分項清單 |說明 |介面 |方法 |修改者)
+srcSchema：==(屬性 | createdBy | 資料 | 元素 | 分項清單 | 說明 | 介面 | 方法 | modifiedby)
 
 ## 屬性 {#attributes-14}
 

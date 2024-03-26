@@ -3,14 +3,14 @@ product: campaign
 title: 指令碼和程式碼指南
 description: 進一步瞭解在Adobe Campaign中進行開發時應遵循的准則（工作流程、Javascript、JSSP等）
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '747'
 ht-degree: 5%
 
 ---

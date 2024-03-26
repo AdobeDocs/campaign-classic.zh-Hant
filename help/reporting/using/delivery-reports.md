@@ -8,8 +8,8 @@ feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 7%
+source-wordcount: '1464'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 7%
 **[!UICONTROL 1. Delivery statistics]**
 
 * **[!UICONTROL Messages to deliver]** ：傳遞分析後要傳遞的訊息總數。
-* **[!UICONTROL Success]** : 已成功處理的訊息數.
+* **[!UICONTROL Success]** ：成功處理的訊息數。
 
 **[!UICONTROL 2. Reception statistics]**
 
@@ -87,7 +87,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->此報告中顯示的網域名稱是在多維資料庫層級使用的分項清單中定義。 若要變更、新增或移除預設網域，請編輯 **[!UICONTROL Domains]** 逐項列出並修改值與別名。 如需詳細資訊，請參閱[本章節](../../platform/using/managing-enumerations.md)。此 **[!UICONTROL Others]** 類別包含不屬於任何專案清單值的網域名稱。
+>此報告中顯示的網域名稱是在多維資料庫層級使用的分項清單中定義。 若要變更、新增或移除預設網域，請編輯 **[!UICONTROL Domains]** 逐項列出並修改值與別名。 有關詳細資訊，請參閱 [本節](../../platform/using/managing-enumerations.md). 此 **[!UICONTROL Others]** 類別包含不屬於任何專案清單值的網域名稱。
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -170,9 +170,9 @@ ht-degree: 7%
 本節包含下列指標：
 
 * **[!UICONTROL Messages to be delivered]** ：傳遞分析後要傳遞的訊息總數。
-* **[!UICONTROL Success]** ：成功處理的訊息數。 相關比率是指要傳送之訊息數量的比率。
-* **[!UICONTROL Errors]** ：傳送期間累計的錯誤總數和自動復原處理次數。 相關比率是指要傳送之訊息數量的比率。
-* **[!UICONTROL New quarantines]** ：傳送失敗（使用者不明、網域無效）後隔離的地址數。 相關比率是指要傳送之訊息數量的比率。
+* **[!UICONTROL Success]** ：成功處理的訊息數。 關聯率是要傳遞訊息數量的比率。
+* **[!UICONTROL Errors]** ：傳送期間累計的錯誤總數和自動復原處理次數。 關聯率是要傳遞訊息數量的比率。
+* **[!UICONTROL New quarantines]** ：傳送失敗（使用者不明、網域無效）後隔離的地址數。 關聯率是要傳遞訊息數量的比率。
 
 ## 熱點點擊 {#hot-clicks}
 

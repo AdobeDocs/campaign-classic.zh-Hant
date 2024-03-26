@@ -1,8 +1,8 @@
 ---
 product: campaign
 title: 載入傳遞內容
-description: 載入傳遞內容
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+description: 正在載入傳遞內容
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
 source-git-commit: 81d12ac055536fbe097466ad737bf7fee1b593ad
@@ -20,26 +20,26 @@ ht-degree: 4%
 
 操作步驟：
 
-1. 如果您尚未定義Adobe Campaign與託管內容檔案的(S) FTP伺服器之間的連線，請在中建立新的S3、FTP或SFTP外部帳戶 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. 在此外部帳戶中指定用來建立與S3或(S) FTP伺服器連線的地址和認證。
+1. 如果您尚未定義Adobe Campaign與託管內容檔案的(S) FTP伺服器之間的連線，請在中建立新的S3、FTP或SFTP外部帳戶 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. 在此外部帳戶中指定用來建立與S3或(S) FTP伺服器連線的位址和認證。
 
    以下是S3外部帳戶的範例：
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. 建立新的工作流程，例如從 **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. 新增 **[!UICONTROL File transfer]** 活動放入工作流程中，並透過指定以下專案進行設定：
+1. 新增 **[!UICONTROL File transfer]** 活動放入工作流程中，並透過指定進行設定
 
    * 用來連線至S3或(S) FTP伺服器的外部帳戶。
    * S3或(S) FTP伺服器上的檔案路徑。
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. 新增 **[!UICONTROL Delivery]** 活動，並將其連線至的對外轉變 **[!UICONTROL File transfer]** 活動。 請依照以下方式設定：
+1. 新增 **[!UICONTROL Delivery]** 活動，並將其連線到以下專案的出站轉變： **[!UICONTROL File transfer]** 活動。 請依照以下步驟設定：
 
-   * 傳送：根據您的需求，可以是系統中已建立的特定傳送，或根據現有範本建立的新傳送。
-   * 收件者：在此範例中，會將目標視為在傳遞本身中指定。
-   * 內容：即使內容已匯入前一個活動，請選取 **[!UICONTROL Specified in the delivery]**. 由於內容是從遠端伺服器上的檔案直接匯入，因此在工作流程處理時沒有識別碼，且無法識別為來自入站事件。
-   * 要執行的動作：選取 **[!UICONTROL Save]** 以儲存傳遞，並能夠從存取它 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** 執行工作流程後。
+   * 傳送：根據您的需求，可以是系統中已建立的特定傳送，或根據現有範本的新傳送。
+   * 收件者：在此範例中，將視為在傳送本身中指定目標。
+   * 內容：即使內容是在前一個活動中匯入，請選取 **[!UICONTROL Specified in the delivery]**. 由於內容是從遠端伺服器上的檔案直接匯入，因此在工作流程處理時不會有任何識別碼，且無法識別為來自入站事件。
+   * 要執行的動作：選取 **[!UICONTROL Save]** 以儲存傳遞，並從中存取傳遞 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** 執行工作流程後。
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
@@ -55,4 +55,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->詳細說明SFTP伺服器使用的最佳實務和疑難排解 [在此頁面中](../../platform/using/sftp-server-usage.md).
+>詳細說明有關SFTP伺服器使用的最佳實務及疑難排解 [在此頁面中](../../platform/using/sftp-server-usage.md).

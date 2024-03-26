@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 監控工作執行
+title: 監視工作執行
 description: 瞭解如何監視匯入和匯出作業的執行
 feature: Monitoring
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
@@ -12,7 +12,7 @@ exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 53%
+ht-degree: 34%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 53%
 
 在 **[!UICONTROL General]** 標籤， **[!UICONTROL Status]** 欄位表示工作的目前狀態。
 
-每個狀態都由一個特殊的圖示和標籤表示。狀態及其圖示如下：
+每個狀態都由一個特殊的圖示和標籤表示。 狀態及其圖示如下：
 
 ![](assets/s_ncs_user_export_status.png)
 
@@ -37,7 +37,7 @@ ht-degree: 53%
 
   正在建立工作。
 
-* **正在執行**
+* **執行進行中**
 
   這項工作正在執行。
 
@@ -45,7 +45,7 @@ ht-degree: 53%
 
   按一下 **[!UICONTROL Cancel]** 按鈕：進行中的工作已取消。
 
-* **取消正在進行中**
+* **正在取消**
 
   取消命令已接收並且作業正在取消。
 
@@ -61,10 +61,10 @@ ht-degree: 53%
 
   執行作業已完成。
 
-* **完成出現錯誤**
+* **已完成，但發生錯誤**
 
   由於技術錯誤，該作業未執行。
 
-* **伺服器正在關閉**
+* **正在關閉伺服器**
 
   正在進行的作業因 Adobe Campaign 伺服器已關閉而中斷。

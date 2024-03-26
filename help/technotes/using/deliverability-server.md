@@ -50,7 +50,7 @@ ht-degree: 4%
 >
 > JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
 
-### 必要條件{#prerequisites}
+### 先決條件{#prerequisites}
 
 在開始實作之前，請檢查您的執行個體設定。
 

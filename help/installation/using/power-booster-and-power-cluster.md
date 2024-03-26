@@ -3,14 +3,14 @@ product: campaign
 title: Power Booster 與 Power Cluster
 description: Power Booster 與 Power Cluster
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '416'
 ht-degree: 7%
 
 ---
@@ -72,8 +72,8 @@ Power Booster和Power Cluster選項可供下列應用程式使用：
   <tr> 
    <td> 安全性<br /> </td> 
    <td> 您可以從公用網際網路存取資料市場<br /> </td> 
-   <td> 資料超市與面對網際網路的正面元件隔離<br /> </td> 
-   <td> 資料超市與面對網際網路的正面元件隔離<br /> </td> 
+   <td> 資料超市與面向網際網路的正面元件隔離<br /> </td> 
+   <td> 資料超市與面向網際網路的正面元件隔離<br /> </td> 
   </tr> 
   <tr> 
    <td> 部署範本<br /> </td> 

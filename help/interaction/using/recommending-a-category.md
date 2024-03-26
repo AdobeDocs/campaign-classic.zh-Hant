@@ -3,7 +3,7 @@ product: campaign
 title: 推薦類別
 description: 推薦類別
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
@@ -11,7 +11,7 @@ exl-id: cb062cb2-dfea-46aa-8d9e-580e4dc7bb25
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 

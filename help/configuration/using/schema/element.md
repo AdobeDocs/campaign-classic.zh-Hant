@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ## 內容模型 {#content-model-4}
 
-元素：==(屬性 |計算字串 | dbindex |預設 |元素 |說明 |加入 |索引鍵 | sysFilter | translatedDefault)
+元素：==(屬性 | 計算字串 | dbindex | 預設 | 元素 | 說明 | 加入 | key | sysFilter | translatedDefault)
 
 ## 屬性 {#attributes-4}
 
-_operation （字串）、advanced （布林值）、aggregate （字串）、applicableIf （字串）、autopk （布林值）、fallsTo （字串）、convDate （字串）、dataPolicy （字串）、dataSource （字串）、dbEnum （字串）、defOnDuplicate （布林值）、default （字串）、desc （字串）、displayAsField （布林值）、doesNotSupportDiff （布林值）、edit （字串）、empage （字串）、enum （字串）、enumImage （字串）、enumImage （字串） target （字串）、expr （字串）、externalJoin （布林值）、feature （字串）、featureDate （布林值）、filterPath （字串）、folderLink （字串）、folderModel （字串）、folderProcess （字串）、fullLoad （布林值）、hierarchical （布林值）、hierarchicalPath （字串）、img （字串）、inout （字串）、完整性（字串）、label （字串）、labelSingular （字串）、length （字串）、localizable （布林值）、name (布林值（布林值）、name (MNTOKEN)、NODbIndex （布林值）、NOKeY （布林值） 、OVERFLOWTABLE （布林值）、PKSeQUENCE （字串）、PKGStATUS （字串）、REF （字串）、REVAdVANCED （布林值）、REVCarDINALITY （字串）、REVDeSC （字串）、REVExTERNALJoIN （布林值）、REVIntEGRITY （字串）、REVLABEL （字串）、REVVisIBLEIf （字串）、SQL （布林值）、SQLNAME （字串）、SQLTABLE （字串）、TABLESpACE （字串）、TABLESpACEIndex （字串）、TARGET (MNING （字串）、TARGET (目標(MNNN TOKEN)、TEMPLATE（字串）、TEMPLATETABLE（布林值）、TRANSLATEDDefAULT（字串）、TRANSLATEDExPR（字串）、TYPE(MNTOKEN)、unbound（布林值）、user（布林值）、userEnum（字串）、visibleIf（字串）、xml（布林值）、xmlChildren（布林值）
+_operation （字串）、advanced （布林值）、aggregate （字串）、applicateIf （字串）、autopk （布林值）、fallsTo （字串）、convDate （字串）、dataPolicy （字串）、dataSource （字串）、dbEnum （字串）、defOnDuplicate （布林值）、default （字串）、desc （字串）、displayAsField （布林值）、doesNotSupportDiff （布林值）、edit （字串）、empage （字串）、enum （字串）、enum （字串）、enumImage （字串） target （字串）、expr （字串）、externalJoin （布林值）、feature （字串）、featureDate （布林值）、filterPath （字串）、folderLink （字串）、folderModel （字串）、folderProcess （字串）、fullLoad （布林值）、hierarchical （布林值）、hierarchicalPath （字串）、img （字串）、inout （字串）、完整性（字串）、label （字串）、labelSingular （字串）、length （字串）、localizable （布林值）、name (布林值（布林值）、name (MNTOKEN)、NODbIndex （布林值）、NOKeY （布林值） 、OVERFLOWTABLE （布林值）、PKSeQUENCE （字串）、PKGStATUS （字串）、REF （字串）、REVAdVANCED （布林值）、REVCarDINALITY （字串）、REVDeSC （字串）、REVExTERNALJoIN （布林值）、REVIntEGRITY （字串）、REVLABEL （字串）、REVVisIBLEIf （字串）、SQL （布林值）、SQLNAME （字串）、SQLTABLE （字串）、TABLESpACE （字串）、TABLESpACEIndex （字串）、TARGET (MNING （字串）、TARGET (目標(MNNN TOKEN)、TEMPLATE（字串）、TEMPLATETABLE（布林值）、TRANSLATEDDefAULT（字串）、TRANSLATEDExPR（字串）、TYPE(MNTOKEN)、unbound（布林值）、user（布林值）、userEnum（字串）、visibleIf（字串）、xml（布林值）、xmlChildren（布林值）
 
 ## 父項 {#parents-4}
 
@@ -184,8 +184,8 @@ _operation （字串）、advanced （布林值）、aggregate （字串）、ap
    * 日期時間
    * datetimetz
    * datetimenotz
-   * date
-   * 兩次
+   * 日期
+   * 雙精度浮點數
    * 列舉
    * 浮點數
    * html
@@ -194,12 +194,12 @@ _operation （字串）、advanced （布林值）、aggregate （字串）、ap
    * 長
    * 備忘錄
    * MNTOKEN
-   * percent
+   * 百分比
    * 主要金鑰
    * 短
    * 字串
    * 時間
-   * 時間跨度
+   * 時間範圍
    * uuid
 
 * **未繫結（布林值）**：如果已啟動屬性(unbound=&quot;true&quot;)，則會將連結宣告為1-N基數的收集元素。

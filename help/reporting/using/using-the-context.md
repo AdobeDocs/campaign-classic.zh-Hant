@@ -9,7 +9,7 @@ exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ### 範例：在圖表中使用篩選器 {#example--use-a-filter-in-a-chart}
 
-在以下範例中，我們希望圖表只顯示生活在法國以及在該年期間進行購買的收件者設定檔。
+在以下範例中，我們希望圖表只顯示住在法國以及在該年期間進行購買的收件者設定檔。
 
 若要定義此篩選器，請將頁面放入圖表並加以編輯。 按一下 **[!UICONTROL Filter data]** 連結並建立符合您要顯示之資料的篩選器。 有關在Adobe Campaign中建立查詢的詳細資訊，請參閱 [本節](../../platform/using/about-queries-in-campaign.md).
 

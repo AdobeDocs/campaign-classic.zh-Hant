@@ -3,12 +3,12 @@ product: campaign
 title: 設計異動訊息範本
 description: 瞭解如何在Adobe Campaign Classic中建立及設計異動訊息範本
 feature: Transactional Messaging, Message Center, Templates
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '505'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

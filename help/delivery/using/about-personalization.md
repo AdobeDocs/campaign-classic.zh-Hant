@@ -10,7 +10,7 @@ exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 44%
+ht-degree: 40%
 
 ---
 
@@ -20,8 +20,7 @@ ht-degree: 44%
 
 * 個人化訊息格式。另請參閱 [訊息內容](defining-the-email-content.md#message-content).
 * 插入動態的個人化欄位。另請參閱 [個人化欄位](personalization-fields.md).
-* 插入預定義的個人化區塊。
-另請參閱 [個人化區塊](personalization-blocks.md).
+* 插入預先定義的個人化區塊。 另請參閱 [個人化區塊](personalization-blocks.md).
 * 建立有條件的內容。請參閱 [條件式內容](conditional-content.md) 區段。
 
 >[!CAUTION]

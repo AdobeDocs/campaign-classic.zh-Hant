@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 通訊頻道
+title: 通訊通道
 description: 建立傳遞，以在不同通道上傳送個人化訊息。
 badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
@@ -9,12 +9,12 @@ role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 20%
+source-wordcount: '1217'
+ht-degree: 15%
 
 ---
 
-# 通訊頻道{#communication-channels}
+# 通訊通道{#communication-channels}
 
 透過Adobe Campaign，您可以傳送跨頻道行銷活動，包括電子郵件、簡訊、LINE訊息、推播通知和直接郵件，並使用各種專屬方式衡量其成效 [報表](../../reporting/using/delivery-reports.md). 這些訊息是透過傳遞進行設計和傳送，而且可針對每位收件者進行個人化。
 
@@ -29,9 +29,9 @@ ht-degree: 20%
 Adobe Campaign提供下列傳送管道：
 
 1. **電子郵件管道**：電子郵件傳遞功能可讓您傳送個人化電子郵件給目標群體。請參閱 [關於電子郵件頻道](about-email-channel.md).
-1. **直接郵件頻道**：直接郵件傳遞可讓您產生擷取檔案，其中包含目標群體的資料。請參閱 [關於直接郵件頻道](about-direct-mail-channel.md).
+1. **直接郵件頻道**：直接郵件傳遞可讓您產生擷取檔案，其中包含目標群體的資料。 請參閱 [關於直接郵件頻道](about-direct-mail-channel.md).
 1. **行動裝置頻道**：行動裝置頻道上的傳遞可讓您傳送個人化SMS或LINE訊息給目標群體。 請參閱 [簡訊頻道](sms-channel.md).
-1. **行動應用程式管道**：行動應用程式傳遞可讓您傳送通知至 iOS 和 Android 系統。請參閱 [行動應用程式頻道](about-mobile-app-channel.md) 章節。
+1. **行動應用程式頻道**：行動應用程式傳送可讓您傳送通知至iOS和Android系統。 請參閱 [行動應用程式頻道](about-mobile-app-channel.md) 章節。
 
    其他管道的說明請參閱 [此頁面](steps-about-delivery-creation-steps.md#other-channels).
 
@@ -81,11 +81,11 @@ Adobe Campaign可讓您傳送個人化和分段的 [推播通知](about-mobile-a
 
 ## 直接郵件 {#direct-mail}
 
-[直接郵件是一種離線通道，可讓您個人化並產生直接郵件供應商所需的檔案。](about-direct-mail-channel.md)它可讓您在客戶歷程中混合使用線上和離線通道。
+[直接郵件](about-direct-mail-channel.md) 是離線通道，可讓您個人化並產生直接郵件供應商所需的檔案。 它可讓您在客戶歷程中混合使用線上和離線通道。
 
 線上通道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等）並直接從 Adobe Campaign 傳送給您的對象。離線通道則不同。當您準備直接郵件傳送時，Adobe Campaign 會產生一個檔案，其中包含所有目標設定檔和選取的聯絡資訊（例如，郵遞區號）。然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
 
-## 其他通道 {#other-channels}
+## 其他管道 {#other-channels}
 
 Adobe Campaign提供電話傳遞範本，用於建立外部傳遞。 使用此通道表示您設定處理輸出檔案的專用方法。 設定步驟與相同 [直接郵件頻道](about-direct-mail-channel.md).
 
@@ -99,7 +99,7 @@ Adobe Campaign提供電話傳遞範本，用於建立外部傳遞。 使用此�
 
 此管道專為描述性用途而設計，例如，定義您想要對其在Adobe Campaign以外的工具中執行的行銷活動目標保持追蹤的傳送。
 
-## 傳遞類型{#types-of-deliveries}
+## 傳遞型別{#types-of-deliveries}
 
 Campaign中有三種型別的傳遞物件：
 

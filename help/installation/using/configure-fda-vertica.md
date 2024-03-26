@@ -3,15 +3,15 @@ product: campaign
 title: 設定Vertica analytics的存取權
 description: 瞭解如何設定FDA中Vertica analytics的存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
@@ -154,7 +154,7 @@ ht-degree: 1%
 
 1. 設定 **[!UICONTROL Vertica Analytics]** 外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**: [!DNL Vertica Analytics]
+   * **[!UICONTROL Type]**： [!DNL Vertica Analytics]
 
    * **[!UICONTROL Server]**：的URL [!DNL Vertica Analytics] 伺服器
 
@@ -168,7 +168,7 @@ ht-degree: 1%
 
 聯結器支援下列選項：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |---|---|
 | 時區名稱 | 預設為空白，這表示會使用Campaign Classic應用程式伺服器的系統時區。 選項可用來強制TIMEZONE工作階段引數。 |
 

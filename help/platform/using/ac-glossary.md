@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5978'
-ht-degree: 4%
+source-wordcount: '5959'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 +++**使用中的設定檔**
 
-如果設定檔在過去 12 個月期間，曾經透過任何通道而被設為目標或進行通訊，請將此類設定檔視為「作用中」。根據您的合約，您的每個Campaign執行個體都已布建特定數量的作用中設定檔，而且會計算這些設定檔數量以結算費用。
+如果設定檔在過去12個月期間，曾經透過任何通道而被設為目標或進行通訊，則會視為作用中。 根據您的合約，您的每個Campaign執行個體都已布建特定數量的作用中設定檔，而且會計算這些設定檔數量以結算費用。
 
 進一步瞭解 [使用中的設定檔](../../platform/using/about-profiles.md#active-profiles).
 +++
@@ -117,14 +117,14 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 +++
 -->
 
-+++**通道**
++++**頻道**
 
 頻道是用來傳送通訊的媒體。 Adobe Campaign中的內建頻道包括電子郵件、簡訊、直接郵件、推播通知、LINE和X (以前稱為Twitter)。 可針對非標準管道需求實作自訂管道。
 
 進一步瞭解 [頻道](../../delivery/using/communication-channels.md).
 +++
 
-+++**用戶端主控台**
++++**使用者端主控台**
 
 Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的Campaign應用程式伺服器。 使用者端主控台可執行檔(.exe)應用程式安裝在裝有Microsoft Windows作業系統的電腦上。 Campaign使用者端主控台可集中所有功能和設定。
 
@@ -152,7 +152,7 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 進一步瞭解 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant).
 +++
 
-+++**Cube**
++++**立方體**
 
 *內容：行銷分析*
 
@@ -371,7 +371,7 @@ An engine call is a server call that starts real-time processing on server side 
 進一步瞭解 [疲勞管理](../../campaign-opt/using/pressure-rules.md).
 +++
 
-+++**同盟資料存取 (FDA)**
++++**同盟資料存取(FDA)**
 
 同盟資料存取支援擴充使用者端資料模型，以包含協力廠商資料庫。 它會自動偵測目標表格的結構，並使用來自SQL來源的資料。 您可以在不變更Adobe Campaign資料結構的情況下存取外部資料。
 
@@ -530,14 +530,14 @@ This template type is used to manage multilingual messages.  It is available for
 +++
 -->
 
-+++**已命名的權限**
++++**已命名的許可權**
 
 用來定義操作員群組存取權和許可權（角色）的精細資料庫存取權。 已命名的許可權會在產品安裝期間填入，並藉由匯入定義工具特定功能的各種套件來填入。 可建立自訂已命名的許可權來支援客戶業務需求。
 
 進一步瞭解 [已命名的許可權](../../platform/using/access-management-named-rights.md).
 +++
 
-+++**命名空間**
++++**名稱空間**
 
 名稱空間是將客戶資料型別與Adobe Campaign在資料模型中的原生資料型別區分開的分割區。 也可用來協助定義從一個執行個體移轉至另一個執行個體，例如將結構描述或範本從開發執行個體移至生產執行個體。
 
@@ -663,7 +663,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 進一步瞭解 [優惠方案主張](../../interaction/using/creating-offer-spaces.md#offer-proposition-statuses).
 +++
 
-+++**優惠方案聲明**
++++**優惠方案宣告**
 
 *內容：促銷活動互動*
 
@@ -708,14 +708,14 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 進一步瞭解 [優惠方案權重](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
-+++**操作員**
++++**運運算元**
 
 運運算元是有許可權登入及執行動作的Adobe Campaign使用者。 操作員與操作員群組相關聯，並繼承這些群組的許可權和許可權。 您也可以將已命名的許可權直接歸因於運運算元。
 
 進一步瞭解 [運運算元](../../platform/using/access-management-operators.md).
 +++
 
-+++**運算子群組**
++++**運運算元群組**
 
 操作員群組可讓您管理Campaign操作員的角色。 您可以定義歸屬於許可權的運運算元群組，然後將運運算元與一或多個群組建立關聯。 這可讓您重複使用許可權，並讓運運算元設定檔更加一致。 它也能促進設定檔的管理和維護。
 
@@ -804,7 +804,7 @@ Learn more about [Predictive Engagement Scoring](../../platform/using/creating-f
 +++
 -->
 
-+++**主要金鑰**
++++**主索引鍵**
 
 主索引鍵是資料庫表格中每個記錄的唯一識別碼。 表格必須至少有一個索引鍵。 作為規則，索引鍵會在結構描述的主要元素和索引之後宣告。 主索引鍵不能是複合的（包含數個欄位）。
 
@@ -874,7 +874,7 @@ Campaigns that re-target the recipients of a previous delivery or deliveries.
 進一步瞭解 [方案](../../configuration/using/about-schema-reference.md).
 +++
 
-+++**結構描述擴充**
++++**綱要延伸**
 
 方案擴充功能可讓您自訂現成可用的方案，以最符合您的業務使用案例。 例如，您可以將「忠誠度」欄位新增至「收件者」表格。
 
@@ -905,7 +905,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 進一步瞭解 [服務](../../delivery/using/about-services-and-subscriptions.md).
 +++
 
-+++**SFTP 管理**
++++**SFTP管理**
 
 在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 「控制面板」可以讓您對SFTP伺服器執行動作，例如監視儲存容量、管理IP位址允許清單及管理公開SSH金鑰。
 
@@ -949,7 +949,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 進一步瞭解 [目標定位活動](../../workflow/using/about-targeting-activities.md).
 +++
 
-+++**目標定位維度**
++++**目標維度**
 
 目標維度是由查詢或其他工作流程活動產生（傳回）的資料型別。 請注意，無論使用什麼查詢來取得回應資料庫列，Adobe Campaign只會傳回回應資料庫列的主索引鍵。
 
@@ -1032,7 +1032,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 -->
 
-+++**類型**
++++**型別**
 
 *內容：行銷活動最佳化*
 
@@ -1041,7 +1041,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 進一步瞭解 [型別](../../campaign-opt/using/about-campaign-typologies.md#typologies).
 +++
 
-+++**類型規則**
++++**型別規則**
 
 *內容：行銷活動最佳化*
 
@@ -1061,7 +1061,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 進一步瞭解 [單一模式](../../interaction/using/about-inbound-channels.md).
 +++
 
-+++**網站應用程式**
++++**網頁應用程式**
 
 網頁應用程式是由Campaign執行個體託管的動態互動式應用程式頁面。 其中包含來自資料庫的資料，以及適合已連線使用者許可權的內容。 例如，您可以在外部網路上建立編輯表單，或建立通知表單（包含來自資料庫的資料），其中包含表格、圖表、輸入表單等。 此功能可讓您設計和張貼網頁，讓使用者在其中查閱或輸入資訊。
 

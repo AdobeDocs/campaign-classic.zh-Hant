@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 4%
+source-wordcount: '398'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 有些客戶需要行銷使用者能夠存取資料記錄，但不希望他們看到個人識別資訊(PII)，例如名字、姓氏或電子郵件地址。 Adobe Campaign提出一種方法來保護隱私權並防止資料被一般行銷活動運運算元誤用。
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 可套用至任何元素或屬性的新屬性已新增至結構描述，以補充現有屬性 **[!UICONTROL visibleIf]** . 此屬性是： **[!UICONTROL accessibleIf]** . 包含與目前使用者內容相關的XTK運算式時，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** ，例如。
 

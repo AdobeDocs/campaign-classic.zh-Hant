@@ -11,8 +11,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 63%
+source-wordcount: '1014'
+ht-degree: 55%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 63%
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
-1. 調解
+1. 調和
 
    * 轉到&#x200B;**收件者 (nms:recipient)** 表。
    * 選取 **[!UICONTROL Insertion]** 操作，並將預設值保留在其他欄位中。
@@ -105,7 +105,7 @@ ht-degree: 63%
 
 ## 更新並插入收件者 {#example--update-and-insert-recipients}
 
-我們希望更新資料庫中的現有記錄，並從文字檔中建立新記錄。以下是該過程的示例：
+我們想要更新資料庫中的現有記錄，並從文字檔建立新的記錄。 以下是該過程的示例：
 
 1. 選擇範本
 
@@ -123,7 +123,7 @@ ht-degree: 63%
 
    應用上面示例 2 中的過程。
 
-1. 調解
+1. 調和
 
    * 保留 **[!UICONTROL Update or insert]** 已預設選取。
    * 保留選項 **[!UICONTROL Management of duplicates]** 在 **[!UICONTROL Update]** 模式，以便使用文字檔中的資料修改資料庫中的現有記錄。
@@ -147,7 +147,7 @@ ht-degree: 63%
 
 我們希望從文字檔中修改資料庫表中的某些欄位，優先考慮資料庫中包含的值。
 
-在此示例中，您可以看到文字檔中的某些欄位具有值，而資料庫中的相應欄位為空。其他欄位包含與資料庫中包含的值不同的值。
+在此範例中，您可以看到文字檔中的某些欄位有值，而資料庫中的對應欄位是空的。 其他欄位包含與資料庫中包含的值不同的值。
 
 * 要匯入的文字檔的內容。
 
@@ -173,7 +173,7 @@ ht-degree: 63%
 
    在預覽檔案的第一行時，您可以看到該檔案包含某些記錄的更新。
 
-1. 調解
+1. 調和
 
    * 移至表格並選取 **[!UICONTROL Update]** 作業。
    * 選取選項 **[!UICONTROL Reject entity]** 針對 **[!UICONTROL Management of doubles]** 欄位。
@@ -198,7 +198,7 @@ ht-degree: 63%
 
 我們希望使用文字檔修改資料庫表中的某些欄位，優先套用文字檔中包含的值。
 
-在此示例中，您將看到文字檔中的某些欄位具有空值，而資料庫中的相應欄位不為空。其他欄位包含與資料庫中的值不同的值。
+在此範例中，您會看到文字檔中的某些欄位具有空白值，而資料庫中的對應欄位並非空白。 其他欄位包含與資料庫中的值不同的值。
 
 * 要匯入的文字檔的內容。
 
@@ -222,7 +222,7 @@ ht-degree: 63%
 
    應用上面示例 2 中的過程。
 
-1. 調解
+1. 調和
 
    * 移至表格並選取「 」 **[!UICONTROL Update]**.
    * 選取選項 **[!UICONTROL Reject entity]** 針對 **[!UICONTROL Management of doubles]** 欄位。
@@ -239,4 +239,4 @@ ht-degree: 63%
 
      ![](assets/s_ncs_user_import_example06_06.png)
 
-     空文字檔的值已覆寫資料庫中的值。資料庫中的現有值已更新為匯入檔案中的值，以符合 **[!UICONTROL Update]** 為步驟4中的重複專案選取的選項。
+     清空的文字檔值已覆寫資料庫中的值。 資料庫中的現有值已更新為匯入檔案中的值，以符合 **[!UICONTROL Update]** 為步驟4中的重複專案選取的選項。

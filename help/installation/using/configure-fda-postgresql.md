@@ -3,12 +3,12 @@ product: campaign
 title: 設定PostgreSQL的存取權
 description: 瞭解如何設定PostgreSQL的存取權
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '343'
+ht-degree: 4%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 聯結器支援下列選項：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |:-:|:-:|
 | PGSQL_CONNECT_逾時 | 連線等待時間上限（以秒為單位）。 <br>有關詳細資訊，請參閱 [PostgreSQL檔案](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
 | PGSQL_KEEPALIVES_IDLE | TCP應該傳送保持連線訊息至伺服器之後未使用的秒數。 <br>有關詳細資訊，請參閱 [PostgreSQL檔案](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |

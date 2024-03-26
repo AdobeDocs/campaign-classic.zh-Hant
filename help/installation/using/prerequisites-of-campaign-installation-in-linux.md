@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 在 Linux 安裝 Campaign 的必要條件
-description: 在 Linux 安裝 Campaign 的必要條件
+title: 在Linux安裝Campaign的必要條件
+description: 在Linux安裝Campaign的必要條件
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,18 +11,18 @@ topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
-# 在Linux上安裝Campaign的必要條件{#prerequisites-of-campaign-installation-in-linux}
+# 在 Linux 上安裝 Campaign 的必要條件{#prerequisites-of-campaign-installation-in-linux}
 
 
 
 ## 軟體先決條件 {#software-prerequisites}
 
-本節詳細說明安裝Adobe Campaign之前所需的初步設定步驟。
+本節詳細介紹安裝 Adobe Campaign 之前所需的初步配置步驟。
 
 安裝Adobe Campaign所需的技術和軟體設定詳見 [相容性矩陣](../../rn/using/compatibility-matrix.md).
 
@@ -43,9 +43,9 @@ ht-degree: 2%
 
 若要在Linux中安裝Adobe Campaign，請確定您擁有必要的程式庫。
 
-* 程式庫C必須能夠支援TLS （執行緒本機儲存）模式。 除了某些已停用Xen支援的核心以外，此模式在大多數情況下是作用中的。
+* 庫 C 必須能夠支援 TLS（線程本地存儲）模式。 此模式在大多數情況下處於活動狀態，但某些內核已禁用 Xen 支援。
 
-  若要檢查此專案，您可以使用 **uname -a |希臘xen** 命令為例。
+  例如，要檢查這一點，您可以使用 **uname -a | grep xen** 命令。
 
   如果命令未傳回任何內容（空白行），則表示設定正確。
 
@@ -53,15 +53,15 @@ ht-degree: 2%
 
   對於RHEL 7/8發行版本，需要1.0版本的OpenSSL。
 
-* 若要使用Adobe Campaign，您必須擁有 **利比庫** 程式庫已安裝。
+* 要使用 Adobe Campaign，您需要 **安裝 libicu** 資料庫。
 
-  下列版本的 **利比庫** 支援（32位元或64位元）：
+  支援以下版本的 **libicu** （32 位或 64 位）：
 
-   * RHEL 7/8、CentOS 7：libicu50
+   * RHEL 7/8， CentOS 7： libicu50
    * Debian 8： libicu52
    * Debian 9： libicu57
 
-  若要使用Adobe Campaign，您必須安裝libc-ares程式庫。 在RHEL/CentOS上，執行下列命令：
+  要使用Adobe Campaign，您需要安裝 libc-ares 資料庫。 在RHEL/CentOS上，執行下列命令：
 
   ```
   yum install c-ares
@@ -103,7 +103,7 @@ SELINUX=disabled
 
 ### MTA統計資料的字型 {#fonts-for-mta-statistics}
 
-為了正確顯示MTA統計資料(nms/fra/jsp/stat.jsp)的報表，請新增字型。
+為了正確顯示有關 MTA 統計資訊的報告 （nms/fra/jsp/stat.jsp），請添加字體。
 
 在Debian中新增命令：
 
@@ -125,7 +125,7 @@ aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
   ```
 
-### 日文執行個體的字型 {#fonts-for-japanese-instances}
+### 日文 例項的字型 {#fonts-for-japanese-instances}
 
 日文例項需要特定字元的字型，才能將報表匯出為PDF格式。
 
@@ -167,7 +167,7 @@ aptitude install fonts-ipafont
 
 ### 安裝LibreOffice for CentOS {#installing-libreoffice-for-centos}
 
-CentOS需要下列設定：
+CentOS 需要以下設定：
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
@@ -183,15 +183,15 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign支援7.2版的PostgreSQL使用者端程式庫的所有版本： (**libpq.so.5**， **libpq.so.4**， **libpq.so.3.2** 和 **libpq.so.3.1**)。
+Adobe Campaign 支援版本 7.2 的所有版本的 PostgreSQL 用戶端資料庫：**（libpq.so.5**、 **libpq.so.4**、 **libpq.so.3.2** 和 **libpq.so.3.1**）。
 
-搭配Adobe Campaign使用PostgreSQL也需要安裝對應的 **pgcrypto** 程式庫。
+將PostgreSQL與Adobe Campaign一起使用還需要安裝相應的 **pgcrypto** 資料庫。
 
 ### Oracle {#oracle}
 
-擷取64位元Debian的程式庫版本，即： **libclntsh.so**， **libclntsh.so.11.1** 和 **libclntsh.so.10.1**.
+檢索 64 位 Debian 的資料庫版本，即： **libclntsh.so**、 **libclntsh.so.11.1** 和 **libclntsh.so.10.1**。
 
-您可以從「Oracle技術網路」取得Linux RPM套件。
+您可以從 Oracle 技術網路獲取 Linux RPM 軟體包。
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ Adobe Campaign支援7.2版的PostgreSQL使用者端程式庫的所有版本： (
 
 本章將說明安裝程式。 安裝步驟如下：
 
-* 步驟1：安裝應用程式伺服器，請參閱 [使用Linux安裝套件](../../installation/using/installing-packages-with-linux.md).
-* 步驟2：與Web伺服器整合（選擇性，視部署的元件而定）。
+* 步驟1：安裝應用程式伺服器，請參考 [使用Linux](../../installation/using/installing-packages-with-linux.md)安裝套件。
+* 第 2 步：與 Web 伺服器整合（可選，具體取決於部署的元件）。
 
-安裝步驟完成後，您需要設定執行個體、資料庫和伺服器。 有關詳細資訊，請參閱 [關於初始組態](../../installation/using/about-initial-configuration.md).
+安裝步驟完成後，您需要配置實例、資料庫和伺服器。 有關此內容的詳細資訊，請參閱 [關於初始配置](../../installation/using/about-initial-configuration.md)。

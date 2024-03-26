@@ -3,7 +3,7 @@ product: campaign
 title: 勾點
 description: 勾點
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
@@ -50,7 +50,7 @@ ht-degree: 2%
 >
 >此 **xmlInteraction** 引數包含通話資料以及現成查詢所載入之聯絡人的設定檔。
 
-**範例:**
+**範例：**
 
 ```
 // Call an external system to get additional data for the target
@@ -95,7 +95,7 @@ ht-degree: 2%
 * 修改的主張清單（鉤點的第一個引數）
 * 已修改的互動節點
 
-**範例:**
+**範例：**
 
 ```
 var aReturnedProps = [];
@@ -144,7 +144,7 @@ return aReturnedProps;
 >
 >系統會檢查輸入和傳回引數的選件ID是否相同。
 
-**範例:**
+**範例：**
 
 ```
 var product = getUrl("https://EXTERNAL_SYSTEM?offerCode=" + encodeURIComponent(xmlOffer.@code));

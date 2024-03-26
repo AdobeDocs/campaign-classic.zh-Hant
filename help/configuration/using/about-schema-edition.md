@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 8%
+source-wordcount: '1013'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign採用資料結構描述來：
 
 分項清單會先定義，在結構描述的主要元素之前。 它們可讓您在清單中顯示值，以限制使用者在指定欄位中的選擇。
 
-範例:
+例如：
 
 ```
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
@@ -66,7 +66,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 它們可以唯一或不唯一，並參考一個或多個欄位。
 
-範例:
+範例：
 
 ```
 <dbindex name="email" unique="true">
@@ -95,7 +95,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 主索引鍵也可使用定義 **內部** 屬性。
 
-範例:
+例如：
 
 ```
 <key name="householdId" internal="true">
@@ -127,12 +127,12 @@ type="string" enum="exTransactionTypeEnum"/>
 * **@expr**
 * **@label**
 * **@length**
-* **@名稱**
+* **@name**
 * **@notNull**
 * **@required**
 * **@ref**
 * **@xml**
-* **@類型**
+* **@type**
 
   若要檢視Adobe Campaign針對不同資料庫管理系統產生之資料型別對應清單，請參閱 [對應Adobe Campaign/DBMS資料型別](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) 區段。
 

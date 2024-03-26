@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 8%
+source-wordcount: '499'
+ht-degree: 3%
 
 ---
 
@@ -115,13 +115,13 @@ ht-degree: 8%
 
 聯結器支援下列選項：
 
-| Option | 說明 |
+| 選項 | 說明 |
 |---|---|
 | 工作綱要 | 用於工作表的資料庫綱要 |
 | 倉儲 | 要使用的預設倉儲名稱。 它會覆寫使用者的預設值。 |
-| 時區名稱 | 預設為空白，這表示會使用Campaign Classic應用程式伺服器的系統時區。 選項可用來強制TIMEZONE工作階段引數。 <br>如需詳細資訊，請參閱[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| weekstart | WEEK_START階段作業引數。 預設為0。 <br>如需詳細資訊，請參閱[此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS工作階段引數。 預設為TRUE。 此選項可用來停用Snowflake快取結果。 <br>如需詳細資訊，請參閱[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 時區名稱 | 預設為空白，這表示會使用Campaign Classic應用程式伺服器的系統時區。 選項可用來強制TIMEZONE工作階段引數。 <br>有關詳細資訊，請參閱 [此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| weekstart | WEEK_START階段作業引數。 預設為0。 <br>有關詳細資訊，請參閱 [此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
+| UseCachedResult | USE_CACHED_RESULTS工作階段引數。 預設為TRUE。 此選項可用來停用Snowflake快取結果。 <br>有關詳細資訊，請參閱 [此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 | bulkThread | 用於Snowflake大量載入器的執行緒數量，執行緒越多，批次載入量越大，效能就越好。 預設為1。 根據機器執行緒計數，數字可以調整。 |
 | chunkSize | 決定大量載入器區塊的檔案大小。 預設為128MB。 可以修改以獲得最佳效能（當與bulkThreads一起使用時）。 同時作用中的執行緒越多，效能就越好。 <br>有關詳細資訊，請參閱 [Snowflake檔案](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | 階段名稱 | 預先布建的內部階段名稱。 它將用於大量載入，而不是建立新的臨時階段。 |
