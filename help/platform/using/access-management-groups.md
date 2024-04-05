@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4e99ec73f99264e91ca427542e29bd42da88a3f9
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Access to reports]**
 
-   此群組是保留給外部操作者，以透過Web存取存取傳遞報告。
+   此群組為外部操作員保留，以便針對特定操作員啟用「行銷活動控制面板」中的「報表」、「排程」和「論壇」圖示。
 
 1. **[!UICONTROL Workflow execution]**
 
