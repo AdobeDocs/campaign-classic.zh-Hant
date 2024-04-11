@@ -2,14 +2,13 @@
 product: campaign
 title: 簡訊疑難排解
 description: 進一步瞭解如何疑難排解簡訊頻道
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2764'
 ht-degree: 0%
 
 ---
@@ -38,18 +37,17 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 
 * **在任何時候只有一個帳戶作用中時，問題未出現**
 
-  帳戶之間發生衝突。 如前所述，Adobe Campaign會個別處理帳戶，但提供者可能會將其視為單一帳戶。
+  帳戶之間發生衝突。 如前所述，Adobe Campaign單獨處理帳戶，但提供者可能會將它們視為單個帳戶。
 
    * 您在所有帳戶之間使用不同的登入/密碼組合。您必須聯繫供應商以診斷他們方面的潛在衝突。
 
    * 某些外部帳戶共用相同的 登入/密碼 組合。供應商無法分辨外部帳戶 `BIND PDU` 來自哪個，因此他們將來自多個帳戶的所有連接視為單個連接。 他們可能已隨機將MO和SR路由到兩個帳戶，從而導致問題。
 如果提供者支援同一個登入/密碼組合使用多個短程式碼，您必須詢問他們將短程式碼放在 `BIND PDU`. 請注意，這段資訊必須放在 `BIND PDU`，但不在 `SUBMIT_SM`，由於 `BIND PDU` 是唯一允許正確路由MO的位置。
-請參閱 [各種PDU中的資訊](sms-protocol.md#information-pdu) 區段來瞭解在欄位中可用的欄位 `BIND PDU`，通常您會在中新增短程式碼 `address_range`，但這需要提供者的特殊支援。 請聯絡他們，以瞭解他們如何獨立路由多個短程式碼。
-Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
+請參閱 [各種PDU中的資訊](sms-protocol.md#information-pdu) 區段來瞭解在欄位中可用的欄位 `BIND PDU`，通常您會在中新增短程式碼 `address_range`，但這需要提供者的特殊支援。 與他們聯繫以了解他們希望如何獨立路由多個短代碼。Adobe Campaign 支持在同一外部帳戶上處理多個短代碼。
 
 ## 一般外部帳戶問題 {#external-account-issues}
 
-* 調查聯結器最近是否變更過，以及由誰變更（以群組方式檢查外部帳戶）。
+* 調查連接器最近是否已更改以及由誰更改（檢查外部帳戶作為群組）。
 
   ```
   select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
@@ -66,21 +64,21 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 * 調查（在 /postupgrade 目錄中）系統是否已升級以及何時升級
 * 調查最近是否升級了影響SMS的任何包 （/var/log/dpkg.log）。
 
-## 中間來源的問題 （託管）{#issue-mid-sourcing}
+## 中間來源的問題（託管）{#issue-mid-sourcing}
 
 * 如果問題發生在中間來源環境中，請確保在中間來源伺服器上正確建立和更新傳送和廣泛記錄。 如果不是這種情況，則不是SMS問題。
 
 * 如果一切在中間伺服器上運作正常，且簡訊已正確傳送，但行銷執行個體未正確更新，則您可能會發生中間同步問題。
 
-## 連接到供應商時出現問題 {#issue-provider}
+## 連線到提供者時的問題 {#issue-provider}
 
-* 如果返回 `BIND PDU` 非零 `command_status` 代碼，請向提供程式詢問詳細資訊。
+* 如果 `BIND PDU` 傳回非零 `command_status` 程式碼，請向提供者詢問詳細資訊。
 
-* 檢查網路是否已正確配置，以便可以與供應商建立 TCP 連接。
+* 檢查網路是否已正確設定，以便與提供者建立TCP連線。
 
-* 要求提供商檢查他們是否正確地將 IP 添加到Adobe Campaign 執行個體的允許列表中。
+* 要求提供者確認其是否已正確將IP新增至Adobe Campaign執行個體的允許清單。
 
-* 檢查 **外部帳戶** 設置。 詢問提供者欄位的值。
+* 檢查 **外部帳戶** 設定。 詢問提供者欄位的值。
 
 * 如果連線成功但不穩定，請檢查 [連線不穩定的問題](troubleshooting-sms.md#issues-unstable-connection) 區段。
 
@@ -140,21 +138,21 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 * 如果您看到許多 `BIND/UNBIND`，您的連線不穩定。 請參閱[連線不穩定的問題](troubleshooting-sms.md#issues-unstable-connection) 區段，以瞭解解決方案，然後再嘗試解決重複訊息問題。
 
-降低重試時的重複專案數量：
+重試時降低重複項目數量：
 
 * 降低發送視窗。 發送視窗應足夠大以覆蓋 `SUBMIT_SM_RESP` 延遲。 其值表示在視窗已滿時發生錯誤時可以複製的最大消息數。
 
-## 處理SR（傳遞收據）時出現問題 {#issue-process-SR}
+## 處理SR （交貨收貨）時發放 {#issue-process-SR}
 
 * 您需要啟用SMPP追蹤才能進行任何型別的SR疑難排解。
 
 * 檢查 `DELIVER_SM PDU` 來自提供者，而且格式正確。
 
-* 檢查Adobe Campaign是否回覆成功 `DELIVER_SM_RESP PDU` 以及時。 在Adobe Campaign Classic上，這可保證SR已插入 `providerMsgId` SMS程式延遲處理的表格。
+* 及時檢查Adobe Campaign回復成功 `DELIVER_SM_RESP PDU` 。 在 Adobe Campaign Classic 上，這保證了 SR 已插入到 `providerMsgId` 表中，以便由 SMS 進程進行延遲處理。
 
-如果 `DELIVER_SM PDU` 未成功確認，則您應檢查下列專案：
+`DELIVER_SM PDU`如果未成功確認，則應檢查以下內容：
 
-* 檢查與中的識別碼擷取和錯誤處理相關的規則運算式 **外部帳戶**. 您可能需要根據 的 `DELIVER_SM PDU`內容對其進行驗證。
+* 檢查與外部帳戶&#x200B;**中的** id 摘取和錯誤處理相關的正則表示式。您可能需要根據 的 `DELIVER_SM PDU`內容對其進行驗證。
 
 * 檢查表中是否正確預配 `broadLogMsg` 了錯誤。
 
@@ -164,7 +162,7 @@ Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 ## 處理MO （以及黑名單/自動回覆）時的問題{#issue-process-MO}
 
-* 在測試期間啟用SMPP跟蹤。 如果未啟用 TLS，則應在對 MO 進行故障排除時執行網路捕獲，以檢查 PDU 是否包含正確的資訊以及格式是否正確。
+* 在測試期間啟用SMPP追蹤。 如果您沒有啟用TLS，您應該在疑難排解MO時進行網路擷取，以檢查PDU是否包含正確資訊及格式是否正確。
 
 * 擷取網路流量或分析SMPP追蹤時，如果設定了回覆，請務必擷取與MO及其回覆MT的整個交談。
 
@@ -236,13 +234,13 @@ Unicode允許許多類似字元的變體，而Adobe Campaign無法處理所有�
 
 * 包括在平臺上所做的任何更改或調整。 此外，還包括供應商可能在其方面所做的任何更改。
 
-### 網路捕獲 {#network-capture}
+### 網路擷取 {#network-capture}
 
 不一定需要網路擷取，通常只要詳細的SMPP訊息就足夠了。 以下是一些准則，可協助您判斷是否需要網路擷取：
 
 * 連線有問題，但詳細訊息未顯示任何 `BIND_RESP PDU`.
 
-* 無法解釋的連線沒有錯誤訊息，這是聯結器偵測到低層通訊協定錯誤時的正常行為。
+* 無法解釋的斷開連接，沒有錯誤消息，連接器在檢測到低級協定錯誤時的通常行為。
 
 * 提供者抱怨解除繫結/中斷連線程式。
 

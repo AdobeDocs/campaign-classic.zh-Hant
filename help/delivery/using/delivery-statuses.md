@@ -2,14 +2,13 @@
 product: campaign
 title: 傳遞狀態
 description: 進一步瞭解傳遞控制面板上可用的狀態
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '637'
 ht-degree: 3%
 
 ---

@@ -2,15 +2,14 @@
 product: campaign
 title: 傳送電子郵件的重要步驟
 description: 瞭解如何確認電子郵件的傳送並探索傳送電子郵件訊息的特性
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
 role: User
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 1%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
 

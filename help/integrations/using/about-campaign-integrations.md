@@ -3,15 +3,14 @@ product: campaign
 title: 關於 Campaign 整合
 description: 使用其他 Adobe 解決方案，並將其不同的功能與 Campaign 結合
 feature: Overview
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '733'
 ht-degree: 7%
 
 ---

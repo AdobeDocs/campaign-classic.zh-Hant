@@ -2,14 +2,13 @@
 product: campaign
 title: 追蹤和監視訊息
 description: 瞭解如何追蹤和監控訊息
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 2%
 
 ---

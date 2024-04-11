@@ -3,15 +3,14 @@ product: campaign
 title: 壓縮或加密檔案
 description: 瞭解處理前如何在Campaign中壓縮或加密檔案
 feature: Data Management, Encryption
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '514'
 ht-degree: 5%
 
 ---

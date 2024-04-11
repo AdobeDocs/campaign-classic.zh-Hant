@@ -3,15 +3,14 @@ product: campaign
 title: 隱私權與同意
 description: 進一步瞭解隱私權與同意
 feature: Privacy, Privacy Tools
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1977'
 ht-degree: 98%
 
 ---

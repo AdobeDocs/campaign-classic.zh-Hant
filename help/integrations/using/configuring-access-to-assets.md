@@ -3,15 +3,14 @@ product: campaign
 title: 設定資產存取權
 description: 設定資產存取權
 feature: Asset Sharing
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '503'
 ht-degree: 2%
 
 ---

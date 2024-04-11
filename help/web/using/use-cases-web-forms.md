@@ -2,13 +2,12 @@
 product: campaign
 title: 「使用案例：網路表單」
 description: 「使用案例：網路表單」
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '970'
 ht-degree: 1%
 
 ---

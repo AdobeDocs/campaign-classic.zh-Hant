@@ -2,15 +2,14 @@
 product: campaign
 title: 附加檔案
 description: 附加檔案
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 2%
+source-wordcount: '975'
+ht-degree: 1%
 
 ---
 

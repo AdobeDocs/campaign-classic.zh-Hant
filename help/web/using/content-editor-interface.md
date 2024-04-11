@@ -2,13 +2,12 @@
 product: campaign
 title: 內容編輯器介面
 description: 內容編輯器介面
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '542'
 ht-degree: 3%
 
 ---

@@ -2,13 +2,12 @@
 product: campaign
 title: 建立調查的關鍵步驟
 description: 使用Campaign建立您的第一個調查
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---

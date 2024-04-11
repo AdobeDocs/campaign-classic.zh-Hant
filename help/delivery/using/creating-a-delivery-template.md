@@ -2,14 +2,13 @@
 product: campaign
 title: 建立傳遞範本
 description: 建立傳遞範本
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 7%
 
 ---

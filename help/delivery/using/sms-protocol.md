@@ -2,14 +2,13 @@
 product: campaign
 title: 簡訊連接器通訊協定及設定
 description: 進一步瞭解簡訊聯結器及設定方式
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '8448'
+source-wordcount: '8445'
 ht-degree: 1%
 
 ---

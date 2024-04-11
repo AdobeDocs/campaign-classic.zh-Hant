@@ -3,15 +3,14 @@ product: campaign
 title: 教學課程
 description: 教學課程
 feature: Overview
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '341'
 ht-degree: 68%
 
 ---

@@ -2,14 +2,13 @@
 product: campaign
 title: 開始使用Campaign中的傳遞能力
 description: 瞭解傳遞能力最佳實務
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '665'
 ht-degree: 7%
 
 ---

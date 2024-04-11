@@ -2,14 +2,13 @@
 product: campaign
 title: 定義條件式內容
 description: 定義條件式內容
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 8%
+source-wordcount: '254'
+ht-degree: 7%
 
 ---
 

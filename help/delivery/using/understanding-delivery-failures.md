@@ -2,14 +2,13 @@
 product: campaign
 title: 瞭解傳遞失敗
 description: 瞭解如何瞭解傳送失敗
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2567'
 ht-degree: 12%
 
 ---

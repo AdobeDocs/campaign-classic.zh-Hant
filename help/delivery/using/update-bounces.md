@@ -2,15 +2,14 @@
 product: campaign
 title: 在 ISP 中斷後更新跳出資格
 description: 瞭解如何在ISP中斷後更新跳出資格
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '492'
 ht-degree: 3%
 
 ---

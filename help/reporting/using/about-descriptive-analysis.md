@@ -3,12 +3,11 @@ product: campaign
 title: 開始使用描述性分析
 description: 開始使用描述性分析
 feature: Reporting, Monitoring
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

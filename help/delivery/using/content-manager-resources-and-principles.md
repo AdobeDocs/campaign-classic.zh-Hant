@@ -2,14 +2,13 @@
 product: campaign
 title: 內容管理員資源與原則
 description: 內容管理員資源與原則
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Templates
 role: User, Developer, Data Engineer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '247'
 ht-degree: 4%
 
 ---

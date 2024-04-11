@@ -3,16 +3,15 @@ product: campaign
 title: 與Adobe Experience Cloud共用對象
 description: 與Adobe Experience Cloud共用對象
 feature: Audiences, People Core Service Integration
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 62%
+source-wordcount: '304'
+ht-degree: 63%
 
 ---
 

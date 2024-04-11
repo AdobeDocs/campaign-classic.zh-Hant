@@ -2,14 +2,13 @@
 product: campaign
 title: 開始使用意見調查
 description: 開始使用Campaign調查
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 4%
+source-wordcount: '531'
+ht-degree: 3%
 
 ---
 

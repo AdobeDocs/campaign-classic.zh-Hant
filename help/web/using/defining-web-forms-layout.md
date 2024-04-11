@@ -2,13 +2,12 @@
 product: campaign
 title: 定義網路表單版面
 description: 定義網路表單版面
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---

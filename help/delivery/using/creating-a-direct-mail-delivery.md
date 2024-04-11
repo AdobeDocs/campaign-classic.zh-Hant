@@ -2,15 +2,14 @@
 product: campaign
 title: 建立新的直接郵件傳遞
 description: 瞭解如何建立直接郵件傳送
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Direct Mail
 role: User
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 11%
+source-wordcount: '96'
+ht-degree: 10%
 
 ---
 

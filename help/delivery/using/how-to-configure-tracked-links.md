@@ -2,14 +2,13 @@
 product: campaign
 title: 如何設定追蹤的連結
 description: 如何設定追蹤的連結
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '583'
 ht-degree: 10%
 
 ---

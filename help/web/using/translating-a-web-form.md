@@ -2,13 +2,12 @@
 product: campaign
 title: 翻譯網路表單
 description: 翻譯網路表單
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---

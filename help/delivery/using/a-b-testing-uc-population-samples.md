@@ -2,14 +2,13 @@
 product: campaign
 title: 設定母體樣本
 description: 瞭解如何透過專屬的使用案例執行A/B測試
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '183'
 ht-degree: 4%
 
 ---

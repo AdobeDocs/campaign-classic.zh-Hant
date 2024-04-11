@@ -3,15 +3,14 @@ product: campaign
 title: 一般匯入範例
 description: 深入瞭解您可以使用匯入作業執行的一般匯入
 feature: Data Management
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1011'
 ht-degree: 55%
 
 ---

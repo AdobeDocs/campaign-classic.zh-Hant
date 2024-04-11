@@ -2,14 +2,13 @@
 product: campaign
 title: 個人化區塊
 description: 瞭解如何使用個人化區塊
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '870'
 ht-degree: 2%
 
 ---

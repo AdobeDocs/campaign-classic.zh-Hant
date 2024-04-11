@@ -2,14 +2,13 @@
 product: campaign
 title: 個人化優惠券
 description: 瞭解如何建立和插入個人化優惠券
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---

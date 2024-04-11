@@ -3,14 +3,13 @@ product: campaign
 title: 設定Adobe Experience Manager整合
 description: 瞭解如何設定Campaign-AEM整合
 feature: Experience Manager Integration
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '506'
 ht-degree: 2%
 
 ---

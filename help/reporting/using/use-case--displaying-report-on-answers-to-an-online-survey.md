@@ -2,14 +2,13 @@
 product: campaign
 title: 「使用案例：針對線上調查的回答顯示報告」
 description: 「使用案例：針對線上調查的回答顯示報告」
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 

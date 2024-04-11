@@ -2,14 +2,13 @@
 product: campaign
 title: 輸入表單
 description: 瞭解如何在Campaign中使用輸入表單
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Data Management
 role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '841'
 ht-degree: 2%
 
 ---

@@ -2,14 +2,13 @@
 product: campaign
 title: 開始使用追蹤
 description: 深入瞭解Adobe Campaign追蹤的一般准則
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '692'
 ht-degree: 9%
 
 ---

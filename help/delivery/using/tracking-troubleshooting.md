@@ -2,14 +2,13 @@
 product: campaign
 title: 追蹤疑難排解
 description: 本節提供與Adobe Campaign中的追蹤設定和實作相關的常見問題
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Troubleshooting
 role: User
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---

@@ -3,15 +3,14 @@ product: campaign
 title: 在Adobe Campaign中設定共用受眾整合
 description: 瞭解如何設定共用受眾整合
 feature: Audiences, People Core Service Integration
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---

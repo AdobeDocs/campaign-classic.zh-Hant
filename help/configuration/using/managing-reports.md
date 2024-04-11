@@ -4,13 +4,12 @@ title: 管理報告
 description: 管理報告
 feature: Reporting, Configuration
 role: Data Engineer, Developer
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 4%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 

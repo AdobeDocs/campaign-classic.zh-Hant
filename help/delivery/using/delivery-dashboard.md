@@ -2,14 +2,13 @@
 product: campaign
 title: 傳遞儀表板
 description: 進一步瞭解如何使用傳送儀表板來監視您的傳送
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 5%
 
 ---

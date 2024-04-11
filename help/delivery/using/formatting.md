@@ -2,14 +2,13 @@
 product: campaign
 title: 格式
 description: 格式
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email Design
 role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1451'
 ht-degree: 0%
 
 ---

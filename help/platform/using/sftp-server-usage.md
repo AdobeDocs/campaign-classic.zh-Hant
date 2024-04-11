@@ -3,15 +3,14 @@ product: campaign
 title: SFTP 伺服器使用情況
 description: 深入瞭解SFTP伺服器最佳實務及疑難排解
 feature: Troubleshooting
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1109'
 ht-degree: 24%
 
 ---
