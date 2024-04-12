@@ -3,14 +3,14 @@ product: campaign
 title: IMS 疑難排解
 description: IMS 疑難排解
 feature: Configuration
-badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---

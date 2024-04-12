@@ -3,14 +3,14 @@ product: campaign
 title: 時區管理
 description: 時區管理
 feature: Installation, Instance Settings
-badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '951'
 ht-degree: 1%
 
 ---

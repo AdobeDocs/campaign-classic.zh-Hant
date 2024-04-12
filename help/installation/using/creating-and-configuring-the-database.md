@@ -3,14 +3,14 @@ product: campaign
 title: 建立和設定資料庫
 description: 建立和設定資料庫
 feature: Installation, Instance Settings
-badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1329'
 ht-degree: 1%
 
 ---

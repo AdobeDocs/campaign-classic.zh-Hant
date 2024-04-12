@@ -3,14 +3,14 @@ product: campaign
 title: 升級至新的組建
 description: 瞭解升級至新組建版本的技術步驟
 feature: Monitoring, Upgrade
-badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1127'
 ht-degree: 1%
 
 ---

@@ -3,15 +3,15 @@ product: campaign
 title: 以 Campaign 使用 MX 伺服器
 description: 瞭解MX伺服器如何與Adobe Campaign Classic搭配運作
 feature: Installation, Instance Settings
-badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
