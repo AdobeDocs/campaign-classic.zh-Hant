@@ -2,13 +2,12 @@
 product: campaign
 title: 關於事件活動
 description: 關於事件活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: ed27159e-2fce-4b1c-92e8-581901b82f60
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 11%
+source-wordcount: '105'
+ht-degree: 5%
 
 ---
 

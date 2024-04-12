@@ -2,14 +2,13 @@
 product: campaign
 title: 關於方案版本
 description: 開始使用結構描述版本
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 7%
+source-wordcount: '1006'
+ht-degree: 6%
 
 ---
 

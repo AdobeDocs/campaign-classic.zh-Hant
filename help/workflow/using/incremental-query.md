@@ -2,13 +2,12 @@
 product: campaign
 title: 增量查詢
 description: 進一步瞭解增量查詢工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 5%
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 

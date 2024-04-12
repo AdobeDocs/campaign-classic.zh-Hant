@@ -2,13 +2,12 @@
 product: campaign
 title: 更新彙總
 description: 深入瞭解更新彙總工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 8%
+source-wordcount: '123'
+ht-degree: 3%
 
 ---
 

@@ -3,13 +3,12 @@ product: campaign
 title: 同步化網站應用程式
 description: 瞭解如何使用ACS Connector同步化網頁應用程式
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '796'
 ht-degree: 1%
 
 ---

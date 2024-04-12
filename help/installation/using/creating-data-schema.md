@@ -3,12 +3,11 @@ product: campaign
 title: 建立FDA的資料結構
 description: 瞭解如何為FDA建立資料結構
 feature: Installation, Instance Settings, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 3%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 

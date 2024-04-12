@@ -4,11 +4,10 @@ title: 設定Campaign Explorer導覽樹狀結構
 feature: Application Settings
 description: 瞭解如何設定Campaign Explorer導覽樹狀結構
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---

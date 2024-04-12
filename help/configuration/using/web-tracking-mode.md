@@ -4,12 +4,11 @@ title: 網路追蹤模式
 description: 瞭解如何選取網頁追蹤模式
 feature: Instance Settings
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 2%
+source-wordcount: '681'
+ht-degree: 1%
 
 ---
 

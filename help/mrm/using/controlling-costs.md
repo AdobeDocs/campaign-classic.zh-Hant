@@ -3,14 +3,13 @@ product: campaign
 title: 控制成本
 description: 瞭解如何控制成本
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2488'
 ht-degree: 0%
 
 ---

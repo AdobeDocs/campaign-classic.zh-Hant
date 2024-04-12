@@ -2,13 +2,12 @@
 product: campaign
 title: 跳至 (起點和終點)
 description: 跳至 (起點和終點)
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 20%
+source-wordcount: '116'
+ht-degree: 15%
 
 ---
 

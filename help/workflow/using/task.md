@@ -2,13 +2,12 @@
 product: campaign
 title: 任務
 description: 進一步瞭解任務工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 10%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 

@@ -3,12 +3,11 @@ product: campaign
 title: 行銷活動目標對象
 description: 瞭解如何定義行銷活動的對象
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1485'
 ht-degree: 1%
 
 ---

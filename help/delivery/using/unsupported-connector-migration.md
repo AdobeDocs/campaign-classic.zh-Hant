@@ -3,13 +3,12 @@ product: campaign
 title: 不支援的SMS聯結器移轉
 description: 將不支援的SMS聯結器移轉至Extended Generic SMPP聯結器
 feature: SMS, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 3%
+source-wordcount: '457'
+ht-degree: 1%
 
 ---
 

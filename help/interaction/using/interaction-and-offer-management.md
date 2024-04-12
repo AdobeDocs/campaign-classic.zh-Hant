@@ -3,12 +3,11 @@ product: campaign
 title: 互動與優惠管理
 description: 瞭解如何根據資格規則將最佳優惠方案傳送給您的聯絡人
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 9%
+source-wordcount: '268'
+ht-degree: 6%
 
 ---
 

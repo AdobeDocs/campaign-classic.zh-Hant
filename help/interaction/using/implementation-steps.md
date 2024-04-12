@@ -3,12 +3,11 @@ product: campaign
 title: 實施步驟
 description: Campaign互動模組的實作步驟
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 3%
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 

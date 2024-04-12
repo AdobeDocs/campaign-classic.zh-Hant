@@ -2,13 +2,12 @@
 product: campaign
 title: 聯合
 description: 進一步瞭解聯合工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 2%
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 

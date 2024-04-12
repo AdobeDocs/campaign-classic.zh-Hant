@@ -2,13 +2,12 @@
 product: campaign
 title: 排除
 description: 進一步瞭解排除工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 2%
+source-wordcount: '359'
+ht-degree: 0%
 
 ---
 

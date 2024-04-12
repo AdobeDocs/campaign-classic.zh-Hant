@@ -2,13 +2,12 @@
 product: campaign
 title: Nlserver 模組
 description: Nlserver 模組
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 1b62b36e-9103-473d-817b-956ceaf7a0b5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '29'
-ht-degree: 44%
+source-wordcount: '22'
+ht-degree: 27%
 
 ---
 

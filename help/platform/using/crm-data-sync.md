@@ -3,11 +3,10 @@ product: campaign
 title: CRM Connectors資料同步
 description: 管理Campaign與您的CRM之間的資料
 feature: Microsoft CRM Integration, Salesforce Integration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1529'
 ht-degree: 1%
 
 ---

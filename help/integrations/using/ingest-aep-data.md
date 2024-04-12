@@ -3,14 +3,13 @@ product: campaign
 title: 將Adobe Experience Platform區段擷取至Campaign
 description: 瞭解如何將Adobe Experience Platform受眾擷取至Campaign Classic
 feature: Experience Platform Integration
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 

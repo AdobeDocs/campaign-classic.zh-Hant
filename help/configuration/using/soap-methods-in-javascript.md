@@ -4,12 +4,11 @@ title: JavaScript 中的 SOAP 方法
 feature: Configuration, Instance Settings
 description: JavaScript 中的 SOAP 方法
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 13%
+source-wordcount: '136'
+ht-degree: 9%
 
 ---
 

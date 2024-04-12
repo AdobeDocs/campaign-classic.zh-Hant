@@ -2,13 +2,12 @@
 product: campaign
 title: Adobe Campaign Classic資料模型說明
 description: 本檔案說明Adobe Campaign資料模型
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2399'
 ht-degree: 1%
 
 ---

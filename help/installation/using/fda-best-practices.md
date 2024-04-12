@@ -3,15 +3,14 @@ product: campaign
 title: Campaign FDA最佳作法和限制
 description: 瞭解使用外部資料庫(FDA)時的最佳實務和限制
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 8%
+source-wordcount: '409'
+ht-degree: 7%
 
 ---
 

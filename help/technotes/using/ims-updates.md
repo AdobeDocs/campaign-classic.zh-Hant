@@ -3,12 +3,11 @@ product: campaign
 title: 技術檔案 — 更新您的環境，以便使用IMS連線至Adobe Campaign
 description: Campaign - IMS更新
 feature: Technote, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 6%
+source-wordcount: '562'
+ht-degree: 5%
 
 ---
 

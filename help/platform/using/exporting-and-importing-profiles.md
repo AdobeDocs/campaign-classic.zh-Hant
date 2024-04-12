@@ -3,15 +3,14 @@ product: campaign
 title: 匯出和匯入用戶檔案
 description: 匯出和匯入用戶檔案
 feature: Profiles
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 34%
+source-wordcount: '140'
+ht-degree: 30%
 
 ---
 

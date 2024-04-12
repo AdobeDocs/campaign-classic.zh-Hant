@@ -3,14 +3,13 @@ product: campaign
 title: 託管模型
 description: 探索行銷活動託管模型
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 1%
+source-wordcount: '615'
+ht-degree: 0%
 
 ---
 

@@ -2,12 +2,11 @@
 product: campaign
 title: 電子郵件傳遞能力
 description: 深入瞭解電子郵件傳遞能力套件
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Deliverability
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 9%
+source-wordcount: '101'
+ht-degree: 2%
 
 ---
 

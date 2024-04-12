@@ -2,13 +2,12 @@
 product: campaign
 title: 更新資料
 description: 進一步瞭解更新資料工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 2%
+source-wordcount: '852'
+ht-degree: 4%
 
 ---
 
@@ -81,7 +80,7 @@ ht-degree: 2%
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-建立外站轉變，其中包含更新後未正確處理的記錄（例如，如果有重複記錄）。 更新通常會標籤目標工作流程的結尾，因此預設不會啟用選項。
+建立外站轉變，其中包含更新後未正確處理的記錄（例如，如果有重複記錄）。 更新通常是標示目標定位工作流程的結束，因此預設不會啟動該選項。
 
 ## 更新及合併集合 {#updating-and-merging-collections}
 

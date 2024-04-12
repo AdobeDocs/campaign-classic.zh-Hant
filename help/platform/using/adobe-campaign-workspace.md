@@ -2,15 +2,14 @@
 product: campaign
 title: Adobe Campaign 工作區
 description: 瞭解如何使用及自訂Campaign工作區
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 31%
+source-wordcount: '916'
+ht-degree: 30%
 
 ---
 

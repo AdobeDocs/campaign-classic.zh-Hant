@@ -3,12 +3,11 @@ product: campaign
 title: 開始使用多維度資料集
 description: 開始使用多維度資料集
 feature: Reporting, Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 26%
+source-wordcount: '336'
+ht-degree: 25%
 
 ---
 

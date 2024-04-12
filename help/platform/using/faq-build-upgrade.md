@@ -3,15 +3,14 @@ product: campaign
 title: 版本編號升級常見問答集
 description: 與Campaign版本編號升級相關的常見問題
 feature: Upgrade, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 1%
+source-wordcount: '1996'
+ht-degree: 0%
 
 ---
 

@@ -2,13 +2,12 @@
 product: campaign
 title: 架構
 description: 工作流程由特定模組處理，可在多個伺服器上啟動以共用處理負載
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 46801f78-706c-4dfa-bce7-3d15f569f222
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 7%
+source-wordcount: '116'
+ht-degree: 1%
 
 ---
 

@@ -3,12 +3,11 @@ product: campaign
 title: Campaign 模擬
 description: 開始使用Campaign模擬
 role: User, Data Engineer
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1245'
 ht-degree: 2%
 
 ---

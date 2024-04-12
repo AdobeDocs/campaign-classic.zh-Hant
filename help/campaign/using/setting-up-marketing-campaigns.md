@@ -3,13 +3,12 @@ product: campaign
 title: 建立行銷活動
 description: 瞭解如何建立和執行行銷活動
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 6%
+source-wordcount: '1248'
+ht-degree: 5%
 
 ---
 

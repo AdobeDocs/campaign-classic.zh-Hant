@@ -2,12 +2,11 @@
 product: campaign
 title: 分割
 description: 進一步瞭解分割工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1946'
 ht-degree: 0%
 
 ---

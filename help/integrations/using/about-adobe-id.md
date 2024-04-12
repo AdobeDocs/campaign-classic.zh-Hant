@@ -3,14 +3,13 @@ product: campaign
 title: 使用您的Adobe ID連線至Adobe Campaign
 description: 進一步瞭解Adobe Campaign中的Adobe IMS實作
 feature: Configuration
-badge-v7: label="v7" type="Informative" tooltip="套用至Campaign Classic v7"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '170'
 ht-degree: 16%
 
 ---

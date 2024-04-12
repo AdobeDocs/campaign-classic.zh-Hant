@@ -2,14 +2,13 @@
 product: campaign
 title: 開始使用Campaign Classic資料模型
 description: 了解如何延伸 Campaign 資料模型、編輯結構描述，以及使用 API 等
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Data Model, Configuration
 role: Data Engineer, Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 6%
+source-wordcount: '980'
+ht-degree: 5%
 
 ---
 

@@ -2,13 +2,12 @@
 product: campaign
 title: 協調資料更新
 description: 協調資料更新
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 5%
+source-wordcount: '300'
+ht-degree: 3%
 
 ---
 

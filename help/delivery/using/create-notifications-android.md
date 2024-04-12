@@ -2,14 +2,13 @@
 product: campaign
 title: 為Android裝置建立推播通知
 description: 瞭解如何建立Android推播通知
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 1%
+source-wordcount: '647'
+ht-degree: 0%
 
 ---
 

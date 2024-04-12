@@ -3,15 +3,14 @@ product: campaign
 title: 匿名互動
 description: 匿名互動
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 3%
+source-wordcount: '407'
+ht-degree: 1%
 
 ---
 

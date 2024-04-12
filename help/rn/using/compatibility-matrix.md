@@ -3,13 +3,12 @@ product: campaign
 title: Campaign Classic 相容性矩陣
 description: Campaign Classic 相容性矩陣
 feature: Release Notes
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3e771d9a18c083bee8239b95d1d68d63928217c2
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '757'
 ht-degree: 100%
 
 ---

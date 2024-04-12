@@ -2,13 +2,12 @@
 product: campaign
 title: SQL 程式碼和 JavaScript 程式碼
 description: 深入瞭解SQL和JavaScript程式碼工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 12%
+source-wordcount: '270'
+ht-degree: 13%
 
 ---
 
@@ -39,7 +38,7 @@ ht-degree: 12%
 
 ### 執行延遲 {#exec-delay}
 
-自第20.2發行版本開始，已新增執行延遲 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活動。 依預設，執行階段不能超過1小時。 在此延遲後，流程將中止並顯示錯誤訊息，活動執行將失敗。
+自第20.2發行版本開始，已新增執行延遲 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活動。 依預設，執行階段不能超過 1 小時。在此延遲後，流程將中止並顯示錯誤訊息，活動執行將失敗。
 
 您可以在以下位置變更此延遲： **[!UICONTROL Stop execution after]** 這些活動中可用的欄位。
 

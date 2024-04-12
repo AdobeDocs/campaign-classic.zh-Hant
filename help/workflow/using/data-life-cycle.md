@@ -2,13 +2,12 @@
 product: campaign
 title: 資料生命週期
 description: 進一步瞭解工作流程中的資料生命週期
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 7%
+source-wordcount: '510'
+ht-degree: 5%
 
 ---
 

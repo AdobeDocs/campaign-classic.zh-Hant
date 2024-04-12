@@ -2,13 +2,12 @@
 product: campaign
 title: 檔案收集器
 description: 深入瞭解檔案收集器工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 2%
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 

@@ -4,12 +4,11 @@ title: 關於網路追蹤
 feature: Configuration, Instance Settings
 description: 關於網路追蹤
 role: User, Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 8%
+source-wordcount: '192'
+ht-degree: 4%
 
 ---
 

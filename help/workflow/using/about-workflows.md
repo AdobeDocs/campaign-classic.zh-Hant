@@ -2,13 +2,12 @@
 product: campaign
 title: 關於工作流程
 description: 使用工作流程自動化程序、管理資料和對象、傳送訊息等
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 38%
+source-wordcount: '650'
+ht-degree: 37%
 
 ---
 

@@ -2,13 +2,12 @@
 product: campaign
 title: Campaign
 description: Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 topic-tags: technical-workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 7%
+source-wordcount: '164'
+ht-degree: 3%
 
 ---
 

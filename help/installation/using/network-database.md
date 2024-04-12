@@ -3,15 +3,14 @@ product: campaign
 title: 網路、資料庫和 SSL/TLS
 description: 進一步瞭解網路、資料庫和SSL/TLS設定最佳實務
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 14%
+source-wordcount: '132'
+ht-degree: 9%
 
 ---
 

@@ -2,13 +2,12 @@
 product: campaign
 title: 篩選重複的收件者
 description: 瞭解如何篩選重複的收件者
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 8%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 

@@ -2,13 +2,12 @@
 product: campaign
 title: 設定週期性匯入
 description: 瞭解如何設定週期性匯入的工作流程範本
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 1%
+source-wordcount: '1015'
+ht-degree: 0%
 
 ---
 

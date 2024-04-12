@@ -2,13 +2,12 @@
 product: campaign
 title: 傳遞
 description: 深入瞭解傳遞型別工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 2%
+source-wordcount: '917'
+ht-degree: 1%
 
 ---
 

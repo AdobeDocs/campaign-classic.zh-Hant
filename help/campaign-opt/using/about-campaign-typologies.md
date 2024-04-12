@@ -3,13 +3,12 @@ product: campaign
 title: 關於行銷活動態樣
 description: 關於行銷活動態樣
 role: User, Data Engineer
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 17%
+source-wordcount: '463'
+ht-degree: 16%
 
 ---
 

@@ -2,12 +2,11 @@
 product: campaign
 title: 訊息中心（控制）
 description: 訊息中心（控制）
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 5%
+source-wordcount: '145'
+ht-degree: 1%
 
 ---
 

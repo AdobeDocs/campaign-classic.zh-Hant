@@ -2,13 +2,12 @@
 product: campaign
 title: 定義核准
 description: 透過核准，操作員能夠決定管理工作流程的管理決策，或確認其繼續執行
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 3%
+source-wordcount: '842'
+ht-degree: 2%
 
 ---
 

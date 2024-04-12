@@ -3,16 +3,15 @@ product: campaign
 title: 將Microsoft Windows平台移轉至Adobe Campaign v7
 description: 瞭解如何將Microsoft Windows平台移轉至Adobe Campaign v7
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1088'
 ht-degree: 0%
 
 ---

@@ -2,13 +2,12 @@
 product: campaign
 title: 跨頻道傳遞
 description: 進一步瞭解跨頻道傳遞
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 9%
+source-wordcount: '287'
+ht-degree: 7%
 
 ---
 

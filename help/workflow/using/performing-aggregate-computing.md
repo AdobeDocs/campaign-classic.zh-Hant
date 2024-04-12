@@ -2,13 +2,12 @@
 product: campaign
 title: 執行彙總運算
 description: 瞭解如何在查詢中執行彙總計算
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 2%
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 

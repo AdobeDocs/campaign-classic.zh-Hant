@@ -2,12 +2,11 @@
 product: campaign
 title: 社交行銷
 description: 進一步瞭解社交行銷技術工作流程
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 11%
+source-wordcount: '122'
+ht-degree: 6%
 
 ---
 

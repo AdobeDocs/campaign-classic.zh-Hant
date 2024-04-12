@@ -3,15 +3,14 @@ product: campaign
 title: 其他資料
 description: 其他資料
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 2%
+source-wordcount: '717'
+ht-degree: 1%
 
 ---
 

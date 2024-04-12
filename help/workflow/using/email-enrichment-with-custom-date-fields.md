@@ -2,13 +2,12 @@
 product: campaign
 title: 使用自訂日期欄位擴充電子郵件
 description: 瞭解如何使用自訂日期欄位豐富電子郵件
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 4%
+source-wordcount: '538'
+ht-degree: 3%
 
 ---
 

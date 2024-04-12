@@ -2,13 +2,12 @@
 product: campaign
 title: 使用本地核准活動
 description: 瞭解如何使用本機核准活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 3%
+source-wordcount: '1283'
+ht-degree: 2%
 
 ---
 

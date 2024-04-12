@@ -2,13 +2,12 @@
 product: campaign
 title: 傳送生日電子郵件
 description: 瞭解如何使用工作流程傳送生日電子郵件
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 3%
+source-wordcount: '878'
+ht-degree: 2%
 
 ---
 

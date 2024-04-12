@@ -2,13 +2,12 @@
 product: campaign
 title: 本地核准
 description: 本地核准
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 4%
+source-wordcount: '643'
+ht-degree: 3%
 
 ---
 

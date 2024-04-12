@@ -3,15 +3,14 @@ product: campaign
 title: 優惠目錄概覽
 description: 深入瞭解Campaign中的優惠方案目錄
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 9%
+source-wordcount: '131'
+ht-degree: 4%
 
 ---
 

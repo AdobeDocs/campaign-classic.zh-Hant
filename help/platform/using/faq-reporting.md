@@ -3,14 +3,13 @@ product: campaign
 title: 報告常見問題集
 description: Campaign Classic 常見問題集
 feature: Troubleshooting, Reporting
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '317'
 ht-degree: 96%
 
 ---

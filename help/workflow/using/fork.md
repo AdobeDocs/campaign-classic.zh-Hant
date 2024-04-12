@@ -2,13 +2,12 @@
 product: campaign
 title: 分支
 description: 進一步瞭解分支工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 3%
+source-wordcount: '417'
+ht-degree: 1%
 
 ---
 

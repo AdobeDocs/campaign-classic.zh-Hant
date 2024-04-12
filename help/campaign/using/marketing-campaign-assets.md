@@ -3,13 +3,12 @@ product: campaign
 title: 行銷活動檔案和傳遞大網
 description: 進一步瞭解行銷活動檔案和傳遞大網
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 

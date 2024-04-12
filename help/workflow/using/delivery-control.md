@@ -2,13 +2,12 @@
 product: campaign
 title: 傳遞控制
 description: 進一步瞭解傳遞控制工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 9%
+source-wordcount: '164'
+ht-degree: 5%
 
 ---
 

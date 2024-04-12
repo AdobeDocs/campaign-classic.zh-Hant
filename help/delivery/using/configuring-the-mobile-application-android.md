@@ -2,14 +2,13 @@
 product: campaign
 title: 在Adobe Campaign中設定Android行動應用程式
 description: 瞭解如何設定Android行動應用程式
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 12%
+source-wordcount: '849'
+ht-degree: 11%
 
 ---
 

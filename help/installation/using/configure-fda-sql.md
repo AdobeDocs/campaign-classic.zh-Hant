@@ -3,12 +3,11 @@ product: campaign
 title: 設定Microsoft SQL Server的存取權
 description: 瞭解如何設定Microsoft SQL Server的存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 2%
+source-wordcount: '464'
+ht-degree: 1%
 
 ---
 

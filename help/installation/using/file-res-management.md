@@ -3,16 +3,15 @@ product: campaign
 title: 檔案與資源管理
 feature: Installation, Application Settings
 description: 瞭解如何在Campaign中設定檔案和資源管理
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 badge-v7-prem: label="內部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 2%
+source-wordcount: '652'
+ht-degree: 1%
 
 ---
 

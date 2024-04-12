@@ -3,15 +3,14 @@ product: campaign
 title: 透過 SOAP 整合 (伺服器端)
 description: 透過 SOAP 整合 (伺服器端)
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 

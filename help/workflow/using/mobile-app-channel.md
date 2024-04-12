@@ -2,12 +2,11 @@
 product: campaign
 title: 行動應用程式頻道
 description: 行動應用程式頻道
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 13%
+source-wordcount: '65'
+ht-degree: 4%
 
 ---
 

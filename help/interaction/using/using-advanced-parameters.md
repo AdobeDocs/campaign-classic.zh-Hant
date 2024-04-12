@@ -3,15 +3,14 @@ product: campaign
 title: 使用進階引數
 description: 使用進階引數
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 232e2bfc-f497-40ad-811e-118dbfcabbcf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 5%
+source-wordcount: '118'
+ht-degree: 0%
 
 ---
 

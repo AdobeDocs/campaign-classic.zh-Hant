@@ -2,12 +2,11 @@
 product: campaign
 title: 資料載入 (檔案)
 description: 進一步瞭解資料載入（檔案）工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 229844437770c460d958724e2dc15941e35939a6
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1140'
 ht-degree: 14%
 
 ---

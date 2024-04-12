@@ -3,15 +3,14 @@ product: campaign
 title: 設定Snowflake的存取權
 description: 瞭解如何在FDA中設定Snowflake存取權
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 3%
+source-wordcount: '492'
+ht-degree: 2%
 
 ---
 

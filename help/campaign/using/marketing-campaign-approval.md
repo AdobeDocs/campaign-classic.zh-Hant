@@ -3,12 +3,11 @@ product: campaign
 title: 設定及管理核准流程
 description: 瞭解如何管理行銷活動的核准
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2437'
 ht-degree: 1%
 
 ---

@@ -2,14 +2,14 @@
 product: campaign
 title: 使用Adobe Campaign和Adobe Analytics
 description: 使用Adobe Campaign和Adobe Analytics
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+exl-id: 985cf088-7546-4875-8e11-cafe5bd3e323
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 26%
+source-wordcount: '181'
+ht-degree: 23%
 
 ---
 
@@ -34,4 +34,3 @@ Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UI
 ## 設定與使用 {#adobe-analytics-connector-usage}
 
 瞭解如何在中使用Adobe Campaign和Adobe Analytics [Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
-

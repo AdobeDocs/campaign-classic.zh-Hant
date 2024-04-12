@@ -2,12 +2,11 @@
 product: campaign
 title: 工作流程最佳實務
 description: 瞭解行銷活動工作流程最佳實務
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1381'
 ht-degree: 11%
 
 ---

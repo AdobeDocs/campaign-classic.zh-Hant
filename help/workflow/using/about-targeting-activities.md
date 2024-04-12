@@ -2,13 +2,12 @@
 product: campaign
 title: 關於目標定位活動
 description: 關於目標定位活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 10%
+source-wordcount: '438'
+ht-degree: 8%
 
 ---
 

@@ -3,14 +3,13 @@ product: campaign
 title: 管理行銷資源
 description: 瞭解如何管理行銷資源
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1386'
 ht-degree: 1%
 
 ---

@@ -2,13 +2,12 @@
 product: campaign
 title: 內容管理
 description: 內容管理
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 4%
+source-wordcount: '417'
+ht-degree: 2%
 
 ---
 

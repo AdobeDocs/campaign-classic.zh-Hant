@@ -2,13 +2,12 @@
 product: campaign
 title: 警報
 description: 警報
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
 exl-id: 21698e85-7b58-4bde-bbd2-0ee06ac90307
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 10%
+source-wordcount: '84'
+ht-degree: 3%
 
 ---
 

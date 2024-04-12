@@ -2,14 +2,13 @@
 product: campaign
 title: 推播疑難排解
 description: 推播疑難排解
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Push, Troubleshooting
 role: User
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 6%
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 

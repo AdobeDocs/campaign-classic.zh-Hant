@@ -3,13 +3,12 @@ product: campaign
 title: 行銷活動範本
 description: 行銷活動範本
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 4%
+source-wordcount: '1128'
+ht-degree: 3%
 
 ---
 

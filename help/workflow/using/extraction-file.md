@@ -2,13 +2,12 @@
 product: campaign
 title: 資料擷取 (檔案)
 description: 進一步瞭解資料擷取（檔案）工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 3%
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 

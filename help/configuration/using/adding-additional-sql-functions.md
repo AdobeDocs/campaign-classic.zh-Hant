@@ -4,12 +4,11 @@ title: 新增其他 SQL 函式
 description: 瞭解如何定義其他SQL函式
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 1%
+source-wordcount: '1034'
+ht-degree: 0%
 
 ---
 

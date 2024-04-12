@@ -2,13 +2,12 @@
 product: campaign
 title: 建立協作行銷活動
 description: 瞭解如何建立合作行銷活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 5%
+source-wordcount: '915'
+ht-degree: 4%
 
 ---
 

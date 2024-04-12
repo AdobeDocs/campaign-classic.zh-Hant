@@ -2,13 +2,12 @@
 product: campaign
 title: 依儲存格列出的優惠
 description: 依儲存格列出的優惠
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Targeting Activity, Interaction
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 12%
+source-wordcount: '150'
+ht-degree: 8%
 
 ---
 

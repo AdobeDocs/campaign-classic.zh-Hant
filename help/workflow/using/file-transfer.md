@@ -2,13 +2,12 @@
 product: campaign
 title: 檔案傳輸
 description: 進一步瞭解檔案傳輸工作流程活動
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 2%
+source-wordcount: '563'
+ht-degree: 1%
 
 ---
 

@@ -2,12 +2,11 @@
 product: campaign
 title: 轉移至中間來源
 description: 進一步了解轉移至中間來源工作流程
-badge-v7-only: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 7%
+source-wordcount: '107'
+ht-degree: 1%
 
 ---
 
