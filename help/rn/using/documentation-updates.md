@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3709'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 ### 2024 年 3 月 {#mar-2024}
 
-已針對iOS權杖型APN連線更新行動應用程式設定章節。 [閱讀更多](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
+針對 iOS 權杖型 APN 連線行動應用程式設定部分已更新。 [閱讀更多](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
 
 ### 2024 年 1 月 {#jan-2024}
 

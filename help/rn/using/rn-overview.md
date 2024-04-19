@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '929'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ Adobe Campaign Classic 定期發行的產品更新帶來了新的功能、錯誤
 
 | 狀態 | 說明 |
 |---|---|
-| [!BADGE 全面發佈]{type=Positive} |  由 Adobe 建議、經過生產驗證的最新穩定版本。 |
-| [!BADGE 可用性限制]{type=Neutral} | 僅限隨選部署。 |
+| [!BADGE 一般可用性]{type=Positive} |  由 Adobe 建議、經過生產驗證的最新穩定版本。 |
+| [!BADGE 有限可用性]{type=Neutral} | 僅限隨選部署。 |
 | [!BADGE 候選版本]{type=Informative} | 具有新功能的最新版本。 |
 | [!BADGE 不再提供]{type=Caution} | 無部署。 無錯誤修正。 建議更新至較新的版本編號。 |
 | [!BADGE 已棄用]{type=negative} | 無部署。 無錯誤修正。 現有實施必須升級。 |
