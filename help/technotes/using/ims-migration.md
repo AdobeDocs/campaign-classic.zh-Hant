@@ -4,7 +4,7 @@ description: 瞭解如何將Campaign技術操作者移轉至Adobe Developer主�
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c63fea4d400440005ecf3733413c346bd4a2fd18
+source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 0%
@@ -166,7 +166,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 
 ### 步驟8 — 更新協力廠商API整合 {#ims-migration-step-8}
 
-您現在必須更新API整合功能，才能對Adobe Campaign發出呼叫，使用新建立的技術帳戶。
+您現在必須更新所有對Adobe Campaign發出呼叫的API整合，才能使用新建立的技術帳戶。
 
 如需API整合步驟的詳細資訊，請參閱下列程式碼範例。
 
