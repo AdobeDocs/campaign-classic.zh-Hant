@@ -7,15 +7,22 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1238'
 ht-degree: 2%
 
 ---
 
 # 建立及管理操作者 {#operators}
 
+>[!CAUTION]
+>
+>從Campaign Classicv7.3.1開始，所有運運算元都應該使用 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。
+>
+>為了強化安全性和驗證程式，Adobe Campaign強烈建議您將所有現有的操作員驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 瞭解如何在中移轉您的操作員 [此頁面](../../technotes/using/migrate-users-to-ims.md).
+> 
+>移轉後，請注意下一節不再適用。  瞭解如何在中使用Adobe IMS設定許可權 [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}.
 
 
 ## 開始使用Campaign運運算元  {#about-operators}

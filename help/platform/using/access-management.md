@@ -5,15 +5,23 @@ description: 瞭解如何授與Campaign功能的存取權
 badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 7%
+source-wordcount: '342'
+ht-degree: 5%
 
 ---
 
 # 開始使用權限{#access-management}
 
+
+>[!CAUTION]
+>
+>從Campaign Classicv7.3.1開始，所有運運算元都應該使用 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。
+>
+>為了強化安全性和驗證程式，Adobe Campaign強烈建議您將所有現有的操作員驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 瞭解如何在中移轉您的操作員 [此頁面](../../technotes/using/migrate-users-to-ims.md).
+> 
+>移轉後，請注意下一節不再適用。  瞭解如何在中使用Adobe IMS設定許可權 [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}.
 
 
 Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。 這些是一組授權或拒絕的許可權和限制：
