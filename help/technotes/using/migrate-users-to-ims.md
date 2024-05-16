@@ -2,9 +2,9 @@
 title: 移轉Campaign運運算元至AdobeIdentity Management系統(IMS)
 description: 瞭解如何將Campaign運運算元移轉至AdobeIdentity Management系統(IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1279'
 ht-degree: 2%
 
 ---
@@ -77,6 +77,7 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 1. 為您的連線實作Adobe IMS，如所述 [此頁面](../../integrations/using/implementing-ims.md).
 
 您也可以將技術運運算元移轉至Adobe Developer主控台，詳情請參閱 [此技術檔案](ims-migration.md).
+
 
 
 ## 常見問題集 {#ims-migration-faq}
@@ -152,5 +153,5 @@ Adobe強烈建議所有使用者在移轉期間登出。
 ## 有用的連結 {#ims-useful-links}
 
 * [將技術使用者移轉至Adobe Developer主控台](ims-migration.md)
-* [Adobe Campaign v8發行說明](../../rn/using/latest-release.md)
+* [Adobe Campaign Classic v7發行說明](../../rn/using/latest-release.md)
 * [什麼是AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}
