@@ -5,18 +5,21 @@ description: 開始使用Campaign調查
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
 
 # 開始使用意見調查{#about-surveys}
 
-
-
 Adobe Campaign包含圖形模組，可定義及發佈網頁應用程式。 這可用來建立頁面，例如外部網路上的編輯表單，或通知表單（包含來自資料庫的資料，以及表格、圖表、輸入表單等）。 使用此功能來設計和張貼網頁，讓使用者可以在其中查閱或輸入資訊。
+
+>[!AVAILABILITY]
+>
+>調查管理不適用於企業(FFDA)部署內容中的Campaign v8。 進一步瞭解 [Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
 
 選填 **調查** 附加元件可讓您建立新型別的Web應用程式，以建立和管理線上問卷，例如新增或修改設定檔資訊、訂閱或取消訂閱資訊服務或競爭專案表單的表單。 收集到答案後，就會儲存在資料庫或本機變數中。 資料模型可透過調查問卷的答案動態擴展。 您可以即時檢視結果、篩選回應，並使用專用圖表加以分析。
 

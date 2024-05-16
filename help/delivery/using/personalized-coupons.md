@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '911'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,17 @@ ht-degree: 1%
 
 為傳遞新增優惠券，可讓收件者獲得提升的產品和服務價值。 您可以使用Campaign抵用券模組建立一組抵用券，預計新增至即將推出的行銷優惠方案。 當您準備好建立傳遞時，請指派適用的優惠券。 由於優惠券在選取的期間內有效，因此指派的優惠券會唯一連結至其傳遞訊息。 此外，Campaign會在傳送傳遞前，確認訊息數量有足夠的抵用券。
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->優惠券管理是必須安裝的套件。 若要確認您有優惠券管理，請核取 **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
->
->抵用券資料可以使用CSV和XML格式匯入和匯出。 有關匯入和匯出的詳細資訊，請參閱 [本節](../../platform/using/get-started-data-import-export.md).
+>優惠券管理不適用於企業(FFDA)部署內容中的Campaign v8。 進一步瞭解 [Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
+優惠券管理依賴必須安裝的套件。 若要確認您有優惠券管理，請核取 **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+
+抵用券資料可以使用CSV和XML格式匯入和匯出。 [了解更多](../../platform/using/get-started-data-import-export.md)。
 
 ## 建立抵用券 {#creating-a-coupon}
 
-建立優惠券時，優惠券模組提供兩種選項：
+建立優惠券時，「優惠券管理」模組提供兩種選項：
 
 * **匿名**：特定收件者或收件者清單的通用抵用券。
 * **個人**：為特定收件者提供的個人化優惠券。
