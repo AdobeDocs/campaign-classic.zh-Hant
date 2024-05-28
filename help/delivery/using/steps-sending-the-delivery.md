@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1526'
 ht-degree: 11%
 
 ---
@@ -160,9 +160,9 @@ ht-degree: 11%
 
 * **涉及客服中心的行銷活動**
 
-  管理電話忠誠度行銷活動時，貴組織處理聯絡訂閱者之通話次數的能力有限。
+  透過電話管理忠誠度行銷活動時，貴組織處理聯絡訂閱者之通話次數的能力有限。
 
-  使用波段時，您可以將每天的訊息數量限製為20，這是客服中心的每日處理能力。
+  使用波段時，您可以將訊息數量限製為每天20則，例如考量客服中心的每日處理能力。
 
   若要這麼做，請選取 **[!UICONTROL Schedule multiple waves of the same size]** 選項。 輸入 **[!UICONTROL 20]** 作為波浪的大小和 **[!UICONTROL 1d]** 在 **[!UICONTROL Period]** 欄位。
 
