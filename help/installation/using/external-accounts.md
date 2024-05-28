@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 8%
@@ -15,8 +15,6 @@ ht-degree: 8%
 ---
 
 # 外部帳戶{#external-accounts}
-
-
 
 Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部系統的連線，您可以建立新的外部帳戶。
 
@@ -115,9 +113,9 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 * [電子郵件](#email-routing-external-account)
 * [行動裝置（簡訊）](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
-* [電話](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [電話](../../delivery/using/communication-channels.md#other-channels)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
-* [代理商](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [代理商](../../delivery/using/communication-channels.md#other-channels)
 * [X (先前稱為Twitter)](../../social/using/about-social-marketing.md)
 * [iOS 管道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android 管道](../../delivery/using/configuring-the-mobile-application-android.md)

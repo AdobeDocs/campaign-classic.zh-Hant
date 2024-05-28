@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 15%
@@ -32,7 +32,7 @@ Adobe Campaign提供下列傳送管道：
 1. **行動裝置頻道**：行動裝置頻道上的傳遞可讓您傳送個人化SMS或LINE訊息給目標群體。 請參閱 [簡訊頻道](sms-channel.md).
 1. **行動應用程式頻道**：行動應用程式傳送可讓您傳送通知至iOS和Android系統。 請參閱 [行動應用程式頻道](about-mobile-app-channel.md) 章節。
 
-   其他管道的說明請參閱 [此頁面](steps-about-delivery-creation-steps.md#other-channels).
+   其他管道的說明請參閱 [本節](#other-channels).
 
    >[!NOTE]
    >
