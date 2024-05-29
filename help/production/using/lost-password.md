@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 3%
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 1. 儲存變更並關閉檔案。
 
-1. 停止 `nlserver` 程式
+1. 停止 `nlserver` 程式。
 
 1. 設定新密碼。 要執行此操作，請輸入下列命令：
 
@@ -85,6 +85,6 @@ ht-degree: 3%
    Confirmation 
    ```
 
-1. 開始 `nlserver` 程式
+1. 開始 `nlserver` 程式。
 
 1. 您現在可以使用新密碼進行連線 **內部** 模式。

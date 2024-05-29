@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 您可以使用命令列來建立執行個體，語法如下：
 
-```
+```sql
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
@@ -36,7 +36,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 您可以使用下列語法，從命令列將現有資料庫與執行處理相關聯：
 
-```
+```sql
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
@@ -49,6 +49,6 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 
 以下指令會設定 **示範** 具有SQL型別伺服器的執行個體稱為 **base6**，連結至 **行銷活動** 帳戶及其 **密碼** 於 **dbsrv** 伺服器：
 
-```
+```sql
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
 ```

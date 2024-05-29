@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 ---
 
 # 安裝伺服器{#installing-the-server}
-
-
 
 ## 執行安裝程式 {#executing-the-installation-program}
 
@@ -70,13 +68,13 @@ Adobe Campaign伺服器的安裝步驟如下：
 
 您可以使用下列指令來測試初始安裝：
 
-```
+```sql
 nlserver pdump
 ```
 
 如果Adobe Campaign未啟動，回應為：
 
-```
+```sql
 No task
 ```
 
@@ -84,7 +82,7 @@ No task
 
 安裝測試完成後，請透過以下方式開啟命令提示字元： **[!UICONTROL Start > Programs > Adobe Campaign]** 選單並輸入下列指令：
 
-```
+```sql
 nlserver web
 ```
 
@@ -104,13 +102,13 @@ nlserver web
 
 按下 **Ctrl+C** 若要停止程式，請輸入下列命令：
 
-```
+```sql
 nlserver start web
 ```
 
 會顯示下列資訊：
 
-```
+```sql
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:17:21 >   Start of the 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair') task in a new process 
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -122,13 +120,13 @@ nlserver start web
 
 若要停止，請輸入：
 
-```
+```sql
 nlserver stop web
 ```
 
 會顯示下列資訊：
 
-```
+```sql
 12:18:31 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:18:31 >   Stop requested for 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair', pid=29188, tid=-1224824320)...
 12:18:31 >   Stop requested (pid=29188)
@@ -145,13 +143,13 @@ Adobe Campaign伺服器會定義名為的技術登入 **內部** 擁有所有執
 
 若要啟動Adobe Campaign服務，您可以使用服務管理員，或在命令列輸入以下內容（搭配適當的許可權）：
 
-```
+```sql
 net start nlserver6
 ```
 
 如果您稍後需要停止Adobe Campaign程式，請使用命令：
 
-```
+```sql
 net stop nlserver6
 ```
 
@@ -161,6 +159,6 @@ net stop nlserver6
 
 新增下列環境變數：
 
-```
+```sql
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
 ```

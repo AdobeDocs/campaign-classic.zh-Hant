@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '408'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 4%
 
 您可以新增引數 **-who** 列出進行中的連線（資料庫和應用程式）。
 
-```
+```sql
 nlserver pdump -who
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 web@default (9984) - 50.1 Mo
@@ -65,7 +65,7 @@ default xxxxx myserver myprovider test400
 
 您可以新增引數 **-missing** 列出缺少的模組（模組、模組關閉等錯誤）
 
-```
+```sql
 nlserver monitor -missing
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 inMail@test
@@ -79,11 +79,11 @@ wfserver@test
 
 啟動模組的語法仍會採用下列格式：
 
-```
+```sql
 nlserver start <module>@<INSTANCE>
 ```
 
-```
+```sql
 nlserver stop <module>@<INSTANCE>
 ```
 
@@ -99,7 +99,7 @@ nlserver stop <module>@<INSTANCE>
 
    * 在Linux中：
 
-     ```
+     ```sql
      /etc/init.d/nlserver6 stop
      ```
 
@@ -109,13 +109,13 @@ nlserver stop <module>@<INSTANCE>
 
    * 在Windows中：
 
-     ```
+     ```sql
      net stop nlserver6
      ```
 
 * 如果沒有，則在Adobe Campaign帳戶中：
 
-  ```
+  ```sql
   nlserver shutdown 
   ```
 
@@ -125,13 +125,13 @@ nlserver stop <module>@<INSTANCE>
 
 * 如果您擁有根或管理員存取權：
 
-   * 在Linux中： /etc/init.d/nlserver6 start
+   * 在Linux中： `/etc/init.d/nlserver6 start`
 
      >[!NOTE]
      >
      >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver**
 
-   * 在Windows中：網路啟動nlserver6
+   * 在Windows中： `net start nlserver6`
 
 * 否則，在Adobe Campaign帳戶中： **nlserver watchdog -svc -noconsole**
 
@@ -141,11 +141,11 @@ nlserver stop <module>@<INSTANCE>
 
 使用 **設定** 命令 **nlserver** 包含下列專案的可執行檔案： **-setdblogin** 引數。
 
-```
+```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
 ```
 
-```
+```sql
 nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 ```
 
