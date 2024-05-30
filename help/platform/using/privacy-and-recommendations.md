@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
 workflow-type: tm+mt
-source-wordcount: '1977'
-ht-degree: 98%
+source-wordcount: '1910'
+ht-degree: 97%
 
 ---
 
 # 隱私權與同意{#privacy-and-recommendations}
-
 
 
 ## 一般性建議 {#general-recommendations}
@@ -31,18 +30,7 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 ### 隱私權法規 {#privacy-regulations}
 
-為正確處理隱私權並管理個人資料，工作時請遵循您營運業務所在地區的適用法規。這些法規包含：
-* [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)（歐洲一般資料保護規範）
-* [DPA](https://www.gov.uk/data-protection) (英國實施 GDPR 之規範)
-* [歐洲隱私權與電子通訊指令](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219)
-* [CAN-SPAM 法案](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)（美國法律規定商業電子郵件的規則與要求）
-* [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)（加州消費者隱私權法案）
-* [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/)（泰國個人資料保護法案）
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) （巴西一般資料保護法）
-
->[!NOTE]
->
->如需有關將 GDPR、CCPA、PDPA 以及 LGPD 套用至 Adobe Campaign 方法的詳細資訊，請參閱[本頁面](../../platform/using/privacy-management.md#privacy-management-regulations)。
+為正確處理隱私權並管理個人資料，工作時請遵循您營運業務所在地區的適用法規。Adobe Campaign的功能可協助您遵守以下列出的法規： [此頁面](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Adobe Experience Cloud 隱私權 {#experience-cloud-privacy}
 
