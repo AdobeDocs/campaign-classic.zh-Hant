@@ -7,10 +7,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 6%
+source-wordcount: '857'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,11 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉變會在 Campaign 即將發行的版本中逐步執行，並更新文件以反映這些更新。
+> Adobe已棄用服務帳戶(JWT)認證，Campaign與Adobe解決方案和應用程式的整合現在必須依賴OAuth伺服器對伺服器認證。 </br>
+>
+> * 如果您已實作與Campaign的傳入整合，您必須移轉技術帳戶，如本檔案所述。 現有的服務帳戶(JWT)憑證將持續運作到2025年1月27日。 此外，從2024年6月3日開始，已無法在開發人員控制檯中建立新的服務帳戶(JWT)憑證。 在此日期之後，無法建立新的服務帳戶(JWT)憑證或將其新增到專案。 </br>
+>
+> * 如果您已實作輸出整合(例如Campaign-Analytics整合或Experience Cloud Triggers整合)，則在2025年1月27日前都能正常運作。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。 自2024年6月3日起，已經無法在開發人員控制檯中建立新的服務帳戶(JWT)憑證，因此您無法在此日期之後依賴JWT建立新的傳出整合
 
 ## 建立Adobe Analytics產品設定檔 {#analytics-product-profile}
 
