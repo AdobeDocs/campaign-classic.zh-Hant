@@ -1,60 +1,50 @@
 ---
 product: campaign
 title: 設定管道
-description: 瞭解如何設定管道
+description: 瞭解如何設定Campaign — 觸發器整合的管道
 feature: Triggers
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
 
-# 設定管線 {#configuring-pipeline}
-
-
+# 設定管道 {#configuring-pipeline}
 
 在執行個體設定檔案中設定驗證引數，例如，客戶ID、私密金鑰和驗證端點。
+
 要處理的觸發程式清單是在JSON格式的選項中設定。
+
 這些觸發程式由傳送電子郵件的行銷活動工作流程用於鎖定目標。 行銷活動的設定方式是讓具有兩個觸發事件的客戶收到電子郵件。
 
 ## 先決條件 {#prerequisites}
 
-開始此設定前，請檢查您是否使用：
+開始此設定前，請檢查您是否擁有：
 
-* 最少，會建置下列其中一個Adobe Campaign：
-   * 19.1.8.9039
-   * 19.1.4.9032 - Gold Standard 11
-   * 20.2.4.9187
-   * 20.3.1
-* Adobe Analytics Standard版本
-
-您還需要：
-
-* Adobe I/O專案驗證
-* 有效的組織ID — 若要尋找您的組織ID，請參閱 [此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}
+* Adobe Developer專案
+* 有效的組織ID — 若要尋找您的組織ID，請參閱 [此頁面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * 開發人員對貴組織的存取權
-* 在Adobe Analytics中完成觸發器設定
+* Adobe Analytics中的有效觸發器設定
 
 ## 驗證和組態檔 {#authentication-configuration}
 
-由於管道託管於Adobe Experience Cloud，因此需要驗證。
-它使用一對公開和私密金鑰。 此程式與使用者/密碼具有相同的功能，但較安全。
-支援透過Adobe I/O專案進行Marketing Cloud的驗證。
+由於管道託管於Adobe Experience Cloud，因此需要驗證。 它使用一對公開和私密金鑰。 此程式與使用者/密碼具有相同的功能，但較安全。 透過Adobe Developer Project為Marketing Cloud支援驗證。
 
-## 步驟1：建立/更新Adobe I/O專案 {#creating-adobe-io-project}
+## 步驟1：建立/更新您的Adobe Developer專案 {#creating-adobe-io-project}
 
-對於託管客戶，您可以建立客戶服務票證，讓您的組織能夠為Triggers整合Adobe I/O技術帳戶權杖。
+針對託管客戶，請與您的Adobe代表/客戶服務合作，為貴組織啟用觸發器整合的Adobe Developer帳戶權杖。
 
-若為內部部署客戶，請參閱 [設定Adobe Experience Cloud Triggers的Adobe I/O](../../integrations/using/configuring-adobe-io.md) 頁面。 請注意，您需要選取 **[!UICONTROL Adobe Analytics]** 新增API至Adobe I/O認證時。
+若為內部部署/混合部署客戶，請參閱 [設定Adobe Experience Cloud Triggers的Adobe I/O](../../integrations/using/configuring-adobe-io.md) 頁面。 請注意，您需要選取 **[!UICONTROL Adobe Analytics]** 新增API至Adobe Developer認證時。
 
-## 步驟2：設定NmsPipeline_Config管線選項 {#configuring-nmspipeline}
+## 步驟2：設定管道選項 {#configuring-nmspipeline}
 
 設定驗證後，管道將擷取事件。 它只會處理在Adobe Campaign中設定的觸發程式。 觸發程式必須從Adobe Analytics產生，並推送至管道，而管道只會處理Adobe Campaign中設定的觸發程式。
+
 也可以使用萬用字元來設定選項，以便擷取所有觸發程式（不論名稱為何）。
 
 1. 在Adobe Campaign中，存取 **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** 在 **[!UICONTROL Explorer]**.
@@ -63,7 +53,7 @@ ht-degree: 1%
 
 1. 在 **[!UICONTROL Value (long text)]** 欄位貼上下列JSON程式碼，這會指定兩個觸發程式。 您必須確定移除註解。
 
-   ```
+   ```json
    {
    "topics": [ // list of "topics" that the pipelined is listening to.
       {
@@ -85,7 +75,7 @@ ht-degree: 1%
 
 1. 您也可以選擇貼上會擷取所有觸發程式的下列JSON程式碼。
 
-   ```
+   ```json
    {
    "topics": [
      {
@@ -102,7 +92,7 @@ ht-degree: 1%
    }
    ```
 
-### Consumer引數 {#consumer-parameter}
+### 設定Consumer引數 {#consumer-parameter}
 
 管線的運作方式與供應商和消費者模型類似。 訊息僅供個別消費者使用：每位消費者各有專屬的訊息副本。
 
@@ -114,18 +104,18 @@ ht-degree: 1%
 
 若要設定管道選項，您應遵循下列建議：
 
-* 新增或編輯下的觸發程式 **[!UICONTROL Triggers]**，您不應該編輯其餘的。
-* 請確定JSON有效。 您可以使用JSON驗證器，請參閱此 [網站](https://jsonlint.com/) 例如。
-* &quot;name&quot;會對應至觸發程式ID。 萬用字元「*」將接住所有觸發器。
-* 「消費者」對應到呼叫執行個體或應用程式的名稱。
-* 管線也支援「別名」主題。
-* 進行變更後，您應該一律重新啟動管線化。
+* 新增或編輯下的觸發程式 **[!UICONTROL Triggers]**.
+* 請確定JSON有效。
+* 此 **名稱** 引數對應至觸發程式ID。 萬用字元「*」將接住所有觸發器。
+* 此 **消費者** 引數對應到呼叫執行個體或應用程式的名稱。
+* 此 `pipelined`處理也支援「別名」主題。
+* 您應該永遠重新啟動 `pipelined`進行變更後的程式。
 
 ## 步驟3：可選設定 {#step-optional}
 
-您可以根據負載要求變更某些內部引數，但請務必在投入生產之前先測試這些引數。
+您可以根據負載需求變更某些內部引數，但請務必在將引數套用至生產環境之前先測試這些引數。
 
-您可在下方找到選用引數清單：
+選擇性引數清單為：
 
 | 選項 | 說明 |
 |:-:|:-:|
@@ -146,11 +136,11 @@ ht-degree: 1%
 
 ### 管線處理序自動啟動 {#pipelined-process-autostart}
 
-管線處理需要自動啟動。
+此 `pipelined` 程式需要自動啟動。
 
-為此，請將設定檔案中的&lt;pipelined >元素設定為autostart=&quot;true&quot;：
+為此，請設定 `<`已管線`>` 元素（在設定檔案中為autostart=&quot;true&quot;）：
 
-```
+```sql
  <pipelined autoStart="true" ... "/>
 ```
 
@@ -158,7 +148,7 @@ ht-degree: 1%
 
 必須重新啟動變更才會生效：
 
-```
+```sql
 nlserver restart pipelined@instance
 ```
 
@@ -166,6 +156,6 @@ nlserver restart pipelined@instance
 
 要驗證用於布建的管道設定，請執行以下步驟：
 
-* 確定 [!DNL pipelined] 處理序正在執行。
-* 檢查pipelined.log以取得管道連線記錄。
+* 確定 `pipelined` 處理序正在執行。
+* 檢查 `pipelined.log` 用於管道連線記錄檔。
 * 驗證連線以及是否收到Ping。 託管客戶可使用使用者端主控台中的監視。

@@ -7,9 +7,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '258'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->這項功能無法立即在產品中使用。若要進行此實作，您首先需要透過Adobe支援開啟票證。 然後，您便能依照此中詳述的步驟進行 [頁面](../../integrations/using/configuring-pipeline.md#prerequisites).
+>這項功能無法立即在產品中使用。針對此實作，請與您的Adobe代表/客戶服務合作。 然後，您便能依照此中詳述的步驟進行 [頁面](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] 在使用者進行動作後的短時間內執行行銷動作。 一般回應時間不到一小時。
 
