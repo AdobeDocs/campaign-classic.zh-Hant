@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,10 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 ## 在升級過程中是否可以存取執行個體？
 
 沒有。伺服器會在升級期間關閉，以確保產品升級時資料完整性會保留。 完成後，它會重新啟動，並且所有服務都會繼續。
+
+## 在升級程式期間，我仍可以使用Campaign執行個體嗎？
+
+沒有。Adobe建議在維護期間停用行銷活動中的任何操作，以避免遺失或遺失任何資料。 在升級期間，您不得建立或部署任何行銷活動、查詢、工作流程或傳遞。
 
 ## 在升級過程中是否仍會繼續從訊息中心傳送電子郵件？
 
