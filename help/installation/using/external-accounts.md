@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: ef6a864c76c04ac94383c1c2ad74095dd5ef63a1
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1757'
 ht-degree: 8%
 
 ---
@@ -208,13 +208,14 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存�
 
   用來連線至SFTP伺服器的密碼。
 
-若要在Windows上新增SSH金鑰：
+<!--To add SSH keys on Windows:
 
-1. 建立 **首頁** 環境變數，其值設定為安裝目錄。
+1. Create the **HOME** environment variable with value set as the installation directory.
 
-2. 將您的私密金鑰新增至 `/$HOME/.ssh/id_rsa` 資料夾。
+2. Add your private key to the `/$HOME/.ssh/id_rsa` folder.
 
-3. 重新啟動Adobe Campaign服務。
+3. Restart the Adobe Campaign services.
+-->
 
 ### 外部資料庫(FDA) {#external-database-external-account}
 
