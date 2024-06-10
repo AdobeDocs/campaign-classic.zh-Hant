@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
+source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 >
 > Adobe已棄用服務帳戶(JWT)認證，Campaign與Adobe解決方案和應用程式的整合現在必須依賴OAuth伺服器對伺服器認證。 </br>
 >
-> * 如果您已實作與Campaign的傳入整合，您必須移轉技術帳戶，如本檔案所述。 現有的服務帳戶(JWT)憑證將持續運作到2025年1月27日。 此外，從2024年6月3日開始，已無法在開發人員控制檯中建立新的服務帳戶(JWT)憑證。 在此日期之後，無法建立新的服務帳戶(JWT)憑證或將其新增到專案。 </br>
+> * 如果您已實作與Campaign的傳入整合，您必須移轉您的技術帳戶，如中所述 [本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). 現有的服務帳戶(JWT)憑證將持續運作到2025年1月27日。 此外，從2024年6月3日開始，已無法在開發人員控制檯中建立新的服務帳戶(JWT)憑證。 在此日期之後，無法建立新的服務帳戶(JWT)憑證或將其新增到專案。 </br>
 >
 > * 如果您已實作輸出整合(例如Campaign-Analytics整合或Experience Cloud Triggers整合)，則在2025年1月27日前都能正常運作。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。 自2024年6月3日起，已經無法在開發人員控制檯中建立新的服務帳戶(JWT)憑證，因此您無法在此日期之後依賴JWT建立新的傳出整合
 
