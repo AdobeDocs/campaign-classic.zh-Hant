@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
+source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 86%
@@ -127,7 +127,7 @@ ht-degree: 86%
 
 ## 關係資料庫管理系統 (RDBMS){#RDBMSservers}
 
-身為內部部署/混合部署客戶，您必須安裝並設定下列其中一個資料庫。 [了解更多](../../installation/using/database.md)。
+身為內部部署/混合部署客戶，您必須安裝並設定下列其中一個資料庫。 [了解更多](../../installation/using/creating-and-configuring-the-database.md)。
 
 
 <table>
