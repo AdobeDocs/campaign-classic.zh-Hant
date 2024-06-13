@@ -5,9 +5,9 @@ description: 定義網路表單屬性
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -83,6 +83,32 @@ ht-degree: 1%
 範例演算會顯示在屬性視窗的下方。 此 **[!UICONTROL Edit link]** 圖示可讓您檢視所選主題的設定。
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
+
+## 表單中的標誌 {#logo-in-the-form}
+
+您可以透過自己的標誌來變更表單中使用的標誌。
+
+在 **[!UICONTROL Rendering]** 索引標籤在裡面 **[!UICONTROL Properties]** ，按一下範本的玻璃圖示：
+
+![](assets/logo_glass.png)
+
+在新視窗中，按一下 **[!UICONTROL Page layout]** 連結：
+
+![](assets/logo_pagelayout.png)
+
+您可以在這裡變更標誌影像的路徑：
+
+![](assets/logo_path.png)
+
+可用的影像位於 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. 您可以在這裡新增標誌。
+
+這些影像會放置在執行個體的後端目錄中 *datakit\nms\fra\img\activities* 或 *datakit\nms\eng\img\activities* （eng或fra，視執行個體的語言而定）。
+
+若要在此目錄（以及影像中）中使用新影像，請聯絡Adobe支援以變更後端目錄。
+
+對於內部部署執行個體，您可以自行將影像新增至Datakit。
+
+已上傳的影像不需要從Campaign使用者端可見。 正確的路徑足以當作新標誌使用。
 
 ## 表單中的文字 {#texts-in-the-form}
 
