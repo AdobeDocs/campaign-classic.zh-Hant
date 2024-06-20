@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: ht
-source-wordcount: '3764'
-ht-degree: 100%
+source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
+workflow-type: tm+mt
+source-wordcount: '3746'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 100%
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
 
 ## 2024
+
+### 2024 年 6 月 {#june-2024}
+
+已新增附註，以指定重新啟動工作流程時如何清除執行個體變數。 [閱讀更多](../../workflow/using/starting-a-workflow.md)
 
 ### 2024 年 4 月 {#apr-2024}
 
@@ -78,7 +82,7 @@ JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉
 
 ## 2022 年 7 月 {#july-2022}
 
-在新技術文件中詳細描述了新傳遞能力伺服器的轉變。 [深入了解](../../technotes/using/deliverability-server.md)
+<!--Transition to the new deliverability server is detailed in a new technote. [Read more](../../technotes/using/deliverability-server.md)-->
 
 **7.3.1 版本隨附的文件更新**
 
@@ -151,11 +155,9 @@ CentOs 8 已到期，現已被 Adobe Campaign Classic 淘汰。 [閱讀全文](d
 
 更新 CRM 連接器部署的移轉流程記錄檔詳細資料。 [閱讀全文](../../migration/using/testing-the-migration.md#verification-process)
 
-新增關於 IMS 權限的需求，以實施 Adobe Campaign-Adobe Analytics 整合。 [閱讀全文](../../platform/using/adobe-analytics-provisioning.md)
+新增關於 IMS 權限的需求，以實施 Adobe Campaign-Adobe Analytics 整合。 [閱讀全文](../../integrations/using/adobe-analytics-provisioning.md)
 
 更新 Adobe Analytics 資料連接器服務終止日期 (2022 年 3 月 1 日至 2022 年 8 月 17 日)。 [閱讀全文](deprecated-features.md)
-
-新增 Adobe Experience Platform 行動 SDK 文件的連結，以了解如何在 Adobe Launch 中設定 Campaign 擴充功能。 [閱讀全文](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 新增了關於如何使用 JavaScript 計算值、交換資料，以及使用 SOAP 呼叫執行特定作業的章節。[閱讀全文](../../workflow/using/javascript-scripts-and-templates.md)
 
@@ -346,7 +348,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
  [!DNL Gold Standard] 發行版本的發行說明和相容性對照表已於專屬頁面顯示。
 [顯示全文](../../rn/using/gold-standard.md)。
 
-已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器驗證，並將其移動至 Adobe I/O。[閱讀更多資訊](../../integrations/using/configuring-adobe-io.md)
+已變更原本以 oAUTH 驗證設定為基礎而用於存取管道的觸發器驗證，並將其移動至 Adobe I/O。[閱讀更多資訊](../../integrations/using/about-triggers.md#implement)
 
 **其他更新**
 

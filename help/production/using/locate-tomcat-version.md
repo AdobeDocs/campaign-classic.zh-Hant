@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
 # 找到Tomcat版本{#locate-tomcat-version}
-
-
 
 Adobe Campaign使用 **稱為Apache Tomcat的內嵌Web servlet** 在應用程式和任何外部介面（包括使用者端主控台、追蹤的URL連結、SOAP呼叫等）之間處理HTTP/HTTPS請求。 在任何面對外部的Adobe Campaign執行個體中，通常有一個外部網頁伺服器（通常是IIS或Apache）位於此伺服器之前。
 
@@ -31,6 +29,12 @@ Adobe Campaign中使用的Tomcat是自訂的內嵌版本，該版本未使用Tom
 
 Tomcat內嵌版本的新版本或升級版本只會隨Adobe Campaign本身的新組建發行，而不會作為Adobe Campaign組建以外的個別修補程式發行。
 
+>[!AVAILABILITY]
+>
+>
+> 從Campaign v7.4.1開始，Tomcat 10.1是預設版本。
+>
+
 ## 如何找到內嵌Tomcat的版本
 
 若要在Adobe Campaign執行個體中找出內嵌Tomcat的版本，請遵循下列步驟。
@@ -39,7 +43,7 @@ Tomcat內嵌版本的新版本或升級版本只會隨Adobe Campaign本身的新
 >
 >您必須擁有Adobe Campaign伺服器上需要檢查之檔案的存取權。 下述程式只適用於 **內部部署託管模型**.
 
-1. 導覽至 *\tomcat-7\lib* Adobe Campaign安裝資料夾中的子資料夾(例如， *C:\Program Files\ [Installation_folder]* 在Windows中，或 */usr/local/neolane/nl6* （在Linux中）。
+1. 導覽至 *\tomcat-11\lib* Adobe Campaign安裝資料夾中的子資料夾(例如， *C:\Program Files\ [Installation_folder]* 在Windows中，或 */usr/local/neolane/nl6* （在Linux中）。
 
 1. 複製檔案 *catalina.jar* 至外部的暫存資料夾（例如您的案頭），並將副檔名從.jar重新命名為.zip。
 
@@ -49,11 +53,11 @@ Tomcat內嵌版本的新版本或升級版本只會隨Adobe Campaign本身的新
 
 1. 完成後，如果檔案位於伺服器電腦上，請刪除您建立的暫存檔案。
 
-例如， *ServerInfo.屬性* Adobe Campaign的檔案將包含下列資訊，指出Tomcat v8.5.X：
+例如， *ServerInfo.屬性* Adobe Campaign的檔案包含下列資訊，指出Tomcat v11.X：
 
-*`server.info=Apache Tomcat/8.5.X`*
+*`server.info=Apache Tomcat/11.X`*
 
-*`server.number=8.5.X.Y`*
+*`server.number=A.B.X.Y`*
 
 *`server.built=MM DD YYY HH:MM:SS`*
 

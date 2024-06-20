@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 1%
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -64,16 +64,16 @@ ht-degree: 1%
 | **存取使用者端資料** | 選取（未來的）表格或檢視許可權 | SELECT許可權 | 選取或選取任何表格許可權 | 選取許可權 | SELECT許可權 | SELECT許可權 |
 | **存取中繼資料** | 選取INFORMATION_SCHEMA綱要許可權 | SELECT許可權 | 使用DESCRIBE陳述式不需要許可權 | 檢視定義許可權 | 使用「\d table」命令不需要許可權 | SELECT許可權 |
 
-|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **正在連線到遠端資料庫** | CONNECT授權 | CONNECT許可權 | 建立繫結至遠端主機的使用者（具有ALL PRIVILEGES） | 使用CONNECT陳述式不需要許可權 | 不需要許可權 | CONNECT許可權 |
-| **建立表格** | CREATETAB授權 | CREATE TABLE或TABLE關鍵字 | CREATE許可權 | RESOURCE授權和CREATE許可權 | TABLE許可權 | CREATE許可權 |
-| **建立索引** | INDEX許可權 | CREATE INDEX or INDEX關鍵字 | INDEX許可權 | RESOURCE授權和CREATE許可權 | INDEX許可權 | CREATE許可權 |
-| **建立函式** | IMPLICIT_SCHEMA授權或CREATEIN許可權 | CREATE FUNCTION或FUNCTION關鍵字 | CREATE ROUTINE許可權 | Java函式的RESOURCE授權或DBA授權 | FUNCTION許可權 | CREATE函式許可權 |
-| **建立程式** | IMPLICIT_SCHEMA授權或CREATEIN許可權 | CREATE PROCEDURE or PROCEDURE關鍵字 | CREATE ROUTINE許可權 | 資源授權 | PROCEDURE許可權 | CREATE函式許可權 |
-| **移除物件（表格、索引、函式、程式）** | DROPIN許可權、CONTROL許可權或擁有物件 | DROP &lt; object >或物件相關關鍵字 | DROP許可權 | 擁有物件或DBA許可權 | DROP許可權 | 擁有物件 |
-| **監視執行** | 說明授權 | 使用EXPLAIN陳述式不需要任何許可權 | SELECT許可權 | 只有系統管理員可以執行sp_showplan | 使用EXPLAIN陳述式不需要任何許可權 | 使用EXPLAIN陳述式不需要任何許可權 |
-| **寫入資料** | INSERT和UPDATE許可權或DATACCESS授權 | INSERT和UPDATE許可權 | INSERT和UPDATE許可權 | 插入和更新許可權 | INSERT和UPDATE許可權 | INSERT和UPDATE許可權 |
-| **將資料載入表格** | LOAD授權 | SELECT和INSERT許可權分別使用COPY TO和COPY FROM陳述式 | FILE許可權 | 成為資料表的擁有者或ALTER許可權。 視於 — gl選項而定，只有在使用者具有DBA許可權時，才能執行LOAD TABLE | SELECT和INSERT許可權 | SELECT和INSERT許可權 |
-| **存取使用者端資料** | INSERT/UPDATE許可權或DATACCESS授權 | SELECT許可權 | SELECT許可權 | 選取許可權 | SELECT許可權 | SELECT許可權 |
-| **存取中繼資料** | 使用DESCRIBE陳述式不需要授權 | SHOW許可權 | SELECT許可權 | 使用DESCRIBE陳述式不需要許可權 | 使用「\d table」命令不需要許可權 | 使用SHOW命令不需要任何許可權 |
+|   | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| **正在連線到遠端資料庫** | CONNECT許可權 | 建立繫結至遠端主機的使用者（具有ALL PRIVILEGES） | 使用CONNECT陳述式不需要許可權 | 不需要許可權 | CONNECT許可權 |
+| **建立表格** | CREATE TABLE或TABLE關鍵字 | CREATE許可權 | RESOURCE授權和CREATE許可權 | TABLE許可權 | CREATE許可權 |
+| **建立索引** | CREATE INDEX or INDEX關鍵字 | INDEX許可權 | RESOURCE授權和CREATE許可權 | INDEX許可權 | CREATE許可權 |
+| **建立函式** | CREATE FUNCTION或FUNCTION關鍵字 | CREATE ROUTINE許可權 | Java函式的RESOURCE授權或DBA授權 | FUNCTION許可權 | CREATE函式許可權 |
+| **建立程式** | CREATE PROCEDURE or PROCEDURE關鍵字 | CREATE ROUTINE許可權 | 資源授權 | PROCEDURE許可權 | CREATE函式許可權 |
+| **移除物件（表格、索引、函式、程式）** | DROP &lt; object >或物件相關關鍵字 | DROP許可權 | 擁有物件或DBA許可權 | DROP許可權 | 擁有物件 |
+| **監視執行** | 使用EXPLAIN陳述式不需要任何許可權 | SELECT許可權 | 只有系統管理員可以執行sp_showplan | 使用EXPLAIN陳述式不需要任何許可權 | 使用EXPLAIN陳述式不需要任何許可權 |
+| **寫入資料** | INSERT和UPDATE許可權 | INSERT和UPDATE許可權 | 插入和更新許可權 | INSERT和UPDATE許可權 | INSERT和UPDATE許可權 |
+| **將資料載入表格** | SELECT和INSERT許可權分別使用COPY TO和COPY FROM陳述式 | FILE許可權 | 成為資料表的擁有者或ALTER許可權。 視於 — gl選項而定，只有在使用者具有DBA許可權時，才能執行LOAD TABLE | SELECT和INSERT許可權 | SELECT和INSERT許可權 |
+| **存取使用者端資料** | SELECT許可權 | 選取許可權 | SELECT許可權 | SELECT許可權 |
+| **存取中繼資料** | SHOW許可權 | SELECT許可權 | 使用DESCRIBE陳述式不需要許可權 | 使用「\d table」命令不需要許可權 | 使用SHOW命令不需要任何許可權 |

@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1551'
-ht-degree: 100%
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
+source-wordcount: '1637'
+ht-degree: 93%
 
 ---
 
@@ -43,16 +43,21 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>功能</strong></td>
    <td><strong>詳細資料</strong></td>
   </tr>
+  <tr>
+ <td>Campaign (Neolane)舊版SDK</td>
+ <td><p>適用於行動應用程式的Campaign (Neolane) SDK現已棄用。 請改為在資料收集UI中設定Adobe Experience Platform擴充功能，以使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK有助於在行動應用程式中強化Adobe的Experience Cloud解決方案和服務。 SDK的設定可透過資料收集UI進行管理，以進行靈活設定和可擴充的規則型整合。 瞭解如何在中設定行動應用程式頻道 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8檔案</a>.</p>
+<p>目標移除日期：2024 年底 </p>
+</td>
+</tr>
 <tr>
  <td>使用 Facebook 進行社交行銷</td>
- <td>使用 Facebook 的社交行銷現已棄用。您可以使用 X (原 Twitter) 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂通道。
- <p></p>
+ <td><p>使用 Facebook 的社交行銷現已棄用。您可以使用 X (原 Twitter) 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂通道。</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS Connector</td>
- <td>ACS Connector (Prime 產品) 現已棄用。 您可以使用 Campaign 匯出/匯入功能，在兩個產品中擷取和插入資料。<p></p>
+ <td><p>ACS Connector (Prime 產品) 現已棄用。 您可以使用 Campaign 匯出/匯入功能，在兩個產品中擷取和插入資料。</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
@@ -72,7 +77,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
       <tr>
   <td>Adobe Analytics 資料連接器<br></td>
    <td><p>Adobe Analytics 資料連接器已於 2022 年 8 月 17 日移除。 已在 Campaign 21.1.3 版中棄用。</p>
-   <p>如果您使用此連接器，則需要據此調整實施。<a href="../../platform/using/gs-aa.md">瞭解更多</a></p>
+   <p>如果您使用此連接器，則需要據此調整實施。<a href="../../integrations/using/gs-aa.md">瞭解更多</a></p>
   </td>
  </tr>
     <tr>
@@ -83,8 +88,8 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
  </tr>
   <tr>
   <td>OAuth 驗證（OAuth 和 JWT）<br></td>
-  <td><p> 觸發最初基於 oAUTH 驗證設定的整合身份驗證存取管道現在已變更並移到 Adobe I/O。此驗證模式已在 Campaign 20.3 版本棄用。<p>
-  <p>如果您使用觸發器整合，請在<a href="../../integrations/using/configuring-adobe-io.md">此頁面</a>瞭解如何調整實施。</p> 
+  <td><p> 已變更原本以OAuth驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至Adobe I/O。Campaign 20.3版本已棄用此驗證模式。<p>
+  <p>如果您使用觸發器整合，請在<a href="../../integrations/using/about-triggers.md#implement">此頁面</a>瞭解如何調整實施。</p> 
   <p>如需與 OAuth 驗證折舊相關的資訊，請參閱第 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md"> 頁</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>

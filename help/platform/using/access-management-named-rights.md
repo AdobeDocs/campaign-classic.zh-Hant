@@ -7,16 +7,18 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 6%
+source-wordcount: '520'
+ht-degree: 5%
 
 ---
 
 # 使用已命名的權限來設定權限{#named-rights}
 
-
+>[!NOTE]
+>
+>此頁面僅適用於使用原生驗證連線至Campaign的運運算元。 如需Adobe IMS驗證的相關資訊，請參閱 [本檔案](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).
 
 依預設，Adobe Campaign會建議一組已命名的許可權，讓您定義指派給運運算元和運運算元群組的授權。 這些許可權可從以下位置編輯： **[!UICONTROL Administration > Access management > Named rights]** 樹狀結構的節點。
 

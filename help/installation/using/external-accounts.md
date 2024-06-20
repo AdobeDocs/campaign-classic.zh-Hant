@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ef6a864c76c04ac94383c1c2ad74095dd5ef63a1
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 8%
@@ -292,7 +292,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存�
 
 ![](assets/ext_account_10.png)
 
-對於此外部帳戶，必須擴充追蹤URL的計算公式，且必須核准兩個解決方案之間的連線。 如需關於此項目的詳細資訊，請參閱此[頁面](../../platform/using/gs-aa.md)。
+對於此外部帳戶，必須擴充追蹤URL的計算公式，且必須核准兩個解決方案之間的連線。 如需關於此項目的詳細資訊，請參閱此[頁面](../../integrations/using/gs-aa.md)。
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 

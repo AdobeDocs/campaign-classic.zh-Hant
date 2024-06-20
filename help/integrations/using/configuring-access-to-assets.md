@@ -8,18 +8,16 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 2%
 
 ---
 
-# 設定資產存取權{#configuring-access-to-assets}
+# 設定資產存取權 {#configuring-access-to-assets}
 
-
-
-本節詳細說明在Adobe Campaign中使用與Assets核心服務或Adobe Experience Manager Assets (AEM Assets)資料庫整合功能的必要設定步驟。
+本節詳細說明在Adobe Campaign中使用與Assets或Adobe Experience Manager Assets (AEM Assets)資料庫整合功能的必要設定步驟。
 
 >[!CAUTION]
 >

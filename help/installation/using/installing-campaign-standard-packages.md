@@ -5,9 +5,9 @@ description: 瞭解如何安裝Campaign內建套件
 feature: Installation, Application Settings
 badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 3%
 
 ---
@@ -192,7 +192,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 網站分析聯結器<br /> </td> 
-   <td> 允許Adobe Campaign和Adobe Analytics透過Web Analytics聯結器套件互動。 與異動訊息（訊息中心封裝）不相容。 <a href="../../platform/using/gs-aa.md">瞭解更多</a><br /> </td> 
+   <td> 允許Adobe Campaign和Adobe Analytics透過Web Analytics聯結器套件互動。 與異動訊息（訊息中心封裝）不相容。 <a href="../../integrations/using/gs-aa.md">瞭解更多</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 
@@ -202,7 +202,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> Adobe Experience Cloud共用受眾整合<br /> </td> 
-   <td> 可讓您與Adobe Experience Cloud解決方案和核心服務交換及共用對象/區段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">瞭解更多</a> <br /> </td> 
+   <td> 可讓您與Adobe Experience Cloud解決方案和應用程式交換和共用對象/區段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">瞭解更多</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 

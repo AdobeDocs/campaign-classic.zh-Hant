@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Campaign中列出支援的資料庫 [相容性矩陣](../../rn/using/compatibili
 視選取的資料庫引擎而定，伺服器識別資訊可能會有所不同。
 
 * 針對 **oracle** 引擎，填入 **TNS名稱** 已為應用程式伺服器定義。
-* 針對 **PostgreSQL** 或 **DB2** 引擎，您必須指定在應用程式伺服器上定義的DNS名稱（或IP位址），才能存取資料庫伺服器。
+* 針對 **PostgreSQL** 引擎，您必須指定在應用程式伺服器上定義的DNS名稱（或IP位址），才能存取資料庫伺服器。
 * 針對 **Microsoft SQL Server** 引擎，您必須定義：在應用程式伺服器上定義的DNS名稱（或IP位址），以存取資料庫伺服器： **DNS** 或 **DNS`\<instance>`** （例項模式），
 
   >[!CAUTION]
@@ -78,7 +78,6 @@ Campaign中列出支援的資料庫 [相容性矩陣](../../rn/using/compatibili
 * **系統** 對於Oracle資料庫，
 * **sa** 對於Microsoft SQL Server資料庫，
 * **postgres** 對於PostgreSQL資料庫，
-* **db2inst1** DB2資料庫。
 
 ### 步驟3 — 資料庫的連線與特性 {#step-3---connection-and-characteristics-of-the-database}
 
@@ -89,11 +88,6 @@ Campaign中列出支援的資料庫 [相容性矩陣](../../rn/using/compatibili
 您需要定義下列設定：
 
 * 指定要建立的資料庫名稱。
-
-  >[!NOTE]
-  >
-  >對於DB2資料庫，資料庫名稱不能超過8個字元。
-
 * 輸入連結至此資料庫的帳戶密碼。
 * 指示資料庫是否必須採用Unicode。
 
@@ -182,7 +176,7 @@ Campaign中列出支援的資料庫 [相容性矩陣](../../rn/using/compatibili
 視選取的資料庫引擎而定，伺服器識別資訊可能會有所不同。
 
 * 針對 **oracle** 引擎，填入 **TNS名稱** 已為應用程式伺服器定義。
-* 針對 **PostgreSQL** 或 **DB2** 引擎，您必須指定在應用程式伺服器上定義的DNS名稱（或IP位址），才能存取資料庫伺服器。
+* 針對 **PostgreSQL** 引擎，您必須指定在應用程式伺服器上定義的DNS名稱（或IP位址），才能存取資料庫伺服器。
 * 針對 **Microsoft SQL Server** 引擎，您必須定義：
 
    1. 應用程式伺服器上定義的DNS名稱（或IP位址），用來存取資料庫伺服器，

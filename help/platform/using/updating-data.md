@@ -7,16 +7,18 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 34%
+source-wordcount: '717'
+ht-degree: 33%
 
 ---
 
 # 更新資料{#updating-data}
 
-
+>[!NOTE]
+>
+>此頁面僅適用於使用原生驗證連線至Campaign的運運算元。
 
 可以手動或自動更新連結至收件者用戶檔案的資料。
 

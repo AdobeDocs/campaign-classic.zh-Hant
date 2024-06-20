@@ -2,34 +2,32 @@
 product: campaign
 title: 正在提交要求給Adobe
 description: 正在提交要求給Adobe
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '130'
 ht-degree: 2%
 
 ---
 
 # 正在提交要求給Adobe{#submitting-request-to-adobe}
 
-
-
 >[!NOTE]
 >
 >身為v7使用者，若要繼續進行，請確定您的系統上已啟用Adobe Identity Management系統(IMS)。 [了解更多](../../integrations/using/about-adobe-id.md)。
 
-為您的組織啟用IMS後，您可以請求布建People核心服務/Audience Manager與Campaign的整合。 若要這麼做，請傳送電子郵件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，並提供下列資訊：
+為您的組織啟用AdobeIdentity Management服務(IMS)後，您可以請求布建以下專案： [Experience Cloud對象](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} 與Campaign整合。 若要這麼做，請傳送電子郵件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，並提供下列資訊：
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>請求型別</strong><br /> </td> 
-   <td> 設定AAM/People核心服務 — Campaign整合 </td> 
+   <td> 設定對象 — Campaign整合 </td> 
   </tr> 
   <tr> 
    <td> <strong>組織名稱</strong><br /> </td> 
@@ -43,10 +41,10 @@ ht-degree: 2%
    <td> <strong>環境</strong><br /> </td> 
    <td> 範例：生產 </td> 
   </tr> 
-  <tr> 
-   <td> <strong>AAM或People服務</strong><br /> </td> 
-   <td> 範例： Adobe Audience Manager。 請務必說明您是否擁有Audience Manager授權。</td> 
-  </tr> 
+  <!--tr> 
+   <td> <strong>AAM or People Service</strong><br /> </td> 
+   <td> Example: Adobe Audience Manager. Make sure to mention whether or not you own Audience Manager license.</td> 
+  </tr--> 
   <tr> 
    <td> <strong>宣告ID或訪客ID</strong><br /> </td> 
    <td> 範例：宣告ID </td> 

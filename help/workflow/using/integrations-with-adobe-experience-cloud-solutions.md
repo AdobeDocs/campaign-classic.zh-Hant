@@ -2,9 +2,9 @@
 product: campaign
 title: 與Adobe Experience Cloud解決方案工作流程的整合
 description: 深入瞭解與Adobe Experience Cloud解決方案工作流程的整合
-feature: Workflows, Audiences, People Core Service Integration
+feature: Workflows, Audiences
 topic-tags: technical-workflows
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 8%

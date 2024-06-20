@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 2%
@@ -91,7 +91,7 @@ ht-degree: 2%
 
    管理員使用者還可以檢查 **wfserver@`<instance>`** 模組會使用以下命令在您的主要應用程式伺服器上啟動。
 
-   ```
+   ```sql
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    [...]

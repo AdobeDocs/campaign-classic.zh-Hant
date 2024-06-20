@@ -1,23 +1,21 @@
 ---
 product: campaign
 title: 在Linux安裝Campaign的必要條件
-description: 在Linux安裝Campaign的必要條件
+description: 在 Linux 中安裝Campaign的先決條件
 feature: Installation, Instance Settings
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="僅限內部部署/混合部署" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
 # 在Linux上安裝Campaign的必要條件{#prerequisites-of-campaign-installation-in-linux}
-
-
 
 ## 軟體先決條件 {#software-prerequisites}
 
@@ -27,18 +25,15 @@ ht-degree: 0%
 
 提醒您，下列元件必須安裝並正確設定：
 
-* Apache，請參考 [相容性矩陣](../../rn/using/compatibility-matrix.md)，
-* Java JDK 和 OpenJDK，請參閱 [Java 開發工具包 - JDK](../../installation/using/application-server.md#java-development-kit---jdk)，
-* 庫，請參閱 [庫](#libraries)，
+* Apache，請參閱 [相容性矩陣](../../rn/using/compatibility-matrix.md)，
+* Java JDK和OpenJDK，請參閱 [Java開發套件 — JDK](../../installation/using/application-server.md#jdk)，
+* 程式庫，請參閱 [資料庫](#libraries)，
 * 資料庫存取層，請參閱 [資料庫存取層](#database-access-layers)，
 * LibreOffice，請參閱 [安裝LibreOffice for Debian](#installing-libreoffice-for-debian) 和 [安裝LibreOffice for CentOS](#installing-libreoffice-for-centos)，
 * 字型，請參閱 [MTA統計資料的字型](#fonts-for-mta-statistics) 和 [日文執行個體的字型](#fonts-for-japanese-instances).
 
->[!NOTE]
->
->若要在CentOS 7和Debian 8平台上安裝低於或等於8709的組建版本，必須啟用apache access_compat模組。
 
-### 資料庫 {#libraries}
+### 圖書館 {#libraries}
 
 要在 Linux 中安裝 Adobe Campaign，請確保您具有所需的資料庫。
 
@@ -46,31 +41,13 @@ ht-degree: 0%
 
   例如，要檢查這一點，您可以使用 **uname -a | grep xen** 命令。
 
-  如果命令未傳回任何內容（空白行），則表示設定正確。
+  如果命令未傳回空白行，則表示設定正確。
 
 * 您必須有OpenSSL版本 **1.0.2** 或更高。
 
-  對於RHEL 7/8發行版本，需要1.0版本的OpenSSL。
+  對於RHEL發行版本，需要OpenSSL 1.0版。
 
 * 若要使用Adobe Campaign，您必須擁有 **利比庫** 程式庫已安裝。
-
-  下列版本的 **利比庫** 支援（32位元或64位元）：
-
-   * RHEL 7/8、CentOS 7：libicu50
-   * Debian 8： libicu52
-   * Debian 9： libicu57
-
-  若要使用Adobe Campaign，您必須安裝libc-ares程式庫。 在RHEL/CentOS上，執行下列命令：
-
-  ```
-  yum install c-ares
-  ```
-
-  在Debian上：
-
-  ```
-  aptitude install libc-ares2
-  ```
 
 ### SELinux {#selinux}
 
@@ -94,59 +71,44 @@ echo 0 >/selinux/enforce
 
 * 編輯檔案 **/etc/selinux/config**
 
-* 修改 SELINUX 行，如下所示：
+* 修改SELINUX行，如下所示：
 
 ```
 SELINUX=disabled
 ```
 
-### MTA 統計數據字型 {#fonts-for-mta-statistics}
+### MTA統計資料的字型 {#fonts-for-mta-statistics}
 
-為了正確顯示有關 MTA 統計資訊的報告 （nms/fra/jsp/stat.jsp），請添加字體。
-
-在 Debian 中，添加命令：
-
-```
-aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
-```
-
-在Redhat中，使用以下命令：
-
-* 對於CentOS/RHEL 7：
-
-  ```
-  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-  ```
-
-* 對於RHEL 8：
-
-  ```
-  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-  ```
-
-### 日文執行個體的字型 {#fonts-for-japanese-instances}
-
-日文例項需要特定字元的字型，才能將報表匯出為PDF格式。
+為了正確顯示MTA統計資料(nms/fra/jsp/stat.jsp)的報表，請新增字型。
 
 在Debian中新增命令：
 
 ```
-aptitude install fonts-ipafont
+apt install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 ```
 
-在紅帽中，添加命令：
+對RHEL使用下列命令：
 
-* 對於 RHEL 7：
+```
+dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+```
 
-  ```
-  yum install ipa-gothic-fonts ipa-mincho-fonts
-  ```
+### 日文執行個體的字型 {#fonts-for-japanese-instances}
 
-* 對於RHEL 8：
+日文實例必須字型特定字元才能將報表匯出為 PDF 格式。
 
-  ```
-  dnf install vlgothic-fonts
-  ```
+在 Debian 中，添加命令：
+
+```
+apt install fonts-ipafont
+```
+
+對於 RHEL，請添加以下命令：
+
+```
+dnf install epel-release # if required
+dnf install vlgothic-fonts
+```
 
 ### 安裝LibreOffice for Debian {#installing-libreoffice-for-debian}
 
@@ -158,7 +120,7 @@ aptitude install fonts-ipafont
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. 安裝下列字型（可選用，但強烈建議用於日文執行個體）：
+1. 安裝以下字體（可選字體，但強烈建議用於日文實例）：
 
    ```
    apt-get install fonts-ipafont
@@ -174,7 +136,7 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ## 資料庫訪問層 {#database-access-layers}
 
-您所使用的資料庫引擎存取層必須安裝在伺服器上，並可透過Adobe Campaign帳戶存取。 版本和安裝模式可能會因使用的資料庫引擎而有所不同。
+您正在使用的資料庫引擎的訪問層必須安裝在您的伺服器上，並且可以通過Adobe Campaign 帳戶進行訪問。 版本和安裝模式可能會因使用的資料庫引擎而有所不同。
 
 支援的試行方案版本詳載於 [相容性矩陣](../../rn/using/compatibility-matrix.md).
 
@@ -182,41 +144,37 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign支援7.2版的PostgreSQL使用者端程式庫的所有版本： (**libpq.so.5**， **libpq.so.4**， **libpq.so.3.2** 和 **libpq.so.3.1**)。
+Adobe Campaign支援9.6版的所有版本PostgreSQL使用者端程式庫： **libpq.so.5**.
 
 搭配Adobe Campaign使用PostgreSQL也需要安裝對應的 **pgcrypto** 程式庫。
 
 ### Oracle {#oracle}
 
-擷取64位元Debian的程式庫版本，即： **libclntsh.so**， **libclntsh.so.11.1** 和 **libclntsh.so.10.1**.
+檢索 64 位 Debian 的 資料庫 版本，即：libclntsh.so、libclntsh.so.19.1 **、libclntsh.so.18.1**、**libclntsh.so.12.1**、**libclntsh.so.11.1** 或 **libclntsh.so.10.1。**********
 
-您可以從「Oracle技術網路」取得Linux RPM套件。
+您可以從 Oracle 技術網路獲取 Linux RPM 軟體包。
 
 >[!NOTE]
 >
->如果您已安裝Oracle使用者端，但全域環境（例如： /etc/profile）未正確設定，您可以將遺漏的資訊新增至 **nl6/customer.sh** 指令碼如需詳細資訊，請參閱 [環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>如果已安裝 Oracle 用戶端，但全域環境（對於執行個體：/etc/設定檔）未正確配置，則可以將缺少的信息添加到 nl6/客戶.sh 腳本中 **有關詳細信息，請參閱[環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables)。**
 
-**疑難排解和最佳作法**
+**疑難解答和最佳做法**
 
-在 Oracle 用戶端或伺服器更新、版本更改或首次安裝執行個體時可能會出現問題。
+在Oracle使用者端或伺服器更新、版本變更或首次安裝執行個體時，可能會出現問題。
 
-如果您在用戶端控制臺上注意到日誌、工作流程上次處理、下一次處理等日誌中存在意外的時間滯後（一個或多個小時），則 Oracle 用戶端的資料庫和 Oracle 伺服器之間可能存在問題。 若要避免這類問題
+如果您在使用者端主控台注意到記錄、工作流程上次處理、下次處理等作業中有非預期的時間延遲（一小時以上），則Oracle使用者端的程式庫和Oracle伺服器之間可能會發生問題。 若要避免這類問題
 
 1. 請務必使用 **完整使用者端**.
 
-   在使用Oracle即時使用者端版本時，已識別出各種問題。 此外，無法在即時使用者端上變更時區檔案。
+   在使用 Oracle Instant Client 版本時發現了各種問題。 此外，無法在即時用戶端上更改時區檔。
 
-1. 確定 **使用者端版本** 和 **資料庫伺服器版本** 是 **相同**.
+1. 確保&#x200B;**用戶端版本**&#x200B;和&#x200B;**資料庫伺服器版本****相同**。
 
-   眾所周知，儘管 Oracle 的兼容性矩陣和推薦使用戶端和伺服器版本保持一致，但混合版本會導致問題。
+   儘管Oracle有相容性矩陣，並且建議調整使用者端和伺服器版本，但混合使用版本已知會導致問題。
 
-   還要檢查ORACLE_HOME值以確保它指向預期的用戶端版本（以防計算機上安裝了多個版本）。
+   同時請檢查ORACLE_HOME值，確定它指向預期的使用者端版本（如果電腦上安裝了多個版本）。
 
-1. 確保客戶端和伺服器使用相同的 **時區檔**。
-
-### DB2 {#db2}
-
-支援的資料庫版本為 **libdb2.so**。
+1. 請確定使用者端和伺服器使用相同的 **時區檔案**.
 
 ## 實施步驟 {#implementation-steps}
 

@@ -5,10 +5,10 @@ description: 瞭解如何設定Android行動應用程式
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 11%
+source-wordcount: '837'
+ht-degree: 10%
 
 ---
 
@@ -90,7 +90,7 @@ Android提供兩種聯結器：
 
    ![](assets/nmac_android.png)
 
-1. 確定相同 **[!UICONTROL Integration key]** 是透過SDK在Adobe Campaign和應用程式程式碼中定義的。 如需詳細資訊，請參閱[本章節](integrating-campaign-sdk-into-the-mobile-application.md)。
+1. 確定相同 **[!UICONTROL Integration key]** 是透過SDK在Adobe Campaign和應用程式程式碼中定義的。 <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -156,4 +156,4 @@ Android提供兩種聯結器：
 
    >[!CAUTION]
    >
-   >請確定 **[!UICONTROL Subscription parameters]** 標籤與行動應用程式程式碼中的標籤相同。 請參閱[本節](integrating-campaign-sdk-into-the-mobile-application.md)。
+   >請確定 **[!UICONTROL Subscription parameters]** 標籤與行動應用程式程式碼中的標籤相同。 <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

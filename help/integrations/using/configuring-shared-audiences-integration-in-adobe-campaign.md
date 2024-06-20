@@ -2,21 +2,20 @@
 product: campaign
 title: 在Adobe Campaign中設定共用受眾整合
 description: 瞭解如何設定共用受眾整合
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
 
 # 在Adobe Campaign中設定共用受眾整合{#configuring-shared-audiences-integration-in-adobe-campaign}
-
 
 
 提交此請求後，Adobe將會繼續為您布建整合，並連絡您以提供您必須完成設定的詳細資訊和資訊：
@@ -88,7 +87,7 @@ ht-degree: 0%
 
 ## 步驟3：設定Campaign追蹤伺服器 {#step-3--configure-campaign-tracking-server}
 
-若要設定與People核心服務或Audience Manager的整合，我們還需要設定Campaign追蹤伺服器。
+若要設定與Audience Manager的整合，我們還需要設定Campaign追蹤伺服器。
 
 若要讓共用對象能與訪客ID搭配運作，追蹤伺服器網域應該是已點按URL的子網域或主要網站。
 

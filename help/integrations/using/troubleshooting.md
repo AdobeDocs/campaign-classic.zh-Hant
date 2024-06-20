@@ -7,10 +7,12 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
+hide: true
+hidefromtoc: true
 exl-id: 61bb184e-affa-430c-8571-56e911cd5a3d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '136'
 ht-degree: 3%
 
 ---
@@ -32,4 +34,4 @@ ht-degree: 3%
 
   在 **[!UICONTROL Administration > Platform > AMC Data sources]**，檢查AMC資料來源是否設定正確。
 
-透過People核心服務共用對象或匯入對象時，可能會遺失部分資料。 只有其ID （「訪客ID」或「宣告ID」）能夠與設定檔維度調解的記錄才會轉移。 Adobe Campaign無法辨識的People核心服務區段之ID不會匯入。
+透過「Experience Cloud對象」共用對象或匯入對象時，可能會遺失部分資料。 只有其ID （「訪客ID」或「宣告ID」）能夠與設定檔維度調解的記錄才會轉移。 Adobe Campaign無法辨識的區段中的ID不會匯入。

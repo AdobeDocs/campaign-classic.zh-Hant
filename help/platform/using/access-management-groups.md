@@ -7,16 +7,18 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 4e99ec73f99264e91ca427542e29bd42da88a3f9
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
 
 # 建立及管理操作員群組 {#operator-groups}
 
-
+>[!NOTE]
+>
+>這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證的相關資訊，請參閱 [本檔案](https://helpx.adobe.com/tw/enterprise/using/user-groups.html).
 
 運運算元群組是透過 **[!UICONTROL Administration > Access management > Operator groups]** 樹狀結構中的節點。
 

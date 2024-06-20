@@ -7,9 +7,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -31,15 +31,13 @@ ht-degree: 1%
 * 開發人員對貴組織的存取權
 * Adobe Analytics中的有效觸發器設定
 
-## 驗證和組態檔 {#authentication-configuration}
-
-由於管道託管於Adobe Experience Cloud，因此需要驗證。 它使用一對公開和私密金鑰。 此程式與使用者/密碼具有相同的功能，但較安全。 透過Adobe Developer Project為Marketing Cloud支援驗證。
+由於管道託管於Adobe Experience Cloud，因此需要驗證。 它會透過Adobe Developer專案使用支援的驗證。
 
 ## 步驟1：建立/更新您的Adobe Developer專案 {#creating-adobe-io-project}
 
-針對託管客戶，請與您的Adobe代表/客戶服務合作，為貴組織啟用觸發器整合的Adobe Developer帳戶權杖。
+您必須使用用於觸發器整合的Adobe Developer帳戶權杖來啟用組織。
 
-若為內部部署/混合部署客戶，請參閱 [設定Adobe Experience Cloud Triggers的Adobe I/O](../../integrations/using/configuring-adobe-io.md) 頁面。 請注意，您需要選取 **[!UICONTROL Adobe Analytics]** 新增API至Adobe Developer認證時。
+瞭解如何在中建立您的Adobe技術帳戶 [此頁面](../../integrations/using/oauth-technical-account.md). 請注意，您需要選取 **[!UICONTROL Adobe Analytics]** 新增API至Adobe Developer認證時。
 
 ## 步驟2：設定管道選項 {#configuring-nmspipeline}
 
@@ -51,7 +49,7 @@ ht-degree: 1%
 
 1. 選取 **[!UICONTROL NmsPipeline_Config]** 選項。
 
-1. 在 **[!UICONTROL Value (long text)]** 欄位貼上下列JSON程式碼，這會指定兩個觸發程式。 您必須確定移除註解。
+1. 在 **[!UICONTROL Value (long text)]** 欄位貼上下列JSON程式碼，這會指定兩個觸發程式。 請確定移除註解。
 
    ```json
    {
@@ -111,7 +109,7 @@ ht-degree: 1%
 * 此 `pipelined`處理也支援「別名」主題。
 * 您應該永遠重新啟動 `pipelined`進行變更後的程式。
 
-## 步驟3：可選設定 {#step-optional}
+## （選用）步驟3：其他設定 {#step-optional}
 
 您可以根據負載需求變更某些內部引數，但請務必在將引數套用至生產環境之前先測試這些引數。
 

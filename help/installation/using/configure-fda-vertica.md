@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: 設定Vertica analytics的存取權
-description: 瞭解如何設定FDA中Vertica analytics的存取權
+title: 設定存取權至 [!DNL Vertica Analytics]
+description: 瞭解如何設定存取許可權至 [!DNL Vertica Analytics] 在FDA
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: fcc42e84817277ad46218165b5acef370747c1ca
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
-# 設定Vertica analytics的存取權 {#configure-fda-vertica}
+# 設定存取權至 [!DNL Vertica Analytics] {#configure-fda-vertica}
 
 
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ![](assets/snowflake_3.png)
 
-## CentOS上的Vertica analytics {#vertica-centos}
+## [!DNL Vertica Analytics] 在CentOS上 {#vertica-centos}
 
 進行設定 [!DNL Vertica Analytics] 在CentOS上，請遵循下列步驟：
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
 
-## Windows上的Vertica analytics {#vertica-windows}
+## [!DNL Vertica Analytics] 在Windows上 {#vertica-windows}
 
 1. 下載 [適用於Windows的ODBC驅動程式](https://www.vertica.com/download/vertica/client-drivers/). 若要安裝適用於Windows的驅動程式，您必須啟用.NET Framework 3.5，否則安裝精靈會嘗試自動啟用並下載驅動程式。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertical-external).
 
-## Debian上的Vertica analytics {#vertica-debian}
+## [!DNL Vertica Analytics] 在Debian上 {#vertica-debian}
 
 1. 下載的ODBC驅動程式 [!DNL Vertica Analytics]. [按一下這裡](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 開始下載。
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
 
-## vertica analytics外部帳戶 {#vertica-external}
+## [!DNL Vertica Analytics] 外部帳戶 {#vertica-external}
 
 您需要建立 [!DNL Vertica Analytics] 將您的Campaign執行個體連線到您的外部帳戶 [!DNL Vertica Analytics] 外部資料庫。
 

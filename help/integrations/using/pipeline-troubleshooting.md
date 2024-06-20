@@ -7,7 +7,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-此錯誤訊息表示驗證是使用舊版Omniture基底OAuth進行設定。 請參閱 [設定Adobe Experience Cloud Triggers的Adobe I/O](../../integrations/using/configuring-adobe-io.md) 說明檔案升級您的驗證。
+此錯誤訊息表示驗證是使用舊版Omniture基底OAuth進行設定。 請參閱 [設定Adobe Experience Cloud Triggers的Adobe I/O](../../integrations/using/about-triggers.md#implement) 說明檔案升級您的驗證。
 
 **未擷取任何觸發程式**
 

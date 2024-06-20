@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1259'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,11 @@ ht-degree: 2%
 >移轉後，請注意下一節不再適用。  瞭解如何在中使用Adobe IMS設定許可權 [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}.
 
 
-## 開始使用Campaign運運算元  {#about-operators}
+## 開始使用Campaign運運算元 {#about-operators}
+
+>[!NOTE]
+>
+>這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證的相關資訊，請參閱 [本檔案](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 運運算元是有許可權登入及執行動作的Adobe Campaign使用者。
 

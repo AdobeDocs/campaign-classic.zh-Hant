@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 7e1c3b256cf43232e49d9daa0bf44d1e114b565b
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 1%
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 必要的資料庫存取層必須安裝在伺服器上，並可從Adobe Campaign帳戶存取。
 
-## Java開發套件 — JDK {#java-development-kit---jdk}
+## Java開發套件 — JDK {#jdk}
 
 Java Development Kit （簡稱JDK）是軟體開發套件。 它是啟用Java應用程式和Java Applet開發的基本元件。
 
-動態網頁產生器使用JSP 1.2技術。 為此，應用程式中包含Tomcat引擎（來自Apache）。 它需要一個Java開發套件(JDK)，安裝在安裝Adobe Campaign應用程式的所有伺服器上。
+動態網頁產生器使用JSP技術。 為此，應用程式中包含Tomcat引擎（來自Apache）。 它需要一個Java開發套件(JDK)，安裝在安裝Adobe Campaign應用程式的所有伺服器上。
 
 您必須先在要執行Adobe Campaign應用程式伺服器的電腦上安裝JDK (**nlserver web** 程式)，因為它合併了servlet容器Apache Tomcat，用於產生動態網頁（報表、網路表單等）。
 
@@ -31,6 +31,13 @@ Java Development Kit （簡稱JDK）是軟體開發套件。 它是啟用Java應
 
 Campaign中會詳細說明支援的版本 [相容性矩陣](../../rn/using/compatibility-matrix.md).
 
+
+>[!AVAILABILITY]
+>
+>* 從7.4.1版開始，Campaign至少需要Java JDK 11。 如果您的Campaign伺服器安裝在Windows環境中，則必須產生JRE，因為預設不再提供JRE。
+>
+>* 從v7.4.1開始，Tomcat 10.1是預設版本。
+>
 
 ### 建議
 
@@ -41,8 +48,6 @@ Campaign中會詳細說明支援的版本 [相容性矩陣](../../rn/using/compa
 * 安裝JDK時，不需要與網頁瀏覽器整合。
 
 * 在只執行傳遞代理程式的機器上(**nlserver mta** process)或工作流程伺服器(**nlserver wfserver** 程式)，則不需要安裝JDK。
-
-* 若要保留平台作業效能並確保與已安裝版本的相容性，您必須在Windows和Linux中停用自動JDK更新功能。
 
 * 升級Java版本時，必須先解除安裝舊版。 安裝在同一台電腦上的兩個Java版本都可能會造成衝突。
 
@@ -65,19 +70,16 @@ Java Development Kit是平台專屬的：每個作業系統都需要個別的安
 對於Debian，請使用下列指令：
 
 ```sql
-aptitude install openjdk-8-jdk
+apt install openjdk-11-jdk-headless
 ```
 
 對於RHEL，請使用下列指令：
 
 ```sql
-yum install java-1.8.0-openjdk
+dnf install java-11-openjdk-headless
 ```
 
 
-## OpenSSL {#openssl}
-
-在Linux中，必須安裝OpenSSL。 Adobe Campaign支援OpenSSL 1.0.2版或更新版本。
 
 ## 匯出報告 {#exporting-reports}
 

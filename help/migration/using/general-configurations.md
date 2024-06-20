@@ -9,9 +9,9 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: afbec7b3df810c8c1818a4fb93c5f7e30f7a753b
 workflow-type: tm+mt
-source-wordcount: '2600'
+source-wordcount: '2558'
 ht-degree: 0%
 
 ---
@@ -475,19 +475,21 @@ allowSQLInjection="false"
 1. 移至您原本要解決的衝突。 按一下 **[!UICONTROL Actions]** 圖示並選取 **[!UICONTROL Declare as resolved]**.
 1. 儲存變更：衝突現已解決。
 
+<!--
 ## Tomcat {#tomcat}
 
-Adobe Campaign v7中的整合Tomcat伺服器已變更版本。 因此，它的安裝資料夾(tomcat-6)也改變了(tomcat 7)。 升級後，請確定路徑確實連結到更新後的資料夾(在 **[!UICONTROL serverConf.xml]** 檔案)：
+The integrated Tomcat server in Adobe Campaign v7 has changed version. Its installation folder (tomcat-6) has therefore also changed (tomcat 7). After the postupgrade, make sure to check that the paths do link to the updated folder (in the **[!UICONTROL serverConf.xml]** file):
 
 ```
-$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
-$(XTK_INSTALL_DIR)/tomcat-8/bin/tomcat-juli.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-util.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-api.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/servlet-api.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/bin/bootstrap.jar 
+$(XTK_INSTALL_DIR)/tomcat-X/bin/tomcat-juli.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-util.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/servlet-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/jsp-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 ```
+-->
 
 ## 互動 {#interaction}
 

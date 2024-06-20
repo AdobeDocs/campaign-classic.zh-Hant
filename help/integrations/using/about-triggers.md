@@ -7,9 +7,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '398'
 ht-degree: 7%
 
 ---
@@ -37,4 +37,26 @@ ht-degree: 7%
 
 此 [!DNL pipelined] 程式使用驗證服務登入Experience Cloud並傳送私密金鑰。 驗證服務會傳回權杖。 Token用於擷取事件時進行驗證。
 
-如需驗證的詳細資訊，請參閱此 [頁面](../../integrations/using/configuring-adobe-io.md).
+## 先決條件 {#adobe-io-prerequisites}
+
+開始此實作前，請檢查您是否擁有：
+
+* 有效的 **組織識別碼**：組織ID是Adobe Experience Cloud中的唯一識別碼，用於VisitorID服務和IMS單一登入(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant)
+* a **開發人員存取權** 至您的組織。 組織的系統管理員需要遵循 **將開發人員新增至單一產品設定檔** 詳細程式 [在此頁面中](https://helpx.adobe.com/enterprise/using/manage-developers.html) 為提供開發人員存取權 `Analytics - {tenantID}` 與觸發器相關聯之Adobe Analytics產品的產品設定檔。
+
+## 實施步驟 {#implement}
+
+若要實施Campaign及Experience Cloud觸發程式，請遵循下列步驟：
+
+1. 建立Oauth專案。 [了解更多](oauth-technical-account.md#oauth-service)
+
+1. 在Adobe Campaign中新增您的OAuth專案認證。 [了解更多](oauth-technical-account.md#add-credentials)
+
+1. 將驗證型別更新至設定檔案中的開發人員控制檯專案 **config-&lt; instance-name >.xml** 如下所示：
+
+   ```
+   <pipelined ... authType="imsJwtToken"  ... />
+   ```
+
+   然後，執行 `config -reload` 以及重新啟動 [!DNL pipelined] 以納入變更。
+

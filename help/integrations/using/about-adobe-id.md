@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ffab91fc9fa7e60973fdda930239f5836671a341
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 16%
+source-wordcount: '180'
+ht-degree: 15%
 
 ---
 
@@ -27,7 +27,10 @@ Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台，而非�
 
 >[!IMPORTANT]
 >
-> 請注意，在Campaign v8中，不允許連線使用者/密碼（亦稱為原生驗證）。 **Adobe建議在Campaign v7.3.5中執行此移轉，以便能夠順利移轉至Campaign v8。**
+> 請注意，在Campaign v8中，不允許連線使用者/密碼（亦稱為原生驗證）。 **Adobe建議從Campaign v7.3.5開始執行此移轉，以便能夠順利移轉至Campaign v8。**
+>
+>瞭解如何在中移轉至Adobe IMS [本節](../../technotes/using/ac-ims.md).
+>
 
 
 <!--

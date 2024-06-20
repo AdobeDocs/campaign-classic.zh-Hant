@@ -6,10 +6,10 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 9%
+source-wordcount: '1024'
+ht-degree: 8%
 
 ---
 
@@ -115,6 +115,26 @@ Adobe Campaign介面中看不到此工作流程。 其目的僅在於成為快�
 預設值為5秒。
 
 如果您將此選項設為0，個人化階段將沒有時間限制。
+
+## 個人化標籤 {#personalization-tab}
+
+在「傳送屬性」中，您有「個人化」標籤。
+
+您可以按一下 **「編輯收件者設定檔載入查詢」**. 您可以使用直接在運算式中擷取的資料，以擷取您真正需要的資料。 這些資料將新增至內容。
+
+![](assets/persotab-edit.png){zoomable="yes"}
+
+如果您要新增的資料不在目標維度中，您可以按一下 **「在指令碼的執行內容中新增物件」**.
+
+![](assets/persotab_addobjects.png){zoomable="yes"}
+
+您可以在此處選取所需的物件結構描述，然後您可以在Javascript程式碼中使用這些資料，這些資料將在傳送準備期間執行。
+
+![](assets/persotab_addobjects_articles.png){zoomable="yes"}
+
+透過新增物件結構，您可以選取要新增到內容的欄位：
+
+![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 
 ## 教學課程影片 {#personalization-fields-video}
 

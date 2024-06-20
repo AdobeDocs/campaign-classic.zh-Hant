@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: fa089574b028193b6da346482d6ea42b1d19f0aa
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 1%
@@ -69,13 +69,13 @@ Campaign Classic組態檔儲存在 **conf** Adobe Campaign安裝資料夾的資�
 
 使用以下命令：
 
-```
+```sql
 nlserver config -internalpassword
 ```
 
 接著會顯示下列資訊。 輸入並確認密碼：
 
-```
+```sql
 17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 Enter the current password.
 Password:

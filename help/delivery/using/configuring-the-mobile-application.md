@@ -5,9 +5,9 @@ description: 瞭解如何設定iOS的行動應用程式
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '588'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 3%
 
 1. 按一下 **[!UICONTROL Next]** 以開始設定開發應用程式。
 
-1. 確定相同 **[!UICONTROL Integration key]** 是透過SDK在Adobe Campaign和應用程式程式碼中定義的。 有關詳細資訊，請參閱 [此頁面](integrating-campaign-sdk-into-the-mobile-application.md). 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
+1. 確定相同 **[!UICONTROL Integration key]** 是透過SDK在Adobe Campaign和應用程式程式碼中定義的。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
 
    >[!NOTE]
    >

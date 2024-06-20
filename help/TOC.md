@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
-workflow-type: ht
-source-wordcount: '2548'
-ht-degree: 100%
+source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+workflow-type: tm+mt
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 100%
    + [開始升級](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + 先前版本 {#previous-releases}
+      + [2024年](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
       + [2022](rn/using/release-2022.md)
       + [2021 年](rn/using/release-2021.md)
@@ -36,6 +37,7 @@ ht-degree: 100%
          + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
          + [使用 Campaign 探索工具](platform/using/adobe-campaign-explorer.md)
          + [瀏覽及自訂清單](platform/using/adobe-campaign-ui-lists.md)
+      + [Campaign聯結器](platform/using/about-connectors.md)
       + 常見問題集 {#faq}
          + [最常見的問題](platform/using/common-questions.md)
          + [全域概念](platform/using/faq-key-concepts.md)
@@ -100,17 +102,11 @@ ht-degree: 100%
    + 資料套件和分項清單 {#administration-basics}
       + [資料套件](platform/using/working-with-data-packages.md)
       + [分項清單](platform/using/managing-enumerations.md)
-   + 連接器 {#connectors}
-      + [關於連接器](platform/using/about-connectors.md)
-      + CRM 連接器{#crm-connectors}
-         + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
-         + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
-         + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
-         + [與 CRM 同步資料](platform/using/crm-data-sync.md)
-      + Adobe Analytics 連接器{#analytics-connector}
-         + [開始使用 Adobe Analytics 連接器](platform/using/gs-aa.md)
-         + [Adobe Analytics 連接器佈建](platform/using/adobe-analytics-provisioning.md)
-         + [如何移轉至 Adobe Analytics 連接器](technotes/using/aa-connector-migration.md)
+   + CRM聯結器 {#connectors}
+      + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
+      + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
+      + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
+      + [與 CRM 同步資料](platform/using/crm-data-sync.md)
    + [說明與支援選項](support.md)
 + 建立及傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
@@ -355,7 +351,21 @@ ht-degree: 100%
    + [使用實例：建立轉介表單](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 整合 Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
-   + [關於 Campaign 整合](integrations/using/about-campaign-integrations.md)
+   + [開始使用 Campaign 整合](integrations/using/about-campaign-integrations.md)
+   + [建立您的Adobe技術帳戶](integrations/using/oauth-technical-account.md)
+   + Adobe Experience Cloud 觸發因子 {#experience-triggers}
+      + [使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [設定管線](integrations/using/configuring-pipeline.md)
+      + [設定自訂實施的事件](integrations/using/events.md)
+      + [管線監視](integrations/using/pipeline-monitoring.md)
+      + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
+   + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
+      + [使用來源和目的地](integrations/using/get-started-sources-destinations.md)
+      + [將 Adobe Experience Platform 對象內嵌至 Campaign](integrations/using/ingest-aep-data.md)
+      + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
+   + Adobe Analytics 連接器{#analytics-connector}
+      + [開始使用 Adobe Analytics 連接器](integrations/using/gs-aa.md)
+      + [Adobe Analytics 連接器佈建](integrations/using/adobe-analytics-provisioning.md)
    + 對象分享 {#audience-sharing}
       + [透過  [!DNL Adobe Experience Cloud] 分享對象](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向 Adobe 提交請求](integrations/using/submitting-request-to-adobe.md)
@@ -380,17 +390,6 @@ ht-degree: 100%
       + [同步對象](integrations/using/synchronizing-audiences.md)
       + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
       + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-   + Adobe Experience Cloud 觸發因子 {#experience-triggers}
-      + [使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [設定管線](integrations/using/configuring-pipeline.md)
-      + [設定 Adobe I/O，用於 [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
-      + [設定自訂實施的事件](integrations/using/events.md)
-      + [管線監視](integrations/using/pipeline-monitoring.md)
-      + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
-      + [使用來源和目的地](integrations/using/get-started-sources-destinations.md)
-      + [將 Adobe Experience Platform 對象內嵌至 Campaign](integrations/using/ingest-aep-data.md)
-      + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流程自動化{#automating-with-workflows}
    + 開始使用工作流程 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
@@ -824,10 +823,12 @@ ht-degree: 100%
    + [反轉程序](migration/using/about-rollback.md)
 + 技術備註{#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
-   + [中間來源基礎結構的傳入簡訊工作流程活動](technotes/using/inbound-SMS.md)
+   + [中間來源基礎結構的傳入簡訊工作流程活動](technotes/using/inbound-sms-wf.md)
    + 升級至 IMS{#ims}
+      + [轉換至Adobe IMS](technotes/using/ac-ims.md)
       + [將使用者移轉至 IMS](technotes/using/migrate-users-to-ims.md)
       + [將技術操作員移轉至 Developer Console](technotes/using/ims-migration.md)
+      + [IMS移轉後的介面影響](technotes/using/impact-ims-migration.md)
    + 升級與相容性{#technote-migration}
       + [技術說明](technotes/using/technote.md)
       + [啟用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)

@@ -7,15 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2026'
 ht-degree: 0%
 
 ---
 
 # 建置升級常見問答集 {#build-upgrade-faq}
-
 
 
 Adobe Campaign 會定期更新。如果您熟悉我們發佈的內容 [發行說明](../../rn/using/rn-overview.md)，您可能已經瞭解每年平均會發行2/3個包含新功能、改進和修正的次要版本。 此外，我們定期發行只累積修正的組建版本。 此定期更新的目的是為了讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
@@ -136,7 +135,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 ## 在升級期間，我的追蹤連結是否仍然有效？
 
-在升級期間，追蹤已傳送的電子郵件連結將無法運作，因為所有伺服器都已停止。 升級完成且伺服器重新啟動後，它們就會再次運作。
+從Campaign Classicv7.3.5開始，在升級期間追蹤已傳送的電子郵件連結仍然有效。
 
 ## 在建置升級過程中我是否需要隨時待命？
 

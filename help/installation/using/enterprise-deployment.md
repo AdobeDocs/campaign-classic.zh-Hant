@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 3%
@@ -89,7 +89,7 @@ ht-degree: 3%
 
 1. 安裝Adobe Campaign伺服器後，請使用命令啟動應用程式伺服器（網頁） **nlserver web -tomcat** （Web模組可讓您以獨立Web伺服器模式在連線埠8080上接聽，啟動Tomcat），並確保Tomcat正確啟動：
 
-   ```
+   ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    12:08:18 >   Starting Web server module (pid=28505, tid=-1225184768)...
    12:08:18 >   Tomcat started
@@ -136,7 +136,7 @@ ht-degree: 3%
 
 1. 編輯 **config-demo.xml** 檔案(透過先前的指令建立，並位於 **config-default.xml** 檔案)，檢查 **mta** （傳遞）， **wfserver** （工作流程）， **inMail** （反彈郵件）和 **stat** （統計）處理作業已啟用，然後設定 **app** 統計伺服器：
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -156,7 +156,7 @@ ht-degree: 3%
 
 1. 編輯 **serverConf.xml** 檔案並指定傳遞網域，然後指定MTA模組用於回應MX型別DNS查詢之DNS伺服器的IP （或主機）位址。
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -175,7 +175,7 @@ ht-degree: 3%
    >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver**
 
 
-   ```
+   ```sql
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
    stat@demo (5988) - 1.5 MB
@@ -214,7 +214,7 @@ ht-degree: 3%
 
 1. 編輯 **config-demo.xml** 檔案(透過先前的指令建立，並位於 **config-default.xml** 檔案)，檢查 **mta** （傳遞）， **wfserver** （工作流程）， **inMail** （反彈郵件）和 **stat** （統計）處理作業已啟用，然後設定 **app** 統計伺服器：
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -234,7 +234,7 @@ ht-degree: 3%
 
 1. 編輯 **serverConf.xml** 檔案並填入MTA模組的DNS設定：
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -266,7 +266,7 @@ ht-degree: 3%
 1. 複製 **config-demo.xml** 和 **serverConf.xml** 在安裝期間建立的檔案。 在 **config-demo.xml** 檔案，啟動 **trackinglogd** 處理並停用 **mta**， **inmail**， **wfserver** 和 **stat** 程式。
 1. 編輯 **serverConf.xml** 檔案，並在重新導向的引數中填入多餘的追蹤伺服器：
 
-   ```
+   ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
@@ -275,13 +275,13 @@ ht-degree: 3%
 
    瀏覽器應顯示以下訊息（視負載平衡器重新導向的URL而定）：
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
    或
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 

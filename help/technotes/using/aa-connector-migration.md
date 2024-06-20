@@ -5,7 +5,9 @@ description: Campaign - Analytics聯結器常見問題集
 feature: Technote, Analytics Integration
 badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於v7內部部署和混合部署"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+hide: true
+hidefromtoc: true
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -14,13 +16,11 @@ ht-degree: 2%
 
 # 如何將現有的Genesis整合移轉至Adobe Analytics聯結器 {#acc-aa-faq}
 
-
-
 自Campaign Classic v7 21.1.3發行版本開始，已棄用Adobe Analytics資料聯結器。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
 在2021年8月1日，Adobe Campaign Classic已從舊版Data Connectors UI中移除，但在2022年8月17日之前，現有的Campaign整合將會持續收集資料並傳遞至Adobe Analytics。 在此日期之後，整合將會停止收集及傳遞資料給Adobe Analytics。
 
-您 **必須實作** Adobe Exchange上的新Adobe Analytics Connector整合已取代舊版Data Connectors整合。 若要瞭解有關Adobe Analytics聯結器的詳細資訊，請參閱 [此頁面](../../platform/using/gs-aa.md).
+您 **必須實作** Adobe Exchange上的全新Adobe Analytics Connector整合，取代舊版的Data Connectors整合。 若要瞭解有關Adobe Analytics聯結器的詳細資訊，請參閱 [此頁面](../../integrations/using/gs-aa.md).
 
 若對這些變更有任何疑問，請閱讀 [常見問題集](#faq-aa). 如需詳細資訊，請連絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -46,7 +46,7 @@ Campaign Classic v7與Adobe Analytics之間的新整合現已推出。 主要變
 
 如果您使用現有的Adobe Analytics Data Connector (先前稱為Genesis整合)，而且整合是在低於Campaign 21.1.3的組建版本上實作，則您會受到影響。
 
-瞭解如何檢查您的版本 [在本節中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+瞭解如何檢查您的版本 [在本節中](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## 如何更新？
 
@@ -55,7 +55,7 @@ Campaign Classic v7與Adobe Analytics之間的新整合現已推出。 主要變
 作為託管客戶，Adobe將與您合作，將您的執行個體升級至較新版本。 之後，您將能夠使用 [Adobe Analytics聯結器](../../platform/using/gs-aa.md).
 
 身為內部部署/混合部署客戶，您需要升級至其中一個較新版本，才能受益於新的整合。
-升級所有執行個體後，您將能夠 [實施新的整合](../../platform/using/adobe-analytics-provisioning.md) 至Adobe Analytics聯結器，並確保順暢轉換。
+升級所有執行個體後，您將能夠 [實施新的整合](../../integrations/using/adobe-analytics-provisioning.md) 至Adobe Analytics聯結器，並確保順暢轉換。
 
 ## 常見問答集{#faq-aa}
 

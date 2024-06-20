@@ -3,7 +3,7 @@ product: campaign
 title: 網站分析
 description: 進一步瞭解網站分析套件
 feature: Workflows, Analytics Integration
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 
 
-以下詳述的工作流程會隨 **網站分析聯結器** 模組（預設）。 如需此模組的詳細資訊，請參閱此 [區段](../../platform/using/gs-aa.md).
+以下詳述的工作流程會隨 **網站分析聯結器** 模組（預設）。 如需此模組的詳細資訊，請參閱此 [區段](../../integrations/using/gs-aa.md).
 
 <table> 
  <tbody> 

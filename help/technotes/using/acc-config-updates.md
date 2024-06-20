@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -123,17 +123,17 @@ Adobe身分服務(IMS)將停止支援舊的Internet Explorer版本，從 **2021�
 
 **如何更新？**
 
-執行個體升級至較新版本後，所有客戶都必須遵循 [程式移至新的驗證模式](../../integrations/using/configuring-adobe-io.md). 這需要您產生新的Adobe I/O代號，並在實施中使用它。  
+執行個體升級至較新版本後，所有客戶都必須遵循 [程式移至新的驗證模式](../../integrations/using/about-triggers.md#implement). 這需要您產生新的Adobe I/O代號，並在實施中使用它。  
 
 此外，對於混合環境，客戶需要確保在中間來源執行個體上設定管道。 [了解更多](../../integrations/using/configuring-pipeline.md)。
 
-[瞭解如何移轉至Adobe I/O](../../integrations/using/configuring-adobe-io.md).
+[瞭解如何移轉至Adobe I/O](../../integrations/using/about-triggers.md#implement).
 
 ## APNs更新 {#acc-apns-updates}
 
 ### 以HTTP/2為基礎的APNs提供者API
 
-從 **2021年3月31日**，Apple推播通知服務(APN)不再支援舊版二進位通訊協定。 [顯示全文](https://developer.apple.com/news/?id=c88acm2b)。
+從 **2021年3月31日**，Apple推播通知服務(APN)不再支援舊版二進位通訊協定。 [閱讀全文](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您有受到影響嗎？**
 

@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '445'
 ht-degree: 7%
 
 ---
@@ -69,9 +69,6 @@ ht-degree: 7%
 
 [閱讀全文](../../installation/using/network-database.md)
 
->[!CAUTION]
->
->自2021年7月14日起，任何不支援TLS 1.2通訊協定的使用者端系統將會失去所有Adobe產品和服務的存取權。 在此日期之前，請確定所有使用者和使用者端系統都符合TLS 1.2規範。 [了解更多](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## 伺服器設定
 
