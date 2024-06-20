@@ -4,10 +4,10 @@ title: 開始工作流程
 description: 瞭解如何啟動工作流程，並探索工作流程動作工具列和滑鼠右鍵選單
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,6 +64,16 @@ ht-degree: 1%
   此動作會停止，然後重新啟動工作流程。 在大多數情況下，它可以讓您更快速地重新啟動。 當停止需要一定的時間時，自動重新啟動也很實用：這是因為當工作流程停止時，「停止」命令無法使用。
 
   此 **[!UICONTROL Start / Pause / Stop / Restart]** 您也可以透過工具列中的執行圖示執行動作。 如需詳細資訊，請參閱本[區段](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)。
+
+  請注意 **重新啟動** 動作不會清除與比較的工作流程例項變數 **執行**， **停止**、和 **開始** 動作（執行個體變數在「開始」動作時清除）。 重新啟動工作流程時，執行個體變數仍可與保留值搭配使用。 若要清除這些專案，您可以：
+   * 執行 **停止** 和 **開始** 動作。
+   * 在工作流程執行結束時，新增以下javascript程式碼：
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 
