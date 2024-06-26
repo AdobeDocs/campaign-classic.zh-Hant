@@ -4,23 +4,24 @@ title: 技術檔案 — 在您的行銷活動環境中啟用Microsoft Edge Chrom
 description: Campaign - Edge Chromium
 feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8734e6ef26a7342042a5242d54854b7d3a5e6244
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 7%
+source-wordcount: '263'
+ht-degree: 6%
 
 ---
 
 # 如何在您的環境中啟用Microsoft Edge Chromium {#edge-conf}
 
-
-
-
 ## 哪些部分有所變更？
 
 Microsoft Internet Explorer 11生命週期結束後，使用者端主控台中控制面板的HTML轉譯引擎使用Edge Chromium，從Campaign Classic v7.3開始。
 
-除了安裝Microsoft Edge Webview 2執行階段，現在是 [任何使用者端主控台安裝均需要](../../installation/using/installing-the-client-console.md#webview)，您必須在執行個體上啟用Microsoft Edge Chromium 。
+除了安裝Microsoft Edge Webview 2執行階段，現在是 [任何使用者端主控台安裝均需要](../../installation/using/installing-the-client-console.md#webview)，您必須在執行個體上啟用Microsoft Edge Chromium。
+
+>[!NOTE]
+>
+>啟用Microsoft Edge Chromium後， `Ctrl+F` (Windows)或 `Command+F` (Mac)開啟瀏覽器搜尋對話方塊的捷徑將不再有效。
 
 ## 您有受到影響嗎？
 
@@ -28,9 +29,9 @@ Microsoft Internet Explorer 11生命週期結束後，使用者端主控台中�
 
 ## 如何更新？
 
-* 作為 **託管** 客戶，Adobe已在您的執行個體上啟用Microsoft Edge Chromium 。 不需要其他動作。
+* 作為 **託管** 客戶，Adobe已在您的執行個體上啟用Microsoft Edge Chromium。 不需要其他動作。
 
-* 作為 **內部部署/混合** 客戶，您必須在執行個體上啟用Microsoft Edge Chromium 。
+* 作為 **內部部署/混合** 客戶，您必須在執行個體上啟用Microsoft Edge Chromium。
 
   升級至Campaign Classic v7.3 （及更新版本）時，新增 `webView2Mode` 屬性可在Campaign伺服器設定檔案中使用 `serverConf.xml`. 必須啟用此屬性。
 

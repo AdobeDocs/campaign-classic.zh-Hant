@@ -4,16 +4,16 @@ description: 瞭解如何將Campaign技術操作者移轉至Adobe Developer主�
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
+source-git-commit: af811b2df325efcaee38a967252b6952e67680d1
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
 
 # Campaign技術運運算元移轉至Adobe Developer主控台 {#migrate-tech-users-to-ims}
 
-為了強化安全性和驗證流程，從Campaign Classic v7.3.5開始，Campaign Classic的驗證流程正在改善。 技術操作員現在應該使用 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe建議在Campaign v7.3.5中執行此移轉，以便能夠順利移轉至Campaign v8。**
+為了強化安全性和驗證流程，從Campaign Classic v7.3.5開始，Campaign Classic的驗證流程正在改善。 技術操作員現在應該使用 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。 深入瞭解中的新伺服器對伺服器驗證程式 [Adobe Developer Console檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe建議在v7中執行此移轉，以便能夠順利移轉至Campaign v8。**
 
 技術運運算元是已針對API整合明確建立的Campaign使用者設定檔。 本文詳細說明透過Adobe Developer主控台將技術運運算元移轉至技術帳戶所需的步驟。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 如果您從Campaign外部的系統對Campaign進行API呼叫，進入您的Campaign行銷執行個體或即時訊息中心執行個體，Adobe強烈建議您透過Adobe Developer主控台將技術運運算元移轉至技術帳戶，如下所述。
 
-此變更適用於Campaign Classicv7.3.5 （及最新） [IMS移轉相容版本](#ims-versions-tech))和 **強制** 以移至Adobe Campaign v8。
+此變更適用於Campaign Classicv7.3.5 （及最新） [IMS移轉相容版本](ac-ims.md#ims-versions))和 **強制** 以移至Adobe Campaign v8。
 
 ## 移轉程式 {#ims-migration-procedure}
 
@@ -31,20 +31,10 @@ ht-degree: 0%
 
 * 在Adobe Developer Console中建立專案
 * 將適當的API指派給新建立的專案
-* 將所需的Campaign產品設定檔授與專案
+* 將所需的Campaign產品設定檔授予專案
 * 更新您的API以使用新建立的技術帳戶認證
 * 從您的Campaign執行個體移除舊版技術運運算元
 
-
-### IMS移轉相容版本 {#ims-versions-tech}
-
-此移轉的先決條件是將您的環境升級至以下產品版本之一：
-
-* Campaign v7.3.5 （建議）
-* Campaign v7.3.3.IMS
-* Campaign v7.3.2.IMS
-
-下列Campaign版本將在 [發行說明](../../rn/using/latest-release.md).
 
 ### 移轉的必要條件{#ims-migration-prerequisites}
 
@@ -52,7 +42,7 @@ ht-degree: 0%
 
 * Campaign託管和Managed Services客戶
 
-  針對傳入訊息中心執行個體的API呼叫，產品設定檔（如以下所述）應在升級至Campaign v7.3.5 （或其他）期間建立 [IMS移轉相容版本](#ims-versions-tech))，或在布建執行個體期間。 請注意，如果您沒有看到產品設定檔，請洽詢您的轉換經理或客戶支援，在開始IMS移轉之前建立產品設定檔。 此產品設定檔名為：
+  針對傳入訊息中心執行個體的API呼叫，產品設定檔（如以下所述）應在升級至Campaign v7.4.1 （或其他）期間建立 [IMS移轉相容版本](ac-ims.md#ims-versions))，或在布建執行個體期間。 請注意，如果您沒有看到產品設定檔，請洽詢您的轉換經理或客戶支援，在開始IMS移轉之前建立產品設定檔。 此產品設定檔名為：
 
   `campaign - <your campaign marketing instance> - messagecenter`
 
@@ -133,7 +123,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 1. Assign all the relevant Product Profiles to the API, for example 'messagecenter', and save your changes.
 1. Browse to the **Credential details** tab of your project, and copy the **Technical Account Email** value.-->
 
-### 步驟5 — 將I/O管理API新增至專案 {#ims-migration-step-5}
+### 步驟5 — 將I/O Management API新增至專案 {#ims-migration-step-5}
 
 
 在專案畫面中，按一下 **[!UICONTROL + Add to Project]** 並選擇 **[!UICONTROL API]** 在熒幕左上角新增I/O Management API至此專案。
@@ -169,6 +159,12 @@ You can now add your Campaign product profile to the project, as detailed below:
 您現在必須更新所有對Adobe Campaign發出呼叫的API整合，才能使用新建立的技術帳戶。
 
 如需API整合步驟的詳細資訊，請參閱下列程式碼範例。
+
+使用AdobeIdentity Management系統(IMS)驗證時，若要產生WSDL檔案，您應新增Authorization： Bearer &lt;ims_technical_token_token> 在postman呼叫中：
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
 
 >[!BEGINTABS]
 
@@ -489,3 +485,12 @@ response = requests.post(url, headers=headers, data=xml_data)
 在您移轉所有協力廠商系統以搭配IMS驗證使用新的技術帳戶後，即可從Campaign使用者端主控台刪除舊的技術運運算元。
 
 若要這麼做，請登入Campaign使用者端主控台，導覽至 **管理>存取管理>操作者** 並找到舊版技術使用者並將其刪除。
+
+
+>[!MORELIKETHIS]
+>
+>* [終端使用者移轉至IMS](migrate-users-to-ims.md)
+>* [IMS移轉後更新Campaign介面](impact-ims-migration.md)
+>* [Adobe Campaign Classic v7最新發行說明](../../rn/using/latest-release.md)
+>* [什麼是AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}
+

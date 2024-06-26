@@ -4,26 +4,26 @@ title: 分割
 description: 進一步瞭解分割工作流程活動
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
 
 # 分割{#split}
 
-
-
 A **Split**-type活動可讓您將目標分割成數個子集。 使用所有接收的結果建構目標：所有先前的活動都必須已完成，才能執行此活動。
 
 此活動不會觸發入站母體的聯合。 如果數個轉變位於一個分割活動中，建議插入 **[!UICONTROL Union]** 活動在它前面。
 
-如需所使用分割活動的範例，請參閱 [使用分割活動建立子集](targeting-data.md#creating-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>無法對具有不同來源的資料表執行分割作業。 為此，您需要新增 **擴充** 之前的活動 **Split** 活動。
 
-有關說明如何使用「分割」活動，以使用篩選條件將目標分割為不同母體的範例，請參閱 [本節](cross-channel-delivery-workflow.md).
-
-以下提供如何在分割活動中使用執行個體變數的範例： [本節](javascript-scripts-and-templates.md).
+* 如需所使用分割活動的範例，請參閱 [使用分割活動建立子集](targeting-data.md#creating-subsets-using-the-split-activity).
+* 有關說明如何使用「分割」活動，以使用篩選條件將目標分割為不同母體的範例，請參閱 [本節](cross-channel-delivery-workflow.md).
+* 以下提供如何在分割活動中使用執行個體變數的範例： [本節](javascript-scripts-and-templates.md).
 
 若要設定此活動，請在「 」中定義子集內容和標籤 **[!UICONTROL Subsets]** 標籤，然後在中選擇目標維度 **[!UICONTROL General]** 標籤。
 
@@ -224,14 +224,14 @@ A **Split**-type活動可讓您將目標分割成數個子集。 使用所有接
 ## 輸入引數 {#input-parameters}
 
 * tableName
-* 綱要
+* 結構描述
 
 每個傳入事件都必須指定由這些引數定義的目標。
 
 ## 輸出引數 {#output-parameters}
 
 * tableName
-* 綱要
+* 結構描述
 * recCount
 
 這組三個值可識別排除所產生的目標。 **[!UICONTROL tableName]** 是記錄目標識別碼的資料表名稱， **[!UICONTROL schema]** 是母體的綱要（通常是nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數。
