@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,8 +44,8 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>詳細資料</strong></td>
   </tr>
   <tr>
- <td>Campaign (Neolane)舊版SDK</td>
- <td><p>適用於行動應用程式的Campaign (Neolane) SDK現已棄用。 請改為在資料收集UI中設定Adobe Experience Platform擴充功能，以使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK有助於在行動應用程式中強化Adobe的Experience Cloud解決方案和服務。 SDK的設定可透過資料收集UI進行管理，以進行靈活設定和可擴充的規則型整合。 瞭解如何在中設定行動應用程式頻道 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8檔案</a>.</p>
+ <td>Campaign (Neolane) 舊版 SDK</td>
+ <td><p>適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。請改為在資料彙集 UI 設定 Adobe Campaign 擴充功能，以便使用 Adobe Experience Platform Mobile SDK。Adobe Experience Platform Mobile SDK 有助於在行動應用程式中，強化 Adobe Experience Cloud 解決方案與服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 若要了解如何設定行動應用程式管道，請參閱 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文件</a>。</p>
 <p>目標移除日期：2025年夏天 </p>
 </td>
 </tr>
@@ -88,7 +88,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
  </tr>
   <tr>
   <td>OAuth 驗證（OAuth 和 JWT）<br></td>
-  <td><p> 已變更原本以OAuth驗證設定為基礎而用於存取管道的觸發器整合驗證，並將其移動至Adobe I/O。Campaign 20.3版本已棄用此驗證模式。<p>
+  <td><p> 原本根據 OAuth 驗證設定以存取管道的的觸發程序整合驗證，現已變更並移至 Adobe I/O。此驗證模式已在 Campaign 20.3 版本棄用。<p>
   <p>如果您使用觸發器整合，請在<a href="../../integrations/using/about-triggers.md#implement">此頁面</a>瞭解如何調整實施。</p> 
   <p>如需與 OAuth 驗證折舊相關的資訊，請參閱第 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md"> 頁</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
