@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 93%
+source-wordcount: '1636'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <tr>
  <td>Campaign (Neolane)舊版SDK</td>
  <td><p>適用於行動應用程式的Campaign (Neolane) SDK現已棄用。 請改為在資料收集UI中設定Adobe Experience Platform擴充功能，以使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK有助於在行動應用程式中強化Adobe的Experience Cloud解決方案和服務。 SDK的設定可透過資料收集UI進行管理，以進行靈活設定和可擴充的規則型整合。 瞭解如何在中設定行動應用程式頻道 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8檔案</a>.</p>
-<p>目標移除日期：2024 年底 </p>
+<p>目標移除日期：2025年夏天 </p>
 </td>
 </tr>
 <tr>
