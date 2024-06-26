@@ -7,21 +7,21 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # 相容性比較表 {#compatibility-matrix}
 
-在其 [最新建置](../../rn/using/latest-release.md)，Adobe Campaign Classic v7與此頁面列出的所有系統和工具相容。 這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從我們的相容性矩陣移除。請確保您使用相容性對照表中列出的任何系統支援版本，以避免出現任何問題。 若要進一步瞭解已棄用的項目，請瀏覽[本頁面](../../rn/using/deprecated-features.md)。
+在其[最新建置版本](../../rn/using/latest-release.md)中，Adobe Campaign Classic v7 與此頁面列出的所有系統和工具相容。這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從相容性矩陣移除。請務必使用相容性矩陣所列出的任一系統支援版本，以避免出現任何問題。若要進一步瞭解已棄用的項目，請瀏覽[本頁面](../../rn/using/deprecated-features.md)。
 
 除非另有提及，否則支援所有次要版本。
 
 >[!CAUTION]
 >
->此矩陣會定期更新，以新增和移除已棄用的新支援系統和工具。
+>此矩陣會定期更新、新增新支援的系統與工具，並會移除已棄用的項目。
 
 ## 作業系統 {#OperatingSystems}
 
@@ -31,7 +31,7 @@ ht-degree: 64%
 <tbody> 
 <td><strong>作業系統</strong></td>
 <td><strong>作業系統版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr> 
 <td>CentOs</td>
 <td>
@@ -68,7 +68,7 @@ ht-degree: 64%
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2022 年</p>
+<p>2022</p>
 <p>2019</p>
 <p>2016</p>
 </td>
@@ -83,7 +83,7 @@ ht-degree: 64%
 
 >[!IMPORTANT]
 >
->如果您使用RHEL，您必須願意停用 [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) 或是讓架構師撰寫自訂SELinux規則，以檢查啟用的SELinux是否不會導致Campaign作業問題。
+>如果您使用 RHEL，您必須願意停用 [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux)，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。
 
 ## 網頁伺服器 {#WebServers}
 
@@ -94,7 +94,7 @@ ht-degree: 64%
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>Windows Server上的10.0</p>
+<p>10.0 於 Windows Server 上</p>
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>工具</strong></td>
 <td><strong>版本</strong></td>
-<td><strong>Minium Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td><p>Java 開發套件 (JDK)</p>
 <p>在<a href="../../installation/using/application-server.md#jdk" target="_blank">本頁</a>中瞭解更多。</p>
@@ -126,9 +126,9 @@ ht-degree: 64%
 <p></p>
 </td>
 <td>
-<p>從7.4.1版開始需要</p>
-<p>直到v7.4.1</p>
-<p>直到v7.4.1</p>
+<p>自 v7.4.1 起需要</p>
+<p>至 v7.4.1 止</p>
+<p>至 v7.4.1 止</p>
 </tr>
 <tr>
 <td><p>Libre Office</p></td>
@@ -159,7 +159,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>資料庫系統</strong></td>
 <td><strong>資料庫版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Oracle</td>
 <td>
@@ -195,7 +195,7 @@ ht-degree: 64%
 <tr>
 <td>Microsoft SQL Server</td>
 <td>
-<p>2022 年</p>
+<p>2022</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
@@ -214,11 +214,11 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->* RDBMS驅動程式必須與RDBMS伺服器版本相符。
+>* RDBMS 驅動程式必須與 RDBMS 伺服器版本相符。
 >
->* 當Campaign伺服器在Linux上執行時，不支援Microsoft SQL Server作為主要資料庫。 [了解更多](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。
+>* 當 Campaign 伺服器在 Linux 上執行時，不支援 Microsoft SQL Server 作為主要資料庫。[了解更多](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。
 >
->* 您也可以將Amazon RDS for PostgreSQL與上述指定版本搭配使用。
+>* 您也可以將 Amazon RDS for PostgreSQL 與上述指定版本搭配使用。
 >
 >* PostgreSQL 是用於託管雲端服務環境的 RDBMS。
 
@@ -254,7 +254,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>資料庫系統</strong></td>
 <td><strong>資料庫版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
@@ -295,7 +295,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>資料庫系統</strong></td>
 <td><strong>資料庫版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
@@ -344,7 +344,7 @@ ht-degree: 64%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2022年（自Campaign v7.4開始）</p>
+<p>2022 (自 Campaign v7.4 起)</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
@@ -391,7 +391,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>系統</strong></td>
 <td><strong>作業系統版本</strong></td>
-<td><strong>Minium Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
@@ -406,7 +406,7 @@ ht-degree: 64%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2022 年</p>
+<p>2022</p>
 <p>2019</p>
 <p>2016</p>
 </td>
@@ -424,11 +424,11 @@ Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最�
 從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下載 Microsoft Edge WebView2。
 
 
-## 行動 SDK {#MobileSDK}
+## Mobile SDK {#MobileSDK}
 
-您可以使用Campaign來 [傳送推播通知](../../delivery/using/about-mobile-app-channel.md)，請在資料收集UI中設定Adobe Campaign擴充功能，透過Adobe Experience Platform Mobile SDK使用此功能。
+您可以在資料收集 UI 設定 Adobe Experience Platform 擴充功能，透過 Adobe Campaign Mobile SDK 使用 Campaign 來[傳送推播通知](../../delivery/using/about-mobile-app-channel.md)。
 
-Campaign SDK為 [已棄用](deprecated-features.md) 從Campaign v7.4開始。為確保現有實作能順利轉換至AEP Mobile SDK，您仍可在下列作業系統上使用<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+自 Campaign v7.4 起，[已棄用](deprecated-features.md) Campaign SDK。為確保現有實施能順利轉變為 AEP Mobile SDK，您仍可在下列作業系統上使用該 SDK<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->。
 
 
 <table>
@@ -438,8 +438,8 @@ Campaign SDK為 [已棄用](deprecated-features.md) 從Campaign v7.4開始。為
 <td>
 <p>7 - 14</p>
 <p>搭配行動 SDK 建置版本 1.1.1。</p>
-<p>從Campaign v7.4開始支援Android 13和14。</p>
-<p>從Campaign v7.3開始支援Android 12。</p>
+<p>自 Campaign v7.4 起，支援 Android 13 與 14。</p>
+<p>自 Campaing v7.3 起，支援 Android 12。</p>
 </td>
 </tr>
 <tr>
@@ -447,8 +447,8 @@ Campaign SDK為 [已棄用](deprecated-features.md) 從Campaign v7.4開始。為
 <td>
 <p>iOS 9 - 17</p>
 <p>搭配行動 SDK 建置版本 1.0.26。</p>
-<p>從Campaign v7.3開始支援Apple iOS 15。 </p>
-<p>從Campaign v7.4開始支援Apple iOS 16和17。</p>
+<p>自 Campaing v7.3 起，支援 Apple iOS 15。 </p>
+<p>自 Campaign v7.4 起，支援 Apple iOS 16 與 17。</p>
 </td>
 </tr>
 </tbody>
@@ -468,7 +468,7 @@ Campaign SDK為 [已棄用](deprecated-features.md) 從Campaign v7.4開始。為
 >[!MORELIKETHIS]
 >
 >* [Campaign Classic 發行說明](../../rn/using/latest-release.md)
->* [Campaign一般架構](../../installation/using/general-architecture.md)
->* [硬體大小調整建議](../../technotes/using/hardware-sizing.md)
+>* [Campaign 一般架構](../../installation/using/general-architecture.md)
+>* [硬體尺寸建議](../../technotes/using/hardware-sizing.md)
 >* [已棄用的功能及系統](../../rn/using/deprecated-features.md)
 >* [建立升級程序](../../production/using/build-upgrade.md)

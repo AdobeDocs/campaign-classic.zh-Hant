@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ _2021年 4 月 14 日_
 >
 > * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。[深入瞭解](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過OAuth驗證使用Experience Cloud觸發器整合，您必須依照說明移至Adobe I/O [在此頁面中](../../integrations/using/about-triggers.md#implement). **2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混型合客戶，請聯絡 Adobe 客戶服務，延長支援時間至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+> * 如果您透過 OAuth 驗證使用 Experience Cloud 觸發程序整合，您必須依照[本頁](../../integrations/using/about-triggers.md#implement)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混型合客戶，請聯絡 Adobe 客戶服務，延長支援時間至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 >
 >在[[!DNL Gold Standard] 本節](../../rn/using/gold-standard.md)了解更多資訊
 
@@ -222,7 +222,7 @@ _2019 年 8 月 13 日_
 >[!CAUTION]
 >除非另有提及，否則支援所有次要版本。
 >
->Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從我們的相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
+>Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
 >
 
 ### 作業系統{#OperatingSystems-gs}
@@ -505,7 +505,7 @@ _2019 年 8 月 13 日_
 </tbody>
 </table>
 
-### 行動 SDK{#MobileSDK}
+### Mobile SDK{#MobileSDK}
 
 <table>
 <tbody>

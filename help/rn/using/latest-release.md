@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '357'
+ht-degree: 100%
 
 ---
 
@@ -21,32 +21,32 @@ ht-degree: 0%
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2024年6月18日_
+_2024 年 6 月 18 日_
 
-### 變更和改良 {#release-7-4-1-changes}
+### 變更與改善 {#release-7-4-1-changes}
 
-* 由於Adobe已棄用服務帳戶(JWT)認證，因此Campaign與Adobe解決方案和應用程式的輸出整合現在需依賴OAuth伺服器對伺服器認證。 如果您已實作輸出整合(例如Campaign-Analytics整合或Experience Cloud Triggers整合)，則您必須在2025年1月27日之前將Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。 [了解更多](../../integrations/using/oauth-technical-account.md)
+* Adobe 已棄用服務帳戶 (JWT) 認證，Campaign 與 Adobe 解決方案和應用程式的輸出整合現在需依賴 OAuth 伺服器對伺服器認證。 如果您已實作輸出整合 (例如 Campaign-Analytics 整合或 Experience Cloud 觸發器整合)，則必須在 2025 年 1 月 27 日之前，將 Campaign 環境升級至 v7.4.1，並將技術帳戶移轉至 oAuth。 [了解更多](../../integrations/using/oauth-technical-account.md)
 
-* 一旦您擁有 [已將Campaign技術運運算元移轉至開發人員主控台](../../technotes/using/ims-migration.md) 和 [已轉換為IMS以進行一般使用者驗證](../../technotes/using/migrate-users-to-ims.md)，您現在可以啟用使用者介面和API限制，移除原生驗證特有的選項和功能。 [了解更多](../../technotes/using/impact-ims-migration.md)
+* 在您已[將 Campaign 技術操作者移轉至 Developer Console](../../technotes/using/ims-migration.md)，並已[轉變為 IMS 以進行一般使用者驗證](../../technotes/using/migrate-users-to-ims.md)之後，您現在可以啟用使用者介面和 API 限制，移除原生驗證特有的選項和功能。 [了解更多](../../technotes/using/impact-ims-migration.md)
 
 
 
 ### 相容性更新 {#release-7-4-1-compat}
 
-此 [Adobe Campaign相容性矩陣](compatibility-matrix.md) 已更新此新版本的變更，如下所列。
+[Adobe Campaign 相容性矩陣](compatibility-matrix.md)已隨此新版本的變更來更新，如下所列。
 
-* Adobe Campaign現在相容於 **Microsoft Server 2022** 和 **RHEL 9** 作為作業系統。
+* Adobe Campaign 現在相容於 **Microsoft Server 2022** 和 **RHEL 9** 作業系統。
 
-* Adobe Campaign現在相容於 **Microsoft SQL Server 2022** 和 **oracle23c** 做為關係資料庫管理系統，以及同盟資料存取(FDA)。
+* Adobe Campaign 現在相容於 **Microsoft SQL Server 2022** 和 **Oracle 23c** 關聯資料庫管理系統，以及與同盟資料存取 (FDA) 相容。
 
-* Adobe Campaign現在至少需要Java開發套件(JDK) 11。 在Windows上，必須如所述提供JRE [本節](../../installation/using/application-server.md#jdk).
+* Adobe Campaign 現在至少需要 Java 開發套件 (JDK) 11。在 Windows 上，必須如[本節](../../installation/using/application-server.md#jdk)所述提供 JRE。
 
-* 適用於行動應用程式的Campaign (Neolane) SDK現已棄用。 您現在必須轉換至Adobe Experience Platform SDK。 [了解更多](deprecated-features.md)。
+* 適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。您現在必須轉變為 Adobe Experience Platform SDK。 [了解更多](deprecated-features.md)。
 
-  同時，為確保服務持續性，Campaign v7.4提供：
+  同時，為確保服務持續性，Campaign v7.4 隨附：
 
-   * 適用於iOS的全新Campaign SDK 1.0.27，與iOS 16和17相容，並提供最新版本 [Apple iOS隱私權請求需求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
-   * 適用於Android 14的新Campaign SDK。
+   * 適用於 iOS 的新 Campaign SDK 1.0.27，與 iOS 16 和 17 相容，並提供最新 [Apple iOS 隱私權請求需求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}。
+   * 適用於 Android 14 的新 Campaign SDK。
 
 
 ### 修補程式 {#release-7-4-1-patches}

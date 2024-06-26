@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2584'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ _2021 年 6 月 5 日_
 
 **棄用的功能**
 
-* 自 Campaign 第 21.1 發行版本開始，已棄用 Adobe Analytics 資料連接器。 如果您使用此聯結器，則需使用新聯結器Adobe Analytics聯結器，據以調整實施。
+* 自 Campaign 第 21.1 發行版本開始，已棄用 Adobe Analytics 資料連接器。 如果您使用此連接器，則需使用新連接器 Adobe Analytics 連接器，據以調整實施。
 * 不再支援 Debian 8。
 * 在 20.3 版中淘汰 Oracle CRM 後，相關外部帳戶已從介面中移除。
 

@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3746'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ JWT (JSON Web 權杖) 目前正在折舊中，並即將由 OAuth 取代。此轉
 更新發行說明一節，提供 7.3.3 改善與修補程式。 [深入了解](latest-release.md)
 
 
-+++ 2022 年
++++ 2022
 
 
 ## 2022 年 11 月 {#nov-2022}

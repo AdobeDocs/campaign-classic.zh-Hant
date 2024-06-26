@@ -4,9 +4,9 @@ product: campaign
 title: Adobe Campaign Classic v7 產品文件
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 91%
 >[!BEGINTABS]
 
 
->[!TAB 6月版本已上線！]
+>[!TAB 6 月版本已上線！]
 
-探索Campaign Classicv7.4.1隨附的更新、改進和修補程式。
+探索 Campaign Classic v7.4.1 隨附的更新、改進和修補程式。
 
 [![影像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -113,4 +113,4 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
 
 ## 額外資源
 
-[錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) - [Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [相容性矩陣](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant){target="_blank"} - [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant){target="_blank"}
+[錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) - [Adobe Campaign 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [相容性矩陣](rn/using/compatibility-matrix.md) - [教學課程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant){target="_blank"} - [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant){target="_blank"}
