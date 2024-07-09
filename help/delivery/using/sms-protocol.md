@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '8445'
+source-wordcount: '8466'
 ht-degree: 1%
 
 ---
@@ -383,6 +383,10 @@ SMPP通訊協定的每個實作都有許多變數。 為了改善相容性和適
 
 設定SMSC實作的名稱。 應將其設定為您的提供者的名稱。 請聯絡管理員或傳遞團隊，以瞭解要在此欄位中新增什麼。 此欄位的角色在 [SR錯誤管理](sms-protocol.md#sr-error-management) 區段。
 
+>[!NOTE]
+>
+>傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
+
 #### 伺服器 {#server}
 
 要連線之伺服器的DNS名稱或IP位址。
@@ -487,7 +491,7 @@ Adobe Campaign Classic的KPI機制完全不同，因此此選項無法使用。
 
 * 自動回覆功能的封鎖清單設定只會針對特定短程式碼傳送給隔離使用者。
 
-#### 來源TON/NPI、目的地TON/NPI {#ton-npi}
+#### Source TON/NPI、目的地TON/NPI {#ton-npi}
 
 TON （編號型別）和NPI （編號計畫指示器）在 [SMPP 3.4規格](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) （第117頁）。 這些值應該設定為提供者的需求。
 
@@ -534,7 +538,7 @@ TON （編號型別）和NPI （編號計畫指示器）在 [SMPP 3.4規格](htt
 
 當TCP連線中斷時，聯結器會先等候這個秒數，再嘗試建立連線。
 
-#### MT 的有效期 {#expiration-period}
+#### MT 的有效期限 {#expiration-period}
 
 逾時介於 `SUBMIT_SM` 及其相符專案 `SUBMIT_SM_RESP`. 如果 `RESP` 未及時收到，則訊息會視為失敗，並套用MTA的全域重試原則。
 

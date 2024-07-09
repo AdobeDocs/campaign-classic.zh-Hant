@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '738'
 ht-degree: 2%
 
 ---
 
 # 效能和輸送量的相關問題{#performance-and-throughput-issues}
-
-
 
 首先，您應該檢查是否已安裝最新組建版本。 這可確保您擁有最新功能和錯誤修正。
 
@@ -54,6 +52,11 @@ Adobe Campaign也提供 [工具](../../production/using/monitoring-processes.md#
 
 * MTA和MTAChild處理程式和記憶體： **mta** 模組將訊息分送至其 **mtachild** 子模組。 每個 **mtachild** 向統計伺服器請求授權並傳送訊息之前，請先準備訊息。 請參閱此 [頁面](../../installation/using/email-deliverability.md) 以取得詳細資訊。
 * TLS組態：不建議全域啟用TLS，因為這樣可能會減少輸送量。 相反，由傳遞團隊管理的每個網域TLS設定應根據需求進行調整。 請參閱此 [頁面](../../installation/using/email-deliverability.md#mx-configuration) 以取得詳細資訊。
+
+  >[!NOTE]
+  >
+  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
+
 * DKIM：為了確保DKIM的安全性等級，1024b是建議的最佳實務加密大小。 大多數存取提供者不會將下層DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ## 傳遞能力問題 {#deliverability-issues}
@@ -62,10 +65,15 @@ Adobe Campaign也提供 [工具](../../production/using/monitoring-processes.md#
 
 * IP信譽：如果IP信譽不夠好，將會對效能造成影響。 此 **傳遞能力監視** 模組提供多種工具，用於追蹤平台的傳遞能力效能。 請參閱此 [頁面](../../delivery/using/monitoring-deliverability.md).
 * IP熱身： IP熱身是由傳遞團隊執行。 這涉及在幾週內透過新IP逐漸增加電子郵件數量。
+
+  >[!NOTE]
+  >
+  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
+
 * IP相關性設定：不正確的IP相關性設定可能會完全停止電子郵件（設定中的運運算元/相關性名稱不正確）或減少輸送量（相關性中的少量IP）。 請參閱此 [頁面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * 電子郵件大小：電子郵件大小在輸送量中起著重要作用。 建議的最大電子郵件大小為60 KB。 請參閱此 [頁面](https://helpx.adobe.com/legal/product-descriptions/campaign.html). 在 [傳遞總處理能力](../../reporting/using/global-reports.md#delivery-throughput) 報表，檢查依小時傳輸的位元組數。
 * 大量無效收件者：當存在大量無效收件者時，可能會影響輸送量。 MTA不斷重試傳送電子郵件給無效的收件者。 請確定您的資料庫已妥善維護。
-* 個人化的數量：如果傳送持續在「正在進行個人化」中，請檢查個人化區塊中使用的JavaScript。
+* 個人化的數量：如果傳送持續在「Personalization進行中」，請檢查個人化區塊中使用的JavaScript 。
 
 >[!NOTE]
 >

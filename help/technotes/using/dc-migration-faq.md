@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,10 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 * **如何處理子網域委派？**
 
   現有的子網域將會從舊版資料中心移至公用雲端(AWS)。 此部分將由作為移轉程式一部分的Adobe傳遞團隊處理。
+
+  >[!NOTE]
+  >
+  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
 
   Adobe將引導客戶進行所需的測試，以確保設定在移轉後的新公用雲端(AWS)伺服器上啟動並執行。
 
