@@ -8,16 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 24%
+source-wordcount: '1060'
+ht-degree: 21%
 
 ---
 
 # SFTP 伺服器最佳實務及疑難排解 {#sftp-server-usage}
-
-
 
 ## SFTP伺服器全域建議 {#global-recommendations}
 
@@ -25,7 +23,7 @@ ht-degree: 24%
 
 * 為避免密碼過期（密碼的有效期為90天），請使用以金鑰為基礎的驗證而非密碼驗證。 此外，以金鑰為基礎的驗證可讓您產生多個金鑰，例如在管理多個實體時。 相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
 
-  支援的金鑰格式為SSH-2 RSA 2048。 金鑰可使用PyTTY (Windows)或ssh-keygen (Unix)等工具產生。您必須透過以下方式向Adobe支援團隊提供公開金鑰： [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 將其上傳至Campaign伺服器。
+  支援的金鑰格式為SSH-2 RSA 2048。 為Windows產生SSH金鑰的工具為PuTTYgen，而為Linux產生ssh-keygen。 您可以透過Campaign「控制面板」上傳公開SSH金鑰。 [了解更多](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * 在 SFTP 上載和工作流程中使用批次處理。
 
@@ -33,9 +31,9 @@ ht-degree: 24%
 
 * 依預設，您建立的所有資料夾都處於唯有識別碼的讀/寫模式。 建立需要Campaign存取的資料夾時，請務必以整個群組的讀取/寫入許可權來設定資料夾。 否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
 
-* 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 可以透過以下方式請求將IP位址新增到允許清單 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 您可以透過「控制面板」新增公用IP。 [了解更多](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
-## 資料庫使用最佳實務 {#sftp-server-best-practices}
+## SFTP儲存空間使用量最佳實務 {#sftp-server-best-practices}
 
 SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保留和刪除。
 
@@ -45,11 +43,11 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 >[!NOTE]
 >
->如果您的執行個體託管於AWS上，則可以使用Campaign Classic監視SFTP伺服器儲存空間 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
+>您可以使用Campaign Classic監視SFTP伺服器儲存空間 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
+>所有管理員使用者都可存取控制面板。 授予使用者管理員存取許可權的步驟已詳載於 [此頁面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}.
 >
->請注意，您的執行個體必須升級為 [最新GA版本](../../rn/using/rn-overview.md). 瞭解如何簽入您的版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>請注意，您的執行個體必須升級為 [最新GA版本](../../rn/using/rn-overview.md). 瞭解如何簽入您的版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * 伺服器大小功能會依您的授權而有所不同。 在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 
@@ -70,7 +68,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 ## Adobe代管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
-以下區段列出要檢查的資訊，並透過提供給Adobe支援團隊 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到Adobe代管SFTP伺服器的連線問題時。
+以下區段列出要檢查的資訊，並透過提供給Adobe支援團隊 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} 遇到Adobe代管SFTP伺服器的連線問題時。
 
 1. 檢查您的執行個體是否正在執行。 若要這麼做，請開啟瀏覽器，然後進行 **[!UICONTROL GET]** 在執行個體上呼叫 **[!UICONTROL /r/test]** 端點：
 
@@ -97,10 +95,6 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
    bash-3.2$ nc -vz myCompagny-stage-sftp.neolane.net 22
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
-
-   >[!NOTE]
-   >
-   >Netcat 工具可讓您輕鬆管理各種操作系統上的網路連線 (請參見 [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/))。
 
    如果未開啟連線埠，請確定開啟您這端的輸出連線，然後再試一次。 如果您仍然遇到連線問題，請將命令的輸出分享給 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
 
