@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
+source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1066'
 ht-degree: 21%
 
 ---
@@ -43,11 +43,11 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 >[!NOTE]
 >
->您可以使用Campaign Classic監視SFTP伺服器儲存空間 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>* 您可以使用Campaign Classic監視SFTP伺服器儲存空間 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->所有管理員使用者都可存取控制面板。 授予使用者管理員存取許可權的步驟已詳載於 [此頁面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}.
+>* 所有管理員使用者都可存取控制面板。 授予使用者管理員存取許可權的步驟已詳載於 [此頁面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}.
 >
->請注意，您的執行個體必須升級為 [最新GA版本](../../rn/using/rn-overview.md). 瞭解如何簽入您的版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
+>* 請注意，您的執行個體必須升級為 [最新GA版本](../../rn/using/rn-overview.md). 瞭解如何簽入您的版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * 伺服器大小功能會依您的授權而有所不同。 在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 
@@ -72,13 +72,13 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 1. 檢查您的執行個體是否正在執行。 若要這麼做，請開啟瀏覽器，然後進行 **[!UICONTROL GET]** 在執行個體上呼叫 **[!UICONTROL /r/test]** 端點：
 
-   ```
+   ```xml
    https://instanceUrl/r/test
    ```
 
    如果執行個體正在運行，您應該得到這種類型的回應：
 
-   ```
+   ```xml
    <redir status='OK' date='YYYY-MM-DD HH:MM:SS' build='XXXX' instance='instance-name'
    sourceIP='AAA.BB.CCC.DD' host='instanceUrl' localHost='instance-name'/>
    ```
@@ -87,7 +87,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 1. 檢查輸出連線埠22是否已在您嘗試啟動SFTP連線的站台開啟。 為此，請使用以下命令：
 
-   ```
+   ```xml
    bash-3.2$ nc -vz <SFTP_URL> 22
    # Replace the SFTP_URL with actual SFTP instance URL
    # If the port 22 is opened you will see output similar to the below one
@@ -109,7 +109,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 工作流程日誌會顯示以下記錄：
 
-```
+```xml
 16/05/2016 12:49:03    fileTransfer    Upload error in cURL
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
@@ -144,7 +144,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
    否則，請驗證：
 
-   * 密碼不包含&#39;@&#39;。 如果密碼中有&#39;@&#39;，連線會失敗。
+   * 密碼不包含 `@` 字元。 如果發生下列情況，連線會失敗 `@` 個字元。
    * 沒有防火牆問題會阻礙Adobe Campaign應用程式伺服器與SFTP伺服器之間的通訊。
    * 從campaign伺服器執行tracert和telnet命令至sftp，檢視是否有任何連線問題。
    * 沒有通訊協定問題。
