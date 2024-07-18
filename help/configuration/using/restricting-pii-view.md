@@ -5,10 +5,10 @@ description: 瞭解如何限制PI檢視
 feature: PI
 role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: e198defd60f4b12681025b04b12a1498df015047
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '439'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## 實施 {#implementation}
 
-可套用至任何元素或屬性的新屬性已新增至結構描述，以補充現有屬性 **[!UICONTROL visibleIf]** . 此屬性是： **[!UICONTROL accessibleIf]** . 包含與目前使用者內容相關的XTK運算式時，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** ，例如。
+可套用至任何元素或屬性的新屬性已新增至結構描述，它補充了現有的屬性&#x200B;**[!UICONTROL visibleIf]** 。 此屬性是： **[!UICONTROL accessibleIf]** 。 當包含與目前使用者內容相關的XTK運算式時，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**，例如。
 
 您可以找到收件者綱要擴充功能的範例，此範例顯示以下用法：
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 主要屬性為：
 
 * **[!UICONTROL visibleIf]** ：隱藏中繼資料中的欄位，因此無法在結構描述檢視、欄選擇或運算式產生器中存取這些欄位。 但這不會隱藏任何資料，如果手動在運算式中輸入欄位名稱，則會顯示值。
-* **[!UICONTROL accessibleIf]** ：隱藏產生的查詢資料（以空白值取代）。 如果visibleIf空白，則會取得與相同的運算式 **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** ：隱藏產生的查詢中的資料（以空白值取代）。 如果visibleIf空白，則會取得與&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的運算式。
 
 在Campaign中使用此屬性的後果如下：
 
@@ -53,9 +53,13 @@ ht-degree: 2%
 * 將目標母體儲存在群組（清單）中時，所儲存欄位的特性與資料來源相同。
 * 依預設，JS程式碼無法存取資料。
 
+>[!IMPORTANT]
+>
+>在關鍵引數（例如複合索引鍵中的引數）上使用&#x200B;**accessibleIf**&#x200B;屬性可能會導致使用者因隱藏資料而無法讀取資料的錯誤。 這可能會導致查詢失敗或意外的行為。 確保基本引數可供存取，以避免中斷。
+
 ## 建議 {#recommendations}
 
-每次傳送時，電子郵件地址都會複製到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表格：因此，這些欄位也需要受到保護。
+在每次傳遞中，電子郵件地址都會複製到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;資料表中：因此，這些欄位也需要受到保護。
 
 以下為實作此專案的記錄表擴充功能範例：
 
